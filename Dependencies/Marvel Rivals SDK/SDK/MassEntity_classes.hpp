@@ -26,15 +26,18 @@ class UMassModuleSettings : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassModuleSettings">();
+		STATIC_CLASS_IMPL("MassModuleSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassModuleSettings")
 	}
 	static class UMassModuleSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassModuleSettings>();
 	}
 };
-static_assert(alignof(UMassModuleSettings) == 0x000008, "Wrong alignment on UMassModuleSettings");
-static_assert(sizeof(UMassModuleSettings) == 0x000030, "Wrong size on UMassModuleSettings");
+DUMPER7_ASSERTS_UMassModuleSettings;
 
 // Class MassEntity.MassEntitySettings
 // 0x0118 (0x0148 - 0x0030)
@@ -49,38 +52,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntitySettings">();
+		STATIC_CLASS_IMPL("MassEntitySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntitySettings")
 	}
 	static class UMassEntitySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntitySettings>();
 	}
 };
-static_assert(alignof(UMassEntitySettings) == 0x000008, "Wrong alignment on UMassEntitySettings");
-static_assert(sizeof(UMassEntitySettings) == 0x000148, "Wrong size on UMassEntitySettings");
-static_assert(offsetof(UMassEntitySettings, DumpDependencyGraphFileName) == 0x000030, "Member 'UMassEntitySettings::DumpDependencyGraphFileName' has a wrong offset!");
-static_assert(offsetof(UMassEntitySettings, ProcessingPhasesConfig) == 0x000040, "Member 'UMassEntitySettings::ProcessingPhasesConfig' has a wrong offset!");
-static_assert(offsetof(UMassEntitySettings, ProcessorCDOs) == 0x000130, "Member 'UMassEntitySettings::ProcessorCDOs' has a wrong offset!");
+DUMPER7_ASSERTS_UMassEntitySettings;
 
 // Class MassEntity.MassEntitySubsystem
-// 0x0010 (0x0048 - 0x0038)
+// 0x0010 (0x0050 - 0x0040)
 class UMassEntitySubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntitySubsystem">();
+		STATIC_CLASS_IMPL("MassEntitySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntitySubsystem")
 	}
 	static class UMassEntitySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntitySubsystem>();
 	}
 };
-static_assert(alignof(UMassEntitySubsystem) == 0x000008, "Wrong alignment on UMassEntitySubsystem");
-static_assert(sizeof(UMassEntitySubsystem) == 0x000048, "Wrong size on UMassEntitySubsystem");
+DUMPER7_ASSERTS_UMassEntitySubsystem;
 
 // Class MassEntity.MassProcessor
 // 0x0098 (0x00C8 - 0x0030)
@@ -99,20 +105,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassProcessor">();
+		STATIC_CLASS_IMPL("MassProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassProcessor")
 	}
 	static class UMassProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassProcessor>();
 	}
 };
-static_assert(alignof(UMassProcessor) == 0x000008, "Wrong alignment on UMassProcessor");
-static_assert(sizeof(UMassProcessor) == 0x0000C8, "Wrong size on UMassProcessor");
-static_assert(offsetof(UMassProcessor, ExecutionFlags) == 0x000030, "Member 'UMassProcessor::ExecutionFlags' has a wrong offset!");
-static_assert(offsetof(UMassProcessor, ProcessingPhase) == 0x000034, "Member 'UMassProcessor::ProcessingPhase' has a wrong offset!");
-static_assert(offsetof(UMassProcessor, ExecutionOrder) == 0x000038, "Member 'UMassProcessor::ExecutionOrder' has a wrong offset!");
-static_assert(offsetof(UMassProcessor, bAutoRegisterWithProcessingPhases) == 0x000068, "Member 'UMassProcessor::bAutoRegisterWithProcessingPhases' has a wrong offset!");
-static_assert(offsetof(UMassProcessor, bRequiresGameThreadExecution) == 0x00006B, "Member 'UMassProcessor::bRequiresGameThreadExecution' has a wrong offset!");
+DUMPER7_ASSERTS_UMassProcessor;
 
 // Class MassEntity.MassObserverProcessor
 // 0x0018 (0x00E0 - 0x00C8)
@@ -127,17 +131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassObserverProcessor">();
+		STATIC_CLASS_IMPL("MassObserverProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassObserverProcessor")
 	}
 	static class UMassObserverProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassObserverProcessor>();
 	}
 };
-static_assert(alignof(UMassObserverProcessor) == 0x000008, "Wrong alignment on UMassObserverProcessor");
-static_assert(sizeof(UMassObserverProcessor) == 0x0000E0, "Wrong size on UMassObserverProcessor");
-static_assert(offsetof(UMassObserverProcessor, bAutoRegisterWithObserverRegistry) == 0x0000C8, "Member 'UMassObserverProcessor::bAutoRegisterWithObserverRegistry' has a wrong offset!");
-static_assert(offsetof(UMassObserverProcessor, ObservedType) == 0x0000D0, "Member 'UMassObserverProcessor::ObservedType' has a wrong offset!");
+DUMPER7_ASSERTS_UMassObserverProcessor;
 
 // Class MassEntity.MassObserverRegistry
 // 0x0140 (0x0170 - 0x0030)
@@ -150,17 +155,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassObserverRegistry">();
+		STATIC_CLASS_IMPL("MassObserverRegistry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassObserverRegistry")
 	}
 	static class UMassObserverRegistry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassObserverRegistry>();
 	}
 };
-static_assert(alignof(UMassObserverRegistry) == 0x000008, "Wrong alignment on UMassObserverRegistry");
-static_assert(sizeof(UMassObserverRegistry) == 0x000170, "Wrong size on UMassObserverRegistry");
-static_assert(offsetof(UMassObserverRegistry, FragmentObservers) == 0x000030, "Member 'UMassObserverRegistry::FragmentObservers' has a wrong offset!");
-static_assert(offsetof(UMassObserverRegistry, TagObservers) == 0x0000D0, "Member 'UMassObserverRegistry::TagObservers' has a wrong offset!");
+DUMPER7_ASSERTS_UMassObserverRegistry;
 
 // Class MassEntity.MassCompositeProcessor
 // 0x0040 (0x0108 - 0x00C8)
@@ -174,17 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCompositeProcessor">();
+		STATIC_CLASS_IMPL("MassCompositeProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCompositeProcessor")
 	}
 	static class UMassCompositeProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCompositeProcessor>();
 	}
 };
-static_assert(alignof(UMassCompositeProcessor) == 0x000008, "Wrong alignment on UMassCompositeProcessor");
-static_assert(sizeof(UMassCompositeProcessor) == 0x000108, "Wrong size on UMassCompositeProcessor");
-static_assert(offsetof(UMassCompositeProcessor, ChildPipeline) == 0x0000C8, "Member 'UMassCompositeProcessor::ChildPipeline' has a wrong offset!");
-static_assert(offsetof(UMassCompositeProcessor, GroupName) == 0x0000D8, "Member 'UMassCompositeProcessor::GroupName' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCompositeProcessor;
 
 // Class MassEntity.MassSettings
 // 0x0050 (0x0098 - 0x0048)
@@ -196,16 +203,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSettings">();
+		STATIC_CLASS_IMPL("MassSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSettings")
 	}
 	static class UMassSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSettings>();
 	}
 };
-static_assert(alignof(UMassSettings) == 0x000008, "Wrong alignment on UMassSettings");
-static_assert(sizeof(UMassSettings) == 0x000098, "Wrong size on UMassSettings");
-static_assert(offsetof(UMassSettings, ModuleSettings) == 0x000048, "Member 'UMassSettings::ModuleSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSettings;
 
 }
 

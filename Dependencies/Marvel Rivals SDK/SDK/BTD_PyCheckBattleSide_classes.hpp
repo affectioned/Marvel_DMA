@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckBattleSide">();
+		STATIC_CLASS_IMPL("BTD_PyCheckBattleSide")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckBattleSide")
 	}
 	static class UBTD_PyCheckBattleSide* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckBattleSide>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckBattleSide) == 0x000008, "Wrong alignment on UBTD_PyCheckBattleSide");
-static_assert(sizeof(UBTD_PyCheckBattleSide) == 0x0000C0, "Wrong size on UBTD_PyCheckBattleSide");
-static_assert(offsetof(UBTD_PyCheckBattleSide, TargetBattleSide) == 0x0000B8, "Member 'UBTD_PyCheckBattleSide::TargetBattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckBattleSide;
 
 }
 

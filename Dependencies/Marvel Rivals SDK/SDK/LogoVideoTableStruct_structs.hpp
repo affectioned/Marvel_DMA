@@ -27,12 +27,7 @@ public:
 	double                                        SkipTime_16_A940D8D94B00DD132668E298CA93B6AE;      // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLogoVideoRegionStruct                 Region_21_BEE82B894F87184543FCCCB069B60570;        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FLogoVideoTableStruct) == 0x000008, "Wrong alignment on FLogoVideoTableStruct");
-static_assert(sizeof(FLogoVideoTableStruct) == 0x000020, "Wrong size on FLogoVideoTableStruct");
-static_assert(offsetof(FLogoVideoTableStruct, Index_3_7A27168B4E42028C59B1249ED7C062B8) == 0x000000, "Member 'FLogoVideoTableStruct::Index_3_7A27168B4E42028C59B1249ED7C062B8' has a wrong offset!");
-static_assert(offsetof(FLogoVideoTableStruct, Video_12_1E958F924EFC10DC407581AACD4D3CD3) == 0x000008, "Member 'FLogoVideoTableStruct::Video_12_1E958F924EFC10DC407581AACD4D3CD3' has a wrong offset!");
-static_assert(offsetof(FLogoVideoTableStruct, SkipTime_16_A940D8D94B00DD132668E298CA93B6AE) == 0x000010, "Member 'FLogoVideoTableStruct::SkipTime_16_A940D8D94B00DD132668E298CA93B6AE' has a wrong offset!");
-static_assert(offsetof(FLogoVideoTableStruct, Region_21_BEE82B894F87184543FCCCB069B60570) == 0x000018, "Member 'FLogoVideoTableStruct::Region_21_BEE82B894F87184543FCCCB069B60570' has a wrong offset!");
+DUMPER7_ASSERTS_FLogoVideoTableStruct;
 
 }
 

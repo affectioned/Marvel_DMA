@@ -28,20 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103311">();
+		STATIC_CLASS_IMPL("PyConfig_103311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103311")
 	}
 	static class UPyConfig_103311* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103311>();
 	}
 };
-static_assert(alignof(UPyConfig_103311) == 0x000008, "Wrong alignment on UPyConfig_103311");
-static_assert(sizeof(UPyConfig_103311) == 0x000128, "Wrong size on UPyConfig_103311");
-static_assert(offsetof(UPyConfig_103311, bNeedPullBullet) == 0x000120, "Member 'UPyConfig_103311::bNeedPullBullet' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103311, AutoPullBullet) == 0x000121, "Member 'UPyConfig_103311::AutoPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103311;
 
 // PythonClass PyAbility_103311.PyAbility_103311
-// 0x0000 (0x2AD8 - 0x2AD8)
+// 0x0000 (0x2B28 - 0x2B28)
 class UPyAbility_103311 : public UAbility_106
 {
 public:
@@ -58,22 +59,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103311">();
+		STATIC_CLASS_IMPL("PyAbility_103311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103311")
 	}
 	static class UPyAbility_103311* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103311>();
 	}
 };
-static_assert(alignof(UPyAbility_103311) == 0x000008, "Wrong alignment on UPyAbility_103311");
-static_assert(sizeof(UPyAbility_103311) == 0x002AD8, "Wrong size on UPyAbility_103311");
+DUMPER7_ASSERTS_UPyAbility_103311;
 
 // PythonClass PyAbility_103311.PyUIController_103311
-// 0x0068 (0x0F78 - 0x0F10)
+// 0x0068 (0x1258 - 0x11F0)
 class UPyUIController_103311 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTagContainer                  TagContainer_InfiniteAmmo;                         // 0x0F10(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  TagContainer_InfiniteAmmo;                         // 0x11F0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -82,16 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103311">();
+		STATIC_CLASS_IMPL("PyUIController_103311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103311")
 	}
 	static class UPyUIController_103311* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103311>();
 	}
 };
-static_assert(alignof(UPyUIController_103311) == 0x000008, "Wrong alignment on UPyUIController_103311");
-static_assert(sizeof(UPyUIController_103311) == 0x000F78, "Wrong size on UPyUIController_103311");
-static_assert(offsetof(UPyUIController_103311, TagContainer_InfiniteAmmo) == 0x000F10, "Member 'UPyUIController_103311::TagContainer_InfiniteAmmo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_103311;
 
 }
 

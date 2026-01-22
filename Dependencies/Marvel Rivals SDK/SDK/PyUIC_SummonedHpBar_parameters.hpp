@@ -24,9 +24,7 @@ struct PyUIC_Summoned_HpBar_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Summoned_HpBar_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyUIC_Summoned_HpBar_ReceiveEndPlay");
-static_assert(sizeof(PyUIC_Summoned_HpBar_ReceiveEndPlay) == 0x000001, "Wrong size on PyUIC_Summoned_HpBar_ReceiveEndPlay");
-static_assert(offsetof(PyUIC_Summoned_HpBar_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyUIC_Summoned_HpBar_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Summoned_HpBar_ReceiveEndPlay;
 
 // PythonFunction PyUIC_SummonedHpBar.PyUIC_Summoned_HpBar.OnOwnerInstigatorTagChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          bTagExists;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged) == 0x000004, "Wrong alignment on PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged");
-static_assert(sizeof(PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged) == 0x000010, "Wrong size on PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged");
-static_assert(offsetof(PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged, Tag) == 0x000000, "Member 'PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged::Tag' has a wrong offset!");
-static_assert(offsetof(PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged, bTagExists) == 0x00000C, "Member 'PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged::bTagExists' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_Summoned_HpBar_OnOwnerInstigatorTagChanged;
 
 }
 

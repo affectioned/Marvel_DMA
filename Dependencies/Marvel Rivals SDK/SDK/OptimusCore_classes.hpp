@@ -28,7 +28,11 @@ class IOptimusComponentBindingProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComponentBindingProvider">();
+		STATIC_CLASS_IMPL("OptimusComponentBindingProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComponentBindingProvider")
 	}
 	static class IOptimusComponentBindingProvider* GetDefaultObj()
 	{
@@ -44,8 +48,52 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusComponentBindingProvider) == 0x000001, "Wrong alignment on IOptimusComponentBindingProvider");
-static_assert(sizeof(IOptimusComponentBindingProvider) == 0x000001, "Wrong size on IOptimusComponentBindingProvider");
+DUMPER7_ASSERTS_IOptimusComponentBindingProvider;
+
+// Class OptimusCore.OptimusComputeDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusComputeDataInterface : public UComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusComputeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComputeDataInterface")
+	}
+	static class UOptimusComputeDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusComputeDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusComputeDataInterface;
+
+// Class OptimusCore.OptimusSkinnedMeshExecDataInterface
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusSkinnedMeshExecDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	EOptimusSkinnedMeshExecDomain                 Domain;                                            // 0x0038(0x0001)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshExecDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshExecDataInterface")
+	}
+	static class UOptimusSkinnedMeshExecDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshExecDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshExecDataInterface;
 
 // Class OptimusCore.OptimusComputeKernelProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -54,7 +102,11 @@ class IOptimusComputeKernelProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComputeKernelProvider">();
+		STATIC_CLASS_IMPL("OptimusComputeKernelProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComputeKernelProvider")
 	}
 	static class IOptimusComputeKernelProvider* GetDefaultObj()
 	{
@@ -70,8 +122,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusComputeKernelProvider) == 0x000001, "Wrong alignment on IOptimusComputeKernelProvider");
-static_assert(sizeof(IOptimusComputeKernelProvider) == 0x000001, "Wrong size on IOptimusComputeKernelProvider");
+DUMPER7_ASSERTS_IOptimusComputeKernelProvider;
 
 // Class OptimusCore.OptimusDataInterfaceProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -80,7 +131,11 @@ class IOptimusDataInterfaceProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusDataInterfaceProvider">();
+		STATIC_CLASS_IMPL("OptimusDataInterfaceProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDataInterfaceProvider")
 	}
 	static class IOptimusDataInterfaceProvider* GetDefaultObj()
 	{
@@ -96,8 +151,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusDataInterfaceProvider) == 0x000001, "Wrong alignment on IOptimusDataInterfaceProvider");
-static_assert(sizeof(IOptimusDataInterfaceProvider) == 0x000001, "Wrong size on IOptimusDataInterfaceProvider");
+DUMPER7_ASSERTS_IOptimusDataInterfaceProvider;
 
 // Class OptimusCore.OptimusDeprecatedExecutionDataInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -106,7 +160,11 @@ class IOptimusDeprecatedExecutionDataInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusDeprecatedExecutionDataInterface">();
+		STATIC_CLASS_IMPL("OptimusDeprecatedExecutionDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDeprecatedExecutionDataInterface")
 	}
 	static class IOptimusDeprecatedExecutionDataInterface* GetDefaultObj()
 	{
@@ -122,8 +180,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusDeprecatedExecutionDataInterface) == 0x000001, "Wrong alignment on IOptimusDeprecatedExecutionDataInterface");
-static_assert(sizeof(IOptimusDeprecatedExecutionDataInterface) == 0x000001, "Wrong size on IOptimusDeprecatedExecutionDataInterface");
+DUMPER7_ASSERTS_IOptimusDeprecatedExecutionDataInterface;
 
 // Class OptimusCore.OptimusExecutionDomainProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -132,7 +189,11 @@ class IOptimusExecutionDomainProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusExecutionDomainProvider">();
+		STATIC_CLASS_IMPL("OptimusExecutionDomainProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusExecutionDomainProvider")
 	}
 	static class IOptimusExecutionDomainProvider* GetDefaultObj()
 	{
@@ -148,8 +209,27 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusExecutionDomainProvider) == 0x000001, "Wrong alignment on IOptimusExecutionDomainProvider");
-static_assert(sizeof(IOptimusExecutionDomainProvider) == 0x000001, "Wrong size on IOptimusExecutionDomainProvider");
+DUMPER7_ASSERTS_IOptimusExecutionDomainProvider;
+
+// Class OptimusCore.OptimusSkeletonDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSkeletonDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkeletonDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkeletonDataInterface")
+	}
+	static class UOptimusSkeletonDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkeletonDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkeletonDataInterface;
 
 // Class OptimusCore.OptimusGeneratedClassDefiner
 // 0x0000 (0x0000 - 0x0000)
@@ -158,7 +238,11 @@ class IOptimusGeneratedClassDefiner final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGeneratedClassDefiner">();
+		STATIC_CLASS_IMPL("OptimusGeneratedClassDefiner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGeneratedClassDefiner")
 	}
 	static class IOptimusGeneratedClassDefiner* GetDefaultObj()
 	{
@@ -174,8 +258,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusGeneratedClassDefiner) == 0x000001, "Wrong alignment on IOptimusGeneratedClassDefiner");
-static_assert(sizeof(IOptimusGeneratedClassDefiner) == 0x000001, "Wrong size on IOptimusGeneratedClassDefiner");
+DUMPER7_ASSERTS_IOptimusGeneratedClassDefiner;
 
 // Class OptimusCore.OptimusNodeAdderPinProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -184,7 +267,11 @@ class IOptimusNodeAdderPinProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeAdderPinProvider">();
+		STATIC_CLASS_IMPL("OptimusNodeAdderPinProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeAdderPinProvider")
 	}
 	static class IOptimusNodeAdderPinProvider* GetDefaultObj()
 	{
@@ -200,8 +287,27 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusNodeAdderPinProvider) == 0x000001, "Wrong alignment on IOptimusNodeAdderPinProvider");
-static_assert(sizeof(IOptimusNodeAdderPinProvider) == 0x000001, "Wrong size on IOptimusNodeAdderPinProvider");
+DUMPER7_ASSERTS_IOptimusNodeAdderPinProvider;
+
+// Class OptimusCore.OptimusSkinnedMeshWriteDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSkinnedMeshWriteDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshWriteDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshWriteDataInterface")
+	}
+	static class UOptimusSkinnedMeshWriteDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshWriteDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshWriteDataInterface;
 
 // Class OptimusCore.OptimusNodeFunctionLibraryOwner
 // 0x0000 (0x0000 - 0x0000)
@@ -210,7 +316,11 @@ class IOptimusNodeFunctionLibraryOwner final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeFunctionLibraryOwner">();
+		STATIC_CLASS_IMPL("OptimusNodeFunctionLibraryOwner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeFunctionLibraryOwner")
 	}
 	static class IOptimusNodeFunctionLibraryOwner* GetDefaultObj()
 	{
@@ -226,8 +336,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusNodeFunctionLibraryOwner) == 0x000001, "Wrong alignment on IOptimusNodeFunctionLibraryOwner");
-static_assert(sizeof(IOptimusNodeFunctionLibraryOwner) == 0x000001, "Wrong size on IOptimusNodeFunctionLibraryOwner");
+DUMPER7_ASSERTS_IOptimusNodeFunctionLibraryOwner;
 
 // Class OptimusCore.OptimusNodeGraphCollectionOwner
 // 0x0000 (0x0000 - 0x0000)
@@ -236,7 +345,11 @@ class IOptimusNodeGraphCollectionOwner final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeGraphCollectionOwner">();
+		STATIC_CLASS_IMPL("OptimusNodeGraphCollectionOwner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeGraphCollectionOwner")
 	}
 	static class IOptimusNodeGraphCollectionOwner* GetDefaultObj()
 	{
@@ -252,8 +365,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusNodeGraphCollectionOwner) == 0x000001, "Wrong alignment on IOptimusNodeGraphCollectionOwner");
-static_assert(sizeof(IOptimusNodeGraphCollectionOwner) == 0x000001, "Wrong size on IOptimusNodeGraphCollectionOwner");
+DUMPER7_ASSERTS_IOptimusNodeGraphCollectionOwner;
 
 // Class OptimusCore.OptimusNodePinRouter
 // 0x0000 (0x0000 - 0x0000)
@@ -262,7 +374,11 @@ class IOptimusNodePinRouter final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodePinRouter">();
+		STATIC_CLASS_IMPL("OptimusNodePinRouter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodePinRouter")
 	}
 	static class IOptimusNodePinRouter* GetDefaultObj()
 	{
@@ -278,8 +394,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusNodePinRouter) == 0x000001, "Wrong alignment on IOptimusNodePinRouter");
-static_assert(sizeof(IOptimusNodePinRouter) == 0x000001, "Wrong size on IOptimusNodePinRouter");
+DUMPER7_ASSERTS_IOptimusNodePinRouter;
 
 // Class OptimusCore.OptimusParameterBindingProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -288,7 +403,11 @@ class IOptimusParameterBindingProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusParameterBindingProvider">();
+		STATIC_CLASS_IMPL("OptimusParameterBindingProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusParameterBindingProvider")
 	}
 	static class IOptimusParameterBindingProvider* GetDefaultObj()
 	{
@@ -304,8 +423,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusParameterBindingProvider) == 0x000001, "Wrong alignment on IOptimusParameterBindingProvider");
-static_assert(sizeof(IOptimusParameterBindingProvider) == 0x000001, "Wrong size on IOptimusParameterBindingProvider");
+DUMPER7_ASSERTS_IOptimusParameterBindingProvider;
 
 // Class OptimusCore.OptimusPathResolver
 // 0x0000 (0x0000 - 0x0000)
@@ -314,7 +432,11 @@ class IOptimusPathResolver final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusPathResolver">();
+		STATIC_CLASS_IMPL("OptimusPathResolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusPathResolver")
 	}
 	static class IOptimusPathResolver* GetDefaultObj()
 	{
@@ -330,8 +452,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusPathResolver) == 0x000001, "Wrong alignment on IOptimusPathResolver");
-static_assert(sizeof(IOptimusPathResolver) == 0x000001, "Wrong size on IOptimusPathResolver");
+DUMPER7_ASSERTS_IOptimusPathResolver;
 
 // Class OptimusCore.OptimusShaderTextProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -340,7 +461,11 @@ class IOptimusShaderTextProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusShaderTextProvider">();
+		STATIC_CLASS_IMPL("OptimusShaderTextProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusShaderTextProvider")
 	}
 	static class IOptimusShaderTextProvider* GetDefaultObj()
 	{
@@ -356,8 +481,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusShaderTextProvider) == 0x000001, "Wrong alignment on IOptimusShaderTextProvider");
-static_assert(sizeof(IOptimusShaderTextProvider) == 0x000001, "Wrong size on IOptimusShaderTextProvider");
+DUMPER7_ASSERTS_IOptimusShaderTextProvider;
 
 // Class OptimusCore.OptimusValueProvider
 // 0x0000 (0x0000 - 0x0000)
@@ -366,7 +490,11 @@ class IOptimusValueProvider final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusValueProvider">();
+		STATIC_CLASS_IMPL("OptimusValueProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusValueProvider")
 	}
 	static class IOptimusValueProvider* GetDefaultObj()
 	{
@@ -382,25 +510,30 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IOptimusValueProvider) == 0x000001, "Wrong alignment on IOptimusValueProvider");
-static_assert(sizeof(IOptimusValueProvider) == 0x000001, "Wrong size on IOptimusValueProvider");
+DUMPER7_ASSERTS_IOptimusValueProvider;
 
-// Class OptimusCore.OptimusComputeDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusComputeDataInterface : public UComputeDataInterface
+// Class OptimusCore.OptimusResourceContainer
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusResourceContainer final : public UObject
 {
+public:
+	TArray<class UOptimusResourceDescription*>    Descriptions;                                      // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComputeDataInterface">();
+		STATIC_CLASS_IMPL("OptimusResourceContainer")
 	}
-	static class UOptimusComputeDataInterface* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UOptimusComputeDataInterface>();
+		STATIC_NAME_IMPL(L"OptimusResourceContainer")
+	}
+	static class UOptimusResourceContainer* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusResourceContainer>();
 	}
 };
-static_assert(alignof(UOptimusComputeDataInterface) == 0x000008, "Wrong alignment on UOptimusComputeDataInterface");
-static_assert(sizeof(UOptimusComputeDataInterface) == 0x000030, "Wrong size on UOptimusComputeDataInterface");
+DUMPER7_ASSERTS_UOptimusResourceContainer;
 
 // Class OptimusCore.OptimusSkinnedMeshVertexAttributeDataInterface
 // 0x0010 (0x0040 - 0x0030)
@@ -413,16 +546,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusSkinnedMeshVertexAttributeDataInterface">();
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshVertexAttributeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshVertexAttributeDataInterface")
 	}
 	static class UOptimusSkinnedMeshVertexAttributeDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusSkinnedMeshVertexAttributeDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusSkinnedMeshVertexAttributeDataInterface) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshVertexAttributeDataInterface");
-static_assert(sizeof(UOptimusSkinnedMeshVertexAttributeDataInterface) == 0x000040, "Wrong size on UOptimusSkinnedMeshVertexAttributeDataInterface");
-static_assert(offsetof(UOptimusSkinnedMeshVertexAttributeDataInterface, AttributeName) == 0x000030, "Member 'UOptimusSkinnedMeshVertexAttributeDataInterface::AttributeName' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusSkinnedMeshVertexAttributeDataInterface;
 
 // Class OptimusCore.OptimusSkinnedMeshVertexAttributeDataProvider
 // 0x0018 (0x0048 - 0x0030)
@@ -436,17 +571,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusSkinnedMeshVertexAttributeDataProvider">();
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshVertexAttributeDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshVertexAttributeDataProvider")
 	}
 	static class UOptimusSkinnedMeshVertexAttributeDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusSkinnedMeshVertexAttributeDataProvider>();
 	}
 };
-static_assert(alignof(UOptimusSkinnedMeshVertexAttributeDataProvider) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshVertexAttributeDataProvider");
-static_assert(sizeof(UOptimusSkinnedMeshVertexAttributeDataProvider) == 0x000048, "Wrong size on UOptimusSkinnedMeshVertexAttributeDataProvider");
-static_assert(offsetof(UOptimusSkinnedMeshVertexAttributeDataProvider, SkinnedMeshComponent) == 0x000030, "Member 'UOptimusSkinnedMeshVertexAttributeDataProvider::SkinnedMeshComponent' has a wrong offset!");
-static_assert(offsetof(UOptimusSkinnedMeshVertexAttributeDataProvider, AttributeName) == 0x000038, "Member 'UOptimusSkinnedMeshVertexAttributeDataProvider::AttributeName' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusSkinnedMeshVertexAttributeDataProvider;
 
 // Class OptimusCore.OptimusKernelSource
 // 0x0010 (0x00B0 - 0x00A0)
@@ -458,16 +594,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusKernelSource">();
+		STATIC_CLASS_IMPL("OptimusKernelSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusKernelSource")
 	}
 	static class UOptimusKernelSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusKernelSource>();
 	}
 };
-static_assert(alignof(UOptimusKernelSource) == 0x000008, "Wrong alignment on UOptimusKernelSource");
-static_assert(sizeof(UOptimusKernelSource) == 0x0000B0, "Wrong size on UOptimusKernelSource");
-static_assert(offsetof(UOptimusKernelSource, Source) == 0x0000A0, "Member 'UOptimusKernelSource::Source' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusKernelSource;
 
 // Class OptimusCore.OptimusComponentSource
 // 0x0000 (0x0030 - 0x0030)
@@ -476,770 +614,18 @@ class UOptimusComponentSource : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComponentSource">();
+		STATIC_CLASS_IMPL("OptimusComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComponentSource")
 	}
 	static class UOptimusComponentSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusComponentSource>();
 	}
 };
-static_assert(alignof(UOptimusComponentSource) == 0x000008, "Wrong alignment on UOptimusComponentSource");
-static_assert(sizeof(UOptimusComponentSource) == 0x000030, "Wrong size on UOptimusComponentSource");
-
-// Class OptimusCore.OptimusSceneComponentSource
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSceneComponentSource final : public UOptimusComponentSource
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSceneComponentSource">();
-	}
-	static class UOptimusSceneComponentSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSceneComponentSource>();
-	}
-};
-static_assert(alignof(UOptimusSceneComponentSource) == 0x000008, "Wrong alignment on UOptimusSceneComponentSource");
-static_assert(sizeof(UOptimusSceneComponentSource) == 0x000030, "Wrong size on UOptimusSceneComponentSource");
-
-// Class OptimusCore.OptimusSkinnedMeshComponentSource
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSkinnedMeshComponentSource : public UOptimusComponentSource
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshComponentSource">();
-	}
-	static class UOptimusSkinnedMeshComponentSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshComponentSource>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshComponentSource) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshComponentSource");
-static_assert(sizeof(UOptimusSkinnedMeshComponentSource) == 0x000030, "Wrong size on UOptimusSkinnedMeshComponentSource");
-
-// Class OptimusCore.OptimusSkeletalMeshComponentSource
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSkeletalMeshComponentSource final : public UOptimusSkinnedMeshComponentSource
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkeletalMeshComponentSource">();
-	}
-	static class UOptimusSkeletalMeshComponentSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkeletalMeshComponentSource>();
-	}
-};
-static_assert(alignof(UOptimusSkeletalMeshComponentSource) == 0x000008, "Wrong alignment on UOptimusSkeletalMeshComponentSource");
-static_assert(sizeof(UOptimusSkeletalMeshComponentSource) == 0x000030, "Wrong size on UOptimusSkeletalMeshComponentSource");
-
-// Class OptimusCore.OptimusAnimAttributeDataInterface
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusAnimAttributeDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	struct FOptimusAnimAttributeArray             AttributeArray;                                    // 0x0030(0x0010)(Edit, BlueprintReadOnly, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusAnimAttributeDataInterface">();
-	}
-	static class UOptimusAnimAttributeDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusAnimAttributeDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusAnimAttributeDataInterface) == 0x000008, "Wrong alignment on UOptimusAnimAttributeDataInterface");
-static_assert(sizeof(UOptimusAnimAttributeDataInterface) == 0x000040, "Wrong size on UOptimusAnimAttributeDataInterface");
-static_assert(offsetof(UOptimusAnimAttributeDataInterface, AttributeArray) == 0x000030, "Member 'UOptimusAnimAttributeDataInterface::AttributeArray' has a wrong offset!");
-
-// Class OptimusCore.OptimusAnimAttributeDataProvider
-// 0x0020 (0x0050 - 0x0030)
-class UOptimusAnimAttributeDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusAnimAttributeDataProvider">();
-	}
-	static class UOptimusAnimAttributeDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusAnimAttributeDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusAnimAttributeDataProvider) == 0x000008, "Wrong alignment on UOptimusAnimAttributeDataProvider");
-static_assert(sizeof(UOptimusAnimAttributeDataProvider) == 0x000050, "Wrong size on UOptimusAnimAttributeDataProvider");
-static_assert(offsetof(UOptimusAnimAttributeDataProvider, SkeletalMesh) == 0x000030, "Member 'UOptimusAnimAttributeDataProvider::SkeletalMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusClothDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusClothDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusClothDataInterface">();
-	}
-	static class UOptimusClothDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusClothDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusClothDataInterface) == 0x000008, "Wrong alignment on UOptimusClothDataInterface");
-static_assert(sizeof(UOptimusClothDataInterface) == 0x000030, "Wrong size on UOptimusClothDataInterface");
-
-// Class OptimusCore.OptimusClothDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusClothDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusClothDataProvider">();
-	}
-	static class UOptimusClothDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusClothDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusClothDataProvider) == 0x000008, "Wrong alignment on UOptimusClothDataProvider");
-static_assert(sizeof(UOptimusClothDataProvider) == 0x000038, "Wrong size on UOptimusClothDataProvider");
-static_assert(offsetof(UOptimusClothDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusClothDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusConnectivityDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusConnectivityDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusConnectivityDataInterface">();
-	}
-	static class UOptimusConnectivityDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusConnectivityDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusConnectivityDataInterface) == 0x000008, "Wrong alignment on UOptimusConnectivityDataInterface");
-static_assert(sizeof(UOptimusConnectivityDataInterface) == 0x000030, "Wrong size on UOptimusConnectivityDataInterface");
-
-// Class OptimusCore.OptimusConnectivityDataProvider
-// 0x0018 (0x0048 - 0x0030)
-class UOptimusConnectivityDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusConnectivityDataProvider">();
-	}
-	static class UOptimusConnectivityDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusConnectivityDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusConnectivityDataProvider) == 0x000008, "Wrong alignment on UOptimusConnectivityDataProvider");
-static_assert(sizeof(UOptimusConnectivityDataProvider) == 0x000048, "Wrong size on UOptimusConnectivityDataProvider");
-static_assert(offsetof(UOptimusConnectivityDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusConnectivityDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusCustomComputeKernelDataInterface
-// 0x0018 (0x0048 - 0x0030)
-class UOptimusCustomComputeKernelDataInterface final : public UComputeDataInterface
-{
-public:
-	TWeakObjectPtr<class UOptimusComponentSourceBinding> ComponentSourceBinding;                     // 0x0030(0x0008)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 NumThreadsExpression;                              // 0x0038(0x0010)(BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusCustomComputeKernelDataInterface">();
-	}
-	static class UOptimusCustomComputeKernelDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusCustomComputeKernelDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusCustomComputeKernelDataInterface) == 0x000008, "Wrong alignment on UOptimusCustomComputeKernelDataInterface");
-static_assert(sizeof(UOptimusCustomComputeKernelDataInterface) == 0x000048, "Wrong size on UOptimusCustomComputeKernelDataInterface");
-static_assert(offsetof(UOptimusCustomComputeKernelDataInterface, ComponentSourceBinding) == 0x000030, "Member 'UOptimusCustomComputeKernelDataInterface::ComponentSourceBinding' has a wrong offset!");
-static_assert(offsetof(UOptimusCustomComputeKernelDataInterface, NumThreadsExpression) == 0x000038, "Member 'UOptimusCustomComputeKernelDataInterface::NumThreadsExpression' has a wrong offset!");
-
-// Class OptimusCore.OptimusCustomComputeKernelDataProvider
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusCustomComputeKernelDataProvider final : public UComputeDataProvider
-{
-public:
-	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusCustomComputeKernelDataProvider">();
-	}
-	static class UOptimusCustomComputeKernelDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusCustomComputeKernelDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusCustomComputeKernelDataProvider) == 0x000008, "Wrong alignment on UOptimusCustomComputeKernelDataProvider");
-static_assert(sizeof(UOptimusCustomComputeKernelDataProvider) == 0x000040, "Wrong size on UOptimusCustomComputeKernelDataProvider");
-
-// Class OptimusCore.OptimusDebugDrawDataInterface
-// 0x0018 (0x0048 - 0x0030)
-class UOptimusDebugDrawDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	struct FOptimusDebugDrawParameters            DebugDrawParameters;                               // 0x0030(0x0014)(Edit, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusDebugDrawDataInterface">();
-	}
-	static class UOptimusDebugDrawDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusDebugDrawDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusDebugDrawDataInterface) == 0x000008, "Wrong alignment on UOptimusDebugDrawDataInterface");
-static_assert(sizeof(UOptimusDebugDrawDataInterface) == 0x000048, "Wrong size on UOptimusDebugDrawDataInterface");
-static_assert(offsetof(UOptimusDebugDrawDataInterface, DebugDrawParameters) == 0x000030, "Member 'UOptimusDebugDrawDataInterface::DebugDrawParameters' has a wrong offset!");
-
-// Class OptimusCore.OptimusDebugDrawDataProvider
-// 0x0020 (0x0050 - 0x0030)
-class UOptimusDebugDrawDataProvider final : public UComputeDataProvider
-{
-public:
-	class UPrimitiveComponent*                    PrimitiveComponent;                                // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FOptimusDebugDrawParameters            DebugDrawParameters;                               // 0x0038(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusDebugDrawDataProvider">();
-	}
-	static class UOptimusDebugDrawDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusDebugDrawDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusDebugDrawDataProvider) == 0x000008, "Wrong alignment on UOptimusDebugDrawDataProvider");
-static_assert(sizeof(UOptimusDebugDrawDataProvider) == 0x000050, "Wrong size on UOptimusDebugDrawDataProvider");
-static_assert(offsetof(UOptimusDebugDrawDataProvider, PrimitiveComponent) == 0x000030, "Member 'UOptimusDebugDrawDataProvider::PrimitiveComponent' has a wrong offset!");
-static_assert(offsetof(UOptimusDebugDrawDataProvider, DebugDrawParameters) == 0x000038, "Member 'UOptimusDebugDrawDataProvider::DebugDrawParameters' has a wrong offset!");
-
-// Class OptimusCore.OptimusDuplicateVerticesDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusDuplicateVerticesDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusDuplicateVerticesDataInterface">();
-	}
-	static class UOptimusDuplicateVerticesDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusDuplicateVerticesDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusDuplicateVerticesDataInterface) == 0x000008, "Wrong alignment on UOptimusDuplicateVerticesDataInterface");
-static_assert(sizeof(UOptimusDuplicateVerticesDataInterface) == 0x000030, "Wrong size on UOptimusDuplicateVerticesDataInterface");
-
-// Class OptimusCore.OptimusDuplicateVerticesDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusDuplicateVerticesDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusDuplicateVerticesDataProvider">();
-	}
-	static class UOptimusDuplicateVerticesDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusDuplicateVerticesDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusDuplicateVerticesDataProvider) == 0x000008, "Wrong alignment on UOptimusDuplicateVerticesDataProvider");
-static_assert(sizeof(UOptimusDuplicateVerticesDataProvider) == 0x000038, "Wrong size on UOptimusDuplicateVerticesDataProvider");
-static_assert(offsetof(UOptimusDuplicateVerticesDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusDuplicateVerticesDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusGraphDataInterface
-// 0x0018 (0x0048 - 0x0030)
-class UOptimusGraphDataInterface final : public UComputeDataInterface
-{
-public:
-	TArray<struct FOptimusGraphVariableDescription> Variables;                                       // 0x0030(0x0010)(BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPrivate)
-	int32                                         ParameterBufferSize;                               // 0x0040(0x0004)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusGraphDataInterface">();
-	}
-	static class UOptimusGraphDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusGraphDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusGraphDataInterface) == 0x000008, "Wrong alignment on UOptimusGraphDataInterface");
-static_assert(sizeof(UOptimusGraphDataInterface) == 0x000048, "Wrong size on UOptimusGraphDataInterface");
-static_assert(offsetof(UOptimusGraphDataInterface, Variables) == 0x000030, "Member 'UOptimusGraphDataInterface::Variables' has a wrong offset!");
-static_assert(offsetof(UOptimusGraphDataInterface, ParameterBufferSize) == 0x000040, "Member 'UOptimusGraphDataInterface::ParameterBufferSize' has a wrong offset!");
-
-// Class OptimusCore.OptimusGraphDataProvider
-// 0x0028 (0x0058 - 0x0030)
-class UOptimusGraphDataProvider final : public UComputeDataProvider
-{
-public:
-	class UMeshComponent*                         MeshComponent;                                     // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusDeformerInstance*               DeformerInstance;                                  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FOptimusGraphVariableDescription> Variables;                                       // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusGraphDataProvider">();
-	}
-	static class UOptimusGraphDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusGraphDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusGraphDataProvider) == 0x000008, "Wrong alignment on UOptimusGraphDataProvider");
-static_assert(sizeof(UOptimusGraphDataProvider) == 0x000058, "Wrong size on UOptimusGraphDataProvider");
-static_assert(offsetof(UOptimusGraphDataProvider, MeshComponent) == 0x000030, "Member 'UOptimusGraphDataProvider::MeshComponent' has a wrong offset!");
-static_assert(offsetof(UOptimusGraphDataProvider, DeformerInstance) == 0x000038, "Member 'UOptimusGraphDataProvider::DeformerInstance' has a wrong offset!");
-static_assert(offsetof(UOptimusGraphDataProvider, Variables) == 0x000040, "Member 'UOptimusGraphDataProvider::Variables' has a wrong offset!");
-
-// Class OptimusCore.OptimusHalfEdgeDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusHalfEdgeDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusHalfEdgeDataInterface">();
-	}
-	static class UOptimusHalfEdgeDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusHalfEdgeDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusHalfEdgeDataInterface) == 0x000008, "Wrong alignment on UOptimusHalfEdgeDataInterface");
-static_assert(sizeof(UOptimusHalfEdgeDataInterface) == 0x000030, "Wrong size on UOptimusHalfEdgeDataInterface");
-
-// Class OptimusCore.OptimusHalfEdgeDataProvider
-// 0x0028 (0x0058 - 0x0030)
-class UOptimusHalfEdgeDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusHalfEdgeDataProvider">();
-	}
-	static class UOptimusHalfEdgeDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusHalfEdgeDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusHalfEdgeDataProvider) == 0x000008, "Wrong alignment on UOptimusHalfEdgeDataProvider");
-static_assert(sizeof(UOptimusHalfEdgeDataProvider) == 0x000058, "Wrong size on UOptimusHalfEdgeDataProvider");
-static_assert(offsetof(UOptimusHalfEdgeDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusHalfEdgeDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusMorphTargetDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusMorphTargetDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusMorphTargetDataInterface">();
-	}
-	static class UOptimusMorphTargetDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusMorphTargetDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusMorphTargetDataInterface) == 0x000008, "Wrong alignment on UOptimusMorphTargetDataInterface");
-static_assert(sizeof(UOptimusMorphTargetDataInterface) == 0x000030, "Wrong size on UOptimusMorphTargetDataInterface");
-
-// Class OptimusCore.OptimusMorphTargetDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusMorphTargetDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusMorphTargetDataProvider">();
-	}
-	static class UOptimusMorphTargetDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusMorphTargetDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusMorphTargetDataProvider) == 0x000008, "Wrong alignment on UOptimusMorphTargetDataProvider");
-static_assert(sizeof(UOptimusMorphTargetDataProvider) == 0x000038, "Wrong size on UOptimusMorphTargetDataProvider");
-static_assert(offsetof(UOptimusMorphTargetDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusMorphTargetDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusRawBufferDataInterface
-// 0x0050 (0x0080 - 0x0030)
-class UOptimusRawBufferDataInterface : public UOptimusComputeDataInterface
-{
-public:
-	struct FShaderValueTypeHandle                 ValueType;                                         // 0x0030(0x0008)(BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FOptimusDataDomain                     DataDomain;                                        // 0x0038(0x0040)(BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TWeakObjectPtr<class UOptimusComponentSourceBinding> ComponentSourceBinding;                     // 0x0078(0x0008)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusRawBufferDataInterface">();
-	}
-	static class UOptimusRawBufferDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusRawBufferDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusRawBufferDataInterface) == 0x000008, "Wrong alignment on UOptimusRawBufferDataInterface");
-static_assert(sizeof(UOptimusRawBufferDataInterface) == 0x000080, "Wrong size on UOptimusRawBufferDataInterface");
-static_assert(offsetof(UOptimusRawBufferDataInterface, ValueType) == 0x000030, "Member 'UOptimusRawBufferDataInterface::ValueType' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataInterface, DataDomain) == 0x000038, "Member 'UOptimusRawBufferDataInterface::DataDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataInterface, ComponentSourceBinding) == 0x000078, "Member 'UOptimusRawBufferDataInterface::ComponentSourceBinding' has a wrong offset!");
-
-// Class OptimusCore.OptimusTransientBufferDataInterface
-// 0x0000 (0x0080 - 0x0080)
-class UOptimusTransientBufferDataInterface final : public UOptimusRawBufferDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusTransientBufferDataInterface">();
-	}
-	static class UOptimusTransientBufferDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusTransientBufferDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusTransientBufferDataInterface) == 0x000008, "Wrong alignment on UOptimusTransientBufferDataInterface");
-static_assert(sizeof(UOptimusTransientBufferDataInterface) == 0x000080, "Wrong size on UOptimusTransientBufferDataInterface");
-
-// Class OptimusCore.OptimusPersistentBufferDataInterface
-// 0x0010 (0x0090 - 0x0080)
-class UOptimusPersistentBufferDataInterface final : public UOptimusRawBufferDataInterface
-{
-public:
-	class FName                                   ResourceName;                                      // 0x0080(0x000C)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusPersistentBufferDataInterface">();
-	}
-	static class UOptimusPersistentBufferDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusPersistentBufferDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusPersistentBufferDataInterface) == 0x000008, "Wrong alignment on UOptimusPersistentBufferDataInterface");
-static_assert(sizeof(UOptimusPersistentBufferDataInterface) == 0x000090, "Wrong size on UOptimusPersistentBufferDataInterface");
-static_assert(offsetof(UOptimusPersistentBufferDataInterface, ResourceName) == 0x000080, "Member 'UOptimusPersistentBufferDataInterface::ResourceName' has a wrong offset!");
-
-// Class OptimusCore.OptimusRawBufferDataProvider
-// 0x0058 (0x0088 - 0x0030)
-class UOptimusRawBufferDataProvider : public UComputeDataProvider
-{
-public:
-	TWeakObjectPtr<class UActorComponent>         Component;                                         // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TWeakObjectPtr<class UOptimusComponentSource> ComponentSource;                                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FOptimusDataDomain                     DataDomain;                                        // 0x0040(0x0040)(NativeAccessSpecifierPublic)
-	int32                                         ElementStride;                                     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RawStride;                                         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusRawBufferDataProvider">();
-	}
-	static class UOptimusRawBufferDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusRawBufferDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusRawBufferDataProvider) == 0x000008, "Wrong alignment on UOptimusRawBufferDataProvider");
-static_assert(sizeof(UOptimusRawBufferDataProvider) == 0x000088, "Wrong size on UOptimusRawBufferDataProvider");
-static_assert(offsetof(UOptimusRawBufferDataProvider, Component) == 0x000030, "Member 'UOptimusRawBufferDataProvider::Component' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataProvider, ComponentSource) == 0x000038, "Member 'UOptimusRawBufferDataProvider::ComponentSource' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataProvider, DataDomain) == 0x000040, "Member 'UOptimusRawBufferDataProvider::DataDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataProvider, ElementStride) == 0x000080, "Member 'UOptimusRawBufferDataProvider::ElementStride' has a wrong offset!");
-static_assert(offsetof(UOptimusRawBufferDataProvider, RawStride) == 0x000084, "Member 'UOptimusRawBufferDataProvider::RawStride' has a wrong offset!");
-
-// Class OptimusCore.OptimusTransientBufferDataProvider
-// 0x0000 (0x0088 - 0x0088)
-class UOptimusTransientBufferDataProvider final : public UOptimusRawBufferDataProvider
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusTransientBufferDataProvider">();
-	}
-	static class UOptimusTransientBufferDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusTransientBufferDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusTransientBufferDataProvider) == 0x000008, "Wrong alignment on UOptimusTransientBufferDataProvider");
-static_assert(sizeof(UOptimusTransientBufferDataProvider) == 0x000088, "Wrong size on UOptimusTransientBufferDataProvider");
-
-// Class OptimusCore.OptimusPersistentBufferDataProvider
-// 0x0020 (0x00A8 - 0x0088)
-class UOptimusPersistentBufferDataProvider final : public UOptimusRawBufferDataProvider
-{
-public:
-	uint8                                         Pad_88[0x20];                                      // 0x0088(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusPersistentBufferDataProvider">();
-	}
-	static class UOptimusPersistentBufferDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusPersistentBufferDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusPersistentBufferDataProvider) == 0x000008, "Wrong alignment on UOptimusPersistentBufferDataProvider");
-static_assert(sizeof(UOptimusPersistentBufferDataProvider) == 0x0000A8, "Wrong size on UOptimusPersistentBufferDataProvider");
-
-// Class OptimusCore.OptimusSceneDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSceneDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSceneDataInterface">();
-	}
-	static class UOptimusSceneDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSceneDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusSceneDataInterface) == 0x000008, "Wrong alignment on UOptimusSceneDataInterface");
-static_assert(sizeof(UOptimusSceneDataInterface) == 0x000030, "Wrong size on UOptimusSceneDataInterface");
-
-// Class OptimusCore.OptimusSceneDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusSceneDataProvider final : public UComputeDataProvider
-{
-public:
-	class USceneComponent*                        SceneComponent;                                    // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSceneDataProvider">();
-	}
-	static class UOptimusSceneDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSceneDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusSceneDataProvider) == 0x000008, "Wrong alignment on UOptimusSceneDataProvider");
-static_assert(sizeof(UOptimusSceneDataProvider) == 0x000038, "Wrong size on UOptimusSceneDataProvider");
-static_assert(offsetof(UOptimusSceneDataProvider, SceneComponent) == 0x000030, "Member 'UOptimusSceneDataProvider::SceneComponent' has a wrong offset!");
-
-// Class OptimusCore.OptimusSkeletonDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSkeletonDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkeletonDataInterface">();
-	}
-	static class UOptimusSkeletonDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkeletonDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusSkeletonDataInterface) == 0x000008, "Wrong alignment on UOptimusSkeletonDataInterface");
-static_assert(sizeof(UOptimusSkeletonDataInterface) == 0x000030, "Wrong size on UOptimusSkeletonDataInterface");
-
-// Class OptimusCore.OptimusSkeletonDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusSkeletonDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkeletonDataProvider">();
-	}
-	static class UOptimusSkeletonDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkeletonDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusSkeletonDataProvider) == 0x000008, "Wrong alignment on UOptimusSkeletonDataProvider");
-static_assert(sizeof(UOptimusSkeletonDataProvider) == 0x000038, "Wrong size on UOptimusSkeletonDataProvider");
-static_assert(offsetof(UOptimusSkeletonDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusSkeletonDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusSkinnedMeshDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSkinnedMeshDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshDataInterface">();
-	}
-	static class UOptimusSkinnedMeshDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshDataInterface) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshDataInterface");
-static_assert(sizeof(UOptimusSkinnedMeshDataInterface) == 0x000030, "Wrong size on UOptimusSkinnedMeshDataInterface");
-
-// Class OptimusCore.OptimusSkinnedMeshDataProvider
-// 0x0008 (0x0038 - 0x0030)
-class UOptimusSkinnedMeshDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshDataProvider">();
-	}
-	static class UOptimusSkinnedMeshDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshDataProvider) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshDataProvider");
-static_assert(sizeof(UOptimusSkinnedMeshDataProvider) == 0x000038, "Wrong size on UOptimusSkinnedMeshDataProvider");
-static_assert(offsetof(UOptimusSkinnedMeshDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusSkinnedMeshDataProvider::SkinnedMesh' has a wrong offset!");
-
-// Class OptimusCore.OptimusSkinnedMeshExecDataInterface
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusSkinnedMeshExecDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	EOptimusSkinnedMeshExecDomain                 Domain;                                            // 0x0038(0x0001)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshExecDataInterface">();
-	}
-	static class UOptimusSkinnedMeshExecDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshExecDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshExecDataInterface) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshExecDataInterface");
-static_assert(sizeof(UOptimusSkinnedMeshExecDataInterface) == 0x000040, "Wrong size on UOptimusSkinnedMeshExecDataInterface");
-static_assert(offsetof(UOptimusSkinnedMeshExecDataInterface, Domain) == 0x000038, "Member 'UOptimusSkinnedMeshExecDataInterface::Domain' has a wrong offset!");
-
-// Class OptimusCore.OptimusSkinnedMeshExecDataProvider
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusSkinnedMeshExecDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EOptimusSkinnedMeshExecDomain                 Domain;                                            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshExecDataProvider">();
-	}
-	static class UOptimusSkinnedMeshExecDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshExecDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshExecDataProvider) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshExecDataProvider");
-static_assert(sizeof(UOptimusSkinnedMeshExecDataProvider) == 0x000040, "Wrong size on UOptimusSkinnedMeshExecDataProvider");
-static_assert(offsetof(UOptimusSkinnedMeshExecDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusSkinnedMeshExecDataProvider::SkinnedMesh' has a wrong offset!");
-static_assert(offsetof(UOptimusSkinnedMeshExecDataProvider, Domain) == 0x000038, "Member 'UOptimusSkinnedMeshExecDataProvider::Domain' has a wrong offset!");
-
-// Class OptimusCore.OptimusSkinnedMeshWriteDataInterface
-// 0x0000 (0x0030 - 0x0030)
-class UOptimusSkinnedMeshWriteDataInterface final : public UOptimusComputeDataInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshWriteDataInterface">();
-	}
-	static class UOptimusSkinnedMeshWriteDataInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshWriteDataInterface>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshWriteDataInterface) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshWriteDataInterface");
-static_assert(sizeof(UOptimusSkinnedMeshWriteDataInterface) == 0x000030, "Wrong size on UOptimusSkinnedMeshWriteDataInterface");
-
-// Class OptimusCore.OptimusSkinnedMeshWriteDataProvider
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusSkinnedMeshWriteDataProvider final : public UComputeDataProvider
-{
-public:
-	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusSkinnedMeshWriteDataProvider">();
-	}
-	static class UOptimusSkinnedMeshWriteDataProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusSkinnedMeshWriteDataProvider>();
-	}
-};
-static_assert(alignof(UOptimusSkinnedMeshWriteDataProvider) == 0x000008, "Wrong alignment on UOptimusSkinnedMeshWriteDataProvider");
-static_assert(sizeof(UOptimusSkinnedMeshWriteDataProvider) == 0x000040, "Wrong size on UOptimusSkinnedMeshWriteDataProvider");
-static_assert(offsetof(UOptimusSkinnedMeshWriteDataProvider, SkinnedMesh) == 0x000030, "Member 'UOptimusSkinnedMeshWriteDataProvider::SkinnedMesh' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusComponentSource;
 
 // Class OptimusCore.OptimusNode
 // 0x00E8 (0x0118 - 0x0030)
@@ -1265,20 +651,279 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode">();
+		STATIC_CLASS_IMPL("OptimusNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode")
 	}
 	static class UOptimusNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode>();
 	}
 };
-static_assert(alignof(UOptimusNode) == 0x000008, "Wrong alignment on UOptimusNode");
-static_assert(sizeof(UOptimusNode) == 0x000118, "Wrong size on UOptimusNode");
-static_assert(offsetof(UOptimusNode, DisplayName) == 0x000038, "Member 'UOptimusNode::DisplayName' has a wrong offset!");
-static_assert(offsetof(UOptimusNode, GraphPosition) == 0x000050, "Member 'UOptimusNode::GraphPosition' has a wrong offset!");
-static_assert(offsetof(UOptimusNode, Pins) == 0x000060, "Member 'UOptimusNode::Pins' has a wrong offset!");
-static_assert(offsetof(UOptimusNode, ExpandedPins) == 0x000070, "Member 'UOptimusNode::ExpandedPins' has a wrong offset!");
-static_assert(offsetof(UOptimusNode, DiagnosticLevel) == 0x0000C0, "Member 'UOptimusNode::DiagnosticLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode;
+
+// Class OptimusCore.OptimusNode_ComponentSource
+// 0x0010 (0x0128 - 0x0118)
+class UOptimusNode_ComponentSource final : public UOptimusNode
+{
+public:
+	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UOptimusComponentSourceBinding*         Binding;                                           // 0x0120(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusNode_ComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ComponentSource")
+	}
+	static class UOptimusNode_ComponentSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusNode_ComponentSource>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusNode_ComponentSource;
+
+// Class OptimusCore.OptimusSceneComponentSource
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSceneComponentSource final : public UOptimusComponentSource
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSceneComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSceneComponentSource")
+	}
+	static class UOptimusSceneComponentSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSceneComponentSource>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSceneComponentSource;
+
+// Class OptimusCore.OptimusSkinnedMeshComponentSource
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSkinnedMeshComponentSource : public UOptimusComponentSource
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshComponentSource")
+	}
+	static class UOptimusSkinnedMeshComponentSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshComponentSource>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshComponentSource;
+
+// Class OptimusCore.OptimusSkeletalMeshComponentSource
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSkeletalMeshComponentSource final : public UOptimusSkinnedMeshComponentSource
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkeletalMeshComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkeletalMeshComponentSource")
+	}
+	static class UOptimusSkeletalMeshComponentSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkeletalMeshComponentSource>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkeletalMeshComponentSource;
+
+// Class OptimusCore.OptimusAnimAttributeDataInterface
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusAnimAttributeDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	struct FOptimusAnimAttributeArray             AttributeArray;                                    // 0x0030(0x0010)(Edit, BlueprintReadOnly, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusAnimAttributeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusAnimAttributeDataInterface")
+	}
+	static class UOptimusAnimAttributeDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusAnimAttributeDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusAnimAttributeDataInterface;
+
+// Class OptimusCore.OptimusAnimAttributeDataProvider
+// 0x0020 (0x0050 - 0x0030)
+class UOptimusAnimAttributeDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusAnimAttributeDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusAnimAttributeDataProvider")
+	}
+	static class UOptimusAnimAttributeDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusAnimAttributeDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusAnimAttributeDataProvider;
+
+// Class OptimusCore.OptimusClothDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusClothDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusClothDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusClothDataInterface")
+	}
+	static class UOptimusClothDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusClothDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusClothDataInterface;
+
+// Class OptimusCore.OptimusNode_ComputeKernelBase
+// 0x0008 (0x0120 - 0x0118)
+class UOptimusNode_ComputeKernelBase : public UOptimusNode
+{
+public:
+	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusNode_ComputeKernelBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ComputeKernelBase")
+	}
+	static class UOptimusNode_ComputeKernelBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusNode_ComputeKernelBase>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusNode_ComputeKernelBase;
+
+// Class OptimusCore.OptimusClothDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusClothDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusClothDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusClothDataProvider")
+	}
+	static class UOptimusClothDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusClothDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusClothDataProvider;
+
+// Class OptimusCore.OptimusConnectivityDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusConnectivityDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusConnectivityDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusConnectivityDataInterface")
+	}
+	static class UOptimusConnectivityDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusConnectivityDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusConnectivityDataInterface;
+
+// Class OptimusCore.OptimusSkinnedMeshDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSkinnedMeshDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshDataInterface")
+	}
+	static class UOptimusSkinnedMeshDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshDataInterface;
+
+// Class OptimusCore.OptimusConnectivityDataProvider
+// 0x0018 (0x0048 - 0x0030)
+class UOptimusConnectivityDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusConnectivityDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusConnectivityDataProvider")
+	}
+	static class UOptimusConnectivityDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusConnectivityDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusConnectivityDataProvider;
 
 // Class OptimusCore.OptimusNode_DataInterface
 // 0x0018 (0x0130 - 0x0118)
@@ -1292,17 +937,600 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_DataInterface">();
+		STATIC_CLASS_IMPL("OptimusNode_DataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_DataInterface")
 	}
 	static class UOptimusNode_DataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_DataInterface>();
 	}
 };
-static_assert(alignof(UOptimusNode_DataInterface) == 0x000008, "Wrong alignment on UOptimusNode_DataInterface");
-static_assert(sizeof(UOptimusNode_DataInterface) == 0x000130, "Wrong size on UOptimusNode_DataInterface");
-static_assert(offsetof(UOptimusNode_DataInterface, DataInterfaceClass) == 0x000120, "Member 'UOptimusNode_DataInterface::DataInterfaceClass' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_DataInterface, DataInterfaceData) == 0x000128, "Member 'UOptimusNode_DataInterface::DataInterfaceData' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_DataInterface;
+
+// Class OptimusCore.OptimusCustomComputeKernelDataInterface
+// 0x0018 (0x0048 - 0x0030)
+class UOptimusCustomComputeKernelDataInterface final : public UComputeDataInterface
+{
+public:
+	TWeakObjectPtr<class UOptimusComponentSourceBinding> ComponentSourceBinding;                     // 0x0030(0x0008)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 NumThreadsExpression;                              // 0x0038(0x0010)(BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusCustomComputeKernelDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusCustomComputeKernelDataInterface")
+	}
+	static class UOptimusCustomComputeKernelDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusCustomComputeKernelDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusCustomComputeKernelDataInterface;
+
+// Class OptimusCore.OptimusCustomComputeKernelDataProvider
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusCustomComputeKernelDataProvider final : public UComputeDataProvider
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusCustomComputeKernelDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusCustomComputeKernelDataProvider")
+	}
+	static class UOptimusCustomComputeKernelDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusCustomComputeKernelDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusCustomComputeKernelDataProvider;
+
+// Class OptimusCore.OptimusDebugDrawDataInterface
+// 0x0018 (0x0048 - 0x0030)
+class UOptimusDebugDrawDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	struct FOptimusDebugDrawParameters            DebugDrawParameters;                               // 0x0030(0x0014)(Edit, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusDebugDrawDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDebugDrawDataInterface")
+	}
+	static class UOptimusDebugDrawDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusDebugDrawDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusDebugDrawDataInterface;
+
+// Class OptimusCore.OptimusDebugDrawDataProvider
+// 0x0020 (0x0050 - 0x0030)
+class UOptimusDebugDrawDataProvider final : public UComputeDataProvider
+{
+public:
+	class UPrimitiveComponent*                    PrimitiveComponent;                                // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FOptimusDebugDrawParameters            DebugDrawParameters;                               // 0x0038(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusDebugDrawDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDebugDrawDataProvider")
+	}
+	static class UOptimusDebugDrawDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusDebugDrawDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusDebugDrawDataProvider;
+
+// Class OptimusCore.OptimusSkinnedMeshExecDataProvider
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusSkinnedMeshExecDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EOptimusSkinnedMeshExecDomain                 Domain;                                            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshExecDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshExecDataProvider")
+	}
+	static class UOptimusSkinnedMeshExecDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshExecDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshExecDataProvider;
+
+// Class OptimusCore.OptimusDuplicateVerticesDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusDuplicateVerticesDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusDuplicateVerticesDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDuplicateVerticesDataInterface")
+	}
+	static class UOptimusDuplicateVerticesDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusDuplicateVerticesDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusDuplicateVerticesDataInterface;
+
+// Class OptimusCore.OptimusDuplicateVerticesDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusDuplicateVerticesDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusDuplicateVerticesDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDuplicateVerticesDataProvider")
+	}
+	static class UOptimusDuplicateVerticesDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusDuplicateVerticesDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusDuplicateVerticesDataProvider;
+
+// Class OptimusCore.OptimusComponentSourceBinding
+// 0x0030 (0x0060 - 0x0030)
+class UOptimusComponentSourceBinding final : public UObject
+{
+public:
+	class FName                                   BindingName;                                       // 0x0030(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UOptimusComponentSource>    ComponentType;                                     // 0x0040(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           ComponentTags;                                     // 0x0048(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bIsPrimaryBinding;                                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusComponentSourceBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComponentSourceBinding")
+	}
+	static class UOptimusComponentSourceBinding* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusComponentSourceBinding>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusComponentSourceBinding;
+
+// Class OptimusCore.OptimusGraphDataInterface
+// 0x0018 (0x0048 - 0x0030)
+class UOptimusGraphDataInterface final : public UComputeDataInterface
+{
+public:
+	TArray<struct FOptimusGraphVariableDescription> Variables;                                       // 0x0030(0x0010)(BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPrivate)
+	int32                                         ParameterBufferSize;                               // 0x0040(0x0004)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusGraphDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGraphDataInterface")
+	}
+	static class UOptimusGraphDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusGraphDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusGraphDataInterface;
+
+// Class OptimusCore.OptimusGraphDataProvider
+// 0x0028 (0x0058 - 0x0030)
+class UOptimusGraphDataProvider final : public UComputeDataProvider
+{
+public:
+	class UMeshComponent*                         MeshComponent;                                     // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusDeformerInstance*               DeformerInstance;                                  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FOptimusGraphVariableDescription> Variables;                                       // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusGraphDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGraphDataProvider")
+	}
+	static class UOptimusGraphDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusGraphDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusGraphDataProvider;
+
+// Class OptimusCore.OptimusHalfEdgeDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusHalfEdgeDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusHalfEdgeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusHalfEdgeDataInterface")
+	}
+	static class UOptimusHalfEdgeDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusHalfEdgeDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusHalfEdgeDataInterface;
+
+// Class OptimusCore.OptimusSkeletonDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusSkeletonDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkeletonDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkeletonDataProvider")
+	}
+	static class UOptimusSkeletonDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkeletonDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkeletonDataProvider;
+
+// Class OptimusCore.OptimusHalfEdgeDataProvider
+// 0x0028 (0x0058 - 0x0030)
+class UOptimusHalfEdgeDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusHalfEdgeDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusHalfEdgeDataProvider")
+	}
+	static class UOptimusHalfEdgeDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusHalfEdgeDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusHalfEdgeDataProvider;
+
+// Class OptimusCore.OptimusSkinnedMeshWriteDataProvider
+// 0x0010 (0x0040 - 0x0030)
+class UOptimusSkinnedMeshWriteDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshWriteDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshWriteDataProvider")
+	}
+	static class UOptimusSkinnedMeshWriteDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshWriteDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshWriteDataProvider;
+
+// Class OptimusCore.OptimusMorphTargetDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusMorphTargetDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusMorphTargetDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusMorphTargetDataInterface")
+	}
+	static class UOptimusMorphTargetDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusMorphTargetDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusMorphTargetDataInterface;
+
+// Class OptimusCore.OptimusMorphTargetDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusMorphTargetDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusMorphTargetDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusMorphTargetDataProvider")
+	}
+	static class UOptimusMorphTargetDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusMorphTargetDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusMorphTargetDataProvider;
+
+// Class OptimusCore.OptimusRawBufferDataInterface
+// 0x0050 (0x0080 - 0x0030)
+class UOptimusRawBufferDataInterface : public UOptimusComputeDataInterface
+{
+public:
+	struct FShaderValueTypeHandle                 ValueType;                                         // 0x0030(0x0008)(BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FOptimusDataDomain                     DataDomain;                                        // 0x0038(0x0040)(BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class UOptimusComponentSourceBinding> ComponentSourceBinding;                     // 0x0078(0x0008)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusRawBufferDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusRawBufferDataInterface")
+	}
+	static class UOptimusRawBufferDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusRawBufferDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusRawBufferDataInterface;
+
+// Class OptimusCore.OptimusTransientBufferDataInterface
+// 0x0000 (0x0080 - 0x0080)
+class UOptimusTransientBufferDataInterface final : public UOptimusRawBufferDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusTransientBufferDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusTransientBufferDataInterface")
+	}
+	static class UOptimusTransientBufferDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusTransientBufferDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusTransientBufferDataInterface;
+
+// Class OptimusCore.OptimusPersistentBufferDataInterface
+// 0x0010 (0x0090 - 0x0080)
+class UOptimusPersistentBufferDataInterface final : public UOptimusRawBufferDataInterface
+{
+public:
+	class FName                                   ResourceName;                                      // 0x0080(0x000C)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusPersistentBufferDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusPersistentBufferDataInterface")
+	}
+	static class UOptimusPersistentBufferDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusPersistentBufferDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusPersistentBufferDataInterface;
+
+// Class OptimusCore.OptimusRawBufferDataProvider
+// 0x0058 (0x0088 - 0x0030)
+class UOptimusRawBufferDataProvider : public UComputeDataProvider
+{
+public:
+	TWeakObjectPtr<class UActorComponent>         Component;                                         // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class UOptimusComponentSource> ComponentSource;                                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FOptimusDataDomain                     DataDomain;                                        // 0x0040(0x0040)(NativeAccessSpecifierPublic)
+	int32                                         ElementStride;                                     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RawStride;                                         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusRawBufferDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusRawBufferDataProvider")
+	}
+	static class UOptimusRawBufferDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusRawBufferDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusRawBufferDataProvider;
+
+// Class OptimusCore.OptimusTransientBufferDataProvider
+// 0x0000 (0x0088 - 0x0088)
+class UOptimusTransientBufferDataProvider final : public UOptimusRawBufferDataProvider
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusTransientBufferDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusTransientBufferDataProvider")
+	}
+	static class UOptimusTransientBufferDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusTransientBufferDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusTransientBufferDataProvider;
+
+// Class OptimusCore.OptimusPersistentBufferDataProvider
+// 0x0020 (0x00A8 - 0x0088)
+class UOptimusPersistentBufferDataProvider final : public UOptimusRawBufferDataProvider
+{
+public:
+	uint8                                         Pad_88[0x20];                                      // 0x0088(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusPersistentBufferDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusPersistentBufferDataProvider")
+	}
+	static class UOptimusPersistentBufferDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusPersistentBufferDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusPersistentBufferDataProvider;
+
+// Class OptimusCore.OptimusSceneDataInterface
+// 0x0000 (0x0030 - 0x0030)
+class UOptimusSceneDataInterface final : public UOptimusComputeDataInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSceneDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSceneDataInterface")
+	}
+	static class UOptimusSceneDataInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSceneDataInterface>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSceneDataInterface;
+
+// Class OptimusCore.OptimusSceneDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusSceneDataProvider final : public UComputeDataProvider
+{
+public:
+	class USceneComponent*                        SceneComponent;                                    // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSceneDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSceneDataProvider")
+	}
+	static class UOptimusSceneDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSceneDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSceneDataProvider;
+
+// Class OptimusCore.OptimusSkinnedMeshDataProvider
+// 0x0008 (0x0038 - 0x0030)
+class UOptimusSkinnedMeshDataProvider final : public UComputeDataProvider
+{
+public:
+	class USkinnedMeshComponent*                  SkinnedMesh;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OptimusSkinnedMeshDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSkinnedMeshDataProvider")
+	}
+	static class UOptimusSkinnedMeshDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOptimusSkinnedMeshDataProvider>();
+	}
+};
+DUMPER7_ASSERTS_UOptimusSkinnedMeshDataProvider;
 
 // Class OptimusCore.OptimusNode_AnimAttributeDataInterface
 // 0x0000 (0x0130 - 0x0130)
@@ -1311,57 +1539,18 @@ class UOptimusNode_AnimAttributeDataInterface final : public UOptimusNode_DataIn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_AnimAttributeDataInterface">();
+		STATIC_CLASS_IMPL("OptimusNode_AnimAttributeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_AnimAttributeDataInterface")
 	}
 	static class UOptimusNode_AnimAttributeDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_AnimAttributeDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusNode_AnimAttributeDataInterface) == 0x000008, "Wrong alignment on UOptimusNode_AnimAttributeDataInterface");
-static_assert(sizeof(UOptimusNode_AnimAttributeDataInterface) == 0x000130, "Wrong size on UOptimusNode_AnimAttributeDataInterface");
-
-// Class OptimusCore.OptimusNode_ComponentSource
-// 0x0010 (0x0128 - 0x0118)
-class UOptimusNode_ComponentSource final : public UOptimusNode
-{
-public:
-	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UOptimusComponentSourceBinding*         Binding;                                           // 0x0120(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusNode_ComponentSource">();
-	}
-	static class UOptimusNode_ComponentSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusNode_ComponentSource>();
-	}
-};
-static_assert(alignof(UOptimusNode_ComponentSource) == 0x000008, "Wrong alignment on UOptimusNode_ComponentSource");
-static_assert(sizeof(UOptimusNode_ComponentSource) == 0x000128, "Wrong size on UOptimusNode_ComponentSource");
-static_assert(offsetof(UOptimusNode_ComponentSource, Binding) == 0x000120, "Member 'UOptimusNode_ComponentSource::Binding' has a wrong offset!");
-
-// Class OptimusCore.OptimusNode_ComputeKernelBase
-// 0x0008 (0x0120 - 0x0118)
-class UOptimusNode_ComputeKernelBase : public UOptimusNode
-{
-public:
-	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusNode_ComputeKernelBase">();
-	}
-	static class UOptimusNode_ComputeKernelBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusNode_ComputeKernelBase>();
-	}
-};
-static_assert(alignof(UOptimusNode_ComputeKernelBase) == 0x000008, "Wrong alignment on UOptimusNode_ComputeKernelBase");
-static_assert(sizeof(UOptimusNode_ComputeKernelBase) == 0x000120, "Wrong size on UOptimusNode_ComputeKernelBase");
+DUMPER7_ASSERTS_UOptimusNode_AnimAttributeDataInterface;
 
 // Class OptimusCore.OptimusNode_ComputeKernelFunctionGeneratorClass
 // 0x0060 (0x02D8 - 0x0278)
@@ -1379,22 +1568,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_ComputeKernelFunctionGeneratorClass">();
+		STATIC_CLASS_IMPL("OptimusNode_ComputeKernelFunctionGeneratorClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ComputeKernelFunctionGeneratorClass")
 	}
 	static class UOptimusNode_ComputeKernelFunctionGeneratorClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_ComputeKernelFunctionGeneratorClass>();
 	}
 };
-static_assert(alignof(UOptimusNode_ComputeKernelFunctionGeneratorClass) == 0x000008, "Wrong alignment on UOptimusNode_ComputeKernelFunctionGeneratorClass");
-static_assert(sizeof(UOptimusNode_ComputeKernelFunctionGeneratorClass) == 0x0002D8, "Wrong size on UOptimusNode_ComputeKernelFunctionGeneratorClass");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, Category) == 0x000278, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::Category' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, KernelName) == 0x000284, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::KernelName' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, ExecutionDomain) == 0x000290, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::ExecutionDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, GroupSize) == 0x00029C, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::GroupSize' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, InputBindings) == 0x0002A8, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::InputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, OutputBindings) == 0x0002B8, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::OutputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ComputeKernelFunctionGeneratorClass, ShaderSource) == 0x0002C8, "Member 'UOptimusNode_ComputeKernelFunctionGeneratorClass::ShaderSource' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_ComputeKernelFunctionGeneratorClass;
 
 // Class OptimusCore.OptimusNode_ComputeKernelFunction
 // 0x0000 (0x0120 - 0x0120)
@@ -1403,15 +1588,18 @@ class UOptimusNode_ComputeKernelFunction final : public UOptimusNode_ComputeKern
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_ComputeKernelFunction">();
+		STATIC_CLASS_IMPL("OptimusNode_ComputeKernelFunction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ComputeKernelFunction")
 	}
 	static class UOptimusNode_ComputeKernelFunction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_ComputeKernelFunction>();
 	}
 };
-static_assert(alignof(UOptimusNode_ComputeKernelFunction) == 0x000008, "Wrong alignment on UOptimusNode_ComputeKernelFunction");
-static_assert(sizeof(UOptimusNode_ComputeKernelFunction) == 0x000120, "Wrong size on UOptimusNode_ComputeKernelFunction");
+DUMPER7_ASSERTS_UOptimusNode_ComputeKernelFunction;
 
 // Class OptimusCore.OptimusNode_ConstantValueGeneratorClass
 // 0x0018 (0x0290 - 0x0278)
@@ -1424,16 +1612,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_ConstantValueGeneratorClass">();
+		STATIC_CLASS_IMPL("OptimusNode_ConstantValueGeneratorClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ConstantValueGeneratorClass")
 	}
 	static class UOptimusNode_ConstantValueGeneratorClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_ConstantValueGeneratorClass>();
 	}
 };
-static_assert(alignof(UOptimusNode_ConstantValueGeneratorClass) == 0x000008, "Wrong alignment on UOptimusNode_ConstantValueGeneratorClass");
-static_assert(sizeof(UOptimusNode_ConstantValueGeneratorClass) == 0x000290, "Wrong size on UOptimusNode_ConstantValueGeneratorClass");
-static_assert(offsetof(UOptimusNode_ConstantValueGeneratorClass, DataType) == 0x000278, "Member 'UOptimusNode_ConstantValueGeneratorClass::DataType' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_ConstantValueGeneratorClass;
 
 // Class OptimusCore.OptimusNode_ConstantValue
 // 0x0010 (0x0128 - 0x0118)
@@ -1445,15 +1635,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_ConstantValue">();
+		STATIC_CLASS_IMPL("OptimusNode_ConstantValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ConstantValue")
 	}
 	static class UOptimusNode_ConstantValue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_ConstantValue>();
 	}
 };
-static_assert(alignof(UOptimusNode_ConstantValue) == 0x000008, "Wrong alignment on UOptimusNode_ConstantValue");
-static_assert(sizeof(UOptimusNode_ConstantValue) == 0x000128, "Wrong size on UOptimusNode_ConstantValue");
+DUMPER7_ASSERTS_UOptimusNode_ConstantValue;
 
 // Class OptimusCore.OptimusNode_CustomComputeKernel
 // 0x00E0 (0x0200 - 0x0120)
@@ -1477,27 +1670,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_CustomComputeKernel">();
+		STATIC_CLASS_IMPL("OptimusNode_CustomComputeKernel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_CustomComputeKernel")
 	}
 	static class UOptimusNode_CustomComputeKernel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_CustomComputeKernel>();
 	}
 };
-static_assert(alignof(UOptimusNode_CustomComputeKernel) == 0x000008, "Wrong alignment on UOptimusNode_CustomComputeKernel");
-static_assert(sizeof(UOptimusNode_CustomComputeKernel) == 0x000200, "Wrong size on UOptimusNode_CustomComputeKernel");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, Category) == 0x000140, "Member 'UOptimusNode_CustomComputeKernel::Category' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, KernelName) == 0x00014C, "Member 'UOptimusNode_CustomComputeKernel::KernelName' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, ExecutionDomain) == 0x000158, "Member 'UOptimusNode_CustomComputeKernel::ExecutionDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, GroupSize) == 0x000164, "Member 'UOptimusNode_CustomComputeKernel::GroupSize' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, Parameters) == 0x000170, "Member 'UOptimusNode_CustomComputeKernel::Parameters' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, InputBindings) == 0x000180, "Member 'UOptimusNode_CustomComputeKernel::InputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, OutputBindings) == 0x000190, "Member 'UOptimusNode_CustomComputeKernel::OutputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, InputBindingArray) == 0x0001A0, "Member 'UOptimusNode_CustomComputeKernel::InputBindingArray' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, OutputBindingArray) == 0x0001B0, "Member 'UOptimusNode_CustomComputeKernel::OutputBindingArray' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, SecondaryInputBindingGroups) == 0x0001C0, "Member 'UOptimusNode_CustomComputeKernel::SecondaryInputBindingGroups' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, AdditionalSources) == 0x0001D0, "Member 'UOptimusNode_CustomComputeKernel::AdditionalSources' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_CustomComputeKernel, ShaderSource) == 0x0001E0, "Member 'UOptimusNode_CustomComputeKernel::ShaderSource' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_CustomComputeKernel;
 
 // Class OptimusCore.OptimusNode_FunctionReference
 // 0x0010 (0x0128 - 0x0118)
@@ -1510,16 +1694,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_FunctionReference">();
+		STATIC_CLASS_IMPL("OptimusNode_FunctionReference")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_FunctionReference")
 	}
 	static class UOptimusNode_FunctionReference* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_FunctionReference>();
 	}
 };
-static_assert(alignof(UOptimusNode_FunctionReference) == 0x000008, "Wrong alignment on UOptimusNode_FunctionReference");
-static_assert(sizeof(UOptimusNode_FunctionReference) == 0x000128, "Wrong size on UOptimusNode_FunctionReference");
-static_assert(offsetof(UOptimusNode_FunctionReference, FunctionGraph) == 0x000120, "Member 'UOptimusNode_FunctionReference::FunctionGraph' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_FunctionReference;
 
 // Class OptimusCore.OptimusNode_ResourceAccessorBase
 // 0x0080 (0x0198 - 0x0118)
@@ -1535,18 +1721,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_ResourceAccessorBase">();
+		STATIC_CLASS_IMPL("OptimusNode_ResourceAccessorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_ResourceAccessorBase")
 	}
 	static class UOptimusNode_ResourceAccessorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_ResourceAccessorBase>();
 	}
 };
-static_assert(alignof(UOptimusNode_ResourceAccessorBase) == 0x000008, "Wrong alignment on UOptimusNode_ResourceAccessorBase");
-static_assert(sizeof(UOptimusNode_ResourceAccessorBase) == 0x000198, "Wrong size on UOptimusNode_ResourceAccessorBase");
-static_assert(offsetof(UOptimusNode_ResourceAccessorBase, ResourceDesc) == 0x000128, "Member 'UOptimusNode_ResourceAccessorBase::ResourceDesc' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ResourceAccessorBase, WriteType) == 0x000130, "Member 'UOptimusNode_ResourceAccessorBase::WriteType' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_ResourceAccessorBase, DuplicationInfo) == 0x000138, "Member 'UOptimusNode_ResourceAccessorBase::DuplicationInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_ResourceAccessorBase;
 
 // Class OptimusCore.OptimusNode_GetResource
 // 0x0000 (0x0198 - 0x0198)
@@ -1555,15 +1741,18 @@ class UOptimusNode_GetResource final : public UOptimusNode_ResourceAccessorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_GetResource">();
+		STATIC_CLASS_IMPL("OptimusNode_GetResource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_GetResource")
 	}
 	static class UOptimusNode_GetResource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_GetResource>();
 	}
 };
-static_assert(alignof(UOptimusNode_GetResource) == 0x000008, "Wrong alignment on UOptimusNode_GetResource");
-static_assert(sizeof(UOptimusNode_GetResource) == 0x000198, "Wrong size on UOptimusNode_GetResource");
+DUMPER7_ASSERTS_UOptimusNode_GetResource;
 
 // Class OptimusCore.OptimusNode_GetVariable
 // 0x0040 (0x0158 - 0x0118)
@@ -1577,17 +1766,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_GetVariable">();
+		STATIC_CLASS_IMPL("OptimusNode_GetVariable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_GetVariable")
 	}
 	static class UOptimusNode_GetVariable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_GetVariable>();
 	}
 };
-static_assert(alignof(UOptimusNode_GetVariable) == 0x000008, "Wrong alignment on UOptimusNode_GetVariable");
-static_assert(sizeof(UOptimusNode_GetVariable) == 0x000158, "Wrong size on UOptimusNode_GetVariable");
-static_assert(offsetof(UOptimusNode_GetVariable, VariableDesc) == 0x000120, "Member 'UOptimusNode_GetVariable::VariableDesc' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_GetVariable, DuplicationInfo) == 0x000128, "Member 'UOptimusNode_GetVariable::DuplicationInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_GetVariable;
 
 // Class OptimusCore.OptimusNode_GraphTerminal
 // 0x0018 (0x0130 - 0x0118)
@@ -1602,17 +1792,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_GraphTerminal">();
+		STATIC_CLASS_IMPL("OptimusNode_GraphTerminal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_GraphTerminal")
 	}
 	static class UOptimusNode_GraphTerminal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_GraphTerminal>();
 	}
 };
-static_assert(alignof(UOptimusNode_GraphTerminal) == 0x000008, "Wrong alignment on UOptimusNode_GraphTerminal");
-static_assert(sizeof(UOptimusNode_GraphTerminal) == 0x000130, "Wrong size on UOptimusNode_GraphTerminal");
-static_assert(offsetof(UOptimusNode_GraphTerminal, TerminalType) == 0x000120, "Member 'UOptimusNode_GraphTerminal::TerminalType' has a wrong offset!");
-static_assert(offsetof(UOptimusNode_GraphTerminal, OwningGraph) == 0x000124, "Member 'UOptimusNode_GraphTerminal::OwningGraph' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_GraphTerminal;
 
 // Class OptimusCore.OptimusNode_Resource
 // 0x0000 (0x0198 - 0x0198)
@@ -1621,15 +1812,18 @@ class UOptimusNode_Resource final : public UOptimusNode_ResourceAccessorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_Resource">();
+		STATIC_CLASS_IMPL("OptimusNode_Resource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_Resource")
 	}
 	static class UOptimusNode_Resource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_Resource>();
 	}
 };
-static_assert(alignof(UOptimusNode_Resource) == 0x000008, "Wrong alignment on UOptimusNode_Resource");
-static_assert(sizeof(UOptimusNode_Resource) == 0x000198, "Wrong size on UOptimusNode_Resource");
+DUMPER7_ASSERTS_UOptimusNode_Resource;
 
 // Class OptimusCore.OptimusNode_SetResource
 // 0x0000 (0x0198 - 0x0198)
@@ -1638,15 +1832,18 @@ class UOptimusNode_SetResource final : public UOptimusNode_ResourceAccessorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_SetResource">();
+		STATIC_CLASS_IMPL("OptimusNode_SetResource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_SetResource")
 	}
 	static class UOptimusNode_SetResource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_SetResource>();
 	}
 };
-static_assert(alignof(UOptimusNode_SetResource) == 0x000008, "Wrong alignment on UOptimusNode_SetResource");
-static_assert(sizeof(UOptimusNode_SetResource) == 0x000198, "Wrong size on UOptimusNode_SetResource");
+DUMPER7_ASSERTS_UOptimusNode_SetResource;
 
 // Class OptimusCore.OptimusNode_SubGraphReference
 // 0x0010 (0x0128 - 0x0118)
@@ -1659,16 +1856,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNode_SubGraphReference">();
+		STATIC_CLASS_IMPL("OptimusNode_SubGraphReference")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNode_SubGraphReference")
 	}
 	static class UOptimusNode_SubGraphReference* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNode_SubGraphReference>();
 	}
 };
-static_assert(alignof(UOptimusNode_SubGraphReference) == 0x000008, "Wrong alignment on UOptimusNode_SubGraphReference");
-static_assert(sizeof(UOptimusNode_SubGraphReference) == 0x000128, "Wrong size on UOptimusNode_SubGraphReference");
-static_assert(offsetof(UOptimusNode_SubGraphReference, SubGraph) == 0x000120, "Member 'UOptimusNode_SubGraphReference::SubGraph' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNode_SubGraphReference;
 
 // Class OptimusCore.OptimusActionStack
 // 0x00B0 (0x00E0 - 0x0030)
@@ -1681,45 +1880,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusActionStack">();
+		STATIC_CLASS_IMPL("OptimusActionStack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusActionStack")
 	}
 	static class UOptimusActionStack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusActionStack>();
 	}
 };
-static_assert(alignof(UOptimusActionStack) == 0x000008, "Wrong alignment on UOptimusActionStack");
-static_assert(sizeof(UOptimusActionStack) == 0x0000E0, "Wrong size on UOptimusActionStack");
-static_assert(offsetof(UOptimusActionStack, TransactedActionIndex) == 0x000030, "Member 'UOptimusActionStack::TransactedActionIndex' has a wrong offset!");
-
-// Class OptimusCore.OptimusComponentSourceBinding
-// 0x0030 (0x0060 - 0x0030)
-class UOptimusComponentSourceBinding final : public UObject
-{
-public:
-	class FName                                   BindingName;                                       // 0x0030(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UOptimusComponentSource>    ComponentType;                                     // 0x0040(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FName>                           ComponentTags;                                     // 0x0048(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bIsPrimaryBinding;                                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusComponentSourceBinding">();
-	}
-	static class UOptimusComponentSourceBinding* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusComponentSourceBinding>();
-	}
-};
-static_assert(alignof(UOptimusComponentSourceBinding) == 0x000008, "Wrong alignment on UOptimusComponentSourceBinding");
-static_assert(sizeof(UOptimusComponentSourceBinding) == 0x000060, "Wrong size on UOptimusComponentSourceBinding");
-static_assert(offsetof(UOptimusComponentSourceBinding, BindingName) == 0x000030, "Member 'UOptimusComponentSourceBinding::BindingName' has a wrong offset!");
-static_assert(offsetof(UOptimusComponentSourceBinding, ComponentType) == 0x000040, "Member 'UOptimusComponentSourceBinding::ComponentType' has a wrong offset!");
-static_assert(offsetof(UOptimusComponentSourceBinding, ComponentTags) == 0x000048, "Member 'UOptimusComponentSourceBinding::ComponentTags' has a wrong offset!");
-static_assert(offsetof(UOptimusComponentSourceBinding, bIsPrimaryBinding) == 0x000058, "Member 'UOptimusComponentSourceBinding::bIsPrimaryBinding' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusActionStack;
 
 // Class OptimusCore.OptimusComputeGraph
 // 0x0010 (0x00A8 - 0x0098)
@@ -1731,16 +1903,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComputeGraph">();
+		STATIC_CLASS_IMPL("OptimusComputeGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComputeGraph")
 	}
 	static class UOptimusComputeGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusComputeGraph>();
 	}
 };
-static_assert(alignof(UOptimusComputeGraph) == 0x000008, "Wrong alignment on UOptimusComputeGraph");
-static_assert(sizeof(UOptimusComputeGraph) == 0x0000A8, "Wrong size on UOptimusComputeGraph");
-static_assert(offsetof(UOptimusComputeGraph, KernelToNode) == 0x000098, "Member 'UOptimusComputeGraph::KernelToNode' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusComputeGraph;
 
 // Class OptimusCore.OptimusComponentSourceBindingContainer
 // 0x0010 (0x0040 - 0x0030)
@@ -1752,16 +1926,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusComponentSourceBindingContainer">();
+		STATIC_CLASS_IMPL("OptimusComponentSourceBindingContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusComponentSourceBindingContainer")
 	}
 	static class UOptimusComponentSourceBindingContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusComponentSourceBindingContainer>();
 	}
 };
-static_assert(alignof(UOptimusComponentSourceBindingContainer) == 0x000008, "Wrong alignment on UOptimusComponentSourceBindingContainer");
-static_assert(sizeof(UOptimusComponentSourceBindingContainer) == 0x000040, "Wrong size on UOptimusComponentSourceBindingContainer");
-static_assert(offsetof(UOptimusComponentSourceBindingContainer, Bindings) == 0x000030, "Member 'UOptimusComponentSourceBindingContainer::Bindings' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusComponentSourceBindingContainer;
 
 // Class OptimusCore.OptimusVariableContainer
 // 0x0010 (0x0040 - 0x0030)
@@ -1773,37 +1949,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusVariableContainer">();
+		STATIC_CLASS_IMPL("OptimusVariableContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusVariableContainer")
 	}
 	static class UOptimusVariableContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusVariableContainer>();
 	}
 };
-static_assert(alignof(UOptimusVariableContainer) == 0x000008, "Wrong alignment on UOptimusVariableContainer");
-static_assert(sizeof(UOptimusVariableContainer) == 0x000040, "Wrong size on UOptimusVariableContainer");
-static_assert(offsetof(UOptimusVariableContainer, Descriptions) == 0x000030, "Member 'UOptimusVariableContainer::Descriptions' has a wrong offset!");
-
-// Class OptimusCore.OptimusResourceContainer
-// 0x0010 (0x0040 - 0x0030)
-class UOptimusResourceContainer final : public UObject
-{
-public:
-	TArray<class UOptimusResourceDescription*>    Descriptions;                                      // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"OptimusResourceContainer">();
-	}
-	static class UOptimusResourceContainer* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UOptimusResourceContainer>();
-	}
-};
-static_assert(alignof(UOptimusResourceContainer) == 0x000008, "Wrong alignment on UOptimusResourceContainer");
-static_assert(sizeof(UOptimusResourceContainer) == 0x000040, "Wrong size on UOptimusResourceContainer");
-static_assert(offsetof(UOptimusResourceContainer, Descriptions) == 0x000030, "Member 'UOptimusResourceContainer::Descriptions' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusVariableContainer;
 
 // Class OptimusCore.OptimusDeformer
 // 0x0100 (0x0130 - 0x0030)
@@ -1830,23 +1987,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusDeformer">();
+		STATIC_CLASS_IMPL("OptimusDeformer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDeformer")
 	}
 	static class UOptimusDeformer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusDeformer>();
 	}
 };
-static_assert(alignof(UOptimusDeformer) == 0x000008, "Wrong alignment on UOptimusDeformer");
-static_assert(sizeof(UOptimusDeformer) == 0x000130, "Wrong size on UOptimusDeformer");
-static_assert(offsetof(UOptimusDeformer, Mesh) == 0x000050, "Member 'UOptimusDeformer::Mesh' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, ComputeGraphs) == 0x000058, "Member 'UOptimusDeformer::ComputeGraphs' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, ActionStack) == 0x000068, "Member 'UOptimusDeformer::ActionStack' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, Status) == 0x000070, "Member 'UOptimusDeformer::Status' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, Graphs) == 0x000078, "Member 'UOptimusDeformer::Graphs' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, Bindings) == 0x000088, "Member 'UOptimusDeformer::Bindings' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, Variables) == 0x000090, "Member 'UOptimusDeformer::Variables' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformer, Resources) == 0x000098, "Member 'UOptimusDeformer::Resources' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusDeformer;
 
 // Class OptimusCore.OptimusDeformerInstanceSettings
 // 0x0018 (0x0048 - 0x0030)
@@ -1859,17 +2011,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusDeformerInstanceSettings">();
+		STATIC_CLASS_IMPL("OptimusDeformerInstanceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDeformerInstanceSettings")
 	}
 	static class UOptimusDeformerInstanceSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusDeformerInstanceSettings>();
 	}
 };
-static_assert(alignof(UOptimusDeformerInstanceSettings) == 0x000008, "Wrong alignment on UOptimusDeformerInstanceSettings");
-static_assert(sizeof(UOptimusDeformerInstanceSettings) == 0x000048, "Wrong size on UOptimusDeformerInstanceSettings");
-static_assert(offsetof(UOptimusDeformerInstanceSettings, Deformer) == 0x000030, "Member 'UOptimusDeformerInstanceSettings::Deformer' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformerInstanceSettings, Bindings) == 0x000038, "Member 'UOptimusDeformerInstanceSettings::Bindings' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusDeformerInstanceSettings;
 
 // Class OptimusCore.OptimusDeformerInstance
 // 0x00B8 (0x00E8 - 0x0030)
@@ -1896,19 +2049,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusDeformerInstance">();
+		STATIC_CLASS_IMPL("OptimusDeformerInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusDeformerInstance")
 	}
 	static class UOptimusDeformerInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusDeformerInstance>();
 	}
 };
-static_assert(alignof(UOptimusDeformerInstance) == 0x000008, "Wrong alignment on UOptimusDeformerInstance");
-static_assert(sizeof(UOptimusDeformerInstance) == 0x0000E8, "Wrong size on UOptimusDeformerInstance");
-static_assert(offsetof(UOptimusDeformerInstance, MeshComponent) == 0x000030, "Member 'UOptimusDeformerInstance::MeshComponent' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformerInstance, InstanceSettings) == 0x000038, "Member 'UOptimusDeformerInstance::InstanceSettings' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformerInstance, ComputeGraphExecInfos) == 0x000040, "Member 'UOptimusDeformerInstance::ComputeGraphExecInfos' has a wrong offset!");
-static_assert(offsetof(UOptimusDeformerInstance, Variables) == 0x000050, "Member 'UOptimusDeformerInstance::Variables' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusDeformerInstance;
 
 // Class OptimusCore.OptimusNodeGraph
 // 0x0058 (0x0088 - 0x0030)
@@ -1960,19 +2112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeGraph">();
+		STATIC_CLASS_IMPL("OptimusNodeGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeGraph")
 	}
 	static class UOptimusNodeGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNodeGraph>();
 	}
 };
-static_assert(alignof(UOptimusNodeGraph) == 0x000008, "Wrong alignment on UOptimusNodeGraph");
-static_assert(sizeof(UOptimusNodeGraph) == 0x000088, "Wrong size on UOptimusNodeGraph");
-static_assert(offsetof(UOptimusNodeGraph, GraphType) == 0x000038, "Member 'UOptimusNodeGraph::GraphType' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeGraph, Nodes) == 0x000040, "Member 'UOptimusNodeGraph::Nodes' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeGraph, Links) == 0x000050, "Member 'UOptimusNodeGraph::Links' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeGraph, SubGraphs) == 0x000060, "Member 'UOptimusNodeGraph::SubGraphs' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNodeGraph;
 
 // Class OptimusCore.OptimusNodeSubGraph
 // 0x0030 (0x00B8 - 0x0088)
@@ -1987,19 +2138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeSubGraph">();
+		STATIC_CLASS_IMPL("OptimusNodeSubGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeSubGraph")
 	}
 	static class UOptimusNodeSubGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNodeSubGraph>();
 	}
 };
-static_assert(alignof(UOptimusNodeSubGraph) == 0x000008, "Wrong alignment on UOptimusNodeSubGraph");
-static_assert(sizeof(UOptimusNodeSubGraph) == 0x0000B8, "Wrong size on UOptimusNodeSubGraph");
-static_assert(offsetof(UOptimusNodeSubGraph, InputBindings) == 0x000088, "Member 'UOptimusNodeSubGraph::InputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeSubGraph, OutputBindings) == 0x000098, "Member 'UOptimusNodeSubGraph::OutputBindings' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeSubGraph, EntryNode) == 0x0000A8, "Member 'UOptimusNodeSubGraph::EntryNode' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeSubGraph, ReturnNode) == 0x0000B0, "Member 'UOptimusNodeSubGraph::ReturnNode' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNodeSubGraph;
 
 // Class OptimusCore.OptimusFunctionNodeGraph
 // 0x0010 (0x00C8 - 0x00B8)
@@ -2012,16 +2162,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusFunctionNodeGraph">();
+		STATIC_CLASS_IMPL("OptimusFunctionNodeGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusFunctionNodeGraph")
 	}
 	static class UOptimusFunctionNodeGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusFunctionNodeGraph>();
 	}
 };
-static_assert(alignof(UOptimusFunctionNodeGraph) == 0x000008, "Wrong alignment on UOptimusFunctionNodeGraph");
-static_assert(sizeof(UOptimusFunctionNodeGraph) == 0x0000C8, "Wrong size on UOptimusFunctionNodeGraph");
-static_assert(offsetof(UOptimusFunctionNodeGraph, Category) == 0x0000B8, "Member 'UOptimusFunctionNodeGraph::Category' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusFunctionNodeGraph;
 
 // Class OptimusCore.OptimusNodeLink
 // 0x0010 (0x0040 - 0x0030)
@@ -2034,17 +2186,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodeLink">();
+		STATIC_CLASS_IMPL("OptimusNodeLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodeLink")
 	}
 	static class UOptimusNodeLink* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNodeLink>();
 	}
 };
-static_assert(alignof(UOptimusNodeLink) == 0x000008, "Wrong alignment on UOptimusNodeLink");
-static_assert(sizeof(UOptimusNodeLink) == 0x000040, "Wrong size on UOptimusNodeLink");
-static_assert(offsetof(UOptimusNodeLink, NodeOutputPin) == 0x000030, "Member 'UOptimusNodeLink::NodeOutputPin' has a wrong offset!");
-static_assert(offsetof(UOptimusNodeLink, NodeInputPin) == 0x000038, "Member 'UOptimusNodeLink::NodeInputPin' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNodeLink;
 
 // Class OptimusCore.OptimusNodePin
 // 0x0070 (0x00A0 - 0x0030)
@@ -2063,21 +2216,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusNodePin">();
+		STATIC_CLASS_IMPL("OptimusNodePin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusNodePin")
 	}
 	static class UOptimusNodePin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusNodePin>();
 	}
 };
-static_assert(alignof(UOptimusNodePin) == 0x000008, "Wrong alignment on UOptimusNodePin");
-static_assert(sizeof(UOptimusNodePin) == 0x0000A0, "Wrong size on UOptimusNodePin");
-static_assert(offsetof(UOptimusNodePin, bIsGroupingPin) == 0x000030, "Member 'UOptimusNodePin::bIsGroupingPin' has a wrong offset!");
-static_assert(offsetof(UOptimusNodePin, Direction) == 0x000031, "Member 'UOptimusNodePin::Direction' has a wrong offset!");
-static_assert(offsetof(UOptimusNodePin, StorageType) == 0x000032, "Member 'UOptimusNodePin::StorageType' has a wrong offset!");
-static_assert(offsetof(UOptimusNodePin, DataDomain) == 0x000038, "Member 'UOptimusNodePin::DataDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusNodePin, DataType) == 0x000078, "Member 'UOptimusNodePin::DataType' has a wrong offset!");
-static_assert(offsetof(UOptimusNodePin, SubPins) == 0x000090, "Member 'UOptimusNodePin::SubPins' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusNodePin;
 
 // Class OptimusCore.OptimusResourceDescription
 // 0x0070 (0x00A0 - 0x0030)
@@ -2093,20 +2243,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusResourceDescription">();
+		STATIC_CLASS_IMPL("OptimusResourceDescription")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusResourceDescription")
 	}
 	static class UOptimusResourceDescription* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusResourceDescription>();
 	}
 };
-static_assert(alignof(UOptimusResourceDescription) == 0x000008, "Wrong alignment on UOptimusResourceDescription");
-static_assert(sizeof(UOptimusResourceDescription) == 0x0000A0, "Wrong size on UOptimusResourceDescription");
-static_assert(offsetof(UOptimusResourceDescription, ResourceName) == 0x000030, "Member 'UOptimusResourceDescription::ResourceName' has a wrong offset!");
-static_assert(offsetof(UOptimusResourceDescription, DataType) == 0x00003C, "Member 'UOptimusResourceDescription::DataType' has a wrong offset!");
-static_assert(offsetof(UOptimusResourceDescription, ComponentBinding) == 0x000050, "Member 'UOptimusResourceDescription::ComponentBinding' has a wrong offset!");
-static_assert(offsetof(UOptimusResourceDescription, DataDomain) == 0x000058, "Member 'UOptimusResourceDescription::DataDomain' has a wrong offset!");
-static_assert(offsetof(UOptimusResourceDescription, DataInterface) == 0x000098, "Member 'UOptimusResourceDescription::DataInterface' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusResourceDescription;
 
 // Class OptimusCore.OptimusSource
 // 0x0018 (0x0058 - 0x0040)
@@ -2119,16 +2267,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusSource">();
+		STATIC_CLASS_IMPL("OptimusSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSource")
 	}
 	static class UOptimusSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusSource>();
 	}
 };
-static_assert(alignof(UOptimusSource) == 0x000008, "Wrong alignment on UOptimusSource");
-static_assert(sizeof(UOptimusSource) == 0x000058, "Wrong size on UOptimusSource");
-static_assert(offsetof(UOptimusSource, SourceText) == 0x000048, "Member 'UOptimusSource::SourceText' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusSource;
 
 // Class OptimusCore.OptimusValueContainerGeneratorClass
 // 0x0018 (0x0290 - 0x0278)
@@ -2141,16 +2291,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusValueContainerGeneratorClass">();
+		STATIC_CLASS_IMPL("OptimusValueContainerGeneratorClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusValueContainerGeneratorClass")
 	}
 	static class UOptimusValueContainerGeneratorClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusValueContainerGeneratorClass>();
 	}
 };
-static_assert(alignof(UOptimusValueContainerGeneratorClass) == 0x000008, "Wrong alignment on UOptimusValueContainerGeneratorClass");
-static_assert(sizeof(UOptimusValueContainerGeneratorClass) == 0x000290, "Wrong size on UOptimusValueContainerGeneratorClass");
-static_assert(offsetof(UOptimusValueContainerGeneratorClass, DataType) == 0x000278, "Member 'UOptimusValueContainerGeneratorClass::DataType' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusValueContainerGeneratorClass;
 
 // Class OptimusCore.OptimusValueContainer
 // 0x0000 (0x0030 - 0x0030)
@@ -2159,15 +2311,18 @@ class UOptimusValueContainer final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusValueContainer">();
+		STATIC_CLASS_IMPL("OptimusValueContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusValueContainer")
 	}
 	static class UOptimusValueContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusValueContainer>();
 	}
 };
-static_assert(alignof(UOptimusValueContainer) == 0x000008, "Wrong alignment on UOptimusValueContainer");
-static_assert(sizeof(UOptimusValueContainer) == 0x000030, "Wrong size on UOptimusValueContainer");
+DUMPER7_ASSERTS_UOptimusValueContainer;
 
 // Class OptimusCore.OptimusVariableDescription
 // 0x0048 (0x0078 - 0x0030)
@@ -2183,20 +2338,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusVariableDescription">();
+		STATIC_CLASS_IMPL("OptimusVariableDescription")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusVariableDescription")
 	}
 	static class UOptimusVariableDescription* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusVariableDescription>();
 	}
 };
-static_assert(alignof(UOptimusVariableDescription) == 0x000008, "Wrong alignment on UOptimusVariableDescription");
-static_assert(sizeof(UOptimusVariableDescription) == 0x000078, "Wrong size on UOptimusVariableDescription");
-static_assert(offsetof(UOptimusVariableDescription, Guid) == 0x000030, "Member 'UOptimusVariableDescription::Guid' has a wrong offset!");
-static_assert(offsetof(UOptimusVariableDescription, VariableName) == 0x000040, "Member 'UOptimusVariableDescription::VariableName' has a wrong offset!");
-static_assert(offsetof(UOptimusVariableDescription, DataType) == 0x00004C, "Member 'UOptimusVariableDescription::DataType' has a wrong offset!");
-static_assert(offsetof(UOptimusVariableDescription, DefaultValue) == 0x000060, "Member 'UOptimusVariableDescription::DefaultValue' has a wrong offset!");
-static_assert(offsetof(UOptimusVariableDescription, ValueData) == 0x000068, "Member 'UOptimusVariableDescription::ValueData' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusVariableDescription;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_102982_OnSculptChanged final
 public:
 	int32                                         InSculptID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102982_OnSculptChanged) == 0x000004, "Wrong alignment on PyAbility_102982_OnSculptChanged");
-static_assert(sizeof(PyAbility_102982_OnSculptChanged) == 0x000004, "Wrong size on PyAbility_102982_OnSculptChanged");
-static_assert(offsetof(PyAbility_102982_OnSculptChanged, InSculptID) == 0x000000, "Member 'PyAbility_102982_OnSculptChanged::InSculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102982_OnSculptChanged;
 
 }
 

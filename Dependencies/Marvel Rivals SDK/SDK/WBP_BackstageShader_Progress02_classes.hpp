@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BackstageShader_Progress02.WBP_BackstageShader_Progress02_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UWBP_BackstageShader_Progress02_C final : public UPyWidget_CompileInfo_Resident
 {
 public:
-	class UMarvelImage*                           Img_Shader_Icon01;                                 // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Shader_Icon02;                                 // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_136;                                   // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Shader_Progress;                              // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Shader_Icon01;                                 // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Shader_Icon02;                                 // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_136;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Shader_Progress;                              // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BackstageShader_Progress02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BackstageShader_Progress02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BackstageShader_Progress02_C")
 	}
 	static class UWBP_BackstageShader_Progress02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BackstageShader_Progress02_C>();
 	}
 };
-static_assert(alignof(UWBP_BackstageShader_Progress02_C) == 0x000008, "Wrong alignment on UWBP_BackstageShader_Progress02_C");
-static_assert(sizeof(UWBP_BackstageShader_Progress02_C) == 0x0005E0, "Wrong size on UWBP_BackstageShader_Progress02_C");
-static_assert(offsetof(UWBP_BackstageShader_Progress02_C, Img_Shader_Icon01) == 0x0005C0, "Member 'UWBP_BackstageShader_Progress02_C::Img_Shader_Icon01' has a wrong offset!");
-static_assert(offsetof(UWBP_BackstageShader_Progress02_C, Img_Shader_Icon02) == 0x0005C8, "Member 'UWBP_BackstageShader_Progress02_C::Img_Shader_Icon02' has a wrong offset!");
-static_assert(offsetof(UWBP_BackstageShader_Progress02_C, MarvelImage_136) == 0x0005D0, "Member 'UWBP_BackstageShader_Progress02_C::MarvelImage_136' has a wrong offset!");
-static_assert(offsetof(UWBP_BackstageShader_Progress02_C, Text_Shader_Progress) == 0x0005D8, "Member 'UWBP_BackstageShader_Progress02_C::Text_Shader_Progress' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BackstageShader_Progress02_C;
 
 }
 

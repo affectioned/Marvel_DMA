@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -61,33 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoE01SpiderZero">();
+		STATIC_CLASS_IMPL("PyTokyoE01SpiderZero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoE01SpiderZero")
 	}
 	static class APyTokyoE01SpiderZero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTokyoE01SpiderZero>();
 	}
 };
-static_assert(alignof(APyTokyoE01SpiderZero) == 0x000010, "Wrong alignment on APyTokyoE01SpiderZero");
-static_assert(sizeof(APyTokyoE01SpiderZero) == 0x000810, "Wrong size on APyTokyoE01SpiderZero");
-static_assert(offsetof(APyTokyoE01SpiderZero, ReplicateState) == 0x0006E0, "Member 'APyTokyoE01SpiderZero::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, DialogVoiceID) == 0x0006E4, "Member 'APyTokyoE01SpiderZero::DialogVoiceID' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, AnimIdle) == 0x0006E8, "Member 'APyTokyoE01SpiderZero::AnimIdle' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, AnimWalkToDoor) == 0x0006F0, "Member 'APyTokyoE01SpiderZero::AnimWalkToDoor' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, AnimFlyToPayload) == 0x0006F8, "Member 'APyTokyoE01SpiderZero::AnimFlyToPayload' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, SequenceFlyToPayload) == 0x000700, "Member 'APyTokyoE01SpiderZero::SequenceFlyToPayload' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, PrepareCountdown) == 0x000708, "Member 'APyTokyoE01SpiderZero::PrepareCountdown' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, TimeWalkToDoor) == 0x00070C, "Member 'APyTokyoE01SpiderZero::TimeWalkToDoor' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, TimeFlyToPayload) == 0x000710, "Member 'APyTokyoE01SpiderZero::TimeFlyToPayload' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, BasicVoice) == 0x000718, "Member 'APyTokyoE01SpiderZero::BasicVoice' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, SpecialVoice) == 0x000728, "Member 'APyTokyoE01SpiderZero::SpecialVoice' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, ForwardDuration) == 0x000778, "Member 'APyTokyoE01SpiderZero::ForwardDuration' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, DialogVoice) == 0x000780, "Member 'APyTokyoE01SpiderZero::DialogVoice' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, WidgetVisibleDistance) == 0x0007D0, "Member 'APyTokyoE01SpiderZero::WidgetVisibleDistance' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, VoiceDistance) == 0x0007D4, "Member 'APyTokyoE01SpiderZero::VoiceDistance' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, VoiceInterval) == 0x0007D8, "Member 'APyTokyoE01SpiderZero::VoiceInterval' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, TextTips) == 0x0007E0, "Member 'APyTokyoE01SpiderZero::TextTips' has a wrong offset!");
-static_assert(offsetof(APyTokyoE01SpiderZero, AnimationEnd) == 0x0007F8, "Member 'APyTokyoE01SpiderZero::AnimationEnd' has a wrong offset!");
+DUMPER7_ASSERTS_APyTokyoE01SpiderZero;
 
 }
 

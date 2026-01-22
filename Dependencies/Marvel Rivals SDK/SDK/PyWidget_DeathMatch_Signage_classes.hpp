@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DeathMatch_Signage.PyWidget_DeathMatch_Signage
-// 0x0078 (0x0638 - 0x05C0)
+// 0x0078 (0x0640 - 0x05C8)
 class UPyWidget_DeathMatch_Signage : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWidgetStyle_BattleTransientTip        UpgradeTip;                                        // 0x05C0(0x0048)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         VXUpdateTime;                                      // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TextUpdateTime;                                    // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x0610(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MaxColor;                                          // 0x0624(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FWidgetStyle_BattleTransientTip        UpgradeTip;                                        // 0x05C8(0x0048)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         VXUpdateTime;                                      // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TextUpdateTime;                                    // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MaxColor;                                          // 0x062C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,23 +37,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DeathMatch_Signage">();
+		STATIC_CLASS_IMPL("PyWidget_DeathMatch_Signage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DeathMatch_Signage")
 	}
 	static class UPyWidget_DeathMatch_Signage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DeathMatch_Signage>();
 	}
 };
-static_assert(alignof(UPyWidget_DeathMatch_Signage) == 0x000008, "Wrong alignment on UPyWidget_DeathMatch_Signage");
-static_assert(sizeof(UPyWidget_DeathMatch_Signage) == 0x000638, "Wrong size on UPyWidget_DeathMatch_Signage");
-static_assert(offsetof(UPyWidget_DeathMatch_Signage, UpgradeTip) == 0x0005C0, "Member 'UPyWidget_DeathMatch_Signage::UpgradeTip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DeathMatch_Signage, VXUpdateTime) == 0x000608, "Member 'UPyWidget_DeathMatch_Signage::VXUpdateTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DeathMatch_Signage, TextUpdateTime) == 0x00060C, "Member 'UPyWidget_DeathMatch_Signage::TextUpdateTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DeathMatch_Signage, NormalColor) == 0x000610, "Member 'UPyWidget_DeathMatch_Signage::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DeathMatch_Signage, MaxColor) == 0x000624, "Member 'UPyWidget_DeathMatch_Signage::MaxColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DeathMatch_Signage;
 
 // PythonClass PyWidget_DeathMatch_Signage.PyWidget_DeathMatch_SignageTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_DeathMatch_SignageTips : public UPyMarvelUserWidget
 {
 public:
@@ -62,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DeathMatch_SignageTips">();
+		STATIC_CLASS_IMPL("PyWidget_DeathMatch_SignageTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DeathMatch_SignageTips")
 	}
 	static class UPyWidget_DeathMatch_SignageTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DeathMatch_SignageTips>();
 	}
 };
-static_assert(alignof(UPyWidget_DeathMatch_SignageTips) == 0x000008, "Wrong alignment on UPyWidget_DeathMatch_SignageTips");
-static_assert(sizeof(UPyWidget_DeathMatch_SignageTips) == 0x0005C0, "Wrong size on UPyWidget_DeathMatch_SignageTips");
+DUMPER7_ASSERTS_UPyWidget_DeathMatch_SignageTips;
 
 }
 

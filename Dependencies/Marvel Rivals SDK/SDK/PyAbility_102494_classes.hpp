@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyAbility_102461_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Hero_1024_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_102494.PyScope_10249401
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B80 - 0x1B80)
 class APyScope_10249401 : public APyScope_10246101
 {
 public:
-	float                                         TimeDelay;                                         // 0x1AA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LinkScopeID;                                       // 0x1AA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeDelay;                                         // 0x1B74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LinkScopeID;                                       // 0x1B78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnTraceResults(const TArray<struct FHitResult>& HitResults);
@@ -33,68 +33,73 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10249401">();
+		STATIC_CLASS_IMPL("PyScope_10249401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10249401")
 	}
 	static class APyScope_10249401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10249401>();
 	}
 };
-static_assert(alignof(APyScope_10249401) == 0x000010, "Wrong alignment on APyScope_10249401");
-static_assert(sizeof(APyScope_10249401) == 0x001AB0, "Wrong size on APyScope_10249401");
-static_assert(offsetof(APyScope_10249401, TimeDelay) == 0x001AA4, "Member 'APyScope_10249401::TimeDelay' has a wrong offset!");
-static_assert(offsetof(APyScope_10249401, LinkScopeID) == 0x001AA8, "Member 'APyScope_10249401::LinkScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10249401;
 
 // PythonClass PyAbility_102494.PyProjectile_10249401
-// 0x0000 (0x3BA0 - 0x3BA0)
+// 0x0000 (0x3EB0 - 0x3EB0)
 class APyProjectile_10249401 : public APyProjectile_102461
 {
 public:
-	int32                                         BondScopeID;                                       // 0x3B94(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BondScopeID;                                       // 0x3EA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10249401">();
+		STATIC_CLASS_IMPL("PyProjectile_10249401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10249401")
 	}
 	static class APyProjectile_10249401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10249401>();
 	}
 };
-static_assert(alignof(APyProjectile_10249401) == 0x000010, "Wrong alignment on APyProjectile_10249401");
-static_assert(sizeof(APyProjectile_10249401) == 0x003BA0, "Wrong size on APyProjectile_10249401");
-static_assert(offsetof(APyProjectile_10249401, BondScopeID) == 0x003B94, "Member 'APyProjectile_10249401::BondScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10249401;
 
 // PythonClass PyAbility_102494.PyConfig_102494
-// 0x0070 (0x1800 - 0x1790)
+// 0x0070 (0x1B50 - 0x1AE0)
 class UPyConfig_102494 final : public UConfig_102494
 {
 public:
-	struct FGameplayTagContainer                  SpecialTagNoMontage;                               // 0x1790(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x17F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SpecialTagNoMontage;                               // 0x1AE0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1B48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102494">();
+		STATIC_CLASS_IMPL("PyConfig_102494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102494")
 	}
 	static class UPyConfig_102494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102494>();
 	}
 };
-static_assert(alignof(UPyConfig_102494) == 0x000010, "Wrong alignment on UPyConfig_102494");
-static_assert(sizeof(UPyConfig_102494) == 0x001800, "Wrong size on UPyConfig_102494");
-static_assert(offsetof(UPyConfig_102494, SpecialTagNoMontage) == 0x001790, "Member 'UPyConfig_102494::SpecialTagNoMontage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102494, ProjectileID) == 0x0017F8, "Member 'UPyConfig_102494::ProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102494;
 
 // PythonClass PyAbility_102494.PyTraceComponent_10249402
-// 0x0070 (0x2270 - 0x2200)
+// 0x0070 (0x2670 - 0x2600)
 class UPyTraceComponent_10249402 : public UMarvelAgentTraceComponent
 {
 public:
-	struct FGameplayTagContainer                  CancelEffectTags;                                  // 0x2200(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25F8[0x8];                                     // 0x25F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CancelEffectTags;                                  // 0x2600(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -104,23 +109,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10249402">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10249402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10249402")
 	}
 	static class UPyTraceComponent_10249402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10249402>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10249402) == 0x000010, "Wrong alignment on UPyTraceComponent_10249402");
-static_assert(sizeof(UPyTraceComponent_10249402) == 0x002270, "Wrong size on UPyTraceComponent_10249402");
-static_assert(offsetof(UPyTraceComponent_10249402, CancelEffectTags) == 0x002200, "Member 'UPyTraceComponent_10249402::CancelEffectTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTraceComponent_10249402;
 
 // PythonClass PyAbility_102494.PyAbility_102494
-// 0x0010 (0x2A28 - 0x2A18)
+// 0x0010 (0x2A78 - 0x2A68)
 class UPyAbility_102494 : public UAbility_102494
 {
 public:
-	TMulticastInlineDelegate<void(const TArray<class AActor*>& TargetList)> OnSoulLinkEnemy;         // 0x2A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AActor*>& TargetList)> OnSoulLinkEnemy;         // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -140,19 +147,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102494">();
+		STATIC_CLASS_IMPL("PyAbility_102494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102494")
 	}
 	static class UPyAbility_102494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102494>();
 	}
 };
-static_assert(alignof(UPyAbility_102494) == 0x000008, "Wrong alignment on UPyAbility_102494");
-static_assert(sizeof(UPyAbility_102494) == 0x002A28, "Wrong size on UPyAbility_102494");
-static_assert(offsetof(UPyAbility_102494, OnSoulLinkEnemy) == 0x002A18, "Member 'UPyAbility_102494::OnSoulLinkEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102494;
 
 // PythonClass PyAbility_102494.PyEffectiveComponent_10249402
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10249402 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -162,15 +171,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10249402">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10249402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10249402")
 	}
 	static class UPyEffectiveComponent_10249402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10249402>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10249402) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10249402");
-static_assert(sizeof(UPyEffectiveComponent_10249402) == 0x001C70, "Wrong size on UPyEffectiveComponent_10249402");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10249402;
 
 }
 

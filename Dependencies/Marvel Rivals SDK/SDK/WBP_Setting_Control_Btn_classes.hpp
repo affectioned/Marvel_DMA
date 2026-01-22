@@ -39,27 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Control_Btn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Control_Btn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Control_Btn_C")
 	}
 	static class UWBP_Setting_Control_Btn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Control_Btn_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Control_Btn_C) == 0x000008, "Wrong alignment on UWBP_Setting_Control_Btn_C");
-static_assert(sizeof(UWBP_Setting_Control_Btn_C) == 0x000438, "Wrong size on UWBP_Setting_Control_Btn_C");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Btn_Main) == 0x0003B8, "Member 'UWBP_Setting_Control_Btn_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Img_Btn_Icon) == 0x0003C0, "Member 'UWBP_Setting_Control_Btn_C::Img_Btn_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Overlay_Setting_Key) == 0x0003C8, "Member 'UWBP_Setting_Control_Btn_C::Overlay_Setting_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Text_BtnName) == 0x0003D0, "Member 'UWBP_Setting_Control_Btn_C::Text_BtnName' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Icon_Visible) == 0x0003D8, "Member 'UWBP_Setting_Control_Btn_C::Icon_Visible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Text_Visible) == 0x0003D9, "Member 'UWBP_Setting_Control_Btn_C::Text_Visible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, MouseIcon_1) == 0x0003E0, "Member 'UWBP_Setting_Control_Btn_C::MouseIcon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, Empty) == 0x0003E8, "Member 'UWBP_Setting_Control_Btn_C::Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, MouseIcon_2) == 0x000400, "Member 'UWBP_Setting_Control_Btn_C::MouseIcon_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, MouseIcon_3) == 0x000408, "Member 'UWBP_Setting_Control_Btn_C::MouseIcon_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, MouseIcon_4) == 0x000410, "Member 'UWBP_Setting_Control_Btn_C::MouseIcon_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Btn_C, UnbindGameKey) == 0x000418, "Member 'UWBP_Setting_Control_Btn_C::UnbindGameKey' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Control_Btn_C;
 
 }
 

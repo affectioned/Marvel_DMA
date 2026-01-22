@@ -23,9 +23,7 @@ struct PySequenceTrigger_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySequenceTrigger_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySequenceTrigger_ReceiveEndPlay");
-static_assert(sizeof(PySequenceTrigger_ReceiveEndPlay) == 0x000001, "Wrong size on PySequenceTrigger_ReceiveEndPlay");
-static_assert(offsetof(PySequenceTrigger_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PySequenceTrigger_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySequenceTrigger_ReceiveEndPlay;
 
 }
 

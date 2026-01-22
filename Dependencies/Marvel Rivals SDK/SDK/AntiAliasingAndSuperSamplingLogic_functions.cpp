@@ -429,111 +429,6 @@ float UUISettingEntryScreenPercentageHandler::BP_GetDefaultValue(class UObject* 
 }
 
 
-// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_OnApply
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void U_UISettingEntryLowLatencyHandler::BP_OnApply(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& options, float value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_OnApply");
-
-	Params::_UISettingEntryLowLatencyHandler_BP_OnApply Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.p = std::move(p);
-	Parms.options = std::move(options);
-	Parms.value = value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_GetCurrentValue
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         o                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float U_UISettingEntryLowLatencyHandler::BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_GetCurrentValue");
-
-	Params::_UISettingEntryLowLatencyHandler_BP_GetCurrentValue Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.p = std::move(p);
-	Parms.o = std::move(o);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_OnChanged
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
-// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TMap<class FString, int32> U_UISettingEntryLowLatencyHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_OnChanged");
-
-	Params::_UISettingEntryLowLatencyHandler_BP_OnChanged Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.params = std::move(params);
-	Parms.options = std::move(options);
-	Parms.value = value;
-	Parms.tags = std::move(tags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction AntiAliasingAndSuperSamplingLogic.UISettingEntryAntiAliasingOptionsGenerator.BP_Gen
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1089,6 +984,111 @@ TMap<class FString, int32> UUISetingentryLowLatencyModeHandler::BP_OnChanged(cla
 		Func = Class->GetFunction("UISetingentryLowLatencyModeHandler", "BP_OnChanged");
 
 	Params::UISetingentryLowLatencyModeHandler_BP_OnChanged Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.params = std::move(params);
+	Parms.options = std::move(options);
+	Parms.value = value;
+	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_OnApply
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void U_UISettingEntryLowLatencyHandler::BP_OnApply(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& options, float value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_OnApply");
+
+	Params::_UISettingEntryLowLatencyHandler_BP_OnApply Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.p = std::move(p);
+	Parms.options = std::move(options);
+	Parms.value = value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_GetCurrentValue
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         o                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float U_UISettingEntryLowLatencyHandler::BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_GetCurrentValue");
+
+	Params::_UISettingEntryLowLatencyHandler_BP_GetCurrentValue Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.p = std::move(p);
+	Parms.o = std::move(o);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler.BP_OnChanged
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TMap<class FString, int32> U_UISettingEntryLowLatencyHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("_UISettingEntryLowLatencyHandler", "BP_OnChanged");
+
+	Params::_UISettingEntryLowLatencyHandler_BP_OnChanged Parms{};
 
 	Parms.obj = obj;
 	Parms.setting_key = std::move(setting_key);

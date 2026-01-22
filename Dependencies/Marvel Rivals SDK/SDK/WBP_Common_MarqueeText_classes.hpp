@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_MarqueeText.WBP_Common_MarqueeText_C
-// 0x0028 (0x0608 - 0x05E0)
+// 0x0028 (0x0610 - 0x05E8)
 class UWBP_Common_MarqueeText_C final : public UPyWidget_Common_MarqueeText
 {
 public:
-	class UMarvelButton*                          Btn_Main;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox;                                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_1;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_PlayerName;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_PlayerName_Marquee;                           // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox;                                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_1;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_PlayerName;                                   // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_PlayerName_Marquee;                           // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_MarqueeText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_MarqueeText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_MarqueeText_C")
 	}
 	static class UWBP_Common_MarqueeText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_MarqueeText_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_MarqueeText_C) == 0x000008, "Wrong alignment on UWBP_Common_MarqueeText_C");
-static_assert(sizeof(UWBP_Common_MarqueeText_C) == 0x000608, "Wrong size on UWBP_Common_MarqueeText_C");
-static_assert(offsetof(UWBP_Common_MarqueeText_C, Btn_Main) == 0x0005E0, "Member 'UWBP_Common_MarqueeText_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MarqueeText_C, SizeBox) == 0x0005E8, "Member 'UWBP_Common_MarqueeText_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MarqueeText_C, SizeBox_1) == 0x0005F0, "Member 'UWBP_Common_MarqueeText_C::SizeBox_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MarqueeText_C, Text_PlayerName) == 0x0005F8, "Member 'UWBP_Common_MarqueeText_C::Text_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MarqueeText_C, Text_PlayerName_Marquee) == 0x000600, "Member 'UWBP_Common_MarqueeText_C::Text_PlayerName_Marquee' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_MarqueeText_C;
 
 }
 

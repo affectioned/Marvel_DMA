@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyAbility_401609.PyCue_Ability_Loop_40160901
-// 0x0140 (0x12F0 - 0x11B0)
+// 0x0140 (0x1300 - 0x11C0)
 class APyCue_Ability_Loop_40160901 : public AMarvelCueNotify_Ability
 {
 public:
-	TMap<struct FMaterialQuery, class UMaterialInstance*> MaterialQueryMaterialsEnemy;               // 0x11B0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<struct FMaterialQuery, class UMaterialInstance*> MaterialQueryMaterialsAlly;                // 0x1200(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<class FName, class UMaterialInstance*>   SlotSuffixMaterialsEnemy;                          // 0x1250(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<class FName, class UMaterialInstance*>   SlotSuffixMaterialsAlly;                           // 0x12A0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<struct FMaterialQuery, class UMaterialInstance*> MaterialQueryMaterialsEnemy;               // 0x11C0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<struct FMaterialQuery, class UMaterialInstance*> MaterialQueryMaterialsAlly;                // 0x1210(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<class FName, class UMaterialInstance*>   SlotSuffixMaterialsEnemy;                          // 0x1260(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<class FName, class UMaterialInstance*>   SlotSuffixMaterialsAlly;                           // 0x12B0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_UpdateTeamVisualEffect(const struct FTeamVisual& NewTeamVisual);
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_40160901">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_40160901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_40160901")
 	}
 	static class APyCue_Ability_Loop_40160901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_40160901>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_40160901) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_40160901");
-static_assert(sizeof(APyCue_Ability_Loop_40160901) == 0x0012F0, "Wrong size on APyCue_Ability_Loop_40160901");
-static_assert(offsetof(APyCue_Ability_Loop_40160901, MaterialQueryMaterialsEnemy) == 0x0011B0, "Member 'APyCue_Ability_Loop_40160901::MaterialQueryMaterialsEnemy' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_40160901, MaterialQueryMaterialsAlly) == 0x001200, "Member 'APyCue_Ability_Loop_40160901::MaterialQueryMaterialsAlly' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_40160901, SlotSuffixMaterialsEnemy) == 0x001250, "Member 'APyCue_Ability_Loop_40160901::SlotSuffixMaterialsEnemy' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_40160901, SlotSuffixMaterialsAlly) == 0x0012A0, "Member 'APyCue_Ability_Loop_40160901::SlotSuffixMaterialsAlly' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_40160901;
 
 }
 

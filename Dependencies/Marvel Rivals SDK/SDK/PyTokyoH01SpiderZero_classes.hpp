@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoH01SpiderZero">();
+		STATIC_CLASS_IMPL("PyTokyoH01SpiderZero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoH01SpiderZero")
 	}
 	static class APyTokyoH01SpiderZero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTokyoH01SpiderZero>();
 	}
 };
-static_assert(alignof(APyTokyoH01SpiderZero) == 0x000010, "Wrong alignment on APyTokyoH01SpiderZero");
-static_assert(sizeof(APyTokyoH01SpiderZero) == 0x000740, "Wrong size on APyTokyoH01SpiderZero");
-static_assert(offsetof(APyTokyoH01SpiderZero, ReplicateState) == 0x000710, "Member 'APyTokyoH01SpiderZero::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, RandomMontageIdle) == 0x000714, "Member 'APyTokyoH01SpiderZero::RandomMontageIdle' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, NiagaraLevel) == 0x000718, "Member 'APyTokyoH01SpiderZero::NiagaraLevel' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, StartFallTime) == 0x00071C, "Member 'APyTokyoH01SpiderZero::StartFallTime' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, MontageDurationTime) == 0x000720, "Member 'APyTokyoH01SpiderZero::MontageDurationTime' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, SpiderCarShowBP) == 0x000728, "Member 'APyTokyoH01SpiderZero::SpiderCarShowBP' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01SpiderZero, CollisionMeshStaticList) == 0x000730, "Member 'APyTokyoH01SpiderZero::CollisionMeshStaticList' has a wrong offset!");
+DUMPER7_ASSERTS_APyTokyoH01SpiderZero;
 
 // PythonClass PyTokyoH01SpiderZero.PySpiderZeroAnimInstance
 // 0x0020 (0x0470 - 0x0450)
@@ -79,23 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpiderZeroAnimInstance">();
+		STATIC_CLASS_IMPL("PySpiderZeroAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpiderZeroAnimInstance")
 	}
 	static class UPySpiderZeroAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpiderZeroAnimInstance>();
 	}
 };
-static_assert(alignof(UPySpiderZeroAnimInstance) == 0x000010, "Wrong alignment on UPySpiderZeroAnimInstance");
-static_assert(sizeof(UPySpiderZeroAnimInstance) == 0x000470, "Wrong size on UPySpiderZeroAnimInstance");
-static_assert(offsetof(UPySpiderZeroAnimInstance, bFalling) == 0x000450, "Member 'UPySpiderZeroAnimInstance::bFalling' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, bStuckIdle) == 0x000451, "Member 'UPySpiderZeroAnimInstance::bStuckIdle' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, bLandIdle) == 0x000452, "Member 'UPySpiderZeroAnimInstance::bLandIdle' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, bLand) == 0x000453, "Member 'UPySpiderZeroAnimInstance::bLand' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, FallingHeight) == 0x000454, "Member 'UPySpiderZeroAnimInstance::FallingHeight' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, PersonalityIdle1) == 0x000458, "Member 'UPySpiderZeroAnimInstance::PersonalityIdle1' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, PersonalityIdle2) == 0x000460, "Member 'UPySpiderZeroAnimInstance::PersonalityIdle2' has a wrong offset!");
-static_assert(offsetof(UPySpiderZeroAnimInstance, FallingMontage) == 0x000468, "Member 'UPySpiderZeroAnimInstance::FallingMontage' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpiderZeroAnimInstance;
 
 }
 

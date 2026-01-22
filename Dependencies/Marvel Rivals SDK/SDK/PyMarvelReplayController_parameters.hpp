@@ -23,9 +23,7 @@ struct PyMarvelReplayController_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelReplayController_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelReplayController_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelReplayController_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelReplayController_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelReplayController_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelReplayController_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelReplayController_ReceiveEndPlay;
 
 }
 

@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity132_SummerPurchase.PyWidget_Activity132_SummerPurchase_SmallReward
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity132_SummerPurchase_SmallReward final : public UPyWidget_ActivityExpBpBase_Purchase_SmallReward
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity132_SummerPurchase_SmallReward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity132_SummerPurchase_SmallReward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity132_SummerPurchase_SmallReward")
 	}
 	static class UPyWidget_Activity132_SummerPurchase_SmallReward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity132_SummerPurchase_SmallReward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity132_SummerPurchase_SmallReward) == 0x000008, "Wrong alignment on UPyWidget_Activity132_SummerPurchase_SmallReward");
-static_assert(sizeof(UPyWidget_Activity132_SummerPurchase_SmallReward) == 0x0005C0, "Wrong size on UPyWidget_Activity132_SummerPurchase_SmallReward");
+DUMPER7_ASSERTS_UPyWidget_Activity132_SummerPurchase_SmallReward;
 
 // PythonClass PyWidget_Activity132_SummerPurchase.PyWidget_Activity132_SummerPurchase
-// 0x0000 (0x0710 - 0x0710)
+// 0x0000 (0x0718 - 0x0718)
 class UPyWidget_Activity132_SummerPurchase final : public UPyWidget_ActivityExpBpBase_Purchase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity132_SummerPurchase">();
+		STATIC_CLASS_IMPL("PyWidget_Activity132_SummerPurchase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity132_SummerPurchase")
 	}
 	static class UPyWidget_Activity132_SummerPurchase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity132_SummerPurchase>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity132_SummerPurchase) == 0x000008, "Wrong alignment on UPyWidget_Activity132_SummerPurchase");
-static_assert(sizeof(UPyWidget_Activity132_SummerPurchase) == 0x000710, "Wrong size on UPyWidget_Activity132_SummerPurchase");
+DUMPER7_ASSERTS_UPyWidget_Activity132_SummerPurchase;
 
 }
 

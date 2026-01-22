@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextTime_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextTime_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextTime_BP_C")
 	}
 	static class URichTextTime_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextTime_BP_C>();
 	}
 };
-static_assert(alignof(URichTextTime_BP_C) == 0x000008, "Wrong alignment on URichTextTime_BP_C");
-static_assert(sizeof(URichTextTime_BP_C) == 0x000030, "Wrong size on URichTextTime_BP_C");
+DUMPER7_ASSERTS_URichTextTime_BP_C;
 
 }
 

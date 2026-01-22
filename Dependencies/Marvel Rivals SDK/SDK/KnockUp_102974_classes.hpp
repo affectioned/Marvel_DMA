@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass KnockUp_102974.KnockUp_102974_C
-// 0x0000 (0x2040 - 0x2040)
+// 0x0000 (0x2390 - 0x2390)
 class UKnockUp_102974_C final : public UPyKnockUp_102972
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KnockUp_102974_C">();
+		BP_STATIC_CLASS_IMPL("KnockUp_102974_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KnockUp_102974_C")
 	}
 	static class UKnockUp_102974_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKnockUp_102974_C>();
 	}
 };
-static_assert(alignof(UKnockUp_102974_C) == 0x000008, "Wrong alignment on UKnockUp_102974_C");
-static_assert(sizeof(UKnockUp_102974_C) == 0x002040, "Wrong size on UKnockUp_102974_C");
+DUMPER7_ASSERTS_UKnockUp_102974_C;
 
 }
 

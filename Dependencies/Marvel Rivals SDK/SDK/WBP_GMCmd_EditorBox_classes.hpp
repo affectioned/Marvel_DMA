@@ -17,39 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GMCmd_EditorBox.WBP_GMCmd_EditorBox_C
-// 0x0040 (0x0610 - 0x05D0)
+// 0x0048 (0x0620 - 0x05D8)
 class UWBP_GMCmd_EditorBox_C final : public UPyWidget_GMCmdEditorBox
 {
 public:
-	class UWBP_Common_Input_C*                    Cmd_Editable;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Input_C*                    CmdName_Editable;                                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     CustomCmdBox;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Input_C*                    GroupName_Editable;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextBlock_Description;                             // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextBlock_Description_1;                           // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextBlock_Description_2;                           // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UClass*                                 InputBoxClass;                                     // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Common_Input_C*                    Cmd_Editable;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Input_C*                    CmdName_Editable;                                  // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     CustomCmdBox;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Input_C*                    GroupName_Editable;                                // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextBlock_Description;                             // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextBlock_Description_1;                           // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextBlock_Description_2;                           // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DropDownList_Light_C*              WBP_DropDownList;                                  // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                 InputBoxClass;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GMCmd_EditorBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GMCmd_EditorBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GMCmd_EditorBox_C")
 	}
 	static class UWBP_GMCmd_EditorBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GMCmd_EditorBox_C>();
 	}
 };
-static_assert(alignof(UWBP_GMCmd_EditorBox_C) == 0x000008, "Wrong alignment on UWBP_GMCmd_EditorBox_C");
-static_assert(sizeof(UWBP_GMCmd_EditorBox_C) == 0x000610, "Wrong size on UWBP_GMCmd_EditorBox_C");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, Cmd_Editable) == 0x0005D0, "Member 'UWBP_GMCmd_EditorBox_C::Cmd_Editable' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, CmdName_Editable) == 0x0005D8, "Member 'UWBP_GMCmd_EditorBox_C::CmdName_Editable' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, CustomCmdBox) == 0x0005E0, "Member 'UWBP_GMCmd_EditorBox_C::CustomCmdBox' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, GroupName_Editable) == 0x0005E8, "Member 'UWBP_GMCmd_EditorBox_C::GroupName_Editable' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, TextBlock_Description) == 0x0005F0, "Member 'UWBP_GMCmd_EditorBox_C::TextBlock_Description' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, TextBlock_Description_1) == 0x0005F8, "Member 'UWBP_GMCmd_EditorBox_C::TextBlock_Description_1' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, TextBlock_Description_2) == 0x000600, "Member 'UWBP_GMCmd_EditorBox_C::TextBlock_Description_2' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_EditorBox_C, InputBoxClass) == 0x000608, "Member 'UWBP_GMCmd_EditorBox_C::InputBoxClass' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GMCmd_EditorBox_C;
 
 }
 

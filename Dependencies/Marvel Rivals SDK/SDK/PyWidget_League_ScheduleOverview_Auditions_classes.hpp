@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_ScheduleOverview_Auditions.PyWidget_League_ScheduleOverview_ReselectionSchedule
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_ReselectionSchedule final : public UPyMarvelUserWidget
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_ReselectionSchedule">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_ReselectionSchedule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_ReselectionSchedule")
 	}
 	static class UPyWidget_League_ScheduleOverview_ReselectionSchedule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_ReselectionSchedule>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_ReselectionSchedule) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_ReselectionSchedule");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_ReselectionSchedule) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_ReselectionSchedule");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_ReselectionSchedule;
 
 // PythonClass PyWidget_League_ScheduleOverview_Auditions.PyWidget_League_ScheduleOverview_AuditionsSchedule
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_AuditionsSchedule final : public UPyMarvelUserWidget
 {
 public:
@@ -50,18 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_AuditionsSchedule">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_AuditionsSchedule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_AuditionsSchedule")
 	}
 	static class UPyWidget_League_ScheduleOverview_AuditionsSchedule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_AuditionsSchedule>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_AuditionsSchedule) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_AuditionsSchedule");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_AuditionsSchedule) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_AuditionsSchedule");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_AuditionsSchedule;
 
 // PythonClass PyWidget_League_ScheduleOverview_Auditions.PyWidget_League_ScheduleOverview_Auditions
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_Auditions final : public UPyMarvelUserWidget
 {
 public:
@@ -72,18 +78,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_Auditions">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_Auditions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_Auditions")
 	}
 	static class UPyWidget_League_ScheduleOverview_Auditions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_Auditions>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_Auditions) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_Auditions");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_Auditions) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_Auditions");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_Auditions;
 
 // PythonClass PyWidget_League_ScheduleOverview_Auditions.PyWidget_League_ScheduleOverview_Reselection
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_Reselection final : public UPyMarvelUserWidget
 {
 public:
@@ -94,15 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_Reselection">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_Reselection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_Reselection")
 	}
 	static class UPyWidget_League_ScheduleOverview_Reselection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_Reselection>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_Reselection) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_Reselection");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_Reselection) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_Reselection");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_Reselection;
 
 }
 

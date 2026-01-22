@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAlarmVoice">();
+		STATIC_CLASS_IMPL("PyAlarmVoice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAlarmVoice")
 	}
 	static class APyAlarmVoice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAlarmVoice>();
 	}
 };
-static_assert(alignof(APyAlarmVoice) == 0x000010, "Wrong alignment on APyAlarmVoice");
-static_assert(sizeof(APyAlarmVoice) == 0x0006F0, "Wrong size on APyAlarmVoice");
-static_assert(offsetof(APyAlarmVoice, VoiceID) == 0x0006E0, "Member 'APyAlarmVoice::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_APyAlarmVoice;
 
 }
 

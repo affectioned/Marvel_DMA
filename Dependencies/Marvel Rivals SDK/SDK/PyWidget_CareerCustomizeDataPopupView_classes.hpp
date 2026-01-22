@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerCustomizeDataPopupView.PyWidget_CareerCustomizeDataPopupView
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CareerCustomizeDataPopupView final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeDataPopupView">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeDataPopupView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeDataPopupView")
 	}
 	static class UPyWidget_CareerCustomizeDataPopupView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeDataPopupView>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeDataPopupView) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeDataPopupView");
-static_assert(sizeof(UPyWidget_CareerCustomizeDataPopupView) == 0x0005C0, "Wrong size on UPyWidget_CareerCustomizeDataPopupView");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeDataPopupView;
 
 }
 

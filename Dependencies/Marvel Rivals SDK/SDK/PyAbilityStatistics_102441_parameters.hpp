@@ -25,11 +25,7 @@ public:
 	struct FMarvelTargetActorGenerateInfo         GenerateInfo;                                      // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEndAgentTaskInfo                      EndAgentTaskInfo;                                  // 0x0050(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbilityStatistics_102441_OnAbilityRecycleAgentTask) == 0x000008, "Wrong alignment on PyAbilityStatistics_102441_OnAbilityRecycleAgentTask");
-static_assert(sizeof(PyAbilityStatistics_102441_OnAbilityRecycleAgentTask) == 0x000060, "Wrong size on PyAbilityStatistics_102441_OnAbilityRecycleAgentTask");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityRecycleAgentTask, Instigator) == 0x000000, "Member 'PyAbilityStatistics_102441_OnAbilityRecycleAgentTask::Instigator' has a wrong offset!");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityRecycleAgentTask, GenerateInfo) == 0x000008, "Member 'PyAbilityStatistics_102441_OnAbilityRecycleAgentTask::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityRecycleAgentTask, EndAgentTaskInfo) == 0x000050, "Member 'PyAbilityStatistics_102441_OnAbilityRecycleAgentTask::EndAgentTaskInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityStatistics_102441_OnAbilityRecycleAgentTask;
 
 // PythonFunction PyAbilityStatistics_102441.PyAbilityStatistics_102441.OnAbilityEndAgentTask
 // 0x0060 (0x0060 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	struct FMarvelTargetActorGenerateInfo         GenerateInfo;                                      // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEndAgentTaskInfo                      EndAgentTaskInfo;                                  // 0x0050(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbilityStatistics_102441_OnAbilityEndAgentTask) == 0x000008, "Wrong alignment on PyAbilityStatistics_102441_OnAbilityEndAgentTask");
-static_assert(sizeof(PyAbilityStatistics_102441_OnAbilityEndAgentTask) == 0x000060, "Wrong size on PyAbilityStatistics_102441_OnAbilityEndAgentTask");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityEndAgentTask, Instigator) == 0x000000, "Member 'PyAbilityStatistics_102441_OnAbilityEndAgentTask::Instigator' has a wrong offset!");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityEndAgentTask, GenerateInfo) == 0x000008, "Member 'PyAbilityStatistics_102441_OnAbilityEndAgentTask::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(PyAbilityStatistics_102441_OnAbilityEndAgentTask, EndAgentTaskInfo) == 0x000050, "Member 'PyAbilityStatistics_102441_OnAbilityEndAgentTask::EndAgentTaskInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityStatistics_102441_OnAbilityEndAgentTask;
 
 }
 

@@ -17,6 +17,63 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Mood_GroupList::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Mood_GroupList", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Mood_GroupList::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Mood_GroupList", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Mood_GroupList::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Mood_GroupList", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Mood_Group.PyWidget_Mood_Group.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -109,63 +166,6 @@ class UButton* UPyWidget_Mood_Group::on_try_srcoll_when_next_focusable_child_cha
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Mood_GroupList::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mood_GroupList", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Mood_GroupList::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mood_GroupList", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Mood_Group.PyWidget_Mood_GroupList.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Mood_GroupList::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mood_GroupList", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 }

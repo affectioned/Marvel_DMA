@@ -11,46 +11,37 @@
 #include "Basic.hpp"
 
 #include "PyAbility_105542_classes.hpp"
+#include "PyAbility_105542_parameters.hpp"
 
 
 namespace SDK
 {
 
-// PythonFunction PyAbility_105542.PyUIController_105542.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyAbility_105542.PyEffectiveComponent_10554201.ShouldAccumulateApplyTimes
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyUIController_105542::OnInit()
+bool UPyEffectiveComponent_10554201::ShouldAccumulateApplyTimes(const TArray<struct FHitResult>& HitResults) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_105542", "OnInit");
+		Func = Class->GetFunction("PyEffectiveComponent_10554201", "ShouldAccumulateApplyTimes");
+
+	Params::PyEffectiveComponent_10554201_ShouldAccumulateApplyTimes Parms{};
+
+	Parms.HitResults = std::move(HitResults);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
 
-
-// PythonFunction PyAbility_105542.PyUIController_105542.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_105542::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_105542", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
+	return Parms.ReturnValue;
 }
 
 
@@ -120,6 +111,44 @@ void UPyAbility_105542::MissileEventNotify()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyAbility_105542", "MissileEventNotify");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105542.PyUIController_105542.OnInit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_105542::OnInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_105542", "OnInit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105542.PyUIController_105542.OnDestruct
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_105542::OnDestruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_105542", "OnDestruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -10,13 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Activity_10130_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "GameplayAbilities_classes.hpp"
-#include "Hero_1038_classes.hpp"
-#include "MassEntity_structs.hpp"
-#include "MassEntity_classes.hpp"
 #include "AIModule_structs.hpp"
 #include "AIModule_classes.hpp"
 #include "CoreUObject_structs.hpp"
@@ -31,170 +28,100 @@
 #include "MassSpawner_structs.hpp"
 #include "MassSpawner_classes.hpp"
 #include "MassActors_classes.hpp"
-#include "Hero_1045_classes.hpp"
 #include "MassReplication_classes.hpp"
+#include "MassEntity_structs.hpp"
+#include "MassEntity_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "Hero_1045_classes.hpp"
+#include "Hero_1038_classes.hpp"
 #include "MarvelAI_classes.hpp"
 
 
 namespace SDK
 {
 
-// Class Activity_10130.ZombieAbility
-// 0x00B0 (0x00E0 - 0x0030)
-class UZombieAbility : public UObject
-{
-public:
-	TMulticastInlineDelegate<void()>              OnDeactivateDispatcher;                            // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  AbilityTags;                                       // 0x0040(0x0068)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          bBlockedByHit;                                     // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCancelledByHit;                                   // 0x00A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStopMovementWhenActivate;                         // 0x00AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsActive;                                         // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelZombie*                          Owner;                                             // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         AbilityID;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FZombieAbilityComboConfig>      ComboConfigs;                                      // 0x00C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D0[0x10];                                      // 0x00D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool CanActivate();
-
-	int32 GetComboState() const;
-	bool IsActivated() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ZombieAbility">();
-	}
-	static class UZombieAbility* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UZombieAbility>();
-	}
-};
-static_assert(alignof(UZombieAbility) == 0x000008, "Wrong alignment on UZombieAbility");
-static_assert(sizeof(UZombieAbility) == 0x0000E0, "Wrong size on UZombieAbility");
-static_assert(offsetof(UZombieAbility, OnDeactivateDispatcher) == 0x000030, "Member 'UZombieAbility::OnDeactivateDispatcher' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, AbilityTags) == 0x000040, "Member 'UZombieAbility::AbilityTags' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, bBlockedByHit) == 0x0000A8, "Member 'UZombieAbility::bBlockedByHit' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, bCancelledByHit) == 0x0000A9, "Member 'UZombieAbility::bCancelledByHit' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, bStopMovementWhenActivate) == 0x0000AA, "Member 'UZombieAbility::bStopMovementWhenActivate' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, bIsActive) == 0x0000AB, "Member 'UZombieAbility::bIsActive' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, Owner) == 0x0000B0, "Member 'UZombieAbility::Owner' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, AbilityID) == 0x0000B8, "Member 'UZombieAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(UZombieAbility, ComboConfigs) == 0x0000C0, "Member 'UZombieAbility::ComboConfigs' has a wrong offset!");
-
-// Class Activity_10130.ZombieAbility_402221
-// 0x0020 (0x0100 - 0x00E0)
-class UZombieAbility_402221 final : public UZombieAbility
-{
-public:
-	uint8                                         Pad_E0[0x18];                                      // 0x00E0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelaySpawnScopeTime;                               // 0x00F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         ScopeID;                                           // 0x00FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void OnLivingStateChanged(const EPlayerLivingState LivingState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ZombieAbility_402221">();
-	}
-	static class UZombieAbility_402221* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UZombieAbility_402221>();
-	}
-};
-static_assert(alignof(UZombieAbility_402221) == 0x000008, "Wrong alignment on UZombieAbility_402221");
-static_assert(sizeof(UZombieAbility_402221) == 0x000100, "Wrong size on UZombieAbility_402221");
-static_assert(offsetof(UZombieAbility_402221, DelaySpawnScopeTime) == 0x0000F8, "Member 'UZombieAbility_402221::DelaySpawnScopeTime' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402221, ScopeID) == 0x0000FC, "Member 'UZombieAbility_402221::ScopeID' has a wrong offset!");
-
 // Class Activity_10130.BuffAbility_CommonCardEffect
-// 0x06C0 (0x1A30 - 0x1370)
+// 0x06C0 (0x1A48 - 0x1388)
 class UBuffAbility_CommonCardEffect : public UMarvelEffectGameplayAbility
 {
 public:
-	bool                                          bDontApplyBuffWhenExist;                           // 0x1370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDontApplyBuffWhenDeath;                           // 0x1371(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableHitLogic;                                   // 0x1372(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1373[0x5];                                     // 0x1373(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagRequirements               HitLogicRequirements;                              // 0x1378(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bOnlyHitCharSmd;                                   // 0x1490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnlyHeadHit;                                      // 0x1491(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1492[0x6];                                     // 0x1492(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 FilterAbilityIDs;                                  // 0x1498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs;                                   // 0x14A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs_Ignore;                            // 0x14B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 OwnerBuffIDs;                                      // 0x14C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 TargetBuffIDs;                                     // 0x14D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bReduceCDWhenHit;                                  // 0x14E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14E9[0x3];                                     // 0x14E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardEffectProbabilityInfo             HitProbInfo;                                       // 0x14EC(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14FC[0x4];                                     // 0x14FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCardEffect_EnergyMod>          HitEnergyMods;                                     // 0x1500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FCardEffect_EnergyMod>          HeadHitEnergyMods;                                 // 0x1510(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bEnableDamgeLogic;                                 // 0x1520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomEnableDamgeLogic;                           // 0x1521(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1522[0x6];                                     // 0x1522(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 FilterAbilityIDs_Damage;                           // 0x1528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs_Damage;                            // 0x1538(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs_Ignore_Damge;                      // 0x1548(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         FilterDamageCount;                                 // 0x1558(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_155C[0x4];                                     // 0x155C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 OwnerBuffIDs_Damage;                               // 0x1560(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 TargetBuffIDs_Damage;                              // 0x1570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FGameplayTagRequirements               TargetRequirements_Damage;                         // 0x1580(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bReduceCDWhenHitWhenDamage;                        // 0x1698(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1699[0x3];                                     // 0x1699(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardEffectProbabilityInfo             DamageProbInfo;                                    // 0x169C(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16AC[0x4];                                     // 0x16AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bEnableTakeDamgeLogic;                             // 0x16B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnablePreTakeDamageLogic;                         // 0x16B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomEnableTakeDamgeLogic;                       // 0x16B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B3[0x5];                                     // 0x16B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 FilterAbilityIDs_TakeDamage;                       // 0x16B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs_TakeDamage;                        // 0x16C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         FilterTakeDamageCount;                             // 0x16D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16DC[0x4];                                     // 0x16DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 OwnerBuffIDs_TakeDamage;                           // 0x16E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 TargetBuffIDs_TakeDamage;                          // 0x16F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bReduceCDWhenTakeDamage;                           // 0x1700(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1701[0x3];                                     // 0x1701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardEffectProbabilityInfo             TakeDamageProbInfo;                                // 0x1704(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1714[0xC];                                     // 0x1714(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bEnableKillLogic;                                  // 0x1720(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1721[0x7];                                     // 0x1721(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 FilterAbilityIDs_Kill;                             // 0x1728(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FilterTargetIDs_Kill;                              // 0x1738(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         FilterKillCount;                                   // 0x1748(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_174C[0x4];                                     // 0x174C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 OwnerBuffIDsWhenKillOther;                         // 0x1750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FGameplayTagRequirements               KillBuffApplyRequire;                              // 0x1760(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FCardEffectProbabilityInfo             KillProbInfo;                                      // 0x1878(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bReduceCDWhenKill;                                 // 0x1888(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRecoverAmmo;                                      // 0x1889(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_188A[0x6];                                     // 0x188A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bUseProbAbility;                                   // 0x1890(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStackProbAbility;                                 // 0x1891(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1892[0x2];                                     // 0x1892(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ProbAbility;                                       // 0x1894(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  RegisterTags;                                      // 0x1898(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            ReduceCDConfig;                                    // 0x1900(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<EAmmoClipType>                         AmmoIndexes;                                       // 0x1950(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         RecoverAmmoRatio;                                  // 0x1960(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bListenAbilityStage;                               // 0x1964(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1965[0x3];                                     // 0x1965(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FCardEffect_StageBuff>     AbilityStageBuffs;                                 // 0x1968(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UMarvelBaseAbilitySystemComponent*      ASC;                                               // 0x19B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMarvelBaseCharacter*                   OwnerChar;                                         // 0x19C0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         DamageCount;                                       // 0x19C8(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         KillCount;                                         // 0x19CC(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         TakeDamageCount;                                   // 0x19D0(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19D4[0x5C];                                    // 0x19D4(0x005C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bDontApplyBuffWhenExist;                           // 0x1388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDontApplyBuffWhenDeath;                           // 0x1389(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableHitLogic;                                   // 0x138A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138B[0x5];                                     // 0x138B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagRequirements               HitLogicRequirements;                              // 0x1390(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bOnlyHitCharSmd;                                   // 0x14A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnlyHeadHit;                                      // 0x14A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14AA[0x6];                                     // 0x14AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 FilterAbilityIDs;                                  // 0x14B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs;                                   // 0x14C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs_Ignore;                            // 0x14D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 OwnerBuffIDs;                                      // 0x14E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 TargetBuffIDs;                                     // 0x14F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bReduceCDWhenHit;                                  // 0x1500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1501[0x3];                                     // 0x1501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCardEffectProbabilityInfo             HitProbInfo;                                       // 0x1504(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1514[0x4];                                     // 0x1514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FCardEffect_EnergyMod>          HitEnergyMods;                                     // 0x1518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FCardEffect_EnergyMod>          HeadHitEnergyMods;                                 // 0x1528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bEnableDamgeLogic;                                 // 0x1538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomEnableDamgeLogic;                           // 0x1539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_153A[0x6];                                     // 0x153A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 FilterAbilityIDs_Damage;                           // 0x1540(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs_Damage;                            // 0x1550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs_Ignore_Damge;                      // 0x1560(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         FilterDamageCount;                                 // 0x1570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1574[0x4];                                     // 0x1574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 OwnerBuffIDs_Damage;                               // 0x1578(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 TargetBuffIDs_Damage;                              // 0x1588(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FGameplayTagRequirements               TargetRequirements_Damage;                         // 0x1598(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bReduceCDWhenHitWhenDamage;                        // 0x16B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16B1[0x3];                                     // 0x16B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCardEffectProbabilityInfo             DamageProbInfo;                                    // 0x16B4(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16C4[0x4];                                     // 0x16C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableTakeDamgeLogic;                             // 0x16C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnablePreTakeDamageLogic;                         // 0x16C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomEnableTakeDamgeLogic;                       // 0x16CA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16CB[0x5];                                     // 0x16CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 FilterAbilityIDs_TakeDamage;                       // 0x16D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs_TakeDamage;                        // 0x16E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         FilterTakeDamageCount;                             // 0x16F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16F4[0x4];                                     // 0x16F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 OwnerBuffIDs_TakeDamage;                           // 0x16F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 TargetBuffIDs_TakeDamage;                          // 0x1708(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bReduceCDWhenTakeDamage;                           // 0x1718(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1719[0x3];                                     // 0x1719(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCardEffectProbabilityInfo             TakeDamageProbInfo;                                // 0x171C(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_172C[0xC];                                     // 0x172C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableKillLogic;                                  // 0x1738(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1739[0x7];                                     // 0x1739(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 FilterAbilityIDs_Kill;                             // 0x1740(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FilterTargetIDs_Kill;                              // 0x1750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         FilterKillCount;                                   // 0x1760(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1764[0x4];                                     // 0x1764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 OwnerBuffIDsWhenKillOther;                         // 0x1768(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FGameplayTagRequirements               KillBuffApplyRequire;                              // 0x1778(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FCardEffectProbabilityInfo             KillProbInfo;                                      // 0x1890(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bReduceCDWhenKill;                                 // 0x18A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRecoverAmmo;                                      // 0x18A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18A2[0x6];                                     // 0x18A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bUseProbAbility;                                   // 0x18A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStackProbAbility;                                 // 0x18A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18AA[0x2];                                     // 0x18AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ProbAbility;                                       // 0x18AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  RegisterTags;                                      // 0x18B0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            ReduceCDConfig;                                    // 0x1918(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<EAmmoClipType>                         AmmoIndexes;                                       // 0x1968(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         RecoverAmmoRatio;                                  // 0x1978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bListenAbilityStage;                               // 0x197C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_197D[0x3];                                     // 0x197D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FCardEffect_StageBuff>     AbilityStageBuffs;                                 // 0x1980(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UMarvelBaseAbilitySystemComponent*      ASC;                                               // 0x19D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMarvelBaseCharacter*                   OwnerChar;                                         // 0x19D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         DamageCount;                                       // 0x19E0(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         KillCount;                                         // 0x19E4(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         TakeDamageCount;                                   // 0x19E8(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_19EC[0x5C];                                    // 0x19EC(0x005C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyConfigEffect(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults);
@@ -227,85 +154,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_CommonCardEffect">();
+		STATIC_CLASS_IMPL("BuffAbility_CommonCardEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_CommonCardEffect")
 	}
 	static class UBuffAbility_CommonCardEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_CommonCardEffect>();
 	}
 };
-static_assert(alignof(UBuffAbility_CommonCardEffect) == 0x000008, "Wrong alignment on UBuffAbility_CommonCardEffect");
-static_assert(sizeof(UBuffAbility_CommonCardEffect) == 0x001A30, "Wrong size on UBuffAbility_CommonCardEffect");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bDontApplyBuffWhenExist) == 0x001370, "Member 'UBuffAbility_CommonCardEffect::bDontApplyBuffWhenExist' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bDontApplyBuffWhenDeath) == 0x001371, "Member 'UBuffAbility_CommonCardEffect::bDontApplyBuffWhenDeath' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bEnableHitLogic) == 0x001372, "Member 'UBuffAbility_CommonCardEffect::bEnableHitLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, HitLogicRequirements) == 0x001378, "Member 'UBuffAbility_CommonCardEffect::HitLogicRequirements' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bOnlyHitCharSmd) == 0x001490, "Member 'UBuffAbility_CommonCardEffect::bOnlyHitCharSmd' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bOnlyHeadHit) == 0x001491, "Member 'UBuffAbility_CommonCardEffect::bOnlyHeadHit' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterAbilityIDs) == 0x001498, "Member 'UBuffAbility_CommonCardEffect::FilterAbilityIDs' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs) == 0x0014A8, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs_Ignore) == 0x0014B8, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs_Ignore' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, OwnerBuffIDs) == 0x0014C8, "Member 'UBuffAbility_CommonCardEffect::OwnerBuffIDs' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TargetBuffIDs) == 0x0014D8, "Member 'UBuffAbility_CommonCardEffect::TargetBuffIDs' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bReduceCDWhenHit) == 0x0014E8, "Member 'UBuffAbility_CommonCardEffect::bReduceCDWhenHit' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, HitProbInfo) == 0x0014EC, "Member 'UBuffAbility_CommonCardEffect::HitProbInfo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, HitEnergyMods) == 0x001500, "Member 'UBuffAbility_CommonCardEffect::HitEnergyMods' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, HeadHitEnergyMods) == 0x001510, "Member 'UBuffAbility_CommonCardEffect::HeadHitEnergyMods' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bEnableDamgeLogic) == 0x001520, "Member 'UBuffAbility_CommonCardEffect::bEnableDamgeLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bCustomEnableDamgeLogic) == 0x001521, "Member 'UBuffAbility_CommonCardEffect::bCustomEnableDamgeLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterAbilityIDs_Damage) == 0x001528, "Member 'UBuffAbility_CommonCardEffect::FilterAbilityIDs_Damage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs_Damage) == 0x001538, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs_Damage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs_Ignore_Damge) == 0x001548, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs_Ignore_Damge' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterDamageCount) == 0x001558, "Member 'UBuffAbility_CommonCardEffect::FilterDamageCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, OwnerBuffIDs_Damage) == 0x001560, "Member 'UBuffAbility_CommonCardEffect::OwnerBuffIDs_Damage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TargetBuffIDs_Damage) == 0x001570, "Member 'UBuffAbility_CommonCardEffect::TargetBuffIDs_Damage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TargetRequirements_Damage) == 0x001580, "Member 'UBuffAbility_CommonCardEffect::TargetRequirements_Damage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bReduceCDWhenHitWhenDamage) == 0x001698, "Member 'UBuffAbility_CommonCardEffect::bReduceCDWhenHitWhenDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, DamageProbInfo) == 0x00169C, "Member 'UBuffAbility_CommonCardEffect::DamageProbInfo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bEnableTakeDamgeLogic) == 0x0016B0, "Member 'UBuffAbility_CommonCardEffect::bEnableTakeDamgeLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bEnablePreTakeDamageLogic) == 0x0016B1, "Member 'UBuffAbility_CommonCardEffect::bEnablePreTakeDamageLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bCustomEnableTakeDamgeLogic) == 0x0016B2, "Member 'UBuffAbility_CommonCardEffect::bCustomEnableTakeDamgeLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterAbilityIDs_TakeDamage) == 0x0016B8, "Member 'UBuffAbility_CommonCardEffect::FilterAbilityIDs_TakeDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs_TakeDamage) == 0x0016C8, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs_TakeDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTakeDamageCount) == 0x0016D8, "Member 'UBuffAbility_CommonCardEffect::FilterTakeDamageCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, OwnerBuffIDs_TakeDamage) == 0x0016E0, "Member 'UBuffAbility_CommonCardEffect::OwnerBuffIDs_TakeDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TargetBuffIDs_TakeDamage) == 0x0016F0, "Member 'UBuffAbility_CommonCardEffect::TargetBuffIDs_TakeDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bReduceCDWhenTakeDamage) == 0x001700, "Member 'UBuffAbility_CommonCardEffect::bReduceCDWhenTakeDamage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TakeDamageProbInfo) == 0x001704, "Member 'UBuffAbility_CommonCardEffect::TakeDamageProbInfo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bEnableKillLogic) == 0x001720, "Member 'UBuffAbility_CommonCardEffect::bEnableKillLogic' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterAbilityIDs_Kill) == 0x001728, "Member 'UBuffAbility_CommonCardEffect::FilterAbilityIDs_Kill' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterTargetIDs_Kill) == 0x001738, "Member 'UBuffAbility_CommonCardEffect::FilterTargetIDs_Kill' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, FilterKillCount) == 0x001748, "Member 'UBuffAbility_CommonCardEffect::FilterKillCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, OwnerBuffIDsWhenKillOther) == 0x001750, "Member 'UBuffAbility_CommonCardEffect::OwnerBuffIDsWhenKillOther' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, KillBuffApplyRequire) == 0x001760, "Member 'UBuffAbility_CommonCardEffect::KillBuffApplyRequire' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, KillProbInfo) == 0x001878, "Member 'UBuffAbility_CommonCardEffect::KillProbInfo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bReduceCDWhenKill) == 0x001888, "Member 'UBuffAbility_CommonCardEffect::bReduceCDWhenKill' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bRecoverAmmo) == 0x001889, "Member 'UBuffAbility_CommonCardEffect::bRecoverAmmo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bUseProbAbility) == 0x001890, "Member 'UBuffAbility_CommonCardEffect::bUseProbAbility' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bStackProbAbility) == 0x001891, "Member 'UBuffAbility_CommonCardEffect::bStackProbAbility' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, ProbAbility) == 0x001894, "Member 'UBuffAbility_CommonCardEffect::ProbAbility' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, RegisterTags) == 0x001898, "Member 'UBuffAbility_CommonCardEffect::RegisterTags' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, ReduceCDConfig) == 0x001900, "Member 'UBuffAbility_CommonCardEffect::ReduceCDConfig' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, AmmoIndexes) == 0x001950, "Member 'UBuffAbility_CommonCardEffect::AmmoIndexes' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, RecoverAmmoRatio) == 0x001960, "Member 'UBuffAbility_CommonCardEffect::RecoverAmmoRatio' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, bListenAbilityStage) == 0x001964, "Member 'UBuffAbility_CommonCardEffect::bListenAbilityStage' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, AbilityStageBuffs) == 0x001968, "Member 'UBuffAbility_CommonCardEffect::AbilityStageBuffs' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, ASC) == 0x0019B8, "Member 'UBuffAbility_CommonCardEffect::ASC' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, OwnerChar) == 0x0019C0, "Member 'UBuffAbility_CommonCardEffect::OwnerChar' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, DamageCount) == 0x0019C8, "Member 'UBuffAbility_CommonCardEffect::DamageCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, KillCount) == 0x0019CC, "Member 'UBuffAbility_CommonCardEffect::KillCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_CommonCardEffect, TakeDamageCount) == 0x0019D0, "Member 'UBuffAbility_CommonCardEffect::TakeDamageCount' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_CommonCardEffect;
 
 // Class Activity_10130.BuffAbility_10130_10141026
-// 0x0518 (0x1F48 - 0x1A30)
+// 0x06A8 (0x20F0 - 0x1A48)
 class UBuffAbility_10130_10141026 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         SingleBulletDamageMultiplier;                      // 0x1A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A34[0x4];                                     // 0x1A34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTargetFilter             ValidTargeFilter;                                  // 0x1A38(0x0508)(Edit, BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	int32                                         LastHitNum;                                        // 0x1F40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1F44[0x4];                                     // 0x1F44(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         SingleBulletDamageMultiplier;                      // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A4C[0x4];                                     // 0x1A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTargetFilter             ValidTargeFilter;                                  // 0x1A50(0x0698)(Edit, BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	int32                                         LastHitNum;                                        // 0x20E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_20EC[0x4];                                     // 0x20EC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool IsValidHitForEffect(const struct FHitResult& InHitResult);
@@ -314,44 +185,47 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_10130_10141026">();
+		STATIC_CLASS_IMPL("BuffAbility_10130_10141026")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10130_10141026")
 	}
 	static class UBuffAbility_10130_10141026* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10130_10141026>();
 	}
 };
-static_assert(alignof(UBuffAbility_10130_10141026) == 0x000008, "Wrong alignment on UBuffAbility_10130_10141026");
-static_assert(sizeof(UBuffAbility_10130_10141026) == 0x001F48, "Wrong size on UBuffAbility_10130_10141026");
-static_assert(offsetof(UBuffAbility_10130_10141026, SingleBulletDamageMultiplier) == 0x001A30, "Member 'UBuffAbility_10130_10141026::SingleBulletDamageMultiplier' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10141026, ValidTargeFilter) == 0x001A38, "Member 'UBuffAbility_10130_10141026::ValidTargeFilter' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10141026, LastHitNum) == 0x001F40, "Member 'UBuffAbility_10130_10141026::LastHitNum' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10130_10141026;
 
 // Class Activity_10130.ShootingLogic_101469
-// 0x0000 (0x06C0 - 0x06C0)
+// 0x0000 (0x0860 - 0x0860)
 class UShootingLogic_101469 final : public UShootingLogic_AbilityProjectile
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ShootingLogic_101469">();
+		STATIC_CLASS_IMPL("ShootingLogic_101469")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShootingLogic_101469")
 	}
 	static class UShootingLogic_101469* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShootingLogic_101469>();
 	}
 };
-static_assert(alignof(UShootingLogic_101469) == 0x000008, "Wrong alignment on UShootingLogic_101469");
-static_assert(sizeof(UShootingLogic_101469) == 0x0006C0, "Wrong size on UShootingLogic_101469");
+DUMPER7_ASSERTS_UShootingLogic_101469;
 
 // Class Activity_10130.Summoned_10146901
-// 0x0030 (0x0CB0 - 0x0C80)
+// 0x0030 (0x0CD0 - 0x0CA0)
 class ASummoned_10146901 : public ASummoned_TurretBase
 {
 public:
-	class UPrimitiveComponent*                    CurrentTargetComponent;                            // 0x0C80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsFiring;                                         // 0x0C88(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_C89[0x27];                                     // 0x0C89(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    CurrentTargetComponent;                            // 0x0CA0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsFiring;                                         // 0x0CA8(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_CA9[0x27];                                     // 0x0CA9(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetCurrentTargetComponent(class UPrimitiveComponent* NewTargetComponent);
@@ -364,55 +238,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Summoned_10146901">();
+		STATIC_CLASS_IMPL("Summoned_10146901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10146901")
 	}
 	static class ASummoned_10146901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10146901>();
 	}
 };
-static_assert(alignof(ASummoned_10146901) == 0x000010, "Wrong alignment on ASummoned_10146901");
-static_assert(sizeof(ASummoned_10146901) == 0x000CB0, "Wrong size on ASummoned_10146901");
-static_assert(offsetof(ASummoned_10146901, CurrentTargetComponent) == 0x000C80, "Member 'ASummoned_10146901::CurrentTargetComponent' has a wrong offset!");
-static_assert(offsetof(ASummoned_10146901, bIsFiring) == 0x000C88, "Member 'ASummoned_10146901::bIsFiring' has a wrong offset!");
-
-// Class Activity_10130.AbilityConfig_402311
-// 0x0010 (0x00A8 - 0x0098)
-class UAbilityConfig_402311 final : public UMarvelAbilityConfig
-{
-public:
-	TArray<struct FZombieAbilityAnimConfig>       ComboConfigs;                                      // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AbilityConfig_402311">();
-	}
-	static class UAbilityConfig_402311* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAbilityConfig_402311>();
-	}
-};
-static_assert(alignof(UAbilityConfig_402311) == 0x000008, "Wrong alignment on UAbilityConfig_402311");
-static_assert(sizeof(UAbilityConfig_402311) == 0x0000A8, "Wrong size on UAbilityConfig_402311");
-static_assert(offsetof(UAbilityConfig_402311, ComboConfigs) == 0x000098, "Member 'UAbilityConfig_402311::ComboConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10146901;
 
 // Class Activity_10130.BuffAbility_10130_10291010
-// 0x0138 (0x1B68 - 0x1A30)
+// 0x0138 (0x1B80 - 0x1A48)
 class UBuffAbility_10130_10291010 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FGameplayTag                           SpawnAOETag;                                       // 0x1A30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TargetMarkTag;                                     // 0x1A3C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnhanceAfterAOE;                                   // 0x1A48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AOEScopeID;                                        // 0x1A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EnhanceStateBuffID;                                // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           SculptTag;                                         // 0x1A5C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjHitNum;                                        // 0x1A68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ClearCacheCount;                                   // 0x1A6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSet<class AActor*>                           CurrentFrameHitTargets;                            // 0x1A70(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TSet<class AActor*>                           PendingRemoveBuffTargets;                          // 0x1AC0(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1B10[0x58];                                    // 0x1B10(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           SpawnAOETag;                                       // 0x1A48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TargetMarkTag;                                     // 0x1A54(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnhanceAfterAOE;                                   // 0x1A60(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AOEScopeID;                                        // 0x1A6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnhanceStateBuffID;                                // 0x1A70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SculptTag;                                         // 0x1A74(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjHitNum;                                        // 0x1A80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ClearCacheCount;                                   // 0x1A84(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSet<class AActor*>                           CurrentFrameHitTargets;                            // 0x1A88(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TSet<class AActor*>                           PendingRemoveBuffTargets;                          // 0x1AD8(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1B28[0x58];                                    // 0x1B28(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void IncreaseBatchID();
@@ -424,91 +278,66 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_10130_10291010">();
+		STATIC_CLASS_IMPL("BuffAbility_10130_10291010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10130_10291010")
 	}
 	static class UBuffAbility_10130_10291010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10130_10291010>();
 	}
 };
-static_assert(alignof(UBuffAbility_10130_10291010) == 0x000008, "Wrong alignment on UBuffAbility_10130_10291010");
-static_assert(sizeof(UBuffAbility_10130_10291010) == 0x001B68, "Wrong size on UBuffAbility_10130_10291010");
-static_assert(offsetof(UBuffAbility_10130_10291010, SpawnAOETag) == 0x001A30, "Member 'UBuffAbility_10130_10291010::SpawnAOETag' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, TargetMarkTag) == 0x001A3C, "Member 'UBuffAbility_10130_10291010::TargetMarkTag' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, EnhanceAfterAOE) == 0x001A48, "Member 'UBuffAbility_10130_10291010::EnhanceAfterAOE' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, AOEScopeID) == 0x001A54, "Member 'UBuffAbility_10130_10291010::AOEScopeID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, EnhanceStateBuffID) == 0x001A58, "Member 'UBuffAbility_10130_10291010::EnhanceStateBuffID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, SculptTag) == 0x001A5C, "Member 'UBuffAbility_10130_10291010::SculptTag' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, ProjHitNum) == 0x001A68, "Member 'UBuffAbility_10130_10291010::ProjHitNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, ClearCacheCount) == 0x001A6C, "Member 'UBuffAbility_10130_10291010::ClearCacheCount' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, CurrentFrameHitTargets) == 0x001A70, "Member 'UBuffAbility_10130_10291010::CurrentFrameHitTargets' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10291010, PendingRemoveBuffTargets) == 0x001AC0, "Member 'UBuffAbility_10130_10291010::PendingRemoveBuffTargets' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10130_10291010;
 
 // Class Activity_10130.Projectile_10130_10291010
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class AProjectile_10130_10291010 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	int32                                         BatchId;                                           // 0x3B88(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAutonomousSimulateMovement;                       // 0x3B8C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B8D[0x3];                                     // 0x3B8D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         BatchId;                                           // 0x3E98(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAutonomousSimulateMovement;                       // 0x3E9C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E9D[0x3];                                     // 0x3E9D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_10130_10291010">();
+		STATIC_CLASS_IMPL("Projectile_10130_10291010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10130_10291010")
 	}
 	static class AProjectile_10130_10291010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10130_10291010>();
 	}
 };
-static_assert(alignof(AProjectile_10130_10291010) == 0x000010, "Wrong alignment on AProjectile_10130_10291010");
-static_assert(sizeof(AProjectile_10130_10291010) == 0x003B90, "Wrong size on AProjectile_10130_10291010");
-static_assert(offsetof(AProjectile_10130_10291010, BatchId) == 0x003B88, "Member 'AProjectile_10130_10291010::BatchId' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10291010, bAutonomousSimulateMovement) == 0x003B8C, "Member 'AProjectile_10130_10291010::bAutonomousSimulateMovement' has a wrong offset!");
-
-// Class Activity_10130.EffectiveComponent_40241101
-// 0x0010 (0x1C80 - 0x1C70)
-class UEffectiveComponent_40241101 final : public UMarvelAgentEffectiveComponent
-{
-public:
-	TArray<class AActor*>                         LastHitActors;                                     // 0x1C68(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C78[0x8];                                     // 0x1C78(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EffectiveComponent_40241101">();
-	}
-	static class UEffectiveComponent_40241101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEffectiveComponent_40241101>();
-	}
-};
-static_assert(alignof(UEffectiveComponent_40241101) == 0x000010, "Wrong alignment on UEffectiveComponent_40241101");
-static_assert(sizeof(UEffectiveComponent_40241101) == 0x001C80, "Wrong size on UEffectiveComponent_40241101");
-static_assert(offsetof(UEffectiveComponent_40241101, LastHitActors) == 0x001C68, "Member 'UEffectiveComponent_40241101::LastHitActors' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10130_10291010;
 
 // Class Activity_10130.EffectComponent_10130_10291010_Scope
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectComponent_10130_10291010_Scope : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectComponent_10130_10291010_Scope">();
+		STATIC_CLASS_IMPL("EffectComponent_10130_10291010_Scope")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectComponent_10130_10291010_Scope")
 	}
 	static class UEffectComponent_10130_10291010_Scope* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectComponent_10130_10291010_Scope>();
 	}
 };
-static_assert(alignof(UEffectComponent_10130_10291010_Scope) == 0x000010, "Wrong alignment on UEffectComponent_10130_10291010_Scope");
-static_assert(sizeof(UEffectComponent_10130_10291010_Scope) == 0x001C70, "Wrong size on UEffectComponent_10130_10291010_Scope");
+DUMPER7_ASSERTS_UEffectComponent_10130_10291010_Scope;
 
 // Class Activity_10130.EffectiveComponent_10130_10291010
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_10130_10291010 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -517,49 +346,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_10130_10291010">();
+		STATIC_CLASS_IMPL("EffectiveComponent_10130_10291010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_10130_10291010")
 	}
 	static class UEffectiveComponent_10130_10291010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_10130_10291010>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_10130_10291010) == 0x000010, "Wrong alignment on UEffectiveComponent_10130_10291010");
-static_assert(sizeof(UEffectiveComponent_10130_10291010) == 0x001C70, "Wrong size on UEffectiveComponent_10130_10291010");
-
-// Class Activity_10130.Config_402321
-// 0x0BE8 (0x0C80 - 0x0098)
-class UConfig_402321 final : public UMarvelAbilityConfig
-{
-public:
-	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x0098(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00B0(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          bPlayBackswing;                                    // 0x0C78(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C79[0x7];                                      // 0x0C79(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Config_402321">();
-	}
-	static class UConfig_402321* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UConfig_402321>();
-	}
-};
-static_assert(alignof(UConfig_402321) == 0x000008, "Wrong alignment on UConfig_402321");
-static_assert(sizeof(UConfig_402321) == 0x000C80, "Wrong size on UConfig_402321");
-static_assert(offsetof(UConfig_402321, AnimConfig) == 0x000098, "Member 'UConfig_402321::AnimConfig' has a wrong offset!");
-static_assert(offsetof(UConfig_402321, DashInfo) == 0x0000B0, "Member 'UConfig_402321::DashInfo' has a wrong offset!");
-static_assert(offsetof(UConfig_402321, bPlayBackswing) == 0x000C78, "Member 'UConfig_402321::bPlayBackswing' has a wrong offset!");
+DUMPER7_ASSERTS_UEffectiveComponent_10130_10291010;
 
 // Class Activity_10130.EffectiveComponent_10130_10291101
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UEffectiveComponent_10130_10291101 : public UMarvelAgentEffectiveComponent
 {
 public:
-	TArray<int32>                                 BuffIDs;                                           // 0x1C68(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C78[0x8];                                     // 0x1C78(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 BuffIDs;                                           // 0x2040(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	void K2_PostExecuteApplyBuffSpec(const TArray<struct FHitResult>& HitResults);
@@ -567,28 +372,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_10130_10291101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_10130_10291101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_10130_10291101")
 	}
 	static class UEffectiveComponent_10130_10291101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_10130_10291101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_10130_10291101) == 0x000010, "Wrong alignment on UEffectiveComponent_10130_10291101");
-static_assert(sizeof(UEffectiveComponent_10130_10291101) == 0x001C80, "Wrong size on UEffectiveComponent_10130_10291101");
-static_assert(offsetof(UEffectiveComponent_10130_10291101, BuffIDs) == 0x001C68, "Member 'UEffectiveComponent_10130_10291101::BuffIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UEffectiveComponent_10130_10291101;
 
 // Class Activity_10130.Ability_10130_10391032
-// 0x0090 (0x1AC0 - 0x1A30)
+// 0x0098 (0x1AE0 - 0x1A48)
 class alignas(0x10) UAbility_10130_10391032 : public UBuffAbility_CommonCardEffect
 {
 public:
-	uint8                                         Pad_1A30[0x10];                                    // 0x1A30(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SplashCounter;                                     // 0x1A40(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SplashScopeID;                                     // 0x1A44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  SkipSplashTags;                                    // 0x1A48(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         MaxSplashScopeNum;                                 // 0x1AB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AB4[0xC];                                     // 0x1AB4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A48[0x18];                                    // 0x1A48(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SplashCounter;                                     // 0x1A60(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SplashScopeID;                                     // 0x1A64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SkipSplashTags;                                    // 0x1A68(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         MaxSplashScopeNum;                                 // 0x1AD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1AD4[0xC];                                     // 0x1AD4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientSpawnSplashScope(const struct FVector& Location, class AActor* AttachTgt);
@@ -601,176 +408,96 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_10130_10391032">();
+		STATIC_CLASS_IMPL("Ability_10130_10391032")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_10130_10391032")
 	}
 	static class UAbility_10130_10391032* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_10130_10391032>();
 	}
 };
-static_assert(alignof(UAbility_10130_10391032) == 0x000010, "Wrong alignment on UAbility_10130_10391032");
-static_assert(sizeof(UAbility_10130_10391032) == 0x001AC0, "Wrong size on UAbility_10130_10391032");
-static_assert(offsetof(UAbility_10130_10391032, SplashCounter) == 0x001A40, "Member 'UAbility_10130_10391032::SplashCounter' has a wrong offset!");
-static_assert(offsetof(UAbility_10130_10391032, SplashScopeID) == 0x001A44, "Member 'UAbility_10130_10391032::SplashScopeID' has a wrong offset!");
-static_assert(offsetof(UAbility_10130_10391032, SkipSplashTags) == 0x001A48, "Member 'UAbility_10130_10391032::SkipSplashTags' has a wrong offset!");
-static_assert(offsetof(UAbility_10130_10391032, MaxSplashScopeNum) == 0x001AB0, "Member 'UAbility_10130_10391032::MaxSplashScopeNum' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_10130_10391032;
 
 // Class Activity_10130.TraceComponent_10391032
-// 0x0010 (0x2210 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UTraceComponent_10391032 final : public UMarvelAgentTraceComponent
 {
 public:
-	class AActor*                                 AttachTarget;                                      // 0x2200(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2208[0x8];                                     // 0x2208(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AActor*                                 AttachTarget;                                      // 0x25F8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceComponent_10391032">();
+		STATIC_CLASS_IMPL("TraceComponent_10391032")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_10391032")
 	}
 	static class UTraceComponent_10391032* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_10391032>();
 	}
 };
-static_assert(alignof(UTraceComponent_10391032) == 0x000010, "Wrong alignment on UTraceComponent_10391032");
-static_assert(sizeof(UTraceComponent_10391032) == 0x002210, "Wrong size on UTraceComponent_10391032");
-static_assert(offsetof(UTraceComponent_10391032, AttachTarget) == 0x002200, "Member 'UTraceComponent_10391032::AttachTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UTraceComponent_10391032;
 
 // Class Activity_10130.EffectiveComponent_10391032
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_10391032 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_10391032">();
+		STATIC_CLASS_IMPL("EffectiveComponent_10391032")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_10391032")
 	}
 	static class UEffectiveComponent_10391032* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_10391032>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_10391032) == 0x000010, "Wrong alignment on UEffectiveComponent_10391032");
-static_assert(sizeof(UEffectiveComponent_10391032) == 0x001C70, "Wrong size on UEffectiveComponent_10391032");
-
-// Class Activity_10130.Cue_Buff_40241101
-// 0x1950 (0x2F90 - 0x1640)
-class ACue_Buff_40241101 final : public AMarvelCueNotify_Buff
-{
-public:
-	class UNiagaraComponent*                      LoopLineFXSystemComp;                              // 0x1638(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraComponent*                      HandFXSystemComp;                                  // 0x1640(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraComponent*                      ArmFXSystemComp;                                   // 0x1648(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraComponent*                      HitFXSystemComp;                                   // 0x1650(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 KeepedTargetActor;                                 // 0x1658(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FHitResult                             KeepHitResult;                                     // 0x1660(0x01F0)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1850[0x20];                                    // 0x1850(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             VerifyTraceContext;                                // 0x1870(0x1660)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class AMarvelBaseCharacter*                   InstigatorChar;                                    // 0x2ED0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMarvelAgentTraceComponent*             TraceComponent;                                    // 0x2ED8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 OwnerActor;                                        // 0x2EE0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 LastBeHittingTarget;                               // 0x2EE8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2EF0[0x28];                                    // 0x2EF0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         LoopLineFXSystemAsset;                             // 0x2F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UFXSystemAsset*                         HitFXSystemAsset;                                  // 0x2F20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UFXSystemAsset*                         HandFXSystemAsset;                                 // 0x2F28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UFXSystemAsset*                         ArmFXSystemAsset;                                  // 0x2F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   LineAttachSocketName;                              // 0x2F38(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   HandAttachSocketName;                              // 0x2F44(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   ArmAttachSocketName;                               // 0x2F50(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   HitAttachSocketName;                               // 0x2F5C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LengthPerSegment;                                  // 0x2F68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LineFXSourceBendingFactor;                         // 0x2F6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LineFXTargetBendingFactor;                         // 0x2F70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         LoopAudioIDWithoutTarget;                          // 0x2F74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         LoopAudioIDWithTarget;                             // 0x2F78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         BeHittingStartAudioID;                             // 0x2F7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         BeHittingLoopAudioID;                              // 0x2F80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         BeHittingEndAudioID;                               // 0x2F84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         FXDissolveDeltaTime;                               // 0x2F88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2F8C[0x4];                                     // 0x2F8C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnComponentCollisionChanged(class UPrimitiveComponent* ChangedComponent);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Cue_Buff_40241101">();
-	}
-	static class ACue_Buff_40241101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ACue_Buff_40241101>();
-	}
-};
-static_assert(alignof(ACue_Buff_40241101) == 0x000010, "Wrong alignment on ACue_Buff_40241101");
-static_assert(sizeof(ACue_Buff_40241101) == 0x002F90, "Wrong size on ACue_Buff_40241101");
-static_assert(offsetof(ACue_Buff_40241101, LoopLineFXSystemComp) == 0x001638, "Member 'ACue_Buff_40241101::LoopLineFXSystemComp' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HandFXSystemComp) == 0x001640, "Member 'ACue_Buff_40241101::HandFXSystemComp' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, ArmFXSystemComp) == 0x001648, "Member 'ACue_Buff_40241101::ArmFXSystemComp' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HitFXSystemComp) == 0x001650, "Member 'ACue_Buff_40241101::HitFXSystemComp' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, KeepedTargetActor) == 0x001658, "Member 'ACue_Buff_40241101::KeepedTargetActor' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, KeepHitResult) == 0x001660, "Member 'ACue_Buff_40241101::KeepHitResult' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, VerifyTraceContext) == 0x001870, "Member 'ACue_Buff_40241101::VerifyTraceContext' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, InstigatorChar) == 0x002ED0, "Member 'ACue_Buff_40241101::InstigatorChar' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, TraceComponent) == 0x002ED8, "Member 'ACue_Buff_40241101::TraceComponent' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, OwnerActor) == 0x002EE0, "Member 'ACue_Buff_40241101::OwnerActor' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LastBeHittingTarget) == 0x002EE8, "Member 'ACue_Buff_40241101::LastBeHittingTarget' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LoopLineFXSystemAsset) == 0x002F18, "Member 'ACue_Buff_40241101::LoopLineFXSystemAsset' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HitFXSystemAsset) == 0x002F20, "Member 'ACue_Buff_40241101::HitFXSystemAsset' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HandFXSystemAsset) == 0x002F28, "Member 'ACue_Buff_40241101::HandFXSystemAsset' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, ArmFXSystemAsset) == 0x002F30, "Member 'ACue_Buff_40241101::ArmFXSystemAsset' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LineAttachSocketName) == 0x002F38, "Member 'ACue_Buff_40241101::LineAttachSocketName' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HandAttachSocketName) == 0x002F44, "Member 'ACue_Buff_40241101::HandAttachSocketName' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, ArmAttachSocketName) == 0x002F50, "Member 'ACue_Buff_40241101::ArmAttachSocketName' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, HitAttachSocketName) == 0x002F5C, "Member 'ACue_Buff_40241101::HitAttachSocketName' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LengthPerSegment) == 0x002F68, "Member 'ACue_Buff_40241101::LengthPerSegment' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LineFXSourceBendingFactor) == 0x002F6C, "Member 'ACue_Buff_40241101::LineFXSourceBendingFactor' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LineFXTargetBendingFactor) == 0x002F70, "Member 'ACue_Buff_40241101::LineFXTargetBendingFactor' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LoopAudioIDWithoutTarget) == 0x002F74, "Member 'ACue_Buff_40241101::LoopAudioIDWithoutTarget' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, LoopAudioIDWithTarget) == 0x002F78, "Member 'ACue_Buff_40241101::LoopAudioIDWithTarget' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, BeHittingStartAudioID) == 0x002F7C, "Member 'ACue_Buff_40241101::BeHittingStartAudioID' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, BeHittingLoopAudioID) == 0x002F80, "Member 'ACue_Buff_40241101::BeHittingLoopAudioID' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, BeHittingEndAudioID) == 0x002F84, "Member 'ACue_Buff_40241101::BeHittingEndAudioID' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_40241101, FXDissolveDeltaTime) == 0x002F88, "Member 'ACue_Buff_40241101::FXDissolveDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_UEffectiveComponent_10391032;
 
 // Class Activity_10130.Config_10130_104494
-// 0x0140 (0x1970 - 0x1830)
+// 0x0140 (0x1CC0 - 0x1B80)
 class UConfig_10130_104494 : public UConfig_103031
 {
 public:
-	TArray<int32>                                 MoonBladeAbilities;                                // 0x1830(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         MoonBladeBonusRatio;                               // 0x1840(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableMoonBonus;                                  // 0x1844(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1845[0x3];                                     // 0x1845(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FBladeProbabilityData>          BladeProbabilityData;                              // 0x1848(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagRequirements               HitTargetRequirement;                              // 0x1858(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 MoonBladeAbilities;                                // 0x1B80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         MoonBladeBonusRatio;                               // 0x1B90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableMoonBonus;                                  // 0x1B94(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B95[0x3];                                     // 0x1B95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FBladeProbabilityData>          BladeProbabilityData;                              // 0x1B98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagRequirements               HitTargetRequirement;                              // 0x1BA8(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_10130_104494">();
+		STATIC_CLASS_IMPL("Config_10130_104494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_10130_104494")
 	}
 	static class UConfig_10130_104494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_10130_104494>();
 	}
 };
-static_assert(alignof(UConfig_10130_104494) == 0x000010, "Wrong alignment on UConfig_10130_104494");
-static_assert(sizeof(UConfig_10130_104494) == 0x001970, "Wrong size on UConfig_10130_104494");
-static_assert(offsetof(UConfig_10130_104494, MoonBladeAbilities) == 0x001830, "Member 'UConfig_10130_104494::MoonBladeAbilities' has a wrong offset!");
-static_assert(offsetof(UConfig_10130_104494, MoonBladeBonusRatio) == 0x001840, "Member 'UConfig_10130_104494::MoonBladeBonusRatio' has a wrong offset!");
-static_assert(offsetof(UConfig_10130_104494, bEnableMoonBonus) == 0x001844, "Member 'UConfig_10130_104494::bEnableMoonBonus' has a wrong offset!");
-static_assert(offsetof(UConfig_10130_104494, BladeProbabilityData) == 0x001848, "Member 'UConfig_10130_104494::BladeProbabilityData' has a wrong offset!");
-static_assert(offsetof(UConfig_10130_104494, HitTargetRequirement) == 0x001858, "Member 'UConfig_10130_104494::HitTargetRequirement' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_10130_104494;
 
 // Class Activity_10130.Ability_10130_104494
-// 0x00A8 (0x2A98 - 0x29F0)
+// 0x00A8 (0x2AE8 - 0x2A40)
 class UAbility_10130_104494 : public UMarvelGameplayAbility
 {
 public:
-	uint8                                         Pad_29F0[0xA8];                                    // 0x29F0(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A40[0xA8];                                    // 0x2A40(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CreateProjectileWithInfo(const struct FMarvelAbilitySocketInfo& SocketInfo, int32 StackCnt);
@@ -785,24 +512,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_10130_104494">();
+		STATIC_CLASS_IMPL("Ability_10130_104494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_10130_104494")
 	}
 	static class UAbility_10130_104494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_10130_104494>();
 	}
 };
-static_assert(alignof(UAbility_10130_104494) == 0x000008, "Wrong alignment on UAbility_10130_104494");
-static_assert(sizeof(UAbility_10130_104494) == 0x002A98, "Wrong size on UAbility_10130_104494");
+DUMPER7_ASSERTS_UAbility_10130_104494;
 
 // Class Activity_10130.Projectile_10130_10449490
-// 0x0030 (0x53E0 - 0x53B0)
+// 0x0030 (0x5A40 - 0x5A10)
 class AProjectile_10130_10449490 : public AProjectile_10302101_Common
 {
 public:
-	uint8                                         Pad_53A8[0x14];                                    // 0x53A8(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	TWeakObjectPtr<class AActor>                  CurrentInterpTarget;                               // 0x53BC(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_53C4[0x1C];                                    // 0x53C4(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5A08[0x14];                                    // 0x5A08(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	TWeakObjectPtr<class AActor>                  CurrentInterpTarget;                               // 0x5A1C(0x0008)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5A24[0x1C];                                    // 0x5A24(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool MergeDamage(int32 InMergeCnt);
@@ -810,91 +540,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_10130_10449490">();
+		STATIC_CLASS_IMPL("Projectile_10130_10449490")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10130_10449490")
 	}
 	static class AProjectile_10130_10449490* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10130_10449490>();
 	}
 };
-static_assert(alignof(AProjectile_10130_10449490) == 0x000010, "Wrong alignment on AProjectile_10130_10449490");
-static_assert(sizeof(AProjectile_10130_10449490) == 0x0053E0, "Wrong size on AProjectile_10130_10449490");
-static_assert(offsetof(AProjectile_10130_10449490, CurrentInterpTarget) == 0x0053BC, "Member 'AProjectile_10130_10449490::CurrentInterpTarget' has a wrong offset!");
-
-// Class Activity_10130.ArmorAttenuation_10472005
-// 0x0000 (0x1540 - 0x1540)
-class UArmorAttenuation_10472005 final : public UMarvelNotTreatFallAbility
-{
-public:
-	void AddArmor(float DeltaValue);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ArmorAttenuation_10472005">();
-	}
-	static class UArmorAttenuation_10472005* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UArmorAttenuation_10472005>();
-	}
-};
-static_assert(alignof(UArmorAttenuation_10472005) == 0x000008, "Wrong alignment on UArmorAttenuation_10472005");
-static_assert(sizeof(UArmorAttenuation_10472005) == 0x001540, "Wrong size on UArmorAttenuation_10472005");
-
-// Class Activity_10130.MarvelZombieAnimInstance
-// 0x0120 (0x0570 - 0x0450)
-class UMarvelZombieAnimInstance final : public UAnimInstance
-{
-public:
-	class USkelotAnimCollection*                  AnimCollectionConfig;                              // 0x0448(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHasInitAnimation;                                 // 0x0450(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FZombieAnimParam                       CurrentAnimParam;                                  // 0x0458(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class UAnimSequenceBase*>              AnimSequences;                                     // 0x0468(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	EZombieSkelotAnimState                        CachedAbilityAnimState;                            // 0x0478(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCurrentShouldUpperBody;                           // 0x0479(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_47A[0xF6];                                     // 0x047A(0x00F6)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void AbilityMontageJumpToSection(class FName SectionName);
-	bool IsInAbilityState(EZombieSkelotAnimState InAnimState);
-	void PlayAbilityMontage(EZombieSkelotAnimState InSkelotAnimState);
-	void PlayHitMontage(EZombieBeHittingState InBeHittingState);
-	void StopAbilityMontage();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelZombieAnimInstance">();
-	}
-	static class UMarvelZombieAnimInstance* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelZombieAnimInstance>();
-	}
-};
-static_assert(alignof(UMarvelZombieAnimInstance) == 0x000010, "Wrong alignment on UMarvelZombieAnimInstance");
-static_assert(sizeof(UMarvelZombieAnimInstance) == 0x000570, "Wrong size on UMarvelZombieAnimInstance");
-static_assert(offsetof(UMarvelZombieAnimInstance, AnimCollectionConfig) == 0x000448, "Member 'UMarvelZombieAnimInstance::AnimCollectionConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieAnimInstance, bHasInitAnimation) == 0x000450, "Member 'UMarvelZombieAnimInstance::bHasInitAnimation' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieAnimInstance, CurrentAnimParam) == 0x000458, "Member 'UMarvelZombieAnimInstance::CurrentAnimParam' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieAnimInstance, AnimSequences) == 0x000468, "Member 'UMarvelZombieAnimInstance::AnimSequences' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieAnimInstance, CachedAbilityAnimState) == 0x000478, "Member 'UMarvelZombieAnimInstance::CachedAbilityAnimState' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieAnimInstance, bCurrentShouldUpperBody) == 0x000479, "Member 'UMarvelZombieAnimInstance::bCurrentShouldUpperBody' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10130_10449490;
 
 // Class Activity_10130.Projectile_10130_10449491
-// 0x0020 (0x3BB0 - 0x3B90)
+// 0x0020 (0x3EC0 - 0x3EA0)
 class AProjectile_10130_10449491 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	float                                         RadiusMin;                                         // 0x3B88(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RadiusMax;                                         // 0x3B8C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IndexProjectile;                                   // 0x3B90(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalProjectile;                                   // 0x3B94(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeOfCircle;                                      // 0x3B98(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeOutward;                                       // 0x3B9C(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeOutwardInterval;                               // 0x3BA0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeOutwardEnd;                                    // 0x3BA4(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3BA8[0x8];                                     // 0x3BA8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         RadiusMin;                                         // 0x3E98(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RadiusMax;                                         // 0x3E9C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IndexProjectile;                                   // 0x3EA0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalProjectile;                                   // 0x3EA4(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeOfCircle;                                      // 0x3EA8(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeOutward;                                       // 0x3EAC(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeOutwardInterval;                               // 0x3EB0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeOutwardEnd;                                    // 0x3EB4(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EB8[0x8];                                     // 0x3EB8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void RemoveFromOwner();
@@ -903,89 +575,51 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_10130_10449491">();
+		STATIC_CLASS_IMPL("Projectile_10130_10449491")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10130_10449491")
 	}
 	static class AProjectile_10130_10449491* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10130_10449491>();
 	}
 };
-static_assert(alignof(AProjectile_10130_10449491) == 0x000010, "Wrong alignment on AProjectile_10130_10449491");
-static_assert(sizeof(AProjectile_10130_10449491) == 0x003BB0, "Wrong size on AProjectile_10130_10449491");
-static_assert(offsetof(AProjectile_10130_10449491, RadiusMin) == 0x003B88, "Member 'AProjectile_10130_10449491::RadiusMin' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, RadiusMax) == 0x003B8C, "Member 'AProjectile_10130_10449491::RadiusMax' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, IndexProjectile) == 0x003B90, "Member 'AProjectile_10130_10449491::IndexProjectile' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, TotalProjectile) == 0x003B94, "Member 'AProjectile_10130_10449491::TotalProjectile' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, TimeOfCircle) == 0x003B98, "Member 'AProjectile_10130_10449491::TimeOfCircle' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, TimeOutward) == 0x003B9C, "Member 'AProjectile_10130_10449491::TimeOutward' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, TimeOutwardInterval) == 0x003BA0, "Member 'AProjectile_10130_10449491::TimeOutwardInterval' has a wrong offset!");
-static_assert(offsetof(AProjectile_10130_10449491, TimeOutwardEnd) == 0x003BA4, "Member 'AProjectile_10130_10449491::TimeOutwardEnd' has a wrong offset!");
-
-// Class Activity_10130.Cue_Ability_Loop_40242101
-// 0x00E0 (0x1290 - 0x11B0)
-class ACue_Ability_Loop_40242101 final : public AMarvelCueNotify_Ability
-{
-public:
-	class UFXSystemAsset*                         StartFXAsset;                                      // 0x11B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_11B8[0x8];                                     // 0x11B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             StartFXOffset;                                     // 0x11C0(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAbility_402421*                        OwningAbility;                                     // 0x1220(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x1228(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<int32, class UNiagaraComponent*>         NiagaraComponents;                                 // 0x1230(0x0050)(ExportObject, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UNiagaraComponent*                      MasterEffect;                                      // 0x1280(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1288[0x8];                                     // 0x1288(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnGameplayActorAdd(class AActor* GameplayActor);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Cue_Ability_Loop_40242101">();
-	}
-	static class ACue_Ability_Loop_40242101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ACue_Ability_Loop_40242101>();
-	}
-};
-static_assert(alignof(ACue_Ability_Loop_40242101) == 0x000010, "Wrong alignment on ACue_Ability_Loop_40242101");
-static_assert(sizeof(ACue_Ability_Loop_40242101) == 0x001290, "Wrong size on ACue_Ability_Loop_40242101");
-static_assert(offsetof(ACue_Ability_Loop_40242101, StartFXAsset) == 0x0011B0, "Member 'ACue_Ability_Loop_40242101::StartFXAsset' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_40242101, StartFXOffset) == 0x0011C0, "Member 'ACue_Ability_Loop_40242101::StartFXOffset' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_40242101, OwningAbility) == 0x001220, "Member 'ACue_Ability_Loop_40242101::OwningAbility' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_40242101, OwnerCharacter) == 0x001228, "Member 'ACue_Ability_Loop_40242101::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_40242101, NiagaraComponents) == 0x001230, "Member 'ACue_Ability_Loop_40242101::NiagaraComponents' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_40242101, MasterEffect) == 0x001280, "Member 'ACue_Ability_Loop_40242101::MasterEffect' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10130_10449491;
 
 // Class Activity_10130.TraceComponent_Scope_10130_10449491
-// 0x0010 (0x2210 - 0x2200)
+// 0x0010 (0x2610 - 0x2600)
 class UTraceComponent_Scope_10130_10449491 final : public UMarvelAgentTraceComponent
 {
 public:
-	TArray<class AActor*>                         LastHitActors;                                     // 0x2200(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	TArray<class AActor*>                         LastHitActors;                                     // 0x25F8(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2608[0x8];                                     // 0x2608(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceComponent_Scope_10130_10449491">();
+		STATIC_CLASS_IMPL("TraceComponent_Scope_10130_10449491")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_Scope_10130_10449491")
 	}
 	static class UTraceComponent_Scope_10130_10449491* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_Scope_10130_10449491>();
 	}
 };
-static_assert(alignof(UTraceComponent_Scope_10130_10449491) == 0x000010, "Wrong alignment on UTraceComponent_Scope_10130_10449491");
-static_assert(sizeof(UTraceComponent_Scope_10130_10449491) == 0x002210, "Wrong size on UTraceComponent_Scope_10130_10449491");
-static_assert(offsetof(UTraceComponent_Scope_10130_10449491, LastHitActors) == 0x002200, "Member 'UTraceComponent_Scope_10130_10449491::LastHitActors' has a wrong offset!");
+DUMPER7_ASSERTS_UTraceComponent_Scope_10130_10449491;
 
 // Class Activity_10130.Summoned_10130_10472401
-// 0x0020 (0x0B60 - 0x0B40)
+// 0x0020 (0x0B80 - 0x0B60)
 class ASummoned_10130_10472401 : public AMarvelSummonerBase
 {
 public:
-	uint8                                         Pad_B40[0x10];                                     // 0x0B40(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEquipComponent*                        EquipComponent;                                    // 0x0B50(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWaterFlowManagerComponent*             WaterFlowManagerComponent;                         // 0x0B58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B60[0x10];                                     // 0x0B60(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEquipComponent*                        EquipComponent;                                    // 0x0B70(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWaterFlowManagerComponent*             WaterFlowManagerComponent;                         // 0x0B78(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	const struct FSummonedExtendedConfig_10130_10472401 GetSummonedExtendedConfig() const;
@@ -993,20 +627,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Summoned_10130_10472401">();
+		STATIC_CLASS_IMPL("Summoned_10130_10472401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10130_10472401")
 	}
 	static class ASummoned_10130_10472401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10130_10472401>();
 	}
 };
-static_assert(alignof(ASummoned_10130_10472401) == 0x000010, "Wrong alignment on ASummoned_10130_10472401");
-static_assert(sizeof(ASummoned_10130_10472401) == 0x000B60, "Wrong size on ASummoned_10130_10472401");
-static_assert(offsetof(ASummoned_10130_10472401, EquipComponent) == 0x000B50, "Member 'ASummoned_10130_10472401::EquipComponent' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_10472401, WaterFlowManagerComponent) == 0x000B58, "Member 'ASummoned_10130_10472401::WaterFlowManagerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10130_10472401;
 
 // Class Activity_10130.Ability_10130_104724
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UAbility_10130_104724 : public UAbility_108
 {
 public:
@@ -1015,90 +650,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_10130_104724">();
+		STATIC_CLASS_IMPL("Ability_10130_104724")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_10130_104724")
 	}
 	static class UAbility_10130_104724* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_10130_104724>();
 	}
 };
-static_assert(alignof(UAbility_10130_104724) == 0x000008, "Wrong alignment on UAbility_10130_104724");
-static_assert(sizeof(UAbility_10130_104724) == 0x0029F8, "Wrong size on UAbility_10130_104724");
-
-// Class Activity_10130.ZombieAbility_Melee
-// 0x0058 (0x0138 - 0x00E0)
-class UZombieAbility_Melee : public UZombieAbility
-{
-public:
-	uint8                                         Pad_E0[0x58];                                      // 0x00E0(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ZombieAbility_Melee">();
-	}
-	static class UZombieAbility_Melee* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UZombieAbility_Melee>();
-	}
-};
-static_assert(alignof(UZombieAbility_Melee) == 0x000008, "Wrong alignment on UZombieAbility_Melee");
-static_assert(sizeof(UZombieAbility_Melee) == 0x000138, "Wrong size on UZombieAbility_Melee");
-
-// Class Activity_10130.NamorBossCharacter
-// 0x0070 (0x2250 - 0x21E0)
-class ANamorBossCharacter : public ANamorCharacter
-{
-public:
-	int32                                         ZombieID;                                          // 0x21D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DurationToDestroyAfterDie;                         // 0x21DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBossDeathDissolve                     BossDeathDissolve;                                 // 0x21E0(0x001C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21FC[0x34];                                    // 0x21FC(0x0034)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnCombatStartDelegate;                             // 0x2230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	bool                                          bIsCombatStarted;                                  // 0x2240(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2241[0xF];                                     // 0x2241(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void K2_OnCombatStart();
-	void OnCombatStart();
-	void OnRep_IsCombatStarted();
-	void OnTimeToDestroyMe();
-	void ReplaceOctopus(class USummonedComp_40255101* CurrentSummonedComp, int32 NewSummonedID);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NamorBossCharacter">();
-	}
-	static class ANamorBossCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ANamorBossCharacter>();
-	}
-};
-static_assert(alignof(ANamorBossCharacter) == 0x000010, "Wrong alignment on ANamorBossCharacter");
-static_assert(sizeof(ANamorBossCharacter) == 0x002250, "Wrong size on ANamorBossCharacter");
-static_assert(offsetof(ANamorBossCharacter, ZombieID) == 0x0021D8, "Member 'ANamorBossCharacter::ZombieID' has a wrong offset!");
-static_assert(offsetof(ANamorBossCharacter, DurationToDestroyAfterDie) == 0x0021DC, "Member 'ANamorBossCharacter::DurationToDestroyAfterDie' has a wrong offset!");
-static_assert(offsetof(ANamorBossCharacter, BossDeathDissolve) == 0x0021E0, "Member 'ANamorBossCharacter::BossDeathDissolve' has a wrong offset!");
-static_assert(offsetof(ANamorBossCharacter, OnCombatStartDelegate) == 0x002230, "Member 'ANamorBossCharacter::OnCombatStartDelegate' has a wrong offset!");
-static_assert(offsetof(ANamorBossCharacter, bIsCombatStarted) == 0x002240, "Member 'ANamorBossCharacter::bIsCombatStarted' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_10130_104724;
 
 // Class Activity_10130.Summoned_10130_104754
-// 0x0060 (0x0BD0 - 0x0B70)
+// 0x0060 (0x0BF0 - 0x0B90)
 class ASummoned_10130_104754 : public ASummoned_10475101
 {
 public:
-	bool                                          bEnableElasticBubble;                              // 0x0B68(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableMagneticBubble;                             // 0x0B69(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B6A[0x2];                                      // 0x0B6A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MergedBubbleCount;                                 // 0x0B6C(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMagneticBubbleData                    MagneticData;                                      // 0x0B70(0x0014)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B84[0x4];                                      // 0x0B84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FElasticBubbleData                     ElasticData;                                       // 0x0B88(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<class AActor*>                         ActivityOverlapActors;                             // 0x0BB8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bSetNewLifeSpan;                                   // 0x0BC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BC9[0x3];                                      // 0x0BC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         LastDamageModifyTime;                              // 0x0BCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableElasticBubble;                              // 0x0B88(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableMagneticBubble;                             // 0x0B89(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B8A[0x2];                                      // 0x0B8A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MergedBubbleCount;                                 // 0x0B8C(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMagneticBubbleData                    MagneticData;                                      // 0x0B90(0x0014)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BA4[0x4];                                      // 0x0BA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FElasticBubbleData                     ElasticData;                                       // 0x0BA8(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                         ActivityOverlapActors;                             // 0x0BD8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bSetNewLifeSpan;                                   // 0x0BE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BE9[0x3];                                      // 0x0BE9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         LastDamageModifyTime;                              // 0x0BEC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnAfterBubbleMerge(int32 FinalMergedCount);
@@ -1114,31 +694,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Summoned_10130_104754">();
+		STATIC_CLASS_IMPL("Summoned_10130_104754")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10130_104754")
 	}
 	static class ASummoned_10130_104754* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10130_104754>();
 	}
 };
-static_assert(alignof(ASummoned_10130_104754) == 0x000010, "Wrong alignment on ASummoned_10130_104754");
-static_assert(sizeof(ASummoned_10130_104754) == 0x000BD0, "Wrong size on ASummoned_10130_104754");
-static_assert(offsetof(ASummoned_10130_104754, bEnableElasticBubble) == 0x000B68, "Member 'ASummoned_10130_104754::bEnableElasticBubble' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, bEnableMagneticBubble) == 0x000B69, "Member 'ASummoned_10130_104754::bEnableMagneticBubble' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, MergedBubbleCount) == 0x000B6C, "Member 'ASummoned_10130_104754::MergedBubbleCount' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, MagneticData) == 0x000B70, "Member 'ASummoned_10130_104754::MagneticData' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, ElasticData) == 0x000B88, "Member 'ASummoned_10130_104754::ElasticData' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, ActivityOverlapActors) == 0x000BB8, "Member 'ASummoned_10130_104754::ActivityOverlapActors' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, bSetNewLifeSpan) == 0x000BC8, "Member 'ASummoned_10130_104754::bSetNewLifeSpan' has a wrong offset!");
-static_assert(offsetof(ASummoned_10130_104754, LastDamageModifyTime) == 0x000BCC, "Member 'ASummoned_10130_104754::LastDamageModifyTime' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10130_104754;
 
 // Class Activity_10130.SummonedMovementComponent_10130_104754
-// 0x0040 (0x0BD0 - 0x0B90)
+// 0x0030 (0x0C20 - 0x0BF0)
 class USummonedMovementComponent_10130_104754 final : public USummonedMovementComponent
 {
 public:
-	struct FSummonedMovementPostPhysicsTickFunction_10130_104754 PostPhysicsTickFunction;            // 0x0B90(0x0038)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_BC8[0x8];                                      // 0x0BC8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSummonedMovementPostPhysicsTickFunction_10130_104754 PostPhysicsTickFunction;            // 0x0BE8(0x0038)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	TArray<class ASummoned_10130_104754*> DetectNearbyBubbles();
@@ -1146,34 +720,36 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SummonedMovementComponent_10130_104754">();
+		STATIC_CLASS_IMPL("SummonedMovementComponent_10130_104754")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SummonedMovementComponent_10130_104754")
 	}
 	static class USummonedMovementComponent_10130_104754* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USummonedMovementComponent_10130_104754>();
 	}
 };
-static_assert(alignof(USummonedMovementComponent_10130_104754) == 0x000010, "Wrong alignment on USummonedMovementComponent_10130_104754");
-static_assert(sizeof(USummonedMovementComponent_10130_104754) == 0x000BD0, "Wrong size on USummonedMovementComponent_10130_104754");
-static_assert(offsetof(USummonedMovementComponent_10130_104754, PostPhysicsTickFunction) == 0x000B90, "Member 'USummonedMovementComponent_10130_104754::PostPhysicsTickFunction' has a wrong offset!");
+DUMPER7_ASSERTS_USummonedMovementComponent_10130_104754;
 
 // Class Activity_10130.AbilityTask_WaitMovementUpdate
-// 0x0048 (0x01E8 - 0x01A0)
+// 0x0048 (0x01E0 - 0x0198)
 class UAbilityTask_WaitMovementUpdate final : public UAbilityTask
 {
 public:
-	TMulticastInlineDelegate<void(bool Value)>    OnMovementChange;                                  // 0x01A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Value)>   OnMovementUpdate;                                  // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	float                                         UpdateTime;                                        // 0x01C0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         InactiveTime;                                      // 0x01C4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsMoving;                                         // 0x01C8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsFirstUpdate;                                    // 0x01C9(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1CA[0x2];                                      // 0x01CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         LastMoveWorldTime;                                 // 0x01CC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LastUpdateBroadcastWorldTime;                      // 0x01D0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACharacter*                             CachedCharacter;                                   // 0x01D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCharacterMovementComponent*            CachedMovementComponent;                           // 0x01E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(bool Value)>    OnMovementChange;                                  // 0x0198(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Value)>   OnMovementUpdate;                                  // 0x01A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	float                                         UpdateTime;                                        // 0x01B8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         InactiveTime;                                      // 0x01BC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsMoving;                                         // 0x01C0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsFirstUpdate;                                    // 0x01C1(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1C2[0x2];                                      // 0x01C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         LastMoveWorldTime;                                 // 0x01C4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LastUpdateBroadcastWorldTime;                      // 0x01C8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACharacter*                             CachedCharacter;                                   // 0x01D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCharacterMovementComponent*            CachedMovementComponent;                           // 0x01D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UAbilityTask_WaitMovementUpdate* WaitMovementUpdate(class UGameplayAbility* OwningAbility, float InInactiveTime, float InUpdateTime);
@@ -1183,25 +759,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTask_WaitMovementUpdate">();
+		STATIC_CLASS_IMPL("AbilityTask_WaitMovementUpdate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTask_WaitMovementUpdate")
 	}
 	static class UAbilityTask_WaitMovementUpdate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTask_WaitMovementUpdate>();
 	}
 };
-static_assert(alignof(UAbilityTask_WaitMovementUpdate) == 0x000008, "Wrong alignment on UAbilityTask_WaitMovementUpdate");
-static_assert(sizeof(UAbilityTask_WaitMovementUpdate) == 0x0001E8, "Wrong size on UAbilityTask_WaitMovementUpdate");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, OnMovementChange) == 0x0001A0, "Member 'UAbilityTask_WaitMovementUpdate::OnMovementChange' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, OnMovementUpdate) == 0x0001B0, "Member 'UAbilityTask_WaitMovementUpdate::OnMovementUpdate' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, UpdateTime) == 0x0001C0, "Member 'UAbilityTask_WaitMovementUpdate::UpdateTime' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, InactiveTime) == 0x0001C4, "Member 'UAbilityTask_WaitMovementUpdate::InactiveTime' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, bIsMoving) == 0x0001C8, "Member 'UAbilityTask_WaitMovementUpdate::bIsMoving' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, bIsFirstUpdate) == 0x0001C9, "Member 'UAbilityTask_WaitMovementUpdate::bIsFirstUpdate' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, LastMoveWorldTime) == 0x0001CC, "Member 'UAbilityTask_WaitMovementUpdate::LastMoveWorldTime' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, LastUpdateBroadcastWorldTime) == 0x0001D0, "Member 'UAbilityTask_WaitMovementUpdate::LastUpdateBroadcastWorldTime' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, CachedCharacter) == 0x0001D8, "Member 'UAbilityTask_WaitMovementUpdate::CachedCharacter' has a wrong offset!");
-static_assert(offsetof(UAbilityTask_WaitMovementUpdate, CachedMovementComponent) == 0x0001E0, "Member 'UAbilityTask_WaitMovementUpdate::CachedMovementComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityTask_WaitMovementUpdate;
 
 // Class Activity_10130.Config_102975
 // 0x0008 (0x00A0 - 0x0098)
@@ -1214,87 +783,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_102975">();
+		STATIC_CLASS_IMPL("Config_102975")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_102975")
 	}
 	static class UConfig_102975* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_102975>();
 	}
 };
-static_assert(alignof(UConfig_102975) == 0x000008, "Wrong alignment on UConfig_102975");
-static_assert(sizeof(UConfig_102975) == 0x0000A0, "Wrong size on UConfig_102975");
-static_assert(offsetof(UConfig_102975, DashDistance) == 0x000098, "Member 'UConfig_102975::DashDistance' has a wrong offset!");
-
-// Class Activity_10130.EffectiveComponent_ZombieMelee
-// 0x0000 (0x1C70 - 0x1C70)
-class UEffectiveComponent_ZombieMelee : public UMarvelAgentEffectiveComponent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EffectiveComponent_ZombieMelee">();
-	}
-	static class UEffectiveComponent_ZombieMelee* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEffectiveComponent_ZombieMelee>();
-	}
-};
-static_assert(alignof(UEffectiveComponent_ZombieMelee) == 0x000010, "Wrong alignment on UEffectiveComponent_ZombieMelee");
-static_assert(sizeof(UEffectiveComponent_ZombieMelee) == 0x001C70, "Wrong size on UEffectiveComponent_ZombieMelee");
-
-// Class Activity_10130.EffectiveComponent_40211101
-// 0x0000 (0x1C70 - 0x1C70)
-class UEffectiveComponent_40211101 final : public UEffectiveComponent_ZombieMelee
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EffectiveComponent_40211101">();
-	}
-	static class UEffectiveComponent_40211101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEffectiveComponent_40211101>();
-	}
-};
-static_assert(alignof(UEffectiveComponent_40211101) == 0x000010, "Wrong alignment on UEffectiveComponent_40211101");
-static_assert(sizeof(UEffectiveComponent_40211101) == 0x001C70, "Wrong size on UEffectiveComponent_40211101");
-
-// Class Activity_10130.UserData_AttachToSkelot
-// 0x0080 (0x00B0 - 0x0030)
-class UUserData_AttachToSkelot final : public UAssetUserData
-{
-public:
-	class FName                                   SocketName;                                        // 0x0030(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             RelationTransform;                                 // 0x0040(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseAbsoluteRotation;                              // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDeactivateOnDeath;                                // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A2[0xE];                                       // 0x00A2(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UserData_AttachToSkelot">();
-	}
-	static class UUserData_AttachToSkelot* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUserData_AttachToSkelot>();
-	}
-};
-static_assert(alignof(UUserData_AttachToSkelot) == 0x000010, "Wrong alignment on UUserData_AttachToSkelot");
-static_assert(sizeof(UUserData_AttachToSkelot) == 0x0000B0, "Wrong size on UUserData_AttachToSkelot");
-static_assert(offsetof(UUserData_AttachToSkelot, SocketName) == 0x000030, "Member 'UUserData_AttachToSkelot::SocketName' has a wrong offset!");
-static_assert(offsetof(UUserData_AttachToSkelot, RelationTransform) == 0x000040, "Member 'UUserData_AttachToSkelot::RelationTransform' has a wrong offset!");
-static_assert(offsetof(UUserData_AttachToSkelot, bUseAbsoluteRotation) == 0x0000A0, "Member 'UUserData_AttachToSkelot::bUseAbsoluteRotation' has a wrong offset!");
-static_assert(offsetof(UUserData_AttachToSkelot, bDeactivateOnDeath) == 0x0000A1, "Member 'UUserData_AttachToSkelot::bDeactivateOnDeath' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_102975;
 
 // Class Activity_10130.Ability_102975
-// 0x0008 (0x2A00 - 0x29F8)
+// 0x0008 (0x2A50 - 0x2A48)
 class UAbility_102975 : public UAbility_108
 {
 public:
-	float                                         HasDashDistance;                                   // 0x29F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29FC[0x4];                                     // 0x29FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         HasDashDistance;                                   // 0x2A48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A4C[0x4];                                     // 0x2A4C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnAfterDashing(bool bAbilityEnd);
@@ -1304,25 +812,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_102975">();
+		STATIC_CLASS_IMPL("Ability_102975")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_102975")
 	}
 	static class UAbility_102975* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_102975>();
 	}
 };
-static_assert(alignof(UAbility_102975) == 0x000008, "Wrong alignment on UAbility_102975");
-static_assert(sizeof(UAbility_102975) == 0x002A00, "Wrong size on UAbility_102975");
-static_assert(offsetof(UAbility_102975, HasDashDistance) == 0x0029F8, "Member 'UAbility_102975::HasDashDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_102975;
 
 // Class Activity_10130.MarvelDragAbility_10297501
-// 0x0028 (0x1FA8 - 0x1F80)
+// 0x0028 (0x22E0 - 0x22B8)
 class UMarvelDragAbility_10297501 : public UMarvelDragAbility
 {
 public:
-	class UMarvelAbilityTask_Dash*                DashTask;                                          // 0x1F80(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                ReplicatedTargetLocation;                          // 0x1F88(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelAbilityTask_NetworkSyncPointWithPayload* NetSyncTask;                               // 0x1FA0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAbilityTask_Dash*                DashTask;                                          // 0x22B8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                ReplicatedTargetLocation;                          // 0x22C0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAbilityTask_NetworkSyncPointWithPayload* NetSyncTask;                               // 0x22D8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ApplyDash(const struct FVector& DragTargetLocation);
@@ -1331,64 +841,51 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelDragAbility_10297501">();
+		STATIC_CLASS_IMPL("MarvelDragAbility_10297501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelDragAbility_10297501")
 	}
 	static class UMarvelDragAbility_10297501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelDragAbility_10297501>();
 	}
 };
-static_assert(alignof(UMarvelDragAbility_10297501) == 0x000008, "Wrong alignment on UMarvelDragAbility_10297501");
-static_assert(sizeof(UMarvelDragAbility_10297501) == 0x001FA8, "Wrong size on UMarvelDragAbility_10297501");
-static_assert(offsetof(UMarvelDragAbility_10297501, DashTask) == 0x001F80, "Member 'UMarvelDragAbility_10297501::DashTask' has a wrong offset!");
-static_assert(offsetof(UMarvelDragAbility_10297501, ReplicatedTargetLocation) == 0x001F88, "Member 'UMarvelDragAbility_10297501::ReplicatedTargetLocation' has a wrong offset!");
-static_assert(offsetof(UMarvelDragAbility_10297501, NetSyncTask) == 0x001FA0, "Member 'UMarvelDragAbility_10297501::NetSyncTask' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelDragAbility_10297501;
 
 // Class Activity_10130.Ability_10471004
-// 0x0000 (0x1A30 - 0x1A30)
+// 0x0000 (0x1A48 - 0x1A48)
 class UAbility_10471004 : public UBuffAbility_CommonCardEffect
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_10471004">();
+		STATIC_CLASS_IMPL("Ability_10471004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_10471004")
 	}
 	static class UAbility_10471004* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_10471004>();
 	}
 };
-static_assert(alignof(UAbility_10471004) == 0x000008, "Wrong alignment on UAbility_10471004");
-static_assert(sizeof(UAbility_10471004) == 0x001A30, "Wrong size on UAbility_10471004");
-
-// Class Activity_10130.EffectiveComponent_40201101
-// 0x0000 (0x1C70 - 0x1C70)
-class UEffectiveComponent_40201101 final : public UEffectiveComponent_ZombieMelee
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EffectiveComponent_40201101">();
-	}
-	static class UEffectiveComponent_40201101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEffectiveComponent_40201101>();
-	}
-};
-static_assert(alignof(UEffectiveComponent_40201101) == 0x000010, "Wrong alignment on UEffectiveComponent_40201101");
-static_assert(sizeof(UEffectiveComponent_40201101) == 0x001C70, "Wrong size on UEffectiveComponent_40201101");
+DUMPER7_ASSERTS_UAbility_10471004;
 
 // Class Activity_10130.BuffAbility_10471135
-// 0x1680 (0x30B0 - 0x1A30)
+// 0x19D8 (0x3420 - 0x1A48)
 class UBuffAbility_10471135 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FMarvelAbilityTraceContext             CharacterTraceContext;                             // 0x1A30(0x1660)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         MaxGenerateHeight;                                 // 0x3090(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxFireRegionNum;                                  // 0x3094(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x3098(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_309C[0x4];                                     // 0x309C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TWeakObjectPtr<class AMarvelAbilityTargetActor_Scope>> SpawnedScopes;                     // 0x30A0(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A48[0x8];                                     // 0x1A48(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             CharacterTraceContext;                             // 0x1A50(0x19B0)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	float                                         MaxGenerateHeight;                                 // 0x3400(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxFireRegionNum;                                  // 0x3404(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x3408(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_340C[0x4];                                     // 0x340C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TWeakObjectPtr<class AMarvelAbilityTargetActor_Scope>> SpawnedScopes;                     // 0x3410(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:
 	void OnFireAreaCreateSucceed(class AActor* SpawnActor, const struct FGameplayAbilityTargetDataHandle& Data);
@@ -1398,106 +895,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_10471135">();
+		STATIC_CLASS_IMPL("BuffAbility_10471135")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10471135")
 	}
 	static class UBuffAbility_10471135* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10471135>();
 	}
 };
-static_assert(alignof(UBuffAbility_10471135) == 0x000010, "Wrong alignment on UBuffAbility_10471135");
-static_assert(sizeof(UBuffAbility_10471135) == 0x0030B0, "Wrong size on UBuffAbility_10471135");
-static_assert(offsetof(UBuffAbility_10471135, CharacterTraceContext) == 0x001A30, "Member 'UBuffAbility_10471135::CharacterTraceContext' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10471135, MaxGenerateHeight) == 0x003090, "Member 'UBuffAbility_10471135::MaxGenerateHeight' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10471135, MaxFireRegionNum) == 0x003094, "Member 'UBuffAbility_10471135::MaxFireRegionNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10471135, ScopeID) == 0x003098, "Member 'UBuffAbility_10471135::ScopeID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10471135, SpawnedScopes) == 0x0030A0, "Member 'UBuffAbility_10471135::SpawnedScopes' has a wrong offset!");
-
-// Class Activity_10130.ZombieAbility_402211
-// 0x0098 (0x0178 - 0x00E0)
-class UZombieAbility_402211 final : public UZombieAbility
-{
-public:
-	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x00E0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	EZombieSkelotAnimState                        AnimWhileMoving;                                   // 0x00F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CustomInitLocationOffset;                          // 0x0100(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProjectileDelaySpawnScopeTime;                     // 0x0118(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileScopeID;                                 // 0x011C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LaterProjectileLifeTime;                           // 0x0120(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124[0x54];                                     // 0x0124(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ZombieAbility_402211">();
-	}
-	static class UZombieAbility_402211* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UZombieAbility_402211>();
-	}
-};
-static_assert(alignof(UZombieAbility_402211) == 0x000008, "Wrong alignment on UZombieAbility_402211");
-static_assert(sizeof(UZombieAbility_402211) == 0x000178, "Wrong size on UZombieAbility_402211");
-static_assert(offsetof(UZombieAbility_402211, AnimConfig) == 0x0000E0, "Member 'UZombieAbility_402211::AnimConfig' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402211, AnimWhileMoving) == 0x0000F8, "Member 'UZombieAbility_402211::AnimWhileMoving' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402211, CustomInitLocationOffset) == 0x000100, "Member 'UZombieAbility_402211::CustomInitLocationOffset' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402211, ProjectileDelaySpawnScopeTime) == 0x000118, "Member 'UZombieAbility_402211::ProjectileDelaySpawnScopeTime' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402211, ProjectileScopeID) == 0x00011C, "Member 'UZombieAbility_402211::ProjectileScopeID' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402211, LaterProjectileLifeTime) == 0x000120, "Member 'UZombieAbility_402211::LaterProjectileLifeTime' has a wrong offset!");
-
-// Class Activity_10130.ZombieCombineNiagaraComponent
-// 0x0158 (0x0260 - 0x0108)
-class UZombieCombineNiagaraComponent final : public UActorComponent
-{
-public:
-	class UNiagaraSystem*                         CombineNiagaraAsset;                               // 0x0108(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         VectorParamNum;                                    // 0x0110(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        VectorParamDefaults;                               // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         FloatParamNum;                                     // 0x0128(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 FloatParamDefaults;                                // 0x0130(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         IntParamNum;                                       // 0x0140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 IntParamDefaults;                                  // 0x0148(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FName                                   ScoketName;                                        // 0x0158(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_164[0xC];                                      // 0x0164(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Offset;                                            // 0x0170(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPlayerLivingState                            EndState;                                          // 0x01D0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D1[0x27];                                     // 0x01D1(0x0027)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTeamVisual                            CachedUsedTeamVisual;                              // 0x01F8(0x0020)(NoDestructor, NativeAccessSpecifierPublic)
-	class AMarvelZombie*                          OwnerZombie;                                       // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220[0x40];                                     // 0x0220(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnLivingStateChanged(EPlayerLivingState Value);
-	void UpdateNiagaraTransform();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ZombieCombineNiagaraComponent">();
-	}
-	static class UZombieCombineNiagaraComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UZombieCombineNiagaraComponent>();
-	}
-};
-static_assert(alignof(UZombieCombineNiagaraComponent) == 0x000010, "Wrong alignment on UZombieCombineNiagaraComponent");
-static_assert(sizeof(UZombieCombineNiagaraComponent) == 0x000260, "Wrong size on UZombieCombineNiagaraComponent");
-static_assert(offsetof(UZombieCombineNiagaraComponent, CombineNiagaraAsset) == 0x000108, "Member 'UZombieCombineNiagaraComponent::CombineNiagaraAsset' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, VectorParamNum) == 0x000110, "Member 'UZombieCombineNiagaraComponent::VectorParamNum' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, VectorParamDefaults) == 0x000118, "Member 'UZombieCombineNiagaraComponent::VectorParamDefaults' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, FloatParamNum) == 0x000128, "Member 'UZombieCombineNiagaraComponent::FloatParamNum' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, FloatParamDefaults) == 0x000130, "Member 'UZombieCombineNiagaraComponent::FloatParamDefaults' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, IntParamNum) == 0x000140, "Member 'UZombieCombineNiagaraComponent::IntParamNum' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, IntParamDefaults) == 0x000148, "Member 'UZombieCombineNiagaraComponent::IntParamDefaults' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, ScoketName) == 0x000158, "Member 'UZombieCombineNiagaraComponent::ScoketName' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, Offset) == 0x000170, "Member 'UZombieCombineNiagaraComponent::Offset' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, EndState) == 0x0001D0, "Member 'UZombieCombineNiagaraComponent::EndState' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, CachedUsedTeamVisual) == 0x0001F8, "Member 'UZombieCombineNiagaraComponent::CachedUsedTeamVisual' has a wrong offset!");
-static_assert(offsetof(UZombieCombineNiagaraComponent, OwnerZombie) == 0x000218, "Member 'UZombieCombineNiagaraComponent::OwnerZombie' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10471135;
 
 // Class Activity_10130.Config_10472005
 // 0x0028 (0x00C0 - 0x0098)
@@ -1518,65 +927,62 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_10472005">();
+		STATIC_CLASS_IMPL("Config_10472005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_10472005")
 	}
 	static class UConfig_10472005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_10472005>();
 	}
 };
-static_assert(alignof(UConfig_10472005) == 0x000008, "Wrong alignment on UConfig_10472005");
-static_assert(sizeof(UConfig_10472005) == 0x0000C0, "Wrong size on UConfig_10472005");
-static_assert(offsetof(UConfig_10472005, ScopeDuration) == 0x000098, "Member 'UConfig_10472005::ScopeDuration' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, ArmorBuffID) == 0x00009C, "Member 'UConfig_10472005::ArmorBuffID' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, DisposableTeammateArmorBuffValue) == 0x0000A0, "Member 'UConfig_10472005::DisposableTeammateArmorBuffValue' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, DisposableSelfArmorBuffValue) == 0x0000A4, "Member 'UConfig_10472005::DisposableSelfArmorBuffValue' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, TeammateArmorBuffValue) == 0x0000A8, "Member 'UConfig_10472005::TeammateArmorBuffValue' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, SelfArmorBuffValue) == 0x0000AC, "Member 'UConfig_10472005::SelfArmorBuffValue' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, ArmorTimeGap) == 0x0000B0, "Member 'UConfig_10472005::ArmorTimeGap' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, TeammateSpeedBuffID) == 0x0000B4, "Member 'UConfig_10472005::TeammateSpeedBuffID' has a wrong offset!");
-static_assert(offsetof(UConfig_10472005, SelfSpeedBuffID) == 0x0000B8, "Member 'UConfig_10472005::SelfSpeedBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_10472005;
 
 // Class Activity_10130.Ability_10472005
-// 0x0020 (0x2A10 - 0x29F0)
+// 0x0020 (0x2A60 - 0x2A40)
 class UAbility_10472005 final : public UMarvelGameplayAbility
 {
 public:
-	class AScope_10472005*                        Scope;                                             // 0x29F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F8[0x18];                                    // 0x29F8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AScope_10472005*                        Scope;                                             // 0x2A40(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A48[0x18];                                    // 0x2A48(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_10472005">();
+		STATIC_CLASS_IMPL("Ability_10472005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_10472005")
 	}
 	static class UAbility_10472005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_10472005>();
 	}
 };
-static_assert(alignof(UAbility_10472005) == 0x000008, "Wrong alignment on UAbility_10472005");
-static_assert(sizeof(UAbility_10472005) == 0x002A10, "Wrong size on UAbility_10472005");
-static_assert(offsetof(UAbility_10472005, Scope) == 0x0029F0, "Member 'UAbility_10472005::Scope' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_10472005;
 
 // Class Activity_10130.Scope_10472005
-// 0x00F0 (0x1B90 - 0x1AA0)
+// 0x00F0 (0x1C60 - 0x1B70)
 class AScope_10472005 : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	uint8                                         Pad_1AA0[0x8];                                     // 0x1AA0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        Path;                                              // 0x1AA8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<float>                                 PathTime;                                          // 0x1AB8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelBaseCharacter*>           Teammates;                                         // 0x1AC8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelBaseCharacter*>           TeammatesOnPath;                                   // 0x1AD8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelBaseCharacter*>           TeammatesOffPath;                                  // 0x1AE8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TMap<class AMarvelBaseCharacter*, struct FTimerHandle> AddArmorTimerMap;                         // 0x1AF8(0x0050)(Protected, NativeAccessSpecifierProtected)
-	int32                                         MaxPathLength;                                     // 0x1B48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DistanceBetweenPointsSquared;                      // 0x1B4C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         SubScopeID;                                        // 0x1B50(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         TeammateSpeedBuffID;                               // 0x1B54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1B58[0x30];                                    // 0x1B58(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAbilityTask_Projectile*          ScopeTask;                                         // 0x1B88(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        Path;                                              // 0x1B70(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<float>                                 PathTime;                                          // 0x1B80(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class AMarvelBaseCharacter*>           Teammates;                                         // 0x1B90(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class AMarvelBaseCharacter*>           TeammatesOnPath;                                   // 0x1BA0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class AMarvelBaseCharacter*>           TeammatesOffPath;                                  // 0x1BB0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TMap<class AMarvelBaseCharacter*, struct FTimerHandle> AddArmorTimerMap;                         // 0x1BC0(0x0050)(Protected, NativeAccessSpecifierProtected)
+	int32                                         MaxPathLength;                                     // 0x1C10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DistanceBetweenPointsSquared;                      // 0x1C14(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         SubScopeID;                                        // 0x1C18(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         TeammateSpeedBuffID;                               // 0x1C1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1C20[0x30];                                    // 0x1C20(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAbilityTask_Projectile*          ScopeTask;                                         // 0x1C50(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1C58[0x8];                                     // 0x1C58(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyArmorToTarget(class AMarvelBaseCharacter* Target);
@@ -1586,35 +992,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Scope_10472005">();
+		STATIC_CLASS_IMPL("Scope_10472005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_10472005")
 	}
 	static class AScope_10472005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_10472005>();
 	}
 };
-static_assert(alignof(AScope_10472005) == 0x000010, "Wrong alignment on AScope_10472005");
-static_assert(sizeof(AScope_10472005) == 0x001B90, "Wrong size on AScope_10472005");
-static_assert(offsetof(AScope_10472005, Path) == 0x001AA8, "Member 'AScope_10472005::Path' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, PathTime) == 0x001AB8, "Member 'AScope_10472005::PathTime' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, Teammates) == 0x001AC8, "Member 'AScope_10472005::Teammates' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, TeammatesOnPath) == 0x001AD8, "Member 'AScope_10472005::TeammatesOnPath' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, TeammatesOffPath) == 0x001AE8, "Member 'AScope_10472005::TeammatesOffPath' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, AddArmorTimerMap) == 0x001AF8, "Member 'AScope_10472005::AddArmorTimerMap' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, MaxPathLength) == 0x001B48, "Member 'AScope_10472005::MaxPathLength' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, DistanceBetweenPointsSquared) == 0x001B4C, "Member 'AScope_10472005::DistanceBetweenPointsSquared' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, SubScopeID) == 0x001B50, "Member 'AScope_10472005::SubScopeID' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, TeammateSpeedBuffID) == 0x001B54, "Member 'AScope_10472005::TeammateSpeedBuffID' has a wrong offset!");
-static_assert(offsetof(AScope_10472005, ScopeTask) == 0x001B88, "Member 'AScope_10472005::ScopeTask' has a wrong offset!");
+DUMPER7_ASSERTS_AScope_10472005;
 
 // Class Activity_10130.BuffAbility_10475131
-// 0x0060 (0x1A90 - 0x1A30)
+// 0x0060 (0x1AA8 - 0x1A48)
 class UBuffAbility_10475131 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FGameplayTag                           TargetHasStateTag;                                 // 0x1A30(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         IncreaseMaxAcceleration;                           // 0x1A3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A40[0x50];                                    // 0x1A40(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           TargetHasStateTag;                                 // 0x1A48(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         IncreaseMaxAcceleration;                           // 0x1A54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A58[0x50];                                    // 0x1A58(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnBindTagUpdated(const struct FGameplayTag& TagUpdated, bool bTagExists);
@@ -1622,52 +1020,79 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_10475131">();
+		STATIC_CLASS_IMPL("BuffAbility_10475131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10475131")
 	}
 	static class UBuffAbility_10475131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10475131>();
 	}
 };
-static_assert(alignof(UBuffAbility_10475131) == 0x000008, "Wrong alignment on UBuffAbility_10475131");
-static_assert(sizeof(UBuffAbility_10475131) == 0x001A90, "Wrong size on UBuffAbility_10475131");
-static_assert(offsetof(UBuffAbility_10475131, TargetHasStateTag) == 0x001A30, "Member 'UBuffAbility_10475131::TargetHasStateTag' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10475131, IncreaseMaxAcceleration) == 0x001A3C, "Member 'UBuffAbility_10475131::IncreaseMaxAcceleration' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10475131;
 
 // Class Activity_10130.Scope_10472006
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class AScope_10472006 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Scope_10472006">();
+		STATIC_CLASS_IMPL("Scope_10472006")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_10472006")
 	}
 	static class AScope_10472006* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_10472006>();
 	}
 };
-static_assert(alignof(AScope_10472006) == 0x000010, "Wrong alignment on AScope_10472006");
-static_assert(sizeof(AScope_10472006) == 0x001AA0, "Wrong size on AScope_10472006");
+DUMPER7_ASSERTS_AScope_10472006;
+
+// Class Activity_10130.ArmorAttenuation_10472005
+// 0x0000 (0x15C0 - 0x15C0)
+class UArmorAttenuation_10472005 final : public UMarvelNotTreatFallAbility
+{
+public:
+	void AddArmor(float DeltaValue);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ArmorAttenuation_10472005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArmorAttenuation_10472005")
+	}
+	static class UArmorAttenuation_10472005* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UArmorAttenuation_10472005>();
+	}
+};
+DUMPER7_ASSERTS_UArmorAttenuation_10472005;
 
 // Class Activity_10130.Cue_Ability_Loop_10472005
-// 0x0070 (0x1220 - 0x11B0)
+// 0x0070 (0x1230 - 0x11C0)
 class ACue_Ability_Loop_10472005 final : public AMarvelCueNotify_Ability
 {
 public:
-	uint8                                         Pad_11B0[0x18];                                    // 0x11B0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      CueNiagara;                                        // 0x11C8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraComponent*                      ReleaseNiagara;                                    // 0x11D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            DisCurve;                                          // 0x11D8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ShieldMaterialName;                                // 0x11E0(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11EC[0x4];                                     // 0x11EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            ShieldMaterialShowCurve;                           // 0x11F0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ShieldMaterialHideCurve;                           // 0x11F8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SprintShieldRaiseID;                               // 0x1200(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SprintShieldReleaseID;                             // 0x1204(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SprintShieldRaiseLoopID;                           // 0x1208(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_120C[0x14];                                    // 0x120C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C0[0x18];                                    // 0x11C0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      CueNiagara;                                        // 0x11D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      ReleaseNiagara;                                    // 0x11E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DisCurve;                                          // 0x11E8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ShieldMaterialName;                                // 0x11F0(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11FC[0x4];                                     // 0x11FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            ShieldMaterialShowCurve;                           // 0x1200(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ShieldMaterialHideCurve;                           // 0x1208(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SprintShieldRaiseID;                               // 0x1210(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SprintShieldReleaseID;                             // 0x1214(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SprintShieldRaiseLoopID;                           // 0x1218(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_121C[0x14];                                    // 0x121C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnTagChanged(const struct FGameplayTag& TagUpdated, bool TagExists);
@@ -1676,24 +1101,121 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Cue_Ability_Loop_10472005">();
+		STATIC_CLASS_IMPL("Cue_Ability_Loop_10472005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_Loop_10472005")
 	}
 	static class ACue_Ability_Loop_10472005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Ability_Loop_10472005>();
 	}
 };
-static_assert(alignof(ACue_Ability_Loop_10472005) == 0x000010, "Wrong alignment on ACue_Ability_Loop_10472005");
-static_assert(sizeof(ACue_Ability_Loop_10472005) == 0x001220, "Wrong size on ACue_Ability_Loop_10472005");
-static_assert(offsetof(ACue_Ability_Loop_10472005, CueNiagara) == 0x0011C8, "Member 'ACue_Ability_Loop_10472005::CueNiagara' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, ReleaseNiagara) == 0x0011D0, "Member 'ACue_Ability_Loop_10472005::ReleaseNiagara' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, DisCurve) == 0x0011D8, "Member 'ACue_Ability_Loop_10472005::DisCurve' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, ShieldMaterialName) == 0x0011E0, "Member 'ACue_Ability_Loop_10472005::ShieldMaterialName' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, ShieldMaterialShowCurve) == 0x0011F0, "Member 'ACue_Ability_Loop_10472005::ShieldMaterialShowCurve' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, ShieldMaterialHideCurve) == 0x0011F8, "Member 'ACue_Ability_Loop_10472005::ShieldMaterialHideCurve' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, SprintShieldRaiseID) == 0x001200, "Member 'ACue_Ability_Loop_10472005::SprintShieldRaiseID' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, SprintShieldReleaseID) == 0x001204, "Member 'ACue_Ability_Loop_10472005::SprintShieldReleaseID' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_10472005, SprintShieldRaiseLoopID) == 0x001208, "Member 'ACue_Ability_Loop_10472005::SprintShieldRaiseLoopID' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Ability_Loop_10472005;
+
+// Class Activity_10130.EffectiveComponent_ZombieMelee
+// 0x0000 (0x2040 - 0x2040)
+class UEffectiveComponent_ZombieMelee : public UMarvelAgentEffectiveComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EffectiveComponent_ZombieMelee")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_ZombieMelee")
+	}
+	static class UEffectiveComponent_ZombieMelee* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEffectiveComponent_ZombieMelee>();
+	}
+};
+DUMPER7_ASSERTS_UEffectiveComponent_ZombieMelee;
+
+// Class Activity_10130.ZombieAbility
+// 0x00B0 (0x00E0 - 0x0030)
+class UZombieAbility : public UObject
+{
+public:
+	TMulticastInlineDelegate<void()>              OnDeactivateDispatcher;                            // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  AbilityTags;                                       // 0x0040(0x0068)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bBlockedByHit;                                     // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCancelledByHit;                                   // 0x00A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopMovementWhenActivate;                         // 0x00AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsActive;                                         // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelZombie*                          Owner;                                             // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         AbilityID;                                         // 0x00B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FZombieAbilityComboConfig>      ComboConfigs;                                      // 0x00C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D0[0x10];                                      // 0x00D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool CanActivate();
+
+	int32 GetComboState() const;
+	bool IsActivated() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ZombieAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility")
+	}
+	static class UZombieAbility* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UZombieAbility>();
+	}
+};
+DUMPER7_ASSERTS_UZombieAbility;
+
+// Class Activity_10130.ZombieAbility_Melee
+// 0x0058 (0x0138 - 0x00E0)
+class UZombieAbility_Melee : public UZombieAbility
+{
+public:
+	uint8                                         Pad_E0[0x58];                                      // 0x00E0(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ZombieAbility_Melee")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_Melee")
+	}
+	static class UZombieAbility_Melee* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UZombieAbility_Melee>();
+	}
+};
+DUMPER7_ASSERTS_UZombieAbility_Melee;
+
+// Class Activity_10130.EffectiveComponent_40201101
+// 0x0000 (0x2040 - 0x2040)
+class UEffectiveComponent_40201101 final : public UEffectiveComponent_ZombieMelee
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EffectiveComponent_40201101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40201101")
+	}
+	static class UEffectiveComponent_40201101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEffectiveComponent_40201101>();
+	}
+};
+DUMPER7_ASSERTS_UEffectiveComponent_40201101;
 
 // Class Activity_10130.ZombieAbility_402011
 // 0x0000 (0x0138 - 0x0138)
@@ -1702,15 +1224,18 @@ class UZombieAbility_402011 final : public UZombieAbility_Melee
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAbility_402011">();
+		STATIC_CLASS_IMPL("ZombieAbility_402011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_402011")
 	}
 	static class UZombieAbility_402011* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieAbility_402011>();
 	}
 };
-static_assert(alignof(UZombieAbility_402011) == 0x000008, "Wrong alignment on UZombieAbility_402011");
-static_assert(sizeof(UZombieAbility_402011) == 0x000138, "Wrong size on UZombieAbility_402011");
+DUMPER7_ASSERTS_UZombieAbility_402011;
 
 // Class Activity_10130.ZombieAbility_402101
 // 0x00B8 (0x0198 - 0x00E0)
@@ -1744,31 +1269,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAbility_402101">();
+		STATIC_CLASS_IMPL("ZombieAbility_402101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_402101")
 	}
 	static class UZombieAbility_402101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieAbility_402101>();
 	}
 };
-static_assert(alignof(UZombieAbility_402101) == 0x000008, "Wrong alignment on UZombieAbility_402101");
-static_assert(sizeof(UZombieAbility_402101) == 0x000198, "Wrong size on UZombieAbility_402101");
-static_assert(offsetof(UZombieAbility_402101, CharacterMovementComponent) == 0x0000E0, "Member 'UZombieAbility_402101::CharacterMovementComponent' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, TargetCharacter) == 0x0000E8, "Member 'UZombieAbility_402101::TargetCharacter' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, HorizontalVelocity) == 0x00015C, "Member 'UZombieAbility_402101::HorizontalVelocity' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, VerticalVelocity) == 0x000160, "Member 'UZombieAbility_402101::VerticalVelocity' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, JumpToHighPlatformThreshold) == 0x000164, "Member 'UZombieAbility_402101::JumpToHighPlatformThreshold' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, JumpToHighPlatformTime) == 0x000168, "Member 'UZombieAbility_402101::JumpToHighPlatformTime' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, JumpToHighPlatformBias) == 0x00016C, "Member 'UZombieAbility_402101::JumpToHighPlatformBias' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, MaxHorizontalVelocity) == 0x000170, "Member 'UZombieAbility_402101::MaxHorizontalVelocity' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, MaxVerticalVelocity) == 0x000174, "Member 'UZombieAbility_402101::MaxVerticalVelocity' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, bChangeGravityScale) == 0x000178, "Member 'UZombieAbility_402101::bChangeGravityScale' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, NewGravityScale) == 0x00017C, "Member 'UZombieAbility_402101::NewGravityScale' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, DefaultGravityScale) == 0x000180, "Member 'UZombieAbility_402101::DefaultGravityScale' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, HorizontalBias) == 0x000184, "Member 'UZombieAbility_402101::HorizontalBias' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, bCheckScene) == 0x000188, "Member 'UZombieAbility_402101::bCheckScene' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, DelayLaunchTime) == 0x00018C, "Member 'UZombieAbility_402101::DelayLaunchTime' has a wrong offset!");
-static_assert(offsetof(UZombieAbility_402101, ScopeID) == 0x000190, "Member 'UZombieAbility_402101::ScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UZombieAbility_402101;
+
+// Class Activity_10130.EffectiveComponent_40211101
+// 0x0000 (0x2040 - 0x2040)
+class UEffectiveComponent_40211101 final : public UEffectiveComponent_ZombieMelee
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EffectiveComponent_40211101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40211101")
+	}
+	static class UEffectiveComponent_40211101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEffectiveComponent_40211101>();
+	}
+};
+DUMPER7_ASSERTS_UEffectiveComponent_40211101;
 
 // Class Activity_10130.ZombieAbility_402111
 // 0x0000 (0x0138 - 0x0138)
@@ -1777,86 +1309,159 @@ class UZombieAbility_402111 final : public UZombieAbility_Melee
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAbility_402111">();
+		STATIC_CLASS_IMPL("ZombieAbility_402111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_402111")
 	}
 	static class UZombieAbility_402111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieAbility_402111>();
 	}
 };
-static_assert(alignof(UZombieAbility_402111) == 0x000008, "Wrong alignment on UZombieAbility_402111");
-static_assert(sizeof(UZombieAbility_402111) == 0x000138, "Wrong size on UZombieAbility_402111");
+DUMPER7_ASSERTS_UZombieAbility_402111;
 
 // Class Activity_10130.EffectiveComponent_40221101_Scope
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40221101_Scope final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40221101_Scope">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40221101_Scope")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40221101_Scope")
 	}
 	static class UEffectiveComponent_40221101_Scope* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40221101_Scope>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40221101_Scope) == 0x000010, "Wrong alignment on UEffectiveComponent_40221101_Scope");
-static_assert(sizeof(UEffectiveComponent_40221101_Scope) == 0x001C70, "Wrong size on UEffectiveComponent_40221101_Scope");
+DUMPER7_ASSERTS_UEffectiveComponent_40221101_Scope;
 
 // Class Activity_10130.EffectiveComponent_40221101_Projectile
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40221101_Projectile final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40221101_Projectile">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40221101_Projectile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40221101_Projectile")
 	}
 	static class UEffectiveComponent_40221101_Projectile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40221101_Projectile>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40221101_Projectile) == 0x000010, "Wrong alignment on UEffectiveComponent_40221101_Projectile");
-static_assert(sizeof(UEffectiveComponent_40221101_Projectile) == 0x001C70, "Wrong size on UEffectiveComponent_40221101_Projectile");
+DUMPER7_ASSERTS_UEffectiveComponent_40221101_Projectile;
 
-// Class Activity_10130.Projectile_40221101
-// 0x0020 (0x3BB0 - 0x3B90)
-class AProjectile_40221101 final : public AMarvelAbilityTargetActor_Projectile
+// Class Activity_10130.ZombieAbility_402211
+// 0x0098 (0x0178 - 0x00E0)
+class UZombieAbility_402211 final : public UZombieAbility
 {
 public:
-	uint8                                         Pad_3B88[0x28];                                    // 0x3B88(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x00E0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	EZombieSkelotAnimState                        AnimWhileMoving;                                   // 0x00F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CustomInitLocationOffset;                          // 0x0100(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProjectileDelaySpawnScopeTime;                     // 0x0118(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileScopeID;                                 // 0x011C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LaterProjectileLifeTime;                           // 0x0120(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_124[0x54];                                     // 0x0124(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_40221101">();
+		STATIC_CLASS_IMPL("ZombieAbility_402211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_402211")
+	}
+	static class UZombieAbility_402211* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UZombieAbility_402211>();
+	}
+};
+DUMPER7_ASSERTS_UZombieAbility_402211;
+
+// Class Activity_10130.Projectile_40221101
+// 0x0020 (0x3EC0 - 0x3EA0)
+class AProjectile_40221101 final : public AMarvelAbilityTargetActor_Projectile
+{
+public:
+	uint8                                         Pad_3E98[0x28];                                    // 0x3E98(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Projectile_40221101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_40221101")
 	}
 	static class AProjectile_40221101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_40221101>();
 	}
 };
-static_assert(alignof(AProjectile_40221101) == 0x000010, "Wrong alignment on AProjectile_40221101");
-static_assert(sizeof(AProjectile_40221101) == 0x003BB0, "Wrong size on AProjectile_40221101");
+DUMPER7_ASSERTS_AProjectile_40221101;
 
 // Class Activity_10130.EffectiveComponent_40222101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40222101 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40222101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40222101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40222101")
 	}
 	static class UEffectiveComponent_40222101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40222101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40222101) == 0x000010, "Wrong alignment on UEffectiveComponent_40222101");
-static_assert(sizeof(UEffectiveComponent_40222101) == 0x001C70, "Wrong size on UEffectiveComponent_40222101");
+DUMPER7_ASSERTS_UEffectiveComponent_40222101;
+
+// Class Activity_10130.ZombieAbility_402221
+// 0x0020 (0x0100 - 0x00E0)
+class UZombieAbility_402221 final : public UZombieAbility
+{
+public:
+	uint8                                         Pad_E0[0x18];                                      // 0x00E0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelaySpawnScopeTime;                               // 0x00F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         ScopeID;                                           // 0x00FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void OnLivingStateChanged(const EPlayerLivingState LivingState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ZombieAbility_402221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbility_402221")
+	}
+	static class UZombieAbility_402221* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UZombieAbility_402221>();
+	}
+};
+DUMPER7_ASSERTS_UZombieAbility_402221;
 
 // Class Activity_10130.Config_402301
 // 0x00E8 (0x0180 - 0x0098)
@@ -1870,144 +1475,204 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_402301">();
+		STATIC_CLASS_IMPL("Config_402301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_402301")
 	}
 	static class UConfig_402301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_402301>();
 	}
 };
-static_assert(alignof(UConfig_402301) == 0x000008, "Wrong alignment on UConfig_402301");
-static_assert(sizeof(UConfig_402301) == 0x000180, "Wrong size on UConfig_402301");
-static_assert(offsetof(UConfig_402301, AnimConfig) == 0x000098, "Member 'UConfig_402301::AnimConfig' has a wrong offset!");
-static_assert(offsetof(UConfig_402301, OwnedTagsDuringLosingShield) == 0x0000B0, "Member 'UConfig_402301::OwnedTagsDuringLosingShield' has a wrong offset!");
-static_assert(offsetof(UConfig_402301, BlockTagsDuringLosingShield) == 0x000118, "Member 'UConfig_402301::BlockTagsDuringLosingShield' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_402301;
 
 // Class Activity_10130.Ability_402301
-// 0x0090 (0x2A80 - 0x29F0)
+// 0x0090 (0x2AD0 - 0x2A40)
 class UAbility_402301 final : public UMarvelGameplayAbility
 {
 public:
-	class AMarvelZombie*                          Owner;                                             // 0x29F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMarvelBaseAbilitySystemComponent*      ASC;                                               // 0x29F8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A00[0x20];                                    // 0x2A00(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	class UConfig_402301*                         AbilityConfig;                                     // 0x2A20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A28[0x58];                                    // 0x2A28(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AMarvelZombie*                          Owner;                                             // 0x2A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMarvelBaseAbilitySystemComponent*      ASC;                                               // 0x2A48(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A50[0x20];                                    // 0x2A50(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	class UConfig_402301*                         AbilityConfig;                                     // 0x2A70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A78[0x58];                                    // 0x2A78(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402301">();
+		STATIC_CLASS_IMPL("Ability_402301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402301")
 	}
 	static class UAbility_402301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402301>();
 	}
 };
-static_assert(alignof(UAbility_402301) == 0x000008, "Wrong alignment on UAbility_402301");
-static_assert(sizeof(UAbility_402301) == 0x002A80, "Wrong size on UAbility_402301");
-static_assert(offsetof(UAbility_402301, Owner) == 0x0029F0, "Member 'UAbility_402301::Owner' has a wrong offset!");
-static_assert(offsetof(UAbility_402301, ASC) == 0x0029F8, "Member 'UAbility_402301::ASC' has a wrong offset!");
-static_assert(offsetof(UAbility_402301, AbilityConfig) == 0x002A20, "Member 'UAbility_402301::AbilityConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_402301;
 
 // Class Activity_10130.EffectiveComponent_40231101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40231101 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40231101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40231101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40231101")
 	}
 	static class UEffectiveComponent_40231101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40231101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40231101) == 0x000010, "Wrong alignment on UEffectiveComponent_40231101");
-static_assert(sizeof(UEffectiveComponent_40231101) == 0x001C70, "Wrong size on UEffectiveComponent_40231101");
+DUMPER7_ASSERTS_UEffectiveComponent_40231101;
 
-// Class Activity_10130.Ability_402311
-// 0x0068 (0x2A58 - 0x29F0)
-class UAbility_402311 final : public UMarvelGameplayAbility
+// Class Activity_10130.AbilityConfig_402311
+// 0x0010 (0x00A8 - 0x0098)
+class UAbilityConfig_402311 final : public UMarvelAbilityConfig
 {
 public:
-	class AMarvelZombie*                          Owner;                                             // 0x29F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAbilityConfig_402311*                  AbilityConfig;                                     // 0x29F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A00[0x58];                                    // 0x2A00(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<struct FZombieAbilityAnimConfig>       ComboConfigs;                                      // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402311">();
+		STATIC_CLASS_IMPL("AbilityConfig_402311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityConfig_402311")
+	}
+	static class UAbilityConfig_402311* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAbilityConfig_402311>();
+	}
+};
+DUMPER7_ASSERTS_UAbilityConfig_402311;
+
+// Class Activity_10130.Ability_402311
+// 0x0068 (0x2AA8 - 0x2A40)
+class UAbility_402311 final : public UMarvelGameplayAbility
+{
+public:
+	class AMarvelZombie*                          Owner;                                             // 0x2A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAbilityConfig_402311*                  AbilityConfig;                                     // 0x2A48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A50[0x58];                                    // 0x2A50(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Ability_402311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402311")
 	}
 	static class UAbility_402311* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402311>();
 	}
 };
-static_assert(alignof(UAbility_402311) == 0x000008, "Wrong alignment on UAbility_402311");
-static_assert(sizeof(UAbility_402311) == 0x002A58, "Wrong size on UAbility_402311");
-static_assert(offsetof(UAbility_402311, Owner) == 0x0029F0, "Member 'UAbility_402311::Owner' has a wrong offset!");
-static_assert(offsetof(UAbility_402311, AbilityConfig) == 0x0029F8, "Member 'UAbility_402311::AbilityConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_402311;
 
 // Class Activity_10130.EffectiveComponent_40232101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40232101 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40232101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40232101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40232101")
 	}
 	static class UEffectiveComponent_40232101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40232101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40232101) == 0x000010, "Wrong alignment on UEffectiveComponent_40232101");
-static_assert(sizeof(UEffectiveComponent_40232101) == 0x001C70, "Wrong size on UEffectiveComponent_40232101");
+DUMPER7_ASSERTS_UEffectiveComponent_40232101;
 
 // Class Activity_10130.EffectiveComponent_40232102
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40232102 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40232102">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40232102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40232102")
 	}
 	static class UEffectiveComponent_40232102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40232102>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40232102) == 0x000010, "Wrong alignment on UEffectiveComponent_40232102");
-static_assert(sizeof(UEffectiveComponent_40232102) == 0x001C70, "Wrong size on UEffectiveComponent_40232102");
+DUMPER7_ASSERTS_UEffectiveComponent_40232102;
 
-// Class Activity_10130.Ability_402321
-// 0x0060 (0x2A50 - 0x29F0)
-class UAbility_402321 final : public UMarvelGameplayAbility
+// Class Activity_10130.Config_402321
+// 0x0F08 (0x0FA0 - 0x0098)
+class UConfig_402321 final : public UMarvelAbilityConfig
 {
 public:
-	class AMarvelZombie*                          Owner;                                             // 0x29F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UConfig_402321*                         AbilityConfig;                                     // 0x29F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A00[0x50];                                    // 0x2A00(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x0098(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00B0(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bPlayBackswing;                                    // 0x0F98(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F99[0x7];                                      // 0x0F99(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402321">();
+		STATIC_CLASS_IMPL("Config_402321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_402321")
+	}
+	static class UConfig_402321* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UConfig_402321>();
+	}
+};
+DUMPER7_ASSERTS_UConfig_402321;
+
+// Class Activity_10130.Ability_402321
+// 0x0060 (0x2AA0 - 0x2A40)
+class UAbility_402321 final : public UMarvelGameplayAbility
+{
+public:
+	class AMarvelZombie*                          Owner;                                             // 0x2A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UConfig_402321*                         AbilityConfig;                                     // 0x2A48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A50[0x50];                                    // 0x2A50(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Ability_402321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402321")
 	}
 	static class UAbility_402321* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402321>();
 	}
 };
-static_assert(alignof(UAbility_402321) == 0x000008, "Wrong alignment on UAbility_402321");
-static_assert(sizeof(UAbility_402321) == 0x002A50, "Wrong size on UAbility_402321");
-static_assert(offsetof(UAbility_402321, Owner) == 0x0029F0, "Member 'UAbility_402321::Owner' has a wrong offset!");
-static_assert(offsetof(UAbility_402321, AbilityConfig) == 0x0029F8, "Member 'UAbility_402321::AbilityConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_402321;
 
 // Class Activity_10130.Config_402411
 // 0x0060 (0x00F8 - 0x0098)
@@ -2025,21 +1690,97 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_402411">();
+		STATIC_CLASS_IMPL("Config_402411")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_402411")
 	}
 	static class UConfig_402411* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_402411>();
 	}
 };
-static_assert(alignof(UConfig_402411) == 0x000008, "Wrong alignment on UConfig_402411");
-static_assert(sizeof(UConfig_402411) == 0x0000F8, "Wrong size on UConfig_402411");
-static_assert(offsetof(UConfig_402411, ChargeEnergy) == 0x000098, "Member 'UConfig_402411::ChargeEnergy' has a wrong offset!");
-static_assert(offsetof(UConfig_402411, ChargedAbilityID) == 0x00009C, "Member 'UConfig_402411::ChargedAbilityID' has a wrong offset!");
-static_assert(offsetof(UConfig_402411, MaxAimOffsetAngle) == 0x0000A0, "Member 'UConfig_402411::MaxAimOffsetAngle' has a wrong offset!");
-static_assert(offsetof(UConfig_402411, DelayTimeLoseTraceTarget) == 0x0000A4, "Member 'UConfig_402411::DelayTimeLoseTraceTarget' has a wrong offset!");
-static_assert(offsetof(UConfig_402411, AbsorbEnergySummonedTagQuery) == 0x0000A8, "Member 'UConfig_402411::AbsorbEnergySummonedTagQuery' has a wrong offset!");
-static_assert(offsetof(UConfig_402411, bIsCharHigherPriority) == 0x0000F0, "Member 'UConfig_402411::bIsCharHigherPriority' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_402411;
+
+// Class Activity_10130.EffectiveComponent_40241101
+// 0x0010 (0x2050 - 0x2040)
+class UEffectiveComponent_40241101 final : public UMarvelAgentEffectiveComponent
+{
+public:
+	TArray<class AActor*>                         LastHitActors;                                     // 0x2040(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EffectiveComponent_40241101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40241101")
+	}
+	static class UEffectiveComponent_40241101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEffectiveComponent_40241101>();
+	}
+};
+DUMPER7_ASSERTS_UEffectiveComponent_40241101;
+
+// Class Activity_10130.Cue_Buff_40241101
+// 0x1CB0 (0x33A0 - 0x16F0)
+class ACue_Buff_40241101 final : public AMarvelCueNotify_Buff
+{
+public:
+	class UNiagaraComponent*                      LoopLineFXSystemComp;                              // 0x16E8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraComponent*                      HandFXSystemComp;                                  // 0x16F0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraComponent*                      ArmFXSystemComp;                                   // 0x16F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraComponent*                      HitFXSystemComp;                                   // 0x1700(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 KeepedTargetActor;                                 // 0x1708(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FHitResult                             KeepHitResult;                                     // 0x1710(0x0208)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1918[0x18];                                    // 0x1918(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             VerifyTraceContext;                                // 0x1930(0x19B0)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class AMarvelBaseCharacter*                   InstigatorChar;                                    // 0x32E0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMarvelAgentTraceComponent*             TraceComponent;                                    // 0x32E8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 OwnerActor;                                        // 0x32F0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 LastBeHittingTarget;                               // 0x32F8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3300[0x28];                                    // 0x3300(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         LoopLineFXSystemAsset;                             // 0x3328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UFXSystemAsset*                         HitFXSystemAsset;                                  // 0x3330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UFXSystemAsset*                         HandFXSystemAsset;                                 // 0x3338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UFXSystemAsset*                         ArmFXSystemAsset;                                  // 0x3340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   LineAttachSocketName;                              // 0x3348(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   HandAttachSocketName;                              // 0x3354(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   ArmAttachSocketName;                               // 0x3360(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   HitAttachSocketName;                               // 0x336C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LengthPerSegment;                                  // 0x3378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LineFXSourceBendingFactor;                         // 0x337C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LineFXTargetBendingFactor;                         // 0x3380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         LoopAudioIDWithoutTarget;                          // 0x3384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         LoopAudioIDWithTarget;                             // 0x3388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         BeHittingStartAudioID;                             // 0x338C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         BeHittingLoopAudioID;                              // 0x3390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         BeHittingEndAudioID;                               // 0x3394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         FXDissolveDeltaTime;                               // 0x3398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_339C[0x4];                                     // 0x339C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnComponentCollisionChanged(class UPrimitiveComponent* ChangedComponent);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Cue_Buff_40241101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_40241101")
+	}
+	static class ACue_Buff_40241101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ACue_Buff_40241101>();
+	}
+};
+DUMPER7_ASSERTS_ACue_Buff_40241101;
 
 // Class Activity_10130.Config_402421
 // 0x0020 (0x00B8 - 0x0098)
@@ -2055,120 +1796,157 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_402421">();
+		STATIC_CLASS_IMPL("Config_402421")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_402421")
 	}
 	static class UConfig_402421* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_402421>();
 	}
 };
-static_assert(alignof(UConfig_402421) == 0x000008, "Wrong alignment on UConfig_402421");
-static_assert(sizeof(UConfig_402421) == 0x0000B8, "Wrong size on UConfig_402421");
-static_assert(offsetof(UConfig_402421, ProjectileID) == 0x000098, "Member 'UConfig_402421::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UConfig_402421, ProjectileInterval) == 0x00009C, "Member 'UConfig_402421::ProjectileInterval' has a wrong offset!");
-static_assert(offsetof(UConfig_402421, StartPointOffset) == 0x0000A0, "Member 'UConfig_402421::StartPointOffset' has a wrong offset!");
-static_assert(offsetof(UConfig_402421, NumOfDifferentPoints) == 0x0000B0, "Member 'UConfig_402421::NumOfDifferentPoints' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_402421;
 
 // Class Activity_10130.Ability_402421
-// 0x1730 (0x4120 - 0x29F0)
+// 0x1A80 (0x44C0 - 0x2A40)
 class alignas(0x10) UAbility_402421 : public UMarvelGameplayAbility
 {
 public:
-	class UConfig_402421*                         AbilityConfig;                                     // 0x29F0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x29F8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMarvelAbilityTask_PlayMontageAndWaitForEvent* TimelineTask;                               // 0x2A00(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2A08[0x1718];                                  // 0x2A08(0x1718)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UConfig_402421*                         AbilityConfig;                                     // 0x2A40(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x2A48(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMarvelAbilityTask_PlayMontageAndWaitForEvent* TimelineTask;                               // 0x2A50(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A58[0x1A68];                                  // 0x2A58(0x1A68)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402421">();
+		STATIC_CLASS_IMPL("Ability_402421")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402421")
 	}
 	static class UAbility_402421* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402421>();
 	}
 };
-static_assert(alignof(UAbility_402421) == 0x000010, "Wrong alignment on UAbility_402421");
-static_assert(sizeof(UAbility_402421) == 0x004120, "Wrong size on UAbility_402421");
-static_assert(offsetof(UAbility_402421, AbilityConfig) == 0x0029F0, "Member 'UAbility_402421::AbilityConfig' has a wrong offset!");
-static_assert(offsetof(UAbility_402421, OwnerCharacter) == 0x0029F8, "Member 'UAbility_402421::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(UAbility_402421, TimelineTask) == 0x002A00, "Member 'UAbility_402421::TimelineTask' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_402421;
 
 // Class Activity_10130.Projectile_40242101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class AProjectile_40242101 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	int32                                         ProjectileIndex;                                   // 0x3B88(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B8C[0x4];                                     // 0x3B8C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ProjectileIndex;                                   // 0x3E98(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E9C[0x4];                                     // 0x3E9C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_40242101">();
+		STATIC_CLASS_IMPL("Projectile_40242101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_40242101")
 	}
 	static class AProjectile_40242101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_40242101>();
 	}
 };
-static_assert(alignof(AProjectile_40242101) == 0x000010, "Wrong alignment on AProjectile_40242101");
-static_assert(sizeof(AProjectile_40242101) == 0x003B90, "Wrong size on AProjectile_40242101");
-static_assert(offsetof(AProjectile_40242101, ProjectileIndex) == 0x003B88, "Member 'AProjectile_40242101::ProjectileIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_40242101;
 
-// Class Activity_10130.Ability_402431
-// 0x0018 (0x2A10 - 0x29F8)
-class UAbility_402431 : public UAbility_108
+// Class Activity_10130.Cue_Ability_Loop_40242101
+// 0x00E0 (0x12A0 - 0x11C0)
+class ACue_Ability_Loop_40242101 final : public AMarvelCueNotify_Ability
 {
 public:
-	bool                                          HasProjectileEnd;                                  // 0x29F8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F9[0x7];                                     // 0x29F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FHitResult>                     HitResults;                                        // 0x2A00(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         StartFXAsset;                                      // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_11C8[0x8];                                     // 0x11C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             StartFXOffset;                                     // 0x11D0(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAbility_402421*                        OwningAbility;                                     // 0x1230(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x1238(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<int32, class UNiagaraComponent*>         NiagaraComponents;                                 // 0x1240(0x0050)(ExportObject, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UNiagaraComponent*                      MasterEffect;                                      // 0x1290(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1298[0x8];                                     // 0x1298(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnGameplayActorAdd(class AActor* GameplayActor);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402431">();
+		STATIC_CLASS_IMPL("Cue_Ability_Loop_40242101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_Loop_40242101")
+	}
+	static class ACue_Ability_Loop_40242101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ACue_Ability_Loop_40242101>();
+	}
+};
+DUMPER7_ASSERTS_ACue_Ability_Loop_40242101;
+
+// Class Activity_10130.Ability_402431
+// 0x0018 (0x2A60 - 0x2A48)
+class UAbility_402431 : public UAbility_108
+{
+public:
+	bool                                          HasProjectileEnd;                                  // 0x2A48(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A49[0x7];                                     // 0x2A49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FHitResult>                     HitResults;                                        // 0x2A50(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Ability_402431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402431")
 	}
 	static class UAbility_402431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402431>();
 	}
 };
-static_assert(alignof(UAbility_402431) == 0x000008, "Wrong alignment on UAbility_402431");
-static_assert(sizeof(UAbility_402431) == 0x002A10, "Wrong size on UAbility_402431");
-static_assert(offsetof(UAbility_402431, HasProjectileEnd) == 0x0029F8, "Member 'UAbility_402431::HasProjectileEnd' has a wrong offset!");
-static_assert(offsetof(UAbility_402431, HitResults) == 0x002A00, "Member 'UAbility_402431::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_402431;
 
 // Class Activity_10130.EffectiveComponent_40243101
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UEffectiveComponent_40243101 final : public UMarvelAgentEffectiveComponent
 {
 public:
-	class UAbility_402431*                        Ability402431;                                     // 0x1C68(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C70[0x10];                                    // 0x1C70(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAbility_402431*                        Ability402431;                                     // 0x2040(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2048[0x8];                                     // 0x2048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40243101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40243101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40243101")
 	}
 	static class UEffectiveComponent_40243101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40243101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40243101) == 0x000010, "Wrong alignment on UEffectiveComponent_40243101");
-static_assert(sizeof(UEffectiveComponent_40243101) == 0x001C80, "Wrong size on UEffectiveComponent_40243101");
-static_assert(offsetof(UEffectiveComponent_40243101, Ability402431) == 0x001C68, "Member 'UEffectiveComponent_40243101::Ability402431' has a wrong offset!");
+DUMPER7_ASSERTS_UEffectiveComponent_40243101;
 
 // Class Activity_10130.Ability_402451
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UAbility_402451 : public UMarvelGameplayAbility
 {
 public:
-	uint8                                         Pad_29F0[0x8];                                     // 0x29F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A40[0x8];                                     // 0x2A40(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetCurrentScopeDamageIncrement();
@@ -2177,85 +1955,94 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402451">();
+		STATIC_CLASS_IMPL("Ability_402451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402451")
 	}
 	static class UAbility_402451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402451>();
 	}
 };
-static_assert(alignof(UAbility_402451) == 0x000008, "Wrong alignment on UAbility_402451");
-static_assert(sizeof(UAbility_402451) == 0x0029F8, "Wrong size on UAbility_402451");
+DUMPER7_ASSERTS_UAbility_402451;
 
 // Class Activity_10130.TraceComponent_40245101
-// 0x0010 (0x2210 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UTraceComponent_40245101 final : public UMarvelAgentTraceComponent
 {
 public:
-	class UCurveFloat*                            Curve_Radius;                                      // 0x2200(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2208[0x8];                                     // 0x2208(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            Curve_Radius;                                      // 0x25F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceComponent_40245101">();
+		STATIC_CLASS_IMPL("TraceComponent_40245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_40245101")
 	}
 	static class UTraceComponent_40245101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_40245101>();
 	}
 };
-static_assert(alignof(UTraceComponent_40245101) == 0x000010, "Wrong alignment on UTraceComponent_40245101");
-static_assert(sizeof(UTraceComponent_40245101) == 0x002210, "Wrong size on UTraceComponent_40245101");
-static_assert(offsetof(UTraceComponent_40245101, Curve_Radius) == 0x002200, "Member 'UTraceComponent_40245101::Curve_Radius' has a wrong offset!");
+DUMPER7_ASSERTS_UTraceComponent_40245101;
 
 // Class Activity_10130.EffectiveComponent_40245101
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UEffectiveComponent_40245101 final : public UMarvelAgentEffectiveComponent
 {
 public:
-	class UAbility_402451*                        Ability402451;                                     // 0x1C68(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C70[0x10];                                    // 0x1C70(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAbility_402451*                        Ability402451;                                     // 0x2040(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2048[0x8];                                     // 0x2048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40245101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40245101")
 	}
 	static class UEffectiveComponent_40245101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40245101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40245101) == 0x000010, "Wrong alignment on UEffectiveComponent_40245101");
-static_assert(sizeof(UEffectiveComponent_40245101) == 0x001C80, "Wrong size on UEffectiveComponent_40245101");
-static_assert(offsetof(UEffectiveComponent_40245101, Ability402451) == 0x001C68, "Member 'UEffectiveComponent_40245101::Ability402451' has a wrong offset!");
+DUMPER7_ASSERTS_UEffectiveComponent_40245101;
 
 // Class Activity_10130.Ability_402501
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UAbility_402501 : public UMarvelAeroBaseAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_402501">();
+		STATIC_CLASS_IMPL("Ability_402501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_402501")
 	}
 	static class UAbility_402501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_402501>();
 	}
 };
-static_assert(alignof(UAbility_402501) == 0x000008, "Wrong alignment on UAbility_402501");
-static_assert(sizeof(UAbility_402501) == 0x002B10, "Wrong size on UAbility_402501");
+DUMPER7_ASSERTS_UAbility_402501;
 
 // Class Activity_10130.SummonedComp_40255101
-// 0x0018 (0x0DC8 - 0x0DB0)
+// 0x0018 (0x0E20 - 0x0E08)
 class USummonedComp_40255101 : public UMarvelSummonedComponent
 {
 public:
-	TArray<int32>                                 HaloOctopusScopeIdArray;                           // 0x0DB0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         HaloOctopusScopeId;                                // 0x0DC0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DC4[0x4];                                      // 0x0DC4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 HaloOctopusScopeIdArray;                           // 0x0E08(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         HaloOctopusScopeId;                                // 0x0E18(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E1C[0x4];                                      // 0x0E1C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GenerateHaloOctopusScopeId();
@@ -2264,60 +2051,64 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SummonedComp_40255101">();
+		STATIC_CLASS_IMPL("SummonedComp_40255101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SummonedComp_40255101")
 	}
 	static class USummonedComp_40255101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USummonedComp_40255101>();
 	}
 };
-static_assert(alignof(USummonedComp_40255101) == 0x000008, "Wrong alignment on USummonedComp_40255101");
-static_assert(sizeof(USummonedComp_40255101) == 0x000DC8, "Wrong size on USummonedComp_40255101");
-static_assert(offsetof(USummonedComp_40255101, HaloOctopusScopeIdArray) == 0x000DB0, "Member 'USummonedComp_40255101::HaloOctopusScopeIdArray' has a wrong offset!");
-static_assert(offsetof(USummonedComp_40255101, HaloOctopusScopeId) == 0x000DC0, "Member 'USummonedComp_40255101::HaloOctopusScopeId' has a wrong offset!");
+DUMPER7_ASSERTS_USummonedComp_40255101;
 
 // Class Activity_10130.Projectile_40271101
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class AProjectile_40271101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	int32                                         ScopeID;                                           // 0x3B88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GroundCheckAngle;                                  // 0x3B8C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TraceDownLength;                                   // 0x3B90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B94[0xC];                                     // 0x3B94(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ScopeID;                                           // 0x3E98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GroundCheckAngle;                                  // 0x3E9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TraceDownLength;                                   // 0x3EA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EA4[0xC];                                     // 0x3EA4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Projectile_40271101">();
+		STATIC_CLASS_IMPL("Projectile_40271101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_40271101")
 	}
 	static class AProjectile_40271101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_40271101>();
 	}
 };
-static_assert(alignof(AProjectile_40271101) == 0x000010, "Wrong alignment on AProjectile_40271101");
-static_assert(sizeof(AProjectile_40271101) == 0x003BA0, "Wrong size on AProjectile_40271101");
-static_assert(offsetof(AProjectile_40271101, ScopeID) == 0x003B88, "Member 'AProjectile_40271101::ScopeID' has a wrong offset!");
-static_assert(offsetof(AProjectile_40271101, GroundCheckAngle) == 0x003B8C, "Member 'AProjectile_40271101::GroundCheckAngle' has a wrong offset!");
-static_assert(offsetof(AProjectile_40271101, TraceDownLength) == 0x003B90, "Member 'AProjectile_40271101::TraceDownLength' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_40271101;
 
 // Class Activity_10130.EffectiveComponent_40271101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_40271101 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_40271101">();
+		STATIC_CLASS_IMPL("EffectiveComponent_40271101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_40271101")
 	}
 	static class UEffectiveComponent_40271101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_40271101>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_40271101) == 0x000010, "Wrong alignment on UEffectiveComponent_40271101");
-static_assert(sizeof(UEffectiveComponent_40271101) == 0x001C70, "Wrong size on UEffectiveComponent_40271101");
+DUMPER7_ASSERTS_UEffectiveComponent_40271101;
 
 // Class Activity_10130.BTS_ActivateZombieAbility
 // 0x0008 (0x0080 - 0x0078)
@@ -2330,16 +2121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_ActivateZombieAbility">();
+		STATIC_CLASS_IMPL("BTS_ActivateZombieAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_ActivateZombieAbility")
 	}
 	static class UBTS_ActivateZombieAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_ActivateZombieAbility>();
 	}
 };
-static_assert(alignof(UBTS_ActivateZombieAbility) == 0x000008, "Wrong alignment on UBTS_ActivateZombieAbility");
-static_assert(sizeof(UBTS_ActivateZombieAbility) == 0x000080, "Wrong size on UBTS_ActivateZombieAbility");
-static_assert(offsetof(UBTS_ActivateZombieAbility, AbilityID) == 0x000078, "Member 'UBTS_ActivateZombieAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_ActivateZombieAbility;
 
 // Class Activity_10130.BTS_UpdateTarget_Zombie
 // 0x0140 (0x01B8 - 0x0078)
@@ -2372,30 +2165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_UpdateTarget_Zombie">();
+		STATIC_CLASS_IMPL("BTS_UpdateTarget_Zombie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateTarget_Zombie")
 	}
 	static class UBTS_UpdateTarget_Zombie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateTarget_Zombie>();
 	}
 };
-static_assert(alignof(UBTS_UpdateTarget_Zombie) == 0x000008, "Wrong alignment on UBTS_UpdateTarget_Zombie");
-static_assert(sizeof(UBTS_UpdateTarget_Zombie) == 0x0001B8, "Wrong size on UBTS_UpdateTarget_Zombie");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, SenseSummoner) == 0x000078, "Member 'UBTS_UpdateTarget_Zombie::SenseSummoner' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, SummonerList) == 0x000080, "Member 'UBTS_UpdateTarget_Zombie::SummonerList' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, OutTarget) == 0x000090, "Member 'UBTS_UpdateTarget_Zombie::OutTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, bNeedCheckTargetInSight) == 0x0000C0, "Member 'UBTS_UpdateTarget_Zombie::bNeedCheckTargetInSight' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, OutTargetInSight) == 0x0000C8, "Member 'UBTS_UpdateTarget_Zombie::OutTargetInSight' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, SightRange) == 0x0000F8, "Member 'UBTS_UpdateTarget_Zombie::SightRange' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, HealthThreshold) == 0x000100, "Member 'UBTS_UpdateTarget_Zombie::HealthThreshold' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, bNonPersistentHatred) == 0x000110, "Member 'UBTS_UpdateTarget_Zombie::bNonPersistentHatred' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, HatredDuration) == 0x000114, "Member 'UBTS_UpdateTarget_Zombie::HatredDuration' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, bNeedSummonedReachableTest) == 0x000118, "Member 'UBTS_UpdateTarget_Zombie::bNeedSummonedReachableTest' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, BlackSummonedDuration) == 0x00011C, "Member 'UBTS_UpdateTarget_Zombie::BlackSummonedDuration' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, ReachableTestInterval) == 0x000120, "Member 'UBTS_UpdateTarget_Zombie::ReachableTestInterval' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, PlayerStates) == 0x000128, "Member 'UBTS_UpdateTarget_Zombie::PlayerStates' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, Protector) == 0x000138, "Member 'UBTS_UpdateTarget_Zombie::Protector' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateTarget_Zombie, PlayerTargetCache) == 0x000140, "Member 'UBTS_UpdateTarget_Zombie::PlayerTargetCache' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_UpdateTarget_Zombie;
 
 // Class Activity_10130.BTS_UpdateZombieInfo
 // 0x00C8 (0x0140 - 0x0078)
@@ -2411,20 +2192,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_UpdateZombieInfo">();
+		STATIC_CLASS_IMPL("BTS_UpdateZombieInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateZombieInfo")
 	}
 	static class UBTS_UpdateZombieInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateZombieInfo>();
 	}
 };
-static_assert(alignof(UBTS_UpdateZombieInfo) == 0x000008, "Wrong alignment on UBTS_UpdateZombieInfo");
-static_assert(sizeof(UBTS_UpdateZombieInfo) == 0x000140, "Wrong size on UBTS_UpdateZombieInfo");
-static_assert(offsetof(UBTS_UpdateZombieInfo, ZombieCount) == 0x000078, "Member 'UBTS_UpdateZombieInfo::ZombieCount' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateZombieInfo, ZombieDeadPercent) == 0x0000A8, "Member 'UBTS_UpdateZombieInfo::ZombieDeadPercent' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateZombieInfo, WaveIdx) == 0x0000D8, "Member 'UBTS_UpdateZombieInfo::WaveIdx' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateZombieInfo, MapID) == 0x000108, "Member 'UBTS_UpdateZombieInfo::MapID' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateZombieInfo, LevelSubCache) == 0x000138, "Member 'UBTS_UpdateZombieInfo::LevelSubCache' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_UpdateZombieInfo;
 
 // Class Activity_10130.BTT_ActivateZombieAbility
 // 0x0030 (0x00A8 - 0x0078)
@@ -2447,39 +2226,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_ActivateZombieAbility">();
+		STATIC_CLASS_IMPL("BTT_ActivateZombieAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_ActivateZombieAbility")
 	}
 	static class UBTT_ActivateZombieAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_ActivateZombieAbility>();
 	}
 };
-static_assert(alignof(UBTT_ActivateZombieAbility) == 0x000008, "Wrong alignment on UBTT_ActivateZombieAbility");
-static_assert(sizeof(UBTT_ActivateZombieAbility) == 0x0000A8, "Wrong size on UBTT_ActivateZombieAbility");
-static_assert(offsetof(UBTT_ActivateZombieAbility, AbilityID) == 0x000078, "Member 'UBTT_ActivateZombieAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, bNeedToken) == 0x00007C, "Member 'UBTT_ActivateZombieAbility::bNeedToken' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, TokenPoolName) == 0x000080, "Member 'UBTT_ActivateZombieAbility::TokenPoolName' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, TokenLimit) == 0x000090, "Member 'UBTT_ActivateZombieAbility::TokenLimit' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, TokenLifetime) == 0x000094, "Member 'UBTT_ActivateZombieAbility::TokenLifetime' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, bTreatMissingTokenAsSuccess) == 0x000098, "Member 'UBTT_ActivateZombieAbility::bTreatMissingTokenAsSuccess' has a wrong offset!");
-static_assert(offsetof(UBTT_ActivateZombieAbility, AIOwner) == 0x0000A0, "Member 'UBTT_ActivateZombieAbility::AIOwner' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_ActivateZombieAbility;
 
 // Class Activity_10130.BuffAbility_ChainLightning
-// 0x0170 (0x1BA0 - 0x1A30)
+// 0x0178 (0x1BC0 - 0x1A48)
 class alignas(0x10) UBuffAbility_ChainLightning : public UBuffAbility_CommonCardEffect
 {
 public:
-	uint8                                         Pad_1A30[0x20];                                    // 0x1A30(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, int32>                            SplashChainCoutner;                                // 0x1A50(0x0050)(Protected, NativeAccessSpecifierProtected)
-	struct FGameplayTagContainer                  SpecialTags;                                       // 0x1AA0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         SplashScopeOffset;                                 // 0x1B08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SplashScopeID;                                     // 0x1B0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  SkipSplashTags;                                    // 0x1B10(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         SplashScopeNum;                                    // 0x1B78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SplashScopeNumAddPerStack;                         // 0x1B7C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxSplashScopeNum;                                 // 0x1B80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSpawnChainOncePerFrame;                           // 0x1B84(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B85[0x1B];                                    // 0x1B85(0x001B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A48[0x28];                                    // 0x1A48(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            SplashChainCoutner;                                // 0x1A70(0x0050)(Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  SpecialTags;                                       // 0x1AC0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         SplashScopeOffset;                                 // 0x1B28(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SplashScopeID;                                     // 0x1B2C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SkipSplashTags;                                    // 0x1B30(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         SplashScopeNum;                                    // 0x1B98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SplashScopeNumAddPerStack;                         // 0x1B9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxSplashScopeNum;                                 // 0x1BA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpawnChainOncePerFrame;                           // 0x1BA4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1BA5[0x1B];                                    // 0x1BA5(0x001B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientSpawnSplashScope(const struct FVector& Location, class AActor* AttachTgt);
@@ -2492,51 +2267,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_ChainLightning">();
+		STATIC_CLASS_IMPL("BuffAbility_ChainLightning")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_ChainLightning")
 	}
 	static class UBuffAbility_ChainLightning* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_ChainLightning>();
 	}
 };
-static_assert(alignof(UBuffAbility_ChainLightning) == 0x000010, "Wrong alignment on UBuffAbility_ChainLightning");
-static_assert(sizeof(UBuffAbility_ChainLightning) == 0x001BA0, "Wrong size on UBuffAbility_ChainLightning");
-static_assert(offsetof(UBuffAbility_ChainLightning, SplashChainCoutner) == 0x001A50, "Member 'UBuffAbility_ChainLightning::SplashChainCoutner' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SpecialTags) == 0x001AA0, "Member 'UBuffAbility_ChainLightning::SpecialTags' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SplashScopeOffset) == 0x001B08, "Member 'UBuffAbility_ChainLightning::SplashScopeOffset' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SplashScopeID) == 0x001B0C, "Member 'UBuffAbility_ChainLightning::SplashScopeID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SkipSplashTags) == 0x001B10, "Member 'UBuffAbility_ChainLightning::SkipSplashTags' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SplashScopeNum) == 0x001B78, "Member 'UBuffAbility_ChainLightning::SplashScopeNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, SplashScopeNumAddPerStack) == 0x001B7C, "Member 'UBuffAbility_ChainLightning::SplashScopeNumAddPerStack' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, MaxSplashScopeNum) == 0x001B80, "Member 'UBuffAbility_ChainLightning::MaxSplashScopeNum' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_ChainLightning, bSpawnChainOncePerFrame) == 0x001B84, "Member 'UBuffAbility_ChainLightning::bSpawnChainOncePerFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_ChainLightning;
 
 // Class Activity_10130.TraceComponent_10000002
-// 0x0010 (0x2210 - 0x2200)
+// 0x0010 (0x2610 - 0x2600)
 class UTraceComponent_10000002 final : public UMarvelAgentTraceComponent
 {
 public:
-	class AActor*                                 AttachTarget;                                      // 0x2200(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChainID;                                           // 0x2208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_220C[0x4];                                     // 0x220C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AActor*                                 AttachTarget;                                      // 0x25F8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChainID;                                           // 0x2600(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2604[0xC];                                     // 0x2604(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TraceComponent_10000002">();
+		STATIC_CLASS_IMPL("TraceComponent_10000002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_10000002")
 	}
 	static class UTraceComponent_10000002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_10000002>();
 	}
 };
-static_assert(alignof(UTraceComponent_10000002) == 0x000010, "Wrong alignment on UTraceComponent_10000002");
-static_assert(sizeof(UTraceComponent_10000002) == 0x002210, "Wrong size on UTraceComponent_10000002");
-static_assert(offsetof(UTraceComponent_10000002, AttachTarget) == 0x002200, "Member 'UTraceComponent_10000002::AttachTarget' has a wrong offset!");
-static_assert(offsetof(UTraceComponent_10000002, ChainID) == 0x002208, "Member 'UTraceComponent_10000002::ChainID' has a wrong offset!");
+DUMPER7_ASSERTS_UTraceComponent_10000002;
 
 // Class Activity_10130.EffectiveComponent_10000002
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UEffectiveComponent_10000002 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -2545,33 +2315,36 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectiveComponent_10000002">();
+		STATIC_CLASS_IMPL("EffectiveComponent_10000002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_10000002")
 	}
 	static class UEffectiveComponent_10000002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_10000002>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_10000002) == 0x000010, "Wrong alignment on UEffectiveComponent_10000002");
-static_assert(sizeof(UEffectiveComponent_10000002) == 0x001C70, "Wrong size on UEffectiveComponent_10000002");
+DUMPER7_ASSERTS_UEffectiveComponent_10000002;
 
 // Class Activity_10130.BuffAbility_HealthModifier
-// 0x0188 (0x1BB8 - 0x1A30)
+// 0x0188 (0x1BD0 - 0x1A48)
 class UBuffAbility_HealthModifier : public UBuffAbility_CommonCardEffect
 {
 public:
-	bool                                          bNormalMode;                                       // 0x1A30(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A31[0x3];                                     // 0x1A31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBuffAbility_HealthModifierInfo        NormalModInfo;                                     // 0x1A34(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bTagMode;                                          // 0x1A3C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bNewVersion;                                       // 0x1A3D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A3E[0x2];                                     // 0x1A3E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo> TagAddModInfoMap;              // 0x1A40(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo> TagRemoveModInfoMap;           // 0x1A90(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo_PvE> TagModInfoMap;             // 0x1AE0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ListenTagList;                                     // 0x1B30(0x0068)(Transient, NativeAccessSpecifierPrivate)
-	TDelegate<void(const struct FGameplayTag& InTag, bool bExists)> TagUpdateDelegate;               // 0x1B98(0x0014)(ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BAC[0xC];                                     // 0x1BAC(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bNormalMode;                                       // 0x1A48(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A49[0x3];                                     // 0x1A49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBuffAbility_HealthModifierInfo        NormalModInfo;                                     // 0x1A4C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bTagMode;                                          // 0x1A54(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNewVersion;                                       // 0x1A55(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A56[0x2];                                     // 0x1A56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo> TagAddModInfoMap;              // 0x1A58(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo> TagRemoveModInfoMap;           // 0x1AA8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, struct FBuffAbility_HealthModifierInfo_PvE> TagModInfoMap;             // 0x1AF8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ListenTagList;                                     // 0x1B48(0x0068)(Transient, NativeAccessSpecifierPrivate)
+	TDelegate<void(const struct FGameplayTag& InTag, bool bExists)> TagUpdateDelegate;               // 0x1BB0(0x0014)(ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BC4[0xC];                                     // 0x1BC4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnAttributeChanged(class AMarvelBaseCharacter* Value);
@@ -2580,32 +2353,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_HealthModifier">();
+		STATIC_CLASS_IMPL("BuffAbility_HealthModifier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_HealthModifier")
 	}
 	static class UBuffAbility_HealthModifier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_HealthModifier>();
 	}
 };
-static_assert(alignof(UBuffAbility_HealthModifier) == 0x000008, "Wrong alignment on UBuffAbility_HealthModifier");
-static_assert(sizeof(UBuffAbility_HealthModifier) == 0x001BB8, "Wrong size on UBuffAbility_HealthModifier");
-static_assert(offsetof(UBuffAbility_HealthModifier, bNormalMode) == 0x001A30, "Member 'UBuffAbility_HealthModifier::bNormalMode' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, NormalModInfo) == 0x001A34, "Member 'UBuffAbility_HealthModifier::NormalModInfo' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, bTagMode) == 0x001A3C, "Member 'UBuffAbility_HealthModifier::bTagMode' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, bNewVersion) == 0x001A3D, "Member 'UBuffAbility_HealthModifier::bNewVersion' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, TagAddModInfoMap) == 0x001A40, "Member 'UBuffAbility_HealthModifier::TagAddModInfoMap' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, TagRemoveModInfoMap) == 0x001A90, "Member 'UBuffAbility_HealthModifier::TagRemoveModInfoMap' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, TagModInfoMap) == 0x001AE0, "Member 'UBuffAbility_HealthModifier::TagModInfoMap' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, ListenTagList) == 0x001B30, "Member 'UBuffAbility_HealthModifier::ListenTagList' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_HealthModifier, TagUpdateDelegate) == 0x001B98, "Member 'UBuffAbility_HealthModifier::TagUpdateDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_HealthModifier;
 
 // Class Activity_10130.BuffAbility_AccumulateProb
-// 0x0018 (0x1A48 - 0x1A30)
+// 0x0018 (0x1A60 - 0x1A48)
 class UBuffAbility_AccumulateProb final : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         ProbGroupID;                                       // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A34[0x14];                                    // 0x1A34(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ProbGroupID;                                       // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A4C[0x14];                                    // 0x1A4C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetTotalProbability();
@@ -2614,16 +2381,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuffAbility_AccumulateProb">();
+		STATIC_CLASS_IMPL("BuffAbility_AccumulateProb")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_AccumulateProb")
 	}
 	static class UBuffAbility_AccumulateProb* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_AccumulateProb>();
 	}
 };
-static_assert(alignof(UBuffAbility_AccumulateProb) == 0x000008, "Wrong alignment on UBuffAbility_AccumulateProb");
-static_assert(sizeof(UBuffAbility_AccumulateProb) == 0x001A48, "Wrong size on UBuffAbility_AccumulateProb");
-static_assert(offsetof(UBuffAbility_AccumulateProb, ProbGroupID) == 0x001A30, "Member 'UBuffAbility_AccumulateProb::ProbGroupID' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_AccumulateProb;
 
 // Class Activity_10130.HalloweenModeRuleHeroItem
 // 0x0098 (0x02B8 - 0x0220)
@@ -2658,32 +2427,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HalloweenModeRuleHeroItem">();
+		STATIC_CLASS_IMPL("HalloweenModeRuleHeroItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HalloweenModeRuleHeroItem")
 	}
 	static class UHalloweenModeRuleHeroItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHalloweenModeRuleHeroItem>();
 	}
 };
-static_assert(alignof(UHalloweenModeRuleHeroItem) == 0x000008, "Wrong alignment on UHalloweenModeRuleHeroItem");
-static_assert(sizeof(UHalloweenModeRuleHeroItem) == 0x0002B8, "Wrong size on UHalloweenModeRuleHeroItem");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bEnableOcclusionOpt) == 0x000220, "Member 'UHalloweenModeRuleHeroItem::bEnableOcclusionOpt' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bIgnoreOcclusionAfterAppear) == 0x000221, "Member 'UHalloweenModeRuleHeroItem::bIgnoreOcclusionAfterAppear' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, OcclusionInterval) == 0x000224, "Member 'UHalloweenModeRuleHeroItem::OcclusionInterval' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bSharedOcclusionOpt) == 0x000228, "Member 'UHalloweenModeRuleHeroItem::bSharedOcclusionOpt' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, OcclusionGroupRadius) == 0x00022C, "Member 'UHalloweenModeRuleHeroItem::OcclusionGroupRadius' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bCloseOcclusionScope_Hard) == 0x000230, "Member 'UHalloweenModeRuleHeroItem::bCloseOcclusionScope_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, NeedOcclusionScope_Hard) == 0x000238, "Member 'UHalloweenModeRuleHeroItem::NeedOcclusionScope_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, IgnoreClientHit_Projectile) == 0x000248, "Member 'UHalloweenModeRuleHeroItem::IgnoreClientHit_Projectile' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bCloseSimulateProjectileCollision_Hard) == 0x000258, "Member 'UHalloweenModeRuleHeroItem::bCloseSimulateProjectileCollision_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, OpenSimulateProjectileCollision_Hard) == 0x000260, "Member 'UHalloweenModeRuleHeroItem::OpenSimulateProjectileCollision_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, ProjectileStepMaxCount_Hard) == 0x000270, "Member 'UHalloweenModeRuleHeroItem::ProjectileStepMaxCount_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, ProjectileStepOpt_Hard) == 0x000278, "Member 'UHalloweenModeRuleHeroItem::ProjectileStepOpt_Hard' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bIgnoreClientRPC_Scope) == 0x000288, "Member 'UHalloweenModeRuleHeroItem::bIgnoreClientRPC_Scope' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, OpenClientRPC_Scope) == 0x000290, "Member 'UHalloweenModeRuleHeroItem::OpenClientRPC_Scope' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bTraceRuleFilterOpt) == 0x0002A0, "Member 'UHalloweenModeRuleHeroItem::bTraceRuleFilterOpt' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, bTraceTagFilterOpt) == 0x0002A1, "Member 'UHalloweenModeRuleHeroItem::bTraceTagFilterOpt' has a wrong offset!");
-static_assert(offsetof(UHalloweenModeRuleHeroItem, NoRejectActivateKeyAbility) == 0x0002A8, "Member 'UHalloweenModeRuleHeroItem::NoRejectActivateKeyAbility' has a wrong offset!");
+DUMPER7_ASSERTS_UHalloweenModeRuleHeroItem;
 
 // Class Activity_10130.HalloweenRuleComponent
 // 0x00E8 (0x01F0 - 0x0108)
@@ -2699,15 +2454,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HalloweenRuleComponent">();
+		STATIC_CLASS_IMPL("HalloweenRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HalloweenRuleComponent")
 	}
 	static class UHalloweenRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHalloweenRuleComponent>();
 	}
 };
-static_assert(alignof(UHalloweenRuleComponent) == 0x000008, "Wrong alignment on UHalloweenRuleComponent");
-static_assert(sizeof(UHalloweenRuleComponent) == 0x0001F0, "Wrong size on UHalloweenRuleComponent");
+DUMPER7_ASSERTS_UHalloweenRuleComponent;
 
 // Class Activity_10130.MarvelMassAgentComponent
 // 0x0030 (0x0218 - 0x01E8)
@@ -2721,16 +2479,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassAgentComponent">();
+		STATIC_CLASS_IMPL("MarvelMassAgentComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassAgentComponent")
 	}
 	static class UMarvelMassAgentComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMassAgentComponent>();
 	}
 };
-static_assert(alignof(UMarvelMassAgentComponent) == 0x000008, "Wrong alignment on UMarvelMassAgentComponent");
-static_assert(sizeof(UMarvelMassAgentComponent) == 0x000218, "Wrong size on UMarvelMassAgentComponent");
-static_assert(offsetof(UMarvelMassAgentComponent, RandomEntityConfigs) == 0x000200, "Member 'UMarvelMassAgentComponent::RandomEntityConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelMassAgentComponent;
 
 // Class Activity_10130.MarvelMassZombieReplicator
 // 0x0000 (0x0030 - 0x0030)
@@ -2739,15 +2499,18 @@ class UMarvelMassZombieReplicator final : public UMassReplicatorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassZombieReplicator">();
+		STATIC_CLASS_IMPL("MarvelMassZombieReplicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassZombieReplicator")
 	}
 	static class UMarvelMassZombieReplicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMassZombieReplicator>();
 	}
 };
-static_assert(alignof(UMarvelMassZombieReplicator) == 0x000008, "Wrong alignment on UMarvelMassZombieReplicator");
-static_assert(sizeof(UMarvelMassZombieReplicator) == 0x000030, "Wrong size on UMarvelMassZombieReplicator");
+DUMPER7_ASSERTS_UMarvelMassZombieReplicator;
 
 // Class Activity_10130.MarvelMassAgentPostReplicationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -2759,26 +2522,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassAgentPostReplicationProcessor">();
+		STATIC_CLASS_IMPL("MarvelMassAgentPostReplicationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassAgentPostReplicationProcessor")
 	}
 	static class UMarvelMassAgentPostReplicationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMassAgentPostReplicationProcessor>();
 	}
 };
-static_assert(alignof(UMarvelMassAgentPostReplicationProcessor) == 0x000008, "Wrong alignment on UMarvelMassAgentPostReplicationProcessor");
-static_assert(sizeof(UMarvelMassAgentPostReplicationProcessor) == 0x000370, "Wrong size on UMarvelMassAgentPostReplicationProcessor");
+DUMPER7_ASSERTS_UMarvelMassAgentPostReplicationProcessor;
 
 // Class Activity_10130.MarvelMassZombieReplicationManager
-// 0x0038 (0x0070 - 0x0038)
+// 0x0038 (0x0078 - 0x0040)
 class UMarvelMassZombieReplicationManager final : public UWorldSubsystem
 {
 public:
-	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMassReplicationSubsystem*              MassRepSubsystem;                                  // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMassEntityHandle>              PendingRepMovementEntities;                        // 0x0048(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class AMarvelMassReplicateHelper*>     MassReplicateHelpers;                              // 0x0058(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class AMarvelMassReplicateReceiver*           MassReplicateReceiver;                             // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMassReplicationSubsystem*              MassRepSubsystem;                                  // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMassEntityHandle>              PendingRepMovementEntities;                        // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class AMarvelMassReplicateHelper*>     MassReplicateHelpers;                              // 0x0060(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	class AMarvelMassReplicateReceiver*           MassReplicateReceiver;                             // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UMarvelMassZombieReplicationManager* Get(const class UObject* WCO);
@@ -2791,20 +2557,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassZombieReplicationManager">();
+		STATIC_CLASS_IMPL("MarvelMassZombieReplicationManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassZombieReplicationManager")
 	}
 	static class UMarvelMassZombieReplicationManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMassZombieReplicationManager>();
 	}
 };
-static_assert(alignof(UMarvelMassZombieReplicationManager) == 0x000008, "Wrong alignment on UMarvelMassZombieReplicationManager");
-static_assert(sizeof(UMarvelMassZombieReplicationManager) == 0x000070, "Wrong size on UMarvelMassZombieReplicationManager");
-static_assert(offsetof(UMarvelMassZombieReplicationManager, AgentSubsystem) == 0x000038, "Member 'UMarvelMassZombieReplicationManager::AgentSubsystem' has a wrong offset!");
-static_assert(offsetof(UMarvelMassZombieReplicationManager, MassRepSubsystem) == 0x000040, "Member 'UMarvelMassZombieReplicationManager::MassRepSubsystem' has a wrong offset!");
-static_assert(offsetof(UMarvelMassZombieReplicationManager, PendingRepMovementEntities) == 0x000048, "Member 'UMarvelMassZombieReplicationManager::PendingRepMovementEntities' has a wrong offset!");
-static_assert(offsetof(UMarvelMassZombieReplicationManager, MassReplicateHelpers) == 0x000058, "Member 'UMarvelMassZombieReplicationManager::MassReplicateHelpers' has a wrong offset!");
-static_assert(offsetof(UMarvelMassZombieReplicationManager, MassReplicateReceiver) == 0x000068, "Member 'UMarvelMassZombieReplicationManager::MassReplicateReceiver' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelMassZombieReplicationManager;
 
 // Class Activity_10130.MarvelMassAgentCharMovementUpdateProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -2816,15 +2580,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassAgentCharMovementUpdateProcessor">();
+		STATIC_CLASS_IMPL("MarvelMassAgentCharMovementUpdateProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassAgentCharMovementUpdateProcessor")
 	}
 	static class UMarvelMassAgentCharMovementUpdateProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMassAgentCharMovementUpdateProcessor>();
 	}
 };
-static_assert(alignof(UMarvelMassAgentCharMovementUpdateProcessor) == 0x000008, "Wrong alignment on UMarvelMassAgentCharMovementUpdateProcessor");
-static_assert(sizeof(UMarvelMassAgentCharMovementUpdateProcessor) == 0x000370, "Wrong size on UMarvelMassAgentCharMovementUpdateProcessor");
+DUMPER7_ASSERTS_UMarvelMassAgentCharMovementUpdateProcessor;
 
 // Class Activity_10130.MarvelMassReplicateReceiver
 // 0x0000 (0x06E0 - 0x06E0)
@@ -2833,15 +2600,18 @@ class AMarvelMassReplicateReceiver final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassReplicateReceiver">();
+		STATIC_CLASS_IMPL("MarvelMassReplicateReceiver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassReplicateReceiver")
 	}
 	static class AMarvelMassReplicateReceiver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelMassReplicateReceiver>();
 	}
 };
-static_assert(alignof(AMarvelMassReplicateReceiver) == 0x000010, "Wrong alignment on AMarvelMassReplicateReceiver");
-static_assert(sizeof(AMarvelMassReplicateReceiver) == 0x0006E0, "Wrong size on AMarvelMassReplicateReceiver");
+DUMPER7_ASSERTS_AMarvelMassReplicateReceiver;
 
 // Class Activity_10130.MarvelMassReplicateHelper
 // 0x0000 (0x06E0 - 0x06E0)
@@ -2850,15 +2620,18 @@ class AMarvelMassReplicateHelper final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassReplicateHelper">();
+		STATIC_CLASS_IMPL("MarvelMassReplicateHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassReplicateHelper")
 	}
 	static class AMarvelMassReplicateHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelMassReplicateHelper>();
 	}
 };
-static_assert(alignof(AMarvelMassReplicateHelper) == 0x000010, "Wrong alignment on AMarvelMassReplicateHelper");
-static_assert(sizeof(AMarvelMassReplicateHelper) == 0x0006E0, "Wrong size on AMarvelMassReplicateHelper");
+DUMPER7_ASSERTS_AMarvelMassReplicateHelper;
 
 // Class Activity_10130.MarvelAgentRepMovementTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -2867,15 +2640,18 @@ class UMarvelAgentRepMovementTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAgentRepMovementTrait">();
+		STATIC_CLASS_IMPL("MarvelAgentRepMovementTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAgentRepMovementTrait")
 	}
 	static class UMarvelAgentRepMovementTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAgentRepMovementTrait>();
 	}
 };
-static_assert(alignof(UMarvelAgentRepMovementTrait) == 0x000008, "Wrong alignment on UMarvelAgentRepMovementTrait");
-static_assert(sizeof(UMarvelAgentRepMovementTrait) == 0x000030, "Wrong size on UMarvelAgentRepMovementTrait");
+DUMPER7_ASSERTS_UMarvelAgentRepMovementTrait;
 
 // Class Activity_10130.MassMarvelZombieClientBubbleInfo
 // 0x0270 (0x0960 - 0x06F0)
@@ -2888,103 +2664,105 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMarvelZombieClientBubbleInfo">();
+		STATIC_CLASS_IMPL("MassMarvelZombieClientBubbleInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMarvelZombieClientBubbleInfo")
 	}
 	static class AMassMarvelZombieClientBubbleInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassMarvelZombieClientBubbleInfo>();
 	}
 };
-static_assert(alignof(AMassMarvelZombieClientBubbleInfo) == 0x000010, "Wrong alignment on AMassMarvelZombieClientBubbleInfo");
-static_assert(sizeof(AMassMarvelZombieClientBubbleInfo) == 0x000960, "Wrong size on AMassMarvelZombieClientBubbleInfo");
-static_assert(offsetof(AMassMarvelZombieClientBubbleInfo, ZombieSerializer) == 0x0006F0, "Member 'AMassMarvelZombieClientBubbleInfo::ZombieSerializer' has a wrong offset!");
+DUMPER7_ASSERTS_AMassMarvelZombieClientBubbleInfo;
 
 // Class Activity_10130.MarvelZombie
-// 0x0490 (0x2630 - 0x21A0)
+// 0x0490 (0x2740 - 0x22B0)
 class AMarvelZombie : public AMarvelBaseCharacter
 {
 public:
-	TArray<class UCueCombineNiagaraComponent*>    CachedCombineNiagaraComponents;                    // 0x21A0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bAllowAllyPenetration;                             // 0x21B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_21B1[0x7];                                     // 0x21B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  AbilityDoNotDisableMoveWithTag;                    // 0x21B8(0x0068)(Edit, Protected, NativeAccessSpecifierProtected)
-	float                                         EntryFallingTime;                                  // 0x2220(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         NoFallingLandedDuration;                           // 0x2224(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LandedDuration;                                    // 0x2228(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RandomLandedDuration;                              // 0x222C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LandedGetupDuration;                               // 0x2230(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bFallStopMove;                                     // 0x2234(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2235[0x3];                                     // 0x2235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LandedBuff;                                        // 0x2238(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAllowFallingState;                                // 0x223C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_223D[0x64];                                    // 0x223D(0x0064)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bEnableHealthBar;                                  // 0x22A1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDisablePlayerName;                                // 0x22A2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_22A3[0x1];                                     // 0x22A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayDestroyTime;                                  // 0x22A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_22A8[0x18];                                    // 0x22A8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DeathDecalDelay;                                   // 0x22C0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_22C4[0x1C];                                    // 0x22C4(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, TSubclassOf<class UZombieAbility>> ZombieAbilities;                                  // 0x22E0(0x0050)(Edit, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	bool                                          bCloseResolvePenetration;                          // 0x2330(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCreateReactivePropertyComponentOnDedicatedServer; // 0x2331(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCreateReactivePropertyComponentOnClient;          // 0x2332(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2333[0x5];                                     // 0x2333(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelMassAgentComponent*              MassAgentComponent;                                // 0x2338(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USkeletalMeshComponent*                 Mesh;                                              // 0x2340(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UPrimitiveComponent*>            CacheCollisionComponents;                          // 0x2348(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<class USceneComponent*>                AttachToSkelotComponents;                          // 0x2358(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<class UPrimitiveComponent*>            DeactivateOnDeathComponents;                       // 0x2368(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UMarvelZombieManager*                   ZombieManager;                                     // 0x2378(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bZombieMovementEnable;                             // 0x2380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FZombieAbilityAnim                     SkelotAnimState;                                   // 0x2381(0x0002)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2383[0x1];                                     // 0x2383(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   AbilityMontageSectionName;                         // 0x2384(0x000C)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EZombieFallState                              FallState;                                         // 0x2390(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2391[0x3];                                     // 0x2391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ZombieID;                                          // 0x2394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         WaveIndex;                                         // 0x2398(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_239C[0x13C];                                   // 0x239C(0x013C)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class UZombieAbility*>            Abilities;                                         // 0x24D8(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TArray<class UZombieAbility*>                 ActivatableAbilities;                              // 0x2528(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	class UMarvelGameplayAbility*                 CommonAbility;                                     // 0x2538(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnablePool;                                       // 0x2540(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableDamageMerged;                               // 0x2541(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bInZombiePool;                                     // 0x2542(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2543[0x1];                                     // 0x2543(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bDebugDrawEnable;                                  // 0x2544(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2545[0x3];                                     // 0x2545(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HitRecoveryTime;                                   // 0x2548(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         TriggerBeHitAnimInterval;                          // 0x254C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<int32>                                 BeHitBuffIDs;                                      // 0x2550(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	bool                                          bStopMoveBeHit;                                    // 0x2560(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bSlowdownBeHit;                                    // 0x2561(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2562[0x2];                                     // 0x2562(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SlowdownValue;                                     // 0x2564(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bPlayHitEffect;                                    // 0x2568(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2569[0x18];                                    // 0x2569(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bLandedLimitMove;                                  // 0x2581(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2582[0x1E];                                    // 0x2582(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_KillPlayer;                                // 0x25A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostSoundCallback; // 0x25A8(0x0014)(ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDelayStopMovement;                                // 0x25BC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_25BD[0x3];                                     // 0x25BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayStopMovementTime;                             // 0x25C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_25C4[0x4];                                     // 0x25C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DeathVelocity;                                     // 0x25C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bPlayDeathDecal;                                   // 0x25E0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_25E1[0x3];                                     // 0x25E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DeathDissolveDelay;                                // 0x25E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_25E8[0x20];                                    // 0x25E8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NoPS_UID;                                          // 0x2608(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NoPS_TeamID;                                       // 0x260C(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2610[0x1];                                     // 0x2610(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bDisableClientCharMoveTick;                        // 0x2611(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSkeletoVisible;                                   // 0x2612(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2613[0x5];                                     // 0x2613(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class AActor* Value)> OnReleaseToPoolDelegate;                     // 0x2618(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-	float                                         LastTimeReuseFromPool;                             // 0x2628(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_262C[0x4];                                     // 0x262C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class UCueCombineNiagaraComponent*>    CachedCombineNiagaraComponents;                    // 0x22B0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bAllowAllyPenetration;                             // 0x22C0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_22C1[0x7];                                     // 0x22C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  AbilityDoNotDisableMoveWithTag;                    // 0x22C8(0x0068)(Edit, Protected, NativeAccessSpecifierProtected)
+	float                                         EntryFallingTime;                                  // 0x2330(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         NoFallingLandedDuration;                           // 0x2334(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LandedDuration;                                    // 0x2338(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RandomLandedDuration;                              // 0x233C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LandedGetupDuration;                               // 0x2340(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bFallStopMove;                                     // 0x2344(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2345[0x3];                                     // 0x2345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LandedBuff;                                        // 0x2348(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAllowFallingState;                                // 0x234C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_234D[0x64];                                    // 0x234D(0x0064)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableHealthBar;                                  // 0x23B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDisablePlayerName;                                // 0x23B2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_23B3[0x1];                                     // 0x23B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayDestroyTime;                                  // 0x23B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_23B8[0x18];                                    // 0x23B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DeathDecalDelay;                                   // 0x23D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_23D4[0x1C];                                    // 0x23D4(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, TSubclassOf<class UZombieAbility>> ZombieAbilities;                                  // 0x23F0(0x0050)(Edit, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	bool                                          bCloseResolvePenetration;                          // 0x2440(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCreateReactivePropertyComponentOnDedicatedServer; // 0x2441(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCreateReactivePropertyComponentOnClient;          // 0x2442(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2443[0x5];                                     // 0x2443(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelMassAgentComponent*              MassAgentComponent;                                // 0x2448(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USkeletalMeshComponent*                 Mesh;                                              // 0x2450(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UPrimitiveComponent*>            CacheCollisionComponents;                          // 0x2458(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<class USceneComponent*>                AttachToSkelotComponents;                          // 0x2468(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<class UPrimitiveComponent*>            DeactivateOnDeathComponents;                       // 0x2478(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UMarvelZombieManager*                   ZombieManager;                                     // 0x2488(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bZombieMovementEnable;                             // 0x2490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FZombieAbilityAnim                     SkelotAnimState;                                   // 0x2491(0x0002)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2493[0x1];                                     // 0x2493(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   AbilityMontageSectionName;                         // 0x2494(0x000C)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EZombieFallState                              FallState;                                         // 0x24A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_24A1[0x3];                                     // 0x24A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ZombieID;                                          // 0x24A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         WaveIndex;                                         // 0x24A8(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_24AC[0x13C];                                   // 0x24AC(0x013C)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, class UZombieAbility*>            Abilities;                                         // 0x25E8(0x0050)(Protected, NativeAccessSpecifierProtected)
+	TArray<class UZombieAbility*>                 ActivatableAbilities;                              // 0x2638(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	class UMarvelGameplayAbility*                 CommonAbility;                                     // 0x2648(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnablePool;                                       // 0x2650(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableDamageMerged;                               // 0x2651(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInZombiePool;                                     // 0x2652(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2653[0x1];                                     // 0x2653(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bDebugDrawEnable;                                  // 0x2654(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2655[0x3];                                     // 0x2655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HitRecoveryTime;                                   // 0x2658(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         TriggerBeHitAnimInterval;                          // 0x265C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<int32>                                 BeHitBuffIDs;                                      // 0x2660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	bool                                          bStopMoveBeHit;                                    // 0x2670(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bSlowdownBeHit;                                    // 0x2671(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2672[0x2];                                     // 0x2672(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SlowdownValue;                                     // 0x2674(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bPlayHitEffect;                                    // 0x2678(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2679[0x18];                                    // 0x2679(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bLandedLimitMove;                                  // 0x2691(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2692[0x1E];                                    // 0x2692(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_KillPlayer;                                // 0x26B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostSoundCallback; // 0x26B8(0x0014)(ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDelayStopMovement;                                // 0x26CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26CD[0x3];                                     // 0x26CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayStopMovementTime;                             // 0x26D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26D4[0x4];                                     // 0x26D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                DeathVelocity;                                     // 0x26D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bPlayDeathDecal;                                   // 0x26F0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26F1[0x3];                                     // 0x26F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DeathDissolveDelay;                                // 0x26F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26F8[0x20];                                    // 0x26F8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NoPS_UID;                                          // 0x2718(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NoPS_TeamID;                                       // 0x271C(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2720[0x1];                                     // 0x2720(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bDisableClientCharMoveTick;                        // 0x2721(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSkeletoVisible;                                   // 0x2722(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2723[0x5];                                     // 0x2723(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class AActor* Value)> OnReleaseToPoolDelegate;                     // 0x2728(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
+	float                                         LastTimeReuseFromPool;                             // 0x2738(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_273C[0x4];                                     // 0x273C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void SetSpawningDifficulty(const EHalloweenDifficulty InDifficulty);
@@ -3038,83 +2816,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelZombie">();
+		STATIC_CLASS_IMPL("MarvelZombie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelZombie")
 	}
 	static class AMarvelZombie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelZombie>();
 	}
 };
-static_assert(alignof(AMarvelZombie) == 0x000010, "Wrong alignment on AMarvelZombie");
-static_assert(sizeof(AMarvelZombie) == 0x002630, "Wrong size on AMarvelZombie");
-static_assert(offsetof(AMarvelZombie, CachedCombineNiagaraComponents) == 0x0021A0, "Member 'AMarvelZombie::CachedCombineNiagaraComponents' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bAllowAllyPenetration) == 0x0021B0, "Member 'AMarvelZombie::bAllowAllyPenetration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, AbilityDoNotDisableMoveWithTag) == 0x0021B8, "Member 'AMarvelZombie::AbilityDoNotDisableMoveWithTag' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, EntryFallingTime) == 0x002220, "Member 'AMarvelZombie::EntryFallingTime' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, NoFallingLandedDuration) == 0x002224, "Member 'AMarvelZombie::NoFallingLandedDuration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, LandedDuration) == 0x002228, "Member 'AMarvelZombie::LandedDuration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, RandomLandedDuration) == 0x00222C, "Member 'AMarvelZombie::RandomLandedDuration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, LandedGetupDuration) == 0x002230, "Member 'AMarvelZombie::LandedGetupDuration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bFallStopMove) == 0x002234, "Member 'AMarvelZombie::bFallStopMove' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, LandedBuff) == 0x002238, "Member 'AMarvelZombie::LandedBuff' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bAllowFallingState) == 0x00223C, "Member 'AMarvelZombie::bAllowFallingState' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bEnableHealthBar) == 0x0022A1, "Member 'AMarvelZombie::bEnableHealthBar' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bDisablePlayerName) == 0x0022A2, "Member 'AMarvelZombie::bDisablePlayerName' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DelayDestroyTime) == 0x0022A4, "Member 'AMarvelZombie::DelayDestroyTime' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DeathDecalDelay) == 0x0022C0, "Member 'AMarvelZombie::DeathDecalDelay' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, ZombieAbilities) == 0x0022E0, "Member 'AMarvelZombie::ZombieAbilities' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bCloseResolvePenetration) == 0x002330, "Member 'AMarvelZombie::bCloseResolvePenetration' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bCreateReactivePropertyComponentOnDedicatedServer) == 0x002331, "Member 'AMarvelZombie::bCreateReactivePropertyComponentOnDedicatedServer' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bCreateReactivePropertyComponentOnClient) == 0x002332, "Member 'AMarvelZombie::bCreateReactivePropertyComponentOnClient' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, MassAgentComponent) == 0x002338, "Member 'AMarvelZombie::MassAgentComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, Mesh) == 0x002340, "Member 'AMarvelZombie::Mesh' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, CacheCollisionComponents) == 0x002348, "Member 'AMarvelZombie::CacheCollisionComponents' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, AttachToSkelotComponents) == 0x002358, "Member 'AMarvelZombie::AttachToSkelotComponents' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DeactivateOnDeathComponents) == 0x002368, "Member 'AMarvelZombie::DeactivateOnDeathComponents' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, ZombieManager) == 0x002378, "Member 'AMarvelZombie::ZombieManager' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bZombieMovementEnable) == 0x002380, "Member 'AMarvelZombie::bZombieMovementEnable' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, SkelotAnimState) == 0x002381, "Member 'AMarvelZombie::SkelotAnimState' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, AbilityMontageSectionName) == 0x002384, "Member 'AMarvelZombie::AbilityMontageSectionName' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, FallState) == 0x002390, "Member 'AMarvelZombie::FallState' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, ZombieID) == 0x002394, "Member 'AMarvelZombie::ZombieID' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, WaveIndex) == 0x002398, "Member 'AMarvelZombie::WaveIndex' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, Abilities) == 0x0024D8, "Member 'AMarvelZombie::Abilities' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, ActivatableAbilities) == 0x002528, "Member 'AMarvelZombie::ActivatableAbilities' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, CommonAbility) == 0x002538, "Member 'AMarvelZombie::CommonAbility' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bEnablePool) == 0x002540, "Member 'AMarvelZombie::bEnablePool' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bEnableDamageMerged) == 0x002541, "Member 'AMarvelZombie::bEnableDamageMerged' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bInZombiePool) == 0x002542, "Member 'AMarvelZombie::bInZombiePool' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bDebugDrawEnable) == 0x002544, "Member 'AMarvelZombie::bDebugDrawEnable' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, HitRecoveryTime) == 0x002548, "Member 'AMarvelZombie::HitRecoveryTime' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, TriggerBeHitAnimInterval) == 0x00254C, "Member 'AMarvelZombie::TriggerBeHitAnimInterval' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, BeHitBuffIDs) == 0x002550, "Member 'AMarvelZombie::BeHitBuffIDs' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bStopMoveBeHit) == 0x002560, "Member 'AMarvelZombie::bStopMoveBeHit' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bSlowdownBeHit) == 0x002561, "Member 'AMarvelZombie::bSlowdownBeHit' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, SlowdownValue) == 0x002564, "Member 'AMarvelZombie::SlowdownValue' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bPlayHitEffect) == 0x002568, "Member 'AMarvelZombie::bPlayHitEffect' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bLandedLimitMove) == 0x002581, "Member 'AMarvelZombie::bLandedLimitMove' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, AkEvent_KillPlayer) == 0x0025A0, "Member 'AMarvelZombie::AkEvent_KillPlayer' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, PostSoundCallback) == 0x0025A8, "Member 'AMarvelZombie::PostSoundCallback' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bDelayStopMovement) == 0x0025BC, "Member 'AMarvelZombie::bDelayStopMovement' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DelayStopMovementTime) == 0x0025C0, "Member 'AMarvelZombie::DelayStopMovementTime' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DeathVelocity) == 0x0025C8, "Member 'AMarvelZombie::DeathVelocity' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bPlayDeathDecal) == 0x0025E0, "Member 'AMarvelZombie::bPlayDeathDecal' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, DeathDissolveDelay) == 0x0025E4, "Member 'AMarvelZombie::DeathDissolveDelay' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, NoPS_UID) == 0x002608, "Member 'AMarvelZombie::NoPS_UID' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, NoPS_TeamID) == 0x00260C, "Member 'AMarvelZombie::NoPS_TeamID' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bDisableClientCharMoveTick) == 0x002611, "Member 'AMarvelZombie::bDisableClientCharMoveTick' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, bSkeletoVisible) == 0x002612, "Member 'AMarvelZombie::bSkeletoVisible' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, OnReleaseToPoolDelegate) == 0x002618, "Member 'AMarvelZombie::OnReleaseToPoolDelegate' has a wrong offset!");
-static_assert(offsetof(AMarvelZombie, LastTimeReuseFromPool) == 0x002628, "Member 'AMarvelZombie::LastTimeReuseFromPool' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelZombie;
 
 // Class Activity_10130.MarvelMassReplicatedZombie
-// 0x0010 (0x2640 - 0x2630)
+// 0x0010 (0x2750 - 0x2740)
 class AMarvelMassReplicatedZombie final : public AMarvelZombie
 {
 public:
-	bool                                          bEnableServerMassLODCharMoveTick;                  // 0x2630(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bClientMassInPoolStatus;                           // 0x2631(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2632[0xE];                                     // 0x2632(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableServerMassLODCharMoveTick;                  // 0x2740(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bClientMassInPoolStatus;                           // 0x2741(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2742[0xE];                                     // 0x2742(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CheckClientMassInPoolStatusValid();
@@ -3123,53 +2845,93 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelMassReplicatedZombie">();
+		STATIC_CLASS_IMPL("MarvelMassReplicatedZombie")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMassReplicatedZombie")
 	}
 	static class AMarvelMassReplicatedZombie* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelMassReplicatedZombie>();
 	}
 };
-static_assert(alignof(AMarvelMassReplicatedZombie) == 0x000010, "Wrong alignment on AMarvelMassReplicatedZombie");
-static_assert(sizeof(AMarvelMassReplicatedZombie) == 0x002640, "Wrong size on AMarvelMassReplicatedZombie");
-static_assert(offsetof(AMarvelMassReplicatedZombie, bEnableServerMassLODCharMoveTick) == 0x002630, "Member 'AMarvelMassReplicatedZombie::bEnableServerMassLODCharMoveTick' has a wrong offset!");
-static_assert(offsetof(AMarvelMassReplicatedZombie, bClientMassInPoolStatus) == 0x002631, "Member 'AMarvelMassReplicatedZombie::bClientMassInPoolStatus' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelMassReplicatedZombie;
 
 // Class Activity_10130.MarvelZombieAbilitySystemCom
-// 0x0070 (0x7340 - 0x72D0)
+// 0x0070 (0x7510 - 0x74A0)
 class UMarvelZombieAbilitySystemCom final : public UMarvelAbilitySystemCom
 {
 public:
-	struct FGameplayTagContainer                  IgnoreRepCueTags;                                  // 0x72D0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7338[0x8];                                     // 0x7338(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  IgnoreRepCueTags;                                  // 0x74A0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7508[0x8];                                     // 0x7508(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelZombieAbilitySystemCom">();
+		STATIC_CLASS_IMPL("MarvelZombieAbilitySystemCom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelZombieAbilitySystemCom")
 	}
 	static class UMarvelZombieAbilitySystemCom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelZombieAbilitySystemCom>();
 	}
 };
-static_assert(alignof(UMarvelZombieAbilitySystemCom) == 0x000010, "Wrong alignment on UMarvelZombieAbilitySystemCom");
-static_assert(sizeof(UMarvelZombieAbilitySystemCom) == 0x007340, "Wrong size on UMarvelZombieAbilitySystemCom");
-static_assert(offsetof(UMarvelZombieAbilitySystemCom, IgnoreRepCueTags) == 0x0072D0, "Member 'UMarvelZombieAbilitySystemCom::IgnoreRepCueTags' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelZombieAbilitySystemCom;
+
+// Class Activity_10130.MarvelZombieAnimInstance
+// 0x0120 (0x0570 - 0x0450)
+class UMarvelZombieAnimInstance final : public UAnimInstance
+{
+public:
+	class USkelotAnimCollection*                  AnimCollectionConfig;                              // 0x0448(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHasInitAnimation;                                 // 0x0450(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FZombieAnimParam                       CurrentAnimParam;                                  // 0x0458(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class UAnimSequenceBase*>              AnimSequences;                                     // 0x0468(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	EZombieSkelotAnimState                        CachedAbilityAnimState;                            // 0x0478(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCurrentShouldUpperBody;                           // 0x0479(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_47A[0xF6];                                     // 0x047A(0x00F6)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void AbilityMontageJumpToSection(class FName SectionName);
+	bool IsInAbilityState(EZombieSkelotAnimState InAnimState);
+	void PlayAbilityMontage(EZombieSkelotAnimState InSkelotAnimState);
+	void PlayHitMontage(EZombieBeHittingState InBeHittingState);
+	void StopAbilityMontage();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelZombieAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelZombieAnimInstance")
+	}
+	static class UMarvelZombieAnimInstance* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelZombieAnimInstance>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelZombieAnimInstance;
 
 // Class Activity_10130.MarvelZombieManager
-// 0x0118 (0x0160 - 0x0048)
+// 0x0118 (0x0168 - 0x0050)
 class UMarvelZombieManager final : public UTickableWorldSubsystem
 {
 public:
-	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_50[0x38];                                      // 0x0050(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	class AZombieAbilitySourceCharacter*          AbilitySourceCharacter;                            // 0x0088(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSet<class AMarvelZombie*>                    AliveZombies;                                      // 0x0090(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelZombie*>                  ZombiesNeedUpdatePhysicsTransform;                 // 0x00E0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class UPrimitiveComponent*>            PrimitivesNeedUpdatePhysicsTransform;              // 0x00F0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_100[0x10];                                     // 0x0100(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FMarvelZombieContainer>    CachePools;                                        // 0x0110(0x0050)(Protected, NativeAccessSpecifierProtected)
+	class UMassAgentSubsystem*                    AgentSubsystem;                                    // 0x0050(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_58[0x38];                                      // 0x0058(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	class AZombieAbilitySourceCharacter*          AbilitySourceCharacter;                            // 0x0090(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSet<class AMarvelZombie*>                    AliveZombies;                                      // 0x0098(0x0050)(Protected, NativeAccessSpecifierProtected)
+	TArray<class AMarvelZombie*>                  ZombiesNeedUpdatePhysicsTransform;                 // 0x00E8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class UPrimitiveComponent*>            PrimitivesNeedUpdatePhysicsTransform;              // 0x00F8(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_108[0x10];                                     // 0x0108(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FMarvelZombieContainer>    CachePools;                                        // 0x0118(0x0050)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static void CmdEnableZombieCache(const bool bEnable);
@@ -3194,21 +2956,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelZombieManager">();
+		STATIC_CLASS_IMPL("MarvelZombieManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelZombieManager")
 	}
 	static class UMarvelZombieManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelZombieManager>();
 	}
 };
-static_assert(alignof(UMarvelZombieManager) == 0x000008, "Wrong alignment on UMarvelZombieManager");
-static_assert(sizeof(UMarvelZombieManager) == 0x000160, "Wrong size on UMarvelZombieManager");
-static_assert(offsetof(UMarvelZombieManager, AgentSubsystem) == 0x000048, "Member 'UMarvelZombieManager::AgentSubsystem' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieManager, AbilitySourceCharacter) == 0x000088, "Member 'UMarvelZombieManager::AbilitySourceCharacter' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieManager, AliveZombies) == 0x000090, "Member 'UMarvelZombieManager::AliveZombies' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieManager, ZombiesNeedUpdatePhysicsTransform) == 0x0000E0, "Member 'UMarvelZombieManager::ZombiesNeedUpdatePhysicsTransform' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieManager, PrimitivesNeedUpdatePhysicsTransform) == 0x0000F0, "Member 'UMarvelZombieManager::PrimitivesNeedUpdatePhysicsTransform' has a wrong offset!");
-static_assert(offsetof(UMarvelZombieManager, CachePools) == 0x000110, "Member 'UMarvelZombieManager::CachePools' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelZombieManager;
 
 // Class Activity_10130.DamageCalculationPipeline_10130
 // 0x0000 (0x0040 - 0x0040)
@@ -3217,37 +2976,78 @@ class UDamageCalculationPipeline_10130 final : public UMarvelDamageCalculationPi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DamageCalculationPipeline_10130">();
+		STATIC_CLASS_IMPL("DamageCalculationPipeline_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DamageCalculationPipeline_10130")
 	}
 	static class UDamageCalculationPipeline_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDamageCalculationPipeline_10130>();
 	}
 };
-static_assert(alignof(UDamageCalculationPipeline_10130) == 0x000008, "Wrong alignment on UDamageCalculationPipeline_10130");
-static_assert(sizeof(UDamageCalculationPipeline_10130) == 0x000040, "Wrong size on UDamageCalculationPipeline_10130");
+DUMPER7_ASSERTS_UDamageCalculationPipeline_10130;
 
 // Class Activity_10130.MarvelZombieSoldier
-// 0x0010 (0x2640 - 0x2630)
+// 0x0010 (0x2750 - 0x2740)
 class AMarvelZombieSoldier final : public AMarvelZombie
 {
 public:
-	class UMarvelAIStimuliSourceComponentBase*    ZombieStimuliSourceComponent;                      // 0x2630(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2638[0x8];                                     // 0x2638(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMarvelAIStimuliSourceComponentBase*    ZombieStimuliSourceComponent;                      // 0x2740(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2748[0x8];                                     // 0x2748(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelZombieSoldier">();
+		STATIC_CLASS_IMPL("MarvelZombieSoldier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelZombieSoldier")
 	}
 	static class AMarvelZombieSoldier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelZombieSoldier>();
 	}
 };
-static_assert(alignof(AMarvelZombieSoldier) == 0x000010, "Wrong alignment on AMarvelZombieSoldier");
-static_assert(sizeof(AMarvelZombieSoldier) == 0x002640, "Wrong size on AMarvelZombieSoldier");
-static_assert(offsetof(AMarvelZombieSoldier, ZombieStimuliSourceComponent) == 0x002630, "Member 'AMarvelZombieSoldier::ZombieStimuliSourceComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelZombieSoldier;
+
+// Class Activity_10130.NamorBossCharacter
+// 0x0070 (0x2360 - 0x22F0)
+class ANamorBossCharacter : public ANamorCharacter
+{
+public:
+	int32                                         ZombieID;                                          // 0x22E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DurationToDestroyAfterDie;                         // 0x22EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBossDeathDissolve                     BossDeathDissolve;                                 // 0x22F0(0x001C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_230C[0x34];                                    // 0x230C(0x0034)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnCombatStartDelegate;                             // 0x2340(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          bIsCombatStarted;                                  // 0x2350(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2351[0xF];                                     // 0x2351(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void K2_OnCombatStart();
+	void OnCombatStart();
+	void OnRep_IsCombatStarted();
+	void OnTimeToDestroyMe();
+	void ReplaceOctopus(class USummonedComp_40255101* CurrentSummonedComp, int32 NewSummonedID);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NamorBossCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NamorBossCharacter")
+	}
+	static class ANamorBossCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ANamorBossCharacter>();
+	}
+};
+DUMPER7_ASSERTS_ANamorBossCharacter;
 
 // Class Activity_10130.ScarletWitchBossAnimInstance
 // 0x0000 (0x0A80 - 0x0A80)
@@ -3256,30 +3056,33 @@ class UScarletWitchBossAnimInstance final : public UScarletWitchAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScarletWitchBossAnimInstance">();
+		STATIC_CLASS_IMPL("ScarletWitchBossAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScarletWitchBossAnimInstance")
 	}
 	static class UScarletWitchBossAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScarletWitchBossAnimInstance>();
 	}
 };
-static_assert(alignof(UScarletWitchBossAnimInstance) == 0x000010, "Wrong alignment on UScarletWitchBossAnimInstance");
-static_assert(sizeof(UScarletWitchBossAnimInstance) == 0x000A80, "Wrong size on UScarletWitchBossAnimInstance");
+DUMPER7_ASSERTS_UScarletWitchBossAnimInstance;
 
 // Class Activity_10130.ScarletWitchBossCharacter
-// 0x0070 (0x2210 - 0x21A0)
+// 0x0070 (0x2320 - 0x22B0)
 class AScarletWitchBossCharacter : public AMarvelBaseCharacter
 {
 public:
-	class UMarvelMoveLogicBaseComponent*          ScarletWitchBossMoveLogic;                         // 0x21A0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21A8[0x10];                                    // 0x21A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ZombieID;                                          // 0x21B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DurationToDestroyAfterDie;                         // 0x21BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBossDeathDissolve                     BossDeathDissolve;                                 // 0x21C0(0x001C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21DC[0x4];                                     // 0x21DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnCombatStartDelegate;                             // 0x21E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	bool                                          bIsCombatStarted;                                  // 0x21F0(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F1[0x1F];                                    // 0x21F1(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMarvelMoveLogicBaseComponent*          ScarletWitchBossMoveLogic;                         // 0x22B0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22B8[0x10];                                    // 0x22B8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ZombieID;                                          // 0x22C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DurationToDestroyAfterDie;                         // 0x22CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBossDeathDissolve                     BossDeathDissolve;                                 // 0x22D0(0x001C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22EC[0x4];                                     // 0x22EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnCombatStartDelegate;                             // 0x22F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          bIsCombatStarted;                                  // 0x2300(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2301[0x1F];                                    // 0x2301(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddScopeToCache(class AMarvelAbilityTargetActor_Scope* InScope);
@@ -3292,45 +3095,73 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScarletWitchBossCharacter">();
+		STATIC_CLASS_IMPL("ScarletWitchBossCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScarletWitchBossCharacter")
 	}
 	static class AScarletWitchBossCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScarletWitchBossCharacter>();
 	}
 };
-static_assert(alignof(AScarletWitchBossCharacter) == 0x000010, "Wrong alignment on AScarletWitchBossCharacter");
-static_assert(sizeof(AScarletWitchBossCharacter) == 0x002210, "Wrong size on AScarletWitchBossCharacter");
-static_assert(offsetof(AScarletWitchBossCharacter, ScarletWitchBossMoveLogic) == 0x0021A0, "Member 'AScarletWitchBossCharacter::ScarletWitchBossMoveLogic' has a wrong offset!");
-static_assert(offsetof(AScarletWitchBossCharacter, ZombieID) == 0x0021B8, "Member 'AScarletWitchBossCharacter::ZombieID' has a wrong offset!");
-static_assert(offsetof(AScarletWitchBossCharacter, DurationToDestroyAfterDie) == 0x0021BC, "Member 'AScarletWitchBossCharacter::DurationToDestroyAfterDie' has a wrong offset!");
-static_assert(offsetof(AScarletWitchBossCharacter, BossDeathDissolve) == 0x0021C0, "Member 'AScarletWitchBossCharacter::BossDeathDissolve' has a wrong offset!");
-static_assert(offsetof(AScarletWitchBossCharacter, OnCombatStartDelegate) == 0x0021E0, "Member 'AScarletWitchBossCharacter::OnCombatStartDelegate' has a wrong offset!");
-static_assert(offsetof(AScarletWitchBossCharacter, bIsCombatStarted) == 0x0021F0, "Member 'AScarletWitchBossCharacter::bIsCombatStarted' has a wrong offset!");
+DUMPER7_ASSERTS_AScarletWitchBossCharacter;
 
 // Class Activity_10130.ScarletWitchBossChildActor
-// 0x0000 (0x1110 - 0x1110)
+// 0x0000 (0x1120 - 0x1120)
 class AScarletWitchBossChildActor : public AScarletWitchChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScarletWitchBossChildActor">();
+		STATIC_CLASS_IMPL("ScarletWitchBossChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScarletWitchBossChildActor")
 	}
 	static class AScarletWitchBossChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScarletWitchBossChildActor>();
 	}
 };
-static_assert(alignof(AScarletWitchBossChildActor) == 0x000010, "Wrong alignment on AScarletWitchBossChildActor");
-static_assert(sizeof(AScarletWitchBossChildActor) == 0x001110, "Wrong size on AScarletWitchBossChildActor");
+DUMPER7_ASSERTS_AScarletWitchBossChildActor;
+
+// Class Activity_10130.UserData_AttachToSkelot
+// 0x0080 (0x00B0 - 0x0030)
+class UUserData_AttachToSkelot final : public UAssetUserData
+{
+public:
+	class FName                                   SocketName;                                        // 0x0030(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RelationTransform;                                 // 0x0040(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseAbsoluteRotation;                              // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDeactivateOnDeath;                                // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A2[0xE];                                       // 0x00A2(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UserData_AttachToSkelot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserData_AttachToSkelot")
+	}
+	static class UUserData_AttachToSkelot* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUserData_AttachToSkelot>();
+	}
+};
+DUMPER7_ASSERTS_UUserData_AttachToSkelot;
 
 // Class Activity_10130.ZombieAbilitySourceCharacter
-// 0x0010 (0x21B0 - 0x21A0)
+// 0x0010 (0x22C0 - 0x22B0)
 class AZombieAbilitySourceCharacter final : public AMarvelBaseCharacter
 {
 public:
-	uint8                                         Pad_21A0[0x10];                                    // 0x21A0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B0[0x10];                                    // 0x22B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UGameplayAbility* GetCommonAbility() const;
@@ -3338,15 +3169,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAbilitySourceCharacter">();
+		STATIC_CLASS_IMPL("ZombieAbilitySourceCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAbilitySourceCharacter")
 	}
 	static class AZombieAbilitySourceCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZombieAbilitySourceCharacter>();
 	}
 };
-static_assert(alignof(AZombieAbilitySourceCharacter) == 0x000010, "Wrong alignment on AZombieAbilitySourceCharacter");
-static_assert(sizeof(AZombieAbilitySourceCharacter) == 0x0021B0, "Wrong size on AZombieAbilitySourceCharacter");
+DUMPER7_ASSERTS_AZombieAbilitySourceCharacter;
 
 // Class Activity_10130.ZombieRepresentationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -3358,15 +3192,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieRepresentationProcessor">();
+		STATIC_CLASS_IMPL("ZombieRepresentationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieRepresentationProcessor")
 	}
 	static class UZombieRepresentationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieRepresentationProcessor>();
 	}
 };
-static_assert(alignof(UZombieRepresentationProcessor) == 0x000008, "Wrong alignment on UZombieRepresentationProcessor");
-static_assert(sizeof(UZombieRepresentationProcessor) == 0x000370, "Wrong size on UZombieRepresentationProcessor");
+DUMPER7_ASSERTS_UZombieRepresentationProcessor;
 
 // Class Activity_10130.ZombieAnimProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -3378,15 +3215,62 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieAnimProcessor">();
+		STATIC_CLASS_IMPL("ZombieAnimProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieAnimProcessor")
 	}
 	static class UZombieAnimProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieAnimProcessor>();
 	}
 };
-static_assert(alignof(UZombieAnimProcessor) == 0x000008, "Wrong alignment on UZombieAnimProcessor");
-static_assert(sizeof(UZombieAnimProcessor) == 0x000370, "Wrong size on UZombieAnimProcessor");
+DUMPER7_ASSERTS_UZombieAnimProcessor;
+
+// Class Activity_10130.ZombieCombineNiagaraComponent
+// 0x0158 (0x0260 - 0x0108)
+class UZombieCombineNiagaraComponent final : public UActorComponent
+{
+public:
+	class UNiagaraSystem*                         CombineNiagaraAsset;                               // 0x0108(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         VectorParamNum;                                    // 0x0110(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        VectorParamDefaults;                               // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         FloatParamNum;                                     // 0x0128(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 FloatParamDefaults;                                // 0x0130(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         IntParamNum;                                       // 0x0140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 IntParamDefaults;                                  // 0x0148(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FName                                   ScoketName;                                        // 0x0158(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_164[0xC];                                      // 0x0164(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Offset;                                            // 0x0170(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPlayerLivingState                            EndState;                                          // 0x01D0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D1[0x27];                                     // 0x01D1(0x0027)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTeamVisual                            CachedUsedTeamVisual;                              // 0x01F8(0x0020)(NoDestructor, NativeAccessSpecifierPublic)
+	class AMarvelZombie*                          OwnerZombie;                                       // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_220[0x40];                                     // 0x0220(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnLivingStateChanged(EPlayerLivingState Value);
+	void UpdateNiagaraTransform();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ZombieCombineNiagaraComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieCombineNiagaraComponent")
+	}
+	static class UZombieCombineNiagaraComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UZombieCombineNiagaraComponent>();
+	}
+};
+DUMPER7_ASSERTS_UZombieCombineNiagaraComponent;
 
 // Class Activity_10130.ZombieController
 // 0x0030 (0x0D70 - 0x0D40)
@@ -3404,42 +3288,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieController">();
+		STATIC_CLASS_IMPL("ZombieController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieController")
 	}
 	static class AZombieController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZombieController>();
 	}
 };
-static_assert(alignof(AZombieController) == 0x000010, "Wrong alignment on AZombieController");
-static_assert(sizeof(AZombieController) == 0x000D70, "Wrong size on AZombieController");
-static_assert(offsetof(AZombieController, bEnableMoveStuckCheck) == 0x000D38, "Member 'AZombieController::bEnableMoveStuckCheck' has a wrong offset!");
-static_assert(offsetof(AZombieController, SampleInterval) == 0x000D3C, "Member 'AZombieController::SampleInterval' has a wrong offset!");
-static_assert(offsetof(AZombieController, MoveStuckThreshold) == 0x000D44, "Member 'AZombieController::MoveStuckThreshold' has a wrong offset!");
-static_assert(offsetof(AZombieController, ConcernDist) == 0x000D48, "Member 'AZombieController::ConcernDist' has a wrong offset!");
-static_assert(offsetof(AZombieController, LocationSampleNum) == 0x000D4C, "Member 'AZombieController::LocationSampleNum' has a wrong offset!");
+DUMPER7_ASSERTS_AZombieController;
 
 // Class Activity_10130.ZombieMovementComponent
-// 0x0010 (0x2370 - 0x2360)
+// 0x0010 (0x2400 - 0x23F0)
 class UZombieMovementComponent final : public UMarvelCharacterMovementComponent
 {
 public:
-	class UMarvelZombieManager*                   ZombieManager;                                     // 0x2360(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2368[0x8];                                     // 0x2368(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMarvelZombieManager*                   ZombieManager;                                     // 0x23F0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_23F8[0x8];                                     // 0x23F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieMovementComponent">();
+		STATIC_CLASS_IMPL("ZombieMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieMovementComponent")
 	}
 	static class UZombieMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieMovementComponent>();
 	}
 };
-static_assert(alignof(UZombieMovementComponent) == 0x000010, "Wrong alignment on UZombieMovementComponent");
-static_assert(sizeof(UZombieMovementComponent) == 0x002370, "Wrong size on UZombieMovementComponent");
-static_assert(offsetof(UZombieMovementComponent, ZombieManager) == 0x002360, "Member 'UZombieMovementComponent::ZombieManager' has a wrong offset!");
+DUMPER7_ASSERTS_UZombieMovementComponent;
 
 // Class Activity_10130.ZombieOrientationSyncTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -3448,15 +3332,18 @@ class UZombieOrientationSyncTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieOrientationSyncTrait">();
+		STATIC_CLASS_IMPL("ZombieOrientationSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieOrientationSyncTrait")
 	}
 	static class UZombieOrientationSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieOrientationSyncTrait>();
 	}
 };
-static_assert(alignof(UZombieOrientationSyncTrait) == 0x000008, "Wrong alignment on UZombieOrientationSyncTrait");
-static_assert(sizeof(UZombieOrientationSyncTrait) == 0x000030, "Wrong size on UZombieOrientationSyncTrait");
+DUMPER7_ASSERTS_UZombieOrientationSyncTrait;
 
 // Class Activity_10130.MassZombieOrientationToMassTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -3468,15 +3355,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassZombieOrientationToMassTranslator">();
+		STATIC_CLASS_IMPL("MassZombieOrientationToMassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassZombieOrientationToMassTranslator")
 	}
 	static class UMassZombieOrientationToMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassZombieOrientationToMassTranslator>();
 	}
 };
-static_assert(alignof(UMassZombieOrientationToMassTranslator) == 0x000008, "Wrong alignment on UMassZombieOrientationToMassTranslator");
-static_assert(sizeof(UMassZombieOrientationToMassTranslator) == 0x000390, "Wrong size on UMassZombieOrientationToMassTranslator");
+DUMPER7_ASSERTS_UMassZombieOrientationToMassTranslator;
 
 // Class Activity_10130.ZombieTrait
 // 0x0008 (0x0038 - 0x0030)
@@ -3489,17 +3379,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZombieTrait">();
+		STATIC_CLASS_IMPL("ZombieTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZombieTrait")
 	}
 	static class UZombieTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZombieTrait>();
 	}
 };
-static_assert(alignof(UZombieTrait) == 0x000008, "Wrong alignment on UZombieTrait");
-static_assert(sizeof(UZombieTrait) == 0x000038, "Wrong size on UZombieTrait");
-static_assert(offsetof(UZombieTrait, MaxSkelotMoveSpeed) == 0x000030, "Member 'UZombieTrait::MaxSkelotMoveSpeed' has a wrong offset!");
-static_assert(offsetof(UZombieTrait, MaxSkelotLerpDistance) == 0x000034, "Member 'UZombieTrait::MaxSkelotLerpDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UZombieTrait;
 
 }
 

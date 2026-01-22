@@ -13,77 +13,60 @@
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Hero_1052_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1052_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105221.PyConfig_105221
-// 0x9C98 (0x9D30 - 0x0098)
+// 0xB8E8 (0xB980 - 0x0098)
 class UPyConfig_105221 final : public UMarvelAbilityConfig
 {
 public:
 	TArray<TArray<int32>>                         ScopeID;                                           // 0x0098(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<TArray<int32>>                         AirScopeID;                                        // 0x00A8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0x8];                                       // 0x00B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectAndDashInfo                     SelectDashTaskParams;                              // 0x00C0(0x3A60)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x3B20(0x17C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSelectTaskParam                       AirSelectTaskParams;                               // 0x52E0(0x17C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          DashOnMissile;                                     // 0x6AA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6AA1[0x7];                                     // 0x6AA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x6AA8(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfoLocation;                                  // 0x7670(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       ReduceCDTraceRule;                                 // 0x8238(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ReduceCDAbilityID;                                 // 0x85D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReduceCDLength;                                    // 0x85D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DashDistance;                                      // 0x85D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComboTimeout;                                      // 0x85DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FloatingHorizontalAcc;                             // 0x85E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FloatingHorizontalDec;                             // 0x85E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x85E8(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  LimitFloatTags;                                    // 0x8650(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         CSLocationDiffMax;                                 // 0x86B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_86BC[0x4];                                     // 0x86BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceFloor;                                        // 0x86C0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         MinFloatingHit;                                    // 0x9D20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSelectAndDashInfo                     SelectDashTaskParams;                              // 0x00C0(0x4480)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x4540(0x1B70)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSelectTaskParam                       AirSelectTaskParams;                               // 0x60B0(0x1B70)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          DashOnMissile;                                     // 0x7C20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7C21[0x7];                                     // 0x7C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x7C28(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfoLocation;                                  // 0x8B10(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       ReduceCDTraceRule;                                 // 0x99F8(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ReduceCDAbilityID;                                 // 0x9ED0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReduceCDLength;                                    // 0x9ED4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DashDistance;                                      // 0x9ED8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComboTimeout;                                      // 0x9EDC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FloatingHorizontalAcc;                             // 0x9EE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FloatingHorizontalDec;                             // 0x9EE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x9EE8(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  LimitFloatTags;                                    // 0x9F50(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         CSLocationDiffMax;                                 // 0x9FB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9FBC[0x4];                                     // 0x9FBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceFloor;                                        // 0x9FC0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         MinFloatingHit;                                    // 0xB970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105221">();
+		STATIC_CLASS_IMPL("PyConfig_105221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105221")
 	}
 	static class UPyConfig_105221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105221>();
 	}
 };
-static_assert(alignof(UPyConfig_105221) == 0x000010, "Wrong alignment on UPyConfig_105221");
-static_assert(sizeof(UPyConfig_105221) == 0x009D30, "Wrong size on UPyConfig_105221");
-static_assert(offsetof(UPyConfig_105221, ScopeID) == 0x000098, "Member 'UPyConfig_105221::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, AirScopeID) == 0x0000A8, "Member 'UPyConfig_105221::AirScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, SelectDashTaskParams) == 0x0000C0, "Member 'UPyConfig_105221::SelectDashTaskParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, SelectTaskParams) == 0x003B20, "Member 'UPyConfig_105221::SelectTaskParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, AirSelectTaskParams) == 0x0052E0, "Member 'UPyConfig_105221::AirSelectTaskParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, DashOnMissile) == 0x006AA0, "Member 'UPyConfig_105221::DashOnMissile' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, DashInfo) == 0x006AA8, "Member 'UPyConfig_105221::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, DashInfoLocation) == 0x007670, "Member 'UPyConfig_105221::DashInfoLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, ReduceCDTraceRule) == 0x008238, "Member 'UPyConfig_105221::ReduceCDTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, ReduceCDAbilityID) == 0x0085D0, "Member 'UPyConfig_105221::ReduceCDAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, ReduceCDLength) == 0x0085D4, "Member 'UPyConfig_105221::ReduceCDLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, DashDistance) == 0x0085D8, "Member 'UPyConfig_105221::DashDistance' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, ComboTimeout) == 0x0085DC, "Member 'UPyConfig_105221::ComboTimeout' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, FloatingHorizontalAcc) == 0x0085E0, "Member 'UPyConfig_105221::FloatingHorizontalAcc' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, FloatingHorizontalDec) == 0x0085E4, "Member 'UPyConfig_105221::FloatingHorizontalDec' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, BlockDashTag) == 0x0085E8, "Member 'UPyConfig_105221::BlockDashTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, LimitFloatTags) == 0x008650, "Member 'UPyConfig_105221::LimitFloatTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, CSLocationDiffMax) == 0x0086B8, "Member 'UPyConfig_105221::CSLocationDiffMax' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, TraceFloor) == 0x0086C0, "Member 'UPyConfig_105221::TraceFloor' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105221, MinFloatingHit) == 0x009D20, "Member 'UPyConfig_105221::MinFloatingHit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105221;
 
 // PythonClass PyAbility_105221.PyEffectiveComponent_105221
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_105221 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -92,22 +75,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_105221">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_105221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_105221")
 	}
 	static class UPyEffectiveComponent_105221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_105221>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_105221) == 0x000010, "Wrong alignment on UPyEffectiveComponent_105221");
-static_assert(sizeof(UPyEffectiveComponent_105221) == 0x001C70, "Wrong size on UPyEffectiveComponent_105221");
+DUMPER7_ASSERTS_UPyEffectiveComponent_105221;
 
 // PythonClass PyAbility_105221.PyAbility_105221
-// 0x0010 (0x2A10 - 0x2A00)
+// 0x0010 (0x2A60 - 0x2A50)
 class UPyAbility_105221 : public UAbility_105221
 {
 public:
-	TMulticastInlineDelegate<void()>              OnAbilityCanPreLock;                               // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityCanPreLock;                               // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -127,25 +113,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105221">();
+		STATIC_CLASS_IMPL("PyAbility_105221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105221")
 	}
 	static class UPyAbility_105221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105221>();
 	}
 };
-static_assert(alignof(UPyAbility_105221) == 0x000008, "Wrong alignment on UPyAbility_105221");
-static_assert(sizeof(UPyAbility_105221) == 0x002A10, "Wrong size on UPyAbility_105221");
-static_assert(offsetof(UPyAbility_105221, OnAbilityCanPreLock) == 0x002A00, "Member 'UPyAbility_105221::OnAbilityCanPreLock' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105221;
 
 // PythonClass PyAbility_105221.PyUIC_SelectTarget_105221
-// 0x0270 (0x03C8 - 0x0158)
+// 0x0360 (0x0518 - 0x01B8)
 class UPyUIC_SelectTarget_105221 final : public UUIC_SelectTarget
 {
 public:
-	struct FMarvelGameplayTagRequirements         TagRequired105221;                                 // 0x0158(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelGameplayTagRequirements         TagRequired105232;                                 // 0x0228(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelGameplayTagRequirements         TagRequired105233;                                 // 0x02F8(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequired105221;                                 // 0x01B8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequired105232;                                 // 0x02D8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequired105233;                                 // 0x03F8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	bool ShouldTrace();
@@ -154,18 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_105221">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_105221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_105221")
 	}
 	static class UPyUIC_SelectTarget_105221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_105221>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_105221) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_105221");
-static_assert(sizeof(UPyUIC_SelectTarget_105221) == 0x0003C8, "Wrong size on UPyUIC_SelectTarget_105221");
-static_assert(offsetof(UPyUIC_SelectTarget_105221, TagRequired105221) == 0x000158, "Member 'UPyUIC_SelectTarget_105221::TagRequired105221' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_105221, TagRequired105232) == 0x000228, "Member 'UPyUIC_SelectTarget_105221::TagRequired105232' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_105221, TagRequired105233) == 0x0002F8, "Member 'UPyUIC_SelectTarget_105221::TagRequired105233' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_105221;
 
 }
 

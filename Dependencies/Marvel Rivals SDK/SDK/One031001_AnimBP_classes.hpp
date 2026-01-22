@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "Hero_1031_classes.hpp"
 
 
@@ -81,63 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1031001_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("1031001_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1031001_AnimBP_C")
 	}
 	static class UOne031001_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOne031001_AnimBP_C>();
 	}
 };
-static_assert(alignof(UOne031001_AnimBP_C) == 0x000010, "Wrong alignment on UOne031001_AnimBP_C");
-static_assert(sizeof(UOne031001_AnimBP_C) == 0x001DD0, "Wrong size on UOne031001_AnimBP_C");
-static_assert(offsetof(UOne031001_AnimBP_C, UberGraphFrame) == 0x000A60, "Member 'UOne031001_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimBlueprintExtension_PropertyAccess) == 0x000A68, "Member 'UOne031001_AnimBP_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimBlueprintExtension_Base) == 0x000A70, "Member 'UOne031001_AnimBP_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SubInstance_2) == 0x000A78, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SubInstance_2' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SaveCachedPose) == 0x000B48, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_7) == 0x000BE8, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_7' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_6) == 0x000C28, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_6' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_5) == 0x000C68, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_5' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_4) == 0x000CA8, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_4' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_3) == 0x000CE8, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_3' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SequencePlayer_1) == 0x000D28, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SequencePlayer_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_6) == 0x000D88, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_6' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SequencePlayer) == 0x000DC0, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_LayeredBoneBlend) == 0x000E20, "Member 'UOne031001_AnimBP_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_UseCachedPose_1) == 0x000F90, "Member 'UOne031001_AnimBP_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_5) == 0x000FD8, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_5' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_2) == 0x001010, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_2' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult_1) == 0x001050, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_TransitionResult) == 0x001090, "Member 'UOne031001_AnimBP_C::AnimGraphNode_TransitionResult' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_BlendSpacePlayer_2) == 0x0010D0, "Member 'UOne031001_AnimBP_C::AnimGraphNode_BlendSpacePlayer_2' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_4) == 0x001160, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_4' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_BlendSpacePlayer_1) == 0x001198, "Member 'UOne031001_AnimBP_C::AnimGraphNode_BlendSpacePlayer_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_3) == 0x001228, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_3' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_BlendSpacePlayer) == 0x001260, "Member 'UOne031001_AnimBP_C::AnimGraphNode_BlendSpacePlayer' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_2) == 0x0012F0, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_2' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateMachine_1) == 0x001328, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateMachine_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult_1) == 0x0015C8, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_UseCachedPose) == 0x001600, "Member 'UOne031001_AnimBP_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateResult) == 0x001648, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_StateMachine) == 0x001680, "Member 'UOne031001_AnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SubInstance_1) == 0x001920, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SubInstance_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_LinkedAnimGraph_1) == 0x0019F0, "Member 'UOne031001_AnimBP_C::AnimGraphNode_LinkedAnimGraph_1' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_LinkedAnimGraph) == 0x001AC0, "Member 'UOne031001_AnimBP_C::AnimGraphNode_LinkedAnimGraph' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_SubInstance) == 0x001B90, "Member 'UOne031001_AnimBP_C::AnimGraphNode_SubInstance' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, AnimGraphNode_Root) == 0x001C60, "Member 'UOne031001_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bIsBattling_B5E82D174624620F97EF8FADA16AFE9E) == 0x001C98, "Member 'UOne031001_AnimBP_C::__CustomProperty_bIsBattling_B5E82D174624620F97EF8FADA16AFE9E' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bShouldUseAO_B5E82D174624620F97EF8FADA16AFE9E) == 0x001C99, "Member 'UOne031001_AnimBP_C::__CustomProperty_bShouldUseAO_B5E82D174624620F97EF8FADA16AFE9E' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_LocalHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001C9C, "Member 'UOne031001_AnimBP_C::__CustomProperty_LocalHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_LightHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001CA0, "Member 'UOne031001_AnimBP_C::__CustomProperty_LightHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_MediumHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001CA4, "Member 'UOne031001_AnimBP_C::__CustomProperty_MediumHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_SevereHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001CA8, "Member 'UOne031001_AnimBP_C::__CustomProperty_SevereHitAlpha_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bUseSimulateHit_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001CAC, "Member 'UOne031001_AnimBP_C::__CustomProperty_bUseSimulateHit_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_HitHeadSpringCurve_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001CB0, "Member 'UOne031001_AnimBP_C::__CustomProperty_HitHeadSpringCurve_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_HitBodySpringCurve_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001D38, "Member 'UOne031001_AnimBP_C::__CustomProperty_HitBodySpringCurve_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bUseSpringHit_46B4E6F94A7ADF4C1E46F090A551B44F) == 0x001DC0, "Member 'UOne031001_AnimBP_C::__CustomProperty_bUseSpringHit_46B4E6F94A7ADF4C1E46F090A551B44F' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_ExternMontageBlendMode_49ECF9C647B02AB0C6B048BE2542E84E) == 0x001DC1, "Member 'UOne031001_AnimBP_C::__CustomProperty_ExternMontageBlendMode_49ECF9C647B02AB0C6B048BE2542E84E' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bUseNewJump_076850C9448ED8BEBDEDDFAE8D348574) == 0x001DC2, "Member 'UOne031001_AnimBP_C::__CustomProperty_bUseNewJump_076850C9448ED8BEBDEDDFAE8D348574' has a wrong offset!");
-static_assert(offsetof(UOne031001_AnimBP_C, __CustomProperty_bUseSixDirAnimData_076850C9448ED8BEBDEDDFAE8D348574) == 0x001DC3, "Member 'UOne031001_AnimBP_C::__CustomProperty_bUseSixDirAnimData_076850C9448ED8BEBDEDDFAE8D348574' has a wrong offset!");
+DUMPER7_ASSERTS_UOne031001_AnimBP_C;
 
 }
 

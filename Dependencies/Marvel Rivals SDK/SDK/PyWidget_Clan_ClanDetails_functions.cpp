@@ -184,6 +184,31 @@ void UPyWidget_Clan_OtherClanDetails::Destruct()
 }
 
 
+// PythonFunction PyWidget_Clan_ClanDetails.PyWidget_Clan_OtherClanDetails.MarvelSetVisible
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bVisible_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Clan_OtherClanDetails::MarvelSetVisible(bool bVisible_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Clan_OtherClanDetails", "MarvelSetVisible");
+
+	Params::PyWidget_Clan_OtherClanDetails_MarvelSetVisible Parms{};
+
+	Parms.bVisible_0 = bVisible_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Clan_ClanDetails.PyWidget_Clan_ClanDetailsTrophy.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_classes.hpp"
-#include "Marvel_classes.hpp"
 #include "PyRuleComponent_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -36,24 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathMatchConfig">();
+		STATIC_CLASS_IMPL("PyDeathMatchConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathMatchConfig")
 	}
 	static class UPyDeathMatchConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDeathMatchConfig>();
 	}
 };
-static_assert(alignof(UPyDeathMatchConfig) == 0x000008, "Wrong alignment on UPyDeathMatchConfig");
-static_assert(sizeof(UPyDeathMatchConfig) == 0x000060, "Wrong size on UPyDeathMatchConfig");
-static_assert(offsetof(UPyDeathMatchConfig, KillMeScore) == 0x000030, "Member 'UPyDeathMatchConfig::KillMeScore' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, ScoreOnKill) == 0x000034, "Member 'UPyDeathMatchConfig::ScoreOnKill' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, ScoreOnKill2) == 0x000038, "Member 'UPyDeathMatchConfig::ScoreOnKill2' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, ScoreOnKill2Time) == 0x00003C, "Member 'UPyDeathMatchConfig::ScoreOnKill2Time' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, ScoreToWin) == 0x000040, "Member 'UPyDeathMatchConfig::ScoreToWin' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, AudioScoreGap) == 0x000044, "Member 'UPyDeathMatchConfig::AudioScoreGap' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, SuperSkillChargeRate) == 0x000048, "Member 'UPyDeathMatchConfig::SuperSkillChargeRate' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, EndGameWhenLessCount) == 0x00004C, "Member 'UPyDeathMatchConfig::EndGameWhenLessCount' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchConfig, KillOtherBuffID) == 0x000050, "Member 'UPyDeathMatchConfig::KillOtherBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDeathMatchConfig;
 
 // PythonClass PyDeathMatchRuleComponent.PyDeathMatchRuleComponent
 // 0x0058 (0x0160 - 0x0108)
@@ -86,33 +80,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathMatchRuleComponent">();
+		STATIC_CLASS_IMPL("PyDeathMatchRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathMatchRuleComponent")
 	}
 	static class UPyDeathMatchRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDeathMatchRuleComponent>();
 	}
 };
-static_assert(alignof(UPyDeathMatchRuleComponent) == 0x000008, "Wrong alignment on UPyDeathMatchRuleComponent");
-static_assert(sizeof(UPyDeathMatchRuleComponent) == 0x000160, "Wrong size on UPyDeathMatchRuleComponent");
-static_assert(offsetof(UPyDeathMatchRuleComponent, RankList) == 0x000108, "Member 'UPyDeathMatchRuleComponent::RankList' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, KillMeScore) == 0x000118, "Member 'UPyDeathMatchRuleComponent::KillMeScore' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, ScoreOnKill) == 0x00011C, "Member 'UPyDeathMatchRuleComponent::ScoreOnKill' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, ScoreOnKill2) == 0x000120, "Member 'UPyDeathMatchRuleComponent::ScoreOnKill2' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, ScoreOnKill2Time) == 0x000124, "Member 'UPyDeathMatchRuleComponent::ScoreOnKill2Time' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, HealDistance) == 0x000128, "Member 'UPyDeathMatchRuleComponent::HealDistance' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, HealPlayerNum) == 0x00012C, "Member 'UPyDeathMatchRuleComponent::HealPlayerNum' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, ScoreToWin) == 0x000130, "Member 'UPyDeathMatchRuleComponent::ScoreToWin' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, ScoreToHealthpackCD) == 0x000134, "Member 'UPyDeathMatchRuleComponent::ScoreToHealthpackCD' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, NewHealthpackCD) == 0x000138, "Member 'UPyDeathMatchRuleComponent::NewHealthpackCD' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, AudioScoreGap) == 0x00013C, "Member 'UPyDeathMatchRuleComponent::AudioScoreGap' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, IsFinalGapState) == 0x000140, "Member 'UPyDeathMatchRuleComponent::IsFinalGapState' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, SuperSkillChargeRate) == 0x000144, "Member 'UPyDeathMatchRuleComponent::SuperSkillChargeRate' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, EndGameWhenLessCount) == 0x000148, "Member 'UPyDeathMatchRuleComponent::EndGameWhenLessCount' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRuleComponent, KillOtherBuffID) == 0x000150, "Member 'UPyDeathMatchRuleComponent::KillOtherBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDeathMatchRuleComponent;
 
 // PythonClass PyDeathMatchRuleComponent.PyCue_Buff_20060001
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_20060001 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -122,15 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_20060001">();
+		STATIC_CLASS_IMPL("PyCue_Buff_20060001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_20060001")
 	}
 	static class APyCue_Buff_20060001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_20060001>();
 	}
 };
-static_assert(alignof(APyCue_Buff_20060001) == 0x000010, "Wrong alignment on APyCue_Buff_20060001");
-static_assert(sizeof(APyCue_Buff_20060001) == 0x001640, "Wrong size on APyCue_Buff_20060001");
+DUMPER7_ASSERTS_APyCue_Buff_20060001;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1051_CharacterBP.1051_CharacterBP_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class AOne051_CharacterBP_C final : public ABenjaminGrimCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1051_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1051_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1051_CharacterBP_C")
 	}
 	static class AOne051_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne051_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne051_CharacterBP_C) == 0x000010, "Wrong alignment on AOne051_CharacterBP_C");
-static_assert(sizeof(AOne051_CharacterBP_C) == 0x0021E0, "Wrong size on AOne051_CharacterBP_C");
+DUMPER7_ASSERTS_AOne051_CharacterBP_C;
 
 }
 

@@ -23,15 +23,18 @@ class UUIController_SettingPage_MouseAndKeyboard_BP_C final : public UPyUIContro
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIController_SettingPage_MouseAndKeyboard_BP_C">();
+		BP_STATIC_CLASS_IMPL("UIController_SettingPage_MouseAndKeyboard_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_SettingPage_MouseAndKeyboard_BP_C")
 	}
 	static class UUIController_SettingPage_MouseAndKeyboard_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_SettingPage_MouseAndKeyboard_BP_C>();
 	}
 };
-static_assert(alignof(UUIController_SettingPage_MouseAndKeyboard_BP_C) == 0x000008, "Wrong alignment on UUIController_SettingPage_MouseAndKeyboard_BP_C");
-static_assert(sizeof(UUIController_SettingPage_MouseAndKeyboard_BP_C) == 0x000078, "Wrong size on UUIController_SettingPage_MouseAndKeyboard_BP_C");
+DUMPER7_ASSERTS_UUIController_SettingPage_MouseAndKeyboard_BP_C;
 
 }
 

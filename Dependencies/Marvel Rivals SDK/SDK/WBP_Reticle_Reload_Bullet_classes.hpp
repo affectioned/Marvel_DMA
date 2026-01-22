@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Reticle_Reload_Bullet_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Reticle_Reload_Bullet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Reticle_Reload_Bullet_C")
 	}
 	static class UWBP_Reticle_Reload_Bullet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Reticle_Reload_Bullet_C>();
 	}
 };
-static_assert(alignof(UWBP_Reticle_Reload_Bullet_C) == 0x000008, "Wrong alignment on UWBP_Reticle_Reload_Bullet_C");
-static_assert(sizeof(UWBP_Reticle_Reload_Bullet_C) == 0x0003F0, "Wrong size on UWBP_Reticle_Reload_Bullet_C");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Anim_Bullet) == 0x0003B8, "Member 'UWBP_Reticle_Reload_Bullet_C::Anim_Bullet' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, CanvasPanel_Reload) == 0x0003C0, "Member 'UWBP_Reticle_Reload_Bullet_C::CanvasPanel_Reload' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Img_Effect1) == 0x0003C8, "Member 'UWBP_Reticle_Reload_Bullet_C::Img_Effect1' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Img_Effect2) == 0x0003D0, "Member 'UWBP_Reticle_Reload_Bullet_C::Img_Effect2' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Img_Effect3) == 0x0003D8, "Member 'UWBP_Reticle_Reload_Bullet_C::Img_Effect3' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Img_Effect4) == 0x0003E0, "Member 'UWBP_Reticle_Reload_Bullet_C::Img_Effect4' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_Reload_Bullet_C, Img_Effect5) == 0x0003E8, "Member 'UWBP_Reticle_Reload_Bullet_C::Img_Effect5' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Reticle_Reload_Bullet_C;
 
 }
 

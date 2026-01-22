@@ -17,35 +17,42 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_HeroHead.WBP_Battle_HeroHead_C
-// 0x0030 (0x05A0 - 0x0570)
+// 0x0080 (0x0608 - 0x0588)
 class UWBP_Battle_HeroHead_C final : public UPyWidget_ViewTargetHeroIcon
 {
 public:
-	class UWidgetAnimation*                       Anim_Faction;                                      // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Bg_PortaitBg;                                      // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Bg_PortaitBg_LeftTop;                              // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Bg_PortaitBg_RightBottom;                          // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Bg_PortaitFrame;                                   // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Img_Portrait;                                      // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Faction;                                      // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_PortaitBg;                                      // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_PortaitBg_LeftTop;                              // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_PortaitBg_RightBottom;                          // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_PortaitFrame;                                   // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_Proficiency_Badge;                              // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_Proficiency_BadgeBg;                            // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_ProficiencyBg_LeftTop;                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_ProficiencyBg_RightBottom;                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Bg_ProficiencyFrame;                               // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_Portrait;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Default_Frame;                             // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Proficiency_Badge;                         // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Proficiency_Frame;                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_LevelBadge;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Vx_Battle;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_HeroHead_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_HeroHead_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_HeroHead_C")
 	}
 	static class UWBP_Battle_HeroHead_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_HeroHead_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_HeroHead_C) == 0x000008, "Wrong alignment on UWBP_Battle_HeroHead_C");
-static_assert(sizeof(UWBP_Battle_HeroHead_C) == 0x0005A0, "Wrong size on UWBP_Battle_HeroHead_C");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Anim_Faction) == 0x000570, "Member 'UWBP_Battle_HeroHead_C::Anim_Faction' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Bg_PortaitBg) == 0x000578, "Member 'UWBP_Battle_HeroHead_C::Bg_PortaitBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Bg_PortaitBg_LeftTop) == 0x000580, "Member 'UWBP_Battle_HeroHead_C::Bg_PortaitBg_LeftTop' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Bg_PortaitBg_RightBottom) == 0x000588, "Member 'UWBP_Battle_HeroHead_C::Bg_PortaitBg_RightBottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Bg_PortaitFrame) == 0x000590, "Member 'UWBP_Battle_HeroHead_C::Bg_PortaitFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_HeroHead_C, Img_Portrait) == 0x000598, "Member 'UWBP_Battle_HeroHead_C::Img_Portrait' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_HeroHead_C;
 
 }
 

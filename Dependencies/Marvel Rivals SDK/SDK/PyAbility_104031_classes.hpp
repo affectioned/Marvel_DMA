@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1040_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1040_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104031.PyAbility_104031
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104031 final : public UMarvelGameplayAbility
 {
 public:
@@ -41,24 +41,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104031">();
+		STATIC_CLASS_IMPL("PyAbility_104031")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104031")
 	}
 	static class UPyAbility_104031* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104031>();
 	}
 };
-static_assert(alignof(UPyAbility_104031) == 0x000008, "Wrong alignment on UPyAbility_104031");
-static_assert(sizeof(UPyAbility_104031) == 0x0029F0, "Wrong size on UPyAbility_104031");
+DUMPER7_ASSERTS_UPyAbility_104031;
 
 // PythonClass PyAbility_104031.PuCue_Buff_Loop_10403104
-// 0x0020 (0x1660 - 0x1640)
+// 0x0020 (0x1710 - 0x16F0)
 class APuCue_Buff_Loop_10403104 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UAnimTimeline*>                  TimelinesToHideFX;                                 // 0x1640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         SizeScale;                                         // 0x1650(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UAnimTimeline*>                  TimelinesToHideFX;                                 // 0x16F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         SizeScale;                                         // 0x1700(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -67,24 +70,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PuCue_Buff_Loop_10403104">();
+		STATIC_CLASS_IMPL("PuCue_Buff_Loop_10403104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PuCue_Buff_Loop_10403104")
 	}
 	static class APuCue_Buff_Loop_10403104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APuCue_Buff_Loop_10403104>();
 	}
 };
-static_assert(alignof(APuCue_Buff_Loop_10403104) == 0x000010, "Wrong alignment on APuCue_Buff_Loop_10403104");
-static_assert(sizeof(APuCue_Buff_Loop_10403104) == 0x001660, "Wrong size on APuCue_Buff_Loop_10403104");
-static_assert(offsetof(APuCue_Buff_Loop_10403104, TimelinesToHideFX) == 0x001640, "Member 'APuCue_Buff_Loop_10403104::TimelinesToHideFX' has a wrong offset!");
-static_assert(offsetof(APuCue_Buff_Loop_10403104, SizeScale) == 0x001650, "Member 'APuCue_Buff_Loop_10403104::SizeScale' has a wrong offset!");
+DUMPER7_ASSERTS_APuCue_Buff_Loop_10403104;
 
 // PythonClass PyAbility_104031.PyCue_Buff_Loop_10403402
-// 0x0020 (0x1690 - 0x1670)
+// 0x0020 (0x1740 - 0x1720)
 class APyCue_Buff_Loop_10403402 final : public ACue_Buff_Loop_10403402
 {
 public:
-	struct FVector                                DizzyFXRelativeLocation;                           // 0x1670(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DizzyFXRelativeLocation;                           // 0x1720(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -94,19 +98,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10403402">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10403402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10403402")
 	}
 	static class APyCue_Buff_Loop_10403402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10403402>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10403402) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10403402");
-static_assert(sizeof(APyCue_Buff_Loop_10403402) == 0x001690, "Wrong size on APyCue_Buff_Loop_10403402");
-static_assert(offsetof(APyCue_Buff_Loop_10403402, DizzyFXRelativeLocation) == 0x001670, "Member 'APyCue_Buff_Loop_10403402::DizzyFXRelativeLocation' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10403402;
 
 // PythonClass PyAbility_104031.PuCue_Ability_Loop_10403103
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APuCue_Ability_Loop_10403103 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -116,18 +122,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PuCue_Ability_Loop_10403103">();
+		STATIC_CLASS_IMPL("PuCue_Ability_Loop_10403103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PuCue_Ability_Loop_10403103")
 	}
 	static class APuCue_Ability_Loop_10403103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APuCue_Ability_Loop_10403103>();
 	}
 };
-static_assert(alignof(APuCue_Ability_Loop_10403103) == 0x000010, "Wrong alignment on APuCue_Ability_Loop_10403103");
-static_assert(sizeof(APuCue_Ability_Loop_10403103) == 0x0011B0, "Wrong size on APuCue_Ability_Loop_10403103");
+DUMPER7_ASSERTS_APuCue_Ability_Loop_10403103;
 
 // PythonClass PyAbility_104031.PuCue_Ability_Loop_10403203
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APuCue_Ability_Loop_10403203 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -137,22 +146,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PuCue_Ability_Loop_10403203">();
+		STATIC_CLASS_IMPL("PuCue_Ability_Loop_10403203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PuCue_Ability_Loop_10403203")
 	}
 	static class APuCue_Ability_Loop_10403203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APuCue_Ability_Loop_10403203>();
 	}
 };
-static_assert(alignof(APuCue_Ability_Loop_10403203) == 0x000010, "Wrong alignment on APuCue_Ability_Loop_10403203");
-static_assert(sizeof(APuCue_Ability_Loop_10403203) == 0x0011B0, "Wrong size on APuCue_Ability_Loop_10403203");
+DUMPER7_ASSERTS_APuCue_Ability_Loop_10403203;
 
 // PythonClass PyAbility_104031.PyUIController_104031
-// 0x0098 (0x0FA8 - 0x0F10)
+// 0x0098 (0x1288 - 0x11F0)
 class UPyUIController_104031 final : public UUIC_Ability
 {
 public:
-	struct FCueHintData                           HintData;                                          // 0x0F10(0x0098)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FCueHintData                           HintData;                                          // 0x11F0(0x0098)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -161,16 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104031">();
+		STATIC_CLASS_IMPL("PyUIController_104031")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104031")
 	}
 	static class UPyUIController_104031* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104031>();
 	}
 };
-static_assert(alignof(UPyUIController_104031) == 0x000008, "Wrong alignment on UPyUIController_104031");
-static_assert(sizeof(UPyUIController_104031) == 0x000FA8, "Wrong size on UPyUIController_104031");
-static_assert(offsetof(UPyUIController_104031, HintData) == 0x000F10, "Member 'UPyUIController_104031::HintData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_104031;
 
 }
 

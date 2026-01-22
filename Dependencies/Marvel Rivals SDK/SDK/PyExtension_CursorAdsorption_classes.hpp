@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_CursorAdsorption">();
+		STATIC_CLASS_IMPL("PyExtension_CursorAdsorption")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_CursorAdsorption")
 	}
 	static class UPyExtension_CursorAdsorption* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_CursorAdsorption>();
 	}
 };
-static_assert(alignof(UPyExtension_CursorAdsorption) == 0x000008, "Wrong alignment on UPyExtension_CursorAdsorption");
-static_assert(sizeof(UPyExtension_CursorAdsorption) == 0x000030, "Wrong size on UPyExtension_CursorAdsorption");
+DUMPER7_ASSERTS_UPyExtension_CursorAdsorption;
 
 }
 

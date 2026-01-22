@@ -28,13 +28,7 @@ public:
 	TArray<class FText>                           Options_17_865745EC4495B76DB358589245FD0D4D;       // 0x0038(0x0010)(Edit, BlueprintVisible)
 	int32                                         Default_23_4BF5D1F84F4F93A637A2459725D1AD5F;       // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGraphicSetting) == 0x000008, "Wrong alignment on FGraphicSetting");
-static_assert(sizeof(FGraphicSetting) == 0x000050, "Wrong size on FGraphicSetting");
-static_assert(offsetof(FGraphicSetting, GraphicsQualityType_19_45C406F943C9C5EED65396993931E20E) == 0x000000, "Member 'FGraphicSetting::GraphicsQualityType_19_45C406F943C9C5EED65396993931E20E' has a wrong offset!");
-static_assert(offsetof(FGraphicSetting, GraphicSettingName_7_CEED27CB45B078B71ED1249B780389B1) == 0x000008, "Member 'FGraphicSetting::GraphicSettingName_7_CEED27CB45B078B71ED1249B780389B1' has a wrong offset!");
-static_assert(offsetof(FGraphicSetting, Description_12_0668E7CA4CCA1A6CB5427AA55CA1F954) == 0x000020, "Member 'FGraphicSetting::Description_12_0668E7CA4CCA1A6CB5427AA55CA1F954' has a wrong offset!");
-static_assert(offsetof(FGraphicSetting, Options_17_865745EC4495B76DB358589245FD0D4D) == 0x000038, "Member 'FGraphicSetting::Options_17_865745EC4495B76DB358589245FD0D4D' has a wrong offset!");
-static_assert(offsetof(FGraphicSetting, Default_23_4BF5D1F84F4F93A637A2459725D1AD5F) == 0x000048, "Member 'FGraphicSetting::Default_23_4BF5D1F84F4F93A637A2459725D1AD5F' has a wrong offset!");
+DUMPER7_ASSERTS_FGraphicSetting;
 
 }
 

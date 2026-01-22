@@ -23,15 +23,18 @@ class UBTS_UpdateSight_BP_C final : public UBTS_UpdateSight
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateSight_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateSight_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateSight_BP_C")
 	}
 	static class UBTS_UpdateSight_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateSight_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateSight_BP_C) == 0x000008, "Wrong alignment on UBTS_UpdateSight_BP_C");
-static_assert(sizeof(UBTS_UpdateSight_BP_C) == 0x000150, "Wrong size on UBTS_UpdateSight_BP_C");
+DUMPER7_ASSERTS_UBTS_UpdateSight_BP_C;
 
 }
 

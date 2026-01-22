@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103911.PyUIController_103911
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_103911 final : public UUIC_Ability
 {
 public:
-	class UTexture2D*                             NormalIcon;                                        // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SpecialIcon;                                       // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NormalIcon;                                        // 0x11F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SpecialIcon;                                       // 0x11F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103911">();
+		STATIC_CLASS_IMPL("PyUIController_103911")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103911")
 	}
 	static class UPyUIController_103911* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103911>();
 	}
 };
-static_assert(alignof(UPyUIController_103911) == 0x000008, "Wrong alignment on UPyUIController_103911");
-static_assert(sizeof(UPyUIController_103911) == 0x000F20, "Wrong size on UPyUIController_103911");
-static_assert(offsetof(UPyUIController_103911, NormalIcon) == 0x000F10, "Member 'UPyUIController_103911::NormalIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIController_103911, SpecialIcon) == 0x000F18, "Member 'UPyUIController_103911::SpecialIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_103911;
 
 }
 

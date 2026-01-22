@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelBlockWall">();
+		STATIC_CLASS_IMPL("PyLevelBlockWall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelBlockWall")
 	}
 	static class APyLevelBlockWall* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelBlockWall>();
 	}
 };
-static_assert(alignof(APyLevelBlockWall) == 0x000010, "Wrong alignment on APyLevelBlockWall");
-static_assert(sizeof(APyLevelBlockWall) == 0x000710, "Wrong size on APyLevelBlockWall");
-static_assert(offsetof(APyLevelBlockWall, HidenBattleSide) == 0x0006F0, "Member 'APyLevelBlockWall::HidenBattleSide' has a wrong offset!");
-static_assert(offsetof(APyLevelBlockWall, HittedEffect) == 0x000700, "Member 'APyLevelBlockWall::HittedEffect' has a wrong offset!");
-static_assert(offsetof(APyLevelBlockWall, MaxHittedEffectCount) == 0x000708, "Member 'APyLevelBlockWall::MaxHittedEffectCount' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelBlockWall;
 
 }
 

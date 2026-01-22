@@ -21,7 +21,7 @@ namespace SDK
 class UPyGamemodeAudioMgr : public UProcedureAudioManager
 {
 public:
-	TMulticastInlineDelegate<void(const class FString& VoiceTag, const class FString& NextVoiceTag)> OnSystemVoiceEnd; // 0x08C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 VoiceId, const class FString& VoiceTag, const class FString& NextVoiceTag)> OnSystemVoiceEnd; // 0x08C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInitialize();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGamemodeAudioMgr">();
+		STATIC_CLASS_IMPL("PyGamemodeAudioMgr")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGamemodeAudioMgr")
 	}
 	static class UPyGamemodeAudioMgr* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGamemodeAudioMgr>();
 	}
 };
-static_assert(alignof(UPyGamemodeAudioMgr) == 0x000008, "Wrong alignment on UPyGamemodeAudioMgr");
-static_assert(sizeof(UPyGamemodeAudioMgr) == 0x0008D8, "Wrong size on UPyGamemodeAudioMgr");
-static_assert(offsetof(UPyGamemodeAudioMgr, OnSystemVoiceEnd) == 0x0008C8, "Member 'UPyGamemodeAudioMgr::OnSystemVoiceEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyGamemodeAudioMgr;
 
 }
 

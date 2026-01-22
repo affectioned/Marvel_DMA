@@ -21,9 +21,7 @@ struct PyWidget_Emoji_ShowActor_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Emoji_ShowActor_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Emoji_ShowActor_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Emoji_ShowActor_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Emoji_ShowActor_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Emoji_ShowActor_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Emoji_ShowActor_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Emoji_ShowActor_OnAnimationFinished;
 
 }
 

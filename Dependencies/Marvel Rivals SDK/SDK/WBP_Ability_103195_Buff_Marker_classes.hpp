@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_103195_classes.hpp"
+#include "PyUI_103195_classes.hpp"
 
 
 namespace SDK
@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_103195_Buff_Marker_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_103195_Buff_Marker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_103195_Buff_Marker_C")
 	}
 	static class UWBP_Ability_103195_Buff_Marker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_103195_Buff_Marker_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_103195_Buff_Marker_C) == 0x000010, "Wrong alignment on UWBP_Ability_103195_Buff_Marker_C");
-static_assert(sizeof(UWBP_Ability_103195_Buff_Marker_C) == 0x000AB0, "Wrong size on UWBP_Ability_103195_Buff_Marker_C");
-static_assert(offsetof(UWBP_Ability_103195_Buff_Marker_C, Anim_Percent) == 0x000A88, "Member 'UWBP_Ability_103195_Buff_Marker_C::Anim_Percent' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_103195_Buff_Marker_C, Img_Bg) == 0x000A90, "Member 'UWBP_Ability_103195_Buff_Marker_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_103195_Buff_Marker_C, Img_Countdown) == 0x000A98, "Member 'UWBP_Ability_103195_Buff_Marker_C::Img_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_103195_Buff_Marker_C, Overlay_Countdown) == 0x000AA0, "Member 'UWBP_Ability_103195_Buff_Marker_C::Overlay_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_103195_Buff_Marker_C, Text_Distance) == 0x000AA8, "Member 'UWBP_Ability_103195_Buff_Marker_C::Text_Distance' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_103195_Buff_Marker_C;
 
 }
 

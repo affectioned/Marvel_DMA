@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTakeWayPointPathLocation">();
+		STATIC_CLASS_IMPL("BTT_PyTakeWayPointPathLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTakeWayPointPathLocation")
 	}
 	static class UBTT_PyTakeWayPointPathLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTakeWayPointPathLocation>();
 	}
 };
-static_assert(alignof(UBTT_PyTakeWayPointPathLocation) == 0x000008, "Wrong alignment on UBTT_PyTakeWayPointPathLocation");
-static_assert(sizeof(UBTT_PyTakeWayPointPathLocation) == 0x000108, "Wrong size on UBTT_PyTakeWayPointPathLocation");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, CheckDistanceToArrive) == 0x0000C0, "Member 'UBTT_PyTakeWayPointPathLocation::CheckDistanceToArrive' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, InOutMoveLocation) == 0x0000C8, "Member 'UBTT_PyTakeWayPointPathLocation::InOutMoveLocation' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, GoFrontierIfNextIsNone) == 0x0000F8, "Member 'UBTT_PyTakeWayPointPathLocation::GoFrontierIfNextIsNone' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, UseBackUpLocation) == 0x0000F9, "Member 'UBTT_PyTakeWayPointPathLocation::UseBackUpLocation' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, BackUpRandomDistance) == 0x0000FC, "Member 'UBTT_PyTakeWayPointPathLocation::BackUpRandomDistance' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeWayPointPathLocation, EnableDebug) == 0x000100, "Member 'UBTT_PyTakeWayPointPathLocation::EnableDebug' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTakeWayPointPathLocation;
 
 // PythonClass BTT_PyTakeWayPointPathLocation.BTT_PyTakeLocationNearby
 // 0x0068 (0x0128 - 0x00C0)
@@ -69,18 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTakeLocationNearby">();
+		STATIC_CLASS_IMPL("BTT_PyTakeLocationNearby")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTakeLocationNearby")
 	}
 	static class UBTT_PyTakeLocationNearby* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTakeLocationNearby>();
 	}
 };
-static_assert(alignof(UBTT_PyTakeLocationNearby) == 0x000008, "Wrong alignment on UBTT_PyTakeLocationNearby");
-static_assert(sizeof(UBTT_PyTakeLocationNearby) == 0x000128, "Wrong size on UBTT_PyTakeLocationNearby");
-static_assert(offsetof(UBTT_PyTakeLocationNearby, InMoveTarget) == 0x0000C0, "Member 'UBTT_PyTakeLocationNearby::InMoveTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeLocationNearby, RandomRadius) == 0x0000F0, "Member 'UBTT_PyTakeLocationNearby::RandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeLocationNearby, OutMoveLocation) == 0x0000F8, "Member 'UBTT_PyTakeLocationNearby::OutMoveLocation' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTakeLocationNearby;
 
 }
 

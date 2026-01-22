@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_Spectator_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_Spectator_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_Spectator_Base")
 	}
 	static class UPyWidget_Setting_Spectator_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_Spectator_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_Spectator_Base) == 0x000008, "Wrong alignment on UPyWidget_Setting_Spectator_Base");
-static_assert(sizeof(UPyWidget_Setting_Spectator_Base) == 0x0003B8, "Wrong size on UPyWidget_Setting_Spectator_Base");
+DUMPER7_ASSERTS_UPyWidget_Setting_Spectator_Base;
 
 // PythonClass PyWidget_SettingMouseAndKeyBoard_SpectatorSetting.PyWidget_Setting_Spectator_HpBar
 // 0x0000 (0x03B8 - 0x03B8)
@@ -49,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_Spectator_HpBar">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_Spectator_HpBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_Spectator_HpBar")
 	}
 	static class UPyWidget_Setting_Spectator_HpBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_Spectator_HpBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_Spectator_HpBar) == 0x000008, "Wrong alignment on UPyWidget_Setting_Spectator_HpBar");
-static_assert(sizeof(UPyWidget_Setting_Spectator_HpBar) == 0x0003B8, "Wrong size on UPyWidget_Setting_Spectator_HpBar");
+DUMPER7_ASSERTS_UPyWidget_Setting_Spectator_HpBar;
 
 // PythonClass PyWidget_SettingMouseAndKeyBoard_SpectatorSetting.PyWidget_Setting_Spectator_PlayerName
 // 0x0000 (0x03B8 - 0x03B8)
@@ -69,15 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_Spectator_PlayerName">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_Spectator_PlayerName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_Spectator_PlayerName")
 	}
 	static class UPyWidget_Setting_Spectator_PlayerName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_Spectator_PlayerName>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_Spectator_PlayerName) == 0x000008, "Wrong alignment on UPyWidget_Setting_Spectator_PlayerName");
-static_assert(sizeof(UPyWidget_Setting_Spectator_PlayerName) == 0x0003B8, "Wrong size on UPyWidget_Setting_Spectator_PlayerName");
+DUMPER7_ASSERTS_UPyWidget_Setting_Spectator_PlayerName;
 
 // PythonClass PyWidget_SettingMouseAndKeyBoard_SpectatorSetting.PyWidget_Setting_Spectator_Outline
 // 0x0000 (0x03B8 - 0x03B8)
@@ -89,15 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_Spectator_Outline">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_Spectator_Outline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_Spectator_Outline")
 	}
 	static class UPyWidget_Setting_Spectator_Outline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_Spectator_Outline>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_Spectator_Outline) == 0x000008, "Wrong alignment on UPyWidget_Setting_Spectator_Outline");
-static_assert(sizeof(UPyWidget_Setting_Spectator_Outline) == 0x0003B8, "Wrong size on UPyWidget_Setting_Spectator_Outline");
+DUMPER7_ASSERTS_UPyWidget_Setting_Spectator_Outline;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct PyLevelSplineBaseMoveComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSplineBaseMoveComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelSplineBaseMoveComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelSplineBaseMoveComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelSplineBaseMoveComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelSplineBaseMoveComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelSplineBaseMoveComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSplineBaseMoveComponent_ReceiveEndPlay;
 
 // PythonFunction PyLevelSplineBaseMoveComponent.PyLevelSplineBaseMoveComponent.PyTimelineUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyLevelSplineBaseMoveComponent_PyTimelineUpdate final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSplineBaseMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong alignment on PyLevelSplineBaseMoveComponent_PyTimelineUpdate");
-static_assert(sizeof(PyLevelSplineBaseMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong size on PyLevelSplineBaseMoveComponent_PyTimelineUpdate");
-static_assert(offsetof(PyLevelSplineBaseMoveComponent_PyTimelineUpdate, DeltaTime) == 0x000000, "Member 'PyLevelSplineBaseMoveComponent_PyTimelineUpdate::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSplineBaseMoveComponent_PyTimelineUpdate;
 
 }
 

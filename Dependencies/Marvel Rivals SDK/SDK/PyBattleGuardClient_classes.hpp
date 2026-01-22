@@ -23,15 +23,18 @@ class UPyBattleGuardClient final : public UMosUEClient
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleGuardClient">();
+		STATIC_CLASS_IMPL("PyBattleGuardClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleGuardClient")
 	}
 	static class UPyBattleGuardClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleGuardClient>();
 	}
 };
-static_assert(alignof(UPyBattleGuardClient) == 0x000010, "Wrong alignment on UPyBattleGuardClient");
-static_assert(sizeof(UPyBattleGuardClient) == 0x000160, "Wrong size on UPyBattleGuardClient");
+DUMPER7_ASSERTS_UPyBattleGuardClient;
 
 }
 

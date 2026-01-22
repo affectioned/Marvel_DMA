@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PlayerHeadFrame.PyWidget_PlayerHeadFrame
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PlayerHeadFrame : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PlayerHeadFrame">();
+		STATIC_CLASS_IMPL("PyWidget_PlayerHeadFrame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PlayerHeadFrame")
 	}
 	static class UPyWidget_PlayerHeadFrame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PlayerHeadFrame>();
 	}
 };
-static_assert(alignof(UPyWidget_PlayerHeadFrame) == 0x000008, "Wrong alignment on UPyWidget_PlayerHeadFrame");
-static_assert(sizeof(UPyWidget_PlayerHeadFrame) == 0x0005C0, "Wrong size on UPyWidget_PlayerHeadFrame");
+DUMPER7_ASSERTS_UPyWidget_PlayerHeadFrame;
 
 }
 

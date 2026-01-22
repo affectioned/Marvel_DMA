@@ -23,15 +23,18 @@ class UAIMoveControl_ScarletWitchInvisible_4024_C final : public UAIAbilityMoveC
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_ScarletWitchInvisible_4024_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_ScarletWitchInvisible_4024_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_ScarletWitchInvisible_4024_C")
 	}
 	static class UAIMoveControl_ScarletWitchInvisible_4024_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_ScarletWitchInvisible_4024_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_ScarletWitchInvisible_4024_C) == 0x000008, "Wrong alignment on UAIMoveControl_ScarletWitchInvisible_4024_C");
-static_assert(sizeof(UAIMoveControl_ScarletWitchInvisible_4024_C) == 0x0000B8, "Wrong size on UAIMoveControl_ScarletWitchInvisible_4024_C");
+DUMPER7_ASSERTS_UAIMoveControl_ScarletWitchInvisible_4024_C;
 
 }
 

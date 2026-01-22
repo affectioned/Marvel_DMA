@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGalactaAnimInstance_Activity151">();
+		STATIC_CLASS_IMPL("PyGalactaAnimInstance_Activity151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGalactaAnimInstance_Activity151")
 	}
 	static class UPyGalactaAnimInstance_Activity151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGalactaAnimInstance_Activity151>();
 	}
 };
-static_assert(alignof(UPyGalactaAnimInstance_Activity151) == 0x000010, "Wrong alignment on UPyGalactaAnimInstance_Activity151");
-static_assert(sizeof(UPyGalactaAnimInstance_Activity151) == 0x000470, "Wrong size on UPyGalactaAnimInstance_Activity151");
-static_assert(offsetof(UPyGalactaAnimInstance_Activity151, animation) == 0x000450, "Member 'UPyGalactaAnimInstance_Activity151::animation' has a wrong offset!");
-static_assert(offsetof(UPyGalactaAnimInstance_Activity151, OnAnimFinished) == 0x000458, "Member 'UPyGalactaAnimInstance_Activity151::OnAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyGalactaAnimInstance_Activity151;
 
 // PythonClass PyGalacta_Activity151.PyGalacta_Activity151
 // 0x01C0 (0x08A0 - 0x06E0)
@@ -76,28 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGalacta_Activity151">();
+		STATIC_CLASS_IMPL("PyGalacta_Activity151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGalacta_Activity151")
 	}
 	static class APyGalacta_Activity151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyGalacta_Activity151>();
 	}
 };
-static_assert(alignof(APyGalacta_Activity151) == 0x000010, "Wrong alignment on APyGalacta_Activity151");
-static_assert(sizeof(APyGalacta_Activity151) == 0x0008A0, "Wrong size on APyGalacta_Activity151");
-static_assert(offsetof(APyGalacta_Activity151, chat_opening_remarks) == 0x0006E0, "Member 'APyGalacta_Activity151::chat_opening_remarks' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_enter) == 0x000708, "Member 'APyGalacta_Activity151::chat_enter' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_idle) == 0x000718, "Member 'APyGalacta_Activity151::chat_idle' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_idle_interval) == 0x000728, "Member 'APyGalacta_Activity151::chat_idle_interval' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_countdown_begin) == 0x000730, "Member 'APyGalacta_Activity151::chat_countdown_begin' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_countdown_counting) == 0x000758, "Member 'APyGalacta_Activity151::chat_countdown_counting' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_countdown_end) == 0x000780, "Member 'APyGalacta_Activity151::chat_countdown_end' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_activity146) == 0x0007A8, "Member 'APyGalacta_Activity151::chat_activity146' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_activity147) == 0x0007D0, "Member 'APyGalacta_Activity151::chat_activity147' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_activity148) == 0x0007F8, "Member 'APyGalacta_Activity151::chat_activity148' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_activity149) == 0x000820, "Member 'APyGalacta_Activity151::chat_activity149' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_activity150) == 0x000848, "Member 'APyGalacta_Activity151::chat_activity150' has a wrong offset!");
-static_assert(offsetof(APyGalacta_Activity151, chat_m2201) == 0x000870, "Member 'APyGalacta_Activity151::chat_m2201' has a wrong offset!");
+DUMPER7_ASSERTS_APyGalacta_Activity151;
 
 }
 

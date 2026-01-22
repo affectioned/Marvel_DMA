@@ -10,34 +10,40 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_M2201SwitchPanel.PyWidget_M2201SwitchPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_M2201SwitchPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
 	void OnInitialized();
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+	void Construct();
+	void Destruct();
 	void MarvelSetVisible(bool Visible);
 	void OnReceiveInputKey(const struct FKey& Key, const EInputEvent EventType);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201SwitchPanel">();
+		STATIC_CLASS_IMPL("PyWidget_M2201SwitchPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201SwitchPanel")
 	}
 	static class UPyWidget_M2201SwitchPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201SwitchPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201SwitchPanel) == 0x000008, "Wrong alignment on UPyWidget_M2201SwitchPanel");
-static_assert(sizeof(UPyWidget_M2201SwitchPanel) == 0x0005F8, "Wrong size on UPyWidget_M2201SwitchPanel");
+DUMPER7_ASSERTS_UPyWidget_M2201SwitchPanel;
 
 }
 

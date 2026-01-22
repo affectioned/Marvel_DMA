@@ -23,9 +23,7 @@ struct PyAbility_200301_CanPreActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200301_CanPreActivate) == 0x000001, "Wrong alignment on PyAbility_200301_CanPreActivate");
-static_assert(sizeof(PyAbility_200301_CanPreActivate) == 0x000001, "Wrong size on PyAbility_200301_CanPreActivate");
-static_assert(offsetof(PyAbility_200301_CanPreActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200301_CanPreActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_CanPreActivate;
 
 // PythonFunction PyAbility_200301.PyAbility_200301.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_200301_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200301_CanActivate) == 0x000001, "Wrong alignment on PyAbility_200301_CanActivate");
-static_assert(sizeof(PyAbility_200301_CanActivate) == 0x000001, "Wrong size on PyAbility_200301_CanActivate");
-static_assert(offsetof(PyAbility_200301_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200301_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_CanActivate;
 
 // PythonFunction PyAbility_200301.PyAbility_200301.TryMakeTriggerContext
 // 0x0298 (0x0298 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0290(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200301_TryMakeTriggerContext) == 0x000008, "Wrong alignment on PyAbility_200301_TryMakeTriggerContext");
-static_assert(sizeof(PyAbility_200301_TryMakeTriggerContext) == 0x000298, "Wrong size on PyAbility_200301_TryMakeTriggerContext");
-static_assert(offsetof(PyAbility_200301_TryMakeTriggerContext, EventData) == 0x000000, "Member 'PyAbility_200301_TryMakeTriggerContext::EventData' has a wrong offset!");
-static_assert(offsetof(PyAbility_200301_TryMakeTriggerContext, ReturnValue) == 0x000290, "Member 'PyAbility_200301_TryMakeTriggerContext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_TryMakeTriggerContext;
 
 // PythonFunction PyAbility_200301.PyAbility_200301.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -58,9 +51,7 @@ struct PyAbility_200301_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_200301_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_200301_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_200301_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_200301_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_200301_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_200301_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_200301.PyAbility_200301.K2_OnMoveLogicFrameExecute
 // 0x0018 (0x0018 - 0x0000)
@@ -71,11 +62,7 @@ public:
 	class AActor*                                 TriggerPortal;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 TargetPlayerStart;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200301_K2_OnMoveLogicFrameExecute) == 0x000008, "Wrong alignment on PyAbility_200301_K2_OnMoveLogicFrameExecute");
-static_assert(sizeof(PyAbility_200301_K2_OnMoveLogicFrameExecute) == 0x000018, "Wrong size on PyAbility_200301_K2_OnMoveLogicFrameExecute");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameExecute, InOwnerMovementComponent) == 0x000000, "Member 'PyAbility_200301_K2_OnMoveLogicFrameExecute::InOwnerMovementComponent' has a wrong offset!");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameExecute, TriggerPortal) == 0x000008, "Member 'PyAbility_200301_K2_OnMoveLogicFrameExecute::TriggerPortal' has a wrong offset!");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameExecute, TargetPlayerStart) == 0x000010, "Member 'PyAbility_200301_K2_OnMoveLogicFrameExecute::TargetPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_K2_OnMoveLogicFrameExecute;
 
 // PythonFunction PyAbility_200301.PyAbility_200301.K2_OnMoveLogicFrameReplayExecute
 // 0x0018 (0x0018 - 0x0000)
@@ -86,11 +73,7 @@ public:
 	class AActor*                                 TriggerPortal;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 TargetPlayerStart;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200301_K2_OnMoveLogicFrameReplayExecute) == 0x000008, "Wrong alignment on PyAbility_200301_K2_OnMoveLogicFrameReplayExecute");
-static_assert(sizeof(PyAbility_200301_K2_OnMoveLogicFrameReplayExecute) == 0x000018, "Wrong size on PyAbility_200301_K2_OnMoveLogicFrameReplayExecute");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameReplayExecute, InOwnerMovementComponent) == 0x000000, "Member 'PyAbility_200301_K2_OnMoveLogicFrameReplayExecute::InOwnerMovementComponent' has a wrong offset!");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameReplayExecute, TriggerPortal) == 0x000008, "Member 'PyAbility_200301_K2_OnMoveLogicFrameReplayExecute::TriggerPortal' has a wrong offset!");
-static_assert(offsetof(PyAbility_200301_K2_OnMoveLogicFrameReplayExecute, TargetPlayerStart) == 0x000010, "Member 'PyAbility_200301_K2_OnMoveLogicFrameReplayExecute::TargetPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200301_K2_OnMoveLogicFrameReplayExecute;
 
 }
 

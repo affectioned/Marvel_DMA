@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyChatEmoteSetGenerator">();
+		STATIC_CLASS_IMPL("PyChatEmoteSetGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyChatEmoteSetGenerator")
 	}
 	static class UPyChatEmoteSetGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyChatEmoteSetGenerator>();
 	}
 };
-static_assert(alignof(UPyChatEmoteSetGenerator) == 0x000008, "Wrong alignment on UPyChatEmoteSetGenerator");
-static_assert(sizeof(UPyChatEmoteSetGenerator) == 0x000030, "Wrong size on UPyChatEmoteSetGenerator");
+DUMPER7_ASSERTS_UPyChatEmoteSetGenerator;
 
 }
 

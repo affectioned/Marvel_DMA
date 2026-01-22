@@ -25,10 +25,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_OnReceiveInputAction) == 0x000004, "Wrong alignment on PyWidget_ChatPanelV4_OnReceiveInputAction");
-static_assert(sizeof(PyWidget_ChatPanelV4_OnReceiveInputAction) == 0x000010, "Wrong size on PyWidget_ChatPanelV4_OnReceiveInputAction");
-static_assert(offsetof(PyWidget_ChatPanelV4_OnReceiveInputAction, ActionName) == 0x000000, "Member 'PyWidget_ChatPanelV4_OnReceiveInputAction::ActionName' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_OnReceiveInputAction, EventType) == 0x00000C, "Member 'PyWidget_ChatPanelV4_OnReceiveInputAction::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_OnReceiveInputAction;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.Activate
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +34,16 @@ struct PyWidget_ChatPanelV4_Activate final
 public:
 	int32                                         TargetChannel;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_Activate) == 0x000004, "Wrong alignment on PyWidget_ChatPanelV4_Activate");
-static_assert(sizeof(PyWidget_ChatPanelV4_Activate) == 0x000004, "Wrong size on PyWidget_ChatPanelV4_Activate");
-static_assert(offsetof(PyWidget_ChatPanelV4_Activate, TargetChannel) == 0x000000, "Member 'PyWidget_ChatPanelV4_Activate::TargetChannel' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_Activate;
+
+// PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.OnAnimationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_ChatPanelV4_OnAnimationFinished final
+{
+public:
+	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_OnAnimationFinished;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.InputText_Up_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_InputText_Up_Navigation) == 0x000008, "Wrong alignment on PyWidget_ChatPanelV4_InputText_Up_Navigation");
-static_assert(sizeof(PyWidget_ChatPanelV4_InputText_Up_Navigation) == 0x000010, "Wrong size on PyWidget_ChatPanelV4_InputText_Up_Navigation");
-static_assert(offsetof(PyWidget_ChatPanelV4_InputText_Up_Navigation, Navigation_0) == 0x000000, "Member 'PyWidget_ChatPanelV4_InputText_Up_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_InputText_Up_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_ChatPanelV4_InputText_Up_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_InputText_Up_Navigation;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.InputText_Down_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +65,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_InputText_Down_Navigation) == 0x000008, "Wrong alignment on PyWidget_ChatPanelV4_InputText_Down_Navigation");
-static_assert(sizeof(PyWidget_ChatPanelV4_InputText_Down_Navigation) == 0x000010, "Wrong size on PyWidget_ChatPanelV4_InputText_Down_Navigation");
-static_assert(offsetof(PyWidget_ChatPanelV4_InputText_Down_Navigation, Navigation_0) == 0x000000, "Member 'PyWidget_ChatPanelV4_InputText_Down_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_InputText_Down_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_ChatPanelV4_InputText_Down_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_InputText_Down_Navigation;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.ListView_Normal_Down_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -78,10 +76,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation) == 0x000008, "Wrong alignment on PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation");
-static_assert(sizeof(PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation) == 0x000010, "Wrong size on PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation");
-static_assert(offsetof(PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation, Navigation_0) == 0x000000, "Member 'PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_ListView_Normal_Down_Navigation;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.PrintMsgText
 // 0x0030 (0x0030 - 0x0000)
@@ -95,14 +90,7 @@ public:
 	int32                                         ChannelType;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SpecialType;                                       // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_PrintMsgText) == 0x000008, "Wrong alignment on PyWidget_ChatPanelV4_PrintMsgText");
-static_assert(sizeof(PyWidget_ChatPanelV4_PrintMsgText) == 0x000030, "Wrong size on PyWidget_ChatPanelV4_PrintMsgText");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, Text) == 0x000000, "Member 'PyWidget_ChatPanelV4_PrintMsgText::Text' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, Name_0) == 0x000010, "Member 'PyWidget_ChatPanelV4_PrintMsgText::Name_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, MessageSide) == 0x000020, "Member 'PyWidget_ChatPanelV4_PrintMsgText::MessageSide' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, TimeStamp) == 0x000024, "Member 'PyWidget_ChatPanelV4_PrintMsgText::TimeStamp' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, ChannelType) == 0x000028, "Member 'PyWidget_ChatPanelV4_PrintMsgText::ChannelType' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintMsgText, SpecialType) == 0x00002C, "Member 'PyWidget_ChatPanelV4_PrintMsgText::SpecialType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_PrintMsgText;
 
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.PrintTeamMsgText
 // 0x0038 (0x0038 - 0x0000)
@@ -115,13 +103,7 @@ public:
 	int32                                         TimeStamp;                                         // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 AID;                                               // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPanelV4_PrintTeamMsgText) == 0x000008, "Wrong alignment on PyWidget_ChatPanelV4_PrintTeamMsgText");
-static_assert(sizeof(PyWidget_ChatPanelV4_PrintTeamMsgText) == 0x000038, "Wrong size on PyWidget_ChatPanelV4_PrintTeamMsgText");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintTeamMsgText, Text) == 0x000000, "Member 'PyWidget_ChatPanelV4_PrintTeamMsgText::Text' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintTeamMsgText, Name_0) == 0x000010, "Member 'PyWidget_ChatPanelV4_PrintTeamMsgText::Name_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintTeamMsgText, MessageSide) == 0x000020, "Member 'PyWidget_ChatPanelV4_PrintTeamMsgText::MessageSide' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintTeamMsgText, TimeStamp) == 0x000024, "Member 'PyWidget_ChatPanelV4_PrintTeamMsgText::TimeStamp' has a wrong offset!");
-static_assert(offsetof(PyWidget_ChatPanelV4_PrintTeamMsgText, AID) == 0x000028, "Member 'PyWidget_ChatPanelV4_PrintTeamMsgText::AID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPanelV4_PrintTeamMsgText;
 
 }
 

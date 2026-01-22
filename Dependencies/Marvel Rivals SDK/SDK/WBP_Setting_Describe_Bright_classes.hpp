@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Describe_Bright.WBP_Setting_Describe_Bright_C
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UWBP_Setting_Describe_Bright_C final : public UPyWidget_SettingDescribeBright
 {
 public:
-	class UMarvelImage*                           Img_Birght_Scene;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Scene_Mask;                                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Birght_Scene;                                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Scene_Mask;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Describe_Bright_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Describe_Bright_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Describe_Bright_C")
 	}
 	static class UWBP_Setting_Describe_Bright_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Describe_Bright_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Describe_Bright_C) == 0x000008, "Wrong alignment on UWBP_Setting_Describe_Bright_C");
-static_assert(sizeof(UWBP_Setting_Describe_Bright_C) == 0x0005D0, "Wrong size on UWBP_Setting_Describe_Bright_C");
-static_assert(offsetof(UWBP_Setting_Describe_Bright_C, Img_Birght_Scene) == 0x0005C0, "Member 'UWBP_Setting_Describe_Bright_C::Img_Birght_Scene' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Bright_C, Img_Scene_Mask) == 0x0005C8, "Member 'UWBP_Setting_Describe_Bright_C::Img_Scene_Mask' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Describe_Bright_C;
 
 }
 

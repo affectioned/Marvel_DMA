@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Train_TaskPanel.PyWidget_Train_TaskPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Train_TaskPanel : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Train_TaskPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Train_TaskPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Train_TaskPanel")
 	}
 	static class UPyWidget_Train_TaskPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Train_TaskPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Train_TaskPanel) == 0x000008, "Wrong alignment on UPyWidget_Train_TaskPanel");
-static_assert(sizeof(UPyWidget_Train_TaskPanel) == 0x0005C0, "Wrong size on UPyWidget_Train_TaskPanel");
+DUMPER7_ASSERTS_UPyWidget_Train_TaskPanel;
 
 }
 

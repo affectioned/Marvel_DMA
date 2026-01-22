@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_Tips.WBP_SelectHero_Tips_C
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UWBP_SelectHero_Tips_C final : public UPyWidget_SelectHero_HeroListTips
 {
 public:
-	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg;                                            // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon;                                          // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_RedBg;                                         // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_RedOutline;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tips_Glow;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Tips;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_RedBg;                                         // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_RedOutline;                                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tips_Glow;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Tips;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_Tips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_Tips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_Tips_C")
 	}
 	static class UWBP_SelectHero_Tips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_Tips_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_Tips_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_Tips_C");
-static_assert(sizeof(UWBP_SelectHero_Tips_C) == 0x0005F8, "Wrong size on UWBP_SelectHero_Tips_C");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Anim_Reset) == 0x0005C0, "Member 'UWBP_SelectHero_Tips_C::Anim_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Img_Bg) == 0x0005C8, "Member 'UWBP_SelectHero_Tips_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Img_Icon) == 0x0005D0, "Member 'UWBP_SelectHero_Tips_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Img_RedBg) == 0x0005D8, "Member 'UWBP_SelectHero_Tips_C::Img_RedBg' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Img_RedOutline) == 0x0005E0, "Member 'UWBP_SelectHero_Tips_C::Img_RedOutline' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Img_Tips_Glow) == 0x0005E8, "Member 'UWBP_SelectHero_Tips_C::Img_Tips_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Tips_C, Text_Tips) == 0x0005F0, "Member 'UWBP_SelectHero_Tips_C::Text_Tips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_Tips_C;
 
 }
 

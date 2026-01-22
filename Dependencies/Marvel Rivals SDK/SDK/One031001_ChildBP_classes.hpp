@@ -17,45 +17,37 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1031001_ChildBP.1031001_ChildBP_C
-// 0x0060 (0x0E80 - 0x0E20)
+// 0x0060 (0x0E90 - 0x0E30)
 class AOne031001_ChildBP_C final : public APyLunaSnowChildActor
 {
 public:
-	class UMarvelHitShape_Capsule*                HitCalf_L;                                         // 0x0E20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitThigh_L;                                        // 0x0E28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitCalf_R;                                         // 0x0E30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitThigh_R;                                        // 0x0E38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitLowerArm_L;                                     // 0x0E40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitUpperArm_L;                                     // 0x0E48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitLowerArm_R;                                     // 0x0E50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitUpperArm_R;                                     // 0x0E58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitAbdomen;                                        // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitChest;                                          // 0x0E68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitHead;                                           // 0x0E70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitCalf_L;                                         // 0x0E30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitThigh_L;                                        // 0x0E38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitCalf_R;                                         // 0x0E40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitThigh_R;                                        // 0x0E48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitLowerArm_L;                                     // 0x0E50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitUpperArm_L;                                     // 0x0E58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitLowerArm_R;                                     // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitUpperArm_R;                                     // 0x0E68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitAbdomen;                                        // 0x0E70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitChest;                                          // 0x0E78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitHead;                                           // 0x0E80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1031001_ChildBP_C">();
+		BP_STATIC_CLASS_IMPL("1031001_ChildBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1031001_ChildBP_C")
 	}
 	static class AOne031001_ChildBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne031001_ChildBP_C>();
 	}
 };
-static_assert(alignof(AOne031001_ChildBP_C) == 0x000010, "Wrong alignment on AOne031001_ChildBP_C");
-static_assert(sizeof(AOne031001_ChildBP_C) == 0x000E80, "Wrong size on AOne031001_ChildBP_C");
-static_assert(offsetof(AOne031001_ChildBP_C, HitCalf_L) == 0x000E20, "Member 'AOne031001_ChildBP_C::HitCalf_L' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitThigh_L) == 0x000E28, "Member 'AOne031001_ChildBP_C::HitThigh_L' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitCalf_R) == 0x000E30, "Member 'AOne031001_ChildBP_C::HitCalf_R' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitThigh_R) == 0x000E38, "Member 'AOne031001_ChildBP_C::HitThigh_R' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitLowerArm_L) == 0x000E40, "Member 'AOne031001_ChildBP_C::HitLowerArm_L' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitUpperArm_L) == 0x000E48, "Member 'AOne031001_ChildBP_C::HitUpperArm_L' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitLowerArm_R) == 0x000E50, "Member 'AOne031001_ChildBP_C::HitLowerArm_R' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitUpperArm_R) == 0x000E58, "Member 'AOne031001_ChildBP_C::HitUpperArm_R' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitAbdomen) == 0x000E60, "Member 'AOne031001_ChildBP_C::HitAbdomen' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitChest) == 0x000E68, "Member 'AOne031001_ChildBP_C::HitChest' has a wrong offset!");
-static_assert(offsetof(AOne031001_ChildBP_C, HitHead) == 0x000E70, "Member 'AOne031001_ChildBP_C::HitHead' has a wrong offset!");
+DUMPER7_ASSERTS_AOne031001_ChildBP_C;
 
 }
 

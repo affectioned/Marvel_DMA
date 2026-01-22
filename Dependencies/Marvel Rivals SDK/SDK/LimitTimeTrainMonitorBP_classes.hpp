@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LimitTimeTrainMonitorBP_C">();
+		BP_STATIC_CLASS_IMPL("LimitTimeTrainMonitorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LimitTimeTrainMonitorBP_C")
 	}
 	static class ALimitTimeTrainMonitorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALimitTimeTrainMonitorBP_C>();
 	}
 };
-static_assert(alignof(ALimitTimeTrainMonitorBP_C) == 0x000010, "Wrong alignment on ALimitTimeTrainMonitorBP_C");
-static_assert(sizeof(ALimitTimeTrainMonitorBP_C) == 0x000700, "Wrong size on ALimitTimeTrainMonitorBP_C");
-static_assert(offsetof(ALimitTimeTrainMonitorBP_C, AmbientAudio) == 0x0006E0, "Member 'ALimitTimeTrainMonitorBP_C::AmbientAudio' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainMonitorBP_C, AK) == 0x0006E8, "Member 'ALimitTimeTrainMonitorBP_C::AK' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainMonitorBP_C, WC_Training_MonitorBP) == 0x0006F0, "Member 'ALimitTimeTrainMonitorBP_C::WC_Training_MonitorBP' has a wrong offset!");
+DUMPER7_ASSERTS_ALimitTimeTrainMonitorBP_C;
 
 }
 

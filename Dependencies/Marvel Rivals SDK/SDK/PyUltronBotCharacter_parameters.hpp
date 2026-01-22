@@ -24,9 +24,7 @@ struct PyUltronBotCharacter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUltronBotCharacter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyUltronBotCharacter_ReceiveEndPlay");
-static_assert(sizeof(PyUltronBotCharacter_ReceiveEndPlay) == 0x000001, "Wrong size on PyUltronBotCharacter_ReceiveEndPlay");
-static_assert(offsetof(PyUltronBotCharacter_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyUltronBotCharacter_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyUltronBotCharacter_ReceiveEndPlay;
 
 // PythonFunction PyUltronBotCharacter.PyUltronBotCharacter.OnUltronBotKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               Modifier;                                          // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUltronBotCharacter_OnUltronBotKillOther) == 0x000008, "Wrong alignment on PyUltronBotCharacter_OnUltronBotKillOther");
-static_assert(sizeof(PyUltronBotCharacter_OnUltronBotKillOther) == 0x000028, "Wrong size on PyUltronBotCharacter_OnUltronBotKillOther");
-static_assert(offsetof(PyUltronBotCharacter_OnUltronBotKillOther, Source) == 0x000000, "Member 'PyUltronBotCharacter_OnUltronBotKillOther::Source' has a wrong offset!");
-static_assert(offsetof(PyUltronBotCharacter_OnUltronBotKillOther, Target) == 0x000008, "Member 'PyUltronBotCharacter_OnUltronBotKillOther::Target' has a wrong offset!");
-static_assert(offsetof(PyUltronBotCharacter_OnUltronBotKillOther, Modifier) == 0x000010, "Member 'PyUltronBotCharacter_OnUltronBotKillOther::Modifier' has a wrong offset!");
+DUMPER7_ASSERTS_PyUltronBotCharacter_OnUltronBotKillOther;
 
 }
 

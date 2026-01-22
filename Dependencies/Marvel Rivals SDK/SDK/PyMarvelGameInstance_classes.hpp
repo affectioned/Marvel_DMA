@@ -19,34 +19,36 @@ namespace SDK
 {
 
 // PythonClass PyMarvelGameInstance.PyMarvelGameInstance
-// 0x0088 (0x0718 - 0x0690)
+// 0x0088 (0x0778 - 0x06F0)
 class UPyMarvelGameInstance : public UMarvelGameInstance
 {
 public:
-	int32                                         LobbyConnectionID;                                 // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PlayerName;                                        // 0x0698(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ModeID;                                            // 0x06A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6AC[0x4];                                      // 0x06AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 LoginKey;                                          // 0x06B0(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                ColorManager;                                      // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& Error)> OnReceiveDemoPlaybackFailure;         // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 switch_key, bool is_enabled)> OnSystemSwitchChanged;         // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPause, const class FString& PauseMeta, bool IsActual)> OnReplayGamePause; // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& bid)> OnBattleIDSet;                          // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBattlePanelFinish;                               // 0x0708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         LobbyConnectionID;                                 // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6F4[0x4];                                      // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PlayerName;                                        // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ModeID;                                            // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_70C[0x4];                                      // 0x070C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 LoginKey;                                          // 0x0710(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ColorManager;                                      // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& Error)> OnReceiveDemoPlaybackFailure;         // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 switch_key, bool is_enabled)> OnSystemSwitchChanged;         // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPause, const class FString& PauseMeta, bool IsActual)> OnReplayGamePause; // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& bid)> OnBattleIDSet;                          // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBattlePanelFinish;                               // 0x0768(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	int32 GetClientPort();
+	void ReceiveOnDSExit();
 	void ReceiveInit();
 	void UpdateReplayEnv();
 	void OnHandShakeMsg(const class FString& sMsg);
 	void OnUELoginMsg(const class FString& sMsg);
 	void OnEngineExitClient(const int32 exit_reason);
 	void OnWindowStyleChanged(const int64 style_old, const int64 style_new);
+	void OnShowFloatingGamepadTextInput(const int32 input_mode);
 	void OnAcceptedConnection(class UNetConnection* connection);
 	void OnUEConnectionTimeOut(const int64 connectionId, const int32 state, bool bUseIpv6Flag, const class FString& msg);
-	void OnUEConnectionFastTimeOut(const int64 connectionId, const int32 state, bool bUseIpv6Flag, const class FString& msg);
+	void OnUEConnectionFastTimeOut(class UNetConnection* connection, const int32 state, bool bUseIpv6Flag, const class FString& msg);
 	void ClientSwitchToV4(int64 connectionId);
 	void OnRecreateSocketReturn(int64 ConnectionId, int32 Port, int32 RecreateSocketTimes, const class FString& RecreateSocketResult);
 	void OnRecreateSocketComplete(int64 ConnectionId, int32 Port, int32 RecreateSocketTimes);
@@ -85,25 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelGameInstance">();
+		STATIC_CLASS_IMPL("PyMarvelGameInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelGameInstance")
 	}
 	static class UPyMarvelGameInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelGameInstance>();
 	}
 };
-static_assert(alignof(UPyMarvelGameInstance) == 0x000008, "Wrong alignment on UPyMarvelGameInstance");
-static_assert(sizeof(UPyMarvelGameInstance) == 0x000718, "Wrong size on UPyMarvelGameInstance");
-static_assert(offsetof(UPyMarvelGameInstance, LobbyConnectionID) == 0x000690, "Member 'UPyMarvelGameInstance::LobbyConnectionID' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, PlayerName) == 0x000698, "Member 'UPyMarvelGameInstance::PlayerName' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, ModeID) == 0x0006A8, "Member 'UPyMarvelGameInstance::ModeID' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, LoginKey) == 0x0006B0, "Member 'UPyMarvelGameInstance::LoginKey' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, ColorManager) == 0x0006C0, "Member 'UPyMarvelGameInstance::ColorManager' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, OnReceiveDemoPlaybackFailure) == 0x0006C8, "Member 'UPyMarvelGameInstance::OnReceiveDemoPlaybackFailure' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, OnSystemSwitchChanged) == 0x0006D8, "Member 'UPyMarvelGameInstance::OnSystemSwitchChanged' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, OnReplayGamePause) == 0x0006E8, "Member 'UPyMarvelGameInstance::OnReplayGamePause' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, OnBattleIDSet) == 0x0006F8, "Member 'UPyMarvelGameInstance::OnBattleIDSet' has a wrong offset!");
-static_assert(offsetof(UPyMarvelGameInstance, OnBattlePanelFinish) == 0x000708, "Member 'UPyMarvelGameInstance::OnBattlePanelFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelGameInstance;
 
 }
 

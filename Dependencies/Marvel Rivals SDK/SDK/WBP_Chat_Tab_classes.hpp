@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ChatTabSwitcher_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ChatTabSwitcher_classes.hpp"
 
 
 namespace SDK
@@ -41,29 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_Tab_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_Tab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_Tab_C")
 	}
 	static class UWBP_Chat_Tab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_Tab_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_Tab_C) == 0x000008, "Wrong alignment on UWBP_Chat_Tab_C");
-static_assert(sizeof(UWBP_Chat_Tab_C) == 0x000498, "Wrong size on UWBP_Chat_Tab_C");
-static_assert(offsetof(UWBP_Chat_Tab_C, Img_ChatTab_Bg) == 0x0003B8, "Member 'UWBP_Chat_Tab_C::Img_ChatTab_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Img_ChatTab_Select) == 0x0003C0, "Member 'UWBP_Chat_Tab_C::Img_ChatTab_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, 私聊颜色) == 0x0003C8, "Member 'UWBP_Chat_Tab_C::私聊颜色' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, 比赛颜色) == 0x0003DC, "Member 'UWBP_Chat_Tab_C::比赛颜色' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, 队伍颜色) == 0x0003F0, "Member 'UWBP_Chat_Tab_C::队伍颜色' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_World) == 0x000404, "Member 'UWBP_Chat_Tab_C::Color_World' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Team) == 0x000414, "Member 'UWBP_Chat_Tab_C::Color_Team' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Game) == 0x000424, "Member 'UWBP_Chat_Tab_C::Color_Game' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Private) == 0x000434, "Member 'UWBP_Chat_Tab_C::Color_Private' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Clan) == 0x000444, "Member 'UWBP_Chat_Tab_C::Color_Clan' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_League_Room) == 0x000454, "Member 'UWBP_Chat_Tab_C::Color_League_Room' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Discord) == 0x000464, "Member 'UWBP_Chat_Tab_C::Color_Discord' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_Squad) == 0x000474, "Member 'UWBP_Chat_Tab_C::Color_Squad' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Tab_C, Color_MajorCity) == 0x000484, "Member 'UWBP_Chat_Tab_C::Color_MajorCity' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_Tab_C;
 
 }
 

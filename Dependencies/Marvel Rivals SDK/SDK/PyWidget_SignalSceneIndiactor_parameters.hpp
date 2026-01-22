@@ -23,9 +23,7 @@ struct PyWdiget_SignalSceneIndicator_SetDying final
 public:
 	bool                                          IsDying;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_SetDying) == 0x000001, "Wrong alignment on PyWdiget_SignalSceneIndicator_SetDying");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_SetDying) == 0x000001, "Wrong size on PyWdiget_SignalSceneIndicator_SetDying");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_SetDying, IsDying) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_SetDying::IsDying' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_SetDying;
 
 // PythonFunction PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator.OnCueTagActivated
 // 0x01E0 (0x01E0 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_OnCueTagActivated) == 0x000008, "Wrong alignment on PyWdiget_SignalSceneIndicator_OnCueTagActivated");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_OnCueTagActivated) == 0x0001E0, "Wrong size on PyWdiget_SignalSceneIndicator_OnCueTagActivated");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_OnCueTagActivated, CueTag) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_OnCueTagActivated::CueTag' has a wrong offset!");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_OnCueTagActivated, EventType) == 0x00000C, "Member 'PyWdiget_SignalSceneIndicator_OnCueTagActivated::EventType' has a wrong offset!");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_OnCueTagActivated, Parameters) == 0x000010, "Member 'PyWdiget_SignalSceneIndicator_OnCueTagActivated::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_OnCueTagActivated;
 
 // PythonFunction PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator.OnSculptChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -50,9 +44,7 @@ struct PyWdiget_SignalSceneIndicator_OnSculptChanged final
 public:
 	int32                                         SculptID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_OnSculptChanged) == 0x000004, "Wrong alignment on PyWdiget_SignalSceneIndicator_OnSculptChanged");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_OnSculptChanged) == 0x000004, "Wrong size on PyWdiget_SignalSceneIndicator_OnSculptChanged");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_OnSculptChanged, SculptID) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_OnSculptChanged::SculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_OnSculptChanged;
 
 // PythonFunction PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator.OnViewCharacterChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +53,7 @@ struct PyWdiget_SignalSceneIndicator_OnViewCharacterChanged final
 public:
 	class AMarvelBaseCharacter*                   InChar;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_OnViewCharacterChanged) == 0x000008, "Wrong alignment on PyWdiget_SignalSceneIndicator_OnViewCharacterChanged");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_OnViewCharacterChanged) == 0x000008, "Wrong size on PyWdiget_SignalSceneIndicator_OnViewCharacterChanged");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_OnViewCharacterChanged, InChar) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_OnViewCharacterChanged::InChar' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_OnViewCharacterChanged;
 
 // PythonFunction PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +62,7 @@ struct PyWdiget_SignalSceneIndicator_MarvelSetVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWdiget_SignalSceneIndicator_MarvelSetVisible");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_MarvelSetVisible) == 0x000001, "Wrong size on PyWdiget_SignalSceneIndicator_MarvelSetVisible");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_MarvelSetVisible, bInVisible) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_MarvelSetVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_MarvelSetVisible;
 
 // PythonFunction PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -83,9 +71,7 @@ struct PyWdiget_SignalSceneIndicator_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWdiget_SignalSceneIndicator_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWdiget_SignalSceneIndicator_ShouldBeVisible");
-static_assert(sizeof(PyWdiget_SignalSceneIndicator_ShouldBeVisible) == 0x000001, "Wrong size on PyWdiget_SignalSceneIndicator_ShouldBeVisible");
-static_assert(offsetof(PyWdiget_SignalSceneIndicator_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWdiget_SignalSceneIndicator_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWdiget_SignalSceneIndicator_ShouldBeVisible;
 
 }
 

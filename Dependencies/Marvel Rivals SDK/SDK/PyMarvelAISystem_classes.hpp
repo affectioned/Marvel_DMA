@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyMarvelAISystem.PyMarvelAISystem
-// 0x0000 (0x02F8 - 0x02F8)
+// 0x0000 (0x0348 - 0x0348)
 class UPyMarvelAISystem final : public UMarvelAISystem
 {
 public:
@@ -27,20 +27,23 @@ public:
 	class AMarvelAIController* AddAICustom(const struct FAISpawnParam& spawn_param);
 	bool RemoveAIByUID(int32 uid);
 
-	class AMarvelAIControllerBase* AddAI(int32 uid, int32 hero_id, EBattleSide battle_side, const class FString& name, int32 difficulty_mode, int32 difficulty_level) const;
+	class AMarvelAIControllerBase* AddAI(int32 uid, int32 hero_id, EBattleSide battle_side, const class FString& name, int32 difficulty_mode, int32 difficulty_level, EHeroRole hero_role) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelAISystem">();
+		STATIC_CLASS_IMPL("PyMarvelAISystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelAISystem")
 	}
 	static class UPyMarvelAISystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelAISystem>();
 	}
 };
-static_assert(alignof(UPyMarvelAISystem) == 0x000008, "Wrong alignment on UPyMarvelAISystem");
-static_assert(sizeof(UPyMarvelAISystem) == 0x0002F8, "Wrong size on UPyMarvelAISystem");
+DUMPER7_ASSERTS_UPyMarvelAISystem;
 
 }
 

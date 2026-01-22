@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103461.PyEffectAbility_120_10346111
-// 0x0238 (0x15A8 - 0x1370)
+// 0x0288 (0x1610 - 0x1388)
 class UPyEffectAbility_120_10346111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ProjectileId;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FScopeQuoteSpec                        ProjectileScopeQuote;                              // 0x1378(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       ProjectileBaseDamage;                              // 0x13C0(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ProjectileGameplayCues;                            // 0x1540(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         ProjectileId;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FScopeQuoteSpec                        ProjectileScopeQuote;                              // 0x1390(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       ProjectileBaseDamage;                              // 0x13D8(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ProjectileGameplayCues;                            // 0x15A8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -36,26 +36,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10346111">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10346111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10346111")
 	}
 	static class UPyEffectAbility_120_10346111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10346111>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10346111) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10346111");
-static_assert(sizeof(UPyEffectAbility_120_10346111) == 0x0015A8, "Wrong size on UPyEffectAbility_120_10346111");
-static_assert(offsetof(UPyEffectAbility_120_10346111, ProjectileId) == 0x001370, "Member 'UPyEffectAbility_120_10346111::ProjectileId' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10346111, ProjectileScopeQuote) == 0x001378, "Member 'UPyEffectAbility_120_10346111::ProjectileScopeQuote' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10346111, ProjectileBaseDamage) == 0x0013C0, "Member 'UPyEffectAbility_120_10346111::ProjectileBaseDamage' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10346111, ProjectileGameplayCues) == 0x001540, "Member 'UPyEffectAbility_120_10346111::ProjectileGameplayCues' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10346111;
 
 // PythonClass PyBuffAbility_120_103461.PyEffectAbility_120_10346112
-// 0x0050 (0x13C0 - 0x1370)
+// 0x0050 (0x13D8 - 0x1388)
 class UPyEffectAbility_120_10346112 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TMap<int32, struct FDamageParameter>          ScopeBaseDamageOverride;                           // 0x1370(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, struct FDamageParameter>          ScopeBaseDamageOverride;                           // 0x1388(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -64,16 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10346112">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10346112")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10346112")
 	}
 	static class UPyEffectAbility_120_10346112* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10346112>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10346112) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10346112");
-static_assert(sizeof(UPyEffectAbility_120_10346112) == 0x0013C0, "Wrong size on UPyEffectAbility_120_10346112");
-static_assert(offsetof(UPyEffectAbility_120_10346112, ScopeBaseDamageOverride) == 0x001370, "Member 'UPyEffectAbility_120_10346112::ScopeBaseDamageOverride' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10346112;
 
 }
 

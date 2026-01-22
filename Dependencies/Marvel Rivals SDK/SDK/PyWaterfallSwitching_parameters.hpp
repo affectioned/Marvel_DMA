@@ -23,9 +23,7 @@ struct PyWaterfallSwitchingLSA_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWaterfallSwitchingLSA_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyWaterfallSwitchingLSA_ReceiveEndPlay");
-static_assert(sizeof(PyWaterfallSwitchingLSA_ReceiveEndPlay) == 0x000001, "Wrong size on PyWaterfallSwitchingLSA_ReceiveEndPlay");
-static_assert(offsetof(PyWaterfallSwitchingLSA_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyWaterfallSwitchingLSA_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyWaterfallSwitchingLSA_ReceiveEndPlay;
 
 }
 

@@ -31,19 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_LessEnemyLocationAround">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_LessEnemyLocationAround")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_LessEnemyLocationAround")
 	}
 	static class UPyAISelectTarget_LessEnemyLocationAround* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_LessEnemyLocationAround>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_LessEnemyLocationAround) == 0x000008, "Wrong alignment on UPyAISelectTarget_LessEnemyLocationAround");
-static_assert(sizeof(UPyAISelectTarget_LessEnemyLocationAround) == 0x000088, "Wrong size on UPyAISelectTarget_LessEnemyLocationAround");
-static_assert(offsetof(UPyAISelectTarget_LessEnemyLocationAround, EnemyFilterDistance) == 0x000070, "Member 'UPyAISelectTarget_LessEnemyLocationAround::EnemyFilterDistance' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LessEnemyLocationAround, CheckRadius) == 0x000074, "Member 'UPyAISelectTarget_LessEnemyLocationAround::CheckRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LessEnemyLocationAround, IsRandomOffsetIfBlock) == 0x00007C, "Member 'UPyAISelectTarget_LessEnemyLocationAround::IsRandomOffsetIfBlock' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LessEnemyLocationAround, LeftRightOffsetAngle) == 0x000080, "Member 'UPyAISelectTarget_LessEnemyLocationAround::LeftRightOffsetAngle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_LessEnemyLocationAround;
 
 }
 

@@ -27,23 +27,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102381">();
+		STATIC_CLASS_IMPL("PyConfig_102381")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102381")
 	}
 	static class UPyConfig_102381* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102381>();
 	}
 };
-static_assert(alignof(UPyConfig_102381) == 0x000008, "Wrong alignment on UPyConfig_102381");
-static_assert(sizeof(UPyConfig_102381) == 0x0000A8, "Wrong size on UPyConfig_102381");
-static_assert(offsetof(UPyConfig_102381, GiftedAbilityIDs) == 0x000098, "Member 'UPyConfig_102381::GiftedAbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102381;
 
 // PythonClass PyAbility_102381.PyBuffAbility_10238101
-// 0x0008 (0x1388 - 0x1380)
+// 0x0008 (0x13A0 - 0x1398)
 class UPyBuffAbility_10238101 final : public UPyBuffAbility_10001201
 {
 public:
-	bool                                          BuffCueActive;                                     // 0x1380(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BuffCueActive;                                     // 0x1398(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -53,16 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10238101">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10238101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10238101")
 	}
 	static class UPyBuffAbility_10238101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10238101>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10238101) == 0x000008, "Wrong alignment on UPyBuffAbility_10238101");
-static_assert(sizeof(UPyBuffAbility_10238101) == 0x001388, "Wrong size on UPyBuffAbility_10238101");
-static_assert(offsetof(UPyBuffAbility_10238101, BuffCueActive) == 0x001380, "Member 'UPyBuffAbility_10238101::BuffCueActive' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10238101;
 
 }
 

@@ -19,37 +19,34 @@ namespace SDK
 {
 
 // PythonClass PyUIIconAsset.PyUIIconAsset
-// 0x01A0 (0x01D8 - 0x0038)
+// 0x01F0 (0x0228 - 0x0038)
 class UPyUIIconAsset final : public UPrimaryDataAsset
 {
 public:
 	TMap<EHeroRole, class UTexture2D*>            HeroRoleIcon;                                      // 0x0038(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, class UTexture2D*>                PlayerStatusIcon;                                  // 0x0088(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EItemQuality, class UTexture2D*>         ItemQualityIcon;                                   // 0x00D8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, class UTexture2D*>     ItemQualityNewIcon;                                // 0x0128(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, struct FSlateColor>    ItemQualityIconColor;                              // 0x0178(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             QuestionBondIcon;                                  // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             RandomSkinIcon;                                    // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EHeroRole, class UTexture2D*>            HeroRoleBigIcon;                                   // 0x0088(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                PlayerStatusIcon;                                  // 0x00D8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EItemQuality, class UTexture2D*>         ItemQualityIcon;                                   // 0x0128(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, class UTexture2D*>     ItemQualityNewIcon;                                // 0x0178(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, struct FSlateColor>    ItemQualityIconColor;                              // 0x01C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             QuestionBondIcon;                                  // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             RandomSkinIcon;                                    // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIIconAsset">();
+		STATIC_CLASS_IMPL("PyUIIconAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIIconAsset")
 	}
 	static class UPyUIIconAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIIconAsset>();
 	}
 };
-static_assert(alignof(UPyUIIconAsset) == 0x000008, "Wrong alignment on UPyUIIconAsset");
-static_assert(sizeof(UPyUIIconAsset) == 0x0001D8, "Wrong size on UPyUIIconAsset");
-static_assert(offsetof(UPyUIIconAsset, HeroRoleIcon) == 0x000038, "Member 'UPyUIIconAsset::HeroRoleIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, PlayerStatusIcon) == 0x000088, "Member 'UPyUIIconAsset::PlayerStatusIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, ItemQualityIcon) == 0x0000D8, "Member 'UPyUIIconAsset::ItemQualityIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, ItemQualityNewIcon) == 0x000128, "Member 'UPyUIIconAsset::ItemQualityNewIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, ItemQualityIconColor) == 0x000178, "Member 'UPyUIIconAsset::ItemQualityIconColor' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, QuestionBondIcon) == 0x0001C8, "Member 'UPyUIIconAsset::QuestionBondIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIIconAsset, RandomSkinIcon) == 0x0001D0, "Member 'UPyUIIconAsset::RandomSkinIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIIconAsset;
 
 }
 

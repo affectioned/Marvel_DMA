@@ -21,9 +21,7 @@ struct PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent final
 public:
 	TArray<class AActor*>                         TargetList;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent) == 0x000008, "Wrong alignment on PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent");
-static_assert(sizeof(PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent) == 0x000010, "Wrong size on PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent");
-static_assert(offsetof(PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent, TargetList) == 0x000000, "Member 'PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent::TargetList' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityExtraStatistics_102461_OnSoulLinkEnemyEvent;
 
 }
 

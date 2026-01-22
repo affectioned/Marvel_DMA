@@ -17,32 +17,35 @@ namespace SDK
 {
 
 // PythonClass PyAbility_220101.PyConfig_220101
-// 0x0010 (0x1890 - 0x1880)
+// 0x0010 (0x1C40 - 0x1C30)
 class UPyConfig_220101 final : public USelectAbilityConfigBase
 {
 public:
-	uint8                                         Pad_1878[0x8];                                     // 0x1878(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ConsoleClickTime;                                  // 0x1880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C28[0x8];                                     // 0x1C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ConsoleClickTime;                                  // 0x1C30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_220101">();
+		STATIC_CLASS_IMPL("PyConfig_220101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_220101")
 	}
 	static class UPyConfig_220101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_220101>();
 	}
 };
-static_assert(alignof(UPyConfig_220101) == 0x000010, "Wrong alignment on UPyConfig_220101");
-static_assert(sizeof(UPyConfig_220101) == 0x001890, "Wrong size on UPyConfig_220101");
-static_assert(offsetof(UPyConfig_220101, ConsoleClickTime) == 0x001880, "Member 'UPyConfig_220101::ConsoleClickTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_220101;
 
 // PythonClass PyAbility_220101.PyAbility_220101
-// 0x0000 (0x2A68 - 0x2A68)
+// 0x0000 (0x2AB8 - 0x2AB8)
 class UPyAbility_220101 : public UMarvelAbility_SelectTarget
 {
 public:
+	bool CanActivate();
 	void K2_ActivateAbility();
 	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_220101">();
+		STATIC_CLASS_IMPL("PyAbility_220101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_220101")
 	}
 	static class UPyAbility_220101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_220101>();
 	}
 };
-static_assert(alignof(UPyAbility_220101) == 0x000008, "Wrong alignment on UPyAbility_220101");
-static_assert(sizeof(UPyAbility_220101) == 0x002A68, "Wrong size on UPyAbility_220101");
+DUMPER7_ASSERTS_UPyAbility_220101;
 
 }
 

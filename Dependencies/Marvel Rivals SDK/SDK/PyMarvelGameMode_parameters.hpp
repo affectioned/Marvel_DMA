@@ -24,10 +24,7 @@ public:
 	class AController*                            InController;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_GetDefaultPawnClassForController) == 0x000008, "Wrong alignment on PyMarvelGameMode_GetDefaultPawnClassForController");
-static_assert(sizeof(PyMarvelGameMode_GetDefaultPawnClassForController) == 0x000010, "Wrong size on PyMarvelGameMode_GetDefaultPawnClassForController");
-static_assert(offsetof(PyMarvelGameMode_GetDefaultPawnClassForController, InController) == 0x000000, "Member 'PyMarvelGameMode_GetDefaultPawnClassForController::InController' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameMode_GetDefaultPawnClassForController, ReturnValue) == 0x000008, "Member 'PyMarvelGameMode_GetDefaultPawnClassForController::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_GetDefaultPawnClassForController;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyMarvelGameMode_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelGameMode_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelGameMode_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelGameMode_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelGameMode_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelGameMode_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_ReceiveEndPlay;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.K2_PostLogin
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyMarvelGameMode_K2_PostLogin final
 public:
 	class APlayerController*                      NewPlayer;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_K2_PostLogin) == 0x000008, "Wrong alignment on PyMarvelGameMode_K2_PostLogin");
-static_assert(sizeof(PyMarvelGameMode_K2_PostLogin) == 0x000008, "Wrong size on PyMarvelGameMode_K2_PostLogin");
-static_assert(offsetof(PyMarvelGameMode_K2_PostLogin, NewPlayer) == 0x000000, "Member 'PyMarvelGameMode_K2_PostLogin::NewPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_K2_PostLogin;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.K2_OnLogout
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +51,7 @@ struct PyMarvelGameMode_K2_OnLogout final
 public:
 	class AController*                            ExitingController;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_K2_OnLogout) == 0x000008, "Wrong alignment on PyMarvelGameMode_K2_OnLogout");
-static_assert(sizeof(PyMarvelGameMode_K2_OnLogout) == 0x000008, "Wrong size on PyMarvelGameMode_K2_OnLogout");
-static_assert(offsetof(PyMarvelGameMode_K2_OnLogout, ExitingController) == 0x000000, "Member 'PyMarvelGameMode_K2_OnLogout::ExitingController' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_K2_OnLogout;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.PreLoginCheck
 // 0x0050 (0x0050 - 0x0000)
@@ -73,13 +64,7 @@ public:
 	class FString                                 ErrorMessage;                                      // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ReturnValue;                                       // 0x0040(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_PreLoginCheck) == 0x000008, "Wrong alignment on PyMarvelGameMode_PreLoginCheck");
-static_assert(sizeof(PyMarvelGameMode_PreLoginCheck) == 0x000050, "Wrong size on PyMarvelGameMode_PreLoginCheck");
-static_assert(offsetof(PyMarvelGameMode_PreLoginCheck, Options) == 0x000000, "Member 'PyMarvelGameMode_PreLoginCheck::Options' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameMode_PreLoginCheck, Address) == 0x000010, "Member 'PyMarvelGameMode_PreLoginCheck::Address' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameMode_PreLoginCheck, UniqueIdStr) == 0x000020, "Member 'PyMarvelGameMode_PreLoginCheck::UniqueIdStr' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameMode_PreLoginCheck, ErrorMessage) == 0x000030, "Member 'PyMarvelGameMode_PreLoginCheck::ErrorMessage' has a wrong offset!");
-static_assert(offsetof(PyMarvelGameMode_PreLoginCheck, ReturnValue) == 0x000040, "Member 'PyMarvelGameMode_PreLoginCheck::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_PreLoginCheck;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.SpawnAIController
 // 0x0008 (0x0008 - 0x0000)
@@ -88,9 +73,7 @@ struct PyMarvelGameMode_SpawnAIController final
 public:
 	class AAIController*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_SpawnAIController) == 0x000008, "Wrong alignment on PyMarvelGameMode_SpawnAIController");
-static_assert(sizeof(PyMarvelGameMode_SpawnAIController) == 0x000008, "Wrong size on PyMarvelGameMode_SpawnAIController");
-static_assert(offsetof(PyMarvelGameMode_SpawnAIController, ReturnValue) == 0x000000, "Member 'PyMarvelGameMode_SpawnAIController::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_SpawnAIController;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.SpawnDelegateAIController
 // 0x0008 (0x0008 - 0x0000)
@@ -99,9 +82,7 @@ struct PyMarvelGameMode_SpawnDelegateAIController final
 public:
 	class AAIController*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_SpawnDelegateAIController) == 0x000008, "Wrong alignment on PyMarvelGameMode_SpawnDelegateAIController");
-static_assert(sizeof(PyMarvelGameMode_SpawnDelegateAIController) == 0x000008, "Wrong size on PyMarvelGameMode_SpawnDelegateAIController");
-static_assert(offsetof(PyMarvelGameMode_SpawnDelegateAIController, ReturnValue) == 0x000000, "Member 'PyMarvelGameMode_SpawnDelegateAIController::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_SpawnDelegateAIController;
 
 // PythonFunction PyMarvelGameMode.PyMarvelGameMode.IsReplayBattleRecord
 // 0x0001 (0x0001 - 0x0000)
@@ -110,9 +91,7 @@ struct PyMarvelGameMode_IsReplayBattleRecord final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameMode_IsReplayBattleRecord) == 0x000001, "Wrong alignment on PyMarvelGameMode_IsReplayBattleRecord");
-static_assert(sizeof(PyMarvelGameMode_IsReplayBattleRecord) == 0x000001, "Wrong size on PyMarvelGameMode_IsReplayBattleRecord");
-static_assert(offsetof(PyMarvelGameMode_IsReplayBattleRecord, ReturnValue) == 0x000000, "Member 'PyMarvelGameMode_IsReplayBattleRecord::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameMode_IsReplayBattleRecord;
 
 }
 

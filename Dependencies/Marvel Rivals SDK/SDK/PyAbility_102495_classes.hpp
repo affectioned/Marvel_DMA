@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_104551_classes.hpp"
+#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -18,24 +18,34 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102495.PyConfig_102495
-// 0x0000 (0x1730 - 0x1730)
-class UPyConfig_102495 final : public UPyConfig_104551
+// 0x19C8 (0x1A60 - 0x0098)
+class UPyConfig_102495 final : public UMarvelAbilityConfig
 {
+public:
+	bool                                          DoSpaceCheck;                                      // 0x0098(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpaceCheckDelayTime;                               // 0x009C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             SceneTraceContext;                                 // 0x00A0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<int32>                                 EndAgentTaskRemoveBuffIDs;                         // 0x1A50(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102495">();
+		STATIC_CLASS_IMPL("PyConfig_102495")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102495")
 	}
 	static class UPyConfig_102495* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102495>();
 	}
 };
-static_assert(alignof(UPyConfig_102495) == 0x000010, "Wrong alignment on UPyConfig_102495");
-static_assert(sizeof(UPyConfig_102495) == 0x001730, "Wrong size on UPyConfig_102495");
+DUMPER7_ASSERTS_UPyConfig_102495;
 
 // PythonClass PyAbility_102495.PyAbility_102495
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102495 : public UMarvelGameplayAbility
 {
 public:
@@ -48,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102495">();
+		STATIC_CLASS_IMPL("PyAbility_102495")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102495")
 	}
 	static class UPyAbility_102495* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102495>();
 	}
 };
-static_assert(alignof(UPyAbility_102495) == 0x000008, "Wrong alignment on UPyAbility_102495");
-static_assert(sizeof(UPyAbility_102495) == 0x0029F0, "Wrong size on UPyAbility_102495");
+DUMPER7_ASSERTS_UPyAbility_102495;
 
 }
 

@@ -10,72 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "PyUIController_CharacterAbilities_classes.hpp"
 #include "Hero_1058_classes.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyGambitCharacter.PyGambitCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyGambitCharacter : public AGambitCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGambitCharacter">();
+		STATIC_CLASS_IMPL("PyGambitCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGambitCharacter")
 	}
 	static class APyGambitCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyGambitCharacter>();
 	}
 };
-static_assert(alignof(APyGambitCharacter) == 0x000010, "Wrong alignment on APyGambitCharacter");
-static_assert(sizeof(APyGambitCharacter) == 0x0021B0, "Wrong size on APyGambitCharacter");
-
-// PythonClass PyGambitCharacter.PyWidget_AbilityHUD_1058SkillCDList
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_AbilityHUD_1058SkillCDList final : public UPyMarvelUserWidget
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_AbilityHUD_1058SkillCDList">();
-	}
-	static class UPyWidget_AbilityHUD_1058SkillCDList* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_AbilityHUD_1058SkillCDList>();
-	}
-};
-static_assert(alignof(UPyWidget_AbilityHUD_1058SkillCDList) == 0x000008, "Wrong alignment on UPyWidget_AbilityHUD_1058SkillCDList");
-static_assert(sizeof(UPyWidget_AbilityHUD_1058SkillCDList) == 0x0005C0, "Wrong size on UPyWidget_AbilityHUD_1058SkillCDList");
-
-// PythonClass PyGambitCharacter.PyUIController_GambitAbilities
-// 0x0008 (0x0048 - 0x0040)
-class UPyUIController_GambitAbilities final : public UPyUIController_CharacterAbilities
-{
-public:
-	TSubclassOf<class UUserWidget>                SkillCDListClass;                                  // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_GambitAbilities">();
-	}
-	static class UPyUIController_GambitAbilities* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_GambitAbilities>();
-	}
-};
-static_assert(alignof(UPyUIController_GambitAbilities) == 0x000008, "Wrong alignment on UPyUIController_GambitAbilities");
-static_assert(sizeof(UPyUIController_GambitAbilities) == 0x000048, "Wrong size on UPyUIController_GambitAbilities");
-static_assert(offsetof(UPyUIController_GambitAbilities, SkillCDListClass) == 0x000040, "Member 'UPyUIController_GambitAbilities::SkillCDListClass' has a wrong offset!");
+DUMPER7_ASSERTS_APyGambitCharacter;
 
 }
 

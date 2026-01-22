@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Hero_1011_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -20,12 +20,12 @@ namespace SDK
 {
 
 // PythonClass PyHulkBannerCharacter.PyHulkBannerCharacter
-// 0x0010 (0x2260 - 0x2250)
+// 0x0010 (0x2370 - 0x2360)
 class APyHulkBannerCharacter : public AHulkBannerCharacter
 {
 public:
-	class UMarveSculptConfigComponent*            HulkHeroSculptConfigComponent;                     // 0x2250(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            HulkMonsterSculptConfigComponent;                  // 0x2258(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            HulkHeroSculptConfigComponent;                     // 0x2360(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            HulkMonsterSculptConfigComponent;                  // 0x2368(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -42,20 +42,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHulkBannerCharacter">();
+		STATIC_CLASS_IMPL("PyHulkBannerCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHulkBannerCharacter")
 	}
 	static class APyHulkBannerCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHulkBannerCharacter>();
 	}
 };
-static_assert(alignof(APyHulkBannerCharacter) == 0x000010, "Wrong alignment on APyHulkBannerCharacter");
-static_assert(sizeof(APyHulkBannerCharacter) == 0x002260, "Wrong size on APyHulkBannerCharacter");
-static_assert(offsetof(APyHulkBannerCharacter, HulkHeroSculptConfigComponent) == 0x002250, "Member 'APyHulkBannerCharacter::HulkHeroSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyHulkBannerCharacter, HulkMonsterSculptConfigComponent) == 0x002258, "Member 'APyHulkBannerCharacter::HulkMonsterSculptConfigComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyHulkBannerCharacter;
 
 // PythonClass PyHulkBannerCharacter.PyBannerBaseChildActor
-// 0x0000 (0x0E40 - 0x0E40)
+// 0x0000 (0x0E50 - 0x0E50)
 class APyBannerBaseChildActor final : public ABannerBaseChildActor
 {
 public:
@@ -66,23 +67,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBannerBaseChildActor">();
+		STATIC_CLASS_IMPL("PyBannerBaseChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBannerBaseChildActor")
 	}
 	static class APyBannerBaseChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBannerBaseChildActor>();
 	}
 };
-static_assert(alignof(APyBannerBaseChildActor) == 0x000010, "Wrong alignment on APyBannerBaseChildActor");
-static_assert(sizeof(APyBannerBaseChildActor) == 0x000E40, "Wrong size on APyBannerBaseChildActor");
+DUMPER7_ASSERTS_APyBannerBaseChildActor;
 
 // PythonClass PyHulkBannerCharacter.PyHulkMonsterChildActor
-// 0x0010 (0x0E30 - 0x0E20)
+// 0x0010 (0x0E40 - 0x0E30)
 class APyHulkMonsterChildActor final : public AHulkBannerChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           CueTagOnBeginPlay;                                 // 0x0E20(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           CueTagOnBeginPlay;                                 // 0x0E30(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -91,16 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHulkMonsterChildActor">();
+		STATIC_CLASS_IMPL("PyHulkMonsterChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHulkMonsterChildActor")
 	}
 	static class APyHulkMonsterChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHulkMonsterChildActor>();
 	}
 };
-static_assert(alignof(APyHulkMonsterChildActor) == 0x000010, "Wrong alignment on APyHulkMonsterChildActor");
-static_assert(sizeof(APyHulkMonsterChildActor) == 0x000E30, "Wrong size on APyHulkMonsterChildActor");
-static_assert(offsetof(APyHulkMonsterChildActor, CueTagOnBeginPlay) == 0x000E20, "Member 'APyHulkMonsterChildActor::CueTagOnBeginPlay' has a wrong offset!");
+DUMPER7_ASSERTS_APyHulkMonsterChildActor;
 
 }
 

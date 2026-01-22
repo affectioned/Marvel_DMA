@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WeaponStatus.WBP_WeaponStatus_C
-// 0x0000 (0x12E8 - 0x12E8)
+// 0x0000 (0x15D0 - 0x15D0)
 class UWBP_WeaponStatus_C final : public UPyWidget_WeaponStatus
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_WeaponStatus_C">();
+		BP_STATIC_CLASS_IMPL("WBP_WeaponStatus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_WeaponStatus_C")
 	}
 	static class UWBP_WeaponStatus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_WeaponStatus_C>();
 	}
 };
-static_assert(alignof(UWBP_WeaponStatus_C) == 0x000008, "Wrong alignment on UWBP_WeaponStatus_C");
-static_assert(sizeof(UWBP_WeaponStatus_C) == 0x0012E8, "Wrong size on UWBP_WeaponStatus_C");
+DUMPER7_ASSERTS_UWBP_WeaponStatus_C;
 
 }
 

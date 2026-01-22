@@ -123,5 +123,24 @@ void UPyWidget_VoiceTopTips::OnCascadingVisibleChanged(bool bNewVisible)
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_VoiceTopTips.PyWidget_VoiceTopTips.MarkGPM
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_VoiceTopTips::MarkGPM()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_VoiceTopTips", "MarkGPM");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_10115101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Buff_10115101_WhileActiveFX");
-static_assert(sizeof(PyCue_Buff_10115101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Buff_10115101_WhileActiveFX");
-static_assert(offsetof(PyCue_Buff_10115101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_10115101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10115101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_10115101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10115101_WhileActiveFX;
 
 // PythonFunction PyAbility_101151.PyCue_Buff_10115101.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_10115101_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Buff_10115101_OnRemoveFX");
-static_assert(sizeof(PyCue_Buff_10115101_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Buff_10115101_OnRemoveFX");
-static_assert(offsetof(PyCue_Buff_10115101_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_10115101_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10115101_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_10115101_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10115101_OnRemoveFX;
 
 }
 

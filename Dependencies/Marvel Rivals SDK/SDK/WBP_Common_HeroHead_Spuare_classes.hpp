@@ -17,31 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_HeroHead_Spuare.WBP_Common_HeroHead_Spuare_C
-// 0x0020 (0x0480 - 0x0460)
+// 0x0018 (0x04C8 - 0x04B0)
 class UWBP_Common_HeroHead_Spuare_C final : public UPyWidget_Common_HeroHeadSpuare
 {
 public:
-	class UMaskHeroHeadBP_C*                      EmptyMaskContent;                                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaskHeroHeadBP_C*                      ImgMaskContent;                                    // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaskHeroHeadBP_C*                      ImgMaskContent_Gray;                               // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Head;                                      // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaskHeroHeadBP_C*                      ImgMaskContent_Gray;                               // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Static;                                    // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Head;                                      // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_HeroHead_Spuare_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_HeroHead_Spuare_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_HeroHead_Spuare_C")
 	}
 	static class UWBP_Common_HeroHead_Spuare_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_HeroHead_Spuare_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_HeroHead_Spuare_C) == 0x000008, "Wrong alignment on UWBP_Common_HeroHead_Spuare_C");
-static_assert(sizeof(UWBP_Common_HeroHead_Spuare_C) == 0x000480, "Wrong size on UWBP_Common_HeroHead_Spuare_C");
-static_assert(offsetof(UWBP_Common_HeroHead_Spuare_C, EmptyMaskContent) == 0x000460, "Member 'UWBP_Common_HeroHead_Spuare_C::EmptyMaskContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Spuare_C, ImgMaskContent) == 0x000468, "Member 'UWBP_Common_HeroHead_Spuare_C::ImgMaskContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Spuare_C, ImgMaskContent_Gray) == 0x000470, "Member 'UWBP_Common_HeroHead_Spuare_C::ImgMaskContent_Gray' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Spuare_C, SizeBox_Head) == 0x000478, "Member 'UWBP_Common_HeroHead_Spuare_C::SizeBox_Head' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_HeroHead_Spuare_C;
 
 }
 

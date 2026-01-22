@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyLevelLoadSubsystem.PyLevelLoadSubsystem
-// 0x0010 (0x0058 - 0x0048)
+// 0x0010 (0x0060 - 0x0050)
 class UPyLevelLoadSubsystem : public ULevelLoadSubsystem
 {
 public:
-	TArray<class UObject*>                        SummonerAssets;                                    // 0x0048(0x0010)(NativeAccessSpecifierPublic)
+	TArray<class UObject*>                        SummonerAssets;                                    // 0x0050(0x0010)(NativeAccessSpecifierPublic)
 
 public:
 	void PyPostInitialize();
@@ -33,33 +33,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelLoadSubsystem">();
+		STATIC_CLASS_IMPL("PyLevelLoadSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelLoadSubsystem")
 	}
 	static class UPyLevelLoadSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelLoadSubsystem>();
 	}
 };
-static_assert(alignof(UPyLevelLoadSubsystem) == 0x000008, "Wrong alignment on UPyLevelLoadSubsystem");
-static_assert(sizeof(UPyLevelLoadSubsystem) == 0x000058, "Wrong size on UPyLevelLoadSubsystem");
-static_assert(offsetof(UPyLevelLoadSubsystem, SummonerAssets) == 0x000048, "Member 'UPyLevelLoadSubsystem::SummonerAssets' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelLoadSubsystem;
 
 // PythonClass PyLevelLoadSubsystem.PyReplayLevelLoadSubsystem
-// 0x0000 (0x0058 - 0x0058)
+// 0x0000 (0x0060 - 0x0060)
 class UPyReplayLevelLoadSubsystem final : public UPyLevelLoadSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReplayLevelLoadSubsystem">();
+		STATIC_CLASS_IMPL("PyReplayLevelLoadSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReplayLevelLoadSubsystem")
 	}
 	static class UPyReplayLevelLoadSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyReplayLevelLoadSubsystem>();
 	}
 };
-static_assert(alignof(UPyReplayLevelLoadSubsystem) == 0x000008, "Wrong alignment on UPyReplayLevelLoadSubsystem");
-static_assert(sizeof(UPyReplayLevelLoadSubsystem) == 0x000058, "Wrong size on UPyReplayLevelLoadSubsystem");
+DUMPER7_ASSERTS_UPyReplayLevelLoadSubsystem;
 
 }
 

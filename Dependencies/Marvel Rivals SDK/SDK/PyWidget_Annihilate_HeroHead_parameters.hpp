@@ -21,9 +21,7 @@ struct PyWidget_Annihilate_SkillState_SetVxColor final
 public:
 	bool                                          is_blue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Annihilate_SkillState_SetVxColor) == 0x000001, "Wrong alignment on PyWidget_Annihilate_SkillState_SetVxColor");
-static_assert(sizeof(PyWidget_Annihilate_SkillState_SetVxColor) == 0x000001, "Wrong size on PyWidget_Annihilate_SkillState_SetVxColor");
-static_assert(offsetof(PyWidget_Annihilate_SkillState_SetVxColor, is_blue) == 0x000000, "Member 'PyWidget_Annihilate_SkillState_SetVxColor::is_blue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Annihilate_SkillState_SetVxColor;
 
 // PythonFunction PyWidget_Annihilate_HeroHead.PyWidget_Annihilate_SkillState.SetEnergyFull
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Annihilate_SkillState_SetEnergyFull final
 public:
 	bool                                          IsFull;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Annihilate_SkillState_SetEnergyFull) == 0x000001, "Wrong alignment on PyWidget_Annihilate_SkillState_SetEnergyFull");
-static_assert(sizeof(PyWidget_Annihilate_SkillState_SetEnergyFull) == 0x000001, "Wrong size on PyWidget_Annihilate_SkillState_SetEnergyFull");
-static_assert(offsetof(PyWidget_Annihilate_SkillState_SetEnergyFull, IsFull) == 0x000000, "Member 'PyWidget_Annihilate_SkillState_SetEnergyFull::IsFull' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Annihilate_SkillState_SetEnergyFull;
 
 }
 

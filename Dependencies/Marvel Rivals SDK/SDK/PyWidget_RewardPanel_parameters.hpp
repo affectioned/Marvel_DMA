@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,7 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x0020(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RewardPanel_OnReceiveInputKey) == 0x000008, "Wrong alignment on PyWidget_RewardPanel_OnReceiveInputKey");
-static_assert(sizeof(PyWidget_RewardPanel_OnReceiveInputKey) == 0x000028, "Wrong size on PyWidget_RewardPanel_OnReceiveInputKey");
-static_assert(offsetof(PyWidget_RewardPanel_OnReceiveInputKey, InKey) == 0x000000, "Member 'PyWidget_RewardPanel_OnReceiveInputKey::InKey' has a wrong offset!");
-static_assert(offsetof(PyWidget_RewardPanel_OnReceiveInputKey, EventType) == 0x000020, "Member 'PyWidget_RewardPanel_OnReceiveInputKey::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RewardPanel_OnReceiveInputKey;
 
 // PythonFunction PyWidget_RewardPanel.PyWidget_RewardPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_RewardPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RewardPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_RewardPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_RewardPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_RewardPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_RewardPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_RewardPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RewardPanel_MarvelSetVisible;
 
 }
 

@@ -21,9 +21,7 @@ struct FCNUpdataOrAddTable_StructBP final
 public:
 	TSet<class FString>                           OverrideTableList_6_1C391E5A46A5DB1E5830F4BF87A8B775; // 0x0000(0x0050)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FCNUpdataOrAddTable_StructBP) == 0x000008, "Wrong alignment on FCNUpdataOrAddTable_StructBP");
-static_assert(sizeof(FCNUpdataOrAddTable_StructBP) == 0x000050, "Wrong size on FCNUpdataOrAddTable_StructBP");
-static_assert(offsetof(FCNUpdataOrAddTable_StructBP, OverrideTableList_6_1C391E5A46A5DB1E5830F4BF87A8B775) == 0x000000, "Member 'FCNUpdataOrAddTable_StructBP::OverrideTableList_6_1C391E5A46A5DB1E5830F4BF87A8B775' has a wrong offset!");
+DUMPER7_ASSERTS_FCNUpdataOrAddTable_StructBP;
 
 }
 

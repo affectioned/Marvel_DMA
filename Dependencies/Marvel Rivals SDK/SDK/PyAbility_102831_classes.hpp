@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102831.PyScopeHitImpact_102831_Cue
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05F0 - 0x05E8)
 class UPyScopeHitImpact_102831_Cue final : public UMarvelCueNotify_HitImpact
 {
 public:
-	bool                                          PlayHitAudioOnce;                                  // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PlayHitAudioOnce;                                  // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -30,19 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScopeHitImpact_102831_Cue">();
+		STATIC_CLASS_IMPL("PyScopeHitImpact_102831_Cue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScopeHitImpact_102831_Cue")
 	}
 	static class UPyScopeHitImpact_102831_Cue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScopeHitImpact_102831_Cue>();
 	}
 };
-static_assert(alignof(UPyScopeHitImpact_102831_Cue) == 0x000008, "Wrong alignment on UPyScopeHitImpact_102831_Cue");
-static_assert(sizeof(UPyScopeHitImpact_102831_Cue) == 0x0005D0, "Wrong size on UPyScopeHitImpact_102831_Cue");
-static_assert(offsetof(UPyScopeHitImpact_102831_Cue, PlayHitAudioOnce) == 0x0005C8, "Member 'UPyScopeHitImpact_102831_Cue::PlayHitAudioOnce' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScopeHitImpact_102831_Cue;
 
 // PythonClass PyAbility_102831.PyBaseScope_102831
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyBaseScope_102831 : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -51,22 +53,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBaseScope_102831">();
+		STATIC_CLASS_IMPL("PyBaseScope_102831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBaseScope_102831")
 	}
 	static class APyBaseScope_102831* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBaseScope_102831>();
 	}
 };
-static_assert(alignof(APyBaseScope_102831) == 0x000010, "Wrong alignment on APyBaseScope_102831");
-static_assert(sizeof(APyBaseScope_102831) == 0x001AA0, "Wrong size on APyBaseScope_102831");
+DUMPER7_ASSERTS_APyBaseScope_102831;
 
 // PythonClass PyAbility_102831.PyScope_10283101
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class APyScope_10283101 final : public APyBaseScope_102831
 {
 public:
-	bool                                          FirstHitSuccess;                                   // 0x1AA0(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          FirstHitSuccess;                                   // 0x1B70(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void UpdateFirstHitAudio();
@@ -74,16 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10283101">();
+		STATIC_CLASS_IMPL("PyScope_10283101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10283101")
 	}
 	static class APyScope_10283101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10283101>();
 	}
 };
-static_assert(alignof(APyScope_10283101) == 0x000010, "Wrong alignment on APyScope_10283101");
-static_assert(sizeof(APyScope_10283101) == 0x001AB0, "Wrong size on APyScope_10283101");
-static_assert(offsetof(APyScope_10283101, FirstHitSuccess) == 0x001AA0, "Member 'APyScope_10283101::FirstHitSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10283101;
 
 // PythonClass PyAbility_102831.PyConfig_102831
 // 0x0080 (0x0118 - 0x0098)
@@ -98,59 +105,65 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102831">();
+		STATIC_CLASS_IMPL("PyConfig_102831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102831")
 	}
 	static class UPyConfig_102831* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102831>();
 	}
 };
-static_assert(alignof(UPyConfig_102831) == 0x000008, "Wrong alignment on UPyConfig_102831");
-static_assert(sizeof(UPyConfig_102831) == 0x000118, "Wrong size on UPyConfig_102831");
-static_assert(offsetof(UPyConfig_102831, FirstScopeID) == 0x000098, "Member 'UPyConfig_102831::FirstScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102831, SummonedTagContainer) == 0x0000A0, "Member 'UPyConfig_102831::SummonedTagContainer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102831, ShieldSummonedTag) == 0x000108, "Member 'UPyConfig_102831::ShieldSummonedTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102831;
 
 // PythonClass PyAbility_102831.PyScope_10283102
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10283102 final : public APyBaseScope_102831
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10283102">();
+		STATIC_CLASS_IMPL("PyScope_10283102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10283102")
 	}
 	static class APyScope_10283102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10283102>();
 	}
 };
-static_assert(alignof(APyScope_10283102) == 0x000010, "Wrong alignment on APyScope_10283102");
-static_assert(sizeof(APyScope_10283102) == 0x001AA0, "Wrong size on APyScope_10283102");
+DUMPER7_ASSERTS_APyScope_10283102;
 
 // PythonClass PyAbility_102831.PyScopeLoop_102831_Cue
-// 0x0000 (0x29D0 - 0x29D0)
+// 0x0000 (0x2F40 - 0x2F40)
 class APyScopeLoop_102831_Cue final : public AMarvelCueNotify_Laser
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScopeLoop_102831_Cue">();
+		STATIC_CLASS_IMPL("PyScopeLoop_102831_Cue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScopeLoop_102831_Cue")
 	}
 	static class APyScopeLoop_102831_Cue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScopeLoop_102831_Cue>();
 	}
 };
-static_assert(alignof(APyScopeLoop_102831_Cue) == 0x000010, "Wrong alignment on APyScopeLoop_102831_Cue");
-static_assert(sizeof(APyScopeLoop_102831_Cue) == 0x0029D0, "Wrong size on APyScopeLoop_102831_Cue");
+DUMPER7_ASSERTS_APyScopeLoop_102831_Cue;
 
 // PythonClass PyAbility_102831.PyAbility_102831
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_102831 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnSecondScopeSpawned;                              // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSecondScopeSpawned;                              // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -166,19 +179,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102831">();
+		STATIC_CLASS_IMPL("PyAbility_102831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102831")
 	}
 	static class UPyAbility_102831* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102831>();
 	}
 };
-static_assert(alignof(UPyAbility_102831) == 0x000008, "Wrong alignment on UPyAbility_102831");
-static_assert(sizeof(UPyAbility_102831) == 0x002A00, "Wrong size on UPyAbility_102831");
-static_assert(offsetof(UPyAbility_102831, OnSecondScopeSpawned) == 0x0029F0, "Member 'UPyAbility_102831::OnSecondScopeSpawned' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102831;
 
 // PythonClass PyAbility_102831.PyUIController_102831
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_102831 final : public UUIC_Ability
 {
 public:
@@ -188,15 +203,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102831">();
+		STATIC_CLASS_IMPL("PyUIController_102831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102831")
 	}
 	static class UPyUIController_102831* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102831>();
 	}
 };
-static_assert(alignof(UPyUIController_102831) == 0x000008, "Wrong alignment on UPyUIController_102831");
-static_assert(sizeof(UPyUIController_102831) == 0x000F10, "Wrong size on UPyUIController_102831");
+DUMPER7_ASSERTS_UPyUIController_102831;
 
 }
 

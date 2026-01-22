@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_InviteCode.PyWidget_Secondary_InviteCode
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_InviteCode final : public UPyMarvelUserWidget
 {
 public:
@@ -38,15 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_InviteCode">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_InviteCode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_InviteCode")
 	}
 	static class UPyWidget_Secondary_InviteCode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_InviteCode>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_InviteCode) == 0x000008, "Wrong alignment on UPyWidget_Secondary_InviteCode");
-static_assert(sizeof(UPyWidget_Secondary_InviteCode) == 0x0005C0, "Wrong size on UPyWidget_Secondary_InviteCode");
+DUMPER7_ASSERTS_UPyWidget_Secondary_InviteCode;
 
 }
 

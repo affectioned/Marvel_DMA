@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105504.PyCue_Ability_Loop_10550401
-// 0x0040 (0x11F0 - 0x11B0)
+// 0x0040 (0x1200 - 0x11C0)
 class APyCue_Ability_Loop_10550401 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UMaterialInterface*                     DecalMaterial;                                     // 0x11B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                DecalOffset;                                       // 0x11B8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecalDelayDestroy;                                 // 0x11D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayFadeOutDuration;                              // 0x11D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TraceLength;                                       // 0x11D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DC[0x4];                                     // 0x11DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         ShortStickNiagara_L;                               // 0x11E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         ShortStickNiagara_R;                               // 0x11E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     DecalMaterial;                                     // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DecalOffset;                                       // 0x11C8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecalDelayDestroy;                                 // 0x11E0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayFadeOutDuration;                              // 0x11E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TraceLength;                                       // 0x11E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11EC[0x4];                                     // 0x11EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         ShortStickNiagara_L;                               // 0x11F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         ShortStickNiagara_R;                               // 0x11F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10550401">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10550401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10550401")
 	}
 	static class APyCue_Ability_Loop_10550401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10550401>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10550401) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10550401");
-static_assert(sizeof(APyCue_Ability_Loop_10550401) == 0x0011F0, "Wrong size on APyCue_Ability_Loop_10550401");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, DecalMaterial) == 0x0011B0, "Member 'APyCue_Ability_Loop_10550401::DecalMaterial' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, DecalOffset) == 0x0011B8, "Member 'APyCue_Ability_Loop_10550401::DecalOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, DecalDelayDestroy) == 0x0011D0, "Member 'APyCue_Ability_Loop_10550401::DecalDelayDestroy' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, DelayFadeOutDuration) == 0x0011D4, "Member 'APyCue_Ability_Loop_10550401::DelayFadeOutDuration' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, TraceLength) == 0x0011D8, "Member 'APyCue_Ability_Loop_10550401::TraceLength' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, ShortStickNiagara_L) == 0x0011E0, "Member 'APyCue_Ability_Loop_10550401::ShortStickNiagara_L' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10550401, ShortStickNiagara_R) == 0x0011E8, "Member 'APyCue_Ability_Loop_10550401::ShortStickNiagara_R' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10550401;
 
 }
 

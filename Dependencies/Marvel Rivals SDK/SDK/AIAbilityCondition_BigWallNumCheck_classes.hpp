@@ -23,15 +23,18 @@ class UAIAbilityCondition_BigWallNumCheck_C final : public UAIAbilityCondition_S
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityCondition_BigWallNumCheck_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityCondition_BigWallNumCheck_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_BigWallNumCheck_C")
 	}
 	static class UAIAbilityCondition_BigWallNumCheck_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_BigWallNumCheck_C>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_BigWallNumCheck_C) == 0x000008, "Wrong alignment on UAIAbilityCondition_BigWallNumCheck_C");
-static_assert(sizeof(UAIAbilityCondition_BigWallNumCheck_C) == 0x000060, "Wrong size on UAIAbilityCondition_BigWallNumCheck_C");
+DUMPER7_ASSERTS_UAIAbilityCondition_BigWallNumCheck_C;
 
 }
 

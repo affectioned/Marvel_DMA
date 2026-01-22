@@ -24,15 +24,18 @@ class UPropertyBagMissingObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyBagMissingObject">();
+		STATIC_CLASS_IMPL("PropertyBagMissingObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyBagMissingObject")
 	}
 	static class UPropertyBagMissingObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyBagMissingObject>();
 	}
 };
-static_assert(alignof(UPropertyBagMissingObject) == 0x000008, "Wrong alignment on UPropertyBagMissingObject");
-static_assert(sizeof(UPropertyBagMissingObject) == 0x000030, "Wrong size on UPropertyBagMissingObject");
+DUMPER7_ASSERTS_UPropertyBagMissingObject;
 
 // Class StructUtils.PropertyBag
 // 0x0018 (0x00E8 - 0x00D0)
@@ -45,16 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyBag">();
+		STATIC_CLASS_IMPL("PropertyBag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyBag")
 	}
 	static class UPropertyBag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyBag>();
 	}
 };
-static_assert(alignof(UPropertyBag) == 0x000008, "Wrong alignment on UPropertyBag");
-static_assert(sizeof(UPropertyBag) == 0x0000E8, "Wrong size on UPropertyBag");
-static_assert(offsetof(UPropertyBag, PropertyDescs) == 0x0000D0, "Member 'UPropertyBag::PropertyDescs' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyBag;
 
 }
 

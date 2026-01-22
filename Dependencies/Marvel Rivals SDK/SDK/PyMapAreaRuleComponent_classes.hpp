@@ -23,15 +23,18 @@ class UPyMapAreaRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMapAreaRuleComponent">();
+		STATIC_CLASS_IMPL("PyMapAreaRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMapAreaRuleComponent")
 	}
 	static class UPyMapAreaRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMapAreaRuleComponent>();
 	}
 };
-static_assert(alignof(UPyMapAreaRuleComponent) == 0x000008, "Wrong alignment on UPyMapAreaRuleComponent");
-static_assert(sizeof(UPyMapAreaRuleComponent) == 0x000108, "Wrong size on UPyMapAreaRuleComponent");
+DUMPER7_ASSERTS_UPyMapAreaRuleComponent;
 
 }
 

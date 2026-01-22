@@ -19,9 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GameChatPanel.PyWidget_GameChatPanel
-// 0x0000 (0x0730 - 0x0730)
+// 0x0008 (0x0748 - 0x0740)
 class UPyWidget_GameChatPanel : public UPyWidget_ChatPanelV4
 {
+public:
+	class UInputAction*                           ChatCopyUID;                                       // 0x0740(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	void OnInitialized();
 	void Construct();
@@ -32,23 +35,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameChatPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GameChatPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameChatPanel")
 	}
 	static class UPyWidget_GameChatPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameChatPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GameChatPanel) == 0x000008, "Wrong alignment on UPyWidget_GameChatPanel");
-static_assert(sizeof(UPyWidget_GameChatPanel) == 0x000730, "Wrong size on UPyWidget_GameChatPanel");
+DUMPER7_ASSERTS_UPyWidget_GameChatPanel;
 
 // PythonClass PyWidget_GameChatPanel.PyWidget_GameChatGuideTips
-// 0x0120 (0x06E0 - 0x05C0)
+// 0x0120 (0x06E8 - 0x05C8)
 class UPyWidget_GameChatGuideTips : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        TipsStyle;                                         // 0x05C0(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        TipsStyle;                                         // 0x05C8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -57,16 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameChatGuideTips">();
+		STATIC_CLASS_IMPL("PyWidget_GameChatGuideTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameChatGuideTips")
 	}
 	static class UPyWidget_GameChatGuideTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameChatGuideTips>();
 	}
 };
-static_assert(alignof(UPyWidget_GameChatGuideTips) == 0x000008, "Wrong alignment on UPyWidget_GameChatGuideTips");
-static_assert(sizeof(UPyWidget_GameChatGuideTips) == 0x0006E0, "Wrong size on UPyWidget_GameChatGuideTips");
-static_assert(offsetof(UPyWidget_GameChatGuideTips, TipsStyle) == 0x0005C0, "Member 'UPyWidget_GameChatGuideTips::TipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GameChatGuideTips;
 
 }
 

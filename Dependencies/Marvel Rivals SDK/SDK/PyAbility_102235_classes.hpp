@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102235.PyAbility_102235
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102235 : public UMarvelGameplayAbility
 {
 public:
@@ -38,30 +38,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102235">();
+		STATIC_CLASS_IMPL("PyAbility_102235")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102235")
 	}
 	static class UPyAbility_102235* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102235>();
 	}
 };
-static_assert(alignof(UPyAbility_102235) == 0x000008, "Wrong alignment on UPyAbility_102235");
-static_assert(sizeof(UPyAbility_102235) == 0x0029F0, "Wrong size on UPyAbility_102235");
+DUMPER7_ASSERTS_UPyAbility_102235;
 
 // PythonClass PyAbility_102235.PyCue_Ability_Loop_10225501
-// 0x0070 (0x1220 - 0x11B0)
+// 0x0070 (0x1230 - 0x11C0)
 class APyCue_Ability_Loop_10225501 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FGameplayTag                           ThrowTag;                                          // 0x11B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           FightTag;                                          // 0x11BC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FadeOutCurve;                                      // 0x11C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FadeInCurve;                                       // 0x11D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         ReleaseFX;                                         // 0x11D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReleaseFXSocket;                                   // 0x11E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LoopPlayID;                                        // 0x11F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyShieldColor;                                  // 0x11F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ShieldColor;                                       // 0x1204(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ThrowTag;                                          // 0x11C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           FightTag;                                          // 0x11CC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FadeOutCurve;                                      // 0x11D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FadeInCurve;                                       // 0x11E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ReleaseFX;                                         // 0x11E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReleaseFXSocket;                                   // 0x11F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LoopPlayID;                                        // 0x1200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyShieldColor;                                  // 0x1204(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ShieldColor;                                       // 0x1214(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -72,61 +75,53 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10225501">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10225501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10225501")
 	}
 	static class APyCue_Ability_Loop_10225501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10225501>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10225501) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10225501");
-static_assert(sizeof(APyCue_Ability_Loop_10225501) == 0x001220, "Wrong size on APyCue_Ability_Loop_10225501");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, ThrowTag) == 0x0011B0, "Member 'APyCue_Ability_Loop_10225501::ThrowTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, FightTag) == 0x0011BC, "Member 'APyCue_Ability_Loop_10225501::FightTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, FadeOutCurve) == 0x0011C8, "Member 'APyCue_Ability_Loop_10225501::FadeOutCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, FadeInCurve) == 0x0011D0, "Member 'APyCue_Ability_Loop_10225501::FadeInCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, ReleaseFX) == 0x0011D8, "Member 'APyCue_Ability_Loop_10225501::ReleaseFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, ReleaseFXSocket) == 0x0011E0, "Member 'APyCue_Ability_Loop_10225501::ReleaseFXSocket' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, LoopPlayID) == 0x0011F0, "Member 'APyCue_Ability_Loop_10225501::LoopPlayID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, EnemyShieldColor) == 0x0011F4, "Member 'APyCue_Ability_Loop_10225501::EnemyShieldColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10225501, ShieldColor) == 0x001204, "Member 'APyCue_Ability_Loop_10225501::ShieldColor' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10225501;
 
 // PythonClass PyAbility_102235.PyConfig_102235
-// 0x1680 (0x4470 - 0x2DF0)
+// 0x19D0 (0x4E60 - 0x3490)
 class UPyConfig_102235 final : public UConfig_102235
 {
 public:
-	int32                                         BuffID;                                            // 0x2DF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileId;                                      // 0x2DF4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GenerateSocket;                                    // 0x2DF8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CameraForwardExtendDistance;                       // 0x2E08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2E0C[0x4];                                     // 0x2E0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             CameraTraceContext;                                // 0x2E10(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x3490(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileId;                                      // 0x3494(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GenerateSocket;                                    // 0x3498(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CameraForwardExtendDistance;                       // 0x34A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34AC[0x4];                                     // 0x34AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             CameraTraceContext;                                // 0x34B0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102235">();
+		STATIC_CLASS_IMPL("PyConfig_102235")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102235")
 	}
 	static class UPyConfig_102235* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102235>();
 	}
 };
-static_assert(alignof(UPyConfig_102235) == 0x000010, "Wrong alignment on UPyConfig_102235");
-static_assert(sizeof(UPyConfig_102235) == 0x004470, "Wrong size on UPyConfig_102235");
-static_assert(offsetof(UPyConfig_102235, BuffID) == 0x002DF0, "Member 'UPyConfig_102235::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102235, ProjectileId) == 0x002DF4, "Member 'UPyConfig_102235::ProjectileId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102235, GenerateSocket) == 0x002DF8, "Member 'UPyConfig_102235::GenerateSocket' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102235, CameraForwardExtendDistance) == 0x002E08, "Member 'UPyConfig_102235::CameraForwardExtendDistance' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102235, CameraTraceContext) == 0x002E10, "Member 'UPyConfig_102235::CameraTraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102235;
 
 // PythonClass PyAbility_102235.PyUIController_102235_v3
-// 0x0008 (0x0F40 - 0x0F38)
+// 0x0008 (0x1220 - 0x1218)
 class UPyUIController_102235_v3 final : public UUIC_Controller_102235
 {
 public:
-	int32                                         BuffID;                                            // 0x0F38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x1218(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -137,16 +132,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102235_v3">();
+		STATIC_CLASS_IMPL("PyUIController_102235_v3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102235_v3")
 	}
 	static class UPyUIController_102235_v3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102235_v3>();
 	}
 };
-static_assert(alignof(UPyUIController_102235_v3) == 0x000008, "Wrong alignment on UPyUIController_102235_v3");
-static_assert(sizeof(UPyUIController_102235_v3) == 0x000F40, "Wrong size on UPyUIController_102235_v3");
-static_assert(offsetof(UPyUIController_102235_v3, BuffID) == 0x000F38, "Member 'UPyUIController_102235_v3::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_102235_v3;
 
 }
 

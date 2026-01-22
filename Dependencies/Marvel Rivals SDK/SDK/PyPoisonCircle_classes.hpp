@@ -47,34 +47,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPoisonCircle">();
+		STATIC_CLASS_IMPL("PyPoisonCircle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPoisonCircle")
 	}
 	static class APyPoisonCircle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPoisonCircle>();
 	}
 };
-static_assert(alignof(APyPoisonCircle) == 0x000010, "Wrong alignment on APyPoisonCircle");
-static_assert(sizeof(APyPoisonCircle) == 0x000780, "Wrong size on APyPoisonCircle");
-static_assert(offsetof(APyPoisonCircle, ShrinkTime) == 0x0006E0, "Member 'APyPoisonCircle::ShrinkTime' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, BuffID) == 0x0006E8, "Member 'APyPoisonCircle::BuffID' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, MinRadiusDict) == 0x0006F8, "Member 'APyPoisonCircle::MinRadiusDict' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, InitScale) == 0x000748, "Member 'APyPoisonCircle::InitScale' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, TargetScale) == 0x00074C, "Member 'APyPoisonCircle::TargetScale' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, AnchorPoint) == 0x000750, "Member 'APyPoisonCircle::AnchorPoint' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, ShrinkProgress) == 0x000760, "Member 'APyPoisonCircle::ShrinkProgress' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, ActiveState) == 0x000764, "Member 'APyPoisonCircle::ActiveState' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, InsidePoisionAudio) == 0x000768, "Member 'APyPoisonCircle::InsidePoisionAudio' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, OutSidePoisionAudio) == 0x000770, "Member 'APyPoisonCircle::OutSidePoisionAudio' has a wrong offset!");
-static_assert(offsetof(APyPoisonCircle, WarningDistance) == 0x000778, "Member 'APyPoisonCircle::WarningDistance' has a wrong offset!");
+DUMPER7_ASSERTS_APyPoisonCircle;
 
 // PythonClass PyPoisonCircle.PyCue_Buff_Loop_20005003
-// 0x0020 (0x1660 - 0x1640)
+// 0x0020 (0x1710 - 0x16F0)
 class APyCue_Buff_Loop_20005003 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ColorVector;                                       // 0x1640(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ColorVector;                                       // 0x16F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -83,16 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_20005003">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_20005003")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_20005003")
 	}
 	static class APyCue_Buff_Loop_20005003* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_20005003>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_20005003) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_20005003");
-static_assert(sizeof(APyCue_Buff_Loop_20005003) == 0x001660, "Wrong size on APyCue_Buff_Loop_20005003");
-static_assert(offsetof(APyCue_Buff_Loop_20005003, ColorVector) == 0x001640, "Member 'APyCue_Buff_Loop_20005003::ColorVector' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_20005003;
 
 }
 

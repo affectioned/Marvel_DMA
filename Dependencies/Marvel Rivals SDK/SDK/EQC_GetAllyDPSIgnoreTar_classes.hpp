@@ -23,15 +23,18 @@ class UEQC_GetAllyDPSIgnoreTar_C final : public UEnvQueryContext_CharacterGroup
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetAllyDPSIgnoreTar_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetAllyDPSIgnoreTar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetAllyDPSIgnoreTar_C")
 	}
 	static class UEQC_GetAllyDPSIgnoreTar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetAllyDPSIgnoreTar_C>();
 	}
 };
-static_assert(alignof(UEQC_GetAllyDPSIgnoreTar_C) == 0x000008, "Wrong alignment on UEQC_GetAllyDPSIgnoreTar_C");
-static_assert(sizeof(UEQC_GetAllyDPSIgnoreTar_C) == 0x000038, "Wrong size on UEQC_GetAllyDPSIgnoreTar_C");
+DUMPER7_ASSERTS_UEQC_GetAllyDPSIgnoreTar_C;
 
 }
 

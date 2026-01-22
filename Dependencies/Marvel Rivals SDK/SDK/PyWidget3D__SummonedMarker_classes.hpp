@@ -52,7 +52,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_SummonedMarker">();
+		STATIC_CLASS_IMPL("PyWidget3D_SummonedMarker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_SummonedMarker")
 	}
 	static class UPyWidget3D_SummonedMarker* GetDefaultObj()
 	{
@@ -60,13 +64,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget3D_SummonedMarker) == 0x000010, "Wrong alignment on UPyWidget3D_SummonedMarker");
-static_assert(sizeof(UPyWidget3D_SummonedMarker) == 0x0008B0, "Wrong size on UPyWidget3D_SummonedMarker");
-static_assert(offsetof(UPyWidget3D_SummonedMarker, ViewerSideWatcher) == 0x000870, "Member 'UPyWidget3D_SummonedMarker::ViewerSideWatcher' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_SummonedMarker, ViewingCharacterWatcher) == 0x000880, "Member 'UPyWidget3D_SummonedMarker::ViewingCharacterWatcher' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_SummonedMarker, VisibleAllyHeroIDs) == 0x000890, "Member 'UPyWidget3D_SummonedMarker::VisibleAllyHeroIDs' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_SummonedMarker, IsShowCountdown) == 0x0008A0, "Member 'UPyWidget3D_SummonedMarker::IsShowCountdown' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_SummonedMarker, bCustomColorPreview) == 0x0008A1, "Member 'UPyWidget3D_SummonedMarker::bCustomColorPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_SummonedMarker;
 
 }
 

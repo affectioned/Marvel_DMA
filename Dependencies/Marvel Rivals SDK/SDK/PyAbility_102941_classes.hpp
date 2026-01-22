@@ -20,34 +20,32 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102941.PyConfig_102941
-// 0x0BE8 (0x0C80 - 0x0098)
+// 0x0F08 (0x0FA0 - 0x0098)
 class UPyConfig_102941 final : public UMarvelAbilityConfig
 {
 public:
 	float                                         DashDirZ;                                          // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         LeftAbilityId;                                     // 0x0C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RightAbilityId;                                    // 0x0C6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           MaterialCueTag;                                    // 0x0C70(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         LeftAbilityId;                                     // 0x0F88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RightAbilityId;                                    // 0x0F8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           MaterialCueTag;                                    // 0x0F90(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102941">();
+		STATIC_CLASS_IMPL("PyConfig_102941")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102941")
 	}
 	static class UPyConfig_102941* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102941>();
 	}
 };
-static_assert(alignof(UPyConfig_102941) == 0x000008, "Wrong alignment on UPyConfig_102941");
-static_assert(sizeof(UPyConfig_102941) == 0x000C80, "Wrong size on UPyConfig_102941");
-static_assert(offsetof(UPyConfig_102941, DashDirZ) == 0x000098, "Member 'UPyConfig_102941::DashDirZ' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102941, DashInfo) == 0x0000A0, "Member 'UPyConfig_102941::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102941, LeftAbilityId) == 0x000C68, "Member 'UPyConfig_102941::LeftAbilityId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102941, RightAbilityId) == 0x000C6C, "Member 'UPyConfig_102941::RightAbilityId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102941, MaterialCueTag) == 0x000C70, "Member 'UPyConfig_102941::MaterialCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102941;
 
 // PythonClass PyAbility_102941.PyCue_Ability_Instant_10294101
 // 0x0000 (0x0430 - 0x0430)
@@ -59,22 +57,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10294101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10294101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10294101")
 	}
 	static class UPyCue_Ability_Instant_10294101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10294101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10294101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10294101");
-static_assert(sizeof(UPyCue_Ability_Instant_10294101) == 0x000430, "Wrong size on UPyCue_Ability_Instant_10294101");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10294101;
 
 // PythonClass PyAbility_102941.PyAbility_102941
-// 0x0010 (0x2A08 - 0x29F8)
+// 0x0010 (0x2A58 - 0x2A48)
 class UPyAbility_102941 : public UAbility_108
 {
 public:
-	struct FGameplayTag                           DashingTag;                                        // 0x29F8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DashingTag;                                        // 0x2A48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -87,16 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102941">();
+		STATIC_CLASS_IMPL("PyAbility_102941")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102941")
 	}
 	static class UPyAbility_102941* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102941>();
 	}
 };
-static_assert(alignof(UPyAbility_102941) == 0x000008, "Wrong alignment on UPyAbility_102941");
-static_assert(sizeof(UPyAbility_102941) == 0x002A08, "Wrong size on UPyAbility_102941");
-static_assert(offsetof(UPyAbility_102941, DashingTag) == 0x0029F8, "Member 'UPyAbility_102941::DashingTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102941;
 
 }
 

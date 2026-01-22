@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101492_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_101492_OnTagUpdate");
-static_assert(sizeof(PyAbility_101492_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_101492_OnTagUpdate");
-static_assert(offsetof(PyAbility_101492_OnTagUpdate, tag) == 0x000000, "Member 'PyAbility_101492_OnTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_101492_OnTagUpdate, exist) == 0x00000C, "Member 'PyAbility_101492_OnTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101492_OnTagUpdate;
 
 // PythonFunction PyAbility_101492.PyAbility_101492.ListenSeeThroughShared
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyAbility_101492_ListenSeeThroughShared final
 public:
 	bool                                          is_enable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101492_ListenSeeThroughShared) == 0x000001, "Wrong alignment on PyAbility_101492_ListenSeeThroughShared");
-static_assert(sizeof(PyAbility_101492_ListenSeeThroughShared) == 0x000001, "Wrong size on PyAbility_101492_ListenSeeThroughShared");
-static_assert(offsetof(PyAbility_101492_ListenSeeThroughShared, is_enable) == 0x000000, "Member 'PyAbility_101492_ListenSeeThroughShared::is_enable' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101492_ListenSeeThroughShared;
 
 // PythonFunction PyAbility_101492.PyAbility_101492.OnSeeThroughSharedChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +43,7 @@ public:
 	class AActor*                                 target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          is_share;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101492_OnSeeThroughSharedChanged) == 0x000008, "Wrong alignment on PyAbility_101492_OnSeeThroughSharedChanged");
-static_assert(sizeof(PyAbility_101492_OnSeeThroughSharedChanged) == 0x000010, "Wrong size on PyAbility_101492_OnSeeThroughSharedChanged");
-static_assert(offsetof(PyAbility_101492_OnSeeThroughSharedChanged, target) == 0x000000, "Member 'PyAbility_101492_OnSeeThroughSharedChanged::target' has a wrong offset!");
-static_assert(offsetof(PyAbility_101492_OnSeeThroughSharedChanged, is_share) == 0x000008, "Member 'PyAbility_101492_OnSeeThroughSharedChanged::is_share' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101492_OnSeeThroughSharedChanged;
 
 }
 

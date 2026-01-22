@@ -10,10 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyWidget_Common_Button_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -21,21 +22,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomCharacterPanel.PyWidget_CustomCharacterPanel
-// 0x0078 (0x0670 - 0x05F8)
+// 0x00A0 (0x06A0 - 0x0600)
 class UPyWidget_CustomCharacterPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                CharacterItemClass;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LineCount;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayShowTime;                                     // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RowAnimInterval;                                   // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LineAnimInterval;                                  // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   EnableText;                                        // 0x0620(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DisableText;                                       // 0x0638(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_SwitchShape;                               // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChangeShapeAction;                                 // 0x0658(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    HeroBtnList;                                       // 0x0660(0x0010)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                CharacterItemClass;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LineCount;                                         // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayShowTime;                                     // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RowAnimInterval;                                   // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LineAnimInterval;                                  // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   EnableText;                                        // 0x0628(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DisableText;                                       // 0x0640(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_SwitchShape;                               // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChangeShapeAction;                                 // 0x0660(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    HeroBtnList;                                       // 0x0668(0x0010)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         CopyAbilityInstrTips;                              // 0x0678(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,47 +52,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomCharacterPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CustomCharacterPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomCharacterPanel")
 	}
 	static class UPyWidget_CustomCharacterPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomCharacterPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomCharacterPanel) == 0x000008, "Wrong alignment on UPyWidget_CustomCharacterPanel");
-static_assert(sizeof(UPyWidget_CustomCharacterPanel) == 0x000670, "Wrong size on UPyWidget_CustomCharacterPanel");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, CharacterItemClass) == 0x0005F8, "Member 'UPyWidget_CustomCharacterPanel::CharacterItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, LineCount) == 0x000600, "Member 'UPyWidget_CustomCharacterPanel::LineCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, DelayShowTime) == 0x000604, "Member 'UPyWidget_CustomCharacterPanel::DelayShowTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, RowAnimInterval) == 0x000608, "Member 'UPyWidget_CustomCharacterPanel::RowAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, LineAnimInterval) == 0x00060C, "Member 'UPyWidget_CustomCharacterPanel::LineAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, GuideActions) == 0x000610, "Member 'UPyWidget_CustomCharacterPanel::GuideActions' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, EnableText) == 0x000620, "Member 'UPyWidget_CustomCharacterPanel::EnableText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, DisableText) == 0x000638, "Member 'UPyWidget_CustomCharacterPanel::DisableText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, AkEvent_SwitchShape) == 0x000650, "Member 'UPyWidget_CustomCharacterPanel::AkEvent_SwitchShape' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, ChangeShapeAction) == 0x000658, "Member 'UPyWidget_CustomCharacterPanel::ChangeShapeAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterPanel, HeroBtnList) == 0x000660, "Member 'UPyWidget_CustomCharacterPanel::HeroBtnList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CustomCharacterPanel;
 
 // PythonClass PyWidget_CustomCharacterPanel.PyWidget_CustomCharacterItem
-// 0x00A0 (0x0960 - 0x08C0)
+// 0x0080 (0x09A0 - 0x0920)
 class UPyWidget_CustomCharacterItem final : public UPyWidget_BaseCommonButton
 {
 public:
-	class UTexture2D*                             Icon_Tank;                                         // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Damage;                                       // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Support;                                      // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Random;                                       // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_All;                                          // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalNameColor;                                   // 0x08E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedNameColor;                                 // 0x08F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalBgColor;                                     // 0x0908(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedBgColor;                                   // 0x091C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnClicked;                                 // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_ProficiencyLevel1;                            // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_ProficiencyLevel2;                            // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_ProficiencyLevel3;                            // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_ProficiencyLevel4;                            // 0x0950(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_ProficiencyLevel5;                            // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_All;                                          // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalNameColor;                                   // 0x0920(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedNameColor;                                 // 0x0934(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalBgColor;                                     // 0x0948(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedBgColor;                                   // 0x095C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnClicked;                                 // 0x0970(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_ProficiencyLevel1;                            // 0x0978(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_ProficiencyLevel2;                            // 0x0980(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_ProficiencyLevel3;                            // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_ProficiencyLevel4;                            // 0x0990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_ProficiencyLevel5;                            // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -99,33 +89,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomCharacterItem">();
+		STATIC_CLASS_IMPL("PyWidget_CustomCharacterItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomCharacterItem")
 	}
 	static class UPyWidget_CustomCharacterItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomCharacterItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomCharacterItem) == 0x000010, "Wrong alignment on UPyWidget_CustomCharacterItem");
-static_assert(sizeof(UPyWidget_CustomCharacterItem) == 0x000960, "Wrong size on UPyWidget_CustomCharacterItem");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_Tank) == 0x0008B8, "Member 'UPyWidget_CustomCharacterItem::Icon_Tank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_Damage) == 0x0008C0, "Member 'UPyWidget_CustomCharacterItem::Icon_Damage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_Support) == 0x0008C8, "Member 'UPyWidget_CustomCharacterItem::Icon_Support' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_Random) == 0x0008D0, "Member 'UPyWidget_CustomCharacterItem::Icon_Random' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_All) == 0x0008D8, "Member 'UPyWidget_CustomCharacterItem::Icon_All' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, NormalNameColor) == 0x0008E0, "Member 'UPyWidget_CustomCharacterItem::NormalNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, SelectedNameColor) == 0x0008F4, "Member 'UPyWidget_CustomCharacterItem::SelectedNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, NormalBgColor) == 0x000908, "Member 'UPyWidget_CustomCharacterItem::NormalBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, SelectedBgColor) == 0x00091C, "Member 'UPyWidget_CustomCharacterItem::SelectedBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, AkEvent_OnClicked) == 0x000930, "Member 'UPyWidget_CustomCharacterItem::AkEvent_OnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_ProficiencyLevel1) == 0x000938, "Member 'UPyWidget_CustomCharacterItem::Icon_ProficiencyLevel1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_ProficiencyLevel2) == 0x000940, "Member 'UPyWidget_CustomCharacterItem::Icon_ProficiencyLevel2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_ProficiencyLevel3) == 0x000948, "Member 'UPyWidget_CustomCharacterItem::Icon_ProficiencyLevel3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_ProficiencyLevel4) == 0x000950, "Member 'UPyWidget_CustomCharacterItem::Icon_ProficiencyLevel4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomCharacterItem, Icon_ProficiencyLevel5) == 0x000958, "Member 'UPyWidget_CustomCharacterItem::Icon_ProficiencyLevel5' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CustomCharacterItem;
 
 // PythonClass PyWidget_CustomCharacterPanel.PyWidget_Custom_Hero_Head
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Custom_Hero_Head final : public UPyMarvelUserWidget
 {
 public:
@@ -134,15 +112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Custom_Hero_Head">();
+		STATIC_CLASS_IMPL("PyWidget_Custom_Hero_Head")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Custom_Hero_Head")
 	}
 	static class UPyWidget_Custom_Hero_Head* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Custom_Hero_Head>();
 	}
 };
-static_assert(alignof(UPyWidget_Custom_Hero_Head) == 0x000008, "Wrong alignment on UPyWidget_Custom_Hero_Head");
-static_assert(sizeof(UPyWidget_Custom_Hero_Head) == 0x0005C0, "Wrong size on UPyWidget_Custom_Hero_Head");
+DUMPER7_ASSERTS_UPyWidget_Custom_Hero_Head;
 
 }
 

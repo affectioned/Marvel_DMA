@@ -31,23 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105601">();
+		STATIC_CLASS_IMPL("PyConfig_105601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105601")
 	}
 	static class UPyConfig_105601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105601>();
 	}
 };
-static_assert(alignof(UPyConfig_105601) == 0x000008, "Wrong alignment on UPyConfig_105601");
-static_assert(sizeof(UPyConfig_105601) == 0x000158, "Wrong size on UPyConfig_105601");
-static_assert(offsetof(UPyConfig_105601, DurationToActivateGlidingAbility) == 0x0000F8, "Member 'UPyConfig_105601::DurationToActivateGlidingAbility' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105601, SpeedThresholdToStartGliding) == 0x0000FC, "Member 'UPyConfig_105601::SpeedThresholdToStartGliding' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105601, DurationToStartGliding) == 0x000100, "Member 'UPyConfig_105601::DurationToStartGliding' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105601, SpeedThresholdToStopGliding) == 0x000104, "Member 'UPyConfig_105601::SpeedThresholdToStopGliding' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105601, AbilitysToStopGlidingMap) == 0x000108, "Member 'UPyConfig_105601::AbilitysToStopGlidingMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105601;
 
 // PythonClass PyAbility_105601.PyAbility_105601
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UPyAbility_105601 : public UAbility_105601
 {
 public:
@@ -65,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105601">();
+		STATIC_CLASS_IMPL("PyAbility_105601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105601")
 	}
 	static class UPyAbility_105601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105601>();
 	}
 };
-static_assert(alignof(UPyAbility_105601) == 0x000008, "Wrong alignment on UPyAbility_105601");
-static_assert(sizeof(UPyAbility_105601) == 0x002B10, "Wrong size on UPyAbility_105601");
+DUMPER7_ASSERTS_UPyAbility_105601;
 
 }
 

@@ -24,9 +24,7 @@ struct PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChange
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HomeEntrance_Item_Container_Widget_Base_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_HomeEntrance_Base.PyWidget_HomeEntrance_Item_Container_Widget_Base.OnMouseWheel
 // 0x0178 (0x0178 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel) == 0x000008, "Wrong alignment on PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel");
-static_assert(sizeof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel) == 0x000178, "Wrong size on PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel");
-static_assert(offsetof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel, MyGeometry) == 0x000000, "Member 'PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel, MouseEvent) == 0x000038, "Member 'PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel, ReturnValue) == 0x0000B8, "Member 'PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HomeEntrance_Item_Container_Widget_Base_OnMouseWheel;
 
 }
 

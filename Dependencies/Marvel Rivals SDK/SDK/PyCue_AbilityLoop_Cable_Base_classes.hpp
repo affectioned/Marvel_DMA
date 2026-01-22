@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyCue_AbilityLoop_Cable_Base.PyCue_AbilityLoop_Cable_Base
-// 0x0000 (0x14B0 - 0x14B0)
+// 0x0000 (0x14C0 - 0x14C0)
 class APyCue_AbilityLoop_Cable_Base : public AMarvelCueNotify_CableBase
 {
 public:
@@ -28,20 +28,23 @@ public:
 	void OnTimeToReleaseHandWhenNoHit_PY();
 	void BeforeCableUpdate_PY(float DeltaTime);
 	void AfterCableUpdate_PY(float DeltaTime);
-	void OnTimeToStartFadeOut();
+	void OnTimeToStartFadeOut_PY();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_Cable_Base">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_Cable_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_Cable_Base")
 	}
 	static class APyCue_AbilityLoop_Cable_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_Cable_Base>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_Cable_Base) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_Cable_Base");
-static_assert(sizeof(APyCue_AbilityLoop_Cable_Base) == 0x0014B0, "Wrong size on APyCue_AbilityLoop_Cable_Base");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_Cable_Base;
 
 }
 

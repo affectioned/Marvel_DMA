@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_NotTreatArmorFall.Ability_NotTreatArmorFall_C
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UAbility_NotTreatArmorFall_C : public UAbility_NotTreatFall_C
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_NotTreatArmorFall_C">();
+		BP_STATIC_CLASS_IMPL("Ability_NotTreatArmorFall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_NotTreatArmorFall_C")
 	}
 	static class UAbility_NotTreatArmorFall_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_NotTreatArmorFall_C>();
 	}
 };
-static_assert(alignof(UAbility_NotTreatArmorFall_C) == 0x000008, "Wrong alignment on UAbility_NotTreatArmorFall_C");
-static_assert(sizeof(UAbility_NotTreatArmorFall_C) == 0x001540, "Wrong size on UAbility_NotTreatArmorFall_C");
+DUMPER7_ASSERTS_UAbility_NotTreatArmorFall_C;
 
 }
 

@@ -23,9 +23,7 @@ struct PyBattleChessCharacterStart_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessCharacterStart_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBattleChessCharacterStart_ReceiveEndPlay");
-static_assert(sizeof(PyBattleChessCharacterStart_ReceiveEndPlay) == 0x000001, "Wrong size on PyBattleChessCharacterStart_ReceiveEndPlay");
-static_assert(offsetof(PyBattleChessCharacterStart_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBattleChessCharacterStart_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessCharacterStart_ReceiveEndPlay;
 
 // PythonFunction PyBattleChessCharacterStart.PyBattleChessCharacterStart.OnHeadPictureLoadCompleted
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyBattleChessCharacterStart_OnHeadPictureLoadCompleted final
 public:
 	class UTexture2D*                             Picture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessCharacterStart_OnHeadPictureLoadCompleted) == 0x000008, "Wrong alignment on PyBattleChessCharacterStart_OnHeadPictureLoadCompleted");
-static_assert(sizeof(PyBattleChessCharacterStart_OnHeadPictureLoadCompleted) == 0x000008, "Wrong size on PyBattleChessCharacterStart_OnHeadPictureLoadCompleted");
-static_assert(offsetof(PyBattleChessCharacterStart_OnHeadPictureLoadCompleted, Picture) == 0x000000, "Member 'PyBattleChessCharacterStart_OnHeadPictureLoadCompleted::Picture' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessCharacterStart_OnHeadPictureLoadCompleted;
 
 }
 

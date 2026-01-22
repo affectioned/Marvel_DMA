@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103863.PyAbility_103863
-// 0x0038 (0x2BF8 - 0x2BC0)
+// 0x0038 (0x2C48 - 0x2C10)
 class UPyAbility_103863 : public UAbility_113
 {
 public:
-	class AActor*                                 Shield;                                            // 0x2BC0(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCanSpawnProjectile;                               // 0x2BC8(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2BC9[0x3];                                     // 0x2BC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x2BCC(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	class AActor*                                 Shield;                                            // 0x2C10(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCanSpawnProjectile;                               // 0x2C18(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C19[0x3];                                     // 0x2C19(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x2C1C(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -44,75 +44,72 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103863">();
+		STATIC_CLASS_IMPL("PyAbility_103863")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103863")
 	}
 	static class UPyAbility_103863* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103863>();
 	}
 };
-static_assert(alignof(UPyAbility_103863) == 0x000008, "Wrong alignment on UPyAbility_103863");
-static_assert(sizeof(UPyAbility_103863) == 0x002BF8, "Wrong size on UPyAbility_103863");
-static_assert(offsetof(UPyAbility_103863, Shield) == 0x002BC0, "Member 'UPyAbility_103863::Shield' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103863, bCanSpawnProjectile) == 0x002BC8, "Member 'UPyAbility_103863::bCanSpawnProjectile' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103863, ActiveUserSetting) == 0x002BCC, "Member 'UPyAbility_103863::ActiveUserSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103863;
 
 // PythonClass PyAbility_103863.PyConfig_103863
-// 0x17F0 (0x3050 - 0x1860)
+// 0x1BA0 (0x3750 - 0x1BB0)
 class UPyConfig_103863 final : public UConfig_113
 {
 public:
-	int32                                         SummonedID;                                        // 0x1860(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LowHealthThreshold;                                // 0x1864(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SummonedStartFXTime;                               // 0x1868(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x186C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxProjectileNum;                                  // 0x1870(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LowHealthProjectileNum;                            // 0x1874(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        ProjectileRelativeLocation;                        // 0x1878(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1888[0x8];                                     // 0x1888(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       SelectParam;                                       // 0x1890(0x17C0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         SummonedID;                                        // 0x1BB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LowHealthThreshold;                                // 0x1BB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SummonedStartFXTime;                               // 0x1BB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1BBC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxProjectileNum;                                  // 0x1BC0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LowHealthProjectileNum;                            // 0x1BC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        ProjectileRelativeLocation;                        // 0x1BC8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1BD8[0x8];                                     // 0x1BD8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       SelectParam;                                       // 0x1BE0(0x1B70)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103863">();
+		STATIC_CLASS_IMPL("PyConfig_103863")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103863")
 	}
 	static class UPyConfig_103863* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103863>();
 	}
 };
-static_assert(alignof(UPyConfig_103863) == 0x000010, "Wrong alignment on UPyConfig_103863");
-static_assert(sizeof(UPyConfig_103863) == 0x003050, "Wrong size on UPyConfig_103863");
-static_assert(offsetof(UPyConfig_103863, SummonedID) == 0x001860, "Member 'UPyConfig_103863::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, LowHealthThreshold) == 0x001864, "Member 'UPyConfig_103863::LowHealthThreshold' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, SummonedStartFXTime) == 0x001868, "Member 'UPyConfig_103863::SummonedStartFXTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, ProjectileID) == 0x00186C, "Member 'UPyConfig_103863::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, MaxProjectileNum) == 0x001870, "Member 'UPyConfig_103863::MaxProjectileNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, LowHealthProjectileNum) == 0x001874, "Member 'UPyConfig_103863::LowHealthProjectileNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, ProjectileRelativeLocation) == 0x001878, "Member 'UPyConfig_103863::ProjectileRelativeLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103863, SelectParam) == 0x001890, "Member 'UPyConfig_103863::SelectParam' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103863;
 
 // PythonClass PyAbility_103863.PySummoned_10386301
-// 0x0010 (0x0B50 - 0x0B40)
+// 0x0010 (0x0B70 - 0x0B60)
 class APySummoned_10386301 : public AMarvelSummonerBase
 {
 public:
-	class UBoxComponent*                          BoxShield;                                         // 0x0B40(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBoxComponent*                          BoxShield;                                         // 0x0B60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10386301">();
+		STATIC_CLASS_IMPL("PySummoned_10386301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10386301")
 	}
 	static class APySummoned_10386301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10386301>();
 	}
 };
-static_assert(alignof(APySummoned_10386301) == 0x000010, "Wrong alignment on APySummoned_10386301");
-static_assert(sizeof(APySummoned_10386301) == 0x000B50, "Wrong size on APySummoned_10386301");
-static_assert(offsetof(APySummoned_10386301, BoxShield) == 0x000B40, "Member 'APySummoned_10386301::BoxShield' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10386301;
 
 }
 

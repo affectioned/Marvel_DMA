@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCustomLookTypeIconAsset">();
+		STATIC_CLASS_IMPL("PyCustomLookTypeIconAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCustomLookTypeIconAsset")
 	}
 	static class UPyCustomLookTypeIconAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCustomLookTypeIconAsset>();
 	}
 };
-static_assert(alignof(UPyCustomLookTypeIconAsset) == 0x000008, "Wrong alignment on UPyCustomLookTypeIconAsset");
-static_assert(sizeof(UPyCustomLookTypeIconAsset) == 0x000088, "Wrong size on UPyCustomLookTypeIconAsset");
-static_assert(offsetof(UPyCustomLookTypeIconAsset, IconAssetMap) == 0x000038, "Member 'UPyCustomLookTypeIconAsset::IconAssetMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCustomLookTypeIconAsset;
 
 }
 

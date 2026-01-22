@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Novice_EnterSettingPopupPanel.PyWidget_Novice_EnterGamePadSetting
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Novice_EnterGamePadSetting final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -30,28 +30,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_EnterGamePadSetting">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_EnterGamePadSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_EnterGamePadSetting")
 	}
 	static class UPyWidget_Novice_EnterGamePadSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_EnterGamePadSetting>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_EnterGamePadSetting) == 0x000008, "Wrong alignment on UPyWidget_Novice_EnterGamePadSetting");
-static_assert(sizeof(UPyWidget_Novice_EnterGamePadSetting) == 0x0005F8, "Wrong size on UPyWidget_Novice_EnterGamePadSetting");
+DUMPER7_ASSERTS_UPyWidget_Novice_EnterGamePadSetting;
 
 // PythonClass PyWidget_Novice_EnterSettingPopupPanel.PyWidget_Novice_EnterGamePadSetting_Item
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Novice_EnterGamePadSetting_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Img_Path_Icon;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Path_Icon_Hover;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Path_Icon_Black;                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Card_Text_Content;                                 // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Description_Text;                                  // 0x05F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Need_Preview;                                      // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Img_Path_Icon;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Path_Icon_Hover;                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Path_Icon_Black;                               // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Card_Text_Content;                                 // 0x05E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Description_Text;                                  // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Need_Preview;                                      // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -61,21 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_EnterGamePadSetting_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_EnterGamePadSetting_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_EnterGamePadSetting_Item")
 	}
 	static class UPyWidget_Novice_EnterGamePadSetting_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_EnterGamePadSetting_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_EnterGamePadSetting_Item) == 0x000008, "Wrong alignment on UPyWidget_Novice_EnterGamePadSetting_Item");
-static_assert(sizeof(UPyWidget_Novice_EnterGamePadSetting_Item) == 0x000610, "Wrong size on UPyWidget_Novice_EnterGamePadSetting_Item");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Img_Path_Icon) == 0x0005C0, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Img_Path_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Img_Path_Icon_Hover) == 0x0005C8, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Img_Path_Icon_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Img_Path_Icon_Black) == 0x0005D0, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Img_Path_Icon_Black' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Card_Text_Content) == 0x0005D8, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Card_Text_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Description_Text) == 0x0005F0, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Description_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_EnterGamePadSetting_Item, Need_Preview) == 0x000608, "Member 'UPyWidget_Novice_EnterGamePadSetting_Item::Need_Preview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_EnterGamePadSetting_Item;
 
 }
 

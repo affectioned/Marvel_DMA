@@ -36,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRespawnZone">();
+		STATIC_CLASS_IMPL("PyRespawnZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRespawnZone")
 	}
 	static class APyRespawnZone* GetDefaultObj()
 	{
@@ -44,10 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyRespawnZone) == 0x000010, "Wrong alignment on APyRespawnZone");
-static_assert(sizeof(APyRespawnZone) == 0x000700, "Wrong size on APyRespawnZone");
-static_assert(offsetof(APyRespawnZone, DelayTime) == 0x0006E0, "Member 'APyRespawnZone::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyRespawnZone, RespawnNotify) == 0x0006E8, "Member 'APyRespawnZone::RespawnNotify' has a wrong offset!");
+DUMPER7_ASSERTS_APyRespawnZone;
 
 }
 

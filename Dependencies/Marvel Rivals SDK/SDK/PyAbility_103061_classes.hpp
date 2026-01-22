@@ -20,37 +20,35 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103061.PyConfig_103061
-// 0x16D8 (0x1790 - 0x00B8)
+// 0x1A28 (0x1AE0 - 0x00B8)
 class UPyConfig_103061 final : public UConfig_103061
 {
 public:
 	struct FGameplayTag                           CueTag;                                            // 0x00B8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C4[0xC];                                       // 0x00C4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFindGroundParam                       SelectParam;                                       // 0x00D0(0x16B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         SummonedID;                                        // 0x1780(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SummonedOffset;                                    // 0x1784(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SummonedHeight;                                    // 0x1788(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       SelectParam;                                       // 0x00D0(0x1A00)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         SummonedID;                                        // 0x1AD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SummonedOffset;                                    // 0x1AD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SummonedHeight;                                    // 0x1AD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103061">();
+		STATIC_CLASS_IMPL("PyConfig_103061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103061")
 	}
 	static class UPyConfig_103061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103061>();
 	}
 };
-static_assert(alignof(UPyConfig_103061) == 0x000010, "Wrong alignment on UPyConfig_103061");
-static_assert(sizeof(UPyConfig_103061) == 0x001790, "Wrong size on UPyConfig_103061");
-static_assert(offsetof(UPyConfig_103061, CueTag) == 0x0000B8, "Member 'UPyConfig_103061::CueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103061, SelectParam) == 0x0000D0, "Member 'UPyConfig_103061::SelectParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103061, SummonedID) == 0x001780, "Member 'UPyConfig_103061::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103061, SummonedOffset) == 0x001784, "Member 'UPyConfig_103061::SummonedOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103061, SummonedHeight) == 0x001788, "Member 'UPyConfig_103061::SummonedHeight' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103061;
 
 // PythonClass PyAbility_103061.PyAbility_103061
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_103061 : public UAbility_103061
 {
 public:
@@ -63,39 +61,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103061">();
+		STATIC_CLASS_IMPL("PyAbility_103061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103061")
 	}
 	static class UPyAbility_103061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103061>();
 	}
 };
-static_assert(alignof(UPyAbility_103061) == 0x000008, "Wrong alignment on UPyAbility_103061");
-static_assert(sizeof(UPyAbility_103061) == 0x002A00, "Wrong size on UPyAbility_103061");
-
-// PythonClass PyAbility_103061.PyUIController_103061
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_103061 final : public UUIC_Ability
-{
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_103061">();
-	}
-	static class UPyUIController_103061* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_103061>();
-	}
-};
-static_assert(alignof(UPyUIController_103061) == 0x000008, "Wrong alignment on UPyUIController_103061");
-static_assert(sizeof(UPyUIController_103061) == 0x000F10, "Wrong size on UPyUIController_103061");
+DUMPER7_ASSERTS_UPyAbility_103061;
 
 // PythonClass PyAbility_103061.PyCue_Ability_Loop_10306102
-// 0x0000 (0x11C0 - 0x11C0)
+// 0x0000 (0x11D0 - 0x11D0)
 class APyCue_Ability_Loop_10306102 final : public ACue_Ability_Loop_10306102
 {
 public:
@@ -104,26 +84,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10306102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10306102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10306102")
 	}
 	static class APyCue_Ability_Loop_10306102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10306102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10306102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10306102");
-static_assert(sizeof(APyCue_Ability_Loop_10306102) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10306102");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10306102;
 
 // PythonClass PyAbility_103061.PyCue_Projectile_Loop_10306101
-// 0x0020 (0x1150 - 0x1130)
+// 0x0020 (0x1160 - 0x1140)
 class APyCue_Projectile_Loop_10306101 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ArmFXRadius;                                       // 0x1130(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ArmFXOffset;                                       // 0x1134(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         ArmTrailFXTemplate;                                // 0x1138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         ArmExplodeFXTemplate;                              // 0x1140(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ArmFXRadius;                                       // 0x1140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ArmFXOffset;                                       // 0x1144(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ArmTrailFXTemplate;                                // 0x1148(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ArmExplodeFXTemplate;                              // 0x1150(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -133,32 +116,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10306101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10306101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10306101")
 	}
 	static class APyCue_Projectile_Loop_10306101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10306101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10306101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10306101");
-static_assert(sizeof(APyCue_Projectile_Loop_10306101) == 0x001150, "Wrong size on APyCue_Projectile_Loop_10306101");
-static_assert(offsetof(APyCue_Projectile_Loop_10306101, ArmFXRadius) == 0x001130, "Member 'APyCue_Projectile_Loop_10306101::ArmFXRadius' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10306101, ArmFXOffset) == 0x001134, "Member 'APyCue_Projectile_Loop_10306101::ArmFXOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10306101, ArmTrailFXTemplate) == 0x001138, "Member 'APyCue_Projectile_Loop_10306101::ArmTrailFXTemplate' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10306101, ArmExplodeFXTemplate) == 0x001140, "Member 'APyCue_Projectile_Loop_10306101::ArmExplodeFXTemplate' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10306101;
 
 // PythonClass PyAbility_103061.PyCue_Summoned_Loop_10306101
-// 0x0020 (0x1230 - 0x1210)
+// 0x0020 (0x1290 - 0x1270)
 class APyCue_Summoned_Loop_10306101 final : public ACue_Summoned_Loop_10306101
 {
 public:
-	float                                         SkyHeight;                                         // 0x1210(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SkyRadius;                                         // 0x1214(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MoonMaterial;                                      // 0x1218(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MoonHeight;                                        // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MoonRadius;                                        // 0x1224(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MoonEndAudioID;                                    // 0x1228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SkyDisappearAudioID;                               // 0x122C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SkyHeight;                                         // 0x1270(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SkyRadius;                                         // 0x1274(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MoonMaterial;                                      // 0x1278(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MoonHeight;                                        // 0x1280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MoonRadius;                                        // 0x1284(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MoonEndAudioID;                                    // 0x1288(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SkyDisappearAudioID;                               // 0x128C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -168,22 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoned_Loop_10306101">();
+		STATIC_CLASS_IMPL("PyCue_Summoned_Loop_10306101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoned_Loop_10306101")
 	}
 	static class APyCue_Summoned_Loop_10306101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoned_Loop_10306101>();
 	}
 };
-static_assert(alignof(APyCue_Summoned_Loop_10306101) == 0x000010, "Wrong alignment on APyCue_Summoned_Loop_10306101");
-static_assert(sizeof(APyCue_Summoned_Loop_10306101) == 0x001230, "Wrong size on APyCue_Summoned_Loop_10306101");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, SkyHeight) == 0x001210, "Member 'APyCue_Summoned_Loop_10306101::SkyHeight' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, SkyRadius) == 0x001214, "Member 'APyCue_Summoned_Loop_10306101::SkyRadius' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, MoonMaterial) == 0x001218, "Member 'APyCue_Summoned_Loop_10306101::MoonMaterial' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, MoonHeight) == 0x001220, "Member 'APyCue_Summoned_Loop_10306101::MoonHeight' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, MoonRadius) == 0x001224, "Member 'APyCue_Summoned_Loop_10306101::MoonRadius' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, MoonEndAudioID) == 0x001228, "Member 'APyCue_Summoned_Loop_10306101::MoonEndAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10306101, SkyDisappearAudioID) == 0x00122C, "Member 'APyCue_Summoned_Loop_10306101::SkyDisappearAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoned_Loop_10306101;
 
 }
 

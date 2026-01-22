@@ -43,20 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestGuidingLine">();
+		STATIC_CLASS_IMPL("PyEnergyContestGuidingLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestGuidingLine")
 	}
 	static class APyEnergyContestGuidingLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEnergyContestGuidingLine>();
 	}
 };
-static_assert(alignof(APyEnergyContestGuidingLine) == 0x000010, "Wrong alignment on APyEnergyContestGuidingLine");
-static_assert(sizeof(APyEnergyContestGuidingLine) == 0x000750, "Wrong size on APyEnergyContestGuidingLine");
-static_assert(offsetof(APyEnergyContestGuidingLine, MaterialBlue) == 0x000730, "Member 'APyEnergyContestGuidingLine::MaterialBlue' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestGuidingLine, MaterialRed) == 0x000738, "Member 'APyEnergyContestGuidingLine::MaterialRed' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestGuidingLine, GuidingLineReversed) == 0x000740, "Member 'APyEnergyContestGuidingLine::GuidingLineReversed' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestGuidingLine, BattleSide) == 0x000741, "Member 'APyEnergyContestGuidingLine::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestGuidingLine, GuidingLineVisibility) == 0x000744, "Member 'APyEnergyContestGuidingLine::GuidingLineVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_APyEnergyContestGuidingLine;
 
 }
 

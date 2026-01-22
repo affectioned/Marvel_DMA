@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_CardCategoryUnit.PyWidget_Halloween_CardCategoryUnit
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Halloween_CardCategoryUnit final : public UPyWidget_BaseCommonButton
 {
 public:
-	class UAkAudioEvent*                          UpgradeAudio;                                      // 0x08B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          UpgradeAudio;                                      // 0x0918(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CardCategoryUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CardCategoryUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CardCategoryUnit")
 	}
 	static class UPyWidget_Halloween_CardCategoryUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CardCategoryUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CardCategoryUnit) == 0x000010, "Wrong alignment on UPyWidget_Halloween_CardCategoryUnit");
-static_assert(sizeof(UPyWidget_Halloween_CardCategoryUnit) == 0x0008C0, "Wrong size on UPyWidget_Halloween_CardCategoryUnit");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryUnit, UpgradeAudio) == 0x0008B8, "Member 'UPyWidget_Halloween_CardCategoryUnit::UpgradeAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CardCategoryUnit;
 
 }
 

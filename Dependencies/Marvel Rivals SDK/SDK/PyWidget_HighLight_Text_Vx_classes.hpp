@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HighLight_Text_Vx.PyWidget_HighLight_Text_Vx
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_HighLight_Text_Vx final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnPlayAnimFadeIn;                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnPlayAnimFadeOut;                         // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           OwnTextColor;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           OtherTextColor;                                    // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnPlayAnimFadeIn;                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnPlayAnimFadeOut;                         // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           OwnTextColor;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           OtherTextColor;                                    // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HighLight_Text_Vx">();
+		STATIC_CLASS_IMPL("PyWidget_HighLight_Text_Vx")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HighLight_Text_Vx")
 	}
 	static class UPyWidget_HighLight_Text_Vx* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HighLight_Text_Vx>();
 	}
 };
-static_assert(alignof(UPyWidget_HighLight_Text_Vx) == 0x000008, "Wrong alignment on UPyWidget_HighLight_Text_Vx");
-static_assert(sizeof(UPyWidget_HighLight_Text_Vx) == 0x0005F0, "Wrong size on UPyWidget_HighLight_Text_Vx");
-static_assert(offsetof(UPyWidget_HighLight_Text_Vx, AkEvent_OnPlayAnimFadeIn) == 0x0005C0, "Member 'UPyWidget_HighLight_Text_Vx::AkEvent_OnPlayAnimFadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HighLight_Text_Vx, AkEvent_OnPlayAnimFadeOut) == 0x0005C8, "Member 'UPyWidget_HighLight_Text_Vx::AkEvent_OnPlayAnimFadeOut' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HighLight_Text_Vx, OwnTextColor) == 0x0005D0, "Member 'UPyWidget_HighLight_Text_Vx::OwnTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HighLight_Text_Vx, OtherTextColor) == 0x0005E0, "Member 'UPyWidget_HighLight_Text_Vx::OtherTextColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HighLight_Text_Vx;
 
 }
 

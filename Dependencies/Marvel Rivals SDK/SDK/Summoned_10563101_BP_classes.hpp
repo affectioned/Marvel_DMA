@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10563101_BP.Summoned_10563101_BP_C
-// 0x0010 (0x0C80 - 0x0C70)
+// 0x0010 (0x0CB0 - 0x0CA0)
 class ASummoned_10563101_BP_C final : public APySummoned_10563101
 {
 public:
-	class UMarvelHitShape_Box*                    MarvelHitShape_Box;                                // 0x0C70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Box*                    MarvelHitShape_Box;                                // 0x0CA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10563101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10563101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10563101_BP_C")
 	}
 	static class ASummoned_10563101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10563101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10563101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10563101_BP_C");
-static_assert(sizeof(ASummoned_10563101_BP_C) == 0x000C80, "Wrong size on ASummoned_10563101_BP_C");
-static_assert(offsetof(ASummoned_10563101_BP_C, MarvelHitShape_Box) == 0x000C70, "Member 'ASummoned_10563101_BP_C::MarvelHitShape_Box' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10563101_BP_C;
 
 }
 

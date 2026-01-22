@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
+#include "SlateCore_structs.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_League_SignUpConfirm.PyWidget_League_SignUpConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_SignUpConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -29,18 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUpConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUpConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUpConfirm")
 	}
 	static class UPyWidget_League_SignUpConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUpConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUpConfirm) == 0x000008, "Wrong alignment on UPyWidget_League_SignUpConfirm");
-static_assert(sizeof(UPyWidget_League_SignUpConfirm) == 0x0005C0, "Wrong size on UPyWidget_League_SignUpConfirm");
+DUMPER7_ASSERTS_UPyWidget_League_SignUpConfirm;
 
 // PythonClass PyWidget_League_SignUpConfirm.PyWidget_League_SignUp_SecondaryConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_SignUp_SecondaryConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -49,18 +52,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUp_SecondaryConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUp_SecondaryConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUp_SecondaryConfirm")
 	}
 	static class UPyWidget_League_SignUp_SecondaryConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUp_SecondaryConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUp_SecondaryConfirm) == 0x000008, "Wrong alignment on UPyWidget_League_SignUp_SecondaryConfirm");
-static_assert(sizeof(UPyWidget_League_SignUp_SecondaryConfirm) == 0x0005C0, "Wrong size on UPyWidget_League_SignUp_SecondaryConfirm");
+DUMPER7_ASSERTS_UPyWidget_League_SignUp_SecondaryConfirm;
 
 // PythonClass PyWidget_League_SignUpConfirm.PyWidget_League_RejectSignUp_SecondaryConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_RejectSignUp_SecondaryConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -69,31 +75,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_RejectSignUp_SecondaryConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_League_RejectSignUp_SecondaryConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_RejectSignUp_SecondaryConfirm")
 	}
 	static class UPyWidget_League_RejectSignUp_SecondaryConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_RejectSignUp_SecondaryConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_League_RejectSignUp_SecondaryConfirm) == 0x000008, "Wrong alignment on UPyWidget_League_RejectSignUp_SecondaryConfirm");
-static_assert(sizeof(UPyWidget_League_RejectSignUp_SecondaryConfirm) == 0x0005C0, "Wrong size on UPyWidget_League_RejectSignUp_SecondaryConfirm");
+DUMPER7_ASSERTS_UPyWidget_League_RejectSignUp_SecondaryConfirm;
 
 // PythonClass PyWidget_League_SignUpConfirm.PyWidget_League_SignUpTag
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_League_SignUpTag final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USizeBox*                               SizeBox_Icon;                                      // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USizeBox*                               SizeBox_Icon2;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Tag;                                          // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgTagColorMRC;                                    // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgTagColorClash;                                  // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorMRC;                                      // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorClash;                                    // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PlatformColorMRC;                                  // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PlatformColorClash;                                // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USizeBox*                               SizeBox_Icon;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Icon2;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Tag;                                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgTagColorMRC;                                    // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgTagColorClash;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorMRC;                                      // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorClash;                                    // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PlatformColorMRC;                                  // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PlatformColorClash;                                // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -103,24 +112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUpTag">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUpTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUpTag")
 	}
 	static class UPyWidget_League_SignUpTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUpTag>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUpTag) == 0x000008, "Wrong alignment on UPyWidget_League_SignUpTag");
-static_assert(sizeof(UPyWidget_League_SignUpTag) == 0x000640, "Wrong size on UPyWidget_League_SignUpTag");
-static_assert(offsetof(UPyWidget_League_SignUpTag, SizeBox_Icon) == 0x0005C0, "Member 'UPyWidget_League_SignUpTag::SizeBox_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, SizeBox_Icon2) == 0x0005C8, "Member 'UPyWidget_League_SignUpTag::SizeBox_Icon2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, Text_Tag) == 0x0005D0, "Member 'UPyWidget_League_SignUpTag::Text_Tag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, ImgTagColorMRC) == 0x0005D8, "Member 'UPyWidget_League_SignUpTag::ImgTagColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, ImgTagColorClash) == 0x0005E8, "Member 'UPyWidget_League_SignUpTag::ImgTagColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, TextColorMRC) == 0x0005F8, "Member 'UPyWidget_League_SignUpTag::TextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, TextColorClash) == 0x00060C, "Member 'UPyWidget_League_SignUpTag::TextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, PlatformColorMRC) == 0x000620, "Member 'UPyWidget_League_SignUpTag::PlatformColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUpTag, PlatformColorClash) == 0x000630, "Member 'UPyWidget_League_SignUpTag::PlatformColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_SignUpTag;
 
 }
 

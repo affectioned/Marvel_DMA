@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_ListData_Career.PyWidget_Settlement_ListData_Career
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Settlement_ListData_Career final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                UsedHeroGuideTipsStyles;                           // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                UsedHeroGuideTipsStyles;                           // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,19 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ListData_Career">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ListData_Career")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ListData_Career")
 	}
 	static class UPyWidget_Settlement_ListData_Career* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ListData_Career>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ListData_Career) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ListData_Career");
-static_assert(sizeof(UPyWidget_Settlement_ListData_Career) == 0x000608, "Wrong size on UPyWidget_Settlement_ListData_Career");
-static_assert(offsetof(UPyWidget_Settlement_ListData_Career, UsedHeroGuideTipsStyles) == 0x0005F8, "Member 'UPyWidget_Settlement_ListData_Career::UsedHeroGuideTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ListData_Career;
 
 // PythonClass PyWidget_Settlement_ListData_Career.PyWidget_SettlementResultInfo_Career
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_SettlementResultInfo_Career final : public UPyWidget_SettlementResultInfo
 {
 public:
@@ -54,15 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementResultInfo_Career">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementResultInfo_Career")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementResultInfo_Career")
 	}
 	static class UPyWidget_SettlementResultInfo_Career* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementResultInfo_Career>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementResultInfo_Career) == 0x000008, "Wrong alignment on UPyWidget_SettlementResultInfo_Career");
-static_assert(sizeof(UPyWidget_SettlementResultInfo_Career) == 0x0005F0, "Wrong size on UPyWidget_SettlementResultInfo_Career");
+DUMPER7_ASSERTS_UPyWidget_SettlementResultInfo_Career;
 
 }
 

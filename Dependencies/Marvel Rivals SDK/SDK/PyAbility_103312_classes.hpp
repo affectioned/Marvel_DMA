@@ -27,23 +27,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103312">();
+		STATIC_CLASS_IMPL("PyConfig_103312")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103312")
 	}
 	static class UPyConfig_103312* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103312>();
 	}
 };
-static_assert(alignof(UPyConfig_103312) == 0x000008, "Wrong alignment on UPyConfig_103312");
-static_assert(sizeof(UPyConfig_103312) == 0x0000A8, "Wrong size on UPyConfig_103312");
-static_assert(offsetof(UPyConfig_103312, WeaponLoadEndEvent) == 0x000098, "Member 'UPyConfig_103312::WeaponLoadEndEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103312;
 
 // PythonClass PyAbility_103312.PyAbility_103312
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_103312 : public UMarvelGameplayAbility
 {
 public:
-	int32                                         SniperRifleID;                                     // 0x29F0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SniperRifleID;                                     // 0x2A40(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool CanActivate();
@@ -61,16 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103312">();
+		STATIC_CLASS_IMPL("PyAbility_103312")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103312")
 	}
 	static class UPyAbility_103312* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103312>();
 	}
 };
-static_assert(alignof(UPyAbility_103312) == 0x000008, "Wrong alignment on UPyAbility_103312");
-static_assert(sizeof(UPyAbility_103312) == 0x0029F8, "Wrong size on UPyAbility_103312");
-static_assert(offsetof(UPyAbility_103312, SniperRifleID) == 0x0029F0, "Member 'UPyAbility_103312::SniperRifleID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103312;
 
 }
 

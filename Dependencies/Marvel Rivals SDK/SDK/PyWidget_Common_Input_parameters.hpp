@@ -23,9 +23,7 @@ struct PyWidget_Common_Input_SetIsEditable final
 public:
 	bool                                          IsEditable;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_SetIsEditable) == 0x000001, "Wrong alignment on PyWidget_Common_Input_SetIsEditable");
-static_assert(sizeof(PyWidget_Common_Input_SetIsEditable) == 0x000001, "Wrong size on PyWidget_Common_Input_SetIsEditable");
-static_assert(offsetof(PyWidget_Common_Input_SetIsEditable, IsEditable) == 0x000000, "Member 'PyWidget_Common_Input_SetIsEditable::IsEditable' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetIsEditable;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetInputHintText
 // 0x0018 (0x0018 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Common_Input_SetInputHintText final
 public:
 	class FText                                   HintText;                                          // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_Common_Input_SetInputHintText) == 0x000008, "Wrong alignment on PyWidget_Common_Input_SetInputHintText");
-static_assert(sizeof(PyWidget_Common_Input_SetInputHintText) == 0x000018, "Wrong size on PyWidget_Common_Input_SetInputHintText");
-static_assert(offsetof(PyWidget_Common_Input_SetInputHintText, HintText) == 0x000000, "Member 'PyWidget_Common_Input_SetInputHintText::HintText' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetInputHintText;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetFontSize
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Common_Input_SetFontSize final
 public:
 	int32                                         size;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_SetFontSize) == 0x000004, "Wrong alignment on PyWidget_Common_Input_SetFontSize");
-static_assert(sizeof(PyWidget_Common_Input_SetFontSize) == 0x000004, "Wrong size on PyWidget_Common_Input_SetFontSize");
-static_assert(offsetof(PyWidget_Common_Input_SetFontSize, size) == 0x000000, "Member 'PyWidget_Common_Input_SetFontSize::size' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetFontSize;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.UpdateWidgetStyleWithEditState
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_Common_Input_UpdateWidgetStyleWithEditState final
 public:
 	bool                                          IsEditing;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_UpdateWidgetStyleWithEditState) == 0x000001, "Wrong alignment on PyWidget_Common_Input_UpdateWidgetStyleWithEditState");
-static_assert(sizeof(PyWidget_Common_Input_UpdateWidgetStyleWithEditState) == 0x000001, "Wrong size on PyWidget_Common_Input_UpdateWidgetStyleWithEditState");
-static_assert(offsetof(PyWidget_Common_Input_UpdateWidgetStyleWithEditState, IsEditing) == 0x000000, "Member 'PyWidget_Common_Input_UpdateWidgetStyleWithEditState::IsEditing' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_UpdateWidgetStyleWithEditState;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetOperateBtnStyle
 // 0x0400 (0x0400 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_Common_Input_SetOperateBtnStyle final
 public:
 	struct FButtonStyle                           BtnStyle;                                          // 0x0000(0x0400)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_Input_SetOperateBtnStyle) == 0x000010, "Wrong alignment on PyWidget_Common_Input_SetOperateBtnStyle");
-static_assert(sizeof(PyWidget_Common_Input_SetOperateBtnStyle) == 0x000400, "Wrong size on PyWidget_Common_Input_SetOperateBtnStyle");
-static_assert(offsetof(PyWidget_Common_Input_SetOperateBtnStyle, BtnStyle) == 0x000000, "Member 'PyWidget_Common_Input_SetOperateBtnStyle::BtnStyle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetOperateBtnStyle;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetIsSearch
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_Common_Input_SetIsSearch final
 public:
 	bool                                          IsSearch;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_SetIsSearch) == 0x000001, "Wrong alignment on PyWidget_Common_Input_SetIsSearch");
-static_assert(sizeof(PyWidget_Common_Input_SetIsSearch) == 0x000001, "Wrong size on PyWidget_Common_Input_SetIsSearch");
-static_assert(offsetof(PyWidget_Common_Input_SetIsSearch, IsSearch) == 0x000000, "Member 'PyWidget_Common_Input_SetIsSearch::IsSearch' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetIsSearch;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetIsPassword
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_Common_Input_SetIsPassword final
 public:
 	bool                                          IsPassword;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_SetIsPassword) == 0x000001, "Wrong alignment on PyWidget_Common_Input_SetIsPassword");
-static_assert(sizeof(PyWidget_Common_Input_SetIsPassword) == 0x000001, "Wrong size on PyWidget_Common_Input_SetIsPassword");
-static_assert(offsetof(PyWidget_Common_Input_SetIsPassword, IsPassword) == 0x000000, "Member 'PyWidget_Common_Input_SetIsPassword::IsPassword' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetIsPassword;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SetInputText
 // 0x0018 (0x0018 - 0x0000)
@@ -100,9 +86,7 @@ struct PyWidget_Common_Input_SetInputText final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_Common_Input_SetInputText) == 0x000008, "Wrong alignment on PyWidget_Common_Input_SetInputText");
-static_assert(sizeof(PyWidget_Common_Input_SetInputText) == 0x000018, "Wrong size on PyWidget_Common_Input_SetInputText");
-static_assert(offsetof(PyWidget_Common_Input_SetInputText, Text) == 0x000000, "Member 'PyWidget_Common_Input_SetInputText::Text' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SetInputText;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.GetInputText
 // 0x0018 (0x0018 - 0x0000)
@@ -111,9 +95,7 @@ struct PyWidget_Common_Input_GetInputText final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_Common_Input_GetInputText) == 0x000008, "Wrong alignment on PyWidget_Common_Input_GetInputText");
-static_assert(sizeof(PyWidget_Common_Input_GetInputText) == 0x000018, "Wrong size on PyWidget_Common_Input_GetInputText");
-static_assert(offsetof(PyWidget_Common_Input_GetInputText, ReturnValue) == 0x000000, "Member 'PyWidget_Common_Input_GetInputText::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_GetInputText;
 
 // PythonFunction PyWidget_Common_Input.PyWidget_Common_Input.SubmitText
 // 0x0020 (0x0020 - 0x0000)
@@ -123,10 +105,7 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
 	bool                                          bIsEnter;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Input_SubmitText) == 0x000008, "Wrong alignment on PyWidget_Common_Input_SubmitText");
-static_assert(sizeof(PyWidget_Common_Input_SubmitText) == 0x000020, "Wrong size on PyWidget_Common_Input_SubmitText");
-static_assert(offsetof(PyWidget_Common_Input_SubmitText, Text) == 0x000000, "Member 'PyWidget_Common_Input_SubmitText::Text' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Input_SubmitText, bIsEnter) == 0x000018, "Member 'PyWidget_Common_Input_SubmitText::bIsEnter' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Input_SubmitText;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLunaSnowChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyLunaSnowChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyLunaSnowChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyLunaSnowChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyLunaSnowChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyLunaSnowChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyLunaSnowChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyLunaSnowChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyLunaSnowChildActor_OnGenericGameplayTagUpdate;
 
 }
 

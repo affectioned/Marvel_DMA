@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
@@ -28,19 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BlockedWords_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_BlockedWords_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BlockedWords_ItemData")
 	}
 	static class UPyWidget_BlockedWords_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BlockedWords_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_BlockedWords_ItemData) == 0x000008, "Wrong alignment on UPyWidget_BlockedWords_ItemData");
-static_assert(sizeof(UPyWidget_BlockedWords_ItemData) == 0x000040, "Wrong size on UPyWidget_BlockedWords_ItemData");
-static_assert(offsetof(UPyWidget_BlockedWords_ItemData, CustomWord) == 0x000030, "Member 'UPyWidget_BlockedWords_ItemData::CustomWord' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BlockedWords_ItemData;
 
 // PythonClass PyWidget_Setting_ManageBlockedWords.PyWidget_Setting_ManageBlockedWords
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Setting_ManageBlockedWords final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -51,18 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_ManageBlockedWords">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_ManageBlockedWords")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_ManageBlockedWords")
 	}
 	static class UPyWidget_Setting_ManageBlockedWords* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_ManageBlockedWords>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_ManageBlockedWords) == 0x000008, "Wrong alignment on UPyWidget_Setting_ManageBlockedWords");
-static_assert(sizeof(UPyWidget_Setting_ManageBlockedWords) == 0x0005C0, "Wrong size on UPyWidget_Setting_ManageBlockedWords");
+DUMPER7_ASSERTS_UPyWidget_Setting_ManageBlockedWords;
 
 // PythonClass PyWidget_Setting_ManageBlockedWords.PyWidget_Setting_ManageBlockedWords_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Setting_ManageBlockedWords_Item final : public UPyMarvelUserWidget
 {
 public:
@@ -72,15 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_ManageBlockedWords_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_ManageBlockedWords_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_ManageBlockedWords_Item")
 	}
 	static class UPyWidget_Setting_ManageBlockedWords_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_ManageBlockedWords_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_ManageBlockedWords_Item) == 0x000008, "Wrong alignment on UPyWidget_Setting_ManageBlockedWords_Item");
-static_assert(sizeof(UPyWidget_Setting_ManageBlockedWords_Item) == 0x0005C0, "Wrong size on UPyWidget_Setting_ManageBlockedWords_Item");
+DUMPER7_ASSERTS_UPyWidget_Setting_ManageBlockedWords_Item;
 
 }
 

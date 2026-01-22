@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNewYorkM01Dog">();
+		STATIC_CLASS_IMPL("PyNewYorkM01Dog")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNewYorkM01Dog")
 	}
 	static class APyNewYorkM01Dog* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNewYorkM01Dog>();
 	}
 };
-static_assert(alignof(APyNewYorkM01Dog) == 0x000010, "Wrong alignment on APyNewYorkM01Dog");
-static_assert(sizeof(APyNewYorkM01Dog) == 0x000E20, "Wrong size on APyNewYorkM01Dog");
-static_assert(offsetof(APyNewYorkM01Dog, VoiceKey) == 0x000D90, "Member 'APyNewYorkM01Dog::VoiceKey' has a wrong offset!");
-static_assert(offsetof(APyNewYorkM01Dog, ExitStopTime) == 0x000DA0, "Member 'APyNewYorkM01Dog::ExitStopTime' has a wrong offset!");
-static_assert(offsetof(APyNewYorkM01Dog, ExitTags) == 0x000DA8, "Member 'APyNewYorkM01Dog::ExitTags' has a wrong offset!");
-static_assert(offsetof(APyNewYorkM01Dog, TriggerDistance) == 0x000E10, "Member 'APyNewYorkM01Dog::TriggerDistance' has a wrong offset!");
+DUMPER7_ASSERTS_APyNewYorkM01Dog;
 
 }
 

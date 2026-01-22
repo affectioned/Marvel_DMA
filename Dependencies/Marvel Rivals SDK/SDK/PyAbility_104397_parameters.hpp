@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           TagUpdated;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExists;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104397_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_104397_OnTagUpdate");
-static_assert(sizeof(PyAbility_104397_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_104397_OnTagUpdate");
-static_assert(offsetof(PyAbility_104397_OnTagUpdate, TagUpdated) == 0x000000, "Member 'PyAbility_104397_OnTagUpdate::TagUpdated' has a wrong offset!");
-static_assert(offsetof(PyAbility_104397_OnTagUpdate, TagExists) == 0x00000C, "Member 'PyAbility_104397_OnTagUpdate::TagExists' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104397_OnTagUpdate;
 
 // PythonFunction PyAbility_104397.PyAbility_104397.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyAbility_104397_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104397_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104397_CanActivate");
-static_assert(sizeof(PyAbility_104397_CanActivate) == 0x000001, "Wrong size on PyAbility_104397_CanActivate");
-static_assert(offsetof(PyAbility_104397_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104397_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104397_CanActivate;
 
 }
 

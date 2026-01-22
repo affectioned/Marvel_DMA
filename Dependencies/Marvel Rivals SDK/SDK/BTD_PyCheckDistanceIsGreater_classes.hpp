@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckDistanceIsGreater">();
+		STATIC_CLASS_IMPL("BTD_PyCheckDistanceIsGreater")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckDistanceIsGreater")
 	}
 	static class UBTD_PyCheckDistanceIsGreater* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckDistanceIsGreater>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckDistanceIsGreater) == 0x000008, "Wrong alignment on UBTD_PyCheckDistanceIsGreater");
-static_assert(sizeof(UBTD_PyCheckDistanceIsGreater) == 0x0000F0, "Wrong size on UBTD_PyCheckDistanceIsGreater");
-static_assert(offsetof(UBTD_PyCheckDistanceIsGreater, InTarget) == 0x0000B8, "Member 'UBTD_PyCheckDistanceIsGreater::InTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckDistanceIsGreater, DistanceType) == 0x0000E8, "Member 'UBTD_PyCheckDistanceIsGreater::DistanceType' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckDistanceIsGreater, Distance) == 0x0000EC, "Member 'UBTD_PyCheckDistanceIsGreater::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckDistanceIsGreater;
 
 }
 

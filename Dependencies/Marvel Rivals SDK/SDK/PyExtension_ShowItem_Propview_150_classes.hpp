@@ -23,15 +23,18 @@ class UPyExtension_ShowItem_Activity150 final : public UPyExtension_ShowItemBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_Activity150">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_Activity150")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_Activity150")
 	}
 	static class UPyExtension_ShowItem_Activity150* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_Activity150>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_Activity150) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_Activity150");
-static_assert(sizeof(UPyExtension_ShowItem_Activity150) == 0x000030, "Wrong size on UPyExtension_ShowItem_Activity150");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_Activity150;
 
 }
 

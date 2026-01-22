@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyWaitByWaypoint">();
+		STATIC_CLASS_IMPL("BTT_PyWaitByWaypoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyWaitByWaypoint")
 	}
 	static class UBTT_PyWaitByWaypoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyWaitByWaypoint>();
 	}
 };
-static_assert(alignof(UBTT_PyWaitByWaypoint) == 0x000008, "Wrong alignment on UBTT_PyWaitByWaypoint");
-static_assert(sizeof(UBTT_PyWaitByWaypoint) == 0x0000C0, "Wrong size on UBTT_PyWaitByWaypoint");
+DUMPER7_ASSERTS_UBTT_PyWaitByWaypoint;
 
 }
 

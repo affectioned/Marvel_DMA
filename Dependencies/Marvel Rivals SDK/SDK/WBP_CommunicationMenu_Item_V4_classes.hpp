@@ -46,36 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CommunicationMenu_Item_V4_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CommunicationMenu_Item_V4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CommunicationMenu_Item_V4_C")
 	}
 	static class UWBP_CommunicationMenu_Item_V4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CommunicationMenu_Item_V4_C>();
 	}
 };
-static_assert(alignof(UWBP_CommunicationMenu_Item_V4_C) == 0x000010, "Wrong alignment on UWBP_CommunicationMenu_Item_V4_C");
-static_assert(sizeof(UWBP_CommunicationMenu_Item_V4_C) == 0x000660, "Wrong size on UWBP_CommunicationMenu_Item_V4_C");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Anim_SelectOut) == 0x0005B0, "Member 'UWBP_CommunicationMenu_Item_V4_C::Anim_SelectOut' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Anim_Select_FadeOut) == 0x0005B8, "Member 'UWBP_CommunicationMenu_Item_V4_C::Anim_Select_FadeOut' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Anim_FadeOut) == 0x0005C0, "Member 'UWBP_CommunicationMenu_Item_V4_C::Anim_FadeOut' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Anim_Select) == 0x0005C8, "Member 'UWBP_CommunicationMenu_Item_V4_C::Anim_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Anim_FadeIn) == 0x0005D0, "Member 'UWBP_CommunicationMenu_Item_V4_C::Anim_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, CanvasPanel_0) == 0x0005D8, "Member 'UWBP_CommunicationMenu_Item_V4_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Image_Normal) == 0x0005E0, "Member 'UWBP_CommunicationMenu_Item_V4_C::Image_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Hover) == 0x0005E8, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Hover_1) == 0x0005F0, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Hover_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Hover_2) == 0x0005F8, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Hover_2' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Personal_Icon) == 0x000600, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Personal_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Signal_Icon) == 0x000608, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Signal_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Img_Unavailable_Hover) == 0x000610, "Member 'UWBP_CommunicationMenu_Item_V4_C::Img_Unavailable_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, MarvelOverlay_0) == 0x000618, "Member 'UWBP_CommunicationMenu_Item_V4_C::MarvelOverlay_0' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Overlay_Inf_Voice) == 0x000620, "Member 'UWBP_CommunicationMenu_Item_V4_C::Overlay_Inf_Voice' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Overlay_PlainText) == 0x000628, "Member 'UWBP_CommunicationMenu_Item_V4_C::Overlay_PlainText' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Overlay_VoiceTitle) == 0x000630, "Member 'UWBP_CommunicationMenu_Item_V4_C::Overlay_VoiceTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, SizeBox_Icon) == 0x000638, "Member 'UWBP_CommunicationMenu_Item_V4_C::SizeBox_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, SizeBox_Icon_Signal) == 0x000640, "Member 'UWBP_CommunicationMenu_Item_V4_C::SizeBox_Icon_Signal' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, Text_PlainText) == 0x000648, "Member 'UWBP_CommunicationMenu_Item_V4_C::Text_PlainText' has a wrong offset!");
-static_assert(offsetof(UWBP_CommunicationMenu_Item_V4_C, WBP_SoundIcon) == 0x000650, "Member 'UWBP_CommunicationMenu_Item_V4_C::WBP_SoundIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CommunicationMenu_Item_V4_C;
 
 }
 

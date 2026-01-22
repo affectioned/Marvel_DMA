@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_Performance">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_Performance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_Performance")
 	}
 	static class UPyUIController_SettingPage_Performance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_Performance>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_Performance) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_Performance");
-static_assert(sizeof(UPyUIController_SettingPage_Performance) == 0x000040, "Wrong size on UPyUIController_SettingPage_Performance");
-static_assert(offsetof(UPyUIController_SettingPage_Performance, SettingEntry) == 0x000030, "Member 'UPyUIController_SettingPage_Performance::SettingEntry' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Performance, SettingTitleEntry) == 0x000038, "Member 'UPyUIController_SettingPage_Performance::SettingTitleEntry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_Performance;
 
 }
 

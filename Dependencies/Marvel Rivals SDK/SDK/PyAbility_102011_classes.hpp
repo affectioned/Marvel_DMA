@@ -31,26 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102011">();
+		STATIC_CLASS_IMPL("PyConfig_102011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102011")
 	}
 	static class UPyConfig_102011* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102011>();
 	}
 };
-static_assert(alignof(UPyConfig_102011) == 0x000008, "Wrong alignment on UPyConfig_102011");
-static_assert(sizeof(UPyConfig_102011) == 0x000118, "Wrong size on UPyConfig_102011");
-static_assert(offsetof(UPyConfig_102011, ProjectileID) == 0x000098, "Member 'UPyConfig_102011::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102011, EnergyTag) == 0x00009C, "Member 'UPyConfig_102011::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102011, CriticalHitEnergyRestore) == 0x0000A8, "Member 'UPyConfig_102011::CriticalHitEnergyRestore' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102011, AddEnergyIgnoreTags) == 0x0000B0, "Member 'UPyConfig_102011::AddEnergyIgnoreTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102011;
 
 // PythonClass PyAbility_102011.PyAbility_102011
-// 0x0010 (0x2A08 - 0x29F8)
+// 0x0010 (0x2A58 - 0x2A48)
 class UPyAbility_102011 : public UAbility_108
 {
 public:
-	TMulticastInlineDelegate<void()>              OnAddEnergyDispatcher;                             // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAddEnergyDispatcher;                             // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -61,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102011">();
+		STATIC_CLASS_IMPL("PyAbility_102011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102011")
 	}
 	static class UPyAbility_102011* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102011>();
 	}
 };
-static_assert(alignof(UPyAbility_102011) == 0x000008, "Wrong alignment on UPyAbility_102011");
-static_assert(sizeof(UPyAbility_102011) == 0x002A08, "Wrong size on UPyAbility_102011");
-static_assert(offsetof(UPyAbility_102011, OnAddEnergyDispatcher) == 0x0029F8, "Member 'UPyAbility_102011::OnAddEnergyDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102011;
 
 }
 

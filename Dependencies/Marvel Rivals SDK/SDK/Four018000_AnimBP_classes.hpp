@@ -48,42 +48,24 @@ public:
 	bool                                          __CustomProperty_bUseSixDirAnimData_0C5FF8A846453ECBE619379E66E356EB; // 0x120D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
 	void ExecuteUbergraph_4018000_AnimBP(int32 EntryPoint);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"4018000_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("4018000_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"4018000_AnimBP_C")
 	}
 	static class UFour018000_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFour018000_AnimBP_C>();
 	}
 };
-static_assert(alignof(UFour018000_AnimBP_C) == 0x000010, "Wrong alignment on UFour018000_AnimBP_C");
-static_assert(sizeof(UFour018000_AnimBP_C) == 0x001210, "Wrong size on UFour018000_AnimBP_C");
-static_assert(offsetof(UFour018000_AnimBP_C, UberGraphFrame) == 0x000A20, "Member 'UFour018000_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimBlueprintExtension_PropertyAccess) == 0x000A28, "Member 'UFour018000_AnimBP_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimBlueprintExtension_Base) == 0x000A30, "Member 'UFour018000_AnimBP_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_Root) == 0x000A38, "Member 'UFour018000_AnimBP_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_SaveCachedPose) == 0x000A70, "Member 'UFour018000_AnimBP_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_UseCachedPose) == 0x000B10, "Member 'UFour018000_AnimBP_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_StateResult) == 0x000B58, "Member 'UFour018000_AnimBP_C::AnimGraphNode_StateResult' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_StateMachine) == 0x000B90, "Member 'UFour018000_AnimBP_C::AnimGraphNode_StateMachine' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_SubInstance) == 0x000E30, "Member 'UFour018000_AnimBP_C::AnimGraphNode_SubInstance' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_LinkedAnimGraph_2) == 0x000F00, "Member 'UFour018000_AnimBP_C::AnimGraphNode_LinkedAnimGraph_2' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_LinkedAnimGraph_1) == 0x000FD0, "Member 'UFour018000_AnimBP_C::AnimGraphNode_LinkedAnimGraph_1' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_Slot) == 0x0010A0, "Member 'UFour018000_AnimBP_C::AnimGraphNode_Slot' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, AnimGraphNode_LinkedAnimGraph) == 0x001130, "Member 'UFour018000_AnimBP_C::AnimGraphNode_LinkedAnimGraph' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_bUseAeroJump_725D10A641250639D4AA75868A984F95) == 0x001200, "Member 'UFour018000_AnimBP_C::__CustomProperty_bUseAeroJump_725D10A641250639D4AA75868A984F95' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_TurnBlendSpaceScale_725D10A641250639D4AA75868A984F95) == 0x001204, "Member 'UFour018000_AnimBP_C::__CustomProperty_TurnBlendSpaceScale_725D10A641250639D4AA75868A984F95' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_DefaultAeroState_725D10A641250639D4AA75868A984F95) == 0x001208, "Member 'UFour018000_AnimBP_C::__CustomProperty_DefaultAeroState_725D10A641250639D4AA75868A984F95' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_bShouldUseAO_BC5544DF4A0C24D55AAAFD97BFDDFD42) == 0x001209, "Member 'UFour018000_AnimBP_C::__CustomProperty_bShouldUseAO_BC5544DF4A0C24D55AAAFD97BFDDFD42' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_bUseSpringHit_4CEFC2254A331C57CE2DE7A941F60D3C) == 0x00120A, "Member 'UFour018000_AnimBP_C::__CustomProperty_bUseSpringHit_4CEFC2254A331C57CE2DE7A941F60D3C' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_ExternMontageBlendMode_5A1523DF4F4151CE39514DB02C2A2CD0) == 0x00120B, "Member 'UFour018000_AnimBP_C::__CustomProperty_ExternMontageBlendMode_5A1523DF4F4151CE39514DB02C2A2CD0' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_bUseNewJump_0C5FF8A846453ECBE619379E66E356EB) == 0x00120C, "Member 'UFour018000_AnimBP_C::__CustomProperty_bUseNewJump_0C5FF8A846453ECBE619379E66E356EB' has a wrong offset!");
-static_assert(offsetof(UFour018000_AnimBP_C, __CustomProperty_bUseSixDirAnimData_0C5FF8A846453ECBE619379E66E356EB) == 0x00120D, "Member 'UFour018000_AnimBP_C::__CustomProperty_bUseSixDirAnimData_0C5FF8A846453ECBE619379E66E356EB' has a wrong offset!");
+DUMPER7_ASSERTS_UFour018000_AnimBP_C;
 
 }
 

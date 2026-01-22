@@ -32,33 +32,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMailDataItem">();
+		STATIC_CLASS_IMPL("PyMailDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMailDataItem")
 	}
 	static class UPyMailDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMailDataItem>();
 	}
 };
-static_assert(alignof(UPyMailDataItem) == 0x000008, "Wrong alignment on UPyMailDataItem");
-static_assert(sizeof(UPyMailDataItem) == 0x000038, "Wrong size on UPyMailDataItem");
-static_assert(offsetof(UPyMailDataItem, IsSelected) == 0x000030, "Member 'UPyMailDataItem::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMailDataItem;
 
 // PythonClass PyWidget_MailUnit.PyWidget_MailUnit
-// 0x0078 (0x05E8 - 0x0570)
+// 0x0078 (0x05F0 - 0x0578)
 class UPyWidget_MailUnit final : public UWidget_ListEntry
 {
 public:
-	float                                         MailReadOpacity;                                   // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ImgMailClose;                                      // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgMailOpen;                                       // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgGiftClose;                                      // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgGiftOpen;                                       // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UnitFadeInSpeed;                                   // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           UnSelectedColor;                                   // 0x059C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SelectedColor;                                     // 0x05AC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedTextColor;                                 // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UnSelectedTextColor;                               // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         MailReadOpacity;                                   // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_57C[0x4];                                      // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ImgMailClose;                                      // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgMailOpen;                                       // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgGiftClose;                                      // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgGiftOpen;                                       // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UnitFadeInSpeed;                                   // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           UnSelectedColor;                                   // 0x05A4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SelectedColor;                                     // 0x05B4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedTextColor;                                 // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UnSelectedTextColor;                               // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void SetPlayTime(float Time);
@@ -75,25 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MailUnit">();
+		STATIC_CLASS_IMPL("PyWidget_MailUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MailUnit")
 	}
 	static class UPyWidget_MailUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MailUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_MailUnit) == 0x000008, "Wrong alignment on UPyWidget_MailUnit");
-static_assert(sizeof(UPyWidget_MailUnit) == 0x0005E8, "Wrong size on UPyWidget_MailUnit");
-static_assert(offsetof(UPyWidget_MailUnit, MailReadOpacity) == 0x000570, "Member 'UPyWidget_MailUnit::MailReadOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, ImgMailClose) == 0x000578, "Member 'UPyWidget_MailUnit::ImgMailClose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, ImgMailOpen) == 0x000580, "Member 'UPyWidget_MailUnit::ImgMailOpen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, ImgGiftClose) == 0x000588, "Member 'UPyWidget_MailUnit::ImgGiftClose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, ImgGiftOpen) == 0x000590, "Member 'UPyWidget_MailUnit::ImgGiftOpen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, UnitFadeInSpeed) == 0x000598, "Member 'UPyWidget_MailUnit::UnitFadeInSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, UnSelectedColor) == 0x00059C, "Member 'UPyWidget_MailUnit::UnSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, SelectedColor) == 0x0005AC, "Member 'UPyWidget_MailUnit::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, SelectedTextColor) == 0x0005BC, "Member 'UPyWidget_MailUnit::SelectedTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailUnit, UnSelectedTextColor) == 0x0005D0, "Member 'UPyWidget_MailUnit::UnSelectedTextColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MailUnit;
 
 }
 

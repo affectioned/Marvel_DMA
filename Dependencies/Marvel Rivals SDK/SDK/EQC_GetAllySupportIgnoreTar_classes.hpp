@@ -23,15 +23,18 @@ class UEQC_GetAllySupportIgnoreTar_C final : public UEnvQueryContext_CharacterGr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetAllySupportIgnoreTar_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetAllySupportIgnoreTar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetAllySupportIgnoreTar_C")
 	}
 	static class UEQC_GetAllySupportIgnoreTar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetAllySupportIgnoreTar_C>();
 	}
 };
-static_assert(alignof(UEQC_GetAllySupportIgnoreTar_C) == 0x000008, "Wrong alignment on UEQC_GetAllySupportIgnoreTar_C");
-static_assert(sizeof(UEQC_GetAllySupportIgnoreTar_C) == 0x000038, "Wrong size on UEQC_GetAllySupportIgnoreTar_C");
+DUMPER7_ASSERTS_UEQC_GetAllySupportIgnoreTar_C;
 
 }
 

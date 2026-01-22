@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpStartNew
+// 0x0010 (0x0010 - 0x0000)
+struct IGroundMotionLayerInterface_C_JumpStartNew final
+{
+public:
+	struct FPoseLink                              JumpStartNew_0;                                    // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_JumpStartNew;
+
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.Turning_Post
 // 0x0020 (0x0020 - 0x0000)
 struct IGroundMotionLayerInterface_C_Turning_Post final
@@ -24,32 +33,7 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              Turning_Post_0;                                    // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_Turning_Post) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_Turning_Post");
-static_assert(sizeof(IGroundMotionLayerInterface_C_Turning_Post) == 0x000020, "Wrong size on IGroundMotionLayerInterface_C_Turning_Post");
-static_assert(offsetof(IGroundMotionLayerInterface_C_Turning_Post, InPose) == 0x000000, "Member 'IGroundMotionLayerInterface_C_Turning_Post::InPose' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_Turning_Post, Turning_Post_0) == 0x000010, "Member 'IGroundMotionLayerInterface_C_Turning_Post::Turning_Post_0' has a wrong offset!");
-
-// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpStartNew
-// 0x0010 (0x0010 - 0x0000)
-struct IGroundMotionLayerInterface_C_JumpStartNew final
-{
-public:
-	struct FPoseLink                              JumpStartNew_0;                                    // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(IGroundMotionLayerInterface_C_JumpStartNew) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_JumpStartNew");
-static_assert(sizeof(IGroundMotionLayerInterface_C_JumpStartNew) == 0x000010, "Wrong size on IGroundMotionLayerInterface_C_JumpStartNew");
-static_assert(offsetof(IGroundMotionLayerInterface_C_JumpStartNew, JumpStartNew_0) == 0x000000, "Member 'IGroundMotionLayerInterface_C_JumpStartNew::JumpStartNew_0' has a wrong offset!");
-
-// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpLoopNew
-// 0x0010 (0x0010 - 0x0000)
-struct IGroundMotionLayerInterface_C_JumpLoopNew final
-{
-public:
-	struct FPoseLink                              JumpLoopNew_0;                                     // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(IGroundMotionLayerInterface_C_JumpLoopNew) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_JumpLoopNew");
-static_assert(sizeof(IGroundMotionLayerInterface_C_JumpLoopNew) == 0x000010, "Wrong size on IGroundMotionLayerInterface_C_JumpLoopNew");
-static_assert(offsetof(IGroundMotionLayerInterface_C_JumpLoopNew, JumpLoopNew_0) == 0x000000, "Member 'IGroundMotionLayerInterface_C_JumpLoopNew::JumpLoopNew_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_Turning_Post;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpLandNew
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +42,16 @@ struct IGroundMotionLayerInterface_C_JumpLandNew final
 public:
 	struct FPoseLink                              JumpLandNew_0;                                     // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_JumpLandNew) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_JumpLandNew");
-static_assert(sizeof(IGroundMotionLayerInterface_C_JumpLandNew) == 0x000010, "Wrong size on IGroundMotionLayerInterface_C_JumpLandNew");
-static_assert(offsetof(IGroundMotionLayerInterface_C_JumpLandNew, JumpLandNew_0) == 0x000000, "Member 'IGroundMotionLayerInterface_C_JumpLandNew::JumpLandNew_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_JumpLandNew;
+
+// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpLoopNew
+// 0x0010 (0x0010 - 0x0000)
+struct IGroundMotionLayerInterface_C_JumpLoopNew final
+{
+public:
+	struct FPoseLink                              JumpLoopNew_0;                                     // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_JumpLoopNew;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.Jump
 // 0x0020 (0x0020 - 0x0000)
@@ -70,10 +61,7 @@ public:
 	struct FPoseLink                              GroundDetail;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              Jump_0;                                            // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_Jump) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_Jump");
-static_assert(sizeof(IGroundMotionLayerInterface_C_Jump) == 0x000020, "Wrong size on IGroundMotionLayerInterface_C_Jump");
-static_assert(offsetof(IGroundMotionLayerInterface_C_Jump, GroundDetail) == 0x000000, "Member 'IGroundMotionLayerInterface_C_Jump::GroundDetail' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_Jump, Jump_0) == 0x000010, "Member 'IGroundMotionLayerInterface_C_Jump::Jump_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_Jump;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.GroundStop
 // 0x0010 (0x0010 - 0x0000)
@@ -82,9 +70,7 @@ struct IGroundMotionLayerInterface_C_GroundStop final
 public:
 	struct FPoseLink                              GroundStop_0;                                      // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_GroundStop) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_GroundStop");
-static_assert(sizeof(IGroundMotionLayerInterface_C_GroundStop) == 0x000010, "Wrong size on IGroundMotionLayerInterface_C_GroundStop");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundStop, GroundStop_0) == 0x000000, "Member 'IGroundMotionLayerInterface_C_GroundStop::GroundStop_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_GroundStop;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.GroundNew
 // 0x0040 (0x0040 - 0x0000)
@@ -96,12 +82,7 @@ public:
 	struct FPoseLink                              Stop;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              GroundNew_0;                                       // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_GroundNew) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_GroundNew");
-static_assert(sizeof(IGroundMotionLayerInterface_C_GroundNew) == 0x000040, "Wrong size on IGroundMotionLayerInterface_C_GroundNew");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundNew, Idle) == 0x000000, "Member 'IGroundMotionLayerInterface_C_GroundNew::Idle' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundNew, Loop) == 0x000010, "Member 'IGroundMotionLayerInterface_C_GroundNew::Loop' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundNew, Stop) == 0x000020, "Member 'IGroundMotionLayerInterface_C_GroundNew::Stop' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundNew, GroundNew_0) == 0x000030, "Member 'IGroundMotionLayerInterface_C_GroundNew::GroundNew_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_GroundNew;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.GroundLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -110,9 +91,7 @@ struct IGroundMotionLayerInterface_C_GroundLoop final
 public:
 	struct FPoseLink                              GroundLoop_0;                                      // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_GroundLoop) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_GroundLoop");
-static_assert(sizeof(IGroundMotionLayerInterface_C_GroundLoop) == 0x000010, "Wrong size on IGroundMotionLayerInterface_C_GroundLoop");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundLoop, GroundLoop_0) == 0x000000, "Member 'IGroundMotionLayerInterface_C_GroundLoop::GroundLoop_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_GroundLoop;
 
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.GroundDetail_Post
 // 0x0020 (0x0020 - 0x0000)
@@ -122,10 +101,7 @@ public:
 	struct FPoseLink                              Ground;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              GroundDetail_Post_0;                               // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(IGroundMotionLayerInterface_C_GroundDetail_Post) == 0x000008, "Wrong alignment on IGroundMotionLayerInterface_C_GroundDetail_Post");
-static_assert(sizeof(IGroundMotionLayerInterface_C_GroundDetail_Post) == 0x000020, "Wrong size on IGroundMotionLayerInterface_C_GroundDetail_Post");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundDetail_Post, Ground) == 0x000000, "Member 'IGroundMotionLayerInterface_C_GroundDetail_Post::Ground' has a wrong offset!");
-static_assert(offsetof(IGroundMotionLayerInterface_C_GroundDetail_Post, GroundDetail_Post_0) == 0x000010, "Member 'IGroundMotionLayerInterface_C_GroundDetail_Post::GroundDetail_Post_0' has a wrong offset!");
+DUMPER7_ASSERTS_IGroundMotionLayerInterface_C_GroundDetail_Post;
 
 }
 

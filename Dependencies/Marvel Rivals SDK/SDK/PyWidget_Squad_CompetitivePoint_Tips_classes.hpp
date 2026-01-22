@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_CompetitivePoint_Tips.PyWidget_Squad_CompetitivePoint_Tips
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Squad_CompetitivePoint_Tips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FullValueColor;                                    // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LowValueColor;                                     // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsClickable;                                       // 0x05E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FullValueColor;                                    // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LowValueColor;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsClickable;                                       // 0x05EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,35 +36,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_CompetitivePoint_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_CompetitivePoint_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_CompetitivePoint_Tips")
 	}
 	static class UPyWidget_Squad_CompetitivePoint_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_CompetitivePoint_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_CompetitivePoint_Tips) == 0x000008, "Wrong alignment on UPyWidget_Squad_CompetitivePoint_Tips");
-static_assert(sizeof(UPyWidget_Squad_CompetitivePoint_Tips) == 0x0005E8, "Wrong size on UPyWidget_Squad_CompetitivePoint_Tips");
-static_assert(offsetof(UPyWidget_Squad_CompetitivePoint_Tips, FullValueColor) == 0x0005BC, "Member 'UPyWidget_Squad_CompetitivePoint_Tips::FullValueColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_CompetitivePoint_Tips, LowValueColor) == 0x0005D0, "Member 'UPyWidget_Squad_CompetitivePoint_Tips::LowValueColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_CompetitivePoint_Tips, IsClickable) == 0x0005E4, "Member 'UPyWidget_Squad_CompetitivePoint_Tips::IsClickable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_CompetitivePoint_Tips;
 
 // PythonClass PyWidget_Squad_CompetitivePoint_Tips.PyWidget_Rank_Battle_History_Unit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Rank_Battle_History_Unit final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_Battle_History_Unit">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_Battle_History_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_Battle_History_Unit")
 	}
 	static class UPyWidget_Rank_Battle_History_Unit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_Battle_History_Unit>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_Battle_History_Unit) == 0x000008, "Wrong alignment on UPyWidget_Rank_Battle_History_Unit");
-static_assert(sizeof(UPyWidget_Rank_Battle_History_Unit) == 0x0005C0, "Wrong size on UPyWidget_Rank_Battle_History_Unit");
+DUMPER7_ASSERTS_UPyWidget_Rank_Battle_History_Unit;
 
 }
 

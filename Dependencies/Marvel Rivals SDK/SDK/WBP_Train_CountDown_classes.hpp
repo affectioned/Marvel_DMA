@@ -17,43 +17,36 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Train_CountDown.WBP_Train_CountDown_C
-// 0x0050 (0x0600 - 0x05B0)
+// 0x0050 (0x0608 - 0x05B8)
 class UWBP_Train_CountDown_C final : public UPyWidget_Train_Countdown
 {
 public:
-	class UWidgetAnimation*                       Anim_TimeEmphasize;                                // 0x05B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FadeIn_Backup;                                // 0x05B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Emphasize;                                 // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Normal;                                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Explanation;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Time;                                         // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_TimeEmphasize;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_TimeEmphasize_Effect;                         // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Com_VX_Press_C*                    WBP_Com_VX_Press;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mixed_Common_Vx1_C*                WBP_Common_Vx;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_TimeEmphasize;                                // 0x05B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeIn_Backup;                                // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Emphasize;                                 // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Normal;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Explanation;                                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Time;                                         // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_TimeEmphasize;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_TimeEmphasize_Effect;                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Com_VX_Press_C*                    WBP_Com_VX_Press;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mixed_Common_Vx1_C*                WBP_Common_Vx;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Train_CountDown_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Train_CountDown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Train_CountDown_C")
 	}
 	static class UWBP_Train_CountDown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Train_CountDown_C>();
 	}
 };
-static_assert(alignof(UWBP_Train_CountDown_C) == 0x000008, "Wrong alignment on UWBP_Train_CountDown_C");
-static_assert(sizeof(UWBP_Train_CountDown_C) == 0x000600, "Wrong size on UWBP_Train_CountDown_C");
-static_assert(offsetof(UWBP_Train_CountDown_C, Anim_TimeEmphasize) == 0x0005B0, "Member 'UWBP_Train_CountDown_C::Anim_TimeEmphasize' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Anim_FadeIn_Backup) == 0x0005B8, "Member 'UWBP_Train_CountDown_C::Anim_FadeIn_Backup' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Overlay_Emphasize) == 0x0005C0, "Member 'UWBP_Train_CountDown_C::Overlay_Emphasize' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Overlay_Normal) == 0x0005C8, "Member 'UWBP_Train_CountDown_C::Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Text_Explanation) == 0x0005D0, "Member 'UWBP_Train_CountDown_C::Text_Explanation' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Text_Time) == 0x0005D8, "Member 'UWBP_Train_CountDown_C::Text_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Text_TimeEmphasize) == 0x0005E0, "Member 'UWBP_Train_CountDown_C::Text_TimeEmphasize' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, Text_TimeEmphasize_Effect) == 0x0005E8, "Member 'UWBP_Train_CountDown_C::Text_TimeEmphasize_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, WBP_Com_VX_Press) == 0x0005F0, "Member 'UWBP_Train_CountDown_C::WBP_Com_VX_Press' has a wrong offset!");
-static_assert(offsetof(UWBP_Train_CountDown_C, WBP_Common_Vx) == 0x0005F8, "Member 'UWBP_Train_CountDown_C::WBP_Common_Vx' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Train_CountDown_C;
 
 }
 

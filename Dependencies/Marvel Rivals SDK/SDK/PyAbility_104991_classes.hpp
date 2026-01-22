@@ -10,57 +10,61 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1049_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Hero_1049_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104991.PyCue_Ability_Loop_10499101
-// 0x0000 (0x12E0 - 0x12E0)
+// 0x0000 (0x12F0 - 0x12F0)
 class APyCue_Ability_Loop_10499101 final : public ACue_Ability_Loop_10499101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10499101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10499101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10499101")
 	}
 	static class APyCue_Ability_Loop_10499101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10499101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10499101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10499101");
-static_assert(sizeof(APyCue_Ability_Loop_10499101) == 0x0012E0, "Wrong size on APyCue_Ability_Loop_10499101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10499101;
 
 // PythonClass PyAbility_104991.PyConfig_104991
-// 0x1680 (0x4220 - 0x2BA0)
+// 0x19D0 (0x4C90 - 0x32C0)
 class UPyConfig_104991 final : public UConfig_104991
 {
 public:
-	struct FVector                                CapsuleLocationOffset;                             // 0x2BA0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2BB8[0x8];                                     // 0x2BB8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x2BC0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector                                CapsuleLocationOffset;                             // 0x32C0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_32D8[0x8];                                     // 0x32D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x32E0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104991">();
+		STATIC_CLASS_IMPL("PyConfig_104991")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104991")
 	}
 	static class UPyConfig_104991* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104991>();
 	}
 };
-static_assert(alignof(UPyConfig_104991) == 0x000010, "Wrong alignment on UPyConfig_104991");
-static_assert(sizeof(UPyConfig_104991) == 0x004220, "Wrong size on UPyConfig_104991");
-static_assert(offsetof(UPyConfig_104991, CapsuleLocationOffset) == 0x002BA0, "Member 'UPyConfig_104991::CapsuleLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104991, TraceContext) == 0x002BC0, "Member 'UPyConfig_104991::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104991;
 
 // PythonClass PyAbility_104991.PyAbility_104991
-// 0x0000 (0x33B0 - 0x33B0)
+// 0x0000 (0x3448 - 0x3448)
 class UPyAbility_104991 : public UAbility_104991
 {
 public:
@@ -80,15 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104991">();
+		STATIC_CLASS_IMPL("PyAbility_104991")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104991")
 	}
 	static class UPyAbility_104991* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104991>();
 	}
 };
-static_assert(alignof(UPyAbility_104991) == 0x000008, "Wrong alignment on UPyAbility_104991");
-static_assert(sizeof(UPyAbility_104991) == 0x0033B0, "Wrong size on UPyAbility_104991");
+DUMPER7_ASSERTS_UPyAbility_104991;
 
 }
 

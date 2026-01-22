@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "python_enums_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -25,9 +25,7 @@ struct PyMarvelPlayerState_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelPlayerState_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelPlayerState_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelPlayerState_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelPlayerState_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ReceiveEndPlay;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.RegulatePreviewHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +34,7 @@ struct PyMarvelPlayerState_RegulatePreviewHeroID final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_RegulatePreviewHeroID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_RegulatePreviewHeroID");
-static_assert(sizeof(PyMarvelPlayerState_RegulatePreviewHeroID) == 0x000004, "Wrong size on PyMarvelPlayerState_RegulatePreviewHeroID");
-static_assert(offsetof(PyMarvelPlayerState_RegulatePreviewHeroID, HeroID) == 0x000000, "Member 'PyMarvelPlayerState_RegulatePreviewHeroID::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_RegulatePreviewHeroID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeReticleSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +43,7 @@ struct PyMarvelPlayerState_ServerChangeReticleSetting final
 public:
 	class FString                                 config_str;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeReticleSetting) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ServerChangeReticleSetting");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeReticleSetting) == 0x000010, "Wrong size on PyMarvelPlayerState_ServerChangeReticleSetting");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeReticleSetting, config_str) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeReticleSetting::config_str' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeReticleSetting;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeHeroInputSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +52,7 @@ struct PyMarvelPlayerState_ServerChangeHeroInputSetting final
 public:
 	class FString                                 setting_str;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeHeroInputSetting) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ServerChangeHeroInputSetting");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeHeroInputSetting) == 0x000010, "Wrong size on PyMarvelPlayerState_ServerChangeHeroInputSetting");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeHeroInputSetting, setting_str) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeHeroInputSetting::setting_str' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeHeroInputSetting;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangePreviewID
 // 0x0004 (0x0004 - 0x0000)
@@ -69,9 +61,7 @@ struct PyMarvelPlayerState_ServerChangePreviewID final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangePreviewID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangePreviewID");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangePreviewID) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangePreviewID");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangePreviewID, hero_id) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangePreviewID::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangePreviewID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeWinterFestivalRole
 // 0x0004 (0x0004 - 0x0000)
@@ -80,9 +70,7 @@ struct PyMarvelPlayerState_ServerChangeWinterFestivalRole final
 public:
 	int32                                         Role_0;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeWinterFestivalRole) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangeWinterFestivalRole");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeWinterFestivalRole) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangeWinterFestivalRole");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeWinterFestivalRole, Role_0) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeWinterFestivalRole::Role_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeWinterFestivalRole;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeEquipSkinID
 // 0x0004 (0x0004 - 0x0000)
@@ -91,31 +79,27 @@ struct PyMarvelPlayerState_ServerChangeEquipSkinID final
 public:
 	int32                                         skin_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeEquipSkinID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangeEquipSkinID");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeEquipSkinID) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangeEquipSkinID");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeEquipSkinID, skin_id) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeEquipSkinID::skin_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeEquipSkinID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeBondSuggestionHeroIDList
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList final
 {
 public:
 	TArray<int32>                                 hero_id_list;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
+	int32                                         BondGroupID;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList) == 0x000010, "Wrong size on PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList, hero_id_list) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList::hero_id_list' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeBondSuggestionHeroIDList;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.NetMulticast_BondSuggestionHeroIDList
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList final
 {
 public:
 	TArray<int32>                                 hero_id_list;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
+	int32                                         BondGroupID;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList) == 0x000008, "Wrong alignment on PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList");
-static_assert(sizeof(PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList) == 0x000010, "Wrong size on PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList");
-static_assert(offsetof(PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList, hero_id_list) == 0x000000, "Member 'PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList::hero_id_list' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_NetMulticast_BondSuggestionHeroIDList;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ReqUpvoteOther
 // 0x0004 (0x0004 - 0x0000)
@@ -124,9 +108,7 @@ struct PyMarvelPlayerState_ReqUpvoteOther final
 public:
 	int32                                         player_uid;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ReqUpvoteOther) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ReqUpvoteOther");
-static_assert(sizeof(PyMarvelPlayerState_ReqUpvoteOther) == 0x000004, "Wrong size on PyMarvelPlayerState_ReqUpvoteOther");
-static_assert(offsetof(PyMarvelPlayerState_ReqUpvoteOther, player_uid) == 0x000000, "Member 'PyMarvelPlayerState_ReqUpvoteOther::player_uid' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ReqUpvoteOther;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.SetOnlineStatus
 // 0x0001 (0x0001 - 0x0000)
@@ -135,9 +117,7 @@ struct PyMarvelPlayerState_SetOnlineStatus final
 public:
 	EOnlineStatus                                 InStatus;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_SetOnlineStatus) == 0x000001, "Wrong alignment on PyMarvelPlayerState_SetOnlineStatus");
-static_assert(sizeof(PyMarvelPlayerState_SetOnlineStatus) == 0x000001, "Wrong size on PyMarvelPlayerState_SetOnlineStatus");
-static_assert(offsetof(PyMarvelPlayerState_SetOnlineStatus, InStatus) == 0x000000, "Member 'PyMarvelPlayerState_SetOnlineStatus::InStatus' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_SetOnlineStatus;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.SetRespawnTime
 // 0x0004 (0x0004 - 0x0000)
@@ -146,9 +126,7 @@ struct PyMarvelPlayerState_SetRespawnTime final
 public:
 	float                                         respawn_time;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_SetRespawnTime) == 0x000004, "Wrong alignment on PyMarvelPlayerState_SetRespawnTime");
-static_assert(sizeof(PyMarvelPlayerState_SetRespawnTime) == 0x000004, "Wrong size on PyMarvelPlayerState_SetRespawnTime");
-static_assert(offsetof(PyMarvelPlayerState_SetRespawnTime, respawn_time) == 0x000000, "Member 'PyMarvelPlayerState_SetRespawnTime::respawn_time' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_SetRespawnTime;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.MulticastResetDelayRespawnEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -157,9 +135,7 @@ struct PyMarvelPlayerState_MulticastResetDelayRespawnEvent final
 public:
 	float                                         Delay;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_MulticastResetDelayRespawnEvent) == 0x000004, "Wrong alignment on PyMarvelPlayerState_MulticastResetDelayRespawnEvent");
-static_assert(sizeof(PyMarvelPlayerState_MulticastResetDelayRespawnEvent) == 0x000004, "Wrong size on PyMarvelPlayerState_MulticastResetDelayRespawnEvent");
-static_assert(offsetof(PyMarvelPlayerState_MulticastResetDelayRespawnEvent, Delay) == 0x000000, "Member 'PyMarvelPlayerState_MulticastResetDelayRespawnEvent::Delay' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_MulticastResetDelayRespawnEvent;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.SetControlState
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +144,7 @@ struct PyMarvelPlayerState_SetControlState final
 public:
 	int32                                         state;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_SetControlState) == 0x000004, "Wrong alignment on PyMarvelPlayerState_SetControlState");
-static_assert(sizeof(PyMarvelPlayerState_SetControlState) == 0x000004, "Wrong size on PyMarvelPlayerState_SetControlState");
-static_assert(offsetof(PyMarvelPlayerState_SetControlState, state) == 0x000000, "Member 'PyMarvelPlayerState_SetControlState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_SetControlState;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerSetHasInactive
 // 0x0001 (0x0001 - 0x0000)
@@ -179,9 +153,7 @@ struct PyMarvelPlayerState_ServerSetHasInactive final
 public:
 	bool                                          HasInactive_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerSetHasInactive) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ServerSetHasInactive");
-static_assert(sizeof(PyMarvelPlayerState_ServerSetHasInactive) == 0x000001, "Wrong size on PyMarvelPlayerState_ServerSetHasInactive");
-static_assert(offsetof(PyMarvelPlayerState_ServerSetHasInactive, HasInactive_0) == 0x000000, "Member 'PyMarvelPlayerState_ServerSetHasInactive::HasInactive_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerSetHasInactive;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.RuncClientFunc
 // 0x0020 (0x0020 - 0x0000)
@@ -191,10 +163,7 @@ public:
 	class FString                                 func_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	TArray<uint8>                                 argsStr;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelPlayerState_RuncClientFunc) == 0x000008, "Wrong alignment on PyMarvelPlayerState_RuncClientFunc");
-static_assert(sizeof(PyMarvelPlayerState_RuncClientFunc) == 0x000020, "Wrong size on PyMarvelPlayerState_RuncClientFunc");
-static_assert(offsetof(PyMarvelPlayerState_RuncClientFunc, func_name) == 0x000000, "Member 'PyMarvelPlayerState_RuncClientFunc::func_name' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_RuncClientFunc, argsStr) == 0x000010, "Member 'PyMarvelPlayerState_RuncClientFunc::argsStr' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_RuncClientFunc;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerReportClientInactive
 // 0x0008 (0x0008 - 0x0000)
@@ -205,10 +174,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         inactive_type;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerReportClientInactive) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerReportClientInactive");
-static_assert(sizeof(PyMarvelPlayerState_ServerReportClientInactive) == 0x000008, "Wrong size on PyMarvelPlayerState_ServerReportClientInactive");
-static_assert(offsetof(PyMarvelPlayerState_ServerReportClientInactive, is_inactive) == 0x000000, "Member 'PyMarvelPlayerState_ServerReportClientInactive::is_inactive' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ServerReportClientInactive, inactive_type) == 0x000004, "Member 'PyMarvelPlayerState_ServerReportClientInactive::inactive_type' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerReportClientInactive;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.NetMulitcast_ChangeKillingSpreeCount
 // 0x0004 (0x0004 - 0x0000)
@@ -217,9 +183,7 @@ struct PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount final
 public:
 	int32                                         kill_count;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount) == 0x000004, "Wrong alignment on PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount");
-static_assert(sizeof(PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount) == 0x000004, "Wrong size on PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount");
-static_assert(offsetof(PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount, kill_count) == 0x000000, "Member 'PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount::kill_count' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_NetMulitcast_ChangeKillingSpreeCount;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.SrvSelectingBanpickHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -228,20 +192,17 @@ struct PyMarvelPlayerState_SrvSelectingBanpickHeroID final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_SrvSelectingBanpickHeroID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_SrvSelectingBanpickHeroID");
-static_assert(sizeof(PyMarvelPlayerState_SrvSelectingBanpickHeroID) == 0x000004, "Wrong size on PyMarvelPlayerState_SrvSelectingBanpickHeroID");
-static_assert(offsetof(PyMarvelPlayerState_SrvSelectingBanpickHeroID, hero_id) == 0x000000, "Member 'PyMarvelPlayerState_SrvSelectingBanpickHeroID::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_SrvSelectingBanpickHeroID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeBanPickHeroID
-// 0x0004 (0x0004 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct PyMarvelPlayerState_ServerChangeBanPickHeroID final
 {
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         group_id;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeBanPickHeroID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangeBanPickHeroID");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeBanPickHeroID) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangeBanPickHeroID");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeBanPickHeroID, hero_id) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeBanPickHeroID::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeBanPickHeroID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeBanPickSuggestionHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -250,20 +211,16 @@ struct PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID, hero_id) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeBanPickSuggestionHeroID;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeSuggestionRole
 // 0x0001 (0x0001 - 0x0000)
 struct PyMarvelPlayerState_ServerChangeSuggestionRole final
 {
 public:
-	EHeroRole                                     HeroRole;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EHeroRole                                     HeroRole_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeSuggestionRole) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ServerChangeSuggestionRole");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeSuggestionRole) == 0x000001, "Wrong size on PyMarvelPlayerState_ServerChangeSuggestionRole");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeSuggestionRole, HeroRole) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeSuggestionRole::HeroRole' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeSuggestionRole;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.NotifyClientCloseSelectHero
 // 0x0008 (0x0008 - 0x0000)
@@ -273,10 +230,7 @@ public:
 	int32                                         SelectedHeroID_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RoundIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_NotifyClientCloseSelectHero) == 0x000004, "Wrong alignment on PyMarvelPlayerState_NotifyClientCloseSelectHero");
-static_assert(sizeof(PyMarvelPlayerState_NotifyClientCloseSelectHero) == 0x000008, "Wrong size on PyMarvelPlayerState_NotifyClientCloseSelectHero");
-static_assert(offsetof(PyMarvelPlayerState_NotifyClientCloseSelectHero, SelectedHeroID_0) == 0x000000, "Member 'PyMarvelPlayerState_NotifyClientCloseSelectHero::SelectedHeroID_0' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_NotifyClientCloseSelectHero, RoundIndex) == 0x000004, "Member 'PyMarvelPlayerState_NotifyClientCloseSelectHero::RoundIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_NotifyClientCloseSelectHero;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.RequestTaskDatabaseData
 // 0x0010 (0x0010 - 0x0000)
@@ -285,9 +239,7 @@ struct PyMarvelPlayerState_RequestTaskDatabaseData final
 public:
 	TArray<uint8>                                 msg;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelPlayerState_RequestTaskDatabaseData) == 0x000008, "Wrong alignment on PyMarvelPlayerState_RequestTaskDatabaseData");
-static_assert(sizeof(PyMarvelPlayerState_RequestTaskDatabaseData) == 0x000010, "Wrong size on PyMarvelPlayerState_RequestTaskDatabaseData");
-static_assert(offsetof(PyMarvelPlayerState_RequestTaskDatabaseData, msg) == 0x000000, "Member 'PyMarvelPlayerState_RequestTaskDatabaseData::msg' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_RequestTaskDatabaseData;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ResponseTaskDatabaseData
 // 0x0010 (0x0010 - 0x0000)
@@ -296,9 +248,7 @@ struct PyMarvelPlayerState_ResponseTaskDatabaseData final
 public:
 	TArray<uint8>                                 msg;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelPlayerState_ResponseTaskDatabaseData) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ResponseTaskDatabaseData");
-static_assert(sizeof(PyMarvelPlayerState_ResponseTaskDatabaseData) == 0x000010, "Wrong size on PyMarvelPlayerState_ResponseTaskDatabaseData");
-static_assert(offsetof(PyMarvelPlayerState_ResponseTaskDatabaseData, msg) == 0x000000, "Member 'PyMarvelPlayerState_ResponseTaskDatabaseData::msg' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ResponseTaskDatabaseData;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ResponseDatabaseData
 // 0x0010 (0x0010 - 0x0000)
@@ -307,9 +257,7 @@ struct PyMarvelPlayerState_ResponseDatabaseData final
 public:
 	class FString                                 data_str;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ResponseDatabaseData) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ResponseDatabaseData");
-static_assert(sizeof(PyMarvelPlayerState_ResponseDatabaseData) == 0x000010, "Wrong size on PyMarvelPlayerState_ResponseDatabaseData");
-static_assert(offsetof(PyMarvelPlayerState_ResponseDatabaseData, data_str) == 0x000000, "Member 'PyMarvelPlayerState_ResponseDatabaseData::data_str' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ResponseDatabaseData;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.req_client_profile_data
 // 0x0004 (0x0004 - 0x0000)
@@ -318,9 +266,7 @@ struct PyMarvelPlayerState_req_client_profile_data final
 public:
 	int32                                         record_index;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_req_client_profile_data) == 0x000004, "Wrong alignment on PyMarvelPlayerState_req_client_profile_data");
-static_assert(sizeof(PyMarvelPlayerState_req_client_profile_data) == 0x000004, "Wrong size on PyMarvelPlayerState_req_client_profile_data");
-static_assert(offsetof(PyMarvelPlayerState_req_client_profile_data, record_index) == 0x000000, "Member 'PyMarvelPlayerState_req_client_profile_data::record_index' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_req_client_profile_data;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.resp_client_profile_data
 // 0x0018 (0x0018 - 0x0000)
@@ -334,14 +280,7 @@ public:
 	int32                                         in_lost;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         is_ipv6;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_resp_client_profile_data) == 0x000004, "Wrong alignment on PyMarvelPlayerState_resp_client_profile_data");
-static_assert(sizeof(PyMarvelPlayerState_resp_client_profile_data) == 0x000018, "Wrong size on PyMarvelPlayerState_resp_client_profile_data");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, fps) == 0x000000, "Member 'PyMarvelPlayerState_resp_client_profile_data::fps' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, ping) == 0x000004, "Member 'PyMarvelPlayerState_resp_client_profile_data::ping' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, record_index) == 0x000008, "Member 'PyMarvelPlayerState_resp_client_profile_data::record_index' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, out_lost) == 0x00000C, "Member 'PyMarvelPlayerState_resp_client_profile_data::out_lost' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, in_lost) == 0x000010, "Member 'PyMarvelPlayerState_resp_client_profile_data::in_lost' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_resp_client_profile_data, is_ipv6) == 0x000014, "Member 'PyMarvelPlayerState_resp_client_profile_data::is_ipv6' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_resp_client_profile_data;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.RespawnZoneTips
 // 0x0010 (0x0010 - 0x0000)
@@ -350,9 +289,7 @@ struct PyMarvelPlayerState_RespawnZoneTips final
 public:
 	class FString                                 tip_txt;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_RespawnZoneTips) == 0x000008, "Wrong alignment on PyMarvelPlayerState_RespawnZoneTips");
-static_assert(sizeof(PyMarvelPlayerState_RespawnZoneTips) == 0x000010, "Wrong size on PyMarvelPlayerState_RespawnZoneTips");
-static_assert(offsetof(PyMarvelPlayerState_RespawnZoneTips, tip_txt) == 0x000000, "Member 'PyMarvelPlayerState_RespawnZoneTips::tip_txt' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_RespawnZoneTips;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerChangeMultiSelectModeHeroIDs
 // 0x0004 (0x0004 - 0x0000)
@@ -361,9 +298,7 @@ struct PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs) == 0x000004, "Wrong alignment on PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs");
-static_assert(sizeof(PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs) == 0x000004, "Wrong size on PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs");
-static_assert(offsetof(PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs, HeroID) == 0x000000, "Member 'PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerChangeMultiSelectModeHeroIDs;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerConfirmOnMultiSelectMode
 // 0x0001 (0x0001 - 0x0000)
@@ -372,9 +307,7 @@ struct PyMarvelPlayerState_ServerConfirmOnMultiSelectMode final
 public:
 	bool                                          IsConfirm;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerConfirmOnMultiSelectMode) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ServerConfirmOnMultiSelectMode");
-static_assert(sizeof(PyMarvelPlayerState_ServerConfirmOnMultiSelectMode) == 0x000001, "Wrong size on PyMarvelPlayerState_ServerConfirmOnMultiSelectMode");
-static_assert(offsetof(PyMarvelPlayerState_ServerConfirmOnMultiSelectMode, IsConfirm) == 0x000000, "Member 'PyMarvelPlayerState_ServerConfirmOnMultiSelectMode::IsConfirm' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerConfirmOnMultiSelectMode;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ReqSetClientConfigChange
 // 0x0048 (0x0048 - 0x0000)
@@ -388,13 +321,7 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 value_str;                                         // 0x0038(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ReqSetClientConfigChange) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ReqSetClientConfigChange");
-static_assert(sizeof(PyMarvelPlayerState_ReqSetClientConfigChange) == 0x000048, "Wrong size on PyMarvelPlayerState_ReqSetClientConfigChange");
-static_assert(offsetof(PyMarvelPlayerState_ReqSetClientConfigChange, f_name) == 0x000000, "Member 'PyMarvelPlayerState_ReqSetClientConfigChange::f_name' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ReqSetClientConfigChange, section) == 0x000010, "Member 'PyMarvelPlayerState_ReqSetClientConfigChange::section' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ReqSetClientConfigChange, config_key) == 0x000020, "Member 'PyMarvelPlayerState_ReqSetClientConfigChange::config_key' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ReqSetClientConfigChange, value_type) == 0x000030, "Member 'PyMarvelPlayerState_ReqSetClientConfigChange::value_type' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ReqSetClientConfigChange, value_str) == 0x000038, "Member 'PyMarvelPlayerState_ReqSetClientConfigChange::value_str' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ReqSetClientConfigChange;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ResponsePauseGameOP
 // 0x0002 (0x0002 - 0x0000)
@@ -404,10 +331,7 @@ public:
 	EGamePauseOPType                              op_type;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGamePauseOPResult                            result;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ResponsePauseGameOP) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ResponsePauseGameOP");
-static_assert(sizeof(PyMarvelPlayerState_ResponsePauseGameOP) == 0x000002, "Wrong size on PyMarvelPlayerState_ResponsePauseGameOP");
-static_assert(offsetof(PyMarvelPlayerState_ResponsePauseGameOP, op_type) == 0x000000, "Member 'PyMarvelPlayerState_ResponsePauseGameOP::op_type' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ResponsePauseGameOP, result) == 0x000001, "Member 'PyMarvelPlayerState_ResponsePauseGameOP::result' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ResponsePauseGameOP;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerUpdateIsChoosingHero
 // 0x0001 (0x0001 - 0x0000)
@@ -416,9 +340,7 @@ struct PyMarvelPlayerState_ServerUpdateIsChoosingHero final
 public:
 	bool                                          IsOpen;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerUpdateIsChoosingHero) == 0x000001, "Wrong alignment on PyMarvelPlayerState_ServerUpdateIsChoosingHero");
-static_assert(sizeof(PyMarvelPlayerState_ServerUpdateIsChoosingHero) == 0x000001, "Wrong size on PyMarvelPlayerState_ServerUpdateIsChoosingHero");
-static_assert(offsetof(PyMarvelPlayerState_ServerUpdateIsChoosingHero, IsOpen) == 0x000000, "Member 'PyMarvelPlayerState_ServerUpdateIsChoosingHero::IsOpen' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerUpdateIsChoosingHero;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.ServerPlayerEmitEmoji
 // 0x0018 (0x0018 - 0x0000)
@@ -429,10 +351,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EmojiID;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_ServerPlayerEmitEmoji) == 0x000008, "Wrong alignment on PyMarvelPlayerState_ServerPlayerEmitEmoji");
-static_assert(sizeof(PyMarvelPlayerState_ServerPlayerEmitEmoji) == 0x000018, "Wrong size on PyMarvelPlayerState_ServerPlayerEmitEmoji");
-static_assert(offsetof(PyMarvelPlayerState_ServerPlayerEmitEmoji, HeroID) == 0x000000, "Member 'PyMarvelPlayerState_ServerPlayerEmitEmoji::HeroID' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_ServerPlayerEmitEmoji, EmojiID) == 0x000008, "Member 'PyMarvelPlayerState_ServerPlayerEmitEmoji::EmojiID' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_ServerPlayerEmitEmoji;
 
 // PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.NetMulticast_PlayerEmitEmoji
 // 0x0028 (0x0028 - 0x0000)
@@ -444,11 +363,25 @@ public:
 	class FString                                 EmojiID;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 EmojiParams;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji) == 0x000008, "Wrong alignment on PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji");
-static_assert(sizeof(PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji) == 0x000028, "Wrong size on PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji");
-static_assert(offsetof(PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji, UID_0) == 0x000000, "Member 'PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji::UID_0' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji, EmojiID) == 0x000008, "Member 'PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji::EmojiID' has a wrong offset!");
-static_assert(offsetof(PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji, EmojiParams) == 0x000018, "Member 'PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji::EmojiParams' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPlayerState_NetMulticast_PlayerEmitEmoji;
+
+// PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.MultiCastChangeBattleSide
+// 0x0001 (0x0001 - 0x0000)
+struct PyMarvelPlayerState_MultiCastChangeBattleSide final
+{
+public:
+	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyMarvelPlayerState_MultiCastChangeBattleSide;
+
+// PythonFunction PyMarvelPlayerState.PyMarvelPlayerState.GetRecordUID
+// 0x0004 (0x0004 - 0x0000)
+struct PyMarvelPlayerState_GetRecordUID final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyMarvelPlayerState_GetRecordUID;
 
 }
 

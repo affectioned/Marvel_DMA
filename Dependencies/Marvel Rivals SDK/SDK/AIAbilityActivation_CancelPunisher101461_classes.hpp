@@ -23,15 +23,18 @@ class UAIAbilityActivation_CancelPunisher101461_C final : public UPyAIAbilityAct
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_CancelPunisher101461_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_CancelPunisher101461_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_CancelPunisher101461_C")
 	}
 	static class UAIAbilityActivation_CancelPunisher101461_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_CancelPunisher101461_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_CancelPunisher101461_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_CancelPunisher101461_C");
-static_assert(sizeof(UAIAbilityActivation_CancelPunisher101461_C) == 0x000040, "Wrong size on UAIAbilityActivation_CancelPunisher101461_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_CancelPunisher101461_C;
 
 }
 

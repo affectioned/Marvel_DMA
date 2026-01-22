@@ -17,15 +17,13 @@ namespace SDK::Params
 {
 
 // PythonFunction PyRocketRaccoonCharacter.PyRocketRaccoonCharacter.OnLanded
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyRocketRaccoonCharacter_OnLanded final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyRocketRaccoonCharacter_OnLanded) == 0x000008, "Wrong alignment on PyRocketRaccoonCharacter_OnLanded");
-static_assert(sizeof(PyRocketRaccoonCharacter_OnLanded) == 0x0001F0, "Wrong size on PyRocketRaccoonCharacter_OnLanded");
-static_assert(offsetof(PyRocketRaccoonCharacter_OnLanded, Hit) == 0x000000, "Member 'PyRocketRaccoonCharacter_OnLanded::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyRocketRaccoonCharacter_OnLanded;
 
 }
 

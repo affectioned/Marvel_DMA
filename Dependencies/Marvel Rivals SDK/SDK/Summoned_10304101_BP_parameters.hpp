@@ -29,14 +29,7 @@ public:
 	class APawn*                                  CallFunc_GetInstigator_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasOwnedBuff_Target_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP) == 0x000008, "Wrong alignment on Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP");
-static_assert(sizeof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP) == 0x000028, "Wrong size on Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, EntryPoint) == 0x000000, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, CallFunc_RemoveBuffSpec_ReturnValue) == 0x000004, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::CallFunc_RemoveBuffSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, K2Node_CustomEvent_EffectHandle) == 0x000008, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::K2Node_CustomEvent_EffectHandle' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, K2Node_CustomEvent_ExpiredEffectHandle) == 0x000010, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::K2Node_CustomEvent_ExpiredEffectHandle' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, CallFunc_GetInstigator_ReturnValue) == 0x000018, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP, CallFunc_HasOwnedBuff_Target_ReturnValue) == 0x000020, "Member 'Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP::CallFunc_HasOwnedBuff_Target_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_10304101_BP_C_ExecuteUbergraph_Summoned_10304101_BP;
 
 // Function Summoned_10304101_BP.Summoned_10304101_BP_C.OnOwnerBuffRemoved
 // 0x0010 (0x0010 - 0x0000)
@@ -46,10 +39,7 @@ public:
 	struct FActiveGameplayEffectHandle            EffectHandle;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectSpecStackHandle         ExpiredEffectHandle;                               // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Summoned_10304101_BP_C_OnOwnerBuffRemoved) == 0x000008, "Wrong alignment on Summoned_10304101_BP_C_OnOwnerBuffRemoved");
-static_assert(sizeof(Summoned_10304101_BP_C_OnOwnerBuffRemoved) == 0x000010, "Wrong size on Summoned_10304101_BP_C_OnOwnerBuffRemoved");
-static_assert(offsetof(Summoned_10304101_BP_C_OnOwnerBuffRemoved, EffectHandle) == 0x000000, "Member 'Summoned_10304101_BP_C_OnOwnerBuffRemoved::EffectHandle' has a wrong offset!");
-static_assert(offsetof(Summoned_10304101_BP_C_OnOwnerBuffRemoved, ExpiredEffectHandle) == 0x000008, "Member 'Summoned_10304101_BP_C_OnOwnerBuffRemoved::ExpiredEffectHandle' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_10304101_BP_C_OnOwnerBuffRemoved;
 
 }
 

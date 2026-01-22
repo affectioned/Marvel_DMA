@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkInstance">();
+		STATIC_CLASS_IMPL("LiveLinkInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkInstance")
 	}
 	static class ULiveLinkInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkInstance>();
 	}
 };
-static_assert(alignof(ULiveLinkInstance) == 0x000010, "Wrong alignment on ULiveLinkInstance");
-static_assert(sizeof(ULiveLinkInstance) == 0x000450, "Wrong size on ULiveLinkInstance");
-static_assert(offsetof(ULiveLinkInstance, CurrentRetargetAsset) == 0x000448, "Member 'ULiveLinkInstance::CurrentRetargetAsset' has a wrong offset!");
+DUMPER7_ASSERTS_ULiveLinkInstance;
 
 // Class LiveLinkAnimationCore.LiveLinkRetargetAsset
 // 0x0000 (0x0030 - 0x0030)
@@ -49,15 +51,18 @@ class ULiveLinkRetargetAsset : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkRetargetAsset">();
+		STATIC_CLASS_IMPL("LiveLinkRetargetAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkRetargetAsset")
 	}
 	static class ULiveLinkRetargetAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkRetargetAsset>();
 	}
 };
-static_assert(alignof(ULiveLinkRetargetAsset) == 0x000008, "Wrong alignment on ULiveLinkRetargetAsset");
-static_assert(sizeof(ULiveLinkRetargetAsset) == 0x000030, "Wrong size on ULiveLinkRetargetAsset");
+DUMPER7_ASSERTS_ULiveLinkRetargetAsset;
 
 // Class LiveLinkAnimationCore.LiveLinkRemapAsset
 // 0x00A0 (0x00D0 - 0x0030)
@@ -74,15 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkRemapAsset">();
+		STATIC_CLASS_IMPL("LiveLinkRemapAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkRemapAsset")
 	}
 	static class ULiveLinkRemapAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkRemapAsset>();
 	}
 };
-static_assert(alignof(ULiveLinkRemapAsset) == 0x000008, "Wrong alignment on ULiveLinkRemapAsset");
-static_assert(sizeof(ULiveLinkRemapAsset) == 0x0000D0, "Wrong size on ULiveLinkRemapAsset");
+DUMPER7_ASSERTS_ULiveLinkRemapAsset;
 
 }
 

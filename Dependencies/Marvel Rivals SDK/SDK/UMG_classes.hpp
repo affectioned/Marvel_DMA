@@ -39,7 +39,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserListEntry">();
+		STATIC_CLASS_IMPL("UserListEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserListEntry")
 	}
 	static class IUserListEntry* GetDefaultObj()
 	{
@@ -55,8 +59,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUserListEntry) == 0x000001, "Wrong alignment on IUserListEntry");
-static_assert(sizeof(IUserListEntry) == 0x000001, "Wrong size on IUserListEntry");
+DUMPER7_ASSERTS_IUserListEntry;
 
 // Class UMG.Visual
 // 0x0000 (0x0030 - 0x0030)
@@ -65,15 +68,18 @@ class UVisual : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Visual">();
+		STATIC_CLASS_IMPL("Visual")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Visual")
 	}
 	static class UVisual* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVisual>();
 	}
 };
-static_assert(alignof(UVisual) == 0x000008, "Wrong alignment on UVisual");
-static_assert(sizeof(UVisual) == 0x000030, "Wrong size on UVisual");
+DUMPER7_ASSERTS_UVisual;
 
 // Class UMG.Widget
 // 0x0188 (0x01B8 - 0x0030)
@@ -99,12 +105,14 @@ public:
 	uint8                                         bIsEnabled : 1;                                    // 0x0111(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bOverride_Cursor : 1;                              // 0x0111(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bEnablePixelSnapping : 1;                          // 0x0111(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bConsumeAllMouseEvent : 1;                         // 0x0111(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bIsVolatile : 1;                                   // 0x0111(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	EMouseCursor                                  Cursor;                                            // 0x0112(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EWidgetClipping                               Clipping;                                          // 0x0113(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESlateVisibility                              Visibility;                                        // 0x0114(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bEnforceChildLayerOrder : 1;                       // 0x0111(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bConsumeAllMouseEvent : 1;                         // 0x0111(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bIsVolatile : 1;                                   // 0x0111(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_112[0x1];                                      // 0x0112(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EMouseCursor                                  Cursor;                                            // 0x0113(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EWidgetClipping                               Clipping;                                          // 0x0114(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESlateVisibility                              Visibility;                                        // 0x0115(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_116[0x2];                                      // 0x0116(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RenderOpacity;                                     // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWidgetPixelSnapping                          PixelSnapping;                                     // 0x011C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -187,37 +195,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Widget">();
+		STATIC_CLASS_IMPL("Widget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Widget")
 	}
 	static class UWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidget>();
 	}
 };
-static_assert(alignof(UWidget) == 0x000008, "Wrong alignment on UWidget");
-static_assert(sizeof(UWidget) == 0x0001B8, "Wrong size on UWidget");
-static_assert(offsetof(UWidget, Slot) == 0x000038, "Member 'UWidget::Slot' has a wrong offset!");
-static_assert(offsetof(UWidget, bIsEnabledDelegate) == 0x000040, "Member 'UWidget::bIsEnabledDelegate' has a wrong offset!");
-static_assert(offsetof(UWidget, ToolTipText) == 0x000058, "Member 'UWidget::ToolTipText' has a wrong offset!");
-static_assert(offsetof(UWidget, ToolTipTextDelegate) == 0x000070, "Member 'UWidget::ToolTipTextDelegate' has a wrong offset!");
-static_assert(offsetof(UWidget, ToolTipWidget) == 0x000088, "Member 'UWidget::ToolTipWidget' has a wrong offset!");
-static_assert(offsetof(UWidget, ToolTipWidgetDelegate) == 0x000090, "Member 'UWidget::ToolTipWidgetDelegate' has a wrong offset!");
-static_assert(offsetof(UWidget, VisibilityDelegate) == 0x0000A4, "Member 'UWidget::VisibilityDelegate' has a wrong offset!");
-static_assert(offsetof(UWidget, OnCascadingVisibleChangedEvent) == 0x0000B8, "Member 'UWidget::OnCascadingVisibleChangedEvent' has a wrong offset!");
-static_assert(offsetof(UWidget, RenderTransform) == 0x0000C8, "Member 'UWidget::RenderTransform' has a wrong offset!");
-static_assert(offsetof(UWidget, RenderTransformPivot) == 0x000100, "Member 'UWidget::RenderTransformPivot' has a wrong offset!");
-static_assert(offsetof(UWidget, FlowDirectionPreference) == 0x000110, "Member 'UWidget::FlowDirectionPreference' has a wrong offset!");
-static_assert(offsetof(UWidget, Cursor) == 0x000112, "Member 'UWidget::Cursor' has a wrong offset!");
-static_assert(offsetof(UWidget, Clipping) == 0x000113, "Member 'UWidget::Clipping' has a wrong offset!");
-static_assert(offsetof(UWidget, Visibility) == 0x000114, "Member 'UWidget::Visibility' has a wrong offset!");
-static_assert(offsetof(UWidget, RenderOpacity) == 0x000118, "Member 'UWidget::RenderOpacity' has a wrong offset!");
-static_assert(offsetof(UWidget, PixelSnapping) == 0x00011C, "Member 'UWidget::PixelSnapping' has a wrong offset!");
-static_assert(offsetof(UWidget, AccessibleWidgetData) == 0x000120, "Member 'UWidget::AccessibleWidgetData' has a wrong offset!");
-static_assert(offsetof(UWidget, Navigation) == 0x000128, "Member 'UWidget::Navigation' has a wrong offset!");
-static_assert(offsetof(UWidget, NativeBindings) == 0x000180, "Member 'UWidget::NativeBindings' has a wrong offset!");
-static_assert(offsetof(UWidget, bAttachedToViewport) == 0x0001B0, "Member 'UWidget::bAttachedToViewport' has a wrong offset!");
-static_assert(offsetof(UWidget, bCascadingVisible) == 0x0001B1, "Member 'UWidget::bCascadingVisible' has a wrong offset!");
-static_assert(offsetof(UWidget, bParentCascadingVisible) == 0x0001B2, "Member 'UWidget::bParentCascadingVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UWidget;
 
 // Class UMG.TextLayoutWidget
 // 0x0020 (0x01D8 - 0x01B8)
@@ -239,21 +228,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextLayoutWidget">();
+		STATIC_CLASS_IMPL("TextLayoutWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextLayoutWidget")
 	}
 	static class UTextLayoutWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextLayoutWidget>();
 	}
 };
-static_assert(alignof(UTextLayoutWidget) == 0x000008, "Wrong alignment on UTextLayoutWidget");
-static_assert(sizeof(UTextLayoutWidget) == 0x0001D8, "Wrong size on UTextLayoutWidget");
-static_assert(offsetof(UTextLayoutWidget, ShapedTextOptions) == 0x0001B8, "Member 'UTextLayoutWidget::ShapedTextOptions' has a wrong offset!");
-static_assert(offsetof(UTextLayoutWidget, Justification) == 0x0001BB, "Member 'UTextLayoutWidget::Justification' has a wrong offset!");
-static_assert(offsetof(UTextLayoutWidget, WrappingPolicy) == 0x0001BC, "Member 'UTextLayoutWidget::WrappingPolicy' has a wrong offset!");
-static_assert(offsetof(UTextLayoutWidget, WrapTextAt) == 0x0001C0, "Member 'UTextLayoutWidget::WrapTextAt' has a wrong offset!");
-static_assert(offsetof(UTextLayoutWidget, Margin) == 0x0001C4, "Member 'UTextLayoutWidget::Margin' has a wrong offset!");
-static_assert(offsetof(UTextLayoutWidget, LineHeightPercentage) == 0x0001D4, "Member 'UTextLayoutWidget::LineHeightPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_UTextLayoutWidget;
 
 // Class UMG.WidgetAnimationDelegateBinding
 // 0x0010 (0x0040 - 0x0030)
@@ -265,16 +251,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetAnimationDelegateBinding">();
+		STATIC_CLASS_IMPL("WidgetAnimationDelegateBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetAnimationDelegateBinding")
 	}
 	static class UWidgetAnimationDelegateBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetAnimationDelegateBinding>();
 	}
 };
-static_assert(alignof(UWidgetAnimationDelegateBinding) == 0x000008, "Wrong alignment on UWidgetAnimationDelegateBinding");
-static_assert(sizeof(UWidgetAnimationDelegateBinding) == 0x000040, "Wrong size on UWidgetAnimationDelegateBinding");
-static_assert(offsetof(UWidgetAnimationDelegateBinding, WidgetAnimationDelegateBindings) == 0x000030, "Member 'UWidgetAnimationDelegateBinding::WidgetAnimationDelegateBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetAnimationDelegateBinding;
 
 // Class UMG.WidgetComponent
 // 0x0180 (0x0A00 - 0x0880)
@@ -288,7 +276,8 @@ public:
 	struct FIntPoint                              DrawSize;                                          // 0x0888(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bManuallyRedraw;                                   // 0x0890(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bRedrawRequested;                                  // 0x0891(0x0001)(ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_892[0x2];                                      // 0x0892(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bOnlyPrepassWhenRedrawRequested;                   // 0x0892(0x0001)(ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_893[0x1];                                      // 0x0893(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RedrawTime;                                        // 0x0894(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_898[0x8];                                      // 0x0898(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              CurrentDrawSize;                                   // 0x08A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -296,11 +285,11 @@ public:
 	uint8                                         Pad_8A9[0x7];                                      // 0x08A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              Pivot;                                             // 0x08B0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector2D                              DownScale;                                         // 0x08C0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bReceiveHardwareInput;                             // 0x08D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWindowFocusable;                                  // 0x08D1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EWindowVisibility                             WindowVisibility;                                  // 0x08D2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bApplyGammaCorrection;                             // 0x08D3(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_8D4[0x4];                                      // 0x08D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DPIScale;                                          // 0x08D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bReceiveHardwareInput;                             // 0x08D4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWindowFocusable;                                  // 0x08D5(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EWindowVisibility                             WindowVisibility;                                  // 0x08D6(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bApplyGammaCorrection;                             // 0x08D7(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class ULocalPlayer*                           OwnerPlayer;                                       // 0x08D8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FLinearColor                           BackgroundColor;                                   // 0x08E0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FLinearColor                           TintColorAndOpacity;                               // 0x08F0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -341,6 +330,7 @@ public:
 	void SetDrawSize(const struct FVector2D& Size);
 	void SetGeometryMode(EWidgetGeometryMode InGeometryMode);
 	void SetManuallyRedraw(bool bUseManualRedraw);
+	void SetOnlyPrepassWhenRedrawRequested(bool bInValue);
 	void SetOwnerPlayer(class ULocalPlayer* LocalPlayer);
 	void SetPivot(const struct FVector2D& InPivot);
 	void SetRedrawTime(float InRedrawTime);
@@ -378,54 +368,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetComponent">();
+		STATIC_CLASS_IMPL("WidgetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetComponent")
 	}
 	static class UWidgetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetComponent>();
 	}
 };
-static_assert(alignof(UWidgetComponent) == 0x000010, "Wrong alignment on UWidgetComponent");
-static_assert(sizeof(UWidgetComponent) == 0x000A00, "Wrong size on UWidgetComponent");
-static_assert(offsetof(UWidgetComponent, Space) == 0x000878, "Member 'UWidgetComponent::Space' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TimingPolicy) == 0x000879, "Member 'UWidgetComponent::TimingPolicy' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, WidgetClass) == 0x000880, "Member 'UWidgetComponent::WidgetClass' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, DrawSize) == 0x000888, "Member 'UWidgetComponent::DrawSize' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bManuallyRedraw) == 0x000890, "Member 'UWidgetComponent::bManuallyRedraw' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bRedrawRequested) == 0x000891, "Member 'UWidgetComponent::bRedrawRequested' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, RedrawTime) == 0x000894, "Member 'UWidgetComponent::RedrawTime' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, CurrentDrawSize) == 0x0008A0, "Member 'UWidgetComponent::CurrentDrawSize' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bDrawAtDesiredSize) == 0x0008A8, "Member 'UWidgetComponent::bDrawAtDesiredSize' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, Pivot) == 0x0008B0, "Member 'UWidgetComponent::Pivot' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, DownScale) == 0x0008C0, "Member 'UWidgetComponent::DownScale' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bReceiveHardwareInput) == 0x0008D0, "Member 'UWidgetComponent::bReceiveHardwareInput' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bWindowFocusable) == 0x0008D1, "Member 'UWidgetComponent::bWindowFocusable' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, WindowVisibility) == 0x0008D2, "Member 'UWidgetComponent::WindowVisibility' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bApplyGammaCorrection) == 0x0008D3, "Member 'UWidgetComponent::bApplyGammaCorrection' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, OwnerPlayer) == 0x0008D8, "Member 'UWidgetComponent::OwnerPlayer' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, BackgroundColor) == 0x0008E0, "Member 'UWidgetComponent::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TintColorAndOpacity) == 0x0008F0, "Member 'UWidgetComponent::TintColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, OpacityFromTexture) == 0x000900, "Member 'UWidgetComponent::OpacityFromTexture' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, BlendMode) == 0x000904, "Member 'UWidgetComponent::BlendMode' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bIsTwoSided) == 0x000905, "Member 'UWidgetComponent::bIsTwoSided' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TickWhenOffscreen) == 0x000906, "Member 'UWidgetComponent::TickWhenOffscreen' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, BodySetup) == 0x000908, "Member 'UWidgetComponent::BodySetup' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TranslucentMaterial) == 0x000910, "Member 'UWidgetComponent::TranslucentMaterial' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TranslucentMaterial_OneSided) == 0x000918, "Member 'UWidgetComponent::TranslucentMaterial_OneSided' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, OpaqueMaterial) == 0x000920, "Member 'UWidgetComponent::OpaqueMaterial' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, OpaqueMaterial_OneSided) == 0x000928, "Member 'UWidgetComponent::OpaqueMaterial_OneSided' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, MaskedMaterial) == 0x000930, "Member 'UWidgetComponent::MaskedMaterial' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, MaskedMaterial_OneSided) == 0x000938, "Member 'UWidgetComponent::MaskedMaterial_OneSided' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, RenderTarget) == 0x000940, "Member 'UWidgetComponent::RenderTarget' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, MaterialInstance) == 0x000948, "Member 'UWidgetComponent::MaterialInstance' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bAddedToScreen) == 0x000950, "Member 'UWidgetComponent::bAddedToScreen' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, bEditTimeUsable) == 0x000951, "Member 'UWidgetComponent::bEditTimeUsable' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, SharedLayerName) == 0x000954, "Member 'UWidgetComponent::SharedLayerName' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, LayerZOrder) == 0x000960, "Member 'UWidgetComponent::LayerZOrder' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, GeometryMode) == 0x000964, "Member 'UWidgetComponent::GeometryMode' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, CylinderArcAngle) == 0x000968, "Member 'UWidgetComponent::CylinderArcAngle' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, TickMode) == 0x00096C, "Member 'UWidgetComponent::TickMode' has a wrong offset!");
-static_assert(offsetof(UWidgetComponent, Widget) == 0x000998, "Member 'UWidgetComponent::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetComponent;
 
 // Class UMG.GameViewportSubsystem
 // 0x0080 (0x00B8 - 0x0038)
@@ -449,15 +403,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameViewportSubsystem">();
+		STATIC_CLASS_IMPL("GameViewportSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameViewportSubsystem")
 	}
 	static class UGameViewportSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameViewportSubsystem>();
 	}
 };
-static_assert(alignof(UGameViewportSubsystem) == 0x000008, "Wrong alignment on UGameViewportSubsystem");
-static_assert(sizeof(UGameViewportSubsystem) == 0x0000B8, "Wrong size on UGameViewportSubsystem");
+DUMPER7_ASSERTS_UGameViewportSubsystem;
 
 // Class UMG.UserListEntryLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -471,15 +428,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserListEntryLibrary">();
+		STATIC_CLASS_IMPL("UserListEntryLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserListEntryLibrary")
 	}
 	static class UUserListEntryLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserListEntryLibrary>();
 	}
 };
-static_assert(alignof(UUserListEntryLibrary) == 0x000008, "Wrong alignment on UUserListEntryLibrary");
-static_assert(sizeof(UUserListEntryLibrary) == 0x000030, "Wrong size on UUserListEntryLibrary");
+DUMPER7_ASSERTS_UUserListEntryLibrary;
 
 // Class UMG.AdaptText
 // 0x0328 (0x0500 - 0x01D8)
@@ -576,47 +536,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AdaptText">();
+		STATIC_CLASS_IMPL("AdaptText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdaptText")
 	}
 	static class UAdaptText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdaptText>();
 	}
 };
-static_assert(alignof(UAdaptText) == 0x000010, "Wrong alignment on UAdaptText");
-static_assert(sizeof(UAdaptText) == 0x000500, "Wrong size on UAdaptText");
-static_assert(offsetof(UAdaptText, Text) == 0x0001D8, "Member 'UAdaptText::Text' has a wrong offset!");
-static_assert(offsetof(UAdaptText, TextDelegate) == 0x0001F0, "Member 'UAdaptText::TextDelegate' has a wrong offset!");
-static_assert(offsetof(UAdaptText, ColorAndOpacity) == 0x000204, "Member 'UAdaptText::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UAdaptText, ColorAndOpacityDelegate) == 0x000218, "Member 'UAdaptText::ColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UAdaptText, Font) == 0x000230, "Member 'UAdaptText::Font' has a wrong offset!");
-static_assert(offsetof(UAdaptText, StrikeBrush) == 0x0002A0, "Member 'UAdaptText::StrikeBrush' has a wrong offset!");
-static_assert(offsetof(UAdaptText, ShadowOffset) == 0x000370, "Member 'UAdaptText::ShadowOffset' has a wrong offset!");
-static_assert(offsetof(UAdaptText, ShadowColorAndOpacity) == 0x000380, "Member 'UAdaptText::ShadowColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UAdaptText, ShadowColorAndOpacityDelegate) == 0x000390, "Member 'UAdaptText::ShadowColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UAdaptText, TextMinDesiredWidth) == 0x0003A4, "Member 'UAdaptText::TextMinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UAdaptText, bWrapWithInvalidationPanel) == 0x0003A8, "Member 'UAdaptText::bWrapWithInvalidationPanel' has a wrong offset!");
-static_assert(offsetof(UAdaptText, bAutoWrapText) == 0x0003A9, "Member 'UAdaptText::bAutoWrapText' has a wrong offset!");
-static_assert(offsetof(UAdaptText, AdapterType) == 0x0003AA, "Member 'UAdaptText::AdapterType' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MinFontSize) == 0x0003AC, "Member 'UAdaptText::MinFontSize' has a wrong offset!");
-static_assert(offsetof(UAdaptText, CurrentFontSize) == 0x0003B0, "Member 'UAdaptText::CurrentFontSize' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MarqueeDirection) == 0x0003B4, "Member 'UAdaptText::MarqueeDirection' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MarqueePolicy) == 0x0003B5, "Member 'UAdaptText::MarqueePolicy' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MarqueeSpeed) == 0x0003B8, "Member 'UAdaptText::MarqueeSpeed' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MarqueeType) == 0x0003BC, "Member 'UAdaptText::MarqueeType' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MarqueeStartDelay) == 0x0003C0, "Member 'UAdaptText::MarqueeStartDelay' has a wrong offset!");
-static_assert(offsetof(UAdaptText, HorizontalAlignment) == 0x0003C5, "Member 'UAdaptText::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UAdaptText, VerticalAlignment) == 0x0003C6, "Member 'UAdaptText::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UAdaptText, WidthOverride) == 0x0003C8, "Member 'UAdaptText::WidthOverride' has a wrong offset!");
-static_assert(offsetof(UAdaptText, HeightOverride) == 0x0003CC, "Member 'UAdaptText::HeightOverride' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MinDesiredWidth) == 0x0003D0, "Member 'UAdaptText::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MinDesiredHeight) == 0x0003D4, "Member 'UAdaptText::MinDesiredHeight' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MaxDesiredWidth) == 0x0003D8, "Member 'UAdaptText::MaxDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UAdaptText, MaxDesiredHeight) == 0x0003DC, "Member 'UAdaptText::MaxDesiredHeight' has a wrong offset!");
-static_assert(offsetof(UAdaptText, OnTextMarqueeEnd) == 0x0003E8, "Member 'UAdaptText::OnTextMarqueeEnd' has a wrong offset!");
-static_assert(offsetof(UAdaptText, OnTextFontSizeChanged) == 0x0003F8, "Member 'UAdaptText::OnTextFontSizeChanged' has a wrong offset!");
-static_assert(offsetof(UAdaptText, TestBrush) == 0x000410, "Member 'UAdaptText::TestBrush' has a wrong offset!");
-static_assert(offsetof(UAdaptText, bSimpleTextMode) == 0x0004E0, "Member 'UAdaptText::bSimpleTextMode' has a wrong offset!");
+DUMPER7_ASSERTS_UAdaptText;
 
 // Class UMG.UserObjectListEntry
 // 0x0000 (0x0000 - 0x0000)
@@ -628,7 +559,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserObjectListEntry">();
+		STATIC_CLASS_IMPL("UserObjectListEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserObjectListEntry")
 	}
 	static class IUserObjectListEntry* GetDefaultObj()
 	{
@@ -644,8 +579,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IUserObjectListEntry) == 0x000001, "Wrong alignment on IUserObjectListEntry");
-static_assert(sizeof(IUserObjectListEntry) == 0x000001, "Wrong size on IUserObjectListEntry");
+DUMPER7_ASSERTS_IUserObjectListEntry;
 
 // Class UMG.HashTextMoodSetGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -657,15 +591,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashTextMoodSetGenerator">();
+		STATIC_CLASS_IMPL("HashTextMoodSetGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextMoodSetGenerator")
 	}
 	static class UHashTextMoodSetGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashTextMoodSetGenerator>();
 	}
 };
-static_assert(alignof(UHashTextMoodSetGenerator) == 0x000008, "Wrong alignment on UHashTextMoodSetGenerator");
-static_assert(sizeof(UHashTextMoodSetGenerator) == 0x000030, "Wrong size on UHashTextMoodSetGenerator");
+DUMPER7_ASSERTS_UHashTextMoodSetGenerator;
 
 // Class UMG.HashTextConfig
 // 0x0010 (0x0048 - 0x0038)
@@ -678,17 +615,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashTextConfig">();
+		STATIC_CLASS_IMPL("HashTextConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextConfig")
 	}
 	static class UHashTextConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashTextConfig>();
 	}
 };
-static_assert(alignof(UHashTextConfig) == 0x000008, "Wrong alignment on UHashTextConfig");
-static_assert(sizeof(UHashTextConfig) == 0x000048, "Wrong size on UHashTextConfig");
-static_assert(offsetof(UHashTextConfig, TextStyleTable) == 0x000038, "Member 'UHashTextConfig::TextStyleTable' has a wrong offset!");
-static_assert(offsetof(UHashTextConfig, MoodSetGenerator) == 0x000040, "Member 'UHashTextConfig::MoodSetGenerator' has a wrong offset!");
+DUMPER7_ASSERTS_UHashTextConfig;
 
 // Class UMG.HashTextWidgetInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -697,7 +635,11 @@ class IHashTextWidgetInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashTextWidgetInterface">();
+		STATIC_CLASS_IMPL("HashTextWidgetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextWidgetInterface")
 	}
 	static class IHashTextWidgetInterface* GetDefaultObj()
 	{
@@ -713,8 +655,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IHashTextWidgetInterface) == 0x000001, "Wrong alignment on IHashTextWidgetInterface");
-static_assert(sizeof(IHashTextWidgetInterface) == 0x000001, "Wrong size on IHashTextWidgetInterface");
+DUMPER7_ASSERTS_IHashTextWidgetInterface;
 
 // Class UMG.ListViewBase
 // 0x0130 (0x02E8 - 0x01B8)
@@ -758,28 +699,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ListViewBase">();
+		STATIC_CLASS_IMPL("ListViewBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ListViewBase")
 	}
 	static class UListViewBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UListViewBase>();
 	}
 };
-static_assert(alignof(UListViewBase) == 0x000008, "Wrong alignment on UListViewBase");
-static_assert(sizeof(UListViewBase) == 0x0002E8, "Wrong size on UListViewBase");
-static_assert(offsetof(UListViewBase, BP_OnEntryGenerated) == 0x0001B8, "Member 'UListViewBase::BP_OnEntryGenerated' has a wrong offset!");
-static_assert(offsetof(UListViewBase, EntryWidgetClass) == 0x0001D8, "Member 'UListViewBase::EntryWidgetClass' has a wrong offset!");
-static_assert(offsetof(UListViewBase, WheelScrollMultiplier) == 0x0001E0, "Member 'UListViewBase::WheelScrollMultiplier' has a wrong offset!");
-static_assert(offsetof(UListViewBase, bEnableScrollAnimation) == 0x0001E4, "Member 'UListViewBase::bEnableScrollAnimation' has a wrong offset!");
-static_assert(offsetof(UListViewBase, SpeedOfScrolling) == 0x0001E8, "Member 'UListViewBase::SpeedOfScrolling' has a wrong offset!");
-static_assert(offsetof(UListViewBase, AllowOverscroll) == 0x0001EC, "Member 'UListViewBase::AllowOverscroll' has a wrong offset!");
-static_assert(offsetof(UListViewBase, bEnableRightClickScrolling) == 0x0001ED, "Member 'UListViewBase::bEnableRightClickScrolling' has a wrong offset!");
-static_assert(offsetof(UListViewBase, bEnableFixedLineOffset) == 0x0001EE, "Member 'UListViewBase::bEnableFixedLineOffset' has a wrong offset!");
-static_assert(offsetof(UListViewBase, bScrollBasedOnOrientation) == 0x0001EF, "Member 'UListViewBase::bScrollBasedOnOrientation' has a wrong offset!");
-static_assert(offsetof(UListViewBase, FixedLineScrollOffset) == 0x0001F0, "Member 'UListViewBase::FixedLineScrollOffset' has a wrong offset!");
-static_assert(offsetof(UListViewBase, bAllowDragging) == 0x0001F4, "Member 'UListViewBase::bAllowDragging' has a wrong offset!");
-static_assert(offsetof(UListViewBase, BP_OnEntryReleased) == 0x0001F8, "Member 'UListViewBase::BP_OnEntryReleased' has a wrong offset!");
-static_assert(offsetof(UListViewBase, EntryWidgetPool) == 0x000208, "Member 'UListViewBase::EntryWidgetPool' has a wrong offset!");
+DUMPER7_ASSERTS_UListViewBase;
 
 // Class UMG.ListView
 // 0x0A78 (0x0D60 - 0x02E8)
@@ -804,7 +735,8 @@ public:
 	bool                                          bIsFocusable;                                      // 0x0C58(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bReturnFocusToSelection;                           // 0x0C59(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bScrollOneMoreItemIntoView;                        // 0x0C5A(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C5B[0x5];                                      // 0x0C5B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bFocusIntoItemChild;                               // 0x0C5B(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C5C[0x4];                                      // 0x0C5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UObject*>                        ListItems;                                         // 0x0C60(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	uint8                                         Pad_C70[0x10];                                     // 0x0C70(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HorizontalEntrySpacing;                            // 0x0C80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -839,9 +771,13 @@ public:
 	void OnListItemOuterEndPlayed(class AActor* ItemOuter, EEndPlayReason EndPlayReason);
 	void RemoveItem(class UObject* Item);
 	void ScrollIndexIntoView(int32 Index_0);
+	void SetFocusIntoItemChild(const bool FocusIntoItemChild);
 	void SetScrollBarOpacity(const float InOpacity);
 	void SetSelectedIndex(int32 Index_0);
 	void SetSelectionMode(ESelectionMode SelectionMode_0);
+	bool UpdateItemObject(class UObject* Item);
+	bool UpdateItemObjectToIndex(class UObject* NewItem, int32 ItemIndex);
+	bool UpdateItemObjectToItem(class UObject* NewItem, class UObject* OldItem);
 
 	class UUserWidget* BP_GetEntryWidgetFromItem(class UObject* Item) const;
 	int32 BP_GetNumItemsSelected() const;
@@ -863,46 +799,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ListView">();
+		STATIC_CLASS_IMPL("ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ListView")
 	}
 	static class UListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UListView>();
 	}
 };
-static_assert(alignof(UListView) == 0x000010, "Wrong alignment on UListView");
-static_assert(sizeof(UListView) == 0x000D60, "Wrong size on UListView");
-static_assert(offsetof(UListView, bIsUseCustomScrollBar) == 0x0003D0, "Member 'UListView::bIsUseCustomScrollBar' has a wrong offset!");
-static_assert(offsetof(UListView, ScrollbarThickness) == 0x0003D8, "Member 'UListView::ScrollbarThickness' has a wrong offset!");
-static_assert(offsetof(UListView, ScrollbarPadding) == 0x0003E8, "Member 'UListView::ScrollbarPadding' has a wrong offset!");
-static_assert(offsetof(UListView, bAlwaysShowScrollbar) == 0x0003F8, "Member 'UListView::bAlwaysShowScrollbar' has a wrong offset!");
-static_assert(offsetof(UListView, bAlwaysShowScrollbarTrack) == 0x0003F9, "Member 'UListView::bAlwaysShowScrollbarTrack' has a wrong offset!");
-static_assert(offsetof(UListView, WidgetStyle) == 0x000400, "Member 'UListView::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UListView, ScrollBarStyle) == 0x0004E0, "Member 'UListView::ScrollBarStyle' has a wrong offset!");
-static_assert(offsetof(UListView, ScrollBarOpacity) == 0x000C50, "Member 'UListView::ScrollBarOpacity' has a wrong offset!");
-static_assert(offsetof(UListView, Orientation) == 0x000C54, "Member 'UListView::Orientation' has a wrong offset!");
-static_assert(offsetof(UListView, SelectionMode) == 0x000C55, "Member 'UListView::SelectionMode' has a wrong offset!");
-static_assert(offsetof(UListView, ConsumeMouseWheel) == 0x000C56, "Member 'UListView::ConsumeMouseWheel' has a wrong offset!");
-static_assert(offsetof(UListView, bClearSelectionOnClick) == 0x000C57, "Member 'UListView::bClearSelectionOnClick' has a wrong offset!");
-static_assert(offsetof(UListView, bIsFocusable) == 0x000C58, "Member 'UListView::bIsFocusable' has a wrong offset!");
-static_assert(offsetof(UListView, bReturnFocusToSelection) == 0x000C59, "Member 'UListView::bReturnFocusToSelection' has a wrong offset!");
-static_assert(offsetof(UListView, bScrollOneMoreItemIntoView) == 0x000C5A, "Member 'UListView::bScrollOneMoreItemIntoView' has a wrong offset!");
-static_assert(offsetof(UListView, ListItems) == 0x000C60, "Member 'UListView::ListItems' has a wrong offset!");
-static_assert(offsetof(UListView, HorizontalEntrySpacing) == 0x000C80, "Member 'UListView::HorizontalEntrySpacing' has a wrong offset!");
-static_assert(offsetof(UListView, VerticalEntrySpacing) == 0x000C84, "Member 'UListView::VerticalEntrySpacing' has a wrong offset!");
-static_assert(offsetof(UListView, TotalPadding) == 0x000C88, "Member 'UListView::TotalPadding' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnEntryInitialized) == 0x000C98, "Member 'UListView::BP_OnEntryInitialized' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemClicked) == 0x000CA8, "Member 'UListView::BP_OnItemClicked' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemDoubleClicked) == 0x000CB8, "Member 'UListView::BP_OnItemDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemIsHoveredChanged) == 0x000CC8, "Member 'UListView::BP_OnItemIsHoveredChanged' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemSelectionChanged) == 0x000CD8, "Member 'UListView::BP_OnItemSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemScrolledIntoView) == 0x000CE8, "Member 'UListView::BP_OnItemScrolledIntoView' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnListViewScrolled) == 0x000CF8, "Member 'UListView::BP_OnListViewScrolled' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnListViewHovered) == 0x000D08, "Member 'UListView::BP_OnListViewHovered' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnListViewUnhovered) == 0x000D18, "Member 'UListView::BP_OnListViewUnhovered' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnIsItemSelectableOrNavigable) == 0x000D28, "Member 'UListView::BP_OnIsItemSelectableOrNavigable' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnAttemptNavigateToItem) == 0x000D3C, "Member 'UListView::BP_OnAttemptNavigateToItem' has a wrong offset!");
-static_assert(offsetof(UListView, BP_OnItemsGenerated) == 0x000D50, "Member 'UListView::BP_OnItemsGenerated' has a wrong offset!");
+DUMPER7_ASSERTS_UListView;
 
 // Class UMG.ListViewDesignerPreviewItem
 // 0x0000 (0x0030 - 0x0030)
@@ -911,15 +819,18 @@ class UListViewDesignerPreviewItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ListViewDesignerPreviewItem">();
+		STATIC_CLASS_IMPL("ListViewDesignerPreviewItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ListViewDesignerPreviewItem")
 	}
 	static class UListViewDesignerPreviewItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UListViewDesignerPreviewItem>();
 	}
 };
-static_assert(alignof(UListViewDesignerPreviewItem) == 0x000008, "Wrong alignment on UListViewDesignerPreviewItem");
-static_assert(sizeof(UListViewDesignerPreviewItem) == 0x000030, "Wrong size on UListViewDesignerPreviewItem");
+DUMPER7_ASSERTS_UListViewDesignerPreviewItem;
 
 // Class UMG.MeshWidget
 // 0x00E8 (0x02A0 - 0x01B8)
@@ -933,17 +844,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshWidget">();
+		STATIC_CLASS_IMPL("MeshWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshWidget")
 	}
 	static class UMeshWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeshWidget>();
 	}
 };
-static_assert(alignof(UMeshWidget) == 0x000010, "Wrong alignment on UMeshWidget");
-static_assert(sizeof(UMeshWidget) == 0x0002A0, "Wrong size on UMeshWidget");
-static_assert(offsetof(UMeshWidget, MeshData) == 0x0001B8, "Member 'UMeshWidget::MeshData' has a wrong offset!");
-static_assert(offsetof(UMeshWidget, MeshBrush) == 0x0001C0, "Member 'UMeshWidget::MeshBrush' has a wrong offset!");
+DUMPER7_ASSERTS_UMeshWidget;
 
 // Class UMG.RichTextPolicyPyHelper
 // 0x0010 (0x0040 - 0x0030)
@@ -956,16 +868,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextPolicyPyHelper">();
+		STATIC_CLASS_IMPL("RichTextPolicyPyHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextPolicyPyHelper")
 	}
 	static class URichTextPolicyPyHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextPolicyPyHelper>();
 	}
 };
-static_assert(alignof(URichTextPolicyPyHelper) == 0x000008, "Wrong alignment on URichTextPolicyPyHelper");
-static_assert(sizeof(URichTextPolicyPyHelper) == 0x000040, "Wrong size on URichTextPolicyPyHelper");
-static_assert(offsetof(URichTextPolicyPyHelper, Proxy) == 0x000038, "Member 'URichTextPolicyPyHelper::Proxy' has a wrong offset!");
+DUMPER7_ASSERTS_URichTextPolicyPyHelper;
 
 // Class UMG.RichTextPolicyProxy
 // 0x0000 (0x0030 - 0x0030)
@@ -974,15 +888,18 @@ class URichTextPolicyProxy : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextPolicyProxy">();
+		STATIC_CLASS_IMPL("RichTextPolicyProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextPolicyProxy")
 	}
 	static class URichTextPolicyProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextPolicyProxy>();
 	}
 };
-static_assert(alignof(URichTextPolicyProxy) == 0x000008, "Wrong alignment on URichTextPolicyProxy");
-static_assert(sizeof(URichTextPolicyProxy) == 0x000030, "Wrong size on URichTextPolicyProxy");
+DUMPER7_ASSERTS_URichTextPolicyProxy;
 
 // Class UMG.SlateAccessibleWidgetData
 // 0x0068 (0x0098 - 0x0030)
@@ -1003,22 +920,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateAccessibleWidgetData">();
+		STATIC_CLASS_IMPL("SlateAccessibleWidgetData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateAccessibleWidgetData")
 	}
 	static class USlateAccessibleWidgetData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateAccessibleWidgetData>();
 	}
 };
-static_assert(alignof(USlateAccessibleWidgetData) == 0x000008, "Wrong alignment on USlateAccessibleWidgetData");
-static_assert(sizeof(USlateAccessibleWidgetData) == 0x000098, "Wrong size on USlateAccessibleWidgetData");
-static_assert(offsetof(USlateAccessibleWidgetData, bCanChildrenBeAccessible) == 0x000030, "Member 'USlateAccessibleWidgetData::bCanChildrenBeAccessible' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleBehavior) == 0x000031, "Member 'USlateAccessibleWidgetData::AccessibleBehavior' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleSummaryBehavior) == 0x000032, "Member 'USlateAccessibleWidgetData::AccessibleSummaryBehavior' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleText) == 0x000038, "Member 'USlateAccessibleWidgetData::AccessibleText' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleTextDelegate) == 0x000050, "Member 'USlateAccessibleWidgetData::AccessibleTextDelegate' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleSummaryText) == 0x000068, "Member 'USlateAccessibleWidgetData::AccessibleSummaryText' has a wrong offset!");
-static_assert(offsetof(USlateAccessibleWidgetData, AccessibleSummaryTextDelegate) == 0x000080, "Member 'USlateAccessibleWidgetData::AccessibleSummaryTextDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_USlateAccessibleWidgetData;
 
 // Class UMG.UserWidgetBlueprint
 // 0x0000 (0x00B0 - 0x00B0)
@@ -1027,15 +940,18 @@ class UUserWidgetBlueprint final : public UBlueprint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserWidgetBlueprint">();
+		STATIC_CLASS_IMPL("UserWidgetBlueprint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserWidgetBlueprint")
 	}
 	static class UUserWidgetBlueprint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserWidgetBlueprint>();
 	}
 };
-static_assert(alignof(UUserWidgetBlueprint) == 0x000008, "Wrong alignment on UUserWidgetBlueprint");
-static_assert(sizeof(UUserWidgetBlueprint) == 0x0000B0, "Wrong size on UUserWidgetBlueprint");
+DUMPER7_ASSERTS_UUserWidgetBlueprint;
 
 // Class UMG.UserWidget
 // 0x0200 (0x03B8 - 0x01B8)
@@ -1064,7 +980,7 @@ public:
 	TArray<class UUserWidgetExtension*>           Extensions;                                        // 0x0288(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 	struct FUMGSequencePlayerPool                 UMGSequencePlayerPool;                             // 0x0298(0x0050)(NativeAccessSpecifierPrivate)
 	class UWidgetTree*                            WidgetTree;                                        // 0x02E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient, NoDestructor, TextExportTransient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class UWidgetAnimation*, struct FWidgetAnimationCachedState> AnimationCachedStatesMap;      // 0x02F0(0x0050)(Transient, NativeAccessSpecifierPublic)
+	TMap<class UWidgetAnimation*, struct FWidgetAnimationCachedState> AnimationCachedStatesMap;      // 0x02F0(0x0050)(Transient, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         bHasScriptImplementedTick : 1;                     // 0x0340(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bHasScriptImplementedPaint : 1;                    // 0x0340(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_341[0x17];                                     // 0x0341(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1179,35 +1095,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserWidget">();
+		STATIC_CLASS_IMPL("UserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserWidget")
 	}
 	static class UUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserWidget>();
 	}
 };
-static_assert(alignof(UUserWidget) == 0x000008, "Wrong alignment on UUserWidget");
-static_assert(sizeof(UUserWidget) == 0x0003B8, "Wrong size on UUserWidget");
-static_assert(offsetof(UUserWidget, ColorAndOpacity) == 0x0001C0, "Member 'UUserWidget::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UUserWidget, ColorAndOpacityDelegate) == 0x0001D0, "Member 'UUserWidget::ColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UUserWidget, ForegroundColor) == 0x0001E4, "Member 'UUserWidget::ForegroundColor' has a wrong offset!");
-static_assert(offsetof(UUserWidget, ForegroundColorDelegate) == 0x0001F8, "Member 'UUserWidget::ForegroundColorDelegate' has a wrong offset!");
-static_assert(offsetof(UUserWidget, OnVisibilityChanged) == 0x000210, "Member 'UUserWidget::OnVisibilityChanged' has a wrong offset!");
-static_assert(offsetof(UUserWidget, Padding) == 0x000238, "Member 'UUserWidget::Padding' has a wrong offset!");
-static_assert(offsetof(UUserWidget, Priority) == 0x000248, "Member 'UUserWidget::Priority' has a wrong offset!");
-static_assert(offsetof(UUserWidget, ActiveSequencePlayers) == 0x000250, "Member 'UUserWidget::ActiveSequencePlayers' has a wrong offset!");
-static_assert(offsetof(UUserWidget, AnimationTickManager) == 0x000260, "Member 'UUserWidget::AnimationTickManager' has a wrong offset!");
-static_assert(offsetof(UUserWidget, StoppedSequencePlayers) == 0x000268, "Member 'UUserWidget::StoppedSequencePlayers' has a wrong offset!");
-static_assert(offsetof(UUserWidget, NamedSlotBindings) == 0x000278, "Member 'UUserWidget::NamedSlotBindings' has a wrong offset!");
-static_assert(offsetof(UUserWidget, Extensions) == 0x000288, "Member 'UUserWidget::Extensions' has a wrong offset!");
-static_assert(offsetof(UUserWidget, UMGSequencePlayerPool) == 0x000298, "Member 'UUserWidget::UMGSequencePlayerPool' has a wrong offset!");
-static_assert(offsetof(UUserWidget, WidgetTree) == 0x0002E8, "Member 'UUserWidget::WidgetTree' has a wrong offset!");
-static_assert(offsetof(UUserWidget, AnimationCachedStatesMap) == 0x0002F0, "Member 'UUserWidget::AnimationCachedStatesMap' has a wrong offset!");
-static_assert(offsetof(UUserWidget, TickFrequency) == 0x000358, "Member 'UUserWidget::TickFrequency' has a wrong offset!");
-static_assert(offsetof(UUserWidget, DesiredFocusWidget) == 0x00035C, "Member 'UUserWidget::DesiredFocusWidget' has a wrong offset!");
-static_assert(offsetof(UUserWidget, InputComponent) == 0x000370, "Member 'UUserWidget::InputComponent' has a wrong offset!");
-static_assert(offsetof(UUserWidget, AnimationCallbacks) == 0x000378, "Member 'UUserWidget::AnimationCallbacks' has a wrong offset!");
-static_assert(offsetof(UUserWidget, OnReleaseToPool) == 0x0003A8, "Member 'UUserWidget::OnReleaseToPool' has a wrong offset!");
+DUMPER7_ASSERTS_UUserWidget;
 
 // Class UMG.UserWidgetExtension
 // 0x0000 (0x0030 - 0x0030)
@@ -1219,15 +1118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserWidgetExtension">();
+		STATIC_CLASS_IMPL("UserWidgetExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserWidgetExtension")
 	}
 	static class UUserWidgetExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserWidgetExtension>();
 	}
 };
-static_assert(alignof(UUserWidgetExtension) == 0x000008, "Wrong alignment on UUserWidgetExtension");
-static_assert(sizeof(UUserWidgetExtension) == 0x000030, "Wrong size on UUserWidgetExtension");
+DUMPER7_ASSERTS_UUserWidgetExtension;
 
 // Class UMG.WidgetBlueprintGeneratedClassExtension
 // 0x0000 (0x0030 - 0x0030)
@@ -1236,15 +1138,18 @@ class UWidgetBlueprintGeneratedClassExtension : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetBlueprintGeneratedClassExtension">();
+		STATIC_CLASS_IMPL("WidgetBlueprintGeneratedClassExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetBlueprintGeneratedClassExtension")
 	}
 	static class UWidgetBlueprintGeneratedClassExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetBlueprintGeneratedClassExtension>();
 	}
 };
-static_assert(alignof(UWidgetBlueprintGeneratedClassExtension) == 0x000008, "Wrong alignment on UWidgetBlueprintGeneratedClassExtension");
-static_assert(sizeof(UWidgetBlueprintGeneratedClassExtension) == 0x000030, "Wrong size on UWidgetBlueprintGeneratedClassExtension");
+DUMPER7_ASSERTS_UWidgetBlueprintGeneratedClassExtension;
 
 // Class UMG.WidgetFieldNotificationExtension
 // 0x0018 (0x0048 - 0x0030)
@@ -1256,15 +1161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetFieldNotificationExtension">();
+		STATIC_CLASS_IMPL("WidgetFieldNotificationExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetFieldNotificationExtension")
 	}
 	static class UWidgetFieldNotificationExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetFieldNotificationExtension>();
 	}
 };
-static_assert(alignof(UWidgetFieldNotificationExtension) == 0x000008, "Wrong alignment on UWidgetFieldNotificationExtension");
-static_assert(sizeof(UWidgetFieldNotificationExtension) == 0x000048, "Wrong size on UWidgetFieldNotificationExtension");
+DUMPER7_ASSERTS_UWidgetFieldNotificationExtension;
 
 // Class UMG.WidgetNavigation
 // 0x0108 (0x0138 - 0x0030)
@@ -1281,21 +1189,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetNavigation">();
+		STATIC_CLASS_IMPL("WidgetNavigation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetNavigation")
 	}
 	static class UWidgetNavigation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetNavigation>();
 	}
 };
-static_assert(alignof(UWidgetNavigation) == 0x000008, "Wrong alignment on UWidgetNavigation");
-static_assert(sizeof(UWidgetNavigation) == 0x000138, "Wrong size on UWidgetNavigation");
-static_assert(offsetof(UWidgetNavigation, Up) == 0x000030, "Member 'UWidgetNavigation::Up' has a wrong offset!");
-static_assert(offsetof(UWidgetNavigation, Down) == 0x00005C, "Member 'UWidgetNavigation::Down' has a wrong offset!");
-static_assert(offsetof(UWidgetNavigation, Left) == 0x000088, "Member 'UWidgetNavigation::Left' has a wrong offset!");
-static_assert(offsetof(UWidgetNavigation, Right) == 0x0000B4, "Member 'UWidgetNavigation::Right' has a wrong offset!");
-static_assert(offsetof(UWidgetNavigation, Next) == 0x0000E0, "Member 'UWidgetNavigation::Next' has a wrong offset!");
-static_assert(offsetof(UWidgetNavigation, Previous) == 0x00010C, "Member 'UWidgetNavigation::Previous' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetNavigation;
 
 // Class UMG.WidgetLayoutLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -1328,15 +1233,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetLayoutLibrary">();
+		STATIC_CLASS_IMPL("WidgetLayoutLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetLayoutLibrary")
 	}
 	static class UWidgetLayoutLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetLayoutLibrary>();
 	}
 };
-static_assert(alignof(UWidgetLayoutLibrary) == 0x000008, "Wrong alignment on UWidgetLayoutLibrary");
-static_assert(sizeof(UWidgetLayoutLibrary) == 0x000030, "Wrong size on UWidgetLayoutLibrary");
+DUMPER7_ASSERTS_UWidgetLayoutLibrary;
 
 // Class UMG.WidgetTextData
 // 0x0000 (0x0038 - 0x0038)
@@ -1345,15 +1253,18 @@ class UWidgetTextData final : public UDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetTextData">();
+		STATIC_CLASS_IMPL("WidgetTextData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetTextData")
 	}
 	static class UWidgetTextData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetTextData>();
 	}
 };
-static_assert(alignof(UWidgetTextData) == 0x000008, "Wrong alignment on UWidgetTextData");
-static_assert(sizeof(UWidgetTextData) == 0x000038, "Wrong size on UWidgetTextData");
+DUMPER7_ASSERTS_UWidgetTextData;
 
 // Class UMG.WidgetTextConfig
 // 0x0068 (0x0098 - 0x0030)
@@ -1371,18 +1282,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetTextConfig">();
+		STATIC_CLASS_IMPL("WidgetTextConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetTextConfig")
 	}
 	static class UWidgetTextConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetTextConfig>();
 	}
 };
-static_assert(alignof(UWidgetTextConfig) == 0x000008, "Wrong alignment on UWidgetTextConfig");
-static_assert(sizeof(UWidgetTextConfig) == 0x000098, "Wrong size on UWidgetTextConfig");
-static_assert(offsetof(UWidgetTextConfig, TextMap) == 0x000030, "Member 'UWidgetTextConfig::TextMap' has a wrong offset!");
-static_assert(offsetof(UWidgetTextConfig, bhasCommonTextData) == 0x000080, "Member 'UWidgetTextConfig::bhasCommonTextData' has a wrong offset!");
-static_assert(offsetof(UWidgetTextConfig, TextDatas) == 0x000088, "Member 'UWidgetTextConfig::TextDatas' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetTextConfig;
 
 // Class UMG.WidgetTextConfigClassExtension
 // 0x0008 (0x0038 - 0x0030)
@@ -1394,16 +1305,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetTextConfigClassExtension">();
+		STATIC_CLASS_IMPL("WidgetTextConfigClassExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetTextConfigClassExtension")
 	}
 	static class UWidgetTextConfigClassExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetTextConfigClassExtension>();
 	}
 };
-static_assert(alignof(UWidgetTextConfigClassExtension) == 0x000008, "Wrong alignment on UWidgetTextConfigClassExtension");
-static_assert(sizeof(UWidgetTextConfigClassExtension) == 0x000038, "Wrong size on UWidgetTextConfigClassExtension");
-static_assert(offsetof(UWidgetTextConfigClassExtension, TextConfig) == 0x000030, "Member 'UWidgetTextConfigClassExtension::TextConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetTextConfigClassExtension;
 
 // Class UMG.WidgetTextConfigExtension
 // 0x0008 (0x0038 - 0x0030)
@@ -1418,16 +1331,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetTextConfigExtension">();
+		STATIC_CLASS_IMPL("WidgetTextConfigExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetTextConfigExtension")
 	}
 	static class UWidgetTextConfigExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetTextConfigExtension>();
 	}
 };
-static_assert(alignof(UWidgetTextConfigExtension) == 0x000008, "Wrong alignment on UWidgetTextConfigExtension");
-static_assert(sizeof(UWidgetTextConfigExtension) == 0x000038, "Wrong size on UWidgetTextConfigExtension");
-static_assert(offsetof(UWidgetTextConfigExtension, ClassExtension) == 0x000030, "Member 'UWidgetTextConfigExtension::ClassExtension' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetTextConfigExtension;
 
 // Class UMG.MovieScene2DTransformPropertySystem
 // 0x0000 (0x0060 - 0x0060)
@@ -1436,15 +1351,18 @@ class UMovieScene2DTransformPropertySystem final : public UMovieScenePropertySys
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene2DTransformPropertySystem">();
+		STATIC_CLASS_IMPL("MovieScene2DTransformPropertySystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene2DTransformPropertySystem")
 	}
 	static class UMovieScene2DTransformPropertySystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene2DTransformPropertySystem>();
 	}
 };
-static_assert(alignof(UMovieScene2DTransformPropertySystem) == 0x000008, "Wrong alignment on UMovieScene2DTransformPropertySystem");
-static_assert(sizeof(UMovieScene2DTransformPropertySystem) == 0x000060, "Wrong size on UMovieScene2DTransformPropertySystem");
+DUMPER7_ASSERTS_UMovieScene2DTransformPropertySystem;
 
 // Class UMG.MovieScene2DTransformSection
 // 0x0780 (0x0878 - 0x00F8)
@@ -1462,20 +1380,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene2DTransformSection">();
+		STATIC_CLASS_IMPL("MovieScene2DTransformSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene2DTransformSection")
 	}
 	static class UMovieScene2DTransformSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene2DTransformSection>();
 	}
 };
-static_assert(alignof(UMovieScene2DTransformSection) == 0x000008, "Wrong alignment on UMovieScene2DTransformSection");
-static_assert(sizeof(UMovieScene2DTransformSection) == 0x000878, "Wrong size on UMovieScene2DTransformSection");
-static_assert(offsetof(UMovieScene2DTransformSection, TransformMask) == 0x000100, "Member 'UMovieScene2DTransformSection::TransformMask' has a wrong offset!");
-static_assert(offsetof(UMovieScene2DTransformSection, Translation) == 0x000108, "Member 'UMovieScene2DTransformSection::Translation' has a wrong offset!");
-static_assert(offsetof(UMovieScene2DTransformSection, Rotation) == 0x000328, "Member 'UMovieScene2DTransformSection::Rotation' has a wrong offset!");
-static_assert(offsetof(UMovieScene2DTransformSection, Scale) == 0x000438, "Member 'UMovieScene2DTransformSection::Scale' has a wrong offset!");
-static_assert(offsetof(UMovieScene2DTransformSection, Shear) == 0x000658, "Member 'UMovieScene2DTransformSection::Shear' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieScene2DTransformSection;
 
 // Class UMG.WidgetBlueprintGeneratedClass
 // 0x0080 (0x0468 - 0x03E8)
@@ -1488,7 +1404,7 @@ public:
 	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDelegateRuntimeBinding>        Bindings;                                          // 0x0408(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UWidgetAnimation*>               Animations;                                        // 0x0418(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	TArray<struct FWidgetAnimationCachedState>    AnimationCachedStates;                             // 0x0428(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FWidgetAnimationCachedState>    AnimationCachedStates;                             // 0x0428(0x0010)(ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	TArray<class FName>                           NamedSlots;                                        // 0x0438(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FName>                           AvailableNamedSlots;                               // 0x0448(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FName>                           InstanceNamedSlots;                                // 0x0458(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
@@ -1499,23 +1415,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetBlueprintGeneratedClass">();
+		STATIC_CLASS_IMPL("WidgetBlueprintGeneratedClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetBlueprintGeneratedClass")
 	}
 	static class UWidgetBlueprintGeneratedClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetBlueprintGeneratedClass>();
 	}
 };
-static_assert(alignof(UWidgetBlueprintGeneratedClass) == 0x000008, "Wrong alignment on UWidgetBlueprintGeneratedClass");
-static_assert(sizeof(UWidgetBlueprintGeneratedClass) == 0x000468, "Wrong size on UWidgetBlueprintGeneratedClass");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, WidgetTree) == 0x0003E8, "Member 'UWidgetBlueprintGeneratedClass::WidgetTree' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, Extensions) == 0x0003F0, "Member 'UWidgetBlueprintGeneratedClass::Extensions' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, Bindings) == 0x000408, "Member 'UWidgetBlueprintGeneratedClass::Bindings' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, Animations) == 0x000418, "Member 'UWidgetBlueprintGeneratedClass::Animations' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, AnimationCachedStates) == 0x000428, "Member 'UWidgetBlueprintGeneratedClass::AnimationCachedStates' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, NamedSlots) == 0x000438, "Member 'UWidgetBlueprintGeneratedClass::NamedSlots' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, AvailableNamedSlots) == 0x000448, "Member 'UWidgetBlueprintGeneratedClass::AvailableNamedSlots' has a wrong offset!");
-static_assert(offsetof(UWidgetBlueprintGeneratedClass, InstanceNamedSlots) == 0x000458, "Member 'UWidgetBlueprintGeneratedClass::InstanceNamedSlots' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetBlueprintGeneratedClass;
 
 // Class UMG.MovieScene2DTransformTrack
 // 0x0000 (0x00D8 - 0x00D8)
@@ -1524,15 +1435,18 @@ class UMovieScene2DTransformTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene2DTransformTrack">();
+		STATIC_CLASS_IMPL("MovieScene2DTransformTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene2DTransformTrack")
 	}
 	static class UMovieScene2DTransformTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene2DTransformTrack>();
 	}
 };
-static_assert(alignof(UMovieScene2DTransformTrack) == 0x000008, "Wrong alignment on UMovieScene2DTransformTrack");
-static_assert(sizeof(UMovieScene2DTransformTrack) == 0x0000D8, "Wrong size on UMovieScene2DTransformTrack");
+DUMPER7_ASSERTS_UMovieScene2DTransformTrack;
 
 // Class UMG.MovieSceneMarginPropertySystem
 // 0x0000 (0x0060 - 0x0060)
@@ -1541,15 +1455,18 @@ class UMovieSceneMarginPropertySystem final : public UMovieScenePropertySystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneMarginPropertySystem">();
+		STATIC_CLASS_IMPL("MovieSceneMarginPropertySystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneMarginPropertySystem")
 	}
 	static class UMovieSceneMarginPropertySystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneMarginPropertySystem>();
 	}
 };
-static_assert(alignof(UMovieSceneMarginPropertySystem) == 0x000008, "Wrong alignment on UMovieSceneMarginPropertySystem");
-static_assert(sizeof(UMovieSceneMarginPropertySystem) == 0x000060, "Wrong size on UMovieSceneMarginPropertySystem");
+DUMPER7_ASSERTS_UMovieSceneMarginPropertySystem;
 
 // Class UMG.MovieSceneMarginSection
 // 0x0448 (0x0540 - 0x00F8)
@@ -1565,19 +1482,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneMarginSection">();
+		STATIC_CLASS_IMPL("MovieSceneMarginSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneMarginSection")
 	}
 	static class UMovieSceneMarginSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneMarginSection>();
 	}
 };
-static_assert(alignof(UMovieSceneMarginSection) == 0x000008, "Wrong alignment on UMovieSceneMarginSection");
-static_assert(sizeof(UMovieSceneMarginSection) == 0x000540, "Wrong size on UMovieSceneMarginSection");
-static_assert(offsetof(UMovieSceneMarginSection, TopCurve) == 0x000100, "Member 'UMovieSceneMarginSection::TopCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneMarginSection, LeftCurve) == 0x000210, "Member 'UMovieSceneMarginSection::LeftCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneMarginSection, RightCurve) == 0x000320, "Member 'UMovieSceneMarginSection::RightCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneMarginSection, BottomCurve) == 0x000430, "Member 'UMovieSceneMarginSection::BottomCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneMarginSection;
 
 // Class UMG.MovieSceneMarginTrack
 // 0x0000 (0x00D8 - 0x00D8)
@@ -1586,15 +1502,18 @@ class UMovieSceneMarginTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneMarginTrack">();
+		STATIC_CLASS_IMPL("MovieSceneMarginTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneMarginTrack")
 	}
 	static class UMovieSceneMarginTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneMarginTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneMarginTrack) == 0x000008, "Wrong alignment on UMovieSceneMarginTrack");
-static_assert(sizeof(UMovieSceneMarginTrack) == 0x0000D8, "Wrong size on UMovieSceneMarginTrack");
+DUMPER7_ASSERTS_UMovieSceneMarginTrack;
 
 // Class UMG.MovieSceneSlateChildSizePropertySystem
 // 0x0000 (0x0060 - 0x0060)
@@ -1603,15 +1522,18 @@ class UMovieSceneSlateChildSizePropertySystem final : public UMovieSceneProperty
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSlateChildSizePropertySystem">();
+		STATIC_CLASS_IMPL("MovieSceneSlateChildSizePropertySystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSlateChildSizePropertySystem")
 	}
 	static class UMovieSceneSlateChildSizePropertySystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSlateChildSizePropertySystem>();
 	}
 };
-static_assert(alignof(UMovieSceneSlateChildSizePropertySystem) == 0x000008, "Wrong alignment on UMovieSceneSlateChildSizePropertySystem");
-static_assert(sizeof(UMovieSceneSlateChildSizePropertySystem) == 0x000060, "Wrong size on UMovieSceneSlateChildSizePropertySystem");
+DUMPER7_ASSERTS_UMovieSceneSlateChildSizePropertySystem;
 
 // Class UMG.MovieSceneSlateChildSizeSection
 // 0x0220 (0x0318 - 0x00F8)
@@ -1625,17 +1547,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSlateChildSizeSection">();
+		STATIC_CLASS_IMPL("MovieSceneSlateChildSizeSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSlateChildSizeSection")
 	}
 	static class UMovieSceneSlateChildSizeSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSlateChildSizeSection>();
 	}
 };
-static_assert(alignof(UMovieSceneSlateChildSizeSection) == 0x000008, "Wrong alignment on UMovieSceneSlateChildSizeSection");
-static_assert(sizeof(UMovieSceneSlateChildSizeSection) == 0x000318, "Wrong size on UMovieSceneSlateChildSizeSection");
-static_assert(offsetof(UMovieSceneSlateChildSizeSection, SizeRuleCurve) == 0x000100, "Member 'UMovieSceneSlateChildSizeSection::SizeRuleCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSlateChildSizeSection, SizeValueCurve) == 0x000208, "Member 'UMovieSceneSlateChildSizeSection::SizeValueCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneSlateChildSizeSection;
 
 // Class UMG.SlateVectorArtData
 // 0x0048 (0x0078 - 0x0030)
@@ -1651,20 +1574,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateVectorArtData">();
+		STATIC_CLASS_IMPL("SlateVectorArtData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateVectorArtData")
 	}
 	static class USlateVectorArtData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateVectorArtData>();
 	}
 };
-static_assert(alignof(USlateVectorArtData) == 0x000008, "Wrong alignment on USlateVectorArtData");
-static_assert(sizeof(USlateVectorArtData) == 0x000078, "Wrong size on USlateVectorArtData");
-static_assert(offsetof(USlateVectorArtData, VertexData) == 0x000030, "Member 'USlateVectorArtData::VertexData' has a wrong offset!");
-static_assert(offsetof(USlateVectorArtData, IndexData) == 0x000040, "Member 'USlateVectorArtData::IndexData' has a wrong offset!");
-static_assert(offsetof(USlateVectorArtData, Material) == 0x000050, "Member 'USlateVectorArtData::Material' has a wrong offset!");
-static_assert(offsetof(USlateVectorArtData, ExtentMin) == 0x000058, "Member 'USlateVectorArtData::ExtentMin' has a wrong offset!");
-static_assert(offsetof(USlateVectorArtData, ExtentMax) == 0x000068, "Member 'USlateVectorArtData::ExtentMax' has a wrong offset!");
+DUMPER7_ASSERTS_USlateVectorArtData;
 
 // Class UMG.MovieSceneSlateChildSizeTrack
 // 0x0000 (0x00D8 - 0x00D8)
@@ -1673,15 +1594,18 @@ class UMovieSceneSlateChildSizeTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSlateChildSizeTrack">();
+		STATIC_CLASS_IMPL("MovieSceneSlateChildSizeTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSlateChildSizeTrack")
 	}
 	static class UMovieSceneSlateChildSizeTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSlateChildSizeTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneSlateChildSizeTrack) == 0x000008, "Wrong alignment on UMovieSceneSlateChildSizeTrack");
-static_assert(sizeof(UMovieSceneSlateChildSizeTrack) == 0x0000D8, "Wrong size on UMovieSceneSlateChildSizeTrack");
+DUMPER7_ASSERTS_UMovieSceneSlateChildSizeTrack;
 
 // Class UMG.MovieSceneWidgetMaterialSystem
 // 0x0160 (0x01A8 - 0x0048)
@@ -1693,15 +1617,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneWidgetMaterialSystem">();
+		STATIC_CLASS_IMPL("MovieSceneWidgetMaterialSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneWidgetMaterialSystem")
 	}
 	static class UMovieSceneWidgetMaterialSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneWidgetMaterialSystem>();
 	}
 };
-static_assert(alignof(UMovieSceneWidgetMaterialSystem) == 0x000008, "Wrong alignment on UMovieSceneWidgetMaterialSystem");
-static_assert(sizeof(UMovieSceneWidgetMaterialSystem) == 0x0001A8, "Wrong size on UMovieSceneWidgetMaterialSystem");
+DUMPER7_ASSERTS_UMovieSceneWidgetMaterialSystem;
 
 // Class UMG.MovieSceneWidgetMaterialTrack
 // 0x0030 (0x00E8 - 0x00B8)
@@ -1716,17 +1643,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneWidgetMaterialTrack">();
+		STATIC_CLASS_IMPL("MovieSceneWidgetMaterialTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneWidgetMaterialTrack")
 	}
 	static class UMovieSceneWidgetMaterialTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneWidgetMaterialTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneWidgetMaterialTrack) == 0x000008, "Wrong alignment on UMovieSceneWidgetMaterialTrack");
-static_assert(sizeof(UMovieSceneWidgetMaterialTrack) == 0x0000E8, "Wrong size on UMovieSceneWidgetMaterialTrack");
-static_assert(offsetof(UMovieSceneWidgetMaterialTrack, BrushPropertyNamePath) == 0x0000C8, "Member 'UMovieSceneWidgetMaterialTrack::BrushPropertyNamePath' has a wrong offset!");
-static_assert(offsetof(UMovieSceneWidgetMaterialTrack, TrackName) == 0x0000D8, "Member 'UMovieSceneWidgetMaterialTrack::TrackName' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneWidgetMaterialTrack;
 
 // Class UMG.UMGSequencePlayer
 // 0x0320 (0x0350 - 0x0030)
@@ -1751,17 +1679,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UMGSequencePlayer">();
+		STATIC_CLASS_IMPL("UMGSequencePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UMGSequencePlayer")
 	}
 	static class UUMGSequencePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUMGSequencePlayer>();
 	}
 };
-static_assert(alignof(UUMGSequencePlayer) == 0x000008, "Wrong alignment on UUMGSequencePlayer");
-static_assert(sizeof(UUMGSequencePlayer) == 0x000350, "Wrong size on UUMGSequencePlayer");
-static_assert(offsetof(UUMGSequencePlayer, Animation) == 0x000228, "Member 'UUMGSequencePlayer::Animation' has a wrong offset!");
-static_assert(offsetof(UUMGSequencePlayer, RootTemplateInstance) == 0x000238, "Member 'UUMGSequencePlayer::RootTemplateInstance' has a wrong offset!");
+DUMPER7_ASSERTS_UUMGSequencePlayer;
 
 // Class UMG.UMGSequenceTickManager
 // 0x00C0 (0x00F0 - 0x0030)
@@ -1775,17 +1704,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UMGSequenceTickManager">();
+		STATIC_CLASS_IMPL("UMGSequenceTickManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UMGSequenceTickManager")
 	}
 	static class UUMGSequenceTickManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUMGSequenceTickManager>();
 	}
 };
-static_assert(alignof(UUMGSequenceTickManager) == 0x000008, "Wrong alignment on UUMGSequenceTickManager");
-static_assert(sizeof(UUMGSequenceTickManager) == 0x0000F0, "Wrong size on UUMGSequenceTickManager");
-static_assert(offsetof(UUMGSequenceTickManager, WeakUserWidgetData) == 0x000030, "Member 'UUMGSequenceTickManager::WeakUserWidgetData' has a wrong offset!");
-static_assert(offsetof(UUMGSequenceTickManager, Linker) == 0x000080, "Member 'UUMGSequenceTickManager::Linker' has a wrong offset!");
+DUMPER7_ASSERTS_UUMGSequenceTickManager;
 
 // Class UMG.WidgetAnimation
 // 0x0030 (0x00A0 - 0x0070)
@@ -1813,20 +1743,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetAnimation">();
+		STATIC_CLASS_IMPL("WidgetAnimation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetAnimation")
 	}
 	static class UWidgetAnimation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetAnimation>();
 	}
 };
-static_assert(alignof(UWidgetAnimation) == 0x000008, "Wrong alignment on UWidgetAnimation");
-static_assert(sizeof(UWidgetAnimation) == 0x0000A0, "Wrong size on UWidgetAnimation");
-static_assert(offsetof(UWidgetAnimation, MovieScene) == 0x000070, "Member 'UWidgetAnimation::MovieScene' has a wrong offset!");
-static_assert(offsetof(UWidgetAnimation, AnimationBindings) == 0x000078, "Member 'UWidgetAnimation::AnimationBindings' has a wrong offset!");
-static_assert(offsetof(UWidgetAnimation, bPlayableWhenWorldPaused) == 0x000088, "Member 'UWidgetAnimation::bPlayableWhenWorldPaused' has a wrong offset!");
-static_assert(offsetof(UWidgetAnimation, bLegacyFinishOnStop) == 0x000089, "Member 'UWidgetAnimation::bLegacyFinishOnStop' has a wrong offset!");
-static_assert(offsetof(UWidgetAnimation, DisplayLabel) == 0x000090, "Member 'UWidgetAnimation::DisplayLabel' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetAnimation;
 
 // Class UMG.WidgetAnimationPlayCallbackProxy
 // 0x0018 (0x0048 - 0x0030)
@@ -1843,16 +1771,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetAnimationPlayCallbackProxy">();
+		STATIC_CLASS_IMPL("WidgetAnimationPlayCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetAnimationPlayCallbackProxy")
 	}
 	static class UWidgetAnimationPlayCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetAnimationPlayCallbackProxy>();
 	}
 };
-static_assert(alignof(UWidgetAnimationPlayCallbackProxy) == 0x000008, "Wrong alignment on UWidgetAnimationPlayCallbackProxy");
-static_assert(sizeof(UWidgetAnimationPlayCallbackProxy) == 0x000048, "Wrong size on UWidgetAnimationPlayCallbackProxy");
-static_assert(offsetof(UWidgetAnimationPlayCallbackProxy, Finished) == 0x000030, "Member 'UWidgetAnimationPlayCallbackProxy::Finished' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetAnimationPlayCallbackProxy;
 
 // Class UMG.PropertyBinding
 // 0x0050 (0x0080 - 0x0030)
@@ -1867,18 +1797,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyBinding">();
+		STATIC_CLASS_IMPL("PropertyBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyBinding")
 	}
 	static class UPropertyBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyBinding>();
 	}
 };
-static_assert(alignof(UPropertyBinding) == 0x000008, "Wrong alignment on UPropertyBinding");
-static_assert(sizeof(UPropertyBinding) == 0x000080, "Wrong size on UPropertyBinding");
-static_assert(offsetof(UPropertyBinding, SourceObject) == 0x000030, "Member 'UPropertyBinding::SourceObject' has a wrong offset!");
-static_assert(offsetof(UPropertyBinding, SourcePath) == 0x000038, "Member 'UPropertyBinding::SourcePath' has a wrong offset!");
-static_assert(offsetof(UPropertyBinding, DestinationProperty) == 0x000070, "Member 'UPropertyBinding::DestinationProperty' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyBinding;
 
 // Class UMG.BoolBinding
 // 0x0000 (0x0080 - 0x0080)
@@ -1890,15 +1820,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BoolBinding">();
+		STATIC_CLASS_IMPL("BoolBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BoolBinding")
 	}
 	static class UBoolBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBoolBinding>();
 	}
 };
-static_assert(alignof(UBoolBinding) == 0x000008, "Wrong alignment on UBoolBinding");
-static_assert(sizeof(UBoolBinding) == 0x000080, "Wrong size on UBoolBinding");
+DUMPER7_ASSERTS_UBoolBinding;
 
 // Class UMG.BrushBinding
 // 0x0008 (0x0088 - 0x0080)
@@ -1913,15 +1846,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BrushBinding">();
+		STATIC_CLASS_IMPL("BrushBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BrushBinding")
 	}
 	static class UBrushBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBrushBinding>();
 	}
 };
-static_assert(alignof(UBrushBinding) == 0x000008, "Wrong alignment on UBrushBinding");
-static_assert(sizeof(UBrushBinding) == 0x000088, "Wrong size on UBrushBinding");
+DUMPER7_ASSERTS_UBrushBinding;
 
 // Class UMG.CheckedStateBinding
 // 0x0008 (0x0088 - 0x0080)
@@ -1936,15 +1872,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CheckedStateBinding">();
+		STATIC_CLASS_IMPL("CheckedStateBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckedStateBinding")
 	}
 	static class UCheckedStateBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCheckedStateBinding>();
 	}
 };
-static_assert(alignof(UCheckedStateBinding) == 0x000008, "Wrong alignment on UCheckedStateBinding");
-static_assert(sizeof(UCheckedStateBinding) == 0x000088, "Wrong size on UCheckedStateBinding");
+DUMPER7_ASSERTS_UCheckedStateBinding;
 
 // Class UMG.ColorBinding
 // 0x0008 (0x0088 - 0x0080)
@@ -1960,15 +1899,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ColorBinding">();
+		STATIC_CLASS_IMPL("ColorBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ColorBinding")
 	}
 	static class UColorBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UColorBinding>();
 	}
 };
-static_assert(alignof(UColorBinding) == 0x000008, "Wrong alignment on UColorBinding");
-static_assert(sizeof(UColorBinding) == 0x000088, "Wrong size on UColorBinding");
+DUMPER7_ASSERTS_UColorBinding;
 
 // Class UMG.FloatBinding
 // 0x0000 (0x0080 - 0x0080)
@@ -1980,15 +1922,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FloatBinding">();
+		STATIC_CLASS_IMPL("FloatBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloatBinding")
 	}
 	static class UFloatBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFloatBinding>();
 	}
 };
-static_assert(alignof(UFloatBinding) == 0x000008, "Wrong alignment on UFloatBinding");
-static_assert(sizeof(UFloatBinding) == 0x000080, "Wrong size on UFloatBinding");
+DUMPER7_ASSERTS_UFloatBinding;
 
 // Class UMG.Int32Binding
 // 0x0000 (0x0080 - 0x0080)
@@ -2000,15 +1945,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Int32Binding">();
+		STATIC_CLASS_IMPL("Int32Binding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Int32Binding")
 	}
 	static class UInt32Binding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInt32Binding>();
 	}
 };
-static_assert(alignof(UInt32Binding) == 0x000008, "Wrong alignment on UInt32Binding");
-static_assert(sizeof(UInt32Binding) == 0x000080, "Wrong size on UInt32Binding");
+DUMPER7_ASSERTS_UInt32Binding;
 
 // Class UMG.MouseCursorBinding
 // 0x0000 (0x0080 - 0x0080)
@@ -2020,15 +1968,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MouseCursorBinding">();
+		STATIC_CLASS_IMPL("MouseCursorBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MouseCursorBinding")
 	}
 	static class UMouseCursorBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMouseCursorBinding>();
 	}
 };
-static_assert(alignof(UMouseCursorBinding) == 0x000008, "Wrong alignment on UMouseCursorBinding");
-static_assert(sizeof(UMouseCursorBinding) == 0x000080, "Wrong size on UMouseCursorBinding");
+DUMPER7_ASSERTS_UMouseCursorBinding;
 
 // Class UMG.WidgetBinaryStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2037,15 +1988,18 @@ class UWidgetBinaryStateRegistration : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetBinaryStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetBinaryStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetBinaryStateRegistration")
 	}
 	static class UWidgetBinaryStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetBinaryStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetBinaryStateRegistration) == 0x000008, "Wrong alignment on UWidgetBinaryStateRegistration");
-static_assert(sizeof(UWidgetBinaryStateRegistration) == 0x000030, "Wrong size on UWidgetBinaryStateRegistration");
+DUMPER7_ASSERTS_UWidgetBinaryStateRegistration;
 
 // Class UMG.WidgetHoveredStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2054,15 +2008,18 @@ class UWidgetHoveredStateRegistration final : public UWidgetBinaryStateRegistrat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetHoveredStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetHoveredStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetHoveredStateRegistration")
 	}
 	static class UWidgetHoveredStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetHoveredStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetHoveredStateRegistration) == 0x000008, "Wrong alignment on UWidgetHoveredStateRegistration");
-static_assert(sizeof(UWidgetHoveredStateRegistration) == 0x000030, "Wrong size on UWidgetHoveredStateRegistration");
+DUMPER7_ASSERTS_UWidgetHoveredStateRegistration;
 
 // Class UMG.WidgetPressedStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2071,15 +2028,18 @@ class UWidgetPressedStateRegistration final : public UWidgetBinaryStateRegistrat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetPressedStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetPressedStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetPressedStateRegistration")
 	}
 	static class UWidgetPressedStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetPressedStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetPressedStateRegistration) == 0x000008, "Wrong alignment on UWidgetPressedStateRegistration");
-static_assert(sizeof(UWidgetPressedStateRegistration) == 0x000030, "Wrong size on UWidgetPressedStateRegistration");
+DUMPER7_ASSERTS_UWidgetPressedStateRegistration;
 
 // Class UMG.WidgetDisabledStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2088,15 +2048,18 @@ class UWidgetDisabledStateRegistration final : public UWidgetBinaryStateRegistra
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetDisabledStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetDisabledStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetDisabledStateRegistration")
 	}
 	static class UWidgetDisabledStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetDisabledStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetDisabledStateRegistration) == 0x000008, "Wrong alignment on UWidgetDisabledStateRegistration");
-static_assert(sizeof(UWidgetDisabledStateRegistration) == 0x000030, "Wrong size on UWidgetDisabledStateRegistration");
+DUMPER7_ASSERTS_UWidgetDisabledStateRegistration;
 
 // Class UMG.WidgetSelectedStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2105,15 +2068,18 @@ class UWidgetSelectedStateRegistration final : public UWidgetBinaryStateRegistra
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetSelectedStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetSelectedStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetSelectedStateRegistration")
 	}
 	static class UWidgetSelectedStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetSelectedStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetSelectedStateRegistration) == 0x000008, "Wrong alignment on UWidgetSelectedStateRegistration");
-static_assert(sizeof(UWidgetSelectedStateRegistration) == 0x000030, "Wrong size on UWidgetSelectedStateRegistration");
+DUMPER7_ASSERTS_UWidgetSelectedStateRegistration;
 
 // Class UMG.WidgetEnumStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2122,15 +2088,18 @@ class UWidgetEnumStateRegistration : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetEnumStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetEnumStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetEnumStateRegistration")
 	}
 	static class UWidgetEnumStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetEnumStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetEnumStateRegistration) == 0x000008, "Wrong alignment on UWidgetEnumStateRegistration");
-static_assert(sizeof(UWidgetEnumStateRegistration) == 0x000030, "Wrong size on UWidgetEnumStateRegistration");
+DUMPER7_ASSERTS_UWidgetEnumStateRegistration;
 
 // Class UMG.WidgetStateSettings
 // 0x07F0 (0x0838 - 0x0048)
@@ -2142,15 +2111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetStateSettings">();
+		STATIC_CLASS_IMPL("WidgetStateSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetStateSettings")
 	}
 	static class UWidgetStateSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetStateSettings>();
 	}
 };
-static_assert(alignof(UWidgetStateSettings) == 0x000008, "Wrong alignment on UWidgetStateSettings");
-static_assert(sizeof(UWidgetStateSettings) == 0x000838, "Wrong size on UWidgetStateSettings");
+DUMPER7_ASSERTS_UWidgetStateSettings;
 
 // Class UMG.TextBinding
 // 0x0008 (0x0088 - 0x0080)
@@ -2166,15 +2138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextBinding">();
+		STATIC_CLASS_IMPL("TextBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextBinding")
 	}
 	static class UTextBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextBinding>();
 	}
 };
-static_assert(alignof(UTextBinding) == 0x000008, "Wrong alignment on UTextBinding");
-static_assert(sizeof(UTextBinding) == 0x000088, "Wrong size on UTextBinding");
+DUMPER7_ASSERTS_UTextBinding;
 
 // Class UMG.VisibilityBinding
 // 0x0000 (0x0080 - 0x0080)
@@ -2186,15 +2161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VisibilityBinding">();
+		STATIC_CLASS_IMPL("VisibilityBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VisibilityBinding")
 	}
 	static class UVisibilityBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVisibilityBinding>();
 	}
 };
-static_assert(alignof(UVisibilityBinding) == 0x000008, "Wrong alignment on UVisibilityBinding");
-static_assert(sizeof(UVisibilityBinding) == 0x000080, "Wrong size on UVisibilityBinding");
+DUMPER7_ASSERTS_UVisibilityBinding;
 
 // Class UMG.WidgetBinding
 // 0x0000 (0x0080 - 0x0080)
@@ -2206,15 +2184,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetBinding">();
+		STATIC_CLASS_IMPL("WidgetBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetBinding")
 	}
 	static class UWidgetBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetBinding>();
 	}
 };
-static_assert(alignof(UWidgetBinding) == 0x000008, "Wrong alignment on UWidgetBinding");
-static_assert(sizeof(UWidgetBinding) == 0x000080, "Wrong size on UWidgetBinding");
+DUMPER7_ASSERTS_UWidgetBinding;
 
 // Class UMG.AsyncTaskDownloadImage
 // 0x0020 (0x0058 - 0x0038)
@@ -2230,17 +2211,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AsyncTaskDownloadImage">();
+		STATIC_CLASS_IMPL("AsyncTaskDownloadImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AsyncTaskDownloadImage")
 	}
 	static class UAsyncTaskDownloadImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAsyncTaskDownloadImage>();
 	}
 };
-static_assert(alignof(UAsyncTaskDownloadImage) == 0x000008, "Wrong alignment on UAsyncTaskDownloadImage");
-static_assert(sizeof(UAsyncTaskDownloadImage) == 0x000058, "Wrong size on UAsyncTaskDownloadImage");
-static_assert(offsetof(UAsyncTaskDownloadImage, OnSuccess) == 0x000038, "Member 'UAsyncTaskDownloadImage::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UAsyncTaskDownloadImage, OnFail) == 0x000048, "Member 'UAsyncTaskDownloadImage::OnFail' has a wrong offset!");
+DUMPER7_ASSERTS_UAsyncTaskDownloadImage;
 
 // Class UMG.UserObjectListEntryLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -2252,15 +2234,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UserObjectListEntryLibrary">();
+		STATIC_CLASS_IMPL("UserObjectListEntryLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserObjectListEntryLibrary")
 	}
 	static class UUserObjectListEntryLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserObjectListEntryLibrary>();
 	}
 };
-static_assert(alignof(UUserObjectListEntryLibrary) == 0x000008, "Wrong alignment on UUserObjectListEntryLibrary");
-static_assert(sizeof(UUserObjectListEntryLibrary) == 0x000030, "Wrong size on UUserObjectListEntryLibrary");
+DUMPER7_ASSERTS_UUserObjectListEntryLibrary;
 
 // Class UMG.PanelWidget
 // 0x0048 (0x0200 - 0x01B8)
@@ -2291,19 +2276,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PanelWidget">();
+		STATIC_CLASS_IMPL("PanelWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PanelWidget")
 	}
 	static class UPanelWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPanelWidget>();
 	}
 };
-static_assert(alignof(UPanelWidget) == 0x000008, "Wrong alignment on UPanelWidget");
-static_assert(sizeof(UPanelWidget) == 0x000200, "Wrong size on UPanelWidget");
-static_assert(offsetof(UPanelWidget, Slots) == 0x0001B8, "Member 'UPanelWidget::Slots' has a wrong offset!");
-static_assert(offsetof(UPanelWidget, OnSlotAddedDelegate) == 0x0001C8, "Member 'UPanelWidget::OnSlotAddedDelegate' has a wrong offset!");
-static_assert(offsetof(UPanelWidget, OnPreSlotRemovedDelegate) == 0x0001D8, "Member 'UPanelWidget::OnPreSlotRemovedDelegate' has a wrong offset!");
-static_assert(offsetof(UPanelWidget, OnPostSlotRemovedDelegate) == 0x0001E8, "Member 'UPanelWidget::OnPostSlotRemovedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPanelWidget;
 
 // Class UMG.ContentWidget
 // 0x0000 (0x0200 - 0x0200)
@@ -2318,15 +2302,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ContentWidget">();
+		STATIC_CLASS_IMPL("ContentWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContentWidget")
 	}
 	static class UContentWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UContentWidget>();
 	}
 };
-static_assert(alignof(UContentWidget) == 0x000008, "Wrong alignment on UContentWidget");
-static_assert(sizeof(UContentWidget) == 0x000200, "Wrong size on UContentWidget");
+DUMPER7_ASSERTS_UContentWidget;
 
 // Class UMG.BackgroundBlur
 // 0x0200 (0x0400 - 0x0200)
@@ -2361,25 +2348,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BackgroundBlur">();
+		STATIC_CLASS_IMPL("BackgroundBlur")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BackgroundBlur")
 	}
 	static class UBackgroundBlur* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBackgroundBlur>();
 	}
 };
-static_assert(alignof(UBackgroundBlur) == 0x000010, "Wrong alignment on UBackgroundBlur");
-static_assert(sizeof(UBackgroundBlur) == 0x000400, "Wrong size on UBackgroundBlur");
-static_assert(offsetof(UBackgroundBlur, Padding) == 0x000200, "Member 'UBackgroundBlur::Padding' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, HorizontalAlignment) == 0x000210, "Member 'UBackgroundBlur::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, VerticalAlignment) == 0x000211, "Member 'UBackgroundBlur::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, bApplyAlphaToBlur) == 0x000212, "Member 'UBackgroundBlur::bApplyAlphaToBlur' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, BlurMaskBrush) == 0x000220, "Member 'UBackgroundBlur::BlurMaskBrush' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, BlurStrength) == 0x0002F0, "Member 'UBackgroundBlur::BlurStrength' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, bOverrideAutoRadiusCalculation) == 0x0002F4, "Member 'UBackgroundBlur::bOverrideAutoRadiusCalculation' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, BlurRadius) == 0x0002F8, "Member 'UBackgroundBlur::BlurRadius' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, CornerRadius) == 0x000300, "Member 'UBackgroundBlur::CornerRadius' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlur, LowQualityFallbackBrush) == 0x000320, "Member 'UBackgroundBlur::LowQualityFallbackBrush' has a wrong offset!");
+DUMPER7_ASSERTS_UBackgroundBlur;
 
 // Class UMG.PanelSlot
 // 0x0010 (0x0040 - 0x0030)
@@ -2392,17 +2372,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PanelSlot">();
+		STATIC_CLASS_IMPL("PanelSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PanelSlot")
 	}
 	static class UPanelSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPanelSlot>();
 	}
 };
-static_assert(alignof(UPanelSlot) == 0x000008, "Wrong alignment on UPanelSlot");
-static_assert(sizeof(UPanelSlot) == 0x000040, "Wrong size on UPanelSlot");
-static_assert(offsetof(UPanelSlot, Parent) == 0x000030, "Member 'UPanelSlot::Parent' has a wrong offset!");
-static_assert(offsetof(UPanelSlot, Content) == 0x000038, "Member 'UPanelSlot::Content' has a wrong offset!");
+DUMPER7_ASSERTS_UPanelSlot;
 
 // Class UMG.BackgroundBlurSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -2422,18 +2403,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BackgroundBlurSlot">();
+		STATIC_CLASS_IMPL("BackgroundBlurSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BackgroundBlurSlot")
 	}
 	static class UBackgroundBlurSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBackgroundBlurSlot>();
 	}
 };
-static_assert(alignof(UBackgroundBlurSlot) == 0x000008, "Wrong alignment on UBackgroundBlurSlot");
-static_assert(sizeof(UBackgroundBlurSlot) == 0x000068, "Wrong size on UBackgroundBlurSlot");
-static_assert(offsetof(UBackgroundBlurSlot, Padding) == 0x000040, "Member 'UBackgroundBlurSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlurSlot, HorizontalAlignment) == 0x000050, "Member 'UBackgroundBlurSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UBackgroundBlurSlot, VerticalAlignment) == 0x000051, "Member 'UBackgroundBlurSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UBackgroundBlurSlot;
 
 // Class UMG.Border
 // 0x01C0 (0x03C0 - 0x0200)
@@ -2478,30 +2459,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Border">();
+		STATIC_CLASS_IMPL("Border")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border")
 	}
 	static class UBorder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder>();
 	}
 };
-static_assert(alignof(UBorder) == 0x000010, "Wrong alignment on UBorder");
-static_assert(sizeof(UBorder) == 0x0003C0, "Wrong size on UBorder");
-static_assert(offsetof(UBorder, HorizontalAlignment) == 0x000200, "Member 'UBorder::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UBorder, VerticalAlignment) == 0x000201, "Member 'UBorder::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UBorder, ContentColorAndOpacity) == 0x000204, "Member 'UBorder::ContentColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UBorder, ContentColorAndOpacityDelegate) == 0x000214, "Member 'UBorder::ContentColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UBorder, Padding) == 0x000228, "Member 'UBorder::Padding' has a wrong offset!");
-static_assert(offsetof(UBorder, Background) == 0x000240, "Member 'UBorder::Background' has a wrong offset!");
-static_assert(offsetof(UBorder, BackgroundDelegate) == 0x000310, "Member 'UBorder::BackgroundDelegate' has a wrong offset!");
-static_assert(offsetof(UBorder, BrushColor) == 0x000324, "Member 'UBorder::BrushColor' has a wrong offset!");
-static_assert(offsetof(UBorder, BrushColorDelegate) == 0x000334, "Member 'UBorder::BrushColorDelegate' has a wrong offset!");
-static_assert(offsetof(UBorder, DesiredSizeScale) == 0x000348, "Member 'UBorder::DesiredSizeScale' has a wrong offset!");
-static_assert(offsetof(UBorder, bFlipForRightToLeftFlowDirection) == 0x000358, "Member 'UBorder::bFlipForRightToLeftFlowDirection' has a wrong offset!");
-static_assert(offsetof(UBorder, OnMouseButtonDownEvent) == 0x00035C, "Member 'UBorder::OnMouseButtonDownEvent' has a wrong offset!");
-static_assert(offsetof(UBorder, OnMouseButtonUpEvent) == 0x000370, "Member 'UBorder::OnMouseButtonUpEvent' has a wrong offset!");
-static_assert(offsetof(UBorder, OnMouseMoveEvent) == 0x000384, "Member 'UBorder::OnMouseMoveEvent' has a wrong offset!");
-static_assert(offsetof(UBorder, OnMouseDoubleClickEvent) == 0x000398, "Member 'UBorder::OnMouseDoubleClickEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UBorder;
 
 // Class UMG.BorderSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -2521,18 +2490,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BorderSlot">();
+		STATIC_CLASS_IMPL("BorderSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BorderSlot")
 	}
 	static class UBorderSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorderSlot>();
 	}
 };
-static_assert(alignof(UBorderSlot) == 0x000008, "Wrong alignment on UBorderSlot");
-static_assert(sizeof(UBorderSlot) == 0x000068, "Wrong size on UBorderSlot");
-static_assert(offsetof(UBorderSlot, Padding) == 0x000040, "Member 'UBorderSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UBorderSlot, HorizontalAlignment) == 0x000050, "Member 'UBorderSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UBorderSlot, VerticalAlignment) == 0x000051, "Member 'UBorderSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UBorderSlot;
 
 // Class UMG.Button
 // 0x04D0 (0x06D0 - 0x0200)
@@ -2581,7 +2550,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Button">();
+		STATIC_CLASS_IMPL("Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Button")
 	}
 	static class UButton* GetDefaultObj()
 	{
@@ -2589,28 +2562,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UButton) == 0x000010, "Wrong alignment on UButton");
-static_assert(sizeof(UButton) == 0x0006D0, "Wrong size on UButton");
-static_assert(offsetof(UButton, WidgetStyle) == 0x000200, "Member 'UButton::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UButton, ColorAndOpacity) == 0x000600, "Member 'UButton::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UButton, BackgroundColor) == 0x000610, "Member 'UButton::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(UButton, ClickMethod) == 0x000620, "Member 'UButton::ClickMethod' has a wrong offset!");
-static_assert(offsetof(UButton, TouchMethod) == 0x000621, "Member 'UButton::TouchMethod' has a wrong offset!");
-static_assert(offsetof(UButton, PressMethod) == 0x000622, "Member 'UButton::PressMethod' has a wrong offset!");
-static_assert(offsetof(UButton, IsFocusable) == 0x000623, "Member 'UButton::IsFocusable' has a wrong offset!");
-static_assert(offsetof(UButton, IsNestedFocusNavigation) == 0x000624, "Member 'UButton::IsNestedFocusNavigation' has a wrong offset!");
-static_assert(offsetof(UButton, ShowHoverCursor) == 0x000625, "Member 'UButton::ShowHoverCursor' has a wrong offset!");
-static_assert(offsetof(UButton, bEnableRightClick) == 0x000626, "Member 'UButton::bEnableRightClick' has a wrong offset!");
-static_assert(offsetof(UButton, bEnableDoubleClick) == 0x000627, "Member 'UButton::bEnableDoubleClick' has a wrong offset!");
-static_assert(offsetof(UButton, OnClicked) == 0x000628, "Member 'UButton::OnClicked' has a wrong offset!");
-static_assert(offsetof(UButton, OnRightClicked) == 0x000638, "Member 'UButton::OnRightClicked' has a wrong offset!");
-static_assert(offsetof(UButton, OnDoubleClicked) == 0x000648, "Member 'UButton::OnDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UButton, OnPressed) == 0x000658, "Member 'UButton::OnPressed' has a wrong offset!");
-static_assert(offsetof(UButton, OnReleased) == 0x000668, "Member 'UButton::OnReleased' has a wrong offset!");
-static_assert(offsetof(UButton, OnHovered) == 0x000678, "Member 'UButton::OnHovered' has a wrong offset!");
-static_assert(offsetof(UButton, OnUnhovered) == 0x000688, "Member 'UButton::OnUnhovered' has a wrong offset!");
-static_assert(offsetof(UButton, OnLeftAnalogMove) == 0x000698, "Member 'UButton::OnLeftAnalogMove' has a wrong offset!");
-static_assert(offsetof(UButton, OnRightAnalogMove) == 0x0006A8, "Member 'UButton::OnRightAnalogMove' has a wrong offset!");
+DUMPER7_ASSERTS_UButton;
 
 // Class UMG.ButtonSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -2630,18 +2582,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ButtonSlot">();
+		STATIC_CLASS_IMPL("ButtonSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonSlot")
 	}
 	static class UButtonSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonSlot>();
 	}
 };
-static_assert(alignof(UButtonSlot) == 0x000008, "Wrong alignment on UButtonSlot");
-static_assert(sizeof(UButtonSlot) == 0x000068, "Wrong size on UButtonSlot");
-static_assert(offsetof(UButtonSlot, Padding) == 0x000040, "Member 'UButtonSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UButtonSlot, HorizontalAlignment) == 0x000050, "Member 'UButtonSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UButtonSlot, VerticalAlignment) == 0x000051, "Member 'UButtonSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UButtonSlot;
 
 // Class UMG.CanvasPanel
 // 0x0010 (0x0210 - 0x0200)
@@ -2656,15 +2608,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CanvasPanel">();
+		STATIC_CLASS_IMPL("CanvasPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CanvasPanel")
 	}
 	static class UCanvasPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCanvasPanel>();
 	}
 };
-static_assert(alignof(UCanvasPanel) == 0x000008, "Wrong alignment on UCanvasPanel");
-static_assert(sizeof(UCanvasPanel) == 0x000210, "Wrong size on UCanvasPanel");
+DUMPER7_ASSERTS_UCanvasPanel;
 
 // Class UMG.CanvasPanelSlot
 // 0x0058 (0x0098 - 0x0040)
@@ -2704,20 +2659,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CanvasPanelSlot">();
+		STATIC_CLASS_IMPL("CanvasPanelSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CanvasPanelSlot")
 	}
 	static class UCanvasPanelSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCanvasPanelSlot>();
 	}
 };
-static_assert(alignof(UCanvasPanelSlot) == 0x000008, "Wrong alignment on UCanvasPanelSlot");
-static_assert(sizeof(UCanvasPanelSlot) == 0x000098, "Wrong size on UCanvasPanelSlot");
-static_assert(offsetof(UCanvasPanelSlot, LayoutData) == 0x000040, "Member 'UCanvasPanelSlot::LayoutData' has a wrong offset!");
-static_assert(offsetof(UCanvasPanelSlot, bAutoSize) == 0x000080, "Member 'UCanvasPanelSlot::bAutoSize' has a wrong offset!");
-static_assert(offsetof(UCanvasPanelSlot, ZOrder) == 0x000084, "Member 'UCanvasPanelSlot::ZOrder' has a wrong offset!");
-static_assert(offsetof(UCanvasPanelSlot, bNeedCustomLayerPadding) == 0x000088, "Member 'UCanvasPanelSlot::bNeedCustomLayerPadding' has a wrong offset!");
-static_assert(offsetof(UCanvasPanelSlot, CustomLayerPadding) == 0x00008C, "Member 'UCanvasPanelSlot::CustomLayerPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UCanvasPanelSlot;
 
 // Class UMG.CheckBox
 // 0x0B30 (0x0D30 - 0x0200)
@@ -2752,24 +2705,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CheckBox">();
+		STATIC_CLASS_IMPL("CheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckBox")
 	}
 	static class UCheckBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCheckBox>();
 	}
 };
-static_assert(alignof(UCheckBox) == 0x000010, "Wrong alignment on UCheckBox");
-static_assert(sizeof(UCheckBox) == 0x000D30, "Wrong size on UCheckBox");
-static_assert(offsetof(UCheckBox, CheckedState) == 0x000200, "Member 'UCheckBox::CheckedState' has a wrong offset!");
-static_assert(offsetof(UCheckBox, CheckedStateDelegate) == 0x000204, "Member 'UCheckBox::CheckedStateDelegate' has a wrong offset!");
-static_assert(offsetof(UCheckBox, WidgetStyle) == 0x000220, "Member 'UCheckBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UCheckBox, HorizontalAlignment) == 0x000D00, "Member 'UCheckBox::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UCheckBox, ClickMethod) == 0x000D01, "Member 'UCheckBox::ClickMethod' has a wrong offset!");
-static_assert(offsetof(UCheckBox, TouchMethod) == 0x000D02, "Member 'UCheckBox::TouchMethod' has a wrong offset!");
-static_assert(offsetof(UCheckBox, PressMethod) == 0x000D03, "Member 'UCheckBox::PressMethod' has a wrong offset!");
-static_assert(offsetof(UCheckBox, IsFocusable) == 0x000D04, "Member 'UCheckBox::IsFocusable' has a wrong offset!");
-static_assert(offsetof(UCheckBox, OnCheckStateChanged) == 0x000D08, "Member 'UCheckBox::OnCheckStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UCheckBox;
 
 // Class UMG.WidgetCheckedStateRegistration
 // 0x0000 (0x0030 - 0x0030)
@@ -2778,15 +2725,18 @@ class UWidgetCheckedStateRegistration final : public UWidgetEnumStateRegistratio
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetCheckedStateRegistration">();
+		STATIC_CLASS_IMPL("WidgetCheckedStateRegistration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetCheckedStateRegistration")
 	}
 	static class UWidgetCheckedStateRegistration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetCheckedStateRegistration>();
 	}
 };
-static_assert(alignof(UWidgetCheckedStateRegistration) == 0x000008, "Wrong alignment on UWidgetCheckedStateRegistration");
-static_assert(sizeof(UWidgetCheckedStateRegistration) == 0x000030, "Wrong size on UWidgetCheckedStateRegistration");
+DUMPER7_ASSERTS_UWidgetCheckedStateRegistration;
 
 // Class UMG.CircularThrobber
 // 0x0108 (0x02C0 - 0x01B8)
@@ -2809,20 +2759,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CircularThrobber">();
+		STATIC_CLASS_IMPL("CircularThrobber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CircularThrobber")
 	}
 	static class UCircularThrobber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCircularThrobber>();
 	}
 };
-static_assert(alignof(UCircularThrobber) == 0x000010, "Wrong alignment on UCircularThrobber");
-static_assert(sizeof(UCircularThrobber) == 0x0002C0, "Wrong size on UCircularThrobber");
-static_assert(offsetof(UCircularThrobber, NumberOfPieces) == 0x0001B8, "Member 'UCircularThrobber::NumberOfPieces' has a wrong offset!");
-static_assert(offsetof(UCircularThrobber, Period) == 0x0001BC, "Member 'UCircularThrobber::Period' has a wrong offset!");
-static_assert(offsetof(UCircularThrobber, Radius) == 0x0001C0, "Member 'UCircularThrobber::Radius' has a wrong offset!");
-static_assert(offsetof(UCircularThrobber, Image) == 0x0001D0, "Member 'UCircularThrobber::Image' has a wrong offset!");
-static_assert(offsetof(UCircularThrobber, bEnableRadius) == 0x0002A0, "Member 'UCircularThrobber::bEnableRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UCircularThrobber;
 
 // Class UMG.ComboBox
 // 0x07B8 (0x0970 - 0x01B8)
@@ -2839,19 +2787,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComboBox">();
+		STATIC_CLASS_IMPL("ComboBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComboBox")
 	}
 	static class UComboBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComboBox>();
 	}
 };
-static_assert(alignof(UComboBox) == 0x000010, "Wrong alignment on UComboBox");
-static_assert(sizeof(UComboBox) == 0x000970, "Wrong size on UComboBox");
-static_assert(offsetof(UComboBox, ScrollBarStyle) == 0x0001C0, "Member 'UComboBox::ScrollBarStyle' has a wrong offset!");
-static_assert(offsetof(UComboBox, Items) == 0x000930, "Member 'UComboBox::Items' has a wrong offset!");
-static_assert(offsetof(UComboBox, OnGenerateWidgetEvent) == 0x000940, "Member 'UComboBox::OnGenerateWidgetEvent' has a wrong offset!");
-static_assert(offsetof(UComboBox, bIsFocusable) == 0x000954, "Member 'UComboBox::bIsFocusable' has a wrong offset!");
+DUMPER7_ASSERTS_UComboBox;
 
 // Class UMG.ComboBoxKey
 // 0x1C08 (0x1DC0 - 0x01B8)
@@ -2891,30 +2838,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComboBoxKey">();
+		STATIC_CLASS_IMPL("ComboBoxKey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComboBoxKey")
 	}
 	static class UComboBoxKey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComboBoxKey>();
 	}
 };
-static_assert(alignof(UComboBoxKey) == 0x000010, "Wrong alignment on UComboBoxKey");
-static_assert(sizeof(UComboBoxKey) == 0x001DC0, "Wrong size on UComboBoxKey");
-static_assert(offsetof(UComboBoxKey, Options) == 0x0001B8, "Member 'UComboBoxKey::Options' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, SelectedOption) == 0x0001C8, "Member 'UComboBoxKey::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, WidgetStyle) == 0x0001E0, "Member 'UComboBoxKey::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, ItemStyle) == 0x000860, "Member 'UComboBoxKey::ItemStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, ScrollBarStyle) == 0x0015B0, "Member 'UComboBoxKey::ScrollBarStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, ForegroundColor) == 0x001D20, "Member 'UComboBoxKey::ForegroundColor' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, ContentPadding) == 0x001D34, "Member 'UComboBoxKey::ContentPadding' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, MaxListHeight) == 0x001D44, "Member 'UComboBoxKey::MaxListHeight' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, bHasDownArrow) == 0x001D48, "Member 'UComboBoxKey::bHasDownArrow' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, bEnableGamepadNavigationMode) == 0x001D49, "Member 'UComboBoxKey::bEnableGamepadNavigationMode' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, bIsFocusable) == 0x001D4A, "Member 'UComboBoxKey::bIsFocusable' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, OnGenerateContentWidget) == 0x001D4C, "Member 'UComboBoxKey::OnGenerateContentWidget' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, OnGenerateItemWidget) == 0x001D60, "Member 'UComboBoxKey::OnGenerateItemWidget' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, OnSelectionChanged) == 0x001D78, "Member 'UComboBoxKey::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UComboBoxKey, OnOpening) == 0x001D88, "Member 'UComboBoxKey::OnOpening' has a wrong offset!");
+DUMPER7_ASSERTS_UComboBoxKey;
 
 // Class UMG.ComboBoxString
 // 0x1C88 (0x1E40 - 0x01B8)
@@ -2961,30 +2896,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComboBoxString">();
+		STATIC_CLASS_IMPL("ComboBoxString")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComboBoxString")
 	}
 	static class UComboBoxString* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComboBoxString>();
 	}
 };
-static_assert(alignof(UComboBoxString) == 0x000010, "Wrong alignment on UComboBoxString");
-static_assert(sizeof(UComboBoxString) == 0x001E40, "Wrong size on UComboBoxString");
-static_assert(offsetof(UComboBoxString, DefaultOptions) == 0x0001B8, "Member 'UComboBoxString::DefaultOptions' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, SelectedOption) == 0x0001C8, "Member 'UComboBoxString::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, WidgetStyle) == 0x0001E0, "Member 'UComboBoxString::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, ItemStyle) == 0x000860, "Member 'UComboBoxString::ItemStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, ScrollBarStyle) == 0x0015B0, "Member 'UComboBoxString::ScrollBarStyle' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, ContentPadding) == 0x001D20, "Member 'UComboBoxString::ContentPadding' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, MaxListHeight) == 0x001D30, "Member 'UComboBoxString::MaxListHeight' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, HasDownArrow) == 0x001D34, "Member 'UComboBoxString::HasDownArrow' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, EnableGamepadNavigationMode) == 0x001D35, "Member 'UComboBoxString::EnableGamepadNavigationMode' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, Font) == 0x001D38, "Member 'UComboBoxString::Font' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, ForegroundColor) == 0x001DA0, "Member 'UComboBoxString::ForegroundColor' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, bIsFocusable) == 0x001DB4, "Member 'UComboBoxString::bIsFocusable' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, OnGenerateWidgetEvent) == 0x001DB8, "Member 'UComboBoxString::OnGenerateWidgetEvent' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, OnSelectionChanged) == 0x001DD0, "Member 'UComboBoxString::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UComboBoxString, OnOpening) == 0x001DE0, "Member 'UComboBoxString::OnOpening' has a wrong offset!");
+DUMPER7_ASSERTS_UComboBoxString;
 
 // Class UMG.DynamicEntryBoxBase
 // 0x00E0 (0x0298 - 0x01B8)
@@ -3014,24 +2937,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicEntryBoxBase">();
+		STATIC_CLASS_IMPL("DynamicEntryBoxBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicEntryBoxBase")
 	}
 	static class UDynamicEntryBoxBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicEntryBoxBase>();
 	}
 };
-static_assert(alignof(UDynamicEntryBoxBase) == 0x000008, "Wrong alignment on UDynamicEntryBoxBase");
-static_assert(sizeof(UDynamicEntryBoxBase) == 0x000298, "Wrong size on UDynamicEntryBoxBase");
-static_assert(offsetof(UDynamicEntryBoxBase, EntrySpacing) == 0x0001B8, "Member 'UDynamicEntryBoxBase::EntrySpacing' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, SpacingPattern) == 0x0001C8, "Member 'UDynamicEntryBoxBase::SpacingPattern' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, EntryBoxType) == 0x0001D8, "Member 'UDynamicEntryBoxBase::EntryBoxType' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, EntrySizeRule) == 0x0001DC, "Member 'UDynamicEntryBoxBase::EntrySizeRule' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, EntryHorizontalAlignment) == 0x0001E4, "Member 'UDynamicEntryBoxBase::EntryHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, EntryVerticalAlignment) == 0x0001E5, "Member 'UDynamicEntryBoxBase::EntryVerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, MaxElementSize) == 0x0001E8, "Member 'UDynamicEntryBoxBase::MaxElementSize' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, RadialBoxSettings) == 0x0001EC, "Member 'UDynamicEntryBoxBase::RadialBoxSettings' has a wrong offset!");
-static_assert(offsetof(UDynamicEntryBoxBase, EntryWidgetPool) == 0x000210, "Member 'UDynamicEntryBoxBase::EntryWidgetPool' has a wrong offset!");
+DUMPER7_ASSERTS_UDynamicEntryBoxBase;
 
 // Class UMG.DynamicEntryBox
 // 0x0008 (0x02A0 - 0x0298)
@@ -3049,16 +2966,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicEntryBox">();
+		STATIC_CLASS_IMPL("DynamicEntryBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicEntryBox")
 	}
 	static class UDynamicEntryBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicEntryBox>();
 	}
 };
-static_assert(alignof(UDynamicEntryBox) == 0x000008, "Wrong alignment on UDynamicEntryBox");
-static_assert(sizeof(UDynamicEntryBox) == 0x0002A0, "Wrong size on UDynamicEntryBox");
-static_assert(offsetof(UDynamicEntryBox, EntryWidgetClass) == 0x000298, "Member 'UDynamicEntryBox::EntryWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UDynamicEntryBox;
 
 // Class UMG.EditableText
 // 0x03D8 (0x0590 - 0x01B8)
@@ -3116,40 +3035,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableText">();
+		STATIC_CLASS_IMPL("EditableText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableText")
 	}
 	static class UEditableText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableText>();
 	}
 };
-static_assert(alignof(UEditableText) == 0x000010, "Wrong alignment on UEditableText");
-static_assert(sizeof(UEditableText) == 0x000590, "Wrong size on UEditableText");
-static_assert(offsetof(UEditableText, Text) == 0x0001B8, "Member 'UEditableText::Text' has a wrong offset!");
-static_assert(offsetof(UEditableText, TextDelegate) == 0x0001D0, "Member 'UEditableText::TextDelegate' has a wrong offset!");
-static_assert(offsetof(UEditableText, HintText) == 0x0001E8, "Member 'UEditableText::HintText' has a wrong offset!");
-static_assert(offsetof(UEditableText, HintTextDelegate) == 0x000200, "Member 'UEditableText::HintTextDelegate' has a wrong offset!");
-static_assert(offsetof(UEditableText, WidgetStyle) == 0x000220, "Member 'UEditableText::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UEditableText, IsReadOnly) == 0x000520, "Member 'UEditableText::IsReadOnly' has a wrong offset!");
-static_assert(offsetof(UEditableText, IsPassword) == 0x000521, "Member 'UEditableText::IsPassword' has a wrong offset!");
-static_assert(offsetof(UEditableText, MinimumDesiredWidth) == 0x000524, "Member 'UEditableText::MinimumDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UEditableText, IsCaretMovedWhenGainFocus) == 0x000528, "Member 'UEditableText::IsCaretMovedWhenGainFocus' has a wrong offset!");
-static_assert(offsetof(UEditableText, SelectAllTextWhenFocused) == 0x000529, "Member 'UEditableText::SelectAllTextWhenFocused' has a wrong offset!");
-static_assert(offsetof(UEditableText, RevertTextOnEscape) == 0x00052A, "Member 'UEditableText::RevertTextOnEscape' has a wrong offset!");
-static_assert(offsetof(UEditableText, ClearKeyboardFocusOnCommit) == 0x00052B, "Member 'UEditableText::ClearKeyboardFocusOnCommit' has a wrong offset!");
-static_assert(offsetof(UEditableText, SelectAllTextOnCommit) == 0x00052C, "Member 'UEditableText::SelectAllTextOnCommit' has a wrong offset!");
-static_assert(offsetof(UEditableText, AllowContextMenu) == 0x00052D, "Member 'UEditableText::AllowContextMenu' has a wrong offset!");
-static_assert(offsetof(UEditableText, KeyboardType) == 0x00052E, "Member 'UEditableText::KeyboardType' has a wrong offset!");
-static_assert(offsetof(UEditableText, VirtualKeyboardOptions) == 0x00052F, "Member 'UEditableText::VirtualKeyboardOptions' has a wrong offset!");
-static_assert(offsetof(UEditableText, VirtualKeyboardTrigger) == 0x000530, "Member 'UEditableText::VirtualKeyboardTrigger' has a wrong offset!");
-static_assert(offsetof(UEditableText, VirtualKeyboardDismissAction) == 0x000531, "Member 'UEditableText::VirtualKeyboardDismissAction' has a wrong offset!");
-static_assert(offsetof(UEditableText, Justification) == 0x000532, "Member 'UEditableText::Justification' has a wrong offset!");
-static_assert(offsetof(UEditableText, OverflowPolicy) == 0x000533, "Member 'UEditableText::OverflowPolicy' has a wrong offset!");
-static_assert(offsetof(UEditableText, ShapedTextOptions) == 0x000534, "Member 'UEditableText::ShapedTextOptions' has a wrong offset!");
-static_assert(offsetof(UEditableText, OnTextChanged) == 0x000538, "Member 'UEditableText::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UEditableText, OnTextCommitted) == 0x000548, "Member 'UEditableText::OnTextCommitted' has a wrong offset!");
-static_assert(offsetof(UEditableText, OnBeginEditTransation) == 0x000558, "Member 'UEditableText::OnBeginEditTransation' has a wrong offset!");
-static_assert(offsetof(UEditableText, OnVirtualKeyboardShowed) == 0x000568, "Member 'UEditableText::OnVirtualKeyboardShowed' has a wrong offset!");
+DUMPER7_ASSERTS_UEditableText;
 
 // Class UMG.EditableTextBox
 // 0x0F48 (0x1100 - 0x01B8)
@@ -3202,38 +3099,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EditableTextBox">();
+		STATIC_CLASS_IMPL("EditableTextBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableTextBox")
 	}
 	static class UEditableTextBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditableTextBox>();
 	}
 };
-static_assert(alignof(UEditableTextBox) == 0x000010, "Wrong alignment on UEditableTextBox");
-static_assert(sizeof(UEditableTextBox) == 0x001100, "Wrong size on UEditableTextBox");
-static_assert(offsetof(UEditableTextBox, Text) == 0x0001B8, "Member 'UEditableTextBox::Text' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, TextDelegate) == 0x0001D0, "Member 'UEditableTextBox::TextDelegate' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, WidgetStyle) == 0x0001F0, "Member 'UEditableTextBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, HintText) == 0x001080, "Member 'UEditableTextBox::HintText' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, HintTextDelegate) == 0x001098, "Member 'UEditableTextBox::HintTextDelegate' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, IsReadOnly) == 0x0010AC, "Member 'UEditableTextBox::IsReadOnly' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, IsPassword) == 0x0010AD, "Member 'UEditableTextBox::IsPassword' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, MinimumDesiredWidth) == 0x0010B0, "Member 'UEditableTextBox::MinimumDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, IsCaretMovedWhenGainFocus) == 0x0010B4, "Member 'UEditableTextBox::IsCaretMovedWhenGainFocus' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, SelectAllTextWhenFocused) == 0x0010B5, "Member 'UEditableTextBox::SelectAllTextWhenFocused' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, RevertTextOnEscape) == 0x0010B6, "Member 'UEditableTextBox::RevertTextOnEscape' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, ClearKeyboardFocusOnCommit) == 0x0010B7, "Member 'UEditableTextBox::ClearKeyboardFocusOnCommit' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, SelectAllTextOnCommit) == 0x0010B8, "Member 'UEditableTextBox::SelectAllTextOnCommit' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, AllowContextMenu) == 0x0010B9, "Member 'UEditableTextBox::AllowContextMenu' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, KeyboardType) == 0x0010BA, "Member 'UEditableTextBox::KeyboardType' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, VirtualKeyboardOptions) == 0x0010BB, "Member 'UEditableTextBox::VirtualKeyboardOptions' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, VirtualKeyboardTrigger) == 0x0010BC, "Member 'UEditableTextBox::VirtualKeyboardTrigger' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, VirtualKeyboardDismissAction) == 0x0010BD, "Member 'UEditableTextBox::VirtualKeyboardDismissAction' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, Justification) == 0x0010BE, "Member 'UEditableTextBox::Justification' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, OverflowPolicy) == 0x0010BF, "Member 'UEditableTextBox::OverflowPolicy' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, ShapedTextOptions) == 0x0010C0, "Member 'UEditableTextBox::ShapedTextOptions' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, OnTextChanged) == 0x0010C8, "Member 'UEditableTextBox::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UEditableTextBox, OnTextCommitted) == 0x0010D8, "Member 'UEditableTextBox::OnTextCommitted' has a wrong offset!");
+DUMPER7_ASSERTS_UEditableTextBox;
 
 // Class UMG.ExpandableArea
 // 0x0308 (0x04C0 - 0x01B8)
@@ -3264,25 +3141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExpandableArea">();
+		STATIC_CLASS_IMPL("ExpandableArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExpandableArea")
 	}
 	static class UExpandableArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExpandableArea>();
 	}
 };
-static_assert(alignof(UExpandableArea) == 0x000010, "Wrong alignment on UExpandableArea");
-static_assert(sizeof(UExpandableArea) == 0x0004C0, "Wrong size on UExpandableArea");
-static_assert(offsetof(UExpandableArea, Style) == 0x0001C0, "Member 'UExpandableArea::Style' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, BorderBrush) == 0x000380, "Member 'UExpandableArea::BorderBrush' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, BorderColor) == 0x000450, "Member 'UExpandableArea::BorderColor' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, bIsExpanded) == 0x000464, "Member 'UExpandableArea::bIsExpanded' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, MaxHeight) == 0x000468, "Member 'UExpandableArea::MaxHeight' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, HeaderPadding) == 0x00046C, "Member 'UExpandableArea::HeaderPadding' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, AreaPadding) == 0x00047C, "Member 'UExpandableArea::AreaPadding' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, OnExpansionChanged) == 0x000490, "Member 'UExpandableArea::OnExpansionChanged' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, HeaderContent) == 0x0004A0, "Member 'UExpandableArea::HeaderContent' has a wrong offset!");
-static_assert(offsetof(UExpandableArea, BodyContent) == 0x0004A8, "Member 'UExpandableArea::BodyContent' has a wrong offset!");
+DUMPER7_ASSERTS_UExpandableArea;
 
 // Class UMG.GridPanel
 // 0x0030 (0x0230 - 0x0200)
@@ -3301,17 +3171,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GridPanel">();
+		STATIC_CLASS_IMPL("GridPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GridPanel")
 	}
 	static class UGridPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGridPanel>();
 	}
 };
-static_assert(alignof(UGridPanel) == 0x000008, "Wrong alignment on UGridPanel");
-static_assert(sizeof(UGridPanel) == 0x000230, "Wrong size on UGridPanel");
-static_assert(offsetof(UGridPanel, ColumnFill) == 0x000200, "Member 'UGridPanel::ColumnFill' has a wrong offset!");
-static_assert(offsetof(UGridPanel, RowFill) == 0x000210, "Member 'UGridPanel::RowFill' has a wrong offset!");
+DUMPER7_ASSERTS_UGridPanel;
 
 // Class UMG.GridSlot
 // 0x0040 (0x0080 - 0x0040)
@@ -3344,24 +3215,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GridSlot">();
+		STATIC_CLASS_IMPL("GridSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GridSlot")
 	}
 	static class UGridSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGridSlot>();
 	}
 };
-static_assert(alignof(UGridSlot) == 0x000008, "Wrong alignment on UGridSlot");
-static_assert(sizeof(UGridSlot) == 0x000080, "Wrong size on UGridSlot");
-static_assert(offsetof(UGridSlot, Padding) == 0x000040, "Member 'UGridSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UGridSlot, HorizontalAlignment) == 0x000050, "Member 'UGridSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UGridSlot, VerticalAlignment) == 0x000051, "Member 'UGridSlot::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UGridSlot, Row) == 0x000054, "Member 'UGridSlot::Row' has a wrong offset!");
-static_assert(offsetof(UGridSlot, RowSpan) == 0x000058, "Member 'UGridSlot::RowSpan' has a wrong offset!");
-static_assert(offsetof(UGridSlot, Column) == 0x00005C, "Member 'UGridSlot::Column' has a wrong offset!");
-static_assert(offsetof(UGridSlot, ColumnSpan) == 0x000060, "Member 'UGridSlot::ColumnSpan' has a wrong offset!");
-static_assert(offsetof(UGridSlot, Layer) == 0x000064, "Member 'UGridSlot::Layer' has a wrong offset!");
-static_assert(offsetof(UGridSlot, Nudge) == 0x000068, "Member 'UGridSlot::Nudge' has a wrong offset!");
+DUMPER7_ASSERTS_UGridSlot;
 
 // Class UMG.HashTextBlock
 // 0x0748 (0x0920 - 0x01D8)
@@ -3421,32 +3286,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashTextBlock">();
+		STATIC_CLASS_IMPL("HashTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextBlock")
 	}
 	static class UHashTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashTextBlock>();
 	}
 };
-static_assert(alignof(UHashTextBlock) == 0x000010, "Wrong alignment on UHashTextBlock");
-static_assert(sizeof(UHashTextBlock) == 0x000920, "Wrong size on UHashTextBlock");
-static_assert(offsetof(UHashTextBlock, Text) == 0x0001E0, "Member 'UHashTextBlock::Text' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, IteratorType) == 0x0001F8, "Member 'UHashTextBlock::IteratorType' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, HashTextConfig) == 0x000200, "Member 'UHashTextBlock::HashTextConfig' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, DecoratorProxyClasses) == 0x000208, "Member 'UHashTextBlock::DecoratorProxyClasses' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, bOverrideDefaultStyle) == 0x000218, "Member 'UHashTextBlock::bOverrideDefaultStyle' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, DefaultTextStyleOverride) == 0x000220, "Member 'UHashTextBlock::DefaultTextStyleOverride' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, MinDesiredWidth) == 0x000570, "Member 'UHashTextBlock::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, TextTransformPolicy) == 0x000574, "Member 'UHashTextBlock::TextTransformPolicy' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, TextOverflowPolicy) == 0x000575, "Member 'UHashTextBlock::TextOverflowPolicy' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, DefaultTextStyle) == 0x000580, "Member 'UHashTextBlock::DefaultTextStyle' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, DecoratorProxys) == 0x0008D0, "Member 'UHashTextBlock::DecoratorProxys' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, MoodSetGenerator) == 0x0008E0, "Member 'UHashTextBlock::MoodSetGenerator' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, bIsWrapEllipsis) == 0x000908, "Member 'UHashTextBlock::bIsWrapEllipsis' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, EllipsisLinesNum) == 0x00090C, "Member 'UHashTextBlock::EllipsisLinesNum' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, bIsAdaptive) == 0x000910, "Member 'UHashTextBlock::bIsAdaptive' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, AdaptiveHeightLimit) == 0x000914, "Member 'UHashTextBlock::AdaptiveHeightLimit' has a wrong offset!");
-static_assert(offsetof(UHashTextBlock, FontSizeLimit) == 0x000918, "Member 'UHashTextBlock::FontSizeLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UHashTextBlock;
 
 // Class UMG.HashTextDecoratorProxy
 // 0x0000 (0x0030 - 0x0030)
@@ -3455,15 +3306,18 @@ class UHashTextDecoratorProxy : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HashTextDecoratorProxy">();
+		STATIC_CLASS_IMPL("HashTextDecoratorProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashTextDecoratorProxy")
 	}
 	static class UHashTextDecoratorProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashTextDecoratorProxy>();
 	}
 };
-static_assert(alignof(UHashTextDecoratorProxy) == 0x000008, "Wrong alignment on UHashTextDecoratorProxy");
-static_assert(sizeof(UHashTextDecoratorProxy) == 0x000030, "Wrong size on UHashTextDecoratorProxy");
+DUMPER7_ASSERTS_UHashTextDecoratorProxy;
 
 // Class UMG.HorizontalBox
 // 0x0010 (0x0210 - 0x0200)
@@ -3478,15 +3332,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HorizontalBox">();
+		STATIC_CLASS_IMPL("HorizontalBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HorizontalBox")
 	}
 	static class UHorizontalBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHorizontalBox>();
 	}
 };
-static_assert(alignof(UHorizontalBox) == 0x000008, "Wrong alignment on UHorizontalBox");
-static_assert(sizeof(UHorizontalBox) == 0x000210, "Wrong size on UHorizontalBox");
+DUMPER7_ASSERTS_UHorizontalBox;
 
 // Class UMG.HorizontalBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -3509,19 +3366,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HorizontalBoxSlot">();
+		STATIC_CLASS_IMPL("HorizontalBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HorizontalBoxSlot")
 	}
 	static class UHorizontalBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHorizontalBoxSlot>();
 	}
 };
-static_assert(alignof(UHorizontalBoxSlot) == 0x000008, "Wrong alignment on UHorizontalBoxSlot");
-static_assert(sizeof(UHorizontalBoxSlot) == 0x000068, "Wrong size on UHorizontalBoxSlot");
-static_assert(offsetof(UHorizontalBoxSlot, Size) == 0x000048, "Member 'UHorizontalBoxSlot::Size' has a wrong offset!");
-static_assert(offsetof(UHorizontalBoxSlot, Padding) == 0x000050, "Member 'UHorizontalBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UHorizontalBoxSlot, HorizontalAlignment) == 0x000060, "Member 'UHorizontalBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UHorizontalBoxSlot, VerticalAlignment) == 0x000061, "Member 'UHorizontalBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UHorizontalBoxSlot;
 
 // Class UMG.Image
 // 0x0198 (0x0350 - 0x01B8)
@@ -3559,23 +3415,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Image">();
+		STATIC_CLASS_IMPL("Image")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Image")
 	}
 	static class UImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImage>();
 	}
 };
-static_assert(alignof(UImage) == 0x000010, "Wrong alignment on UImage");
-static_assert(sizeof(UImage) == 0x000350, "Wrong size on UImage");
-static_assert(offsetof(UImage, Brush) == 0x0001C0, "Member 'UImage::Brush' has a wrong offset!");
-static_assert(offsetof(UImage, BrushDelegate) == 0x000290, "Member 'UImage::BrushDelegate' has a wrong offset!");
-static_assert(offsetof(UImage, ColorAndOpacity) == 0x0002A4, "Member 'UImage::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UImage, ColorAndOpacityDelegate) == 0x0002B4, "Member 'UImage::ColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UImage, bFlipForRightToLeftFlowDirection) == 0x0002C8, "Member 'UImage::bFlipForRightToLeftFlowDirection' has a wrong offset!");
-static_assert(offsetof(UImage, OnSoftTextureAsyncLoadCompleted) == 0x0002D0, "Member 'UImage::OnSoftTextureAsyncLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UImage, OnSoftMaterialAsyncLoadCompleted) == 0x0002E0, "Member 'UImage::OnSoftMaterialAsyncLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UImage, OnMouseButtonDownEvent) == 0x0002F0, "Member 'UImage::OnMouseButtonDownEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UImage;
 
 // Class UMG.InputKeySelector
 // 0x0818 (0x09D0 - 0x01B8)
@@ -3614,28 +3465,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputKeySelector">();
+		STATIC_CLASS_IMPL("InputKeySelector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputKeySelector")
 	}
 	static class UInputKeySelector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputKeySelector>();
 	}
 };
-static_assert(alignof(UInputKeySelector) == 0x000010, "Wrong alignment on UInputKeySelector");
-static_assert(sizeof(UInputKeySelector) == 0x0009D0, "Wrong size on UInputKeySelector");
-static_assert(offsetof(UInputKeySelector, WidgetStyle) == 0x0001C0, "Member 'UInputKeySelector::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, TextStyle) == 0x0005C0, "Member 'UInputKeySelector::TextStyle' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, SelectedKey) == 0x000910, "Member 'UInputKeySelector::SelectedKey' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, Margin) == 0x000938, "Member 'UInputKeySelector::Margin' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, KeySelectionText) == 0x000948, "Member 'UInputKeySelector::KeySelectionText' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, NoKeySpecifiedText) == 0x000960, "Member 'UInputKeySelector::NoKeySpecifiedText' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, bAllowModifierKeys) == 0x000978, "Member 'UInputKeySelector::bAllowModifierKeys' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, bAllowGamepadKeys) == 0x000979, "Member 'UInputKeySelector::bAllowGamepadKeys' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, bEscapeCancelsSelection) == 0x00097A, "Member 'UInputKeySelector::bEscapeCancelsSelection' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, EscapeKeys) == 0x000980, "Member 'UInputKeySelector::EscapeKeys' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, OnKeySelected) == 0x000990, "Member 'UInputKeySelector::OnKeySelected' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, OnIsSelectingKeyChanged) == 0x0009A0, "Member 'UInputKeySelector::OnIsSelectingKeyChanged' has a wrong offset!");
-static_assert(offsetof(UInputKeySelector, OnEscapeCancelsSelection) == 0x0009B0, "Member 'UInputKeySelector::OnEscapeCancelsSelection' has a wrong offset!");
+DUMPER7_ASSERTS_UInputKeySelector;
 
 // Class UMG.InvalidationBox
 // 0x0018 (0x0218 - 0x0200)
@@ -3654,16 +3495,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InvalidationBox">();
+		STATIC_CLASS_IMPL("InvalidationBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InvalidationBox")
 	}
 	static class UInvalidationBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInvalidationBox>();
 	}
 };
-static_assert(alignof(UInvalidationBox) == 0x000008, "Wrong alignment on UInvalidationBox");
-static_assert(sizeof(UInvalidationBox) == 0x000218, "Wrong size on UInvalidationBox");
-static_assert(offsetof(UInvalidationBox, bCanCache) == 0x000200, "Member 'UInvalidationBox::bCanCache' has a wrong offset!");
+DUMPER7_ASSERTS_UInvalidationBox;
 
 // Class UMG.MenuAnchor
 // 0x0058 (0x0258 - 0x0200)
@@ -3696,23 +3539,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MenuAnchor">();
+		STATIC_CLASS_IMPL("MenuAnchor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuAnchor")
 	}
 	static class UMenuAnchor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuAnchor>();
 	}
 };
-static_assert(alignof(UMenuAnchor) == 0x000008, "Wrong alignment on UMenuAnchor");
-static_assert(sizeof(UMenuAnchor) == 0x000258, "Wrong size on UMenuAnchor");
-static_assert(offsetof(UMenuAnchor, MenuClass) == 0x000200, "Member 'UMenuAnchor::MenuClass' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, OnGetMenuContentEvent) == 0x000208, "Member 'UMenuAnchor::OnGetMenuContentEvent' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, OnGetUserMenuContentEvent) == 0x00021C, "Member 'UMenuAnchor::OnGetUserMenuContentEvent' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, Placement) == 0x000230, "Member 'UMenuAnchor::Placement' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, bFitInWindow) == 0x000231, "Member 'UMenuAnchor::bFitInWindow' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, ShouldDeferPaintingAfterWindowContent) == 0x000232, "Member 'UMenuAnchor::ShouldDeferPaintingAfterWindowContent' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, UseApplicationMenuStack) == 0x000233, "Member 'UMenuAnchor::UseApplicationMenuStack' has a wrong offset!");
-static_assert(offsetof(UMenuAnchor, OnMenuOpenChanged) == 0x000238, "Member 'UMenuAnchor::OnMenuOpenChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UMenuAnchor;
 
 // Class UMG.MultiLineEditableText
 // 0x03F8 (0x05D0 - 0x01D8)
@@ -3759,7 +3597,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MultiLineEditableText">();
+		STATIC_CLASS_IMPL("MultiLineEditableText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MultiLineEditableText")
 	}
 	static class UMultiLineEditableText* GetDefaultObj()
 	{
@@ -3767,26 +3609,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UMultiLineEditableText) == 0x000010, "Wrong alignment on UMultiLineEditableText");
-static_assert(sizeof(UMultiLineEditableText) == 0x0005D0, "Wrong size on UMultiLineEditableText");
-static_assert(offsetof(UMultiLineEditableText, Text) == 0x0001D8, "Member 'UMultiLineEditableText::Text' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, HintText) == 0x0001F0, "Member 'UMultiLineEditableText::HintText' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, HintTextDelegate) == 0x000208, "Member 'UMultiLineEditableText::HintTextDelegate' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, WidgetStyle) == 0x000220, "Member 'UMultiLineEditableText::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, bIsReadOnly) == 0x000570, "Member 'UMultiLineEditableText::bIsReadOnly' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, SelectAllTextWhenFocused) == 0x000571, "Member 'UMultiLineEditableText::SelectAllTextWhenFocused' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, JumpToEndWhenFocused) == 0x000572, "Member 'UMultiLineEditableText::JumpToEndWhenFocused' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, ClearTextSelectionOnFocusLoss) == 0x000573, "Member 'UMultiLineEditableText::ClearTextSelectionOnFocusLoss' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, RevertTextOnEscape) == 0x000574, "Member 'UMultiLineEditableText::RevertTextOnEscape' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, ClearKeyboardFocusOnCommit) == 0x000575, "Member 'UMultiLineEditableText::ClearKeyboardFocusOnCommit' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, AllowContextMenu) == 0x000576, "Member 'UMultiLineEditableText::AllowContextMenu' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, VirtualKeyboardOptions) == 0x000577, "Member 'UMultiLineEditableText::VirtualKeyboardOptions' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, VirtualKeyboardTrigger) == 0x000578, "Member 'UMultiLineEditableText::VirtualKeyboardTrigger' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, VirtualKeyboardDismissAction) == 0x000579, "Member 'UMultiLineEditableText::VirtualKeyboardDismissAction' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, OnTextChanged) == 0x000580, "Member 'UMultiLineEditableText::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, OnTextCommitted) == 0x000590, "Member 'UMultiLineEditableText::OnTextCommitted' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, OnCursorMoved) == 0x0005A0, "Member 'UMultiLineEditableText::OnCursorMoved' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableText, IteratorType) == 0x0005B0, "Member 'UMultiLineEditableText::IteratorType' has a wrong offset!");
+DUMPER7_ASSERTS_UMultiLineEditableText;
 
 // Class UMG.MultiLineEditableTextBox
 // 0x0F18 (0x10F0 - 0x01D8)
@@ -3821,25 +3644,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MultiLineEditableTextBox">();
+		STATIC_CLASS_IMPL("MultiLineEditableTextBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MultiLineEditableTextBox")
 	}
 	static class UMultiLineEditableTextBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMultiLineEditableTextBox>();
 	}
 };
-static_assert(alignof(UMultiLineEditableTextBox) == 0x000010, "Wrong alignment on UMultiLineEditableTextBox");
-static_assert(sizeof(UMultiLineEditableTextBox) == 0x0010F0, "Wrong size on UMultiLineEditableTextBox");
-static_assert(offsetof(UMultiLineEditableTextBox, Text) == 0x0001D8, "Member 'UMultiLineEditableTextBox::Text' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, HintText) == 0x0001F0, "Member 'UMultiLineEditableTextBox::HintText' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, HintTextDelegate) == 0x000208, "Member 'UMultiLineEditableTextBox::HintTextDelegate' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, WidgetStyle) == 0x000220, "Member 'UMultiLineEditableTextBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, bIsReadOnly) == 0x0010B0, "Member 'UMultiLineEditableTextBox::bIsReadOnly' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, AllowContextMenu) == 0x0010B1, "Member 'UMultiLineEditableTextBox::AllowContextMenu' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, VirtualKeyboardOptions) == 0x0010B2, "Member 'UMultiLineEditableTextBox::VirtualKeyboardOptions' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, VirtualKeyboardDismissAction) == 0x0010B3, "Member 'UMultiLineEditableTextBox::VirtualKeyboardDismissAction' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, OnTextChanged) == 0x0010B8, "Member 'UMultiLineEditableTextBox::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UMultiLineEditableTextBox, OnTextCommitted) == 0x0010C8, "Member 'UMultiLineEditableTextBox::OnTextCommitted' has a wrong offset!");
+DUMPER7_ASSERTS_UMultiLineEditableTextBox;
 
 // Class UMG.NamedSlot
 // 0x0010 (0x0210 - 0x0200)
@@ -3854,15 +3670,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NamedSlot">();
+		STATIC_CLASS_IMPL("NamedSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NamedSlot")
 	}
 	static class UNamedSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNamedSlot>();
 	}
 };
-static_assert(alignof(UNamedSlot) == 0x000008, "Wrong alignment on UNamedSlot");
-static_assert(sizeof(UNamedSlot) == 0x000210, "Wrong size on UNamedSlot");
+DUMPER7_ASSERTS_UNamedSlot;
 
 // Class UMG.NamedSlotInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -3871,7 +3690,11 @@ class INamedSlotInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NamedSlotInterface">();
+		STATIC_CLASS_IMPL("NamedSlotInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NamedSlotInterface")
 	}
 	static class INamedSlotInterface* GetDefaultObj()
 	{
@@ -3887,8 +3710,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(INamedSlotInterface) == 0x000001, "Wrong alignment on INamedSlotInterface");
-static_assert(sizeof(INamedSlotInterface) == 0x000001, "Wrong size on INamedSlotInterface");
+DUMPER7_ASSERTS_INamedSlotInterface;
 
 // Class UMG.NativeWidgetHost
 // 0x0010 (0x01C8 - 0x01B8)
@@ -3900,15 +3722,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NativeWidgetHost">();
+		STATIC_CLASS_IMPL("NativeWidgetHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NativeWidgetHost")
 	}
 	static class UNativeWidgetHost* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNativeWidgetHost>();
 	}
 };
-static_assert(alignof(UNativeWidgetHost) == 0x000008, "Wrong alignment on UNativeWidgetHost");
-static_assert(sizeof(UNativeWidgetHost) == 0x0001C8, "Wrong size on UNativeWidgetHost");
+DUMPER7_ASSERTS_UNativeWidgetHost;
 
 // Class UMG.Overlay
 // 0x0010 (0x0210 - 0x0200)
@@ -3924,15 +3749,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Overlay">();
+		STATIC_CLASS_IMPL("Overlay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Overlay")
 	}
 	static class UOverlay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOverlay>();
 	}
 };
-static_assert(alignof(UOverlay) == 0x000008, "Wrong alignment on UOverlay");
-static_assert(sizeof(UOverlay) == 0x000210, "Wrong size on UOverlay");
+DUMPER7_ASSERTS_UOverlay;
 
 // Class UMG.OverlaySlot
 // 0x0028 (0x0068 - 0x0040)
@@ -3960,21 +3788,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OverlaySlot">();
+		STATIC_CLASS_IMPL("OverlaySlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OverlaySlot")
 	}
 	static class UOverlaySlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOverlaySlot>();
 	}
 };
-static_assert(alignof(UOverlaySlot) == 0x000008, "Wrong alignment on UOverlaySlot");
-static_assert(sizeof(UOverlaySlot) == 0x000068, "Wrong size on UOverlaySlot");
-static_assert(offsetof(UOverlaySlot, Padding) == 0x000048, "Member 'UOverlaySlot::Padding' has a wrong offset!");
-static_assert(offsetof(UOverlaySlot, HorizontalAlignment) == 0x000058, "Member 'UOverlaySlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UOverlaySlot, VerticalAlignment) == 0x000059, "Member 'UOverlaySlot::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UOverlaySlot, ZOrder) == 0x00005C, "Member 'UOverlaySlot::ZOrder' has a wrong offset!");
-static_assert(offsetof(UOverlaySlot, bNeedCustomLayerPadding) == 0x000060, "Member 'UOverlaySlot::bNeedCustomLayerPadding' has a wrong offset!");
-static_assert(offsetof(UOverlaySlot, CustomLayerPadding) == 0x000064, "Member 'UOverlaySlot::CustomLayerPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UOverlaySlot;
 
 // Class UMG.ProgressBar
 // 0x0338 (0x04F0 - 0x01B8)
@@ -4004,31 +3829,23 @@ public:
 	void SetPercent(float InPercent);
 	void SetProgressBarStyle(const struct FProgressBarStyle& InStyle);
 
+	float GetPercent() const;
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProgressBar">();
+		STATIC_CLASS_IMPL("ProgressBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressBar")
 	}
 	static class UProgressBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProgressBar>();
 	}
 };
-static_assert(alignof(UProgressBar) == 0x000010, "Wrong alignment on UProgressBar");
-static_assert(sizeof(UProgressBar) == 0x0004F0, "Wrong size on UProgressBar");
-static_assert(offsetof(UProgressBar, WidgetStyle) == 0x0001C0, "Member 'UProgressBar::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UProgressBar, Percent) == 0x000450, "Member 'UProgressBar::Percent' has a wrong offset!");
-static_assert(offsetof(UProgressBar, BarFillType) == 0x000454, "Member 'UProgressBar::BarFillType' has a wrong offset!");
-static_assert(offsetof(UProgressBar, BarFillStyle) == 0x000455, "Member 'UProgressBar::BarFillStyle' has a wrong offset!");
-static_assert(offsetof(UProgressBar, bIsMarquee) == 0x000456, "Member 'UProgressBar::bIsMarquee' has a wrong offset!");
-static_assert(offsetof(UProgressBar, BorderPadding) == 0x000458, "Member 'UProgressBar::BorderPadding' has a wrong offset!");
-static_assert(offsetof(UProgressBar, PercentDelegate) == 0x000468, "Member 'UProgressBar::PercentDelegate' has a wrong offset!");
-static_assert(offsetof(UProgressBar, FillColorAndOpacity) == 0x00047C, "Member 'UProgressBar::FillColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UProgressBar, FillColorAndOpacityDelegate) == 0x00048C, "Member 'UProgressBar::FillColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UProgressBar, TopLeftOffset) == 0x0004A0, "Member 'UProgressBar::TopLeftOffset' has a wrong offset!");
-static_assert(offsetof(UProgressBar, TopRightOffset) == 0x0004B0, "Member 'UProgressBar::TopRightOffset' has a wrong offset!");
-static_assert(offsetof(UProgressBar, BottomLeftOffset) == 0x0004C0, "Member 'UProgressBar::BottomLeftOffset' has a wrong offset!");
-static_assert(offsetof(UProgressBar, BottomRightOffset) == 0x0004D0, "Member 'UProgressBar::BottomRightOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UProgressBar;
 
 // Class UMG.RetainerBox
 // 0x0038 (0x0238 - 0x0200)
@@ -4061,24 +3878,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RetainerBox">();
+		STATIC_CLASS_IMPL("RetainerBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RetainerBox")
 	}
 	static class URetainerBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URetainerBox>();
 	}
 };
-static_assert(alignof(URetainerBox) == 0x000008, "Wrong alignment on URetainerBox");
-static_assert(sizeof(URetainerBox) == 0x000238, "Wrong size on URetainerBox");
-static_assert(offsetof(URetainerBox, bRetainRender) == 0x000200, "Member 'URetainerBox::bRetainRender' has a wrong offset!");
-static_assert(offsetof(URetainerBox, RenderOnInvalidation) == 0x000201, "Member 'URetainerBox::RenderOnInvalidation' has a wrong offset!");
-static_assert(offsetof(URetainerBox, RenderOnPhase) == 0x000202, "Member 'URetainerBox::RenderOnPhase' has a wrong offset!");
-static_assert(offsetof(URetainerBox, Phase) == 0x000204, "Member 'URetainerBox::Phase' has a wrong offset!");
-static_assert(offsetof(URetainerBox, PhaseCount) == 0x000208, "Member 'URetainerBox::PhaseCount' has a wrong offset!");
-static_assert(offsetof(URetainerBox, RenderAfterCaptured) == 0x00020C, "Member 'URetainerBox::RenderAfterCaptured' has a wrong offset!");
-static_assert(offsetof(URetainerBox, IgnoreHittestGrid) == 0x00020D, "Member 'URetainerBox::IgnoreHittestGrid' has a wrong offset!");
-static_assert(offsetof(URetainerBox, EffectMaterial) == 0x000210, "Member 'URetainerBox::EffectMaterial' has a wrong offset!");
-static_assert(offsetof(URetainerBox, TextureParameter) == 0x000218, "Member 'URetainerBox::TextureParameter' has a wrong offset!");
+DUMPER7_ASSERTS_URetainerBox;
 
 // Class UMG.RichEditableText
 // 0x0A88 (0x0C40 - 0x01B8)
@@ -4153,50 +3964,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichEditableText">();
+		STATIC_CLASS_IMPL("RichEditableText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichEditableText")
 	}
 	static class URichEditableText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichEditableText>();
 	}
 };
-static_assert(alignof(URichEditableText) == 0x000010, "Wrong alignment on URichEditableText");
-static_assert(sizeof(URichEditableText) == 0x000C40, "Wrong size on URichEditableText");
-static_assert(offsetof(URichEditableText, Text) == 0x0001C0, "Member 'URichEditableText::Text' has a wrong offset!");
-static_assert(offsetof(URichEditableText, TextDelegate) == 0x0001D8, "Member 'URichEditableText::TextDelegate' has a wrong offset!");
-static_assert(offsetof(URichEditableText, HintText) == 0x0001F0, "Member 'URichEditableText::HintText' has a wrong offset!");
-static_assert(offsetof(URichEditableText, HintTextDelegate) == 0x000208, "Member 'URichEditableText::HintTextDelegate' has a wrong offset!");
-static_assert(offsetof(URichEditableText, HashTextConfig) == 0x000220, "Member 'URichEditableText::HashTextConfig' has a wrong offset!");
-static_assert(offsetof(URichEditableText, DecoratorProxyClasses) == 0x000228, "Member 'URichEditableText::DecoratorProxyClasses' has a wrong offset!");
-static_assert(offsetof(URichEditableText, bOverrideDefaultStyle) == 0x000238, "Member 'URichEditableText::bOverrideDefaultStyle' has a wrong offset!");
-static_assert(offsetof(URichEditableText, DefaultTextStyleOverride) == 0x000240, "Member 'URichEditableText::DefaultTextStyleOverride' has a wrong offset!");
-static_assert(offsetof(URichEditableText, TextLayoutProxy) == 0x000590, "Member 'URichEditableText::TextLayoutProxy' has a wrong offset!");
-static_assert(offsetof(URichEditableText, IsReadOnly) == 0x000598, "Member 'URichEditableText::IsReadOnly' has a wrong offset!");
-static_assert(offsetof(URichEditableText, MinimumDesiredWidth) == 0x00059C, "Member 'URichEditableText::MinimumDesiredWidth' has a wrong offset!");
-static_assert(offsetof(URichEditableText, EditableExtraTextStyle) == 0x0005A0, "Member 'URichEditableText::EditableExtraTextStyle' has a wrong offset!");
-static_assert(offsetof(URichEditableText, IsCaretMovedWhenGainFocus) == 0x000820, "Member 'URichEditableText::IsCaretMovedWhenGainFocus' has a wrong offset!");
-static_assert(offsetof(URichEditableText, SelectAllTextWhenFocused) == 0x000821, "Member 'URichEditableText::SelectAllTextWhenFocused' has a wrong offset!");
-static_assert(offsetof(URichEditableText, RevertTextOnEscape) == 0x000822, "Member 'URichEditableText::RevertTextOnEscape' has a wrong offset!");
-static_assert(offsetof(URichEditableText, ClearKeyboardFocusOnCommit) == 0x000823, "Member 'URichEditableText::ClearKeyboardFocusOnCommit' has a wrong offset!");
-static_assert(offsetof(URichEditableText, SelectAllTextOnCommit) == 0x000824, "Member 'URichEditableText::SelectAllTextOnCommit' has a wrong offset!");
-static_assert(offsetof(URichEditableText, AllowContextMenu) == 0x000825, "Member 'URichEditableText::AllowContextMenu' has a wrong offset!");
-static_assert(offsetof(URichEditableText, KeyboardType) == 0x000826, "Member 'URichEditableText::KeyboardType' has a wrong offset!");
-static_assert(offsetof(URichEditableText, VirtualKeyboardOptions) == 0x000827, "Member 'URichEditableText::VirtualKeyboardOptions' has a wrong offset!");
-static_assert(offsetof(URichEditableText, VirtualKeyboardTrigger) == 0x000828, "Member 'URichEditableText::VirtualKeyboardTrigger' has a wrong offset!");
-static_assert(offsetof(URichEditableText, VirtualKeyboardDismissAction) == 0x000829, "Member 'URichEditableText::VirtualKeyboardDismissAction' has a wrong offset!");
-static_assert(offsetof(URichEditableText, Justification) == 0x00082A, "Member 'URichEditableText::Justification' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OverflowPolicy) == 0x00082B, "Member 'URichEditableText::OverflowPolicy' has a wrong offset!");
-static_assert(offsetof(URichEditableText, ShapedTextOptions) == 0x00082C, "Member 'URichEditableText::ShapedTextOptions' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OnTextChanged) == 0x000830, "Member 'URichEditableText::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OnEnvStyleNameChanged) == 0x000840, "Member 'URichEditableText::OnEnvStyleNameChanged' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OnTextCommitted) == 0x000850, "Member 'URichEditableText::OnTextCommitted' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OnBeginEditTransation) == 0x000860, "Member 'URichEditableText::OnBeginEditTransation' has a wrong offset!");
-static_assert(offsetof(URichEditableText, OnVirtualKeyboardShowed) == 0x000870, "Member 'URichEditableText::OnVirtualKeyboardShowed' has a wrong offset!");
-static_assert(offsetof(URichEditableText, DefaultTextStyle) == 0x000880, "Member 'URichEditableText::DefaultTextStyle' has a wrong offset!");
-static_assert(offsetof(URichEditableText, DecoratorProxys) == 0x000BD0, "Member 'URichEditableText::DecoratorProxys' has a wrong offset!");
-static_assert(offsetof(URichEditableText, RichEditableTextProxy) == 0x000BE0, "Member 'URichEditableText::RichEditableTextProxy' has a wrong offset!");
-static_assert(offsetof(URichEditableText, MoodSetGenerator) == 0x000BE8, "Member 'URichEditableText::MoodSetGenerator' has a wrong offset!");
-static_assert(offsetof(URichEditableText, RichEditableTextPyHelper) == 0x000BF0, "Member 'URichEditableText::RichEditableTextPyHelper' has a wrong offset!");
+DUMPER7_ASSERTS_URichEditableText;
 
 // Class UMG.RichTextBlock
 // 0x0738 (0x0910 - 0x01D8)
@@ -4257,7 +4036,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlock">();
+		STATIC_CLASS_IMPL("RichTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlock")
 	}
 	static class URichTextBlock* GetDefaultObj()
 	{
@@ -4265,25 +4048,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(URichTextBlock) == 0x000010, "Wrong alignment on URichTextBlock");
-static_assert(sizeof(URichTextBlock) == 0x000910, "Wrong size on URichTextBlock");
-static_assert(offsetof(URichTextBlock, Text) == 0x0001D8, "Member 'URichTextBlock::Text' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, TextStyleSet) == 0x0001F0, "Member 'URichTextBlock::TextStyleSet' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, DecoratorClasses) == 0x0001F8, "Member 'URichTextBlock::DecoratorClasses' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, IteratorType) == 0x000208, "Member 'URichTextBlock::IteratorType' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, bOverrideDefaultStyle) == 0x000209, "Member 'URichTextBlock::bOverrideDefaultStyle' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, DefaultTextStyleOverride) == 0x000210, "Member 'URichTextBlock::DefaultTextStyleOverride' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, MinDesiredWidth) == 0x000560, "Member 'URichTextBlock::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, TextTransformPolicy) == 0x000564, "Member 'URichTextBlock::TextTransformPolicy' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, TextOverflowPolicy) == 0x000565, "Member 'URichTextBlock::TextOverflowPolicy' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, DefaultTextStyle) == 0x000570, "Member 'URichTextBlock::DefaultTextStyle' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, InstanceDecorators) == 0x0008C0, "Member 'URichTextBlock::InstanceDecorators' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, bIsWrapEllipsis) == 0x0008F0, "Member 'URichTextBlock::bIsWrapEllipsis' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, EllipsisLinesNum) == 0x0008F4, "Member 'URichTextBlock::EllipsisLinesNum' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, bIsAdaptive) == 0x0008F8, "Member 'URichTextBlock::bIsAdaptive' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, AdaptiveHeightLimit) == 0x0008FC, "Member 'URichTextBlock::AdaptiveHeightLimit' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, FontSizeLimit) == 0x000900, "Member 'URichTextBlock::FontSizeLimit' has a wrong offset!");
-static_assert(offsetof(URichTextBlock, bSupportLineExternal) == 0x000904, "Member 'URichTextBlock::bSupportLineExternal' has a wrong offset!");
+DUMPER7_ASSERTS_URichTextBlock;
 
 // Class UMG.RichTextBlockDecorator
 // 0x0000 (0x0030 - 0x0030)
@@ -4292,15 +4057,18 @@ class URichTextBlockDecorator : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlockDecorator">();
+		STATIC_CLASS_IMPL("RichTextBlockDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlockDecorator")
 	}
 	static class URichTextBlockDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextBlockDecorator>();
 	}
 };
-static_assert(alignof(URichTextBlockDecorator) == 0x000008, "Wrong alignment on URichTextBlockDecorator");
-static_assert(sizeof(URichTextBlockDecorator) == 0x000030, "Wrong size on URichTextBlockDecorator");
+DUMPER7_ASSERTS_URichTextBlockDecorator;
 
 // Class UMG.RichTextBlockImageDecorator
 // 0x0008 (0x0038 - 0x0030)
@@ -4312,16 +4080,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlockImageDecorator">();
+		STATIC_CLASS_IMPL("RichTextBlockImageDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlockImageDecorator")
 	}
 	static class URichTextBlockImageDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextBlockImageDecorator>();
 	}
 };
-static_assert(alignof(URichTextBlockImageDecorator) == 0x000008, "Wrong alignment on URichTextBlockImageDecorator");
-static_assert(sizeof(URichTextBlockImageDecorator) == 0x000038, "Wrong size on URichTextBlockImageDecorator");
-static_assert(offsetof(URichTextBlockImageDecorator, ImageSet) == 0x000030, "Member 'URichTextBlockImageDecorator::ImageSet' has a wrong offset!");
+DUMPER7_ASSERTS_URichTextBlockImageDecorator;
 
 // Class UMG.RichTextBlockImageTextDecorator
 // 0x0020 (0x0050 - 0x0030)
@@ -4337,18 +4107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichTextBlockImageTextDecorator">();
+		STATIC_CLASS_IMPL("RichTextBlockImageTextDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextBlockImageTextDecorator")
 	}
 	static class URichTextBlockImageTextDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextBlockImageTextDecorator>();
 	}
 };
-static_assert(alignof(URichTextBlockImageTextDecorator) == 0x000008, "Wrong alignment on URichTextBlockImageTextDecorator");
-static_assert(sizeof(URichTextBlockImageTextDecorator) == 0x000050, "Wrong size on URichTextBlockImageTextDecorator");
-static_assert(offsetof(URichTextBlockImageTextDecorator, IsUseOverridePadding) == 0x000030, "Member 'URichTextBlockImageTextDecorator::IsUseOverridePadding' has a wrong offset!");
-static_assert(offsetof(URichTextBlockImageTextDecorator, OverridePadding) == 0x000034, "Member 'URichTextBlockImageTextDecorator::OverridePadding' has a wrong offset!");
-static_assert(offsetof(URichTextBlockImageTextDecorator, ImageSet) == 0x000048, "Member 'URichTextBlockImageTextDecorator::ImageSet' has a wrong offset!");
+DUMPER7_ASSERTS_URichTextBlockImageTextDecorator;
 
 // Class UMG.SafeZone
 // 0x0018 (0x0218 - 0x0200)
@@ -4367,19 +4137,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SafeZone">();
+		STATIC_CLASS_IMPL("SafeZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SafeZone")
 	}
 	static class USafeZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USafeZone>();
 	}
 };
-static_assert(alignof(USafeZone) == 0x000008, "Wrong alignment on USafeZone");
-static_assert(sizeof(USafeZone) == 0x000218, "Wrong size on USafeZone");
-static_assert(offsetof(USafeZone, PadLeft) == 0x000200, "Member 'USafeZone::PadLeft' has a wrong offset!");
-static_assert(offsetof(USafeZone, PadRight) == 0x000201, "Member 'USafeZone::PadRight' has a wrong offset!");
-static_assert(offsetof(USafeZone, PadTop) == 0x000202, "Member 'USafeZone::PadTop' has a wrong offset!");
-static_assert(offsetof(USafeZone, PadBottom) == 0x000203, "Member 'USafeZone::PadBottom' has a wrong offset!");
+DUMPER7_ASSERTS_USafeZone;
 
 // Class UMG.SafeZoneSlot
 // 0x0038 (0x0078 - 0x0040)
@@ -4398,20 +4167,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SafeZoneSlot">();
+		STATIC_CLASS_IMPL("SafeZoneSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SafeZoneSlot")
 	}
 	static class USafeZoneSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USafeZoneSlot>();
 	}
 };
-static_assert(alignof(USafeZoneSlot) == 0x000008, "Wrong alignment on USafeZoneSlot");
-static_assert(sizeof(USafeZoneSlot) == 0x000078, "Wrong size on USafeZoneSlot");
-static_assert(offsetof(USafeZoneSlot, bIsTitleSafe) == 0x000040, "Member 'USafeZoneSlot::bIsTitleSafe' has a wrong offset!");
-static_assert(offsetof(USafeZoneSlot, SafeAreaScale) == 0x000044, "Member 'USafeZoneSlot::SafeAreaScale' has a wrong offset!");
-static_assert(offsetof(USafeZoneSlot, HAlign) == 0x000054, "Member 'USafeZoneSlot::HAlign' has a wrong offset!");
-static_assert(offsetof(USafeZoneSlot, VAlign) == 0x000055, "Member 'USafeZoneSlot::VAlign' has a wrong offset!");
-static_assert(offsetof(USafeZoneSlot, Padding) == 0x000058, "Member 'USafeZoneSlot::Padding' has a wrong offset!");
+DUMPER7_ASSERTS_USafeZoneSlot;
 
 // Class UMG.ScaleBox
 // 0x0020 (0x0220 - 0x0200)
@@ -4434,19 +4201,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScaleBox">();
+		STATIC_CLASS_IMPL("ScaleBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScaleBox")
 	}
 	static class UScaleBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScaleBox>();
 	}
 };
-static_assert(alignof(UScaleBox) == 0x000008, "Wrong alignment on UScaleBox");
-static_assert(sizeof(UScaleBox) == 0x000220, "Wrong size on UScaleBox");
-static_assert(offsetof(UScaleBox, Stretch) == 0x000200, "Member 'UScaleBox::Stretch' has a wrong offset!");
-static_assert(offsetof(UScaleBox, StretchDirection) == 0x000201, "Member 'UScaleBox::StretchDirection' has a wrong offset!");
-static_assert(offsetof(UScaleBox, UserSpecifiedScale) == 0x000204, "Member 'UScaleBox::UserSpecifiedScale' has a wrong offset!");
-static_assert(offsetof(UScaleBox, IgnoreInheritedScale) == 0x000208, "Member 'UScaleBox::IgnoreInheritedScale' has a wrong offset!");
+DUMPER7_ASSERTS_UScaleBox;
 
 // Class UMG.ScaleBoxSlot
 // 0x0018 (0x0058 - 0x0040)
@@ -4465,17 +4231,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScaleBoxSlot">();
+		STATIC_CLASS_IMPL("ScaleBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScaleBoxSlot")
 	}
 	static class UScaleBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScaleBoxSlot>();
 	}
 };
-static_assert(alignof(UScaleBoxSlot) == 0x000008, "Wrong alignment on UScaleBoxSlot");
-static_assert(sizeof(UScaleBoxSlot) == 0x000058, "Wrong size on UScaleBoxSlot");
-static_assert(offsetof(UScaleBoxSlot, HorizontalAlignment) == 0x000040, "Member 'UScaleBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UScaleBoxSlot, VerticalAlignment) == 0x000041, "Member 'UScaleBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UScaleBoxSlot;
 
 // Class UMG.ScrollBar
 // 0x07B8 (0x0970 - 0x01B8)
@@ -4498,21 +4265,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScrollBar">();
+		STATIC_CLASS_IMPL("ScrollBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollBar")
 	}
 	static class UScrollBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScrollBar>();
 	}
 };
-static_assert(alignof(UScrollBar) == 0x000010, "Wrong alignment on UScrollBar");
-static_assert(sizeof(UScrollBar) == 0x000970, "Wrong size on UScrollBar");
-static_assert(offsetof(UScrollBar, WidgetStyle) == 0x0001C0, "Member 'UScrollBar::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UScrollBar, bAlwaysShowScrollbar) == 0x000930, "Member 'UScrollBar::bAlwaysShowScrollbar' has a wrong offset!");
-static_assert(offsetof(UScrollBar, bAlwaysShowScrollbarTrack) == 0x000931, "Member 'UScrollBar::bAlwaysShowScrollbarTrack' has a wrong offset!");
-static_assert(offsetof(UScrollBar, Orientation) == 0x000932, "Member 'UScrollBar::Orientation' has a wrong offset!");
-static_assert(offsetof(UScrollBar, Thickness) == 0x000938, "Member 'UScrollBar::Thickness' has a wrong offset!");
-static_assert(offsetof(UScrollBar, Padding) == 0x000948, "Member 'UScrollBar::Padding' has a wrong offset!");
+DUMPER7_ASSERTS_UScrollBar;
 
 // Class UMG.ScrollBox
 // 0x0B80 (0x0D80 - 0x0200)
@@ -4543,7 +4307,8 @@ public:
 	uint8                                         Pad_D1E[0x2];                                      // 0x0D1E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WheelScrollMultiplier;                             // 0x0D20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bScrollBasedOnOrientation;                         // 0x0D24(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D25[0x3];                                      // 0x0D25(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bFocusIntoItemChild;                               // 0x0D25(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D26[0x2];                                      // 0x0D26(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(float CurrentOffset)> OnUserScrolled;                              // 0x0D28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x0D38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0D48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -4561,6 +4326,7 @@ public:
 	void SetAnimateWheelScrolling(bool bShouldAnimateWheelScrolling);
 	void SetConsumeMouseWheel(EConsumeMouseWheel NewConsumeMouseWheel);
 	void SetConsumeScrollEventWhenScrollBarVisible(bool NeedConsume);
+	void SetFocusIntoItemChild(const bool FocusIntoItemChild);
 	void SetNavigationDestination(const EDescendantScrollDestination NewNavigationDestination);
 	void SetOrientation(EOrientation NewOrientation);
 	void SetScrollBarOpacity(float InOpacity);
@@ -4583,40 +4349,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScrollBox">();
+		STATIC_CLASS_IMPL("ScrollBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollBox")
 	}
 	static class UScrollBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScrollBox>();
 	}
 };
-static_assert(alignof(UScrollBox) == 0x000010, "Wrong alignment on UScrollBox");
-static_assert(sizeof(UScrollBox) == 0x000D80, "Wrong size on UScrollBox");
-static_assert(offsetof(UScrollBox, WidgetStyle) == 0x000200, "Member 'UScrollBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UScrollBox, WidgetBarStyle) == 0x000570, "Member 'UScrollBox::WidgetBarStyle' has a wrong offset!");
-static_assert(offsetof(UScrollBox, Orientation) == 0x000CE0, "Member 'UScrollBox::Orientation' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ScrollBarVisibility) == 0x000CE1, "Member 'UScrollBox::ScrollBarVisibility' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ScrollBarOpacity) == 0x000CE4, "Member 'UScrollBox::ScrollBarOpacity' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ConsumeMouseWheel) == 0x000CE8, "Member 'UScrollBox::ConsumeMouseWheel' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ScrollbarThickness) == 0x000CF0, "Member 'UScrollBox::ScrollbarThickness' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ScrollbarPadding) == 0x000D00, "Member 'UScrollBox::ScrollbarPadding' has a wrong offset!");
-static_assert(offsetof(UScrollBox, AlwaysShowScrollbar) == 0x000D10, "Member 'UScrollBox::AlwaysShowScrollbar' has a wrong offset!");
-static_assert(offsetof(UScrollBox, AlwaysShowScrollbarTrack) == 0x000D11, "Member 'UScrollBox::AlwaysShowScrollbarTrack' has a wrong offset!");
-static_assert(offsetof(UScrollBox, AllowOverscroll) == 0x000D12, "Member 'UScrollBox::AllowOverscroll' has a wrong offset!");
-static_assert(offsetof(UScrollBox, BackPadScrolling) == 0x000D13, "Member 'UScrollBox::BackPadScrolling' has a wrong offset!");
-static_assert(offsetof(UScrollBox, FrontPadScrolling) == 0x000D14, "Member 'UScrollBox::FrontPadScrolling' has a wrong offset!");
-static_assert(offsetof(UScrollBox, bAnimateWheelScrolling) == 0x000D15, "Member 'UScrollBox::bAnimateWheelScrolling' has a wrong offset!");
-static_assert(offsetof(UScrollBox, bConsumeScrollEventWhenScrollBarVisible) == 0x000D16, "Member 'UScrollBox::bConsumeScrollEventWhenScrollBarVisible' has a wrong offset!");
-static_assert(offsetof(UScrollBox, NavigationDestination) == 0x000D17, "Member 'UScrollBox::NavigationDestination' has a wrong offset!");
-static_assert(offsetof(UScrollBox, NavigationScrollPadding) == 0x000D18, "Member 'UScrollBox::NavigationScrollPadding' has a wrong offset!");
-static_assert(offsetof(UScrollBox, ScrollWhenFocusChanges) == 0x000D1C, "Member 'UScrollBox::ScrollWhenFocusChanges' has a wrong offset!");
-static_assert(offsetof(UScrollBox, bAllowRightClickDragScrolling) == 0x000D1D, "Member 'UScrollBox::bAllowRightClickDragScrolling' has a wrong offset!");
-static_assert(offsetof(UScrollBox, WheelScrollMultiplier) == 0x000D20, "Member 'UScrollBox::WheelScrollMultiplier' has a wrong offset!");
-static_assert(offsetof(UScrollBox, bScrollBasedOnOrientation) == 0x000D24, "Member 'UScrollBox::bScrollBasedOnOrientation' has a wrong offset!");
-static_assert(offsetof(UScrollBox, OnUserScrolled) == 0x000D28, "Member 'UScrollBox::OnUserScrolled' has a wrong offset!");
-static_assert(offsetof(UScrollBox, OnHovered) == 0x000D38, "Member 'UScrollBox::OnHovered' has a wrong offset!");
-static_assert(offsetof(UScrollBox, OnUnhovered) == 0x000D48, "Member 'UScrollBox::OnUnhovered' has a wrong offset!");
-static_assert(offsetof(UScrollBox, OnScrollBarVisibilityChanged) == 0x000D58, "Member 'UScrollBox::OnScrollBarVisibilityChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UScrollBox;
 
 // Class UMG.ScrollBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -4637,19 +4381,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ScrollBoxSlot">();
+		STATIC_CLASS_IMPL("ScrollBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollBoxSlot")
 	}
 	static class UScrollBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScrollBoxSlot>();
 	}
 };
-static_assert(alignof(UScrollBoxSlot) == 0x000008, "Wrong alignment on UScrollBoxSlot");
-static_assert(sizeof(UScrollBoxSlot) == 0x000068, "Wrong size on UScrollBoxSlot");
-static_assert(offsetof(UScrollBoxSlot, Size) == 0x000040, "Member 'UScrollBoxSlot::Size' has a wrong offset!");
-static_assert(offsetof(UScrollBoxSlot, Padding) == 0x000048, "Member 'UScrollBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UScrollBoxSlot, HorizontalAlignment) == 0x000058, "Member 'UScrollBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UScrollBoxSlot, VerticalAlignment) == 0x000059, "Member 'UScrollBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UScrollBoxSlot;
 
 // Class UMG.SizeBox
 // 0x0038 (0x0238 - 0x0200)
@@ -4696,23 +4439,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SizeBox">();
+		STATIC_CLASS_IMPL("SizeBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SizeBox")
 	}
 	static class USizeBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USizeBox>();
 	}
 };
-static_assert(alignof(USizeBox) == 0x000008, "Wrong alignment on USizeBox");
-static_assert(sizeof(USizeBox) == 0x000238, "Wrong size on USizeBox");
-static_assert(offsetof(USizeBox, WidthOverride) == 0x000210, "Member 'USizeBox::WidthOverride' has a wrong offset!");
-static_assert(offsetof(USizeBox, HeightOverride) == 0x000214, "Member 'USizeBox::HeightOverride' has a wrong offset!");
-static_assert(offsetof(USizeBox, MinDesiredWidth) == 0x000218, "Member 'USizeBox::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(USizeBox, MinDesiredHeight) == 0x00021C, "Member 'USizeBox::MinDesiredHeight' has a wrong offset!");
-static_assert(offsetof(USizeBox, MaxDesiredWidth) == 0x000220, "Member 'USizeBox::MaxDesiredWidth' has a wrong offset!");
-static_assert(offsetof(USizeBox, MaxDesiredHeight) == 0x000224, "Member 'USizeBox::MaxDesiredHeight' has a wrong offset!");
-static_assert(offsetof(USizeBox, MinAspectRatio) == 0x000228, "Member 'USizeBox::MinAspectRatio' has a wrong offset!");
-static_assert(offsetof(USizeBox, MaxAspectRatio) == 0x00022C, "Member 'USizeBox::MaxAspectRatio' has a wrong offset!");
+DUMPER7_ASSERTS_USizeBox;
 
 // Class UMG.SizeBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -4733,18 +4471,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SizeBoxSlot">();
+		STATIC_CLASS_IMPL("SizeBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SizeBoxSlot")
 	}
 	static class USizeBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USizeBoxSlot>();
 	}
 };
-static_assert(alignof(USizeBoxSlot) == 0x000008, "Wrong alignment on USizeBoxSlot");
-static_assert(sizeof(USizeBoxSlot) == 0x000068, "Wrong size on USizeBoxSlot");
-static_assert(offsetof(USizeBoxSlot, Padding) == 0x000040, "Member 'USizeBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(USizeBoxSlot, HorizontalAlignment) == 0x000060, "Member 'USizeBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(USizeBoxSlot, VerticalAlignment) == 0x000061, "Member 'USizeBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_USizeBoxSlot;
 
 // Class UMG.Slider
 // 0x05D8 (0x0790 - 0x01B8)
@@ -4793,36 +4531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Slider">();
+		STATIC_CLASS_IMPL("Slider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Slider")
 	}
 	static class USlider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlider>();
 	}
 };
-static_assert(alignof(USlider) == 0x000010, "Wrong alignment on USlider");
-static_assert(sizeof(USlider) == 0x000790, "Wrong size on USlider");
-static_assert(offsetof(USlider, Value) == 0x0001B8, "Member 'USlider::Value' has a wrong offset!");
-static_assert(offsetof(USlider, ValueDelegate) == 0x0001BC, "Member 'USlider::ValueDelegate' has a wrong offset!");
-static_assert(offsetof(USlider, MinValue) == 0x0001D0, "Member 'USlider::MinValue' has a wrong offset!");
-static_assert(offsetof(USlider, MaxValue) == 0x0001D4, "Member 'USlider::MaxValue' has a wrong offset!");
-static_assert(offsetof(USlider, WidgetStyle) == 0x0001E0, "Member 'USlider::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(USlider, Orientation) == 0x0006E0, "Member 'USlider::Orientation' has a wrong offset!");
-static_assert(offsetof(USlider, SliderBarColor) == 0x0006E4, "Member 'USlider::SliderBarColor' has a wrong offset!");
-static_assert(offsetof(USlider, SliderHandleColor) == 0x0006F4, "Member 'USlider::SliderHandleColor' has a wrong offset!");
-static_assert(offsetof(USlider, IndentHandle) == 0x000704, "Member 'USlider::IndentHandle' has a wrong offset!");
-static_assert(offsetof(USlider, Locked) == 0x000705, "Member 'USlider::Locked' has a wrong offset!");
-static_assert(offsetof(USlider, MouseUsesStep) == 0x000706, "Member 'USlider::MouseUsesStep' has a wrong offset!");
-static_assert(offsetof(USlider, RequiresControllerLock) == 0x000707, "Member 'USlider::RequiresControllerLock' has a wrong offset!");
-static_assert(offsetof(USlider, StepSize) == 0x000708, "Member 'USlider::StepSize' has a wrong offset!");
-static_assert(offsetof(USlider, IsFocusable) == 0x00070C, "Member 'USlider::IsFocusable' has a wrong offset!");
-static_assert(offsetof(USlider, OnMouseCaptureBegin) == 0x000710, "Member 'USlider::OnMouseCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USlider, OnMouseCaptureEnd) == 0x000720, "Member 'USlider::OnMouseCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USlider, OnControllerCaptureBegin) == 0x000730, "Member 'USlider::OnControllerCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USlider, OnControllerCaptureEnd) == 0x000740, "Member 'USlider::OnControllerCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USlider, OnValueChanged) == 0x000750, "Member 'USlider::OnValueChanged' has a wrong offset!");
-static_assert(offsetof(USlider, OnHovered) == 0x000760, "Member 'USlider::OnHovered' has a wrong offset!");
-static_assert(offsetof(USlider, OnUnhovered) == 0x000770, "Member 'USlider::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_USlider;
 
 // Class UMG.Spacer
 // 0x0020 (0x01D8 - 0x01B8)
@@ -4838,16 +4558,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Spacer">();
+		STATIC_CLASS_IMPL("Spacer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Spacer")
 	}
 	static class USpacer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpacer>();
 	}
 };
-static_assert(alignof(USpacer) == 0x000008, "Wrong alignment on USpacer");
-static_assert(sizeof(USpacer) == 0x0001D8, "Wrong size on USpacer");
-static_assert(offsetof(USpacer, Size) == 0x0001B8, "Member 'USpacer::Size' has a wrong offset!");
+DUMPER7_ASSERTS_USpacer;
 
 // Class UMG.SpinBox
 // 0x0728 (0x08E0 - 0x01B8)
@@ -4918,39 +4640,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpinBox">();
+		STATIC_CLASS_IMPL("SpinBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpinBox")
 	}
 	static class USpinBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpinBox>();
 	}
 };
-static_assert(alignof(USpinBox) == 0x000010, "Wrong alignment on USpinBox");
-static_assert(sizeof(USpinBox) == 0x0008E0, "Wrong size on USpinBox");
-static_assert(offsetof(USpinBox, Value) == 0x0001B8, "Member 'USpinBox::Value' has a wrong offset!");
-static_assert(offsetof(USpinBox, ValueDelegate) == 0x0001BC, "Member 'USpinBox::ValueDelegate' has a wrong offset!");
-static_assert(offsetof(USpinBox, WidgetStyle) == 0x0001D0, "Member 'USpinBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(USpinBox, MinFractionalDigits) == 0x0007D0, "Member 'USpinBox::MinFractionalDigits' has a wrong offset!");
-static_assert(offsetof(USpinBox, MaxFractionalDigits) == 0x0007D4, "Member 'USpinBox::MaxFractionalDigits' has a wrong offset!");
-static_assert(offsetof(USpinBox, bAlwaysUsesDeltaSnap) == 0x0007D8, "Member 'USpinBox::bAlwaysUsesDeltaSnap' has a wrong offset!");
-static_assert(offsetof(USpinBox, bEnableSlider) == 0x0007D9, "Member 'USpinBox::bEnableSlider' has a wrong offset!");
-static_assert(offsetof(USpinBox, Delta) == 0x0007DC, "Member 'USpinBox::Delta' has a wrong offset!");
-static_assert(offsetof(USpinBox, SliderExponent) == 0x0007E0, "Member 'USpinBox::SliderExponent' has a wrong offset!");
-static_assert(offsetof(USpinBox, Font) == 0x0007E8, "Member 'USpinBox::Font' has a wrong offset!");
-static_assert(offsetof(USpinBox, Justification) == 0x000850, "Member 'USpinBox::Justification' has a wrong offset!");
-static_assert(offsetof(USpinBox, MinDesiredWidth) == 0x000854, "Member 'USpinBox::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(USpinBox, KeyboardType) == 0x000858, "Member 'USpinBox::KeyboardType' has a wrong offset!");
-static_assert(offsetof(USpinBox, ClearKeyboardFocusOnCommit) == 0x000859, "Member 'USpinBox::ClearKeyboardFocusOnCommit' has a wrong offset!");
-static_assert(offsetof(USpinBox, SelectAllTextOnCommit) == 0x00085A, "Member 'USpinBox::SelectAllTextOnCommit' has a wrong offset!");
-static_assert(offsetof(USpinBox, ForegroundColor) == 0x00085C, "Member 'USpinBox::ForegroundColor' has a wrong offset!");
-static_assert(offsetof(USpinBox, OnValueChanged) == 0x000870, "Member 'USpinBox::OnValueChanged' has a wrong offset!");
-static_assert(offsetof(USpinBox, OnValueCommitted) == 0x000880, "Member 'USpinBox::OnValueCommitted' has a wrong offset!");
-static_assert(offsetof(USpinBox, OnBeginSliderMovement) == 0x000890, "Member 'USpinBox::OnBeginSliderMovement' has a wrong offset!");
-static_assert(offsetof(USpinBox, OnEndSliderMovement) == 0x0008A0, "Member 'USpinBox::OnEndSliderMovement' has a wrong offset!");
-static_assert(offsetof(USpinBox, MinValue) == 0x0008B4, "Member 'USpinBox::MinValue' has a wrong offset!");
-static_assert(offsetof(USpinBox, MaxValue) == 0x0008B8, "Member 'USpinBox::MaxValue' has a wrong offset!");
-static_assert(offsetof(USpinBox, MinSliderValue) == 0x0008BC, "Member 'USpinBox::MinSliderValue' has a wrong offset!");
-static_assert(offsetof(USpinBox, MaxSliderValue) == 0x0008C0, "Member 'USpinBox::MaxSliderValue' has a wrong offset!");
+DUMPER7_ASSERTS_USpinBox;
 
 // Class UMG.StackBox
 // 0x0018 (0x0218 - 0x0200)
@@ -4967,16 +4668,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StackBox">();
+		STATIC_CLASS_IMPL("StackBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StackBox")
 	}
 	static class UStackBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStackBox>();
 	}
 };
-static_assert(alignof(UStackBox) == 0x000008, "Wrong alignment on UStackBox");
-static_assert(sizeof(UStackBox) == 0x000218, "Wrong size on UStackBox");
-static_assert(offsetof(UStackBox, Orientation) == 0x000200, "Member 'UStackBox::Orientation' has a wrong offset!");
+DUMPER7_ASSERTS_UStackBox;
 
 // Class UMG.StackBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -4992,19 +4695,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StackBoxSlot">();
+		STATIC_CLASS_IMPL("StackBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StackBoxSlot")
 	}
 	static class UStackBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStackBoxSlot>();
 	}
 };
-static_assert(alignof(UStackBoxSlot) == 0x000008, "Wrong alignment on UStackBoxSlot");
-static_assert(sizeof(UStackBoxSlot) == 0x000068, "Wrong size on UStackBoxSlot");
-static_assert(offsetof(UStackBoxSlot, Padding) == 0x000040, "Member 'UStackBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UStackBoxSlot, Size) == 0x000050, "Member 'UStackBoxSlot::Size' has a wrong offset!");
-static_assert(offsetof(UStackBoxSlot, HorizontalAlignment) == 0x000058, "Member 'UStackBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UStackBoxSlot, VerticalAlignment) == 0x000059, "Member 'UStackBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UStackBoxSlot;
 
 // Class UMG.TextBlock
 // 0x0208 (0x03E0 - 0x01D8)
@@ -5063,35 +4765,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextBlock">();
+		STATIC_CLASS_IMPL("TextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextBlock")
 	}
 	static class UTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextBlock>();
 	}
 };
-static_assert(alignof(UTextBlock) == 0x000010, "Wrong alignment on UTextBlock");
-static_assert(sizeof(UTextBlock) == 0x0003E0, "Wrong size on UTextBlock");
-static_assert(offsetof(UTextBlock, Text) == 0x0001D8, "Member 'UTextBlock::Text' has a wrong offset!");
-static_assert(offsetof(UTextBlock, TextDelegate) == 0x0001F0, "Member 'UTextBlock::TextDelegate' has a wrong offset!");
-static_assert(offsetof(UTextBlock, ColorAndOpacity) == 0x000204, "Member 'UTextBlock::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UTextBlock, ColorAndOpacityDelegate) == 0x000218, "Member 'UTextBlock::ColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UTextBlock, Font) == 0x000230, "Member 'UTextBlock::Font' has a wrong offset!");
-static_assert(offsetof(UTextBlock, StrikeBrush) == 0x0002A0, "Member 'UTextBlock::StrikeBrush' has a wrong offset!");
-static_assert(offsetof(UTextBlock, ShadowOffset) == 0x000370, "Member 'UTextBlock::ShadowOffset' has a wrong offset!");
-static_assert(offsetof(UTextBlock, MinimumScaledShadowOffset) == 0x000380, "Member 'UTextBlock::MinimumScaledShadowOffset' has a wrong offset!");
-static_assert(offsetof(UTextBlock, ShadowColorAndOpacity) == 0x000390, "Member 'UTextBlock::ShadowColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(UTextBlock, ShadowColorAndOpacityDelegate) == 0x0003A0, "Member 'UTextBlock::ShadowColorAndOpacityDelegate' has a wrong offset!");
-static_assert(offsetof(UTextBlock, MinDesiredWidth) == 0x0003B4, "Member 'UTextBlock::MinDesiredWidth' has a wrong offset!");
-static_assert(offsetof(UTextBlock, bWrapWithInvalidationPanel) == 0x0003B8, "Member 'UTextBlock::bWrapWithInvalidationPanel' has a wrong offset!");
-static_assert(offsetof(UTextBlock, TextTransformPolicy) == 0x0003B9, "Member 'UTextBlock::TextTransformPolicy' has a wrong offset!");
-static_assert(offsetof(UTextBlock, TextOverflowPolicy) == 0x0003BA, "Member 'UTextBlock::TextOverflowPolicy' has a wrong offset!");
-static_assert(offsetof(UTextBlock, bSimpleTextMode) == 0x0003BB, "Member 'UTextBlock::bSimpleTextMode' has a wrong offset!");
-static_assert(offsetof(UTextBlock, bIsWrapEllipsis) == 0x0003BC, "Member 'UTextBlock::bIsWrapEllipsis' has a wrong offset!");
-static_assert(offsetof(UTextBlock, EllipsisLinesNum) == 0x0003C0, "Member 'UTextBlock::EllipsisLinesNum' has a wrong offset!");
-static_assert(offsetof(UTextBlock, bIsAdaptive) == 0x0003C4, "Member 'UTextBlock::bIsAdaptive' has a wrong offset!");
-static_assert(offsetof(UTextBlock, AdaptiveHeightLimit) == 0x0003C8, "Member 'UTextBlock::AdaptiveHeightLimit' has a wrong offset!");
-static_assert(offsetof(UTextBlock, FontSizeLimit) == 0x0003CC, "Member 'UTextBlock::FontSizeLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UTextBlock;
 
 // Class UMG.Throbber
 // 0x00E8 (0x02A0 - 0x01B8)
@@ -5115,20 +4800,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Throbber">();
+		STATIC_CLASS_IMPL("Throbber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Throbber")
 	}
 	static class UThrobber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UThrobber>();
 	}
 };
-static_assert(alignof(UThrobber) == 0x000010, "Wrong alignment on UThrobber");
-static_assert(sizeof(UThrobber) == 0x0002A0, "Wrong size on UThrobber");
-static_assert(offsetof(UThrobber, NumberOfPieces) == 0x0001B8, "Member 'UThrobber::NumberOfPieces' has a wrong offset!");
-static_assert(offsetof(UThrobber, bAnimateHorizontally) == 0x0001BC, "Member 'UThrobber::bAnimateHorizontally' has a wrong offset!");
-static_assert(offsetof(UThrobber, bAnimateVertically) == 0x0001BD, "Member 'UThrobber::bAnimateVertically' has a wrong offset!");
-static_assert(offsetof(UThrobber, bAnimateOpacity) == 0x0001BE, "Member 'UThrobber::bAnimateOpacity' has a wrong offset!");
-static_assert(offsetof(UThrobber, Image) == 0x0001C0, "Member 'UThrobber::Image' has a wrong offset!");
+DUMPER7_ASSERTS_UThrobber;
 
 // Class UMG.TileView
 // 0x0030 (0x0D90 - 0x0D60)
@@ -5155,7 +4838,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TileView">();
+		STATIC_CLASS_IMPL("TileView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TileView")
 	}
 	static class UTileView* GetDefaultObj()
 	{
@@ -5163,13 +4850,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UTileView) == 0x000010, "Wrong alignment on UTileView");
-static_assert(sizeof(UTileView) == 0x000D90, "Wrong size on UTileView");
-static_assert(offsetof(UTileView, EntryHeight) == 0x000D60, "Member 'UTileView::EntryHeight' has a wrong offset!");
-static_assert(offsetof(UTileView, EntryWidth) == 0x000D64, "Member 'UTileView::EntryWidth' has a wrong offset!");
-static_assert(offsetof(UTileView, TileAlignment) == 0x000D68, "Member 'UTileView::TileAlignment' has a wrong offset!");
-static_assert(offsetof(UTileView, bWrapHorizontalNavigation) == 0x000D69, "Member 'UTileView::bWrapHorizontalNavigation' has a wrong offset!");
-static_assert(offsetof(UTileView, bEntrySizeIncludesEntrySpacing) == 0x000D80, "Member 'UTileView::bEntrySizeIncludesEntrySpacing' has a wrong offset!");
+DUMPER7_ASSERTS_UTileView;
 
 // Class UMG.TreeView
 // 0x0060 (0x0DC0 - 0x0D60)
@@ -5190,17 +4871,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TreeView">();
+		STATIC_CLASS_IMPL("TreeView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TreeView")
 	}
 	static class UTreeView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTreeView>();
 	}
 };
-static_assert(alignof(UTreeView) == 0x000010, "Wrong alignment on UTreeView");
-static_assert(sizeof(UTreeView) == 0x000DC0, "Wrong size on UTreeView");
-static_assert(offsetof(UTreeView, BP_OnGetItemChildren) == 0x000D70, "Member 'UTreeView::BP_OnGetItemChildren' has a wrong offset!");
-static_assert(offsetof(UTreeView, BP_OnItemExpansionChanged) == 0x000D88, "Member 'UTreeView::BP_OnItemExpansionChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UTreeView;
 
 // Class UMG.UniformGridPanel
 // 0x0028 (0x0228 - 0x0200)
@@ -5221,18 +4903,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UniformGridPanel">();
+		STATIC_CLASS_IMPL("UniformGridPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UniformGridPanel")
 	}
 	static class UUniformGridPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUniformGridPanel>();
 	}
 };
-static_assert(alignof(UUniformGridPanel) == 0x000008, "Wrong alignment on UUniformGridPanel");
-static_assert(sizeof(UUniformGridPanel) == 0x000228, "Wrong size on UUniformGridPanel");
-static_assert(offsetof(UUniformGridPanel, SlotPadding) == 0x000200, "Member 'UUniformGridPanel::SlotPadding' has a wrong offset!");
-static_assert(offsetof(UUniformGridPanel, MinDesiredSlotWidth) == 0x000210, "Member 'UUniformGridPanel::MinDesiredSlotWidth' has a wrong offset!");
-static_assert(offsetof(UUniformGridPanel, MinDesiredSlotHeight) == 0x000214, "Member 'UUniformGridPanel::MinDesiredSlotHeight' has a wrong offset!");
+DUMPER7_ASSERTS_UUniformGridPanel;
 
 // Class UMG.UniformGridSlot
 // 0x0018 (0x0058 - 0x0040)
@@ -5255,19 +4937,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UniformGridSlot">();
+		STATIC_CLASS_IMPL("UniformGridSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UniformGridSlot")
 	}
 	static class UUniformGridSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUniformGridSlot>();
 	}
 };
-static_assert(alignof(UUniformGridSlot) == 0x000008, "Wrong alignment on UUniformGridSlot");
-static_assert(sizeof(UUniformGridSlot) == 0x000058, "Wrong size on UUniformGridSlot");
-static_assert(offsetof(UUniformGridSlot, HorizontalAlignment) == 0x000040, "Member 'UUniformGridSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UUniformGridSlot, VerticalAlignment) == 0x000041, "Member 'UUniformGridSlot::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UUniformGridSlot, Row) == 0x000044, "Member 'UUniformGridSlot::Row' has a wrong offset!");
-static_assert(offsetof(UUniformGridSlot, Column) == 0x000048, "Member 'UUniformGridSlot::Column' has a wrong offset!");
+DUMPER7_ASSERTS_UUniformGridSlot;
 
 // Class UMG.VerticalBox
 // 0x0010 (0x0210 - 0x0200)
@@ -5282,15 +4963,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VerticalBox">();
+		STATIC_CLASS_IMPL("VerticalBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VerticalBox")
 	}
 	static class UVerticalBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVerticalBox>();
 	}
 };
-static_assert(alignof(UVerticalBox) == 0x000008, "Wrong alignment on UVerticalBox");
-static_assert(sizeof(UVerticalBox) == 0x000210, "Wrong size on UVerticalBox");
+DUMPER7_ASSERTS_UVerticalBox;
 
 // Class UMG.VerticalBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -5312,19 +4996,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VerticalBoxSlot">();
+		STATIC_CLASS_IMPL("VerticalBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VerticalBoxSlot")
 	}
 	static class UVerticalBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVerticalBoxSlot>();
 	}
 };
-static_assert(alignof(UVerticalBoxSlot) == 0x000008, "Wrong alignment on UVerticalBoxSlot");
-static_assert(sizeof(UVerticalBoxSlot) == 0x000068, "Wrong size on UVerticalBoxSlot");
-static_assert(offsetof(UVerticalBoxSlot, Size) == 0x000040, "Member 'UVerticalBoxSlot::Size' has a wrong offset!");
-static_assert(offsetof(UVerticalBoxSlot, Padding) == 0x000048, "Member 'UVerticalBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UVerticalBoxSlot, HorizontalAlignment) == 0x000058, "Member 'UVerticalBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UVerticalBoxSlot, VerticalAlignment) == 0x000059, "Member 'UVerticalBoxSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UVerticalBoxSlot;
 
 // Class UMG.Viewport
 // 0x0050 (0x0250 - 0x0200)
@@ -5346,19 +5029,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Viewport">();
+		STATIC_CLASS_IMPL("Viewport")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Viewport")
 	}
 	static class UViewport* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UViewport>();
 	}
 };
-static_assert(alignof(UViewport) == 0x000008, "Wrong alignment on UViewport");
-static_assert(sizeof(UViewport) == 0x000250, "Wrong size on UViewport");
-static_assert(offsetof(UViewport, BackgroundColor) == 0x000200, "Member 'UViewport::BackgroundColor' has a wrong offset!");
+DUMPER7_ASSERTS_UViewport;
 
 // Class UMG.WidgetInteractionComponent
-// 0x04D0 (0x0810 - 0x0340)
+// 0x0500 (0x0840 - 0x0340)
 class UWidgetInteractionComponent final : public USceneComponent
 {
 public:
@@ -5377,15 +5062,15 @@ public:
 	float                                         DebugLineThickness;                                // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           DebugColor;                                        // 0x0374(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_384[0x7C];                                     // 0x0384(0x007C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CustomHitResult;                                   // 0x0400(0x01F0)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FVector2D                              LocalHitLocation;                                  // 0x05F0(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector2D                              LastLocalHitLocation;                              // 0x0600(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWidgetComponent*                       HoveredWidgetComponent;                            // 0x0610(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FHitResult                             LastHitResult;                                     // 0x0618(0x01F0)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	bool                                          bIsHoveredWidgetInteractable;                      // 0x0808(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsHoveredWidgetFocusable;                         // 0x0809(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsHoveredWidgetHitTestVisible;                    // 0x080A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_80B[0x5];                                      // 0x080B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CustomHitResult;                                   // 0x0400(0x0208)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FVector2D                              LocalHitLocation;                                  // 0x0608(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector2D                              LastLocalHitLocation;                              // 0x0618(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UWidgetComponent*                       HoveredWidgetComponent;                            // 0x0628(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FHitResult                             LastHitResult;                                     // 0x0630(0x0208)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	bool                                          bIsHoveredWidgetInteractable;                      // 0x0838(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsHoveredWidgetFocusable;                         // 0x0839(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsHoveredWidgetHitTestVisible;                    // 0x083A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_83B[0x5];                                      // 0x083B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool PressAndReleaseKey(const struct FKey& Key);
@@ -5408,34 +5093,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetInteractionComponent">();
+		STATIC_CLASS_IMPL("WidgetInteractionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetInteractionComponent")
 	}
 	static class UWidgetInteractionComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetInteractionComponent>();
 	}
 };
-static_assert(alignof(UWidgetInteractionComponent) == 0x000010, "Wrong alignment on UWidgetInteractionComponent");
-static_assert(sizeof(UWidgetInteractionComponent) == 0x000810, "Wrong size on UWidgetInteractionComponent");
-static_assert(offsetof(UWidgetInteractionComponent, OnHoveredWidgetChanged) == 0x000338, "Member 'UWidgetInteractionComponent::OnHoveredWidgetChanged' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, VirtualUserIndex) == 0x000358, "Member 'UWidgetInteractionComponent::VirtualUserIndex' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, PointerIndex) == 0x00035C, "Member 'UWidgetInteractionComponent::PointerIndex' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, TraceChannel) == 0x000360, "Member 'UWidgetInteractionComponent::TraceChannel' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, InteractionDistance) == 0x000364, "Member 'UWidgetInteractionComponent::InteractionDistance' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, InteractionSource) == 0x000368, "Member 'UWidgetInteractionComponent::InteractionSource' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, bEnableHitTesting) == 0x000369, "Member 'UWidgetInteractionComponent::bEnableHitTesting' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, bShowDebug) == 0x00036A, "Member 'UWidgetInteractionComponent::bShowDebug' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, DebugSphereLineThickness) == 0x00036C, "Member 'UWidgetInteractionComponent::DebugSphereLineThickness' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, DebugLineThickness) == 0x000370, "Member 'UWidgetInteractionComponent::DebugLineThickness' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, DebugColor) == 0x000374, "Member 'UWidgetInteractionComponent::DebugColor' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, CustomHitResult) == 0x000400, "Member 'UWidgetInteractionComponent::CustomHitResult' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, LocalHitLocation) == 0x0005F0, "Member 'UWidgetInteractionComponent::LocalHitLocation' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, LastLocalHitLocation) == 0x000600, "Member 'UWidgetInteractionComponent::LastLocalHitLocation' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, HoveredWidgetComponent) == 0x000610, "Member 'UWidgetInteractionComponent::HoveredWidgetComponent' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, LastHitResult) == 0x000618, "Member 'UWidgetInteractionComponent::LastHitResult' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, bIsHoveredWidgetInteractable) == 0x000808, "Member 'UWidgetInteractionComponent::bIsHoveredWidgetInteractable' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, bIsHoveredWidgetFocusable) == 0x000809, "Member 'UWidgetInteractionComponent::bIsHoveredWidgetFocusable' has a wrong offset!");
-static_assert(offsetof(UWidgetInteractionComponent, bIsHoveredWidgetHitTestVisible) == 0x00080A, "Member 'UWidgetInteractionComponent::bIsHoveredWidgetHitTestVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetInteractionComponent;
 
 // Class UMG.WidgetSwitcher
 // 0x0018 (0x0218 - 0x0200)
@@ -5458,16 +5127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetSwitcher">();
+		STATIC_CLASS_IMPL("WidgetSwitcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetSwitcher")
 	}
 	static class UWidgetSwitcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetSwitcher>();
 	}
 };
-static_assert(alignof(UWidgetSwitcher) == 0x000008, "Wrong alignment on UWidgetSwitcher");
-static_assert(sizeof(UWidgetSwitcher) == 0x000218, "Wrong size on UWidgetSwitcher");
-static_assert(offsetof(UWidgetSwitcher, ActiveWidgetIndex) == 0x000200, "Member 'UWidgetSwitcher::ActiveWidgetIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetSwitcher;
 
 // Class UMG.WidgetSwitcherSlot
 // 0x0020 (0x0060 - 0x0040)
@@ -5488,18 +5159,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetSwitcherSlot">();
+		STATIC_CLASS_IMPL("WidgetSwitcherSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetSwitcherSlot")
 	}
 	static class UWidgetSwitcherSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetSwitcherSlot>();
 	}
 };
-static_assert(alignof(UWidgetSwitcherSlot) == 0x000008, "Wrong alignment on UWidgetSwitcherSlot");
-static_assert(sizeof(UWidgetSwitcherSlot) == 0x000060, "Wrong size on UWidgetSwitcherSlot");
-static_assert(offsetof(UWidgetSwitcherSlot, Padding) == 0x000048, "Member 'UWidgetSwitcherSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UWidgetSwitcherSlot, HorizontalAlignment) == 0x000058, "Member 'UWidgetSwitcherSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UWidgetSwitcherSlot, VerticalAlignment) == 0x000059, "Member 'UWidgetSwitcherSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetSwitcherSlot;
 
 // Class UMG.WindowTitleBarArea
 // 0x0020 (0x0220 - 0x0200)
@@ -5518,17 +5189,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WindowTitleBarArea">();
+		STATIC_CLASS_IMPL("WindowTitleBarArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindowTitleBarArea")
 	}
 	static class UWindowTitleBarArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWindowTitleBarArea>();
 	}
 };
-static_assert(alignof(UWindowTitleBarArea) == 0x000008, "Wrong alignment on UWindowTitleBarArea");
-static_assert(sizeof(UWindowTitleBarArea) == 0x000220, "Wrong size on UWindowTitleBarArea");
-static_assert(offsetof(UWindowTitleBarArea, bWindowButtonsEnabled) == 0x000200, "Member 'UWindowTitleBarArea::bWindowButtonsEnabled' has a wrong offset!");
-static_assert(offsetof(UWindowTitleBarArea, bDoubleClickTogglesFullscreen) == 0x000201, "Member 'UWindowTitleBarArea::bDoubleClickTogglesFullscreen' has a wrong offset!");
+DUMPER7_ASSERTS_UWindowTitleBarArea;
 
 // Class UMG.WindowTitleBarAreaSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -5548,18 +5220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WindowTitleBarAreaSlot">();
+		STATIC_CLASS_IMPL("WindowTitleBarAreaSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindowTitleBarAreaSlot")
 	}
 	static class UWindowTitleBarAreaSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWindowTitleBarAreaSlot>();
 	}
 };
-static_assert(alignof(UWindowTitleBarAreaSlot) == 0x000008, "Wrong alignment on UWindowTitleBarAreaSlot");
-static_assert(sizeof(UWindowTitleBarAreaSlot) == 0x000068, "Wrong size on UWindowTitleBarAreaSlot");
-static_assert(offsetof(UWindowTitleBarAreaSlot, Padding) == 0x000040, "Member 'UWindowTitleBarAreaSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UWindowTitleBarAreaSlot, HorizontalAlignment) == 0x000050, "Member 'UWindowTitleBarAreaSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UWindowTitleBarAreaSlot, VerticalAlignment) == 0x000051, "Member 'UWindowTitleBarAreaSlot::VerticalAlignment' has a wrong offset!");
+DUMPER7_ASSERTS_UWindowTitleBarAreaSlot;
 
 // Class UMG.WrapBox
 // 0x0048 (0x0248 - 0x0200)
@@ -5588,25 +5260,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WrapBox">();
+		STATIC_CLASS_IMPL("WrapBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WrapBox")
 	}
 	static class UWrapBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWrapBox>();
 	}
 };
-static_assert(alignof(UWrapBox) == 0x000008, "Wrong alignment on UWrapBox");
-static_assert(sizeof(UWrapBox) == 0x000248, "Wrong size on UWrapBox");
-static_assert(offsetof(UWrapBox, InnerSlotPadding) == 0x000200, "Member 'UWrapBox::InnerSlotPadding' has a wrong offset!");
-static_assert(offsetof(UWrapBox, WrapSize) == 0x000210, "Member 'UWrapBox::WrapSize' has a wrong offset!");
-static_assert(offsetof(UWrapBox, bExplicitWrapSize) == 0x000214, "Member 'UWrapBox::bExplicitWrapSize' has a wrong offset!");
-static_assert(offsetof(UWrapBox, HorizontalAlignment) == 0x000215, "Member 'UWrapBox::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UWrapBox, Orientation) == 0x000216, "Member 'UWrapBox::Orientation' has a wrong offset!");
-static_assert(offsetof(UWrapBox, bFixedRow) == 0x000217, "Member 'UWrapBox::bFixedRow' has a wrong offset!");
-static_assert(offsetof(UWrapBox, RowCount) == 0x000218, "Member 'UWrapBox::RowCount' has a wrong offset!");
-static_assert(offsetof(UWrapBox, ColumnCount) == 0x00021C, "Member 'UWrapBox::ColumnCount' has a wrong offset!");
-static_assert(offsetof(UWrapBox, bIsScrollableByRightStick) == 0x000220, "Member 'UWrapBox::bIsScrollableByRightStick' has a wrong offset!");
-static_assert(offsetof(UWrapBox, OnWrapBoxScrolledEvent) == 0x000224, "Member 'UWrapBox::OnWrapBoxScrolledEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UWrapBox;
 
 // Class UMG.WrapBoxSlot
 // 0x0028 (0x0068 - 0x0040)
@@ -5636,22 +5301,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WrapBoxSlot">();
+		STATIC_CLASS_IMPL("WrapBoxSlot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WrapBoxSlot")
 	}
 	static class UWrapBoxSlot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWrapBoxSlot>();
 	}
 };
-static_assert(alignof(UWrapBoxSlot) == 0x000008, "Wrong alignment on UWrapBoxSlot");
-static_assert(sizeof(UWrapBoxSlot) == 0x000068, "Wrong size on UWrapBoxSlot");
-static_assert(offsetof(UWrapBoxSlot, Padding) == 0x000040, "Member 'UWrapBoxSlot::Padding' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, FillSpanWhenLessThan) == 0x000050, "Member 'UWrapBoxSlot::FillSpanWhenLessThan' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, HorizontalAlignment) == 0x000054, "Member 'UWrapBoxSlot::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, VerticalAlignment) == 0x000055, "Member 'UWrapBoxSlot::VerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, bFillEmptySpace) == 0x000056, "Member 'UWrapBoxSlot::bFillEmptySpace' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, bForceNewLine) == 0x000057, "Member 'UWrapBoxSlot::bForceNewLine' has a wrong offset!");
-static_assert(offsetof(UWrapBoxSlot, ZOrder) == 0x000058, "Member 'UWrapBoxSlot::ZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_UWrapBoxSlot;
 
 // Class UMG.DragDropOperation
 // 0x0068 (0x0098 - 0x0030)
@@ -5676,23 +5337,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DragDropOperation">();
+		STATIC_CLASS_IMPL("DragDropOperation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DragDropOperation")
 	}
 	static class UDragDropOperation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDragDropOperation>();
 	}
 };
-static_assert(alignof(UDragDropOperation) == 0x000008, "Wrong alignment on UDragDropOperation");
-static_assert(sizeof(UDragDropOperation) == 0x000098, "Wrong size on UDragDropOperation");
-static_assert(offsetof(UDragDropOperation, Tag) == 0x000030, "Member 'UDragDropOperation::Tag' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, Payload) == 0x000040, "Member 'UDragDropOperation::Payload' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, DefaultDragVisual) == 0x000048, "Member 'UDragDropOperation::DefaultDragVisual' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, Pivot) == 0x000050, "Member 'UDragDropOperation::Pivot' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, Offset) == 0x000058, "Member 'UDragDropOperation::Offset' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, OnDrop) == 0x000068, "Member 'UDragDropOperation::OnDrop' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, OnDragCancelled) == 0x000078, "Member 'UDragDropOperation::OnDragCancelled' has a wrong offset!");
-static_assert(offsetof(UDragDropOperation, OnDragged) == 0x000088, "Member 'UDragDropOperation::OnDragged' has a wrong offset!");
+DUMPER7_ASSERTS_UDragDropOperation;
 
 // Class UMG.SlateBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -5719,15 +5375,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateBlueprintLibrary">();
+		STATIC_CLASS_IMPL("SlateBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateBlueprintLibrary")
 	}
 	static class USlateBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateBlueprintLibrary>();
 	}
 };
-static_assert(alignof(USlateBlueprintLibrary) == 0x000008, "Wrong alignment on USlateBlueprintLibrary");
-static_assert(sizeof(USlateBlueprintLibrary) == 0x000030, "Wrong size on USlateBlueprintLibrary");
+DUMPER7_ASSERTS_USlateBlueprintLibrary;
 
 // Class UMG.WidgetBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -5793,15 +5452,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetBlueprintLibrary">();
+		STATIC_CLASS_IMPL("WidgetBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetBlueprintLibrary")
 	}
 	static class UWidgetBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UWidgetBlueprintLibrary) == 0x000008, "Wrong alignment on UWidgetBlueprintLibrary");
-static_assert(sizeof(UWidgetBlueprintLibrary) == 0x000030, "Wrong size on UWidgetBlueprintLibrary");
+DUMPER7_ASSERTS_UWidgetBlueprintLibrary;
 
 // Class UMG.WidgetTree
 // 0x0060 (0x0090 - 0x0030)
@@ -5821,17 +5483,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WidgetTree">();
+		STATIC_CLASS_IMPL("WidgetTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WidgetTree")
 	}
 	static class UWidgetTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWidgetTree>();
 	}
 };
-static_assert(alignof(UWidgetTree) == 0x000008, "Wrong alignment on UWidgetTree");
-static_assert(sizeof(UWidgetTree) == 0x000090, "Wrong size on UWidgetTree");
-static_assert(offsetof(UWidgetTree, RootWidget) == 0x000038, "Member 'UWidgetTree::RootWidget' has a wrong offset!");
-static_assert(offsetof(UWidgetTree, NamedSlotBindings) == 0x000040, "Member 'UWidgetTree::NamedSlotBindings' has a wrong offset!");
+DUMPER7_ASSERTS_UWidgetTree;
 
 }
 

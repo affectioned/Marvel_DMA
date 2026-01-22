@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_VoiceTopPanel.PyWidget_VoiceTopPanel
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_VoiceTopPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                EntryClass;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReplayTopPadding;                                  // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShowIconCount;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                EntryClass;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReplayTopPadding;                                  // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShowIconCount;                                     // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_VoiceTopPanel">();
+		STATIC_CLASS_IMPL("PyWidget_VoiceTopPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceTopPanel")
 	}
 	static class UPyWidget_VoiceTopPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_VoiceTopPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_VoiceTopPanel) == 0x000008, "Wrong alignment on UPyWidget_VoiceTopPanel");
-static_assert(sizeof(UPyWidget_VoiceTopPanel) == 0x0005D0, "Wrong size on UPyWidget_VoiceTopPanel");
-static_assert(offsetof(UPyWidget_VoiceTopPanel, EntryClass) == 0x0005C0, "Member 'UPyWidget_VoiceTopPanel::EntryClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopPanel, ReplayTopPadding) == 0x0005C8, "Member 'UPyWidget_VoiceTopPanel::ReplayTopPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopPanel, ShowIconCount) == 0x0005CC, "Member 'UPyWidget_VoiceTopPanel::ShowIconCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_VoiceTopPanel;
 
 }
 

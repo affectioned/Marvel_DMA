@@ -17,26 +17,28 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PingPanel.PyWidget_PingPanel
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_PingPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPyDataAsset_Ping*                      PingInfoDataAsset;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyDataAsset_Ping*                      PingInfoDataAsset;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PingPanel">();
+		STATIC_CLASS_IMPL("PyWidget_PingPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PingPanel")
 	}
 	static class UPyWidget_PingPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PingPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PingPanel) == 0x000008, "Wrong alignment on UPyWidget_PingPanel");
-static_assert(sizeof(UPyWidget_PingPanel) == 0x0005C8, "Wrong size on UPyWidget_PingPanel");
-static_assert(offsetof(UPyWidget_PingPanel, PingInfoDataAsset) == 0x0005C0, "Member 'UPyWidget_PingPanel::PingInfoDataAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PingPanel;
 
 }
 

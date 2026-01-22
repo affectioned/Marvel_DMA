@@ -27,12 +27,7 @@ public:
 	class AMarvelAIController*                    Controller;                                        // 0x00F0(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00F8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIAbilityActivationLogicBase_BeginLogic) == 0x000008, "Wrong alignment on PyAIAbilityActivationLogicBase_BeginLogic");
-static_assert(sizeof(PyAIAbilityActivationLogicBase_BeginLogic) == 0x000100, "Wrong size on PyAIAbilityActivationLogicBase_BeginLogic");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_BeginLogic, OwnerExecutor) == 0x000000, "Member 'PyAIAbilityActivationLogicBase_BeginLogic::OwnerExecutor' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_BeginLogic, AbilityUsage) == 0x000008, "Member 'PyAIAbilityActivationLogicBase_BeginLogic::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_BeginLogic, Controller) == 0x0000F0, "Member 'PyAIAbilityActivationLogicBase_BeginLogic::Controller' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_BeginLogic, ReturnValue) == 0x0000F8, "Member 'PyAIAbilityActivationLogicBase_BeginLogic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIAbilityActivationLogicBase_BeginLogic;
 
 // PythonFunction ability_activation_logic.PyAIAbilityActivationLogicBase.TickLogic
 // 0x0100 (0x0100 - 0x0000)
@@ -45,13 +40,7 @@ public:
 	float                                         DeltaTime;                                         // 0x00F8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00FC(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIAbilityActivationLogicBase_TickLogic) == 0x000008, "Wrong alignment on PyAIAbilityActivationLogicBase_TickLogic");
-static_assert(sizeof(PyAIAbilityActivationLogicBase_TickLogic) == 0x000100, "Wrong size on PyAIAbilityActivationLogicBase_TickLogic");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_TickLogic, OwnerExecutor) == 0x000000, "Member 'PyAIAbilityActivationLogicBase_TickLogic::OwnerExecutor' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_TickLogic, AbilityUsage) == 0x000008, "Member 'PyAIAbilityActivationLogicBase_TickLogic::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_TickLogic, Controller) == 0x0000F0, "Member 'PyAIAbilityActivationLogicBase_TickLogic::Controller' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_TickLogic, DeltaTime) == 0x0000F8, "Member 'PyAIAbilityActivationLogicBase_TickLogic::DeltaTime' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_TickLogic, ReturnValue) == 0x0000FC, "Member 'PyAIAbilityActivationLogicBase_TickLogic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIAbilityActivationLogicBase_TickLogic;
 
 // PythonFunction ability_activation_logic.PyAIAbilityActivationLogicBase.EndLogic
 // 0x0100 (0x0100 - 0x0000)
@@ -63,12 +52,7 @@ public:
 	class AMarvelAIController*                    Controller;                                        // 0x00F0(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00F8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIAbilityActivationLogicBase_EndLogic) == 0x000008, "Wrong alignment on PyAIAbilityActivationLogicBase_EndLogic");
-static_assert(sizeof(PyAIAbilityActivationLogicBase_EndLogic) == 0x000100, "Wrong size on PyAIAbilityActivationLogicBase_EndLogic");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_EndLogic, OwnerExecutor) == 0x000000, "Member 'PyAIAbilityActivationLogicBase_EndLogic::OwnerExecutor' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_EndLogic, AbilityUsage) == 0x000008, "Member 'PyAIAbilityActivationLogicBase_EndLogic::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_EndLogic, Controller) == 0x0000F0, "Member 'PyAIAbilityActivationLogicBase_EndLogic::Controller' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivationLogicBase_EndLogic, ReturnValue) == 0x0000F8, "Member 'PyAIAbilityActivationLogicBase_EndLogic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIAbilityActivationLogicBase_EndLogic;
 
 // PythonFunction ability_activation_logic.PyAIAbilityActivation_StopCurStageIfbHited.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -79,11 +63,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParmeterHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage) == 0x000008, "Wrong alignment on PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage");
-static_assert(sizeof(PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage) == 0x000028, "Wrong size on PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage");
-static_assert(offsetof(PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage, ParmeterHandle) == 0x000010, "Member 'PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage::ParmeterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIAbilityActivation_StopCurStageIfbHited_OnTakeDamage;
 
 }
 

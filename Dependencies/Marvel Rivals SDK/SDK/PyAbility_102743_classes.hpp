@@ -26,19 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102743">();
+		STATIC_CLASS_IMPL("PyConfig_102743")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102743")
 	}
 	static class UPyConfig_102743* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102743>();
 	}
 };
-static_assert(alignof(UPyConfig_102743) == 0x000008, "Wrong alignment on UPyConfig_102743");
-static_assert(sizeof(UPyConfig_102743) == 0x0000A0, "Wrong size on UPyConfig_102743");
-static_assert(offsetof(UPyConfig_102743, ActiveScopeID) == 0x000098, "Member 'UPyConfig_102743::ActiveScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102743;
 
 // PythonClass PyAbility_102743.PyAbility_102743
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102743 : public UMarvelGameplayAbility
 {
 public:
@@ -52,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102743">();
+		STATIC_CLASS_IMPL("PyAbility_102743")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102743")
 	}
 	static class UPyAbility_102743* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102743>();
 	}
 };
-static_assert(alignof(UPyAbility_102743) == 0x000008, "Wrong alignment on UPyAbility_102743");
-static_assert(sizeof(UPyAbility_102743) == 0x0029F0, "Wrong size on UPyAbility_102743");
+DUMPER7_ASSERTS_UPyAbility_102743;
 
 }
 

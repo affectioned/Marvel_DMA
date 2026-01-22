@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Activity_10130_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_classes.hpp"
 
@@ -19,21 +19,179 @@
 namespace SDK
 {
 
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391003
+// 0x0008 (0x1A50 - 0x1A48)
+class UPyBuffAbility_10130_10391003 : public UBuffAbility_CommonCardEffect
+{
+public:
+	float                                         DamageRateAddValue;                                // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageMaxStack;                                    // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+	void OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391003")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391003")
+	}
+	static class UPyBuffAbility_10130_10391003* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391003>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391003;
+
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391006
+// 0x0000 (0x1A48 - 0x1A48)
+class UPyBuffAbility_10130_10391006 final : public UBuffAbility_CommonCardEffect
+{
+public:
+	void K2_ActivateAbility();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391006")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391006")
+	}
+	static class UPyBuffAbility_10130_10391006* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391006>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391006;
+
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391001
+// 0x0070 (0x1AB8 - 0x1A48)
+class UPyBuffAbility_10130_10391001 : public UBuffAbility_CommonCardEffect
+{
+public:
+	struct FGameplayTagContainer                  AbilityTag;                                        // 0x1A48(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         CostAddValue;                                      // 0x1AB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CostAddTime;                                       // 0x1AB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391001")
+	}
+	static class UPyBuffAbility_10130_10391001* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391001>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391001;
+
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391007
+// 0x0000 (0x1A48 - 0x1A48)
+class UPyBuffAbility_10130_10391007 : public UBuffAbility_CommonCardEffect
+{
+public:
+	void K2_ActivateAbility();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391007")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391007")
+	}
+	static class UPyBuffAbility_10130_10391007* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391007>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391007;
+
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391004
+// 0x0008 (0x15C8 - 0x15C0)
+class UPyBuffAbility_10130_10391004 : public UMarvelNotTreatFallAbility
+{
+public:
+	float                                         ShieldValue;                                       // 0x15C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldTime;                                        // 0x15C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391004")
+	}
+	static class UPyBuffAbility_10130_10391004* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391004>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391004;
+
+// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002
+// 0x0018 (0x1A60 - 0x1A48)
+class UPyBuffAbility_10130_10391002 : public UBuffAbility_CommonCardEffect
+{
+public:
+	float                                         BuffValue;                                         // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CostType;                                          // 0x1A4C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+	void OtherAbilityApplyCost(class UMarvelGameplayAbility* Ability, float CostValue, const struct FGameplayTag& CostType_0);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391002")
+	}
+	static class UPyBuffAbility_10130_10391002* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_10130_10391002>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391002;
+
 // PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005
-// 0x0050 (0x1A80 - 0x1A30)
+// 0x0050 (0x1A98 - 0x1A48)
 class UPyBuffAbility_10130_10391005 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         MagnifyMaxRate;                                    // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PawnMagnifyMaxRate;                                // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PawnMagnifyMaxRate_AllStack;                       // 0x1A38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MeshMagnifyMaxRate_AllStack;                       // 0x1A3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                MeshRelativeLocation;                              // 0x1A40(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChangeInternal;                                    // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChangeSumTime;                                     // 0x1A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                DefaultScopeBoxSize;                               // 0x1A60(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CurrentMagnifyRate;                                // 0x1A78(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ModifyScope;                                       // 0x1A7C(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagnifyMaxRate;                                    // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PawnMagnifyMaxRate;                                // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PawnMagnifyMaxRate_AllStack;                       // 0x1A50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MeshMagnifyMaxRate_AllStack;                       // 0x1A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                MeshRelativeLocation;                              // 0x1A58(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangeInternal;                                    // 0x1A70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangeSumTime;                                     // 0x1A74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DefaultScopeBoxSize;                               // 0x1A78(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CurrentMagnifyRate;                                // 0x1A90(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ModifyScope;                                       // 0x1A94(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -43,178 +201,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391005">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391005")
 	}
 	static class UPyBuffAbility_10130_10391005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391005>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391005) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391005");
-static_assert(sizeof(UPyBuffAbility_10130_10391005) == 0x001A80, "Wrong size on UPyBuffAbility_10130_10391005");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, MagnifyMaxRate) == 0x001A30, "Member 'UPyBuffAbility_10130_10391005::MagnifyMaxRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, PawnMagnifyMaxRate) == 0x001A34, "Member 'UPyBuffAbility_10130_10391005::PawnMagnifyMaxRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, PawnMagnifyMaxRate_AllStack) == 0x001A38, "Member 'UPyBuffAbility_10130_10391005::PawnMagnifyMaxRate_AllStack' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, MeshMagnifyMaxRate_AllStack) == 0x001A3C, "Member 'UPyBuffAbility_10130_10391005::MeshMagnifyMaxRate_AllStack' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, MeshRelativeLocation) == 0x001A40, "Member 'UPyBuffAbility_10130_10391005::MeshRelativeLocation' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, ChangeInternal) == 0x001A58, "Member 'UPyBuffAbility_10130_10391005::ChangeInternal' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, ChangeSumTime) == 0x001A5C, "Member 'UPyBuffAbility_10130_10391005::ChangeSumTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, DefaultScopeBoxSize) == 0x001A60, "Member 'UPyBuffAbility_10130_10391005::DefaultScopeBoxSize' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, CurrentMagnifyRate) == 0x001A78, "Member 'UPyBuffAbility_10130_10391005::CurrentMagnifyRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391005, ModifyScope) == 0x001A7C, "Member 'UPyBuffAbility_10130_10391005::ModifyScope' has a wrong offset!");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391003
-// 0x0008 (0x1A38 - 0x1A30)
-class UPyBuffAbility_10130_10391003 : public UBuffAbility_CommonCardEffect
-{
-public:
-	float                                         DamageRateAddValue;                                // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageMaxStack;                                    // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-	void OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391003">();
-	}
-	static class UPyBuffAbility_10130_10391003* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391003>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391003) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391003");
-static_assert(sizeof(UPyBuffAbility_10130_10391003) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10391003");
-static_assert(offsetof(UPyBuffAbility_10130_10391003, DamageRateAddValue) == 0x001A30, "Member 'UPyBuffAbility_10130_10391003::DamageRateAddValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391003, DamageMaxStack) == 0x001A34, "Member 'UPyBuffAbility_10130_10391003::DamageMaxStack' has a wrong offset!");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002
-// 0x0018 (0x1A48 - 0x1A30)
-class UPyBuffAbility_10130_10391002 : public UBuffAbility_CommonCardEffect
-{
-public:
-	float                                         BuffValue;                                         // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CostType;                                          // 0x1A34(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-	void OtherAbilityApplyCost(class UMarvelGameplayAbility* Ability, float CostValue, const struct FGameplayTag& CostType_0);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391002">();
-	}
-	static class UPyBuffAbility_10130_10391002* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391002>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391002) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391002");
-static_assert(sizeof(UPyBuffAbility_10130_10391002) == 0x001A48, "Wrong size on UPyBuffAbility_10130_10391002");
-static_assert(offsetof(UPyBuffAbility_10130_10391002, BuffValue) == 0x001A30, "Member 'UPyBuffAbility_10130_10391002::BuffValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391002, CostType) == 0x001A34, "Member 'UPyBuffAbility_10130_10391002::CostType' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391002, BuffID) == 0x001A40, "Member 'UPyBuffAbility_10130_10391002::BuffID' has a wrong offset!");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391006
-// 0x0000 (0x1A30 - 0x1A30)
-class UPyBuffAbility_10130_10391006 final : public UBuffAbility_CommonCardEffect
-{
-public:
-	void K2_ActivateAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391006">();
-	}
-	static class UPyBuffAbility_10130_10391006* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391006>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391006) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391006");
-static_assert(sizeof(UPyBuffAbility_10130_10391006) == 0x001A30, "Wrong size on UPyBuffAbility_10130_10391006");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391001
-// 0x0070 (0x1AA0 - 0x1A30)
-class UPyBuffAbility_10130_10391001 : public UBuffAbility_CommonCardEffect
-{
-public:
-	struct FGameplayTagContainer                  AbilityTag;                                        // 0x1A30(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         CostAddValue;                                      // 0x1A98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CostAddTime;                                       // 0x1A9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391001">();
-	}
-	static class UPyBuffAbility_10130_10391001* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391001>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391001) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391001");
-static_assert(sizeof(UPyBuffAbility_10130_10391001) == 0x001AA0, "Wrong size on UPyBuffAbility_10130_10391001");
-static_assert(offsetof(UPyBuffAbility_10130_10391001, AbilityTag) == 0x001A30, "Member 'UPyBuffAbility_10130_10391001::AbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391001, CostAddValue) == 0x001A98, "Member 'UPyBuffAbility_10130_10391001::CostAddValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391001, CostAddTime) == 0x001A9C, "Member 'UPyBuffAbility_10130_10391001::CostAddTime' has a wrong offset!");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391007
-// 0x0000 (0x1A30 - 0x1A30)
-class UPyBuffAbility_10130_10391007 : public UBuffAbility_CommonCardEffect
-{
-public:
-	void K2_ActivateAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391007">();
-	}
-	static class UPyBuffAbility_10130_10391007* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391007>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391007) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391007");
-static_assert(sizeof(UPyBuffAbility_10130_10391007) == 0x001A30, "Wrong size on UPyBuffAbility_10130_10391007");
-
-// PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391004
-// 0x0008 (0x1548 - 0x1540)
-class UPyBuffAbility_10130_10391004 : public UMarvelNotTreatFallAbility
-{
-public:
-	float                                         ShieldValue;                                       // 0x1540(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldTime;                                        // 0x1544(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391004">();
-	}
-	static class UPyBuffAbility_10130_10391004* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_10130_10391004>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_10130_10391004) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391004");
-static_assert(sizeof(UPyBuffAbility_10130_10391004) == 0x001548, "Wrong size on UPyBuffAbility_10130_10391004");
-static_assert(offsetof(UPyBuffAbility_10130_10391004, ShieldValue) == 0x001540, "Member 'UPyBuffAbility_10130_10391004::ShieldValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391004, ShieldTime) == 0x001544, "Member 'UPyBuffAbility_10130_10391004::ShieldTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391005;
 
 // PythonClass PyBuffAbility_10130_103941.PyEffectComponent_10391001
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectComponent_10391001 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -224,23 +225,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectComponent_10391001">();
+		STATIC_CLASS_IMPL("PyEffectComponent_10391001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectComponent_10391001")
 	}
 	static class UPyEffectComponent_10391001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectComponent_10391001>();
 	}
 };
-static_assert(alignof(UPyEffectComponent_10391001) == 0x000010, "Wrong alignment on UPyEffectComponent_10391001");
-static_assert(sizeof(UPyEffectComponent_10391001) == 0x001C70, "Wrong size on UPyEffectComponent_10391001");
+DUMPER7_ASSERTS_UPyEffectComponent_10391001;
 
 // PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391008
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_10391008 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         SpawnScopeTimeInternal;                            // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnScopeSpaceInternal;                           // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnScopeTimeInternal;                            // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnScopeSpaceInternal;                           // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -248,20 +252,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391008">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391008")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391008")
 	}
 	static class UPyBuffAbility_10130_10391008* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391008>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391008) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391008");
-static_assert(sizeof(UPyBuffAbility_10130_10391008) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10391008");
-static_assert(offsetof(UPyBuffAbility_10130_10391008, SpawnScopeTimeInternal) == 0x001A30, "Member 'UPyBuffAbility_10130_10391008::SpawnScopeTimeInternal' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391008, SpawnScopeSpaceInternal) == 0x001A34, "Member 'UPyBuffAbility_10130_10391008::SpawnScopeSpaceInternal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391008;
 
 // PythonClass PyBuffAbility_10130_103941.PyBuffAbility_10130_10391041
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyBuffAbility_10130_10391041 final : public UMarvelEffectGameplayAbility
 {
 public:
@@ -270,15 +275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391041">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391041")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391041")
 	}
 	static class UPyBuffAbility_10130_10391041* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391041>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391041) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391041");
-static_assert(sizeof(UPyBuffAbility_10130_10391041) == 0x001370, "Wrong size on UPyBuffAbility_10130_10391041");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391041;
 
 }
 

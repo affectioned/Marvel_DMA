@@ -17,59 +17,44 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_SaleItem.WBP_Common_SaleItem_C
-// 0x0090 (0x06C8 - 0x0638)
+// 0x0090 (0x06D0 - 0x0640)
 class UWBP_Common_SaleItem_C final : public UPyWidget_Common_SaleItem
 {
 public:
-	class UMarvelHorizontalBox*                   HBox_Price;                                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line_Left;                                     // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line_Right;                                    // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Price_Line_1;                                  // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Access;                                    // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Panel_Price01;                                     // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Panel_Price02;                                     // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Access;                                    // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Access;                                       // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_GetTime;                                      // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Lv1_Y_C*                WBP_Btn;                                           // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Lv1_W_C*                WBP_Btn_W;                                         // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Lv0_Y_C*                WBP_Common_Btn_Lv0_R;                              // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Item_Tag_Blue_C*                   WBP_Item_Tag_Blue;                                 // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mall_Price_C*                      WBP_Mall_Price01;                                  // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mall_Price_C*                      WBP_Mall_Price02;                                  // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Privilege_Switcher_C*              WBP_Privilege_Tips;                                // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Lv2_B_C*                WBP_Unequip_Btn;                                   // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Price;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line_Left;                                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line_Right;                                    // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Price_Line_1;                                  // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Access;                                    // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Panel_Price01;                                     // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Panel_Price02;                                     // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Access;                                    // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Access;                                       // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_GetTime;                                      // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Lv1_Y_C*                WBP_Btn;                                           // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Lv1_W_C*                WBP_Btn_W;                                         // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Lv0_Y_C*                WBP_Common_Btn_Lv0_R;                              // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Item_Tag_Blue_C*                   WBP_Item_Tag_Blue;                                 // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mall_Price_C*                      WBP_Mall_Price01;                                  // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mall_Price_C*                      WBP_Mall_Price02;                                  // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Privilege_Switcher_C*              WBP_Privilege_Tips;                                // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Lv2_B_C*                WBP_Unequip_Btn;                                   // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_SaleItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_SaleItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_SaleItem_C")
 	}
 	static class UWBP_Common_SaleItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_SaleItem_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_SaleItem_C) == 0x000008, "Wrong alignment on UWBP_Common_SaleItem_C");
-static_assert(sizeof(UWBP_Common_SaleItem_C) == 0x0006C8, "Wrong size on UWBP_Common_SaleItem_C");
-static_assert(offsetof(UWBP_Common_SaleItem_C, HBox_Price) == 0x000638, "Member 'UWBP_Common_SaleItem_C::HBox_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Img_Line_Left) == 0x000640, "Member 'UWBP_Common_SaleItem_C::Img_Line_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Img_Line_Right) == 0x000648, "Member 'UWBP_Common_SaleItem_C::Img_Line_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Img_Price_Line_1) == 0x000650, "Member 'UWBP_Common_SaleItem_C::Img_Price_Line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Overlay_Access) == 0x000658, "Member 'UWBP_Common_SaleItem_C::Overlay_Access' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Panel_Price01) == 0x000660, "Member 'UWBP_Common_SaleItem_C::Panel_Price01' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Panel_Price02) == 0x000668, "Member 'UWBP_Common_SaleItem_C::Panel_Price02' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, SizeBox_Access) == 0x000670, "Member 'UWBP_Common_SaleItem_C::SizeBox_Access' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Text_Access) == 0x000678, "Member 'UWBP_Common_SaleItem_C::Text_Access' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, Text_GetTime) == 0x000680, "Member 'UWBP_Common_SaleItem_C::Text_GetTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Btn) == 0x000688, "Member 'UWBP_Common_SaleItem_C::WBP_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Btn_W) == 0x000690, "Member 'UWBP_Common_SaleItem_C::WBP_Btn_W' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Common_Btn_Lv0_R) == 0x000698, "Member 'UWBP_Common_SaleItem_C::WBP_Common_Btn_Lv0_R' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Item_Tag_Blue) == 0x0006A0, "Member 'UWBP_Common_SaleItem_C::WBP_Item_Tag_Blue' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Mall_Price01) == 0x0006A8, "Member 'UWBP_Common_SaleItem_C::WBP_Mall_Price01' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Mall_Price02) == 0x0006B0, "Member 'UWBP_Common_SaleItem_C::WBP_Mall_Price02' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Privilege_Tips) == 0x0006B8, "Member 'UWBP_Common_SaleItem_C::WBP_Privilege_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SaleItem_C, WBP_Unequip_Btn) == 0x0006C0, "Member 'UWBP_Common_SaleItem_C::WBP_Unequip_Btn' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_SaleItem_C;
 
 }
 

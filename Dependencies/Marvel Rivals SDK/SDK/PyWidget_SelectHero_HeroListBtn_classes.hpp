@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "PyWidget_Button_classes.hpp"
 
@@ -18,45 +19,52 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_HeroListBtn.PyWidget_SelectHero_HeroListBtn
-// 0x00D8 (0x0800 - 0x0728)
+// 0x0138 (0x08B8 - 0x0780)
 class UPyWidget_SelectHero_HeroListBtn : public UPyWidget_Button
 {
 public:
-	int32                                         HeroID;                                            // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPreview;                                         // 0x072C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelected;                                        // 0x072D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUnlock;                                          // 0x072E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelectable;                                      // 0x072F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsTeamSelected;                                    // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBaned;                                           // 0x0731(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPicked;                                          // 0x0732(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CanInteract;                                       // 0x0733(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BtnNormalOpacity;                                  // 0x0734(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BtnSelectedOpacity;                                // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BtnLockAndTeamSelectedOpacity;                     // 0x073C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BtnUnSelectableOpacity;                            // 0x0740(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_744[0x4];                                      // 0x0744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Btn_Default_Bg;                                    // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Hover_Bg;                                      // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Select_Bg;                                     // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Select_BanPick_Bg;                             // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Confirm_Bg;                                    // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Hover_Frame;                                   // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Select_Frame;                                  // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Select_Ban_Frame;                              // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Select_Pick_Frame;                             // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Confirm_Frame;                                 // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_TeammateConfirm_Frame;                         // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Locked_Frame;                                  // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Pick_Frame;                                    // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Btn_Ban_Frame;                                     // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                NormalBtnOffset;                                   // 0x07B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                PreviewBtnOffset;                                  // 0x07C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         CursorAdsorptionCheckTime;                         // 0x07D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7DC[0x4];                                      // 0x07DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnHovered;                                 // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadLeft2DAction;                               // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPreview)> OnIsPreview;                                      // 0x07F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         HeroID;                                            // 0x0780(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPreview;                                         // 0x0784(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelected;                                        // 0x0785(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUnlock;                                          // 0x0786(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelectable;                                      // 0x0787(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTeamSelected;                                    // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBaned;                                           // 0x0789(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPicked;                                          // 0x078A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsWin;                                             // 0x078B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLoss;                                            // 0x078C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanInteract;                                       // 0x078D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_78E[0x2];                                      // 0x078E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BtnNormalOpacity;                                  // 0x0790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BtnSelectedOpacity;                                // 0x0794(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BtnLockAndTeamSelectedOpacity;                     // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BtnUnSelectableOpacity;                            // 0x079C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DynamicBtnNormalOpacity;                           // 0x07A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DynamicBtnSelectedOpacity;                         // 0x07A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DynamicBtnLockAndTeamSelectedOpacity;              // 0x07A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DynamicBtnUnSelectableOpacity;                     // 0x07AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Default_Bg;                                    // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Hover_Bg;                                      // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Select_Bg;                                     // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Select_BanPick_Bg;                             // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Confirm_Bg;                                    // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Hover_Frame;                                   // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Select_Frame;                                  // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Select_Ban_Frame;                              // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Select_Pick_Frame;                             // 0x07F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Confirm_Frame;                                 // 0x07F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_TeammateConfirm_Frame;                         // 0x0800(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Locked_Frame;                                  // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Pick_Frame;                                    // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Btn_Ban_Frame;                                     // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EHeroRole, class UTexture2D*>            HeroRoleIcons;                                     // 0x0820(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMargin                                NormalBtnOffset;                                   // 0x0870(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                PreviewBtnOffset;                                  // 0x0880(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         CursorAdsorptionCheckTime;                         // 0x0890(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_894[0x4];                                      // 0x0894(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnHovered;                                 // 0x0898(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadLeft2DAction;                               // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPreview)> OnIsPreview;                                      // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -70,6 +78,8 @@ public:
 	void SetIsUnlock(bool IsUnlock_0);
 	void SetIsBaned(bool IsBaned_0);
 	void SetIsPicked(bool IsPicked_0);
+	void SetIsWin(bool IsWin_0);
+	void SetIsLoss(bool IsLoss_0);
 	void SetCanInteract(bool CanInteract_0);
 	void SetIsHover(bool IsHover_0);
 	void SetBtnIsPressed(bool IsBtnPressed_0);
@@ -78,48 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_HeroListBtn">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_HeroListBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_HeroListBtn")
 	}
 	static class UPyWidget_SelectHero_HeroListBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_HeroListBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_HeroListBtn) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_HeroListBtn");
-static_assert(sizeof(UPyWidget_SelectHero_HeroListBtn) == 0x000800, "Wrong size on UPyWidget_SelectHero_HeroListBtn");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, HeroID) == 0x000728, "Member 'UPyWidget_SelectHero_HeroListBtn::HeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsPreview) == 0x00072C, "Member 'UPyWidget_SelectHero_HeroListBtn::IsPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsSelected) == 0x00072D, "Member 'UPyWidget_SelectHero_HeroListBtn::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsUnlock) == 0x00072E, "Member 'UPyWidget_SelectHero_HeroListBtn::IsUnlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsSelectable) == 0x00072F, "Member 'UPyWidget_SelectHero_HeroListBtn::IsSelectable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsTeamSelected) == 0x000730, "Member 'UPyWidget_SelectHero_HeroListBtn::IsTeamSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsBaned) == 0x000731, "Member 'UPyWidget_SelectHero_HeroListBtn::IsBaned' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, IsPicked) == 0x000732, "Member 'UPyWidget_SelectHero_HeroListBtn::IsPicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, CanInteract) == 0x000733, "Member 'UPyWidget_SelectHero_HeroListBtn::CanInteract' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, BtnNormalOpacity) == 0x000734, "Member 'UPyWidget_SelectHero_HeroListBtn::BtnNormalOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, BtnSelectedOpacity) == 0x000738, "Member 'UPyWidget_SelectHero_HeroListBtn::BtnSelectedOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, BtnLockAndTeamSelectedOpacity) == 0x00073C, "Member 'UPyWidget_SelectHero_HeroListBtn::BtnLockAndTeamSelectedOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, BtnUnSelectableOpacity) == 0x000740, "Member 'UPyWidget_SelectHero_HeroListBtn::BtnUnSelectableOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Default_Bg) == 0x000748, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Default_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Hover_Bg) == 0x000750, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Hover_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Select_Bg) == 0x000758, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Select_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Select_BanPick_Bg) == 0x000760, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Select_BanPick_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Confirm_Bg) == 0x000768, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Confirm_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Hover_Frame) == 0x000770, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Hover_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Select_Frame) == 0x000778, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Select_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Select_Ban_Frame) == 0x000780, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Select_Ban_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Select_Pick_Frame) == 0x000788, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Select_Pick_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Confirm_Frame) == 0x000790, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Confirm_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_TeammateConfirm_Frame) == 0x000798, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_TeammateConfirm_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Locked_Frame) == 0x0007A0, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Locked_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Pick_Frame) == 0x0007A8, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Pick_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, Btn_Ban_Frame) == 0x0007B0, "Member 'UPyWidget_SelectHero_HeroListBtn::Btn_Ban_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, NormalBtnOffset) == 0x0007B8, "Member 'UPyWidget_SelectHero_HeroListBtn::NormalBtnOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, PreviewBtnOffset) == 0x0007C8, "Member 'UPyWidget_SelectHero_HeroListBtn::PreviewBtnOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, CursorAdsorptionCheckTime) == 0x0007D8, "Member 'UPyWidget_SelectHero_HeroListBtn::CursorAdsorptionCheckTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, AkEvent_OnHovered) == 0x0007E0, "Member 'UPyWidget_SelectHero_HeroListBtn::AkEvent_OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, GamepadLeft2DAction) == 0x0007E8, "Member 'UPyWidget_SelectHero_HeroListBtn::GamepadLeft2DAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtn, OnIsPreview) == 0x0007F0, "Member 'UPyWidget_SelectHero_HeroListBtn::OnIsPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_HeroListBtn;
 
 }
 

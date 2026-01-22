@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_SpectatingControls.PyWidget_Replay_SpectatingControls
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Replay_SpectatingControls final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PresetCameraItemHideNumber;                        // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PresetCameraItemHideNumber;                        // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_SpectatingControls">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_SpectatingControls")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_SpectatingControls")
 	}
 	static class UPyWidget_Replay_SpectatingControls* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_SpectatingControls>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_SpectatingControls) == 0x000008, "Wrong alignment on UPyWidget_Replay_SpectatingControls");
-static_assert(sizeof(UPyWidget_Replay_SpectatingControls) == 0x0005C0, "Wrong size on UPyWidget_Replay_SpectatingControls");
-static_assert(offsetof(UPyWidget_Replay_SpectatingControls, PresetCameraItemHideNumber) == 0x0005BC, "Member 'UPyWidget_Replay_SpectatingControls::PresetCameraItemHideNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_SpectatingControls;
 
 }
 

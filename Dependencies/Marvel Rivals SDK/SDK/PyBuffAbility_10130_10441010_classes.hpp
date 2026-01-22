@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
@@ -28,19 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_10130_104419">();
+		STATIC_CLASS_IMPL("PyConfig_10130_104419")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_10130_104419")
 	}
 	static class UPyConfig_10130_104419* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_10130_104419>();
 	}
 };
-static_assert(alignof(UPyConfig_10130_104419) == 0x000008, "Wrong alignment on UPyConfig_10130_104419");
-static_assert(sizeof(UPyConfig_10130_104419) == 0x000100, "Wrong size on UPyConfig_10130_104419");
-static_assert(offsetof(UPyConfig_10130_104419, CancelAbilitiesWithTag) == 0x000098, "Member 'UPyConfig_10130_104419::CancelAbilitiesWithTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_10130_104419;
 
 // PythonClass PyBuffAbility_10130_10441010.PyAbility_10130_104419
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_10130_104419 : public UAbility_108
 {
 public:
@@ -53,22 +55,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104419">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104419")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104419")
 	}
 	static class UPyAbility_10130_104419* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104419>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104419) == 0x000008, "Wrong alignment on UPyAbility_10130_104419");
-static_assert(sizeof(UPyAbility_10130_104419) == 0x0029F8, "Wrong size on UPyAbility_10130_104419");
+DUMPER7_ASSERTS_UPyAbility_10130_104419;
 
 // PythonClass PyBuffAbility_10130_10441010.PyBuffAbility_10130_10443291
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_10443291 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         NextAbilityID;                                     // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NextAbilityID;                                     // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -80,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10443291">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10443291")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10443291")
 	}
 	static class UPyBuffAbility_10130_10443291* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10443291>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10443291) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10443291");
-static_assert(sizeof(UPyBuffAbility_10130_10443291) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10443291");
-static_assert(offsetof(UPyBuffAbility_10130_10443291, NextAbilityID) == 0x001A30, "Member 'UPyBuffAbility_10130_10443291::NextAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10443291;
 
 }
 

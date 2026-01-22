@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyMarvelLevelCtrlPawn.PyMarvelLevelCtrlPawn
-// 0x0000 (0x07C0 - 0x07C0)
+// 0x0000 (0x07E0 - 0x07E0)
 class APyMarvelLevelCtrlPawn : public AMarvelLevelCtrlPawn
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelLevelCtrlPawn">();
+		STATIC_CLASS_IMPL("PyMarvelLevelCtrlPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelLevelCtrlPawn")
 	}
 	static class APyMarvelLevelCtrlPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelLevelCtrlPawn>();
 	}
 };
-static_assert(alignof(APyMarvelLevelCtrlPawn) == 0x000010, "Wrong alignment on APyMarvelLevelCtrlPawn");
-static_assert(sizeof(APyMarvelLevelCtrlPawn) == 0x0007C0, "Wrong size on APyMarvelLevelCtrlPawn");
+DUMPER7_ASSERTS_APyMarvelLevelCtrlPawn;
 
 }
 

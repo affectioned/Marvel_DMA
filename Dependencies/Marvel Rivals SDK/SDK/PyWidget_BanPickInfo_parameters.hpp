@@ -21,9 +21,16 @@ struct PyWidget_BanPickInfo_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BanPickInfo_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BanPickInfo_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BanPickInfo_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BanPickInfo_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BanPickInfo_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_BanPickInfo_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BanPickInfo_OnCascadingVisibleChanged;
+
+// PythonFunction PyWidget_BanPickInfo.PyWidget_BanPickInfo.OnAnimationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_BanPickInfo_OnAnimationFinished final
+{
+public:
+	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_BanPickInfo_OnAnimationFinished;
 
 }
 

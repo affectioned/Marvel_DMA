@@ -21,9 +21,7 @@ struct PyWidget_SelectHeroPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHeroPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_SelectHeroPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_SelectHeroPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_SelectHeroPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_SelectHeroPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_SelectHeroPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHeroPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_SelectHeroPanel.PyWidget_SelectHeroPanel.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SelectHeroPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHeroPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_SelectHeroPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_SelectHeroPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_SelectHeroPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_SelectHeroPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_SelectHeroPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHeroPanel_OnVisibleChanged;
 
 // PythonFunction PyWidget_SelectHeroPanel.PyWidget_SelectHeroPanel.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_SelectHeroPanel_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHeroPanel_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_SelectHeroPanel_ShouldEnableInput");
-static_assert(sizeof(PyWidget_SelectHeroPanel_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_SelectHeroPanel_ShouldEnableInput");
-static_assert(offsetof(PyWidget_SelectHeroPanel_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_SelectHeroPanel_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHeroPanel_ShouldEnableInput;
 
 // PythonFunction PyWidget_SelectHeroPanel.PyWidget_SelectHeroPanel.GetEnableRegisterInputContextBp
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp) == 0x000001, "Wrong alignment on PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp");
-static_assert(sizeof(PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp) == 0x000001, "Wrong size on PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp");
-static_assert(offsetof(PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp, ReturnValue) == 0x000000, "Member 'PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHeroPanel_GetEnableRegisterInputContextBp;
 
 // PythonFunction PyWidget_SelectHeroPanel.PyWidget_SelectHeroPanel.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_SelectHeroPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHeroPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_SelectHeroPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_SelectHeroPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_SelectHeroPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_SelectHeroPanel_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_SelectHeroPanel_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHeroPanel_OnCascadingVisibleChanged;
 
 }
 

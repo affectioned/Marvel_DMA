@@ -48,25 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProtectCover">();
+		STATIC_CLASS_IMPL("PyProtectCover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProtectCover")
 	}
 	static class APyProtectCover* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProtectCover>();
 	}
 };
-static_assert(alignof(APyProtectCover) == 0x000010, "Wrong alignment on APyProtectCover");
-static_assert(sizeof(APyProtectCover) == 0x000730, "Wrong size on APyProtectCover");
-static_assert(offsetof(APyProtectCover, LSCoverRed) == 0x0006E0, "Member 'APyProtectCover::LSCoverRed' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, LSCoverBlue) == 0x0006E8, "Member 'APyProtectCover::LSCoverBlue' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, LSCoverDoor) == 0x0006F0, "Member 'APyProtectCover::LSCoverDoor' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, AtmosphereDefault) == 0x0006F8, "Member 'APyProtectCover::AtmosphereDefault' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, AtmosphereRed) == 0x000700, "Member 'APyProtectCover::AtmosphereRed' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, AtmosphereBlue) == 0x000708, "Member 'APyProtectCover::AtmosphereBlue' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, AtmosphereLight) == 0x000710, "Member 'APyProtectCover::AtmosphereLight' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, BlueCoverAudio) == 0x000718, "Member 'APyProtectCover::BlueCoverAudio' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, RedCoverAudio) == 0x000720, "Member 'APyProtectCover::RedCoverAudio' has a wrong offset!");
-static_assert(offsetof(APyProtectCover, CurOwnerShip) == 0x000728, "Member 'APyProtectCover::CurOwnerShip' has a wrong offset!");
+DUMPER7_ASSERTS_APyProtectCover;
 
 }
 

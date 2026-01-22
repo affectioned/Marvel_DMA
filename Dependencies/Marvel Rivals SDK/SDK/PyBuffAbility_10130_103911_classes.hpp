@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_classes.hpp"
-#include "Hero_1039_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Hero_1039_classes.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_103911.PyBuffAbility_10130_10391031
-// 0x0028 (0x1730 - 0x1708)
+// 0x0028 (0x1888 - 0x1860)
 class UPyBuffAbility_10130_10391031 : public UBuffAbility_10390102
 {
 public:
-	TArray<int32>                                 AbilityIDs;                                        // 0x1708(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         FixedRecoverValue;                                 // 0x1718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnergyTag;                                         // 0x171C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OtherReplyBuffID;                                  // 0x1728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AbilityIDs;                                        // 0x1860(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         FixedRecoverValue;                                 // 0x1870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x1874(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OtherReplyBuffID;                                  // 0x1880(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -36,27 +36,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391031">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391031")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391031")
 	}
 	static class UPyBuffAbility_10130_10391031* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391031>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391031) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391031");
-static_assert(sizeof(UPyBuffAbility_10130_10391031) == 0x001730, "Wrong size on UPyBuffAbility_10130_10391031");
-static_assert(offsetof(UPyBuffAbility_10130_10391031, AbilityIDs) == 0x001708, "Member 'UPyBuffAbility_10130_10391031::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391031, FixedRecoverValue) == 0x001718, "Member 'UPyBuffAbility_10130_10391031::FixedRecoverValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391031, EnergyTag) == 0x00171C, "Member 'UPyBuffAbility_10130_10391031::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391031, OtherReplyBuffID) == 0x001728, "Member 'UPyBuffAbility_10130_10391031::OtherReplyBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391031;
 
 // PythonClass PyBuffAbility_10130_103911.PyBuffAbility_10130_10391032
-// 0x0010 (0x1AD0 - 0x1AC0)
+// 0x0010 (0x1AF0 - 0x1AE0)
 class UPyBuffAbility_10130_10391032 : public UAbility_10130_10391032
 {
 public:
-	float                                         FixedRecoverValue;                                 // 0x1AC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnergyTag;                                         // 0x1AC4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FixedRecoverValue;                                 // 0x1AE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x1AE4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -66,17 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391032">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391032")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391032")
 	}
 	static class UPyBuffAbility_10130_10391032* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391032>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391032) == 0x000010, "Wrong alignment on UPyBuffAbility_10130_10391032");
-static_assert(sizeof(UPyBuffAbility_10130_10391032) == 0x001AD0, "Wrong size on UPyBuffAbility_10130_10391032");
-static_assert(offsetof(UPyBuffAbility_10130_10391032, FixedRecoverValue) == 0x001AC0, "Member 'UPyBuffAbility_10130_10391032::FixedRecoverValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391032, EnergyTag) == 0x001AC4, "Member 'UPyBuffAbility_10130_10391032::EnergyTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391032;
 
 }
 

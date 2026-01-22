@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyPayload_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "PyPayload_classes.hpp"
 
 
 namespace SDK
@@ -46,7 +46,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadV2">();
+		STATIC_CLASS_IMPL("PyPayloadV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadV2")
 	}
 	static class APyPayloadV2* GetDefaultObj()
 	{
@@ -54,17 +58,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyPayloadV2) == 0x000010, "Wrong alignment on APyPayloadV2");
-static_assert(sizeof(APyPayloadV2) == 0x000B70, "Wrong size on APyPayloadV2");
-static_assert(offsetof(APyPayloadV2, PayloadTeamComponent) == 0x000AB8, "Member 'APyPayloadV2::PayloadTeamComponent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, PlayerPenetrationCheck) == 0x000AC0, "Member 'APyPayloadV2::PlayerPenetrationCheck' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, PayloadMoveComponent) == 0x000AC8, "Member 'APyPayloadV2::PayloadMoveComponent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, LevelScopeCheckComponentBP) == 0x000AD0, "Member 'APyPayloadV2::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, SkeletalMesh) == 0x000AD8, "Member 'APyPayloadV2::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, TeamID) == 0x000AE0, "Member 'APyPayloadV2::TeamID' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, TraceList) == 0x000AE8, "Member 'APyPayloadV2::TraceList' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, MeshBias) == 0x000B00, "Member 'APyPayloadV2::MeshBias' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2, UseMeshBias) == 0x000B60, "Member 'APyPayloadV2::UseMeshBias' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadV2;
 
 }
 

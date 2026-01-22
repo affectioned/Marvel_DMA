@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMoveNodes">();
+		STATIC_CLASS_IMPL("PyLevelMoveNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMoveNodes")
 	}
 	static class UPyLevelMoveNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMoveNodes>();
 	}
 };
-static_assert(alignof(UPyLevelMoveNodes) == 0x000008, "Wrong alignment on UPyLevelMoveNodes");
-static_assert(sizeof(UPyLevelMoveNodes) == 0x000030, "Wrong size on UPyLevelMoveNodes");
+DUMPER7_ASSERTS_UPyLevelMoveNodes;
 
 }
 

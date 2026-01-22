@@ -24,22 +24,25 @@ class ULeagueClash_CardItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LeagueClash_CardItemData">();
+		STATIC_CLASS_IMPL("LeagueClash_CardItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeagueClash_CardItemData")
 	}
 	static class ULeagueClash_CardItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeagueClash_CardItemData>();
 	}
 };
-static_assert(alignof(ULeagueClash_CardItemData) == 0x000008, "Wrong alignment on ULeagueClash_CardItemData");
-static_assert(sizeof(ULeagueClash_CardItemData) == 0x000030, "Wrong size on ULeagueClash_CardItemData");
+DUMPER7_ASSERTS_ULeagueClash_CardItemData;
 
 // PythonClass PyWidget_LeagueClash_CardItem.PyWidget_LeagueClash_CardItem
-// 0x0008 (0x0578 - 0x0570)
+// 0x0008 (0x0580 - 0x0578)
 class UPyWidget_LeagueClash_CardItem final : public UWidget_ListEntry
 {
 public:
-	class UTexture2D*                             DefaultBackground;                                 // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultBackground;                                 // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueClash_CardItem">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueClash_CardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueClash_CardItem")
 	}
 	static class UPyWidget_LeagueClash_CardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueClash_CardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueClash_CardItem) == 0x000008, "Wrong alignment on UPyWidget_LeagueClash_CardItem");
-static_assert(sizeof(UPyWidget_LeagueClash_CardItem) == 0x000578, "Wrong size on UPyWidget_LeagueClash_CardItem");
-static_assert(offsetof(UPyWidget_LeagueClash_CardItem, DefaultBackground) == 0x000570, "Member 'UPyWidget_LeagueClash_CardItem::DefaultBackground' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueClash_CardItem;
 
 }
 

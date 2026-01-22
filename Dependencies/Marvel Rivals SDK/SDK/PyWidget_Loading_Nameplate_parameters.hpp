@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_Loading_Nameplate.PyWidget_Loading_Nameplate.OnLoadingVisibleChanged
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_Loading_Nameplate_OnLoadingVisibleChanged final
-{
-public:
-	bool                                          bVisible_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Loading_Nameplate_OnLoadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Loading_Nameplate_OnLoadingVisibleChanged");
-static_assert(sizeof(PyWidget_Loading_Nameplate_OnLoadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Loading_Nameplate_OnLoadingVisibleChanged");
-static_assert(offsetof(PyWidget_Loading_Nameplate_OnLoadingVisibleChanged, bVisible_0) == 0x000000, "Member 'PyWidget_Loading_Nameplate_OnLoadingVisibleChanged::bVisible_0' has a wrong offset!");
-
 // PythonFunction PyWidget_Loading_Nameplate.PyWidget_Loading_Nameplate.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
 struct PyWidget_Loading_Nameplate_OnAnimationFinished final
@@ -32,9 +21,7 @@ struct PyWidget_Loading_Nameplate_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Loading_Nameplate_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Loading_Nameplate_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Loading_Nameplate_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Loading_Nameplate_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Loading_Nameplate_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Loading_Nameplate_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Loading_Nameplate_OnAnimationFinished;
 
 }
 

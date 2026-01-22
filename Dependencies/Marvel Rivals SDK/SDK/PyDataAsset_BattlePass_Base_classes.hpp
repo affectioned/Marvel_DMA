@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "const_battlepass_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyDataAsset_BattlePass_Base.PyDataAsset_BattlePass_Base
-// 0x04C0 (0x04F8 - 0x0038)
+// 0x0588 (0x05C0 - 0x0038)
 class UPyDataAsset_BattlePass_Base final : public UPrimaryDataAsset
 {
 public:
@@ -70,69 +70,35 @@ public:
 	TArray<struct FMargin>                        ListBg_Img_Positons;                               // 0x0478(0x0010)(Edit, NativeAccessSpecifierPublic)
 	TArray<struct FVector2D>                      ListBg_Img_Sizes;                                  // 0x0488(0x0010)(Edit, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                CurrencyPageBgList;                                // 0x0498(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HomePage_GlowColor;                                // 0x04A8(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HomePage_GlowAddColor;                             // 0x04BC(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HomePage_NoBuyGlowColor;                           // 0x04D0(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HomePage_NoBuyGlowAddColor;                        // 0x04E4(0x0014)(Edit, NativeAccessSpecifierPublic)
+	bool                                          IsCoverPageBtnCommonColor;                         // 0x04A8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            PageBtnNormalColor;                                // 0x04AC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PageBtnLockColor;                                  // 0x04C0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PageBtnSelectColor;                                // 0x04D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PageBtnHoverColor;                                 // 0x04E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PageBreatheNormalColor;                            // 0x04FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HomePage_GlowColor;                                // 0x0510(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HomePage_GlowAddColor;                             // 0x0524(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HomePage_NoBuyGlowColor;                           // 0x0538(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HomePage_NoBuyGlowAddColor;                        // 0x054C(0x0014)(Edit, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              HomeCoverTexture;                                  // 0x0560(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterialInterface>      UnlockPage_Title_FontMaterial;                     // 0x0590(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_BattlePass_Base">();
+		STATIC_CLASS_IMPL("PyDataAsset_BattlePass_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_BattlePass_Base")
 	}
 	static class UPyDataAsset_BattlePass_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_BattlePass_Base>();
 	}
 };
-static_assert(alignof(UPyDataAsset_BattlePass_Base) == 0x000008, "Wrong alignment on UPyDataAsset_BattlePass_Base");
-static_assert(sizeof(UPyDataAsset_BattlePass_Base) == 0x0004F8, "Wrong size on UPyDataAsset_BattlePass_Base");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionRange_Buy) == 0x000038, "Member 'UPyDataAsset_BattlePass_Base::InteractionRange_Buy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionOffset_Buy) == 0x000048, "Member 'UPyDataAsset_BattlePass_Base::InteractionOffset_Buy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionRange_NotBuy) == 0x000058, "Member 'UPyDataAsset_BattlePass_Base::InteractionRange_NotBuy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionOffset_NotBuy) == 0x000068, "Member 'UPyDataAsset_BattlePass_Base::InteractionOffset_NotBuy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurveScaleRate) == 0x000078, "Member 'UPyDataAsset_BattlePass_Base::CurveScaleRate' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurveColorRate) == 0x000080, "Member 'UPyDataAsset_BattlePass_Base::CurveColorRate' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurveHoverFlowRate) == 0x000088, "Member 'UPyDataAsset_BattlePass_Base::CurveHoverFlowRate' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurveHoverAnimLoopRate) == 0x000090, "Member 'UPyDataAsset_BattlePass_Base::CurveHoverAnimLoopRate' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurveUnhoverAnimLoopRate) == 0x000098, "Member 'UPyDataAsset_BattlePass_Base::CurveUnhoverAnimLoopRate' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, AkEvent_Loop) == 0x0000A0, "Member 'UPyDataAsset_BattlePass_Base::AkEvent_Loop' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, AkEvent_CrystalHover) == 0x0000D0, "Member 'UPyDataAsset_BattlePass_Base::AkEvent_CrystalHover' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, AkEvent_CrystalClick) == 0x000100, "Member 'UPyDataAsset_BattlePass_Base::AkEvent_CrystalClick' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, AkEvent_CrystalUpgrade) == 0x000130, "Member 'UPyDataAsset_BattlePass_Base::AkEvent_CrystalUpgrade' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CrystalWidgetLocation) == 0x000160, "Member 'UPyDataAsset_BattlePass_Base::CrystalWidgetLocation' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionReddotPos_Buy) == 0x000178, "Member 'UPyDataAsset_BattlePass_Base::InteractionReddotPos_Buy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, InteractionReddotPos_NotBuy) == 0x000188, "Member 'UPyDataAsset_BattlePass_Base::InteractionReddotPos_NotBuy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, Curves_Crystal_Current) == 0x000198, "Member 'UPyDataAsset_BattlePass_Base::Curves_Crystal_Current' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, Curves_Crystal_History) == 0x0001E8, "Member 'UPyDataAsset_BattlePass_Base::Curves_Crystal_History' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BubbleTips_Actived) == 0x000238, "Member 'UPyDataAsset_BattlePass_Base::BubbleTips_Actived' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BubbleTips_NotActived) == 0x000268, "Member 'UPyDataAsset_BattlePass_Base::BubbleTips_NotActived' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, StartBtn_SeasonLogoNormalIcon) == 0x000298, "Member 'UPyDataAsset_BattlePass_Base::StartBtn_SeasonLogoNormalIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, StartBtn_SeasonLogoHoverIcon) == 0x0002C0, "Member 'UPyDataAsset_BattlePass_Base::StartBtn_SeasonLogoHoverIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, RegainBpIcon) == 0x0002E8, "Member 'UPyDataAsset_BattlePass_Base::RegainBpIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, bUsePropViewStyle) == 0x000310, "Member 'UPyDataAsset_BattlePass_Base::bUsePropViewStyle' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, Title_Position) == 0x000314, "Member 'UPyDataAsset_BattlePass_Base::Title_Position' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_NormalIcon) == 0x000328, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_NormalIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_HoveredIcon) == 0x000350, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_HoveredIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_PressedIcon) == 0x000378, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_PressedIcon' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_NormalSize) == 0x0003A0, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_NormalSize' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_HoveredSize) == 0x0003B0, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_HoveredSize' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpBtn_PressedSize) == 0x0003C0, "Member 'UPyDataAsset_BattlePass_Base::LevelUpBtn_PressedSize' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpText_Color) == 0x0003D0, "Member 'UPyDataAsset_BattlePass_Base::LevelUpText_Color' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, LevelUpText_Position) == 0x0003E4, "Member 'UPyDataAsset_BattlePass_Base::LevelUpText_Position' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BackHomeBtn_Logo) == 0x0003F8, "Member 'UPyDataAsset_BattlePass_Base::BackHomeBtn_Logo' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BackHomeImg_Size) == 0x000420, "Member 'UPyDataAsset_BattlePass_Base::BackHomeImg_Size' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BackHomeImg_Color) == 0x000430, "Member 'UPyDataAsset_BattlePass_Base::BackHomeImg_Color' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BackHomeBtn_Position) == 0x000444, "Member 'UPyDataAsset_BattlePass_Base::BackHomeBtn_Position' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, BackHomeText_Position) == 0x000454, "Member 'UPyDataAsset_BattlePass_Base::BackHomeText_Position' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, ListBg_Img_Icons) == 0x000468, "Member 'UPyDataAsset_BattlePass_Base::ListBg_Img_Icons' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, ListBg_Img_Positons) == 0x000478, "Member 'UPyDataAsset_BattlePass_Base::ListBg_Img_Positons' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, ListBg_Img_Sizes) == 0x000488, "Member 'UPyDataAsset_BattlePass_Base::ListBg_Img_Sizes' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, CurrencyPageBgList) == 0x000498, "Member 'UPyDataAsset_BattlePass_Base::CurrencyPageBgList' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, HomePage_GlowColor) == 0x0004A8, "Member 'UPyDataAsset_BattlePass_Base::HomePage_GlowColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, HomePage_GlowAddColor) == 0x0004BC, "Member 'UPyDataAsset_BattlePass_Base::HomePage_GlowAddColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, HomePage_NoBuyGlowColor) == 0x0004D0, "Member 'UPyDataAsset_BattlePass_Base::HomePage_NoBuyGlowColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_BattlePass_Base, HomePage_NoBuyGlowAddColor) == 0x0004E4, "Member 'UPyDataAsset_BattlePass_Base::HomePage_NoBuyGlowAddColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_BattlePass_Base;
 
 }
 

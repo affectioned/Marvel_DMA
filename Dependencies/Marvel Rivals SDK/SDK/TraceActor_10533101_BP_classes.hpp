@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TraceActor_10533101_BP.TraceActor_10533101_BP_C
-// 0x0000 (0x3970 - 0x3970)
+// 0x0000 (0x4030 - 0x4030)
 class ATraceActor_10533101_BP_C final : public APlacementActor_10533101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TraceActor_10533101_BP_C">();
+		BP_STATIC_CLASS_IMPL("TraceActor_10533101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceActor_10533101_BP_C")
 	}
 	static class ATraceActor_10533101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATraceActor_10533101_BP_C>();
 	}
 };
-static_assert(alignof(ATraceActor_10533101_BP_C) == 0x000010, "Wrong alignment on ATraceActor_10533101_BP_C");
-static_assert(sizeof(ATraceActor_10533101_BP_C) == 0x003970, "Wrong size on ATraceActor_10533101_BP_C");
+DUMPER7_ASSERTS_ATraceActor_10533101_BP_C;
 
 }
 

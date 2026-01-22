@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyBlackWidowCharacter.PyBlackWidowCharacter
-// 0x0020 (0x2220 - 0x2200)
+// 0x0020 (0x2330 - 0x2310)
 class APyBlackWidowCharacter : public ABlackWidowCharacter
 {
 public:
-	float                                         ReplicateCapsuleRadiusScale;                       // 0x2200(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2204[0x4];                                     // 0x2204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnNeedTryPullBullet;                               // 0x2208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         ReplicateCapsuleRadiusScale;                       // 0x2310(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2314[0x4];                                     // 0x2314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnNeedTryPullBullet;                               // 0x2318(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -33,34 +33,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBlackWidowCharacter">();
+		STATIC_CLASS_IMPL("PyBlackWidowCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBlackWidowCharacter")
 	}
 	static class APyBlackWidowCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBlackWidowCharacter>();
 	}
 };
-static_assert(alignof(APyBlackWidowCharacter) == 0x000010, "Wrong alignment on APyBlackWidowCharacter");
-static_assert(sizeof(APyBlackWidowCharacter) == 0x002220, "Wrong size on APyBlackWidowCharacter");
-static_assert(offsetof(APyBlackWidowCharacter, ReplicateCapsuleRadiusScale) == 0x002200, "Member 'APyBlackWidowCharacter::ReplicateCapsuleRadiusScale' has a wrong offset!");
-static_assert(offsetof(APyBlackWidowCharacter, OnNeedTryPullBullet) == 0x002208, "Member 'APyBlackWidowCharacter::OnNeedTryPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_APyBlackWidowCharacter;
 
 // PythonClass PyBlackWidowCharacter.PyBlackWidowChildActor
-// 0x0000 (0x0E20 - 0x0E20)
+// 0x0000 (0x0E30 - 0x0E30)
 class APyBlackWidowChildActor final : public AMarvelCharacterChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBlackWidowChildActor">();
+		STATIC_CLASS_IMPL("PyBlackWidowChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBlackWidowChildActor")
 	}
 	static class APyBlackWidowChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBlackWidowChildActor>();
 	}
 };
-static_assert(alignof(APyBlackWidowChildActor) == 0x000010, "Wrong alignment on APyBlackWidowChildActor");
-static_assert(sizeof(APyBlackWidowChildActor) == 0x000E20, "Wrong size on APyBlackWidowChildActor");
+DUMPER7_ASSERTS_APyBlackWidowChildActor;
 
 }
 

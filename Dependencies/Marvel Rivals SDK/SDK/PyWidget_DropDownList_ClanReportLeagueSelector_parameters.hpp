@@ -21,9 +21,7 @@ struct PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID) == 0x000004, "Wrong alignment on PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID");
-static_assert(sizeof(PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID) == 0x000004, "Wrong size on PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID");
-static_assert(offsetof(PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID, ItemID_0) == 0x000000, "Member 'PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_ClanReportLeagueSelector_SetItemID;
 
 }
 

@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_TaskCenter.PyWidget_Halloween_Task_Center
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Halloween_Task_Center final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TipsShowTime;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ShowAudio;                                         // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TipsShowTime;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ShowAudio;                                         // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Task_Center">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Task_Center")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Task_Center")
 	}
 	static class UPyWidget_Halloween_Task_Center* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Task_Center>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Task_Center) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Task_Center");
-static_assert(sizeof(UPyWidget_Halloween_Task_Center) == 0x0005C8, "Wrong size on UPyWidget_Halloween_Task_Center");
-static_assert(offsetof(UPyWidget_Halloween_Task_Center, TipsShowTime) == 0x0005BC, "Member 'UPyWidget_Halloween_Task_Center::TipsShowTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Task_Center, ShowAudio) == 0x0005C0, "Member 'UPyWidget_Halloween_Task_Center::ShowAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Task_Center;
 
 }
 

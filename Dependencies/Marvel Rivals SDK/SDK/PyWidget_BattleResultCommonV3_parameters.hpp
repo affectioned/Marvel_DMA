@@ -21,9 +21,7 @@ struct PyWidget_BattleResultMedalTipsUnit_OnIconLoaded final
 public:
 	class UObject*                                Img_Picture;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleResultMedalTipsUnit_OnIconLoaded) == 0x000008, "Wrong alignment on PyWidget_BattleResultMedalTipsUnit_OnIconLoaded");
-static_assert(sizeof(PyWidget_BattleResultMedalTipsUnit_OnIconLoaded) == 0x000008, "Wrong size on PyWidget_BattleResultMedalTipsUnit_OnIconLoaded");
-static_assert(offsetof(PyWidget_BattleResultMedalTipsUnit_OnIconLoaded, Img_Picture) == 0x000000, "Member 'PyWidget_BattleResultMedalTipsUnit_OnIconLoaded::Img_Picture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleResultMedalTipsUnit_OnIconLoaded;
 
 }
 

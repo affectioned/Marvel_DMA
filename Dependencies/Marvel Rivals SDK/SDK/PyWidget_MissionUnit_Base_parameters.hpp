@@ -21,9 +21,7 @@ struct PyWidget_MissionUnit_Base_SetMissionData final
 public:
 	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MissionUnit_Base_SetMissionData) == 0x000008, "Wrong alignment on PyWidget_MissionUnit_Base_SetMissionData");
-static_assert(sizeof(PyWidget_MissionUnit_Base_SetMissionData) == 0x000008, "Wrong size on PyWidget_MissionUnit_Base_SetMissionData");
-static_assert(offsetof(PyWidget_MissionUnit_Base_SetMissionData, ItemObject) == 0x000000, "Member 'PyWidget_MissionUnit_Base_SetMissionData::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MissionUnit_Base_SetMissionData;
 
 }
 

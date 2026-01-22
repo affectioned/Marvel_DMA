@@ -39,14 +39,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 Slots;                                             // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFxMaterialsCurve) == 0x000008, "Wrong alignment on FFxMaterialsCurve");
-static_assert(sizeof(FFxMaterialsCurve) == 0x000038, "Wrong size on FFxMaterialsCurve");
-static_assert(offsetof(FFxMaterialsCurve, ParameterName) == 0x000000, "Member 'FFxMaterialsCurve::ParameterName' has a wrong offset!");
-static_assert(offsetof(FFxMaterialsCurve, ValueCurve) == 0x000010, "Member 'FFxMaterialsCurve::ValueCurve' has a wrong offset!");
-static_assert(offsetof(FFxMaterialsCurve, XScale) == 0x000018, "Member 'FFxMaterialsCurve::XScale' has a wrong offset!");
-static_assert(offsetof(FFxMaterialsCurve, YScale) == 0x00001C, "Member 'FFxMaterialsCurve::YScale' has a wrong offset!");
-static_assert(offsetof(FFxMaterialsCurve, bUseSlot) == 0x000020, "Member 'FFxMaterialsCurve::bUseSlot' has a wrong offset!");
-static_assert(offsetof(FFxMaterialsCurve, Slots) == 0x000028, "Member 'FFxMaterialsCurve::Slots' has a wrong offset!");
+DUMPER7_ASSERTS_FFxMaterialsCurve;
 
 }
 

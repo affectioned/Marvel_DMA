@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Hero_1047_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 
 
@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10475101_BP.Summoned_10475101_BP_C
-// 0x0010 (0x0B80 - 0x0B70)
+// 0x0010 (0x0BA0 - 0x0B90)
 class ASummoned_10475101_BP_C final : public ASummoned_10475101
 {
 public:
-	uint8                                         Pad_B68[0x8];                                      // 0x0B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B70(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_B88[0x8];                                      // 0x0B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_Summoned_10475101_BP(int32 EntryPoint);
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10475101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10475101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10475101_BP_C")
 	}
 	static class ASummoned_10475101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10475101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10475101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10475101_BP_C");
-static_assert(sizeof(ASummoned_10475101_BP_C) == 0x000B80, "Wrong size on ASummoned_10475101_BP_C");
-static_assert(offsetof(ASummoned_10475101_BP_C, UberGraphFrame) == 0x000B70, "Member 'ASummoned_10475101_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10475101_BP_C;
 
 }
 

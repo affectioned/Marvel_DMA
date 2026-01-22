@@ -26,35 +26,38 @@ class UShowItemObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ShowItemObject">();
+		STATIC_CLASS_IMPL("ShowItemObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowItemObject")
 	}
 	static class UShowItemObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowItemObject>();
 	}
 };
-static_assert(alignof(UShowItemObject) == 0x000008, "Wrong alignment on UShowItemObject");
-static_assert(sizeof(UShowItemObject) == 0x000030, "Wrong size on UShowItemObject");
+DUMPER7_ASSERTS_UShowItemObject;
 
 // PythonClass PyWidget_HeroSystem_ShowItem.PyWidget_HeroSystem_ShowItem
-// 0x0050 (0x0910 - 0x08C0)
+// 0x0050 (0x0970 - 0x0920)
 class UPyWidget_HeroSystem_ShowItem final : public UPyWidget_BaseCommonButton
 {
 public:
-	struct FLinearColor                           MaskUnLockColor;                                   // 0x08B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MaskLockedColor;                                   // 0x08C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemID;                                            // 0x08D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemType                                     ItemType;                                          // 0x08E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUnlock;                                          // 0x08E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEquip;                                           // 0x08EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEmpty;                                           // 0x08EB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelection;                                       // 0x08EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNew;                                             // 0x08ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemQualityType                              Quality;                                           // 0x08EE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8EF[0x1];                                      // 0x08EF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             IconEmpty;                                         // 0x08F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaskUnLockColor;                                   // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaskLockedColor;                                   // 0x0928(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemID;                                            // 0x0938(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemType                                     ItemType;                                          // 0x0948(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUnlock;                                          // 0x0949(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEquip;                                           // 0x094A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEmpty;                                           // 0x094B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelection;                                       // 0x094C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNew;                                             // 0x094D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemQualityType                              Quality;                                           // 0x094E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_94F[0x1];                                      // 0x094F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             IconEmpty;                                         // 0x0950(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -69,28 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_ShowItem">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_ShowItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_ShowItem")
 	}
 	static class UPyWidget_HeroSystem_ShowItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_ShowItem>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_ShowItem) == 0x000010, "Wrong alignment on UPyWidget_HeroSystem_ShowItem");
-static_assert(sizeof(UPyWidget_HeroSystem_ShowItem) == 0x000910, "Wrong size on UPyWidget_HeroSystem_ShowItem");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, MaskUnLockColor) == 0x0008B8, "Member 'UPyWidget_HeroSystem_ShowItem::MaskUnLockColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, MaskLockedColor) == 0x0008C8, "Member 'UPyWidget_HeroSystem_ShowItem::MaskLockedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, ItemID) == 0x0008D8, "Member 'UPyWidget_HeroSystem_ShowItem::ItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, ItemType) == 0x0008E8, "Member 'UPyWidget_HeroSystem_ShowItem::ItemType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IsUnlock) == 0x0008E9, "Member 'UPyWidget_HeroSystem_ShowItem::IsUnlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IsEquip) == 0x0008EA, "Member 'UPyWidget_HeroSystem_ShowItem::IsEquip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IsEmpty) == 0x0008EB, "Member 'UPyWidget_HeroSystem_ShowItem::IsEmpty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IsSelection) == 0x0008EC, "Member 'UPyWidget_HeroSystem_ShowItem::IsSelection' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IsNew) == 0x0008ED, "Member 'UPyWidget_HeroSystem_ShowItem::IsNew' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, Quality) == 0x0008EE, "Member 'UPyWidget_HeroSystem_ShowItem::Quality' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, IconEmpty) == 0x0008F0, "Member 'UPyWidget_HeroSystem_ShowItem::IconEmpty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, Texture_Privilege_National_Icon) == 0x0008F8, "Member 'UPyWidget_HeroSystem_ShowItem::Texture_Privilege_National_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ShowItem, Texture_Privilege_Oversea_Icon) == 0x000900, "Member 'UPyWidget_HeroSystem_ShowItem::Texture_Privilege_Oversea_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_ShowItem;
 
 }
 

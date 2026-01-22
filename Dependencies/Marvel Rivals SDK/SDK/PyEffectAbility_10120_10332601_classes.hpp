@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyEffectAbility_10120_10332601.PyEffectAbility_10120_10332601
-// 0x0028 (0x1398 - 0x1370)
+// 0x0028 (0x13B0 - 0x1388)
 class UPyEffectAbility_10120_10332601 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         InitBaseDamage;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseDamagePerKill;                                 // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxLevel;                                          // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETotalHealthType                              TotalDamageType;                                   // 0x137C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137D[0x3];                                     // 0x137D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InitPercentDamage;                                 // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PercentDamagePerKill;                              // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BuffCue;                                           // 0x1388(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InitBaseDamage;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseDamagePerKill;                                 // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxLevel;                                          // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETotalHealthType                              TotalDamageType;                                   // 0x1394(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1395[0x3];                                     // 0x1395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InitPercentDamage;                                 // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PercentDamagePerKill;                              // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BuffCue;                                           // 0x13A0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_10120_10332601">();
+		STATIC_CLASS_IMPL("PyEffectAbility_10120_10332601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_10120_10332601")
 	}
 	static class UPyEffectAbility_10120_10332601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_10120_10332601>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_10120_10332601) == 0x000008, "Wrong alignment on UPyEffectAbility_10120_10332601");
-static_assert(sizeof(UPyEffectAbility_10120_10332601) == 0x001398, "Wrong size on UPyEffectAbility_10120_10332601");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, InitBaseDamage) == 0x001370, "Member 'UPyEffectAbility_10120_10332601::InitBaseDamage' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, BaseDamagePerKill) == 0x001374, "Member 'UPyEffectAbility_10120_10332601::BaseDamagePerKill' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, MaxLevel) == 0x001378, "Member 'UPyEffectAbility_10120_10332601::MaxLevel' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, TotalDamageType) == 0x00137C, "Member 'UPyEffectAbility_10120_10332601::TotalDamageType' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, InitPercentDamage) == 0x001380, "Member 'UPyEffectAbility_10120_10332601::InitPercentDamage' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, PercentDamagePerKill) == 0x001384, "Member 'UPyEffectAbility_10120_10332601::PercentDamagePerKill' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10120_10332601, BuffCue) == 0x001388, "Member 'UPyEffectAbility_10120_10332601::BuffCue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_10120_10332601;
 
 }
 

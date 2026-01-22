@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "DeveloperSettings_classes.hpp"
-#include "InterchangePipelines_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "InterchangePipelines_structs.hpp"
+#include "InterchangeFactoryNodes_structs.hpp"
 #include "InterchangeCore_structs.hpp"
 #include "InterchangeCore_classes.hpp"
-#include "InterchangeFactoryNodes_structs.hpp"
+#include "DeveloperSettings_classes.hpp"
 
 
 namespace SDK
@@ -44,28 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericCommonMeshesProperties">();
+		STATIC_CLASS_IMPL("InterchangeGenericCommonMeshesProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericCommonMeshesProperties")
 	}
 	static class UInterchangeGenericCommonMeshesProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericCommonMeshesProperties>();
 	}
 };
-static_assert(alignof(UInterchangeGenericCommonMeshesProperties) == 0x000008, "Wrong alignment on UInterchangeGenericCommonMeshesProperties");
-static_assert(sizeof(UInterchangeGenericCommonMeshesProperties) == 0x000100, "Wrong size on UInterchangeGenericCommonMeshesProperties");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, ForceAllMeshAsType) == 0x0000F0, "Member 'UInterchangeGenericCommonMeshesProperties::ForceAllMeshAsType' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bImportLods) == 0x0000F1, "Member 'UInterchangeGenericCommonMeshesProperties::bImportLods' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bBakeMeshes) == 0x0000F2, "Member 'UInterchangeGenericCommonMeshesProperties::bBakeMeshes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, VertexColorImportOption) == 0x0000F3, "Member 'UInterchangeGenericCommonMeshesProperties::VertexColorImportOption' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, VertexOverrideColor) == 0x0000F4, "Member 'UInterchangeGenericCommonMeshesProperties::VertexOverrideColor' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bRecomputeNormals) == 0x0000F8, "Member 'UInterchangeGenericCommonMeshesProperties::bRecomputeNormals' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bRecomputeTangents) == 0x0000F9, "Member 'UInterchangeGenericCommonMeshesProperties::bRecomputeTangents' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bUseMikkTSpace) == 0x0000FA, "Member 'UInterchangeGenericCommonMeshesProperties::bUseMikkTSpace' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bComputeWeightedNormals) == 0x0000FB, "Member 'UInterchangeGenericCommonMeshesProperties::bComputeWeightedNormals' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bUseHighPrecisionTangentBasis) == 0x0000FC, "Member 'UInterchangeGenericCommonMeshesProperties::bUseHighPrecisionTangentBasis' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bUseFullPrecisionUVs) == 0x0000FD, "Member 'UInterchangeGenericCommonMeshesProperties::bUseFullPrecisionUVs' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bUseBackwardsCompatibleF16TruncUVs) == 0x0000FE, "Member 'UInterchangeGenericCommonMeshesProperties::bUseBackwardsCompatibleF16TruncUVs' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonMeshesProperties, bRemoveDegenerates) == 0x0000FF, "Member 'UInterchangeGenericCommonMeshesProperties::bRemoveDegenerates' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericCommonMeshesProperties;
 
 // Class InterchangePipelines.InterchangeGenericCommonSkeletalMeshesAndAnimationsProperties
 // 0x0010 (0x0100 - 0x00F0)
@@ -83,20 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericCommonSkeletalMeshesAndAnimationsProperties">();
+		STATIC_CLASS_IMPL("InterchangeGenericCommonSkeletalMeshesAndAnimationsProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericCommonSkeletalMeshesAndAnimationsProperties")
 	}
 	static class UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties>();
 	}
 };
-static_assert(alignof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties) == 0x000008, "Wrong alignment on UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties");
-static_assert(sizeof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties) == 0x000100, "Wrong size on UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties");
-static_assert(offsetof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties, bImportOnlyAnimations) == 0x0000F0, "Member 'UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties::bImportOnlyAnimations' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties, Skeleton) == 0x0000F4, "Member 'UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties::Skeleton' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties, bImportMeshesInBoneHierarchy) == 0x0000FC, "Member 'UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties::bImportMeshesInBoneHierarchy' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties, bUseT0AsRefPose) == 0x0000FD, "Member 'UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties::bUseT0AsRefPose' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties, bConvertStaticsWithMorphTargetsToSkeletals) == 0x0000FE, "Member 'UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties::bConvertStaticsWithMorphTargetsToSkeletals' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties;
 
 // Class InterchangePipelines.GLTFPipelineSettings
 // 0x0058 (0x00A0 - 0x0048)
@@ -109,16 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GLTFPipelineSettings">();
+		STATIC_CLASS_IMPL("GLTFPipelineSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GLTFPipelineSettings")
 	}
 	static class UGLTFPipelineSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGLTFPipelineSettings>();
 	}
 };
-static_assert(alignof(UGLTFPipelineSettings) == 0x000008, "Wrong alignment on UGLTFPipelineSettings");
-static_assert(sizeof(UGLTFPipelineSettings) == 0x0000A0, "Wrong size on UGLTFPipelineSettings");
-static_assert(offsetof(UGLTFPipelineSettings, MaterialParents) == 0x000048, "Member 'UGLTFPipelineSettings::MaterialParents' has a wrong offset!");
+DUMPER7_ASSERTS_UGLTFPipelineSettings;
 
 // Class InterchangePipelines.InterchangeGLTFPipeline
 // 0x0010 (0x0100 - 0x00F0)
@@ -132,16 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGLTFPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGLTFPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGLTFPipeline")
 	}
 	static class UInterchangeGLTFPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGLTFPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGLTFPipeline) == 0x000008, "Wrong alignment on UInterchangeGLTFPipeline");
-static_assert(sizeof(UInterchangeGLTFPipeline) == 0x000100, "Wrong size on UInterchangeGLTFPipeline");
-static_assert(offsetof(UInterchangeGLTFPipeline, bUseGLTFMaterialInstanceLibrary) == 0x0000F8, "Member 'UInterchangeGLTFPipeline::bUseGLTFMaterialInstanceLibrary' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGLTFPipeline;
 
 // Class InterchangePipelines.MaterialXPipelineSettings
 // 0x0050 (0x0098 - 0x0048)
@@ -153,16 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialXPipelineSettings">();
+		STATIC_CLASS_IMPL("MaterialXPipelineSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialXPipelineSettings")
 	}
 	static class UMaterialXPipelineSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialXPipelineSettings>();
 	}
 };
-static_assert(alignof(UMaterialXPipelineSettings) == 0x000008, "Wrong alignment on UMaterialXPipelineSettings");
-static_assert(sizeof(UMaterialXPipelineSettings) == 0x000098, "Wrong size on UMaterialXPipelineSettings");
-static_assert(offsetof(UMaterialXPipelineSettings, PredefinedSurfaceShaders) == 0x000048, "Member 'UMaterialXPipelineSettings::PredefinedSurfaceShaders' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialXPipelineSettings;
 
 // Class InterchangePipelines.InterchangeMaterialXPipeline
 // 0x0008 (0x00F8 - 0x00F0)
@@ -174,15 +168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialXPipeline">();
+		STATIC_CLASS_IMPL("InterchangeMaterialXPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialXPipeline")
 	}
 	static class UInterchangeMaterialXPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialXPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialXPipeline) == 0x000008, "Wrong alignment on UInterchangeMaterialXPipeline");
-static_assert(sizeof(UInterchangeMaterialXPipeline) == 0x0000F8, "Wrong size on UInterchangeMaterialXPipeline");
+DUMPER7_ASSERTS_UInterchangeMaterialXPipeline;
 
 // Class InterchangePipelines.InterchangeGenericAnimationPipeline
 // 0x0070 (0x0160 - 0x00F0)
@@ -217,35 +214,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericAnimationPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericAnimationPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericAnimationPipeline")
 	}
 	static class UInterchangeGenericAnimationPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericAnimationPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericAnimationPipeline) == 0x000008, "Wrong alignment on UInterchangeGenericAnimationPipeline");
-static_assert(sizeof(UInterchangeGenericAnimationPipeline) == 0x000160, "Wrong size on UInterchangeGenericAnimationPipeline");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, CommonSkeletalMeshesAndAnimationsProperties) == 0x0000F0, "Member 'UInterchangeGenericAnimationPipeline::CommonSkeletalMeshesAndAnimationsProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, CommonMeshesProperties) == 0x0000F8, "Member 'UInterchangeGenericAnimationPipeline::CommonMeshesProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bImportAnimations) == 0x000100, "Member 'UInterchangeGenericAnimationPipeline::bImportAnimations' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bImportBoneTracks) == 0x000101, "Member 'UInterchangeGenericAnimationPipeline::bImportBoneTracks' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, AnimationRange) == 0x000102, "Member 'UInterchangeGenericAnimationPipeline::AnimationRange' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, FrameImportRange) == 0x000104, "Member 'UInterchangeGenericAnimationPipeline::FrameImportRange' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bUse30HzToBakeBoneAnimation) == 0x00010C, "Member 'UInterchangeGenericAnimationPipeline::bUse30HzToBakeBoneAnimation' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, CustomBoneAnimationSampleRate) == 0x000110, "Member 'UInterchangeGenericAnimationPipeline::CustomBoneAnimationSampleRate' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bSnapToClosestFrameBoundary) == 0x000114, "Member 'UInterchangeGenericAnimationPipeline::bSnapToClosestFrameBoundary' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bImportCustomAttribute) == 0x000115, "Member 'UInterchangeGenericAnimationPipeline::bImportCustomAttribute' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bAddCurveMetadataToSkeleton) == 0x000116, "Member 'UInterchangeGenericAnimationPipeline::bAddCurveMetadataToSkeleton' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bSetMaterialDriveParameterOnCustomAttribute) == 0x000117, "Member 'UInterchangeGenericAnimationPipeline::bSetMaterialDriveParameterOnCustomAttribute' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, MaterialCurveSuffixes) == 0x000118, "Member 'UInterchangeGenericAnimationPipeline::MaterialCurveSuffixes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bRemoveCurveRedundantKeys) == 0x000128, "Member 'UInterchangeGenericAnimationPipeline::bRemoveCurveRedundantKeys' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bDoNotImportCurveWithZero) == 0x000129, "Member 'UInterchangeGenericAnimationPipeline::bDoNotImportCurveWithZero' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bDeleteExistingNonCurveCustomAttributes) == 0x00012A, "Member 'UInterchangeGenericAnimationPipeline::bDeleteExistingNonCurveCustomAttributes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bDeleteExistingCustomAttributeCurves) == 0x00012B, "Member 'UInterchangeGenericAnimationPipeline::bDeleteExistingCustomAttributeCurves' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bDeleteExistingMorphTargetCurves) == 0x00012C, "Member 'UInterchangeGenericAnimationPipeline::bDeleteExistingMorphTargetCurves' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, SourceAnimationName) == 0x000130, "Member 'UInterchangeGenericAnimationPipeline::SourceAnimationName' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAnimationPipeline, bSceneImport) == 0x000140, "Member 'UInterchangeGenericAnimationPipeline::bSceneImport' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericAnimationPipeline;
 
 // Class InterchangePipelines.InterchangeGenericAssetsPipeline
 // 0x0090 (0x0180 - 0x00F0)
@@ -270,26 +250,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericAssetsPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericAssetsPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericAssetsPipeline")
 	}
 	static class UInterchangeGenericAssetsPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericAssetsPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericAssetsPipeline) == 0x000008, "Wrong alignment on UInterchangeGenericAssetsPipeline");
-static_assert(sizeof(UInterchangeGenericAssetsPipeline) == 0x000180, "Wrong size on UInterchangeGenericAssetsPipeline");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, ReimportStrategy) == 0x0000F0, "Member 'UInterchangeGenericAssetsPipeline::ReimportStrategy' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, bUseSourceNameForAsset) == 0x0000F1, "Member 'UInterchangeGenericAssetsPipeline::bUseSourceNameForAsset' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, AssetName) == 0x0000F8, "Member 'UInterchangeGenericAssetsPipeline::AssetName' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, ImportOffsetTranslation) == 0x000108, "Member 'UInterchangeGenericAssetsPipeline::ImportOffsetTranslation' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, ImportOffsetRotation) == 0x000120, "Member 'UInterchangeGenericAssetsPipeline::ImportOffsetRotation' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, ImportOffsetUniformScale) == 0x000138, "Member 'UInterchangeGenericAssetsPipeline::ImportOffsetUniformScale' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, CommonMeshesProperties) == 0x000140, "Member 'UInterchangeGenericAssetsPipeline::CommonMeshesProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, CommonSkeletalMeshesAndAnimationsProperties) == 0x000148, "Member 'UInterchangeGenericAssetsPipeline::CommonSkeletalMeshesAndAnimationsProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, MeshPipeline) == 0x000150, "Member 'UInterchangeGenericAssetsPipeline::MeshPipeline' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, AnimationPipeline) == 0x000158, "Member 'UInterchangeGenericAssetsPipeline::AnimationPipeline' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericAssetsPipeline, MaterialPipeline) == 0x000160, "Member 'UInterchangeGenericAssetsPipeline::MaterialPipeline' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericAssetsPipeline;
 
 // Class InterchangePipelines.InterchangeGenericMaterialPipeline
 // 0x00A0 (0x0190 - 0x00F0)
@@ -309,21 +281,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericMaterialPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericMaterialPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericMaterialPipeline")
 	}
 	static class UInterchangeGenericMaterialPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericMaterialPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericMaterialPipeline) == 0x000008, "Wrong alignment on UInterchangeGenericMaterialPipeline");
-static_assert(sizeof(UInterchangeGenericMaterialPipeline) == 0x000190, "Wrong size on UInterchangeGenericMaterialPipeline");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, bImportMaterials) == 0x0000F0, "Member 'UInterchangeGenericMaterialPipeline::bImportMaterials' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, AssetName) == 0x0000F8, "Member 'UInterchangeGenericMaterialPipeline::AssetName' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, MaterialImport) == 0x000108, "Member 'UInterchangeGenericMaterialPipeline::MaterialImport' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, ParentMaterial) == 0x000110, "Member 'UInterchangeGenericMaterialPipeline::ParentMaterial' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, TexturePipeline) == 0x000138, "Member 'UInterchangeGenericMaterialPipeline::TexturePipeline' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMaterialPipeline, BaseNodeContainer) == 0x000140, "Member 'UInterchangeGenericMaterialPipeline::BaseNodeContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericMaterialPipeline;
 
 // Class InterchangePipelines.InterchangeGenericMeshPipeline
 // 0x00D8 (0x01C8 - 0x00F0)
@@ -373,49 +342,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericMeshPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericMeshPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericMeshPipeline")
 	}
 	static class UInterchangeGenericMeshPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericMeshPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericMeshPipeline) == 0x000008, "Wrong alignment on UInterchangeGenericMeshPipeline");
-static_assert(sizeof(UInterchangeGenericMeshPipeline) == 0x0001C8, "Wrong size on UInterchangeGenericMeshPipeline");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, CommonMeshesProperties) == 0x0000F0, "Member 'UInterchangeGenericMeshPipeline::CommonMeshesProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, CommonSkeletalMeshesAndAnimationsProperties) == 0x0000F8, "Member 'UInterchangeGenericMeshPipeline::CommonSkeletalMeshesAndAnimationsProperties' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bImportStaticMeshes) == 0x000100, "Member 'UInterchangeGenericMeshPipeline::bImportStaticMeshes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bCombineStaticMeshes) == 0x000101, "Member 'UInterchangeGenericMeshPipeline::bCombineStaticMeshes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, LodGroup) == 0x000104, "Member 'UInterchangeGenericMeshPipeline::LodGroup' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bImportCollision) == 0x000110, "Member 'UInterchangeGenericMeshPipeline::bImportCollision' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bImportCollisionAccordingToMeshName) == 0x000111, "Member 'UInterchangeGenericMeshPipeline::bImportCollisionAccordingToMeshName' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bOneConvexHullPerUCX) == 0x000112, "Member 'UInterchangeGenericMeshPipeline::bOneConvexHullPerUCX' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bBuildNanite) == 0x000113, "Member 'UInterchangeGenericMeshPipeline::bBuildNanite' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bBuildReversedIndexBuffer) == 0x000114, "Member 'UInterchangeGenericMeshPipeline::bBuildReversedIndexBuffer' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bGenerateLightmapUVs) == 0x000115, "Member 'UInterchangeGenericMeshPipeline::bGenerateLightmapUVs' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bGenerateDistanceFieldAsIfTwoSided) == 0x000116, "Member 'UInterchangeGenericMeshPipeline::bGenerateDistanceFieldAsIfTwoSided' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bSupportFaceRemap) == 0x000117, "Member 'UInterchangeGenericMeshPipeline::bSupportFaceRemap' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, MinLightmapResolution) == 0x000118, "Member 'UInterchangeGenericMeshPipeline::MinLightmapResolution' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, SrcLightmapIndex) == 0x00011C, "Member 'UInterchangeGenericMeshPipeline::SrcLightmapIndex' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, DstLightmapIndex) == 0x000120, "Member 'UInterchangeGenericMeshPipeline::DstLightmapIndex' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, BuildScale3D) == 0x000128, "Member 'UInterchangeGenericMeshPipeline::BuildScale3D' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, DistanceFieldResolutionScale) == 0x000140, "Member 'UInterchangeGenericMeshPipeline::DistanceFieldResolutionScale' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, DistanceFieldReplacementMesh) == 0x000144, "Member 'UInterchangeGenericMeshPipeline::DistanceFieldReplacementMesh' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, MaxLumenMeshCards) == 0x00014C, "Member 'UInterchangeGenericMeshPipeline::MaxLumenMeshCards' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bImportSkeletalMeshes) == 0x000150, "Member 'UInterchangeGenericMeshPipeline::bImportSkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, SkeletalMeshImportContentType) == 0x000151, "Member 'UInterchangeGenericMeshPipeline::SkeletalMeshImportContentType' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, LastSkeletalMeshImportContentType) == 0x000152, "Member 'UInterchangeGenericMeshPipeline::LastSkeletalMeshImportContentType' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bCombineSkeletalMeshes) == 0x000153, "Member 'UInterchangeGenericMeshPipeline::bCombineSkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bImportMorphTargets) == 0x000154, "Member 'UInterchangeGenericMeshPipeline::bImportMorphTargets' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bUpdateSkeletonReferencePose) == 0x000155, "Member 'UInterchangeGenericMeshPipeline::bUpdateSkeletonReferencePose' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bCreatePhysicsAsset) == 0x000156, "Member 'UInterchangeGenericMeshPipeline::bCreatePhysicsAsset' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, PhysicsAsset) == 0x000158, "Member 'UInterchangeGenericMeshPipeline::PhysicsAsset' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, bUseHighPrecisionSkinWeights) == 0x000160, "Member 'UInterchangeGenericMeshPipeline::bUseHighPrecisionSkinWeights' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, ThresholdPosition) == 0x000164, "Member 'UInterchangeGenericMeshPipeline::ThresholdPosition' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, ThresholdTangentNormal) == 0x000168, "Member 'UInterchangeGenericMeshPipeline::ThresholdTangentNormal' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, ThresholdUV) == 0x00016C, "Member 'UInterchangeGenericMeshPipeline::ThresholdUV' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, MorphThresholdPosition) == 0x000170, "Member 'UInterchangeGenericMeshPipeline::MorphThresholdPosition' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericMeshPipeline, BoneInfluenceLimit) == 0x000174, "Member 'UInterchangeGenericMeshPipeline::BoneInfluenceLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericMeshPipeline;
 
 // Class InterchangePipelines.InterchangeGenericLevelPipeline
 // 0x0010 (0x0100 - 0x00F0)
@@ -433,21 +371,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericLevelPipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericLevelPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericLevelPipeline")
 	}
 	static class UInterchangeGenericLevelPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericLevelPipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericLevelPipeline) == 0x000008, "Wrong alignment on UInterchangeGenericLevelPipeline");
-static_assert(sizeof(UInterchangeGenericLevelPipeline) == 0x000100, "Wrong size on UInterchangeGenericLevelPipeline");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, ReimportPropertyStrategy) == 0x0000F0, "Member 'UInterchangeGenericLevelPipeline::ReimportPropertyStrategy' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, bDeleteMissingActors) == 0x0000F1, "Member 'UInterchangeGenericLevelPipeline::bDeleteMissingActors' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, bForceReimportDeletedActors) == 0x0000F2, "Member 'UInterchangeGenericLevelPipeline::bForceReimportDeletedActors' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, bForceReimportDeletedAssets) == 0x0000F3, "Member 'UInterchangeGenericLevelPipeline::bForceReimportDeletedAssets' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, bDeleteMissingAssets) == 0x0000F4, "Member 'UInterchangeGenericLevelPipeline::bDeleteMissingAssets' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericLevelPipeline, bUsePhysicalInsteadOfStandardPerspectiveCamera) == 0x0000F5, "Member 'UInterchangeGenericLevelPipeline::bUsePhysicalInsteadOfStandardPerspectiveCamera' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericLevelPipeline;
 
 // Class InterchangePipelines.InterchangeGenericTexturePipeline
 // 0x0058 (0x0148 - 0x00F0)
@@ -465,19 +400,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeGenericTexturePipeline">();
+		STATIC_CLASS_IMPL("InterchangeGenericTexturePipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeGenericTexturePipeline")
 	}
 	static class UInterchangeGenericTexturePipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeGenericTexturePipeline>();
 	}
 };
-static_assert(alignof(UInterchangeGenericTexturePipeline) == 0x000008, "Wrong alignment on UInterchangeGenericTexturePipeline");
-static_assert(sizeof(UInterchangeGenericTexturePipeline) == 0x000148, "Wrong size on UInterchangeGenericTexturePipeline");
-static_assert(offsetof(UInterchangeGenericTexturePipeline, bImportTextures) == 0x0000F0, "Member 'UInterchangeGenericTexturePipeline::bImportTextures' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericTexturePipeline, AssetName) == 0x0000F8, "Member 'UInterchangeGenericTexturePipeline::AssetName' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericTexturePipeline, bAllowNonPowerOfTwo) == 0x000108, "Member 'UInterchangeGenericTexturePipeline::bAllowNonPowerOfTwo' has a wrong offset!");
-static_assert(offsetof(UInterchangeGenericTexturePipeline, BaseNodeContainer) == 0x000110, "Member 'UInterchangeGenericTexturePipeline::BaseNodeContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UInterchangeGenericTexturePipeline;
 
 // Class InterchangePipelines.InterchangePipelineMeshesUtilities
 // 0x0100 (0x0130 - 0x0030)
@@ -508,15 +442,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePipelineMeshesUtilities">();
+		STATIC_CLASS_IMPL("InterchangePipelineMeshesUtilities")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePipelineMeshesUtilities")
 	}
 	static class UInterchangePipelineMeshesUtilities* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePipelineMeshesUtilities>();
 	}
 };
-static_assert(alignof(UInterchangePipelineMeshesUtilities) == 0x000008, "Wrong alignment on UInterchangePipelineMeshesUtilities");
-static_assert(sizeof(UInterchangePipelineMeshesUtilities) == 0x000130, "Wrong size on UInterchangePipelineMeshesUtilities");
+DUMPER7_ASSERTS_UInterchangePipelineMeshesUtilities;
 
 }
 

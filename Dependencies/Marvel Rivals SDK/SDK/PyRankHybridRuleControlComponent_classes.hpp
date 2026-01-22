@@ -58,36 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRankHybridRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyRankHybridRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRankHybridRuleControlComponent")
 	}
 	static class UPyRankHybridRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRankHybridRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyRankHybridRuleControlComponent) == 0x000008, "Wrong alignment on UPyRankHybridRuleControlComponent");
-static_assert(sizeof(UPyRankHybridRuleControlComponent) == 0x000258, "Wrong size on UPyRankHybridRuleControlComponent");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, AttackScore) == 0x000208, "Member 'UPyRankHybridRuleControlComponent::AttackScore' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, AttackTime) == 0x00020C, "Member 'UPyRankHybridRuleControlComponent::AttackTime' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, AttackMaxProgress) == 0x000210, "Member 'UPyRankHybridRuleControlComponent::AttackMaxProgress' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, AttackMaxDistance) == 0x000214, "Member 'UPyRankHybridRuleControlComponent::AttackMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, DefendScore) == 0x000218, "Member 'UPyRankHybridRuleControlComponent::DefendScore' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, DefendTime) == 0x00021C, "Member 'UPyRankHybridRuleControlComponent::DefendTime' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, DefendMaxProgress) == 0x000220, "Member 'UPyRankHybridRuleControlComponent::DefendMaxProgress' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, DefendMaxDistance) == 0x000224, "Member 'UPyRankHybridRuleControlComponent::DefendMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, LastRoundMaxDistance) == 0x000228, "Member 'UPyRankHybridRuleControlComponent::LastRoundMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundWinnerIsAttacker) == 0x00022C, "Member 'UPyRankHybridRuleControlComponent::RoundWinnerIsAttacker' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, IsInAssault) == 0x00022D, "Member 'UPyRankHybridRuleControlComponent::IsInAssault' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, IsInAssaultLastRound) == 0x00022E, "Member 'UPyRankHybridRuleControlComponent::IsInAssaultLastRound' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, FirstRoundFightTime) == 0x000230, "Member 'UPyRankHybridRuleControlComponent::FirstRoundFightTime' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartAttackScore) == 0x000234, "Member 'UPyRankHybridRuleControlComponent::RoundStartAttackScore' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartAttackTime) == 0x000238, "Member 'UPyRankHybridRuleControlComponent::RoundStartAttackTime' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartAttackMaxProgress) == 0x00023C, "Member 'UPyRankHybridRuleControlComponent::RoundStartAttackMaxProgress' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartAttackMaxDistance) == 0x000240, "Member 'UPyRankHybridRuleControlComponent::RoundStartAttackMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartDefendScore) == 0x000244, "Member 'UPyRankHybridRuleControlComponent::RoundStartDefendScore' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartDefendTime) == 0x000248, "Member 'UPyRankHybridRuleControlComponent::RoundStartDefendTime' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartDefendMaxProgress) == 0x00024C, "Member 'UPyRankHybridRuleControlComponent::RoundStartDefendMaxProgress' has a wrong offset!");
-static_assert(offsetof(UPyRankHybridRuleControlComponent, RoundStartDefendMaxDistance) == 0x000250, "Member 'UPyRankHybridRuleControlComponent::RoundStartDefendMaxDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRankHybridRuleControlComponent;
 
 }
 

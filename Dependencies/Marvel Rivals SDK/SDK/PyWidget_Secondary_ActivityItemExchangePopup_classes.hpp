@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ActivityItemExchangePopup.PyWidget_Secondary_ActivityItemExchangeJumpPathItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ActivityItemExchangeJumpPathItem final : public UPyMarvelUserWidget
 {
 public:
@@ -30,24 +30,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ActivityItemExchangeJumpPathItem">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ActivityItemExchangeJumpPathItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ActivityItemExchangeJumpPathItem")
 	}
 	static class UPyWidget_Secondary_ActivityItemExchangeJumpPathItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ActivityItemExchangeJumpPathItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ActivityItemExchangeJumpPathItem) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ActivityItemExchangeJumpPathItem");
-static_assert(sizeof(UPyWidget_Secondary_ActivityItemExchangeJumpPathItem) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ActivityItemExchangeJumpPathItem");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ActivityItemExchangeJumpPathItem;
 
 // PythonClass PyWidget_Secondary_ActivityItemExchangePopup.PyWidget_Secondary_ActivityItemExchangePopup
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Secondary_ActivityItemExchangePopup final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_Secondary_ActivityItemExchangeJumpPathItem> JumpItemWidget;          // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FUIActionData>                  ItemUIActionDataList;                              // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_Secondary_ActivityItemExchangeJumpPathItem> JumpItemWidget;          // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FUIActionData>                  ItemUIActionDataList;                              // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,17 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ActivityItemExchangePopup">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ActivityItemExchangePopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ActivityItemExchangePopup")
 	}
 	static class UPyWidget_Secondary_ActivityItemExchangePopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ActivityItemExchangePopup>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ActivityItemExchangePopup) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ActivityItemExchangePopup");
-static_assert(sizeof(UPyWidget_Secondary_ActivityItemExchangePopup) == 0x0005D8, "Wrong size on UPyWidget_Secondary_ActivityItemExchangePopup");
-static_assert(offsetof(UPyWidget_Secondary_ActivityItemExchangePopup, JumpItemWidget) == 0x0005C0, "Member 'UPyWidget_Secondary_ActivityItemExchangePopup::JumpItemWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ActivityItemExchangePopup, ItemUIActionDataList) == 0x0005C8, "Member 'UPyWidget_Secondary_ActivityItemExchangePopup::ItemUIActionDataList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ActivityItemExchangePopup;
 
 }
 

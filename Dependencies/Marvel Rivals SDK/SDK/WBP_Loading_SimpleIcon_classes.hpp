@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Loading_SimpleIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Loading_SimpleIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Loading_SimpleIcon_C")
 	}
 	static class UWBP_Loading_SimpleIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Loading_SimpleIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_Loading_SimpleIcon_C) == 0x000008, "Wrong alignment on UWBP_Loading_SimpleIcon_C");
-static_assert(sizeof(UWBP_Loading_SimpleIcon_C) == 0x0003D0, "Wrong size on UWBP_Loading_SimpleIcon_C");
-static_assert(offsetof(UWBP_Loading_SimpleIcon_C, Img_Loading) == 0x0003B8, "Member 'UWBP_Loading_SimpleIcon_C::Img_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_SimpleIcon_C, Img_Loading_Left) == 0x0003C0, "Member 'UWBP_Loading_SimpleIcon_C::Img_Loading_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_SimpleIcon_C, Img_Loading_Right) == 0x0003C8, "Member 'UWBP_Loading_SimpleIcon_C::Img_Loading_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Loading_SimpleIcon_C;
 
 }
 

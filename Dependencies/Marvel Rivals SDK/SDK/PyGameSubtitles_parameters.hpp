@@ -21,9 +21,7 @@ struct PyWidget_GameSubtitleItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GameSubtitleItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_GameSubtitleItem_PreConstruct");
-static_assert(sizeof(PyWidget_GameSubtitleItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_GameSubtitleItem_PreConstruct");
-static_assert(offsetof(PyWidget_GameSubtitleItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_GameSubtitleItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GameSubtitleItem_PreConstruct;
 
 // PythonFunction PyGameSubtitles.PyWidget_GameSubtitleItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_GameSubtitleItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GameSubtitleItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_GameSubtitleItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_GameSubtitleItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_GameSubtitleItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_GameSubtitleItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_GameSubtitleItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GameSubtitleItem_OnAnimationFinished;
 
 }
 

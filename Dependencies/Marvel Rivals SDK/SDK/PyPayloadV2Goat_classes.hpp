@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadV2Goat">();
+		STATIC_CLASS_IMPL("PyPayloadV2Goat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadV2Goat")
 	}
 	static class APyPayloadV2Goat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPayloadV2Goat>();
 	}
 };
-static_assert(alignof(APyPayloadV2Goat) == 0x000010, "Wrong alignment on APyPayloadV2Goat");
-static_assert(sizeof(APyPayloadV2Goat) == 0x000BB0, "Wrong size on APyPayloadV2Goat");
-static_assert(offsetof(APyPayloadV2Goat, CampFightStartEvent) == 0x000B68, "Member 'APyPayloadV2Goat::CampFightStartEvent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, FinalCheckPointEvent) == 0x000B70, "Member 'APyPayloadV2Goat::FinalCheckPointEvent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, ThreeAttackEvent) == 0x000B78, "Member 'APyPayloadV2Goat::ThreeAttackEvent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, DefendTeamKillEvent) == 0x000B80, "Member 'APyPayloadV2Goat::DefendTeamKillEvent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, MoveBackEvent) == 0x000B88, "Member 'APyPayloadV2Goat::MoveBackEvent' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, Hit20Event) == 0x000B90, "Member 'APyPayloadV2Goat::Hit20Event' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, Hit50Event) == 0x000B98, "Member 'APyPayloadV2Goat::Hit50Event' has a wrong offset!");
-static_assert(offsetof(APyPayloadV2Goat, StopMoveEvent) == 0x000BA0, "Member 'APyPayloadV2Goat::StopMoveEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadV2Goat;
 
 }
 

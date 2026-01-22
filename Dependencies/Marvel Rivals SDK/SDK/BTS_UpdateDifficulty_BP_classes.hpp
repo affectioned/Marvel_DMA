@@ -23,15 +23,18 @@ class UBTS_UpdateDifficulty_BP_C final : public UBTS_PyUpdateDifficulty
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateDifficulty_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateDifficulty_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateDifficulty_BP_C")
 	}
 	static class UBTS_UpdateDifficulty_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateDifficulty_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateDifficulty_BP_C) == 0x000008, "Wrong alignment on UBTS_UpdateDifficulty_BP_C");
-static_assert(sizeof(UBTS_UpdateDifficulty_BP_C) == 0x000108, "Wrong size on UBTS_UpdateDifficulty_BP_C");
+DUMPER7_ASSERTS_UBTS_UpdateDifficulty_BP_C;
 
 }
 

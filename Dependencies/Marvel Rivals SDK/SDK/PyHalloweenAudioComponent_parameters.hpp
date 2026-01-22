@@ -23,9 +23,7 @@ struct PyHalloweenAudioComponent_S_on_protector_change final
 public:
 	class AActor*                                 Protector;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_protector_change) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_protector_change");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_protector_change) == 0x000008, "Wrong size on PyHalloweenAudioComponent_S_on_protector_change");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_protector_change, Protector) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_protector_change::Protector' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_protector_change;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.S_on_protector_attribute_changed
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class AActor*                                 SourceAvatar;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_protector_attribute_changed) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_protector_attribute_changed");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_protector_attribute_changed) == 0x000020, "Wrong size on PyHalloweenAudioComponent_S_on_protector_attribute_changed");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_protector_attribute_changed, SourceAvatar) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_protector_attribute_changed::SourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_protector_attribute_changed, ModifierParameterHandle) == 0x000008, "Member 'PyHalloweenAudioComponent_S_on_protector_attribute_changed::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_protector_attribute_changed;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.OnActorDeath
 // 0x0030 (0x0030 - 0x0000)
@@ -50,12 +45,7 @@ public:
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyHalloweenAudioComponent_OnActorDeath) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_OnActorDeath");
-static_assert(sizeof(PyHalloweenAudioComponent_OnActorDeath) == 0x000030, "Wrong size on PyHalloweenAudioComponent_OnActorDeath");
-static_assert(offsetof(PyHalloweenAudioComponent_OnActorDeath, Killer) == 0x000000, "Member 'PyHalloweenAudioComponent_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(PyHalloweenAudioComponent_OnActorDeath, Target) == 0x000008, "Member 'PyHalloweenAudioComponent_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PyHalloweenAudioComponent_OnActorDeath, ParameterHandle) == 0x000010, "Member 'PyHalloweenAudioComponent_OnActorDeath::ParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyHalloweenAudioComponent_OnActorDeath, ExtraData) == 0x000028, "Member 'PyHalloweenAudioComponent_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_OnActorDeath;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.S_on_player_revive
 // 0x0008 (0x0008 - 0x0000)
@@ -64,9 +54,7 @@ struct PyHalloweenAudioComponent_S_on_player_revive final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_player_revive) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_player_revive");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_player_revive) == 0x000008, "Wrong size on PyHalloweenAudioComponent_S_on_player_revive");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_player_revive, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_player_revive::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_player_revive;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.BroadCastPlayerUseReviveCoin
 // 0x0008 (0x0008 - 0x0000)
@@ -75,9 +63,7 @@ struct PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin");
-static_assert(sizeof(PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin) == 0x000008, "Wrong size on PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin");
-static_assert(offsetof(PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_BroadCastPlayerUseReviveCoin;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.S_on_mission_failed
 // 0x0010 (0x0010 - 0x0000)
@@ -87,10 +73,7 @@ public:
 	class AActor*                                 MissionObj;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         WaveIndex;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_mission_failed) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_mission_failed");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_mission_failed) == 0x000010, "Wrong size on PyHalloweenAudioComponent_S_on_mission_failed");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_mission_failed, MissionObj) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_mission_failed::MissionObj' has a wrong offset!");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_mission_failed, WaveIndex) == 0x000008, "Member 'PyHalloweenAudioComponent_S_on_mission_failed::WaveIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_mission_failed;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.S_on_player_teleport_start
 // 0x0008 (0x0008 - 0x0000)
@@ -99,9 +82,7 @@ struct PyHalloweenAudioComponent_S_on_player_teleport_start final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_player_teleport_start) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_player_teleport_start");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_player_teleport_start) == 0x000008, "Wrong size on PyHalloweenAudioComponent_S_on_player_teleport_start");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_player_teleport_start, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_player_teleport_start::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_player_teleport_start;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.BroadCastPlayerTeleportStart
 // 0x0008 (0x0008 - 0x0000)
@@ -110,9 +91,7 @@ struct PyHalloweenAudioComponent_BroadCastPlayerTeleportStart final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_BroadCastPlayerTeleportStart) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_BroadCastPlayerTeleportStart");
-static_assert(sizeof(PyHalloweenAudioComponent_BroadCastPlayerTeleportStart) == 0x000008, "Wrong size on PyHalloweenAudioComponent_BroadCastPlayerTeleportStart");
-static_assert(offsetof(PyHalloweenAudioComponent_BroadCastPlayerTeleportStart, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_BroadCastPlayerTeleportStart::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_BroadCastPlayerTeleportStart;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.S_on_player_teleport_end
 // 0x0008 (0x0008 - 0x0000)
@@ -121,9 +100,7 @@ struct PyHalloweenAudioComponent_S_on_player_teleport_end final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_S_on_player_teleport_end) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_S_on_player_teleport_end");
-static_assert(sizeof(PyHalloweenAudioComponent_S_on_player_teleport_end) == 0x000008, "Wrong size on PyHalloweenAudioComponent_S_on_player_teleport_end");
-static_assert(offsetof(PyHalloweenAudioComponent_S_on_player_teleport_end, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_S_on_player_teleport_end::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_S_on_player_teleport_end;
 
 // PythonFunction PyHalloweenAudioComponent.PyHalloweenAudioComponent.BroadCastPlayerTeleportEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -132,9 +109,7 @@ struct PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd) == 0x000008, "Wrong alignment on PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd");
-static_assert(sizeof(PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd) == 0x000008, "Wrong size on PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd");
-static_assert(offsetof(PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd, ps) == 0x000000, "Member 'PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenAudioComponent_BroadCastPlayerTeleportEnd;
 
 }
 

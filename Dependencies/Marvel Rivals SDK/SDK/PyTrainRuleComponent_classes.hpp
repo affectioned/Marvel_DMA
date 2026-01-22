@@ -13,15 +13,15 @@
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyTrainRuleComponent.PyTrainConfig
-// 0x01C0 (0x01F0 - 0x0030)
+// 0x0228 (0x0258 - 0x0030)
 class UPyTrainConfig final : public UMarvelRuleConfig
 {
 public:
@@ -36,33 +36,29 @@ public:
 	TArray<struct FTrainCooperateRespawn>         TrainRespawnList;                                  // 0x01D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	float                                         FriendHarmOpenDelay;                               // 0x01E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FriendHarmCloseDelay;                              // 0x01EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FIgnoreCDHeroList;                                 // 0x01F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         NoCDUltimateEnergyBuff;                            // 0x0200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            ExNoCDUltimateEnergyBuff;                          // 0x0208(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainConfig">();
+		STATIC_CLASS_IMPL("PyTrainConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainConfig")
 	}
 	static class UPyTrainConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTrainConfig>();
 	}
 };
-static_assert(alignof(UPyTrainConfig) == 0x000008, "Wrong alignment on UPyTrainConfig");
-static_assert(sizeof(UPyTrainConfig) == 0x0001F0, "Wrong size on UPyTrainConfig");
-static_assert(offsetof(UPyTrainConfig, CustomOpenMap) == 0x000030, "Member 'UPyTrainConfig::CustomOpenMap' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, TrainTag) == 0x000080, "Member 'UPyTrainConfig::TrainTag' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, InTrainBuff) == 0x0000D0, "Member 'UPyTrainConfig::InTrainBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, FriendTrainBuff) == 0x000120, "Member 'UPyTrainConfig::FriendTrainBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, IntervalTimeRecord) == 0x000170, "Member 'UPyTrainConfig::IntervalTimeRecord' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, TeleportBuff) == 0x0001C0, "Member 'UPyTrainConfig::TeleportBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, AIDelayProcess) == 0x0001D0, "Member 'UPyTrainConfig::AIDelayProcess' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, TeleportCD) == 0x0001D4, "Member 'UPyTrainConfig::TeleportCD' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, TrainRespawnList) == 0x0001D8, "Member 'UPyTrainConfig::TrainRespawnList' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, FriendHarmOpenDelay) == 0x0001E8, "Member 'UPyTrainConfig::FriendHarmOpenDelay' has a wrong offset!");
-static_assert(offsetof(UPyTrainConfig, FriendHarmCloseDelay) == 0x0001EC, "Member 'UPyTrainConfig::FriendHarmCloseDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTrainConfig;
 
 // PythonClass PyTrainRuleComponent.PyTrainRuleComponent
-// 0x0208 (0x0310 - 0x0108)
+// 0x0270 (0x0378 - 0x0108)
 class UPyTrainRuleComponent final : public UPyRuleComponent
 {
 public:
@@ -83,6 +79,10 @@ public:
 	TArray<struct FPracticeRangeModel>            CurModels;                                         // 0x02E0(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerHeroInfo>                HolderMosMosHeroInfo;                              // 0x02F0(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	TArray<struct FPracticeRangeSkinInfo>         HeroUsedSkins;                                     // 0x0300(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FIgnoreCDHeroList;                                 // 0x0310(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         NoCDUltimateEnergyBuff;                            // 0x0320(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            ExNoCDUltimateEnergyBuff;                          // 0x0328(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void NotifyHolderChange(int32 holder_uid);
@@ -98,30 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainRuleComponent">();
+		STATIC_CLASS_IMPL("PyTrainRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainRuleComponent")
 	}
 	static class UPyTrainRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTrainRuleComponent>();
 	}
 };
-static_assert(alignof(UPyTrainRuleComponent) == 0x000008, "Wrong alignment on UPyTrainRuleComponent");
-static_assert(sizeof(UPyTrainRuleComponent) == 0x000310, "Wrong size on UPyTrainRuleComponent");
-static_assert(offsetof(UPyTrainRuleComponent, HolderUID) == 0x000108, "Member 'UPyTrainRuleComponent::HolderUID' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, CustomOpenMap) == 0x000110, "Member 'UPyTrainRuleComponent::CustomOpenMap' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, TrainTag) == 0x000160, "Member 'UPyTrainRuleComponent::TrainTag' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, InTrainBuff) == 0x0001B0, "Member 'UPyTrainRuleComponent::InTrainBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, FriendTrainBuff) == 0x000200, "Member 'UPyTrainRuleComponent::FriendTrainBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, TeleportBuff) == 0x000250, "Member 'UPyTrainRuleComponent::TeleportBuff' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, IntervalTimeRecord) == 0x000260, "Member 'UPyTrainRuleComponent::IntervalTimeRecord' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, bOpenFriendHarm) == 0x0002B0, "Member 'UPyTrainRuleComponent::bOpenFriendHarm' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, CloseSkillCDList) == 0x0002B8, "Member 'UPyTrainRuleComponent::CloseSkillCDList' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, AIDelayProcess) == 0x0002C8, "Member 'UPyTrainRuleComponent::AIDelayProcess' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, TeleportCD) == 0x0002CC, "Member 'UPyTrainRuleComponent::TeleportCD' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, TrainRespawnList) == 0x0002D0, "Member 'UPyTrainRuleComponent::TrainRespawnList' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, CurModels) == 0x0002E0, "Member 'UPyTrainRuleComponent::CurModels' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, HolderMosMosHeroInfo) == 0x0002F0, "Member 'UPyTrainRuleComponent::HolderMosMosHeroInfo' has a wrong offset!");
-static_assert(offsetof(UPyTrainRuleComponent, HeroUsedSkins) == 0x000300, "Member 'UPyTrainRuleComponent::HeroUsedSkins' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTrainRuleComponent;
 
 }
 

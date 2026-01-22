@@ -24,12 +24,7 @@ public:
 	int32                                         time_interval_13_A05B95B046CB178A2D2F858F72033B5F; // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         email_alert_countdown_15_668E91EC4BA7022812BDDFBA0C42B653; // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelActivityRow113_BP) == 0x000004, "Wrong alignment on FMarvelActivityRow113_BP");
-static_assert(sizeof(FMarvelActivityRow113_BP) == 0x000010, "Wrong size on FMarvelActivityRow113_BP");
-static_assert(offsetof(FMarvelActivityRow113_BP, daily_game_count_9_FE729C9A4ABC3CA8225BF49872BD3D71) == 0x000000, "Member 'FMarvelActivityRow113_BP::daily_game_count_9_FE729C9A4ABC3CA8225BF49872BD3D71' has a wrong offset!");
-static_assert(offsetof(FMarvelActivityRow113_BP, accumulated_days_11_6F9E24A844023BD1F76D06A929CAD3ED) == 0x000004, "Member 'FMarvelActivityRow113_BP::accumulated_days_11_6F9E24A844023BD1F76D06A929CAD3ED' has a wrong offset!");
-static_assert(offsetof(FMarvelActivityRow113_BP, time_interval_13_A05B95B046CB178A2D2F858F72033B5F) == 0x000008, "Member 'FMarvelActivityRow113_BP::time_interval_13_A05B95B046CB178A2D2F858F72033B5F' has a wrong offset!");
-static_assert(offsetof(FMarvelActivityRow113_BP, email_alert_countdown_15_668E91EC4BA7022812BDDFBA0C42B653) == 0x00000C, "Member 'FMarvelActivityRow113_BP::email_alert_countdown_15_668E91EC4BA7022812BDDFBA0C42B653' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelActivityRow113_BP;
 
 }
 

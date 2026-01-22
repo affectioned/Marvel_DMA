@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_Lobby.PyWidget_Loading_Lobby
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Loading_Lobby final : public UPyWidget_Loading_Base
 {
 public:
-	class UPyWidget_Loading_Icon*                 WBP_Loading_Icon;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_Loading_Icon*                 WBP_Loading_Icon;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_Lobby">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_Lobby")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_Lobby")
 	}
 	static class UPyWidget_Loading_Lobby* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_Lobby>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_Lobby) == 0x000008, "Wrong alignment on UPyWidget_Loading_Lobby");
-static_assert(sizeof(UPyWidget_Loading_Lobby) == 0x000600, "Wrong size on UPyWidget_Loading_Lobby");
-static_assert(offsetof(UPyWidget_Loading_Lobby, WBP_Loading_Icon) == 0x0005F8, "Member 'UPyWidget_Loading_Lobby::WBP_Loading_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_Lobby;
 
 }
 

@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStageLogicBase">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStageLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStageLogicBase")
 	}
 	static class UPyAIAbilityExitStageLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStageLogicBase>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStageLogicBase) == 0x000008, "Wrong alignment on UPyAIAbilityExitStageLogicBase");
-static_assert(sizeof(UPyAIAbilityExitStageLogicBase) == 0x000038, "Wrong size on UPyAIAbilityExitStageLogicBase");
+DUMPER7_ASSERTS_UPyAIAbilityExitStageLogicBase;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanNotSeeTarget
 // 0x0008 (0x0040 - 0x0038)
@@ -50,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanNotSeeTarget">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanNotSeeTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanNotSeeTarget")
 	}
 	static class UPyAIAbilityExitStage_CanNotSeeTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanNotSeeTarget>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanNotSeeTarget) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanNotSeeTarget");
-static_assert(sizeof(UPyAIAbilityExitStage_CanNotSeeTarget) == 0x000040, "Wrong size on UPyAIAbilityExitStage_CanNotSeeTarget");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeTarget, bShouldHaveSeenTarget) == 0x000038, "Member 'UPyAIAbilityExitStage_CanNotSeeTarget::bShouldHaveSeenTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanNotSeeTarget;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_AbilityBreak
 // 0x0000 (0x0038 - 0x0038)
@@ -68,15 +73,18 @@ class UPyAIAbilityExitStage_AbilityBreak : public UPyAIAbilityExitStageLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_AbilityBreak">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_AbilityBreak")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_AbilityBreak")
 	}
 	static class UPyAIAbilityExitStage_AbilityBreak* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_AbilityBreak>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_AbilityBreak) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_AbilityBreak");
-static_assert(sizeof(UPyAIAbilityExitStage_AbilityBreak) == 0x000038, "Wrong size on UPyAIAbilityExitStage_AbilityBreak");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_AbilityBreak;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanNotExecute
 // 0x0000 (0x0038 - 0x0038)
@@ -85,15 +93,18 @@ class UPyAIAbilityExitStage_CanNotExecute final : public UPyAIAbilityExitStageLo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanNotExecute">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanNotExecute")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanNotExecute")
 	}
 	static class UPyAIAbilityExitStage_CanNotExecute* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanNotExecute>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanNotExecute) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanNotExecute");
-static_assert(sizeof(UPyAIAbilityExitStage_CanNotExecute) == 0x000038, "Wrong size on UPyAIAbilityExitStage_CanNotExecute");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanNotExecute;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_AbilityPreMissile
 // 0x0000 (0x0038 - 0x0038)
@@ -102,15 +113,18 @@ class UPyAIAbilityExitStage_AbilityPreMissile final : public UPyAIAbilityExitSta
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_AbilityPreMissile">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_AbilityPreMissile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_AbilityPreMissile")
 	}
 	static class UPyAIAbilityExitStage_AbilityPreMissile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_AbilityPreMissile>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_AbilityPreMissile) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_AbilityPreMissile");
-static_assert(sizeof(UPyAIAbilityExitStage_AbilityPreMissile) == 0x000038, "Wrong size on UPyAIAbilityExitStage_AbilityPreMissile");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_AbilityPreMissile;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_NoEnemy
 // 0x0008 (0x0040 - 0x0038)
@@ -122,16 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_NoEnemy">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_NoEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_NoEnemy")
 	}
 	static class UPyAIAbilityExitStage_NoEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_NoEnemy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_NoEnemy) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_NoEnemy");
-static_assert(sizeof(UPyAIAbilityExitStage_NoEnemy) == 0x000040, "Wrong size on UPyAIAbilityExitStage_NoEnemy");
-static_assert(offsetof(UPyAIAbilityExitStage_NoEnemy, CheckRadius) == 0x000038, "Member 'UPyAIAbilityExitStage_NoEnemy::CheckRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_NoEnemy;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_AbilityMissile
 // 0x0000 (0x0038 - 0x0038)
@@ -140,15 +156,18 @@ class UPyAIAbilityExitStage_AbilityMissile final : public UPyAIAbilityExitStageL
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_AbilityMissile">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_AbilityMissile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_AbilityMissile")
 	}
 	static class UPyAIAbilityExitStage_AbilityMissile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_AbilityMissile>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_AbilityMissile) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_AbilityMissile");
-static_assert(sizeof(UPyAIAbilityExitStage_AbilityMissile) == 0x000038, "Wrong size on UPyAIAbilityExitStage_AbilityMissile");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_AbilityMissile;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_AbilityEnd
 // 0x0000 (0x0038 - 0x0038)
@@ -157,15 +176,18 @@ class UPyAIAbilityExitStage_AbilityEnd : public UPyAIAbilityExitStageLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_AbilityEnd">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_AbilityEnd")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_AbilityEnd")
 	}
 	static class UPyAIAbilityExitStage_AbilityEnd* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_AbilityEnd>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_AbilityEnd) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_AbilityEnd");
-static_assert(sizeof(UPyAIAbilityExitStage_AbilityEnd) == 0x000038, "Wrong size on UPyAIAbilityExitStage_AbilityEnd");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_AbilityEnd;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanNotSeeTargetTimeLimit
 // 0x0008 (0x0040 - 0x0038)
@@ -178,17 +200,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanNotSeeTargetTimeLimit">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanNotSeeTargetTimeLimit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanNotSeeTargetTimeLimit")
 	}
 	static class UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit");
-static_assert(sizeof(UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit) == 0x000040, "Wrong size on UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit, TimeLimit) == 0x000038, "Member 'UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit::TimeLimit' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit, bShouldHaveSeenTarget) == 0x00003C, "Member 'UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit::bShouldHaveSeenTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanNotSeeTargetTimeLimit;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanNotSeeEnemy
 // 0x0008 (0x0040 - 0x0038)
@@ -200,16 +223,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanNotSeeEnemy">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanNotSeeEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanNotSeeEnemy")
 	}
 	static class UPyAIAbilityExitStage_CanNotSeeEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanNotSeeEnemy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanNotSeeEnemy) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanNotSeeEnemy");
-static_assert(sizeof(UPyAIAbilityExitStage_CanNotSeeEnemy) == 0x000040, "Wrong size on UPyAIAbilityExitStage_CanNotSeeEnemy");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeEnemy, bShouldHaveSeenEnemy) == 0x000038, "Member 'UPyAIAbilityExitStage_CanNotSeeEnemy::bShouldHaveSeenEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanNotSeeEnemy;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanSeeEnemy
 // 0x0000 (0x0038 - 0x0038)
@@ -218,15 +243,18 @@ class UPyAIAbilityExitStage_CanSeeEnemy final : public UPyAIAbilityExitStageLogi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanSeeEnemy">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanSeeEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanSeeEnemy")
 	}
 	static class UPyAIAbilityExitStage_CanSeeEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanSeeEnemy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanSeeEnemy) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanSeeEnemy");
-static_assert(sizeof(UPyAIAbilityExitStage_CanSeeEnemy) == 0x000038, "Wrong size on UPyAIAbilityExitStage_CanSeeEnemy");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanSeeEnemy;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_FocusTargetOutOfSight
 // 0x0000 (0x0038 - 0x0038)
@@ -235,15 +263,18 @@ class UPyAIAbilityExitStage_FocusTargetOutOfSight : public UPyAIAbilityExitStage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_FocusTargetOutOfSight">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_FocusTargetOutOfSight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_FocusTargetOutOfSight")
 	}
 	static class UPyAIAbilityExitStage_FocusTargetOutOfSight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_FocusTargetOutOfSight>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_FocusTargetOutOfSight) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_FocusTargetOutOfSight");
-static_assert(sizeof(UPyAIAbilityExitStage_FocusTargetOutOfSight) == 0x000038, "Wrong size on UPyAIAbilityExitStage_FocusTargetOutOfSight");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_FocusTargetOutOfSight;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_FocusTargetOutOfMemory
 // 0x0000 (0x0038 - 0x0038)
@@ -252,15 +283,18 @@ class UPyAIAbilityExitStage_FocusTargetOutOfMemory : public UPyAIAbilityExitStag
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_FocusTargetOutOfMemory">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_FocusTargetOutOfMemory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_FocusTargetOutOfMemory")
 	}
 	static class UPyAIAbilityExitStage_FocusTargetOutOfMemory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_FocusTargetOutOfMemory>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_FocusTargetOutOfMemory) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_FocusTargetOutOfMemory");
-static_assert(sizeof(UPyAIAbilityExitStage_FocusTargetOutOfMemory) == 0x000038, "Wrong size on UPyAIAbilityExitStage_FocusTargetOutOfMemory");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_FocusTargetOutOfMemory;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CanNotSeeEnemyTimeLimit
 // 0x0008 (0x0040 - 0x0038)
@@ -273,17 +307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CanNotSeeEnemyTimeLimit">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CanNotSeeEnemyTimeLimit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CanNotSeeEnemyTimeLimit")
 	}
 	static class UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit");
-static_assert(sizeof(UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit) == 0x000040, "Wrong size on UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit, TimeLimit) == 0x000038, "Member 'UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit::TimeLimit' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit, bShouldHaveSeenEnemy) == 0x00003C, "Member 'UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit::bShouldHaveSeenEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CanNotSeeEnemyTimeLimit;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_NearTarget
 // 0x0008 (0x0040 - 0x0038)
@@ -295,16 +330,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_NearTarget">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_NearTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_NearTarget")
 	}
 	static class UPyAIAbilityExitStage_NearTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_NearTarget>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_NearTarget) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_NearTarget");
-static_assert(sizeof(UPyAIAbilityExitStage_NearTarget) == 0x000040, "Wrong size on UPyAIAbilityExitStage_NearTarget");
-static_assert(offsetof(UPyAIAbilityExitStage_NearTarget, AccessRange) == 0x000038, "Member 'UPyAIAbilityExitStage_NearTarget::AccessRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_NearTarget;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_TooCloseToEnemy
 // 0x0008 (0x0040 - 0x0038)
@@ -316,16 +353,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_TooCloseToEnemy">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_TooCloseToEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_TooCloseToEnemy")
 	}
 	static class UPyAIAbilityExitStage_TooCloseToEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_TooCloseToEnemy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_TooCloseToEnemy) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_TooCloseToEnemy");
-static_assert(sizeof(UPyAIAbilityExitStage_TooCloseToEnemy) == 0x000040, "Wrong size on UPyAIAbilityExitStage_TooCloseToEnemy");
-static_assert(offsetof(UPyAIAbilityExitStage_TooCloseToEnemy, AccessRange) == 0x000038, "Member 'UPyAIAbilityExitStage_TooCloseToEnemy::AccessRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_TooCloseToEnemy;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_VelocityLessThan
 // 0x0008 (0x0040 - 0x0038)
@@ -337,16 +376,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_VelocityLessThan">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_VelocityLessThan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_VelocityLessThan")
 	}
 	static class UPyAIAbilityExitStage_VelocityLessThan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_VelocityLessThan>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_VelocityLessThan) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_VelocityLessThan");
-static_assert(sizeof(UPyAIAbilityExitStage_VelocityLessThan) == 0x000040, "Wrong size on UPyAIAbilityExitStage_VelocityLessThan");
-static_assert(offsetof(UPyAIAbilityExitStage_VelocityLessThan, Velocity) == 0x000038, "Member 'UPyAIAbilityExitStage_VelocityLessThan::Velocity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_VelocityLessThan;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_AmmoNumCheck
 // 0x0008 (0x0040 - 0x0038)
@@ -360,18 +401,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_AmmoNumCheck">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_AmmoNumCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_AmmoNumCheck")
 	}
 	static class UPyAIAbilityExitStage_AmmoNumCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_AmmoNumCheck>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_AmmoNumCheck) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_AmmoNumCheck");
-static_assert(sizeof(UPyAIAbilityExitStage_AmmoNumCheck) == 0x000040, "Wrong size on UPyAIAbilityExitStage_AmmoNumCheck");
-static_assert(offsetof(UPyAIAbilityExitStage_AmmoNumCheck, AmmoNumThreshold) == 0x000038, "Member 'UPyAIAbilityExitStage_AmmoNumCheck::AmmoNumThreshold' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_AmmoNumCheck, AmmoType) == 0x00003C, "Member 'UPyAIAbilityExitStage_AmmoNumCheck::AmmoType' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_AmmoNumCheck, InverseResult) == 0x00003D, "Member 'UPyAIAbilityExitStage_AmmoNumCheck::InverseResult' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_AmmoNumCheck;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_SelfHasTag
 // 0x0070 (0x00A8 - 0x0038)
@@ -384,17 +425,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_SelfHasTag">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_SelfHasTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_SelfHasTag")
 	}
 	static class UPyAIAbilityExitStage_SelfHasTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_SelfHasTag>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_SelfHasTag) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_SelfHasTag");
-static_assert(sizeof(UPyAIAbilityExitStage_SelfHasTag) == 0x0000A8, "Wrong size on UPyAIAbilityExitStage_SelfHasTag");
-static_assert(offsetof(UPyAIAbilityExitStage_SelfHasTag, TagsToCheck) == 0x000038, "Member 'UPyAIAbilityExitStage_SelfHasTag::TagsToCheck' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_SelfHasTag, InverseResult) == 0x0000A0, "Member 'UPyAIAbilityExitStage_SelfHasTag::InverseResult' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_SelfHasTag;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_103761HasExpectedEnergy
 // 0x0008 (0x0040 - 0x0038)
@@ -407,17 +449,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_103761HasExpectedEnergy">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_103761HasExpectedEnergy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_103761HasExpectedEnergy")
 	}
 	static class UPyAIAbilityExitStage_103761HasExpectedEnergy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_103761HasExpectedEnergy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_103761HasExpectedEnergy) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_103761HasExpectedEnergy");
-static_assert(sizeof(UPyAIAbilityExitStage_103761HasExpectedEnergy) == 0x000040, "Wrong size on UPyAIAbilityExitStage_103761HasExpectedEnergy");
-static_assert(offsetof(UPyAIAbilityExitStage_103761HasExpectedEnergy, AbilityID) == 0x000038, "Member 'UPyAIAbilityExitStage_103761HasExpectedEnergy::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_103761HasExpectedEnergy, EnemyThreshold) == 0x00003C, "Member 'UPyAIAbilityExitStage_103761HasExpectedEnergy::EnemyThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_103761HasExpectedEnergy;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_102131ChargingState
 // 0x0008 (0x0040 - 0x0038)
@@ -430,17 +473,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_102131ChargingState">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_102131ChargingState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_102131ChargingState")
 	}
 	static class UPyAIAbilityExitStage_102131ChargingState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_102131ChargingState>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_102131ChargingState) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_102131ChargingState");
-static_assert(sizeof(UPyAIAbilityExitStage_102131ChargingState) == 0x000040, "Wrong size on UPyAIAbilityExitStage_102131ChargingState");
-static_assert(offsetof(UPyAIAbilityExitStage_102131ChargingState, AbilityID_102111) == 0x000038, "Member 'UPyAIAbilityExitStage_102131ChargingState::AbilityID_102111' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_102131ChargingState, AbilityID_102131) == 0x00003C, "Member 'UPyAIAbilityExitStage_102131ChargingState::AbilityID_102131' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_102131ChargingState;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_NearBlackBoardKeyPosition
 // 0x0018 (0x0050 - 0x0038)
@@ -454,17 +498,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_NearBlackBoardKeyPosition">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_NearBlackBoardKeyPosition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_NearBlackBoardKeyPosition")
 	}
 	static class UPyAIAbilityExitStage_NearBlackBoardKeyPosition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_NearBlackBoardKeyPosition>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_NearBlackBoardKeyPosition) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_NearBlackBoardKeyPosition");
-static_assert(sizeof(UPyAIAbilityExitStage_NearBlackBoardKeyPosition) == 0x000050, "Wrong size on UPyAIAbilityExitStage_NearBlackBoardKeyPosition");
-static_assert(offsetof(UPyAIAbilityExitStage_NearBlackBoardKeyPosition, AccessRange) == 0x000038, "Member 'UPyAIAbilityExitStage_NearBlackBoardKeyPosition::AccessRange' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_NearBlackBoardKeyPosition, BlackBoardKeyName) == 0x000040, "Member 'UPyAIAbilityExitStage_NearBlackBoardKeyPosition::BlackBoardKeyName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_NearBlackBoardKeyPosition;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CheckTargetBelow
 // 0x0018 (0x0050 - 0x0038)
@@ -480,20 +525,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CheckTargetBelow">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CheckTargetBelow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CheckTargetBelow")
 	}
 	static class UPyAIAbilityExitStage_CheckTargetBelow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CheckTargetBelow>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CheckTargetBelow) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CheckTargetBelow");
-static_assert(sizeof(UPyAIAbilityExitStage_CheckTargetBelow) == 0x000050, "Wrong size on UPyAIAbilityExitStage_CheckTargetBelow");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTargetBelow, CheckAngle) == 0x000038, "Member 'UPyAIAbilityExitStage_CheckTargetBelow::CheckAngle' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTargetBelow, AbilityRadius) == 0x00003C, "Member 'UPyAIAbilityExitStage_CheckTargetBelow::AbilityRadius' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTargetBelow, HeightError) == 0x000040, "Member 'UPyAIAbilityExitStage_CheckTargetBelow::HeightError' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTargetBelow, DownDistance) == 0x000044, "Member 'UPyAIAbilityExitStage_CheckTargetBelow::DownDistance' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTargetBelow, CheckTargetType) == 0x000048, "Member 'UPyAIAbilityExitStage_CheckTargetBelow::CheckTargetType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CheckTargetBelow;
 
 // PythonClass ability_exit_stage_logic.PyAIAbilityExitStage_CheckTeammateAroundFullHealth
 // 0x0010 (0x0048 - 0x0038)
@@ -507,17 +550,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityExitStage_CheckTeammateAroundFullHealth">();
+		STATIC_CLASS_IMPL("PyAIAbilityExitStage_CheckTeammateAroundFullHealth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityExitStage_CheckTeammateAroundFullHealth")
 	}
 	static class UPyAIAbilityExitStage_CheckTeammateAroundFullHealth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityExitStage_CheckTeammateAroundFullHealth>();
 	}
 };
-static_assert(alignof(UPyAIAbilityExitStage_CheckTeammateAroundFullHealth) == 0x000008, "Wrong alignment on UPyAIAbilityExitStage_CheckTeammateAroundFullHealth");
-static_assert(sizeof(UPyAIAbilityExitStage_CheckTeammateAroundFullHealth) == 0x000048, "Wrong size on UPyAIAbilityExitStage_CheckTeammateAroundFullHealth");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTeammateAroundFullHealth, CheckSelf) == 0x000038, "Member 'UPyAIAbilityExitStage_CheckTeammateAroundFullHealth::CheckSelf' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityExitStage_CheckTeammateAroundFullHealth, CheckRadius) == 0x00003C, "Member 'UPyAIAbilityExitStage_CheckTeammateAroundFullHealth::CheckRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityExitStage_CheckTeammateAroundFullHealth;
 
 }
 

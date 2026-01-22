@@ -21,9 +21,7 @@ struct WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button) == 0x000004, "Wrong alignment on WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button");
-static_assert(sizeof(WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button) == 0x000004, "Wrong size on WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button");
-static_assert(offsetof(WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button, EntryPoint) == 0x000000, "Member 'WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Common_NavigationBar_SecondInfo_Button_C_ExecuteUbergraph_WBP_Common_NavigationBar_SecondInfo_Button;
 
 }
 

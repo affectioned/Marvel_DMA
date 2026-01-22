@@ -54,32 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ChangeScene_C">();
+		BP_STATIC_CLASS_IMPL("BP_ChangeScene_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ChangeScene_C")
 	}
 	static class ABP_ChangeScene_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ChangeScene_C>();
 	}
 };
-static_assert(alignof(ABP_ChangeScene_C) == 0x000010, "Wrong alignment on ABP_ChangeScene_C");
-static_assert(sizeof(ABP_ChangeScene_C) == 0x000760, "Wrong size on ABP_ChangeScene_C");
-static_assert(offsetof(ABP_ChangeScene_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_ChangeScene_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, PP_SceneChange) == 0x0006E8, "Member 'ABP_ChangeScene_C::PP_SceneChange' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, DefaultSceneRoot) == 0x0006F0, "Member 'ABP_ChangeScene_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, MidParticleCount) == 0x0006F8, "Member 'ABP_ChangeScene_C::MidParticleCount' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, InstanceTransforms) == 0x000700, "Member 'ABP_ChangeScene_C::InstanceTransforms' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, MidParticleOffset) == 0x000710, "Member 'ABP_ChangeScene_C::MidParticleOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, MidPlaneScale) == 0x000718, "Member 'ABP_ChangeScene_C::MidPlaneScale' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, HighParticleXCount) == 0x000720, "Member 'ABP_ChangeScene_C::HighParticleXCount' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, HighParticleYCount) == 0x000724, "Member 'ABP_ChangeScene_C::HighParticleYCount' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, HighParticleOffset) == 0x000728, "Member 'ABP_ChangeScene_C::HighParticleOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, HighParticleHeightOffset) == 0x000730, "Member 'ABP_ChangeScene_C::HighParticleHeightOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, HighPlaneScale) == 0x000738, "Member 'ABP_ChangeScene_C::HighPlaneScale' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, LowParticleXCount) == 0x000740, "Member 'ABP_ChangeScene_C::LowParticleXCount' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, LowParticleYCount) == 0x000744, "Member 'ABP_ChangeScene_C::LowParticleYCount' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, LowParticleOffset) == 0x000748, "Member 'ABP_ChangeScene_C::LowParticleOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, LowParticleHeightOffset) == 0x000750, "Member 'ABP_ChangeScene_C::LowParticleHeightOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ChangeScene_C, LowPlaneScale) == 0x000758, "Member 'ABP_ChangeScene_C::LowPlaneScale' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ChangeScene_C;
 
 }
 

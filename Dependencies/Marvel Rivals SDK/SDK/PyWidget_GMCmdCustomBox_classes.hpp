@@ -18,12 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GMCmdCustomBox.PyWidget_GMCmdCustomBox
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_GMCmdCustomBox : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& Cmd, const class FString& CmdName)> OnCmdCommitted; // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& Cmd, const class FString& CmdName)> OnCmdCommitted; // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& GroupName, const class FString& Cmd, const class FString& CmdName)> OnResetCmdText; // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,25 +33,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmdCustomBox">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmdCustomBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmdCustomBox")
 	}
 	static class UPyWidget_GMCmdCustomBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmdCustomBox>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmdCustomBox) == 0x000008, "Wrong alignment on UPyWidget_GMCmdCustomBox");
-static_assert(sizeof(UPyWidget_GMCmdCustomBox) == 0x0005D0, "Wrong size on UPyWidget_GMCmdCustomBox");
-static_assert(offsetof(UPyWidget_GMCmdCustomBox, OnCmdCommitted) == 0x0005C0, "Member 'UPyWidget_GMCmdCustomBox::OnCmdCommitted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmdCustomBox;
 
 // PythonClass PyWidget_GMCmdCustomBox.PyWidget_GMAttrInputBox
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_GMAttrInputBox : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 index, const class FString& text)> OnTextChanged;            // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& text, ETextCommit commit_method)> OnTextCommitted; // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 index, const class FString& text)> OnTextChanged;            // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& text, ETextCommit commit_method)> OnTextCommitted; // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,17 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMAttrInputBox">();
+		STATIC_CLASS_IMPL("PyWidget_GMAttrInputBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMAttrInputBox")
 	}
 	static class UPyWidget_GMAttrInputBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMAttrInputBox>();
 	}
 };
-static_assert(alignof(UPyWidget_GMAttrInputBox) == 0x000008, "Wrong alignment on UPyWidget_GMAttrInputBox");
-static_assert(sizeof(UPyWidget_GMAttrInputBox) == 0x0005E0, "Wrong size on UPyWidget_GMAttrInputBox");
-static_assert(offsetof(UPyWidget_GMAttrInputBox, OnTextChanged) == 0x0005C0, "Member 'UPyWidget_GMAttrInputBox::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMAttrInputBox, OnTextCommitted) == 0x0005D0, "Member 'UPyWidget_GMAttrInputBox::OnTextCommitted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMAttrInputBox;
 
 }
 

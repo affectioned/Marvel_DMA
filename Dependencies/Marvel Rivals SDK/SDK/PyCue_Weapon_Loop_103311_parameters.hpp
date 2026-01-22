@@ -23,9 +23,7 @@ struct PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent final
 public:
 	struct FWeaponNotifyEvent                     Event;                                             // 0x0000(0x0018)(Parm, NoDestructor)
 };
-static_assert(alignof(PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent");
-static_assert(sizeof(PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent) == 0x000018, "Wrong size on PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent");
-static_assert(offsetof(PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent, Event) == 0x000000, "Member 'PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent::Event' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_103311_K2_HandleWeaponEvent;
 
 }
 

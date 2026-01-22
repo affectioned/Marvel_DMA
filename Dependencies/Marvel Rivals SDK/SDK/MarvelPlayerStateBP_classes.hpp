@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelPlayerStateBP.MarvelPlayerStateBP_C
-// 0x0010 (0x1250 - 0x1240)
+// 0x0010 (0x12E0 - 0x12D0)
 class AMarvelPlayerStateBP_C final : public APyMarvelPlayerState
 {
 public:
-	class UPlayerStateHeroComponentBP_C*          HeroComponentBP;                                   // 0x1240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPlayerStateHeroComponentBP_C*          HeroComponentBP;                                   // 0x12D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x12D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelPlayerStateBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelPlayerStateBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelPlayerStateBP_C")
 	}
 	static class AMarvelPlayerStateBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelPlayerStateBP_C>();
 	}
 };
-static_assert(alignof(AMarvelPlayerStateBP_C) == 0x000010, "Wrong alignment on AMarvelPlayerStateBP_C");
-static_assert(sizeof(AMarvelPlayerStateBP_C) == 0x001250, "Wrong size on AMarvelPlayerStateBP_C");
-static_assert(offsetof(AMarvelPlayerStateBP_C, HeroComponentBP) == 0x001240, "Member 'AMarvelPlayerStateBP_C::HeroComponentBP' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerStateBP_C, DefaultSceneRoot) == 0x001248, "Member 'AMarvelPlayerStateBP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelPlayerStateBP_C;
 
 }
 

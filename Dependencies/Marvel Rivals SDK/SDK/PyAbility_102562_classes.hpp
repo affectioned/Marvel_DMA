@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102562.PyCue_Projectile_HitImpact_10256202
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10256202 final : public UMarvelCueNotify_HitImpact
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10256202">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10256202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10256202")
 	}
 	static class UPyCue_Projectile_HitImpact_10256202* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10256202>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10256202) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10256202");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10256202) == 0x0005C8, "Wrong size on UPyCue_Projectile_HitImpact_10256202");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10256202;
 
 // PythonClass PyAbility_102562.PyCue_Buff_Loop_10256102
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_Loop_10256102 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10256102">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10256102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10256102")
 	}
 	static class APyCue_Buff_Loop_10256102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10256102>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10256102) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10256102");
-static_assert(sizeof(APyCue_Buff_Loop_10256102) == 0x001640, "Wrong size on APyCue_Buff_Loop_10256102");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10256102;
 
 }
 

@@ -23,15 +23,18 @@ class UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C final : public UPyAISelect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C")
 	}
 	static class UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C) == 0x000008, "Wrong alignment on UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C");
-static_assert(sizeof(UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C) == 0x000078, "Wrong size on UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C");
+DUMPER7_ASSERTS_UAISelectTarget_NearsetCliffEdgeNoteLookAtLoc_C;
 
 }
 

@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Crystal_RegainTips">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Crystal_RegainTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Crystal_RegainTips")
 	}
 	static class UPyWidget_BattlePass_Crystal_RegainTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Crystal_RegainTips>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Crystal_RegainTips) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_Crystal_RegainTips");
-static_assert(sizeof(UPyWidget_BattlePass_Crystal_RegainTips) == 0x000870, "Wrong size on UPyWidget_BattlePass_Crystal_RegainTips");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Crystal_RegainTips;
 
 // PythonClass PyWidget_BattlePass_Crystal.PyWidget_BattlePass_Crystal
 // 0x0060 (0x08D0 - 0x0870)
@@ -62,24 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Crystal">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Crystal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Crystal")
 	}
 	static class UPyWidget_BattlePass_Crystal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Crystal>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Crystal) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_Crystal");
-static_assert(sizeof(UPyWidget_BattlePass_Crystal) == 0x0008D0, "Wrong size on UPyWidget_BattlePass_Crystal");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Text_SeasonName) == 0x000870, "Member 'UPyWidget_BattlePass_Crystal::Text_SeasonName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Text_PastSeasonName) == 0x000878, "Member 'UPyWidget_BattlePass_Crystal::Text_PastSeasonName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Text_InProgress) == 0x000880, "Member 'UPyWidget_BattlePass_Crystal::Text_InProgress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Img_SesonName) == 0x000888, "Member 'UPyWidget_BattlePass_Crystal::Img_SesonName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Img_PinTop) == 0x000890, "Member 'UPyWidget_BattlePass_Crystal::Img_PinTop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Overlay_SeasonName) == 0x000898, "Member 'UPyWidget_BattlePass_Crystal::Overlay_SeasonName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, Text_Progress) == 0x0008A0, "Member 'UPyWidget_BattlePass_Crystal::Text_Progress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, NormalBGColor) == 0x0008A8, "Member 'UPyWidget_BattlePass_Crystal::NormalBGColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Crystal, GreyBGColor) == 0x0008BC, "Member 'UPyWidget_BattlePass_Crystal::GreyBGColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Crystal;
 
 }
 

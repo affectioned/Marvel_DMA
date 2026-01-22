@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UIController_211_BP.UIController_211_BP_C
-// 0x0000 (0x0F68 - 0x0F68)
+// 0x0000 (0x12C0 - 0x12C0)
 class UUIController_211_BP_C final : public UPyUIController_211
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIController_211_BP_C">();
+		BP_STATIC_CLASS_IMPL("UIController_211_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_211_BP_C")
 	}
 	static class UUIController_211_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_211_BP_C>();
 	}
 };
-static_assert(alignof(UUIController_211_BP_C) == 0x000008, "Wrong alignment on UUIController_211_BP_C");
-static_assert(sizeof(UUIController_211_BP_C) == 0x000F68, "Wrong size on UUIController_211_BP_C");
+DUMPER7_ASSERTS_UUIController_211_BP_C;
 
 }
 

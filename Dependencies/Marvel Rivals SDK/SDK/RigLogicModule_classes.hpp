@@ -24,15 +24,18 @@ class UDNAIndexMapping final : public UAssetUserData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DNAIndexMapping">();
+		STATIC_CLASS_IMPL("DNAIndexMapping")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DNAIndexMapping")
 	}
 	static class UDNAIndexMapping* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDNAIndexMapping>();
 	}
 };
-static_assert(alignof(UDNAIndexMapping) == 0x000008, "Wrong alignment on UDNAIndexMapping");
-static_assert(sizeof(UDNAIndexMapping) == 0x000030, "Wrong size on UDNAIndexMapping");
+DUMPER7_ASSERTS_UDNAIndexMapping;
 
 // Class RigLogicModule.DNAAsset
 // 0x00A8 (0x00D8 - 0x0030)
@@ -45,16 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DNAAsset">();
+		STATIC_CLASS_IMPL("DNAAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DNAAsset")
 	}
 	static class UDNAAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDNAAsset>();
 	}
 };
-static_assert(alignof(UDNAAsset) == 0x000008, "Wrong alignment on UDNAAsset");
-static_assert(sizeof(UDNAAsset) == 0x0000D8, "Wrong size on UDNAAsset");
-static_assert(offsetof(UDNAAsset, DnaFileName) == 0x000030, "Member 'UDNAAsset::DnaFileName' has a wrong offset!");
+DUMPER7_ASSERTS_UDNAAsset;
 
 // Class RigLogicModule.SkelMeshDNAUtils
 // 0x0000 (0x0030 - 0x0030)
@@ -63,15 +68,18 @@ class USkelMeshDNAUtils final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelMeshDNAUtils">();
+		STATIC_CLASS_IMPL("SkelMeshDNAUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelMeshDNAUtils")
 	}
 	static class USkelMeshDNAUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelMeshDNAUtils>();
 	}
 };
-static_assert(alignof(USkelMeshDNAUtils) == 0x000008, "Wrong alignment on USkelMeshDNAUtils");
-static_assert(sizeof(USkelMeshDNAUtils) == 0x000030, "Wrong size on USkelMeshDNAUtils");
+DUMPER7_ASSERTS_USkelMeshDNAUtils;
 
 }
 

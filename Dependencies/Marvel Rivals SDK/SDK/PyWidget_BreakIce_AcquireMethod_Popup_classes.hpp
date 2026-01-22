@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BreakIce_AcquireMethod_Popup.PyWidget_BreakIce_AcquireMethod_Popup
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BreakIce_AcquireMethod_Popup final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_AcquireMethod_Popup">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_AcquireMethod_Popup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_AcquireMethod_Popup")
 	}
 	static class UPyWidget_BreakIce_AcquireMethod_Popup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_AcquireMethod_Popup>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_AcquireMethod_Popup) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_AcquireMethod_Popup");
-static_assert(sizeof(UPyWidget_BreakIce_AcquireMethod_Popup) == 0x0005C0, "Wrong size on UPyWidget_BreakIce_AcquireMethod_Popup");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_AcquireMethod_Popup;
 
 }
 

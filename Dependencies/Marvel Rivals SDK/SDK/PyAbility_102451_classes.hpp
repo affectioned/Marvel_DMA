@@ -10,34 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Hero_1024_classes.hpp"
+#include "Engine_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
-
-// PythonClass PyAbility_102451.PyProjectile_10245101
-// 0x0000 (0x3BC0 - 0x3BC0)
-class APyProjectile_10245101 : public AProjectile_10245101
-{
-public:
-	void K2_OnBeginAgentTask();
-	void K2_OnRecycleAgentTask();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyProjectile_10245101">();
-	}
-	static class APyProjectile_10245101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyProjectile_10245101>();
-	}
-};
-static_assert(alignof(APyProjectile_10245101) == 0x000010, "Wrong alignment on APyProjectile_10245101");
-static_assert(sizeof(APyProjectile_10245101) == 0x003BC0, "Wrong size on APyProjectile_10245101");
 
 // PythonClass PyAbility_102451.PyConfig_102451
 // 0x0028 (0x00D0 - 0x00A8)
@@ -57,29 +36,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102451">();
+		STATIC_CLASS_IMPL("PyConfig_102451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102451")
 	}
 	static class UPyConfig_102451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102451>();
 	}
 };
-static_assert(alignof(UPyConfig_102451) == 0x000008, "Wrong alignment on UPyConfig_102451");
-static_assert(sizeof(UPyConfig_102451) == 0x0000D0, "Wrong size on UPyConfig_102451");
-static_assert(offsetof(UPyConfig_102451, HiddenEffectTag) == 0x0000A8, "Member 'UPyConfig_102451::HiddenEffectTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, ToCrowCameraBlendTime) == 0x0000B4, "Member 'UPyConfig_102451::ToCrowCameraBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, ToCrowCameraBlendFunc) == 0x0000B8, "Member 'UPyConfig_102451::ToCrowCameraBlendFunc' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, ToHelaCameraBlendTime) == 0x0000BC, "Member 'UPyConfig_102451::ToHelaCameraBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, ToHelaCameraBlendFunc) == 0x0000C0, "Member 'UPyConfig_102451::ToHelaCameraBlendFunc' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, BuffID) == 0x0000C4, "Member 'UPyConfig_102451::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102451, TraceTypeQuery) == 0x0000C8, "Member 'UPyConfig_102451::TraceTypeQuery' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102451;
 
 // PythonClass PyAbility_102451.PyAbility_102451
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_102451 : public UAbility_102451
 {
 public:
-	TMulticastInlineDelegate<void(float Distance)> OnHelaShiftTeleportDistance;                      // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Distance)> OnHelaShiftTeleportDistance;                      // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -104,16 +79,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102451">();
+		STATIC_CLASS_IMPL("PyAbility_102451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102451")
 	}
 	static class UPyAbility_102451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102451>();
 	}
 };
-static_assert(alignof(UPyAbility_102451) == 0x000008, "Wrong alignment on UPyAbility_102451");
-static_assert(sizeof(UPyAbility_102451) == 0x002A00, "Wrong size on UPyAbility_102451");
-static_assert(offsetof(UPyAbility_102451, OnHelaShiftTeleportDistance) == 0x0029F0, "Member 'UPyAbility_102451::OnHelaShiftTeleportDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102451;
+
+// PythonClass PyAbility_102451.PyProjectile_10245101
+// 0x0000 (0x3ED0 - 0x3ED0)
+class APyProjectile_10245101 : public AProjectile_10245101
+{
+public:
+	void K2_OnBeginAgentTask();
+	void K2_OnRecycleAgentTask();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyProjectile_10245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10245101")
+	}
+	static class APyProjectile_10245101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyProjectile_10245101>();
+	}
+};
+DUMPER7_ASSERTS_APyProjectile_10245101;
 
 }
 

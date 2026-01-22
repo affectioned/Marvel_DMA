@@ -19,36 +19,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105331.PyConfig_105331
-// 0x0030 (0x2DC0 - 0x2D90)
+// 0x0030 (0x3460 - 0x3430)
 class UPyConfig_105331 final : public UConfig_105331
 {
 public:
-	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x2D90(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         AbilityLongCoolDown;                               // 0x2DB8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SummonedId;                                        // 0x2DBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x3430(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         AbilityLongCoolDown;                               // 0x3458(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SummonedId;                                        // 0x345C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105331">();
+		STATIC_CLASS_IMPL("PyConfig_105331")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105331")
 	}
 	static class UPyConfig_105331* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105331>();
 	}
 };
-static_assert(alignof(UPyConfig_105331) == 0x000010, "Wrong alignment on UPyConfig_105331");
-static_assert(sizeof(UPyConfig_105331) == 0x002DC0, "Wrong size on UPyConfig_105331");
-static_assert(offsetof(UPyConfig_105331, ActiveUserSetting) == 0x002D90, "Member 'UPyConfig_105331::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105331, AbilityLongCoolDown) == 0x002DB8, "Member 'UPyConfig_105331::AbilityLongCoolDown' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105331, SummonedId) == 0x002DBC, "Member 'UPyConfig_105331::SummonedId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105331;
 
 // PythonClass PyAbility_105331.PyAbility_105331
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_105331 : public UMarvelGameplayAbility
 {
 public:
-	class AMarvelBarrierBase*                     shield;                                            // 0x29F0(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelBarrierBase*                     shield;                                            // 0x2A40(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool CanActivate();
@@ -65,33 +65,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105331">();
+		STATIC_CLASS_IMPL("PyAbility_105331")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105331")
 	}
 	static class UPyAbility_105331* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105331>();
 	}
 };
-static_assert(alignof(UPyAbility_105331) == 0x000008, "Wrong alignment on UPyAbility_105331");
-static_assert(sizeof(UPyAbility_105331) == 0x0029F8, "Wrong size on UPyAbility_105331");
-static_assert(offsetof(UPyAbility_105331, shield) == 0x0029F0, "Member 'UPyAbility_105331::shield' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105331;
 
 // PythonClass PyAbility_105331.PyCue_Summoner_Loop_10533101
-// 0x0070 (0x1270 - 0x1200)
-class APyCue_Summoner_Loop_10533101 : public AMarvelCueNotify_Summoned
+// 0x0070 (0x12D0 - 0x1260)
+class APyCue_Summoner_Loop_10533101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MeshMin;                                           // 0x1200(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MeshMax;                                           // 0x1204(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FXMin;                                             // 0x1208(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FXMax;                                             // 0x120C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnOwnerDeath;                                      // 0x1210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDeath;                                           // 0x1220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnActive_PyCue_Summoner_Loop_10533101;             // 0x1230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDeactive;                                        // 0x1240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBeginAnimStart;                                  // 0x1250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnEndAnimStart;                                    // 0x1260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MeshMin;                                           // 0x1260(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MeshMax;                                           // 0x1264(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FXMin;                                             // 0x1268(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FXMax;                                             // 0x126C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnOwnerDeath;                                      // 0x1270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDeath;                                           // 0x1280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnActive_PyCue_Summoner_Loop_10533101;             // 0x1290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDeactive;                                        // 0x12A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBeginAnimStart;                                  // 0x12B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnEndAnimStart;                                    // 0x12C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -101,25 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10533101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10533101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10533101")
 	}
 	static class APyCue_Summoner_Loop_10533101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10533101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10533101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10533101");
-static_assert(sizeof(APyCue_Summoner_Loop_10533101) == 0x001270, "Wrong size on APyCue_Summoner_Loop_10533101");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, MeshMin) == 0x001200, "Member 'APyCue_Summoner_Loop_10533101::MeshMin' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, MeshMax) == 0x001204, "Member 'APyCue_Summoner_Loop_10533101::MeshMax' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, FXMin) == 0x001208, "Member 'APyCue_Summoner_Loop_10533101::FXMin' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, FXMax) == 0x00120C, "Member 'APyCue_Summoner_Loop_10533101::FXMax' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnOwnerDeath) == 0x001210, "Member 'APyCue_Summoner_Loop_10533101::OnOwnerDeath' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnDeath) == 0x001220, "Member 'APyCue_Summoner_Loop_10533101::OnDeath' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnActive_PyCue_Summoner_Loop_10533101) == 0x001230, "Member 'APyCue_Summoner_Loop_10533101::OnActive_PyCue_Summoner_Loop_10533101' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnDeactive) == 0x001240, "Member 'APyCue_Summoner_Loop_10533101::OnDeactive' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnBeginAnimStart) == 0x001250, "Member 'APyCue_Summoner_Loop_10533101::OnBeginAnimStart' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10533101, OnEndAnimStart) == 0x001260, "Member 'APyCue_Summoner_Loop_10533101::OnEndAnimStart' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10533101;
 
 }
 

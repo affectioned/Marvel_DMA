@@ -28,15 +28,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingOtherQuestionFeedbackHandler_BP_OnBtnClicked;
 
 }
 

@@ -25,12 +25,7 @@ public:
 	float                                         Speed;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsShrinkAccumulate;                                // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BowReticle_SetAccumulatingPercent) == 0x000004, "Wrong alignment on PyWidget_BowReticle_SetAccumulatingPercent");
-static_assert(sizeof(PyWidget_BowReticle_SetAccumulatingPercent) == 0x000010, "Wrong size on PyWidget_BowReticle_SetAccumulatingPercent");
-static_assert(offsetof(PyWidget_BowReticle_SetAccumulatingPercent, IsAccumulating) == 0x000000, "Member 'PyWidget_BowReticle_SetAccumulatingPercent::IsAccumulating' has a wrong offset!");
-static_assert(offsetof(PyWidget_BowReticle_SetAccumulatingPercent, InCurPercent) == 0x000004, "Member 'PyWidget_BowReticle_SetAccumulatingPercent::InCurPercent' has a wrong offset!");
-static_assert(offsetof(PyWidget_BowReticle_SetAccumulatingPercent, Speed) == 0x000008, "Member 'PyWidget_BowReticle_SetAccumulatingPercent::Speed' has a wrong offset!");
-static_assert(offsetof(PyWidget_BowReticle_SetAccumulatingPercent, IsShrinkAccumulate) == 0x00000C, "Member 'PyWidget_BowReticle_SetAccumulatingPercent::IsShrinkAccumulate' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BowReticle_SetAccumulatingPercent;
 
 // PythonFunction PyWidget_BowReticle.PyWidget_BowReticle.SetScatter
 // 0x0008 (0x0008 - 0x0000)
@@ -40,10 +35,7 @@ public:
 	float                                         InCrosshairScatter;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         InCircleScatter;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BowReticle_SetScatter) == 0x000004, "Wrong alignment on PyWidget_BowReticle_SetScatter");
-static_assert(sizeof(PyWidget_BowReticle_SetScatter) == 0x000008, "Wrong size on PyWidget_BowReticle_SetScatter");
-static_assert(offsetof(PyWidget_BowReticle_SetScatter, InCrosshairScatter) == 0x000000, "Member 'PyWidget_BowReticle_SetScatter::InCrosshairScatter' has a wrong offset!");
-static_assert(offsetof(PyWidget_BowReticle_SetScatter, InCircleScatter) == 0x000004, "Member 'PyWidget_BowReticle_SetScatter::InCircleScatter' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BowReticle_SetScatter;
 
 // PythonFunction PyWidget_BowReticle.PyWidget_BowReticle.SetLength
 // 0x0004 (0x0004 - 0x0000)
@@ -52,9 +44,7 @@ struct PyWidget_BowReticle_SetLength final
 public:
 	float                                         Length;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BowReticle_SetLength) == 0x000004, "Wrong alignment on PyWidget_BowReticle_SetLength");
-static_assert(sizeof(PyWidget_BowReticle_SetLength) == 0x000004, "Wrong size on PyWidget_BowReticle_SetLength");
-static_assert(offsetof(PyWidget_BowReticle_SetLength, Length) == 0x000000, "Member 'PyWidget_BowReticle_SetLength::Length' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BowReticle_SetLength;
 
 // PythonFunction PyWidget_BowReticle.PyWidget_BowReticle.SwitchBoom
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +53,7 @@ struct PyWidget_BowReticle_SwitchBoom final
 public:
 	bool                                          IsThump;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BowReticle_SwitchBoom) == 0x000001, "Wrong alignment on PyWidget_BowReticle_SwitchBoom");
-static_assert(sizeof(PyWidget_BowReticle_SwitchBoom) == 0x000001, "Wrong size on PyWidget_BowReticle_SwitchBoom");
-static_assert(offsetof(PyWidget_BowReticle_SwitchBoom, IsThump) == 0x000000, "Member 'PyWidget_BowReticle_SwitchBoom::IsThump' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BowReticle_SwitchBoom;
 
 }
 

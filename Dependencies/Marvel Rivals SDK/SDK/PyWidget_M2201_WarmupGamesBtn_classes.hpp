@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_M2201_WarmupGamesBtn.PyWidget_M2201_WarmupGamesBtn
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_M2201_WarmupGamesBtn final : public UPyWidget_Squad_WarmupGamesBtn
 {
 public:
-	class UTexture2D*                             LeaderHoverImage;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TeammateHoverImage;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             LeaderHoverIcon;                                   // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TeammateHoverIcon;                                 // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             LeaderHoverImage;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TeammateHoverImage;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             LeaderHoverIcon;                                   // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TeammateHoverIcon;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,19 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201_WarmupGamesBtn">();
+		STATIC_CLASS_IMPL("PyWidget_M2201_WarmupGamesBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201_WarmupGamesBtn")
 	}
 	static class UPyWidget_M2201_WarmupGamesBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201_WarmupGamesBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201_WarmupGamesBtn) == 0x000008, "Wrong alignment on UPyWidget_M2201_WarmupGamesBtn");
-static_assert(sizeof(UPyWidget_M2201_WarmupGamesBtn) == 0x0005E0, "Wrong size on UPyWidget_M2201_WarmupGamesBtn");
-static_assert(offsetof(UPyWidget_M2201_WarmupGamesBtn, LeaderHoverImage) == 0x0005C0, "Member 'UPyWidget_M2201_WarmupGamesBtn::LeaderHoverImage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_WarmupGamesBtn, TeammateHoverImage) == 0x0005C8, "Member 'UPyWidget_M2201_WarmupGamesBtn::TeammateHoverImage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_WarmupGamesBtn, LeaderHoverIcon) == 0x0005D0, "Member 'UPyWidget_M2201_WarmupGamesBtn::LeaderHoverIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_WarmupGamesBtn, TeammateHoverIcon) == 0x0005D8, "Member 'UPyWidget_M2201_WarmupGamesBtn::TeammateHoverIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_M2201_WarmupGamesBtn;
 
 }
 

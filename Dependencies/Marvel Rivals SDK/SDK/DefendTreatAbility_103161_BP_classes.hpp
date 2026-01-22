@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DefendTreatAbility_103161_BP.DefendTreatAbility_103161_BP_C
-// 0x0000 (0x13C0 - 0x13C0)
+// 0x0000 (0x13D8 - 0x13D8)
 class UDefendTreatAbility_103161_BP_C final : public UDefendTreatAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefendTreatAbility_103161_BP_C">();
+		BP_STATIC_CLASS_IMPL("DefendTreatAbility_103161_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefendTreatAbility_103161_BP_C")
 	}
 	static class UDefendTreatAbility_103161_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefendTreatAbility_103161_BP_C>();
 	}
 };
-static_assert(alignof(UDefendTreatAbility_103161_BP_C) == 0x000008, "Wrong alignment on UDefendTreatAbility_103161_BP_C");
-static_assert(sizeof(UDefendTreatAbility_103161_BP_C) == 0x0013C0, "Wrong size on UDefendTreatAbility_103161_BP_C");
+DUMPER7_ASSERTS_UDefendTreatAbility_103161_BP_C;
 
 }
 

@@ -22,9 +22,7 @@ public:
 	TMap<class FString, int32>                    PostState;                                         // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAudioPostState) == 0x000008, "Wrong alignment on FAudioPostState");
-static_assert(sizeof(FAudioPostState) == 0x000060, "Wrong size on FAudioPostState");
-static_assert(offsetof(FAudioPostState, PostState) == 0x000000, "Member 'FAudioPostState::PostState' has a wrong offset!");
+DUMPER7_ASSERTS_FAudioPostState;
 
 }
 

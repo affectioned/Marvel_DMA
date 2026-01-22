@@ -33,20 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_NearestGroundTarget">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_NearestGroundTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_NearestGroundTarget")
 	}
 	static class UPyAISelectTarget_NearestGroundTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_NearestGroundTarget>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_NearestGroundTarget) == 0x000008, "Wrong alignment on UPyAISelectTarget_NearestGroundTarget");
-static_assert(sizeof(UPyAISelectTarget_NearestGroundTarget) == 0x000080, "Wrong size on UPyAISelectTarget_NearestGroundTarget");
-static_assert(offsetof(UPyAISelectTarget_NearestGroundTarget, TargetCamp) == 0x000070, "Member 'UPyAISelectTarget_NearestGroundTarget::TargetCamp' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_NearestGroundTarget, MinHeight) == 0x000074, "Member 'UPyAISelectTarget_NearestGroundTarget::MinHeight' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_NearestGroundTarget, IsSecondChoiceInAirTarget) == 0x000078, "Member 'UPyAISelectTarget_NearestGroundTarget::IsSecondChoiceInAirTarget' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_NearestGroundTarget, IsPosCalculateByLineTraceGround) == 0x000079, "Member 'UPyAISelectTarget_NearestGroundTarget::IsPosCalculateByLineTraceGround' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_NearestGroundTarget, CalculateFinalPosDownTraceDist) == 0x00007C, "Member 'UPyAISelectTarget_NearestGroundTarget::CalculateFinalPosDownTraceDist' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_NearestGroundTarget;
 
 }
 

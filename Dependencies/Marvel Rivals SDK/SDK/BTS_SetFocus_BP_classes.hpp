@@ -23,15 +23,18 @@ class UBTS_SetFocus_BP_C final : public UBTS_PySetFocus
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_SetFocus_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_SetFocus_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SetFocus_BP_C")
 	}
 	static class UBTS_SetFocus_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_SetFocus_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_SetFocus_BP_C) == 0x000008, "Wrong alignment on UBTS_SetFocus_BP_C");
-static_assert(sizeof(UBTS_SetFocus_BP_C) == 0x000130, "Wrong size on UBTS_SetFocus_BP_C");
+DUMPER7_ASSERTS_UBTS_SetFocus_BP_C;
 
 }
 

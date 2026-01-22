@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMonsterResetPoint">();
+		STATIC_CLASS_IMPL("PyMonsterResetPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMonsterResetPoint")
 	}
 	static class APyMonsterResetPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMonsterResetPoint>();
 	}
 };
-static_assert(alignof(APyMonsterResetPoint) == 0x000010, "Wrong alignment on APyMonsterResetPoint");
-static_assert(sizeof(APyMonsterResetPoint) == 0x000730, "Wrong size on APyMonsterResetPoint");
-static_assert(offsetof(APyMonsterResetPoint, WaveIndex) == 0x000720, "Member 'APyMonsterResetPoint::WaveIndex' has a wrong offset!");
+DUMPER7_ASSERTS_APyMonsterResetPoint;
 
 }
 

@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Novice_BattleTips.PyWidget_Novice_BattleTips
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Novice_BattleTips : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ShowTipsTime;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<float, int32>                            SizeStyleMap;                                      // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ShowTipsTime;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<float, int32>                            SizeStyleMap;                                      // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_BattleTips">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_BattleTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_BattleTips")
 	}
 	static class UPyWidget_Novice_BattleTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_BattleTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_BattleTips) == 0x000008, "Wrong alignment on UPyWidget_Novice_BattleTips");
-static_assert(sizeof(UPyWidget_Novice_BattleTips) == 0x000610, "Wrong size on UPyWidget_Novice_BattleTips");
-static_assert(offsetof(UPyWidget_Novice_BattleTips, ShowTipsTime) == 0x0005BC, "Member 'UPyWidget_Novice_BattleTips::ShowTipsTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_BattleTips, SizeStyleMap) == 0x0005C0, "Member 'UPyWidget_Novice_BattleTips::SizeStyleMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_BattleTips;
 
 }
 

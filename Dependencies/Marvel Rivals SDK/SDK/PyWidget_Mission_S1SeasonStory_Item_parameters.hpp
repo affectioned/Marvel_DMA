@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward) == 0x000008, "Wrong alignment on PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward");
-static_assert(sizeof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward) == 0x000010, "Wrong size on PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftReward;
 
 // PythonFunction PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item.OnNav_RightReward
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward) == 0x000008, "Wrong alignment on PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward");
-static_assert(sizeof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward) == 0x000010, "Wrong size on PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S1SeasonStory_Item_OnNav_RightReward;
 
 // PythonFunction PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item.OnNav_LeftItem
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem) == 0x000008, "Wrong alignment on PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem");
-static_assert(sizeof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem) == 0x000010, "Wrong size on PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S1SeasonStory_Item_OnNav_LeftItem;
 
 // PythonFunction PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item.OnNav_RightItem
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +58,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem) == 0x000008, "Wrong alignment on PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem");
-static_assert(sizeof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem) == 0x000010, "Wrong size on PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S1SeasonStory_Item_OnNav_RightItem;
 
 // PythonFunction PyWidget_Mission_S1SeasonStory_Item.PyWidget_Mission_S1SeasonStory_Item.GetNavItem
 // 0x0028 (0x0028 - 0x0000)
@@ -85,13 +73,7 @@ public:
 	class FString                                 widget_name;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class UWidget*                                ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem) == 0x000008, "Wrong alignment on PyWidget_Mission_S1SeasonStory_Item_GetNavItem");
-static_assert(sizeof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem) == 0x000028, "Wrong size on PyWidget_Mission_S1SeasonStory_Item_GetNavItem");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S1SeasonStory_Item_GetNavItem::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem, row) == 0x000004, "Member 'PyWidget_Mission_S1SeasonStory_Item_GetNavItem::row' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem, col) == 0x000008, "Member 'PyWidget_Mission_S1SeasonStory_Item_GetNavItem::col' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem, widget_name) == 0x000010, "Member 'PyWidget_Mission_S1SeasonStory_Item_GetNavItem::widget_name' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S1SeasonStory_Item_GetNavItem, ReturnValue) == 0x000020, "Member 'PyWidget_Mission_S1SeasonStory_Item_GetNavItem::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S1SeasonStory_Item_GetNavItem;
 
 }
 

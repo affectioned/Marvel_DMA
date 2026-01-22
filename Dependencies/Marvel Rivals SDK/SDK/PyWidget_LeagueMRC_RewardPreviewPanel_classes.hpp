@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
@@ -18,47 +19,8 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PreviewRwardData
-// 0x0000 (0x0030 - 0x0030)
-class UPreviewRwardData final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PreviewRwardData">();
-	}
-	static class UPreviewRwardData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPreviewRwardData>();
-	}
-};
-static_assert(alignof(UPreviewRwardData) == 0x000008, "Wrong alignment on UPreviewRwardData");
-static_assert(sizeof(UPreviewRwardData) == 0x000030, "Wrong size on UPreviewRwardData");
-
-// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem
-// 0x0000 (0x0570 - 0x0570)
-class UPyWidget_LeagueRewardPreviewItem final : public UWidget_ListEntry
-{
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_LeagueRewardPreviewItem">();
-	}
-	static class UPyWidget_LeagueRewardPreviewItem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_LeagueRewardPreviewItem>();
-	}
-};
-static_assert(alignof(UPyWidget_LeagueRewardPreviewItem) == 0x000008, "Wrong alignment on UPyWidget_LeagueRewardPreviewItem");
-static_assert(sizeof(UPyWidget_LeagueRewardPreviewItem) == 0x000570, "Wrong size on UPyWidget_LeagueRewardPreviewItem");
-
 // PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardBounds
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueRewardBounds final : public UPyMarvelUserWidget
 {
 public:
@@ -71,27 +33,104 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueRewardBounds">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueRewardBounds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueRewardBounds")
 	}
 	static class UPyWidget_LeagueRewardBounds* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueRewardBounds>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueRewardBounds) == 0x000008, "Wrong alignment on UPyWidget_LeagueRewardBounds");
-static_assert(sizeof(UPyWidget_LeagueRewardBounds) == 0x0005C0, "Wrong size on UPyWidget_LeagueRewardBounds");
+DUMPER7_ASSERTS_UPyWidget_LeagueRewardBounds;
+
+// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PreviewRwardData
+// 0x0000 (0x0030 - 0x0030)
+class UPreviewRwardData final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PreviewRwardData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PreviewRwardData")
+	}
+	static class UPreviewRwardData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPreviewRwardData>();
+	}
+};
+DUMPER7_ASSERTS_UPreviewRwardData;
+
+// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem
+// 0x0000 (0x0578 - 0x0578)
+class UPyWidget_LeagueRewardPreviewItem final : public UWidget_ListEntry
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	void OnListItemObjectSet(class UObject* item_data);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_LeagueRewardPreviewItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueRewardPreviewItem")
+	}
+	static class UPyWidget_LeagueRewardPreviewItem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_LeagueRewardPreviewItem>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_LeagueRewardPreviewItem;
+
+// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit
+// 0x0040 (0x0608 - 0x05C8)
+class UPyWidget_LeagueMRC_RewardPreviewUnit final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           MRCBgColor;                                        // 0x05C4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ClashBgColor;                                      // 0x05D4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MRCFontColor;                                      // 0x05E4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ClashFontColor;                                    // 0x05F4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRC_RewardPreviewUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRC_RewardPreviewUnit")
+	}
+	static class UPyWidget_LeagueMRC_RewardPreviewUnit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_LeagueMRC_RewardPreviewUnit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_LeagueMRC_RewardPreviewUnit;
 
 // PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewPanel
-// 0x0100 (0x06C0 - 0x05C0)
+// 0x0108 (0x06D0 - 0x05C8)
 class UPyWidget_LeagueMRC_RewardPreviewPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class UTexture2D*>                Img_CupBg_dict;                                    // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, class UTexture2D*>                Normal_Bg_dict;                                    // 0x0610(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, class UTexture2D*>                Hover_Bg_dict;                                     // 0x0660(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgBgMRC;                                          // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgBgClash;                                        // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, class UTexture2D*>                Img_CupBg_dict;                                    // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                Normal_Bg_dict;                                    // 0x0618(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                Hover_Bg_dict;                                     // 0x0668(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgMRC;                                          // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgClash;                                        // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_LeagueMRC_RewardPreviewUnit> BP_AwardUnit;                           // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -102,60 +141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueMRC_RewardPreviewPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRC_RewardPreviewPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRC_RewardPreviewPanel")
 	}
 	static class UPyWidget_LeagueMRC_RewardPreviewPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueMRC_RewardPreviewPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueMRC_RewardPreviewPanel) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRC_RewardPreviewPanel");
-static_assert(sizeof(UPyWidget_LeagueMRC_RewardPreviewPanel) == 0x0006C0, "Wrong size on UPyWidget_LeagueMRC_RewardPreviewPanel");
-static_assert(offsetof(UPyWidget_LeagueMRC_RewardPreviewPanel, Img_CupBg_dict) == 0x0005C0, "Member 'UPyWidget_LeagueMRC_RewardPreviewPanel::Img_CupBg_dict' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_RewardPreviewPanel, Normal_Bg_dict) == 0x000610, "Member 'UPyWidget_LeagueMRC_RewardPreviewPanel::Normal_Bg_dict' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_RewardPreviewPanel, Hover_Bg_dict) == 0x000660, "Member 'UPyWidget_LeagueMRC_RewardPreviewPanel::Hover_Bg_dict' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_RewardPreviewPanel, ImgBgMRC) == 0x0006B0, "Member 'UPyWidget_LeagueMRC_RewardPreviewPanel::ImgBgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_RewardPreviewPanel, ImgBgClash) == 0x0006B8, "Member 'UPyWidget_LeagueMRC_RewardPreviewPanel::ImgBgClash' has a wrong offset!");
-
-// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit
-// 0x0000 (0x0570 - 0x0570)
-class UPyWidget_LeagueMRC_RewardPreviewUnit final : public UWidget_ListEntry
-{
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-	void OnListItemObjectSet(class UObject* item);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_LeagueMRC_RewardPreviewUnit">();
-	}
-	static class UPyWidget_LeagueMRC_RewardPreviewUnit* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_LeagueMRC_RewardPreviewUnit>();
-	}
-};
-static_assert(alignof(UPyWidget_LeagueMRC_RewardPreviewUnit) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRC_RewardPreviewUnit");
-static_assert(sizeof(UPyWidget_LeagueMRC_RewardPreviewUnit) == 0x000570, "Wrong size on UPyWidget_LeagueMRC_RewardPreviewUnit");
-
-// PythonClass PyWidget_LeagueMRC_RewardPreviewPanel.RewardPreviewUnitData
-// 0x0000 (0x0030 - 0x0030)
-class URewardPreviewUnitData final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"RewardPreviewUnitData">();
-	}
-	static class URewardPreviewUnitData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URewardPreviewUnitData>();
-	}
-};
-static_assert(alignof(URewardPreviewUnitData) == 0x000008, "Wrong alignment on URewardPreviewUnitData");
-static_assert(sizeof(URewardPreviewUnitData) == 0x000030, "Wrong size on URewardPreviewUnitData");
+DUMPER7_ASSERTS_UPyWidget_LeagueMRC_RewardPreviewPanel;
 
 }
 

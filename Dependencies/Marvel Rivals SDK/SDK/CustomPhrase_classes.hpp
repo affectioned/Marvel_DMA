@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryCustomPhraseHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryCustomPhraseHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryCustomPhraseHandler")
 	}
 	static class UUISettingEntryCustomPhraseHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryCustomPhraseHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryCustomPhraseHandler) == 0x000008, "Wrong alignment on UUISettingEntryCustomPhraseHandler");
-static_assert(sizeof(UUISettingEntryCustomPhraseHandler) == 0x000030, "Wrong size on UUISettingEntryCustomPhraseHandler");
+DUMPER7_ASSERTS_UUISettingEntryCustomPhraseHandler;
 
 // PythonClass CustomPhrase.PySettingEntryUICCustomPhrase
 // 0x0000 (0x0030 - 0x0030)
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUICCustomPhrase">();
+		STATIC_CLASS_IMPL("PySettingEntryUICCustomPhrase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUICCustomPhrase")
 	}
 	static class UPySettingEntryUICCustomPhrase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUICCustomPhrase>();
 	}
 };
-static_assert(alignof(UPySettingEntryUICCustomPhrase) == 0x000008, "Wrong alignment on UPySettingEntryUICCustomPhrase");
-static_assert(sizeof(UPySettingEntryUICCustomPhrase) == 0x000030, "Wrong size on UPySettingEntryUICCustomPhrase");
+DUMPER7_ASSERTS_UPySettingEntryUICCustomPhrase;
 
 }
 

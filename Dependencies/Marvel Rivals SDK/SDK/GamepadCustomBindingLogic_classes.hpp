@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingGamepadCustomBindingHandler">();
+		STATIC_CLASS_IMPL("UISettingGamepadCustomBindingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingGamepadCustomBindingHandler")
 	}
 	static class UUISettingGamepadCustomBindingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingGamepadCustomBindingHandler>();
 	}
 };
-static_assert(alignof(UUISettingGamepadCustomBindingHandler) == 0x000008, "Wrong alignment on UUISettingGamepadCustomBindingHandler");
-static_assert(sizeof(UUISettingGamepadCustomBindingHandler) == 0x000030, "Wrong size on UUISettingGamepadCustomBindingHandler");
+DUMPER7_ASSERTS_UUISettingGamepadCustomBindingHandler;
 
 // PythonClass GamepadCustomBindingLogic.UISettingGamepadKeyBatchReplaceHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingGamepadKeyBatchReplaceHandler">();
+		STATIC_CLASS_IMPL("UISettingGamepadKeyBatchReplaceHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingGamepadKeyBatchReplaceHandler")
 	}
 	static class UUISettingGamepadKeyBatchReplaceHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingGamepadKeyBatchReplaceHandler>();
 	}
 };
-static_assert(alignof(UUISettingGamepadKeyBatchReplaceHandler) == 0x000008, "Wrong alignment on UUISettingGamepadKeyBatchReplaceHandler");
-static_assert(sizeof(UUISettingGamepadKeyBatchReplaceHandler) == 0x000030, "Wrong size on UUISettingGamepadKeyBatchReplaceHandler");
+DUMPER7_ASSERTS_UUISettingGamepadKeyBatchReplaceHandler;
 
 }
 

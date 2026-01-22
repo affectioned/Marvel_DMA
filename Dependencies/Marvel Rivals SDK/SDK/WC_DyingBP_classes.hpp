@@ -23,15 +23,18 @@ class UWC_DyingBP_C final : public UMarvelWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_DyingBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_DyingBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_DyingBP_C")
 	}
 	static class UWC_DyingBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_DyingBP_C>();
 	}
 };
-static_assert(alignof(UWC_DyingBP_C) == 0x000010, "Wrong alignment on UWC_DyingBP_C");
-static_assert(sizeof(UWC_DyingBP_C) == 0x000AE0, "Wrong size on UWC_DyingBP_C");
+DUMPER7_ASSERTS_UWC_DyingBP_C;
 
 }
 

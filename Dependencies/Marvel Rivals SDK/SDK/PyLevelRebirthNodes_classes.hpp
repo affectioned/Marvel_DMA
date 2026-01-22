@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelRebirthNodes">();
+		STATIC_CLASS_IMPL("PyLevelRebirthNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelRebirthNodes")
 	}
 	static class UPyLevelRebirthNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelRebirthNodes>();
 	}
 };
-static_assert(alignof(UPyLevelRebirthNodes) == 0x000008, "Wrong alignment on UPyLevelRebirthNodes");
-static_assert(sizeof(UPyLevelRebirthNodes) == 0x000030, "Wrong size on UPyLevelRebirthNodes");
+DUMPER7_ASSERTS_UPyLevelRebirthNodes;
 
 }
 

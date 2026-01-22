@@ -756,9 +756,10 @@ void ASummoned_10475101::OnActorOverlap(class AActor* InActor)
 // struct FVector*                         BubbleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FHitResult&                InHitResult                                            (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // float                                   BubbleRadius                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   BubblePlacingSize                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool AProjectile_10475101::CheckBubblePlacingSpace(struct FVector* BubbleLocation, const struct FHitResult& InHitResult, float BubbleRadius)
+bool AProjectile_10475101::CheckBubblePlacingSpace(struct FVector* BubbleLocation, const struct FHitResult& InHitResult, float BubbleRadius, float BubblePlacingSize)
 {
 	static class UFunction* Func = nullptr;
 
@@ -769,6 +770,7 @@ bool AProjectile_10475101::CheckBubblePlacingSpace(struct FVector* BubbleLocatio
 
 	Parms.InHitResult = std::move(InHitResult);
 	Parms.BubbleRadius = BubbleRadius;
+	Parms.BubblePlacingSize = BubblePlacingSize;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -779,6 +781,34 @@ bool AProjectile_10475101::CheckBubblePlacingSpace(struct FVector* BubbleLocatio
 
 	if (BubbleLocation != nullptr)
 		*BubbleLocation = std::move(Parms.BubbleLocation);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1047.Projectile_10475101.IsTargetValidForBounce
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                InHit                                                  (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AProjectile_10475101::IsTargetValidForBounce(const struct FHitResult& InHit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_10475101", "IsTargetValidForBounce");
+
+	Params::Projectile_10475101_IsTargetValidForBounce Parms{};
+
+	Parms.InHit = std::move(InHit);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -2531,6 +2561,60 @@ class AActor* UAbility_104784::GetBondTargetCharacter() const
 }
 
 
+// Function Hero_1047.EmoteChangeCapsuleScale_1047001216.OnOwnerCharacterTagUpdated
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEmoteChangeCapsuleScale_1047001216::OnOwnerCharacterTagUpdated(const struct FGameplayTag& TagUpdated, bool TagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EmoteChangeCapsuleScale_1047001216", "OnOwnerCharacterTagUpdated");
+
+	Params::EmoteChangeCapsuleScale_1047001216_OnOwnerCharacterTagUpdated Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.TagExists = TagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.MarvelCueNotify_1047001216.OnOwnerCharacterTagUpdated
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelCueNotify_1047001216::OnOwnerCharacterTagUpdated(const struct FGameplayTag& TagUpdated, bool TagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelCueNotify_1047001216", "OnOwnerCharacterTagUpdated");
+
+	Params::MarvelCueNotify_1047001216_OnOwnerCharacterTagUpdated Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.TagExists = TagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1047.JeffAnimInstance.CalucateJeffGrootIK
 // (Final, Native, Protected, HasOutParams)
 // Parameters:
@@ -2689,6 +2773,25 @@ void AJeffCharacter::DivingBlockAbility(const struct FGameplayTagContainer& InCo
 }
 
 
+// Function Hero_1047.JeffCharacter.GatherExtraWallRunningEndInfo
+// (Final, Native, Public, BlueprintCallable)
+
+void AJeffCharacter::GatherExtraWallRunningEndInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffCharacter", "GatherExtraWallRunningEndInfo");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1047.JeffCharacter.GetJeffState
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2778,7 +2881,7 @@ void AJeffCharacter::JeffCharacterExitDiving()
 
 
 // Function Hero_1047.JeffCharacter.OnCharacterSwimAbilityStart
-// (Final, Native, Public)
+// (Final, Native, Public, BlueprintCallable)
 
 void AJeffCharacter::OnCharacterSwimAbilityStart()
 {
@@ -2881,6 +2984,106 @@ void AJeffCharacter::SetJeffState(EJeffState InState)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffCharacter.GetDivingAbility
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UAbility_104761*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAbility_104761* AJeffCharacter::GetDivingAbility() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffCharacter", "GetDivingAbility");
+
+	Params::JeffCharacter_GetDivingAbility Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1047.JeffCharacter.GetDivingAbilityID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AJeffCharacter::GetDivingAbilityID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffCharacter", "GetDivingAbilityID");
+
+	Params::JeffCharacter_GetDivingAbilityID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1047.JeffCharacter.GetUltimateAbility
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UAbility_104771*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAbility_104771* AJeffCharacter::GetUltimateAbility() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffCharacter", "GetUltimateAbility");
+
+	Params::JeffCharacter_GetUltimateAbility Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1047.JeffCharacter.GetUltimateAbilityID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AJeffCharacter::GetUltimateAbilityID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffCharacter", "GetUltimateAbilityID");
+
+	Params::JeffCharacter_GetUltimateAbilityID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -2993,31 +3196,6 @@ void AJeffChildActor::OnCharacterReborn(class AActor* OutTargetActor, const stru
 
 	Parms.OutTargetActor = OutTargetActor;
 	Parms.Param = std::move(Param);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1047.JeffChildActor.OnCharacterSwimEnd
-// (Final, Native, Public)
-// Parameters:
-// class FName                             Tag                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AJeffChildActor::OnCharacterSwimEnd(class FName Tag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JeffChildActor", "OnCharacterSwimEnd");
-
-	Params::JeffChildActor_OnCharacterSwimEnd Parms{};
-
-	Parms.Tag = Tag;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3541,6 +3719,287 @@ void UJeffGroundMotionSubAnimInstance::UpdateRightForwardNode(const struct FAnim
 		Func = Class->GetFunction("JeffGroundMotionSubAnimInstance", "UpdateRightForwardNode");
 
 	Params::JeffGroundMotionSubAnimInstance_UpdateRightForwardNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.NativePlayLandCameraAnim
+// (Native, Protected)
+
+void UJeffGroundMotionSubAnimInstanceV2::NativePlayLandCameraAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "NativePlayLandCameraAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.OnForceChangedByPortal
+// (Final, Native, Protected)
+// Parameters:
+// class APortalViewActor*                 InPortal                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV2::OnForceChangedByPortal(class APortalViewActor* InPortal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "OnForceChangedByPortal");
+
+	Params::JeffGroundMotionSubAnimInstanceV2_OnForceChangedByPortal Parms{};
+
+	Parms.InPortal = InPortal;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.OnMoveModeChange
+// (Final, Native, Protected)
+// Parameters:
+// class ACharacter*                       Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EMovementMode                           PrevMovementMode                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   PreviousCustomMode                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV2::OnMoveModeChange(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "OnMoveModeChange");
+
+	Params::JeffGroundMotionSubAnimInstanceV2_OnMoveModeChange Parms{};
+
+	Parms.Character = Character;
+	Parms.PrevMovementMode = PrevMovementMode;
+	Parms.PreviousCustomMode = PreviousCustomMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.RelevantCycleNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV2::RelevantCycleNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "RelevantCycleNode");
+
+	Params::JeffGroundMotionSubAnimInstanceV2_RelevantCycleNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.RelevantJumpStartNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV2::RelevantJumpStartNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "RelevantJumpStartNode");
+
+	Params::JeffGroundMotionSubAnimInstanceV2_RelevantJumpStartNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV2.RelevantStopNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV2::RelevantStopNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV2", "RelevantStopNode");
+
+	Params::JeffGroundMotionSubAnimInstanceV2_RelevantStopNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV3.NativePlayLandCameraAnim
+// (Native, Protected)
+
+void UJeffGroundMotionSubAnimInstanceV3::NativePlayLandCameraAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV3", "NativePlayLandCameraAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV3.OnForceChangedByPortal
+// (Final, Native, Protected)
+// Parameters:
+// class APortalViewActor*                 InPortal                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV3::OnForceChangedByPortal(class APortalViewActor* InPortal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV3", "OnForceChangedByPortal");
+
+	Params::JeffGroundMotionSubAnimInstanceV3_OnForceChangedByPortal Parms{};
+
+	Parms.InPortal = InPortal;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV3.OnMoveModeChange
+// (Final, Native, Protected)
+// Parameters:
+// class ACharacter*                       Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EMovementMode                           PrevMovementMode                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   PreviousCustomMode                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV3::OnMoveModeChange(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV3", "OnMoveModeChange");
+
+	Params::JeffGroundMotionSubAnimInstanceV3_OnMoveModeChange Parms{};
+
+	Parms.Character = Character;
+	Parms.PrevMovementMode = PrevMovementMode;
+	Parms.PreviousCustomMode = PreviousCustomMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV3.RelevantJumpStartNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV3::RelevantJumpStartNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV3", "RelevantJumpStartNode");
+
+	Params::JeffGroundMotionSubAnimInstanceV3_RelevantJumpStartNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1047.JeffGroundMotionSubAnimInstanceV3.RelevantStopNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UJeffGroundMotionSubAnimInstanceV3::RelevantStopNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("JeffGroundMotionSubAnimInstanceV3", "RelevantStopNode");
+
+	Params::JeffGroundMotionSubAnimInstanceV3_RelevantStopNode Parms{};
 
 	Parms.Context = std::move(Context);
 	Parms.Node = std::move(Node);

@@ -41,19 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeroVoiceLines_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeroVoiceLines_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeroVoiceLines_C")
 	}
 	static class UWBP_HeroVoiceLines_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeroVoiceLines_C>();
 	}
 };
-static_assert(alignof(UWBP_HeroVoiceLines_C) == 0x000008, "Wrong alignment on UWBP_HeroVoiceLines_C");
-static_assert(sizeof(UWBP_HeroVoiceLines_C) == 0x000428, "Wrong size on UWBP_HeroVoiceLines_C");
-static_assert(offsetof(UWBP_HeroVoiceLines_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_HeroVoiceLines_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLines_C, VerticalBox_1) == 0x0003C0, "Member 'UWBP_HeroVoiceLines_C::VerticalBox_1' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLines_C, UnitMargin) == 0x0003C8, "Member 'UWBP_HeroVoiceLines_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLines_C, LastPostTime) == 0x0003D8, "Member 'UWBP_HeroVoiceLines_C::LastPostTime' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeroVoiceLines_C;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Halloween_Card_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_Card_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Halloween_Card_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Halloween_Card_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Halloween_Card_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Halloween_Card_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Halloween_Card_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_Card_OnAnimationFinished;
 
 }
 

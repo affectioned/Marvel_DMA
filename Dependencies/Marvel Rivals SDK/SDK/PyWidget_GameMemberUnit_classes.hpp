@@ -19,19 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GameMemberUnit.PyWidget_GameMemberUnit
-// 0x0858 (0x0F80 - 0x0728)
+// 0x0850 (0x0FD0 - 0x0780)
 class UPyWidget_GameMemberUnit final : public UPyWidget_Button
 {
 public:
-	struct FLinearColor                           TeamColor;                                         // 0x0728(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0738(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_748[0x8];                                      // 0x0748(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           BtnTeamBgStyle;                                    // 0x0750(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           BtnEnemyBgStyle;                                   // 0x0B50(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgPortraitBgTeam;                                 // 0x0F50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgPortraitBgEnemy;                                // 0x0F58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              FocusAlignmentWithIcon;                            // 0x0F60(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              FocusAlignmentWithoutIcon;                         // 0x0F70(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamColor;                                         // 0x0780(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0790(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           BtnTeamBgStyle;                                    // 0x07A0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           BtnEnemyBgStyle;                                   // 0x0BA0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgPortraitBgTeam;                                 // 0x0FA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgPortraitBgEnemy;                                // 0x0FA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              FocusAlignmentWithIcon;                            // 0x0FB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              FocusAlignmentWithoutIcon;                         // 0x0FC0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameMemberUnit">();
+		STATIC_CLASS_IMPL("PyWidget_GameMemberUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameMemberUnit")
 	}
 	static class UPyWidget_GameMemberUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameMemberUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_GameMemberUnit) == 0x000010, "Wrong alignment on UPyWidget_GameMemberUnit");
-static_assert(sizeof(UPyWidget_GameMemberUnit) == 0x000F80, "Wrong size on UPyWidget_GameMemberUnit");
-static_assert(offsetof(UPyWidget_GameMemberUnit, TeamColor) == 0x000728, "Member 'UPyWidget_GameMemberUnit::TeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, EnemyColor) == 0x000738, "Member 'UPyWidget_GameMemberUnit::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, BtnTeamBgStyle) == 0x000750, "Member 'UPyWidget_GameMemberUnit::BtnTeamBgStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, BtnEnemyBgStyle) == 0x000B50, "Member 'UPyWidget_GameMemberUnit::BtnEnemyBgStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, ImgPortraitBgTeam) == 0x000F50, "Member 'UPyWidget_GameMemberUnit::ImgPortraitBgTeam' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, ImgPortraitBgEnemy) == 0x000F58, "Member 'UPyWidget_GameMemberUnit::ImgPortraitBgEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, FocusAlignmentWithIcon) == 0x000F60, "Member 'UPyWidget_GameMemberUnit::FocusAlignmentWithIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameMemberUnit, FocusAlignmentWithoutIcon) == 0x000F70, "Member 'UPyWidget_GameMemberUnit::FocusAlignmentWithoutIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GameMemberUnit;
 
 }
 

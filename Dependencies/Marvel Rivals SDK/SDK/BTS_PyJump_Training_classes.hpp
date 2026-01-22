@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyJump_Training">();
+		STATIC_CLASS_IMPL("BTS_PyJump_Training")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyJump_Training")
 	}
 	static class UBTS_PyJump_Training* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyJump_Training>();
 	}
 };
-static_assert(alignof(UBTS_PyJump_Training) == 0x000008, "Wrong alignment on UBTS_PyJump_Training");
-static_assert(sizeof(UBTS_PyJump_Training) == 0x0000D8, "Wrong size on UBTS_PyJump_Training");
-static_assert(offsetof(UBTS_PyJump_Training, JumpInterval) == 0x0000A8, "Member 'UBTS_PyJump_Training::JumpInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyJump_Training;
 
 }
 

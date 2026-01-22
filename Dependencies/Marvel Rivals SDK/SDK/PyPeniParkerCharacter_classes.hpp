@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1042_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Hero_1042_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyPeniParkerCharacter.PyPeniParkerChildActor
-// 0x0010 (0x0E40 - 0x0E30)
+// 0x0010 (0x0E50 - 0x0E40)
 class APyPeniParkerChildActor final : public APeniParkerChildActor
 {
 public:
-	struct FGameplayTag                           ShowSpiderLegTag;                                  // 0x0E30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ShowSpiderLegTag;                                  // 0x0E40(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -30,23 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPeniParkerChildActor">();
+		STATIC_CLASS_IMPL("PyPeniParkerChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPeniParkerChildActor")
 	}
 	static class APyPeniParkerChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPeniParkerChildActor>();
 	}
 };
-static_assert(alignof(APyPeniParkerChildActor) == 0x000010, "Wrong alignment on APyPeniParkerChildActor");
-static_assert(sizeof(APyPeniParkerChildActor) == 0x000E40, "Wrong size on APyPeniParkerChildActor");
-static_assert(offsetof(APyPeniParkerChildActor, ShowSpiderLegTag) == 0x000E30, "Member 'APyPeniParkerChildActor::ShowSpiderLegTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyPeniParkerChildActor;
 
 // PythonClass PyPeniParkerCharacter.PyPeniParkerCharacter
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class APyPeniParkerCharacter : public APeniParkerCharacter
 {
 public:
-	struct FGameplayTag                           ShowSpiderLegTag;                                  // 0x21D0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ShowSpiderLegTag;                                  // 0x22E0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -55,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPeniParkerCharacter">();
+		STATIC_CLASS_IMPL("PyPeniParkerCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPeniParkerCharacter")
 	}
 	static class APyPeniParkerCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPeniParkerCharacter>();
 	}
 };
-static_assert(alignof(APyPeniParkerCharacter) == 0x000010, "Wrong alignment on APyPeniParkerCharacter");
-static_assert(sizeof(APyPeniParkerCharacter) == 0x0021E0, "Wrong size on APyPeniParkerCharacter");
-static_assert(offsetof(APyPeniParkerCharacter, ShowSpiderLegTag) == 0x0021D0, "Member 'APyPeniParkerCharacter::ShowSpiderLegTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyPeniParkerCharacter;
 
 }
 

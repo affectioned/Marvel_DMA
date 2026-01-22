@@ -24,12 +24,7 @@ public:
 	TArray<int32>                                 LTScores;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<int32>                                 RTScores;                                          // 0x0030(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyControlAnalyzerSubsystem_SendWarning) == 0x000008, "Wrong alignment on PyControlAnalyzerSubsystem_SendWarning");
-static_assert(sizeof(PyControlAnalyzerSubsystem_SendWarning) == 0x000040, "Wrong size on PyControlAnalyzerSubsystem_SendWarning");
-static_assert(offsetof(PyControlAnalyzerSubsystem_SendWarning, LSScores) == 0x000000, "Member 'PyControlAnalyzerSubsystem_SendWarning::LSScores' has a wrong offset!");
-static_assert(offsetof(PyControlAnalyzerSubsystem_SendWarning, RSScores) == 0x000010, "Member 'PyControlAnalyzerSubsystem_SendWarning::RSScores' has a wrong offset!");
-static_assert(offsetof(PyControlAnalyzerSubsystem_SendWarning, LTScores) == 0x000020, "Member 'PyControlAnalyzerSubsystem_SendWarning::LTScores' has a wrong offset!");
-static_assert(offsetof(PyControlAnalyzerSubsystem_SendWarning, RTScores) == 0x000030, "Member 'PyControlAnalyzerSubsystem_SendWarning::RTScores' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlAnalyzerSubsystem_SendWarning;
 
 }
 

@@ -23,15 +23,18 @@ class UAIAbilityExitStage_ExitPunisher10146101_C final : public UAIAbilityExitSt
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_ExitPunisher10146101_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_ExitPunisher10146101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_ExitPunisher10146101_C")
 	}
 	static class UAIAbilityExitStage_ExitPunisher10146101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_ExitPunisher10146101_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_ExitPunisher10146101_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_ExitPunisher10146101_C");
-static_assert(sizeof(UAIAbilityExitStage_ExitPunisher10146101_C) == 0x000050, "Wrong size on UAIAbilityExitStage_ExitPunisher10146101_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_ExitPunisher10146101_C;
 
 }
 

@@ -19,46 +19,52 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Button.PyWidget_Button
-// 0x0168 (0x0728 - 0x05C0)
+// 0x01B8 (0x0780 - 0x05C8)
 class UPyWidget_Button : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonSounds                          Sound;                                             // 0x05C0(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          KeyPromptVisible;                                  // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          HotKey;                                            // 0x05E0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsOverrideHotKeyHoldDuration;                      // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_639[0x3];                                      // 0x0639(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HotKey_Hold_Duration;                              // 0x063C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DoubleClickedInterval;                             // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnabled;                                         // 0x0644(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForbidTriggerByAction;                            // 0x0645(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlaySound;                                       // 0x0646(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsHover;                                           // 0x0647(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBtnPressed;                                      // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_649[0x7];                                      // 0x0649(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x0650(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                HoverGuideActions;                                 // 0x0668(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsEnableRightClick;                                // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOverrideBtnMainFocusConfig;                      // 0x0679(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBtnFocusable;                                    // 0x067A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EWidgetFocusType                              BtnFocusType;                                      // 0x067B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOverrideBtnMainNestNavigation;                   // 0x067C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBtnNestNavigation;                               // 0x067D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_67E[0x2];                                      // 0x067E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UButton*                                Btn_Main;                                          // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextBlock*                             Text_BtnName;                                      // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            Key_Main;                                          // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x06A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHover)>  OnHoverChanged;                                    // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPress)>  OnPressChanged;                                    // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPressed;                                         // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReleased;                                        // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnRightClicked;                                    // 0x0708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UObject* Widget)> OnDoubleClicked;                           // 0x0718(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonSounds                          Sound;                                             // 0x05C8(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          IsPlaySound;                                       // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          KeyPromptVisible;                                  // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E2[0x6];                                      // 0x05E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          HotKey;                                            // 0x05E8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsOverrideHotKeyHoldDuration;                      // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_641[0x3];                                      // 0x0641(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HotKey_Hold_Duration;                              // 0x0644(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForbidTriggerByAction;                            // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_649[0x3];                                      // 0x0649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DoubleClickedInterval;                             // 0x064C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnabled;                                         // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsHover;                                           // 0x0651(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBtnPressed;                                      // 0x0652(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_653[0x5];                                      // 0x0653(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x0658(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                HoverGuideActions;                                 // 0x0670(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsEnableRightClick;                                // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOverrideBtnMainFocusConfig;                      // 0x0681(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBtnFocusable;                                    // 0x0682(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EWidgetFocusType                              BtnFocusType;                                      // 0x0683(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOverrideBtnMainNestNavigation;                   // 0x0684(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBtnNestNavigation;                               // 0x0685(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_686[0x2];                                      // 0x0686(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UButton*                                Btn_Main;                                          // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextBlock*                             Text_BtnName;                                      // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            Key_Main;                                          // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x06A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnRightClicked;                                    // 0x06B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UObject* Widget)> OnDoubleClicked;                           // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x06D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x06E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPressed;                                         // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReleased;                                        // 0x0700(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHover)>  OnHoverChanged;                                    // 0x0710(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPress)>  OnPressChanged;                                    // 0x0720(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDisabledClicked;                                 // 0x0730(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDisabledRightClicked;                            // 0x0740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDisabledDoubleClicked;                           // 0x0750(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDisabledHovered;                                 // 0x0760(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDisabledUnhovered;                               // 0x0770(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -83,46 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Button")
 	}
 	static class UPyWidget_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Button) == 0x000008, "Wrong alignment on UPyWidget_Button");
-static_assert(sizeof(UPyWidget_Button) == 0x000728, "Wrong size on UPyWidget_Button");
-static_assert(offsetof(UPyWidget_Button, Sound) == 0x0005C0, "Member 'UPyWidget_Button::Sound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, KeyPromptVisible) == 0x0005D8, "Member 'UPyWidget_Button::KeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, HotKey) == 0x0005E0, "Member 'UPyWidget_Button::HotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsOverrideHotKeyHoldDuration) == 0x000638, "Member 'UPyWidget_Button::IsOverrideHotKeyHoldDuration' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, HotKey_Hold_Duration) == 0x00063C, "Member 'UPyWidget_Button::HotKey_Hold_Duration' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, DoubleClickedInterval) == 0x000640, "Member 'UPyWidget_Button::DoubleClickedInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsEnabled) == 0x000644, "Member 'UPyWidget_Button::IsEnabled' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, bForbidTriggerByAction) == 0x000645, "Member 'UPyWidget_Button::bForbidTriggerByAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsPlaySound) == 0x000646, "Member 'UPyWidget_Button::IsPlaySound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsHover) == 0x000647, "Member 'UPyWidget_Button::IsHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsBtnPressed) == 0x000648, "Member 'UPyWidget_Button::IsBtnPressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, BtnText) == 0x000650, "Member 'UPyWidget_Button::BtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, HoverGuideActions) == 0x000668, "Member 'UPyWidget_Button::HoverGuideActions' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsEnableRightClick) == 0x000678, "Member 'UPyWidget_Button::IsEnableRightClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsOverrideBtnMainFocusConfig) == 0x000679, "Member 'UPyWidget_Button::IsOverrideBtnMainFocusConfig' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsBtnFocusable) == 0x00067A, "Member 'UPyWidget_Button::IsBtnFocusable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, BtnFocusType) == 0x00067B, "Member 'UPyWidget_Button::BtnFocusType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsOverrideBtnMainNestNavigation) == 0x00067C, "Member 'UPyWidget_Button::IsOverrideBtnMainNestNavigation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, IsBtnNestNavigation) == 0x00067D, "Member 'UPyWidget_Button::IsBtnNestNavigation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, Btn_Main) == 0x000680, "Member 'UPyWidget_Button::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, Text_BtnName) == 0x000688, "Member 'UPyWidget_Button::Text_BtnName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, Key_Main) == 0x000690, "Member 'UPyWidget_Button::Key_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnClicked) == 0x000698, "Member 'UPyWidget_Button::OnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnHovered) == 0x0006A8, "Member 'UPyWidget_Button::OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnUnhovered) == 0x0006B8, "Member 'UPyWidget_Button::OnUnhovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnHoverChanged) == 0x0006C8, "Member 'UPyWidget_Button::OnHoverChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnPressChanged) == 0x0006D8, "Member 'UPyWidget_Button::OnPressChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnPressed) == 0x0006E8, "Member 'UPyWidget_Button::OnPressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnReleased) == 0x0006F8, "Member 'UPyWidget_Button::OnReleased' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnRightClicked) == 0x000708, "Member 'UPyWidget_Button::OnRightClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Button, OnDoubleClicked) == 0x000718, "Member 'UPyWidget_Button::OnDoubleClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Button;
 
 }
 

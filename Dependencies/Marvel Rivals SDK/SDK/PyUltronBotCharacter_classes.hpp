@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Hero_4019_structs.hpp"
 #include "Hero_4019_classes.hpp"
-#include "Engine_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // PythonClass PyUltronBotCharacter.PyUltronBotCharacter
-// 0x0040 (0x22C0 - 0x2280)
+// 0x0040 (0x2420 - 0x23E0)
 class APyUltronBotCharacter : public AUltronBotCharacter
 {
 public:
-	int32                                         SpawnBuffID;                                       // 0x2280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2284[0x4];                                     // 0x2284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 UpdateCDList;                                      // 0x2288(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         CustomSkinID;                                      // 0x2298(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDebugMode;                                        // 0x229C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_229D[0x3];                                     // 0x229D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_KillUltronBot;                             // 0x22A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCustomSkinIDChanged;                             // 0x22A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         SpawnBuffID;                                       // 0x23E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_23E4[0x4];                                     // 0x23E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 UpdateCDList;                                      // 0x23E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         CustomSkinID;                                      // 0x23F8(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDebugMode;                                        // 0x23FC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_23FD[0x3];                                     // 0x23FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_KillUltronBot;                             // 0x2400(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCustomSkinIDChanged;                             // 0x2408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnRep_CustomSkinID();
@@ -42,28 +42,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUltronBotCharacter">();
+		STATIC_CLASS_IMPL("PyUltronBotCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUltronBotCharacter")
 	}
 	static class APyUltronBotCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyUltronBotCharacter>();
 	}
 };
-static_assert(alignof(APyUltronBotCharacter) == 0x000010, "Wrong alignment on APyUltronBotCharacter");
-static_assert(sizeof(APyUltronBotCharacter) == 0x0022C0, "Wrong size on APyUltronBotCharacter");
-static_assert(offsetof(APyUltronBotCharacter, SpawnBuffID) == 0x002280, "Member 'APyUltronBotCharacter::SpawnBuffID' has a wrong offset!");
-static_assert(offsetof(APyUltronBotCharacter, UpdateCDList) == 0x002288, "Member 'APyUltronBotCharacter::UpdateCDList' has a wrong offset!");
-static_assert(offsetof(APyUltronBotCharacter, CustomSkinID) == 0x002298, "Member 'APyUltronBotCharacter::CustomSkinID' has a wrong offset!");
-static_assert(offsetof(APyUltronBotCharacter, bDebugMode) == 0x00229C, "Member 'APyUltronBotCharacter::bDebugMode' has a wrong offset!");
-static_assert(offsetof(APyUltronBotCharacter, AkEvent_KillUltronBot) == 0x0022A0, "Member 'APyUltronBotCharacter::AkEvent_KillUltronBot' has a wrong offset!");
-static_assert(offsetof(APyUltronBotCharacter, OnCustomSkinIDChanged) == 0x0022A8, "Member 'APyUltronBotCharacter::OnCustomSkinIDChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyUltronBotCharacter;
 
 // PythonClass PyUltronBotCharacter.PyUIC_AbilityWithModeCD
-// 0x0008 (0x0F18 - 0x0F10)
+// 0x0008 (0x11F8 - 0x11F0)
 class UPyUIC_AbilityWithModeCD final : public UUIC_Ability
 {
 public:
-	TSubclassOf<class UUserWidget>                Class_RoundCD;                                     // 0x0F10(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_RoundCD;                                     // 0x11F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -73,24 +70,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_AbilityWithModeCD">();
+		STATIC_CLASS_IMPL("PyUIC_AbilityWithModeCD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_AbilityWithModeCD")
 	}
 	static class UPyUIC_AbilityWithModeCD* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_AbilityWithModeCD>();
 	}
 };
-static_assert(alignof(UPyUIC_AbilityWithModeCD) == 0x000008, "Wrong alignment on UPyUIC_AbilityWithModeCD");
-static_assert(sizeof(UPyUIC_AbilityWithModeCD) == 0x000F18, "Wrong size on UPyUIC_AbilityWithModeCD");
-static_assert(offsetof(UPyUIC_AbilityWithModeCD, Class_RoundCD) == 0x000F10, "Member 'UPyUIC_AbilityWithModeCD::Class_RoundCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_AbilityWithModeCD;
 
 // PythonClass PyUltronBotCharacter.PyUltronBotChildActor
-// 0x0050 (0x0E70 - 0x0E20)
+// 0x0050 (0x0E80 - 0x0E30)
 class APyUltronBotChildActor final : public AMarvelCharacterChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FUltronBotMaterialSet>     ColorMaterialSets;                                 // 0x0E20(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FUltronBotMaterialSet>     ColorMaterialSets;                                 // 0x0E30(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -100,16 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUltronBotChildActor">();
+		STATIC_CLASS_IMPL("PyUltronBotChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUltronBotChildActor")
 	}
 	static class APyUltronBotChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyUltronBotChildActor>();
 	}
 };
-static_assert(alignof(APyUltronBotChildActor) == 0x000010, "Wrong alignment on APyUltronBotChildActor");
-static_assert(sizeof(APyUltronBotChildActor) == 0x000E70, "Wrong size on APyUltronBotChildActor");
-static_assert(offsetof(APyUltronBotChildActor, ColorMaterialSets) == 0x000E20, "Member 'APyUltronBotChildActor::ColorMaterialSets' has a wrong offset!");
+DUMPER7_ASSERTS_APyUltronBotChildActor;
 
 }
 

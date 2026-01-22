@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingHDRBrightPanel.PyWidget_SettingHDRBrightPanel
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_SettingHDRBrightPanel final : public UPyWidget_SettingBrightBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingHDRBrightPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettingHDRBrightPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingHDRBrightPanel")
 	}
 	static class UPyWidget_SettingHDRBrightPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingHDRBrightPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingHDRBrightPanel) == 0x000008, "Wrong alignment on UPyWidget_SettingHDRBrightPanel");
-static_assert(sizeof(UPyWidget_SettingHDRBrightPanel) == 0x000608, "Wrong size on UPyWidget_SettingHDRBrightPanel");
+DUMPER7_ASSERTS_UPyWidget_SettingHDRBrightPanel;
 
 }
 

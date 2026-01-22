@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReticleReload.PyWidget_ReticleReload_OverTime
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ReticleReload_OverTime : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReticleReload_OverTime">();
+		STATIC_CLASS_IMPL("PyWidget_ReticleReload_OverTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReticleReload_OverTime")
 	}
 	static class UPyWidget_ReticleReload_OverTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReticleReload_OverTime>();
 	}
 };
-static_assert(alignof(UPyWidget_ReticleReload_OverTime) == 0x000008, "Wrong alignment on UPyWidget_ReticleReload_OverTime");
-static_assert(sizeof(UPyWidget_ReticleReload_OverTime) == 0x0005C0, "Wrong size on UPyWidget_ReticleReload_OverTime");
+DUMPER7_ASSERTS_UPyWidget_ReticleReload_OverTime;
 
 }
 

@@ -23,9 +23,7 @@ struct PyTotemComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTotemComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyTotemComponent_ReceiveEndPlay");
-static_assert(sizeof(PyTotemComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyTotemComponent_ReceiveEndPlay");
-static_assert(offsetof(PyTotemComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyTotemComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyTotemComponent_ReceiveEndPlay;
 
 // PythonFunction PyTotemComponent.PyTotemComponent.OnMonitorDegreeIncreasing
 // 0x000C (0x000C - 0x0000)
@@ -36,11 +34,7 @@ public:
 	float                                         LastDegree;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaDegree;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTotemComponent_OnMonitorDegreeIncreasing) == 0x000004, "Wrong alignment on PyTotemComponent_OnMonitorDegreeIncreasing");
-static_assert(sizeof(PyTotemComponent_OnMonitorDegreeIncreasing) == 0x00000C, "Wrong size on PyTotemComponent_OnMonitorDegreeIncreasing");
-static_assert(offsetof(PyTotemComponent_OnMonitorDegreeIncreasing, Degree) == 0x000000, "Member 'PyTotemComponent_OnMonitorDegreeIncreasing::Degree' has a wrong offset!");
-static_assert(offsetof(PyTotemComponent_OnMonitorDegreeIncreasing, LastDegree) == 0x000004, "Member 'PyTotemComponent_OnMonitorDegreeIncreasing::LastDegree' has a wrong offset!");
-static_assert(offsetof(PyTotemComponent_OnMonitorDegreeIncreasing, DeltaDegree) == 0x000008, "Member 'PyTotemComponent_OnMonitorDegreeIncreasing::DeltaDegree' has a wrong offset!");
+DUMPER7_ASSERTS_PyTotemComponent_OnMonitorDegreeIncreasing;
 
 // PythonFunction PyTotemComponent.PyTotemComponent.SrvSetTotemTime
 // 0x0018 (0x0018 - 0x0000)
@@ -50,10 +44,7 @@ public:
 	class FString                                 State;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTotemComponent_SrvSetTotemTime) == 0x000008, "Wrong alignment on PyTotemComponent_SrvSetTotemTime");
-static_assert(sizeof(PyTotemComponent_SrvSetTotemTime) == 0x000018, "Wrong size on PyTotemComponent_SrvSetTotemTime");
-static_assert(offsetof(PyTotemComponent_SrvSetTotemTime, State) == 0x000000, "Member 'PyTotemComponent_SrvSetTotemTime::State' has a wrong offset!");
-static_assert(offsetof(PyTotemComponent_SrvSetTotemTime, Time) == 0x000010, "Member 'PyTotemComponent_SrvSetTotemTime::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyTotemComponent_SrvSetTotemTime;
 
 }
 

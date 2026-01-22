@@ -24,9 +24,7 @@ struct PyKunlunWaterfall_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKunlunWaterfall_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKunlunWaterfall_ReceiveEndPlay");
-static_assert(sizeof(PyKunlunWaterfall_ReceiveEndPlay) == 0x000001, "Wrong size on PyKunlunWaterfall_ReceiveEndPlay");
-static_assert(offsetof(PyKunlunWaterfall_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKunlunWaterfall_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKunlunWaterfall_ReceiveEndPlay;
 
 // PythonFunction PyKunlunWaterfall.PyKunlunWaterfall.S_payload_reach
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           event_name;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	float                                         event_args;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKunlunWaterfall_S_payload_reach) == 0x000004, "Wrong alignment on PyKunlunWaterfall_S_payload_reach");
-static_assert(sizeof(PyKunlunWaterfall_S_payload_reach) == 0x000010, "Wrong size on PyKunlunWaterfall_S_payload_reach");
-static_assert(offsetof(PyKunlunWaterfall_S_payload_reach, event_name) == 0x000000, "Member 'PyKunlunWaterfall_S_payload_reach::event_name' has a wrong offset!");
-static_assert(offsetof(PyKunlunWaterfall_S_payload_reach, event_args) == 0x00000C, "Member 'PyKunlunWaterfall_S_payload_reach::event_args' has a wrong offset!");
+DUMPER7_ASSERTS_PyKunlunWaterfall_S_payload_reach;
 
 }
 

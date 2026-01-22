@@ -23,15 +23,18 @@ class ABP_PhysicsConstraint_Limit_C final : public APhysicsConstraintActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PhysicsConstraint_Limit_C">();
+		BP_STATIC_CLASS_IMPL("BP_PhysicsConstraint_Limit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PhysicsConstraint_Limit_C")
 	}
 	static class ABP_PhysicsConstraint_Limit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PhysicsConstraint_Limit_C>();
 	}
 };
-static_assert(alignof(ABP_PhysicsConstraint_Limit_C) == 0x000010, "Wrong alignment on ABP_PhysicsConstraint_Limit_C");
-static_assert(sizeof(ABP_PhysicsConstraint_Limit_C) == 0x000700, "Wrong size on ABP_PhysicsConstraint_Limit_C");
+DUMPER7_ASSERTS_ABP_PhysicsConstraint_Limit_C;
 
 }
 

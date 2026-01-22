@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRandomTypeComponent">();
+		STATIC_CLASS_IMPL("PyRandomTypeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRandomTypeComponent")
 	}
 	static class UPyRandomTypeComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRandomTypeComponent>();
 	}
 };
-static_assert(alignof(UPyRandomTypeComponent) == 0x000008, "Wrong alignment on UPyRandomTypeComponent");
-static_assert(sizeof(UPyRandomTypeComponent) == 0x000108, "Wrong size on UPyRandomTypeComponent");
+DUMPER7_ASSERTS_UPyRandomTypeComponent;
 
 }
 

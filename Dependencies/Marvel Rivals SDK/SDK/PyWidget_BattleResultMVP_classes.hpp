@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleResultMVP.PyWidget_BattleResultMvp
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0040 (0x0640 - 0x0600)
 class UPyWidget_BattleResultMvp final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnShowMVP;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayEndTime;                                      // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelMusicItem*                       MusicItem_MvpSkinOff;                              // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelMusicItem*                       MusicItem_MvpSkinOn;                               // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconMRC;                                       // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconCertifiedMRC;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconClash;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconCertifiedClash;                            // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnShowMVP;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayEndTime;                                      // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelMusicItem*                       MusicItem_MvpSkinOff;                              // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelMusicItem*                       MusicItem_MvpSkinOn;                               // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconMRC;                                       // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconCertifiedMRC;                              // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconClash;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconCertifiedClash;                            // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,26 +44,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleResultMvp">();
+		STATIC_CLASS_IMPL("PyWidget_BattleResultMvp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleResultMvp")
 	}
 	static class UPyWidget_BattleResultMvp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleResultMvp>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleResultMvp) == 0x000008, "Wrong alignment on UPyWidget_BattleResultMvp");
-static_assert(sizeof(UPyWidget_BattleResultMvp) == 0x000638, "Wrong size on UPyWidget_BattleResultMvp");
-static_assert(offsetof(UPyWidget_BattleResultMvp, AkEvent_OnShowMVP) == 0x0005F8, "Member 'UPyWidget_BattleResultMvp::AkEvent_OnShowMVP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, DelayEndTime) == 0x000600, "Member 'UPyWidget_BattleResultMvp::DelayEndTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, MusicItem_MvpSkinOff) == 0x000608, "Member 'UPyWidget_BattleResultMvp::MusicItem_MvpSkinOff' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, MusicItem_MvpSkinOn) == 0x000610, "Member 'UPyWidget_BattleResultMvp::MusicItem_MvpSkinOn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, ClanIconMRC) == 0x000618, "Member 'UPyWidget_BattleResultMvp::ClanIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, ClanIconCertifiedMRC) == 0x000620, "Member 'UPyWidget_BattleResultMvp::ClanIconCertifiedMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, ClanIconClash) == 0x000628, "Member 'UPyWidget_BattleResultMvp::ClanIconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleResultMvp, ClanIconCertifiedClash) == 0x000630, "Member 'UPyWidget_BattleResultMvp::ClanIconCertifiedClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleResultMvp;
 
 // PythonClass PyWidget_BattleResultMVP.PyWidget_BattleResultMvpBgControl
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattleResultMvpBgControl final : public UPyMarvelUserWidget
 {
 public:
@@ -72,32 +67,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleResultMvpBgControl">();
+		STATIC_CLASS_IMPL("PyWidget_BattleResultMvpBgControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleResultMvpBgControl")
 	}
 	static class UPyWidget_BattleResultMvpBgControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleResultMvpBgControl>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleResultMvpBgControl) == 0x000008, "Wrong alignment on UPyWidget_BattleResultMvpBgControl");
-static_assert(sizeof(UPyWidget_BattleResultMvpBgControl) == 0x0005C0, "Wrong size on UPyWidget_BattleResultMvpBgControl");
+DUMPER7_ASSERTS_UPyWidget_BattleResultMvpBgControl;
 
 // PythonClass PyWidget_BattleResultMVP.PyWidget_BattleResultMvpBg_OneSide
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattleResultMvpBg_OneSide final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleResultMvpBg_OneSide">();
+		STATIC_CLASS_IMPL("PyWidget_BattleResultMvpBg_OneSide")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleResultMvpBg_OneSide")
 	}
 	static class UPyWidget_BattleResultMvpBg_OneSide* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleResultMvpBg_OneSide>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleResultMvpBg_OneSide) == 0x000008, "Wrong alignment on UPyWidget_BattleResultMvpBg_OneSide");
-static_assert(sizeof(UPyWidget_BattleResultMvpBg_OneSide) == 0x0005C0, "Wrong size on UPyWidget_BattleResultMvpBg_OneSide");
+DUMPER7_ASSERTS_UPyWidget_BattleResultMvpBg_OneSide;
 
 }
 

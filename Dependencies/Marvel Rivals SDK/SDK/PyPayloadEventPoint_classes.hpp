@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadEventPoint">();
+		STATIC_CLASS_IMPL("PyPayloadEventPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadEventPoint")
 	}
 	static class APyPayloadEventPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPayloadEventPoint>();
 	}
 };
-static_assert(alignof(APyPayloadEventPoint) == 0x000010, "Wrong alignment on APyPayloadEventPoint");
-static_assert(sizeof(APyPayloadEventPoint) == 0x000760, "Wrong size on APyPayloadEventPoint");
-static_assert(offsetof(APyPayloadEventPoint, bIsPreDes) == 0x000730, "Member 'APyPayloadEventPoint::bIsPreDes' has a wrong offset!");
-static_assert(offsetof(APyPayloadEventPoint, PreDesOldState) == 0x000738, "Member 'APyPayloadEventPoint::PreDesOldState' has a wrong offset!");
-static_assert(offsetof(APyPayloadEventPoint, PreDesNewState) == 0x000748, "Member 'APyPayloadEventPoint::PreDesNewState' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadEventPoint;
 
 }
 

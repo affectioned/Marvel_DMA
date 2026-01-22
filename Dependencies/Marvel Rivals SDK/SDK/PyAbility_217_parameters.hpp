@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyController_217_SetAbility) == 0x000008, "Wrong alignment on PyController_217_SetAbility");
-static_assert(sizeof(PyController_217_SetAbility) == 0x000010, "Wrong size on PyController_217_SetAbility");
-static_assert(offsetof(PyController_217_SetAbility, InAbilityID) == 0x000000, "Member 'PyController_217_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyController_217_SetAbility, InAbility) == 0x000008, "Member 'PyController_217_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyController_217_SetAbility;
 
 // PythonFunction PyAbility_217.PyCue_Ability_Instant_21701.OnExecute
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +37,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Instant_21701_OnExecute) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_21701_OnExecute");
-static_assert(sizeof(PyCue_Ability_Instant_21701_OnExecute) == 0x0001E0, "Wrong size on PyCue_Ability_Instant_21701_OnExecute");
-static_assert(offsetof(PyCue_Ability_Instant_21701_OnExecute, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_21701_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_21701_OnExecute, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_21701_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_21701_OnExecute, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Instant_21701_OnExecute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_21701_OnExecute;
 
 // PythonFunction PyAbility_217.PyExtraWidget_217.OnAbilityFailed
 // 0x0068 (0x0068 - 0x0000)
@@ -53,9 +46,7 @@ struct PyExtraWidget_217_OnAbilityFailed final
 public:
 	struct FGameplayTagContainer                  FailureReason;                                     // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyExtraWidget_217_OnAbilityFailed) == 0x000008, "Wrong alignment on PyExtraWidget_217_OnAbilityFailed");
-static_assert(sizeof(PyExtraWidget_217_OnAbilityFailed) == 0x000068, "Wrong size on PyExtraWidget_217_OnAbilityFailed");
-static_assert(offsetof(PyExtraWidget_217_OnAbilityFailed, FailureReason) == 0x000000, "Member 'PyExtraWidget_217_OnAbilityFailed::FailureReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtraWidget_217_OnAbilityFailed;
 
 // PythonFunction PyAbility_217.PyWidget_Battle_Expression_Volleyball.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +55,7 @@ struct PyWidget_Battle_Expression_Volleyball_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Battle_Expression_Volleyball_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Battle_Expression_Volleyball_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Battle_Expression_Volleyball_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Battle_Expression_Volleyball_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Battle_Expression_Volleyball_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Battle_Expression_Volleyball_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Battle_Expression_Volleyball_MarvelSetVisible;
 
 }
 

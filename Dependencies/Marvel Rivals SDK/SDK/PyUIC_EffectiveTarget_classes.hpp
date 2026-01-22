@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyUIC_EffectiveTarget.PyWidget_EffectiveTarget
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UPyWidget_EffectiveTarget : public UMarvelUserWidget
 {
 public:
-	float                                         HpPerSlot;                                         // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HpPerSlot;                                         // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -34,30 +34,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_EffectiveTarget">();
+		STATIC_CLASS_IMPL("PyWidget_EffectiveTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_EffectiveTarget")
 	}
 	static class UPyWidget_EffectiveTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_EffectiveTarget>();
 	}
 };
-static_assert(alignof(UPyWidget_EffectiveTarget) == 0x000008, "Wrong alignment on UPyWidget_EffectiveTarget");
-static_assert(sizeof(UPyWidget_EffectiveTarget) == 0x000570, "Wrong size on UPyWidget_EffectiveTarget");
-static_assert(offsetof(UPyWidget_EffectiveTarget, HpPerSlot) == 0x000568, "Member 'UPyWidget_EffectiveTarget::HpPerSlot' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_EffectiveTarget;
 
 // PythonClass PyUIC_EffectiveTarget.PyUIController_EffectiveTargetBase
-// 0x0110 (0x1020 - 0x0F10)
+// 0x0110 (0x1300 - 0x11F0)
 class UPyUIController_EffectiveTargetBase : public UUIC_Ability
 {
 public:
-	float                                         HpPerSlot;                                         // 0x0F10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F14[0x4];                                      // 0x0F14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_EffectiveTarget>  TargetWidgetClass;                                 // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_EffectiveTarget*              TargetWidget;                                      // 0x0F20(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F28[0x8];                                      // 0x0F28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            WidgetBuffBrush;                                   // 0x0F30(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BuffIcon;                                          // 0x1000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WidgetBuffColor;                                   // 0x1008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HpPerSlot;                                         // 0x11F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11F4[0x4];                                     // 0x11F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_EffectiveTarget>  TargetWidgetClass;                                 // 0x11F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_EffectiveTarget*              TargetWidget;                                      // 0x1200(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1208[0x8];                                     // 0x1208(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            WidgetBuffBrush;                                   // 0x1210(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BuffIcon;                                          // 0x12E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WidgetBuffColor;                                   // 0x12E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -69,21 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_EffectiveTargetBase">();
+		STATIC_CLASS_IMPL("PyUIController_EffectiveTargetBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_EffectiveTargetBase")
 	}
 	static class UPyUIController_EffectiveTargetBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_EffectiveTargetBase>();
 	}
 };
-static_assert(alignof(UPyUIController_EffectiveTargetBase) == 0x000010, "Wrong alignment on UPyUIController_EffectiveTargetBase");
-static_assert(sizeof(UPyUIController_EffectiveTargetBase) == 0x001020, "Wrong size on UPyUIController_EffectiveTargetBase");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, HpPerSlot) == 0x000F10, "Member 'UPyUIController_EffectiveTargetBase::HpPerSlot' has a wrong offset!");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, TargetWidgetClass) == 0x000F18, "Member 'UPyUIController_EffectiveTargetBase::TargetWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, TargetWidget) == 0x000F20, "Member 'UPyUIController_EffectiveTargetBase::TargetWidget' has a wrong offset!");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, WidgetBuffBrush) == 0x000F30, "Member 'UPyUIController_EffectiveTargetBase::WidgetBuffBrush' has a wrong offset!");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, BuffIcon) == 0x001000, "Member 'UPyUIController_EffectiveTargetBase::BuffIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIController_EffectiveTargetBase, WidgetBuffColor) == 0x001008, "Member 'UPyUIController_EffectiveTargetBase::WidgetBuffColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_EffectiveTargetBase;
 
 }
 

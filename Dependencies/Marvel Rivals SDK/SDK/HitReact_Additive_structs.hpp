@@ -60,41 +60,7 @@ public:
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0148(0x0080)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x01C8(0x0018)()
 };
-static_assert(alignof(HitReact_Additive::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on HitReact_Additive::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(HitReact_Additive::FAnimBlueprintGeneratedConstantData) == 0x0001E0, "Wrong size on HitReact_Additive::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_411) == 0x000004, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_411' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __IntProperty_412) == 0x000010, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__IntProperty_412' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_413) == 0x000014, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_413' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __IntProperty_414) == 0x000020, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__IntProperty_414' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_415) == 0x000024, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_415' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_416) == 0x000030, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_416' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_417) == 0x00003C, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_417' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __IntProperty_418) == 0x000048, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__IntProperty_418' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_419) == 0x00004C, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_419' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __ArrayProperty_420) == 0x000058, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__ArrayProperty_420' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_421) == 0x000068, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_421' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_422) == 0x000074, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_422' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __IntProperty_423) == 0x000080, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__IntProperty_423' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_424) == 0x000084, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_424' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __IntProperty_425) == 0x000090, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__IntProperty_425' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_426) == 0x000094, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_426' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __ArrayProperty_427) == 0x0000A0, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__ArrayProperty_427' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __BlendProfile_428) == 0x0000B0, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__BlendProfile_428' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __CurveFloat_429) == 0x0000B8, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__CurveFloat_429' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __EnumProperty_430) == 0x0000C0, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__EnumProperty_430' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __EnumProperty_431) == 0x0000C1, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__EnumProperty_431' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __ArrayProperty_432) == 0x0000C8, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__ArrayProperty_432' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __StructProperty_433) == 0x0000D8, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__StructProperty_433' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __FloatProperty_434) == 0x000104, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__FloatProperty_434' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __BoolProperty_435) == 0x000108, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__BoolProperty_435' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __FloatProperty_436) == 0x00010C, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__FloatProperty_436' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __BoolProperty_437) == 0x000110, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__BoolProperty_437' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __EnumProperty_438) == 0x000111, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__EnumProperty_438' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __ByteProperty_439) == 0x000112, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__ByteProperty_439' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __NameProperty_440) == 0x000114, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__NameProperty_440' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, __StructProperty_441) == 0x000120, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::__StructProperty_441' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000148, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(HitReact_Additive::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0001C8, "Member 'HitReact_Additive::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+DUMPER7_ASSERTS_HitReact_Additive__FAnimBlueprintGeneratedConstantData;
 
 }
 

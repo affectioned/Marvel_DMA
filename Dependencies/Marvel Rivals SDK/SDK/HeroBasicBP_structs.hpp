@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -35,18 +35,7 @@ public:
 	struct FLinearColor                           HeroInfoMainColor_60_DF3A9B7B49FBF4A7F47FDCB06DADE676; // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           HeroInfoSecondaryColor_66_9A43BF184D53A7114048DBA131305FFB; // 0x0088(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroBasicBP) == 0x000008, "Wrong alignment on FHeroBasicBP");
-static_assert(sizeof(FHeroBasicBP) == 0x000098, "Wrong size on FHeroBasicBP");
-static_assert(offsetof(FHeroBasicBP, TName_10_93EE6AC745A8786CA1DF5A83B5253AC4) == 0x000000, "Member 'FHeroBasicBP::TName_10_93EE6AC745A8786CA1DF5A83B5253AC4' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, RealName_33_5EF8F509442C0A2CB093ACA289C49369) == 0x000018, "Member 'FHeroBasicBP::RealName_33_5EF8F509442C0A2CB093ACA289C49369' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, EnName_45_A241DED14FF7C14AD94F109AF1ECEF52) == 0x000030, "Member 'FHeroBasicBP::EnName_45_A241DED14FF7C14AD94F109AF1ECEF52' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, Role_27_0FC7D7374AE2AFE0B3986A9D2F60EE9D) == 0x000040, "Member 'FHeroBasicBP::Role_27_0FC7D7374AE2AFE0B3986A9D2F60EE9D' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, Somatotype_53_0273FFB141B3FC07DB7B08B90203D305) == 0x000041, "Member 'FHeroBasicBP::Somatotype_53_0273FFB141B3FC07DB7B08B90203D305' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, Team_52_22513CDE4257278E138EA6B12604AE06) == 0x000048, "Member 'FHeroBasicBP::Team_52_22513CDE4257278E138EA6B12604AE06' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, Difficult_57_0BA060704FBA7C944B09EAA4C9EA6CC8) == 0x000058, "Member 'FHeroBasicBP::Difficult_57_0BA060704FBA7C944B09EAA4C9EA6CC8' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, Desc_63_F34334EF45CD2DCEF0F5CEB7B7893F3F) == 0x000060, "Member 'FHeroBasicBP::Desc_63_F34334EF45CD2DCEF0F5CEB7B7893F3F' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, HeroInfoMainColor_60_DF3A9B7B49FBF4A7F47FDCB06DADE676) == 0x000078, "Member 'FHeroBasicBP::HeroInfoMainColor_60_DF3A9B7B49FBF4A7F47FDCB06DADE676' has a wrong offset!");
-static_assert(offsetof(FHeroBasicBP, HeroInfoSecondaryColor_66_9A43BF184D53A7114048DBA131305FFB) == 0x000088, "Member 'FHeroBasicBP::HeroInfoSecondaryColor_66_9A43BF184D53A7114048DBA131305FFB' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroBasicBP;
 
 }
 

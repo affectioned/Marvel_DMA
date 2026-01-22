@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallRecharge.PyWidget_MallRecharge_RightTop
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_MallRecharge_RightTop : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                CurrencyItemClass;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                CurrencyItemClass;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallRecharge_RightTop">();
+		STATIC_CLASS_IMPL("PyWidget_MallRecharge_RightTop")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallRecharge_RightTop")
 	}
 	static class UPyWidget_MallRecharge_RightTop* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallRecharge_RightTop>();
 	}
 };
-static_assert(alignof(UPyWidget_MallRecharge_RightTop) == 0x000008, "Wrong alignment on UPyWidget_MallRecharge_RightTop");
-static_assert(sizeof(UPyWidget_MallRecharge_RightTop) == 0x0005C8, "Wrong size on UPyWidget_MallRecharge_RightTop");
-static_assert(offsetof(UPyWidget_MallRecharge_RightTop, CurrencyItemClass) == 0x0005C0, "Member 'UPyWidget_MallRecharge_RightTop::CurrencyItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallRecharge_RightTop;
 
 }
 

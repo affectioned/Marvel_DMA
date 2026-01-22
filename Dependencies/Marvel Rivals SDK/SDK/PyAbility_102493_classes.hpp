@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102493.PyCue_Ability_Loop_10249302
-// 0x0060 (0x1210 - 0x11B0)
+// 0x0060 (0x1220 - 0x11C0)
 class APyCue_Ability_Loop_10249302 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FUIActionData                          ActionData_Adsorb;                                 // 0x11B0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         AbilityID;                                         // 0x1208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUIActionData                          ActionData_Adsorb;                                 // 0x11C0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x1218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -32,52 +32,52 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10249302">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10249302")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10249302")
 	}
 	static class APyCue_Ability_Loop_10249302* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10249302>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10249302) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10249302");
-static_assert(sizeof(APyCue_Ability_Loop_10249302) == 0x001210, "Wrong size on APyCue_Ability_Loop_10249302");
-static_assert(offsetof(APyCue_Ability_Loop_10249302, ActionData_Adsorb) == 0x0011B0, "Member 'APyCue_Ability_Loop_10249302::ActionData_Adsorb' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10249302, AbilityID) == 0x001208, "Member 'APyCue_Ability_Loop_10249302::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10249302;
 
 // PythonClass PyAbility_102493.PyConfig_102493
-// 0x0060 (0x18C0 - 0x1860)
+// 0x0060 (0x1C10 - 0x1BB0)
 class UPyConfig_102493 final : public UConfig_113
 {
 public:
-	int32                                         TargetBuff;                                        // 0x1860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1864[0x4];                                     // 0x1864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPhysicsWeaponType, float>               WeaponArmor;                                       // 0x1868(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         AdsorbDuration;                                    // 0x18B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxShieldValue;                                    // 0x18BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TargetBuff;                                        // 0x1BB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1BB4[0x4];                                     // 0x1BB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPhysicsWeaponType, float>               WeaponArmor;                                       // 0x1BB8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         AdsorbDuration;                                    // 0x1C08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxShieldValue;                                    // 0x1C0C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102493">();
+		STATIC_CLASS_IMPL("PyConfig_102493")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102493")
 	}
 	static class UPyConfig_102493* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102493>();
 	}
 };
-static_assert(alignof(UPyConfig_102493) == 0x000010, "Wrong alignment on UPyConfig_102493");
-static_assert(sizeof(UPyConfig_102493) == 0x0018C0, "Wrong size on UPyConfig_102493");
-static_assert(offsetof(UPyConfig_102493, TargetBuff) == 0x001860, "Member 'UPyConfig_102493::TargetBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102493, WeaponArmor) == 0x001868, "Member 'UPyConfig_102493::WeaponArmor' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102493, AdsorbDuration) == 0x0018B8, "Member 'UPyConfig_102493::AdsorbDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102493, MaxShieldValue) == 0x0018BC, "Member 'UPyConfig_102493::MaxShieldValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102493;
 
 // PythonClass PyAbility_102493.PyAbility_102493
-// 0x0010 (0x2BD0 - 0x2BC0)
+// 0x0010 (0x2C20 - 0x2C10)
 class UPyAbility_102493 : public UAbility_113
 {
 public:
-	TMulticastInlineDelegate<void()>              AdsorbEndDispatcher;                               // 0x2BC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AdsorbEndDispatcher;                               // 0x2C10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -92,19 +92,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102493">();
+		STATIC_CLASS_IMPL("PyAbility_102493")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102493")
 	}
 	static class UPyAbility_102493* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102493>();
 	}
 };
-static_assert(alignof(UPyAbility_102493) == 0x000008, "Wrong alignment on UPyAbility_102493");
-static_assert(sizeof(UPyAbility_102493) == 0x002BD0, "Wrong size on UPyAbility_102493");
-static_assert(offsetof(UPyAbility_102493, AdsorbEndDispatcher) == 0x002BC0, "Member 'UPyAbility_102493::AdsorbEndDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102493;
 
 // PythonClass PyAbility_102493.PyNotTreatFallAbility_102493
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UPyNotTreatFallAbility_102493 : public UMarvelNotTreatFallAbility
 {
 public:
@@ -114,22 +116,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNotTreatFallAbility_102493">();
+		STATIC_CLASS_IMPL("PyNotTreatFallAbility_102493")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNotTreatFallAbility_102493")
 	}
 	static class UPyNotTreatFallAbility_102493* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNotTreatFallAbility_102493>();
 	}
 };
-static_assert(alignof(UPyNotTreatFallAbility_102493) == 0x000008, "Wrong alignment on UPyNotTreatFallAbility_102493");
-static_assert(sizeof(UPyNotTreatFallAbility_102493) == 0x001540, "Wrong size on UPyNotTreatFallAbility_102493");
+DUMPER7_ASSERTS_UPyNotTreatFallAbility_102493;
 
 // PythonClass PyAbility_102493.PyCue_Ability_Loop_10249301
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10249301 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UFXSystemAsset*                         BreakFX;                                           // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         BreakFX;                                           // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -139,16 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10249301">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10249301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10249301")
 	}
 	static class APyCue_Ability_Loop_10249301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10249301>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10249301) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10249301");
-static_assert(sizeof(APyCue_Ability_Loop_10249301) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10249301");
-static_assert(offsetof(APyCue_Ability_Loop_10249301, BreakFX) == 0x0011B0, "Member 'APyCue_Ability_Loop_10249301::BreakFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10249301;
 
 }
 

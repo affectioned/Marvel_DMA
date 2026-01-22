@@ -120,9 +120,10 @@ bool UPyMarvelAISystem::RemoveAIByUID(int32 uid)
 // const class FString&                    name                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
 // int32                                   difficulty_mode                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   difficulty_level                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHeroRole                               hero_role                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AMarvelAIControllerBase*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 
-class AMarvelAIControllerBase* UPyMarvelAISystem::AddAI(int32 uid, int32 hero_id, EBattleSide battle_side, const class FString& name, int32 difficulty_mode, int32 difficulty_level) const
+class AMarvelAIControllerBase* UPyMarvelAISystem::AddAI(int32 uid, int32 hero_id, EBattleSide battle_side, const class FString& name, int32 difficulty_mode, int32 difficulty_level, EHeroRole hero_role) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -137,6 +138,7 @@ class AMarvelAIControllerBase* UPyMarvelAISystem::AddAI(int32 uid, int32 hero_id
 	Parms.name = std::move(name);
 	Parms.difficulty_mode = difficulty_mode;
 	Parms.difficulty_level = difficulty_level;
+	Parms.hero_role = hero_role;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

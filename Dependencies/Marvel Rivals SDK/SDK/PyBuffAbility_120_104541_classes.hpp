@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104541.PyBuffAbility_120_10454191
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10454191 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ShieldBuffID;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShieldBuffID;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10454191">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10454191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10454191")
 	}
 	static class UPyBuffAbility_120_10454191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10454191>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10454191) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10454191");
-static_assert(sizeof(UPyBuffAbility_120_10454191) == 0x001378, "Wrong size on UPyBuffAbility_120_10454191");
-static_assert(offsetof(UPyBuffAbility_120_10454191, ShieldBuffID) == 0x001370, "Member 'UPyBuffAbility_120_10454191::ShieldBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10454191;
 
 }
 

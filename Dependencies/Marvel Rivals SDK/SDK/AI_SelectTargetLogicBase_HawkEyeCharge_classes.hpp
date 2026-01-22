@@ -23,15 +23,18 @@ class UAI_SelectTargetLogicBase_HawkEyeCharge_C final : public UAISelectTargetLo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_SelectTargetLogicBase_HawkEyeCharge_C">();
+		BP_STATIC_CLASS_IMPL("AI_SelectTargetLogicBase_HawkEyeCharge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_SelectTargetLogicBase_HawkEyeCharge_C")
 	}
 	static class UAI_SelectTargetLogicBase_HawkEyeCharge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_SelectTargetLogicBase_HawkEyeCharge_C>();
 	}
 };
-static_assert(alignof(UAI_SelectTargetLogicBase_HawkEyeCharge_C) == 0x000008, "Wrong alignment on UAI_SelectTargetLogicBase_HawkEyeCharge_C");
-static_assert(sizeof(UAI_SelectTargetLogicBase_HawkEyeCharge_C) == 0x000070, "Wrong size on UAI_SelectTargetLogicBase_HawkEyeCharge_C");
+DUMPER7_ASSERTS_UAI_SelectTargetLogicBase_HawkEyeCharge_C;
 
 }
 

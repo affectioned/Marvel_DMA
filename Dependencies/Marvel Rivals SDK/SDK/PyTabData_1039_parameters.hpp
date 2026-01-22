@@ -21,9 +21,7 @@ struct PyTabData_1039_OnPinnedTarget final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTabData_1039_OnPinnedTarget) == 0x000008, "Wrong alignment on PyTabData_1039_OnPinnedTarget");
-static_assert(sizeof(PyTabData_1039_OnPinnedTarget) == 0x000008, "Wrong size on PyTabData_1039_OnPinnedTarget");
-static_assert(offsetof(PyTabData_1039_OnPinnedTarget, Target) == 0x000000, "Member 'PyTabData_1039_OnPinnedTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyTabData_1039_OnPinnedTarget;
 
 }
 

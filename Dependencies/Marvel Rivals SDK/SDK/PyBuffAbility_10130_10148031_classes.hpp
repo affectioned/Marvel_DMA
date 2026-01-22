@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10148031.PyBuffAbility_10130_10148031
-// 0x03A0 (0x1710 - 0x1370)
+// 0x04E0 (0x1868 - 0x1388)
 class UPyBuffAbility_10130_10148031 : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FMarvelTraceRule                       PenetrateRule;                                     // 0x1370(0x0398)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         PenetrateDistance;                                 // 0x1708(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       PenetrateRule;                                     // 0x1388(0x04D8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         PenetrateDistance;                                 // 0x1860(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10148031">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10148031")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10148031")
 	}
 	static class UPyBuffAbility_10130_10148031* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10148031>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10148031) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10148031");
-static_assert(sizeof(UPyBuffAbility_10130_10148031) == 0x001710, "Wrong size on UPyBuffAbility_10130_10148031");
-static_assert(offsetof(UPyBuffAbility_10130_10148031, PenetrateRule) == 0x001370, "Member 'UPyBuffAbility_10130_10148031::PenetrateRule' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10148031, PenetrateDistance) == 0x001708, "Member 'UPyBuffAbility_10130_10148031::PenetrateDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10148031;
 
 }
 

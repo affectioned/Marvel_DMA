@@ -23,15 +23,18 @@ class UMarvelDPIScalingRuleBP_C final : public UMarvelDPICustomScalingRule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelDPIScalingRuleBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelDPIScalingRuleBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelDPIScalingRuleBP_C")
 	}
 	static class UMarvelDPIScalingRuleBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelDPIScalingRuleBP_C>();
 	}
 };
-static_assert(alignof(UMarvelDPIScalingRuleBP_C) == 0x000008, "Wrong alignment on UMarvelDPIScalingRuleBP_C");
-static_assert(sizeof(UMarvelDPIScalingRuleBP_C) == 0x000040, "Wrong size on UMarvelDPIScalingRuleBP_C");
+DUMPER7_ASSERTS_UMarvelDPIScalingRuleBP_C;
 
 }
 

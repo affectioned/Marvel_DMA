@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_DurationTop.WBP_AbilityHUDCom_DurationTop_C
-// 0x0018 (0x1C40 - 0x1C28)
+// 0x0018 (0x1CE8 - 0x1CD0)
 class UWBP_AbilityHUDCom_DurationTop_C final : public UPyWidget_AbilityDuration_Top
 {
 public:
-	class UCanvasPanel*                           Canvas_Root;                                       // 0x1C28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_ProgBg;                                        // 0x1C30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Mat_Prog;                                          // 0x1C38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Root;                                       // 0x1CD0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_ProgBg;                                        // 0x1CD8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Mat_Prog;                                          // 0x1CE0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_DurationTop_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_DurationTop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_DurationTop_C")
 	}
 	static class UWBP_AbilityHUDCom_DurationTop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_DurationTop_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_DurationTop_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_DurationTop_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_DurationTop_C) == 0x001C40, "Wrong size on UWBP_AbilityHUDCom_DurationTop_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationTop_C, Canvas_Root) == 0x001C28, "Member 'UWBP_AbilityHUDCom_DurationTop_C::Canvas_Root' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationTop_C, Img_ProgBg) == 0x001C30, "Member 'UWBP_AbilityHUDCom_DurationTop_C::Img_ProgBg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationTop_C, Mat_Prog) == 0x001C38, "Member 'UWBP_AbilityHUDCom_DurationTop_C::Mat_Prog' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_DurationTop_C;
 
 }
 

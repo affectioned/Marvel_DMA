@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_401913_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyAbility_401913_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbiltiy_401913_BP.BuffAbiltiy_401913_BP_C
-// 0x0008 (0x1380 - 0x1378)
+// 0x0008 (0x1398 - 0x1390)
 class UBuffAbiltiy_401913_BP_C final : public UPyBuffAbility_40191301
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BuffAbiltiy_401913_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbiltiy_401913_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbiltiy_401913_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbiltiy_401913_BP_C")
 	}
 	static class UBuffAbiltiy_401913_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbiltiy_401913_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbiltiy_401913_BP_C) == 0x000008, "Wrong alignment on UBuffAbiltiy_401913_BP_C");
-static_assert(sizeof(UBuffAbiltiy_401913_BP_C) == 0x001380, "Wrong size on UBuffAbiltiy_401913_BP_C");
-static_assert(offsetof(UBuffAbiltiy_401913_BP_C, UberGraphFrame) == 0x001378, "Member 'UBuffAbiltiy_401913_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbiltiy_401913_BP_C;
 
 }
 

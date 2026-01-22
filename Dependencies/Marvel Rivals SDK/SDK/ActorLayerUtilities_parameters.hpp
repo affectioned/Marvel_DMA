@@ -25,10 +25,7 @@ public:
 	struct FActorLayer                            Layer;                                             // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LayersBlueprintLibrary_AddActorToLayer) == 0x000008, "Wrong alignment on LayersBlueprintLibrary_AddActorToLayer");
-static_assert(sizeof(LayersBlueprintLibrary_AddActorToLayer) == 0x000018, "Wrong size on LayersBlueprintLibrary_AddActorToLayer");
-static_assert(offsetof(LayersBlueprintLibrary_AddActorToLayer, InActor) == 0x000000, "Member 'LayersBlueprintLibrary_AddActorToLayer::InActor' has a wrong offset!");
-static_assert(offsetof(LayersBlueprintLibrary_AddActorToLayer, Layer) == 0x000008, "Member 'LayersBlueprintLibrary_AddActorToLayer::Layer' has a wrong offset!");
+DUMPER7_ASSERTS_LayersBlueprintLibrary_AddActorToLayer;
 
 // Function ActorLayerUtilities.LayersBlueprintLibrary.GetActors
 // 0x0028 (0x0028 - 0x0000)
@@ -40,11 +37,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LayersBlueprintLibrary_GetActors) == 0x000008, "Wrong alignment on LayersBlueprintLibrary_GetActors");
-static_assert(sizeof(LayersBlueprintLibrary_GetActors) == 0x000028, "Wrong size on LayersBlueprintLibrary_GetActors");
-static_assert(offsetof(LayersBlueprintLibrary_GetActors, WorldContextObject) == 0x000000, "Member 'LayersBlueprintLibrary_GetActors::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LayersBlueprintLibrary_GetActors, ActorLayer) == 0x000008, "Member 'LayersBlueprintLibrary_GetActors::ActorLayer' has a wrong offset!");
-static_assert(offsetof(LayersBlueprintLibrary_GetActors, ReturnValue) == 0x000018, "Member 'LayersBlueprintLibrary_GetActors::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LayersBlueprintLibrary_GetActors;
 
 // Function ActorLayerUtilities.LayersBlueprintLibrary.RemoveActorFromLayer
 // 0x0018 (0x0018 - 0x0000)
@@ -55,10 +48,7 @@ public:
 	struct FActorLayer                            Layer;                                             // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LayersBlueprintLibrary_RemoveActorFromLayer) == 0x000008, "Wrong alignment on LayersBlueprintLibrary_RemoveActorFromLayer");
-static_assert(sizeof(LayersBlueprintLibrary_RemoveActorFromLayer) == 0x000018, "Wrong size on LayersBlueprintLibrary_RemoveActorFromLayer");
-static_assert(offsetof(LayersBlueprintLibrary_RemoveActorFromLayer, InActor) == 0x000000, "Member 'LayersBlueprintLibrary_RemoveActorFromLayer::InActor' has a wrong offset!");
-static_assert(offsetof(LayersBlueprintLibrary_RemoveActorFromLayer, Layer) == 0x000008, "Member 'LayersBlueprintLibrary_RemoveActorFromLayer::Layer' has a wrong offset!");
+DUMPER7_ASSERTS_LayersBlueprintLibrary_RemoveActorFromLayer;
 
 }
 

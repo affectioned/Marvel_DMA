@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayEditorLevelHud">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayEditorLevelHud")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayEditorLevelHud")
 	}
 	static class UPyWidget_ReplayEditorLevelHud* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayEditorLevelHud>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayEditorLevelHud) == 0x000008, "Wrong alignment on UPyWidget_ReplayEditorLevelHud");
-static_assert(sizeof(UPyWidget_ReplayEditorLevelHud) == 0x0003D8, "Wrong size on UPyWidget_ReplayEditorLevelHud");
-static_assert(offsetof(UPyWidget_ReplayEditorLevelHud, AllyColor) == 0x0003B8, "Member 'UPyWidget_ReplayEditorLevelHud::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorLevelHud, EnemyColor) == 0x0003C8, "Member 'UPyWidget_ReplayEditorLevelHud::EnemyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplayEditorLevelHud;
 
 }
 

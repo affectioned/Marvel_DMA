@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList_Network_ListView.PyWidget_DropDownList_Network_ListView
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_DropDownList_Network_ListView final : public UPyWidget_DropDownList_ListView
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_Network_ListView">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_Network_ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_Network_ListView")
 	}
 	static class UPyWidget_DropDownList_Network_ListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_Network_ListView>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_Network_ListView) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_Network_ListView");
-static_assert(sizeof(UPyWidget_DropDownList_Network_ListView) == 0x000608, "Wrong size on UPyWidget_DropDownList_Network_ListView");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_Network_ListView;
 
 }
 

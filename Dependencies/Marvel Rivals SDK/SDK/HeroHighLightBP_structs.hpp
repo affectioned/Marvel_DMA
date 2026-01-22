@@ -23,9 +23,7 @@ struct FHeroHighLightBP final
 public:
 	struct FSoftObjectPath                        HeroLogo_33_B4C0FC694F2D5538B14839BD2DCAA5B3;      // 0x0000(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroHighLightBP) == 0x000008, "Wrong alignment on FHeroHighLightBP");
-static_assert(sizeof(FHeroHighLightBP) == 0x000028, "Wrong size on FHeroHighLightBP");
-static_assert(offsetof(FHeroHighLightBP, HeroLogo_33_B4C0FC694F2D5538B14839BD2DCAA5B3) == 0x000000, "Member 'FHeroHighLightBP::HeroLogo_33_B4C0FC694F2D5538B14839BD2DCAA5B3' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroHighLightBP;
 
 }
 

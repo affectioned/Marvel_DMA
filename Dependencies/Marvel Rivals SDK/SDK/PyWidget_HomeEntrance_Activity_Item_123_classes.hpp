@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Activity_Item_123.PyWidget_HomeEntrance_Activity_Item_123
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_Item_123 final : public UPyWidget_HomeEntrance_Activity_Item_Widget_Base
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_Item_123">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_Item_123")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_Item_123")
 	}
 	static class UPyWidget_HomeEntrance_Activity_Item_123* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_Item_123>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_Item_123) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_Item_123");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_Item_123) == 0x0005C0, "Wrong size on UPyWidget_HomeEntrance_Activity_Item_123");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_Item_123;
 
 }
 

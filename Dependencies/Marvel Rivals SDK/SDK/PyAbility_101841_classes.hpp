@@ -11,55 +11,52 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Hero_1018_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1018_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101841.PyConfig_101841
-// 0x0050 (0x2E20 - 0x2DD0)
+// 0x0050 (0x34C0 - 0x3470)
 class UPyConfig_101841 final : public UConfig_101841
 {
 public:
-	int32                                         BarrierSummonedID;                                 // 0x2DD0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BarrierRecoveryBuffID;                             // 0x2DD4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BarrierReactiveBuffID;                             // 0x2DD8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CameraRecoverTime;                                 // 0x2DDC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CameraRecoverBlockCameraTag;                       // 0x2DE0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x2DEC(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         BarrierSummonedID;                                 // 0x3470(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BarrierRecoveryBuffID;                             // 0x3474(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BarrierReactiveBuffID;                             // 0x3478(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CameraRecoverTime;                                 // 0x347C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CameraRecoverBlockCameraTag;                       // 0x3480(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x348C(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101841">();
+		STATIC_CLASS_IMPL("PyConfig_101841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101841")
 	}
 	static class UPyConfig_101841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101841>();
 	}
 };
-static_assert(alignof(UPyConfig_101841) == 0x000010, "Wrong alignment on UPyConfig_101841");
-static_assert(sizeof(UPyConfig_101841) == 0x002E20, "Wrong size on UPyConfig_101841");
-static_assert(offsetof(UPyConfig_101841, BarrierSummonedID) == 0x002DD0, "Member 'UPyConfig_101841::BarrierSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101841, BarrierRecoveryBuffID) == 0x002DD4, "Member 'UPyConfig_101841::BarrierRecoveryBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101841, BarrierReactiveBuffID) == 0x002DD8, "Member 'UPyConfig_101841::BarrierReactiveBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101841, CameraRecoverTime) == 0x002DDC, "Member 'UPyConfig_101841::CameraRecoverTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101841, CameraRecoverBlockCameraTag) == 0x002DE0, "Member 'UPyConfig_101841::CameraRecoverBlockCameraTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101841, ActiveUserSetting) == 0x002DEC, "Member 'UPyConfig_101841::ActiveUserSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101841;
 
 // PythonClass PyAbility_101841.PyAbility_101841
-// 0x0030 (0x2A20 - 0x29F0)
+// 0x0030 (0x2A70 - 0x2A40)
 class UPyAbility_101841 : public UMarvelGameplayAbility
 {
 public:
-	class AActor*                                 Barrier;                                           // 0x29F0(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BarrierActive;                                     // 0x29F8(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F9[0x7];                                     // 0x29F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              FreeCamActiveChanged;                              // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAbilityActiveChanged;                            // 0x2A10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class AActor*                                 Barrier;                                           // 0x2A40(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BarrierActive;                                     // 0x2A48(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A49[0x7];                                     // 0x2A49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              FreeCamActiveChanged;                              // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityActiveChanged;                            // 0x2A60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -74,29 +71,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101841">();
+		STATIC_CLASS_IMPL("PyAbility_101841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101841")
 	}
 	static class UPyAbility_101841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101841>();
 	}
 };
-static_assert(alignof(UPyAbility_101841) == 0x000008, "Wrong alignment on UPyAbility_101841");
-static_assert(sizeof(UPyAbility_101841) == 0x002A20, "Wrong size on UPyAbility_101841");
-static_assert(offsetof(UPyAbility_101841, Barrier) == 0x0029F0, "Member 'UPyAbility_101841::Barrier' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101841, BarrierActive) == 0x0029F8, "Member 'UPyAbility_101841::BarrierActive' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101841, FreeCamActiveChanged) == 0x002A00, "Member 'UPyAbility_101841::FreeCamActiveChanged' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101841, OnAbilityActiveChanged) == 0x002A10, "Member 'UPyAbility_101841::OnAbilityActiveChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101841;
 
 // PythonClass PyAbility_101841.PySummoned_101841
-// 0x0020 (0x0C90 - 0x0C70)
+// 0x0020 (0x0CD0 - 0x0CB0)
 class APySummoned_101841 : public ASummoned_10184101
 {
 public:
-	bool                                          Usable;                                            // 0x0C70(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          PlaceInLevel;                                      // 0x0C71(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C72[0x6];                                      // 0x0C72(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnBarrierActiveChanged;                            // 0x0C78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          Usable;                                            // 0x0CB0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PlaceInLevel;                                      // 0x0CB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CB2[0x6];                                      // 0x0CB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnBarrierActiveChanged;                            // 0x0CB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -105,30 +101,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_101841">();
+		STATIC_CLASS_IMPL("PySummoned_101841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_101841")
 	}
 	static class APySummoned_101841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_101841>();
 	}
 };
-static_assert(alignof(APySummoned_101841) == 0x000010, "Wrong alignment on APySummoned_101841");
-static_assert(sizeof(APySummoned_101841) == 0x000C90, "Wrong size on APySummoned_101841");
-static_assert(offsetof(APySummoned_101841, Usable) == 0x000C70, "Member 'APySummoned_101841::Usable' has a wrong offset!");
-static_assert(offsetof(APySummoned_101841, PlaceInLevel) == 0x000C71, "Member 'APySummoned_101841::PlaceInLevel' has a wrong offset!");
-static_assert(offsetof(APySummoned_101841, OnBarrierActiveChanged) == 0x000C78, "Member 'APySummoned_101841::OnBarrierActiveChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_101841;
 
 // PythonClass PyAbility_101841.PySummonedCue_10184101
-// 0x0040 (0x1240 - 0x1200)
+// 0x0040 (0x12A0 - 0x1260)
 class APySummonedCue_10184101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            HealthTransparencyCurve;                           // 0x1200(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 HealthMaterialName;                                // 0x1208(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveVector*                           OpenBarrierCurve;                                  // 0x1218(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveVector*                           CloseBarrierCurve;                                 // 0x1220(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SwitchMaterialName;                                // 0x1228(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            HealthTransparencyCurve;                           // 0x1260(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 HealthMaterialName;                                // 0x1268(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveVector*                           OpenBarrierCurve;                                  // 0x1278(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveVector*                           CloseBarrierCurve;                                 // 0x1280(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SwitchMaterialName;                                // 0x1288(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -142,20 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedCue_10184101">();
+		STATIC_CLASS_IMPL("PySummonedCue_10184101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedCue_10184101")
 	}
 	static class APySummonedCue_10184101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummonedCue_10184101>();
 	}
 };
-static_assert(alignof(APySummonedCue_10184101) == 0x000010, "Wrong alignment on APySummonedCue_10184101");
-static_assert(sizeof(APySummonedCue_10184101) == 0x001240, "Wrong size on APySummonedCue_10184101");
-static_assert(offsetof(APySummonedCue_10184101, HealthTransparencyCurve) == 0x001200, "Member 'APySummonedCue_10184101::HealthTransparencyCurve' has a wrong offset!");
-static_assert(offsetof(APySummonedCue_10184101, HealthMaterialName) == 0x001208, "Member 'APySummonedCue_10184101::HealthMaterialName' has a wrong offset!");
-static_assert(offsetof(APySummonedCue_10184101, OpenBarrierCurve) == 0x001218, "Member 'APySummonedCue_10184101::OpenBarrierCurve' has a wrong offset!");
-static_assert(offsetof(APySummonedCue_10184101, CloseBarrierCurve) == 0x001220, "Member 'APySummonedCue_10184101::CloseBarrierCurve' has a wrong offset!");
-static_assert(offsetof(APySummonedCue_10184101, SwitchMaterialName) == 0x001228, "Member 'APySummonedCue_10184101::SwitchMaterialName' has a wrong offset!");
+DUMPER7_ASSERTS_APySummonedCue_10184101;
 
 }
 

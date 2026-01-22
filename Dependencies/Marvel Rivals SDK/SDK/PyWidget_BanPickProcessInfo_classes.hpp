@@ -17,11 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BanPickProcessInfo.PyWidget_BanPickProcessInfo
-// 0x0000 (0x06E0 - 0x06E0)
+// 0x0010 (0x0700 - 0x06F0)
 class UPyWidget_BanPickProcessInfo final : public UPyWidget_BanPickInfo
 {
 public:
-	float                                         SizeBoxVSMinWidth;                                 // 0x06D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SizeBoxVSMinWidth;                                 // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6F4[0x4];                                      // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USizeBox*                               SizeBox_VS;                                        // 0x06F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BanPickProcessInfo">();
+		STATIC_CLASS_IMPL("PyWidget_BanPickProcessInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BanPickProcessInfo")
 	}
 	static class UPyWidget_BanPickProcessInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BanPickProcessInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_BanPickProcessInfo) == 0x000010, "Wrong alignment on UPyWidget_BanPickProcessInfo");
-static_assert(sizeof(UPyWidget_BanPickProcessInfo) == 0x0006E0, "Wrong size on UPyWidget_BanPickProcessInfo");
-static_assert(offsetof(UPyWidget_BanPickProcessInfo, SizeBoxVSMinWidth) == 0x0006D8, "Member 'UPyWidget_BanPickProcessInfo::SizeBoxVSMinWidth' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BanPickProcessInfo;
 
 }
 

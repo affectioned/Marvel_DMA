@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105242_Gravity_BP.Ability_105242_Gravity_BP_C
-// 0x0000 (0x13F0 - 0x13F0)
+// 0x0000 (0x1408 - 0x1408)
 class UAbility_105242_Gravity_BP_C final : public UAbility_105241_Gravity_BP_C
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105242_Gravity_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105242_Gravity_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105242_Gravity_BP_C")
 	}
 	static class UAbility_105242_Gravity_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105242_Gravity_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105242_Gravity_BP_C) == 0x000008, "Wrong alignment on UAbility_105242_Gravity_BP_C");
-static_assert(sizeof(UAbility_105242_Gravity_BP_C) == 0x0013F0, "Wrong size on UAbility_105242_Gravity_BP_C");
+DUMPER7_ASSERTS_UAbility_105242_Gravity_BP_C;
 
 }
 

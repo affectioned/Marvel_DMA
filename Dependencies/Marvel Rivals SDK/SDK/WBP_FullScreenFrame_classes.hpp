@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "PyFullScreenFrame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyFullScreenFrame_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FullScreenFrame.WBP_FullScreenFrame_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UWBP_FullScreenFrame_C final : public UPyFullScreenFrame
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_FullScreen;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_FullScreen;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_FullScreen;                                // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_FullScreen;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_FullScreenFrame(int32 EntryPoint);
@@ -33,19 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FullScreenFrame_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FullScreenFrame_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FullScreenFrame_C")
 	}
 	static class UWBP_FullScreenFrame_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FullScreenFrame_C>();
 	}
 };
-static_assert(alignof(UWBP_FullScreenFrame_C) == 0x000008, "Wrong alignment on UWBP_FullScreenFrame_C");
-static_assert(sizeof(UWBP_FullScreenFrame_C) == 0x0005E0, "Wrong size on UWBP_FullScreenFrame_C");
-static_assert(offsetof(UWBP_FullScreenFrame_C, UberGraphFrame) == 0x0005C0, "Member 'UWBP_FullScreenFrame_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenFrame_C, CanvasPanel_0) == 0x0005C8, "Member 'UWBP_FullScreenFrame_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenFrame_C, SizeBox_FullScreen) == 0x0005D0, "Member 'UWBP_FullScreenFrame_C::SizeBox_FullScreen' has a wrong offset!");
-static_assert(offsetof(UWBP_FullScreenFrame_C, Slot_FullScreen) == 0x0005D8, "Member 'UWBP_FullScreenFrame_C::Slot_FullScreen' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FullScreenFrame_C;
 
 }
 

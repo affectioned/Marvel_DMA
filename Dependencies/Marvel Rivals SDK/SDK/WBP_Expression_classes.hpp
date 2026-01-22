@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Expression.WBP_Expression_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_Expression_C final : public UPyWidget_Expression
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Expression;                                        // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID;                                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Expression;                                        // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID;                                               // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UpdateRenderTarget(class UTextureRenderTarget2D* RenderTarget);
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Expression_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Expression_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Expression_C")
 	}
 	static class UWBP_Expression_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Expression_C>();
 	}
 };
-static_assert(alignof(UWBP_Expression_C) == 0x000008, "Wrong alignment on UWBP_Expression_C");
-static_assert(sizeof(UWBP_Expression_C) == 0x0005D8, "Wrong size on UWBP_Expression_C");
-static_assert(offsetof(UWBP_Expression_C, UberGraphFrame) == 0x0005C0, "Member 'UWBP_Expression_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Expression_C, Expression) == 0x0005C8, "Member 'UWBP_Expression_C::Expression' has a wrong offset!");
-static_assert(offsetof(UWBP_Expression_C, MID) == 0x0005D0, "Member 'UWBP_Expression_C::MID' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Expression_C;
 
 }
 

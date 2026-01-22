@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BreathBuff_20030001_BP.BreathBuff_20030001_BP_C
-// 0x0000 (0x13D0 - 0x13D0)
+// 0x0000 (0x13E8 - 0x13E8)
 class UBreathBuff_20030001_BP_C final : public UMarvelBreathBuffAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BreathBuff_20030001_BP_C">();
+		BP_STATIC_CLASS_IMPL("BreathBuff_20030001_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BreathBuff_20030001_BP_C")
 	}
 	static class UBreathBuff_20030001_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBreathBuff_20030001_BP_C>();
 	}
 };
-static_assert(alignof(UBreathBuff_20030001_BP_C) == 0x000008, "Wrong alignment on UBreathBuff_20030001_BP_C");
-static_assert(sizeof(UBreathBuff_20030001_BP_C) == 0x0013D0, "Wrong size on UBreathBuff_20030001_BP_C");
+DUMPER7_ASSERTS_UBreathBuff_20030001_BP_C;
 
 }
 

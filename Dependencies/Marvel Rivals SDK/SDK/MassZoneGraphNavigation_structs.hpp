@@ -28,10 +28,7 @@ public:
 	struct FZoneGraphTagFilter                    LaneFilter;                                        // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         QueryRadius;                                       // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassZoneGraphNavigationParameters) == 0x000004, "Wrong alignment on FMassZoneGraphNavigationParameters");
-static_assert(sizeof(FMassZoneGraphNavigationParameters) == 0x000010, "Wrong size on FMassZoneGraphNavigationParameters");
-static_assert(offsetof(FMassZoneGraphNavigationParameters, LaneFilter) == 0x000000, "Member 'FMassZoneGraphNavigationParameters::LaneFilter' has a wrong offset!");
-static_assert(offsetof(FMassZoneGraphNavigationParameters, QueryRadius) == 0x00000C, "Member 'FMassZoneGraphNavigationParameters::QueryRadius' has a wrong offset!");
+DUMPER7_ASSERTS_FMassZoneGraphNavigationParameters;
 
 // ScriptStruct MassZoneGraphNavigation.ZoneGraphShortPathRequest
 // 0x0048 (0x0048 - 0x0000)
@@ -53,17 +50,7 @@ public:
 	uint8                                         bIsEndOfPathDirectionSet : 1;                      // 0x0046(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphShortPathRequest) == 0x000008, "Wrong alignment on FZoneGraphShortPathRequest");
-static_assert(sizeof(FZoneGraphShortPathRequest) == 0x000048, "Wrong size on FZoneGraphShortPathRequest");
-static_assert(offsetof(FZoneGraphShortPathRequest, StartPosition) == 0x000000, "Member 'FZoneGraphShortPathRequest::StartPosition' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, EndOfPathPosition) == 0x000018, "Member 'FZoneGraphShortPathRequest::EndOfPathPosition' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, NextLaneHandle) == 0x000030, "Member 'FZoneGraphShortPathRequest::NextLaneHandle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, TargetDistance) == 0x000038, "Member 'FZoneGraphShortPathRequest::TargetDistance' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, EndOfPathDirection) == 0x00003C, "Member 'FZoneGraphShortPathRequest::EndOfPathDirection' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, AnticipationDistance) == 0x000040, "Member 'FZoneGraphShortPathRequest::AnticipationDistance' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, EndOfPathOffset) == 0x000042, "Member 'FZoneGraphShortPathRequest::EndOfPathOffset' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, EndOfPathIntent) == 0x000044, "Member 'FZoneGraphShortPathRequest::EndOfPathIntent' has a wrong offset!");
-static_assert(offsetof(FZoneGraphShortPathRequest, NextExitLinkType) == 0x000045, "Member 'FZoneGraphShortPathRequest::NextExitLinkType' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphShortPathRequest;
 
 // ScriptStruct MassZoneGraphNavigation.MassZoneGraphPathRequestFragment
 // 0x0048 (0x0048 - 0x0000)
@@ -72,9 +59,7 @@ struct FMassZoneGraphPathRequestFragment final : public FMassFragment
 public:
 	struct FZoneGraphShortPathRequest             PathRequest;                                       // 0x0000(0x0048)(Transient, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassZoneGraphPathRequestFragment) == 0x000008, "Wrong alignment on FMassZoneGraphPathRequestFragment");
-static_assert(sizeof(FMassZoneGraphPathRequestFragment) == 0x000048, "Wrong size on FMassZoneGraphPathRequestFragment");
-static_assert(offsetof(FMassZoneGraphPathRequestFragment, PathRequest) == 0x000000, "Member 'FMassZoneGraphPathRequestFragment::PathRequest' has a wrong offset!");
+DUMPER7_ASSERTS_FMassZoneGraphPathRequestFragment;
 
 // ScriptStruct MassZoneGraphNavigation.MassZoneGraphLaneLocationFragment
 // 0x0010 (0x0010 - 0x0000)
@@ -83,8 +68,7 @@ struct alignas(0x04) FMassZoneGraphLaneLocationFragment final : public FMassFrag
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassZoneGraphLaneLocationFragment) == 0x000004, "Wrong alignment on FMassZoneGraphLaneLocationFragment");
-static_assert(sizeof(FMassZoneGraphLaneLocationFragment) == 0x000010, "Wrong size on FMassZoneGraphLaneLocationFragment");
+DUMPER7_ASSERTS_FMassZoneGraphLaneLocationFragment;
 
 // ScriptStruct MassZoneGraphNavigation.MassZoneGraphCachedLaneFragment
 // 0x00A8 (0x00A8 - 0x0000)
@@ -93,8 +77,7 @@ struct alignas(0x08) FMassZoneGraphCachedLaneFragment final : public FMassFragme
 public:
 	uint8                                         Pad_0[0xA8];                                       // 0x0000(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassZoneGraphCachedLaneFragment) == 0x000008, "Wrong alignment on FMassZoneGraphCachedLaneFragment");
-static_assert(sizeof(FMassZoneGraphCachedLaneFragment) == 0x0000A8, "Wrong size on FMassZoneGraphCachedLaneFragment");
+DUMPER7_ASSERTS_FMassZoneGraphCachedLaneFragment;
 
 // ScriptStruct MassZoneGraphNavigation.MassZoneGraphPathPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -103,8 +86,7 @@ struct alignas(0x08) FMassZoneGraphPathPoint final
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassZoneGraphPathPoint) == 0x000008, "Wrong alignment on FMassZoneGraphPathPoint");
-static_assert(sizeof(FMassZoneGraphPathPoint) == 0x000020, "Wrong size on FMassZoneGraphPathPoint");
+DUMPER7_ASSERTS_FMassZoneGraphPathPoint;
 
 // ScriptStruct MassZoneGraphNavigation.MassZoneGraphShortPathFragment
 // 0x0078 (0x0078 - 0x0000)
@@ -113,8 +95,7 @@ struct alignas(0x08) FMassZoneGraphShortPathFragment final : public FMassFragmen
 public:
 	uint8                                         Pad_0[0x78];                                       // 0x0000(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassZoneGraphShortPathFragment) == 0x000008, "Wrong alignment on FMassZoneGraphShortPathFragment");
-static_assert(sizeof(FMassZoneGraphShortPathFragment) == 0x000078, "Wrong size on FMassZoneGraphShortPathFragment");
+DUMPER7_ASSERTS_FMassZoneGraphShortPathFragment;
 
 // ScriptStruct MassZoneGraphNavigation.MassLaneCacheBoundaryFragment
 // 0x0020 (0x0020 - 0x0000)
@@ -123,8 +104,7 @@ struct alignas(0x08) FMassLaneCacheBoundaryFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassLaneCacheBoundaryFragment) == 0x000008, "Wrong alignment on FMassLaneCacheBoundaryFragment");
-static_assert(sizeof(FMassLaneCacheBoundaryFragment) == 0x000020, "Wrong size on FMassLaneCacheBoundaryFragment");
+DUMPER7_ASSERTS_FMassLaneCacheBoundaryFragment;
 
 }
 

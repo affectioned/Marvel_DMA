@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_CoinExchange.PyWidget_Secondary_CoinExchange
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_CoinExchange final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BatchSize;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BatchSize;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_CoinExchange">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_CoinExchange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_CoinExchange")
 	}
 	static class UPyWidget_Secondary_CoinExchange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_CoinExchange>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_CoinExchange) == 0x000008, "Wrong alignment on UPyWidget_Secondary_CoinExchange");
-static_assert(sizeof(UPyWidget_Secondary_CoinExchange) == 0x0005C0, "Wrong size on UPyWidget_Secondary_CoinExchange");
-static_assert(offsetof(UPyWidget_Secondary_CoinExchange, BatchSize) == 0x0005BC, "Member 'UPyWidget_Secondary_CoinExchange::BatchSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_CoinExchange;
 
 }
 

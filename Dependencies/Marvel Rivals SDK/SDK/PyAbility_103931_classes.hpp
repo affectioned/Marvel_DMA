@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Hero_1039_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Marvel_classes.hpp"
 
@@ -34,23 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103931">();
+		STATIC_CLASS_IMPL("PyConfig_103931")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103931")
 	}
 	static class UPyConfig_103931* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103931>();
 	}
 };
-static_assert(alignof(UPyConfig_103931) == 0x000008, "Wrong alignment on UPyConfig_103931");
-static_assert(sizeof(UPyConfig_103931) == 0x000118, "Wrong size on UPyConfig_103931");
-static_assert(offsetof(UPyConfig_103931, StartRecoverEnergyDict) == 0x0000B8, "Member 'UPyConfig_103931::StartRecoverEnergyDict' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103931, EnableSpecialScope) == 0x000108, "Member 'UPyConfig_103931::EnableSpecialScope' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103931, KnockUpBuffID) == 0x00010C, "Member 'UPyConfig_103931::KnockUpBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103931, SummonedID) == 0x000110, "Member 'UPyConfig_103931::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103931, SummonedSpawnedDelay) == 0x000114, "Member 'UPyConfig_103931::SummonedSpawnedDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103931;
 
 // PythonClass PyAbility_103931.PyScope_10393101
-// 0x0000 (0x1B60 - 0x1B60)
+// 0x0000 (0x1C20 - 0x1C20)
 class APyScope_10393101 final : public AScope_10393101
 {
 public:
@@ -60,24 +58,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10393101">();
+		STATIC_CLASS_IMPL("PyScope_10393101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10393101")
 	}
 	static class APyScope_10393101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10393101>();
 	}
 };
-static_assert(alignof(APyScope_10393101) == 0x000010, "Wrong alignment on APyScope_10393101");
-static_assert(sizeof(APyScope_10393101) == 0x001B60, "Wrong size on APyScope_10393101");
+DUMPER7_ASSERTS_APyScope_10393101;
 
 // PythonClass PyAbility_103931.PyCue_Scope_Loop_10393101
-// 0x0010 (0x10F0 - 0x10E0)
+// 0x0010 (0x1100 - 0x10F0)
 class APyCue_Scope_Loop_10393101 final : public AMarvelCueNotify_Scope
 {
 public:
-	class UFXSystemAsset*                         FxGround;                                          // 0x10E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceMax;                                       // 0x10E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FxDefaultRadius;                                   // 0x10EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         FxGround;                                          // 0x10F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceMax;                                       // 0x10F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FxDefaultRadius;                                   // 0x10FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -86,28 +87,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10393101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10393101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10393101")
 	}
 	static class APyCue_Scope_Loop_10393101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10393101>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10393101) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10393101");
-static_assert(sizeof(APyCue_Scope_Loop_10393101) == 0x0010F0, "Wrong size on APyCue_Scope_Loop_10393101");
-static_assert(offsetof(APyCue_Scope_Loop_10393101, FxGround) == 0x0010E0, "Member 'APyCue_Scope_Loop_10393101::FxGround' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10393101, DistanceMax) == 0x0010E8, "Member 'APyCue_Scope_Loop_10393101::DistanceMax' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10393101, FxDefaultRadius) == 0x0010EC, "Member 'APyCue_Scope_Loop_10393101::FxDefaultRadius' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10393101;
 
 // PythonClass PyAbility_103931.PyAbility_103931
-// 0x0090 (0x2A98 - 0x2A08)
+// 0x0090 (0x2AE8 - 0x2A58)
 class UPyAbility_103931 : public UAbility_103931
 {
 public:
-	struct FGameplayTag                           EnergyTag;                                         // 0x2A08(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A14[0x4];                                     // 0x2A14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAttribute                     CurrentEnergyAttr;                                 // 0x2A18(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     MaxEnergyAttr;                                     // 0x2A58(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x2A58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A64[0x4];                                     // 0x2A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     CurrentEnergyAttr;                                 // 0x2A68(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     MaxEnergyAttr;                                     // 0x2AA8(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -118,47 +119,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103931">();
+		STATIC_CLASS_IMPL("PyAbility_103931")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103931")
 	}
 	static class UPyAbility_103931* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103931>();
 	}
 };
-static_assert(alignof(UPyAbility_103931) == 0x000008, "Wrong alignment on UPyAbility_103931");
-static_assert(sizeof(UPyAbility_103931) == 0x002A98, "Wrong size on UPyAbility_103931");
-static_assert(offsetof(UPyAbility_103931, EnergyTag) == 0x002A08, "Member 'UPyAbility_103931::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103931, CurrentEnergyAttr) == 0x002A18, "Member 'UPyAbility_103931::CurrentEnergyAttr' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103931, MaxEnergyAttr) == 0x002A58, "Member 'UPyAbility_103931::MaxEnergyAttr' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103931;
 
 // PythonClass PyAbility_103931.PySkillEnergy_103931
-// 0x00A0 (0x1410 - 0x1370)
+// 0x00A0 (0x1428 - 0x1388)
 class UPySkillEnergy_103931 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<int32>                                 AbilityIds;                                        // 0x1370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         RestorEnergyValue;                                 // 0x1380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnergyTag;                                         // 0x1384(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     CurrentEnergyAttr;                                 // 0x1390(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     MaxEnergyAttr;                                     // 0x13D0(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AbilityIds;                                        // 0x1388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         RestorEnergyValue;                                 // 0x1398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x139C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     CurrentEnergyAttr;                                 // 0x13A8(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     MaxEnergyAttr;                                     // 0x13E8(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySkillEnergy_103931">();
+		STATIC_CLASS_IMPL("PySkillEnergy_103931")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySkillEnergy_103931")
 	}
 	static class UPySkillEnergy_103931* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySkillEnergy_103931>();
 	}
 };
-static_assert(alignof(UPySkillEnergy_103931) == 0x000008, "Wrong alignment on UPySkillEnergy_103931");
-static_assert(sizeof(UPySkillEnergy_103931) == 0x001410, "Wrong size on UPySkillEnergy_103931");
-static_assert(offsetof(UPySkillEnergy_103931, AbilityIds) == 0x001370, "Member 'UPySkillEnergy_103931::AbilityIds' has a wrong offset!");
-static_assert(offsetof(UPySkillEnergy_103931, RestorEnergyValue) == 0x001380, "Member 'UPySkillEnergy_103931::RestorEnergyValue' has a wrong offset!");
-static_assert(offsetof(UPySkillEnergy_103931, EnergyTag) == 0x001384, "Member 'UPySkillEnergy_103931::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPySkillEnergy_103931, CurrentEnergyAttr) == 0x001390, "Member 'UPySkillEnergy_103931::CurrentEnergyAttr' has a wrong offset!");
-static_assert(offsetof(UPySkillEnergy_103931, MaxEnergyAttr) == 0x0013D0, "Member 'UPySkillEnergy_103931::MaxEnergyAttr' has a wrong offset!");
+DUMPER7_ASSERTS_UPySkillEnergy_103931;
 
 }
 

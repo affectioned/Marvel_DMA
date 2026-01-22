@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyShowActorExtension_classes.hpp"
 #include "python_enums_structs.hpp"
+#include "PyShowActorExtension_classes.hpp"
 
 
 namespace SDK
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorExtension_1018001">();
+		STATIC_CLASS_IMPL("PyShowActorExtension_1018001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorExtension_1018001")
 	}
 	static class UPyShowActorExtension_1018001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorExtension_1018001>();
 	}
 };
-static_assert(alignof(UPyShowActorExtension_1018001) == 0x000008, "Wrong alignment on UPyShowActorExtension_1018001");
-static_assert(sizeof(UPyShowActorExtension_1018001) == 0x000030, "Wrong size on UPyShowActorExtension_1018001");
+DUMPER7_ASSERTS_UPyShowActorExtension_1018001;
 
 // PythonClass PyShowActorExtension_1018001.PyShowActorExtension_1018501
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorExtension_1018501">();
+		STATIC_CLASS_IMPL("PyShowActorExtension_1018501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorExtension_1018501")
 	}
 	static class UPyShowActorExtension_1018501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorExtension_1018501>();
 	}
 };
-static_assert(alignof(UPyShowActorExtension_1018501) == 0x000008, "Wrong alignment on UPyShowActorExtension_1018501");
-static_assert(sizeof(UPyShowActorExtension_1018501) == 0x000030, "Wrong size on UPyShowActorExtension_1018501");
+DUMPER7_ASSERTS_UPyShowActorExtension_1018501;
 
 }
 

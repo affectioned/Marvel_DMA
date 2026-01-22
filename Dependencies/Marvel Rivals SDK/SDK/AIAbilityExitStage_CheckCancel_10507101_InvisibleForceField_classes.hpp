@@ -23,15 +23,18 @@ class UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C final : pub
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C")
 	}
 	static class UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C");
-static_assert(sizeof(UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C) == 0x000040, "Wrong size on UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_CheckCancel_10507101_InvisibleForceField_C;
 
 }
 

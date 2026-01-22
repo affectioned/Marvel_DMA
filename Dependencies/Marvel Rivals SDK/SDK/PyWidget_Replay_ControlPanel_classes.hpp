@@ -19,24 +19,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_ControlPanel.PyWidget_Replay_ControlPanel
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_Replay_ControlPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           PauseReplayAction;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChangeSpeedAction;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           PlayerAnonymousModeAction;                         // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SwitchSpeedAction;                                 // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SwitchActualTimeMode;                              // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ShowPlayerSelectWindow;                            // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonAudio;                               // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_SwitchToLive;                              // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ShowPlayerViewPanel;                       // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                 PlaySpeedOptions;                                  // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UWidget>                    ReplayPlayerButtonClass;                           // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    Buttons;                                           // 0x0620(0x0010)(NativeAccessSpecifierPublic)
-	struct FKey                                   AnonymousModeKey;                                  // 0x0630(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           PauseReplayAction;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChangeSpeedAction;                                 // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           PlayerAnonymousModeAction;                         // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchSpeedAction;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchActualTimeMode;                              // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ShowPlayerSelectWindow;                            // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonAudio;                               // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_SwitchToLive;                              // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ShowPlayerViewPanel;                       // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 PlaySpeedOptions;                                  // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UWidget>                    ReplayPlayerButtonClass;                           // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    Buttons;                                           // 0x0628(0x0010)(NativeAccessSpecifierPublic)
+	struct FKey                                   AnonymousModeKey;                                  // 0x0638(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,28 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_ControlPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_ControlPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_ControlPanel")
 	}
 	static class UPyWidget_Replay_ControlPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_ControlPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_ControlPanel) == 0x000008, "Wrong alignment on UPyWidget_Replay_ControlPanel");
-static_assert(sizeof(UPyWidget_Replay_ControlPanel) == 0x000650, "Wrong size on UPyWidget_Replay_ControlPanel");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, PauseReplayAction) == 0x0005C0, "Member 'UPyWidget_Replay_ControlPanel::PauseReplayAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, ChangeSpeedAction) == 0x0005C8, "Member 'UPyWidget_Replay_ControlPanel::ChangeSpeedAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, PlayerAnonymousModeAction) == 0x0005D0, "Member 'UPyWidget_Replay_ControlPanel::PlayerAnonymousModeAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, SwitchSpeedAction) == 0x0005D8, "Member 'UPyWidget_Replay_ControlPanel::SwitchSpeedAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, SwitchActualTimeMode) == 0x0005E0, "Member 'UPyWidget_Replay_ControlPanel::SwitchActualTimeMode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, ShowPlayerSelectWindow) == 0x0005E8, "Member 'UPyWidget_Replay_ControlPanel::ShowPlayerSelectWindow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, AkEvent_CommonAudio) == 0x0005F0, "Member 'UPyWidget_Replay_ControlPanel::AkEvent_CommonAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, AkEvent_SwitchToLive) == 0x0005F8, "Member 'UPyWidget_Replay_ControlPanel::AkEvent_SwitchToLive' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, AkEvent_ShowPlayerViewPanel) == 0x000600, "Member 'UPyWidget_Replay_ControlPanel::AkEvent_ShowPlayerViewPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, PlaySpeedOptions) == 0x000608, "Member 'UPyWidget_Replay_ControlPanel::PlaySpeedOptions' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, ReplayPlayerButtonClass) == 0x000618, "Member 'UPyWidget_Replay_ControlPanel::ReplayPlayerButtonClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, Buttons) == 0x000620, "Member 'UPyWidget_Replay_ControlPanel::Buttons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_ControlPanel, AnonymousModeKey) == 0x000630, "Member 'UPyWidget_Replay_ControlPanel::AnonymousModeKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_ControlPanel;
 
 }
 

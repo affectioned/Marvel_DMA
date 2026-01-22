@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Emoji_2D.PyWidget_Emoji_2D
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Emoji_2D : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Emoji_2D">();
+		STATIC_CLASS_IMPL("PyWidget_Emoji_2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Emoji_2D")
 	}
 	static class UPyWidget_Emoji_2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Emoji_2D>();
 	}
 };
-static_assert(alignof(UPyWidget_Emoji_2D) == 0x000008, "Wrong alignment on UPyWidget_Emoji_2D");
-static_assert(sizeof(UPyWidget_Emoji_2D) == 0x0005D0, "Wrong size on UPyWidget_Emoji_2D");
-static_assert(offsetof(UPyWidget_Emoji_2D, OnPlayEmojiAnimFinished) == 0x0005C0, "Member 'UPyWidget_Emoji_2D::OnPlayEmojiAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Emoji_2D;
 
 }
 

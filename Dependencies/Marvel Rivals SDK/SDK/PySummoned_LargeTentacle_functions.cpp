@@ -149,60 +149,6 @@ void APySummoned_LargeTentacleArea::ReceiveTick(float DeltaSeconds)
 }
 
 
-// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.WhileActiveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCue_Scope_Loop_TentacleDeathAttack::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Loop_TentacleDeathAttack", "WhileActiveFX");
-
-	Params::PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.OnRemoveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCue_Scope_Loop_TentacleDeathAttack::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Loop_TentacleDeathAttack", "OnRemoveFX");
-
-	Params::PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PySummoned_LargeTentacle.PySummoned_LargeTentacle.ReceiveBeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -309,6 +255,60 @@ void APySummoned_LargeTentacle::MulticastAttack()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.WhileActiveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Scope_Loop_TentacleDeathAttack::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Loop_TentacleDeathAttack", "WhileActiveFX");
+
+	Params::PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.OnRemoveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Scope_Loop_TentacleDeathAttack::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Loop_TentacleDeathAttack", "OnRemoveFX");
+
+	Params::PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GMCmd_HistoryInputBox.PyWidget_GMCmd_HistoryInputBox
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_GMCmd_HistoryInputBox : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        ItemObjectList;                                    // 0x05C0(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& CmdText, const class FString& CmdName)> OnSubmitCmdText; // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsEditing)> OnEditingChanged;                                 // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        ItemObjectList;                                    // 0x05C8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& CmdText, const class FString& CmdName)> OnSubmitCmdText; // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsEditing)> OnEditingChanged;                                 // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmd_HistoryInputBox">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmd_HistoryInputBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmd_HistoryInputBox")
 	}
 	static class UPyWidget_GMCmd_HistoryInputBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmd_HistoryInputBox>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmd_HistoryInputBox) == 0x000008, "Wrong alignment on UPyWidget_GMCmd_HistoryInputBox");
-static_assert(sizeof(UPyWidget_GMCmd_HistoryInputBox) == 0x0005F0, "Wrong size on UPyWidget_GMCmd_HistoryInputBox");
-static_assert(offsetof(UPyWidget_GMCmd_HistoryInputBox, ItemObjectList) == 0x0005C0, "Member 'UPyWidget_GMCmd_HistoryInputBox::ItemObjectList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_HistoryInputBox, OnSubmitCmdText) == 0x0005D0, "Member 'UPyWidget_GMCmd_HistoryInputBox::OnSubmitCmdText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_HistoryInputBox, OnEditingChanged) == 0x0005E0, "Member 'UPyWidget_GMCmd_HistoryInputBox::OnEditingChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmd_HistoryInputBox;
 
 }
 

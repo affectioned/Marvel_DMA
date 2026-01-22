@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Bg_Dark.PyWidget_Common_Bg_Dark
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_Common_Bg_Dark final : public UMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Bg_Dark">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Bg_Dark")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Bg_Dark")
 	}
 	static class UPyWidget_Common_Bg_Dark* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Bg_Dark>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Bg_Dark) == 0x000008, "Wrong alignment on UPyWidget_Common_Bg_Dark");
-static_assert(sizeof(UPyWidget_Common_Bg_Dark) == 0x000568, "Wrong size on UPyWidget_Common_Bg_Dark");
+DUMPER7_ASSERTS_UPyWidget_Common_Bg_Dark;
 
 }
 

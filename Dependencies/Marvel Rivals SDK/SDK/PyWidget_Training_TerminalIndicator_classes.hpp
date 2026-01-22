@@ -33,7 +33,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Training_TerminalIndicator">();
+		STATIC_CLASS_IMPL("PyWidget_Training_TerminalIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Training_TerminalIndicator")
 	}
 	static class UPyWidget_Training_TerminalIndicator* GetDefaultObj()
 	{
@@ -41,9 +45,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Training_TerminalIndicator) == 0x000010, "Wrong alignment on UPyWidget_Training_TerminalIndicator");
-static_assert(sizeof(UPyWidget_Training_TerminalIndicator) == 0x000880, "Wrong size on UPyWidget_Training_TerminalIndicator");
-static_assert(offsetof(UPyWidget_Training_TerminalIndicator, ModeUIConfig) == 0x000870, "Member 'UPyWidget_Training_TerminalIndicator::ModeUIConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Training_TerminalIndicator;
 
 // PythonClass PyWidget_Training_TerminalIndicator.Pywidget_Traning_LimitTimeTraning_Indicator
 // 0x0020 (0x0890 - 0x0870)
@@ -61,7 +63,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_Traning_LimitTimeTraning_Indicator">();
+		STATIC_CLASS_IMPL("Pywidget_Traning_LimitTimeTraning_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_Traning_LimitTimeTraning_Indicator")
 	}
 	static class UPywidget_Traning_LimitTimeTraning_Indicator* GetDefaultObj()
 	{
@@ -69,9 +75,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPywidget_Traning_LimitTimeTraning_Indicator) == 0x000010, "Wrong alignment on UPywidget_Traning_LimitTimeTraning_Indicator");
-static_assert(sizeof(UPywidget_Traning_LimitTimeTraning_Indicator) == 0x000890, "Wrong size on UPywidget_Traning_LimitTimeTraning_Indicator");
-static_assert(offsetof(UPywidget_Traning_LimitTimeTraning_Indicator, Text) == 0x000870, "Member 'UPywidget_Traning_LimitTimeTraning_Indicator::Text' has a wrong offset!");
+DUMPER7_ASSERTS_UPywidget_Traning_LimitTimeTraning_Indicator;
 
 }
 

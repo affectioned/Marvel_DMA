@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_M2201_NavigationBar_RightArea.PyWidget_M2201_NavigationBar_RightArea
-// 0x0008 (0x0650 - 0x0648)
+// 0x0008 (0x0658 - 0x0650)
 class UPyWidget_M2201_NavigationBar_RightArea final : public UPyWidget_Common_NavigationRightArea
 {
 public:
-	bool                                          IsShowHeroDetail;                                  // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowMall;                                        // 0x0649(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowHeroDetail;                                  // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowMall;                                        // 0x0651(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201_NavigationBar_RightArea">();
+		STATIC_CLASS_IMPL("PyWidget_M2201_NavigationBar_RightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201_NavigationBar_RightArea")
 	}
 	static class UPyWidget_M2201_NavigationBar_RightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201_NavigationBar_RightArea>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201_NavigationBar_RightArea) == 0x000008, "Wrong alignment on UPyWidget_M2201_NavigationBar_RightArea");
-static_assert(sizeof(UPyWidget_M2201_NavigationBar_RightArea) == 0x000650, "Wrong size on UPyWidget_M2201_NavigationBar_RightArea");
-static_assert(offsetof(UPyWidget_M2201_NavigationBar_RightArea, IsShowHeroDetail) == 0x000648, "Member 'UPyWidget_M2201_NavigationBar_RightArea::IsShowHeroDetail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_NavigationBar_RightArea, IsShowMall) == 0x000649, "Member 'UPyWidget_M2201_NavigationBar_RightArea::IsShowMall' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_M2201_NavigationBar_RightArea;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity157_Main.PyWidget_Activity157_Main
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_Activity157_Main final : public UPyWidget_PopupAd_Base
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity157_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Activity157_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity157_Main")
 	}
 	static class UPyWidget_Activity157_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity157_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity157_Main) == 0x000008, "Wrong alignment on UPyWidget_Activity157_Main");
-static_assert(sizeof(UPyWidget_Activity157_Main) == 0x000600, "Wrong size on UPyWidget_Activity157_Main");
+DUMPER7_ASSERTS_UPyWidget_Activity157_Main;
 
 }
 

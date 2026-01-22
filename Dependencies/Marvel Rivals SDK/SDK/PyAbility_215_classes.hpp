@@ -25,22 +25,25 @@ class UPyCombatEmojiManager final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCombatEmojiManager">();
+		STATIC_CLASS_IMPL("PyCombatEmojiManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCombatEmojiManager")
 	}
 	static class UPyCombatEmojiManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCombatEmojiManager>();
 	}
 };
-static_assert(alignof(UPyCombatEmojiManager) == 0x000008, "Wrong alignment on UPyCombatEmojiManager");
-static_assert(sizeof(UPyCombatEmojiManager) == 0x000030, "Wrong size on UPyCombatEmojiManager");
+DUMPER7_ASSERTS_UPyCombatEmojiManager;
 
 // PythonClass PyAbility_215.PyCue_Ability_21501
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_21501 : public AMarvelCueNotify_Ability
 {
 public:
-	class UAkAudioEvent*                          UICombatEmojiAudioEvent;                           // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          UICombatEmojiAudioEvent;                           // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -48,16 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_21501">();
+		STATIC_CLASS_IMPL("PyCue_Ability_21501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_21501")
 	}
 	static class APyCue_Ability_21501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_21501>();
 	}
 };
-static_assert(alignof(APyCue_Ability_21501) == 0x000010, "Wrong alignment on APyCue_Ability_21501");
-static_assert(sizeof(APyCue_Ability_21501) == 0x0011C0, "Wrong size on APyCue_Ability_21501");
-static_assert(offsetof(APyCue_Ability_21501, UICombatEmojiAudioEvent) == 0x0011B0, "Member 'APyCue_Ability_21501::UICombatEmojiAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_21501;
 
 // PythonClass PyAbility_215.PyConfig_215
 // 0x00D8 (0x04A0 - 0x03C8)
@@ -71,28 +76,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_215">();
+		STATIC_CLASS_IMPL("PyConfig_215")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_215")
 	}
 	static class UPyConfig_215* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_215>();
 	}
 };
-static_assert(alignof(UPyConfig_215) == 0x000008, "Wrong alignment on UPyConfig_215");
-static_assert(sizeof(UPyConfig_215) == 0x0004A0, "Wrong size on UPyConfig_215");
-static_assert(offsetof(UPyConfig_215, CancelWithOwnerTagAddForMode602) == 0x0003C8, "Member 'UPyConfig_215::CancelWithOwnerTagAddForMode602' has a wrong offset!");
-static_assert(offsetof(UPyConfig_215, ActivationBlockedTagsForMode602) == 0x000430, "Member 'UPyConfig_215::ActivationBlockedTagsForMode602' has a wrong offset!");
-static_assert(offsetof(UPyConfig_215, MaxVisibleDistanceSquaredForMode602) == 0x000498, "Member 'UPyConfig_215::MaxVisibleDistanceSquaredForMode602' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_215;
 
 // PythonClass PyAbility_215.PyAbility_215
-// 0x0038 (0x2A40 - 0x2A08)
+// 0x0038 (0x2A90 - 0x2A58)
 class UPyAbility_215 : public UAbility_215
 {
 public:
-	TSubclassOf<class AActor>                     Combat2DEmoji;                                     // 0x2A08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAbilityActivated;                                // 0x2A10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& EmojiID, int32 DiceValue)> OnAbilityActivateWithNoStepCooldown; // 0x2A20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAbilityEndWithNoStepCooldown;                    // 0x2A30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TSubclassOf<class AActor>                     Combat2DEmoji;                                     // 0x2A58(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityActivated;                                // 0x2A60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EmojiID, int32 DiceValue)> OnAbilityActivateWithNoStepCooldown; // 0x2A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityEndWithNoStepCooldown;                    // 0x2A80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -108,19 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_215">();
+		STATIC_CLASS_IMPL("PyAbility_215")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_215")
 	}
 	static class UPyAbility_215* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_215>();
 	}
 };
-static_assert(alignof(UPyAbility_215) == 0x000008, "Wrong alignment on UPyAbility_215");
-static_assert(sizeof(UPyAbility_215) == 0x002A40, "Wrong size on UPyAbility_215");
-static_assert(offsetof(UPyAbility_215, Combat2DEmoji) == 0x002A08, "Member 'UPyAbility_215::Combat2DEmoji' has a wrong offset!");
-static_assert(offsetof(UPyAbility_215, OnAbilityActivated) == 0x002A10, "Member 'UPyAbility_215::OnAbilityActivated' has a wrong offset!");
-static_assert(offsetof(UPyAbility_215, OnAbilityActivateWithNoStepCooldown) == 0x002A20, "Member 'UPyAbility_215::OnAbilityActivateWithNoStepCooldown' has a wrong offset!");
-static_assert(offsetof(UPyAbility_215, OnAbilityEndWithNoStepCooldown) == 0x002A30, "Member 'UPyAbility_215::OnAbilityEndWithNoStepCooldown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_215;
 
 }
 

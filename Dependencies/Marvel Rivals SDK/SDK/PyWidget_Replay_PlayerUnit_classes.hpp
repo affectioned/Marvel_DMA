@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Replay_PlayerUnit.PyWidget_Replay_PlayerUnit
-// 0x0078 (0x0638 - 0x05C0)
+// 0x0078 (0x0640 - 0x05C8)
 class UPyWidget_Replay_PlayerUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ProtectTime;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeammateHpColor;                                   // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyHpColor;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<struct FGameplayTag>> ListenBuffDict;                                 // 0x05E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UMarvelButton*                          Btn_Main;                                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ProtectTime;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeammateHpColor;                                   // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyHpColor;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<struct FGameplayTag>> ListenBuffDict;                                 // 0x05E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UButton*                                Btn_Main;                                          // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_PlayerUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_PlayerUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_PlayerUnit")
 	}
 	static class UPyWidget_Replay_PlayerUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_PlayerUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_PlayerUnit) == 0x000008, "Wrong alignment on UPyWidget_Replay_PlayerUnit");
-static_assert(sizeof(UPyWidget_Replay_PlayerUnit) == 0x000638, "Wrong size on UPyWidget_Replay_PlayerUnit");
-static_assert(offsetof(UPyWidget_Replay_PlayerUnit, ProtectTime) == 0x0005BC, "Member 'UPyWidget_Replay_PlayerUnit::ProtectTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerUnit, TeammateHpColor) == 0x0005C0, "Member 'UPyWidget_Replay_PlayerUnit::TeammateHpColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerUnit, EnemyHpColor) == 0x0005D0, "Member 'UPyWidget_Replay_PlayerUnit::EnemyHpColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerUnit, ListenBuffDict) == 0x0005E0, "Member 'UPyWidget_Replay_PlayerUnit::ListenBuffDict' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerUnit, Btn_Main) == 0x000630, "Member 'UPyWidget_Replay_PlayerUnit::Btn_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_PlayerUnit;
 
 }
 

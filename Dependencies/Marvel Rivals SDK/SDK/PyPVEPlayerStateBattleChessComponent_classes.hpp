@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPVEPlayerStateBattleChessComponent">();
+		STATIC_CLASS_IMPL("PyPVEPlayerStateBattleChessComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPVEPlayerStateBattleChessComponent")
 	}
 	static class UPyPVEPlayerStateBattleChessComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPVEPlayerStateBattleChessComponent>();
 	}
 };
-static_assert(alignof(UPyPVEPlayerStateBattleChessComponent) == 0x000008, "Wrong alignment on UPyPVEPlayerStateBattleChessComponent");
-static_assert(sizeof(UPyPVEPlayerStateBattleChessComponent) == 0x000158, "Wrong size on UPyPVEPlayerStateBattleChessComponent");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, AIUIDList) == 0x000108, "Member 'UPyPVEPlayerStateBattleChessComponent::AIUIDList' has a wrong offset!");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, BattleSide) == 0x000118, "Member 'UPyPVEPlayerStateBattleChessComponent::BattleSide' has a wrong offset!");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, MultiSelectModeHeroIDs) == 0x000120, "Member 'UPyPVEPlayerStateBattleChessComponent::MultiSelectModeHeroIDs' has a wrong offset!");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, HeroList) == 0x000130, "Member 'UPyPVEPlayerStateBattleChessComponent::HeroList' has a wrong offset!");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, CardList) == 0x000140, "Member 'UPyPVEPlayerStateBattleChessComponent::CardList' has a wrong offset!");
-static_assert(offsetof(UPyPVEPlayerStateBattleChessComponent, HealthPoint) == 0x000150, "Member 'UPyPVEPlayerStateBattleChessComponent::HealthPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPVEPlayerStateBattleChessComponent;
 
 }
 

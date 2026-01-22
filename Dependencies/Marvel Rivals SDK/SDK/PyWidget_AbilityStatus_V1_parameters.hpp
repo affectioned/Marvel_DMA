@@ -23,9 +23,7 @@ struct PyWidget_AbilityStatusPanel_V1_SetTargetActor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_SetTargetActor");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_SetTargetActor) == 0x000008, "Wrong size on PyWidget_AbilityStatusPanel_V1_SetTargetActor");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_SetTargetActor;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.PreAddAbilityWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget) == 0x000004, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget) == 0x000004, "Wrong size on PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget, AbilityID) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_PreAddAbilityWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.OnAbilityWidgetLoaded
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded) == 0x000004, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded) == 0x000004, "Wrong size on PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded, AbilityID) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetLoaded;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.OnAbilityWidgetRemoved
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved) == 0x000004, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved) == 0x000004, "Wrong size on PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved, AbilityID) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_OnAbilityWidgetRemoved;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.AddAbilityWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -68,10 +60,7 @@ public:
 	class UUserWidget*                            InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         SlotIndex;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_AddAbilityWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_AddAbilityWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_AddAbilityWidget) == 0x000010, "Wrong size on PyWidget_AbilityStatusPanel_V1_AddAbilityWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddAbilityWidget, InWidget) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_AddAbilityWidget::InWidget' has a wrong offset!");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddAbilityWidget, SlotIndex) == 0x000008, "Member 'PyWidget_AbilityStatusPanel_V1_AddAbilityWidget::SlotIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_AddAbilityWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.AddWeaponWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -81,10 +70,7 @@ public:
 	class UUserWidget*                            InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         WeaponIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_AddWeaponWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_AddWeaponWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_AddWeaponWidget) == 0x000010, "Wrong size on PyWidget_AbilityStatusPanel_V1_AddWeaponWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddWeaponWidget, InWidget) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_AddWeaponWidget::InWidget' has a wrong offset!");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddWeaponWidget, WeaponIndex) == 0x000008, "Member 'PyWidget_AbilityStatusPanel_V1_AddWeaponWidget::WeaponIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_AddWeaponWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.AddWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -93,9 +79,7 @@ struct PyWidget_AbilityStatusPanel_V1_AddWidget final
 public:
 	class UUserWidget*                            InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_AddWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_AddWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_AddWidget) == 0x000008, "Wrong size on PyWidget_AbilityStatusPanel_V1_AddWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddWidget, InWidget) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_AddWidget::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_AddWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.AddOtherWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -105,10 +89,7 @@ public:
 	class UUserWidget*                            InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EAbilityStatusWidgetType                      Type;                                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_AddOtherWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_AddOtherWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_AddOtherWidget) == 0x000010, "Wrong size on PyWidget_AbilityStatusPanel_V1_AddOtherWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddOtherWidget, InWidget) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_AddOtherWidget::InWidget' has a wrong offset!");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_AddOtherWidget, Type) == 0x000008, "Member 'PyWidget_AbilityStatusPanel_V1_AddOtherWidget::Type' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_AddOtherWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.ShowStateHint
 // 0x0098 (0x0098 - 0x0000)
@@ -117,9 +98,7 @@ struct PyWidget_AbilityStatusPanel_V1_ShowStateHint final
 public:
 	struct FCueHintData                           HintData;                                          // 0x0000(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_ShowStateHint) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_ShowStateHint");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_ShowStateHint) == 0x000098, "Wrong size on PyWidget_AbilityStatusPanel_V1_ShowStateHint");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_ShowStateHint, HintData) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_ShowStateHint::HintData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_ShowStateHint;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.HideStateHint
 // 0x0098 (0x0098 - 0x0000)
@@ -128,9 +107,7 @@ struct PyWidget_AbilityStatusPanel_V1_HideStateHint final
 public:
 	struct FCueHintData                           HintData;                                          // 0x0000(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_HideStateHint) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_HideStateHint");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_HideStateHint) == 0x000098, "Wrong size on PyWidget_AbilityStatusPanel_V1_HideStateHint");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_HideStateHint, HintData) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_HideStateHint::HintData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_HideStateHint;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -139,9 +116,7 @@ struct PyWidget_AbilityStatusPanel_V1_SetVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_SetVisible) == 0x000001, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_SetVisible");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_SetVisible) == 0x000001, "Wrong size on PyWidget_AbilityStatusPanel_V1_SetVisible");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_SetVisible, InVisible) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_SetVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_SetVisible;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.RemoveWeaponWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +125,7 @@ struct PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget final
 public:
 	class UUserWidget*                            InWidget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget) == 0x000008, "Wrong size on PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget, InWidget) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget::InWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_RemoveWeaponWidget;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.OnSpecialVXPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -161,9 +134,7 @@ struct PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay final
 public:
 	EMarvelAbilityUIHudAnim                       ShakeMode;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay) == 0x000001, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay) == 0x000001, "Wrong size on PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay, ShakeMode) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay::ShakeMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_OnSpecialVXPlay;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.GetActionTips
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +143,7 @@ struct PyWidget_AbilityStatusPanel_V1_GetActionTips final
 public:
 	class UWidget_AbilityActionTips*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_GetActionTips) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_GetActionTips");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_GetActionTips) == 0x000008, "Wrong size on PyWidget_AbilityStatusPanel_V1_GetActionTips");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_GetActionTips, ReturnValue) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_GetActionTips::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_GetActionTips;
 
 // PythonFunction PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1.GetEnergyChargeWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -183,9 +152,7 @@ struct PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget final
 public:
 	class UWidget_AbilityEnergy_Charge*           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget) == 0x000008, "Wrong alignment on PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget");
-static_assert(sizeof(PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget) == 0x000008, "Wrong size on PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget");
-static_assert(offsetof(PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget, ReturnValue) == 0x000000, "Member 'PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityStatusPanel_V1_GetEnergyChargeWidget;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyBenchmarkController_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "PyBenchmarkController_structs.hpp"
 
 
 namespace SDK
@@ -43,19 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBenchmarkController">();
+		STATIC_CLASS_IMPL("PyBenchmarkController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBenchmarkController")
 	}
 	static class APyBenchmarkController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBenchmarkController>();
 	}
 };
-static_assert(alignof(APyBenchmarkController) == 0x000010, "Wrong alignment on APyBenchmarkController");
-static_assert(sizeof(APyBenchmarkController) == 0x000700, "Wrong size on APyBenchmarkController");
-static_assert(offsetof(APyBenchmarkController, LevelSequencePilot) == 0x0006E0, "Member 'APyBenchmarkController::LevelSequencePilot' has a wrong offset!");
-static_assert(offsetof(APyBenchmarkController, DelayTime) == 0x0006E8, "Member 'APyBenchmarkController::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyBenchmarkController, LoopCount) == 0x0006EC, "Member 'APyBenchmarkController::LoopCount' has a wrong offset!");
-static_assert(offsetof(APyBenchmarkController, BenchmarkTimeConfig) == 0x0006F0, "Member 'APyBenchmarkController::BenchmarkTimeConfig' has a wrong offset!");
+DUMPER7_ASSERTS_APyBenchmarkController;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyBond_SkillIntroduction.PyWidget_LobbyBond_SkillIntroduction
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_LobbyBond_SkillIntroduction final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyBond_SkillIntroduction">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyBond_SkillIntroduction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyBond_SkillIntroduction")
 	}
 	static class UPyWidget_LobbyBond_SkillIntroduction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyBond_SkillIntroduction>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyBond_SkillIntroduction) == 0x000008, "Wrong alignment on UPyWidget_LobbyBond_SkillIntroduction");
-static_assert(sizeof(UPyWidget_LobbyBond_SkillIntroduction) == 0x0005F8, "Wrong size on UPyWidget_LobbyBond_SkillIntroduction");
+DUMPER7_ASSERTS_UPyWidget_LobbyBond_SkillIntroduction;
 
 }
 

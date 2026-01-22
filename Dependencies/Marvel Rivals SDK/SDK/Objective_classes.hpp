@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Objective_C">();
+		BP_STATIC_CLASS_IMPL("Objective_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Objective_C")
 	}
 	static class AObjective_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AObjective_C>();
 	}
 };
-static_assert(alignof(AObjective_C) == 0x000010, "Wrong alignment on AObjective_C");
-static_assert(sizeof(AObjective_C) == 0x000A90, "Wrong size on AObjective_C");
-static_assert(offsetof(AObjective_C, LevelScopeCheckComponentBP) == 0x000A80, "Member 'AObjective_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(AObjective_C, MarvelSpline) == 0x000A88, "Member 'AObjective_C::MarvelSpline' has a wrong offset!");
+DUMPER7_ASSERTS_AObjective_C;
 
 }
 

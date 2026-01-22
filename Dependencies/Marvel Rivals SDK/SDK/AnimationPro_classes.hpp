@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AnimationPro_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimationPro_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
 
@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAOWithIKData">();
+		STATIC_CLASS_IMPL("MarvelAOWithIKData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAOWithIKData")
 	}
 	static class UMarvelAOWithIKData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAOWithIKData>();
 	}
 };
-static_assert(alignof(UMarvelAOWithIKData) == 0x000010, "Wrong alignment on UMarvelAOWithIKData");
-static_assert(sizeof(UMarvelAOWithIKData) == 0x0000E0, "Wrong size on UMarvelAOWithIKData");
-static_assert(offsetof(UMarvelAOWithIKData, AimIKConfig) == 0x000030, "Member 'UMarvelAOWithIKData::AimIKConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAOWithIKData;
 
 // Class AnimationPro.MarvelVehicleAnimBakedData
 // 0x0028 (0x0058 - 0x0030)
@@ -55,15 +57,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelVehicleAnimBakedData">();
+		STATIC_CLASS_IMPL("MarvelVehicleAnimBakedData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelVehicleAnimBakedData")
 	}
 	static class UMarvelVehicleAnimBakedData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelVehicleAnimBakedData>();
 	}
 };
-static_assert(alignof(UMarvelVehicleAnimBakedData) == 0x000008, "Wrong alignment on UMarvelVehicleAnimBakedData");
-static_assert(sizeof(UMarvelVehicleAnimBakedData) == 0x000058, "Wrong size on UMarvelVehicleAnimBakedData");
+DUMPER7_ASSERTS_UMarvelVehicleAnimBakedData;
+
+// Class AnimationPro.GoatTurnCtrlRigBakedData
+// 0x0170 (0x01A0 - 0x0030)
+class UGoatTurnCtrlRigBakedData final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x170];                                     // 0x0030(0x0170)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ClearData();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GoatTurnCtrlRigBakedData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GoatTurnCtrlRigBakedData")
+	}
+	static class UGoatTurnCtrlRigBakedData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGoatTurnCtrlRigBakedData>();
+	}
+};
+DUMPER7_ASSERTS_UGoatTurnCtrlRigBakedData;
 
 }
 

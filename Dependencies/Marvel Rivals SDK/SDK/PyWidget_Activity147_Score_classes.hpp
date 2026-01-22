@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_Score.PyWidget_Activity147_Score
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity147_Score final : public UPyMarvelUserWidget
 {
 public:
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Score">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Score")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Score")
 	}
 	static class UPyWidget_Activity147_Score* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Score>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Score) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Score");
-static_assert(sizeof(UPyWidget_Activity147_Score) == 0x0005C0, "Wrong size on UPyWidget_Activity147_Score");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Score;
 
 // PythonClass PyWidget_Activity147_Score.Activity147ScoreObject
 // 0x0000 (0x0030 - 0x0030)
@@ -48,22 +51,25 @@ class UActivity147ScoreObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Activity147ScoreObject">();
+		STATIC_CLASS_IMPL("Activity147ScoreObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Activity147ScoreObject")
 	}
 	static class UActivity147ScoreObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivity147ScoreObject>();
 	}
 };
-static_assert(alignof(UActivity147ScoreObject) == 0x000008, "Wrong alignment on UActivity147ScoreObject");
-static_assert(sizeof(UActivity147ScoreObject) == 0x000030, "Wrong size on UActivity147ScoreObject");
+DUMPER7_ASSERTS_UActivity147ScoreObject;
 
 // PythonClass PyWidget_Activity147_Score.PyWidget_Activity147_ScoreEntry
-// 0x0008 (0x0578 - 0x0570)
+// 0x0008 (0x0580 - 0x0578)
 class UPyWidget_Activity147_ScoreEntry final : public UWidget_ListEntry
 {
 public:
-	class UObject*                                ItemObject;                                        // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ItemObject;                                        // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,16 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_ScoreEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_ScoreEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_ScoreEntry")
 	}
 	static class UPyWidget_Activity147_ScoreEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_ScoreEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_ScoreEntry) == 0x000008, "Wrong alignment on UPyWidget_Activity147_ScoreEntry");
-static_assert(sizeof(UPyWidget_Activity147_ScoreEntry) == 0x000578, "Wrong size on UPyWidget_Activity147_ScoreEntry");
-static_assert(offsetof(UPyWidget_Activity147_ScoreEntry, ItemObject) == 0x000570, "Member 'UPyWidget_Activity147_ScoreEntry::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_ScoreEntry;
 
 }
 

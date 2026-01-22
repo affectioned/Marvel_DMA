@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilitySystemDebugger_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilitySystemDebugger_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilitySystemDebugger_C")
 	}
 	static class UWBP_AbilitySystemDebugger_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilitySystemDebugger_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilitySystemDebugger_C) == 0x000008, "Wrong alignment on UWBP_AbilitySystemDebugger_C");
-static_assert(sizeof(UWBP_AbilitySystemDebugger_C) == 0x0003D0, "Wrong size on UWBP_AbilitySystemDebugger_C");
-static_assert(offsetof(UWBP_AbilitySystemDebugger_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_AbilitySystemDebugger_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilitySystemDebugger_C, Content) == 0x0003C0, "Member 'UWBP_AbilitySystemDebugger_C::Content' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilitySystemDebugger_C, DebugString) == 0x0003C8, "Member 'UWBP_AbilitySystemDebugger_C::DebugString' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilitySystemDebugger_C;
 
 }
 

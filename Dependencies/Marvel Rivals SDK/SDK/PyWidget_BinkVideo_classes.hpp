@@ -17,24 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BinkVideo.PyWidget_BinkVideo
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_BinkVideo : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& Url)> OnMediaOpened;                          // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& VideoName)> OnEndReached;                     // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& VideoName)> OnNormalEndReached;               // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& Url)> OnMediaOpenFailed;                      // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMediaPlayed;                                     // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& VideoName)> OnMediaClosed;                    // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnMediaPaused;                                     // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	bool                                          AutoSize;                                          // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedPlayVideoSound;                                // 0x0631(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_632[0x6];                                      // 0x0632(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBinkMediaPlayer*                       VideoMediaPlayer;                                  // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                MI_Video;                                          // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CloseVideoOnDestruct;                              // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& Url)> OnMediaOpened;                          // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& VideoName)> OnEndReached;                     // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& VideoName)> OnNormalEndReached;               // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& Url)> OnMediaOpenFailed;                      // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMediaPlayed;                                     // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& VideoName)> OnMediaClosed;                    // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnMediaPaused;                                     // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          AutoSize;                                          // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedPlayVideoSound;                                // 0x0639(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_63A[0x6];                                      // 0x063A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBinkMediaPlayer*                       VideoMediaPlayer;                                  // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                MI_Video;                                          // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CloseVideoOnDestruct;                              // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BinkVideo">();
+		STATIC_CLASS_IMPL("PyWidget_BinkVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BinkVideo")
 	}
 	static class UPyWidget_BinkVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BinkVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_BinkVideo) == 0x000008, "Wrong alignment on UPyWidget_BinkVideo");
-static_assert(sizeof(UPyWidget_BinkVideo) == 0x000650, "Wrong size on UPyWidget_BinkVideo");
-static_assert(offsetof(UPyWidget_BinkVideo, OnMediaOpened) == 0x0005C0, "Member 'UPyWidget_BinkVideo::OnMediaOpened' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnEndReached) == 0x0005D0, "Member 'UPyWidget_BinkVideo::OnEndReached' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnNormalEndReached) == 0x0005E0, "Member 'UPyWidget_BinkVideo::OnNormalEndReached' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnMediaOpenFailed) == 0x0005F0, "Member 'UPyWidget_BinkVideo::OnMediaOpenFailed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnMediaPlayed) == 0x000600, "Member 'UPyWidget_BinkVideo::OnMediaPlayed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnMediaClosed) == 0x000610, "Member 'UPyWidget_BinkVideo::OnMediaClosed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, OnMediaPaused) == 0x000620, "Member 'UPyWidget_BinkVideo::OnMediaPaused' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, AutoSize) == 0x000630, "Member 'UPyWidget_BinkVideo::AutoSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, NeedPlayVideoSound) == 0x000631, "Member 'UPyWidget_BinkVideo::NeedPlayVideoSound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, VideoMediaPlayer) == 0x000638, "Member 'UPyWidget_BinkVideo::VideoMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, MI_Video) == 0x000640, "Member 'UPyWidget_BinkVideo::MI_Video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BinkVideo, CloseVideoOnDestruct) == 0x000648, "Member 'UPyWidget_BinkVideo::CloseVideoOnDestruct' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BinkVideo;
 
 }
 

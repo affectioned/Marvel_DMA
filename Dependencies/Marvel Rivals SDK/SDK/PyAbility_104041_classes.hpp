@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104041.PyCue_Ability_Loop_10404101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10404101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -28,24 +28,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10404101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10404101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10404101")
 	}
 	static class APyCue_Ability_Loop_10404101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10404101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10404101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10404101");
-static_assert(sizeof(APyCue_Ability_Loop_10404101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10404101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10404101;
 
 // PythonClass PyAbility_104041.PyCue_Ability_Loop_10404103
-// 0x0040 (0x11F0 - 0x11B0)
+// 0x0040 (0x1200 - 0x11C0)
 class APyCue_Ability_Loop_10404103 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UFXSystemAsset*                         AttackFXAsset;                                     // 0x11B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                AttackFXOffset;                                    // 0x11B8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               AttackFXRotation;                                  // 0x11D0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         AttackFXAsset;                                     // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                AttackFXOffset;                                    // 0x11C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               AttackFXRotation;                                  // 0x11E0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -55,18 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10404103">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10404103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10404103")
 	}
 	static class APyCue_Ability_Loop_10404103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10404103>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10404103) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10404103");
-static_assert(sizeof(APyCue_Ability_Loop_10404103) == 0x0011F0, "Wrong size on APyCue_Ability_Loop_10404103");
-static_assert(offsetof(APyCue_Ability_Loop_10404103, AttackFXAsset) == 0x0011B0, "Member 'APyCue_Ability_Loop_10404103::AttackFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10404103, AttackFXOffset) == 0x0011B8, "Member 'APyCue_Ability_Loop_10404103::AttackFXOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10404103, AttackFXRotation) == 0x0011D0, "Member 'APyCue_Ability_Loop_10404103::AttackFXRotation' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10404103;
 
 }
 

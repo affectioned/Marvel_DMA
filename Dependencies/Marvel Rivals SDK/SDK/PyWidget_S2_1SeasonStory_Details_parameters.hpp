@@ -23,9 +23,7 @@ struct PyWidget_S2_1SeasonStory_Details_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_Details_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_S2_1SeasonStory_Details_MarvelSetVisible");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_Details_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_S2_1SeasonStory_Details_MarvelSetVisible");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_Details_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_Details_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_Details_MarvelSetVisible;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_OnAnimationFinished;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.SetItemData
 // 0x0030 (0x0030 - 0x0000)
@@ -53,15 +49,7 @@ public:
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ItemUID;                                           // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_SetItemData) == 0x000008, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_SetItemData");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_SetItemData) == 0x000030, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_SetItemData");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, ItemID_0) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::ItemID_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, ItemType_0) == 0x000010, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::ItemType_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, ItemNum_0) == 0x000014, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::ItemNum_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, Multiple) == 0x000018, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::Multiple' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, Small) == 0x00001C, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::Small' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, DisableDynamic) == 0x00001D, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::DisableDynamic' has a wrong offset!");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemData, ItemUID) == 0x000020, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemData::ItemUID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_SetItemData;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +58,7 @@ struct PyWidget_S2_1SeasonStory_MainItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_SetIsHover");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_SetIsHover");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_SetIsHover;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.SetIsGot
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +67,7 @@ struct PyWidget_S2_1SeasonStory_MainItem_SetIsGot final
 public:
 	bool                                          IsGot_0;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_SetIsGot) == 0x000001, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_SetIsGot");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_SetIsGot) == 0x000001, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_SetIsGot");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetIsGot, IsGot_0) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetIsGot::IsGot_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_SetIsGot;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.SetIsLimitTime
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +76,7 @@ struct PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime final
 public:
 	bool                                          IsLimitTime_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime) == 0x000001, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime) == 0x000001, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime, IsLimitTime_0) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime::IsLimitTime_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_SetIsLimitTime;
 
 // PythonFunction PyWidget_S2_1SeasonStory_Details.PyWidget_S2_1SeasonStory_MainItem.SetItemIconQuality
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +85,7 @@ struct PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality final
 public:
 	EItemQualityType                              ItemQuality;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality) == 0x000001, "Wrong alignment on PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality");
-static_assert(sizeof(PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality) == 0x000001, "Wrong size on PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality");
-static_assert(offsetof(PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality, ItemQuality) == 0x000000, "Member 'PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality::ItemQuality' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S2_1SeasonStory_MainItem_SetItemIconQuality;
 
 }
 

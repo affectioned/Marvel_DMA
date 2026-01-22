@@ -21,9 +21,7 @@ struct PyAbility_105452_OnSculptChanged final
 public:
 	int32                                         InSculptID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105452_OnSculptChanged) == 0x000004, "Wrong alignment on PyAbility_105452_OnSculptChanged");
-static_assert(sizeof(PyAbility_105452_OnSculptChanged) == 0x000004, "Wrong size on PyAbility_105452_OnSculptChanged");
-static_assert(offsetof(PyAbility_105452_OnSculptChanged, InSculptID) == 0x000000, "Member 'PyAbility_105452_OnSculptChanged::InSculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105452_OnSculptChanged;
 
 // PythonFunction PyAbility_105452.PyAbility_105452.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_105452_K2_OnEndAbility final
 public:
 	bool                                          bCancelled;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105452_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105452_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105452_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105452_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105452_K2_OnEndAbility, bCancelled) == 0x000000, "Member 'PyAbility_105452_K2_OnEndAbility::bCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105452_K2_OnEndAbility;
 
 }
 

@@ -28,7 +28,11 @@ class IMeshCommandChangeTarget final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshCommandChangeTarget">();
+		STATIC_CLASS_IMPL("MeshCommandChangeTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshCommandChangeTarget")
 	}
 	static class IMeshCommandChangeTarget* GetDefaultObj()
 	{
@@ -44,8 +48,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMeshCommandChangeTarget) == 0x000001, "Wrong alignment on IMeshCommandChangeTarget");
-static_assert(sizeof(IMeshCommandChangeTarget) == 0x000001, "Wrong size on IMeshCommandChangeTarget");
+DUMPER7_ASSERTS_IMeshCommandChangeTarget;
 
 // Class GeometryFramework.MeshReplacementCommandChangeTarget
 // 0x0000 (0x0000 - 0x0000)
@@ -54,7 +57,11 @@ class IMeshReplacementCommandChangeTarget final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshReplacementCommandChangeTarget">();
+		STATIC_CLASS_IMPL("MeshReplacementCommandChangeTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshReplacementCommandChangeTarget")
 	}
 	static class IMeshReplacementCommandChangeTarget* GetDefaultObj()
 	{
@@ -70,8 +77,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMeshReplacementCommandChangeTarget) == 0x000001, "Wrong alignment on IMeshReplacementCommandChangeTarget");
-static_assert(sizeof(IMeshReplacementCommandChangeTarget) == 0x000001, "Wrong size on IMeshReplacementCommandChangeTarget");
+DUMPER7_ASSERTS_IMeshReplacementCommandChangeTarget;
 
 // Class GeometryFramework.MeshVertexCommandChangeTarget
 // 0x0000 (0x0000 - 0x0000)
@@ -80,7 +86,11 @@ class IMeshVertexCommandChangeTarget final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshVertexCommandChangeTarget">();
+		STATIC_CLASS_IMPL("MeshVertexCommandChangeTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshVertexCommandChangeTarget")
 	}
 	static class IMeshVertexCommandChangeTarget* GetDefaultObj()
 	{
@@ -96,8 +106,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMeshVertexCommandChangeTarget) == 0x000001, "Wrong alignment on IMeshVertexCommandChangeTarget");
-static_assert(sizeof(IMeshVertexCommandChangeTarget) == 0x000001, "Wrong size on IMeshVertexCommandChangeTarget");
+DUMPER7_ASSERTS_IMeshVertexCommandChangeTarget;
 
 // Class GeometryFramework.BaseDynamicMeshComponent
 // 0x0060 (0x08E0 - 0x0880)
@@ -154,26 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseDynamicMeshComponent">();
+		STATIC_CLASS_IMPL("BaseDynamicMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseDynamicMeshComponent")
 	}
 	static class UBaseDynamicMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBaseDynamicMeshComponent>();
 	}
 };
-static_assert(alignof(UBaseDynamicMeshComponent) == 0x000010, "Wrong alignment on UBaseDynamicMeshComponent");
-static_assert(sizeof(UBaseDynamicMeshComponent) == 0x0008E0, "Wrong size on UBaseDynamicMeshComponent");
-static_assert(offsetof(UBaseDynamicMeshComponent, bExplicitShowWireframe) == 0x000898, "Member 'UBaseDynamicMeshComponent::bExplicitShowWireframe' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, WireframeColor) == 0x00089C, "Member 'UBaseDynamicMeshComponent::WireframeColor' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, ColorMode) == 0x0008AC, "Member 'UBaseDynamicMeshComponent::ColorMode' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, ConstantColor) == 0x0008B0, "Member 'UBaseDynamicMeshComponent::ConstantColor' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, ColorSpaceMode) == 0x0008B4, "Member 'UBaseDynamicMeshComponent::ColorSpaceMode' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, bEnableFlatShading) == 0x0008B5, "Member 'UBaseDynamicMeshComponent::bEnableFlatShading' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, bEnableViewModeOverrides) == 0x0008B6, "Member 'UBaseDynamicMeshComponent::bEnableViewModeOverrides' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, OverrideRenderMaterial) == 0x0008B8, "Member 'UBaseDynamicMeshComponent::OverrideRenderMaterial' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, SecondaryRenderMaterial) == 0x0008C0, "Member 'UBaseDynamicMeshComponent::SecondaryRenderMaterial' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, bEnableRaytracing) == 0x0008C9, "Member 'UBaseDynamicMeshComponent::bEnableRaytracing' has a wrong offset!");
-static_assert(offsetof(UBaseDynamicMeshComponent, BaseMaterials) == 0x0008D0, "Member 'UBaseDynamicMeshComponent::BaseMaterials' has a wrong offset!");
+DUMPER7_ASSERTS_UBaseDynamicMeshComponent;
 
 // Class GeometryFramework.DynamicMeshComponent
 // 0x0270 (0x0B50 - 0x08E0)
@@ -214,24 +215,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicMeshComponent">();
+		STATIC_CLASS_IMPL("DynamicMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicMeshComponent")
 	}
 	static class UDynamicMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicMeshComponent>();
 	}
 };
-static_assert(alignof(UDynamicMeshComponent) == 0x000010, "Wrong alignment on UDynamicMeshComponent");
-static_assert(sizeof(UDynamicMeshComponent) == 0x000B50, "Wrong size on UDynamicMeshComponent");
-static_assert(offsetof(UDynamicMeshComponent, MeshObject) == 0x0008E8, "Member 'UDynamicMeshComponent::MeshObject' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, TangentsType) == 0x000A20, "Member 'UDynamicMeshComponent::TangentsType' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, CollisionType) == 0x000A60, "Member 'UDynamicMeshComponent::CollisionType' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, bUseAsyncCooking) == 0x000A61, "Member 'UDynamicMeshComponent::bUseAsyncCooking' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, bEnableComplexCollision) == 0x000A62, "Member 'UDynamicMeshComponent::bEnableComplexCollision' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, bDeferCollisionUpdates) == 0x000A63, "Member 'UDynamicMeshComponent::bDeferCollisionUpdates' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, MeshBodySetup) == 0x000A68, "Member 'UDynamicMeshComponent::MeshBodySetup' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, AggGeom) == 0x000AA8, "Member 'UDynamicMeshComponent::AggGeom' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshComponent, AsyncBodySetupQueue) == 0x000B38, "Member 'UDynamicMeshComponent::AsyncBodySetupQueue' has a wrong offset!");
+DUMPER7_ASSERTS_UDynamicMeshComponent;
 
 // Class GeometryFramework.DynamicMeshActor
 // 0x0010 (0x06F0 - 0x06E0)
@@ -255,18 +250,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicMeshActor">();
+		STATIC_CLASS_IMPL("DynamicMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicMeshActor")
 	}
 	static class ADynamicMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADynamicMeshActor>();
 	}
 };
-static_assert(alignof(ADynamicMeshActor) == 0x000010, "Wrong alignment on ADynamicMeshActor");
-static_assert(sizeof(ADynamicMeshActor) == 0x0006F0, "Wrong size on ADynamicMeshActor");
-static_assert(offsetof(ADynamicMeshActor, DynamicMeshComponent) == 0x0006D8, "Member 'ADynamicMeshActor::DynamicMeshComponent' has a wrong offset!");
-static_assert(offsetof(ADynamicMeshActor, bEnableComputeMeshPool) == 0x0006E0, "Member 'ADynamicMeshActor::bEnableComputeMeshPool' has a wrong offset!");
-static_assert(offsetof(ADynamicMeshActor, DynamicMeshPool) == 0x0006E8, "Member 'ADynamicMeshActor::DynamicMeshPool' has a wrong offset!");
+DUMPER7_ASSERTS_ADynamicMeshActor;
 
 // Class GeometryFramework.DynamicMeshGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -275,15 +270,18 @@ class UDynamicMeshGenerator final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicMeshGenerator">();
+		STATIC_CLASS_IMPL("DynamicMeshGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicMeshGenerator")
 	}
 	static class UDynamicMeshGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicMeshGenerator>();
 	}
 };
-static_assert(alignof(UDynamicMeshGenerator) == 0x000008, "Wrong alignment on UDynamicMeshGenerator");
-static_assert(sizeof(UDynamicMeshGenerator) == 0x000030, "Wrong size on UDynamicMeshGenerator");
+DUMPER7_ASSERTS_UDynamicMeshGenerator;
 
 // Class GeometryFramework.DynamicMesh
 // 0x0088 (0x00B8 - 0x0030)
@@ -307,18 +305,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicMesh">();
+		STATIC_CLASS_IMPL("DynamicMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicMesh")
 	}
 	static class UDynamicMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicMesh>();
 	}
 };
-static_assert(alignof(UDynamicMesh) == 0x000008, "Wrong alignment on UDynamicMesh");
-static_assert(sizeof(UDynamicMesh) == 0x0000B8, "Wrong size on UDynamicMesh");
-static_assert(offsetof(UDynamicMesh, MeshModifiedBPEvent) == 0x000078, "Member 'UDynamicMesh::MeshModifiedBPEvent' has a wrong offset!");
-static_assert(offsetof(UDynamicMesh, MeshGenerator) == 0x0000A8, "Member 'UDynamicMesh::MeshGenerator' has a wrong offset!");
-static_assert(offsetof(UDynamicMesh, bEnableMeshGenerator) == 0x0000B0, "Member 'UDynamicMesh::bEnableMeshGenerator' has a wrong offset!");
+DUMPER7_ASSERTS_UDynamicMesh;
 
 // Class GeometryFramework.DynamicMeshPool
 // 0x0020 (0x0050 - 0x0030)
@@ -337,17 +335,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DynamicMeshPool">();
+		STATIC_CLASS_IMPL("DynamicMeshPool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicMeshPool")
 	}
 	static class UDynamicMeshPool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDynamicMeshPool>();
 	}
 };
-static_assert(alignof(UDynamicMeshPool) == 0x000008, "Wrong alignment on UDynamicMeshPool");
-static_assert(sizeof(UDynamicMeshPool) == 0x000050, "Wrong size on UDynamicMeshPool");
-static_assert(offsetof(UDynamicMeshPool, CachedMeshes) == 0x000030, "Member 'UDynamicMeshPool::CachedMeshes' has a wrong offset!");
-static_assert(offsetof(UDynamicMeshPool, AllCreatedMeshes) == 0x000040, "Member 'UDynamicMeshPool::AllCreatedMeshes' has a wrong offset!");
+DUMPER7_ASSERTS_UDynamicMeshPool;
 
 }
 

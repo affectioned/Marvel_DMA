@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SeasonStory_Mission.PyWidget_Gallery_SeasonStory_Mission
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0040 (0x0640 - 0x0600)
 class UPyWidget_Gallery_SeasonStory_Mission final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           MouseScrollUp;                                     // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           MouseScrollDown;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePadL1;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePadR1;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePadL2;                                         // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePadR2;                                         // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_GamePadL1R1;                               // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_GamePadL2R2;                               // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           MouseScrollUp;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           MouseScrollDown;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePadL1;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePadR1;                                         // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePadL2;                                         // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePadR2;                                         // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_GamePadL1R1;                               // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_GamePadL2R2;                               // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SeasonStory_Mission">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SeasonStory_Mission")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SeasonStory_Mission")
 	}
 	static class UPyWidget_Gallery_SeasonStory_Mission* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SeasonStory_Mission>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SeasonStory_Mission) == 0x000008, "Wrong alignment on UPyWidget_Gallery_SeasonStory_Mission");
-static_assert(sizeof(UPyWidget_Gallery_SeasonStory_Mission) == 0x000638, "Wrong size on UPyWidget_Gallery_SeasonStory_Mission");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, MouseScrollUp) == 0x0005F8, "Member 'UPyWidget_Gallery_SeasonStory_Mission::MouseScrollUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, MouseScrollDown) == 0x000600, "Member 'UPyWidget_Gallery_SeasonStory_Mission::MouseScrollDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, GamePadL1) == 0x000608, "Member 'UPyWidget_Gallery_SeasonStory_Mission::GamePadL1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, GamePadR1) == 0x000610, "Member 'UPyWidget_Gallery_SeasonStory_Mission::GamePadR1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, GamePadL2) == 0x000618, "Member 'UPyWidget_Gallery_SeasonStory_Mission::GamePadL2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, GamePadR2) == 0x000620, "Member 'UPyWidget_Gallery_SeasonStory_Mission::GamePadR2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, AKEvent_GamePadL1R1) == 0x000628, "Member 'UPyWidget_Gallery_SeasonStory_Mission::AKEvent_GamePadL1R1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission, AKEvent_GamePadL2R2) == 0x000630, "Member 'UPyWidget_Gallery_SeasonStory_Mission::AKEvent_GamePadL2R2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SeasonStory_Mission;
 
 }
 

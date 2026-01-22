@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGameModeConnectComponent">();
+		STATIC_CLASS_IMPL("PyGameModeConnectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGameModeConnectComponent")
 	}
 	static class UPyGameModeConnectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGameModeConnectComponent>();
 	}
 };
-static_assert(alignof(UPyGameModeConnectComponent) == 0x000008, "Wrong alignment on UPyGameModeConnectComponent");
-static_assert(sizeof(UPyGameModeConnectComponent) == 0x000160, "Wrong size on UPyGameModeConnectComponent");
-static_assert(offsetof(UPyGameModeConnectComponent, InactivePlayerStates) == 0x000108, "Member 'UPyGameModeConnectComponent::InactivePlayerStates' has a wrong offset!");
-static_assert(offsetof(UPyGameModeConnectComponent, EnableReconnect) == 0x000158, "Member 'UPyGameModeConnectComponent::EnableReconnect' has a wrong offset!");
-static_assert(offsetof(UPyGameModeConnectComponent, EnableAIDelegate) == 0x000159, "Member 'UPyGameModeConnectComponent::EnableAIDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyGameModeConnectComponent;
 
 }
 

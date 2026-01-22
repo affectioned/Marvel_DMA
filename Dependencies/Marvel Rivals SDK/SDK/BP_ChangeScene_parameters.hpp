@@ -119,89 +119,7 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x0400(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0460(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ChangeScene_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_ChangeScene_C_UserConstructionScript");
-static_assert(sizeof(BP_ChangeScene_C_UserConstructionScript) == 0x000470, "Wrong size on BP_ChangeScene_C_UserConstructionScript");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable) == 0x000060, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000068, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable_1) == 0x000074, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000078, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable_2) == 0x00007C, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_2) == 0x000080, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable_3) == 0x000084, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_3) == 0x000088, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable_4) == 0x00008C, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_4) == 0x000090, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_5) == 0x000094, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000098, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x0000A0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000A8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000B0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0000B8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000C0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_6) == 0x0000C8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_2) == 0x0000D0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_3) == 0x0000D8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x0000E0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000E8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x0000F0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x0000F8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_4) == 0x000100, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_7) == 0x000108, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_5) == 0x000110, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000118, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_4) == 0x000130, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x000138, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue) == 0x000140, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_5) == 0x000148, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_6) == 0x000150, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000158, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_7) == 0x000170, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_8) == 0x000178, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_8) == 0x000180, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_9) == 0x000188, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_6) == 0x000190, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_3) == 0x000198, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_9) == 0x0001A0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_7) == 0x0001A8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_10) == 0x0001B0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_1) == 0x0001B8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_8) == 0x0001D0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_4) == 0x0001D8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_9) == 0x0001E0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_2) == 0x0001E8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x000200, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x000218, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x00021C, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_11) == 0x000220, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue_2) == 0x000228, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_12) == 0x000230, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_3) == 0x000238, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue_2) == 0x000250, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_VectorVector_ReturnValue) == 0x000268, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000280, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue_3) == 0x0002E0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x0002E4, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_13) == 0x0002E8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue_4) == 0x0002F0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_14) == 0x0002F8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_4) == 0x000300, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_AddInstances_ReturnValue) == 0x000318, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_AddInstances_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000328, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_1) == 0x000340, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x0003A0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue_1) == 0x0003A4, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x0003A8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, Temp_int_Variable_5) == 0x0003AC, "Member 'BP_ChangeScene_C_UserConstructionScript::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Multiply_IntInt_ReturnValue_5) == 0x0003B0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Multiply_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Conv_IntToDouble_ReturnValue_15) == 0x0003B8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Conv_IntToDouble_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x0003C0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue_5) == 0x0003C8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_VectorVector_ReturnValue_2) == 0x0003E0, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_10) == 0x0003F8, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue_2) == 0x000400, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ChangeScene_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue_2) == 0x000460, "Member 'BP_ChangeScene_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ChangeScene_C_UserConstructionScript;
 
 // Function BP_ChangeScene.BP_ChangeScene_C.ExecuteUbergraph_BP_ChangeScene
 // 0x0004 (0x0004 - 0x0000)
@@ -210,9 +128,7 @@ struct BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene) == 0x000004, "Wrong alignment on BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene");
-static_assert(sizeof(BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene) == 0x000004, "Wrong size on BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene");
-static_assert(offsetof(BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene, EntryPoint) == 0x000000, "Member 'BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ChangeScene_C_ExecuteUbergraph_BP_ChangeScene;
 
 }
 

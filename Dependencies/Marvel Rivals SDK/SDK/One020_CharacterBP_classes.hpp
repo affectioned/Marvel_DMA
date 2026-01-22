@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1020_CharacterBP.1020_CharacterBP_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class AOne020_CharacterBP_C final : public APyMantisCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1020_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1020_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1020_CharacterBP_C")
 	}
 	static class AOne020_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne020_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne020_CharacterBP_C) == 0x000010, "Wrong alignment on AOne020_CharacterBP_C");
-static_assert(sizeof(AOne020_CharacterBP_C) == 0x0021E0, "Wrong size on AOne020_CharacterBP_C");
+DUMPER7_ASSERTS_AOne020_CharacterBP_C;
 
 }
 

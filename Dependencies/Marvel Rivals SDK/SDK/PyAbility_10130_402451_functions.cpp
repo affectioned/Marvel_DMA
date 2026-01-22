@@ -55,6 +55,33 @@ void UPySummonedComp_40245101::K2_OnEndAgentTask()
 }
 
 
+// PythonFunction PyAbility_10130_402451.PyCue_Scope_Start_40245101.OnExecuteFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPyCue_Scope_Start_40245101::OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Start_40245101", "OnExecuteFX");
+
+	Params::PyCue_Scope_Start_40245101_OnExecuteFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_10130_402451.PyAbility_402451.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -285,33 +312,6 @@ void UPyCue_Scope_HitImpact_40245101::OnExecuteFX(class AActor* MyTarget, const 
 		Func = Class->GetFunction("PyCue_Scope_HitImpact_40245101", "OnExecuteFX");
 
 	Params::PyCue_Scope_HitImpact_40245101_OnExecuteFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_10130_402451.PyCue_Scope_Start_40245101.OnExecuteFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyCue_Scope_Start_40245101::OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Start_40245101", "OnExecuteFX");
-
-	Params::PyCue_Scope_Start_40245101_OnExecuteFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);

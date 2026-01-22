@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -41,20 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyArakkoPillarTreeSwitching">();
+		STATIC_CLASS_IMPL("PyArakkoPillarTreeSwitching")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyArakkoPillarTreeSwitching")
 	}
 	static class APyArakkoPillarTreeSwitching* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyArakkoPillarTreeSwitching>();
 	}
 };
-static_assert(alignof(APyArakkoPillarTreeSwitching) == 0x000010, "Wrong alignment on APyArakkoPillarTreeSwitching");
-static_assert(sizeof(APyArakkoPillarTreeSwitching) == 0x000760, "Wrong size on APyArakkoPillarTreeSwitching");
-static_assert(offsetof(APyArakkoPillarTreeSwitching, AnimInfo) == 0x000730, "Member 'APyArakkoPillarTreeSwitching::AnimInfo' has a wrong offset!");
-static_assert(offsetof(APyArakkoPillarTreeSwitching, TargetLSATag) == 0x000738, "Member 'APyArakkoPillarTreeSwitching::TargetLSATag' has a wrong offset!");
-static_assert(offsetof(APyArakkoPillarTreeSwitching, TargetLSA) == 0x000748, "Member 'APyArakkoPillarTreeSwitching::TargetLSA' has a wrong offset!");
-static_assert(offsetof(APyArakkoPillarTreeSwitching, ArakkoCar) == 0x000750, "Member 'APyArakkoPillarTreeSwitching::ArakkoCar' has a wrong offset!");
-static_assert(offsetof(APyArakkoPillarTreeSwitching, SyncArakkoCarDelayTimeSeconds) == 0x000758, "Member 'APyArakkoPillarTreeSwitching::SyncArakkoCarDelayTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_APyArakkoPillarTreeSwitching;
 
 }
 

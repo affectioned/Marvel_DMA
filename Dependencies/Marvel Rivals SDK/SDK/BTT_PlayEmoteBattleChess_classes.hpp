@@ -23,15 +23,18 @@ class UBTT_PlayEmoteBattleChess_C final : public UBTT_PyPlayEmoteBattleChess
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_PlayEmoteBattleChess_C">();
+		BP_STATIC_CLASS_IMPL("BTT_PlayEmoteBattleChess_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PlayEmoteBattleChess_C")
 	}
 	static class UBTT_PlayEmoteBattleChess_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PlayEmoteBattleChess_C>();
 	}
 };
-static_assert(alignof(UBTT_PlayEmoteBattleChess_C) == 0x000008, "Wrong alignment on UBTT_PlayEmoteBattleChess_C");
-static_assert(sizeof(UBTT_PlayEmoteBattleChess_C) == 0x0000D0, "Wrong size on UBTT_PlayEmoteBattleChess_C");
+DUMPER7_ASSERTS_UBTT_PlayEmoteBattleChess_C;
 
 }
 

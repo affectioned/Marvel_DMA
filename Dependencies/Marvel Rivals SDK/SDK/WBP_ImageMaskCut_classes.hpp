@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ImageMaskCut_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ImageMaskCut_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ImageMaskCut_C")
 	}
 	static class UWBP_ImageMaskCut_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ImageMaskCut_C>();
 	}
 };
-static_assert(alignof(UWBP_ImageMaskCut_C) == 0x000008, "Wrong alignment on UWBP_ImageMaskCut_C");
-static_assert(sizeof(UWBP_ImageMaskCut_C) == 0x000460, "Wrong size on UWBP_ImageMaskCut_C");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Anim_Hover) == 0x000428, "Member 'UWBP_ImageMaskCut_C::Anim_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Anim_HeroSwitch) == 0x000430, "Member 'UWBP_ImageMaskCut_C::Anim_HeroSwitch' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Anim_Secondtomain) == 0x000438, "Member 'UWBP_ImageMaskCut_C::Anim_Secondtomain' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Anim_Maintosecond) == 0x000440, "Member 'UWBP_ImageMaskCut_C::Anim_Maintosecond' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Img_Dynamic) == 0x000448, "Member 'UWBP_ImageMaskCut_C::Img_Dynamic' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, Img_Static) == 0x000450, "Member 'UWBP_ImageMaskCut_C::Img_Static' has a wrong offset!");
-static_assert(offsetof(UWBP_ImageMaskCut_C, SizeBox) == 0x000458, "Member 'UWBP_ImageMaskCut_C::SizeBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ImageMaskCut_C;
 
 }
 

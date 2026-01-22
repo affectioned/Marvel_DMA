@@ -17,49 +17,39 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ability_Weapon_V7.WBP_Ability_Weapon_V7_C
-// 0x0068 (0x05D8 - 0x0570)
+// 0x0068 (0x05E0 - 0x0578)
 class UWBP_Ability_Weapon_V7_C final : public UPyWidget_WeaponStatusPanel
 {
 public:
-	class UWidgetAnimation*                       AnimStates_WeaponMode;                             // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_Weapon1;                                      // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_Weapon2;                                      // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                Key_NextWeapon;                                    // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                Key_SwitchWeapon1;                                 // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                Key_SwitchWeapon2;                                 // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPyBattleScaleBox*                      ScaleBox_WeaponSpacer;                             // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Key1;                                      // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Key2;                                      // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_KeyHost;                                   // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon2;                                       // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon_Left;                                   // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon_Right;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       AnimStates_WeaponMode;                             // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Weapon1;                                      // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Weapon2;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                Key_NextWeapon;                                    // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                Key_SwitchWeapon1;                                 // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                Key_SwitchWeapon2;                                 // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPyBattleScaleBox*                      ScaleBox_WeaponSpacer;                             // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Key1;                                      // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Key2;                                      // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_KeyHost;                                   // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon2;                                       // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon_Left;                                   // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_WeaponUnit_V7_C*           WeaponIcon_Right;                                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_Weapon_V7_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_Weapon_V7_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_Weapon_V7_C")
 	}
 	static class UWBP_Ability_Weapon_V7_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_Weapon_V7_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_Weapon_V7_C) == 0x000008, "Wrong alignment on UWBP_Ability_Weapon_V7_C");
-static_assert(sizeof(UWBP_Ability_Weapon_V7_C) == 0x0005D8, "Wrong size on UWBP_Ability_Weapon_V7_C");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, AnimStates_WeaponMode) == 0x000570, "Member 'UWBP_Ability_Weapon_V7_C::AnimStates_WeaponMode' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, HBox_Weapon1) == 0x000578, "Member 'UWBP_Ability_Weapon_V7_C::HBox_Weapon1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, HBox_Weapon2) == 0x000580, "Member 'UWBP_Ability_Weapon_V7_C::HBox_Weapon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, Key_NextWeapon) == 0x000588, "Member 'UWBP_Ability_Weapon_V7_C::Key_NextWeapon' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, Key_SwitchWeapon1) == 0x000590, "Member 'UWBP_Ability_Weapon_V7_C::Key_SwitchWeapon1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, Key_SwitchWeapon2) == 0x000598, "Member 'UWBP_Ability_Weapon_V7_C::Key_SwitchWeapon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, ScaleBox_WeaponSpacer) == 0x0005A0, "Member 'UWBP_Ability_Weapon_V7_C::ScaleBox_WeaponSpacer' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, SizeBox_Key1) == 0x0005A8, "Member 'UWBP_Ability_Weapon_V7_C::SizeBox_Key1' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, SizeBox_Key2) == 0x0005B0, "Member 'UWBP_Ability_Weapon_V7_C::SizeBox_Key2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, SizeBox_KeyHost) == 0x0005B8, "Member 'UWBP_Ability_Weapon_V7_C::SizeBox_KeyHost' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, WeaponIcon2) == 0x0005C0, "Member 'UWBP_Ability_Weapon_V7_C::WeaponIcon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, WeaponIcon_Left) == 0x0005C8, "Member 'UWBP_Ability_Weapon_V7_C::WeaponIcon_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Weapon_V7_C, WeaponIcon_Right) == 0x0005D0, "Member 'UWBP_Ability_Weapon_V7_C::WeaponIcon_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_Weapon_V7_C;
 
 }
 

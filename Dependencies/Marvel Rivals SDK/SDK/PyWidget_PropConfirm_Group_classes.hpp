@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PropConfirm_Group.PyWidget_PropConfirm_Group
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PropConfirm_Group final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PropConfirm_Group">();
+		STATIC_CLASS_IMPL("PyWidget_PropConfirm_Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PropConfirm_Group")
 	}
 	static class UPyWidget_PropConfirm_Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PropConfirm_Group>();
 	}
 };
-static_assert(alignof(UPyWidget_PropConfirm_Group) == 0x000008, "Wrong alignment on UPyWidget_PropConfirm_Group");
-static_assert(sizeof(UPyWidget_PropConfirm_Group) == 0x0005C0, "Wrong size on UPyWidget_PropConfirm_Group");
+DUMPER7_ASSERTS_UPyWidget_PropConfirm_Group;
 
 }
 

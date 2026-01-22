@@ -12,9 +12,9 @@
 
 #include "CoreUObject_structs.hpp"
 #include "python_enums_structs.hpp"
+#include "level_battle_chess_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "level_battle_chess_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 
 
@@ -28,9 +28,7 @@ struct PyLevelEventSubSystem_IsMapLoaded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelEventSubSystem_IsMapLoaded) == 0x000001, "Wrong alignment on PyLevelEventSubSystem_IsMapLoaded");
-static_assert(sizeof(PyLevelEventSubSystem_IsMapLoaded) == 0x000001, "Wrong size on PyLevelEventSubSystem_IsMapLoaded");
-static_assert(offsetof(PyLevelEventSubSystem_IsMapLoaded, ReturnValue) == 0x000000, "Member 'PyLevelEventSubSystem_IsMapLoaded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelEventSubSystem_IsMapLoaded;
 
 // PythonFunction PyLevelEventSubsystem.PyReplayLevelEventSubSystem.IsMapLoaded
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +37,7 @@ struct PyReplayLevelEventSubSystem_IsMapLoaded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReplayLevelEventSubSystem_IsMapLoaded) == 0x000001, "Wrong alignment on PyReplayLevelEventSubSystem_IsMapLoaded");
-static_assert(sizeof(PyReplayLevelEventSubSystem_IsMapLoaded) == 0x000001, "Wrong size on PyReplayLevelEventSubSystem_IsMapLoaded");
-static_assert(offsetof(PyReplayLevelEventSubSystem_IsMapLoaded, ReturnValue) == 0x000000, "Member 'PyReplayLevelEventSubSystem_IsMapLoaded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyReplayLevelEventSubSystem_IsMapLoaded;
 
 }
 

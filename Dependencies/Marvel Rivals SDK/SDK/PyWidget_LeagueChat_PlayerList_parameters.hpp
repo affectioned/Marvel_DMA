@@ -21,9 +21,7 @@ struct PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet final
 public:
 	class UObject*                                _itm;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet, _itm) == 0x000000, "Member 'PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet::_itm' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueChat_PlayerNameEntry_OnListItemObjectSet;
 
 }
 

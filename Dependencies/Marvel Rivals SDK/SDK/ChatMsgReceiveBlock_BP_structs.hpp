@@ -29,13 +29,7 @@ public:
 	TArray<struct FChatMsgReceiveBlockRules_BP>   RulesList_13_8FFB178C4195039DDB341088AD1968BC;     // 0x0018(0x0010)(Edit, BlueprintVisible)
 	class FText                                   Tips_16_D77C9AD343FFC228AD64BC9FE7B31150;          // 0x0028(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FChatMsgReceiveBlock_BP) == 0x000008, "Wrong alignment on FChatMsgReceiveBlock_BP");
-static_assert(sizeof(FChatMsgReceiveBlock_BP) == 0x000040, "Wrong size on FChatMsgReceiveBlock_BP");
-static_assert(offsetof(FChatMsgReceiveBlock_BP, IsDisable_21_C68E93634736E505164BEDBE7436E365) == 0x000000, "Member 'FChatMsgReceiveBlock_BP::IsDisable_21_C68E93634736E505164BEDBE7436E365' has a wrong offset!");
-static_assert(offsetof(FChatMsgReceiveBlock_BP, BlockLogic_24_51CFB9454AD2F981E588C980B7B86392) == 0x000001, "Member 'FChatMsgReceiveBlock_BP::BlockLogic_24_51CFB9454AD2F981E588C980B7B86392' has a wrong offset!");
-static_assert(offsetof(FChatMsgReceiveBlock_BP, ArgsList_8_334A573E410C320182B6D49AB12FE333) == 0x000008, "Member 'FChatMsgReceiveBlock_BP::ArgsList_8_334A573E410C320182B6D49AB12FE333' has a wrong offset!");
-static_assert(offsetof(FChatMsgReceiveBlock_BP, RulesList_13_8FFB178C4195039DDB341088AD1968BC) == 0x000018, "Member 'FChatMsgReceiveBlock_BP::RulesList_13_8FFB178C4195039DDB341088AD1968BC' has a wrong offset!");
-static_assert(offsetof(FChatMsgReceiveBlock_BP, Tips_16_D77C9AD343FFC228AD64BC9FE7B31150) == 0x000028, "Member 'FChatMsgReceiveBlock_BP::Tips_16_D77C9AD343FFC228AD64BC9FE7B31150' has a wrong offset!");
+DUMPER7_ASSERTS_FChatMsgReceiveBlock_BP;
 
 }
 

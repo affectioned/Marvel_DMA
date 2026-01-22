@@ -18,15 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Room.PyWidget_League_Room
-// 0x0248 (0x0840 - 0x05F8)
+// 0x0240 (0x0840 - 0x0600)
 class UPyWidget_League_Room final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             BgMRC;                                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgClash;                                           // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             RandomImg;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_618[0x8];                                      // 0x0618(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             BgMRC;                                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgClash;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             RandomImg;                                         // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            AttackerColor;                                     // 0x0620(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            DefenderColor;                                     // 0x06F0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	int32                                         CountDown_Time;                                    // 0x07C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -47,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Room">();
+		STATIC_CLASS_IMPL("PyWidget_League_Room")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Room")
 	}
 	static class UPyWidget_League_Room* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Room>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Room) == 0x000010, "Wrong alignment on UPyWidget_League_Room");
-static_assert(sizeof(UPyWidget_League_Room) == 0x000840, "Wrong size on UPyWidget_League_Room");
-static_assert(offsetof(UPyWidget_League_Room, BgMRC) == 0x0005F8, "Member 'UPyWidget_League_Room::BgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, BgClash) == 0x000600, "Member 'UPyWidget_League_Room::BgClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, RandomImg) == 0x000608, "Member 'UPyWidget_League_Room::RandomImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, MapNameClass) == 0x000610, "Member 'UPyWidget_League_Room::MapNameClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, AttackerColor) == 0x000620, "Member 'UPyWidget_League_Room::AttackerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, DefenderColor) == 0x0006F0, "Member 'UPyWidget_League_Room::DefenderColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, CountDown_Time) == 0x0007C0, "Member 'UPyWidget_League_Room::CountDown_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, CountDown_Padding_Ready) == 0x0007C4, "Member 'UPyWidget_League_Room::CountDown_Padding_Ready' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, CountDown_Padding_Unready) == 0x0007D4, "Member 'UPyWidget_League_Room::CountDown_Padding_Unready' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, TitleTextColorMRC) == 0x0007E4, "Member 'UPyWidget_League_Room::TitleTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, TitleTextColorClash) == 0x0007F8, "Member 'UPyWidget_League_Room::TitleTextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, ContentTextColorMRC) == 0x00080C, "Member 'UPyWidget_League_Room::ContentTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room, ContentTextColorClash) == 0x000820, "Member 'UPyWidget_League_Room::ContentTextColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Room;
 
 }
 

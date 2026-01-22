@@ -21,9 +21,7 @@ struct PyWidget_LobbyBond_Card_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LobbyBond_Card_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_LobbyBond_Card_OnAnimationFinished");
-static_assert(sizeof(PyWidget_LobbyBond_Card_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_LobbyBond_Card_OnAnimationFinished");
-static_assert(offsetof(PyWidget_LobbyBond_Card_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_LobbyBond_Card_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyBond_Card_OnAnimationFinished;
 
 // PythonFunction PyWidget_LobbyBondPanel.PyWidget_LobbyBondPanel.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_LobbyBondPanel_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LobbyBondPanel_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_LobbyBondPanel_PreConstruct");
-static_assert(sizeof(PyWidget_LobbyBondPanel_PreConstruct) == 0x000001, "Wrong size on PyWidget_LobbyBondPanel_PreConstruct");
-static_assert(offsetof(PyWidget_LobbyBondPanel_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_LobbyBondPanel_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyBondPanel_PreConstruct;
 
 // PythonFunction PyWidget_LobbyBondPanel.PyWidget_LobbyBondPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_LobbyBondPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LobbyBondPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_LobbyBondPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_LobbyBondPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_LobbyBondPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_LobbyBondPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_LobbyBondPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyBondPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_LobbyBondPanel.PyWidget_LobbyBondPanel.on_try_srcoll_when_next_focusable_child_change
 // 0x0018 (0x0018 - 0x0000)
@@ -58,12 +52,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UButton*                                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change) == 0x000008, "Wrong alignment on PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change");
-static_assert(sizeof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change) == 0x000018, "Wrong size on PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change");
-static_assert(offsetof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change, NumItemsLine) == 0x000008, "Member 'PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change::NumItemsLine' has a wrong offset!");
-static_assert(offsetof(PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change, ReturnValue) == 0x000010, "Member 'PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LobbyBondPanel_on_try_srcoll_when_next_focusable_child_change;
 
 }
 

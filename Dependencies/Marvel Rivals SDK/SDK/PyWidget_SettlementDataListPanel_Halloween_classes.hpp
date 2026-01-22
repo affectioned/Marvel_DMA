@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettlementDataListPanel_Halloween.PyWidget_SettlementDataListPanel_Halloween
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05F0 - 0x05F0)
 class UPyWidget_SettlementDataListPanel_Halloween final : public UPyWidget_SettlementDataListPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_Halloween">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_Halloween")
 	}
 	static class UPyWidget_SettlementDataListPanel_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_Halloween>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataListPanel_Halloween) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_Halloween");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_Halloween) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel_Halloween");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_Halloween;
 
 }
 

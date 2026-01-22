@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1015_CharacterBP.1015_CharacterBP_C
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class AOne015_CharacterBP_C final : public APyStormCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1015_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1015_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1015_CharacterBP_C")
 	}
 	static class AOne015_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne015_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne015_CharacterBP_C) == 0x000010, "Wrong alignment on AOne015_CharacterBP_C");
-static_assert(sizeof(AOne015_CharacterBP_C) == 0x002220, "Wrong size on AOne015_CharacterBP_C");
+DUMPER7_ASSERTS_AOne015_CharacterBP_C;
 
 }
 

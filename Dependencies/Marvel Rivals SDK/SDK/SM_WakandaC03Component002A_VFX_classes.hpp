@@ -17,39 +17,34 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_WakandaC03Component002A_VFX.SM_WakandaC03Component002A_VFX_C
-// 0x0040 (0x0730 - 0x06F0)
+// 0x0040 (0x0740 - 0x0700)
 class ASM_WakandaC03Component002A_VFX_C final : public AEnvironmentStaticActor
 {
 public:
-	class UStaticMeshComponent*                   SM_Mesh02;                                         // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachStaticMesh;                                  // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Common_BlackSmoke_01;                           // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDecalComponent*                        Decal_01;                                          // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Common_Fire_03;                                 // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Common_Fire_02;                                 // 0x0720(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Common_Fire_01;                                 // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_Mesh02;                                         // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachStaticMesh;                                  // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Common_BlackSmoke_01;                           // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDecalComponent*                        Decal_01;                                          // 0x0720(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Common_Fire_03;                                 // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Common_Fire_02;                                 // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Common_Fire_01;                                 // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_WakandaC03Component002A_VFX_C">();
+		BP_STATIC_CLASS_IMPL("SM_WakandaC03Component002A_VFX_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_WakandaC03Component002A_VFX_C")
 	}
 	static class ASM_WakandaC03Component002A_VFX_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_WakandaC03Component002A_VFX_C>();
 	}
 };
-static_assert(alignof(ASM_WakandaC03Component002A_VFX_C) == 0x000010, "Wrong alignment on ASM_WakandaC03Component002A_VFX_C");
-static_assert(sizeof(ASM_WakandaC03Component002A_VFX_C) == 0x000730, "Wrong size on ASM_WakandaC03Component002A_VFX_C");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, SM_Mesh02) == 0x0006F0, "Member 'ASM_WakandaC03Component002A_VFX_C::SM_Mesh02' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, AttachStaticMesh) == 0x0006F8, "Member 'ASM_WakandaC03Component002A_VFX_C::AttachStaticMesh' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, NS_Common_BlackSmoke_01) == 0x000700, "Member 'ASM_WakandaC03Component002A_VFX_C::NS_Common_BlackSmoke_01' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, PointLight) == 0x000708, "Member 'ASM_WakandaC03Component002A_VFX_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, Decal_01) == 0x000710, "Member 'ASM_WakandaC03Component002A_VFX_C::Decal_01' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, NS_Common_Fire_03) == 0x000718, "Member 'ASM_WakandaC03Component002A_VFX_C::NS_Common_Fire_03' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, NS_Common_Fire_02) == 0x000720, "Member 'ASM_WakandaC03Component002A_VFX_C::NS_Common_Fire_02' has a wrong offset!");
-static_assert(offsetof(ASM_WakandaC03Component002A_VFX_C, NS_Common_Fire_01) == 0x000728, "Member 'ASM_WakandaC03Component002A_VFX_C::NS_Common_Fire_01' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_WakandaC03Component002A_VFX_C;
 
 }
 

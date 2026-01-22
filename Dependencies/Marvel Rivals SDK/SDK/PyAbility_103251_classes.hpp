@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103251.PyCue_Ability_Loop_10325101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10325101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -31,26 +31,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10325101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10325101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10325101")
 	}
 	static class APyCue_Ability_Loop_10325101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10325101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10325101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10325101");
-static_assert(sizeof(APyCue_Ability_Loop_10325101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10325101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10325101;
 
 // PythonClass PyAbility_103251.PyCue_Summoner_Loop_10325101
-// 0x0030 (0x1230 - 0x1200)
+// 0x0030 (0x1290 - 0x1260)
 class APyCue_Summoner_Loop_10325101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Scale;                                             // 0x1200(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MoveSpeed;                                         // 0x1218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeTime;                                          // 0x121C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SquirrelsRespawnDis;                               // 0x1220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Scale;                                             // 0x1260(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MoveSpeed;                                         // 0x1278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeTime;                                          // 0x127C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SquirrelsRespawnDis;                               // 0x1280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -61,19 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10325101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10325101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10325101")
 	}
 	static class APyCue_Summoner_Loop_10325101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10325101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10325101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10325101");
-static_assert(sizeof(APyCue_Summoner_Loop_10325101) == 0x001230, "Wrong size on APyCue_Summoner_Loop_10325101");
-static_assert(offsetof(APyCue_Summoner_Loop_10325101, Scale) == 0x001200, "Member 'APyCue_Summoner_Loop_10325101::Scale' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10325101, MoveSpeed) == 0x001218, "Member 'APyCue_Summoner_Loop_10325101::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10325101, FadeTime) == 0x00121C, "Member 'APyCue_Summoner_Loop_10325101::FadeTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10325101, SquirrelsRespawnDis) == 0x001220, "Member 'APyCue_Summoner_Loop_10325101::SquirrelsRespawnDis' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10325101;
 
 }
 

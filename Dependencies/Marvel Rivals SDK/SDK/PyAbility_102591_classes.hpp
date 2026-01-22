@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102591.PyAbility_102591
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102591 : public UMarvelGameplayAbility
 {
 public:
@@ -27,20 +27,24 @@ public:
 	void OnPressToStop(float TimeWaited);
 	void K2_OnEndAbility(bool bWasCancelled);
 	void OnDurationEnd();
+	void NativeOnMontageEvent(const class FString& Tag);
 	void NativeOnMontageCompleted(const class FString& Tag);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102591">();
+		STATIC_CLASS_IMPL("PyAbility_102591")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102591")
 	}
 	static class UPyAbility_102591* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102591>();
 	}
 };
-static_assert(alignof(UPyAbility_102591) == 0x000008, "Wrong alignment on UPyAbility_102591");
-static_assert(sizeof(UPyAbility_102591) == 0x0029F0, "Wrong size on UPyAbility_102591");
+DUMPER7_ASSERTS_UPyAbility_102591;
 
 // PythonClass PyAbility_102591.PyCue_AbilityInstant_10259101
 // 0x0010 (0x03D0 - 0x03C0)
@@ -55,26 +59,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityInstant_10259101">();
+		STATIC_CLASS_IMPL("PyCue_AbilityInstant_10259101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityInstant_10259101")
 	}
 	static class UPyCue_AbilityInstant_10259101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_AbilityInstant_10259101>();
 	}
 };
-static_assert(alignof(UPyCue_AbilityInstant_10259101) == 0x000008, "Wrong alignment on UPyCue_AbilityInstant_10259101");
-static_assert(sizeof(UPyCue_AbilityInstant_10259101) == 0x0003D0, "Wrong size on UPyCue_AbilityInstant_10259101");
-static_assert(offsetof(UPyCue_AbilityInstant_10259101, ReleaseFXs) == 0x0003C0, "Member 'UPyCue_AbilityInstant_10259101::ReleaseFXs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_AbilityInstant_10259101;
 
 // PythonClass PyAbility_102591.PyCue_Buff_10259103
-// 0x00B0 (0x16F0 - 0x1640)
+// 0x00B0 (0x17A0 - 0x16F0)
 class APyCue_Buff_10259103 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<TSubclassOf<class USceneComponent>>      AllyHidenComponents;                               // 0x1640(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSet<TSubclassOf<class USceneComponent>>      EnemyHidenComponents;                              // 0x1690(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         BuffHPOpacity;                                     // 0x16E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<TSubclassOf<class USceneComponent>>      AllyHidenComponents;                               // 0x16F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSet<TSubclassOf<class USceneComponent>>      EnemyHidenComponents;                              // 0x1740(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         BuffHPOpacity;                                     // 0x1790(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -85,18 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10259103">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10259103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10259103")
 	}
 	static class APyCue_Buff_10259103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10259103>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10259103) == 0x000010, "Wrong alignment on APyCue_Buff_10259103");
-static_assert(sizeof(APyCue_Buff_10259103) == 0x0016F0, "Wrong size on APyCue_Buff_10259103");
-static_assert(offsetof(APyCue_Buff_10259103, AllyHidenComponents) == 0x001640, "Member 'APyCue_Buff_10259103::AllyHidenComponents' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10259103, EnemyHidenComponents) == 0x001690, "Member 'APyCue_Buff_10259103::EnemyHidenComponents' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10259103, BuffHPOpacity) == 0x0016E0, "Member 'APyCue_Buff_10259103::BuffHPOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10259103;
 
 }
 

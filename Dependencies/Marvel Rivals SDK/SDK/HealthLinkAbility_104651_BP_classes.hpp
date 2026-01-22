@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HealthLinkAbility_104651_BP.HealthLinkAbility_104651_BP_C
-// 0x0000 (0x13B8 - 0x13B8)
+// 0x0000 (0x13D0 - 0x13D0)
 class UHealthLinkAbility_104651_BP_C final : public UHealthLinkAbility_104651
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HealthLinkAbility_104651_BP_C">();
+		BP_STATIC_CLASS_IMPL("HealthLinkAbility_104651_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HealthLinkAbility_104651_BP_C")
 	}
 	static class UHealthLinkAbility_104651_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHealthLinkAbility_104651_BP_C>();
 	}
 };
-static_assert(alignof(UHealthLinkAbility_104651_BP_C) == 0x000008, "Wrong alignment on UHealthLinkAbility_104651_BP_C");
-static_assert(sizeof(UHealthLinkAbility_104651_BP_C) == 0x0013B8, "Wrong size on UHealthLinkAbility_104651_BP_C");
+DUMPER7_ASSERTS_UHealthLinkAbility_104651_BP_C;
 
 }
 

@@ -13,46 +13,45 @@
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1028_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Hero_1028_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_102861.PyConfig_102861
-// 0x0C00 (0x0C98 - 0x0098)
+// 0x0F20 (0x0FB8 - 0x0098)
 class UPyConfig_102861 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x0C60(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 InputStateParam;                                   // 0x0C6C(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          IsCanManualCloseAbility;                           // 0x0C94(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x0F80(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 InputStateParam;                                   // 0x0F8C(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          IsCanManualCloseAbility;                           // 0x0FB4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102861">();
+		STATIC_CLASS_IMPL("PyConfig_102861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102861")
 	}
 	static class UPyConfig_102861* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102861>();
 	}
 };
-static_assert(alignof(UPyConfig_102861) == 0x000008, "Wrong alignment on UPyConfig_102861");
-static_assert(sizeof(UPyConfig_102861) == 0x000C98, "Wrong size on UPyConfig_102861");
-static_assert(offsetof(UPyConfig_102861, DashInfo) == 0x000098, "Member 'UPyConfig_102861::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102861, SpecialAbilityTag) == 0x000C60, "Member 'UPyConfig_102861::SpecialAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102861, InputStateParam) == 0x000C6C, "Member 'UPyConfig_102861::InputStateParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102861, IsCanManualCloseAbility) == 0x000C94, "Member 'UPyConfig_102861::IsCanManualCloseAbility' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102861;
 
 // PythonClass PyAbility_102861.PyAbilityCue_10286101
-// 0x0010 (0x11F0 - 0x11E0)
+// 0x0010 (0x1200 - 0x11F0)
 class APyAbilityCue_10286101 final : public ACueAbilityLoop_10286101
 {
 public:
-	int32                                         AbilityID;                                         // 0x11E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x11F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -60,23 +59,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityCue_10286101">();
+		STATIC_CLASS_IMPL("PyAbilityCue_10286101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityCue_10286101")
 	}
 	static class APyAbilityCue_10286101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAbilityCue_10286101>();
 	}
 };
-static_assert(alignof(APyAbilityCue_10286101) == 0x000010, "Wrong alignment on APyAbilityCue_10286101");
-static_assert(sizeof(APyAbilityCue_10286101) == 0x0011F0, "Wrong size on APyAbilityCue_10286101");
-static_assert(offsetof(APyAbilityCue_10286101, AbilityID) == 0x0011E0, "Member 'APyAbilityCue_10286101::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyAbilityCue_10286101;
 
 // PythonClass PyAbility_102861.PyAbility_102861
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPyAbility_102861 : public UMarvelGameplayAbility
 {
 public:
-	struct FVector                                DashDirection;                                     // 0x29F0(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DashDirection;                                     // 0x2A40(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -89,16 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102861">();
+		STATIC_CLASS_IMPL("PyAbility_102861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102861")
 	}
 	static class UPyAbility_102861* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102861>();
 	}
 };
-static_assert(alignof(UPyAbility_102861) == 0x000008, "Wrong alignment on UPyAbility_102861");
-static_assert(sizeof(UPyAbility_102861) == 0x002A08, "Wrong size on UPyAbility_102861");
-static_assert(offsetof(UPyAbility_102861, DashDirection) == 0x0029F0, "Member 'UPyAbility_102861::DashDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102861;
 
 }
 

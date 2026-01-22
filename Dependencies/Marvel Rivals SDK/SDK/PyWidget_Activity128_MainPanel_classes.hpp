@@ -20,13 +20,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity128_MainPanel.PyWidget_Activity128_MainPanel_CardCombination
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity128_MainPanel_CardCombination final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSelectItem;                                      // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSelectItem;                                      // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,25 +35,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_MainPanel_CardCombination">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_MainPanel_CardCombination")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_MainPanel_CardCombination")
 	}
 	static class UPyWidget_Activity128_MainPanel_CardCombination* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_MainPanel_CardCombination>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_MainPanel_CardCombination) == 0x000008, "Wrong alignment on UPyWidget_Activity128_MainPanel_CardCombination");
-static_assert(sizeof(UPyWidget_Activity128_MainPanel_CardCombination) == 0x0005D0, "Wrong size on UPyWidget_Activity128_MainPanel_CardCombination");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_CardCombination, Index_0) == 0x0005BC, "Member 'UPyWidget_Activity128_MainPanel_CardCombination::Index_0' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_CardCombination, OnSelectItem) == 0x0005C0, "Member 'UPyWidget_Activity128_MainPanel_CardCombination::OnSelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_MainPanel_CardCombination;
 
 // PythonClass PyWidget_Activity128_MainPanel.PyWidget_Activity128_MainPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Activity128_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             SeniorIcon;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SeniorHoverIcon;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SeniorIcon;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SeniorHoverIcon;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -64,25 +65,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_MainPanel")
 	}
 	static class UPyWidget_Activity128_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity128_MainPanel");
-static_assert(sizeof(UPyWidget_Activity128_MainPanel) == 0x000608, "Wrong size on UPyWidget_Activity128_MainPanel");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel, SeniorIcon) == 0x0005F8, "Member 'UPyWidget_Activity128_MainPanel::SeniorIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel, SeniorHoverIcon) == 0x000600, "Member 'UPyWidget_Activity128_MainPanel::SeniorHoverIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_MainPanel;
 
 // PythonClass PyWidget_Activity128_MainPanel.PyWidget_Activity128_MainPanel_Mission
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity128_MainPanel_Mission final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Interval;                                          // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Interval;                                          // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -92,26 +94,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_MainPanel_Mission">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_MainPanel_Mission")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_MainPanel_Mission")
 	}
 	static class UPyWidget_Activity128_MainPanel_Mission* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_MainPanel_Mission>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_MainPanel_Mission) == 0x000008, "Wrong alignment on UPyWidget_Activity128_MainPanel_Mission");
-static_assert(sizeof(UPyWidget_Activity128_MainPanel_Mission) == 0x0005C0, "Wrong size on UPyWidget_Activity128_MainPanel_Mission");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Mission, Interval) == 0x0005BC, "Member 'UPyWidget_Activity128_MainPanel_Mission::Interval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_MainPanel_Mission;
 
 // PythonClass PyWidget_Activity128_MainPanel.PyWidget_Activity128_MainPanel_MissionNumber
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Activity128_MainPanel_MissionNumber final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            UnlockColor;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LockColor;                                         // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         Index_0;                                           // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            UnlockColor;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LockColor;                                         // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -121,31 +125,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_MainPanel_MissionNumber">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_MainPanel_MissionNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_MainPanel_MissionNumber")
 	}
 	static class UPyWidget_Activity128_MainPanel_MissionNumber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_MainPanel_MissionNumber>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_MainPanel_MissionNumber) == 0x000008, "Wrong alignment on UPyWidget_Activity128_MainPanel_MissionNumber");
-static_assert(sizeof(UPyWidget_Activity128_MainPanel_MissionNumber) == 0x0005E8, "Wrong size on UPyWidget_Activity128_MainPanel_MissionNumber");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_MissionNumber, UnlockColor) == 0x0005BC, "Member 'UPyWidget_Activity128_MainPanel_MissionNumber::UnlockColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_MissionNumber, LockColor) == 0x0005D0, "Member 'UPyWidget_Activity128_MainPanel_MissionNumber::LockColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_MissionNumber, Index_0) == 0x0005E4, "Member 'UPyWidget_Activity128_MainPanel_MissionNumber::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_MainPanel_MissionNumber;
 
 // PythonClass PyWidget_Activity128_MainPanel.PyWidget_Activity128_MainPanel_Item
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_Activity128_MainPanel_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Custom;                             // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Image_Scale_Custom;                                // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Image_Scale_Normal;                                // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Custom;                             // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Image_Scale_Custom;                                // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Image_Scale_Normal;                                // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -155,21 +159,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_MainPanel_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_MainPanel_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_MainPanel_Item")
 	}
 	static class UPyWidget_Activity128_MainPanel_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_MainPanel_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_MainPanel_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity128_MainPanel_Item");
-static_assert(sizeof(UPyWidget_Activity128_MainPanel_Item) == 0x000608, "Wrong size on UPyWidget_Activity128_MainPanel_Item");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity128_MainPanel_Item::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity128_MainPanel_Item::Image_OffsetUV_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, Image_OffsetUV_Custom) == 0x0005E0, "Member 'UPyWidget_Activity128_MainPanel_Item::Image_OffsetUV_Custom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, Image_Scale_Custom) == 0x0005F0, "Member 'UPyWidget_Activity128_MainPanel_Item::Image_Scale_Custom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, Image_Scale_Normal) == 0x0005F4, "Member 'UPyWidget_Activity128_MainPanel_Item::Image_Scale_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_MainPanel_Item, OnClicked) == 0x0005F8, "Member 'UPyWidget_Activity128_MainPanel_Item::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_MainPanel_Item;
 
 }
 

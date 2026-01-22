@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103111.PyCue_Ability_Loop_10311101
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyCue_Ability_Loop_10311101 : public AMarvelCueNotify_Ability
 {
 public:
-	float                                         DelayHideTime;                                     // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayHideTime;                                     // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10311101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10311101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10311101")
 	}
 	static class APyCue_Ability_Loop_10311101* GetDefaultObj()
 	{
@@ -40,9 +44,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyCue_Ability_Loop_10311101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10311101");
-static_assert(sizeof(APyCue_Ability_Loop_10311101) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10311101");
-static_assert(offsetof(APyCue_Ability_Loop_10311101, DelayHideTime) == 0x0011B0, "Member 'APyCue_Ability_Loop_10311101::DelayHideTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10311101;
 
 }
 

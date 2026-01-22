@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder) == 0x000004, "Wrong alignment on PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder");
-static_assert(sizeof(PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder) == 0x000008, "Wrong size on PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder");
-static_assert(offsetof(PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder, AbilityInputBind) == 0x000000, "Member 'PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder::AbilityInputBind' has a wrong offset!");
-static_assert(offsetof(PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder, ReturnValue) == 0x000004, "Member 'PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityActionDisplayOrder_GetAbilityActionDisplayOrder;
 
 }
 

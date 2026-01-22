@@ -532,38 +532,6 @@ enum class EAkFitToGeometryMode : uint8
 	EAkFitToGeometryMode_MAX                 = 3,
 };
 
-// ScriptStruct AkAudio.AkAudioSession
-// 0x000C (0x000C - 0x0000)
-struct FAkAudioSession final
-{
-public:
-	EAkAudioSessionCategory                       AudioSessionCategory;                              // 0x0000(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        AudioSessionCategoryOptions;                       // 0x0004(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAkAudioSessionMode                           AudioSessionMode;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkAudioSession) == 0x000004, "Wrong alignment on FAkAudioSession");
-static_assert(sizeof(FAkAudioSession) == 0x00000C, "Wrong size on FAkAudioSession");
-static_assert(offsetof(FAkAudioSession, AudioSessionCategory) == 0x000000, "Member 'FAkAudioSession::AudioSessionCategory' has a wrong offset!");
-static_assert(offsetof(FAkAudioSession, AudioSessionCategoryOptions) == 0x000004, "Member 'FAkAudioSession::AudioSessionCategoryOptions' has a wrong offset!");
-static_assert(offsetof(FAkAudioSession, AudioSessionMode) == 0x000008, "Member 'FAkAudioSession::AudioSessionMode' has a wrong offset!");
-
-// ScriptStruct AkAudio.AkTriangle
-// 0x0008 (0x0008 - 0x0000)
-struct FAkTriangle final
-{
-public:
-	uint16                                        Point0;                                            // 0x0000(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        Point1;                                            // 0x0002(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        Point2;                                            // 0x0004(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint16                                        Surface;                                           // 0x0006(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAkTriangle) == 0x000002, "Wrong alignment on FAkTriangle");
-static_assert(sizeof(FAkTriangle) == 0x000008, "Wrong size on FAkTriangle");
-static_assert(offsetof(FAkTriangle, Point0) == 0x000000, "Member 'FAkTriangle::Point0' has a wrong offset!");
-static_assert(offsetof(FAkTriangle, Point1) == 0x000002, "Member 'FAkTriangle::Point1' has a wrong offset!");
-static_assert(offsetof(FAkTriangle, Point2) == 0x000004, "Member 'FAkTriangle::Point2' has a wrong offset!");
-static_assert(offsetof(FAkTriangle, Surface) == 0x000006, "Member 'FAkTriangle::Surface' has a wrong offset!");
-
 // ScriptStruct AkAudio.AKWaapiJsonObject
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) FAKWaapiJsonObject final
@@ -571,8 +539,7 @@ struct alignas(0x08) FAKWaapiJsonObject final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAKWaapiJsonObject) == 0x000008, "Wrong alignment on FAKWaapiJsonObject");
-static_assert(sizeof(FAKWaapiJsonObject) == 0x000010, "Wrong size on FAKWaapiJsonObject");
+DUMPER7_ASSERTS_FAKWaapiJsonObject;
 
 // ScriptStruct AkAudio.AkChannelMask
 // 0x0004 (0x0004 - 0x0000)
@@ -581,21 +548,20 @@ struct FAkChannelMask final
 public:
 	int32                                         ChannelMask;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkChannelMask) == 0x000004, "Wrong alignment on FAkChannelMask");
-static_assert(sizeof(FAkChannelMask) == 0x000004, "Wrong size on FAkChannelMask");
-static_assert(offsetof(FAkChannelMask, ChannelMask) == 0x000000, "Member 'FAkChannelMask::ChannelMask' has a wrong offset!");
+DUMPER7_ASSERTS_FAkChannelMask;
 
-// ScriptStruct AkAudio.AkAcousticTextureParams
-// 0x0030 (0x0030 - 0x0000)
-struct FAkAcousticTextureParams final
+// ScriptStruct AkAudio.AkOutputSettings
+// 0x0010 (0x0010 - 0x0000)
+struct FAkOutputSettings final
 {
 public:
-	struct FVector4                               AbsorptionValues;                                  // 0x0000(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAkAudioDeviceShareSet*                 AudioDeviceShareSet;                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IdDevice;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPanningRule                                  PanRule;                                           // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAkChannelConfiguration                       ChannelConfig;                                     // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkAcousticTextureParams) == 0x000010, "Wrong alignment on FAkAcousticTextureParams");
-static_assert(sizeof(FAkAcousticTextureParams) == 0x000030, "Wrong size on FAkAcousticTextureParams");
-static_assert(offsetof(FAkAcousticTextureParams, AbsorptionValues) == 0x000000, "Member 'FAkAcousticTextureParams::AbsorptionValues' has a wrong offset!");
+DUMPER7_ASSERTS_FAkOutputSettings;
 
 // ScriptStruct AkAudio.AkWaapiSubscriptionId
 // 0x0008 (0x0008 - 0x0000)
@@ -604,8 +570,7 @@ struct alignas(0x08) FAkWaapiSubscriptionId final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkWaapiSubscriptionId) == 0x000008, "Wrong alignment on FAkWaapiSubscriptionId");
-static_assert(sizeof(FAkWaapiSubscriptionId) == 0x000008, "Wrong size on FAkWaapiSubscriptionId");
+DUMPER7_ASSERTS_FAkWaapiSubscriptionId;
 
 // ScriptStruct AkAudio.AkAdvancedInitializationSettings
 // 0x0034 (0x0034 - 0x0000)
@@ -629,21 +594,7 @@ public:
 	uint32                                        VmPageSize;                                        // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        MemAllocationSizeLimit;                            // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkAdvancedInitializationSettings");
-static_assert(sizeof(FAkAdvancedInitializationSettings) == 0x000034, "Wrong size on FAkAdvancedInitializationSettings");
-static_assert(offsetof(FAkAdvancedInitializationSettings, IO_MemorySize) == 0x000000, "Member 'FAkAdvancedInitializationSettings::IO_MemorySize' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, IO_Granularity) == 0x000004, "Member 'FAkAdvancedInitializationSettings::IO_Granularity' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, TargetAutoStreamBufferLength) == 0x000008, "Member 'FAkAdvancedInitializationSettings::TargetAutoStreamBufferLength' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, UseStreamCache) == 0x00000C, "Member 'FAkAdvancedInitializationSettings::UseStreamCache' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, MaximumPinnedBytesInCache) == 0x000010, "Member 'FAkAdvancedInitializationSettings::MaximumPinnedBytesInCache' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, EnableGameSyncPreparation) == 0x000014, "Member 'FAkAdvancedInitializationSettings::EnableGameSyncPreparation' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, ContinuousPlaybackLookAhead) == 0x000018, "Member 'FAkAdvancedInitializationSettings::ContinuousPlaybackLookAhead' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, MonitorQueuePoolSize) == 0x00001C, "Member 'FAkAdvancedInitializationSettings::MonitorQueuePoolSize' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, MaximumHardwareTimeoutMs) == 0x000020, "Member 'FAkAdvancedInitializationSettings::MaximumHardwareTimeoutMs' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, DebugOutOfRangeCheckEnabled) == 0x000024, "Member 'FAkAdvancedInitializationSettings::DebugOutOfRangeCheckEnabled' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, DebugOutOfRangeLimit) == 0x000028, "Member 'FAkAdvancedInitializationSettings::DebugOutOfRangeLimit' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, VmPageSize) == 0x00002C, "Member 'FAkAdvancedInitializationSettings::VmPageSize' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettings, MemAllocationSizeLimit) == 0x000030, "Member 'FAkAdvancedInitializationSettings::MemAllocationSizeLimit' has a wrong offset!");
+DUMPER7_ASSERTS_FAkAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkAdvancedInitializationSettingsWithMultiCoreRendering
 // 0x000C (0x0040 - 0x0034)
@@ -655,11 +606,7 @@ public:
 	uint32                                        MaxNumJobWorkers;                                  // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        JobWorkerMaxExecutionTimeUSec;                     // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkAdvancedInitializationSettingsWithMultiCoreRendering) == 0x000004, "Wrong alignment on FAkAdvancedInitializationSettingsWithMultiCoreRendering");
-static_assert(sizeof(FAkAdvancedInitializationSettingsWithMultiCoreRendering) == 0x000040, "Wrong size on FAkAdvancedInitializationSettingsWithMultiCoreRendering");
-static_assert(offsetof(FAkAdvancedInitializationSettingsWithMultiCoreRendering, EnableMultiCoreRendering) == 0x000034, "Member 'FAkAdvancedInitializationSettingsWithMultiCoreRendering::EnableMultiCoreRendering' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettingsWithMultiCoreRendering, MaxNumJobWorkers) == 0x000038, "Member 'FAkAdvancedInitializationSettingsWithMultiCoreRendering::MaxNumJobWorkers' has a wrong offset!");
-static_assert(offsetof(FAkAdvancedInitializationSettingsWithMultiCoreRendering, JobWorkerMaxExecutionTimeUSec) == 0x00003C, "Member 'FAkAdvancedInitializationSettingsWithMultiCoreRendering::JobWorkerMaxExecutionTimeUSec' has a wrong offset!");
+DUMPER7_ASSERTS_FAkAdvancedInitializationSettingsWithMultiCoreRendering;
 
 // ScriptStruct AkAudio.AkAndroidAdvancedInitializationSettings
 // 0x0008 (0x0048 - 0x0040)
@@ -671,29 +618,18 @@ public:
 	bool                                          bVerboseSink;                                      // 0x0045(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkAndroidAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkAndroidAdvancedInitializationSettings");
-static_assert(sizeof(FAkAndroidAdvancedInitializationSettings) == 0x000048, "Wrong size on FAkAndroidAdvancedInitializationSettings");
-static_assert(offsetof(FAkAndroidAdvancedInitializationSettings, AudioAPI) == 0x000040, "Member 'FAkAndroidAdvancedInitializationSettings::AudioAPI' has a wrong offset!");
-static_assert(offsetof(FAkAndroidAdvancedInitializationSettings, RoundFrameSizeToHardwareSize) == 0x000044, "Member 'FAkAndroidAdvancedInitializationSettings::RoundFrameSizeToHardwareSize' has a wrong offset!");
-static_assert(offsetof(FAkAndroidAdvancedInitializationSettings, bVerboseSink) == 0x000045, "Member 'FAkAndroidAdvancedInitializationSettings::bVerboseSink' has a wrong offset!");
+DUMPER7_ASSERTS_FAkAndroidAdvancedInitializationSettings;
 
-// ScriptStruct AkAudio.AkOutputSettings
-// 0x0010 (0x0010 - 0x0000)
-struct FAkOutputSettings final
+// ScriptStruct AkAudio.AkAudioSession
+// 0x000C (0x000C - 0x0000)
+struct FAkAudioSession final
 {
 public:
-	class UAkAudioDeviceShareSet*                 AudioDeviceShareSet;                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IdDevice;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPanningRule                                  PanRule;                                           // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAkChannelConfiguration                       ChannelConfig;                                     // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EAkAudioSessionCategory                       AudioSessionCategory;                              // 0x0000(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        AudioSessionCategoryOptions;                       // 0x0004(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAkAudioSessionMode                           AudioSessionMode;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkOutputSettings) == 0x000008, "Wrong alignment on FAkOutputSettings");
-static_assert(sizeof(FAkOutputSettings) == 0x000010, "Wrong size on FAkOutputSettings");
-static_assert(offsetof(FAkOutputSettings, AudioDeviceShareSet) == 0x000000, "Member 'FAkOutputSettings::AudioDeviceShareSet' has a wrong offset!");
-static_assert(offsetof(FAkOutputSettings, IdDevice) == 0x000008, "Member 'FAkOutputSettings::IdDevice' has a wrong offset!");
-static_assert(offsetof(FAkOutputSettings, PanRule) == 0x00000C, "Member 'FAkOutputSettings::PanRule' has a wrong offset!");
-static_assert(offsetof(FAkOutputSettings, ChannelConfig) == 0x00000D, "Member 'FAkOutputSettings::ChannelConfig' has a wrong offset!");
+DUMPER7_ASSERTS_FAkAudioSession;
 
 // ScriptStruct AkAudio.AkMidiEventBase
 // 0x0002 (0x0002 - 0x0000)
@@ -703,10 +639,7 @@ public:
 	EAkMidiEventType                              Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Chan;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiEventBase) == 0x000001, "Wrong alignment on FAkMidiEventBase");
-static_assert(sizeof(FAkMidiEventBase) == 0x000002, "Wrong size on FAkMidiEventBase");
-static_assert(offsetof(FAkMidiEventBase, Type) == 0x000000, "Member 'FAkMidiEventBase::Type' has a wrong offset!");
-static_assert(offsetof(FAkMidiEventBase, Chan) == 0x000001, "Member 'FAkMidiEventBase::Chan' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiEventBase;
 
 // ScriptStruct AkAudio.AkMidiGeneric
 // 0x0002 (0x0004 - 0x0002)
@@ -716,10 +649,7 @@ public:
 	uint8                                         Param1;                                            // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Param2;                                            // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiGeneric) == 0x000001, "Wrong alignment on FAkMidiGeneric");
-static_assert(sizeof(FAkMidiGeneric) == 0x000004, "Wrong size on FAkMidiGeneric");
-static_assert(offsetof(FAkMidiGeneric, Param1) == 0x000002, "Member 'FAkMidiGeneric::Param1' has a wrong offset!");
-static_assert(offsetof(FAkMidiGeneric, Param2) == 0x000003, "Member 'FAkMidiGeneric::Param2' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiGeneric;
 
 // ScriptStruct AkAudio.AkMidiNoteOnOff
 // 0x0002 (0x0004 - 0x0002)
@@ -729,10 +659,7 @@ public:
 	uint8                                         Note;                                              // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Velocity;                                          // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiNoteOnOff) == 0x000001, "Wrong alignment on FAkMidiNoteOnOff");
-static_assert(sizeof(FAkMidiNoteOnOff) == 0x000004, "Wrong size on FAkMidiNoteOnOff");
-static_assert(offsetof(FAkMidiNoteOnOff, Note) == 0x000002, "Member 'FAkMidiNoteOnOff::Note' has a wrong offset!");
-static_assert(offsetof(FAkMidiNoteOnOff, Velocity) == 0x000003, "Member 'FAkMidiNoteOnOff::Velocity' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiNoteOnOff;
 
 // ScriptStruct AkAudio.AkMidiCc
 // 0x0002 (0x0004 - 0x0002)
@@ -742,10 +669,7 @@ public:
 	EAkMidiCcValues                               Cc;                                                // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiCc) == 0x000001, "Wrong alignment on FAkMidiCc");
-static_assert(sizeof(FAkMidiCc) == 0x000004, "Wrong size on FAkMidiCc");
-static_assert(offsetof(FAkMidiCc, Cc) == 0x000002, "Member 'FAkMidiCc::Cc' has a wrong offset!");
-static_assert(offsetof(FAkMidiCc, Value) == 0x000003, "Member 'FAkMidiCc::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiCc;
 
 // ScriptStruct AkAudio.AkMidiPitchBend
 // 0x0006 (0x0008 - 0x0002)
@@ -756,11 +680,7 @@ public:
 	uint8                                         ValueMsb;                                          // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         FullValue;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiPitchBend) == 0x000004, "Wrong alignment on FAkMidiPitchBend");
-static_assert(sizeof(FAkMidiPitchBend) == 0x000008, "Wrong size on FAkMidiPitchBend");
-static_assert(offsetof(FAkMidiPitchBend, ValueLsb) == 0x000002, "Member 'FAkMidiPitchBend::ValueLsb' has a wrong offset!");
-static_assert(offsetof(FAkMidiPitchBend, ValueMsb) == 0x000003, "Member 'FAkMidiPitchBend::ValueMsb' has a wrong offset!");
-static_assert(offsetof(FAkMidiPitchBend, FullValue) == 0x000004, "Member 'FAkMidiPitchBend::FullValue' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiPitchBend;
 
 // ScriptStruct AkAudio.AkMidiNoteAftertouch
 // 0x0002 (0x0004 - 0x0002)
@@ -770,10 +690,7 @@ public:
 	uint8                                         Note;                                              // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0003(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiNoteAftertouch) == 0x000001, "Wrong alignment on FAkMidiNoteAftertouch");
-static_assert(sizeof(FAkMidiNoteAftertouch) == 0x000004, "Wrong size on FAkMidiNoteAftertouch");
-static_assert(offsetof(FAkMidiNoteAftertouch, Note) == 0x000002, "Member 'FAkMidiNoteAftertouch::Note' has a wrong offset!");
-static_assert(offsetof(FAkMidiNoteAftertouch, Value) == 0x000003, "Member 'FAkMidiNoteAftertouch::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiNoteAftertouch;
 
 // ScriptStruct AkAudio.AkMidiChannelAftertouch
 // 0x0001 (0x0003 - 0x0002)
@@ -782,9 +699,7 @@ struct FAkMidiChannelAftertouch final : public FAkMidiEventBase
 public:
 	uint8                                         Value;                                             // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiChannelAftertouch) == 0x000001, "Wrong alignment on FAkMidiChannelAftertouch");
-static_assert(sizeof(FAkMidiChannelAftertouch) == 0x000003, "Wrong size on FAkMidiChannelAftertouch");
-static_assert(offsetof(FAkMidiChannelAftertouch, Value) == 0x000002, "Member 'FAkMidiChannelAftertouch::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiChannelAftertouch;
 
 // ScriptStruct AkAudio.AkMidiProgramChange
 // 0x0001 (0x0003 - 0x0002)
@@ -793,9 +708,7 @@ struct FAkMidiProgramChange final : public FAkMidiEventBase
 public:
 	uint8                                         ProgramNum;                                        // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkMidiProgramChange) == 0x000001, "Wrong alignment on FAkMidiProgramChange");
-static_assert(sizeof(FAkMidiProgramChange) == 0x000003, "Wrong size on FAkMidiProgramChange");
-static_assert(offsetof(FAkMidiProgramChange, ProgramNum) == 0x000002, "Member 'FAkMidiProgramChange::ProgramNum' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMidiProgramChange;
 
 // ScriptStruct AkAudio.AkSegmentInfo
 // 0x0024 (0x0024 - 0x0000)
@@ -812,17 +725,7 @@ public:
 	float                                         GridDuration;                                      // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         GridOffset;                                        // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkSegmentInfo) == 0x000004, "Wrong alignment on FAkSegmentInfo");
-static_assert(sizeof(FAkSegmentInfo) == 0x000024, "Wrong size on FAkSegmentInfo");
-static_assert(offsetof(FAkSegmentInfo, CurrentPosition) == 0x000000, "Member 'FAkSegmentInfo::CurrentPosition' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, PreEntryDuration) == 0x000004, "Member 'FAkSegmentInfo::PreEntryDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, ActiveDuration) == 0x000008, "Member 'FAkSegmentInfo::ActiveDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, PostExitDuration) == 0x00000C, "Member 'FAkSegmentInfo::PostExitDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, RemainingLookAheadTime) == 0x000010, "Member 'FAkSegmentInfo::RemainingLookAheadTime' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, BeatDuration) == 0x000014, "Member 'FAkSegmentInfo::BeatDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, BarDuration) == 0x000018, "Member 'FAkSegmentInfo::BarDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, GridDuration) == 0x00001C, "Member 'FAkSegmentInfo::GridDuration' has a wrong offset!");
-static_assert(offsetof(FAkSegmentInfo, GridOffset) == 0x000020, "Member 'FAkSegmentInfo::GridOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FAkSegmentInfo;
 
 // ScriptStruct AkAudio.AkExternalSourceInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -837,13 +740,7 @@ public:
 	bool                                          IsStreamed;                                        // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkExternalSourceInfo) == 0x000008, "Wrong alignment on FAkExternalSourceInfo");
-static_assert(sizeof(FAkExternalSourceInfo) == 0x000038, "Wrong size on FAkExternalSourceInfo");
-static_assert(offsetof(FAkExternalSourceInfo, ExternalSrcName) == 0x000000, "Member 'FAkExternalSourceInfo::ExternalSrcName' has a wrong offset!");
-static_assert(offsetof(FAkExternalSourceInfo, CodecID) == 0x000010, "Member 'FAkExternalSourceInfo::CodecID' has a wrong offset!");
-static_assert(offsetof(FAkExternalSourceInfo, FileName) == 0x000018, "Member 'FAkExternalSourceInfo::FileName' has a wrong offset!");
-static_assert(offsetof(FAkExternalSourceInfo, ExternalSourceAsset) == 0x000028, "Member 'FAkExternalSourceInfo::ExternalSourceAsset' has a wrong offset!");
-static_assert(offsetof(FAkExternalSourceInfo, IsStreamed) == 0x000030, "Member 'FAkExternalSourceInfo::IsStreamed' has a wrong offset!");
+DUMPER7_ASSERTS_FAkExternalSourceInfo;
 
 // ScriptStruct AkAudio.AkReflectImageParam
 // 0x0038 (0x0038 - 0x0000)
@@ -852,8 +749,7 @@ struct alignas(0x08) FAkReflectImageParam final
 public:
 	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkReflectImageParam) == 0x000008, "Wrong alignment on FAkReflectImageParam");
-static_assert(sizeof(FAkReflectImageParam) == 0x000038, "Wrong size on FAkReflectImageParam");
+DUMPER7_ASSERTS_FAkReflectImageParam;
 
 // ScriptStruct AkAudio.AkGeometrySurfaceOverride
 // 0x0018 (0x0018 - 0x0000)
@@ -867,12 +763,7 @@ public:
 	float                                         SurfaceArea;                                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkGeometrySurfaceOverride) == 0x000008, "Wrong alignment on FAkGeometrySurfaceOverride");
-static_assert(sizeof(FAkGeometrySurfaceOverride) == 0x000018, "Wrong size on FAkGeometrySurfaceOverride");
-static_assert(offsetof(FAkGeometrySurfaceOverride, AcousticTexture) == 0x000000, "Member 'FAkGeometrySurfaceOverride::AcousticTexture' has a wrong offset!");
-static_assert(offsetof(FAkGeometrySurfaceOverride, bEnableOcclusionOverride) == 0x000008, "Member 'FAkGeometrySurfaceOverride::bEnableOcclusionOverride' has a wrong offset!");
-static_assert(offsetof(FAkGeometrySurfaceOverride, OcclusionValue) == 0x00000C, "Member 'FAkGeometrySurfaceOverride::OcclusionValue' has a wrong offset!");
-static_assert(offsetof(FAkGeometrySurfaceOverride, SurfaceArea) == 0x000010, "Member 'FAkGeometrySurfaceOverride::SurfaceArea' has a wrong offset!");
+DUMPER7_ASSERTS_FAkGeometrySurfaceOverride;
 
 // ScriptStruct AkAudio.AkAcousticSurface
 // 0x0018 (0x0018 - 0x0000)
@@ -883,11 +774,19 @@ public:
 	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkAcousticSurface) == 0x000008, "Wrong alignment on FAkAcousticSurface");
-static_assert(sizeof(FAkAcousticSurface) == 0x000018, "Wrong size on FAkAcousticSurface");
-static_assert(offsetof(FAkAcousticSurface, Texture) == 0x000000, "Member 'FAkAcousticSurface::Texture' has a wrong offset!");
-static_assert(offsetof(FAkAcousticSurface, Occlusion) == 0x000004, "Member 'FAkAcousticSurface::Occlusion' has a wrong offset!");
-static_assert(offsetof(FAkAcousticSurface, Name) == 0x000008, "Member 'FAkAcousticSurface::Name' has a wrong offset!");
+DUMPER7_ASSERTS_FAkAcousticSurface;
+
+// ScriptStruct AkAudio.AkTriangle
+// 0x0008 (0x0008 - 0x0000)
+struct FAkTriangle final
+{
+public:
+	uint16                                        Point0;                                            // 0x0000(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        Point1;                                            // 0x0002(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        Point2;                                            // 0x0004(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint16                                        Surface;                                           // 0x0006(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkTriangle;
 
 // ScriptStruct AkAudio.AkGeometryData
 // 0x0050 (0x0050 - 0x0000)
@@ -900,13 +799,7 @@ public:
 	TArray<class UPhysicalMaterial*>              ToOverrideAcousticTexture;                         // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UPhysicalMaterial*>              ToOverrideOcclusion;                               // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkGeometryData) == 0x000008, "Wrong alignment on FAkGeometryData");
-static_assert(sizeof(FAkGeometryData) == 0x000050, "Wrong size on FAkGeometryData");
-static_assert(offsetof(FAkGeometryData, Vertices) == 0x000000, "Member 'FAkGeometryData::Vertices' has a wrong offset!");
-static_assert(offsetof(FAkGeometryData, Surfaces) == 0x000010, "Member 'FAkGeometryData::Surfaces' has a wrong offset!");
-static_assert(offsetof(FAkGeometryData, Triangles) == 0x000020, "Member 'FAkGeometryData::Triangles' has a wrong offset!");
-static_assert(offsetof(FAkGeometryData, ToOverrideAcousticTexture) == 0x000030, "Member 'FAkGeometryData::ToOverrideAcousticTexture' has a wrong offset!");
-static_assert(offsetof(FAkGeometryData, ToOverrideOcclusion) == 0x000040, "Member 'FAkGeometryData::ToOverrideOcclusion' has a wrong offset!");
+DUMPER7_ASSERTS_FAkGeometryData;
 
 // ScriptStruct AkAudio.AkHololensAdvancedInitializationSettings
 // 0x0004 (0x0044 - 0x0040)
@@ -916,9 +809,7 @@ public:
 	bool                                          UseHeadMountedDisplayAudioDevice;                  // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkHololensAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkHololensAdvancedInitializationSettings");
-static_assert(sizeof(FAkHololensAdvancedInitializationSettings) == 0x000044, "Wrong size on FAkHololensAdvancedInitializationSettings");
-static_assert(offsetof(FAkHololensAdvancedInitializationSettings, UseHeadMountedDisplayAudioDevice) == 0x000040, "Member 'FAkHololensAdvancedInitializationSettings::UseHeadMountedDisplayAudioDevice' has a wrong offset!");
+DUMPER7_ASSERTS_FAkHololensAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkMainOutputSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -933,14 +824,7 @@ public:
 	uint32                                        NumberOfChannels;                                  // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkMainOutputSettings) == 0x000008, "Wrong alignment on FAkMainOutputSettings");
-static_assert(sizeof(FAkMainOutputSettings) == 0x000028, "Wrong size on FAkMainOutputSettings");
-static_assert(offsetof(FAkMainOutputSettings, AudioDeviceShareSet) == 0x000000, "Member 'FAkMainOutputSettings::AudioDeviceShareSet' has a wrong offset!");
-static_assert(offsetof(FAkMainOutputSettings, DeviceID) == 0x000010, "Member 'FAkMainOutputSettings::DeviceID' has a wrong offset!");
-static_assert(offsetof(FAkMainOutputSettings, PanningRule) == 0x000014, "Member 'FAkMainOutputSettings::PanningRule' has a wrong offset!");
-static_assert(offsetof(FAkMainOutputSettings, ChannelConfigType) == 0x000018, "Member 'FAkMainOutputSettings::ChannelConfigType' has a wrong offset!");
-static_assert(offsetof(FAkMainOutputSettings, ChannelMask) == 0x00001C, "Member 'FAkMainOutputSettings::ChannelMask' has a wrong offset!");
-static_assert(offsetof(FAkMainOutputSettings, NumberOfChannels) == 0x000020, "Member 'FAkMainOutputSettings::NumberOfChannels' has a wrong offset!");
+DUMPER7_ASSERTS_FAkMainOutputSettings;
 
 // ScriptStruct AkAudio.AkSpatialAudioSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -960,19 +844,7 @@ public:
 	bool                                          CalcEmitterVirtualPosition;                        // 0x0025(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkSpatialAudioSettings) == 0x000004, "Wrong alignment on FAkSpatialAudioSettings");
-static_assert(sizeof(FAkSpatialAudioSettings) == 0x000028, "Wrong size on FAkSpatialAudioSettings");
-static_assert(offsetof(FAkSpatialAudioSettings, MaxSoundPropagationDepth) == 0x000000, "Member 'FAkSpatialAudioSettings::MaxSoundPropagationDepth' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, MovementThreshold) == 0x000004, "Member 'FAkSpatialAudioSettings::MovementThreshold' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, NumberOfPrimaryRays) == 0x000008, "Member 'FAkSpatialAudioSettings::NumberOfPrimaryRays' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, ReflectionOrder) == 0x00000C, "Member 'FAkSpatialAudioSettings::ReflectionOrder' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, DiffractionOrder) == 0x000010, "Member 'FAkSpatialAudioSettings::DiffractionOrder' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, DiffractionOnReflectionsOrder) == 0x000014, "Member 'FAkSpatialAudioSettings::DiffractionOnReflectionsOrder' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, MaximumPathLength) == 0x000018, "Member 'FAkSpatialAudioSettings::MaximumPathLength' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, CPULimitPercentage) == 0x00001C, "Member 'FAkSpatialAudioSettings::CPULimitPercentage' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, LoadBalancingSpread) == 0x000020, "Member 'FAkSpatialAudioSettings::LoadBalancingSpread' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, EnableGeometricDiffractionAndTransmission) == 0x000024, "Member 'FAkSpatialAudioSettings::EnableGeometricDiffractionAndTransmission' has a wrong offset!");
-static_assert(offsetof(FAkSpatialAudioSettings, CalcEmitterVirtualPosition) == 0x000025, "Member 'FAkSpatialAudioSettings::CalcEmitterVirtualPosition' has a wrong offset!");
+DUMPER7_ASSERTS_FAkSpatialAudioSettings;
 
 // ScriptStruct AkAudio.AkCommunicationSettings
 // 0x0018 (0x0018 - 0x0000)
@@ -984,12 +856,7 @@ public:
 	uint16                                        CommandPort;                                       // 0x0006(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 NetworkName;                                       // 0x0008(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkCommunicationSettings) == 0x000008, "Wrong alignment on FAkCommunicationSettings");
-static_assert(sizeof(FAkCommunicationSettings) == 0x000018, "Wrong size on FAkCommunicationSettings");
-static_assert(offsetof(FAkCommunicationSettings, PoolSize) == 0x000000, "Member 'FAkCommunicationSettings::PoolSize' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, DiscoveryBroadcastPort) == 0x000004, "Member 'FAkCommunicationSettings::DiscoveryBroadcastPort' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, CommandPort) == 0x000006, "Member 'FAkCommunicationSettings::CommandPort' has a wrong offset!");
-static_assert(offsetof(FAkCommunicationSettings, NetworkName) == 0x000008, "Member 'FAkCommunicationSettings::NetworkName' has a wrong offset!");
+DUMPER7_ASSERTS_FAkCommunicationSettings;
 
 // ScriptStruct AkAudio.AkCommunicationSettingsWithSystemInitialization
 // 0x0008 (0x0020 - 0x0018)
@@ -999,9 +866,7 @@ public:
 	bool                                          InitializeSystemComms;                             // 0x0018(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkCommunicationSettingsWithSystemInitialization) == 0x000008, "Wrong alignment on FAkCommunicationSettingsWithSystemInitialization");
-static_assert(sizeof(FAkCommunicationSettingsWithSystemInitialization) == 0x000020, "Wrong size on FAkCommunicationSettingsWithSystemInitialization");
-static_assert(offsetof(FAkCommunicationSettingsWithSystemInitialization, InitializeSystemComms) == 0x000018, "Member 'FAkCommunicationSettingsWithSystemInitialization::InitializeSystemComms' has a wrong offset!");
+DUMPER7_ASSERTS_FAkCommunicationSettingsWithSystemInitialization;
 
 // ScriptStruct AkAudio.AkCommunicationSettingsWithCommSelection
 // 0x0008 (0x0020 - 0x0018)
@@ -1011,9 +876,7 @@ public:
 	EAkCommSystem                                 CommunicationSystem;                               // 0x0018(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkCommunicationSettingsWithCommSelection) == 0x000008, "Wrong alignment on FAkCommunicationSettingsWithCommSelection");
-static_assert(sizeof(FAkCommunicationSettingsWithCommSelection) == 0x000020, "Wrong size on FAkCommunicationSettingsWithCommSelection");
-static_assert(offsetof(FAkCommunicationSettingsWithCommSelection, CommunicationSystem) == 0x000018, "Member 'FAkCommunicationSettingsWithCommSelection::CommunicationSystem' has a wrong offset!");
+DUMPER7_ASSERTS_FAkCommunicationSettingsWithCommSelection;
 
 // ScriptStruct AkAudio.AkCommonInitializationSettings
 // 0x0068 (0x0068 - 0x0000)
@@ -1030,16 +893,7 @@ public:
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAkSpatialAudioSettings                SpatialAudioSettings;                              // 0x0040(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkCommonInitializationSettings) == 0x000008, "Wrong alignment on FAkCommonInitializationSettings");
-static_assert(sizeof(FAkCommonInitializationSettings) == 0x000068, "Wrong size on FAkCommonInitializationSettings");
-static_assert(offsetof(FAkCommonInitializationSettings, MaximumNumberOfMemoryPools) == 0x000000, "Member 'FAkCommonInitializationSettings::MaximumNumberOfMemoryPools' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, MaximumNumberOfPositioningPaths) == 0x000004, "Member 'FAkCommonInitializationSettings::MaximumNumberOfPositioningPaths' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, CommandQueueSize) == 0x000008, "Member 'FAkCommonInitializationSettings::CommandQueueSize' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, SamplesPerFrame) == 0x00000C, "Member 'FAkCommonInitializationSettings::SamplesPerFrame' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, MainOutputSettings) == 0x000010, "Member 'FAkCommonInitializationSettings::MainOutputSettings' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, StreamingLookAheadRatio) == 0x000038, "Member 'FAkCommonInitializationSettings::StreamingLookAheadRatio' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, NumberOfRefillsInVoice) == 0x00003C, "Member 'FAkCommonInitializationSettings::NumberOfRefillsInVoice' has a wrong offset!");
-static_assert(offsetof(FAkCommonInitializationSettings, SpatialAudioSettings) == 0x000040, "Member 'FAkCommonInitializationSettings::SpatialAudioSettings' has a wrong offset!");
+DUMPER7_ASSERTS_FAkCommonInitializationSettings;
 
 // ScriptStruct AkAudio.AkCommonInitializationSettingsWithSampleRate
 // 0x0008 (0x0070 - 0x0068)
@@ -1049,17 +903,14 @@ public:
 	uint32                                        SampleRate;                                        // 0x0068(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkCommonInitializationSettingsWithSampleRate) == 0x000008, "Wrong alignment on FAkCommonInitializationSettingsWithSampleRate");
-static_assert(sizeof(FAkCommonInitializationSettingsWithSampleRate) == 0x000070, "Wrong size on FAkCommonInitializationSettingsWithSampleRate");
-static_assert(offsetof(FAkCommonInitializationSettingsWithSampleRate, SampleRate) == 0x000068, "Member 'FAkCommonInitializationSettingsWithSampleRate::SampleRate' has a wrong offset!");
+DUMPER7_ASSERTS_FAkCommonInitializationSettingsWithSampleRate;
 
 // ScriptStruct AkAudio.AkIOSAdvancedInitializationSettings
 // 0x0000 (0x0040 - 0x0040)
 struct FAkIOSAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
 {
 };
-static_assert(alignof(FAkIOSAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkIOSAdvancedInitializationSettings");
-static_assert(sizeof(FAkIOSAdvancedInitializationSettings) == 0x000040, "Wrong size on FAkIOSAdvancedInitializationSettings");
+DUMPER7_ASSERTS_FAkIOSAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkBoolPropertyToControl
 // 0x0010 (0x0010 - 0x0000)
@@ -1068,9 +919,7 @@ struct FAkBoolPropertyToControl final
 public:
 	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkBoolPropertyToControl) == 0x000008, "Wrong alignment on FAkBoolPropertyToControl");
-static_assert(sizeof(FAkBoolPropertyToControl) == 0x000010, "Wrong size on FAkBoolPropertyToControl");
-static_assert(offsetof(FAkBoolPropertyToControl, ItemProperty) == 0x000000, "Member 'FAkBoolPropertyToControl::ItemProperty' has a wrong offset!");
+DUMPER7_ASSERTS_FAkBoolPropertyToControl;
 
 // ScriptStruct AkAudio.AkPropertyToControl
 // 0x0010 (0x0010 - 0x0000)
@@ -1079,9 +928,7 @@ struct FAkPropertyToControl final
 public:
 	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkPropertyToControl) == 0x000008, "Wrong alignment on FAkPropertyToControl");
-static_assert(sizeof(FAkPropertyToControl) == 0x000010, "Wrong size on FAkPropertyToControl");
-static_assert(offsetof(FAkPropertyToControl, ItemProperty) == 0x000000, "Member 'FAkPropertyToControl::ItemProperty' has a wrong offset!");
+DUMPER7_ASSERTS_FAkPropertyToControl;
 
 // ScriptStruct AkAudio.AkPS4AdvancedInitializationSettings
 // 0x0008 (0x0048 - 0x0040)
@@ -1093,11 +940,7 @@ public:
 	bool                                          bPlotQueueLevel;                                   // 0x0045(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkPS4AdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkPS4AdvancedInitializationSettings");
-static_assert(sizeof(FAkPS4AdvancedInitializationSettings) == 0x000048, "Wrong size on FAkPS4AdvancedInitializationSettings");
-static_assert(offsetof(FAkPS4AdvancedInitializationSettings, ACPBatchBufferSize) == 0x000040, "Member 'FAkPS4AdvancedInitializationSettings::ACPBatchBufferSize' has a wrong offset!");
-static_assert(offsetof(FAkPS4AdvancedInitializationSettings, UseHardwareCodecLowLatencyMode) == 0x000044, "Member 'FAkPS4AdvancedInitializationSettings::UseHardwareCodecLowLatencyMode' has a wrong offset!");
-static_assert(offsetof(FAkPS4AdvancedInitializationSettings, bPlotQueueLevel) == 0x000045, "Member 'FAkPS4AdvancedInitializationSettings::bPlotQueueLevel' has a wrong offset!");
+DUMPER7_ASSERTS_FAkPS4AdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkPS5AdvancedInitializationSettings
 // 0x0014 (0x0054 - 0x0040)
@@ -1114,15 +957,7 @@ public:
 	uint32                                        NumAudioOut2Ports;                                 // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        NumAudioOut2ObjectPorts;                           // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkPS5AdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkPS5AdvancedInitializationSettings");
-static_assert(sizeof(FAkPS5AdvancedInitializationSettings) == 0x000054, "Wrong size on FAkPS5AdvancedInitializationSettings");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, UseHardwareCodecLowLatencyMode) == 0x000040, "Member 'FAkPS5AdvancedInitializationSettings::UseHardwareCodecLowLatencyMode' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, bVorbisHwAcceleration) == 0x000041, "Member 'FAkPS5AdvancedInitializationSettings::bVorbisHwAcceleration' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, bEnable3DAudioSync) == 0x000042, "Member 'FAkPS5AdvancedInitializationSettings::bEnable3DAudioSync' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, uNumOperationsForHwMixing) == 0x000044, "Member 'FAkPS5AdvancedInitializationSettings::uNumOperationsForHwMixing' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, bPlotQueueLevel) == 0x000048, "Member 'FAkPS5AdvancedInitializationSettings::bPlotQueueLevel' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, NumAudioOut2Ports) == 0x00004C, "Member 'FAkPS5AdvancedInitializationSettings::NumAudioOut2Ports' has a wrong offset!");
-static_assert(offsetof(FAkPS5AdvancedInitializationSettings, NumAudioOut2ObjectPorts) == 0x000050, "Member 'FAkPS5AdvancedInitializationSettings::NumAudioOut2ObjectPorts' has a wrong offset!");
+DUMPER7_ASSERTS_FAkPS5AdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkReverbDescriptor
 // 0x0028 (0x0028 - 0x0000)
@@ -1133,9 +968,7 @@ public:
 	class UPrimitiveComponent*                    Primitive;                                         // 0x0018(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_20[0x8];                                       // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkReverbDescriptor) == 0x000008, "Wrong alignment on FAkReverbDescriptor");
-static_assert(sizeof(FAkReverbDescriptor) == 0x000028, "Wrong size on FAkReverbDescriptor");
-static_assert(offsetof(FAkReverbDescriptor, Primitive) == 0x000018, "Member 'FAkReverbDescriptor::Primitive' has a wrong offset!");
+DUMPER7_ASSERTS_FAkReverbDescriptor;
 
 // ScriptStruct AkAudio.AkGeometrySurfacePropertiesToMap
 // 0x0038 (0x0038 - 0x0000)
@@ -1146,10 +979,17 @@ public:
 	float                                         OcclusionValue;                                    // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkGeometrySurfacePropertiesToMap) == 0x000008, "Wrong alignment on FAkGeometrySurfacePropertiesToMap");
-static_assert(sizeof(FAkGeometrySurfacePropertiesToMap) == 0x000038, "Wrong size on FAkGeometrySurfacePropertiesToMap");
-static_assert(offsetof(FAkGeometrySurfacePropertiesToMap, AcousticTexture) == 0x000000, "Member 'FAkGeometrySurfacePropertiesToMap::AcousticTexture' has a wrong offset!");
-static_assert(offsetof(FAkGeometrySurfacePropertiesToMap, OcclusionValue) == 0x000030, "Member 'FAkGeometrySurfacePropertiesToMap::OcclusionValue' has a wrong offset!");
+DUMPER7_ASSERTS_FAkGeometrySurfacePropertiesToMap;
+
+// ScriptStruct AkAudio.AkAcousticTextureParams
+// 0x0030 (0x0030 - 0x0000)
+struct FAkAcousticTextureParams final
+{
+public:
+	struct FVector4                               AbsorptionValues;                                  // 0x0000(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAkAcousticTextureParams;
 
 // ScriptStruct AkAudio.AkWwiseObjectDetails
 // 0x0030 (0x0030 - 0x0000)
@@ -1160,11 +1000,7 @@ public:
 	class FString                                 ItemPath;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ItemId;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWwiseObjectDetails) == 0x000008, "Wrong alignment on FAkWwiseObjectDetails");
-static_assert(sizeof(FAkWwiseObjectDetails) == 0x000030, "Wrong size on FAkWwiseObjectDetails");
-static_assert(offsetof(FAkWwiseObjectDetails, ItemName) == 0x000000, "Member 'FAkWwiseObjectDetails::ItemName' has a wrong offset!");
-static_assert(offsetof(FAkWwiseObjectDetails, ItemPath) == 0x000010, "Member 'FAkWwiseObjectDetails::ItemPath' has a wrong offset!");
-static_assert(offsetof(FAkWwiseObjectDetails, ItemId) == 0x000020, "Member 'FAkWwiseObjectDetails::ItemId' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWwiseObjectDetails;
 
 // ScriptStruct AkAudio.AkWwiseItemToControl
 // 0x0040 (0x0040 - 0x0000)
@@ -1174,10 +1010,7 @@ public:
 	struct FAkWwiseObjectDetails                  ItemPicked;                                        // 0x0000(0x0030)(Edit, EditConst, NativeAccessSpecifierPublic)
 	class FString                                 ItemPath;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWwiseItemToControl) == 0x000008, "Wrong alignment on FAkWwiseItemToControl");
-static_assert(sizeof(FAkWwiseItemToControl) == 0x000040, "Wrong size on FAkWwiseItemToControl");
-static_assert(offsetof(FAkWwiseItemToControl, ItemPicked) == 0x000000, "Member 'FAkWwiseItemToControl::ItemPicked' has a wrong offset!");
-static_assert(offsetof(FAkWwiseItemToControl, ItemPath) == 0x000030, "Member 'FAkWwiseItemToControl::ItemPath' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWwiseItemToControl;
 
 // ScriptStruct AkAudio.AkSurfaceEdgeVerts
 // 0x0030 (0x0030 - 0x0000)
@@ -1186,8 +1019,7 @@ struct alignas(0x08) FAkSurfaceEdgeVerts final
 public:
 	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkSurfaceEdgeVerts) == 0x000008, "Wrong alignment on FAkSurfaceEdgeVerts");
-static_assert(sizeof(FAkSurfaceEdgeVerts) == 0x000030, "Wrong size on FAkSurfaceEdgeVerts");
+DUMPER7_ASSERTS_FAkSurfaceEdgeVerts;
 
 // ScriptStruct AkAudio.AkSurfaceEdgeInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -1196,8 +1028,7 @@ struct alignas(0x08) FAkSurfaceEdgeInfo final
 public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkSurfaceEdgeInfo) == 0x000008, "Wrong alignment on FAkSurfaceEdgeInfo");
-static_assert(sizeof(FAkSurfaceEdgeInfo) == 0x000050, "Wrong size on FAkSurfaceEdgeInfo");
+DUMPER7_ASSERTS_FAkSurfaceEdgeInfo;
 
 // ScriptStruct AkAudio.AkSurfacePoly
 // 0x0018 (0x0018 - 0x0000)
@@ -1211,12 +1042,7 @@ public:
 	float                                         SurfaceArea;                                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAkSurfacePoly) == 0x000008, "Wrong alignment on FAkSurfacePoly");
-static_assert(sizeof(FAkSurfacePoly) == 0x000018, "Wrong size on FAkSurfacePoly");
-static_assert(offsetof(FAkSurfacePoly, Texture) == 0x000000, "Member 'FAkSurfacePoly::Texture' has a wrong offset!");
-static_assert(offsetof(FAkSurfacePoly, Occlusion) == 0x000008, "Member 'FAkSurfacePoly::Occlusion' has a wrong offset!");
-static_assert(offsetof(FAkSurfacePoly, EnableSurface) == 0x00000C, "Member 'FAkSurfacePoly::EnableSurface' has a wrong offset!");
-static_assert(offsetof(FAkSurfacePoly, SurfaceArea) == 0x000010, "Member 'FAkSurfacePoly::SurfaceArea' has a wrong offset!");
+DUMPER7_ASSERTS_FAkSurfacePoly;
 
 // ScriptStruct AkAudio.AkWaapiFieldNames
 // 0x0010 (0x0010 - 0x0000)
@@ -1225,9 +1051,7 @@ struct FAkWaapiFieldNames final
 public:
 	class FString                                 FieldName;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWaapiFieldNames) == 0x000008, "Wrong alignment on FAkWaapiFieldNames");
-static_assert(sizeof(FAkWaapiFieldNames) == 0x000010, "Wrong size on FAkWaapiFieldNames");
-static_assert(offsetof(FAkWaapiFieldNames, FieldName) == 0x000000, "Member 'FAkWaapiFieldNames::FieldName' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWaapiFieldNames;
 
 // ScriptStruct AkAudio.AkWaapiUri
 // 0x0010 (0x0010 - 0x0000)
@@ -1236,9 +1060,7 @@ struct FAkWaapiUri final
 public:
 	class FString                                 Uri;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWaapiUri) == 0x000008, "Wrong alignment on FAkWaapiUri");
-static_assert(sizeof(FAkWaapiUri) == 0x000010, "Wrong size on FAkWaapiUri");
-static_assert(offsetof(FAkWaapiUri, Uri) == 0x000000, "Member 'FAkWaapiUri::Uri' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWaapiUri;
 
 // ScriptStruct AkAudio.AkWindowsAdvancedInitializationSettings
 // 0x0008 (0x0048 - 0x0040)
@@ -1249,10 +1071,7 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        MaxSystemAudioObjects;                             // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWindowsAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkWindowsAdvancedInitializationSettings");
-static_assert(sizeof(FAkWindowsAdvancedInitializationSettings) == 0x000048, "Wrong size on FAkWindowsAdvancedInitializationSettings");
-static_assert(offsetof(FAkWindowsAdvancedInitializationSettings, UseHeadMountedDisplayAudioDevice) == 0x000040, "Member 'FAkWindowsAdvancedInitializationSettings::UseHeadMountedDisplayAudioDevice' has a wrong offset!");
-static_assert(offsetof(FAkWindowsAdvancedInitializationSettings, MaxSystemAudioObjects) == 0x000044, "Member 'FAkWindowsAdvancedInitializationSettings::MaxSystemAudioObjects' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWindowsAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkWinGDKAdvancedInitializationSettings
 // 0x0008 (0x0048 - 0x0040)
@@ -1263,10 +1082,7 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        uMaxSystemAudioObjects;                            // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkWinGDKAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkWinGDKAdvancedInitializationSettings");
-static_assert(sizeof(FAkWinGDKAdvancedInitializationSettings) == 0x000048, "Wrong size on FAkWinGDKAdvancedInitializationSettings");
-static_assert(offsetof(FAkWinGDKAdvancedInitializationSettings, UseHeadMountedDisplayAudioDevice) == 0x000040, "Member 'FAkWinGDKAdvancedInitializationSettings::UseHeadMountedDisplayAudioDevice' has a wrong offset!");
-static_assert(offsetof(FAkWinGDKAdvancedInitializationSettings, uMaxSystemAudioObjects) == 0x000044, "Member 'FAkWinGDKAdvancedInitializationSettings::uMaxSystemAudioObjects' has a wrong offset!");
+DUMPER7_ASSERTS_FAkWinGDKAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkXSXAdvancedInitializationSettings
 // 0x000C (0x004C - 0x0040)
@@ -1280,12 +1096,7 @@ public:
 	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        uMaxSystemAudioObjects;                            // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkXSXAdvancedInitializationSettings) == 0x000004, "Wrong alignment on FAkXSXAdvancedInitializationSettings");
-static_assert(sizeof(FAkXSXAdvancedInitializationSettings) == 0x00004C, "Wrong size on FAkXSXAdvancedInitializationSettings");
-static_assert(offsetof(FAkXSXAdvancedInitializationSettings, MaximumNumberOfXMAVoices) == 0x000040, "Member 'FAkXSXAdvancedInitializationSettings::MaximumNumberOfXMAVoices' has a wrong offset!");
-static_assert(offsetof(FAkXSXAdvancedInitializationSettings, UseHardwareCodecLowLatencyMode) == 0x000042, "Member 'FAkXSXAdvancedInitializationSettings::UseHardwareCodecLowLatencyMode' has a wrong offset!");
-static_assert(offsetof(FAkXSXAdvancedInitializationSettings, MaximumNumberOfOpusVoices) == 0x000044, "Member 'FAkXSXAdvancedInitializationSettings::MaximumNumberOfOpusVoices' has a wrong offset!");
-static_assert(offsetof(FAkXSXAdvancedInitializationSettings, uMaxSystemAudioObjects) == 0x000048, "Member 'FAkXSXAdvancedInitializationSettings::uMaxSystemAudioObjects' has a wrong offset!");
+DUMPER7_ASSERTS_FAkXSXAdvancedInitializationSettings;
 
 // ScriptStruct AkAudio.AkXSXApuHeapInitializationSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -1295,10 +1106,7 @@ public:
 	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAkXSXApuHeapInitializationSettings) == 0x000004, "Wrong alignment on FAkXSXApuHeapInitializationSettings");
-static_assert(sizeof(FAkXSXApuHeapInitializationSettings) == 0x000008, "Wrong size on FAkXSXApuHeapInitializationSettings");
-static_assert(offsetof(FAkXSXApuHeapInitializationSettings, CachedSize) == 0x000000, "Member 'FAkXSXApuHeapInitializationSettings::CachedSize' has a wrong offset!");
-static_assert(offsetof(FAkXSXApuHeapInitializationSettings, NonCachedSize) == 0x000004, "Member 'FAkXSXApuHeapInitializationSettings::NonCachedSize' has a wrong offset!");
+DUMPER7_ASSERTS_FAkXSXApuHeapInitializationSettings;
 
 // ScriptStruct AkAudio.MovieSceneAkAudioEventTemplate
 // 0x0008 (0x0028 - 0x0020)
@@ -1307,9 +1115,7 @@ struct FMovieSceneAkAudioEventTemplate final : public FMovieSceneEvalTemplate
 public:
 	class UMovieSceneAkAudioEventSection*         Section;                                           // 0x0020(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneAkAudioEventTemplate) == 0x000008, "Wrong alignment on FMovieSceneAkAudioEventTemplate");
-static_assert(sizeof(FMovieSceneAkAudioEventTemplate) == 0x000028, "Wrong size on FMovieSceneAkAudioEventTemplate");
-static_assert(offsetof(FMovieSceneAkAudioEventTemplate, Section) == 0x000020, "Member 'FMovieSceneAkAudioEventTemplate::Section' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneAkAudioEventTemplate;
 
 // ScriptStruct AkAudio.MovieSceneAkAudioRTPCTemplate
 // 0x0008 (0x0028 - 0x0020)
@@ -1318,9 +1124,7 @@ struct FMovieSceneAkAudioRTPCTemplate final : public FMovieSceneEvalTemplate
 public:
 	class UMovieSceneAkAudioRTPCSection*          Section;                                           // 0x0020(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneAkAudioRTPCTemplate) == 0x000008, "Wrong alignment on FMovieSceneAkAudioRTPCTemplate");
-static_assert(sizeof(FMovieSceneAkAudioRTPCTemplate) == 0x000028, "Wrong size on FMovieSceneAkAudioRTPCTemplate");
-static_assert(offsetof(FMovieSceneAkAudioRTPCTemplate, Section) == 0x000020, "Member 'FMovieSceneAkAudioRTPCTemplate::Section' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneAkAudioRTPCTemplate;
 
 // ScriptStruct AkAudio.MovieSceneTangentDataSerializationHelper
 // 0x0014 (0x0014 - 0x0000)
@@ -1334,13 +1138,7 @@ public:
 	float                                         ArriveTangentWeight;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LeaveTangentWeight;                                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneTangentDataSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneTangentDataSerializationHelper");
-static_assert(sizeof(FMovieSceneTangentDataSerializationHelper) == 0x000014, "Wrong size on FMovieSceneTangentDataSerializationHelper");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangent) == 0x000000, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangent' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangent) == 0x000004, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangent' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, TangentWeightMode) == 0x000008, "Member 'FMovieSceneTangentDataSerializationHelper::TangentWeightMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, ArriveTangentWeight) == 0x00000C, "Member 'FMovieSceneTangentDataSerializationHelper::ArriveTangentWeight' has a wrong offset!");
-static_assert(offsetof(FMovieSceneTangentDataSerializationHelper, LeaveTangentWeight) == 0x000010, "Member 'FMovieSceneTangentDataSerializationHelper::LeaveTangentWeight' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneTangentDataSerializationHelper;
 
 // ScriptStruct AkAudio.MovieSceneFloatValueSerializationHelper
 // 0x001C (0x001C - 0x0000)
@@ -1353,12 +1151,7 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneTangentDataSerializationHelper Tangent;                                        // 0x0008(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneFloatValueSerializationHelper) == 0x000004, "Wrong alignment on FMovieSceneFloatValueSerializationHelper");
-static_assert(sizeof(FMovieSceneFloatValueSerializationHelper) == 0x00001C, "Wrong size on FMovieSceneFloatValueSerializationHelper");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Value) == 0x000000, "Member 'FMovieSceneFloatValueSerializationHelper::Value' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, InterpMode) == 0x000004, "Member 'FMovieSceneFloatValueSerializationHelper::InterpMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, TangentMode) == 0x000005, "Member 'FMovieSceneFloatValueSerializationHelper::TangentMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatValueSerializationHelper, Tangent) == 0x000008, "Member 'FMovieSceneFloatValueSerializationHelper::Tangent' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneFloatValueSerializationHelper;
 
 // ScriptStruct AkAudio.MovieSceneFloatChannelSerializationHelper
 // 0x0030 (0x0030 - 0x0000)
@@ -1374,14 +1167,7 @@ public:
 	bool                                          bHasDefaultValue;                                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneFloatChannelSerializationHelper) == 0x000008, "Wrong alignment on FMovieSceneFloatChannelSerializationHelper");
-static_assert(sizeof(FMovieSceneFloatChannelSerializationHelper) == 0x000030, "Wrong size on FMovieSceneFloatChannelSerializationHelper");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PreInfinityExtrap) == 0x000000, "Member 'FMovieSceneFloatChannelSerializationHelper::PreInfinityExtrap' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, PostInfinityExtrap) == 0x000001, "Member 'FMovieSceneFloatChannelSerializationHelper::PostInfinityExtrap' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Times) == 0x000008, "Member 'FMovieSceneFloatChannelSerializationHelper::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, Values) == 0x000018, "Member 'FMovieSceneFloatChannelSerializationHelper::Values' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, DefaultValue) == 0x000028, "Member 'FMovieSceneFloatChannelSerializationHelper::DefaultValue' has a wrong offset!");
-static_assert(offsetof(FMovieSceneFloatChannelSerializationHelper, bHasDefaultValue) == 0x00002C, "Member 'FMovieSceneFloatChannelSerializationHelper::bHasDefaultValue' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneFloatChannelSerializationHelper;
 
 }
 

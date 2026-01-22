@@ -91,5 +91,24 @@ void UMarvelVehicleAnimBakedData::SmoothIKData()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// Function AnimationPro.GoatTurnCtrlRigBakedData.ClearData
+// (Final, Native, Protected, BlueprintCallable)
+
+void UGoatTurnCtrlRigBakedData::ClearData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GoatTurnCtrlRigBakedData", "ClearData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

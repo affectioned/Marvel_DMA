@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BirthBase_C">();
+		BP_STATIC_CLASS_IMPL("BirthBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BirthBase_C")
 	}
 	static class ABirthBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABirthBase_C>();
 	}
 };
-static_assert(alignof(ABirthBase_C) == 0x000010, "Wrong alignment on ABirthBase_C");
-static_assert(sizeof(ABirthBase_C) == 0x000A10, "Wrong size on ABirthBase_C");
-static_assert(offsetof(ABirthBase_C, UberGraphFrame) == 0x0009B0, "Member 'ABirthBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, Doors) == 0x0009B8, "Member 'ABirthBase_C::Doors' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, DamagePlayerStart) == 0x0009C8, "Member 'ABirthBase_C::DamagePlayerStart' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, SupportPlayerStart) == 0x0009D8, "Member 'ABirthBase_C::SupportPlayerStart' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, IPLocationBias) == 0x0009E8, "Member 'ABirthBase_C::IPLocationBias' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, TankPlayerStart) == 0x0009F0, "Member 'ABirthBase_C::TankPlayerStart' has a wrong offset!");
-static_assert(offsetof(ABirthBase_C, PlayerStart) == 0x000A00, "Member 'ABirthBase_C::PlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_ABirthBase_C;
 
 }
 

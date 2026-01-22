@@ -729,6 +729,33 @@ void UAbility_105471::HandleCollision(bool bIgnore, bool bBindHit)
 }
 
 
+// Function Hero_1054.Ability_105471.IsActorHitValid
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           OtherActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAbility_105471::IsActorHitValid(class AActor* SelfActor, class AActor* OtherActor, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_105471", "IsActorHitValid");
+
+	Params::Ability_105471_IsActorHitValid Parms{};
+
+	Parms.SelfActor = SelfActor;
+	Parms.OtherActor = OtherActor;
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Hero_1054.Ability_105471.K2_EndDive
 // (Event, Public, BlueprintEvent)
 
@@ -1498,6 +1525,25 @@ void ACue_Buff_10547103::K2_OnViewTargetChanged(EClientPlayerViewSide ViewSide)
 }
 
 
+// Function Hero_1054.Cue_Buff_10547103.ResetMaterial
+// (Final, Native, Public, BlueprintCallable)
+
+void ACue_Buff_10547103::ResetMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Buff_10547103", "ResetMaterial");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1054.Cue_Buff_10547103.UpdateHpBarTranslucent
 // (Final, Native, Protected)
 
@@ -2099,6 +2145,58 @@ void ACue_Summoner_PhoenixPhantom::OnPhantomVisibilityChanged(bool bVisible)
 	Params::Cue_Summoner_PhoenixPhantom_OnPhantomVisibilityChanged Parms{};
 
 	Parms.bVisible = bVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1054.CueUserData_Phoenix_Upgraded.OnSummonerSculptChanged
+// (Final, Native, Public)
+// Parameters:
+// int32                                   InSculptID                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCueUserData_Phoenix_Upgraded::OnSummonerSculptChanged(int32 InSculptID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CueUserData_Phoenix_Upgraded", "OnSummonerSculptChanged");
+
+	Params::CueUserData_Phoenix_Upgraded_OnSummonerSculptChanged Parms{};
+
+	Parms.InSculptID = InSculptID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1054.CueUserData_MaterialSubstitution_105461.OnOwnerCharacterTagUpdate
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCueUserData_MaterialSubstitution_105461::OnOwnerCharacterTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CueUserData_MaterialSubstitution_105461", "OnOwnerCharacterTagUpdate");
+
+	Params::CueUserData_MaterialSubstitution_105461_OnOwnerCharacterTagUpdate Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.TagExists = TagExists;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

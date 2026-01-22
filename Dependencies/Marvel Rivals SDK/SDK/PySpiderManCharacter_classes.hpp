@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PySpiderManCharacter.PySpiderManChildActor
-// 0x0000 (0x0E20 - 0x0E20)
+// 0x0000 (0x0E30 - 0x0E30)
 class APySpiderManChildActor final : public ASpiderManChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpiderManChildActor">();
+		STATIC_CLASS_IMPL("PySpiderManChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpiderManChildActor")
 	}
 	static class APySpiderManChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpiderManChildActor>();
 	}
 };
-static_assert(alignof(APySpiderManChildActor) == 0x000010, "Wrong alignment on APySpiderManChildActor");
-static_assert(sizeof(APySpiderManChildActor) == 0x000E20, "Wrong size on APySpiderManChildActor");
+DUMPER7_ASSERTS_APySpiderManChildActor;
 
 // PythonClass PySpiderManCharacter.PySpiderManCharacter
-// 0x0000 (0x2210 - 0x2210)
+// 0x0000 (0x2320 - 0x2320)
 class APySpiderManCharacter : public ASpiderManCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpiderManCharacter">();
+		STATIC_CLASS_IMPL("PySpiderManCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpiderManCharacter")
 	}
 	static class APySpiderManCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpiderManCharacter>();
 	}
 };
-static_assert(alignof(APySpiderManCharacter) == 0x000010, "Wrong alignment on APySpiderManCharacter");
-static_assert(sizeof(APySpiderManCharacter) == 0x002210, "Wrong size on APySpiderManCharacter");
+DUMPER7_ASSERTS_APySpiderManCharacter;
 
 }
 

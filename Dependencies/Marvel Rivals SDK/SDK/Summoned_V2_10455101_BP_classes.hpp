@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_V2_10455101_BP.Summoned_V2_10455101_BP_C
-// 0x0010 (0x1660 - 0x1650)
+// 0x0010 (0x16D0 - 0x16C0)
 class ASummoned_V2_10455101_BP_C : public APySummoned_10455101
 {
 public:
-	class UMarvelHitShape_Capsule*                HitBody;                                           // 0x1650(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x1658(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitBody;                                           // 0x16C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x16C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_V2_10455101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_V2_10455101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_V2_10455101_BP_C")
 	}
 	static class ASummoned_V2_10455101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_V2_10455101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_V2_10455101_BP_C) == 0x000010, "Wrong alignment on ASummoned_V2_10455101_BP_C");
-static_assert(sizeof(ASummoned_V2_10455101_BP_C) == 0x001660, "Wrong size on ASummoned_V2_10455101_BP_C");
-static_assert(offsetof(ASummoned_V2_10455101_BP_C, HitBody) == 0x001650, "Member 'ASummoned_V2_10455101_BP_C::HitBody' has a wrong offset!");
-static_assert(offsetof(ASummoned_V2_10455101_BP_C, SummonedMovement) == 0x001658, "Member 'ASummoned_V2_10455101_BP_C::SummonedMovement' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_V2_10455101_BP_C;
 
 }
 

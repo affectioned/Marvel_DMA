@@ -29,36 +29,6 @@
 namespace SDK
 {
 
-// Class MarvelAI.WayPointRandomSelectComponent
-// 0x0038 (0x0140 - 0x0108)
-class UWayPointRandomSelectComponent final : public UActorComponent
-{
-public:
-	TArray<EWayPointMark>                         WaypointPathTypeMarks;                             // 0x0108(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FWayPointToWeight>              NextWayPointsWithWeight;                           // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         DebugDrawDuration;                                 // 0x0128(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C[0x14];                                     // 0x012C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void DebugDraw();
-	class AActor* SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WayPointRandomSelectComponent">();
-	}
-	static class UWayPointRandomSelectComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWayPointRandomSelectComponent>();
-	}
-};
-static_assert(alignof(UWayPointRandomSelectComponent) == 0x000008, "Wrong alignment on UWayPointRandomSelectComponent");
-static_assert(sizeof(UWayPointRandomSelectComponent) == 0x000140, "Wrong size on UWayPointRandomSelectComponent");
-static_assert(offsetof(UWayPointRandomSelectComponent, WaypointPathTypeMarks) == 0x000108, "Member 'UWayPointRandomSelectComponent::WaypointPathTypeMarks' has a wrong offset!");
-static_assert(offsetof(UWayPointRandomSelectComponent, NextWayPointsWithWeight) == 0x000118, "Member 'UWayPointRandomSelectComponent::NextWayPointsWithWeight' has a wrong offset!");
-static_assert(offsetof(UWayPointRandomSelectComponent, DebugDrawDuration) == 0x000128, "Member 'UWayPointRandomSelectComponent::DebugDrawDuration' has a wrong offset!");
-
 // Class MarvelAI.MarvelAISubsystem
 // 0x0000 (0x0040 - 0x0040)
 class UMarvelAISubsystem : public UAISubsystem
@@ -66,74 +36,18 @@ class UMarvelAISubsystem : public UAISubsystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISubsystem">();
+		STATIC_CLASS_IMPL("MarvelAISubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISubsystem")
 	}
 	static class UMarvelAISubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAISubsystem>();
 	}
 };
-static_assert(alignof(UMarvelAISubsystem) == 0x000008, "Wrong alignment on UMarvelAISubsystem");
-static_assert(sizeof(UMarvelAISubsystem) == 0x000040, "Wrong size on UMarvelAISubsystem");
-
-// Class MarvelAI.AIGameplayTagLogicBase
-// 0x0000 (0x0038 - 0x0038)
-class UAIGameplayTagLogicBase : public UPrimaryDataAsset
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIGameplayTagLogicBase">();
-	}
-	static class UAIGameplayTagLogicBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIGameplayTagLogicBase>();
-	}
-};
-static_assert(alignof(UAIGameplayTagLogicBase) == 0x000008, "Wrong alignment on UAIGameplayTagLogicBase");
-static_assert(sizeof(UAIGameplayTagLogicBase) == 0x000038, "Wrong size on UAIGameplayTagLogicBase");
-
-// Class MarvelAI.AIGameplayTagLogic_BlockMove
-// 0x0000 (0x0038 - 0x0038)
-class UAIGameplayTagLogic_BlockMove final : public UAIGameplayTagLogicBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIGameplayTagLogic_BlockMove">();
-	}
-	static class UAIGameplayTagLogic_BlockMove* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIGameplayTagLogic_BlockMove>();
-	}
-};
-static_assert(alignof(UAIGameplayTagLogic_BlockMove) == 0x000008, "Wrong alignment on UAIGameplayTagLogic_BlockMove");
-static_assert(sizeof(UAIGameplayTagLogic_BlockMove) == 0x000038, "Wrong size on UAIGameplayTagLogic_BlockMove");
-
-// Class MarvelAI.AIAbilityUsagePointCondition
-// 0x0008 (0x0038 - 0x0030)
-class UAIAbilityUsagePointCondition final : public UObject
-{
-public:
-	bool                                          bInverseResult;                                    // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool CheckIsValidPoint(const struct FAbilityUsagePointData& StandPoint, const class AMarvelAIController* AIController);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityUsagePointCondition">();
-	}
-	static class UAIAbilityUsagePointCondition* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityUsagePointCondition>();
-	}
-};
-static_assert(alignof(UAIAbilityUsagePointCondition) == 0x000008, "Wrong alignment on UAIAbilityUsagePointCondition");
-static_assert(sizeof(UAIAbilityUsagePointCondition) == 0x000038, "Wrong size on UAIAbilityUsagePointCondition");
-static_assert(offsetof(UAIAbilityUsagePointCondition, bInverseResult) == 0x000030, "Member 'UAIAbilityUsagePointCondition::bInverseResult' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAISubsystem;
 
 // Class MarvelAI.AbilityTacticsManager
 // 0x00C0 (0x0100 - 0x0040)
@@ -148,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsManager">();
+		STATIC_CLASS_IMPL("AbilityTacticsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsManager")
 	}
 	static class UAbilityTacticsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTacticsManager>();
 	}
 };
-static_assert(alignof(UAbilityTacticsManager) == 0x000008, "Wrong alignment on UAbilityTacticsManager");
-static_assert(sizeof(UAbilityTacticsManager) == 0x000100, "Wrong size on UAbilityTacticsManager");
-static_assert(offsetof(UAbilityTacticsManager, TacticsRequests) == 0x000040, "Member 'UAbilityTacticsManager::TacticsRequests' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsManager, TaskObjectPool) == 0x000050, "Member 'UAbilityTacticsManager::TaskObjectPool' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsManager, TacticsTaskClasses) == 0x0000A0, "Member 'UAbilityTacticsManager::TacticsTaskClasses' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityTacticsManager;
 
 // Class MarvelAI.AbilityTacticsTask
 // 0x0140 (0x0170 - 0x0030)
@@ -178,42 +92,74 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsTask">();
+		STATIC_CLASS_IMPL("AbilityTacticsTask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTask")
 	}
 	static class UAbilityTacticsTask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTacticsTask>();
 	}
 };
-static_assert(alignof(UAbilityTacticsTask) == 0x000008, "Wrong alignment on UAbilityTacticsTask");
-static_assert(sizeof(UAbilityTacticsTask) == 0x000170, "Wrong size on UAbilityTacticsTask");
-static_assert(offsetof(UAbilityTacticsTask, SelectCheckClass) == 0x000110, "Member 'UAbilityTacticsTask::SelectCheckClass' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsTask, UseIndex) == 0x000118, "Member 'UAbilityTacticsTask::UseIndex' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsTask, CheckObjectMap) == 0x000120, "Member 'UAbilityTacticsTask::CheckObjectMap' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityTacticsTask;
 
-// Class MarvelAI.BTDecorator_MarvelBlackboard
-// 0x0038 (0x00D8 - 0x00A0)
-class UBTDecorator_MarvelBlackboard final : public UBTDecorator_BlackboardBase
+// Class MarvelAI.NavLinkMoveMethod
+// 0x0010 (0x0048 - 0x0038)
+class UNavLinkMoveMethod : public UPrimaryDataAsset
 {
 public:
-	EMarvelArithmeticOperation                    Operation;                                         // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 Target;                                            // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	float                                         MaxVerticalMoveHeight;                             // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseCustomLogicToCheckHasPass;                     // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseCustomMoveInput;                               // 0x003D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TickInterval;                                      // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTDecorator_MarvelBlackboard">();
+		STATIC_CLASS_IMPL("NavLinkMoveMethod")
 	}
-	static class UBTDecorator_MarvelBlackboard* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UBTDecorator_MarvelBlackboard>();
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod")
+	}
+	static class UNavLinkMoveMethod* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod>();
 	}
 };
-static_assert(alignof(UBTDecorator_MarvelBlackboard) == 0x000008, "Wrong alignment on UBTDecorator_MarvelBlackboard");
-static_assert(sizeof(UBTDecorator_MarvelBlackboard) == 0x0000D8, "Wrong size on UBTDecorator_MarvelBlackboard");
-static_assert(offsetof(UBTDecorator_MarvelBlackboard, Operation) == 0x0000A0, "Member 'UBTDecorator_MarvelBlackboard::Operation' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_MarvelBlackboard, Target) == 0x0000A8, "Member 'UBTDecorator_MarvelBlackboard::Target' has a wrong offset!");
+DUMPER7_ASSERTS_UNavLinkMoveMethod;
+
+// Class MarvelAI.NavLinkMoveMethod_CleanObstacle
+// 0x0010 (0x0058 - 0x0048)
+class UNavLinkMoveMethod_CleanObstacle final : public UNavLinkMoveMethod
+{
+public:
+	EAbilityInputBinds                            AbilityInput;                                      // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AttackRange;                                       // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         TakeAttackLocationInterval;                        // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDisableIfInBattle;                                // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_CleanObstacle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_CleanObstacle")
+	}
+	static class UNavLinkMoveMethod_CleanObstacle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_CleanObstacle>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_CleanObstacle;
 
 // Class MarvelAI.AbilityTacticsTask_AILab
 // 0x0030 (0x01A0 - 0x0170)
@@ -233,18 +179,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsTask_AILab">();
+		STATIC_CLASS_IMPL("AbilityTacticsTask_AILab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTask_AILab")
 	}
 	static class UAbilityTacticsTask_AILab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTacticsTask_AILab>();
 	}
 };
-static_assert(alignof(UAbilityTacticsTask_AILab) == 0x000008, "Wrong alignment on UAbilityTacticsTask_AILab");
-static_assert(sizeof(UAbilityTacticsTask_AILab) == 0x0001A0, "Wrong size on UAbilityTacticsTask_AILab");
-static_assert(offsetof(UAbilityTacticsTask_AILab, AITag) == 0x000174, "Member 'UAbilityTacticsTask_AILab::AITag' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsTask_AILab, AIServerRequestServices) == 0x000190, "Member 'UAbilityTacticsTask_AILab::AIServerRequestServices' has a wrong offset!");
-static_assert(offsetof(UAbilityTacticsTask_AILab, MaxTimeOut) == 0x000198, "Member 'UAbilityTacticsTask_AILab::MaxTimeOut' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityTacticsTask_AILab;
 
 // Class MarvelAI.AbilityTacticsTask_AutoAbility
 // 0x0000 (0x0170 - 0x0170)
@@ -253,66 +199,18 @@ class UAbilityTacticsTask_AutoAbility final : public UAbilityTacticsTask
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsTask_AutoAbility">();
+		STATIC_CLASS_IMPL("AbilityTacticsTask_AutoAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTask_AutoAbility")
 	}
 	static class UAbilityTacticsTask_AutoAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTacticsTask_AutoAbility>();
 	}
 };
-static_assert(alignof(UAbilityTacticsTask_AutoAbility) == 0x000008, "Wrong alignment on UAbilityTacticsTask_AutoAbility");
-static_assert(sizeof(UAbilityTacticsTask_AutoAbility) == 0x000170, "Wrong size on UAbilityTacticsTask_AutoAbility");
-
-// Class MarvelAI.AIGameplayTagLogic_UpdateSightRadius
-// 0x0008 (0x0040 - 0x0038)
-class UAIGameplayTagLogic_UpdateSightRadius final : public UAIGameplayTagLogicBase
-{
-public:
-	float                                         NewRadius;                                         // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIGameplayTagLogic_UpdateSightRadius">();
-	}
-	static class UAIGameplayTagLogic_UpdateSightRadius* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIGameplayTagLogic_UpdateSightRadius>();
-	}
-};
-static_assert(alignof(UAIGameplayTagLogic_UpdateSightRadius) == 0x000008, "Wrong alignment on UAIGameplayTagLogic_UpdateSightRadius");
-static_assert(sizeof(UAIGameplayTagLogic_UpdateSightRadius) == 0x000040, "Wrong size on UAIGameplayTagLogic_UpdateSightRadius");
-static_assert(offsetof(UAIGameplayTagLogic_UpdateSightRadius, NewRadius) == 0x000038, "Member 'UAIGameplayTagLogic_UpdateSightRadius::NewRadius' has a wrong offset!");
-
-// Class MarvelAI.AIAutoAbilitySolver
-// 0x00A8 (0x01B0 - 0x0108)
-class UAIAutoAbilitySolver final : public UActorComponent
-{
-public:
-	uint8                                         Pad_108[0x70];                                     // 0x0108(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAIAutoAbilityGlobalConfig*       CachedGlobalConfig;                                // 0x0178(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_180[0x30];                                     // 0x0180(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void Init(const TArray<int32>& UsageList);
-	void OnUsageFailed();
-
-	bool TryGetAbilityUsage(const struct FRequiredAIDataForAutoAbility& RequiredData, struct FAIAbilityUsage* OutAbilityUsage) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAutoAbilitySolver">();
-	}
-	static class UAIAutoAbilitySolver* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAutoAbilitySolver>();
-	}
-};
-static_assert(alignof(UAIAutoAbilitySolver) == 0x000008, "Wrong alignment on UAIAutoAbilitySolver");
-static_assert(sizeof(UAIAutoAbilitySolver) == 0x0001B0, "Wrong size on UAIAutoAbilitySolver");
-static_assert(offsetof(UAIAutoAbilitySolver, CachedGlobalConfig) == 0x000178, "Member 'UAIAutoAbilitySolver::CachedGlobalConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityTacticsTask_AutoAbility;
 
 // Class MarvelAI.AbilityTacticsTask_SingleAbility
 // 0x0000 (0x0170 - 0x0170)
@@ -321,15 +219,38 @@ class UAbilityTacticsTask_SingleAbility final : public UAbilityTacticsTask
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsTask_SingleAbility">();
+		STATIC_CLASS_IMPL("AbilityTacticsTask_SingleAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTask_SingleAbility")
 	}
 	static class UAbilityTacticsTask_SingleAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityTacticsTask_SingleAbility>();
 	}
 };
-static_assert(alignof(UAbilityTacticsTask_SingleAbility) == 0x000008, "Wrong alignment on UAbilityTacticsTask_SingleAbility");
-static_assert(sizeof(UAbilityTacticsTask_SingleAbility) == 0x000170, "Wrong size on UAbilityTacticsTask_SingleAbility");
+DUMPER7_ASSERTS_UAbilityTacticsTask_SingleAbility;
+
+// Class MarvelAI.AbilityTacticsTask_WinterJeff
+// 0x0000 (0x0170 - 0x0170)
+class UAbilityTacticsTask_WinterJeff final : public UAbilityTacticsTask
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AbilityTacticsTask_WinterJeff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTask_WinterJeff")
+	}
+	static class UAbilityTacticsTask_WinterJeff* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAbilityTacticsTask_WinterJeff>();
+	}
+};
+DUMPER7_ASSERTS_UAbilityTacticsTask_WinterJeff;
 
 // Class MarvelAI.AbilityTacticsTaskInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -338,7 +259,11 @@ class IAbilityTacticsTaskInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityTacticsTaskInterface">();
+		STATIC_CLASS_IMPL("AbilityTacticsTaskInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityTacticsTaskInterface")
 	}
 	static class IAbilityTacticsTaskInterface* GetDefaultObj()
 	{
@@ -354,159 +279,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IAbilityTacticsTaskInterface) == 0x000001, "Wrong alignment on IAbilityTacticsTaskInterface");
-static_assert(sizeof(IAbilityTacticsTaskInterface) == 0x000001, "Wrong size on IAbilityTacticsTaskInterface");
-
-// Class MarvelAI.AISceneConfigActorBase
-// 0x0000 (0x0700 - 0x0700)
-class AAISceneConfigActorBase : public ANavigationObjectBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISceneConfigActorBase">();
-	}
-	static class AAISceneConfigActorBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAISceneConfigActorBase>();
-	}
-};
-static_assert(alignof(AAISceneConfigActorBase) == 0x000010, "Wrong alignment on AAISceneConfigActorBase");
-static_assert(sizeof(AAISceneConfigActorBase) == 0x000700, "Wrong size on AAISceneConfigActorBase");
-
-// Class MarvelAI.SVONPathFindTester
-// 0x00E0 (0x07E0 - 0x0700)
-class ASVONPathFindTester : public AAISceneConfigActorBase
-{
-public:
-	class AActor*                                 TestStartActor;                                    // 0x0700(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 TestTargetActor;                                   // 0x0708(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bOnlyTestValidPath;                                // 0x0710(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_711[0x3];                                      // 0x0711(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TestCategoryIndex;                                 // 0x0714(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         CertainTestCaseIndex;                              // 0x0718(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCheckPathLength;                                  // 0x071C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_71D[0x3];                                      // 0x071D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatRange                            AllowedPathLengthDiffRange;                        // 0x0720(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCheckPathIsTheSame;                               // 0x0730(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDrawDebugPath;                                    // 0x0731(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDrawDebugTargetPath;                              // 0x0732(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_733[0x1];                                      // 0x0733(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DrawDebugDuration;                                 // 0x0734(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DrawDebugThickness;                                // 0x0738(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAllowGenerateTestCaseForSingleActor;              // 0x073C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_73D[0x3];                                      // 0x073D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ActorLocationRandomRadius;                         // 0x0740(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         TestCaseGenerateTryTimes;                          // 0x0744(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bRequireTestCaseHavePath;                          // 0x0748(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bShouldTakeDataFromRuntimeDataVolume;              // 0x0749(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_74A[0x6];                                      // 0x074A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPathTestCaseCategory>          TestCaseCategories;                                // 0x0750(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPathFindTestCase>              TestCaseList;                                      // 0x0760(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	bool                                          bShouldStoreStatData;                              // 0x0770(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FAStarStat>                StatForLastTestList;                               // 0x0778(0x0050)(Edit, Transient, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	bool                                          bEnablePathPostProcess;                            // 0x07C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7C9[0x7];                                      // 0x07C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USVONNavigationComponent*               SVONavComp;                                        // 0x07D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7D8[0x8];                                      // 0x07D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void AddConfigDataAsTestCase();
-	void AnalyzeStatData();
-	void ClassifyTestCases();
-	void GenerateRandomTestCasesFromActorList(const TArray<class AActor*>& ActorList, int32 TryTimes);
-	void GenerateTestCaseFromWayPoints();
-	bool MakeDataForTestCase(const struct FVector& StartPoint, const struct FVector& TargetPoint, bool bRequireHavePath);
-	void ReceiveAnalyzeStatData();
-	void UpdateTestCasePathResult();
-
-	bool K2_FindPath(const struct FVector& StartPoint, const struct FVector& TargetPoint, TArray<struct FVector>* OutPathPoints) const;
-	bool K2_RunCheckForCase(const struct FPathFindTestCase& TestCase) const;
-	bool RunTestCaseWithIndexList(const TArray<int32>& CaseIndexList) const;
-	void RunTestCategory(const struct FPathTestCaseCategory& TestCaseCategory) const;
-	void RunTestCategoryByIndex() const;
-	void TestAllCase() const;
-	void TestAllCategory() const;
-	void TestCertainCase() const;
-	void UpdateVolume() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SVONPathFindTester">();
-	}
-	static class ASVONPathFindTester* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ASVONPathFindTester>();
-	}
-};
-static_assert(alignof(ASVONPathFindTester) == 0x000010, "Wrong alignment on ASVONPathFindTester");
-static_assert(sizeof(ASVONPathFindTester) == 0x0007E0, "Wrong size on ASVONPathFindTester");
-static_assert(offsetof(ASVONPathFindTester, TestStartActor) == 0x000700, "Member 'ASVONPathFindTester::TestStartActor' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, TestTargetActor) == 0x000708, "Member 'ASVONPathFindTester::TestTargetActor' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bOnlyTestValidPath) == 0x000710, "Member 'ASVONPathFindTester::bOnlyTestValidPath' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, TestCategoryIndex) == 0x000714, "Member 'ASVONPathFindTester::TestCategoryIndex' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, CertainTestCaseIndex) == 0x000718, "Member 'ASVONPathFindTester::CertainTestCaseIndex' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bCheckPathLength) == 0x00071C, "Member 'ASVONPathFindTester::bCheckPathLength' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, AllowedPathLengthDiffRange) == 0x000720, "Member 'ASVONPathFindTester::AllowedPathLengthDiffRange' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bCheckPathIsTheSame) == 0x000730, "Member 'ASVONPathFindTester::bCheckPathIsTheSame' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bDrawDebugPath) == 0x000731, "Member 'ASVONPathFindTester::bDrawDebugPath' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bDrawDebugTargetPath) == 0x000732, "Member 'ASVONPathFindTester::bDrawDebugTargetPath' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, DrawDebugDuration) == 0x000734, "Member 'ASVONPathFindTester::DrawDebugDuration' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, DrawDebugThickness) == 0x000738, "Member 'ASVONPathFindTester::DrawDebugThickness' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bAllowGenerateTestCaseForSingleActor) == 0x00073C, "Member 'ASVONPathFindTester::bAllowGenerateTestCaseForSingleActor' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, ActorLocationRandomRadius) == 0x000740, "Member 'ASVONPathFindTester::ActorLocationRandomRadius' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, TestCaseGenerateTryTimes) == 0x000744, "Member 'ASVONPathFindTester::TestCaseGenerateTryTimes' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bRequireTestCaseHavePath) == 0x000748, "Member 'ASVONPathFindTester::bRequireTestCaseHavePath' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bShouldTakeDataFromRuntimeDataVolume) == 0x000749, "Member 'ASVONPathFindTester::bShouldTakeDataFromRuntimeDataVolume' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, TestCaseCategories) == 0x000750, "Member 'ASVONPathFindTester::TestCaseCategories' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, TestCaseList) == 0x000760, "Member 'ASVONPathFindTester::TestCaseList' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bShouldStoreStatData) == 0x000770, "Member 'ASVONPathFindTester::bShouldStoreStatData' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, StatForLastTestList) == 0x000778, "Member 'ASVONPathFindTester::StatForLastTestList' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, bEnablePathPostProcess) == 0x0007C8, "Member 'ASVONPathFindTester::bEnablePathPostProcess' has a wrong offset!");
-static_assert(offsetof(ASVONPathFindTester, SVONavComp) == 0x0007D0, "Member 'ASVONPathFindTester::SVONavComp' has a wrong offset!");
-
-// Class MarvelAI.AIGlobalConfigAsset
-// 0x0000 (0x0038 - 0x0038)
-class UAIGlobalConfigAsset : public UPrimaryDataAsset
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIGlobalConfigAsset">();
-	}
-	static class UAIGlobalConfigAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIGlobalConfigAsset>();
-	}
-};
-static_assert(alignof(UAIGlobalConfigAsset) == 0x000008, "Wrong alignment on UAIGlobalConfigAsset");
-static_assert(sizeof(UAIGlobalConfigAsset) == 0x000038, "Wrong size on UAIGlobalConfigAsset");
-
-// Class MarvelAI.AIVisualLoggerConfig
-// 0x0058 (0x0090 - 0x0038)
-class UAIVisualLoggerConfig final : public UAIGlobalConfigAsset
-{
-public:
-	bool                                          bLimitLogging;                                     // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<class FName>                             CategoriesNeedLogging;                             // 0x0040(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIVisualLoggerConfig">();
-	}
-	static class UAIVisualLoggerConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIVisualLoggerConfig>();
-	}
-};
-static_assert(alignof(UAIVisualLoggerConfig) == 0x000008, "Wrong alignment on UAIVisualLoggerConfig");
-static_assert(sizeof(UAIVisualLoggerConfig) == 0x000090, "Wrong size on UAIVisualLoggerConfig");
-static_assert(offsetof(UAIVisualLoggerConfig, bLimitLogging) == 0x000038, "Member 'UAIVisualLoggerConfig::bLimitLogging' has a wrong offset!");
-static_assert(offsetof(UAIVisualLoggerConfig, CategoriesNeedLogging) == 0x000040, "Member 'UAIVisualLoggerConfig::CategoriesNeedLogging' has a wrong offset!");
+DUMPER7_ASSERTS_IAbilityTacticsTaskInterface;
 
 // Class MarvelAI.StandPointBase
 // 0x00B0 (0x07B0 - 0x0700)
@@ -542,7 +315,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StandPointBase">();
+		STATIC_CLASS_IMPL("StandPointBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StandPointBase")
 	}
 	static class AStandPointBase* GetDefaultObj()
 	{
@@ -550,19 +327,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(AStandPointBase) == 0x000010, "Wrong alignment on AStandPointBase");
-static_assert(sizeof(AStandPointBase) == 0x0007B0, "Wrong size on AStandPointBase");
-static_assert(offsetof(AStandPointBase, OwnedStateMap) == 0x000708, "Member 'AStandPointBase::OwnedStateMap' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, OwnedControllerList) == 0x000758, "Member 'AStandPointBase::OwnedControllerList' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, PointName) == 0x00076C, "Member 'AStandPointBase::PointName' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, Description) == 0x000778, "Member 'AStandPointBase::Description' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, StandPointType) == 0x000790, "Member 'AStandPointBase::StandPointType' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, TeamType) == 0x000791, "Member 'AStandPointBase::TeamType' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, Weight) == 0x000794, "Member 'AStandPointBase::Weight' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, RandomRadius) == 0x000798, "Member 'AStandPointBase::RandomRadius' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, bLimitFlyHeight) == 0x00079C, "Member 'AStandPointBase::bLimitFlyHeight' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, MinFlyHeight) == 0x0007A0, "Member 'AStandPointBase::MinFlyHeight' has a wrong offset!");
-static_assert(offsetof(AStandPointBase, MaxFlyHeight) == 0x0007A4, "Member 'AStandPointBase::MaxFlyHeight' has a wrong offset!");
+DUMPER7_ASSERTS_AStandPointBase;
 
 // Class MarvelAI.AbilityUsageStandPoint
 // 0x0060 (0x0810 - 0x07B0)
@@ -591,52 +356,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityUsageStandPoint">();
+		STATIC_CLASS_IMPL("AbilityUsageStandPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityUsageStandPoint")
 	}
 	static class AAbilityUsageStandPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAbilityUsageStandPoint>();
 	}
 };
-static_assert(alignof(AAbilityUsageStandPoint) == 0x000010, "Wrong alignment on AAbilityUsageStandPoint");
-static_assert(sizeof(AAbilityUsageStandPoint) == 0x000810, "Wrong size on AAbilityUsageStandPoint");
-static_assert(offsetof(AAbilityUsageStandPoint, AbilityDataList) == 0x0007A8, "Member 'AAbilityUsageStandPoint::AbilityDataList' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, RequiredBattleSide) == 0x0007B8, "Member 'AAbilityUsageStandPoint::RequiredBattleSide' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, bShouldCheckGameplayProgress) == 0x0007B9, "Member 'AAbilityUsageStandPoint::bShouldCheckGameplayProgress' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, RequiredGameplayProgress) == 0x0007BC, "Member 'AAbilityUsageStandPoint::RequiredGameplayProgress' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, ProcessedAbilityDataList) == 0x0007C8, "Member 'AAbilityUsageStandPoint::ProcessedAbilityDataList' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, AbilityDataIndex) == 0x0007D8, "Member 'AAbilityUsageStandPoint::AbilityDataIndex' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, PointIndex) == 0x0007DC, "Member 'AAbilityUsageStandPoint::PointIndex' has a wrong offset!");
-static_assert(offsetof(AAbilityUsageStandPoint, TargetPositionActor) == 0x0007E0, "Member 'AAbilityUsageStandPoint::TargetPositionActor' has a wrong offset!");
-
-// Class MarvelAI.AIHitRateModify
-// 0x0028 (0x0058 - 0x0030)
-class UAIHitRateModify : public UObject
-{
-public:
-	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bTagMatch;                                         // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           MatchTag;                                          // 0x0044(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	float CalculateHitRateModifyAI(class AMarvelBaseCharacter* Source, class AActor* Target) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIHitRateModify">();
-	}
-	static class UAIHitRateModify* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIHitRateModify>();
-	}
-};
-static_assert(alignof(UAIHitRateModify) == 0x000008, "Wrong alignment on UAIHitRateModify");
-static_assert(sizeof(UAIHitRateModify) == 0x000058, "Wrong size on UAIHitRateModify");
-static_assert(offsetof(UAIHitRateModify, bTagMatch) == 0x000040, "Member 'UAIHitRateModify::bTagMatch' has a wrong offset!");
-static_assert(offsetof(UAIHitRateModify, MatchTag) == 0x000044, "Member 'UAIHitRateModify::MatchTag' has a wrong offset!");
+DUMPER7_ASSERTS_AAbilityUsageStandPoint;
 
 // Class MarvelAI.LinkedAbilityUsageStandPoint
 // 0x0020 (0x0830 - 0x0810)
@@ -654,17 +385,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinkedAbilityUsageStandPoint">();
+		STATIC_CLASS_IMPL("LinkedAbilityUsageStandPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinkedAbilityUsageStandPoint")
 	}
 	static class ALinkedAbilityUsageStandPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALinkedAbilityUsageStandPoint>();
 	}
 };
-static_assert(alignof(ALinkedAbilityUsageStandPoint) == 0x000010, "Wrong alignment on ALinkedAbilityUsageStandPoint");
-static_assert(sizeof(ALinkedAbilityUsageStandPoint) == 0x000830, "Wrong size on ALinkedAbilityUsageStandPoint");
-static_assert(offsetof(ALinkedAbilityUsageStandPoint, Links) == 0x000810, "Member 'ALinkedAbilityUsageStandPoint::Links' has a wrong offset!");
-static_assert(offsetof(ALinkedAbilityUsageStandPoint, bDoubleLink) == 0x000820, "Member 'ALinkedAbilityUsageStandPoint::bDoubleLink' has a wrong offset!");
+DUMPER7_ASSERTS_ALinkedAbilityUsageStandPoint;
 
 // Class MarvelAI.AIAbilityCondition
 // 0x0008 (0x0038 - 0x0030)
@@ -680,37 +412,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityCondition">();
+		STATIC_CLASS_IMPL("AIAbilityCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition")
 	}
 	static class UAIAbilityCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition) == 0x000008, "Wrong alignment on UAIAbilityCondition");
-static_assert(sizeof(UAIAbilityCondition) == 0x000038, "Wrong size on UAIAbilityCondition");
-static_assert(offsetof(UAIAbilityCondition, bInverseResult) == 0x000030, "Member 'UAIAbilityCondition::bInverseResult' has a wrong offset!");
-
-// Class MarvelAI.BTD_IsSelfWoodenWall
-// 0x0030 (0x00A0 - 0x0070)
-class UBTD_IsSelfWoodenWall : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 InCheckTarget;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_IsSelfWoodenWall">();
-	}
-	static class UBTD_IsSelfWoodenWall* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_IsSelfWoodenWall>();
-	}
-};
-static_assert(alignof(UBTD_IsSelfWoodenWall) == 0x000008, "Wrong alignment on UBTD_IsSelfWoodenWall");
-static_assert(sizeof(UBTD_IsSelfWoodenWall) == 0x0000A0, "Wrong size on UBTD_IsSelfWoodenWall");
-static_assert(offsetof(UBTD_IsSelfWoodenWall, InCheckTarget) == 0x000070, "Member 'UBTD_IsSelfWoodenWall::InCheckTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityCondition;
 
 // Class MarvelAI.AIAbilityCondition_CheckAbilityCounter
 // 0x0010 (0x0048 - 0x0038)
@@ -722,16 +435,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityCondition_CheckAbilityCounter">();
+		STATIC_CLASS_IMPL("AIAbilityCondition_CheckAbilityCounter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_CheckAbilityCounter")
 	}
 	static class UAIAbilityCondition_CheckAbilityCounter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_CheckAbilityCounter>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_CheckAbilityCounter) == 0x000008, "Wrong alignment on UAIAbilityCondition_CheckAbilityCounter");
-static_assert(sizeof(UAIAbilityCondition_CheckAbilityCounter) == 0x000048, "Wrong size on UAIAbilityCondition_CheckAbilityCounter");
-static_assert(offsetof(UAIAbilityCondition_CheckAbilityCounter, TableRawNameList) == 0x000038, "Member 'UAIAbilityCondition_CheckAbilityCounter::TableRawNameList' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityCondition_CheckAbilityCounter;
 
 // Class MarvelAI.AIAbilityCondition_CheckHeight
 // 0x0010 (0x0048 - 0x0038)
@@ -746,40 +461,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityCondition_CheckHeight">();
+		STATIC_CLASS_IMPL("AIAbilityCondition_CheckHeight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_CheckHeight")
 	}
 	static class UAIAbilityCondition_CheckHeight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_CheckHeight>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_CheckHeight) == 0x000008, "Wrong alignment on UAIAbilityCondition_CheckHeight");
-static_assert(sizeof(UAIAbilityCondition_CheckHeight) == 0x000048, "Wrong size on UAIAbilityCondition_CheckHeight");
-static_assert(offsetof(UAIAbilityCondition_CheckHeight, MinHeight) == 0x000038, "Member 'UAIAbilityCondition_CheckHeight::MinHeight' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_CheckHeight, MaxHeight) == 0x00003C, "Member 'UAIAbilityCondition_CheckHeight::MaxHeight' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_CheckHeight, CheckTarget) == 0x000040, "Member 'UAIAbilityCondition_CheckHeight::CheckTarget' has a wrong offset!");
-
-// Class MarvelAI.ObstructedModify
-// 0x0008 (0x0060 - 0x0058)
-class UObstructedModify final : public UAIHitRateModify
-{
-public:
-	float                                         ModifyHitRate;                                     // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ObstructedModify">();
-	}
-	static class UObstructedModify* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UObstructedModify>();
-	}
-};
-static_assert(alignof(UObstructedModify) == 0x000008, "Wrong alignment on UObstructedModify");
-static_assert(sizeof(UObstructedModify) == 0x000060, "Wrong size on UObstructedModify");
-static_assert(offsetof(UObstructedModify, ModifyHitRate) == 0x000058, "Member 'UObstructedModify::ModifyHitRate' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityCondition_CheckHeight;
 
 // Class MarvelAI.AIAbilityCondition_SummonerCheck
 // 0x0028 (0x0060 - 0x0038)
@@ -802,20 +495,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityCondition_SummonerCheck">();
+		STATIC_CLASS_IMPL("AIAbilityCondition_SummonerCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_SummonerCheck")
 	}
 	static class UAIAbilityCondition_SummonerCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_SummonerCheck>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_SummonerCheck) == 0x000008, "Wrong alignment on UAIAbilityCondition_SummonerCheck");
-static_assert(sizeof(UAIAbilityCondition_SummonerCheck) == 0x000060, "Wrong size on UAIAbilityCondition_SummonerCheck");
-static_assert(offsetof(UAIAbilityCondition_SummonerCheck, SummonerId) == 0x00003C, "Member 'UAIAbilityCondition_SummonerCheck::SummonerId' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerCheck, RequiredSummonerNumRange) == 0x000040, "Member 'UAIAbilityCondition_SummonerCheck::RequiredSummonerNumRange' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerCheck, MaxAllowedDistanceToSelf) == 0x000050, "Member 'UAIAbilityCondition_SummonerCheck::MaxAllowedDistanceToSelf' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerCheck, MaxAllowedDistanceToEnemy) == 0x000054, "Member 'UAIAbilityCondition_SummonerCheck::MaxAllowedDistanceToEnemy' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerCheck, bRequireIsVisible) == 0x000058, "Member 'UAIAbilityCondition_SummonerCheck::bRequireIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityCondition_SummonerCheck;
 
 // Class MarvelAI.AIAbilityCondition_SummonerDistance
 // 0x0090 (0x00C8 - 0x0038)
@@ -831,40 +522,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityCondition_SummonerDistance">();
+		STATIC_CLASS_IMPL("AIAbilityCondition_SummonerDistance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_SummonerDistance")
 	}
 	static class UAIAbilityCondition_SummonerDistance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_SummonerDistance>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_SummonerDistance) == 0x000008, "Wrong alignment on UAIAbilityCondition_SummonerDistance");
-static_assert(sizeof(UAIAbilityCondition_SummonerDistance) == 0x0000C8, "Wrong size on UAIAbilityCondition_SummonerDistance");
-static_assert(offsetof(UAIAbilityCondition_SummonerDistance, SummonerId) == 0x000038, "Member 'UAIAbilityCondition_SummonerDistance::SummonerId' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerDistance, Radius) == 0x00003C, "Member 'UAIAbilityCondition_SummonerDistance::Radius' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerDistance, HeroFilter) == 0x000040, "Member 'UAIAbilityCondition_SummonerDistance::HeroFilter' has a wrong offset!");
-static_assert(offsetof(UAIAbilityCondition_SummonerDistance, bIgnoreSelf) == 0x0000C0, "Member 'UAIAbilityCondition_SummonerDistance::bIgnoreSelf' has a wrong offset!");
-
-// Class MarvelAI.AIHeroCommonConfig
-// 0x0010 (0x0048 - 0x0038)
-class UAIHeroCommonConfig final : public UPrimaryDataAsset
-{
-public:
-	TArray<struct FAIHeroTagLogicConfig>          GameplayTagLogics;                                 // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIHeroCommonConfig">();
-	}
-	static class UAIHeroCommonConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIHeroCommonConfig>();
-	}
-};
-static_assert(alignof(UAIHeroCommonConfig) == 0x000008, "Wrong alignment on UAIHeroCommonConfig");
-static_assert(sizeof(UAIHeroCommonConfig) == 0x000048, "Wrong size on UAIHeroCommonConfig");
-static_assert(offsetof(UAIHeroCommonConfig, GameplayTagLogics) == 0x000038, "Member 'UAIHeroCommonConfig::GameplayTagLogics' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityCondition_SummonerDistance;
 
 // Class MarvelAI.AIAbilityExecutorManagerComponent
 // 0x0100 (0x0208 - 0x0108)
@@ -898,101 +567,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExecutorManagerComponent">();
+		STATIC_CLASS_IMPL("AIAbilityExecutorManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExecutorManagerComponent")
 	}
 	static class UAIAbilityExecutorManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExecutorManagerComponent>();
 	}
 };
-static_assert(alignof(UAIAbilityExecutorManagerComponent) == 0x000008, "Wrong alignment on UAIAbilityExecutorManagerComponent");
-static_assert(sizeof(UAIAbilityExecutorManagerComponent) == 0x000208, "Wrong size on UAIAbilityExecutorManagerComponent");
-static_assert(offsetof(UAIAbilityExecutorManagerComponent, MarvelAIController) == 0x000108, "Member 'UAIAbilityExecutorManagerComponent::MarvelAIController' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutorManagerComponent, AbilityExecutorDict) == 0x000110, "Member 'UAIAbilityExecutorManagerComponent::AbilityExecutorDict' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutorManagerComponent, ActivatedAbilitySet) == 0x000160, "Member 'UAIAbilityExecutorManagerComponent::ActivatedAbilitySet' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutorManagerComponent, ResourceQueueList) == 0x0001F8, "Member 'UAIAbilityExecutorManagerComponent::ResourceQueueList' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExecutorManagerComponent;
 
 // Class MarvelAI.AIAbilityExecutorManager
-// 0x0018 (0x0050 - 0x0038)
+// 0x0018 (0x0058 - 0x0040)
 class UAIAbilityExecutorManager final : public UWorldSubsystem
 {
 public:
-	TArray<class UAIAbilityExecutor*>             AbilityExecutorPool;                               // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                          bIsInitialized;                                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class UAIAbilityExecutor*>             AbilityExecutorPool;                               // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          bIsInitialized;                                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExecutorManager">();
+		STATIC_CLASS_IMPL("AIAbilityExecutorManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExecutorManager")
 	}
 	static class UAIAbilityExecutorManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExecutorManager>();
 	}
 };
-static_assert(alignof(UAIAbilityExecutorManager) == 0x000008, "Wrong alignment on UAIAbilityExecutorManager");
-static_assert(sizeof(UAIAbilityExecutorManager) == 0x000050, "Wrong size on UAIAbilityExecutorManager");
-static_assert(offsetof(UAIAbilityExecutorManager, AbilityExecutorPool) == 0x000038, "Member 'UAIAbilityExecutorManager::AbilityExecutorPool' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutorManager, bIsInitialized) == 0x000048, "Member 'UAIAbilityExecutorManager::bIsInitialized' has a wrong offset!");
-
-// Class MarvelAI.BTDecorator_MarvelInstancedBase
-// 0x0010 (0x00B8 - 0x00A8)
-class UBTDecorator_MarvelInstancedBase : public UBTDecorator_BlueprintBase
-{
-public:
-	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         Interval;                                          // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RandomDeviation;                                   // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	class AMarvelBaseCharacter* K2_GetControlledHero() const;
-	class APawn* K2_GetControlledPawn() const;
-	class AMarvelAIController* K2_GetMarvelAIOwner() const;
-	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_MarvelInstancedBase">();
-	}
-	static class UBTDecorator_MarvelInstancedBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_MarvelInstancedBase>();
-	}
-};
-static_assert(alignof(UBTDecorator_MarvelInstancedBase) == 0x000008, "Wrong alignment on UBTDecorator_MarvelInstancedBase");
-static_assert(sizeof(UBTDecorator_MarvelInstancedBase) == 0x0000B8, "Wrong size on UBTDecorator_MarvelInstancedBase");
-static_assert(offsetof(UBTDecorator_MarvelInstancedBase, MarvelAIOwner) == 0x0000A8, "Member 'UBTDecorator_MarvelInstancedBase::MarvelAIOwner' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_MarvelInstancedBase, Interval) == 0x0000B0, "Member 'UBTDecorator_MarvelInstancedBase::Interval' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_MarvelInstancedBase, RandomDeviation) == 0x0000B4, "Member 'UBTDecorator_MarvelInstancedBase::RandomDeviation' has a wrong offset!");
-
-// Class MarvelAI.BTD_CheckGameplayTag
-// 0x0088 (0x0140 - 0x00B8)
-class UBTD_CheckGameplayTag : public UBTDecorator_MarvelInstancedBase
-{
-public:
-	struct FGameplayTagContainer                  TagsToCheck;                                       // 0x00B8(0x0068)(Edit, NativeAccessSpecifierPrivate)
-	EGameplayContainerMatchType                   MatchType;                                         // 0x0120(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_121[0x1F];                                     // 0x0121(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnCheckTagUpdated(const struct FGameplayTag& InTag, bool bExists);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_CheckGameplayTag">();
-	}
-	static class UBTD_CheckGameplayTag* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_CheckGameplayTag>();
-	}
-};
-static_assert(alignof(UBTD_CheckGameplayTag) == 0x000008, "Wrong alignment on UBTD_CheckGameplayTag");
-static_assert(sizeof(UBTD_CheckGameplayTag) == 0x000140, "Wrong size on UBTD_CheckGameplayTag");
-static_assert(offsetof(UBTD_CheckGameplayTag, TagsToCheck) == 0x0000B8, "Member 'UBTD_CheckGameplayTag::TagsToCheck' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckGameplayTag, MatchType) == 0x000120, "Member 'UBTD_CheckGameplayTag::MatchType' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExecutorManager;
 
 // Class MarvelAI.AIAbilityExitStageLogic
 // 0x0008 (0x0038 - 0x0030)
@@ -1011,16 +622,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic")
 	}
 	static class UAIAbilityExitStageLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic");
-static_assert(sizeof(UAIAbilityExitStageLogic) == 0x000038, "Wrong size on UAIAbilityExitStageLogic");
-static_assert(offsetof(UAIAbilityExitStageLogic, bCouldUseDefaultObject) == 0x000030, "Member 'UAIAbilityExitStageLogic::bCouldUseDefaultObject' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic;
 
 // Class MarvelAI.AIAbilityExitStageLogic_BindLogic
 // 0x0018 (0x0050 - 0x0038)
@@ -1034,42 +647,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic_BindLogic">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic_BindLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic_BindLogic")
 	}
 	static class UAIAbilityExitStageLogic_BindLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic_BindLogic>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic_BindLogic) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic_BindLogic");
-static_assert(sizeof(UAIAbilityExitStageLogic_BindLogic) == 0x000050, "Wrong size on UAIAbilityExitStageLogic_BindLogic");
-static_assert(offsetof(UAIAbilityExitStageLogic_BindLogic, ExitStageLogicList) == 0x000038, "Member 'UAIAbilityExitStageLogic_BindLogic::ExitStageLogicList' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_BindLogic, bEndOnlyIfAllLogicEnd) == 0x000048, "Member 'UAIAbilityExitStageLogic_BindLogic::bEndOnlyIfAllLogicEnd' has a wrong offset!");
-
-// Class MarvelAI.ActionRequirementBase
-// 0x0008 (0x0038 - 0x0030)
-class UActionRequirementBase : public UObject
-{
-public:
-	bool                                          Invert;                                            // 0x0030(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool Requirement(class AAIController* OwnerController, class AActor* ControlledPawn);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ActionRequirementBase">();
-	}
-	static class UActionRequirementBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UActionRequirementBase>();
-	}
-};
-static_assert(alignof(UActionRequirementBase) == 0x000008, "Wrong alignment on UActionRequirementBase");
-static_assert(sizeof(UActionRequirementBase) == 0x000038, "Wrong size on UActionRequirementBase");
-static_assert(offsetof(UActionRequirementBase, Invert) == 0x000030, "Member 'UActionRequirementBase::Invert' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic_BindLogic;
 
 // Class MarvelAI.AIAbilityExitStageLogic_CheckBuffedCharacter
 // 0x0098 (0x00D0 - 0x0038)
@@ -1089,21 +678,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic_CheckBuffedCharacter">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic_CheckBuffedCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic_CheckBuffedCharacter")
 	}
 	static class UAIAbilityExitStageLogic_CheckBuffedCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic_CheckBuffedCharacter>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic_CheckBuffedCharacter) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic_CheckBuffedCharacter");
-static_assert(sizeof(UAIAbilityExitStageLogic_CheckBuffedCharacter) == 0x0000D0, "Wrong size on UAIAbilityExitStageLogic_CheckBuffedCharacter");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, BuffID) == 0x000038, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::BuffID' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, HeroFilter) == 0x000040, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::HeroFilter' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, bCheckDistance) == 0x0000C0, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::bCheckDistance' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, Distance) == 0x0000C4, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::Distance' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, InverseResult) == 0x0000C8, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::InverseResult' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_CheckBuffedCharacter, bCheckInView) == 0x0000C9, "Member 'UAIAbilityExitStageLogic_CheckBuffedCharacter::bCheckInView' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic_CheckBuffedCharacter;
 
 // Class MarvelAI.AIAbilityExitStageLogic_EQSComplete
 // 0x0000 (0x0038 - 0x0038)
@@ -1112,41 +698,18 @@ class UAIAbilityExitStageLogic_EQSComplete final : public UAIAbilityExitStageLog
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic_EQSComplete">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic_EQSComplete")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic_EQSComplete")
 	}
 	static class UAIAbilityExitStageLogic_EQSComplete* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic_EQSComplete>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic_EQSComplete) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic_EQSComplete");
-static_assert(sizeof(UAIAbilityExitStageLogic_EQSComplete) == 0x000038, "Wrong size on UAIAbilityExitStageLogic_EQSComplete");
-
-// Class MarvelAI.BTD_SpaceDistCheck
-// 0x0020 (0x00D8 - 0x00B8)
-class UBTD_SpaceDistCheck : public UBTDecorator_MarvelInstancedBase
-{
-public:
-	TArray<struct FCoupleActorStruct>             CoupledActors;                                     // 0x00B8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FFloatRange                            DistRange;                                         // 0x00C8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	bool Check(class UBehaviorTreeComponent* OwnerComp) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_SpaceDistCheck">();
-	}
-	static class UBTD_SpaceDistCheck* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_SpaceDistCheck>();
-	}
-};
-static_assert(alignof(UBTD_SpaceDistCheck) == 0x000008, "Wrong alignment on UBTD_SpaceDistCheck");
-static_assert(sizeof(UBTD_SpaceDistCheck) == 0x0000D8, "Wrong size on UBTD_SpaceDistCheck");
-static_assert(offsetof(UBTD_SpaceDistCheck, CoupledActors) == 0x0000B8, "Member 'UBTD_SpaceDistCheck::CoupledActors' has a wrong offset!");
-static_assert(offsetof(UBTD_SpaceDistCheck, DistRange) == 0x0000C8, "Member 'UBTD_SpaceDistCheck::DistRange' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic_EQSComplete;
 
 // Class MarvelAI.AIAbilityExitStageLogic_TargetHasTag
 // 0x0010 (0x0048 - 0x0038)
@@ -1159,16 +722,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic_TargetHasTag">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic_TargetHasTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic_TargetHasTag")
 	}
 	static class UAIAbilityExitStageLogic_TargetHasTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic_TargetHasTag>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic_TargetHasTag) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic_TargetHasTag");
-static_assert(sizeof(UAIAbilityExitStageLogic_TargetHasTag) == 0x000048, "Wrong size on UAIAbilityExitStageLogic_TargetHasTag");
-static_assert(offsetof(UAIAbilityExitStageLogic_TargetHasTag, Tag) == 0x000038, "Member 'UAIAbilityExitStageLogic_TargetHasTag::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic_TargetHasTag;
 
 // Class MarvelAI.AIAbilityExitStageLogic_WaitFocusMatched
 // 0x0010 (0x0048 - 0x0038)
@@ -1184,53 +749,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExitStageLogic_WaitFocusMatched">();
+		STATIC_CLASS_IMPL("AIAbilityExitStageLogic_WaitFocusMatched")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStageLogic_WaitFocusMatched")
 	}
 	static class UAIAbilityExitStageLogic_WaitFocusMatched* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStageLogic_WaitFocusMatched>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStageLogic_WaitFocusMatched) == 0x000008, "Wrong alignment on UAIAbilityExitStageLogic_WaitFocusMatched");
-static_assert(sizeof(UAIAbilityExitStageLogic_WaitFocusMatched) == 0x000048, "Wrong size on UAIAbilityExitStageLogic_WaitFocusMatched");
-static_assert(offsetof(UAIAbilityExitStageLogic_WaitFocusMatched, bUseSinDisJudge) == 0x000038, "Member 'UAIAbilityExitStageLogic_WaitFocusMatched::bUseSinDisJudge' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_WaitFocusMatched, ValueThreshold) == 0x00003C, "Member 'UAIAbilityExitStageLogic_WaitFocusMatched::ValueThreshold' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExitStageLogic_WaitFocusMatched, AllowedAngleDeviation) == 0x000040, "Member 'UAIAbilityExitStageLogic_WaitFocusMatched::AllowedAngleDeviation' has a wrong offset!");
-
-// Class MarvelAI.BTD_CheckAroundCharacter
-// 0x00D8 (0x0148 - 0x0070)
-class UBTD_CheckAroundCharacter : public UBTDecorator
-{
-public:
-	bool                                          ConsiderDist;                                      // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 FocusActor;                                        // 0x0078(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Radius;                                            // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHeroFilter                            HeroFilter;                                        // 0x00B0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FInt32Range                            RangeNum;                                          // 0x0130(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Interval;                                          // 0x0140(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RandomDeviation;                                   // 0x0144(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_CheckAroundCharacter">();
-	}
-	static class UBTD_CheckAroundCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_CheckAroundCharacter>();
-	}
-};
-static_assert(alignof(UBTD_CheckAroundCharacter) == 0x000008, "Wrong alignment on UBTD_CheckAroundCharacter");
-static_assert(sizeof(UBTD_CheckAroundCharacter) == 0x000148, "Wrong size on UBTD_CheckAroundCharacter");
-static_assert(offsetof(UBTD_CheckAroundCharacter, ConsiderDist) == 0x000070, "Member 'UBTD_CheckAroundCharacter::ConsiderDist' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, FocusActor) == 0x000078, "Member 'UBTD_CheckAroundCharacter::FocusActor' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, Radius) == 0x0000A8, "Member 'UBTD_CheckAroundCharacter::Radius' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, HeroFilter) == 0x0000B0, "Member 'UBTD_CheckAroundCharacter::HeroFilter' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, RangeNum) == 0x000130, "Member 'UBTD_CheckAroundCharacter::RangeNum' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, Interval) == 0x000140, "Member 'UBTD_CheckAroundCharacter::Interval' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAroundCharacter, RandomDeviation) == 0x000144, "Member 'UBTD_CheckAroundCharacter::RandomDeviation' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExitStageLogic_WaitFocusMatched;
 
 // Class MarvelAI.AIAbilityFlowCheckLogicBase
 // 0x0008 (0x0038 - 0x0030)
@@ -1249,16 +779,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityFlowCheckLogicBase">();
+		STATIC_CLASS_IMPL("AIAbilityFlowCheckLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityFlowCheckLogicBase")
 	}
 	static class UAIAbilityFlowCheckLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityFlowCheckLogicBase>();
 	}
 };
-static_assert(alignof(UAIAbilityFlowCheckLogicBase) == 0x000008, "Wrong alignment on UAIAbilityFlowCheckLogicBase");
-static_assert(sizeof(UAIAbilityFlowCheckLogicBase) == 0x000038, "Wrong size on UAIAbilityFlowCheckLogicBase");
-static_assert(offsetof(UAIAbilityFlowCheckLogicBase, bCouldUseDefaultObject) == 0x000030, "Member 'UAIAbilityFlowCheckLogicBase::bCouldUseDefaultObject' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityFlowCheckLogicBase;
 
 // Class MarvelAI.AIAbilityFlowCheck_Condition
 // 0x0010 (0x0048 - 0x0038)
@@ -1270,37 +802,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityFlowCheck_Condition">();
+		STATIC_CLASS_IMPL("AIAbilityFlowCheck_Condition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityFlowCheck_Condition")
 	}
 	static class UAIAbilityFlowCheck_Condition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityFlowCheck_Condition>();
 	}
 };
-static_assert(alignof(UAIAbilityFlowCheck_Condition) == 0x000008, "Wrong alignment on UAIAbilityFlowCheck_Condition");
-static_assert(sizeof(UAIAbilityFlowCheck_Condition) == 0x000048, "Wrong size on UAIAbilityFlowCheck_Condition");
-static_assert(offsetof(UAIAbilityFlowCheck_Condition, ConditionList) == 0x000038, "Member 'UAIAbilityFlowCheck_Condition::ConditionList' has a wrong offset!");
-
-// Class MarvelAI.BTService_MarvelRunEQS
-// 0x0030 (0x0140 - 0x0110)
-class UBTService_MarvelRunEQS final : public UBTService_RunEQS
-{
-public:
-	struct FBlackboardKeySelector                 AbilityMoveLogicBlackboardKey;                     // 0x0110(0x0030)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTService_MarvelRunEQS">();
-	}
-	static class UBTService_MarvelRunEQS* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTService_MarvelRunEQS>();
-	}
-};
-static_assert(alignof(UBTService_MarvelRunEQS) == 0x000008, "Wrong alignment on UBTService_MarvelRunEQS");
-static_assert(sizeof(UBTService_MarvelRunEQS) == 0x000140, "Wrong size on UBTService_MarvelRunEQS");
-static_assert(offsetof(UBTService_MarvelRunEQS, AbilityMoveLogicBlackboardKey) == 0x000110, "Member 'UBTService_MarvelRunEQS::AbilityMoveLogicBlackboardKey' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityFlowCheck_Condition;
 
 // Class MarvelAI.AIMoveControlLogic
 // 0x0018 (0x0048 - 0x0030)
@@ -1323,19 +836,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIMoveControlLogic">();
+		STATIC_CLASS_IMPL("AIMoveControlLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControlLogic")
 	}
 	static class UAIMoveControlLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControlLogic>();
 	}
 };
-static_assert(alignof(UAIMoveControlLogic) == 0x000008, "Wrong alignment on UAIMoveControlLogic");
-static_assert(sizeof(UAIMoveControlLogic) == 0x000048, "Wrong size on UAIMoveControlLogic");
-static_assert(offsetof(UAIMoveControlLogic, bUseCustomSelectDir) == 0x000030, "Member 'UAIMoveControlLogic::bUseCustomSelectDir' has a wrong offset!");
-static_assert(offsetof(UAIMoveControlLogic, MoveType) == 0x000031, "Member 'UAIMoveControlLogic::MoveType' has a wrong offset!");
-static_assert(offsetof(UAIMoveControlLogic, EQSTemplate) == 0x000038, "Member 'UAIMoveControlLogic::EQSTemplate' has a wrong offset!");
-static_assert(offsetof(UAIMoveControlLogic, bCouldUseDefaultObject) == 0x000040, "Member 'UAIMoveControlLogic::bCouldUseDefaultObject' has a wrong offset!");
+DUMPER7_ASSERTS_UAIMoveControlLogic;
 
 // Class MarvelAI.AIAbilityActivationLogic
 // 0x0008 (0x0038 - 0x0030)
@@ -1356,39 +868,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityActivationLogic">();
+		STATIC_CLASS_IMPL("AIAbilityActivationLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivationLogic")
 	}
 	static class UAIAbilityActivationLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivationLogic>();
 	}
 };
-static_assert(alignof(UAIAbilityActivationLogic) == 0x000008, "Wrong alignment on UAIAbilityActivationLogic");
-static_assert(sizeof(UAIAbilityActivationLogic) == 0x000038, "Wrong size on UAIAbilityActivationLogic");
-static_assert(offsetof(UAIAbilityActivationLogic, bShouldTick) == 0x000030, "Member 'UAIAbilityActivationLogic::bShouldTick' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic, bCouldUseDefaultObject) == 0x000031, "Member 'UAIAbilityActivationLogic::bCouldUseDefaultObject' has a wrong offset!");
-
-// Class MarvelAI.BTS_CheckRemainTime
-// 0x0038 (0x00B0 - 0x0078)
-class UBTS_CheckRemainTime : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutRemainTime;                                     // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_CheckRemainTime">();
-	}
-	static class UBTS_CheckRemainTime* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_CheckRemainTime>();
-	}
-};
-static_assert(alignof(UBTS_CheckRemainTime) == 0x000008, "Wrong alignment on UBTS_CheckRemainTime");
-static_assert(sizeof(UBTS_CheckRemainTime) == 0x0000B0, "Wrong size on UBTS_CheckRemainTime");
-static_assert(offsetof(UBTS_CheckRemainTime, OutRemainTime) == 0x000078, "Member 'UBTS_CheckRemainTime::OutRemainTime' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityActivationLogic;
 
 // Class MarvelAI.AIAbilityMoveControlLogic
 // 0x0070 (0x00B8 - 0x0048)
@@ -1401,17 +892,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityMoveControlLogic">();
+		STATIC_CLASS_IMPL("AIAbilityMoveControlLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityMoveControlLogic")
 	}
 	static class UAIAbilityMoveControlLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityMoveControlLogic>();
 	}
 };
-static_assert(alignof(UAIAbilityMoveControlLogic) == 0x000008, "Wrong alignment on UAIAbilityMoveControlLogic");
-static_assert(sizeof(UAIAbilityMoveControlLogic) == 0x0000B8, "Wrong size on UAIAbilityMoveControlLogic");
-static_assert(offsetof(UAIAbilityMoveControlLogic, MoveTag) == 0x000048, "Member 'UAIAbilityMoveControlLogic::MoveTag' has a wrong offset!");
-static_assert(offsetof(UAIAbilityMoveControlLogic, MoveEQSTemplate) == 0x0000B0, "Member 'UAIAbilityMoveControlLogic::MoveEQSTemplate' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityMoveControlLogic;
 
 // Class MarvelAI.AIAbilityActivationLogic_TargetHealth
 // 0x0018 (0x0050 - 0x0038)
@@ -1427,41 +919,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityActivationLogic_TargetHealth">();
+		STATIC_CLASS_IMPL("AIAbilityActivationLogic_TargetHealth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivationLogic_TargetHealth")
 	}
 	static class UAIAbilityActivationLogic_TargetHealth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivationLogic_TargetHealth>();
 	}
 };
-static_assert(alignof(UAIAbilityActivationLogic_TargetHealth) == 0x000008, "Wrong alignment on UAIAbilityActivationLogic_TargetHealth");
-static_assert(sizeof(UAIAbilityActivationLogic_TargetHealth) == 0x000050, "Wrong size on UAIAbilityActivationLogic_TargetHealth");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetHealth, TargetBlackBoard) == 0x000038, "Member 'UAIAbilityActivationLogic_TargetHealth::TargetBlackBoard' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetHealth, TargetHealthType) == 0x000048, "Member 'UAIAbilityActivationLogic_TargetHealth::TargetHealthType' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetHealth, Op) == 0x000049, "Member 'UAIAbilityActivationLogic_TargetHealth::Op' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetHealth, CompareValue) == 0x00004C, "Member 'UAIAbilityActivationLogic_TargetHealth::CompareValue' has a wrong offset!");
-
-// Class MarvelAI.Requirement_ReturnValue
-// 0x0008 (0x0040 - 0x0038)
-class URequirement_ReturnValue final : public UActionRequirementBase
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Requirement_ReturnValue">();
-	}
-	static class URequirement_ReturnValue* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URequirement_ReturnValue>();
-	}
-};
-static_assert(alignof(URequirement_ReturnValue) == 0x000008, "Wrong alignment on URequirement_ReturnValue");
-static_assert(sizeof(URequirement_ReturnValue) == 0x000040, "Wrong size on URequirement_ReturnValue");
-static_assert(offsetof(URequirement_ReturnValue, ReturnValue) == 0x000038, "Member 'URequirement_ReturnValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityActivationLogic_TargetHealth;
 
 // Class MarvelAI.AIAbilityActivationLogic_TargetDistance
 // 0x0018 (0x0050 - 0x0038)
@@ -1476,27 +945,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityActivationLogic_TargetDistance">();
+		STATIC_CLASS_IMPL("AIAbilityActivationLogic_TargetDistance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivationLogic_TargetDistance")
 	}
 	static class UAIAbilityActivationLogic_TargetDistance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivationLogic_TargetDistance>();
 	}
 };
-static_assert(alignof(UAIAbilityActivationLogic_TargetDistance) == 0x000008, "Wrong alignment on UAIAbilityActivationLogic_TargetDistance");
-static_assert(sizeof(UAIAbilityActivationLogic_TargetDistance) == 0x000050, "Wrong size on UAIAbilityActivationLogic_TargetDistance");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetDistance, TargetBlackBoard) == 0x000038, "Member 'UAIAbilityActivationLogic_TargetDistance::TargetBlackBoard' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetDistance, Op) == 0x000048, "Member 'UAIAbilityActivationLogic_TargetDistance::Op' has a wrong offset!");
-static_assert(offsetof(UAIAbilityActivationLogic_TargetDistance, CompareValue) == 0x00004C, "Member 'UAIAbilityActivationLogic_TargetDistance::CompareValue' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityActivationLogic_TargetDistance;
 
 // Class MarvelAI.AIAbilityObserver
-// 0x0070 (0x00A8 - 0x0038)
+// 0x0070 (0x00B0 - 0x0040)
 class UAIAbilityObserver final : public UWorldSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& Session, const struct FGlobalEventExtraData& Data)> OnAbilityActivate; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& Session, const struct FGlobalEventExtraData& Data)> OnAbilityDeActivate; // 0x0048(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
-	TMap<class AActor*, struct FAbilityList>      ActivatedAbility;                                  // 0x0058(0x0050)(NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& Session, const struct FGlobalEventExtraData& Data)> OnAbilityActivate; // 0x0040(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& Session, const struct FGlobalEventExtraData& Data)> OnAbilityDeActivate; // 0x0050(0x0010)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
+	TMap<class AActor*, struct FAbilityList>      ActivatedAbility;                                  // 0x0060(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
 	void OnActiveAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
@@ -1505,45 +974,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityObserver">();
+		STATIC_CLASS_IMPL("AIAbilityObserver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityObserver")
 	}
 	static class UAIAbilityObserver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityObserver>();
 	}
 };
-static_assert(alignof(UAIAbilityObserver) == 0x000008, "Wrong alignment on UAIAbilityObserver");
-static_assert(sizeof(UAIAbilityObserver) == 0x0000A8, "Wrong size on UAIAbilityObserver");
-static_assert(offsetof(UAIAbilityObserver, OnAbilityActivate) == 0x000038, "Member 'UAIAbilityObserver::OnAbilityActivate' has a wrong offset!");
-static_assert(offsetof(UAIAbilityObserver, OnAbilityDeActivate) == 0x000048, "Member 'UAIAbilityObserver::OnAbilityDeActivate' has a wrong offset!");
-static_assert(offsetof(UAIAbilityObserver, ActivatedAbility) == 0x000058, "Member 'UAIAbilityObserver::ActivatedAbility' has a wrong offset!");
-
-// Class MarvelAI.BTService_AbilityFocus_BB
-// 0x0108 (0x01B0 - 0x00A8)
-class UBTService_AbilityFocus_BB final : public UBTService_BlackboardBase
-{
-public:
-	bool                                          bShouldClearFocusWhenEnd;                          // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAISelectTargetLogicBase*               TargetSelectLogic;                                 // 0x00B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UAISelectTargetLogicBase>   TargetSelectLogicClass;                            // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C0[0xF0];                                      // 0x00C0(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTService_AbilityFocus_BB">();
-	}
-	static class UBTService_AbilityFocus_BB* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTService_AbilityFocus_BB>();
-	}
-};
-static_assert(alignof(UBTService_AbilityFocus_BB) == 0x000008, "Wrong alignment on UBTService_AbilityFocus_BB");
-static_assert(sizeof(UBTService_AbilityFocus_BB) == 0x0001B0, "Wrong size on UBTService_AbilityFocus_BB");
-static_assert(offsetof(UBTService_AbilityFocus_BB, bShouldClearFocusWhenEnd) == 0x0000A8, "Member 'UBTService_AbilityFocus_BB::bShouldClearFocusWhenEnd' has a wrong offset!");
-static_assert(offsetof(UBTService_AbilityFocus_BB, TargetSelectLogic) == 0x0000B0, "Member 'UBTService_AbilityFocus_BB::TargetSelectLogic' has a wrong offset!");
-static_assert(offsetof(UBTService_AbilityFocus_BB, TargetSelectLogicClass) == 0x0000B8, "Member 'UBTService_AbilityFocus_BB::TargetSelectLogicClass' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityObserver;
 
 // Class MarvelAI.AIAbilitySelectCheckBase
 // 0x0020 (0x0050 - 0x0030)
@@ -1559,40 +1001,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilitySelectCheckBase">();
+		STATIC_CLASS_IMPL("AIAbilitySelectCheckBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilitySelectCheckBase")
 	}
 	static class UAIAbilitySelectCheckBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilitySelectCheckBase>();
 	}
 };
-static_assert(alignof(UAIAbilitySelectCheckBase) == 0x000008, "Wrong alignment on UAIAbilitySelectCheckBase");
-static_assert(sizeof(UAIAbilitySelectCheckBase) == 0x000050, "Wrong size on UAIAbilitySelectCheckBase");
-
-// Class MarvelAI.AICliffEdgeNote
-// 0x0010 (0x06F0 - 0x06E0)
-class AAICliffEdgeNote final : public ANote
-{
-public:
-	struct FVector                                LookAtTargetPosition;                              // 0x06D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	struct FVector GetLookAtTargetLocalPosition() const;
-	struct FVector GetLookAtTargetPosition() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AICliffEdgeNote">();
-	}
-	static class AAICliffEdgeNote* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAICliffEdgeNote>();
-	}
-};
-static_assert(alignof(AAICliffEdgeNote) == 0x000010, "Wrong alignment on AAICliffEdgeNote");
-static_assert(sizeof(AAICliffEdgeNote) == 0x0006F0, "Wrong size on AAICliffEdgeNote");
-static_assert(offsetof(AAICliffEdgeNote, LookAtTargetPosition) == 0x0006D8, "Member 'AAICliffEdgeNote::LookAtTargetPosition' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilitySelectCheckBase;
 
 // Class MarvelAI.AIAbilitySelectCheck_AILab
 // 0x0000 (0x0050 - 0x0050)
@@ -1601,46 +1021,18 @@ class UAIAbilitySelectCheck_AILab final : public UAIAbilitySelectCheckBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilitySelectCheck_AILab">();
+		STATIC_CLASS_IMPL("AIAbilitySelectCheck_AILab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilitySelectCheck_AILab")
 	}
 	static class UAIAbilitySelectCheck_AILab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilitySelectCheck_AILab>();
 	}
 };
-static_assert(alignof(UAIAbilitySelectCheck_AILab) == 0x000008, "Wrong alignment on UAIAbilitySelectCheck_AILab");
-static_assert(sizeof(UAIAbilitySelectCheck_AILab) == 0x000050, "Wrong size on UAIAbilitySelectCheck_AILab");
-
-// Class MarvelAI.BTS_AutoInjection
-// 0x03D0 (0x0448 - 0x0078)
-class UBTS_AutoInjection final : public UBTService
-{
-public:
-	struct FAIAbilityUsage                        AIAbilityData;                                     // 0x0078(0x00E8)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAIAutoAbilityTable              UsageConfig;                                       // 0x0160(0x0270)(Edit, EditConst, NativeAccessSpecifierPublic)
-	class UAIAbilityUsageObject*                  AbilityUsageObject;                                // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 AbilityUsageBlackboardKey;                         // 0x03D8(0x0030)(Edit, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 AttackTargetBlackboardKey;                         // 0x0408(0x0030)(Edit, EditConst, Protected, NativeAccessSpecifierProtected)
-	TArray<int32>                                 AbilityID;                                         // 0x0438(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_AutoInjection">();
-	}
-	static class UBTS_AutoInjection* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_AutoInjection>();
-	}
-};
-static_assert(alignof(UBTS_AutoInjection) == 0x000008, "Wrong alignment on UBTS_AutoInjection");
-static_assert(sizeof(UBTS_AutoInjection) == 0x000448, "Wrong size on UBTS_AutoInjection");
-static_assert(offsetof(UBTS_AutoInjection, AIAbilityData) == 0x000078, "Member 'UBTS_AutoInjection::AIAbilityData' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoInjection, UsageConfig) == 0x000160, "Member 'UBTS_AutoInjection::UsageConfig' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoInjection, AbilityUsageObject) == 0x0003D0, "Member 'UBTS_AutoInjection::AbilityUsageObject' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoInjection, AbilityUsageBlackboardKey) == 0x0003D8, "Member 'UBTS_AutoInjection::AbilityUsageBlackboardKey' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoInjection, AttackTargetBlackboardKey) == 0x000408, "Member 'UBTS_AutoInjection::AttackTargetBlackboardKey' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoInjection, AbilityID) == 0x000438, "Member 'UBTS_AutoInjection::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilitySelectCheck_AILab;
 
 // Class MarvelAI.AIAbilitySelectCheck_AutoAbility
 // 0x0000 (0x0050 - 0x0050)
@@ -1649,32 +1041,18 @@ class UAIAbilitySelectCheck_AutoAbility final : public UAIAbilitySelectCheckBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilitySelectCheck_AutoAbility">();
+		STATIC_CLASS_IMPL("AIAbilitySelectCheck_AutoAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilitySelectCheck_AutoAbility")
 	}
 	static class UAIAbilitySelectCheck_AutoAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilitySelectCheck_AutoAbility>();
 	}
 };
-static_assert(alignof(UAIAbilitySelectCheck_AutoAbility) == 0x000008, "Wrong alignment on UAIAbilitySelectCheck_AutoAbility");
-static_assert(sizeof(UAIAbilitySelectCheck_AutoAbility) == 0x000050, "Wrong size on UAIAbilitySelectCheck_AutoAbility");
-
-// Class MarvelAI.StoredPointDataBase
-// 0x0000 (0x0030 - 0x0030)
-class UStoredPointDataBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"StoredPointDataBase">();
-	}
-	static class UStoredPointDataBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UStoredPointDataBase>();
-	}
-};
-static_assert(alignof(UStoredPointDataBase) == 0x000008, "Wrong alignment on UStoredPointDataBase");
-static_assert(sizeof(UStoredPointDataBase) == 0x000030, "Wrong size on UStoredPointDataBase");
+DUMPER7_ASSERTS_UAIAbilitySelectCheck_AutoAbility;
 
 // Class MarvelAI.AIAbilitySelectCheck_SingleAbility
 // 0x0000 (0x0050 - 0x0050)
@@ -1683,56 +1061,18 @@ class UAIAbilitySelectCheck_SingleAbility final : public UAIAbilitySelectCheckBa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilitySelectCheck_SingleAbility">();
+		STATIC_CLASS_IMPL("AIAbilitySelectCheck_SingleAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilitySelectCheck_SingleAbility")
 	}
 	static class UAIAbilitySelectCheck_SingleAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilitySelectCheck_SingleAbility>();
 	}
 };
-static_assert(alignof(UAIAbilitySelectCheck_SingleAbility) == 0x000008, "Wrong alignment on UAIAbilitySelectCheck_SingleAbility");
-static_assert(sizeof(UAIAbilitySelectCheck_SingleAbility) == 0x000050, "Wrong size on UAIAbilitySelectCheck_SingleAbility");
-
-// Class MarvelAI.BTS_SetMapPoint_Payload
-// 0x01F0 (0x0268 - 0x0078)
-class UBTS_SetMapPoint_Payload : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 InMatchStateInput;                                 // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FStrategyArea                          OutStrategyArea;                                   // 0x00A8(0x0090)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 FrontierBBKey;                                     // 0x0138(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 EnemyPlayerStartBBKey;                             // 0x0168(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 AllyPlayerStartBBKey;                              // 0x0198(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	float                                         SuppressDist;                                      // 0x01C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RetreatDist;                                       // 0x01CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UHotPoint_DataAsset*                    DA_HotPoint;                                       // 0x01D0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 SuppressPointBBKey;                                // 0x01D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 RetreatPointBBKey;                                 // 0x0208(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 OutHotPointBBKey;                                  // 0x0238(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_SetMapPoint_Payload">();
-	}
-	static class UBTS_SetMapPoint_Payload* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_SetMapPoint_Payload>();
-	}
-};
-static_assert(alignof(UBTS_SetMapPoint_Payload) == 0x000008, "Wrong alignment on UBTS_SetMapPoint_Payload");
-static_assert(sizeof(UBTS_SetMapPoint_Payload) == 0x000268, "Wrong size on UBTS_SetMapPoint_Payload");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, InMatchStateInput) == 0x000078, "Member 'UBTS_SetMapPoint_Payload::InMatchStateInput' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, OutStrategyArea) == 0x0000A8, "Member 'UBTS_SetMapPoint_Payload::OutStrategyArea' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, FrontierBBKey) == 0x000138, "Member 'UBTS_SetMapPoint_Payload::FrontierBBKey' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, EnemyPlayerStartBBKey) == 0x000168, "Member 'UBTS_SetMapPoint_Payload::EnemyPlayerStartBBKey' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, AllyPlayerStartBBKey) == 0x000198, "Member 'UBTS_SetMapPoint_Payload::AllyPlayerStartBBKey' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, SuppressDist) == 0x0001C8, "Member 'UBTS_SetMapPoint_Payload::SuppressDist' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, RetreatDist) == 0x0001CC, "Member 'UBTS_SetMapPoint_Payload::RetreatDist' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, DA_HotPoint) == 0x0001D0, "Member 'UBTS_SetMapPoint_Payload::DA_HotPoint' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, SuppressPointBBKey) == 0x0001D8, "Member 'UBTS_SetMapPoint_Payload::SuppressPointBBKey' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, RetreatPointBBKey) == 0x000208, "Member 'UBTS_SetMapPoint_Payload::RetreatPointBBKey' has a wrong offset!");
-static_assert(offsetof(UBTS_SetMapPoint_Payload, OutHotPointBBKey) == 0x000238, "Member 'UBTS_SetMapPoint_Payload::OutHotPointBBKey' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilitySelectCheck_SingleAbility;
 
 // Class MarvelAI.AIAbilityExecutor
 // 0x0288 (0x02B8 - 0x0030)
@@ -1804,41 +1144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityExecutor">();
+		STATIC_CLASS_IMPL("AIAbilityExecutor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExecutor")
 	}
 	static class UAIAbilityExecutor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExecutor>();
 	}
 };
-static_assert(alignof(UAIAbilityExecutor) == 0x000008, "Wrong alignment on UAIAbilityExecutor");
-static_assert(sizeof(UAIAbilityExecutor) == 0x0002B8, "Wrong size on UAIAbilityExecutor");
-static_assert(offsetof(UAIAbilityExecutor, bIsTicking) == 0x000070, "Member 'UAIAbilityExecutor::bIsTicking' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, bIsInRecover) == 0x000071, "Member 'UAIAbilityExecutor::bIsInRecover' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, AbilityID) == 0x000074, "Member 'UAIAbilityExecutor::AbilityID' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, AbilityUsageID) == 0x000078, "Member 'UAIAbilityExecutor::AbilityUsageID' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, MarvelAIController) == 0x000080, "Member 'UAIAbilityExecutor::MarvelAIController' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, MarvelAICharacter) == 0x000088, "Member 'UAIAbilityExecutor::MarvelAICharacter' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, AbilityUsage) == 0x000090, "Member 'UAIAbilityExecutor::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, ResourceList) == 0x000178, "Member 'UAIAbilityExecutor::ResourceList' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, ResourcePriority) == 0x00017C, "Member 'UAIAbilityExecutor::ResourcePriority' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, ConflictBehavior) == 0x000180, "Member 'UAIAbilityExecutor::ConflictBehavior' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, FocusControlLogic) == 0x000188, "Member 'UAIAbilityExecutor::FocusControlLogic' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, MoveControlLogic) == 0x000190, "Member 'UAIAbilityExecutor::MoveControlLogic' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, StopAbilityCheckLogic) == 0x000198, "Member 'UAIAbilityExecutor::StopAbilityCheckLogic' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, TagContainer) == 0x0001A0, "Member 'UAIAbilityExecutor::TagContainer' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CancelButton) == 0x000208, "Member 'UAIAbilityExecutor::CancelButton' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentButtonIndex) == 0x00020C, "Member 'UAIAbilityExecutor::CurrentButtonIndex' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentButton) == 0x000210, "Member 'UAIAbilityExecutor::CurrentButton' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentLoopCheckLogic) == 0x000218, "Member 'UAIAbilityExecutor::CurrentLoopCheckLogic' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, bIsLoopButton) == 0x000220, "Member 'UAIAbilityExecutor::bIsLoopButton' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, ButtonLoopCount) == 0x000224, "Member 'UAIAbilityExecutor::ButtonLoopCount' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, ButtonLoopTime) == 0x000228, "Member 'UAIAbilityExecutor::ButtonLoopTime' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentStage) == 0x00022C, "Member 'UAIAbilityExecutor::CurrentStage' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentActivationLogicList) == 0x000230, "Member 'UAIAbilityExecutor::CurrentActivationLogicList' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, CurrentStageCheckLogic) == 0x000240, "Member 'UAIAbilityExecutor::CurrentStageCheckLogic' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, StageTimer) == 0x000248, "Member 'UAIAbilityExecutor::StageTimer' has a wrong offset!");
-static_assert(offsetof(UAIAbilityExecutor, bIsInfinityStage) == 0x00024C, "Member 'UAIAbilityExecutor::bIsInfinityStage' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityExecutor;
 
 // Class MarvelAI.AIAbilityUsageObject
 // 0x00E8 (0x0118 - 0x0030)
@@ -1856,43 +1173,77 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAbilityUsageObject">();
+		STATIC_CLASS_IMPL("AIAbilityUsageObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityUsageObject")
 	}
 	static class UAIAbilityUsageObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityUsageObject>();
 	}
 };
-static_assert(alignof(UAIAbilityUsageObject) == 0x000008, "Wrong alignment on UAIAbilityUsageObject");
-static_assert(sizeof(UAIAbilityUsageObject) == 0x000118, "Wrong size on UAIAbilityUsageObject");
-static_assert(offsetof(UAIAbilityUsageObject, UsageData) == 0x000030, "Member 'UAIAbilityUsageObject::UsageData' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityUsageObject;
 
-// Class MarvelAI.BTS_IsInBattle
-// 0x00F8 (0x0170 - 0x0078)
-class UBTS_IsInBattle : public UBTService
+// Class MarvelAI.MarvelAIDataProvider
+// 0x0010 (0x0040 - 0x0030)
+class UMarvelAIDataProvider : public UAIDataProvider
 {
 public:
-	struct FBlackboardKeySelector                 IsInBattle;                                        // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 AttackTarget;                                      // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 TeammateTarget;                                    // 0x00D8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FAIHeroTag                             MatchTag;                                          // 0x0108(0x0068)(Edit, DisableEditOnInstance, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	float                                         FloatValue;                                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         IntValue;                                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          BoolValue;                                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static bool GetBoolValue(const struct FAIDataProviderBoolValue& InProvider, const class UObject* Owner, int32 RequestId);
+	static float GetFloatValue(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner, int32 RequestId);
+	static float GetFloatValue_Blueprint(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner);
+	static int32 GetIntValue(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner, int32 RequestId);
+	static int32 GetIntValue_Blueprint(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner);
+
+	void SetAllValue(float NewValue);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_IsInBattle">();
+		STATIC_CLASS_IMPL("MarvelAIDataProvider")
 	}
-	static class UBTS_IsInBattle* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UBTS_IsInBattle>();
+		STATIC_NAME_IMPL(L"MarvelAIDataProvider")
+	}
+	static class UMarvelAIDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDataProvider>();
 	}
 };
-static_assert(alignof(UBTS_IsInBattle) == 0x000008, "Wrong alignment on UBTS_IsInBattle");
-static_assert(sizeof(UBTS_IsInBattle) == 0x000170, "Wrong size on UBTS_IsInBattle");
-static_assert(offsetof(UBTS_IsInBattle, IsInBattle) == 0x000078, "Member 'UBTS_IsInBattle::IsInBattle' has a wrong offset!");
-static_assert(offsetof(UBTS_IsInBattle, AttackTarget) == 0x0000A8, "Member 'UBTS_IsInBattle::AttackTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_IsInBattle, TeammateTarget) == 0x0000D8, "Member 'UBTS_IsInBattle::TeammateTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_IsInBattle, MatchTag) == 0x000108, "Member 'UBTS_IsInBattle::MatchTag' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAIDataProvider;
+
+// Class MarvelAI.MarvelAIDataProvider_AttackRange
+// 0x0008 (0x0048 - 0x0040)
+class UMarvelAIDataProvider_AttackRange final : public UMarvelAIDataProvider
+{
+public:
+	float                                         ValueForRangeHero;                                 // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ValueForMeleeHero;                                 // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIDataProvider_AttackRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIDataProvider_AttackRange")
+	}
+	static class UMarvelAIDataProvider_AttackRange* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDataProvider_AttackRange>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIDataProvider_AttackRange;
 
 // Class MarvelAI.AIActionArea
 // 0x0060 (0x0740 - 0x06E0)
@@ -1910,66 +1261,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIActionArea">();
+		STATIC_CLASS_IMPL("AIActionArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIActionArea")
 	}
 	static class AAIActionArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAIActionArea>();
 	}
 };
-static_assert(alignof(AAIActionArea) == 0x000010, "Wrong alignment on AAIActionArea");
-static_assert(sizeof(AAIActionArea) == 0x000740, "Wrong size on AAIActionArea");
-static_assert(offsetof(AAIActionArea, AICheckArea) == 0x0006D8, "Member 'AAIActionArea::AICheckArea' has a wrong offset!");
-static_assert(offsetof(AAIActionArea, RelatedUsagePointConfig) == 0x0006E0, "Member 'AAIActionArea::RelatedUsagePointConfig' has a wrong offset!");
-static_assert(offsetof(AAIActionArea, ProcessedUsagePointData) == 0x0006F0, "Member 'AAIActionArea::ProcessedUsagePointData' has a wrong offset!");
+DUMPER7_ASSERTS_AAIActionArea;
 
-// Class MarvelAI.AIBattleAreaFilterBase
-// 0x0000 (0x0030 - 0x0030)
-class UAIBattleAreaFilterBase final : public UObject
+// Class MarvelAI.AIGlobalConfigAsset
+// 0x0000 (0x0038 - 0x0038)
+class UAIGlobalConfigAsset : public UPrimaryDataAsset
 {
-public:
-	bool CheckCouldPass(class AAIBattleAreaBase* BattleArea);
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIBattleAreaFilterBase">();
+		STATIC_CLASS_IMPL("AIGlobalConfigAsset")
 	}
-	static class UAIBattleAreaFilterBase* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAIBattleAreaFilterBase>();
+		STATIC_NAME_IMPL(L"AIGlobalConfigAsset")
+	}
+	static class UAIGlobalConfigAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGlobalConfigAsset>();
 	}
 };
-static_assert(alignof(UAIBattleAreaFilterBase) == 0x000008, "Wrong alignment on UAIBattleAreaFilterBase");
-static_assert(sizeof(UAIBattleAreaFilterBase) == 0x000030, "Wrong size on UAIBattleAreaFilterBase");
-
-// Class MarvelAI.BTS_AroundCharacter
-// 0x00C8 (0x0140 - 0x0078)
-class UBTS_AroundCharacter : public UBTService
-{
-public:
-	bool                                          ConsiderDist;                                      // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAroundCharacterCheckStruct>    AroundCharacterCheckList;                          // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FHeroFilter                            HeroFilter;                                        // 0x0090(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 PassCharacterNum;                                  // 0x0110(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_AroundCharacter">();
-	}
-	static class UBTS_AroundCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_AroundCharacter>();
-	}
-};
-static_assert(alignof(UBTS_AroundCharacter) == 0x000008, "Wrong alignment on UBTS_AroundCharacter");
-static_assert(sizeof(UBTS_AroundCharacter) == 0x000140, "Wrong size on UBTS_AroundCharacter");
-static_assert(offsetof(UBTS_AroundCharacter, ConsiderDist) == 0x000078, "Member 'UBTS_AroundCharacter::ConsiderDist' has a wrong offset!");
-static_assert(offsetof(UBTS_AroundCharacter, AroundCharacterCheckList) == 0x000080, "Member 'UBTS_AroundCharacter::AroundCharacterCheckList' has a wrong offset!");
-static_assert(offsetof(UBTS_AroundCharacter, HeroFilter) == 0x000090, "Member 'UBTS_AroundCharacter::HeroFilter' has a wrong offset!");
-static_assert(offsetof(UBTS_AroundCharacter, PassCharacterNum) == 0x000110, "Member 'UBTS_AroundCharacter::PassCharacterNum' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGlobalConfigAsset;
 
 // Class MarvelAI.AIAlarmConfig
 // 0x0088 (0x00C0 - 0x0038)
@@ -1991,24 +1314,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAlarmConfig">();
+		STATIC_CLASS_IMPL("AIAlarmConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAlarmConfig")
 	}
 	static class UAIAlarmConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAlarmConfig>();
 	}
 };
-static_assert(alignof(UAIAlarmConfig) == 0x000008, "Wrong alignment on UAIAlarmConfig");
-static_assert(sizeof(UAIAlarmConfig) == 0x0000C0, "Wrong size on UAIAlarmConfig");
-static_assert(offsetof(UAIAlarmConfig, bEnable) == 0x000038, "Member 'UAIAlarmConfig::bEnable' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, bEnableVislog) == 0x000039, "Member 'UAIAlarmConfig::bEnableVislog' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, CheckInterval) == 0x00003C, "Member 'UAIAlarmConfig::CheckInterval' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, LogLimitNumPerAI) == 0x000040, "Member 'UAIAlarmConfig::LogLimitNumPerAI' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, EmptyUsageLimitSeconds) == 0x000044, "Member 'UAIAlarmConfig::EmptyUsageLimitSeconds' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, AbilityAlarmWhiteList) == 0x000048, "Member 'UAIAlarmConfig::AbilityAlarmWhiteList' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, MoveStuckThreshold) == 0x0000B0, "Member 'UAIAlarmConfig::MoveStuckThreshold' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, AbilityEndThreshold) == 0x0000B4, "Member 'UAIAlarmConfig::AbilityEndThreshold' has a wrong offset!");
-static_assert(offsetof(UAIAlarmConfig, RecordNum) == 0x0000B8, "Member 'UAIAlarmConfig::RecordNum' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAlarmConfig;
 
 // Class MarvelAI.AIAutoAbilityComponent
 // 0x00B0 (0x01B8 - 0x0108)
@@ -2026,16 +1343,64 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAutoAbilityComponent">();
+		STATIC_CLASS_IMPL("AIAutoAbilityComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAutoAbilityComponent")
 	}
 	static class UAIAutoAbilityComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAutoAbilityComponent>();
 	}
 };
-static_assert(alignof(UAIAutoAbilityComponent) == 0x000008, "Wrong alignment on UAIAutoAbilityComponent");
-static_assert(sizeof(UAIAutoAbilityComponent) == 0x0001B8, "Wrong size on UAIAutoAbilityComponent");
-static_assert(offsetof(UAIAutoAbilityComponent, DynamicUsageConditions) == 0x000108, "Member 'UAIAutoAbilityComponent::DynamicUsageConditions' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAutoAbilityComponent;
+
+// Class MarvelAI.MarvelAIDifficultyGlobalConfig
+// 0x0020 (0x0058 - 0x0038)
+class UMarvelAIDifficultyGlobalConfig final : public UPrimaryDataAsset
+{
+public:
+	TSubclassOf<class UGameplayEffect>            GE_AI_DamageTarget;                                // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UGameplayEffect>            GE_AI_DamageSource;                                // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UGameplayEffect>            GE_AI_TreatTarget;                                 // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UGameplayEffect>            GE_AI_TreatSource;                                 // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIDifficultyGlobalConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIDifficultyGlobalConfig")
+	}
+	static class UMarvelAIDifficultyGlobalConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDifficultyGlobalConfig>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIDifficultyGlobalConfig;
+
+// Class MarvelAI.StoredPointDataBase
+// 0x0000 (0x0030 - 0x0030)
+class UStoredPointDataBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("StoredPointDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoredPointDataBase")
+	}
+	static class UStoredPointDataBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UStoredPointDataBase>();
+	}
+};
+DUMPER7_ASSERTS_UStoredPointDataBase;
 
 // Class MarvelAI.AIBattleAreaBase
 // 0x0040 (0x0720 - 0x06E0)
@@ -2059,20 +1424,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIBattleAreaBase">();
+		STATIC_CLASS_IMPL("AIBattleAreaBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIBattleAreaBase")
 	}
 	static class AAIBattleAreaBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAIBattleAreaBase>();
 	}
 };
-static_assert(alignof(AAIBattleAreaBase) == 0x000010, "Wrong alignment on AAIBattleAreaBase");
-static_assert(sizeof(AAIBattleAreaBase) == 0x000720, "Wrong size on AAIBattleAreaBase");
-static_assert(offsetof(AAIBattleAreaBase, AreaName) == 0x0006D8, "Member 'AAIBattleAreaBase::AreaName' has a wrong offset!");
-static_assert(offsetof(AAIBattleAreaBase, Description) == 0x0006E8, "Member 'AAIBattleAreaBase::Description' has a wrong offset!");
-static_assert(offsetof(AAIBattleAreaBase, BattleAreaFilter) == 0x000700, "Member 'AAIBattleAreaBase::BattleAreaFilter' has a wrong offset!");
-static_assert(offsetof(AAIBattleAreaBase, BattleAreaType) == 0x000708, "Member 'AAIBattleAreaBase::BattleAreaType' has a wrong offset!");
-static_assert(offsetof(AAIBattleAreaBase, StandPointList) == 0x000710, "Member 'AAIBattleAreaBase::StandPointList' has a wrong offset!");
+DUMPER7_ASSERTS_AAIBattleAreaBase;
 
 // Class MarvelAI.AISniperBattleArea
 // 0x0010 (0x0730 - 0x0720)
@@ -2085,16 +1448,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISniperBattleArea">();
+		STATIC_CLASS_IMPL("AISniperBattleArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISniperBattleArea")
 	}
 	static class AAISniperBattleArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAISniperBattleArea>();
 	}
 };
-static_assert(alignof(AAISniperBattleArea) == 0x000010, "Wrong alignment on AAISniperBattleArea");
-static_assert(sizeof(AAISniperBattleArea) == 0x000730, "Wrong size on AAISniperBattleArea");
-static_assert(offsetof(AAISniperBattleArea, SwitchPointProbability) == 0x000720, "Member 'AAISniperBattleArea::SwitchPointProbability' has a wrong offset!");
+DUMPER7_ASSERTS_AAISniperBattleArea;
 
 // Class MarvelAI.AIDefendBattleArea
 // 0x0000 (0x0720 - 0x0720)
@@ -2103,15 +1468,172 @@ class AAIDefendBattleArea final : public AAIBattleAreaBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDefendBattleArea">();
+		STATIC_CLASS_IMPL("AIDefendBattleArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDefendBattleArea")
 	}
 	static class AAIDefendBattleArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAIDefendBattleArea>();
 	}
 };
-static_assert(alignof(AAIDefendBattleArea) == 0x000010, "Wrong alignment on AAIDefendBattleArea");
-static_assert(sizeof(AAIDefendBattleArea) == 0x000720, "Wrong size on AAIDefendBattleArea");
+DUMPER7_ASSERTS_AAIDefendBattleArea;
+
+// Class MarvelAI.MarvelAILibrary
+// 0x0000 (0x0030 - 0x0030)
+class UMarvelAILibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void ActivateAbilityUsage(class AMarvelAIController* AIController, const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, int32 UsageID, bool ImitateAILab, bool bDoUsageCheck);
+	static void ActivateAIUltra(class AMarvelAIController* AIController);
+	static class UInputRecordComponent* AddInputRecordToAI(class AMarvelAIController* AIController);
+	static bool CanFindNavPathBetweenLocations(class AController* Controller, const struct FVector& StartLocation, const struct FVector& EndLocation);
+	static bool CanFindNavPathToLocation(class AController* Controller, const struct FVector& TargetLocation);
+	static void ChangeGamePlayDebuggerNetUpdateFrequency(class UObject* WorldContextObject, bool UseHighFrequency);
+	static void ChangeHero(class AMarvelAIController* AIController, const int32 HeroId, const struct FTransform& SpawnTransform);
+	static bool CheckAbilityIsReady(class AMarvelAIController* MyController, int32 AbilityUsageID, bool bCheckCanUseNow);
+	static bool CheckActorHasTag(const class AActor* TargetActor, const struct FGameplayTag& TagToCheck);
+	static bool CheckAICharacterTag(const class AMarvelBaseCharacter* Character, const struct FAIHeroTag& Tags, EGameplayContainerMatchType MatchType);
+	static bool CheckDashBarrierFree(class AMarvelBaseCharacter* AICharacter, class AMarvelAIController* AIController, float DashDistance);
+	static bool CheckInIntRange(const struct FInt32Range& Range, const int32 Num);
+	static bool CheckIsImportantTarget(const class AActor* Target);
+	static bool CheckIsInStealth(const class AActor* TargetActor);
+	static bool CheckIsRangeHero(const class AMarvelBaseCharacter* MarvelHero);
+	static bool CheckLowHealthMarkValid(class AMarvelAIController* AIController, class AActor* Target);
+	static bool CompareActorRelationWithFilter(const class AActor* FromActor, const class AActor* ToActor, EAIFilterSide Side);
+	static bool CompareAIFilterSide(float A, float B, EMarvelArithmeticOperation ArithmeticOperation);
+	static bool CompareOwnerShipTypeToAIFilterSide(class AAIController* Controller, EOwnershipType ShipType, EAIFilterSide Side);
+	static EAIFilterSide ConvertOwnerShipTypeToAIFilterSide(class AMarvelAIController* Controller, EOwnershipType ShipType);
+	static void DebugDrawPathPoints(class AActor* StartActor, const TArray<struct FVector>& PathPoints, float Duration, bool bDrawStartActor, const struct FColor& DrawColor, float Thickness);
+	static bool DoesAIExistInGame(class UObject* WorldContextObject);
+	static TArray<struct FVector> FindNavPathToLocation(class AController* Controller, const struct FVector& TargetLocation);
+	static void ForceUpdateAllGCNavigationData(class UObject* WorldContextObject);
+	static EPathFollowingRequestResult GeneralMoveToLocation(class AMarvelAIController* AIController, const struct FVector& DestLocation);
+	static EPathFollowingRequestResult GeneralMoveToLocationAdvance(class AMarvelAIController* AIController, const struct FVector& DestLocation, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath);
+	static EPathFollowingRequestResult GeneralMoveToStaticActor(class AMarvelAIController* AIController, class AActor* DestActor, float RandomRadius);
+	static int32 GetAbilityIDByConfig(const struct FMarvelAIAutoAbilityTable& Data, const class AMarvelAIController* OwnerController);
+	static int32 GetAbilityIDByUsage(const struct FAIAbilityUsage& AbilityUsage, class AMarvelAIController* OwnerController);
+	static struct FMarvelAIAutoAbilityTable GetAIAutoAbilityConfig(int32 Id);
+	static TArray<class AMarvelAIController*> GetAIByTag(class UObject* WorldContextObject, const struct FGameplayTag& GameplayTag);
+	static int32 GetAICount(class AMarvelBaseCharacter* Character, EAIFilterSide FilterSide);
+	static bool GetAIDifficultyConfigByModeAndLevel(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel, struct FMarvelAIDifficultyTable* OutDifficultyConfig);
+	static class UDataTable* GetAIHeroTable();
+	static const TArray<struct FAIHeroTagLogicConfig> GetAIHeroTagLogics(int32 HeroID, int32 SculptID);
+	static class UAILabConfigAsset* GetAILabConfigAsset();
+	static float GetAISenseMaxAge(class AMarvelAIController* AIController, class UClass* AISenseClass);
+	static class UAIVisualLoggerConfig* GetAIVisualLoggerConfig(const class UObject* WorldContext);
+	static int32 GetAllAICount(class AMarvelBaseCharacter* Character);
+	static float GetAmmoClip(class UMarvelAbilitySystemCom* AbilitySystemComponent, EAmmoClipType AmmoType);
+	static int32 GetAndUpdatePreviewHeroIDForAI(class AMarvelPlayerState* PlayerState, bool ImmediatelyUpdate);
+	static float GetBattleDistanceFromTable(class AMarvelAIController* Controller);
+	static float GetBattleScoreOfActor(const class AActor* TargetActor);
+	static bool GetCheckedHeroBehaviorTreeConfig(const class AMarvelBaseCharacter* MarvelHero, struct FMarvelHeroBehaviorTreeTable* OutConfigData);
+	static bool GetCheckedHeroBehaviorTreeConfigByID(const int32 HeroId, const int32 SculptID, struct FMarvelHeroBehaviorTreeTable* OutConfigData);
+	static int32 GetDefaultRequestServerIndex(const class AMarvelAIController* Controller);
+	static int32 GetEnemyAICount(class AMarvelBaseCharacter* Character);
+	static float GetEnergyProportionOfActor(const class AActor* ActorWithEnergy);
+	static float GetHealthProportionOfActor(const class AActor* ActorWithHealth, int32 HealthBarTypeMask);
+	static struct FMarvelHeroBehaviorTreeTable GetHeroBehaviorTreeConfig(const class AMarvelBaseCharacter* MarvelHero);
+	static class UBehaviorTree* GetHeroGameModeBehaviorTree(class AMarvelAIController* Controller);
+	static struct FVector GetInvalidLocation();
+	static struct FVector GetLocOfCoverMostPoints(const TArray<struct FVector>& SourcePoints, float Radius, const class AActor* FilterDistanceActor, float FilterDistance, bool bDebug, const float DebugShowTime);
+	static TArray<struct FMarvelAIStandPointGroupTable> GetMarvelAIStandPointGroupTables();
+	static const struct FMarvelHeroAutoAITable GetMarvelHeroAutoAITable(int32 HeroID);
+	static float GetMaxHealthPropertyOfActor(const class AActor* ActorWithHealth, int32 HealthBarTypeMask);
+	static struct FVector GetNavNowSegmentEnd(class AAIController* Controller);
+	static TArray<struct FVector> GetNavPathArray(class AAIController* Controller);
+	static struct FVector GetNavPathEnd(class AAIController* Controller);
+	static struct FVector GetNearestReachableLocation(const class UObject* WorldContextObject, const struct FVector& QueryLocation, const struct FVector& SearchExtent);
+	static float GetPathPointsLength(const TArray<struct FVector>& PathPoints);
+	static float GetRandomJumpIntervalsScale(const struct FMarvelAIDifficultyTable& Table, float DynamicDifficultyFactor);
+	static bool GetRandomLocationAroundLocation(const class UObject* WorldContext, const struct FVector& InLocation, struct FVector* OutLocation, float RandomRadius);
+	static struct FVector GetRandomLocationInnerBoxArea(const class UBoxComponent* Area);
+	static bool GetRandomLocationOnNavMesh(const class AActor* DestActor, struct FVector* OutLocation, float RandomRadius);
+	static float GetRandomUpdatePreSelectHeroDelay(class UObject* WorldContextObject);
+	static class AStandPointBase* GetStandPointByName(const class UObject* WorldContext, const class FName& PointName);
+	static void GetSummonersByTeam(const class UObject* WorldContextObject, const int32 TeamID, TArray<class AActor*>* OutSummoners);
+	static void GetSummonersSpawnedFromCharacter(class AMarvelBaseCharacter* InInstigator, TArray<class AActor*>* OutSummoners);
+	static struct FVector GetTargetLocationForAI(const class AActor* TargetActor, class AActor* OptRequestedBy);
+	static int32 GetTeammateAICount(class AMarvelBaseCharacter* Character);
+	static void GetTeammateSummoned(class AMarvelAIController* AIController, int32 SummonedID, TArray<class AActor*>* OutSummonedComps);
+	static class FString IntArrayToString(const TArray<int32>& IntArray);
+	static bool IsAbilityActive(const class AMarvelBaseCharacter* Character, int32 AbilityID);
+	static bool IsAILabEnabled(class UObject* WorldContextObject);
+	static bool IsAIUsableHero(class UObject* WorldContextObject, int32 HeroID);
+	static bool IsTargetSeenFromPortal(const class AMarvelAIController* QueryAI, const class AActor* Target);
+	static bool IsValidAbilityUsage(const struct FAIAbilityUsage& AbilityUsage);
+	static bool IsValidAIAutoAbilityConfig(const struct FMarvelAIAutoAbilityTable& Data);
+	static bool IsValidHeroBehaviorTreeConfig(const struct FMarvelHeroBehaviorTreeTable& Data);
+	static bool IsValidLocation(const struct FVector& LocationToCheck);
+	static void LoadAndPlayRecord(class AMarvelAIController* AIController, const class FString& RecordName, EInputRecordPath RecordPath);
+	static void LoadInputRecordByAI(class AAIController* InController, const class FString& RecordName, EInputRecordPath RecordPath);
+	static void MarkIfSelectTargetNodeUseSense(class AMarvelAIController* AIController, const class FString& NodeName, bool UseSense);
+	static void PlayInputRecordByAI(class AAIController* InController);
+	static void RemoveScoreModuleDebugData(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, const class FString& ModuleName, EAIScoreArea ScoreArea);
+	static bool SetAIAbilityServer(const class UObject* WCO, int32 AbilityServerIndex);
+	static void SetAIChangeHeroDebugInfo(class AMarvelAIController* AIController, EAIChangeHeroReason ChangeReason, bool ChangeResult, float Curve_Energy, int32 ChangeCD, float Curve_CD, const class FString& FailedReason);
+	static void SetAILabServerUrl(class UObject* WorldContextObject, const class FString& NewUrl, const class FString& Msg);
+	static void SetDDADramaType(const class UObject* WorldContextObject, int32 DDAType);
+	static void SetTeamAIAbilityTactic(const class UObject* WorldContextObject, const TSet<int32>& TeamIDs, class UClass* AbilityTacticClass);
+	static void SetTeamAIAbilityTacticClass(class UObject* WorldContextObject, EBattleSide BattleSide, class UClass* AbilityTacticClass);
+	static bool ShouldUseFlyPath(class AActor* MovingActor);
+	static bool SolveThreeSphereIntersections(const TArray<struct FVector>& Points, const TArray<float>& RadiusSq, TArray<struct FVector>* OutIntersections);
+	static class AAIController* SpawnInputRecordByAI(class UObject* WorldContextObject, const struct FAISpawnParam& AISpawnParam);
+	static void StopInputRecordByAI(class UObject* WorldContextObject);
+	static void StoreScoreModuleDebugData(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, const class FString& ModuleName, EAIScoreArea ScoreArea, float Score);
+	static void StoreTargetFinalScoreForDebug(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, float FinalScore, const TSet<int32>& HighPrioritySummoners);
+	static struct FVector TakeFlyLocationFromBox(class AActor* MovingActor, const class UBoxComponent* Area, int32 MaxAttemptTime);
+	static struct FVector TakeTargetLocationForStaticActor(class AActor* MovingActor, class AActor* DestActor, float RandomRadius, bool UseNavAgent);
+	static struct FVector TestRotateVector(const struct FVector& InVec, const struct FRotator& InRot);
+	static void TryAddLowHealthMark(class AMarvelAIController* AIController, class AActor* Target);
+	static void UpdateAIDifficultyByTeamID(const class UObject* WorldContextObject, const int32 TeamID, const int32 DifficultyLevel);
+	static bool UpdateAIGameModeConfigDataAsset(const class FString& DataExec);
+	static bool UpdateAIHitRateDataAsset(const int32 DifficultyLevel, const class FString& DataExec);
+	static void UpdateTeamDifficulty(class UObject* WorldContextObject, int32 TeamNum, float DifficultyLevel);
+	static void UpdateTeamDynamicDifficulty(class UObject* WorldContextObject, int32 TeamID, float DynamicDifficultyFactor);
+	static bool VisibleCheckForBattleChess(class AMarvelBaseCharacter* Querier, class AActor* Target);
+	static void VlogPathPoints(const class AActor* LogOwner, const TArray<struct FVector>& PathPoints);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAILibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAILibrary")
+	}
+	static class UMarvelAILibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAILibrary>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAILibrary;
+
+// Class MarvelAI.AIBattleAreaFilterBase
+// 0x0000 (0x0030 - 0x0030)
+class UAIBattleAreaFilterBase final : public UObject
+{
+public:
+	bool CheckCouldPass(class AAIBattleAreaBase* BattleArea);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIBattleAreaFilterBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIBattleAreaFilterBase")
+	}
+	static class UAIBattleAreaFilterBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIBattleAreaFilterBase>();
+	}
+};
+DUMPER7_ASSERTS_UAIBattleAreaFilterBase;
 
 // Class MarvelAI.MarvelAIBattleAreaManager
 // 0x0078 (0x00A8 - 0x0030)
@@ -2135,22 +1657,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIBattleAreaManager">();
+		STATIC_CLASS_IMPL("MarvelAIBattleAreaManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIBattleAreaManager")
 	}
 	static class UMarvelAIBattleAreaManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAIBattleAreaManager>();
 	}
 };
-static_assert(alignof(UMarvelAIBattleAreaManager) == 0x000008, "Wrong alignment on UMarvelAIBattleAreaManager");
-static_assert(sizeof(UMarvelAIBattleAreaManager) == 0x0000A8, "Wrong size on UMarvelAIBattleAreaManager");
-static_assert(offsetof(UMarvelAIBattleAreaManager, BattleAreaMap) == 0x000030, "Member 'UMarvelAIBattleAreaManager::BattleAreaMap' has a wrong offset!");
-static_assert(offsetof(UMarvelAIBattleAreaManager, GameModeTag) == 0x000080, "Member 'UMarvelAIBattleAreaManager::GameModeTag' has a wrong offset!");
-static_assert(offsetof(UMarvelAIBattleAreaManager, bInited) == 0x00008C, "Member 'UMarvelAIBattleAreaManager::bInited' has a wrong offset!");
-static_assert(offsetof(UMarvelAIBattleAreaManager, LevelSystemPtr) == 0x000090, "Member 'UMarvelAIBattleAreaManager::LevelSystemPtr' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAIBattleAreaManager;
+
+// Class MarvelAI.AICliffEdgeNote
+// 0x0010 (0x06F0 - 0x06E0)
+class AAICliffEdgeNote final : public ANote
+{
+public:
+	struct FVector                                LookAtTargetPosition;                              // 0x06D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	struct FVector GetLookAtTargetLocalPosition() const;
+	struct FVector GetLookAtTargetPosition() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AICliffEdgeNote")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICliffEdgeNote")
+	}
+	static class AAICliffEdgeNote* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AAICliffEdgeNote>();
+	}
+};
+DUMPER7_ASSERTS_AAICliffEdgeNote;
 
 // Class MarvelAI.AIControllerInfo
-// 0x04C0 (0x05C8 - 0x0108)
+// 0x0520 (0x0628 - 0x0108)
 class UAIControllerInfo final : public UActorComponent
 {
 public:
@@ -2170,11 +1718,11 @@ public:
 	uint8                                         Pad_1CE[0xA];                                      // 0x01CE(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(EAITeamAction PrevAction, EAITeamAction NewAction)> OnTeamActionChanged; // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	int32                                         ForbiddenSkillLevel;                               // 0x01E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1EC[0x2D8];                                    // 0x01EC(0x02D8)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         AIComboIndex;                                      // 0x04C4(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, class UAIAbilityActivationExtraConfig*> ExtraConfigs;                        // 0x04C8(0x0050)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_518[0xA8];                                     // 0x0518(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAIController*                    OwnerController;                                   // 0x05C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1EC[0x338];                                    // 0x01EC(0x0338)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         AIComboIndex;                                      // 0x0524(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, class UAIAbilityActivationExtraConfig*> ExtraConfigs;                        // 0x0528(0x0050)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_578[0xA8];                                     // 0x0578(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    OwnerController;                                   // 0x0620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	bool AddExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig);
@@ -2186,6 +1734,7 @@ public:
 	void DeleteConcentratedTarget(class AActor* Target);
 	class UAIAbilityActivationExtraConfig* GetExtraConfig(const class FString& ConfigName);
 	bool HasExtraConfig(const class FString& ConfigName);
+	void OnChangeHeroClear();
 	bool OverwriteExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig);
 	void RemoveExtraConfig(const class FString& ConfigName);
 	bool RemoveTag(const struct FGameplayTag& Tag);
@@ -2211,32 +1760,47 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIControllerInfo">();
+		STATIC_CLASS_IMPL("AIControllerInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIControllerInfo")
 	}
 	static class UAIControllerInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIControllerInfo>();
 	}
 };
-static_assert(alignof(UAIControllerInfo) == 0x000008, "Wrong alignment on UAIControllerInfo");
-static_assert(sizeof(UAIControllerInfo) == 0x0005C8, "Wrong size on UAIControllerInfo");
-static_assert(offsetof(UAIControllerInfo, EnemiesInView) == 0x000118, "Member 'UAIControllerInfo::EnemiesInView' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, SummonedEnemiesInView) == 0x000128, "Member 'UAIControllerInfo::SummonedEnemiesInView' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, SummonedAlliesInView) == 0x000138, "Member 'UAIControllerInfo::SummonedAlliesInView' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, AlliesInView) == 0x000148, "Member 'UAIControllerInfo::AlliesInView' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, DangerAroundAllys) == 0x000158, "Member 'UAIControllerInfo::DangerAroundAllys' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, DangerAroundEnemies) == 0x000168, "Member 'UAIControllerInfo::DangerAroundEnemies' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, WayPointPath) == 0x000178, "Member 'UAIControllerInfo::WayPointPath' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, LastReceiveAILabResponseTime) == 0x0001C0, "Member 'UAIControllerInfo::LastReceiveAILabResponseTime' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, AILabConnectTimeOutCount) == 0x0001C4, "Member 'UAIControllerInfo::AILabConnectTimeOutCount' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, KeepDistanceInBattle) == 0x0001C8, "Member 'UAIControllerInfo::KeepDistanceInBattle' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, AITeamAction) == 0x0001CC, "Member 'UAIControllerInfo::AITeamAction' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, bIsTeamActionFromSelf) == 0x0001CD, "Member 'UAIControllerInfo::bIsTeamActionFromSelf' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, OnTeamActionChanged) == 0x0001D8, "Member 'UAIControllerInfo::OnTeamActionChanged' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, ForbiddenSkillLevel) == 0x0001E8, "Member 'UAIControllerInfo::ForbiddenSkillLevel' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, AIComboIndex) == 0x0004C4, "Member 'UAIControllerInfo::AIComboIndex' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, ExtraConfigs) == 0x0004C8, "Member 'UAIControllerInfo::ExtraConfigs' has a wrong offset!");
-static_assert(offsetof(UAIControllerInfo, OwnerController) == 0x0005C0, "Member 'UAIControllerInfo::OwnerController' has a wrong offset!");
+DUMPER7_ASSERTS_UAIControllerInfo;
+
+// Class MarvelAI.MarvelAISense_DangerousTarget
+// 0x0010 (0x0098 - 0x0088)
+class UMarvelAISense_DangerousTarget final : public UAISense
+{
+public:
+	TArray<struct FDangerousTargetAbilityEvent>   RegisteredEvents;                                  // 0x0088(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	static void ReportAbilityEvent(class AActor* Source, class UGameplayAbility* Ability, EAbilitySenseNotify Notify);
+
+	void EndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
+	void OnAbilityActivate(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAISense_DangerousTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISense_DangerousTarget")
+	}
+	static class UMarvelAISense_DangerousTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAISense_DangerousTarget>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAISense_DangerousTarget;
 
 // Class MarvelAI.AICustomServiceLogicBase
 // 0x0010 (0x0040 - 0x0030)
@@ -2254,37 +1818,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AICustomServiceLogicBase">();
+		STATIC_CLASS_IMPL("AICustomServiceLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICustomServiceLogicBase")
 	}
 	static class UAICustomServiceLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICustomServiceLogicBase>();
 	}
 };
-static_assert(alignof(UAICustomServiceLogicBase) == 0x000008, "Wrong alignment on UAICustomServiceLogicBase");
-static_assert(sizeof(UAICustomServiceLogicBase) == 0x000040, "Wrong size on UAICustomServiceLogicBase");
-static_assert(offsetof(UAICustomServiceLogicBase, OwnerController) == 0x000030, "Member 'UAICustomServiceLogicBase::OwnerController' has a wrong offset!");
-static_assert(offsetof(UAICustomServiceLogicBase, ControlledPawn) == 0x000038, "Member 'UAICustomServiceLogicBase::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_UAICustomServiceLogicBase;
 
 // Class MarvelAI.MarvelAIWorldSubsystem
-// 0x0000 (0x0048 - 0x0048)
+// 0x0000 (0x0050 - 0x0050)
 class UMarvelAIWorldSubsystem : public UTickableWorldSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIWorldSubsystem">();
+		STATIC_CLASS_IMPL("MarvelAIWorldSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIWorldSubsystem")
 	}
 	static class UMarvelAIWorldSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAIWorldSubsystem>();
 	}
 };
-static_assert(alignof(UMarvelAIWorldSubsystem) == 0x000008, "Wrong alignment on UMarvelAIWorldSubsystem");
-static_assert(sizeof(UMarvelAIWorldSubsystem) == 0x000048, "Wrong size on UMarvelAIWorldSubsystem");
+DUMPER7_ASSERTS_UMarvelAIWorldSubsystem;
 
 // Class MarvelAI.AIDebugSubSystem
-// 0x0000 (0x0048 - 0x0048)
+// 0x0000 (0x0050 - 0x0050)
 class UAIDebugSubSystem final : public UMarvelAIWorldSubsystem
 {
 public:
@@ -2298,15 +1866,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDebugSubSystem">();
+		STATIC_CLASS_IMPL("AIDebugSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDebugSubSystem")
 	}
 	static class UAIDebugSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIDebugSubSystem>();
 	}
 };
-static_assert(alignof(UAIDebugSubSystem) == 0x000008, "Wrong alignment on UAIDebugSubSystem");
-static_assert(sizeof(UAIDebugSubSystem) == 0x000048, "Wrong size on UAIDebugSubSystem");
+DUMPER7_ASSERTS_UAIDebugSubSystem;
 
 // Class MarvelAI.AIDifficultyExtendAsset
 // 0x0020 (0x0058 - 0x0038)
@@ -2323,17 +1894,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDifficultyExtendAsset">();
+		STATIC_CLASS_IMPL("AIDifficultyExtendAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDifficultyExtendAsset")
 	}
 	static class UAIDifficultyExtendAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIDifficultyExtendAsset>();
 	}
 };
-static_assert(alignof(UAIDifficultyExtendAsset) == 0x000008, "Wrong alignment on UAIDifficultyExtendAsset");
-static_assert(sizeof(UAIDifficultyExtendAsset) == 0x000058, "Wrong size on UAIDifficultyExtendAsset");
-static_assert(offsetof(UAIDifficultyExtendAsset, HitRateModify) == 0x000038, "Member 'UAIDifficultyExtendAsset::HitRateModify' has a wrong offset!");
-static_assert(offsetof(UAIDifficultyExtendAsset, DependencyAsset) == 0x000048, "Member 'UAIDifficultyExtendAsset::DependencyAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UAIDifficultyExtendAsset;
 
 // Class MarvelAI.AIDynamicDifficultyAsset
 // 0x0038 (0x0070 - 0x0038)
@@ -2354,30 +1926,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDynamicDifficultyAsset">();
+		STATIC_CLASS_IMPL("AIDynamicDifficultyAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDynamicDifficultyAsset")
 	}
 	static class UAIDynamicDifficultyAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIDynamicDifficultyAsset>();
 	}
 };
-static_assert(alignof(UAIDynamicDifficultyAsset) == 0x000008, "Wrong alignment on UAIDynamicDifficultyAsset");
-static_assert(sizeof(UAIDynamicDifficultyAsset) == 0x000070, "Wrong size on UAIDynamicDifficultyAsset");
-static_assert(offsetof(UAIDynamicDifficultyAsset, HealingScaleCurve) == 0x000038, "Member 'UAIDynamicDifficultyAsset::HealingScaleCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, HitRateModifyCurve) == 0x000040, "Member 'UAIDynamicDifficultyAsset::HitRateModifyCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, MoveWaitTimeCurve) == 0x000048, "Member 'UAIDynamicDifficultyAsset::MoveWaitTimeCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, JumpIntervalCurve) == 0x000050, "Member 'UAIDynamicDifficultyAsset::JumpIntervalCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, LowHealthMarkDurationCurve) == 0x000058, "Member 'UAIDynamicDifficultyAsset::LowHealthMarkDurationCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, LowHealthMarkCooldownCurve) == 0x000060, "Member 'UAIDynamicDifficultyAsset::LowHealthMarkCooldownCurve' has a wrong offset!");
-static_assert(offsetof(UAIDynamicDifficultyAsset, AILABFrequencyCurve) == 0x000068, "Member 'UAIDynamicDifficultyAsset::AILABFrequencyCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAIDynamicDifficultyAsset;
 
 // Class MarvelAI.AIGameEventSubsystem
-// 0x0078 (0x00B0 - 0x0038)
+// 0x0078 (0x00B8 - 0x0040)
 class UAIGameEventSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x70];                                      // 0x0038(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelGameplayEventManager*            MarvelGameplayEventManager;                        // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_40[0x70];                                      // 0x0040(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelGameplayEventManager*            MarvelGameplayEventManager;                        // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActorEnergyFull(class AActor* Source, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData);
@@ -2391,16 +1959,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameEventSubsystem">();
+		STATIC_CLASS_IMPL("AIGameEventSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameEventSubsystem")
 	}
 	static class UAIGameEventSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameEventSubsystem>();
 	}
 };
-static_assert(alignof(UAIGameEventSubsystem) == 0x000008, "Wrong alignment on UAIGameEventSubsystem");
-static_assert(sizeof(UAIGameEventSubsystem) == 0x0000B0, "Wrong size on UAIGameEventSubsystem");
-static_assert(offsetof(UAIGameEventSubsystem, MarvelGameplayEventManager) == 0x0000A8, "Member 'UAIGameEventSubsystem::MarvelGameplayEventManager' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGameEventSubsystem;
 
 // Class MarvelAI.AIGameInstanceSubsystem
 // 0x0038 (0x0070 - 0x0038)
@@ -2418,18 +1988,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameInstanceSubsystem">();
+		STATIC_CLASS_IMPL("AIGameInstanceSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameInstanceSubsystem")
 	}
 	static class UAIGameInstanceSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameInstanceSubsystem>();
 	}
 };
-static_assert(alignof(UAIGameInstanceSubsystem) == 0x000008, "Wrong alignment on UAIGameInstanceSubsystem");
-static_assert(sizeof(UAIGameInstanceSubsystem) == 0x000070, "Wrong size on UAIGameInstanceSubsystem");
-static_assert(offsetof(UAIGameInstanceSubsystem, OnAIAssetsLoadedSuccessfullyDelegate) == 0x000038, "Member 'UAIGameInstanceSubsystem::OnAIAssetsLoadedSuccessfullyDelegate' has a wrong offset!");
-static_assert(offsetof(UAIGameInstanceSubsystem, SubTreesNeedPreLoad) == 0x000048, "Member 'UAIGameInstanceSubsystem::SubTreesNeedPreLoad' has a wrong offset!");
-static_assert(offsetof(UAIGameInstanceSubsystem, AIAssets) == 0x000058, "Member 'UAIGameInstanceSubsystem::AIAssets' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGameInstanceSubsystem;
+
+// Class MarvelAI.AIGameplayTagLogicBase
+// 0x0000 (0x0038 - 0x0038)
+class UAIGameplayTagLogicBase : public UPrimaryDataAsset
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogicBase")
+	}
+	static class UAIGameplayTagLogicBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogicBase>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogicBase;
 
 // Class MarvelAI.AIGameplayTagLogicBase_DisableJump
 // 0x0000 (0x0038 - 0x0038)
@@ -2438,15 +2028,38 @@ class UAIGameplayTagLogicBase_DisableJump final : public UAIGameplayTagLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameplayTagLogicBase_DisableJump">();
+		STATIC_CLASS_IMPL("AIGameplayTagLogicBase_DisableJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogicBase_DisableJump")
 	}
 	static class UAIGameplayTagLogicBase_DisableJump* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameplayTagLogicBase_DisableJump>();
 	}
 };
-static_assert(alignof(UAIGameplayTagLogicBase_DisableJump) == 0x000008, "Wrong alignment on UAIGameplayTagLogicBase_DisableJump");
-static_assert(sizeof(UAIGameplayTagLogicBase_DisableJump) == 0x000038, "Wrong size on UAIGameplayTagLogicBase_DisableJump");
+DUMPER7_ASSERTS_UAIGameplayTagLogicBase_DisableJump;
+
+// Class MarvelAI.AIGameplayTagLogic_BlockMove
+// 0x0000 (0x0038 - 0x0038)
+class UAIGameplayTagLogic_BlockMove final : public UAIGameplayTagLogicBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_BlockMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_BlockMove")
+	}
+	static class UAIGameplayTagLogic_BlockMove* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogic_BlockMove>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogic_BlockMove;
 
 // Class MarvelAI.AIGameplayTagLogic_ChangeHeroType
 // 0x0020 (0x0058 - 0x0038)
@@ -2461,18 +2074,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameplayTagLogic_ChangeHeroType">();
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_ChangeHeroType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_ChangeHeroType")
 	}
 	static class UAIGameplayTagLogic_ChangeHeroType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameplayTagLogic_ChangeHeroType>();
 	}
 };
-static_assert(alignof(UAIGameplayTagLogic_ChangeHeroType) == 0x000008, "Wrong alignment on UAIGameplayTagLogic_ChangeHeroType");
-static_assert(sizeof(UAIGameplayTagLogic_ChangeHeroType) == 0x000058, "Wrong size on UAIGameplayTagLogic_ChangeHeroType");
-static_assert(offsetof(UAIGameplayTagLogic_ChangeHeroType, OriginTypeTag) == 0x000038, "Member 'UAIGameplayTagLogic_ChangeHeroType::OriginTypeTag' has a wrong offset!");
-static_assert(offsetof(UAIGameplayTagLogic_ChangeHeroType, ChangeTypeTag) == 0x000044, "Member 'UAIGameplayTagLogic_ChangeHeroType::ChangeTypeTag' has a wrong offset!");
-static_assert(offsetof(UAIGameplayTagLogic_ChangeHeroType, ChangeReason) == 0x000050, "Member 'UAIGameplayTagLogic_ChangeHeroType::ChangeReason' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGameplayTagLogic_ChangeHeroType;
+
+// Class MarvelAI.AIGameplayTagLogic_InitAIInfoExtraUsagesTagMap
+// 0x0078 (0x00B0 - 0x0038)
+class UAIGameplayTagLogic_InitAIInfoExtraUsagesTagMap final : public UAIGameplayTagLogicBase
+{
+public:
+	struct FGameplayTagContainer                  SourceTagContainer;                                // 0x0038(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	struct FGameplayTag                           MappingTag;                                        // 0x00A0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_InitAIInfoExtraUsagesTagMap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_InitAIInfoExtraUsagesTagMap")
+	}
+	static class UAIGameplayTagLogic_InitAIInfoExtraUsagesTagMap* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogic_InitAIInfoExtraUsagesTagMap>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogic_InitAIInfoExtraUsagesTagMap;
 
 // Class MarvelAI.AIGameplayTagLogic_OverrideJumpAbility
 // 0x0008 (0x0040 - 0x0038)
@@ -2485,16 +2123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameplayTagLogic_OverrideJumpAbility">();
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_OverrideJumpAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_OverrideJumpAbility")
 	}
 	static class UAIGameplayTagLogic_OverrideJumpAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameplayTagLogic_OverrideJumpAbility>();
 	}
 };
-static_assert(alignof(UAIGameplayTagLogic_OverrideJumpAbility) == 0x000008, "Wrong alignment on UAIGameplayTagLogic_OverrideJumpAbility");
-static_assert(sizeof(UAIGameplayTagLogic_OverrideJumpAbility) == 0x000040, "Wrong size on UAIGameplayTagLogic_OverrideJumpAbility");
-static_assert(offsetof(UAIGameplayTagLogic_OverrideJumpAbility, OverrideJumpAbilityID) == 0x000038, "Member 'UAIGameplayTagLogic_OverrideJumpAbility::OverrideJumpAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGameplayTagLogic_OverrideJumpAbility;
 
 // Class MarvelAI.AIGameplayTagLogic_TriggerAbility
 // 0x0008 (0x0040 - 0x0038)
@@ -2508,17 +2148,92 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGameplayTagLogic_TriggerAbility">();
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_TriggerAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_TriggerAbility")
 	}
 	static class UAIGameplayTagLogic_TriggerAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIGameplayTagLogic_TriggerAbility>();
 	}
 };
-static_assert(alignof(UAIGameplayTagLogic_TriggerAbility) == 0x000008, "Wrong alignment on UAIGameplayTagLogic_TriggerAbility");
-static_assert(sizeof(UAIGameplayTagLogic_TriggerAbility) == 0x000040, "Wrong size on UAIGameplayTagLogic_TriggerAbility");
-static_assert(offsetof(UAIGameplayTagLogic_TriggerAbility, AbilityID) == 0x000038, "Member 'UAIGameplayTagLogic_TriggerAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(UAIGameplayTagLogic_TriggerAbility, Input) == 0x00003C, "Member 'UAIGameplayTagLogic_TriggerAbility::Input' has a wrong offset!");
+DUMPER7_ASSERTS_UAIGameplayTagLogic_TriggerAbility;
+
+// Class MarvelAI.AIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage
+// 0x0078 (0x00B0 - 0x0038)
+class UAIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage final : public UAIGameplayTagLogicBase
+{
+public:
+	TArray<int32>                                 AbilityIDs;                                        // 0x0038(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  TagContainer;                                      // 0x0048(0x0068)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage")
+	}
+	static class UAIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogic_UpdateDeadPoolExtraAbilityUsage;
+
+// Class MarvelAI.AIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages
+// 0x00E8 (0x0120 - 0x0038)
+class UAIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages final : public UAIGameplayTagLogicBase
+{
+public:
+	struct FGameplayTagContainer                  MainAttackTagContainer;                            // 0x0038(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  NoEnemyTagContainer;                               // 0x00A0(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	struct FGameplayTag                           RogueMainAttackTag;                                // 0x0108(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FGameplayTag                           RogueNoEnemyTag;                                   // 0x0114(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages")
+	}
+	static class UAIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogic_UpdateRogueAdditionalAbilityUsages;
+
+// Class MarvelAI.AIGameplayTagLogic_UpdateSightRadius
+// 0x0008 (0x0040 - 0x0038)
+class UAIGameplayTagLogic_UpdateSightRadius final : public UAIGameplayTagLogicBase
+{
+public:
+	float                                         NewRadius;                                         // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIGameplayTagLogic_UpdateSightRadius")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGameplayTagLogic_UpdateSightRadius")
+	}
+	static class UAIGameplayTagLogic_UpdateSightRadius* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIGameplayTagLogic_UpdateSightRadius>();
+	}
+};
+DUMPER7_ASSERTS_UAIGameplayTagLogic_UpdateSightRadius;
 
 // Class MarvelAI.AIGroupInfoBase
 // 0x0060 (0x0740 - 0x06E0)
@@ -2530,16 +2245,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIGroupInfoBase">();
+		STATIC_CLASS_IMPL("AIGroupInfoBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGroupInfoBase")
 	}
 	static class AAIGroupInfoBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAIGroupInfoBase>();
 	}
 };
-static_assert(alignof(AAIGroupInfoBase) == 0x000010, "Wrong alignment on AAIGroupInfoBase");
-static_assert(sizeof(AAIGroupInfoBase) == 0x000740, "Wrong size on AAIGroupInfoBase");
-static_assert(offsetof(AAIGroupInfoBase, IgnoreHeroTag) == 0x0006D8, "Member 'AAIGroupInfoBase::IgnoreHeroTag' has a wrong offset!");
+DUMPER7_ASSERTS_AAIGroupInfoBase;
+
+// Class MarvelAI.AIHeroCommonConfig
+// 0x0010 (0x0048 - 0x0038)
+class UAIHeroCommonConfig final : public UPrimaryDataAsset
+{
+public:
+	TArray<struct FAIHeroTagLogicConfig>          GameplayTagLogics;                                 // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIHeroCommonConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIHeroCommonConfig")
+	}
+	static class UAIHeroCommonConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIHeroCommonConfig>();
+	}
+};
+DUMPER7_ASSERTS_UAIHeroCommonConfig;
 
 // Class MarvelAI.AIHeroCustomComponent
 // 0x0078 (0x0180 - 0x0108)
@@ -2557,18 +2297,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIHeroCustomComponent">();
+		STATIC_CLASS_IMPL("AIHeroCustomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIHeroCustomComponent")
 	}
 	static class UAIHeroCustomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIHeroCustomComponent>();
 	}
 };
-static_assert(alignof(UAIHeroCustomComponent) == 0x000008, "Wrong alignment on UAIHeroCustomComponent");
-static_assert(sizeof(UAIHeroCustomComponent) == 0x000180, "Wrong size on UAIHeroCustomComponent");
-static_assert(offsetof(UAIHeroCustomComponent, CacheAIOwner) == 0x000108, "Member 'UAIHeroCustomComponent::CacheAIOwner' has a wrong offset!");
-static_assert(offsetof(UAIHeroCustomComponent, CacheOwnerASC) == 0x000110, "Member 'UAIHeroCustomComponent::CacheOwnerASC' has a wrong offset!");
-static_assert(offsetof(UAIHeroCustomComponent, CacheBindingTagLogics) == 0x000118, "Member 'UAIHeroCustomComponent::CacheBindingTagLogics' has a wrong offset!");
+DUMPER7_ASSERTS_UAIHeroCustomComponent;
+
+// Class MarvelAI.AIHitRateModify
+// 0x0028 (0x0058 - 0x0030)
+class UAIHitRateModify : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bTagMatch;                                         // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           MatchTag;                                          // 0x0044(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x8];                                       // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	float CalculateHitRateModifyAI(class AMarvelBaseCharacter* Source, class AActor* Target) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIHitRateModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIHitRateModify")
+	}
+	static class UAIHitRateModify* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIHitRateModify>();
+	}
+};
+DUMPER7_ASSERTS_UAIHitRateModify;
 
 // Class MarvelAI.DistanceModify
 // 0x0008 (0x0060 - 0x0058)
@@ -2580,16 +2350,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DistanceModify">();
+		STATIC_CLASS_IMPL("DistanceModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DistanceModify")
 	}
 	static class UDistanceModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDistanceModify>();
 	}
 };
-static_assert(alignof(UDistanceModify) == 0x000008, "Wrong alignment on UDistanceModify");
-static_assert(sizeof(UDistanceModify) == 0x000060, "Wrong size on UDistanceModify");
-static_assert(offsetof(UDistanceModify, HitRateToDistance) == 0x000058, "Member 'UDistanceModify::HitRateToDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UDistanceModify;
 
 // Class MarvelAI.ShapeModify
 // 0x0010 (0x0068 - 0x0058)
@@ -2603,17 +2375,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ShapeModify">();
+		STATIC_CLASS_IMPL("ShapeModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShapeModify")
 	}
 	static class UShapeModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShapeModify>();
 	}
 };
-static_assert(alignof(UShapeModify) == 0x000008, "Wrong alignment on UShapeModify");
-static_assert(sizeof(UShapeModify) == 0x000068, "Wrong size on UShapeModify");
-static_assert(offsetof(UShapeModify, MinDistance) == 0x000058, "Member 'UShapeModify::MinDistance' has a wrong offset!");
-static_assert(offsetof(UShapeModify, HitRateForShape) == 0x000060, "Member 'UShapeModify::HitRateForShape' has a wrong offset!");
+DUMPER7_ASSERTS_UShapeModify;
 
 // Class MarvelAI.FlyVelocityModify
 // 0x0010 (0x0068 - 0x0058)
@@ -2627,17 +2400,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FlyVelocityModify">();
+		STATIC_CLASS_IMPL("FlyVelocityModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlyVelocityModify")
 	}
 	static class UFlyVelocityModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlyVelocityModify>();
 	}
 };
-static_assert(alignof(UFlyVelocityModify) == 0x000008, "Wrong alignment on UFlyVelocityModify");
-static_assert(sizeof(UFlyVelocityModify) == 0x000068, "Wrong size on UFlyVelocityModify");
-static_assert(offsetof(UFlyVelocityModify, MinHeight) == 0x000058, "Member 'UFlyVelocityModify::MinHeight' has a wrong offset!");
-static_assert(offsetof(UFlyVelocityModify, HitRateForFlyVelocity) == 0x000060, "Member 'UFlyVelocityModify::HitRateForFlyVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_UFlyVelocityModify;
+
+// Class MarvelAI.ObstructedModify
+// 0x0008 (0x0060 - 0x0058)
+class UObstructedModify final : public UAIHitRateModify
+{
+public:
+	float                                         ModifyHitRate;                                     // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ObstructedModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ObstructedModify")
+	}
+	static class UObstructedModify* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UObstructedModify>();
+	}
+};
+DUMPER7_ASSERTS_UObstructedModify;
 
 // Class MarvelAI.LowHealthModify
 // 0x0008 (0x0060 - 0x0058)
@@ -2649,38 +2447,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LowHealthModify">();
+		STATIC_CLASS_IMPL("LowHealthModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LowHealthModify")
 	}
 	static class ULowHealthModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULowHealthModify>();
 	}
 };
-static_assert(alignof(ULowHealthModify) == 0x000008, "Wrong alignment on ULowHealthModify");
-static_assert(sizeof(ULowHealthModify) == 0x000060, "Wrong size on ULowHealthModify");
-static_assert(offsetof(ULowHealthModify, HitRateForLowHealth) == 0x000058, "Member 'ULowHealthModify::HitRateForLowHealth' has a wrong offset!");
+DUMPER7_ASSERTS_ULowHealthModify;
 
 // Class MarvelAI.BehindShieldModify
-// 0x1668 (0x16C0 - 0x0058)
+// 0x19B8 (0x1A10 - 0x0058)
 class UBehindShieldModify final : public UAIHitRateModify
 {
 public:
 	float                                         ModifyHitRate;                                     // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C[0x1664];                                    // 0x005C(0x1664)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x19B4];                                    // 0x005C(0x19B4)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BehindShieldModify">();
+		STATIC_CLASS_IMPL("BehindShieldModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BehindShieldModify")
 	}
 	static class UBehindShieldModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBehindShieldModify>();
 	}
 };
-static_assert(alignof(UBehindShieldModify) == 0x000008, "Wrong alignment on UBehindShieldModify");
-static_assert(sizeof(UBehindShieldModify) == 0x0016C0, "Wrong size on UBehindShieldModify");
-static_assert(offsetof(UBehindShieldModify, ModifyHitRate) == 0x000058, "Member 'UBehindShieldModify::ModifyHitRate' has a wrong offset!");
+DUMPER7_ASSERTS_UBehindShieldModify;
 
 // Class MarvelAI.DifficultyModify
 // 0x0050 (0x00A8 - 0x0058)
@@ -2692,16 +2494,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DifficultyModify">();
+		STATIC_CLASS_IMPL("DifficultyModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DifficultyModify")
 	}
 	static class UDifficultyModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDifficultyModify>();
 	}
 };
-static_assert(alignof(UDifficultyModify) == 0x000008, "Wrong alignment on UDifficultyModify");
-static_assert(sizeof(UDifficultyModify) == 0x0000A8, "Wrong size on UDifficultyModify");
-static_assert(offsetof(UDifficultyModify, DifficultyToHitRateModify) == 0x000058, "Member 'UDifficultyModify::DifficultyToHitRateModify' has a wrong offset!");
+DUMPER7_ASSERTS_UDifficultyModify;
 
 // Class MarvelAI.LowHealthMarkModify
 // 0x0050 (0x00A8 - 0x0058)
@@ -2713,16 +2517,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LowHealthMarkModify">();
+		STATIC_CLASS_IMPL("LowHealthMarkModify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LowHealthMarkModify")
 	}
 	static class ULowHealthMarkModify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULowHealthMarkModify>();
 	}
 };
-static_assert(alignof(ULowHealthMarkModify) == 0x000008, "Wrong alignment on ULowHealthMarkModify");
-static_assert(sizeof(ULowHealthMarkModify) == 0x0000A8, "Wrong size on ULowHealthMarkModify");
-static_assert(offsetof(ULowHealthMarkModify, DifficultyToHitRateModify) == 0x000058, "Member 'ULowHealthMarkModify::DifficultyToHitRateModify' has a wrong offset!");
+DUMPER7_ASSERTS_ULowHealthMarkModify;
 
 // Class MarvelAI.TargetVelocity
 // 0x0008 (0x0060 - 0x0058)
@@ -2734,16 +2540,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetVelocity">();
+		STATIC_CLASS_IMPL("TargetVelocity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetVelocity")
 	}
 	static class UTargetVelocity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetVelocity>();
 	}
 };
-static_assert(alignof(UTargetVelocity) == 0x000008, "Wrong alignment on UTargetVelocity");
-static_assert(sizeof(UTargetVelocity) == 0x000060, "Wrong size on UTargetVelocity");
-static_assert(offsetof(UTargetVelocity, HitRateForSpeed) == 0x000058, "Member 'UTargetVelocity::HitRateForSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UTargetVelocity;
 
 // Class MarvelAI.AILabConfigAsset
 // 0x0068 (0x00A0 - 0x0038)
@@ -2762,35 +2570,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AILabConfigAsset">();
+		STATIC_CLASS_IMPL("AILabConfigAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AILabConfigAsset")
 	}
 	static class UAILabConfigAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAILabConfigAsset>();
 	}
 };
-static_assert(alignof(UAILabConfigAsset) == 0x000008, "Wrong alignment on UAILabConfigAsset");
-static_assert(sizeof(UAILabConfigAsset) == 0x0000A0, "Wrong size on UAILabConfigAsset");
-static_assert(offsetof(UAILabConfigAsset, bEnableAILab) == 0x000038, "Member 'UAILabConfigAsset::bEnableAILab' has a wrong offset!");
-static_assert(offsetof(UAILabConfigAsset, bEnableLog) == 0x000039, "Member 'UAILabConfigAsset::bEnableLog' has a wrong offset!");
-static_assert(offsetof(UAILabConfigAsset, GameOverRequestDelay) == 0x00003C, "Member 'UAILabConfigAsset::GameOverRequestDelay' has a wrong offset!");
-static_assert(offsetof(UAILabConfigAsset, RequestInterval) == 0x000040, "Member 'UAILabConfigAsset::RequestInterval' has a wrong offset!");
-static_assert(offsetof(UAILabConfigAsset, LowDataUpdateInterval) == 0x000048, "Member 'UAILabConfigAsset::LowDataUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UAILabConfigAsset, AbilityWithoutCD) == 0x000050, "Member 'UAILabConfigAsset::AbilityWithoutCD' has a wrong offset!");
+DUMPER7_ASSERTS_UAILabConfigAsset;
 
 // Class MarvelAI.AILabSubSystem
-// 0x0278 (0x02C0 - 0x0048)
+// 0x0278 (0x02C8 - 0x0050)
 class UAILabSubSystem : public UMarvelAIWorldSubsystem
 {
 public:
-	uint8                                         Pad_48[0x4];                                       // 0x0048(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RedDifficulty;                                     // 0x004C(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         BlueDifficulty;                                    // 0x0050(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAbilityTargetMgmtSys*                  AbilityTargetMgmt;                                 // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMarvelGameInstance*                    MarvelGameInstance;                                // 0x0060(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AMarvelGameState*                       MarvelGameState;                                   // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_70[0x250];                                     // 0x0070(0x0250)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x4];                                       // 0x0050(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RedDifficulty;                                     // 0x0054(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         BlueDifficulty;                                    // 0x0058(0x0004)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAbilityTargetMgmtSys*                  AbilityTargetMgmt;                                 // 0x0060(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMarvelGameInstance*                    MarvelGameInstance;                                // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AMarvelGameState*                       MarvelGameState;                                   // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_78[0x250];                                     // 0x0078(0x0250)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAILabSubSystem* GetAILabSubSystem(class UObject* WorldContextObject);
@@ -2814,20 +2619,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AILabSubSystem">();
+		STATIC_CLASS_IMPL("AILabSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AILabSubSystem")
 	}
 	static class UAILabSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAILabSubSystem>();
 	}
 };
-static_assert(alignof(UAILabSubSystem) == 0x000008, "Wrong alignment on UAILabSubSystem");
-static_assert(sizeof(UAILabSubSystem) == 0x0002C0, "Wrong size on UAILabSubSystem");
-static_assert(offsetof(UAILabSubSystem, RedDifficulty) == 0x00004C, "Member 'UAILabSubSystem::RedDifficulty' has a wrong offset!");
-static_assert(offsetof(UAILabSubSystem, BlueDifficulty) == 0x000050, "Member 'UAILabSubSystem::BlueDifficulty' has a wrong offset!");
-static_assert(offsetof(UAILabSubSystem, AbilityTargetMgmt) == 0x000058, "Member 'UAILabSubSystem::AbilityTargetMgmt' has a wrong offset!");
-static_assert(offsetof(UAILabSubSystem, MarvelGameInstance) == 0x000060, "Member 'UAILabSubSystem::MarvelGameInstance' has a wrong offset!");
-static_assert(offsetof(UAILabSubSystem, MarvelGameState) == 0x000068, "Member 'UAILabSubSystem::MarvelGameState' has a wrong offset!");
+DUMPER7_ASSERTS_UAILabSubSystem;
 
 // Class MarvelAI.AIMementoComponent
 // 0x0350 (0x0458 - 0x0108)
@@ -2845,16 +2648,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIMementoComponent">();
+		STATIC_CLASS_IMPL("AIMementoComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMementoComponent")
 	}
 	static class UAIMementoComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMementoComponent>();
 	}
 };
-static_assert(alignof(UAIMementoComponent) == 0x000008, "Wrong alignment on UAIMementoComponent");
-static_assert(sizeof(UAIMementoComponent) == 0x000458, "Wrong size on UAIMementoComponent");
-static_assert(offsetof(UAIMementoComponent, AIImpressionData) == 0x000228, "Member 'UAIMementoComponent::AIImpressionData' has a wrong offset!");
+DUMPER7_ASSERTS_UAIMementoComponent;
 
 // Class MarvelAI.AIPathSelectComponent
 // 0x00A0 (0x01A8 - 0x0108)
@@ -2872,17 +2677,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIPathSelectComponent">();
+		STATIC_CLASS_IMPL("AIPathSelectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIPathSelectComponent")
 	}
 	static class UAIPathSelectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIPathSelectComponent>();
 	}
 };
-static_assert(alignof(UAIPathSelectComponent) == 0x000008, "Wrong alignment on UAIPathSelectComponent");
-static_assert(sizeof(UAIPathSelectComponent) == 0x0001A8, "Wrong size on UAIPathSelectComponent");
-static_assert(offsetof(UAIPathSelectComponent, TargetToPathStart) == 0x000108, "Member 'UAIPathSelectComponent::TargetToPathStart' has a wrong offset!");
-static_assert(offsetof(UAIPathSelectComponent, TargetToPathStart_Soft) == 0x000158, "Member 'UAIPathSelectComponent::TargetToPathStart_Soft' has a wrong offset!");
+DUMPER7_ASSERTS_UAIPathSelectComponent;
+
+// Class MarvelAI.AISceneConfigActorBase
+// 0x0000 (0x0700 - 0x0700)
+class AAISceneConfigActorBase : public ANavigationObjectBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AISceneConfigActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISceneConfigActorBase")
+	}
+	static class AAISceneConfigActorBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AAISceneConfigActorBase>();
+	}
+};
+DUMPER7_ASSERTS_AAISceneConfigActorBase;
 
 // Class MarvelAI.AIScoreModuleCondition
 // 0x0000 (0x0030 - 0x0030)
@@ -2891,15 +2717,38 @@ class UAIScoreModuleCondition : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModuleCondition">();
+		STATIC_CLASS_IMPL("AIScoreModuleCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModuleCondition")
 	}
 	static class UAIScoreModuleCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModuleCondition>();
 	}
 };
-static_assert(alignof(UAIScoreModuleCondition) == 0x000008, "Wrong alignment on UAIScoreModuleCondition");
-static_assert(sizeof(UAIScoreModuleCondition) == 0x000030, "Wrong size on UAIScoreModuleCondition");
+DUMPER7_ASSERTS_UAIScoreModuleCondition;
+
+// Class MarvelAI.EnvQueryTest_IsShelterBroken
+// 0x0000 (0x0280 - 0x0280)
+class UEnvQueryTest_IsShelterBroken final : public UEnvQueryTest
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_IsShelterBroken")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_IsShelterBroken")
+	}
+	static class UEnvQueryTest_IsShelterBroken* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_IsShelterBroken>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_IsShelterBroken;
 
 // Class MarvelAI.AIScoreModuleCondition_Distance
 // 0x0008 (0x0038 - 0x0030)
@@ -2911,16 +2760,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModuleCondition_Distance">();
+		STATIC_CLASS_IMPL("AIScoreModuleCondition_Distance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModuleCondition_Distance")
 	}
 	static class UAIScoreModuleCondition_Distance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModuleCondition_Distance>();
 	}
 };
-static_assert(alignof(UAIScoreModuleCondition_Distance) == 0x000008, "Wrong alignment on UAIScoreModuleCondition_Distance");
-static_assert(sizeof(UAIScoreModuleCondition_Distance) == 0x000038, "Wrong size on UAIScoreModuleCondition_Distance");
-static_assert(offsetof(UAIScoreModuleCondition_Distance, DistanceRange) == 0x000030, "Member 'UAIScoreModuleCondition_Distance::DistanceRange' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModuleCondition_Distance;
 
 // Class MarvelAI.AIScoreModule
 // 0x0010 (0x0040 - 0x0030)
@@ -2932,16 +2783,65 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule">();
+		STATIC_CLASS_IMPL("AIScoreModule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule")
 	}
 	static class UAIScoreModule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule>();
 	}
 };
-static_assert(alignof(UAIScoreModule) == 0x000008, "Wrong alignment on UAIScoreModule");
-static_assert(sizeof(UAIScoreModule) == 0x000040, "Wrong size on UAIScoreModule");
-static_assert(offsetof(UAIScoreModule, DisplayName) == 0x000030, "Member 'UAIScoreModule::DisplayName' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule;
+
+// Class MarvelAI.EnvQueryGenerator_Sphere
+// 0x0108 (0x0160 - 0x0058)
+class UEnvQueryGenerator_Sphere : public UEnvQueryGenerator
+{
+public:
+	TSubclassOf<class UEnvQueryContext>           GenerateAround;                                    // 0x0058(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              DistanceInSameDirection;                           // 0x0060(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              OuterRange;                                        // 0x00A0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              InnerRange;                                        // 0x00E0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              AngleStep;                                         // 0x0120(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryGenerator_Sphere")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_Sphere")
+	}
+	static class UEnvQueryGenerator_Sphere* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_Sphere>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryGenerator_Sphere;
+
+// Class MarvelAI.EnvQueryGenerator_SVONSphere
+// 0x0000 (0x0160 - 0x0160)
+class UEnvQueryGenerator_SVONSphere final : public UEnvQueryGenerator_Sphere
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryGenerator_SVONSphere")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_SVONSphere")
+	}
+	static class UEnvQueryGenerator_SVONSphere* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_SVONSphere>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryGenerator_SVONSphere;
 
 // Class MarvelAI.AIScoreModule_AILab
 // 0x0008 (0x0048 - 0x0040)
@@ -2954,16 +2854,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_AILab">();
+		STATIC_CLASS_IMPL("AIScoreModule_AILab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_AILab")
 	}
 	static class UAIScoreModule_AILab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_AILab>();
 	}
 };
-static_assert(alignof(UAIScoreModule_AILab) == 0x000008, "Wrong alignment on UAIScoreModule_AILab");
-static_assert(sizeof(UAIScoreModule_AILab) == 0x000048, "Wrong size on UAIScoreModule_AILab");
-static_assert(offsetof(UAIScoreModule_AILab, AILabScore) == 0x000040, "Member 'UAIScoreModule_AILab::AILabScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_AILab;
 
 // Class MarvelAI.AIScoreModule_CurTarget
 // 0x0018 (0x0058 - 0x0040)
@@ -2978,18 +2880,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_CurTarget">();
+		STATIC_CLASS_IMPL("AIScoreModule_CurTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_CurTarget")
 	}
 	static class UAIScoreModule_CurTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_CurTarget>();
 	}
 };
-static_assert(alignof(UAIScoreModule_CurTarget) == 0x000008, "Wrong alignment on UAIScoreModule_CurTarget");
-static_assert(sizeof(UAIScoreModule_CurTarget) == 0x000058, "Wrong size on UAIScoreModule_CurTarget");
-static_assert(offsetof(UAIScoreModule_CurTarget, TargetBBKeyName) == 0x000040, "Member 'UAIScoreModule_CurTarget::TargetBBKeyName' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_CurTarget, CurTargetScore) == 0x00004C, "Member 'UAIScoreModule_CurTarget::CurTargetScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_CurTarget, NotCurTargetScore) == 0x000050, "Member 'UAIScoreModule_CurTarget::NotCurTargetScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_CurTarget;
+
+// Class MarvelAI.EnvQueryTest_RelativeGroundHeight
+// 0x0060 (0x02E0 - 0x0280)
+class UEnvQueryTest_RelativeGroundHeight : public UEnvQueryTest
+{
+public:
+	class UCurveFloat*                            DamageScoreCurve;                                  // 0x0280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMap<int32, class UCurveFloat*>               HeroIDToCurve;                                     // 0x0288(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	bool                                          bConsiderDestructible;                             // 0x02D8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bConsiderSceneSummoned;                            // 0x02D9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2DA[0x2];                                      // 0x02DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxGroundSlope;                                    // 0x02DC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_RelativeGroundHeight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_RelativeGroundHeight")
+	}
+	static class UEnvQueryTest_RelativeGroundHeight* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_RelativeGroundHeight>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_RelativeGroundHeight;
 
 // Class MarvelAI.AIScoreModule_Damage
 // 0x0008 (0x0048 - 0x0040)
@@ -3001,16 +2931,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Damage">();
+		STATIC_CLASS_IMPL("AIScoreModule_Damage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Damage")
 	}
 	static class UAIScoreModule_Damage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Damage>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Damage) == 0x000008, "Wrong alignment on UAIScoreModule_Damage");
-static_assert(sizeof(UAIScoreModule_Damage) == 0x000048, "Wrong size on UAIScoreModule_Damage");
-static_assert(offsetof(UAIScoreModule_Damage, DamageScoreCurve) == 0x000040, "Member 'UAIScoreModule_Damage::DamageScoreCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Damage;
 
 // Class MarvelAI.AIScoreModule_Distance
 // 0x0020 (0x0060 - 0x0040)
@@ -3025,18 +2957,62 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Distance">();
+		STATIC_CLASS_IMPL("AIScoreModule_Distance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Distance")
 	}
 	static class UAIScoreModule_Distance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Distance>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Distance) == 0x000008, "Wrong alignment on UAIScoreModule_Distance");
-static_assert(sizeof(UAIScoreModule_Distance) == 0x000060, "Wrong size on UAIScoreModule_Distance");
-static_assert(offsetof(UAIScoreModule_Distance, DistanceCurve) == 0x000040, "Member 'UAIScoreModule_Distance::DistanceCurve' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Distance, TargetType) == 0x000048, "Member 'UAIScoreModule_Distance::TargetType' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Distance, TargetBBKey) == 0x000050, "Member 'UAIScoreModule_Distance::TargetBBKey' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Distance;
+
+// Class MarvelAI.MarvelNavArea
+// 0x0008 (0x0058 - 0x0050)
+class UMarvelNavArea : public UNavArea
+{
+public:
+	bool                                          bSupportCrossTile;                                 // 0x0050(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea")
+	}
+	static class UMarvelNavArea* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea;
+
+// Class MarvelAI.MarvelNavArea_NormalJump
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_NormalJump final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_NormalJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_NormalJump")
+	}
+	static class UMarvelNavArea_NormalJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_NormalJump>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_NormalJump;
 
 // Class MarvelAI.AIScoreModule_FromPortal
 // 0x0008 (0x0048 - 0x0040)
@@ -3049,17 +3025,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_FromPortal">();
+		STATIC_CLASS_IMPL("AIScoreModule_FromPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_FromPortal")
 	}
 	static class UAIScoreModule_FromPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_FromPortal>();
 	}
 };
-static_assert(alignof(UAIScoreModule_FromPortal) == 0x000008, "Wrong alignment on UAIScoreModule_FromPortal");
-static_assert(sizeof(UAIScoreModule_FromPortal) == 0x000048, "Wrong size on UAIScoreModule_FromPortal");
-static_assert(offsetof(UAIScoreModule_FromPortal, FromPortalScore) == 0x000040, "Member 'UAIScoreModule_FromPortal::FromPortalScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_FromPortal, OtherScore) == 0x000044, "Member 'UAIScoreModule_FromPortal::OtherScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_FromPortal;
 
 // Class MarvelAI.AIScoreModule_Frontier
 // 0x0010 (0x0050 - 0x0040)
@@ -3074,18 +3051,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Frontier">();
+		STATIC_CLASS_IMPL("AIScoreModule_Frontier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Frontier")
 	}
 	static class UAIScoreModule_Frontier* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Frontier>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Frontier) == 0x000008, "Wrong alignment on UAIScoreModule_Frontier");
-static_assert(sizeof(UAIScoreModule_Frontier) == 0x000050, "Wrong size on UAIScoreModule_Frontier");
-static_assert(offsetof(UAIScoreModule_Frontier, FrontierRadius) == 0x000040, "Member 'UAIScoreModule_Frontier::FrontierRadius' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Frontier, IntFrontierScore) == 0x000044, "Member 'UAIScoreModule_Frontier::IntFrontierScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Frontier, OutFrontierScore) == 0x000048, "Member 'UAIScoreModule_Frontier::OutFrontierScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Frontier;
+
+// Class MarvelAI.EnvQueryTest_SVONReachable
+// 0x0008 (0x0288 - 0x0280)
+class UEnvQueryTest_SVONReachable final : public UEnvQueryTest
+{
+public:
+	int32                                         NumIteration;                                      // 0x0280(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_SVONReachable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_SVONReachable")
+	}
+	static class UEnvQueryTest_SVONReachable* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_SVONReachable>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_SVONReachable;
 
 // Class MarvelAI.AIScoreModule_HasTag
 // 0x0018 (0x0058 - 0x0040)
@@ -3100,18 +3101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_HasTag">();
+		STATIC_CLASS_IMPL("AIScoreModule_HasTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_HasTag")
 	}
 	static class UAIScoreModule_HasTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_HasTag>();
 	}
 };
-static_assert(alignof(UAIScoreModule_HasTag) == 0x000008, "Wrong alignment on UAIScoreModule_HasTag");
-static_assert(sizeof(UAIScoreModule_HasTag) == 0x000058, "Wrong size on UAIScoreModule_HasTag");
-static_assert(offsetof(UAIScoreModule_HasTag, TagsToCheck) == 0x000040, "Member 'UAIScoreModule_HasTag::TagsToCheck' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_HasTag, HasTagScore) == 0x00004C, "Member 'UAIScoreModule_HasTag::HasTagScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_HasTag, NoTagScore) == 0x000050, "Member 'UAIScoreModule_HasTag::NoTagScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_HasTag;
 
 // Class MarvelAI.AIScoreModule_Health
 // 0x0008 (0x0048 - 0x0040)
@@ -3123,16 +3124,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Health">();
+		STATIC_CLASS_IMPL("AIScoreModule_Health")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Health")
 	}
 	static class UAIScoreModule_Health* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Health>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Health) == 0x000008, "Wrong alignment on UAIScoreModule_Health");
-static_assert(sizeof(UAIScoreModule_Health) == 0x000048, "Wrong size on UAIScoreModule_Health");
-static_assert(offsetof(UAIScoreModule_Health, HealthProportionCurve) == 0x000040, "Member 'UAIScoreModule_Health::HealthProportionCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Health;
+
+// Class MarvelAI.EnvQueryTest_EvadeTarget
+// 0x1B60 (0x1DE0 - 0x0280)
+class UEnvQueryTest_EvadeTarget final : public UEnvQueryTest
+{
+public:
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0280(0x19B0)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<struct FAITagMatchParameter>           TagMatchParameters;                                // 0x1C30(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FAbilityCheckConfig                    Asset;                                             // 0x1C40(0x0198)(Edit, AdvancedDisplay, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DD8[0x8];                                     // 0x1DD8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_EvadeTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_EvadeTarget")
+	}
+	static class UEnvQueryTest_EvadeTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_EvadeTarget>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_EvadeTarget;
 
 // Class MarvelAI.AIScoreModule_IsPlayer
 // 0x0008 (0x0048 - 0x0040)
@@ -3145,17 +3174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_IsPlayer">();
+		STATIC_CLASS_IMPL("AIScoreModule_IsPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_IsPlayer")
 	}
 	static class UAIScoreModule_IsPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_IsPlayer>();
 	}
 };
-static_assert(alignof(UAIScoreModule_IsPlayer) == 0x000008, "Wrong alignment on UAIScoreModule_IsPlayer");
-static_assert(sizeof(UAIScoreModule_IsPlayer) == 0x000048, "Wrong size on UAIScoreModule_IsPlayer");
-static_assert(offsetof(UAIScoreModule_IsPlayer, PlayerScore) == 0x000040, "Member 'UAIScoreModule_IsPlayer::PlayerScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_IsPlayer, AIScore) == 0x000044, "Member 'UAIScoreModule_IsPlayer::AIScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_IsPlayer;
 
 // Class MarvelAI.AIScoreModule_MaxHP
 // 0x0008 (0x0048 - 0x0040)
@@ -3167,16 +3197,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_MaxHP">();
+		STATIC_CLASS_IMPL("AIScoreModule_MaxHP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_MaxHP")
 	}
 	static class UAIScoreModule_MaxHP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_MaxHP>();
 	}
 };
-static_assert(alignof(UAIScoreModule_MaxHP) == 0x000008, "Wrong alignment on UAIScoreModule_MaxHP");
-static_assert(sizeof(UAIScoreModule_MaxHP) == 0x000048, "Wrong size on UAIScoreModule_MaxHP");
-static_assert(offsetof(UAIScoreModule_MaxHP, MaxHPCurve) == 0x000040, "Member 'UAIScoreModule_MaxHP::MaxHPCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_MaxHP;
+
+// Class MarvelAI.AIAbilityActivationExtraConfig
+// 0x0010 (0x0040 - 0x0030)
+class UAIAbilityActivationExtraConfig : public UObject
+{
+public:
+	class FString                                 ConfigName;                                        // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	class FString GetConfigName();
+	void InitExtraConfig(class UObject* AIOwner);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIAbilityActivationExtraConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivationExtraConfig")
+	}
+	static class UAIAbilityActivationExtraConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityActivationExtraConfig>();
+	}
+};
+DUMPER7_ASSERTS_UAIAbilityActivationExtraConfig;
 
 // Class MarvelAI.AIScoreModule_PositionProgressControl
 // 0x0008 (0x0048 - 0x0040)
@@ -3188,16 +3247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_PositionProgressControl">();
+		STATIC_CLASS_IMPL("AIScoreModule_PositionProgressControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_PositionProgressControl")
 	}
 	static class UAIScoreModule_PositionProgressControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_PositionProgressControl>();
 	}
 };
-static_assert(alignof(UAIScoreModule_PositionProgressControl) == 0x000008, "Wrong alignment on UAIScoreModule_PositionProgressControl");
-static_assert(sizeof(UAIScoreModule_PositionProgressControl) == 0x000048, "Wrong size on UAIScoreModule_PositionProgressControl");
-static_assert(offsetof(UAIScoreModule_PositionProgressControl, ProgressCurve) == 0x000040, "Member 'UAIScoreModule_PositionProgressControl::ProgressCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_PositionProgressControl;
 
 // Class MarvelAI.AIScoreModule_Random
 // 0x0008 (0x0048 - 0x0040)
@@ -3209,16 +3270,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Random">();
+		STATIC_CLASS_IMPL("AIScoreModule_Random")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Random")
 	}
 	static class UAIScoreModule_Random* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Random>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Random) == 0x000008, "Wrong alignment on UAIScoreModule_Random");
-static_assert(sizeof(UAIScoreModule_Random) == 0x000048, "Wrong size on UAIScoreModule_Random");
-static_assert(offsetof(UAIScoreModule_Random, RandomRange) == 0x000040, "Member 'UAIScoreModule_Random::RandomRange' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Random;
+
+// Class MarvelAI.EnvQueryGenerator_PosOfMaxCover
+// 0x0048 (0x00A0 - 0x0058)
+class UEnvQueryGenerator_PosOfMaxCover final : public UEnvQueryGenerator
+{
+public:
+	TSubclassOf<class UEnvQueryContext>           QueryContext;                                      // 0x0058(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              CoverRadius;                                       // 0x0060(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryGenerator_PosOfMaxCover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_PosOfMaxCover")
+	}
+	static class UEnvQueryGenerator_PosOfMaxCover* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_PosOfMaxCover>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryGenerator_PosOfMaxCover;
 
 // Class MarvelAI.AIScoreModule_Role
 // 0x0058 (0x0098 - 0x0040)
@@ -3232,17 +3319,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Role">();
+		STATIC_CLASS_IMPL("AIScoreModule_Role")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Role")
 	}
 	static class UAIScoreModule_Role* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Role>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Role) == 0x000008, "Wrong alignment on UAIScoreModule_Role");
-static_assert(sizeof(UAIScoreModule_Role) == 0x000098, "Wrong size on UAIScoreModule_Role");
-static_assert(offsetof(UAIScoreModule_Role, DefaultScore) == 0x000040, "Member 'UAIScoreModule_Role::DefaultScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Role, RoleConfig) == 0x000048, "Member 'UAIScoreModule_Role::RoleConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Role;
 
 // Class MarvelAI.AIScoreModule_SpecificHero
 // 0x0010 (0x0050 - 0x0040)
@@ -3257,18 +3345,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_SpecificHero">();
+		STATIC_CLASS_IMPL("AIScoreModule_SpecificHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_SpecificHero")
 	}
 	static class UAIScoreModule_SpecificHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_SpecificHero>();
 	}
 };
-static_assert(alignof(UAIScoreModule_SpecificHero) == 0x000008, "Wrong alignment on UAIScoreModule_SpecificHero");
-static_assert(sizeof(UAIScoreModule_SpecificHero) == 0x000050, "Wrong size on UAIScoreModule_SpecificHero");
-static_assert(offsetof(UAIScoreModule_SpecificHero, SpecificHeroID) == 0x000040, "Member 'UAIScoreModule_SpecificHero::SpecificHeroID' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_SpecificHero, SpecificHeroScore) == 0x000044, "Member 'UAIScoreModule_SpecificHero::SpecificHeroScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_SpecificHero, OtherScore) == 0x000048, "Member 'UAIScoreModule_SpecificHero::OtherScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_SpecificHero;
+
+// Class MarvelAI.NavLinkMoveMethod_SpaceRift
+// 0x0000 (0x0048 - 0x0048)
+class UNavLinkMoveMethod_SpaceRift final : public UNavLinkMoveMethod
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_SpaceRift")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_SpaceRift")
+	}
+	static class UNavLinkMoveMethod_SpaceRift* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_SpaceRift>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_SpaceRift;
 
 // Class MarvelAI.AIScoreModule_TargetType
 // 0x0008 (0x0048 - 0x0040)
@@ -3281,17 +3389,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_TargetType">();
+		STATIC_CLASS_IMPL("AIScoreModule_TargetType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_TargetType")
 	}
 	static class UAIScoreModule_TargetType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_TargetType>();
 	}
 };
-static_assert(alignof(UAIScoreModule_TargetType) == 0x000008, "Wrong alignment on UAIScoreModule_TargetType");
-static_assert(sizeof(UAIScoreModule_TargetType) == 0x000048, "Wrong size on UAIScoreModule_TargetType");
-static_assert(offsetof(UAIScoreModule_TargetType, CharacterScore) == 0x000040, "Member 'UAIScoreModule_TargetType::CharacterScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_TargetType, SummonerScore) == 0x000044, "Member 'UAIScoreModule_TargetType::SummonerScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_TargetType;
 
 // Class MarvelAI.AIScoreModule_Visible
 // 0x0008 (0x0048 - 0x0040)
@@ -3304,17 +3413,49 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModule_Visible">();
+		STATIC_CLASS_IMPL("AIScoreModule_Visible")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Visible")
 	}
 	static class UAIScoreModule_Visible* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Visible>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Visible) == 0x000008, "Wrong alignment on UAIScoreModule_Visible");
-static_assert(sizeof(UAIScoreModule_Visible) == 0x000048, "Wrong size on UAIScoreModule_Visible");
-static_assert(offsetof(UAIScoreModule_Visible, VisibleScore) == 0x000040, "Member 'UAIScoreModule_Visible::VisibleScore' has a wrong offset!");
-static_assert(offsetof(UAIScoreModule_Visible, InvisibleScore) == 0x000044, "Member 'UAIScoreModule_Visible::InvisibleScore' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModule_Visible;
+
+// Class MarvelAI.EnvQueryTest_ShelterTrace
+// 0x00B0 (0x0440 - 0x0390)
+class UEnvQueryTest_ShelterTrace final : public UEnvQueryTest_Trace
+{
+public:
+	struct FAIDataProviderFloatValue              MaxTraceDist;                                      // 0x0390(0x0040)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bUseCacheResult;                                   // 0x03D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3D1[0x3];                                      // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ValidSecondsForCache;                              // 0x03D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UEnvQueryContext>           ImportantTargetsContext;                           // 0x03D8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BaseScore;                                         // 0x03E0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AdditionalScoreForImportant;                       // 0x03E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bWantsHitAsResult;                                 // 0x03E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3E9[0x57];                                     // 0x03E9(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_ShelterTrace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_ShelterTrace")
+	}
+	static class UEnvQueryTest_ShelterTrace* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_ShelterTrace>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_ShelterTrace;
 
 // Class MarvelAI.AISelectTargetLogicBase
 // 0x0040 (0x0070 - 0x0030)
@@ -3356,32 +3497,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogicBase">();
+		STATIC_CLASS_IMPL("AISelectTargetLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogicBase")
 	}
 	static class UAISelectTargetLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogicBase>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogicBase) == 0x000008, "Wrong alignment on UAISelectTargetLogicBase");
-static_assert(sizeof(UAISelectTargetLogicBase) == 0x000070, "Wrong size on UAISelectTargetLogicBase");
-static_assert(offsetof(UAISelectTargetLogicBase, bShouldUpdateInTick) == 0x000030, "Member 'UAISelectTargetLogicBase::bShouldUpdateInTick' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, TickInterval) == 0x000034, "Member 'UAISelectTargetLogicBase::TickInterval' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bCouldUseDefaultObject) == 0x000038, "Member 'UAISelectTargetLogicBase::bCouldUseDefaultObject' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bTryFindFromOwnerBeforeCreate) == 0x000039, "Member 'UAISelectTargetLogicBase::bTryFindFromOwnerBeforeCreate' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bShouldClearFocusWhenEnd) == 0x00003A, "Member 'UAISelectTargetLogicBase::bShouldClearFocusWhenEnd' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bShouldUseMissOffset) == 0x00003B, "Member 'UAISelectTargetLogicBase::bShouldUseMissOffset' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, ProjectilePredicateSpeed) == 0x00003C, "Member 'UAISelectTargetLogicBase::ProjectilePredicateSpeed' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, ProjectilePredicateGravity) == 0x000040, "Member 'UAISelectTargetLogicBase::ProjectilePredicateGravity' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bEnableTwoBox) == 0x000044, "Member 'UAISelectTargetLogicBase::bEnableTwoBox' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bEnableAdaptedFocusSpeed) == 0x000045, "Member 'UAISelectTargetLogicBase::bEnableAdaptedFocusSpeed' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, FocusSpeedFactorWhenMiss) == 0x000048, "Member 'UAISelectTargetLogicBase::FocusSpeedFactorWhenMiss' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, MissBoxLength) == 0x00004C, "Member 'UAISelectTargetLogicBase::MissBoxLength' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, MissBoxPadding) == 0x000050, "Member 'UAISelectTargetLogicBase::MissBoxPadding' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, MissBoxHeightScale) == 0x000054, "Member 'UAISelectTargetLogicBase::MissBoxHeightScale' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, MissBoxLengthFactorCurve) == 0x000058, "Member 'UAISelectTargetLogicBase::MissBoxLengthFactorCurve' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, MissBoxPaddingFactorCurve) == 0x000060, "Member 'UAISelectTargetLogicBase::MissBoxPaddingFactorCurve' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase, bEnableDebugDraw) == 0x000068, "Member 'UAISelectTargetLogicBase::bEnableDebugDraw' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogicBase;
 
 // Class MarvelAI.AISelectTargetLogicBase_RunEQS
 // 0x0048 (0x00B8 - 0x0070)
@@ -3400,21 +3527,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogicBase_RunEQS">();
+		STATIC_CLASS_IMPL("AISelectTargetLogicBase_RunEQS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogicBase_RunEQS")
 	}
 	static class UAISelectTargetLogicBase_RunEQS* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogicBase_RunEQS>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogicBase_RunEQS) == 0x000008, "Wrong alignment on UAISelectTargetLogicBase_RunEQS");
-static_assert(sizeof(UAISelectTargetLogicBase_RunEQS) == 0x0000B8, "Wrong size on UAISelectTargetLogicBase_RunEQS");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, QueryTemplate) == 0x000070, "Member 'UAISelectTargetLogicBase_RunEQS::QueryTemplate' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, RunMode) == 0x000078, "Member 'UAISelectTargetLogicBase_RunEQS::RunMode' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, QueryInterval) == 0x00007C, "Member 'UAISelectTargetLogicBase_RunEQS::QueryInterval' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, QueryLocation) == 0x000080, "Member 'UAISelectTargetLogicBase_RunEQS::QueryLocation' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, QueryEQSTimer) == 0x000098, "Member 'UAISelectTargetLogicBase_RunEQS::QueryEQSTimer' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogicBase_RunEQS, bReady) == 0x0000B0, "Member 'UAISelectTargetLogicBase_RunEQS::bReady' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogicBase_RunEQS;
+
+// Class MarvelAI.QA_AIGlobalConfig
+// 0x0060 (0x0098 - 0x0038)
+class UQA_AIGlobalConfig final : public UPrimaryDataAsset
+{
+public:
+	TMap<int32, struct FQA_AIHeroConfig>          HeroConfig;                                        // 0x0038(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class UObject>>            ForceLoadClasses;                                  // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("QA_AIGlobalConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QA_AIGlobalConfig")
+	}
+	static class UQA_AIGlobalConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UQA_AIGlobalConfig>();
+	}
+};
+DUMPER7_ASSERTS_UQA_AIGlobalConfig;
 
 // Class MarvelAI.AISelectTargetLogic_BaseAddOffset
 // 0x0008 (0x0078 - 0x0070)
@@ -3429,18 +3577,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogic_BaseAddOffset">();
+		STATIC_CLASS_IMPL("AISelectTargetLogic_BaseAddOffset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogic_BaseAddOffset")
 	}
 	static class UAISelectTargetLogic_BaseAddOffset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogic_BaseAddOffset>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogic_BaseAddOffset) == 0x000008, "Wrong alignment on UAISelectTargetLogic_BaseAddOffset");
-static_assert(sizeof(UAISelectTargetLogic_BaseAddOffset) == 0x000078, "Wrong size on UAISelectTargetLogic_BaseAddOffset");
-static_assert(offsetof(UAISelectTargetLogic_BaseAddOffset, bIsInLocalSpace) == 0x000070, "Member 'UAISelectTargetLogic_BaseAddOffset::bIsInLocalSpace' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_BaseAddOffset, bUseCommonHeightOffset) == 0x000071, "Member 'UAISelectTargetLogic_BaseAddOffset::bUseCommonHeightOffset' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_BaseAddOffset, HeightValue) == 0x000074, "Member 'UAISelectTargetLogic_BaseAddOffset::HeightValue' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogic_BaseAddOffset;
 
 // Class MarvelAI.AISelectTargetLogic_Blackboard
 // 0x0010 (0x0080 - 0x0070)
@@ -3453,16 +3601,63 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogic_Blackboard">();
+		STATIC_CLASS_IMPL("AISelectTargetLogic_Blackboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogic_Blackboard")
 	}
 	static class UAISelectTargetLogic_Blackboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogic_Blackboard>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogic_Blackboard) == 0x000008, "Wrong alignment on UAISelectTargetLogic_Blackboard");
-static_assert(sizeof(UAISelectTargetLogic_Blackboard) == 0x000080, "Wrong size on UAISelectTargetLogic_Blackboard");
-static_assert(offsetof(UAISelectTargetLogic_Blackboard, BlackboardKeyName) == 0x000070, "Member 'UAISelectTargetLogic_Blackboard::BlackboardKeyName' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogic_Blackboard;
+
+// Class MarvelAI.MarvelEnvQueryTest
+// 0x0000 (0x0280 - 0x0280)
+class UMarvelEnvQueryTest : public UEnvQueryTest
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelEnvQueryTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelEnvQueryTest")
+	}
+	static class UMarvelEnvQueryTest* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelEnvQueryTest>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelEnvQueryTest;
+
+// Class MarvelAI.EnvQueryTest_CheckGameplayTag
+// 0x0078 (0x02F8 - 0x0280)
+class UEnvQueryTest_CheckGameplayTag final : public UMarvelEnvQueryTest
+{
+public:
+	struct FAITagMatchParameter                   GamePlayParameter;                                 // 0x0280(0x0070)(Edit, NativeAccessSpecifierPublic)
+	EAIFilterSide                                 Side;                                              // 0x02F0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_CheckGameplayTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_CheckGameplayTag")
+	}
+	static class UEnvQueryTest_CheckGameplayTag* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_CheckGameplayTag>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_CheckGameplayTag;
 
 // Class MarvelAI.AISelectTargetLogic_Destructible
 // 0x0018 (0x0088 - 0x0070)
@@ -3484,23 +3679,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogic_Destructible">();
+		STATIC_CLASS_IMPL("AISelectTargetLogic_Destructible")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogic_Destructible")
 	}
 	static class UAISelectTargetLogic_Destructible* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogic_Destructible>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogic_Destructible) == 0x000008, "Wrong alignment on UAISelectTargetLogic_Destructible");
-static_assert(sizeof(UAISelectTargetLogic_Destructible) == 0x000088, "Wrong size on UAISelectTargetLogic_Destructible");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, DetectRange) == 0x000070, "Member 'UAISelectTargetLogic_Destructible::DetectRange' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, bShouldDetectBlastMesh) == 0x000074, "Member 'UAISelectTargetLogic_Destructible::bShouldDetectBlastMesh' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, RequiredBlastUnbrokenRatio) == 0x000078, "Member 'UAISelectTargetLogic_Destructible::RequiredBlastUnbrokenRatio' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, bShouldDetectPhysicalInteraction) == 0x00007C, "Member 'UAISelectTargetLogic_Destructible::bShouldDetectPhysicalInteraction' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, PhysicsDetectType) == 0x00007D, "Member 'UAISelectTargetLogic_Destructible::PhysicsDetectType' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, PhysicsImpulseThresholdLimit) == 0x000080, "Member 'UAISelectTargetLogic_Destructible::PhysicsImpulseThresholdLimit' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, bTakeRandomTarget) == 0x000084, "Member 'UAISelectTargetLogic_Destructible::bTakeRandomTarget' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_Destructible, bShouldCheckVisibility) == 0x000085, "Member 'UAISelectTargetLogic_Destructible::bShouldCheckVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogic_Destructible;
 
 // Class MarvelAI.AISelectTargetLogic_General
 // 0x0030 (0x00A0 - 0x0070)
@@ -3518,19 +3708,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTargetLogic_General">();
+		STATIC_CLASS_IMPL("AISelectTargetLogic_General")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogic_General")
 	}
 	static class UAISelectTargetLogic_General* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogic_General>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogic_General) == 0x000008, "Wrong alignment on UAISelectTargetLogic_General");
-static_assert(sizeof(UAISelectTargetLogic_General) == 0x0000A0, "Wrong size on UAISelectTargetLogic_General");
-static_assert(offsetof(UAISelectTargetLogic_General, bEnableAccumulateHitRate) == 0x000070, "Member 'UAISelectTargetLogic_General::bEnableAccumulateHitRate' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_General, MaxDistanceForTargetAsUnMoved) == 0x000074, "Member 'UAISelectTargetLogic_General::MaxDistanceForTargetAsUnMoved' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_General, BoxLengthFactorByDistance) == 0x000078, "Member 'UAISelectTargetLogic_General::BoxLengthFactorByDistance' has a wrong offset!");
-static_assert(offsetof(UAISelectTargetLogic_General, BaseAimBoxLength) == 0x000098, "Member 'UAISelectTargetLogic_General::BaseAimBoxLength' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTargetLogic_General;
+
+// Class MarvelAI.SniperStandPoint
+// 0x0000 (0x07B0 - 0x07B0)
+class ASniperStandPoint final : public AStandPointBase
+{
+public:
+	float                                         WarningRadius;                                     // 0x07A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7AC[0x4];                                      // 0x07AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool CheckEnemyIsInWarningRange(class AActor* EnemyActor);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SniperStandPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SniperStandPoint")
+	}
+	static class ASniperStandPoint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ASniperStandPoint>();
+	}
+};
+DUMPER7_ASSERTS_ASniperStandPoint;
 
 // Class MarvelAI.AISelectTarget_BuffedCharacter
 // 0x00A8 (0x0118 - 0x0070)
@@ -3552,23 +3768,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AISelectTarget_BuffedCharacter">();
+		STATIC_CLASS_IMPL("AISelectTarget_BuffedCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_BuffedCharacter")
 	}
 	static class UAISelectTarget_BuffedCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_BuffedCharacter>();
 	}
 };
-static_assert(alignof(UAISelectTarget_BuffedCharacter) == 0x000008, "Wrong alignment on UAISelectTarget_BuffedCharacter");
-static_assert(sizeof(UAISelectTarget_BuffedCharacter) == 0x000118, "Wrong size on UAISelectTarget_BuffedCharacter");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, bUseAIInfoActor) == 0x000070, "Member 'UAISelectTarget_BuffedCharacter::bUseAIInfoActor' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, bUseBuffIDFilter) == 0x000071, "Member 'UAISelectTarget_BuffedCharacter::bUseBuffIDFilter' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, BuffID) == 0x000074, "Member 'UAISelectTarget_BuffedCharacter::BuffID' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, HeroFilter) == 0x000078, "Member 'UAISelectTarget_BuffedCharacter::HeroFilter' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, bDistanceFilter) == 0x0000F8, "Member 'UAISelectTarget_BuffedCharacter::bDistanceFilter' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, FilterDistance) == 0x0000FC, "Member 'UAISelectTarget_BuffedCharacter::FilterDistance' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, bUseHeroIDBlock) == 0x000100, "Member 'UAISelectTarget_BuffedCharacter::bUseHeroIDBlock' has a wrong offset!");
-static_assert(offsetof(UAISelectTarget_BuffedCharacter, HeroIDs) == 0x000108, "Member 'UAISelectTarget_BuffedCharacter::HeroIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTarget_BuffedCharacter;
 
 // Class MarvelAI.DangerousTargetAsset
 // 0x0050 (0x0088 - 0x0038)
@@ -3580,3621 +3791,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DangerousTargetAsset">();
+		STATIC_CLASS_IMPL("DangerousTargetAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DangerousTargetAsset")
 	}
 	static class UDangerousTargetAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDangerousTargetAsset>();
 	}
 };
-static_assert(alignof(UDangerousTargetAsset) == 0x000008, "Wrong alignment on UDangerousTargetAsset");
-static_assert(sizeof(UDangerousTargetAsset) == 0x000088, "Wrong size on UDangerousTargetAsset");
-static_assert(offsetof(UDangerousTargetAsset, DangerousTarget) == 0x000038, "Member 'UDangerousTargetAsset::DangerousTarget' has a wrong offset!");
-
-// Class MarvelAI.AISenseConfig_DangerousTarget
-// 0x0058 (0x00A8 - 0x0050)
-class UAISenseConfig_DangerousTarget final : public UAISenseConfig
-{
-public:
-	class UDangerousTargetAsset*                  DangerousTargetAsset;                              // 0x0050(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<int32, struct FAISenseDangerousTargetConfig> DefaultDangerousTarget;                        // 0x0058(0x0050)(Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISenseConfig_DangerousTarget">();
-	}
-	static class UAISenseConfig_DangerousTarget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISenseConfig_DangerousTarget>();
-	}
-};
-static_assert(alignof(UAISenseConfig_DangerousTarget) == 0x000008, "Wrong alignment on UAISenseConfig_DangerousTarget");
-static_assert(sizeof(UAISenseConfig_DangerousTarget) == 0x0000A8, "Wrong size on UAISenseConfig_DangerousTarget");
-static_assert(offsetof(UAISenseConfig_DangerousTarget, DangerousTargetAsset) == 0x000050, "Member 'UAISenseConfig_DangerousTarget::DangerousTargetAsset' has a wrong offset!");
-static_assert(offsetof(UAISenseConfig_DangerousTarget, DefaultDangerousTarget) == 0x000058, "Member 'UAISenseConfig_DangerousTarget::DefaultDangerousTarget' has a wrong offset!");
-
-// Class MarvelAI.AIServerRequestServices
-// 0x02C0 (0x0308 - 0x0048)
-class UAIServerRequestServices final : public UMarvelAIWorldSubsystem
-{
-public:
-	uint8                                         Pad_48[0x70];                                      // 0x0048(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AILabServerUrl;                                    // 0x00B8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxTimeOut;                                        // 0x00C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CC[0xE4];                                      // 0x00CC(0x00E4)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RequestInterval;                                   // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         RequestIndexID;                                    // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1C0[0x148];                                    // 0x01C0(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class FString GetAILabServerUrl();
-	void InitRequestServicesLogic();
-	void RequestTimer(bool bRetry);
-	void SetAILabServerUrl(const class FString& NewUrl, const class FString& Msg);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIServerRequestServices">();
-	}
-	static class UAIServerRequestServices* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIServerRequestServices>();
-	}
-};
-static_assert(alignof(UAIServerRequestServices) == 0x000008, "Wrong alignment on UAIServerRequestServices");
-static_assert(sizeof(UAIServerRequestServices) == 0x000308, "Wrong size on UAIServerRequestServices");
-static_assert(offsetof(UAIServerRequestServices, AILabServerUrl) == 0x0000B8, "Member 'UAIServerRequestServices::AILabServerUrl' has a wrong offset!");
-static_assert(offsetof(UAIServerRequestServices, MaxTimeOut) == 0x0000C8, "Member 'UAIServerRequestServices::MaxTimeOut' has a wrong offset!");
-static_assert(offsetof(UAIServerRequestServices, RequestInterval) == 0x0001B0, "Member 'UAIServerRequestServices::RequestInterval' has a wrong offset!");
-static_assert(offsetof(UAIServerRequestServices, RequestIndexID) == 0x0001B8, "Member 'UAIServerRequestServices::RequestIndexID' has a wrong offset!");
-
-// Class MarvelAI.AISpawnDataConfig
-// 0x0000 (0x0030 - 0x0030)
-class UAISpawnDataConfig final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISpawnDataConfig">();
-	}
-	static class UAISpawnDataConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISpawnDataConfig>();
-	}
-};
-static_assert(alignof(UAISpawnDataConfig) == 0x000008, "Wrong alignment on UAISpawnDataConfig");
-static_assert(sizeof(UAISpawnDataConfig) == 0x000030, "Wrong size on UAISpawnDataConfig");
-
-// Class MarvelAI.AISpawner
-// 0x0010 (0x0710 - 0x0700)
-class AAISpawner final : public AAISceneConfigActorBase
-{
-public:
-	class UAISpawnDataConfig*                     SpawnDataConfig;                                   // 0x0700(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_708[0x8];                                      // 0x0708(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISpawner">();
-	}
-	static class AAISpawner* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAISpawner>();
-	}
-};
-static_assert(alignof(AAISpawner) == 0x000010, "Wrong alignment on AAISpawner");
-static_assert(sizeof(AAISpawner) == 0x000710, "Wrong size on AAISpawner");
-static_assert(offsetof(AAISpawner, SpawnDataConfig) == 0x000700, "Member 'AAISpawner::SpawnDataConfig' has a wrong offset!");
-
-// Class MarvelAI.MarvelAIStandPointManager
-// 0x0050 (0x0080 - 0x0030)
-class UMarvelAIStandPointManager : public UObject
-{
-public:
-	TMap<class FName, class AStandPointBase*>     StandPointMap;                                     // 0x0030(0x0050)(Protected, NativeAccessSpecifierProtected)
-
-public:
-	class AStandPointBase* FindStandPoint(const class FName& PointName);
-	void RegisterStandPoint(class AStandPointBase* StandPoint);
-	void UnRegisterStandPoint(class AStandPointBase* StandPoint);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIStandPointManager">();
-	}
-	static class UMarvelAIStandPointManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIStandPointManager>();
-	}
-};
-static_assert(alignof(UMarvelAIStandPointManager) == 0x000008, "Wrong alignment on UMarvelAIStandPointManager");
-static_assert(sizeof(UMarvelAIStandPointManager) == 0x000080, "Wrong size on UMarvelAIStandPointManager");
-static_assert(offsetof(UMarvelAIStandPointManager, StandPointMap) == 0x000030, "Member 'UMarvelAIStandPointManager::StandPointMap' has a wrong offset!");
-
-// Class MarvelAI.AIStrategyAreaVolume
-// 0x0010 (0x0720 - 0x0710)
-class AAIStrategyAreaVolume final : public AVolume
-{
-public:
-	int32                                         MatchState;                                        // 0x0710(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EStrategyType                                 StrategyType;                                      // 0x0714(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EGroupState                                   GroupState;                                        // 0x0718(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_71C[0x4];                                      // 0x071C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	EGroupState GetGroupState() const;
-	int32 GetMatchState() const;
-	EStrategyType GetStrategyType() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIStrategyAreaVolume">();
-	}
-	static class AAIStrategyAreaVolume* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAIStrategyAreaVolume>();
-	}
-};
-static_assert(alignof(AAIStrategyAreaVolume) == 0x000010, "Wrong alignment on AAIStrategyAreaVolume");
-static_assert(sizeof(AAIStrategyAreaVolume) == 0x000720, "Wrong size on AAIStrategyAreaVolume");
-static_assert(offsetof(AAIStrategyAreaVolume, MatchState) == 0x000710, "Member 'AAIStrategyAreaVolume::MatchState' has a wrong offset!");
-static_assert(offsetof(AAIStrategyAreaVolume, StrategyType) == 0x000714, "Member 'AAIStrategyAreaVolume::StrategyType' has a wrong offset!");
-static_assert(offsetof(AAIStrategyAreaVolume, GroupState) == 0x000718, "Member 'AAIStrategyAreaVolume::GroupState' has a wrong offset!");
-
-// Class MarvelAI.AITargetContextBase
-// 0x0008 (0x0038 - 0x0030)
-class UAITargetContextBase : public UObject
-{
-public:
-	bool                                          bUseSense;                                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetContextBase">();
-	}
-	static class UAITargetContextBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetContextBase>();
-	}
-};
-static_assert(alignof(UAITargetContextBase) == 0x000008, "Wrong alignment on UAITargetContextBase");
-static_assert(sizeof(UAITargetContextBase) == 0x000038, "Wrong size on UAITargetContextBase");
-static_assert(offsetof(UAITargetContextBase, bUseSense) == 0x000030, "Member 'UAITargetContextBase::bUseSense' has a wrong offset!");
-
-// Class MarvelAI.AITargetContext_AIInfoTargets
-// 0x0008 (0x0040 - 0x0038)
-class UAITargetContext_AIInfoTargets : public UAITargetContextBase
-{
-public:
-	EAIInfoTargetType                             TargetType;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EHeroRole                                     LimitRole;                                         // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetContext_AIInfoTargets">();
-	}
-	static class UAITargetContext_AIInfoTargets* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetContext_AIInfoTargets>();
-	}
-};
-static_assert(alignof(UAITargetContext_AIInfoTargets) == 0x000008, "Wrong alignment on UAITargetContext_AIInfoTargets");
-static_assert(sizeof(UAITargetContext_AIInfoTargets) == 0x000040, "Wrong size on UAITargetContext_AIInfoTargets");
-static_assert(offsetof(UAITargetContext_AIInfoTargets, TargetType) == 0x000038, "Member 'UAITargetContext_AIInfoTargets::TargetType' has a wrong offset!");
-static_assert(offsetof(UAITargetContext_AIInfoTargets, LimitRole) == 0x000039, "Member 'UAITargetContext_AIInfoTargets::LimitRole' has a wrong offset!");
-
-// Class MarvelAI.AITargetContext_AliveTargets
-// 0x0008 (0x0040 - 0x0038)
-class UAITargetContext_AliveTargets : public UAITargetContextBase
-{
-public:
-	EAICharacterSide                              TargetCamp;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EHeroRole                                     LimitRole;                                         // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetContext_AliveTargets">();
-	}
-	static class UAITargetContext_AliveTargets* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetContext_AliveTargets>();
-	}
-};
-static_assert(alignof(UAITargetContext_AliveTargets) == 0x000008, "Wrong alignment on UAITargetContext_AliveTargets");
-static_assert(sizeof(UAITargetContext_AliveTargets) == 0x000040, "Wrong size on UAITargetContext_AliveTargets");
-static_assert(offsetof(UAITargetContext_AliveTargets, TargetCamp) == 0x000038, "Member 'UAITargetContext_AliveTargets::TargetCamp' has a wrong offset!");
-static_assert(offsetof(UAITargetContext_AliveTargets, LimitRole) == 0x000039, "Member 'UAITargetContext_AliveTargets::LimitRole' has a wrong offset!");
-
-// Class MarvelAI.AITargetContext_EnemiesInView
-// 0x0050 (0x0088 - 0x0038)
-class UAITargetContext_EnemiesInView : public UAITargetContextBase
-{
-public:
-	TSet<int32>                                   HighPrioritySummoners;                             // 0x0038(0x0050)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetContext_EnemiesInView">();
-	}
-	static class UAITargetContext_EnemiesInView* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetContext_EnemiesInView>();
-	}
-};
-static_assert(alignof(UAITargetContext_EnemiesInView) == 0x000008, "Wrong alignment on UAITargetContext_EnemiesInView");
-static_assert(sizeof(UAITargetContext_EnemiesInView) == 0x000088, "Wrong size on UAITargetContext_EnemiesInView");
-static_assert(offsetof(UAITargetContext_EnemiesInView, HighPrioritySummoners) == 0x000038, "Member 'UAITargetContext_EnemiesInView::HighPrioritySummoners' has a wrong offset!");
-
-// Class MarvelAI.AITargetContext_Players
-// 0x0008 (0x0040 - 0x0038)
-class UAITargetContext_Players : public UAITargetContextBase
-{
-public:
-	bool                                          bNeedPlayerInSight;                                // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetContext_Players">();
-	}
-	static class UAITargetContext_Players* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetContext_Players>();
-	}
-};
-static_assert(alignof(UAITargetContext_Players) == 0x000008, "Wrong alignment on UAITargetContext_Players");
-static_assert(sizeof(UAITargetContext_Players) == 0x000040, "Wrong size on UAITargetContext_Players");
-static_assert(offsetof(UAITargetContext_Players, bNeedPlayerInSight) == 0x000038, "Member 'UAITargetContext_Players::bNeedPlayerInSight' has a wrong offset!");
-
-// Class MarvelAI.AITargetFactorLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UAITargetFactorLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CancelConcentrateTarget(class AMarvelAIController* MyController, class AActor* Target);
-	static float GetDamageSourceFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target);
-	static float GetLowHpFactorForTarget(class AActor* Target, float MarkLife);
-	static float GetRoleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AActor* MyActor, class AActor* TargetActor);
-	static float GetTargetChangeProbability(const struct FTargetChangeConfig& Config, float TargetHpRatio);
-	static float GetVisibleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target);
-	static void TryAddHpLowMarkToTarget(const struct FTargetChangeConfig& Config, class AActor* Target, float MarkLife);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITargetFactorLibrary">();
-	}
-	static class UAITargetFactorLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITargetFactorLibrary>();
-	}
-};
-static_assert(alignof(UAITargetFactorLibrary) == 0x000008, "Wrong alignment on UAITargetFactorLibrary");
-static_assert(sizeof(UAITargetFactorLibrary) == 0x000030, "Wrong size on UAITargetFactorLibrary");
-
-// Class MarvelAI.AIAbilityUsageLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UAIAbilityUsageLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UMarvelGameplayAbility* GetAbilityByUsageID(int32 AbilityUsageID, class AMarvelAIController* OwnerController);
-	static class UMarvelGameplayAbility* GetAbilityFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext);
-	static class FString GetAbilityUsageDescription(const struct FAIAbilityUsage& AbilityUsage);
-	static struct FVector GetTargetLocation(const struct FAIAbilityUsage& AbilityUsage);
-	static struct FMarvelAIAutoAbilityTable GetUsageConfig(const struct FAIAbilityUsage& AbilityUsage);
-	static bool GetUsageConfigFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, struct FMarvelAIAutoAbilityTable* OutUsageConfig);
-	static bool IsValidAbilityUsage(const struct FAIAbilityUsage& AbilityUsage);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityUsageLibrary">();
-	}
-	static class UAIAbilityUsageLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityUsageLibrary>();
-	}
-};
-static_assert(alignof(UAIAbilityUsageLibrary) == 0x000008, "Wrong alignment on UAIAbilityUsageLibrary");
-static_assert(sizeof(UAIAbilityUsageLibrary) == 0x000030, "Wrong size on UAIAbilityUsageLibrary");
-
-// Class MarvelAI.AIAbilityUsagePointCalculator
-// 0x0000 (0x0030 - 0x0030)
-class UAIAbilityUsagePointCalculator final : public UObject
-{
-public:
-	bool CalculateUsagePointPosition(struct FAbilityUsagePointData& StandPoint, class AMarvelAIController* AIController);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityUsagePointCalculator">();
-	}
-	static class UAIAbilityUsagePointCalculator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityUsagePointCalculator>();
-	}
-};
-static_assert(alignof(UAIAbilityUsagePointCalculator) == 0x000008, "Wrong alignment on UAIAbilityUsagePointCalculator");
-static_assert(sizeof(UAIAbilityUsagePointCalculator) == 0x000030, "Wrong size on UAIAbilityUsagePointCalculator");
-
-// Class MarvelAI.AIAbilityPreAction
-// 0x0000 (0x0030 - 0x0030)
-class UAIAbilityPreAction : public UObject
-{
-public:
-	void DoPreAction(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityPreAction">();
-	}
-	static class UAIAbilityPreAction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityPreAction>();
-	}
-};
-static_assert(alignof(UAIAbilityPreAction) == 0x000008, "Wrong alignment on UAIAbilityPreAction");
-static_assert(sizeof(UAIAbilityPreAction) == 0x000030, "Wrong size on UAIAbilityPreAction");
-
-// Class MarvelAI.AIAbilityUsageAsset
-// 0x0050 (0x0088 - 0x0038)
-class UAIAbilityUsageAsset final : public UPrimaryDataAsset
-{
-public:
-	TArray<class UAIAbilityCondition*>            CustomConditions;                                  // 0x0038(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<class UAIAbilityUsagePointCondition*>  CustomUsagePointConditions;                        // 0x0048(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	class UAIAbilityUsagePointCalculator*         CustomUsagePointCalculator;                        // 0x0058(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UAIAbilityPreAction*>            AbilityPreActions;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<class UAIAbilityActivationExtraConfig*> ActivationExtraConfigs;                           // 0x0070(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bSkipCanActivateCheck;                             // 0x0080(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void DoAllPreActions(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController);
-	bool ShouldSkipCanActivateCheck();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityUsageAsset">();
-	}
-	static class UAIAbilityUsageAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityUsageAsset>();
-	}
-};
-static_assert(alignof(UAIAbilityUsageAsset) == 0x000008, "Wrong alignment on UAIAbilityUsageAsset");
-static_assert(sizeof(UAIAbilityUsageAsset) == 0x000088, "Wrong size on UAIAbilityUsageAsset");
-static_assert(offsetof(UAIAbilityUsageAsset, CustomConditions) == 0x000038, "Member 'UAIAbilityUsageAsset::CustomConditions' has a wrong offset!");
-static_assert(offsetof(UAIAbilityUsageAsset, CustomUsagePointConditions) == 0x000048, "Member 'UAIAbilityUsageAsset::CustomUsagePointConditions' has a wrong offset!");
-static_assert(offsetof(UAIAbilityUsageAsset, CustomUsagePointCalculator) == 0x000058, "Member 'UAIAbilityUsageAsset::CustomUsagePointCalculator' has a wrong offset!");
-static_assert(offsetof(UAIAbilityUsageAsset, AbilityPreActions) == 0x000060, "Member 'UAIAbilityUsageAsset::AbilityPreActions' has a wrong offset!");
-static_assert(offsetof(UAIAbilityUsageAsset, ActivationExtraConfigs) == 0x000070, "Member 'UAIAbilityUsageAsset::ActivationExtraConfigs' has a wrong offset!");
-static_assert(offsetof(UAIAbilityUsageAsset, bSkipCanActivateCheck) == 0x000080, "Member 'UAIAbilityUsageAsset::bSkipCanActivateCheck' has a wrong offset!");
-
-// Class MarvelAI.BattleScoreSubsystem
-// 0x0068 (0x00A0 - 0x0038)
-class UBattleScoreSubsystem final : public UWorldSubsystem
-{
-public:
-	TArray<float>                                 GroupRoleNumToScoreFactor;                         // 0x0038(0x0010)(Edit, ZeroConstructor, Config, Protected, NativeAccessSpecifierProtected)
-	TMap<EHeroRole, float>                        HeroRoleToDefaultBaseScore;                        // 0x0048(0x0050)(Edit, Config, Protected, NativeAccessSpecifierProtected)
-	float                                         EnergyPropThreshold;                               // 0x0098(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         EnergyPropFactor;                                  // 0x009C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UBattleScoreSubsystem* GetBattleScoreSubsystem(const class UObject* WorldContextObject);
-
-	float GetBattleScoreForActor(const class AActor* TargetActor);
-	float GetBattleScoreForCharacter(const class AMarvelBaseCharacter* HeroCharacter);
-	float GetBattleScoreForCharacterGroup(const TArray<class AMarvelBaseCharacter*>& CharacterGroup);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BattleScoreSubsystem">();
-	}
-	static class UBattleScoreSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBattleScoreSubsystem>();
-	}
-};
-static_assert(alignof(UBattleScoreSubsystem) == 0x000008, "Wrong alignment on UBattleScoreSubsystem");
-static_assert(sizeof(UBattleScoreSubsystem) == 0x0000A0, "Wrong size on UBattleScoreSubsystem");
-static_assert(offsetof(UBattleScoreSubsystem, GroupRoleNumToScoreFactor) == 0x000038, "Member 'UBattleScoreSubsystem::GroupRoleNumToScoreFactor' has a wrong offset!");
-static_assert(offsetof(UBattleScoreSubsystem, HeroRoleToDefaultBaseScore) == 0x000048, "Member 'UBattleScoreSubsystem::HeroRoleToDefaultBaseScore' has a wrong offset!");
-static_assert(offsetof(UBattleScoreSubsystem, EnergyPropThreshold) == 0x000098, "Member 'UBattleScoreSubsystem::EnergyPropThreshold' has a wrong offset!");
-static_assert(offsetof(UBattleScoreSubsystem, EnergyPropFactor) == 0x00009C, "Member 'UBattleScoreSubsystem::EnergyPropFactor' has a wrong offset!");
-
-// Class MarvelAI.BTDecorator_BBDifferenceOp
-// 0x0048 (0x00E8 - 0x00A0)
-class UBTDecorator_BBDifferenceOp : public UBTDecorator_BlackboardBase
-{
-public:
-	EDiffOperator                                 Operator;                                          // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 Target;                                            // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FFloatRange                            InRange;                                           // 0x00D8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_BBDifferenceOp">();
-	}
-	static class UBTDecorator_BBDifferenceOp* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_BBDifferenceOp>();
-	}
-};
-static_assert(alignof(UBTDecorator_BBDifferenceOp) == 0x000008, "Wrong alignment on UBTDecorator_BBDifferenceOp");
-static_assert(sizeof(UBTDecorator_BBDifferenceOp) == 0x0000E8, "Wrong size on UBTDecorator_BBDifferenceOp");
-static_assert(offsetof(UBTDecorator_BBDifferenceOp, Operator) == 0x0000A0, "Member 'UBTDecorator_BBDifferenceOp::Operator' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_BBDifferenceOp, Target) == 0x0000A8, "Member 'UBTDecorator_BBDifferenceOp::Target' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_BBDifferenceOp, InRange) == 0x0000D8, "Member 'UBTDecorator_BBDifferenceOp::InRange' has a wrong offset!");
-
-// Class MarvelAI.BTDecorator_CheckBuff
-// 0x0050 (0x00C0 - 0x0070)
-class UBTDecorator_CheckBuff final : public UBTDecorator
-{
-public:
-	TSet<int32>                                   BuffIDs;                                           // 0x0070(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_CheckBuff">();
-	}
-	static class UBTDecorator_CheckBuff* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_CheckBuff>();
-	}
-};
-static_assert(alignof(UBTDecorator_CheckBuff) == 0x000008, "Wrong alignment on UBTDecorator_CheckBuff");
-static_assert(sizeof(UBTDecorator_CheckBuff) == 0x0000C0, "Wrong size on UBTDecorator_CheckBuff");
-static_assert(offsetof(UBTDecorator_CheckBuff, BuffIDs) == 0x000070, "Member 'UBTDecorator_CheckBuff::BuffIDs' has a wrong offset!");
-
-// Class MarvelAI.BTDecorator_CheckHeroType
-// 0x00A8 (0x0118 - 0x0070)
-class UBTDecorator_CheckHeroType : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 HeroToCheck;                                       // 0x0070(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	EHeroRole                                     HeroRole;                                          // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAIHeroTag                             AIHeroTag;                                         // 0x00A8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	EGameplayContainerMatchType                   TagMatchType;                                      // 0x0110(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_CheckHeroType">();
-	}
-	static class UBTDecorator_CheckHeroType* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_CheckHeroType>();
-	}
-};
-static_assert(alignof(UBTDecorator_CheckHeroType) == 0x000008, "Wrong alignment on UBTDecorator_CheckHeroType");
-static_assert(sizeof(UBTDecorator_CheckHeroType) == 0x000118, "Wrong size on UBTDecorator_CheckHeroType");
-static_assert(offsetof(UBTDecorator_CheckHeroType, HeroToCheck) == 0x000070, "Member 'UBTDecorator_CheckHeroType::HeroToCheck' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_CheckHeroType, HeroRole) == 0x0000A0, "Member 'UBTDecorator_CheckHeroType::HeroRole' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_CheckHeroType, AIHeroTag) == 0x0000A8, "Member 'UBTDecorator_CheckHeroType::AIHeroTag' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_CheckHeroType, TagMatchType) == 0x000110, "Member 'UBTDecorator_CheckHeroType::TagMatchType' has a wrong offset!");
-
-// Class MarvelAI.BTDecorator_CheckRequirement
-// 0x0008 (0x0078 - 0x0070)
-class UBTDecorator_CheckRequirement final : public UBTDecorator
-{
-public:
-	class UActionRequirementBase*                 Requirement;                                       // 0x0070(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_CheckRequirement">();
-	}
-	static class UBTDecorator_CheckRequirement* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_CheckRequirement>();
-	}
-};
-static_assert(alignof(UBTDecorator_CheckRequirement) == 0x000008, "Wrong alignment on UBTDecorator_CheckRequirement");
-static_assert(sizeof(UBTDecorator_CheckRequirement) == 0x000078, "Wrong size on UBTDecorator_CheckRequirement");
-static_assert(offsetof(UBTDecorator_CheckRequirement, Requirement) == 0x000070, "Member 'UBTDecorator_CheckRequirement::Requirement' has a wrong offset!");
-
-// Class MarvelAI.BTD_CampCheck
-// 0x0050 (0x0108 - 0x00B8)
-class UBTD_CampCheck final : public UBTDecorator_MarvelInstancedBase
-{
-public:
-	struct FBlackboardKeySelector                 CampActor;                                         // 0x00B8(0x0030)(Edit, NativeAccessSpecifierPublic)
-	ECheckOption                                  CheckOption;                                       // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSideScoreConfig                       SideScoreConfig;                                   // 0x00EC(0x0014)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCampStateConfig                       CampStateConfig;                                   // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool Check(const class UBehaviorTreeComponent* OwnerComp) const;
-	bool CheckOwnershipType(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const;
-	float GetScoreForSide(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_CampCheck">();
-	}
-	static class UBTD_CampCheck* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_CampCheck>();
-	}
-};
-static_assert(alignof(UBTD_CampCheck) == 0x000008, "Wrong alignment on UBTD_CampCheck");
-static_assert(sizeof(UBTD_CampCheck) == 0x000108, "Wrong size on UBTD_CampCheck");
-static_assert(offsetof(UBTD_CampCheck, CampActor) == 0x0000B8, "Member 'UBTD_CampCheck::CampActor' has a wrong offset!");
-static_assert(offsetof(UBTD_CampCheck, CheckOption) == 0x0000E8, "Member 'UBTD_CampCheck::CheckOption' has a wrong offset!");
-static_assert(offsetof(UBTD_CampCheck, SideScoreConfig) == 0x0000EC, "Member 'UBTD_CampCheck::SideScoreConfig' has a wrong offset!");
-static_assert(offsetof(UBTD_CampCheck, CampStateConfig) == 0x000100, "Member 'UBTD_CampCheck::CampStateConfig' has a wrong offset!");
-
-// Class MarvelAI.BTD_CheckAbilityTactics
-// 0x0008 (0x0078 - 0x0070)
-class UBTD_CheckAbilityTactics final : public UBTDecorator
-{
-public:
-	EBTD_CheckAbilityTacticsType                  TacticsType;                                       // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TacticsIndex;                                      // 0x0074(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_CheckAbilityTactics">();
-	}
-	static class UBTD_CheckAbilityTactics* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_CheckAbilityTactics>();
-	}
-};
-static_assert(alignof(UBTD_CheckAbilityTactics) == 0x000008, "Wrong alignment on UBTD_CheckAbilityTactics");
-static_assert(sizeof(UBTD_CheckAbilityTactics) == 0x000078, "Wrong size on UBTD_CheckAbilityTactics");
-static_assert(offsetof(UBTD_CheckAbilityTactics, TacticsType) == 0x000070, "Member 'UBTD_CheckAbilityTactics::TacticsType' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckAbilityTactics, TacticsIndex) == 0x000074, "Member 'UBTD_CheckAbilityTactics::TacticsIndex' has a wrong offset!");
-
-// Class MarvelAI.BTD_CheckFrontCharacter
-// 0x0038 (0x00A8 - 0x0070)
-class UBTD_CheckFrontCharacter final : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 BlackboardKey;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	float                                         CheckRadius;                                       // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CheckAngle;                                        // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_CheckFrontCharacter">();
-	}
-	static class UBTD_CheckFrontCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_CheckFrontCharacter>();
-	}
-};
-static_assert(alignof(UBTD_CheckFrontCharacter) == 0x000008, "Wrong alignment on UBTD_CheckFrontCharacter");
-static_assert(sizeof(UBTD_CheckFrontCharacter) == 0x0000A8, "Wrong size on UBTD_CheckFrontCharacter");
-static_assert(offsetof(UBTD_CheckFrontCharacter, BlackboardKey) == 0x000070, "Member 'UBTD_CheckFrontCharacter::BlackboardKey' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckFrontCharacter, CheckRadius) == 0x0000A0, "Member 'UBTD_CheckFrontCharacter::CheckRadius' has a wrong offset!");
-static_assert(offsetof(UBTD_CheckFrontCharacter, CheckAngle) == 0x0000A4, "Member 'UBTD_CheckFrontCharacter::CheckAngle' has a wrong offset!");
-
-// Class MarvelAI.BTD_DistanceCheck
-// 0x0048 (0x00B8 - 0x0070)
-class UBTD_DistanceCheck final : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 InTarget;                                          // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	EFAIDistanceType                              DistanceType;                                      // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatRange                            CheckRange;                                        // 0x00A4(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         TickInterval;                                      // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_DistanceCheck">();
-	}
-	static class UBTD_DistanceCheck* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_DistanceCheck>();
-	}
-};
-static_assert(alignof(UBTD_DistanceCheck) == 0x000008, "Wrong alignment on UBTD_DistanceCheck");
-static_assert(sizeof(UBTD_DistanceCheck) == 0x0000B8, "Wrong size on UBTD_DistanceCheck");
-static_assert(offsetof(UBTD_DistanceCheck, InTarget) == 0x000070, "Member 'UBTD_DistanceCheck::InTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_DistanceCheck, DistanceType) == 0x0000A0, "Member 'UBTD_DistanceCheck::DistanceType' has a wrong offset!");
-static_assert(offsetof(UBTD_DistanceCheck, CheckRange) == 0x0000A4, "Member 'UBTD_DistanceCheck::CheckRange' has a wrong offset!");
-static_assert(offsetof(UBTD_DistanceCheck, TickInterval) == 0x0000B4, "Member 'UBTD_DistanceCheck::TickInterval' has a wrong offset!");
-
-// Class MarvelAI.BTD_PayloadCheck
-// 0x0050 (0x0108 - 0x00B8)
-class UBTD_PayloadCheck final : public UBTDecorator_MarvelInstancedBase
-{
-public:
-	struct FBlackboardKeySelector                 InPlayloadActor;                                   // 0x00B8(0x0030)(Edit, NativeAccessSpecifierPublic)
-	ECheckOption                                  InCheckOption;                                     // 0x00E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InStage;                                           // 0x00EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            InScore;                                           // 0x00F0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         InPayloadState;                                    // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool Check(int32 Stage, float Score, float Speed, int32 Team, EOwnershipType Ownership) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_PayloadCheck">();
-	}
-	static class UBTD_PayloadCheck* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_PayloadCheck>();
-	}
-};
-static_assert(alignof(UBTD_PayloadCheck) == 0x000008, "Wrong alignment on UBTD_PayloadCheck");
-static_assert(sizeof(UBTD_PayloadCheck) == 0x000108, "Wrong size on UBTD_PayloadCheck");
-static_assert(offsetof(UBTD_PayloadCheck, InPlayloadActor) == 0x0000B8, "Member 'UBTD_PayloadCheck::InPlayloadActor' has a wrong offset!");
-static_assert(offsetof(UBTD_PayloadCheck, InCheckOption) == 0x0000E8, "Member 'UBTD_PayloadCheck::InCheckOption' has a wrong offset!");
-static_assert(offsetof(UBTD_PayloadCheck, InStage) == 0x0000EC, "Member 'UBTD_PayloadCheck::InStage' has a wrong offset!");
-static_assert(offsetof(UBTD_PayloadCheck, InScore) == 0x0000F0, "Member 'UBTD_PayloadCheck::InScore' has a wrong offset!");
-static_assert(offsetof(UBTD_PayloadCheck, InPayloadState) == 0x000100, "Member 'UBTD_PayloadCheck::InPayloadState' has a wrong offset!");
-
-// Class MarvelAI.BTD_TargetIsSummoned
-// 0x0080 (0x00F0 - 0x0070)
-class UBTD_TargetIsSummoned : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 InCheckTarget;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	TSet<int32>                                   ExcludeList;                                       // 0x00A0(0x0050)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTD_TargetIsSummoned">();
-	}
-	static class UBTD_TargetIsSummoned* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTD_TargetIsSummoned>();
-	}
-};
-static_assert(alignof(UBTD_TargetIsSummoned) == 0x000008, "Wrong alignment on UBTD_TargetIsSummoned");
-static_assert(sizeof(UBTD_TargetIsSummoned) == 0x0000F0, "Wrong size on UBTD_TargetIsSummoned");
-static_assert(offsetof(UBTD_TargetIsSummoned, InCheckTarget) == 0x000070, "Member 'UBTD_TargetIsSummoned::InCheckTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_TargetIsSummoned, ExcludeList) == 0x0000A0, "Member 'UBTD_TargetIsSummoned::ExcludeList' has a wrong offset!");
-
-// Class MarvelAI.BTService_MarvelInstancedBase
-// 0x0008 (0x00A8 - 0x00A0)
-class UBTService_MarvelInstancedBase : public UBTService_BlueprintBase
-{
-public:
-	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void OnDestroyed(class UBehaviorTreeComponent* OwnerComp);
-
-	class AMarvelBaseCharacter* K2_GetControlledHero() const;
-	class APawn* K2_GetControlledPawn() const;
-	class AMarvelAIController* K2_GetMarvelAIOwner() const;
-	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTService_MarvelInstancedBase">();
-	}
-	static class UBTService_MarvelInstancedBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTService_MarvelInstancedBase>();
-	}
-};
-static_assert(alignof(UBTService_MarvelInstancedBase) == 0x000008, "Wrong alignment on UBTService_MarvelInstancedBase");
-static_assert(sizeof(UBTService_MarvelInstancedBase) == 0x0000A8, "Wrong size on UBTService_MarvelInstancedBase");
-static_assert(offsetof(UBTService_MarvelInstancedBase, MarvelAIOwner) == 0x0000A0, "Member 'UBTService_MarvelInstancedBase::MarvelAIOwner' has a wrong offset!");
-
-// Class MarvelAI.BTService_StrategyActionSelect
-// 0x0040 (0x00B8 - 0x0078)
-class UBTService_StrategyActionSelect final : public UBTService
-{
-public:
-	EActionCategory                               CurrentAction;                                     // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 OutNewAction;                                      // 0x0080(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UActionRequirementAsset*                ActionTableAsset;                                  // 0x00B0(0x0008)(Edit, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTService_StrategyActionSelect">();
-	}
-	static class UBTService_StrategyActionSelect* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTService_StrategyActionSelect>();
-	}
-};
-static_assert(alignof(UBTService_StrategyActionSelect) == 0x000008, "Wrong alignment on UBTService_StrategyActionSelect");
-static_assert(sizeof(UBTService_StrategyActionSelect) == 0x0000B8, "Wrong size on UBTService_StrategyActionSelect");
-static_assert(offsetof(UBTService_StrategyActionSelect, CurrentAction) == 0x000078, "Member 'UBTService_StrategyActionSelect::CurrentAction' has a wrong offset!");
-static_assert(offsetof(UBTService_StrategyActionSelect, OutNewAction) == 0x000080, "Member 'UBTService_StrategyActionSelect::OutNewAction' has a wrong offset!");
-static_assert(offsetof(UBTService_StrategyActionSelect, ActionTableAsset) == 0x0000B0, "Member 'UBTService_StrategyActionSelect::ActionTableAsset' has a wrong offset!");
-
-// Class MarvelAI.ActionRequirementAsset
-// 0x0010 (0x0048 - 0x0038)
-class UActionRequirementAsset final : public UPrimaryDataAsset
-{
-public:
-	TArray<struct FActionRequirementNode>         ActionRequirementNode;                             // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ActionRequirementAsset">();
-	}
-	static class UActionRequirementAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UActionRequirementAsset>();
-	}
-};
-static_assert(alignof(UActionRequirementAsset) == 0x000008, "Wrong alignment on UActionRequirementAsset");
-static_assert(sizeof(UActionRequirementAsset) == 0x000048, "Wrong size on UActionRequirementAsset");
-static_assert(offsetof(UActionRequirementAsset, ActionRequirementNode) == 0x000038, "Member 'UActionRequirementAsset::ActionRequirementNode' has a wrong offset!");
-
-// Class MarvelAI.Requirement_BattleCalculate
-// 0x0020 (0x0058 - 0x0038)
-class URequirement_BattleCalculate final : public UActionRequirementBase
-{
-public:
-	ECalculateType                                CalculateType;                                     // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIFilterSide                                 LeftFilterSide;                                    // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPropertyValueType                            LeftValueType;                                     // 0x003A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          LeftAlive;                                         // 0x003B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LeftCoefficient;                                   // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMarvelArithmeticOperation                    ArithmeticOperation;                               // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIFilterSide                                 RightFilterSide;                                   // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPropertyValueType                            RightValueType;                                    // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RightAlive;                                        // 0x0043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RightCoefficient;                                  // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Description;                                       // 0x0048(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Requirement_BattleCalculate">();
-	}
-	static class URequirement_BattleCalculate* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URequirement_BattleCalculate>();
-	}
-};
-static_assert(alignof(URequirement_BattleCalculate) == 0x000008, "Wrong alignment on URequirement_BattleCalculate");
-static_assert(sizeof(URequirement_BattleCalculate) == 0x000058, "Wrong size on URequirement_BattleCalculate");
-static_assert(offsetof(URequirement_BattleCalculate, CalculateType) == 0x000038, "Member 'URequirement_BattleCalculate::CalculateType' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, LeftFilterSide) == 0x000039, "Member 'URequirement_BattleCalculate::LeftFilterSide' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, LeftValueType) == 0x00003A, "Member 'URequirement_BattleCalculate::LeftValueType' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, LeftAlive) == 0x00003B, "Member 'URequirement_BattleCalculate::LeftAlive' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, LeftCoefficient) == 0x00003C, "Member 'URequirement_BattleCalculate::LeftCoefficient' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, ArithmeticOperation) == 0x000040, "Member 'URequirement_BattleCalculate::ArithmeticOperation' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, RightFilterSide) == 0x000041, "Member 'URequirement_BattleCalculate::RightFilterSide' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, RightValueType) == 0x000042, "Member 'URequirement_BattleCalculate::RightValueType' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, RightAlive) == 0x000043, "Member 'URequirement_BattleCalculate::RightAlive' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, RightCoefficient) == 0x000044, "Member 'URequirement_BattleCalculate::RightCoefficient' has a wrong offset!");
-static_assert(offsetof(URequirement_BattleCalculate, Description) == 0x000048, "Member 'URequirement_BattleCalculate::Description' has a wrong offset!");
-
-// Class MarvelAI.BTS_AutoAbilityService
-// 0x0108 (0x0180 - 0x0078)
-class UBTS_AutoAbilityService : public UBTService
-{
-public:
-	bool                                          bUseAIInfoGroupTags;                               // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  UsageGroupTags;                                    // 0x0080(0x0068)(Edit, NativeAccessSpecifierPrivate)
-	struct FGameplayTagContainer                  BlockTag;                                          // 0x00E8(0x0068)(Edit, NativeAccessSpecifierPrivate)
-	bool                                          bUseDynamicFrequency;                              // 0x0150(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         UsageTableNames;                                   // 0x0158(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	bool                                          bOverrideTactics;                                  // 0x0168(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UAbilityTacticsTask>        OverrideRequestClass;                              // 0x0170(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class UAIAbilitySelectCheckBase>  OverrideSelectCheckClass;                          // 0x0178(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_AutoAbilityService">();
-	}
-	static class UBTS_AutoAbilityService* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_AutoAbilityService>();
-	}
-};
-static_assert(alignof(UBTS_AutoAbilityService) == 0x000008, "Wrong alignment on UBTS_AutoAbilityService");
-static_assert(sizeof(UBTS_AutoAbilityService) == 0x000180, "Wrong size on UBTS_AutoAbilityService");
-static_assert(offsetof(UBTS_AutoAbilityService, bUseAIInfoGroupTags) == 0x000078, "Member 'UBTS_AutoAbilityService::bUseAIInfoGroupTags' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, UsageGroupTags) == 0x000080, "Member 'UBTS_AutoAbilityService::UsageGroupTags' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, BlockTag) == 0x0000E8, "Member 'UBTS_AutoAbilityService::BlockTag' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, bUseDynamicFrequency) == 0x000150, "Member 'UBTS_AutoAbilityService::bUseDynamicFrequency' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, UsageTableNames) == 0x000158, "Member 'UBTS_AutoAbilityService::UsageTableNames' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, bOverrideTactics) == 0x000168, "Member 'UBTS_AutoAbilityService::bOverrideTactics' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, OverrideRequestClass) == 0x000170, "Member 'UBTS_AutoAbilityService::OverrideRequestClass' has a wrong offset!");
-static_assert(offsetof(UBTS_AutoAbilityService, OverrideSelectCheckClass) == 0x000178, "Member 'UBTS_AutoAbilityService::OverrideSelectCheckClass' has a wrong offset!");
-
-// Class MarvelAI.BTS_CheckDefense
-// 0x00E0 (0x0158 - 0x0078)
-class UBTS_CheckDefense final : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutIsNeedDefenseKey;                               // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 InFrontierKey;                                     // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 InSelfActorKey;                                    // 0x00D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FFloatRange                            FrontierCheckDistance;                             // 0x0108(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FInt32Range                            FrontierEnemyProportion;                           // 0x0118(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FInt32Range                            FrontierAllyProportion;                            // 0x0128(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFloatRange                            SelfCheckDistance;                                 // 0x0138(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FInt32Range                            EnemyAroundProportion;                             // 0x0148(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_CheckDefense">();
-	}
-	static class UBTS_CheckDefense* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_CheckDefense>();
-	}
-};
-static_assert(alignof(UBTS_CheckDefense) == 0x000008, "Wrong alignment on UBTS_CheckDefense");
-static_assert(sizeof(UBTS_CheckDefense) == 0x000158, "Wrong size on UBTS_CheckDefense");
-static_assert(offsetof(UBTS_CheckDefense, OutIsNeedDefenseKey) == 0x000078, "Member 'UBTS_CheckDefense::OutIsNeedDefenseKey' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, InFrontierKey) == 0x0000A8, "Member 'UBTS_CheckDefense::InFrontierKey' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, InSelfActorKey) == 0x0000D8, "Member 'UBTS_CheckDefense::InSelfActorKey' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, FrontierCheckDistance) == 0x000108, "Member 'UBTS_CheckDefense::FrontierCheckDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, FrontierEnemyProportion) == 0x000118, "Member 'UBTS_CheckDefense::FrontierEnemyProportion' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, FrontierAllyProportion) == 0x000128, "Member 'UBTS_CheckDefense::FrontierAllyProportion' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, SelfCheckDistance) == 0x000138, "Member 'UBTS_CheckDefense::SelfCheckDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_CheckDefense, EnemyAroundProportion) == 0x000148, "Member 'UBTS_CheckDefense::EnemyAroundProportion' has a wrong offset!");
-
-// Class MarvelAI.BTS_DamageStatistics
-// 0x0050 (0x00C8 - 0x0078)
-class UBTS_DamageStatistics final : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 ReachDamageThreshold;                              // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	float                                         DamageThreshold;                                   // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAIController*                    AIOwner;                                           // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UBlackboardComponent*                   BBComp;                                            // 0x00B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C0[0x8];                                       // 0x00C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_DamageStatistics">();
-	}
-	static class UBTS_DamageStatistics* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_DamageStatistics>();
-	}
-};
-static_assert(alignof(UBTS_DamageStatistics) == 0x000008, "Wrong alignment on UBTS_DamageStatistics");
-static_assert(sizeof(UBTS_DamageStatistics) == 0x0000C8, "Wrong size on UBTS_DamageStatistics");
-static_assert(offsetof(UBTS_DamageStatistics, ReachDamageThreshold) == 0x000078, "Member 'UBTS_DamageStatistics::ReachDamageThreshold' has a wrong offset!");
-static_assert(offsetof(UBTS_DamageStatistics, DamageThreshold) == 0x0000A8, "Member 'UBTS_DamageStatistics::DamageThreshold' has a wrong offset!");
-static_assert(offsetof(UBTS_DamageStatistics, AIOwner) == 0x0000B0, "Member 'UBTS_DamageStatistics::AIOwner' has a wrong offset!");
-static_assert(offsetof(UBTS_DamageStatistics, BBComp) == 0x0000B8, "Member 'UBTS_DamageStatistics::BBComp' has a wrong offset!");
-
-// Class MarvelAI.BTS_SelectTargetNew
-// 0x01D8 (0x0250 - 0x0078)
-class UBTS_SelectTargetNew : public UBTService
-{
-public:
-	bool                                          bEnableDebug;                                      // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DebugName;                                         // 0x0080(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 InOutTarget;                                       // 0x0090(0x0030)(Edit, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 OutSenseFromPortal;                                // 0x00C0(0x0030)(Edit, NativeAccessSpecifierPublic)
-	EAITargetType                                 CharacterGroupType;                                // 0x00F0(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UAITargetContextBase>       CandidateType;                                     // 0x00F8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHeroRole                                     LimitRole;                                         // 0x0100(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UAIScoreModuleRule>         ScoreRuleConfigClass;                              // 0x0108(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UAIScoreModuleRule>         SummonScoreRuleConfigClass;                        // 0x0110(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSet<int32>                                   HighPrioritySummoners;                             // 0x0118(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
-	class UAIScoreModuleRule*                     RuleConfig;                                        // 0x0168(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAIScoreModuleRule*                     SummonedRuleConfig;                                // 0x0170(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AMarvelAIController*                    AIOwner;                                           // 0x0178(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSet<class AActor*>                           Candidates;                                        // 0x0180(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	class AMarvelGameState*                       CacheMarvelGameState;                              // 0x01D0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FSelectTargetQueryContext              TargetQueryContext;                                // 0x01D8(0x0010)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E8[0x68];                                     // 0x01E8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnTargetTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_SelectTargetNew">();
-	}
-	static class UBTS_SelectTargetNew* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_SelectTargetNew>();
-	}
-};
-static_assert(alignof(UBTS_SelectTargetNew) == 0x000008, "Wrong alignment on UBTS_SelectTargetNew");
-static_assert(sizeof(UBTS_SelectTargetNew) == 0x000250, "Wrong size on UBTS_SelectTargetNew");
-static_assert(offsetof(UBTS_SelectTargetNew, bEnableDebug) == 0x000078, "Member 'UBTS_SelectTargetNew::bEnableDebug' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, DebugName) == 0x000080, "Member 'UBTS_SelectTargetNew::DebugName' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, InOutTarget) == 0x000090, "Member 'UBTS_SelectTargetNew::InOutTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, OutSenseFromPortal) == 0x0000C0, "Member 'UBTS_SelectTargetNew::OutSenseFromPortal' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, CharacterGroupType) == 0x0000F0, "Member 'UBTS_SelectTargetNew::CharacterGroupType' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, CandidateType) == 0x0000F8, "Member 'UBTS_SelectTargetNew::CandidateType' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, LimitRole) == 0x000100, "Member 'UBTS_SelectTargetNew::LimitRole' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, ScoreRuleConfigClass) == 0x000108, "Member 'UBTS_SelectTargetNew::ScoreRuleConfigClass' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, SummonScoreRuleConfigClass) == 0x000110, "Member 'UBTS_SelectTargetNew::SummonScoreRuleConfigClass' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, HighPrioritySummoners) == 0x000118, "Member 'UBTS_SelectTargetNew::HighPrioritySummoners' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, RuleConfig) == 0x000168, "Member 'UBTS_SelectTargetNew::RuleConfig' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, SummonedRuleConfig) == 0x000170, "Member 'UBTS_SelectTargetNew::SummonedRuleConfig' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, AIOwner) == 0x000178, "Member 'UBTS_SelectTargetNew::AIOwner' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, Candidates) == 0x000180, "Member 'UBTS_SelectTargetNew::Candidates' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, CacheMarvelGameState) == 0x0001D0, "Member 'UBTS_SelectTargetNew::CacheMarvelGameState' has a wrong offset!");
-static_assert(offsetof(UBTS_SelectTargetNew, TargetQueryContext) == 0x0001D8, "Member 'UBTS_SelectTargetNew::TargetQueryContext' has a wrong offset!");
-
-// Class MarvelAI.AICommunicateAsset
-// 0x0050 (0x0088 - 0x0038)
-class UAICommunicateAsset final : public UPrimaryDataAsset
-{
-public:
-	struct FAICommunicateData                     Communicate;                                       // 0x0038(0x0050)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AICommunicateAsset">();
-	}
-	static class UAICommunicateAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAICommunicateAsset>();
-	}
-};
-static_assert(alignof(UAICommunicateAsset) == 0x000008, "Wrong alignment on UAICommunicateAsset");
-static_assert(sizeof(UAICommunicateAsset) == 0x000088, "Wrong size on UAICommunicateAsset");
-static_assert(offsetof(UAICommunicateAsset, Communicate) == 0x000038, "Member 'UAICommunicateAsset::Communicate' has a wrong offset!");
-
-// Class MarvelAI.BTS_SendChatMessage
-// 0x0050 (0x00C8 - 0x0078)
-class UBTS_SendChatMessage final : public UBTService
-{
-public:
-	int32                                         MessageSide;                                       // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TimeStamp;                                         // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChannelType;                                       // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpecialType;                                       // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PoolHealth;                                        // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SendMessageCD;                                     // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             AICommunicateDataTableAsset;                       // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAICommunicateAsset*                    WeightsAsset;                                      // 0x0098(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AMarvelAIController*                    AIOwner;                                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FDateTime                              LastSendMessageTime;                               // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B0[0x18];                                      // 0x00B0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class FString GetAIUserName(class AActor* Target);
-	void OnAllDeath(const struct FAIEventArgs& Args);
-	void OnDeath(const struct FAIEventArgs& Args);
-	void OnEnergyFull(const struct FAIEventArgs& Args);
-	void OnGameBegin(const struct FAIEventArgs& Args);
-	void OnGameEnd(const struct FAIEventArgs& Args);
-	void OnHeal(const struct FAIEventArgs& Args);
-	void OnHealthChanged(const struct FAIEventArgs& Args);
-	void SendChatMessage(const class FString& Msg, class AActor* Target);
-	void SendMessage(struct FAICommunicateEx* Communicate, class AActor* Target);
-	void SendQuickMessage(const int32& ID, class AActor* Target);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_SendChatMessage">();
-	}
-	static class UBTS_SendChatMessage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_SendChatMessage>();
-	}
-};
-static_assert(alignof(UBTS_SendChatMessage) == 0x000008, "Wrong alignment on UBTS_SendChatMessage");
-static_assert(sizeof(UBTS_SendChatMessage) == 0x0000C8, "Wrong size on UBTS_SendChatMessage");
-static_assert(offsetof(UBTS_SendChatMessage, MessageSide) == 0x000078, "Member 'UBTS_SendChatMessage::MessageSide' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, TimeStamp) == 0x00007C, "Member 'UBTS_SendChatMessage::TimeStamp' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, ChannelType) == 0x000080, "Member 'UBTS_SendChatMessage::ChannelType' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, SpecialType) == 0x000084, "Member 'UBTS_SendChatMessage::SpecialType' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, PoolHealth) == 0x000088, "Member 'UBTS_SendChatMessage::PoolHealth' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, SendMessageCD) == 0x00008C, "Member 'UBTS_SendChatMessage::SendMessageCD' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, AICommunicateDataTableAsset) == 0x000090, "Member 'UBTS_SendChatMessage::AICommunicateDataTableAsset' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, WeightsAsset) == 0x000098, "Member 'UBTS_SendChatMessage::WeightsAsset' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, AIOwner) == 0x0000A0, "Member 'UBTS_SendChatMessage::AIOwner' has a wrong offset!");
-static_assert(offsetof(UBTS_SendChatMessage, LastSendMessageTime) == 0x0000A8, "Member 'UBTS_SendChatMessage::LastSendMessageTime' has a wrong offset!");
-
-// Class MarvelAI.BTS_SetFocus
-// 0x0090 (0x0108 - 0x0078)
-class UBTS_SetFocus final : public UBTService
-{
-public:
-	bool                                          bUpdateTargetInTick;                               // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bFocusOnLocation;                                  // 0x0079(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 LocationToFocus;                                   // 0x0080(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 ActorToFocus;                                      // 0x00B0(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	bool                                          bUseExtentCenter;                                  // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinRandomOffsetYaw;                                // 0x00E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxRandomOffsetYaw;                                // 0x00E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinRandomOffsetPitch;                              // 0x00EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxRandomOffsetPitch;                              // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         RandomOffsetTickInterval;                          // 0x00F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bClearAllPrevFocus;                                // 0x00F8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bClearFocusWhenExit;                               // 0x00F9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_FA[0x2];                                       // 0x00FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ClearFocusDelay;                                   // 0x00FC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_100[0x8];                                      // 0x0100(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_SetFocus">();
-	}
-	static class UBTS_SetFocus* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_SetFocus>();
-	}
-};
-static_assert(alignof(UBTS_SetFocus) == 0x000008, "Wrong alignment on UBTS_SetFocus");
-static_assert(sizeof(UBTS_SetFocus) == 0x000108, "Wrong size on UBTS_SetFocus");
-static_assert(offsetof(UBTS_SetFocus, bUpdateTargetInTick) == 0x000078, "Member 'UBTS_SetFocus::bUpdateTargetInTick' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, bFocusOnLocation) == 0x000079, "Member 'UBTS_SetFocus::bFocusOnLocation' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, LocationToFocus) == 0x000080, "Member 'UBTS_SetFocus::LocationToFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, ActorToFocus) == 0x0000B0, "Member 'UBTS_SetFocus::ActorToFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, bUseExtentCenter) == 0x0000E0, "Member 'UBTS_SetFocus::bUseExtentCenter' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, MinRandomOffsetYaw) == 0x0000E4, "Member 'UBTS_SetFocus::MinRandomOffsetYaw' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, MaxRandomOffsetYaw) == 0x0000E8, "Member 'UBTS_SetFocus::MaxRandomOffsetYaw' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, MinRandomOffsetPitch) == 0x0000EC, "Member 'UBTS_SetFocus::MinRandomOffsetPitch' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, MaxRandomOffsetPitch) == 0x0000F0, "Member 'UBTS_SetFocus::MaxRandomOffsetPitch' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, RandomOffsetTickInterval) == 0x0000F4, "Member 'UBTS_SetFocus::RandomOffsetTickInterval' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, bClearAllPrevFocus) == 0x0000F8, "Member 'UBTS_SetFocus::bClearAllPrevFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, bClearFocusWhenExit) == 0x0000F9, "Member 'UBTS_SetFocus::bClearFocusWhenExit' has a wrong offset!");
-static_assert(offsetof(UBTS_SetFocus, ClearFocusDelay) == 0x0000FC, "Member 'UBTS_SetFocus::ClearFocusDelay' has a wrong offset!");
-
-// Class MarvelAI.HotPoint_DataAsset
-// 0x00A0 (0x00D8 - 0x0038)
-class UHotPoint_DataAsset final : public UDataAsset
-{
-public:
-	TMap<class FName, struct FMapPoint>           MapPoints;                                         // 0x0038(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FMapPoint                              DefaultConfig;                                     // 0x0088(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"HotPoint_DataAsset">();
-	}
-	static class UHotPoint_DataAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UHotPoint_DataAsset>();
-	}
-};
-static_assert(alignof(UHotPoint_DataAsset) == 0x000008, "Wrong alignment on UHotPoint_DataAsset");
-static_assert(sizeof(UHotPoint_DataAsset) == 0x0000D8, "Wrong size on UHotPoint_DataAsset");
-static_assert(offsetof(UHotPoint_DataAsset, MapPoints) == 0x000038, "Member 'UHotPoint_DataAsset::MapPoints' has a wrong offset!");
-static_assert(offsetof(UHotPoint_DataAsset, DefaultConfig) == 0x000088, "Member 'UHotPoint_DataAsset::DefaultConfig' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateAnthropomorphicType
-// 0x0030 (0x00A8 - 0x0078)
-class UBTS_UpdateAnthropomorphicType : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutAnthropomorphic;                                // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateAnthropomorphicType">();
-	}
-	static class UBTS_UpdateAnthropomorphicType* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateAnthropomorphicType>();
-	}
-};
-static_assert(alignof(UBTS_UpdateAnthropomorphicType) == 0x000008, "Wrong alignment on UBTS_UpdateAnthropomorphicType");
-static_assert(sizeof(UBTS_UpdateAnthropomorphicType) == 0x0000A8, "Wrong size on UBTS_UpdateAnthropomorphicType");
-static_assert(offsetof(UBTS_UpdateAnthropomorphicType, OutAnthropomorphic) == 0x000078, "Member 'UBTS_UpdateAnthropomorphicType::OutAnthropomorphic' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateCampState
-// 0x0030 (0x00A8 - 0x0078)
-class UBTS_UpdateCampState final : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutCampState;                                      // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateCampState">();
-	}
-	static class UBTS_UpdateCampState* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateCampState>();
-	}
-};
-static_assert(alignof(UBTS_UpdateCampState) == 0x000008, "Wrong alignment on UBTS_UpdateCampState");
-static_assert(sizeof(UBTS_UpdateCampState) == 0x0000A8, "Wrong size on UBTS_UpdateCampState");
-static_assert(offsetof(UBTS_UpdateCampState, OutCampState) == 0x000078, "Member 'UBTS_UpdateCampState::OutCampState' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateMatchState_New
-// 0x0098 (0x0140 - 0x00A8)
-class UBTS_UpdateMatchState_New : public UBTService_MarvelInstancedBase
-{
-public:
-	struct FBlackboardKeySelector                 GameModeTagKey;                                    // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 MatchStateKey;                                     // 0x00D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 RemainTimeKey;                                     // 0x0108(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	class ULevelSubsystem*                        LevelSubsystem;                                    // 0x0138(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnMatchStateChange(EMatchState NewState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateMatchState_New">();
-	}
-	static class UBTS_UpdateMatchState_New* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateMatchState_New>();
-	}
-};
-static_assert(alignof(UBTS_UpdateMatchState_New) == 0x000008, "Wrong alignment on UBTS_UpdateMatchState_New");
-static_assert(sizeof(UBTS_UpdateMatchState_New) == 0x000140, "Wrong size on UBTS_UpdateMatchState_New");
-static_assert(offsetof(UBTS_UpdateMatchState_New, GameModeTagKey) == 0x0000A8, "Member 'UBTS_UpdateMatchState_New::GameModeTagKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateMatchState_New, MatchStateKey) == 0x0000D8, "Member 'UBTS_UpdateMatchState_New::MatchStateKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateMatchState_New, RemainTimeKey) == 0x000108, "Member 'UBTS_UpdateMatchState_New::RemainTimeKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateMatchState_New, LevelSubsystem) == 0x000138, "Member 'UBTS_UpdateMatchState_New::LevelSubsystem' has a wrong offset!");
-
-// Class MarvelAI.SniperStandPoint
-// 0x0000 (0x07B0 - 0x07B0)
-class ASniperStandPoint final : public AStandPointBase
-{
-public:
-	float                                         WarningRadius;                                     // 0x07A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7AC[0x4];                                      // 0x07AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool CheckEnemyIsInWarningRange(class AActor* EnemyActor);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SniperStandPoint">();
-	}
-	static class ASniperStandPoint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ASniperStandPoint>();
-	}
-};
-static_assert(alignof(ASniperStandPoint) == 0x000010, "Wrong alignment on ASniperStandPoint");
-static_assert(sizeof(ASniperStandPoint) == 0x0007B0, "Wrong size on ASniperStandPoint");
-static_assert(offsetof(ASniperStandPoint, WarningRadius) == 0x0007A8, "Member 'ASniperStandPoint::WarningRadius' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateControlState
-// 0x0090 (0x01D0 - 0x0140)
-class UBTS_UpdateControlState final : public UBTS_UpdateMatchState_New
-{
-public:
-	struct FBlackboardKeySelector                 AllyCampProgressKey;                               // 0x0140(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 EnemyCampProgressKey;                              // 0x0170(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 ControlStateKey;                                   // 0x01A0(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	EAIFilterSide GetCampControlState(class AMarvelBaseCharacter* OwnerCharacter);
-	TArray<float> GetCampProgress(class AMarvelBaseCharacter* OwnerCharacter);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateControlState">();
-	}
-	static class UBTS_UpdateControlState* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateControlState>();
-	}
-};
-static_assert(alignof(UBTS_UpdateControlState) == 0x000008, "Wrong alignment on UBTS_UpdateControlState");
-static_assert(sizeof(UBTS_UpdateControlState) == 0x0001D0, "Wrong size on UBTS_UpdateControlState");
-static_assert(offsetof(UBTS_UpdateControlState, AllyCampProgressKey) == 0x000140, "Member 'UBTS_UpdateControlState::AllyCampProgressKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateControlState, EnemyCampProgressKey) == 0x000170, "Member 'UBTS_UpdateControlState::EnemyCampProgressKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateControlState, ControlStateKey) == 0x0001A0, "Member 'UBTS_UpdateControlState::ControlStateKey' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateDangerous
-// 0x0010 (0x0088 - 0x0078)
-class UBTS_UpdateDangerous : public UBTService
-{
-public:
-	bool                                          bEnableDebugLog;                                   // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDangerousTargetAsset*                  DangerousTarget;                                   // 0x0080(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateDangerous">();
-	}
-	static class UBTS_UpdateDangerous* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateDangerous>();
-	}
-};
-static_assert(alignof(UBTS_UpdateDangerous) == 0x000008, "Wrong alignment on UBTS_UpdateDangerous");
-static_assert(sizeof(UBTS_UpdateDangerous) == 0x000088, "Wrong size on UBTS_UpdateDangerous");
-static_assert(offsetof(UBTS_UpdateDangerous, bEnableDebugLog) == 0x000078, "Member 'UBTS_UpdateDangerous::bEnableDebugLog' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateDangerous, DangerousTarget) == 0x000080, "Member 'UBTS_UpdateDangerous::DangerousTarget' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod
-// 0x0010 (0x0048 - 0x0038)
-class UNavLinkMoveMethod : public UPrimaryDataAsset
-{
-public:
-	float                                         MaxVerticalMoveHeight;                             // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseCustomLogicToCheckHasPass;                     // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseCustomMoveInput;                               // 0x003D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TickInterval;                                      // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod">();
-	}
-	static class UNavLinkMoveMethod* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod) == 0x000008, "Wrong alignment on UNavLinkMoveMethod");
-static_assert(sizeof(UNavLinkMoveMethod) == 0x000048, "Wrong size on UNavLinkMoveMethod");
-static_assert(offsetof(UNavLinkMoveMethod, MaxVerticalMoveHeight) == 0x000038, "Member 'UNavLinkMoveMethod::MaxVerticalMoveHeight' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod, bUseCustomLogicToCheckHasPass) == 0x00003C, "Member 'UNavLinkMoveMethod::bUseCustomLogicToCheckHasPass' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod, bUseCustomMoveInput) == 0x00003D, "Member 'UNavLinkMoveMethod::bUseCustomMoveInput' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod, TickInterval) == 0x000040, "Member 'UNavLinkMoveMethod::TickInterval' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod_Elevator
-// 0x0000 (0x0048 - 0x0048)
-class UNavLinkMoveMethod_Elevator final : public UNavLinkMoveMethod
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod_Elevator">();
-	}
-	static class UNavLinkMoveMethod_Elevator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_Elevator>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod_Elevator) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_Elevator");
-static_assert(sizeof(UNavLinkMoveMethod_Elevator) == 0x000048, "Wrong size on UNavLinkMoveMethod_Elevator");
-
-// Class MarvelAI.BTS_UpdateEscortStateNew
-// 0x0090 (0x01D0 - 0x0140)
-class UBTS_UpdateEscortStateNew : public UBTS_UpdateMatchState_New
-{
-public:
-	struct FBlackboardKeySelector                 GameStageKey;                                      // 0x0140(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 PayloadStateKey;                                   // 0x0170(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 PayloadProgressKey;                                // 0x01A0(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	EOwnershipType GetPayloadOwnership();
-	float GetPayLoadProgress();
-	float GetPayLoadSpeed();
-	void OnPreGameMatchEvent(EMatchState MatchState);
-	void SetCurrentStage(const class FString& StageName);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateEscortStateNew">();
-	}
-	static class UBTS_UpdateEscortStateNew* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateEscortStateNew>();
-	}
-};
-static_assert(alignof(UBTS_UpdateEscortStateNew) == 0x000008, "Wrong alignment on UBTS_UpdateEscortStateNew");
-static_assert(sizeof(UBTS_UpdateEscortStateNew) == 0x0001D0, "Wrong size on UBTS_UpdateEscortStateNew");
-static_assert(offsetof(UBTS_UpdateEscortStateNew, GameStageKey) == 0x000140, "Member 'UBTS_UpdateEscortStateNew::GameStageKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateEscortStateNew, PayloadStateKey) == 0x000170, "Member 'UBTS_UpdateEscortStateNew::PayloadStateKey' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateEscortStateNew, PayloadProgressKey) == 0x0001A0, "Member 'UBTS_UpdateEscortStateNew::PayloadProgressKey' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateFireLine
-// 0x0070 (0x00E8 - 0x0078)
-class UBTS_UpdateFireLine final : public UBTService
-{
-public:
-	float                                         TeammateDistance;                                  // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 DifficultyMode;                                    // 0x0080(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 DifficultyLevel;                                   // 0x00B0(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         TempPriority;                                      // 0x00E0(0x0004)(BlueprintVisible, ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool IsActorInFireLineState(const class AMarvelBaseCharacter* Character);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateFireLine">();
-	}
-	static class UBTS_UpdateFireLine* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateFireLine>();
-	}
-};
-static_assert(alignof(UBTS_UpdateFireLine) == 0x000008, "Wrong alignment on UBTS_UpdateFireLine");
-static_assert(sizeof(UBTS_UpdateFireLine) == 0x0000E8, "Wrong size on UBTS_UpdateFireLine");
-static_assert(offsetof(UBTS_UpdateFireLine, TeammateDistance) == 0x000078, "Member 'UBTS_UpdateFireLine::TeammateDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateFireLine, DifficultyMode) == 0x000080, "Member 'UBTS_UpdateFireLine::DifficultyMode' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateFireLine, DifficultyLevel) == 0x0000B0, "Member 'UBTS_UpdateFireLine::DifficultyLevel' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateFireLine, TempPriority) == 0x0000E0, "Member 'UBTS_UpdateFireLine::TempPriority' has a wrong offset!");
-
-// Class MarvelAI.SteeringLimiter
-// 0x0000 (0x0000 - 0x0000)
-class ISteeringLimiter final
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SteeringLimiter">();
-	}
-	static class ISteeringLimiter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ISteeringLimiter>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
-	}
-};
-static_assert(alignof(ISteeringLimiter) == 0x000001, "Wrong alignment on ISteeringLimiter");
-static_assert(sizeof(ISteeringLimiter) == 0x000001, "Wrong size on ISteeringLimiter");
-
-// Class MarvelAI.BTS_UpdateFrontier
-// 0x0030 (0x00A8 - 0x0078)
-class UBTS_UpdateFrontier : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutFrontier;                                       // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateFrontier">();
-	}
-	static class UBTS_UpdateFrontier* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateFrontier>();
-	}
-};
-static_assert(alignof(UBTS_UpdateFrontier) == 0x000008, "Wrong alignment on UBTS_UpdateFrontier");
-static_assert(sizeof(UBTS_UpdateFrontier) == 0x0000A8, "Wrong size on UBTS_UpdateFrontier");
-static_assert(offsetof(UBTS_UpdateFrontier, OutFrontier) == 0x000078, "Member 'UBTS_UpdateFrontier::OutFrontier' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateMapID
-// 0x0030 (0x00A8 - 0x0078)
-class UBTS_UpdateMapID : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutMapID;                                          // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateMapID">();
-	}
-	static class UBTS_UpdateMapID* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateMapID>();
-	}
-};
-static_assert(alignof(UBTS_UpdateMapID) == 0x000008, "Wrong alignment on UBTS_UpdateMapID");
-static_assert(sizeof(UBTS_UpdateMapID) == 0x0000A8, "Wrong size on UBTS_UpdateMapID");
-static_assert(offsetof(UBTS_UpdateMapID, OutMapID) == 0x000078, "Member 'UBTS_UpdateMapID::OutMapID' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateMatchState
-// 0x0068 (0x00E0 - 0x0078)
-class UBTS_UpdateMatchState final : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 OutMatchState;                                     // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 OutBattleState;                                    // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPublic)
-	class AAIController*                          AIOwner;                                           // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void OnMatchStateChange(EMatchState NewState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateMatchState">();
-	}
-	static class UBTS_UpdateMatchState* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateMatchState>();
-	}
-};
-static_assert(alignof(UBTS_UpdateMatchState) == 0x000008, "Wrong alignment on UBTS_UpdateMatchState");
-static_assert(sizeof(UBTS_UpdateMatchState) == 0x0000E0, "Wrong size on UBTS_UpdateMatchState");
-static_assert(offsetof(UBTS_UpdateMatchState, OutMatchState) == 0x000078, "Member 'UBTS_UpdateMatchState::OutMatchState' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateMatchState, OutBattleState) == 0x0000A8, "Member 'UBTS_UpdateMatchState::OutBattleState' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateMatchState, AIOwner) == 0x0000D8, "Member 'UBTS_UpdateMatchState::AIOwner' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdatePath
-// 0x0268 (0x0310 - 0x00A8)
-class UBTS_UpdatePath final : public UBTService_MarvelInstancedBase
-{
-public:
-	struct FBlackboardKeySelector                 LeaderActor;                                       // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 IsMoving;                                          // 0x00D8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	bool                                          bEnablePathPointRandomRadius;                      // 0x0108(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PathPointRandomRadius;                             // 0x010C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMarvelAIController*                    CacheLeaderController;                             // 0x0110(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ANavigationData*                        CacheNavData;                                      // 0x0118(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FAIMoveRequest                         CacheMoveRequest;                                  // 0x0120(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	struct FNavPathWrapper                        CachePathWrapper;                                  // 0x0170(0x0180)(Transient, Protected, NativeAccessSpecifierProtected)
-	float                                         Delay;                                             // 0x02F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DelayRandomDeviation;                              // 0x02F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2F8[0x18];                                     // 0x02F8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnLeaderPathUpdate(const struct FAIMoveRequest& MoveRequest, const struct FNavPathWrapper& NewPath);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdatePath">();
-	}
-	static class UBTS_UpdatePath* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdatePath>();
-	}
-};
-static_assert(alignof(UBTS_UpdatePath) == 0x000008, "Wrong alignment on UBTS_UpdatePath");
-static_assert(sizeof(UBTS_UpdatePath) == 0x000310, "Wrong size on UBTS_UpdatePath");
-static_assert(offsetof(UBTS_UpdatePath, LeaderActor) == 0x0000A8, "Member 'UBTS_UpdatePath::LeaderActor' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, IsMoving) == 0x0000D8, "Member 'UBTS_UpdatePath::IsMoving' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, bEnablePathPointRandomRadius) == 0x000108, "Member 'UBTS_UpdatePath::bEnablePathPointRandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, PathPointRandomRadius) == 0x00010C, "Member 'UBTS_UpdatePath::PathPointRandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, CacheLeaderController) == 0x000110, "Member 'UBTS_UpdatePath::CacheLeaderController' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, CacheNavData) == 0x000118, "Member 'UBTS_UpdatePath::CacheNavData' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, CacheMoveRequest) == 0x000120, "Member 'UBTS_UpdatePath::CacheMoveRequest' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, CachePathWrapper) == 0x000170, "Member 'UBTS_UpdatePath::CachePathWrapper' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, Delay) == 0x0002F0, "Member 'UBTS_UpdatePath::Delay' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdatePath, DelayRandomDeviation) == 0x0002F4, "Member 'UBTS_UpdatePath::DelayRandomDeviation' has a wrong offset!");
-
-// Class MarvelAI.SteeringBehavior
-// 0x0020 (0x0050 - 0x0030)
-class USteeringBehavior : public UObject
-{
-public:
-	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FixedContextMarkAngleInDegree;                     // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FColor                                 DrawDebugColor;                                    // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DrawDebugLengthFactor;                             // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bShouldDrawDebug;                                  // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SteeringBehavior">();
-	}
-	static class USteeringBehavior* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USteeringBehavior>();
-	}
-};
-static_assert(alignof(USteeringBehavior) == 0x000008, "Wrong alignment on USteeringBehavior");
-static_assert(sizeof(USteeringBehavior) == 0x000050, "Wrong size on USteeringBehavior");
-static_assert(offsetof(USteeringBehavior, FixedContextMarkAngleInDegree) == 0x000040, "Member 'USteeringBehavior::FixedContextMarkAngleInDegree' has a wrong offset!");
-static_assert(offsetof(USteeringBehavior, DrawDebugColor) == 0x000044, "Member 'USteeringBehavior::DrawDebugColor' has a wrong offset!");
-static_assert(offsetof(USteeringBehavior, DrawDebugLengthFactor) == 0x000048, "Member 'USteeringBehavior::DrawDebugLengthFactor' has a wrong offset!");
-static_assert(offsetof(USteeringBehavior, bShouldDrawDebug) == 0x00004C, "Member 'USteeringBehavior::bShouldDrawDebug' has a wrong offset!");
-
-// Class MarvelAI.Steering_AvoidFireLine
-// 0x0030 (0x0080 - 0x0050)
-class USteering_AvoidFireLine final : public USteeringBehavior
-{
-public:
-	float                                         RunEQSDeltaTime;                                   // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0058(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SkipDistance;                                      // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_64[0x1C];                                      // 0x0064(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Steering_AvoidFireLine">();
-	}
-	static class USteering_AvoidFireLine* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USteering_AvoidFireLine>();
-	}
-};
-static_assert(alignof(USteering_AvoidFireLine) == 0x000008, "Wrong alignment on USteering_AvoidFireLine");
-static_assert(sizeof(USteering_AvoidFireLine) == 0x000080, "Wrong size on USteering_AvoidFireLine");
-static_assert(offsetof(USteering_AvoidFireLine, RunEQSDeltaTime) == 0x000050, "Member 'USteering_AvoidFireLine::RunEQSDeltaTime' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidFireLine, QueryTemplate) == 0x000058, "Member 'USteering_AvoidFireLine::QueryTemplate' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidFireLine, SkipDistance) == 0x000060, "Member 'USteering_AvoidFireLine::SkipDistance' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateSight
-// 0x00D8 (0x0150 - 0x0078)
-class UBTS_UpdateSight : public UBTService
-{
-public:
-	bool                                          bUseDistancePerspective;                           // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 DisPerspectiveHeroIDs;                             // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         PerspectiveDistance;                               // 0x0090(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseTagPerspective;                                // 0x0094(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 TagPerspectiveHeroIDs;                             // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PerspectiveTag;                                    // 0x00A8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TagPerspectiveDistance;                            // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PerspectiveCooperateTag;                           // 0x00B8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FVisionConfig>             HeroIDToVisionRadius;                              // 0x00C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         VisionRadius;                                      // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisionRadiusForDamageSource;                       // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisionHalfAngleEnemy;                              // 0x0120(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisionHalfAngleAlly;                               // 0x0124(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisionHalfAngleTooClose;                           // 0x0128(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisionHalfAngleInSense;                            // 0x012C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxAge;                                            // 0x0130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAIController*                    AIOwner;                                           // 0x0138(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMarvelAIPerceptionComponent*           AIPerceptionComponent;                             // 0x0140(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAISenseConfig_Sight*                   SightConfig;                                       // 0x0148(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void OnResetSightConfig(float NewRadius);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateSight">();
-	}
-	static class UBTS_UpdateSight* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateSight>();
-	}
-};
-static_assert(alignof(UBTS_UpdateSight) == 0x000008, "Wrong alignment on UBTS_UpdateSight");
-static_assert(sizeof(UBTS_UpdateSight) == 0x000150, "Wrong size on UBTS_UpdateSight");
-static_assert(offsetof(UBTS_UpdateSight, bUseDistancePerspective) == 0x000078, "Member 'UBTS_UpdateSight::bUseDistancePerspective' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, DisPerspectiveHeroIDs) == 0x000080, "Member 'UBTS_UpdateSight::DisPerspectiveHeroIDs' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, PerspectiveDistance) == 0x000090, "Member 'UBTS_UpdateSight::PerspectiveDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, bUseTagPerspective) == 0x000094, "Member 'UBTS_UpdateSight::bUseTagPerspective' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, TagPerspectiveHeroIDs) == 0x000098, "Member 'UBTS_UpdateSight::TagPerspectiveHeroIDs' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, PerspectiveTag) == 0x0000A8, "Member 'UBTS_UpdateSight::PerspectiveTag' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, TagPerspectiveDistance) == 0x0000B4, "Member 'UBTS_UpdateSight::TagPerspectiveDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, PerspectiveCooperateTag) == 0x0000B8, "Member 'UBTS_UpdateSight::PerspectiveCooperateTag' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, HeroIDToVisionRadius) == 0x0000C8, "Member 'UBTS_UpdateSight::HeroIDToVisionRadius' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionRadius) == 0x000118, "Member 'UBTS_UpdateSight::VisionRadius' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionRadiusForDamageSource) == 0x00011C, "Member 'UBTS_UpdateSight::VisionRadiusForDamageSource' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionHalfAngleEnemy) == 0x000120, "Member 'UBTS_UpdateSight::VisionHalfAngleEnemy' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionHalfAngleAlly) == 0x000124, "Member 'UBTS_UpdateSight::VisionHalfAngleAlly' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionHalfAngleTooClose) == 0x000128, "Member 'UBTS_UpdateSight::VisionHalfAngleTooClose' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, VisionHalfAngleInSense) == 0x00012C, "Member 'UBTS_UpdateSight::VisionHalfAngleInSense' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, MaxAge) == 0x000130, "Member 'UBTS_UpdateSight::MaxAge' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, AIOwner) == 0x000138, "Member 'UBTS_UpdateSight::AIOwner' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, AIPerceptionComponent) == 0x000140, "Member 'UBTS_UpdateSight::AIPerceptionComponent' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSight, SightConfig) == 0x000148, "Member 'UBTS_UpdateSight::SightConfig' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateSpineDist2Payload
-// 0x00A0 (0x0118 - 0x0078)
-class UBTS_UpdateSpineDist2Payload final : public UBTService
-{
-public:
-	struct FBlackboardKeySelector                 InTarget;                                          // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 InFrontier;                                        // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 OutDistance;                                       // 0x00D8(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	TArray<class USplineComponent*>               SplineComponents;                                  // 0x0108(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateSpineDist2Payload">();
-	}
-	static class UBTS_UpdateSpineDist2Payload* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateSpineDist2Payload>();
-	}
-};
-static_assert(alignof(UBTS_UpdateSpineDist2Payload) == 0x000008, "Wrong alignment on UBTS_UpdateSpineDist2Payload");
-static_assert(sizeof(UBTS_UpdateSpineDist2Payload) == 0x000118, "Wrong size on UBTS_UpdateSpineDist2Payload");
-static_assert(offsetof(UBTS_UpdateSpineDist2Payload, InTarget) == 0x000078, "Member 'UBTS_UpdateSpineDist2Payload::InTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSpineDist2Payload, InFrontier) == 0x0000A8, "Member 'UBTS_UpdateSpineDist2Payload::InFrontier' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSpineDist2Payload, OutDistance) == 0x0000D8, "Member 'UBTS_UpdateSpineDist2Payload::OutDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_UpdateSpineDist2Payload, SplineComponents) == 0x000108, "Member 'UBTS_UpdateSpineDist2Payload::SplineComponents' has a wrong offset!");
-
-// Class MarvelAI.ShelterPathFinder
-// 0x0040 (0x0070 - 0x0030)
-class UShelterPathFinder final : public UObject
-{
-public:
-	struct FShelterPathFindConfig                 PathFindConfig;                                    // 0x0030(0x0040)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-
-public:
-	EPathFollowingRequestResult RequestMove(class AMarvelAIController* AIOwner, const struct FVector& TargetLocation) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ShelterPathFinder">();
-	}
-	static class UShelterPathFinder* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UShelterPathFinder>();
-	}
-};
-static_assert(alignof(UShelterPathFinder) == 0x000008, "Wrong alignment on UShelterPathFinder");
-static_assert(sizeof(UShelterPathFinder) == 0x000070, "Wrong size on UShelterPathFinder");
-static_assert(offsetof(UShelterPathFinder, PathFindConfig) == 0x000030, "Member 'UShelterPathFinder::PathFindConfig' has a wrong offset!");
-
-// Class MarvelAI.BTS_UpdateUsageGroup
-// 0x0068 (0x00E0 - 0x0078)
-class UBTS_UpdateUsageGroup : public UBTService
-{
-public:
-	struct FGameplayTagContainer                  UsageGroupTags;                                    // 0x0078(0x0068)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTS_UpdateUsageGroup">();
-	}
-	static class UBTS_UpdateUsageGroup* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTS_UpdateUsageGroup>();
-	}
-};
-static_assert(alignof(UBTS_UpdateUsageGroup) == 0x000008, "Wrong alignment on UBTS_UpdateUsageGroup");
-static_assert(sizeof(UBTS_UpdateUsageGroup) == 0x0000E0, "Wrong size on UBTS_UpdateUsageGroup");
-static_assert(offsetof(UBTS_UpdateUsageGroup, UsageGroupTags) == 0x000078, "Member 'UBTS_UpdateUsageGroup::UsageGroupTags' has a wrong offset!");
-
-// Class MarvelAI.BTTask_AbilityDelayWait_BB
-// 0x0030 (0x00B0 - 0x0080)
-class UBTTask_AbilityDelayWait_BB final : public UBTTask_Wait
-{
-public:
-	struct FBlackboardKeySelector                 InAbilityUsage;                                    // 0x0080(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_AbilityDelayWait_BB">();
-	}
-	static class UBTTask_AbilityDelayWait_BB* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_AbilityDelayWait_BB>();
-	}
-};
-static_assert(alignof(UBTTask_AbilityDelayWait_BB) == 0x000008, "Wrong alignment on UBTTask_AbilityDelayWait_BB");
-static_assert(sizeof(UBTTask_AbilityDelayWait_BB) == 0x0000B0, "Wrong size on UBTTask_AbilityDelayWait_BB");
-static_assert(offsetof(UBTTask_AbilityDelayWait_BB, InAbilityUsage) == 0x000080, "Member 'UBTTask_AbilityDelayWait_BB::InAbilityUsage' has a wrong offset!");
-
-// Class MarvelAI.Steering_CrossMove
-// 0x0000 (0x0050 - 0x0050)
-class USteering_CrossMove final : public USteeringBehavior
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Steering_CrossMove">();
-	}
-	static class USteering_CrossMove* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USteering_CrossMove>();
-	}
-};
-static_assert(alignof(USteering_CrossMove) == 0x000008, "Wrong alignment on USteering_CrossMove");
-static_assert(sizeof(USteering_CrossMove) == 0x000050, "Wrong size on USteering_CrossMove");
-
-// Class MarvelAI.BTTask_GeneralActivateAbility
-// 0x0038 (0x00B0 - 0x0078)
-class UBTTask_GeneralActivateAbility : public UBTTaskNode
-{
-public:
-	int32                                         AbilityID;                                         // 0x0078(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxActivateDuration;                               // 0x007C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         bEndTaskByAbilityBreak : 1;                        // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bCancelAbilityOnBreak : 1;                         // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelGameplayAbility*                 CurrentAbility;                                    // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_90[0x20];                                      // 0x0090(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void EndCurrentTask();
-	void OnAbilityBreak();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_GeneralActivateAbility">();
-	}
-	static class UBTTask_GeneralActivateAbility* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_GeneralActivateAbility>();
-	}
-};
-static_assert(alignof(UBTTask_GeneralActivateAbility) == 0x000008, "Wrong alignment on UBTTask_GeneralActivateAbility");
-static_assert(sizeof(UBTTask_GeneralActivateAbility) == 0x0000B0, "Wrong size on UBTTask_GeneralActivateAbility");
-static_assert(offsetof(UBTTask_GeneralActivateAbility, AbilityID) == 0x000078, "Member 'UBTTask_GeneralActivateAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(UBTTask_GeneralActivateAbility, MaxActivateDuration) == 0x00007C, "Member 'UBTTask_GeneralActivateAbility::MaxActivateDuration' has a wrong offset!");
-static_assert(offsetof(UBTTask_GeneralActivateAbility, CurrentAbility) == 0x000088, "Member 'UBTTask_GeneralActivateAbility::CurrentAbility' has a wrong offset!");
-
-// Class MarvelAI.BTTask_ActivateAbility_BB
-// 0x0118 (0x01C8 - 0x00B0)
-class UBTTask_ActivateAbility_BB final : public UBTTask_GeneralActivateAbility
-{
-public:
-	struct FBlackboardKeySelector                 InAbilityUsageObject;                              // 0x00B0(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E0[0xE8];                                      // 0x00E0(0x00E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_ActivateAbility_BB">();
-	}
-	static class UBTTask_ActivateAbility_BB* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_ActivateAbility_BB>();
-	}
-};
-static_assert(alignof(UBTTask_ActivateAbility_BB) == 0x000008, "Wrong alignment on UBTTask_ActivateAbility_BB");
-static_assert(sizeof(UBTTask_ActivateAbility_BB) == 0x0001C8, "Wrong size on UBTTask_ActivateAbility_BB");
-static_assert(offsetof(UBTTask_ActivateAbility_BB, InAbilityUsageObject) == 0x0000B0, "Member 'UBTTask_ActivateAbility_BB::InAbilityUsageObject' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod_DoubleJump
-// 0x0008 (0x0050 - 0x0048)
-class UNavLinkMoveMethod_DoubleJump final : public UNavLinkMoveMethod
-{
-public:
-	int32                                         AbilityID;                                         // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeDelayForDoubleJump;                            // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod_DoubleJump">();
-	}
-	static class UNavLinkMoveMethod_DoubleJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_DoubleJump>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod_DoubleJump) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_DoubleJump");
-static_assert(sizeof(UNavLinkMoveMethod_DoubleJump) == 0x000050, "Wrong size on UNavLinkMoveMethod_DoubleJump");
-static_assert(offsetof(UNavLinkMoveMethod_DoubleJump, AbilityID) == 0x000048, "Member 'UNavLinkMoveMethod_DoubleJump::AbilityID' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_DoubleJump, TimeDelayForDoubleJump) == 0x00004C, "Member 'UNavLinkMoveMethod_DoubleJump::TimeDelayForDoubleJump' has a wrong offset!");
-
-// Class MarvelAI.BTTask_AIActivateAbilityTask
-// 0x0048 (0x00C0 - 0x0078)
-class UBTTask_AIActivateAbilityTask final : public UBTTaskNode
-{
-public:
-	struct FBlackboardKeySelector                 InAbilityUsageObject;                              // 0x0078(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           InjectionTag;                                      // 0x00A8(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBehaviorTree*                          BehaviorAsset;                                     // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void InitAbilityTask();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_AIActivateAbilityTask">();
-	}
-	static class UBTTask_AIActivateAbilityTask* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_AIActivateAbilityTask>();
-	}
-};
-static_assert(alignof(UBTTask_AIActivateAbilityTask) == 0x000008, "Wrong alignment on UBTTask_AIActivateAbilityTask");
-static_assert(sizeof(UBTTask_AIActivateAbilityTask) == 0x0000C0, "Wrong size on UBTTask_AIActivateAbilityTask");
-static_assert(offsetof(UBTTask_AIActivateAbilityTask, InAbilityUsageObject) == 0x000078, "Member 'UBTTask_AIActivateAbilityTask::InAbilityUsageObject' has a wrong offset!");
-static_assert(offsetof(UBTTask_AIActivateAbilityTask, InjectionTag) == 0x0000A8, "Member 'UBTTask_AIActivateAbilityTask::InjectionTag' has a wrong offset!");
-static_assert(offsetof(UBTTask_AIActivateAbilityTask, BehaviorAsset) == 0x0000B8, "Member 'UBTTask_AIActivateAbilityTask::BehaviorAsset' has a wrong offset!");
-
-// Class MarvelAI.BTTask_ChaseTarget
-// 0x00C8 (0x0140 - 0x0078)
-class UBTTask_ChaseTarget final : public UBTTaskNode
-{
-public:
-	float                                         AcceptableRadius;                                  // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DirectDistFactor;                                  // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldUseDirectMoveWithJump;                      // 0x0080(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceDirectMoving;                                // 0x0081(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowPartialPath;                                 // 0x0082(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableDrawDebug;                                  // 0x0083(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpDistance;                                        // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForwardDistance;                                   // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownAngle;                                         // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RequiredProgress;                                  // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CapsuleSizeFactor;                                 // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxZDistToTryPreJump;                              // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PreJumpCoolDown;                                   // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CliffCheckFrontDistance;                           // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CliffCheckDownDistance;                            // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CliffCheckVerticalMoveRange;                       // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CliffCheckExtentFactor;                            // 0x00AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CliffCheckCoolDown;                                // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OnNavMeshCheckFrontDistance;                       // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldAddHalfHeightOnCheckPoint;                  // 0x00B8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 InMoveGoal;                                        // 0x00C0(0x0030)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0[0x50];                                      // 0x00F0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_ChaseTarget">();
-	}
-	static class UBTTask_ChaseTarget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_ChaseTarget>();
-	}
-};
-static_assert(alignof(UBTTask_ChaseTarget) == 0x000008, "Wrong alignment on UBTTask_ChaseTarget");
-static_assert(sizeof(UBTTask_ChaseTarget) == 0x000140, "Wrong size on UBTTask_ChaseTarget");
-static_assert(offsetof(UBTTask_ChaseTarget, AcceptableRadius) == 0x000078, "Member 'UBTTask_ChaseTarget::AcceptableRadius' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, DirectDistFactor) == 0x00007C, "Member 'UBTTask_ChaseTarget::DirectDistFactor' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, bShouldUseDirectMoveWithJump) == 0x000080, "Member 'UBTTask_ChaseTarget::bShouldUseDirectMoveWithJump' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, bForceDirectMoving) == 0x000081, "Member 'UBTTask_ChaseTarget::bForceDirectMoving' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, bAllowPartialPath) == 0x000082, "Member 'UBTTask_ChaseTarget::bAllowPartialPath' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, bEnableDrawDebug) == 0x000083, "Member 'UBTTask_ChaseTarget::bEnableDrawDebug' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, UpDistance) == 0x000084, "Member 'UBTTask_ChaseTarget::UpDistance' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, ForwardDistance) == 0x000088, "Member 'UBTTask_ChaseTarget::ForwardDistance' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, DownAngle) == 0x00008C, "Member 'UBTTask_ChaseTarget::DownAngle' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, RequiredProgress) == 0x000090, "Member 'UBTTask_ChaseTarget::RequiredProgress' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CapsuleSizeFactor) == 0x000094, "Member 'UBTTask_ChaseTarget::CapsuleSizeFactor' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, MaxZDistToTryPreJump) == 0x000098, "Member 'UBTTask_ChaseTarget::MaxZDistToTryPreJump' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, PreJumpCoolDown) == 0x00009C, "Member 'UBTTask_ChaseTarget::PreJumpCoolDown' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CliffCheckFrontDistance) == 0x0000A0, "Member 'UBTTask_ChaseTarget::CliffCheckFrontDistance' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CliffCheckDownDistance) == 0x0000A4, "Member 'UBTTask_ChaseTarget::CliffCheckDownDistance' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CliffCheckVerticalMoveRange) == 0x0000A8, "Member 'UBTTask_ChaseTarget::CliffCheckVerticalMoveRange' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CliffCheckExtentFactor) == 0x0000AC, "Member 'UBTTask_ChaseTarget::CliffCheckExtentFactor' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, CliffCheckCoolDown) == 0x0000B0, "Member 'UBTTask_ChaseTarget::CliffCheckCoolDown' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, OnNavMeshCheckFrontDistance) == 0x0000B4, "Member 'UBTTask_ChaseTarget::OnNavMeshCheckFrontDistance' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, bShouldAddHalfHeightOnCheckPoint) == 0x0000B8, "Member 'UBTTask_ChaseTarget::bShouldAddHalfHeightOnCheckPoint' has a wrong offset!");
-static_assert(offsetof(UBTTask_ChaseTarget, InMoveGoal) == 0x0000C0, "Member 'UBTTask_ChaseTarget::InMoveGoal' has a wrong offset!");
-
-// Class MarvelAI.BTTask_MarvelInstancedBase
-// 0x0010 (0x00C0 - 0x00B0)
-class UBTTask_MarvelInstancedBase : public UBTTask_BlueprintBase
-{
-public:
-	uint8                                         Pad_B0[0x8];                                       // 0x00B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	bool IsTaskEnded();
-	void ReceiveOnTaskFinished(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult Result);
-	void SetTickInterval(float NewTickInterval);
-
-	class AMarvelBaseCharacter* K2_GetControlledHero() const;
-	class APawn* K2_GetControlledPawn() const;
-	class AMarvelAIController* K2_GetMarvelAIOwner() const;
-	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_MarvelInstancedBase">();
-	}
-	static class UBTTask_MarvelInstancedBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_MarvelInstancedBase>();
-	}
-};
-static_assert(alignof(UBTTask_MarvelInstancedBase) == 0x000008, "Wrong alignment on UBTTask_MarvelInstancedBase");
-static_assert(sizeof(UBTTask_MarvelInstancedBase) == 0x0000C0, "Wrong size on UBTTask_MarvelInstancedBase");
-static_assert(offsetof(UBTTask_MarvelInstancedBase, MarvelAIOwner) == 0x0000B8, "Member 'UBTTask_MarvelInstancedBase::MarvelAIOwner' has a wrong offset!");
-
-// Class MarvelAI.BTTask_MarvelRunBehaviorStatic
-// 0x0000 (0x0080 - 0x0080)
-class UBTTask_MarvelRunBehaviorStatic final : public UBTTask_RunBehavior
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_MarvelRunBehaviorStatic">();
-	}
-	static class UBTTask_MarvelRunBehaviorStatic* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_MarvelRunBehaviorStatic>();
-	}
-};
-static_assert(alignof(UBTTask_MarvelRunBehaviorStatic) == 0x000008, "Wrong alignment on UBTTask_MarvelRunBehaviorStatic");
-static_assert(sizeof(UBTTask_MarvelRunBehaviorStatic) == 0x000080, "Wrong size on UBTTask_MarvelRunBehaviorStatic");
-
-// Class MarvelAI.BTTask_MarvelRunEQSQuery
-// 0x0048 (0x01C0 - 0x0178)
-class UBTTask_MarvelRunEQSQuery final : public UBTTask_RunEQSQuery
-{
-public:
-	struct FBlackboardKeySelector                 AbilityMoveLogicBlackboardKey;                     // 0x0178(0x0030)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8[0x10];                                     // 0x01A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnvQuery*                              DefaultEQSTemplate;                                // 0x01B8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_MarvelRunEQSQuery">();
-	}
-	static class UBTTask_MarvelRunEQSQuery* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_MarvelRunEQSQuery>();
-	}
-};
-static_assert(alignof(UBTTask_MarvelRunEQSQuery) == 0x000008, "Wrong alignment on UBTTask_MarvelRunEQSQuery");
-static_assert(sizeof(UBTTask_MarvelRunEQSQuery) == 0x0001C0, "Wrong size on UBTTask_MarvelRunEQSQuery");
-static_assert(offsetof(UBTTask_MarvelRunEQSQuery, AbilityMoveLogicBlackboardKey) == 0x000178, "Member 'UBTTask_MarvelRunEQSQuery::AbilityMoveLogicBlackboardKey' has a wrong offset!");
-static_assert(offsetof(UBTTask_MarvelRunEQSQuery, DefaultEQSTemplate) == 0x0001B8, "Member 'UBTTask_MarvelRunEQSQuery::DefaultEQSTemplate' has a wrong offset!");
-
-// Class MarvelAI.BTTask_SwitchWeapon
-// 0x0010 (0x00C0 - 0x00B0)
-class UBTTask_SwitchWeapon final : public UBTTask_GeneralActivateAbility
-{
-public:
-	class FName                                   WeaponActionName;                                  // 0x00B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_SwitchWeapon">();
-	}
-	static class UBTTask_SwitchWeapon* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_SwitchWeapon>();
-	}
-};
-static_assert(alignof(UBTTask_SwitchWeapon) == 0x000008, "Wrong alignment on UBTTask_SwitchWeapon");
-static_assert(sizeof(UBTTask_SwitchWeapon) == 0x0000C0, "Wrong size on UBTTask_SwitchWeapon");
-static_assert(offsetof(UBTTask_SwitchWeapon, WeaponActionName) == 0x0000B0, "Member 'UBTTask_SwitchWeapon::WeaponActionName' has a wrong offset!");
-
-// Class MarvelAI.BTT_ActiveAbilityByUsage
-// 0x0050 (0x00C8 - 0x0078)
-class UBTT_ActiveAbilityByUsage final : public UBTTaskNode
-{
-public:
-	int32                                         AbilityID;                                         // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         AbilityUsageID;                                    // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FBlackboardKeySelector                 BlackboardAbilityID;                               // 0x0080(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	struct FGameplayAITag                         AbilityGroupTag;                                   // 0x00B0(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UAbilityTacticsTask>        TaskClasses;                                       // 0x00C0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_ActiveAbilityByUsage">();
-	}
-	static class UBTT_ActiveAbilityByUsage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_ActiveAbilityByUsage>();
-	}
-};
-static_assert(alignof(UBTT_ActiveAbilityByUsage) == 0x000008, "Wrong alignment on UBTT_ActiveAbilityByUsage");
-static_assert(sizeof(UBTT_ActiveAbilityByUsage) == 0x0000C8, "Wrong size on UBTT_ActiveAbilityByUsage");
-static_assert(offsetof(UBTT_ActiveAbilityByUsage, AbilityID) == 0x000078, "Member 'UBTT_ActiveAbilityByUsage::AbilityID' has a wrong offset!");
-static_assert(offsetof(UBTT_ActiveAbilityByUsage, AbilityUsageID) == 0x00007C, "Member 'UBTT_ActiveAbilityByUsage::AbilityUsageID' has a wrong offset!");
-static_assert(offsetof(UBTT_ActiveAbilityByUsage, BlackboardAbilityID) == 0x000080, "Member 'UBTT_ActiveAbilityByUsage::BlackboardAbilityID' has a wrong offset!");
-static_assert(offsetof(UBTT_ActiveAbilityByUsage, AbilityGroupTag) == 0x0000B0, "Member 'UBTT_ActiveAbilityByUsage::AbilityGroupTag' has a wrong offset!");
-static_assert(offsetof(UBTT_ActiveAbilityByUsage, TaskClasses) == 0x0000C0, "Member 'UBTT_ActiveAbilityByUsage::TaskClasses' has a wrong offset!");
-
-// Class MarvelAI.BTT_Count
-// 0x0038 (0x00B0 - 0x0078)
-class UBTT_Count final : public UBTTaskNode
-{
-public:
-	struct FBlackboardKeySelector                 Value;                                             // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	int32                                         AddNum;                                            // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_Count">();
-	}
-	static class UBTT_Count* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_Count>();
-	}
-};
-static_assert(alignof(UBTT_Count) == 0x000008, "Wrong alignment on UBTT_Count");
-static_assert(sizeof(UBTT_Count) == 0x0000B0, "Wrong size on UBTT_Count");
-static_assert(offsetof(UBTT_Count, Value) == 0x000078, "Member 'UBTT_Count::Value' has a wrong offset!");
-static_assert(offsetof(UBTT_Count, AddNum) == 0x0000A8, "Member 'UBTT_Count::AddNum' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod_WallClimb
-// 0x0018 (0x0060 - 0x0048)
-class UNavLinkMoveMethod_WallClimb final : public UNavLinkMoveMethod
-{
-public:
-	int32                                         ClimbAbilityID;                                    // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ClimbInputDetectAbilityID;                         // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCheckClimbAbilityCouldUse;                        // 0x0050(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldAdjustDestPoint;                            // 0x0051(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AdditionalOffsetToDestPoint;                       // 0x0054(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldAdjustWithNavData;                          // 0x0058(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         NavDataLerpFactor;                                 // 0x005C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod_WallClimb">();
-	}
-	static class UNavLinkMoveMethod_WallClimb* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_WallClimb>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod_WallClimb) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_WallClimb");
-static_assert(sizeof(UNavLinkMoveMethod_WallClimb) == 0x000060, "Wrong size on UNavLinkMoveMethod_WallClimb");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, ClimbAbilityID) == 0x000048, "Member 'UNavLinkMoveMethod_WallClimb::ClimbAbilityID' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, ClimbInputDetectAbilityID) == 0x00004C, "Member 'UNavLinkMoveMethod_WallClimb::ClimbInputDetectAbilityID' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, bCheckClimbAbilityCouldUse) == 0x000050, "Member 'UNavLinkMoveMethod_WallClimb::bCheckClimbAbilityCouldUse' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, bShouldAdjustDestPoint) == 0x000051, "Member 'UNavLinkMoveMethod_WallClimb::bShouldAdjustDestPoint' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, AdditionalOffsetToDestPoint) == 0x000054, "Member 'UNavLinkMoveMethod_WallClimb::AdditionalOffsetToDestPoint' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, bShouldAdjustWithNavData) == 0x000058, "Member 'UNavLinkMoveMethod_WallClimb::bShouldAdjustWithNavData' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_WallClimb, NavDataLerpFactor) == 0x00005C, "Member 'UNavLinkMoveMethod_WallClimb::NavDataLerpFactor' has a wrong offset!");
-
-// Class MarvelAI.BTT_ResetCount
-// 0x0030 (0x00A8 - 0x0078)
-class UBTT_ResetCount final : public UBTTaskNode
-{
-public:
-	struct FBlackboardKeySelector                 Value;                                             // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_ResetCount">();
-	}
-	static class UBTT_ResetCount* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_ResetCount>();
-	}
-};
-static_assert(alignof(UBTT_ResetCount) == 0x000008, "Wrong alignment on UBTT_ResetCount");
-static_assert(sizeof(UBTT_ResetCount) == 0x0000A8, "Wrong size on UBTT_ResetCount");
-static_assert(offsetof(UBTT_ResetCount, Value) == 0x000078, "Member 'UBTT_ResetCount::Value' has a wrong offset!");
-
-// Class MarvelAI.BTT_FindStrategyArea
-// 0x0068 (0x00E0 - 0x0078)
-class UBTT_FindStrategyArea : public UBTTaskNode
-{
-public:
-	struct FBlackboardKeySelector                 StrategyAreaVolume;                                // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 OutLandPoint;                                      // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPublic)
-	int32                                         MaxSearchNode;                                     // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_FindStrategyArea">();
-	}
-	static class UBTT_FindStrategyArea* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_FindStrategyArea>();
-	}
-};
-static_assert(alignof(UBTT_FindStrategyArea) == 0x000008, "Wrong alignment on UBTT_FindStrategyArea");
-static_assert(sizeof(UBTT_FindStrategyArea) == 0x0000E0, "Wrong size on UBTT_FindStrategyArea");
-static_assert(offsetof(UBTT_FindStrategyArea, StrategyAreaVolume) == 0x000078, "Member 'UBTT_FindStrategyArea::StrategyAreaVolume' has a wrong offset!");
-static_assert(offsetof(UBTT_FindStrategyArea, OutLandPoint) == 0x0000A8, "Member 'UBTT_FindStrategyArea::OutLandPoint' has a wrong offset!");
-static_assert(offsetof(UBTT_FindStrategyArea, MaxSearchNode) == 0x0000D8, "Member 'UBTT_FindStrategyArea::MaxSearchNode' has a wrong offset!");
-
-// Class MarvelAI.BTT_GeneralMoveTo
-// 0x0170 (0x01E8 - 0x0078)
-class UBTT_GeneralMoveTo : public UBTTaskNode
-{
-public:
-	struct FBlackboardKeySelector                 InMoveTarget;                                      // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	struct FBlackboardKeySelector                 AbilityMoveLogic;                                  // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	float                                         RandomRadius;                                      // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          ScaleRandomRadius;                                 // 0x00DC(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          OverrideTickInterval;                              // 0x00DD(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DE[0x2];                                       // 0x00DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 RandomRadiusBlackboard;                            // 0x00E0(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-	float                                         AcceptanceRadius;                                  // 0x0110(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAIDataProviderFloatValue              AcceptanceRadius_Dynamic;                          // 0x0118(0x0040)(Edit, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	bool                                          AlwaysUseRandom;                                   // 0x0158(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUpdateTarget;                                     // 0x0159(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          AllowPartialPath;                                  // 0x015A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bAlwaysSuccess;                                    // 0x015B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelPathFollowingComponent*          CachedPFComp;                                      // 0x0160(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           DebugTag;                                          // 0x0168(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FIntervalCountdown                     TickInterval;                                      // 0x0174(0x0008)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x0180(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAIMoveControlLogic*                    LastMoveControlLogic;                              // 0x0188(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_190[0x58];                                     // 0x0190(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnForceMoveTaskEnd(bool bSuccess);
-	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult Result, uint16 Flag);
-	void OnSVONMoveRequestFailed();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_GeneralMoveTo">();
-	}
-	static class UBTT_GeneralMoveTo* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_GeneralMoveTo>();
-	}
-};
-static_assert(alignof(UBTT_GeneralMoveTo) == 0x000008, "Wrong alignment on UBTT_GeneralMoveTo");
-static_assert(sizeof(UBTT_GeneralMoveTo) == 0x0001E8, "Wrong size on UBTT_GeneralMoveTo");
-static_assert(offsetof(UBTT_GeneralMoveTo, InMoveTarget) == 0x000078, "Member 'UBTT_GeneralMoveTo::InMoveTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, AbilityMoveLogic) == 0x0000A8, "Member 'UBTT_GeneralMoveTo::AbilityMoveLogic' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, RandomRadius) == 0x0000D8, "Member 'UBTT_GeneralMoveTo::RandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, ScaleRandomRadius) == 0x0000DC, "Member 'UBTT_GeneralMoveTo::ScaleRandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, OverrideTickInterval) == 0x0000DD, "Member 'UBTT_GeneralMoveTo::OverrideTickInterval' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, RandomRadiusBlackboard) == 0x0000E0, "Member 'UBTT_GeneralMoveTo::RandomRadiusBlackboard' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, AcceptanceRadius) == 0x000110, "Member 'UBTT_GeneralMoveTo::AcceptanceRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, AcceptanceRadius_Dynamic) == 0x000118, "Member 'UBTT_GeneralMoveTo::AcceptanceRadius_Dynamic' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, AlwaysUseRandom) == 0x000158, "Member 'UBTT_GeneralMoveTo::AlwaysUseRandom' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, bUpdateTarget) == 0x000159, "Member 'UBTT_GeneralMoveTo::bUpdateTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, AllowPartialPath) == 0x00015A, "Member 'UBTT_GeneralMoveTo::AllowPartialPath' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, bAlwaysSuccess) == 0x00015B, "Member 'UBTT_GeneralMoveTo::bAlwaysSuccess' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, CachedPFComp) == 0x000160, "Member 'UBTT_GeneralMoveTo::CachedPFComp' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, DebugTag) == 0x000168, "Member 'UBTT_GeneralMoveTo::DebugTag' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, TickInterval) == 0x000174, "Member 'UBTT_GeneralMoveTo::TickInterval' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, MarvelAIOwner) == 0x000180, "Member 'UBTT_GeneralMoveTo::MarvelAIOwner' has a wrong offset!");
-static_assert(offsetof(UBTT_GeneralMoveTo, LastMoveControlLogic) == 0x000188, "Member 'UBTT_GeneralMoveTo::LastMoveControlLogic' has a wrong offset!");
-
-// Class MarvelAI.BTT_MarvelRunBehaviorDynamic
-// 0x0030 (0x00C8 - 0x0098)
-class UBTT_MarvelRunBehaviorDynamic final : public UBTTask_RunBehaviorDynamic
-{
-public:
-	struct FBlackboardKeySelector                 TargetBehaviorTreeKey;                             // 0x0098(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_MarvelRunBehaviorDynamic">();
-	}
-	static class UBTT_MarvelRunBehaviorDynamic* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_MarvelRunBehaviorDynamic>();
-	}
-};
-static_assert(alignof(UBTT_MarvelRunBehaviorDynamic) == 0x000008, "Wrong alignment on UBTT_MarvelRunBehaviorDynamic");
-static_assert(sizeof(UBTT_MarvelRunBehaviorDynamic) == 0x0000C8, "Wrong size on UBTT_MarvelRunBehaviorDynamic");
-static_assert(offsetof(UBTT_MarvelRunBehaviorDynamic, TargetBehaviorTreeKey) == 0x000098, "Member 'UBTT_MarvelRunBehaviorDynamic::TargetBehaviorTreeKey' has a wrong offset!");
-
-// Class MarvelAI.StrategyPointActor
-// 0x0010 (0x0710 - 0x0700)
-class AStrategyPointActor final : public AAISceneConfigActorBase
-{
-public:
-	int32                                         GroupId;                                           // 0x0700(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bIsMainInGroup : 1;                                // 0x0704(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bIsShelter : 1;                                    // 0x0704(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_705[0x3];                                      // 0x0705(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FShelterInstanceData                   ShelterData;                                       // 0x0708(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-
-public:
-	void SetShelterIsBroken(bool bNewIsBroken);
-
-	void DebugDrawPointData() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"StrategyPointActor">();
-	}
-	static class AStrategyPointActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AStrategyPointActor>();
-	}
-};
-static_assert(alignof(AStrategyPointActor) == 0x000010, "Wrong alignment on AStrategyPointActor");
-static_assert(sizeof(AStrategyPointActor) == 0x000710, "Wrong size on AStrategyPointActor");
-static_assert(offsetof(AStrategyPointActor, GroupId) == 0x000700, "Member 'AStrategyPointActor::GroupId' has a wrong offset!");
-static_assert(offsetof(AStrategyPointActor, ShelterData) == 0x000708, "Member 'AStrategyPointActor::ShelterData' has a wrong offset!");
-
-// Class MarvelAI.BTT_PinPoint
-// 0x1718 (0x1790 - 0x0078)
-class UBTT_PinPoint : public UBTTaskNode
-{
-public:
-	TMap<EPinEnum, struct FPinPointInfo>          SignalInfoMap;                                     // 0x0078(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           PinEventTag;                                       // 0x00C8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         bRandomPinType : 1;                                // 0x00D4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	EPinEnum                                      PinType;                                           // 0x00D5(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D6[0x2];                                       // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         NeedFrontSightLength;                              // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00E0(0x1660)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TMap<int32, int32>                            UltimateAbilityIDMap;                              // 0x1740(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_PinPoint">();
-	}
-	static class UBTT_PinPoint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_PinPoint>();
-	}
-};
-static_assert(alignof(UBTT_PinPoint) == 0x000010, "Wrong alignment on UBTT_PinPoint");
-static_assert(sizeof(UBTT_PinPoint) == 0x001790, "Wrong size on UBTT_PinPoint");
-static_assert(offsetof(UBTT_PinPoint, SignalInfoMap) == 0x000078, "Member 'UBTT_PinPoint::SignalInfoMap' has a wrong offset!");
-static_assert(offsetof(UBTT_PinPoint, PinEventTag) == 0x0000C8, "Member 'UBTT_PinPoint::PinEventTag' has a wrong offset!");
-static_assert(offsetof(UBTT_PinPoint, PinType) == 0x0000D5, "Member 'UBTT_PinPoint::PinType' has a wrong offset!");
-static_assert(offsetof(UBTT_PinPoint, NeedFrontSightLength) == 0x0000D8, "Member 'UBTT_PinPoint::NeedFrontSightLength' has a wrong offset!");
-static_assert(offsetof(UBTT_PinPoint, TraceContext) == 0x0000E0, "Member 'UBTT_PinPoint::TraceContext' has a wrong offset!");
-static_assert(offsetof(UBTT_PinPoint, UltimateAbilityIDMap) == 0x001740, "Member 'UBTT_PinPoint::UltimateAbilityIDMap' has a wrong offset!");
-
-// Class MarvelAI.BTT_PlayEmotes
-// 0x0068 (0x00E0 - 0x0078)
-class UBTT_PlayEmotes : public UBTTaskNode
-{
-public:
-	uint8                                         bUseAppointedEmoteID : 1;                          // 0x0078(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         EmoteID;                                           // 0x0080(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<int32, struct FBTHeroEmoteConfig>        HeroEmoteConfigs;                                  // 0x0088(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
-	int32                                         DefaultEmoteSkinID;                                // 0x00D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         DefaultEmoteActionID;                              // 0x00DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_PlayEmotes">();
-	}
-	static class UBTT_PlayEmotes* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_PlayEmotes>();
-	}
-};
-static_assert(alignof(UBTT_PlayEmotes) == 0x000008, "Wrong alignment on UBTT_PlayEmotes");
-static_assert(sizeof(UBTT_PlayEmotes) == 0x0000E0, "Wrong size on UBTT_PlayEmotes");
-static_assert(offsetof(UBTT_PlayEmotes, EmoteID) == 0x000080, "Member 'UBTT_PlayEmotes::EmoteID' has a wrong offset!");
-static_assert(offsetof(UBTT_PlayEmotes, HeroEmoteConfigs) == 0x000088, "Member 'UBTT_PlayEmotes::HeroEmoteConfigs' has a wrong offset!");
-static_assert(offsetof(UBTT_PlayEmotes, DefaultEmoteSkinID) == 0x0000D8, "Member 'UBTT_PlayEmotes::DefaultEmoteSkinID' has a wrong offset!");
-static_assert(offsetof(UBTT_PlayEmotes, DefaultEmoteActionID) == 0x0000DC, "Member 'UBTT_PlayEmotes::DefaultEmoteActionID' has a wrong offset!");
-
-// Class MarvelAI.BTT_SetMoveInputScale
-// 0x0008 (0x0080 - 0x0078)
-class UBTT_SetMoveInputScale final : public UBTTaskNode
-{
-public:
-	float                                         MoveInputScale;                                    // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_SetMoveInputScale">();
-	}
-	static class UBTT_SetMoveInputScale* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_SetMoveInputScale>();
-	}
-};
-static_assert(alignof(UBTT_SetMoveInputScale) == 0x000008, "Wrong alignment on UBTT_SetMoveInputScale");
-static_assert(sizeof(UBTT_SetMoveInputScale) == 0x000080, "Wrong size on UBTT_SetMoveInputScale");
-static_assert(offsetof(UBTT_SetMoveInputScale, MoveInputScale) == 0x000078, "Member 'UBTT_SetMoveInputScale::MoveInputScale' has a wrong offset!");
-
-// Class MarvelAI.BTT_SprayNew
-// 0x0028 (0x00A0 - 0x0078)
-class UBTT_SprayNew : public UBTTaskNode
-{
-public:
-	TArray<struct FMarvelAISprayTable>            DefaultSprayConfigs;                               // 0x0078(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         bOnlyUseDefaultSprayConfig : 1;                    // 0x0088(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 SprayConfigTableName;                              // 0x0090(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_SprayNew">();
-	}
-	static class UBTT_SprayNew* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_SprayNew>();
-	}
-};
-static_assert(alignof(UBTT_SprayNew) == 0x000008, "Wrong alignment on UBTT_SprayNew");
-static_assert(sizeof(UBTT_SprayNew) == 0x0000A0, "Wrong size on UBTT_SprayNew");
-static_assert(offsetof(UBTT_SprayNew, DefaultSprayConfigs) == 0x000078, "Member 'UBTT_SprayNew::DefaultSprayConfigs' has a wrong offset!");
-static_assert(offsetof(UBTT_SprayNew, SprayConfigTableName) == 0x000090, "Member 'UBTT_SprayNew::SprayConfigTableName' has a wrong offset!");
-
-// Class MarvelAI.WayPoint
-// 0x0050 (0x0750 - 0x0700)
-class AWayPoint : public AAISceneConfigActorBase
-{
-public:
-	uint8                                         Pad_700[0x8];                                      // 0x0700(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         GoalRandomRadius;                                  // 0x0708(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinFlyHeight;                                      // 0x070C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxFlyHeight;                                      // 0x0710(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsPrepareArea;                                    // 0x0714(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_715[0x3];                                      // 0x0715(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrepareAreaComponent*                  PrepareAreaComp;                                   // 0x0718(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<EWayPointMark>                         WaypointPathTypeMarks;                             // 0x0720(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FWayPointToWeight>              NextWayPointsWithWeight;                           // 0x0730(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FRange_FloatValue                      RequiredPayloadProgress;                           // 0x0740(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          EnableControlAIRotation;                           // 0x0748(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedWait;                                          // 0x0749(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_74A[0x2];                                      // 0x074A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         WaitTime;                                          // 0x074C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	bool CheckValid();
-	class AWayPoint* SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target);
-
-	bool CheckIsProgressInRange(float CurrentProgress) const;
-	float GetMaxSafeFactorInNextRoutes() const;
-	bool IsPrepareArea() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WayPoint">();
-	}
-	static class AWayPoint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AWayPoint>();
-	}
-};
-static_assert(alignof(AWayPoint) == 0x000010, "Wrong alignment on AWayPoint");
-static_assert(sizeof(AWayPoint) == 0x000750, "Wrong size on AWayPoint");
-static_assert(offsetof(AWayPoint, GoalRandomRadius) == 0x000708, "Member 'AWayPoint::GoalRandomRadius' has a wrong offset!");
-static_assert(offsetof(AWayPoint, MinFlyHeight) == 0x00070C, "Member 'AWayPoint::MinFlyHeight' has a wrong offset!");
-static_assert(offsetof(AWayPoint, MaxFlyHeight) == 0x000710, "Member 'AWayPoint::MaxFlyHeight' has a wrong offset!");
-static_assert(offsetof(AWayPoint, bIsPrepareArea) == 0x000714, "Member 'AWayPoint::bIsPrepareArea' has a wrong offset!");
-static_assert(offsetof(AWayPoint, PrepareAreaComp) == 0x000718, "Member 'AWayPoint::PrepareAreaComp' has a wrong offset!");
-static_assert(offsetof(AWayPoint, WaypointPathTypeMarks) == 0x000720, "Member 'AWayPoint::WaypointPathTypeMarks' has a wrong offset!");
-static_assert(offsetof(AWayPoint, NextWayPointsWithWeight) == 0x000730, "Member 'AWayPoint::NextWayPointsWithWeight' has a wrong offset!");
-static_assert(offsetof(AWayPoint, RequiredPayloadProgress) == 0x000740, "Member 'AWayPoint::RequiredPayloadProgress' has a wrong offset!");
-static_assert(offsetof(AWayPoint, EnableControlAIRotation) == 0x000748, "Member 'AWayPoint::EnableControlAIRotation' has a wrong offset!");
-static_assert(offsetof(AWayPoint, NeedWait) == 0x000749, "Member 'AWayPoint::NeedWait' has a wrong offset!");
-static_assert(offsetof(AWayPoint, WaitTime) == 0x00074C, "Member 'AWayPoint::WaitTime' has a wrong offset!");
-
-// Class MarvelAI.BTT_TokenGateTemplate
-// 0x0068 (0x00E0 - 0x0078)
-class UBTT_TokenGateTemplate final : public UBTTaskNode
-{
-public:
-	int32                                         TokenLimit;                                        // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         TokenLifetime;                                     // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bTreatMissingTokenAsSuccess;                       // 0x0080(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_81[0x5F];                                      // 0x0081(0x005F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ReceiveExecuteTokenTask(class UBehaviorTreeComponent* OwnerComp);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTT_TokenGateTemplate">();
-	}
-	static class UBTT_TokenGateTemplate* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTT_TokenGateTemplate>();
-	}
-};
-static_assert(alignof(UBTT_TokenGateTemplate) == 0x000008, "Wrong alignment on UBTT_TokenGateTemplate");
-static_assert(sizeof(UBTT_TokenGateTemplate) == 0x0000E0, "Wrong size on UBTT_TokenGateTemplate");
-static_assert(offsetof(UBTT_TokenGateTemplate, TokenLimit) == 0x000078, "Member 'UBTT_TokenGateTemplate::TokenLimit' has a wrong offset!");
-static_assert(offsetof(UBTT_TokenGateTemplate, TokenLifetime) == 0x00007C, "Member 'UBTT_TokenGateTemplate::TokenLifetime' has a wrong offset!");
-static_assert(offsetof(UBTT_TokenGateTemplate, bTreatMissingTokenAsSuccess) == 0x000080, "Member 'UBTT_TokenGateTemplate::bTreatMissingTokenAsSuccess' has a wrong offset!");
-
-// Class MarvelAI.DynamicAbilityBindFilter
-// 0x0008 (0x0038 - 0x0030)
-class UDynamicAbilityBindFilter : public UObject
-{
-public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DynamicAbilityBindFilter">();
-	}
-	static class UDynamicAbilityBindFilter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UDynamicAbilityBindFilter>();
-	}
-};
-static_assert(alignof(UDynamicAbilityBindFilter) == 0x000008, "Wrong alignment on UDynamicAbilityBindFilter");
-static_assert(sizeof(UDynamicAbilityBindFilter) == 0x000038, "Wrong size on UDynamicAbilityBindFilter");
-
-// Class MarvelAI.DashAbilityFilter
-// 0x0000 (0x0038 - 0x0038)
-class UDashAbilityFilter final : public UDynamicAbilityBindFilter
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DashAbilityFilter">();
-	}
-	static class UDashAbilityFilter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UDashAbilityFilter>();
-	}
-};
-static_assert(alignof(UDashAbilityFilter) == 0x000008, "Wrong alignment on UDashAbilityFilter");
-static_assert(sizeof(UDashAbilityFilter) == 0x000038, "Wrong size on UDashAbilityFilter");
-
-// Class MarvelAI.AIDashIntentionSelectTarget
-// 0x0018 (0x00B8 - 0x00A0)
-class UAIDashIntentionSelectTarget final : public UAISelectTargetLogic_General
-{
-public:
-	struct FVector                                LocationOffset;                                    // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIDashIntentionSelectTarget">();
-	}
-	static class UAIDashIntentionSelectTarget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIDashIntentionSelectTarget>();
-	}
-};
-static_assert(alignof(UAIDashIntentionSelectTarget) == 0x000008, "Wrong alignment on UAIDashIntentionSelectTarget");
-static_assert(sizeof(UAIDashIntentionSelectTarget) == 0x0000B8, "Wrong size on UAIDashIntentionSelectTarget");
-static_assert(offsetof(UAIDashIntentionSelectTarget, LocationOffset) == 0x0000A0, "Member 'UAIDashIntentionSelectTarget::LocationOffset' has a wrong offset!");
-
-// Class MarvelAI.DefendStandPoint
-// 0x00A0 (0x0850 - 0x07B0)
-class ADefendStandPoint final : public AStandPointBase
-{
-public:
-	TSet<int32>                                   HeroIDSet;                                         // 0x07A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSet<EDefendStandPointHeroType>               HeroTypeSet;                                       // 0x07F8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          bShared;                                           // 0x0848(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_849[0x7];                                      // 0x0849(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DefendStandPoint">();
-	}
-	static class ADefendStandPoint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ADefendStandPoint>();
-	}
-};
-static_assert(alignof(ADefendStandPoint) == 0x000010, "Wrong alignment on ADefendStandPoint");
-static_assert(sizeof(ADefendStandPoint) == 0x000850, "Wrong size on ADefendStandPoint");
-static_assert(offsetof(ADefendStandPoint, HeroIDSet) == 0x0007A8, "Member 'ADefendStandPoint::HeroIDSet' has a wrong offset!");
-static_assert(offsetof(ADefendStandPoint, HeroTypeSet) == 0x0007F8, "Member 'ADefendStandPoint::HeroTypeSet' has a wrong offset!");
-static_assert(offsetof(ADefendStandPoint, bShared) == 0x000848, "Member 'ADefendStandPoint::bShared' has a wrong offset!");
-
-// Class MarvelAI.DynamicAbilityBindFilterInterface
-// 0x0000 (0x0000 - 0x0000)
-class IDynamicAbilityBindFilterInterface final
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DynamicAbilityBindFilterInterface">();
-	}
-	static class IDynamicAbilityBindFilterInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<IDynamicAbilityBindFilterInterface>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
-	}
-};
-static_assert(alignof(IDynamicAbilityBindFilterInterface) == 0x000001, "Wrong alignment on IDynamicAbilityBindFilterInterface");
-static_assert(sizeof(IDynamicAbilityBindFilterInterface) == 0x000001, "Wrong size on IDynamicAbilityBindFilterInterface");
-
-// Class MarvelAI.EnvQueryContext_AICliffEdgeNote
-// 0x0008 (0x0038 - 0x0030)
-class UEnvQueryContext_AICliffEdgeNote : public UEnvQueryContext
-{
-public:
-	bool                                          bUseDistanceFilter;                                // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FilterDistance;                                    // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_AICliffEdgeNote">();
-	}
-	static class UEnvQueryContext_AICliffEdgeNote* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_AICliffEdgeNote>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_AICliffEdgeNote) == 0x000008, "Wrong alignment on UEnvQueryContext_AICliffEdgeNote");
-static_assert(sizeof(UEnvQueryContext_AICliffEdgeNote) == 0x000038, "Wrong size on UEnvQueryContext_AICliffEdgeNote");
-static_assert(offsetof(UEnvQueryContext_AICliffEdgeNote, bUseDistanceFilter) == 0x000030, "Member 'UEnvQueryContext_AICliffEdgeNote::bUseDistanceFilter' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_AICliffEdgeNote, FilterDistance) == 0x000034, "Member 'UEnvQueryContext_AICliffEdgeNote::FilterDistance' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_AllAliveEnemies
-// 0x0000 (0x0030 - 0x0030)
-class UEnvQueryContext_AllAliveEnemies final : public UEnvQueryContext
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_AllAliveEnemies">();
-	}
-	static class UEnvQueryContext_AllAliveEnemies* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_AllAliveEnemies>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_AllAliveEnemies) == 0x000008, "Wrong alignment on UEnvQueryContext_AllAliveEnemies");
-static_assert(sizeof(UEnvQueryContext_AllAliveEnemies) == 0x000030, "Wrong size on UEnvQueryContext_AllAliveEnemies");
-
-// Class MarvelAI.EnvQueryContext_AllAliveTeammates
-// 0x0000 (0x0030 - 0x0030)
-class UEnvQueryContext_AllAliveTeammates final : public UEnvQueryContext
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_AllAliveTeammates">();
-	}
-	static class UEnvQueryContext_AllAliveTeammates* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_AllAliveTeammates>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_AllAliveTeammates) == 0x000008, "Wrong alignment on UEnvQueryContext_AllAliveTeammates");
-static_assert(sizeof(UEnvQueryContext_AllAliveTeammates) == 0x000030, "Wrong size on UEnvQueryContext_AllAliveTeammates");
-
-// Class MarvelAI.EnvQueryContext_Ally
-// 0x0008 (0x0038 - 0x0030)
-class UEnvQueryContext_Ally final : public UEnvQueryContext
-{
-public:
-	bool                                          bNeedAlive;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bNeedParticularRole;                               // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EHeroRole                                     HeroType;                                          // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_Ally">();
-	}
-	static class UEnvQueryContext_Ally* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_Ally>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_Ally) == 0x000008, "Wrong alignment on UEnvQueryContext_Ally");
-static_assert(sizeof(UEnvQueryContext_Ally) == 0x000038, "Wrong size on UEnvQueryContext_Ally");
-static_assert(offsetof(UEnvQueryContext_Ally, bNeedAlive) == 0x000030, "Member 'UEnvQueryContext_Ally::bNeedAlive' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_Ally, bNeedParticularRole) == 0x000031, "Member 'UEnvQueryContext_Ally::bNeedParticularRole' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_Ally, HeroType) == 0x000032, "Member 'UEnvQueryContext_Ally::HeroType' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_BlackboardActor
-// 0x0010 (0x0040 - 0x0030)
-class UEnvQueryContext_BlackboardActor : public UEnvQueryContext
-{
-public:
-	class FName                                   BlackboardKeyName;                                 // 0x0030(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReturnQuerierIfValueInvalid;                      // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_BlackboardActor">();
-	}
-	static class UEnvQueryContext_BlackboardActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_BlackboardActor>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_BlackboardActor) == 0x000008, "Wrong alignment on UEnvQueryContext_BlackboardActor");
-static_assert(sizeof(UEnvQueryContext_BlackboardActor) == 0x000040, "Wrong size on UEnvQueryContext_BlackboardActor");
-static_assert(offsetof(UEnvQueryContext_BlackboardActor, BlackboardKeyName) == 0x000030, "Member 'UEnvQueryContext_BlackboardActor::BlackboardKeyName' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_BlackboardActor, bReturnQuerierIfValueInvalid) == 0x00003C, "Member 'UEnvQueryContext_BlackboardActor::bReturnQuerierIfValueInvalid' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_BuffedCharacter
-// 0x0088 (0x00B8 - 0x0030)
-class UEnvQueryContext_BuffedCharacter final : public UEnvQueryContext
-{
-public:
-	int32                                         BuffID;                                            // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHeroFilter                            HeroFilter;                                        // 0x0038(0x0080)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_BuffedCharacter">();
-	}
-	static class UEnvQueryContext_BuffedCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_BuffedCharacter>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_BuffedCharacter) == 0x000008, "Wrong alignment on UEnvQueryContext_BuffedCharacter");
-static_assert(sizeof(UEnvQueryContext_BuffedCharacter) == 0x0000B8, "Wrong size on UEnvQueryContext_BuffedCharacter");
-static_assert(offsetof(UEnvQueryContext_BuffedCharacter, BuffID) == 0x000030, "Member 'UEnvQueryContext_BuffedCharacter::BuffID' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_BuffedCharacter, HeroFilter) == 0x000038, "Member 'UEnvQueryContext_BuffedCharacter::HeroFilter' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_CharacterGroup
-// 0x0008 (0x0038 - 0x0030)
-class UEnvQueryContext_CharacterGroup : public UEnvQueryContext
-{
-public:
-	EAICharacterSide                              CharacterGroupSide;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EHeroRole                                     CharacterGroupRole;                                // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IgnoreBBTarget;                                    // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCheckBuff;                                        // 0x0033(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         BuffID;                                            // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_CharacterGroup">();
-	}
-	static class UEnvQueryContext_CharacterGroup* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_CharacterGroup>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_CharacterGroup) == 0x000008, "Wrong alignment on UEnvQueryContext_CharacterGroup");
-static_assert(sizeof(UEnvQueryContext_CharacterGroup) == 0x000038, "Wrong size on UEnvQueryContext_CharacterGroup");
-static_assert(offsetof(UEnvQueryContext_CharacterGroup, CharacterGroupSide) == 0x000030, "Member 'UEnvQueryContext_CharacterGroup::CharacterGroupSide' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_CharacterGroup, CharacterGroupRole) == 0x000031, "Member 'UEnvQueryContext_CharacterGroup::CharacterGroupRole' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_CharacterGroup, IgnoreBBTarget) == 0x000032, "Member 'UEnvQueryContext_CharacterGroup::IgnoreBBTarget' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_CharacterGroup, bCheckBuff) == 0x000033, "Member 'UEnvQueryContext_CharacterGroup::bCheckBuff' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_CharacterGroup, BuffID) == 0x000034, "Member 'UEnvQueryContext_CharacterGroup::BuffID' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_Enemy
-// 0x0008 (0x0038 - 0x0030)
-class UEnvQueryContext_Enemy final : public UEnvQueryContext
-{
-public:
-	bool                                          bNeedAlive;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bNeedParticularRole;                               // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EHeroRole                                     HeroType;                                          // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIgnoreCurrentAttackTarget;                        // 0x0033(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_Enemy">();
-	}
-	static class UEnvQueryContext_Enemy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_Enemy>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_Enemy) == 0x000008, "Wrong alignment on UEnvQueryContext_Enemy");
-static_assert(sizeof(UEnvQueryContext_Enemy) == 0x000038, "Wrong size on UEnvQueryContext_Enemy");
-static_assert(offsetof(UEnvQueryContext_Enemy, bNeedAlive) == 0x000030, "Member 'UEnvQueryContext_Enemy::bNeedAlive' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_Enemy, bNeedParticularRole) == 0x000031, "Member 'UEnvQueryContext_Enemy::bNeedParticularRole' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_Enemy, HeroType) == 0x000032, "Member 'UEnvQueryContext_Enemy::HeroType' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_Enemy, bIgnoreCurrentAttackTarget) == 0x000033, "Member 'UEnvQueryContext_Enemy::bIgnoreCurrentAttackTarget' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryContext_PosOfCoverMaxEnemy
-// 0x0010 (0x0040 - 0x0030)
-class UEnvQueryContext_PosOfCoverMaxEnemy : public UEnvQueryContext
-{
-public:
-	bool                                          bShowDebugInfo;                                    // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DebugShowTime;                                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         Radius;                                            // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_PosOfCoverMaxEnemy">();
-	}
-	static class UEnvQueryContext_PosOfCoverMaxEnemy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_PosOfCoverMaxEnemy>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_PosOfCoverMaxEnemy) == 0x000008, "Wrong alignment on UEnvQueryContext_PosOfCoverMaxEnemy");
-static_assert(sizeof(UEnvQueryContext_PosOfCoverMaxEnemy) == 0x000040, "Wrong size on UEnvQueryContext_PosOfCoverMaxEnemy");
-static_assert(offsetof(UEnvQueryContext_PosOfCoverMaxEnemy, bShowDebugInfo) == 0x000030, "Member 'UEnvQueryContext_PosOfCoverMaxEnemy::bShowDebugInfo' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_PosOfCoverMaxEnemy, DebugShowTime) == 0x000034, "Member 'UEnvQueryContext_PosOfCoverMaxEnemy::DebugShowTime' has a wrong offset!");
-static_assert(offsetof(UEnvQueryContext_PosOfCoverMaxEnemy, Radius) == 0x000038, "Member 'UEnvQueryContext_PosOfCoverMaxEnemy::Radius' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryGenerator_PosOfMaxCover
-// 0x0048 (0x00A0 - 0x0058)
-class UEnvQueryGenerator_PosOfMaxCover final : public UEnvQueryGenerator
-{
-public:
-	TSubclassOf<class UEnvQueryContext>           QueryContext;                                      // 0x0058(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              CoverRadius;                                       // 0x0060(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_PosOfMaxCover">();
-	}
-	static class UEnvQueryGenerator_PosOfMaxCover* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_PosOfMaxCover>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_PosOfMaxCover) == 0x000008, "Wrong alignment on UEnvQueryGenerator_PosOfMaxCover");
-static_assert(sizeof(UEnvQueryGenerator_PosOfMaxCover) == 0x0000A0, "Wrong size on UEnvQueryGenerator_PosOfMaxCover");
-static_assert(offsetof(UEnvQueryGenerator_PosOfMaxCover, QueryContext) == 0x000058, "Member 'UEnvQueryGenerator_PosOfMaxCover::QueryContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_PosOfMaxCover, CoverRadius) == 0x000060, "Member 'UEnvQueryGenerator_PosOfMaxCover::CoverRadius' has a wrong offset!");
-
-// Class MarvelAI.WayPointPathFunctionLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UWayPointPathFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static void BuildDefaultSimplePath(struct FWayPointPath& WayPointPath, class AActor* MovingActor, class AActor* FinalTarget);
-	static void Clear(struct FWayPointPath& WayPointPath);
-	static class AActor* GetCurrentWayPoint(struct FWayPointPath& WayPointPath);
-	static class AActor* GetFinalTarget(struct FWayPointPath& WayPointPath);
-	static bool GoNext(struct FWayPointPath& WayPointPath);
-	static void InitPathForMovingActor(struct FWayPointPath& WayPointPath, class AActor* MovingActor, bool ShouldUpdateProgress, EWayPointMark PathMark);
-	static bool IsMovingActorOutOfPath(const struct FWayPointPath& WayPointPath, float AllowedRadius);
-	static bool IsPathFinished(const struct FWayPointPath& WayPointPath);
-	static bool IsPathValid(const struct FWayPointPath& WayPointPath);
-	static bool IsRingPath(struct FWayPointPath& WayPointPath);
-	static void MarkRingPath(struct FWayPointPath& WayPointPath, class AActor* RingStartPoint);
-	static void ResetProgress(struct FWayPointPath& WayPointPath);
-	static void SetPathMark(struct FWayPointPath& WayPointPath, EWayPointMark NewWayPointMark);
-	static struct FVector TakeNextLocationToReach(struct FWayPointPath& WayPointPath);
-	static void UpdateProgressInPath(struct FWayPointPath& WayPointPath);
-	static bool UpdateSafeFactorForRoutes(const struct FWayPointPath& WayPointPath, float SafeFactor);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"WayPointPathFunctionLibrary">();
-	}
-	static class UWayPointPathFunctionLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UWayPointPathFunctionLibrary>();
-	}
-};
-static_assert(alignof(UWayPointPathFunctionLibrary) == 0x000008, "Wrong alignment on UWayPointPathFunctionLibrary");
-static_assert(sizeof(UWayPointPathFunctionLibrary) == 0x000030, "Wrong size on UWayPointPathFunctionLibrary");
-
-// Class MarvelAI.EnvQueryGenerator_ScopePoints
-// 0x00D0 (0x0168 - 0x0098)
-class UEnvQueryGenerator_ScopePoints final : public UEnvQueryGenerator_ProjectedPoints
-{
-public:
-	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x0098(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TSet<int32>                                   ScopeIDs;                                          // 0x00D8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              MaxDistanceToQuerier;                              // 0x0128(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_ScopePoints">();
-	}
-	static class UEnvQueryGenerator_ScopePoints* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_ScopePoints>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_ScopePoints) == 0x000008, "Wrong alignment on UEnvQueryGenerator_ScopePoints");
-static_assert(sizeof(UEnvQueryGenerator_ScopePoints) == 0x000168, "Wrong size on UEnvQueryGenerator_ScopePoints");
-static_assert(offsetof(UEnvQueryGenerator_ScopePoints, SpaceBetween) == 0x000098, "Member 'UEnvQueryGenerator_ScopePoints::SpaceBetween' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_ScopePoints, ScopeIDs) == 0x0000D8, "Member 'UEnvQueryGenerator_ScopePoints::ScopeIDs' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_ScopePoints, MaxDistanceToQuerier) == 0x000128, "Member 'UEnvQueryGenerator_ScopePoints::MaxDistanceToQuerier' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryGenerator_Sphere
-// 0x0108 (0x0160 - 0x0058)
-class UEnvQueryGenerator_Sphere : public UEnvQueryGenerator
-{
-public:
-	TSubclassOf<class UEnvQueryContext>           GenerateAround;                                    // 0x0058(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              DistanceInSameDirection;                           // 0x0060(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              OuterRange;                                        // 0x00A0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              InnerRange;                                        // 0x00E0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              AngleStep;                                         // 0x0120(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_Sphere">();
-	}
-	static class UEnvQueryGenerator_Sphere* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_Sphere>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_Sphere) == 0x000008, "Wrong alignment on UEnvQueryGenerator_Sphere");
-static_assert(sizeof(UEnvQueryGenerator_Sphere) == 0x000160, "Wrong size on UEnvQueryGenerator_Sphere");
-static_assert(offsetof(UEnvQueryGenerator_Sphere, GenerateAround) == 0x000058, "Member 'UEnvQueryGenerator_Sphere::GenerateAround' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_Sphere, DistanceInSameDirection) == 0x000060, "Member 'UEnvQueryGenerator_Sphere::DistanceInSameDirection' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_Sphere, OuterRange) == 0x0000A0, "Member 'UEnvQueryGenerator_Sphere::OuterRange' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_Sphere, InnerRange) == 0x0000E0, "Member 'UEnvQueryGenerator_Sphere::InnerRange' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_Sphere, AngleStep) == 0x000120, "Member 'UEnvQueryGenerator_Sphere::AngleStep' has a wrong offset!");
-
-// Class MarvelAI.NavLinkAutoGenerator
-// 0x01F0 (0x08F0 - 0x0700)
-class ANavLinkAutoGenerator final : public AAISceneConfigActorBase
-{
-public:
-	bool                                          bShouldModifyNavLinks;                             // 0x0700(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldModifyStrategyPoints;                       // 0x0701(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_702[0x6];                                      // 0x0702(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ANavLinkProxy*>                  GeneratedNavLinks;                                 // 0x0708(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_718[0x8];                                      // 0x0718(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FTileRef, struct FTileData>       TileRefToData;                                     // 0x0720(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TArray<class AActor*>                         LevelKnockUpCache;                                 // 0x0770(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	class UMarvelAISystem*                        AISysCache;                                        // 0x0780(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_788[0x4];                                      // 0x0788(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTileDebugDrawConfig                   DebugConfig;                                       // 0x078C(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bPreviewLinkWithoutCreate;                         // 0x0794(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRefreshNavLinkIdAfterCreate;                      // 0x0795(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMarkWallAttachedAfterGenerate;                    // 0x0796(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_797[0x1];                                      // 0x0797(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWallAttachCheckConfig                 WallAttachedCheckConfig;                           // 0x0798(0x0020)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	TSubclassOf<class ANavLinkProxy>              NavLinkProxyClass;                                 // 0x07B8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FNavLinkGenerateConfig                 GenerateConfig;                                    // 0x07C0(0x0038)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7F8[0x38];                                     // 0x07F8(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bEnableRuntimeGeneration;                          // 0x0830(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_831[0x3];                                      // 0x0831(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RuntimeGenerationDelay;                            // 0x0834(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableLinkPool;                                   // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_839[0x3];                                      // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LinkPoolInitCapacity;                              // 0x083C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_840[0x78];                                     // 0x0840(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
-	class ANavLinkProxy*                          ToCheckLink;                                       // 0x08B8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class AStrategyPointActor*>            GeneratedStrategyPoints;                           // 0x08C0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	struct FStrategyPointGenerateConfig           StrategyPointGenerateConfig;                       // 0x08D0(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class AStrategyPointActor>        StrategyPointClass;                                // 0x08E0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDrawHeightDetect;                                 // 0x08E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_8E9[0x7];                                      // 0x08E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void CleanUp();
-	void DebugDrawEdges();
-	void DebugDrawLevelKnockUp();
-	void DebugDrawLinks();
-	void DoGenerate();
-	void ToggleGlobalDebugDraw();
-
-	void DebugCheckCollisionForLink() const;
-	void DebugDrawStrategyPoints() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkAutoGenerator">();
-	}
-	static class ANavLinkAutoGenerator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ANavLinkAutoGenerator>();
-	}
-};
-static_assert(alignof(ANavLinkAutoGenerator) == 0x000010, "Wrong alignment on ANavLinkAutoGenerator");
-static_assert(sizeof(ANavLinkAutoGenerator) == 0x0008F0, "Wrong size on ANavLinkAutoGenerator");
-static_assert(offsetof(ANavLinkAutoGenerator, bShouldModifyNavLinks) == 0x000700, "Member 'ANavLinkAutoGenerator::bShouldModifyNavLinks' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bShouldModifyStrategyPoints) == 0x000701, "Member 'ANavLinkAutoGenerator::bShouldModifyStrategyPoints' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, GeneratedNavLinks) == 0x000708, "Member 'ANavLinkAutoGenerator::GeneratedNavLinks' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, TileRefToData) == 0x000720, "Member 'ANavLinkAutoGenerator::TileRefToData' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, LevelKnockUpCache) == 0x000770, "Member 'ANavLinkAutoGenerator::LevelKnockUpCache' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, AISysCache) == 0x000780, "Member 'ANavLinkAutoGenerator::AISysCache' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, DebugConfig) == 0x00078C, "Member 'ANavLinkAutoGenerator::DebugConfig' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bPreviewLinkWithoutCreate) == 0x000794, "Member 'ANavLinkAutoGenerator::bPreviewLinkWithoutCreate' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bRefreshNavLinkIdAfterCreate) == 0x000795, "Member 'ANavLinkAutoGenerator::bRefreshNavLinkIdAfterCreate' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bMarkWallAttachedAfterGenerate) == 0x000796, "Member 'ANavLinkAutoGenerator::bMarkWallAttachedAfterGenerate' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, WallAttachedCheckConfig) == 0x000798, "Member 'ANavLinkAutoGenerator::WallAttachedCheckConfig' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, NavLinkProxyClass) == 0x0007B8, "Member 'ANavLinkAutoGenerator::NavLinkProxyClass' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, GenerateConfig) == 0x0007C0, "Member 'ANavLinkAutoGenerator::GenerateConfig' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bEnableRuntimeGeneration) == 0x000830, "Member 'ANavLinkAutoGenerator::bEnableRuntimeGeneration' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, RuntimeGenerationDelay) == 0x000834, "Member 'ANavLinkAutoGenerator::RuntimeGenerationDelay' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bEnableLinkPool) == 0x000838, "Member 'ANavLinkAutoGenerator::bEnableLinkPool' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, LinkPoolInitCapacity) == 0x00083C, "Member 'ANavLinkAutoGenerator::LinkPoolInitCapacity' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, ToCheckLink) == 0x0008B8, "Member 'ANavLinkAutoGenerator::ToCheckLink' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, GeneratedStrategyPoints) == 0x0008C0, "Member 'ANavLinkAutoGenerator::GeneratedStrategyPoints' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, StrategyPointGenerateConfig) == 0x0008D0, "Member 'ANavLinkAutoGenerator::StrategyPointGenerateConfig' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, StrategyPointClass) == 0x0008E0, "Member 'ANavLinkAutoGenerator::StrategyPointClass' has a wrong offset!");
-static_assert(offsetof(ANavLinkAutoGenerator, bDrawHeightDetect) == 0x0008E8, "Member 'ANavLinkAutoGenerator::bDrawHeightDetect' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryGenerator_StaticActors
-// 0x0058 (0x0140 - 0x00E8)
-class UEnvQueryGenerator_StaticActors final : public UEnvQueryGenerator_ActorsOfClass
-{
-public:
-	bool                                          bUseCachedData;                                    // 0x00E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x57];                                      // 0x00E9(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_StaticActors">();
-	}
-	static class UEnvQueryGenerator_StaticActors* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_StaticActors>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_StaticActors) == 0x000008, "Wrong alignment on UEnvQueryGenerator_StaticActors");
-static_assert(sizeof(UEnvQueryGenerator_StaticActors) == 0x000140, "Wrong size on UEnvQueryGenerator_StaticActors");
-static_assert(offsetof(UEnvQueryGenerator_StaticActors, bUseCachedData) == 0x0000E8, "Member 'UEnvQueryGenerator_StaticActors::bUseCachedData' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryGenerator_SVONSphere
-// 0x0000 (0x0160 - 0x0160)
-class UEnvQueryGenerator_SVONSphere final : public UEnvQueryGenerator_Sphere
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_SVONSphere">();
-	}
-	static class UEnvQueryGenerator_SVONSphere* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_SVONSphere>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_SVONSphere) == 0x000008, "Wrong alignment on UEnvQueryGenerator_SVONSphere");
-static_assert(sizeof(UEnvQueryGenerator_SVONSphere) == 0x000160, "Wrong size on UEnvQueryGenerator_SVONSphere");
-
-// Class MarvelAI.EnvQueryTest_1030Respond
-// 0x0048 (0x02C8 - 0x0280)
-class UEnvQueryTest_1030Respond final : public UEnvQueryTest
-{
-public:
-	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           DistanceTo;                                        // 0x02C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_1030Respond">();
-	}
-	static class UEnvQueryTest_1030Respond* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_1030Respond>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_1030Respond) == 0x000008, "Wrong alignment on UEnvQueryTest_1030Respond");
-static_assert(sizeof(UEnvQueryTest_1030Respond) == 0x0002C8, "Wrong size on UEnvQueryTest_1030Respond");
-static_assert(offsetof(UEnvQueryTest_1030Respond, EnableThisTest) == 0x000280, "Member 'UEnvQueryTest_1030Respond::EnableThisTest' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_1030Respond, DistanceTo) == 0x0002C0, "Member 'UEnvQueryTest_1030Respond::DistanceTo' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_AllyShield
-// 0x0048 (0x02C8 - 0x0280)
-class UEnvQueryTest_AllyShield final : public UEnvQueryTest
-{
-public:
-	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	float                                         ShieldValidDistance;                               // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_AllyShield">();
-	}
-	static class UEnvQueryTest_AllyShield* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_AllyShield>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_AllyShield) == 0x000008, "Wrong alignment on UEnvQueryTest_AllyShield");
-static_assert(sizeof(UEnvQueryTest_AllyShield) == 0x0002C8, "Wrong size on UEnvQueryTest_AllyShield");
-static_assert(offsetof(UEnvQueryTest_AllyShield, EnableThisTest) == 0x000280, "Member 'UEnvQueryTest_AllyShield::EnableThisTest' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_AllyShield, ShieldValidDistance) == 0x0002C0, "Member 'UEnvQueryTest_AllyShield::ShieldValidDistance' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod_CleanObstacle
-// 0x0010 (0x0058 - 0x0048)
-class UNavLinkMoveMethod_CleanObstacle final : public UNavLinkMoveMethod
-{
-public:
-	EAbilityInputBinds                            AbilityInput;                                      // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AttackRange;                                       // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         TakeAttackLocationInterval;                        // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDisableIfInBattle;                                // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod_CleanObstacle">();
-	}
-	static class UNavLinkMoveMethod_CleanObstacle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_CleanObstacle>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod_CleanObstacle) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_CleanObstacle");
-static_assert(sizeof(UNavLinkMoveMethod_CleanObstacle) == 0x000058, "Wrong size on UNavLinkMoveMethod_CleanObstacle");
-static_assert(offsetof(UNavLinkMoveMethod_CleanObstacle, AbilityInput) == 0x000048, "Member 'UNavLinkMoveMethod_CleanObstacle::AbilityInput' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_CleanObstacle, AttackRange) == 0x00004C, "Member 'UNavLinkMoveMethod_CleanObstacle::AttackRange' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_CleanObstacle, TakeAttackLocationInterval) == 0x000050, "Member 'UNavLinkMoveMethod_CleanObstacle::TakeAttackLocationInterval' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_CleanObstacle, bDisableIfInBattle) == 0x000054, "Member 'UNavLinkMoveMethod_CleanObstacle::bDisableIfInBattle' has a wrong offset!");
-
-// Class MarvelAI.MarvelEnvQueryTest
-// 0x0000 (0x0280 - 0x0280)
-class UMarvelEnvQueryTest : public UEnvQueryTest
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelEnvQueryTest">();
-	}
-	static class UMarvelEnvQueryTest* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelEnvQueryTest>();
-	}
-};
-static_assert(alignof(UMarvelEnvQueryTest) == 0x000008, "Wrong alignment on UMarvelEnvQueryTest");
-static_assert(sizeof(UMarvelEnvQueryTest) == 0x000280, "Wrong size on UMarvelEnvQueryTest");
-
-// Class MarvelAI.EnvQueryTest_CheckGameplayTag
-// 0x0078 (0x02F8 - 0x0280)
-class UEnvQueryTest_CheckGameplayTag final : public UMarvelEnvQueryTest
-{
-public:
-	struct FAITagMatchParameter                   GamePlayParameter;                                 // 0x0280(0x0070)(Edit, NativeAccessSpecifierPublic)
-	EAIFilterSide                                 Side;                                              // 0x02F0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_CheckGameplayTag">();
-	}
-	static class UEnvQueryTest_CheckGameplayTag* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_CheckGameplayTag>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_CheckGameplayTag) == 0x000008, "Wrong alignment on UEnvQueryTest_CheckGameplayTag");
-static_assert(sizeof(UEnvQueryTest_CheckGameplayTag) == 0x0002F8, "Wrong size on UEnvQueryTest_CheckGameplayTag");
-static_assert(offsetof(UEnvQueryTest_CheckGameplayTag, GamePlayParameter) == 0x000280, "Member 'UEnvQueryTest_CheckGameplayTag::GamePlayParameter' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_CheckGameplayTag, Side) == 0x0002F0, "Member 'UEnvQueryTest_CheckGameplayTag::Side' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_DamageAbilityScope
-// 0x0000 (0x0280 - 0x0280)
-class UEnvQueryTest_DamageAbilityScope final : public UEnvQueryTest
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_DamageAbilityScope">();
-	}
-	static class UEnvQueryTest_DamageAbilityScope* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_DamageAbilityScope>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_DamageAbilityScope) == 0x000008, "Wrong alignment on UEnvQueryTest_DamageAbilityScope");
-static_assert(sizeof(UEnvQueryTest_DamageAbilityScope) == 0x000280, "Wrong size on UEnvQueryTest_DamageAbilityScope");
-
-// Class MarvelAI.EnvQueryTest_EffectByGroup
-// 0x0050 (0x02D0 - 0x0280)
-class UEnvQueryTest_EffectByGroup final : public UEnvQueryTest
-{
-public:
-	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           TargetGroup;                                       // 0x02C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxEffectDistance;                                 // 0x02C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_EffectByGroup">();
-	}
-	static class UEnvQueryTest_EffectByGroup* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_EffectByGroup>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_EffectByGroup) == 0x000008, "Wrong alignment on UEnvQueryTest_EffectByGroup");
-static_assert(sizeof(UEnvQueryTest_EffectByGroup) == 0x0002D0, "Wrong size on UEnvQueryTest_EffectByGroup");
-static_assert(offsetof(UEnvQueryTest_EffectByGroup, EnableThisTest) == 0x000280, "Member 'UEnvQueryTest_EffectByGroup::EnableThisTest' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_EffectByGroup, TargetGroup) == 0x0002C0, "Member 'UEnvQueryTest_EffectByGroup::TargetGroup' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_EffectByGroup, MaxEffectDistance) == 0x0002C8, "Member 'UEnvQueryTest_EffectByGroup::MaxEffectDistance' has a wrong offset!");
-
-// Class MarvelAI.NavLinkMoveMethod_SpaceRift
-// 0x0000 (0x0048 - 0x0048)
-class UNavLinkMoveMethod_SpaceRift final : public UNavLinkMoveMethod
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"NavLinkMoveMethod_SpaceRift">();
-	}
-	static class UNavLinkMoveMethod_SpaceRift* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_SpaceRift>();
-	}
-};
-static_assert(alignof(UNavLinkMoveMethod_SpaceRift) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_SpaceRift");
-static_assert(sizeof(UNavLinkMoveMethod_SpaceRift) == 0x000048, "Wrong size on UNavLinkMoveMethod_SpaceRift");
-
-// Class MarvelAI.EnvQueryTest_EvadeTarget
-// 0x1810 (0x1A90 - 0x0280)
-class UEnvQueryTest_EvadeTarget final : public UEnvQueryTest
-{
-public:
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0280(0x1660)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<struct FAITagMatchParameter>           TagMatchParameters;                                // 0x18E0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FAbilityCheckConfig                    Asset;                                             // 0x18F0(0x0198)(Edit, AdvancedDisplay, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A88[0x8];                                     // 0x1A88(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_EvadeTarget">();
-	}
-	static class UEnvQueryTest_EvadeTarget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_EvadeTarget>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_EvadeTarget) == 0x000010, "Wrong alignment on UEnvQueryTest_EvadeTarget");
-static_assert(sizeof(UEnvQueryTest_EvadeTarget) == 0x001A90, "Wrong size on UEnvQueryTest_EvadeTarget");
-static_assert(offsetof(UEnvQueryTest_EvadeTarget, TraceContext) == 0x000280, "Member 'UEnvQueryTest_EvadeTarget::TraceContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_EvadeTarget, TagMatchParameters) == 0x0018E0, "Member 'UEnvQueryTest_EvadeTarget::TagMatchParameters' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_EvadeTarget, Asset) == 0x0018F0, "Member 'UEnvQueryTest_EvadeTarget::Asset' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_FireLine
-// 0x00C0 (0x0340 - 0x0280)
-class UEnvQueryTest_FireLine final : public UEnvQueryTest
-{
-public:
-	struct FAIDataProviderFloatValue              MaxDistanceToFireLine;                             // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              MaxFireLineLen;                                    // 0x02C0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FAIDataProviderFloatValue              FireLineWidth;                                     // 0x0300(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_FireLine">();
-	}
-	static class UEnvQueryTest_FireLine* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_FireLine>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_FireLine) == 0x000008, "Wrong alignment on UEnvQueryTest_FireLine");
-static_assert(sizeof(UEnvQueryTest_FireLine) == 0x000340, "Wrong size on UEnvQueryTest_FireLine");
-static_assert(offsetof(UEnvQueryTest_FireLine, MaxDistanceToFireLine) == 0x000280, "Member 'UEnvQueryTest_FireLine::MaxDistanceToFireLine' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_FireLine, MaxFireLineLen) == 0x0002C0, "Member 'UEnvQueryTest_FireLine::MaxFireLineLen' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_FireLine, FireLineWidth) == 0x000300, "Member 'UEnvQueryTest_FireLine::FireLineWidth' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_IsShelterBroken
-// 0x0000 (0x0280 - 0x0280)
-class UEnvQueryTest_IsShelterBroken final : public UEnvQueryTest
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_IsShelterBroken">();
-	}
-	static class UEnvQueryTest_IsShelterBroken* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_IsShelterBroken>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_IsShelterBroken) == 0x000008, "Wrong alignment on UEnvQueryTest_IsShelterBroken");
-static_assert(sizeof(UEnvQueryTest_IsShelterBroken) == 0x000280, "Wrong size on UEnvQueryTest_IsShelterBroken");
-
-// Class MarvelAI.EnvQueryTest_KeepDistance
-// 0x0010 (0x0290 - 0x0280)
-class UEnvQueryTest_KeepDistance : public UEnvQueryTest
-{
-public:
-	TSubclassOf<class UEnvQueryContext>           TargetsContext;                                    // 0x0280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Tolerance;                                         // 0x0288(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_KeepDistance">();
-	}
-	static class UEnvQueryTest_KeepDistance* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_KeepDistance>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_KeepDistance) == 0x000008, "Wrong alignment on UEnvQueryTest_KeepDistance");
-static_assert(sizeof(UEnvQueryTest_KeepDistance) == 0x000290, "Wrong size on UEnvQueryTest_KeepDistance");
-static_assert(offsetof(UEnvQueryTest_KeepDistance, TargetsContext) == 0x000280, "Member 'UEnvQueryTest_KeepDistance::TargetsContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_KeepDistance, Tolerance) == 0x000288, "Member 'UEnvQueryTest_KeepDistance::Tolerance' has a wrong offset!");
-
-// Class MarvelAI.QA_AIGlobalConfig
-// 0x0060 (0x0098 - 0x0038)
-class UQA_AIGlobalConfig final : public UPrimaryDataAsset
-{
-public:
-	TMap<int32, struct FQA_AIHeroConfig>          HeroConfig;                                        // 0x0038(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<TSubclassOf<class UObject>>            ForceLoadClasses;                                  // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"QA_AIGlobalConfig">();
-	}
-	static class UQA_AIGlobalConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UQA_AIGlobalConfig>();
-	}
-};
-static_assert(alignof(UQA_AIGlobalConfig) == 0x000008, "Wrong alignment on UQA_AIGlobalConfig");
-static_assert(sizeof(UQA_AIGlobalConfig) == 0x000098, "Wrong size on UQA_AIGlobalConfig");
-static_assert(offsetof(UQA_AIGlobalConfig, HeroConfig) == 0x000038, "Member 'UQA_AIGlobalConfig::HeroConfig' has a wrong offset!");
-static_assert(offsetof(UQA_AIGlobalConfig, ForceLoadClasses) == 0x000088, "Member 'UQA_AIGlobalConfig::ForceLoadClasses' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_MarginTarget
-// 0x0008 (0x0288 - 0x0280)
-class UEnvQueryTest_MarginTarget final : public UMarvelEnvQueryTest
-{
-public:
-	float                                         ScoreMax;                                          // 0x0280(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Radius;                                            // 0x0284(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_MarginTarget">();
-	}
-	static class UEnvQueryTest_MarginTarget* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_MarginTarget>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_MarginTarget) == 0x000008, "Wrong alignment on UEnvQueryTest_MarginTarget");
-static_assert(sizeof(UEnvQueryTest_MarginTarget) == 0x000288, "Wrong size on UEnvQueryTest_MarginTarget");
-static_assert(offsetof(UEnvQueryTest_MarginTarget, ScoreMax) == 0x000280, "Member 'UEnvQueryTest_MarginTarget::ScoreMax' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_MarginTarget, Radius) == 0x000284, "Member 'UEnvQueryTest_MarginTarget::Radius' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_ProjectilePath
-// 0x0058 (0x02D8 - 0x0280)
-class UEnvQueryTest_ProjectilePath final : public UMarvelEnvQueryTest
-{
-public:
-	TSet<struct FEnvQueryProjectileInfo>          ProjectileInfos;                                   // 0x0280(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	bool                                          bAddCharHeight;                                    // 0x02D0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_ProjectilePath">();
-	}
-	static class UEnvQueryTest_ProjectilePath* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_ProjectilePath>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_ProjectilePath) == 0x000008, "Wrong alignment on UEnvQueryTest_ProjectilePath");
-static_assert(sizeof(UEnvQueryTest_ProjectilePath) == 0x0002D8, "Wrong size on UEnvQueryTest_ProjectilePath");
-static_assert(offsetof(UEnvQueryTest_ProjectilePath, ProjectileInfos) == 0x000280, "Member 'UEnvQueryTest_ProjectilePath::ProjectileInfos' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ProjectilePath, bAddCharHeight) == 0x0002D0, "Member 'UEnvQueryTest_ProjectilePath::bAddCharHeight' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_RelativeGroundHeight
-// 0x0060 (0x02E0 - 0x0280)
-class UEnvQueryTest_RelativeGroundHeight : public UEnvQueryTest
-{
-public:
-	class UCurveFloat*                            DamageScoreCurve;                                  // 0x0280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TMap<int32, class UCurveFloat*>               HeroIDToCurve;                                     // 0x0288(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	bool                                          bConsiderDestructible;                             // 0x02D8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bConsiderSceneSummoned;                            // 0x02D9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2DA[0x2];                                      // 0x02DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxGroundSlope;                                    // 0x02DC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_RelativeGroundHeight">();
-	}
-	static class UEnvQueryTest_RelativeGroundHeight* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_RelativeGroundHeight>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_RelativeGroundHeight) == 0x000008, "Wrong alignment on UEnvQueryTest_RelativeGroundHeight");
-static_assert(sizeof(UEnvQueryTest_RelativeGroundHeight) == 0x0002E0, "Wrong size on UEnvQueryTest_RelativeGroundHeight");
-static_assert(offsetof(UEnvQueryTest_RelativeGroundHeight, DamageScoreCurve) == 0x000280, "Member 'UEnvQueryTest_RelativeGroundHeight::DamageScoreCurve' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_RelativeGroundHeight, HeroIDToCurve) == 0x000288, "Member 'UEnvQueryTest_RelativeGroundHeight::HeroIDToCurve' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_RelativeGroundHeight, bConsiderDestructible) == 0x0002D8, "Member 'UEnvQueryTest_RelativeGroundHeight::bConsiderDestructible' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_RelativeGroundHeight, bConsiderSceneSummoned) == 0x0002D9, "Member 'UEnvQueryTest_RelativeGroundHeight::bConsiderSceneSummoned' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_RelativeGroundHeight, MaxGroundSlope) == 0x0002DC, "Member 'UEnvQueryTest_RelativeGroundHeight::MaxGroundSlope' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_ShelterHeightCover
-// 0x0000 (0x0280 - 0x0280)
-class UEnvQueryTest_ShelterHeightCover final : public UEnvQueryTest
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_ShelterHeightCover">();
-	}
-	static class UEnvQueryTest_ShelterHeightCover* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_ShelterHeightCover>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_ShelterHeightCover) == 0x000008, "Wrong alignment on UEnvQueryTest_ShelterHeightCover");
-static_assert(sizeof(UEnvQueryTest_ShelterHeightCover) == 0x000280, "Wrong size on UEnvQueryTest_ShelterHeightCover");
-
-// Class MarvelAI.EnvQueryTest_ShelterTrace
-// 0x00B0 (0x0440 - 0x0390)
-class UEnvQueryTest_ShelterTrace final : public UEnvQueryTest_Trace
-{
-public:
-	struct FAIDataProviderFloatValue              MaxTraceDist;                                      // 0x0390(0x0040)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bUseCacheResult;                                   // 0x03D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3D1[0x3];                                      // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ValidSecondsForCache;                              // 0x03D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UEnvQueryContext>           ImportantTargetsContext;                           // 0x03D8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BaseScore;                                         // 0x03E0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         AdditionalScoreForImportant;                       // 0x03E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bWantsHitAsResult;                                 // 0x03E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3E9[0x57];                                     // 0x03E9(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_ShelterTrace">();
-	}
-	static class UEnvQueryTest_ShelterTrace* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_ShelterTrace>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_ShelterTrace) == 0x000008, "Wrong alignment on UEnvQueryTest_ShelterTrace");
-static_assert(sizeof(UEnvQueryTest_ShelterTrace) == 0x000440, "Wrong size on UEnvQueryTest_ShelterTrace");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, MaxTraceDist) == 0x000390, "Member 'UEnvQueryTest_ShelterTrace::MaxTraceDist' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, bUseCacheResult) == 0x0003D0, "Member 'UEnvQueryTest_ShelterTrace::bUseCacheResult' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, ValidSecondsForCache) == 0x0003D4, "Member 'UEnvQueryTest_ShelterTrace::ValidSecondsForCache' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, ImportantTargetsContext) == 0x0003D8, "Member 'UEnvQueryTest_ShelterTrace::ImportantTargetsContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, BaseScore) == 0x0003E0, "Member 'UEnvQueryTest_ShelterTrace::BaseScore' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, AdditionalScoreForImportant) == 0x0003E4, "Member 'UEnvQueryTest_ShelterTrace::AdditionalScoreForImportant' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_ShelterTrace, bWantsHitAsResult) == 0x0003E8, "Member 'UEnvQueryTest_ShelterTrace::bWantsHitAsResult' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_SurroundedCharacter
-// 0x0010 (0x0290 - 0x0280)
-class UEnvQueryTest_SurroundedCharacter : public UEnvQueryTest
-{
-public:
-	TArray<struct FEQSTargetConfig>               TargetGroups;                                      // 0x0280(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_SurroundedCharacter">();
-	}
-	static class UEnvQueryTest_SurroundedCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_SurroundedCharacter>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_SurroundedCharacter) == 0x000008, "Wrong alignment on UEnvQueryTest_SurroundedCharacter");
-static_assert(sizeof(UEnvQueryTest_SurroundedCharacter) == 0x000290, "Wrong size on UEnvQueryTest_SurroundedCharacter");
-static_assert(offsetof(UEnvQueryTest_SurroundedCharacter, TargetGroups) == 0x000280, "Member 'UEnvQueryTest_SurroundedCharacter::TargetGroups' has a wrong offset!");
-
-// Class MarvelAI.EnvQueryTest_SVONReachable
-// 0x0008 (0x0288 - 0x0280)
-class UEnvQueryTest_SVONReachable final : public UEnvQueryTest
-{
-public:
-	int32                                         NumIteration;                                      // 0x0280(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_SVONReachable">();
-	}
-	static class UEnvQueryTest_SVONReachable* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_SVONReachable>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_SVONReachable) == 0x000008, "Wrong alignment on UEnvQueryTest_SVONReachable");
-static_assert(sizeof(UEnvQueryTest_SVONReachable) == 0x000288, "Wrong size on UEnvQueryTest_SVONReachable");
-static_assert(offsetof(UEnvQueryTest_SVONReachable, NumIteration) == 0x000280, "Member 'UEnvQueryTest_SVONReachable::NumIteration' has a wrong offset!");
-
-// Class MarvelAI.MarvelAIAlarmSubsystem
-// 0x01D8 (0x0220 - 0x0048)
-class UMarvelAIAlarmSubsystem final : public UMarvelAIWorldSubsystem
-{
-public:
-	uint8                                         Pad_48[0x140];                                     // 0x0048(0x0140)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAISystem*                        CacheAISys;                                        // 0x0188(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_190[0x90];                                     // 0x0190(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnActorActivateAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
-	void OnActorEndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
-	void OnGameQuittingStart();
-	void OnMatchStateChange(EMatchState NewState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIAlarmSubsystem">();
-	}
-	static class UMarvelAIAlarmSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIAlarmSubsystem>();
-	}
-};
-static_assert(alignof(UMarvelAIAlarmSubsystem) == 0x000008, "Wrong alignment on UMarvelAIAlarmSubsystem");
-static_assert(sizeof(UMarvelAIAlarmSubsystem) == 0x000220, "Wrong size on UMarvelAIAlarmSubsystem");
-static_assert(offsetof(UMarvelAIAlarmSubsystem, CacheAISys) == 0x000188, "Member 'UMarvelAIAlarmSubsystem::CacheAISys' has a wrong offset!");
-
-// Class MarvelAI.MarvelAIAssetLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UMarvelAIAssetLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIAssetLibrary">();
-	}
-	static class UMarvelAIAssetLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIAssetLibrary>();
-	}
-};
-static_assert(alignof(UMarvelAIAssetLibrary) == 0x000008, "Wrong alignment on UMarvelAIAssetLibrary");
-static_assert(sizeof(UMarvelAIAssetLibrary) == 0x000030, "Wrong size on UMarvelAIAssetLibrary");
-
-// Class MarvelAI.MarvelAIAutoAbilityGlobalConfig
-// 0x0058 (0x0090 - 0x0038)
-class UMarvelAIAutoAbilityGlobalConfig final : public UPrimaryDataAsset
-{
-public:
-	TMap<EAbilityEffectPriority, struct FAbilityUsagePriorityConfig> UsageTypeBasePriorityConfig;    // 0x0038(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	int32                                         ComboUsageExtraPriority;                           // 0x0088(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseNewPriorityCalculation;                        // 0x008C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIAutoAbilityGlobalConfig">();
-	}
-	static class UMarvelAIAutoAbilityGlobalConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIAutoAbilityGlobalConfig>();
-	}
-};
-static_assert(alignof(UMarvelAIAutoAbilityGlobalConfig) == 0x000008, "Wrong alignment on UMarvelAIAutoAbilityGlobalConfig");
-static_assert(sizeof(UMarvelAIAutoAbilityGlobalConfig) == 0x000090, "Wrong size on UMarvelAIAutoAbilityGlobalConfig");
-static_assert(offsetof(UMarvelAIAutoAbilityGlobalConfig, UsageTypeBasePriorityConfig) == 0x000038, "Member 'UMarvelAIAutoAbilityGlobalConfig::UsageTypeBasePriorityConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAIAutoAbilityGlobalConfig, ComboUsageExtraPriority) == 0x000088, "Member 'UMarvelAIAutoAbilityGlobalConfig::ComboUsageExtraPriority' has a wrong offset!");
-static_assert(offsetof(UMarvelAIAutoAbilityGlobalConfig, bUseNewPriorityCalculation) == 0x00008C, "Member 'UMarvelAIAutoAbilityGlobalConfig::bUseNewPriorityCalculation' has a wrong offset!");
-
-// Class MarvelAI.AIAbilityActivationExtraConfig
-// 0x0010 (0x0040 - 0x0030)
-class UAIAbilityActivationExtraConfig : public UObject
-{
-public:
-	class FString                                 ConfigName;                                        // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	class FString GetConfigName();
-	void InitExtraConfig(class UObject* AIOwner);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIAbilityActivationExtraConfig">();
-	}
-	static class UAIAbilityActivationExtraConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIAbilityActivationExtraConfig>();
-	}
-};
-static_assert(alignof(UAIAbilityActivationExtraConfig) == 0x000008, "Wrong alignment on UAIAbilityActivationExtraConfig");
-static_assert(sizeof(UAIAbilityActivationExtraConfig) == 0x000040, "Wrong size on UAIAbilityActivationExtraConfig");
-static_assert(offsetof(UAIAbilityActivationExtraConfig, ConfigName) == 0x000030, "Member 'UAIAbilityActivationExtraConfig::ConfigName' has a wrong offset!");
-
-// Class MarvelAI.AbilityCheckInfoAsset
-// 0x0190 (0x01C8 - 0x0038)
-class UAbilityCheckInfoAsset final : public UPrimaryDataAsset
-{
-public:
-	struct FAIAbilityCheckInfo                    CheckInfo;                                         // 0x0038(0x0190)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AbilityCheckInfoAsset">();
-	}
-	static class UAbilityCheckInfoAsset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAbilityCheckInfoAsset>();
-	}
-};
-static_assert(alignof(UAbilityCheckInfoAsset) == 0x000008, "Wrong alignment on UAbilityCheckInfoAsset");
-static_assert(sizeof(UAbilityCheckInfoAsset) == 0x0001C8, "Wrong size on UAbilityCheckInfoAsset");
-static_assert(offsetof(UAbilityCheckInfoAsset, CheckInfo) == 0x000038, "Member 'UAbilityCheckInfoAsset::CheckInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UDangerousTargetAsset;
 
 // Class MarvelAI.MarvelAIController
 // 0x0450 (0x0D40 - 0x08F0)
@@ -7320,6 +3928,7 @@ public:
 	void SetAIAnthropomorphic(bool bEnable);
 	void SetDynamicDifficultyEnabled(bool Enable);
 	void SetEnableAIProcessInput(bool Enable);
+	void SetEnergyEmpty();
 	void SetEnergyFull();
 	void SetFocusOffsetOnActor(const struct FVector& Offset, bool IsInLocalCoordinate);
 	void SetFocusSpeedFactor(const float NewFocusSpeedFactor);
@@ -7384,7 +3993,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIController">();
+		STATIC_CLASS_IMPL("MarvelAIController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIController")
 	}
 	static class AMarvelAIController* GetDefaultObj()
 	{
@@ -7392,219 +4005,298 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(AMarvelAIController) == 0x000010, "Wrong alignment on AMarvelAIController");
-static_assert(sizeof(AMarvelAIController) == 0x000D40, "Wrong size on AMarvelAIController");
-static_assert(offsetof(AMarvelAIController, DamageSourceRecord) == 0x0008E8, "Member 'AMarvelAIController::DamageSourceRecord' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AbilityTacticClass) == 0x000938, "Member 'AMarvelAIController::AbilityTacticClass' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, OldBehaviorTree) == 0x000958, "Member 'AMarvelAIController::OldBehaviorTree' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, FocalOffsetOnActor) == 0x000960, "Member 'AMarvelAIController::FocalOffsetOnActor' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, QA_ChangeHeroEnergyAttribute) == 0x000978, "Member 'AMarvelAIController::QA_ChangeHeroEnergyAttribute' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bDisableMyPawnAsFocusTarget) == 0x000980, "Member 'AMarvelAIController::bDisableMyPawnAsFocusTarget' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, UseSmoothRotationWhenFocusChange) == 0x000981, "Member 'AMarvelAIController::UseSmoothRotationWhenFocusChange' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bUpdateFocusSpeedWhenSet) == 0x000982, "Member 'AMarvelAIController::bUpdateFocusSpeedWhenSet' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, FocusSpeedRange) == 0x000988, "Member 'AMarvelAIController::FocusSpeedRange' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, CurrentFocusSpeed) == 0x000998, "Member 'AMarvelAIController::CurrentFocusSpeed' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, FocusSpeedFactor) == 0x00099C, "Member 'AMarvelAIController::FocusSpeedFactor' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bEnableFocusUpdateDelay) == 0x0009A0, "Member 'AMarvelAIController::bEnableFocusUpdateDelay' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, RotatorToleranceToRegardAsMatched) == 0x0009A4, "Member 'AMarvelAIController::RotatorToleranceToRegardAsMatched' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, FocusUpdateDelayForPrevMatched) == 0x0009A8, "Member 'AMarvelAIController::FocusUpdateDelayForPrevMatched' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, FocusUpdateDelayForUnMatched) == 0x0009AC, "Member 'AMarvelAIController::FocusUpdateDelayForUnMatched' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, UseAIAbilityServer) == 0x000A08, "Member 'AMarvelAIController::UseAIAbilityServer' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AIInfo) == 0x000A30, "Member 'AMarvelAIController::AIInfo' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AutoAbilityComponent) == 0x000A38, "Member 'AMarvelAIController::AutoAbilityComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AIMementoComponent) == 0x000A40, "Member 'AMarvelAIController::AIMementoComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AbilitySolver) == 0x000A48, "Member 'AMarvelAIController::AbilitySolver' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, HeroCustomComponent) == 0x000A50, "Member 'AMarvelAIController::HeroCustomComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AbilityExecutorManagerComponent) == 0x000A58, "Member 'AMarvelAIController::AbilityExecutorManagerComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AbilityAgentComponent) == 0x000A60, "Member 'AMarvelAIController::AbilityAgentComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, TaskMoveTo) == 0x000A78, "Member 'AMarvelAIController::TaskMoveTo' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, BlockBodyTurnTag) == 0x000AF0, "Member 'AMarvelAIController::BlockBodyTurnTag' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, BlockCameraLookUpTag) == 0x000AFC, "Member 'AMarvelAIController::BlockCameraLookUpTag' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, BlockCameraTurnTag) == 0x000B08, "Member 'AMarvelAIController::BlockCameraTurnTag' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, MarvelAIPerceptionComponent) == 0x000B18, "Member 'AMarvelAIController::MarvelAIPerceptionComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, ReceiveSVONMoveRequestFailed) == 0x000B20, "Member 'AMarvelAIController::ReceiveSVONMoveRequestFailed' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, ReceiveBehaviorTreeMoveTaskEnd) == 0x000B30, "Member 'AMarvelAIController::ReceiveBehaviorTreeMoveTaskEnd' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bEnableUsageFocusClearDelay) == 0x000B40, "Member 'AMarvelAIController::bEnableUsageFocusClearDelay' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, UsageFocusClearDelay) == 0x000B44, "Member 'AMarvelAIController::UsageFocusClearDelay' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, PlayerInput) == 0x000BC8, "Member 'AMarvelAIController::PlayerInput' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bEnableAutoChangeHero) == 0x000BE0, "Member 'AMarvelAIController::bEnableAutoChangeHero' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bAllowPreSelectHero) == 0x000BE1, "Member 'AMarvelAIController::bAllowPreSelectHero' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bWantChangeHero) == 0x000C00, "Member 'AMarvelAIController::bWantChangeHero' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bInPlayerTeam) == 0x000C01, "Member 'AMarvelAIController::bInPlayerTeam' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, TreatApplyGEHandler) == 0x000C0C, "Member 'AMarvelAIController::TreatApplyGEHandler' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, CurDynamicDifficultyFactor) == 0x000C14, "Member 'AMarvelAIController::CurDynamicDifficultyFactor' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bEnableJump) == 0x000C24, "Member 'AMarvelAIController::bEnableJump' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, LastEnemyTarget) == 0x000C28, "Member 'AMarvelAIController::LastEnemyTarget' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, LastAllyTarget) == 0x000C30, "Member 'AMarvelAIController::LastAllyTarget' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, SightConfig) == 0x000C68, "Member 'AMarvelAIController::SightConfig' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, AILabRecommendedDuration) == 0x000C88, "Member 'AMarvelAIController::AILabRecommendedDuration' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, bUseAsyncPathFinding) == 0x000CB4, "Member 'AMarvelAIController::bUseAsyncPathFinding' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, NoPS_TeamID) == 0x000D2C, "Member 'AMarvelAIController::NoPS_TeamID' has a wrong offset!");
-static_assert(offsetof(AMarvelAIController, NoPS_UID) == 0x000D30, "Member 'AMarvelAIController::NoPS_UID' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelAIController;
 
-// Class MarvelAI.MarvelAIDataProvider
-// 0x0010 (0x0040 - 0x0030)
-class UMarvelAIDataProvider : public UAIDataProvider
+// Class MarvelAI.AISenseConfig_DangerousTarget
+// 0x0058 (0x00A8 - 0x0050)
+class UAISenseConfig_DangerousTarget final : public UAISenseConfig
 {
 public:
-	float                                         FloatValue;                                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         IntValue;                                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          BoolValue;                                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static bool GetBoolValue(const struct FAIDataProviderBoolValue& InProvider, const class UObject* Owner, int32 RequestId);
-	static float GetFloatValue(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner, int32 RequestId);
-	static float GetFloatValue_Blueprint(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner);
-	static int32 GetIntValue(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner, int32 RequestId);
-	static int32 GetIntValue_Blueprint(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner);
-
-	void SetAllValue(float NewValue);
+	class UDangerousTargetAsset*                  DangerousTargetAsset;                              // 0x0050(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<int32, struct FAISenseDangerousTargetConfig> DefaultDangerousTarget;                        // 0x0058(0x0050)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIDataProvider">();
+		STATIC_CLASS_IMPL("AISenseConfig_DangerousTarget")
 	}
-	static class UMarvelAIDataProvider* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAIDataProvider>();
+		STATIC_NAME_IMPL(L"AISenseConfig_DangerousTarget")
+	}
+	static class UAISenseConfig_DangerousTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISenseConfig_DangerousTarget>();
 	}
 };
-static_assert(alignof(UMarvelAIDataProvider) == 0x000008, "Wrong alignment on UMarvelAIDataProvider");
-static_assert(sizeof(UMarvelAIDataProvider) == 0x000040, "Wrong size on UMarvelAIDataProvider");
-static_assert(offsetof(UMarvelAIDataProvider, FloatValue) == 0x000030, "Member 'UMarvelAIDataProvider::FloatValue' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDataProvider, IntValue) == 0x000034, "Member 'UMarvelAIDataProvider::IntValue' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDataProvider, BoolValue) == 0x000038, "Member 'UMarvelAIDataProvider::BoolValue' has a wrong offset!");
+DUMPER7_ASSERTS_UAISenseConfig_DangerousTarget;
 
-// Class MarvelAI.MarvelAIDataProvider_AttackRange
-// 0x0008 (0x0048 - 0x0040)
-class UMarvelAIDataProvider_AttackRange final : public UMarvelAIDataProvider
+// Class MarvelAI.AIServerRequestServices
+// 0x02C0 (0x0310 - 0x0050)
+class UAIServerRequestServices final : public UMarvelAIWorldSubsystem
 {
 public:
-	float                                         ValueForRangeHero;                                 // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ValueForMeleeHero;                                 // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x70];                                      // 0x0050(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AILabServerUrl;                                    // 0x00C0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxTimeOut;                                        // 0x00D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D4[0xE4];                                      // 0x00D4(0x00E4)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RequestInterval;                                   // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         RequestIndexID;                                    // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C8[0x148];                                    // 0x01C8(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class FString GetAILabServerUrl();
+	void InitRequestServicesLogic();
+	void RequestTimer(bool bRetry);
+	void SetAILabServerUrl(const class FString& NewUrl, const class FString& Msg);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIDataProvider_AttackRange">();
+		STATIC_CLASS_IMPL("AIServerRequestServices")
 	}
-	static class UMarvelAIDataProvider_AttackRange* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAIDataProvider_AttackRange>();
+		STATIC_NAME_IMPL(L"AIServerRequestServices")
+	}
+	static class UAIServerRequestServices* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIServerRequestServices>();
 	}
 };
-static_assert(alignof(UMarvelAIDataProvider_AttackRange) == 0x000008, "Wrong alignment on UMarvelAIDataProvider_AttackRange");
-static_assert(sizeof(UMarvelAIDataProvider_AttackRange) == 0x000048, "Wrong size on UMarvelAIDataProvider_AttackRange");
-static_assert(offsetof(UMarvelAIDataProvider_AttackRange, ValueForRangeHero) == 0x000040, "Member 'UMarvelAIDataProvider_AttackRange::ValueForRangeHero' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDataProvider_AttackRange, ValueForMeleeHero) == 0x000044, "Member 'UMarvelAIDataProvider_AttackRange::ValueForMeleeHero' has a wrong offset!");
+DUMPER7_ASSERTS_UAIServerRequestServices;
 
-// Class MarvelAI.MarvelAIDataProvider_BattleDist
-// 0x0008 (0x0048 - 0x0040)
-class UMarvelAIDataProvider_BattleDist final : public UMarvelAIDataProvider
-{
-public:
-	bool                                          bUseWiderDistance;                                 // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIDataProvider_BattleDist">();
-	}
-	static class UMarvelAIDataProvider_BattleDist* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIDataProvider_BattleDist>();
-	}
-};
-static_assert(alignof(UMarvelAIDataProvider_BattleDist) == 0x000008, "Wrong alignment on UMarvelAIDataProvider_BattleDist");
-static_assert(sizeof(UMarvelAIDataProvider_BattleDist) == 0x000048, "Wrong size on UMarvelAIDataProvider_BattleDist");
-static_assert(offsetof(UMarvelAIDataProvider_BattleDist, bUseWiderDistance) == 0x000040, "Member 'UMarvelAIDataProvider_BattleDist::bUseWiderDistance' has a wrong offset!");
-
-// Class MarvelAI.MarvelAIDataProvider_PyBase
-// 0x0000 (0x0040 - 0x0040)
-class UMarvelAIDataProvider_PyBase final : public UMarvelAIDataProvider
-{
-public:
-	bool PyBindData(const class UObject* Owner, int32 RequestId);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIDataProvider_PyBase">();
-	}
-	static class UMarvelAIDataProvider_PyBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIDataProvider_PyBase>();
-	}
-};
-static_assert(alignof(UMarvelAIDataProvider_PyBase) == 0x000008, "Wrong alignment on UMarvelAIDataProvider_PyBase");
-static_assert(sizeof(UMarvelAIDataProvider_PyBase) == 0x000040, "Wrong size on UMarvelAIDataProvider_PyBase");
-
-// Class MarvelAI.MarvelAIDataProvider_StandPointRange
-// 0x0000 (0x0040 - 0x0040)
-class UMarvelAIDataProvider_StandPointRange final : public UMarvelAIDataProvider
+// Class MarvelAI.SteeringLimiter
+// 0x0000 (0x0000 - 0x0000)
+class ISteeringLimiter final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIDataProvider_StandPointRange">();
+		STATIC_CLASS_IMPL("SteeringLimiter")
 	}
-	static class UMarvelAIDataProvider_StandPointRange* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAIDataProvider_StandPointRange>();
+		STATIC_NAME_IMPL(L"SteeringLimiter")
+	}
+	static class ISteeringLimiter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ISteeringLimiter>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(UMarvelAIDataProvider_StandPointRange) == 0x000008, "Wrong alignment on UMarvelAIDataProvider_StandPointRange");
-static_assert(sizeof(UMarvelAIDataProvider_StandPointRange) == 0x000040, "Wrong size on UMarvelAIDataProvider_StandPointRange");
+DUMPER7_ASSERTS_ISteeringLimiter;
 
-// Class MarvelAI.MarvelAIDifficultyGlobalConfig
-// 0x0020 (0x0058 - 0x0038)
-class UMarvelAIDifficultyGlobalConfig final : public UPrimaryDataAsset
-{
-public:
-	TSubclassOf<class UGameplayEffect>            GE_AI_DamageTarget;                                // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UGameplayEffect>            GE_AI_DamageSource;                                // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UGameplayEffect>            GE_AI_TreatTarget;                                 // 0x0048(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UGameplayEffect>            GE_AI_TreatSource;                                 // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIDifficultyGlobalConfig">();
-	}
-	static class UMarvelAIDifficultyGlobalConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIDifficultyGlobalConfig>();
-	}
-};
-static_assert(alignof(UMarvelAIDifficultyGlobalConfig) == 0x000008, "Wrong alignment on UMarvelAIDifficultyGlobalConfig");
-static_assert(sizeof(UMarvelAIDifficultyGlobalConfig) == 0x000058, "Wrong size on UMarvelAIDifficultyGlobalConfig");
-static_assert(offsetof(UMarvelAIDifficultyGlobalConfig, GE_AI_DamageTarget) == 0x000038, "Member 'UMarvelAIDifficultyGlobalConfig::GE_AI_DamageTarget' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDifficultyGlobalConfig, GE_AI_DamageSource) == 0x000040, "Member 'UMarvelAIDifficultyGlobalConfig::GE_AI_DamageSource' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDifficultyGlobalConfig, GE_AI_TreatTarget) == 0x000048, "Member 'UMarvelAIDifficultyGlobalConfig::GE_AI_TreatTarget' has a wrong offset!");
-static_assert(offsetof(UMarvelAIDifficultyGlobalConfig, GE_AI_TreatSource) == 0x000050, "Member 'UMarvelAIDifficultyGlobalConfig::GE_AI_TreatSource' has a wrong offset!");
-
-// Class MarvelAI.AIDifficultyTableHelper
+// Class MarvelAI.AISpawnDataConfig
 // 0x0000 (0x0030 - 0x0030)
-class UAIDifficultyTableHelper final : public UBlueprintFunctionLibrary
+class UAISpawnDataConfig final : public UObject
 {
 public:
-	static float GetAttributeValueForHero(const struct FAIDifficultyAttributeConfig& AttributeConfig, class AMarvelBaseCharacter* MarvelHero);
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AISpawnDataConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISpawnDataConfig")
+	}
+	static class UAISpawnDataConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISpawnDataConfig>();
+	}
+};
+DUMPER7_ASSERTS_UAISpawnDataConfig;
+
+// Class MarvelAI.AISpawner
+// 0x0010 (0x0710 - 0x0700)
+class AAISpawner final : public AAISceneConfigActorBase
+{
+public:
+	class UAISpawnDataConfig*                     SpawnDataConfig;                                   // 0x0700(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_708[0x8];                                      // 0x0708(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDifficultyTableHelper">();
+		STATIC_CLASS_IMPL("AISpawner")
 	}
-	static class UAIDifficultyTableHelper* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAIDifficultyTableHelper>();
+		STATIC_NAME_IMPL(L"AISpawner")
+	}
+	static class AAISpawner* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AAISpawner>();
 	}
 };
-static_assert(alignof(UAIDifficultyTableHelper) == 0x000008, "Wrong alignment on UAIDifficultyTableHelper");
-static_assert(sizeof(UAIDifficultyTableHelper) == 0x000030, "Wrong size on UAIDifficultyTableHelper");
+DUMPER7_ASSERTS_AAISpawner;
+
+// Class MarvelAI.EnvQueryTest_MarginTarget
+// 0x0008 (0x0288 - 0x0280)
+class UEnvQueryTest_MarginTarget final : public UMarvelEnvQueryTest
+{
+public:
+	float                                         ScoreMax;                                          // 0x0280(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x0284(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_MarginTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_MarginTarget")
+	}
+	static class UEnvQueryTest_MarginTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_MarginTarget>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_MarginTarget;
+
+// Class MarvelAI.MarvelAIStandPointManager
+// 0x0050 (0x0080 - 0x0030)
+class UMarvelAIStandPointManager : public UObject
+{
+public:
+	TMap<class FName, class AStandPointBase*>     StandPointMap;                                     // 0x0030(0x0050)(Protected, NativeAccessSpecifierProtected)
+
+public:
+	class AStandPointBase* FindStandPoint(const class FName& PointName);
+	void RegisterStandPoint(class AStandPointBase* StandPoint);
+	void UnRegisterStandPoint(class AStandPointBase* StandPoint);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIStandPointManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIStandPointManager")
+	}
+	static class UMarvelAIStandPointManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIStandPointManager>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIStandPointManager;
+
+// Class MarvelAI.AIStrategyAreaVolume
+// 0x0010 (0x0720 - 0x0710)
+class AAIStrategyAreaVolume final : public AVolume
+{
+public:
+	int32                                         MatchState;                                        // 0x0710(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EStrategyType                                 StrategyType;                                      // 0x0714(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EGroupState                                   GroupState;                                        // 0x0718(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_71C[0x4];                                      // 0x071C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	EGroupState GetGroupState() const;
+	int32 GetMatchState() const;
+	EStrategyType GetStrategyType() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIStrategyAreaVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIStrategyAreaVolume")
+	}
+	static class AAIStrategyAreaVolume* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AAIStrategyAreaVolume>();
+	}
+};
+DUMPER7_ASSERTS_AAIStrategyAreaVolume;
+
+// Class MarvelAI.MarvelAIStimuliSourceComponent
+// 0x0000 (0x0120 - 0x0120)
+class UMarvelAIStimuliSourceComponent final : public UMarvelAIStimuliSourceComponentBase
+{
+public:
+	void OnSummonedBeginAgent(class AActor* SummonerTarget);
+	void OnSummonedEndAgent(class AActor* SummonerTarget);
+	void WhenOwnerDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ParamHandle);
+	void WhenOwnerReborn(class AActor* TargetActor, const struct FCharacterRebornParam& Param);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIStimuliSourceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIStimuliSourceComponent")
+	}
+	static class UMarvelAIStimuliSourceComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIStimuliSourceComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIStimuliSourceComponent;
+
+// Class MarvelAI.AITargetContextBase
+// 0x0008 (0x0038 - 0x0030)
+class UAITargetContextBase : public UObject
+{
+public:
+	bool                                          bUseSense;                                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AITargetContextBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContextBase")
+	}
+	static class UAITargetContextBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetContextBase>();
+	}
+};
+DUMPER7_ASSERTS_UAITargetContextBase;
+
+// Class MarvelAI.AITargetContext_AIInfoTargets
+// 0x0008 (0x0040 - 0x0038)
+class UAITargetContext_AIInfoTargets : public UAITargetContextBase
+{
+public:
+	EAIInfoTargetType                             TargetType;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EHeroRole                                     LimitRole;                                         // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AITargetContext_AIInfoTargets")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_AIInfoTargets")
+	}
+	static class UAITargetContext_AIInfoTargets* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetContext_AIInfoTargets>();
+	}
+};
+DUMPER7_ASSERTS_UAITargetContext_AIInfoTargets;
 
 // Class MarvelAI.MarvelAIGameModeDefaultConfigAsset
 // 0x01B0 (0x01E8 - 0x0038)
@@ -7629,305 +4321,281 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIGameModeDefaultConfigAsset">();
+		STATIC_CLASS_IMPL("MarvelAIGameModeDefaultConfigAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIGameModeDefaultConfigAsset")
 	}
 	static class UMarvelAIGameModeDefaultConfigAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAIGameModeDefaultConfigAsset>();
 	}
 };
-static_assert(alignof(UMarvelAIGameModeDefaultConfigAsset) == 0x000008, "Wrong alignment on UMarvelAIGameModeDefaultConfigAsset");
-static_assert(sizeof(UMarvelAIGameModeDefaultConfigAsset) == 0x0001E8, "Wrong size on UMarvelAIGameModeDefaultConfigAsset");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, AIGameModeConfigMap) == 0x000038, "Member 'UMarvelAIGameModeDefaultConfigAsset::AIGameModeConfigMap' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, bEnablePersonificationAIForDDA) == 0x000088, "Member 'UMarvelAIGameModeDefaultConfigAsset::bEnablePersonificationAIForDDA' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, bEnableNormalAIForDDA) == 0x000089, "Member 'UMarvelAIGameModeDefaultConfigAsset::bEnableNormalAIForDDA' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, DifficultyConfig) == 0x00008C, "Member 'UMarvelAIGameModeDefaultConfigAsset::DifficultyConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, ChangeHeroConfig) == 0x000098, "Member 'UMarvelAIGameModeDefaultConfigAsset::ChangeHeroConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, BackBaseBehaviorTree) == 0x000178, "Member 'UMarvelAIGameModeDefaultConfigAsset::BackBaseBehaviorTree' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, FollowBehaviorTree) == 0x000180, "Member 'UMarvelAIGameModeDefaultConfigAsset::FollowBehaviorTree' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, AIDelegateBehaviorTree) == 0x000188, "Member 'UMarvelAIGameModeDefaultConfigAsset::AIDelegateBehaviorTree' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, bGrayRelease_AILabAutoChangeHero) == 0x000190, "Member 'UMarvelAIGameModeDefaultConfigAsset::bGrayRelease_AILabAutoChangeHero' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, GrayReleaseRatio_AILabAutoChangeHero) == 0x000194, "Member 'UMarvelAIGameModeDefaultConfigAsset::GrayReleaseRatio_AILabAutoChangeHero' has a wrong offset!");
-static_assert(offsetof(UMarvelAIGameModeDefaultConfigAsset, GrayReleaseRegion_AILabAutoChangeHero) == 0x000198, "Member 'UMarvelAIGameModeDefaultConfigAsset::GrayReleaseRegion_AILabAutoChangeHero' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAIGameModeDefaultConfigAsset;
 
-// Class MarvelAI.MarvelAIGlobalDataSubsystem
-// 0x0238 (0x0280 - 0x0048)
-class UMarvelAIGlobalDataSubsystem final : public UMarvelAIWorldSubsystem
+// Class MarvelAI.AITargetContext_AliveTargets
+// 0x0008 (0x0040 - 0x0038)
+class UAITargetContext_AliveTargets : public UAITargetContextBase
 {
 public:
-	TMap<TSubclassOf<class AActor>, struct FLevelStaticActorCache> LevelStaticActorCache;            // 0x0048(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_98[0x1E8];                                     // 0x0098(0x01E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UMarvelAIGlobalDataSubsystem* GetAIGlobalDataSubsystem(const class UObject* WorldContextObject);
-
-	bool CanSummonerBeSense(const int32 SummonerID);
-	bool CheckExistLevelStaticActor(TSubclassOf<class AActor> ActorClass);
-	int32 GetActorUID(const class AActor* Actor);
-	void GetLevelStaticActors(TSubclassOf<class AActor> ActorClass, TArray<class AActor*>* OutActors);
-	void GetLevelStaticActorsWithTag(TSubclassOf<class AActor> ActorClass, const class FName& Tag, TArray<class AActor*>* OutActors);
-	class APortalViewActor_Level* GetNearestPortal(const struct FVector& QueryLocation, const double LimitDistance);
-	bool GetPositionProgress(const class AMarvelAIController* QueryAI, const class AMarvelBaseCharacter* TargetChar, float* PositionProgress);
-	bool IsAIUsableHero_Static(const class UObject* WorldContextObject, int32 HeroID);
-	void OnLevelPrepareStart();
+	EAICharacterSide                              TargetCamp;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EHeroRole                                     LimitRole;                                         // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIGlobalDataSubsystem">();
+		STATIC_CLASS_IMPL("AITargetContext_AliveTargets")
 	}
-	static class UMarvelAIGlobalDataSubsystem* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAIGlobalDataSubsystem>();
+		STATIC_NAME_IMPL(L"AITargetContext_AliveTargets")
+	}
+	static class UAITargetContext_AliveTargets* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetContext_AliveTargets>();
 	}
 };
-static_assert(alignof(UMarvelAIGlobalDataSubsystem) == 0x000008, "Wrong alignment on UMarvelAIGlobalDataSubsystem");
-static_assert(sizeof(UMarvelAIGlobalDataSubsystem) == 0x000280, "Wrong size on UMarvelAIGlobalDataSubsystem");
-static_assert(offsetof(UMarvelAIGlobalDataSubsystem, LevelStaticActorCache) == 0x000048, "Member 'UMarvelAIGlobalDataSubsystem::LevelStaticActorCache' has a wrong offset!");
+DUMPER7_ASSERTS_UAITargetContext_AliveTargets;
 
-// Class MarvelAI.MarvelAILibrary
+// Class MarvelAI.AITargetContext_EnemiesInView
+// 0x0050 (0x0088 - 0x0038)
+class UAITargetContext_EnemiesInView : public UAITargetContextBase
+{
+public:
+	TSet<int32>                                   HighPrioritySummoners;                             // 0x0038(0x0050)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AITargetContext_EnemiesInView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_EnemiesInView")
+	}
+	static class UAITargetContext_EnemiesInView* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetContext_EnemiesInView>();
+	}
+};
+DUMPER7_ASSERTS_UAITargetContext_EnemiesInView;
+
+// Class MarvelAI.MarvelAvoidanceManager
+// 0x00D0 (0x01C8 - 0x00F8)
+class UMarvelAvoidanceManager : public UAvoidanceManager
+{
+public:
+	class ARecastNavMesh*                         NavData;                                           // 0x00F8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         NavPredictDeltaTime;                               // 0x0100(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                NavPredictExtent;                                  // 0x0108(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         BlockThreshold;                                    // 0x0120(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         IgnoreDuration;                                    // 0x0124(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_128[0xA0];                                     // 0x0128(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAvoidanceManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAvoidanceManager")
+	}
+	static class UMarvelAvoidanceManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAvoidanceManager>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAvoidanceManager;
+
+// Class MarvelAI.AITargetContext_Players
+// 0x0008 (0x0040 - 0x0038)
+class UAITargetContext_Players : public UAITargetContextBase
+{
+public:
+	bool                                          bNeedPlayerInSight;                                // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AITargetContext_Players")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_Players")
+	}
+	static class UAITargetContext_Players* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetContext_Players>();
+	}
+};
+DUMPER7_ASSERTS_UAITargetContext_Players;
+
+// Class MarvelAI.AITargetFactorLibrary
 // 0x0000 (0x0030 - 0x0030)
-class UMarvelAILibrary final : public UBlueprintFunctionLibrary
+class UAITargetFactorLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	static void ActivateAbilityUsage(class AMarvelAIController* AIController, const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, int32 UsageID, bool ImitateAILab, bool bDoUsageCheck);
-	static void ActivateAIUltra(class AMarvelAIController* AIController);
-	static class UInputRecordComponent* AddInputRecordToAI(class AMarvelAIController* AIController);
-	static bool CanFindNavPathBetweenLocations(class AController* Controller, const struct FVector& StartLocation, const struct FVector& EndLocation);
-	static bool CanFindNavPathToLocation(class AController* Controller, const struct FVector& TargetLocation);
-	static void ChangeGamePlayDebuggerNetUpdateFrequency(class UObject* WorldContextObject, bool UseHighFrequency);
-	static void ChangeHero(class AMarvelAIController* AIController, const int32 HeroId, const struct FTransform& SpawnTransform);
-	static bool CheckAbilityIsReady(class AMarvelAIController* MyController, int32 AbilityUsageID, bool bCheckCanUseNow);
-	static bool CheckActorHasTag(const class AActor* TargetActor, const struct FGameplayTag& TagToCheck);
-	static bool CheckAICharacterTag(const class AMarvelBaseCharacter* Character, const struct FAIHeroTag& Tags, EGameplayContainerMatchType MatchType);
-	static bool CheckDashBarrierFree(class AMarvelBaseCharacter* AICharacter, class AMarvelAIController* AIController, float DashDistance);
-	static bool CheckInIntRange(const struct FInt32Range& Range, const int32 Num);
-	static bool CheckIsImportantTarget(const class AActor* Target);
-	static bool CheckIsInStealth(const class AActor* TargetActor);
-	static bool CheckIsRangeHero(const class AMarvelBaseCharacter* MarvelHero);
-	static bool CheckLowHealthMarkValid(class AMarvelAIController* AIController, class AActor* Target);
-	static bool CompareActorRelationWithFilter(const class AActor* FromActor, const class AActor* ToActor, EAIFilterSide Side);
-	static bool CompareAIFilterSide(float A, float B, EMarvelArithmeticOperation ArithmeticOperation);
-	static bool CompareOwnerShipTypeToAIFilterSide(class AAIController* Controller, EOwnershipType ShipType, EAIFilterSide Side);
-	static EAIFilterSide ConvertOwnerShipTypeToAIFilterSide(class AMarvelAIController* Controller, EOwnershipType ShipType);
-	static void DebugDrawPathPoints(class AActor* StartActor, const TArray<struct FVector>& PathPoints, float Duration, bool bDrawStartActor, const struct FColor& DrawColor, float Thickness);
-	static bool DoesAIExistInGame(class UObject* WorldContextObject);
-	static TArray<struct FVector> FindNavPathToLocation(class AController* Controller, const struct FVector& TargetLocation);
-	static void ForceUpdateAllGCNavigationData(class UObject* WorldContextObject);
-	static EPathFollowingRequestResult GeneralMoveToLocation(class AMarvelAIController* AIController, const struct FVector& DestLocation);
-	static EPathFollowingRequestResult GeneralMoveToLocationAdvance(class AMarvelAIController* AIController, const struct FVector& DestLocation, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath);
-	static EPathFollowingRequestResult GeneralMoveToStaticActor(class AMarvelAIController* AIController, class AActor* DestActor, float RandomRadius);
-	static int32 GetAbilityIDByConfig(const struct FMarvelAIAutoAbilityTable& Data, const class AMarvelAIController* OwnerController);
-	static int32 GetAbilityIDByUsage(const struct FAIAbilityUsage& AbilityUsage, class AMarvelAIController* OwnerController);
-	static struct FMarvelAIAutoAbilityTable GetAIAutoAbilityConfig(int32 Id);
-	static TArray<class AMarvelAIController*> GetAIByTag(class UObject* WorldContextObject, const struct FGameplayTag& GameplayTag);
-	static int32 GetAICount(class AMarvelBaseCharacter* Character, EAIFilterSide FilterSide);
-	static bool GetAIDifficultyConfigByModeAndLevel(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel, struct FMarvelAIDifficultyTable* OutDifficultyConfig);
-	static class UDataTable* GetAIHeroTable();
-	static const TArray<struct FAIHeroTagLogicConfig> GetAIHeroTagLogics(int32 HeroID);
-	static class UAILabConfigAsset* GetAILabConfigAsset();
-	static float GetAISenseMaxAge(class AMarvelAIController* AIController, class UClass* AISenseClass);
-	static class UAIVisualLoggerConfig* GetAIVisualLoggerConfig(const class UObject* WorldContext);
-	static int32 GetAllAICount(class AMarvelBaseCharacter* Character);
-	static float GetAmmoClip(class UMarvelAbilitySystemCom* AbilitySystemComponent, EAmmoClipType AmmoType);
-	static int32 GetAndUpdatePreviewHeroIDForAI(class AMarvelPlayerState* PlayerState, bool ImmediatelyUpdate);
-	static float GetBattleDistanceFromTable(class AMarvelAIController* Controller);
-	static float GetBattleScoreOfActor(const class AActor* TargetActor);
-	static bool GetCheckedHeroBehaviorTreeConfig(const class AMarvelBaseCharacter* MarvelHero, struct FMarvelHeroBehaviorTreeTable* OutConfigData);
-	static bool GetCheckedHeroBehaviorTreeConfigByID(const int32 HeroId, const int32 SculptID, struct FMarvelHeroBehaviorTreeTable* OutConfigData);
-	static int32 GetDefaultRequestServerIndex(const class AMarvelAIController* Controller);
-	static int32 GetEnemyAICount(class AMarvelBaseCharacter* Character);
-	static float GetEnergyProportionOfActor(const class AActor* ActorWithEnergy);
-	static float GetHealthProportionOfActor(const class AActor* ActorWithHealth, int32 HealthBarTypeMask);
-	static struct FMarvelHeroBehaviorTreeTable GetHeroBehaviorTreeConfig(const class AMarvelBaseCharacter* MarvelHero);
-	static class UBehaviorTree* GetHeroGameModeBehaviorTree(class AMarvelAIController* Controller);
-	static struct FVector GetInvalidLocation();
-	static struct FVector GetLocOfCoverMostPoints(const TArray<struct FVector>& SourcePoints, float Radius, const class AActor* FilterDistanceActor, float FilterDistance, bool bDebug, const float DebugShowTime);
-	static TArray<struct FMarvelAIStandPointGroupTable> GetMarvelAIStandPointGroupTables();
-	static const struct FMarvelHeroAutoAITable GetMarvelHeroAutoAITable(int32 HeroID);
-	static float GetMaxHealthPropertyOfActor(const class AActor* ActorWithHealth, int32 HealthBarTypeMask);
-	static struct FVector GetNavNowSegmentEnd(class AAIController* Controller);
-	static TArray<struct FVector> GetNavPathArray(class AAIController* Controller);
-	static struct FVector GetNavPathEnd(class AAIController* Controller);
-	static struct FVector GetNearestReachableLocation(const class UObject* WorldContextObject, const struct FVector& QueryLocation, const struct FVector& SearchExtent);
-	static float GetPathPointsLength(const TArray<struct FVector>& PathPoints);
-	static float GetRandomJumpIntervalsScale(const struct FMarvelAIDifficultyTable& Table, float DynamicDifficultyFactor);
-	static bool GetRandomLocationAroundLocation(const class UObject* WorldContext, const struct FVector& InLocation, struct FVector* OutLocation, float RandomRadius);
-	static struct FVector GetRandomLocationInnerBoxArea(const class UBoxComponent* Area);
-	static bool GetRandomLocationOnNavMesh(const class AActor* DestActor, struct FVector* OutLocation, float RandomRadius);
-	static float GetRandomUpdatePreSelectHeroDelay(class UObject* WorldContextObject);
-	static class AStandPointBase* GetStandPointByName(const class UObject* WorldContext, const class FName& PointName);
-	static void GetSummonersByTeam(const class UObject* WorldContextObject, const int32 TeamID, TArray<class AActor*>* OutSummoners);
-	static void GetSummonersSpawnedFromCharacter(class AMarvelBaseCharacter* InInstigator, TArray<class AActor*>* OutSummoners);
-	static struct FVector GetTargetLocationForAI(const class AActor* TargetActor, class AActor* OptRequestedBy);
-	static int32 GetTeammateAICount(class AMarvelBaseCharacter* Character);
-	static void GetTeammateSummoned(class AMarvelAIController* AIController, int32 SummonedID, TArray<class AActor*>* OutSummonedComps);
-	static class FString IntArrayToString(const TArray<int32>& IntArray);
-	static bool IsAbilityActive(const class AMarvelBaseCharacter* Character, int32 AbilityID);
-	static bool IsAILabEnabled(class UObject* WorldContextObject);
-	static bool IsAIUsableHero(class UObject* WorldContextObject, int32 HeroID);
-	static bool IsTargetSeenFromPortal(const class AMarvelAIController* QueryAI, const class AActor* Target);
+	static void CancelConcentrateTarget(class AMarvelAIController* MyController, class AActor* Target);
+	static float GetDamageSourceFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target);
+	static float GetLowHpFactorForTarget(class AActor* Target, float MarkLife);
+	static float GetRoleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AActor* MyActor, class AActor* TargetActor);
+	static float GetTargetChangeProbability(const struct FTargetChangeConfig& Config, float TargetHpRatio);
+	static float GetVisibleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target);
+	static void TryAddHpLowMarkToTarget(const struct FTargetChangeConfig& Config, class AActor* Target, float MarkLife);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AITargetFactorLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetFactorLibrary")
+	}
+	static class UAITargetFactorLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITargetFactorLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UAITargetFactorLibrary;
+
+// Class MarvelAI.AIVisualLoggerConfig
+// 0x0058 (0x0090 - 0x0038)
+class UAIVisualLoggerConfig final : public UAIGlobalConfigAsset
+{
+public:
+	bool                                          bLimitLogging;                                     // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<class FName>                             CategoriesNeedLogging;                             // 0x0040(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIVisualLoggerConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIVisualLoggerConfig")
+	}
+	static class UAIVisualLoggerConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIVisualLoggerConfig>();
+	}
+};
+DUMPER7_ASSERTS_UAIVisualLoggerConfig;
+
+// Class MarvelAI.AIAbilityUsageLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UAIAbilityUsageLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static class UMarvelGameplayAbility* GetAbilityByUsageID(int32 AbilityUsageID, class AMarvelAIController* OwnerController);
+	static class UMarvelGameplayAbility* GetAbilityFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext);
+	static class FString GetAbilityUsageDescription(const struct FAIAbilityUsage& AbilityUsage);
+	static struct FVector GetTargetLocation(const struct FAIAbilityUsage& AbilityUsage);
+	static struct FMarvelAIAutoAbilityTable GetUsageConfig(const struct FAIAbilityUsage& AbilityUsage);
+	static bool GetUsageConfigFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, struct FMarvelAIAutoAbilityTable* OutUsageConfig);
 	static bool IsValidAbilityUsage(const struct FAIAbilityUsage& AbilityUsage);
-	static bool IsValidAIAutoAbilityConfig(const struct FMarvelAIAutoAbilityTable& Data);
-	static bool IsValidHeroBehaviorTreeConfig(const struct FMarvelHeroBehaviorTreeTable& Data);
-	static bool IsValidLocation(const struct FVector& LocationToCheck);
-	static void LoadAndPlayRecord(class AMarvelAIController* AIController, const class FString& RecordName, EInputRecordPath RecordPath);
-	static void LoadInputRecordByAI(class AAIController* InController, const class FString& RecordName, EInputRecordPath RecordPath);
-	static void MarkIfSelectTargetNodeUseSense(class AMarvelAIController* AIController, const class FString& NodeName, bool UseSense);
-	static void PlayInputRecordByAI(class AAIController* InController);
-	static void RemoveScoreModuleDebugData(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, const class FString& ModuleName, EAIScoreArea ScoreArea);
-	static bool SetAIAbilityServer(const class UObject* WCO, int32 AbilityServerIndex);
-	static void SetAIChangeHeroDebugInfo(class AMarvelAIController* AIController, EAIChangeHeroReason ChangeReason, bool ChangeResult, float Curve_Energy, int32 ChangeCD, float Curve_CD, const class FString& FailedReason);
-	static void SetAILabServerUrl(class UObject* WorldContextObject, const class FString& NewUrl, const class FString& Msg);
-	static void SetDDADramaType(const class UObject* WorldContextObject, int32 DDAType);
-	static void SetTeamAIAbilityTactic(const class UObject* WorldContextObject, const TSet<int32>& TeamIDs, class UClass* AbilityTacticClass);
-	static void SetTeamAIAbilityTacticClass(class UObject* WorldContextObject, EBattleSide BattleSide, class UClass* AbilityTacticClass);
-	static bool ShouldUseFlyPath(class AActor* MovingActor);
-	static bool SolveThreeSphereIntersections(const TArray<struct FVector>& Points, const TArray<float>& RadiusSq, TArray<struct FVector>* OutIntersections);
-	static class AAIController* SpawnInputRecordByAI(class UObject* WorldContextObject, const struct FAISpawnParam& AISpawnParam);
-	static void StopInputRecordByAI(class UObject* WorldContextObject);
-	static void StoreScoreModuleDebugData(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, const class FString& ModuleName, EAIScoreArea ScoreArea, float Score);
-	static void StoreTargetFinalScoreForDebug(class AMarvelAIController* AIController, class AActor* Target, const class FString& NodeName, float FinalScore, const TSet<int32>& HighPrioritySummoners);
-	static struct FVector TakeFlyLocationFromBox(class AActor* MovingActor, const class UBoxComponent* Area, int32 MaxAttemptTime);
-	static struct FVector TakeTargetLocationForStaticActor(class AActor* MovingActor, class AActor* DestActor, float RandomRadius, bool UseNavAgent);
-	static struct FVector TestRotateVector(const struct FVector& InVec, const struct FRotator& InRot);
-	static void TryAddLowHealthMark(class AMarvelAIController* AIController, class AActor* Target);
-	static void UpdateAIDifficultyByTeamID(const class UObject* WorldContextObject, const int32 TeamID, const int32 DifficultyLevel);
-	static bool UpdateAIGameModeConfigDataAsset(const class FString& DataExec);
-	static bool UpdateAIHitRateDataAsset(const int32 DifficultyLevel, const class FString& DataExec);
-	static void UpdateTeamDifficulty(class UObject* WorldContextObject, int32 TeamNum, float DifficultyLevel);
-	static void UpdateTeamDynamicDifficulty(class UObject* WorldContextObject, int32 TeamID, float DynamicDifficultyFactor);
-	static bool VisibleCheckForBattleChess(class AMarvelBaseCharacter* Querier, class AActor* Target);
-	static void VlogPathPoints(const class AActor* LogOwner, const TArray<struct FVector>& PathPoints);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAILibrary">();
+		STATIC_CLASS_IMPL("AIAbilityUsageLibrary")
 	}
-	static class UMarvelAILibrary* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAILibrary>();
+		STATIC_NAME_IMPL(L"AIAbilityUsageLibrary")
+	}
+	static class UAIAbilityUsageLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityUsageLibrary>();
 	}
 };
-static_assert(alignof(UMarvelAILibrary) == 0x000008, "Wrong alignment on UMarvelAILibrary");
-static_assert(sizeof(UMarvelAILibrary) == 0x000030, "Wrong size on UMarvelAILibrary");
+DUMPER7_ASSERTS_UAIAbilityUsageLibrary;
 
-// Class MarvelAI.MarvelAIPerceptionComponent
-// 0x00A8 (0x02A0 - 0x01F8)
-class UMarvelAIPerceptionComponent final : public UMarvelAIPerceptionComponentBase
-{
-public:
-	float                                         AgeRatioForStealthTarget;                          // 0x01F8(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1FC[0xA4];                                     // 0x01FC(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void K2_ConfigureSense(class UAISenseConfig* SenseConfig);
-	void K2_NotifyTargetToTeam(class AActor* TargetActor, float NotifyRange, float NotifyStrength);
-	void NotifyEnemyTarget(class AActor* TargetActor, float NotifyRange);
-
-	void GetPerceivedActors(TSubclassOf<class UAISense> SenseClass, TArray<class AActor*>* OutActors) const;
-	bool GetTargetTeleportTransform(const int32 TargetUID, struct FTransform* OutTeleportTransform) const;
-	bool IsCurrentlyInSight(const class AActor* TargetToCheck) const;
-	float K2_GetPriorityFactor(class AActor* Target) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAIPerceptionComponent">();
-	}
-	static class UMarvelAIPerceptionComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAIPerceptionComponent>();
-	}
-};
-static_assert(alignof(UMarvelAIPerceptionComponent) == 0x000008, "Wrong alignment on UMarvelAIPerceptionComponent");
-static_assert(sizeof(UMarvelAIPerceptionComponent) == 0x0002A0, "Wrong size on UMarvelAIPerceptionComponent");
-static_assert(offsetof(UMarvelAIPerceptionComponent, AgeRatioForStealthTarget) == 0x0001F8, "Member 'UMarvelAIPerceptionComponent::AgeRatioForStealthTarget' has a wrong offset!");
-
-// Class MarvelAI.MarvelAISenseConfig_Team
-// 0x0000 (0x0050 - 0x0050)
-class UMarvelAISenseConfig_Team final : public UAISenseConfig
+// Class MarvelAI.MarvelNavAgentInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMarvelNavAgentInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISenseConfig_Team">();
+		STATIC_CLASS_IMPL("MarvelNavAgentInterface")
 	}
-	static class UMarvelAISenseConfig_Team* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAISenseConfig_Team>();
+		STATIC_NAME_IMPL(L"MarvelNavAgentInterface")
+	}
+	static class IMarvelNavAgentInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IMarvelNavAgentInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(UMarvelAISenseConfig_Team) == 0x000008, "Wrong alignment on UMarvelAISenseConfig_Team");
-static_assert(sizeof(UMarvelAISenseConfig_Team) == 0x000050, "Wrong size on UMarvelAISenseConfig_Team");
+DUMPER7_ASSERTS_IMarvelNavAgentInterface;
 
-// Class MarvelAI.MarvelAISense_Damage
-// 0x0000 (0x0098 - 0x0098)
-class UMarvelAISense_Damage final : public UAISense_Damage
+// Class MarvelAI.AIAbilityUsagePointCondition
+// 0x0008 (0x0038 - 0x0030)
+class UAIAbilityUsagePointCondition final : public UObject
 {
 public:
-	static void MarvelReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation);
+	bool                                          bInverseResult;                                    // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool CheckIsValidPoint(const struct FAbilityUsagePointData& StandPoint, const class AMarvelAIController* AIController);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISense_Damage">();
+		STATIC_CLASS_IMPL("AIAbilityUsagePointCondition")
 	}
-	static class UMarvelAISense_Damage* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAISense_Damage>();
+		STATIC_NAME_IMPL(L"AIAbilityUsagePointCondition")
+	}
+	static class UAIAbilityUsagePointCondition* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityUsagePointCondition>();
 	}
 };
-static_assert(alignof(UMarvelAISense_Damage) == 0x000008, "Wrong alignment on UMarvelAISense_Damage");
-static_assert(sizeof(UMarvelAISense_Damage) == 0x000098, "Wrong size on UMarvelAISense_Damage");
+DUMPER7_ASSERTS_UAIAbilityUsagePointCondition;
 
-// Class MarvelAI.MarvelAISense_DangerousTarget
-// 0x0010 (0x0098 - 0x0088)
-class UMarvelAISense_DangerousTarget final : public UAISense
+// Class MarvelAI.AIAbilityUsagePointCalculator
+// 0x0000 (0x0030 - 0x0030)
+class UAIAbilityUsagePointCalculator final : public UObject
 {
 public:
-	TArray<struct FDangerousTargetAbilityEvent>   RegisteredEvents;                                  // 0x0088(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	static void ReportAbilityEvent(class AActor* Source, class UGameplayAbility* Ability, EAbilitySenseNotify Notify);
-
-	void EndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
-	void OnAbilityActivate(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
+	bool CalculateUsagePointPosition(struct FAbilityUsagePointData& StandPoint, class AMarvelAIController* AIController);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISense_DangerousTarget">();
+		STATIC_CLASS_IMPL("AIAbilityUsagePointCalculator")
 	}
-	static class UMarvelAISense_DangerousTarget* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAISense_DangerousTarget>();
+		STATIC_NAME_IMPL(L"AIAbilityUsagePointCalculator")
+	}
+	static class UAIAbilityUsagePointCalculator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityUsagePointCalculator>();
 	}
 };
-static_assert(alignof(UMarvelAISense_DangerousTarget) == 0x000008, "Wrong alignment on UMarvelAISense_DangerousTarget");
-static_assert(sizeof(UMarvelAISense_DangerousTarget) == 0x000098, "Wrong size on UMarvelAISense_DangerousTarget");
-static_assert(offsetof(UMarvelAISense_DangerousTarget, RegisteredEvents) == 0x000088, "Member 'UMarvelAISense_DangerousTarget::RegisteredEvents' has a wrong offset!");
-
-// Class MarvelAI.MarvelAISense_Sight
-// 0x0058 (0x0210 - 0x01B8)
-class UMarvelAISense_Sight final : public UAISense_Sight
-{
-public:
-	uint8                                         Pad_1B8[0x58];                                     // 0x01B8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelAISense_Sight">();
-	}
-	static class UMarvelAISense_Sight* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelAISense_Sight>();
-	}
-};
-static_assert(alignof(UMarvelAISense_Sight) == 0x000008, "Wrong alignment on UMarvelAISense_Sight");
-static_assert(sizeof(UMarvelAISense_Sight) == 0x000210, "Wrong size on UMarvelAISense_Sight");
+DUMPER7_ASSERTS_UAIAbilityUsagePointCalculator;
 
 // Class MarvelAI.MarvelAISense_Team
 // 0x0010 (0x0098 - 0x0088)
@@ -7939,116 +4607,753 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISense_Team">();
+		STATIC_CLASS_IMPL("MarvelAISense_Team")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISense_Team")
 	}
 	static class UMarvelAISense_Team* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAISense_Team>();
 	}
 };
-static_assert(alignof(UMarvelAISense_Team) == 0x000008, "Wrong alignment on UMarvelAISense_Team");
-static_assert(sizeof(UMarvelAISense_Team) == 0x000098, "Wrong size on UMarvelAISense_Team");
-static_assert(offsetof(UMarvelAISense_Team, RegisteredEvents) == 0x000088, "Member 'UMarvelAISense_Team::RegisteredEvents' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAISense_Team;
 
-// Class MarvelAI.MarvelAISettings
-// 0x02E0 (0x0328 - 0x0048)
-class UMarvelAISettings final : public UDeveloperSettings
+// Class MarvelAI.AIAbilityPreAction
+// 0x0000 (0x0030 - 0x0030)
+class UAIAbilityPreAction : public UObject
 {
 public:
-	struct FSoftClassPath                         AITeamManagerClass;                                // 0x0048(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         WayPointManagerClass;                              // 0x0070(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         StandPointManagerClass;                            // 0x0098(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         BattleAreaManagerClass;                            // 0x00C0(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         StandPointRecorderClass;                           // 0x00E8(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        DifficultyConfig;                                  // 0x0110(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AutoAbilityConfig;                                 // 0x0138(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        QaAIGlobalConfig;                                  // 0x0160(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        GameModeDefaultConfig;                             // 0x0188(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        HeroCommonConfig;                                  // 0x01B0(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FSoftObjectPath>   GlobalConfig;                                      // 0x01D8(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FSoftObjectPath>   NonShippingLoadAssets;                             // 0x0228(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSet<struct FSoftObjectPath>                  PreLoadSubBehaviorTrees;                           // 0x0278(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSoftObjectPath>                ExtraPreLoadAIAssets;                              // 0x02C8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FString                                 DefaultAILabServerURLSetting;                      // 0x02D8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 X20_Inner_URL;                                     // 0x02E8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 X20_URL;                                           // 0x02F8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 X20Na_Inner_URL;                                   // 0x0308(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 X20Na_URL;                                         // 0x0318(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	void DoPreAction(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISettings">();
+		STATIC_CLASS_IMPL("AIAbilityPreAction")
 	}
-	static class UMarvelAISettings* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAISettings>();
+		STATIC_NAME_IMPL(L"AIAbilityPreAction")
+	}
+	static class UAIAbilityPreAction* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityPreAction>();
 	}
 };
-static_assert(alignof(UMarvelAISettings) == 0x000008, "Wrong alignment on UMarvelAISettings");
-static_assert(sizeof(UMarvelAISettings) == 0x000328, "Wrong size on UMarvelAISettings");
-static_assert(offsetof(UMarvelAISettings, AITeamManagerClass) == 0x000048, "Member 'UMarvelAISettings::AITeamManagerClass' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, WayPointManagerClass) == 0x000070, "Member 'UMarvelAISettings::WayPointManagerClass' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, StandPointManagerClass) == 0x000098, "Member 'UMarvelAISettings::StandPointManagerClass' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, BattleAreaManagerClass) == 0x0000C0, "Member 'UMarvelAISettings::BattleAreaManagerClass' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, StandPointRecorderClass) == 0x0000E8, "Member 'UMarvelAISettings::StandPointRecorderClass' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, DifficultyConfig) == 0x000110, "Member 'UMarvelAISettings::DifficultyConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, AutoAbilityConfig) == 0x000138, "Member 'UMarvelAISettings::AutoAbilityConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, QaAIGlobalConfig) == 0x000160, "Member 'UMarvelAISettings::QaAIGlobalConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, GameModeDefaultConfig) == 0x000188, "Member 'UMarvelAISettings::GameModeDefaultConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, HeroCommonConfig) == 0x0001B0, "Member 'UMarvelAISettings::HeroCommonConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, GlobalConfig) == 0x0001D8, "Member 'UMarvelAISettings::GlobalConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, NonShippingLoadAssets) == 0x000228, "Member 'UMarvelAISettings::NonShippingLoadAssets' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, PreLoadSubBehaviorTrees) == 0x000278, "Member 'UMarvelAISettings::PreLoadSubBehaviorTrees' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, ExtraPreLoadAIAssets) == 0x0002C8, "Member 'UMarvelAISettings::ExtraPreLoadAIAssets' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, DefaultAILabServerURLSetting) == 0x0002D8, "Member 'UMarvelAISettings::DefaultAILabServerURLSetting' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, X20_Inner_URL) == 0x0002E8, "Member 'UMarvelAISettings::X20_Inner_URL' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, X20_URL) == 0x0002F8, "Member 'UMarvelAISettings::X20_URL' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, X20Na_Inner_URL) == 0x000308, "Member 'UMarvelAISettings::X20Na_Inner_URL' has a wrong offset!");
-static_assert(offsetof(UMarvelAISettings, X20Na_URL) == 0x000318, "Member 'UMarvelAISettings::X20Na_URL' has a wrong offset!");
+DUMPER7_ASSERTS_UAIAbilityPreAction;
 
-// Class MarvelAI.MarvelAIStimuliSourceComponent
-// 0x0000 (0x0120 - 0x0120)
-class UMarvelAIStimuliSourceComponent final : public UMarvelAIStimuliSourceComponentBase
+// Class MarvelAI.AIAbilityUsageAsset
+// 0x0050 (0x0088 - 0x0038)
+class UAIAbilityUsageAsset final : public UPrimaryDataAsset
 {
 public:
-	void OnSummonedBeginAgent(class AActor* SummonerTarget);
-	void OnSummonedEndAgent(class AActor* SummonerTarget);
-	void WhenOwnerDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ParamHandle);
-	void WhenOwnerReborn(class AActor* TargetActor, const struct FCharacterRebornParam& Param);
+	TArray<class UAIAbilityCondition*>            CustomConditions;                                  // 0x0038(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<class UAIAbilityUsagePointCondition*>  CustomUsagePointConditions;                        // 0x0048(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class UAIAbilityUsagePointCalculator*         CustomUsagePointCalculator;                        // 0x0058(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UAIAbilityPreAction*>            AbilityPreActions;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<class UAIAbilityActivationExtraConfig*> ActivationExtraConfigs;                           // 0x0070(0x0010)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bSkipCanActivateCheck;                             // 0x0080(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void DoAllPreActions(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController);
+	bool ShouldSkipCanActivateCheck();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAIStimuliSourceComponent">();
+		STATIC_CLASS_IMPL("AIAbilityUsageAsset")
 	}
-	static class UMarvelAIStimuliSourceComponent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAIStimuliSourceComponent>();
+		STATIC_NAME_IMPL(L"AIAbilityUsageAsset")
+	}
+	static class UAIAbilityUsageAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAbilityUsageAsset>();
 	}
 };
-static_assert(alignof(UMarvelAIStimuliSourceComponent) == 0x000008, "Wrong alignment on UMarvelAIStimuliSourceComponent");
-static_assert(sizeof(UMarvelAIStimuliSourceComponent) == 0x000120, "Wrong size on UMarvelAIStimuliSourceComponent");
+DUMPER7_ASSERTS_UAIAbilityUsageAsset;
 
-// Class MarvelAI.MarvelSummonerAIStimuliSourceComponent
-// 0x0000 (0x0120 - 0x0120)
-class UMarvelSummonerAIStimuliSourceComponent final : public UAIPerceptionStimuliSourceComponent
+// Class MarvelAI.MarvelNavArea_VeryHighJump
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_VeryHighJump final : public UMarvelNavArea
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelSummonerAIStimuliSourceComponent">();
+		STATIC_CLASS_IMPL("MarvelNavArea_VeryHighJump")
 	}
-	static class UMarvelSummonerAIStimuliSourceComponent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelSummonerAIStimuliSourceComponent>();
+		STATIC_NAME_IMPL(L"MarvelNavArea_VeryHighJump")
+	}
+	static class UMarvelNavArea_VeryHighJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_VeryHighJump>();
 	}
 };
-static_assert(alignof(UMarvelSummonerAIStimuliSourceComponent) == 0x000008, "Wrong alignment on UMarvelSummonerAIStimuliSourceComponent");
-static_assert(sizeof(UMarvelSummonerAIStimuliSourceComponent) == 0x000120, "Wrong size on UMarvelSummonerAIStimuliSourceComponent");
+DUMPER7_ASSERTS_UMarvelNavArea_VeryHighJump;
+
+// Class MarvelAI.AIAutoAbilitySolver
+// 0x00A8 (0x01B0 - 0x0108)
+class UAIAutoAbilitySolver final : public UActorComponent
+{
+public:
+	uint8                                         Pad_108[0x70];                                     // 0x0108(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAIAutoAbilityGlobalConfig*       CachedGlobalConfig;                                // 0x0178(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_180[0x30];                                     // 0x0180(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void Init(const TArray<int32>& UsageList);
+	void OnUsageFailed();
+
+	bool TryGetAbilityUsage(const struct FRequiredAIDataForAutoAbility& RequiredData, struct FAIAbilityUsage* OutAbilityUsage) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIAutoAbilitySolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAutoAbilitySolver")
+	}
+	static class UAIAutoAbilitySolver* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIAutoAbilitySolver>();
+	}
+};
+DUMPER7_ASSERTS_UAIAutoAbilitySolver;
+
+// Class MarvelAI.BattleScoreSubsystem
+// 0x0068 (0x00A8 - 0x0040)
+class UBattleScoreSubsystem final : public UWorldSubsystem
+{
+public:
+	TArray<float>                                 GroupRoleNumToScoreFactor;                         // 0x0040(0x0010)(Edit, ZeroConstructor, Config, Protected, NativeAccessSpecifierProtected)
+	TMap<EHeroRole, float>                        HeroRoleToDefaultBaseScore;                        // 0x0050(0x0050)(Edit, Config, Protected, NativeAccessSpecifierProtected)
+	float                                         EnergyPropThreshold;                               // 0x00A0(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         EnergyPropFactor;                                  // 0x00A4(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UBattleScoreSubsystem* GetBattleScoreSubsystem(const class UObject* WorldContextObject);
+
+	float GetBattleScoreForActor(const class AActor* TargetActor);
+	float GetBattleScoreForCharacter(const class AMarvelBaseCharacter* HeroCharacter);
+	float GetBattleScoreForCharacterGroup(const TArray<class AMarvelBaseCharacter*>& CharacterGroup);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BattleScoreSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattleScoreSubsystem")
+	}
+	static class UBattleScoreSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBattleScoreSubsystem>();
+	}
+};
+DUMPER7_ASSERTS_UBattleScoreSubsystem;
+
+// Class MarvelAI.MarvelAIDataProvider_PyBase
+// 0x0000 (0x0040 - 0x0040)
+class UMarvelAIDataProvider_PyBase final : public UMarvelAIDataProvider
+{
+public:
+	bool PyBindData(const class UObject* Owner, int32 RequestId);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIDataProvider_PyBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIDataProvider_PyBase")
+	}
+	static class UMarvelAIDataProvider_PyBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDataProvider_PyBase>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIDataProvider_PyBase;
+
+// Class MarvelAI.BTDecorator_BBDifferenceOp
+// 0x0048 (0x00E8 - 0x00A0)
+class UBTDecorator_BBDifferenceOp : public UBTDecorator_BlackboardBase
+{
+public:
+	EDiffOperator                                 Operator;                                          // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 Target;                                            // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FFloatRange                            InRange;                                           // 0x00D8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_BBDifferenceOp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_BBDifferenceOp")
+	}
+	static class UBTDecorator_BBDifferenceOp* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_BBDifferenceOp>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_BBDifferenceOp;
+
+// Class MarvelAI.BTDecorator_CheckBuff
+// 0x0050 (0x00C0 - 0x0070)
+class UBTDecorator_CheckBuff final : public UBTDecorator
+{
+public:
+	TSet<int32>                                   BuffIDs;                                           // 0x0070(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_CheckBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_CheckBuff")
+	}
+	static class UBTDecorator_CheckBuff* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_CheckBuff>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_CheckBuff;
+
+// Class MarvelAI.EnvQueryContext_Enemy
+// 0x0008 (0x0038 - 0x0030)
+class UEnvQueryContext_Enemy final : public UEnvQueryContext
+{
+public:
+	bool                                          bNeedAlive;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bNeedParticularRole;                               // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EHeroRole                                     HeroType;                                          // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIgnoreCurrentAttackTarget;                        // 0x0033(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_Enemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_Enemy")
+	}
+	static class UEnvQueryContext_Enemy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_Enemy>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_Enemy;
+
+// Class MarvelAI.BTDecorator_CheckHeroType
+// 0x00A8 (0x0118 - 0x0070)
+class UBTDecorator_CheckHeroType : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 HeroToCheck;                                       // 0x0070(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	EHeroRole                                     HeroRole;                                          // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAIHeroTag                             AIHeroTag;                                         // 0x00A8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	EGameplayContainerMatchType                   TagMatchType;                                      // 0x0110(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_CheckHeroType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_CheckHeroType")
+	}
+	static class UBTDecorator_CheckHeroType* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_CheckHeroType>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_CheckHeroType;
+
+// Class MarvelAI.BTDecorator_CheckRequirement
+// 0x0008 (0x0078 - 0x0070)
+class UBTDecorator_CheckRequirement final : public UBTDecorator
+{
+public:
+	class UActionRequirementBase*                 Requirement;                                       // 0x0070(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_CheckRequirement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_CheckRequirement")
+	}
+	static class UBTDecorator_CheckRequirement* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_CheckRequirement>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_CheckRequirement;
+
+// Class MarvelAI.MarvelBlackboardComponent
+// 0x0000 (0x0210 - 0x0210)
+class UMarvelBlackboardComponent final : public UBlackboardComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelBlackboardComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelBlackboardComponent")
+	}
+	static class UMarvelBlackboardComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelBlackboardComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelBlackboardComponent;
+
+// Class MarvelAI.BTDecorator_MarvelBlackboard
+// 0x0038 (0x00D8 - 0x00A0)
+class UBTDecorator_MarvelBlackboard final : public UBTDecorator_BlackboardBase
+{
+public:
+	EMarvelArithmeticOperation                    Operation;                                         // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 Target;                                            // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_MarvelBlackboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_MarvelBlackboard")
+	}
+	static class UBTDecorator_MarvelBlackboard* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_MarvelBlackboard>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_MarvelBlackboard;
+
+// Class MarvelAI.BTDecorator_MarvelInstancedBase
+// 0x0010 (0x00B8 - 0x00A8)
+class UBTDecorator_MarvelInstancedBase : public UBTDecorator_BlueprintBase
+{
+public:
+	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         Interval;                                          // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RandomDeviation;                                   // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	class AMarvelBaseCharacter* K2_GetControlledHero() const;
+	class APawn* K2_GetControlledPawn() const;
+	class AMarvelAIController* K2_GetMarvelAIOwner() const;
+	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTDecorator_MarvelInstancedBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_MarvelInstancedBase")
+	}
+	static class UBTDecorator_MarvelInstancedBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_MarvelInstancedBase>();
+	}
+};
+DUMPER7_ASSERTS_UBTDecorator_MarvelInstancedBase;
+
+// Class MarvelAI.BTD_CampCheck
+// 0x0050 (0x0108 - 0x00B8)
+class UBTD_CampCheck final : public UBTDecorator_MarvelInstancedBase
+{
+public:
+	struct FBlackboardKeySelector                 CampActor;                                         // 0x00B8(0x0030)(Edit, NativeAccessSpecifierPublic)
+	ECheckOption                                  CheckOption;                                       // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSideScoreConfig                       SideScoreConfig;                                   // 0x00EC(0x0014)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCampStateConfig                       CampStateConfig;                                   // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool Check(const class UBehaviorTreeComponent* OwnerComp) const;
+	bool CheckOwnershipType(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const;
+	float GetScoreForSide(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_CampCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CampCheck")
+	}
+	static class UBTD_CampCheck* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_CampCheck>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_CampCheck;
+
+// Class MarvelAI.BTD_CheckAbilityTactics
+// 0x0008 (0x0078 - 0x0070)
+class UBTD_CheckAbilityTactics : public UBTDecorator
+{
+public:
+	EBTD_CheckAbilityTacticsType                  TacticsType;                                       // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TacticsIndex;                                      // 0x0074(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_CheckAbilityTactics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckAbilityTactics")
+	}
+	static class UBTD_CheckAbilityTactics* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_CheckAbilityTactics>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_CheckAbilityTactics;
+
+// Class MarvelAI.MarvelAISenseConfig_Team
+// 0x0000 (0x0050 - 0x0050)
+class UMarvelAISenseConfig_Team final : public UAISenseConfig
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAISenseConfig_Team")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISenseConfig_Team")
+	}
+	static class UMarvelAISenseConfig_Team* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAISenseConfig_Team>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAISenseConfig_Team;
+
+// Class MarvelAI.BTD_CheckAroundCharacter
+// 0x00D8 (0x0148 - 0x0070)
+class UBTD_CheckAroundCharacter : public UBTDecorator
+{
+public:
+	bool                                          ConsiderDist;                                      // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 FocusActor;                                        // 0x0078(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHeroFilter                            HeroFilter;                                        // 0x00B0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FInt32Range                            RangeNum;                                          // 0x0130(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Interval;                                          // 0x0140(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RandomDeviation;                                   // 0x0144(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_CheckAroundCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckAroundCharacter")
+	}
+	static class UBTD_CheckAroundCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_CheckAroundCharacter>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_CheckAroundCharacter;
+
+// Class MarvelAI.BTD_CheckFrontCharacter
+// 0x0038 (0x00A8 - 0x0070)
+class UBTD_CheckFrontCharacter final : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 BlackboardKey;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	float                                         CheckRadius;                                       // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CheckAngle;                                        // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_CheckFrontCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckFrontCharacter")
+	}
+	static class UBTD_CheckFrontCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_CheckFrontCharacter>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_CheckFrontCharacter;
+
+// Class MarvelAI.EnvQueryTest_AllyShield
+// 0x0048 (0x02C8 - 0x0280)
+class UEnvQueryTest_AllyShield final : public UEnvQueryTest
+{
+public:
+	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	float                                         ShieldValidDistance;                               // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_AllyShield")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_AllyShield")
+	}
+	static class UEnvQueryTest_AllyShield* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_AllyShield>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_AllyShield;
+
+// Class MarvelAI.BTD_CheckGameplayTag
+// 0x0088 (0x0140 - 0x00B8)
+class UBTD_CheckGameplayTag : public UBTDecorator_MarvelInstancedBase
+{
+public:
+	struct FGameplayTagContainer                  TagsToCheck;                                       // 0x00B8(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	EGameplayContainerMatchType                   MatchType;                                         // 0x0120(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_121[0x1F];                                     // 0x0121(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnCheckTagUpdated(const struct FGameplayTag& InTag, bool bExists);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_CheckGameplayTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckGameplayTag")
+	}
+	static class UBTD_CheckGameplayTag* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_CheckGameplayTag>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_CheckGameplayTag;
+
+// Class MarvelAI.BTD_DistanceCheck
+// 0x0048 (0x00B8 - 0x0070)
+class UBTD_DistanceCheck final : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 InTarget;                                          // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	EFAIDistanceType                              DistanceType;                                      // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFloatRange                            CheckRange;                                        // 0x00A4(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         TickInterval;                                      // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_DistanceCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_DistanceCheck")
+	}
+	static class UBTD_DistanceCheck* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_DistanceCheck>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_DistanceCheck;
+
+// Class MarvelAI.MarvelNavArea_LevelJump
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_LevelJump final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_LevelJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_LevelJump")
+	}
+	static class UMarvelNavArea_LevelJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_LevelJump>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_LevelJump;
+
+// Class MarvelAI.BTD_IsSelfWoodenWall
+// 0x0030 (0x00A0 - 0x0070)
+class UBTD_IsSelfWoodenWall : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 InCheckTarget;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_IsSelfWoodenWall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_IsSelfWoodenWall")
+	}
+	static class UBTD_IsSelfWoodenWall* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_IsSelfWoodenWall>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_IsSelfWoodenWall;
+
+// Class MarvelAI.BTD_PayloadCheck
+// 0x0050 (0x0108 - 0x00B8)
+class UBTD_PayloadCheck final : public UBTDecorator_MarvelInstancedBase
+{
+public:
+	struct FBlackboardKeySelector                 InPlayloadActor;                                   // 0x00B8(0x0030)(Edit, NativeAccessSpecifierPublic)
+	ECheckOption                                  InCheckOption;                                     // 0x00E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InStage;                                           // 0x00EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            InScore;                                           // 0x00F0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         InPayloadState;                                    // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool Check(int32 Stage, float Score, float Speed, int32 Team, EOwnershipType Ownership) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_PayloadCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PayloadCheck")
+	}
+	static class UBTD_PayloadCheck* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_PayloadCheck>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_PayloadCheck;
+
+// Class MarvelAI.EnvQueryTest_EffectByGroup
+// 0x0050 (0x02D0 - 0x0280)
+class UEnvQueryTest_EffectByGroup final : public UEnvQueryTest
+{
+public:
+	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           TargetGroup;                                       // 0x02C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxEffectDistance;                                 // 0x02C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_EffectByGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_EffectByGroup")
+	}
+	static class UEnvQueryTest_EffectByGroup* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_EffectByGroup>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_EffectByGroup;
+
+// Class MarvelAI.BTD_SpaceDistCheck
+// 0x0020 (0x00D8 - 0x00B8)
+class UBTD_SpaceDistCheck : public UBTDecorator_MarvelInstancedBase
+{
+public:
+	TArray<struct FCoupleActorStruct>             CoupledActors;                                     // 0x00B8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FFloatRange                            DistRange;                                         // 0x00C8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	bool Check(class UBehaviorTreeComponent* OwnerComp) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_SpaceDistCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_SpaceDistCheck")
+	}
+	static class UBTD_SpaceDistCheck* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_SpaceDistCheck>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_SpaceDistCheck;
+
+// Class MarvelAI.BTD_TargetIsSummoned
+// 0x0080 (0x00F0 - 0x0070)
+class UBTD_TargetIsSummoned : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 InCheckTarget;                                     // 0x0070(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	TSet<int32>                                   ExcludeList;                                       // 0x00A0(0x0050)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTD_TargetIsSummoned")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_TargetIsSummoned")
+	}
+	static class UBTD_TargetIsSummoned* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTD_TargetIsSummoned>();
+	}
+};
+DUMPER7_ASSERTS_UBTD_TargetIsSummoned;
 
 // Class MarvelAI.MarvelAISystem
-// 0x0120 (0x02F8 - 0x01D8)
+// 0x0170 (0x0348 - 0x01D8)
 class UMarvelAISystem : public UAISystem
 {
 public:
@@ -8071,11 +5376,12 @@ public:
 	bool                                          bUseCustomVisLogFilename;                          // 0x021B(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class FName>                             CustomVisLogCategories;                            // 0x0220(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelAIController*>            AIControllers;                                     // 0x0270(0x0010)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	TMap<int32, class AMarvelAIController*>       AIControllerMap;                                   // 0x0280(0x0050)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAIController* AIController)> OnAIRegister;            // 0x02D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAIController* AIController)> OnAIUnregister;          // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F0[0x8];                                      // 0x02F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_270[0x50];                                     // 0x0270(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AMarvelAIController*>            AIControllers;                                     // 0x02C0(0x0010)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+	TMap<int32, class AMarvelAIController*>       AIControllerMap;                                   // 0x02D0(0x0050)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAIController* AIController)> OnAIRegister;            // 0x0320(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAIController* AIController)> OnAIUnregister;          // 0x0330(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_340[0x8];                                      // 0x0340(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAbilityTacticsManager* GetAbilityTacticsManager(const class UObject* WorldContextObject);
@@ -8106,527 +5412,176 @@ public:
 	void RemoveAI(class AController* Controller);
 	bool RemoveAIByUID(int32 UID);
 	void RemoveInputRecordAI(const struct FImGuiAutomationTestContext& InTestContext, bool bFinishedPlaying);
+	void SetAIAbilityRedirect(const int32 OriginalAbilityID, const int32 RedirectAbilityID);
 	void SetCustomVisLogCategories(const TSet<class FName>& NewCategories);
 	void SetVisLogRecording(bool bNewEnabled, bool bShouldCleanUp);
 	void UnregisterAI(class AMarvelAIController* AIController);
 
-	class AMarvelAIControllerBase* AddAI(int32 UID, int32 HeroID, EBattleSide BattleSide, const class FString& Name_0, int32 DifficultyMode, int32 DifficultyLevel) const;
+	class AMarvelAIControllerBase* AddAI(int32 UID, int32 HeroID, EBattleSide BattleSide, const class FString& Name_0, int32 DifficultyMode, int32 DifficultyLevel, EHeroRole HeroRole) const;
 	bool CheckIsInMarvelGameWorld() const;
 	const class UMarvelAIGameModeDefaultConfigAsset* GetAIGameModeConfig() const;
+	int32 GetAIRedirectAbilityID(int32 OriginalAbilityID) const;
 	bool IsGameOver() const;
 	bool IsInRound() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAISystem">();
+		STATIC_CLASS_IMPL("MarvelAISystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISystem")
 	}
 	static class UMarvelAISystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAISystem>();
 	}
 };
-static_assert(alignof(UMarvelAISystem) == 0x000008, "Wrong alignment on UMarvelAISystem");
-static_assert(sizeof(UMarvelAISystem) == 0x0002F8, "Wrong size on UMarvelAISystem");
-static_assert(offsetof(UMarvelAISystem, AIGameModeConfig) == 0x0001D8, "Member 'UMarvelAISystem::AIGameModeConfig' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, AITeamManager) == 0x0001E0, "Member 'UMarvelAISystem::AITeamManager' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, WayPointManager) == 0x0001E8, "Member 'UMarvelAISystem::WayPointManager' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, StandPointManager) == 0x0001F0, "Member 'UMarvelAISystem::StandPointManager' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, BattleAreaManager) == 0x0001F8, "Member 'UMarvelAISystem::BattleAreaManager' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, StandPointRecorder) == 0x000200, "Member 'UMarvelAISystem::StandPointRecorder' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, AbilityTacticsManager) == 0x000208, "Member 'UMarvelAISystem::AbilityTacticsManager' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, bEnableNavLinkDynamicPostProcess) == 0x000210, "Member 'UMarvelAISystem::bEnableNavLinkDynamicPostProcess' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, bEnableShelterMove) == 0x000211, "Member 'UMarvelAISystem::bEnableShelterMove' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, bUpdateClientNavmeshBoundOnMapLoaded) == 0x000212, "Member 'UMarvelAISystem::bUpdateClientNavmeshBoundOnMapLoaded' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, AIAnthropomorphicType) == 0x000216, "Member 'UMarvelAISystem::AIAnthropomorphicType' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, MatchType) == 0x000218, "Member 'UMarvelAISystem::MatchType' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, bEnableVisLogWhenServerStart) == 0x00021A, "Member 'UMarvelAISystem::bEnableVisLogWhenServerStart' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, bUseCustomVisLogFilename) == 0x00021B, "Member 'UMarvelAISystem::bUseCustomVisLogFilename' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, CustomVisLogCategories) == 0x000220, "Member 'UMarvelAISystem::CustomVisLogCategories' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, AIControllers) == 0x000270, "Member 'UMarvelAISystem::AIControllers' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, AIControllerMap) == 0x000280, "Member 'UMarvelAISystem::AIControllerMap' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, OnAIRegister) == 0x0002D0, "Member 'UMarvelAISystem::OnAIRegister' has a wrong offset!");
-static_assert(offsetof(UMarvelAISystem, OnAIUnregister) == 0x0002E0, "Member 'UMarvelAISystem::OnAIUnregister' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelAISystem;
 
-// Class MarvelAI.MarvelAITeamManager
-// 0x0260 (0x0960 - 0x0700)
-class AMarvelAITeamManager : public AMarvelActorBase
+// Class MarvelAI.BTService_AbilityFocus_BB
+// 0x0108 (0x01B0 - 0x00A8)
+class UBTService_AbilityFocus_BB final : public UBTService_BlackboardBase
 {
 public:
-	TMap<class AActor*, struct FDateTime>         LowHpMark;                                         // 0x06F8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> AutoChangeHeroDelegate;    // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<int32, struct FMarvelAITeamInfo>         TeamInfos;                                         // 0x0758(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bHasInitTeamInfo;                                  // 0x07A8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsMatchStart;                                     // 0x07A9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowRepeatHero;                                  // 0x07AA(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7AB[0x5];                                      // 0x07AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAISystem*                        CacheAISystem;                                     // 0x07B0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelAIGameModeDefaultConfigAsset*    CacheAIGameModeConfig;                             // 0x07B8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EHeroRole, int32>                        RoleLimits;                                        // 0x07C0(0x0050)(Transient, NativeAccessSpecifierPublic)
-	uint8                                         Pad_810[0xA0];                                     // 0x0810(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<int32>                                   BanHeroes;                                         // 0x08B0(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TSet<int32>                                   PickHeroes;                                        // 0x0900(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_950[0x10];                                     // 0x0950(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void CheckAITeamLineup(int32 TeamID);
-	void CheckCanBuildBondInPreSelect(const int32 OldPlayerHroID, const int32 NewPlayerHeroID, struct FMarvelAITeamInfo* TeamInfo);
-	bool CheckLowHealthMarkValid(class AMarvelAIController* AIController, class AActor* Target);
-	bool CheckLowHpMarkValid(class AActor* Target, float MarkLife);
-	int32 GetAndUpdatePreviewHeroIDForAI(class AMarvelAIController* AIController, bool ImmediatelyUpdate);
-	void InitHeroBondInfo();
-	void InitRoleLimits();
-	void InitTeamInfo();
-	bool IsAutoChangeHeroAI(const class AMarvelPlayerState* PlayerState);
-	bool LevelCheckHeroSelectable(class AMarvelPlayerState* PlayerState, int32 HeroID);
-	void NotifyAIPreSelect();
-	void OnBanPickEnd();
-	void OnPlayerChangeHero(class AMarvelPlayerState* PlayerState, int32 HeroId);
-	void TryAddLowHealthMark(class AMarvelAIController* AIController, class AActor* Target);
-	void UpdateTeamInfo(const int32 UID, const int32 TeamID, const bool IsAutoChangeHeroAI, const int32 NewHeroID);
+	bool                                          bShouldClearFocusWhenEnd;                          // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAISelectTargetLogicBase*               TargetSelectLogic;                                 // 0x00B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UAISelectTargetLogicBase>   TargetSelectLogicClass;                            // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C0[0xF0];                                      // 0x00C0(0x00F0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAITeamManager">();
+		STATIC_CLASS_IMPL("BTService_AbilityFocus_BB")
 	}
-	static class AMarvelAITeamManager* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<AMarvelAITeamManager>();
+		STATIC_NAME_IMPL(L"BTService_AbilityFocus_BB")
+	}
+	static class UBTService_AbilityFocus_BB* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTService_AbilityFocus_BB>();
 	}
 };
-static_assert(alignof(AMarvelAITeamManager) == 0x000010, "Wrong alignment on AMarvelAITeamManager");
-static_assert(sizeof(AMarvelAITeamManager) == 0x000960, "Wrong size on AMarvelAITeamManager");
-static_assert(offsetof(AMarvelAITeamManager, LowHpMark) == 0x0006F8, "Member 'AMarvelAITeamManager::LowHpMark' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, AutoChangeHeroDelegate) == 0x000748, "Member 'AMarvelAITeamManager::AutoChangeHeroDelegate' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, TeamInfos) == 0x000758, "Member 'AMarvelAITeamManager::TeamInfos' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, bHasInitTeamInfo) == 0x0007A8, "Member 'AMarvelAITeamManager::bHasInitTeamInfo' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, bIsMatchStart) == 0x0007A9, "Member 'AMarvelAITeamManager::bIsMatchStart' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, bAllowRepeatHero) == 0x0007AA, "Member 'AMarvelAITeamManager::bAllowRepeatHero' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, CacheAISystem) == 0x0007B0, "Member 'AMarvelAITeamManager::CacheAISystem' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, CacheAIGameModeConfig) == 0x0007B8, "Member 'AMarvelAITeamManager::CacheAIGameModeConfig' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, RoleLimits) == 0x0007C0, "Member 'AMarvelAITeamManager::RoleLimits' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, BanHeroes) == 0x0008B0, "Member 'AMarvelAITeamManager::BanHeroes' has a wrong offset!");
-static_assert(offsetof(AMarvelAITeamManager, PickHeroes) == 0x000900, "Member 'AMarvelAITeamManager::PickHeroes' has a wrong offset!");
+DUMPER7_ASSERTS_UBTService_AbilityFocus_BB;
 
-// Class MarvelAI.MarvelAvoidanceManager
-// 0x00D0 (0x01C8 - 0x00F8)
-class UMarvelAvoidanceManager : public UAvoidanceManager
+// Class MarvelAI.BTService_MarvelInstancedBase
+// 0x0008 (0x00A8 - 0x00A0)
+class UBTService_MarvelInstancedBase : public UBTService_BlueprintBase
 {
 public:
-	class ARecastNavMesh*                         NavData;                                           // 0x00F8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         NavPredictDeltaTime;                               // 0x0100(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                NavPredictExtent;                                  // 0x0108(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         BlockThreshold;                                    // 0x0120(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         IgnoreDuration;                                    // 0x0124(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_128[0xA0];                                     // 0x0128(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void OnDestroyed(class UBehaviorTreeComponent* OwnerComp);
+
+	class AMarvelBaseCharacter* K2_GetControlledHero() const;
+	class APawn* K2_GetControlledPawn() const;
+	class AMarvelAIController* K2_GetMarvelAIOwner() const;
+	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAvoidanceManager">();
+		STATIC_CLASS_IMPL("BTService_MarvelInstancedBase")
 	}
-	static class UMarvelAvoidanceManager* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelAvoidanceManager>();
+		STATIC_NAME_IMPL(L"BTService_MarvelInstancedBase")
+	}
+	static class UBTService_MarvelInstancedBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTService_MarvelInstancedBase>();
 	}
 };
-static_assert(alignof(UMarvelAvoidanceManager) == 0x000008, "Wrong alignment on UMarvelAvoidanceManager");
-static_assert(sizeof(UMarvelAvoidanceManager) == 0x0001C8, "Wrong size on UMarvelAvoidanceManager");
-static_assert(offsetof(UMarvelAvoidanceManager, NavData) == 0x0000F8, "Member 'UMarvelAvoidanceManager::NavData' has a wrong offset!");
-static_assert(offsetof(UMarvelAvoidanceManager, NavPredictDeltaTime) == 0x000100, "Member 'UMarvelAvoidanceManager::NavPredictDeltaTime' has a wrong offset!");
-static_assert(offsetof(UMarvelAvoidanceManager, NavPredictExtent) == 0x000108, "Member 'UMarvelAvoidanceManager::NavPredictExtent' has a wrong offset!");
-static_assert(offsetof(UMarvelAvoidanceManager, BlockThreshold) == 0x000120, "Member 'UMarvelAvoidanceManager::BlockThreshold' has a wrong offset!");
-static_assert(offsetof(UMarvelAvoidanceManager, IgnoreDuration) == 0x000124, "Member 'UMarvelAvoidanceManager::IgnoreDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UBTService_MarvelInstancedBase;
 
-// Class MarvelAI.MarvelBehaviorTreeComponent
-// 0x0050 (0x0348 - 0x02F8)
-class UMarvelBehaviorTreeComponent final : public UBehaviorTreeComponent
+// Class MarvelAI.MarvelNavModifierComponent
+// 0x00B0 (0x02B0 - 0x0200)
+class UMarvelNavModifierComponent final : public UNavModifierComponent
 {
 public:
-	TMap<struct FGameplayTag, class UBehaviorTree*> HeroSubBTMap;                                    // 0x02F8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bUseStaticMeshAsBound;                             // 0x0200(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_201[0x3];                                      // 0x0201(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         UpdateInterval;                                    // 0x0204(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUpdateNavWhenStopMoving;                          // 0x0208(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnlyUpdateWhenMovingStatusChange;                 // 0x0209(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_20A[0x2];                                      // 0x020A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxSampleNum;                                      // 0x020C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        SampleInterval;                                    // 0x0210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DetectionDistance;                                 // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RegisterUpdateDelay;                               // 0x021C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_220[0x90];                                     // 0x0220(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UBehaviorTree* GetBTAssetByTag(const struct FGameplayTag& GameplayTag);
-	bool IsBTRunning(class UBehaviorTree* BehaviorTreeAsset);
-	void K2_PauseLogic(const class FString& Reason);
-	void K2_ResumeLogic(const class FString& Reason);
-	void K2_ScheduleExecutionUpdate();
-	void K2_StartLogic();
-	void K2_StopLogic(const class FString& Reason);
-	void UpdateSubTreeMap(const TMap<struct FGameplayTag, class UBehaviorTree*>& SubTreeMap);
+	void K2_UpdateNavEffect(bool bEffectNav);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelBehaviorTreeComponent">();
+		STATIC_CLASS_IMPL("MarvelNavModifierComponent")
 	}
-	static class UMarvelBehaviorTreeComponent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelBehaviorTreeComponent>();
+		STATIC_NAME_IMPL(L"MarvelNavModifierComponent")
+	}
+	static class UMarvelNavModifierComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavModifierComponent>();
 	}
 };
-static_assert(alignof(UMarvelBehaviorTreeComponent) == 0x000008, "Wrong alignment on UMarvelBehaviorTreeComponent");
-static_assert(sizeof(UMarvelBehaviorTreeComponent) == 0x000348, "Wrong size on UMarvelBehaviorTreeComponent");
-static_assert(offsetof(UMarvelBehaviorTreeComponent, HeroSubBTMap) == 0x0002F8, "Member 'UMarvelBehaviorTreeComponent::HeroSubBTMap' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelNavModifierComponent;
 
-// Class MarvelAI.MarvelBlackboardComponent
-// 0x0000 (0x0210 - 0x0210)
-class UMarvelBlackboardComponent final : public UBlackboardComponent
+// Class MarvelAI.BTService_MarvelRunEQS
+// 0x0030 (0x0140 - 0x0110)
+class UBTService_MarvelRunEQS final : public UBTService_RunEQS
 {
 public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelBlackboardComponent">();
-	}
-	static class UMarvelBlackboardComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelBlackboardComponent>();
-	}
-};
-static_assert(alignof(UMarvelBlackboardComponent) == 0x000008, "Wrong alignment on UMarvelBlackboardComponent");
-static_assert(sizeof(UMarvelBlackboardComponent) == 0x000210, "Wrong size on UMarvelBlackboardComponent");
-
-// Class MarvelAI.MarvelBTFunctionLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UMarvelBTFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static void AddClassFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, TSubclassOf<class UObject> AllowedClass);
-	static void AddEnumFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, class UEnum* AllowedEnum);
-	static void AddObjectFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, TSubclassOf<class UObject> AllowedClass);
-	static void AddSimpleFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, const TArray<TSubclassOf<class UBlackboardKeyType>>& FilterTypes);
-	static class AActor* MarvelGetBlackboardValueAsActor(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static bool MarvelGetBlackboardValueAsBool(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static uint8 MarvelGetBlackboardValueAsEnum(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static float MarvelGetBlackboardValueAsFloat(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static int32 MarvelGetBlackboardValueAsInt(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static class FName MarvelGetBlackboardValueAsName(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static class UObject* MarvelGetBlackboardValueAsObject(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static struct FRotator MarvelGetBlackboardValueAsRotator(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static class FString MarvelGetBlackboardValueAsString(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static struct FVector MarvelGetBlackboardValueAsVector(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
-	static void MarvelSetBlackboardValueAsBool(class AAIController* Controller, const struct FBlackboardKeySelector& Key, bool Value);
-	static void MarvelSetBlackboardValueAsEnum(class AAIController* Controller, const struct FBlackboardKeySelector& Key, uint8 Value);
-	static void MarvelSetBlackboardValueAsFloat(class AAIController* Controller, const struct FBlackboardKeySelector& Key, float Value);
-	static void MarvelSetBlackboardValueAsInt(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const int32 Value);
-	static void MarvelSetBlackboardValueAsName(class AAIController* Controller, const struct FBlackboardKeySelector& Key, class FName Value);
-	static void MarvelSetBlackboardValueAsObject(class AAIController* Controller, const struct FBlackboardKeySelector& Key, class UObject* Value);
-	static void MarvelSetBlackboardValueAsRotator(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const struct FRotator& Value);
-	static void MarvelSetBlackboardValueAsString(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const class FString& Value);
-	static void MarvelSetBlackboardValueAsVector(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const struct FVector& Value);
+	struct FBlackboardKeySelector                 AbilityMoveLogicBlackboardKey;                     // 0x0110(0x0030)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelBTFunctionLibrary">();
+		STATIC_CLASS_IMPL("BTService_MarvelRunEQS")
 	}
-	static class UMarvelBTFunctionLibrary* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelBTFunctionLibrary>();
+		STATIC_NAME_IMPL(L"BTService_MarvelRunEQS")
+	}
+	static class UBTService_MarvelRunEQS* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTService_MarvelRunEQS>();
 	}
 };
-static_assert(alignof(UMarvelBTFunctionLibrary) == 0x000008, "Wrong alignment on UMarvelBTFunctionLibrary");
-static_assert(sizeof(UMarvelBTFunctionLibrary) == 0x000030, "Wrong size on UMarvelBTFunctionLibrary");
+DUMPER7_ASSERTS_UBTService_MarvelRunEQS;
 
-// Class MarvelAI.MarvelNavAgentInterface
-// 0x0000 (0x0000 - 0x0000)
-class IMarvelNavAgentInterface final
+// Class MarvelAI.BTService_StrategyActionSelect
+// 0x0040 (0x00B8 - 0x0078)
+class UBTService_StrategyActionSelect final : public UBTService
 {
 public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavAgentInterface">();
-	}
-	static class IMarvelNavAgentInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<IMarvelNavAgentInterface>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
-	}
-};
-static_assert(alignof(IMarvelNavAgentInterface) == 0x000001, "Wrong alignment on IMarvelNavAgentInterface");
-static_assert(sizeof(IMarvelNavAgentInterface) == 0x000001, "Wrong size on IMarvelNavAgentInterface");
-
-// Class MarvelAI.MarvelNavArea
-// 0x0008 (0x0058 - 0x0050)
-class UMarvelNavArea : public UNavArea
-{
-public:
-	bool                                          bSupportCrossTile;                                 // 0x0050(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EActionCategory                               CurrentAction;                                     // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 OutNewAction;                                      // 0x0080(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UActionRequirementAsset*                ActionTableAsset;                                  // 0x00B0(0x0008)(Edit, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNavArea">();
+		STATIC_CLASS_IMPL("BTService_StrategyActionSelect")
 	}
-	static class UMarvelNavArea* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelNavArea>();
+		STATIC_NAME_IMPL(L"BTService_StrategyActionSelect")
+	}
+	static class UBTService_StrategyActionSelect* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTService_StrategyActionSelect>();
 	}
 };
-static_assert(alignof(UMarvelNavArea) == 0x000008, "Wrong alignment on UMarvelNavArea");
-static_assert(sizeof(UMarvelNavArea) == 0x000058, "Wrong size on UMarvelNavArea");
-static_assert(offsetof(UMarvelNavArea, bSupportCrossTile) == 0x000050, "Member 'UMarvelNavArea::bSupportCrossTile' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavArea_NormalJump
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_NormalJump final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_NormalJump">();
-	}
-	static class UMarvelNavArea_NormalJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_NormalJump>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_NormalJump) == 0x000008, "Wrong alignment on UMarvelNavArea_NormalJump");
-static_assert(sizeof(UMarvelNavArea_NormalJump) == 0x000058, "Wrong size on UMarvelNavArea_NormalJump");
-
-// Class MarvelAI.MarvelNavArea_HighJump
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_HighJump final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_HighJump">();
-	}
-	static class UMarvelNavArea_HighJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_HighJump>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_HighJump) == 0x000008, "Wrong alignment on UMarvelNavArea_HighJump");
-static_assert(sizeof(UMarvelNavArea_HighJump) == 0x000058, "Wrong size on UMarvelNavArea_HighJump");
-
-// Class MarvelAI.Steering_AvoidNavBorder
-// 0x0688 (0x06D8 - 0x0050)
-class USteering_AvoidNavBorder final : public USteeringBehavior
-{
-public:
-	float                                         NavMeshBlockCheckDistance;                         // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BlockValidDuration;                                // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseInverseVelocityToAvoid;                        // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bScaleAvoidByPastTime;                             // 0x0059(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxMoveWrongDirSampleMaxCount;                     // 0x005C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_60[0x678];                                     // 0x0060(0x0678)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Steering_AvoidNavBorder">();
-	}
-	static class USteering_AvoidNavBorder* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USteering_AvoidNavBorder>();
-	}
-};
-static_assert(alignof(USteering_AvoidNavBorder) == 0x000008, "Wrong alignment on USteering_AvoidNavBorder");
-static_assert(sizeof(USteering_AvoidNavBorder) == 0x0006D8, "Wrong size on USteering_AvoidNavBorder");
-static_assert(offsetof(USteering_AvoidNavBorder, NavMeshBlockCheckDistance) == 0x000050, "Member 'USteering_AvoidNavBorder::NavMeshBlockCheckDistance' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidNavBorder, BlockValidDuration) == 0x000054, "Member 'USteering_AvoidNavBorder::BlockValidDuration' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidNavBorder, bUseInverseVelocityToAvoid) == 0x000058, "Member 'USteering_AvoidNavBorder::bUseInverseVelocityToAvoid' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidNavBorder, bScaleAvoidByPastTime) == 0x000059, "Member 'USteering_AvoidNavBorder::bScaleAvoidByPastTime' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidNavBorder, MaxMoveWrongDirSampleMaxCount) == 0x00005C, "Member 'USteering_AvoidNavBorder::MaxMoveWrongDirSampleMaxCount' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavArea_VeryHighJump
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_VeryHighJump final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_VeryHighJump">();
-	}
-	static class UMarvelNavArea_VeryHighJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_VeryHighJump>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_VeryHighJump) == 0x000008, "Wrong alignment on UMarvelNavArea_VeryHighJump");
-static_assert(sizeof(UMarvelNavArea_VeryHighJump) == 0x000058, "Wrong size on UMarvelNavArea_VeryHighJump");
-
-// Class MarvelAI.MarvelNavArea_GoDownLink
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_GoDownLink final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_GoDownLink">();
-	}
-	static class UMarvelNavArea_GoDownLink* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_GoDownLink>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_GoDownLink) == 0x000008, "Wrong alignment on UMarvelNavArea_GoDownLink");
-static_assert(sizeof(UMarvelNavArea_GoDownLink) == 0x000058, "Wrong size on UMarvelNavArea_GoDownLink");
-
-// Class MarvelAI.MarvelNavArea_LevelJump
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_LevelJump final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_LevelJump">();
-	}
-	static class UMarvelNavArea_LevelJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_LevelJump>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_LevelJump) == 0x000008, "Wrong alignment on UMarvelNavArea_LevelJump");
-static_assert(sizeof(UMarvelNavArea_LevelJump) == 0x000058, "Wrong size on UMarvelNavArea_LevelJump");
-
-// Class MarvelAI.MarvelNavArea_Walk
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_Walk final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_Walk">();
-	}
-	static class UMarvelNavArea_Walk* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_Walk>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_Walk) == 0x000008, "Wrong alignment on UMarvelNavArea_Walk");
-static_assert(sizeof(UMarvelNavArea_Walk) == 0x000058, "Wrong size on UMarvelNavArea_Walk");
-
-// Class MarvelAI.MarvelNavArea_TeleportJump
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_TeleportJump final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_TeleportJump">();
-	}
-	static class UMarvelNavArea_TeleportJump* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_TeleportJump>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_TeleportJump) == 0x000008, "Wrong alignment on UMarvelNavArea_TeleportJump");
-static_assert(sizeof(UMarvelNavArea_TeleportJump) == 0x000058, "Wrong size on UMarvelNavArea_TeleportJump");
-
-// Class MarvelAI.MarvelNavArea_CampLink
-// 0x0008 (0x0060 - 0x0058)
-class UMarvelNavArea_CampLink final : public UMarvelNavArea
-{
-public:
-	EBattleSide                                   PassSide;                                          // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_CampLink">();
-	}
-	static class UMarvelNavArea_CampLink* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_CampLink>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_CampLink) == 0x000008, "Wrong alignment on UMarvelNavArea_CampLink");
-static_assert(sizeof(UMarvelNavArea_CampLink) == 0x000060, "Wrong size on UMarvelNavArea_CampLink");
-static_assert(offsetof(UMarvelNavArea_CampLink, PassSide) == 0x000058, "Member 'UMarvelNavArea_CampLink::PassSide' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavArea_SpaceRift
-// 0x0008 (0x0060 - 0x0058)
-class UMarvelNavArea_SpaceRift final : public UMarvelNavArea
-{
-public:
-	bool                                          bNeedRuntimeValidCheck;                            // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_SpaceRift">();
-	}
-	static class UMarvelNavArea_SpaceRift* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_SpaceRift>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_SpaceRift) == 0x000008, "Wrong alignment on UMarvelNavArea_SpaceRift");
-static_assert(sizeof(UMarvelNavArea_SpaceRift) == 0x000060, "Wrong size on UMarvelNavArea_SpaceRift");
-static_assert(offsetof(UMarvelNavArea_SpaceRift, bNeedRuntimeValidCheck) == 0x000058, "Member 'UMarvelNavArea_SpaceRift::bNeedRuntimeValidCheck' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavArea_Elevator
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_Elevator final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_Elevator">();
-	}
-	static class UMarvelNavArea_Elevator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_Elevator>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_Elevator) == 0x000008, "Wrong alignment on UMarvelNavArea_Elevator");
-static_assert(sizeof(UMarvelNavArea_Elevator) == 0x000058, "Wrong size on UMarvelNavArea_Elevator");
-
-// Class MarvelAI.MarvelNavArea_ObstacleLink
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavArea_ObstacleLink final : public UMarvelNavArea
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavArea_ObstacleLink">();
-	}
-	static class UMarvelNavArea_ObstacleLink* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavArea_ObstacleLink>();
-	}
-};
-static_assert(alignof(UMarvelNavArea_ObstacleLink) == 0x000008, "Wrong alignment on UMarvelNavArea_ObstacleLink");
-static_assert(sizeof(UMarvelNavArea_ObstacleLink) == 0x000058, "Wrong size on UMarvelNavArea_ObstacleLink");
-
-// Class MarvelAI.MarvelNavAuxiliaryData
-// 0x0050 (0x0730 - 0x06E0)
-class AMarvelNavAuxiliaryData final : public AActor
-{
-public:
-	TMap<struct FNavLinkId, TSoftObjectPtr<class AActor>> LevelPortals;                              // 0x06D8(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavAuxiliaryData">();
-	}
-	static class AMarvelNavAuxiliaryData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMarvelNavAuxiliaryData>();
-	}
-};
-static_assert(alignof(AMarvelNavAuxiliaryData) == 0x000010, "Wrong alignment on AMarvelNavAuxiliaryData");
-static_assert(sizeof(AMarvelNavAuxiliaryData) == 0x000730, "Wrong size on AMarvelNavAuxiliaryData");
-static_assert(offsetof(AMarvelNavAuxiliaryData, LevelPortals) == 0x0006D8, "Member 'AMarvelNavAuxiliaryData::LevelPortals' has a wrong offset!");
+DUMPER7_ASSERTS_UBTService_StrategyActionSelect;
 
 // Class MarvelAI.MarvelNavigationLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -8647,312 +5602,68 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNavigationLibrary">();
+		STATIC_CLASS_IMPL("MarvelNavigationLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavigationLibrary")
 	}
 	static class UMarvelNavigationLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelNavigationLibrary>();
 	}
 };
-static_assert(alignof(UMarvelNavigationLibrary) == 0x000008, "Wrong alignment on UMarvelNavigationLibrary");
-static_assert(sizeof(UMarvelNavigationLibrary) == 0x000030, "Wrong size on UMarvelNavigationLibrary");
+DUMPER7_ASSERTS_UMarvelNavigationLibrary;
 
-// Class MarvelAI.MarvelNavigationQueryFilter
-// 0x0008 (0x0058 - 0x0050)
-class UMarvelNavigationQueryFilter : public UNavigationQueryFilter
+// Class MarvelAI.ActionRequirementBase
+// 0x0008 (0x0038 - 0x0030)
+class UActionRequirementBase : public UObject
 {
 public:
-	uint8                                         Pad_50[0x4];                                       // 0x0050(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bCouldClimbWall;                                   // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          Invert;                                            // 0x0030(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool Requirement(class AAIController* OwnerController, class AActor* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNavigationQueryFilter">();
+		STATIC_CLASS_IMPL("ActionRequirementBase")
 	}
-	static class UMarvelNavigationQueryFilter* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelNavigationQueryFilter>();
+		STATIC_NAME_IMPL(L"ActionRequirementBase")
+	}
+	static class UActionRequirementBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UActionRequirementBase>();
 	}
 };
-static_assert(alignof(UMarvelNavigationQueryFilter) == 0x000008, "Wrong alignment on UMarvelNavigationQueryFilter");
-static_assert(sizeof(UMarvelNavigationQueryFilter) == 0x000058, "Wrong size on UMarvelNavigationQueryFilter");
-static_assert(offsetof(UMarvelNavigationQueryFilter, bCouldClimbWall) == 0x000054, "Member 'UMarvelNavigationQueryFilter::bCouldClimbWall' has a wrong offset!");
+DUMPER7_ASSERTS_UActionRequirementBase;
 
-// Class MarvelAI.MarvelNavFilter_JumpNormal
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavFilter_JumpNormal final : public UMarvelNavigationQueryFilter
+// Class MarvelAI.ActionRequirementAsset
+// 0x0010 (0x0048 - 0x0038)
+class UActionRequirementAsset final : public UPrimaryDataAsset
 {
 public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavFilter_JumpNormal">();
-	}
-	static class UMarvelNavFilter_JumpNormal* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavFilter_JumpNormal>();
-	}
-};
-static_assert(alignof(UMarvelNavFilter_JumpNormal) == 0x000008, "Wrong alignment on UMarvelNavFilter_JumpNormal");
-static_assert(sizeof(UMarvelNavFilter_JumpNormal) == 0x000058, "Wrong size on UMarvelNavFilter_JumpNormal");
-
-// Class MarvelAI.MarvelNavFilter_JumpHigh
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavFilter_JumpHigh final : public UMarvelNavigationQueryFilter
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavFilter_JumpHigh">();
-	}
-	static class UMarvelNavFilter_JumpHigh* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavFilter_JumpHigh>();
-	}
-};
-static_assert(alignof(UMarvelNavFilter_JumpHigh) == 0x000008, "Wrong alignment on UMarvelNavFilter_JumpHigh");
-static_assert(sizeof(UMarvelNavFilter_JumpHigh) == 0x000058, "Wrong size on UMarvelNavFilter_JumpHigh");
-
-// Class MarvelAI.MarvelNavFilter_JumpVeryHigh
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavFilter_JumpVeryHigh final : public UMarvelNavigationQueryFilter
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavFilter_JumpVeryHigh">();
-	}
-	static class UMarvelNavFilter_JumpVeryHigh* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavFilter_JumpVeryHigh>();
-	}
-};
-static_assert(alignof(UMarvelNavFilter_JumpVeryHigh) == 0x000008, "Wrong alignment on UMarvelNavFilter_JumpVeryHigh");
-static_assert(sizeof(UMarvelNavFilter_JumpVeryHigh) == 0x000058, "Wrong size on UMarvelNavFilter_JumpVeryHigh");
-
-// Class MarvelAI.MarvelNavFilter_NoLinkPass
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavFilter_NoLinkPass final : public UMarvelNavigationQueryFilter
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavFilter_NoLinkPass">();
-	}
-	static class UMarvelNavFilter_NoLinkPass* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavFilter_NoLinkPass>();
-	}
-};
-static_assert(alignof(UMarvelNavFilter_NoLinkPass) == 0x000008, "Wrong alignment on UMarvelNavFilter_NoLinkPass");
-static_assert(sizeof(UMarvelNavFilter_NoLinkPass) == 0x000058, "Wrong size on UMarvelNavFilter_NoLinkPass");
-
-// Class MarvelAI.MarvelNavFilter_ShortDistance
-// 0x0000 (0x0058 - 0x0058)
-class UMarvelNavFilter_ShortDistance final : public UMarvelNavigationQueryFilter
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavFilter_ShortDistance">();
-	}
-	static class UMarvelNavFilter_ShortDistance* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavFilter_ShortDistance>();
-	}
-};
-static_assert(alignof(UMarvelNavFilter_ShortDistance) == 0x000008, "Wrong alignment on UMarvelNavFilter_ShortDistance");
-static_assert(sizeof(UMarvelNavFilter_ShortDistance) == 0x000058, "Wrong size on UMarvelNavFilter_ShortDistance");
-
-// Class MarvelAI.MarvelNavigationSystem
-// 0x00A8 (0x1668 - 0x15C0)
-class UMarvelNavigationSystem final : public UNavigationSystemV1
-{
-public:
-	class AMarvelNavAuxiliaryData*                NavAuxiliaryData;                                  // 0x15C0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C8[0xA0];                                    // 0x15C8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnGameMapLoadFinished();
-	void OnLevelPortalActivated(class AMarvelLevelPortalBase* Portal, bool bActivated);
+	TArray<struct FActionRequirementNode>         ActionRequirementNode;                             // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNavigationSystem">();
+		STATIC_CLASS_IMPL("ActionRequirementAsset")
 	}
-	static class UMarvelNavigationSystem* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UMarvelNavigationSystem>();
+		STATIC_NAME_IMPL(L"ActionRequirementAsset")
+	}
+	static class UActionRequirementAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UActionRequirementAsset>();
 	}
 };
-static_assert(alignof(UMarvelNavigationSystem) == 0x000008, "Wrong alignment on UMarvelNavigationSystem");
-static_assert(sizeof(UMarvelNavigationSystem) == 0x001668, "Wrong size on UMarvelNavigationSystem");
-static_assert(offsetof(UMarvelNavigationSystem, NavAuxiliaryData) == 0x0015C0, "Member 'UMarvelNavigationSystem::NavAuxiliaryData' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavLinkCustomComponent
-// 0x0040 (0x0298 - 0x0258)
-class UMarvelNavLinkCustomComponent : public UNavLinkCustomComponent
-{
-public:
-	struct FVector                                TeleportStart;                                     // 0x0258(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TeleportEnd;                                       // 0x0270(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsAttachedToWall;                                 // 0x0288(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bShouldUpdateConfigDataWhenEdit;                   // 0x0289(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_28A[0xE];                                      // 0x028A(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavLinkCustomComponent">();
-	}
-	static class UMarvelNavLinkCustomComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavLinkCustomComponent>();
-	}
-};
-static_assert(alignof(UMarvelNavLinkCustomComponent) == 0x000008, "Wrong alignment on UMarvelNavLinkCustomComponent");
-static_assert(sizeof(UMarvelNavLinkCustomComponent) == 0x000298, "Wrong size on UMarvelNavLinkCustomComponent");
-static_assert(offsetof(UMarvelNavLinkCustomComponent, TeleportStart) == 0x000258, "Member 'UMarvelNavLinkCustomComponent::TeleportStart' has a wrong offset!");
-static_assert(offsetof(UMarvelNavLinkCustomComponent, TeleportEnd) == 0x000270, "Member 'UMarvelNavLinkCustomComponent::TeleportEnd' has a wrong offset!");
-static_assert(offsetof(UMarvelNavLinkCustomComponent, bIsAttachedToWall) == 0x000288, "Member 'UMarvelNavLinkCustomComponent::bIsAttachedToWall' has a wrong offset!");
-static_assert(offsetof(UMarvelNavLinkCustomComponent, bShouldUpdateConfigDataWhenEdit) == 0x000289, "Member 'UMarvelNavLinkCustomComponent::bShouldUpdateConfigDataWhenEdit' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavLinkProxy
-// 0x0000 (0x0730 - 0x0730)
-class AMarvelNavLinkProxy : public ANavLinkProxy
-{
-public:
-	uint8                                         bShouldCheckBlockWhenUpdateNavData : 1;            // 0x0728(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bShouldCheckBothSide : 1;                          // 0x0728(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_729[0x7];                                      // 0x0729(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void DrawNavigationBound() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavLinkProxy">();
-	}
-	static class AMarvelNavLinkProxy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMarvelNavLinkProxy>();
-	}
-};
-static_assert(alignof(AMarvelNavLinkProxy) == 0x000010, "Wrong alignment on AMarvelNavLinkProxy");
-static_assert(sizeof(AMarvelNavLinkProxy) == 0x000730, "Wrong size on AMarvelNavLinkProxy");
-
-// Class MarvelAI.MarvelNavModifierComponent
-// 0x00B0 (0x02B0 - 0x0200)
-class UMarvelNavModifierComponent final : public UNavModifierComponent
-{
-public:
-	bool                                          bUseStaticMeshAsBound;                             // 0x0200(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_201[0x3];                                      // 0x0201(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         UpdateInterval;                                    // 0x0204(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUpdateNavWhenStopMoving;                          // 0x0208(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnlyUpdateWhenMovingStatusChange;                 // 0x0209(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_20A[0x2];                                      // 0x020A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxSampleNum;                                      // 0x020C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	double                                        SampleInterval;                                    // 0x0210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DetectionDistance;                                 // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21C[0x94];                                     // 0x021C(0x0094)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void K2_UpdateNavEffect(bool bEffectNav);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavModifierComponent">();
-	}
-	static class UMarvelNavModifierComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelNavModifierComponent>();
-	}
-};
-static_assert(alignof(UMarvelNavModifierComponent) == 0x000010, "Wrong alignment on UMarvelNavModifierComponent");
-static_assert(sizeof(UMarvelNavModifierComponent) == 0x0002B0, "Wrong size on UMarvelNavModifierComponent");
-static_assert(offsetof(UMarvelNavModifierComponent, bUseStaticMeshAsBound) == 0x000200, "Member 'UMarvelNavModifierComponent::bUseStaticMeshAsBound' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, UpdateInterval) == 0x000204, "Member 'UMarvelNavModifierComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, bUpdateNavWhenStopMoving) == 0x000208, "Member 'UMarvelNavModifierComponent::bUpdateNavWhenStopMoving' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, bOnlyUpdateWhenMovingStatusChange) == 0x000209, "Member 'UMarvelNavModifierComponent::bOnlyUpdateWhenMovingStatusChange' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, MaxSampleNum) == 0x00020C, "Member 'UMarvelNavModifierComponent::MaxSampleNum' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, SampleInterval) == 0x000210, "Member 'UMarvelNavModifierComponent::SampleInterval' has a wrong offset!");
-static_assert(offsetof(UMarvelNavModifierComponent, DetectionDistance) == 0x000218, "Member 'UMarvelNavModifierComponent::DetectionDistance' has a wrong offset!");
-
-// Class MarvelAI.MarvelNavModifierVolume
-// 0x0000 (0x0730 - 0x0730)
-class AMarvelNavModifierVolume final : public ANavModifierVolume
-{
-public:
-	bool                                          bOverrideTileConfig;                               // 0x0728(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_729[0x1];                                      // 0x0729(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTileCustomGeneralConfig               TileCustomGeneralConfig;                           // 0x072A(0x0006)(Edit, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelNavModifierVolume">();
-	}
-	static class AMarvelNavModifierVolume* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMarvelNavModifierVolume>();
-	}
-};
-static_assert(alignof(AMarvelNavModifierVolume) == 0x000010, "Wrong alignment on AMarvelNavModifierVolume");
-static_assert(sizeof(AMarvelNavModifierVolume) == 0x000730, "Wrong size on AMarvelNavModifierVolume");
-static_assert(offsetof(AMarvelNavModifierVolume, bOverrideTileConfig) == 0x000728, "Member 'AMarvelNavModifierVolume::bOverrideTileConfig' has a wrong offset!");
-static_assert(offsetof(AMarvelNavModifierVolume, TileCustomGeneralConfig) == 0x00072A, "Member 'AMarvelNavModifierVolume::TileCustomGeneralConfig' has a wrong offset!");
-
-// Class MarvelAI.MarvelObstacleNavLinkComponent
-// 0x0008 (0x02A0 - 0x0298)
-class UMarvelObstacleNavLinkComponent final : public UMarvelNavLinkCustomComponent
-{
-public:
-	float                                         BlockCheckInterval;                                // 0x0298(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelObstacleNavLinkComponent">();
-	}
-	static class UMarvelObstacleNavLinkComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMarvelObstacleNavLinkComponent>();
-	}
-};
-static_assert(alignof(UMarvelObstacleNavLinkComponent) == 0x000008, "Wrong alignment on UMarvelObstacleNavLinkComponent");
-static_assert(sizeof(UMarvelObstacleNavLinkComponent) == 0x0002A0, "Wrong size on UMarvelObstacleNavLinkComponent");
-static_assert(offsetof(UMarvelObstacleNavLinkComponent, BlockCheckInterval) == 0x000298, "Member 'UMarvelObstacleNavLinkComponent::BlockCheckInterval' has a wrong offset!");
-
-// Class MarvelAI.MarvelObstacleNavLinkProxy
-// 0x0010 (0x0740 - 0x0730)
-class AMarvelObstacleNavLinkProxy final : public AMarvelNavLinkProxy
-{
-public:
-	class UBoxComponent*                          BlockCheckBoxComp;                                 // 0x0730(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_738[0x8];                                      // 0x0738(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void TestBlockTrace();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelObstacleNavLinkProxy">();
-	}
-	static class AMarvelObstacleNavLinkProxy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMarvelObstacleNavLinkProxy>();
-	}
-};
-static_assert(alignof(AMarvelObstacleNavLinkProxy) == 0x000010, "Wrong alignment on AMarvelObstacleNavLinkProxy");
-static_assert(sizeof(AMarvelObstacleNavLinkProxy) == 0x000740, "Wrong size on AMarvelObstacleNavLinkProxy");
-static_assert(offsetof(AMarvelObstacleNavLinkProxy, BlockCheckBoxComp) == 0x000730, "Member 'AMarvelObstacleNavLinkProxy::BlockCheckBoxComp' has a wrong offset!");
+DUMPER7_ASSERTS_UActionRequirementAsset;
 
 // Class MarvelAI.MarvelPathFollowingComponent
 // 0x0128 (0x0468 - 0x0340)
@@ -9008,38 +5719,3384 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelPathFollowingComponent">();
+		STATIC_CLASS_IMPL("MarvelPathFollowingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelPathFollowingComponent")
 	}
 	static class UMarvelPathFollowingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelPathFollowingComponent>();
 	}
 };
-static_assert(alignof(UMarvelPathFollowingComponent) == 0x000008, "Wrong alignment on UMarvelPathFollowingComponent");
-static_assert(sizeof(UMarvelPathFollowingComponent) == 0x000468, "Wrong size on UMarvelPathFollowingComponent");
-static_assert(offsetof(UMarvelPathFollowingComponent, OnMovePathSegmentDispatcher) == 0x000348, "Member 'UMarvelPathFollowingComponent::OnMovePathSegmentDispatcher' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bEnableDebugDraw) == 0x000388, "Member 'UMarvelPathFollowingComponent::bEnableDebugDraw' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bUseMoveAbility) == 0x000389, "Member 'UMarvelPathFollowingComponent::bUseMoveAbility' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bKeepJumpWhenMove) == 0x00038A, "Member 'UMarvelPathFollowingComponent::bKeepJumpWhenMove' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, PreJumpCoolDown) == 0x00038C, "Member 'UMarvelPathFollowingComponent::PreJumpCoolDown' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, CapsuleSizeFactorForPreJump) == 0x000390, "Member 'UMarvelPathFollowingComponent::CapsuleSizeFactorForPreJump' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, FollowPathSegmentInterval) == 0x000394, "Member 'UMarvelPathFollowingComponent::FollowPathSegmentInterval' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bShouldTryJumpOnBlocked) == 0x0003A0, "Member 'UMarvelPathFollowingComponent::bShouldTryJumpOnBlocked' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bForceEnableCrossMove) == 0x0003A1, "Member 'UMarvelPathFollowingComponent::bForceEnableCrossMove' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, CrossMoveInputFactor) == 0x0003A4, "Member 'UMarvelPathFollowingComponent::CrossMoveInputFactor' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, CrossMoveDistRange) == 0x0003A8, "Member 'UMarvelPathFollowingComponent::CrossMoveDistRange' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bEnableCrossMove) == 0x0003B0, "Member 'UMarvelPathFollowingComponent::bEnableCrossMove' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bUseHorizontalDirectionForForward) == 0x0003B1, "Member 'UMarvelPathFollowingComponent::bUseHorizontalDirectionForForward' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bEnableOverrideFocusWhenFollowNavLink) == 0x0003B2, "Member 'UMarvelPathFollowingComponent::bEnableOverrideFocusWhenFollowNavLink' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, MoveFocusForwardOffset) == 0x0003B4, "Member 'UMarvelPathFollowingComponent::MoveFocusForwardOffset' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, MoveFocusUpOffset) == 0x0003B8, "Member 'UMarvelPathFollowingComponent::MoveFocusUpOffset' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, OverrideMoveFocus) == 0x0003C0, "Member 'UMarvelPathFollowingComponent::OverrideMoveFocus' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, LastPathFollowResult) == 0x0003D8, "Member 'UMarvelPathFollowingComponent::LastPathFollowResult' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, DefaultSteeringClass) == 0x000438, "Member 'UMarvelPathFollowingComponent::DefaultSteeringClass' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, MySteering) == 0x000440, "Member 'UMarvelPathFollowingComponent::MySteering' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bForceNotDecelerateForLastPathSegment) == 0x000460, "Member 'UMarvelPathFollowingComponent::bForceNotDecelerateForLastPathSegment' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, bForceDisableDefaultPathFollowMoveInput) == 0x000461, "Member 'UMarvelPathFollowingComponent::bForceDisableDefaultPathFollowMoveInput' has a wrong offset!");
-static_assert(offsetof(UMarvelPathFollowingComponent, ForceConsumeMoveInputScaleThreshold) == 0x000464, "Member 'UMarvelPathFollowingComponent::ForceConsumeMoveInputScaleThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelPathFollowingComponent;
+
+// Class MarvelAI.Requirement_ReturnValue
+// 0x0008 (0x0040 - 0x0038)
+class URequirement_ReturnValue final : public UActionRequirementBase
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Requirement_ReturnValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Requirement_ReturnValue")
+	}
+	static class URequirement_ReturnValue* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URequirement_ReturnValue>();
+	}
+};
+DUMPER7_ASSERTS_URequirement_ReturnValue;
+
+// Class MarvelAI.Requirement_BattleCalculate
+// 0x0020 (0x0058 - 0x0038)
+class URequirement_BattleCalculate final : public UActionRequirementBase
+{
+public:
+	ECalculateType                                CalculateType;                                     // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIFilterSide                                 LeftFilterSide;                                    // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPropertyValueType                            LeftValueType;                                     // 0x003A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LeftAlive;                                         // 0x003B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LeftCoefficient;                                   // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMarvelArithmeticOperation                    ArithmeticOperation;                               // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIFilterSide                                 RightFilterSide;                                   // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPropertyValueType                            RightValueType;                                    // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RightAlive;                                        // 0x0043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RightCoefficient;                                  // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Description;                                       // 0x0048(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Requirement_BattleCalculate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Requirement_BattleCalculate")
+	}
+	static class URequirement_BattleCalculate* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URequirement_BattleCalculate>();
+	}
+};
+DUMPER7_ASSERTS_URequirement_BattleCalculate;
+
+// Class MarvelAI.WayPointPathFunctionLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UWayPointPathFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void BuildDefaultSimplePath(struct FWayPointPath& WayPointPath, class AActor* MovingActor, class AActor* FinalTarget);
+	static void Clear(struct FWayPointPath& WayPointPath);
+	static class AActor* GetCurrentWayPoint(struct FWayPointPath& WayPointPath);
+	static class AActor* GetFinalTarget(struct FWayPointPath& WayPointPath);
+	static bool GoNext(struct FWayPointPath& WayPointPath);
+	static void InitPathForMovingActor(struct FWayPointPath& WayPointPath, class AActor* MovingActor, bool ShouldUpdateProgress, EWayPointMark PathMark);
+	static bool IsMovingActorOutOfPath(const struct FWayPointPath& WayPointPath, float AllowedRadius);
+	static bool IsPathFinished(const struct FWayPointPath& WayPointPath);
+	static bool IsPathValid(const struct FWayPointPath& WayPointPath);
+	static bool IsRingPath(struct FWayPointPath& WayPointPath);
+	static void MarkRingPath(struct FWayPointPath& WayPointPath, class AActor* RingStartPoint);
+	static void ResetProgress(struct FWayPointPath& WayPointPath);
+	static void SetPathMark(struct FWayPointPath& WayPointPath, EWayPointMark NewWayPointMark);
+	static struct FVector TakeNextLocationToReach(struct FWayPointPath& WayPointPath);
+	static void UpdateProgressInPath(struct FWayPointPath& WayPointPath);
+	static bool UpdateSafeFactorForRoutes(const struct FWayPointPath& WayPointPath, float SafeFactor);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WayPointPathFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WayPointPathFunctionLibrary")
+	}
+	static class UWayPointPathFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWayPointPathFunctionLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UWayPointPathFunctionLibrary;
+
+// Class MarvelAI.BTS_AroundCharacter
+// 0x00C8 (0x0140 - 0x0078)
+class UBTS_AroundCharacter : public UBTService
+{
+public:
+	bool                                          ConsiderDist;                                      // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FAroundCharacterCheckStruct>    AroundCharacterCheckList;                          // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FHeroFilter                            HeroFilter;                                        // 0x0090(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 PassCharacterNum;                                  // 0x0110(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_AroundCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_AroundCharacter")
+	}
+	static class UBTS_AroundCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_AroundCharacter>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_AroundCharacter;
+
+// Class MarvelAI.BTS_AutoAbilityService
+// 0x0108 (0x0180 - 0x0078)
+class UBTS_AutoAbilityService : public UBTService
+{
+public:
+	bool                                          bUseAIInfoGroupTags;                               // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  UsageGroupTags;                                    // 0x0080(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  BlockTag;                                          // 0x00E8(0x0068)(Edit, NativeAccessSpecifierPrivate)
+	bool                                          bUseDynamicFrequency;                              // 0x0150(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         UsageTableNames;                                   // 0x0158(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	bool                                          bOverrideTactics;                                  // 0x0168(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UAbilityTacticsTask>        OverrideRequestClass;                              // 0x0170(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class UAIAbilitySelectCheckBase>  OverrideSelectCheckClass;                          // 0x0178(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_AutoAbilityService")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_AutoAbilityService")
+	}
+	static class UBTS_AutoAbilityService* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_AutoAbilityService>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_AutoAbilityService;
+
+// Class MarvelAI.BTS_AutoInjection
+// 0x03D0 (0x0448 - 0x0078)
+class UBTS_AutoInjection final : public UBTService
+{
+public:
+	struct FAIAbilityUsage                        AIAbilityData;                                     // 0x0078(0x00E8)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAIAutoAbilityTable              UsageConfig;                                       // 0x0160(0x0270)(Edit, EditConst, NativeAccessSpecifierPublic)
+	class UAIAbilityUsageObject*                  AbilityUsageObject;                                // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 AbilityUsageBlackboardKey;                         // 0x03D8(0x0030)(Edit, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 AttackTargetBlackboardKey;                         // 0x0408(0x0030)(Edit, EditConst, Protected, NativeAccessSpecifierProtected)
+	TArray<int32>                                 AbilityID;                                         // 0x0438(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_AutoInjection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_AutoInjection")
+	}
+	static class UBTS_AutoInjection* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_AutoInjection>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_AutoInjection;
+
+// Class MarvelAI.BTS_CheckDefense
+// 0x00E0 (0x0158 - 0x0078)
+class UBTS_CheckDefense final : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutIsNeedDefenseKey;                               // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 InFrontierKey;                                     // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 InSelfActorKey;                                    // 0x00D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FFloatRange                            FrontierCheckDistance;                             // 0x0108(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FInt32Range                            FrontierEnemyProportion;                           // 0x0118(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FInt32Range                            FrontierAllyProportion;                            // 0x0128(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FFloatRange                            SelfCheckDistance;                                 // 0x0138(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FInt32Range                            EnemyAroundProportion;                             // 0x0148(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_CheckDefense")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_CheckDefense")
+	}
+	static class UBTS_CheckDefense* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_CheckDefense>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_CheckDefense;
+
+// Class MarvelAI.MarvelNavLinkCustomComponent
+// 0x0040 (0x0298 - 0x0258)
+class UMarvelNavLinkCustomComponent : public UNavLinkCustomComponent
+{
+public:
+	struct FVector                                TeleportStart;                                     // 0x0258(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TeleportEnd;                                       // 0x0270(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsAttachedToWall;                                 // 0x0288(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bShouldUpdateConfigDataWhenEdit;                   // 0x0289(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_28A[0xE];                                      // 0x028A(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavLinkCustomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavLinkCustomComponent")
+	}
+	static class UMarvelNavLinkCustomComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavLinkCustomComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavLinkCustomComponent;
+
+// Class MarvelAI.BTS_CheckRemainTime
+// 0x0038 (0x00B0 - 0x0078)
+class UBTS_CheckRemainTime : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutRemainTime;                                     // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_CheckRemainTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_CheckRemainTime")
+	}
+	static class UBTS_CheckRemainTime* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_CheckRemainTime>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_CheckRemainTime;
+
+// Class MarvelAI.BTS_DamageStatistics
+// 0x0050 (0x00C8 - 0x0078)
+class UBTS_DamageStatistics final : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 ReachDamageThreshold;                              // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	float                                         DamageThreshold;                                   // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    AIOwner;                                           // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UBlackboardComponent*                   BBComp;                                            // 0x00B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C0[0x8];                                       // 0x00C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_DamageStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_DamageStatistics")
+	}
+	static class UBTS_DamageStatistics* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_DamageStatistics>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_DamageStatistics;
+
+// Class MarvelAI.NavLinkMoveMethod_DirectlyMove
+// 0x0000 (0x0048 - 0x0048)
+class UNavLinkMoveMethod_DirectlyMove final : public UNavLinkMoveMethod
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_DirectlyMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_DirectlyMove")
+	}
+	static class UNavLinkMoveMethod_DirectlyMove* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_DirectlyMove>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_DirectlyMove;
+
+// Class MarvelAI.BTS_IsInBattle
+// 0x00F8 (0x0170 - 0x0078)
+class UBTS_IsInBattle : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 IsInBattle;                                        // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 AttackTarget;                                      // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 TeammateTarget;                                    // 0x00D8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FAIHeroTag                             MatchTag;                                          // 0x0108(0x0068)(Edit, DisableEditOnInstance, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_IsInBattle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_IsInBattle")
+	}
+	static class UBTS_IsInBattle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_IsInBattle>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_IsInBattle;
+
+// Class MarvelAI.BTS_SelectTargetNew
+// 0x01D8 (0x0250 - 0x0078)
+class UBTS_SelectTargetNew : public UBTService
+{
+public:
+	bool                                          bEnableDebug;                                      // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DebugName;                                         // 0x0080(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 InOutTarget;                                       // 0x0090(0x0030)(Edit, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 OutSenseFromPortal;                                // 0x00C0(0x0030)(Edit, NativeAccessSpecifierPublic)
+	EAITargetType                                 CharacterGroupType;                                // 0x00F0(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UAITargetContextBase>       CandidateType;                                     // 0x00F8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHeroRole                                     LimitRole;                                         // 0x0100(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UAIScoreModuleRule>         ScoreRuleConfigClass;                              // 0x0108(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UAIScoreModuleRule>         SummonScoreRuleConfigClass;                        // 0x0110(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSet<int32>                                   HighPrioritySummoners;                             // 0x0118(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
+	class UAIScoreModuleRule*                     RuleConfig;                                        // 0x0168(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAIScoreModuleRule*                     SummonedRuleConfig;                                // 0x0170(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AMarvelAIController*                    AIOwner;                                           // 0x0178(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSet<class AActor*>                           Candidates;                                        // 0x0180(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	class AMarvelGameState*                       CacheMarvelGameState;                              // 0x01D0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FSelectTargetQueryContext              TargetQueryContext;                                // 0x01D8(0x0010)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1E8[0x68];                                     // 0x01E8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnTargetTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_SelectTargetNew")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SelectTargetNew")
+	}
+	static class UBTS_SelectTargetNew* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_SelectTargetNew>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_SelectTargetNew;
+
+// Class MarvelAI.MarvelNavArea_SpaceRift
+// 0x0008 (0x0060 - 0x0058)
+class UMarvelNavArea_SpaceRift final : public UMarvelNavArea
+{
+public:
+	bool                                          bNeedRuntimeValidCheck;                            // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_SpaceRift")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_SpaceRift")
+	}
+	static class UMarvelNavArea_SpaceRift* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_SpaceRift>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_SpaceRift;
+
+// Class MarvelAI.AICommunicateAsset
+// 0x0050 (0x0088 - 0x0038)
+class UAICommunicateAsset final : public UPrimaryDataAsset
+{
+public:
+	struct FAICommunicateData                     Communicate;                                       // 0x0038(0x0050)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AICommunicateAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICommunicateAsset")
+	}
+	static class UAICommunicateAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAICommunicateAsset>();
+	}
+};
+DUMPER7_ASSERTS_UAICommunicateAsset;
+
+// Class MarvelAI.BTS_SendChatMessage
+// 0x0050 (0x00C8 - 0x0078)
+class UBTS_SendChatMessage final : public UBTService
+{
+public:
+	int32                                         MessageSide;                                       // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TimeStamp;                                         // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChannelType;                                       // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpecialType;                                       // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PoolHealth;                                        // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SendMessageCD;                                     // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             AICommunicateDataTableAsset;                       // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAICommunicateAsset*                    WeightsAsset;                                      // 0x0098(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelAIController*                    AIOwner;                                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FDateTime                              LastSendMessageTime;                               // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_B0[0x18];                                      // 0x00B0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class FString GetAIUserName(class AActor* Target);
+	void OnAllDeath(const struct FAIEventArgs& Args);
+	void OnDeath(const struct FAIEventArgs& Args);
+	void OnEnergyFull(const struct FAIEventArgs& Args);
+	void OnGameBegin(const struct FAIEventArgs& Args);
+	void OnGameEnd(const struct FAIEventArgs& Args);
+	void OnHeal(const struct FAIEventArgs& Args);
+	void OnHealthChanged(const struct FAIEventArgs& Args);
+	void SendChatMessage(const class FString& Msg, class AActor* Target);
+	void SendMessage(struct FAICommunicateEx* Communicate, class AActor* Target);
+	void SendQuickMessage(const int32& ID, class AActor* Target);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_SendChatMessage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SendChatMessage")
+	}
+	static class UBTS_SendChatMessage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_SendChatMessage>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_SendChatMessage;
+
+// Class MarvelAI.BTS_SetFocus
+// 0x0090 (0x0108 - 0x0078)
+class UBTS_SetFocus final : public UBTService
+{
+public:
+	bool                                          bUpdateTargetInTick;                               // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bFocusOnLocation;                                  // 0x0079(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 LocationToFocus;                                   // 0x0080(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 ActorToFocus;                                      // 0x00B0(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	bool                                          bUseExtentCenter;                                  // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinRandomOffsetYaw;                                // 0x00E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxRandomOffsetYaw;                                // 0x00E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinRandomOffsetPitch;                              // 0x00EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxRandomOffsetPitch;                              // 0x00F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RandomOffsetTickInterval;                          // 0x00F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bClearAllPrevFocus;                                // 0x00F8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bClearFocusWhenExit;                               // 0x00F9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_FA[0x2];                                       // 0x00FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ClearFocusDelay;                                   // 0x00FC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_100[0x8];                                      // 0x0100(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_SetFocus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SetFocus")
+	}
+	static class UBTS_SetFocus* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_SetFocus>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_SetFocus;
+
+// Class MarvelAI.HotPoint_DataAsset
+// 0x00A0 (0x00D8 - 0x0038)
+class UHotPoint_DataAsset final : public UDataAsset
+{
+public:
+	TMap<class FName, struct FMapPoint>           MapPoints;                                         // 0x0038(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FMapPoint                              DefaultConfig;                                     // 0x0088(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("HotPoint_DataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HotPoint_DataAsset")
+	}
+	static class UHotPoint_DataAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UHotPoint_DataAsset>();
+	}
+};
+DUMPER7_ASSERTS_UHotPoint_DataAsset;
+
+// Class MarvelAI.NavEffectBoxComponent
+// 0x0000 (0x08A0 - 0x08A0)
+class UNavEffectBoxComponent final : public UBoxComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavEffectBoxComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavEffectBoxComponent")
+	}
+	static class UNavEffectBoxComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavEffectBoxComponent>();
+	}
+};
+DUMPER7_ASSERTS_UNavEffectBoxComponent;
+
+// Class MarvelAI.BTS_SetMapPoint_Payload
+// 0x01F0 (0x0268 - 0x0078)
+class UBTS_SetMapPoint_Payload : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 InMatchStateInput;                                 // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FStrategyArea                          OutStrategyArea;                                   // 0x00A8(0x0090)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 FrontierBBKey;                                     // 0x0138(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 EnemyPlayerStartBBKey;                             // 0x0168(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 AllyPlayerStartBBKey;                              // 0x0198(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	float                                         SuppressDist;                                      // 0x01C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RetreatDist;                                       // 0x01CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UHotPoint_DataAsset*                    DA_HotPoint;                                       // 0x01D0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 SuppressPointBBKey;                                // 0x01D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 RetreatPointBBKey;                                 // 0x0208(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 OutHotPointBBKey;                                  // 0x0238(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_SetMapPoint_Payload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SetMapPoint_Payload")
+	}
+	static class UBTS_SetMapPoint_Payload* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_SetMapPoint_Payload>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_SetMapPoint_Payload;
+
+// Class MarvelAI.BTS_UpdateAnthropomorphicType
+// 0x0030 (0x00A8 - 0x0078)
+class UBTS_UpdateAnthropomorphicType : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutAnthropomorphic;                                // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateAnthropomorphicType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateAnthropomorphicType")
+	}
+	static class UBTS_UpdateAnthropomorphicType* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateAnthropomorphicType>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateAnthropomorphicType;
+
+// Class MarvelAI.BTS_UpdateCampState
+// 0x0030 (0x00A8 - 0x0078)
+class UBTS_UpdateCampState final : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutCampState;                                      // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateCampState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateCampState")
+	}
+	static class UBTS_UpdateCampState* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateCampState>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateCampState;
+
+// Class MarvelAI.BTS_UpdateMatchState_New
+// 0x0098 (0x0140 - 0x00A8)
+class UBTS_UpdateMatchState_New : public UBTService_MarvelInstancedBase
+{
+public:
+	struct FBlackboardKeySelector                 GameModeTagKey;                                    // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 MatchStateKey;                                     // 0x00D8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 RemainTimeKey;                                     // 0x0108(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	class ULevelSubsystem*                        LevelSubsystem;                                    // 0x0138(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnMatchStateChange(EMatchState NewState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateMatchState_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateMatchState_New")
+	}
+	static class UBTS_UpdateMatchState_New* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateMatchState_New>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateMatchState_New;
+
+// Class MarvelAI.MarvelNavigationQueryFilter
+// 0x0008 (0x0058 - 0x0050)
+class UMarvelNavigationQueryFilter : public UNavigationQueryFilter
+{
+public:
+	uint8                                         Pad_50[0x4];                                       // 0x0050(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bCouldClimbWall;                                   // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavigationQueryFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavigationQueryFilter")
+	}
+	static class UMarvelNavigationQueryFilter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavigationQueryFilter>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavigationQueryFilter;
+
+// Class MarvelAI.MarvelNavFilter_JumpVeryHigh
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavFilter_JumpVeryHigh final : public UMarvelNavigationQueryFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavFilter_JumpVeryHigh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilter_JumpVeryHigh")
+	}
+	static class UMarvelNavFilter_JumpVeryHigh* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavFilter_JumpVeryHigh>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavFilter_JumpVeryHigh;
+
+// Class MarvelAI.BTS_UpdateControlState
+// 0x0090 (0x01D0 - 0x0140)
+class UBTS_UpdateControlState final : public UBTS_UpdateMatchState_New
+{
+public:
+	struct FBlackboardKeySelector                 AllyCampProgressKey;                               // 0x0140(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 EnemyCampProgressKey;                              // 0x0170(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 ControlStateKey;                                   // 0x01A0(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	EAIFilterSide GetCampControlState(class AMarvelBaseCharacter* OwnerCharacter);
+	TArray<float> GetCampProgress(class AMarvelBaseCharacter* OwnerCharacter);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateControlState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateControlState")
+	}
+	static class UBTS_UpdateControlState* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateControlState>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateControlState;
+
+// Class MarvelAI.BTS_UpdateDangerous
+// 0x0010 (0x0088 - 0x0078)
+class UBTS_UpdateDangerous : public UBTService
+{
+public:
+	bool                                          bEnableDebugLog;                                   // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDangerousTargetAsset*                  DangerousTarget;                                   // 0x0080(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateDangerous")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateDangerous")
+	}
+	static class UBTS_UpdateDangerous* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateDangerous>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateDangerous;
+
+// Class MarvelAI.BTS_UpdateEscortStateNew
+// 0x0090 (0x01D0 - 0x0140)
+class UBTS_UpdateEscortStateNew : public UBTS_UpdateMatchState_New
+{
+public:
+	struct FBlackboardKeySelector                 GameStageKey;                                      // 0x0140(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 PayloadStateKey;                                   // 0x0170(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 PayloadProgressKey;                                // 0x01A0(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	EOwnershipType GetPayloadOwnership();
+	float GetPayLoadProgress();
+	float GetPayLoadSpeed();
+	void OnPreGameMatchEvent(EMatchState MatchState);
+	void SetCurrentStage(const class FString& StageName);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateEscortStateNew")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateEscortStateNew")
+	}
+	static class UBTS_UpdateEscortStateNew* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateEscortStateNew>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateEscortStateNew;
+
+// Class MarvelAI.BTS_UpdateFireLine
+// 0x0070 (0x00E8 - 0x0078)
+class UBTS_UpdateFireLine final : public UBTService
+{
+public:
+	float                                         TeammateDistance;                                  // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 DifficultyMode;                                    // 0x0080(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 DifficultyLevel;                                   // 0x00B0(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         TempPriority;                                      // 0x00E0(0x0004)(BlueprintVisible, ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool IsActorInFireLineState(const class AMarvelBaseCharacter* Character);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateFireLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateFireLine")
+	}
+	static class UBTS_UpdateFireLine* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateFireLine>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateFireLine;
+
+// Class MarvelAI.NavLinkMoveMethod_ForceFly
+// 0x0008 (0x0050 - 0x0048)
+class UNavLinkMoveMethod_ForceFly final : public UNavLinkMoveMethod
+{
+public:
+	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_ForceFly")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_ForceFly")
+	}
+	static class UNavLinkMoveMethod_ForceFly* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_ForceFly>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_ForceFly;
+
+// Class MarvelAI.BTS_UpdateFrontier
+// 0x0030 (0x00A8 - 0x0078)
+class UBTS_UpdateFrontier : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutFrontier;                                       // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateFrontier")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateFrontier")
+	}
+	static class UBTS_UpdateFrontier* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateFrontier>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateFrontier;
+
+// Class MarvelAI.BTS_UpdateMapID
+// 0x0030 (0x00A8 - 0x0078)
+class UBTS_UpdateMapID : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutMapID;                                          // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateMapID")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateMapID")
+	}
+	static class UBTS_UpdateMapID* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateMapID>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateMapID;
+
+// Class MarvelAI.BTS_UpdateMatchState
+// 0x0068 (0x00E0 - 0x0078)
+class UBTS_UpdateMatchState final : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 OutMatchState;                                     // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 OutBattleState;                                    // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPublic)
+	class AAIController*                          AIOwner;                                           // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void OnMatchStateChange(EMatchState NewState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateMatchState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateMatchState")
+	}
+	static class UBTS_UpdateMatchState* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateMatchState>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateMatchState;
+
+// Class MarvelAI.BTS_UpdatePath
+// 0x0268 (0x0310 - 0x00A8)
+class UBTS_UpdatePath final : public UBTService_MarvelInstancedBase
+{
+public:
+	struct FBlackboardKeySelector                 LeaderActor;                                       // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 IsMoving;                                          // 0x00D8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	bool                                          bEnablePathPointRandomRadius;                      // 0x0108(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PathPointRandomRadius;                             // 0x010C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMarvelAIController*                    CacheLeaderController;                             // 0x0110(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ANavigationData*                        CacheNavData;                                      // 0x0118(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FAIMoveRequest                         CacheMoveRequest;                                  // 0x0120(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	struct FNavPathWrapper                        CachePathWrapper;                                  // 0x0170(0x0180)(Transient, Protected, NativeAccessSpecifierProtected)
+	float                                         Delay;                                             // 0x02F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DelayRandomDeviation;                              // 0x02F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2F8[0x18];                                     // 0x02F8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnLeaderPathUpdate(const struct FAIMoveRequest& MoveRequest, const struct FNavPathWrapper& NewPath);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdatePath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdatePath")
+	}
+	static class UBTS_UpdatePath* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdatePath>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdatePath;
+
+// Class MarvelAI.MarvelObstacleNavLinkComponent
+// 0x0008 (0x02A0 - 0x0298)
+class UMarvelObstacleNavLinkComponent final : public UMarvelNavLinkCustomComponent
+{
+public:
+	float                                         BlockCheckInterval;                                // 0x0298(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelObstacleNavLinkComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelObstacleNavLinkComponent")
+	}
+	static class UMarvelObstacleNavLinkComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelObstacleNavLinkComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelObstacleNavLinkComponent;
+
+// Class MarvelAI.BTS_UpdateSight
+// 0x00D8 (0x0150 - 0x0078)
+class UBTS_UpdateSight : public UBTService
+{
+public:
+	bool                                          bUseDistancePerspective;                           // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 DisPerspectiveHeroIDs;                             // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         PerspectiveDistance;                               // 0x0090(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseTagPerspective;                                // 0x0094(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 TagPerspectiveHeroIDs;                             // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PerspectiveTag;                                    // 0x00A8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TagPerspectiveDistance;                            // 0x00B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PerspectiveCooperateTag;                           // 0x00B8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FVisionConfig>             HeroIDToVisionRadius;                              // 0x00C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         VisionRadius;                                      // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisionRadiusForDamageSource;                       // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisionHalfAngleEnemy;                              // 0x0120(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisionHalfAngleAlly;                               // 0x0124(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisionHalfAngleTooClose;                           // 0x0128(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisionHalfAngleInSense;                            // 0x012C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAge;                                            // 0x0130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    AIOwner;                                           // 0x0138(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMarvelAIPerceptionComponent*           AIPerceptionComponent;                             // 0x0140(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAISenseConfig_Sight*                   SightConfig;                                       // 0x0148(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void OnResetSightConfig(float NewRadius);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateSight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateSight")
+	}
+	static class UBTS_UpdateSight* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateSight>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateSight;
+
+// Class MarvelAI.BTS_UpdateSpineDist2Payload
+// 0x00A0 (0x0118 - 0x0078)
+class UBTS_UpdateSpineDist2Payload final : public UBTService
+{
+public:
+	struct FBlackboardKeySelector                 InTarget;                                          // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 InFrontier;                                        // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 OutDistance;                                       // 0x00D8(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	TArray<class USplineComponent*>               SplineComponents;                                  // 0x0108(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateSpineDist2Payload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateSpineDist2Payload")
+	}
+	static class UBTS_UpdateSpineDist2Payload* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateSpineDist2Payload>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateSpineDist2Payload;
+
+// Class MarvelAI.SteeringBehavior
+// 0x0020 (0x0050 - 0x0030)
+class USteeringBehavior : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FixedContextMarkAngleInDegree;                     // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FColor                                 DrawDebugColor;                                    // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DrawDebugLengthFactor;                             // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bShouldDrawDebug;                                  // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SteeringBehavior")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SteeringBehavior")
+	}
+	static class USteeringBehavior* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USteeringBehavior>();
+	}
+};
+DUMPER7_ASSERTS_USteeringBehavior;
+
+// Class MarvelAI.Steering_AvoidFireLine
+// 0x0030 (0x0080 - 0x0050)
+class USteering_AvoidFireLine final : public USteeringBehavior
+{
+public:
+	float                                         RunEQSDeltaTime;                                   // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0058(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SkipDistance;                                      // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_64[0x1C];                                      // 0x0064(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Steering_AvoidFireLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_AvoidFireLine")
+	}
+	static class USteering_AvoidFireLine* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USteering_AvoidFireLine>();
+	}
+};
+DUMPER7_ASSERTS_USteering_AvoidFireLine;
+
+// Class MarvelAI.BTS_UpdateUsageGroup
+// 0x0068 (0x00E0 - 0x0078)
+class UBTS_UpdateUsageGroup : public UBTService
+{
+public:
+	struct FGameplayTagContainer                  UsageGroupTags;                                    // 0x0078(0x0068)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTS_UpdateUsageGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateUsageGroup")
+	}
+	static class UBTS_UpdateUsageGroup* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTS_UpdateUsageGroup>();
+	}
+};
+DUMPER7_ASSERTS_UBTS_UpdateUsageGroup;
+
+// Class MarvelAI.BTTask_AbilityDelayWait_BB
+// 0x0030 (0x00B0 - 0x0080)
+class UBTTask_AbilityDelayWait_BB final : public UBTTask_Wait
+{
+public:
+	struct FBlackboardKeySelector                 InAbilityUsage;                                    // 0x0080(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_AbilityDelayWait_BB")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_AbilityDelayWait_BB")
+	}
+	static class UBTTask_AbilityDelayWait_BB* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_AbilityDelayWait_BB>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_AbilityDelayWait_BB;
+
+// Class MarvelAI.ShelterPathFinder
+// 0x0040 (0x0070 - 0x0030)
+class UShelterPathFinder final : public UObject
+{
+public:
+	struct FShelterPathFindConfig                 PathFindConfig;                                    // 0x0030(0x0040)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+
+public:
+	EPathFollowingRequestResult RequestMove(class AMarvelAIController* AIOwner, const struct FVector& TargetLocation) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ShelterPathFinder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShelterPathFinder")
+	}
+	static class UShelterPathFinder* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UShelterPathFinder>();
+	}
+};
+DUMPER7_ASSERTS_UShelterPathFinder;
+
+// Class MarvelAI.BTTask_GeneralActivateAbility
+// 0x0038 (0x00B0 - 0x0078)
+class UBTTask_GeneralActivateAbility : public UBTTaskNode
+{
+public:
+	int32                                         AbilityID;                                         // 0x0078(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxActivateDuration;                               // 0x007C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bEndTaskByAbilityBreak : 1;                        // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bCancelAbilityOnBreak : 1;                         // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelGameplayAbility*                 CurrentAbility;                                    // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_90[0x20];                                      // 0x0090(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void EndCurrentTask();
+	void OnAbilityBreak();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_GeneralActivateAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_GeneralActivateAbility")
+	}
+	static class UBTTask_GeneralActivateAbility* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_GeneralActivateAbility>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_GeneralActivateAbility;
+
+// Class MarvelAI.BTTask_ActivateAbility_BB
+// 0x0118 (0x01C8 - 0x00B0)
+class UBTTask_ActivateAbility_BB final : public UBTTask_GeneralActivateAbility
+{
+public:
+	struct FBlackboardKeySelector                 InAbilityUsageObject;                              // 0x00B0(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E0[0xE8];                                      // 0x00E0(0x00E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_ActivateAbility_BB")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_ActivateAbility_BB")
+	}
+	static class UBTTask_ActivateAbility_BB* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_ActivateAbility_BB>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_ActivateAbility_BB;
+
+// Class MarvelAI.Steering_CrossMove
+// 0x0000 (0x0050 - 0x0050)
+class USteering_CrossMove final : public USteeringBehavior
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Steering_CrossMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_CrossMove")
+	}
+	static class USteering_CrossMove* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USteering_CrossMove>();
+	}
+};
+DUMPER7_ASSERTS_USteering_CrossMove;
+
+// Class MarvelAI.BTTask_AIActivateAbilityTask
+// 0x0048 (0x00C0 - 0x0078)
+class UBTTask_AIActivateAbilityTask final : public UBTTaskNode
+{
+public:
+	struct FBlackboardKeySelector                 InAbilityUsageObject;                              // 0x0078(0x0030)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           InjectionTag;                                      // 0x00A8(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBehaviorTree*                          BehaviorAsset;                                     // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void InitAbilityTask();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_AIActivateAbilityTask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_AIActivateAbilityTask")
+	}
+	static class UBTTask_AIActivateAbilityTask* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_AIActivateAbilityTask>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_AIActivateAbilityTask;
+
+// Class MarvelAI.BTTask_ChaseTarget
+// 0x00C8 (0x0140 - 0x0078)
+class UBTTask_ChaseTarget final : public UBTTaskNode
+{
+public:
+	float                                         AcceptableRadius;                                  // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DirectDistFactor;                                  // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldUseDirectMoveWithJump;                      // 0x0080(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceDirectMoving;                                // 0x0081(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowPartialPath;                                 // 0x0082(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableDrawDebug;                                  // 0x0083(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpDistance;                                        // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForwardDistance;                                   // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownAngle;                                         // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RequiredProgress;                                  // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CapsuleSizeFactor;                                 // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxZDistToTryPreJump;                              // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PreJumpCoolDown;                                   // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CliffCheckFrontDistance;                           // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CliffCheckDownDistance;                            // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CliffCheckVerticalMoveRange;                       // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CliffCheckExtentFactor;                            // 0x00AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CliffCheckCoolDown;                                // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OnNavMeshCheckFrontDistance;                       // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldAddHalfHeightOnCheckPoint;                  // 0x00B8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 InMoveGoal;                                        // 0x00C0(0x0030)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F0[0x50];                                      // 0x00F0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_ChaseTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_ChaseTarget")
+	}
+	static class UBTTask_ChaseTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_ChaseTarget>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_ChaseTarget;
+
+// Class MarvelAI.MarvelAIAssetLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UMarvelAIAssetLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static const class UMarvelAIGameModeDefaultConfigAsset* GetGameModeDefaultConfig();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIAssetLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIAssetLibrary")
+	}
+	static class UMarvelAIAssetLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIAssetLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIAssetLibrary;
+
+// Class MarvelAI.BTTask_MarvelInstancedBase
+// 0x0010 (0x00C0 - 0x00B0)
+class UBTTask_MarvelInstancedBase : public UBTTask_BlueprintBase
+{
+public:
+	uint8                                         Pad_B0[0x8];                                       // 0x00B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x00B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	bool IsTaskEnded();
+	void ReceiveOnTaskFinished(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult Result);
+	void SetTickInterval(float NewTickInterval);
+
+	class AMarvelBaseCharacter* K2_GetControlledHero() const;
+	class APawn* K2_GetControlledPawn() const;
+	class AMarvelAIController* K2_GetMarvelAIOwner() const;
+	class UBehaviorTreeComponent* K2_GetOwnerBTComp() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_MarvelInstancedBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_MarvelInstancedBase")
+	}
+	static class UBTTask_MarvelInstancedBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_MarvelInstancedBase>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_MarvelInstancedBase;
+
+// Class MarvelAI.BTTask_MarvelRunBehaviorStatic
+// 0x0000 (0x0080 - 0x0080)
+class UBTTask_MarvelRunBehaviorStatic final : public UBTTask_RunBehavior
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_MarvelRunBehaviorStatic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_MarvelRunBehaviorStatic")
+	}
+	static class UBTTask_MarvelRunBehaviorStatic* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_MarvelRunBehaviorStatic>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_MarvelRunBehaviorStatic;
+
+// Class MarvelAI.SVONPathFindTester
+// 0x00E0 (0x07E0 - 0x0700)
+class ASVONPathFindTester : public AAISceneConfigActorBase
+{
+public:
+	class AActor*                                 TestStartActor;                                    // 0x0700(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 TestTargetActor;                                   // 0x0708(0x0008)(Edit, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bOnlyTestValidPath;                                // 0x0710(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_711[0x3];                                      // 0x0711(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TestCategoryIndex;                                 // 0x0714(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         CertainTestCaseIndex;                              // 0x0718(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCheckPathLength;                                  // 0x071C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_71D[0x3];                                      // 0x071D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFloatRange                            AllowedPathLengthDiffRange;                        // 0x0720(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCheckPathIsTheSame;                               // 0x0730(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDrawDebugPath;                                    // 0x0731(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDrawDebugTargetPath;                              // 0x0732(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_733[0x1];                                      // 0x0733(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DrawDebugDuration;                                 // 0x0734(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DrawDebugThickness;                                // 0x0738(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAllowGenerateTestCaseForSingleActor;              // 0x073C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_73D[0x3];                                      // 0x073D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ActorLocationRandomRadius;                         // 0x0740(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         TestCaseGenerateTryTimes;                          // 0x0744(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bRequireTestCaseHavePath;                          // 0x0748(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bShouldTakeDataFromRuntimeDataVolume;              // 0x0749(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_74A[0x6];                                      // 0x074A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPathTestCaseCategory>          TestCaseCategories;                                // 0x0750(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPathFindTestCase>              TestCaseList;                                      // 0x0760(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	bool                                          bShouldStoreStatData;                              // 0x0770(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FAStarStat>                StatForLastTestList;                               // 0x0778(0x0050)(Edit, Transient, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
+	bool                                          bEnablePathPostProcess;                            // 0x07C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7C9[0x7];                                      // 0x07C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USVONNavigationComponent*               SVONavComp;                                        // 0x07D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7D8[0x8];                                      // 0x07D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void AddConfigDataAsTestCase();
+	void AnalyzeStatData();
+	void ClassifyTestCases();
+	void GenerateRandomTestCasesFromActorList(const TArray<class AActor*>& ActorList, int32 TryTimes);
+	void GenerateTestCaseFromWayPoints();
+	bool MakeDataForTestCase(const struct FVector& StartPoint, const struct FVector& TargetPoint, bool bRequireHavePath);
+	void ReceiveAnalyzeStatData();
+	void UpdateTestCasePathResult();
+
+	bool K2_FindPath(const struct FVector& StartPoint, const struct FVector& TargetPoint, TArray<struct FVector>* OutPathPoints) const;
+	bool K2_RunCheckForCase(const struct FPathFindTestCase& TestCase) const;
+	bool RunTestCaseWithIndexList(const TArray<int32>& CaseIndexList) const;
+	void RunTestCategory(const struct FPathTestCaseCategory& TestCaseCategory) const;
+	void RunTestCategoryByIndex() const;
+	void TestAllCase() const;
+	void TestAllCategory() const;
+	void TestCertainCase() const;
+	void UpdateVolume() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SVONPathFindTester")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONPathFindTester")
+	}
+	static class ASVONPathFindTester* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ASVONPathFindTester>();
+	}
+};
+DUMPER7_ASSERTS_ASVONPathFindTester;
+
+// Class MarvelAI.BTTask_MarvelRunEQSQuery
+// 0x0048 (0x01C0 - 0x0178)
+class UBTTask_MarvelRunEQSQuery final : public UBTTask_RunEQSQuery
+{
+public:
+	struct FBlackboardKeySelector                 AbilityMoveLogicBlackboardKey;                     // 0x0178(0x0030)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A8[0x10];                                     // 0x01A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEnvQuery*                              DefaultEQSTemplate;                                // 0x01B8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_MarvelRunEQSQuery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_MarvelRunEQSQuery")
+	}
+	static class UBTTask_MarvelRunEQSQuery* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_MarvelRunEQSQuery>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_MarvelRunEQSQuery;
+
+// Class MarvelAI.BTTask_SwitchWeapon
+// 0x0010 (0x00C0 - 0x00B0)
+class UBTTask_SwitchWeapon final : public UBTTask_GeneralActivateAbility
+{
+public:
+	class FName                                   WeaponActionName;                                  // 0x00B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTTask_SwitchWeapon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_SwitchWeapon")
+	}
+	static class UBTTask_SwitchWeapon* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_SwitchWeapon>();
+	}
+};
+DUMPER7_ASSERTS_UBTTask_SwitchWeapon;
+
+// Class MarvelAI.BTT_ActiveAbilityByUsage
+// 0x0050 (0x00C8 - 0x0078)
+class UBTT_ActiveAbilityByUsage final : public UBTTaskNode
+{
+public:
+	int32                                         AbilityID;                                         // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         AbilityUsageID;                                    // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FBlackboardKeySelector                 BlackboardAbilityID;                               // 0x0080(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	struct FGameplayAITag                         AbilityGroupTag;                                   // 0x00B0(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UAbilityTacticsTask>        TaskClasses;                                       // 0x00C0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_ActiveAbilityByUsage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_ActiveAbilityByUsage")
+	}
+	static class UBTT_ActiveAbilityByUsage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_ActiveAbilityByUsage>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_ActiveAbilityByUsage;
+
+// Class MarvelAI.BTT_Count
+// 0x0038 (0x00B0 - 0x0078)
+class UBTT_Count final : public UBTTaskNode
+{
+public:
+	struct FBlackboardKeySelector                 Value;                                             // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	int32                                         AddNum;                                            // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_Count")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_Count")
+	}
+	static class UBTT_Count* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_Count>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_Count;
+
+// Class MarvelAI.BTT_ResetCount
+// 0x0030 (0x00A8 - 0x0078)
+class UBTT_ResetCount final : public UBTTaskNode
+{
+public:
+	struct FBlackboardKeySelector                 Value;                                             // 0x0078(0x0030)(Edit, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_ResetCount")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_ResetCount")
+	}
+	static class UBTT_ResetCount* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_ResetCount>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_ResetCount;
+
+// Class MarvelAI.BTT_FindStrategyArea
+// 0x0068 (0x00E0 - 0x0078)
+class UBTT_FindStrategyArea : public UBTTaskNode
+{
+public:
+	struct FBlackboardKeySelector                 StrategyAreaVolume;                                // 0x0078(0x0030)(Edit, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 OutLandPoint;                                      // 0x00A8(0x0030)(Edit, NativeAccessSpecifierPublic)
+	int32                                         MaxSearchNode;                                     // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_FindStrategyArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_FindStrategyArea")
+	}
+	static class UBTT_FindStrategyArea* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_FindStrategyArea>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_FindStrategyArea;
+
+// Class MarvelAI.NavLinkMoveMethod_WallClimb
+// 0x0018 (0x0060 - 0x0048)
+class UNavLinkMoveMethod_WallClimb final : public UNavLinkMoveMethod
+{
+public:
+	int32                                         ClimbAbilityID;                                    // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ClimbInputDetectAbilityID;                         // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCheckClimbAbilityCouldUse;                        // 0x0050(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldAdjustDestPoint;                            // 0x0051(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AdditionalOffsetToDestPoint;                       // 0x0054(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldAdjustWithNavData;                          // 0x0058(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         NavDataLerpFactor;                                 // 0x005C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_WallClimb")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_WallClimb")
+	}
+	static class UNavLinkMoveMethod_WallClimb* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_WallClimb>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_WallClimb;
+
+// Class MarvelAI.BTT_GeneralMoveTo
+// 0x0170 (0x01E8 - 0x0078)
+class UBTT_GeneralMoveTo : public UBTTaskNode
+{
+public:
+	struct FBlackboardKeySelector                 InMoveTarget;                                      // 0x0078(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FBlackboardKeySelector                 AbilityMoveLogic;                                  // 0x00A8(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	float                                         RandomRadius;                                      // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          ScaleRandomRadius;                                 // 0x00DC(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          OverrideTickInterval;                              // 0x00DD(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_DE[0x2];                                       // 0x00DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 RandomRadiusBlackboard;                            // 0x00E0(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+	float                                         AcceptanceRadius;                                  // 0x0110(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAIDataProviderFloatValue              AcceptanceRadius_Dynamic;                          // 0x0118(0x0040)(Edit, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	bool                                          AlwaysUseRandom;                                   // 0x0158(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUpdateTarget;                                     // 0x0159(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          AllowPartialPath;                                  // 0x015A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bAlwaysSuccess;                                    // 0x015B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelPathFollowingComponent*          CachedPFComp;                                      // 0x0160(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           DebugTag;                                          // 0x0168(0x000C)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FIntervalCountdown                     TickInterval;                                      // 0x0174(0x0008)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAIController*                    MarvelAIOwner;                                     // 0x0180(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAIMoveControlLogic*                    LastMoveControlLogic;                              // 0x0188(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_190[0x58];                                     // 0x0190(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnForceMoveTaskEnd(bool bSuccess);
+	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult Result, uint16 Flag);
+	void OnSVONMoveRequestFailed();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_GeneralMoveTo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_GeneralMoveTo")
+	}
+	static class UBTT_GeneralMoveTo* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_GeneralMoveTo>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_GeneralMoveTo;
+
+// Class MarvelAI.BTT_MarvelRunBehaviorDynamic
+// 0x0030 (0x00C8 - 0x0098)
+class UBTT_MarvelRunBehaviorDynamic final : public UBTTask_RunBehaviorDynamic
+{
+public:
+	struct FBlackboardKeySelector                 TargetBehaviorTreeKey;                             // 0x0098(0x0030)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_MarvelRunBehaviorDynamic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_MarvelRunBehaviorDynamic")
+	}
+	static class UBTT_MarvelRunBehaviorDynamic* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_MarvelRunBehaviorDynamic>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_MarvelRunBehaviorDynamic;
+
+// Class MarvelAI.MarvelNavArea_TeleportJump
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_TeleportJump final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_TeleportJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_TeleportJump")
+	}
+	static class UMarvelNavArea_TeleportJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_TeleportJump>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_TeleportJump;
+
+// Class MarvelAI.BTT_PinPoint
+// 0x1A68 (0x1AE0 - 0x0078)
+class UBTT_PinPoint : public UBTTaskNode
+{
+public:
+	TMap<EPinEnum, struct FPinPointInfo>          SignalInfoMap;                                     // 0x0078(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           PinEventTag;                                       // 0x00C8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bRandomPinType : 1;                                // 0x00D4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	EPinEnum                                      PinType;                                           // 0x00D5(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D6[0x2];                                       // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         NeedFrontSightLength;                              // 0x00D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00E0(0x19B0)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TMap<int32, int32>                            UltimateAbilityIDMap;                              // 0x1A90(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_PinPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PinPoint")
+	}
+	static class UBTT_PinPoint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_PinPoint>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_PinPoint;
+
+// Class MarvelAI.BTT_PlayEmotes
+// 0x0088 (0x0100 - 0x0078)
+class UBTT_PlayEmotes : public UBTTaskNode
+{
+public:
+	uint8                                         bCancelAbilityWhenActivating : 1;                  // 0x0078(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bUseAppointedEmoteID : 1;                          // 0x0078(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         EmoteID;                                           // 0x0080(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bUseRandomFromTable : 1;                           // 0x0088(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   EmoteTableName;                                    // 0x008C(0x000C)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseRandomFromAI_PS;                               // 0x0098(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FBTHeroEmoteConfig>        HeroEmoteConfigs;                                  // 0x00A0(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
+	int32                                         EmoteAbilityID;                                    // 0x00F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         DefaultEmoteSkinID;                                // 0x00F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         DefaultEmoteActionID;                              // 0x00F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_PlayEmotes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PlayEmotes")
+	}
+	static class UBTT_PlayEmotes* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_PlayEmotes>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_PlayEmotes;
+
+// Class MarvelAI.StrategyPointActor
+// 0x0010 (0x0710 - 0x0700)
+class AStrategyPointActor final : public AAISceneConfigActorBase
+{
+public:
+	int32                                         GroupId;                                           // 0x0700(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bIsMainInGroup : 1;                                // 0x0704(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bIsShelter : 1;                                    // 0x0704(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_705[0x3];                                      // 0x0705(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FShelterInstanceData                   ShelterData;                                       // 0x0708(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+
+public:
+	void SetShelterIsBroken(bool bNewIsBroken);
+
+	void DebugDrawPointData() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("StrategyPointActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StrategyPointActor")
+	}
+	static class AStrategyPointActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AStrategyPointActor>();
+	}
+};
+DUMPER7_ASSERTS_AStrategyPointActor;
+
+// Class MarvelAI.BTT_SetMoveInputScale
+// 0x0008 (0x0080 - 0x0078)
+class UBTT_SetMoveInputScale final : public UBTTaskNode
+{
+public:
+	float                                         MoveInputScale;                                    // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_SetMoveInputScale")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_SetMoveInputScale")
+	}
+	static class UBTT_SetMoveInputScale* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_SetMoveInputScale>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_SetMoveInputScale;
+
+// Class MarvelAI.BTT_SprayNew
+// 0x0030 (0x00A8 - 0x0078)
+class UBTT_SprayNew : public UBTTaskNode
+{
+public:
+	bool                                          bUseRandomFromAI_PS;                               // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMarvelAISprayTable>            DefaultSprayConfigs;                               // 0x0080(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         bOnlyUseDefaultSprayConfig : 1;                    // 0x0090(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 SprayConfigTableName;                              // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_SprayNew")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_SprayNew")
+	}
+	static class UBTT_SprayNew* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_SprayNew>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_SprayNew;
+
+// Class MarvelAI.MarvelNavArea_ObstacleLink
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_ObstacleLink final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_ObstacleLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_ObstacleLink")
+	}
+	static class UMarvelNavArea_ObstacleLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_ObstacleLink>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_ObstacleLink;
+
+// Class MarvelAI.BTT_TokenGateTemplate
+// 0x0068 (0x00E0 - 0x0078)
+class UBTT_TokenGateTemplate final : public UBTTaskNode
+{
+public:
+	int32                                         TokenLimit;                                        // 0x0078(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         TokenLifetime;                                     // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bTreatMissingTokenAsSuccess;                       // 0x0080(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_81[0x5F];                                      // 0x0081(0x005F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ReceiveExecuteTokenTask(class UBehaviorTreeComponent* OwnerComp);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("BTT_TokenGateTemplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_TokenGateTemplate")
+	}
+	static class UBTT_TokenGateTemplate* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTT_TokenGateTemplate>();
+	}
+};
+DUMPER7_ASSERTS_UBTT_TokenGateTemplate;
+
+// Class MarvelAI.DynamicAbilityBindFilter
+// 0x0008 (0x0038 - 0x0030)
+class UDynamicAbilityBindFilter : public UObject
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DynamicAbilityBindFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicAbilityBindFilter")
+	}
+	static class UDynamicAbilityBindFilter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDynamicAbilityBindFilter>();
+	}
+};
+DUMPER7_ASSERTS_UDynamicAbilityBindFilter;
+
+// Class MarvelAI.WayPoint
+// 0x0050 (0x0750 - 0x0700)
+class AWayPoint : public AAISceneConfigActorBase
+{
+public:
+	uint8                                         Pad_700[0x8];                                      // 0x0700(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         GoalRandomRadius;                                  // 0x0708(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinFlyHeight;                                      // 0x070C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxFlyHeight;                                      // 0x0710(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsPrepareArea;                                    // 0x0714(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_715[0x3];                                      // 0x0715(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrepareAreaComponent*                  PrepareAreaComp;                                   // 0x0718(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<EWayPointMark>                         WaypointPathTypeMarks;                             // 0x0720(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FWayPointToWeight>              NextWayPointsWithWeight;                           // 0x0730(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FRange_FloatValue                      RequiredPayloadProgress;                           // 0x0740(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          EnableControlAIRotation;                           // 0x0748(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedWait;                                          // 0x0749(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_74A[0x2];                                      // 0x074A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WaitTime;                                          // 0x074C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	bool CheckValid();
+	class AWayPoint* SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target);
+
+	bool CheckIsProgressInRange(float CurrentProgress) const;
+	float GetMaxSafeFactorInNextRoutes() const;
+	bool IsPrepareArea() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WayPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WayPoint")
+	}
+	static class AWayPoint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AWayPoint>();
+	}
+};
+DUMPER7_ASSERTS_AWayPoint;
+
+// Class MarvelAI.DashAbilityFilter
+// 0x0000 (0x0038 - 0x0038)
+class UDashAbilityFilter final : public UDynamicAbilityBindFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DashAbilityFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DashAbilityFilter")
+	}
+	static class UDashAbilityFilter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDashAbilityFilter>();
+	}
+};
+DUMPER7_ASSERTS_UDashAbilityFilter;
+
+// Class MarvelAI.AIDashIntentionSelectTarget
+// 0x0018 (0x00B8 - 0x00A0)
+class UAIDashIntentionSelectTarget final : public UAISelectTargetLogic_General
+{
+public:
+	struct FVector                                LocationOffset;                                    // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIDashIntentionSelectTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDashIntentionSelectTarget")
+	}
+	static class UAIDashIntentionSelectTarget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIDashIntentionSelectTarget>();
+	}
+};
+DUMPER7_ASSERTS_UAIDashIntentionSelectTarget;
+
+// Class MarvelAI.MarvelNavFilter_JumpNormal
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavFilter_JumpNormal final : public UMarvelNavigationQueryFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavFilter_JumpNormal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilter_JumpNormal")
+	}
+	static class UMarvelNavFilter_JumpNormal* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavFilter_JumpNormal>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavFilter_JumpNormal;
+
+// Class MarvelAI.DefendStandPoint
+// 0x00A0 (0x0850 - 0x07B0)
+class ADefendStandPoint final : public AStandPointBase
+{
+public:
+	TSet<int32>                                   HeroIDSet;                                         // 0x07A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSet<EDefendStandPointHeroType>               HeroTypeSet;                                       // 0x07F8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          bShared;                                           // 0x0848(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_849[0x7];                                      // 0x0849(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DefendStandPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefendStandPoint")
+	}
+	static class ADefendStandPoint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ADefendStandPoint>();
+	}
+};
+DUMPER7_ASSERTS_ADefendStandPoint;
+
+// Class MarvelAI.DynamicAbilityBindFilterInterface
+// 0x0000 (0x0000 - 0x0000)
+class IDynamicAbilityBindFilterInterface final
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DynamicAbilityBindFilterInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DynamicAbilityBindFilterInterface")
+	}
+	static class IDynamicAbilityBindFilterInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IDynamicAbilityBindFilterInterface>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
+};
+DUMPER7_ASSERTS_IDynamicAbilityBindFilterInterface;
+
+// Class MarvelAI.EnvQueryContext_AICliffEdgeNote
+// 0x0008 (0x0038 - 0x0030)
+class UEnvQueryContext_AICliffEdgeNote : public UEnvQueryContext
+{
+public:
+	bool                                          bUseDistanceFilter;                                // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FilterDistance;                                    // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_AICliffEdgeNote")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_AICliffEdgeNote")
+	}
+	static class UEnvQueryContext_AICliffEdgeNote* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_AICliffEdgeNote>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_AICliffEdgeNote;
+
+// Class MarvelAI.EnvQueryContext_AllAliveEnemies
+// 0x0000 (0x0030 - 0x0030)
+class UEnvQueryContext_AllAliveEnemies final : public UEnvQueryContext
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_AllAliveEnemies")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_AllAliveEnemies")
+	}
+	static class UEnvQueryContext_AllAliveEnemies* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_AllAliveEnemies>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_AllAliveEnemies;
+
+// Class MarvelAI.MarvelNavFilter_ShortDistance
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavFilter_ShortDistance final : public UMarvelNavigationQueryFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavFilter_ShortDistance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilter_ShortDistance")
+	}
+	static class UMarvelNavFilter_ShortDistance* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavFilter_ShortDistance>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavFilter_ShortDistance;
+
+// Class MarvelAI.EnvQueryContext_AllAliveTeammates
+// 0x0000 (0x0030 - 0x0030)
+class UEnvQueryContext_AllAliveTeammates final : public UEnvQueryContext
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_AllAliveTeammates")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_AllAliveTeammates")
+	}
+	static class UEnvQueryContext_AllAliveTeammates* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_AllAliveTeammates>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_AllAliveTeammates;
+
+// Class MarvelAI.EnvQueryContext_Ally
+// 0x0008 (0x0038 - 0x0030)
+class UEnvQueryContext_Ally final : public UEnvQueryContext
+{
+public:
+	bool                                          bNeedAlive;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bNeedParticularRole;                               // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EHeroRole                                     HeroType;                                          // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_Ally")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_Ally")
+	}
+	static class UEnvQueryContext_Ally* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_Ally>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_Ally;
+
+// Class MarvelAI.Steering_AvoidNavBorder
+// 0x0688 (0x06D8 - 0x0050)
+class USteering_AvoidNavBorder final : public USteeringBehavior
+{
+public:
+	float                                         NavMeshBlockCheckDistance;                         // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BlockValidDuration;                                // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseInverseVelocityToAvoid;                        // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bScaleAvoidByPastTime;                             // 0x0059(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxMoveWrongDirSampleMaxCount;                     // 0x005C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_60[0x678];                                     // 0x0060(0x0678)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Steering_AvoidNavBorder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_AvoidNavBorder")
+	}
+	static class USteering_AvoidNavBorder* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USteering_AvoidNavBorder>();
+	}
+};
+DUMPER7_ASSERTS_USteering_AvoidNavBorder;
+
+// Class MarvelAI.EnvQueryContext_BlackboardActor
+// 0x0010 (0x0040 - 0x0030)
+class UEnvQueryContext_BlackboardActor : public UEnvQueryContext
+{
+public:
+	class FName                                   BlackboardKeyName;                                 // 0x0030(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bReturnQuerierIfValueInvalid;                      // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_BlackboardActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_BlackboardActor")
+	}
+	static class UEnvQueryContext_BlackboardActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_BlackboardActor>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_BlackboardActor;
+
+// Class MarvelAI.EnvQueryContext_BuffedCharacter
+// 0x0088 (0x00B8 - 0x0030)
+class UEnvQueryContext_BuffedCharacter final : public UEnvQueryContext
+{
+public:
+	int32                                         BuffID;                                            // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHeroFilter                            HeroFilter;                                        // 0x0038(0x0080)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_BuffedCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_BuffedCharacter")
+	}
+	static class UEnvQueryContext_BuffedCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_BuffedCharacter>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_BuffedCharacter;
+
+// Class MarvelAI.EnvQueryContext_CharacterGroup
+// 0x0008 (0x0038 - 0x0030)
+class UEnvQueryContext_CharacterGroup : public UEnvQueryContext
+{
+public:
+	EAICharacterSide                              CharacterGroupSide;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EHeroRole                                     CharacterGroupRole;                                // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IgnoreBBTarget;                                    // 0x0032(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCheckBuff;                                        // 0x0033(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         BuffID;                                            // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_CharacterGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_CharacterGroup")
+	}
+	static class UEnvQueryContext_CharacterGroup* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_CharacterGroup>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_CharacterGroup;
+
+// Class MarvelAI.EnvQueryContext_PosOfCoverMaxEnemy
+// 0x0010 (0x0040 - 0x0030)
+class UEnvQueryContext_PosOfCoverMaxEnemy : public UEnvQueryContext
+{
+public:
+	bool                                          bShowDebugInfo;                                    // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DebugShowTime;                                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         Radius;                                            // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryContext_PosOfCoverMaxEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryContext_PosOfCoverMaxEnemy")
+	}
+	static class UEnvQueryContext_PosOfCoverMaxEnemy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext_PosOfCoverMaxEnemy>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryContext_PosOfCoverMaxEnemy;
+
+// Class MarvelAI.EnvQueryGenerator_ScopePoints
+// 0x00D0 (0x0168 - 0x0098)
+class UEnvQueryGenerator_ScopePoints final : public UEnvQueryGenerator_ProjectedPoints
+{
+public:
+	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x0098(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TSet<int32>                                   ScopeIDs;                                          // 0x00D8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              MaxDistanceToQuerier;                              // 0x0128(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryGenerator_ScopePoints")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_ScopePoints")
+	}
+	static class UEnvQueryGenerator_ScopePoints* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_ScopePoints>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryGenerator_ScopePoints;
+
+// Class MarvelAI.EnvQueryGenerator_StaticActors
+// 0x0058 (0x0140 - 0x00E8)
+class UEnvQueryGenerator_StaticActors final : public UEnvQueryGenerator_ActorsOfClass
+{
+public:
+	bool                                          bUseCachedData;                                    // 0x00E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x57];                                      // 0x00E9(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryGenerator_StaticActors")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_StaticActors")
+	}
+	static class UEnvQueryGenerator_StaticActors* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_StaticActors>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryGenerator_StaticActors;
+
+// Class MarvelAI.EnvQueryTest_1030Respond
+// 0x0048 (0x02C8 - 0x0280)
+class UEnvQueryTest_1030Respond final : public UEnvQueryTest
+{
+public:
+	struct FAIDataProviderBoolValue               EnableThisTest;                                    // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           DistanceTo;                                        // 0x02C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_1030Respond")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_1030Respond")
+	}
+	static class UEnvQueryTest_1030Respond* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_1030Respond>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_1030Respond;
+
+// Class MarvelAI.EnvQueryTest_DamageAbilityScope
+// 0x0000 (0x0280 - 0x0280)
+class UEnvQueryTest_DamageAbilityScope final : public UEnvQueryTest
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_DamageAbilityScope")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_DamageAbilityScope")
+	}
+	static class UEnvQueryTest_DamageAbilityScope* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_DamageAbilityScope>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_DamageAbilityScope;
+
+// Class MarvelAI.EnvQueryTest_EnemyColorProportion
+// 0x0010 (0x0290 - 0x0280)
+class UEnvQueryTest_EnemyColorProportion : public UEnvQueryTest
+{
+public:
+	struct FVector2D                              SampleExtent;                                      // 0x0280(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_EnemyColorProportion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_EnemyColorProportion")
+	}
+	static class UEnvQueryTest_EnemyColorProportion* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_EnemyColorProportion>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_EnemyColorProportion;
+
+// Class MarvelAI.EnvQueryTest_FireLine
+// 0x00C0 (0x0340 - 0x0280)
+class UEnvQueryTest_FireLine final : public UEnvQueryTest
+{
+public:
+	struct FAIDataProviderFloatValue              MaxDistanceToFireLine;                             // 0x0280(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              MaxFireLineLen;                                    // 0x02C0(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FAIDataProviderFloatValue              FireLineWidth;                                     // 0x0300(0x0040)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_FireLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_FireLine")
+	}
+	static class UEnvQueryTest_FireLine* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_FireLine>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_FireLine;
+
+// Class MarvelAI.EnvQueryTest_KeepDistance
+// 0x0010 (0x0290 - 0x0280)
+class UEnvQueryTest_KeepDistance : public UEnvQueryTest
+{
+public:
+	TSubclassOf<class UEnvQueryContext>           TargetsContext;                                    // 0x0280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Tolerance;                                         // 0x0288(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_KeepDistance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_KeepDistance")
+	}
+	static class UEnvQueryTest_KeepDistance* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_KeepDistance>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_KeepDistance;
+
+// Class MarvelAI.EnvQueryTest_ProjectilePath
+// 0x0058 (0x02D8 - 0x0280)
+class UEnvQueryTest_ProjectilePath final : public UMarvelEnvQueryTest
+{
+public:
+	TSet<struct FEnvQueryProjectileInfo>          ProjectileInfos;                                   // 0x0280(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	bool                                          bAddCharHeight;                                    // 0x02D0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_ProjectilePath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_ProjectilePath")
+	}
+	static class UEnvQueryTest_ProjectilePath* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_ProjectilePath>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_ProjectilePath;
+
+// Class MarvelAI.EnvQueryTest_ShelterHeightCover
+// 0x0000 (0x0280 - 0x0280)
+class UEnvQueryTest_ShelterHeightCover final : public UEnvQueryTest
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_ShelterHeightCover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_ShelterHeightCover")
+	}
+	static class UEnvQueryTest_ShelterHeightCover* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_ShelterHeightCover>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_ShelterHeightCover;
+
+// Class MarvelAI.EnvQueryTest_SurroundedCharacter
+// 0x0010 (0x0290 - 0x0280)
+class UEnvQueryTest_SurroundedCharacter : public UEnvQueryTest
+{
+public:
+	TArray<struct FEQSTargetConfig>               TargetGroups;                                      // 0x0280(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EnvQueryTest_SurroundedCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryTest_SurroundedCharacter")
+	}
+	static class UEnvQueryTest_SurroundedCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_SurroundedCharacter>();
+	}
+};
+DUMPER7_ASSERTS_UEnvQueryTest_SurroundedCharacter;
+
+// Class MarvelAI.MarvelAIAlarmSubsystem
+// 0x01D8 (0x0228 - 0x0050)
+class UMarvelAIAlarmSubsystem final : public UMarvelAIWorldSubsystem
+{
+public:
+	uint8                                         Pad_50[0x140];                                     // 0x0050(0x0140)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAISystem*                        CacheAISys;                                        // 0x0190(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_198[0x90];                                     // 0x0198(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnActorActivateAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
+	void OnActorEndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility);
+	void OnGameQuittingStart();
+	void OnMatchStateChange(EMatchState NewState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIAlarmSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIAlarmSubsystem")
+	}
+	static class UMarvelAIAlarmSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIAlarmSubsystem>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIAlarmSubsystem;
+
+// Class MarvelAI.MarvelAIAutoAbilityGlobalConfig
+// 0x0058 (0x0090 - 0x0038)
+class UMarvelAIAutoAbilityGlobalConfig final : public UPrimaryDataAsset
+{
+public:
+	TMap<EAbilityEffectPriority, struct FAbilityUsagePriorityConfig> UsageTypeBasePriorityConfig;    // 0x0038(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	int32                                         ComboUsageExtraPriority;                           // 0x0088(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseNewPriorityCalculation;                        // 0x008C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIAutoAbilityGlobalConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIAutoAbilityGlobalConfig")
+	}
+	static class UMarvelAIAutoAbilityGlobalConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIAutoAbilityGlobalConfig>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIAutoAbilityGlobalConfig;
+
+// Class MarvelAI.AbilityCheckInfoAsset
+// 0x0190 (0x01C8 - 0x0038)
+class UAbilityCheckInfoAsset final : public UPrimaryDataAsset
+{
+public:
+	struct FAIAbilityCheckInfo                    CheckInfo;                                         // 0x0038(0x0190)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AbilityCheckInfoAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityCheckInfoAsset")
+	}
+	static class UAbilityCheckInfoAsset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAbilityCheckInfoAsset>();
+	}
+};
+DUMPER7_ASSERTS_UAbilityCheckInfoAsset;
+
+// Class MarvelAI.MarvelAIDataProvider_BattleDist
+// 0x0008 (0x0048 - 0x0040)
+class UMarvelAIDataProvider_BattleDist final : public UMarvelAIDataProvider
+{
+public:
+	bool                                          bUseWiderDistance;                                 // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIDataProvider_BattleDist")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIDataProvider_BattleDist")
+	}
+	static class UMarvelAIDataProvider_BattleDist* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDataProvider_BattleDist>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIDataProvider_BattleDist;
+
+// Class MarvelAI.MarvelAIDataProvider_StandPointRange
+// 0x0000 (0x0040 - 0x0040)
+class UMarvelAIDataProvider_StandPointRange final : public UMarvelAIDataProvider
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIDataProvider_StandPointRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIDataProvider_StandPointRange")
+	}
+	static class UMarvelAIDataProvider_StandPointRange* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIDataProvider_StandPointRange>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIDataProvider_StandPointRange;
+
+// Class MarvelAI.AIDifficultyTableHelper
+// 0x0000 (0x0030 - 0x0030)
+class UAIDifficultyTableHelper final : public UBlueprintFunctionLibrary
+{
+public:
+	static float GetAttributeValueForHero(const struct FAIDifficultyAttributeConfig& AttributeConfig, class AMarvelBaseCharacter* MarvelHero);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AIDifficultyTableHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIDifficultyTableHelper")
+	}
+	static class UAIDifficultyTableHelper* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIDifficultyTableHelper>();
+	}
+};
+DUMPER7_ASSERTS_UAIDifficultyTableHelper;
+
+// Class MarvelAI.MarvelAIGlobalDataSubsystem
+// 0x0238 (0x0288 - 0x0050)
+class UMarvelAIGlobalDataSubsystem final : public UMarvelAIWorldSubsystem
+{
+public:
+	TMap<TSubclassOf<class AActor>, struct FLevelStaticActorCache> LevelStaticActorCache;            // 0x0050(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A0[0x1E8];                                     // 0x00A0(0x01E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UMarvelAIGlobalDataSubsystem* GetAIGlobalDataSubsystem(const class UObject* WorldContextObject);
+
+	bool CanSummonerBeSense(const int32 SummonerID);
+	bool CheckExistLevelStaticActor(TSubclassOf<class AActor> ActorClass);
+	int32 GetActorUID(const class AActor* Actor);
+	void GetLevelStaticActors(TSubclassOf<class AActor> ActorClass, TArray<class AActor*>* OutActors);
+	void GetLevelStaticActorsWithTag(TSubclassOf<class AActor> ActorClass, const class FName& Tag, TArray<class AActor*>* OutActors);
+	class APortalViewActor_Level* GetNearestPortal(const struct FVector& QueryLocation, const double LimitDistance);
+	bool GetPositionProgress(const class AMarvelAIController* QueryAI, const class AMarvelBaseCharacter* TargetChar, float* PositionProgress);
+	bool IsAIUsableHero_Static(const class UObject* WorldContextObject, int32 HeroID);
+	void OnLevelPrepareStart();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIGlobalDataSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIGlobalDataSubsystem")
+	}
+	static class UMarvelAIGlobalDataSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIGlobalDataSubsystem>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIGlobalDataSubsystem;
+
+// Class MarvelAI.MarvelAIPerceptionComponent
+// 0x00A8 (0x02A0 - 0x01F8)
+class UMarvelAIPerceptionComponent final : public UMarvelAIPerceptionComponentBase
+{
+public:
+	float                                         AgeRatioForStealthTarget;                          // 0x01F8(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1FC[0xA4];                                     // 0x01FC(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void K2_ConfigureSense(class UAISenseConfig* SenseConfig);
+	void K2_NotifyTargetToTeam(class AActor* TargetActor, float NotifyRange, float NotifyStrength);
+	void NotifyEnemyTarget(class AActor* TargetActor, float NotifyRange);
+
+	void GetPerceivedActors(TSubclassOf<class UAISense> SenseClass, TArray<class AActor*>* OutActors) const;
+	bool GetTargetTeleportTransform(const int32 TargetUID, struct FTransform* OutTeleportTransform) const;
+	bool IsCurrentlyInSight(const class AActor* TargetToCheck) const;
+	float K2_GetPriorityFactor(class AActor* Target) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAIPerceptionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAIPerceptionComponent")
+	}
+	static class UMarvelAIPerceptionComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAIPerceptionComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAIPerceptionComponent;
+
+// Class MarvelAI.MarvelAISense_Damage
+// 0x0000 (0x0098 - 0x0098)
+class UMarvelAISense_Damage final : public UAISense_Damage
+{
+public:
+	static void MarvelReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAISense_Damage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISense_Damage")
+	}
+	static class UMarvelAISense_Damage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAISense_Damage>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAISense_Damage;
+
+// Class MarvelAI.MarvelAISense_Sight
+// 0x0058 (0x0210 - 0x01B8)
+class UMarvelAISense_Sight final : public UAISense_Sight
+{
+public:
+	uint8                                         Pad_1B8[0x58];                                     // 0x01B8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAISense_Sight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISense_Sight")
+	}
+	static class UMarvelAISense_Sight* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAISense_Sight>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAISense_Sight;
+
+// Class MarvelAI.MarvelAISettings
+// 0x02E0 (0x0328 - 0x0048)
+class UMarvelAISettings final : public UDeveloperSettings
+{
+public:
+	struct FSoftClassPath                         AITeamManagerClass;                                // 0x0048(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         WayPointManagerClass;                              // 0x0070(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         StandPointManagerClass;                            // 0x0098(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         BattleAreaManagerClass;                            // 0x00C0(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         StandPointRecorderClass;                           // 0x00E8(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        DifficultyConfig;                                  // 0x0110(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AutoAbilityConfig;                                 // 0x0138(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        QaAIGlobalConfig;                                  // 0x0160(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        GameModeDefaultConfig;                             // 0x0188(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        HeroCommonConfig;                                  // 0x01B0(0x0028)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FSoftObjectPath>   GlobalConfig;                                      // 0x01D8(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FSoftObjectPath>   NonShippingLoadAssets;                             // 0x0228(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSet<struct FSoftObjectPath>                  PreLoadSubBehaviorTrees;                           // 0x0278(0x0050)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSoftObjectPath>                ExtraPreLoadAIAssets;                              // 0x02C8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FString                                 DefaultAILabServerURLSetting;                      // 0x02D8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 X20_Inner_URL;                                     // 0x02E8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 X20_URL;                                           // 0x02F8(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 X20Na_Inner_URL;                                   // 0x0308(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 X20Na_URL;                                         // 0x0318(0x0010)(Edit, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAISettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAISettings")
+	}
+	static class UMarvelAISettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelAISettings>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelAISettings;
+
+// Class MarvelAI.MarvelSummonerAIStimuliSourceComponent
+// 0x0000 (0x0120 - 0x0120)
+class UMarvelSummonerAIStimuliSourceComponent final : public UAIPerceptionStimuliSourceComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelSummonerAIStimuliSourceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelSummonerAIStimuliSourceComponent")
+	}
+	static class UMarvelSummonerAIStimuliSourceComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelSummonerAIStimuliSourceComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelSummonerAIStimuliSourceComponent;
+
+// Class MarvelAI.MarvelAITeamManager
+// 0x0260 (0x0960 - 0x0700)
+class AMarvelAITeamManager : public AMarvelActorBase
+{
+public:
+	TMap<class AActor*, struct FDateTime>         LowHpMark;                                         // 0x06F8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> AutoChangeHeroDelegate;    // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<int32, struct FMarvelAITeamInfo>         TeamInfos;                                         // 0x0758(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bHasInitTeamInfo;                                  // 0x07A8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsMatchStart;                                     // 0x07A9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowRepeatHero;                                  // 0x07AA(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNeedAutoChangeHero;                               // 0x07AB(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7AC[0x4];                                      // 0x07AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAISystem*                        CacheAISystem;                                     // 0x07B0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAIGameModeDefaultConfigAsset*    CacheAIGameModeConfig;                             // 0x07B8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EHeroRole, int32>                        RoleLimits;                                        // 0x07C0(0x0050)(Transient, NativeAccessSpecifierPublic)
+	uint8                                         Pad_810[0xA0];                                     // 0x0810(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<int32>                                   BanHeroes;                                         // 0x08B0(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TSet<int32>                                   PickHeroes;                                        // 0x0900(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_950[0x10];                                     // 0x0950(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CheckAITeamLineup(int32 TeamID);
+	void CheckCanBuildBondInPreSelect(const int32 OldPlayerHroID, const int32 NewPlayerHeroID, struct FMarvelAITeamInfo* TeamInfo);
+	bool CheckLowHealthMarkValid(class AMarvelAIController* AIController, class AActor* Target);
+	bool CheckLowHpMarkValid(class AActor* Target, float MarkLife);
+	int32 GetAndUpdatePreviewHeroIDForAI(class AMarvelAIController* AIController, bool ImmediatelyUpdate);
+	void InitHeroBondInfo();
+	void InitRoleLimits();
+	void InitTeamInfo();
+	bool IsAutoChangeHeroAI(const class AMarvelPlayerState* PlayerState);
+	bool LevelCheckHeroSelectable(class AMarvelPlayerState* PlayerState, int32 HeroID);
+	void NotifyAIPreSelect();
+	void OnBanPickEnd();
+	void OnPlayerChangeHero(class AMarvelPlayerState* PlayerState, int32 HeroId);
+	void TryAddLowHealthMark(class AMarvelAIController* AIController, class AActor* Target);
+	void UpdateTeamInfo(const int32 UID, const int32 TeamID, const bool IsAutoChangeHeroAI, const int32 NewHeroID);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelAITeamManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAITeamManager")
+	}
+	static class AMarvelAITeamManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelAITeamManager>();
+	}
+};
+DUMPER7_ASSERTS_AMarvelAITeamManager;
+
+// Class MarvelAI.MarvelBehaviorTreeComponent
+// 0x0050 (0x0348 - 0x02F8)
+class UMarvelBehaviorTreeComponent final : public UBehaviorTreeComponent
+{
+public:
+	TMap<struct FGameplayTag, class UBehaviorTree*> HeroSubBTMap;                                    // 0x02F8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	class UBehaviorTree* GetBTAssetByTag(const struct FGameplayTag& GameplayTag);
+	bool IsBTRunning(class UBehaviorTree* BehaviorTreeAsset);
+	void K2_PauseLogic(const class FString& Reason);
+	void K2_ResumeLogic(const class FString& Reason);
+	void K2_ScheduleExecutionUpdate();
+	void K2_StartLogic();
+	void K2_StopLogic(const class FString& Reason);
+	void UpdateSubTreeMap(const TMap<struct FGameplayTag, class UBehaviorTree*>& SubTreeMap);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelBehaviorTreeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelBehaviorTreeComponent")
+	}
+	static class UMarvelBehaviorTreeComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelBehaviorTreeComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelBehaviorTreeComponent;
+
+// Class MarvelAI.MarvelBTFunctionLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UMarvelBTFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void AddClassFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, TSubclassOf<class UObject> AllowedClass);
+	static void AddEnumFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, class UEnum* AllowedEnum);
+	static void AddObjectFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, TSubclassOf<class UObject> AllowedClass);
+	static void AddSimpleFilterForBBKeySelector(struct FBlackboardKeySelector& KeySelector, class UObject* Owner, class FName PropertyName, const TArray<TSubclassOf<class UBlackboardKeyType>>& FilterTypes);
+	static class AActor* MarvelGetBlackboardValueAsActor(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static bool MarvelGetBlackboardValueAsBool(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static uint8 MarvelGetBlackboardValueAsEnum(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static float MarvelGetBlackboardValueAsFloat(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static int32 MarvelGetBlackboardValueAsInt(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static class FName MarvelGetBlackboardValueAsName(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static class UObject* MarvelGetBlackboardValueAsObject(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static struct FRotator MarvelGetBlackboardValueAsRotator(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static class FString MarvelGetBlackboardValueAsString(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static struct FVector MarvelGetBlackboardValueAsVector(const class AAIController* Controller, const struct FBlackboardKeySelector& Key);
+	static void MarvelSetBlackboardValueAsBool(class AAIController* Controller, const struct FBlackboardKeySelector& Key, bool Value);
+	static void MarvelSetBlackboardValueAsEnum(class AAIController* Controller, const struct FBlackboardKeySelector& Key, uint8 Value);
+	static void MarvelSetBlackboardValueAsFloat(class AAIController* Controller, const struct FBlackboardKeySelector& Key, float Value);
+	static void MarvelSetBlackboardValueAsInt(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const int32 Value);
+	static void MarvelSetBlackboardValueAsName(class AAIController* Controller, const struct FBlackboardKeySelector& Key, class FName Value);
+	static void MarvelSetBlackboardValueAsObject(class AAIController* Controller, const struct FBlackboardKeySelector& Key, class UObject* Value);
+	static void MarvelSetBlackboardValueAsRotator(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const struct FRotator& Value);
+	static void MarvelSetBlackboardValueAsString(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const class FString& Value);
+	static void MarvelSetBlackboardValueAsVector(class AAIController* Controller, const struct FBlackboardKeySelector& Key, const struct FVector& Value);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelBTFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelBTFunctionLibrary")
+	}
+	static class UMarvelBTFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelBTFunctionLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelBTFunctionLibrary;
+
+// Class MarvelAI.MarvelNavArea_HighJump
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_HighJump final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_HighJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_HighJump")
+	}
+	static class UMarvelNavArea_HighJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_HighJump>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_HighJump;
+
+// Class MarvelAI.MarvelNavArea_GoDownLink
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_GoDownLink final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_GoDownLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_GoDownLink")
+	}
+	static class UMarvelNavArea_GoDownLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_GoDownLink>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_GoDownLink;
+
+// Class MarvelAI.MarvelNavArea_Walk
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_Walk final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_Walk")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_Walk")
+	}
+	static class UMarvelNavArea_Walk* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_Walk>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_Walk;
+
+// Class MarvelAI.MarvelNavArea_CampLink
+// 0x0008 (0x0060 - 0x0058)
+class UMarvelNavArea_CampLink final : public UMarvelNavArea
+{
+public:
+	EBattleSide                                   PassSide;                                          // 0x0058(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_CampLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_CampLink")
+	}
+	static class UMarvelNavArea_CampLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_CampLink>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_CampLink;
+
+// Class MarvelAI.MarvelNavArea_Elevator
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavArea_Elevator final : public UMarvelNavArea
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavArea_Elevator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavArea_Elevator")
+	}
+	static class UMarvelNavArea_Elevator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavArea_Elevator>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavArea_Elevator;
+
+// Class MarvelAI.MarvelNavAuxiliaryData
+// 0x0050 (0x0730 - 0x06E0)
+class AMarvelNavAuxiliaryData final : public AActor
+{
+public:
+	TMap<struct FNavLinkId, TSoftObjectPtr<class AActor>> LevelPortals;                              // 0x06D8(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavAuxiliaryData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavAuxiliaryData")
+	}
+	static class AMarvelNavAuxiliaryData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelNavAuxiliaryData>();
+	}
+};
+DUMPER7_ASSERTS_AMarvelNavAuxiliaryData;
+
+// Class MarvelAI.MarvelNavFilter_JumpHigh
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavFilter_JumpHigh final : public UMarvelNavigationQueryFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavFilter_JumpHigh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilter_JumpHigh")
+	}
+	static class UMarvelNavFilter_JumpHigh* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavFilter_JumpHigh>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavFilter_JumpHigh;
+
+// Class MarvelAI.MarvelNavFilter_NoLinkPass
+// 0x0000 (0x0058 - 0x0058)
+class UMarvelNavFilter_NoLinkPass final : public UMarvelNavigationQueryFilter
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavFilter_NoLinkPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavFilter_NoLinkPass")
+	}
+	static class UMarvelNavFilter_NoLinkPass* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavFilter_NoLinkPass>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavFilter_NoLinkPass;
+
+// Class MarvelAI.MarvelNavigationSystem
+// 0x00A8 (0x1668 - 0x15C0)
+class UMarvelNavigationSystem final : public UNavigationSystemV1
+{
+public:
+	class AMarvelNavAuxiliaryData*                NavAuxiliaryData;                                  // 0x15C0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15C8[0xA0];                                    // 0x15C8(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnGameMapLoadFinished();
+	void OnLevelPortalActivated(class AMarvelLevelPortalBase* Portal, bool bActivated);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavigationSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavigationSystem")
+	}
+	static class UMarvelNavigationSystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMarvelNavigationSystem>();
+	}
+};
+DUMPER7_ASSERTS_UMarvelNavigationSystem;
+
+// Class MarvelAI.MarvelNavLinkProxy
+// 0x0000 (0x0730 - 0x0730)
+class AMarvelNavLinkProxy : public ANavLinkProxy
+{
+public:
+	uint8                                         bShouldCheckBlockWhenUpdateNavData : 1;            // 0x0728(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bShouldCheckBothSide : 1;                          // 0x0728(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_729[0x7];                                      // 0x0729(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void DrawNavigationBound() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavLinkProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavLinkProxy")
+	}
+	static class AMarvelNavLinkProxy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelNavLinkProxy>();
+	}
+};
+DUMPER7_ASSERTS_AMarvelNavLinkProxy;
+
+// Class MarvelAI.MarvelNavModifierVolume
+// 0x0000 (0x0730 - 0x0730)
+class AMarvelNavModifierVolume final : public ANavModifierVolume
+{
+public:
+	bool                                          bOverrideTileConfig;                               // 0x0728(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_729[0x1];                                      // 0x0729(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTileCustomGeneralConfig               TileCustomGeneralConfig;                           // 0x072A(0x0006)(Edit, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelNavModifierVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNavModifierVolume")
+	}
+	static class AMarvelNavModifierVolume* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelNavModifierVolume>();
+	}
+};
+DUMPER7_ASSERTS_AMarvelNavModifierVolume;
+
+// Class MarvelAI.MarvelObstacleNavLinkProxy
+// 0x0010 (0x0740 - 0x0730)
+class AMarvelObstacleNavLinkProxy final : public AMarvelNavLinkProxy
+{
+public:
+	class UBoxComponent*                          BlockCheckBoxComp;                                 // 0x0730(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_738[0x8];                                      // 0x0738(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void TestBlockTrace();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelObstacleNavLinkProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelObstacleNavLinkProxy")
+	}
+	static class AMarvelObstacleNavLinkProxy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelObstacleNavLinkProxy>();
+	}
+};
+DUMPER7_ASSERTS_AMarvelObstacleNavLinkProxy;
 
 // Class MarvelAI.MarvelWayPointManager
 // 0x00A0 (0x07A0 - 0x0700)
@@ -9060,34 +9117,106 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelWayPointManager">();
+		STATIC_CLASS_IMPL("MarvelWayPointManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelWayPointManager")
 	}
 	static class AMarvelWayPointManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelWayPointManager>();
 	}
 };
-static_assert(alignof(AMarvelWayPointManager) == 0x000010, "Wrong alignment on AMarvelWayPointManager");
-static_assert(sizeof(AMarvelWayPointManager) == 0x0007A0, "Wrong size on AMarvelWayPointManager");
-static_assert(offsetof(AMarvelWayPointManager, PathSelectConfig) == 0x0006F8, "Member 'AMarvelWayPointManager::PathSelectConfig' has a wrong offset!");
-static_assert(offsetof(AMarvelWayPointManager, StartWayPointMap) == 0x000748, "Member 'AMarvelWayPointManager::StartWayPointMap' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelWayPointManager;
 
-// Class MarvelAI.NavEffectBoxComponent
-// 0x0000 (0x08A0 - 0x08A0)
-class UNavEffectBoxComponent final : public UBoxComponent
+// Class MarvelAI.NavLinkAutoGenerator
+// 0x01F0 (0x08F0 - 0x0700)
+class ANavLinkAutoGenerator final : public AAISceneConfigActorBase
 {
+public:
+	bool                                          bShouldModifyNavLinks;                             // 0x0700(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldModifyStrategyPoints;                       // 0x0701(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_702[0x6];                                      // 0x0702(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ANavLinkProxy*>                  GeneratedNavLinks;                                 // 0x0708(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_718[0x8];                                      // 0x0718(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FTileRef, struct FTileData>       TileRefToData;                                     // 0x0720(0x0050)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_770[0x10];                                     // 0x0770(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAISystem*                        AISysCache;                                        // 0x0780(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x4];                                      // 0x0788(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTileDebugDrawConfig                   DebugConfig;                                       // 0x078C(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bPreviewLinkWithoutCreate;                         // 0x0794(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRefreshNavLinkIdAfterCreate;                      // 0x0795(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMarkWallAttachedAfterGenerate;                    // 0x0796(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_797[0x1];                                      // 0x0797(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FWallAttachCheckConfig                 WallAttachedCheckConfig;                           // 0x0798(0x0020)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	TSubclassOf<class ANavLinkProxy>              NavLinkProxyClass;                                 // 0x07B8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FNavLinkGenerateConfig                 GenerateConfig;                                    // 0x07C0(0x0038)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7F8[0x38];                                     // 0x07F8(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableRuntimeGeneration;                          // 0x0830(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_831[0x3];                                      // 0x0831(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RuntimeGenerationDelay;                            // 0x0834(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableLinkPool;                                   // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_839[0x3];                                      // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LinkPoolInitCapacity;                              // 0x083C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_840[0x78];                                     // 0x0840(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
+	class ANavLinkProxy*                          ToCheckLink;                                       // 0x08B8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class AStrategyPointActor*>            GeneratedStrategyPoints;                           // 0x08C0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	struct FStrategyPointGenerateConfig           StrategyPointGenerateConfig;                       // 0x08D0(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	TSubclassOf<class AStrategyPointActor>        StrategyPointClass;                                // 0x08E0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDrawHeightDetect;                                 // 0x08E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_8E9[0x7];                                      // 0x08E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CleanUp();
+	void DebugDrawEdges();
+	void DebugDrawLevelKnockUp();
+	void DebugDrawLinks();
+	void DoGenerate();
+	void ToggleGlobalDebugDraw();
+
+	void DebugCheckCollisionForLink() const;
+	void DebugDrawStrategyPoints() const;
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavEffectBoxComponent">();
+		STATIC_CLASS_IMPL("NavLinkAutoGenerator")
 	}
-	static class UNavEffectBoxComponent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UNavEffectBoxComponent>();
+		STATIC_NAME_IMPL(L"NavLinkAutoGenerator")
+	}
+	static class ANavLinkAutoGenerator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ANavLinkAutoGenerator>();
 	}
 };
-static_assert(alignof(UNavEffectBoxComponent) == 0x000010, "Wrong alignment on UNavEffectBoxComponent");
-static_assert(sizeof(UNavEffectBoxComponent) == 0x0008A0, "Wrong size on UNavEffectBoxComponent");
+DUMPER7_ASSERTS_ANavLinkAutoGenerator;
+
+// Class MarvelAI.NavLinkMoveMethod_DoubleJump
+// 0x0008 (0x0050 - 0x0048)
+class UNavLinkMoveMethod_DoubleJump final : public UNavLinkMoveMethod
+{
+public:
+	int32                                         AbilityID;                                         // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeDelayForDoubleJump;                            // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_DoubleJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_DoubleJump")
+	}
+	static class UNavLinkMoveMethod_DoubleJump* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_DoubleJump>();
+	}
+};
+DUMPER7_ASSERTS_UNavLinkMoveMethod_DoubleJump;
 
 // Class MarvelAI.NavLinkMoveMethod_BigJump
 // 0x0010 (0x0058 - 0x0048)
@@ -9102,54 +9231,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkMoveMethod_BigJump">();
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_BigJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_BigJump")
 	}
 	static class UNavLinkMoveMethod_BigJump* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkMoveMethod_BigJump>();
 	}
 };
-static_assert(alignof(UNavLinkMoveMethod_BigJump) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_BigJump");
-static_assert(sizeof(UNavLinkMoveMethod_BigJump) == 0x000058, "Wrong size on UNavLinkMoveMethod_BigJump");
-static_assert(offsetof(UNavLinkMoveMethod_BigJump, InputRate) == 0x00004C, "Member 'UNavLinkMoveMethod_BigJump::InputRate' has a wrong offset!");
-static_assert(offsetof(UNavLinkMoveMethod_BigJump, FinInputRate) == 0x000050, "Member 'UNavLinkMoveMethod_BigJump::FinInputRate' has a wrong offset!");
+DUMPER7_ASSERTS_UNavLinkMoveMethod_BigJump;
 
-// Class MarvelAI.NavLinkMoveMethod_DirectlyMove
+// Class MarvelAI.NavLinkMoveMethod_Elevator
 // 0x0000 (0x0048 - 0x0048)
-class UNavLinkMoveMethod_DirectlyMove final : public UNavLinkMoveMethod
+class UNavLinkMoveMethod_Elevator final : public UNavLinkMoveMethod
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkMoveMethod_DirectlyMove">();
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_Elevator")
 	}
-	static class UNavLinkMoveMethod_DirectlyMove* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_DirectlyMove>();
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_Elevator")
+	}
+	static class UNavLinkMoveMethod_Elevator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_Elevator>();
 	}
 };
-static_assert(alignof(UNavLinkMoveMethod_DirectlyMove) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_DirectlyMove");
-static_assert(sizeof(UNavLinkMoveMethod_DirectlyMove) == 0x000048, "Wrong size on UNavLinkMoveMethod_DirectlyMove");
+DUMPER7_ASSERTS_UNavLinkMoveMethod_Elevator;
 
-// Class MarvelAI.NavLinkMoveMethod_ForceFly
-// 0x0008 (0x0050 - 0x0048)
-class UNavLinkMoveMethod_ForceFly final : public UNavLinkMoveMethod
+// Class MarvelAI.NavLinkMoveMethod_JeffWallClimb
+// 0x0010 (0x0058 - 0x0048)
+class UNavLinkMoveMethod_JeffWallClimb final : public UNavLinkMoveMethod
 {
 public:
-	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkMoveMethod_ForceFly">();
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_JeffWallClimb")
 	}
-	static class UNavLinkMoveMethod_ForceFly* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UNavLinkMoveMethod_ForceFly>();
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_JeffWallClimb")
+	}
+	static class UNavLinkMoveMethod_JeffWallClimb* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNavLinkMoveMethod_JeffWallClimb>();
 	}
 };
-static_assert(alignof(UNavLinkMoveMethod_ForceFly) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_ForceFly");
-static_assert(sizeof(UNavLinkMoveMethod_ForceFly) == 0x000050, "Wrong size on UNavLinkMoveMethod_ForceFly");
+DUMPER7_ASSERTS_UNavLinkMoveMethod_JeffWallClimb;
 
 // Class MarvelAI.NavLinkMoveMethod_TeleportJump
 // 0x0000 (0x0048 - 0x0048)
@@ -9158,15 +9294,18 @@ class UNavLinkMoveMethod_TeleportJump final : public UNavLinkMoveMethod
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLinkMoveMethod_TeleportJump">();
+		STATIC_CLASS_IMPL("NavLinkMoveMethod_TeleportJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLinkMoveMethod_TeleportJump")
 	}
 	static class UNavLinkMoveMethod_TeleportJump* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLinkMoveMethod_TeleportJump>();
 	}
 };
-static_assert(alignof(UNavLinkMoveMethod_TeleportJump) == 0x000008, "Wrong alignment on UNavLinkMoveMethod_TeleportJump");
-static_assert(sizeof(UNavLinkMoveMethod_TeleportJump) == 0x000048, "Wrong size on UNavLinkMoveMethod_TeleportJump");
+DUMPER7_ASSERTS_UNavLinkMoveMethod_TeleportJump;
 
 // Class MarvelAI.PrepareAreaComponent
 // 0x0030 (0x08D0 - 0x08A0)
@@ -9187,19 +9326,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PrepareAreaComponent">();
+		STATIC_CLASS_IMPL("PrepareAreaComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PrepareAreaComponent")
 	}
 	static class UPrepareAreaComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrepareAreaComponent>();
 	}
 };
-static_assert(alignof(UPrepareAreaComponent) == 0x000010, "Wrong alignment on UPrepareAreaComponent");
-static_assert(sizeof(UPrepareAreaComponent) == 0x0008D0, "Wrong size on UPrepareAreaComponent");
-static_assert(offsetof(UPrepareAreaComponent, MyBattleSide) == 0x000898, "Member 'UPrepareAreaComponent::MyBattleSide' has a wrong offset!");
-static_assert(offsetof(UPrepareAreaComponent, UpdateIsValidInterval) == 0x00089C, "Member 'UPrepareAreaComponent::UpdateIsValidInterval' has a wrong offset!");
-static_assert(offsetof(UPrepareAreaComponent, MarkToInvalidDuration) == 0x0008A0, "Member 'UPrepareAreaComponent::MarkToInvalidDuration' has a wrong offset!");
-static_assert(offsetof(UPrepareAreaComponent, bIsValidArea) == 0x0008A4, "Member 'UPrepareAreaComponent::bIsValidArea' has a wrong offset!");
+DUMPER7_ASSERTS_UPrepareAreaComponent;
 
 // Class MarvelAI.AIScoreModuleRule
 // 0x0030 (0x0060 - 0x0030)
@@ -9213,18 +9351,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIScoreModuleRule">();
+		STATIC_CLASS_IMPL("AIScoreModuleRule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModuleRule")
 	}
 	static class UAIScoreModuleRule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModuleRule>();
 	}
 };
-static_assert(alignof(UAIScoreModuleRule) == 0x000008, "Wrong alignment on UAIScoreModuleRule");
-static_assert(sizeof(UAIScoreModuleRule) == 0x000060, "Wrong size on UAIScoreModuleRule");
-static_assert(offsetof(UAIScoreModuleRule, ScoreModuleList_BasePlusArea) == 0x000030, "Member 'UAIScoreModuleRule::ScoreModuleList_BasePlusArea' has a wrong offset!");
-static_assert(offsetof(UAIScoreModuleRule, ScoreModuleList_MultipleArea) == 0x000040, "Member 'UAIScoreModuleRule::ScoreModuleList_MultipleArea' has a wrong offset!");
-static_assert(offsetof(UAIScoreModuleRule, ScoreModuleList_ExtraPlusArea) == 0x000050, "Member 'UAIScoreModuleRule::ScoreModuleList_ExtraPlusArea' has a wrong offset!");
+DUMPER7_ASSERTS_UAIScoreModuleRule;
 
 // Class MarvelAI.ShelterPathTestActor
 // 0x0030 (0x0710 - 0x06E0)
@@ -9245,19 +9383,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ShelterPathTestActor">();
+		STATIC_CLASS_IMPL("ShelterPathTestActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShelterPathTestActor")
 	}
 	static class AShelterPathTestActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AShelterPathTestActor>();
 	}
 };
-static_assert(alignof(AShelterPathTestActor) == 0x000010, "Wrong alignment on AShelterPathTestActor");
-static_assert(sizeof(AShelterPathTestActor) == 0x000710, "Wrong size on AShelterPathTestActor");
-static_assert(offsetof(AShelterPathTestActor, PathFinderClass) == 0x0006D8, "Member 'AShelterPathTestActor::PathFinderClass' has a wrong offset!");
-static_assert(offsetof(AShelterPathTestActor, TargetLocation) == 0x0006E0, "Member 'AShelterPathTestActor::TargetLocation' has a wrong offset!");
-static_assert(offsetof(AShelterPathTestActor, EnemiesLocation) == 0x0006F8, "Member 'AShelterPathTestActor::EnemiesLocation' has a wrong offset!");
-static_assert(offsetof(AShelterPathTestActor, TempPathFinder) == 0x000708, "Member 'AShelterPathTestActor::TempPathFinder' has a wrong offset!");
+DUMPER7_ASSERTS_AShelterPathTestActor;
 
 // Class MarvelAI.StandPointRecorder
 // 0x0050 (0x0080 - 0x0030)
@@ -9277,16 +9414,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StandPointRecorder">();
+		STATIC_CLASS_IMPL("StandPointRecorder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StandPointRecorder")
 	}
 	static class UStandPointRecorder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStandPointRecorder>();
 	}
 };
-static_assert(alignof(UStandPointRecorder) == 0x000008, "Wrong alignment on UStandPointRecorder");
-static_assert(sizeof(UStandPointRecorder) == 0x000080, "Wrong size on UStandPointRecorder");
-static_assert(offsetof(UStandPointRecorder, StandPointMap) == 0x000030, "Member 'UStandPointRecorder::StandPointMap' has a wrong offset!");
+DUMPER7_ASSERTS_UStandPointRecorder;
 
 // Class MarvelAI.StartWayPoint
 // 0x0070 (0x07C0 - 0x0750)
@@ -9309,17 +9448,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StartWayPoint">();
+		STATIC_CLASS_IMPL("StartWayPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StartWayPoint")
 	}
 	static class AStartWayPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AStartWayPoint>();
 	}
 };
-static_assert(alignof(AStartWayPoint) == 0x000010, "Wrong alignment on AStartWayPoint");
-static_assert(sizeof(AStartWayPoint) == 0x0007C0, "Wrong size on AStartWayPoint");
-static_assert(offsetof(AStartWayPoint, CurrentWayPointPath) == 0x000770, "Member 'AStartWayPoint::CurrentWayPointPath' has a wrong offset!");
-static_assert(offsetof(AStartWayPoint, PathValidDurationAfterFetch) == 0x0007B8, "Member 'AStartWayPoint::PathValidDurationAfterFetch' has a wrong offset!");
+DUMPER7_ASSERTS_AStartWayPoint;
 
 // Class MarvelAI.Steerable
 // 0x0000 (0x0000 - 0x0000)
@@ -9328,7 +9468,11 @@ class ISteerable final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Steerable">();
+		STATIC_CLASS_IMPL("Steerable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steerable")
 	}
 	static class ISteerable* GetDefaultObj()
 	{
@@ -9344,8 +9488,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ISteerable) == 0x000001, "Wrong alignment on ISteerable");
-static_assert(sizeof(ISteerable) == 0x000001, "Wrong size on ISteerable");
+DUMPER7_ASSERTS_ISteerable;
 
 // Class MarvelAI.Steering_AvoidDamage
 // 0x0090 (0x00E0 - 0x0050)
@@ -9364,21 +9507,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Steering_AvoidDamage">();
+		STATIC_CLASS_IMPL("Steering_AvoidDamage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_AvoidDamage")
 	}
 	static class USteering_AvoidDamage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteering_AvoidDamage>();
 	}
 };
-static_assert(alignof(USteering_AvoidDamage) == 0x000008, "Wrong alignment on USteering_AvoidDamage");
-static_assert(sizeof(USteering_AvoidDamage) == 0x0000E0, "Wrong size on USteering_AvoidDamage");
-static_assert(offsetof(USteering_AvoidDamage, ConsiderRangeForDamageArea) == 0x000050, "Member 'USteering_AvoidDamage::ConsiderRangeForDamageArea' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidDamage, AllowDistanceForNoUpdate) == 0x000054, "Member 'USteering_AvoidDamage::AllowDistanceForNoUpdate' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidDamage, AdditionalRadiusToStartAvoid) == 0x000058, "Member 'USteering_AvoidDamage::AdditionalRadiusToStartAvoid' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidDamage, AdditionalForceToLeaveWhenNotIn) == 0x00005C, "Member 'USteering_AvoidDamage::AdditionalForceToLeaveWhenNotIn' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidDamage, bOnlyConsiderBestOne) == 0x000060, "Member 'USteering_AvoidDamage::bOnlyConsiderBestOne' has a wrong offset!");
-static_assert(offsetof(USteering_AvoidDamage, CachedAbilityAgentManager) == 0x000068, "Member 'USteering_AvoidDamage::CachedAbilityAgentManager' has a wrong offset!");
+DUMPER7_ASSERTS_USteering_AvoidDamage;
 
 // Class MarvelAI.Steering_AvoidFromImpact
 // 0x0030 (0x0080 - 0x0050)
@@ -9391,16 +9531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Steering_AvoidFromImpact">();
+		STATIC_CLASS_IMPL("Steering_AvoidFromImpact")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_AvoidFromImpact")
 	}
 	static class USteering_AvoidFromImpact* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteering_AvoidFromImpact>();
 	}
 };
-static_assert(alignof(USteering_AvoidFromImpact) == 0x000008, "Wrong alignment on USteering_AvoidFromImpact");
-static_assert(sizeof(USteering_AvoidFromImpact) == 0x000080, "Wrong size on USteering_AvoidFromImpact");
-static_assert(offsetof(USteering_AvoidFromImpact, Duration) == 0x000050, "Member 'USteering_AvoidFromImpact::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_USteering_AvoidFromImpact;
 
 // Class MarvelAI.Steering_Blend
 // 0x0028 (0x0078 - 0x0050)
@@ -9415,18 +9557,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Steering_Blend">();
+		STATIC_CLASS_IMPL("Steering_Blend")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_Blend")
 	}
 	static class USteering_Blend* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteering_Blend>();
 	}
 };
-static_assert(alignof(USteering_Blend) == 0x000008, "Wrong alignment on USteering_Blend");
-static_assert(sizeof(USteering_Blend) == 0x000078, "Wrong size on USteering_Blend");
-static_assert(offsetof(USteering_Blend, SteeringWithWeights) == 0x000050, "Member 'USteering_Blend::SteeringWithWeights' has a wrong offset!");
-static_assert(offsetof(USteering_Blend, bUseContext) == 0x000060, "Member 'USteering_Blend::bUseContext' has a wrong offset!");
-static_assert(offsetof(USteering_Blend, ContextSampleNum) == 0x000061, "Member 'USteering_Blend::ContextSampleNum' has a wrong offset!");
+DUMPER7_ASSERTS_USteering_Blend;
 
 // Class MarvelAI.Steering_PathFollow
 // 0x0000 (0x0050 - 0x0050)
@@ -9435,23 +9577,26 @@ class USteering_PathFollow final : public USteeringBehavior
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Steering_PathFollow">();
+		STATIC_CLASS_IMPL("Steering_PathFollow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Steering_PathFollow")
 	}
 	static class USteering_PathFollow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USteering_PathFollow>();
 	}
 };
-static_assert(alignof(USteering_PathFollow) == 0x000008, "Wrong alignment on USteering_PathFollow");
-static_assert(sizeof(USteering_PathFollow) == 0x000050, "Wrong size on USteering_PathFollow");
+DUMPER7_ASSERTS_USteering_PathFollow;
 
 // Class MarvelAI.StrategyPointSubsystem
-// 0x0078 (0x00B0 - 0x0038)
+// 0x0078 (0x00B8 - 0x0040)
 class UStrategyPointSubsystem final : public UWorldSubsystem
 {
 public:
-	TArray<float>                                 AgentHeightLevels;                                 // 0x0038(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
-	uint8                                         Pad_48[0x68];                                      // 0x0048(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 AgentHeightLevels;                                 // 0x0040(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	uint8                                         Pad_50[0x68];                                      // 0x0050(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DebugDrawPoints();
@@ -9461,16 +9606,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StrategyPointSubsystem">();
+		STATIC_CLASS_IMPL("StrategyPointSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StrategyPointSubsystem")
 	}
 	static class UStrategyPointSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStrategyPointSubsystem>();
 	}
 };
-static_assert(alignof(UStrategyPointSubsystem) == 0x000008, "Wrong alignment on UStrategyPointSubsystem");
-static_assert(sizeof(UStrategyPointSubsystem) == 0x0000B0, "Wrong size on UStrategyPointSubsystem");
-static_assert(offsetof(UStrategyPointSubsystem, AgentHeightLevels) == 0x000038, "Member 'UStrategyPointSubsystem::AgentHeightLevels' has a wrong offset!");
+DUMPER7_ASSERTS_UStrategyPointSubsystem;
+
+// Class MarvelAI.WayPointRandomSelectComponent
+// 0x0038 (0x0140 - 0x0108)
+class UWayPointRandomSelectComponent final : public UActorComponent
+{
+public:
+	TArray<EWayPointMark>                         WaypointPathTypeMarks;                             // 0x0108(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FWayPointToWeight>              NextWayPointsWithWeight;                           // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         DebugDrawDuration;                                 // 0x0128(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12C[0x14];                                     // 0x012C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void DebugDraw();
+	class AActor* SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("WayPointRandomSelectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WayPointRandomSelectComponent")
+	}
+	static class UWayPointRandomSelectComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UWayPointRandomSelectComponent>();
+	}
+};
+DUMPER7_ASSERTS_UWayPointRandomSelectComponent;
 
 // Class MarvelAI.BTT_MoveWait
 // 0x0008 (0x0088 - 0x0080)
@@ -9483,16 +9660,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_MoveWait">();
+		STATIC_CLASS_IMPL("BTT_MoveWait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_MoveWait")
 	}
 	static class UBTT_MoveWait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_MoveWait>();
 	}
 };
-static_assert(alignof(UBTT_MoveWait) == 0x000008, "Wrong alignment on UBTT_MoveWait");
-static_assert(sizeof(UBTT_MoveWait) == 0x000088, "Wrong size on UBTT_MoveWait");
-static_assert(offsetof(UBTT_MoveWait, OverrideWaitTime) == 0x000080, "Member 'UBTT_MoveWait::OverrideWaitTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_MoveWait;
 
 }
 

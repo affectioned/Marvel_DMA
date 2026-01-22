@@ -21,9 +21,7 @@ struct PyRootWidget_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRootWidget_PreConstruct) == 0x000001, "Wrong alignment on PyRootWidget_PreConstruct");
-static_assert(sizeof(PyRootWidget_PreConstruct) == 0x000001, "Wrong size on PyRootWidget_PreConstruct");
-static_assert(offsetof(PyRootWidget_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyRootWidget_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyRootWidget_PreConstruct;
 
 // PythonFunction PyRootWidget.PyRootWidget.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyRootWidget_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRootWidget_ShouldEnableInput) == 0x000001, "Wrong alignment on PyRootWidget_ShouldEnableInput");
-static_assert(sizeof(PyRootWidget_ShouldEnableInput) == 0x000001, "Wrong size on PyRootWidget_ShouldEnableInput");
-static_assert(offsetof(PyRootWidget_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyRootWidget_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyRootWidget_ShouldEnableInput;
 
 // PythonFunction PyRootWidget.PyRootWidget.GetEnableRegisterInputContextBp
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyRootWidget_GetEnableRegisterInputContextBp final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRootWidget_GetEnableRegisterInputContextBp) == 0x000001, "Wrong alignment on PyRootWidget_GetEnableRegisterInputContextBp");
-static_assert(sizeof(PyRootWidget_GetEnableRegisterInputContextBp) == 0x000001, "Wrong size on PyRootWidget_GetEnableRegisterInputContextBp");
-static_assert(offsetof(PyRootWidget_GetEnableRegisterInputContextBp, ReturnValue) == 0x000000, "Member 'PyRootWidget_GetEnableRegisterInputContextBp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyRootWidget_GetEnableRegisterInputContextBp;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_105052_ShouldPlayTimeline final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105052_ShouldPlayTimeline) == 0x000001, "Wrong alignment on PyAbility_105052_ShouldPlayTimeline");
-static_assert(sizeof(PyAbility_105052_ShouldPlayTimeline) == 0x000001, "Wrong size on PyAbility_105052_ShouldPlayTimeline");
-static_assert(offsetof(PyAbility_105052_ShouldPlayTimeline, ReturnValue) == 0x000000, "Member 'PyAbility_105052_ShouldPlayTimeline::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105052_ShouldPlayTimeline;
 
 }
 

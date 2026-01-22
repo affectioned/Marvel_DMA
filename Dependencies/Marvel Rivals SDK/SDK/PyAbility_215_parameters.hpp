@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_21501_OnActiveAudio) == 0x000008, "Wrong alignment on PyCue_Ability_21501_OnActiveAudio");
-static_assert(sizeof(PyCue_Ability_21501_OnActiveAudio) == 0x0001D8, "Wrong size on PyCue_Ability_21501_OnActiveAudio");
-static_assert(offsetof(PyCue_Ability_21501_OnActiveAudio, MyTarget) == 0x000000, "Member 'PyCue_Ability_21501_OnActiveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_21501_OnActiveAudio, Parameters) == 0x000008, "Member 'PyCue_Ability_21501_OnActiveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_21501_OnActiveAudio;
 
 // PythonFunction PyAbility_215.PyAbility_215.MulticastOpenMode602
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyAbility_215_MulticastOpenMode602 final
 public:
 	bool                                          is_open;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_215_MulticastOpenMode602) == 0x000001, "Wrong alignment on PyAbility_215_MulticastOpenMode602");
-static_assert(sizeof(PyAbility_215_MulticastOpenMode602) == 0x000001, "Wrong size on PyAbility_215_MulticastOpenMode602");
-static_assert(offsetof(PyAbility_215_MulticastOpenMode602, is_open) == 0x000000, "Member 'PyAbility_215_MulticastOpenMode602::is_open' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_215_MulticastOpenMode602;
 
 // PythonFunction PyAbility_215.PyAbility_215.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -47,9 +42,7 @@ struct PyAbility_215_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_215_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_215_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_215_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_215_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_215_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_215_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_215_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_215.PyAbility_215.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyAbility_215_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_215_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_215_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_215_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_215_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_215_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_215_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_215_K2_OnEndAbility;
 
 // PythonFunction PyAbility_215.PyAbility_215.MulticastActivateAbility
 // 0x0018 (0x0018 - 0x0000)
@@ -70,10 +61,7 @@ public:
 	class FString                                 EmojiID;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         dice_value;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_215_MulticastActivateAbility) == 0x000008, "Wrong alignment on PyAbility_215_MulticastActivateAbility");
-static_assert(sizeof(PyAbility_215_MulticastActivateAbility) == 0x000018, "Wrong size on PyAbility_215_MulticastActivateAbility");
-static_assert(offsetof(PyAbility_215_MulticastActivateAbility, EmojiID) == 0x000000, "Member 'PyAbility_215_MulticastActivateAbility::EmojiID' has a wrong offset!");
-static_assert(offsetof(PyAbility_215_MulticastActivateAbility, dice_value) == 0x000010, "Member 'PyAbility_215_MulticastActivateAbility::dice_value' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_215_MulticastActivateAbility;
 
 // PythonFunction PyAbility_215.PyAbility_215.K2_ShouldAbilityRespondToEvent
 // 0x02F0 (0x02F0 - 0x0000)
@@ -84,11 +72,7 @@ public:
 	struct FGameplayEventData                     Payload;                                           // 0x0058(0x0290)(Parm)
 	bool                                          ReturnValue;                                       // 0x02E8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_215_K2_ShouldAbilityRespondToEvent) == 0x000008, "Wrong alignment on PyAbility_215_K2_ShouldAbilityRespondToEvent");
-static_assert(sizeof(PyAbility_215_K2_ShouldAbilityRespondToEvent) == 0x0002F0, "Wrong size on PyAbility_215_K2_ShouldAbilityRespondToEvent");
-static_assert(offsetof(PyAbility_215_K2_ShouldAbilityRespondToEvent, ActorInfo) == 0x000000, "Member 'PyAbility_215_K2_ShouldAbilityRespondToEvent::ActorInfo' has a wrong offset!");
-static_assert(offsetof(PyAbility_215_K2_ShouldAbilityRespondToEvent, Payload) == 0x000058, "Member 'PyAbility_215_K2_ShouldAbilityRespondToEvent::Payload' has a wrong offset!");
-static_assert(offsetof(PyAbility_215_K2_ShouldAbilityRespondToEvent, ReturnValue) == 0x0002E8, "Member 'PyAbility_215_K2_ShouldAbilityRespondToEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_215_K2_ShouldAbilityRespondToEvent;
 
 }
 

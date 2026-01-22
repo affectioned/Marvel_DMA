@@ -43,20 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKeliluna">();
+		STATIC_CLASS_IMPL("PyKeliluna")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKeliluna")
 	}
 	static class APyKeliluna* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKeliluna>();
 	}
 };
-static_assert(alignof(APyKeliluna) == 0x000010, "Wrong alignment on APyKeliluna");
-static_assert(sizeof(APyKeliluna) == 0x000710, "Wrong size on APyKeliluna");
-static_assert(offsetof(APyKeliluna, SurviveTime) == 0x0006E0, "Member 'APyKeliluna::SurviveTime' has a wrong offset!");
-static_assert(offsetof(APyKeliluna, AppearTime) == 0x0006E4, "Member 'APyKeliluna::AppearTime' has a wrong offset!");
-static_assert(offsetof(APyKeliluna, HideTime) == 0x0006E8, "Member 'APyKeliluna::HideTime' has a wrong offset!");
-static_assert(offsetof(APyKeliluna, DialogIDs) == 0x0006F0, "Member 'APyKeliluna::DialogIDs' has a wrong offset!");
-static_assert(offsetof(APyKeliluna, State) == 0x000700, "Member 'APyKeliluna::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyKeliluna;
 
 }
 

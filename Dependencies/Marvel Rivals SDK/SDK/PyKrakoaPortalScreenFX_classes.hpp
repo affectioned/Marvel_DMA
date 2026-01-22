@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyKrakoaPortalScreenFX.PyWidget_ScreenFX_KrakoaPortal_Teleportation
-// 0x0028 (0x0590 - 0x0568)
+// 0x0028 (0x0598 - 0x0570)
 class UPyWidget_ScreenFX_KrakoaPortal_Teleportation final : public UMarvelUserWidget
 {
 public:
-	class UMarvelCanvasPanel*                     Panel_Blue;                                        // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Darkblue;                                    // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Green;                                       // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Purple;                                      // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     Panel_Gold;                                        // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Blue;                                        // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Darkblue;                                    // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Green;                                       // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Purple;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     Panel_Gold;                                        // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ScreenFX_KrakoaPortal_Teleportation">();
+		STATIC_CLASS_IMPL("PyWidget_ScreenFX_KrakoaPortal_Teleportation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ScreenFX_KrakoaPortal_Teleportation")
 	}
 	static class UPyWidget_ScreenFX_KrakoaPortal_Teleportation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ScreenFX_KrakoaPortal_Teleportation>();
 	}
 };
-static_assert(alignof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation) == 0x000008, "Wrong alignment on UPyWidget_ScreenFX_KrakoaPortal_Teleportation");
-static_assert(sizeof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation) == 0x000590, "Wrong size on UPyWidget_ScreenFX_KrakoaPortal_Teleportation");
-static_assert(offsetof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation, Panel_Blue) == 0x000568, "Member 'UPyWidget_ScreenFX_KrakoaPortal_Teleportation::Panel_Blue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation, Panel_Darkblue) == 0x000570, "Member 'UPyWidget_ScreenFX_KrakoaPortal_Teleportation::Panel_Darkblue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation, Panel_Green) == 0x000578, "Member 'UPyWidget_ScreenFX_KrakoaPortal_Teleportation::Panel_Green' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation, Panel_Purple) == 0x000580, "Member 'UPyWidget_ScreenFX_KrakoaPortal_Teleportation::Panel_Purple' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ScreenFX_KrakoaPortal_Teleportation, Panel_Gold) == 0x000588, "Member 'UPyWidget_ScreenFX_KrakoaPortal_Teleportation::Panel_Gold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ScreenFX_KrakoaPortal_Teleportation;
 
 }
 

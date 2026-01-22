@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_MarqueeText.PyWidget_Common_MarqueeText
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Common_MarqueeText : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataTable*                             TextStyleSet;                                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeInterval_Marquee;                              // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Speed_Marquee;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedStartMarqueeDelay;                             // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedJustification_Center;                          // 0x05D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedHoverBtn;                                      // 0x05D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ForceMarquee;                                      // 0x05D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LoopInterval;                                      // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMarqueeAnimationType                         AnimType;                                          // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataTable*                             TextStyleSet;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeInterval_Marquee;                              // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Speed_Marquee;                                     // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedStartMarqueeDelay;                             // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedJustification_Center;                          // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedHoverBtn;                                      // 0x05DA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ForceMarquee;                                      // 0x05DB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LoopInterval;                                      // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMarqueeAnimationType                         AnimType;                                          // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,24 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_MarqueeText">();
+		STATIC_CLASS_IMPL("PyWidget_Common_MarqueeText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_MarqueeText")
 	}
 	static class UPyWidget_Common_MarqueeText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_MarqueeText>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_MarqueeText) == 0x000008, "Wrong alignment on UPyWidget_Common_MarqueeText");
-static_assert(sizeof(UPyWidget_Common_MarqueeText) == 0x0005E0, "Wrong size on UPyWidget_Common_MarqueeText");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, TextStyleSet) == 0x0005C0, "Member 'UPyWidget_Common_MarqueeText::TextStyleSet' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, TimeInterval_Marquee) == 0x0005C8, "Member 'UPyWidget_Common_MarqueeText::TimeInterval_Marquee' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, Speed_Marquee) == 0x0005CC, "Member 'UPyWidget_Common_MarqueeText::Speed_Marquee' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, NeedStartMarqueeDelay) == 0x0005D0, "Member 'UPyWidget_Common_MarqueeText::NeedStartMarqueeDelay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, NeedJustification_Center) == 0x0005D1, "Member 'UPyWidget_Common_MarqueeText::NeedJustification_Center' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, NeedHoverBtn) == 0x0005D2, "Member 'UPyWidget_Common_MarqueeText::NeedHoverBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, ForceMarquee) == 0x0005D3, "Member 'UPyWidget_Common_MarqueeText::ForceMarquee' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, LoopInterval) == 0x0005D4, "Member 'UPyWidget_Common_MarqueeText::LoopInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_MarqueeText, AnimType) == 0x0005D8, "Member 'UPyWidget_Common_MarqueeText::AnimType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_MarqueeText;
 
 }
 

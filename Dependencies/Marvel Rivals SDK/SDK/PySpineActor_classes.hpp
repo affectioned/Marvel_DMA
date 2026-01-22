@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpineActor">();
+		STATIC_CLASS_IMPL("PySpineActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpineActor")
 	}
 	static class APySpineActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpineActor>();
 	}
 };
-static_assert(alignof(APySpineActor) == 0x000010, "Wrong alignment on APySpineActor");
-static_assert(sizeof(APySpineActor) == 0x000720, "Wrong size on APySpineActor");
-static_assert(offsetof(APySpineActor, DefaultAnimationName) == 0x0006E0, "Member 'APySpineActor::DefaultAnimationName' has a wrong offset!");
-static_assert(offsetof(APySpineActor, DefaultSkinName) == 0x0006F0, "Member 'APySpineActor::DefaultSkinName' has a wrong offset!");
-static_assert(offsetof(APySpineActor, DefaultSceneRoot) == 0x000700, "Member 'APySpineActor::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APySpineActor, SpineRender) == 0x000708, "Member 'APySpineActor::SpineRender' has a wrong offset!");
-static_assert(offsetof(APySpineActor, SpineAnimation) == 0x000710, "Member 'APySpineActor::SpineAnimation' has a wrong offset!");
-static_assert(offsetof(APySpineActor, LevelOptimization) == 0x000718, "Member 'APySpineActor::LevelOptimization' has a wrong offset!");
+DUMPER7_ASSERTS_APySpineActor;
 
 }
 

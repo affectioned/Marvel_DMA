@@ -23,9 +23,7 @@ struct PyBornFightArea_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBornFightArea_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBornFightArea_ReceiveEndPlay");
-static_assert(sizeof(PyBornFightArea_ReceiveEndPlay) == 0x000001, "Wrong size on PyBornFightArea_ReceiveEndPlay");
-static_assert(offsetof(PyBornFightArea_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBornFightArea_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBornFightArea_ReceiveEndPlay;
 
 }
 

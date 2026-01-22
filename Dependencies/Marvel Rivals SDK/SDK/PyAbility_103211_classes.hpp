@@ -33,22 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10321102">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10321102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10321102")
 	}
 	static class UPyCue_Scope_Start_10321102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10321102>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10321102) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10321102");
-static_assert(sizeof(UPyCue_Scope_Start_10321102) == 0x000490, "Wrong size on UPyCue_Scope_Start_10321102");
-static_assert(offsetof(UPyCue_Scope_Start_10321102, Degree) == 0x000478, "Member 'UPyCue_Scope_Start_10321102::Degree' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10321102, CharacterDistance) == 0x00047C, "Member 'UPyCue_Scope_Start_10321102::CharacterDistance' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10321102, WallDistance) == 0x000480, "Member 'UPyCue_Scope_Start_10321102::WallDistance' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10321102, ExplodeNiagara) == 0x000488, "Member 'UPyCue_Scope_Start_10321102::ExplodeNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10321102;
 
 // PythonClass PyAbility_103211.PyCue_Projectile_Loop_10321101
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10321101 final : public AMarvelCueNotify_Projectile
 {
 public:
@@ -57,15 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10321101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10321101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10321101")
 	}
 	static class APyCue_Projectile_Loop_10321101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10321101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10321101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10321101");
-static_assert(sizeof(APyCue_Projectile_Loop_10321101) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10321101");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10321101;
 
 }
 

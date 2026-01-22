@@ -23,15 +23,18 @@ class UBattleStatisticsManager_BPC_C final : public UPyBattleStatisticsManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattleStatisticsManager_BPC_C">();
+		BP_STATIC_CLASS_IMPL("BattleStatisticsManager_BPC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattleStatisticsManager_BPC_C")
 	}
 	static class UBattleStatisticsManager_BPC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattleStatisticsManager_BPC_C>();
 	}
 };
-static_assert(alignof(UBattleStatisticsManager_BPC_C) == 0x000008, "Wrong alignment on UBattleStatisticsManager_BPC_C");
-static_assert(sizeof(UBattleStatisticsManager_BPC_C) == 0x0003E8, "Wrong size on UBattleStatisticsManager_BPC_C");
+DUMPER7_ASSERTS_UBattleStatisticsManager_BPC_C;
 
 }
 

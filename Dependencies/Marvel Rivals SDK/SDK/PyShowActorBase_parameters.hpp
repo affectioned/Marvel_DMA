@@ -26,9 +26,7 @@ struct PyShowActorBase_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyShowActorBase_ReceiveEndPlay");
-static_assert(sizeof(PyShowActorBase_ReceiveEndPlay) == 0x000001, "Wrong size on PyShowActorBase_ReceiveEndPlay");
-static_assert(offsetof(PyShowActorBase_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyShowActorBase_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ReceiveEndPlay;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +35,7 @@ struct PyShowActorBase_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ReceiveTick) == 0x000004, "Wrong alignment on PyShowActorBase_ReceiveTick");
-static_assert(sizeof(PyShowActorBase_ReceiveTick) == 0x000004, "Wrong size on PyShowActorBase_ReceiveTick");
-static_assert(offsetof(PyShowActorBase_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyShowActorBase_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ReceiveTick;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.GetHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +44,7 @@ struct PyShowActorBase_GetHeroID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_GetHeroID) == 0x000004, "Wrong alignment on PyShowActorBase_GetHeroID");
-static_assert(sizeof(PyShowActorBase_GetHeroID) == 0x000004, "Wrong size on PyShowActorBase_GetHeroID");
-static_assert(offsetof(PyShowActorBase_GetHeroID, ReturnValue) == 0x000000, "Member 'PyShowActorBase_GetHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_GetHeroID;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.GetSkinID
 // 0x0004 (0x0004 - 0x0000)
@@ -59,9 +53,7 @@ struct PyShowActorBase_GetSkinID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_GetSkinID) == 0x000004, "Wrong alignment on PyShowActorBase_GetSkinID");
-static_assert(sizeof(PyShowActorBase_GetSkinID) == 0x000004, "Wrong size on PyShowActorBase_GetSkinID");
-static_assert(offsetof(PyShowActorBase_GetSkinID, ReturnValue) == 0x000000, "Member 'PyShowActorBase_GetSkinID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_GetSkinID;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.GetSculptID
 // 0x0004 (0x0004 - 0x0000)
@@ -70,9 +62,7 @@ struct PyShowActorBase_GetSculptID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_GetSculptID) == 0x000004, "Wrong alignment on PyShowActorBase_GetSculptID");
-static_assert(sizeof(PyShowActorBase_GetSculptID) == 0x000004, "Wrong size on PyShowActorBase_GetSculptID");
-static_assert(offsetof(PyShowActorBase_GetSculptID, ReturnValue) == 0x000000, "Member 'PyShowActorBase_GetSculptID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_GetSculptID;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.CallExtensionFunction
 // 0x0010 (0x0010 - 0x0000)
@@ -81,9 +71,7 @@ struct PyShowActorBase_CallExtensionFunction final
 public:
 	class FString                                 func_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_CallExtensionFunction) == 0x000008, "Wrong alignment on PyShowActorBase_CallExtensionFunction");
-static_assert(sizeof(PyShowActorBase_CallExtensionFunction) == 0x000010, "Wrong size on PyShowActorBase_CallExtensionFunction");
-static_assert(offsetof(PyShowActorBase_CallExtensionFunction, func_name) == 0x000000, "Member 'PyShowActorBase_CallExtensionFunction::func_name' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_CallExtensionFunction;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnAnimChildAttached
 // 0x0018 (0x0018 - 0x0000)
@@ -94,11 +82,7 @@ public:
 	class USceneComponent*                        ChildComponent;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequenceBase*                      Animation;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnAnimChildAttached) == 0x000008, "Wrong alignment on PyShowActorBase_OnAnimChildAttached");
-static_assert(sizeof(PyShowActorBase_OnAnimChildAttached) == 0x000018, "Wrong size on PyShowActorBase_OnAnimChildAttached");
-static_assert(offsetof(PyShowActorBase_OnAnimChildAttached, SourceComponent) == 0x000000, "Member 'PyShowActorBase_OnAnimChildAttached::SourceComponent' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnAnimChildAttached, ChildComponent) == 0x000008, "Member 'PyShowActorBase_OnAnimChildAttached::ChildComponent' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnAnimChildAttached, Animation) == 0x000010, "Member 'PyShowActorBase_OnAnimChildAttached::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnAnimChildAttached;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.GetSoftReferenceAssets
 // 0x0010 (0x0010 - 0x0000)
@@ -107,9 +91,7 @@ struct PyShowActorBase_GetSoftReferenceAssets final
 public:
 	TArray<struct FSoftObjectPath>                ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyShowActorBase_GetSoftReferenceAssets) == 0x000008, "Wrong alignment on PyShowActorBase_GetSoftReferenceAssets");
-static_assert(sizeof(PyShowActorBase_GetSoftReferenceAssets) == 0x000010, "Wrong size on PyShowActorBase_GetSoftReferenceAssets");
-static_assert(offsetof(PyShowActorBase_GetSoftReferenceAssets, ReturnValue) == 0x000000, "Member 'PyShowActorBase_GetSoftReferenceAssets::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_GetSoftReferenceAssets;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.LoadShowAssetsFinished
 // 0x0010 (0x0010 - 0x0000)
@@ -118,9 +100,7 @@ struct PyShowActorBase_LoadShowAssetsFinished final
 public:
 	TArray<class UObject*>                        Assets;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyShowActorBase_LoadShowAssetsFinished) == 0x000008, "Wrong alignment on PyShowActorBase_LoadShowAssetsFinished");
-static_assert(sizeof(PyShowActorBase_LoadShowAssetsFinished) == 0x000010, "Wrong size on PyShowActorBase_LoadShowAssetsFinished");
-static_assert(offsetof(PyShowActorBase_LoadShowAssetsFinished, Assets) == 0x000000, "Member 'PyShowActorBase_LoadShowAssetsFinished::Assets' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_LoadShowAssetsFinished;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnPlayerStateReady
 // 0x0008 (0x0008 - 0x0000)
@@ -129,9 +109,7 @@ struct PyShowActorBase_OnPlayerStateReady final
 public:
 	class AMarvelPlayerState*                     MPS;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnPlayerStateReady) == 0x000008, "Wrong alignment on PyShowActorBase_OnPlayerStateReady");
-static_assert(sizeof(PyShowActorBase_OnPlayerStateReady) == 0x000008, "Wrong size on PyShowActorBase_OnPlayerStateReady");
-static_assert(offsetof(PyShowActorBase_OnPlayerStateReady, MPS) == 0x000000, "Member 'PyShowActorBase_OnPlayerStateReady::MPS' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnPlayerStateReady;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -140,9 +118,7 @@ struct PyShowActorBase_SetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetVisible) == 0x000001, "Wrong alignment on PyShowActorBase_SetVisible");
-static_assert(sizeof(PyShowActorBase_SetVisible) == 0x000001, "Wrong size on PyShowActorBase_SetVisible");
-static_assert(offsetof(PyShowActorBase_SetVisible, Visible) == 0x000000, "Member 'PyShowActorBase_SetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetVisible;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetShowActorStageChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -151,9 +127,7 @@ struct PyShowActorBase_SetShowActorStageChanged final
 public:
 	EShowActorStage                               ShowActorStage_0;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetShowActorStageChanged) == 0x000001, "Wrong alignment on PyShowActorBase_SetShowActorStageChanged");
-static_assert(sizeof(PyShowActorBase_SetShowActorStageChanged) == 0x000001, "Wrong size on PyShowActorBase_SetShowActorStageChanged");
-static_assert(offsetof(PyShowActorBase_SetShowActorStageChanged, ShowActorStage_0) == 0x000000, "Member 'PyShowActorBase_SetShowActorStageChanged::ShowActorStage_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetShowActorStageChanged;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetClothPhysicsEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -162,9 +136,7 @@ struct PyShowActorBase_SetClothPhysicsEnable final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetClothPhysicsEnable) == 0x000001, "Wrong alignment on PyShowActorBase_SetClothPhysicsEnable");
-static_assert(sizeof(PyShowActorBase_SetClothPhysicsEnable) == 0x000001, "Wrong size on PyShowActorBase_SetClothPhysicsEnable");
-static_assert(offsetof(PyShowActorBase_SetClothPhysicsEnable, bEnable) == 0x000000, "Member 'PyShowActorBase_SetClothPhysicsEnable::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetClothPhysicsEnable;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnMeshPhysicsEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -173,9 +145,7 @@ struct PyShowActorBase_OnMeshPhysicsEnable final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnMeshPhysicsEnable) == 0x000001, "Wrong alignment on PyShowActorBase_OnMeshPhysicsEnable");
-static_assert(sizeof(PyShowActorBase_OnMeshPhysicsEnable) == 0x000001, "Wrong size on PyShowActorBase_OnMeshPhysicsEnable");
-static_assert(offsetof(PyShowActorBase_OnMeshPhysicsEnable, bEnable) == 0x000000, "Member 'PyShowActorBase_OnMeshPhysicsEnable::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnMeshPhysicsEnable;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.AutoForwardPhysicsBlendWeight
 // 0x0020 (0x0020 - 0x0000)
@@ -186,11 +156,7 @@ public:
 	TArray<class FName>                           BoneNameList;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          bIncludeSelf;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_AutoForwardPhysicsBlendWeight) == 0x000008, "Wrong alignment on PyShowActorBase_AutoForwardPhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_AutoForwardPhysicsBlendWeight) == 0x000020, "Wrong size on PyShowActorBase_AutoForwardPhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_AutoForwardPhysicsBlendWeight, Mesh) == 0x000000, "Member 'PyShowActorBase_AutoForwardPhysicsBlendWeight::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_AutoForwardPhysicsBlendWeight, BoneNameList) == 0x000008, "Member 'PyShowActorBase_AutoForwardPhysicsBlendWeight::BoneNameList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_AutoForwardPhysicsBlendWeight, bIncludeSelf) == 0x000018, "Member 'PyShowActorBase_AutoForwardPhysicsBlendWeight::bIncludeSelf' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_AutoForwardPhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.AutoReversePhysicsBlendWeight
 // 0x0020 (0x0020 - 0x0000)
@@ -201,11 +167,7 @@ public:
 	TArray<class FName>                           BoneNameList;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          bIncludeSelf;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_AutoReversePhysicsBlendWeight) == 0x000008, "Wrong alignment on PyShowActorBase_AutoReversePhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_AutoReversePhysicsBlendWeight) == 0x000020, "Wrong size on PyShowActorBase_AutoReversePhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_AutoReversePhysicsBlendWeight, Mesh) == 0x000000, "Member 'PyShowActorBase_AutoReversePhysicsBlendWeight::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_AutoReversePhysicsBlendWeight, BoneNameList) == 0x000008, "Member 'PyShowActorBase_AutoReversePhysicsBlendWeight::BoneNameList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_AutoReversePhysicsBlendWeight, bIncludeSelf) == 0x000018, "Member 'PyShowActorBase_AutoReversePhysicsBlendWeight::bIncludeSelf' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_AutoReversePhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnANSSetAllBodiesBelowSimulatePhysicsBegin
 // 0x0018 (0x0018 - 0x0000)
@@ -218,13 +180,7 @@ public:
 	bool                                          bIncludeSelf;                                      // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0016(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin) == 0x000008, "Wrong alignment on PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin");
-static_assert(sizeof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin) == 0x000018, "Wrong size on PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin, Mesh) == 0x000000, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin, BoneName) == 0x000008, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin::BoneName' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin, bSimulatePhysics) == 0x000014, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin::bSimulatePhysics' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin, bIncludeSelf) == 0x000015, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin::bIncludeSelf' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin, ReturnValue) == 0x000016, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsBegin;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnANSSetAllBodiesBelowSimulatePhysicsEnd
 // 0x0018 (0x0018 - 0x0000)
@@ -237,13 +193,7 @@ public:
 	bool                                          bIncludeSelf;                                      // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0016(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd) == 0x000008, "Wrong alignment on PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd");
-static_assert(sizeof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd) == 0x000018, "Wrong size on PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd, Mesh) == 0x000000, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd, BoneName) == 0x000008, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd::BoneName' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd, bSimulatePhysics) == 0x000014, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd::bSimulatePhysics' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd, bIncludeSelf) == 0x000015, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd::bIncludeSelf' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd, ReturnValue) == 0x000016, "Member 'PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnANSSetAllBodiesBelowSimulatePhysicsEnd;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.ForwardPhysicsBlendWeight
 // 0x0020 (0x0020 - 0x0000)
@@ -254,11 +204,7 @@ public:
 	TArray<class FName>                           BoneNameList;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          bIncludeSelf;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ForwardPhysicsBlendWeight) == 0x000008, "Wrong alignment on PyShowActorBase_ForwardPhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_ForwardPhysicsBlendWeight) == 0x000020, "Wrong size on PyShowActorBase_ForwardPhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_ForwardPhysicsBlendWeight, Mesh) == 0x000000, "Member 'PyShowActorBase_ForwardPhysicsBlendWeight::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_ForwardPhysicsBlendWeight, BoneNameList) == 0x000008, "Member 'PyShowActorBase_ForwardPhysicsBlendWeight::BoneNameList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_ForwardPhysicsBlendWeight, bIncludeSelf) == 0x000018, "Member 'PyShowActorBase_ForwardPhysicsBlendWeight::bIncludeSelf' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ForwardPhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.ReversePhysicsBlendWeight
 // 0x0020 (0x0020 - 0x0000)
@@ -269,11 +215,7 @@ public:
 	TArray<class FName>                           BoneNameList;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          bIncludeSelf;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ReversePhysicsBlendWeight) == 0x000008, "Wrong alignment on PyShowActorBase_ReversePhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_ReversePhysicsBlendWeight) == 0x000020, "Wrong size on PyShowActorBase_ReversePhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_ReversePhysicsBlendWeight, Mesh) == 0x000000, "Member 'PyShowActorBase_ReversePhysicsBlendWeight::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_ReversePhysicsBlendWeight, BoneNameList) == 0x000008, "Member 'PyShowActorBase_ReversePhysicsBlendWeight::BoneNameList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_ReversePhysicsBlendWeight, bIncludeSelf) == 0x000018, "Member 'PyShowActorBase_ReversePhysicsBlendWeight::bIncludeSelf' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ReversePhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.ResetAllPhysicsBlendWeight
 // 0x0004 (0x0004 - 0x0000)
@@ -282,9 +224,7 @@ struct PyShowActorBase_ResetAllPhysicsBlendWeight final
 public:
 	float                                         BlendWeight;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ResetAllPhysicsBlendWeight) == 0x000004, "Wrong alignment on PyShowActorBase_ResetAllPhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_ResetAllPhysicsBlendWeight) == 0x000004, "Wrong size on PyShowActorBase_ResetAllPhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_ResetAllPhysicsBlendWeight, BlendWeight) == 0x000000, "Member 'PyShowActorBase_ResetAllPhysicsBlendWeight::BlendWeight' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ResetAllPhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.ResetAllPhysicsBlendWeightToMin
 // 0x0004 (0x0004 - 0x0000)
@@ -293,9 +233,7 @@ struct PyShowActorBase_ResetAllPhysicsBlendWeightToMin final
 public:
 	float                                         MinWeight;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_ResetAllPhysicsBlendWeightToMin) == 0x000004, "Wrong alignment on PyShowActorBase_ResetAllPhysicsBlendWeightToMin");
-static_assert(sizeof(PyShowActorBase_ResetAllPhysicsBlendWeightToMin) == 0x000004, "Wrong size on PyShowActorBase_ResetAllPhysicsBlendWeightToMin");
-static_assert(offsetof(PyShowActorBase_ResetAllPhysicsBlendWeightToMin, MinWeight) == 0x000000, "Member 'PyShowActorBase_ResetAllPhysicsBlendWeightToMin::MinWeight' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_ResetAllPhysicsBlendWeightToMin;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetMeshsPhysicsBlendWeight
 // 0x0020 (0x0020 - 0x0000)
@@ -308,12 +246,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PhysicsBlendWeight;                                // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetMeshsPhysicsBlendWeight) == 0x000008, "Wrong alignment on PyShowActorBase_SetMeshsPhysicsBlendWeight");
-static_assert(sizeof(PyShowActorBase_SetMeshsPhysicsBlendWeight) == 0x000020, "Wrong size on PyShowActorBase_SetMeshsPhysicsBlendWeight");
-static_assert(offsetof(PyShowActorBase_SetMeshsPhysicsBlendWeight, Mesh) == 0x000000, "Member 'PyShowActorBase_SetMeshsPhysicsBlendWeight::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsPhysicsBlendWeight, BoneNameList) == 0x000008, "Member 'PyShowActorBase_SetMeshsPhysicsBlendWeight::BoneNameList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsPhysicsBlendWeight, bIncludeSelf) == 0x000018, "Member 'PyShowActorBase_SetMeshsPhysicsBlendWeight::bIncludeSelf' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsPhysicsBlendWeight, PhysicsBlendWeight) == 0x00001C, "Member 'PyShowActorBase_SetMeshsPhysicsBlendWeight::PhysicsBlendWeight' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetMeshsPhysicsBlendWeight;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetComponentVisible
 // 0x0010 (0x0010 - 0x0000)
@@ -324,10 +257,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        Component;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetComponentVisible) == 0x000008, "Wrong alignment on PyShowActorBase_SetComponentVisible");
-static_assert(sizeof(PyShowActorBase_SetComponentVisible) == 0x000010, "Wrong size on PyShowActorBase_SetComponentVisible");
-static_assert(offsetof(PyShowActorBase_SetComponentVisible, Visible) == 0x000000, "Member 'PyShowActorBase_SetComponentVisible::Visible' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentVisible, Component) == 0x000008, "Member 'PyShowActorBase_SetComponentVisible::Component' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetComponentVisible;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetComponentsVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -338,10 +268,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USceneComponent*>                ComponentList;                                     // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyShowActorBase_SetComponentsVisible) == 0x000008, "Wrong alignment on PyShowActorBase_SetComponentsVisible");
-static_assert(sizeof(PyShowActorBase_SetComponentsVisible) == 0x000018, "Wrong size on PyShowActorBase_SetComponentsVisible");
-static_assert(offsetof(PyShowActorBase_SetComponentsVisible, Visible) == 0x000000, "Member 'PyShowActorBase_SetComponentsVisible::Visible' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentsVisible, ComponentList) == 0x000008, "Member 'PyShowActorBase_SetComponentsVisible::ComponentList' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetComponentsVisible;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetComponentVisibleByTag
 // 0x0078 (0x0078 - 0x0000)
@@ -352,11 +279,7 @@ public:
 	struct FGameplayTagContainer                  ComponentTag;                                      // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          Visible;                                           // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetComponentVisibleByTag) == 0x000008, "Wrong alignment on PyShowActorBase_SetComponentVisibleByTag");
-static_assert(sizeof(PyShowActorBase_SetComponentVisibleByTag) == 0x000078, "Wrong size on PyShowActorBase_SetComponentVisibleByTag");
-static_assert(offsetof(PyShowActorBase_SetComponentVisibleByTag, Component) == 0x000000, "Member 'PyShowActorBase_SetComponentVisibleByTag::Component' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentVisibleByTag, ComponentTag) == 0x000008, "Member 'PyShowActorBase_SetComponentVisibleByTag::ComponentTag' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentVisibleByTag, Visible) == 0x000070, "Member 'PyShowActorBase_SetComponentVisibleByTag::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetComponentVisibleByTag;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetComponentsVisibleByTag
 // 0x0080 (0x0080 - 0x0000)
@@ -367,11 +290,7 @@ public:
 	struct FGameplayTagContainer                  ComponentTag;                                      // 0x0010(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          Visible;                                           // 0x0078(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetComponentsVisibleByTag) == 0x000008, "Wrong alignment on PyShowActorBase_SetComponentsVisibleByTag");
-static_assert(sizeof(PyShowActorBase_SetComponentsVisibleByTag) == 0x000080, "Wrong size on PyShowActorBase_SetComponentsVisibleByTag");
-static_assert(offsetof(PyShowActorBase_SetComponentsVisibleByTag, ComponentList) == 0x000000, "Member 'PyShowActorBase_SetComponentsVisibleByTag::ComponentList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentsVisibleByTag, ComponentTag) == 0x000010, "Member 'PyShowActorBase_SetComponentsVisibleByTag::ComponentTag' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetComponentsVisibleByTag, Visible) == 0x000078, "Member 'PyShowActorBase_SetComponentsVisibleByTag::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetComponentsVisibleByTag;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetMeshVisible
 // 0x0010 (0x0010 - 0x0000)
@@ -382,10 +301,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 Mesh;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetMeshVisible) == 0x000008, "Wrong alignment on PyShowActorBase_SetMeshVisible");
-static_assert(sizeof(PyShowActorBase_SetMeshVisible) == 0x000010, "Wrong size on PyShowActorBase_SetMeshVisible");
-static_assert(offsetof(PyShowActorBase_SetMeshVisible, Visible) == 0x000000, "Member 'PyShowActorBase_SetMeshVisible::Visible' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshVisible, Mesh) == 0x000008, "Member 'PyShowActorBase_SetMeshVisible::Mesh' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetMeshVisible;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetMeshsVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -396,10 +312,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USkeletalMeshComponent*>         MeshList;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyShowActorBase_SetMeshsVisible) == 0x000008, "Wrong alignment on PyShowActorBase_SetMeshsVisible");
-static_assert(sizeof(PyShowActorBase_SetMeshsVisible) == 0x000018, "Wrong size on PyShowActorBase_SetMeshsVisible");
-static_assert(offsetof(PyShowActorBase_SetMeshsVisible, Visible) == 0x000000, "Member 'PyShowActorBase_SetMeshsVisible::Visible' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsVisible, MeshList) == 0x000008, "Member 'PyShowActorBase_SetMeshsVisible::MeshList' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetMeshsVisible;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetMeshVisibleByTag
 // 0x0078 (0x0078 - 0x0000)
@@ -410,11 +323,7 @@ public:
 	struct FGameplayTagContainer                  MeshTag;                                           // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          Visible;                                           // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetMeshVisibleByTag) == 0x000008, "Wrong alignment on PyShowActorBase_SetMeshVisibleByTag");
-static_assert(sizeof(PyShowActorBase_SetMeshVisibleByTag) == 0x000078, "Wrong size on PyShowActorBase_SetMeshVisibleByTag");
-static_assert(offsetof(PyShowActorBase_SetMeshVisibleByTag, Mesh) == 0x000000, "Member 'PyShowActorBase_SetMeshVisibleByTag::Mesh' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshVisibleByTag, MeshTag) == 0x000008, "Member 'PyShowActorBase_SetMeshVisibleByTag::MeshTag' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshVisibleByTag, Visible) == 0x000070, "Member 'PyShowActorBase_SetMeshVisibleByTag::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetMeshVisibleByTag;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetMeshsVisibleByTag
 // 0x0080 (0x0080 - 0x0000)
@@ -425,11 +334,7 @@ public:
 	struct FGameplayTagContainer                  MeshTag;                                           // 0x0010(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          Visible;                                           // 0x0078(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetMeshsVisibleByTag) == 0x000008, "Wrong alignment on PyShowActorBase_SetMeshsVisibleByTag");
-static_assert(sizeof(PyShowActorBase_SetMeshsVisibleByTag) == 0x000080, "Wrong size on PyShowActorBase_SetMeshsVisibleByTag");
-static_assert(offsetof(PyShowActorBase_SetMeshsVisibleByTag, MeshList) == 0x000000, "Member 'PyShowActorBase_SetMeshsVisibleByTag::MeshList' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsVisibleByTag, MeshTag) == 0x000010, "Member 'PyShowActorBase_SetMeshsVisibleByTag::MeshTag' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_SetMeshsVisibleByTag, Visible) == 0x000078, "Member 'PyShowActorBase_SetMeshsVisibleByTag::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetMeshsVisibleByTag;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnMeshRotation
 // 0x0008 (0x0008 - 0x0000)
@@ -439,10 +344,7 @@ public:
 	float                                         Yaw;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AnglePerSecond;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnMeshRotation) == 0x000004, "Wrong alignment on PyShowActorBase_OnMeshRotation");
-static_assert(sizeof(PyShowActorBase_OnMeshRotation) == 0x000008, "Wrong size on PyShowActorBase_OnMeshRotation");
-static_assert(offsetof(PyShowActorBase_OnMeshRotation, Yaw) == 0x000000, "Member 'PyShowActorBase_OnMeshRotation::Yaw' has a wrong offset!");
-static_assert(offsetof(PyShowActorBase_OnMeshRotation, AnglePerSecond) == 0x000004, "Member 'PyShowActorBase_OnMeshRotation::AnglePerSecond' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnMeshRotation;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.LoadRimlightDetailOutlineFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -451,9 +353,7 @@ struct PyShowActorBase_LoadRimlightDetailOutlineFinished final
 public:
 	class UObject*                                OverlayMaterial;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_LoadRimlightDetailOutlineFinished) == 0x000008, "Wrong alignment on PyShowActorBase_LoadRimlightDetailOutlineFinished");
-static_assert(sizeof(PyShowActorBase_LoadRimlightDetailOutlineFinished) == 0x000008, "Wrong size on PyShowActorBase_LoadRimlightDetailOutlineFinished");
-static_assert(offsetof(PyShowActorBase_LoadRimlightDetailOutlineFinished, OverlayMaterial) == 0x000000, "Member 'PyShowActorBase_LoadRimlightDetailOutlineFinished::OverlayMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_LoadRimlightDetailOutlineFinished;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetHeadBoneScale
 // 0x0018 (0x0018 - 0x0000)
@@ -462,9 +362,7 @@ struct PyShowActorBase_SetHeadBoneScale final
 public:
 	struct FVector                                BoneScale;                                         // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetHeadBoneScale) == 0x000008, "Wrong alignment on PyShowActorBase_SetHeadBoneScale");
-static_assert(sizeof(PyShowActorBase_SetHeadBoneScale) == 0x000018, "Wrong size on PyShowActorBase_SetHeadBoneScale");
-static_assert(offsetof(PyShowActorBase_SetHeadBoneScale, BoneScale) == 0x000000, "Member 'PyShowActorBase_SetHeadBoneScale::BoneScale' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetHeadBoneScale;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetCustomSkinID
 // 0x0004 (0x0004 - 0x0000)
@@ -473,9 +371,7 @@ struct PyShowActorBase_SetCustomSkinID final
 public:
 	int32                                         CustomSkinID;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetCustomSkinID) == 0x000004, "Wrong alignment on PyShowActorBase_SetCustomSkinID");
-static_assert(sizeof(PyShowActorBase_SetCustomSkinID) == 0x000004, "Wrong size on PyShowActorBase_SetCustomSkinID");
-static_assert(offsetof(PyShowActorBase_SetCustomSkinID, CustomSkinID) == 0x000000, "Member 'PyShowActorBase_SetCustomSkinID::CustomSkinID' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetCustomSkinID;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.OnPlayEmoteAnimItem
 // 0x0010 (0x0010 - 0x0000)
@@ -484,9 +380,7 @@ struct PyShowActorBase_OnPlayEmoteAnimItem final
 public:
 	class FString                                 ItemID;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_OnPlayEmoteAnimItem) == 0x000008, "Wrong alignment on PyShowActorBase_OnPlayEmoteAnimItem");
-static_assert(sizeof(PyShowActorBase_OnPlayEmoteAnimItem) == 0x000010, "Wrong size on PyShowActorBase_OnPlayEmoteAnimItem");
-static_assert(offsetof(PyShowActorBase_OnPlayEmoteAnimItem, ItemID) == 0x000000, "Member 'PyShowActorBase_OnPlayEmoteAnimItem::ItemID' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_OnPlayEmoteAnimItem;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.GetIsNeedReplaceOverlayMaterial
 // 0x0001 (0x0001 - 0x0000)
@@ -495,9 +389,16 @@ struct PyShowActorBase_GetIsNeedReplaceOverlayMaterial final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_GetIsNeedReplaceOverlayMaterial) == 0x000001, "Wrong alignment on PyShowActorBase_GetIsNeedReplaceOverlayMaterial");
-static_assert(sizeof(PyShowActorBase_GetIsNeedReplaceOverlayMaterial) == 0x000001, "Wrong size on PyShowActorBase_GetIsNeedReplaceOverlayMaterial");
-static_assert(offsetof(PyShowActorBase_GetIsNeedReplaceOverlayMaterial, ReturnValue) == 0x000000, "Member 'PyShowActorBase_GetIsNeedReplaceOverlayMaterial::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_GetIsNeedReplaceOverlayMaterial;
+
+// PythonFunction PyShowActorBase.PyShowActorBase.OnPlaySkinCustomizationAnimItem
+// 0x0010 (0x0010 - 0x0000)
+struct PyShowActorBase_OnPlaySkinCustomizationAnimItem final
+{
+public:
+	class FString                                 ItemID;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyShowActorBase_OnPlaySkinCustomizationAnimItem;
 
 // PythonFunction PyShowActorBase.PyShowActorBase.SetBindingTagInLevelSequenceActor
 // 0x0008 (0x0008 - 0x0000)
@@ -506,9 +407,7 @@ struct PyShowActorBase_SetBindingTagInLevelSequenceActor final
 public:
 	class ALevelSequenceActor*                    ls_actor;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorBase_SetBindingTagInLevelSequenceActor) == 0x000008, "Wrong alignment on PyShowActorBase_SetBindingTagInLevelSequenceActor");
-static_assert(sizeof(PyShowActorBase_SetBindingTagInLevelSequenceActor) == 0x000008, "Wrong size on PyShowActorBase_SetBindingTagInLevelSequenceActor");
-static_assert(offsetof(PyShowActorBase_SetBindingTagInLevelSequenceActor, ls_actor) == 0x000000, "Member 'PyShowActorBase_SetBindingTagInLevelSequenceActor::ls_actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorBase_SetBindingTagInLevelSequenceActor;
 
 }
 

@@ -17,144 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_104231.PyUIController_104231.SetAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InAbilityID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyUIController_104231::SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_104231", "SetAbility");
-
-	Params::PyUIController_104231_SetAbility Parms{};
-
-	Parms.InAbilityID = InAbilityID;
-	Parms.InAbility = InAbility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104231.PyUIController_104231.Destruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_104231::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_104231", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10423101::K2_OnBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104231.PySummonedComp_10423101.QuoteSourceEnd
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           QuoteSource                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPySummonedComp_10423101::QuoteSourceEnd(class AActor* QuoteSource)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10423101", "QuoteSourceEnd");
-
-	Params::PySummonedComp_10423101_QuoteSourceEnd Parms{};
-
-	Parms.QuoteSource = QuoteSource;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnSummonedDeath
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FAttributeModifierHandle&  ModifierParameter                                      (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UPySummonedComp_10423101::K2_OnSummonedDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnSummonedDeath");
-
-	Params::PySummonedComp_10423101_K2_OnSummonedDeath Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameter = std::move(ModifierParameter);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnEndAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10423101::K2_OnEndAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnEndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_104231.PySummonedComp_10423102.K2_OnBeginAgentTask
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -253,6 +115,98 @@ float UPySummonedComp_10423102::GetWebMaxOffsetDistance()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10423101::K2_OnBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_104231.PySummonedComp_10423101.QuoteSourceEnd
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           QuoteSource                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPySummonedComp_10423101::QuoteSourceEnd(class AActor* QuoteSource)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10423101", "QuoteSourceEnd");
+
+	Params::PySummonedComp_10423101_QuoteSourceEnd Parms{};
+
+	Parms.QuoteSource = QuoteSource;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnSummonedDeath
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FAttributeModifierHandle&  ModifierParameter                                      (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UPySummonedComp_10423101::K2_OnSummonedDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnSummonedDeath");
+
+	Params::PySummonedComp_10423101_K2_OnSummonedDeath Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameter = std::move(ModifierParameter);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_104231.PySummonedComp_10423101.K2_OnEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10423101::K2_OnEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10423101", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

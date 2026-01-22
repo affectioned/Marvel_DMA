@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_SelectAllyHasMaxHealth">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_SelectAllyHasMaxHealth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_SelectAllyHasMaxHealth")
 	}
 	static class UPyAISelectTarget_SelectAllyHasMaxHealth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_SelectAllyHasMaxHealth>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_SelectAllyHasMaxHealth) == 0x000008, "Wrong alignment on UPyAISelectTarget_SelectAllyHasMaxHealth");
-static_assert(sizeof(UPyAISelectTarget_SelectAllyHasMaxHealth) == 0x000078, "Wrong size on UPyAISelectTarget_SelectAllyHasMaxHealth");
-static_assert(offsetof(UPyAISelectTarget_SelectAllyHasMaxHealth, MaxAllyDistance) == 0x000070, "Member 'UPyAISelectTarget_SelectAllyHasMaxHealth::MaxAllyDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_SelectAllyHasMaxHealth;
 
 }
 

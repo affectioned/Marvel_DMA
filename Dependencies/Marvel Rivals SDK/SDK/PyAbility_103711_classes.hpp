@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10371101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10371101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10371101")
 	}
 	static class UPyCue_Scope_Start_10371101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10371101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10371101) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10371101");
-static_assert(sizeof(UPyCue_Scope_Start_10371101) == 0x000480, "Wrong size on UPyCue_Scope_Start_10371101");
-static_assert(offsetof(UPyCue_Scope_Start_10371101, ScopeBaseRadius) == 0x000478, "Member 'UPyCue_Scope_Start_10371101::ScopeBaseRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10371101;
 
 }
 

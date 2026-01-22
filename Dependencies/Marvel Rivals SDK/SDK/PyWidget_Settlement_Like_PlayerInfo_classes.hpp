@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_Like_PlayerInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_Like_PlayerInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_Like_PlayerInfo")
 	}
 	static class UPyWidget_Settlement_Like_PlayerInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_Like_PlayerInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_Like_PlayerInfo) == 0x000010, "Wrong alignment on UPyWidget_Settlement_Like_PlayerInfo");
-static_assert(sizeof(UPyWidget_Settlement_Like_PlayerInfo) == 0x0008A0, "Wrong size on UPyWidget_Settlement_Like_PlayerInfo");
-static_assert(offsetof(UPyWidget_Settlement_Like_PlayerInfo, OwnTextColor) == 0x000870, "Member 'UPyWidget_Settlement_Like_PlayerInfo::OwnTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Like_PlayerInfo, AllyTextColor) == 0x000880, "Member 'UPyWidget_Settlement_Like_PlayerInfo::AllyTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Like_PlayerInfo, EnemyTextColor) == 0x000890, "Member 'UPyWidget_Settlement_Like_PlayerInfo::EnemyTextColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_Like_PlayerInfo;
 
 }
 

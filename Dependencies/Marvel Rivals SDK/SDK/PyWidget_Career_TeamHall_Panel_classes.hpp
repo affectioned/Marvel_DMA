@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Career_TeamHall_Panel.PyWidget_Career_TeamHall_Panel
-// 0x0008 (0x0608 - 0x0600)
+// 0x0008 (0x0610 - 0x0608)
 class UPyWidget_Career_TeamHall_Panel final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
-	class UInputAction*                           ShowHeroAction;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ShowHeroAction;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_TeamHall_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_Career_TeamHall_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_TeamHall_Panel")
 	}
 	static class UPyWidget_Career_TeamHall_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_TeamHall_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_TeamHall_Panel) == 0x000008, "Wrong alignment on UPyWidget_Career_TeamHall_Panel");
-static_assert(sizeof(UPyWidget_Career_TeamHall_Panel) == 0x000608, "Wrong size on UPyWidget_Career_TeamHall_Panel");
-static_assert(offsetof(UPyWidget_Career_TeamHall_Panel, ShowHeroAction) == 0x000600, "Member 'UPyWidget_Career_TeamHall_Panel::ShowHeroAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Career_TeamHall_Panel;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Healing_HealthPack.Cue_Healing_HealthPack_C
-// 0x0000 (0x0FA0 - 0x0FA0)
+// 0x0000 (0x0FB0 - 0x0FB0)
 class ACue_Healing_HealthPack_C final : public ACue_Healing_HealthPack
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Healing_HealthPack_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Healing_HealthPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Healing_HealthPack_C")
 	}
 	static class ACue_Healing_HealthPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Healing_HealthPack_C>();
 	}
 };
-static_assert(alignof(ACue_Healing_HealthPack_C) == 0x000010, "Wrong alignment on ACue_Healing_HealthPack_C");
-static_assert(sizeof(ACue_Healing_HealthPack_C) == 0x000FA0, "Wrong size on ACue_Healing_HealthPack_C");
+DUMPER7_ASSERTS_ACue_Healing_HealthPack_C;
 
 }
 

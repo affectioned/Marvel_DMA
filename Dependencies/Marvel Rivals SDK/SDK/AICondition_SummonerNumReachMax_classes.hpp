@@ -23,15 +23,18 @@ class UAICondition_SummonerNumReachMax_C final : public UPyAICondition_CheckSelf
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AICondition_SummonerNumReachMax_C">();
+		BP_STATIC_CLASS_IMPL("AICondition_SummonerNumReachMax_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICondition_SummonerNumReachMax_C")
 	}
 	static class UAICondition_SummonerNumReachMax_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICondition_SummonerNumReachMax_C>();
 	}
 };
-static_assert(alignof(UAICondition_SummonerNumReachMax_C) == 0x000008, "Wrong alignment on UAICondition_SummonerNumReachMax_C");
-static_assert(sizeof(UAICondition_SummonerNumReachMax_C) == 0x000040, "Wrong size on UAICondition_SummonerNumReachMax_C");
+DUMPER7_ASSERTS_UAICondition_SummonerNumReachMax_C;
 
 }
 

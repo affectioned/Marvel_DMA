@@ -232,111 +232,30 @@ void UPyAbility_221::Server_AbilityActivated(class AActor* InteractedActor, clas
 }
 
 
-// PythonFunction PyAbility_221.PyUIC_SelectTarget_221.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIC_SelectTarget_221::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIC_SelectTarget_221", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_221.PyUIC_SelectTarget_221.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIC_SelectTarget_221::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIC_SelectTarget_221", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_221.PyUIC_SelectTarget_221.GetTaskResults
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyAbility_221.PyAbility_221.Server_AbilityActivated_WithIntParam
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
 // Parameters:
-// TArray<struct FSelectTaskResult>        ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class AActor*                           InteractedActor                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AMarvelPlayerState*               ActivatedPlayerState                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Param                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-TArray<struct FSelectTaskResult> UPyUIC_SelectTarget_221::GetTaskResults()
+void UPyAbility_221::Server_AbilityActivated_WithIntParam(class AActor* InteractedActor, class AMarvelPlayerState* ActivatedPlayerState, int32 Param)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIC_SelectTarget_221", "GetTaskResults");
+		Func = Class->GetFunction("PyAbility_221", "Server_AbilityActivated_WithIntParam");
 
-	Params::PyUIC_SelectTarget_221_GetTaskResults Parms{};
+	Params::PyAbility_221_Server_AbilityActivated_WithIntParam Parms{};
+
+	Parms.InteractedActor = InteractedActor;
+	Parms.ActivatedPlayerState = ActivatedPlayerState;
+	Parms.Param = Param;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_221.PyUIC_SelectTarget_221.GetLocationFromActor
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FVector UPyUIC_SelectTarget_221::GetLocationFromActor(class AActor* InActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIC_SelectTarget_221", "GetLocationFromActor");
-
-	Params::PyUIC_SelectTarget_221_GetLocationFromActor Parms{};
-
-	Parms.InActor = InActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_221.PyUIC_SelectTarget_221.OnTargetChanged
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIC_SelectTarget_221::OnTargetChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIC_SelectTarget_221", "OnTargetChanged");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

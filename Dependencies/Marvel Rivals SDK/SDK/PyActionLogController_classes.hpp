@@ -39,15 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActionLogController">();
+		STATIC_CLASS_IMPL("PyActionLogController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActionLogController")
 	}
 	static class UPyActionLogController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyActionLogController>();
 	}
 };
-static_assert(alignof(UPyActionLogController) == 0x000008, "Wrong alignment on UPyActionLogController");
-static_assert(sizeof(UPyActionLogController) == 0x0000E0, "Wrong size on UPyActionLogController");
+DUMPER7_ASSERTS_UPyActionLogController;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_SystemVersion_SetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SystemVersion_SetVisible) == 0x000001, "Wrong alignment on PyWidget_SystemVersion_SetVisible");
-static_assert(sizeof(PyWidget_SystemVersion_SetVisible) == 0x000001, "Wrong size on PyWidget_SystemVersion_SetVisible");
-static_assert(offsetof(PyWidget_SystemVersion_SetVisible, Visible) == 0x000000, "Member 'PyWidget_SystemVersion_SetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SystemVersion_SetVisible;
 
 // PythonFunction PyWidget_SystemVersion.PyWidget_SystemVersion.SetClientDataVisable
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SystemVersion_SetClientDataVisable final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SystemVersion_SetClientDataVisable) == 0x000001, "Wrong alignment on PyWidget_SystemVersion_SetClientDataVisable");
-static_assert(sizeof(PyWidget_SystemVersion_SetClientDataVisable) == 0x000001, "Wrong size on PyWidget_SystemVersion_SetClientDataVisable");
-static_assert(offsetof(PyWidget_SystemVersion_SetClientDataVisable, Visible) == 0x000000, "Member 'PyWidget_SystemVersion_SetClientDataVisable::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SystemVersion_SetClientDataVisable;
 
 // PythonFunction PyWidget_SystemVersion.PyWidget_SystemVersion.SetServerDataVisable
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_SystemVersion_SetServerDataVisable final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SystemVersion_SetServerDataVisable) == 0x000001, "Wrong alignment on PyWidget_SystemVersion_SetServerDataVisable");
-static_assert(sizeof(PyWidget_SystemVersion_SetServerDataVisable) == 0x000001, "Wrong size on PyWidget_SystemVersion_SetServerDataVisable");
-static_assert(offsetof(PyWidget_SystemVersion_SetServerDataVisable, Visible) == 0x000000, "Member 'PyWidget_SystemVersion_SetServerDataVisable::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SystemVersion_SetServerDataVisable;
 
 }
 

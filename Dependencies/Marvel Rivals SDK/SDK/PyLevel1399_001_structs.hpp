@@ -26,13 +26,7 @@ public:
 	TArray<class APyPayloadTrace*>                Splines;                                           // 0x0018(0x0010)(Edit, NativeAccessSpecifierPublic)
 	class APyLevel1399_001_Base*                  ConditionWhitePiece;                               // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPyLevel1399_001_TraceConfig) == 0x000008, "Wrong alignment on FPyLevel1399_001_TraceConfig");
-static_assert(sizeof(FPyLevel1399_001_TraceConfig) == 0x000030, "Wrong size on FPyLevel1399_001_TraceConfig");
-static_assert(offsetof(FPyLevel1399_001_TraceConfig, TargetDestructionBlackPiece) == 0x000000, "Member 'FPyLevel1399_001_TraceConfig::TargetDestructionBlackPiece' has a wrong offset!");
-static_assert(offsetof(FPyLevel1399_001_TraceConfig, TargetMasterField) == 0x000008, "Member 'FPyLevel1399_001_TraceConfig::TargetMasterField' has a wrong offset!");
-static_assert(offsetof(FPyLevel1399_001_TraceConfig, MasterFieldManualTriggerDelaySeconds) == 0x000010, "Member 'FPyLevel1399_001_TraceConfig::MasterFieldManualTriggerDelaySeconds' has a wrong offset!");
-static_assert(offsetof(FPyLevel1399_001_TraceConfig, Splines) == 0x000018, "Member 'FPyLevel1399_001_TraceConfig::Splines' has a wrong offset!");
-static_assert(offsetof(FPyLevel1399_001_TraceConfig, ConditionWhitePiece) == 0x000028, "Member 'FPyLevel1399_001_TraceConfig::ConditionWhitePiece' has a wrong offset!");
+DUMPER7_ASSERTS_FPyLevel1399_001_TraceConfig;
 
 }
 

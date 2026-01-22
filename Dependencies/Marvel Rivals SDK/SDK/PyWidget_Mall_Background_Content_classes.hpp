@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Background_Content.PyWidget_Mall_Background_Content
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mall_Background_Content final : public UPyMarvelUserWidget
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Background_Content">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Background_Content")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Background_Content")
 	}
 	static class UPyWidget_Mall_Background_Content* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Background_Content>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Background_Content) == 0x000008, "Wrong alignment on UPyWidget_Mall_Background_Content");
-static_assert(sizeof(UPyWidget_Mall_Background_Content) == 0x0005C0, "Wrong size on UPyWidget_Mall_Background_Content");
+DUMPER7_ASSERTS_UPyWidget_Mall_Background_Content;
 
 }
 

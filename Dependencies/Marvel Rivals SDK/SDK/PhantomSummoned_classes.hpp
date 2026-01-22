@@ -13,8 +13,8 @@
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "CoreUObject_classes.hpp"
-#include "MarvelAI_classes.hpp"
 #include "PhantomSummoned_structs.hpp"
+#include "MarvelAI_classes.hpp"
 
 
 namespace SDK
@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhantomAbilityInterface">();
+		STATIC_CLASS_IMPL("PhantomAbilityInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhantomAbilityInterface")
 	}
 	static class IPhantomAbilityInterface* GetDefaultObj()
 	{
@@ -48,8 +52,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IPhantomAbilityInterface) == 0x000001, "Wrong alignment on IPhantomAbilityInterface");
-static_assert(sizeof(IPhantomAbilityInterface) == 0x000001, "Wrong size on IPhantomAbilityInterface");
+DUMPER7_ASSERTS_IPhantomAbilityInterface;
 
 // Class PhantomSummoned.Config_PhantomInputSyncAbility
 // 0x0010 (0x00A8 - 0x0098)
@@ -61,24 +64,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_PhantomInputSyncAbility">();
+		STATIC_CLASS_IMPL("Config_PhantomInputSyncAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_PhantomInputSyncAbility")
 	}
 	static class UConfig_PhantomInputSyncAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_PhantomInputSyncAbility>();
 	}
 };
-static_assert(alignof(UConfig_PhantomInputSyncAbility) == 0x000008, "Wrong alignment on UConfig_PhantomInputSyncAbility");
-static_assert(sizeof(UConfig_PhantomInputSyncAbility) == 0x0000A8, "Wrong size on UConfig_PhantomInputSyncAbility");
-static_assert(offsetof(UConfig_PhantomInputSyncAbility, SyncAbilityConfigs) == 0x000098, "Member 'UConfig_PhantomInputSyncAbility::SyncAbilityConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_PhantomInputSyncAbility;
 
 // Class PhantomSummoned.PhantomInputSyncAbility
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPhantomInputSyncAbility : public UMarvelGameplayAbility
 {
 public:
-	uint8                                         Pad_29F0[0x8];                                     // 0x29F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TScriptInterface<class IPhantomInterface>> Phantoms;                                      // 0x29F8(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A40[0x8];                                     // 0x2A40(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TScriptInterface<class IPhantomInterface>> Phantoms;                                      // 0x2A48(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 
 public:
 	void ServerNotifyInputToPhantom(EAbilityActionBindingType InActionBindingType, int32 InInputId, int32 InAbilityID);
@@ -86,27 +91,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhantomInputSyncAbility">();
+		STATIC_CLASS_IMPL("PhantomInputSyncAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhantomInputSyncAbility")
 	}
 	static class UPhantomInputSyncAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhantomInputSyncAbility>();
 	}
 };
-static_assert(alignof(UPhantomInputSyncAbility) == 0x000008, "Wrong alignment on UPhantomInputSyncAbility");
-static_assert(sizeof(UPhantomInputSyncAbility) == 0x002A08, "Wrong size on UPhantomInputSyncAbility");
-static_assert(offsetof(UPhantomInputSyncAbility, Phantoms) == 0x0029F8, "Member 'UPhantomInputSyncAbility::Phantoms' has a wrong offset!");
+DUMPER7_ASSERTS_UPhantomInputSyncAbility;
 
 // Class PhantomSummoned.PhantomSummonedController
-// 0x0530 (0x1270 - 0x0D40)
+// 0x06C0 (0x1400 - 0x0D40)
 class APhantomSummonedController : public AMarvelAIController
 {
 public:
 	bool                                          bInvertRightMove;                                  // 0x0D38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_D39[0x7];                                      // 0x0D39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTargetFilter             PhantomAimTargetFilter;                            // 0x0D40(0x0508)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPhantomAbilitySetting>         PhantomAbilitySettings;                            // 0x1248(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1258[0x18];                                    // 0x1258(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTargetFilter             PhantomAimTargetFilter;                            // 0x0D40(0x0698)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPhantomAbilitySetting>         PhantomAbilitySettings;                            // 0x13D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13E8[0x18];                                    // 0x13E8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPhantomSourceActivateAbility(class UGameplayAbility* SourceAbility);
@@ -115,18 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhantomSummonedController">();
+		STATIC_CLASS_IMPL("PhantomSummonedController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhantomSummonedController")
 	}
 	static class APhantomSummonedController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APhantomSummonedController>();
 	}
 };
-static_assert(alignof(APhantomSummonedController) == 0x000010, "Wrong alignment on APhantomSummonedController");
-static_assert(sizeof(APhantomSummonedController) == 0x001270, "Wrong size on APhantomSummonedController");
-static_assert(offsetof(APhantomSummonedController, bInvertRightMove) == 0x000D38, "Member 'APhantomSummonedController::bInvertRightMove' has a wrong offset!");
-static_assert(offsetof(APhantomSummonedController, PhantomAimTargetFilter) == 0x000D40, "Member 'APhantomSummonedController::PhantomAimTargetFilter' has a wrong offset!");
-static_assert(offsetof(APhantomSummonedController, PhantomAbilitySettings) == 0x001248, "Member 'APhantomSummonedController::PhantomAbilitySettings' has a wrong offset!");
+DUMPER7_ASSERTS_APhantomSummonedController;
 
 // Class PhantomSummoned.PhantomInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -138,7 +145,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhantomInterface">();
+		STATIC_CLASS_IMPL("PhantomInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhantomInterface")
 	}
 	static class IPhantomInterface* GetDefaultObj()
 	{
@@ -154,8 +165,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IPhantomInterface) == 0x000001, "Wrong alignment on IPhantomInterface");
-static_assert(sizeof(IPhantomInterface) == 0x000001, "Wrong size on IPhantomInterface");
+DUMPER7_ASSERTS_IPhantomInterface;
 
 }
 

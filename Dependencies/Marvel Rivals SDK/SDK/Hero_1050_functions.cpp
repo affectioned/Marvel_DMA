@@ -522,57 +522,5 @@ bool UScope_105071_Manager::CheckCanReleaseScope(const class AActor* InActor)
 	return Parms.ReturnValue;
 }
 
-
-// Function Hero_1050.Stealth_105002.OnAbilityActivateFailed
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const class UGameplayAbility*           Ability                                                (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayTagContainer&     GameplayTags                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UStealth_105002::OnAbilityActivateFailed(const class UGameplayAbility* Ability, const struct FGameplayTagContainer& GameplayTags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Stealth_105002", "OnAbilityActivateFailed");
-
-	Params::Stealth_105002_OnAbilityActivateFailed Parms{};
-
-	Parms.Ability = Ability;
-	Parms.GameplayTags = std::move(GameplayTags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1050.Stealth_105002.OnCharacterBattleStateChanged
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bValue                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UStealth_105002::OnCharacterBattleStateChanged(bool bValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Stealth_105002", "OnCharacterBattleStateChanged");
-
-	Params::Stealth_105002_OnCharacterBattleStateChanged Parms{};
-
-	Parms.bValue = bValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
 }
 

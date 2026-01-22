@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FullEmojiList_OnTileViewNav) == 0x000008, "Wrong alignment on PyWidget_FullEmojiList_OnTileViewNav");
-static_assert(sizeof(PyWidget_FullEmojiList_OnTileViewNav) == 0x000010, "Wrong size on PyWidget_FullEmojiList_OnTileViewNav");
-static_assert(offsetof(PyWidget_FullEmojiList_OnTileViewNav, Navigation_0) == 0x000000, "Member 'PyWidget_FullEmojiList_OnTileViewNav::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_FullEmojiList_OnTileViewNav, ReturnValue) == 0x000008, "Member 'PyWidget_FullEmojiList_OnTileViewNav::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FullEmojiList_OnTileViewNav;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +35,7 @@ struct PyWidget_BattleCommunicationPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_BattleCommunicationPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_BattleCommunicationPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -49,9 +44,7 @@ struct PyWidget_BattleCommunicationPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BattleCommunicationPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BattleCommunicationPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +53,7 @@ struct PyWidget_BattleCommunicationPanel_SetVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_SetVisible) == 0x000001, "Wrong alignment on PyWidget_BattleCommunicationPanel_SetVisible");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_SetVisible) == 0x000001, "Wrong size on PyWidget_BattleCommunicationPanel_SetVisible");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_SetVisible, InVisible) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_SetVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_SetVisible;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.SetEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +62,7 @@ struct PyWidget_BattleCommunicationPanel_SetEnable final
 public:
 	bool                                          InEnabled;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_SetEnable) == 0x000001, "Wrong alignment on PyWidget_BattleCommunicationPanel_SetEnable");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_SetEnable) == 0x000001, "Wrong size on PyWidget_BattleCommunicationPanel_SetEnable");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_SetEnable, InEnabled) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_SetEnable::InEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_SetEnable;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.SetHoveringIdx
 // 0x0004 (0x0004 - 0x0000)
@@ -82,9 +71,7 @@ struct PyWidget_BattleCommunicationPanel_SetHoveringIdx final
 public:
 	int32                                         Idx;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_SetHoveringIdx) == 0x000004, "Wrong alignment on PyWidget_BattleCommunicationPanel_SetHoveringIdx");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_SetHoveringIdx) == 0x000004, "Wrong size on PyWidget_BattleCommunicationPanel_SetHoveringIdx");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_SetHoveringIdx, Idx) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_SetHoveringIdx::Idx' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_SetHoveringIdx;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.SetIsBattleMode
 // 0x0001 (0x0001 - 0x0000)
@@ -93,9 +80,7 @@ struct PyWidget_BattleCommunicationPanel_SetIsBattleMode final
 public:
 	bool                                          bIsBattleMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_SetIsBattleMode) == 0x000001, "Wrong alignment on PyWidget_BattleCommunicationPanel_SetIsBattleMode");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_SetIsBattleMode) == 0x000001, "Wrong size on PyWidget_BattleCommunicationPanel_SetIsBattleMode");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_SetIsBattleMode, bIsBattleMode) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_SetIsBattleMode::bIsBattleMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_SetIsBattleMode;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_BattleCommunicationPanel.Tick
 // 0x003C (0x003C - 0x0000)
@@ -105,10 +90,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleCommunicationPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_BattleCommunicationPanel_Tick");
-static_assert(sizeof(PyWidget_BattleCommunicationPanel_Tick) == 0x00003C, "Wrong size on PyWidget_BattleCommunicationPanel_Tick");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_BattleCommunicationPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleCommunicationPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_BattleCommunicationPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleCommunicationPanel_Tick;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_SignalResponsePanel.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +99,7 @@ struct PyWidget_SignalResponsePanel_SetVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SignalResponsePanel_SetVisible) == 0x000001, "Wrong alignment on PyWidget_SignalResponsePanel_SetVisible");
-static_assert(sizeof(PyWidget_SignalResponsePanel_SetVisible) == 0x000001, "Wrong size on PyWidget_SignalResponsePanel_SetVisible");
-static_assert(offsetof(PyWidget_SignalResponsePanel_SetVisible, InVisible) == 0x000000, "Member 'PyWidget_SignalResponsePanel_SetVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SignalResponsePanel_SetVisible;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_SignalResponsePanel.SetState
 // 0x0004 (0x0004 - 0x0000)
@@ -128,9 +108,7 @@ struct PyWidget_SignalResponsePanel_SetState final
 public:
 	int32                                         state;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SignalResponsePanel_SetState) == 0x000004, "Wrong alignment on PyWidget_SignalResponsePanel_SetState");
-static_assert(sizeof(PyWidget_SignalResponsePanel_SetState) == 0x000004, "Wrong size on PyWidget_SignalResponsePanel_SetState");
-static_assert(offsetof(PyWidget_SignalResponsePanel_SetState, state) == 0x000000, "Member 'PyWidget_SignalResponsePanel_SetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SignalResponsePanel_SetState;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_FullEmojiItem.SetShowItemData
 // 0x0008 (0x0008 - 0x0000)
@@ -139,9 +117,7 @@ struct PyWidget_FullEmojiItem_SetShowItemData final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FullEmojiItem_SetShowItemData) == 0x000008, "Wrong alignment on PyWidget_FullEmojiItem_SetShowItemData");
-static_assert(sizeof(PyWidget_FullEmojiItem_SetShowItemData) == 0x000008, "Wrong size on PyWidget_FullEmojiItem_SetShowItemData");
-static_assert(offsetof(PyWidget_FullEmojiItem_SetShowItemData, ItemObject_0) == 0x000000, "Member 'PyWidget_FullEmojiItem_SetShowItemData::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FullEmojiItem_SetShowItemData;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_FullEmojiItem.OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -150,9 +126,7 @@ struct PyWidget_FullEmojiItem_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FullEmojiItem_OnItemSelectionChanged) == 0x000001, "Wrong alignment on PyWidget_FullEmojiItem_OnItemSelectionChanged");
-static_assert(sizeof(PyWidget_FullEmojiItem_OnItemSelectionChanged) == 0x000001, "Wrong size on PyWidget_FullEmojiItem_OnItemSelectionChanged");
-static_assert(offsetof(PyWidget_FullEmojiItem_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'PyWidget_FullEmojiItem_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FullEmojiItem_OnItemSelectionChanged;
 
 // PythonFunction PyWidget_BattleCommunication.PyWidget_CommunicationMenuItem.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -161,9 +135,7 @@ struct PyWidget_CommunicationMenuItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommunicationMenuItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_CommunicationMenuItem_PreConstruct");
-static_assert(sizeof(PyWidget_CommunicationMenuItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_CommunicationMenuItem_PreConstruct");
-static_assert(offsetof(PyWidget_CommunicationMenuItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_CommunicationMenuItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommunicationMenuItem_PreConstruct;
 
 }
 

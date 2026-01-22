@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10234101_BP.Summoned_10234101_BP_C
-// 0x0020 (0x0BF0 - 0x0BD0)
+// 0x0020 (0x0C10 - 0x0BF0)
 class ASummoned_10234101_BP_C final : public ASummoned_10234101
 {
 public:
-	class USummonedModifierComponent*             SummonedModifier;                                  // 0x0BD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0BD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0BE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedModifierComponent*             SummonedModifier;                                  // 0x0BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0BF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10234101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10234101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10234101_BP_C")
 	}
 	static class ASummoned_10234101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10234101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10234101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10234101_BP_C");
-static_assert(sizeof(ASummoned_10234101_BP_C) == 0x000BF0, "Wrong size on ASummoned_10234101_BP_C");
-static_assert(offsetof(ASummoned_10234101_BP_C, SummonedModifier) == 0x000BD0, "Member 'ASummoned_10234101_BP_C::SummonedModifier' has a wrong offset!");
-static_assert(offsetof(ASummoned_10234101_BP_C, NavEffectBox) == 0x000BD8, "Member 'ASummoned_10234101_BP_C::NavEffectBox' has a wrong offset!");
-static_assert(offsetof(ASummoned_10234101_BP_C, MarvelNavModifier) == 0x000BE0, "Member 'ASummoned_10234101_BP_C::MarvelNavModifier' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10234101_BP_C;
 
 }
 

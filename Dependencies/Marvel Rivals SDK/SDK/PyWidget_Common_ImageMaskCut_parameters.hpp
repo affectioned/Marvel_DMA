@@ -23,9 +23,7 @@ struct PyWidget_Common_ImageMaskCut_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Common_ImageMaskCut_PreConstruct");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_PreConstruct) == 0x000001, "Wrong size on PyWidget_Common_ImageMaskCut_PreConstruct");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_PreConstruct;
 
 // PythonFunction PyWidget_Common_ImageMaskCut.PyWidget_Common_ImageMaskCut.SetImageScale
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Common_ImageMaskCut_SetImageScale final
 public:
 	float                                         Image_Scale_0;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_SetImageScale) == 0x000004, "Wrong alignment on PyWidget_Common_ImageMaskCut_SetImageScale");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_SetImageScale) == 0x000004, "Wrong size on PyWidget_Common_ImageMaskCut_SetImageScale");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetImageScale, Image_Scale_0) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_SetImageScale::Image_Scale_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_SetImageScale;
 
 // PythonFunction PyWidget_Common_ImageMaskCut.PyWidget_Common_ImageMaskCut.SetImageOffsetUV
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Common_ImageMaskCut_SetImageOffsetUV final
 public:
 	struct FVector2D                              Image_OffsetUV_0;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_SetImageOffsetUV) == 0x000008, "Wrong alignment on PyWidget_Common_ImageMaskCut_SetImageOffsetUV");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_SetImageOffsetUV) == 0x000010, "Wrong size on PyWidget_Common_ImageMaskCut_SetImageOffsetUV");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetImageOffsetUV, Image_OffsetUV_0) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_SetImageOffsetUV::Image_OffsetUV_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_SetImageOffsetUV;
 
 // PythonFunction PyWidget_Common_ImageMaskCut.PyWidget_Common_ImageMaskCut.SetLoadImgMask
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_Common_ImageMaskCut_SetLoadImgMask final
 public:
 	class UObject*                                Img_Mask_0;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_SetLoadImgMask) == 0x000008, "Wrong alignment on PyWidget_Common_ImageMaskCut_SetLoadImgMask");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_SetLoadImgMask) == 0x000008, "Wrong size on PyWidget_Common_ImageMaskCut_SetLoadImgMask");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetLoadImgMask, Img_Mask_0) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_SetLoadImgMask::Img_Mask_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_SetLoadImgMask;
 
 // PythonFunction PyWidget_Common_ImageMaskCut.PyWidget_Common_ImageMaskCut.SetImgPicture
 // 0x0038 (0x0038 - 0x0000)
@@ -68,10 +60,7 @@ public:
 	class UTexture2D*                             Img_Picture_0;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              Img_Picture_Soft;                                  // 0x0008(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_SetImgPicture) == 0x000008, "Wrong alignment on PyWidget_Common_ImageMaskCut_SetImgPicture");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_SetImgPicture) == 0x000038, "Wrong size on PyWidget_Common_ImageMaskCut_SetImgPicture");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetImgPicture, Img_Picture_0) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_SetImgPicture::Img_Picture_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetImgPicture, Img_Picture_Soft) == 0x000008, "Member 'PyWidget_Common_ImageMaskCut_SetImgPicture::Img_Picture_Soft' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_SetImgPicture;
 
 // PythonFunction PyWidget_Common_ImageMaskCut.PyWidget_Common_ImageMaskCut.SetLoadimgPicture
 // 0x0008 (0x0008 - 0x0000)
@@ -80,9 +69,7 @@ struct PyWidget_Common_ImageMaskCut_SetLoadimgPicture final
 public:
 	class UObject*                                Img_Picture_0;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ImageMaskCut_SetLoadimgPicture) == 0x000008, "Wrong alignment on PyWidget_Common_ImageMaskCut_SetLoadimgPicture");
-static_assert(sizeof(PyWidget_Common_ImageMaskCut_SetLoadimgPicture) == 0x000008, "Wrong size on PyWidget_Common_ImageMaskCut_SetLoadimgPicture");
-static_assert(offsetof(PyWidget_Common_ImageMaskCut_SetLoadimgPicture, Img_Picture_0) == 0x000000, "Member 'PyWidget_Common_ImageMaskCut_SetLoadimgPicture::Img_Picture_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ImageMaskCut_SetLoadimgPicture;
 
 }
 

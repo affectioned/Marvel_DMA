@@ -51,35 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherCableActor">();
+		STATIC_CLASS_IMPL("TetherCableActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherCableActor")
 	}
 	static class ATetherCableActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATetherCableActor>();
 	}
 };
-static_assert(alignof(ATetherCableActor) == 0x000010, "Wrong alignment on ATetherCableActor");
-static_assert(sizeof(ATetherCableActor) == 0x000890, "Wrong size on ATetherCableActor");
-static_assert(offsetof(ATetherCableActor, CableProperties) == 0x0006D8, "Member 'ATetherCableActor::CableProperties' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bLockCurrentState) == 0x000780, "Member 'ATetherCableActor::bLockCurrentState' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bSynchronousRealtime) == 0x000781, "Member 'ATetherCableActor::bSynchronousRealtime' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, RealtimeInEditorTimeDilation) == 0x000784, "Member 'ATetherCableActor::RealtimeInEditorTimeDilation' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeSimulationParticles) == 0x000788, "Member 'ATetherCableActor::bDebugVisualizeSimulationParticles' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeSimulationCollision) == 0x000789, "Member 'ATetherCableActor::bDebugVisualizeSimulationCollision' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeBuiltStaticMeshPoints) == 0x00078A, "Member 'ATetherCableActor::bDebugVisualizeBuiltStaticMeshPoints' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeContactPoints) == 0x00078B, "Member 'ATetherCableActor::bDebugVisualizeContactPoints' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeComponentLocations) == 0x00078C, "Member 'ATetherCableActor::bDebugVisualizeComponentLocations' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bDebugVisualizeTangents) == 0x00078D, "Member 'ATetherCableActor::bDebugVisualizeTangents' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, bVisible) == 0x00078E, "Member 'ATetherCableActor::bVisible' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, SceneRoot) == 0x000790, "Member 'ATetherCableActor::SceneRoot' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, StaticMeshComponent) == 0x000798, "Member 'ATetherCableActor::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, TimeCreated) == 0x0007A0, "Member 'ATetherCableActor::TimeCreated' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, GuideSpline) == 0x0007A8, "Member 'ATetherCableActor::GuideSpline' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, ActiveSimulationModel) == 0x0007B0, "Member 'ATetherCableActor::ActiveSimulationModel' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, StaticMesh) == 0x000830, "Member 'ATetherCableActor::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, BuiltCurveDescriptionLocalSpaceSimplified) == 0x000838, "Member 'ATetherCableActor::BuiltCurveDescriptionLocalSpaceSimplified' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, DynamicPreviewMesh) == 0x000878, "Member 'ATetherCableActor::DynamicPreviewMesh' has a wrong offset!");
-static_assert(offsetof(ATetherCableActor, MeshGenerator) == 0x000880, "Member 'ATetherCableActor::MeshGenerator' has a wrong offset!");
+DUMPER7_ASSERTS_ATetherCableActor;
 
 // Class Tether.TetherCableMeshComponent
 // 0x0050 (0x08D0 - 0x0880)
@@ -91,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherCableMeshComponent">();
+		STATIC_CLASS_IMPL("TetherCableMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherCableMeshComponent")
 	}
 	static class UTetherCableMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTetherCableMeshComponent>();
 	}
 };
-static_assert(alignof(UTetherCableMeshComponent) == 0x000010, "Wrong alignment on UTetherCableMeshComponent");
-static_assert(sizeof(UTetherCableMeshComponent) == 0x0008D0, "Wrong size on UTetherCableMeshComponent");
+DUMPER7_ASSERTS_UTetherCableMeshComponent;
 
 // Class Tether.TetherGuideSplineMetadata
 // 0x0010 (0x0040 - 0x0030)
@@ -111,16 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherGuideSplineMetadata">();
+		STATIC_CLASS_IMPL("TetherGuideSplineMetadata")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherGuideSplineMetadata")
 	}
 	static class UTetherGuideSplineMetadata* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTetherGuideSplineMetadata>();
 	}
 };
-static_assert(alignof(UTetherGuideSplineMetadata) == 0x000008, "Wrong alignment on UTetherGuideSplineMetadata");
-static_assert(sizeof(UTetherGuideSplineMetadata) == 0x000040, "Wrong size on UTetherGuideSplineMetadata");
-static_assert(offsetof(UTetherGuideSplineMetadata, PointSegmentDefinitions) == 0x000030, "Member 'UTetherGuideSplineMetadata::PointSegmentDefinitions' has a wrong offset!");
+DUMPER7_ASSERTS_UTetherGuideSplineMetadata;
 
 // Class Tether.TetherGuideSplineComponent
 // 0x0030 (0x08F0 - 0x08C0)
@@ -133,16 +121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherGuideSplineComponent">();
+		STATIC_CLASS_IMPL("TetherGuideSplineComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherGuideSplineComponent")
 	}
 	static class UTetherGuideSplineComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTetherGuideSplineComponent>();
 	}
 };
-static_assert(alignof(UTetherGuideSplineComponent) == 0x000010, "Wrong alignment on UTetherGuideSplineComponent");
-static_assert(sizeof(UTetherGuideSplineComponent) == 0x0008F0, "Wrong size on UTetherGuideSplineComponent");
-static_assert(offsetof(UTetherGuideSplineComponent, Metadata) == 0x0008E8, "Member 'UTetherGuideSplineComponent::Metadata' has a wrong offset!");
+DUMPER7_ASSERTS_UTetherGuideSplineComponent;
 
 // Class Tether.TetherMeshGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -151,15 +141,18 @@ class UTetherMeshGenerator : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherMeshGenerator">();
+		STATIC_CLASS_IMPL("TetherMeshGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherMeshGenerator")
 	}
 	static class UTetherMeshGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTetherMeshGenerator>();
 	}
 };
-static_assert(alignof(UTetherMeshGenerator) == 0x000008, "Wrong alignment on UTetherMeshGenerator");
-static_assert(sizeof(UTetherMeshGenerator) == 0x000030, "Wrong size on UTetherMeshGenerator");
+DUMPER7_ASSERTS_UTetherMeshGenerator;
 
 // Class Tether.TetherPointSegmentDefinition
 // 0x0008 (0x0038 - 0x0030)
@@ -173,17 +166,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TetherPointSegmentDefinition">();
+		STATIC_CLASS_IMPL("TetherPointSegmentDefinition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TetherPointSegmentDefinition")
 	}
 	static class UTetherPointSegmentDefinition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTetherPointSegmentDefinition>();
 	}
 };
-static_assert(alignof(UTetherPointSegmentDefinition) == 0x000008, "Wrong alignment on UTetherPointSegmentDefinition");
-static_assert(sizeof(UTetherPointSegmentDefinition) == 0x000038, "Wrong size on UTetherPointSegmentDefinition");
-static_assert(offsetof(UTetherPointSegmentDefinition, Slack) == 0x000030, "Member 'UTetherPointSegmentDefinition::Slack' has a wrong offset!");
-static_assert(offsetof(UTetherPointSegmentDefinition, SimulationOptions) == 0x000034, "Member 'UTetherPointSegmentDefinition::SimulationOptions' has a wrong offset!");
+DUMPER7_ASSERTS_UTetherPointSegmentDefinition;
 
 // Class Tether.TMG_Basic
 // 0x0020 (0x0050 - 0x0030)
@@ -196,16 +190,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TMG_Basic">();
+		STATIC_CLASS_IMPL("TMG_Basic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TMG_Basic")
 	}
 	static class UTMG_Basic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTMG_Basic>();
 	}
 };
-static_assert(alignof(UTMG_Basic) == 0x000008, "Wrong alignment on UTMG_Basic");
-static_assert(sizeof(UTMG_Basic) == 0x000050, "Wrong size on UTMG_Basic");
-static_assert(offsetof(UTMG_Basic, Properties) == 0x000030, "Member 'UTMG_Basic::Properties' has a wrong offset!");
+DUMPER7_ASSERTS_UTMG_Basic;
 
 // Class Tether.TMG_CustomMesh
 // 0x0040 (0x0070 - 0x0030)
@@ -217,16 +213,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TMG_CustomMesh">();
+		STATIC_CLASS_IMPL("TMG_CustomMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TMG_CustomMesh")
 	}
 	static class UTMG_CustomMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTMG_CustomMesh>();
 	}
 };
-static_assert(alignof(UTMG_CustomMesh) == 0x000008, "Wrong alignment on UTMG_CustomMesh");
-static_assert(sizeof(UTMG_CustomMesh) == 0x000070, "Wrong size on UTMG_CustomMesh");
-static_assert(offsetof(UTMG_CustomMesh, Properties) == 0x000030, "Member 'UTMG_CustomMesh::Properties' has a wrong offset!");
+DUMPER7_ASSERTS_UTMG_CustomMesh;
 
 }
 

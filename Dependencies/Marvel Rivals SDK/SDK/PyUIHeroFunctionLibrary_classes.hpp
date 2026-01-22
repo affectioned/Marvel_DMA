@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIHeroFunctionLibrary">();
+		STATIC_CLASS_IMPL("PyUIHeroFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIHeroFunctionLibrary")
 	}
 	static class UPyUIHeroFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIHeroFunctionLibrary>();
 	}
 };
-static_assert(alignof(UPyUIHeroFunctionLibrary) == 0x000008, "Wrong alignment on UPyUIHeroFunctionLibrary");
-static_assert(sizeof(UPyUIHeroFunctionLibrary) == 0x000030, "Wrong size on UPyUIHeroFunctionLibrary");
+DUMPER7_ASSERTS_UPyUIHeroFunctionLibrary;
 
 }
 

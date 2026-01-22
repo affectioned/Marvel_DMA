@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Penetration_C">();
+		BP_STATIC_CLASS_IMPL("BP_Penetration_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Penetration_C")
 	}
 	static class ABP_Penetration_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Penetration_C>();
 	}
 };
-static_assert(alignof(ABP_Penetration_C) == 0x000010, "Wrong alignment on ABP_Penetration_C");
-static_assert(sizeof(ABP_Penetration_C) == 0x000700, "Wrong size on ABP_Penetration_C");
-static_assert(offsetof(ABP_Penetration_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_Penetration_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Penetration_C, PlayerPenetrationCheck) == 0x0006E8, "Member 'ABP_Penetration_C::PlayerPenetrationCheck' has a wrong offset!");
-static_assert(offsetof(ABP_Penetration_C, DefaultSceneRoot) == 0x0006F0, "Member 'ABP_Penetration_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_Penetration_C, NewVar) == 0x0006F8, "Member 'ABP_Penetration_C::NewVar' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Penetration_C;
 
 }
 

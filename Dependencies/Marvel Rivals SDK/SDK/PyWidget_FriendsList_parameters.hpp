@@ -21,9 +21,7 @@ struct PyWidget_Friends_List_MarvelSetVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_List_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Friends_List_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Friends_List_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Friends_List_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Friends_List_MarvelSetVisible, visible) == 0x000000, "Member 'PyWidget_Friends_List_MarvelSetVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_List_MarvelSetVisible;
 
 // PythonFunction PyWidget_FriendsList.PyWidget_Friends_List.SetFocusingWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Friends_List_SetFocusingWidget final
 public:
 	class UWidget*                                widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_List_SetFocusingWidget) == 0x000008, "Wrong alignment on PyWidget_Friends_List_SetFocusingWidget");
-static_assert(sizeof(PyWidget_Friends_List_SetFocusingWidget) == 0x000008, "Wrong size on PyWidget_Friends_List_SetFocusingWidget");
-static_assert(offsetof(PyWidget_Friends_List_SetFocusingWidget, widget) == 0x000000, "Member 'PyWidget_Friends_List_SetFocusingWidget::widget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_List_SetFocusingWidget;
 
 // PythonFunction PyWidget_FriendsList.PyWidget_Friends_ListTitle.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Friends_ListTitle_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Friends_ListTitle_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Friends_ListTitle_SetIsHover");
-static_assert(sizeof(PyWidget_Friends_ListTitle_SetIsHover) == 0x000001, "Wrong size on PyWidget_Friends_ListTitle_SetIsHover");
-static_assert(offsetof(PyWidget_Friends_ListTitle_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Friends_ListTitle_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Friends_ListTitle_SetIsHover;
 
 // PythonFunction PyWidget_FriendsList.PyWidget_FriendsItemBtn.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_FriendsItemBtn_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsItemBtn_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_FriendsItemBtn_PreConstruct");
-static_assert(sizeof(PyWidget_FriendsItemBtn_PreConstruct) == 0x000001, "Wrong size on PyWidget_FriendsItemBtn_PreConstruct");
-static_assert(offsetof(PyWidget_FriendsItemBtn_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_FriendsItemBtn_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsItemBtn_PreConstruct;
 
 }
 

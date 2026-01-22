@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BowReticle">();
+		STATIC_CLASS_IMPL("PyWidget_BowReticle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BowReticle")
 	}
 	static class UPyWidget_BowReticle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BowReticle>();
 	}
 };
-static_assert(alignof(UPyWidget_BowReticle) == 0x000008, "Wrong alignment on UPyWidget_BowReticle");
-static_assert(sizeof(UPyWidget_BowReticle) == 0x000548, "Wrong size on UPyWidget_BowReticle");
+DUMPER7_ASSERTS_UPyWidget_BowReticle;
 
 }
 

@@ -17,41 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BuffDebugUI.WBP_BuffDebugUI_C
-// 0x0048 (0x0688 - 0x0640)
+// 0x0048 (0x0690 - 0x0648)
 class UWBP_BuffDebugUI_C final : public UPyWidget_BuffDebugPanel
 {
 public:
-	class UBorder*                                Border;                                            // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Custom;                                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     CustomBox;                                         // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEditableText*                          EditableText_Custom;                               // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UGridPanel*                             GridPanel_101;                                     // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_Custom;                                // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextBlock_Custom;                                  // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextBlock_Description;                             // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextBlock_Tips;                                    // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Border;                                            // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Custom;                                        // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     CustomBox;                                         // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEditableText*                          EditableText_Custom;                               // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UGridPanel*                             GridPanel_101;                                     // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_Custom;                                // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_Custom;                                  // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_Description;                             // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_Tips;                                    // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BuffDebugUI_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BuffDebugUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BuffDebugUI_C")
 	}
 	static class UWBP_BuffDebugUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BuffDebugUI_C>();
 	}
 };
-static_assert(alignof(UWBP_BuffDebugUI_C) == 0x000008, "Wrong alignment on UWBP_BuffDebugUI_C");
-static_assert(sizeof(UWBP_BuffDebugUI_C) == 0x000688, "Wrong size on UWBP_BuffDebugUI_C");
-static_assert(offsetof(UWBP_BuffDebugUI_C, Border) == 0x000640, "Member 'UWBP_BuffDebugUI_C::Border' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, Btn_Custom) == 0x000648, "Member 'UWBP_BuffDebugUI_C::Btn_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, CustomBox) == 0x000650, "Member 'UWBP_BuffDebugUI_C::CustomBox' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, EditableText_Custom) == 0x000658, "Member 'UWBP_BuffDebugUI_C::EditableText_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, GridPanel_101) == 0x000660, "Member 'UWBP_BuffDebugUI_C::GridPanel_101' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, MarvelImage_Custom) == 0x000668, "Member 'UWBP_BuffDebugUI_C::MarvelImage_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, TextBlock_Custom) == 0x000670, "Member 'UWBP_BuffDebugUI_C::TextBlock_Custom' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, TextBlock_Description) == 0x000678, "Member 'UWBP_BuffDebugUI_C::TextBlock_Description' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffDebugUI_C, TextBlock_Tips) == 0x000680, "Member 'UWBP_BuffDebugUI_C::TextBlock_Tips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BuffDebugUI_C;
 
 }
 

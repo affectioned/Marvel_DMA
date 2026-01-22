@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_MainPanel.PyWidget_Activity151_MainPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Activity151_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyles;                               // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyles;                               // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_MainPanel")
 	}
 	static class UPyWidget_Activity151_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity151_MainPanel");
-static_assert(sizeof(UPyWidget_Activity151_MainPanel) == 0x000608, "Wrong size on UPyWidget_Activity151_MainPanel");
-static_assert(offsetof(UPyWidget_Activity151_MainPanel, SkipGuideTipsStyles) == 0x0005F8, "Member 'UPyWidget_Activity151_MainPanel::SkipGuideTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_MainPanel;
 
 }
 

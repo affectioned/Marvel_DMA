@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity131_Cover.PyWidget_Activity131_Cover_Reward
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity131_Cover_Reward final : public UPyWidget_ActivityExpBpBase_Cover_Reward
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity131_Cover_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity131_Cover_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity131_Cover_Reward")
 	}
 	static class UPyWidget_Activity131_Cover_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity131_Cover_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity131_Cover_Reward) == 0x000008, "Wrong alignment on UPyWidget_Activity131_Cover_Reward");
-static_assert(sizeof(UPyWidget_Activity131_Cover_Reward) == 0x0005C0, "Wrong size on UPyWidget_Activity131_Cover_Reward");
+DUMPER7_ASSERTS_UPyWidget_Activity131_Cover_Reward;
 
 // PythonClass PyWidget_Activity131_Cover.PyWidget_Activity131_Cover
-// 0x0000 (0x0648 - 0x0648)
+// 0x0000 (0x0650 - 0x0650)
 class UPyWidget_Activity131_Cover final : public UPyWidget_ActivityExpBpBase_Cover
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity131_Cover">();
+		STATIC_CLASS_IMPL("PyWidget_Activity131_Cover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity131_Cover")
 	}
 	static class UPyWidget_Activity131_Cover* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity131_Cover>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity131_Cover) == 0x000008, "Wrong alignment on UPyWidget_Activity131_Cover");
-static_assert(sizeof(UPyWidget_Activity131_Cover) == 0x000648, "Wrong size on UPyWidget_Activity131_Cover");
+DUMPER7_ASSERTS_UPyWidget_Activity131_Cover;
 
 }
 

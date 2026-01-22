@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103021.PyBuffAbility_120_10302102
-// 0x0018 (0x1428 - 0x1410)
+// 0x0018 (0x1440 - 0x1428)
 class UPyBuffAbility_120_10302102 final : public UMarvelTimelineAccelerateAbility
 {
 public:
-	float                                         MaxAmmo1;                                          // 0x1410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MouseLeftAddBounceCount;                           // 0x1414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MouseRightAddBounceCount;                          // 0x1418(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MouseLeftBounceDamagePadValue;                     // 0x141C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MouseRightBounceDamagePadValue;                    // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAmmo1;                                          // 0x1428(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MouseLeftAddBounceCount;                           // 0x142C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MouseRightAddBounceCount;                          // 0x1430(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MouseLeftBounceDamagePadValue;                     // 0x1434(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MouseRightBounceDamagePadValue;                    // 0x1438(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10302102">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10302102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10302102")
 	}
 	static class UPyBuffAbility_120_10302102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10302102>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10302102) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10302102");
-static_assert(sizeof(UPyBuffAbility_120_10302102) == 0x001428, "Wrong size on UPyBuffAbility_120_10302102");
-static_assert(offsetof(UPyBuffAbility_120_10302102, MaxAmmo1) == 0x001410, "Member 'UPyBuffAbility_120_10302102::MaxAmmo1' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10302102, MouseLeftAddBounceCount) == 0x001414, "Member 'UPyBuffAbility_120_10302102::MouseLeftAddBounceCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10302102, MouseRightAddBounceCount) == 0x001418, "Member 'UPyBuffAbility_120_10302102::MouseRightAddBounceCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10302102, MouseLeftBounceDamagePadValue) == 0x00141C, "Member 'UPyBuffAbility_120_10302102::MouseLeftBounceDamagePadValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10302102, MouseRightBounceDamagePadValue) == 0x001420, "Member 'UPyBuffAbility_120_10302102::MouseRightBounceDamagePadValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10302102;
 
 }
 

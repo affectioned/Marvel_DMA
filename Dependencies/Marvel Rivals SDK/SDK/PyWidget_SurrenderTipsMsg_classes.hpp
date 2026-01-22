@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SurrenderTipsMsg.PyWidget_SurrenderTipsMsg
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_SurrenderTipsMsg : public UMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SurrenderTipsMsg">();
+		STATIC_CLASS_IMPL("PyWidget_SurrenderTipsMsg")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SurrenderTipsMsg")
 	}
 	static class UPyWidget_SurrenderTipsMsg* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SurrenderTipsMsg>();
 	}
 };
-static_assert(alignof(UPyWidget_SurrenderTipsMsg) == 0x000008, "Wrong alignment on UPyWidget_SurrenderTipsMsg");
-static_assert(sizeof(UPyWidget_SurrenderTipsMsg) == 0x000568, "Wrong size on UPyWidget_SurrenderTipsMsg");
+DUMPER7_ASSERTS_UPyWidget_SurrenderTipsMsg;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Hero_1031_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "PyUIC_EffectiveTarget_classes.hpp"
 #include "PyWidget3D_BuffMonitor_classes.hpp"
 
@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103161.PyUIController_103162_V7
-// 0x0000 (0x1020 - 0x1020)
+// 0x0000 (0x1300 - 0x1300)
 class UPyUIController_103162_V7 final : public UPyUIController_EffectiveTargetBase
 {
 public:
@@ -32,27 +32,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103162_V7">();
+		STATIC_CLASS_IMPL("PyUIController_103162_V7")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103162_V7")
 	}
 	static class UPyUIController_103162_V7* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103162_V7>();
 	}
 };
-static_assert(alignof(UPyUIController_103162_V7) == 0x000010, "Wrong alignment on UPyUIController_103162_V7");
-static_assert(sizeof(UPyUIController_103162_V7) == 0x001020, "Wrong size on UPyUIController_103162_V7");
+DUMPER7_ASSERTS_UPyUIController_103162_V7;
 
 // PythonClass PyAbility_103161.PyCue_Buff_10316101
-// 0x0050 (0x1710 - 0x16C0)
+// 0x0050 (0x17C0 - 0x1770)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyCue_Buff_10316101 : public ACue_Buff_10316101
 {
 public:
-	class UFXSystemAsset*                         BuffFx;                                            // 0x16C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                FxLocOffset;                                       // 0x16C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UFXSystemAsset*>                 SimpleFXs;                                         // 0x16E0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FName                                   SimpleFxSocket;                                    // 0x16F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SimpleFxHeightParam;                               // 0x16FC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         BuffFx;                                            // 0x1770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                FxLocOffset;                                       // 0x1778(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UFXSystemAsset*>                 SimpleFXs;                                         // 0x1790(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FName                                   SimpleFxSocket;                                    // 0x17A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SimpleFxHeightParam;                               // 0x17AC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -64,7 +67,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10316101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10316101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10316101")
 	}
 	static class APyCue_Buff_10316101* GetDefaultObj()
 	{
@@ -72,16 +79,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyCue_Buff_10316101) == 0x000010, "Wrong alignment on APyCue_Buff_10316101");
-static_assert(sizeof(APyCue_Buff_10316101) == 0x001710, "Wrong size on APyCue_Buff_10316101");
-static_assert(offsetof(APyCue_Buff_10316101, BuffFx) == 0x0016C0, "Member 'APyCue_Buff_10316101::BuffFx' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10316101, FxLocOffset) == 0x0016C8, "Member 'APyCue_Buff_10316101::FxLocOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10316101, SimpleFXs) == 0x0016E0, "Member 'APyCue_Buff_10316101::SimpleFXs' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10316101, SimpleFxSocket) == 0x0016F0, "Member 'APyCue_Buff_10316101::SimpleFxSocket' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10316101, SimpleFxHeightParam) == 0x0016FC, "Member 'APyCue_Buff_10316101::SimpleFxHeightParam' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10316101;
 
 // PythonClass PyAbility_103161.PyUIController_103162
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_103162 final : public UUIC_Ability
 {
 public:
@@ -96,32 +97,40 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103162">();
+		STATIC_CLASS_IMPL("PyUIController_103162")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103162")
 	}
 	static class UPyUIController_103162* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103162>();
 	}
 };
-static_assert(alignof(UPyUIController_103162) == 0x000008, "Wrong alignment on UPyUIController_103162");
-static_assert(sizeof(UPyUIController_103162) == 0x000F10, "Wrong size on UPyUIController_103162");
+DUMPER7_ASSERTS_UPyUIController_103162;
 
 // PythonClass PyAbility_103161.PyWidget3D_BuffMarker_10316101
-// 0x0000 (0x0870 - 0x0870)
-class UPyWidget3D_BuffMarker_10316101 : public UPyWidget3D_BuffMonitor
+// 0x0000 (0x0880 - 0x0880)
+#pragma pack(push, 0x1)
+class alignas(0x10) UPyWidget3D_BuffMarker_10316101 : public UPyWidget3D_BuffMonitor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_BuffMarker_10316101">();
+		STATIC_CLASS_IMPL("PyWidget3D_BuffMarker_10316101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_BuffMarker_10316101")
 	}
 	static class UPyWidget3D_BuffMarker_10316101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_BuffMarker_10316101>();
 	}
 };
-static_assert(alignof(UPyWidget3D_BuffMarker_10316101) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMarker_10316101");
-static_assert(sizeof(UPyWidget3D_BuffMarker_10316101) == 0x000870, "Wrong size on UPyWidget3D_BuffMarker_10316101");
+#pragma pack(pop)
+DUMPER7_ASSERTS_UPyWidget3D_BuffMarker_10316101;
 
 }
 

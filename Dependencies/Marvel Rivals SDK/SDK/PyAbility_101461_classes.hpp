@@ -12,77 +12,52 @@
 
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "DeclarativeUnreal_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Hero_1014_structs.hpp"
 #include "Hero_1014_classes.hpp"
-#include "DeclarativeUnreal_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyAbility_101461.PyUIController_101461
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_101461 final : public UUIC_Ability
-{
-public:
-	void OnInit();
-	void OnDestruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_101461">();
-	}
-	static class UPyUIController_101461* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_101461>();
-	}
-};
-static_assert(alignof(UPyUIController_101461) == 0x000008, "Wrong alignment on UPyUIController_101461");
-static_assert(sizeof(UPyUIController_101461) == 0x000F10, "Wrong size on UPyUIController_101461");
-
 // PythonClass PyAbility_101461.PyConfig_101461
-// 0x16B0 (0x2F20 - 0x1870)
+// 0x1A00 (0x35C0 - 0x1BC0)
 class UPyConfig_101461 : public UConfig_101461
 {
 public:
-	struct FGameplayTag                           FireNeedTag;                                       // 0x1870(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SummonerID;                                        // 0x187C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TurretHeight;                                      // 0x1880(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TurretDistance;                                    // 0x1884(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TurretRadius;                                      // 0x1888(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_188C[0x4];                                     // 0x188C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1890(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FShootModeSensitivityParam             SensitivityParam;                                  // 0x2EF0(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           FireNeedTag;                                       // 0x1BC0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SummonerID;                                        // 0x1BCC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TurretHeight;                                      // 0x1BD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TurretDistance;                                    // 0x1BD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TurretRadius;                                      // 0x1BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1BDC[0x4];                                     // 0x1BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1BE0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FShootModeSensitivityParam             SensitivityParam;                                  // 0x3590(0x0024)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101461">();
+		STATIC_CLASS_IMPL("PyConfig_101461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101461")
 	}
 	static class UPyConfig_101461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101461>();
 	}
 };
-static_assert(alignof(UPyConfig_101461) == 0x000010, "Wrong alignment on UPyConfig_101461");
-static_assert(sizeof(UPyConfig_101461) == 0x002F20, "Wrong size on UPyConfig_101461");
-static_assert(offsetof(UPyConfig_101461, FireNeedTag) == 0x001870, "Member 'UPyConfig_101461::FireNeedTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, SummonerID) == 0x00187C, "Member 'UPyConfig_101461::SummonerID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, TurretHeight) == 0x001880, "Member 'UPyConfig_101461::TurretHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, TurretDistance) == 0x001884, "Member 'UPyConfig_101461::TurretDistance' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, TurretRadius) == 0x001888, "Member 'UPyConfig_101461::TurretRadius' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, GroundTraceContext) == 0x001890, "Member 'UPyConfig_101461::GroundTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101461, SensitivityParam) == 0x002EF0, "Member 'UPyConfig_101461::SensitivityParam' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101461;
 
 // PythonClass PyAbility_101461.PySummoner_101461
-// 0x0010 (0x0D50 - 0x0D40)
+// 0x0010 (0x0D70 - 0x0D60)
 class APySummoner_101461 : public ASummoned_10146101
 {
 public:
-	TMulticastInlineDelegate<void()>              OnTurretGetOutStart;                               // 0x0D40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTurretGetOutStart;                               // 0x0D60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -91,25 +66,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoner_101461">();
+		STATIC_CLASS_IMPL("PySummoner_101461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoner_101461")
 	}
 	static class APySummoner_101461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoner_101461>();
 	}
 };
-static_assert(alignof(APySummoner_101461) == 0x000010, "Wrong alignment on APySummoner_101461");
-static_assert(sizeof(APySummoner_101461) == 0x000D50, "Wrong size on APySummoner_101461");
-static_assert(offsetof(APySummoner_101461, OnTurretGetOutStart) == 0x000D40, "Member 'APySummoner_101461::OnTurretGetOutStart' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoner_101461;
 
 // PythonClass PyAbility_101461.PyAbility_101461
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPyAbility_101461 : public UMarvelGameplayAbility
 {
 public:
-	int32                                         CurTurretState;                                    // 0x29F0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceThreshole;                                 // 0x29F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool InTurret)> TurretStateDispatcher;                             // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         CurTurretState;                                    // 0x2A40(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceThreshole;                                 // 0x2A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool InTurret)> TurretStateDispatcher;                             // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -137,44 +114,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101461">();
+		STATIC_CLASS_IMPL("PyAbility_101461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101461")
 	}
 	static class UPyAbility_101461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101461>();
 	}
 };
-static_assert(alignof(UPyAbility_101461) == 0x000008, "Wrong alignment on UPyAbility_101461");
-static_assert(sizeof(UPyAbility_101461) == 0x002A08, "Wrong size on UPyAbility_101461");
-static_assert(offsetof(UPyAbility_101461, CurTurretState) == 0x0029F0, "Member 'UPyAbility_101461::CurTurretState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101461, DistanceThreshole) == 0x0029F4, "Member 'UPyAbility_101461::DistanceThreshole' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101461, TurretStateDispatcher) == 0x0029F8, "Member 'UPyAbility_101461::TurretStateDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101461;
 
 // PythonClass PyAbility_101461.PyCue_SummonerLoop_10146101
-// 0x0060 (0x1260 - 0x1200)
+// 0x0060 (0x12C0 - 0x1260)
 class APyCue_SummonerLoop_10146101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BulletDropAudioDelay;                              // 0x1200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1204[0x4];                                     // 0x1204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           Sockets;                                           // 0x1208(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1218(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bUseCombineMuzzuleEffect;                          // 0x1228(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1229[0x7];                                     // 0x1229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         MuzzuleEffect;                                     // 0x1230(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULegacyCameraShake>         ShakeClass;                                        // 0x1238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CFireAudioId;                                      // 0x1240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CFireStartAudioId;                                 // 0x1244(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CFireEndAudioId;                                   // 0x1248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StartRotAudioID;                                   // 0x124C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RotAudioID;                                        // 0x1250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BulletAudioID;                                     // 0x1254(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BulletDropAudioDelay;                              // 0x1260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1264[0x4];                                     // 0x1264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           Sockets;                                           // 0x1268(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1278(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bUseCombineMuzzuleEffect;                          // 0x1288(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1289[0x7];                                     // 0x1289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         MuzzuleEffect;                                     // 0x1290(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULegacyCameraShake>         ShakeClass;                                        // 0x1298(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CFireAudioId;                                      // 0x12A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CFireStartAudioId;                                 // 0x12A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CFireEndAudioId;                                   // 0x12A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StartRotAudioID;                                   // 0x12AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RotAudioID;                                        // 0x12B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BulletAudioID;                                     // 0x12B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnWeaponSpawned(class AShootingWeapon* Weapon, const struct FMarvelEquipmentTable& WeaponInfo);
 	void OnAmmoChanged();
 	void OnAmmoChangedFunc();
 	void AudioControl(ERotateAudioControl RotateAudioControl);
@@ -194,30 +172,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_SummonerLoop_10146101">();
+		STATIC_CLASS_IMPL("PyCue_SummonerLoop_10146101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_SummonerLoop_10146101")
 	}
 	static class APyCue_SummonerLoop_10146101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_SummonerLoop_10146101>();
 	}
 };
-static_assert(alignof(APyCue_SummonerLoop_10146101) == 0x000010, "Wrong alignment on APyCue_SummonerLoop_10146101");
-static_assert(sizeof(APyCue_SummonerLoop_10146101) == 0x001260, "Wrong size on APyCue_SummonerLoop_10146101");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, BulletDropAudioDelay) == 0x001200, "Member 'APyCue_SummonerLoop_10146101::BulletDropAudioDelay' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, Sockets) == 0x001208, "Member 'APyCue_SummonerLoop_10146101::Sockets' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, ViewTargetWatcher) == 0x001218, "Member 'APyCue_SummonerLoop_10146101::ViewTargetWatcher' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, bUseCombineMuzzuleEffect) == 0x001228, "Member 'APyCue_SummonerLoop_10146101::bUseCombineMuzzuleEffect' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, MuzzuleEffect) == 0x001230, "Member 'APyCue_SummonerLoop_10146101::MuzzuleEffect' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, ShakeClass) == 0x001238, "Member 'APyCue_SummonerLoop_10146101::ShakeClass' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, CFireAudioId) == 0x001240, "Member 'APyCue_SummonerLoop_10146101::CFireAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, CFireStartAudioId) == 0x001244, "Member 'APyCue_SummonerLoop_10146101::CFireStartAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, CFireEndAudioId) == 0x001248, "Member 'APyCue_SummonerLoop_10146101::CFireEndAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, StartRotAudioID) == 0x00124C, "Member 'APyCue_SummonerLoop_10146101::StartRotAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, RotAudioID) == 0x001250, "Member 'APyCue_SummonerLoop_10146101::RotAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_SummonerLoop_10146101, BulletAudioID) == 0x001254, "Member 'APyCue_SummonerLoop_10146101::BulletAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_SummonerLoop_10146101;
 
 // PythonClass PyAbility_101461.PyCue_Projectile_HitImpact_10146101
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10146101 final : public UMarvelCueNotify_HitImpact
 {
 public:
@@ -226,15 +195,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10146101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10146101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10146101")
 	}
 	static class UPyCue_Projectile_HitImpact_10146101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10146101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10146101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10146101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10146101) == 0x0005C8, "Wrong size on UPyCue_Projectile_HitImpact_10146101");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10146101;
+
+// PythonClass PyAbility_101461.PyUIController_101461
+// 0x0000 (0x11F0 - 0x11F0)
+class UPyUIController_101461 final : public UUIC_Ability
+{
+public:
+	void OnInit();
+	void OnDestruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyUIController_101461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101461")
+	}
+	static class UPyUIController_101461* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyUIController_101461>();
+	}
+};
+DUMPER7_ASSERTS_UPyUIController_101461;
 
 }
 

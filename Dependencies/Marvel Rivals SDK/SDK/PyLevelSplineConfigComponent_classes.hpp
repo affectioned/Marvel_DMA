@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -41,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSplineConfigComponent">();
+		STATIC_CLASS_IMPL("PyLevelSplineConfigComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSplineConfigComponent")
 	}
 	static class UPyLevelSplineConfigComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSplineConfigComponent>();
 	}
 };
-static_assert(alignof(UPyLevelSplineConfigComponent) == 0x000008, "Wrong alignment on UPyLevelSplineConfigComponent");
-static_assert(sizeof(UPyLevelSplineConfigComponent) == 0x000130, "Wrong size on UPyLevelSplineConfigComponent");
-static_assert(offsetof(UPyLevelSplineConfigComponent, Splines) == 0x000108, "Member 'UPyLevelSplineConfigComponent::Splines' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, StartPointIndex) == 0x000118, "Member 'UPyLevelSplineConfigComponent::StartPointIndex' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, StartPointProg) == 0x00011C, "Member 'UPyLevelSplineConfigComponent::StartPointProg' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, AutoSwitchNextLine) == 0x000120, "Member 'UPyLevelSplineConfigComponent::AutoSwitchNextLine' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, FaceToFront) == 0x000121, "Member 'UPyLevelSplineConfigComponent::FaceToFront' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, IsAutoMove) == 0x000122, "Member 'UPyLevelSplineConfigComponent::IsAutoMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, InitialSpeed) == 0x000124, "Member 'UPyLevelSplineConfigComponent::InitialSpeed' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineConfigComponent, IsSpeedOneWayPass) == 0x00012C, "Member 'UPyLevelSplineConfigComponent::IsSpeedOneWayPass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelSplineConfigComponent;
 
 }
 

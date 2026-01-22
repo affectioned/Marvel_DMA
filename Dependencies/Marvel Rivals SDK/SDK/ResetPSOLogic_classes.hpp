@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingResetPSOLogicHandler">();
+		STATIC_CLASS_IMPL("UISettingResetPSOLogicHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingResetPSOLogicHandler")
 	}
 	static class UUISettingResetPSOLogicHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingResetPSOLogicHandler>();
 	}
 };
-static_assert(alignof(UUISettingResetPSOLogicHandler) == 0x000008, "Wrong alignment on UUISettingResetPSOLogicHandler");
-static_assert(sizeof(UUISettingResetPSOLogicHandler) == 0x000030, "Wrong size on UUISettingResetPSOLogicHandler");
+DUMPER7_ASSERTS_UUISettingResetPSOLogicHandler;
 
 // PythonClass ResetPSOLogic.PySettingEntryUICResetPSOLogic
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUICResetPSOLogic">();
+		STATIC_CLASS_IMPL("PySettingEntryUICResetPSOLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUICResetPSOLogic")
 	}
 	static class UPySettingEntryUICResetPSOLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUICResetPSOLogic>();
 	}
 };
-static_assert(alignof(UPySettingEntryUICResetPSOLogic) == 0x000008, "Wrong alignment on UPySettingEntryUICResetPSOLogic");
-static_assert(sizeof(UPySettingEntryUICResetPSOLogic) == 0x000030, "Wrong size on UPySettingEntryUICResetPSOLogic");
+DUMPER7_ASSERTS_UPySettingEntryUICResetPSOLogic;
 
 }
 

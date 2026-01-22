@@ -37,28 +37,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichTextWidgetConfig_HyperLink">();
+		STATIC_CLASS_IMPL("PyRichTextWidgetConfig_HyperLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichTextWidgetConfig_HyperLink")
 	}
 	static class UPyRichTextWidgetConfig_HyperLink* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichTextWidgetConfig_HyperLink>();
 	}
 };
-static_assert(alignof(UPyRichTextWidgetConfig_HyperLink) == 0x000008, "Wrong alignment on UPyRichTextWidgetConfig_HyperLink");
-static_assert(sizeof(UPyRichTextWidgetConfig_HyperLink) == 0x000078, "Wrong size on UPyRichTextWidgetConfig_HyperLink");
-static_assert(offsetof(UPyRichTextWidgetConfig_HyperLink, WidgetWidth) == 0x000030, "Member 'UPyRichTextWidgetConfig_HyperLink::WidgetWidth' has a wrong offset!");
-static_assert(offsetof(UPyRichTextWidgetConfig_HyperLink, BackgroundImage) == 0x000038, "Member 'UPyRichTextWidgetConfig_HyperLink::BackgroundImage' has a wrong offset!");
-static_assert(offsetof(UPyRichTextWidgetConfig_HyperLink, bUseLinkIconPadding) == 0x000060, "Member 'UPyRichTextWidgetConfig_HyperLink::bUseLinkIconPadding' has a wrong offset!");
-static_assert(offsetof(UPyRichTextWidgetConfig_HyperLink, LinkIconPadding) == 0x000064, "Member 'UPyRichTextWidgetConfig_HyperLink::LinkIconPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRichTextWidgetConfig_HyperLink;
 
 // PythonClass PyWidget_MailHyperLink.PyWidget_MailHyperLink
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_MailHyperLink final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelButton*                          Btn_Icon;                                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class URichTextBlock*                         RText_Content;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelButton*                          Btn_Icon;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class URichTextBlock*                         RText_Content;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,17 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MailHyperLink">();
+		STATIC_CLASS_IMPL("PyWidget_MailHyperLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MailHyperLink")
 	}
 	static class UPyWidget_MailHyperLink* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MailHyperLink>();
 	}
 };
-static_assert(alignof(UPyWidget_MailHyperLink) == 0x000008, "Wrong alignment on UPyWidget_MailHyperLink");
-static_assert(sizeof(UPyWidget_MailHyperLink) == 0x0005D0, "Wrong size on UPyWidget_MailHyperLink");
-static_assert(offsetof(UPyWidget_MailHyperLink, Btn_Icon) == 0x0005C0, "Member 'UPyWidget_MailHyperLink::Btn_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailHyperLink, RText_Content) == 0x0005C8, "Member 'UPyWidget_MailHyperLink::RText_Content' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MailHyperLink;
 
 }
 

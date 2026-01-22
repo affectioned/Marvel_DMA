@@ -21,9 +21,7 @@ struct PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad final
 public:
 	class UObject*                                Curve;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad) == 0x000008, "Wrong alignment on PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad");
-static_assert(sizeof(PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad) == 0x000008, "Wrong size on PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad");
-static_assert(offsetof(PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad, Curve) == 0x000000, "Member 'PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad::Curve' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_talent_TipsV2_OnSoftCurveLoad;
 
 }
 

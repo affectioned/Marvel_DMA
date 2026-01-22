@@ -26,10 +26,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_105553_OnNotifySpawnProjectileSuccess) == 0x000008, "Wrong alignment on PyAbility_105553_OnNotifySpawnProjectileSuccess");
-static_assert(sizeof(PyAbility_105553_OnNotifySpawnProjectileSuccess) == 0x000170, "Wrong size on PyAbility_105553_OnNotifySpawnProjectileSuccess");
-static_assert(offsetof(PyAbility_105553_OnNotifySpawnProjectileSuccess, SpawnActor) == 0x000000, "Member 'PyAbility_105553_OnNotifySpawnProjectileSuccess::SpawnActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_105553_OnNotifySpawnProjectileSuccess, Data) == 0x000008, "Member 'PyAbility_105553_OnNotifySpawnProjectileSuccess::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105553_OnNotifySpawnProjectileSuccess;
 
 // PythonFunction PyAbility_105553.PyAbility_105553.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -38,9 +35,7 @@ struct PyAbility_105553_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105553_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_105553_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_105553_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_105553_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_105553_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_105553_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105553_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_105553.PyAbility_105553.NativeOnMontageBlendOut
 // 0x0010 (0x0010 - 0x0000)
@@ -49,9 +44,7 @@ struct PyAbility_105553_NativeOnMontageBlendOut final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105553_NativeOnMontageBlendOut) == 0x000008, "Wrong alignment on PyAbility_105553_NativeOnMontageBlendOut");
-static_assert(sizeof(PyAbility_105553_NativeOnMontageBlendOut) == 0x000010, "Wrong size on PyAbility_105553_NativeOnMontageBlendOut");
-static_assert(offsetof(PyAbility_105553_NativeOnMontageBlendOut, Tag) == 0x000000, "Member 'PyAbility_105553_NativeOnMontageBlendOut::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105553_NativeOnMontageBlendOut;
 
 // PythonFunction PyAbility_105553.PyAbility_105553.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -60,9 +53,7 @@ struct PyAbility_105553_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105553_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_105553_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_105553_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_105553_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_105553_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_105553_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105553_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_105553.PyAbility_105553.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -71,9 +62,7 @@ struct PyAbility_105553_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105553_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_105553_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_105553_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_105553_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_105553_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_105553_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105553_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_105553.PyProjectile_10555301.OnFlyBounceTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -82,22 +71,17 @@ struct PyProjectile_10555301_OnFlyBounceTarget final
 public:
 	const class AActor*                           target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_10555301_OnFlyBounceTarget) == 0x000008, "Wrong alignment on PyProjectile_10555301_OnFlyBounceTarget");
-static_assert(sizeof(PyProjectile_10555301_OnFlyBounceTarget) == 0x000008, "Wrong size on PyProjectile_10555301_OnFlyBounceTarget");
-static_assert(offsetof(PyProjectile_10555301_OnFlyBounceTarget, target) == 0x000000, "Member 'PyProjectile_10555301_OnFlyBounceTarget::target' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10555301_OnFlyBounceTarget;
 
 // PythonFunction PyAbility_105553.PyProjectile_10555301.TraceNextTargetFilter
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PyProjectile_10555301_TraceNextTargetFilter final
 {
 public:
-	struct FHitResult                             hit_result;                                        // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          ReturnValue;                                       // 0x01F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             hit_result;                                        // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          ReturnValue;                                       // 0x0208(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_10555301_TraceNextTargetFilter) == 0x000008, "Wrong alignment on PyProjectile_10555301_TraceNextTargetFilter");
-static_assert(sizeof(PyProjectile_10555301_TraceNextTargetFilter) == 0x0001F8, "Wrong size on PyProjectile_10555301_TraceNextTargetFilter");
-static_assert(offsetof(PyProjectile_10555301_TraceNextTargetFilter, hit_result) == 0x000000, "Member 'PyProjectile_10555301_TraceNextTargetFilter::hit_result' has a wrong offset!");
-static_assert(offsetof(PyProjectile_10555301_TraceNextTargetFilter, ReturnValue) == 0x0001F0, "Member 'PyProjectile_10555301_TraceNextTargetFilter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10555301_TraceNextTargetFilter;
 
 // PythonFunction PyAbility_105553.PyProjectile_10555301.ShouldEndTaskOnProjectileStop
 // 0x0001 (0x0001 - 0x0000)
@@ -106,20 +90,16 @@ struct PyProjectile_10555301_ShouldEndTaskOnProjectileStop final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_10555301_ShouldEndTaskOnProjectileStop) == 0x000001, "Wrong alignment on PyProjectile_10555301_ShouldEndTaskOnProjectileStop");
-static_assert(sizeof(PyProjectile_10555301_ShouldEndTaskOnProjectileStop) == 0x000001, "Wrong size on PyProjectile_10555301_ShouldEndTaskOnProjectileStop");
-static_assert(offsetof(PyProjectile_10555301_ShouldEndTaskOnProjectileStop, ReturnValue) == 0x000000, "Member 'PyProjectile_10555301_ShouldEndTaskOnProjectileStop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10555301_ShouldEndTaskOnProjectileStop;
 
 // PythonFunction PyAbility_105553.PyProjectile_10555301.K2_OnProjectileInfoForceChanged_ThreadSafe
-// 0x02E0 (0x02E0 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe final
 {
 public:
-	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02E0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02F8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x000008, "Wrong alignment on PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(sizeof(PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x0002E0, "Wrong size on PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(offsetof(PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe, InProjectileForceChangedInfo) == 0x000000, "Member 'PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe::InProjectileForceChangedInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10555301_K2_OnProjectileInfoForceChanged_ThreadSafe;
 
 }
 

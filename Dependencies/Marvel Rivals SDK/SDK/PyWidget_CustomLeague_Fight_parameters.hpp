@@ -21,9 +21,7 @@ struct PyWidget_CustomLeague_Fight_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeague_Fight_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CustomLeague_Fight_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CustomLeague_Fight_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CustomLeague_Fight_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CustomLeague_Fight_OnAnimationFinished, animation) == 0x000000, "Member 'PyWidget_CustomLeague_Fight_OnAnimationFinished::animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeague_Fight_OnAnimationFinished;
 
 // PythonFunction PyWidget_CustomLeague_Fight.PyWidget_CustomLeague_Fight.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CustomLeague_Fight_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeague_Fight_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_CustomLeague_Fight_OnAnimationStarted");
-static_assert(sizeof(PyWidget_CustomLeague_Fight_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_CustomLeague_Fight_OnAnimationStarted");
-static_assert(offsetof(PyWidget_CustomLeague_Fight_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_CustomLeague_Fight_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeague_Fight_OnAnimationStarted;
 
 }
 

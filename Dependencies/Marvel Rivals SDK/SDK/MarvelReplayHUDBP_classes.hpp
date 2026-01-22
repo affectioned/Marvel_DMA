@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelReplayHUDBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelReplayHUDBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelReplayHUDBP_C")
 	}
 	static class AMarvelReplayHUDBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelReplayHUDBP_C>();
 	}
 };
-static_assert(alignof(AMarvelReplayHUDBP_C) == 0x000010, "Wrong alignment on AMarvelReplayHUDBP_C");
-static_assert(sizeof(AMarvelReplayHUDBP_C) == 0x000970, "Wrong size on AMarvelReplayHUDBP_C");
-static_assert(offsetof(AMarvelReplayHUDBP_C, UberGraphFrame) == 0x000948, "Member 'AMarvelReplayHUDBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelReplayHUDBP_C, DefaultSceneRoot) == 0x000950, "Member 'AMarvelReplayHUDBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelReplayHUDBP_C, Class_RootWidget) == 0x000958, "Member 'AMarvelReplayHUDBP_C::Class_RootWidget' has a wrong offset!");
-static_assert(offsetof(AMarvelReplayHUDBP_C, Class_BattlePanel) == 0x000960, "Member 'AMarvelReplayHUDBP_C::Class_BattlePanel' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelReplayHUDBP_C;
 
 }
 

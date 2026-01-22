@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MarvelAI_structs.hpp"
 #include "PyAIGroupInfoBase_classes.hpp"
+#include "MarvelAI_structs.hpp"
 
 
 namespace SDK
@@ -35,22 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITeamData">();
+		STATIC_CLASS_IMPL("PyAITeamData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITeamData")
 	}
 	static class APyAITeamData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAITeamData>();
 	}
 };
-static_assert(alignof(APyAITeamData) == 0x000010, "Wrong alignment on APyAITeamData");
-static_assert(sizeof(APyAITeamData) == 0x000770, "Wrong size on APyAITeamData");
-static_assert(offsetof(APyAITeamData, TeamWait_AINumFactor) == 0x000748, "Member 'APyAITeamData::TeamWait_AINumFactor' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, TeamWait_FrontierCheckDist) == 0x00074C, "Member 'APyAITeamData::TeamWait_FrontierCheckDist' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, TeamWait_FrontierCheckByCampRange) == 0x000750, "Member 'APyAITeamData::TeamWait_FrontierCheckByCampRange' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, TeamWait_KeepNotWaitTime) == 0x000754, "Member 'APyAITeamData::TeamWait_KeepNotWaitTime' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, EscortRouteRangeForFrontierGuardInDefender) == 0x000758, "Member 'APyAITeamData::EscortRouteRangeForFrontierGuardInDefender' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, FrontierGuardValidDistance) == 0x000760, "Member 'APyAITeamData::FrontierGuardValidDistance' has a wrong offset!");
-static_assert(offsetof(APyAITeamData, SubTeamDataClass) == 0x000768, "Member 'APyAITeamData::SubTeamDataClass' has a wrong offset!");
+DUMPER7_ASSERTS_APyAITeamData;
 
 }
 

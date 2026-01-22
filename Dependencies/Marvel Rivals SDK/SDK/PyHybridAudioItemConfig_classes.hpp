@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHybridAudioItemConfig">();
+		STATIC_CLASS_IMPL("PyHybridAudioItemConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHybridAudioItemConfig")
 	}
 	static class UPyHybridAudioItemConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHybridAudioItemConfig>();
 	}
 };
-static_assert(alignof(UPyHybridAudioItemConfig) == 0x000008, "Wrong alignment on UPyHybridAudioItemConfig");
-static_assert(sizeof(UPyHybridAudioItemConfig) == 0x000208, "Wrong size on UPyHybridAudioItemConfig");
-static_assert(offsetof(UPyHybridAudioItemConfig, StartOccupyCtl) == 0x0001C8, "Member 'UPyHybridAudioItemConfig::StartOccupyCtl' has a wrong offset!");
-static_assert(offsetof(UPyHybridAudioItemConfig, StalemateOccupyCtl) == 0x0001D8, "Member 'UPyHybridAudioItemConfig::StalemateOccupyCtl' has a wrong offset!");
-static_assert(offsetof(UPyHybridAudioItemConfig, ReachStageCtl) == 0x0001E8, "Member 'UPyHybridAudioItemConfig::ReachStageCtl' has a wrong offset!");
-static_assert(offsetof(UPyHybridAudioItemConfig, FinishOccupyCtl) == 0x0001F8, "Member 'UPyHybridAudioItemConfig::FinishOccupyCtl' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHybridAudioItemConfig;
 
 }
 

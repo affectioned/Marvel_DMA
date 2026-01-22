@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayEditorPlayerList">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayEditorPlayerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayEditorPlayerList")
 	}
 	static class UPyWidget_ReplayEditorPlayerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayEditorPlayerList>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayEditorPlayerList) == 0x000008, "Wrong alignment on UPyWidget_ReplayEditorPlayerList");
-static_assert(sizeof(UPyWidget_ReplayEditorPlayerList) == 0x0003D0, "Wrong size on UPyWidget_ReplayEditorPlayerList");
-static_assert(offsetof(UPyWidget_ReplayEditorPlayerList, IsLeftWidget) == 0x0003B8, "Member 'UPyWidget_ReplayEditorPlayerList::IsLeftWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorPlayerList, DefaultColor) == 0x0003BC, "Member 'UPyWidget_ReplayEditorPlayerList::DefaultColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplayEditorPlayerList;
 
 }
 

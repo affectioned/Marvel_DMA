@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Ability_Loop_10317103_BP.Cue_Ability_Loop_10317103_BP_C
-// 0x0000 (0x12B0 - 0x12B0)
+// 0x0000 (0x12C0 - 0x12C0)
 class ACue_Ability_Loop_10317103_BP_C final : public APyCue_Ability_Loop_10317101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Ability_Loop_10317103_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Ability_Loop_10317103_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_Loop_10317103_BP_C")
 	}
 	static class ACue_Ability_Loop_10317103_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Ability_Loop_10317103_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Ability_Loop_10317103_BP_C) == 0x000010, "Wrong alignment on ACue_Ability_Loop_10317103_BP_C");
-static_assert(sizeof(ACue_Ability_Loop_10317103_BP_C) == 0x0012B0, "Wrong size on ACue_Ability_Loop_10317103_BP_C");
+DUMPER7_ASSERTS_ACue_Ability_Loop_10317103_BP_C;
 
 }
 

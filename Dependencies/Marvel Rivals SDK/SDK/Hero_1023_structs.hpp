@@ -123,23 +123,18 @@ public:
 	int32                                         TargetProjectileID;                                // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProjectileModifierBase) == 0x000008, "Wrong alignment on FProjectileModifierBase");
-static_assert(sizeof(FProjectileModifierBase) == 0x000010, "Wrong size on FProjectileModifierBase");
-static_assert(offsetof(FProjectileModifierBase, TargetProjectileID) == 0x000008, "Member 'FProjectileModifierBase::TargetProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileModifierBase;
 
 // ScriptStruct Hero_1023.ScopeBuffSpecModifier
-// 0x0108 (0x0108 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct FScopeBuffSpecModifier final
 {
 public:
 	int32                                         TargetScopeID;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FScopeBuffSpecInfo                     Buff;                                              // 0x0008(0x0100)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     Buff;                                              // 0x0008(0x0150)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FScopeBuffSpecModifier) == 0x000008, "Wrong alignment on FScopeBuffSpecModifier");
-static_assert(sizeof(FScopeBuffSpecModifier) == 0x000108, "Wrong size on FScopeBuffSpecModifier");
-static_assert(offsetof(FScopeBuffSpecModifier, TargetScopeID) == 0x000000, "Member 'FScopeBuffSpecModifier::TargetScopeID' has a wrong offset!");
-static_assert(offsetof(FScopeBuffSpecModifier, Buff) == 0x000008, "Member 'FScopeBuffSpecModifier::Buff' has a wrong offset!");
+DUMPER7_ASSERTS_FScopeBuffSpecModifier;
 
 // ScriptStruct Hero_1023.RocketRaccoonLaunchParam
 // 0x0050 (0x0050 - 0x0000)
@@ -159,18 +154,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        ParticlePath;                                      // 0x0028(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRocketRaccoonLaunchParam) == 0x000008, "Wrong alignment on FRocketRaccoonLaunchParam");
-static_assert(sizeof(FRocketRaccoonLaunchParam) == 0x000050, "Wrong size on FRocketRaccoonLaunchParam");
-static_assert(offsetof(FRocketRaccoonLaunchParam, DelayTime) == 0x000000, "Member 'FRocketRaccoonLaunchParam::DelayTime' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, Acceleration) == 0x000004, "Member 'FRocketRaccoonLaunchParam::Acceleration' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, MaxSpeed) == 0x000008, "Member 'FRocketRaccoonLaunchParam::MaxSpeed' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, MaxSpeedDuration) == 0x00000C, "Member 'FRocketRaccoonLaunchParam::MaxSpeedDuration' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, Deceleration) == 0x000010, "Member 'FRocketRaccoonLaunchParam::Deceleration' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, bZeroVelocity) == 0x000014, "Member 'FRocketRaccoonLaunchParam::bZeroVelocity' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, BlockAngleWithUp) == 0x000018, "Member 'FRocketRaccoonLaunchParam::BlockAngleWithUp' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, IgnoreAngle) == 0x00001C, "Member 'FRocketRaccoonLaunchParam::IgnoreAngle' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, ParticleDelayTime) == 0x000020, "Member 'FRocketRaccoonLaunchParam::ParticleDelayTime' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonLaunchParam, ParticlePath) == 0x000028, "Member 'FRocketRaccoonLaunchParam::ParticlePath' has a wrong offset!");
+DUMPER7_ASSERTS_FRocketRaccoonLaunchParam;
 
 // ScriptStruct Hero_1023.RocketRaccoonSlowDownParam
 // 0x0040 (0x0040 - 0x0000)
@@ -185,14 +169,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        ParticlePath;                                      // 0x0018(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRocketRaccoonSlowDownParam) == 0x000008, "Wrong alignment on FRocketRaccoonSlowDownParam");
-static_assert(sizeof(FRocketRaccoonSlowDownParam) == 0x000040, "Wrong size on FRocketRaccoonSlowDownParam");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, Duration) == 0x000000, "Member 'FRocketRaccoonSlowDownParam::Duration' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, Gravity) == 0x000004, "Member 'FRocketRaccoonSlowDownParam::Gravity' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, HorizonAcceleration) == 0x000008, "Member 'FRocketRaccoonSlowDownParam::HorizonAcceleration' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, HorizonMaxSpeed) == 0x00000C, "Member 'FRocketRaccoonSlowDownParam::HorizonMaxSpeed' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, BrakingFriction) == 0x000010, "Member 'FRocketRaccoonSlowDownParam::BrakingFriction' has a wrong offset!");
-static_assert(offsetof(FRocketRaccoonSlowDownParam, ParticlePath) == 0x000018, "Member 'FRocketRaccoonSlowDownParam::ParticlePath' has a wrong offset!");
+DUMPER7_ASSERTS_FRocketRaccoonSlowDownParam;
 
 // ScriptStruct Hero_1023.ProjectileSetting_10232401
 // 0x0008 (0x0008 - 0x0000)
@@ -202,10 +179,7 @@ public:
 	float                                         Duration;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumEffectiveTracesLimit;                           // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FProjectileSetting_10232401) == 0x000004, "Wrong alignment on FProjectileSetting_10232401");
-static_assert(sizeof(FProjectileSetting_10232401) == 0x000008, "Wrong size on FProjectileSetting_10232401");
-static_assert(offsetof(FProjectileSetting_10232401, Duration) == 0x000000, "Member 'FProjectileSetting_10232401::Duration' has a wrong offset!");
-static_assert(offsetof(FProjectileSetting_10232401, NumEffectiveTracesLimit) == 0x000004, "Member 'FProjectileSetting_10232401::NumEffectiveTracesLimit' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileSetting_10232401;
 
 // ScriptStruct Hero_1023.ProjectileConfig_10233301
 // 0x000C (0x000C - 0x0000)
@@ -216,11 +190,7 @@ public:
 	float                                         ProjectileFireAngle;                               // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ProjectileID;                                      // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FProjectileConfig_10233301) == 0x000004, "Wrong alignment on FProjectileConfig_10233301");
-static_assert(sizeof(FProjectileConfig_10233301) == 0x00000C, "Wrong size on FProjectileConfig_10233301");
-static_assert(offsetof(FProjectileConfig_10233301, ProjectileNum) == 0x000000, "Member 'FProjectileConfig_10233301::ProjectileNum' has a wrong offset!");
-static_assert(offsetof(FProjectileConfig_10233301, ProjectileFireAngle) == 0x000004, "Member 'FProjectileConfig_10233301::ProjectileFireAngle' has a wrong offset!");
-static_assert(offsetof(FProjectileConfig_10233301, ProjectileID) == 0x000008, "Member 'FProjectileConfig_10233301::ProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileConfig_10233301;
 
 }
 

@@ -17,14 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_RewardNoticePanel.PyWidget_Activity151_RewardNoticePanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Activity151_RewardNoticePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         float_pixel;                                       // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         stay_duration;                                     // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         begin_persistent_time;                             // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         reward_delay;                                      // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         float_pixel;                                       // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         float_height_threshhold;                           // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         stay_duration;                                     // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         begin_persistent_time;                             // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         reward_delay;                                      // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_RewardNoticePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_RewardNoticePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_RewardNoticePanel")
 	}
 	static class UPyWidget_Activity151_RewardNoticePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_RewardNoticePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_RewardNoticePanel) == 0x000008, "Wrong alignment on UPyWidget_Activity151_RewardNoticePanel");
-static_assert(sizeof(UPyWidget_Activity151_RewardNoticePanel) == 0x000608, "Wrong size on UPyWidget_Activity151_RewardNoticePanel");
-static_assert(offsetof(UPyWidget_Activity151_RewardNoticePanel, float_pixel) == 0x0005F8, "Member 'UPyWidget_Activity151_RewardNoticePanel::float_pixel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_RewardNoticePanel, stay_duration) == 0x0005FC, "Member 'UPyWidget_Activity151_RewardNoticePanel::stay_duration' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_RewardNoticePanel, begin_persistent_time) == 0x000600, "Member 'UPyWidget_Activity151_RewardNoticePanel::begin_persistent_time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_RewardNoticePanel, reward_delay) == 0x000604, "Member 'UPyWidget_Activity151_RewardNoticePanel::reward_delay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_RewardNoticePanel;
 
 }
 

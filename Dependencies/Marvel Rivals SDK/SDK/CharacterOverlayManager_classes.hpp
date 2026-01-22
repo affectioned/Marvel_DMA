@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CharacterOverlayManager_C">();
+		BP_STATIC_CLASS_IMPL("CharacterOverlayManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CharacterOverlayManager_C")
 	}
 	static class ACharacterOverlayManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACharacterOverlayManager_C>();
 	}
 };
-static_assert(alignof(ACharacterOverlayManager_C) == 0x000010, "Wrong alignment on ACharacterOverlayManager_C");
-static_assert(sizeof(ACharacterOverlayManager_C) == 0x0006F0, "Wrong size on ACharacterOverlayManager_C");
-static_assert(offsetof(ACharacterOverlayManager_C, DefaultSceneRoot) == 0x0006E8, "Member 'ACharacterOverlayManager_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ACharacterOverlayManager_C;
 
 }
 

@@ -17,6 +17,82 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_MatchResult::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_MatchResult", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_MatchResult::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_MatchResult", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.OnAnimNameFadeIn
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_League_MatchResult::OnAnimNameFadeIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_MatchResult", "OnAnimNameFadeIn");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.OnAnimNameFadeOut
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_League_MatchResult::OnAnimNameFadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_MatchResult", "OnAnimNameFadeOut");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_League_MatchResult.PyWidget_League_RankingTitle.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -80,34 +156,15 @@ void UPyWidget_League_RankingTitle::Construct()
 }
 
 
-// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.OnInitialized
+// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MemberName.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_League_MatchResult::OnInitialized()
+void UPyWidget_League_MemberName::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_MatchResult", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_MatchResult.PyWidget_League_MatchResult.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_MatchResult::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_MatchResult", "Construct");
+		Func = Class->GetFunction("PyWidget_League_MemberName", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

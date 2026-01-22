@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "PyAbility_105506_classes.hpp"
 
@@ -18,25 +19,33 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105506_BP.Ability_105506_BP_C
-// 0x17C0 (0x4230 - 0x2A70)
+// 0x1B80 (0x4640 - 0x2AC0)
 class UAbility_105506_BP_C final : public UPyAbility_105506
 {
 public:
-	struct FSelectTaskParam                       选取参数;                                          // 0x2A70(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2AC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_2AC8[0x8];                                     // 0x2AC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       选取参数;                                          // 0x2AD0(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+
+public:
+	void BreakEventNotify();
+	void ExecuteUbergraph_Ability_105506_BP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105506_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105506_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105506_BP_C")
 	}
 	static class UAbility_105506_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105506_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105506_BP_C) == 0x000010, "Wrong alignment on UAbility_105506_BP_C");
-static_assert(sizeof(UAbility_105506_BP_C) == 0x004230, "Wrong size on UAbility_105506_BP_C");
-static_assert(offsetof(UAbility_105506_BP_C, 选取参数) == 0x002A70, "Member 'UAbility_105506_BP_C::选取参数' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105506_BP_C;
 
 }
 

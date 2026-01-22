@@ -21,9 +21,7 @@ struct PyShowAnimInstance_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowAnimInstance_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on PyShowAnimInstance_BlueprintUpdateAnimation");
-static_assert(sizeof(PyShowAnimInstance_BlueprintUpdateAnimation) == 0x000004, "Wrong size on PyShowAnimInstance_BlueprintUpdateAnimation");
-static_assert(offsetof(PyShowAnimInstance_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'PyShowAnimInstance_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowAnimInstance_BlueprintUpdateAnimation;
 
 }
 

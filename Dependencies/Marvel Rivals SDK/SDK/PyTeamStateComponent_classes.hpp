@@ -23,15 +23,18 @@ class UPyTeamStateComponent : public UMarvelActorComponentBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamStateComponent">();
+		STATIC_CLASS_IMPL("PyTeamStateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamStateComponent")
 	}
 	static class UPyTeamStateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamStateComponent>();
 	}
 };
-static_assert(alignof(UPyTeamStateComponent) == 0x000008, "Wrong alignment on UPyTeamStateComponent");
-static_assert(sizeof(UPyTeamStateComponent) == 0x000108, "Wrong size on UPyTeamStateComponent");
+DUMPER7_ASSERTS_UPyTeamStateComponent;
 
 }
 

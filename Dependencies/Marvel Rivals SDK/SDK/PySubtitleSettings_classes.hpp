@@ -54,43 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubtitleSettings">();
+		STATIC_CLASS_IMPL("PySubtitleSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubtitleSettings")
 	}
 	static class UPySubtitleSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubtitleSettings>();
 	}
 };
-static_assert(alignof(UPySubtitleSettings) == 0x000008, "Wrong alignment on UPySubtitleSettings");
-static_assert(sizeof(UPySubtitleSettings) == 0x0002F8, "Wrong size on UPySubtitleSettings");
-static_assert(offsetof(UPySubtitleSettings, GameSubtitleItemClass) == 0x000038, "Member 'UPySubtitleSettings::GameSubtitleItemClass' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, SubtitleColors) == 0x000040, "Member 'UPySubtitleSettings::SubtitleColors' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, SubtitleColorNames) == 0x000050, "Member 'UPySubtitleSettings::SubtitleColorNames' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, MaxItemNum) == 0x000060, "Member 'UPySubtitleSettings::MaxItemNum' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, AdjacentLineInterval) == 0x000064, "Member 'UPySubtitleSettings::AdjacentLineInterval' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, SingleVoicelineLifespan) == 0x000068, "Member 'UPySubtitleSettings::SingleVoicelineLifespan' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, SilenceTimeBeforeDisappear) == 0x00006C, "Member 'UPySubtitleSettings::SilenceTimeBeforeDisappear' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, VoicelineFont) == 0x000070, "Member 'UPySubtitleSettings::VoicelineFont' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, NakataFont) == 0x0000D8, "Member 'UPySubtitleSettings::NakataFont' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, MapFont) == 0x000140, "Member 'UPySubtitleSettings::MapFont' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, AllyFont) == 0x0001A8, "Member 'UPySubtitleSettings::AllyFont' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, EnemyFont) == 0x000210, "Member 'UPySubtitleSettings::EnemyFont' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeBig) == 0x000278, "Member 'UPySubtitleSettings::FontSizeBig' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeMedium) == 0x00027C, "Member 'UPySubtitleSettings::FontSizeMedium' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeSmall) == 0x000280, "Member 'UPySubtitleSettings::FontSizeSmall' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeBigTopPadding) == 0x000284, "Member 'UPySubtitleSettings::FontSizeBigTopPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeMediumTopPadding) == 0x000288, "Member 'UPySubtitleSettings::FontSizeMediumTopPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeSmallTopPadding) == 0x00028C, "Member 'UPySubtitleSettings::FontSizeSmallTopPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeBigBottomPadding) == 0x000290, "Member 'UPySubtitleSettings::FontSizeBigBottomPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeMediumBottomPadding) == 0x000294, "Member 'UPySubtitleSettings::FontSizeMediumBottomPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontSizeSmallgBottomPadding) == 0x000298, "Member 'UPySubtitleSettings::FontSizeSmallgBottomPadding' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, BackgroundOpacityHeavy) == 0x00029C, "Member 'UPySubtitleSettings::BackgroundOpacityHeavy' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, BackgroundOpacityMedium) == 0x0002A0, "Member 'UPySubtitleSettings::BackgroundOpacityMedium' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, BackgroundOpacityLight) == 0x0002A4, "Member 'UPySubtitleSettings::BackgroundOpacityLight' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontColorNakata) == 0x0002A8, "Member 'UPySubtitleSettings::FontColorNakata' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontColorAlly) == 0x0002BC, "Member 'UPySubtitleSettings::FontColorAlly' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontColorEnemy) == 0x0002D0, "Member 'UPySubtitleSettings::FontColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPySubtitleSettings, FontColorMap) == 0x0002E4, "Member 'UPySubtitleSettings::FontColorMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPySubtitleSettings;
 
 }
 

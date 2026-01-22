@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_Common_NavigationBar_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Lobby_NavigationBar.PyWidget_Lobby_CountDown
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Lobby_CountDown final : public UPyMarvelUserWidget
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_CountDown">();
+		STATIC_CLASS_IMPL("PyWidget_Lobby_CountDown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_CountDown")
 	}
 	static class UPyWidget_Lobby_CountDown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Lobby_CountDown>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_CountDown) == 0x000008, "Wrong alignment on UPyWidget_Lobby_CountDown");
-static_assert(sizeof(UPyWidget_Lobby_CountDown) == 0x0005C0, "Wrong size on UPyWidget_Lobby_CountDown");
+DUMPER7_ASSERTS_UPyWidget_Lobby_CountDown;
 
 // PythonClass PyWidget_Lobby_NavigationBar.PyWidget_Lobby_NavigationBar
-// 0x0000 (0x0748 - 0x0748)
+// 0x0000 (0x0750 - 0x0750)
 class UPyWidget_Lobby_NavigationBar final : public UPyWidget_Common_NavigationBar
 {
 public:
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar">();
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar")
 	}
 	static class UPyWidget_Lobby_NavigationBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_NavigationBar) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar) == 0x000748, "Wrong size on UPyWidget_Lobby_NavigationBar");
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity116_Dice.PyWidget_Activity116_Dice
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity116_Dice final : public UPyWidget_Button
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity116_Dice">();
+		STATIC_CLASS_IMPL("PyWidget_Activity116_Dice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity116_Dice")
 	}
 	static class UPyWidget_Activity116_Dice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity116_Dice>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity116_Dice) == 0x000008, "Wrong alignment on UPyWidget_Activity116_Dice");
-static_assert(sizeof(UPyWidget_Activity116_Dice) == 0x000728, "Wrong size on UPyWidget_Activity116_Dice");
+DUMPER7_ASSERTS_UPyWidget_Activity116_Dice;
 
 }
 

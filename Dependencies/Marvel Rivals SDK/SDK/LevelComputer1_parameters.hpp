@@ -27,12 +27,7 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AObjective_C*                           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1) == 0x000010, "Wrong alignment on LevelComputer1_C_ExecuteUbergraph_LevelComputer1");
-static_assert(sizeof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1) == 0x000080, "Wrong size on LevelComputer1_C_ExecuteUbergraph_LevelComputer1");
-static_assert(offsetof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1, EntryPoint) == 0x000000, "Member 'LevelComputer1_C_ExecuteUbergraph_LevelComputer1::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'LevelComputer1_C_ExecuteUbergraph_LevelComputer1::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'LevelComputer1_C_ExecuteUbergraph_LevelComputer1::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelComputer1_C_ExecuteUbergraph_LevelComputer1, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'LevelComputer1_C_ExecuteUbergraph_LevelComputer1::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelComputer1_C_ExecuteUbergraph_LevelComputer1;
 
 }
 

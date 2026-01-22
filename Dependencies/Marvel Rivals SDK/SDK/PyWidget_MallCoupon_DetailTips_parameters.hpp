@@ -14,5 +14,14 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_MallCoupon_DetailTips.PyWidget_MallCoupon_DetailTips.OnCascadingVisibleChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_MallCoupon_DetailTips_OnCascadingVisibleChanged final
+{
+public:
+	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_MallCoupon_DetailTips_OnCascadingVisibleChanged;
+
 }
 

@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "PyAbility_10130_402521_classes.hpp"
+#include "Hero_1045_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1045_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_10130_402531.PySummonedComp_40253101
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_40253101 final : public UMarvelSummonedComponent
 {
 public:
@@ -30,35 +30,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_40253101">();
+		STATIC_CLASS_IMPL("PySummonedComp_40253101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_40253101")
 	}
 	static class UPySummonedComp_40253101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_40253101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_40253101) == 0x000008, "Wrong alignment on UPySummonedComp_40253101");
-static_assert(sizeof(UPySummonedComp_40253101) == 0x000DB0, "Wrong size on UPySummonedComp_40253101");
+DUMPER7_ASSERTS_UPySummonedComp_40253101;
 
 // PythonClass PyAbility_10130_402531.PyProjectile_40253101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_40253101 final : public APyProjectile_40252101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_40253101">();
+		STATIC_CLASS_IMPL("PyProjectile_40253101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_40253101")
 	}
 	static class APyProjectile_40253101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_40253101>();
 	}
 };
-static_assert(alignof(APyProjectile_40253101) == 0x000010, "Wrong alignment on APyProjectile_40253101");
-static_assert(sizeof(APyProjectile_40253101) == 0x003B90, "Wrong size on APyProjectile_40253101");
+DUMPER7_ASSERTS_APyProjectile_40253101;
 
 // PythonClass PyAbility_10130_402531.PyProjectile_40253102
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_40253102 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_40253102">();
+		STATIC_CLASS_IMPL("PyProjectile_40253102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_40253102")
 	}
 	static class APyProjectile_40253102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_40253102>();
 	}
 };
-static_assert(alignof(APyProjectile_40253102) == 0x000010, "Wrong alignment on APyProjectile_40253102");
-static_assert(sizeof(APyProjectile_40253102) == 0x003B90, "Wrong size on APyProjectile_40253102");
+DUMPER7_ASSERTS_APyProjectile_40253102;
 
 // PythonClass PyAbility_10130_402531.PyConfig_402531
 // 0x0010 (0x0140 - 0x0130)
@@ -88,23 +97,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_402531">();
+		STATIC_CLASS_IMPL("PyConfig_402531")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_402531")
 	}
 	static class UPyConfig_402531* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_402531>();
 	}
 };
-static_assert(alignof(UPyConfig_402531) == 0x000008, "Wrong alignment on UPyConfig_402531");
-static_assert(sizeof(UPyConfig_402531) == 0x000140, "Wrong size on UPyConfig_402531");
-static_assert(offsetof(UPyConfig_402531, OctopusProjectileOffsets) == 0x000130, "Member 'UPyConfig_402531::OctopusProjectileOffsets' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_402531;
 
 // PythonClass PyAbility_10130_402531.PyAbility_402531
-// 0x0010 (0x2A10 - 0x2A00)
+// 0x0010 (0x2A60 - 0x2A50)
 class UPyAbility_402531 final : public UAbility_104531
 {
 public:
-	TMulticastInlineDelegate<void()>              OnWeaponRecalled;                                  // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnWeaponRecalled;                                  // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -116,16 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_402531">();
+		STATIC_CLASS_IMPL("PyAbility_402531")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_402531")
 	}
 	static class UPyAbility_402531* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_402531>();
 	}
 };
-static_assert(alignof(UPyAbility_402531) == 0x000008, "Wrong alignment on UPyAbility_402531");
-static_assert(sizeof(UPyAbility_402531) == 0x002A10, "Wrong size on UPyAbility_402531");
-static_assert(offsetof(UPyAbility_402531, OnWeaponRecalled) == 0x002A00, "Member 'UPyAbility_402531::OnWeaponRecalled' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_402531;
 
 }
 

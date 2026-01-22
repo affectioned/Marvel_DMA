@@ -24,12 +24,7 @@ public:
 	bool                                          OnlyOnlineLeague_7_E79D941C4E5899202D648AB8C8929823; // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OnlyCertified_10_74BDD8444597D4B4063952ABAC783D6C; // 0x0061(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FClanIconBaseMapTable) == 0x000008, "Wrong alignment on FClanIconBaseMapTable");
-static_assert(sizeof(FClanIconBaseMapTable) == 0x000068, "Wrong size on FClanIconBaseMapTable");
-static_assert(offsetof(FClanIconBaseMapTable, BaseMap_2_AD1684414305E85145DFA3B68FDDB687) == 0x000000, "Member 'FClanIconBaseMapTable::BaseMap_2_AD1684414305E85145DFA3B68FDDB687' has a wrong offset!");
-static_assert(offsetof(FClanIconBaseMapTable, IconMap_5_DBE5C0E4498AD6C133D0A8B693F4AB84) == 0x000030, "Member 'FClanIconBaseMapTable::IconMap_5_DBE5C0E4498AD6C133D0A8B693F4AB84' has a wrong offset!");
-static_assert(offsetof(FClanIconBaseMapTable, OnlyOnlineLeague_7_E79D941C4E5899202D648AB8C8929823) == 0x000060, "Member 'FClanIconBaseMapTable::OnlyOnlineLeague_7_E79D941C4E5899202D648AB8C8929823' has a wrong offset!");
-static_assert(offsetof(FClanIconBaseMapTable, OnlyCertified_10_74BDD8444597D4B4063952ABAC783D6C) == 0x000061, "Member 'FClanIconBaseMapTable::OnlyCertified_10_74BDD8444597D4B4063952ABAC783D6C' has a wrong offset!");
+DUMPER7_ASSERTS_FClanIconBaseMapTable;
 
 }
 

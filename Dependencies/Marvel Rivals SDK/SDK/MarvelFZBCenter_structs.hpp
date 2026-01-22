@@ -22,9 +22,7 @@ public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      Controller;                                        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FClientComputeResult) == 0x000008, "Wrong alignment on FClientComputeResult");
-static_assert(sizeof(FClientComputeResult) == 0x000018, "Wrong size on FClientComputeResult");
-static_assert(offsetof(FClientComputeResult, Controller) == 0x000010, "Member 'FClientComputeResult::Controller' has a wrong offset!");
+DUMPER7_ASSERTS_FClientComputeResult;
 
 }
 

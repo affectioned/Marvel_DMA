@@ -27,10 +27,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BuffAbility_10390102_IsValidTargetForEnergy) == 0x000008, "Wrong alignment on BuffAbility_10390102_IsValidTargetForEnergy");
-static_assert(sizeof(BuffAbility_10390102_IsValidTargetForEnergy) == 0x000010, "Wrong size on BuffAbility_10390102_IsValidTargetForEnergy");
-static_assert(offsetof(BuffAbility_10390102_IsValidTargetForEnergy, InActor) == 0x000000, "Member 'BuffAbility_10390102_IsValidTargetForEnergy::InActor' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10390102_IsValidTargetForEnergy, ReturnValue) == 0x000008, "Member 'BuffAbility_10390102_IsValidTargetForEnergy::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10390102_IsValidTargetForEnergy;
 
 // Function Hero_1039.Scope_10393101.OnHitTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -39,22 +36,17 @@ struct Scope_10393101_OnHitTarget final
 public:
 	class AMarvelBaseCharacter*                   Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Scope_10393101_OnHitTarget) == 0x000008, "Wrong alignment on Scope_10393101_OnHitTarget");
-static_assert(sizeof(Scope_10393101_OnHitTarget) == 0x000008, "Wrong size on Scope_10393101_OnHitTarget");
-static_assert(offsetof(Scope_10393101_OnHitTarget, Target) == 0x000000, "Member 'Scope_10393101_OnHitTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_Scope_10393101_OnHitTarget;
 
 // Function Hero_1039.Ability_103941.ModifyDashInfo
-// 0x0BD0 (0x0BD0 - 0x0000)
+// 0x0EF0 (0x0EF0 - 0x0000)
 struct Ability_103941_ModifyDashInfo final
 {
 public:
 	class UMarvelAbilityTask_Dash*                InDashTask;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       InDashInfo;                                        // 0x0008(0x0BC8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       InDashInfo;                                        // 0x0008(0x0EE8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_103941_ModifyDashInfo) == 0x000008, "Wrong alignment on Ability_103941_ModifyDashInfo");
-static_assert(sizeof(Ability_103941_ModifyDashInfo) == 0x000BD0, "Wrong size on Ability_103941_ModifyDashInfo");
-static_assert(offsetof(Ability_103941_ModifyDashInfo, InDashTask) == 0x000000, "Member 'Ability_103941_ModifyDashInfo::InDashTask' has a wrong offset!");
-static_assert(offsetof(Ability_103941_ModifyDashInfo, InDashInfo) == 0x000008, "Member 'Ability_103941_ModifyDashInfo::InDashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103941_ModifyDashInfo;
 
 // Function Hero_1039.Ability_103941.UpdateBodyInstance
 // 0x0008 (0x0008 - 0x0000)
@@ -63,9 +55,7 @@ struct Ability_103941_UpdateBodyInstance final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_103941_UpdateBodyInstance) == 0x000008, "Wrong alignment on Ability_103941_UpdateBodyInstance");
-static_assert(sizeof(Ability_103941_UpdateBodyInstance) == 0x000008, "Wrong size on Ability_103941_UpdateBodyInstance");
-static_assert(offsetof(Ability_103941_UpdateBodyInstance, Character) == 0x000000, "Member 'Ability_103941_UpdateBodyInstance::Character' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103941_UpdateBodyInstance;
 
 // Function Hero_1039.Widget_Extra_ThorCharge.GetChargePercent
 // 0x0004 (0x0004 - 0x0000)
@@ -74,9 +64,7 @@ struct Widget_Extra_ThorCharge_GetChargePercent final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Widget_Extra_ThorCharge_GetChargePercent) == 0x000004, "Wrong alignment on Widget_Extra_ThorCharge_GetChargePercent");
-static_assert(sizeof(Widget_Extra_ThorCharge_GetChargePercent) == 0x000004, "Wrong size on Widget_Extra_ThorCharge_GetChargePercent");
-static_assert(offsetof(Widget_Extra_ThorCharge_GetChargePercent, ReturnValue) == 0x000000, "Member 'Widget_Extra_ThorCharge_GetChargePercent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Widget_Extra_ThorCharge_GetChargePercent;
 
 // Function Hero_1039.Cue_Ability_Loop_10395102.OnCharacterMoveChange
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +73,7 @@ struct Cue_Ability_Loop_10395102_OnCharacterMoveChange final
 public:
 	bool                                          bMoving;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Ability_Loop_10395102_OnCharacterMoveChange) == 0x000001, "Wrong alignment on Cue_Ability_Loop_10395102_OnCharacterMoveChange");
-static_assert(sizeof(Cue_Ability_Loop_10395102_OnCharacterMoveChange) == 0x000001, "Wrong size on Cue_Ability_Loop_10395102_OnCharacterMoveChange");
-static_assert(offsetof(Cue_Ability_Loop_10395102_OnCharacterMoveChange, bMoving) == 0x000000, "Member 'Cue_Ability_Loop_10395102_OnCharacterMoveChange::bMoving' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_10395102_OnCharacterMoveChange;
 
 // Function Hero_1039.Cue_Ability_Loop_10395102.OnCharacterMovementUpdate
 // 0x0038 (0x0038 - 0x0000)
@@ -99,11 +85,7 @@ public:
 	struct FVector                                OldLocation;                                       // 0x0008(0x0018)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OldVelocity;                                       // 0x0020(0x0018)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Ability_Loop_10395102_OnCharacterMovementUpdate) == 0x000008, "Wrong alignment on Cue_Ability_Loop_10395102_OnCharacterMovementUpdate");
-static_assert(sizeof(Cue_Ability_Loop_10395102_OnCharacterMovementUpdate) == 0x000038, "Wrong size on Cue_Ability_Loop_10395102_OnCharacterMovementUpdate");
-static_assert(offsetof(Cue_Ability_Loop_10395102_OnCharacterMovementUpdate, DeltaTime) == 0x000000, "Member 'Cue_Ability_Loop_10395102_OnCharacterMovementUpdate::DeltaTime' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_10395102_OnCharacterMovementUpdate, OldLocation) == 0x000008, "Member 'Cue_Ability_Loop_10395102_OnCharacterMovementUpdate::OldLocation' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_10395102_OnCharacterMovementUpdate, OldVelocity) == 0x000020, "Member 'Cue_Ability_Loop_10395102_OnCharacterMovementUpdate::OldVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_10395102_OnCharacterMovementUpdate;
 
 // Function Hero_1039.Ability_103961.ApplyScopeRelativePos
 // 0x0030 (0x0030 - 0x0000)
@@ -113,36 +95,24 @@ public:
 	struct FVector                                InPos;                                             // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_103961_ApplyScopeRelativePos) == 0x000008, "Wrong alignment on Ability_103961_ApplyScopeRelativePos");
-static_assert(sizeof(Ability_103961_ApplyScopeRelativePos) == 0x000030, "Wrong size on Ability_103961_ApplyScopeRelativePos");
-static_assert(offsetof(Ability_103961_ApplyScopeRelativePos, InPos) == 0x000000, "Member 'Ability_103961_ApplyScopeRelativePos::InPos' has a wrong offset!");
-static_assert(offsetof(Ability_103961_ApplyScopeRelativePos, ReturnValue) == 0x000018, "Member 'Ability_103961_ApplyScopeRelativePos::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103961_ApplyScopeRelativePos;
 
 // Function Hero_1039.MarvelAbilityTask_PreArrivedDash.ApplyPreDash
-// 0x0C28 (0x0C28 - 0x0000)
+// 0x0F48 (0x0F48 - 0x0000)
 struct MarvelAbilityTask_PreArrivedDash_ApplyPreDash final
 {
 public:
 	class UMarvelBaseGameplayAbility*             OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   TaskInstanceName;                                  // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       Info;                                              // 0x0018(0x0BC8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FPreArrivedInfo                        PreInfo;                                           // 0x0BE0(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                InDirection;                                       // 0x0BE8(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                InTargetLocation;                                  // 0x0C00(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 InTargetActor;                                     // 0x0C18(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelAbilityTask_PreArrivedDash*      ReturnValue;                                       // 0x0C20(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       Info;                                              // 0x0018(0x0EE8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPreArrivedInfo                        PreInfo;                                           // 0x0F00(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                InDirection;                                       // 0x0F08(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InTargetLocation;                                  // 0x0F20(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 InTargetActor;                                     // 0x0F38(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAbilityTask_PreArrivedDash*      ReturnValue;                                       // 0x0F40(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash) == 0x000008, "Wrong alignment on MarvelAbilityTask_PreArrivedDash_ApplyPreDash");
-static_assert(sizeof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash) == 0x000C28, "Wrong size on MarvelAbilityTask_PreArrivedDash_ApplyPreDash");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, OwningAbility) == 0x000000, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::OwningAbility' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, TaskInstanceName) == 0x000008, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::TaskInstanceName' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, Info) == 0x000018, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::Info' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, PreInfo) == 0x000BE0, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::PreInfo' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, InDirection) == 0x000BE8, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::InDirection' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, InTargetLocation) == 0x000C00, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::InTargetLocation' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, InTargetActor) == 0x000C18, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::InTargetActor' has a wrong offset!");
-static_assert(offsetof(MarvelAbilityTask_PreArrivedDash_ApplyPreDash, ReturnValue) == 0x000C20, "Member 'MarvelAbilityTask_PreArrivedDash_ApplyPreDash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilityTask_PreArrivedDash_ApplyPreDash;
 
 // Function Hero_1039.TabData_1039.OnActorDeath
 // 0x0030 (0x0030 - 0x0000)
@@ -155,12 +125,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(TabData_1039_OnActorDeath) == 0x000008, "Wrong alignment on TabData_1039_OnActorDeath");
-static_assert(sizeof(TabData_1039_OnActorDeath) == 0x000030, "Wrong size on TabData_1039_OnActorDeath");
-static_assert(offsetof(TabData_1039_OnActorDeath, Killer) == 0x000000, "Member 'TabData_1039_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(TabData_1039_OnActorDeath, Target) == 0x000008, "Member 'TabData_1039_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(TabData_1039_OnActorDeath, ModifierParameterHandle) == 0x000010, "Member 'TabData_1039_OnActorDeath::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(TabData_1039_OnActorDeath, ExtraData) == 0x000028, "Member 'TabData_1039_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_TabData_1039_OnActorDeath;
 
 }
 

@@ -162,6 +162,61 @@ enum class EFastArraySerializerDeltaFlags : uint8
 	EFastArraySerializerDeltaFlags_MAX       = 5,
 };
 
+// ScriptStruct NetCore.FastArraySerializerItem
+// 0x0018 (0x0018 - 0x0000)
+struct FFastArraySerializerItem
+{
+public:
+	int32                                         LocalID;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReplicationID;                                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReplicationKey;                                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MostRecentArrayReplicationKey;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint64                                        DirtyReps;                                         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFastArraySerializerItem;
+
+// ScriptStruct NetCore.NetAnalyticsDataConfig
+// 0x0010 (0x0010 - 0x0000)
+struct FNetAnalyticsDataConfig final
+{
+public:
+	class FName                                   DataName;                                          // 0x0000(0x000C)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnabled;                                          // 0x000C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FNetAnalyticsDataConfig;
+
+// ScriptStruct NetCore.FastArraySerializer
+// 0x0110 (0x0110 - 0x0000)
+struct alignas(0x08) FFastArraySerializer
+{
+public:
+	uint8                                         Pad_0[0x54];                                       // 0x0000(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ArrayReplicationKey;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_58[0xB4];                                      // 0x0058(0x00B4)(Fixing Size After Last Property [ Dumper-7 ])
+	EFastArraySerializerDeltaFlags                DeltaFlags;                                        // 0x010C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FFastArraySerializer;
+
+// ScriptStruct NetCore.VarAbilityID
+// 0x0004 (0x0004 - 0x0000)
+struct FVarAbilityID final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FVarAbilityID;
+
+// ScriptStruct NetCore.PlayerUID_NetQuantize
+// 0x0004 (0x0004 - 0x0000)
+struct FPlayerUID_NetQuantize final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FPlayerUID_NetQuantize;
+
 // ScriptStruct NetCore.StateStruct
 // 0x0018 (0x0018 - 0x0000)
 struct FStateStruct
@@ -170,9 +225,7 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StateName;                                         // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FStateStruct) == 0x000008, "Wrong alignment on FStateStruct");
-static_assert(sizeof(FStateStruct) == 0x000018, "Wrong size on FStateStruct");
-static_assert(offsetof(FStateStruct, StateName) == 0x000008, "Member 'FStateStruct::StateName' has a wrong offset!");
+DUMPER7_ASSERTS_FStateStruct;
 
 // ScriptStruct NetCore.EscalationState
 // 0x0018 (0x0030 - 0x0018)
@@ -187,14 +240,7 @@ public:
 	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int8>                                  AllTimePeriods;                                    // 0x0020(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FEscalationState) == 0x000008, "Wrong alignment on FEscalationState");
-static_assert(sizeof(FEscalationState) == 0x000030, "Wrong size on FEscalationState");
-static_assert(offsetof(FEscalationState, bLogEscalate) == 0x000018, "Member 'FEscalationState::bLogEscalate' has a wrong offset!");
-static_assert(offsetof(FEscalationState, bDormant) == 0x000019, "Member 'FEscalationState::bDormant' has a wrong offset!");
-static_assert(offsetof(FEscalationState, CooloffTime) == 0x00001A, "Member 'FEscalationState::CooloffTime' has a wrong offset!");
-static_assert(offsetof(FEscalationState, AutoEscalateTime) == 0x00001C, "Member 'FEscalationState::AutoEscalateTime' has a wrong offset!");
-static_assert(offsetof(FEscalationState, HighestTimePeriod) == 0x00001E, "Member 'FEscalationState::HighestTimePeriod' has a wrong offset!");
-static_assert(offsetof(FEscalationState, AllTimePeriods) == 0x000020, "Member 'FEscalationState::AllTimePeriods' has a wrong offset!");
+DUMPER7_ASSERTS_FEscalationState;
 
 // ScriptStruct NetCore.NetFaultState
 // 0x0010 (0x0040 - 0x0030)
@@ -211,85 +257,7 @@ public:
 	int8                                          EscalateQuotaTimePeriod;                           // 0x0039(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNetFaultState) == 0x000008, "Wrong alignment on FNetFaultState");
-static_assert(sizeof(FNetFaultState) == 0x000040, "Wrong size on FNetFaultState");
-static_assert(offsetof(FNetFaultState, bCloseConnection) == 0x000030, "Member 'FNetFaultState::bCloseConnection' has a wrong offset!");
-static_assert(offsetof(FNetFaultState, EscalateQuotaFaultsPerPeriod) == 0x000032, "Member 'FNetFaultState::EscalateQuotaFaultsPerPeriod' has a wrong offset!");
-static_assert(offsetof(FNetFaultState, EscalateQuotaFaultPercentPerPeriod) == 0x000034, "Member 'FNetFaultState::EscalateQuotaFaultPercentPerPeriod' has a wrong offset!");
-static_assert(offsetof(FNetFaultState, DescalateQuotaFaultsPerPeriod) == 0x000036, "Member 'FNetFaultState::DescalateQuotaFaultsPerPeriod' has a wrong offset!");
-static_assert(offsetof(FNetFaultState, DescalateQuotaFaultPercentPerPeriod) == 0x000038, "Member 'FNetFaultState::DescalateQuotaFaultPercentPerPeriod' has a wrong offset!");
-static_assert(offsetof(FNetFaultState, EscalateQuotaTimePeriod) == 0x000039, "Member 'FNetFaultState::EscalateQuotaTimePeriod' has a wrong offset!");
-
-// ScriptStruct NetCore.FastArraySerializerItem
-// 0x0018 (0x0018 - 0x0000)
-struct FFastArraySerializerItem
-{
-public:
-	int32                                         LocalID;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReplicationID;                                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReplicationKey;                                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MostRecentArrayReplicationKey;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint64                                        DirtyReps;                                         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FFastArraySerializerItem) == 0x000008, "Wrong alignment on FFastArraySerializerItem");
-static_assert(sizeof(FFastArraySerializerItem) == 0x000018, "Wrong size on FFastArraySerializerItem");
-static_assert(offsetof(FFastArraySerializerItem, LocalID) == 0x000000, "Member 'FFastArraySerializerItem::LocalID' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializerItem, ReplicationID) == 0x000004, "Member 'FFastArraySerializerItem::ReplicationID' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializerItem, ReplicationKey) == 0x000008, "Member 'FFastArraySerializerItem::ReplicationKey' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializerItem, MostRecentArrayReplicationKey) == 0x00000C, "Member 'FFastArraySerializerItem::MostRecentArrayReplicationKey' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializerItem, DirtyReps) == 0x000010, "Member 'FFastArraySerializerItem::DirtyReps' has a wrong offset!");
-
-// ScriptStruct NetCore.NetAnalyticsDataConfig
-// 0x0010 (0x0010 - 0x0000)
-struct FNetAnalyticsDataConfig final
-{
-public:
-	class FName                                   DataName;                                          // 0x0000(0x000C)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnabled;                                          // 0x000C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNetAnalyticsDataConfig) == 0x000004, "Wrong alignment on FNetAnalyticsDataConfig");
-static_assert(sizeof(FNetAnalyticsDataConfig) == 0x000010, "Wrong size on FNetAnalyticsDataConfig");
-static_assert(offsetof(FNetAnalyticsDataConfig, DataName) == 0x000000, "Member 'FNetAnalyticsDataConfig::DataName' has a wrong offset!");
-static_assert(offsetof(FNetAnalyticsDataConfig, bEnabled) == 0x00000C, "Member 'FNetAnalyticsDataConfig::bEnabled' has a wrong offset!");
-
-// ScriptStruct NetCore.FastArraySerializer
-// 0x0110 (0x0110 - 0x0000)
-struct alignas(0x08) FFastArraySerializer
-{
-public:
-	uint8                                         Pad_0[0x54];                                       // 0x0000(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ArrayReplicationKey;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_58[0xB4];                                      // 0x0058(0x00B4)(Fixing Size After Last Property [ Dumper-7 ])
-	EFastArraySerializerDeltaFlags                DeltaFlags;                                        // 0x010C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFastArraySerializer) == 0x000008, "Wrong alignment on FFastArraySerializer");
-static_assert(sizeof(FFastArraySerializer) == 0x000110, "Wrong size on FFastArraySerializer");
-static_assert(offsetof(FFastArraySerializer, ArrayReplicationKey) == 0x000054, "Member 'FFastArraySerializer::ArrayReplicationKey' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializer, DeltaFlags) == 0x00010C, "Member 'FFastArraySerializer::DeltaFlags' has a wrong offset!");
-
-// ScriptStruct NetCore.VarAbilityID
-// 0x0004 (0x0004 - 0x0000)
-struct FVarAbilityID final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FVarAbilityID) == 0x000004, "Wrong alignment on FVarAbilityID");
-static_assert(sizeof(FVarAbilityID) == 0x000004, "Wrong size on FVarAbilityID");
-static_assert(offsetof(FVarAbilityID, Value) == 0x000000, "Member 'FVarAbilityID::Value' has a wrong offset!");
-
-// ScriptStruct NetCore.PlayerUID_NetQuantize
-// 0x0004 (0x0004 - 0x0000)
-struct FPlayerUID_NetQuantize final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FPlayerUID_NetQuantize) == 0x000004, "Wrong alignment on FPlayerUID_NetQuantize");
-static_assert(sizeof(FPlayerUID_NetQuantize) == 0x000004, "Wrong size on FPlayerUID_NetQuantize");
-static_assert(offsetof(FPlayerUID_NetQuantize, Value) == 0x000000, "Member 'FPlayerUID_NetQuantize::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FNetFaultState;
 
 }
 

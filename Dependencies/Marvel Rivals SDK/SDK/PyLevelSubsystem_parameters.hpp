@@ -24,9 +24,7 @@ struct PyLevelSubsystem_AddReceiver final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_AddReceiver) == 0x000008, "Wrong alignment on PyLevelSubsystem_AddReceiver");
-static_assert(sizeof(PyLevelSubsystem_AddReceiver) == 0x000008, "Wrong size on PyLevelSubsystem_AddReceiver");
-static_assert(offsetof(PyLevelSubsystem_AddReceiver, TargetActor) == 0x000000, "Member 'PyLevelSubsystem_AddReceiver::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_AddReceiver;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.S_on_player_exit
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyLevelSubsystem_S_on_player_exit final
 public:
 	class AMarvelPlayerState*                     player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_S_on_player_exit) == 0x000008, "Wrong alignment on PyLevelSubsystem_S_on_player_exit");
-static_assert(sizeof(PyLevelSubsystem_S_on_player_exit) == 0x000008, "Wrong size on PyLevelSubsystem_S_on_player_exit");
-static_assert(offsetof(PyLevelSubsystem_S_on_player_exit, player_state) == 0x000000, "Member 'PyLevelSubsystem_S_on_player_exit::player_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_S_on_player_exit;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPayload
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyLevelSubsystem_GetPayload final
 public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPayload) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetPayload");
-static_assert(sizeof(PyLevelSubsystem_GetPayload) == 0x000008, "Wrong size on PyLevelSubsystem_GetPayload");
-static_assert(offsetof(PyLevelSubsystem_GetPayload, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPayload::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPayload;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPayloadShowActorBase
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +51,7 @@ struct PyLevelSubsystem_GetPayloadShowActorBase final
 public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPayloadShowActorBase) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetPayloadShowActorBase");
-static_assert(sizeof(PyLevelSubsystem_GetPayloadShowActorBase) == 0x000008, "Wrong size on PyLevelSubsystem_GetPayloadShowActorBase");
-static_assert(offsetof(PyLevelSubsystem_GetPayloadShowActorBase, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPayloadShowActorBase::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPayloadShowActorBase;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetControl
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +60,7 @@ struct PyLevelSubsystem_GetControl final
 public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetControl) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetControl");
-static_assert(sizeof(PyLevelSubsystem_GetControl) == 0x000008, "Wrong size on PyLevelSubsystem_GetControl");
-static_assert(offsetof(PyLevelSubsystem_GetControl, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetControl::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetControl;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetCurrentObjective
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +69,7 @@ struct PyLevelSubsystem_GetCurrentObjective final
 public:
 	class APyObjective*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetCurrentObjective) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetCurrentObjective");
-static_assert(sizeof(PyLevelSubsystem_GetCurrentObjective) == 0x000008, "Wrong size on PyLevelSubsystem_GetCurrentObjective");
-static_assert(offsetof(PyLevelSubsystem_GetCurrentObjective, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetCurrentObjective::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetCurrentObjective;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPreparingRemainingTime
 // 0x0004 (0x0004 - 0x0000)
@@ -90,9 +78,7 @@ struct PyLevelSubsystem_GetPreparingRemainingTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPreparingRemainingTime) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetPreparingRemainingTime");
-static_assert(sizeof(PyLevelSubsystem_GetPreparingRemainingTime) == 0x000004, "Wrong size on PyLevelSubsystem_GetPreparingRemainingTime");
-static_assert(offsetof(PyLevelSubsystem_GetPreparingRemainingTime, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPreparingRemainingTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPreparingRemainingTime;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPlayerCount
 // 0x0004 (0x0004 - 0x0000)
@@ -101,138 +87,7 @@ struct PyLevelSubsystem_GetPlayerCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPlayerCount) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetPlayerCount");
-static_assert(sizeof(PyLevelSubsystem_GetPlayerCount) == 0x000004, "Wrong size on PyLevelSubsystem_GetPlayerCount");
-static_assert(offsetof(PyLevelSubsystem_GetPlayerCount, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPlayerCount::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetMonsterInfo
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetMonsterInfo final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetMonsterInfo) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetMonsterInfo");
-static_assert(sizeof(PyLevelSubsystem_GetMonsterInfo) == 0x000004, "Wrong size on PyLevelSubsystem_GetMonsterInfo");
-static_assert(offsetof(PyLevelSubsystem_GetMonsterInfo, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetMonsterInfo::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetWaveIdx
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetWaveIdx final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetWaveIdx) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetWaveIdx");
-static_assert(sizeof(PyLevelSubsystem_GetWaveIdx) == 0x000004, "Wrong size on PyLevelSubsystem_GetWaveIdx");
-static_assert(offsetof(PyLevelSubsystem_GetWaveIdx, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetWaveIdx::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetProtector
-// 0x0008 (0x0008 - 0x0000)
-struct PyLevelSubsystem_GetProtector final
-{
-public:
-	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetProtector) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetProtector");
-static_assert(sizeof(PyLevelSubsystem_GetProtector) == 0x000008, "Wrong size on PyLevelSubsystem_GetProtector");
-static_assert(offsetof(PyLevelSubsystem_GetProtector, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetProtector::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetHealthFactor
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetHealthFactor final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetHealthFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetHealthFactor");
-static_assert(sizeof(PyLevelSubsystem_GetHealthFactor) == 0x000004, "Wrong size on PyLevelSubsystem_GetHealthFactor");
-static_assert(offsetof(PyLevelSubsystem_GetHealthFactor, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetHealthFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetDamageFactor
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetDamageFactor final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetDamageFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetDamageFactor");
-static_assert(sizeof(PyLevelSubsystem_GetDamageFactor) == 0x000004, "Wrong size on PyLevelSubsystem_GetDamageFactor");
-static_assert(offsetof(PyLevelSubsystem_GetDamageFactor, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetDamageFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetDifficultyFactor
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetDifficultyFactor final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetDifficultyFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetDifficultyFactor");
-static_assert(sizeof(PyLevelSubsystem_GetDifficultyFactor) == 0x000004, "Wrong size on PyLevelSubsystem_GetDifficultyFactor");
-static_assert(offsetof(PyLevelSubsystem_GetDifficultyFactor, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetDifficultyFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBossDifficultyHealthFactor
-// 0x0008 (0x0008 - 0x0000)
-struct PyLevelSubsystem_GetBossDifficultyHealthFactor final
-{
-public:
-	int32                                         BossID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBossDifficultyHealthFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBossDifficultyHealthFactor");
-static_assert(sizeof(PyLevelSubsystem_GetBossDifficultyHealthFactor) == 0x000008, "Wrong size on PyLevelSubsystem_GetBossDifficultyHealthFactor");
-static_assert(offsetof(PyLevelSubsystem_GetBossDifficultyHealthFactor, BossID) == 0x000000, "Member 'PyLevelSubsystem_GetBossDifficultyHealthFactor::BossID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBossDifficultyHealthFactor, ReturnValue) == 0x000004, "Member 'PyLevelSubsystem_GetBossDifficultyHealthFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBossDifficultyDamageFactor
-// 0x0008 (0x0008 - 0x0000)
-struct PyLevelSubsystem_GetBossDifficultyDamageFactor final
-{
-public:
-	int32                                         BossID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBossDifficultyDamageFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBossDifficultyDamageFactor");
-static_assert(sizeof(PyLevelSubsystem_GetBossDifficultyDamageFactor) == 0x000008, "Wrong size on PyLevelSubsystem_GetBossDifficultyDamageFactor");
-static_assert(offsetof(PyLevelSubsystem_GetBossDifficultyDamageFactor, BossID) == 0x000000, "Member 'PyLevelSubsystem_GetBossDifficultyDamageFactor::BossID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBossDifficultyDamageFactor, ReturnValue) == 0x000004, "Member 'PyLevelSubsystem_GetBossDifficultyDamageFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBossWaveHealthFactor
-// 0x0008 (0x0008 - 0x0000)
-struct PyLevelSubsystem_GetBossWaveHealthFactor final
-{
-public:
-	int32                                         BossID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBossWaveHealthFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBossWaveHealthFactor");
-static_assert(sizeof(PyLevelSubsystem_GetBossWaveHealthFactor) == 0x000008, "Wrong size on PyLevelSubsystem_GetBossWaveHealthFactor");
-static_assert(offsetof(PyLevelSubsystem_GetBossWaveHealthFactor, BossID) == 0x000000, "Member 'PyLevelSubsystem_GetBossWaveHealthFactor::BossID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBossWaveHealthFactor, ReturnValue) == 0x000004, "Member 'PyLevelSubsystem_GetBossWaveHealthFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBossWaveDamageFactor
-// 0x0008 (0x0008 - 0x0000)
-struct PyLevelSubsystem_GetBossWaveDamageFactor final
-{
-public:
-	int32                                         BossID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBossWaveDamageFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBossWaveDamageFactor");
-static_assert(sizeof(PyLevelSubsystem_GetBossWaveDamageFactor) == 0x000008, "Wrong size on PyLevelSubsystem_GetBossWaveDamageFactor");
-static_assert(offsetof(PyLevelSubsystem_GetBossWaveDamageFactor, BossID) == 0x000000, "Member 'PyLevelSubsystem_GetBossWaveDamageFactor::BossID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBossWaveDamageFactor, ReturnValue) == 0x000004, "Member 'PyLevelSubsystem_GetBossWaveDamageFactor::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBossDifficultyCriticalStrikeFactor
-// 0x0004 (0x0004 - 0x0000)
-struct PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor");
-static_assert(sizeof(PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor) == 0x000004, "Wrong size on PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor");
-static_assert(offsetof(PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetBossDifficultyCriticalStrikeFactor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPlayerCount;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.IsEndLessDifficulty
 // 0x0001 (0x0001 - 0x0000)
@@ -241,9 +96,7 @@ struct PyLevelSubsystem_IsEndLessDifficulty final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_IsEndLessDifficulty) == 0x000001, "Wrong alignment on PyLevelSubsystem_IsEndLessDifficulty");
-static_assert(sizeof(PyLevelSubsystem_IsEndLessDifficulty) == 0x000001, "Wrong size on PyLevelSubsystem_IsEndLessDifficulty");
-static_assert(offsetof(PyLevelSubsystem_IsEndLessDifficulty, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_IsEndLessDifficulty::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_IsEndLessDifficulty;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetResetTransform
 // 0x0060 (0x0060 - 0x0000)
@@ -252,9 +105,7 @@ struct PyLevelSubsystem_GetResetTransform final
 public:
 	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetResetTransform) == 0x000010, "Wrong alignment on PyLevelSubsystem_GetResetTransform");
-static_assert(sizeof(PyLevelSubsystem_GetResetTransform) == 0x000060, "Wrong size on PyLevelSubsystem_GetResetTransform");
-static_assert(offsetof(PyLevelSubsystem_GetResetTransform, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetResetTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetResetTransform;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetCampInsideCharacterList
 // 0x0010 (0x0010 - 0x0000)
@@ -263,9 +114,7 @@ struct PyLevelSubsystem_GetCampInsideCharacterList final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetCampInsideCharacterList) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetCampInsideCharacterList");
-static_assert(sizeof(PyLevelSubsystem_GetCampInsideCharacterList) == 0x000010, "Wrong size on PyLevelSubsystem_GetCampInsideCharacterList");
-static_assert(offsetof(PyLevelSubsystem_GetCampInsideCharacterList, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetCampInsideCharacterList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetCampInsideCharacterList;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetRemainTime
 // 0x0004 (0x0004 - 0x0000)
@@ -274,9 +123,7 @@ struct PyLevelSubsystem_GetRemainTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetRemainTime) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetRemainTime");
-static_assert(sizeof(PyLevelSubsystem_GetRemainTime) == 0x000004, "Wrong size on PyLevelSubsystem_GetRemainTime");
-static_assert(offsetof(PyLevelSubsystem_GetRemainTime, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetRemainTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetRemainTime;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetCurrentRoundWinnerSide
 // 0x0001 (0x0001 - 0x0000)
@@ -285,9 +132,7 @@ struct PyLevelSubsystem_GetCurrentRoundWinnerSide final
 public:
 	EBattleSide                                   ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetCurrentRoundWinnerSide) == 0x000001, "Wrong alignment on PyLevelSubsystem_GetCurrentRoundWinnerSide");
-static_assert(sizeof(PyLevelSubsystem_GetCurrentRoundWinnerSide) == 0x000001, "Wrong size on PyLevelSubsystem_GetCurrentRoundWinnerSide");
-static_assert(offsetof(PyLevelSubsystem_GetCurrentRoundWinnerSide, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetCurrentRoundWinnerSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetCurrentRoundWinnerSide;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetFinalWinnerTeamID
 // 0x0004 (0x0004 - 0x0000)
@@ -296,9 +141,7 @@ struct PyLevelSubsystem_GetFinalWinnerTeamID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetFinalWinnerTeamID) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetFinalWinnerTeamID");
-static_assert(sizeof(PyLevelSubsystem_GetFinalWinnerTeamID) == 0x000004, "Wrong size on PyLevelSubsystem_GetFinalWinnerTeamID");
-static_assert(offsetof(PyLevelSubsystem_GetFinalWinnerTeamID, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetFinalWinnerTeamID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetFinalWinnerTeamID;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetCurrentPartIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -307,9 +150,7 @@ struct PyLevelSubsystem_GetCurrentPartIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetCurrentPartIndex) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetCurrentPartIndex");
-static_assert(sizeof(PyLevelSubsystem_GetCurrentPartIndex) == 0x000004, "Wrong size on PyLevelSubsystem_GetCurrentPartIndex");
-static_assert(offsetof(PyLevelSubsystem_GetCurrentPartIndex, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetCurrentPartIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetCurrentPartIndex;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPayloadTraceList
 // 0x0010 (0x0010 - 0x0000)
@@ -318,9 +159,7 @@ struct PyLevelSubsystem_GetPayloadTraceList final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetPayloadTraceList) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetPayloadTraceList");
-static_assert(sizeof(PyLevelSubsystem_GetPayloadTraceList) == 0x000010, "Wrong size on PyLevelSubsystem_GetPayloadTraceList");
-static_assert(offsetof(PyLevelSubsystem_GetPayloadTraceList, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPayloadTraceList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPayloadTraceList;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBattleSideByTeamID
 // 0x0008 (0x0008 - 0x0000)
@@ -330,43 +169,7 @@ public:
 	int32                                         TeamID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetBattleSideByTeamID) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetBattleSideByTeamID");
-static_assert(sizeof(PyLevelSubsystem_GetBattleSideByTeamID) == 0x000008, "Wrong size on PyLevelSubsystem_GetBattleSideByTeamID");
-static_assert(offsetof(PyLevelSubsystem_GetBattleSideByTeamID, TeamID) == 0x000000, "Member 'PyLevelSubsystem_GetBattleSideByTeamID::TeamID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBattleSideByTeamID, ReturnValue) == 0x000004, "Member 'PyLevelSubsystem_GetBattleSideByTeamID::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetTimeOfRespawn
-// 0x0010 (0x0010 - 0x0000)
-struct PyLevelSubsystem_GetTimeOfRespawn final
-{
-public:
-	class APlayerState*                           player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetTimeOfRespawn) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetTimeOfRespawn");
-static_assert(sizeof(PyLevelSubsystem_GetTimeOfRespawn) == 0x000010, "Wrong size on PyLevelSubsystem_GetTimeOfRespawn");
-static_assert(offsetof(PyLevelSubsystem_GetTimeOfRespawn, player_state) == 0x000000, "Member 'PyLevelSubsystem_GetTimeOfRespawn::player_state' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetTimeOfRespawn, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetTimeOfRespawn::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.TrySpawnPlayer
-// 0x07B0 (0x07B0 - 0x0000)
-struct PyLevelSubsystem_TrySpawnPlayer final
-{
-public:
-	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          ForceSpawn;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESpawnMethod                                  Method;                                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HeroID;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            ModifierParam;                                     // 0x0010(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyLevelSubsystem_TrySpawnPlayer) == 0x000008, "Wrong alignment on PyLevelSubsystem_TrySpawnPlayer");
-static_assert(sizeof(PyLevelSubsystem_TrySpawnPlayer) == 0x0007B0, "Wrong size on PyLevelSubsystem_TrySpawnPlayer");
-static_assert(offsetof(PyLevelSubsystem_TrySpawnPlayer, PlayerState) == 0x000000, "Member 'PyLevelSubsystem_TrySpawnPlayer::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_TrySpawnPlayer, ForceSpawn) == 0x000008, "Member 'PyLevelSubsystem_TrySpawnPlayer::ForceSpawn' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_TrySpawnPlayer, Method) == 0x000009, "Member 'PyLevelSubsystem_TrySpawnPlayer::Method' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_TrySpawnPlayer, HeroID) == 0x00000C, "Member 'PyLevelSubsystem_TrySpawnPlayer::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_TrySpawnPlayer, ModifierParam) == 0x000010, "Member 'PyLevelSubsystem_TrySpawnPlayer::ModifierParam' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetBattleSideByTeamID;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.RecoverHeroChoosable
 // 0x0008 (0x0008 - 0x0000)
@@ -375,9 +178,7 @@ struct PyLevelSubsystem_RecoverHeroChoosable final
 public:
 	class APlayerState*                           ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_RecoverHeroChoosable) == 0x000008, "Wrong alignment on PyLevelSubsystem_RecoverHeroChoosable");
-static_assert(sizeof(PyLevelSubsystem_RecoverHeroChoosable) == 0x000008, "Wrong size on PyLevelSubsystem_RecoverHeroChoosable");
-static_assert(offsetof(PyLevelSubsystem_RecoverHeroChoosable, ps) == 0x000000, "Member 'PyLevelSubsystem_RecoverHeroChoosable::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_RecoverHeroChoosable;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.IsNoviceMode
 // 0x0001 (0x0001 - 0x0000)
@@ -386,9 +187,7 @@ struct PyLevelSubsystem_IsNoviceMode final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_IsNoviceMode) == 0x000001, "Wrong alignment on PyLevelSubsystem_IsNoviceMode");
-static_assert(sizeof(PyLevelSubsystem_IsNoviceMode) == 0x000001, "Wrong size on PyLevelSubsystem_IsNoviceMode");
-static_assert(offsetof(PyLevelSubsystem_IsNoviceMode, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_IsNoviceMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_IsNoviceMode;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.ShouldCreateHighlightActorComponent
 // 0x0001 (0x0001 - 0x0000)
@@ -397,9 +196,7 @@ struct PyLevelSubsystem_ShouldCreateHighlightActorComponent final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_ShouldCreateHighlightActorComponent) == 0x000001, "Wrong alignment on PyLevelSubsystem_ShouldCreateHighlightActorComponent");
-static_assert(sizeof(PyLevelSubsystem_ShouldCreateHighlightActorComponent) == 0x000001, "Wrong size on PyLevelSubsystem_ShouldCreateHighlightActorComponent");
-static_assert(offsetof(PyLevelSubsystem_ShouldCreateHighlightActorComponent, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_ShouldCreateHighlightActorComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_ShouldCreateHighlightActorComponent;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.ShouldCreateCharacterSecondaryWidgetComponent
 // 0x0001 (0x0001 - 0x0000)
@@ -408,9 +205,7 @@ struct PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent) == 0x000001, "Wrong alignment on PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent");
-static_assert(sizeof(PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent) == 0x000001, "Wrong size on PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent");
-static_assert(offsetof(PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_ShouldCreateCharacterSecondaryWidgetComponent;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.ShouldDisableHitShapesUpdate
 // 0x0001 (0x0001 - 0x0000)
@@ -419,9 +214,7 @@ struct PyLevelSubsystem_ShouldDisableHitShapesUpdate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_ShouldDisableHitShapesUpdate) == 0x000001, "Wrong alignment on PyLevelSubsystem_ShouldDisableHitShapesUpdate");
-static_assert(sizeof(PyLevelSubsystem_ShouldDisableHitShapesUpdate) == 0x000001, "Wrong size on PyLevelSubsystem_ShouldDisableHitShapesUpdate");
-static_assert(offsetof(PyLevelSubsystem_ShouldDisableHitShapesUpdate, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_ShouldDisableHitShapesUpdate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_ShouldDisableHitShapesUpdate;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.IsFormalTrainMode
 // 0x0001 (0x0001 - 0x0000)
@@ -430,9 +223,7 @@ struct PyLevelSubsystem_IsFormalTrainMode final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_IsFormalTrainMode) == 0x000001, "Wrong alignment on PyLevelSubsystem_IsFormalTrainMode");
-static_assert(sizeof(PyLevelSubsystem_IsFormalTrainMode) == 0x000001, "Wrong size on PyLevelSubsystem_IsFormalTrainMode");
-static_assert(offsetof(PyLevelSubsystem_IsFormalTrainMode, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_IsFormalTrainMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_IsFormalTrainMode;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetHeroLimitAbilitySet
 // 0x0058 (0x0058 - 0x0000)
@@ -443,10 +234,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<int32>                                   ReturnValue;                                       // 0x0008(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetHeroLimitAbilitySet) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetHeroLimitAbilitySet");
-static_assert(sizeof(PyLevelSubsystem_GetHeroLimitAbilitySet) == 0x000058, "Wrong size on PyLevelSubsystem_GetHeroLimitAbilitySet");
-static_assert(offsetof(PyLevelSubsystem_GetHeroLimitAbilitySet, hero_id) == 0x000000, "Member 'PyLevelSubsystem_GetHeroLimitAbilitySet::hero_id' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetHeroLimitAbilitySet, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetHeroLimitAbilitySet::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetHeroLimitAbilitySet;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetHeroAllAbilityByLevel
 // 0x0018 (0x0018 - 0x0000)
@@ -457,10 +245,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetHeroAllAbilityByLevel) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetHeroAllAbilityByLevel");
-static_assert(sizeof(PyLevelSubsystem_GetHeroAllAbilityByLevel) == 0x000018, "Wrong size on PyLevelSubsystem_GetHeroAllAbilityByLevel");
-static_assert(offsetof(PyLevelSubsystem_GetHeroAllAbilityByLevel, hero_id) == 0x000000, "Member 'PyLevelSubsystem_GetHeroAllAbilityByLevel::hero_id' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetHeroAllAbilityByLevel, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetHeroAllAbilityByLevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetHeroAllAbilityByLevel;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.FilterHeroLimitAbilitySet
 // 0x00A8 (0x00A8 - 0x0000)
@@ -472,11 +257,7 @@ public:
 	TSet<int32>                                   all_ability_set;                                   // 0x0008(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TSet<int32>                                   ReturnValue;                                       // 0x0058(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_FilterHeroLimitAbilitySet) == 0x000008, "Wrong alignment on PyLevelSubsystem_FilterHeroLimitAbilitySet");
-static_assert(sizeof(PyLevelSubsystem_FilterHeroLimitAbilitySet) == 0x0000A8, "Wrong size on PyLevelSubsystem_FilterHeroLimitAbilitySet");
-static_assert(offsetof(PyLevelSubsystem_FilterHeroLimitAbilitySet, hero_id) == 0x000000, "Member 'PyLevelSubsystem_FilterHeroLimitAbilitySet::hero_id' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_FilterHeroLimitAbilitySet, all_ability_set) == 0x000008, "Member 'PyLevelSubsystem_FilterHeroLimitAbilitySet::all_ability_set' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_FilterHeroLimitAbilitySet, ReturnValue) == 0x000058, "Member 'PyLevelSubsystem_FilterHeroLimitAbilitySet::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_FilterHeroLimitAbilitySet;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetSpTeamColor
 // 0x0018 (0x0018 - 0x0000)
@@ -487,11 +268,7 @@ public:
 	struct FLinearColor                           out_color;                                         // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetSpTeamColor) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetSpTeamColor");
-static_assert(sizeof(PyLevelSubsystem_GetSpTeamColor) == 0x000018, "Wrong size on PyLevelSubsystem_GetSpTeamColor");
-static_assert(offsetof(PyLevelSubsystem_GetSpTeamColor, team_id) == 0x000000, "Member 'PyLevelSubsystem_GetSpTeamColor::team_id' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetSpTeamColor, out_color) == 0x000004, "Member 'PyLevelSubsystem_GetSpTeamColor::out_color' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetSpTeamColor, ReturnValue) == 0x000014, "Member 'PyLevelSubsystem_GetSpTeamColor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetSpTeamColor;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.IsSameTeamGroupByBattleSide
 // 0x0003 (0x0003 - 0x0000)
@@ -502,11 +279,7 @@ public:
 	EBattleSide                                   battle_side2;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_IsSameTeamGroupByBattleSide) == 0x000001, "Wrong alignment on PyLevelSubsystem_IsSameTeamGroupByBattleSide");
-static_assert(sizeof(PyLevelSubsystem_IsSameTeamGroupByBattleSide) == 0x000003, "Wrong size on PyLevelSubsystem_IsSameTeamGroupByBattleSide");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByBattleSide, battle_side1) == 0x000000, "Member 'PyLevelSubsystem_IsSameTeamGroupByBattleSide::battle_side1' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByBattleSide, battle_side2) == 0x000001, "Member 'PyLevelSubsystem_IsSameTeamGroupByBattleSide::battle_side2' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByBattleSide, ReturnValue) == 0x000002, "Member 'PyLevelSubsystem_IsSameTeamGroupByBattleSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_IsSameTeamGroupByBattleSide;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.IsSameTeamGroupByPlayerState
 // 0x0018 (0x0018 - 0x0000)
@@ -517,11 +290,7 @@ public:
 	class AMarvelPlayerState*                     ps2;                                               // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_IsSameTeamGroupByPlayerState) == 0x000008, "Wrong alignment on PyLevelSubsystem_IsSameTeamGroupByPlayerState");
-static_assert(sizeof(PyLevelSubsystem_IsSameTeamGroupByPlayerState) == 0x000018, "Wrong size on PyLevelSubsystem_IsSameTeamGroupByPlayerState");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByPlayerState, ps1) == 0x000000, "Member 'PyLevelSubsystem_IsSameTeamGroupByPlayerState::ps1' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByPlayerState, ps2) == 0x000008, "Member 'PyLevelSubsystem_IsSameTeamGroupByPlayerState::ps2' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_IsSameTeamGroupByPlayerState, ReturnValue) == 0x000010, "Member 'PyLevelSubsystem_IsSameTeamGroupByPlayerState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_IsSameTeamGroupByPlayerState;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetTeamGroupName
 // 0x0020 (0x0020 - 0x0000)
@@ -531,10 +300,7 @@ public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetTeamGroupName) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetTeamGroupName");
-static_assert(sizeof(PyLevelSubsystem_GetTeamGroupName) == 0x000020, "Wrong size on PyLevelSubsystem_GetTeamGroupName");
-static_assert(offsetof(PyLevelSubsystem_GetTeamGroupName, ps) == 0x000000, "Member 'PyLevelSubsystem_GetTeamGroupName::ps' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetTeamGroupName, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetTeamGroupName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetTeamGroupName;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.AllocateBattleSide
 // 0x0078 (0x0078 - 0x0000)
@@ -544,38 +310,20 @@ public:
 	struct FPlayerInfo                            pi;                                                // 0x0000(0x0070)(Parm)
 	int32                                         ReturnValue;                                       // 0x0070(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_AllocateBattleSide) == 0x000008, "Wrong alignment on PyLevelSubsystem_AllocateBattleSide");
-static_assert(sizeof(PyLevelSubsystem_AllocateBattleSide) == 0x000078, "Wrong size on PyLevelSubsystem_AllocateBattleSide");
-static_assert(offsetof(PyLevelSubsystem_AllocateBattleSide, pi) == 0x000000, "Member 'PyLevelSubsystem_AllocateBattleSide::pi' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_AllocateBattleSide, ReturnValue) == 0x000070, "Member 'PyLevelSubsystem_AllocateBattleSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_AllocateBattleSide;
 
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.PyGetBirthBasesByTeam
-// 0x0018 (0x0018 - 0x0000)
-struct PyLevelSubsystem_PyGetBirthBasesByTeam final
+// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetEnemyColorProportionForAI
+// 0x0038 (0x0038 - 0x0000)
+struct PyLevelSubsystem_GetEnemyColorProportionForAI final
 {
 public:
-	int32                                         TeamID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
+	EBattleSide                                   querier_side;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                query_location;                                    // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              query_extent;                                      // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_PyGetBirthBasesByTeam) == 0x000008, "Wrong alignment on PyLevelSubsystem_PyGetBirthBasesByTeam");
-static_assert(sizeof(PyLevelSubsystem_PyGetBirthBasesByTeam) == 0x000018, "Wrong size on PyLevelSubsystem_PyGetBirthBasesByTeam");
-static_assert(offsetof(PyLevelSubsystem_PyGetBirthBasesByTeam, TeamID) == 0x000000, "Member 'PyLevelSubsystem_PyGetBirthBasesByTeam::TeamID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_PyGetBirthBasesByTeam, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_PyGetBirthBasesByTeam::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.PyGetBirthDoorsByTeam
-// 0x0018 (0x0018 - 0x0000)
-struct PyLevelSubsystem_PyGetBirthDoorsByTeam final
-{
-public:
-	int32                                         TeamID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(PyLevelSubsystem_PyGetBirthDoorsByTeam) == 0x000008, "Wrong alignment on PyLevelSubsystem_PyGetBirthDoorsByTeam");
-static_assert(sizeof(PyLevelSubsystem_PyGetBirthDoorsByTeam) == 0x000018, "Wrong size on PyLevelSubsystem_PyGetBirthDoorsByTeam");
-static_assert(offsetof(PyLevelSubsystem_PyGetBirthDoorsByTeam, TeamID) == 0x000000, "Member 'PyLevelSubsystem_PyGetBirthDoorsByTeam::TeamID' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_PyGetBirthDoorsByTeam, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_PyGetBirthDoorsByTeam::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetEnemyColorProportionForAI;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetSubMapID
 // 0x0004 (0x0004 - 0x0000)
@@ -584,9 +332,7 @@ struct PyLevelSubsystem_GetSubMapID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetSubMapID) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetSubMapID");
-static_assert(sizeof(PyLevelSubsystem_GetSubMapID) == 0x000004, "Wrong size on PyLevelSubsystem_GetSubMapID");
-static_assert(offsetof(PyLevelSubsystem_GetSubMapID, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetSubMapID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetSubMapID;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPayloadIndexAndProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -595,9 +341,7 @@ struct PyLevelSubsystem_GetPayloadIndexAndProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPayloadIndexAndProgress) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetPayloadIndexAndProgress");
-static_assert(sizeof(PyLevelSubsystem_GetPayloadIndexAndProgress) == 0x000004, "Wrong size on PyLevelSubsystem_GetPayloadIndexAndProgress");
-static_assert(offsetof(PyLevelSubsystem_GetPayloadIndexAndProgress, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetPayloadIndexAndProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPayloadIndexAndProgress;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetStageIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -606,9 +350,7 @@ struct PyLevelSubsystem_GetStageIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetStageIndex) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetStageIndex");
-static_assert(sizeof(PyLevelSubsystem_GetStageIndex) == 0x000004, "Wrong size on PyLevelSubsystem_GetStageIndex");
-static_assert(offsetof(PyLevelSubsystem_GetStageIndex, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetStageIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetStageIndex;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetPositionInPayloadTrace
 // 0x0020 (0x0020 - 0x0000)
@@ -619,10 +361,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetPositionInPayloadTrace) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetPositionInPayloadTrace");
-static_assert(sizeof(PyLevelSubsystem_GetPositionInPayloadTrace) == 0x000020, "Wrong size on PyLevelSubsystem_GetPositionInPayloadTrace");
-static_assert(offsetof(PyLevelSubsystem_GetPositionInPayloadTrace, Distance) == 0x000000, "Member 'PyLevelSubsystem_GetPositionInPayloadTrace::Distance' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetPositionInPayloadTrace, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetPositionInPayloadTrace::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetPositionInPayloadTrace;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.ForceKillPlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -631,9 +370,7 @@ struct PyLevelSubsystem_ForceKillPlayer final
 public:
 	class AMarvelBaseCharacter*                   Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_ForceKillPlayer) == 0x000008, "Wrong alignment on PyLevelSubsystem_ForceKillPlayer");
-static_assert(sizeof(PyLevelSubsystem_ForceKillPlayer) == 0x000008, "Wrong size on PyLevelSubsystem_ForceKillPlayer");
-static_assert(offsetof(PyLevelSubsystem_ForceKillPlayer, Target) == 0x000000, "Member 'PyLevelSubsystem_ForceKillPlayer::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_ForceKillPlayer;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.PyIsInBorder
 // 0x0020 (0x0020 - 0x0000)
@@ -643,37 +380,7 @@ public:
 	struct FVector                                InLocation;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_PyIsInBorder) == 0x000008, "Wrong alignment on PyLevelSubsystem_PyIsInBorder");
-static_assert(sizeof(PyLevelSubsystem_PyIsInBorder) == 0x000020, "Wrong size on PyLevelSubsystem_PyIsInBorder");
-static_assert(offsetof(PyLevelSubsystem_PyIsInBorder, InLocation) == 0x000000, "Member 'PyLevelSubsystem_PyIsInBorder::InLocation' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_PyIsInBorder, ReturnValue) == 0x000018, "Member 'PyLevelSubsystem_PyIsInBorder::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.PyFindRespawnTransform
-// 0x0070 (0x0070 - 0x0000)
-struct PyLevelSubsystem_PyFindRespawnTransform final
-{
-public:
-	class AController*                            InController;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             ReturnValue;                                       // 0x0010(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_PyFindRespawnTransform) == 0x000010, "Wrong alignment on PyLevelSubsystem_PyFindRespawnTransform");
-static_assert(sizeof(PyLevelSubsystem_PyFindRespawnTransform) == 0x000070, "Wrong size on PyLevelSubsystem_PyFindRespawnTransform");
-static_assert(offsetof(PyLevelSubsystem_PyFindRespawnTransform, InController) == 0x000000, "Member 'PyLevelSubsystem_PyFindRespawnTransform::InController' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_PyFindRespawnTransform, ReturnValue) == 0x000010, "Member 'PyLevelSubsystem_PyFindRespawnTransform::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetBirthBase
-// 0x0002 (0x0002 - 0x0000)
-struct PyLevelSubsystem_GetBirthBase final
-{
-public:
-	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          acitve;                                            // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyLevelSubsystem_GetBirthBase) == 0x000001, "Wrong alignment on PyLevelSubsystem_GetBirthBase");
-static_assert(sizeof(PyLevelSubsystem_GetBirthBase) == 0x000002, "Wrong size on PyLevelSubsystem_GetBirthBase");
-static_assert(offsetof(PyLevelSubsystem_GetBirthBase, battle_side) == 0x000000, "Member 'PyLevelSubsystem_GetBirthBase::battle_side' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetBirthBase, acitve) == 0x000001, "Member 'PyLevelSubsystem_GetBirthBase::acitve' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_PyIsInBorder;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.SetMarvelSplineColor
 // 0x0020 (0x0020 - 0x0000)
@@ -683,10 +390,7 @@ public:
 	class UMarvelSplineComponent*                 MarvelSpline;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Color;                                             // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_SetMarvelSplineColor) == 0x000008, "Wrong alignment on PyLevelSubsystem_SetMarvelSplineColor");
-static_assert(sizeof(PyLevelSubsystem_SetMarvelSplineColor) == 0x000020, "Wrong size on PyLevelSubsystem_SetMarvelSplineColor");
-static_assert(offsetof(PyLevelSubsystem_SetMarvelSplineColor, MarvelSpline) == 0x000000, "Member 'PyLevelSubsystem_SetMarvelSplineColor::MarvelSpline' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_SetMarvelSplineColor, Color) == 0x000008, "Member 'PyLevelSubsystem_SetMarvelSplineColor::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_SetMarvelSplineColor;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetHeroChooseTime
 // 0x0004 (0x0004 - 0x0000)
@@ -695,9 +399,7 @@ struct PyLevelSubsystem_GetHeroChooseTime final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetHeroChooseTime) == 0x000004, "Wrong alignment on PyLevelSubsystem_GetHeroChooseTime");
-static_assert(sizeof(PyLevelSubsystem_GetHeroChooseTime) == 0x000004, "Wrong size on PyLevelSubsystem_GetHeroChooseTime");
-static_assert(offsetof(PyLevelSubsystem_GetHeroChooseTime, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetHeroChooseTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetHeroChooseTime;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.PreCharacterDestroy
 // 0x0008 (0x0008 - 0x0000)
@@ -706,9 +408,7 @@ struct PyLevelSubsystem_PreCharacterDestroy final
 public:
 	class AActor*                                 character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_PreCharacterDestroy) == 0x000008, "Wrong alignment on PyLevelSubsystem_PreCharacterDestroy");
-static_assert(sizeof(PyLevelSubsystem_PreCharacterDestroy) == 0x000008, "Wrong size on PyLevelSubsystem_PreCharacterDestroy");
-static_assert(offsetof(PyLevelSubsystem_PreCharacterDestroy, character) == 0x000000, "Member 'PyLevelSubsystem_PreCharacterDestroy::character' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_PreCharacterDestroy;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetCurrentShipType
 // 0x0001 (0x0001 - 0x0000)
@@ -717,9 +417,7 @@ struct PyLevelSubsystem_GetCurrentShipType final
 public:
 	EOwnershipType                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetCurrentShipType) == 0x000001, "Wrong alignment on PyLevelSubsystem_GetCurrentShipType");
-static_assert(sizeof(PyLevelSubsystem_GetCurrentShipType) == 0x000001, "Wrong size on PyLevelSubsystem_GetCurrentShipType");
-static_assert(offsetof(PyLevelSubsystem_GetCurrentShipType, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetCurrentShipType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetCurrentShipType;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetFrontierActor
 // 0x0008 (0x0008 - 0x0000)
@@ -728,9 +426,7 @@ struct PyLevelSubsystem_GetFrontierActor final
 public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetFrontierActor) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetFrontierActor");
-static_assert(sizeof(PyLevelSubsystem_GetFrontierActor) == 0x000008, "Wrong size on PyLevelSubsystem_GetFrontierActor");
-static_assert(offsetof(PyLevelSubsystem_GetFrontierActor, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetFrontierActor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetFrontierActor;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.HasDeathCameraZone
 // 0x0001 (0x0001 - 0x0000)
@@ -739,9 +435,7 @@ struct PyLevelSubsystem_HasDeathCameraZone final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_HasDeathCameraZone) == 0x000001, "Wrong alignment on PyLevelSubsystem_HasDeathCameraZone");
-static_assert(sizeof(PyLevelSubsystem_HasDeathCameraZone) == 0x000001, "Wrong size on PyLevelSubsystem_HasDeathCameraZone");
-static_assert(offsetof(PyLevelSubsystem_HasDeathCameraZone, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_HasDeathCameraZone::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_HasDeathCameraZone;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetDeathCameraPoint
 // 0x0010 (0x0010 - 0x0000)
@@ -751,10 +445,7 @@ public:
 	class AActor*                                 character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetDeathCameraPoint) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetDeathCameraPoint");
-static_assert(sizeof(PyLevelSubsystem_GetDeathCameraPoint) == 0x000010, "Wrong size on PyLevelSubsystem_GetDeathCameraPoint");
-static_assert(offsetof(PyLevelSubsystem_GetDeathCameraPoint, character) == 0x000000, "Member 'PyLevelSubsystem_GetDeathCameraPoint::character' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetDeathCameraPoint, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetDeathCameraPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetDeathCameraPoint;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.TeleportToBirthBase
 // 0x0008 (0x0008 - 0x0000)
@@ -763,9 +454,7 @@ struct PyLevelSubsystem_TeleportToBirthBase final
 public:
 	class AMarvelBaseCharacter*                   character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_TeleportToBirthBase) == 0x000008, "Wrong alignment on PyLevelSubsystem_TeleportToBirthBase");
-static_assert(sizeof(PyLevelSubsystem_TeleportToBirthBase) == 0x000008, "Wrong size on PyLevelSubsystem_TeleportToBirthBase");
-static_assert(offsetof(PyLevelSubsystem_TeleportToBirthBase, character) == 0x000000, "Member 'PyLevelSubsystem_TeleportToBirthBase::character' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_TeleportToBirthBase;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetMarvelModeConfig
 // 0x0008 (0x0008 - 0x0000)
@@ -774,9 +463,7 @@ struct PyLevelSubsystem_GetMarvelModeConfig final
 public:
 	class UMarvelLevelConfig*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSubsystem_GetMarvelModeConfig) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetMarvelModeConfig");
-static_assert(sizeof(PyLevelSubsystem_GetMarvelModeConfig) == 0x000008, "Wrong size on PyLevelSubsystem_GetMarvelModeConfig");
-static_assert(offsetof(PyLevelSubsystem_GetMarvelModeConfig, ReturnValue) == 0x000000, "Member 'PyLevelSubsystem_GetMarvelModeConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetMarvelModeConfig;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetEnemyCharacterList_BattleChess
 // 0x0018 (0x0018 - 0x0000)
@@ -786,10 +473,7 @@ public:
 	class AActor*                                 source;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetEnemyCharacterList_BattleChess) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetEnemyCharacterList_BattleChess");
-static_assert(sizeof(PyLevelSubsystem_GetEnemyCharacterList_BattleChess) == 0x000018, "Wrong size on PyLevelSubsystem_GetEnemyCharacterList_BattleChess");
-static_assert(offsetof(PyLevelSubsystem_GetEnemyCharacterList_BattleChess, source) == 0x000000, "Member 'PyLevelSubsystem_GetEnemyCharacterList_BattleChess::source' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetEnemyCharacterList_BattleChess, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetEnemyCharacterList_BattleChess::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetEnemyCharacterList_BattleChess;
 
 // PythonFunction PyLevelSubsystem.PyLevelSubsystem.GetAllyCharacterList_BattleChess
 // 0x0018 (0x0018 - 0x0000)
@@ -799,10 +483,7 @@ public:
 	class AActor*                                 source;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSubsystem_GetAllyCharacterList_BattleChess) == 0x000008, "Wrong alignment on PyLevelSubsystem_GetAllyCharacterList_BattleChess");
-static_assert(sizeof(PyLevelSubsystem_GetAllyCharacterList_BattleChess) == 0x000018, "Wrong size on PyLevelSubsystem_GetAllyCharacterList_BattleChess");
-static_assert(offsetof(PyLevelSubsystem_GetAllyCharacterList_BattleChess, source) == 0x000000, "Member 'PyLevelSubsystem_GetAllyCharacterList_BattleChess::source' has a wrong offset!");
-static_assert(offsetof(PyLevelSubsystem_GetAllyCharacterList_BattleChess, ReturnValue) == 0x000008, "Member 'PyLevelSubsystem_GetAllyCharacterList_BattleChess::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSubsystem_GetAllyCharacterList_BattleChess;
 
 }
 

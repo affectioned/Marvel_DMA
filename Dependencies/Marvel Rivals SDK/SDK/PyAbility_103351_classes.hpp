@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103351.PyUIController_103351
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_103351 final : public UUIC_Ability
 {
 public:
@@ -29,46 +29,50 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103351">();
+		STATIC_CLASS_IMPL("PyUIController_103351")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103351")
 	}
 	static class UPyUIController_103351* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103351>();
 	}
 };
-static_assert(alignof(UPyUIController_103351) == 0x000008, "Wrong alignment on UPyUIController_103351");
-static_assert(sizeof(UPyUIController_103351) == 0x000F10, "Wrong size on UPyUIController_103351");
+DUMPER7_ASSERTS_UPyUIController_103351;
 
 // PythonClass PyAbility_103351.PyConfig_103351
-// 0x0008 (0x04B0 - 0x04A8)
+// 0x0008 (0x05F0 - 0x05E8)
 class UPyConfig_103351 final : public UMarvelAbilityConfig_AimDownSights
 {
 public:
-	float                                         ScaleChange;                                       // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AutoPullBullet;                                    // 0x04AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScaleChange;                                       // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AutoPullBullet;                                    // 0x05EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103351">();
+		STATIC_CLASS_IMPL("PyConfig_103351")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103351")
 	}
 	static class UPyConfig_103351* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103351>();
 	}
 };
-static_assert(alignof(UPyConfig_103351) == 0x000008, "Wrong alignment on UPyConfig_103351");
-static_assert(sizeof(UPyConfig_103351) == 0x0004B0, "Wrong size on UPyConfig_103351");
-static_assert(offsetof(UPyConfig_103351, ScaleChange) == 0x0004A8, "Member 'UPyConfig_103351::ScaleChange' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103351, AutoPullBullet) == 0x0004AC, "Member 'UPyConfig_103351::AutoPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103351;
 
 // PythonClass PyAbility_103351.PyAbility_103351
-// 0x0020 (0x2A78 - 0x2A58)
+// 0x0020 (0x2AC8 - 0x2AA8)
 class UPyAbility_103351 : public UMarvelAbility_AimDownSights
 {
 public:
-	TMulticastInlineDelegate<void()>              OnAbilityCommit;                                   // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAbilityCancel;                                   // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityCommit;                                   // 0x2AA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityCancel;                                   // 0x2AB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -86,17 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103351">();
+		STATIC_CLASS_IMPL("PyAbility_103351")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103351")
 	}
 	static class UPyAbility_103351* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103351>();
 	}
 };
-static_assert(alignof(UPyAbility_103351) == 0x000008, "Wrong alignment on UPyAbility_103351");
-static_assert(sizeof(UPyAbility_103351) == 0x002A78, "Wrong size on UPyAbility_103351");
-static_assert(offsetof(UPyAbility_103351, OnAbilityCommit) == 0x002A58, "Member 'UPyAbility_103351::OnAbilityCommit' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103351, OnAbilityCancel) == 0x002A68, "Member 'UPyAbility_103351::OnAbilityCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103351;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWheel_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWheel_ReceiveTick) == 0x000004, "Wrong alignment on PyWheel_ReceiveTick");
-static_assert(sizeof(PyWheel_ReceiveTick) == 0x000004, "Wrong size on PyWheel_ReceiveTick");
-static_assert(offsetof(PyWheel_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyWheel_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyWheel_ReceiveTick;
 
 // PythonFunction PyWheel.PyWheel.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWheel_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWheel_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyWheel_ReceiveEndPlay");
-static_assert(sizeof(PyWheel_ReceiveEndPlay) == 0x000001, "Wrong size on PyWheel_ReceiveEndPlay");
-static_assert(offsetof(PyWheel_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyWheel_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyWheel_ReceiveEndPlay;
 
 // PythonFunction PyWheel.PyWheel.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWheel_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWheel_SrvSetState) == 0x000008, "Wrong alignment on PyWheel_SrvSetState");
-static_assert(sizeof(PyWheel_SrvSetState) == 0x000010, "Wrong size on PyWheel_SrvSetState");
-static_assert(offsetof(PyWheel_SrvSetState, state) == 0x000000, "Member 'PyWheel_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyWheel_SrvSetState;
 
 }
 

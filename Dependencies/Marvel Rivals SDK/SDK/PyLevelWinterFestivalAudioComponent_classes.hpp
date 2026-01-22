@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelWinterFestivalAudioComponent">();
+		STATIC_CLASS_IMPL("PyLevelWinterFestivalAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelWinterFestivalAudioComponent")
 	}
 	static class UPyLevelWinterFestivalAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelWinterFestivalAudioComponent>();
 	}
 };
-static_assert(alignof(UPyLevelWinterFestivalAudioComponent) == 0x000008, "Wrong alignment on UPyLevelWinterFestivalAudioComponent");
-static_assert(sizeof(UPyLevelWinterFestivalAudioComponent) == 0x000120, "Wrong size on UPyLevelWinterFestivalAudioComponent");
+DUMPER7_ASSERTS_UPyLevelWinterFestivalAudioComponent;
 
 }
 

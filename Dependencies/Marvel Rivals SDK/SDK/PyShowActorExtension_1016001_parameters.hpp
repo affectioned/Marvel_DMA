@@ -23,9 +23,7 @@ struct PyShowActorExtension_1016001_LikeBP_SetShowActorStage final
 public:
 	EShowActorStage                               ShowActorStage;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1016001_LikeBP_SetShowActorStage) == 0x000001, "Wrong alignment on PyShowActorExtension_1016001_LikeBP_SetShowActorStage");
-static_assert(sizeof(PyShowActorExtension_1016001_LikeBP_SetShowActorStage) == 0x000001, "Wrong size on PyShowActorExtension_1016001_LikeBP_SetShowActorStage");
-static_assert(offsetof(PyShowActorExtension_1016001_LikeBP_SetShowActorStage, ShowActorStage) == 0x000000, "Member 'PyShowActorExtension_1016001_LikeBP_SetShowActorStage::ShowActorStage' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1016001_LikeBP_SetShowActorStage;
 
 // PythonFunction PyShowActorExtension_1016001.PyShowActorExtension_1016501_LikeBP.SetShowActorStage
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyShowActorExtension_1016501_LikeBP_SetShowActorStage final
 public:
 	EShowActorStage                               ShowActorStage;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1016501_LikeBP_SetShowActorStage) == 0x000001, "Wrong alignment on PyShowActorExtension_1016501_LikeBP_SetShowActorStage");
-static_assert(sizeof(PyShowActorExtension_1016501_LikeBP_SetShowActorStage) == 0x000001, "Wrong size on PyShowActorExtension_1016501_LikeBP_SetShowActorStage");
-static_assert(offsetof(PyShowActorExtension_1016501_LikeBP_SetShowActorStage, ShowActorStage) == 0x000000, "Member 'PyShowActorExtension_1016501_LikeBP_SetShowActorStage::ShowActorStage' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1016501_LikeBP_SetShowActorStage;
 
 }
 

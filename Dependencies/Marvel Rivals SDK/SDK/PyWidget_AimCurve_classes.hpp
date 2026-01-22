@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AimCurve.PyWidget_GamepadTriggerDeadZoneWidget
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_GamepadTriggerDeadZoneWidget : public UPyMarvelUserWidget
 {
 public:
@@ -27,45 +27,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GamepadTriggerDeadZoneWidget">();
+		STATIC_CLASS_IMPL("PyWidget_GamepadTriggerDeadZoneWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GamepadTriggerDeadZoneWidget")
 	}
 	static class UPyWidget_GamepadTriggerDeadZoneWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GamepadTriggerDeadZoneWidget>();
 	}
 };
-static_assert(alignof(UPyWidget_GamepadTriggerDeadZoneWidget) == 0x000008, "Wrong alignment on UPyWidget_GamepadTriggerDeadZoneWidget");
-static_assert(sizeof(UPyWidget_GamepadTriggerDeadZoneWidget) == 0x0005C0, "Wrong size on UPyWidget_GamepadTriggerDeadZoneWidget");
+DUMPER7_ASSERTS_UPyWidget_GamepadTriggerDeadZoneWidget;
 
 // PythonClass PyWidget_AimCurve.PyWidget_AimCurve
-// 0x0128 (0x06E8 - 0x05C0)
+// 0x0128 (0x06F0 - 0x05C8)
 class UPyWidget_AimCurve : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     ImgCurveList;                                      // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           TitleCurveList;                                    // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           DescCurveList;                                     // 0x05E0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         CurveLineThickness;                                // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MinDeadZoneLineColor;                              // 0x05F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MaxDeadZoneLineColor;                              // 0x0604(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultLineColor;                                  // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MinDeadZoneBackGroundColor;                        // 0x0624(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MaxDeadZoneBackGroundColor;                        // 0x0634(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EfficientlySensBackGroundColor;                    // 0x0644(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EfficientlySensLineColor;                          // 0x0654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BackGroundDefaultColor;                            // 0x0664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MinDeadZoneMarkingLineColor;                       // 0x0674(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MaxDeadZoneMarkingLineColor;                       // 0x0684(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultMarkingLineColor;                           // 0x0694(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MinDeadZoneAnchorColor;                            // 0x06A4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MaxDeadZoneAnchorColor;                            // 0x06B4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultAnchorColor;                                // 0x06C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnchorPointX;                                      // 0x06D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnchorPointMinX;                                   // 0x06D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnchorPointMaxX;                                   // 0x06DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnchorPointMinRange;                               // 0x06E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnchorPointMaxRange;                               // 0x06E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     ImgCurveList;                                      // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           TitleCurveList;                                    // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           DescCurveList;                                     // 0x05E8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         CurveLineThickness;                                // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MinDeadZoneLineColor;                              // 0x05FC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaxDeadZoneLineColor;                              // 0x060C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultLineColor;                                  // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MinDeadZoneBackGroundColor;                        // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaxDeadZoneBackGroundColor;                        // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EfficientlySensBackGroundColor;                    // 0x064C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EfficientlySensLineColor;                          // 0x065C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BackGroundDefaultColor;                            // 0x066C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MinDeadZoneMarkingLineColor;                       // 0x067C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaxDeadZoneMarkingLineColor;                       // 0x068C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultMarkingLineColor;                           // 0x069C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MinDeadZoneAnchorColor;                            // 0x06AC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MaxDeadZoneAnchorColor;                            // 0x06BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultAnchorColor;                                // 0x06CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnchorPointX;                                      // 0x06DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnchorPointMinX;                                   // 0x06E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnchorPointMaxX;                                   // 0x06E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnchorPointMinRange;                               // 0x06E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnchorPointMaxRange;                               // 0x06EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -75,47 +78,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AimCurve">();
+		STATIC_CLASS_IMPL("PyWidget_AimCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AimCurve")
 	}
 	static class UPyWidget_AimCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AimCurve>();
 	}
 };
-static_assert(alignof(UPyWidget_AimCurve) == 0x000008, "Wrong alignment on UPyWidget_AimCurve");
-static_assert(sizeof(UPyWidget_AimCurve) == 0x0006E8, "Wrong size on UPyWidget_AimCurve");
-static_assert(offsetof(UPyWidget_AimCurve, ImgCurveList) == 0x0005C0, "Member 'UPyWidget_AimCurve::ImgCurveList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, TitleCurveList) == 0x0005D0, "Member 'UPyWidget_AimCurve::TitleCurveList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, DescCurveList) == 0x0005E0, "Member 'UPyWidget_AimCurve::DescCurveList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, CurveLineThickness) == 0x0005F0, "Member 'UPyWidget_AimCurve::CurveLineThickness' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MinDeadZoneLineColor) == 0x0005F4, "Member 'UPyWidget_AimCurve::MinDeadZoneLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MaxDeadZoneLineColor) == 0x000604, "Member 'UPyWidget_AimCurve::MaxDeadZoneLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, DefaultLineColor) == 0x000614, "Member 'UPyWidget_AimCurve::DefaultLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MinDeadZoneBackGroundColor) == 0x000624, "Member 'UPyWidget_AimCurve::MinDeadZoneBackGroundColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MaxDeadZoneBackGroundColor) == 0x000634, "Member 'UPyWidget_AimCurve::MaxDeadZoneBackGroundColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, EfficientlySensBackGroundColor) == 0x000644, "Member 'UPyWidget_AimCurve::EfficientlySensBackGroundColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, EfficientlySensLineColor) == 0x000654, "Member 'UPyWidget_AimCurve::EfficientlySensLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, BackGroundDefaultColor) == 0x000664, "Member 'UPyWidget_AimCurve::BackGroundDefaultColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MinDeadZoneMarkingLineColor) == 0x000674, "Member 'UPyWidget_AimCurve::MinDeadZoneMarkingLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MaxDeadZoneMarkingLineColor) == 0x000684, "Member 'UPyWidget_AimCurve::MaxDeadZoneMarkingLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, DefaultMarkingLineColor) == 0x000694, "Member 'UPyWidget_AimCurve::DefaultMarkingLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MinDeadZoneAnchorColor) == 0x0006A4, "Member 'UPyWidget_AimCurve::MinDeadZoneAnchorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, MaxDeadZoneAnchorColor) == 0x0006B4, "Member 'UPyWidget_AimCurve::MaxDeadZoneAnchorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, DefaultAnchorColor) == 0x0006C4, "Member 'UPyWidget_AimCurve::DefaultAnchorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, AnchorPointX) == 0x0006D4, "Member 'UPyWidget_AimCurve::AnchorPointX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, AnchorPointMinX) == 0x0006D8, "Member 'UPyWidget_AimCurve::AnchorPointMinX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, AnchorPointMaxX) == 0x0006DC, "Member 'UPyWidget_AimCurve::AnchorPointMaxX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, AnchorPointMinRange) == 0x0006E0, "Member 'UPyWidget_AimCurve::AnchorPointMinRange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AimCurve, AnchorPointMaxRange) == 0x0006E4, "Member 'UPyWidget_AimCurve::AnchorPointMaxRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AimCurve;
 
 // PythonClass PyWidget_AimCurve.PyWidget_DeadZoneExtraSensiCurve
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_DeadZoneExtraSensiCurve : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayTimeRange;                                    // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AccTimeRange;                                      // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayTimeRange;                                    // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AccTimeRange;                                      // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -123,17 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DeadZoneExtraSensiCurve">();
+		STATIC_CLASS_IMPL("PyWidget_DeadZoneExtraSensiCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DeadZoneExtraSensiCurve")
 	}
 	static class UPyWidget_DeadZoneExtraSensiCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DeadZoneExtraSensiCurve>();
 	}
 };
-static_assert(alignof(UPyWidget_DeadZoneExtraSensiCurve) == 0x000008, "Wrong alignment on UPyWidget_DeadZoneExtraSensiCurve");
-static_assert(sizeof(UPyWidget_DeadZoneExtraSensiCurve) == 0x0005C8, "Wrong size on UPyWidget_DeadZoneExtraSensiCurve");
-static_assert(offsetof(UPyWidget_DeadZoneExtraSensiCurve, DelayTimeRange) == 0x0005BC, "Member 'UPyWidget_DeadZoneExtraSensiCurve::DelayTimeRange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DeadZoneExtraSensiCurve, AccTimeRange) == 0x0005C0, "Member 'UPyWidget_DeadZoneExtraSensiCurve::AccTimeRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DeadZoneExtraSensiCurve;
 
 }
 

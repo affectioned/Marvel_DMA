@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_BanquetListPanel.PyWidget_Activity120_BanquetListPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity120_BanquetListPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -31,28 +31,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_BanquetListPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_BanquetListPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_BanquetListPanel")
 	}
 	static class UPyWidget_Activity120_BanquetListPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_BanquetListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_BanquetListPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity120_BanquetListPanel");
-static_assert(sizeof(UPyWidget_Activity120_BanquetListPanel) == 0x0005F8, "Wrong size on UPyWidget_Activity120_BanquetListPanel");
+DUMPER7_ASSERTS_UPyWidget_Activity120_BanquetListPanel;
 
 // PythonClass PyWidget_Activity120_BanquetListPanel.PyWidget_Activity120_BanquetListItem
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_Activity120_BanquetListItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Texture_Mission_Icon;                              // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Size_Width;                                        // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DesColor_Progressing;                              // 0x05CC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DesColor_Complete;                                 // 0x05E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ProgressColor_Progressing;                         // 0x05F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ProgressColor_Complete;                            // 0x0608(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Texture_Mission_Icon;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Size_Width;                                        // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DesColor_Progressing;                              // 0x05D4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DesColor_Complete;                                 // 0x05E8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ProgressColor_Progressing;                         // 0x05FC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ProgressColor_Complete;                            // 0x0610(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,21 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_BanquetListItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_BanquetListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_BanquetListItem")
 	}
 	static class UPyWidget_Activity120_BanquetListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_BanquetListItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_BanquetListItem) == 0x000008, "Wrong alignment on UPyWidget_Activity120_BanquetListItem");
-static_assert(sizeof(UPyWidget_Activity120_BanquetListItem) == 0x000620, "Wrong size on UPyWidget_Activity120_BanquetListItem");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, Texture_Mission_Icon) == 0x0005C0, "Member 'UPyWidget_Activity120_BanquetListItem::Texture_Mission_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, Size_Width) == 0x0005C8, "Member 'UPyWidget_Activity120_BanquetListItem::Size_Width' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, DesColor_Progressing) == 0x0005CC, "Member 'UPyWidget_Activity120_BanquetListItem::DesColor_Progressing' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, DesColor_Complete) == 0x0005E0, "Member 'UPyWidget_Activity120_BanquetListItem::DesColor_Complete' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, ProgressColor_Progressing) == 0x0005F4, "Member 'UPyWidget_Activity120_BanquetListItem::ProgressColor_Progressing' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_BanquetListItem, ProgressColor_Complete) == 0x000608, "Member 'UPyWidget_Activity120_BanquetListItem::ProgressColor_Complete' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_BanquetListItem;
 
 }
 

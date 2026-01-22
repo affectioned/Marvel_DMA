@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101462.PyAbility_101462
-// 0x0008 (0x2AF8 - 0x2AF0)
+// 0x0008 (0x2B48 - 0x2B40)
 class UPyAbility_101462 : public UAbility_105
 {
 public:
-	bool                                          IsTurretFiring;                                    // 0x2AF0(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTurretFiring;                                    // 0x2B40(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101462">();
+		STATIC_CLASS_IMPL("PyAbility_101462")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101462")
 	}
 	static class UPyAbility_101462* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101462>();
 	}
 };
-static_assert(alignof(UPyAbility_101462) == 0x000008, "Wrong alignment on UPyAbility_101462");
-static_assert(sizeof(UPyAbility_101462) == 0x002AF8, "Wrong size on UPyAbility_101462");
-static_assert(offsetof(UPyAbility_101462, IsTurretFiring) == 0x002AF0, "Member 'UPyAbility_101462::IsTurretFiring' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101462;
 
 }
 

@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_NameplateModel">();
+		STATIC_CLASS_IMPL("PyWidget_NameplateModel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_NameplateModel")
 	}
 	static class UPyWidget_NameplateModel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_NameplateModel>();
 	}
 };
-static_assert(alignof(UPyWidget_NameplateModel) == 0x000008, "Wrong alignment on UPyWidget_NameplateModel");
-static_assert(sizeof(UPyWidget_NameplateModel) == 0x0003D0, "Wrong size on UPyWidget_NameplateModel");
-static_assert(offsetof(UPyWidget_NameplateModel, DynamicCardVxSource) == 0x0003B8, "Member 'UPyWidget_NameplateModel::DynamicCardVxSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_NameplateModel, ThreeDCardVxSourceNormal) == 0x0003C0, "Member 'UPyWidget_NameplateModel::ThreeDCardVxSourceNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_NameplateModel, ThreeDCardVxSourceBroken) == 0x0003C8, "Member 'UPyWidget_NameplateModel::ThreeDCardVxSourceBroken' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_NameplateModel;
 
 }
 

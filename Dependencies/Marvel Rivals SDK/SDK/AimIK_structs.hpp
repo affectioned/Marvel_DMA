@@ -77,56 +77,7 @@ public:
 	struct FBoneReference                         LeftHandBone;                                      // 0x04B8(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4CC[0x14];                                     // 0x04CC(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_AimIK) == 0x000010, "Wrong alignment on FAnimNode_AimIK");
-static_assert(sizeof(FAnimNode_AimIK) == 0x0004E0, "Wrong size on FAnimNode_AimIK");
-static_assert(offsetof(FAnimNode_AimIK, AimTargetLocation) == 0x0000E8, "Member 'FAnimNode_AimIK::AimTargetLocation' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RoleForwardAxis) == 0x000100, "Member 'FAnimNode_AimIK::RoleForwardAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RoleRightAxis) == 0x000101, "Member 'FAnimNode_AimIK::RoleRightAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RoleUpAxis) == 0x000102, "Member 'FAnimNode_AimIK::RoleUpAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, GunRootSocketReference) == 0x000110, "Member 'FAnimNode_AimIK::GunRootSocketReference' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, GunMuzzleOffset) == 0x000190, "Member 'FAnimNode_AimIK::GunMuzzleOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RoleRootBone) == 0x0001F0, "Member 'FAnimNode_AimIK::RoleRootBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightHandBone) == 0x000204, "Member 'FAnimNode_AimIK::RightHandBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightLowerArmBone) == 0x000218, "Member 'FAnimNode_AimIK::RightLowerArmBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmBone) == 0x00022C, "Member 'FAnimNode_AimIK::RightUpperArmBone' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, GunMuzzleForwardAxis) == 0x000240, "Member 'FAnimNode_AimIK::GunMuzzleForwardAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmRotateYawAxis) == 0x000241, "Member 'FAnimNode_AimIK::RightUpperArmRotateYawAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmRotatePitchAxis) == 0x000242, "Member 'FAnimNode_AimIK::RightUpperArmRotatePitchAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmRotateRollAxis) == 0x000243, "Member 'FAnimNode_AimIK::RightUpperArmRotateRollAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightLowerArmRotateAxis) == 0x000244, "Member 'FAnimNode_AimIK::RightLowerArmRotateAxis' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmRollDownAlpha) == 0x000248, "Member 'FAnimNode_AimIK::RightUpperArmRollDownAlpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmRollUpAlpha) == 0x00024C, "Member 'FAnimNode_AimIK::RightUpperArmRollUpAlpha' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightHandMaxIterations) == 0x000250, "Member 'FAnimNode_AimIK::RightHandMaxIterations' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightHandIKRotPrecision) == 0x000254, "Member 'FAnimNode_AimIK::RightHandIKRotPrecision' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmIKIteratScale) == 0x000258, "Member 'FAnimNode_AimIK::RightUpperArmIKIteratScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightLowerArmIKIteratScale) == 0x00025C, "Member 'FAnimNode_AimIK::RightLowerArmIKIteratScale' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, GunRootDeltaRotator) == 0x000260, "Member 'FAnimNode_AimIK::GunRootDeltaRotator' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, AimPitch) == 0x000278, "Member 'FAnimNode_AimIK::AimPitch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, AimYaw) == 0x00027C, "Member 'FAnimNode_AimIK::AimYaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightHandAimIKWeightByPitch) == 0x000280, "Member 'FAnimNode_AimIK::RightHandAimIKWeightByPitch' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightUpperArmAdjustPitchByYaw) == 0x000288, "Member 'FAnimNode_AimIK::RightUpperArmAdjustPitchByYaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightHandAimIkAdjustPoint) == 0x000290, "Member 'FAnimNode_AimIK::RightHandAimIkAdjustPoint' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, RightLowerArmAdjustPoint) == 0x000310, "Member 'FAnimNode_AimIK::RightLowerArmAdjustPoint' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, AimPitchSpeed) == 0x000390, "Member 'FAnimNode_AimIK::AimPitchSpeed' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, AimYawSpeed) == 0x000394, "Member 'FAnimNode_AimIK::AimYawSpeed' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, bEnableSpineIK) == 0x000398, "Member 'FAnimNode_AimIK::bEnableSpineIK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBones) == 0x0003A0, "Member 'FAnimNode_AimIK::SpineBones' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneYawAxises) == 0x0003B0, "Member 'FAnimNode_AimIK::SpineBoneYawAxises' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBonePitchAxises) == 0x0003C0, "Member 'FAnimNode_AimIK::SpineBonePitchAxises' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneRollAxises) == 0x0003D0, "Member 'FAnimNode_AimIK::SpineBoneRollAxises' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneYawReverse) == 0x0003E0, "Member 'FAnimNode_AimIK::SpineBoneYawReverse' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBonePitchReverse) == 0x0003E1, "Member 'FAnimNode_AimIK::SpineBonePitchReverse' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneRollReverse) == 0x0003E2, "Member 'FAnimNode_AimIK::SpineBoneRollReverse' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneYawWeights) == 0x0003E8, "Member 'FAnimNode_AimIK::SpineBoneYawWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBonePitchWeights) == 0x0003F8, "Member 'FAnimNode_AimIK::SpineBonePitchWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneRollUpWeights) == 0x000408, "Member 'FAnimNode_AimIK::SpineBoneRollUpWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneRollDownWeights) == 0x000418, "Member 'FAnimNode_AimIK::SpineBoneRollDownWeights' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBonePitchScaleByYaw) == 0x000428, "Member 'FAnimNode_AimIK::SpineBonePitchScaleByYaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneYawScaleByYaw) == 0x000430, "Member 'FAnimNode_AimIK::SpineBoneYawScaleByYaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, SpineBoneRollScaleByYaw) == 0x000438, "Member 'FAnimNode_AimIK::SpineBoneRollScaleByYaw' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, LeftHandIK) == 0x000440, "Member 'FAnimNode_AimIK::LeftHandIK' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, LeftLowerArmJointTargetOffset) == 0x0004A0, "Member 'FAnimNode_AimIK::LeftLowerArmJointTargetOffset' has a wrong offset!");
-static_assert(offsetof(FAnimNode_AimIK, LeftHandBone) == 0x0004B8, "Member 'FAnimNode_AimIK::LeftHandBone' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_AimIK;
 
 }
 

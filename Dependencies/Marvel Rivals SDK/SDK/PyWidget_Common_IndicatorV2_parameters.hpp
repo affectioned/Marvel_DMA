@@ -23,9 +23,7 @@ struct PyWidget_Common_IndicatorV2_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_IndicatorV2_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_Common_IndicatorV2_ShouldBeVisible");
-static_assert(sizeof(PyWidget_Common_IndicatorV2_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_Common_IndicatorV2_ShouldBeVisible");
-static_assert(offsetof(PyWidget_Common_IndicatorV2_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_Common_IndicatorV2_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_IndicatorV2_ShouldBeVisible;
 
 // PythonFunction PyWidget_Common_IndicatorV2.PyWidget_Common_IndicatorV2.GetSignalWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -34,31 +32,25 @@ struct PyWidget_Common_IndicatorV2_GetSignalWidget final
 public:
 	class UUserWidget*                            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_IndicatorV2_GetSignalWidget) == 0x000008, "Wrong alignment on PyWidget_Common_IndicatorV2_GetSignalWidget");
-static_assert(sizeof(PyWidget_Common_IndicatorV2_GetSignalWidget) == 0x000008, "Wrong size on PyWidget_Common_IndicatorV2_GetSignalWidget");
-static_assert(offsetof(PyWidget_Common_IndicatorV2_GetSignalWidget, ReturnValue) == 0x000000, "Member 'PyWidget_Common_IndicatorV2_GetSignalWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_IndicatorV2_GetSignalWidget;
 
 // PythonFunction PyWidget_Common_IndicatorV2.PyWidget_Common_IndicatorV2.StartHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWidget_Common_IndicatorV2_StartHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWidget_Common_IndicatorV2_StartHandlerSignal) == 0x000008, "Wrong alignment on PyWidget_Common_IndicatorV2_StartHandlerSignal");
-static_assert(sizeof(PyWidget_Common_IndicatorV2_StartHandlerSignal) == 0x000218, "Wrong size on PyWidget_Common_IndicatorV2_StartHandlerSignal");
-static_assert(offsetof(PyWidget_Common_IndicatorV2_StartHandlerSignal, Result) == 0x000000, "Member 'PyWidget_Common_IndicatorV2_StartHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_IndicatorV2_StartHandlerSignal;
 
 // PythonFunction PyWidget_Common_IndicatorV2.PyWidget_Common_IndicatorV2.EndHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWidget_Common_IndicatorV2_EndHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWidget_Common_IndicatorV2_EndHandlerSignal) == 0x000008, "Wrong alignment on PyWidget_Common_IndicatorV2_EndHandlerSignal");
-static_assert(sizeof(PyWidget_Common_IndicatorV2_EndHandlerSignal) == 0x000218, "Wrong size on PyWidget_Common_IndicatorV2_EndHandlerSignal");
-static_assert(offsetof(PyWidget_Common_IndicatorV2_EndHandlerSignal, Result) == 0x000000, "Member 'PyWidget_Common_IndicatorV2_EndHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_IndicatorV2_EndHandlerSignal;
 
 }
 

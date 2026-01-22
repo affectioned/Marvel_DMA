@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101861.PyCue_PortalPlaceHelper_Loop_10186101
-// 0x0020 (0x1240 - 0x1220)
+// 0x0020 (0x1250 - 0x1230)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyCue_PortalPlaceHelper_Loop_10186101 : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PreviewAudioID;                                    // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1224[0x4];                                     // 0x1224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1228(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PreviewAudioID;                                    // 0x1230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1234[0x4];                                     // 0x1234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1238(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -39,7 +39,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_PortalPlaceHelper_Loop_10186101">();
+		STATIC_CLASS_IMPL("PyCue_PortalPlaceHelper_Loop_10186101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_PortalPlaceHelper_Loop_10186101")
 	}
 	static class APyCue_PortalPlaceHelper_Loop_10186101* GetDefaultObj()
 	{
@@ -47,20 +51,17 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyCue_PortalPlaceHelper_Loop_10186101) == 0x000010, "Wrong alignment on APyCue_PortalPlaceHelper_Loop_10186101");
-static_assert(sizeof(APyCue_PortalPlaceHelper_Loop_10186101) == 0x001240, "Wrong size on APyCue_PortalPlaceHelper_Loop_10186101");
-static_assert(offsetof(APyCue_PortalPlaceHelper_Loop_10186101, PreviewAudioID) == 0x001220, "Member 'APyCue_PortalPlaceHelper_Loop_10186101::PreviewAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_PortalPlaceHelper_Loop_10186101, ViewTargetWatcher) == 0x001228, "Member 'APyCue_PortalPlaceHelper_Loop_10186101::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_PortalPlaceHelper_Loop_10186101;
 
 // PythonClass PyAbility_101861.PyUIController_101861
-// 0x0180 (0x1090 - 0x0F10)
+// 0x0180 (0x1370 - 0x11F0)
 class UPyUIController_101861 final : public UUIC_Ability
 {
 public:
-	struct FWidget_ActionTip                      GenerateText;                                      // 0x0F10(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FWidget_ActionTip                      PlaceText;                                         // 0x0F70(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FWidget_ActionTip                      RemoveText;                                        // 0x0FD0(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FWidget_ActionTip                      CancelText;                                        // 0x1030(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FWidget_ActionTip                      GenerateText;                                      // 0x11F0(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FWidget_ActionTip                      PlaceText;                                         // 0x1250(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FWidget_ActionTip                      RemoveText;                                        // 0x12B0(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FWidget_ActionTip                      CancelText;                                        // 0x1310(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -69,26 +70,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101861">();
+		STATIC_CLASS_IMPL("PyUIController_101861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101861")
 	}
 	static class UPyUIController_101861* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101861>();
 	}
 };
-static_assert(alignof(UPyUIController_101861) == 0x000008, "Wrong alignment on UPyUIController_101861");
-static_assert(sizeof(UPyUIController_101861) == 0x001090, "Wrong size on UPyUIController_101861");
-static_assert(offsetof(UPyUIController_101861, GenerateText) == 0x000F10, "Member 'UPyUIController_101861::GenerateText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_101861, PlaceText) == 0x000F70, "Member 'UPyUIController_101861::PlaceText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_101861, RemoveText) == 0x000FD0, "Member 'UPyUIController_101861::RemoveText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_101861, CancelText) == 0x001030, "Member 'UPyUIController_101861::CancelText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_101861;
 
 // PythonClass PyAbility_101861.PyCue_TracePortal_Loop_10186101
-// 0x0000 (0x1240 - 0x1240)
+// 0x0000 (0x1250 - 0x1250)
 class APyCue_TracePortal_Loop_10186101 final : public APyCue_PortalPlaceHelper_Loop_10186101
 {
 public:
-	int32                                         SwitchAudioID;                                     // 0x1238(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SwitchAudioID;                                     // 0x1248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -99,16 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_TracePortal_Loop_10186101">();
+		STATIC_CLASS_IMPL("PyCue_TracePortal_Loop_10186101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_TracePortal_Loop_10186101")
 	}
 	static class APyCue_TracePortal_Loop_10186101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_TracePortal_Loop_10186101>();
 	}
 };
-static_assert(alignof(APyCue_TracePortal_Loop_10186101) == 0x000010, "Wrong alignment on APyCue_TracePortal_Loop_10186101");
-static_assert(sizeof(APyCue_TracePortal_Loop_10186101) == 0x001240, "Wrong size on APyCue_TracePortal_Loop_10186101");
-static_assert(offsetof(APyCue_TracePortal_Loop_10186101, SwitchAudioID) == 0x001238, "Member 'APyCue_TracePortal_Loop_10186101::SwitchAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_TracePortal_Loop_10186101;
 
 }
 

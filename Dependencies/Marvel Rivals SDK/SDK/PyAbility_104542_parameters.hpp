@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_104542_SetAbility) == 0x000008, "Wrong alignment on PyUIController_104542_SetAbility");
-static_assert(sizeof(PyUIController_104542_SetAbility) == 0x000010, "Wrong size on PyUIController_104542_SetAbility");
-static_assert(offsetof(PyUIController_104542_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_104542_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_104542_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_104542_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_104542_SetAbility;
 
 // PythonFunction PyAbility_104542.PyCue_Ability_Loop_10454201.WhileActiveAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10454201_WhileActiveAudio) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10454201_WhileActiveAudio");
-static_assert(sizeof(PyCue_Ability_Loop_10454201_WhileActiveAudio) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10454201_WhileActiveAudio");
-static_assert(offsetof(PyCue_Ability_Loop_10454201_WhileActiveAudio, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10454201_WhileActiveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10454201_WhileActiveAudio, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10454201_WhileActiveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10454201_WhileActiveAudio;
 
 // PythonFunction PyAbility_104542.PyCue_Ability_Loop_10454201.OnRemoveAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -51,10 +45,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10454201_OnRemoveAudio) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10454201_OnRemoveAudio");
-static_assert(sizeof(PyCue_Ability_Loop_10454201_OnRemoveAudio) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10454201_OnRemoveAudio");
-static_assert(offsetof(PyCue_Ability_Loop_10454201_OnRemoveAudio, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10454201_OnRemoveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10454201_OnRemoveAudio, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10454201_OnRemoveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10454201_OnRemoveAudio;
 
 }
 

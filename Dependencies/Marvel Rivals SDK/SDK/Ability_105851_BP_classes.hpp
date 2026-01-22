@@ -10,34 +10,36 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyAbility_105851_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105851_BP.Ability_105851_BP_C
-// 0x17C8 (0x41C0 - 0x29F8)
+// 0x1B78 (0x45C0 - 0x2A48)
 class UAbility_105851_BP_C final : public UPyAbility_105851
 {
 public:
-	uint8                                         Pad_29F8[0x8];                                     // 0x29F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       选取参数;                                          // 0x2A00(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	uint8                                         Pad_2A48[0x8];                                     // 0x2A48(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       选取参数;                                          // 0x2A50(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105851_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105851_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105851_BP_C")
 	}
 	static class UAbility_105851_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105851_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105851_BP_C) == 0x000010, "Wrong alignment on UAbility_105851_BP_C");
-static_assert(sizeof(UAbility_105851_BP_C) == 0x0041C0, "Wrong size on UAbility_105851_BP_C");
-static_assert(offsetof(UAbility_105851_BP_C, 选取参数) == 0x002A00, "Member 'UAbility_105851_BP_C::选取参数' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105851_BP_C;
 
 }
 

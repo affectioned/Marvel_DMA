@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity155_MallTips.PyWidget_Activity155_MallTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity155_MallTips final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity155_MallTips">();
+		STATIC_CLASS_IMPL("PyWidget_Activity155_MallTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity155_MallTips")
 	}
 	static class UPyWidget_Activity155_MallTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity155_MallTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity155_MallTips) == 0x000008, "Wrong alignment on UPyWidget_Activity155_MallTips");
-static_assert(sizeof(UPyWidget_Activity155_MallTips) == 0x0005C0, "Wrong size on UPyWidget_Activity155_MallTips");
+DUMPER7_ASSERTS_UPyWidget_Activity155_MallTips;
 
 }
 

@@ -17,34 +17,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10186101_BP.Summoned_10186101_BP_C
-// 0x0030 (0x0F40 - 0x0F10)
+// 0x0030 (0x0F60 - 0x0F30)
 class ASummoned_10186101_BP_C final : public APortalViewActor
 {
 public:
-	uint8                                         Pad_F08[0x8];                                      // 0x0F08(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0F10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0F18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0F20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Arrow;                                             // 0x0F28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          WallBuildingBox;                                   // 0x0F30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0F30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0F38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0F40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Arrow;                                             // 0x0F48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          WallBuildingBox;                                   // 0x0F50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10186101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10186101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10186101_BP_C")
 	}
 	static class ASummoned_10186101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10186101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10186101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10186101_BP_C");
-static_assert(sizeof(ASummoned_10186101_BP_C) == 0x000F40, "Wrong size on ASummoned_10186101_BP_C");
-static_assert(offsetof(ASummoned_10186101_BP_C, MarvelNavModifier) == 0x000F10, "Member 'ASummoned_10186101_BP_C::MarvelNavModifier' has a wrong offset!");
-static_assert(offsetof(ASummoned_10186101_BP_C, NavEffectBox) == 0x000F18, "Member 'ASummoned_10186101_BP_C::NavEffectBox' has a wrong offset!");
-static_assert(offsetof(ASummoned_10186101_BP_C, SummonedMovement) == 0x000F20, "Member 'ASummoned_10186101_BP_C::SummonedMovement' has a wrong offset!");
-static_assert(offsetof(ASummoned_10186101_BP_C, Arrow) == 0x000F28, "Member 'ASummoned_10186101_BP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ASummoned_10186101_BP_C, WallBuildingBox) == 0x000F30, "Member 'ASummoned_10186101_BP_C::WallBuildingBox' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10186101_BP_C;
 
 }
 

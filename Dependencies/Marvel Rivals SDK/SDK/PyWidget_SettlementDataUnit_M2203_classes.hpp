@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettlementDataUnit_M2203.PyWidget_SettlementDataUnit_M2203
-// 0x0000 (0x0638 - 0x0638)
+// 0x0000 (0x0640 - 0x0640)
 class UPyWidget_SettlementDataUnit_M2203 final : public UPyWidget_SettlementDataUnit_Common
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataUnit_M2203">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataUnit_M2203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataUnit_M2203")
 	}
 	static class UPyWidget_SettlementDataUnit_M2203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementDataUnit_M2203>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataUnit_M2203) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataUnit_M2203");
-static_assert(sizeof(UPyWidget_SettlementDataUnit_M2203) == 0x000638, "Wrong size on UPyWidget_SettlementDataUnit_M2203");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataUnit_M2203;
 
 // PythonClass PyWidget_SettlementDataUnit_M2203.PyWidget_SettlementData_Slot_M2203
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_SettlementData_Slot_M2203 final : public UPyWidget_SettlementData_Slot
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementData_Slot_M2203">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementData_Slot_M2203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementData_Slot_M2203")
 	}
 	static class UPyWidget_SettlementData_Slot_M2203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementData_Slot_M2203>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementData_Slot_M2203) == 0x000008, "Wrong alignment on UPyWidget_SettlementData_Slot_M2203");
-static_assert(sizeof(UPyWidget_SettlementData_Slot_M2203) == 0x000778, "Wrong size on UPyWidget_SettlementData_Slot_M2203");
+DUMPER7_ASSERTS_UPyWidget_SettlementData_Slot_M2203;
 
 }
 

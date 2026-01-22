@@ -47,27 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessCharacterStart">();
+		STATIC_CLASS_IMPL("PyBattleChessCharacterStart")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessCharacterStart")
 	}
 	static class APyBattleChessCharacterStart* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBattleChessCharacterStart>();
 	}
 };
-static_assert(alignof(APyBattleChessCharacterStart) == 0x000010, "Wrong alignment on APyBattleChessCharacterStart");
-static_assert(sizeof(APyBattleChessCharacterStart) == 0x000760, "Wrong size on APyBattleChessCharacterStart");
-static_assert(offsetof(APyBattleChessCharacterStart, PlaceHeroID) == 0x0006E0, "Member 'APyBattleChessCharacterStart::PlaceHeroID' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, OwnPlayerStart) == 0x0006E8, "Member 'APyBattleChessCharacterStart::OwnPlayerStart' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, PosID) == 0x0006F0, "Member 'APyBattleChessCharacterStart::PosID' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, DragTickFrequency) == 0x0006F4, "Member 'APyBattleChessCharacterStart::DragTickFrequency' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, DragDistance) == 0x0006F8, "Member 'APyBattleChessCharacterStart::DragDistance' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, AkEvent_Select) == 0x000700, "Member 'APyBattleChessCharacterStart::AkEvent_Select' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, AkEvent_Move) == 0x000708, "Member 'APyBattleChessCharacterStart::AkEvent_Move' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, AkEvent_Place) == 0x000710, "Member 'APyBattleChessCharacterStart::AkEvent_Place' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, OnClickBattleChessGrid) == 0x000718, "Member 'APyBattleChessCharacterStart::OnClickBattleChessGrid' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, OnRightClickBattleChessGrid) == 0x000728, "Member 'APyBattleChessCharacterStart::OnRightClickBattleChessGrid' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, OnHoverBattleChessGrid) == 0x000738, "Member 'APyBattleChessCharacterStart::OnHoverBattleChessGrid' has a wrong offset!");
-static_assert(offsetof(APyBattleChessCharacterStart, OnDraggingBattleChessGrid) == 0x000748, "Member 'APyBattleChessCharacterStart::OnDraggingBattleChessGrid' has a wrong offset!");
+DUMPER7_ASSERTS_APyBattleChessCharacterStart;
 
 }
 

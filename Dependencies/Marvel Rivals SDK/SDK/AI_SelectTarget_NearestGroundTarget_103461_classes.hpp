@@ -23,15 +23,18 @@ class UAI_SelectTarget_NearestGroundTarget_103461_C final : public UPyAISelectTa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_SelectTarget_NearestGroundTarget_103461_C">();
+		BP_STATIC_CLASS_IMPL("AI_SelectTarget_NearestGroundTarget_103461_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_SelectTarget_NearestGroundTarget_103461_C")
 	}
 	static class UAI_SelectTarget_NearestGroundTarget_103461_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_SelectTarget_NearestGroundTarget_103461_C>();
 	}
 };
-static_assert(alignof(UAI_SelectTarget_NearestGroundTarget_103461_C) == 0x000008, "Wrong alignment on UAI_SelectTarget_NearestGroundTarget_103461_C");
-static_assert(sizeof(UAI_SelectTarget_NearestGroundTarget_103461_C) == 0x000080, "Wrong size on UAI_SelectTarget_NearestGroundTarget_103461_C");
+DUMPER7_ASSERTS_UAI_SelectTarget_NearestGroundTarget_103461_C;
 
 }
 

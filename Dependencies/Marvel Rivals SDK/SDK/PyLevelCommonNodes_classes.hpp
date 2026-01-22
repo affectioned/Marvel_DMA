@@ -37,15 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelCommonNodes">();
+		STATIC_CLASS_IMPL("PyLevelCommonNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelCommonNodes")
 	}
 	static class UPyLevelCommonNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelCommonNodes>();
 	}
 };
-static_assert(alignof(UPyLevelCommonNodes) == 0x000008, "Wrong alignment on UPyLevelCommonNodes");
-static_assert(sizeof(UPyLevelCommonNodes) == 0x000030, "Wrong size on UPyLevelCommonNodes");
+DUMPER7_ASSERTS_UPyLevelCommonNodes;
 
 }
 

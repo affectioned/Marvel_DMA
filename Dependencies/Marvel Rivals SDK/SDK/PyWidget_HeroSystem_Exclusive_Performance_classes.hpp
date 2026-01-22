@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance.PyWidget_HeroSystem_Exclusive_Performance_Container
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_Container final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_HeroSystem_Exclusive_Performance> ExclusiveWidget;                   // 0x05C0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                WidgetPadding;                                     // 0x05C8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 ItemID;                                            // 0x05D8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CanSell;                                           // 0x05E8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBundle;                                          // 0x05E9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5EA[0x6];                                      // 0x05EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_HeroSystem_Exclusive_Performance> ExclusiveWidget;                   // 0x05C8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                WidgetPadding;                                     // 0x05D0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 ItemID;                                            // 0x05E0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanSell;                                           // 0x05F0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBundle;                                          // 0x05F1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F2[0x6];                                      // 0x05F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,37 +41,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Container">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Container")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Container")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Container* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Container>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Container) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Container");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Container) == 0x000600, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Container");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, ExclusiveWidget) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::ExclusiveWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, WidgetPadding) == 0x0005C8, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::WidgetPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, ItemID) == 0x0005D8, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::ItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, CanSell) == 0x0005E8, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::CanSell' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, IsBundle) == 0x0005E9, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::IsBundle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Container, OnRefreshPropConfirmPosition) == 0x0005F0, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Container::OnRefreshPropConfirmPosition' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Container;
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance.PyWidget_HeroSystem_Exclusive_Performance
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_HeroSystem_Exclusive_Performance : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           GamePad_Esc;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ExclusiveBg;                                       // 0x0600(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ExclusiveBgSmall;                                  // 0x0608(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_HeroSystem_Exclusive_Performance_Item> ExclusiveWidget;              // 0x0610(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CanSell;                                           // 0x0618(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsBundle;                                          // 0x0619(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61A[0x6];                                      // 0x061A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ExclusiveKillTitleImg;                             // 0x0620(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ExclusiveSkillTitleImg;                            // 0x0628(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_Esc;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ExclusiveBg;                                       // 0x0608(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ExclusiveBgSmall;                                  // 0x0610(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_HeroSystem_Exclusive_Performance_Item> ExclusiveWidget;              // 0x0618(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanSell;                                           // 0x0620(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBundle;                                          // 0x0621(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_622[0x6];                                      // 0x0622(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ExclusiveKillTitleImg;                             // 0x0628(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ExclusiveSkillTitleImg;                            // 0x0630(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGeometry& TargetGeometry)> OnRefreshPropConfirmPosition; // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -81,41 +78,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance) == 0x000640, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, GamePad_Esc) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::GamePad_Esc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, ExclusiveBg) == 0x000600, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::ExclusiveBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, ExclusiveBgSmall) == 0x000608, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::ExclusiveBgSmall' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, ExclusiveWidget) == 0x000610, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::ExclusiveWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, CanSell) == 0x000618, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::CanSell' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, IsBundle) == 0x000619, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::IsBundle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, ExclusiveKillTitleImg) == 0x000620, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::ExclusiveKillTitleImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, ExclusiveSkillTitleImg) == 0x000628, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::ExclusiveSkillTitleImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance, OnRefreshPropConfirmPosition) == 0x000630, "Member 'UPyWidget_HeroSystem_Exclusive_Performance::OnRefreshPropConfirmPosition' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance;
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance.PyWidget_HeroSystem_Exclusive_Performance_V2
-// 0x0000 (0x0640 - 0x0640)
+// 0x0000 (0x0648 - 0x0648)
 class UPyWidget_HeroSystem_Exclusive_Performance_V2 final : public UPyWidget_HeroSystem_Exclusive_Performance
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_V2">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_V2")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_V2) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_V2");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_V2) == 0x000640, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_V2");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_V2;
 
 }
 

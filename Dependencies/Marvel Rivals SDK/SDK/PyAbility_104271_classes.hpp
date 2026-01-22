@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1042_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1042_classes.hpp"
 
 
 namespace SDK
@@ -31,30 +31,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104271">();
+		STATIC_CLASS_IMPL("PyConfig_104271")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104271")
 	}
 	static class UPyConfig_104271* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104271>();
 	}
 };
-static_assert(alignof(UPyConfig_104271) == 0x000008, "Wrong alignment on UPyConfig_104271");
-static_assert(sizeof(UPyConfig_104271) == 0x0000C8, "Wrong size on UPyConfig_104271");
-static_assert(offsetof(UPyConfig_104271, Specialtag) == 0x000098, "Member 'UPyConfig_104271::Specialtag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104271, DelayEndTags) == 0x0000A8, "Member 'UPyConfig_104271::DelayEndTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104271, OtherAbilityIDs) == 0x0000B8, "Member 'UPyConfig_104271::OtherAbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104271;
 
 // PythonClass PyAbility_104271.PyAbility_104271
-// 0x0048 (0x2A38 - 0x29F0)
+// 0x0048 (0x2A88 - 0x2A40)
 class UPyAbility_104271 : public UMarvelGameplayAbility
 {
 public:
-	int32                                         AbilityState;                                      // 0x29F0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpiderLegState;                                    // 0x29F4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAbilityStateChange;                              // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool State)>    OnAbilityBeginOrEnd;                               // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSpiderLegStateChange;                            // 0x2A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bIsBeginFX)> OnSpiderFXBegin;                                 // 0x2A28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         AbilityState;                                      // 0x2A40(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpiderLegState;                                    // 0x2A44(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityStateChange;                              // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool State)>    OnAbilityBeginOrEnd;                               // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSpiderLegStateChange;                            // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bIsBeginFX)> OnSpiderFXBegin;                                 // 0x2A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -76,32 +76,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104271">();
+		STATIC_CLASS_IMPL("PyAbility_104271")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104271")
 	}
 	static class UPyAbility_104271* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104271>();
 	}
 };
-static_assert(alignof(UPyAbility_104271) == 0x000008, "Wrong alignment on UPyAbility_104271");
-static_assert(sizeof(UPyAbility_104271) == 0x002A38, "Wrong size on UPyAbility_104271");
-static_assert(offsetof(UPyAbility_104271, AbilityState) == 0x0029F0, "Member 'UPyAbility_104271::AbilityState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104271, SpiderLegState) == 0x0029F4, "Member 'UPyAbility_104271::SpiderLegState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104271, OnAbilityStateChange) == 0x0029F8, "Member 'UPyAbility_104271::OnAbilityStateChange' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104271, OnAbilityBeginOrEnd) == 0x002A08, "Member 'UPyAbility_104271::OnAbilityBeginOrEnd' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104271, OnSpiderLegStateChange) == 0x002A18, "Member 'UPyAbility_104271::OnSpiderLegStateChange' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104271, OnSpiderFXBegin) == 0x002A28, "Member 'UPyAbility_104271::OnSpiderFXBegin' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104271;
 
 // PythonClass PyAbility_104271.PyUIController_104271
-// 0x0038 (0x0F48 - 0x0F10)
+// 0x0038 (0x1228 - 0x11F0)
 class UPyUIController_104271 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           Tag_UltimateActive;                                // 0x0F10(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1C[0x4];                                      // 0x0F1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 AbilityIDs_HideWhenUltimateActive;                 // 0x0F20(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<int32>                                 AbilityIDs_ShowWhenUltimateActive;                 // 0x0F30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         NormalWeaponAbilityID;                             // 0x0F40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Tag_UltimateActive;                                // 0x11F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11FC[0x4];                                     // 0x11FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 AbilityIDs_HideWhenUltimateActive;                 // 0x1200(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AbilityIDs_ShowWhenUltimateActive;                 // 0x1210(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         NormalWeaponAbilityID;                             // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -110,34 +107,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104271">();
+		STATIC_CLASS_IMPL("PyUIController_104271")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104271")
 	}
 	static class UPyUIController_104271* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104271>();
 	}
 };
-static_assert(alignof(UPyUIController_104271) == 0x000008, "Wrong alignment on UPyUIController_104271");
-static_assert(sizeof(UPyUIController_104271) == 0x000F48, "Wrong size on UPyUIController_104271");
-static_assert(offsetof(UPyUIController_104271, Tag_UltimateActive) == 0x000F10, "Member 'UPyUIController_104271::Tag_UltimateActive' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104271, AbilityIDs_HideWhenUltimateActive) == 0x000F20, "Member 'UPyUIController_104271::AbilityIDs_HideWhenUltimateActive' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104271, AbilityIDs_ShowWhenUltimateActive) == 0x000F30, "Member 'UPyUIController_104271::AbilityIDs_ShowWhenUltimateActive' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104271, NormalWeaponAbilityID) == 0x000F40, "Member 'UPyUIController_104271::NormalWeaponAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_104271;
 
 // PythonClass PyAbility_104271.PyAbilityCue_10427101
-// 0x0060 (0x1380 - 0x1320)
+// 0x0060 (0x1390 - 0x1330)
 class APyAbilityCue_10427101 final : public ACue_AbilityLoop_10427101
 {
 public:
-	int32                                         AbilityID;                                         // 0x1320(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1324[0x4];                                     // 0x1324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ShoulderMaterialName;                              // 0x1328(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            BeginMaterialCurve;                                // 0x1338(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            EndMaterialCurve;                                  // 0x1340(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           FullyArmedCueTag;                                  // 0x1348(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           UnFullyArmedCueTag;                                // 0x1354(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GunBeginMaterialName;                              // 0x1360(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            GunBeginMaterialCurve;                             // 0x1370(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x1330(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1334[0x4];                                     // 0x1334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ShoulderMaterialName;                              // 0x1338(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            BeginMaterialCurve;                                // 0x1348(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            EndMaterialCurve;                                  // 0x1350(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           FullyArmedCueTag;                                  // 0x1358(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           UnFullyArmedCueTag;                                // 0x1364(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GunBeginMaterialName;                              // 0x1370(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            GunBeginMaterialCurve;                             // 0x1380(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -149,26 +145,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityCue_10427101">();
+		STATIC_CLASS_IMPL("PyAbilityCue_10427101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityCue_10427101")
 	}
 	static class APyAbilityCue_10427101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAbilityCue_10427101>();
 	}
 };
-static_assert(alignof(APyAbilityCue_10427101) == 0x000010, "Wrong alignment on APyAbilityCue_10427101");
-static_assert(sizeof(APyAbilityCue_10427101) == 0x001380, "Wrong size on APyAbilityCue_10427101");
-static_assert(offsetof(APyAbilityCue_10427101, AbilityID) == 0x001320, "Member 'APyAbilityCue_10427101::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, ShoulderMaterialName) == 0x001328, "Member 'APyAbilityCue_10427101::ShoulderMaterialName' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, BeginMaterialCurve) == 0x001338, "Member 'APyAbilityCue_10427101::BeginMaterialCurve' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, EndMaterialCurve) == 0x001340, "Member 'APyAbilityCue_10427101::EndMaterialCurve' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, FullyArmedCueTag) == 0x001348, "Member 'APyAbilityCue_10427101::FullyArmedCueTag' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, UnFullyArmedCueTag) == 0x001354, "Member 'APyAbilityCue_10427101::UnFullyArmedCueTag' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, GunBeginMaterialName) == 0x001360, "Member 'APyAbilityCue_10427101::GunBeginMaterialName' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427101, GunBeginMaterialCurve) == 0x001370, "Member 'APyAbilityCue_10427101::GunBeginMaterialCurve' has a wrong offset!");
+DUMPER7_ASSERTS_APyAbilityCue_10427101;
 
 // PythonClass PyAbility_104271.PyWidget_10427101
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_10427101 final : public UWidget_10427101
 {
 public:
@@ -177,15 +168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_10427101">();
+		STATIC_CLASS_IMPL("PyWidget_10427101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_10427101")
 	}
 	static class UPyWidget_10427101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_10427101>();
 	}
 };
-static_assert(alignof(UPyWidget_10427101) == 0x000008, "Wrong alignment on UPyWidget_10427101");
-static_assert(sizeof(UPyWidget_10427101) == 0x000568, "Wrong size on UPyWidget_10427101");
+DUMPER7_ASSERTS_UPyWidget_10427101;
 
 }
 

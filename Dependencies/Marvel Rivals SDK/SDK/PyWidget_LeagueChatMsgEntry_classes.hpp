@@ -25,31 +25,34 @@ class ULeagueChatMsgItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LeagueChatMsgItem">();
+		STATIC_CLASS_IMPL("LeagueChatMsgItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeagueChatMsgItem")
 	}
 	static class ULeagueChatMsgItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeagueChatMsgItem>();
 	}
 };
-static_assert(alignof(ULeagueChatMsgItem) == 0x000008, "Wrong alignment on ULeagueChatMsgItem");
-static_assert(sizeof(ULeagueChatMsgItem) == 0x000030, "Wrong size on ULeagueChatMsgItem");
+DUMPER7_ASSERTS_ULeagueChatMsgItem;
 
 // PythonClass PyWidget_LeagueChatMsgEntry.PyWidget_LeagueChatMsgWidget
-// 0x00C0 (0x0518 - 0x0458)
+// 0x00C0 (0x04F8 - 0x0438)
 class UPyWidget_LeagueChatMsgWidget final : public UMarvelSimpleUserWidget
 {
 public:
-	struct FSlateColor                            PlayerIconFrameColor;                              // 0x0458(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MRCFrameColor;                                     // 0x046C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClashFrameColor;                                   // 0x0480(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PlayerMsgBgColor;                                  // 0x0494(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MRCMsgBgColor;                                     // 0x04A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClashMsgBgColor;                                   // 0x04BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MRCCommitteeColor;                                 // 0x04D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClashCommitteeColor;                               // 0x04E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 MRCIconID;                                         // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ClashIconID;                                       // 0x0508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PlayerIconFrameColor;                              // 0x0438(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MRCFrameColor;                                     // 0x044C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClashFrameColor;                                   // 0x0460(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PlayerMsgBgColor;                                  // 0x0474(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MRCMsgBgColor;                                     // 0x0488(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClashMsgBgColor;                                   // 0x049C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MRCCommitteeColor;                                 // 0x04B0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClashCommitteeColor;                               // 0x04C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 MRCIconID;                                         // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ClashIconID;                                       // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,28 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatMsgWidget">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatMsgWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatMsgWidget")
 	}
 	static class UPyWidget_LeagueChatMsgWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatMsgWidget>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatMsgWidget) == 0x000008, "Wrong alignment on UPyWidget_LeagueChatMsgWidget");
-static_assert(sizeof(UPyWidget_LeagueChatMsgWidget) == 0x000518, "Wrong size on UPyWidget_LeagueChatMsgWidget");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, PlayerIconFrameColor) == 0x000458, "Member 'UPyWidget_LeagueChatMsgWidget::PlayerIconFrameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, MRCFrameColor) == 0x00046C, "Member 'UPyWidget_LeagueChatMsgWidget::MRCFrameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, ClashFrameColor) == 0x000480, "Member 'UPyWidget_LeagueChatMsgWidget::ClashFrameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, PlayerMsgBgColor) == 0x000494, "Member 'UPyWidget_LeagueChatMsgWidget::PlayerMsgBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, MRCMsgBgColor) == 0x0004A8, "Member 'UPyWidget_LeagueChatMsgWidget::MRCMsgBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, ClashMsgBgColor) == 0x0004BC, "Member 'UPyWidget_LeagueChatMsgWidget::ClashMsgBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, MRCCommitteeColor) == 0x0004D0, "Member 'UPyWidget_LeagueChatMsgWidget::MRCCommitteeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, ClashCommitteeColor) == 0x0004E4, "Member 'UPyWidget_LeagueChatMsgWidget::ClashCommitteeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, MRCIconID) == 0x0004F8, "Member 'UPyWidget_LeagueChatMsgWidget::MRCIconID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatMsgWidget, ClashIconID) == 0x000508, "Member 'UPyWidget_LeagueChatMsgWidget::ClashIconID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatMsgWidget;
 
 // PythonClass PyWidget_LeagueChatMsgEntry.PyWidget_LeagueChatMsgEntry
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_LeagueChatMsgEntry final : public UWidget_ListEntry
 {
 public:
@@ -87,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatMsgEntry">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatMsgEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatMsgEntry")
 	}
 	static class UPyWidget_LeagueChatMsgEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatMsgEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatMsgEntry) == 0x000008, "Wrong alignment on UPyWidget_LeagueChatMsgEntry");
-static_assert(sizeof(UPyWidget_LeagueChatMsgEntry) == 0x000570, "Wrong size on UPyWidget_LeagueChatMsgEntry");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatMsgEntry;
 
 }
 

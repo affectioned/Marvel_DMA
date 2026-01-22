@@ -18,58 +18,16 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_ChatInputEmote.ChatEmoteItemData
-// 0x0000 (0x0030 - 0x0030)
-class UChatEmoteItemData final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ChatEmoteItemData">();
-	}
-	static class UChatEmoteItemData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UChatEmoteItemData>();
-	}
-};
-static_assert(alignof(UChatEmoteItemData) == 0x000008, "Wrong alignment on UChatEmoteItemData");
-static_assert(sizeof(UChatEmoteItemData) == 0x000030, "Wrong size on UChatEmoteItemData");
-
-// PythonClass PyWidget_ChatInputEmote.PyWidget_ChatEmoteButton
-// 0x0010 (0x05D0 - 0x05C0)
-class UPyWidget_ChatEmoteButton : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_ChatEmoteButton">();
-	}
-	static class UPyWidget_ChatEmoteButton* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_ChatEmoteButton>();
-	}
-};
-static_assert(alignof(UPyWidget_ChatEmoteButton) == 0x000008, "Wrong alignment on UPyWidget_ChatEmoteButton");
-static_assert(sizeof(UPyWidget_ChatEmoteButton) == 0x0005D0, "Wrong size on UPyWidget_ChatEmoteButton");
-static_assert(offsetof(UPyWidget_ChatEmoteButton, OnClicked) == 0x0005C0, "Member 'UPyWidget_ChatEmoteButton::OnClicked' has a wrong offset!");
-
 // PythonClass PyWidget_ChatInputEmote.PyWidget_ChatEmotePanel
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_ChatEmotePanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           LeftTabAction;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightTabAction;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          TabActionAudio;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& tag_name)> OnInsertImage;                     // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           LeftTabAction;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightTabAction;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          TabActionAudio;                                    // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& tag_name)> OnInsertImage;                     // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -79,28 +37,76 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatEmotePanel">();
+		STATIC_CLASS_IMPL("PyWidget_ChatEmotePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatEmotePanel")
 	}
 	static class UPyWidget_ChatEmotePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatEmotePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatEmotePanel) == 0x000008, "Wrong alignment on UPyWidget_ChatEmotePanel");
-static_assert(sizeof(UPyWidget_ChatEmotePanel) == 0x0005E8, "Wrong size on UPyWidget_ChatEmotePanel");
-static_assert(offsetof(UPyWidget_ChatEmotePanel, LeftTabAction) == 0x0005C0, "Member 'UPyWidget_ChatEmotePanel::LeftTabAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmotePanel, RightTabAction) == 0x0005C8, "Member 'UPyWidget_ChatEmotePanel::RightTabAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmotePanel, TabActionAudio) == 0x0005D0, "Member 'UPyWidget_ChatEmotePanel::TabActionAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmotePanel, OnInsertImage) == 0x0005D8, "Member 'UPyWidget_ChatEmotePanel::OnInsertImage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatEmotePanel;
+
+// PythonClass PyWidget_ChatInputEmote.ChatEmoteItemData
+// 0x0000 (0x0030 - 0x0030)
+class UChatEmoteItemData final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ChatEmoteItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatEmoteItemData")
+	}
+	static class UChatEmoteItemData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UChatEmoteItemData>();
+	}
+};
+DUMPER7_ASSERTS_UChatEmoteItemData;
+
+// PythonClass PyWidget_ChatInputEmote.PyWidget_ChatEmoteButton
+// 0x0030 (0x05F8 - 0x05C8)
+class UPyWidget_ChatEmoteButton : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_ChatEmoteButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatEmoteButton")
+	}
+	static class UPyWidget_ChatEmoteButton* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_ChatEmoteButton>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_ChatEmoteButton;
 
 // PythonClass PyWidget_ChatInputEmote.PyWidget_ChatEmoteBtnItem
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_ChatEmoteBtnItem : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChatEmoteItemData*                     ItemObject;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& tag_name)> OnClicked;                         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChatEmoteItemData*                     ItemObject;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& tag_name)> OnClicked;                         // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -109,27 +115,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatEmoteBtnItem">();
+		STATIC_CLASS_IMPL("PyWidget_ChatEmoteBtnItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatEmoteBtnItem")
 	}
 	static class UPyWidget_ChatEmoteBtnItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatEmoteBtnItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatEmoteBtnItem) == 0x000008, "Wrong alignment on UPyWidget_ChatEmoteBtnItem");
-static_assert(sizeof(UPyWidget_ChatEmoteBtnItem) == 0x0005D8, "Wrong size on UPyWidget_ChatEmoteBtnItem");
-static_assert(offsetof(UPyWidget_ChatEmoteBtnItem, ItemObject) == 0x0005C0, "Member 'UPyWidget_ChatEmoteBtnItem::ItemObject' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmoteBtnItem, OnClicked) == 0x0005C8, "Member 'UPyWidget_ChatEmoteBtnItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatEmoteBtnItem;
 
 // PythonClass PyWidget_ChatInputEmote.PyWidget_ChatEmoteTabItem
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_ChatEmoteTabItem : public UPyMarvelUserWidget
 {
 public:
-	EChatEmoteTabType                             TabType;                                           // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TabName;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EChatEmoteTabType tab_type)> OnClicked;                            // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EChatEmoteTabType                             TabType;                                           // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TabName;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EChatEmoteTabType tab_type)> OnClicked;                            // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -137,18 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatEmoteTabItem">();
+		STATIC_CLASS_IMPL("PyWidget_ChatEmoteTabItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatEmoteTabItem")
 	}
 	static class UPyWidget_ChatEmoteTabItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatEmoteTabItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatEmoteTabItem) == 0x000008, "Wrong alignment on UPyWidget_ChatEmoteTabItem");
-static_assert(sizeof(UPyWidget_ChatEmoteTabItem) == 0x0005E8, "Wrong size on UPyWidget_ChatEmoteTabItem");
-static_assert(offsetof(UPyWidget_ChatEmoteTabItem, TabType) == 0x0005BA, "Member 'UPyWidget_ChatEmoteTabItem::TabType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmoteTabItem, TabName) == 0x0005C0, "Member 'UPyWidget_ChatEmoteTabItem::TabName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatEmoteTabItem, OnClicked) == 0x0005D8, "Member 'UPyWidget_ChatEmoteTabItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatEmoteTabItem;
 
 }
 

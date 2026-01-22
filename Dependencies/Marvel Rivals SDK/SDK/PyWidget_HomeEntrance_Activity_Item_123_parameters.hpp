@@ -21,9 +21,7 @@ struct PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HomeEntrance_Activity_Item_123_OnCascadingVisibleChanged;
 
 }
 

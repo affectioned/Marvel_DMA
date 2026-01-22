@@ -31,26 +31,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_SettingControlText">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_SettingControlText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_SettingControlText")
 	}
 	static class UPyWidget_Replay_SettingControlText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_SettingControlText>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_SettingControlText) == 0x000008, "Wrong alignment on UPyWidget_Replay_SettingControlText");
-static_assert(sizeof(UPyWidget_Replay_SettingControlText) == 0x0003D0, "Wrong size on UPyWidget_Replay_SettingControlText");
-static_assert(offsetof(UPyWidget_Replay_SettingControlText, Content) == 0x0003B8, "Member 'UPyWidget_Replay_SettingControlText::Content' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_SettingControlText;
 
 // PythonClass PyWidget_Replay_EditorControlPanel.PyWidget_Replay_EditorControlPanel
-// 0x0040 (0x0498 - 0x0458)
+// 0x0040 (0x0478 - 0x0438)
 class UPyWidget_Replay_EditorControlPanel final : public UMarvelSimpleUserWidget
 {
 public:
-	TMulticastInlineDelegate<void()>              OnExitEdit;                                        // 0x0458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSaveEdit;                                        // 0x0468(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResetAllEdit;                                    // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 target)>  OnEditChange;                                      // 0x0488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnExitEdit;                                        // 0x0438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSaveEdit;                                        // 0x0448(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResetAllEdit;                                    // 0x0458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 target)>  OnEditChange;                                      // 0x0468(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -60,19 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_EditorControlPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_EditorControlPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_EditorControlPanel")
 	}
 	static class UPyWidget_Replay_EditorControlPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_EditorControlPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_EditorControlPanel) == 0x000008, "Wrong alignment on UPyWidget_Replay_EditorControlPanel");
-static_assert(sizeof(UPyWidget_Replay_EditorControlPanel) == 0x000498, "Wrong size on UPyWidget_Replay_EditorControlPanel");
-static_assert(offsetof(UPyWidget_Replay_EditorControlPanel, OnExitEdit) == 0x000458, "Member 'UPyWidget_Replay_EditorControlPanel::OnExitEdit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditorControlPanel, OnSaveEdit) == 0x000468, "Member 'UPyWidget_Replay_EditorControlPanel::OnSaveEdit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditorControlPanel, OnResetAllEdit) == 0x000478, "Member 'UPyWidget_Replay_EditorControlPanel::OnResetAllEdit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditorControlPanel, OnEditChange) == 0x000488, "Member 'UPyWidget_Replay_EditorControlPanel::OnEditChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_EditorControlPanel;
 
 }
 

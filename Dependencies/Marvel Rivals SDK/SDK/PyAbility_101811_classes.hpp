@@ -12,23 +12,23 @@
 
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Hero_1018_structs.hpp"
 #include "Hero_1018_classes.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101811.PyProjectile_10181111
-// 0x0040 (0x3C20 - 0x3BE0)
+// 0x0040 (0x3F30 - 0x3EF0)
 class APyProjectile_10181111 final : public AProjectile_101811
 {
 public:
-	int32                                         ProjectileIndex;                                   // 0x3BE0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3BE4[0x4];                                     // 0x3BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                AimStartReplicated;                                // 0x3BE8(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                AimDirectionReplicated;                            // 0x3C00(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileIndex;                                   // 0x3EF0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EF4[0x4];                                     // 0x3EF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                AimStartReplicated;                                // 0x3EF8(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                AimDirectionReplicated;                            // 0x3F10(0x0018)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -37,49 +37,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10181111">();
+		STATIC_CLASS_IMPL("PyProjectile_10181111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10181111")
 	}
 	static class APyProjectile_10181111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10181111>();
 	}
 };
-static_assert(alignof(APyProjectile_10181111) == 0x000010, "Wrong alignment on APyProjectile_10181111");
-static_assert(sizeof(APyProjectile_10181111) == 0x003C20, "Wrong size on APyProjectile_10181111");
-static_assert(offsetof(APyProjectile_10181111, ProjectileIndex) == 0x003BE0, "Member 'APyProjectile_10181111::ProjectileIndex' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10181111, AimStartReplicated) == 0x003BE8, "Member 'APyProjectile_10181111::AimStartReplicated' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10181111, AimDirectionReplicated) == 0x003C00, "Member 'APyProjectile_10181111::AimDirectionReplicated' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10181111;
 
 // PythonClass PyAbility_101811.PyConfig_101811
-// 0x1688 (0x1720 - 0x0098)
+// 0x19D8 (0x1A70 - 0x0098)
 class UPyConfig_101811 final : public UMarvelAbilityConfig
 {
 public:
 	float                                         TimeIntervalToSpawnProjetile;                      // 0x0098(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FProjectileSpreadRotateInfo>    ProjectileSpreadRotateInfoArray;                   // 0x00A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00B0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x1710(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00B0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101811">();
+		STATIC_CLASS_IMPL("PyConfig_101811")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101811")
 	}
 	static class UPyConfig_101811* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101811>();
 	}
 };
-static_assert(alignof(UPyConfig_101811) == 0x000010, "Wrong alignment on UPyConfig_101811");
-static_assert(sizeof(UPyConfig_101811) == 0x001720, "Wrong size on UPyConfig_101811");
-static_assert(offsetof(UPyConfig_101811, TimeIntervalToSpawnProjetile) == 0x000098, "Member 'UPyConfig_101811::TimeIntervalToSpawnProjetile' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101811, ProjectileSpreadRotateInfoArray) == 0x0000A0, "Member 'UPyConfig_101811::ProjectileSpreadRotateInfoArray' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101811, TraceContext) == 0x0000B0, "Member 'UPyConfig_101811::TraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101811, ProjectileID) == 0x001710, "Member 'UPyConfig_101811::ProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101811;
 
 // PythonClass PyAbility_101811.PyAbility_101811
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101811 : public UAbility_108
 {
 public:
@@ -92,15 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101811">();
+		STATIC_CLASS_IMPL("PyAbility_101811")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101811")
 	}
 	static class UPyAbility_101811* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101811>();
 	}
 };
-static_assert(alignof(UPyAbility_101811) == 0x000008, "Wrong alignment on UPyAbility_101811");
-static_assert(sizeof(UPyAbility_101811) == 0x0029F8, "Wrong size on UPyAbility_101811");
+DUMPER7_ASSERTS_UPyAbility_101811;
 
 }
 

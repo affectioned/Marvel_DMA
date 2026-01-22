@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10403201_BP.Projectile_10403201_BP_C
-// 0x0010 (0x3BB0 - 0x3BA0)
+// 0x0010 (0x3EC0 - 0x3EB0)
 class AProjectile_10403201_BP_C final : public AProjectile_10403201
 {
 public:
-	class UProjectileHomingComponent*             ProjectileHoming;                                  // 0x3BA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UProjectileHomingComponent*             ProjectileHoming;                                  // 0x3EB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10403201_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10403201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10403201_BP_C")
 	}
 	static class AProjectile_10403201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10403201_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10403201_BP_C) == 0x000010, "Wrong alignment on AProjectile_10403201_BP_C");
-static_assert(sizeof(AProjectile_10403201_BP_C) == 0x003BB0, "Wrong size on AProjectile_10403201_BP_C");
-static_assert(offsetof(AProjectile_10403201_BP_C, ProjectileHoming) == 0x003BA0, "Member 'AProjectile_10403201_BP_C::ProjectileHoming' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10403201_BP_C;
 
 }
 

@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105224_BP.Ability_105224_BP_C
-// 0x32F8 (0x5D60 - 0x2A68)
+// 0x3E28 (0x68E0 - 0x2AB8)
 class UAbility_105224_BP_C final : public UMarvelAbility_SelectTarget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2A68(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2A70(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FMarvelTraceRule                       Target_Class;                                      // 0x3638(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSelectTaskParam                       选取参数;                                          // 0x39D0(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FDashAbilityInfo                       Attach_Dash;                                       // 0x5190(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2AB8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2AC0(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FMarvelTraceRule                       Target_Class;                                      // 0x39A8(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSelectTaskParam                       选取参数;                                          // 0x3E80(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FDashAbilityInfo                       Attach_Dash;                                       // 0x59F0(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	bool CanActivate();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105224_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105224_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105224_BP_C")
 	}
 	static class UAbility_105224_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105224_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105224_BP_C) == 0x000010, "Wrong alignment on UAbility_105224_BP_C");
-static_assert(sizeof(UAbility_105224_BP_C) == 0x005D60, "Wrong size on UAbility_105224_BP_C");
-static_assert(offsetof(UAbility_105224_BP_C, UberGraphFrame) == 0x002A68, "Member 'UAbility_105224_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_105224_BP_C, Dash_Info) == 0x002A70, "Member 'UAbility_105224_BP_C::Dash_Info' has a wrong offset!");
-static_assert(offsetof(UAbility_105224_BP_C, Target_Class) == 0x003638, "Member 'UAbility_105224_BP_C::Target_Class' has a wrong offset!");
-static_assert(offsetof(UAbility_105224_BP_C, 选取参数) == 0x0039D0, "Member 'UAbility_105224_BP_C::选取参数' has a wrong offset!");
-static_assert(offsetof(UAbility_105224_BP_C, Attach_Dash) == 0x005190, "Member 'UAbility_105224_BP_C::Attach_Dash' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105224_BP_C;
 
 }
 

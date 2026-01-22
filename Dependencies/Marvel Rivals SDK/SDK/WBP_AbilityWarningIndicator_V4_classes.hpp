@@ -38,27 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityWarningIndicator_V4_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityWarningIndicator_V4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityWarningIndicator_V4_C")
 	}
 	static class UWBP_AbilityWarningIndicator_V4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityWarningIndicator_V4_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityWarningIndicator_V4_C) == 0x000010, "Wrong alignment on UWBP_AbilityWarningIndicator_V4_C");
-static_assert(sizeof(UWBP_AbilityWarningIndicator_V4_C) == 0x0008E0, "Wrong size on UWBP_AbilityWarningIndicator_V4_C");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Activate) == 0x000878, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Crash_FadeOut) == 0x000880, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Crash_FadeOut' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Crash_Flash) == 0x000888, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Crash_Flash' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Warning_Flash) == 0x000890, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Warning_Flash' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Warning_FadeIn) == 0x000898, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Warning_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Anim_Crash_FadeIn) == 0x0008A0, "Member 'UWBP_AbilityWarningIndicator_V4_C::Anim_Crash_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Activate_Flow) == 0x0008A8, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Activate_Flow' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Bg) == 0x0008B0, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Bg_Up) == 0x0008B8, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Bg_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Cycle_Vx) == 0x0008C0, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Cycle_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Flow_Vx) == 0x0008C8, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Flow_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWarningIndicator_V4_C, Img_Icon_Warning) == 0x0008D0, "Member 'UWBP_AbilityWarningIndicator_V4_C::Img_Icon_Warning' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityWarningIndicator_V4_C;
 
 }
 

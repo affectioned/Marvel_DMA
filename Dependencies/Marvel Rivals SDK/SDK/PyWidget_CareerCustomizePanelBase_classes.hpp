@@ -11,21 +11,21 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "PyWidget_Common_Button_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizePanelBase
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_CareerCustomizePanelBase : public UPyWidget_ModuleMainPanel
 {
 public:
-	EItemApplicableLocationType                   ApplicableLocation;                                // 0x05F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemType                                     ItemType;                                          // 0x05F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemApplicableLocationType                   ApplicableLocation;                                // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemType                                     ItemType;                                          // 0x0601(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,26 +35,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizePanelBase">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizePanelBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizePanelBase")
 	}
 	static class UPyWidget_CareerCustomizePanelBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizePanelBase>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizePanelBase) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizePanelBase");
-static_assert(sizeof(UPyWidget_CareerCustomizePanelBase) == 0x000600, "Wrong size on UPyWidget_CareerCustomizePanelBase");
-static_assert(offsetof(UPyWidget_CareerCustomizePanelBase, ApplicableLocation) == 0x0005F8, "Member 'UPyWidget_CareerCustomizePanelBase::ApplicableLocation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerCustomizePanelBase, ItemType) == 0x0005F9, "Member 'UPyWidget_CareerCustomizePanelBase::ItemType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizePanelBase;
 
 // PythonClass PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemListBase
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_CareerCustomizeItemListBase : public UPyMarvelUserWidget
 {
 public:
-	EWidgetFocusType                              ItemFocusType;                                     // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSelectItem;                        // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EWidgetFocusType                              ItemFocusType;                                     // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSelectItem;                        // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -63,20 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeItemListBase">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeItemListBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeItemListBase")
 	}
 	static class UPyWidget_CareerCustomizeItemListBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeItemListBase>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeItemListBase) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeItemListBase");
-static_assert(sizeof(UPyWidget_CareerCustomizeItemListBase) == 0x0005D0, "Wrong size on UPyWidget_CareerCustomizeItemListBase");
-static_assert(offsetof(UPyWidget_CareerCustomizeItemListBase, ItemFocusType) == 0x0005BA, "Member 'UPyWidget_CareerCustomizeItemListBase::ItemFocusType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerCustomizeItemListBase, OnSelectItem) == 0x0005C0, "Member 'UPyWidget_CareerCustomizeItemListBase::OnSelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeItemListBase;
 
 // PythonClass PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CareerCustomizeItemBase : public UPyWidget_BaseCommonButton
 {
@@ -92,7 +94,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeItemBase">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeItemBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeItemBase")
 	}
 	static class UPyWidget_CareerCustomizeItemBase* GetDefaultObj()
 	{
@@ -100,11 +106,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CareerCustomizeItemBase) == 0x000010, "Wrong alignment on UPyWidget_CareerCustomizeItemBase");
-static_assert(sizeof(UPyWidget_CareerCustomizeItemBase) == 0x0008C0, "Wrong size on UPyWidget_CareerCustomizeItemBase");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeItemBase;
 
 // PythonClass PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemList
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_CareerCustomizeItemList : public UPyWidget_CareerCustomizeItemListBase
 {
 public:
@@ -114,15 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeItemList">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeItemList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeItemList")
 	}
 	static class UPyWidget_CareerCustomizeItemList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeItemList>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeItemList) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeItemList");
-static_assert(sizeof(UPyWidget_CareerCustomizeItemList) == 0x0005D0, "Wrong size on UPyWidget_CareerCustomizeItemList");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeItemList;
 
 }
 

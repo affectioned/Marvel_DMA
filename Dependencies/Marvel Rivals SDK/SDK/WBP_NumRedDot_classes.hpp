@@ -10,20 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PyWidget_Common_Reddot_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_NumRedDot.WBP_NumRedDot_C
-// 0x0050 (0x0620 - 0x05D0)
+// 0x0048 (0x0620 - 0x05D8)
 class UWBP_NumRedDot_C final : public UPyWidget_Common_NumReddot
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UMarvelImage*                           Img_Bg;                                            // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMarvelImage*                           Img_Bg_2;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMarvelImage*                           Img_Bg_2Vx;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,34 +32,20 @@ public:
 	int32                                         Number;                                            // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_NumRedDot(int32 EntryPoint);
-	void OnInitialized();
-	void SetIsRed(bool IsRed);
-	void SetNum(int32 Number_0);
-	void SetTextVisible(bool Visible);
-
-public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_NumRedDot_C">();
+		BP_STATIC_CLASS_IMPL("WBP_NumRedDot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_NumRedDot_C")
 	}
 	static class UWBP_NumRedDot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_NumRedDot_C>();
 	}
 };
-static_assert(alignof(UWBP_NumRedDot_C) == 0x000008, "Wrong alignment on UWBP_NumRedDot_C");
-static_assert(sizeof(UWBP_NumRedDot_C) == 0x000620, "Wrong size on UWBP_NumRedDot_C");
-static_assert(offsetof(UWBP_NumRedDot_C, UberGraphFrame) == 0x0005D0, "Member 'UWBP_NumRedDot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Img_Bg) == 0x0005D8, "Member 'UWBP_NumRedDot_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Img_Bg_2) == 0x0005E0, "Member 'UWBP_NumRedDot_C::Img_Bg_2' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Img_Bg_2Vx) == 0x0005E8, "Member 'UWBP_NumRedDot_C::Img_Bg_2Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Img_Bg_Vx) == 0x0005F0, "Member 'UWBP_NumRedDot_C::Img_Bg_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, SizeBox_Number1) == 0x0005F8, "Member 'UWBP_NumRedDot_C::SizeBox_Number1' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, SizeBox_Number2) == 0x000600, "Member 'UWBP_NumRedDot_C::SizeBox_Number2' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Text_Num) == 0x000608, "Member 'UWBP_NumRedDot_C::Text_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Text_Num_2) == 0x000610, "Member 'UWBP_NumRedDot_C::Text_Num_2' has a wrong offset!");
-static_assert(offsetof(UWBP_NumRedDot_C, Number) == 0x000618, "Member 'UWBP_NumRedDot_C::Number' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_NumRedDot_C;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HandKeypointConversion">();
+		STATIC_CLASS_IMPL("HandKeypointConversion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HandKeypointConversion")
 	}
 	static class UHandKeypointConversion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHandKeypointConversion>();
 	}
 };
-static_assert(alignof(UHandKeypointConversion) == 0x000008, "Wrong alignment on UHandKeypointConversion");
-static_assert(sizeof(UHandKeypointConversion) == 0x000030, "Wrong size on UHandKeypointConversion");
+DUMPER7_ASSERTS_UHandKeypointConversion;
 
 // Class HeadMountedDisplay.MotionControllerComponent
 // 0x0180 (0x0940 - 0x07C0)
@@ -77,23 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotionControllerComponent">();
+		STATIC_CLASS_IMPL("MotionControllerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotionControllerComponent")
 	}
 	static class UMotionControllerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotionControllerComponent>();
 	}
 };
-static_assert(alignof(UMotionControllerComponent) == 0x000010, "Wrong alignment on UMotionControllerComponent");
-static_assert(sizeof(UMotionControllerComponent) == 0x000940, "Wrong size on UMotionControllerComponent");
-static_assert(offsetof(UMotionControllerComponent, PlayerIndex) == 0x0007B8, "Member 'UMotionControllerComponent::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, MotionSource) == 0x0007BC, "Member 'UMotionControllerComponent::MotionSource' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, CurrentTrackingStatus) == 0x0007CC, "Member 'UMotionControllerComponent::CurrentTrackingStatus' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, bDisplayDeviceModel) == 0x0007CD, "Member 'UMotionControllerComponent::bDisplayDeviceModel' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, DisplayModelSource) == 0x0007D0, "Member 'UMotionControllerComponent::DisplayModelSource' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, CustomDisplayMesh) == 0x0007E0, "Member 'UMotionControllerComponent::CustomDisplayMesh' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, DisplayMeshMaterialOverrides) == 0x0007E8, "Member 'UMotionControllerComponent::DisplayMeshMaterialOverrides' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, DisplayComponent) == 0x0007F8, "Member 'UMotionControllerComponent::DisplayComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UMotionControllerComponent;
 
 }
 

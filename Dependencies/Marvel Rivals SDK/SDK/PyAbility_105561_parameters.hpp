@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCueBuff_10556103_WhileActiveFX) == 0x000008, "Wrong alignment on PyCueBuff_10556103_WhileActiveFX");
-static_assert(sizeof(PyCueBuff_10556103_WhileActiveFX) == 0x0001D8, "Wrong size on PyCueBuff_10556103_WhileActiveFX");
-static_assert(offsetof(PyCueBuff_10556103_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCueBuff_10556103_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCueBuff_10556103_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCueBuff_10556103_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCueBuff_10556103_WhileActiveFX;
 
 // PythonFunction PyAbility_105561.PyCueBuff_10556103.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCueBuff_10556103_OnRemoveFX) == 0x000008, "Wrong alignment on PyCueBuff_10556103_OnRemoveFX");
-static_assert(sizeof(PyCueBuff_10556103_OnRemoveFX) == 0x0001D8, "Wrong size on PyCueBuff_10556103_OnRemoveFX");
-static_assert(offsetof(PyCueBuff_10556103_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCueBuff_10556103_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCueBuff_10556103_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCueBuff_10556103_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCueBuff_10556103_OnRemoveFX;
 
 // PythonFunction PyAbility_105561.PyAbility_105561.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct PyAbility_105561_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105561_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105561_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105561_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105561_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105561_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105561_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105561_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105561.PyBuffAbility_10556104.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +52,7 @@ struct PyBuffAbility_10556104_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10556104_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_10556104_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_10556104_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_10556104_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_10556104_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_10556104_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10556104_K2_OnEndAbility;
 
 }
 

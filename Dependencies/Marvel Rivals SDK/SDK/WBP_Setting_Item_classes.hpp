@@ -18,87 +18,60 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Item.WBP_Setting_Item_C
-// 0x00F0 (0x0808 - 0x0718)
+// 0x00F8 (0x0818 - 0x0720)
 class UWBP_Setting_Item_C final : public UPyWidget_Setting_Item
 {
 public:
-	class UImage*                                 Bg_Setting;                                        // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Bg_Setting_Mask;                                   // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Icon_C*                 Btn_Icon_Renovate;                                 // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Main;                                          // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_KeySetting;                                   // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_KeySetting_Corona;                            // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           hover_image;                                       // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_HoverBg;                                       // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line;                                          // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_SharpCorner_Left;                              // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_SharpCorner_Right;                             // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star;                                          // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Shortcut_Corona_C*                 Item_Corona;                                       // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   MarvelOverlay;                                     // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               Size_Box_Corona;                                   // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_Item;                                         // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Name;                                         // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   Item_Name;                                         // 0x07A8(0x0018)(Edit, BlueprintVisible)
-	bool                                          SliderVisible;                                     // 0x07C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SwitchVisible;                                     // 0x07C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShiftVisible;                                      // 0x07C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DropListVisible;                                   // 0x07C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          KeyVisible;                                        // 0x07C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CoronaVisible;                                     // 0x07C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C6[0x2];                                      // 0x07C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Item_Desc;                                         // 0x07C8(0x0018)(Edit, BlueprintVisible)
-	double                                        HoveredOpacity;                                    // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        NormalOpacity;                                     // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SettingDDLVisible;                                 // 0x07F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ButtonVisible;                                     // 0x07F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7F2[0x2];                                      // 0x07F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                ItemPadding;                                       // 0x07F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UImage*                                 Bg_Setting;                                        // 0x0720(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Bg_Setting_Mask;                                   // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Icon_C*                 Btn_Icon_Renovate;                                 // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_KeySetting;                                   // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_KeySetting_Corona;                            // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           hover_image;                                       // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_ExperimentalSetting;                           // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HoverBg;                                       // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line;                                          // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_SharpCorner_Left;                              // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_SharpCorner_Right;                             // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star;                                          // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Shortcut_Corona_C*                 Item_Corona;                                       // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   MarvelOverlay;                                     // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               Size_Box_Corona;                                   // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Item;                                         // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Name;                                         // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   Item_Name;                                         // 0x07B8(0x0018)(Edit, BlueprintVisible)
+	bool                                          SliderVisible;                                     // 0x07D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SwitchVisible;                                     // 0x07D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ShiftVisible;                                      // 0x07D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DropListVisible;                                   // 0x07D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          KeyVisible;                                        // 0x07D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CoronaVisible;                                     // 0x07D5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D6[0x2];                                      // 0x07D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Item_Desc;                                         // 0x07D8(0x0018)(Edit, BlueprintVisible)
+	double                                        HoveredOpacity;                                    // 0x07F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NormalOpacity;                                     // 0x07F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SettingDDLVisible;                                 // 0x0800(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ButtonVisible;                                     // 0x0801(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_802[0x2];                                      // 0x0802(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                ItemPadding;                                       // 0x0804(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Item_C")
 	}
 	static class UWBP_Setting_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Item_C) == 0x000008, "Wrong alignment on UWBP_Setting_Item_C");
-static_assert(sizeof(UWBP_Setting_Item_C) == 0x000808, "Wrong size on UWBP_Setting_Item_C");
-static_assert(offsetof(UWBP_Setting_Item_C, Bg_Setting) == 0x000718, "Member 'UWBP_Setting_Item_C::Bg_Setting' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Bg_Setting_Mask) == 0x000720, "Member 'UWBP_Setting_Item_C::Bg_Setting_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Btn_Icon_Renovate) == 0x000728, "Member 'UWBP_Setting_Item_C::Btn_Icon_Renovate' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Btn_Main) == 0x000730, "Member 'UWBP_Setting_Item_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, HBox_KeySetting) == 0x000738, "Member 'UWBP_Setting_Item_C::HBox_KeySetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, HBox_KeySetting_Corona) == 0x000740, "Member 'UWBP_Setting_Item_C::HBox_KeySetting_Corona' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, hover_image) == 0x000748, "Member 'UWBP_Setting_Item_C::hover_image' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Img_HoverBg) == 0x000750, "Member 'UWBP_Setting_Item_C::Img_HoverBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Img_Line) == 0x000758, "Member 'UWBP_Setting_Item_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Img_SharpCorner_Left) == 0x000760, "Member 'UWBP_Setting_Item_C::Img_SharpCorner_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Img_SharpCorner_Right) == 0x000768, "Member 'UWBP_Setting_Item_C::Img_SharpCorner_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Img_Star) == 0x000770, "Member 'UWBP_Setting_Item_C::Img_Star' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Item_Corona) == 0x000778, "Member 'UWBP_Setting_Item_C::Item_Corona' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, MarvelOverlay) == 0x000780, "Member 'UWBP_Setting_Item_C::MarvelOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Overlay_Hover) == 0x000788, "Member 'UWBP_Setting_Item_C::Overlay_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Size_Box_Corona) == 0x000790, "Member 'UWBP_Setting_Item_C::Size_Box_Corona' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Slot_Item) == 0x000798, "Member 'UWBP_Setting_Item_C::Slot_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Text_Name) == 0x0007A0, "Member 'UWBP_Setting_Item_C::Text_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Item_Name) == 0x0007A8, "Member 'UWBP_Setting_Item_C::Item_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, SliderVisible) == 0x0007C0, "Member 'UWBP_Setting_Item_C::SliderVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, SwitchVisible) == 0x0007C1, "Member 'UWBP_Setting_Item_C::SwitchVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, ShiftVisible) == 0x0007C2, "Member 'UWBP_Setting_Item_C::ShiftVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, DropListVisible) == 0x0007C3, "Member 'UWBP_Setting_Item_C::DropListVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, KeyVisible) == 0x0007C4, "Member 'UWBP_Setting_Item_C::KeyVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, CoronaVisible) == 0x0007C5, "Member 'UWBP_Setting_Item_C::CoronaVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, Item_Desc) == 0x0007C8, "Member 'UWBP_Setting_Item_C::Item_Desc' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, HoveredOpacity) == 0x0007E0, "Member 'UWBP_Setting_Item_C::HoveredOpacity' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, NormalOpacity) == 0x0007E8, "Member 'UWBP_Setting_Item_C::NormalOpacity' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, SettingDDLVisible) == 0x0007F0, "Member 'UWBP_Setting_Item_C::SettingDDLVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, ButtonVisible) == 0x0007F1, "Member 'UWBP_Setting_Item_C::ButtonVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Item_C, ItemPadding) == 0x0007F4, "Member 'UWBP_Setting_Item_C::ItemPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Item_C;
 
 }
 

@@ -35,15 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_RespawnCountdown">();
+		STATIC_CLASS_IMPL("PyWidget3D_RespawnCountdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_RespawnCountdown")
 	}
 	static class UPyWidget3D_RespawnCountdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_RespawnCountdown>();
 	}
 };
-static_assert(alignof(UPyWidget3D_RespawnCountdown) == 0x000010, "Wrong alignment on UPyWidget3D_RespawnCountdown");
-static_assert(sizeof(UPyWidget3D_RespawnCountdown) == 0x0008A0, "Wrong size on UPyWidget3D_RespawnCountdown");
+DUMPER7_ASSERTS_UPyWidget3D_RespawnCountdown;
 
 // PythonClass PyWidget_CharacterDeath.PyWidget_Warning
 // 0x0010 (0x0880 - 0x0870)
@@ -65,19 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Warning">();
+		STATIC_CLASS_IMPL("PyWidget_Warning")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Warning")
 	}
 	static class UPyWidget_Warning* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Warning>();
 	}
 };
-static_assert(alignof(UPyWidget_Warning) == 0x000010, "Wrong alignment on UPyWidget_Warning");
-static_assert(sizeof(UPyWidget_Warning) == 0x000880, "Wrong size on UPyWidget_Warning");
-static_assert(offsetof(UPyWidget_Warning, FadeInSpeed) == 0x000870, "Member 'UPyWidget_Warning::FadeInSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Warning, FadeOutSpeed) == 0x000874, "Member 'UPyWidget_Warning::FadeOutSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Warning, LoopWeakSpeed) == 0x000878, "Member 'UPyWidget_Warning::LoopWeakSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Warning, LoopPowerSpeed) == 0x00087C, "Member 'UPyWidget_Warning::LoopPowerSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Warning;
 
 // PythonClass PyWidget_CharacterDeath.PyWidget_AbilityWarningIndicator
 // 0x0010 (0x0880 - 0x0870)
@@ -99,7 +101,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityWarningIndicator">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityWarningIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityWarningIndicator")
 	}
 	static class UPyWidget_AbilityWarningIndicator* GetDefaultObj()
 	{
@@ -107,9 +113,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_AbilityWarningIndicator) == 0x000010, "Wrong alignment on UPyWidget_AbilityWarningIndicator");
-static_assert(sizeof(UPyWidget_AbilityWarningIndicator) == 0x000880, "Wrong size on UPyWidget_AbilityWarningIndicator");
-static_assert(offsetof(UPyWidget_AbilityWarningIndicator, bCustomColorPreview) == 0x000870, "Member 'UPyWidget_AbilityWarningIndicator::bCustomColorPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityWarningIndicator;
 
 }
 

@@ -23,15 +23,18 @@ class UAISelectTarget_AllyHealerExceptLoki_C final : public UAISelectTarget_Buff
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_AllyHealerExceptLoki_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_AllyHealerExceptLoki_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_AllyHealerExceptLoki_C")
 	}
 	static class UAISelectTarget_AllyHealerExceptLoki_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_AllyHealerExceptLoki_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_AllyHealerExceptLoki_C) == 0x000008, "Wrong alignment on UAISelectTarget_AllyHealerExceptLoki_C");
-static_assert(sizeof(UAISelectTarget_AllyHealerExceptLoki_C) == 0x000118, "Wrong size on UAISelectTarget_AllyHealerExceptLoki_C");
+DUMPER7_ASSERTS_UAISelectTarget_AllyHealerExceptLoki_C;
 
 }
 

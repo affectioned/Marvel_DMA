@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left) == 0x000008, "Wrong alignment on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left");
-static_assert(sizeof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left) == 0x000010, "Wrong size on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left, NavType) == 0x000000, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Left;
 
 // PythonFunction PyWidget_Secondary_ClanReport.PyWidget_Secondary_ClanReport.Nav_UniformGrid_Report_ItemList_Right
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right) == 0x000008, "Wrong alignment on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right");
-static_assert(sizeof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right) == 0x000010, "Wrong size on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right, NavType) == 0x000000, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Right;
 
 // PythonFunction PyWidget_Secondary_ClanReport.PyWidget_Secondary_ClanReport.Nav_UniformGrid_Report_ItemList_Up
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up) == 0x000008, "Wrong alignment on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up");
-static_assert(sizeof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up) == 0x000010, "Wrong size on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up, NavType) == 0x000000, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Up;
 
 // PythonFunction PyWidget_Secondary_ClanReport.PyWidget_Secondary_ClanReport.Nav_UniformGrid_Report_ItemList_Down
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +58,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down) == 0x000008, "Wrong alignment on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down");
-static_assert(sizeof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down) == 0x000010, "Wrong size on PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down, NavType) == 0x000000, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_ClanReport_Nav_UniformGrid_Report_ItemList_Down;
 
 }
 

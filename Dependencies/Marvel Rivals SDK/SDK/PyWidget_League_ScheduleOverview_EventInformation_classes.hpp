@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_ScheduleOverview_EventInformation.PyWidget_League_ScheduleOverview_EventInformation
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_EventInformation final : public UPyMarvelUserWidget
 {
 public:
@@ -29,23 +29,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_EventInformation">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_EventInformation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_EventInformation")
 	}
 	static class UPyWidget_League_ScheduleOverview_EventInformation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_EventInformation>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_EventInformation) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_EventInformation");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_EventInformation) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_EventInformation");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_EventInformation;
 
 // PythonClass PyWidget_League_ScheduleOverview_EventInformation.WBP_League_ScheduleOverview_EventInformation_Item
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UWBP_League_ScheduleOverview_EventInformation_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Icon_Tex;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Icon_Tex;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_League_ScheduleOverview_EventInformation_Item">();
+		STATIC_CLASS_IMPL("WBP_League_ScheduleOverview_EventInformation_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_League_ScheduleOverview_EventInformation_Item")
 	}
 	static class UWBP_League_ScheduleOverview_EventInformation_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_League_ScheduleOverview_EventInformation_Item>();
 	}
 };
-static_assert(alignof(UWBP_League_ScheduleOverview_EventInformation_Item) == 0x000008, "Wrong alignment on UWBP_League_ScheduleOverview_EventInformation_Item");
-static_assert(sizeof(UWBP_League_ScheduleOverview_EventInformation_Item) == 0x0005C8, "Wrong size on UWBP_League_ScheduleOverview_EventInformation_Item");
-static_assert(offsetof(UWBP_League_ScheduleOverview_EventInformation_Item, Icon_Tex) == 0x0005C0, "Member 'UWBP_League_ScheduleOverview_EventInformation_Item::Icon_Tex' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_League_ScheduleOverview_EventInformation_Item;
 
 }
 

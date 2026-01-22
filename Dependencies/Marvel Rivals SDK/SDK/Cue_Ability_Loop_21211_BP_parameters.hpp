@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function Cue_Ability_Loop_21211_BP.Cue_Ability_Loop_21211_BP_C.ExecuteUbergraph_Cue_Ability_Loop_21211_BP
-// 0x0330 (0x0330 - 0x0000)
+// 0x0348 (0x0348 - 0x0000)
 struct Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP final
 {
 public:
@@ -33,71 +33,40 @@ public:
 	int32                                         CallFunc_GetMapId_ReturnValue;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_MyTarget_1;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0030(0x01F0)(ConstParm, ContainsInstancedReference)
-	struct FMtRandomStream                        K2Node_Event_RandomStream;                         // 0x0220(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_241[0x3];                                      // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GenerateInt32_ReturnValue;                // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GenerateRandRange_ReturnValue;            // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldUseLargeFX_ReturnValue;             // 0x024C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldUseLargeFX_ReturnValue_1;           // 0x024D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x024E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x024F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_MyTarget;                             // 0x0250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UNiagaraComponent*>              K2Node_MakeArray_Array;                            // 0x0258(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UNiagaraComponent*                      CallFunc_Array_Get_Item;                           // 0x0268(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      K2Node_Select_Default;                             // 0x0278(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityAudioPack                K2Node_Select_Default_1;                           // 0x0288(0x00A0)(ConstParm)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0030(0x0208)(ConstParm, ContainsInstancedReference)
+	struct FMtRandomStream                        K2Node_Event_RandomStream;                         // 0x0238(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GenerateInt32_ReturnValue;                // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GenerateRandRange_ReturnValue;            // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldUseLargeFX_ReturnValue;             // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldUseLargeFX_ReturnValue_1;           // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0266(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0267(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_MyTarget;                             // 0x0268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UNiagaraComponent*>              K2Node_MakeArray_Array;                            // 0x0270(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UNiagaraComponent*                      CallFunc_Array_Get_Item;                           // 0x0280(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28D[0x3];                                      // 0x028D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      K2Node_Select_Default;                             // 0x0290(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityAudioPack                K2Node_Select_Default_1;                           // 0x02A0(0x00A0)(ConstParm)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP) == 0x000008, "Wrong alignment on Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP");
-static_assert(sizeof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP) == 0x000330, "Wrong size on Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, EntryPoint) == 0x000000, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, Temp_int_Variable) == 0x000004, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, Temp_int_Array_Index_Variable) == 0x000008, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_GetMapId_ReturnValue) == 0x000020, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_GetMapId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Event_MyTarget_1) == 0x000028, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Event_MyTarget_1' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Event_Hit) == 0x000030, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Event_RandomStream) == 0x000220, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Event_RandomStream' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000240, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_GenerateInt32_ReturnValue) == 0x000244, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_GenerateInt32_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_GenerateRandRange_ReturnValue) == 0x000248, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_GenerateRandRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_ShouldUseLargeFX_ReturnValue) == 0x00024C, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_ShouldUseLargeFX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_ShouldUseLargeFX_ReturnValue_1) == 0x00024D, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_ShouldUseLargeFX_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00024E, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_BooleanOR_ReturnValue) == 0x00024F, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Event_MyTarget) == 0x000250, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_MakeArray_Array) == 0x000258, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_Array_Get_Item) == 0x000268, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_Array_Length_ReturnValue) == 0x000270, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_Less_IntInt_ReturnValue) == 0x000274, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Select_Default) == 0x000278, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, Temp_bool_Variable) == 0x000280, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, K2Node_Select_Default_1) == 0x000288, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP, CallFunc_Delay_Duration_ImplicitCast) == 0x000328, "Member 'Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_21211_BP_C_ExecuteUbergraph_Cue_Ability_Loop_21211_BP;
 
 // Function Cue_Ability_Loop_21211_BP.Cue_Ability_Loop_21211_BP_C.K2_OnFindGroundTargetConfirm
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0008(0x01F0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-	struct FMtRandomStream                        RandomStream;                                      // 0x01F8(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0008(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FMtRandomStream                        RandomStream;                                      // 0x0210(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm) == 0x000008, "Wrong alignment on Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm");
-static_assert(sizeof(Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm) == 0x000218, "Wrong size on Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm, MyTarget) == 0x000000, "Member 'Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm::MyTarget' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm, Hit) == 0x000008, "Member 'Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm::Hit' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm, RandomStream) == 0x0001F8, "Member 'Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm::RandomStream' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_21211_BP_C_K2_OnFindGroundTargetConfirm;
 
 // Function Cue_Ability_Loop_21211_BP.Cue_Ability_Loop_21211_BP_C.K2_OnStopGameplayCue
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +75,7 @@ struct Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue final
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue) == 0x000008, "Wrong alignment on Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue");
-static_assert(sizeof(Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue) == 0x000008, "Wrong size on Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue");
-static_assert(offsetof(Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue, MyTarget) == 0x000000, "Member 'Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue::MyTarget' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_21211_BP_C_K2_OnStopGameplayCue;
 
 }
 

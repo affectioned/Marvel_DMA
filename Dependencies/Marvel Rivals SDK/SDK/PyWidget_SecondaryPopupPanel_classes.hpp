@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel
-// 0x0100 (0x06F8 - 0x05F8)
+// 0x0100 (0x0700 - 0x0600)
 class UPyWidget_SecondaryPopupPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	class FText                                   TitleText;                                         // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   LeftBtnText;                                       // 0x0610(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   RightBtnText;                                      // 0x0628(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	ECommonBGType                                 CommonBGType;                                      // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPreBgStyle;                                      // 0x0641(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_642[0x6];                                      // 0x0642(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnVisible;                        // 0x0648(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnInvisible;                      // 0x0698(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 UIDataStyleName;                                   // 0x06E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   TitleText;                                         // 0x0600(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   LeftBtnText;                                       // 0x0618(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   RightBtnText;                                      // 0x0630(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	ECommonBGType                                 CommonBGType;                                      // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPreBgStyle;                                      // 0x0649(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_64A[0x6];                                      // 0x064A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnVisible;                        // 0x0650(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnInvisible;                      // 0x06A0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 UIDataStyleName;                                   // 0x06F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,23 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPopupPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPopupPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPopupPanel")
 	}
 	static class UPyWidget_SecondaryPopupPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPopupPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPopupPanel) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPopupPanel");
-static_assert(sizeof(UPyWidget_SecondaryPopupPanel) == 0x0006F8, "Wrong size on UPyWidget_SecondaryPopupPanel");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, TitleText) == 0x0005F8, "Member 'UPyWidget_SecondaryPopupPanel::TitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, LeftBtnText) == 0x000610, "Member 'UPyWidget_SecondaryPopupPanel::LeftBtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, RightBtnText) == 0x000628, "Member 'UPyWidget_SecondaryPopupPanel::RightBtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, CommonBGType) == 0x000640, "Member 'UPyWidget_SecondaryPopupPanel::CommonBGType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, IsPreBgStyle) == 0x000641, "Member 'UPyWidget_SecondaryPopupPanel::IsPreBgStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, PopupAudioEvents_OnVisible) == 0x000648, "Member 'UPyWidget_SecondaryPopupPanel::PopupAudioEvents_OnVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, PopupAudioEvents_OnInvisible) == 0x000698, "Member 'UPyWidget_SecondaryPopupPanel::PopupAudioEvents_OnInvisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupPanel, UIDataStyleName) == 0x0006E8, "Member 'UPyWidget_SecondaryPopupPanel::UIDataStyleName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPopupPanel;
 
 }
 

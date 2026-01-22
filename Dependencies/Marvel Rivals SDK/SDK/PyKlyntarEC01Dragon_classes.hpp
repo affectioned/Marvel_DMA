@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -45,26 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01Dragon">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01Dragon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01Dragon")
 	}
 	static class APyKlyntarEC01Dragon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarEC01Dragon>();
 	}
 };
-static_assert(alignof(APyKlyntarEC01Dragon) == 0x000010, "Wrong alignment on APyKlyntarEC01Dragon");
-static_assert(sizeof(APyKlyntarEC01Dragon) == 0x000780, "Wrong size on APyKlyntarEC01Dragon");
-static_assert(offsetof(APyKlyntarEC01Dragon, AM_Idle) == 0x000730, "Member 'APyKlyntarEC01Dragon::AM_Idle' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, AM_Bellow) == 0x000738, "Member 'APyKlyntarEC01Dragon::AM_Bellow' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, AS_Bellow) == 0x000740, "Member 'APyKlyntarEC01Dragon::AS_Bellow' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, Idle_Position_Tolerance) == 0x000748, "Member 'APyKlyntarEC01Dragon::Idle_Position_Tolerance' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, Bellow_Position_Tolerance) == 0x00074C, "Member 'APyKlyntarEC01Dragon::Bellow_Position_Tolerance' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, BlendInArgs) == 0x000750, "Member 'APyKlyntarEC01Dragon::BlendInArgs' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, DefaultAnimState) == 0x000760, "Member 'APyKlyntarEC01Dragon::DefaultAnimState' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, DefaultStartAnimLoop) == 0x000764, "Member 'APyKlyntarEC01Dragon::DefaultStartAnimLoop' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, ServerPlayFakeAnim) == 0x000765, "Member 'APyKlyntarEC01Dragon::ServerPlayFakeAnim' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, AnimInfo) == 0x000768, "Member 'APyKlyntarEC01Dragon::AnimInfo' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01Dragon, IntervalSecondsForUpdateMontage) == 0x000770, "Member 'APyKlyntarEC01Dragon::IntervalSecondsForUpdateMontage' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarEC01Dragon;
 
 }
 

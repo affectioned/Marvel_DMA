@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueMRCObverseCard.PyWidget_LeagueMRCObverseCard
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueMRCObverseCard final : public UPyMarvelUserWidget
 {
 public:
@@ -30,26 +30,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueMRCObverseCard">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRCObverseCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRCObverseCard")
 	}
 	static class UPyWidget_LeagueMRCObverseCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueMRCObverseCard>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueMRCObverseCard) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRCObverseCard");
-static_assert(sizeof(UPyWidget_LeagueMRCObverseCard) == 0x0005C0, "Wrong size on UPyWidget_LeagueMRCObverseCard");
+DUMPER7_ASSERTS_UPyWidget_LeagueMRCObverseCard;
 
 // PythonClass PyWidget_LeagueMRCObverseCard.PyWidget_LeagueMRCObverseCardBtn
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_LeagueMRCObverseCardBtn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            RegionTextColorHover;                              // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RegionTextColorCommon;                             // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PlatformIconColorHover;                            // 0x05E4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PlatformIconColorCommon;                           // 0x05F4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RegionTextColorHover;                              // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RegionTextColorCommon;                             // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PlatformIconColorHover;                            // 0x05EC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PlatformIconColorCommon;                           // 0x05FC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,19 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueMRCObverseCardBtn">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRCObverseCardBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRCObverseCardBtn")
 	}
 	static class UPyWidget_LeagueMRCObverseCardBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueMRCObverseCardBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueMRCObverseCardBtn) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRCObverseCardBtn");
-static_assert(sizeof(UPyWidget_LeagueMRCObverseCardBtn) == 0x000608, "Wrong size on UPyWidget_LeagueMRCObverseCardBtn");
-static_assert(offsetof(UPyWidget_LeagueMRCObverseCardBtn, RegionTextColorHover) == 0x0005BC, "Member 'UPyWidget_LeagueMRCObverseCardBtn::RegionTextColorHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCObverseCardBtn, RegionTextColorCommon) == 0x0005D0, "Member 'UPyWidget_LeagueMRCObverseCardBtn::RegionTextColorCommon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCObverseCardBtn, PlatformIconColorHover) == 0x0005E4, "Member 'UPyWidget_LeagueMRCObverseCardBtn::PlatformIconColorHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCObverseCardBtn, PlatformIconColorCommon) == 0x0005F4, "Member 'UPyWidget_LeagueMRCObverseCardBtn::PlatformIconColorCommon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueMRCObverseCardBtn;
 
 }
 

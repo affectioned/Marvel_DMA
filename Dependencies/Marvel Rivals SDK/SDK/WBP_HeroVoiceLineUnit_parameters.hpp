@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.ExecuteUbergraph_WBP_HeroVoiceLineUnit
-// 0x0480 (0x0480 - 0x0000)
+// 0x0498 (0x0498 - 0x0000)
 struct WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit final
 {
 public:
@@ -63,63 +63,20 @@ public:
 	class AActor*                                 K2Node_CustomEvent_Actor;                          // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EMarvelVoiceType                              K2Node_CustomEvent_Type;                           // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelHeroTable                       CallFunc_GetHeroTable_ReturnValue;                 // 0x0290(0x0130)(ConstParm)
-	struct FLinearColor                           CallFunc_GetVoiceDisColor_Color;                   // 0x03C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03D0(0x0014)()
-	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x03E8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0400(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0450(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0460(0x0018)()
-	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast; // 0x0478(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelHeroTable                       CallFunc_GetHeroTable_ReturnValue;                 // 0x0290(0x0148)(ConstParm)
+	struct FLinearColor                           CallFunc_GetVoiceDisColor_Color;                   // 0x03D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03E8(0x0014)()
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x0400(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0418(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0468(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0478(0x0018)()
+	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast; // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit) == 0x000480, "Wrong size on WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, EntryPoint) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_VoiceType) == 0x000005, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_VoiceType' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Character) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Character' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Line) == 0x000010, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Line' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_VoiceID) == 0x000028, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_VoiceID' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_ToCharacter) == 0x000030, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_ToCharacter' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000038, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_GetVoiceToString_OutString) == 0x000040, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_GetVoiceToString_OutString' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_PlayAnimation_ReturnValue) == 0x000050, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Concat_StrStr_ReturnValue) == 0x000058, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_MakeVoiceLineTypePrefix_OutPrefix) == 0x000068, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_MakeVoiceLineTypePrefix_OutPrefix' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Conv_IntToString_ReturnValue) == 0x000078, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000088, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_IsEmpty_ReturnValue) == 0x000098, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0000A0, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeStruct_FormatArgumentData) == 0x0000B0, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000100, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000110, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Actor_1) == 0x000120, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Actor_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Texts) == 0x000128, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Texts' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_SelectString_ReturnValue) == 0x000138, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Conv_StringToText_ReturnValue) == 0x000148, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000160, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeStruct_FormatArgumentData_1) == 0x000178, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001C8, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000218, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeArray_Array) == 0x000230, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Format_ReturnValue) == 0x000240, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_DynamicCast_AsMarvel_Base_Character) == 0x000258, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_DynamicCast_AsMarvel_Base_Character' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_DynamicCast_bSuccess) == 0x000260, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Text) == 0x000268, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Actor) == 0x000280, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Actor' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_CustomEvent_Type) == 0x000288, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_CustomEvent_Type' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_GetHeroTable_ReturnValue) == 0x000290, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_GetHeroTable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_GetVoiceDisColor_Color) == 0x0003C0, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_GetVoiceDisColor_Color' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeStruct_SlateColor) == 0x0003D0, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Conv_StringToText_ReturnValue_3) == 0x0003E8, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeStruct_FormatArgumentData_3) == 0x000400, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, K2Node_MakeArray_Array_1) == 0x000450, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_Format_ReturnValue_1) == 0x000460, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast) == 0x000478, "Member 'WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_ExecuteUbergraph_WBP_HeroVoiceLineUnit;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.GetHeroName
-// 0x0168 (0x0168 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct WBP_HeroVoiceLineUnit_C_GetHeroName final
 {
 public:
@@ -128,17 +85,10 @@ public:
 	class AMarvelBaseCharacter*                   K2Node_DynamicCast_AsMarvel_Base_Character;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelHeroTable                       CallFunc_GetHeroTable_ReturnValue;                 // 0x0028(0x0130)(ConstParm)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FMarvelHeroTable                       CallFunc_GetHeroTable_ReturnValue;                 // 0x0028(0x0148)(ConstParm)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_GetHeroName) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_GetHeroName");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_GetHeroName) == 0x000168, "Wrong size on WBP_HeroVoiceLineUnit_C_GetHeroName");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, InCharacter) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::InCharacter' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, EnName) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::EnName' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, K2Node_DynamicCast_AsMarvel_Base_Character) == 0x000018, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::K2Node_DynamicCast_AsMarvel_Base_Character' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, CallFunc_GetHeroTable_ReturnValue) == 0x000028, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::CallFunc_GetHeroTable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetHeroName, CallFunc_Conv_NameToString_ReturnValue) == 0x000158, "Member 'WBP_HeroVoiceLineUnit_C_GetHeroName::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_GetHeroName;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.GetPrefixOrFullStr
 // 0x0038 (0x0038 - 0x0000)
@@ -150,12 +100,7 @@ public:
 	class FString                                 OutStr;                                            // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr) == 0x000038, "Wrong size on WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr, InStr) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr::InStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr, Prefix) == 0x000010, "Member 'WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr::Prefix' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr, OutStr) == 0x000020, "Member 'WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr::OutStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr, CallFunc_StartsWith_ReturnValue) == 0x000030, "Member 'WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_GetPrefixOrFullStr;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.GetVoiceDisColor
 // 0x0020 (0x0020 - 0x0000)
@@ -171,15 +116,7 @@ public:
 	bool                                          CallFunc_ClientIsPlayerViewSelf_ReturnValue;       // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ClientIsPlayerViewEnemy_ReturnValue;      // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_GetVoiceDisColor");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor) == 0x000020, "Wrong size on WBP_HeroVoiceLineUnit_C_GetVoiceDisColor");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, InActor) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::InActor' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, VoiceType) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::VoiceType' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, Color) == 0x00000C, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::Color' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, K2Node_SwitchEnum_CmpSuccess) == 0x00001C, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, CallFunc_ClientIsPlayerViewAlly_ReturnValue) == 0x00001D, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::CallFunc_ClientIsPlayerViewAlly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, CallFunc_ClientIsPlayerViewSelf_ReturnValue) == 0x00001E, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::CallFunc_ClientIsPlayerViewSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceDisColor, CallFunc_ClientIsPlayerViewEnemy_ReturnValue) == 0x00001F, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceDisColor::CallFunc_ClientIsPlayerViewEnemy_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_GetVoiceDisColor;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.GetVoiceToString
 // 0x0158 (0x0158 - 0x0000)
@@ -203,22 +140,7 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_GetVoiceToString) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_GetVoiceToString");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_GetVoiceToString) == 0x000158, "Wrong size on WBP_HeroVoiceLineUnit_C_GetVoiceToString");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CharacterFrom) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CharacterFrom' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CharacterTo) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CharacterTo' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, OutString) == 0x000010, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::OutString' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_GetHeroName_EnName) == 0x000020, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_GetHeroName_EnName' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_GetHeroName_EnName_1) == 0x0000A0, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_GetHeroName_EnName_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_IsValid_ReturnValue_1) == 0x0000B0, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000B8, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000D0, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, K2Node_MakeArray_Array) == 0x000120, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_Format_ReturnValue) == 0x000130, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_GetVoiceToString, CallFunc_Conv_TextToString_ReturnValue) == 0x000148, "Member 'WBP_HeroVoiceLineUnit_C_GetVoiceToString::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_GetVoiceToString;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.InitFailedVoice
 // 0x0018 (0x0018 - 0x0000)
@@ -228,10 +150,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Texts;                                             // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_InitFailedVoice) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_InitFailedVoice");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_InitFailedVoice) == 0x000018, "Wrong size on WBP_HeroVoiceLineUnit_C_InitFailedVoice");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitFailedVoice, Actor) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_InitFailedVoice::Actor' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitFailedVoice, Texts) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_InitFailedVoice::Texts' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_InitFailedVoice;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.InitPostedVoice
 // 0x0038 (0x0038 - 0x0000)
@@ -246,13 +165,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ToCharacter;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_InitPostedVoice) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_InitPostedVoice");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_InitPostedVoice) == 0x000038, "Wrong size on WBP_HeroVoiceLineUnit_C_InitPostedVoice");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitPostedVoice, VoiceType) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_InitPostedVoice::VoiceType' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitPostedVoice, Character) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_InitPostedVoice::Character' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitPostedVoice, Line) == 0x000010, "Member 'WBP_HeroVoiceLineUnit_C_InitPostedVoice::Line' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitPostedVoice, VoiceID) == 0x000028, "Member 'WBP_HeroVoiceLineUnit_C_InitPostedVoice::VoiceID' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_InitPostedVoice, ToCharacter) == 0x000030, "Member 'WBP_HeroVoiceLineUnit_C_InitPostedVoice::ToCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_InitPostedVoice;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.MakeVoiceLineTypePrefix
 // 0x00F8 (0x00F8 - 0x0000)
@@ -279,22 +192,7 @@ public:
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_PostProcessVoiceLineType_OutStr_1;        // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix) == 0x0000F8, "Wrong size on WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, VoiceID) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::VoiceID' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, OutPrefix) == 0x000008, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::OutPrefix' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, TempStr) == 0x000018, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::TempStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_GetMarvelVoiceRow_ReturnValue) == 0x000028, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_GetMarvelVoiceRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_PostProcessVoiceLineType_OutStr) == 0x000098, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_PostProcessVoiceLineType_OutStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_Conv_NameToString_ReturnValue) == 0x0000A8, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0000B8, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_FindSubstring_ReturnValue) == 0x0000BC, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000C4, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_FindSubstring_ReturnValue_1) == 0x0000C8, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_FindSubstring_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_GetSubstring_ReturnValue) == 0x0000D0, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0000E0, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix, CallFunc_PostProcessVoiceLineType_OutStr_1) == 0x0000E8, "Member 'WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix::CallFunc_PostProcessVoiceLineType_OutStr_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_MakeVoiceLineTypePrefix;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.PostProcessVoiceLineType
 // 0x0050 (0x0050 - 0x0000)
@@ -307,13 +205,7 @@ public:
 	class FString                                 CallFunc_GetPrefixOrFullStr_OutStr_1;              // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetPrefixOrFullStr_OutStr_2;              // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType) == 0x000050, "Wrong size on WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType, InStr) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType::InStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType, OutStr) == 0x000010, "Member 'WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType::OutStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType, CallFunc_GetPrefixOrFullStr_OutStr) == 0x000020, "Member 'WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType::CallFunc_GetPrefixOrFullStr_OutStr' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType, CallFunc_GetPrefixOrFullStr_OutStr_1) == 0x000030, "Member 'WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType::CallFunc_GetPrefixOrFullStr_OutStr_1' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType, CallFunc_GetPrefixOrFullStr_OutStr_2) == 0x000040, "Member 'WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType::CallFunc_GetPrefixOrFullStr_OutStr_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_PostProcessVoiceLineType;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -322,9 +214,7 @@ struct WBP_HeroVoiceLineUnit_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_HeroVoiceLineUnit_C_PreConstruct");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_PreConstruct) == 0x000001, "Wrong size on WBP_HeroVoiceLineUnit_C_PreConstruct");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_PreConstruct;
 
 // Function WBP_HeroVoiceLineUnit.WBP_HeroVoiceLineUnit_C.SetDisplayText
 // 0x0028 (0x0028 - 0x0000)
@@ -335,11 +225,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EMarvelVoiceType                              Type;                                              // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_HeroVoiceLineUnit_C_SetDisplayText) == 0x000008, "Wrong alignment on WBP_HeroVoiceLineUnit_C_SetDisplayText");
-static_assert(sizeof(WBP_HeroVoiceLineUnit_C_SetDisplayText) == 0x000028, "Wrong size on WBP_HeroVoiceLineUnit_C_SetDisplayText");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_SetDisplayText, Text) == 0x000000, "Member 'WBP_HeroVoiceLineUnit_C_SetDisplayText::Text' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_SetDisplayText, Actor) == 0x000018, "Member 'WBP_HeroVoiceLineUnit_C_SetDisplayText::Actor' has a wrong offset!");
-static_assert(offsetof(WBP_HeroVoiceLineUnit_C_SetDisplayText, Type) == 0x000020, "Member 'WBP_HeroVoiceLineUnit_C_SetDisplayText::Type' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_HeroVoiceLineUnit_C_SetDisplayText;
 
 }
 

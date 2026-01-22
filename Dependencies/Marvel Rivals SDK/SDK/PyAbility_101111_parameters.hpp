@@ -27,11 +27,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101111_WhileActive) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101111_WhileActive");
-static_assert(sizeof(PyCue_Weapon_Loop_101111_WhileActive) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_101111_WhileActive");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_101111_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_101111_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_101111_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101111_WhileActive;
 
 // PythonFunction PyAbility_101111.PyCue_Weapon_Loop_101111.SetContainerHide
 // 0x0010 (0x0010 - 0x0000)
@@ -41,10 +37,7 @@ public:
 	class AActor*                                 EndActor;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101111_SetContainerHide) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101111_SetContainerHide");
-static_assert(sizeof(PyCue_Weapon_Loop_101111_SetContainerHide) == 0x000010, "Wrong size on PyCue_Weapon_Loop_101111_SetContainerHide");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_SetContainerHide, EndActor) == 0x000000, "Member 'PyCue_Weapon_Loop_101111_SetContainerHide::EndActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_SetContainerHide, EndPlayReason) == 0x000008, "Member 'PyCue_Weapon_Loop_101111_SetContainerHide::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101111_SetContainerHide;
 
 // PythonFunction PyAbility_101111.PyCue_Weapon_Loop_101111.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -55,11 +48,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101111_OnRemove) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101111_OnRemove");
-static_assert(sizeof(PyCue_Weapon_Loop_101111_OnRemove) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_101111_OnRemove");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_101111_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_101111_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_101111_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101111_OnRemove;
 
 // PythonFunction PyAbility_101111.PyCue_Weapon_Loop_101111.OnExecute
 // 0x01E0 (0x01E0 - 0x0000)
@@ -70,11 +59,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101111_OnExecute) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101111_OnExecute");
-static_assert(sizeof(PyCue_Weapon_Loop_101111_OnExecute) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_101111_OnExecute");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnExecute, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_101111_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnExecute, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_101111_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_OnExecute, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_101111_OnExecute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101111_OnExecute;
 
 // PythonFunction PyAbility_101111.PyCue_Weapon_Loop_101111.K2_HandleWeaponEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -83,9 +68,7 @@ struct PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent final
 public:
 	struct FWeaponNotifyEvent                     Event;                                             // 0x0000(0x0018)(Parm, NoDestructor)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent");
-static_assert(sizeof(PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent) == 0x000018, "Wrong size on PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent");
-static_assert(offsetof(PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent, Event) == 0x000000, "Member 'PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent::Event' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101111_K2_HandleWeaponEvent;
 
 }
 

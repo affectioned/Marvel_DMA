@@ -23,9 +23,7 @@ struct PyWidget_Activity120_GalleryCustom_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_GalleryCustom_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity120_GalleryCustom_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity120_GalleryCustom_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity120_GalleryCustom_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity120_GalleryCustom_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_GalleryCustom_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom.OnSeparatedTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad");
-static_assert(sizeof(PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad) == 0x000008, "Wrong size on PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_GalleryCustom_OnSeparatedTextureLoad;
 
 // PythonFunction PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom.OnSignatureTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad");
-static_assert(sizeof(PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad) == 0x000008, "Wrong size on PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_GalleryCustom_OnSignatureTextureLoad;
 
 // PythonFunction PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom.OnNavUp_BtnGenerate
 // 0x0010 (0x0010 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate) == 0x000008, "Wrong alignment on PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate");
-static_assert(sizeof(PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate) == 0x000010, "Wrong size on PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate, Navigation_0) == 0x000000, "Member 'PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate, ReturnValue) == 0x000008, "Member 'PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_GalleryCustom_OnNavUp_BtnGenerate;
 
 // PythonFunction PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom_Item.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +61,7 @@ struct PyWidget_Activity120_GalleryCustom_Item_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_GalleryCustom_Item_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity120_GalleryCustom_Item_PreConstruct");
-static_assert(sizeof(PyWidget_Activity120_GalleryCustom_Item_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity120_GalleryCustom_Item_PreConstruct");
-static_assert(offsetof(PyWidget_Activity120_GalleryCustom_Item_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity120_GalleryCustom_Item_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_GalleryCustom_Item_PreConstruct;
 
 }
 

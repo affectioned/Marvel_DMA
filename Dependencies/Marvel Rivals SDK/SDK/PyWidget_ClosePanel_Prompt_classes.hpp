@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ClosePanel_Prompt.PyWidget_ClosePanel_Prompt
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ClosePanel_Prompt : public UPyMarvelUserWidget
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClosePanel_Prompt">();
+		STATIC_CLASS_IMPL("PyWidget_ClosePanel_Prompt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClosePanel_Prompt")
 	}
 	static class UPyWidget_ClosePanel_Prompt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClosePanel_Prompt>();
 	}
 };
-static_assert(alignof(UPyWidget_ClosePanel_Prompt) == 0x000008, "Wrong alignment on UPyWidget_ClosePanel_Prompt");
-static_assert(sizeof(UPyWidget_ClosePanel_Prompt) == 0x0005C0, "Wrong size on UPyWidget_ClosePanel_Prompt");
+DUMPER7_ASSERTS_UPyWidget_ClosePanel_Prompt;
 
 }
 

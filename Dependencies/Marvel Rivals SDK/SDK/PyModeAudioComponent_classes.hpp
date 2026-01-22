@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PyBaseAudioComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
-#include "PyBaseAudioComponent_classes.hpp"
 
 
 namespace SDK
@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOwnerConditionConfig">();
+		STATIC_CLASS_IMPL("PyOwnerConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOwnerConditionConfig")
 	}
 	static class UPyOwnerConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyOwnerConditionConfig>();
 	}
 };
-static_assert(alignof(UPyOwnerConditionConfig) == 0x000008, "Wrong alignment on UPyOwnerConditionConfig");
-static_assert(sizeof(UPyOwnerConditionConfig) == 0x000038, "Wrong size on UPyOwnerConditionConfig");
-static_assert(offsetof(UPyOwnerConditionConfig, OwnerLimit) == 0x000030, "Member 'UPyOwnerConditionConfig::OwnerLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyOwnerConditionConfig;
 
 // PythonClass PyModeAudioComponent.PyUITickDrivenConditionConfig
 // 0x0010 (0x0040 - 0x0030)
@@ -53,19 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUITickDrivenConditionConfig">();
+		STATIC_CLASS_IMPL("PyUITickDrivenConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUITickDrivenConditionConfig")
 	}
 	static class UPyUITickDrivenConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUITickDrivenConditionConfig>();
 	}
 };
-static_assert(alignof(UPyUITickDrivenConditionConfig) == 0x000008, "Wrong alignment on UPyUITickDrivenConditionConfig");
-static_assert(sizeof(UPyUITickDrivenConditionConfig) == 0x000040, "Wrong size on UPyUITickDrivenConditionConfig");
-static_assert(offsetof(UPyUITickDrivenConditionConfig, IsRepeatable) == 0x000030, "Member 'UPyUITickDrivenConditionConfig::IsRepeatable' has a wrong offset!");
-static_assert(offsetof(UPyUITickDrivenConditionConfig, StartTime) == 0x000034, "Member 'UPyUITickDrivenConditionConfig::StartTime' has a wrong offset!");
-static_assert(offsetof(UPyUITickDrivenConditionConfig, EndTime) == 0x000038, "Member 'UPyUITickDrivenConditionConfig::EndTime' has a wrong offset!");
-static_assert(offsetof(UPyUITickDrivenConditionConfig, IntervalTime) == 0x00003C, "Member 'UPyUITickDrivenConditionConfig::IntervalTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUITickDrivenConditionConfig;
 
 // PythonClass PyModeAudioComponent.PyModeAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -74,15 +75,18 @@ class UPyModeAudioComponent : public UPyBaseAudioComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModeAudioComponent">();
+		STATIC_CLASS_IMPL("PyModeAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModeAudioComponent")
 	}
 	static class UPyModeAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyModeAudioComponent>();
 	}
 };
-static_assert(alignof(UPyModeAudioComponent) == 0x000008, "Wrong alignment on UPyModeAudioComponent");
-static_assert(sizeof(UPyModeAudioComponent) == 0x000120, "Wrong size on UPyModeAudioComponent");
+DUMPER7_ASSERTS_UPyModeAudioComponent;
 
 }
 

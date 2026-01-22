@@ -21,9 +21,7 @@ struct PyWidget_SelectionUnit_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectionUnit_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SelectionUnit_PreConstruct");
-static_assert(sizeof(PyWidget_SelectionUnit_PreConstruct) == 0x000001, "Wrong size on PyWidget_SelectionUnit_PreConstruct");
-static_assert(offsetof(PyWidget_SelectionUnit_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SelectionUnit_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectionUnit_PreConstruct;
 
 // PythonFunction PyWidget_SelectionMenu.PyWidget_SelectionTitle.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SelectionTitle_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectionTitle_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SelectionTitle_PreConstruct");
-static_assert(sizeof(PyWidget_SelectionTitle_PreConstruct) == 0x000001, "Wrong size on PyWidget_SelectionTitle_PreConstruct");
-static_assert(offsetof(PyWidget_SelectionTitle_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SelectionTitle_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectionTitle_PreConstruct;
 
 }
 

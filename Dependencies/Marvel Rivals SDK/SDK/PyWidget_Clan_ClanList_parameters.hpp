@@ -23,9 +23,7 @@ struct PyWidget_Clan_ClanList_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Clan_ClanList_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Clan_ClanList_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Clan_ClanList_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Clan_ClanList_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Clan_ClanList_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Clan_ClanList_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Clan_ClanList_MarvelSetVisible;
 
 // PythonFunction PyWidget_Clan_ClanList.PyWidget_Clan_ClanList.ScrollView_ClanList_Right_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation) == 0x000008, "Wrong alignment on PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation");
-static_assert(sizeof(PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation) == 0x000010, "Wrong size on PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation");
-static_assert(offsetof(PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation, Navigation_0) == 0x000000, "Member 'PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Clan_ClanList_ScrollView_ClanList_Right_Navigation;
 
 // PythonFunction PyWidget_Clan_ClanList.PyWidget_Clan_ClanList.Goto_ScrollView_ClanList_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation) == 0x000008, "Wrong alignment on PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation");
-static_assert(sizeof(PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation) == 0x000010, "Wrong size on PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation");
-static_assert(offsetof(PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation, Navigation_0) == 0x000000, "Member 'PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Clan_ClanList_Goto_ScrollView_ClanList_Navigation;
 
 }
 

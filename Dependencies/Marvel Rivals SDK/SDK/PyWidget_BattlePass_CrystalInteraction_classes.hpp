@@ -37,22 +37,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CrystalInteraction">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CrystalInteraction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CrystalInteraction")
 	}
 	static class UPyWidget_BattlePass_CrystalInteraction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CrystalInteraction>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CrystalInteraction) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_CrystalInteraction");
-static_assert(sizeof(UPyWidget_BattlePass_CrystalInteraction) == 0x0008B0, "Wrong size on UPyWidget_BattlePass_CrystalInteraction");
-static_assert(offsetof(UPyWidget_BattlePass_CrystalInteraction, BattlePassDataAsset) == 0x000870, "Member 'UPyWidget_BattlePass_CrystalInteraction::BattlePassDataAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CrystalInteraction, OnCrystalInteractionClicked) == 0x000878, "Member 'UPyWidget_BattlePass_CrystalInteraction::OnCrystalInteractionClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CrystalInteraction, OnCrystalInteractionHovered) == 0x000888, "Member 'UPyWidget_BattlePass_CrystalInteraction::OnCrystalInteractionHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CrystalInteraction, OnCrystalInteractionUnhovered) == 0x000898, "Member 'UPyWidget_BattlePass_CrystalInteraction::OnCrystalInteractionUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CrystalInteraction;
 
 // PythonClass PyWidget_BattlePass_CrystalInteraction.PyWidget_BattlePass_InteractionBtn
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattlePass_InteractionBtn final : public UPyMarvelUserWidget
 {
 public:
@@ -62,15 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_InteractionBtn">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_InteractionBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_InteractionBtn")
 	}
 	static class UPyWidget_BattlePass_InteractionBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_InteractionBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_InteractionBtn) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_InteractionBtn");
-static_assert(sizeof(UPyWidget_BattlePass_InteractionBtn) == 0x0005C0, "Wrong size on UPyWidget_BattlePass_InteractionBtn");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_InteractionBtn;
 
 }
 

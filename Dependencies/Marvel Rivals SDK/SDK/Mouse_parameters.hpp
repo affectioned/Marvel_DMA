@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseSensitivityHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingMouseSensitivityHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingMouseSensitivityHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingMouseSensitivityHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingMouseSensitivityHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingMouseSensitivityHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingMouseSensitivityHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingMouseSensitivityHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseSensitivityHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseSensitivityHandler_BP_GetCurrentValue;
 
 // PythonFunction Mouse.UISettingMouseSensitivityHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -47,15 +41,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingMouseSensitivityHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingMouseSensitivityHandler_BP_OnChanged");
-static_assert(sizeof(UISettingMouseSensitivityHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingMouseSensitivityHandler_BP_OnChanged");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingMouseSensitivityHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseSensitivityHandler_BP_OnChanged;
 
 // PythonFunction Mouse.UISettingMouseSensitivityHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -68,13 +54,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseSensitivityHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingMouseSensitivityHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingMouseSensitivityHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingMouseSensitivityHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingMouseSensitivityHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingMouseSensitivityHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetDefaultValue, params) == 0x000018, "Member 'UISettingMouseSensitivityHandler_BP_GetDefaultValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingMouseSensitivityHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseSensitivityHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseSensitivityHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseSensitivityHandler_BP_GetDefaultValue;
 
 // PythonFunction Mouse.UISettingMouseInvertCameraHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -87,13 +67,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingMouseInvertCameraHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingMouseInvertCameraHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingMouseInvertCameraHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingMouseInvertCameraHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingMouseInvertCameraHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingMouseInvertCameraHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseInvertCameraHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseInvertCameraHandler_BP_GetCurrentValue;
 
 // PythonFunction Mouse.UISettingMouseInvertCameraHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -109,15 +83,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingMouseInvertCameraHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingMouseInvertCameraHandler_BP_OnChanged");
-static_assert(sizeof(UISettingMouseInvertCameraHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingMouseInvertCameraHandler_BP_OnChanged");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingMouseInvertCameraHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseInvertCameraHandler_BP_OnChanged;
 
 // PythonFunction Mouse.UISettingMouseInvertCameraHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -130,13 +96,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingMouseInvertCameraHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingMouseInvertCameraHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingMouseInvertCameraHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingMouseInvertCameraHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue, params) == 0x000018, "Member 'UISettingMouseInvertCameraHandler_BP_GetDefaultValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingMouseInvertCameraHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseInvertCameraHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseInvertCameraHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseInvertCameraHandler_BP_GetDefaultValue;
 
 // PythonFunction Mouse.UISettingMouseAccelerationHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -149,13 +109,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseAccelerationHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingMouseAccelerationHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingMouseAccelerationHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingMouseAccelerationHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingMouseAccelerationHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingMouseAccelerationHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingMouseAccelerationHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingMouseAccelerationHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseAccelerationHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseAccelerationHandler_BP_GetCurrentValue;
 
 // PythonFunction Mouse.UISettingMouseAccelerationHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -171,15 +125,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingMouseAccelerationHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingMouseAccelerationHandler_BP_OnChanged");
-static_assert(sizeof(UISettingMouseAccelerationHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingMouseAccelerationHandler_BP_OnChanged");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingMouseAccelerationHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseAccelerationHandler_BP_OnChanged;
 
 // PythonFunction Mouse.UISettingMouseAccelerationHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -192,13 +138,49 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingMouseAccelerationHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingMouseAccelerationHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingMouseAccelerationHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingMouseAccelerationHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingMouseAccelerationHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingMouseAccelerationHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetDefaultValue, params) == 0x000018, "Member 'UISettingMouseAccelerationHandler_BP_GetDefaultValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingMouseAccelerationHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingMouseAccelerationHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingMouseAccelerationHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingMouseAccelerationHandler_BP_GetDefaultValue;
+
+// PythonFunction Mouse.UISettingMouseHighPollingHandler.BP_GetCurrentValue
+// 0x00C0 (0x00C0 - 0x0000)
+struct UISettingMouseHighPollingHandler_BP_GetCurrentValue final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingMouseHighPollingHandler_BP_GetCurrentValue;
+
+// PythonFunction Mouse.UISettingMouseHighPollingHandler.BP_OnChanged
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingMouseHighPollingHandler_BP_OnChanged final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingMouseHighPollingHandler_BP_OnChanged;
+
+// PythonFunction Mouse.UISettingMouseHighPollingHandler.BP_GetDefaultValue
+// 0x00C0 (0x00C0 - 0x0000)
+struct UISettingMouseHighPollingHandler_BP_GetDefaultValue final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingMouseHighPollingHandler_BP_GetDefaultValue;
 
 }
 

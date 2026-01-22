@@ -55,25 +55,6 @@ void UPyUIController_1011_Base::OnDestruct()
 }
 
 
-// PythonFunction PyAbility_101121.PyUIController_101113_101114.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_101113_101114::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_101113_101114", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_101121.PyUIController_101151_101152.OnInit
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -275,6 +256,25 @@ void UPyAbility_101121::NativeOnMontageCancelled(const class FString& Tag)
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_101121.PyUIController_101113_101114.OnInit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_101113_101114::OnInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_101113_101114", "OnInit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

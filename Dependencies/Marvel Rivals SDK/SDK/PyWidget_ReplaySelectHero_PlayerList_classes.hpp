@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplaySelectHero_PlayerList.PyWidget_ReplaySelectHero_PlayerList
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ReplaySelectHero_PlayerList final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsBluePlayerList;                                  // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBluePlayerList;                                  // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,31 +32,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplaySelectHero_PlayerList">();
+		STATIC_CLASS_IMPL("PyWidget_ReplaySelectHero_PlayerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplaySelectHero_PlayerList")
 	}
 	static class UPyWidget_ReplaySelectHero_PlayerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplaySelectHero_PlayerList>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplaySelectHero_PlayerList) == 0x000008, "Wrong alignment on UPyWidget_ReplaySelectHero_PlayerList");
-static_assert(sizeof(UPyWidget_ReplaySelectHero_PlayerList) == 0x0005C0, "Wrong size on UPyWidget_ReplaySelectHero_PlayerList");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerList, IsBluePlayerList) == 0x0005BA, "Member 'UPyWidget_ReplaySelectHero_PlayerList::IsBluePlayerList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplaySelectHero_PlayerList;
 
 // PythonClass PyWidget_ReplaySelectHero_PlayerList.PyWidget_ReplaySelectHero_PlayerBtn
-// 0x0068 (0x0708 - 0x06A0)
+// 0x0068 (0x0718 - 0x06B0)
 class UPyWidget_ReplaySelectHero_PlayerBtn final : public UPyWidget_SelectHero_PlayerBtn
 {
 public:
-	bool                                          IsBlue;                                            // 0x06A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Bg_Portrait_Player_Replay;                         // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Bg_Portrait_Player_Replay_Selected;                // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgBlueNotSelectColor;                              // 0x06B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgBlueSelectedColor;                               // 0x06C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgRedNotSelectedColor;                             // 0x06D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgRedSelectedColor;                                // 0x06E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   DeathMatchColor;                                   // 0x06F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsBlue;                                            // 0x06B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6B1[0x7];                                      // 0x06B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Bg_Portrait_Player_Replay;                         // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Bg_Portrait_Player_Replay_Selected;                // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgBlueNotSelectColor;                              // 0x06C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgBlueSelectedColor;                               // 0x06D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgRedNotSelectedColor;                             // 0x06E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgRedSelectedColor;                                // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   DeathMatchColor;                                   // 0x0708(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -66,23 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplaySelectHero_PlayerBtn">();
+		STATIC_CLASS_IMPL("PyWidget_ReplaySelectHero_PlayerBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplaySelectHero_PlayerBtn")
 	}
 	static class UPyWidget_ReplaySelectHero_PlayerBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplaySelectHero_PlayerBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplaySelectHero_PlayerBtn) == 0x000008, "Wrong alignment on UPyWidget_ReplaySelectHero_PlayerBtn");
-static_assert(sizeof(UPyWidget_ReplaySelectHero_PlayerBtn) == 0x000708, "Wrong size on UPyWidget_ReplaySelectHero_PlayerBtn");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, IsBlue) == 0x0006A0, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::IsBlue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, Bg_Portrait_Player_Replay) == 0x0006A8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::Bg_Portrait_Player_Replay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, Bg_Portrait_Player_Replay_Selected) == 0x0006B0, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::Bg_Portrait_Player_Replay_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, BgBlueNotSelectColor) == 0x0006B8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::BgBlueNotSelectColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, BgBlueSelectedColor) == 0x0006C8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::BgBlueSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, BgRedNotSelectedColor) == 0x0006D8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::BgRedNotSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, BgRedSelectedColor) == 0x0006E8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::BgRedSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplaySelectHero_PlayerBtn, DeathMatchColor) == 0x0006F8, "Member 'UPyWidget_ReplaySelectHero_PlayerBtn::DeathMatchColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplaySelectHero_PlayerBtn;
 
 }
 

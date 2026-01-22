@@ -34,34 +34,28 @@ public:
 
 public:
 	void 自定义事件();
+	void Reset();
 	void ReceiveBeginPlay();
 	void PlayReverseDes();
 	void ExecuteUbergraph_BackTrackManagerActor(int32 EntryPoint);
 	void EndReverseDes();
 	void ActivateBackTrackAudio(bool IsActive, class FName Tag);
-	void Reset();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BackTrackManagerActor_C">();
+		BP_STATIC_CLASS_IMPL("BackTrackManagerActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BackTrackManagerActor_C")
 	}
 	static class ABackTrackManagerActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABackTrackManagerActor_C>();
 	}
 };
-static_assert(alignof(ABackTrackManagerActor_C) == 0x000010, "Wrong alignment on ABackTrackManagerActor_C");
-static_assert(sizeof(ABackTrackManagerActor_C) == 0x000D20, "Wrong size on ABackTrackManagerActor_C");
-static_assert(offsetof(ABackTrackManagerActor_C, UberGraphFrame) == 0x000CB0, "Member 'ABackTrackManagerActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, DefaultSceneRoot) == 0x000CB8, "Member 'ABackTrackManagerActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, NewVar) == 0x000CC0, "Member 'ABackTrackManagerActor_C::NewVar' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, LS_ReverseDes) == 0x000CD0, "Member 'ABackTrackManagerActor_C::LS_ReverseDes' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, LS_ReverseDes_Push) == 0x000CD8, "Member 'ABackTrackManagerActor_C::LS_ReverseDes_Push' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, LS_ReverseDes_New) == 0x000CE0, "Member 'ABackTrackManagerActor_C::LS_ReverseDes_New' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, Appear) == 0x000CF0, "Member 'ABackTrackManagerActor_C::Appear' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, Appear_Tag) == 0x000D00, "Member 'ABackTrackManagerActor_C::Appear_Tag' has a wrong offset!");
-static_assert(offsetof(ABackTrackManagerActor_C, Appear_New) == 0x000D10, "Member 'ABackTrackManagerActor_C::Appear_New' has a wrong offset!");
+DUMPER7_ASSERTS_ABackTrackManagerActor_C;
 
 }
 

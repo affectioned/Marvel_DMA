@@ -20,28 +20,30 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104783.PyConfig_104783
-// 0x0070 (0x17F0 - 0x1780)
+// 0x0070 (0x1B40 - 0x1AD0)
 class UPyConfig_104783 final : public UConfig_104783
 {
 public:
-	struct FGameplayTagContainer                  SpecialTagNoMontage;                               // 0x1780(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SpecialTagNoMontage;                               // 0x1AD0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104783">();
+		STATIC_CLASS_IMPL("PyConfig_104783")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104783")
 	}
 	static class UPyConfig_104783* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104783>();
 	}
 };
-static_assert(alignof(UPyConfig_104783) == 0x000010, "Wrong alignment on UPyConfig_104783");
-static_assert(sizeof(UPyConfig_104783) == 0x0017F0, "Wrong size on UPyConfig_104783");
-static_assert(offsetof(UPyConfig_104783, SpecialTagNoMontage) == 0x001780, "Member 'UPyConfig_104783::SpecialTagNoMontage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104783;
 
 // PythonClass PyAbility_104783.PyAbility_104783
-// 0x0000 (0x2A10 - 0x2A10)
+// 0x0000 (0x2A60 - 0x2A60)
 class UPyAbility_104783 : public UAbility_104783
 {
 public:
@@ -64,18 +66,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104783">();
+		STATIC_CLASS_IMPL("PyAbility_104783")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104783")
 	}
 	static class UPyAbility_104783* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104783>();
 	}
 };
-static_assert(alignof(UPyAbility_104783) == 0x000008, "Wrong alignment on UPyAbility_104783");
-static_assert(sizeof(UPyAbility_104783) == 0x002A10, "Wrong size on UPyAbility_104783");
+DUMPER7_ASSERTS_UPyAbility_104783;
 
 // PythonClass PyAbility_104783.PyTraceComponent_10478301
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10478301 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -85,23 +90,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10478301">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10478301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10478301")
 	}
 	static class UPyTraceComponent_10478301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10478301>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10478301) == 0x000010, "Wrong alignment on UPyTraceComponent_10478301");
-static_assert(sizeof(UPyTraceComponent_10478301) == 0x002200, "Wrong size on UPyTraceComponent_10478301");
+DUMPER7_ASSERTS_UPyTraceComponent_10478301;
 
 // PythonClass PyAbility_104783.PyBuff_Cue_10358201
-// 0x0010 (0x1650 - 0x1640)
+// 0x0010 (0x1700 - 0x16F0)
 class APyBuff_Cue_10358201 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           DivingTag;                                         // 0x1640(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           DivingTag;                                         // 0x16F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -111,26 +119,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuff_Cue_10358201">();
+		STATIC_CLASS_IMPL("PyBuff_Cue_10358201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuff_Cue_10358201")
 	}
 	static class APyBuff_Cue_10358201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBuff_Cue_10358201>();
 	}
 };
-static_assert(alignof(APyBuff_Cue_10358201) == 0x000010, "Wrong alignment on APyBuff_Cue_10358201");
-static_assert(sizeof(APyBuff_Cue_10358201) == 0x001650, "Wrong size on APyBuff_Cue_10358201");
-static_assert(offsetof(APyBuff_Cue_10358201, DivingTag) == 0x001640, "Member 'APyBuff_Cue_10358201::DivingTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyBuff_Cue_10358201;
 
 // PythonClass PyAbility_104783.PyCue_AbilityLoop_10478302
-// 0x0020 (0x11D0 - 0x11B0)
-class APyCue_AbilityLoop_10478302 final : public AMarvelCueNotify_Ability
+// 0x0020 (0x11E0 - 0x11C0)
+class APyCue_AbilityLoop_10478302 : public AMarvelCueNotify_Ability
 {
 public:
-	struct FGameplayTag                           DivingTag;                                         // 0x11B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TentacleTag;                                       // 0x11BC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TentacleBuffID;                                    // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RangeDelayTime;                                    // 0x11CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DivingTag;                                         // 0x11C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TentacleTag;                                       // 0x11CC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TentacleBuffID;                                    // 0x11D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RangeDelayTime;                                    // 0x11DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -141,26 +151,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10478302">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10478302")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10478302")
 	}
 	static class APyCue_AbilityLoop_10478302* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_10478302>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_10478302) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10478302");
-static_assert(sizeof(APyCue_AbilityLoop_10478302) == 0x0011D0, "Wrong size on APyCue_AbilityLoop_10478302");
-static_assert(offsetof(APyCue_AbilityLoop_10478302, DivingTag) == 0x0011B0, "Member 'APyCue_AbilityLoop_10478302::DivingTag' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10478302, TentacleTag) == 0x0011BC, "Member 'APyCue_AbilityLoop_10478302::TentacleTag' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10478302, TentacleBuffID) == 0x0011C8, "Member 'APyCue_AbilityLoop_10478302::TentacleBuffID' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10478302, RangeDelayTime) == 0x0011CC, "Member 'APyCue_AbilityLoop_10478302::RangeDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10478302;
 
 // PythonClass PyAbility_104783.PyCue_AbilityLoop_10478303
-// 0x0020 (0x11D0 - 0x11B0)
-class APyCue_AbilityLoop_10478303 final : public AMarvelCueNotify_Ability
+// 0x0020 (0x11E0 - 0x11C0)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyCue_AbilityLoop_10478303 : public AMarvelCueNotify_Ability
 {
 public:
-	struct FVector                                DecalExtraSize;                                    // 0x11B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DecalExtraSize;                                    // 0x11C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -168,16 +178,19 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10478303">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10478303")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10478303")
 	}
 	static class APyCue_AbilityLoop_10478303* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_10478303>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_10478303) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10478303");
-static_assert(sizeof(APyCue_AbilityLoop_10478303) == 0x0011D0, "Wrong size on APyCue_AbilityLoop_10478303");
-static_assert(offsetof(APyCue_AbilityLoop_10478303, DecalExtraSize) == 0x0011B0, "Member 'APyCue_AbilityLoop_10478303::DecalExtraSize' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10478303;
 
 }
 

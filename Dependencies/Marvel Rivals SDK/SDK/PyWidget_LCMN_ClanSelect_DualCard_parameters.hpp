@@ -21,9 +21,7 @@ struct PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet");
-static_assert(sizeof(PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet");
-static_assert(offsetof(PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet, ListItemObject) == 0x000000, "Member 'PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LCMN_ClanSelect_DualCard_PyOnListItemObjectSet;
 
 }
 

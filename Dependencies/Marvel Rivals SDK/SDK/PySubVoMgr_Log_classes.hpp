@@ -23,15 +23,18 @@ class UVoSubMgr_Log final : public UPySubVoMgrBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VoSubMgr_Log">();
+		STATIC_CLASS_IMPL("VoSubMgr_Log")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoSubMgr_Log")
 	}
 	static class UVoSubMgr_Log* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoSubMgr_Log>();
 	}
 };
-static_assert(alignof(UVoSubMgr_Log) == 0x000008, "Wrong alignment on UVoSubMgr_Log");
-static_assert(sizeof(UVoSubMgr_Log) == 0x000108, "Wrong size on UVoSubMgr_Log");
+DUMPER7_ASSERTS_UVoSubMgr_Log;
 
 }
 

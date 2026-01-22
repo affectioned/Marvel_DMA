@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaTypeRandom">();
+		STATIC_CLASS_IMPL("PySpecialAreaTypeRandom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaTypeRandom")
 	}
 	static class APySpecialAreaTypeRandom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpecialAreaTypeRandom>();
 	}
 };
-static_assert(alignof(APySpecialAreaTypeRandom) == 0x000010, "Wrong alignment on APySpecialAreaTypeRandom");
-static_assert(sizeof(APySpecialAreaTypeRandom) == 0x000700, "Wrong size on APySpecialAreaTypeRandom");
-static_assert(offsetof(APySpecialAreaTypeRandom, EventTypesChanged) == 0x0006E0, "Member 'APySpecialAreaTypeRandom::EventTypesChanged' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaTypeRandom, RandomTypes) == 0x0006F0, "Member 'APySpecialAreaTypeRandom::RandomTypes' has a wrong offset!");
+DUMPER7_ASSERTS_APySpecialAreaTypeRandom;
 
 }
 

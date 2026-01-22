@@ -39,10 +39,7 @@ public:
 	struct FReplicatedAgentPathData               Path;                                              // 0x0028(0x0068)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
 	struct FReplicatedAgentPositionYawData        PositionYaw;                                       // 0x0090(0x0020)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FReplicatedCrowdAgent) == 0x000008, "Wrong alignment on FReplicatedCrowdAgent");
-static_assert(sizeof(FReplicatedCrowdAgent) == 0x0000B0, "Wrong size on FReplicatedCrowdAgent");
-static_assert(offsetof(FReplicatedCrowdAgent, Path) == 0x000028, "Member 'FReplicatedCrowdAgent::Path' has a wrong offset!");
-static_assert(offsetof(FReplicatedCrowdAgent, PositionYaw) == 0x000090, "Member 'FReplicatedCrowdAgent::PositionYaw' has a wrong offset!");
+DUMPER7_ASSERTS_FReplicatedCrowdAgent;
 
 // ScriptStruct MassCrowd.CrowdFastArrayItem
 // 0x00B0 (0x00D0 - 0x0020)
@@ -51,9 +48,7 @@ struct FCrowdFastArrayItem final : public FMassFastArrayItemBase
 public:
 	struct FReplicatedCrowdAgent                  Agent;                                             // 0x0020(0x00B0)(NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCrowdFastArrayItem) == 0x000008, "Wrong alignment on FCrowdFastArrayItem");
-static_assert(sizeof(FCrowdFastArrayItem) == 0x0000D0, "Wrong size on FCrowdFastArrayItem");
-static_assert(offsetof(FCrowdFastArrayItem, Agent) == 0x000020, "Member 'FCrowdFastArrayItem::Agent' has a wrong offset!");
+DUMPER7_ASSERTS_FCrowdFastArrayItem;
 
 // ScriptStruct MassCrowd.MassCrowdClientBubbleSerializer
 // 0x0150 (0x0290 - 0x0140)
@@ -63,9 +58,7 @@ public:
 	uint8                                         Pad_140[0x140];                                    // 0x0140(0x0140)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCrowdFastArrayItem>            Crowd;                                             // 0x0280(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassCrowdClientBubbleSerializer) == 0x000008, "Wrong alignment on FMassCrowdClientBubbleSerializer");
-static_assert(sizeof(FMassCrowdClientBubbleSerializer) == 0x000290, "Wrong size on FMassCrowdClientBubbleSerializer");
-static_assert(offsetof(FMassCrowdClientBubbleSerializer, Crowd) == 0x000280, "Member 'FMassCrowdClientBubbleSerializer::Crowd' has a wrong offset!");
+DUMPER7_ASSERTS_FMassCrowdClientBubbleSerializer;
 
 // ScriptStruct MassCrowd.MassCrowdClaimWaitSlotTaskInstanceData
 // 0x0070 (0x0070 - 0x0000)
@@ -77,11 +70,7 @@ public:
 	struct FZoneGraphLaneHandle                   AcquiredLane;                                      // 0x0064(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassCrowdClaimWaitSlotTaskInstanceData) == 0x000008, "Wrong alignment on FMassCrowdClaimWaitSlotTaskInstanceData");
-static_assert(sizeof(FMassCrowdClaimWaitSlotTaskInstanceData) == 0x000070, "Wrong size on FMassCrowdClaimWaitSlotTaskInstanceData");
-static_assert(offsetof(FMassCrowdClaimWaitSlotTaskInstanceData, WaitSlotLocation) == 0x000000, "Member 'FMassCrowdClaimWaitSlotTaskInstanceData::WaitSlotLocation' has a wrong offset!");
-static_assert(offsetof(FMassCrowdClaimWaitSlotTaskInstanceData, WaitingSlotIndex) == 0x000060, "Member 'FMassCrowdClaimWaitSlotTaskInstanceData::WaitingSlotIndex' has a wrong offset!");
-static_assert(offsetof(FMassCrowdClaimWaitSlotTaskInstanceData, AcquiredLane) == 0x000064, "Member 'FMassCrowdClaimWaitSlotTaskInstanceData::AcquiredLane' has a wrong offset!");
+DUMPER7_ASSERTS_FMassCrowdClaimWaitSlotTaskInstanceData;
 
 // ScriptStruct MassCrowd.MassCrowdClaimWaitSlotTask
 // 0x0008 (0x0030 - 0x0028)
@@ -90,16 +79,14 @@ struct FMassCrowdClaimWaitSlotTask final : public FMassStateTreeTaskBase
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassCrowdClaimWaitSlotTask) == 0x000008, "Wrong alignment on FMassCrowdClaimWaitSlotTask");
-static_assert(sizeof(FMassCrowdClaimWaitSlotTask) == 0x000030, "Wrong size on FMassCrowdClaimWaitSlotTask");
+DUMPER7_ASSERTS_FMassCrowdClaimWaitSlotTask;
 
 // ScriptStruct MassCrowd.MassCrowdTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCrowdTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCrowdTag) == 0x000001, "Wrong alignment on FMassCrowdTag");
-static_assert(sizeof(FMassCrowdTag) == 0x000001, "Wrong size on FMassCrowdTag");
+DUMPER7_ASSERTS_FMassCrowdTag;
 
 // ScriptStruct MassCrowd.MassCrowdLaneTrackingFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -108,8 +95,7 @@ struct alignas(0x04) FMassCrowdLaneTrackingFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassCrowdLaneTrackingFragment) == 0x000004, "Wrong alignment on FMassCrowdLaneTrackingFragment");
-static_assert(sizeof(FMassCrowdLaneTrackingFragment) == 0x000008, "Wrong size on FMassCrowdLaneTrackingFragment");
+DUMPER7_ASSERTS_FMassCrowdLaneTrackingFragment;
 
 // ScriptStruct MassCrowd.MassCrowdObstacleFragment
 // 0x0028 (0x0028 - 0x0000)
@@ -118,8 +104,7 @@ struct alignas(0x08) FMassCrowdObstacleFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassCrowdObstacleFragment) == 0x000008, "Wrong alignment on FMassCrowdObstacleFragment");
-static_assert(sizeof(FMassCrowdObstacleFragment) == 0x000028, "Wrong size on FMassCrowdObstacleFragment");
+DUMPER7_ASSERTS_FMassCrowdObstacleFragment;
 
 // ScriptStruct MassCrowd.MassCrowdLaneDensityDesc
 // 0x000C (0x000C - 0x0000)
@@ -131,11 +116,7 @@ public:
 	float                                         Weight;                                            // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 RenderColor;                                       // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassCrowdLaneDensityDesc) == 0x000004, "Wrong alignment on FMassCrowdLaneDensityDesc");
-static_assert(sizeof(FMassCrowdLaneDensityDesc) == 0x00000C, "Wrong size on FMassCrowdLaneDensityDesc");
-static_assert(offsetof(FMassCrowdLaneDensityDesc, Tag) == 0x000000, "Member 'FMassCrowdLaneDensityDesc::Tag' has a wrong offset!");
-static_assert(offsetof(FMassCrowdLaneDensityDesc, Weight) == 0x000004, "Member 'FMassCrowdLaneDensityDesc::Weight' has a wrong offset!");
-static_assert(offsetof(FMassCrowdLaneDensityDesc, RenderColor) == 0x000008, "Member 'FMassCrowdLaneDensityDesc::RenderColor' has a wrong offset!");
+DUMPER7_ASSERTS_FMassCrowdLaneDensityDesc;
 
 // ScriptStruct MassCrowd.CrowdTrackingLaneData
 // 0x0008 (0x0008 - 0x0000)
@@ -144,8 +125,7 @@ struct alignas(0x04) FCrowdTrackingLaneData final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCrowdTrackingLaneData) == 0x000004, "Wrong alignment on FCrowdTrackingLaneData");
-static_assert(sizeof(FCrowdTrackingLaneData) == 0x000008, "Wrong size on FCrowdTrackingLaneData");
+DUMPER7_ASSERTS_FCrowdTrackingLaneData;
 
 // ScriptStruct MassCrowd.CrowdWaitSlot
 // 0x0038 (0x0038 - 0x0000)
@@ -154,8 +134,7 @@ struct alignas(0x08) FCrowdWaitSlot final
 public:
 	uint8                                         Pad_0[0x38];                                       // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCrowdWaitSlot) == 0x000008, "Wrong alignment on FCrowdWaitSlot");
-static_assert(sizeof(FCrowdWaitSlot) == 0x000038, "Wrong size on FCrowdWaitSlot");
+DUMPER7_ASSERTS_FCrowdWaitSlot;
 
 // ScriptStruct MassCrowd.CrowdWaitAreaData
 // 0x0028 (0x0028 - 0x0000)
@@ -164,8 +143,7 @@ struct alignas(0x08) FCrowdWaitAreaData final
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCrowdWaitAreaData) == 0x000008, "Wrong alignment on FCrowdWaitAreaData");
-static_assert(sizeof(FCrowdWaitAreaData) == 0x000028, "Wrong size on FCrowdWaitAreaData");
+DUMPER7_ASSERTS_FCrowdWaitAreaData;
 
 // ScriptStruct MassCrowd.CrowdBranchingLaneData
 // 0x0004 (0x0004 - 0x0000)
@@ -174,8 +152,7 @@ struct alignas(0x04) FCrowdBranchingLaneData final
 public:
 	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCrowdBranchingLaneData) == 0x000004, "Wrong alignment on FCrowdBranchingLaneData");
-static_assert(sizeof(FCrowdBranchingLaneData) == 0x000004, "Wrong size on FCrowdBranchingLaneData");
+DUMPER7_ASSERTS_FCrowdBranchingLaneData;
 
 // ScriptStruct MassCrowd.ZoneGraphCrowdLaneData
 // 0x0001 (0x0001 - 0x0000)
@@ -184,8 +161,7 @@ struct FZoneGraphCrowdLaneData final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphCrowdLaneData) == 0x000001, "Wrong alignment on FZoneGraphCrowdLaneData");
-static_assert(sizeof(FZoneGraphCrowdLaneData) == 0x000001, "Wrong size on FZoneGraphCrowdLaneData");
+DUMPER7_ASSERTS_FZoneGraphCrowdLaneData;
 
 // ScriptStruct MassCrowd.MassZoneGraphFindWanderTargetInstanceData
 // 0x0060 (0x0060 - 0x0000)
@@ -194,9 +170,7 @@ struct FMassZoneGraphFindWanderTargetInstanceData final
 public:
 	struct FMassZoneGraphTargetLocation           WanderTargetLocation;                              // 0x0000(0x0060)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassZoneGraphFindWanderTargetInstanceData) == 0x000008, "Wrong alignment on FMassZoneGraphFindWanderTargetInstanceData");
-static_assert(sizeof(FMassZoneGraphFindWanderTargetInstanceData) == 0x000060, "Wrong size on FMassZoneGraphFindWanderTargetInstanceData");
-static_assert(offsetof(FMassZoneGraphFindWanderTargetInstanceData, WanderTargetLocation) == 0x000000, "Member 'FMassZoneGraphFindWanderTargetInstanceData::WanderTargetLocation' has a wrong offset!");
+DUMPER7_ASSERTS_FMassZoneGraphFindWanderTargetInstanceData;
 
 // ScriptStruct MassCrowd.MassZoneGraphFindWanderTarget
 // 0x0018 (0x0040 - 0x0028)
@@ -207,9 +181,7 @@ public:
 	struct FZoneGraphTagFilter                    AllowedAnnotationTags;                             // 0x0030(0x000C)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassZoneGraphFindWanderTarget) == 0x000008, "Wrong alignment on FMassZoneGraphFindWanderTarget");
-static_assert(sizeof(FMassZoneGraphFindWanderTarget) == 0x000040, "Wrong size on FMassZoneGraphFindWanderTarget");
-static_assert(offsetof(FMassZoneGraphFindWanderTarget, AllowedAnnotationTags) == 0x000030, "Member 'FMassZoneGraphFindWanderTarget::AllowedAnnotationTags' has a wrong offset!");
+DUMPER7_ASSERTS_FMassZoneGraphFindWanderTarget;
 
 // ScriptStruct MassCrowd.ZoneGraphCrowdLaneStateChangeEvent
 // 0x000C (0x000C - 0x0000)
@@ -220,10 +192,7 @@ public:
 	ECrowdLaneState                               State;                                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphCrowdLaneStateChangeEvent) == 0x000004, "Wrong alignment on FZoneGraphCrowdLaneStateChangeEvent");
-static_assert(sizeof(FZoneGraphCrowdLaneStateChangeEvent) == 0x00000C, "Wrong size on FZoneGraphCrowdLaneStateChangeEvent");
-static_assert(offsetof(FZoneGraphCrowdLaneStateChangeEvent, Lane) == 0x000000, "Member 'FZoneGraphCrowdLaneStateChangeEvent::Lane' has a wrong offset!");
-static_assert(offsetof(FZoneGraphCrowdLaneStateChangeEvent, State) == 0x000008, "Member 'FZoneGraphCrowdLaneStateChangeEvent::State' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphCrowdLaneStateChangeEvent;
 
 }
 

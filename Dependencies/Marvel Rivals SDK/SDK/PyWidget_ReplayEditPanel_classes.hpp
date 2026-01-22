@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayEditPanel.PyWidget_Replay_EditorWidgetStatus
-// 0x0028 (0x0480 - 0x0458)
+// 0x0028 (0x0460 - 0x0438)
 class UPyWidget_Replay_EditorWidgetStatus final : public UMarvelSimpleUserWidget
 {
 public:
-	float                                         LongPressDragDelay;                                // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_45C[0x4];                                      // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool is_drag)>  OnDragStateChange;                                 // 0x0460(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSelectedBegin;                                   // 0x0470(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         LongPressDragDelay;                                // 0x0438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool is_drag)>  OnDragStateChange;                                 // 0x0440(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSelectedBegin;                                   // 0x0450(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,35 +35,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_EditorWidgetStatus">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_EditorWidgetStatus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_EditorWidgetStatus")
 	}
 	static class UPyWidget_Replay_EditorWidgetStatus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_EditorWidgetStatus>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_EditorWidgetStatus) == 0x000008, "Wrong alignment on UPyWidget_Replay_EditorWidgetStatus");
-static_assert(sizeof(UPyWidget_Replay_EditorWidgetStatus) == 0x000480, "Wrong size on UPyWidget_Replay_EditorWidgetStatus");
-static_assert(offsetof(UPyWidget_Replay_EditorWidgetStatus, LongPressDragDelay) == 0x000458, "Member 'UPyWidget_Replay_EditorWidgetStatus::LongPressDragDelay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditorWidgetStatus, OnDragStateChange) == 0x000460, "Member 'UPyWidget_Replay_EditorWidgetStatus::OnDragStateChange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditorWidgetStatus, OnSelectedBegin) == 0x000470, "Member 'UPyWidget_Replay_EditorWidgetStatus::OnSelectedBegin' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_EditorWidgetStatus;
 
 // PythonClass PyWidget_ReplayEditPanel.PyWidget_Replay_EditPanel
-// 0x0058 (0x0650 - 0x05F8)
+// 0x0078 (0x0678 - 0x0600)
 class UPyWidget_Replay_EditPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           ExitAction;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           PreviewAction;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitPreviewAction;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           MoveBeginAction;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           MoveEndAction;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SaveAction;                                        // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ResetAllAction;                                    // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ResetSelectedAction;                               // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ResizeAction;                                      // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           HideWidgetAction;                                  // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           UndoOnceAction;                                    // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KeyHoldDuration;                                   // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           ExitAction;                                        // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           PreviewAction;                                     // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitPreviewAction;                                 // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           MoveBeginAction;                                   // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           MoveEndAction;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SaveAction;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ResetAllAction;                                    // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ResetSelectedAction;                               // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadToggleSwitchBeginAction;                    // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadToggleSwitchEndAction;                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           HideWidgetAction;                                  // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           UndoOnceAction;                                    // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadSelectSwitch;                               // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LevelWidgetMutexOffsetX;                           // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LevelWidgetMutexOffsetY;                           // 0x0674(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,26 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_EditPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_EditPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_EditPanel")
 	}
 	static class UPyWidget_Replay_EditPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_EditPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_EditPanel) == 0x000008, "Wrong alignment on UPyWidget_Replay_EditPanel");
-static_assert(sizeof(UPyWidget_Replay_EditPanel) == 0x000650, "Wrong size on UPyWidget_Replay_EditPanel");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, ExitAction) == 0x0005F8, "Member 'UPyWidget_Replay_EditPanel::ExitAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, PreviewAction) == 0x000600, "Member 'UPyWidget_Replay_EditPanel::PreviewAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, ExitPreviewAction) == 0x000608, "Member 'UPyWidget_Replay_EditPanel::ExitPreviewAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, MoveBeginAction) == 0x000610, "Member 'UPyWidget_Replay_EditPanel::MoveBeginAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, MoveEndAction) == 0x000618, "Member 'UPyWidget_Replay_EditPanel::MoveEndAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, SaveAction) == 0x000620, "Member 'UPyWidget_Replay_EditPanel::SaveAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, ResetAllAction) == 0x000628, "Member 'UPyWidget_Replay_EditPanel::ResetAllAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, ResetSelectedAction) == 0x000630, "Member 'UPyWidget_Replay_EditPanel::ResetSelectedAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, ResizeAction) == 0x000638, "Member 'UPyWidget_Replay_EditPanel::ResizeAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, HideWidgetAction) == 0x000640, "Member 'UPyWidget_Replay_EditPanel::HideWidgetAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_EditPanel, UndoOnceAction) == 0x000648, "Member 'UPyWidget_Replay_EditPanel::UndoOnceAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_EditPanel;
 
 }
 

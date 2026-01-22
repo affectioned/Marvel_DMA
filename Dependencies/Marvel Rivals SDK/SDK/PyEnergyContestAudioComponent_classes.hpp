@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "PyModeAudioComponent_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyMineIndexConditionConfig">();
+		STATIC_CLASS_IMPL("PyEnergyMineIndexConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyMineIndexConditionConfig")
 	}
 	static class UPyEnergyMineIndexConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyMineIndexConditionConfig>();
 	}
 };
-static_assert(alignof(UPyEnergyMineIndexConditionConfig) == 0x000008, "Wrong alignment on UPyEnergyMineIndexConditionConfig");
-static_assert(sizeof(UPyEnergyMineIndexConditionConfig) == 0x000040, "Wrong size on UPyEnergyMineIndexConditionConfig");
-static_assert(offsetof(UPyEnergyMineIndexConditionConfig, Indices) == 0x000030, "Member 'UPyEnergyMineIndexConditionConfig::Indices' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyMineIndexConditionConfig;
 
 // PythonClass PyEnergyContestAudioComponent.PyEnergyPillageStageConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -50,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyPillageStageConditionConfig">();
+		STATIC_CLASS_IMPL("PyEnergyPillageStageConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyPillageStageConditionConfig")
 	}
 	static class UPyEnergyPillageStageConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyPillageStageConditionConfig>();
 	}
 };
-static_assert(alignof(UPyEnergyPillageStageConditionConfig) == 0x000008, "Wrong alignment on UPyEnergyPillageStageConditionConfig");
-static_assert(sizeof(UPyEnergyPillageStageConditionConfig) == 0x000038, "Wrong size on UPyEnergyPillageStageConditionConfig");
-static_assert(offsetof(UPyEnergyPillageStageConditionConfig, PillageStageLevel) == 0x000030, "Member 'UPyEnergyPillageStageConditionConfig::PillageStageLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyPillageStageConditionConfig;
 
 // PythonClass PyEnergyContestAudioComponent.PyEnergyContestAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -72,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestAudioComponent">();
+		STATIC_CLASS_IMPL("PyEnergyContestAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestAudioComponent")
 	}
 	static class UPyEnergyContestAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyContestAudioComponent>();
 	}
 };
-static_assert(alignof(UPyEnergyContestAudioComponent) == 0x000008, "Wrong alignment on UPyEnergyContestAudioComponent");
-static_assert(sizeof(UPyEnergyContestAudioComponent) == 0x000120, "Wrong size on UPyEnergyContestAudioComponent");
+DUMPER7_ASSERTS_UPyEnergyContestAudioComponent;
 
 // PythonClass PyEnergyContestAudioComponent.PyEnergyOwnerConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -92,16 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyOwnerConditionConfig">();
+		STATIC_CLASS_IMPL("PyEnergyOwnerConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyOwnerConditionConfig")
 	}
 	static class UPyEnergyOwnerConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyOwnerConditionConfig>();
 	}
 };
-static_assert(alignof(UPyEnergyOwnerConditionConfig) == 0x000008, "Wrong alignment on UPyEnergyOwnerConditionConfig");
-static_assert(sizeof(UPyEnergyOwnerConditionConfig) == 0x000038, "Wrong size on UPyEnergyOwnerConditionConfig");
-static_assert(offsetof(UPyEnergyOwnerConditionConfig, OwnerSideLimit) == 0x000030, "Member 'UPyEnergyOwnerConditionConfig::OwnerSideLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyOwnerConditionConfig;
 
 // PythonClass PyEnergyContestAudioComponent.PyEnergyBattleSideConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -113,16 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyBattleSideConditionConfig">();
+		STATIC_CLASS_IMPL("PyEnergyBattleSideConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyBattleSideConditionConfig")
 	}
 	static class UPyEnergyBattleSideConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyBattleSideConditionConfig>();
 	}
 };
-static_assert(alignof(UPyEnergyBattleSideConditionConfig) == 0x000008, "Wrong alignment on UPyEnergyBattleSideConditionConfig");
-static_assert(sizeof(UPyEnergyBattleSideConditionConfig) == 0x000038, "Wrong size on UPyEnergyBattleSideConditionConfig");
-static_assert(offsetof(UPyEnergyBattleSideConditionConfig, BattleSideLimit) == 0x000030, "Member 'UPyEnergyBattleSideConditionConfig::BattleSideLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyBattleSideConditionConfig;
 
 // PythonClass PyEnergyContestAudioComponent.PyEnergyStorageComparison
 // 0x0018 (0x0048 - 0x0030)
@@ -136,17 +147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyStorageComparison">();
+		STATIC_CLASS_IMPL("PyEnergyStorageComparison")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyStorageComparison")
 	}
 	static class UPyEnergyStorageComparison* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyStorageComparison>();
 	}
 };
-static_assert(alignof(UPyEnergyStorageComparison) == 0x000008, "Wrong alignment on UPyEnergyStorageComparison");
-static_assert(sizeof(UPyEnergyStorageComparison) == 0x000048, "Wrong size on UPyEnergyStorageComparison");
-static_assert(offsetof(UPyEnergyStorageComparison, RightComparand) == 0x000030, "Member 'UPyEnergyStorageComparison::RightComparand' has a wrong offset!");
-static_assert(offsetof(UPyEnergyStorageComparison, Operator) == 0x000038, "Member 'UPyEnergyStorageComparison::Operator' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyStorageComparison;
 
 }
 

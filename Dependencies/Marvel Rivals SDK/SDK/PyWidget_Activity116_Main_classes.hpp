@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity116_Main.PyWidget_Activity116_Main
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity116_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity116_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Activity116_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity116_Main")
 	}
 	static class UPyWidget_Activity116_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity116_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity116_Main) == 0x000008, "Wrong alignment on UPyWidget_Activity116_Main");
-static_assert(sizeof(UPyWidget_Activity116_Main) == 0x0005F8, "Wrong size on UPyWidget_Activity116_Main");
+DUMPER7_ASSERTS_UPyWidget_Activity116_Main;
 
 }
 

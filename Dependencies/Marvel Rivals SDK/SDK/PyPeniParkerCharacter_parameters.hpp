@@ -21,9 +21,7 @@ struct PyPeniParkerCharacter_OnMeshHiddenChange final
 public:
 	bool                                          NewHidden;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPeniParkerCharacter_OnMeshHiddenChange) == 0x000001, "Wrong alignment on PyPeniParkerCharacter_OnMeshHiddenChange");
-static_assert(sizeof(PyPeniParkerCharacter_OnMeshHiddenChange) == 0x000001, "Wrong size on PyPeniParkerCharacter_OnMeshHiddenChange");
-static_assert(offsetof(PyPeniParkerCharacter_OnMeshHiddenChange, NewHidden) == 0x000000, "Member 'PyPeniParkerCharacter_OnMeshHiddenChange::NewHidden' has a wrong offset!");
+DUMPER7_ASSERTS_PyPeniParkerCharacter_OnMeshHiddenChange;
 
 }
 

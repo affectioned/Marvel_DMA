@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "ControlRig_structs.hpp"
-#include "LiveLinkInterface_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "LiveLinkInterface_structs.hpp"
 #include "RigVM_structs.hpp"
 
 
@@ -24,8 +24,7 @@ namespace SDK
 struct FRigUnit_LiveLinkBase : public FRigUnit
 {
 };
-static_assert(alignof(FRigUnit_LiveLinkBase) == 0x000008, "Wrong alignment on FRigUnit_LiveLinkBase");
-static_assert(sizeof(FRigUnit_LiveLinkBase) == 0x000008, "Wrong size on FRigUnit_LiveLinkBase");
+DUMPER7_ASSERTS_FRigUnit_LiveLinkBase;
 
 // ScriptStruct LiveLinkControlRig.RigUnit_LiveLinkEvaluteFrameAnimation
 // 0x00A8 (0x00B0 - 0x0008)
@@ -41,13 +40,7 @@ public:
 	struct FSubjectFrameHandle                    SubjectFrame;                                      // 0x0090(0x0018)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRigUnit_LiveLinkEvaluteFrameAnimation) == 0x000010, "Wrong alignment on FRigUnit_LiveLinkEvaluteFrameAnimation");
-static_assert(sizeof(FRigUnit_LiveLinkEvaluteFrameAnimation) == 0x0000B0, "Wrong size on FRigUnit_LiveLinkEvaluteFrameAnimation");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameAnimation, SubjectName) == 0x000008, "Member 'FRigUnit_LiveLinkEvaluteFrameAnimation::SubjectName' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameAnimation, bDrawDebug) == 0x000014, "Member 'FRigUnit_LiveLinkEvaluteFrameAnimation::bDrawDebug' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameAnimation, DebugColor) == 0x000018, "Member 'FRigUnit_LiveLinkEvaluteFrameAnimation::DebugColor' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameAnimation, DebugDrawOffset) == 0x000030, "Member 'FRigUnit_LiveLinkEvaluteFrameAnimation::DebugDrawOffset' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameAnimation, SubjectFrame) == 0x000090, "Member 'FRigUnit_LiveLinkEvaluteFrameAnimation::SubjectFrame' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_LiveLinkEvaluteFrameAnimation;
 
 // ScriptStruct LiveLinkControlRig.RigUnit_LiveLinkGetTransformByName
 // 0x0088 (0x0090 - 0x0008)
@@ -60,12 +53,7 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0030(0x0060)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_LiveLinkGetTransformByName) == 0x000010, "Wrong alignment on FRigUnit_LiveLinkGetTransformByName");
-static_assert(sizeof(FRigUnit_LiveLinkGetTransformByName) == 0x000090, "Wrong size on FRigUnit_LiveLinkGetTransformByName");
-static_assert(offsetof(FRigUnit_LiveLinkGetTransformByName, SubjectFrame) == 0x000008, "Member 'FRigUnit_LiveLinkGetTransformByName::SubjectFrame' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkGetTransformByName, TransformName) == 0x000020, "Member 'FRigUnit_LiveLinkGetTransformByName::TransformName' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkGetTransformByName, Space) == 0x00002C, "Member 'FRigUnit_LiveLinkGetTransformByName::Space' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkGetTransformByName, Transform) == 0x000030, "Member 'FRigUnit_LiveLinkGetTransformByName::Transform' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_LiveLinkGetTransformByName;
 
 // ScriptStruct LiveLinkControlRig.RigUnit_LiveLinkGetParameterValueByName
 // 0x0028 (0x0030 - 0x0008)
@@ -76,11 +64,7 @@ public:
 	class FName                                   ParameterName;                                     // 0x0020(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_LiveLinkGetParameterValueByName) == 0x000008, "Wrong alignment on FRigUnit_LiveLinkGetParameterValueByName");
-static_assert(sizeof(FRigUnit_LiveLinkGetParameterValueByName) == 0x000030, "Wrong size on FRigUnit_LiveLinkGetParameterValueByName");
-static_assert(offsetof(FRigUnit_LiveLinkGetParameterValueByName, SubjectFrame) == 0x000008, "Member 'FRigUnit_LiveLinkGetParameterValueByName::SubjectFrame' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkGetParameterValueByName, ParameterName) == 0x000020, "Member 'FRigUnit_LiveLinkGetParameterValueByName::ParameterName' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkGetParameterValueByName, Value) == 0x00002C, "Member 'FRigUnit_LiveLinkGetParameterValueByName::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_LiveLinkGetParameterValueByName;
 
 // ScriptStruct LiveLinkControlRig.RigUnit_LiveLinkEvaluteFrameTransform
 // 0x00E8 (0x00F0 - 0x0008)
@@ -95,13 +79,7 @@ public:
 	struct FTransform                             DebugDrawOffset;                                   // 0x0030(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             Transform;                                         // 0x0090(0x0060)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_LiveLinkEvaluteFrameTransform) == 0x000010, "Wrong alignment on FRigUnit_LiveLinkEvaluteFrameTransform");
-static_assert(sizeof(FRigUnit_LiveLinkEvaluteFrameTransform) == 0x0000F0, "Wrong size on FRigUnit_LiveLinkEvaluteFrameTransform");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameTransform, SubjectName) == 0x000008, "Member 'FRigUnit_LiveLinkEvaluteFrameTransform::SubjectName' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameTransform, bDrawDebug) == 0x000014, "Member 'FRigUnit_LiveLinkEvaluteFrameTransform::bDrawDebug' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameTransform, DebugColor) == 0x000018, "Member 'FRigUnit_LiveLinkEvaluteFrameTransform::DebugColor' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameTransform, DebugDrawOffset) == 0x000030, "Member 'FRigUnit_LiveLinkEvaluteFrameTransform::DebugDrawOffset' has a wrong offset!");
-static_assert(offsetof(FRigUnit_LiveLinkEvaluteFrameTransform, Transform) == 0x000090, "Member 'FRigUnit_LiveLinkEvaluteFrameTransform::Transform' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_LiveLinkEvaluteFrameTransform;
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101483.PyConfig_101483
-// 0x16B8 (0x1750 - 0x0098)
+// 0x1A08 (0x1AA0 - 0x0098)
 class UPyConfig_101483 final : public UMarvelAbilityConfig
 {
 public:
@@ -27,56 +27,44 @@ public:
 	float                                         FireRocketDelay;                                   // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RetryFireRocketDelay;                              // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A4[0xC];                                       // 0x00A4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             DetectTarceContext;                                // 0x00B0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         AmmoInterval;                                      // 0x1710(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1714[0x4];                                     // 0x1714(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         WeaponSockets;                                     // 0x1718(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         AmmoCount;                                         // 0x1728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalAmmoCount;                                    // 0x172C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          StartRotRandom;                                    // 0x1730(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1731[0x3];                                     // 0x1731(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         StartPitchDefaultOffset;                           // 0x1734(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartPitchMaxOffset;                               // 0x1738(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartYawDefaultOffset;                             // 0x173C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartYawMaxOffset;                                 // 0x1740(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RocketWeaponIndex;                                 // 0x1744(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ParentAbilityId;                                   // 0x1748(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             DetectTarceContext;                                // 0x00B0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         AmmoInterval;                                      // 0x1A60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A64[0x4];                                     // 0x1A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         WeaponSockets;                                     // 0x1A68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         AmmoCount;                                         // 0x1A78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalAmmoCount;                                    // 0x1A7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          StartRotRandom;                                    // 0x1A80(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A81[0x3];                                     // 0x1A81(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         StartPitchDefaultOffset;                           // 0x1A84(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartPitchMaxOffset;                               // 0x1A88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartYawDefaultOffset;                             // 0x1A8C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartYawMaxOffset;                                 // 0x1A90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RocketWeaponIndex;                                 // 0x1A94(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ParentAbilityId;                                   // 0x1A98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101483">();
+		STATIC_CLASS_IMPL("PyConfig_101483")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101483")
 	}
 	static class UPyConfig_101483* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101483>();
 	}
 };
-static_assert(alignof(UPyConfig_101483) == 0x000010, "Wrong alignment on UPyConfig_101483");
-static_assert(sizeof(UPyConfig_101483) == 0x001750, "Wrong size on UPyConfig_101483");
-static_assert(offsetof(UPyConfig_101483, FirstFireRocketDelay) == 0x000098, "Member 'UPyConfig_101483::FirstFireRocketDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, FireRocketDelay) == 0x00009C, "Member 'UPyConfig_101483::FireRocketDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, RetryFireRocketDelay) == 0x0000A0, "Member 'UPyConfig_101483::RetryFireRocketDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, DetectTarceContext) == 0x0000B0, "Member 'UPyConfig_101483::DetectTarceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, AmmoInterval) == 0x001710, "Member 'UPyConfig_101483::AmmoInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, WeaponSockets) == 0x001718, "Member 'UPyConfig_101483::WeaponSockets' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, AmmoCount) == 0x001728, "Member 'UPyConfig_101483::AmmoCount' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, TotalAmmoCount) == 0x00172C, "Member 'UPyConfig_101483::TotalAmmoCount' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, StartRotRandom) == 0x001730, "Member 'UPyConfig_101483::StartRotRandom' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, StartPitchDefaultOffset) == 0x001734, "Member 'UPyConfig_101483::StartPitchDefaultOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, StartPitchMaxOffset) == 0x001738, "Member 'UPyConfig_101483::StartPitchMaxOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, StartYawDefaultOffset) == 0x00173C, "Member 'UPyConfig_101483::StartYawDefaultOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, StartYawMaxOffset) == 0x001740, "Member 'UPyConfig_101483::StartYawMaxOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, RocketWeaponIndex) == 0x001744, "Member 'UPyConfig_101483::RocketWeaponIndex' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101483, ParentAbilityId) == 0x001748, "Member 'UPyConfig_101483::ParentAbilityId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101483;
 
 // PythonClass PyAbility_101483.PyProjectile_101483
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_101483 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UProjectileHomingComponent*             HomingComponent;                                   // 0x3B90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UProjectileHomingComponent*             HomingComponent;                                   // 0x3EA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -84,19 +72,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_101483">();
+		STATIC_CLASS_IMPL("PyProjectile_101483")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_101483")
 	}
 	static class APyProjectile_101483* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_101483>();
 	}
 };
-static_assert(alignof(APyProjectile_101483) == 0x000010, "Wrong alignment on APyProjectile_101483");
-static_assert(sizeof(APyProjectile_101483) == 0x003BA0, "Wrong size on APyProjectile_101483");
-static_assert(offsetof(APyProjectile_101483, HomingComponent) == 0x003B90, "Member 'APyProjectile_101483::HomingComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_101483;
 
 // PythonClass PyAbility_101483.PyAbility_101483
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101483 : public UMarvelGameplayAbility
 {
 public:
@@ -110,32 +100,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101483">();
+		STATIC_CLASS_IMPL("PyAbility_101483")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101483")
 	}
 	static class UPyAbility_101483* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101483>();
 	}
 };
-static_assert(alignof(UPyAbility_101483) == 0x000008, "Wrong alignment on UPyAbility_101483");
-static_assert(sizeof(UPyAbility_101483) == 0x0029F0, "Wrong size on UPyAbility_101483");
+DUMPER7_ASSERTS_UPyAbility_101483;
 
 // PythonClass PyAbility_101483.PyWeapon_101483
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class APyWeapon_101483 : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWeapon_101483">();
+		STATIC_CLASS_IMPL("PyWeapon_101483")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWeapon_101483")
 	}
 	static class APyWeapon_101483* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWeapon_101483>();
 	}
 };
-static_assert(alignof(APyWeapon_101483) == 0x000010, "Wrong alignment on APyWeapon_101483");
-static_assert(sizeof(APyWeapon_101483) == 0x000CB0, "Wrong size on APyWeapon_101483");
+DUMPER7_ASSERTS_APyWeapon_101483;
 
 }
 

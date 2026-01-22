@@ -24,10 +24,7 @@ public:
 	class UObject*                                TaskOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int64                                         Magnitude;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoor_DispatchOnOpenStateChanged) == 0x000008, "Wrong alignment on PyDoor_DispatchOnOpenStateChanged");
-static_assert(sizeof(PyDoor_DispatchOnOpenStateChanged) == 0x000010, "Wrong size on PyDoor_DispatchOnOpenStateChanged");
-static_assert(offsetof(PyDoor_DispatchOnOpenStateChanged, TaskOwner) == 0x000000, "Member 'PyDoor_DispatchOnOpenStateChanged::TaskOwner' has a wrong offset!");
-static_assert(offsetof(PyDoor_DispatchOnOpenStateChanged, Magnitude) == 0x000008, "Member 'PyDoor_DispatchOnOpenStateChanged::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoor_DispatchOnOpenStateChanged;
 
 // PythonFunction PyDoor.PyDoor.SetDoorsProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +33,7 @@ struct PyDoor_SetDoorsProgress final
 public:
 	float                                         progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoor_SetDoorsProgress) == 0x000004, "Wrong alignment on PyDoor_SetDoorsProgress");
-static_assert(sizeof(PyDoor_SetDoorsProgress) == 0x000004, "Wrong size on PyDoor_SetDoorsProgress");
-static_assert(offsetof(PyDoor_SetDoorsProgress, progress) == 0x000000, "Member 'PyDoor_SetDoorsProgress::progress' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoor_SetDoorsProgress;
 
 // PythonFunction PyDoor.PyDoor.S_payload_reach
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +43,7 @@ public:
 	struct FGameplayTag                           event_name;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	float                                         event_args;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoor_S_payload_reach) == 0x000004, "Wrong alignment on PyDoor_S_payload_reach");
-static_assert(sizeof(PyDoor_S_payload_reach) == 0x000010, "Wrong size on PyDoor_S_payload_reach");
-static_assert(offsetof(PyDoor_S_payload_reach, event_name) == 0x000000, "Member 'PyDoor_S_payload_reach::event_name' has a wrong offset!");
-static_assert(offsetof(PyDoor_S_payload_reach, event_args) == 0x00000C, "Member 'PyDoor_S_payload_reach::event_args' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoor_S_payload_reach;
 
 }
 

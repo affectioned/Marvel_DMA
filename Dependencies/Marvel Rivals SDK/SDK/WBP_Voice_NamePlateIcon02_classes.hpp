@@ -17,57 +17,43 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Voice_NamePlateIcon02.WBP_Voice_NamePlateIcon02_C
-// 0x0090 (0x0F80 - 0x0EF0)
+// 0x0090 (0x0F90 - 0x0F00)
 class UWBP_Voice_NamePlateIcon02_C final : public UPyWidget_VoiceStateImage
 {
 public:
-	class UWidgetAnimation*                       Anim_ChangeVoice;                                  // 0x0EF0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Speaker_Backups;                              // 0x0EF8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Voice;                                        // 0x0F00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Speaker;                                      // 0x0F08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Img_ChangeVoice_Bg;                                // 0x0F10(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_ChangeVoice_Icon;                              // 0x0F18(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Message_Icon;                                  // 0x0F20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Mic_Bg;                                        // 0x0F28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Mic_Icon;                                      // 0x0F30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Speaker_Big;                                   // 0x0F38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Speaker_Icon;                                  // 0x0F40(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Speaker_Middle;                                // 0x0F48(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Speaker_Small;                                 // 0x0F50(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ChangeVoice;                               // 0x0F58(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Message;                                   // 0x0F60(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Mic;                                       // 0x0F68(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Speaker;                                   // 0x0F70(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_ChangeVoice;                                  // 0x0F00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Speaker_Backups;                              // 0x0F08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Voice;                                        // 0x0F10(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Speaker;                                      // 0x0F18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Img_ChangeVoice_Bg;                                // 0x0F20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_ChangeVoice_Icon;                              // 0x0F28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Message_Icon;                                  // 0x0F30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Mic_Bg;                                        // 0x0F38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Mic_Icon;                                      // 0x0F40(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Speaker_Big;                                   // 0x0F48(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Speaker_Icon;                                  // 0x0F50(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Speaker_Middle;                                // 0x0F58(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Speaker_Small;                                 // 0x0F60(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ChangeVoice;                               // 0x0F68(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Message;                                   // 0x0F70(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Mic;                                       // 0x0F78(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Speaker;                                   // 0x0F80(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Voice_NamePlateIcon02_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Voice_NamePlateIcon02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Voice_NamePlateIcon02_C")
 	}
 	static class UWBP_Voice_NamePlateIcon02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Voice_NamePlateIcon02_C>();
 	}
 };
-static_assert(alignof(UWBP_Voice_NamePlateIcon02_C) == 0x000010, "Wrong alignment on UWBP_Voice_NamePlateIcon02_C");
-static_assert(sizeof(UWBP_Voice_NamePlateIcon02_C) == 0x000F80, "Wrong size on UWBP_Voice_NamePlateIcon02_C");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Anim_ChangeVoice) == 0x000EF0, "Member 'UWBP_Voice_NamePlateIcon02_C::Anim_ChangeVoice' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Anim_Speaker_Backups) == 0x000EF8, "Member 'UWBP_Voice_NamePlateIcon02_C::Anim_Speaker_Backups' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Anim_Voice) == 0x000F00, "Member 'UWBP_Voice_NamePlateIcon02_C::Anim_Voice' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Anim_Speaker) == 0x000F08, "Member 'UWBP_Voice_NamePlateIcon02_C::Anim_Speaker' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_ChangeVoice_Bg) == 0x000F10, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_ChangeVoice_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_ChangeVoice_Icon) == 0x000F18, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_ChangeVoice_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Message_Icon) == 0x000F20, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Message_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Mic_Bg) == 0x000F28, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Mic_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Mic_Icon) == 0x000F30, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Mic_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Speaker_Big) == 0x000F38, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Speaker_Big' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Speaker_Icon) == 0x000F40, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Speaker_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Speaker_Middle) == 0x000F48, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Speaker_Middle' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Img_Speaker_Small) == 0x000F50, "Member 'UWBP_Voice_NamePlateIcon02_C::Img_Speaker_Small' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Overlay_ChangeVoice) == 0x000F58, "Member 'UWBP_Voice_NamePlateIcon02_C::Overlay_ChangeVoice' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Overlay_Message) == 0x000F60, "Member 'UWBP_Voice_NamePlateIcon02_C::Overlay_Message' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Overlay_Mic) == 0x000F68, "Member 'UWBP_Voice_NamePlateIcon02_C::Overlay_Mic' has a wrong offset!");
-static_assert(offsetof(UWBP_Voice_NamePlateIcon02_C, Overlay_Speaker) == 0x000F70, "Member 'UWBP_Voice_NamePlateIcon02_C::Overlay_Speaker' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Voice_NamePlateIcon02_C;
 
 }
 

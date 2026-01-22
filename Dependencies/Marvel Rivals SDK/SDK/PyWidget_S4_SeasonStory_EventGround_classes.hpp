@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S4_SeasonStory_EventGround.PyWidget_S4_SeasonStory_EventGround
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_S4_SeasonStory_EventGround final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EventUp;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EventDown;                                         // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EventUp;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EventDown;                                         // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,31 +37,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S4_SeasonStory_EventGround">();
+		STATIC_CLASS_IMPL("PyWidget_S4_SeasonStory_EventGround")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S4_SeasonStory_EventGround")
 	}
 	static class UPyWidget_S4_SeasonStory_EventGround* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S4_SeasonStory_EventGround>();
 	}
 };
-static_assert(alignof(UPyWidget_S4_SeasonStory_EventGround) == 0x000008, "Wrong alignment on UPyWidget_S4_SeasonStory_EventGround");
-static_assert(sizeof(UPyWidget_S4_SeasonStory_EventGround) == 0x0005D8, "Wrong size on UPyWidget_S4_SeasonStory_EventGround");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventGround, EventUp) == 0x0005BC, "Member 'UPyWidget_S4_SeasonStory_EventGround::EventUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventGround, EventDown) == 0x0005C0, "Member 'UPyWidget_S4_SeasonStory_EventGround::EventDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventGround, OnEventClicked) == 0x0005C8, "Member 'UPyWidget_S4_SeasonStory_EventGround::OnEventClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S4_SeasonStory_EventGround;
 
 // PythonClass PyWidget_S4_SeasonStory_EventGround.PyWidget_S4_SeasonStory_EventItem
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_S4_SeasonStory_EventItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NumberUnlockedColor;                               // 0x05BC(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NumberNormalColor;                                 // 0x05D0(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHover, bool IsUp)> OnEventHover;                            // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsExpand, bool IsUp)> OnEventHoverImmediately;                // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NumberUnlockedColor;                               // 0x05C4(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NumberNormalColor;                                 // 0x05D8(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHover, bool IsUp)> OnEventHover;                            // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsExpand, bool IsUp)> OnEventHoverImmediately;                // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -71,20 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S4_SeasonStory_EventItem">();
+		STATIC_CLASS_IMPL("PyWidget_S4_SeasonStory_EventItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S4_SeasonStory_EventItem")
 	}
 	static class UPyWidget_S4_SeasonStory_EventItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S4_SeasonStory_EventItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S4_SeasonStory_EventItem) == 0x000008, "Wrong alignment on UPyWidget_S4_SeasonStory_EventItem");
-static_assert(sizeof(UPyWidget_S4_SeasonStory_EventItem) == 0x000618, "Wrong size on UPyWidget_S4_SeasonStory_EventItem");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventItem, NumberUnlockedColor) == 0x0005BC, "Member 'UPyWidget_S4_SeasonStory_EventItem::NumberUnlockedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventItem, NumberNormalColor) == 0x0005D0, "Member 'UPyWidget_S4_SeasonStory_EventItem::NumberNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventItem, OnEventClicked) == 0x0005E8, "Member 'UPyWidget_S4_SeasonStory_EventItem::OnEventClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventItem, OnEventHover) == 0x0005F8, "Member 'UPyWidget_S4_SeasonStory_EventItem::OnEventHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_EventItem, OnEventHoverImmediately) == 0x000608, "Member 'UPyWidget_S4_SeasonStory_EventItem::OnEventHoverImmediately' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S4_SeasonStory_EventItem;
 
 }
 

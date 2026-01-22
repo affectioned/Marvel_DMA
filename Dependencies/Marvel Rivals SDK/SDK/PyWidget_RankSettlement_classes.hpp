@@ -18,56 +18,46 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RankSettlement.PyWidget_RankSettlement_Panel
-// 0x00E0 (0x06D8 - 0x05F8)
+// 0x00E0 (0x06E0 - 0x0600)
 class UPyWidget_RankSettlement_Panel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FSlateBrush>                    LevelIconList;                                     // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Construct;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<TSubclassOf<class UUserWidget>>        UIBP_Dan_Icon_Lifting_Vx_List;                     // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_1;                                 // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_2;                                 // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_3;                                 // 0x0648(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_4;                                 // 0x065C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_5;                                 // 0x0670(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_6;                                 // 0x0684(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_7;                                 // 0x0698(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_8;                                 // 0x06AC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FSlateColor>                    Dark_Color_List1;                                  // 0x06C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMaterialParameterCollection*           MPC_UIParameterCollection;                         // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSlateBrush>                    LevelIconList;                                     // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Construct;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class UUserWidget>>        UIBP_Dan_Icon_Lifting_Vx_List;                     // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_1;                                 // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_2;                                 // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_3;                                 // 0x0650(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_4;                                 // 0x0664(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_5;                                 // 0x0678(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_6;                                 // 0x068C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_7;                                 // 0x06A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_8;                                 // 0x06B4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FSlateColor>                    Dark_Color_List1;                                  // 0x06C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialParameterCollection*           MPC_UIParameterCollection;                         // 0x06D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankSettlement_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_RankSettlement_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankSettlement_Panel")
 	}
 	static class UPyWidget_RankSettlement_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankSettlement_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_RankSettlement_Panel) == 0x000008, "Wrong alignment on UPyWidget_RankSettlement_Panel");
-static_assert(sizeof(UPyWidget_RankSettlement_Panel) == 0x0006D8, "Wrong size on UPyWidget_RankSettlement_Panel");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, LevelIconList) == 0x0005F8, "Member 'UPyWidget_RankSettlement_Panel::LevelIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, AkEvent_Construct) == 0x000608, "Member 'UPyWidget_RankSettlement_Panel::AkEvent_Construct' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, UIBP_Dan_Icon_Lifting_Vx_List) == 0x000610, "Member 'UPyWidget_RankSettlement_Panel::UIBP_Dan_Icon_Lifting_Vx_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_1) == 0x000620, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_2) == 0x000634, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_3) == 0x000648, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_4) == 0x00065C, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_5) == 0x000670, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_5' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_6) == 0x000684, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_6' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_7) == 0x000698, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_7' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Color_DanTextBg_8) == 0x0006AC, "Member 'UPyWidget_RankSettlement_Panel::Color_DanTextBg_8' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, Dark_Color_List1) == 0x0006C0, "Member 'UPyWidget_RankSettlement_Panel::Dark_Color_List1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankSettlement_Panel, MPC_UIParameterCollection) == 0x0006D0, "Member 'UPyWidget_RankSettlement_Panel::MPC_UIParameterCollection' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RankSettlement_Panel;
 
 // PythonClass PyWidget_RankSettlement.PyWidget_NewSeason_Panel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_NewSeason_Panel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UImage*                                 Img_Bg;                                            // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Bg;                                            // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -77,39 +67,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_NewSeason_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_NewSeason_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_NewSeason_Panel")
 	}
 	static class UPyWidget_NewSeason_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_NewSeason_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_NewSeason_Panel) == 0x000008, "Wrong alignment on UPyWidget_NewSeason_Panel");
-static_assert(sizeof(UPyWidget_NewSeason_Panel) == 0x000600, "Wrong size on UPyWidget_NewSeason_Panel");
-static_assert(offsetof(UPyWidget_NewSeason_Panel, Img_Bg) == 0x0005F8, "Member 'UPyWidget_NewSeason_Panel::Img_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_NewSeason_Panel;
 
 // PythonClass PyWidget_RankSettlement.PyWidget_NewSeason_Rewards_Panel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_NewSeason_Rewards_Panel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UMarvelHorizontalBox*                   HBox_RewardsList;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                RewardItemClass;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_RewardsList;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                RewardItemClass;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_NewSeason_Rewards_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_NewSeason_Rewards_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_NewSeason_Rewards_Panel")
 	}
 	static class UPyWidget_NewSeason_Rewards_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_NewSeason_Rewards_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_NewSeason_Rewards_Panel) == 0x000008, "Wrong alignment on UPyWidget_NewSeason_Rewards_Panel");
-static_assert(sizeof(UPyWidget_NewSeason_Rewards_Panel) == 0x000608, "Wrong size on UPyWidget_NewSeason_Rewards_Panel");
-static_assert(offsetof(UPyWidget_NewSeason_Rewards_Panel, HBox_RewardsList) == 0x0005F8, "Member 'UPyWidget_NewSeason_Rewards_Panel::HBox_RewardsList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_NewSeason_Rewards_Panel, RewardItemClass) == 0x000600, "Member 'UPyWidget_NewSeason_Rewards_Panel::RewardItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_NewSeason_Rewards_Panel;
 
 }
 

@@ -21,9 +21,7 @@ struct PyPlayerStatisticsUnit_PyOnPossesCharacter final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStatisticsUnit_PyOnPossesCharacter) == 0x000004, "Wrong alignment on PyPlayerStatisticsUnit_PyOnPossesCharacter");
-static_assert(sizeof(PyPlayerStatisticsUnit_PyOnPossesCharacter) == 0x000004, "Wrong size on PyPlayerStatisticsUnit_PyOnPossesCharacter");
-static_assert(offsetof(PyPlayerStatisticsUnit_PyOnPossesCharacter, HeroID) == 0x000000, "Member 'PyPlayerStatisticsUnit_PyOnPossesCharacter::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStatisticsUnit_PyOnPossesCharacter;
 
 }
 

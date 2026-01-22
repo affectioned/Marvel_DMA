@@ -11,20 +11,55 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
+// PythonClass PyWidget_SettingMiniKeyboard.PyWidget_MiniHost
+// 0x0090 (0x0658 - 0x05C8)
+class UPyWidget_MiniHost : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         KeyNum;                                            // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   GamepadKey_1;                                      // 0x05C8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   GamepadKey_2;                                      // 0x05E8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Key_Normal_Color;                             // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Key_Combine_Color;                            // 0x061C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Key_Conflict_Color;                           // 0x0630(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Marquee_Widget;                                    // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             TextStyleSet;                                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_MiniHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MiniHost")
+	}
+	static class UPyWidget_MiniHost* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_MiniHost>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_MiniHost;
+
 // PythonClass PyWidget_SettingMiniKeyboard.PyWidget_SettingMiniKeyBoard
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_SettingMiniKeyBoard : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +69,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingMiniKeyBoard">();
+		STATIC_CLASS_IMPL("PyWidget_SettingMiniKeyBoard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingMiniKeyBoard")
 	}
 	static class UPyWidget_SettingMiniKeyBoard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingMiniKeyBoard>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingMiniKeyBoard) == 0x000008, "Wrong alignment on UPyWidget_SettingMiniKeyBoard");
-static_assert(sizeof(UPyWidget_SettingMiniKeyBoard) == 0x0005C8, "Wrong size on UPyWidget_SettingMiniKeyBoard");
-static_assert(offsetof(UPyWidget_SettingMiniKeyBoard, KeyAsset) == 0x0005C0, "Member 'UPyWidget_SettingMiniKeyBoard::KeyAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingMiniKeyBoard;
+
+// PythonClass PyWidget_SettingMiniKeyboard.PyWidget_MiniHostPanel
+// 0x0018 (0x05E0 - 0x05C8)
+class UPyWidget_MiniHostPanel : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   UltimateAbilityName;                               // 0x05C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_MiniHostPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MiniHostPanel")
+	}
+	static class UPyWidget_MiniHostPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_MiniHostPanel>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_MiniHostPanel;
 
 // PythonClass PyWidget_SettingMiniKeyboard.PyWidget_SettingMiniMouse
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SettingMiniMouse : public UPyMarvelUserWidget
 {
 public:
@@ -56,58 +120,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingMiniMouse">();
+		STATIC_CLASS_IMPL("PyWidget_SettingMiniMouse")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingMiniMouse")
 	}
 	static class UPyWidget_SettingMiniMouse* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingMiniMouse>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingMiniMouse) == 0x000008, "Wrong alignment on UPyWidget_SettingMiniMouse");
-static_assert(sizeof(UPyWidget_SettingMiniMouse) == 0x0005C0, "Wrong size on UPyWidget_SettingMiniMouse");
-
-// PythonClass PyWidget_SettingMiniKeyboard.PyWidget_MiniHost
-// 0x0090 (0x0650 - 0x05C0)
-class UPyWidget_MiniHost : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         KeyNum;                                            // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   GamepadKey_1;                                      // 0x05C0(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   GamepadKey_2;                                      // 0x05E0(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_Key_Normal_Color;                             // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_Key_Combine_Color;                            // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_Key_Conflict_Color;                           // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_63C[0x4];                                      // 0x063C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Marquee_Widget;                                    // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             TextStyleSet;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_MiniHost">();
-	}
-	static class UPyWidget_MiniHost* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_MiniHost>();
-	}
-};
-static_assert(alignof(UPyWidget_MiniHost) == 0x000008, "Wrong alignment on UPyWidget_MiniHost");
-static_assert(sizeof(UPyWidget_MiniHost) == 0x000650, "Wrong size on UPyWidget_MiniHost");
-static_assert(offsetof(UPyWidget_MiniHost, KeyNum) == 0x0005BC, "Member 'UPyWidget_MiniHost::KeyNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, GamepadKey_1) == 0x0005C0, "Member 'UPyWidget_MiniHost::GamepadKey_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, GamepadKey_2) == 0x0005E0, "Member 'UPyWidget_MiniHost::GamepadKey_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, Text_Key_Normal_Color) == 0x000600, "Member 'UPyWidget_MiniHost::Text_Key_Normal_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, Text_Key_Combine_Color) == 0x000614, "Member 'UPyWidget_MiniHost::Text_Key_Combine_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, Text_Key_Conflict_Color) == 0x000628, "Member 'UPyWidget_MiniHost::Text_Key_Conflict_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, Marquee_Widget) == 0x000640, "Member 'UPyWidget_MiniHost::Marquee_Widget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MiniHost, TextStyleSet) == 0x000648, "Member 'UPyWidget_MiniHost::TextStyleSet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingMiniMouse;
 
 // PythonClass PyWidget_SettingMiniKeyboard.PyWidget_MiniKey
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_MiniKey : public UPyMarvelUserWidget
 {
 public:
@@ -117,40 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MiniKey">();
+		STATIC_CLASS_IMPL("PyWidget_MiniKey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MiniKey")
 	}
 	static class UPyWidget_MiniKey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MiniKey>();
 	}
 };
-static_assert(alignof(UPyWidget_MiniKey) == 0x000008, "Wrong alignment on UPyWidget_MiniKey");
-static_assert(sizeof(UPyWidget_MiniKey) == 0x0005C0, "Wrong size on UPyWidget_MiniKey");
-
-// PythonClass PyWidget_SettingMiniKeyboard.PyWidget_MiniHostPanel
-// 0x0018 (0x05D8 - 0x05C0)
-class UPyWidget_MiniHostPanel : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   UltimateAbilityName;                               // 0x05C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_MiniHostPanel">();
-	}
-	static class UPyWidget_MiniHostPanel* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_MiniHostPanel>();
-	}
-};
-static_assert(alignof(UPyWidget_MiniHostPanel) == 0x000008, "Wrong alignment on UPyWidget_MiniHostPanel");
-static_assert(sizeof(UPyWidget_MiniHostPanel) == 0x0005D8, "Wrong size on UPyWidget_MiniHostPanel");
-static_assert(offsetof(UPyWidget_MiniHostPanel, UltimateAbilityName) == 0x0005C0, "Member 'UPyWidget_MiniHostPanel::UltimateAbilityName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MiniKey;
 
 }
 

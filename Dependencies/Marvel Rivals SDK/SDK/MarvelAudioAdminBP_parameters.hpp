@@ -52,33 +52,7 @@ public:
 	class UWC_AudioEmitterBP_C*                   K2Node_DynamicCast_AsWC_Audio_Emitter_BP;          // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP) == 0x000008, "Wrong alignment on MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP");
-static_assert(sizeof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP) == 0x000128, "Wrong size on MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, EntryPoint) == 0x000000, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_Value_1) == 0x000008, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_Value) == 0x000009, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_AkComponent_1) == 0x000010, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_AkComponent_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_Event_1) == 0x000018, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_Event_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_EventName_1) == 0x000020, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_EventName_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CreateDelegate_OutputDelegate_1) == 0x000044, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_GetAudioGlobalSystem_ReturnValue) == 0x000070, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_GetAudioGlobalSystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_GetAudioGlobalSystem_ReturnValue_1) == 0x000078, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_GetAudioGlobalSystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_AkComponent) == 0x000080, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_AkComponent' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_Event) == 0x000088, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_Event' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CustomEvent_EventName) == 0x000090, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000A0, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, Temp_int_Loop_Counter_Variable) == 0x0000B4, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_Add_IntInt_ReturnValue) == 0x0000B8, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_Map_Values_Values) == 0x0000C0, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_Array_Get_Item) == 0x0000D0, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_Array_Length_ReturnValue) == 0x000100, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000108, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, CallFunc_Less_IntInt_ReturnValue) == 0x000110, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_DynamicCast_AsWC_Audio_Emitter_BP) == 0x000118, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_DynamicCast_AsWC_Audio_Emitter_BP' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_ExecuteUbergraph_MarvelAudioAdminBP;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.FindOrAddAudioInfoWidgetCom
 // 0x01A0 (0x01A0 - 0x0000)
@@ -109,25 +83,7 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0130(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom) == 0x000010, "Wrong alignment on MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom");
-static_assert(sizeof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom) == 0x0001A0, "Wrong size on MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, Target) == 0x000000, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::Target' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CustomRelativeTransform) == 0x000010, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CustomRelativeTransform' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, bCustomTf) == 0x000070, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::bCustomTf' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, ReturnValue) == 0x000078, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, TmpTF) == 0x000080, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::TmpTF' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_Not_PreBool_ReturnValue) == 0x0000E0, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_FindOrAddWidgetCom_ReturnValue) == 0x0000E8, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_FindOrAddWidgetCom_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_GetComponentByClass_ReturnValue) == 0x0000F8, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_BooleanAND_ReturnValue) == 0x000100, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_IsValid_ReturnValue_1) == 0x000101, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_GetScaledCapsuleHalfHeight_ReturnValue) == 0x000104, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_GetScaledCapsuleHalfHeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_BooleanAND_ReturnValue_1) == 0x000108, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000110, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_MakeVector_ReturnValue) == 0x000118, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_MakeTransform_ReturnValue) == 0x000130, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000190, "Member 'MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_FindOrAddAudioInfoWidgetCom;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.OnEventPosted_ShowEmitter
 // 0x0020 (0x0020 - 0x0000)
@@ -138,11 +94,7 @@ public:
 	class UAkAudioEvent*                          Event;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 EventName;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter) == 0x000008, "Wrong alignment on MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter");
-static_assert(sizeof(MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter) == 0x000020, "Wrong size on MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter, AkComponent) == 0x000000, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter::AkComponent' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter, Event) == 0x000008, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter::Event' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter, EventName) == 0x000010, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_OnEventPosted_ShowEmitter;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.OnEventPosted_ShowMontage
 // 0x0020 (0x0020 - 0x0000)
@@ -153,11 +105,7 @@ public:
 	class UAkAudioEvent*                          Event;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 EventName;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_OnEventPosted_ShowMontage) == 0x000008, "Wrong alignment on MarvelAudioAdminBP_C_OnEventPosted_ShowMontage");
-static_assert(sizeof(MarvelAudioAdminBP_C_OnEventPosted_ShowMontage) == 0x000020, "Wrong size on MarvelAudioAdminBP_C_OnEventPosted_ShowMontage");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowMontage, AkComponent) == 0x000000, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowMontage::AkComponent' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowMontage, Event) == 0x000008, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowMontage::Event' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnEventPosted_ShowMontage, EventName) == 0x000010, "Member 'MarvelAudioAdminBP_C_OnEventPosted_ShowMontage::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_OnEventPosted_ShowMontage;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.OnShowEmitterChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -166,9 +114,7 @@ struct MarvelAudioAdminBP_C_OnShowEmitterChanged final
 public:
 	bool                                          Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_OnShowEmitterChanged) == 0x000001, "Wrong alignment on MarvelAudioAdminBP_C_OnShowEmitterChanged");
-static_assert(sizeof(MarvelAudioAdminBP_C_OnShowEmitterChanged) == 0x000001, "Wrong size on MarvelAudioAdminBP_C_OnShowEmitterChanged");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnShowEmitterChanged, Value) == 0x000000, "Member 'MarvelAudioAdminBP_C_OnShowEmitterChanged::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_OnShowEmitterChanged;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.OnShowMontageChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -177,9 +123,7 @@ struct MarvelAudioAdminBP_C_OnShowMontageChanged final
 public:
 	bool                                          Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_OnShowMontageChanged) == 0x000001, "Wrong alignment on MarvelAudioAdminBP_C_OnShowMontageChanged");
-static_assert(sizeof(MarvelAudioAdminBP_C_OnShowMontageChanged) == 0x000001, "Wrong size on MarvelAudioAdminBP_C_OnShowMontageChanged");
-static_assert(offsetof(MarvelAudioAdminBP_C_OnShowMontageChanged, Value) == 0x000000, "Member 'MarvelAudioAdminBP_C_OnShowMontageChanged::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_OnShowMontageChanged;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.ShowAudioEmitter
 // 0x0168 (0x0168 - 0x0000)
@@ -217,32 +161,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_ShowAudioEmitter) == 0x000008, "Wrong alignment on MarvelAudioAdminBP_C_ShowAudioEmitter");
-static_assert(sizeof(MarvelAudioAdminBP_C_ShowAudioEmitter) == 0x000168, "Wrong size on MarvelAudioAdminBP_C_ShowAudioEmitter");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, AkComp) == 0x000000, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::AkComp' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, AkEvent) == 0x000008, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::AkEvent' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, EventName) == 0x000010, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::EventName' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, TmpWCEmitter) == 0x000020, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::TmpWCEmitter' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000038, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1) == 0x000068, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_GetOwner_ReturnValue) == 0x000098, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_AddComponentByClass_ReturnValue) == 0x0000A8, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_GetWidget_ReturnValue) == 0x0000B0, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_GetWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_AsWBP_Audio_Emitter) == 0x0000B8, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_AsWBP_Audio_Emitter' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2) == 0x0000C8, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000F8, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Map_Find_Value) == 0x000100, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Map_Find_ReturnValue) == 0x000130, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000138, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_AsWC_Audio_Emitter_BP) == 0x000140, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_AsWC_Audio_Emitter_BP' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_bSuccess_1) == 0x000148, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1) == 0x000150, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_AsWC_Audio_Emitter_BP_1) == 0x000158, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_AsWC_Audio_Emitter_BP_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, K2Node_DynamicCast_bSuccess_2) == 0x000160, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowAudioEmitter, CallFunc_IsValid_ReturnValue_1) == 0x000161, "Member 'MarvelAudioAdminBP_C_ShowAudioEmitter::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_ShowAudioEmitter;
 
 // Function MarvelAudioAdminBP.MarvelAudioAdminBP_C.ShowMontageName
 // 0x0130 (0x0130 - 0x0000)
@@ -273,27 +192,7 @@ public:
 	TSoftObjectPtr<class UWC_AnimEmitterBP_C>     CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2; // 0x00F8(0x0030)(InstancedReference, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAudioAdminBP_C_ShowMontageName) == 0x000008, "Wrong alignment on MarvelAudioAdminBP_C_ShowMontageName");
-static_assert(sizeof(MarvelAudioAdminBP_C_ShowMontageName) == 0x000130, "Wrong size on MarvelAudioAdminBP_C_ShowMontageName");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, AkComp) == 0x000000, "Member 'MarvelAudioAdminBP_C_ShowMontageName::AkComp' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000008, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_GetWidget_ReturnValue) == 0x000038, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_GetWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1) == 0x000040, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, K2Node_DynamicCast_AsWBP_Montage_Name) == 0x000070, "Member 'MarvelAudioAdminBP_C_ShowMontageName::K2Node_DynamicCast_AsWBP_Montage_Name' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'MarvelAudioAdminBP_C_ShowMontageName::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_GetOwner_ReturnValue) == 0x000080, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_AddComponentByClass_ReturnValue) == 0x000090, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_AddComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_GetCurrentMontageName_ReturnValue) == 0x000098, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_GetCurrentMontageName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Map_Find_Value) == 0x0000A8, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Map_Find_ReturnValue) == 0x0000D8, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000D9, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x0000E0, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, K2Node_DynamicCast_AsWC_Anim_Emitter_BP) == 0x0000E8, "Member 'MarvelAudioAdminBP_C_ShowMontageName::K2Node_DynamicCast_AsWC_Anim_Emitter_BP' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, K2Node_DynamicCast_bSuccess_1) == 0x0000F0, "Member 'MarvelAudioAdminBP_C_ShowMontageName::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_IsValid_ReturnValue_1) == 0x0000F1, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2) == 0x0000F8, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAudioAdminBP_C_ShowMontageName, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000128, "Member 'MarvelAudioAdminBP_C_ShowMontageName::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAudioAdminBP_C_ShowMontageName;
 
 }
 

@@ -21,9 +21,7 @@ struct PyLevelStatistics_OnRoundEnd final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelStatistics_OnRoundEnd) == 0x000004, "Wrong alignment on PyLevelStatistics_OnRoundEnd");
-static_assert(sizeof(PyLevelStatistics_OnRoundEnd) == 0x000004, "Wrong size on PyLevelStatistics_OnRoundEnd");
-static_assert(offsetof(PyLevelStatistics_OnRoundEnd, ReturnValue) == 0x000000, "Member 'PyLevelStatistics_OnRoundEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelStatistics_OnRoundEnd;
 
 }
 

@@ -17,29 +17,32 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_IconList.PyWidget_HeroSystem_Exclusive_Performance_Icon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_Icon final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Icon")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Icon) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Icon");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Icon) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Icon");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Icon;
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_IconList.PyWidget_HeroSystem_Exclusive_Performance_IconList
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_IconList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UMarvelUserWidget>          Icon_Widget;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UMarvelUserWidget>          Icon_Widget;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,16 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_IconList">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_IconList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_IconList")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_IconList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_IconList>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_IconList) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_IconList");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_IconList) == 0x0005C8, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_IconList");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_IconList, Icon_Widget) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_IconList::Icon_Widget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_IconList;
 
 }
 

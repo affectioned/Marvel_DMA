@@ -17,27 +17,31 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Costumes.PyWidget_HeroSystem_Costumes
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_HeroSystem_Costumes final : public UPyWidget_HeroSystem_Customize_Unit
 {
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
+	void OnCascadingVisibleChanged(bool bNewVisible);
 	void MarvelSetVisible(bool Visible);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Costumes">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Costumes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Costumes")
 	}
 	static class UPyWidget_HeroSystem_Costumes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Costumes>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Costumes) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Costumes");
-static_assert(sizeof(UPyWidget_HeroSystem_Costumes) == 0x000608, "Wrong size on UPyWidget_HeroSystem_Costumes");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Costumes;
 
 }
 

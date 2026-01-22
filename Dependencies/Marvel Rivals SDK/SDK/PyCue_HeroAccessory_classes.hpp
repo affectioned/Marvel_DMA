@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyCue_HeroAccessory.PyMarvelCueNotify_HeroAccessory
-// 0x0000 (0x0FC0 - 0x0FC0)
+// 0x0000 (0x0FD0 - 0x0FD0)
 class APyMarvelCueNotify_HeroAccessory : public AMarvelCueNotify_HeroAccessory
 {
 public:
@@ -29,38 +29,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelCueNotify_HeroAccessory">();
+		STATIC_CLASS_IMPL("PyMarvelCueNotify_HeroAccessory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelCueNotify_HeroAccessory")
 	}
 	static class APyMarvelCueNotify_HeroAccessory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelCueNotify_HeroAccessory>();
 	}
 };
-static_assert(alignof(APyMarvelCueNotify_HeroAccessory) == 0x000010, "Wrong alignment on APyMarvelCueNotify_HeroAccessory");
-static_assert(sizeof(APyMarvelCueNotify_HeroAccessory) == 0x000FC0, "Wrong size on APyMarvelCueNotify_HeroAccessory");
+DUMPER7_ASSERTS_APyMarvelCueNotify_HeroAccessory;
 
 // PythonClass PyCue_HeroAccessory.PyMarvelHeroAccessoryBattle
-// 0x0010 (0x0FD0 - 0x0FC0)
+// 0x0010 (0x0FE0 - 0x0FD0)
 class APyMarvelHeroAccessoryBattle final : public APyMarvelCueNotify_HeroAccessory
 {
 public:
-	class UHeroAccessoryRotatorComponent*         Rotator;                                           // 0x0FC0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 AccessorySkeletalMesh;                             // 0x0FC8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UHeroAccessoryRotatorComponent*         Rotator;                                           // 0x0FD0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 AccessorySkeletalMesh;                             // 0x0FD8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelHeroAccessoryBattle">();
+		STATIC_CLASS_IMPL("PyMarvelHeroAccessoryBattle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelHeroAccessoryBattle")
 	}
 	static class APyMarvelHeroAccessoryBattle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelHeroAccessoryBattle>();
 	}
 };
-static_assert(alignof(APyMarvelHeroAccessoryBattle) == 0x000010, "Wrong alignment on APyMarvelHeroAccessoryBattle");
-static_assert(sizeof(APyMarvelHeroAccessoryBattle) == 0x000FD0, "Wrong size on APyMarvelHeroAccessoryBattle");
-static_assert(offsetof(APyMarvelHeroAccessoryBattle, Rotator) == 0x000FC0, "Member 'APyMarvelHeroAccessoryBattle::Rotator' has a wrong offset!");
-static_assert(offsetof(APyMarvelHeroAccessoryBattle, AccessorySkeletalMesh) == 0x000FC8, "Member 'APyMarvelHeroAccessoryBattle::AccessorySkeletalMesh' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelHeroAccessoryBattle;
 
 // PythonClass PyCue_HeroAccessory.PyMarvelHeroAccessoryLobby
 // 0x0020 (0x0700 - 0x06E0)
@@ -80,32 +84,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelHeroAccessoryLobby">();
+		STATIC_CLASS_IMPL("PyMarvelHeroAccessoryLobby")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelHeroAccessoryLobby")
 	}
 	static class APyMarvelHeroAccessoryLobby* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelHeroAccessoryLobby>();
 	}
 };
-static_assert(alignof(APyMarvelHeroAccessoryLobby) == 0x000010, "Wrong alignment on APyMarvelHeroAccessoryLobby");
-static_assert(sizeof(APyMarvelHeroAccessoryLobby) == 0x000700, "Wrong size on APyMarvelHeroAccessoryLobby");
-static_assert(offsetof(APyMarvelHeroAccessoryLobby, RootScene) == 0x0006E0, "Member 'APyMarvelHeroAccessoryLobby::RootScene' has a wrong offset!");
-static_assert(offsetof(APyMarvelHeroAccessoryLobby, Rotator) == 0x0006E8, "Member 'APyMarvelHeroAccessoryLobby::Rotator' has a wrong offset!");
-static_assert(offsetof(APyMarvelHeroAccessoryLobby, AccessorySkeletalMesh) == 0x0006F0, "Member 'APyMarvelHeroAccessoryLobby::AccessorySkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APyMarvelHeroAccessoryLobby, bShowInSceneCapture) == 0x0006F8, "Member 'APyMarvelHeroAccessoryLobby::bShowInSceneCapture' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelHeroAccessoryLobby;
 
 // PythonClass PyCue_HeroAccessory.PyWidget_Accessory
-// 0x0030 (0x0598 - 0x0568)
+// 0x0030 (0x05A0 - 0x0570)
 class UPyWidget_Accessory final : public UMarvelUserWidget
 {
 public:
-	class UAkAudioEvent*                          DefaultSpineAnimAudio;                             // 0x0568(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DefaultSpineAnimAudioDelay;                        // 0x0570(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DefaultSpineAnimLoopExistTime;                     // 0x0574(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DefaultIntervalPlayTime;                           // 0x0578(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DefaultDelayPlayTime;                              // 0x057C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             SummonedKillInfoTable;                             // 0x0580(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnKillAnimExit;                                    // 0x0588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          DefaultSpineAnimAudio;                             // 0x0570(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DefaultSpineAnimAudioDelay;                        // 0x0578(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DefaultSpineAnimLoopExistTime;                     // 0x057C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DefaultIntervalPlayTime;                           // 0x0580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DefaultDelayPlayTime;                              // 0x0584(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             SummonedKillInfoTable;                             // 0x0588(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnKillAnimExit;                                    // 0x0590(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -116,22 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Accessory">();
+		STATIC_CLASS_IMPL("PyWidget_Accessory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Accessory")
 	}
 	static class UPyWidget_Accessory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Accessory>();
 	}
 };
-static_assert(alignof(UPyWidget_Accessory) == 0x000008, "Wrong alignment on UPyWidget_Accessory");
-static_assert(sizeof(UPyWidget_Accessory) == 0x000598, "Wrong size on UPyWidget_Accessory");
-static_assert(offsetof(UPyWidget_Accessory, DefaultSpineAnimAudio) == 0x000568, "Member 'UPyWidget_Accessory::DefaultSpineAnimAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, DefaultSpineAnimAudioDelay) == 0x000570, "Member 'UPyWidget_Accessory::DefaultSpineAnimAudioDelay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, DefaultSpineAnimLoopExistTime) == 0x000574, "Member 'UPyWidget_Accessory::DefaultSpineAnimLoopExistTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, DefaultIntervalPlayTime) == 0x000578, "Member 'UPyWidget_Accessory::DefaultIntervalPlayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, DefaultDelayPlayTime) == 0x00057C, "Member 'UPyWidget_Accessory::DefaultDelayPlayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, SummonedKillInfoTable) == 0x000580, "Member 'UPyWidget_Accessory::SummonedKillInfoTable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory, OnKillAnimExit) == 0x000588, "Member 'UPyWidget_Accessory::OnKillAnimExit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Accessory;
 
 }
 

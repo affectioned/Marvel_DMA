@@ -24,12 +24,7 @@ public:
 	class FText                                   StringTableText_14_DA6DDED446D13548436CB79CE4013DCA; // 0x0020(0x0018)(Edit, BlueprintVisible)
 	TSoftObjectPtr<class UTexture2D>              Icon_13_DE11725F4247DAAFA4A2A8A7E5157AB4;          // 0x0038(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FFriendsRecommendTagTable) == 0x000008, "Wrong alignment on FFriendsRecommendTagTable");
-static_assert(sizeof(FFriendsRecommendTagTable) == 0x000068, "Wrong size on FFriendsRecommendTagTable");
-static_assert(offsetof(FFriendsRecommendTagTable, ID_10_3FF3305B46C04EBA73760793436D0D81) == 0x000000, "Member 'FFriendsRecommendTagTable::ID_10_3FF3305B46C04EBA73760793436D0D81' has a wrong offset!");
-static_assert(offsetof(FFriendsRecommendTagTable, Desc_9_7ABA0D194D03E797D38F4D8DE91FEF41) == 0x000010, "Member 'FFriendsRecommendTagTable::Desc_9_7ABA0D194D03E797D38F4D8DE91FEF41' has a wrong offset!");
-static_assert(offsetof(FFriendsRecommendTagTable, StringTableText_14_DA6DDED446D13548436CB79CE4013DCA) == 0x000020, "Member 'FFriendsRecommendTagTable::StringTableText_14_DA6DDED446D13548436CB79CE4013DCA' has a wrong offset!");
-static_assert(offsetof(FFriendsRecommendTagTable, Icon_13_DE11725F4247DAAFA4A2A8A7E5157AB4) == 0x000038, "Member 'FFriendsRecommendTagTable::Icon_13_DE11725F4247DAAFA4A2A8A7E5157AB4' has a wrong offset!");
+DUMPER7_ASSERTS_FFriendsRecommendTagTable;
 
 }
 

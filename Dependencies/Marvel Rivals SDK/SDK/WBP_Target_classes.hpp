@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Target.WBP_Target_C
-// 0x00A0 (0x0940 - 0x08A0)
+// 0x00B0 (0x0950 - 0x08A0)
 class UWBP_Target_C final : public UPyWidget_AbilityTarget
 {
 public:
@@ -34,10 +34,12 @@ public:
 	class UWBP_Common_KeyWidget_C*                Key_Primary_1;                                     // 0x08E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Common_KeyWidget_C*                Key_Primary_3;                                     // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_AbilityHUDCom_ActionTipLeft_C*     LeftTip;                                           // 0x08F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_AbilityHUDCom_ActionTipRight_C*    RightTip;                                          // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USpacer*                                Spacer_TipCenter;                                  // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   In_Text;                                           // 0x0908(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   In_Text_0;                                         // 0x0920(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UMarvelOverlay*                         Overlay_Arrow_Vx;                                  // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_TargetLock;                                // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_AbilityHUDCom_ActionTipRight_C*    RightTip;                                          // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                Spacer_TipCenter;                                  // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   In_Text;                                           // 0x0918(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                   In_Text_0;                                         // 0x0930(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_Target(int32 EntryPoint);
@@ -45,31 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Target_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Target_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Target_C")
 	}
 	static class UWBP_Target_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Target_C>();
 	}
 };
-static_assert(alignof(UWBP_Target_C) == 0x000010, "Wrong alignment on UWBP_Target_C");
-static_assert(sizeof(UWBP_Target_C) == 0x000940, "Wrong size on UWBP_Target_C");
-static_assert(offsetof(UWBP_Target_C, UberGraphFrame) == 0x000898, "Member 'UWBP_Target_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Arrow_LD) == 0x0008A0, "Member 'UWBP_Target_C::Arrow_LD' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Arrow_LU) == 0x0008A8, "Member 'UWBP_Target_C::Arrow_LU' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Arrow_RD) == 0x0008B0, "Member 'UWBP_Target_C::Arrow_RD' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Arrow_RU) == 0x0008B8, "Member 'UWBP_Target_C::Arrow_RU' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Img_LD_Vx) == 0x0008C0, "Member 'UWBP_Target_C::Img_LD_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Img_LU_Vx) == 0x0008C8, "Member 'UWBP_Target_C::Img_LU_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Img_RD_Vx) == 0x0008D0, "Member 'UWBP_Target_C::Img_RD_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Img_RU_Vx) == 0x0008D8, "Member 'UWBP_Target_C::Img_RU_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Key_Primary_1) == 0x0008E0, "Member 'UWBP_Target_C::Key_Primary_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Key_Primary_3) == 0x0008E8, "Member 'UWBP_Target_C::Key_Primary_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, LeftTip) == 0x0008F0, "Member 'UWBP_Target_C::LeftTip' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, RightTip) == 0x0008F8, "Member 'UWBP_Target_C::RightTip' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, Spacer_TipCenter) == 0x000900, "Member 'UWBP_Target_C::Spacer_TipCenter' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, In_Text) == 0x000908, "Member 'UWBP_Target_C::In_Text' has a wrong offset!");
-static_assert(offsetof(UWBP_Target_C, In_Text_0) == 0x000920, "Member 'UWBP_Target_C::In_Text_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Target_C;
 
 }
 

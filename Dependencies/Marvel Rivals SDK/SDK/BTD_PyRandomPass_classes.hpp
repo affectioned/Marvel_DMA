@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyRandomPass">();
+		STATIC_CLASS_IMPL("BTD_PyRandomPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyRandomPass")
 	}
 	static class UBTD_PyRandomPass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyRandomPass>();
 	}
 };
-static_assert(alignof(UBTD_PyRandomPass) == 0x000008, "Wrong alignment on UBTD_PyRandomPass");
-static_assert(sizeof(UBTD_PyRandomPass) == 0x0000C0, "Wrong size on UBTD_PyRandomPass");
-static_assert(offsetof(UBTD_PyRandomPass, PassRate) == 0x0000B8, "Member 'UBTD_PyRandomPass::PassRate' has a wrong offset!");
-static_assert(offsetof(UBTD_PyRandomPass, CooldownTime) == 0x0000BC, "Member 'UBTD_PyRandomPass::CooldownTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyRandomPass;
 
 }
 

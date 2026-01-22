@@ -22,10 +22,7 @@ public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         WaveIndex;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged) == 0x000004, "Wrong alignment on PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged");
-static_assert(sizeof(PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged) == 0x000008, "Wrong size on PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged");
-static_assert(offsetof(PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged, NewState) == 0x000000, "Member 'PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged::NewState' has a wrong offset!");
-static_assert(offsetof(PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged, WaveIndex) == 0x000004, "Member 'PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged::WaveIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenProcessController_Nightmare_OnHalloweenStateChanged;
 
 // PythonFunction PyHalloweenProcessController_Nightmare.PyHalloweenProcessController_Nightmare.OnAllPlayerRally
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +32,7 @@ public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PrepareTime;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenProcessController_Nightmare_OnAllPlayerRally) == 0x000004, "Wrong alignment on PyHalloweenProcessController_Nightmare_OnAllPlayerRally");
-static_assert(sizeof(PyHalloweenProcessController_Nightmare_OnAllPlayerRally) == 0x000008, "Wrong size on PyHalloweenProcessController_Nightmare_OnAllPlayerRally");
-static_assert(offsetof(PyHalloweenProcessController_Nightmare_OnAllPlayerRally, Index_0) == 0x000000, "Member 'PyHalloweenProcessController_Nightmare_OnAllPlayerRally::Index_0' has a wrong offset!");
-static_assert(offsetof(PyHalloweenProcessController_Nightmare_OnAllPlayerRally, PrepareTime) == 0x000004, "Member 'PyHalloweenProcessController_Nightmare_OnAllPlayerRally::PrepareTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenProcessController_Nightmare_OnAllPlayerRally;
 
 }
 

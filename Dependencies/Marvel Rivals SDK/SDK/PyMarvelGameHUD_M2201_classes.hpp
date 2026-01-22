@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelGameHUD_M2201">();
+		STATIC_CLASS_IMPL("PyMarvelGameHUD_M2201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelGameHUD_M2201")
 	}
 	static class APyMarvelGameHUD_M2201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelGameHUD_M2201>();
 	}
 };
-static_assert(alignof(APyMarvelGameHUD_M2201) == 0x000010, "Wrong alignment on APyMarvelGameHUD_M2201");
-static_assert(sizeof(APyMarvelGameHUD_M2201) == 0x000950, "Wrong size on APyMarvelGameHUD_M2201");
+DUMPER7_ASSERTS_APyMarvelGameHUD_M2201;
 
 }
 

@@ -39,21 +39,14 @@ public:
 	struct FMovieSceneFloatChannel                GravityScaleKeys;                                  // 0x0430(0x0110)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_540[0x8];                                      // 0x0540(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCablePropertyTemplate) == 0x000008, "Wrong alignment on FMovieSceneCablePropertyTemplate");
-static_assert(sizeof(FMovieSceneCablePropertyTemplate) == 0x000548, "Wrong size on FMovieSceneCablePropertyTemplate");
-static_assert(offsetof(FMovieSceneCablePropertyTemplate, AttachStartKeys) == 0x000020, "Member 'FMovieSceneCablePropertyTemplate::AttachStartKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCablePropertyTemplate, AttachEndKeys) == 0x000120, "Member 'FMovieSceneCablePropertyTemplate::AttachEndKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCablePropertyTemplate, CableLengthKeys) == 0x000220, "Member 'FMovieSceneCablePropertyTemplate::CableLengthKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCablePropertyTemplate, NumSegmentsKeys) == 0x000330, "Member 'FMovieSceneCablePropertyTemplate::NumSegmentsKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCablePropertyTemplate, GravityScaleKeys) == 0x000430, "Member 'FMovieSceneCablePropertyTemplate::GravityScaleKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneCablePropertyTemplate;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneDecalChannel
 // 0x0000 (0x0108 - 0x0108)
 struct FMovieSceneDecalChannel final : public FMovieSceneByteChannel
 {
 };
-static_assert(alignof(FMovieSceneDecalChannel) == 0x000008, "Wrong alignment on FMovieSceneDecalChannel");
-static_assert(sizeof(FMovieSceneDecalChannel) == 0x000108, "Wrong size on FMovieSceneDecalChannel");
+DUMPER7_ASSERTS_FMovieSceneDecalChannel;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneDecalFadeSectionTemplate
 // 0x0898 (0x08B8 - 0x0020)
@@ -68,14 +61,7 @@ public:
 	struct FMovieSceneDoubleChannel               DecalSize[0x3];                                    // 0x0568(0x0118)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_8B0[0x8];                                      // 0x08B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneDecalFadeSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneDecalFadeSectionTemplate");
-static_assert(sizeof(FMovieSceneDecalFadeSectionTemplate) == 0x0008B8, "Wrong size on FMovieSceneDecalFadeSectionTemplate");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, DecalKeys) == 0x000020, "Member 'FMovieSceneDecalFadeSectionTemplate::DecalKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, FadeInStartDelayKeys) == 0x000128, "Member 'FMovieSceneDecalFadeSectionTemplate::FadeInStartDelayKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, FadeInDurationKeys) == 0x000238, "Member 'FMovieSceneDecalFadeSectionTemplate::FadeInDurationKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, FadeStartDelayKeys) == 0x000348, "Member 'FMovieSceneDecalFadeSectionTemplate::FadeStartDelayKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, FadeDurationKeys) == 0x000458, "Member 'FMovieSceneDecalFadeSectionTemplate::FadeDurationKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDecalFadeSectionTemplate, DecalSize) == 0x000568, "Member 'FMovieSceneDecalFadeSectionTemplate::DecalSize' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneDecalFadeSectionTemplate;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneOverlayMaterialTemplate
 // 0x0118 (0x0138 - 0x0020)
@@ -85,9 +71,7 @@ public:
 	struct FMovieSceneStringChannel               WorkOnlyArrayNamesKeys;                            // 0x0020(0x0110)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneOverlayMaterialTemplate) == 0x000008, "Wrong alignment on FMovieSceneOverlayMaterialTemplate");
-static_assert(sizeof(FMovieSceneOverlayMaterialTemplate) == 0x000138, "Wrong size on FMovieSceneOverlayMaterialTemplate");
-static_assert(offsetof(FMovieSceneOverlayMaterialTemplate, WorkOnlyArrayNamesKeys) == 0x000020, "Member 'FMovieSceneOverlayMaterialTemplate::WorkOnlyArrayNamesKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneOverlayMaterialTemplate;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneSkinnedMeshTemplate
 // 0x0518 (0x0538 - 0x0020)
@@ -101,13 +85,7 @@ public:
 	struct FMovieSceneStringChannel               HiddenBoneNamesKeys;                               // 0x0420(0x0110)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_530[0x8];                                      // 0x0530(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneSkinnedMeshTemplate) == 0x000008, "Wrong alignment on FMovieSceneSkinnedMeshTemplate");
-static_assert(sizeof(FMovieSceneSkinnedMeshTemplate) == 0x000538, "Wrong size on FMovieSceneSkinnedMeshTemplate");
-static_assert(offsetof(FMovieSceneSkinnedMeshTemplate, SectionShownKeys) == 0x000020, "Member 'FMovieSceneSkinnedMeshTemplate::SectionShownKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneSkinnedMeshTemplate, LODIndexKeys) == 0x000120, "Member 'FMovieSceneSkinnedMeshTemplate::LODIndexKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneSkinnedMeshTemplate, DisableMorphTargetKeys) == 0x000220, "Member 'FMovieSceneSkinnedMeshTemplate::DisableMorphTargetKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneSkinnedMeshTemplate, DisablePostProcessBlueprintKeys) == 0x000320, "Member 'FMovieSceneSkinnedMeshTemplate::DisablePostProcessBlueprintKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneSkinnedMeshTemplate, HiddenBoneNamesKeys) == 0x000420, "Member 'FMovieSceneSkinnedMeshTemplate::HiddenBoneNamesKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneSkinnedMeshTemplate;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneSpringArmSectionTemplate
 // 0x0698 (0x06B8 - 0x0020)
@@ -118,10 +96,7 @@ public:
 	struct FMovieSceneDoubleChannel               RelativeRotation[0x3];                             // 0x0368(0x0118)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_6B0[0x8];                                      // 0x06B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneSpringArmSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSpringArmSectionTemplate");
-static_assert(sizeof(FMovieSceneSpringArmSectionTemplate) == 0x0006B8, "Wrong size on FMovieSceneSpringArmSectionTemplate");
-static_assert(offsetof(FMovieSceneSpringArmSectionTemplate, RelativeLocation) == 0x000020, "Member 'FMovieSceneSpringArmSectionTemplate::RelativeLocation' has a wrong offset!");
-static_assert(offsetof(FMovieSceneSpringArmSectionTemplate, RelativeRotation) == 0x000368, "Member 'FMovieSceneSpringArmSectionTemplate::RelativeRotation' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneSpringArmSectionTemplate;
 
 // ScriptStruct CustomMovieSceneTracks.MovieSceneTAAEnableTemplate
 // 0x0100 (0x0120 - 0x0020)
@@ -130,9 +105,7 @@ struct FMovieSceneTAAEnableTemplate final : public FMovieSceneEvalTemplate
 public:
 	struct FMovieSceneBoolChannel                 BoolChannel;                                       // 0x0020(0x0100)(NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneTAAEnableTemplate) == 0x000008, "Wrong alignment on FMovieSceneTAAEnableTemplate");
-static_assert(sizeof(FMovieSceneTAAEnableTemplate) == 0x000120, "Wrong size on FMovieSceneTAAEnableTemplate");
-static_assert(offsetof(FMovieSceneTAAEnableTemplate, BoolChannel) == 0x000020, "Member 'FMovieSceneTAAEnableTemplate::BoolChannel' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneTAAEnableTemplate;
 
 }
 

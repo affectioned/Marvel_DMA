@@ -23,15 +23,18 @@ class UBTS_OverrideAIHeroConfig_BP_C final : public UBTS_PyOverrideAIHeroConfig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_OverrideAIHeroConfig_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_OverrideAIHeroConfig_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_OverrideAIHeroConfig_BP_C")
 	}
 	static class UBTS_OverrideAIHeroConfig_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_OverrideAIHeroConfig_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_OverrideAIHeroConfig_BP_C) == 0x000008, "Wrong alignment on UBTS_OverrideAIHeroConfig_BP_C");
-static_assert(sizeof(UBTS_OverrideAIHeroConfig_BP_C) == 0x0000F8, "Wrong size on UBTS_OverrideAIHeroConfig_BP_C");
+DUMPER7_ASSERTS_UBTS_OverrideAIHeroConfig_BP_C;
 
 }
 

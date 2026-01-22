@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MovieRenderPipelineCore_classes.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "MovieRenderPipelineCore_classes.hpp"
 #include "MovieRenderPipelineSettings_structs.hpp"
 
 
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineBurnInWidget">();
+		STATIC_CLASS_IMPL("MoviePipelineBurnInWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBurnInWidget")
 	}
 	static class UMoviePipelineBurnInWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineBurnInWidget>();
 	}
 };
-static_assert(alignof(UMoviePipelineBurnInWidget) == 0x000008, "Wrong alignment on UMoviePipelineBurnInWidget");
-static_assert(sizeof(UMoviePipelineBurnInWidget) == 0x0003B8, "Wrong size on UMoviePipelineBurnInWidget");
+DUMPER7_ASSERTS_UMoviePipelineBurnInWidget;
 
 // Class MovieRenderPipelineSettings.MoviePipelineBurnInSetting
 // 0x0070 (0x00C0 - 0x0050)
@@ -53,19 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineBurnInSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineBurnInSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBurnInSetting")
 	}
 	static class UMoviePipelineBurnInSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineBurnInSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineBurnInSetting) == 0x000008, "Wrong alignment on UMoviePipelineBurnInSetting");
-static_assert(sizeof(UMoviePipelineBurnInSetting) == 0x0000C0, "Wrong size on UMoviePipelineBurnInSetting");
-static_assert(offsetof(UMoviePipelineBurnInSetting, BurnInClass) == 0x000050, "Member 'UMoviePipelineBurnInSetting::BurnInClass' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, bCompositeOntoFinalImage) == 0x000078, "Member 'UMoviePipelineBurnInSetting::bCompositeOntoFinalImage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, RenderTarget) == 0x0000A8, "Member 'UMoviePipelineBurnInSetting::RenderTarget' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineBurnInSetting, BurnInWidgetInstances) == 0x0000B0, "Member 'UMoviePipelineBurnInSetting::BurnInWidgetInstances' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineBurnInSetting;
 
 // Class MovieRenderPipelineSettings.MoviePipelineConsoleVariableSetting
 // 0x00B0 (0x0100 - 0x0050)
@@ -90,20 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineConsoleVariableSetting">();
+		STATIC_CLASS_IMPL("MoviePipelineConsoleVariableSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineConsoleVariableSetting")
 	}
 	static class UMoviePipelineConsoleVariableSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineConsoleVariableSetting>();
 	}
 };
-static_assert(alignof(UMoviePipelineConsoleVariableSetting) == 0x000008, "Wrong alignment on UMoviePipelineConsoleVariableSetting");
-static_assert(sizeof(UMoviePipelineConsoleVariableSetting) == 0x000100, "Wrong size on UMoviePipelineConsoleVariableSetting");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, ConsoleVariablePresets) == 0x000050, "Member 'UMoviePipelineConsoleVariableSetting::ConsoleVariablePresets' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, ConsoleVariables) == 0x000060, "Member 'UMoviePipelineConsoleVariableSetting::ConsoleVariables' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, StartConsoleCommands) == 0x0000B0, "Member 'UMoviePipelineConsoleVariableSetting::StartConsoleCommands' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, EndConsoleCommands) == 0x0000C0, "Member 'UMoviePipelineConsoleVariableSetting::EndConsoleCommands' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineConsoleVariableSetting, CVars) == 0x0000D0, "Member 'UMoviePipelineConsoleVariableSetting::CVars' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineConsoleVariableSetting;
 
 // Class MovieRenderPipelineSettings.MoviePipelineWidgetRenderer
 // 0x0020 (0x0070 - 0x0050)
@@ -118,18 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineWidgetRenderer">();
+		STATIC_CLASS_IMPL("MoviePipelineWidgetRenderer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineWidgetRenderer")
 	}
 	static class UMoviePipelineWidgetRenderer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineWidgetRenderer>();
 	}
 };
-static_assert(alignof(UMoviePipelineWidgetRenderer) == 0x000008, "Wrong alignment on UMoviePipelineWidgetRenderer");
-static_assert(sizeof(UMoviePipelineWidgetRenderer) == 0x000070, "Wrong size on UMoviePipelineWidgetRenderer");
-static_assert(offsetof(UMoviePipelineWidgetRenderer, bCompositeOntoFinalImage) == 0x000050, "Member 'UMoviePipelineWidgetRenderer::bCompositeOntoFinalImage' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineWidgetRenderer, bForceUseViwportFormat) == 0x000051, "Member 'UMoviePipelineWidgetRenderer::bForceUseViwportFormat' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineWidgetRenderer, RenderTarget) == 0x000068, "Member 'UMoviePipelineWidgetRenderer::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineWidgetRenderer;
 
 }
 

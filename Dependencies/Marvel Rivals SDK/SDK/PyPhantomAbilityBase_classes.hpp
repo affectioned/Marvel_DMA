@@ -28,21 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhantomAbilityConfig">();
+		STATIC_CLASS_IMPL("PyPhantomAbilityConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhantomAbilityConfig")
 	}
 	static class UPyPhantomAbilityConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPhantomAbilityConfig>();
 	}
 };
-static_assert(alignof(UPyPhantomAbilityConfig) == 0x000008, "Wrong alignment on UPyPhantomAbilityConfig");
-static_assert(sizeof(UPyPhantomAbilityConfig) == 0x0000A8, "Wrong size on UPyPhantomAbilityConfig");
-static_assert(offsetof(UPyPhantomAbilityConfig, StealthBuffID) == 0x000098, "Member 'UPyPhantomAbilityConfig::StealthBuffID' has a wrong offset!");
-static_assert(offsetof(UPyPhantomAbilityConfig, PhantomSummonedID) == 0x00009C, "Member 'UPyPhantomAbilityConfig::PhantomSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyPhantomAbilityConfig, PhantomDamageDecreaseBuffID) == 0x0000A0, "Member 'UPyPhantomAbilityConfig::PhantomDamageDecreaseBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPhantomAbilityConfig;
 
 // PythonClass PyPhantomAbilityBase.PyPhantomAbilityBase
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyPhantomAbilityBase : public UMarvelGameplayAbility
 {
 public:
@@ -57,18 +57,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhantomAbilityBase">();
+		STATIC_CLASS_IMPL("PyPhantomAbilityBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhantomAbilityBase")
 	}
 	static class UPyPhantomAbilityBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPhantomAbilityBase>();
 	}
 };
-static_assert(alignof(UPyPhantomAbilityBase) == 0x000008, "Wrong alignment on UPyPhantomAbilityBase");
-static_assert(sizeof(UPyPhantomAbilityBase) == 0x0029F0, "Wrong size on UPyPhantomAbilityBase");
+DUMPER7_ASSERTS_UPyPhantomAbilityBase;
 
 // PythonClass PyPhantomAbilityBase.PyCue_Buff_PhantomStealthBuff
-// 0x0000 (0x1830 - 0x1830)
+// 0x0000 (0x18E0 - 0x18E0)
 class APyCue_Buff_PhantomStealthBuff final : public ACueNotify_Stealth
 {
 public:
@@ -78,22 +81,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_PhantomStealthBuff">();
+		STATIC_CLASS_IMPL("PyCue_Buff_PhantomStealthBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_PhantomStealthBuff")
 	}
 	static class APyCue_Buff_PhantomStealthBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_PhantomStealthBuff>();
 	}
 };
-static_assert(alignof(APyCue_Buff_PhantomStealthBuff) == 0x000010, "Wrong alignment on APyCue_Buff_PhantomStealthBuff");
-static_assert(sizeof(APyCue_Buff_PhantomStealthBuff) == 0x001830, "Wrong size on APyCue_Buff_PhantomStealthBuff");
+DUMPER7_ASSERTS_APyCue_Buff_PhantomStealthBuff;
 
 // PythonClass PyPhantomAbilityBase.PyCue_Ability_PhantomShell
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_PhantomShell final : public AMarvelCueNotify_Ability
 {
 public:
-	class UNiagaraSystem*                         RemovedFX;                                         // 0x11B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         RemovedFX;                                         // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -102,16 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_PhantomShell">();
+		STATIC_CLASS_IMPL("PyCue_Ability_PhantomShell")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_PhantomShell")
 	}
 	static class APyCue_Ability_PhantomShell* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_PhantomShell>();
 	}
 };
-static_assert(alignof(APyCue_Ability_PhantomShell) == 0x000010, "Wrong alignment on APyCue_Ability_PhantomShell");
-static_assert(sizeof(APyCue_Ability_PhantomShell) == 0x0011C0, "Wrong size on APyCue_Ability_PhantomShell");
-static_assert(offsetof(APyCue_Ability_PhantomShell, RemovedFX) == 0x0011B0, "Member 'APyCue_Ability_PhantomShell::RemovedFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_PhantomShell;
 
 }
 

@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   EffectName_0;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_BuffButton_C_SetBtnData) == 0x000008, "Wrong alignment on WBP_BuffButton_C_SetBtnData");
-static_assert(sizeof(WBP_BuffButton_C_SetBtnData) == 0x000020, "Wrong size on WBP_BuffButton_C_SetBtnData");
-static_assert(offsetof(WBP_BuffButton_C_SetBtnData, EffectID_0) == 0x000000, "Member 'WBP_BuffButton_C_SetBtnData::EffectID_0' has a wrong offset!");
-static_assert(offsetof(WBP_BuffButton_C_SetBtnData, EffectName_0) == 0x000008, "Member 'WBP_BuffButton_C_SetBtnData::EffectName_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BuffButton_C_SetBtnData;
 
 // Function WBP_BuffButton.WBP_BuffButton_C.ExecuteUbergraph_WBP_BuffButton
 // 0x0020 (0x0020 - 0x0000)
@@ -37,11 +34,7 @@ public:
 	int32                                         K2Node_CustomEvent_EffectID;                       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_CustomEvent_EffectName;                     // 0x0008(0x0018)()
 };
-static_assert(alignof(WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton) == 0x000008, "Wrong alignment on WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton");
-static_assert(sizeof(WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton) == 0x000020, "Wrong size on WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton");
-static_assert(offsetof(WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton, EntryPoint) == 0x000000, "Member 'WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton, K2Node_CustomEvent_EffectID) == 0x000004, "Member 'WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton::K2Node_CustomEvent_EffectID' has a wrong offset!");
-static_assert(offsetof(WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton, K2Node_CustomEvent_EffectName) == 0x000008, "Member 'WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton::K2Node_CustomEvent_EffectName' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_BuffButton_C_ExecuteUbergraph_WBP_BuffButton;
 
 }
 

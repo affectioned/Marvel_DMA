@@ -26,15 +26,18 @@ class UComputeDataInterface : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeDataInterface">();
+		STATIC_CLASS_IMPL("ComputeDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeDataInterface")
 	}
 	static class UComputeDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeDataInterface>();
 	}
 };
-static_assert(alignof(UComputeDataInterface) == 0x000008, "Wrong alignment on UComputeDataInterface");
-static_assert(sizeof(UComputeDataInterface) == 0x000030, "Wrong size on UComputeDataInterface");
+DUMPER7_ASSERTS_UComputeDataInterface;
 
 // Class ComputeFramework.ComputeDataProvider
 // 0x0000 (0x0030 - 0x0030)
@@ -43,15 +46,18 @@ class UComputeDataProvider : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeDataProvider">();
+		STATIC_CLASS_IMPL("ComputeDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeDataProvider")
 	}
 	static class UComputeDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeDataProvider>();
 	}
 };
-static_assert(alignof(UComputeDataProvider) == 0x000008, "Wrong alignment on UComputeDataProvider");
-static_assert(sizeof(UComputeDataProvider) == 0x000030, "Wrong size on UComputeDataProvider");
+DUMPER7_ASSERTS_UComputeDataProvider;
 
 // Class ComputeFramework.ComputeKernelSource
 // 0x0070 (0x00A0 - 0x0030)
@@ -70,22 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeKernelSource">();
+		STATIC_CLASS_IMPL("ComputeKernelSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeKernelSource")
 	}
 	static class UComputeKernelSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeKernelSource>();
 	}
 };
-static_assert(alignof(UComputeKernelSource) == 0x000008, "Wrong alignment on UComputeKernelSource");
-static_assert(sizeof(UComputeKernelSource) == 0x0000A0, "Wrong size on UComputeKernelSource");
-static_assert(offsetof(UComputeKernelSource, EntryPoint) == 0x000030, "Member 'UComputeKernelSource::EntryPoint' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, GroupSize) == 0x000040, "Member 'UComputeKernelSource::GroupSize' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, PermutationSet) == 0x000050, "Member 'UComputeKernelSource::PermutationSet' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, DefinitionsSet) == 0x000060, "Member 'UComputeKernelSource::DefinitionsSet' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, AdditionalSources) == 0x000070, "Member 'UComputeKernelSource::AdditionalSources' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, ExternalInputs) == 0x000080, "Member 'UComputeKernelSource::ExternalInputs' has a wrong offset!");
-static_assert(offsetof(UComputeKernelSource, ExternalOutputs) == 0x000090, "Member 'UComputeKernelSource::ExternalOutputs' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeKernelSource;
 
 // Class ComputeFramework.ComputeSource
 // 0x0010 (0x0040 - 0x0030)
@@ -97,16 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeSource">();
+		STATIC_CLASS_IMPL("ComputeSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeSource")
 	}
 	static class UComputeSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeSource>();
 	}
 };
-static_assert(alignof(UComputeSource) == 0x000008, "Wrong alignment on UComputeSource");
-static_assert(sizeof(UComputeSource) == 0x000040, "Wrong size on UComputeSource");
-static_assert(offsetof(UComputeSource, AdditionalSources) == 0x000030, "Member 'UComputeSource::AdditionalSources' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeSource;
 
 // Class ComputeFramework.ComputeGraph
 // 0x0068 (0x0098 - 0x0030)
@@ -123,20 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeGraph">();
+		STATIC_CLASS_IMPL("ComputeGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeGraph")
 	}
 	static class UComputeGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeGraph>();
 	}
 };
-static_assert(alignof(UComputeGraph) == 0x000008, "Wrong alignment on UComputeGraph");
-static_assert(sizeof(UComputeGraph) == 0x000098, "Wrong size on UComputeGraph");
-static_assert(offsetof(UComputeGraph, KernelInvocations) == 0x000030, "Member 'UComputeGraph::KernelInvocations' has a wrong offset!");
-static_assert(offsetof(UComputeGraph, DataInterfaces) == 0x000040, "Member 'UComputeGraph::DataInterfaces' has a wrong offset!");
-static_assert(offsetof(UComputeGraph, GraphEdges) == 0x000050, "Member 'UComputeGraph::GraphEdges' has a wrong offset!");
-static_assert(offsetof(UComputeGraph, Bindings) == 0x000060, "Member 'UComputeGraph::Bindings' has a wrong offset!");
-static_assert(offsetof(UComputeGraph, DataInterfaceToBinding) == 0x000070, "Member 'UComputeGraph::DataInterfaceToBinding' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeGraph;
 
 // Class ComputeFramework.ComputeGraphComponent
 // 0x0020 (0x0128 - 0x0108)
@@ -154,17 +156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeGraphComponent">();
+		STATIC_CLASS_IMPL("ComputeGraphComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeGraphComponent")
 	}
 	static class UComputeGraphComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeGraphComponent>();
 	}
 };
-static_assert(alignof(UComputeGraphComponent) == 0x000008, "Wrong alignment on UComputeGraphComponent");
-static_assert(sizeof(UComputeGraphComponent) == 0x000128, "Wrong size on UComputeGraphComponent");
-static_assert(offsetof(UComputeGraphComponent, ComputeGraph) == 0x000108, "Member 'UComputeGraphComponent::ComputeGraph' has a wrong offset!");
-static_assert(offsetof(UComputeGraphComponent, ComputeGraphInstance) == 0x000110, "Member 'UComputeGraphComponent::ComputeGraphInstance' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeGraphComponent;
 
 // Class ComputeFramework.ComputeKernel
 // 0x0010 (0x0040 - 0x0030)
@@ -178,17 +181,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeKernel">();
+		STATIC_CLASS_IMPL("ComputeKernel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeKernel")
 	}
 	static class UComputeKernel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeKernel>();
 	}
 };
-static_assert(alignof(UComputeKernel) == 0x000008, "Wrong alignment on UComputeKernel");
-static_assert(sizeof(UComputeKernel) == 0x000040, "Wrong size on UComputeKernel");
-static_assert(offsetof(UComputeKernel, KernelSource) == 0x000030, "Member 'UComputeKernel::KernelSource' has a wrong offset!");
-static_assert(offsetof(UComputeKernel, KernelFlags) == 0x000038, "Member 'UComputeKernel::KernelFlags' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeKernel;
 
 // Class ComputeFramework.ComputeKernelFromText
 // 0x0010 (0x00B0 - 0x00A0)
@@ -200,16 +204,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeKernelFromText">();
+		STATIC_CLASS_IMPL("ComputeKernelFromText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeKernelFromText")
 	}
 	static class UComputeKernelFromText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeKernelFromText>();
 	}
 };
-static_assert(alignof(UComputeKernelFromText) == 0x000008, "Wrong alignment on UComputeKernelFromText");
-static_assert(sizeof(UComputeKernelFromText) == 0x0000B0, "Wrong size on UComputeKernelFromText");
-static_assert(offsetof(UComputeKernelFromText, SourceFile) == 0x0000A0, "Member 'UComputeKernelFromText::SourceFile' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeKernelFromText;
 
 // Class ComputeFramework.ComputeSourceFromText
 // 0x0010 (0x0050 - 0x0040)
@@ -221,16 +227,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ComputeSourceFromText">();
+		STATIC_CLASS_IMPL("ComputeSourceFromText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComputeSourceFromText")
 	}
 	static class UComputeSourceFromText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComputeSourceFromText>();
 	}
 };
-static_assert(alignof(UComputeSourceFromText) == 0x000008, "Wrong alignment on UComputeSourceFromText");
-static_assert(sizeof(UComputeSourceFromText) == 0x000050, "Wrong size on UComputeSourceFromText");
-static_assert(offsetof(UComputeSourceFromText, SourceFile) == 0x000040, "Member 'UComputeSourceFromText::SourceFile' has a wrong offset!");
+DUMPER7_ASSERTS_UComputeSourceFromText;
 
 }
 

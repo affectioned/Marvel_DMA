@@ -24,9 +24,7 @@ struct PyAbility_105651_OnListenAbilityActivate final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105651_OnListenAbilityActivate) == 0x000008, "Wrong alignment on PyAbility_105651_OnListenAbilityActivate");
-static_assert(sizeof(PyAbility_105651_OnListenAbilityActivate) == 0x000008, "Wrong size on PyAbility_105651_OnListenAbilityActivate");
-static_assert(offsetof(PyAbility_105651_OnListenAbilityActivate, Ability) == 0x000000, "Member 'PyAbility_105651_OnListenAbilityActivate::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105651_OnListenAbilityActivate;
 
 // PythonFunction PyAbility_105651.PyAbility_105651.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_105651_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105651_OnDashFinish) == 0x000001, "Wrong alignment on PyAbility_105651_OnDashFinish");
-static_assert(sizeof(PyAbility_105651_OnDashFinish) == 0x000001, "Wrong size on PyAbility_105651_OnDashFinish");
-static_assert(offsetof(PyAbility_105651_OnDashFinish, Reason) == 0x000000, "Member 'PyAbility_105651_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105651_OnDashFinish;
 
 // PythonFunction PyAbility_105651.PyAbility_105651.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_105651_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105651_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_105651_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_105651_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_105651_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_105651_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_105651_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105651_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_105651.PyAbility_105651.OnTraceScopeSpawned
 // 0x0170 (0x0170 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_105651_OnTraceScopeSpawned) == 0x000008, "Wrong alignment on PyAbility_105651_OnTraceScopeSpawned");
-static_assert(sizeof(PyAbility_105651_OnTraceScopeSpawned) == 0x000170, "Wrong size on PyAbility_105651_OnTraceScopeSpawned");
-static_assert(offsetof(PyAbility_105651_OnTraceScopeSpawned, SpawnActor) == 0x000000, "Member 'PyAbility_105651_OnTraceScopeSpawned::SpawnActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_105651_OnTraceScopeSpawned, Data) == 0x000008, "Member 'PyAbility_105651_OnTraceScopeSpawned::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105651_OnTraceScopeSpawned;
 
 // PythonFunction PyAbility_105651.PyAbility_105651.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +61,7 @@ struct PyAbility_105651_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105651_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105651_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105651_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105651_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105651_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105651_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105651_K2_OnEndAbility;
 
 }
 

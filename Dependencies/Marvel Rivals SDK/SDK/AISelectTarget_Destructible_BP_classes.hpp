@@ -23,15 +23,18 @@ class UAISelectTarget_Destructible_BP_C final : public UAISelectTargetLogic_Dest
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_Destructible_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_Destructible_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_Destructible_BP_C")
 	}
 	static class UAISelectTarget_Destructible_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_Destructible_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_Destructible_BP_C) == 0x000008, "Wrong alignment on UAISelectTarget_Destructible_BP_C");
-static_assert(sizeof(UAISelectTarget_Destructible_BP_C) == 0x000088, "Wrong size on UAISelectTarget_Destructible_BP_C");
+DUMPER7_ASSERTS_UAISelectTarget_Destructible_BP_C;
 
 }
 

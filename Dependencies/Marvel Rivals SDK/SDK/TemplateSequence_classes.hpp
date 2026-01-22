@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequence">();
+		STATIC_CLASS_IMPL("TemplateSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequence")
 	}
 	static class UTemplateSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequence>();
 	}
 };
-static_assert(alignof(UTemplateSequence) == 0x000008, "Wrong alignment on UTemplateSequence");
-static_assert(sizeof(UTemplateSequence) == 0x0000F8, "Wrong size on UTemplateSequence");
-static_assert(offsetof(UTemplateSequence, MovieScene) == 0x000070, "Member 'UTemplateSequence::MovieScene' has a wrong offset!");
-static_assert(offsetof(UTemplateSequence, BoundActorClass) == 0x000078, "Member 'UTemplateSequence::BoundActorClass' has a wrong offset!");
-static_assert(offsetof(UTemplateSequence, BoundActorComponents) == 0x0000A8, "Member 'UTemplateSequence::BoundActorComponents' has a wrong offset!");
+DUMPER7_ASSERTS_UTemplateSequence;
 
 // Class TemplateSequence.CameraAnimationSequence
 // 0x0000 (0x00F8 - 0x00F8)
@@ -55,15 +55,18 @@ class UCameraAnimationSequence final : public UTemplateSequence
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationSequence">();
+		STATIC_CLASS_IMPL("CameraAnimationSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationSequence")
 	}
 	static class UCameraAnimationSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationSequence>();
 	}
 };
-static_assert(alignof(UCameraAnimationSequence) == 0x000008, "Wrong alignment on UCameraAnimationSequence");
-static_assert(sizeof(UCameraAnimationSequence) == 0x0000F8, "Wrong size on UCameraAnimationSequence");
+DUMPER7_ASSERTS_UCameraAnimationSequence;
 
 // Class TemplateSequence.CameraAnimationSequenceCameraStandIn
 // 0x0AB0 (0x0AE0 - 0x0030)
@@ -89,25 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationSequenceCameraStandIn">();
+		STATIC_CLASS_IMPL("CameraAnimationSequenceCameraStandIn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationSequenceCameraStandIn")
 	}
 	static class UCameraAnimationSequenceCameraStandIn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationSequenceCameraStandIn>();
 	}
 };
-static_assert(alignof(UCameraAnimationSequenceCameraStandIn) == 0x000010, "Wrong alignment on UCameraAnimationSequenceCameraStandIn");
-static_assert(sizeof(UCameraAnimationSequenceCameraStandIn) == 0x000AE0, "Wrong size on UCameraAnimationSequenceCameraStandIn");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, FieldOfView) == 0x000030, "Member 'UCameraAnimationSequenceCameraStandIn::FieldOfView' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, AspectRatio) == 0x000038, "Member 'UCameraAnimationSequenceCameraStandIn::AspectRatio' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, PostProcessSettings) == 0x000040, "Member 'UCameraAnimationSequenceCameraStandIn::PostProcessSettings' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, PostProcessBlendWeight) == 0x0009C0, "Member 'UCameraAnimationSequenceCameraStandIn::PostProcessBlendWeight' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, Filmback) == 0x0009C4, "Member 'UCameraAnimationSequenceCameraStandIn::Filmback' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, LensSettings) == 0x0009D0, "Member 'UCameraAnimationSequenceCameraStandIn::LensSettings' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, FocusSettings) == 0x0009F0, "Member 'UCameraAnimationSequenceCameraStandIn::FocusSettings' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, CurrentFocalLength) == 0x000A58, "Member 'UCameraAnimationSequenceCameraStandIn::CurrentFocalLength' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, CurrentAperture) == 0x000A5C, "Member 'UCameraAnimationSequenceCameraStandIn::CurrentAperture' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequenceCameraStandIn, CurrentFocusDistance) == 0x000A60, "Member 'UCameraAnimationSequenceCameraStandIn::CurrentFocusDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraAnimationSequenceCameraStandIn;
 
 // Class TemplateSequence.CameraAnimationSequencePlayer
 // 0x0370 (0x03A0 - 0x0030)
@@ -123,18 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationSequencePlayer">();
+		STATIC_CLASS_IMPL("CameraAnimationSequencePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationSequencePlayer")
 	}
 	static class UCameraAnimationSequencePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationSequencePlayer>();
 	}
 };
-static_assert(alignof(UCameraAnimationSequencePlayer) == 0x000008, "Wrong alignment on UCameraAnimationSequencePlayer");
-static_assert(sizeof(UCameraAnimationSequencePlayer) == 0x0003A0, "Wrong size on UCameraAnimationSequencePlayer");
-static_assert(offsetof(UCameraAnimationSequencePlayer, BoundObjectOverride) == 0x0002A0, "Member 'UCameraAnimationSequencePlayer::BoundObjectOverride' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequencePlayer, Sequence) == 0x0002A8, "Member 'UCameraAnimationSequencePlayer::Sequence' has a wrong offset!");
-static_assert(offsetof(UCameraAnimationSequencePlayer, RootTemplateInstance) == 0x0002B0, "Member 'UCameraAnimationSequencePlayer::RootTemplateInstance' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraAnimationSequencePlayer;
 
 // Class TemplateSequence.CameraAnimationSpawnableSystem
 // 0x0000 (0x0048 - 0x0048)
@@ -143,15 +139,18 @@ class UCameraAnimationSpawnableSystem final : public UMovieSceneEntitySystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationSpawnableSystem">();
+		STATIC_CLASS_IMPL("CameraAnimationSpawnableSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationSpawnableSystem")
 	}
 	static class UCameraAnimationSpawnableSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationSpawnableSystem>();
 	}
 };
-static_assert(alignof(UCameraAnimationSpawnableSystem) == 0x000008, "Wrong alignment on UCameraAnimationSpawnableSystem");
-static_assert(sizeof(UCameraAnimationSpawnableSystem) == 0x000048, "Wrong size on UCameraAnimationSpawnableSystem");
+DUMPER7_ASSERTS_UCameraAnimationSpawnableSystem;
 
 // Class TemplateSequence.CameraAnimationBoundObjectInstantiator
 // 0x0000 (0x0048 - 0x0048)
@@ -160,15 +159,18 @@ class UCameraAnimationBoundObjectInstantiator final : public UMovieSceneEntityIn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationBoundObjectInstantiator">();
+		STATIC_CLASS_IMPL("CameraAnimationBoundObjectInstantiator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationBoundObjectInstantiator")
 	}
 	static class UCameraAnimationBoundObjectInstantiator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationBoundObjectInstantiator>();
 	}
 };
-static_assert(alignof(UCameraAnimationBoundObjectInstantiator) == 0x000008, "Wrong alignment on UCameraAnimationBoundObjectInstantiator");
-static_assert(sizeof(UCameraAnimationBoundObjectInstantiator) == 0x000048, "Wrong size on UCameraAnimationBoundObjectInstantiator");
+DUMPER7_ASSERTS_UCameraAnimationBoundObjectInstantiator;
 
 // Class TemplateSequence.CameraAnimationEntitySystemLinker
 // 0x0000 (0x08A0 - 0x08A0)
@@ -177,37 +179,42 @@ class UCameraAnimationEntitySystemLinker final : public UMovieSceneEntitySystemL
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationEntitySystemLinker">();
+		STATIC_CLASS_IMPL("CameraAnimationEntitySystemLinker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationEntitySystemLinker")
 	}
 	static class UCameraAnimationEntitySystemLinker* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationEntitySystemLinker>();
 	}
 };
-static_assert(alignof(UCameraAnimationEntitySystemLinker) == 0x000008, "Wrong alignment on UCameraAnimationEntitySystemLinker");
-static_assert(sizeof(UCameraAnimationEntitySystemLinker) == 0x0008A0, "Wrong size on UCameraAnimationEntitySystemLinker");
+DUMPER7_ASSERTS_UCameraAnimationEntitySystemLinker;
 
 // Class TemplateSequence.CameraAnimationSequenceSubsystem
-// 0x0018 (0x0050 - 0x0038)
+// 0x0018 (0x0058 - 0x0040)
 class UCameraAnimationSequenceSubsystem final : public UWorldSubsystem
 {
 public:
-	class UMovieSceneEntitySystemLinker*          Linker;                                            // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMovieSceneEntitySystemLinker*          Linker;                                            // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraAnimationSequenceSubsystem">();
+		STATIC_CLASS_IMPL("CameraAnimationSequenceSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationSequenceSubsystem")
 	}
 	static class UCameraAnimationSequenceSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraAnimationSequenceSubsystem>();
 	}
 };
-static_assert(alignof(UCameraAnimationSequenceSubsystem) == 0x000008, "Wrong alignment on UCameraAnimationSequenceSubsystem");
-static_assert(sizeof(UCameraAnimationSequenceSubsystem) == 0x000050, "Wrong size on UCameraAnimationSequenceSubsystem");
-static_assert(offsetof(UCameraAnimationSequenceSubsystem, Linker) == 0x000038, "Member 'UCameraAnimationSequenceSubsystem::Linker' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraAnimationSequenceSubsystem;
 
 // Class TemplateSequence.TemplateSequenceSection
 // 0x0010 (0x01A0 - 0x0190)
@@ -219,16 +226,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequenceSection">();
+		STATIC_CLASS_IMPL("TemplateSequenceSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequenceSection")
 	}
 	static class UTemplateSequenceSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequenceSection>();
 	}
 };
-static_assert(alignof(UTemplateSequenceSection) == 0x000008, "Wrong alignment on UTemplateSequenceSection");
-static_assert(sizeof(UTemplateSequenceSection) == 0x0001A0, "Wrong size on UTemplateSequenceSection");
-static_assert(offsetof(UTemplateSequenceSection, PropertyScales) == 0x000190, "Member 'UTemplateSequenceSection::PropertyScales' has a wrong offset!");
+DUMPER7_ASSERTS_UTemplateSequenceSection;
 
 // Class TemplateSequence.SequenceCameraShakePattern
 // 0x0050 (0x0080 - 0x0030)
@@ -250,24 +259,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequenceCameraShakePattern">();
+		STATIC_CLASS_IMPL("SequenceCameraShakePattern")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequenceCameraShakePattern")
 	}
 	static class USequenceCameraShakePattern* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USequenceCameraShakePattern>();
 	}
 };
-static_assert(alignof(USequenceCameraShakePattern) == 0x000008, "Wrong alignment on USequenceCameraShakePattern");
-static_assert(sizeof(USequenceCameraShakePattern) == 0x000080, "Wrong size on USequenceCameraShakePattern");
-static_assert(offsetof(USequenceCameraShakePattern, Sequence) == 0x000030, "Member 'USequenceCameraShakePattern::Sequence' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, PlayRate) == 0x000038, "Member 'USequenceCameraShakePattern::PlayRate' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, Scale) == 0x00003C, "Member 'USequenceCameraShakePattern::Scale' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, BlendInTime) == 0x000040, "Member 'USequenceCameraShakePattern::BlendInTime' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, BlendOutTime) == 0x000044, "Member 'USequenceCameraShakePattern::BlendOutTime' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, RandomSegmentDuration) == 0x000048, "Member 'USequenceCameraShakePattern::RandomSegmentDuration' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, bRandomSegment) == 0x00004C, "Member 'USequenceCameraShakePattern::bRandomSegment' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, Player) == 0x000050, "Member 'USequenceCameraShakePattern::Player' has a wrong offset!");
-static_assert(offsetof(USequenceCameraShakePattern, CameraStandIn) == 0x000058, "Member 'USequenceCameraShakePattern::CameraStandIn' has a wrong offset!");
+DUMPER7_ASSERTS_USequenceCameraShakePattern;
 
 // Class TemplateSequence.TemplateSequenceSystem
 // 0x0070 (0x00B8 - 0x0048)
@@ -279,15 +282,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequenceSystem">();
+		STATIC_CLASS_IMPL("TemplateSequenceSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequenceSystem")
 	}
 	static class UTemplateSequenceSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequenceSystem>();
 	}
 };
-static_assert(alignof(UTemplateSequenceSystem) == 0x000008, "Wrong alignment on UTemplateSequenceSystem");
-static_assert(sizeof(UTemplateSequenceSystem) == 0x0000B8, "Wrong size on UTemplateSequenceSystem");
+DUMPER7_ASSERTS_UTemplateSequenceSystem;
 
 // Class TemplateSequence.TemplateSequencePropertyScalingInstantiatorSystem
 // 0x0058 (0x00A0 - 0x0048)
@@ -299,15 +305,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequencePropertyScalingInstantiatorSystem">();
+		STATIC_CLASS_IMPL("TemplateSequencePropertyScalingInstantiatorSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequencePropertyScalingInstantiatorSystem")
 	}
 	static class UTemplateSequencePropertyScalingInstantiatorSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequencePropertyScalingInstantiatorSystem>();
 	}
 };
-static_assert(alignof(UTemplateSequencePropertyScalingInstantiatorSystem) == 0x000008, "Wrong alignment on UTemplateSequencePropertyScalingInstantiatorSystem");
-static_assert(sizeof(UTemplateSequencePropertyScalingInstantiatorSystem) == 0x0000A0, "Wrong size on UTemplateSequencePropertyScalingInstantiatorSystem");
+DUMPER7_ASSERTS_UTemplateSequencePropertyScalingInstantiatorSystem;
 
 // Class TemplateSequence.TemplateSequencePropertyScalingEvaluatorSystem
 // 0x0050 (0x0098 - 0x0048)
@@ -319,15 +328,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequencePropertyScalingEvaluatorSystem">();
+		STATIC_CLASS_IMPL("TemplateSequencePropertyScalingEvaluatorSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequencePropertyScalingEvaluatorSystem")
 	}
 	static class UTemplateSequencePropertyScalingEvaluatorSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequencePropertyScalingEvaluatorSystem>();
 	}
 };
-static_assert(alignof(UTemplateSequencePropertyScalingEvaluatorSystem) == 0x000008, "Wrong alignment on UTemplateSequencePropertyScalingEvaluatorSystem");
-static_assert(sizeof(UTemplateSequencePropertyScalingEvaluatorSystem) == 0x000098, "Wrong size on UTemplateSequencePropertyScalingEvaluatorSystem");
+DUMPER7_ASSERTS_UTemplateSequencePropertyScalingEvaluatorSystem;
 
 // Class TemplateSequence.TemplateSequenceActor
 // 0x0060 (0x0740 - 0x06E0)
@@ -352,19 +364,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequenceActor">();
+		STATIC_CLASS_IMPL("TemplateSequenceActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequenceActor")
 	}
 	static class ATemplateSequenceActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATemplateSequenceActor>();
 	}
 };
-static_assert(alignof(ATemplateSequenceActor) == 0x000010, "Wrong alignment on ATemplateSequenceActor");
-static_assert(sizeof(ATemplateSequenceActor) == 0x000740, "Wrong size on ATemplateSequenceActor");
-static_assert(offsetof(ATemplateSequenceActor, PlaybackSettings) == 0x0006E0, "Member 'ATemplateSequenceActor::PlaybackSettings' has a wrong offset!");
-static_assert(offsetof(ATemplateSequenceActor, SequencePlayer) == 0x000700, "Member 'ATemplateSequenceActor::SequencePlayer' has a wrong offset!");
-static_assert(offsetof(ATemplateSequenceActor, TemplateSequence) == 0x000708, "Member 'ATemplateSequenceActor::TemplateSequence' has a wrong offset!");
-static_assert(offsetof(ATemplateSequenceActor, BindingOverride) == 0x000730, "Member 'ATemplateSequenceActor::BindingOverride' has a wrong offset!");
+DUMPER7_ASSERTS_ATemplateSequenceActor;
 
 // Class TemplateSequence.TemplateSequencePlayer
 // 0x0008 (0x04E8 - 0x04E0)
@@ -379,15 +390,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequencePlayer">();
+		STATIC_CLASS_IMPL("TemplateSequencePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequencePlayer")
 	}
 	static class UTemplateSequencePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequencePlayer>();
 	}
 };
-static_assert(alignof(UTemplateSequencePlayer) == 0x000008, "Wrong alignment on UTemplateSequencePlayer");
-static_assert(sizeof(UTemplateSequencePlayer) == 0x0004E8, "Wrong size on UTemplateSequencePlayer");
+DUMPER7_ASSERTS_UTemplateSequencePlayer;
 
 // Class TemplateSequence.SequenceCameraShakeTestUtil
 // 0x0000 (0x0030 - 0x0030)
@@ -401,15 +415,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SequenceCameraShakeTestUtil">();
+		STATIC_CLASS_IMPL("SequenceCameraShakeTestUtil")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SequenceCameraShakeTestUtil")
 	}
 	static class USequenceCameraShakeTestUtil* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USequenceCameraShakeTestUtil>();
 	}
 };
-static_assert(alignof(USequenceCameraShakeTestUtil) == 0x000008, "Wrong alignment on USequenceCameraShakeTestUtil");
-static_assert(sizeof(USequenceCameraShakeTestUtil) == 0x000030, "Wrong size on USequenceCameraShakeTestUtil");
+DUMPER7_ASSERTS_USequenceCameraShakeTestUtil;
 
 // Class TemplateSequence.TemplateSequenceTrack
 // 0x0000 (0x00B0 - 0x00B0)
@@ -418,15 +435,18 @@ class UTemplateSequenceTrack final : public UMovieSceneSubTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TemplateSequenceTrack">();
+		STATIC_CLASS_IMPL("TemplateSequenceTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TemplateSequenceTrack")
 	}
 	static class UTemplateSequenceTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTemplateSequenceTrack>();
 	}
 };
-static_assert(alignof(UTemplateSequenceTrack) == 0x000008, "Wrong alignment on UTemplateSequenceTrack");
-static_assert(sizeof(UTemplateSequenceTrack) == 0x0000B0, "Wrong size on UTemplateSequenceTrack");
+DUMPER7_ASSERTS_UTemplateSequenceTrack;
 
 }
 

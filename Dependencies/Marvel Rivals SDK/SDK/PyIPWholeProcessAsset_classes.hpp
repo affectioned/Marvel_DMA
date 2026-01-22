@@ -43,31 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyIPWholeProcessAsset">();
+		STATIC_CLASS_IMPL("PyIPWholeProcessAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyIPWholeProcessAsset")
 	}
 	static class UPyIPWholeProcessAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyIPWholeProcessAsset>();
 	}
 };
-static_assert(alignof(UPyIPWholeProcessAsset) == 0x000008, "Wrong alignment on UPyIPWholeProcessAsset");
-static_assert(sizeof(UPyIPWholeProcessAsset) == 0x0000A0, "Wrong size on UPyIPWholeProcessAsset");
-static_assert(offsetof(UPyIPWholeProcessAsset, MaxLoadingTime) == 0x000038, "Member 'UPyIPWholeProcessAsset::MaxLoadingTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, LeagueMaxLoadingTime) == 0x00003C, "Member 'UPyIPWholeProcessAsset::LeagueMaxLoadingTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, WheelAngleStep) == 0x000040, "Member 'UPyIPWholeProcessAsset::WheelAngleStep' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, PsWhellMultiplier) == 0x000044, "Member 'UPyIPWholeProcessAsset::PsWhellMultiplier' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, MouseMoveStep) == 0x000048, "Member 'UPyIPWholeProcessAsset::MouseMoveStep' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, MouseDistanceTrigger) == 0x00004C, "Member 'UPyIPWholeProcessAsset::MouseDistanceTrigger' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, MinimumDeadZone) == 0x000050, "Member 'UPyIPWholeProcessAsset::MinimumDeadZone' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, MaximumDeadZone) == 0x000054, "Member 'UPyIPWholeProcessAsset::MaximumDeadZone' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, PanelOpenLocateAngle) == 0x000058, "Member 'UPyIPWholeProcessAsset::PanelOpenLocateAngle' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, DeviationAngel) == 0x00005C, "Member 'UPyIPWholeProcessAsset::DeviationAngel' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, PreEntranceTime) == 0x000060, "Member 'UPyIPWholeProcessAsset::PreEntranceTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, StandbyPersonalizedActionDelayTime) == 0x000064, "Member 'UPyIPWholeProcessAsset::StandbyPersonalizedActionDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, SlowMotionTotalTime) == 0x000068, "Member 'UPyIPWholeProcessAsset::SlowMotionTotalTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, SlowMotionSpeedCurve) == 0x000070, "Member 'UPyIPWholeProcessAsset::SlowMotionSpeedCurve' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, TransitionFadeInTotalTime) == 0x000098, "Member 'UPyIPWholeProcessAsset::TransitionFadeInTotalTime' has a wrong offset!");
-static_assert(offsetof(UPyIPWholeProcessAsset, TransitionFadeOutTotalTime) == 0x00009C, "Member 'UPyIPWholeProcessAsset::TransitionFadeOutTotalTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyIPWholeProcessAsset;
 
 }
 

@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_TimeStreamRaid_FinalScore.PyWidget_TimeStreamRaid_FinalScore
-// 0x00A8 (0x07F8 - 0x0750)
+// 0x00A8 (0x0800 - 0x0758)
 class UPyWidget_TimeStreamRaid_FinalScore final : public UPyWidget_Common_RankTransition
 {
 public:
-	struct FLinearColor                           NormalColor;                                       // 0x0750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x0760(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0770(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   AllyWinText_Progress;                              // 0x0780(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   AllyWinText_Crystal;                               // 0x0798(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   EnemyWinText_Progress;                             // 0x07B0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   EnemyWinText_Crystal;                              // 0x07C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DrawText_Progress;                                 // 0x07E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NormalColor;                                       // 0x0758(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x0768(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0778(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   AllyWinText_Progress;                              // 0x0788(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   AllyWinText_Crystal;                               // 0x07A0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   EnemyWinText_Progress;                             // 0x07B8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   EnemyWinText_Crystal;                              // 0x07D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DrawText_Progress;                                 // 0x07E8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,23 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_TimeStreamRaid_FinalScore">();
+		STATIC_CLASS_IMPL("PyWidget_TimeStreamRaid_FinalScore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_TimeStreamRaid_FinalScore")
 	}
 	static class UPyWidget_TimeStreamRaid_FinalScore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_TimeStreamRaid_FinalScore>();
 	}
 };
-static_assert(alignof(UPyWidget_TimeStreamRaid_FinalScore) == 0x000008, "Wrong alignment on UPyWidget_TimeStreamRaid_FinalScore");
-static_assert(sizeof(UPyWidget_TimeStreamRaid_FinalScore) == 0x0007F8, "Wrong size on UPyWidget_TimeStreamRaid_FinalScore");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, NormalColor) == 0x000750, "Member 'UPyWidget_TimeStreamRaid_FinalScore::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, AllyColor) == 0x000760, "Member 'UPyWidget_TimeStreamRaid_FinalScore::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, EnemyColor) == 0x000770, "Member 'UPyWidget_TimeStreamRaid_FinalScore::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, AllyWinText_Progress) == 0x000780, "Member 'UPyWidget_TimeStreamRaid_FinalScore::AllyWinText_Progress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, AllyWinText_Crystal) == 0x000798, "Member 'UPyWidget_TimeStreamRaid_FinalScore::AllyWinText_Crystal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, EnemyWinText_Progress) == 0x0007B0, "Member 'UPyWidget_TimeStreamRaid_FinalScore::EnemyWinText_Progress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, EnemyWinText_Crystal) == 0x0007C8, "Member 'UPyWidget_TimeStreamRaid_FinalScore::EnemyWinText_Crystal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaid_FinalScore, DrawText_Progress) == 0x0007E0, "Member 'UPyWidget_TimeStreamRaid_FinalScore::DrawText_Progress' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_TimeStreamRaid_FinalScore;
 
 }
 

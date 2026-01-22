@@ -17,50 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_CareerHeroDataPanel.PyWidget_CareerHighLightDataItem.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_CareerHighLightDataItem::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CareerHighLightDataItem", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CareerHeroDataPanel.PyWidget_CareerHighLightDataItem.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CareerHighLightDataItem::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CareerHighLightDataItem", "PreConstruct");
-
-	Params::PyWidget_CareerHighLightDataItem_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_CareerHeroDataPanel.PyWidget_CareerHeroDataPanel.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -279,6 +235,50 @@ void UPyWidget_CareerHeroTimeItem::SetItemData(class UObject* ListItemObject)
 	Params::PyWidget_CareerHeroTimeItem_SetItemData Parms{};
 
 	Parms.ListItemObject = ListItemObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CareerHeroDataPanel.PyWidget_CareerHighLightDataItem.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_CareerHighLightDataItem::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CareerHighLightDataItem", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CareerHeroDataPanel.PyWidget_CareerHighLightDataItem.PreConstruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CareerHighLightDataItem::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CareerHighLightDataItem", "PreConstruct");
+
+	Params::PyWidget_CareerHighLightDataItem_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

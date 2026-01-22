@@ -14,206 +14,6 @@
 namespace SDK::Params
 {
 
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_GetCurrentValue
-// 0x00C0 (0x00C0 - 0x0000)
-struct UISettingAlternateNameHandler_BP_GetCurrentValue final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            p;                                                 // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingAlternateNameHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingAlternateNameHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingAlternateNameHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingAlternateNameHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingAlternateNameHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingAlternateNameHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingAlternateNameHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingAlternateNameHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingAlternateNameHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.GetOverrideEntryName
-// 0x0088 (0x0088 - 0x0000)
-struct UISettingAlternateNameHandler_GetOverrideEntryName final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 entry_name;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            p;                                                 // 0x0028(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	class FString                                 ReturnValue;                                       // 0x0078(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingAlternateNameHandler_GetOverrideEntryName) == 0x000008, "Wrong alignment on UISettingAlternateNameHandler_GetOverrideEntryName");
-static_assert(sizeof(UISettingAlternateNameHandler_GetOverrideEntryName) == 0x000088, "Wrong size on UISettingAlternateNameHandler_GetOverrideEntryName");
-static_assert(offsetof(UISettingAlternateNameHandler_GetOverrideEntryName, obj) == 0x000000, "Member 'UISettingAlternateNameHandler_GetOverrideEntryName::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_GetOverrideEntryName, setting_key) == 0x000008, "Member 'UISettingAlternateNameHandler_GetOverrideEntryName::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_GetOverrideEntryName, entry_name) == 0x000018, "Member 'UISettingAlternateNameHandler_GetOverrideEntryName::entry_name' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_GetOverrideEntryName, p) == 0x000028, "Member 'UISettingAlternateNameHandler_GetOverrideEntryName::p' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_GetOverrideEntryName, ReturnValue) == 0x000078, "Member 'UISettingAlternateNameHandler_GetOverrideEntryName::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnBtnClicked
-// 0x0160 (0x0160 - 0x0000)
-struct UISettingAlternateNameHandler_BP_OnBtnClicked final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingAlternateNameHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingAlternateNameHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingAlternateNameHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingAlternateNameHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingAlternateNameHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnStrValueChanged
-// 0x0168 (0x0168 - 0x0000)
-struct UISettingAlternateNameHandler_BP_OnStrValueChanged final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	class FString                                 value;                                             // 0x00B8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, int32>                    tags;                                              // 0x00C8(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0118(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingAlternateNameHandler_BP_OnStrValueChanged) == 0x000008, "Wrong alignment on UISettingAlternateNameHandler_BP_OnStrValueChanged");
-static_assert(sizeof(UISettingAlternateNameHandler_BP_OnStrValueChanged) == 0x000168, "Wrong size on UISettingAlternateNameHandler_BP_OnStrValueChanged");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, obj) == 0x000000, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, setting_key) == 0x000008, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, params) == 0x000018, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, options) == 0x000068, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, value) == 0x0000B8, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, tags) == 0x0000C8, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnStrValueChanged, ReturnValue) == 0x000118, "Member 'UISettingAlternateNameHandler_BP_OnStrValueChanged::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnChanged
-// 0x0160 (0x0160 - 0x0000)
-struct UISettingAlternateNameHandler_BP_OnChanged final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingAlternateNameHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingAlternateNameHandler_BP_OnChanged");
-static_assert(sizeof(UISettingAlternateNameHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingAlternateNameHandler_BP_OnChanged");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingAlternateNameHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingAlternateNameHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingAlternateNameHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingAlternateNameHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingAlternateNameHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingAlternateNameHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingAlternateNameHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingAlternateNameHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_OnChanged
-// 0x0160 (0x0160 - 0x0000)
-struct UISettingEntrySocialHandler_BP_OnChanged final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingEntrySocialHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntrySocialHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntrySocialHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntrySocialHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntrySocialHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntrySocialHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntrySocialHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntrySocialHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntrySocialHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntrySocialHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntrySocialHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_OnBtnClicked
-// 0x0160 (0x0160 - 0x0000)
-struct UISettingEntrySocialHandler_BP_OnBtnClicked final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingEntrySocialHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntrySocialHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntrySocialHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntrySocialHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntrySocialHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_GetCurrentValue
-// 0x00C0 (0x00C0 - 0x0000)
-struct UISettingEntrySocialHandler_BP_GetCurrentValue final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            p;                                                 // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(UISettingEntrySocialHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntrySocialHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntrySocialHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntrySocialHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntrySocialHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntrySocialHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntrySocialHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntrySocialHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySocialHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntrySocialHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
-
-// PythonFunction SocialSetting.UISettingCrossPlatformHandler.BP_OnChanged
-// 0x0160 (0x0160 - 0x0000)
-struct UISettingCrossPlatformHandler_BP_OnChanged final
-{
-public:
-	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
-	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(UISettingCrossPlatformHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingCrossPlatformHandler_BP_OnChanged");
-static_assert(sizeof(UISettingCrossPlatformHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingCrossPlatformHandler_BP_OnChanged");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingCrossPlatformHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingCrossPlatformHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
-
 // PythonFunction SocialSetting.UISettingSocialDiscordActionHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
 struct UISettingSocialDiscordActionHandler_BP_OnBtnClicked final
@@ -228,15 +28,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingSocialDiscordActionHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingSocialDiscordActionHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingSocialDiscordActionHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingSocialDiscordActionHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingSocialDiscordActionHandler_BP_OnBtnClicked;
 
 // PythonFunction SocialSetting.UISettingAnchorModeHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -252,15 +44,68 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingAnchorModeHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingAnchorModeHandler_BP_OnChanged");
-static_assert(sizeof(UISettingAnchorModeHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingAnchorModeHandler_BP_OnChanged");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingAnchorModeHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingAnchorModeHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingAnchorModeHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingAnchorModeHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingAnchorModeHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingAnchorModeHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingAnchorModeHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingAnchorModeHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingAnchorModeHandler_BP_OnChanged;
+
+// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_OnChanged
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingEntrySocialHandler_BP_OnChanged final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingEntrySocialHandler_BP_OnChanged;
+
+// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_OnBtnClicked
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingEntrySocialHandler_BP_OnBtnClicked final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingEntrySocialHandler_BP_OnBtnClicked;
+
+// PythonFunction SocialSetting.UISettingEntrySocialHandler.BP_GetCurrentValue
+// 0x00C0 (0x00C0 - 0x0000)
+struct UISettingEntrySocialHandler_BP_GetCurrentValue final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            p;                                                 // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingEntrySocialHandler_BP_GetCurrentValue;
+
+// PythonFunction SocialSetting.UISettingCrossPlatformHandler.BP_OnChanged
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingCrossPlatformHandler_BP_OnChanged final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingCrossPlatformHandler_BP_OnChanged;
 
 // PythonFunction SocialSetting.UISettingSocialM2201Handler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -276,15 +121,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingSocialM2201Handler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingSocialM2201Handler_BP_OnChanged");
-static_assert(sizeof(UISettingSocialM2201Handler_BP_OnChanged) == 0x000160, "Wrong size on UISettingSocialM2201Handler_BP_OnChanged");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingSocialM2201Handler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingSocialM2201Handler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, params) == 0x000018, "Member 'UISettingSocialM2201Handler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, options) == 0x000068, "Member 'UISettingSocialM2201Handler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingSocialM2201Handler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingSocialM2201Handler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingSocialM2201Handler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingSocialM2201Handler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingSocialM2201Handler_BP_OnChanged;
 
 // PythonFunction SocialSetting.UISettingFriendRecommendHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -300,15 +137,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingFriendRecommendHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingFriendRecommendHandler_BP_OnChanged");
-static_assert(sizeof(UISettingFriendRecommendHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingFriendRecommendHandler_BP_OnChanged");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingFriendRecommendHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingFriendRecommendHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingFriendRecommendHandler_BP_OnChanged;
 
 // PythonFunction SocialSetting.UISettingStreamerAnonymousOneselfHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -324,15 +153,80 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingStreamerAnonymousOneselfHandler_BP_OnChanged");
-static_assert(sizeof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingStreamerAnonymousOneselfHandler_BP_OnChanged");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingStreamerAnonymousOneselfHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingStreamerAnonymousOneselfHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingStreamerAnonymousOneselfHandler_BP_OnChanged;
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_GetCurrentValue
+// 0x00C0 (0x00C0 - 0x0000)
+struct UISettingAlternateNameHandler_BP_GetCurrentValue final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            p;                                                 // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingAlternateNameHandler_BP_GetCurrentValue;
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.GetOverrideEntryName
+// 0x0088 (0x0088 - 0x0000)
+struct UISettingAlternateNameHandler_GetOverrideEntryName final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 entry_name;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            p;                                                 // 0x0028(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	class FString                                 ReturnValue;                                       // 0x0078(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UISettingAlternateNameHandler_GetOverrideEntryName;
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnBtnClicked
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingAlternateNameHandler_BP_OnBtnClicked final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingAlternateNameHandler_BP_OnBtnClicked;
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnStrValueChanged
+// 0x0168 (0x0168 - 0x0000)
+struct UISettingAlternateNameHandler_BP_OnStrValueChanged final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	class FString                                 value;                                             // 0x00B8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, int32>                    tags;                                              // 0x00C8(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0118(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingAlternateNameHandler_BP_OnStrValueChanged;
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnChanged
+// 0x0160 (0x0160 - 0x0000)
+struct UISettingAlternateNameHandler_BP_OnChanged final
+{
+public:
+	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	TMap<class FString, class FString>            params;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
+	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_UISettingAlternateNameHandler_BP_OnChanged;
 
 }
 

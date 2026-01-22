@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistrySettings">();
+		STATIC_CLASS_IMPL("DataRegistrySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistrySettings")
 	}
 	static class UDataRegistrySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistrySettings>();
 	}
 };
-static_assert(alignof(UDataRegistrySettings) == 0x000008, "Wrong alignment on UDataRegistrySettings");
-static_assert(sizeof(UDataRegistrySettings) == 0x000060, "Wrong size on UDataRegistrySettings");
-static_assert(offsetof(UDataRegistrySettings, DirectoriesToScan) == 0x000048, "Member 'UDataRegistrySettings::DirectoriesToScan' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySettings, bInitializeAllLoadedRegistries) == 0x000058, "Member 'UDataRegistrySettings::bInitializeAllLoadedRegistries' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySettings, bIgnoreMissingCookedAssetRegistryData) == 0x000059, "Member 'UDataRegistrySettings::bIgnoreMissingCookedAssetRegistryData' has a wrong offset!");
+DUMPER7_ASSERTS_UDataRegistrySettings;
 
 // Class DataRegistry.DataRegistry
 // 0x00B0 (0x00E0 - 0x0030)
@@ -64,22 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistry">();
+		STATIC_CLASS_IMPL("DataRegistry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistry")
 	}
 	static class UDataRegistry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistry>();
 	}
 };
-static_assert(alignof(UDataRegistry) == 0x000008, "Wrong alignment on UDataRegistry");
-static_assert(sizeof(UDataRegistry) == 0x0000E0, "Wrong size on UDataRegistry");
-static_assert(offsetof(UDataRegistry, RegistryType) == 0x000030, "Member 'UDataRegistry::RegistryType' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, IdFormat) == 0x00003C, "Member 'UDataRegistry::IdFormat' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, ItemStruct) == 0x000048, "Member 'UDataRegistry::ItemStruct' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, DataSources) == 0x000050, "Member 'UDataRegistry::DataSources' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, RuntimeSources) == 0x000060, "Member 'UDataRegistry::RuntimeSources' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, TimerUpdateFrequency) == 0x000070, "Member 'UDataRegistry::TimerUpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UDataRegistry, DefaultCachePolicy) == 0x000074, "Member 'UDataRegistry::DefaultCachePolicy' has a wrong offset!");
+DUMPER7_ASSERTS_UDataRegistry;
 
 // Class DataRegistry.DataRegistrySource
 // 0x0010 (0x0040 - 0x0030)
@@ -92,16 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistrySource">();
+		STATIC_CLASS_IMPL("DataRegistrySource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistrySource")
 	}
 	static class UDataRegistrySource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistrySource>();
 	}
 };
-static_assert(alignof(UDataRegistrySource) == 0x000008, "Wrong alignment on UDataRegistrySource");
-static_assert(sizeof(UDataRegistrySource) == 0x000040, "Wrong size on UDataRegistrySource");
-static_assert(offsetof(UDataRegistrySource, ParentSource) == 0x000038, "Member 'UDataRegistrySource::ParentSource' has a wrong offset!");
+DUMPER7_ASSERTS_UDataRegistrySource;
 
 // Class DataRegistry.MetaDataRegistrySource
 // 0x00D0 (0x0110 - 0x0040)
@@ -117,18 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MetaDataRegistrySource">();
+		STATIC_CLASS_IMPL("MetaDataRegistrySource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MetaDataRegistrySource")
 	}
 	static class UMetaDataRegistrySource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMetaDataRegistrySource>();
 	}
 };
-static_assert(alignof(UMetaDataRegistrySource) == 0x000008, "Wrong alignment on UMetaDataRegistrySource");
-static_assert(sizeof(UMetaDataRegistrySource) == 0x000110, "Wrong size on UMetaDataRegistrySource");
-static_assert(offsetof(UMetaDataRegistrySource, AssetUsage) == 0x000040, "Member 'UMetaDataRegistrySource::AssetUsage' has a wrong offset!");
-static_assert(offsetof(UMetaDataRegistrySource, SearchRules) == 0x000048, "Member 'UMetaDataRegistrySource::SearchRules' has a wrong offset!");
-static_assert(offsetof(UMetaDataRegistrySource, RuntimeChildren) == 0x000098, "Member 'UMetaDataRegistrySource::RuntimeChildren' has a wrong offset!");
+DUMPER7_ASSERTS_UMetaDataRegistrySource;
 
 // Class DataRegistry.DataRegistrySource_CurveTable
 // 0x0070 (0x00B0 - 0x0040)
@@ -144,19 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistrySource_CurveTable">();
+		STATIC_CLASS_IMPL("DataRegistrySource_CurveTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistrySource_CurveTable")
 	}
 	static class UDataRegistrySource_CurveTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistrySource_CurveTable>();
 	}
 };
-static_assert(alignof(UDataRegistrySource_CurveTable) == 0x000008, "Wrong alignment on UDataRegistrySource_CurveTable");
-static_assert(sizeof(UDataRegistrySource_CurveTable) == 0x0000B0, "Wrong size on UDataRegistrySource_CurveTable");
-static_assert(offsetof(UDataRegistrySource_CurveTable, SourceTable) == 0x000040, "Member 'UDataRegistrySource_CurveTable::SourceTable' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_CurveTable, TableRules) == 0x000070, "Member 'UDataRegistrySource_CurveTable::TableRules' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_CurveTable, CachedTable) == 0x000078, "Member 'UDataRegistrySource_CurveTable::CachedTable' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_CurveTable, PreloadTable) == 0x000080, "Member 'UDataRegistrySource_CurveTable::PreloadTable' has a wrong offset!");
+DUMPER7_ASSERTS_UDataRegistrySource_CurveTable;
 
 // Class DataRegistry.MetaDataRegistrySource_CurveTable
 // 0x0010 (0x0120 - 0x0110)
@@ -169,17 +166,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MetaDataRegistrySource_CurveTable">();
+		STATIC_CLASS_IMPL("MetaDataRegistrySource_CurveTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MetaDataRegistrySource_CurveTable")
 	}
 	static class UMetaDataRegistrySource_CurveTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMetaDataRegistrySource_CurveTable>();
 	}
 };
-static_assert(alignof(UMetaDataRegistrySource_CurveTable) == 0x000008, "Wrong alignment on UMetaDataRegistrySource_CurveTable");
-static_assert(sizeof(UMetaDataRegistrySource_CurveTable) == 0x000120, "Wrong size on UMetaDataRegistrySource_CurveTable");
-static_assert(offsetof(UMetaDataRegistrySource_CurveTable, CreatedSource) == 0x000110, "Member 'UMetaDataRegistrySource_CurveTable::CreatedSource' has a wrong offset!");
-static_assert(offsetof(UMetaDataRegistrySource_CurveTable, TableRules) == 0x000118, "Member 'UMetaDataRegistrySource_CurveTable::TableRules' has a wrong offset!");
+DUMPER7_ASSERTS_UMetaDataRegistrySource_CurveTable;
 
 // Class DataRegistry.DataRegistrySource_DataTable
 // 0x0070 (0x00B0 - 0x0040)
@@ -195,19 +193,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistrySource_DataTable">();
+		STATIC_CLASS_IMPL("DataRegistrySource_DataTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistrySource_DataTable")
 	}
 	static class UDataRegistrySource_DataTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistrySource_DataTable>();
 	}
 };
-static_assert(alignof(UDataRegistrySource_DataTable) == 0x000008, "Wrong alignment on UDataRegistrySource_DataTable");
-static_assert(sizeof(UDataRegistrySource_DataTable) == 0x0000B0, "Wrong size on UDataRegistrySource_DataTable");
-static_assert(offsetof(UDataRegistrySource_DataTable, SourceTable) == 0x000040, "Member 'UDataRegistrySource_DataTable::SourceTable' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_DataTable, TableRules) == 0x000070, "Member 'UDataRegistrySource_DataTable::TableRules' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_DataTable, CachedTable) == 0x000078, "Member 'UDataRegistrySource_DataTable::CachedTable' has a wrong offset!");
-static_assert(offsetof(UDataRegistrySource_DataTable, PreloadTable) == 0x000080, "Member 'UDataRegistrySource_DataTable::PreloadTable' has a wrong offset!");
+DUMPER7_ASSERTS_UDataRegistrySource_DataTable;
 
 // Class DataRegistry.MetaDataRegistrySource_DataTable
 // 0x0010 (0x0120 - 0x0110)
@@ -220,17 +217,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MetaDataRegistrySource_DataTable">();
+		STATIC_CLASS_IMPL("MetaDataRegistrySource_DataTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MetaDataRegistrySource_DataTable")
 	}
 	static class UMetaDataRegistrySource_DataTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMetaDataRegistrySource_DataTable>();
 	}
 };
-static_assert(alignof(UMetaDataRegistrySource_DataTable) == 0x000008, "Wrong alignment on UMetaDataRegistrySource_DataTable");
-static_assert(sizeof(UMetaDataRegistrySource_DataTable) == 0x000120, "Wrong size on UMetaDataRegistrySource_DataTable");
-static_assert(offsetof(UMetaDataRegistrySource_DataTable, CreatedSource) == 0x000110, "Member 'UMetaDataRegistrySource_DataTable::CreatedSource' has a wrong offset!");
-static_assert(offsetof(UMetaDataRegistrySource_DataTable, TableRules) == 0x000118, "Member 'UMetaDataRegistrySource_DataTable::TableRules' has a wrong offset!");
+DUMPER7_ASSERTS_UMetaDataRegistrySource_DataTable;
 
 // Class DataRegistry.DataRegistrySubsystem
 // 0x0098 (0x00D0 - 0x0038)
@@ -257,15 +255,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataRegistrySubsystem">();
+		STATIC_CLASS_IMPL("DataRegistrySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataRegistrySubsystem")
 	}
 	static class UDataRegistrySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataRegistrySubsystem>();
 	}
 };
-static_assert(alignof(UDataRegistrySubsystem) == 0x000008, "Wrong alignment on UDataRegistrySubsystem");
-static_assert(sizeof(UDataRegistrySubsystem) == 0x0000D0, "Wrong size on UDataRegistrySubsystem");
+DUMPER7_ASSERTS_UDataRegistrySubsystem;
 
 }
 

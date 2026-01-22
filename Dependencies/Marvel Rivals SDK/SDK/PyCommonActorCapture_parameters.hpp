@@ -23,9 +23,7 @@ struct PyCommonActorCapture_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCommonActorCapture_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyCommonActorCapture_ReceiveEndPlay");
-static_assert(sizeof(PyCommonActorCapture_ReceiveEndPlay) == 0x000001, "Wrong size on PyCommonActorCapture_ReceiveEndPlay");
-static_assert(offsetof(PyCommonActorCapture_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyCommonActorCapture_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCommonActorCapture_ReceiveEndPlay;
 
 // PythonFunction PyCommonActorCapture.PyCommonActorCapture.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyCommonActorCapture_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCommonActorCapture_ReceiveTick) == 0x000004, "Wrong alignment on PyCommonActorCapture_ReceiveTick");
-static_assert(sizeof(PyCommonActorCapture_ReceiveTick) == 0x000004, "Wrong size on PyCommonActorCapture_ReceiveTick");
-static_assert(offsetof(PyCommonActorCapture_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCommonActorCapture_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCommonActorCapture_ReceiveTick;
 
 }
 

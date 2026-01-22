@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Reticle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Reticle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Reticle_C")
 	}
 	static class UWBP_Reticle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Reticle_C>();
 	}
 };
-static_assert(alignof(UWBP_Reticle_C) == 0x000008, "Wrong alignment on UWBP_Reticle_C");
-static_assert(sizeof(UWBP_Reticle_C) == 0x000568, "Wrong size on UWBP_Reticle_C");
-static_assert(offsetof(UWBP_Reticle_C, Anim_Setting) == 0x000548, "Member 'UWBP_Reticle_C::Anim_Setting' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_C, Anim_Indent) == 0x000550, "Member 'UWBP_Reticle_C::Anim_Indent' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_C, Anim_Hit) == 0x000558, "Member 'UWBP_Reticle_C::Anim_Hit' has a wrong offset!");
-static_assert(offsetof(UWBP_Reticle_C, Anim_Expansion) == 0x000560, "Member 'UWBP_Reticle_C::Anim_Expansion' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Reticle_C;
 
 }
 

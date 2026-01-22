@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Scope_Loop_10314201_BP.Cue_Scope_Loop_10314201_BP_C
-// 0x0000 (0x1170 - 0x1170)
+// 0x0000 (0x1180 - 0x1180)
 class ACue_Scope_Loop_10314201_BP_C final : public ACue_Scope_Loop_10314201
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Scope_Loop_10314201_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Scope_Loop_10314201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Scope_Loop_10314201_BP_C")
 	}
 	static class ACue_Scope_Loop_10314201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Scope_Loop_10314201_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Scope_Loop_10314201_BP_C) == 0x000010, "Wrong alignment on ACue_Scope_Loop_10314201_BP_C");
-static_assert(sizeof(ACue_Scope_Loop_10314201_BP_C) == 0x001170, "Wrong size on ACue_Scope_Loop_10314201_BP_C");
+DUMPER7_ASSERTS_ACue_Scope_Loop_10314201_BP_C;
 
 }
 

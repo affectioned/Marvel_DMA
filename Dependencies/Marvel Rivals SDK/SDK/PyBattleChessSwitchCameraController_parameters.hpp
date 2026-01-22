@@ -23,9 +23,7 @@ struct PyBattleChessSwitchCameraController_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessSwitchCameraController_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBattleChessSwitchCameraController_ReceiveEndPlay");
-static_assert(sizeof(PyBattleChessSwitchCameraController_ReceiveEndPlay) == 0x000001, "Wrong size on PyBattleChessSwitchCameraController_ReceiveEndPlay");
-static_assert(offsetof(PyBattleChessSwitchCameraController_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBattleChessSwitchCameraController_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessSwitchCameraController_ReceiveEndPlay;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSoundEvent">();
+		STATIC_CLASS_IMPL("PyLevelSoundEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSoundEvent")
 	}
 	static class APyLevelSoundEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSoundEvent>();
 	}
 };
-static_assert(alignof(APyLevelSoundEvent) == 0x000010, "Wrong alignment on APyLevelSoundEvent");
-static_assert(sizeof(APyLevelSoundEvent) == 0x000710, "Wrong size on APyLevelSoundEvent");
+DUMPER7_ASSERTS_APyLevelSoundEvent;
 
 // PythonClass PyLevelSoundEvent.PyLevelSoundEvent_Idle
 // 0x0080 (0x0790 - 0x0710)
@@ -59,21 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSoundEvent_Idle">();
+		STATIC_CLASS_IMPL("PyLevelSoundEvent_Idle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSoundEvent_Idle")
 	}
 	static class APyLevelSoundEvent_Idle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSoundEvent_Idle>();
 	}
 };
-static_assert(alignof(APyLevelSoundEvent_Idle) == 0x000010, "Wrong alignment on APyLevelSoundEvent_Idle");
-static_assert(sizeof(APyLevelSoundEvent_Idle) == 0x000790, "Wrong size on APyLevelSoundEvent_Idle");
-static_assert(offsetof(APyLevelSoundEvent_Idle, Probability) == 0x000710, "Member 'APyLevelSoundEvent_Idle::Probability' has a wrong offset!");
-static_assert(offsetof(APyLevelSoundEvent_Idle, CoolDownTime) == 0x000714, "Member 'APyLevelSoundEvent_Idle::CoolDownTime' has a wrong offset!");
-static_assert(offsetof(APyLevelSoundEvent_Idle, TriggerTime) == 0x000718, "Member 'APyLevelSoundEvent_Idle::TriggerTime' has a wrong offset!");
-static_assert(offsetof(APyLevelSoundEvent_Idle, VoiceIDs) == 0x000720, "Member 'APyLevelSoundEvent_Idle::VoiceIDs' has a wrong offset!");
-static_assert(offsetof(APyLevelSoundEvent_Idle, SpecialVoiceIDs) == 0x000730, "Member 'APyLevelSoundEvent_Idle::SpecialVoiceIDs' has a wrong offset!");
-static_assert(offsetof(APyLevelSoundEvent_Idle, DuplicateLimit) == 0x000780, "Member 'APyLevelSoundEvent_Idle::DuplicateLimit' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSoundEvent_Idle;
 
 }
 

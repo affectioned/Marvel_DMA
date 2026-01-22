@@ -17,28 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1027_CharacterBP.1027_CharacterBP_C
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class AOne027_CharacterBP_C final : public APyGrootCharacter
 {
 public:
-	uint8                                         Pad_21C1[0x7];                                     // 0x21C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelPhysicsHandleComponent*          MarvelPhysicsHandle;                               // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22D1[0x7];                                     // 0x22D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelPhysicsHandleComponent*          MarvelPhysicsHandle;                               // 0x22D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x22E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1027_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1027_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1027_CharacterBP_C")
 	}
 	static class AOne027_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne027_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne027_CharacterBP_C) == 0x000010, "Wrong alignment on AOne027_CharacterBP_C");
-static_assert(sizeof(AOne027_CharacterBP_C) == 0x0021E0, "Wrong size on AOne027_CharacterBP_C");
-static_assert(offsetof(AOne027_CharacterBP_C, MarvelPhysicsHandle) == 0x0021C8, "Member 'AOne027_CharacterBP_C::MarvelPhysicsHandle' has a wrong offset!");
-static_assert(offsetof(AOne027_CharacterBP_C, PhysicalInteraction) == 0x0021D0, "Member 'AOne027_CharacterBP_C::PhysicalInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_AOne027_CharacterBP_C;
 
 }
 

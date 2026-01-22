@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity127_PurchaseLv.PyWidget_Activity127_PurchaseLv
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity127_PurchaseLv final : public UPyWidget_ActivityExpBpBase_PurchaseLv
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity127_PurchaseLv">();
+		STATIC_CLASS_IMPL("PyWidget_Activity127_PurchaseLv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity127_PurchaseLv")
 	}
 	static class UPyWidget_Activity127_PurchaseLv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity127_PurchaseLv>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity127_PurchaseLv) == 0x000008, "Wrong alignment on UPyWidget_Activity127_PurchaseLv");
-static_assert(sizeof(UPyWidget_Activity127_PurchaseLv) == 0x0005C0, "Wrong size on UPyWidget_Activity127_PurchaseLv");
+DUMPER7_ASSERTS_UPyWidget_Activity127_PurchaseLv;
 
 }
 

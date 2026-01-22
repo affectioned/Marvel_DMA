@@ -23,9 +23,7 @@ struct PyAbility_103441_GetSpawnSocketInfo final
 public:
 	struct FMarvelAbilitySocketInfo               ReturnValue;                                       // 0x0000(0x00A0)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_103441_GetSpawnSocketInfo) == 0x000010, "Wrong alignment on PyAbility_103441_GetSpawnSocketInfo");
-static_assert(sizeof(PyAbility_103441_GetSpawnSocketInfo) == 0x0000A0, "Wrong size on PyAbility_103441_GetSpawnSocketInfo");
-static_assert(offsetof(PyAbility_103441_GetSpawnSocketInfo, ReturnValue) == 0x000000, "Member 'PyAbility_103441_GetSpawnSocketInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103441_GetSpawnSocketInfo;
 
 // PythonFunction PyAbility_103441.PyAbility_103441.CanSpawnProjectile
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_103441_CanSpawnProjectile final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103441_CanSpawnProjectile) == 0x000001, "Wrong alignment on PyAbility_103441_CanSpawnProjectile");
-static_assert(sizeof(PyAbility_103441_CanSpawnProjectile) == 0x000001, "Wrong size on PyAbility_103441_CanSpawnProjectile");
-static_assert(offsetof(PyAbility_103441_CanSpawnProjectile, ReturnValue) == 0x000000, "Member 'PyAbility_103441_CanSpawnProjectile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103441_CanSpawnProjectile;
 
 }
 

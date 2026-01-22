@@ -17,45 +17,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CollaborativeAbility_AbilityIcon.WBP_CollaborativeAbility_AbilityIcon_C
-// 0x0058 (0x07A8 - 0x0750)
+// 0x0058 (0x0800 - 0x07A8)
 class UWBP_CollaborativeAbility_AbilityIcon_C final : public UPyWidget_Common_BondIcon
 {
 public:
-	class UWidgetAnimation*                       Anim_Synergy;                                      // 0x0750(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Status;                                       // 0x0758(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_AbilityIcon_Unknown;                           // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg;                                            // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Frame;                                      // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx1;                                        // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx2;                                        // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx3;                                        // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Com_VX_Press_C*                    WBP_Com_VX_Press;                                  // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Synergy;                                      // 0x07A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Status;                                       // 0x07B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_AbilityIcon_Unknown;                           // 0x07C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x07C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Frame;                                      // 0x07D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x07D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx1;                                        // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx2;                                        // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx3;                                        // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Com_VX_Press_C*                    WBP_Com_VX_Press;                                  // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CollaborativeAbility_AbilityIcon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CollaborativeAbility_AbilityIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CollaborativeAbility_AbilityIcon_C")
 	}
 	static class UWBP_CollaborativeAbility_AbilityIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CollaborativeAbility_AbilityIcon_C>();
 	}
 };
-static_assert(alignof(UWBP_CollaborativeAbility_AbilityIcon_C) == 0x000008, "Wrong alignment on UWBP_CollaborativeAbility_AbilityIcon_C");
-static_assert(sizeof(UWBP_CollaborativeAbility_AbilityIcon_C) == 0x0007A8, "Wrong size on UWBP_CollaborativeAbility_AbilityIcon_C");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Anim_Synergy) == 0x000750, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Anim_Synergy' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Anim_Status) == 0x000758, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Anim_Status' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_AbilityIcon) == 0x000760, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_AbilityIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_AbilityIcon_Unknown) == 0x000768, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_AbilityIcon_Unknown' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg) == 0x000770, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg_Frame) == 0x000778, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg_Hover) == 0x000780, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg_Vx1) == 0x000788, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg_Vx2) == 0x000790, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg_Vx2' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, Img_Bg_Vx3) == 0x000798, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::Img_Bg_Vx3' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_AbilityIcon_C, WBP_Com_VX_Press) == 0x0007A0, "Member 'UWBP_CollaborativeAbility_AbilityIcon_C::WBP_Com_VX_Press' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CollaborativeAbility_AbilityIcon_C;
 
 }
 

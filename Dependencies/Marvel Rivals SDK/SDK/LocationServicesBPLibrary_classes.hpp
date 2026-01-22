@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "LocationServicesBPLibrary_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "LocationServicesBPLibrary_structs.hpp"
 
 
 namespace SDK
@@ -34,15 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LocationServices">();
+		STATIC_CLASS_IMPL("LocationServices")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocationServices")
 	}
 	static class ULocationServices* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocationServices>();
 	}
 };
-static_assert(alignof(ULocationServices) == 0x000008, "Wrong alignment on ULocationServices");
-static_assert(sizeof(ULocationServices) == 0x000030, "Wrong size on ULocationServices");
+DUMPER7_ASSERTS_ULocationServices;
 
 // Class LocationServicesBPLibrary.LocationServicesImpl
 // 0x0010 (0x0040 - 0x0030)
@@ -54,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LocationServicesImpl">();
+		STATIC_CLASS_IMPL("LocationServicesImpl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocationServicesImpl")
 	}
 	static class ULocationServicesImpl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocationServicesImpl>();
 	}
 };
-static_assert(alignof(ULocationServicesImpl) == 0x000008, "Wrong alignment on ULocationServicesImpl");
-static_assert(sizeof(ULocationServicesImpl) == 0x000040, "Wrong size on ULocationServicesImpl");
-static_assert(offsetof(ULocationServicesImpl, OnLocationChanged) == 0x000030, "Member 'ULocationServicesImpl::OnLocationChanged' has a wrong offset!");
+DUMPER7_ASSERTS_ULocationServicesImpl;
 
 }
 

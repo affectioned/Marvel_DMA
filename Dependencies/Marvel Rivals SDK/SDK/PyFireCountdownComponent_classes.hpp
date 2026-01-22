@@ -39,17 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFireCountdownComponent">();
+		STATIC_CLASS_IMPL("PyFireCountdownComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFireCountdownComponent")
 	}
 	static class UPyFireCountdownComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyFireCountdownComponent>();
 	}
 };
-static_assert(alignof(UPyFireCountdownComponent) == 0x000008, "Wrong alignment on UPyFireCountdownComponent");
-static_assert(sizeof(UPyFireCountdownComponent) == 0x000120, "Wrong size on UPyFireCountdownComponent");
-static_assert(offsetof(UPyFireCountdownComponent, Time) == 0x000108, "Member 'UPyFireCountdownComponent::Time' has a wrong offset!");
-static_assert(offsetof(UPyFireCountdownComponent, State) == 0x000110, "Member 'UPyFireCountdownComponent::State' has a wrong offset!");
+DUMPER7_ASSERTS_UPyFireCountdownComponent;
 
 }
 

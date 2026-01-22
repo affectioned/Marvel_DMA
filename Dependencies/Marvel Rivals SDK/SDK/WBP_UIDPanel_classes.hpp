@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UIDPanel.WBP_UIDPanel_C
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UWBP_UIDPanel_C final : public UPyWidget_UIDPanel
 {
 public:
-	class UMarvelTextBlock*                       Text_UID;                                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BackstageShader_Progress02_C*      WBP_BackstageShader_Progress02;                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_UID;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BackstageShader_Progress02_C*      WBP_BackstageShader_Progress02;                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UIDPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UIDPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UIDPanel_C")
 	}
 	static class UWBP_UIDPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UIDPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_UIDPanel_C) == 0x000008, "Wrong alignment on UWBP_UIDPanel_C");
-static_assert(sizeof(UWBP_UIDPanel_C) == 0x0005D0, "Wrong size on UWBP_UIDPanel_C");
-static_assert(offsetof(UWBP_UIDPanel_C, Text_UID) == 0x0005C0, "Member 'UWBP_UIDPanel_C::Text_UID' has a wrong offset!");
-static_assert(offsetof(UWBP_UIDPanel_C, WBP_BackstageShader_Progress02) == 0x0005C8, "Member 'UWBP_UIDPanel_C::WBP_BackstageShader_Progress02' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UIDPanel_C;
 
 }
 

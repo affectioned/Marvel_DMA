@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_Mission.PyWidget_Activity147_Mission
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity147_Mission final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Mission">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Mission")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Mission")
 	}
 	static class UPyWidget_Activity147_Mission* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Mission>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Mission) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Mission");
-static_assert(sizeof(UPyWidget_Activity147_Mission) == 0x0005F8, "Wrong size on UPyWidget_Activity147_Mission");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Mission;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWidget_Mall_Bundle_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Mall_Bundle_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Mall_Bundle_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Mall_Bundle_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Mall_Bundle_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_Mall_Bundle_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Mall_Bundle.PyWidget_Mall_Bundle.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Mall_Bundle_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Mall_Bundle_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Mall_Bundle_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Mall_Bundle_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Mall_Bundle_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Mall_Bundle_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_OnAnimationFinished;
 
 // PythonFunction PyWidget_Mall_Bundle.PyWidget_Mall_Bundle.Bundle_Navigation_To_Up_OR_Down
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down) == 0x000008, "Wrong alignment on PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down");
-static_assert(sizeof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down) == 0x000010, "Wrong size on PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down");
-static_assert(offsetof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down, Navigation_0) == 0x000000, "Member 'PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down, ReturnValue) == 0x000008, "Member 'PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_Bundle_Navigation_To_Up_OR_Down;
 
 // PythonFunction PyWidget_Mall_Bundle.PyWidget_Mall_Bundle.Bundle_Navigation_To_Left_OR_Right
 // 0x0010 (0x0010 - 0x0000)
@@ -61,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right) == 0x000008, "Wrong alignment on PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right");
-static_assert(sizeof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right) == 0x000010, "Wrong size on PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right");
-static_assert(offsetof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right, Navigation_0) == 0x000000, "Member 'PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right, ReturnValue) == 0x000008, "Member 'PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_Bundle_Navigation_To_Left_OR_Right;
 
 // PythonFunction PyWidget_Mall_Bundle.PyWidget_Mall_Bundle.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -73,9 +63,7 @@ struct PyWidget_Mall_Bundle_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_Mall_Bundle_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_Mall_Bundle_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_Mall_Bundle_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_Mall_Bundle_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_Mall_Bundle_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_GetAutoTestDebugName;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Activity136_RankItem_SetAnimationStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity136_RankItem_SetAnimationStart) == 0x000004, "Wrong alignment on PyWidget_Activity136_RankItem_SetAnimationStart");
-static_assert(sizeof(PyWidget_Activity136_RankItem_SetAnimationStart) == 0x000004, "Wrong size on PyWidget_Activity136_RankItem_SetAnimationStart");
-static_assert(offsetof(PyWidget_Activity136_RankItem_SetAnimationStart, Time) == 0x000000, "Member 'PyWidget_Activity136_RankItem_SetAnimationStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity136_RankItem_SetAnimationStart;
 
 // PythonFunction Pywidget_Activity136_Rank_Item.PyWidget_Activity136_Rank_Unit.SetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity136_Rank_Unit_SetAnimationStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity136_Rank_Unit_SetAnimationStart) == 0x000004, "Wrong alignment on PyWidget_Activity136_Rank_Unit_SetAnimationStart");
-static_assert(sizeof(PyWidget_Activity136_Rank_Unit_SetAnimationStart) == 0x000004, "Wrong size on PyWidget_Activity136_Rank_Unit_SetAnimationStart");
-static_assert(offsetof(PyWidget_Activity136_Rank_Unit_SetAnimationStart, Time) == 0x000000, "Member 'PyWidget_Activity136_Rank_Unit_SetAnimationStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity136_Rank_Unit_SetAnimationStart;
 
 }
 

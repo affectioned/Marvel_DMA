@@ -17,13 +17,9 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity125_ParticipateBtn.PyWidget_Activity125_ParticipateBtn
-// 0x0020 (0x0748 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity125_ParticipateBtn final : public UPyWidget_Button
 {
-public:
-	TMulticastInlineDelegate<void()>              OnDisableHovered;                                  // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDisableUnhovered;                                // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
 public:
 	void OnInitialized();
 	void Construct();
@@ -34,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity125_ParticipateBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity125_ParticipateBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity125_ParticipateBtn")
 	}
 	static class UPyWidget_Activity125_ParticipateBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity125_ParticipateBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity125_ParticipateBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity125_ParticipateBtn");
-static_assert(sizeof(UPyWidget_Activity125_ParticipateBtn) == 0x000748, "Wrong size on UPyWidget_Activity125_ParticipateBtn");
-static_assert(offsetof(UPyWidget_Activity125_ParticipateBtn, OnDisableHovered) == 0x000728, "Member 'UPyWidget_Activity125_ParticipateBtn::OnDisableHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity125_ParticipateBtn, OnDisableUnhovered) == 0x000738, "Member 'UPyWidget_Activity125_ParticipateBtn::OnDisableUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity125_ParticipateBtn;
 
 }
 

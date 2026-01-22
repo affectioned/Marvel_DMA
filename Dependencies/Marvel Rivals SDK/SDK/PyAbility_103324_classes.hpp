@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103324.PyAbility_103324
-// 0x0008 (0x2B88 - 0x2B80)
+// 0x0008 (0x2BD8 - 0x2BD0)
 class UPyAbility_103324 : public UAbility_107
 {
 public:
-	int32                                         SniperRifleID;                                     // 0x2B80(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SniperRifleID;                                     // 0x2BD0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnMontageMissileEvent();
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103324">();
+		STATIC_CLASS_IMPL("PyAbility_103324")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103324")
 	}
 	static class UPyAbility_103324* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103324>();
 	}
 };
-static_assert(alignof(UPyAbility_103324) == 0x000008, "Wrong alignment on UPyAbility_103324");
-static_assert(sizeof(UPyAbility_103324) == 0x002B88, "Wrong size on UPyAbility_103324");
-static_assert(offsetof(UPyAbility_103324, SniperRifleID) == 0x002B80, "Member 'UPyAbility_103324::SniperRifleID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103324;
 
 }
 

@@ -24,9 +24,7 @@ struct PyBuffAbility_120_DamageToCure_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_DamageToCure_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_DamageToCure_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_DamageToCure_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_DamageToCure_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_DamageToCure_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_DamageToCure_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_DamageToCure_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_TreatSource.PyBuffAbility_120_DamageToCure.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_DamageToCure_OnTakeDamage) == 0x000008, "Wrong alignment on PyBuffAbility_120_DamageToCure_OnTakeDamage");
-static_assert(sizeof(PyBuffAbility_120_DamageToCure_OnTakeDamage) == 0x000028, "Wrong size on PyBuffAbility_120_DamageToCure_OnTakeDamage");
-static_assert(offsetof(PyBuffAbility_120_DamageToCure_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_DamageToCure_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_DamageToCure_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_DamageToCure_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_DamageToCure_OnTakeDamage, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_DamageToCure_OnTakeDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_DamageToCure_OnTakeDamage;
 
 // PythonFunction PyBuffAbility_120_TreatSource.PyBuffAbility_120_DamageToCure.OnGameplayEffectRemoved
 // 0x0038 (0x0038 - 0x0000)
@@ -50,9 +44,7 @@ struct PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved final
 public:
 	struct FGameplayEffectRemovalInfo             Handle;                                            // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved) == 0x000008, "Wrong alignment on PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved");
-static_assert(sizeof(PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved) == 0x000038, "Wrong size on PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved");
-static_assert(offsetof(PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved, Handle) == 0x000000, "Member 'PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved::Handle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_DamageToCure_OnGameplayEffectRemoved;
 
 // PythonFunction PyBuffAbility_120_TreatSource.PyBuffAbility_120_ChanceDoubleTreat.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +53,7 @@ struct PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_ChanceDoubleTreat_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_TreatSource.PyBuffAbility_120_ChanceDoubleTreat.OnApplyTreat
 // 0x0028 (0x0028 - 0x0000)
@@ -74,11 +64,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat) == 0x000008, "Wrong alignment on PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat");
-static_assert(sizeof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat) == 0x000028, "Wrong size on PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_ChanceDoubleTreat_OnApplyTreat;
 
 // PythonFunction PyBuffAbility_120_TreatSource.PyBuffAbility_120_ChanceDoubleTreat.OnApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -89,11 +75,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage) == 0x000008, "Wrong alignment on PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage");
-static_assert(sizeof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage) == 0x000028, "Wrong size on PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage, InSourceAvatar) == 0x000000, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage, InTargetAvatar) == 0x000008, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_ChanceDoubleTreat_OnApplyDamage;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_101183_OnWeaponSummonerChanged final
 public:
 	class APhysicsSummoner*                       actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101183_OnWeaponSummonerChanged) == 0x000008, "Wrong alignment on PyAbility_101183_OnWeaponSummonerChanged");
-static_assert(sizeof(PyAbility_101183_OnWeaponSummonerChanged) == 0x000008, "Wrong size on PyAbility_101183_OnWeaponSummonerChanged");
-static_assert(offsetof(PyAbility_101183_OnWeaponSummonerChanged, actor) == 0x000000, "Member 'PyAbility_101183_OnWeaponSummonerChanged::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101183_OnWeaponSummonerChanged;
 
 }
 

@@ -28,13 +28,7 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         DefaultOptionIndex_28_D7A9AF504D4275452E329AA3DDE17600; // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHighLightSaveSettingParam_BP) == 0x000008, "Wrong alignment on FHighLightSaveSettingParam_BP");
-static_assert(sizeof(FHighLightSaveSettingParam_BP) == 0x000038, "Wrong size on FHighLightSaveSettingParam_BP");
-static_assert(offsetof(FHighLightSaveSettingParam_BP, Title_2_72E851124B405AA147446183CF0B5025) == 0x000000, "Member 'FHighLightSaveSettingParam_BP::Title_2_72E851124B405AA147446183CF0B5025' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingParam_BP, OptionValue_16_AFBC555A4480B03EEEBE99B487006274) == 0x000018, "Member 'FHighLightSaveSettingParam_BP::OptionValue_16_AFBC555A4480B03EEEBE99B487006274' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingParam_BP, Sort_22_C4F04A13487D0F6F458851BBE47B156D) == 0x000028, "Member 'FHighLightSaveSettingParam_BP::Sort_22_C4F04A13487D0F6F458851BBE47B156D' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingParam_BP, IsNeedShow_25_0E711A5B4346B8294F654D8B887C6FC3) == 0x00002C, "Member 'FHighLightSaveSettingParam_BP::IsNeedShow_25_0E711A5B4346B8294F654D8B887C6FC3' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingParam_BP, DefaultOptionIndex_28_D7A9AF504D4275452E329AA3DDE17600) == 0x000030, "Member 'FHighLightSaveSettingParam_BP::DefaultOptionIndex_28_D7A9AF504D4275452E329AA3DDE17600' has a wrong offset!");
+DUMPER7_ASSERTS_FHighLightSaveSettingParam_BP;
 
 }
 

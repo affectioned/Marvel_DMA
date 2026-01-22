@@ -28,14 +28,7 @@ public:
 	int32                                         level;                                             // 0x00E0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x00E4(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ExampleDefaultValueGenerator_BP_Gen) == 0x000008, "Wrong alignment on ExampleDefaultValueGenerator_BP_Gen");
-static_assert(sizeof(ExampleDefaultValueGenerator_BP_Gen) == 0x0000E8, "Wrong size on ExampleDefaultValueGenerator_BP_Gen");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, obj) == 0x000000, "Member 'ExampleDefaultValueGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, setting_key) == 0x000008, "Member 'ExampleDefaultValueGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, value_range) == 0x000018, "Member 'ExampleDefaultValueGenerator_BP_Gen::value_range' has a wrong offset!");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, platform_name) == 0x0000C8, "Member 'ExampleDefaultValueGenerator_BP_Gen::platform_name' has a wrong offset!");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, level) == 0x0000E0, "Member 'ExampleDefaultValueGenerator_BP_Gen::level' has a wrong offset!");
-static_assert(offsetof(ExampleDefaultValueGenerator_BP_Gen, ReturnValue) == 0x0000E4, "Member 'ExampleDefaultValueGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ExampleDefaultValueGenerator_BP_Gen;
 
 }
 

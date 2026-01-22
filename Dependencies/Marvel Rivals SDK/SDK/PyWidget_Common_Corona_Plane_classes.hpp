@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Corona_Plane.PyWidget_Common_Corona_Plane
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_Common_Corona_Plane final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           WBP_Squad_Open_Personnal_Panel_Release;            // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnTip_Styles;                                  // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SelectTip_Styles;                                  // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ClickTip_Styles;                                   // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           WBP_Squad_Open_Personnal_Panel_Release;            // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnTip_Styles;                                  // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SelectTip_Styles;                                  // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ClickTip_Styles;                                   // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Corona_Plane">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Corona_Plane")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Corona_Plane")
 	}
 	static class UPyWidget_Common_Corona_Plane* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Corona_Plane>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Corona_Plane) == 0x000008, "Wrong alignment on UPyWidget_Common_Corona_Plane");
-static_assert(sizeof(UPyWidget_Common_Corona_Plane) == 0x000630, "Wrong size on UPyWidget_Common_Corona_Plane");
-static_assert(offsetof(UPyWidget_Common_Corona_Plane, WBP_Squad_Open_Personnal_Panel_Release) == 0x0005F8, "Member 'UPyWidget_Common_Corona_Plane::WBP_Squad_Open_Personnal_Panel_Release' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Corona_Plane, ReturnTip_Styles) == 0x000600, "Member 'UPyWidget_Common_Corona_Plane::ReturnTip_Styles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Corona_Plane, SelectTip_Styles) == 0x000610, "Member 'UPyWidget_Common_Corona_Plane::SelectTip_Styles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Corona_Plane, ClickTip_Styles) == 0x000620, "Member 'UPyWidget_Common_Corona_Plane::ClickTip_Styles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Corona_Plane;
 
 }
 

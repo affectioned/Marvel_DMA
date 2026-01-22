@@ -21,9 +21,7 @@ struct PyWidget_Halloween_Overview_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_Overview_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Halloween_Overview_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Halloween_Overview_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Halloween_Overview_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Halloween_Overview_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Halloween_Overview_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_Overview_OnVisibleChanged;
 
 // PythonFunction PyWidget_Halloween_Overview.PyWidget_Halloween_Overview.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Halloween_Overview_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_Overview_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Halloween_Overview_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Halloween_Overview_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Halloween_Overview_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Halloween_Overview_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Halloween_Overview_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_Overview_OnAnimationFinished;
 
 }
 

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyMarvelListEntryWidget.PyMarvelListEntryWidget
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyMarvelListEntryWidget : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UObject* ListItemObject)> OnListItemObjectSetDelegate;       // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnEntryReleasedDelegate;                           // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bIsSelected)> OnItemSelectionChangedDelegate;                 // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UObject* ListItemObject)> OnListItemObjectSetDelegate;       // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnEntryReleasedDelegate;                           // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bIsSelected)> OnItemSelectionChangedDelegate;                 // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PyOnListItemObjectSet(class UObject* ListItemObject);
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelListEntryWidget">();
+		STATIC_CLASS_IMPL("PyMarvelListEntryWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelListEntryWidget")
 	}
 	static class UPyMarvelListEntryWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelListEntryWidget>();
 	}
 };
-static_assert(alignof(UPyMarvelListEntryWidget) == 0x000008, "Wrong alignment on UPyMarvelListEntryWidget");
-static_assert(sizeof(UPyMarvelListEntryWidget) == 0x0005F0, "Wrong size on UPyMarvelListEntryWidget");
-static_assert(offsetof(UPyMarvelListEntryWidget, OnListItemObjectSetDelegate) == 0x0005C0, "Member 'UPyMarvelListEntryWidget::OnListItemObjectSetDelegate' has a wrong offset!");
-static_assert(offsetof(UPyMarvelListEntryWidget, OnEntryReleasedDelegate) == 0x0005D0, "Member 'UPyMarvelListEntryWidget::OnEntryReleasedDelegate' has a wrong offset!");
-static_assert(offsetof(UPyMarvelListEntryWidget, OnItemSelectionChangedDelegate) == 0x0005E0, "Member 'UPyMarvelListEntryWidget::OnItemSelectionChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelListEntryWidget;
 
 }
 

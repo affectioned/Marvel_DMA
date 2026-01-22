@@ -44,25 +44,7 @@ public:
 	uint8                                         Pad_8A[0x2];                                       // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FGameplayTag& EventTag)> K2Node_CreateDelegate_OutputDelegate_2;     // 0x008C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP) == 0x000008, "Wrong alignment on Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP");
-static_assert(sizeof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP) == 0x0000A0, "Wrong size on Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, EntryPoint) == 0x000000, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000004, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, Temp_struct_Variable) == 0x000024, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000044, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_MakeArray_Array) == 0x000048, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, CallFunc_PlayTimelineByIndex_ReturnValue) == 0x000058, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::CallFunc_PlayTimelineByIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, CallFunc_AE_GetCharacterActor_ReturnValue) == 0x000068, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::CallFunc_AE_GetCharacterActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CustomEvent_Character) == 0x000070, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CustomEvent_Character' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CustomEvent_PrevMovementMode) == 0x000078, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CustomEvent_PrevMovementMode' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CustomEvent_PreviousCustomMode) == 0x000079, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CustomEvent_PreviousCustomMode' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag_1) == 0x00007C, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag_1' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000088, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_Event_bWasCancelled) == 0x000089, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP, K2Node_CreateDelegate_OutputDelegate_2) == 0x00008C, "Member 'Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_ExecuteUbergraph_Ability_103341_BP;
 
 // Function Ability_103341_BP.Ability_103341_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +53,7 @@ struct Ability_103341_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_103341_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_103341_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_103341_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_103341_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_103341_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_K2_OnEndAbility;
 
 // Function Ability_103341_BP.Ability_103341_BP_C.OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF
 // 0x000C (0x000C - 0x0000)
@@ -82,9 +62,7 @@ struct Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF 
 public:
 	struct FGameplayTag                           TriggerNotifyTagEventDelegate__DelegateSignature_EventTag; // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF) == 0x000004, "Wrong alignment on Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF");
-static_assert(sizeof(Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF) == 0x00000C, "Wrong size on Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF");
-static_assert(offsetof(Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF, TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000000, "Member 'Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF::TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_OnCompletedDelegate_A7C794CC4A683BA9C4FF3ABE68B648BF;
 
 // Function Ability_103341_BP.Ability_103341_BP_C.OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF
 // 0x000C (0x000C - 0x0000)
@@ -93,9 +71,7 @@ struct Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF final
 public:
 	struct FGameplayTag                           TriggerNotifyTagEventDelegate__DelegateSignature_EventTag; // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF) == 0x000004, "Wrong alignment on Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF");
-static_assert(sizeof(Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF) == 0x00000C, "Wrong size on Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF");
-static_assert(offsetof(Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF, TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000000, "Member 'Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF::TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_OnTriggerEvent_A7C794CC4A683BA9C4FF3ABE68B648BF;
 
 // Function Ability_103341_BP.Ability_103341_BP_C.当运动状态发生改变
 // 0x0010 (0x0010 - 0x0000)
@@ -106,11 +82,7 @@ public:
 	EMovementMode                                 PrevMovementMode;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         PreviousCustomMode;                                // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_当运动状态发生改变) == 0x000008, "Wrong alignment on Ability_103341_BP_C_当运动状态发生改变");
-static_assert(sizeof(Ability_103341_BP_C_当运动状态发生改变) == 0x000010, "Wrong size on Ability_103341_BP_C_当运动状态发生改变");
-static_assert(offsetof(Ability_103341_BP_C_当运动状态发生改变, Character) == 0x000000, "Member 'Ability_103341_BP_C_当运动状态发生改变::Character' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_当运动状态发生改变, PrevMovementMode) == 0x000008, "Member 'Ability_103341_BP_C_当运动状态发生改变::PrevMovementMode' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_当运动状态发生改变, PreviousCustomMode) == 0x000009, "Member 'Ability_103341_BP_C_当运动状态发生改变::PreviousCustomMode' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_当运动状态发生改变;
 
 // Function Ability_103341_BP.Ability_103341_BP_C.设置角色强化跳跃
 // 0x0018 (0x0018 - 0x0000)
@@ -121,11 +93,7 @@ public:
 	class ABlackWidowCharacter*                   K2Node_DynamicCast_AsBlack_Widow_Character;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103341_BP_C_设置角色强化跳跃) == 0x000008, "Wrong alignment on Ability_103341_BP_C_设置角色强化跳跃");
-static_assert(sizeof(Ability_103341_BP_C_设置角色强化跳跃) == 0x000018, "Wrong size on Ability_103341_BP_C_设置角色强化跳跃");
-static_assert(offsetof(Ability_103341_BP_C_设置角色强化跳跃, CallFunc_GetAbilityOwnerCharacter_ReturnValue) == 0x000000, "Member 'Ability_103341_BP_C_设置角色强化跳跃::CallFunc_GetAbilityOwnerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_设置角色强化跳跃, K2Node_DynamicCast_AsBlack_Widow_Character) == 0x000008, "Member 'Ability_103341_BP_C_设置角色强化跳跃::K2Node_DynamicCast_AsBlack_Widow_Character' has a wrong offset!");
-static_assert(offsetof(Ability_103341_BP_C_设置角色强化跳跃, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'Ability_103341_BP_C_设置角色强化跳跃::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103341_BP_C_设置角色强化跳跃;
 
 }
 

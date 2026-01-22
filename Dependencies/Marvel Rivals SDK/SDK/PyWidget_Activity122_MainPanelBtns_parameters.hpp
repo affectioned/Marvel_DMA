@@ -21,9 +21,7 @@ struct PyWidget_Activity122_MainRankBtn_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_MainRankBtn_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Activity122_MainRankBtn_SetIsHover");
-static_assert(sizeof(PyWidget_Activity122_MainRankBtn_SetIsHover) == 0x000001, "Wrong size on PyWidget_Activity122_MainRankBtn_SetIsHover");
-static_assert(offsetof(PyWidget_Activity122_MainRankBtn_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Activity122_MainRankBtn_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_MainRankBtn_SetIsHover;
 
 // PythonFunction PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainRewardBtn.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity122_MainRewardBtn_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_MainRewardBtn_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Activity122_MainRewardBtn_SetIsHover");
-static_assert(sizeof(PyWidget_Activity122_MainRewardBtn_SetIsHover) == 0x000001, "Wrong size on PyWidget_Activity122_MainRewardBtn_SetIsHover");
-static_assert(offsetof(PyWidget_Activity122_MainRewardBtn_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Activity122_MainRewardBtn_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_MainRewardBtn_SetIsHover;
 
 // PythonFunction PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainMatchBtn.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Activity122_MainMatchBtn_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_MainMatchBtn_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Activity122_MainMatchBtn_SetIsHover");
-static_assert(sizeof(PyWidget_Activity122_MainMatchBtn_SetIsHover) == 0x000001, "Wrong size on PyWidget_Activity122_MainMatchBtn_SetIsHover");
-static_assert(offsetof(PyWidget_Activity122_MainMatchBtn_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Activity122_MainMatchBtn_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_MainMatchBtn_SetIsHover;
 
 // PythonFunction PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainMatchBtn.SetBtnIsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_MainMatchBtn_SetBtnIsEnabled;
 
 }
 

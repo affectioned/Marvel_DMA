@@ -17,34 +17,32 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LimitTimeTrainComputerBP.LimitTimeTrainComputerBP_C
-// 0x0020 (0x0EC0 - 0x0EA0)
+// 0x0020 (0x0F10 - 0x0EF0)
 class ALimitTimeTrainComputerBP_C final : public APyLimitTimeTrainComputer
 {
 public:
-	uint8                                         Pad_E94[0x4];                                      // 0x0E94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckTrainingAreaBP1;                    // 0x0E98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckTrainingAreaBP;                     // 0x0EA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPyWC_LevelActor*                       PyWC_LevelActor;                                   // 0x0EA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0EB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0EB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EE4[0x4];                                      // 0x0EE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckTrainingAreaBP1;                    // 0x0EE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckTrainingAreaBP;                     // 0x0EF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPyWC_LevelActor*                       PyWC_LevelActor;                                   // 0x0EF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0F00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0F08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LimitTimeTrainComputerBP_C">();
+		BP_STATIC_CLASS_IMPL("LimitTimeTrainComputerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LimitTimeTrainComputerBP_C")
 	}
 	static class ALimitTimeTrainComputerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALimitTimeTrainComputerBP_C>();
 	}
 };
-static_assert(alignof(ALimitTimeTrainComputerBP_C) == 0x000010, "Wrong alignment on ALimitTimeTrainComputerBP_C");
-static_assert(sizeof(ALimitTimeTrainComputerBP_C) == 0x000EC0, "Wrong size on ALimitTimeTrainComputerBP_C");
-static_assert(offsetof(ALimitTimeTrainComputerBP_C, LevelScopeCheckTrainingAreaBP1) == 0x000E98, "Member 'ALimitTimeTrainComputerBP_C::LevelScopeCheckTrainingAreaBP1' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainComputerBP_C, LevelScopeCheckTrainingAreaBP) == 0x000EA0, "Member 'ALimitTimeTrainComputerBP_C::LevelScopeCheckTrainingAreaBP' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainComputerBP_C, PyWC_LevelActor) == 0x000EA8, "Member 'ALimitTimeTrainComputerBP_C::PyWC_LevelActor' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainComputerBP_C, LevelScopeCheckComponentBP) == 0x000EB0, "Member 'ALimitTimeTrainComputerBP_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainComputerBP_C, StaticMesh) == 0x000EB8, "Member 'ALimitTimeTrainComputerBP_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ALimitTimeTrainComputerBP_C;
 
 }
 

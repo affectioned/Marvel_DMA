@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SkinRandom_Button.PyWidget_SkinRandom_Button
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_SkinRandom_Button final : public UPyWidget_Button
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SkinRandom_Button">();
+		STATIC_CLASS_IMPL("PyWidget_SkinRandom_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SkinRandom_Button")
 	}
 	static class UPyWidget_SkinRandom_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SkinRandom_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_SkinRandom_Button) == 0x000008, "Wrong alignment on UPyWidget_SkinRandom_Button");
-static_assert(sizeof(UPyWidget_SkinRandom_Button) == 0x000728, "Wrong size on UPyWidget_SkinRandom_Button");
+DUMPER7_ASSERTS_UPyWidget_SkinRandom_Button;
 
 }
 

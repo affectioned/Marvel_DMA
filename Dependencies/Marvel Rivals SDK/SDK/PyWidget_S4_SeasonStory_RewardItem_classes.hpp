@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S4_SeasonStory_RewardItem.PyWidget_S4_SeasonStory_RewardItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_S4_SeasonStory_RewardItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& ItemId)> OnClicked;                           // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& ItemId)> OnClicked;                           // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S4_SeasonStory_RewardItem">();
+		STATIC_CLASS_IMPL("PyWidget_S4_SeasonStory_RewardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S4_SeasonStory_RewardItem")
 	}
 	static class UPyWidget_S4_SeasonStory_RewardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S4_SeasonStory_RewardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S4_SeasonStory_RewardItem) == 0x000008, "Wrong alignment on UPyWidget_S4_SeasonStory_RewardItem");
-static_assert(sizeof(UPyWidget_S4_SeasonStory_RewardItem) == 0x0005D0, "Wrong size on UPyWidget_S4_SeasonStory_RewardItem");
-static_assert(offsetof(UPyWidget_S4_SeasonStory_RewardItem, OnClicked) == 0x0005C0, "Member 'UPyWidget_S4_SeasonStory_RewardItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S4_SeasonStory_RewardItem;
 
 }
 

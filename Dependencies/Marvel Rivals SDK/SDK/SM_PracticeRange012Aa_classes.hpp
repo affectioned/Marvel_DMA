@@ -37,26 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRange012Aa_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRange012Aa_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRange012Aa_C")
 	}
 	static class ASM_PracticeRange012Aa_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRange012Aa_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRange012Aa_C) == 0x000010, "Wrong alignment on ASM_PracticeRange012Aa_C");
-static_assert(sizeof(ASM_PracticeRange012Aa_C) == 0x000740, "Wrong size on ASM_PracticeRange012Aa_C");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Aj) == 0x0006E0, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Aj' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ai) == 0x0006E8, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ai' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ah) == 0x0006F0, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ah' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ag) == 0x0006F8, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ag' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Af) == 0x000700, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Af' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ae) == 0x000708, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ae' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ad) == 0x000710, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ad' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ac) == 0x000718, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ac' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Ab) == 0x000720, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Ab' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRange012Aa) == 0x000728, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRange012Aa' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRange012Aa_C, SM_PracticeRangeBuilding001A) == 0x000730, "Member 'ASM_PracticeRange012Aa_C::SM_PracticeRangeBuilding001A' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRange012Aa_C;
 
 }
 

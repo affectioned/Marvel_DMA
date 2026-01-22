@@ -25,11 +25,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameter;                                 // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMagikCharacter_OnDeath) == 0x000008, "Wrong alignment on PyMagikCharacter_OnDeath");
-static_assert(sizeof(PyMagikCharacter_OnDeath) == 0x000028, "Wrong size on PyMagikCharacter_OnDeath");
-static_assert(offsetof(PyMagikCharacter_OnDeath, InSource) == 0x000000, "Member 'PyMagikCharacter_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyMagikCharacter_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyMagikCharacter_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyMagikCharacter_OnDeath, ModifierParameter) == 0x000010, "Member 'PyMagikCharacter_OnDeath::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyMagikCharacter_OnDeath;
 
 }
 

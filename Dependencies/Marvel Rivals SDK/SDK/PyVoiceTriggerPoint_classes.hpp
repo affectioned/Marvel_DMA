@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVoiceTriggerPoint">();
+		STATIC_CLASS_IMPL("PyVoiceTriggerPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVoiceTriggerPoint")
 	}
 	static class APyVoiceTriggerPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVoiceTriggerPoint>();
 	}
 };
-static_assert(alignof(APyVoiceTriggerPoint) == 0x000010, "Wrong alignment on APyVoiceTriggerPoint");
-static_assert(sizeof(APyVoiceTriggerPoint) == 0x000740, "Wrong size on APyVoiceTriggerPoint");
-static_assert(offsetof(APyVoiceTriggerPoint, IsScopeCheck) == 0x000730, "Member 'APyVoiceTriggerPoint::IsScopeCheck' has a wrong offset!");
+DUMPER7_ASSERTS_APyVoiceTriggerPoint;
 
 }
 

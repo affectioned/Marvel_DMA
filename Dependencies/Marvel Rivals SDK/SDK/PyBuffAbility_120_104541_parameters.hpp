@@ -23,9 +23,7 @@ struct PyBuffAbility_120_10454191_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10454191_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10454191_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10454191_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10454191_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10454191_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10454191_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10454191_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_104541.PyBuffAbility_120_10454191.OnBuffRemovedFromSelf
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGameplayEffectSpecStackHandle         ExpiredEffectHandle;                               // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          bPrematureRemoval;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10454191_OnBuffRemovedFromSelf) == 0x000008, "Wrong alignment on PyBuffAbility_120_10454191_OnBuffRemovedFromSelf");
-static_assert(sizeof(PyBuffAbility_120_10454191_OnBuffRemovedFromSelf) == 0x000010, "Wrong size on PyBuffAbility_120_10454191_OnBuffRemovedFromSelf");
-static_assert(offsetof(PyBuffAbility_120_10454191_OnBuffRemovedFromSelf, ExpiredEffectHandle) == 0x000000, "Member 'PyBuffAbility_120_10454191_OnBuffRemovedFromSelf::ExpiredEffectHandle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10454191_OnBuffRemovedFromSelf, bPrematureRemoval) == 0x000008, "Member 'PyBuffAbility_120_10454191_OnBuffRemovedFromSelf::bPrematureRemoval' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10454191_OnBuffRemovedFromSelf;
 
 }
 

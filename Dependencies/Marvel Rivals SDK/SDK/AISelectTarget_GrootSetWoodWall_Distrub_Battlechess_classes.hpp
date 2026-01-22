@@ -23,15 +23,18 @@ class UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C final : public UPyA
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C")
 	}
 	static class UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C) == 0x000008, "Wrong alignment on UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C");
-static_assert(sizeof(UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C) == 0x0000A8, "Wrong size on UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C");
+DUMPER7_ASSERTS_UAISelectTarget_GrootSetWoodWall_Distrub_Battlechess_C;
 
 }
 

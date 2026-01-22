@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelCueNotify_Quip_OnExecute) == 0x000008, "Wrong alignment on PyMarvelCueNotify_Quip_OnExecute");
-static_assert(sizeof(PyMarvelCueNotify_Quip_OnExecute) == 0x0001E0, "Wrong size on PyMarvelCueNotify_Quip_OnExecute");
-static_assert(offsetof(PyMarvelCueNotify_Quip_OnExecute, MyTarget) == 0x000000, "Member 'PyMarvelCueNotify_Quip_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_Quip_OnExecute, Parameters) == 0x000008, "Member 'PyMarvelCueNotify_Quip_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_Quip_OnExecute, ReturnValue) == 0x0001D8, "Member 'PyMarvelCueNotify_Quip_OnExecute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelCueNotify_Quip_OnExecute;
 
 }
 

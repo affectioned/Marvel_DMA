@@ -21,9 +21,7 @@ struct PyAbility_105162_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105162_CanActivate");
-static_assert(sizeof(PyAbility_105162_CanActivate) == 0x000001, "Wrong size on PyAbility_105162_CanActivate");
-static_assert(offsetof(PyAbility_105162_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105162_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_CanActivate;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.K2_TriggerGameplay
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_105162_K2_TriggerGameplay final
 public:
 	float                                         HoldTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_K2_TriggerGameplay) == 0x000004, "Wrong alignment on PyAbility_105162_K2_TriggerGameplay");
-static_assert(sizeof(PyAbility_105162_K2_TriggerGameplay) == 0x000004, "Wrong size on PyAbility_105162_K2_TriggerGameplay");
-static_assert(offsetof(PyAbility_105162_K2_TriggerGameplay, HoldTime) == 0x000000, "Member 'PyAbility_105162_K2_TriggerGameplay::HoldTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_K2_TriggerGameplay;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.K2_MaxHoldTimeGameplay
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_105162_K2_MaxHoldTimeGameplay final
 public:
 	float                                         HoldTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_K2_MaxHoldTimeGameplay) == 0x000004, "Wrong alignment on PyAbility_105162_K2_MaxHoldTimeGameplay");
-static_assert(sizeof(PyAbility_105162_K2_MaxHoldTimeGameplay) == 0x000004, "Wrong size on PyAbility_105162_K2_MaxHoldTimeGameplay");
-static_assert(offsetof(PyAbility_105162_K2_MaxHoldTimeGameplay, HoldTime) == 0x000000, "Member 'PyAbility_105162_K2_MaxHoldTimeGameplay::HoldTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_K2_MaxHoldTimeGameplay;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_105162_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105162_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105162_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105162_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105162_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105162_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -65,9 +57,7 @@ struct PyAbility_105162_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_105162_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_105162_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_105162_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_105162_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_105162_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -76,9 +66,7 @@ struct PyAbility_105162_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_105162_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_105162_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_105162_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_105162_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_105162_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_105162.PyAbility_105162.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -87,9 +75,7 @@ struct PyAbility_105162_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105162_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_105162_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_105162_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_105162_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_105162_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_105162_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105162_NativeOnMontageInterrupted;
 
 }
 

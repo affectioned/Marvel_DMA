@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass EffectiveComponent_10420102_BP.EffectiveComponent_10420102_BP_C
-// 0x0000 (0x1C90 - 0x1C90)
+// 0x0000 (0x2070 - 0x2070)
 class UEffectiveComponent_10420102_BP_C final : public UEffectiveComponent_10420102
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EffectiveComponent_10420102_BP_C">();
+		BP_STATIC_CLASS_IMPL("EffectiveComponent_10420102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectiveComponent_10420102_BP_C")
 	}
 	static class UEffectiveComponent_10420102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectiveComponent_10420102_BP_C>();
 	}
 };
-static_assert(alignof(UEffectiveComponent_10420102_BP_C) == 0x000010, "Wrong alignment on UEffectiveComponent_10420102_BP_C");
-static_assert(sizeof(UEffectiveComponent_10420102_BP_C) == 0x001C90, "Wrong size on UEffectiveComponent_10420102_BP_C");
+DUMPER7_ASSERTS_UEffectiveComponent_10420102_BP_C;
 
 }
 

@@ -23,15 +23,18 @@ class UPySubVoMgr_Gameplay final : public UPySubVoMgrBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgr_Gameplay">();
+		STATIC_CLASS_IMPL("PySubVoMgr_Gameplay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgr_Gameplay")
 	}
 	static class UPySubVoMgr_Gameplay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgr_Gameplay>();
 	}
 };
-static_assert(alignof(UPySubVoMgr_Gameplay) == 0x000008, "Wrong alignment on UPySubVoMgr_Gameplay");
-static_assert(sizeof(UPySubVoMgr_Gameplay) == 0x000108, "Wrong size on UPySubVoMgr_Gameplay");
+DUMPER7_ASSERTS_UPySubVoMgr_Gameplay;
 
 }
 

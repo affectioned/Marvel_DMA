@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1037_CharacterBP.1037_CharacterBP_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class AOne037_CharacterBP_C final : public APyMagnetoCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1037_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1037_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1037_CharacterBP_C")
 	}
 	static class AOne037_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne037_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne037_CharacterBP_C) == 0x000010, "Wrong alignment on AOne037_CharacterBP_C");
-static_assert(sizeof(AOne037_CharacterBP_C) == 0x0021E0, "Wrong size on AOne037_CharacterBP_C");
+DUMPER7_ASSERTS_AOne037_CharacterBP_C;
 
 }
 

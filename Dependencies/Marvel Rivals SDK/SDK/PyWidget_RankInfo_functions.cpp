@@ -17,6 +17,63 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_RankInfo::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_RankInfo", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_RankInfo::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_RankInfo", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_RankInfo::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_RankInfo", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_RankInfo.PyWidget_RankStar.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -150,63 +207,6 @@ void UPyWidget_RankIcon::OnAnimationFinished(const class UWidgetAnimation* Anima
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_RankInfo::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_RankInfo", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_RankInfo::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_RankInfo", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_RankInfo.PyWidget_RankInfo.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_RankInfo::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_RankInfo", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

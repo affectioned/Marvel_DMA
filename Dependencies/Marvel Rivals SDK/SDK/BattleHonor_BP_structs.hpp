@@ -25,13 +25,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              Icon_11_613BA3B14193926554728992DF746F0D;          // 0x0038(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              BigIcon_15_AEA9735246EBAF93E739C3A203D48341;       // 0x0068(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FBattleHonor_BP) == 0x000008, "Wrong alignment on FBattleHonor_BP");
-static_assert(sizeof(FBattleHonor_BP) == 0x000098, "Wrong size on FBattleHonor_BP");
-static_assert(offsetof(FBattleHonor_BP, ID_3_4843B183418E969A3BCCCAB54207E29C) == 0x000000, "Member 'FBattleHonor_BP::ID_3_4843B183418E969A3BCCCAB54207E29C' has a wrong offset!");
-static_assert(offsetof(FBattleHonor_BP, Nane_18_660D9F93476007CA9D9FFF9F2E01C95E) == 0x000008, "Member 'FBattleHonor_BP::Nane_18_660D9F93476007CA9D9FFF9F2E01C95E' has a wrong offset!");
-static_assert(offsetof(FBattleHonor_BP, Desc_19_7086434349021B7466C688ACB11E76CA) == 0x000020, "Member 'FBattleHonor_BP::Desc_19_7086434349021B7466C688ACB11E76CA' has a wrong offset!");
-static_assert(offsetof(FBattleHonor_BP, Icon_11_613BA3B14193926554728992DF746F0D) == 0x000038, "Member 'FBattleHonor_BP::Icon_11_613BA3B14193926554728992DF746F0D' has a wrong offset!");
-static_assert(offsetof(FBattleHonor_BP, BigIcon_15_AEA9735246EBAF93E739C3A203D48341) == 0x000068, "Member 'FBattleHonor_BP::BigIcon_15_AEA9735246EBAF93E739C3A203D48341' has a wrong offset!");
+DUMPER7_ASSERTS_FBattleHonor_BP;
 
 }
 

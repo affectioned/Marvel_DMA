@@ -23,15 +23,18 @@ class UUISettingHUDScaleSettingHandler final : public UPyDefaultSettingEntryHand
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingHUDScaleSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingHUDScaleSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingHUDScaleSettingHandler")
 	}
 	static class UUISettingHUDScaleSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingHUDScaleSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingHUDScaleSettingHandler) == 0x000008, "Wrong alignment on UUISettingHUDScaleSettingHandler");
-static_assert(sizeof(UUISettingHUDScaleSettingHandler) == 0x000030, "Wrong size on UUISettingHUDScaleSettingHandler");
+DUMPER7_ASSERTS_UUISettingHUDScaleSettingHandler;
 
 // PythonClass hud.UISettingAccesoryWindowHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -43,15 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingAccesoryWindowHandler">();
+		STATIC_CLASS_IMPL("UISettingAccesoryWindowHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingAccesoryWindowHandler")
 	}
 	static class UUISettingAccesoryWindowHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingAccesoryWindowHandler>();
 	}
 };
-static_assert(alignof(UUISettingAccesoryWindowHandler) == 0x000008, "Wrong alignment on UUISettingAccesoryWindowHandler");
-static_assert(sizeof(UUISettingAccesoryWindowHandler) == 0x000030, "Wrong size on UUISettingAccesoryWindowHandler");
+DUMPER7_ASSERTS_UUISettingAccesoryWindowHandler;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyBTNodeBase_classes.hpp"
 #include "MarvelAI_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "PyBTNodeBase_classes.hpp"
 
 
 namespace SDK
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckHealthProportion">();
+		STATIC_CLASS_IMPL("BTD_PyCheckHealthProportion")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckHealthProportion")
 	}
 	static class UBTD_PyCheckHealthProportion* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckHealthProportion>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckHealthProportion) == 0x000008, "Wrong alignment on UBTD_PyCheckHealthProportion");
-static_assert(sizeof(UBTD_PyCheckHealthProportion) == 0x000100, "Wrong size on UBTD_PyCheckHealthProportion");
-static_assert(offsetof(UBTD_PyCheckHealthProportion, RequiredHealthTypeMask) == 0x0000B8, "Member 'UBTD_PyCheckHealthProportion::RequiredHealthTypeMask' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckHealthProportion, RequiredHealthRange) == 0x0000BC, "Member 'UBTD_PyCheckHealthProportion::RequiredHealthRange' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckHealthProportion, CheckTarget) == 0x0000C8, "Member 'UBTD_PyCheckHealthProportion::CheckTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckHealthProportion, PassIfTargetIsInvalid) == 0x0000F8, "Member 'UBTD_PyCheckHealthProportion::PassIfTargetIsInvalid' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckHealthProportion;
 
 }
 

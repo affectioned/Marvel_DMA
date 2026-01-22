@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Annihilate_Main.PyWidget_Annihilate_Main
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Annihilate_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWidgetStyle_BattlePersistentTip       OutRingTip;                                        // 0x05C0(0x0048)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x0608(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FWidgetStyle_BattlePersistentTip       OutRingTip;                                        // 0x05C8(0x0048)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x0610(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_Main")
 	}
 	static class UPyWidget_Annihilate_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_Main) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_Main");
-static_assert(sizeof(UPyWidget_Annihilate_Main) == 0x000610, "Wrong size on UPyWidget_Annihilate_Main");
-static_assert(offsetof(UPyWidget_Annihilate_Main, OutRingTip) == 0x0005C0, "Member 'UPyWidget_Annihilate_Main::OutRingTip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Annihilate_Main, BuffID) == 0x000608, "Member 'UPyWidget_Annihilate_Main::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_Main;
 
 }
 

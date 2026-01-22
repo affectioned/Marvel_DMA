@@ -34,5 +34,24 @@ void UPyWidget_LMSF_PickMap::OnInitialized()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_LMSF_PickMap.PyWidget_LMSF_PickMap.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LMSF_PickMap::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LMSF_PickMap", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

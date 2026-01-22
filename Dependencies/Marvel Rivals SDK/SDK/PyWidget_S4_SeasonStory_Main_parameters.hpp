@@ -21,9 +21,7 @@ struct PyWidget_S4_SeasonStory_Main_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S4_SeasonStory_Main_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_S4_SeasonStory_Main_OnVisibleChanged");
-static_assert(sizeof(PyWidget_S4_SeasonStory_Main_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_S4_SeasonStory_Main_OnVisibleChanged");
-static_assert(offsetof(PyWidget_S4_SeasonStory_Main_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_S4_SeasonStory_Main_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S4_SeasonStory_Main_OnVisibleChanged;
 
 // PythonFunction PyWidget_S4_SeasonStory_Main.PyWidget_S4_SeasonStory_Main.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_S4_SeasonStory_Main_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S4_SeasonStory_Main_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_S4_SeasonStory_Main_OnAnimationFinished");
-static_assert(sizeof(PyWidget_S4_SeasonStory_Main_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_S4_SeasonStory_Main_OnAnimationFinished");
-static_assert(offsetof(PyWidget_S4_SeasonStory_Main_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_S4_SeasonStory_Main_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S4_SeasonStory_Main_OnAnimationFinished;
 
 // PythonFunction PyWidget_S4_SeasonStory_Main.PyWidget_S4_SeasonStory_Bg.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_S4_SeasonStory_Bg_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_S4_SeasonStory_Bg_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_S4_SeasonStory_Bg_OnVisibleChanged");
-static_assert(sizeof(PyWidget_S4_SeasonStory_Bg_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_S4_SeasonStory_Bg_OnVisibleChanged");
-static_assert(offsetof(PyWidget_S4_SeasonStory_Bg_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_S4_SeasonStory_Bg_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_S4_SeasonStory_Bg_OnVisibleChanged;
 
 }
 

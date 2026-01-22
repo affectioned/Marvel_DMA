@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10439501_BP.Summoned_10439501_BP_C
-// 0x0020 (0x0BA0 - 0x0B80)
+// 0x0020 (0x0BC0 - 0x0BA0)
 class ASummoned_10439501_BP_C final : public APySummoned_10439501
 {
 public:
-	class UMarvelRespawnerMovementComponent*      ProjectileComponent;                               // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          DownCollision;                                     // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Capsule;                                           // 0x0B90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelRespawnerMovementComponent*      ProjectileComponent;                               // 0x0B98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          DownCollision;                                     // 0x0BA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0BA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Capsule;                                           // 0x0BB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10439501_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10439501_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10439501_BP_C")
 	}
 	static class ASummoned_10439501_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10439501_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10439501_BP_C) == 0x000010, "Wrong alignment on ASummoned_10439501_BP_C");
-static_assert(sizeof(ASummoned_10439501_BP_C) == 0x000BA0, "Wrong size on ASummoned_10439501_BP_C");
-static_assert(offsetof(ASummoned_10439501_BP_C, ProjectileComponent) == 0x000B78, "Member 'ASummoned_10439501_BP_C::ProjectileComponent' has a wrong offset!");
-static_assert(offsetof(ASummoned_10439501_BP_C, DownCollision) == 0x000B80, "Member 'ASummoned_10439501_BP_C::DownCollision' has a wrong offset!");
-static_assert(offsetof(ASummoned_10439501_BP_C, SummonedMovement) == 0x000B88, "Member 'ASummoned_10439501_BP_C::SummonedMovement' has a wrong offset!");
-static_assert(offsetof(ASummoned_10439501_BP_C, Capsule) == 0x000B90, "Member 'ASummoned_10439501_BP_C::Capsule' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10439501_BP_C;
 
 }
 

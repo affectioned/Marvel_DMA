@@ -26,10 +26,7 @@ public:
 	class UWidgetComponent*                       InWidgetComp;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_AddDebugWidget) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_AddDebugWidget");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_AddDebugWidget) == 0x000010, "Wrong size on MarvelAbilitySystemDebugger_BP_C_AddDebugWidget");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_AddDebugWidget, InWidgetComp) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_AddDebugWidget::InWidgetComp' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_AddDebugWidget, CallFunc_Array_AddUnique_ReturnValue) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_AddDebugWidget::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_AddDebugWidget;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ClientDrawArrawAt
 // 0x0058 (0x0058 - 0x0000)
@@ -43,14 +40,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Duration;                                          // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt) == 0x000058, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, Start) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::Start' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, End) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::End' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, Size) == 0x000030, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::Size' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, Thickness) == 0x000038, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::Thickness' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, Color) == 0x000040, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt, Duration) == 0x000050, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ClientDrawArrawAt;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ClientDrawPointAt
 // 0x0038 (0x0038 - 0x0000)
@@ -62,12 +52,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Duration;                                          // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt) == 0x000038, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt, Location) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt::Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt, Size) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt::Size' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt, Color) == 0x000020, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt::Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt, Duration) == 0x000030, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ClientDrawPointAt;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ClientDrawSphereAt
 // 0x0040 (0x0040 - 0x0000)
@@ -80,13 +65,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Duration;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt) == 0x000040, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt, Location) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt::Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt, Radius) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt::Radius' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt, Tickness) == 0x000020, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt::Tickness' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt, Color) == 0x000028, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt::Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt, Duration) == 0x000038, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ClientDrawSphereAt;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ClientDrawStringAt
 // 0x0040 (0x0040 - 0x0000)
@@ -98,12 +77,7 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Duration;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt) == 0x000040, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt, Location) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt::Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt, Text) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt::Text' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt, Color) == 0x000028, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt::Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt, Duration) == 0x000038, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ClientDrawStringAt;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ClientDrawStringWidgetAt
 // 0x0048 (0x0048 - 0x0000)
@@ -116,29 +90,19 @@ public:
 	double                                        Duration;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsServer;                                          // 0x0040(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt) == 0x000048, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt, Location) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt::Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt, Text) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt::Text' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt, Color) == 0x000028, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt::Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt, Duration) == 0x000038, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt::Duration' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt, IsServer) == 0x000040, "Member 'MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt::IsServer' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ClientDrawStringWidgetAt;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.DebugProjectileHit
-// 0x0200 (0x0200 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit final
 {
 public:
 	class AMarvelAbilityTargetActor_Projectile*   InProjectile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         ProjectileID;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             InHit;                                             // 0x0010(0x01F0)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+	struct FHitResult                             InHit;                                             // 0x0010(0x0208)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit) == 0x000200, "Wrong size on MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit, InProjectile) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit::InProjectile' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit, ProjectileID) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit::ProjectileID' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit, InHit) == 0x000010, "Member 'MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit::InHit' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_DebugProjectileHit;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.DebugProjectilePath
 // 0x0008 (0x0008 - 0x0000)
@@ -147,9 +111,7 @@ struct MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   InProjectile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath) == 0x000008, "Wrong size on MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath, InProjectile) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath::InProjectile' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_DebugProjectilePath;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.DebugProjectileStart
 // 0x0008 (0x0008 - 0x0000)
@@ -158,12 +120,10 @@ struct MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   InProjectile;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart) == 0x000008, "Wrong size on MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart, InProjectile) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart::InProjectile' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_DebugProjectileStart;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ExecuteUbergraph_MarvelAbilitySystemDebugger_BP
-// 0x0950 (0x0950 - 0x0000)
+// 0x0980 (0x0980 - 0x0000)
 struct MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP final
 {
 public:
@@ -185,258 +145,133 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_GameplayActor;                  // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UGameplayAbility*                       K2Node_CustomEvent_InAbility;                      // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelAbilityHitParams                K2Node_CustomEvent_HitParams;                      // 0x0080(0x0018)(ConstParm, NoDestructor, ContainsInstancedReference)
-	TArray<struct FHitResult>                     K2Node_CustomEvent_HitResults;                     // 0x0098(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
-	class AMarvelAbilityTargetActor_Projectile*   K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAbilityTargetActor_Projectile*   K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile_1; // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                K2Node_CustomEvent_Location_3;                     // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Size_1;                         // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_Color_4;                        // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Duration_4;                     // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location_2;                     // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Radius;                         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Tickness;                       // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_Color_3;                        // 0x0128(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Duration_3;                     // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue_1;                   // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0154(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AMarvelAbilityTargetActor_Projectile*> CallFunc_GetProjectileByCharacter_ReturnValue; // 0x0168(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsServer_ReturnValue_2;                   // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAbilityTargetActor_Projectile*   CallFunc_Array_Get_Item;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SelectFloat_ReturnValue_1;                // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMarvelAbilityTargetActor_Predict*      CallFunc_GetFakePredictActor_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19D[0x3];                                      // 0x019D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile_2;                 // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x01A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile_1;                 // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile;                   // 0x01F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_ProjectileID;                   // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_CustomEvent_InHit;                          // 0x0200(0x01F0)(ContainsInstancedReference)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x03F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F2[0x2];                                      // 0x03F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0400(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0418(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0430(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0448(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0470(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0478(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0484(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x04A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x04B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x04D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x04E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_ObjectToString_ReturnValue;          // 0x04F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0508(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0520(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0538(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0588(0x0050)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_ObjectToString_ReturnValue_1;        // 0x05D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x05E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0600(0x0018)()
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0618(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0630(0x0050)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x0680(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x0698(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x06B0(0x0050)(HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_701[0x7];                                      // 0x0701(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0708(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0718(0x0018)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0730(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_734[0x4];                                      // 0x0734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0738(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Start;                          // 0x0748(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_End;                            // 0x0760(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Size;                           // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Thickness;                      // 0x0780(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_Color_2;                        // 0x0788(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Duration_2;                     // 0x0798(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue_3;                   // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A1[0x7];                                      // 0x07A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue_2;                // 0x07A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x07B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x07C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_2;                // 0x07E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_2;      // 0x07F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0808(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location_1;                     // 0x0820(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_Text_1;                         // 0x0838(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_Color_1;                        // 0x0848(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Duration_1;                     // 0x0858(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location;                       // 0x0860(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_Text;                           // 0x0878(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_Color;                          // 0x0888(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_CustomEvent_Duration;                       // 0x0898(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsServer;                       // 0x08A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8A1[0x7];                                      // 0x08A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_FMax_ReturnValue;                         // 0x08A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x08B0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0910(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AMarvelStringDebugActor_C*              CallFunc_FinishSpawningActor_ReturnValue;          // 0x0918(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugPoint_Size_ImplicitCast;         // 0x0920(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugPoint_Duration_ImplicitCast;     // 0x0924(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugSphere_Radius_ImplicitCast;      // 0x0928(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugSphere_Thickness_ImplicitCast;   // 0x092C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugSphere_Duration_ImplicitCast;    // 0x0930(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugArrow_ArrowSize_ImplicitCast;    // 0x0934(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugArrow_Thickness_ImplicitCast;    // 0x0938(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugArrow_Duration_ImplicitCast;     // 0x093C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DrawDebugString_Duration_ImplicitCast;    // 0x0940(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetLifeSpan_InLifespan_ImplicitCast;      // 0x0944(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelAbilityHitParams                K2Node_CustomEvent_HitParams;                      // 0x0080(0x0030)(ConstParm, ContainsInstancedReference)
+	TArray<struct FHitResult>                     K2Node_CustomEvent_HitResults;                     // 0x00B0(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
+	class AMarvelAbilityTargetActor_Projectile*   K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile; // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA[0x6];                                       // 0x00CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAbilityTargetActor_Projectile*   K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile_1; // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                K2Node_CustomEvent_Location_3;                     // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Size_1;                         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_Color_4;                        // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Duration_4;                     // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location_2;                     // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Radius;                         // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Tickness;                       // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_Color_3;                        // 0x0140(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Duration_3;                     // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue_1;                   // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x016C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AMarvelAbilityTargetActor_Projectile*> CallFunc_GetProjectileByCharacter_ReturnValue; // 0x0180(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsServer_ReturnValue_2;                   // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAbilityTargetActor_Projectile*   CallFunc_Array_Get_Item;                           // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SelectFloat_ReturnValue_1;                // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMarvelAbilityTargetActor_Predict*      CallFunc_GetFakePredictActor_ReturnValue;          // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B5[0x3];                                      // 0x01B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile_2;                 // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x01C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile_1;                 // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMarvelAbilityTargetActor_Projectile*   K2Node_CustomEvent_InProjectile;                   // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ProjectileID;                   // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_CustomEvent_InHit;                          // 0x0218(0x0208)(ContainsInstancedReference)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0421(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_422[0x2];                                      // 0x0422(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0424(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0430(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0448(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0460(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0478(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x04A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x04A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x04B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x04C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4CC[0x4];                                      // 0x04CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x04D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x04E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x0500(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0518(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_ObjectToString_ReturnValue;          // 0x0528(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0538(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0550(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0568(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x05B8(0x0050)(HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_ObjectToString_ReturnValue_1;        // 0x0608(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0618(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0630(0x0018)()
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0648(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0660(0x0050)(HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x06B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x06C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C4[0x4];                                      // 0x06C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x06C8(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x06E0(0x0050)(HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0730(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_731[0x7];                                      // 0x0731(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0738(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0748(0x0018)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0760(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_764[0x4];                                      // 0x0764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0768(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Start;                          // 0x0778(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_End;                            // 0x0790(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Size;                           // 0x07A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Thickness;                      // 0x07B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_Color_2;                        // 0x07B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Duration_2;                     // 0x07C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue_3;                   // 0x07D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D1[0x7];                                      // 0x07D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue_2;                // 0x07D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x07E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_1;      // 0x07F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_2;                // 0x0810(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue_2;      // 0x0820(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0838(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location_1;                     // 0x0850(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_Text_1;                         // 0x0868(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_Color_1;                        // 0x0878(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Duration_1;                     // 0x0888(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location;                       // 0x0890(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_Text;                           // 0x08A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_Color;                          // 0x08B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_CustomEvent_Duration;                       // 0x08C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsServer;                       // 0x08D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8D1[0x7];                                      // 0x08D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_FMax_ReturnValue;                         // 0x08D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x08E0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0940(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AMarvelStringDebugActor_C*              CallFunc_FinishSpawningActor_ReturnValue;          // 0x0948(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugPoint_Size_ImplicitCast;         // 0x0950(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugPoint_Duration_ImplicitCast;     // 0x0954(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugSphere_Radius_ImplicitCast;      // 0x0958(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugSphere_Thickness_ImplicitCast;   // 0x095C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugSphere_Duration_ImplicitCast;    // 0x0960(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugArrow_ArrowSize_ImplicitCast;    // 0x0964(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugArrow_Thickness_ImplicitCast;    // 0x0968(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugArrow_Duration_ImplicitCast;     // 0x096C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DrawDebugString_Duration_ImplicitCast;    // 0x0970(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetLifeSpan_InLifespan_ImplicitCast;      // 0x0974(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP) == 0x000010, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP) == 0x000950, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, EntryPoint) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsServer_ReturnValue) == 0x000004, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, Temp_int_Array_Index_Variable) == 0x000020, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_GetOwner_ReturnValue) == 0x000048, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_PS) == 0x000050, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_PS' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_BaseCharacter) == 0x000058, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_BaseCharacter' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_AsMarvel_Player_State) == 0x000060, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_AsMarvel_Player_State' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_GameplayActor) == 0x000070, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_GameplayActor' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_InAbility) == 0x000078, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_InAbility' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_HitParams) == 0x000080, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_HitParams' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_HitResults) == 0x000098, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_HitResults' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile) == 0x0000A8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_bSuccess_1) == 0x0000B0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x0000B1, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile_1) == 0x0000B8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Projectile_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_DynamicCast_bSuccess_2) == 0x0000C0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Location_3) == 0x0000C8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Location_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Size_1) == 0x0000E0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Size_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Color_4) == 0x0000E8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Color_4' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Duration_4) == 0x0000F8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Duration_4' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Location_2) == 0x000100, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Location_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Radius) == 0x000118, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Radius' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Tickness) == 0x000120, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Tickness' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Color_3) == 0x000128, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Color_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Duration_3) == 0x000138, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Duration_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsServer_ReturnValue_1) == 0x000140, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectFloat_ReturnValue) == 0x000148, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_Event_DeltaSeconds) == 0x000150, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectColor_ReturnValue) == 0x000154, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_GetProjectileByCharacter_ReturnValue) == 0x000168, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_GetProjectileByCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsServer_ReturnValue_2) == 0x000178, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Array_Get_Item) == 0x000180, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectFloat_ReturnValue_1) == 0x000188, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_GetFakePredictActor_ReturnValue) == 0x000190, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_GetFakePredictActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Array_Length_ReturnValue) == 0x000198, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsValid_ReturnValue_1) == 0x00019C, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_InProjectile_2) == 0x0001A0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_InProjectile_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectColor_ReturnValue_1) == 0x0001A8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001B8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_InProjectile_1) == 0x0001D0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_InProjectile_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001D8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_InProjectile) == 0x0001F0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_InProjectile' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_ProjectileID) == 0x0001F8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_ProjectileID' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_InHit) == 0x000200, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_InHit' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_bBlockingHit) == 0x0003F0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_bInitialOverlap) == 0x0003F1, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_Time) == 0x0003F4, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_Distance) == 0x0003F8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_Location) == 0x000400, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_ImpactPoint) == 0x000418, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_Normal) == 0x000430, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_ImpactNormal) == 0x000448, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_PhysMat) == 0x000460, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_HitActor) == 0x000468, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_HitComponent) == 0x000470, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_HitBoneName) == 0x000478, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_BoneName) == 0x000484, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_HitItem) == 0x000490, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_ElementIndex) == 0x000494, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_FaceIndex) == 0x000498, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_TraceStart) == 0x0004A0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_TraceEnd) == 0x0004B8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BreakHitResult_OccDetPoint) == 0x0004D0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BreakHitResult_OccDetPoint' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_IntToString_ReturnValue) == 0x0004E8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_ObjectToString_ReturnValue) == 0x0004F8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_ObjectToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_StringToText_ReturnValue) == 0x000508, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000520, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_MakeStruct_FormatArgumentData) == 0x000538, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_MakeStruct_FormatArgumentData_1) == 0x000588, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_ObjectToString_ReturnValue_1) == 0x0005D8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_ObjectToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0005E8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_StringToText_ReturnValue_2) == 0x000600, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Add_VectorVector_ReturnValue) == 0x000618, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_MakeStruct_FormatArgumentData_2) == 0x000630, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_VectorToString_ReturnValue) == 0x000680, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_VectorToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, Temp_int_Loop_Counter_Variable) == 0x000690, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_StringToText_ReturnValue_3) == 0x000698, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_StringToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_MakeStruct_FormatArgumentData_3) == 0x0006B0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Less_IntInt_ReturnValue) == 0x000700, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_MakeArray_Array) == 0x000708, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Format_ReturnValue) == 0x000718, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Add_IntInt_ReturnValue) == 0x000730, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_TextToString_ReturnValue) == 0x000738, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Start) == 0x000748, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Start' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_End) == 0x000760, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_End' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Size) == 0x000778, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Size' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Thickness) == 0x000780, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Thickness' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Color_2) == 0x000788, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Color_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Duration_2) == 0x000798, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Duration_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_IsServer_ReturnValue_3) == 0x0007A0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_IsServer_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectFloat_ReturnValue_2) == 0x0007A8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x0007B0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x0007C8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SelectColor_ReturnValue_2) == 0x0007E0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SelectColor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Multiply_VectorVector_ReturnValue_2) == 0x0007F0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Multiply_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000808, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Location_1) == 0x000820, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Location_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Text_1) == 0x000838, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Text_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Color_1) == 0x000848, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Color_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Duration_1) == 0x000858, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Duration_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Location) == 0x000860, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Location' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Text) == 0x000878, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Color) == 0x000888, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Color' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_Duration) == 0x000898, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_Duration' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, K2Node_CustomEvent_IsServer) == 0x0008A0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::K2Node_CustomEvent_IsServer' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_FMax_ReturnValue) == 0x0008A8, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_Conv_VectorToTransform_ReturnValue) == 0x0008B0, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_Conv_VectorToTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000910, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_FinishSpawningActor_ReturnValue) == 0x000918, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugPoint_Size_ImplicitCast) == 0x000920, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugPoint_Size_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugPoint_Duration_ImplicitCast) == 0x000924, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugPoint_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugSphere_Radius_ImplicitCast) == 0x000928, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugSphere_Radius_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugSphere_Thickness_ImplicitCast) == 0x00092C, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugSphere_Thickness_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugSphere_Duration_ImplicitCast) == 0x000930, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugSphere_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugArrow_ArrowSize_ImplicitCast) == 0x000934, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugArrow_ArrowSize_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugArrow_Thickness_ImplicitCast) == 0x000938, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugArrow_Thickness_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugArrow_Duration_ImplicitCast) == 0x00093C, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugArrow_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_DrawDebugString_Duration_ImplicitCast) == 0x000940, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_DrawDebugString_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP, CallFunc_SetLifeSpan_InLifespan_ImplicitCast) == 0x000944, "Member 'MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP::CallFunc_SetLifeSpan_InLifespan_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ExecuteUbergraph_MarvelAbilitySystemDebugger_BP;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.OnAbilityActorAdded
 // 0x0008 (0x0008 - 0x0000)
@@ -445,24 +280,18 @@ struct MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded final
 public:
 	class AActor*                                 GameplayActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded) == 0x000008, "Wrong size on MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded, GameplayActor) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded::GameplayActor' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_OnAbilityActorAdded;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.OnAbilityHit
-// 0x0030 (0x0030 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct MarvelAbilitySystemDebugger_BP_C_OnAbilityHit final
 {
 public:
 	class UGameplayAbility*                       InAbility;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0020(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0038(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_OnAbilityHit) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_OnAbilityHit");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_OnAbilityHit) == 0x000030, "Wrong size on MarvelAbilitySystemDebugger_BP_C_OnAbilityHit");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnAbilityHit, InAbility) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_OnAbilityHit::InAbility' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnAbilityHit, HitParams) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_OnAbilityHit::HitParams' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnAbilityHit, HitResults) == 0x000020, "Member 'MarvelAbilitySystemDebugger_BP_C_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_OnAbilityHit;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.OnPlayerPossessCharacterDispatcher_Event
 // 0x0010 (0x0010 - 0x0000)
@@ -472,10 +301,7 @@ public:
 	class AMarvelPlayerState*                     PS;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   BaseCharacter;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event) == 0x000010, "Wrong size on MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event, PS) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event::PS' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event, BaseCharacter) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event::BaseCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_OnPlayerPossessCharacterDispatcher_Event;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -484,9 +310,7 @@ struct MarvelAbilitySystemDebugger_BP_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_ReceiveTick) == 0x000004, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_ReceiveTick");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_ReceiveTick) == 0x000004, "Wrong size on MarvelAbilitySystemDebugger_BP_C_ReceiveTick");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_ReceiveTick;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.RemoveDebugWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -496,13 +320,10 @@ public:
 	class UWidgetComponent*                       InWidgetComp;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget) == 0x000010, "Wrong size on MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget, InWidgetComp) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget::InWidgetComp' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget, CallFunc_Array_RemoveItem_ReturnValue) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_RemoveDebugWidget;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.UpdateDebugWidget
-// 0x0850 (0x0850 - 0x0000)
+// 0x0880 (0x0880 - 0x0000)
 struct MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget final
 {
 public:
@@ -582,137 +403,44 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0328(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0340(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0350(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0368(0x01F0)(ContainsInstancedReference)
-	double                                        CallFunc_Distance2D_ReturnValue;                   // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_1;     // 0x0560(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_561[0x7];                                      // 0x0561(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetComponent*                       CallFunc_Array_Get_Item_2;                         // 0x0568(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_575[0x3];                                      // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Map_Find_Value_2;                         // 0x0578(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_ProjectWorldToScreen_ScreenPosition_1;    // 0x0598(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ProjectWorldToScreen_ReturnValue_1;       // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5A9[0x3];                                      // 0x05A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetPointDistanceToLine_ReturnValue;       // 0x05AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x05B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5B1[0x7];                                      // 0x05B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Distance2D_ReturnValue_1;                 // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_2;     // 0x05C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C1[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetAimStartAndRot_OutLocation_1;          // 0x05C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetAimStartAndRot_OutRotation_1;          // 0x05E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x05F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetComponent*                       CallFunc_Array_Get_Item_3;                         // 0x0610(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_619[0x7];                                      // 0x0619(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0620(0x01F0)(ContainsInstancedReference)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x0810(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0818(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81C[0x4];                                      // 0x081C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0820(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0838(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_839[0x3];                                      // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x083C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_MinDist_ImplicitCast;           // 0x0840(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0848(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0368(0x0208)(ContainsInstancedReference)
+	double                                        CallFunc_Distance2D_ReturnValue;                   // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_1;     // 0x0578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_579[0x7];                                      // 0x0579(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetComponent*                       CallFunc_Array_Get_Item_2;                         // 0x0580(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0588(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x058C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_58D[0x3];                                      // 0x058D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Map_Find_Value_2;                         // 0x0590(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5A9[0x7];                                      // 0x05A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_ProjectWorldToScreen_ScreenPosition_1;    // 0x05B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ProjectWorldToScreen_ReturnValue_1;       // 0x05C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C1[0x3];                                      // 0x05C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetPointDistanceToLine_ReturnValue;       // 0x05C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Distance2D_ReturnValue_1;                 // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue_2;     // 0x05D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetAimStartAndRot_OutLocation_1;          // 0x05E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetAimStartAndRot_OutRotation_1;          // 0x05F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0610(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       CallFunc_Array_Get_Item_3;                         // 0x0628(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsNotEmpty_ReturnValue;             // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0638(0x0208)(ContainsInstancedReference)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x0840(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0848(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84C[0x4];                                      // 0x084C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0850(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0868(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_869[0x3];                                      // 0x0869(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x086C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_MinDist_ImplicitCast;           // 0x0870(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0878(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget) == 0x000010, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget) == 0x000850, "Wrong size on MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, ScreenThreshold) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::ScreenThreshold' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Threshold) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Threshold' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, MinDist) == 0x000010, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::MinDist' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CameraDir) == 0x000018, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CameraDir' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CameaLoc) == 0x000030, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CameaLoc' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, NearestActorWidget) == 0x000048, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::NearestActorWidget' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, ActorLocations) == 0x000050, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::ActorLocations' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Array_Index_Variable) == 0x0000A0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Loop_Counter_Variable) == 0x0000A4, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Loop_Counter_Variable_1) == 0x0000A8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Add_IntInt_ReturnValue) == 0x0000AC, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000B0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Array_Index_Variable_1) == 0x0000B4, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Loop_Counter_Variable_2) == 0x0000B8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Add_IntInt_ReturnValue_2) == 0x0000BC, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Array_Index_Variable_2) == 0x0000C0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Loop_Counter_Variable_3) == 0x0000C4, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000C8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000E0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x0000E8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Length_ReturnValue) == 0x000100, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000108, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_MakeLiteralDouble_ReturnValue) == 0x000110, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_MakeLiteralDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000118, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetAimStartAndRot_OutLocation) == 0x000120, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetAimStartAndRot_OutLocation' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetAimStartAndRot_OutRotation) == 0x000138, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetAimStartAndRot_OutRotation' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_FMin_ReturnValue) == 0x000150, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Conv_RotatorToTransform_ReturnValue) == 0x000160, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Conv_RotatorToTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Length_ReturnValue_1) == 0x0001C0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_IntInt_ReturnValue) == 0x0001C4, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_IsValid_ReturnValue) == 0x0001C5, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetViewportSize_ReturnValue) == 0x0001C8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x0001D8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_Value) == 0x0001E8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_ReturnValue) == 0x000200, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetMarvelPlayerController_ReturnValue) == 0x000208, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetMarvelPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetViewportSize_ReturnValue_1) == 0x000210, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetViewportSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Multiply_Vector2DVector2D_ReturnValue_1) == 0x000220, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Multiply_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetMarvelPlayerController_ReturnValue_1) == 0x000230, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetMarvelPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Get_Item) == 0x000238, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Length_ReturnValue_2) == 0x000240, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000244, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_IntInt_ReturnValue_1) == 0x000245, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_AddUnique_ReturnValue) == 0x000248, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_Value_1) == 0x000250, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_ReturnValue_1) == 0x000268, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Vector_Distance_ReturnValue) == 0x000270, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_IsValid_ReturnValue_1) == 0x000278, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000279, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_ProjectWorldToScreen_ScreenPosition) == 0x000280, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_ProjectWorldToScreen_ScreenPosition' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_ProjectWorldToScreen_ReturnValue) == 0x000290, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_ProjectWorldToScreen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, Temp_int_Array_Index_Variable_3) == 0x000294, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000298, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Get_Item_1) == 0x0002A0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0002A8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetOwner_ReturnValue) == 0x0002B0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_MakeRotator_ReturnValue) == 0x0002B8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, K2Node_DynamicCast_AsMarvel_String_Debug_Actor) == 0x0002D0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::K2Node_DynamicCast_AsMarvel_String_Debug_Actor' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, K2Node_DynamicCast_bSuccess) == 0x0002D8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GreaterGreater_VectorRotator_ReturnValue) == 0x0002E0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GreaterGreater_VectorRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0002F8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_TransformDirection_ReturnValue) == 0x000310, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_TransformDirection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000328, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_SelectColor_ReturnValue) == 0x000340, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Add_VectorVector_ReturnValue) == 0x000350, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000368, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Distance2D_ReturnValue) == 0x000558, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Distance2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_LessEqual_DoubleDouble_ReturnValue_1) == 0x000560, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_LessEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Get_Item_2) == 0x000568, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Length_ReturnValue_3) == 0x000570, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_IntInt_ReturnValue_2) == 0x000574, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_Value_2) == 0x000578, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Map_Find_ReturnValue_2) == 0x000590, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_ProjectWorldToScreen_ScreenPosition_1) == 0x000598, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_ProjectWorldToScreen_ScreenPosition_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_ProjectWorldToScreen_ReturnValue_1) == 0x0005A8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_ProjectWorldToScreen_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetPointDistanceToLine_ReturnValue) == 0x0005AC, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetPointDistanceToLine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_DoubleDouble_ReturnValue) == 0x0005B0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Distance2D_ReturnValue_1) == 0x0005B8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Distance2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_LessEqual_DoubleDouble_ReturnValue_2) == 0x0005C0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_LessEqual_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetAimStartAndRot_OutLocation_1) == 0x0005C8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetAimStartAndRot_OutLocation_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetAimStartAndRot_OutRotation_1) == 0x0005E0, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetAimStartAndRot_OutRotation_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetForwardVector_ReturnValue) == 0x0005F8, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Get_Item_3) == 0x000610, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_IsNotEmpty_ReturnValue) == 0x000618, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_IsNotEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000620, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_GetOwner_ReturnValue_1) == 0x000810, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Array_Length_ReturnValue_4) == 0x000818, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000820, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_IntInt_ReturnValue_3) == 0x000838, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_MakeRotator_Roll_ImplicitCast) == 0x00083C, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_MakeRotator_Roll_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, K2Node_VariableSet_MinDist_ImplicitCast) == 0x000840, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::K2Node_VariableSet_MinDist_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000848, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_UpdateDebugWidget;
 
 // Function MarvelAbilitySystemDebugger_BP.MarvelAbilitySystemDebugger_BP_C.UpdateOwnerCharacter
 // 0x0050 (0x0050 - 0x0000)
@@ -731,17 +459,7 @@ public:
 	class AMarvelPlayerState*                     K2Node_DynamicCast_AsMarvel_Player_State;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter) == 0x000008, "Wrong alignment on MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter");
-static_assert(sizeof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter) == 0x000050, "Wrong size on MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, OldOwnerCharacter) == 0x000000, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::OldOwnerCharacter' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, CallFunc_IsValid_ReturnValue) == 0x00001C, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, CallFunc_IsValid_ReturnValue_1) == 0x000034, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000035, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, CallFunc_GetOwner_ReturnValue) == 0x000038, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, K2Node_DynamicCast_AsMarvel_Player_State) == 0x000040, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::K2Node_DynamicCast_AsMarvel_Player_State' has a wrong offset!");
-static_assert(offsetof(MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitySystemDebugger_BP_C_UpdateOwnerCharacter;
 
 }
 

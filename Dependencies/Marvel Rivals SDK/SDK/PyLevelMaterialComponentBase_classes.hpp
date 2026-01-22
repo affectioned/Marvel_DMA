@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -36,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialComponentBase">();
+		STATIC_CLASS_IMPL("PyLevelMaterialComponentBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialComponentBase")
 	}
 	static class UPyLevelMaterialComponentBase* GetDefaultObj()
 	{
@@ -44,10 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyLevelMaterialComponentBase) == 0x000008, "Wrong alignment on UPyLevelMaterialComponentBase");
-static_assert(sizeof(UPyLevelMaterialComponentBase) == 0x000120, "Wrong size on UPyLevelMaterialComponentBase");
-static_assert(offsetof(UPyLevelMaterialComponentBase, ConfigUniqueId) == 0x000108, "Member 'UPyLevelMaterialComponentBase::ConfigUniqueId' has a wrong offset!");
-static_assert(offsetof(UPyLevelMaterialComponentBase, MaterialState) == 0x000118, "Member 'UPyLevelMaterialComponentBase::MaterialState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMaterialComponentBase;
 
 }
 

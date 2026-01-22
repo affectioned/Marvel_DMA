@@ -45,10 +45,7 @@ public:
 	float                                         RecoverDelayDuration;                              // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RegenValue;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FOne04001EnergyRegenConfigUnit) == 0x000004, "Wrong alignment on FOne04001EnergyRegenConfigUnit");
-static_assert(sizeof(FOne04001EnergyRegenConfigUnit) == 0x000008, "Wrong size on FOne04001EnergyRegenConfigUnit");
-static_assert(offsetof(FOne04001EnergyRegenConfigUnit, RecoverDelayDuration) == 0x000000, "Member 'FOne04001EnergyRegenConfigUnit::RecoverDelayDuration' has a wrong offset!");
-static_assert(offsetof(FOne04001EnergyRegenConfigUnit, RegenValue) == 0x000004, "Member 'FOne04001EnergyRegenConfigUnit::RegenValue' has a wrong offset!");
+DUMPER7_ASSERTS_FOne04001EnergyRegenConfigUnit;
 
 // ScriptStruct Hero_1040.HopTuningHitShapeSpec
 // 0x00F0 (0x00F0 - 0x0000)
@@ -63,13 +60,7 @@ public:
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OriginalTransform;                                 // 0x0090(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHopTuningHitShapeSpec) == 0x000010, "Wrong alignment on FHopTuningHitShapeSpec");
-static_assert(sizeof(FHopTuningHitShapeSpec) == 0x0000F0, "Wrong size on FHopTuningHitShapeSpec");
-static_assert(offsetof(FHopTuningHitShapeSpec, HitShapeName) == 0x000000, "Member 'FHopTuningHitShapeSpec::HitShapeName' has a wrong offset!");
-static_assert(offsetof(FHopTuningHitShapeSpec, ReattachBoneName) == 0x00000C, "Member 'FHopTuningHitShapeSpec::ReattachBoneName' has a wrong offset!");
-static_assert(offsetof(FHopTuningHitShapeSpec, ReattachTransform) == 0x000020, "Member 'FHopTuningHitShapeSpec::ReattachTransform' has a wrong offset!");
-static_assert(offsetof(FHopTuningHitShapeSpec, OriginalBoneName) == 0x000080, "Member 'FHopTuningHitShapeSpec::OriginalBoneName' has a wrong offset!");
-static_assert(offsetof(FHopTuningHitShapeSpec, OriginalTransform) == 0x000090, "Member 'FHopTuningHitShapeSpec::OriginalTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FHopTuningHitShapeSpec;
 
 // ScriptStruct Hero_1040.HopTuningHitShapeList
 // 0x0010 (0x0010 - 0x0000)
@@ -78,9 +69,7 @@ struct FHopTuningHitShapeList final
 public:
 	TArray<struct FHopTuningHitShapeSpec>         HitShapes;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHopTuningHitShapeList) == 0x000008, "Wrong alignment on FHopTuningHitShapeList");
-static_assert(sizeof(FHopTuningHitShapeList) == 0x000010, "Wrong size on FHopTuningHitShapeList");
-static_assert(offsetof(FHopTuningHitShapeList, HitShapes) == 0x000000, "Member 'FHopTuningHitShapeList::HitShapes' has a wrong offset!");
+DUMPER7_ASSERTS_FHopTuningHitShapeList;
 
 }
 

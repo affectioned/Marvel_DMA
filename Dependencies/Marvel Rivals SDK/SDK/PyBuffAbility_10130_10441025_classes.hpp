@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441025.PyBuffAbility_10130_10449492
-// 0x0BC8 (0x25F8 - 0x1A30)
+// 0x0EE8 (0x2930 - 0x1A48)
 class UPyBuffAbility_10130_10449492 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FDashAbilityInfo                       BaseDash;                                          // 0x1A30(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       BaseDash;                                          // 0x1A48(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,40 +32,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10449492">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10449492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10449492")
 	}
 	static class UPyBuffAbility_10130_10449492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10449492>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10449492) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10449492");
-static_assert(sizeof(UPyBuffAbility_10130_10449492) == 0x0025F8, "Wrong size on UPyBuffAbility_10130_10449492");
-static_assert(offsetof(UPyBuffAbility_10130_10449492, BaseDash) == 0x001A30, "Member 'UPyBuffAbility_10130_10449492::BaseDash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10449492;
 
 // PythonClass PyBuffAbility_10130_10441025.PyConfig_104420
-// 0x0BC8 (0x0C60 - 0x0098)
+// 0x0EE8 (0x0F80 - 0x0098)
 class UPyConfig_104420 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104420">();
+		STATIC_CLASS_IMPL("PyConfig_104420")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104420")
 	}
 	static class UPyConfig_104420* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104420>();
 	}
 };
-static_assert(alignof(UPyConfig_104420) == 0x000008, "Wrong alignment on UPyConfig_104420");
-static_assert(sizeof(UPyConfig_104420) == 0x000C60, "Wrong size on UPyConfig_104420");
-static_assert(offsetof(UPyConfig_104420, DashInfo) == 0x000098, "Member 'UPyConfig_104420::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104420;
 
 // PythonClass PyBuffAbility_10130_10441025.PyAbility_104420
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104420 : public UMarvelGameplayAbility
 {
 public:
@@ -78,15 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104420">();
+		STATIC_CLASS_IMPL("PyAbility_104420")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104420")
 	}
 	static class UPyAbility_104420* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104420>();
 	}
 };
-static_assert(alignof(UPyAbility_104420) == 0x000008, "Wrong alignment on UPyAbility_104420");
-static_assert(sizeof(UPyAbility_104420) == 0x0029F0, "Wrong size on UPyAbility_104420");
+DUMPER7_ASSERTS_UPyAbility_104420;
 
 }
 

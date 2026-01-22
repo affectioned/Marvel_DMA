@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedbackProcess
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_QuestionFeedbackProcess final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_QuestionFeedbackProcess">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_QuestionFeedbackProcess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_QuestionFeedbackProcess")
 	}
 	static class UPyWidget_Secondary_QuestionFeedbackProcess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_QuestionFeedbackProcess>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_QuestionFeedbackProcess) == 0x000008, "Wrong alignment on UPyWidget_Secondary_QuestionFeedbackProcess");
-static_assert(sizeof(UPyWidget_Secondary_QuestionFeedbackProcess) == 0x0005C0, "Wrong size on UPyWidget_Secondary_QuestionFeedbackProcess");
+DUMPER7_ASSERTS_UPyWidget_Secondary_QuestionFeedbackProcess;
 
 // PythonClass PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_QuestionFeedback final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -56,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_QuestionFeedback">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_QuestionFeedback")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_QuestionFeedback")
 	}
 	static class UPyWidget_Secondary_QuestionFeedback* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_QuestionFeedback>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_QuestionFeedback) == 0x000008, "Wrong alignment on UPyWidget_Secondary_QuestionFeedback");
-static_assert(sizeof(UPyWidget_Secondary_QuestionFeedback) == 0x0005C0, "Wrong size on UPyWidget_Secondary_QuestionFeedback");
+DUMPER7_ASSERTS_UPyWidget_Secondary_QuestionFeedback;
 
 }
 

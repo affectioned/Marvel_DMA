@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Main.PyWidget_Halloween_Main
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Halloween_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
-	bool                                          IsViewOther;                                       // 0x05F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          IsViewOther;                                       // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Main")
 	}
 	static class UPyWidget_Halloween_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Main) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Main");
-static_assert(sizeof(UPyWidget_Halloween_Main) == 0x000610, "Wrong size on UPyWidget_Halloween_Main");
-static_assert(offsetof(UPyWidget_Halloween_Main, IsViewOther) == 0x0005F8, "Member 'UPyWidget_Halloween_Main::IsViewOther' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Main, ReturnTipsStyle) == 0x000600, "Member 'UPyWidget_Halloween_Main::ReturnTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Main;
 
 }
 

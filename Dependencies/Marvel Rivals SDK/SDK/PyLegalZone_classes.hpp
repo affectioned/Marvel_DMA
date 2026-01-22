@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 
 
@@ -51,49 +51,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLegalZone">();
+		STATIC_CLASS_IMPL("PyLegalZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLegalZone")
 	}
 	static class APyLegalZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLegalZone>();
 	}
 };
-static_assert(alignof(APyLegalZone) == 0x000010, "Wrong alignment on APyLegalZone");
-static_assert(sizeof(APyLegalZone) == 0x0007E0, "Wrong size on APyLegalZone");
-static_assert(offsetof(APyLegalZone, LegalZoneState) == 0x000760, "Member 'APyLegalZone::LegalZoneState' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, BattleSide) == 0x000764, "Member 'APyLegalZone::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, BirthBases) == 0x000768, "Member 'APyLegalZone::BirthBases' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, CrystalLocation) == 0x000778, "Member 'APyLegalZone::CrystalLocation' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, Altar) == 0x000790, "Member 'APyLegalZone::Altar' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, AltarSequence) == 0x000798, "Member 'APyLegalZone::AltarSequence' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, CueTag) == 0x0007A0, "Member 'APyLegalZone::CueTag' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, Index_0) == 0x0007B0, "Member 'APyLegalZone::Index_0' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, OcuppySide) == 0x0007C0, "Member 'APyLegalZone::OcuppySide' has a wrong offset!");
-static_assert(offsetof(APyLegalZone, OnLegalZoneStateChanged) == 0x0007C8, "Member 'APyLegalZone::OnLegalZoneStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyLegalZone;
 
 // PythonClass PyLegalZone.PyCue_Level_LegalZone
-// 0x00C0 (0x12E0 - 0x1220)
+// 0x00C0 (0x12F0 - 0x1230)
 class APyCue_Level_LegalZone final : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1220(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1228(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorDefaultBlue;                                  // 0x1250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorDefaultRed;                                   // 0x1260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           LatticeUV;                                         // 0x1270(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x1280(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x1290(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LightUpCurve;                                      // 0x12A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LightDownCurve;                                    // 0x12A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FadeOutCurve;                                      // 0x12B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ProgressLightUpCurve;                              // 0x12B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ProgressLightDownCurve;                            // 0x12C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x12C8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorDefaultBlue;                                  // 0x1260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorDefaultRed;                                   // 0x1270(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           LatticeUV;                                         // 0x1280(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x1290(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x12A0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightUpCurve;                                      // 0x12B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightDownCurve;                                    // 0x12B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FadeOutCurve;                                      // 0x12C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ProgressLightUpCurve;                              // 0x12C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ProgressLightDownCurve;                            // 0x12D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x12D8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -105,32 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_LegalZone">();
+		STATIC_CLASS_IMPL("PyCue_Level_LegalZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_LegalZone")
 	}
 	static class APyCue_Level_LegalZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_LegalZone>();
 	}
 };
-static_assert(alignof(APyCue_Level_LegalZone) == 0x000010, "Wrong alignment on APyCue_Level_LegalZone");
-static_assert(sizeof(APyCue_Level_LegalZone) == 0x0012E0, "Wrong size on APyCue_Level_LegalZone");
-static_assert(offsetof(APyCue_Level_LegalZone, MaterialColorWhite) == 0x001220, "Member 'APyCue_Level_LegalZone::MaterialColorWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, MaterialColorBlue) == 0x001228, "Member 'APyCue_Level_LegalZone::MaterialColorBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, MaterialColorRed) == 0x001230, "Member 'APyCue_Level_LegalZone::MaterialColorRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, DynamicColorWhite) == 0x001238, "Member 'APyCue_Level_LegalZone::DynamicColorWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, DynamicColorBlue) == 0x001240, "Member 'APyCue_Level_LegalZone::DynamicColorBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, DynamicColorRed) == 0x001248, "Member 'APyCue_Level_LegalZone::DynamicColorRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, ColorDefaultBlue) == 0x001250, "Member 'APyCue_Level_LegalZone::ColorDefaultBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, ColorDefaultRed) == 0x001260, "Member 'APyCue_Level_LegalZone::ColorDefaultRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, LatticeUV) == 0x001270, "Member 'APyCue_Level_LegalZone::LatticeUV' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, AllyColor) == 0x001280, "Member 'APyCue_Level_LegalZone::AllyColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, EnemyColor) == 0x001290, "Member 'APyCue_Level_LegalZone::EnemyColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, LightUpCurve) == 0x0012A0, "Member 'APyCue_Level_LegalZone::LightUpCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, LightDownCurve) == 0x0012A8, "Member 'APyCue_Level_LegalZone::LightDownCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, FadeOutCurve) == 0x0012B0, "Member 'APyCue_Level_LegalZone::FadeOutCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, ProgressLightUpCurve) == 0x0012B8, "Member 'APyCue_Level_LegalZone::ProgressLightUpCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, ProgressLightDownCurve) == 0x0012C0, "Member 'APyCue_Level_LegalZone::ProgressLightDownCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_LegalZone, ViewTargetWatcher) == 0x0012C8, "Member 'APyCue_Level_LegalZone::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_LegalZone;
 
 }
 

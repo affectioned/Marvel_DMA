@@ -17,61 +17,56 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ReplayTeamInfo_Left.WBP_ReplayTeamInfo_Left_C
-// 0x0098 (0x0688 - 0x05F0)
+// 0x00F0 (0x06E8 - 0x05F8)
 class UWBP_ReplayTeamInfo_Left_C final : public UPyWidget_ReplayTeamInfo
 {
 public:
-	class UWidgetAnimation*                       Anim_Normal;                                       // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Hover;                                        // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   Hbox_Score;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon;                                          // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Top_Bg;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Top_Bg2;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Top_Bg3;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Info;                                      // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_TeamInfo;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Top;                                       // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_BanPick;                                      // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Force;                                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Team_ClanName_FullName_C*          WBP_ClanName_FullName;                             // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_League_TeamIcon_C*                 WBP_League_TeamIcon;                               // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ReplaySpectating_Score_C*          WBP_Score;                                         // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ReplaySpectating_Score_C*          WBP_Score_1;                                       // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ReplaySpectating_Score_C*          WBP_Score_2;                                       // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ReplaySpectating_Score_C*          WBP_Score_3;                                       // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ReplaySpectating_Score_C*          WBP_Score_4;                                       // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Normal;                                       // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Hover;                                        // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   Hbox_Score;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Block;                                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_DigitalScoreBg;                                // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon_Ban;                                      // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_IconBg_Ban;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Top_Bg;                                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Top_Bg2;                                       // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Top_Bg3;                                       // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_BanPickHead;                               // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_DigitalScore;                              // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Info;                                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_TeamInfo;                                  // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Top;                                       // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_BanPick;                                      // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_DigitalScore;                                 // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Force;                                        // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Team_ClanName_FullName_C*          WBP_ClanName_FullName;                             // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_League_TeamIcon_C*                 WBP_League_TeamIcon;                               // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ReplaySpectating_Score_C*          WBP_Score;                                         // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ReplaySpectating_Score_C*          WBP_Score_1;                                       // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ReplaySpectating_Score_C*          WBP_Score_2;                                       // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ReplaySpectating_Score_C*          WBP_Score_3;                                       // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ReplaySpectating_Score_C*          WBP_Score_4;                                       // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Replay_BanPickHead_Blue_C*         WBPBanPickHead_1;                                  // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Replay_BanPickHead_Blue_C*         WBPBanPickHead_2;                                  // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Replay_BanPickHead_Blue_C*         WBPBanPickHead_3;                                  // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Replay_BanPickHead_Blue_C*         WBPBanPickHead_4;                                  // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ReplayTeamInfo_Left_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ReplayTeamInfo_Left_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ReplayTeamInfo_Left_C")
 	}
 	static class UWBP_ReplayTeamInfo_Left_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ReplayTeamInfo_Left_C>();
 	}
 };
-static_assert(alignof(UWBP_ReplayTeamInfo_Left_C) == 0x000008, "Wrong alignment on UWBP_ReplayTeamInfo_Left_C");
-static_assert(sizeof(UWBP_ReplayTeamInfo_Left_C) == 0x000688, "Wrong size on UWBP_ReplayTeamInfo_Left_C");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Anim_Normal) == 0x0005F0, "Member 'UWBP_ReplayTeamInfo_Left_C::Anim_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Anim_Hover) == 0x0005F8, "Member 'UWBP_ReplayTeamInfo_Left_C::Anim_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Hbox_Score) == 0x000600, "Member 'UWBP_ReplayTeamInfo_Left_C::Hbox_Score' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Img_Icon) == 0x000608, "Member 'UWBP_ReplayTeamInfo_Left_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Img_Top_Bg) == 0x000610, "Member 'UWBP_ReplayTeamInfo_Left_C::Img_Top_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Img_Top_Bg2) == 0x000618, "Member 'UWBP_ReplayTeamInfo_Left_C::Img_Top_Bg2' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Img_Top_Bg3) == 0x000620, "Member 'UWBP_ReplayTeamInfo_Left_C::Img_Top_Bg3' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Overlay_Info) == 0x000628, "Member 'UWBP_ReplayTeamInfo_Left_C::Overlay_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Overlay_TeamInfo) == 0x000630, "Member 'UWBP_ReplayTeamInfo_Left_C::Overlay_TeamInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Overlay_Top) == 0x000638, "Member 'UWBP_ReplayTeamInfo_Left_C::Overlay_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Text_BanPick) == 0x000640, "Member 'UWBP_ReplayTeamInfo_Left_C::Text_BanPick' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, Text_Force) == 0x000648, "Member 'UWBP_ReplayTeamInfo_Left_C::Text_Force' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_ClanName_FullName) == 0x000650, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_ClanName_FullName' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_League_TeamIcon) == 0x000658, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_League_TeamIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_Score) == 0x000660, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_Score' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_Score_1) == 0x000668, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_Score_1' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_Score_2) == 0x000670, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_Score_2' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_Score_3) == 0x000678, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_Score_3' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplayTeamInfo_Left_C, WBP_Score_4) == 0x000680, "Member 'UWBP_ReplayTeamInfo_Left_C::WBP_Score_4' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ReplayTeamInfo_Left_C;
 
 }
 

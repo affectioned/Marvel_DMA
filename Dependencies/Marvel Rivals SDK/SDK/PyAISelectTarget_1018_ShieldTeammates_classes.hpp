@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_1018_ShieldTeammates">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_1018_ShieldTeammates")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_1018_ShieldTeammates")
 	}
 	static class UPyAISelectTarget_1018_ShieldTeammates* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_1018_ShieldTeammates>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_1018_ShieldTeammates) == 0x000008, "Wrong alignment on UPyAISelectTarget_1018_ShieldTeammates");
-static_assert(sizeof(UPyAISelectTarget_1018_ShieldTeammates) == 0x000070, "Wrong size on UPyAISelectTarget_1018_ShieldTeammates");
+DUMPER7_ASSERTS_UPyAISelectTarget_1018_ShieldTeammates;
 
 }
 

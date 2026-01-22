@@ -19,19 +19,15 @@ namespace SDK::Params
 {
 
 // PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391003.OnAbilityHit
-// 0x0030 (0x0030 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PyBuffAbility_10130_10391003_OnAbilityHit final
 {
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_10130_10391003_OnAbilityHit) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10391003_OnAbilityHit");
-static_assert(sizeof(PyBuffAbility_10130_10391003_OnAbilityHit) == 0x000030, "Wrong size on PyBuffAbility_10130_10391003_OnAbilityHit");
-static_assert(offsetof(PyBuffAbility_10130_10391003_OnAbilityHit, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10391003_OnAbilityHit::Ability' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391003_OnAbilityHit, HitParams) == 0x000008, "Member 'PyBuffAbility_10130_10391003_OnAbilityHit::HitParams' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391003_OnAbilityHit, HitResults) == 0x000020, "Member 'PyBuffAbility_10130_10391003_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10391003_OnAbilityHit;
 
 // PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002.OtherAbilityApplyCost
 // 0x0018 (0x0018 - 0x0000)
@@ -42,11 +38,7 @@ public:
 	float                                         CostValue;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           CostType_0;                                        // 0x000C(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10391002_OtherAbilityApplyCost) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10391002_OtherAbilityApplyCost");
-static_assert(sizeof(PyBuffAbility_10130_10391002_OtherAbilityApplyCost) == 0x000018, "Wrong size on PyBuffAbility_10130_10391002_OtherAbilityApplyCost");
-static_assert(offsetof(PyBuffAbility_10130_10391002_OtherAbilityApplyCost, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10391002_OtherAbilityApplyCost::Ability' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391002_OtherAbilityApplyCost, CostValue) == 0x000008, "Member 'PyBuffAbility_10130_10391002_OtherAbilityApplyCost::CostValue' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10391002_OtherAbilityApplyCost, CostType_0) == 0x00000C, "Member 'PyBuffAbility_10130_10391002_OtherAbilityApplyCost::CostType_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10391002_OtherAbilityApplyCost;
 
 }
 

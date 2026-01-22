@@ -27,13 +27,7 @@ public:
 	struct FCustomDateTime                        EndTime_14_696AA3A94319B6991C0A9292F19E00D0;       // 0x0050(0x0020)(Edit, BlueprintVisible)
 	TArray<class FString>                         SeasonTaskID_16_B23578CD49281E2D2E0A948209397774;  // 0x0070(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FSeasonTaskGroup_BP) == 0x000008, "Wrong alignment on FSeasonTaskGroup_BP");
-static_assert(sizeof(FSeasonTaskGroup_BP) == 0x000080, "Wrong size on FSeasonTaskGroup_BP");
-static_assert(offsetof(FSeasonTaskGroup_BP, Desc_2_FDFBA5B3436C518E89F82EBE448C4377) == 0x000000, "Member 'FSeasonTaskGroup_BP::Desc_2_FDFBA5B3436C518E89F82EBE448C4377' has a wrong offset!");
-static_assert(offsetof(FSeasonTaskGroup_BP, StartTime_12_46F4EFAB43DAB228874B42842C287F95) == 0x000010, "Member 'FSeasonTaskGroup_BP::StartTime_12_46F4EFAB43DAB228874B42842C287F95' has a wrong offset!");
-static_assert(offsetof(FSeasonTaskGroup_BP, HalfTime_24_7471E18C4F90990962EAE59A415E329A) == 0x000030, "Member 'FSeasonTaskGroup_BP::HalfTime_24_7471E18C4F90990962EAE59A415E329A' has a wrong offset!");
-static_assert(offsetof(FSeasonTaskGroup_BP, EndTime_14_696AA3A94319B6991C0A9292F19E00D0) == 0x000050, "Member 'FSeasonTaskGroup_BP::EndTime_14_696AA3A94319B6991C0A9292F19E00D0' has a wrong offset!");
-static_assert(offsetof(FSeasonTaskGroup_BP, SeasonTaskID_16_B23578CD49281E2D2E0A948209397774) == 0x000070, "Member 'FSeasonTaskGroup_BP::SeasonTaskID_16_B23578CD49281E2D2E0A948209397774' has a wrong offset!");
+DUMPER7_ASSERTS_FSeasonTaskGroup_BP;
 
 }
 

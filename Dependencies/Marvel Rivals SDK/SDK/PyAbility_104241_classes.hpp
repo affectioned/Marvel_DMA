@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1042_structs.hpp"
-#include "Hero_1042_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Hero_1042_structs.hpp"
+#include "Hero_1042_classes.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -23,7 +23,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104241.PySummonedComp_10424102
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10424102 : public USummonedComp_10424102
 {
 public:
@@ -34,24 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10424102">();
+		STATIC_CLASS_IMPL("PySummonedComp_10424102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10424102")
 	}
 	static class UPySummonedComp_10424102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10424102>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10424102) == 0x000008, "Wrong alignment on UPySummonedComp_10424102");
-static_assert(sizeof(UPySummonedComp_10424102) == 0x000DB0, "Wrong size on UPySummonedComp_10424102");
+DUMPER7_ASSERTS_UPySummonedComp_10424102;
 
 // PythonClass PyAbility_104241.PySummonerLoop_10424101_Cue
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APySummonerLoop_10424101_Cue final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 NestMesh;                                          // 0x1200(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FXNestMeshAnim;                                    // 0x1208(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 NestMesh;                                          // 0x1260(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FXNestMeshAnim;                                    // 0x1268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -61,20 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonerLoop_10424101_Cue">();
+		STATIC_CLASS_IMPL("PySummonerLoop_10424101_Cue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonerLoop_10424101_Cue")
 	}
 	static class APySummonerLoop_10424101_Cue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummonerLoop_10424101_Cue>();
 	}
 };
-static_assert(alignof(APySummonerLoop_10424101_Cue) == 0x000010, "Wrong alignment on APySummonerLoop_10424101_Cue");
-static_assert(sizeof(APySummonerLoop_10424101_Cue) == 0x001210, "Wrong size on APySummonerLoop_10424101_Cue");
-static_assert(offsetof(APySummonerLoop_10424101_Cue, NestMesh) == 0x001200, "Member 'APySummonerLoop_10424101_Cue::NestMesh' has a wrong offset!");
-static_assert(offsetof(APySummonerLoop_10424101_Cue, FXNestMeshAnim) == 0x001208, "Member 'APySummonerLoop_10424101_Cue::FXNestMeshAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APySummonerLoop_10424101_Cue;
 
 // PythonClass PyAbility_104241.PyConfig_104241
-// 0x5A98 (0x5B60 - 0x00C8)
+// 0x67D8 (0x68A0 - 0x00C8)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyConfig_104241 : public UConfig_PeniParkerExlosiveSpider
 {
@@ -84,29 +88,33 @@ public:
 	int32                                         WebSummonedId;                                     // 0x00D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InVincibleBuffId;                                  // 0x00D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x00E0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             SummonedValidSpaceTraceParam;                      // 0x1740(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         ProjectileSpeed;                                   // 0x2DA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProjectileGravityScale;                            // 0x2DA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpreadValidDegree;                                 // 0x2DA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxToleranceShirnkTime;                            // 0x2DAC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseIntervalTime;                               // 0x2DB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReleaseSpiderCount;                                // 0x2DB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReleaseSpiderOffset;                               // 0x2DB8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxIndicatingRange;                                // 0x2DD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseWebTime;                                    // 0x2DD4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpreadTotalTime;                                   // 0x2DD8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseTotalTime;                                  // 0x2DDC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseTime;                                       // 0x2DE0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           NestActiveOwningTag;                               // 0x2DE4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       TargetTraceParam;                                  // 0x2DF0(0x16B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       TargetTraceParam_BC;                               // 0x44A0(0x16B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TraceActorCueTag;                                  // 0x5B50(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x00E0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             SummonedValidSpaceTraceParam;                      // 0x1A90(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         ProjectileSpeed;                                   // 0x3440(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProjectileGravityScale;                            // 0x3444(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpreadValidDegree;                                 // 0x3448(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxToleranceShirnkTime;                            // 0x344C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseIntervalTime;                               // 0x3450(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReleaseSpiderCount;                                // 0x3454(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReleaseSpiderOffset;                               // 0x3458(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxIndicatingRange;                                // 0x3470(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseWebTime;                                    // 0x3474(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpreadTotalTime;                                   // 0x3478(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseTotalTime;                                  // 0x347C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseTime;                                       // 0x3480(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           NestActiveOwningTag;                               // 0x3484(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       TargetTraceParam;                                  // 0x3490(0x1A00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       TargetTraceParam_BC;                               // 0x4E90(0x1A00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TraceActorCueTag;                                  // 0x6890(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104241">();
+		STATIC_CLASS_IMPL("PyConfig_104241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104241")
 	}
 	static class UPyConfig_104241* GetDefaultObj()
 	{
@@ -114,33 +122,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyConfig_104241) == 0x000010, "Wrong alignment on UPyConfig_104241");
-static_assert(sizeof(UPyConfig_104241) == 0x005B60, "Wrong size on UPyConfig_104241");
-static_assert(offsetof(UPyConfig_104241, NestSummonedId) == 0x0000C8, "Member 'UPyConfig_104241::NestSummonedId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, SpiderSummonedId) == 0x0000CC, "Member 'UPyConfig_104241::SpiderSummonedId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, WebSummonedId) == 0x0000D0, "Member 'UPyConfig_104241::WebSummonedId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, InVincibleBuffId) == 0x0000D4, "Member 'UPyConfig_104241::InVincibleBuffId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ThrowTraceContext) == 0x0000E0, "Member 'UPyConfig_104241::ThrowTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, SummonedValidSpaceTraceParam) == 0x001740, "Member 'UPyConfig_104241::SummonedValidSpaceTraceParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ProjectileSpeed) == 0x002DA0, "Member 'UPyConfig_104241::ProjectileSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ProjectileGravityScale) == 0x002DA4, "Member 'UPyConfig_104241::ProjectileGravityScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, SpreadValidDegree) == 0x002DA8, "Member 'UPyConfig_104241::SpreadValidDegree' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, MaxToleranceShirnkTime) == 0x002DAC, "Member 'UPyConfig_104241::MaxToleranceShirnkTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseIntervalTime) == 0x002DB0, "Member 'UPyConfig_104241::ReleaseIntervalTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseSpiderCount) == 0x002DB4, "Member 'UPyConfig_104241::ReleaseSpiderCount' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseSpiderOffset) == 0x002DB8, "Member 'UPyConfig_104241::ReleaseSpiderOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, MaxIndicatingRange) == 0x002DD0, "Member 'UPyConfig_104241::MaxIndicatingRange' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseWebTime) == 0x002DD4, "Member 'UPyConfig_104241::ReleaseWebTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, SpreadTotalTime) == 0x002DD8, "Member 'UPyConfig_104241::SpreadTotalTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseTotalTime) == 0x002DDC, "Member 'UPyConfig_104241::ReleaseTotalTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, ReleaseTime) == 0x002DE0, "Member 'UPyConfig_104241::ReleaseTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, NestActiveOwningTag) == 0x002DE4, "Member 'UPyConfig_104241::NestActiveOwningTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, TargetTraceParam) == 0x002DF0, "Member 'UPyConfig_104241::TargetTraceParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, TargetTraceParam_BC) == 0x0044A0, "Member 'UPyConfig_104241::TargetTraceParam_BC' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104241, TraceActorCueTag) == 0x005B50, "Member 'UPyConfig_104241::TraceActorCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104241;
 
 // PythonClass PyAbility_104241.PyAbility_104241
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104241 : public UMarvelGameplayAbility
 {
 public:
@@ -156,37 +141,40 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104241">();
+		STATIC_CLASS_IMPL("PyAbility_104241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104241")
 	}
 	static class UPyAbility_104241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104241>();
 	}
 };
-static_assert(alignof(UPyAbility_104241) == 0x000008, "Wrong alignment on UPyAbility_104241");
-static_assert(sizeof(UPyAbility_104241) == 0x0029F0, "Wrong size on UPyAbility_104241");
+DUMPER7_ASSERTS_UPyAbility_104241;
 
 // PythonClass PyAbility_104241.PyCue_Summoner_Loop_10424105
-// 0x00C0 (0x13D0 - 0x1310)
+// 0x00C0 (0x1430 - 0x1370)
 class APyCue_Summoner_Loop_10424105 final : public ACue_Summoner_Loop_10424105
 {
 public:
-	class UMarvelTimelineComponent*               TimelineComponent;                                 // 0x1310(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveVector*                           WebScaleCurve;                                     // 0x1318(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            WebAlphaCurve;                                     // 0x1320(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AlphaParmName;                                     // 0x1328(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            WebWPOCurve;                                       // 0x1338(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 WPOParmName;                                       // 0x1340(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            WebEmissiveCuerve;                                 // 0x1350(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EmissiveParmName;                                  // 0x1358(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           NormalLinkColor;                                   // 0x1368(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SecondLinkColor;                                   // 0x1378(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ThirdLinkColor;                                    // 0x1388(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         WebSpawnFXAsset;                                   // 0x1398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                WevSpawnFXOffset;                                  // 0x13A0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WebSpawnFXDelay;                                   // 0x13B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WebSpawnFXSize;                                    // 0x13BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnStartWebTimelines;                               // 0x13C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarvelTimelineComponent*               TimelineComponent;                                 // 0x1370(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveVector*                           WebScaleCurve;                                     // 0x1378(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            WebAlphaCurve;                                     // 0x1380(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AlphaParmName;                                     // 0x1388(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            WebWPOCurve;                                       // 0x1398(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 WPOParmName;                                       // 0x13A0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            WebEmissiveCuerve;                                 // 0x13B0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EmissiveParmName;                                  // 0x13B8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NormalLinkColor;                                   // 0x13C8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SecondLinkColor;                                   // 0x13D8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ThirdLinkColor;                                    // 0x13E8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         WebSpawnFXAsset;                                   // 0x13F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                WevSpawnFXOffset;                                  // 0x1400(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WebSpawnFXDelay;                                   // 0x1418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WebSpawnFXSize;                                    // 0x141C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnStartWebTimelines;                               // 0x1420(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -205,31 +193,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10424105">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10424105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10424105")
 	}
 	static class APyCue_Summoner_Loop_10424105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10424105>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10424105) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10424105");
-static_assert(sizeof(APyCue_Summoner_Loop_10424105) == 0x0013D0, "Wrong size on APyCue_Summoner_Loop_10424105");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, TimelineComponent) == 0x001310, "Member 'APyCue_Summoner_Loop_10424105::TimelineComponent' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebScaleCurve) == 0x001318, "Member 'APyCue_Summoner_Loop_10424105::WebScaleCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebAlphaCurve) == 0x001320, "Member 'APyCue_Summoner_Loop_10424105::WebAlphaCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, AlphaParmName) == 0x001328, "Member 'APyCue_Summoner_Loop_10424105::AlphaParmName' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebWPOCurve) == 0x001338, "Member 'APyCue_Summoner_Loop_10424105::WebWPOCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WPOParmName) == 0x001340, "Member 'APyCue_Summoner_Loop_10424105::WPOParmName' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebEmissiveCuerve) == 0x001350, "Member 'APyCue_Summoner_Loop_10424105::WebEmissiveCuerve' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, EmissiveParmName) == 0x001358, "Member 'APyCue_Summoner_Loop_10424105::EmissiveParmName' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, NormalLinkColor) == 0x001368, "Member 'APyCue_Summoner_Loop_10424105::NormalLinkColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, SecondLinkColor) == 0x001378, "Member 'APyCue_Summoner_Loop_10424105::SecondLinkColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, ThirdLinkColor) == 0x001388, "Member 'APyCue_Summoner_Loop_10424105::ThirdLinkColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebSpawnFXAsset) == 0x001398, "Member 'APyCue_Summoner_Loop_10424105::WebSpawnFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WevSpawnFXOffset) == 0x0013A0, "Member 'APyCue_Summoner_Loop_10424105::WevSpawnFXOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebSpawnFXDelay) == 0x0013B8, "Member 'APyCue_Summoner_Loop_10424105::WebSpawnFXDelay' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, WebSpawnFXSize) == 0x0013BC, "Member 'APyCue_Summoner_Loop_10424105::WebSpawnFXSize' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10424105, OnStartWebTimelines) == 0x0013C0, "Member 'APyCue_Summoner_Loop_10424105::OnStartWebTimelines' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10424105;
 
 // PythonClass PyAbility_104241.PyExplosiveSpiderManager
 // 0x0000 (0x0340 - 0x0340)
@@ -238,40 +213,46 @@ class UPyExplosiveSpiderManager final : public USceneComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExplosiveSpiderManager">();
+		STATIC_CLASS_IMPL("PyExplosiveSpiderManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExplosiveSpiderManager")
 	}
 	static class UPyExplosiveSpiderManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExplosiveSpiderManager>();
 	}
 };
-static_assert(alignof(UPyExplosiveSpiderManager) == 0x000010, "Wrong alignment on UPyExplosiveSpiderManager");
-static_assert(sizeof(UPyExplosiveSpiderManager) == 0x000340, "Wrong size on UPyExplosiveSpiderManager");
+DUMPER7_ASSERTS_UPyExplosiveSpiderManager;
 
 // PythonClass PyAbility_104241.PyExplosiveSpiderMeshComponent
-// 0x0000 (0x0A60 - 0x0A60)
+// 0x0000 (0x0A70 - 0x0A70)
 class UPyExplosiveSpiderMeshComponent final : public UInstancedStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExplosiveSpiderMeshComponent">();
+		STATIC_CLASS_IMPL("PyExplosiveSpiderMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExplosiveSpiderMeshComponent")
 	}
 	static class UPyExplosiveSpiderMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExplosiveSpiderMeshComponent>();
 	}
 };
-static_assert(alignof(UPyExplosiveSpiderMeshComponent) == 0x000010, "Wrong alignment on UPyExplosiveSpiderMeshComponent");
-static_assert(sizeof(UPyExplosiveSpiderMeshComponent) == 0x000A60, "Wrong size on UPyExplosiveSpiderMeshComponent");
+DUMPER7_ASSERTS_UPyExplosiveSpiderMeshComponent;
 
 // PythonClass PyAbility_104241.PySummoned_10424101
-// 0x0010 (0x0B50 - 0x0B40)
+// 0x0010 (0x0B70 - 0x0B60)
 #pragma pack(push, 0x1)
 class alignas(0x10) APySummoned_10424101 : public ASummoned_10424101
 {
 public:
-	class UPyExplosiveSpiderManager*              SpiderManager;                                     // 0x0B40(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyExplosiveSpiderManager*              SpiderManager;                                     // 0x0B60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	EState_10424101 GetCurrentState();
@@ -279,7 +260,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10424101">();
+		STATIC_CLASS_IMPL("PySummoned_10424101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10424101")
 	}
 	static class APySummoned_10424101* GetDefaultObj()
 	{
@@ -287,20 +272,18 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummoned_10424101) == 0x000010, "Wrong alignment on APySummoned_10424101");
-static_assert(sizeof(APySummoned_10424101) == 0x000B50, "Wrong size on APySummoned_10424101");
-static_assert(offsetof(APySummoned_10424101, SpiderManager) == 0x000B40, "Member 'APySummoned_10424101::SpiderManager' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10424101;
 
 // PythonClass PyAbility_104241.PySummonedComp_10424101
-// 0x0028 (0x0DD8 - 0x0DB0)
+// 0x0028 (0x0E30 - 0x0E08)
 class UPySummonedComp_10424101 : public USummonedComp_10424101
 {
 public:
-	EState_10424101                               State;                                             // 0x0DB0(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEvent_10424101                               Event;                                             // 0x0DB1(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB2[0x6];                                      // 0x0DB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnElectronicNestEndTask;                           // 0x0DB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EState_10424101 NewState)> OnStateChange;                          // 0x0DC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EState_10424101                               State;                                             // 0x0E08(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEvent_10424101                               Event;                                             // 0x0E09(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E0A[0x6];                                      // 0x0E0A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnElectronicNestEndTask;                           // 0x0E10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EState_10424101 NewState)> OnStateChange;                          // 0x0E20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void EndPlay();
@@ -324,31 +307,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10424101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10424101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10424101")
 	}
 	static class UPySummonedComp_10424101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10424101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10424101) == 0x000008, "Wrong alignment on UPySummonedComp_10424101");
-static_assert(sizeof(UPySummonedComp_10424101) == 0x000DD8, "Wrong size on UPySummonedComp_10424101");
-static_assert(offsetof(UPySummonedComp_10424101, State) == 0x000DB0, "Member 'UPySummonedComp_10424101::State' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10424101, Event) == 0x000DB1, "Member 'UPySummonedComp_10424101::Event' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10424101, OnElectronicNestEndTask) == 0x000DB8, "Member 'UPySummonedComp_10424101::OnElectronicNestEndTask' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10424101, OnStateChange) == 0x000DC8, "Member 'UPySummonedComp_10424101::OnStateChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_10424101;
 
 // PythonClass PyAbility_104241.PySummonerLoop_10424102_Cue
-// 0x0030 (0x1230 - 0x1200)
+// 0x0030 (0x1290 - 0x1260)
 #pragma pack(push, 0x1)
 class alignas(0x10) APySummonerLoop_10424102_Cue : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MoveStateAudioID;                                  // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1204[0x4];                                     // 0x1204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnStopMoveDelegate;                                // 0x1208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBeginMoveDelegate;                               // 0x1218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MoveStateAudioID;                                  // 0x1260(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1264[0x4];                                     // 0x1264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnStopMoveDelegate;                                // 0x1268(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBeginMoveDelegate;                               // 0x1278(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -357,7 +339,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonerLoop_10424102_Cue">();
+		STATIC_CLASS_IMPL("PySummonerLoop_10424102_Cue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonerLoop_10424102_Cue")
 	}
 	static class APySummonerLoop_10424102_Cue* GetDefaultObj()
 	{
@@ -365,20 +351,16 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummonerLoop_10424102_Cue) == 0x000010, "Wrong alignment on APySummonerLoop_10424102_Cue");
-static_assert(sizeof(APySummonerLoop_10424102_Cue) == 0x001230, "Wrong size on APySummonerLoop_10424102_Cue");
-static_assert(offsetof(APySummonerLoop_10424102_Cue, MoveStateAudioID) == 0x001200, "Member 'APySummonerLoop_10424102_Cue::MoveStateAudioID' has a wrong offset!");
-static_assert(offsetof(APySummonerLoop_10424102_Cue, OnStopMoveDelegate) == 0x001208, "Member 'APySummonerLoop_10424102_Cue::OnStopMoveDelegate' has a wrong offset!");
-static_assert(offsetof(APySummonerLoop_10424102_Cue, OnBeginMoveDelegate) == 0x001218, "Member 'APySummonerLoop_10424102_Cue::OnBeginMoveDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_APySummonerLoop_10424102_Cue;
 
 // PythonClass PyAbility_104241.PySummonerLoop_10424103_Cue
-// 0x0010 (0x1240 - 0x1230)
+// 0x0010 (0x12A0 - 0x1290)
 class APySummonerLoop_10424103_Cue final : public APySummonerLoop_10424102_Cue
 {
 public:
-	class UStaticMesh*                            IdleStaticMesh;                                    // 0x1228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMesh*                            RunStaticMesh;                                     // 0x1230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x1238(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            IdleStaticMesh;                                    // 0x1288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                            RunStaticMesh;                                     // 0x1290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x1298(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -387,21 +369,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonerLoop_10424103_Cue">();
+		STATIC_CLASS_IMPL("PySummonerLoop_10424103_Cue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonerLoop_10424103_Cue")
 	}
 	static class APySummonerLoop_10424103_Cue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummonerLoop_10424103_Cue>();
 	}
 };
-static_assert(alignof(APySummonerLoop_10424103_Cue) == 0x000010, "Wrong alignment on APySummonerLoop_10424103_Cue");
-static_assert(sizeof(APySummonerLoop_10424103_Cue) == 0x001240, "Wrong size on APySummonerLoop_10424103_Cue");
-static_assert(offsetof(APySummonerLoop_10424103_Cue, IdleStaticMesh) == 0x001228, "Member 'APySummonerLoop_10424103_Cue::IdleStaticMesh' has a wrong offset!");
-static_assert(offsetof(APySummonerLoop_10424103_Cue, RunStaticMesh) == 0x001230, "Member 'APySummonerLoop_10424103_Cue::RunStaticMesh' has a wrong offset!");
-static_assert(offsetof(APySummonerLoop_10424103_Cue, SummonedStaticMesh) == 0x001238, "Member 'APySummonerLoop_10424103_Cue::SummonedStaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_APySummonerLoop_10424103_Cue;
 
 // PythonClass PyAbility_104241.PyCue_SummonerLoop_10424104
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APyCue_SummonerLoop_10424104 final : public AMarvelCueNotify_Summoned
 {
 public:
@@ -412,23 +394,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_SummonerLoop_10424104">();
+		STATIC_CLASS_IMPL("PyCue_SummonerLoop_10424104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_SummonerLoop_10424104")
 	}
 	static class APyCue_SummonerLoop_10424104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_SummonerLoop_10424104>();
 	}
 };
-static_assert(alignof(APyCue_SummonerLoop_10424104) == 0x000010, "Wrong alignment on APyCue_SummonerLoop_10424104");
-static_assert(sizeof(APyCue_SummonerLoop_10424104) == 0x001200, "Wrong size on APyCue_SummonerLoop_10424104");
+DUMPER7_ASSERTS_APyCue_SummonerLoop_10424104;
 
 // PythonClass PyAbility_104241.PySummonedComp_10424103
-// 0x0020 (0x0DD0 - 0x0DB0)
+// 0x0020 (0x0E28 - 0x0E08)
 class UPySummonedComp_10424103 : public USummonedComp_10424103
 {
 public:
-	TMulticastInlineDelegate<void()>              OnLinkStateChanged;                                // 0x0DB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              GenMeshReformDispatcher;                           // 0x0DC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnLinkStateChanged;                                // 0x0E08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              GenMeshReformDispatcher;                           // 0x0E18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnWebActive();
@@ -440,20 +425,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10424103">();
+		STATIC_CLASS_IMPL("PySummonedComp_10424103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10424103")
 	}
 	static class UPySummonedComp_10424103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10424103>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10424103) == 0x000008, "Wrong alignment on UPySummonedComp_10424103");
-static_assert(sizeof(UPySummonedComp_10424103) == 0x000DD0, "Wrong size on UPySummonedComp_10424103");
-static_assert(offsetof(UPySummonedComp_10424103, OnLinkStateChanged) == 0x000DB0, "Member 'UPySummonedComp_10424103::OnLinkStateChanged' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10424103, GenMeshReformDispatcher) == 0x000DC0, "Member 'UPySummonedComp_10424103::GenMeshReformDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_10424103;
 
 // PythonClass PyAbility_104241.PyCue_Ability_Loop_10424101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10424101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -462,15 +448,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10424101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10424101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10424101")
 	}
 	static class APyCue_Ability_Loop_10424101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10424101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10424101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10424101");
-static_assert(sizeof(APyCue_Ability_Loop_10424101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10424101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10424101;
 
 }
 

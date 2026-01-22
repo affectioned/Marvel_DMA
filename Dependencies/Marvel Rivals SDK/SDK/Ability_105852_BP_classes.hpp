@@ -18,25 +18,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105852_BP.Ability_105852_BP_C
-// 0x17C0 (0x4250 - 0x2A90)
+// 0x1B70 (0x4650 - 0x2AE0)
 class UAbility_105852_BP_C final : public UAbility_105852
 {
 public:
-	struct FSelectTaskParam                       选取参数;                                          // 0x2A90(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FSelectTaskParam                       选取参数;                                          // 0x2AE0(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105852_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105852_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105852_BP_C")
 	}
 	static class UAbility_105852_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105852_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105852_BP_C) == 0x000010, "Wrong alignment on UAbility_105852_BP_C");
-static_assert(sizeof(UAbility_105852_BP_C) == 0x004250, "Wrong size on UAbility_105852_BP_C");
-static_assert(offsetof(UAbility_105852_BP_C, 选取参数) == 0x002A90, "Member 'UAbility_105852_BP_C::选取参数' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105852_BP_C;
 
 }
 

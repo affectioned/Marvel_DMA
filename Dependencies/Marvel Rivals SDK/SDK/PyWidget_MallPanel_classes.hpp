@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallPanel.PyWidget_MallPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_MallPanel final : public UPyWidget_LobbyChildPanel
 {
 public:
-	TArray<class UUserWidget*>                    BackgroundWidgets;                                 // 0x05F8(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    BackgroundWidgets;                                 // 0x0600(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,27 +35,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallPanel">();
+		STATIC_CLASS_IMPL("PyWidget_MallPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallPanel")
 	}
 	static class UPyWidget_MallPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_MallPanel) == 0x000008, "Wrong alignment on UPyWidget_MallPanel");
-static_assert(sizeof(UPyWidget_MallPanel) == 0x000608, "Wrong size on UPyWidget_MallPanel");
-static_assert(offsetof(UPyWidget_MallPanel, BackgroundWidgets) == 0x0005F8, "Member 'UPyWidget_MallPanel::BackgroundWidgets' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallPanel;
 
 // PythonClass PyWidget_MallPanel.PyWidget_MallItemEntryV2
-// 0x0050 (0x0778 - 0x0728)
+// 0x0050 (0x07D0 - 0x0780)
 class UPyWidget_MallItemEntryV2 : public UPyWidget_Button
 {
 public:
-	struct FVector2D                              NormalBtnSize;                                     // 0x0728(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              HoverBtnSize;                                      // 0x0738(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDelayHovered;                                    // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCardHovered;                                     // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCardUnHovered;                                   // 0x0768(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FVector2D                              NormalBtnSize;                                     // 0x0780(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HoverBtnSize;                                      // 0x0790(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDelayHovered;                                    // 0x07A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCardHovered;                                     // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCardUnHovered;                                   // 0x07C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,23 +68,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallItemEntryV2">();
+		STATIC_CLASS_IMPL("PyWidget_MallItemEntryV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallItemEntryV2")
 	}
 	static class UPyWidget_MallItemEntryV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallItemEntryV2>();
 	}
 };
-static_assert(alignof(UPyWidget_MallItemEntryV2) == 0x000008, "Wrong alignment on UPyWidget_MallItemEntryV2");
-static_assert(sizeof(UPyWidget_MallItemEntryV2) == 0x000778, "Wrong size on UPyWidget_MallItemEntryV2");
-static_assert(offsetof(UPyWidget_MallItemEntryV2, NormalBtnSize) == 0x000728, "Member 'UPyWidget_MallItemEntryV2::NormalBtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallItemEntryV2, HoverBtnSize) == 0x000738, "Member 'UPyWidget_MallItemEntryV2::HoverBtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallItemEntryV2, OnDelayHovered) == 0x000748, "Member 'UPyWidget_MallItemEntryV2::OnDelayHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallItemEntryV2, OnCardHovered) == 0x000758, "Member 'UPyWidget_MallItemEntryV2::OnCardHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallItemEntryV2, OnCardUnHovered) == 0x000768, "Member 'UPyWidget_MallItemEntryV2::OnCardUnHovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallItemEntryV2;
 
 // PythonClass PyWidget_MallPanel.PyWidget_Mall3DItemEntry
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x07D0 - 0x07D0)
 class UPyWidget_Mall3DItemEntry final : public UPyWidget_MallItemEntryV2
 {
 public:
@@ -96,34 +96,37 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall3DItemEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Mall3DItemEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall3DItemEntry")
 	}
 	static class UPyWidget_Mall3DItemEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall3DItemEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall3DItemEntry) == 0x000008, "Wrong alignment on UPyWidget_Mall3DItemEntry");
-static_assert(sizeof(UPyWidget_Mall3DItemEntry) == 0x000778, "Wrong size on UPyWidget_Mall3DItemEntry");
+DUMPER7_ASSERTS_UPyWidget_Mall3DItemEntry;
 
 // PythonClass PyWidget_MallPanel.PyWidget_PageList
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_PageList final : public UPyWidget_MallChildPanel
 {
 public:
-	int32                                         RowCount;                                          // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ColumnCount;                                       // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ColumnCount21;                                     // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsDynamicPadding;                                  // 0x0604(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_605[0x3];                                      // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CardBtnShownTime;                                  // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ViewportSize;                                      // 0x0610(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0620(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxDisplayedItems;                                 // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimaryDataAsset*                      MallConfig;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewCount;                                      // 0x0638(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RowCount;                                          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ColumnCount;                                       // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ColumnCount21;                                     // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsDynamicPadding;                                  // 0x060C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60D[0x3];                                      // 0x060D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CardBtnShownTime;                                  // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ViewportSize;                                      // 0x0618(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0628(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxDisplayedItems;                                 // 0x0630(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimaryDataAsset*                      MallConfig;                                        // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewCount;                                      // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -135,25 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PageList">();
+		STATIC_CLASS_IMPL("PyWidget_PageList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PageList")
 	}
 	static class UPyWidget_PageList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PageList>();
 	}
 };
-static_assert(alignof(UPyWidget_PageList) == 0x000008, "Wrong alignment on UPyWidget_PageList");
-static_assert(sizeof(UPyWidget_PageList) == 0x000640, "Wrong size on UPyWidget_PageList");
-static_assert(offsetof(UPyWidget_PageList, RowCount) == 0x0005F8, "Member 'UPyWidget_PageList::RowCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, ColumnCount) == 0x0005FC, "Member 'UPyWidget_PageList::ColumnCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, ColumnCount21) == 0x000600, "Member 'UPyWidget_PageList::ColumnCount21' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, IsDynamicPadding) == 0x000604, "Member 'UPyWidget_PageList::IsDynamicPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, CardBtnShownTime) == 0x000608, "Member 'UPyWidget_PageList::CardBtnShownTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, ViewportSize) == 0x000610, "Member 'UPyWidget_PageList::ViewportSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, HeroList_CardUnit) == 0x000620, "Member 'UPyWidget_PageList::HeroList_CardUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, MaxDisplayedItems) == 0x000628, "Member 'UPyWidget_PageList::MaxDisplayedItems' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, MallConfig) == 0x000630, "Member 'UPyWidget_PageList::MallConfig' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageList, PreviewCount) == 0x000638, "Member 'UPyWidget_PageList::PreviewCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PageList;
 
 }
 

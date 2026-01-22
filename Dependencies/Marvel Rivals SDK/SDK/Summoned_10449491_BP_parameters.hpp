@@ -30,16 +30,7 @@ public:
 	class AMarvelBaseCharacter*                   K2Node_DynamicCast_AsMarvel_Base_Character;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP) == 0x000008, "Wrong alignment on Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP");
-static_assert(sizeof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP) == 0x000058, "Wrong size on Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, EntryPoint) == 0x000000, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, CallFunc_GetQuoteSource_ReturnValue) == 0x000018, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::CallFunc_GetQuoteSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_CustomEvent_InSourceAvatar) == 0x000020, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_CustomEvent_InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_CustomEvent_InTargetAvatar) == 0x000028, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_CustomEvent_InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_CustomEvent_ModifierParameterHandle) == 0x000030, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_CustomEvent_ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_DynamicCast_AsMarvel_Base_Character) == 0x000048, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_DynamicCast_AsMarvel_Base_Character' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_10449491_BP_C_ExecuteUbergraph_Summoned_10449491_BP;
 
 // Function Summoned_10449491_BP.Summoned_10449491_BP_C.OnQuoteDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -50,11 +41,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(Summoned_10449491_BP_C_OnQuoteDeath) == 0x000008, "Wrong alignment on Summoned_10449491_BP_C_OnQuoteDeath");
-static_assert(sizeof(Summoned_10449491_BP_C_OnQuoteDeath) == 0x000028, "Wrong size on Summoned_10449491_BP_C_OnQuoteDeath");
-static_assert(offsetof(Summoned_10449491_BP_C_OnQuoteDeath, InSourceAvatar) == 0x000000, "Member 'Summoned_10449491_BP_C_OnQuoteDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_OnQuoteDeath, InTargetAvatar) == 0x000008, "Member 'Summoned_10449491_BP_C_OnQuoteDeath::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(Summoned_10449491_BP_C_OnQuoteDeath, ModifierParameterHandle) == 0x000010, "Member 'Summoned_10449491_BP_C_OnQuoteDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_10449491_BP_C_OnQuoteDeath;
 
 }
 

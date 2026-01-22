@@ -28,15 +28,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryPerformanceDetectionHandler_BP_OnBtnClicked;
 
 }
 

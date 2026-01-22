@@ -33,17 +33,7 @@ public:
 	bool                                          CallFunc_IsEditor_ReturnValue_1;                   // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelGlobalIllumination_C_UserConstructionScript) == 0x000010, "Wrong alignment on MarvelGlobalIllumination_C_UserConstructionScript");
-static_assert(sizeof(MarvelGlobalIllumination_C_UserConstructionScript) == 0x0000A0, "Wrong size on MarvelGlobalIllumination_C_UserConstructionScript");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, LowQualityLevel) == 0x000000, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::LowQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, HighQualityLevel) == 0x000008, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::HighQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, NewLocalVar) == 0x000010, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, Temp_struct_Variable) == 0x000020, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, CallFunc_IsEditor_ReturnValue) == 0x000080, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::CallFunc_IsEditor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000088, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, CallFunc_GetConsoleVariableIntValue_ReturnValue) == 0x000090, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::CallFunc_GetConsoleVariableIntValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, CallFunc_IsEditor_ReturnValue_1) == 0x000094, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::CallFunc_IsEditor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_UserConstructionScript, CallFunc_Greater_IntInt_ReturnValue) == 0x000095, "Member 'MarvelGlobalIllumination_C_UserConstructionScript::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelGlobalIllumination_C_UserConstructionScript;
 
 // Function MarvelGlobalIllumination.MarvelGlobalIllumination_C.GetQualityLevel
 // 0x0078 (0x0078 - 0x0000)
@@ -69,23 +59,7 @@ public:
 	bool                                          CallFunc_Contains_ReturnValue;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Contains_ReturnValue_1;                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelGlobalIllumination_C_GetQualityLevel) == 0x000008, "Wrong alignment on MarvelGlobalIllumination_C_GetQualityLevel");
-static_assert(sizeof(MarvelGlobalIllumination_C_GetQualityLevel) == 0x000078, "Wrong size on MarvelGlobalIllumination_C_GetQualityLevel");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, HighQualityLevel) == 0x000000, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::HighQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, LowQualityLevel) == 0x000008, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::LowQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, LowQualityLevel2) == 0x000010, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::LowQualityLevel2' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, HighQualityLeve2) == 0x000018, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::HighQualityLeve2' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, Temp_int_Array_Index_Variable) == 0x000020, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_GetAllStreamingLevels_ReturnValue) == 0x000030, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_GetAllStreamingLevels_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Array_Get_Item) == 0x000048, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_GetWorldAssetPackageFName_ReturnValue) == 0x000054, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_GetWorldAssetPackageFName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Conv_NameToString_ReturnValue) == 0x000060, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Contains_ReturnValue) == 0x000070, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_GetQualityLevel, CallFunc_Contains_ReturnValue_1) == 0x000071, "Member 'MarvelGlobalIllumination_C_GetQualityLevel::CallFunc_Contains_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelGlobalIllumination_C_GetQualityLevel;
 
 // Function MarvelGlobalIllumination.MarvelGlobalIllumination_C.ExecuteUbergraph_MarvelGlobalIllumination
 // 0x0014 (0x0014 - 0x0000)
@@ -100,14 +74,7 @@ public:
 	int32                                         CallFunc_GetConsoleVariableIntValue_ReturnValue_1; // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination) == 0x000004, "Wrong alignment on MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination");
-static_assert(sizeof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination) == 0x000014, "Wrong size on MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, EntryPoint) == 0x000000, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, CallFunc_GetConsoleVariableIntValue_ReturnValue) == 0x000004, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::CallFunc_GetConsoleVariableIntValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000009, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, CallFunc_GetConsoleVariableIntValue_ReturnValue_1) == 0x00000C, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::CallFunc_GetConsoleVariableIntValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000010, "Member 'MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelGlobalIllumination_C_ExecuteUbergraph_MarvelGlobalIllumination;
 
 // Function MarvelGlobalIllumination.MarvelGlobalIllumination_C.ChangeLevelQuality
 // 0x0018 (0x0018 - 0x0000)
@@ -118,11 +85,7 @@ public:
 	class ULevelStreaming*                        CallFunc_GetQualityLevel_LowQualityLevel;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelGlobalIllumination_C_ChangeLevelQuality) == 0x000008, "Wrong alignment on MarvelGlobalIllumination_C_ChangeLevelQuality");
-static_assert(sizeof(MarvelGlobalIllumination_C_ChangeLevelQuality) == 0x000018, "Wrong size on MarvelGlobalIllumination_C_ChangeLevelQuality");
-static_assert(offsetof(MarvelGlobalIllumination_C_ChangeLevelQuality, CallFunc_GetQualityLevel_HighQualityLevel) == 0x000000, "Member 'MarvelGlobalIllumination_C_ChangeLevelQuality::CallFunc_GetQualityLevel_HighQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ChangeLevelQuality, CallFunc_GetQualityLevel_LowQualityLevel) == 0x000008, "Member 'MarvelGlobalIllumination_C_ChangeLevelQuality::CallFunc_GetQualityLevel_LowQualityLevel' has a wrong offset!");
-static_assert(offsetof(MarvelGlobalIllumination_C_ChangeLevelQuality, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'MarvelGlobalIllumination_C_ChangeLevelQuality::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelGlobalIllumination_C_ChangeLevelQuality;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_105252_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105252_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105252_CanActivate");
-static_assert(sizeof(PyAbility_105252_CanActivate) == 0x000001, "Wrong size on PyAbility_105252_CanActivate");
-static_assert(offsetof(PyAbility_105252_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105252_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105252_CanActivate;
 
 // PythonFunction PyAbility_105252.PyAbility_105252.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_105252_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105252_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_105252_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_105252_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_105252_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_105252_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_105252_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105252_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_105252.PyAbility_105252.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_105252_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105252_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_105252_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_105252_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_105252_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_105252_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_105252_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105252_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_105252.PyAbility_105252.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_105252_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105252_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_105252_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_105252_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_105252_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_105252_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_105252_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105252_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_105252.PyAbility_105252.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -65,9 +57,7 @@ struct PyAbility_105252_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105252_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_105252_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_105252_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_105252_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_105252_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_105252_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105252_NativeOnMontageCancelled;
 
 }
 

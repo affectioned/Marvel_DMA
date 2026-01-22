@@ -24,11 +24,7 @@ public:
 	class AMarvelBaseCharacter*                   CallFunc_AE_GetCharacterActor_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsWalking_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103342_BP_C_CanActivate) == 0x000008, "Wrong alignment on Ability_103342_BP_C_CanActivate");
-static_assert(sizeof(Ability_103342_BP_C_CanActivate) == 0x000018, "Wrong size on Ability_103342_BP_C_CanActivate");
-static_assert(offsetof(Ability_103342_BP_C_CanActivate, ReturnValue) == 0x000000, "Member 'Ability_103342_BP_C_CanActivate::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_CanActivate, CallFunc_AE_GetCharacterActor_ReturnValue) == 0x000008, "Member 'Ability_103342_BP_C_CanActivate::CallFunc_AE_GetCharacterActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_CanActivate, CallFunc_IsWalking_ReturnValue) == 0x000010, "Member 'Ability_103342_BP_C_CanActivate::CallFunc_IsWalking_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103342_BP_C_CanActivate;
 
 // Function Ability_103342_BP.Ability_103342_BP_C.ExecuteUbergraph_Ability_103342_BP
 // 0x0040 (0x0040 - 0x0000)
@@ -47,16 +43,7 @@ public:
 	class ABlackWidowCharacter*                   K2Node_DynamicCast_AsBlack_Widow_Character_1;      // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP) == 0x000008, "Wrong alignment on Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP");
-static_assert(sizeof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP) == 0x000040, "Wrong size on Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, EntryPoint) == 0x000000, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, CallFunc_GetAbilityOwnerCharacter_ReturnValue) == 0x000008, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::CallFunc_GetAbilityOwnerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, K2Node_DynamicCast_AsBlack_Widow_Character) == 0x000010, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::K2Node_DynamicCast_AsBlack_Widow_Character' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, CallFunc_GetAbilityOwnerCharacter_ReturnValue_1) == 0x000020, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::CallFunc_GetAbilityOwnerCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, K2Node_Event_bWasCancelled) == 0x000028, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, K2Node_DynamicCast_AsBlack_Widow_Character_1) == 0x000030, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::K2Node_DynamicCast_AsBlack_Widow_Character_1' has a wrong offset!");
-static_assert(offsetof(Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103342_BP_C_ExecuteUbergraph_Ability_103342_BP;
 
 // Function Ability_103342_BP.Ability_103342_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +52,7 @@ struct Ability_103342_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103342_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_103342_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_103342_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_103342_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_103342_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_103342_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103342_BP_C_K2_OnEndAbility;
 
 }
 

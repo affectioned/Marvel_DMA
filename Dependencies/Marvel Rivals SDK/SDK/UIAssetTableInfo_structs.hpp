@@ -25,10 +25,7 @@ public:
 	struct FGameplayTagContainer                  ModeTags_3_044224CB40931FAF9E4D25B8DDA6CFE7;       // 0x0000(0x0068)(Edit, BlueprintVisible)
 	struct FMarvelSoftObjectPath                  AssetTable_10_476A3119421683F869101EB9D72FA07B;    // 0x0068(0x0038)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FUIAssetTableInfo) == 0x000008, "Wrong alignment on FUIAssetTableInfo");
-static_assert(sizeof(FUIAssetTableInfo) == 0x0000A0, "Wrong size on FUIAssetTableInfo");
-static_assert(offsetof(FUIAssetTableInfo, ModeTags_3_044224CB40931FAF9E4D25B8DDA6CFE7) == 0x000000, "Member 'FUIAssetTableInfo::ModeTags_3_044224CB40931FAF9E4D25B8DDA6CFE7' has a wrong offset!");
-static_assert(offsetof(FUIAssetTableInfo, AssetTable_10_476A3119421683F869101EB9D72FA07B) == 0x000068, "Member 'FUIAssetTableInfo::AssetTable_10_476A3119421683F869101EB9D72FA07B' has a wrong offset!");
+DUMPER7_ASSERTS_FUIAssetTableInfo;
 
 }
 

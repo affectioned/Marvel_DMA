@@ -21,9 +21,7 @@ struct PyWidget_Mall_Skin_Panel_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Skin_Panel_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Mall_Skin_Panel_PreConstruct");
-static_assert(sizeof(PyWidget_Mall_Skin_Panel_PreConstruct) == 0x000001, "Wrong size on PyWidget_Mall_Skin_Panel_PreConstruct");
-static_assert(offsetof(PyWidget_Mall_Skin_Panel_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Mall_Skin_Panel_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Skin_Panel_PreConstruct;
 
 // PythonFunction PyWidget_Mall_Skin_Panel.PyWidget_Mall_Skin_Panel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Mall_Skin_Panel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Skin_Panel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Mall_Skin_Panel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Mall_Skin_Panel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Mall_Skin_Panel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Mall_Skin_Panel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Mall_Skin_Panel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Skin_Panel_MarvelSetVisible;
 
 }
 

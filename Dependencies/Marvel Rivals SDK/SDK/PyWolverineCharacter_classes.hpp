@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWolverineCharacter.PyWolverineCharacter
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2310 - 0x2310)
 class APyWolverineCharacter : public AWolverineCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWolverineCharacter">();
+		STATIC_CLASS_IMPL("PyWolverineCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWolverineCharacter")
 	}
 	static class APyWolverineCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWolverineCharacter>();
 	}
 };
-static_assert(alignof(APyWolverineCharacter) == 0x000010, "Wrong alignment on APyWolverineCharacter");
-static_assert(sizeof(APyWolverineCharacter) == 0x002200, "Wrong size on APyWolverineCharacter");
+DUMPER7_ASSERTS_APyWolverineCharacter;
 
 }
 

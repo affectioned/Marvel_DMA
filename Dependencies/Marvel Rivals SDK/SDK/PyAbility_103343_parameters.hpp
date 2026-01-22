@@ -21,9 +21,7 @@ struct PyAbility_103343_OnForwardPressed final
 public:
 	float                                         StateIntervalTime;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103343_OnForwardPressed) == 0x000004, "Wrong alignment on PyAbility_103343_OnForwardPressed");
-static_assert(sizeof(PyAbility_103343_OnForwardPressed) == 0x000004, "Wrong size on PyAbility_103343_OnForwardPressed");
-static_assert(offsetof(PyAbility_103343_OnForwardPressed, StateIntervalTime) == 0x000000, "Member 'PyAbility_103343_OnForwardPressed::StateIntervalTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103343_OnForwardPressed;
 
 }
 

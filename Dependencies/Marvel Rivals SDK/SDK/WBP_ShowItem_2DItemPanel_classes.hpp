@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ShowItem_2DItemPanel.WBP_ShowItem_2DItemPanel_C
-// 0x0028 (0x0638 - 0x0610)
+// 0x0028 (0x0640 - 0x0618)
 class UWBP_ShowItem_2DItemPanel_C final : public UPyWidget_ShowItem_2DItemPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_2DItemFadeIn;                                 // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon_2D;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Item_Bg_Flow;                                  // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_CommonItemImage;                           // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ItemWidgets;                               // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_2DItemFadeIn;                                 // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon_2D;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Item_Bg_Flow;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_CommonItemImage;                           // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ItemWidgets;                               // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ShowItem_2DItemPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ShowItem_2DItemPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ShowItem_2DItemPanel_C")
 	}
 	static class UWBP_ShowItem_2DItemPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ShowItem_2DItemPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_ShowItem_2DItemPanel_C) == 0x000008, "Wrong alignment on UWBP_ShowItem_2DItemPanel_C");
-static_assert(sizeof(UWBP_ShowItem_2DItemPanel_C) == 0x000638, "Wrong size on UWBP_ShowItem_2DItemPanel_C");
-static_assert(offsetof(UWBP_ShowItem_2DItemPanel_C, Anim_2DItemFadeIn) == 0x000610, "Member 'UWBP_ShowItem_2DItemPanel_C::Anim_2DItemFadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItem_2DItemPanel_C, Img_Icon_2D) == 0x000618, "Member 'UWBP_ShowItem_2DItemPanel_C::Img_Icon_2D' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItem_2DItemPanel_C, Img_Item_Bg_Flow) == 0x000620, "Member 'UWBP_ShowItem_2DItemPanel_C::Img_Item_Bg_Flow' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItem_2DItemPanel_C, Overlay_CommonItemImage) == 0x000628, "Member 'UWBP_ShowItem_2DItemPanel_C::Overlay_CommonItemImage' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItem_2DItemPanel_C, Overlay_ItemWidgets) == 0x000630, "Member 'UWBP_ShowItem_2DItemPanel_C::Overlay_ItemWidgets' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ShowItem_2DItemPanel_C;
 
 }
 

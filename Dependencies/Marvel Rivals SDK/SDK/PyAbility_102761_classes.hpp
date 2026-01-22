@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102761.PyEffectiveComponent_10276101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10276101 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10276101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10276101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10276101")
 	}
 	static class UPyEffectiveComponent_10276101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10276101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10276101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10276101");
-static_assert(sizeof(UPyEffectiveComponent_10276101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10276101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10276101;
 
 }
 

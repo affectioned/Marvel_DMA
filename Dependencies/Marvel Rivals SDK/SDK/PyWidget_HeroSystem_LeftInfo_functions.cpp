@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "PyWidget_HeroSystem_LeftInfo_classes.hpp"
+#include "PyWidget_HeroSystem_LeftInfo_parameters.hpp"
 
 
 namespace SDK
@@ -63,6 +64,50 @@ void UPyWidget_HeroSystem_LeftInfo::Destruct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyWidget_HeroSystem_LeftInfo", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HeroSystem_LeftInfo.PyWidget_HeroSystem_LeftInfo.OnAnimationStarted
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_HeroSystem_LeftInfo::OnAnimationStarted(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_LeftInfo", "OnAnimationStarted");
+
+	Params::PyWidget_HeroSystem_LeftInfo_OnAnimationStarted Parms{};
+
+	Parms.Animation = Animation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HeroSystem_LeftInfo.PyWidget_HeroSystem_LeftInfo_RoleUnit.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_HeroSystem_LeftInfo_RoleUnit::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_LeftInfo_RoleUnit", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

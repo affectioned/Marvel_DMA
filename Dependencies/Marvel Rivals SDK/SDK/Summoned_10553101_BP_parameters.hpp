@@ -21,9 +21,7 @@ struct Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP) == 0x000004, "Wrong alignment on Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP");
-static_assert(sizeof(Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP) == 0x000004, "Wrong size on Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP");
-static_assert(offsetof(Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP, EntryPoint) == 0x000000, "Member 'Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_10553101_BP_C_ExecuteUbergraph_Summoned_10553101_BP;
 
 }
 

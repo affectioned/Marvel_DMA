@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Custom.PyWidget_HeroSystem_Custom
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_HeroSystem_Custom final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           NavLeftAction;                                     // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           NavRightAction;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          SwitchTabAudio;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           NavLeftAction;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           NavRightAction;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          SwitchTabAudio;                                    // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Custom">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Custom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Custom")
 	}
 	static class UPyWidget_HeroSystem_Custom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Custom>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Custom) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Custom");
-static_assert(sizeof(UPyWidget_HeroSystem_Custom) == 0x000610, "Wrong size on UPyWidget_HeroSystem_Custom");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom, NavLeftAction) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Custom::NavLeftAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom, NavRightAction) == 0x000600, "Member 'UPyWidget_HeroSystem_Custom::NavRightAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom, SwitchTabAudio) == 0x000608, "Member 'UPyWidget_HeroSystem_Custom::SwitchTabAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Custom;
 
 }
 

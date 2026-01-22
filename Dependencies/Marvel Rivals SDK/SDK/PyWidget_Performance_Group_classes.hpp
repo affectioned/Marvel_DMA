@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_Group.PyWidget_Performance_Group
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Performance_Group final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Group_Item_Long;                                   // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Group_Item_Long_Width;                             // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Group_Item_Short;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Group_Item_Short_Width;                            // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Group_Item_Long;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Group_Item_Long_Width;                             // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Group_Item_Short;                                  // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Group_Item_Short_Width;                            // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,22 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_Group">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_Group")
 	}
 	static class UPyWidget_Performance_Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_Group>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_Group) == 0x000008, "Wrong alignment on UPyWidget_Performance_Group");
-static_assert(sizeof(UPyWidget_Performance_Group) == 0x0005E0, "Wrong size on UPyWidget_Performance_Group");
-static_assert(offsetof(UPyWidget_Performance_Group, Group_Item_Long) == 0x0005C0, "Member 'UPyWidget_Performance_Group::Group_Item_Long' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Group, Group_Item_Long_Width) == 0x0005C8, "Member 'UPyWidget_Performance_Group::Group_Item_Long_Width' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Group, Group_Item_Short) == 0x0005D0, "Member 'UPyWidget_Performance_Group::Group_Item_Short' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Group, Group_Item_Short_Width) == 0x0005D8, "Member 'UPyWidget_Performance_Group::Group_Item_Short_Width' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_Group;
 
 // PythonClass PyWidget_Performance_Group.WBP_Performance_Group_Item_Short
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UWBP_Performance_Group_Item_Short final : public UPyMarvelUserWidget
 {
 public:
@@ -60,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_Performance_Group_Item_Short">();
+		STATIC_CLASS_IMPL("WBP_Performance_Group_Item_Short")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Performance_Group_Item_Short")
 	}
 	static class UWBP_Performance_Group_Item_Short* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Performance_Group_Item_Short>();
 	}
 };
-static_assert(alignof(UWBP_Performance_Group_Item_Short) == 0x000008, "Wrong alignment on UWBP_Performance_Group_Item_Short");
-static_assert(sizeof(UWBP_Performance_Group_Item_Short) == 0x0005C0, "Wrong size on UWBP_Performance_Group_Item_Short");
+DUMPER7_ASSERTS_UWBP_Performance_Group_Item_Short;
 
 }
 

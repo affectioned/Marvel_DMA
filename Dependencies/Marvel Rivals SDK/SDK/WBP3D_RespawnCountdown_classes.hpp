@@ -40,30 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP3D_RespawnCountdown_C">();
+		BP_STATIC_CLASS_IMPL("WBP3D_RespawnCountdown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP3D_RespawnCountdown_C")
 	}
 	static class UWBP3D_RespawnCountdown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP3D_RespawnCountdown_C>();
 	}
 };
-static_assert(alignof(UWBP3D_RespawnCountdown_C) == 0x000010, "Wrong alignment on UWBP3D_RespawnCountdown_C");
-static_assert(sizeof(UWBP3D_RespawnCountdown_C) == 0x000920, "Wrong size on UWBP3D_RespawnCountdown_C");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Anim_Progress_Loop) == 0x0008A0, "Member 'UWBP3D_RespawnCountdown_C::Anim_Progress_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Anim_Progress) == 0x0008A8, "Member 'UWBP3D_RespawnCountdown_C::Anim_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Arrow_LD) == 0x0008B0, "Member 'UWBP3D_RespawnCountdown_C::Arrow_LD' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Arrow_LU) == 0x0008B8, "Member 'UWBP3D_RespawnCountdown_C::Arrow_LU' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Arrow_RD) == 0x0008C0, "Member 'UWBP3D_RespawnCountdown_C::Arrow_RD' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Arrow_RU) == 0x0008C8, "Member 'UWBP3D_RespawnCountdown_C::Arrow_RU' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, CanvasPanel_0) == 0x0008D0, "Member 'UWBP3D_RespawnCountdown_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Img_Bg) == 0x0008D8, "Member 'UWBP3D_RespawnCountdown_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Img_Icon) == 0x0008E0, "Member 'UWBP3D_RespawnCountdown_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Img_Player_Mask) == 0x0008E8, "Member 'UWBP3D_RespawnCountdown_C::Img_Player_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Img_Progress) == 0x0008F0, "Member 'UWBP3D_RespawnCountdown_C::Img_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, MarvelCanvasPanel_Adam) == 0x0008F8, "Member 'UWBP3D_RespawnCountdown_C::MarvelCanvasPanel_Adam' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, Overlay_TargetLock) == 0x000900, "Member 'UWBP3D_RespawnCountdown_C::Overlay_TargetLock' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, WBP_Player) == 0x000908, "Member 'UWBP3D_RespawnCountdown_C::WBP_Player' has a wrong offset!");
-static_assert(offsetof(UWBP3D_RespawnCountdown_C, FadeInRadius) == 0x000910, "Member 'UWBP3D_RespawnCountdown_C::FadeInRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP3D_RespawnCountdown_C;
 
 }
 

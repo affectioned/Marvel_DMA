@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_PunisherTurret.Weapon_PunisherTurret_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_PunisherTurret_C : public AWeapon_101406
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_PunisherTurret_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_PunisherTurret_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_PunisherTurret_C")
 	}
 	static class AWeapon_PunisherTurret_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_PunisherTurret_C>();
 	}
 };
-static_assert(alignof(AWeapon_PunisherTurret_C) == 0x000010, "Wrong alignment on AWeapon_PunisherTurret_C");
-static_assert(sizeof(AWeapon_PunisherTurret_C) == 0x000CB0, "Wrong size on AWeapon_PunisherTurret_C");
+DUMPER7_ASSERTS_AWeapon_PunisherTurret_C;
 
 }
 

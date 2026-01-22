@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Chat_TextColor_FullScreenPanel.PyWidget_Chat_TextColor_FullScreenPanel
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Chat_TextColor_FullScreenPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           EscAction;                                         // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& tag_name)> OnSelectColor;                     // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UInputAction*                           EscAction;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& tag_name)> OnSelectColor;                     // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Chat_TextColor_FullScreenPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Chat_TextColor_FullScreenPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Chat_TextColor_FullScreenPanel")
 	}
 	static class UPyWidget_Chat_TextColor_FullScreenPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Chat_TextColor_FullScreenPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Chat_TextColor_FullScreenPanel) == 0x000008, "Wrong alignment on UPyWidget_Chat_TextColor_FullScreenPanel");
-static_assert(sizeof(UPyWidget_Chat_TextColor_FullScreenPanel) == 0x000610, "Wrong size on UPyWidget_Chat_TextColor_FullScreenPanel");
-static_assert(offsetof(UPyWidget_Chat_TextColor_FullScreenPanel, EscAction) == 0x0005F8, "Member 'UPyWidget_Chat_TextColor_FullScreenPanel::EscAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Chat_TextColor_FullScreenPanel, OnSelectColor) == 0x000600, "Member 'UPyWidget_Chat_TextColor_FullScreenPanel::OnSelectColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Chat_TextColor_FullScreenPanel;
 
 }
 

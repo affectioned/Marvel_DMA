@@ -16,6 +16,63 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_StartUpRound.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -63,6 +120,63 @@ void UPyWidget_League_ScheduleOverview_StartUpRound::Destruct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_StartUpRound", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -130,177 +244,6 @@ void UPyWidget_League_ScheduleOverview_EvenRounds::Destruct()
 }
 
 
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_Final::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_Final::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_Final::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_FinalRound.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -358,15 +301,15 @@ void UPyWidget_League_ScheduleOverview_FinalRound::Destruct()
 }
 
 
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.OnInitialized
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_League_ScheduleOverview_DoubleElimination::OnInitialized()
+void UPyWidget_League_ScheduleOverview_Final::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -377,15 +320,15 @@ void UPyWidget_League_ScheduleOverview_DoubleElimination::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.Construct
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_League_ScheduleOverview_DoubleElimination::Construct()
+void UPyWidget_League_ScheduleOverview_Final::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "Construct");
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -396,15 +339,72 @@ void UPyWidget_League_ScheduleOverview_DoubleElimination::Construct()
 }
 
 
-// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination.Destruct
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_League_ScheduleOverview_DoubleElimination::Destruct()
+void UPyWidget_League_ScheduleOverview_Final::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination", "Destruct");
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_Final", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

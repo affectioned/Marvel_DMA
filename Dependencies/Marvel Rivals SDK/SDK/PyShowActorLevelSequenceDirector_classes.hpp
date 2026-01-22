@@ -33,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorLevelSequenceDirector">();
+		STATIC_CLASS_IMPL("PyShowActorLevelSequenceDirector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorLevelSequenceDirector")
 	}
 	static class UPyShowActorLevelSequenceDirector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorLevelSequenceDirector>();
 	}
 };
-static_assert(alignof(UPyShowActorLevelSequenceDirector) == 0x000008, "Wrong alignment on UPyShowActorLevelSequenceDirector");
-static_assert(sizeof(UPyShowActorLevelSequenceDirector) == 0x000040, "Wrong size on UPyShowActorLevelSequenceDirector");
+DUMPER7_ASSERTS_UPyShowActorLevelSequenceDirector;
 
 }
 

@@ -30,6 +30,15 @@ enum class EClusterConnectionTypeEnum : uint8
 	Chaos_MAX                                = 7,
 };
 
+// ScriptStruct ChaosSolverEngine.RemovalEventCallbackWrapper
+// 0x0040 (0x0040 - 0x0000)
+struct alignas(0x10) FRemovalEventCallbackWrapper final
+{
+public:
+	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRemovalEventCallbackWrapper;
+
 // ScriptStruct ChaosSolverEngine.ChaosPhysicsCollisionInfo
 // 0x00C0 (0x00C0 - 0x0000)
 struct FChaosPhysicsCollisionInfo final
@@ -47,19 +56,7 @@ public:
 	float                                         Mass;                                              // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OtherMass;                                         // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosPhysicsCollisionInfo) == 0x000008, "Wrong alignment on FChaosPhysicsCollisionInfo");
-static_assert(sizeof(FChaosPhysicsCollisionInfo) == 0x0000C0, "Wrong size on FChaosPhysicsCollisionInfo");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, Component) == 0x000000, "Member 'FChaosPhysicsCollisionInfo::Component' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, OtherComponent) == 0x000008, "Member 'FChaosPhysicsCollisionInfo::OtherComponent' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, Location) == 0x000010, "Member 'FChaosPhysicsCollisionInfo::Location' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, Normal) == 0x000028, "Member 'FChaosPhysicsCollisionInfo::Normal' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, AccumulatedImpulse) == 0x000040, "Member 'FChaosPhysicsCollisionInfo::AccumulatedImpulse' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, Velocity) == 0x000058, "Member 'FChaosPhysicsCollisionInfo::Velocity' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, OtherVelocity) == 0x000070, "Member 'FChaosPhysicsCollisionInfo::OtherVelocity' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, AngularVelocity) == 0x000088, "Member 'FChaosPhysicsCollisionInfo::AngularVelocity' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, OtherAngularVelocity) == 0x0000A0, "Member 'FChaosPhysicsCollisionInfo::OtherAngularVelocity' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, Mass) == 0x0000B8, "Member 'FChaosPhysicsCollisionInfo::Mass' has a wrong offset!");
-static_assert(offsetof(FChaosPhysicsCollisionInfo, OtherMass) == 0x0000BC, "Member 'FChaosPhysicsCollisionInfo::OtherMass' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosPhysicsCollisionInfo;
 
 // ScriptStruct ChaosSolverEngine.ChaosHandlerSet
 // 0x0058 (0x0058 - 0x0000)
@@ -69,9 +66,7 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class UObject*>                          ChaosHandlers;                                     // 0x0008(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosHandlerSet) == 0x000008, "Wrong alignment on FChaosHandlerSet");
-static_assert(sizeof(FChaosHandlerSet) == 0x000058, "Wrong size on FChaosHandlerSet");
-static_assert(offsetof(FChaosHandlerSet, ChaosHandlers) == 0x000008, "Member 'FChaosHandlerSet::ChaosHandlers' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosHandlerSet;
 
 // ScriptStruct ChaosSolverEngine.ChaosDamageEvent
 // 0x0038 (0x0038 - 0x0000)
@@ -88,16 +83,7 @@ public:
 	float                                         DamageValue;                                       // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TransformGroupIndex;                               // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosDamageEvent) == 0x000008, "Wrong alignment on FChaosDamageEvent");
-static_assert(sizeof(FChaosDamageEvent) == 0x000038, "Wrong size on FChaosDamageEvent");
-static_assert(offsetof(FChaosDamageEvent, Component) == 0x000000, "Member 'FChaosDamageEvent::Component' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, SourceActor) == 0x000008, "Member 'FChaosDamageEvent::SourceActor' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, Ability) == 0x000010, "Member 'FChaosDamageEvent::Ability' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, bGeneralAbility) == 0x000018, "Member 'FChaosDamageEvent::bGeneralAbility' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, bNeedPlayEffect) == 0x000019, "Member 'FChaosDamageEvent::bNeedPlayEffect' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, GenerateInfo) == 0x000020, "Member 'FChaosDamageEvent::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, DamageValue) == 0x000030, "Member 'FChaosDamageEvent::DamageValue' has a wrong offset!");
-static_assert(offsetof(FChaosDamageEvent, TransformGroupIndex) == 0x000034, "Member 'FChaosDamageEvent::TransformGroupIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosDamageEvent;
 
 // ScriptStruct ChaosSolverEngine.BreakEventCallbackWrapper
 // 0x0040 (0x0040 - 0x0000)
@@ -106,18 +92,7 @@ struct alignas(0x10) FBreakEventCallbackWrapper final
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBreakEventCallbackWrapper) == 0x000010, "Wrong alignment on FBreakEventCallbackWrapper");
-static_assert(sizeof(FBreakEventCallbackWrapper) == 0x000040, "Wrong size on FBreakEventCallbackWrapper");
-
-// ScriptStruct ChaosSolverEngine.RemovalEventCallbackWrapper
-// 0x0040 (0x0040 - 0x0000)
-struct alignas(0x10) FRemovalEventCallbackWrapper final
-{
-public:
-	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FRemovalEventCallbackWrapper) == 0x000010, "Wrong alignment on FRemovalEventCallbackWrapper");
-static_assert(sizeof(FRemovalEventCallbackWrapper) == 0x000040, "Wrong size on FRemovalEventCallbackWrapper");
+DUMPER7_ASSERTS_FBreakEventCallbackWrapper;
 
 // ScriptStruct ChaosSolverEngine.CrumblingEventCallbackWrapper
 // 0x0040 (0x0040 - 0x0000)
@@ -126,8 +101,7 @@ struct alignas(0x10) FCrumblingEventCallbackWrapper final
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCrumblingEventCallbackWrapper) == 0x000010, "Wrong alignment on FCrumblingEventCallbackWrapper");
-static_assert(sizeof(FCrumblingEventCallbackWrapper) == 0x000040, "Wrong size on FCrumblingEventCallbackWrapper");
+DUMPER7_ASSERTS_FCrumblingEventCallbackWrapper;
 
 // ScriptStruct ChaosSolverEngine.DamageEventCallbackWrapper
 // 0x0040 (0x0040 - 0x0000)
@@ -136,8 +110,7 @@ struct alignas(0x10) FDamageEventCallbackWrapper final
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDamageEventCallbackWrapper) == 0x000010, "Wrong alignment on FDamageEventCallbackWrapper");
-static_assert(sizeof(FDamageEventCallbackWrapper) == 0x000040, "Wrong size on FDamageEventCallbackWrapper");
+DUMPER7_ASSERTS_FDamageEventCallbackWrapper;
 
 // ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl
 // 0x0003 (0x0003 - 0x0000)
@@ -148,11 +121,7 @@ public:
 	bool                                          bSubstep;                                          // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStep;                                             // 0x0002(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosDebugSubstepControl) == 0x000001, "Wrong alignment on FChaosDebugSubstepControl");
-static_assert(sizeof(FChaosDebugSubstepControl) == 0x000003, "Wrong size on FChaosDebugSubstepControl");
-static_assert(offsetof(FChaosDebugSubstepControl, bPause) == 0x000000, "Member 'FChaosDebugSubstepControl::bPause' has a wrong offset!");
-static_assert(offsetof(FChaosDebugSubstepControl, bSubstep) == 0x000001, "Member 'FChaosDebugSubstepControl::bSubstep' has a wrong offset!");
-static_assert(offsetof(FChaosDebugSubstepControl, bStep) == 0x000002, "Member 'FChaosDebugSubstepControl::bStep' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosDebugSubstepControl;
 
 }
 

@@ -23,9 +23,7 @@ struct PyTimeCrystalBase_OnPlayerEnter final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTimeCrystalBase_OnPlayerEnter) == 0x000008, "Wrong alignment on PyTimeCrystalBase_OnPlayerEnter");
-static_assert(sizeof(PyTimeCrystalBase_OnPlayerEnter) == 0x000008, "Wrong size on PyTimeCrystalBase_OnPlayerEnter");
-static_assert(offsetof(PyTimeCrystalBase_OnPlayerEnter, Char) == 0x000000, "Member 'PyTimeCrystalBase_OnPlayerEnter::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyTimeCrystalBase_OnPlayerEnter;
 
 // PythonFunction PyTimeCrystalBase.PyTimeCrystalBase.OnPlayerExit
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyTimeCrystalBase_OnPlayerExit final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTimeCrystalBase_OnPlayerExit) == 0x000008, "Wrong alignment on PyTimeCrystalBase_OnPlayerExit");
-static_assert(sizeof(PyTimeCrystalBase_OnPlayerExit) == 0x000008, "Wrong size on PyTimeCrystalBase_OnPlayerExit");
-static_assert(offsetof(PyTimeCrystalBase_OnPlayerExit, Char) == 0x000000, "Member 'PyTimeCrystalBase_OnPlayerExit::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyTimeCrystalBase_OnPlayerExit;
 
 // PythonFunction PyTimeCrystalBase.PyTimeCrystalBase.OnIgonreTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTimeCrystalBase_OnIgonreTagUpdate) == 0x000004, "Wrong alignment on PyTimeCrystalBase_OnIgonreTagUpdate");
-static_assert(sizeof(PyTimeCrystalBase_OnIgonreTagUpdate) == 0x000010, "Wrong size on PyTimeCrystalBase_OnIgonreTagUpdate");
-static_assert(offsetof(PyTimeCrystalBase_OnIgonreTagUpdate, Tag) == 0x000000, "Member 'PyTimeCrystalBase_OnIgonreTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyTimeCrystalBase_OnIgonreTagUpdate, Exist) == 0x00000C, "Member 'PyTimeCrystalBase_OnIgonreTagUpdate::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyTimeCrystalBase_OnIgonreTagUpdate;
 
 // PythonFunction PyTimeCrystalBase.PyTimeCrystalBase.OnRequireTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -59,10 +52,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTimeCrystalBase_OnRequireTagUpdate) == 0x000004, "Wrong alignment on PyTimeCrystalBase_OnRequireTagUpdate");
-static_assert(sizeof(PyTimeCrystalBase_OnRequireTagUpdate) == 0x000010, "Wrong size on PyTimeCrystalBase_OnRequireTagUpdate");
-static_assert(offsetof(PyTimeCrystalBase_OnRequireTagUpdate, Tag) == 0x000000, "Member 'PyTimeCrystalBase_OnRequireTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyTimeCrystalBase_OnRequireTagUpdate, Exist) == 0x00000C, "Member 'PyTimeCrystalBase_OnRequireTagUpdate::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyTimeCrystalBase_OnRequireTagUpdate;
 
 // PythonFunction PyTimeCrystalBase.PyTimeCrystalBase.OnPlayerHeroChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -72,10 +62,7 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTimeCrystalBase_OnPlayerHeroChanged) == 0x000008, "Wrong alignment on PyTimeCrystalBase_OnPlayerHeroChanged");
-static_assert(sizeof(PyTimeCrystalBase_OnPlayerHeroChanged) == 0x000010, "Wrong size on PyTimeCrystalBase_OnPlayerHeroChanged");
-static_assert(offsetof(PyTimeCrystalBase_OnPlayerHeroChanged, PlayerState) == 0x000000, "Member 'PyTimeCrystalBase_OnPlayerHeroChanged::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyTimeCrystalBase_OnPlayerHeroChanged, Character) == 0x000008, "Member 'PyTimeCrystalBase_OnPlayerHeroChanged::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyTimeCrystalBase_OnPlayerHeroChanged;
 
 }
 

@@ -43,24 +43,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine) == 0x000008, "Wrong alignment on WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine");
-static_assert(sizeof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine) == 0x000120, "Wrong size on WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, EntryPoint) == 0x000000, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_CustomEvent_Desc) == 0x000010, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_CustomEvent_Desc' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_CustomEvent_EventName) == 0x000020, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_CustomEvent_AkEvent) == 0x000030, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_CustomEvent_AkEvent' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_Event_MyGeometry) == 0x000038, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_Event_InDeltaTime) == 0x000070, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_Conv_NameToText_ReturnValue) == 0x000078, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_MakeStruct_FormatArgumentData) == 0x000090, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, K2Node_MakeArray_Array) == 0x0000E8, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_GetWorldPlayerListener_ReturnValue) == 0x000110, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_GetWorldPlayerListener_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_IsEventPlaying_ReturnValue) == 0x000118, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_IsEventPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_IsValid_ReturnValue_1) == 0x000119, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine, CallFunc_IsValid_ReturnValue_2) == 0x00011A, "Member 'WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugProcedureLine_C_ExecuteUbergraph_WBP_DebugProcedureLine;
 
 // Function WBP_DebugProcedureLine.WBP_DebugProcedureLine_C.Init
 // 0x0028 (0x0028 - 0x0000)
@@ -72,11 +55,7 @@ public:
 	class FString                                 EventName_0;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          AkEvent_0;                                         // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugProcedureLine_C_Init) == 0x000008, "Wrong alignment on WBP_DebugProcedureLine_C_Init");
-static_assert(sizeof(WBP_DebugProcedureLine_C_Init) == 0x000028, "Wrong size on WBP_DebugProcedureLine_C_Init");
-static_assert(offsetof(WBP_DebugProcedureLine_C_Init, Desc) == 0x000000, "Member 'WBP_DebugProcedureLine_C_Init::Desc' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_Init, EventName_0) == 0x000010, "Member 'WBP_DebugProcedureLine_C_Init::EventName_0' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_Init, AkEvent_0) == 0x000020, "Member 'WBP_DebugProcedureLine_C_Init::AkEvent_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugProcedureLine_C_Init;
 
 // Function WBP_DebugProcedureLine.WBP_DebugProcedureLine_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -86,10 +65,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugProcedureLine_C_Tick) == 0x000004, "Wrong alignment on WBP_DebugProcedureLine_C_Tick");
-static_assert(sizeof(WBP_DebugProcedureLine_C_Tick) == 0x00003C, "Wrong size on WBP_DebugProcedureLine_C_Tick");
-static_assert(offsetof(WBP_DebugProcedureLine_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_DebugProcedureLine_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DebugProcedureLine_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_DebugProcedureLine_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugProcedureLine_C_Tick;
 
 }
 

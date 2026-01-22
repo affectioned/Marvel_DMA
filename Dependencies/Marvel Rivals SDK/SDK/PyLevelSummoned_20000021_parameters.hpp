@@ -25,9 +25,7 @@ struct PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap) == 0x000008, "Wrong alignment on PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap");
-static_assert(sizeof(PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap) == 0x000008, "Wrong size on PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap");
-static_assert(offsetof(PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap, InActor) == 0x000000, "Member 'PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyCommonOverlapHandlerComponent_ApplyEffectOnActorOverlap;
 
 // PythonFunction PyLevelSummoned_20000021.PyLevelSummoned_20000021.MulticastStopSimulating
 // 0x0018 (0x0018 - 0x0000)
@@ -36,9 +34,7 @@ struct PyLevelSummoned_20000021_MulticastStopSimulating final
 public:
 	struct FVector                                EndLocation;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000021_MulticastStopSimulating) == 0x000008, "Wrong alignment on PyLevelSummoned_20000021_MulticastStopSimulating");
-static_assert(sizeof(PyLevelSummoned_20000021_MulticastStopSimulating) == 0x000018, "Wrong size on PyLevelSummoned_20000021_MulticastStopSimulating");
-static_assert(offsetof(PyLevelSummoned_20000021_MulticastStopSimulating, EndLocation) == 0x000000, "Member 'PyLevelSummoned_20000021_MulticastStopSimulating::EndLocation' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000021_MulticastStopSimulating;
 
 // PythonFunction PyLevelSummoned_20000021.PyCue_Summoner_Loop_20030001_BP.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -49,11 +45,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_20030001_BP_WhileActive) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_20030001_BP_WhileActive");
-static_assert(sizeof(PyCue_Summoner_Loop_20030001_BP_WhileActive) == 0x0001E0, "Wrong size on PyCue_Summoner_Loop_20030001_BP_WhileActive");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_20030001_BP_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_20030001_BP_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Summoner_Loop_20030001_BP_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20030001_BP_WhileActive;
 
 // PythonFunction PyLevelSummoned_20000021.PyCue_Summoner_Loop_20030001_BP.K2_GetCustomTeamVisual
 // 0x01F0 (0x01F0 - 0x0000)
@@ -63,10 +55,7 @@ public:
 	struct FGameplayCueParameters                 CueParameters;                                     // 0x0000(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FTeamVisual                            ReturnValue;                                       // 0x01D0(0x0020)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual");
-static_assert(sizeof(PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual) == 0x0001F0, "Wrong size on PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual, CueParameters) == 0x000000, "Member 'PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual::CueParameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual, ReturnValue) == 0x0001D0, "Member 'PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20030001_BP_K2_GetCustomTeamVisual;
 
 // PythonFunction PyLevelSummoned_20000021.PyCue_Summoner_Loop_20030001_BP.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -76,10 +65,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_20030001_BP_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_20030001_BP_OnExecuteFX");
-static_assert(sizeof(PyCue_Summoner_Loop_20030001_BP_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_20030001_BP_OnExecuteFX");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_20030001_BP_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_20030001_BP_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_20030001_BP_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20030001_BP_OnExecuteFX;
 
 // PythonFunction PyLevelSummoned_20000021.PyOverlapHandlerComponent_20000021.ApplyEffectOnEnemyOverlap
 // 0x0008 (0x0008 - 0x0000)
@@ -88,9 +74,7 @@ struct PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap) == 0x000008, "Wrong alignment on PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap");
-static_assert(sizeof(PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap) == 0x000008, "Wrong size on PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap");
-static_assert(offsetof(PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap, InActor) == 0x000000, "Member 'PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyOverlapHandlerComponent_20000021_ApplyEffectOnEnemyOverlap;
 
 }
 

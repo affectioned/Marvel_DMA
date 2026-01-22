@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_BondIcon.PyWidget_Common_BondIcon
-// 0x0028 (0x0750 - 0x0728)
+// 0x0028 (0x07A8 - 0x0780)
 class UPyWidget_Common_BondIcon : public UPyWidget_Button
 {
 public:
-	bool                                          EnableTips;                                        // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableAchieveAnim;                                 // 0x0729(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenBondPanel;                                     // 0x072A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_72B[0x5];                                      // 0x072B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             DefaultIcon;                                       // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOverlay*                               Overlay_Ability;                                   // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnMouseButtonDown;                         // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RequestInputAciton;                                // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableTips;                                        // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableAchieveAnim;                                 // 0x0781(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenBondPanel;                                     // 0x0782(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_783[0x5];                                      // 0x0783(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             DefaultIcon;                                       // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOverlay*                               Overlay_Ability;                                   // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnMouseButtonDown;                         // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RequestInputAciton;                                // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_BondIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Common_BondIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_BondIcon")
 	}
 	static class UPyWidget_Common_BondIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_BondIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_BondIcon) == 0x000008, "Wrong alignment on UPyWidget_Common_BondIcon");
-static_assert(sizeof(UPyWidget_Common_BondIcon) == 0x000750, "Wrong size on UPyWidget_Common_BondIcon");
-static_assert(offsetof(UPyWidget_Common_BondIcon, EnableTips) == 0x000728, "Member 'UPyWidget_Common_BondIcon::EnableTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, EnableAchieveAnim) == 0x000729, "Member 'UPyWidget_Common_BondIcon::EnableAchieveAnim' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, OpenBondPanel) == 0x00072A, "Member 'UPyWidget_Common_BondIcon::OpenBondPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, DefaultIcon) == 0x000730, "Member 'UPyWidget_Common_BondIcon::DefaultIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, Overlay_Ability) == 0x000738, "Member 'UPyWidget_Common_BondIcon::Overlay_Ability' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, AkEvent_OnMouseButtonDown) == 0x000740, "Member 'UPyWidget_Common_BondIcon::AkEvent_OnMouseButtonDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondIcon, RequestInputAciton) == 0x000748, "Member 'UPyWidget_Common_BondIcon::RequestInputAciton' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_BondIcon;
 
 }
 

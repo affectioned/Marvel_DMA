@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Swiftlet_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "Swiftlet_structs.hpp"
 
 
 namespace SDK
@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletConfig">();
+		STATIC_CLASS_IMPL("SwiftletConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletConfig")
 	}
 	static class USwiftletConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletConfig>();
 	}
 };
-static_assert(alignof(USwiftletConfig) == 0x000008, "Wrong alignment on USwiftletConfig");
-static_assert(sizeof(USwiftletConfig) == 0x0000B0, "Wrong size on USwiftletConfig");
-static_assert(offsetof(USwiftletConfig, AllCollectInfoConfig) == 0x000030, "Member 'USwiftletConfig::AllCollectInfoConfig' has a wrong offset!");
-static_assert(offsetof(USwiftletConfig, CommonConst) == 0x000040, "Member 'USwiftletConfig::CommonConst' has a wrong offset!");
+DUMPER7_ASSERTS_USwiftletConfig;
 
 // Class Swiftlet.SwiftletAllData
 // 0x0000 (0x0030 - 0x0030)
@@ -47,15 +48,18 @@ class USwiftletAllData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletAllData">();
+		STATIC_CLASS_IMPL("SwiftletAllData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletAllData")
 	}
 	static class USwiftletAllData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletAllData>();
 	}
 };
-static_assert(alignof(USwiftletAllData) == 0x000008, "Wrong alignment on USwiftletAllData");
-static_assert(sizeof(USwiftletAllData) == 0x000030, "Wrong size on USwiftletAllData");
+DUMPER7_ASSERTS_USwiftletAllData;
 
 // Class Swiftlet.SwiftletHotKeyHelper
 // 0x0000 (0x0030 - 0x0030)
@@ -68,15 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletHotKeyHelper">();
+		STATIC_CLASS_IMPL("SwiftletHotKeyHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletHotKeyHelper")
 	}
 	static class USwiftletHotKeyHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletHotKeyHelper>();
 	}
 };
-static_assert(alignof(USwiftletHotKeyHelper) == 0x000008, "Wrong alignment on USwiftletHotKeyHelper");
-static_assert(sizeof(USwiftletHotKeyHelper) == 0x000030, "Wrong size on USwiftletHotKeyHelper");
+DUMPER7_ASSERTS_USwiftletHotKeyHelper;
 
 // Class Swiftlet.SwiftletProcedure
 // 0x0180 (0x01B0 - 0x0030)
@@ -97,17 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletProcedure">();
+		STATIC_CLASS_IMPL("SwiftletProcedure")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletProcedure")
 	}
 	static class USwiftletProcedure* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletProcedure>();
 	}
 };
-static_assert(alignof(USwiftletProcedure) == 0x000010, "Wrong alignment on USwiftletProcedure");
-static_assert(sizeof(USwiftletProcedure) == 0x0001B0, "Wrong size on USwiftletProcedure");
-static_assert(offsetof(USwiftletProcedure, SwiftletConfig) == 0x000080, "Member 'USwiftletProcedure::SwiftletConfig' has a wrong offset!");
-static_assert(offsetof(USwiftletProcedure, InfoCollectManager) == 0x0001A8, "Member 'USwiftletProcedure::InfoCollectManager' has a wrong offset!");
+DUMPER7_ASSERTS_USwiftletProcedure;
 
 // Class Swiftlet.InfoCollectManager
 // 0x0080 (0x00B0 - 0x0030)
@@ -136,15 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InfoCollectManager">();
+		STATIC_CLASS_IMPL("InfoCollectManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InfoCollectManager")
 	}
 	static class UInfoCollectManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInfoCollectManager>();
 	}
 };
-static_assert(alignof(UInfoCollectManager) == 0x000008, "Wrong alignment on UInfoCollectManager");
-static_assert(sizeof(UInfoCollectManager) == 0x0000B0, "Wrong size on UInfoCollectManager");
+DUMPER7_ASSERTS_UInfoCollectManager;
 
 // Class Swiftlet.SwiftletServiceApi
 // 0x0000 (0x0030 - 0x0030)
@@ -153,15 +164,18 @@ class USwiftletServiceApi final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletServiceApi">();
+		STATIC_CLASS_IMPL("SwiftletServiceApi")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletServiceApi")
 	}
 	static class USwiftletServiceApi* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletServiceApi>();
 	}
 };
-static_assert(alignof(USwiftletServiceApi) == 0x000008, "Wrong alignment on USwiftletServiceApi");
-static_assert(sizeof(USwiftletServiceApi) == 0x000030, "Wrong size on USwiftletServiceApi");
+DUMPER7_ASSERTS_USwiftletServiceApi;
 
 // Class Swiftlet.SwiftletUtils
 // 0x0000 (0x0030 - 0x0030)
@@ -170,15 +184,18 @@ class USwiftletUtils final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwiftletUtils">();
+		STATIC_CLASS_IMPL("SwiftletUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwiftletUtils")
 	}
 	static class USwiftletUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USwiftletUtils>();
 	}
 };
-static_assert(alignof(USwiftletUtils) == 0x000008, "Wrong alignment on USwiftletUtils");
-static_assert(sizeof(USwiftletUtils) == 0x000030, "Wrong size on USwiftletUtils");
+DUMPER7_ASSERTS_USwiftletUtils;
 
 }
 

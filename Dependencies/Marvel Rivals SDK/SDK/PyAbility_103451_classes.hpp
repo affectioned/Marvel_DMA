@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103451.PyCue_Buff_10345104
-// 0x0050 (0x1690 - 0x1640)
+// 0x0050 (0x1740 - 0x16F0)
 class APyCue_Buff_10345104 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelWidgetComponent*                 EnermySign;                                        // 0x1640(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BlockTag;                                          // 0x1648(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x1654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnermyColor;                                       // 0x1664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1674[0x4];                                     // 0x1674(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGameplayTag>                   AbilityTags;                                       // 0x1678(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelWidgetComponent*                 EnermySign;                                        // 0x16F0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BlockTag;                                          // 0x16F8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x1704(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnermyColor;                                       // 0x1714(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1724[0x4];                                     // 0x1724(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGameplayTag>                   AbilityTags;                                       // 0x1728(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -38,23 +38,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10345104">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10345104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10345104")
 	}
 	static class APyCue_Buff_10345104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10345104>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10345104) == 0x000010, "Wrong alignment on APyCue_Buff_10345104");
-static_assert(sizeof(APyCue_Buff_10345104) == 0x001690, "Wrong size on APyCue_Buff_10345104");
-static_assert(offsetof(APyCue_Buff_10345104, EnermySign) == 0x001640, "Member 'APyCue_Buff_10345104::EnermySign' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10345104, BlockTag) == 0x001648, "Member 'APyCue_Buff_10345104::BlockTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10345104, AllyColor) == 0x001654, "Member 'APyCue_Buff_10345104::AllyColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10345104, EnermyColor) == 0x001664, "Member 'APyCue_Buff_10345104::EnermyColor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10345104, AbilityTags) == 0x001678, "Member 'APyCue_Buff_10345104::AbilityTags' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10345104;
 
 // PythonClass PyAbility_103451.PyUIController_103451
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_103451 final : public UUIC_Ability
 {
 public:
@@ -64,15 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103451">();
+		STATIC_CLASS_IMPL("PyUIController_103451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103451")
 	}
 	static class UPyUIController_103451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103451>();
 	}
 };
-static_assert(alignof(UPyUIController_103451) == 0x000008, "Wrong alignment on UPyUIController_103451");
-static_assert(sizeof(UPyUIController_103451) == 0x000F10, "Wrong size on UPyUIController_103451");
+DUMPER7_ASSERTS_UPyUIController_103451;
 
 }
 

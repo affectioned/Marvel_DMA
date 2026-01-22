@@ -17,31 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GameModePanel.WBP_GameModePanel_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UWBP_GameModePanel_C final : public UPyWidget_GameModePanel
 {
 public:
-	class UWidgetAnimation*                       Anim_ModeIn;                                       // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           ConstantPanel;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           RootPanel;                                         // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VerBox_ProgressAnimation;                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_ModeIn;                                       // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                           ConstantPanel;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_M2201Duel_ParameterPanel;                     // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           RootPanel;                                         // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VerBox_ProgressAnimation;                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GameModePanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GameModePanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GameModePanel_C")
 	}
 	static class UWBP_GameModePanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GameModePanel_C>();
 	}
 };
-static_assert(alignof(UWBP_GameModePanel_C) == 0x000008, "Wrong alignment on UWBP_GameModePanel_C");
-static_assert(sizeof(UWBP_GameModePanel_C) == 0x0005E0, "Wrong size on UWBP_GameModePanel_C");
-static_assert(offsetof(UWBP_GameModePanel_C, Anim_ModeIn) == 0x0005C0, "Member 'UWBP_GameModePanel_C::Anim_ModeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_GameModePanel_C, ConstantPanel) == 0x0005C8, "Member 'UWBP_GameModePanel_C::ConstantPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_GameModePanel_C, RootPanel) == 0x0005D0, "Member 'UWBP_GameModePanel_C::RootPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_GameModePanel_C, VerBox_ProgressAnimation) == 0x0005D8, "Member 'UWBP_GameModePanel_C::VerBox_ProgressAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GameModePanel_C;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_Video.PyWidget_Activity120_Video
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity120_Video final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_Video">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_Video")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_Video")
 	}
 	static class UPyWidget_Activity120_Video* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_Video>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_Video) == 0x000008, "Wrong alignment on UPyWidget_Activity120_Video");
-static_assert(sizeof(UPyWidget_Activity120_Video) == 0x0005F8, "Wrong size on UPyWidget_Activity120_Video");
+DUMPER7_ASSERTS_UPyWidget_Activity120_Video;
 
 }
 

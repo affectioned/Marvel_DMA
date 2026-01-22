@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCameraTargetActor">();
+		STATIC_CLASS_IMPL("PyCameraTargetActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCameraTargetActor")
 	}
 	static class APyCameraTargetActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCameraTargetActor>();
 	}
 };
-static_assert(alignof(APyCameraTargetActor) == 0x000010, "Wrong alignment on APyCameraTargetActor");
-static_assert(sizeof(APyCameraTargetActor) == 0x001110, "Wrong size on APyCameraTargetActor");
-static_assert(offsetof(APyCameraTargetActor, BattleSide) == 0x001100, "Member 'APyCameraTargetActor::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyCameraTargetActor, Index_0) == 0x001104, "Member 'APyCameraTargetActor::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_APyCameraTargetActor;
 
 }
 

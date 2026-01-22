@@ -21,9 +21,7 @@ struct PyAbility_200204_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200204_CanActivate) == 0x000001, "Wrong alignment on PyAbility_200204_CanActivate");
-static_assert(sizeof(PyAbility_200204_CanActivate) == 0x000001, "Wrong size on PyAbility_200204_CanActivate");
-static_assert(offsetof(PyAbility_200204_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200204_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200204_CanActivate;
 
 // PythonFunction PyAbility_200204.PyAbility_200204.SetRefSelectTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_200204_SetRefSelectTarget final
 public:
 	class ASummoned_20020001*                     Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200204_SetRefSelectTarget) == 0x000008, "Wrong alignment on PyAbility_200204_SetRefSelectTarget");
-static_assert(sizeof(PyAbility_200204_SetRefSelectTarget) == 0x000008, "Wrong size on PyAbility_200204_SetRefSelectTarget");
-static_assert(offsetof(PyAbility_200204_SetRefSelectTarget, Target) == 0x000000, "Member 'PyAbility_200204_SetRefSelectTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200204_SetRefSelectTarget;
 
 // PythonFunction PyAbility_200204.PyAbility_200204.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_200204_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200204_ReceiveTick) == 0x000004, "Wrong alignment on PyAbility_200204_ReceiveTick");
-static_assert(sizeof(PyAbility_200204_ReceiveTick) == 0x000004, "Wrong size on PyAbility_200204_ReceiveTick");
-static_assert(offsetof(PyAbility_200204_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyAbility_200204_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200204_ReceiveTick;
 
 // PythonFunction PyAbility_200204.PyAbility_200204.K2_OnGatherCallback
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_200204_K2_OnGatherCallback final
 public:
 	int32                                         GatherIdx;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200204_K2_OnGatherCallback) == 0x000004, "Wrong alignment on PyAbility_200204_K2_OnGatherCallback");
-static_assert(sizeof(PyAbility_200204_K2_OnGatherCallback) == 0x000004, "Wrong size on PyAbility_200204_K2_OnGatherCallback");
-static_assert(offsetof(PyAbility_200204_K2_OnGatherCallback, GatherIdx) == 0x000000, "Member 'PyAbility_200204_K2_OnGatherCallback::GatherIdx' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200204_K2_OnGatherCallback;
 
 // PythonFunction PyAbility_200204.PyAbility_200204.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyAbility_200204_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200204_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_200204_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_200204_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_200204_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_200204_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_200204_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200204_K2_OnEndAbility;
 
 }
 

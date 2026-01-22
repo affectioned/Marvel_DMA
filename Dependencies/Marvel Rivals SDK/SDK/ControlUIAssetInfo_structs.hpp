@@ -25,12 +25,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              ControlIcon_48_374043404C3AB737AEB65093AF596592;   // 0x0018(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          Delivery_51_A7382D3A432EC7204F2298AADC37D4C5;      // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FControlUIAssetInfo) == 0x000008, "Wrong alignment on FControlUIAssetInfo");
-static_assert(sizeof(FControlUIAssetInfo) == 0x000050, "Wrong size on FControlUIAssetInfo");
-static_assert(offsetof(FControlUIAssetInfo, LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8) == 0x000000, "Member 'FControlUIAssetInfo::LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8' has a wrong offset!");
-static_assert(offsetof(FControlUIAssetInfo, LevelName_5_A266601D484A018157B4E9A1EBBE81E4) == 0x000008, "Member 'FControlUIAssetInfo::LevelName_5_A266601D484A018157B4E9A1EBBE81E4' has a wrong offset!");
-static_assert(offsetof(FControlUIAssetInfo, ControlIcon_48_374043404C3AB737AEB65093AF596592) == 0x000018, "Member 'FControlUIAssetInfo::ControlIcon_48_374043404C3AB737AEB65093AF596592' has a wrong offset!");
-static_assert(offsetof(FControlUIAssetInfo, Delivery_51_A7382D3A432EC7204F2298AADC37D4C5) == 0x000048, "Member 'FControlUIAssetInfo::Delivery_51_A7382D3A432EC7204F2298AADC37D4C5' has a wrong offset!");
+DUMPER7_ASSERTS_FControlUIAssetInfo;
 
 }
 

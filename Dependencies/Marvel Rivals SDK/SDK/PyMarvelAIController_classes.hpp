@@ -40,17 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelAIController">();
+		STATIC_CLASS_IMPL("PyMarvelAIController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelAIController")
 	}
 	static class APyMarvelAIController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelAIController>();
 	}
 };
-static_assert(alignof(APyMarvelAIController) == 0x000010, "Wrong alignment on APyMarvelAIController");
-static_assert(sizeof(APyMarvelAIController) == 0x000D50, "Wrong size on APyMarvelAIController");
-static_assert(offsetof(APyMarvelAIController, BTAsset) == 0x000D40, "Member 'APyMarvelAIController::BTAsset' has a wrong offset!");
-static_assert(offsetof(APyMarvelAIController, AutoRunBT) == 0x000D48, "Member 'APyMarvelAIController::AutoRunBT' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelAIController;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelCueNotify_Quip">();
+		STATIC_CLASS_IMPL("PyMarvelCueNotify_Quip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelCueNotify_Quip")
 	}
 	static class UPyMarvelCueNotify_Quip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelCueNotify_Quip>();
 	}
 };
-static_assert(alignof(UPyMarvelCueNotify_Quip) == 0x000008, "Wrong alignment on UPyMarvelCueNotify_Quip");
-static_assert(sizeof(UPyMarvelCueNotify_Quip) == 0x0002B0, "Wrong size on UPyMarvelCueNotify_Quip");
+DUMPER7_ASSERTS_UPyMarvelCueNotify_Quip;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101611.PyEffectiveComponent_10161101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10161101 final : public UEffectiveComponent_10161101
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10161101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10161101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10161101")
 	}
 	static class UPyEffectiveComponent_10161101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10161101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10161101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10161101");
-static_assert(sizeof(UPyEffectiveComponent_10161101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10161101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10161101;
 
 // PythonClass PyAbility_101611.PyAbility_101611
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101611 : public UMarvelGameplayAbility
 {
 public:
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101611">();
+		STATIC_CLASS_IMPL("PyAbility_101611")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101611")
 	}
 	static class UPyAbility_101611* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101611>();
 	}
 };
-static_assert(alignof(UPyAbility_101611) == 0x000008, "Wrong alignment on UPyAbility_101611");
-static_assert(sizeof(UPyAbility_101611) == 0x0029F0, "Wrong size on UPyAbility_101611");
+DUMPER7_ASSERTS_UPyAbility_101611;
 
 }
 

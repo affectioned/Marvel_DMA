@@ -21,9 +21,7 @@ struct PyWidget_JumpItem_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_JumpItem_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_JumpItem_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_JumpItem_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_JumpItem_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_JumpItem_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_JumpItem_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_JumpItem_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Secondary_NotEnoughMoney.PyWidget_Secondary_NotEnoughMoney.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_NotEnoughMoney_OnCascadingVisibleChanged;
 
 }
 

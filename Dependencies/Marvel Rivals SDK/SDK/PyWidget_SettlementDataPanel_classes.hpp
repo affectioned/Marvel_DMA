@@ -17,68 +17,16 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel
-// 0x0028 (0x05E8 - 0x05C0)
-class UPyWidget_SettlementDataListPanel : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     TextImage;                                         // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     BGImage;                                           // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                SettlementDataUnit_Normal;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel">();
-	}
-	static class UPyWidget_SettlementDataListPanel* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel>();
-	}
-};
-static_assert(alignof(UPyWidget_SettlementDataListPanel) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel, TextImage) == 0x0005C0, "Member 'UPyWidget_SettlementDataListPanel::TextImage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel, BGImage) == 0x0005D0, "Member 'UPyWidget_SettlementDataListPanel::BGImage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel, SettlementDataUnit_Normal) == 0x0005E0, "Member 'UPyWidget_SettlementDataListPanel::SettlementDataUnit_Normal' has a wrong offset!");
-
-// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_BattleChess
-// 0x0000 (0x05E8 - 0x05E8)
-class UPyWidget_SettlementDataListPanel_BattleChess final : public UPyWidget_SettlementDataListPanel
-{
-public:
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_BattleChess">();
-	}
-	static class UPyWidget_SettlementDataListPanel_BattleChess* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_BattleChess>();
-	}
-};
-static_assert(alignof(UPyWidget_SettlementDataListPanel_BattleChess) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_BattleChess");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_BattleChess) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel_BattleChess");
-
 // PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementResultInfo
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_SettlementResultInfo : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Victory;                                     // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Defeat;                                      // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelTextBlock*                       Text_Top6;                                         // 0x05E8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Victory;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Defeat;                                      // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelTextBlock*                       Text_Top6;                                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -88,80 +36,53 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementResultInfo">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementResultInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementResultInfo")
 	}
 	static class UPyWidget_SettlementResultInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementResultInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementResultInfo) == 0x000008, "Wrong alignment on UPyWidget_SettlementResultInfo");
-static_assert(sizeof(UPyWidget_SettlementResultInfo) == 0x0005F0, "Wrong size on UPyWidget_SettlementResultInfo");
-static_assert(offsetof(UPyWidget_SettlementResultInfo, Color_Victory) == 0x0005BC, "Member 'UPyWidget_SettlementResultInfo::Color_Victory' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementResultInfo, Color_Defeat) == 0x0005D0, "Member 'UPyWidget_SettlementResultInfo::Color_Defeat' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementResultInfo, Text_Top6) == 0x0005E8, "Member 'UPyWidget_SettlementResultInfo::Text_Top6' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettlementResultInfo;
 
-// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataPanel
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_SettlementDataPanel final : public UPyMarvelUserWidget
+// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel
+// 0x0028 (0x05F0 - 0x05C8)
+class UPyWidget_SettlementDataListPanel : public UPyMarvelUserWidget
 {
 public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     TextImage;                                         // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     BGImage;                                           // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SettlementDataUnit_Normal;                         // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
 	void OnInitialized();
+	void Construct();
+	void Destruct();
 	void MarvelSetVisible(bool Visible);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel")
 	}
-	static class UPyWidget_SettlementDataPanel* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_SettlementDataPanel>();
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel")
+	}
+	static class UPyWidget_SettlementDataListPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataPanel) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataPanel");
-static_assert(sizeof(UPyWidget_SettlementDataPanel) == 0x0005C0, "Wrong size on UPyWidget_SettlementDataPanel");
-
-// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_TeamDeath
-// 0x0000 (0x05E8 - 0x05E8)
-class UPyWidget_SettlementDataListPanel_TeamDeath final : public UPyWidget_SettlementDataListPanel
-{
-public:
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_TeamDeath">();
-	}
-	static class UPyWidget_SettlementDataListPanel_TeamDeath* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_TeamDeath>();
-	}
-};
-static_assert(alignof(UPyWidget_SettlementDataListPanel_TeamDeath) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_TeamDeath");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_TeamDeath) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel_TeamDeath");
-
-// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_PersonalDeath
-// 0x0000 (0x05E8 - 0x05E8)
-class UPyWidget_SettlementDataListPanel_PersonalDeath final : public UPyWidget_SettlementDataListPanel
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_PersonalDeath">();
-	}
-	static class UPyWidget_SettlementDataListPanel_PersonalDeath* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_PersonalDeath>();
-	}
-};
-static_assert(alignof(UPyWidget_SettlementDataListPanel_PersonalDeath) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_PersonalDeath");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_PersonalDeath) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel_PersonalDeath");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel;
 
 // PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_SpringFestival
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05F0 - 0x05F0)
 class UPyWidget_SettlementDataListPanel_SpringFestival final : public UPyWidget_SettlementDataListPanel
 {
 public:
@@ -171,15 +92,110 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_SpringFestival">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_SpringFestival")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_SpringFestival")
 	}
 	static class UPyWidget_SettlementDataListPanel_SpringFestival* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_SpringFestival>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataListPanel_SpringFestival) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_SpringFestival");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_SpringFestival) == 0x0005E8, "Wrong size on UPyWidget_SettlementDataListPanel_SpringFestival");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_SpringFestival;
+
+// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataPanel
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_SettlementDataPanel final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void MarvelSetVisible(bool Visible);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataPanel")
+	}
+	static class UPyWidget_SettlementDataPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_SettlementDataPanel>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_SettlementDataPanel;
+
+// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_BattleChess
+// 0x0000 (0x05F0 - 0x05F0)
+class UPyWidget_SettlementDataListPanel_BattleChess final : public UPyWidget_SettlementDataListPanel
+{
+public:
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_BattleChess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_BattleChess")
+	}
+	static class UPyWidget_SettlementDataListPanel_BattleChess* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_BattleChess>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_BattleChess;
+
+// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_TeamDeath
+// 0x0000 (0x05F0 - 0x05F0)
+class UPyWidget_SettlementDataListPanel_TeamDeath final : public UPyWidget_SettlementDataListPanel
+{
+public:
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_TeamDeath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_TeamDeath")
+	}
+	static class UPyWidget_SettlementDataListPanel_TeamDeath* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_TeamDeath>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_TeamDeath;
+
+// PythonClass PyWidget_SettlementDataPanel.PyWidget_SettlementDataListPanel_PersonalDeath
+// 0x0000 (0x05F0 - 0x05F0)
+class UPyWidget_SettlementDataListPanel_PersonalDeath final : public UPyWidget_SettlementDataListPanel
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_PersonalDeath")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_PersonalDeath")
+	}
+	static class UPyWidget_SettlementDataListPanel_PersonalDeath* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_PersonalDeath>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_PersonalDeath;
 
 }
 

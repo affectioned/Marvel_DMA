@@ -17,20 +17,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_LevelGrowthBar.PyWidget_Common_LevelGrowthBar
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Common_LevelGrowthBar final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TimeInterval;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeIntervalFinished;                              // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlaySpeed;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpgradeAnimSpeed;                                  // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_Add;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Finish;                                    // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Upgrade;                                   // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnAnimFinish;                                      // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimeInterval;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeIntervalFinished;                              // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlaySpeed;                                         // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpgradeAnimSpeed;                                  // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_Add;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Finish;                                    // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Upgrade;                                   // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAnimFinish;                                      // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,23 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_LevelGrowthBar">();
+		STATIC_CLASS_IMPL("PyWidget_Common_LevelGrowthBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_LevelGrowthBar")
 	}
 	static class UPyWidget_Common_LevelGrowthBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_LevelGrowthBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_LevelGrowthBar) == 0x000008, "Wrong alignment on UPyWidget_Common_LevelGrowthBar");
-static_assert(sizeof(UPyWidget_Common_LevelGrowthBar) == 0x0005F8, "Wrong size on UPyWidget_Common_LevelGrowthBar");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, TimeInterval) == 0x0005BC, "Member 'UPyWidget_Common_LevelGrowthBar::TimeInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, TimeIntervalFinished) == 0x0005C0, "Member 'UPyWidget_Common_LevelGrowthBar::TimeIntervalFinished' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, PlaySpeed) == 0x0005C4, "Member 'UPyWidget_Common_LevelGrowthBar::PlaySpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, UpgradeAnimSpeed) == 0x0005C8, "Member 'UPyWidget_Common_LevelGrowthBar::UpgradeAnimSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, AkEvent_Add) == 0x0005D0, "Member 'UPyWidget_Common_LevelGrowthBar::AkEvent_Add' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, AkEvent_Finish) == 0x0005D8, "Member 'UPyWidget_Common_LevelGrowthBar::AkEvent_Finish' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, AkEvent_Upgrade) == 0x0005E0, "Member 'UPyWidget_Common_LevelGrowthBar::AkEvent_Upgrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LevelGrowthBar, OnAnimFinish) == 0x0005E8, "Member 'UPyWidget_Common_LevelGrowthBar::OnAnimFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_LevelGrowthBar;
 
 }
 

@@ -143,6 +143,31 @@ void UPyAbility_102591::OnDurationEnd()
 }
 
 
+// PythonFunction PyAbility_102591.PyAbility_102591.NativeOnMontageEvent
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Tag                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyAbility_102591::NativeOnMontageEvent(const class FString& Tag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_102591", "NativeOnMontageEvent");
+
+	Params::PyAbility_102591_NativeOnMontageEvent Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_102591.PyAbility_102591.NativeOnMontageCompleted
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

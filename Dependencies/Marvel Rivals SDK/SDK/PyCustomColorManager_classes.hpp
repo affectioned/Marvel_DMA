@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCustomColorManager">();
+		STATIC_CLASS_IMPL("PyCustomColorManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCustomColorManager")
 	}
 	static class UPyCustomColorManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCustomColorManager>();
 	}
 };
-static_assert(alignof(UPyCustomColorManager) == 0x000008, "Wrong alignment on UPyCustomColorManager");
-static_assert(sizeof(UPyCustomColorManager) == 0x000160, "Wrong size on UPyCustomColorManager");
+DUMPER7_ASSERTS_UPyCustomColorManager;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WwiseExternalSourceStatics">();
+		STATIC_CLASS_IMPL("WwiseExternalSourceStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WwiseExternalSourceStatics")
 	}
 	static class UWwiseExternalSourceStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWwiseExternalSourceStatics>();
 	}
 };
-static_assert(alignof(UWwiseExternalSourceStatics) == 0x000008, "Wrong alignment on UWwiseExternalSourceStatics");
-static_assert(sizeof(UWwiseExternalSourceStatics) == 0x000030, "Wrong size on UWwiseExternalSourceStatics");
+DUMPER7_ASSERTS_UWwiseExternalSourceStatics;
 
 }
 

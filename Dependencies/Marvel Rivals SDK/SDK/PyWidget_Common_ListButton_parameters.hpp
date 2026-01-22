@@ -23,9 +23,7 @@ struct PyWidget_CommonVXButton_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonVXButton_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_CommonVXButton_PreConstruct");
-static_assert(sizeof(PyWidget_CommonVXButton_PreConstruct) == 0x000001, "Wrong size on PyWidget_CommonVXButton_PreConstruct");
-static_assert(offsetof(PyWidget_CommonVXButton_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_CommonVXButton_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonVXButton_PreConstruct;
 
 // PythonFunction PyWidget_Common_ListButton.PyWidget_CommonVXButton.OnMouseEnter
 // 0x00B8 (0x00B8 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_CommonVXButton_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_CommonVXButton_OnMouseEnter");
-static_assert(sizeof(PyWidget_CommonVXButton_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_CommonVXButton_OnMouseEnter");
-static_assert(offsetof(PyWidget_CommonVXButton_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_CommonVXButton_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonVXButton_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_CommonVXButton_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonVXButton_OnMouseEnter;
 
 // PythonFunction PyWidget_Common_ListButton.PyWidget_CommonVXButton.OnMouseLeave
 // 0x0080 (0x0080 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_CommonVXButton_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_CommonVXButton_OnMouseLeave) == 0x000008, "Wrong alignment on PyWidget_CommonVXButton_OnMouseLeave");
-static_assert(sizeof(PyWidget_CommonVXButton_OnMouseLeave) == 0x000080, "Wrong size on PyWidget_CommonVXButton_OnMouseLeave");
-static_assert(offsetof(PyWidget_CommonVXButton_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PyWidget_CommonVXButton_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonVXButton_OnMouseLeave;
 
 }
 

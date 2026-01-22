@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104542.PyUIController_104542
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104542 final : public UUIC_Ability
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104542">();
+		STATIC_CLASS_IMPL("PyUIController_104542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104542")
 	}
 	static class UPyUIController_104542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104542>();
 	}
 };
-static_assert(alignof(UPyUIController_104542) == 0x000008, "Wrong alignment on UPyUIController_104542");
-static_assert(sizeof(UPyUIController_104542) == 0x000F10, "Wrong size on UPyUIController_104542");
+DUMPER7_ASSERTS_UPyUIController_104542;
 
 // PythonClass PyAbility_104542.PyConfig_104542
 // 0x0010 (0x00E8 - 0x00D8)
@@ -49,24 +52,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104542">();
+		STATIC_CLASS_IMPL("PyConfig_104542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104542")
 	}
 	static class UPyConfig_104542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104542>();
 	}
 };
-static_assert(alignof(UPyConfig_104542) == 0x000008, "Wrong alignment on UPyConfig_104542");
-static_assert(sizeof(UPyConfig_104542) == 0x0000E8, "Wrong size on UPyConfig_104542");
-static_assert(offsetof(UPyConfig_104542, ManagerAbilityID) == 0x0000D8, "Member 'UPyConfig_104542::ManagerAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104542, FlyTag) == 0x0000DC, "Member 'UPyConfig_104542::FlyTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104542;
 
 // PythonClass PyAbility_104542.PyCue_Ability_Loop_10454201
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10454201 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         GlideAudioID;                                      // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GlideAudioID;                                      // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -75,16 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10454201">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10454201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10454201")
 	}
 	static class APyCue_Ability_Loop_10454201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10454201>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10454201) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10454201");
-static_assert(sizeof(APyCue_Ability_Loop_10454201) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10454201");
-static_assert(offsetof(APyCue_Ability_Loop_10454201, GlideAudioID) == 0x0011B0, "Member 'APyCue_Ability_Loop_10454201::GlideAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10454201;
 
 }
 

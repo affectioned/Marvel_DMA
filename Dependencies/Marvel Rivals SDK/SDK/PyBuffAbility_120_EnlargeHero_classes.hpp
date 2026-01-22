@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_EnlargeHero.PyBuffAbility_120_EnlargeHero
-// 0x0030 (0x13B8 - 0x1388)
+// 0x0030 (0x13D0 - 0x13A0)
 class UPyBuffAbility_120_EnlargeHero final : public UMarvelHealthModifierAbility
 {
 public:
-	float                                         EnlargeRate;                                       // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRate;                                        // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           IgnoreDamageTag;                                   // 0x1394(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NewScale;                                          // 0x13A0(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnlargeRate;                                       // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x13A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRate;                                        // 0x13A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           IgnoreDamageTag;                                   // 0x13AC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                NewScale;                                          // 0x13B8(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_EnlargeHero">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_EnlargeHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_EnlargeHero")
 	}
 	static class UPyBuffAbility_120_EnlargeHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_EnlargeHero>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_EnlargeHero) == 0x000008, "Wrong alignment on UPyBuffAbility_120_EnlargeHero");
-static_assert(sizeof(UPyBuffAbility_120_EnlargeHero) == 0x0013B8, "Wrong size on UPyBuffAbility_120_EnlargeHero");
-static_assert(offsetof(UPyBuffAbility_120_EnlargeHero, EnlargeRate) == 0x001388, "Member 'UPyBuffAbility_120_EnlargeHero::EnlargeRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_EnlargeHero, BuffID) == 0x00138C, "Member 'UPyBuffAbility_120_EnlargeHero::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_EnlargeHero, DamageRate) == 0x001390, "Member 'UPyBuffAbility_120_EnlargeHero::DamageRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_EnlargeHero, IgnoreDamageTag) == 0x001394, "Member 'UPyBuffAbility_120_EnlargeHero::IgnoreDamageTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_EnlargeHero, NewScale) == 0x0013A0, "Member 'UPyBuffAbility_120_EnlargeHero::NewScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_EnlargeHero;
 
 }
 

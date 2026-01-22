@@ -23,11 +23,7 @@ public:
 	class FString                                 BK2Path;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBK2Checker_CheckBK2Hash) == 0x000008, "Wrong alignment on PyBK2Checker_CheckBK2Hash");
-static_assert(sizeof(PyBK2Checker_CheckBK2Hash) == 0x000020, "Wrong size on PyBK2Checker_CheckBK2Hash");
-static_assert(offsetof(PyBK2Checker_CheckBK2Hash, wco) == 0x000000, "Member 'PyBK2Checker_CheckBK2Hash::wco' has a wrong offset!");
-static_assert(offsetof(PyBK2Checker_CheckBK2Hash, BK2Path) == 0x000008, "Member 'PyBK2Checker_CheckBK2Hash::BK2Path' has a wrong offset!");
-static_assert(offsetof(PyBK2Checker_CheckBK2Hash, ReturnValue) == 0x000018, "Member 'PyBK2Checker_CheckBK2Hash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBK2Checker_CheckBK2Hash;
 
 // PythonFunction PyHashCheckNode.PyBK2Checker.update_bk2_hash_records
 // 0x0010 (0x0010 - 0x0000)
@@ -36,9 +32,7 @@ struct PyBK2Checker_update_bk2_hash_records final
 public:
 	class FString                                 bk2_root;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBK2Checker_update_bk2_hash_records) == 0x000008, "Wrong alignment on PyBK2Checker_update_bk2_hash_records");
-static_assert(sizeof(PyBK2Checker_update_bk2_hash_records) == 0x000010, "Wrong size on PyBK2Checker_update_bk2_hash_records");
-static_assert(offsetof(PyBK2Checker_update_bk2_hash_records, bk2_root) == 0x000000, "Member 'PyBK2Checker_update_bk2_hash_records::bk2_root' has a wrong offset!");
+DUMPER7_ASSERTS_PyBK2Checker_update_bk2_hash_records;
 
 }
 

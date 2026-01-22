@@ -25,12 +25,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class FString>            Labels;                                            // 0x0020(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbilitySystemGlobals_SendHistogramMetricInternal) == 0x000008, "Wrong alignment on PyAbilitySystemGlobals_SendHistogramMetricInternal");
-static_assert(sizeof(PyAbilitySystemGlobals_SendHistogramMetricInternal) == 0x000070, "Wrong size on PyAbilitySystemGlobals_SendHistogramMetricInternal");
-static_assert(offsetof(PyAbilitySystemGlobals_SendHistogramMetricInternal, InWorld) == 0x000000, "Member 'PyAbilitySystemGlobals_SendHistogramMetricInternal::InWorld' has a wrong offset!");
-static_assert(offsetof(PyAbilitySystemGlobals_SendHistogramMetricInternal, DataName) == 0x000008, "Member 'PyAbilitySystemGlobals_SendHistogramMetricInternal::DataName' has a wrong offset!");
-static_assert(offsetof(PyAbilitySystemGlobals_SendHistogramMetricInternal, Value) == 0x000018, "Member 'PyAbilitySystemGlobals_SendHistogramMetricInternal::Value' has a wrong offset!");
-static_assert(offsetof(PyAbilitySystemGlobals_SendHistogramMetricInternal, Labels) == 0x000020, "Member 'PyAbilitySystemGlobals_SendHistogramMetricInternal::Labels' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilitySystemGlobals_SendHistogramMetricInternal;
 
 }
 

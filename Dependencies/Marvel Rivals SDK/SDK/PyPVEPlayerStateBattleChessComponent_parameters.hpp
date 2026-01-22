@@ -21,9 +21,7 @@ struct PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode final
 public:
 	bool                                          confirm;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode) == 0x000001, "Wrong alignment on PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode");
-static_assert(sizeof(PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode) == 0x000001, "Wrong size on PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode");
-static_assert(offsetof(PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode, confirm) == 0x000000, "Member 'PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode::confirm' has a wrong offset!");
+DUMPER7_ASSERTS_PyPVEPlayerStateBattleChessComponent_ServerConfirmOnMultiSelectMode;
 
 }
 

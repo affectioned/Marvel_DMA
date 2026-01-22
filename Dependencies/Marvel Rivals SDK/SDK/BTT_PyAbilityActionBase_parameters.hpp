@@ -24,10 +24,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_PyAbilityActionBase_ReceiveExecuteAI) == 0x000008, "Wrong alignment on BTT_PyAbilityActionBase_ReceiveExecuteAI");
-static_assert(sizeof(BTT_PyAbilityActionBase_ReceiveExecuteAI) == 0x000010, "Wrong size on BTT_PyAbilityActionBase_ReceiveExecuteAI");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveExecuteAI, OwnerController) == 0x000000, "Member 'BTT_PyAbilityActionBase_ReceiveExecuteAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveExecuteAI, ControlledPawn) == 0x000008, "Member 'BTT_PyAbilityActionBase_ReceiveExecuteAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_PyAbilityActionBase_ReceiveExecuteAI;
 
 // PythonFunction BTT_PyAbilityActionBase.BTT_PyAbilityActionBase.ReceiveAbortAI
 // 0x0010 (0x0010 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_PyAbilityActionBase_ReceiveAbortAI) == 0x000008, "Wrong alignment on BTT_PyAbilityActionBase_ReceiveAbortAI");
-static_assert(sizeof(BTT_PyAbilityActionBase_ReceiveAbortAI) == 0x000010, "Wrong size on BTT_PyAbilityActionBase_ReceiveAbortAI");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveAbortAI, OwnerController) == 0x000000, "Member 'BTT_PyAbilityActionBase_ReceiveAbortAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveAbortAI, ControlledPawn) == 0x000008, "Member 'BTT_PyAbilityActionBase_ReceiveAbortAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_PyAbilityActionBase_ReceiveAbortAI;
 
 // PythonFunction BTT_PyAbilityActionBase.BTT_PyAbilityActionBase.ReceiveOnTaskFinished
 // 0x0018 (0x0018 - 0x0000)
@@ -51,11 +45,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EBTNodeResult                                 Result;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_PyAbilityActionBase_ReceiveOnTaskFinished) == 0x000008, "Wrong alignment on BTT_PyAbilityActionBase_ReceiveOnTaskFinished");
-static_assert(sizeof(BTT_PyAbilityActionBase_ReceiveOnTaskFinished) == 0x000018, "Wrong size on BTT_PyAbilityActionBase_ReceiveOnTaskFinished");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveOnTaskFinished, OwnerController) == 0x000000, "Member 'BTT_PyAbilityActionBase_ReceiveOnTaskFinished::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveOnTaskFinished, ControlledPawn) == 0x000008, "Member 'BTT_PyAbilityActionBase_ReceiveOnTaskFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTT_PyAbilityActionBase_ReceiveOnTaskFinished, Result) == 0x000010, "Member 'BTT_PyAbilityActionBase_ReceiveOnTaskFinished::Result' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_PyAbilityActionBase_ReceiveOnTaskFinished;
 
 // PythonFunction BTT_PyAbilityActionBase.BTT_PyAbilityActionButtonBase.ReceiveExecuteAI
 // 0x0010 (0x0010 - 0x0000)
@@ -65,10 +55,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_PyAbilityActionButtonBase_ReceiveExecuteAI) == 0x000008, "Wrong alignment on BTT_PyAbilityActionButtonBase_ReceiveExecuteAI");
-static_assert(sizeof(BTT_PyAbilityActionButtonBase_ReceiveExecuteAI) == 0x000010, "Wrong size on BTT_PyAbilityActionButtonBase_ReceiveExecuteAI");
-static_assert(offsetof(BTT_PyAbilityActionButtonBase_ReceiveExecuteAI, OwnerController) == 0x000000, "Member 'BTT_PyAbilityActionButtonBase_ReceiveExecuteAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_PyAbilityActionButtonBase_ReceiveExecuteAI, ControlledPawn) == 0x000008, "Member 'BTT_PyAbilityActionButtonBase_ReceiveExecuteAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_PyAbilityActionButtonBase_ReceiveExecuteAI;
 
 }
 

@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_Dying">();
+		STATIC_CLASS_IMPL("PyWidget3D_Dying")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_Dying")
 	}
 	static class UPyWidget3D_Dying* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_Dying>();
 	}
 };
-static_assert(alignof(UPyWidget3D_Dying) == 0x000010, "Wrong alignment on UPyWidget3D_Dying");
-static_assert(sizeof(UPyWidget3D_Dying) == 0x0008E0, "Wrong size on UPyWidget3D_Dying");
-static_assert(offsetof(UPyWidget3D_Dying, MaxVisibleDistanceConfig) == 0x000890, "Member 'UPyWidget3D_Dying::MaxVisibleDistanceConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_Dying;
 
 }
 

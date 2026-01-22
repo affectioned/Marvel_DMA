@@ -18,28 +18,31 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallGift_Card_Edit.PyWidget_MallGift_Tag
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_MallGift_Tag final : public UMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Tag">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Tag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Tag")
 	}
 	static class UPyWidget_MallGift_Tag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Tag>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Tag) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Tag");
-static_assert(sizeof(UPyWidget_MallGift_Tag) == 0x000568, "Wrong size on UPyWidget_MallGift_Tag");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Tag;
 
 // PythonClass PyWidget_MallGift_Card_Edit.PyWidget_MallGift_Card_Edit
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_MallGift_Card_Edit final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Card_Edit">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Card_Edit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Card_Edit")
 	}
 	static class UPyWidget_MallGift_Card_Edit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Card_Edit>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Card_Edit) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Card_Edit");
-static_assert(sizeof(UPyWidget_MallGift_Card_Edit) == 0x000600, "Wrong size on UPyWidget_MallGift_Card_Edit");
-static_assert(offsetof(UPyWidget_MallGift_Card_Edit, Price_Widget) == 0x0005F8, "Member 'UPyWidget_MallGift_Card_Edit::Price_Widget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Card_Edit;
 
 }
 

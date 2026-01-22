@@ -36,19 +36,7 @@ public:
 	class AMarvelAbilityTargetActor_Scope*        K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Scope; // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP) == 0x000008, "Wrong alignment on BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP");
-static_assert(sizeof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP) == 0x000058, "Wrong size on BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, EntryPoint) == 0x000000, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, Temp_struct_Variable) == 0x000008, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, K2Node_Event_InTag) == 0x000020, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::K2Node_Event_InTag' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, K2Node_Event_Count) == 0x00002C, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::K2Node_Event_Count' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, K2Node_CustomEvent_Active) == 0x000030, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::K2Node_CustomEvent_Active' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, CallFunc_Greater_IntInt_ReturnValue) == 0x000031, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000032, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, CallFunc_GetGameplayAbility_ReturnValue) == 0x000038, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::CallFunc_GetGameplayAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, CallFunc_SpawnScopeTask_ReturnValue) == 0x000040, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::CallFunc_SpawnScopeTask_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Scope) == 0x000048, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::K2Node_DynamicCast_AsMarvel_Ability_Target_Actor_Scope' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446191_BP_C_ExecuteUbergraph_BuffAbility_10130_10446191_BP;
 
 // Function BuffAbility_10130_10446191_BP.BuffAbility_10130_10446191_BP_C.OnAbilityRightActive
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +45,7 @@ struct BuffAbility_10130_10446191_BP_C_OnAbilityRightActive final
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446191_BP_C_OnAbilityRightActive) == 0x000001, "Wrong alignment on BuffAbility_10130_10446191_BP_C_OnAbilityRightActive");
-static_assert(sizeof(BuffAbility_10130_10446191_BP_C_OnAbilityRightActive) == 0x000001, "Wrong size on BuffAbility_10130_10446191_BP_C_OnAbilityRightActive");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_OnAbilityRightActive, Active) == 0x000000, "Member 'BuffAbility_10130_10446191_BP_C_OnAbilityRightActive::Active' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446191_BP_C_OnAbilityRightActive;
 
 // Function BuffAbility_10130_10446191_BP.BuffAbility_10130_10446191_BP_C.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -69,10 +55,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate");
-static_assert(sizeof(BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446191_BP_C_OnGenericGameplayTagUpdate;
 
 }
 

@@ -14,13 +14,4 @@ namespace Offsets
 		48 8B 1D ? ? ? ? 4D 8B E9
 	*/
 	inline std::ptrdiff_t GWorld{ 0x0 };
-
-	namespace Actor
-	{
-		inline std::ptrdiff_t TypeCheck{ 0x38 };
-	}
-	namespace SceneComponent
-	{
-		inline std::ptrdiff_t Location{ 0x150 };
-	}
 }

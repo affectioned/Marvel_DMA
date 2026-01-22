@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_Indicator">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_Indicator")
 	}
 	static class UPyWidget_Novice_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_Indicator>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_Indicator) == 0x000010, "Wrong alignment on UPyWidget_Novice_Indicator");
-static_assert(sizeof(UPyWidget_Novice_Indicator) == 0x000870, "Wrong size on UPyWidget_Novice_Indicator");
+DUMPER7_ASSERTS_UPyWidget_Novice_Indicator;
 
 }
 

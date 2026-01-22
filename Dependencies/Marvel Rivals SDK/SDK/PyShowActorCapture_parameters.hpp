@@ -23,9 +23,7 @@ struct PyShowActorCapture_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorCapture_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyShowActorCapture_ReceiveEndPlay");
-static_assert(sizeof(PyShowActorCapture_ReceiveEndPlay) == 0x000001, "Wrong size on PyShowActorCapture_ReceiveEndPlay");
-static_assert(offsetof(PyShowActorCapture_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyShowActorCapture_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorCapture_ReceiveEndPlay;
 
 // PythonFunction PyShowActorCapture.PyShowActorCapture.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyShowActorCapture_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorCapture_ReceiveTick) == 0x000004, "Wrong alignment on PyShowActorCapture_ReceiveTick");
-static_assert(sizeof(PyShowActorCapture_ReceiveTick) == 0x000004, "Wrong size on PyShowActorCapture_ReceiveTick");
-static_assert(offsetof(PyShowActorCapture_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyShowActorCapture_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorCapture_ReceiveTick;
 
 // PythonFunction PyShowActorCapture.PyShowActorCapture.SetSceneCaptureVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyShowActorCapture_SetSceneCaptureVisible final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorCapture_SetSceneCaptureVisible) == 0x000001, "Wrong alignment on PyShowActorCapture_SetSceneCaptureVisible");
-static_assert(sizeof(PyShowActorCapture_SetSceneCaptureVisible) == 0x000001, "Wrong size on PyShowActorCapture_SetSceneCaptureVisible");
-static_assert(offsetof(PyShowActorCapture_SetSceneCaptureVisible, bVisible) == 0x000000, "Member 'PyShowActorCapture_SetSceneCaptureVisible::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorCapture_SetSceneCaptureVisible;
 
 // PythonFunction PyShowActorCapture.PyShowActorCapture.SetTargetCmaeraActor
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyShowActorCapture_SetTargetCmaeraActor final
 public:
 	class ACameraActor*                           CameraActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorCapture_SetTargetCmaeraActor) == 0x000008, "Wrong alignment on PyShowActorCapture_SetTargetCmaeraActor");
-static_assert(sizeof(PyShowActorCapture_SetTargetCmaeraActor) == 0x000008, "Wrong size on PyShowActorCapture_SetTargetCmaeraActor");
-static_assert(offsetof(PyShowActorCapture_SetTargetCmaeraActor, CameraActor) == 0x000000, "Member 'PyShowActorCapture_SetTargetCmaeraActor::CameraActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorCapture_SetTargetCmaeraActor;
 
 }
 

@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateDifficulty">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateDifficulty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateDifficulty")
 	}
 	static class UBTS_PyUpdateDifficulty* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateDifficulty>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateDifficulty) == 0x000008, "Wrong alignment on UBTS_PyUpdateDifficulty");
-static_assert(sizeof(UBTS_PyUpdateDifficulty) == 0x000108, "Wrong size on UBTS_PyUpdateDifficulty");
-static_assert(offsetof(UBTS_PyUpdateDifficulty, OutDifficultyMode) == 0x0000A8, "Member 'UBTS_PyUpdateDifficulty::OutDifficultyMode' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateDifficulty, OutDifficultyLevel) == 0x0000D8, "Member 'UBTS_PyUpdateDifficulty::OutDifficultyLevel' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateDifficulty;
 
 }
 

@@ -27,19 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101721">();
+		STATIC_CLASS_IMPL("PyConfig_101721")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101721")
 	}
 	static class UPyConfig_101721* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101721>();
 	}
 };
-static_assert(alignof(UPyConfig_101721) == 0x000008, "Wrong alignment on UPyConfig_101721");
-static_assert(sizeof(UPyConfig_101721) == 0x0000C0, "Wrong size on UPyConfig_101721");
-static_assert(offsetof(UPyConfig_101721, ActiveUserSetting) == 0x000098, "Member 'UPyConfig_101721::ActiveUserSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101721;
 
 // PythonClass PyAbility_101721.PyAbility_101721
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101721 : public UMarvelGameplayAbility
 {
 public:
@@ -49,18 +51,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101721">();
+		STATIC_CLASS_IMPL("PyAbility_101721")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101721")
 	}
 	static class UPyAbility_101721* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101721>();
 	}
 };
-static_assert(alignof(UPyAbility_101721) == 0x000008, "Wrong alignment on UPyAbility_101721");
-static_assert(sizeof(UPyAbility_101721) == 0x0029F0, "Wrong size on UPyAbility_101721");
+DUMPER7_ASSERTS_UPyAbility_101721;
 
 // PythonClass PyAbility_101721.PyCue_Ability_Loop_10172101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10172101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -70,15 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10172101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10172101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10172101")
 	}
 	static class APyCue_Ability_Loop_10172101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10172101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10172101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10172101");
-static_assert(sizeof(APyCue_Ability_Loop_10172101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10172101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10172101;
 
 }
 

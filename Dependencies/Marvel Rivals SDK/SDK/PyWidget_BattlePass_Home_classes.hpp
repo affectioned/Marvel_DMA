@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_Home.PyWidget_BattlePass_Home
-// 0x0030 (0x0628 - 0x05F8)
+// 0x0030 (0x0630 - 0x0600)
 class UPyWidget_BattlePass_Home final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UPyWidget_BattlePass_Title*             WBP_BattlePass_Title;                              // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_CommonButton_Lv1*             Btn_StartBtn;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_CommonButton_Lv1*             Btn_SeeDetails;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Buy;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_BattlePass_VoloBtn*           WBP_BattlePass_VoloBtn;                            // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialParameterCollection*           MPC_Outline;                                       // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_BattlePass_Title*             WBP_BattlePass_Title;                              // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonButton_Lv1*             Btn_StartBtn;                                      // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonButton_Lv1*             Btn_SeeDetails;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Buy;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_BattlePass_VoloBtn*           WBP_BattlePass_VoloBtn;                            // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialParameterCollection*           MPC_Outline;                                       // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Home">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Home")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Home")
 	}
 	static class UPyWidget_BattlePass_Home* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Home>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Home) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Home");
-static_assert(sizeof(UPyWidget_BattlePass_Home) == 0x000628, "Wrong size on UPyWidget_BattlePass_Home");
-static_assert(offsetof(UPyWidget_BattlePass_Home, WBP_BattlePass_Title) == 0x0005F8, "Member 'UPyWidget_BattlePass_Home::WBP_BattlePass_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Home, Btn_StartBtn) == 0x000600, "Member 'UPyWidget_BattlePass_Home::Btn_StartBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Home, Btn_SeeDetails) == 0x000608, "Member 'UPyWidget_BattlePass_Home::Btn_SeeDetails' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Home, Overlay_Buy) == 0x000610, "Member 'UPyWidget_BattlePass_Home::Overlay_Buy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Home, WBP_BattlePass_VoloBtn) == 0x000618, "Member 'UPyWidget_BattlePass_Home::WBP_BattlePass_VoloBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Home, MPC_Outline) == 0x000620, "Member 'UPyWidget_BattlePass_Home::MPC_Outline' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Home;
 
 }
 

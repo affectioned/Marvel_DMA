@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -119,15 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelBPFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("LevelBPFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelBPFunctionLibrary_C")
 	}
 	static class ULevelBPFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelBPFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(ULevelBPFunctionLibrary_C) == 0x000008, "Wrong alignment on ULevelBPFunctionLibrary_C");
-static_assert(sizeof(ULevelBPFunctionLibrary_C) == 0x000030, "Wrong size on ULevelBPFunctionLibrary_C");
+DUMPER7_ASSERTS_ULevelBPFunctionLibrary_C;
 
 }
 

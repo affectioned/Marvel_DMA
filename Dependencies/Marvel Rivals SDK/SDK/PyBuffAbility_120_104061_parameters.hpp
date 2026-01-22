@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406111.OnAbilityActivate
-// 0x0004 (0x0004 - 0x0000)
-struct PyBuffAbility_120_10406111_OnAbilityActivate final
-{
-public:
-	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyBuffAbility_120_10406111_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_120_10406111_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_120_10406111_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_120_10406111_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_120_10406111_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10406111_OnAbilityActivate::AbilityID' has a wrong offset!");
-
 // PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406112.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
 struct PyBuffAbility_120_10406112_OnAbilityActivate final
@@ -32,9 +21,16 @@ struct PyBuffAbility_120_10406112_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10406112_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_120_10406112_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_120_10406112_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_120_10406112_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_120_10406112_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10406112_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10406112_OnAbilityActivate;
+
+// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406111.OnAbilityActivate
+// 0x0004 (0x0004 - 0x0000)
+struct PyBuffAbility_120_10406111_OnAbilityActivate final
+{
+public:
+	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyBuffAbility_120_10406111_OnAbilityActivate;
 
 }
 

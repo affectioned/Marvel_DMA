@@ -21,9 +21,7 @@ struct PyAILabSubSystem_GetLevelParamData final
 public:
 	TArray<float>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyAILabSubSystem_GetLevelParamData) == 0x000008, "Wrong alignment on PyAILabSubSystem_GetLevelParamData");
-static_assert(sizeof(PyAILabSubSystem_GetLevelParamData) == 0x000010, "Wrong size on PyAILabSubSystem_GetLevelParamData");
-static_assert(offsetof(PyAILabSubSystem_GetLevelParamData, ReturnValue) == 0x000000, "Member 'PyAILabSubSystem_GetLevelParamData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAILabSubSystem_GetLevelParamData;
 
 }
 

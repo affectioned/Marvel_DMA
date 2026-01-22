@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_MissionPanel.PyWidget_Secondary_MissionPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Secondary_MissionPanel : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,23 +28,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_MissionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_MissionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_MissionPanel")
 	}
 	static class UPyWidget_Secondary_MissionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_MissionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_MissionPanel) == 0x000008, "Wrong alignment on UPyWidget_Secondary_MissionPanel");
-static_assert(sizeof(UPyWidget_Secondary_MissionPanel) == 0x0005F8, "Wrong size on UPyWidget_Secondary_MissionPanel");
+DUMPER7_ASSERTS_UPyWidget_Secondary_MissionPanel;
 
 // PythonClass PyWidget_Secondary_MissionPanel.PyWidget_Secondary_BattleMissionPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Secondary_BattleMissionPanel : public UPyWidget_Secondary_MissionPanel
 {
 public:
-	class UInputAction*                           ReturnAction;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenChatAction;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ReturnAction;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenChatAction;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -54,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_BattleMissionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_BattleMissionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_BattleMissionPanel")
 	}
 	static class UPyWidget_Secondary_BattleMissionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_BattleMissionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_BattleMissionPanel) == 0x000008, "Wrong alignment on UPyWidget_Secondary_BattleMissionPanel");
-static_assert(sizeof(UPyWidget_Secondary_BattleMissionPanel) == 0x000608, "Wrong size on UPyWidget_Secondary_BattleMissionPanel");
-static_assert(offsetof(UPyWidget_Secondary_BattleMissionPanel, ReturnAction) == 0x0005F8, "Member 'UPyWidget_Secondary_BattleMissionPanel::ReturnAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_BattleMissionPanel, OpenChatAction) == 0x000600, "Member 'UPyWidget_Secondary_BattleMissionPanel::OpenChatAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_BattleMissionPanel;
 
 }
 

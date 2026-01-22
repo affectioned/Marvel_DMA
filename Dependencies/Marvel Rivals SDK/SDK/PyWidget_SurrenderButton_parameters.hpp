@@ -21,9 +21,7 @@ struct PyWidget_SurrenderButton_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SurrenderButton_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SurrenderButton_PreConstruct");
-static_assert(sizeof(PyWidget_SurrenderButton_PreConstruct) == 0x000001, "Wrong size on PyWidget_SurrenderButton_PreConstruct");
-static_assert(offsetof(PyWidget_SurrenderButton_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SurrenderButton_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SurrenderButton_PreConstruct;
 
 // PythonFunction PyWidget_SurrenderButton.PyWidget_SurrenderButton.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SurrenderButton_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SurrenderButton_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_SurrenderButton_SetIsHover");
-static_assert(sizeof(PyWidget_SurrenderButton_SetIsHover) == 0x000001, "Wrong size on PyWidget_SurrenderButton_SetIsHover");
-static_assert(offsetof(PyWidget_SurrenderButton_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_SurrenderButton_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SurrenderButton_SetIsHover;
 
 }
 

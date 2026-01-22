@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "PyWidget_Button_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -22,38 +22,39 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Button.PyWidget_BaseCommonButton
-// 0x0198 (0x08C0 - 0x0728)
+// 0x01A0 (0x0920 - 0x0780)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_BaseCommonButton : public UPyWidget_Button
 {
 public:
-	ECommonButtonSize                             CommonButtonSize;                                  // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_729[0x7];                                      // 0x0729(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector2D>                      CommonButtonTypeList;                              // 0x0730(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            IconBrush;                                         // 0x0740(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	bool                                          ImgIconVisible;                                    // 0x0810(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_811[0x3];                                      // 0x0811(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            BtnNameColor;                                      // 0x0814(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNameDisabledColor;                              // 0x0828(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	float                                         BGDisabledOpacity;                                 // 0x083C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HoverAnimSpeed;                                    // 0x0840(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UnhoverAnimSpeed;                                  // 0x0844(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USizeBox*                               SizeBox_Main;                                      // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Btn_Icon;                                      // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Normal;                                       // 0x0858(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NormalToHover;                                // 0x0860(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HoverToPress;                                 // 0x0868(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HoverToNormal;                                // 0x0870(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HoverLoop;                                    // 0x0878(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_PressToNormal;                                // 0x0880(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_PressToHover;                                 // 0x0888(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press_VX;                                     // 0x0890(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Com_VX_Press;                                  // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          StopHoverLoopWhenPress;                            // 0x08A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseNewBtnEnableType;                              // 0x08A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8A2[0x6];                                      // 0x08A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Text;                                      // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECommonButtonSize                             CommonButtonSize;                                  // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_781[0x7];                                      // 0x0781(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector2D>                      CommonButtonTypeList;                              // 0x0788(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_798[0x8];                                      // 0x0798(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            IconBrush;                                         // 0x07A0(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	bool                                          ImgIconVisible;                                    // 0x0870(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_871[0x3];                                      // 0x0871(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            BtnNameColor;                                      // 0x0874(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameDisabledColor;                              // 0x0888(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	float                                         BGDisabledOpacity;                                 // 0x089C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HoverAnimSpeed;                                    // 0x08A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UnhoverAnimSpeed;                                  // 0x08A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Main;                                      // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Btn_Icon;                                      // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Normal;                                       // 0x08B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NormalToHover;                                // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HoverToPress;                                 // 0x08C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HoverToNormal;                                // 0x08D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HoverLoop;                                    // 0x08D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_PressToNormal;                                // 0x08E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_PressToHover;                                 // 0x08E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press_VX;                                     // 0x08F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Com_VX_Press;                                  // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          StopHoverLoopWhenPress;                            // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseNewBtnEnableType;                              // 0x0901(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_902[0x6];                                      // 0x0902(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Text;                                      // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -69,7 +70,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BaseCommonButton">();
+		STATIC_CLASS_IMPL("PyWidget_BaseCommonButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BaseCommonButton")
 	}
 	static class UPyWidget_BaseCommonButton* GetDefaultObj()
 	{
@@ -77,41 +82,16 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_BaseCommonButton) == 0x000010, "Wrong alignment on UPyWidget_BaseCommonButton");
-static_assert(sizeof(UPyWidget_BaseCommonButton) == 0x0008C0, "Wrong size on UPyWidget_BaseCommonButton");
-static_assert(offsetof(UPyWidget_BaseCommonButton, CommonButtonSize) == 0x000728, "Member 'UPyWidget_BaseCommonButton::CommonButtonSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, CommonButtonTypeList) == 0x000730, "Member 'UPyWidget_BaseCommonButton::CommonButtonTypeList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, IconBrush) == 0x000740, "Member 'UPyWidget_BaseCommonButton::IconBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, ImgIconVisible) == 0x000810, "Member 'UPyWidget_BaseCommonButton::ImgIconVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, BtnNameColor) == 0x000814, "Member 'UPyWidget_BaseCommonButton::BtnNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, BtnNameDisabledColor) == 0x000828, "Member 'UPyWidget_BaseCommonButton::BtnNameDisabledColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, BGDisabledOpacity) == 0x00083C, "Member 'UPyWidget_BaseCommonButton::BGDisabledOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, HoverAnimSpeed) == 0x000840, "Member 'UPyWidget_BaseCommonButton::HoverAnimSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, UnhoverAnimSpeed) == 0x000844, "Member 'UPyWidget_BaseCommonButton::UnhoverAnimSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, SizeBox_Main) == 0x000848, "Member 'UPyWidget_BaseCommonButton::SizeBox_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Img_Btn_Icon) == 0x000850, "Member 'UPyWidget_BaseCommonButton::Img_Btn_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_Normal) == 0x000858, "Member 'UPyWidget_BaseCommonButton::Anim_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_NormalToHover) == 0x000860, "Member 'UPyWidget_BaseCommonButton::Anim_NormalToHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_HoverToPress) == 0x000868, "Member 'UPyWidget_BaseCommonButton::Anim_HoverToPress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_HoverToNormal) == 0x000870, "Member 'UPyWidget_BaseCommonButton::Anim_HoverToNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_HoverLoop) == 0x000878, "Member 'UPyWidget_BaseCommonButton::Anim_HoverLoop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_PressToNormal) == 0x000880, "Member 'UPyWidget_BaseCommonButton::Anim_PressToNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_PressToHover) == 0x000888, "Member 'UPyWidget_BaseCommonButton::Anim_PressToHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Anim_Press_VX) == 0x000890, "Member 'UPyWidget_BaseCommonButton::Anim_Press_VX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, WBP_Com_VX_Press) == 0x000898, "Member 'UPyWidget_BaseCommonButton::WBP_Com_VX_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, StopHoverLoopWhenPress) == 0x0008A0, "Member 'UPyWidget_BaseCommonButton::StopHoverLoopWhenPress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, bUseNewBtnEnableType) == 0x0008A1, "Member 'UPyWidget_BaseCommonButton::bUseNewBtnEnableType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Overlay_Normal) == 0x0008A8, "Member 'UPyWidget_BaseCommonButton::Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BaseCommonButton, Overlay_Text) == 0x0008B0, "Member 'UPyWidget_BaseCommonButton::Overlay_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BaseCommonButton;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv0
-// 0x0010 (0x08D0 - 0x08C0)
+// 0x0010 (0x0930 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonButton_Lv0 : public UPyWidget_BaseCommonButton
 {
 public:
-	class UWidgetAnimation*                       Anim_HoverLight;                                   // 0x08B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_EffectLighting;                               // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HoverLight;                                   // 0x0918(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_EffectLighting;                               // 0x0920(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -120,7 +100,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv0">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv0")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv0")
 	}
 	static class UPyWidget_CommonButton_Lv0* GetDefaultObj()
 	{
@@ -128,20 +112,21 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonButton_Lv0) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv0");
-static_assert(sizeof(UPyWidget_CommonButton_Lv0) == 0x0008D0, "Wrong size on UPyWidget_CommonButton_Lv0");
-static_assert(offsetof(UPyWidget_CommonButton_Lv0, Anim_HoverLight) == 0x0008B8, "Member 'UPyWidget_CommonButton_Lv0::Anim_HoverLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Lv0, Anim_EffectLighting) == 0x0008C0, "Member 'UPyWidget_CommonButton_Lv0::Anim_EffectLighting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv0;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv1
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonButton_Lv1 : public UPyWidget_BaseCommonButton
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv1">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv1")
 	}
 	static class UPyWidget_CommonButton_Lv1* GetDefaultObj()
 	{
@@ -149,19 +134,18 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonButton_Lv1) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv1");
-static_assert(sizeof(UPyWidget_CommonButton_Lv1) == 0x0008C0, "Wrong size on UPyWidget_CommonButton_Lv1");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv1;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv4
-// 0x0020 (0x08E0 - 0x08C0)
+// 0x0020 (0x0940 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonButton_Lv4 : public UPyWidget_BaseCommonButton
 {
 public:
-	class UMarvelImage*                           Img_Bg_Normal;                                     // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x08C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Bg_Pressed;                                    // 0x08C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Bg_Selected;                                   // 0x08D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Normal;                                     // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Pressed;                                    // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Selected;                                   // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -169,7 +153,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv4">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv4")
 	}
 	static class UPyWidget_CommonButton_Lv4* GetDefaultObj()
 	{
@@ -177,21 +165,16 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonButton_Lv4) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv4");
-static_assert(sizeof(UPyWidget_CommonButton_Lv4) == 0x0008E0, "Wrong size on UPyWidget_CommonButton_Lv4");
-static_assert(offsetof(UPyWidget_CommonButton_Lv4, Img_Bg_Normal) == 0x0008B8, "Member 'UPyWidget_CommonButton_Lv4::Img_Bg_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Lv4, Img_Bg_Hover) == 0x0008C0, "Member 'UPyWidget_CommonButton_Lv4::Img_Bg_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Lv4, Img_Bg_Pressed) == 0x0008C8, "Member 'UPyWidget_CommonButton_Lv4::Img_Bg_Pressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Lv4, Img_Bg_Selected) == 0x0008D0, "Member 'UPyWidget_CommonButton_Lv4::Img_Bg_Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv4;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv1_W
-// 0x0010 (0x08D0 - 0x08C0)
+// 0x0010 (0x0930 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonButton_Lv1_W : public UPyWidget_BaseCommonButton
 {
 public:
-	class UWidgetAnimation*                       Anim_FadeIn_Match;                                 // 0x08B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_FadeOut_Match;                                // 0x08C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_FadeIn_Match;                                 // 0x0918(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_FadeOut_Match;                                // 0x0920(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
@@ -199,7 +182,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv1_W">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv1_W")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv1_W")
 	}
 	static class UPyWidget_CommonButton_Lv1_W* GetDefaultObj()
 	{
@@ -207,22 +194,19 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonButton_Lv1_W) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv1_W");
-static_assert(sizeof(UPyWidget_CommonButton_Lv1_W) == 0x0008D0, "Wrong size on UPyWidget_CommonButton_Lv1_W");
-static_assert(offsetof(UPyWidget_CommonButton_Lv1_W, Anim_FadeIn_Match) == 0x0008B8, "Member 'UPyWidget_CommonButton_Lv1_W::Anim_FadeIn_Match' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Lv1_W, Anim_FadeOut_Match) == 0x0008C0, "Member 'UPyWidget_CommonButton_Lv1_W::Anim_FadeOut_Match' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv1_W;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Icon
-// 0x0040 (0x0768 - 0x0728)
+// 0x0040 (0x07C0 - 0x0780)
 class UPyWidget_CommonButton_Icon : public UPyWidget_Button
 {
 public:
-	class UTexture2D*                             IconTexture;                                       // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECommonButtonSize                             CommonButtonSize;                                  // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_731[0x7];                                      // 0x0731(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector2D>                      CommonButtonTypeList;                              // 0x0738(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   HoverTips;                                         // 0x0748(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class USizeBox*                               SizeBox_Main;                                      // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconTexture;                                       // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECommonButtonSize                             CommonButtonSize;                                  // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_789[0x7];                                      // 0x0789(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector2D>                      CommonButtonTypeList;                              // 0x0790(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   HoverTips;                                         // 0x07A0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Main;                                      // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetBtnIsPressed(bool IsBtnPressed_0);
@@ -234,40 +218,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Icon")
 	}
 	static class UPyWidget_CommonButton_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonButton_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonButton_Icon) == 0x000008, "Wrong alignment on UPyWidget_CommonButton_Icon");
-static_assert(sizeof(UPyWidget_CommonButton_Icon) == 0x000768, "Wrong size on UPyWidget_CommonButton_Icon");
-static_assert(offsetof(UPyWidget_CommonButton_Icon, IconTexture) == 0x000728, "Member 'UPyWidget_CommonButton_Icon::IconTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Icon, CommonButtonSize) == 0x000730, "Member 'UPyWidget_CommonButton_Icon::CommonButtonSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Icon, CommonButtonTypeList) == 0x000738, "Member 'UPyWidget_CommonButton_Icon::CommonButtonTypeList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Icon, HoverTips) == 0x000748, "Member 'UPyWidget_CommonButton_Icon::HoverTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_Icon, SizeBox_Main) == 0x000760, "Member 'UPyWidget_CommonButton_Icon::SizeBox_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Icon;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv2
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_CommonButton_Lv2 final : public UPyWidget_BaseCommonButton
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv2">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv2")
 	}
 	static class UPyWidget_CommonButton_Lv2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonButton_Lv2>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonButton_Lv2) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv2");
-static_assert(sizeof(UPyWidget_CommonButton_Lv2) == 0x0008C0, "Wrong size on UPyWidget_CommonButton_Lv2");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv2;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_Lv3
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonButton_Lv3 : public UPyWidget_BaseCommonButton
 {
@@ -277,7 +262,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_Lv3">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_Lv3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_Lv3")
 	}
 	static class UPyWidget_CommonButton_Lv3* GetDefaultObj()
 	{
@@ -285,45 +274,42 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonButton_Lv3) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_Lv3");
-static_assert(sizeof(UPyWidget_CommonButton_Lv3) == 0x0008C0, "Wrong size on UPyWidget_CommonButton_Lv3");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_Lv3;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_TeamColor
-// 0x0C18 (0x1340 - 0x0728)
+// 0x0C10 (0x1390 - 0x0780)
 class UPyWidget_CommonButton_TeamColor : public UPyWidget_Button
 {
 public:
-	class UTexture2D*                             IconTexture;                                       // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETeamColorType                                TeamColorType;                                     // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_731[0xF];                                      // 0x0731(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           Team1BtnStyle;                                     // 0x0740(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           Team2BtnStyle;                                     // 0x0B40(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           SpectatorBtnStyle;                                 // 0x0F40(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconTexture;                                       // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETeamColorType                                TeamColorType;                                     // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_789[0x7];                                      // 0x0789(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           Team1BtnStyle;                                     // 0x0790(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           Team2BtnStyle;                                     // 0x0B90(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           SpectatorBtnStyle;                                 // 0x0F90(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_TeamColor">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_TeamColor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_TeamColor")
 	}
 	static class UPyWidget_CommonButton_TeamColor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonButton_TeamColor>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonButton_TeamColor) == 0x000010, "Wrong alignment on UPyWidget_CommonButton_TeamColor");
-static_assert(sizeof(UPyWidget_CommonButton_TeamColor) == 0x001340, "Wrong size on UPyWidget_CommonButton_TeamColor");
-static_assert(offsetof(UPyWidget_CommonButton_TeamColor, IconTexture) == 0x000728, "Member 'UPyWidget_CommonButton_TeamColor::IconTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_TeamColor, TeamColorType) == 0x000730, "Member 'UPyWidget_CommonButton_TeamColor::TeamColorType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_TeamColor, Team1BtnStyle) == 0x000740, "Member 'UPyWidget_CommonButton_TeamColor::Team1BtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_TeamColor, Team2BtnStyle) == 0x000B40, "Member 'UPyWidget_CommonButton_TeamColor::Team2BtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonButton_TeamColor, SpectatorBtnStyle) == 0x000F40, "Member 'UPyWidget_CommonButton_TeamColor::SpectatorBtnStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_TeamColor;
 
 // PythonClass PyWidget_Common_Button.PyWidget_CommonButton_WithHoverTips
-// 0x0018 (0x0740 - 0x0728)
+// 0x0018 (0x0798 - 0x0780)
 class UPyWidget_CommonButton_WithHoverTips : public UPyWidget_Button
 {
 public:
-	class FText                                   HoverTips;                                         // 0x0728(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   HoverTips;                                         // 0x0780(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void SetIsHover(bool IsHover_0);
@@ -332,16 +318,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_WithHoverTips">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_WithHoverTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_WithHoverTips")
 	}
 	static class UPyWidget_CommonButton_WithHoverTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonButton_WithHoverTips>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonButton_WithHoverTips) == 0x000008, "Wrong alignment on UPyWidget_CommonButton_WithHoverTips");
-static_assert(sizeof(UPyWidget_CommonButton_WithHoverTips) == 0x000740, "Wrong size on UPyWidget_CommonButton_WithHoverTips");
-static_assert(offsetof(UPyWidget_CommonButton_WithHoverTips, HoverTips) == 0x000728, "Member 'UPyWidget_CommonButton_WithHoverTips::HoverTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_WithHoverTips;
 
 }
 

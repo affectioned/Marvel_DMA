@@ -21,9 +21,7 @@ struct PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left final
 public:
 	class UAnimNotify*                            Notify;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left) == 0x000008, "Wrong alignment on PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left");
-static_assert(sizeof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left) == 0x000008, "Wrong size on PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left");
-static_assert(offsetof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left, Notify) == 0x000000, "Member 'PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left::Notify' has a wrong offset!");
+DUMPER7_ASSERTS_PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Left;
 
 // PythonFunction PyBenjaminGrimCharacter.PyBenjaminGrimAnimInstance.AnimNotify_DashFootstep_Right
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right final
 public:
 	class UAnimNotify*                            Notify;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right) == 0x000008, "Wrong alignment on PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right");
-static_assert(sizeof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right) == 0x000008, "Wrong size on PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right");
-static_assert(offsetof(PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right, Notify) == 0x000000, "Member 'PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right::Notify' has a wrong offset!");
+DUMPER7_ASSERTS_PyBenjaminGrimAnimInstance_AnimNotify_DashFootstep_Right;
 
 }
 

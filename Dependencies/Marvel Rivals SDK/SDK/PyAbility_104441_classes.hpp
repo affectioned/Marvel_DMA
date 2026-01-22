@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104441.PyConfig_104441
-// 0x0488 (0x0528 - 0x00A0)
+// 0x05C8 (0x0668 - 0x00A0)
 class UPyConfig_104441 final : public UConfig_104441
 {
 public:
@@ -37,38 +37,28 @@ public:
 	TMap<int32, float>                            AttackSpeedupStackNum;                             // 0x0130(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	bool                                          EndRemoveAttackSpeedup;                            // 0x0180(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       AttackSpeedupFilter;                               // 0x0188(0x0398)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         AutoRotateEveryBlade;                              // 0x0520(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BindOnDamageMergedEvent;                           // 0x0524(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       AttackSpeedupFilter;                               // 0x0188(0x04D8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         AutoRotateEveryBlade;                              // 0x0660(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BindOnDamageMergedEvent;                           // 0x0664(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104441">();
+		STATIC_CLASS_IMPL("PyConfig_104441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104441")
 	}
 	static class UPyConfig_104441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104441>();
 	}
 };
-static_assert(alignof(UPyConfig_104441) == 0x000008, "Wrong alignment on UPyConfig_104441");
-static_assert(sizeof(UPyConfig_104441) == 0x000528, "Wrong size on UPyConfig_104441");
-static_assert(offsetof(UPyConfig_104441, VampireBuffID) == 0x0000A0, "Member 'UPyConfig_104441::VampireBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, CancelAbilities) == 0x0000A8, "Member 'UPyConfig_104441::CancelAbilities' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, RegenBuffID) == 0x000110, "Member 'UPyConfig_104441::RegenBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, AttrGainedPerDamage) == 0x000114, "Member 'UPyConfig_104441::AttrGainedPerDamage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, PassRagenFilterTag) == 0x000118, "Member 'UPyConfig_104441::PassRagenFilterTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, HuntLowHpScopeID) == 0x000124, "Member 'UPyConfig_104441::HuntLowHpScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, HuntLowHpPercent) == 0x000128, "Member 'UPyConfig_104441::HuntLowHpPercent' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, AttackSpeedupBuffID) == 0x00012C, "Member 'UPyConfig_104441::AttackSpeedupBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, AttackSpeedupStackNum) == 0x000130, "Member 'UPyConfig_104441::AttackSpeedupStackNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, EndRemoveAttackSpeedup) == 0x000180, "Member 'UPyConfig_104441::EndRemoveAttackSpeedup' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, AttackSpeedupFilter) == 0x000188, "Member 'UPyConfig_104441::AttackSpeedupFilter' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, AutoRotateEveryBlade) == 0x000520, "Member 'UPyConfig_104441::AutoRotateEveryBlade' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104441, BindOnDamageMergedEvent) == 0x000524, "Member 'UPyConfig_104441::BindOnDamageMergedEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104441;
 
 // PythonClass PyAbility_104441.PyAbility_104441
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104441 : public UAbility_104441
 {
 public:
@@ -86,28 +76,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104441">();
+		STATIC_CLASS_IMPL("PyAbility_104441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104441")
 	}
 	static class UPyAbility_104441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104441>();
 	}
 };
-static_assert(alignof(UPyAbility_104441) == 0x000008, "Wrong alignment on UPyAbility_104441");
-static_assert(sizeof(UPyAbility_104441) == 0x0029F8, "Wrong size on UPyAbility_104441");
+DUMPER7_ASSERTS_UPyAbility_104441;
 
 // PythonClass PyAbility_104441.PyCue_Ability_Loop_10444102
-// 0x0040 (0x0FD0 - 0x0F90)
+// 0x0040 (0x0FE0 - 0x0FA0)
 class APyCue_Ability_Loop_10444102 final : public AMarvelCueNotify_Actor
 {
 public:
-	uint8                                         Pad_F88[0x8];                                      // 0x0F88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         LifeStealFX;                                       // 0x0F90(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLifeStealFXCombine;                               // 0x0F98(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F99[0x7];                                      // 0x0F99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LifeStealOffset;                                   // 0x0FA0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   BladeSocketName;                                   // 0x0FB8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LifeStealAudioID;                                  // 0x0FC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F98[0x8];                                      // 0x0F98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         LifeStealFX;                                       // 0x0FA0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLifeStealFXCombine;                               // 0x0FA8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FA9[0x7];                                      // 0x0FA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LifeStealOffset;                                   // 0x0FB0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BladeSocketName;                                   // 0x0FC8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LifeStealAudioID;                                  // 0x0FD4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -117,23 +110,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10444102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10444102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10444102")
 	}
 	static class APyCue_Ability_Loop_10444102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10444102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10444102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10444102");
-static_assert(sizeof(APyCue_Ability_Loop_10444102) == 0x000FD0, "Wrong size on APyCue_Ability_Loop_10444102");
-static_assert(offsetof(APyCue_Ability_Loop_10444102, LifeStealFX) == 0x000F90, "Member 'APyCue_Ability_Loop_10444102::LifeStealFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10444102, bLifeStealFXCombine) == 0x000F98, "Member 'APyCue_Ability_Loop_10444102::bLifeStealFXCombine' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10444102, LifeStealOffset) == 0x000FA0, "Member 'APyCue_Ability_Loop_10444102::LifeStealOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10444102, BladeSocketName) == 0x000FB8, "Member 'APyCue_Ability_Loop_10444102::BladeSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10444102, LifeStealAudioID) == 0x000FC4, "Member 'APyCue_Ability_Loop_10444102::LifeStealAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10444102;
 
 // PythonClass PyAbility_104441.PyTraceComponent_10444101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10444101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -144,18 +135,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10444101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10444101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10444101")
 	}
 	static class UPyTraceComponent_10444101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10444101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10444101) == 0x000010, "Wrong alignment on UPyTraceComponent_10444101");
-static_assert(sizeof(UPyTraceComponent_10444101) == 0x002200, "Wrong size on UPyTraceComponent_10444101");
+DUMPER7_ASSERTS_UPyTraceComponent_10444101;
 
 // PythonClass PyAbility_104441.PyUIController_104441
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104441 final : public UUIC_Ability
 {
 public:
@@ -165,24 +159,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104441">();
+		STATIC_CLASS_IMPL("PyUIController_104441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104441")
 	}
 	static class UPyUIController_104441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104441>();
 	}
 };
-static_assert(alignof(UPyUIController_104441) == 0x000008, "Wrong alignment on UPyUIController_104441");
-static_assert(sizeof(UPyUIController_104441) == 0x000F10, "Wrong size on UPyUIController_104441");
+DUMPER7_ASSERTS_UPyUIController_104441;
 
 // PythonClass PyAbility_104441.PyCue_Ability_HitImpact_10444102
-// 0x0028 (0x05F0 - 0x05C8)
+// 0x0028 (0x0610 - 0x05E8)
 class UPyCue_Ability_HitImpact_10444102 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	class FName                                   BladeSocketName;                                   // 0x05C8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LifeStealOffset;                                   // 0x05D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BladeSocketName;                                   // 0x05E8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F4[0x4];                                      // 0x05F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LifeStealOffset;                                   // 0x05F8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -190,26 +187,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_HitImpact_10444102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_HitImpact_10444102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_HitImpact_10444102")
 	}
 	static class UPyCue_Ability_HitImpact_10444102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_HitImpact_10444102>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_HitImpact_10444102) == 0x000008, "Wrong alignment on UPyCue_Ability_HitImpact_10444102");
-static_assert(sizeof(UPyCue_Ability_HitImpact_10444102) == 0x0005F0, "Wrong size on UPyCue_Ability_HitImpact_10444102");
-static_assert(offsetof(UPyCue_Ability_HitImpact_10444102, BladeSocketName) == 0x0005C8, "Member 'UPyCue_Ability_HitImpact_10444102::BladeSocketName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_HitImpact_10444102, LifeStealOffset) == 0x0005D8, "Member 'UPyCue_Ability_HitImpact_10444102::LifeStealOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_HitImpact_10444102;
 
 // PythonClass PyAbility_104441.PyCue_Ability_Loop_10444101
-// 0x0020 (0x0FB0 - 0x0F90)
+// 0x0020 (0x0FC0 - 0x0FA0)
 class APyCue_Ability_Loop_10444101 final : public AMarvelCueNotify_Actor
 {
 public:
-	uint8                                         Pad_F88[0x8];                                      // 0x0F88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      SwordNiagara;                                      // 0x0F90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SwordSocket;                                       // 0x0F98(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F98[0x8];                                      // 0x0F98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      SwordNiagara;                                      // 0x0FA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SwordSocket;                                       // 0x0FA8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -219,20 +217,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10444101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10444101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10444101")
 	}
 	static class APyCue_Ability_Loop_10444101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10444101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10444101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10444101");
-static_assert(sizeof(APyCue_Ability_Loop_10444101) == 0x000FB0, "Wrong size on APyCue_Ability_Loop_10444101");
-static_assert(offsetof(APyCue_Ability_Loop_10444101, SwordNiagara) == 0x000F90, "Member 'APyCue_Ability_Loop_10444101::SwordNiagara' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10444101, SwordSocket) == 0x000F98, "Member 'APyCue_Ability_Loop_10444101::SwordSocket' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10444101;
 
 // PythonClass PyAbility_104441.PyWidget_Extra_104441
-// 0x0000 (0x0620 - 0x0620)
+// 0x0000 (0x0628 - 0x0628)
 class UPyWidget_Extra_104441 final : public UWidget_AbilityStatus_Base
 {
 public:
@@ -244,15 +243,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Extra_104441">();
+		STATIC_CLASS_IMPL("PyWidget_Extra_104441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Extra_104441")
 	}
 	static class UPyWidget_Extra_104441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Extra_104441>();
 	}
 };
-static_assert(alignof(UPyWidget_Extra_104441) == 0x000008, "Wrong alignment on UPyWidget_Extra_104441");
-static_assert(sizeof(UPyWidget_Extra_104441) == 0x000620, "Wrong size on UPyWidget_Extra_104441");
+DUMPER7_ASSERTS_UPyWidget_Extra_104441;
 
 // PythonClass PyAbility_104441.PyCue_Ability_Instant_104441
 // 0x0010 (0x03D0 - 0x03C0)
@@ -268,16 +270,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_104441">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_104441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_104441")
 	}
 	static class UPyCue_Ability_Instant_104441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_104441>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_104441) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_104441");
-static_assert(sizeof(UPyCue_Ability_Instant_104441) == 0x0003D0, "Wrong size on UPyCue_Ability_Instant_104441");
-static_assert(offsetof(UPyCue_Ability_Instant_104441, NiagaraInfoArray) == 0x0003C0, "Member 'UPyCue_Ability_Instant_104441::NiagaraInfoArray' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_104441;
 
 }
 

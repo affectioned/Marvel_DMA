@@ -128,7 +128,7 @@ void UPyBuffAbility_120_10266191::OnAbilityActivate(int32 AbilityID)
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // class UGameplayAbility*                 Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPyBuffAbility_120_10266191::OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -245,7 +245,7 @@ void UPyBuffAbility_120_10266192::OnAbilityActivate(int32 AbilityID)
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // class UGameplayAbility*                 Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPyBuffAbility_120_10266192::OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)

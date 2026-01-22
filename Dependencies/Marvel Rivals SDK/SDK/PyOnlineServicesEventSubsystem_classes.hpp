@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOnlineServicesEventSubsystem">();
+		STATIC_CLASS_IMPL("PyOnlineServicesEventSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOnlineServicesEventSubsystem")
 	}
 	static class UPyOnlineServicesEventSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyOnlineServicesEventSubsystem>();
 	}
 };
-static_assert(alignof(UPyOnlineServicesEventSubsystem) == 0x000008, "Wrong alignment on UPyOnlineServicesEventSubsystem");
-static_assert(sizeof(UPyOnlineServicesEventSubsystem) == 0x000080, "Wrong size on UPyOnlineServicesEventSubsystem");
+DUMPER7_ASSERTS_UPyOnlineServicesEventSubsystem;
 
 }
 

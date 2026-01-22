@@ -21,9 +21,7 @@ struct PyLoginPanelV3_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLoginPanelV3_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyLoginPanelV3_OnCascadingVisibleChanged");
-static_assert(sizeof(PyLoginPanelV3_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyLoginPanelV3_OnCascadingVisibleChanged");
-static_assert(offsetof(PyLoginPanelV3_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyLoginPanelV3_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLoginPanelV3_OnCascadingVisibleChanged;
 
 // PythonFunction PyLoginPanelV3.PyLoginPanelV3.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyLoginPanelV3_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLoginPanelV3_OnAnimationFinished) == 0x000008, "Wrong alignment on PyLoginPanelV3_OnAnimationFinished");
-static_assert(sizeof(PyLoginPanelV3_OnAnimationFinished) == 0x000008, "Wrong size on PyLoginPanelV3_OnAnimationFinished");
-static_assert(offsetof(PyLoginPanelV3_OnAnimationFinished, Animation) == 0x000000, "Member 'PyLoginPanelV3_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyLoginPanelV3_OnAnimationFinished;
 
 // PythonFunction PyLoginPanelV3.PyLoginPanelV3.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyLoginPanelV3_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLoginPanelV3_OnAnimationStarted) == 0x000008, "Wrong alignment on PyLoginPanelV3_OnAnimationStarted");
-static_assert(sizeof(PyLoginPanelV3_OnAnimationStarted) == 0x000008, "Wrong size on PyLoginPanelV3_OnAnimationStarted");
-static_assert(offsetof(PyLoginPanelV3_OnAnimationStarted, Animation) == 0x000000, "Member 'PyLoginPanelV3_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyLoginPanelV3_OnAnimationStarted;
 
 }
 

@@ -26,13 +26,7 @@ public:
 	bool                                          IsAdditionSpeed;                                   // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsBpCurrency;                                      // 0x0029(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPyWidget_BattlePass_RewardItemStruct) == 0x000008, "Wrong alignment on FPyWidget_BattlePass_RewardItemStruct");
-static_assert(sizeof(FPyWidget_BattlePass_RewardItemStruct) == 0x000030, "Wrong size on FPyWidget_BattlePass_RewardItemStruct");
-static_assert(offsetof(FPyWidget_BattlePass_RewardItemStruct, ItemTexture) == 0x000000, "Member 'FPyWidget_BattlePass_RewardItemStruct::ItemTexture' has a wrong offset!");
-static_assert(offsetof(FPyWidget_BattlePass_RewardItemStruct, ItemCnt) == 0x000008, "Member 'FPyWidget_BattlePass_RewardItemStruct::ItemCnt' has a wrong offset!");
-static_assert(offsetof(FPyWidget_BattlePass_RewardItemStruct, ItemName) == 0x000010, "Member 'FPyWidget_BattlePass_RewardItemStruct::ItemName' has a wrong offset!");
-static_assert(offsetof(FPyWidget_BattlePass_RewardItemStruct, IsAdditionSpeed) == 0x000028, "Member 'FPyWidget_BattlePass_RewardItemStruct::IsAdditionSpeed' has a wrong offset!");
-static_assert(offsetof(FPyWidget_BattlePass_RewardItemStruct, IsBpCurrency) == 0x000029, "Member 'FPyWidget_BattlePass_RewardItemStruct::IsBpCurrency' has a wrong offset!");
+DUMPER7_ASSERTS_FPyWidget_BattlePass_RewardItemStruct;
 
 }
 

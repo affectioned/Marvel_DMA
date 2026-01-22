@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SummoneComp_10475401_BP.SummoneComp_10475401_BP_C
-// 0x0000 (0x0DE0 - 0x0DE0)
+// 0x0000 (0x0E38 - 0x0E38)
 class USummoneComp_10475401_BP_C final : public UPySummonedComp_10475131
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SummoneComp_10475401_BP_C">();
+		BP_STATIC_CLASS_IMPL("SummoneComp_10475401_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SummoneComp_10475401_BP_C")
 	}
 	static class USummoneComp_10475401_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USummoneComp_10475401_BP_C>();
 	}
 };
-static_assert(alignof(USummoneComp_10475401_BP_C) == 0x000008, "Wrong alignment on USummoneComp_10475401_BP_C");
-static_assert(sizeof(USummoneComp_10475401_BP_C) == 0x000DE0, "Wrong size on USummoneComp_10475401_BP_C");
+DUMPER7_ASSERTS_USummoneComp_10475401_BP_C;
 
 }
 

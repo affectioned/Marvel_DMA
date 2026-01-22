@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PopupAd_Base.PyWidget_PopupAd_Base
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_PopupAd_Base : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          KeyMainAudio;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          KeyMainAudio;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PopupAd_Base">();
+		STATIC_CLASS_IMPL("PyWidget_PopupAd_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PopupAd_Base")
 	}
 	static class UPyWidget_PopupAd_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PopupAd_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_PopupAd_Base) == 0x000008, "Wrong alignment on UPyWidget_PopupAd_Base");
-static_assert(sizeof(UPyWidget_PopupAd_Base) == 0x000600, "Wrong size on UPyWidget_PopupAd_Base");
-static_assert(offsetof(UPyWidget_PopupAd_Base, KeyMainAudio) == 0x0005F8, "Member 'UPyWidget_PopupAd_Base::KeyMainAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PopupAd_Base;
 
 }
 

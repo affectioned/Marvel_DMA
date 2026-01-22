@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_BgBlur.PyWidget_Common_BgBlur
-// 0x00D8 (0x0530 - 0x0458)
+// 0x00D8 (0x0510 - 0x0438)
 class UPyWidget_Common_BgBlur final : public UMarvelSimpleUserWidget
 {
 public:
-	uint8                                         Pad_458[0x8];                                      // 0x0458(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Texture;                                           // 0x0460(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_438[0x8];                                      // 0x0438(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Texture;                                           // 0x0440(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_BgBlur">();
+		STATIC_CLASS_IMPL("PyWidget_Common_BgBlur")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_BgBlur")
 	}
 	static class UPyWidget_Common_BgBlur* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_BgBlur>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_BgBlur) == 0x000010, "Wrong alignment on UPyWidget_Common_BgBlur");
-static_assert(sizeof(UPyWidget_Common_BgBlur) == 0x000530, "Wrong size on UPyWidget_Common_BgBlur");
-static_assert(offsetof(UPyWidget_Common_BgBlur, Texture) == 0x000460, "Member 'UPyWidget_Common_BgBlur::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_BgBlur;
 
 }
 

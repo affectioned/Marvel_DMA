@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_TabMenuBase.PyWidget_TabMenuBase
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_TabMenuBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUserWidget*>                    ChildBtnList;                                      // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         TabID;                                             // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsVisible_PyWidget_TabMenuBase;                    // 0x05D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAutomaticallyCreateBtns;                         // 0x05D5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D6[0x2];                                      // 0x05D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnSwitch;                                  // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                MenuPadding;                                       // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 TabID)>   OnSwitchTab;                                       // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UUserWidget*>                    ChildBtnList;                                      // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         TabID;                                             // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsVisible_PyWidget_TabMenuBase;                    // 0x05DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAutomaticallyCreateBtns;                         // 0x05DD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DE[0x2];                                      // 0x05DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnSwitch;                                  // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                MenuPadding;                                       // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TabID)>   OnSwitchTab;                                       // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -43,22 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_TabMenuBase">();
+		STATIC_CLASS_IMPL("PyWidget_TabMenuBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_TabMenuBase")
 	}
 	static class UPyWidget_TabMenuBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_TabMenuBase>();
 	}
 };
-static_assert(alignof(UPyWidget_TabMenuBase) == 0x000008, "Wrong alignment on UPyWidget_TabMenuBase");
-static_assert(sizeof(UPyWidget_TabMenuBase) == 0x000600, "Wrong size on UPyWidget_TabMenuBase");
-static_assert(offsetof(UPyWidget_TabMenuBase, ChildBtnList) == 0x0005C0, "Member 'UPyWidget_TabMenuBase::ChildBtnList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, TabID) == 0x0005D0, "Member 'UPyWidget_TabMenuBase::TabID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, IsVisible_PyWidget_TabMenuBase) == 0x0005D4, "Member 'UPyWidget_TabMenuBase::IsVisible_PyWidget_TabMenuBase' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, IsAutomaticallyCreateBtns) == 0x0005D5, "Member 'UPyWidget_TabMenuBase::IsAutomaticallyCreateBtns' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, AkEvent_OnSwitch) == 0x0005D8, "Member 'UPyWidget_TabMenuBase::AkEvent_OnSwitch' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, MenuPadding) == 0x0005E0, "Member 'UPyWidget_TabMenuBase::MenuPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TabMenuBase, OnSwitchTab) == 0x0005F0, "Member 'UPyWidget_TabMenuBase::OnSwitchTab' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_TabMenuBase;
 
 }
 

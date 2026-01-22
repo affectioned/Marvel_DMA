@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Career_HomeVideo_Detail.PyWidget_Career_HomeVideo_Detail
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Career_HomeVideo_Detail final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                AppreciateTips;                                    // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciateTips;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_HomeVideo_Detail">();
+		STATIC_CLASS_IMPL("PyWidget_Career_HomeVideo_Detail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_HomeVideo_Detail")
 	}
 	static class UPyWidget_Career_HomeVideo_Detail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_HomeVideo_Detail>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_HomeVideo_Detail) == 0x000008, "Wrong alignment on UPyWidget_Career_HomeVideo_Detail");
-static_assert(sizeof(UPyWidget_Career_HomeVideo_Detail) == 0x000608, "Wrong size on UPyWidget_Career_HomeVideo_Detail");
-static_assert(offsetof(UPyWidget_Career_HomeVideo_Detail, AppreciateTips) == 0x0005F8, "Member 'UPyWidget_Career_HomeVideo_Detail::AppreciateTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Career_HomeVideo_Detail;
 
 }
 

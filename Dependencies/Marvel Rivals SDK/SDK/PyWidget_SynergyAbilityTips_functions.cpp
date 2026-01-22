@@ -80,69 +80,6 @@ void UPyWidget_SynergyAbilityTips::OnAnimationFinished(const class UWidgetAnimat
 }
 
 
-// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_SynergyAbilityTips_Popups::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SynergyAbilityTips_Popups", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnHeadPictureLoadCompleted
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_SynergyAbilityTips_Popups::OnHeadPictureLoadCompleted(class UTexture2D* Picture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SynergyAbilityTips_Popups", "OnHeadPictureLoadCompleted");
-
-	Params::PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted Parms{};
-
-	Parms.Picture = Picture;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_ReplaySynergyAbilityTips_Popups.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_ReplaySynergyAbilityTips_Popups::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ReplaySynergyAbilityTips_Popups", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTipsPanel.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -285,6 +222,50 @@ void UPyWidget_SynergyAbilityTipsPanel::OnBondsStateChanged(const struct FBondIn
 }
 
 
+// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_SynergyAbilityTips_Popups::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SynergyAbilityTips_Popups", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnHeadPictureLoadCompleted
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_SynergyAbilityTips_Popups::OnHeadPictureLoadCompleted(class UTexture2D* Picture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SynergyAbilityTips_Popups", "OnHeadPictureLoadCompleted");
+
+	Params::PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted Parms{};
+
+	Parms.Picture = Picture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_FullScreen.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -395,6 +376,25 @@ void UPyWidget_ReplaySynergyAbilityTipsPanel::OnBondStateChanged(const struct FB
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_ReplaySynergyAbilityTips_Popups.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_ReplaySynergyAbilityTips_Popups::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_ReplaySynergyAbilityTips_Popups", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

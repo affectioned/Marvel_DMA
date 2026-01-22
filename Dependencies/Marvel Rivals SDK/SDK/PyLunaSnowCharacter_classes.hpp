@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyLunaSnowCharacter.PyLunaSnowChildActor
-// 0x0000 (0x0E20 - 0x0E20)
+// 0x0000 (0x0E30 - 0x0E30)
 class APyLunaSnowChildActor : public AMarvelCharacterChildActor
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLunaSnowChildActor">();
+		STATIC_CLASS_IMPL("PyLunaSnowChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLunaSnowChildActor")
 	}
 	static class APyLunaSnowChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLunaSnowChildActor>();
 	}
 };
-static_assert(alignof(APyLunaSnowChildActor) == 0x000010, "Wrong alignment on APyLunaSnowChildActor");
-static_assert(sizeof(APyLunaSnowChildActor) == 0x000E20, "Wrong size on APyLunaSnowChildActor");
+DUMPER7_ASSERTS_APyLunaSnowChildActor;
 
 }
 

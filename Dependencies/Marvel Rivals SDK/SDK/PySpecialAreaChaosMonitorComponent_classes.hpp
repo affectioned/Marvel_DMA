@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaChaosMonitorComponent">();
+		STATIC_CLASS_IMPL("PySpecialAreaChaosMonitorComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaChaosMonitorComponent")
 	}
 	static class UPySpecialAreaChaosMonitorComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpecialAreaChaosMonitorComponent>();
 	}
 };
-static_assert(alignof(UPySpecialAreaChaosMonitorComponent) == 0x000008, "Wrong alignment on UPySpecialAreaChaosMonitorComponent");
-static_assert(sizeof(UPySpecialAreaChaosMonitorComponent) == 0x000148, "Wrong size on UPySpecialAreaChaosMonitorComponent");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, DesMgrTag) == 0x000108, "Member 'UPySpecialAreaChaosMonitorComponent::DesMgrTag' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, bThresholdToggle) == 0x000118, "Member 'UPySpecialAreaChaosMonitorComponent::bThresholdToggle' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, Threshold) == 0x00011C, "Member 'UPySpecialAreaChaosMonitorComponent::Threshold' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, Delta) == 0x000120, "Member 'UPySpecialAreaChaosMonitorComponent::Delta' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, TriggerCount) == 0x000124, "Member 'UPySpecialAreaChaosMonitorComponent::TriggerCount' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, OnTriggered) == 0x000128, "Member 'UPySpecialAreaChaosMonitorComponent::OnTriggered' has a wrong offset!");
-static_assert(offsetof(UPySpecialAreaChaosMonitorComponent, OnDegreeIncreasing) == 0x000138, "Member 'UPySpecialAreaChaosMonitorComponent::OnDegreeIncreasing' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpecialAreaChaosMonitorComponent;
 
 }
 

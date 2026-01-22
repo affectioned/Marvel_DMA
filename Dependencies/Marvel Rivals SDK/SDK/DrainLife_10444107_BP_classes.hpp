@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1049_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass DrainLife_10444107_BP.DrainLife_10444107_BP_C
-// 0x0000 (0x1718 - 0x1718)
+// 0x0000 (0x1870 - 0x1870)
 class UDrainLife_10444107_BP_C final : public UMarvelDrainLifeEffectAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DrainLife_10444107_BP_C">();
+		BP_STATIC_CLASS_IMPL("DrainLife_10444107_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DrainLife_10444107_BP_C")
 	}
 	static class UDrainLife_10444107_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDrainLife_10444107_BP_C>();
 	}
 };
-static_assert(alignof(UDrainLife_10444107_BP_C) == 0x000008, "Wrong alignment on UDrainLife_10444107_BP_C");
-static_assert(sizeof(UDrainLife_10444107_BP_C) == 0x001718, "Wrong size on UDrainLife_10444107_BP_C");
+DUMPER7_ASSERTS_UDrainLife_10444107_BP_C;
 
 }
 

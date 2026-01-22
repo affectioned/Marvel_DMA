@@ -66,16 +66,6 @@ enum class EInstanceUserFlags : uint8
 	EInstanceUserFlags_MAX                   = 17,
 };
 
-// ScriptStruct Skelot.SkelotInstancesData
-// 0x00C0 (0x00C0 - 0x0000)
-struct alignas(0x08) FSkelotInstancesData final
-{
-public:
-	uint8                                         Pad_0[0xC0];                                       // 0x0000(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSkelotInstancesData) == 0x000008, "Wrong alignment on FSkelotInstancesData");
-static_assert(sizeof(FSkelotInstancesData) == 0x0000C0, "Wrong size on FSkelotInstancesData");
-
 // ScriptStruct Skelot.SkelotAnimFinishEvent
 // 0x0010 (0x0010 - 0x0000)
 struct FSkelotAnimFinishEvent final
@@ -85,10 +75,18 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      AnimSequence;                                      // 0x0008(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSkelotAnimFinishEvent) == 0x000008, "Wrong alignment on FSkelotAnimFinishEvent");
-static_assert(sizeof(FSkelotAnimFinishEvent) == 0x000010, "Wrong size on FSkelotAnimFinishEvent");
-static_assert(offsetof(FSkelotAnimFinishEvent, InstanceIndex) == 0x000000, "Member 'FSkelotAnimFinishEvent::InstanceIndex' has a wrong offset!");
-static_assert(offsetof(FSkelotAnimFinishEvent, AnimSequence) == 0x000008, "Member 'FSkelotAnimFinishEvent::AnimSequence' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotAnimFinishEvent;
+
+// ScriptStruct Skelot.SkelotDynInsTieData
+// 0x0010 (0x0010 - 0x0000)
+struct FSkelotDynInsTieData final
+{
+public:
+	class USkeletalMeshComponent*                 MeshComponent;                                     // 0x0000(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InstanceIndex;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UserData;                                          // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSkelotDynInsTieData;
 
 // ScriptStruct Skelot.SkelotAnimNotifyEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -101,11 +99,7 @@ public:
 	class FName                                   NotifyName;                                        // 0x0010(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotAnimNotifyEvent) == 0x000008, "Wrong alignment on FSkelotAnimNotifyEvent");
-static_assert(sizeof(FSkelotAnimNotifyEvent) == 0x000020, "Wrong size on FSkelotAnimNotifyEvent");
-static_assert(offsetof(FSkelotAnimNotifyEvent, InstanceIndex) == 0x000000, "Member 'FSkelotAnimNotifyEvent::InstanceIndex' has a wrong offset!");
-static_assert(offsetof(FSkelotAnimNotifyEvent, AnimSequence) == 0x000008, "Member 'FSkelotAnimNotifyEvent::AnimSequence' has a wrong offset!");
-static_assert(offsetof(FSkelotAnimNotifyEvent, NotifyName) == 0x000010, "Member 'FSkelotAnimNotifyEvent::NotifyName' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotAnimNotifyEvent;
 
 // ScriptStruct Skelot.SkelotSequenceDef
 // 0x0120 (0x0120 - 0x0000)
@@ -118,12 +112,7 @@ public:
 	int32                                         AnimationFrameCount;                               // 0x0010(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x10C];                                     // 0x0014(0x010C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotSequenceDef) == 0x000008, "Wrong alignment on FSkelotSequenceDef");
-static_assert(sizeof(FSkelotSequenceDef) == 0x000120, "Wrong size on FSkelotSequenceDef");
-static_assert(offsetof(FSkelotSequenceDef, Sequence) == 0x000000, "Member 'FSkelotSequenceDef::Sequence' has a wrong offset!");
-static_assert(offsetof(FSkelotSequenceDef, SampleFrequency) == 0x000008, "Member 'FSkelotSequenceDef::SampleFrequency' has a wrong offset!");
-static_assert(offsetof(FSkelotSequenceDef, AnimationFrameIndex) == 0x00000C, "Member 'FSkelotSequenceDef::AnimationFrameIndex' has a wrong offset!");
-static_assert(offsetof(FSkelotSequenceDef, AnimationFrameCount) == 0x000010, "Member 'FSkelotSequenceDef::AnimationFrameCount' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotSequenceDef;
 
 // ScriptStruct Skelot.SkelotMeshDef
 // 0x00A0 (0x00A0 - 0x0000)
@@ -137,12 +126,7 @@ public:
 	struct FVector3f                              BoundExtent;                                       // 0x000C(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x88];                                      // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotMeshDef) == 0x000010, "Wrong alignment on FSkelotMeshDef");
-static_assert(sizeof(FSkelotMeshDef) == 0x0000A0, "Wrong size on FSkelotMeshDef");
-static_assert(offsetof(FSkelotMeshDef, Mesh) == 0x000000, "Member 'FSkelotMeshDef::Mesh' has a wrong offset!");
-static_assert(offsetof(FSkelotMeshDef, BaseLOD) == 0x000008, "Member 'FSkelotMeshDef::BaseLOD' has a wrong offset!");
-static_assert(offsetof(FSkelotMeshDef, OwningBoundMeshIndex) == 0x000009, "Member 'FSkelotMeshDef::OwningBoundMeshIndex' has a wrong offset!");
-static_assert(offsetof(FSkelotMeshDef, BoundExtent) == 0x00000C, "Member 'FSkelotMeshDef::BoundExtent' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotMeshDef;
 
 // ScriptStruct Skelot.SkelotAnimData
 // 0x0008 (0x0008 - 0x0000)
@@ -151,8 +135,7 @@ struct alignas(0x08) FSkelotAnimData
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotAnimData) == 0x000008, "Wrong alignment on FSkelotAnimData");
-static_assert(sizeof(FSkelotAnimData) == 0x000008, "Wrong size on FSkelotAnimData");
+DUMPER7_ASSERTS_FSkelotAnimData;
 
 // ScriptStruct Skelot.SkelotInstanceAnimState
 // 0x000C (0x000C - 0x0000)
@@ -164,27 +147,16 @@ public:
 	uint16                                        CurrentSequence;                                   // 0x0008(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                        TransitionIndex;                                   // 0x000A(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSkelotInstanceAnimState) == 0x000004, "Wrong alignment on FSkelotInstanceAnimState");
-static_assert(sizeof(FSkelotInstanceAnimState) == 0x00000C, "Wrong size on FSkelotInstanceAnimState");
-static_assert(offsetof(FSkelotInstanceAnimState, Time) == 0x000000, "Member 'FSkelotInstanceAnimState::Time' has a wrong offset!");
-static_assert(offsetof(FSkelotInstanceAnimState, PlayScale) == 0x000004, "Member 'FSkelotInstanceAnimState::PlayScale' has a wrong offset!");
-static_assert(offsetof(FSkelotInstanceAnimState, CurrentSequence) == 0x000008, "Member 'FSkelotInstanceAnimState::CurrentSequence' has a wrong offset!");
-static_assert(offsetof(FSkelotInstanceAnimState, TransitionIndex) == 0x00000A, "Member 'FSkelotInstanceAnimState::TransitionIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotInstanceAnimState;
 
-// ScriptStruct Skelot.SkelotDynInsTieData
-// 0x0010 (0x0010 - 0x0000)
-struct FSkelotDynInsTieData final
+// ScriptStruct Skelot.SkelotInstancesData
+// 0x00C0 (0x00C0 - 0x0000)
+struct alignas(0x08) FSkelotInstancesData final
 {
 public:
-	class USkeletalMeshComponent*                 MeshComponent;                                     // 0x0000(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InstanceIndex;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UserData;                                          // 0x000C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0xC0];                                       // 0x0000(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotDynInsTieData) == 0x000008, "Wrong alignment on FSkelotDynInsTieData");
-static_assert(sizeof(FSkelotDynInsTieData) == 0x000010, "Wrong size on FSkelotDynInsTieData");
-static_assert(offsetof(FSkelotDynInsTieData, MeshComponent) == 0x000000, "Member 'FSkelotDynInsTieData::MeshComponent' has a wrong offset!");
-static_assert(offsetof(FSkelotDynInsTieData, InstanceIndex) == 0x000008, "Member 'FSkelotDynInsTieData::InstanceIndex' has a wrong offset!");
-static_assert(offsetof(FSkelotDynInsTieData, UserData) == 0x00000C, "Member 'FSkelotDynInsTieData::UserData' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotInstancesData;
 
 // ScriptStruct Skelot.SkelotSubmeshSlot
 // 0x0030 (0x0030 - 0x0000)
@@ -200,14 +172,7 @@ public:
 	uint8                                         MinLODIndex;                                       // 0x002C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotSubmeshSlot) == 0x000008, "Wrong alignment on FSkelotSubmeshSlot");
-static_assert(sizeof(FSkelotSubmeshSlot) == 0x000030, "Wrong size on FSkelotSubmeshSlot");
-static_assert(offsetof(FSkelotSubmeshSlot, SkeletalMesh) == 0x000000, "Member 'FSkelotSubmeshSlot::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(FSkelotSubmeshSlot, Name) == 0x000008, "Member 'FSkelotSubmeshSlot::Name' has a wrong offset!");
-static_assert(offsetof(FSkelotSubmeshSlot, MaxDrawDistance) == 0x000014, "Member 'FSkelotSubmeshSlot::MaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(FSkelotSubmeshSlot, OverrideDistance) == 0x000018, "Member 'FSkelotSubmeshSlot::OverrideDistance' has a wrong offset!");
-static_assert(offsetof(FSkelotSubmeshSlot, OverrideSubmeshName) == 0x00001C, "Member 'FSkelotSubmeshSlot::OverrideSubmeshName' has a wrong offset!");
-static_assert(offsetof(FSkelotSubmeshSlot, MinLODIndex) == 0x00002C, "Member 'FSkelotSubmeshSlot::MinLODIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FSkelotSubmeshSlot;
 
 // ScriptStruct Skelot.SkelotComponentInstanceData
 // 0x01A0 (0x02D0 - 0x0130)
@@ -216,8 +181,7 @@ struct FSkelotComponentInstanceData final : public FPrimitiveComponentInstanceDa
 public:
 	uint8                                         Pad_130[0x1A0];                                    // 0x0130(0x01A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSkelotComponentInstanceData) == 0x000010, "Wrong alignment on FSkelotComponentInstanceData");
-static_assert(sizeof(FSkelotComponentInstanceData) == 0x0002D0, "Wrong size on FSkelotComponentInstanceData");
+DUMPER7_ASSERTS_FSkelotComponentInstanceData;
 
 }
 

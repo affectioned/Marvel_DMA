@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "PyRuleComponent_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
@@ -77,16 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModularRuleComponent">();
+		STATIC_CLASS_IMPL("PyModularRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModularRuleComponent")
 	}
 	static class UPyModularRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyModularRuleComponent>();
 	}
 };
-static_assert(alignof(UPyModularRuleComponent) == 0x000008, "Wrong alignment on UPyModularRuleComponent");
-static_assert(sizeof(UPyModularRuleComponent) == 0x000110, "Wrong size on UPyModularRuleComponent");
-static_assert(offsetof(UPyModularRuleComponent, HeroSelectType) == 0x000108, "Member 'UPyModularRuleComponent::HeroSelectType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyModularRuleComponent;
 
 }
 

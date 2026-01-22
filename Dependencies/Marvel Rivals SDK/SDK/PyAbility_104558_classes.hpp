@@ -10,42 +10,42 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104558.PyConfig_104558
-// 0x1678 (0x1710 - 0x0098)
+// 0x19C8 (0x1A60 - 0x0098)
 class UPyConfig_104558 final : public UMarvelAbilityConfig
 {
 public:
 	float                                         MaxShootAngle;                                     // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             EnemyTraceContext;                                 // 0x00A0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BerserkTag;                                        // 0x1700(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             EnemyTraceContext;                                 // 0x00A0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BerserkTag;                                        // 0x1A50(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104558">();
+		STATIC_CLASS_IMPL("PyConfig_104558")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104558")
 	}
 	static class UPyConfig_104558* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104558>();
 	}
 };
-static_assert(alignof(UPyConfig_104558) == 0x000010, "Wrong alignment on UPyConfig_104558");
-static_assert(sizeof(UPyConfig_104558) == 0x001710, "Wrong size on UPyConfig_104558");
-static_assert(offsetof(UPyConfig_104558, MaxShootAngle) == 0x000098, "Member 'UPyConfig_104558::MaxShootAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104558, EnemyTraceContext) == 0x0000A0, "Member 'UPyConfig_104558::EnemyTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104558, BerserkTag) == 0x001700, "Member 'UPyConfig_104558::BerserkTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104558;
 
 // PythonClass PyAbility_104558.PyAbility_104558
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104558 : public UAbility_108
 {
 public:
@@ -65,15 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104558">();
+		STATIC_CLASS_IMPL("PyAbility_104558")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104558")
 	}
 	static class UPyAbility_104558* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104558>();
 	}
 };
-static_assert(alignof(UPyAbility_104558) == 0x000008, "Wrong alignment on UPyAbility_104558");
-static_assert(sizeof(UPyAbility_104558) == 0x0029F8, "Wrong size on UPyAbility_104558");
+DUMPER7_ASSERTS_UPyAbility_104558;
 
 }
 

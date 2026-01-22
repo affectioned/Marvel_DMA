@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Secondary_MissionPanel.WBP_Secondary_MissionPanel_C
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UWBP_Secondary_MissionPanel_C final : public UPyWidget_Secondary_MissionPanel
 {
 public:
-	class UWBP_Common_Bg_C*                       WBP_Common_Bg;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_NavigationBar_LV2_C*        WBP_Common_NavigationBar;                          // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_Panel_V2_C*                WBP_Mission_Panel;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Bg_C*                       WBP_Common_Bg;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_NavigationBar_LV2_C*        WBP_Common_NavigationBar;                          // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_Panel_V2_C*                WBP_Mission_Panel;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Secondary_MissionPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Secondary_MissionPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Secondary_MissionPanel_C")
 	}
 	static class UWBP_Secondary_MissionPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Secondary_MissionPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_Secondary_MissionPanel_C) == 0x000008, "Wrong alignment on UWBP_Secondary_MissionPanel_C");
-static_assert(sizeof(UWBP_Secondary_MissionPanel_C) == 0x000610, "Wrong size on UWBP_Secondary_MissionPanel_C");
-static_assert(offsetof(UWBP_Secondary_MissionPanel_C, WBP_Common_Bg) == 0x0005F8, "Member 'UWBP_Secondary_MissionPanel_C::WBP_Common_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Secondary_MissionPanel_C, WBP_Common_NavigationBar) == 0x000600, "Member 'UWBP_Secondary_MissionPanel_C::WBP_Common_NavigationBar' has a wrong offset!");
-static_assert(offsetof(UWBP_Secondary_MissionPanel_C, WBP_Mission_Panel) == 0x000608, "Member 'UWBP_Secondary_MissionPanel_C::WBP_Mission_Panel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Secondary_MissionPanel_C;
 
 }
 

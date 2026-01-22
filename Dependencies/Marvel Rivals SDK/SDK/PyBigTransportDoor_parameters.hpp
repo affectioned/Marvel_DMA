@@ -27,12 +27,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FXStartNotify_Received_Notify) == 0x000008, "Wrong alignment on FXStartNotify_Received_Notify");
-static_assert(sizeof(FXStartNotify_Received_Notify) == 0x000048, "Wrong size on FXStartNotify_Received_Notify");
-static_assert(offsetof(FXStartNotify_Received_Notify, MeshComp) == 0x000000, "Member 'FXStartNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(FXStartNotify_Received_Notify, Animation) == 0x000008, "Member 'FXStartNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(FXStartNotify_Received_Notify, EventReference) == 0x000010, "Member 'FXStartNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(FXStartNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'FXStartNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FXStartNotify_Received_Notify;
 
 // PythonFunction PyBigTransportDoor.FXEndNotify.Received_Notify
 // 0x0048 (0x0048 - 0x0000)
@@ -44,12 +39,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FXEndNotify_Received_Notify) == 0x000008, "Wrong alignment on FXEndNotify_Received_Notify");
-static_assert(sizeof(FXEndNotify_Received_Notify) == 0x000048, "Wrong size on FXEndNotify_Received_Notify");
-static_assert(offsetof(FXEndNotify_Received_Notify, MeshComp) == 0x000000, "Member 'FXEndNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(FXEndNotify_Received_Notify, Animation) == 0x000008, "Member 'FXEndNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(FXEndNotify_Received_Notify, EventReference) == 0x000010, "Member 'FXEndNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(FXEndNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'FXEndNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FXEndNotify_Received_Notify;
 
 // PythonFunction PyBigTransportDoor.FXLoopEndNotify.Received_Notify
 // 0x0048 (0x0048 - 0x0000)
@@ -61,12 +51,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FXLoopEndNotify_Received_Notify) == 0x000008, "Wrong alignment on FXLoopEndNotify_Received_Notify");
-static_assert(sizeof(FXLoopEndNotify_Received_Notify) == 0x000048, "Wrong size on FXLoopEndNotify_Received_Notify");
-static_assert(offsetof(FXLoopEndNotify_Received_Notify, MeshComp) == 0x000000, "Member 'FXLoopEndNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(FXLoopEndNotify_Received_Notify, Animation) == 0x000008, "Member 'FXLoopEndNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(FXLoopEndNotify_Received_Notify, EventReference) == 0x000010, "Member 'FXLoopEndNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(FXLoopEndNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'FXLoopEndNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FXLoopEndNotify_Received_Notify;
 
 // PythonFunction PyBigTransportDoor.PyBigTransportDoor.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -75,9 +60,7 @@ struct PyBigTransportDoor_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBigTransportDoor_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBigTransportDoor_ReceiveEndPlay");
-static_assert(sizeof(PyBigTransportDoor_ReceiveEndPlay) == 0x000001, "Wrong size on PyBigTransportDoor_ReceiveEndPlay");
-static_assert(offsetof(PyBigTransportDoor_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBigTransportDoor_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBigTransportDoor_ReceiveEndPlay;
 
 // PythonFunction PyBigTransportDoor.PyBigTransportDoor.OnControllerOwnerChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -86,9 +69,7 @@ struct PyBigTransportDoor_OnControllerOwnerChanged final
 public:
 	EBattleSide                                   OwnerSide;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBigTransportDoor_OnControllerOwnerChanged) == 0x000001, "Wrong alignment on PyBigTransportDoor_OnControllerOwnerChanged");
-static_assert(sizeof(PyBigTransportDoor_OnControllerOwnerChanged) == 0x000001, "Wrong size on PyBigTransportDoor_OnControllerOwnerChanged");
-static_assert(offsetof(PyBigTransportDoor_OnControllerOwnerChanged, OwnerSide) == 0x000000, "Member 'PyBigTransportDoor_OnControllerOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyBigTransportDoor_OnControllerOwnerChanged;
 
 }
 

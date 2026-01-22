@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104493.PySummoned_10449301
-// 0x0010 (0x0B50 - 0x0B40)
+// 0x0010 (0x0B70 - 0x0B60)
 class APySummoned_10449301 : public AMarvelSummonerBase
 {
 public:
-	struct FGameplayTag                           BondTag;                                           // 0x0B40(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BondTag;                                           // 0x0B60(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnSummonedBeginAgentTask();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10449301">();
+		STATIC_CLASS_IMPL("PySummoned_10449301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10449301")
 	}
 	static class APySummoned_10449301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10449301>();
 	}
 };
-static_assert(alignof(APySummoned_10449301) == 0x000010, "Wrong alignment on APySummoned_10449301");
-static_assert(sizeof(APySummoned_10449301) == 0x000B50, "Wrong size on APySummoned_10449301");
-static_assert(offsetof(APySummoned_10449301, BondTag) == 0x000B40, "Member 'APySummoned_10449301::BondTag' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10449301;
 
 }
 

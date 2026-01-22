@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroSpawnConfig">();
+		STATIC_CLASS_IMPL("PyHeroSpawnConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroSpawnConfig")
 	}
 	static class UPyHeroSpawnConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroSpawnConfig>();
 	}
 };
-static_assert(alignof(UPyHeroSpawnConfig) == 0x000008, "Wrong alignment on UPyHeroSpawnConfig");
-static_assert(sizeof(UPyHeroSpawnConfig) == 0x000160, "Wrong size on UPyHeroSpawnConfig");
-static_assert(offsetof(UPyHeroSpawnConfig, SpawnPipelineClass) == 0x000030, "Member 'UPyHeroSpawnConfig::SpawnPipelineClass' has a wrong offset!");
-static_assert(offsetof(UPyHeroSpawnConfig, SpawnPipelineConfig) == 0x000038, "Member 'UPyHeroSpawnConfig::SpawnPipelineConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroSpawnConfig;
 
 // PythonClass PyLevelSpawnPipeline.PyCharacterSpawnPipeline
 // 0x0000 (0x0030 - 0x0030)
@@ -51,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacterSpawnPipeline">();
+		STATIC_CLASS_IMPL("PyCharacterSpawnPipeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacterSpawnPipeline")
 	}
 	static class UPyCharacterSpawnPipeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCharacterSpawnPipeline>();
 	}
 };
-static_assert(alignof(UPyCharacterSpawnPipeline) == 0x000008, "Wrong alignment on UPyCharacterSpawnPipeline");
-static_assert(sizeof(UPyCharacterSpawnPipeline) == 0x000030, "Wrong size on UPyCharacterSpawnPipeline");
+DUMPER7_ASSERTS_UPyCharacterSpawnPipeline;
 
 // PythonClass PyLevelSpawnPipeline.PyCharacterSpawnPipeline_LevelCommon
 // 0x0000 (0x0030 - 0x0030)
@@ -72,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacterSpawnPipeline_LevelCommon">();
+		STATIC_CLASS_IMPL("PyCharacterSpawnPipeline_LevelCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacterSpawnPipeline_LevelCommon")
 	}
 	static class UPyCharacterSpawnPipeline_LevelCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCharacterSpawnPipeline_LevelCommon>();
 	}
 };
-static_assert(alignof(UPyCharacterSpawnPipeline_LevelCommon) == 0x000008, "Wrong alignment on UPyCharacterSpawnPipeline_LevelCommon");
-static_assert(sizeof(UPyCharacterSpawnPipeline_LevelCommon) == 0x000030, "Wrong size on UPyCharacterSpawnPipeline_LevelCommon");
+DUMPER7_ASSERTS_UPyCharacterSpawnPipeline_LevelCommon;
 
 // PythonClass PyLevelSpawnPipeline.PyCharacterSpawnPipeline_BattleChess
 // 0x0000 (0x0030 - 0x0030)
@@ -94,15 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacterSpawnPipeline_BattleChess">();
+		STATIC_CLASS_IMPL("PyCharacterSpawnPipeline_BattleChess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacterSpawnPipeline_BattleChess")
 	}
 	static class UPyCharacterSpawnPipeline_BattleChess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCharacterSpawnPipeline_BattleChess>();
 	}
 };
-static_assert(alignof(UPyCharacterSpawnPipeline_BattleChess) == 0x000008, "Wrong alignment on UPyCharacterSpawnPipeline_BattleChess");
-static_assert(sizeof(UPyCharacterSpawnPipeline_BattleChess) == 0x000030, "Wrong size on UPyCharacterSpawnPipeline_BattleChess");
+DUMPER7_ASSERTS_UPyCharacterSpawnPipeline_BattleChess;
 
 // PythonClass PyLevelSpawnPipeline.PyCharacterSpawnPipeline_Halloween
 // 0x0000 (0x0030 - 0x0030)
@@ -115,15 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacterSpawnPipeline_Halloween">();
+		STATIC_CLASS_IMPL("PyCharacterSpawnPipeline_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacterSpawnPipeline_Halloween")
 	}
 	static class UPyCharacterSpawnPipeline_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCharacterSpawnPipeline_Halloween>();
 	}
 };
-static_assert(alignof(UPyCharacterSpawnPipeline_Halloween) == 0x000008, "Wrong alignment on UPyCharacterSpawnPipeline_Halloween");
-static_assert(sizeof(UPyCharacterSpawnPipeline_Halloween) == 0x000030, "Wrong size on UPyCharacterSpawnPipeline_Halloween");
+DUMPER7_ASSERTS_UPyCharacterSpawnPipeline_Halloween;
 
 }
 

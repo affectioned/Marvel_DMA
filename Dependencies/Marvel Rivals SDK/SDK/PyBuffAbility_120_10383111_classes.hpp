@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10383111.PyBuffAbility_120_10383111
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10383111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         Radius;                                            // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BuffState;                                         // 0x1374(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BuffState;                                         // 0x138C(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10383111">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10383111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10383111")
 	}
 	static class UPyBuffAbility_120_10383111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10383111>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10383111) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10383111");
-static_assert(sizeof(UPyBuffAbility_120_10383111) == 0x001378, "Wrong size on UPyBuffAbility_120_10383111");
-static_assert(offsetof(UPyBuffAbility_120_10383111, Radius) == 0x001370, "Member 'UPyBuffAbility_120_10383111::Radius' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10383111, BuffState) == 0x001374, "Member 'UPyBuffAbility_120_10383111::BuffState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10383111;
 
 }
 

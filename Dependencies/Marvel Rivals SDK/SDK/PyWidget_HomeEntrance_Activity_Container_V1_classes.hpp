@@ -18,29 +18,32 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Activity_Container_V1.PyWidget_HomeEntrance_Activity_Item_Container_Widget_V1
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1 final : public UPyWidget_HomeEntrance_Activity_Item_Container_Widget_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_Item_Container_Widget_V1">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_Item_Container_Widget_V1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_Item_Container_Widget_V1")
 	}
 	static class UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1) == 0x0005C0, "Wrong size on UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_Item_Container_Widget_V1;
 
 // PythonClass PyWidget_HomeEntrance_Activity_Container_V1.PyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1 final : public UPyWidget_HomeEntrance_Item_Container_Nav_Widget_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         IndexNumber;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         IndexNumber;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -49,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1")
 	}
 	static class UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1) == 0x0005C0, "Wrong size on UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1, IndexNumber) == 0x0005BC, "Member 'UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1::IndexNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_Item_Container_Nav_Widget_V1;
 
 }
 

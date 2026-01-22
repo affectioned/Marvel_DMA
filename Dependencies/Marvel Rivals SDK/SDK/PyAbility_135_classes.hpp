@@ -12,61 +12,34 @@
 
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyAbility_135.PyCue_Ability_Loop_13501
-// 0x0020 (0x11D0 - 0x11B0)
-class APyCue_Ability_Loop_13501 final : public AMarvelCueNotify_Ability
-{
-public:
-	int32                                         AbilityID;                                         // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeOutTime;                                       // 0x11B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            AlphaCurve;                                        // 0x11B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimerInterval;                                     // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Ability_Loop_13501">();
-	}
-	static class APyCue_Ability_Loop_13501* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Ability_Loop_13501>();
-	}
-};
-static_assert(alignof(APyCue_Ability_Loop_13501) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_13501");
-static_assert(sizeof(APyCue_Ability_Loop_13501) == 0x0011D0, "Wrong size on APyCue_Ability_Loop_13501");
-static_assert(offsetof(APyCue_Ability_Loop_13501, AbilityID) == 0x0011B0, "Member 'APyCue_Ability_Loop_13501::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_13501, FadeOutTime) == 0x0011B4, "Member 'APyCue_Ability_Loop_13501::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_13501, AlphaCurve) == 0x0011B8, "Member 'APyCue_Ability_Loop_13501::AlphaCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_13501, TimerInterval) == 0x0011C0, "Member 'APyCue_Ability_Loop_13501::TimerInterval' has a wrong offset!");
-
 // PythonClass PyAbility_135.PyConfig_135
-// 0x0000 (0x1770 - 0x1770)
+// 0x0000 (0x1AC0 - 0x1AC0)
 class UPyConfig_135 final : public UConfig_135
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_135">();
+		STATIC_CLASS_IMPL("PyConfig_135")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_135")
 	}
 	static class UPyConfig_135* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_135>();
 	}
 };
-static_assert(alignof(UPyConfig_135) == 0x000010, "Wrong alignment on UPyConfig_135");
-static_assert(sizeof(UPyConfig_135) == 0x001770, "Wrong size on UPyConfig_135");
+DUMPER7_ASSERTS_UPyConfig_135;
 
 // PythonClass PyAbility_135.PyCue_Summoner_Loop_13502
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APyCue_Summoner_Loop_13502 final : public AMarvelCueNotify_Summoned
 {
 public:
@@ -77,18 +50,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_13502">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_13502")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_13502")
 	}
 	static class APyCue_Summoner_Loop_13502* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_13502>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_13502) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_13502");
-static_assert(sizeof(APyCue_Summoner_Loop_13502) == 0x001200, "Wrong size on APyCue_Summoner_Loop_13502");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_13502;
 
 // PythonClass PyAbility_135.PyAbility_135
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_135 : public UMarvelGameplayAbility
 {
 public:
@@ -102,41 +78,77 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_135">();
+		STATIC_CLASS_IMPL("PyAbility_135")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_135")
 	}
 	static class UPyAbility_135* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_135>();
 	}
 };
-static_assert(alignof(UPyAbility_135) == 0x000008, "Wrong alignment on UPyAbility_135");
-static_assert(sizeof(UPyAbility_135) == 0x0029F0, "Wrong size on UPyAbility_135");
+DUMPER7_ASSERTS_UPyAbility_135;
+
+// PythonClass PyAbility_135.PyCue_Ability_Loop_13501
+// 0x0020 (0x11E0 - 0x11C0)
+class APyCue_Ability_Loop_13501 final : public AMarvelCueNotify_Ability
+{
+public:
+	int32                                         AbilityID;                                         // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeOutTime;                                       // 0x11C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            AlphaCurve;                                        // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimerInterval;                                     // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_13501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_13501")
+	}
+	static class APyCue_Ability_Loop_13501* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Ability_Loop_13501>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Ability_Loop_13501;
 
 // PythonClass PyAbility_135.PyCue_Ability_Loop_13503
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_13503 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FGameplayTag                           PhoenixTag;                                        // 0x11B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PhoenixTag;                                        // 0x11C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void ReceiveTick(float DeltaTime);
+	void OnTargetEndPlay(class AActor* EndActor, EEndPlayReason EndPlayReason);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_13503">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_13503")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_13503")
 	}
 	static class APyCue_Ability_Loop_13503* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_13503>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_13503) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_13503");
-static_assert(sizeof(APyCue_Ability_Loop_13503) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_13503");
-static_assert(offsetof(APyCue_Ability_Loop_13503, PhoenixTag) == 0x0011B0, "Member 'APyCue_Ability_Loop_13503::PhoenixTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_13503;
 
 }
 

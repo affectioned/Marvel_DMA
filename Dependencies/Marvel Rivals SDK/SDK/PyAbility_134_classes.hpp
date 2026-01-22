@@ -35,31 +35,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_134">();
+		STATIC_CLASS_IMPL("PyConfig_134")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_134")
 	}
 	static class UPyConfig_134* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_134>();
 	}
 };
-static_assert(alignof(UPyConfig_134) == 0x000008, "Wrong alignment on UPyConfig_134");
-static_assert(sizeof(UPyConfig_134) == 0x0001A0, "Wrong size on UPyConfig_134");
-static_assert(offsetof(UPyConfig_134, PriorityValue) == 0x000170, "Member 'UPyConfig_134::PriorityValue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, OutTime) == 0x000174, "Member 'UPyConfig_134::OutTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, CocoonRebornTime) == 0x000178, "Member 'UPyConfig_134::CocoonRebornTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, ForceKillCheckRate) == 0x00017C, "Member 'UPyConfig_134::ForceKillCheckRate' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, BuffsRemoveWhenEnd) == 0x000180, "Member 'UPyConfig_134::BuffsRemoveWhenEnd' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, OutTimeResurrectFail) == 0x000190, "Member 'UPyConfig_134::OutTimeResurrectFail' has a wrong offset!");
-static_assert(offsetof(UPyConfig_134, DeathCueTag) == 0x000194, "Member 'UPyConfig_134::DeathCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_134;
 
 // PythonClass PyAbility_134.PyAbility_134
-// 0x0008 (0x2CA8 - 0x2CA0)
+// 0x0008 (0x2CF8 - 0x2CF0)
 class UPyAbility_134 : public UAbility_134
 {
 public:
-	bool                                          OpenDebugLog;                                      // 0x2CA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2CA1[0x3];                                     // 0x2CA1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         LevelRespawnInterval;                              // 0x2CA4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenDebugLog;                                      // 0x2CF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2CF1[0x3];                                     // 0x2CF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         LevelRespawnInterval;                              // 0x2CF4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -90,33 +86,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_134">();
+		STATIC_CLASS_IMPL("PyAbility_134")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_134")
 	}
 	static class UPyAbility_134* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_134>();
 	}
 };
-static_assert(alignof(UPyAbility_134) == 0x000008, "Wrong alignment on UPyAbility_134");
-static_assert(sizeof(UPyAbility_134) == 0x002CA8, "Wrong size on UPyAbility_134");
-static_assert(offsetof(UPyAbility_134, OpenDebugLog) == 0x002CA0, "Member 'UPyAbility_134::OpenDebugLog' has a wrong offset!");
-static_assert(offsetof(UPyAbility_134, LevelRespawnInterval) == 0x002CA4, "Member 'UPyAbility_134::LevelRespawnInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_134;
 
 // PythonClass PyAbility_134.PyCue_Death_134
-// 0x02A0 (0x1AB0 - 0x1810)
+// 0x02A0 (0x1AE0 - 0x1840)
 class APyCue_Death_134 : public ACue_Death_134
 {
 public:
-	class UFXSystemAsset*                         SoulDisappearFX;                                   // 0x1810(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReticleForbidOpacity;                              // 0x1818(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181C[0x4];                                     // 0x181C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            CurveSoulCancelFadeOut;                            // 0x1820(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, class UCurveFloat*>       CurveSoulCocoonChange;                             // 0x1828(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            CurveWeaponEnterSoul;                              // 0x1878(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SoulCancelAudioID;                                 // 0x1880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShowWeaponWhenDeath;                              // 0x1884(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1885[0x3];                                     // 0x1885(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FOptionalMaterialParameter             OptionalMaterialParam;                             // 0x1888(0x0228)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         SoulDisappearFX;                                   // 0x1840(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReticleForbidOpacity;                              // 0x1848(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_184C[0x4];                                     // 0x184C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            CurveSoulCancelFadeOut;                            // 0x1850(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, class UCurveFloat*>       CurveSoulCocoonChange;                             // 0x1858(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            CurveWeaponEnterSoul;                              // 0x18A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SoulCancelAudioID;                                 // 0x18B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShowWeaponWhenDeath;                              // 0x18B4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18B5[0x3];                                     // 0x18B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FOptionalMaterialParameter             OptionalMaterialParam;                             // 0x18B8(0x0228)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -129,23 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Death_134">();
+		STATIC_CLASS_IMPL("PyCue_Death_134")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Death_134")
 	}
 	static class APyCue_Death_134* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Death_134>();
 	}
 };
-static_assert(alignof(APyCue_Death_134) == 0x000010, "Wrong alignment on APyCue_Death_134");
-static_assert(sizeof(APyCue_Death_134) == 0x001AB0, "Wrong size on APyCue_Death_134");
-static_assert(offsetof(APyCue_Death_134, SoulDisappearFX) == 0x001810, "Member 'APyCue_Death_134::SoulDisappearFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, ReticleForbidOpacity) == 0x001818, "Member 'APyCue_Death_134::ReticleForbidOpacity' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, CurveSoulCancelFadeOut) == 0x001820, "Member 'APyCue_Death_134::CurveSoulCancelFadeOut' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, CurveSoulCocoonChange) == 0x001828, "Member 'APyCue_Death_134::CurveSoulCocoonChange' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, CurveWeaponEnterSoul) == 0x001878, "Member 'APyCue_Death_134::CurveWeaponEnterSoul' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, SoulCancelAudioID) == 0x001880, "Member 'APyCue_Death_134::SoulCancelAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, bShowWeaponWhenDeath) == 0x001884, "Member 'APyCue_Death_134::bShowWeaponWhenDeath' has a wrong offset!");
-static_assert(offsetof(APyCue_Death_134, OptionalMaterialParam) == 0x001888, "Member 'APyCue_Death_134::OptionalMaterialParam' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Death_134;
 
 // PythonClass PyAbility_134.AbilityUIActiveCondition_134
 // 0x0000 (0x0030 - 0x0030)
@@ -154,15 +146,18 @@ class UAbilityUIActiveCondition_134 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityUIActiveCondition_134">();
+		STATIC_CLASS_IMPL("AbilityUIActiveCondition_134")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityUIActiveCondition_134")
 	}
 	static class UAbilityUIActiveCondition_134* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityUIActiveCondition_134>();
 	}
 };
-static_assert(alignof(UAbilityUIActiveCondition_134) == 0x000008, "Wrong alignment on UAbilityUIActiveCondition_134");
-static_assert(sizeof(UAbilityUIActiveCondition_134) == 0x000030, "Wrong size on UAbilityUIActiveCondition_134");
+DUMPER7_ASSERTS_UAbilityUIActiveCondition_134;
 
 }
 

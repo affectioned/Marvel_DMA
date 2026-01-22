@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200009.PyAbility_200009
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_200009 : public UMarvelGameplayAbility
 {
 public:
@@ -28,24 +28,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200009">();
+		STATIC_CLASS_IMPL("PyAbility_200009")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200009")
 	}
 	static class UPyAbility_200009* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200009>();
 	}
 };
-static_assert(alignof(UPyAbility_200009) == 0x000008, "Wrong alignment on UPyAbility_200009");
-static_assert(sizeof(UPyAbility_200009) == 0x0029F0, "Wrong size on UPyAbility_200009");
+DUMPER7_ASSERTS_UPyAbility_200009;
 
 // PythonClass PyAbility_200009.PyUIController_200009
-// 0x0018 (0x0F28 - 0x0F10)
+// 0x0018 (0x1208 - 0x11F0)
 class UPyUIController_200009 final : public UUIC_Ability
 {
 public:
-	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ShowTipsAudio;                                     // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ActiveAudio;                                       // 0x0F20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x11F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ShowTipsAudio;                                     // 0x11F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ActiveAudio;                                       // 0x1200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -57,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200009">();
+		STATIC_CLASS_IMPL("PyUIController_200009")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200009")
 	}
 	static class UPyUIController_200009* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200009>();
 	}
 };
-static_assert(alignof(UPyUIController_200009) == 0x000008, "Wrong alignment on UPyUIController_200009");
-static_assert(sizeof(UPyUIController_200009) == 0x000F28, "Wrong size on UPyUIController_200009");
-static_assert(offsetof(UPyUIController_200009, InteractiveAudio) == 0x000F10, "Member 'UPyUIController_200009::InteractiveAudio' has a wrong offset!");
-static_assert(offsetof(UPyUIController_200009, ShowTipsAudio) == 0x000F18, "Member 'UPyUIController_200009::ShowTipsAudio' has a wrong offset!");
-static_assert(offsetof(UPyUIController_200009, ActiveAudio) == 0x000F20, "Member 'UPyUIController_200009::ActiveAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_200009;
 
 }
 

@@ -24,12 +24,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntrySubtitleColorOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntrySubtitleColorOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntrySubtitleColorOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntrySubtitleColorOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntrySubtitleColorOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleColorOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntrySubtitleColorOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySubtitleColorOptionsGenerator_BP_Gen;
 
 // PythonFunction Subtitle.UISettingEntrySubtitleHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -45,15 +40,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySubtitleHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntrySubtitleHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntrySubtitleHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntrySubtitleHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySubtitleHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntrySubtitleHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySubtitleHandler_BP_OnChanged;
 
 }
 

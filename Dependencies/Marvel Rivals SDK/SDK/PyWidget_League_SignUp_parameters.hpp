@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUp_btn_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_League_SignUp_btn_navigation_rule_custom");
-static_assert(sizeof(PyWidget_League_SignUp_btn_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_League_SignUp_btn_navigation_rule_custom");
-static_assert(offsetof(PyWidget_League_SignUp_btn_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_League_SignUp_btn_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_SignUp_btn_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_League_SignUp_btn_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUp_btn_navigation_rule_custom;
 
 // PythonFunction PyWidget_League_SignUp.PyWidget_League_SignUp.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_League_SignUp_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_SignUp_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_League_SignUp_MarvelSetVisible");
-static_assert(sizeof(PyWidget_League_SignUp_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_League_SignUp_MarvelSetVisible");
-static_assert(offsetof(PyWidget_League_SignUp_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_League_SignUp_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_SignUp_MarvelSetVisible;
 
 // PythonFunction PyWidget_League_SignUp.WBP_DropDownList_League_SignUp.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct WBP_DropDownList_League_SignUp_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DropDownList_League_SignUp_PreConstruct) == 0x000001, "Wrong alignment on WBP_DropDownList_League_SignUp_PreConstruct");
-static_assert(sizeof(WBP_DropDownList_League_SignUp_PreConstruct) == 0x000001, "Wrong size on WBP_DropDownList_League_SignUp_PreConstruct");
-static_assert(offsetof(WBP_DropDownList_League_SignUp_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_DropDownList_League_SignUp_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DropDownList_League_SignUp_PreConstruct;
 
 // PythonFunction PyWidget_League_SignUp.WBP_DropDownList_League_SignUp.SetIsExtend
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +52,7 @@ struct WBP_DropDownList_League_SignUp_SetIsExtend final
 public:
 	bool                                          IsExtended_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DropDownList_League_SignUp_SetIsExtend) == 0x000001, "Wrong alignment on WBP_DropDownList_League_SignUp_SetIsExtend");
-static_assert(sizeof(WBP_DropDownList_League_SignUp_SetIsExtend) == 0x000001, "Wrong size on WBP_DropDownList_League_SignUp_SetIsExtend");
-static_assert(offsetof(WBP_DropDownList_League_SignUp_SetIsExtend, IsExtended_0) == 0x000000, "Member 'WBP_DropDownList_League_SignUp_SetIsExtend::IsExtended_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DropDownList_League_SignUp_SetIsExtend;
 
 // PythonFunction PyWidget_League_SignUp.WBP_DropDownList_League_SignUp.SetItemID
 // 0x0004 (0x0004 - 0x0000)
@@ -70,9 +61,7 @@ struct WBP_DropDownList_League_SignUp_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DropDownList_League_SignUp_SetItemID) == 0x000004, "Wrong alignment on WBP_DropDownList_League_SignUp_SetItemID");
-static_assert(sizeof(WBP_DropDownList_League_SignUp_SetItemID) == 0x000004, "Wrong size on WBP_DropDownList_League_SignUp_SetItemID");
-static_assert(offsetof(WBP_DropDownList_League_SignUp_SetItemID, ItemID_0) == 0x000000, "Member 'WBP_DropDownList_League_SignUp_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DropDownList_League_SignUp_SetItemID;
 
 // PythonFunction PyWidget_League_SignUp.Pywidget_DropDownList_SignUp_Item.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +70,7 @@ struct Pywidget_DropDownList_SignUp_Item_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Pywidget_DropDownList_SignUp_Item_PreConstruct) == 0x000001, "Wrong alignment on Pywidget_DropDownList_SignUp_Item_PreConstruct");
-static_assert(sizeof(Pywidget_DropDownList_SignUp_Item_PreConstruct) == 0x000001, "Wrong size on Pywidget_DropDownList_SignUp_Item_PreConstruct");
-static_assert(offsetof(Pywidget_DropDownList_SignUp_Item_PreConstruct, IsDesignTime) == 0x000000, "Member 'Pywidget_DropDownList_SignUp_Item_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_Pywidget_DropDownList_SignUp_Item_PreConstruct;
 
 }
 

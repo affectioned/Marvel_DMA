@@ -28,15 +28,7 @@ public:
 	TMap<class FString, int32>                    CurrentTags;                                       // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntryCustomPhraseHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntryCustomPhraseHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, Object) == 0x000000, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::Object' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, SettingKey) == 0x000008, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::SettingKey' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, Params_0) == 0x000018, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::Params_0' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, Options) == 0x000068, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::Options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, Value) == 0x0000B8, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::Value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, CurrentTags) == 0x0000C0, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::CurrentTags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCustomPhraseHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntryCustomPhraseHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryCustomPhraseHandler_BP_OnBtnClicked;
 
 }
 

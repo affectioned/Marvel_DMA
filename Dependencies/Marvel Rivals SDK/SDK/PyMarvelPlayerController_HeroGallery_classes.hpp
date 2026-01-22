@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelPlayerController_HeroGallery">();
+		STATIC_CLASS_IMPL("PyMarvelPlayerController_HeroGallery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelPlayerController_HeroGallery")
 	}
 	static class APyMarvelPlayerController_HeroGallery* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelPlayerController_HeroGallery>();
 	}
 };
-static_assert(alignof(APyMarvelPlayerController_HeroGallery) == 0x000010, "Wrong alignment on APyMarvelPlayerController_HeroGallery");
-static_assert(sizeof(APyMarvelPlayerController_HeroGallery) == 0x000D50, "Wrong size on APyMarvelPlayerController_HeroGallery");
-static_assert(offsetof(APyMarvelPlayerController_HeroGallery, OnShowCharacterBG) == 0x000D40, "Member 'APyMarvelPlayerController_HeroGallery::OnShowCharacterBG' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelPlayerController_HeroGallery;
 
 }
 

@@ -23,15 +23,18 @@ class AAISubTeamDataBP_C final : public APyAISubTeamData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISubTeamDataBP_C">();
+		BP_STATIC_CLASS_IMPL("AISubTeamDataBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISubTeamDataBP_C")
 	}
 	static class AAISubTeamDataBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAISubTeamDataBP_C>();
 	}
 };
-static_assert(alignof(AAISubTeamDataBP_C) == 0x000010, "Wrong alignment on AAISubTeamDataBP_C");
-static_assert(sizeof(AAISubTeamDataBP_C) == 0x000760, "Wrong size on AAISubTeamDataBP_C");
+DUMPER7_ASSERTS_AAISubTeamDataBP_C;
 
 }
 

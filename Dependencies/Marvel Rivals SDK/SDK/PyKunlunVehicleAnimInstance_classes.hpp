@@ -32,20 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKunlunVehicleAnimInstance">();
+		STATIC_CLASS_IMPL("PyKunlunVehicleAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKunlunVehicleAnimInstance")
 	}
 	static class UPyKunlunVehicleAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKunlunVehicleAnimInstance>();
 	}
 };
-static_assert(alignof(UPyKunlunVehicleAnimInstance) == 0x000010, "Wrong alignment on UPyKunlunVehicleAnimInstance");
-static_assert(sizeof(UPyKunlunVehicleAnimInstance) == 0x0004B0, "Wrong size on UPyKunlunVehicleAnimInstance");
-static_assert(offsetof(UPyKunlunVehicleAnimInstance, IsSleeping) == 0x0004A0, "Member 'UPyKunlunVehicleAnimInstance::IsSleeping' has a wrong offset!");
-static_assert(offsetof(UPyKunlunVehicleAnimInstance, Activate) == 0x0004A1, "Member 'UPyKunlunVehicleAnimInstance::Activate' has a wrong offset!");
-static_assert(offsetof(UPyKunlunVehicleAnimInstance, ReachCheckPointB) == 0x0004A2, "Member 'UPyKunlunVehicleAnimInstance::ReachCheckPointB' has a wrong offset!");
-static_assert(offsetof(UPyKunlunVehicleAnimInstance, ReachCheckPointC) == 0x0004A3, "Member 'UPyKunlunVehicleAnimInstance::ReachCheckPointC' has a wrong offset!");
-static_assert(offsetof(UPyKunlunVehicleAnimInstance, PayloadAnimState) == 0x0004A4, "Member 'UPyKunlunVehicleAnimInstance::PayloadAnimState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKunlunVehicleAnimInstance;
 
 }
 

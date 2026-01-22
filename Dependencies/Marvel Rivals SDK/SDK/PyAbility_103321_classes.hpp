@@ -10,73 +10,50 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Hero_1033_classes.hpp"
-#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyAbility_103321.PyUIController_103321
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_103321 final : public UUIC_Ability
-{
-public:
-	void OnInit();
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_103321">();
-	}
-	static class UPyUIController_103321* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_103321>();
-	}
-};
-static_assert(alignof(UPyUIController_103321) == 0x000008, "Wrong alignment on UPyUIController_103321");
-static_assert(sizeof(UPyUIController_103321) == 0x000F10, "Wrong size on UPyUIController_103321");
-
 // PythonClass PyAbility_103321.PyConfig_103321
-// 0x0010 (0x04B8 - 0x04A8)
+// 0x0010 (0x05F8 - 0x05E8)
 class UPyConfig_103321 final : public UMarvelAbilityConfig_AimDownSights
 {
 public:
-	bool                                          NoHideSelf;                                        // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           AimingTag;                                         // 0x04AC(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NoHideSelf;                                        // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E9[0x3];                                      // 0x05E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           AimingTag;                                         // 0x05EC(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103321">();
+		STATIC_CLASS_IMPL("PyConfig_103321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103321")
 	}
 	static class UPyConfig_103321* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103321>();
 	}
 };
-static_assert(alignof(UPyConfig_103321) == 0x000008, "Wrong alignment on UPyConfig_103321");
-static_assert(sizeof(UPyConfig_103321) == 0x0004B8, "Wrong size on UPyConfig_103321");
-static_assert(offsetof(UPyConfig_103321, NoHideSelf) == 0x0004A8, "Member 'UPyConfig_103321::NoHideSelf' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103321, AimingTag) == 0x0004AC, "Member 'UPyConfig_103321::AimingTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103321;
 
 // PythonClass PyAbility_103321.PyAbility_103321
-// 0x0028 (0x2A80 - 0x2A58)
+// 0x0028 (0x2AD0 - 0x2AA8)
 class UPyAbility_103321 : public UMarvelAbility_AimDownSights
 {
 public:
-	int32                                         AimingShootingMode;                                // 0x2A58(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NormalShootingMode;                                // 0x2A5C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SnipperRifleID;                                    // 0x2A60(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SwitchWeaponAbilityID;                             // 0x2A64(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LoadBulletAbilityID;                               // 0x2A68(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A6C[0x4];                                     // 0x2A6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool opened)>   OnUIStateChanged;                                  // 0x2A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         AimingShootingMode;                                // 0x2AA8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NormalShootingMode;                                // 0x2AAC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SnipperRifleID;                                    // 0x2AB0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SwitchWeaponAbilityID;                             // 0x2AB4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LoadBulletAbilityID;                               // 0x2AB8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2ABC[0x4];                                     // 0x2ABC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool opened)>   OnUIStateChanged;                                  // 0x2AC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -95,50 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103321">();
+		STATIC_CLASS_IMPL("PyAbility_103321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103321")
 	}
 	static class UPyAbility_103321* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103321>();
 	}
 };
-static_assert(alignof(UPyAbility_103321) == 0x000008, "Wrong alignment on UPyAbility_103321");
-static_assert(sizeof(UPyAbility_103321) == 0x002A80, "Wrong size on UPyAbility_103321");
-static_assert(offsetof(UPyAbility_103321, AimingShootingMode) == 0x002A58, "Member 'UPyAbility_103321::AimingShootingMode' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103321, NormalShootingMode) == 0x002A5C, "Member 'UPyAbility_103321::NormalShootingMode' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103321, SnipperRifleID) == 0x002A60, "Member 'UPyAbility_103321::SnipperRifleID' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103321, SwitchWeaponAbilityID) == 0x002A64, "Member 'UPyAbility_103321::SwitchWeaponAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103321, LoadBulletAbilityID) == 0x002A68, "Member 'UPyAbility_103321::LoadBulletAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103321, OnUIStateChanged) == 0x002A70, "Member 'UPyAbility_103321::OnUIStateChanged' has a wrong offset!");
-
-// PythonClass PyAbility_103321.PyWidget_Reticle_103321
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Reticle_103321 final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FinishAnimOffset;                                  // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-	bool ShouldBeVisible();
-	void MarvelSetVisibleImmediately(bool bTmpVisible);
-	void MarvelSetVisible(bool Visible);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Reticle_103321">();
-	}
-	static class UPyWidget_Reticle_103321* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Reticle_103321>();
-	}
-};
-static_assert(alignof(UPyWidget_Reticle_103321) == 0x000008, "Wrong alignment on UPyWidget_Reticle_103321");
-static_assert(sizeof(UPyWidget_Reticle_103321) == 0x0005C0, "Wrong size on UPyWidget_Reticle_103321");
-static_assert(offsetof(UPyWidget_Reticle_103321, FinishAnimOffset) == 0x0005BC, "Member 'UPyWidget_Reticle_103321::FinishAnimOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103321;
 
 }
 

@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_SceneMask.WBP_Common_SceneMask_C
-// 0x0028 (0x05A0 - 0x0578)
+// 0x0028 (0x05A8 - 0x0580)
 class UWBP_Common_SceneMask_C final : public UPyWidget_Common_SceneMask
 {
 public:
-	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_CommonBG_SceneMask;                            // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_SceneMask;                                     // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Loading_Icon1_C*                   WBP_Loading_Icon_Centre;                           // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Loading_Icon1_C*                   WBP_Loading_Icon_Right;                            // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_CommonBG_SceneMask;                            // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_SceneMask;                                     // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Loading_Icon1_C*                   WBP_Loading_Icon_Centre;                           // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Loading_Icon1_C*                   WBP_Loading_Icon_Right;                            // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_SceneMask_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_SceneMask_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_SceneMask_C")
 	}
 	static class UWBP_Common_SceneMask_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_SceneMask_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_SceneMask_C) == 0x000008, "Wrong alignment on UWBP_Common_SceneMask_C");
-static_assert(sizeof(UWBP_Common_SceneMask_C) == 0x0005A0, "Wrong size on UWBP_Common_SceneMask_C");
-static_assert(offsetof(UWBP_Common_SceneMask_C, CanvasPanel_Main) == 0x000578, "Member 'UWBP_Common_SceneMask_C::CanvasPanel_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SceneMask_C, Img_CommonBG_SceneMask) == 0x000580, "Member 'UWBP_Common_SceneMask_C::Img_CommonBG_SceneMask' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SceneMask_C, Img_SceneMask) == 0x000588, "Member 'UWBP_Common_SceneMask_C::Img_SceneMask' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SceneMask_C, WBP_Loading_Icon_Centre) == 0x000590, "Member 'UWBP_Common_SceneMask_C::WBP_Loading_Icon_Centre' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_SceneMask_C, WBP_Loading_Icon_Right) == 0x000598, "Member 'UWBP_Common_SceneMask_C::WBP_Loading_Icon_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_SceneMask_C;
 
 }
 

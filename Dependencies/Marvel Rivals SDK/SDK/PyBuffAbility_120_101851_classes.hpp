@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101851.PyBuffAbility_120_10185105
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_10185105 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ScopeID;                                           // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExplodeInterval;                                   // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxExtraNum;                                       // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraNumPerActive;                                 // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReduceDamageRatePerExplode;                        // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExplodeInterval;                                   // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxExtraNum;                                       // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraNumPerActive;                                 // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReduceDamageRatePerExplode;                        // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,23 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10185105">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10185105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10185105")
 	}
 	static class UPyBuffAbility_120_10185105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10185105>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10185105) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10185105");
-static_assert(sizeof(UPyBuffAbility_120_10185105) == 0x001388, "Wrong size on UPyBuffAbility_120_10185105");
-static_assert(offsetof(UPyBuffAbility_120_10185105, ScopeID) == 0x001370, "Member 'UPyBuffAbility_120_10185105::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10185105, ExplodeInterval) == 0x001374, "Member 'UPyBuffAbility_120_10185105::ExplodeInterval' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10185105, MaxExtraNum) == 0x001378, "Member 'UPyBuffAbility_120_10185105::MaxExtraNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10185105, ExtraNumPerActive) == 0x00137C, "Member 'UPyBuffAbility_120_10185105::ExtraNumPerActive' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10185105, ReduceDamageRatePerExplode) == 0x001380, "Member 'UPyBuffAbility_120_10185105::ReduceDamageRatePerExplode' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10185105;
 
 // PythonClass PyBuffAbility_120_101851.PyEffectiveComponent_120_10185105
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_120_10185105 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -60,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_120_10185105">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_120_10185105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_120_10185105")
 	}
 	static class UPyEffectiveComponent_120_10185105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_120_10185105>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_120_10185105) == 0x000010, "Wrong alignment on UPyEffectiveComponent_120_10185105");
-static_assert(sizeof(UPyEffectiveComponent_120_10185105) == 0x001C70, "Wrong size on UPyEffectiveComponent_120_10185105");
+DUMPER7_ASSERTS_UPyEffectiveComponent_120_10185105;
 
 }
 

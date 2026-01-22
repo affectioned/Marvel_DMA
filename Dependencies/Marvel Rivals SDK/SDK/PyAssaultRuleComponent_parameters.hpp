@@ -21,9 +21,7 @@ struct PyAssaultRuleComponent_ActivationNow final
 public:
 	class APyObjective*                           objective;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAssaultRuleComponent_ActivationNow) == 0x000008, "Wrong alignment on PyAssaultRuleComponent_ActivationNow");
-static_assert(sizeof(PyAssaultRuleComponent_ActivationNow) == 0x000008, "Wrong size on PyAssaultRuleComponent_ActivationNow");
-static_assert(offsetof(PyAssaultRuleComponent_ActivationNow, objective) == 0x000000, "Member 'PyAssaultRuleComponent_ActivationNow::objective' has a wrong offset!");
+DUMPER7_ASSERTS_PyAssaultRuleComponent_ActivationNow;
 
 }
 

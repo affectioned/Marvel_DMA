@@ -19,64 +19,8 @@
 namespace SDK
 {
 
-// PythonClass PyAbility_105471.PyCue_Ability_Loop_10547101
-// 0x0000 (0x2900 - 0x2900)
-class APyCue_Ability_Loop_10547101 final : public ACue_Ability_Loop_10547101
-{
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void K2_OnAbilityStateChanged(EAbilityState_105471 InState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10547101">();
-	}
-	static class APyCue_Ability_Loop_10547101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Ability_Loop_10547101>();
-	}
-};
-static_assert(alignof(APyCue_Ability_Loop_10547101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10547101");
-static_assert(sizeof(APyCue_Ability_Loop_10547101) == 0x002900, "Wrong size on APyCue_Ability_Loop_10547101");
-
-// PythonClass PyAbility_105471.PyCue_Buff_10547103
-// 0x0240 (0x19E0 - 0x17A0)
-class APyCue_Buff_10547103 final : public ACue_Buff_10547103
-{
-public:
-	bool                                          bUseNewWhiteHouse;                                 // 0x17A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A1[0x7];                                     // 0x17A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     WhiteHouseMaterial;                                // 0x17A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FOptionalMaterialParameter             OptionalMaterialParam;                             // 0x17B0(0x0228)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          bHideCharactersWithinFrustum;                      // 0x19D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void K2_OnRecycle();
-	void K2_OnViewTargetChanged(EClientPlayerViewSide ViewSide);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Buff_10547103">();
-	}
-	static class APyCue_Buff_10547103* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Buff_10547103>();
-	}
-};
-static_assert(alignof(APyCue_Buff_10547103) == 0x000010, "Wrong alignment on APyCue_Buff_10547103");
-static_assert(sizeof(APyCue_Buff_10547103) == 0x0019E0, "Wrong size on APyCue_Buff_10547103");
-static_assert(offsetof(APyCue_Buff_10547103, bUseNewWhiteHouse) == 0x0017A0, "Member 'APyCue_Buff_10547103::bUseNewWhiteHouse' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10547103, WhiteHouseMaterial) == 0x0017A8, "Member 'APyCue_Buff_10547103::WhiteHouseMaterial' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10547103, OptionalMaterialParam) == 0x0017B0, "Member 'APyCue_Buff_10547103::OptionalMaterialParam' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10547103, bHideCharactersWithinFrustum) == 0x0019D8, "Member 'APyCue_Buff_10547103::bHideCharactersWithinFrustum' has a wrong offset!");
-
 // PythonClass PyAbility_105471.PyAbility_105471
-// 0x0000 (0x2FE8 - 0x2FE8)
+// 0x0000 (0x3038 - 0x3038)
 class UPyAbility_105471 : public UAbility_105471
 {
 public:
@@ -96,28 +40,32 @@ public:
 	void K2_OnDashFinish(EDashStopReason reason);
 	void K2_OnConfirm();
 	void K2_OnSummonerSpawn_Dive(class AActor* InActor);
+	bool IsActorHitValid(class AActor* SelfActor, class AActor* OtherActor, const struct FHitResult& Hit);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105471">();
+		STATIC_CLASS_IMPL("PyAbility_105471")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105471")
 	}
 	static class UPyAbility_105471* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105471>();
 	}
 };
-static_assert(alignof(UPyAbility_105471) == 0x000008, "Wrong alignment on UPyAbility_105471");
-static_assert(sizeof(UPyAbility_105471) == 0x002FE8, "Wrong size on UPyAbility_105471");
+DUMPER7_ASSERTS_UPyAbility_105471;
 
 // PythonClass PyAbility_105471.PyCue_Scope_HitImpact_10547101
-// 0x0020 (0x05E8 - 0x05C8)
+// 0x0020 (0x0608 - 0x05E8)
 class UPyCue_Scope_HitImpact_10547101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	class UFXSystemAsset*                         BurnFXAsset;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BurnFXSocketName;                                  // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseSize;                                          // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         BurnFXAsset;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BurnFXSocketName;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseSize;                                          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -125,18 +73,76 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10547101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10547101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10547101")
 	}
 	static class UPyCue_Scope_HitImpact_10547101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10547101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10547101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10547101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10547101) == 0x0005E8, "Wrong size on UPyCue_Scope_HitImpact_10547101");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10547101, BurnFXAsset) == 0x0005C8, "Member 'UPyCue_Scope_HitImpact_10547101::BurnFXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10547101, BurnFXSocketName) == 0x0005D0, "Member 'UPyCue_Scope_HitImpact_10547101::BurnFXSocketName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10547101, BaseSize) == 0x0005E0, "Member 'UPyCue_Scope_HitImpact_10547101::BaseSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10547101;
+
+// PythonClass PyAbility_105471.PyCue_Ability_Loop_10547101
+// 0x0000 (0x2C70 - 0x2C70)
+class APyCue_Ability_Loop_10547101 final : public ACue_Ability_Loop_10547101
+{
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void K2_OnAbilityStateChanged(EAbilityState_105471 InState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10547101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10547101")
+	}
+	static class APyCue_Ability_Loop_10547101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Ability_Loop_10547101>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10547101;
+
+// PythonClass PyAbility_105471.PyCue_Buff_10547103
+// 0x0240 (0x1A90 - 0x1850)
+class APyCue_Buff_10547103 final : public ACue_Buff_10547103
+{
+public:
+	bool                                          bUseNewWhiteHouse;                                 // 0x1850(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1851[0x7];                                     // 0x1851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     WhiteHouseMaterial;                                // 0x1858(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FOptionalMaterialParameter             OptionalMaterialParam;                             // 0x1860(0x0228)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          bHideCharactersWithinFrustum;                      // 0x1A88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void K2_OnRecycle();
+	void K2_OnViewTargetChanged(EClientPlayerViewSide ViewSide);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Buff_10547103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10547103")
+	}
+	static class APyCue_Buff_10547103* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Buff_10547103>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Buff_10547103;
 
 }
 

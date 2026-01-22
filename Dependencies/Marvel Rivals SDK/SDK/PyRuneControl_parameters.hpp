@@ -24,9 +24,7 @@ struct PyRuneControl_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_ReceiveTick) == 0x000004, "Wrong alignment on PyRuneControl_ReceiveTick");
-static_assert(sizeof(PyRuneControl_ReceiveTick) == 0x000004, "Wrong size on PyRuneControl_ReceiveTick");
-static_assert(offsetof(PyRuneControl_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyRuneControl_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_ReceiveTick;
 
 // PythonFunction PyRuneControl.PyRuneControl.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyRuneControl_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyRuneControl_ReceiveEndPlay");
-static_assert(sizeof(PyRuneControl_ReceiveEndPlay) == 0x000001, "Wrong size on PyRuneControl_ReceiveEndPlay");
-static_assert(offsetof(PyRuneControl_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PyRuneControl_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_ReceiveEndPlay;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnUnlockControllerFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyRuneControl_OnUnlockControllerFinished final
 public:
 	class AActor*                                 Control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnUnlockControllerFinished) == 0x000008, "Wrong alignment on PyRuneControl_OnUnlockControllerFinished");
-static_assert(sizeof(PyRuneControl_OnUnlockControllerFinished) == 0x000008, "Wrong size on PyRuneControl_OnUnlockControllerFinished");
-static_assert(offsetof(PyRuneControl_OnUnlockControllerFinished, Control) == 0x000000, "Member 'PyRuneControl_OnUnlockControllerFinished::Control' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnUnlockControllerFinished;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnControllerOwnerChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyRuneControl_OnControllerOwnerChanged final
 public:
 	EBattleSide                                   OwnerSide;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnControllerOwnerChanged) == 0x000001, "Wrong alignment on PyRuneControl_OnControllerOwnerChanged");
-static_assert(sizeof(PyRuneControl_OnControllerOwnerChanged) == 0x000001, "Wrong size on PyRuneControl_OnControllerOwnerChanged");
-static_assert(offsetof(PyRuneControl_OnControllerOwnerChanged, OwnerSide) == 0x000000, "Member 'PyRuneControl_OnControllerOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnControllerOwnerChanged;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnReachMaxTopHeight
 // 0x0004 (0x0004 - 0x0000)
@@ -68,9 +60,7 @@ struct PyRuneControl_OnReachMaxTopHeight final
 public:
 	float                                         delay_time;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnReachMaxTopHeight) == 0x000004, "Wrong alignment on PyRuneControl_OnReachMaxTopHeight");
-static_assert(sizeof(PyRuneControl_OnReachMaxTopHeight) == 0x000004, "Wrong size on PyRuneControl_OnReachMaxTopHeight");
-static_assert(offsetof(PyRuneControl_OnReachMaxTopHeight, delay_time) == 0x000000, "Member 'PyRuneControl_OnReachMaxTopHeight::delay_time' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnReachMaxTopHeight;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnBackToGround
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +69,7 @@ struct PyRuneControl_OnBackToGround final
 public:
 	float                                         progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnBackToGround) == 0x000004, "Wrong alignment on PyRuneControl_OnBackToGround");
-static_assert(sizeof(PyRuneControl_OnBackToGround) == 0x000004, "Wrong size on PyRuneControl_OnBackToGround");
-static_assert(offsetof(PyRuneControl_OnBackToGround, progress) == 0x000000, "Member 'PyRuneControl_OnBackToGround::progress' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnBackToGround;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnMoveForward
 // 0x0004 (0x0004 - 0x0000)
@@ -90,9 +78,7 @@ struct PyRuneControl_OnMoveForward final
 public:
 	float                                         progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnMoveForward) == 0x000004, "Wrong alignment on PyRuneControl_OnMoveForward");
-static_assert(sizeof(PyRuneControl_OnMoveForward) == 0x000004, "Wrong size on PyRuneControl_OnMoveForward");
-static_assert(offsetof(PyRuneControl_OnMoveForward, progress) == 0x000000, "Member 'PyRuneControl_OnMoveForward::progress' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnMoveForward;
 
 // PythonFunction PyRuneControl.PyRuneControl.OnControlVictoryProgress
 // 0x0010 (0x0010 - 0x0000)
@@ -102,10 +88,7 @@ public:
 	class AActor*                                 control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EBattleSide                                   BattleSide;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRuneControl_OnControlVictoryProgress) == 0x000008, "Wrong alignment on PyRuneControl_OnControlVictoryProgress");
-static_assert(sizeof(PyRuneControl_OnControlVictoryProgress) == 0x000010, "Wrong size on PyRuneControl_OnControlVictoryProgress");
-static_assert(offsetof(PyRuneControl_OnControlVictoryProgress, control) == 0x000000, "Member 'PyRuneControl_OnControlVictoryProgress::control' has a wrong offset!");
-static_assert(offsetof(PyRuneControl_OnControlVictoryProgress, BattleSide) == 0x000008, "Member 'PyRuneControl_OnControlVictoryProgress::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyRuneControl_OnControlVictoryProgress;
 
 }
 

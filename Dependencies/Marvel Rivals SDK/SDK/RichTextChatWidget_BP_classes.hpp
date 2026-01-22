@@ -23,15 +23,18 @@ class URichTextChatWidget_BP_C final : public UPyRichTextCustomWidgetDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextChatWidget_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextChatWidget_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextChatWidget_BP_C")
 	}
 	static class URichTextChatWidget_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextChatWidget_BP_C>();
 	}
 };
-static_assert(alignof(URichTextChatWidget_BP_C) == 0x000008, "Wrong alignment on URichTextChatWidget_BP_C");
-static_assert(sizeof(URichTextChatWidget_BP_C) == 0x000060, "Wrong size on URichTextChatWidget_BP_C");
+DUMPER7_ASSERTS_URichTextChatWidget_BP_C;
 
 }
 

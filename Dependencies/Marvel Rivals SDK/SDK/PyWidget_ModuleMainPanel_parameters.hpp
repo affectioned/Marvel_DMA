@@ -21,9 +21,7 @@ struct PyWidget_ModuleMainPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ModuleMainPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_ModuleMainPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_ModuleMainPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_ModuleMainPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_ModuleMainPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_ModuleMainPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ModuleMainPanel_OnVisibleChanged;
 
 // PythonFunction PyWidget_ModuleMainPanel.PyWidget_ModuleMainPanel.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_ModuleMainPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ModuleMainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_ModuleMainPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_ModuleMainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_ModuleMainPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_ModuleMainPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_ModuleMainPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ModuleMainPanel_OnCascadingVisibleChanged;
 
 }
 

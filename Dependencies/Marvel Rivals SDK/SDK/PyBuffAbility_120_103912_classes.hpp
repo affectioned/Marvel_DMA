@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103912.PyBuffAbility_120_10391205
-// 0x0008 (0x1418 - 0x1410)
+// 0x0008 (0x1430 - 0x1428)
 class UPyBuffAbility_120_10391205 final : public UMarvelTimelineAccelerateAbility
 {
 public:
-	int32                                         SpeedChangeCount;                                  // 0x1410(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpeedChangeCount;                                  // 0x1428(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10391205">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10391205")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10391205")
 	}
 	static class UPyBuffAbility_120_10391205* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10391205>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10391205) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10391205");
-static_assert(sizeof(UPyBuffAbility_120_10391205) == 0x001418, "Wrong size on UPyBuffAbility_120_10391205");
-static_assert(offsetof(UPyBuffAbility_120_10391205, SpeedChangeCount) == 0x001410, "Member 'UPyBuffAbility_120_10391205::SpeedChangeCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10391205;
 
 }
 

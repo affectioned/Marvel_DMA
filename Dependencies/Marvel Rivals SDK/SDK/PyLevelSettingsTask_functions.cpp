@@ -637,6 +637,101 @@ void APyLevelSettingsTask::Complete()
 }
 
 
+// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.ShowTaskUIInternal
+// (Native, Protected, BlueprintCallable)
+
+void APyLevelSettingsTask_Sensitivity::ShowTaskUIInternal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "ShowTaskUIInternal");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnNextClicked
+// (Native, Protected, BlueprintCallable)
+
+void APyLevelSettingsTask_Sensitivity::OnNextClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnNextClicked");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnLeftClicked
+// (Native, Protected, BlueprintCallable)
+
+void APyLevelSettingsTask_Sensitivity::OnLeftClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnLeftClicked");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnRightClicked
+// (Native, Protected, BlueprintCallable)
+
+void APyLevelSettingsTask_Sensitivity::OnRightClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnRightClicked");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.Complete
+// (Native, Protected, BlueprintCallable)
+
+void APyLevelSettingsTask_Sensitivity::Complete()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "Complete");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Shake.ShowTaskUIInternal
 // (Native, Protected, BlueprintCallable)
 
@@ -807,101 +902,6 @@ void APyLevelSettingsTask_Shake::OnLeftClicked()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyLevelSettingsTask_Shake", "OnLeftClicked");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.ShowTaskUIInternal
-// (Native, Protected, BlueprintCallable)
-
-void APyLevelSettingsTask_Sensitivity::ShowTaskUIInternal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "ShowTaskUIInternal");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnNextClicked
-// (Native, Protected, BlueprintCallable)
-
-void APyLevelSettingsTask_Sensitivity::OnNextClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnNextClicked");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnLeftClicked
-// (Native, Protected, BlueprintCallable)
-
-void APyLevelSettingsTask_Sensitivity::OnLeftClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnLeftClicked");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.OnRightClicked
-// (Native, Protected, BlueprintCallable)
-
-void APyLevelSettingsTask_Sensitivity::OnRightClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "OnRightClicked");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity.Complete
-// (Native, Protected, BlueprintCallable)
-
-void APyLevelSettingsTask_Sensitivity::Complete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSettingsTask_Sensitivity", "Complete");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

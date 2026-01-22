@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenProcessController_Nightmare">();
+		STATIC_CLASS_IMPL("PyHalloweenProcessController_Nightmare")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenProcessController_Nightmare")
 	}
 	static class APyHalloweenProcessController_Nightmare* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenProcessController_Nightmare>();
 	}
 };
-static_assert(alignof(APyHalloweenProcessController_Nightmare) == 0x000010, "Wrong alignment on APyHalloweenProcessController_Nightmare");
-static_assert(sizeof(APyHalloweenProcessController_Nightmare) == 0x0007E0, "Wrong size on APyHalloweenProcessController_Nightmare");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, LevelDataTableList) == 0x000760, "Member 'APyHalloweenProcessController_Nightmare::LevelDataTableList' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, PlayerNumbers) == 0x000770, "Member 'APyHalloweenProcessController_Nightmare::PlayerNumbers' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, BossIntroLS) == 0x000778, "Member 'APyHalloweenProcessController_Nightmare::BossIntroLS' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, TextConfig) == 0x0007C8, "Member 'APyHalloweenProcessController_Nightmare::TextConfig' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, OutsideCheckInterval) == 0x0007D0, "Member 'APyHalloweenProcessController_Nightmare::OutsideCheckInterval' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController_Nightmare, TeleportDelayTime) == 0x0007D4, "Member 'APyHalloweenProcessController_Nightmare::TeleportDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenProcessController_Nightmare;
 
 }
 

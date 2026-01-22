@@ -47,28 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySetFocus">();
+		STATIC_CLASS_IMPL("BTS_PySetFocus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySetFocus")
 	}
 	static class UBTS_PySetFocus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySetFocus>();
 	}
 };
-static_assert(alignof(UBTS_PySetFocus) == 0x000008, "Wrong alignment on UBTS_PySetFocus");
-static_assert(sizeof(UBTS_PySetFocus) == 0x000130, "Wrong size on UBTS_PySetFocus");
-static_assert(offsetof(UBTS_PySetFocus, FocusOnLocation) == 0x0000A8, "Member 'UBTS_PySetFocus::FocusOnLocation' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, InLocationToFocus) == 0x0000B0, "Member 'UBTS_PySetFocus::InLocationToFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, InActorToFocus) == 0x0000E0, "Member 'UBTS_PySetFocus::InActorToFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, UseExtentCenter) == 0x000110, "Member 'UBTS_PySetFocus::UseExtentCenter' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, UpdateTargetInTick) == 0x000111, "Member 'UBTS_PySetFocus::UpdateTargetInTick' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, MinRandomOffsetYaw) == 0x000114, "Member 'UBTS_PySetFocus::MinRandomOffsetYaw' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, MaxRandomOffsetYaw) == 0x000118, "Member 'UBTS_PySetFocus::MaxRandomOffsetYaw' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, MinRandomOffsetPitch) == 0x00011C, "Member 'UBTS_PySetFocus::MinRandomOffsetPitch' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, MaxRandomOffsetPitch) == 0x000120, "Member 'UBTS_PySetFocus::MaxRandomOffsetPitch' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, RandomOffsetTickInterval) == 0x000124, "Member 'UBTS_PySetFocus::RandomOffsetTickInterval' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, ClearAllPrevFocus) == 0x000128, "Member 'UBTS_PySetFocus::ClearAllPrevFocus' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, ClearFocusWhenExit) == 0x000129, "Member 'UBTS_PySetFocus::ClearFocusWhenExit' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetFocus, ClearFocusDelay) == 0x00012C, "Member 'UBTS_PySetFocus::ClearFocusDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySetFocus;
 
 }
 

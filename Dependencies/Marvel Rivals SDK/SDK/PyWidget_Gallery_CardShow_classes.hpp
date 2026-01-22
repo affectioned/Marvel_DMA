@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_CardShow">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_CardShow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_CardShow")
 	}
 	static class UPyWidget_Gallery_CardShow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_CardShow>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_CardShow) == 0x000008, "Wrong alignment on UPyWidget_Gallery_CardShow");
-static_assert(sizeof(UPyWidget_Gallery_CardShow) == 0x0003B8, "Wrong size on UPyWidget_Gallery_CardShow");
+DUMPER7_ASSERTS_UPyWidget_Gallery_CardShow;
 
 }
 

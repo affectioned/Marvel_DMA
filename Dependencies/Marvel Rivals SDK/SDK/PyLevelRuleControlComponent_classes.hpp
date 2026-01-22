@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -50,27 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyLevelRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelRuleControlComponent")
 	}
 	static class UPyLevelRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyLevelRuleControlComponent) == 0x000008, "Wrong alignment on UPyLevelRuleControlComponent");
-static_assert(sizeof(UPyLevelRuleControlComponent) == 0x000208, "Wrong size on UPyLevelRuleControlComponent");
-static_assert(offsetof(UPyLevelRuleControlComponent, RoundNum) == 0x0001A8, "Member 'UPyLevelRuleControlComponent::RoundNum' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, RoundIndex) == 0x0001AC, "Member 'UPyLevelRuleControlComponent::RoundIndex' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, HaveNextRound) == 0x0001B0, "Member 'UPyLevelRuleControlComponent::HaveNextRound' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, BlueTeamPoint) == 0x0001B4, "Member 'UPyLevelRuleControlComponent::BlueTeamPoint' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, RedTeamPoint) == 0x0001B8, "Member 'UPyLevelRuleControlComponent::RedTeamPoint' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, SwitchBattleSideNextRound) == 0x0001BC, "Member 'UPyLevelRuleControlComponent::SwitchBattleSideNextRound' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, BattleSideSwitched) == 0x0001C0, "Member 'UPyLevelRuleControlComponent::BattleSideSwitched' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, RoundWinnerSideList) == 0x0001C8, "Member 'UPyLevelRuleControlComponent::RoundWinnerSideList' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, ScoreWinnerSideList) == 0x0001D8, "Member 'UPyLevelRuleControlComponent::ScoreWinnerSideList' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, FinalWinnerSide) == 0x0001E8, "Member 'UPyLevelRuleControlComponent::FinalWinnerSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, GlobalRule) == 0x0001F0, "Member 'UPyLevelRuleControlComponent::GlobalRule' has a wrong offset!");
-static_assert(offsetof(UPyLevelRuleControlComponent, RoundRuleList) == 0x0001F8, "Member 'UPyLevelRuleControlComponent::RoundRuleList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelRuleControlComponent;
 
 }
 

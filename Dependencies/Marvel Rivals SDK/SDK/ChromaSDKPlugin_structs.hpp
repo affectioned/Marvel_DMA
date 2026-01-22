@@ -285,8 +285,7 @@ struct alignas(0x04) FChromaSDKGuid final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChromaSDKGuid) == 0x000004, "Wrong alignment on FChromaSDKGuid");
-static_assert(sizeof(FChromaSDKGuid) == 0x000010, "Wrong size on FChromaSDKGuid");
+DUMPER7_ASSERTS_FChromaSDKGuid;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKEffectResult
 // 0x0014 (0x0014 - 0x0000)
@@ -296,10 +295,7 @@ public:
 	int32                                         Result;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FChromaSDKGuid                         EffectId;                                          // 0x0004(0x0010)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKEffectResult) == 0x000004, "Wrong alignment on FChromaSDKEffectResult");
-static_assert(sizeof(FChromaSDKEffectResult) == 0x000014, "Wrong size on FChromaSDKEffectResult");
-static_assert(offsetof(FChromaSDKEffectResult, Result) == 0x000000, "Member 'FChromaSDKEffectResult::Result' has a wrong offset!");
-static_assert(offsetof(FChromaSDKEffectResult, EffectId) == 0x000004, "Member 'FChromaSDKEffectResult::EffectId' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKEffectResult;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKColors
 // 0x0010 (0x0010 - 0x0000)
@@ -308,9 +304,7 @@ struct FChromaSDKColors final
 public:
 	TArray<struct FLinearColor>                   Colors;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKColors) == 0x000008, "Wrong alignment on FChromaSDKColors");
-static_assert(sizeof(FChromaSDKColors) == 0x000010, "Wrong size on FChromaSDKColors");
-static_assert(offsetof(FChromaSDKColors, Colors) == 0x000000, "Member 'FChromaSDKColors::Colors' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKColors;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKColorFrame1D
 // 0x0018 (0x0018 - 0x0000)
@@ -320,9 +314,7 @@ public:
 	TArray<struct FLinearColor>                   Colors;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChromaSDKColorFrame1D) == 0x000008, "Wrong alignment on FChromaSDKColorFrame1D");
-static_assert(sizeof(FChromaSDKColorFrame1D) == 0x000018, "Wrong size on FChromaSDKColorFrame1D");
-static_assert(offsetof(FChromaSDKColorFrame1D, Colors) == 0x000000, "Member 'FChromaSDKColorFrame1D::Colors' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKColorFrame1D;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKColorFrame2D
 // 0x0018 (0x0018 - 0x0000)
@@ -332,9 +324,7 @@ public:
 	TArray<struct FChromaSDKColors>               Colors;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChromaSDKColorFrame2D) == 0x000008, "Wrong alignment on FChromaSDKColorFrame2D");
-static_assert(sizeof(FChromaSDKColorFrame2D) == 0x000018, "Wrong size on FChromaSDKColorFrame2D");
-static_assert(offsetof(FChromaSDKColorFrame2D, Colors) == 0x000000, "Member 'FChromaSDKColorFrame2D::Colors' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKColorFrame2D;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKAppInfoType
 // 0x0048 (0x0048 - 0x0000)
@@ -348,14 +338,7 @@ public:
 	int32                                         SupportedDevice;                                   // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Category;                                          // 0x0044(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKAppInfoType) == 0x000008, "Wrong alignment on FChromaSDKAppInfoType");
-static_assert(sizeof(FChromaSDKAppInfoType) == 0x000048, "Wrong size on FChromaSDKAppInfoType");
-static_assert(offsetof(FChromaSDKAppInfoType, Title) == 0x000000, "Member 'FChromaSDKAppInfoType::Title' has a wrong offset!");
-static_assert(offsetof(FChromaSDKAppInfoType, Description) == 0x000010, "Member 'FChromaSDKAppInfoType::Description' has a wrong offset!");
-static_assert(offsetof(FChromaSDKAppInfoType, Author_Name) == 0x000020, "Member 'FChromaSDKAppInfoType::Author_Name' has a wrong offset!");
-static_assert(offsetof(FChromaSDKAppInfoType, Author_Contact) == 0x000030, "Member 'FChromaSDKAppInfoType::Author_Contact' has a wrong offset!");
-static_assert(offsetof(FChromaSDKAppInfoType, SupportedDevice) == 0x000040, "Member 'FChromaSDKAppInfoType::SupportedDevice' has a wrong offset!");
-static_assert(offsetof(FChromaSDKAppInfoType, Category) == 0x000044, "Member 'FChromaSDKAppInfoType::Category' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKAppInfoType;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKDeviceFrameIndex
 // 0x0010 (0x0010 - 0x0000)
@@ -364,9 +347,7 @@ struct FChromaSDKDeviceFrameIndex final
 public:
 	TArray<int32>                                 FrameIndex;                                        // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKDeviceFrameIndex) == 0x000008, "Wrong alignment on FChromaSDKDeviceFrameIndex");
-static_assert(sizeof(FChromaSDKDeviceFrameIndex) == 0x000010, "Wrong size on FChromaSDKDeviceFrameIndex");
-static_assert(offsetof(FChromaSDKDeviceFrameIndex, FrameIndex) == 0x000000, "Member 'FChromaSDKDeviceFrameIndex::FrameIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKDeviceFrameIndex;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKSceneEffect
 // 0x0038 (0x0038 - 0x0000)
@@ -384,16 +365,7 @@ public:
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FChromaSDKDeviceFrameIndex             FrameIndex;                                        // 0x0028(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKSceneEffect) == 0x000008, "Wrong alignment on FChromaSDKSceneEffect");
-static_assert(sizeof(FChromaSDKSceneEffect) == 0x000038, "Wrong size on FChromaSDKSceneEffect");
-static_assert(offsetof(FChromaSDKSceneEffect, Animation) == 0x000000, "Member 'FChromaSDKSceneEffect::Animation' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, State) == 0x000010, "Member 'FChromaSDKSceneEffect::State' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, PrimaryColor) == 0x000014, "Member 'FChromaSDKSceneEffect::PrimaryColor' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, SecondaryColor) == 0x000018, "Member 'FChromaSDKSceneEffect::SecondaryColor' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, Speed) == 0x00001C, "Member 'FChromaSDKSceneEffect::Speed' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, Blend) == 0x000020, "Member 'FChromaSDKSceneEffect::Blend' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, Mode) == 0x000021, "Member 'FChromaSDKSceneEffect::Mode' has a wrong offset!");
-static_assert(offsetof(FChromaSDKSceneEffect, FrameIndex) == 0x000028, "Member 'FChromaSDKSceneEffect::FrameIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKSceneEffect;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKScene
 // 0x0010 (0x0010 - 0x0000)
@@ -402,9 +374,7 @@ struct FChromaSDKScene final
 public:
 	TArray<struct FChromaSDKSceneEffect>          Effects;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKScene) == 0x000008, "Wrong alignment on FChromaSDKScene");
-static_assert(sizeof(FChromaSDKScene) == 0x000010, "Wrong size on FChromaSDKScene");
-static_assert(offsetof(FChromaSDKScene, Effects) == 0x000000, "Member 'FChromaSDKScene::Effects' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKScene;
 
 // ScriptStruct ChromaSDKPlugin.ChromaSDKDeviceInfoType
 // 0x0008 (0x0008 - 0x0000)
@@ -415,10 +385,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Connected;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChromaSDKDeviceInfoType) == 0x000004, "Wrong alignment on FChromaSDKDeviceInfoType");
-static_assert(sizeof(FChromaSDKDeviceInfoType) == 0x000008, "Wrong size on FChromaSDKDeviceInfoType");
-static_assert(offsetof(FChromaSDKDeviceInfoType, DeviceType) == 0x000000, "Member 'FChromaSDKDeviceInfoType::DeviceType' has a wrong offset!");
-static_assert(offsetof(FChromaSDKDeviceInfoType, Connected) == 0x000004, "Member 'FChromaSDKDeviceInfoType::Connected' has a wrong offset!");
+DUMPER7_ASSERTS_FChromaSDKDeviceInfoType;
 
 }
 

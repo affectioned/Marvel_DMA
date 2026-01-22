@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyLevelSubsystem.PyLevelSubsystem
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0258 - 0x0258)
 class UPyLevelSubsystem : public ULevelSubsystem
 {
 public:
@@ -35,17 +35,6 @@ public:
 	class APyObjective* GetCurrentObjective();
 	float GetPreparingRemainingTime();
 	int32 GetPlayerCount();
-	float GetMonsterInfo();
-	int32 GetWaveIdx();
-	class AActor* GetProtector();
-	float GetHealthFactor();
-	float GetDamageFactor();
-	float GetDifficultyFactor();
-	float GetBossDifficultyHealthFactor(int32 BossID);
-	float GetBossDifficultyDamageFactor(int32 BossID);
-	float GetBossWaveHealthFactor(int32 BossID);
-	float GetBossWaveDamageFactor(int32 BossID);
-	float GetBossDifficultyCriticalStrikeFactor();
 	bool IsEndLessDifficulty();
 	struct FTransform GetResetTransform();
 	TArray<class AActor*> GetCampInsideCharacterList();
@@ -55,8 +44,6 @@ public:
 	int32 GetCurrentPartIndex();
 	TArray<class AActor*> GetPayloadTraceList();
 	int32 GetBattleSideByTeamID(int32 TeamID);
-	float GetTimeOfRespawn(class APlayerState* player_state);
-	void TrySpawnPlayer(class AMarvelPlayerState* PlayerState, bool ForceSpawn, ESpawnMethod Method, int32 HeroID, const struct FAttributeModifierParameter& ModifierParam);
 	void RecoverHeroChoosable(class APlayerState* ps);
 	bool IsNoviceMode();
 	bool ShouldCreateHighlightActorComponent();
@@ -71,16 +58,13 @@ public:
 	bool IsSameTeamGroupByPlayerState(class AMarvelPlayerState* ps1, class AMarvelPlayerState* ps2);
 	class FText GetTeamGroupName(class AMarvelPlayerState* ps);
 	int32 AllocateBattleSide(const struct FPlayerInfo& pi);
-	TArray<class AActor*> PyGetBirthBasesByTeam(int32 TeamID);
-	TArray<class AActor*> PyGetBirthDoorsByTeam(int32 TeamID);
+	float GetEnemyColorProportionForAI(EBattleSide querier_side, const struct FVector& query_location, const struct FVector2D& query_extent);
 	int32 GetSubMapID();
 	float GetPayloadIndexAndProgress();
 	int32 GetStageIndex();
 	struct FVector GetPositionInPayloadTrace(float Distance);
 	void ForceKillPlayer(class AMarvelBaseCharacter* Target);
 	bool PyIsInBorder(const struct FVector& InLocation);
-	struct FTransform PyFindRespawnTransform(class AController* InController);
-	void GetBirthBase(EBattleSide battle_side, bool acitve);
 	void SetMarvelSplineColor(class UMarvelSplineComponent* MarvelSpline, const struct FVector& Color);
 	int32 GetHeroChooseTime();
 	void PreCharacterDestroy(class AActor* character);
@@ -97,18 +81,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSubsystem">();
+		STATIC_CLASS_IMPL("PyLevelSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSubsystem")
 	}
 	static class UPyLevelSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSubsystem>();
 	}
 };
-static_assert(alignof(UPyLevelSubsystem) == 0x000008, "Wrong alignment on UPyLevelSubsystem");
-static_assert(sizeof(UPyLevelSubsystem) == 0x0002D0, "Wrong size on UPyLevelSubsystem");
+DUMPER7_ASSERTS_UPyLevelSubsystem;
 
 // PythonClass PyLevelSubsystem.PyReplayLevelSubsystem
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0258 - 0x0258)
 class UPyReplayLevelSubsystem final : public UPyLevelSubsystem
 {
 public:
@@ -117,15 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReplayLevelSubsystem">();
+		STATIC_CLASS_IMPL("PyReplayLevelSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReplayLevelSubsystem")
 	}
 	static class UPyReplayLevelSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyReplayLevelSubsystem>();
 	}
 };
-static_assert(alignof(UPyReplayLevelSubsystem) == 0x000008, "Wrong alignment on UPyReplayLevelSubsystem");
-static_assert(sizeof(UPyReplayLevelSubsystem) == 0x0002D0, "Wrong size on UPyReplayLevelSubsystem");
+DUMPER7_ASSERTS_UPyReplayLevelSubsystem;
 
 }
 

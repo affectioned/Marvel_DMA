@@ -23,15 +23,18 @@ class UPyForceKillRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyForceKillRuleComponent">();
+		STATIC_CLASS_IMPL("PyForceKillRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyForceKillRuleComponent")
 	}
 	static class UPyForceKillRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyForceKillRuleComponent>();
 	}
 };
-static_assert(alignof(UPyForceKillRuleComponent) == 0x000008, "Wrong alignment on UPyForceKillRuleComponent");
-static_assert(sizeof(UPyForceKillRuleComponent) == 0x000108, "Wrong size on UPyForceKillRuleComponent");
+DUMPER7_ASSERTS_UPyForceKillRuleComponent;
 
 }
 

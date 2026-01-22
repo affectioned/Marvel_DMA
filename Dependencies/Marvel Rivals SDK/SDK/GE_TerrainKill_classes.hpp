@@ -23,15 +23,18 @@ class UGE_TerrainKill_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_TerrainKill_C">();
+		BP_STATIC_CLASS_IMPL("GE_TerrainKill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_TerrainKill_C")
 	}
 	static class UGE_TerrainKill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_TerrainKill_C>();
 	}
 };
-static_assert(alignof(UGE_TerrainKill_C) == 0x000008, "Wrong alignment on UGE_TerrainKill_C");
-static_assert(sizeof(UGE_TerrainKill_C) == 0x001418, "Wrong size on UGE_TerrainKill_C");
+DUMPER7_ASSERTS_UGE_TerrainKill_C;
 
 }
 

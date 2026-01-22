@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilitiesRuleComponent">();
+		STATIC_CLASS_IMPL("PyAbilitiesRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilitiesRuleComponent")
 	}
 	static class UPyAbilitiesRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilitiesRuleComponent>();
 	}
 };
-static_assert(alignof(UPyAbilitiesRuleComponent) == 0x000008, "Wrong alignment on UPyAbilitiesRuleComponent");
-static_assert(sizeof(UPyAbilitiesRuleComponent) == 0x000118, "Wrong size on UPyAbilitiesRuleComponent");
+DUMPER7_ASSERTS_UPyAbilitiesRuleComponent;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVSyncHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVSyncHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVSyncHandler")
 	}
 	static class UUISettingEntryVSyncHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVSyncHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVSyncHandler) == 0x000008, "Wrong alignment on UUISettingEntryVSyncHandler");
-static_assert(sizeof(UUISettingEntryVSyncHandler) == 0x000030, "Wrong size on UUISettingEntryVSyncHandler");
+DUMPER7_ASSERTS_UUISettingEntryVSyncHandler;
 
 }
 

@@ -24,9 +24,7 @@ struct PyAbility_103201_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103201_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103201_CanActivate");
-static_assert(sizeof(PyAbility_103201_CanActivate) == 0x000001, "Wrong size on PyAbility_103201_CanActivate");
-static_assert(offsetof(PyAbility_103201_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103201_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103201_CanActivate;
 
 // PythonFunction PyAbility_103201.PyAbility_103201.OnKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103201_OnKillOther) == 0x000008, "Wrong alignment on PyAbility_103201_OnKillOther");
-static_assert(sizeof(PyAbility_103201_OnKillOther) == 0x000028, "Wrong size on PyAbility_103201_OnKillOther");
-static_assert(offsetof(PyAbility_103201_OnKillOther, InSourceAvatar) == 0x000000, "Member 'PyAbility_103201_OnKillOther::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_103201_OnKillOther, InTargetAvatar) == 0x000008, "Member 'PyAbility_103201_OnKillOther::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_103201_OnKillOther, ParamHandle) == 0x000010, "Member 'PyAbility_103201_OnKillOther::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103201_OnKillOther;
 
 // PythonFunction PyAbility_103201.PyCue_Ability_Instant_10320101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -51,10 +45,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Instant_10320101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10320101_OnExecuteFX");
-static_assert(sizeof(PyCue_Ability_Instant_10320101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Ability_Instant_10320101_OnExecuteFX");
-static_assert(offsetof(PyCue_Ability_Instant_10320101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10320101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10320101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10320101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10320101_OnExecuteFX;
 
 // PythonFunction PyAbility_103201.PyCue_Ability_Loop_10320101.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -64,10 +55,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10320101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10320101_WhileActiveFX");
-static_assert(sizeof(PyCue_Ability_Loop_10320101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10320101_WhileActiveFX");
-static_assert(offsetof(PyCue_Ability_Loop_10320101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10320101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10320101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10320101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10320101_WhileActiveFX;
 
 }
 

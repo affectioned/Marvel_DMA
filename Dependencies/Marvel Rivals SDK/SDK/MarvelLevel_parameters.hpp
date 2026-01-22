@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
@@ -28,9 +28,7 @@ struct EnvironmentGlobalActor_ChangeQuality final
 public:
 	bool                                          IsHighQuality;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EnvironmentGlobalActor_ChangeQuality) == 0x000001, "Wrong alignment on EnvironmentGlobalActor_ChangeQuality");
-static_assert(sizeof(EnvironmentGlobalActor_ChangeQuality) == 0x000001, "Wrong size on EnvironmentGlobalActor_ChangeQuality");
-static_assert(offsetof(EnvironmentGlobalActor_ChangeQuality, IsHighQuality) == 0x000000, "Member 'EnvironmentGlobalActor_ChangeQuality::IsHighQuality' has a wrong offset!");
+DUMPER7_ASSERTS_EnvironmentGlobalActor_ChangeQuality;
 
 // Function MarvelLevel.FillColorBox.GeneratePaintSceneRebuildData
 // 0x0028 (0x0028 - 0x0000)
@@ -39,9 +37,7 @@ struct FillColorBox_GeneratePaintSceneRebuildData final
 public:
 	struct FPaintSceneReconnectRebuildData        ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FillColorBox_GeneratePaintSceneRebuildData) == 0x000008, "Wrong alignment on FillColorBox_GeneratePaintSceneRebuildData");
-static_assert(sizeof(FillColorBox_GeneratePaintSceneRebuildData) == 0x000028, "Wrong size on FillColorBox_GeneratePaintSceneRebuildData");
-static_assert(offsetof(FillColorBox_GeneratePaintSceneRebuildData, ReturnValue) == 0x000000, "Member 'FillColorBox_GeneratePaintSceneRebuildData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FillColorBox_GeneratePaintSceneRebuildData;
 
 // Function MarvelLevel.FillColorBox.GetItemsState
 // 0x0018 (0x0018 - 0x0000)
@@ -52,10 +48,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FillColorBox_GetItemsState) == 0x000008, "Wrong alignment on FillColorBox_GetItemsState");
-static_assert(sizeof(FillColorBox_GetItemsState) == 0x000018, "Wrong size on FillColorBox_GetItemsState");
-static_assert(offsetof(FillColorBox_GetItemsState, InArrayLength) == 0x000000, "Member 'FillColorBox_GetItemsState::InArrayLength' has a wrong offset!");
-static_assert(offsetof(FillColorBox_GetItemsState, ReturnValue) == 0x000008, "Member 'FillColorBox_GetItemsState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_FillColorBox_GetItemsState;
 
 // Function MarvelLevel.FillColorBox.InitializeItems
 // 0x0004 (0x0004 - 0x0000)
@@ -64,9 +57,7 @@ struct FillColorBox_InitializeItems final
 public:
 	int32                                         InArrayLength;                                     // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FillColorBox_InitializeItems) == 0x000004, "Wrong alignment on FillColorBox_InitializeItems");
-static_assert(sizeof(FillColorBox_InitializeItems) == 0x000004, "Wrong size on FillColorBox_InitializeItems");
-static_assert(offsetof(FillColorBox_InitializeItems, InArrayLength) == 0x000000, "Member 'FillColorBox_InitializeItems::InArrayLength' has a wrong offset!");
+DUMPER7_ASSERTS_FillColorBox_InitializeItems;
 
 // Function MarvelLevel.FillColorBox.UpdateItemState
 // 0x0018 (0x0018 - 0x0000)
@@ -77,10 +68,40 @@ public:
 	int32                                         NewState;                                          // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FillColorBox_UpdateItemState) == 0x000008, "Wrong alignment on FillColorBox_UpdateItemState");
-static_assert(sizeof(FillColorBox_UpdateItemState) == 0x000018, "Wrong size on FillColorBox_UpdateItemState");
-static_assert(offsetof(FillColorBox_UpdateItemState, ArrayIndexList) == 0x000000, "Member 'FillColorBox_UpdateItemState::ArrayIndexList' has a wrong offset!");
-static_assert(offsetof(FillColorBox_UpdateItemState, NewState) == 0x000010, "Member 'FillColorBox_UpdateItemState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_FillColorBox_UpdateItemState;
+
+// Function MarvelLevel.FillColorBoxV2.GetIndexListInBox
+// 0x0020 (0x0020 - 0x0000)
+struct FillColorBoxV2_GetIndexListInBox final
+{
+public:
+	int32                                         Box_x_min;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Box_x_max;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Box_y_min;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Box_y_max;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FillColorBoxV2_GetIndexListInBox;
+
+// Function MarvelLevel.FillColorBoxV2.GetIndexListInRange
+// 0x0030 (0x0030 - 0x0000)
+struct FillColorBoxV2_GetIndexListInRange final
+{
+public:
+	struct FVector                                CenterPos;                                         // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        Radius;                                            // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FillColorBoxV2_GetIndexListInRange;
+
+// Function MarvelLevel.LevelPackageRulesFuncLibrary.UpdatePackageDataTables
+// 0x0001 (0x0001 - 0x0000)
+struct LevelPackageRulesFuncLibrary_UpdatePackageDataTables final
+{
+public:
+	struct FMarvelPackageContext                  InPackageContext;                                  // 0x0000(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelPackageRulesFuncLibrary_UpdatePackageDataTables;
 
 // Function MarvelLevel.FillColorPoint.FillColor
 // 0x0001 (0x0001 - 0x0000)
@@ -89,382 +110,7 @@ struct FillColorPoint_FillColor final
 public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FillColorPoint_FillColor) == 0x000001, "Wrong alignment on FillColorPoint_FillColor");
-static_assert(sizeof(FillColorPoint_FillColor) == 0x000001, "Wrong size on FillColorPoint_FillColor");
-static_assert(offsetof(FillColorPoint_FillColor, BattleSide) == 0x000000, "Member 'FillColorPoint_FillColor::BattleSide' has a wrong offset!");
-
-// Function MarvelLevel.LevelAudioActor.PyGetDefaultAkComponent
-// 0x0008 (0x0008 - 0x0000)
-struct LevelAudioActor_PyGetDefaultAkComponent final
-{
-public:
-	class UAkComponent*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelAudioActor_PyGetDefaultAkComponent) == 0x000008, "Wrong alignment on LevelAudioActor_PyGetDefaultAkComponent");
-static_assert(sizeof(LevelAudioActor_PyGetDefaultAkComponent) == 0x000008, "Wrong size on LevelAudioActor_PyGetDefaultAkComponent");
-static_assert(offsetof(LevelAudioActor_PyGetDefaultAkComponent, ReturnValue) == 0x000000, "Member 'LevelAudioActor_PyGetDefaultAkComponent::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelCustomEventSubsystem.GetLevelCustomEventSubsystem
-// 0x0010 (0x0010 - 0x0000)
-struct LevelCustomEventSubsystem_GetLevelCustomEventSubsystem final
-{
-public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelCustomEventSubsystem*             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelCustomEventSubsystem_GetLevelCustomEventSubsystem) == 0x000008, "Wrong alignment on LevelCustomEventSubsystem_GetLevelCustomEventSubsystem");
-static_assert(sizeof(LevelCustomEventSubsystem_GetLevelCustomEventSubsystem) == 0x000010, "Wrong size on LevelCustomEventSubsystem_GetLevelCustomEventSubsystem");
-static_assert(offsetof(LevelCustomEventSubsystem_GetLevelCustomEventSubsystem, WorldContextObject) == 0x000000, "Member 'LevelCustomEventSubsystem_GetLevelCustomEventSubsystem::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelCustomEventSubsystem_GetLevelCustomEventSubsystem, ReturnValue) == 0x000008, "Member 'LevelCustomEventSubsystem_GetLevelCustomEventSubsystem::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.DestroyServerConnection
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_DestroyServerConnection final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bResetNetGUIDs;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCleanPC;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_DestroyServerConnection) == 0x000008, "Wrong alignment on LevelFunctionLibrary_DestroyServerConnection");
-static_assert(sizeof(LevelFunctionLibrary_DestroyServerConnection) == 0x000010, "Wrong size on LevelFunctionLibrary_DestroyServerConnection");
-static_assert(offsetof(LevelFunctionLibrary_DestroyServerConnection, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_DestroyServerConnection::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_DestroyServerConnection, bResetNetGUIDs) == 0x000008, "Member 'LevelFunctionLibrary_DestroyServerConnection::bResetNetGUIDs' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_DestroyServerConnection, bCleanPC) == 0x000009, "Member 'LevelFunctionLibrary_DestroyServerConnection::bCleanPC' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.DestroySomeNetObjects
-// 0x0008 (0x0008 - 0x0000)
-struct LevelFunctionLibrary_DestroySomeNetObjects final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_DestroySomeNetObjects) == 0x000008, "Wrong alignment on LevelFunctionLibrary_DestroySomeNetObjects");
-static_assert(sizeof(LevelFunctionLibrary_DestroySomeNetObjects) == 0x000008, "Wrong size on LevelFunctionLibrary_DestroySomeNetObjects");
-static_assert(offsetof(LevelFunctionLibrary_DestroySomeNetObjects, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_DestroySomeNetObjects::WorldContextObject' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.DestroyWorldNetDrive
-// 0x0008 (0x0008 - 0x0000)
-struct LevelFunctionLibrary_DestroyWorldNetDrive final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_DestroyWorldNetDrive) == 0x000008, "Wrong alignment on LevelFunctionLibrary_DestroyWorldNetDrive");
-static_assert(sizeof(LevelFunctionLibrary_DestroyWorldNetDrive) == 0x000008, "Wrong size on LevelFunctionLibrary_DestroyWorldNetDrive");
-static_assert(offsetof(LevelFunctionLibrary_DestroyWorldNetDrive, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_DestroyWorldNetDrive::WorldContextObject' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.DestroyWorldNetDriver
-// 0x0008 (0x0008 - 0x0000)
-struct LevelFunctionLibrary_DestroyWorldNetDriver final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_DestroyWorldNetDriver) == 0x000008, "Wrong alignment on LevelFunctionLibrary_DestroyWorldNetDriver");
-static_assert(sizeof(LevelFunctionLibrary_DestroyWorldNetDriver) == 0x000008, "Wrong size on LevelFunctionLibrary_DestroyWorldNetDriver");
-static_assert(offsetof(LevelFunctionLibrary_DestroyWorldNetDriver, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_DestroyWorldNetDriver::WorldContextObject' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.FindDeathCollectionIndex
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_FindDeathCollectionIndex final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_FindDeathCollectionIndex) == 0x000008, "Wrong alignment on LevelFunctionLibrary_FindDeathCollectionIndex");
-static_assert(sizeof(LevelFunctionLibrary_FindDeathCollectionIndex) == 0x000010, "Wrong size on LevelFunctionLibrary_FindDeathCollectionIndex");
-static_assert(offsetof(LevelFunctionLibrary_FindDeathCollectionIndex, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_FindDeathCollectionIndex::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_FindDeathCollectionIndex, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_FindDeathCollectionIndex::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.FindMovieSceneTrack
-// 0x0038 (0x0038 - 0x0000)
-struct LevelFunctionLibrary_FindMovieSceneTrack final
-{
-public:
-	class UMovieScene*                            InMovieScene;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMovieSceneTrack>           TrackClass;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  ObjectGuid;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   TrackName;                                         // 0x0020(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMovieSceneTrack*                       ReturnValue;                                       // 0x0030(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_FindMovieSceneTrack) == 0x000008, "Wrong alignment on LevelFunctionLibrary_FindMovieSceneTrack");
-static_assert(sizeof(LevelFunctionLibrary_FindMovieSceneTrack) == 0x000038, "Wrong size on LevelFunctionLibrary_FindMovieSceneTrack");
-static_assert(offsetof(LevelFunctionLibrary_FindMovieSceneTrack, InMovieScene) == 0x000000, "Member 'LevelFunctionLibrary_FindMovieSceneTrack::InMovieScene' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_FindMovieSceneTrack, TrackClass) == 0x000008, "Member 'LevelFunctionLibrary_FindMovieSceneTrack::TrackClass' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_FindMovieSceneTrack, ObjectGuid) == 0x000010, "Member 'LevelFunctionLibrary_FindMovieSceneTrack::ObjectGuid' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_FindMovieSceneTrack, TrackName) == 0x000020, "Member 'LevelFunctionLibrary_FindMovieSceneTrack::TrackName' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_FindMovieSceneTrack, ReturnValue) == 0x000030, "Member 'LevelFunctionLibrary_FindMovieSceneTrack::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetAllActorsWithTagInWorld
-// 0x0068 (0x0068 - 0x0000)
-struct LevelFunctionLibrary_GetAllActorsWithTagInWorld final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FName>                           Tags;                                              // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TMap<class FName, struct FActorsWithSameOneTag> OutActors;                                       // 0x0018(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetAllActorsWithTagInWorld) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetAllActorsWithTagInWorld");
-static_assert(sizeof(LevelFunctionLibrary_GetAllActorsWithTagInWorld) == 0x000068, "Wrong size on LevelFunctionLibrary_GetAllActorsWithTagInWorld");
-static_assert(offsetof(LevelFunctionLibrary_GetAllActorsWithTagInWorld, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_GetAllActorsWithTagInWorld::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetAllActorsWithTagInWorld, Tags) == 0x000008, "Member 'LevelFunctionLibrary_GetAllActorsWithTagInWorld::Tags' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetAllActorsWithTagInWorld, OutActors) == 0x000018, "Member 'LevelFunctionLibrary_GetAllActorsWithTagInWorld::OutActors' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetAllLevelAlwaysLoadedRelatedAssetPaths
-// 0x0018 (0x0018 - 0x0000)
-struct LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths final
-{
-public:
-	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths");
-static_assert(sizeof(LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths) == 0x000018, "Wrong size on LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths");
-static_assert(offsetof(LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths, InWorld) == 0x000000, "Member 'LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths::InWorld' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetAllLevelAssetPaths
-// 0x0018 (0x0018 - 0x0000)
-struct LevelFunctionLibrary_GetAllLevelAssetPaths final
-{
-public:
-	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetAllLevelAssetPaths) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetAllLevelAssetPaths");
-static_assert(sizeof(LevelFunctionLibrary_GetAllLevelAssetPaths) == 0x000018, "Wrong size on LevelFunctionLibrary_GetAllLevelAssetPaths");
-static_assert(offsetof(LevelFunctionLibrary_GetAllLevelAssetPaths, InWorld) == 0x000000, "Member 'LevelFunctionLibrary_GetAllLevelAssetPaths::InWorld' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetAllLevelAssetPaths, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_GetAllLevelAssetPaths::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetDerivedUClasses
-// 0x0020 (0x0020 - 0x0000)
-struct LevelFunctionLibrary_GetDerivedUClasses final
-{
-public:
-	const class UClass*                           ClassToLookFor;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRecursive;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UClass*>                         ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetDerivedUClasses) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetDerivedUClasses");
-static_assert(sizeof(LevelFunctionLibrary_GetDerivedUClasses) == 0x000020, "Wrong size on LevelFunctionLibrary_GetDerivedUClasses");
-static_assert(offsetof(LevelFunctionLibrary_GetDerivedUClasses, ClassToLookFor) == 0x000000, "Member 'LevelFunctionLibrary_GetDerivedUClasses::ClassToLookFor' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetDerivedUClasses, bRecursive) == 0x000008, "Member 'LevelFunctionLibrary_GetDerivedUClasses::bRecursive' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetDerivedUClasses, ReturnValue) == 0x000010, "Member 'LevelFunctionLibrary_GetDerivedUClasses::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetGameInstanceSubsystem
-// 0x0018 (0x0018 - 0x0000)
-struct LevelFunctionLibrary_GetGameInstanceSubsystem final
-{
-public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UGameInstanceSubsystem>     SubsystemClass;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGameInstanceSubsystem*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetGameInstanceSubsystem) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetGameInstanceSubsystem");
-static_assert(sizeof(LevelFunctionLibrary_GetGameInstanceSubsystem) == 0x000018, "Wrong size on LevelFunctionLibrary_GetGameInstanceSubsystem");
-static_assert(offsetof(LevelFunctionLibrary_GetGameInstanceSubsystem, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_GetGameInstanceSubsystem::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetGameInstanceSubsystem, SubsystemClass) == 0x000008, "Member 'LevelFunctionLibrary_GetGameInstanceSubsystem::SubsystemClass' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetGameInstanceSubsystem, ReturnValue) == 0x000010, "Member 'LevelFunctionLibrary_GetGameInstanceSubsystem::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201ForceFullPurgeInterval
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201ForceFullPurgeInterval final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201ForceFullPurgeInterval) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201ForceFullPurgeInterval");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201ForceFullPurgeInterval) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201ForceFullPurgeInterval");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201ForceFullPurgeInterval, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201ForceFullPurgeInterval::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeInterval
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201FullPurgeInterval final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201FullPurgeInterval) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201FullPurgeInterval");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201FullPurgeInterval) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201FullPurgeInterval");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201FullPurgeInterval, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201FullPurgeInterval::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeMemoryPS4ThresholdMB
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeMemoryThresholdMB
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201IncrementalPurgeInterval
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201IncrementalPurgeInterval final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201IncrementalPurgeInterval) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201IncrementalPurgeInterval");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201IncrementalPurgeInterval) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201IncrementalPurgeInterval");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201IncrementalPurgeInterval, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201IncrementalPurgeInterval::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetM2201IncrementalPurgeMemoryThresholdMB
-// 0x0004 (0x0004 - 0x0000)
-struct LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB) == 0x000004, "Wrong alignment on LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB");
-static_assert(sizeof(LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB) == 0x000004, "Wrong size on LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB");
-static_assert(offsetof(LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetSequenceLength
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_GetSequenceLength final
-{
-public:
-	class ULevelSequence*                         LevelSequence;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_GetSequenceLength) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetSequenceLength");
-static_assert(sizeof(LevelFunctionLibrary_GetSequenceLength) == 0x000010, "Wrong size on LevelFunctionLibrary_GetSequenceLength");
-static_assert(offsetof(LevelFunctionLibrary_GetSequenceLength, LevelSequence) == 0x000000, "Member 'LevelFunctionLibrary_GetSequenceLength::LevelSequence' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetSequenceLength, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_GetSequenceLength::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.GetSequencePlayerCurrentTime
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_GetSequencePlayerCurrentTime final
-{
-public:
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_GetSequencePlayerCurrentTime) == 0x000008, "Wrong alignment on LevelFunctionLibrary_GetSequencePlayerCurrentTime");
-static_assert(sizeof(LevelFunctionLibrary_GetSequencePlayerCurrentTime) == 0x000010, "Wrong size on LevelFunctionLibrary_GetSequencePlayerCurrentTime");
-static_assert(offsetof(LevelFunctionLibrary_GetSequencePlayerCurrentTime, LevelSequencePlayer) == 0x000000, "Member 'LevelFunctionLibrary_GetSequencePlayerCurrentTime::LevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_GetSequencePlayerCurrentTime, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_GetSequencePlayerCurrentTime::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.IsActorInAABBRange
-// 0x0090 (0x0090 - 0x0000)
-struct LevelFunctionLibrary_IsActorInAABBRange final
-{
-public:
-	struct FTransform                             LocalTransform;                                    // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                BorderHalfSize;                                    // 0x0060(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AMarvelBaseCharacter*                   InActor;                                           // 0x0078(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_IsActorInAABBRange) == 0x000010, "Wrong alignment on LevelFunctionLibrary_IsActorInAABBRange");
-static_assert(sizeof(LevelFunctionLibrary_IsActorInAABBRange) == 0x000090, "Wrong size on LevelFunctionLibrary_IsActorInAABBRange");
-static_assert(offsetof(LevelFunctionLibrary_IsActorInAABBRange, LocalTransform) == 0x000000, "Member 'LevelFunctionLibrary_IsActorInAABBRange::LocalTransform' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_IsActorInAABBRange, BorderHalfSize) == 0x000060, "Member 'LevelFunctionLibrary_IsActorInAABBRange::BorderHalfSize' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_IsActorInAABBRange, InActor) == 0x000078, "Member 'LevelFunctionLibrary_IsActorInAABBRange::InActor' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_IsActorInAABBRange, ReturnValue) == 0x000080, "Member 'LevelFunctionLibrary_IsActorInAABBRange::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.IsEnableLevelAsyncLoadInQueue
-// 0x0001 (0x0001 - 0x0000)
-struct LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue) == 0x000001, "Wrong alignment on LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue");
-static_assert(sizeof(LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue) == 0x000001, "Wrong size on LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue");
-static_assert(offsetof(LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue, ReturnValue) == 0x000000, "Member 'LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.LevelSetClientTravel
-// 0x0018 (0x0018 - 0x0000)
-struct LevelFunctionLibrary_LevelSetClientTravel final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 NextURLString;                                     // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_LevelSetClientTravel) == 0x000008, "Wrong alignment on LevelFunctionLibrary_LevelSetClientTravel");
-static_assert(sizeof(LevelFunctionLibrary_LevelSetClientTravel) == 0x000018, "Wrong size on LevelFunctionLibrary_LevelSetClientTravel");
-static_assert(offsetof(LevelFunctionLibrary_LevelSetClientTravel, WorldContextObject) == 0x000000, "Member 'LevelFunctionLibrary_LevelSetClientTravel::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_LevelSetClientTravel, NextURLString) == 0x000008, "Member 'LevelFunctionLibrary_LevelSetClientTravel::NextURLString' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.LocateBoundObjects
-// 0x0030 (0x0030 - 0x0000)
-struct LevelFunctionLibrary_LocateBoundObjects final
-{
-public:
-	class ULevelSequence*                         InLevelSequence;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  InObjectId;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                InContext;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UObject*>                        ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_LocateBoundObjects) == 0x000008, "Wrong alignment on LevelFunctionLibrary_LocateBoundObjects");
-static_assert(sizeof(LevelFunctionLibrary_LocateBoundObjects) == 0x000030, "Wrong size on LevelFunctionLibrary_LocateBoundObjects");
-static_assert(offsetof(LevelFunctionLibrary_LocateBoundObjects, InLevelSequence) == 0x000000, "Member 'LevelFunctionLibrary_LocateBoundObjects::InLevelSequence' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_LocateBoundObjects, InObjectId) == 0x000008, "Member 'LevelFunctionLibrary_LocateBoundObjects::InObjectId' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_LocateBoundObjects, InContext) == 0x000018, "Member 'LevelFunctionLibrary_LocateBoundObjects::InContext' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_LocateBoundObjects, ReturnValue) == 0x000020, "Member 'LevelFunctionLibrary_LocateBoundObjects::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.MeshData
-// 0x0018 (0x0018 - 0x0000)
-struct LevelFunctionLibrary_MeshData final
-{
-public:
-	const class UStaticMeshComponent*             StaticMeshComponent;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelFunctionLibrary_MeshData) == 0x000008, "Wrong alignment on LevelFunctionLibrary_MeshData");
-static_assert(sizeof(LevelFunctionLibrary_MeshData) == 0x000018, "Wrong size on LevelFunctionLibrary_MeshData");
-static_assert(offsetof(LevelFunctionLibrary_MeshData, StaticMeshComponent) == 0x000000, "Member 'LevelFunctionLibrary_MeshData::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_MeshData, ReturnValue) == 0x000008, "Member 'LevelFunctionLibrary_MeshData::ReturnValue' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.SequencePlayerJumpTo
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_SequencePlayerJumpTo final
-{
-public:
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TargetTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_SequencePlayerJumpTo) == 0x000008, "Wrong alignment on LevelFunctionLibrary_SequencePlayerJumpTo");
-static_assert(sizeof(LevelFunctionLibrary_SequencePlayerJumpTo) == 0x000010, "Wrong size on LevelFunctionLibrary_SequencePlayerJumpTo");
-static_assert(offsetof(LevelFunctionLibrary_SequencePlayerJumpTo, LevelSequencePlayer) == 0x000000, "Member 'LevelFunctionLibrary_SequencePlayerJumpTo::LevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_SequencePlayerJumpTo, TargetTime) == 0x000008, "Member 'LevelFunctionLibrary_SequencePlayerJumpTo::TargetTime' has a wrong offset!");
-
-// Function MarvelLevel.LevelFunctionLibrary.SequencePlayerJumpToSkippingSpawn
-// 0x0010 (0x0010 - 0x0000)
-struct LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn final
-{
-public:
-	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TargetTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn) == 0x000008, "Wrong alignment on LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn");
-static_assert(sizeof(LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn) == 0x000010, "Wrong size on LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn");
-static_assert(offsetof(LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn, LevelSequencePlayer) == 0x000000, "Member 'LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn::LevelSequencePlayer' has a wrong offset!");
-static_assert(offsetof(LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn, TargetTime) == 0x000008, "Member 'LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn::TargetTime' has a wrong offset!");
+DUMPER7_ASSERTS_FillColorPoint_FillColor;
 
 // Function MarvelLevel.MarvelLevelSummonedBase.SetHittable
 // 0x0001 (0x0001 - 0x0000)
@@ -473,9 +119,7 @@ struct MarvelLevelSummonedBase_SetHittable final
 public:
 	bool                                          Hittable;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelSummonedBase_SetHittable) == 0x000001, "Wrong alignment on MarvelLevelSummonedBase_SetHittable");
-static_assert(sizeof(MarvelLevelSummonedBase_SetHittable) == 0x000001, "Wrong size on MarvelLevelSummonedBase_SetHittable");
-static_assert(offsetof(MarvelLevelSummonedBase_SetHittable, Hittable) == 0x000000, "Member 'MarvelLevelSummonedBase_SetHittable::Hittable' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelSummonedBase_SetHittable;
 
 // Function MarvelLevel.LevelGravityElevator.GetPathVelocity
 // 0x0058 (0x0058 - 0x0000)
@@ -490,14 +134,316 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelGravityElevator_GetPathVelocity) == 0x000008, "Wrong alignment on LevelGravityElevator_GetPathVelocity");
-static_assert(sizeof(LevelGravityElevator_GetPathVelocity) == 0x000058, "Wrong size on LevelGravityElevator_GetPathVelocity");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, InVelocity) == 0x000000, "Member 'LevelGravityElevator_GetPathVelocity::InVelocity' has a wrong offset!");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, UpdatedComponent) == 0x000018, "Member 'LevelGravityElevator_GetPathVelocity::UpdatedComponent' has a wrong offset!");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, InGravity) == 0x000020, "Member 'LevelGravityElevator_GetPathVelocity::InGravity' has a wrong offset!");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, DeltaTime) == 0x000038, "Member 'LevelGravityElevator_GetPathVelocity::DeltaTime' has a wrong offset!");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, MovementMode) == 0x00003C, "Member 'LevelGravityElevator_GetPathVelocity::MovementMode' has a wrong offset!");
-static_assert(offsetof(LevelGravityElevator_GetPathVelocity, ReturnValue) == 0x000040, "Member 'LevelGravityElevator_GetPathVelocity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelGravityElevator_GetPathVelocity;
+
+// Function MarvelLevel.LevelAudioActor.PyGetDefaultAkComponent
+// 0x0008 (0x0008 - 0x0000)
+struct LevelAudioActor_PyGetDefaultAkComponent final
+{
+public:
+	class UAkComponent*                           ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelAudioActor_PyGetDefaultAkComponent;
+
+// Function MarvelLevel.LevelCustomEventSubsystem.GetLevelCustomEventSubsystem
+// 0x0010 (0x0010 - 0x0000)
+struct LevelCustomEventSubsystem_GetLevelCustomEventSubsystem final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelCustomEventSubsystem*             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelCustomEventSubsystem_GetLevelCustomEventSubsystem;
+
+// Function MarvelLevel.LevelFunctionLibrary.DestroyServerConnection
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_DestroyServerConnection final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bResetNetGUIDs;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCleanPC;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_DestroyServerConnection;
+
+// Function MarvelLevel.LevelFunctionLibrary.DestroySomeNetObjects
+// 0x0008 (0x0008 - 0x0000)
+struct LevelFunctionLibrary_DestroySomeNetObjects final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_DestroySomeNetObjects;
+
+// Function MarvelLevel.LevelFunctionLibrary.DestroyWorldNetDrive
+// 0x0008 (0x0008 - 0x0000)
+struct LevelFunctionLibrary_DestroyWorldNetDrive final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_DestroyWorldNetDrive;
+
+// Function MarvelLevel.LevelFunctionLibrary.DestroyWorldNetDriver
+// 0x0008 (0x0008 - 0x0000)
+struct LevelFunctionLibrary_DestroyWorldNetDriver final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_DestroyWorldNetDriver;
+
+// Function MarvelLevel.LevelFunctionLibrary.FindDeathCollectionIndex
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_FindDeathCollectionIndex final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_FindDeathCollectionIndex;
+
+// Function MarvelLevel.LevelFunctionLibrary.FindMovieSceneTrack
+// 0x0038 (0x0038 - 0x0000)
+struct LevelFunctionLibrary_FindMovieSceneTrack final
+{
+public:
+	class UMovieScene*                            InMovieScene;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMovieSceneTrack>           TrackClass;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  ObjectGuid;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   TrackName;                                         // 0x0020(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMovieSceneTrack*                       ReturnValue;                                       // 0x0030(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_FindMovieSceneTrack;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetAllActorsWithTagInWorld
+// 0x0068 (0x0068 - 0x0000)
+struct LevelFunctionLibrary_GetAllActorsWithTagInWorld final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           Tags;                                              // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FName, struct FActorsWithSameOneTag> OutActors;                                       // 0x0018(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetAllActorsWithTagInWorld;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetAllLevelAlwaysLoadedRelatedAssetPaths
+// 0x0018 (0x0018 - 0x0000)
+struct LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths final
+{
+public:
+	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetAllLevelAlwaysLoadedRelatedAssetPaths;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetAllLevelAssetPaths
+// 0x0018 (0x0018 - 0x0000)
+struct LevelFunctionLibrary_GetAllLevelAssetPaths final
+{
+public:
+	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetAllLevelAssetPaths;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetDerivedUClasses
+// 0x0020 (0x0020 - 0x0000)
+struct LevelFunctionLibrary_GetDerivedUClasses final
+{
+public:
+	const class UClass*                           ClassToLookFor;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRecursive;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UClass*>                         ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetDerivedUClasses;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetGameInstanceSubsystem
+// 0x0018 (0x0018 - 0x0000)
+struct LevelFunctionLibrary_GetGameInstanceSubsystem final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UGameInstanceSubsystem>     SubsystemClass;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGameInstanceSubsystem*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetGameInstanceSubsystem;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201ForceFullPurgeInterval
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201ForceFullPurgeInterval final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201ForceFullPurgeInterval;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeInterval
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201FullPurgeInterval final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201FullPurgeInterval;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeMemoryPS4ThresholdMB
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201FullPurgeMemoryPS4ThresholdMB;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201FullPurgeMemoryThresholdMB
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201FullPurgeMemoryThresholdMB;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201IncrementalPurgeInterval
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201IncrementalPurgeInterval final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201IncrementalPurgeInterval;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetM2201IncrementalPurgeMemoryThresholdMB
+// 0x0004 (0x0004 - 0x0000)
+struct LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetM2201IncrementalPurgeMemoryThresholdMB;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetSequenceLength
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_GetSequenceLength final
+{
+public:
+	class ULevelSequence*                         LevelSequence;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetSequenceLength;
+
+// Function MarvelLevel.LevelFunctionLibrary.GetSequencePlayerCurrentTime
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_GetSequencePlayerCurrentTime final
+{
+public:
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_GetSequencePlayerCurrentTime;
+
+// Function MarvelLevel.LevelFunctionLibrary.IsActorInAABBRange
+// 0x0090 (0x0090 - 0x0000)
+struct LevelFunctionLibrary_IsActorInAABBRange final
+{
+public:
+	struct FTransform                             LocalTransform;                                    // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                BorderHalfSize;                                    // 0x0060(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelBaseCharacter*                   InActor;                                           // 0x0078(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_IsActorInAABBRange;
+
+// Function MarvelLevel.LevelFunctionLibrary.IsEditorSimulate
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_IsEditorSimulate final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_IsEditorSimulate;
+
+// Function MarvelLevel.LevelFunctionLibrary.IsEnableLevelAsyncLoadInQueue
+// 0x0001 (0x0001 - 0x0000)
+struct LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_IsEnableLevelAsyncLoadInQueue;
+
+// Function MarvelLevel.LevelFunctionLibrary.LevelSetClientTravel
+// 0x0018 (0x0018 - 0x0000)
+struct LevelFunctionLibrary_LevelSetClientTravel final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 NextURLString;                                     // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_LevelSetClientTravel;
+
+// Function MarvelLevel.LevelFunctionLibrary.LocateBoundObjects
+// 0x0030 (0x0030 - 0x0000)
+struct LevelFunctionLibrary_LocateBoundObjects final
+{
+public:
+	class ULevelSequence*                         InLevelSequence;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  InObjectId;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                InContext;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UObject*>                        ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_LocateBoundObjects;
+
+// Function MarvelLevel.LevelFunctionLibrary.MeshData
+// 0x0018 (0x0018 - 0x0000)
+struct LevelFunctionLibrary_MeshData final
+{
+public:
+	const class UStaticMeshComponent*             StaticMeshComponent;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_MeshData;
+
+// Function MarvelLevel.LevelFunctionLibrary.SequencePlayerJumpTo
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_SequencePlayerJumpTo final
+{
+public:
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TargetTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_SequencePlayerJumpTo;
+
+// Function MarvelLevel.LevelFunctionLibrary.SequencePlayerJumpToSkippingSpawn
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn final
+{
+public:
+	class ULevelSequencePlayer*                   LevelSequencePlayer;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TargetTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_SequencePlayerJumpToSkippingSpawn;
+
+// Function MarvelLevel.LevelFunctionLibrary.WakeUpNiagaraComponentsFromScalability
+// 0x0010 (0x0010 - 0x0000)
+struct LevelFunctionLibrary_WakeUpNiagaraComponentsFromScalability final
+{
+public:
+	TArray<class UNiagaraComponent*>              NiagaraComponents;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LevelFunctionLibrary_WakeUpNiagaraComponentsFromScalability;
 
 // Function MarvelLevel.LevelGravityZoneEffectTemplate.IsDispelledByAbility
 // 0x0070 (0x0070 - 0x0000)
@@ -508,10 +454,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelGravityZoneEffectTemplate_IsDispelledByAbility) == 0x000008, "Wrong alignment on LevelGravityZoneEffectTemplate_IsDispelledByAbility");
-static_assert(sizeof(LevelGravityZoneEffectTemplate_IsDispelledByAbility) == 0x000070, "Wrong size on LevelGravityZoneEffectTemplate_IsDispelledByAbility");
-static_assert(offsetof(LevelGravityZoneEffectTemplate_IsDispelledByAbility, AbilityTags) == 0x000000, "Member 'LevelGravityZoneEffectTemplate_IsDispelledByAbility::AbilityTags' has a wrong offset!");
-static_assert(offsetof(LevelGravityZoneEffectTemplate_IsDispelledByAbility, ReturnValue) == 0x000068, "Member 'LevelGravityZoneEffectTemplate_IsDispelledByAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelGravityZoneEffectTemplate_IsDispelledByAbility;
 
 // Function MarvelLevel.LevelStaticMeshActor.MeshData
 // 0x0018 (0x0018 - 0x0000)
@@ -521,10 +464,7 @@ public:
 	const class UStaticMeshComponent*             StaticMeshComponent;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelStaticMeshActor_MeshData) == 0x000008, "Wrong alignment on LevelStaticMeshActor_MeshData");
-static_assert(sizeof(LevelStaticMeshActor_MeshData) == 0x000018, "Wrong size on LevelStaticMeshActor_MeshData");
-static_assert(offsetof(LevelStaticMeshActor_MeshData, StaticMeshComponent) == 0x000000, "Member 'LevelStaticMeshActor_MeshData::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(LevelStaticMeshActor_MeshData, ReturnValue) == 0x000008, "Member 'LevelStaticMeshActor_MeshData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelStaticMeshActor_MeshData;
 
 // Function MarvelLevel.LevelTransportPipe.GetKnockUp
 // 0x0058 (0x0058 - 0x0000)
@@ -535,10 +475,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelTransportPipe_GetKnockUp) == 0x000008, "Wrong alignment on LevelTransportPipe_GetKnockUp");
-static_assert(sizeof(LevelTransportPipe_GetKnockUp) == 0x000058, "Wrong size on LevelTransportPipe_GetKnockUp");
-static_assert(offsetof(LevelTransportPipe_GetKnockUp, OutPhysicKnockUp) == 0x000000, "Member 'LevelTransportPipe_GetKnockUp::OutPhysicKnockUp' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetKnockUp, ReturnValue) == 0x000050, "Member 'LevelTransportPipe_GetKnockUp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelTransportPipe_GetKnockUp;
 
 // Function MarvelLevel.LevelTransportPipe.GetPathVelocity
 // 0x0058 (0x0058 - 0x0000)
@@ -553,14 +490,7 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelTransportPipe_GetPathVelocity) == 0x000008, "Wrong alignment on LevelTransportPipe_GetPathVelocity");
-static_assert(sizeof(LevelTransportPipe_GetPathVelocity) == 0x000058, "Wrong size on LevelTransportPipe_GetPathVelocity");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, InVelocity) == 0x000000, "Member 'LevelTransportPipe_GetPathVelocity::InVelocity' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, UpdatedComponent) == 0x000018, "Member 'LevelTransportPipe_GetPathVelocity::UpdatedComponent' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, InGravity) == 0x000020, "Member 'LevelTransportPipe_GetPathVelocity::InGravity' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, DeltaTime) == 0x000038, "Member 'LevelTransportPipe_GetPathVelocity::DeltaTime' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, MovementMode) == 0x00003C, "Member 'LevelTransportPipe_GetPathVelocity::MovementMode' has a wrong offset!");
-static_assert(offsetof(LevelTransportPipe_GetPathVelocity, ReturnValue) == 0x000040, "Member 'LevelTransportPipe_GetPathVelocity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelTransportPipe_GetPathVelocity;
 
 // Function MarvelLevel.LevelViewCheckComponent.CheckInView
 // 0x0001 (0x0001 - 0x0000)
@@ -569,9 +499,7 @@ struct LevelViewCheckComponent_CheckInView final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelViewCheckComponent_CheckInView) == 0x000001, "Wrong alignment on LevelViewCheckComponent_CheckInView");
-static_assert(sizeof(LevelViewCheckComponent_CheckInView) == 0x000001, "Wrong size on LevelViewCheckComponent_CheckInView");
-static_assert(offsetof(LevelViewCheckComponent_CheckInView, ReturnValue) == 0x000000, "Member 'LevelViewCheckComponent_CheckInView::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelViewCheckComponent_CheckInView;
 
 // Function MarvelLevel.MarvelAbilitiesRuleComponent.InitConfigRule
 // 0x0008 (0x0008 - 0x0000)
@@ -580,9 +508,7 @@ struct MarvelAbilitiesRuleComponent_InitConfigRule final
 public:
 	class UMarvelAbilitiesLevelConfig*            InConfig;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelAbilitiesRuleComponent_InitConfigRule) == 0x000008, "Wrong alignment on MarvelAbilitiesRuleComponent_InitConfigRule");
-static_assert(sizeof(MarvelAbilitiesRuleComponent_InitConfigRule) == 0x000008, "Wrong size on MarvelAbilitiesRuleComponent_InitConfigRule");
-static_assert(offsetof(MarvelAbilitiesRuleComponent_InitConfigRule, InConfig) == 0x000000, "Member 'MarvelAbilitiesRuleComponent_InitConfigRule::InConfig' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAbilitiesRuleComponent_InitConfigRule;
 
 // Function MarvelLevel.MarvelLevelAnimActionComponent.OnApplyHit
 // 0x0008 (0x0008 - 0x0000)
@@ -591,9 +517,7 @@ struct MarvelLevelAnimActionComponent_OnApplyHit final
 public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelAnimActionComponent_OnApplyHit) == 0x000008, "Wrong alignment on MarvelLevelAnimActionComponent_OnApplyHit");
-static_assert(sizeof(MarvelLevelAnimActionComponent_OnApplyHit) == 0x000008, "Wrong size on MarvelLevelAnimActionComponent_OnApplyHit");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnApplyHit, InSourceAvatar) == 0x000000, "Member 'MarvelLevelAnimActionComponent_OnApplyHit::InSourceAvatar' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelAnimActionComponent_OnApplyHit;
 
 // Function MarvelLevel.MarvelLevelAnimActionComponent.OnLinkGCBreak
 // 0x0078 (0x0078 - 0x0000)
@@ -602,9 +526,7 @@ struct MarvelLevelAnimActionComponent_OnLinkGCBreak final
 public:
 	struct FChaosBreakEvent                       BreakEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelAnimActionComponent_OnLinkGCBreak) == 0x000008, "Wrong alignment on MarvelLevelAnimActionComponent_OnLinkGCBreak");
-static_assert(sizeof(MarvelLevelAnimActionComponent_OnLinkGCBreak) == 0x000078, "Wrong size on MarvelLevelAnimActionComponent_OnLinkGCBreak");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnLinkGCBreak, BreakEvent) == 0x000000, "Member 'MarvelLevelAnimActionComponent_OnLinkGCBreak::BreakEvent' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelAnimActionComponent_OnLinkGCBreak;
 
 // Function MarvelLevel.MarvelLevelAnimActionComponent.OnLinkGCIgnoreBreak
 // 0x0008 (0x0008 - 0x0000)
@@ -614,23 +536,17 @@ public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ServerTime;                                        // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak) == 0x000004, "Wrong alignment on MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak");
-static_assert(sizeof(MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak) == 0x000008, "Wrong size on MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak, Index_0) == 0x000000, "Member 'MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak::Index_0' has a wrong offset!");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak, ServerTime) == 0x000004, "Member 'MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak::ServerTime' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelAnimActionComponent_OnLinkGCIgnoreBreak;
 
 // Function MarvelLevel.MarvelLevelAnimActionComponent.OnMovementBaseChanged
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct MarvelLevelAnimActionComponent_OnMovementBaseChanged final
 {
 public:
 	class UPrimitiveComponent*                    NewBase;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             FloorHitResult;                                    // 0x0008(0x01F0)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitResult                             FloorHitResult;                                    // 0x0008(0x0208)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelAnimActionComponent_OnMovementBaseChanged) == 0x000008, "Wrong alignment on MarvelLevelAnimActionComponent_OnMovementBaseChanged");
-static_assert(sizeof(MarvelLevelAnimActionComponent_OnMovementBaseChanged) == 0x0001F8, "Wrong size on MarvelLevelAnimActionComponent_OnMovementBaseChanged");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnMovementBaseChanged, NewBase) == 0x000000, "Member 'MarvelLevelAnimActionComponent_OnMovementBaseChanged::NewBase' has a wrong offset!");
-static_assert(offsetof(MarvelLevelAnimActionComponent_OnMovementBaseChanged, FloorHitResult) == 0x000008, "Member 'MarvelLevelAnimActionComponent_OnMovementBaseChanged::FloorHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelAnimActionComponent_OnMovementBaseChanged;
 
 // Function MarvelLevel.MarvelLevelKrakoaPortalAbility.K2_OnMoveLogicFrameExecute
 // 0x0018 (0x0018 - 0x0000)
@@ -641,11 +557,7 @@ public:
 	class AActor*                                 TriggerPortal;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 TargetPlayerStart;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute) == 0x000008, "Wrong alignment on MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute");
-static_assert(sizeof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute) == 0x000018, "Wrong size on MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute, InOwnerMovementComponent) == 0x000000, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute::InOwnerMovementComponent' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute, TriggerPortal) == 0x000008, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute::TriggerPortal' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute, TargetPlayerStart) == 0x000010, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute::TargetPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameExecute;
 
 // Function MarvelLevel.MarvelLevelKrakoaPortalAbility.K2_OnMoveLogicFrameReplayExecute
 // 0x0018 (0x0018 - 0x0000)
@@ -656,11 +568,7 @@ public:
 	class AActor*                                 TriggerPortal;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 TargetPlayerStart;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute) == 0x000008, "Wrong alignment on MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute");
-static_assert(sizeof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute) == 0x000018, "Wrong size on MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute, InOwnerMovementComponent) == 0x000000, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute::InOwnerMovementComponent' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute, TriggerPortal) == 0x000008, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute::TriggerPortal' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute, TargetPlayerStart) == 0x000010, "Member 'MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute::TargetPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelKrakoaPortalAbility_K2_OnMoveLogicFrameReplayExecute;
 
 // Function MarvelLevel.MarvelLevelKrakoaPortalAbility.RegisterTeleportMoveLogicFrame
 // 0x0060 (0x0060 - 0x0000)
@@ -675,14 +583,7 @@ public:
 	class AActor*                                 TargetPlayerStart;                                 // 0x0038(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMoveLogicHandle                       ReturnValue;                                       // 0x0040(0x0020)(Parm, OutParm, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame) == 0x000008, "Wrong alignment on MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame");
-static_assert(sizeof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame) == 0x000060, "Wrong size on MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, InChildPredictionKeyHandle) == 0x000000, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::InChildPredictionKeyHandle' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, InOwnerMovementComponent) == 0x000020, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::InOwnerMovementComponent' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, bIsServerInitiated) == 0x000028, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::bIsServerInitiated' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, TriggerPortal) == 0x000030, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::TriggerPortal' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, TargetPlayerStart) == 0x000038, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::TargetPlayerStart' has a wrong offset!");
-static_assert(offsetof(MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame, ReturnValue) == 0x000040, "Member 'MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelKrakoaPortalAbility_RegisterTeleportMoveLogicFrame;
 
 // Function MarvelLevel.MarvelLevelPortalBase.GetPlayerLastUseServerTime
 // 0x0010 (0x0010 - 0x0000)
@@ -693,10 +594,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelPortalBase_GetPlayerLastUseServerTime) == 0x000008, "Wrong alignment on MarvelLevelPortalBase_GetPlayerLastUseServerTime");
-static_assert(sizeof(MarvelLevelPortalBase_GetPlayerLastUseServerTime) == 0x000010, "Wrong size on MarvelLevelPortalBase_GetPlayerLastUseServerTime");
-static_assert(offsetof(MarvelLevelPortalBase_GetPlayerLastUseServerTime, UID) == 0x000000, "Member 'MarvelLevelPortalBase_GetPlayerLastUseServerTime::UID' has a wrong offset!");
-static_assert(offsetof(MarvelLevelPortalBase_GetPlayerLastUseServerTime, ReturnValue) == 0x000008, "Member 'MarvelLevelPortalBase_GetPlayerLastUseServerTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelPortalBase_GetPlayerLastUseServerTime;
 
 // Function MarvelLevel.MarvelLevelPortalBase.K2_OnPostReplicatedAddPlayerUsageRecord
 // 0x0010 (0x0010 - 0x0000)
@@ -707,10 +605,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LastUseServerTimeSeconds;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord) == 0x000008, "Wrong alignment on MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord");
-static_assert(sizeof(MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord) == 0x000010, "Wrong size on MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord");
-static_assert(offsetof(MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord, UID) == 0x000000, "Member 'MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord::UID' has a wrong offset!");
-static_assert(offsetof(MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord, LastUseServerTimeSeconds) == 0x000008, "Member 'MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord::LastUseServerTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelPortalBase_K2_OnPostReplicatedAddPlayerUsageRecord;
 
 // Function MarvelLevel.MarvelLevelPortalBase.K2_OnPostReplicatedChangePlayerUsageRecord
 // 0x0010 (0x0010 - 0x0000)
@@ -721,10 +616,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LastUseServerTimeSeconds;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord) == 0x000008, "Wrong alignment on MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord");
-static_assert(sizeof(MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord) == 0x000010, "Wrong size on MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord");
-static_assert(offsetof(MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord, UID) == 0x000000, "Member 'MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord::UID' has a wrong offset!");
-static_assert(offsetof(MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord, LastUseServerTimeSeconds) == 0x000008, "Member 'MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord::LastUseServerTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelPortalBase_K2_OnPostReplicatedChangePlayerUsageRecord;
 
 // Function MarvelLevel.MarvelLevelPortalBase.S_RemovePlayerLastUseServerTime
 // 0x0004 (0x0004 - 0x0000)
@@ -733,9 +625,7 @@ struct MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime final
 public:
 	int32                                         UID;                                               // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime) == 0x000004, "Wrong alignment on MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime");
-static_assert(sizeof(MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime) == 0x000004, "Wrong size on MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime");
-static_assert(offsetof(MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime, UID) == 0x000000, "Member 'MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime::UID' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelPortalBase_S_RemovePlayerLastUseServerTime;
 
 // Function MarvelLevel.MarvelLevelPortalBase.S_SetPlayerLastUseServerTime
 // 0x0010 (0x0010 - 0x0000)
@@ -746,10 +636,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LastUseServerTimeSeconds;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelLevelPortalBase_S_SetPlayerLastUseServerTime) == 0x000008, "Wrong alignment on MarvelLevelPortalBase_S_SetPlayerLastUseServerTime");
-static_assert(sizeof(MarvelLevelPortalBase_S_SetPlayerLastUseServerTime) == 0x000010, "Wrong size on MarvelLevelPortalBase_S_SetPlayerLastUseServerTime");
-static_assert(offsetof(MarvelLevelPortalBase_S_SetPlayerLastUseServerTime, UID) == 0x000000, "Member 'MarvelLevelPortalBase_S_SetPlayerLastUseServerTime::UID' has a wrong offset!");
-static_assert(offsetof(MarvelLevelPortalBase_S_SetPlayerLastUseServerTime, LastUseServerTimeSeconds) == 0x000008, "Member 'MarvelLevelPortalBase_S_SetPlayerLastUseServerTime::LastUseServerTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelLevelPortalBase_S_SetPlayerLastUseServerTime;
 
 // Function MarvelLevel.PlayerStateTrainComponent.OnActorDeath
 // 0x0030 (0x0030 - 0x0000)
@@ -762,12 +649,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PlayerStateTrainComponent_OnActorDeath) == 0x000008, "Wrong alignment on PlayerStateTrainComponent_OnActorDeath");
-static_assert(sizeof(PlayerStateTrainComponent_OnActorDeath) == 0x000030, "Wrong size on PlayerStateTrainComponent_OnActorDeath");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorDeath, Source) == 0x000000, "Member 'PlayerStateTrainComponent_OnActorDeath::Source' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorDeath, Target) == 0x000008, "Member 'PlayerStateTrainComponent_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorDeath, ModifierParameterHandle) == 0x000010, "Member 'PlayerStateTrainComponent_OnActorDeath::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorDeath, ExtraData) == 0x000028, "Member 'PlayerStateTrainComponent_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerStateTrainComponent_OnActorDeath;
 
 // Function MarvelLevel.PlayerStateTrainComponent.OnActorTakeDamage
 // 0x0030 (0x0030 - 0x0000)
@@ -780,12 +662,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PlayerStateTrainComponent_OnActorTakeDamage) == 0x000008, "Wrong alignment on PlayerStateTrainComponent_OnActorTakeDamage");
-static_assert(sizeof(PlayerStateTrainComponent_OnActorTakeDamage) == 0x000030, "Wrong size on PlayerStateTrainComponent_OnActorTakeDamage");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorTakeDamage, InInstigator) == 0x000000, "Member 'PlayerStateTrainComponent_OnActorTakeDamage::InInstigator' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorTakeDamage, InTarget) == 0x000008, "Member 'PlayerStateTrainComponent_OnActorTakeDamage::InTarget' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorTakeDamage, ModifierParameterHandle) == 0x000010, "Member 'PlayerStateTrainComponent_OnActorTakeDamage::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnActorTakeDamage, ExtraData) == 0x000028, "Member 'PlayerStateTrainComponent_OnActorTakeDamage::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerStateTrainComponent_OnActorTakeDamage;
 
 // Function MarvelLevel.PlayerStateTrainComponent.OnTargetActorRecycleAgentTask
 // 0x0068 (0x0068 - 0x0000)
@@ -798,12 +675,7 @@ public:
 	struct FEndAgentTaskInfo                      EndAgentTaskInfo;                                  // 0x0058(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask) == 0x000008, "Wrong alignment on PlayerStateTrainComponent_OnTargetActorRecycleAgentTask");
-static_assert(sizeof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask) == 0x000068, "Wrong size on PlayerStateTrainComponent_OnTargetActorRecycleAgentTask");
-static_assert(offsetof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask, Source) == 0x000000, "Member 'PlayerStateTrainComponent_OnTargetActorRecycleAgentTask::Source' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask, SourceAbility) == 0x000008, "Member 'PlayerStateTrainComponent_OnTargetActorRecycleAgentTask::SourceAbility' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask, GenerateInfo) == 0x000010, "Member 'PlayerStateTrainComponent_OnTargetActorRecycleAgentTask::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnTargetActorRecycleAgentTask, EndAgentTaskInfo) == 0x000058, "Member 'PlayerStateTrainComponent_OnTargetActorRecycleAgentTask::EndAgentTaskInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerStateTrainComponent_OnTargetActorRecycleAgentTask;
 
 // Function MarvelLevel.PlayerStateTrainComponent.OnWeaponAmmoUse
 // 0x0018 (0x0018 - 0x0000)
@@ -818,14 +690,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0016(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(PlayerStateTrainComponent_OnWeaponAmmoUse) == 0x000008, "Wrong alignment on PlayerStateTrainComponent_OnWeaponAmmoUse");
-static_assert(sizeof(PlayerStateTrainComponent_OnWeaponAmmoUse) == 0x000018, "Wrong size on PlayerStateTrainComponent_OnWeaponAmmoUse");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, Source) == 0x000000, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::Source' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, Target) == 0x000008, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::Target' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, AbilityID) == 0x000010, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::AbilityID' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, bHit) == 0x000014, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::bHit' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, bIsCritHit) == 0x000015, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::bIsCritHit' has a wrong offset!");
-static_assert(offsetof(PlayerStateTrainComponent_OnWeaponAmmoUse, ExtraData) == 0x000016, "Member 'PlayerStateTrainComponent_OnWeaponAmmoUse::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PlayerStateTrainComponent_OnWeaponAmmoUse;
 
 // Function MarvelLevel.EffectAbility_ScaleGravity.SetGravityScale
 // 0x0008 (0x0008 - 0x0000)
@@ -836,10 +701,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(EffectAbility_ScaleGravity_SetGravityScale) == 0x000004, "Wrong alignment on EffectAbility_ScaleGravity_SetGravityScale");
-static_assert(sizeof(EffectAbility_ScaleGravity_SetGravityScale) == 0x000008, "Wrong size on EffectAbility_ScaleGravity_SetGravityScale");
-static_assert(offsetof(EffectAbility_ScaleGravity_SetGravityScale, NewGravityScale) == 0x000000, "Member 'EffectAbility_ScaleGravity_SetGravityScale::NewGravityScale' has a wrong offset!");
-static_assert(offsetof(EffectAbility_ScaleGravity_SetGravityScale, ReturnValue) == 0x000004, "Member 'EffectAbility_ScaleGravity_SetGravityScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EffectAbility_ScaleGravity_SetGravityScale;
 
 // Function MarvelLevel.SpringFestivalStatComponent.AddPlayerStat
 // 0x000C (0x000C - 0x0000)
@@ -850,11 +712,7 @@ public:
 	int32                                         StatIndex;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpringFestivalStatComponent_AddPlayerStat) == 0x000004, "Wrong alignment on SpringFestivalStatComponent_AddPlayerStat");
-static_assert(sizeof(SpringFestivalStatComponent_AddPlayerStat) == 0x00000C, "Wrong size on SpringFestivalStatComponent_AddPlayerStat");
-static_assert(offsetof(SpringFestivalStatComponent_AddPlayerStat, UID) == 0x000000, "Member 'SpringFestivalStatComponent_AddPlayerStat::UID' has a wrong offset!");
-static_assert(offsetof(SpringFestivalStatComponent_AddPlayerStat, StatIndex) == 0x000004, "Member 'SpringFestivalStatComponent_AddPlayerStat::StatIndex' has a wrong offset!");
-static_assert(offsetof(SpringFestivalStatComponent_AddPlayerStat, Value) == 0x000008, "Member 'SpringFestivalStatComponent_AddPlayerStat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SpringFestivalStatComponent_AddPlayerStat;
 
 // Function MarvelLevel.SpringFestivalStatComponent.RegisterPlayerStat
 // 0x0008 (0x0008 - 0x0000)
@@ -864,10 +722,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         StatCount;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpringFestivalStatComponent_RegisterPlayerStat) == 0x000004, "Wrong alignment on SpringFestivalStatComponent_RegisterPlayerStat");
-static_assert(sizeof(SpringFestivalStatComponent_RegisterPlayerStat) == 0x000008, "Wrong size on SpringFestivalStatComponent_RegisterPlayerStat");
-static_assert(offsetof(SpringFestivalStatComponent_RegisterPlayerStat, UID) == 0x000000, "Member 'SpringFestivalStatComponent_RegisterPlayerStat::UID' has a wrong offset!");
-static_assert(offsetof(SpringFestivalStatComponent_RegisterPlayerStat, StatCount) == 0x000004, "Member 'SpringFestivalStatComponent_RegisterPlayerStat::StatCount' has a wrong offset!");
+DUMPER7_ASSERTS_SpringFestivalStatComponent_RegisterPlayerStat;
 
 // Function MarvelLevel.SpringFestivalStatComponent.SetPlayerStat
 // 0x000C (0x000C - 0x0000)
@@ -878,11 +733,7 @@ public:
 	int32                                         StatIndex;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpringFestivalStatComponent_SetPlayerStat) == 0x000004, "Wrong alignment on SpringFestivalStatComponent_SetPlayerStat");
-static_assert(sizeof(SpringFestivalStatComponent_SetPlayerStat) == 0x00000C, "Wrong size on SpringFestivalStatComponent_SetPlayerStat");
-static_assert(offsetof(SpringFestivalStatComponent_SetPlayerStat, UID) == 0x000000, "Member 'SpringFestivalStatComponent_SetPlayerStat::UID' has a wrong offset!");
-static_assert(offsetof(SpringFestivalStatComponent_SetPlayerStat, StatIndex) == 0x000004, "Member 'SpringFestivalStatComponent_SetPlayerStat::StatIndex' has a wrong offset!");
-static_assert(offsetof(SpringFestivalStatComponent_SetPlayerStat, Value) == 0x000008, "Member 'SpringFestivalStatComponent_SetPlayerStat::Value' has a wrong offset!");
+DUMPER7_ASSERTS_SpringFestivalStatComponent_SetPlayerStat;
 
 // Function MarvelLevel.SpringFestivalStatComponent.UnregisterPlayerStat
 // 0x0004 (0x0004 - 0x0000)
@@ -891,9 +742,7 @@ struct SpringFestivalStatComponent_UnregisterPlayerStat final
 public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpringFestivalStatComponent_UnregisterPlayerStat) == 0x000004, "Wrong alignment on SpringFestivalStatComponent_UnregisterPlayerStat");
-static_assert(sizeof(SpringFestivalStatComponent_UnregisterPlayerStat) == 0x000004, "Wrong size on SpringFestivalStatComponent_UnregisterPlayerStat");
-static_assert(offsetof(SpringFestivalStatComponent_UnregisterPlayerStat, UID) == 0x000000, "Member 'SpringFestivalStatComponent_UnregisterPlayerStat::UID' has a wrong offset!");
+DUMPER7_ASSERTS_SpringFestivalStatComponent_UnregisterPlayerStat;
 
 // Function MarvelLevel.Summoned_20020001.K2_SetReplicatingMovement
 // 0x0001 (0x0001 - 0x0000)
@@ -902,9 +751,7 @@ struct Summoned_20020001_K2_SetReplicatingMovement final
 public:
 	bool                                          NewReplicate;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Summoned_20020001_K2_SetReplicatingMovement) == 0x000001, "Wrong alignment on Summoned_20020001_K2_SetReplicatingMovement");
-static_assert(sizeof(Summoned_20020001_K2_SetReplicatingMovement) == 0x000001, "Wrong size on Summoned_20020001_K2_SetReplicatingMovement");
-static_assert(offsetof(Summoned_20020001_K2_SetReplicatingMovement, NewReplicate) == 0x000000, "Member 'Summoned_20020001_K2_SetReplicatingMovement::NewReplicate' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_20020001_K2_SetReplicatingMovement;
 
 // Function MarvelLevel.Summoned_21300401.K2_OnModifyDamage
 // 0x0A10 (0x0A10 - 0x0000)
@@ -919,13 +766,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0A08(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A0C[0x4];                                      // 0x0A0C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Summoned_21300401_K2_OnModifyDamage) == 0x000008, "Wrong alignment on Summoned_21300401_K2_OnModifyDamage");
-static_assert(sizeof(Summoned_21300401_K2_OnModifyDamage) == 0x000A10, "Wrong size on Summoned_21300401_K2_OnModifyDamage");
-static_assert(offsetof(Summoned_21300401_K2_OnModifyDamage, Spec) == 0x000000, "Member 'Summoned_21300401_K2_OnModifyDamage::Spec' has a wrong offset!");
-static_assert(offsetof(Summoned_21300401_K2_OnModifyDamage, InDamage) == 0x0009F0, "Member 'Summoned_21300401_K2_OnModifyDamage::InDamage' has a wrong offset!");
-static_assert(offsetof(Summoned_21300401_K2_OnModifyDamage, SourceASC) == 0x0009F8, "Member 'Summoned_21300401_K2_OnModifyDamage::SourceASC' has a wrong offset!");
-static_assert(offsetof(Summoned_21300401_K2_OnModifyDamage, TargetASC) == 0x000A00, "Member 'Summoned_21300401_K2_OnModifyDamage::TargetASC' has a wrong offset!");
-static_assert(offsetof(Summoned_21300401_K2_OnModifyDamage, ReturnValue) == 0x000A08, "Member 'Summoned_21300401_K2_OnModifyDamage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Summoned_21300401_K2_OnModifyDamage;
 
 }
 

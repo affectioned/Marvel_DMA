@@ -28,15 +28,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingAccesoryWindowHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingAccesoryWindowHandler_BP_OnChanged");
-static_assert(sizeof(UISettingAccesoryWindowHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingAccesoryWindowHandler_BP_OnChanged");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingAccesoryWindowHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingAccesoryWindowHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingAccesoryWindowHandler_BP_OnChanged;
 
 }
 

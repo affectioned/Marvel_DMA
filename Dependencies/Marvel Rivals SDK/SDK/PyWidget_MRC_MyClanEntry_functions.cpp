@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "PyWidget_MRC_MyClanEntry_classes.hpp"
+#include "PyWidget_MRC_MyClanEntry_parameters.hpp"
 
 
 namespace SDK
@@ -30,6 +31,31 @@ void UPyWidget_MRC_MyClanEntry::Construct()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_MRC_MyClanEntry.PyWidget_MRC_MyClanEntry.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_MRC_MyClanEntry::OnCascadingVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_MRC_MyClanEntry", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_MRC_MyClanEntry_OnCascadingVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

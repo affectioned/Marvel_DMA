@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104971.PyBuffAbility_120_10497180
-// 0x0008 (0x1428 - 0x1420)
+// 0x0008 (0x1440 - 0x1438)
 class UPyBuffAbility_120_10497180 final : public UMarvelCDReductionEffectAbility_V2
 {
 public:
-	float                                         AbilityExtendTime;                                 // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AbilityExtendTime;                                 // 0x1438(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -29,23 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10497180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10497180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10497180")
 	}
 	static class UPyBuffAbility_120_10497180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10497180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10497180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10497180");
-static_assert(sizeof(UPyBuffAbility_120_10497180) == 0x001428, "Wrong size on UPyBuffAbility_120_10497180");
-static_assert(offsetof(UPyBuffAbility_120_10497180, AbilityExtendTime) == 0x001420, "Member 'UPyBuffAbility_120_10497180::AbilityExtendTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10497180;
 
 // PythonClass PyBuffAbility_120_104971.PyBuffAbility_120_10497181
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10497181 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         extra_damage_ratio;                                // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         extra_damage_ratio;                                // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -53,16 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10497181">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10497181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10497181")
 	}
 	static class UPyBuffAbility_120_10497181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10497181>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10497181) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10497181");
-static_assert(sizeof(UPyBuffAbility_120_10497181) == 0x001378, "Wrong size on UPyBuffAbility_120_10497181");
-static_assert(offsetof(UPyBuffAbility_120_10497181, extra_damage_ratio) == 0x001370, "Member 'UPyBuffAbility_120_10497181::extra_damage_ratio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10497181;
 
 }
 

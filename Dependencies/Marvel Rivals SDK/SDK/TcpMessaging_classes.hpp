@@ -33,21 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TcpMessagingSettings">();
+		STATIC_CLASS_IMPL("TcpMessagingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TcpMessagingSettings")
 	}
 	static class UTcpMessagingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTcpMessagingSettings>();
 	}
 };
-static_assert(alignof(UTcpMessagingSettings) == 0x000008, "Wrong alignment on UTcpMessagingSettings");
-static_assert(sizeof(UTcpMessagingSettings) == 0x000068, "Wrong size on UTcpMessagingSettings");
-static_assert(offsetof(UTcpMessagingSettings, EnableTransport) == 0x000030, "Member 'UTcpMessagingSettings::EnableTransport' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ListenEndpoint) == 0x000038, "Member 'UTcpMessagingSettings::ListenEndpoint' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ConnectToEndpoints) == 0x000048, "Member 'UTcpMessagingSettings::ConnectToEndpoints' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ConnectionRetryDelay) == 0x000058, "Member 'UTcpMessagingSettings::ConnectionRetryDelay' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ConnectionRetryPeriod) == 0x00005C, "Member 'UTcpMessagingSettings::ConnectionRetryPeriod' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, bStopServiceWhenAppDeactivates) == 0x000060, "Member 'UTcpMessagingSettings::bStopServiceWhenAppDeactivates' has a wrong offset!");
+DUMPER7_ASSERTS_UTcpMessagingSettings;
 
 }
 

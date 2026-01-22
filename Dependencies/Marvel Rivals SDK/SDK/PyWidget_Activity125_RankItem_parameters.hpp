@@ -21,9 +21,7 @@ struct PyWidget_Activity125_RankItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity125_RankItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity125_RankItem_PreConstruct");
-static_assert(sizeof(PyWidget_Activity125_RankItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity125_RankItem_PreConstruct");
-static_assert(offsetof(PyWidget_Activity125_RankItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity125_RankItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity125_RankItem_PreConstruct;
 
 // PythonFunction PyWidget_Activity125_RankItem.PyWidget_Activity125_RankItem.SetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity125_RankItem_SetAnimationStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity125_RankItem_SetAnimationStart) == 0x000004, "Wrong alignment on PyWidget_Activity125_RankItem_SetAnimationStart");
-static_assert(sizeof(PyWidget_Activity125_RankItem_SetAnimationStart) == 0x000004, "Wrong size on PyWidget_Activity125_RankItem_SetAnimationStart");
-static_assert(offsetof(PyWidget_Activity125_RankItem_SetAnimationStart, Time) == 0x000000, "Member 'PyWidget_Activity125_RankItem_SetAnimationStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity125_RankItem_SetAnimationStart;
 
 }
 

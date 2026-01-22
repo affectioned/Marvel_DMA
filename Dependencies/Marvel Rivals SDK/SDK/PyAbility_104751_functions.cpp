@@ -36,33 +36,6 @@ void APyProjectile_10475101::K2_OnBeginAgentTask()
 }
 
 
-// PythonFunction PyAbility_104751.PyProjectile_10475101.K2_OnBounce
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyProjectile_10475101::K2_OnBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10475101", "K2_OnBounce");
-
-	Params::PyProjectile_10475101_K2_OnBounce Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_104751.PyProjectile_10475101.K2_OnProcessHit
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

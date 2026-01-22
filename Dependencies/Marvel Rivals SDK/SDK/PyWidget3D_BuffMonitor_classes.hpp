@@ -17,9 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget3D_BuffMonitor.PyWidget3D_BuffMonitor
-// 0x0000 (0x0870 - 0x0870)
-class UPyWidget3D_BuffMonitor : public UMarvel3DWidget
+// 0x0010 (0x0880 - 0x0870)
+#pragma pack(push, 0x1)
+class alignas(0x10) UPyWidget3D_BuffMonitor : public UMarvel3DWidget
 {
+public:
+	uint8                                         Pad_868[0x8];                                      // 0x0868(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyWidget_Common_HeroRoleIcon*          WBP_Common_HeroRoleIcon;                           // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	void OnInitialized();
 	bool ShouldBeVisible();
@@ -30,15 +35,19 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_BuffMonitor">();
+		STATIC_CLASS_IMPL("PyWidget3D_BuffMonitor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_BuffMonitor")
 	}
 	static class UPyWidget3D_BuffMonitor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_BuffMonitor>();
 	}
 };
-static_assert(alignof(UPyWidget3D_BuffMonitor) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMonitor");
-static_assert(sizeof(UPyWidget3D_BuffMonitor) == 0x000870, "Wrong size on UPyWidget3D_BuffMonitor");
+#pragma pack(pop)
+DUMPER7_ASSERTS_UPyWidget3D_BuffMonitor;
 
 }
 

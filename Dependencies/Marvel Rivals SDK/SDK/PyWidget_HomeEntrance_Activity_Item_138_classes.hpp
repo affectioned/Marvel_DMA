@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "PyWidget_HomeEntrance_Activity_Item_Base_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Activity_Item_138.PyWidget_HomeEntrance_Activity_138
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_138 final : public UPyWidget_HomeEntrance_Activity_Item_Widget_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            RedSlateColor;                                     // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RedSlateColor;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_138">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_138")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_138")
 	}
 	static class UPyWidget_HomeEntrance_Activity_138* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_138>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_138) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_138");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_138) == 0x0005E8, "Wrong size on UPyWidget_HomeEntrance_Activity_138");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_138, RedSlateColor) == 0x0005BC, "Member 'UPyWidget_HomeEntrance_Activity_138::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_138, WhiteSlateColor) == 0x0005D0, "Member 'UPyWidget_HomeEntrance_Activity_138::WhiteSlateColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_138;
 
 }
 

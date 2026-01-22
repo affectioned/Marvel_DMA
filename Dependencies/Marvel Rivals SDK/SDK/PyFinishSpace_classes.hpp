@@ -41,19 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFinishSpace">();
+		STATIC_CLASS_IMPL("PyFinishSpace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFinishSpace")
 	}
 	static class APyFinishSpace* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyFinishSpace>();
 	}
 };
-static_assert(alignof(APyFinishSpace) == 0x000010, "Wrong alignment on APyFinishSpace");
-static_assert(sizeof(APyFinishSpace) == 0x000710, "Wrong size on APyFinishSpace");
-static_assert(offsetof(APyFinishSpace, ChangeSpeed) == 0x0006E0, "Member 'APyFinishSpace::ChangeSpeed' has a wrong offset!");
-static_assert(offsetof(APyFinishSpace, Angle) == 0x0006E4, "Member 'APyFinishSpace::Angle' has a wrong offset!");
-static_assert(offsetof(APyFinishSpace, Location) == 0x0006E8, "Member 'APyFinishSpace::Location' has a wrong offset!");
-static_assert(offsetof(APyFinishSpace, EffectParam) == 0x000700, "Member 'APyFinishSpace::EffectParam' has a wrong offset!");
+DUMPER7_ASSERTS_APyFinishSpace;
 
 }
 

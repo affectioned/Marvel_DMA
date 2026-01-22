@@ -38,18 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeSequenceComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeSequenceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeSequenceComponent")
 	}
 	static class UPyLevelNodeSequenceComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeSequenceComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeSequenceComponent) == 0x000008, "Wrong alignment on UPyLevelNodeSequenceComponent");
-static_assert(sizeof(UPyLevelNodeSequenceComponent) == 0x000128, "Wrong size on UPyLevelNodeSequenceComponent");
-static_assert(offsetof(UPyLevelNodeSequenceComponent, CurrentTime) == 0x000108, "Member 'UPyLevelNodeSequenceComponent::CurrentTime' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeSequenceComponent, Sequence) == 0x000110, "Member 'UPyLevelNodeSequenceComponent::Sequence' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeSequenceComponent, ComponentName) == 0x000118, "Member 'UPyLevelNodeSequenceComponent::ComponentName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelNodeSequenceComponent;
 
 }
 

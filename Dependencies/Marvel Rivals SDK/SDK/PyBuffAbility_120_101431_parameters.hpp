@@ -27,11 +27,7 @@ public:
 	int32                                         NewCount;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OldCount;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10143180_OnGameplayEffectStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_120_10143180_OnGameplayEffectStackChange");
-static_assert(sizeof(PyBuffAbility_120_10143180_OnGameplayEffectStackChange) == 0x000010, "Wrong size on PyBuffAbility_120_10143180_OnGameplayEffectStackChange");
-static_assert(offsetof(PyBuffAbility_120_10143180_OnGameplayEffectStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_120_10143180_OnGameplayEffectStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10143180_OnGameplayEffectStackChange, NewCount) == 0x000008, "Member 'PyBuffAbility_120_10143180_OnGameplayEffectStackChange::NewCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10143180_OnGameplayEffectStackChange, OldCount) == 0x00000C, "Member 'PyBuffAbility_120_10143180_OnGameplayEffectStackChange::OldCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10143180_OnGameplayEffectStackChange;
 
 // PythonFunction PyBuffAbility_120_101431.PyBuffAbility_120_10143181.OnCreateFireTask
 // 0x0008 (0x0008 - 0x0000)
@@ -40,9 +36,7 @@ struct PyBuffAbility_120_10143181_OnCreateFireTask final
 public:
 	class UMarvelWeaponTask_Firing*               FireTask;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10143181_OnCreateFireTask) == 0x000008, "Wrong alignment on PyBuffAbility_120_10143181_OnCreateFireTask");
-static_assert(sizeof(PyBuffAbility_120_10143181_OnCreateFireTask) == 0x000008, "Wrong size on PyBuffAbility_120_10143181_OnCreateFireTask");
-static_assert(offsetof(PyBuffAbility_120_10143181_OnCreateFireTask, FireTask) == 0x000000, "Member 'PyBuffAbility_120_10143181_OnCreateFireTask::FireTask' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10143181_OnCreateFireTask;
 
 // PythonFunction PyBuffAbility_120_101431.PyBuffAbility_120_10143181.ChangeFireDirection
 // 0x0080 (0x0080 - 0x0000)
@@ -55,12 +49,7 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCustomFireTraceData                   ReturnValue;                                       // 0x0038(0x0048)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyBuffAbility_120_10143181_ChangeFireDirection) == 0x000008, "Wrong alignment on PyBuffAbility_120_10143181_ChangeFireDirection");
-static_assert(sizeof(PyBuffAbility_120_10143181_ChangeFireDirection) == 0x000080, "Wrong size on PyBuffAbility_120_10143181_ChangeFireDirection");
-static_assert(offsetof(PyBuffAbility_120_10143181_ChangeFireDirection, muzzle_location) == 0x000000, "Member 'PyBuffAbility_120_10143181_ChangeFireDirection::muzzle_location' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10143181_ChangeFireDirection, ori_direction) == 0x000018, "Member 'PyBuffAbility_120_10143181_ChangeFireDirection::ori_direction' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10143181_ChangeFireDirection, mode_index) == 0x000030, "Member 'PyBuffAbility_120_10143181_ChangeFireDirection::mode_index' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10143181_ChangeFireDirection, ReturnValue) == 0x000038, "Member 'PyBuffAbility_120_10143181_ChangeFireDirection::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10143181_ChangeFireDirection;
 
 }
 

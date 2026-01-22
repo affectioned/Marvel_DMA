@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NotTreatShield_105551.NotTreatShield_105551_C
-// 0x0000 (0x1590 - 0x1590)
+// 0x0000 (0x1610 - 0x1610)
 class UNotTreatShield_105551_C final : public UPyNotTreatFallAbility_105551
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NotTreatShield_105551_C">();
+		BP_STATIC_CLASS_IMPL("NotTreatShield_105551_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotTreatShield_105551_C")
 	}
 	static class UNotTreatShield_105551_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNotTreatShield_105551_C>();
 	}
 };
-static_assert(alignof(UNotTreatShield_105551_C) == 0x000008, "Wrong alignment on UNotTreatShield_105551_C");
-static_assert(sizeof(UNotTreatShield_105551_C) == 0x001590, "Wrong size on UNotTreatShield_105551_C");
+DUMPER7_ASSERTS_UNotTreatShield_105551_C;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	int32                                         ParentIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ChildIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked) == 0x000004, "Wrong alignment on PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked");
-static_assert(sizeof(PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked) == 0x000008, "Wrong size on PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked");
-static_assert(offsetof(PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked, ParentIndex) == 0x000000, "Member 'PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked::ParentIndex' has a wrong offset!");
-static_assert(offsetof(PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked, ChildIndex) == 0x000004, "Member 'PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked::ChildIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_CommonBg_RegisterNavigationLv2_OnSubNavClicked;
 
 // PythonFunction PyWidget_Common_Bg.PyWidget_Common_Bg.OnStackPanelTopWidgetChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class UWidget*                                OldTop;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                NewTop;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Bg_OnStackPanelTopWidgetChanged) == 0x000008, "Wrong alignment on PyWidget_Common_Bg_OnStackPanelTopWidgetChanged");
-static_assert(sizeof(PyWidget_Common_Bg_OnStackPanelTopWidgetChanged) == 0x000010, "Wrong size on PyWidget_Common_Bg_OnStackPanelTopWidgetChanged");
-static_assert(offsetof(PyWidget_Common_Bg_OnStackPanelTopWidgetChanged, OldTop) == 0x000000, "Member 'PyWidget_Common_Bg_OnStackPanelTopWidgetChanged::OldTop' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Bg_OnStackPanelTopWidgetChanged, NewTop) == 0x000008, "Member 'PyWidget_Common_Bg_OnStackPanelTopWidgetChanged::NewTop' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Bg_OnStackPanelTopWidgetChanged;
 
 // PythonFunction PyWidget_Common_Bg.PyWidget_Common_Bg.OnParentVisibilityChange
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct PyWidget_Common_Bg_OnParentVisibilityChange final
 public:
 	ESlateVisibility                              InVisilibity;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Bg_OnParentVisibilityChange) == 0x000001, "Wrong alignment on PyWidget_Common_Bg_OnParentVisibilityChange");
-static_assert(sizeof(PyWidget_Common_Bg_OnParentVisibilityChange) == 0x000001, "Wrong size on PyWidget_Common_Bg_OnParentVisibilityChange");
-static_assert(offsetof(PyWidget_Common_Bg_OnParentVisibilityChange, InVisilibity) == 0x000000, "Member 'PyWidget_Common_Bg_OnParentVisibilityChange::InVisilibity' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Bg_OnParentVisibilityChange;
 
 // PythonFunction PyWidget_Common_Bg.PyWidget_Common_Bg.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -60,9 +52,7 @@ struct PyWidget_Common_Bg_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Bg_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Common_Bg_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Common_Bg_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Common_Bg_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Common_Bg_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Common_Bg_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Bg_OnAnimationFinished;
 
 // PythonFunction PyWidget_Common_Bg.PyWidget_Common_Bg.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +61,7 @@ struct PyWidget_Common_Bg_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Bg_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Common_Bg_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Common_Bg_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Common_Bg_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Common_Bg_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Common_Bg_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Bg_MarvelSetVisible;
 
 // PythonFunction PyWidget_Common_Bg.PyExtension_CommonBg_HideWhenWidgetShow.OnWidgetVisibilityChange
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +70,7 @@ struct PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange final
 public:
 	ESlateVisibility                              InVisilibity;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange) == 0x000001, "Wrong alignment on PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange");
-static_assert(sizeof(PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange) == 0x000001, "Wrong size on PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange");
-static_assert(offsetof(PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange, InVisilibity) == 0x000000, "Member 'PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange::InVisilibity' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_CommonBg_HideWhenWidgetShow_OnWidgetVisibilityChange;
 
 // PythonFunction PyWidget_Common_Bg.PyExtension_CommonBg_RegisterNavigationLv1.OnNavClicked
 // 0x0004 (0x0004 - 0x0000)
@@ -93,9 +79,7 @@ struct PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked) == 0x000004, "Wrong alignment on PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked");
-static_assert(sizeof(PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked) == 0x000004, "Wrong size on PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked");
-static_assert(offsetof(PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked, Index_0) == 0x000000, "Member 'PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_CommonBg_RegisterNavigationLv1_OnNavClicked;
 
 // PythonFunction PyWidget_Common_Bg.PyExtension_Career_RegisterNavigationLv1.OnNavClicked
 // 0x0004 (0x0004 - 0x0000)
@@ -104,9 +88,7 @@ struct PyExtension_Career_RegisterNavigationLv1_OnNavClicked final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Career_RegisterNavigationLv1_OnNavClicked) == 0x000004, "Wrong alignment on PyExtension_Career_RegisterNavigationLv1_OnNavClicked");
-static_assert(sizeof(PyExtension_Career_RegisterNavigationLv1_OnNavClicked) == 0x000004, "Wrong size on PyExtension_Career_RegisterNavigationLv1_OnNavClicked");
-static_assert(offsetof(PyExtension_Career_RegisterNavigationLv1_OnNavClicked, Index_0) == 0x000000, "Member 'PyExtension_Career_RegisterNavigationLv1_OnNavClicked::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Career_RegisterNavigationLv1_OnNavClicked;
 
 }
 

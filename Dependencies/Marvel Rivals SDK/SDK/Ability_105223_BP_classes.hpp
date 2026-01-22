@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105223_BP.Ability_105223_BP_C
-// 0x2D88 (0x57F0 - 0x2A68)
+// 0x36D8 (0x6190 - 0x2AB8)
 class UAbility_105223_BP_C final : public UMarvelAbility_SelectTarget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2A68(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<struct FDashAbilityInfo>               Dash_Info;                                         // 0x2A70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          Get_Masked;                                        // 0x2A80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A81[0x7];                                     // 0x2A81(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x2A88(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDashAbilityInfo                       Attach_Dash;                                       // 0x2E20(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                         Pad_39E8[0x8];                                     // 0x39E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       选取参数;                                          // 0x39F0(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FMarvelTraceRule                       Target_Class;                                      // 0x51B0(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayEventData                     Local_Event_Data;                                  // 0x5548(0x0290)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AActor*                                 TargetActor;                                       // 0x57D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UGATask_ApplyDash*                      Attach_Dash_Task;                                  // 0x57E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UGATask_ApplyDash*                      Normal_Dash_Task;                                  // 0x57E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2AB8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<struct FDashAbilityInfo>               Dash_Info;                                         // 0x2AC0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          Get_Masked;                                        // 0x2AD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2AD1[0x7];                                     // 0x2AD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x2AD8(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDashAbilityInfo                       Attach_Dash;                                       // 0x2FB0(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       选取参数;                                          // 0x3EA0(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FMarvelTraceRule                       Target_Class;                                      // 0x5A10(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayEventData                     Local_Event_Data;                                  // 0x5EE8(0x0290)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AActor*                                 TargetActor;                                       // 0x6178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UGATask_ApplyDash*                      Attach_Dash_Task;                                  // 0x6180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UGATask_ApplyDash*                      Normal_Dash_Task;                                  // 0x6188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AE_OnAbilityInitialized();
@@ -51,26 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105223_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105223_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105223_BP_C")
 	}
 	static class UAbility_105223_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105223_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105223_BP_C) == 0x000010, "Wrong alignment on UAbility_105223_BP_C");
-static_assert(sizeof(UAbility_105223_BP_C) == 0x0057F0, "Wrong size on UAbility_105223_BP_C");
-static_assert(offsetof(UAbility_105223_BP_C, UberGraphFrame) == 0x002A68, "Member 'UAbility_105223_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Dash_Info) == 0x002A70, "Member 'UAbility_105223_BP_C::Dash_Info' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Get_Masked) == 0x002A80, "Member 'UAbility_105223_BP_C::Get_Masked' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Trace_Rule) == 0x002A88, "Member 'UAbility_105223_BP_C::Trace_Rule' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Attach_Dash) == 0x002E20, "Member 'UAbility_105223_BP_C::Attach_Dash' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, 选取参数) == 0x0039F0, "Member 'UAbility_105223_BP_C::选取参数' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Target_Class) == 0x0051B0, "Member 'UAbility_105223_BP_C::Target_Class' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Local_Event_Data) == 0x005548, "Member 'UAbility_105223_BP_C::Local_Event_Data' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, TargetActor) == 0x0057D8, "Member 'UAbility_105223_BP_C::TargetActor' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Attach_Dash_Task) == 0x0057E0, "Member 'UAbility_105223_BP_C::Attach_Dash_Task' has a wrong offset!");
-static_assert(offsetof(UAbility_105223_BP_C, Normal_Dash_Task) == 0x0057E8, "Member 'UAbility_105223_BP_C::Normal_Dash_Task' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105223_BP_C;
 
 }
 

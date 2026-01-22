@@ -24,9 +24,7 @@ struct PyUIC_SummonedWeapon_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_SummonedWeapon_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyUIC_SummonedWeapon_ReceiveEndPlay");
-static_assert(sizeof(PyUIC_SummonedWeapon_ReceiveEndPlay) == 0x000001, "Wrong size on PyUIC_SummonedWeapon_ReceiveEndPlay");
-static_assert(offsetof(PyUIC_SummonedWeapon_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyUIC_SummonedWeapon_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SummonedWeapon_ReceiveEndPlay;
 
 // PythonFunction PyWidget_Summoned.PyUIC_SummonedWeapon.SetViewerSide
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyUIC_SummonedWeapon_SetViewerSide final
 public:
 	EClientPlayerViewSide                         InViewSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_SummonedWeapon_SetViewerSide) == 0x000001, "Wrong alignment on PyUIC_SummonedWeapon_SetViewerSide");
-static_assert(sizeof(PyUIC_SummonedWeapon_SetViewerSide) == 0x000001, "Wrong size on PyUIC_SummonedWeapon_SetViewerSide");
-static_assert(offsetof(PyUIC_SummonedWeapon_SetViewerSide, InViewSide) == 0x000000, "Member 'PyUIC_SummonedWeapon_SetViewerSide::InViewSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SummonedWeapon_SetViewerSide;
 
 // PythonFunction PyWidget_Summoned.PyUIC_SummonedWeapon.OnAttributeChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	class AActor*                                 source_avatar;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               modifier_parameter;                                // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_SummonedWeapon_OnAttributeChanged) == 0x000008, "Wrong alignment on PyUIC_SummonedWeapon_OnAttributeChanged");
-static_assert(sizeof(PyUIC_SummonedWeapon_OnAttributeChanged) == 0x000020, "Wrong size on PyUIC_SummonedWeapon_OnAttributeChanged");
-static_assert(offsetof(PyUIC_SummonedWeapon_OnAttributeChanged, source_avatar) == 0x000000, "Member 'PyUIC_SummonedWeapon_OnAttributeChanged::source_avatar' has a wrong offset!");
-static_assert(offsetof(PyUIC_SummonedWeapon_OnAttributeChanged, modifier_parameter) == 0x000008, "Member 'PyUIC_SummonedWeapon_OnAttributeChanged::modifier_parameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SummonedWeapon_OnAttributeChanged;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKraKoaC03Dragon">();
+		STATIC_CLASS_IMPL("PyKraKoaC03Dragon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKraKoaC03Dragon")
 	}
 	static class APyKraKoaC03Dragon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKraKoaC03Dragon>();
 	}
 };
-static_assert(alignof(APyKraKoaC03Dragon) == 0x000010, "Wrong alignment on APyKraKoaC03Dragon");
-static_assert(sizeof(APyKraKoaC03Dragon) == 0x000760, "Wrong size on APyKraKoaC03Dragon");
-static_assert(offsetof(APyKraKoaC03Dragon, AM_DownToUp) == 0x000730, "Member 'APyKraKoaC03Dragon::AM_DownToUp' has a wrong offset!");
-static_assert(offsetof(APyKraKoaC03Dragon, AM_UpToDown) == 0x000738, "Member 'APyKraKoaC03Dragon::AM_UpToDown' has a wrong offset!");
-static_assert(offsetof(APyKraKoaC03Dragon, AM_IdleDown) == 0x000740, "Member 'APyKraKoaC03Dragon::AM_IdleDown' has a wrong offset!");
-static_assert(offsetof(APyKraKoaC03Dragon, AM_IdleUp) == 0x000748, "Member 'APyKraKoaC03Dragon::AM_IdleUp' has a wrong offset!");
-static_assert(offsetof(APyKraKoaC03Dragon, OnDragon_PostBeginPlay) == 0x000750, "Member 'APyKraKoaC03Dragon::OnDragon_PostBeginPlay' has a wrong offset!");
+DUMPER7_ASSERTS_APyKraKoaC03Dragon;
 
 // PythonClass PyKraKoaC03Dragon.PyKrakoaC03DragonSwing
 // 0x0060 (0x0790 - 0x0730)
@@ -81,29 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKrakoaC03DragonSwing">();
+		STATIC_CLASS_IMPL("PyKrakoaC03DragonSwing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKrakoaC03DragonSwing")
 	}
 	static class APyKrakoaC03DragonSwing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKrakoaC03DragonSwing>();
 	}
 };
-static_assert(alignof(APyKrakoaC03DragonSwing) == 0x000010, "Wrong alignment on APyKrakoaC03DragonSwing");
-static_assert(sizeof(APyKrakoaC03DragonSwing) == 0x000790, "Wrong size on APyKrakoaC03DragonSwing");
-static_assert(offsetof(APyKrakoaC03DragonSwing, Dragon) == 0x000730, "Member 'APyKrakoaC03DragonSwing::Dragon' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, AM_DownToUp) == 0x000738, "Member 'APyKrakoaC03DragonSwing::AM_DownToUp' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, AM_UpToDown) == 0x000740, "Member 'APyKrakoaC03DragonSwing::AM_UpToDown' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, AM_IdleDown) == 0x000748, "Member 'APyKrakoaC03DragonSwing::AM_IdleDown' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, AM_IdleUp) == 0x000750, "Member 'APyKrakoaC03DragonSwing::AM_IdleUp' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, BlendInArgs) == 0x000758, "Member 'APyKrakoaC03DragonSwing::BlendInArgs' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, Idle_Position_Tolerance) == 0x000768, "Member 'APyKrakoaC03DragonSwing::Idle_Position_Tolerance' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, Fly_Position_Tolerance) == 0x00076C, "Member 'APyKrakoaC03DragonSwing::Fly_Position_Tolerance' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, AnimInfo) == 0x000770, "Member 'APyKrakoaC03DragonSwing::AnimInfo' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, IntervalSecondsForUpdateMontage) == 0x000778, "Member 'APyKrakoaC03DragonSwing::IntervalSecondsForUpdateMontage' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, IdleUpTimeMultiplier) == 0x00077C, "Member 'APyKrakoaC03DragonSwing::IdleUpTimeMultiplier' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, IdleDownTimeMultiplier) == 0x000780, "Member 'APyKrakoaC03DragonSwing::IdleDownTimeMultiplier' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, DefaultAnimState) == 0x000784, "Member 'APyKrakoaC03DragonSwing::DefaultAnimState' has a wrong offset!");
-static_assert(offsetof(APyKrakoaC03DragonSwing, DefaultStartAnimLoop) == 0x000788, "Member 'APyKrakoaC03DragonSwing::DefaultStartAnimLoop' has a wrong offset!");
+DUMPER7_ASSERTS_APyKrakoaC03DragonSwing;
 
 }
 

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "MarvelLevel_structs.hpp"
+#include "level_battle_chess_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "level_battle_chess_structs.hpp"
+#include "MarvelLevel_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -146,72 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateBattleChessComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateBattleChessComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateBattleChessComponent")
 	}
 	static class UPyPlayerStateBattleChessComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateBattleChessComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateBattleChessComponent) == 0x000008, "Wrong alignment on UPyPlayerStateBattleChessComponent");
-static_assert(sizeof(UPyPlayerStateBattleChessComponent) == 0x000448, "Wrong size on UPyPlayerStateBattleChessComponent");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, HealthPoint) == 0x000108, "Member 'UPyPlayerStateBattleChessComponent::HealthPoint' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, ReduceHealthPoint) == 0x00010C, "Member 'UPyPlayerStateBattleChessComponent::ReduceHealthPoint' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, EnemyPlayer) == 0x000110, "Member 'UPyPlayerStateBattleChessComponent::EnemyPlayer' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, GroupID) == 0x000118, "Member 'UPyPlayerStateBattleChessComponent::GroupID' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, BattleChessPlayerState) == 0x00011C, "Member 'UPyPlayerStateBattleChessComponent::BattleChessPlayerState' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, Ranking) == 0x000120, "Member 'UPyPlayerStateBattleChessComponent::Ranking' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, RoundBattleSide) == 0x000124, "Member 'UPyPlayerStateBattleChessComponent::RoundBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, RepRoundIndex) == 0x000128, "Member 'UPyPlayerStateBattleChessComponent::RepRoundIndex' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, BattleSide) == 0x00012C, "Member 'UPyPlayerStateBattleChessComponent::BattleSide' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, HeroPool) == 0x000130, "Member 'UPyPlayerStateBattleChessComponent::HeroPool' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIUIDList) == 0x000140, "Member 'UPyPlayerStateBattleChessComponent::AIUIDList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, HeroList) == 0x000150, "Member 'UPyPlayerStateBattleChessComponent::HeroList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, LastHeroIDList) == 0x000160, "Member 'UPyPlayerStateBattleChessComponent::LastHeroIDList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, LastHeroCardNumList) == 0x000170, "Member 'UPyPlayerStateBattleChessComponent::LastHeroCardNumList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIDamageList) == 0x000180, "Member 'UPyPlayerStateBattleChessComponent::AIDamageList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIHealList) == 0x000190, "Member 'UPyPlayerStateBattleChessComponent::AIHealList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIDamageTakenList) == 0x0001A0, "Member 'UPyPlayerStateBattleChessComponent::AIDamageTakenList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIPlayerNumber) == 0x0001B0, "Member 'UPyPlayerStateBattleChessComponent::AIPlayerNumber' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, CardList) == 0x0001B8, "Member 'UPyPlayerStateBattleChessComponent::CardList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, NextRoundCardList) == 0x0001C8, "Member 'UPyPlayerStateBattleChessComponent::NextRoundCardList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, SelectableCardList) == 0x0001D8, "Member 'UPyPlayerStateBattleChessComponent::SelectableCardList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, ChangeHeroCardList) == 0x0001E8, "Member 'UPyPlayerStateBattleChessComponent::ChangeHeroCardList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, ChangeHeroIDList) == 0x0001F8, "Member 'UPyPlayerStateBattleChessComponent::ChangeHeroIDList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, IsLockingCard) == 0x000208, "Member 'UPyPlayerStateBattleChessComponent::IsLockingCard' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, HasBuyCardOnCurRound) == 0x000209, "Member 'UPyPlayerStateBattleChessComponent::HasBuyCardOnCurRound' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, Currency) == 0x00020C, "Member 'UPyPlayerStateBattleChessComponent::Currency' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, RoundBattleResult) == 0x000210, "Member 'UPyPlayerStateBattleChessComponent::RoundBattleResult' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, PVERewardReplicateTimer) == 0x000220, "Member 'UPyPlayerStateBattleChessComponent::PVERewardReplicateTimer' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, PVECardSelectableCount) == 0x000298, "Member 'UPyPlayerStateBattleChessComponent::PVECardSelectableCount' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, PVECardRefreshCount) == 0x00029C, "Member 'UPyPlayerStateBattleChessComponent::PVECardRefreshCount' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, CardGlobalData) == 0x0002A0, "Member 'UPyPlayerStateBattleChessComponent::CardGlobalData' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, AIRoleTuple) == 0x0002B0, "Member 'UPyPlayerStateBattleChessComponent::AIRoleTuple' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, DrawCardStrategy) == 0x0002C0, "Member 'UPyPlayerStateBattleChessComponent::DrawCardStrategy' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnCardListChanged) == 0x0002C8, "Member 'UPyPlayerStateBattleChessComponent::OnCardListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnNextRoundCardListChanged) == 0x0002D8, "Member 'UPyPlayerStateBattleChessComponent::OnNextRoundCardListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnSelectableCardListChanged) == 0x0002E8, "Member 'UPyPlayerStateBattleChessComponent::OnSelectableCardListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnChangeHeroCardListChanged) == 0x0002F8, "Member 'UPyPlayerStateBattleChessComponent::OnChangeHeroCardListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnLockingCardStateChanged) == 0x000308, "Member 'UPyPlayerStateBattleChessComponent::OnLockingCardStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnCurrencyChanged) == 0x000318, "Member 'UPyPlayerStateBattleChessComponent::OnCurrencyChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnHealthPointChanged) == 0x000328, "Member 'UPyPlayerStateBattleChessComponent::OnHealthPointChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnReduceHealthPointChanged) == 0x000338, "Member 'UPyPlayerStateBattleChessComponent::OnReduceHealthPointChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnAIUIDListChanged) == 0x000348, "Member 'UPyPlayerStateBattleChessComponent::OnAIUIDListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnLastHeroIDListChanged) == 0x000358, "Member 'UPyPlayerStateBattleChessComponent::OnLastHeroIDListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnLastHeroCardNumListChanged) == 0x000368, "Member 'UPyPlayerStateBattleChessComponent::OnLastHeroCardNumListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnAIDamageListChanged) == 0x000378, "Member 'UPyPlayerStateBattleChessComponent::OnAIDamageListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnRoundBattleResultChanged) == 0x000388, "Member 'UPyPlayerStateBattleChessComponent::OnRoundBattleResultChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnBattleChessCameraStateChange) == 0x000398, "Member 'UPyPlayerStateBattleChessComponent::OnBattleChessCameraStateChange' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnBattleChessCameraStateCacheChange) == 0x0003A8, "Member 'UPyPlayerStateBattleChessComponent::OnBattleChessCameraStateCacheChange' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnBattleChessPlayerStateChanged) == 0x0003B8, "Member 'UPyPlayerStateBattleChessComponent::OnBattleChessPlayerStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnBattleChessPlayerRankingChanged) == 0x0003C8, "Member 'UPyPlayerStateBattleChessComponent::OnBattleChessPlayerRankingChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, NotifyCardRefresh) == 0x0003D8, "Member 'UPyPlayerStateBattleChessComponent::NotifyCardRefresh' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, NotifyChangeHeroCardRefresh) == 0x0003E8, "Member 'UPyPlayerStateBattleChessComponent::NotifyChangeHeroCardRefresh' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnChangeHeroIDListChanged) == 0x0003F8, "Member 'UPyPlayerStateBattleChessComponent::OnChangeHeroIDListChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnHasBuyCardOnCurRoundChanged) == 0x000408, "Member 'UPyPlayerStateBattleChessComponent::OnHasBuyCardOnCurRoundChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, NotifyPVERewardAvailable) == 0x000418, "Member 'UPyPlayerStateBattleChessComponent::NotifyPVERewardAvailable' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnPVECardSelectableCountChanged) == 0x000428, "Member 'UPyPlayerStateBattleChessComponent::OnPVECardSelectableCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateBattleChessComponent, OnPVECardRefreshCountChanged) == 0x000438, "Member 'UPyPlayerStateBattleChessComponent::OnPVECardRefreshCountChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateBattleChessComponent;
 
 }
 

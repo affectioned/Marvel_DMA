@@ -17,51 +17,40 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mood_Expression.WBP_Mood_Expression_C
-// 0x0070 (0x0630 - 0x05C0)
+// 0x0070 (0x0638 - 0x05C8)
 class UWBP_Mood_Expression_C final : public UPyWidget_Mood_Expression
 {
 public:
-	class UWidgetAnimation*                       Anim_Sequence;                                     // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Scale_T1;                                     // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Small;                                        // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Big;                                          // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Scale;                                        // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Item_Icon;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Personal_Icon;                                 // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Sequence;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     MarvelCanvasPanel;                                 // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Emoji;                                     // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_Icon;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_SpineWidget_Icon;                         // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Content;                                   // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USpineWidget*                           SpineWidget_Icon;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Sequence;                                     // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Scale_T1;                                     // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Small;                                        // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Big;                                          // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Scale;                                        // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Item_Icon;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Personal_Icon;                                 // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Sequence;                                   // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     MarvelCanvasPanel;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Emoji;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_Icon;                                     // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_SpineWidget_Icon;                         // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Content;                                   // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpineWidget*                           SpineWidget_Icon;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mood_Expression_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mood_Expression_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mood_Expression_C")
 	}
 	static class UWBP_Mood_Expression_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mood_Expression_C>();
 	}
 };
-static_assert(alignof(UWBP_Mood_Expression_C) == 0x000008, "Wrong alignment on UWBP_Mood_Expression_C");
-static_assert(sizeof(UWBP_Mood_Expression_C) == 0x000630, "Wrong size on UWBP_Mood_Expression_C");
-static_assert(offsetof(UWBP_Mood_Expression_C, Anim_Sequence) == 0x0005C0, "Member 'UWBP_Mood_Expression_C::Anim_Sequence' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Anim_Scale_T1) == 0x0005C8, "Member 'UWBP_Mood_Expression_C::Anim_Scale_T1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Anim_Small) == 0x0005D0, "Member 'UWBP_Mood_Expression_C::Anim_Small' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Anim_Big) == 0x0005D8, "Member 'UWBP_Mood_Expression_C::Anim_Big' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Anim_Scale) == 0x0005E0, "Member 'UWBP_Mood_Expression_C::Anim_Scale' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Img_Item_Icon) == 0x0005E8, "Member 'UWBP_Mood_Expression_C::Img_Item_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Img_Personal_Icon) == 0x0005F0, "Member 'UWBP_Mood_Expression_C::Img_Personal_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Img_Vx_Sequence) == 0x0005F8, "Member 'UWBP_Mood_Expression_C::Img_Vx_Sequence' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, MarvelCanvasPanel) == 0x000600, "Member 'UWBP_Mood_Expression_C::MarvelCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, Overlay_Emoji) == 0x000608, "Member 'UWBP_Mood_Expression_C::Overlay_Emoji' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, ScaleBox_Icon) == 0x000610, "Member 'UWBP_Mood_Expression_C::ScaleBox_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, ScaleBox_SpineWidget_Icon) == 0x000618, "Member 'UWBP_Mood_Expression_C::ScaleBox_SpineWidget_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, SizeBox_Content) == 0x000620, "Member 'UWBP_Mood_Expression_C::SizeBox_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Mood_Expression_C, SpineWidget_Icon) == 0x000628, "Member 'UWBP_Mood_Expression_C::SpineWidget_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mood_Expression_C;
 
 }
 

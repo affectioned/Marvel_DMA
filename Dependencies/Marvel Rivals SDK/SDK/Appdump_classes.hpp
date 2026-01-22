@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppDumpAssociatedFile">();
+		STATIC_CLASS_IMPL("AppDumpAssociatedFile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppDumpAssociatedFile")
 	}
 	static class UAppDumpAssociatedFile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppDumpAssociatedFile>();
 	}
 };
-static_assert(alignof(UAppDumpAssociatedFile) == 0x000008, "Wrong alignment on UAppDumpAssociatedFile");
-static_assert(sizeof(UAppDumpAssociatedFile) == 0x000070, "Wrong size on UAppDumpAssociatedFile");
+DUMPER7_ASSERTS_UAppDumpAssociatedFile;
 
 // Class Appdump.AppdumpLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -64,15 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppdumpLibrary">();
+		STATIC_CLASS_IMPL("AppdumpLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppdumpLibrary")
 	}
 	static class UAppdumpLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppdumpLibrary>();
 	}
 };
-static_assert(alignof(UAppdumpLibrary) == 0x000008, "Wrong alignment on UAppdumpLibrary");
-static_assert(sizeof(UAppdumpLibrary) == 0x000030, "Wrong size on UAppdumpLibrary");
+DUMPER7_ASSERTS_UAppdumpLibrary;
 
 // Class Appdump.AppdumpRuntimeSettings
 // 0x0028 (0x0058 - 0x0030)
@@ -90,21 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AppdumpRuntimeSettings">();
+		STATIC_CLASS_IMPL("AppdumpRuntimeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AppdumpRuntimeSettings")
 	}
 	static class UAppdumpRuntimeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAppdumpRuntimeSettings>();
 	}
 };
-static_assert(alignof(UAppdumpRuntimeSettings) == 0x000008, "Wrong alignment on UAppdumpRuntimeSettings");
-static_assert(sizeof(UAppdumpRuntimeSettings) == 0x000058, "Wrong size on UAppdumpRuntimeSettings");
-static_assert(offsetof(UAppdumpRuntimeSettings, ProjectId) == 0x000030, "Member 'UAppdumpRuntimeSettings::ProjectId' has a wrong offset!");
-static_assert(offsetof(UAppdumpRuntimeSettings, AppKey) == 0x000040, "Member 'UAppdumpRuntimeSettings::AppKey' has a wrong offset!");
-static_assert(offsetof(UAppdumpRuntimeSettings, ChineseMainland) == 0x000050, "Member 'UAppdumpRuntimeSettings::ChineseMainland' has a wrong offset!");
-static_assert(offsetof(UAppdumpRuntimeSettings, AutoStart) == 0x000051, "Member 'UAppdumpRuntimeSettings::AutoStart' has a wrong offset!");
-static_assert(offsetof(UAppdumpRuntimeSettings, WindowsEnable) == 0x000052, "Member 'UAppdumpRuntimeSettings::WindowsEnable' has a wrong offset!");
-static_assert(offsetof(UAppdumpRuntimeSettings, GPUMemoryMonitorEnable) == 0x000053, "Member 'UAppdumpRuntimeSettings::GPUMemoryMonitorEnable' has a wrong offset!");
+DUMPER7_ASSERTS_UAppdumpRuntimeSettings;
 
 }
 

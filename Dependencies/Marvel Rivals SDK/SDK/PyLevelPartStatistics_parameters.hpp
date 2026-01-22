@@ -21,9 +21,7 @@ struct PyLevelPartStatistics_OnLevelPartEnd final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelPartStatistics_OnLevelPartEnd) == 0x000001, "Wrong alignment on PyLevelPartStatistics_OnLevelPartEnd");
-static_assert(sizeof(PyLevelPartStatistics_OnLevelPartEnd) == 0x000001, "Wrong size on PyLevelPartStatistics_OnLevelPartEnd");
-static_assert(offsetof(PyLevelPartStatistics_OnLevelPartEnd, bSuccess) == 0x000000, "Member 'PyLevelPartStatistics_OnLevelPartEnd::bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelPartStatistics_OnLevelPartEnd;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GameMode_TaskContainer.PyWidget_GameMode_TaskContainer
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_GameMode_TaskContainer : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameMode_TaskContainer">();
+		STATIC_CLASS_IMPL("PyWidget_GameMode_TaskContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameMode_TaskContainer")
 	}
 	static class UPyWidget_GameMode_TaskContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameMode_TaskContainer>();
 	}
 };
-static_assert(alignof(UPyWidget_GameMode_TaskContainer) == 0x000008, "Wrong alignment on UPyWidget_GameMode_TaskContainer");
-static_assert(sizeof(UPyWidget_GameMode_TaskContainer) == 0x0005C0, "Wrong size on UPyWidget_GameMode_TaskContainer");
+DUMPER7_ASSERTS_UPyWidget_GameMode_TaskContainer;
 
 }
 

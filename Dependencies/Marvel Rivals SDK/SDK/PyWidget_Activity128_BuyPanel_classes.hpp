@@ -20,16 +20,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0040 (0x0640 - 0x0600)
 class UPyWidget_Activity128_BuyPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             SeniorIcon;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SeniorHoverIcon;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_FadeIn1;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_FadeIn2;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipGuideTips;                                     // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnGuideTips;                                   // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SeniorIcon;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SeniorHoverIcon;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_FadeIn1;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_FadeIn2;                                   // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipGuideTips;                                     // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnGuideTips;                                   // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,30 +41,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_BuyPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_BuyPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_BuyPanel")
 	}
 	static class UPyWidget_Activity128_BuyPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_BuyPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_BuyPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity128_BuyPanel");
-static_assert(sizeof(UPyWidget_Activity128_BuyPanel) == 0x000638, "Wrong size on UPyWidget_Activity128_BuyPanel");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, SeniorIcon) == 0x0005F8, "Member 'UPyWidget_Activity128_BuyPanel::SeniorIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, SeniorHoverIcon) == 0x000600, "Member 'UPyWidget_Activity128_BuyPanel::SeniorHoverIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, AKEvent_FadeIn1) == 0x000608, "Member 'UPyWidget_Activity128_BuyPanel::AKEvent_FadeIn1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, AKEvent_FadeIn2) == 0x000610, "Member 'UPyWidget_Activity128_BuyPanel::AKEvent_FadeIn2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, SkipGuideTips) == 0x000618, "Member 'UPyWidget_Activity128_BuyPanel::SkipGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel, ReturnGuideTips) == 0x000628, "Member 'UPyWidget_Activity128_BuyPanel::ReturnGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_BuyPanel;
 
 // PythonClass PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel_Item_Base
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Activity128_BuyPanel_Item_Base : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -72,60 +69,67 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_BuyPanel_Item_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_BuyPanel_Item_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_BuyPanel_Item_Base")
 	}
 	static class UPyWidget_Activity128_BuyPanel_Item_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_BuyPanel_Item_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_BuyPanel_Item_Base) == 0x000008, "Wrong alignment on UPyWidget_Activity128_BuyPanel_Item_Base");
-static_assert(sizeof(UPyWidget_Activity128_BuyPanel_Item_Base) == 0x0005E0, "Wrong size on UPyWidget_Activity128_BuyPanel_Item_Base");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel_Item_Base, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity128_BuyPanel_Item_Base::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel_Item_Base, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity128_BuyPanel_Item_Base::Image_OffsetUV_Normal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_BuyPanel_Item_Base;
 
 // PythonClass PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel_Item
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyWidget_Activity128_BuyPanel_Item final : public UPyWidget_Activity128_BuyPanel_Item_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_BuyPanel_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_BuyPanel_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_BuyPanel_Item")
 	}
 	static class UPyWidget_Activity128_BuyPanel_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_BuyPanel_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_BuyPanel_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity128_BuyPanel_Item");
-static_assert(sizeof(UPyWidget_Activity128_BuyPanel_Item) == 0x0005E0, "Wrong size on UPyWidget_Activity128_BuyPanel_Item");
+DUMPER7_ASSERTS_UPyWidget_Activity128_BuyPanel_Item;
 
 // PythonClass PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel_Big_Item
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyWidget_Activity128_BuyPanel_Big_Item final : public UPyWidget_Activity128_BuyPanel_Item_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_BuyPanel_Big_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_BuyPanel_Big_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_BuyPanel_Big_Item")
 	}
 	static class UPyWidget_Activity128_BuyPanel_Big_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_BuyPanel_Big_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_BuyPanel_Big_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity128_BuyPanel_Big_Item");
-static_assert(sizeof(UPyWidget_Activity128_BuyPanel_Big_Item) == 0x0005E0, "Wrong size on UPyWidget_Activity128_BuyPanel_Big_Item");
+DUMPER7_ASSERTS_UPyWidget_Activity128_BuyPanel_Big_Item;
 
 // PythonClass PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel_Premium_Item_Base
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Activity128_BuyPanel_Premium_Item_Base final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -134,17 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity128_BuyPanel_Premium_Item_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Activity128_BuyPanel_Premium_Item_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity128_BuyPanel_Premium_Item_Base")
 	}
 	static class UPyWidget_Activity128_BuyPanel_Premium_Item_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity128_BuyPanel_Premium_Item_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity128_BuyPanel_Premium_Item_Base) == 0x000008, "Wrong alignment on UPyWidget_Activity128_BuyPanel_Premium_Item_Base");
-static_assert(sizeof(UPyWidget_Activity128_BuyPanel_Premium_Item_Base) == 0x0005E0, "Wrong size on UPyWidget_Activity128_BuyPanel_Premium_Item_Base");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel_Premium_Item_Base, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity128_BuyPanel_Premium_Item_Base::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity128_BuyPanel_Premium_Item_Base, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity128_BuyPanel_Premium_Item_Base::Image_OffsetUV_Normal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity128_BuyPanel_Premium_Item_Base;
 
 }
 

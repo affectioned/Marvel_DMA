@@ -21,9 +21,7 @@ struct PyWidget_MallGift_Card_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallGift_Card_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_MallGift_Card_OnAnimationFinished");
-static_assert(sizeof(PyWidget_MallGift_Card_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_MallGift_Card_OnAnimationFinished");
-static_assert(offsetof(PyWidget_MallGift_Card_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_MallGift_Card_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallGift_Card_OnAnimationFinished;
 
 // PythonFunction PyWidget_MallGift_Card.PyWidget_MallGift_Card.on_try_scroll_when_next_focusable_child_change
 // 0x0018 (0x0018 - 0x0000)
@@ -36,12 +34,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UButton*                                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change) == 0x000008, "Wrong alignment on PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change");
-static_assert(sizeof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change) == 0x000018, "Wrong size on PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change");
-static_assert(offsetof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change, NumItemsLine) == 0x000008, "Member 'PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change::NumItemsLine' has a wrong offset!");
-static_assert(offsetof(PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change, ReturnValue) == 0x000010, "Member 'PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallGift_Card_on_try_scroll_when_next_focusable_child_change;
 
 }
 

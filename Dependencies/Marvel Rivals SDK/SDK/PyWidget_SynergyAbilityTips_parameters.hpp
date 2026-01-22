@@ -23,20 +23,7 @@ struct PyWidget_SynergyAbilityTips_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTips_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTips_OnAnimationFinished");
-static_assert(sizeof(PyWidget_SynergyAbilityTips_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_SynergyAbilityTips_OnAnimationFinished");
-static_assert(offsetof(PyWidget_SynergyAbilityTips_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_SynergyAbilityTips_OnAnimationFinished::Animation' has a wrong offset!");
-
-// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnHeadPictureLoadCompleted
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted final
-{
-public:
-	class UTexture2D*                             Picture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted");
-static_assert(sizeof(PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted) == 0x000008, "Wrong size on PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted");
-static_assert(offsetof(PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted, Picture) == 0x000000, "Member 'PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted::Picture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTips_OnAnimationFinished;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTipsPanel.OnCharacterBondStateChanged
 // 0x0138 (0x0138 - 0x0000)
@@ -47,11 +34,7 @@ public:
 	class AMarvelBaseCharacter*                   TriggerCharacter;                                  // 0x0128(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bActive;                                           // 0x0130(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged");
-static_assert(sizeof(PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged) == 0x000138, "Wrong size on PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged, InBondInstance) == 0x000000, "Member 'PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged, TriggerCharacter) == 0x000128, "Member 'PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged::TriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged, bActive) == 0x000130, "Member 'PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged::bActive' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTipsPanel_OnCharacterBondStateChanged;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTipsPanel.OnBondStateChanged
 // 0x0138 (0x0138 - 0x0000)
@@ -61,10 +44,7 @@ public:
 	struct FBondInstance                          InBondInstance;                                    // 0x0000(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<class AMarvelBaseCharacter*>           TriggerCharacters;                                 // 0x0128(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged");
-static_assert(sizeof(PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged) == 0x000138, "Wrong size on PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged, InBondInstance) == 0x000000, "Member 'PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged, TriggerCharacters) == 0x000128, "Member 'PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged::TriggerCharacters' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTipsPanel_OnBondStateChanged;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTipsPanel.OnBondsStateChanged
 // 0x0140 (0x0140 - 0x0000)
@@ -75,11 +55,16 @@ public:
 	TArray<class AMarvelBaseCharacter*>           TriggerCharacters;                                 // 0x0128(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          join_or_quit_bond;                                 // 0x0138(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged");
-static_assert(sizeof(PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged) == 0x000140, "Wrong size on PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged, InBondInstance) == 0x000000, "Member 'PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged, TriggerCharacters) == 0x000128, "Member 'PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged::TriggerCharacters' has a wrong offset!");
-static_assert(offsetof(PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged, join_or_quit_bond) == 0x000138, "Member 'PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged::join_or_quit_bond' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTipsPanel_OnBondsStateChanged;
+
+// PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_Popups.OnHeadPictureLoadCompleted
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted final
+{
+public:
+	class UTexture2D*                             Picture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTips_Popups_OnHeadPictureLoadCompleted;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_FullScreen.OnHeadPictureLoadCompleted
 // 0x0008 (0x0008 - 0x0000)
@@ -88,9 +73,7 @@ struct PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted final
 public:
 	class UTexture2D*                             Picture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted");
-static_assert(sizeof(PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted) == 0x000008, "Wrong size on PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted");
-static_assert(offsetof(PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted, Picture) == 0x000000, "Member 'PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted::Picture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTips_FullScreen_OnHeadPictureLoadCompleted;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_SynergyAbilityTips_FullScreen.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -99,9 +82,7 @@ struct PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished");
-static_assert(sizeof(PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished");
-static_assert(offsetof(PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SynergyAbilityTips_FullScreen_OnAnimationFinished;
 
 // PythonFunction PyWidget_SynergyAbilityTips.PyWidget_ReplaySynergyAbilityTipsPanel.OnBondStateChanged
 // 0x0138 (0x0138 - 0x0000)
@@ -111,10 +92,7 @@ public:
 	struct FBondInstance                          InBondInstance;                                    // 0x0000(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<class AMarvelBaseCharacter*>           TriggerCharacters;                                 // 0x0128(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged) == 0x000008, "Wrong alignment on PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged");
-static_assert(sizeof(PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged) == 0x000138, "Wrong size on PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged");
-static_assert(offsetof(PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged, InBondInstance) == 0x000000, "Member 'PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged, TriggerCharacters) == 0x000128, "Member 'PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged::TriggerCharacters' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ReplaySynergyAbilityTipsPanel_OnBondStateChanged;
 
 }
 

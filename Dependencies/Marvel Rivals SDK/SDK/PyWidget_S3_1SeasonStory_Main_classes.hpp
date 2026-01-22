@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S3_1SeasonStory_Main.PyWidget_S3_1SeasonStory_Bg
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_S3_1SeasonStory_Bg final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -30,25 +30,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_Bg">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_Bg")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_Bg")
 	}
 	static class UPyWidget_S3_1SeasonStory_Bg* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_Bg>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_Bg) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_Bg");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_Bg) == 0x0005F8, "Wrong size on UPyWidget_S3_1SeasonStory_Bg");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_Bg;
 
 // PythonClass PyWidget_S3_1SeasonStory_Main.PyWidget_S3_1SeasonStory_Entry
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_S3_1SeasonStory_Entry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMediaPlayer*                           EntryMediaPlayer;                                  // 0x05C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           EntryMediaSource;                                  // 0x05C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_Entry;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMediaPlayer*                           EntryMediaPlayer;                                  // 0x05C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           EntryMediaSource;                                  // 0x05D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_Entry;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,21 +61,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_Entry">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_Entry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_Entry")
 	}
 	static class UPyWidget_S3_1SeasonStory_Entry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_Entry>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_Entry) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_Entry");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_Entry) == 0x0005D8, "Wrong size on UPyWidget_S3_1SeasonStory_Entry");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Entry, EntryMediaPlayer) == 0x0005C0, "Member 'UPyWidget_S3_1SeasonStory_Entry::EntryMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Entry, EntryMediaSource) == 0x0005C8, "Member 'UPyWidget_S3_1SeasonStory_Entry::EntryMediaSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Entry, AKEvent_Entry) == 0x0005D0, "Member 'UPyWidget_S3_1SeasonStory_Entry::AKEvent_Entry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_Entry;
 
 // PythonClass PyWidget_S3_1SeasonStory_Main.PyWidget_S3_1SeasonStory_Main
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_S3_1SeasonStory_Main final : public UPyMarvelUserWidget
 {
 public:
@@ -84,15 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_Main">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_Main")
 	}
 	static class UPyWidget_S3_1SeasonStory_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_Main) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_Main");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_Main) == 0x0005C0, "Wrong size on UPyWidget_S3_1SeasonStory_Main");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_Main;
 
 }
 

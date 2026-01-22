@@ -23,15 +23,18 @@ class UAIScoreModule_Damage_BP_C final : public UAIScoreModule_Damage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIScoreModule_Damage_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIScoreModule_Damage_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_Damage_BP_C")
 	}
 	static class UAIScoreModule_Damage_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_Damage_BP_C>();
 	}
 };
-static_assert(alignof(UAIScoreModule_Damage_BP_C) == 0x000008, "Wrong alignment on UAIScoreModule_Damage_BP_C");
-static_assert(sizeof(UAIScoreModule_Damage_BP_C) == 0x000048, "Wrong size on UAIScoreModule_Damage_BP_C");
+DUMPER7_ASSERTS_UAIScoreModule_Damage_BP_C;
 
 }
 

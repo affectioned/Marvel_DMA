@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -44,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModuleUIComponent">();
+		STATIC_CLASS_IMPL("PyModuleUIComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModuleUIComponent")
 	}
 	static class UPyModuleUIComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyModuleUIComponent>();
 	}
 };
-static_assert(alignof(UPyModuleUIComponent) == 0x000008, "Wrong alignment on UPyModuleUIComponent");
-static_assert(sizeof(UPyModuleUIComponent) == 0x000108, "Wrong size on UPyModuleUIComponent");
+DUMPER7_ASSERTS_UPyModuleUIComponent;
 
 // PythonClass PyModuleUIComponent.PyWidget_ModuleIndicator
 // 0x0010 (0x0880 - 0x0870)
@@ -69,17 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ModuleIndicator">();
+		STATIC_CLASS_IMPL("PyWidget_ModuleIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ModuleIndicator")
 	}
 	static class UPyWidget_ModuleIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ModuleIndicator>();
 	}
 };
-static_assert(alignof(UPyWidget_ModuleIndicator) == 0x000010, "Wrong alignment on UPyWidget_ModuleIndicator");
-static_assert(sizeof(UPyWidget_ModuleIndicator) == 0x000880, "Wrong size on UPyWidget_ModuleIndicator");
-static_assert(offsetof(UPyWidget_ModuleIndicator, SignArrAlly) == 0x000870, "Member 'UPyWidget_ModuleIndicator::SignArrAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModuleIndicator, SignArrEnemy) == 0x000878, "Member 'UPyWidget_ModuleIndicator::SignArrEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ModuleIndicator;
 
 // PythonClass PyModuleUIComponent.PyWC_Module
 // 0x0010 (0x0AF0 - 0x0AE0)
@@ -97,17 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_Module">();
+		STATIC_CLASS_IMPL("PyWC_Module")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_Module")
 	}
 	static class UPyWC_Module* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_Module>();
 	}
 };
-static_assert(alignof(UPyWC_Module) == 0x000010, "Wrong alignment on UPyWC_Module");
-static_assert(sizeof(UPyWC_Module) == 0x000AF0, "Wrong size on UPyWC_Module");
-static_assert(offsetof(UPyWC_Module, ArrowVisibleRange) == 0x000AE0, "Member 'UPyWC_Module::ArrowVisibleRange' has a wrong offset!");
-static_assert(offsetof(UPyWC_Module, SquaredArrowVisibleRange) == 0x000AE4, "Member 'UPyWC_Module::SquaredArrowVisibleRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_Module;
 
 }
 

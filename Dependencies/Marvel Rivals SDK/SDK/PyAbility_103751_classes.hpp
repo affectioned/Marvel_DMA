@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103751.PyCue_AbilityLoop_103751
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_AbilityLoop_103751 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -31,55 +31,54 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_103751">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_103751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_103751")
 	}
 	static class APyCue_AbilityLoop_103751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_103751>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_103751) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_103751");
-static_assert(sizeof(APyCue_AbilityLoop_103751) == 0x0011B0, "Wrong size on APyCue_AbilityLoop_103751");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_103751;
 
 // PythonClass PyAbility_103751.PyConfig_103751
-// 0x00D0 (0x1A20 - 0x1950)
+// 0x00D0 (0x1E20 - 0x1D50)
 class UPyConfig_103751 final : public UConfig_103751
 {
 public:
-	TArray<EPhysicsWeaponType>                    AbsorbType;                                        // 0x1950(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EPhysicsWeaponType, int32>               RecoverIronMap;                                    // 0x1960(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PhysicsWeaponEndCue;                               // 0x19B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AbsorbCheckDuration;                               // 0x19BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                PyramidTraceShapeSize;                             // 0x19C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TraceStart;                                        // 0x19D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x19F0(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<EPhysicsWeaponType>                    AbsorbType;                                        // 0x1D50(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EPhysicsWeaponType, int32>               RecoverIronMap;                                    // 0x1D60(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PhysicsWeaponEndCue;                               // 0x1DB0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AbsorbCheckDuration;                               // 0x1DBC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                PyramidTraceShapeSize;                             // 0x1DC0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TraceStart;                                        // 0x1DD8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x1DF0(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103751">();
+		STATIC_CLASS_IMPL("PyConfig_103751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103751")
 	}
 	static class UPyConfig_103751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103751>();
 	}
 };
-static_assert(alignof(UPyConfig_103751) == 0x000010, "Wrong alignment on UPyConfig_103751");
-static_assert(sizeof(UPyConfig_103751) == 0x001A20, "Wrong size on UPyConfig_103751");
-static_assert(offsetof(UPyConfig_103751, AbsorbType) == 0x001950, "Member 'UPyConfig_103751::AbsorbType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, RecoverIronMap) == 0x001960, "Member 'UPyConfig_103751::RecoverIronMap' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, PhysicsWeaponEndCue) == 0x0019B0, "Member 'UPyConfig_103751::PhysicsWeaponEndCue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, AbsorbCheckDuration) == 0x0019BC, "Member 'UPyConfig_103751::AbsorbCheckDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, PyramidTraceShapeSize) == 0x0019C0, "Member 'UPyConfig_103751::PyramidTraceShapeSize' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, TraceStart) == 0x0019D8, "Member 'UPyConfig_103751::TraceStart' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103751, ActiveUserSetting) == 0x0019F0, "Member 'UPyConfig_103751::ActiveUserSetting' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103751;
 
 // PythonClass PyAbility_103751.PyAbility_103751
-// 0x0008 (0x2C50 - 0x2C48)
+// 0x0008 (0x2CB8 - 0x2CB0)
 class UPyAbility_103751 : public UAbility_103751
 {
 public:
-	class APhysicsSummoner*                       SelectTarget;                                      // 0x2C48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APhysicsSummoner*                       SelectTarget;                                      // 0x2CB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -98,19 +97,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103751">();
+		STATIC_CLASS_IMPL("PyAbility_103751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103751")
 	}
 	static class UPyAbility_103751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103751>();
 	}
 };
-static_assert(alignof(UPyAbility_103751) == 0x000008, "Wrong alignment on UPyAbility_103751");
-static_assert(sizeof(UPyAbility_103751) == 0x002C50, "Wrong size on UPyAbility_103751");
-static_assert(offsetof(UPyAbility_103751, SelectTarget) == 0x002C48, "Member 'UPyAbility_103751::SelectTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103751;
 
 // PythonClass PyAbility_103751.PyUIC_SelectTarget_103751
-// 0x0000 (0x0158 - 0x0158)
+// 0x0000 (0x01B8 - 0x01B8)
 class UPyUIC_SelectTarget_103751 final : public UUIC_SelectTarget
 {
 public:
@@ -119,15 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_103751">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_103751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_103751")
 	}
 	static class UPyUIC_SelectTarget_103751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_103751>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_103751) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_103751");
-static_assert(sizeof(UPyUIC_SelectTarget_103751) == 0x000158, "Wrong size on UPyUIC_SelectTarget_103751");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_103751;
 
 }
 

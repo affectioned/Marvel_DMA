@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "SmartObjectsModule_classes.hpp"
-#include "MassSmartObjects_structs.hpp"
 #include "MassEntity_classes.hpp"
 #include "ZoneGraph_structs.hpp"
+#include "MassSmartObjects_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "MassSpawner_classes.hpp"
 #include "ZoneGraphAnnotations_classes.hpp"
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectMassBehaviorDefinition">();
+		STATIC_CLASS_IMPL("SmartObjectMassBehaviorDefinition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectMassBehaviorDefinition")
 	}
 	static class USmartObjectMassBehaviorDefinition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectMassBehaviorDefinition>();
 	}
 };
-static_assert(alignof(USmartObjectMassBehaviorDefinition) == 0x000008, "Wrong alignment on USmartObjectMassBehaviorDefinition");
-static_assert(sizeof(USmartObjectMassBehaviorDefinition) == 0x000038, "Wrong size on USmartObjectMassBehaviorDefinition");
-static_assert(offsetof(USmartObjectMassBehaviorDefinition, UseTime) == 0x000030, "Member 'USmartObjectMassBehaviorDefinition::UseTime' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectMassBehaviorDefinition;
 
 // Class MassSmartObjects.MassSmartObjectCandidatesFinderProcessor
 // 0x0548 (0x0610 - 0x00C8)
@@ -55,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmartObjectCandidatesFinderProcessor">();
+		STATIC_CLASS_IMPL("MassSmartObjectCandidatesFinderProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmartObjectCandidatesFinderProcessor")
 	}
 	static class UMassSmartObjectCandidatesFinderProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmartObjectCandidatesFinderProcessor>();
 	}
 };
-static_assert(alignof(UMassSmartObjectCandidatesFinderProcessor) == 0x000008, "Wrong alignment on UMassSmartObjectCandidatesFinderProcessor");
-static_assert(sizeof(UMassSmartObjectCandidatesFinderProcessor) == 0x000610, "Wrong size on UMassSmartObjectCandidatesFinderProcessor");
-static_assert(offsetof(UMassSmartObjectCandidatesFinderProcessor, SearchExtents) == 0x0000C8, "Member 'UMassSmartObjectCandidatesFinderProcessor::SearchExtents' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSmartObjectCandidatesFinderProcessor;
 
 // Class MassSmartObjects.MassSmartObjectTimedBehaviorProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -76,15 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmartObjectTimedBehaviorProcessor">();
+		STATIC_CLASS_IMPL("MassSmartObjectTimedBehaviorProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmartObjectTimedBehaviorProcessor")
 	}
 	static class UMassSmartObjectTimedBehaviorProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmartObjectTimedBehaviorProcessor>();
 	}
 };
-static_assert(alignof(UMassSmartObjectTimedBehaviorProcessor) == 0x000008, "Wrong alignment on UMassSmartObjectTimedBehaviorProcessor");
-static_assert(sizeof(UMassSmartObjectTimedBehaviorProcessor) == 0x000370, "Wrong size on UMassSmartObjectTimedBehaviorProcessor");
+DUMPER7_ASSERTS_UMassSmartObjectTimedBehaviorProcessor;
 
 // Class MassSmartObjects.MassSmartObjectUserFragmentDeinitializer
 // 0x02A0 (0x0380 - 0x00E0)
@@ -96,15 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmartObjectUserFragmentDeinitializer">();
+		STATIC_CLASS_IMPL("MassSmartObjectUserFragmentDeinitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmartObjectUserFragmentDeinitializer")
 	}
 	static class UMassSmartObjectUserFragmentDeinitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmartObjectUserFragmentDeinitializer>();
 	}
 };
-static_assert(alignof(UMassSmartObjectUserFragmentDeinitializer) == 0x000008, "Wrong alignment on UMassSmartObjectUserFragmentDeinitializer");
-static_assert(sizeof(UMassSmartObjectUserFragmentDeinitializer) == 0x000380, "Wrong size on UMassSmartObjectUserFragmentDeinitializer");
+DUMPER7_ASSERTS_UMassSmartObjectUserFragmentDeinitializer;
 
 // Class MassSmartObjects.MassSmartObjectSettings
 // 0x0008 (0x0038 - 0x0030)
@@ -118,17 +128,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmartObjectSettings">();
+		STATIC_CLASS_IMPL("MassSmartObjectSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmartObjectSettings")
 	}
 	static class UMassSmartObjectSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmartObjectSettings>();
 	}
 };
-static_assert(alignof(UMassSmartObjectSettings) == 0x000008, "Wrong alignment on UMassSmartObjectSettings");
-static_assert(sizeof(UMassSmartObjectSettings) == 0x000038, "Wrong size on UMassSmartObjectSettings");
-static_assert(offsetof(UMassSmartObjectSettings, SmartObjectTag) == 0x000030, "Member 'UMassSmartObjectSettings::SmartObjectTag' has a wrong offset!");
-static_assert(offsetof(UMassSmartObjectSettings, SearchExtents) == 0x000034, "Member 'UMassSmartObjectSettings::SearchExtents' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSmartObjectSettings;
 
 // Class MassSmartObjects.MassSmartObjectUserTrait
 // 0x0068 (0x0098 - 0x0030)
@@ -140,16 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmartObjectUserTrait">();
+		STATIC_CLASS_IMPL("MassSmartObjectUserTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmartObjectUserTrait")
 	}
 	static class UMassSmartObjectUserTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmartObjectUserTrait>();
 	}
 };
-static_assert(alignof(UMassSmartObjectUserTrait) == 0x000008, "Wrong alignment on UMassSmartObjectUserTrait");
-static_assert(sizeof(UMassSmartObjectUserTrait) == 0x000098, "Wrong size on UMassSmartObjectUserTrait");
-static_assert(offsetof(UMassSmartObjectUserTrait, UserTags) == 0x000030, "Member 'UMassSmartObjectUserTrait::UserTags' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSmartObjectUserTrait;
 
 // Class MassSmartObjects.SmartObjectZoneAnnotations
 // 0x0030 (0x0860 - 0x0830)
@@ -167,19 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectZoneAnnotations">();
+		STATIC_CLASS_IMPL("SmartObjectZoneAnnotations")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectZoneAnnotations")
 	}
 	static class USmartObjectZoneAnnotations* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectZoneAnnotations>();
 	}
 };
-static_assert(alignof(USmartObjectZoneAnnotations) == 0x000010, "Wrong alignment on USmartObjectZoneAnnotations");
-static_assert(sizeof(USmartObjectZoneAnnotations) == 0x000860, "Wrong size on USmartObjectZoneAnnotations");
-static_assert(offsetof(USmartObjectZoneAnnotations, AffectedLaneTags) == 0x000828, "Member 'USmartObjectZoneAnnotations::AffectedLaneTags' has a wrong offset!");
-static_assert(offsetof(USmartObjectZoneAnnotations, SmartObjectAnnotationDataArray) == 0x000838, "Member 'USmartObjectZoneAnnotations::SmartObjectAnnotationDataArray' has a wrong offset!");
-static_assert(offsetof(USmartObjectZoneAnnotations, BehaviorTag) == 0x000848, "Member 'USmartObjectZoneAnnotations::BehaviorTag' has a wrong offset!");
-static_assert(offsetof(USmartObjectZoneAnnotations, SmartObjectSubsystem) == 0x000850, "Member 'USmartObjectZoneAnnotations::SmartObjectSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectZoneAnnotations;
 
 }
 

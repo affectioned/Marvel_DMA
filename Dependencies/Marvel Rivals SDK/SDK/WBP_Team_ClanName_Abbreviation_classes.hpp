@@ -17,37 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Team_ClanName_Abbreviation.WBP_Team_ClanName_Abbreviation_C
-// 0x0038 (0x06B0 - 0x0678)
+// 0x0040 (0x06C8 - 0x0688)
 class UWBP_Team_ClanName_Abbreviation_C final : public UPyWidget_CommonClanMiniName
 {
 public:
-	class UCommonLazyImage*                       Img_ClanIcon;                                      // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Img_Clash;                                         // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Img_TemporaryIcon;                                 // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_Clash;                                    // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_MRC;                                      // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_TemporaryIcon;                            // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_ClanName_Abbreviation;                        // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_ClanIcon;                                      // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_Clash;                                         // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       Img_TemporaryIcon;                                 // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_Clash;                                    // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_MRC;                                      // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_TemporaryIcon;                            // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Main;                                      // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_ClanName_Abbreviation;                        // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Team_ClanName_Abbreviation_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Team_ClanName_Abbreviation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Team_ClanName_Abbreviation_C")
 	}
 	static class UWBP_Team_ClanName_Abbreviation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Team_ClanName_Abbreviation_C>();
 	}
 };
-static_assert(alignof(UWBP_Team_ClanName_Abbreviation_C) == 0x000008, "Wrong alignment on UWBP_Team_ClanName_Abbreviation_C");
-static_assert(sizeof(UWBP_Team_ClanName_Abbreviation_C) == 0x0006B0, "Wrong size on UWBP_Team_ClanName_Abbreviation_C");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, Img_ClanIcon) == 0x000678, "Member 'UWBP_Team_ClanName_Abbreviation_C::Img_ClanIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, Img_Clash) == 0x000680, "Member 'UWBP_Team_ClanName_Abbreviation_C::Img_Clash' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, Img_TemporaryIcon) == 0x000688, "Member 'UWBP_Team_ClanName_Abbreviation_C::Img_TemporaryIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, ScaleBox_Clash) == 0x000690, "Member 'UWBP_Team_ClanName_Abbreviation_C::ScaleBox_Clash' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, ScaleBox_MRC) == 0x000698, "Member 'UWBP_Team_ClanName_Abbreviation_C::ScaleBox_MRC' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, ScaleBox_TemporaryIcon) == 0x0006A0, "Member 'UWBP_Team_ClanName_Abbreviation_C::ScaleBox_TemporaryIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Team_ClanName_Abbreviation_C, Text_ClanName_Abbreviation) == 0x0006A8, "Member 'UWBP_Team_ClanName_Abbreviation_C::Text_ClanName_Abbreviation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Team_ClanName_Abbreviation_C;
 
 }
 

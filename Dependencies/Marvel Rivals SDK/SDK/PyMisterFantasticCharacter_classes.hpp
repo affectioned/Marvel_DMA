@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1040_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1040_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyMisterFantasticCharacter.PyMisterFantasticCharacter
-// 0x00B0 (0x22E0 - 0x2230)
+// 0x00B0 (0x23F0 - 0x2340)
 class APyMisterFantasticCharacter : public AMisterFantasticCharacter
 {
 public:
-	class UMarveSculptConfigComponent*            NormalSculptConfigComponent;                       // 0x2230(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            ExpandSculptConfigComponent;                       // 0x2238(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            WallSculptConfigComponent;                         // 0x2240(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            JumpExpandSculptConfigComponent;                   // 0x2248(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            DashExpandSculptConfigComponent;                   // 0x2250(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FReplicateTimer                        ScheduleTimer;                                     // 0x2258(0x0078)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ExpandTimerClearedDispatcher;                      // 0x22D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            NormalSculptConfigComponent;                       // 0x2340(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            ExpandSculptConfigComponent;                       // 0x2348(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            WallSculptConfigComponent;                         // 0x2350(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            JumpExpandSculptConfigComponent;                   // 0x2358(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            DashExpandSculptConfigComponent;                   // 0x2360(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        ScheduleTimer;                                     // 0x2368(0x0078)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ExpandTimerClearedDispatcher;                      // 0x23E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMisterFantasticCharacter">();
+		STATIC_CLASS_IMPL("PyMisterFantasticCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMisterFantasticCharacter")
 	}
 	static class APyMisterFantasticCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMisterFantasticCharacter>();
 	}
 };
-static_assert(alignof(APyMisterFantasticCharacter) == 0x000010, "Wrong alignment on APyMisterFantasticCharacter");
-static_assert(sizeof(APyMisterFantasticCharacter) == 0x0022E0, "Wrong size on APyMisterFantasticCharacter");
-static_assert(offsetof(APyMisterFantasticCharacter, NormalSculptConfigComponent) == 0x002230, "Member 'APyMisterFantasticCharacter::NormalSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, ExpandSculptConfigComponent) == 0x002238, "Member 'APyMisterFantasticCharacter::ExpandSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, WallSculptConfigComponent) == 0x002240, "Member 'APyMisterFantasticCharacter::WallSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, JumpExpandSculptConfigComponent) == 0x002248, "Member 'APyMisterFantasticCharacter::JumpExpandSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, DashExpandSculptConfigComponent) == 0x002250, "Member 'APyMisterFantasticCharacter::DashExpandSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, ScheduleTimer) == 0x002258, "Member 'APyMisterFantasticCharacter::ScheduleTimer' has a wrong offset!");
-static_assert(offsetof(APyMisterFantasticCharacter, ExpandTimerClearedDispatcher) == 0x0022D0, "Member 'APyMisterFantasticCharacter::ExpandTimerClearedDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyMisterFantasticCharacter;
 
 }
 

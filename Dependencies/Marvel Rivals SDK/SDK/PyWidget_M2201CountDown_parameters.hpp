@@ -21,9 +21,7 @@ struct PyWidget_M2201CountDown_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_M2201CountDown_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_M2201CountDown_ShouldBeVisible");
-static_assert(sizeof(PyWidget_M2201CountDown_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_M2201CountDown_ShouldBeVisible");
-static_assert(offsetof(PyWidget_M2201CountDown_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_M2201CountDown_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_M2201CountDown_ShouldBeVisible;
 
 }
 

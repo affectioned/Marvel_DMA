@@ -24,9 +24,7 @@ struct PyKrakoaPortal_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKrakoaPortal_ReceiveEndPlay");
-static_assert(sizeof(PyKrakoaPortal_ReceiveEndPlay) == 0x000001, "Wrong size on PyKrakoaPortal_ReceiveEndPlay");
-static_assert(offsetof(PyKrakoaPortal_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKrakoaPortal_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_ReceiveEndPlay;
 
 // PythonFunction PyKrakoaPortal.PyKrakoaPortal.RPC_MultiCast_SetSequence
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyKrakoaPortal_RPC_MultiCast_SetSequence final
 public:
 	class ULevelSequence*                         level_sequence;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_RPC_MultiCast_SetSequence) == 0x000008, "Wrong alignment on PyKrakoaPortal_RPC_MultiCast_SetSequence");
-static_assert(sizeof(PyKrakoaPortal_RPC_MultiCast_SetSequence) == 0x000008, "Wrong size on PyKrakoaPortal_RPC_MultiCast_SetSequence");
-static_assert(offsetof(PyKrakoaPortal_RPC_MultiCast_SetSequence, level_sequence) == 0x000000, "Member 'PyKrakoaPortal_RPC_MultiCast_SetSequence::level_sequence' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_RPC_MultiCast_SetSequence;
 
 // PythonFunction PyKrakoaPortal.PyKrakoaPortal.K2_OnPostReplicatedAddPlayerUsageRecord
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +44,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LastUseServerTimeSeconds;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord) == 0x000008, "Wrong alignment on PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord");
-static_assert(sizeof(PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord) == 0x000010, "Wrong size on PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord");
-static_assert(offsetof(PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord, UID) == 0x000000, "Member 'PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord::UID' has a wrong offset!");
-static_assert(offsetof(PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord, LastUseServerTimeSeconds) == 0x000008, "Member 'PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord::LastUseServerTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_K2_OnPostReplicatedAddPlayerUsageRecord;
 
 // PythonFunction PyKrakoaPortal.PyKrakoaPortal.K2_OnPostReplicatedChangePlayerUsageRecord
 // 0x0010 (0x0010 - 0x0000)
@@ -62,10 +55,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LastUseServerTimeSeconds;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord) == 0x000008, "Wrong alignment on PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord");
-static_assert(sizeof(PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord) == 0x000010, "Wrong size on PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord");
-static_assert(offsetof(PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord, UID) == 0x000000, "Member 'PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord::UID' has a wrong offset!");
-static_assert(offsetof(PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord, LastUseServerTimeSeconds) == 0x000008, "Member 'PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord::LastUseServerTimeSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_K2_OnPostReplicatedChangePlayerUsageRecord;
 
 // PythonFunction PyKrakoaPortal.PyKrakoaPortal.PlayTeleportEffects
 // 0x0038 (0x0038 - 0x0000)
@@ -77,11 +67,7 @@ public:
 	struct FVector                                FromLocation;                                      // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ToLocation;                                        // 0x0020(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_PlayTeleportEffects) == 0x000008, "Wrong alignment on PyKrakoaPortal_PlayTeleportEffects");
-static_assert(sizeof(PyKrakoaPortal_PlayTeleportEffects) == 0x000038, "Wrong size on PyKrakoaPortal_PlayTeleportEffects");
-static_assert(offsetof(PyKrakoaPortal_PlayTeleportEffects, UID) == 0x000000, "Member 'PyKrakoaPortal_PlayTeleportEffects::UID' has a wrong offset!");
-static_assert(offsetof(PyKrakoaPortal_PlayTeleportEffects, FromLocation) == 0x000008, "Member 'PyKrakoaPortal_PlayTeleportEffects::FromLocation' has a wrong offset!");
-static_assert(offsetof(PyKrakoaPortal_PlayTeleportEffects, ToLocation) == 0x000020, "Member 'PyKrakoaPortal_PlayTeleportEffects::ToLocation' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_PlayTeleportEffects;
 
 // PythonFunction PyKrakoaPortal.PyKrakoaPortal.OpenAndClose
 // 0x0001 (0x0001 - 0x0000)
@@ -90,9 +76,7 @@ struct PyKrakoaPortal_OpenAndClose final
 public:
 	bool                                          open;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaPortal_OpenAndClose) == 0x000001, "Wrong alignment on PyKrakoaPortal_OpenAndClose");
-static_assert(sizeof(PyKrakoaPortal_OpenAndClose) == 0x000001, "Wrong size on PyKrakoaPortal_OpenAndClose");
-static_assert(offsetof(PyKrakoaPortal_OpenAndClose, open) == 0x000000, "Member 'PyKrakoaPortal_OpenAndClose::open' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaPortal_OpenAndClose;
 
 }
 

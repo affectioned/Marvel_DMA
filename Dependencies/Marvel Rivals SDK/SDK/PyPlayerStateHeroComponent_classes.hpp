@@ -53,23 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateHeroComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateHeroComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateHeroComponent")
 	}
 	static class UPyPlayerStateHeroComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateHeroComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateHeroComponent) == 0x000008, "Wrong alignment on UPyPlayerStateHeroComponent");
-static_assert(sizeof(UPyPlayerStateHeroComponent) == 0x000188, "Wrong size on UPyPlayerStateHeroComponent");
-static_assert(offsetof(UPyPlayerStateHeroComponent, HeroIDPools) == 0x000108, "Member 'UPyPlayerStateHeroComponent::HeroIDPools' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, OpenedHeroIDs) == 0x000118, "Member 'UPyPlayerStateHeroComponent::OpenedHeroIDs' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, ClosedHeroIDs) == 0x000128, "Member 'UPyPlayerStateHeroComponent::ClosedHeroIDs' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, EventHeroIDPoolUpdated) == 0x000138, "Member 'UPyPlayerStateHeroComponent::EventHeroIDPoolUpdated' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, EventAddNewOpenedHeroID) == 0x000148, "Member 'UPyPlayerStateHeroComponent::EventAddNewOpenedHeroID' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, EventRemoveOpenedHeroID) == 0x000158, "Member 'UPyPlayerStateHeroComponent::EventRemoveOpenedHeroID' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, EventAddNewClosedHeroID) == 0x000168, "Member 'UPyPlayerStateHeroComponent::EventAddNewClosedHeroID' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateHeroComponent, EventRemoveClosedHeroID) == 0x000178, "Member 'UPyPlayerStateHeroComponent::EventRemoveClosedHeroID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateHeroComponent;
 
 }
 

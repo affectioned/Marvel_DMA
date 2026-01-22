@@ -25,9 +25,7 @@ struct PyAbility_105051_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105051_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105051_CanActivate");
-static_assert(sizeof(PyAbility_105051_CanActivate) == 0x000001, "Wrong size on PyAbility_105051_CanActivate");
-static_assert(offsetof(PyAbility_105051_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105051_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_CanActivate;
 
 // PythonFunction PyAbility_105051.PyAbility_105051.OnCharacterRegisteredProjectileChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +34,7 @@ struct PyAbility_105051_OnCharacterRegisteredProjectileChanged final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   NewProjectile;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105051_OnCharacterRegisteredProjectileChanged) == 0x000008, "Wrong alignment on PyAbility_105051_OnCharacterRegisteredProjectileChanged");
-static_assert(sizeof(PyAbility_105051_OnCharacterRegisteredProjectileChanged) == 0x000008, "Wrong size on PyAbility_105051_OnCharacterRegisteredProjectileChanged");
-static_assert(offsetof(PyAbility_105051_OnCharacterRegisteredProjectileChanged, NewProjectile) == 0x000000, "Member 'PyAbility_105051_OnCharacterRegisteredProjectileChanged::NewProjectile' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_OnCharacterRegisteredProjectileChanged;
 
 // PythonFunction PyAbility_105051.PyAbility_105051.OnProjectileSpawn
 // 0x0170 (0x0170 - 0x0000)
@@ -48,10 +44,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_105051_OnProjectileSpawn) == 0x000008, "Wrong alignment on PyAbility_105051_OnProjectileSpawn");
-static_assert(sizeof(PyAbility_105051_OnProjectileSpawn) == 0x000170, "Wrong size on PyAbility_105051_OnProjectileSpawn");
-static_assert(offsetof(PyAbility_105051_OnProjectileSpawn, SpawnActor) == 0x000000, "Member 'PyAbility_105051_OnProjectileSpawn::SpawnActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_105051_OnProjectileSpawn, Data) == 0x000008, "Member 'PyAbility_105051_OnProjectileSpawn::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_OnProjectileSpawn;
 
 // PythonFunction PyAbility_105051.PyAbility_105051.OnProjectileEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -60,9 +53,7 @@ struct PyAbility_105051_OnProjectileEnd final
 public:
 	class AActor*                                 Value;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105051_OnProjectileEnd) == 0x000008, "Wrong alignment on PyAbility_105051_OnProjectileEnd");
-static_assert(sizeof(PyAbility_105051_OnProjectileEnd) == 0x000008, "Wrong size on PyAbility_105051_OnProjectileEnd");
-static_assert(offsetof(PyAbility_105051_OnProjectileEnd, Value) == 0x000000, "Member 'PyAbility_105051_OnProjectileEnd::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_OnProjectileEnd;
 
 // PythonFunction PyAbility_105051.PyAbility_105051.OnBindInputPress
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +62,7 @@ struct PyAbility_105051_OnBindInputPress final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105051_OnBindInputPress) == 0x000004, "Wrong alignment on PyAbility_105051_OnBindInputPress");
-static_assert(sizeof(PyAbility_105051_OnBindInputPress) == 0x000004, "Wrong size on PyAbility_105051_OnBindInputPress");
-static_assert(offsetof(PyAbility_105051_OnBindInputPress, TimeWaited) == 0x000000, "Member 'PyAbility_105051_OnBindInputPress::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_OnBindInputPress;
 
 // PythonFunction PyAbility_105051.PyAbility_105051.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +71,7 @@ struct PyAbility_105051_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105051_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105051_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105051_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105051_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105051_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105051_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105051_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105051.PyProjectile_105051.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -93,20 +80,16 @@ struct PyProjectile_105051_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_105051_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyProjectile_105051_ReceiveEndPlay");
-static_assert(sizeof(PyProjectile_105051_ReceiveEndPlay) == 0x000001, "Wrong size on PyProjectile_105051_ReceiveEndPlay");
-static_assert(offsetof(PyProjectile_105051_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyProjectile_105051_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_105051_ReceiveEndPlay;
 
 // PythonFunction PyAbility_105051.PyProjectile_105051.K2_OnProjectileInfoForceChanged_ThreadSafe
-// 0x02E0 (0x02E0 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe final
 {
 public:
-	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02E0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02F8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x000008, "Wrong alignment on PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(sizeof(PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x0002E0, "Wrong size on PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(offsetof(PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe, InProjectileForceChangedInfo) == 0x000000, "Member 'PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe::InProjectileForceChangedInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_105051_K2_OnProjectileInfoForceChanged_ThreadSafe;
 
 }
 

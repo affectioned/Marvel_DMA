@@ -23,15 +23,18 @@ class UEQC_GetAllyPlayerStart_C final : public UEnvQueryContext_BlackboardActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetAllyPlayerStart_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetAllyPlayerStart_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetAllyPlayerStart_C")
 	}
 	static class UEQC_GetAllyPlayerStart_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetAllyPlayerStart_C>();
 	}
 };
-static_assert(alignof(UEQC_GetAllyPlayerStart_C) == 0x000008, "Wrong alignment on UEQC_GetAllyPlayerStart_C");
-static_assert(sizeof(UEQC_GetAllyPlayerStart_C) == 0x000040, "Wrong size on UEQC_GetAllyPlayerStart_C");
+DUMPER7_ASSERTS_UEQC_GetAllyPlayerStart_C;
 
 }
 

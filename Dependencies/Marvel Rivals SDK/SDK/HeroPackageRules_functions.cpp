@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // Function HeroPackageRules.HeroPackageFuncLibrary.UpdatePackageDataTables
-// (Final, Native, Static, Public, BlueprintCallable)
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   InPackageRulesType                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FMarvelPackageContext&     InPackageContext                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UHeroPackageFuncLibrary::UpdatePackageDataTables(int32 InPackageRulesType)
+void UHeroPackageFuncLibrary::UpdatePackageDataTables(const struct FMarvelPackageContext& InPackageContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UHeroPackageFuncLibrary::UpdatePackageDataTables(int32 InPackageRulesType)
 
 	Params::HeroPackageFuncLibrary_UpdatePackageDataTables Parms{};
 
-	Parms.InPackageRulesType = InPackageRulesType;
+	Parms.InPackageContext = std::move(InPackageContext);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

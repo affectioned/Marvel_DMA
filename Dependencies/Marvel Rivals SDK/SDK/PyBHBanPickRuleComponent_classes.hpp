@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBHBanPickConfig">();
+		STATIC_CLASS_IMPL("PyBHBanPickConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBHBanPickConfig")
 	}
 	static class UPyBHBanPickConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBHBanPickConfig>();
 	}
 };
-static_assert(alignof(UPyBHBanPickConfig) == 0x000008, "Wrong alignment on UPyBHBanPickConfig");
-static_assert(sizeof(UPyBHBanPickConfig) == 0x000050, "Wrong size on UPyBHBanPickConfig");
-static_assert(offsetof(UPyBHBanPickConfig, RandomPickNum) == 0x000038, "Member 'UPyBHBanPickConfig::RandomPickNum' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickConfig, RandomPickStartTime) == 0x00003C, "Member 'UPyBHBanPickConfig::RandomPickStartTime' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickConfig, RandomPickEndTime) == 0x000040, "Member 'UPyBHBanPickConfig::RandomPickEndTime' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickConfig, RandomPickJumpFreq) == 0x000048, "Member 'UPyBHBanPickConfig::RandomPickJumpFreq' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBHBanPickConfig;
 
 // PythonClass PyBHBanPickRuleComponent.PyBHBanPickRuleComponent
 // 0x0020 (0x03D0 - 0x03B0)
@@ -64,21 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBHBanPickRuleComponent">();
+		STATIC_CLASS_IMPL("PyBHBanPickRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBHBanPickRuleComponent")
 	}
 	static class UPyBHBanPickRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBHBanPickRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBHBanPickRuleComponent) == 0x000008, "Wrong alignment on UPyBHBanPickRuleComponent");
-static_assert(sizeof(UPyBHBanPickRuleComponent) == 0x0003D0, "Wrong size on UPyBHBanPickRuleComponent");
-static_assert(offsetof(UPyBHBanPickRuleComponent, RandomPickNum) == 0x0003B0, "Member 'UPyBHBanPickRuleComponent::RandomPickNum' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickRuleComponent, RandomPickStartTime) == 0x0003B4, "Member 'UPyBHBanPickRuleComponent::RandomPickStartTime' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickRuleComponent, RandomPickEndTime) == 0x0003B8, "Member 'UPyBHBanPickRuleComponent::RandomPickEndTime' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickRuleComponent, RandomPickJumpFreq) == 0x0003C0, "Member 'UPyBHBanPickRuleComponent::RandomPickJumpFreq' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickRuleComponent, RedSystemChoice) == 0x0003C8, "Member 'UPyBHBanPickRuleComponent::RedSystemChoice' has a wrong offset!");
-static_assert(offsetof(UPyBHBanPickRuleComponent, BlueSystemChoice) == 0x0003CC, "Member 'UPyBHBanPickRuleComponent::BlueSystemChoice' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBHBanPickRuleComponent;
 
 }
 

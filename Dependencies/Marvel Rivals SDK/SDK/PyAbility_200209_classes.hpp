@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200209.PyAbility_200209
-// 0x0008 (0x13F8 - 0x13F0)
+// 0x0008 (0x1410 - 0x1408)
 class UPyAbility_200209 : public UMarvelBlindAbility
 {
 public:
-	int32                                         Scope;                                             // 0x13F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Scope;                                             // 0x1408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,19 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200209">();
+		STATIC_CLASS_IMPL("PyAbility_200209")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200209")
 	}
 	static class UPyAbility_200209* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200209>();
 	}
 };
-static_assert(alignof(UPyAbility_200209) == 0x000008, "Wrong alignment on UPyAbility_200209");
-static_assert(sizeof(UPyAbility_200209) == 0x0013F8, "Wrong size on UPyAbility_200209");
-static_assert(offsetof(UPyAbility_200209, Scope) == 0x0013F0, "Member 'UPyAbility_200209::Scope' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200209;
 
 // PythonClass PyAbility_200209.PyTraceComponent_20020901
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_20020901 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -56,27 +58,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_20020901">();
+		STATIC_CLASS_IMPL("PyTraceComponent_20020901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_20020901")
 	}
 	static class UPyTraceComponent_20020901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_20020901>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_20020901) == 0x000010, "Wrong alignment on UPyTraceComponent_20020901");
-static_assert(sizeof(UPyTraceComponent_20020901) == 0x002200, "Wrong size on UPyTraceComponent_20020901");
+DUMPER7_ASSERTS_UPyTraceComponent_20020901;
 
 // PythonClass PyAbility_200209.PyCue_Buff_Loop_20020901
-// 0x0040 (0x1680 - 0x1640)
+// 0x0040 (0x1730 - 0x16F0)
 class APyCue_Buff_Loop_20020901 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EObjectTypeQuery>                      TraceSceneObjectType;                              // 0x1640(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1650(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               FogTransMID;                                       // 0x1660(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               Decal0MID;                                         // 0x1668(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               Decal1MID;                                         // 0x1670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EObjectTypeQuery>                      TraceSceneObjectType;                              // 0x16F0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x1700(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               FogTransMID;                                       // 0x1710(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               Decal0MID;                                         // 0x1718(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               Decal1MID;                                         // 0x1720(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -86,20 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_20020901">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_20020901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_20020901")
 	}
 	static class APyCue_Buff_Loop_20020901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_20020901>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_20020901) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_20020901");
-static_assert(sizeof(APyCue_Buff_Loop_20020901) == 0x001680, "Wrong size on APyCue_Buff_Loop_20020901");
-static_assert(offsetof(APyCue_Buff_Loop_20020901, TraceSceneObjectType) == 0x001640, "Member 'APyCue_Buff_Loop_20020901::TraceSceneObjectType' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_20020901, ViewTargetWatcher) == 0x001650, "Member 'APyCue_Buff_Loop_20020901::ViewTargetWatcher' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_20020901, FogTransMID) == 0x001660, "Member 'APyCue_Buff_Loop_20020901::FogTransMID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_20020901, Decal0MID) == 0x001668, "Member 'APyCue_Buff_Loop_20020901::Decal0MID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_20020901, Decal1MID) == 0x001670, "Member 'APyCue_Buff_Loop_20020901::Decal1MID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_20020901;
 
 }
 

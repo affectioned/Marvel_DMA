@@ -19,120 +19,78 @@ namespace SDK
 {
 
 // PythonClass PyAbility_131.PyConfig_131
-// 0x1858 (0x1970 - 0x0118)
+// 0x1E98 (0x2EB0 - 0x1018)
 class UPyConfig_131 : public UWallRunningAbilityConfig
 {
 public:
-	float                                         ForwardVectorInterpSpeed;                          // 0x0118(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxStepHeightOnWall;                               // 0x011C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxStepHeightOnSprint;                             // 0x0120(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           SprintRunningTag;                                  // 0x0124(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTimeToEndAbility_JumpFromWall;                // 0x0130(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTimeToEndAbility_OverTopOfWall;               // 0x0134(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         JumpDownLaunchVelocity_XY;                         // 0x0138(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         JumpDownLaunchVelocity_Z;                          // 0x013C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         JumpDownLaunchApplyTimeDelay;                      // 0x0140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HasFlipAnimWhenJumpOffWall;                        // 0x0144(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ForceNotInterpWhenGetOffWall;                      // 0x0145(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_146[0x2];                                      // 0x0146(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DownWallBlockCharacterRotTime;                     // 0x0148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownWallInterpSpeed;                               // 0x014C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownWallInterpMaxTime;                             // 0x0150(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownWallForbidMoveDuration;                        // 0x0154(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownWallForbidMoveDuration_Back;                   // 0x0158(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownWallDashDelayTime;                             // 0x015C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DownWallDashInfo;                                  // 0x0160(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          UseVehicleLikeRotation;                            // 0x0D28(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D29[0x3];                                      // 0x0D29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxAngleCanVehicleRotate;                          // 0x0D2C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDistanceToCross_Inner;                          // 0x0D30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StandPointDistance_Inner;                          // 0x0D34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TransformTotalTime_Inner;                          // 0x0D38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinAngleDiffrence_Inner;                           // 0x0D3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxAngleDiffrence_Inner;                           // 0x0D40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDistanceToCross_Outer;                          // 0x0D44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StandPointDistance_Outer;                          // 0x0D48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TransformTotalTime_Outer;                          // 0x0D4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinAngleDiffrence_Outer;                           // 0x0D50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxAngleDiffrence_Outer;                           // 0x0D54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxAngleCanCross_Outer;                            // 0x0D58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceToEdge_Outer;                              // 0x0D5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxTiltAngleAtTopOfWall;                           // 0x0D60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinDistanceToTopOfWall;                            // 0x0D64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForwardSpeedAfterDashTopOfWall;                    // 0x0D68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D6C[0x4];                                      // 0x0D6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       ReachTopOfWallDashInfo;                            // 0x0D70(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterpNormal;                                // 0x1938(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterpFromSwinging;                          // 0x1940(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULegacyCameraShake>         CameraShakeClassFromSwinging;                      // 0x1948(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterpForSprintRunning;                      // 0x1950(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLockCameraWhenOuterCross;                        // 0x1958(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCameraDecoupledFromCapsule;                      // 0x1959(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195A[0x2];                                     // 0x195A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CameraInterpSpeed_Outer;                           // 0x195C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterp_Outer;                                // 0x1960(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DebugDrawOuterCrossCamera;                         // 0x1968(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForwardVectorInterpSpeed;                          // 0x1018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxStepHeightOnWall;                               // 0x101C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxStepHeightOnSprint;                             // 0x1020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SprintRunningTag;                                  // 0x1024(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToEndAbility_JumpFromWall;                // 0x1030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToEndAbility_OverTopOfWall;               // 0x1034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         JumpDownLaunchVelocity_XY;                         // 0x1038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         JumpDownLaunchVelocity_Z;                          // 0x103C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         JumpDownLaunchApplyTimeDelay;                      // 0x1040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HasFlipAnimWhenJumpOffWall;                        // 0x1044(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ForceNotInterpWhenGetOffWall;                      // 0x1045(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1046[0x2];                                     // 0x1046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DownWallBlockCharacterRotTime;                     // 0x1048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownWallInterpSpeed;                               // 0x104C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownWallInterpMaxTime;                             // 0x1050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownWallForbidMoveDuration;                        // 0x1054(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownWallForbidMoveDuration_Back;                   // 0x1058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownWallDashDelayTime;                             // 0x105C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DownWallDashInfo;                                  // 0x1060(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          UseVehicleLikeRotation;                            // 0x1F48(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F49[0x3];                                     // 0x1F49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxAngleCanVehicleRotate;                          // 0x1F4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDistanceToCross_Inner;                          // 0x1F50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StandPointDistance_Inner;                          // 0x1F54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TransformTotalTime_Inner;                          // 0x1F58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinAngleDiffrence_Inner;                           // 0x1F5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAngleDiffrence_Inner;                           // 0x1F60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDistanceToCross_Outer;                          // 0x1F64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StandPointDistance_Outer;                          // 0x1F68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TransformTotalTime_Outer;                          // 0x1F6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinAngleDiffrence_Outer;                           // 0x1F70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAngleDiffrence_Outer;                           // 0x1F74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAngleCanCross_Outer;                            // 0x1F78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceToEdge_Outer;                              // 0x1F7C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxTiltAngleAtTopOfWall;                           // 0x1F80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinDistanceToTopOfWall;                            // 0x1F84(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForwardSpeedAfterDashTopOfWall;                    // 0x1F88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F8C[0x4];                                     // 0x1F8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       ReachTopOfWallDashInfo;                            // 0x1F90(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterpNormal;                                // 0x2E78(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterpFromSwinging;                          // 0x2E80(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULegacyCameraShake>         CameraShakeClassFromSwinging;                      // 0x2E88(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterpForSprintRunning;                      // 0x2E90(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLockCameraWhenOuterCross;                        // 0x2E98(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCameraDecoupledFromCapsule;                      // 0x2E99(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2E9A[0x2];                                     // 0x2E9A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CameraInterpSpeed_Outer;                           // 0x2E9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterp_Outer;                                // 0x2EA0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DebugDrawOuterCrossCamera;                         // 0x2EA8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_131">();
+		STATIC_CLASS_IMPL("PyConfig_131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_131")
 	}
 	static class UPyConfig_131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_131>();
 	}
 };
-static_assert(alignof(UPyConfig_131) == 0x000008, "Wrong alignment on UPyConfig_131");
-static_assert(sizeof(UPyConfig_131) == 0x001970, "Wrong size on UPyConfig_131");
-static_assert(offsetof(UPyConfig_131, ForwardVectorInterpSpeed) == 0x000118, "Member 'UPyConfig_131::ForwardVectorInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxStepHeightOnWall) == 0x00011C, "Member 'UPyConfig_131::MaxStepHeightOnWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxStepHeightOnSprint) == 0x000120, "Member 'UPyConfig_131::MaxStepHeightOnSprint' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, SprintRunningTag) == 0x000124, "Member 'UPyConfig_131::SprintRunningTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DelayTimeToEndAbility_JumpFromWall) == 0x000130, "Member 'UPyConfig_131::DelayTimeToEndAbility_JumpFromWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DelayTimeToEndAbility_OverTopOfWall) == 0x000134, "Member 'UPyConfig_131::DelayTimeToEndAbility_OverTopOfWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, JumpDownLaunchVelocity_XY) == 0x000138, "Member 'UPyConfig_131::JumpDownLaunchVelocity_XY' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, JumpDownLaunchVelocity_Z) == 0x00013C, "Member 'UPyConfig_131::JumpDownLaunchVelocity_Z' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, JumpDownLaunchApplyTimeDelay) == 0x000140, "Member 'UPyConfig_131::JumpDownLaunchApplyTimeDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, HasFlipAnimWhenJumpOffWall) == 0x000144, "Member 'UPyConfig_131::HasFlipAnimWhenJumpOffWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, ForceNotInterpWhenGetOffWall) == 0x000145, "Member 'UPyConfig_131::ForceNotInterpWhenGetOffWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallBlockCharacterRotTime) == 0x000148, "Member 'UPyConfig_131::DownWallBlockCharacterRotTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallInterpSpeed) == 0x00014C, "Member 'UPyConfig_131::DownWallInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallInterpMaxTime) == 0x000150, "Member 'UPyConfig_131::DownWallInterpMaxTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallForbidMoveDuration) == 0x000154, "Member 'UPyConfig_131::DownWallForbidMoveDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallForbidMoveDuration_Back) == 0x000158, "Member 'UPyConfig_131::DownWallForbidMoveDuration_Back' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallDashDelayTime) == 0x00015C, "Member 'UPyConfig_131::DownWallDashDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DownWallDashInfo) == 0x000160, "Member 'UPyConfig_131::DownWallDashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, UseVehicleLikeRotation) == 0x000D28, "Member 'UPyConfig_131::UseVehicleLikeRotation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxAngleCanVehicleRotate) == 0x000D2C, "Member 'UPyConfig_131::MaxAngleCanVehicleRotate' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxDistanceToCross_Inner) == 0x000D30, "Member 'UPyConfig_131::MaxDistanceToCross_Inner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, StandPointDistance_Inner) == 0x000D34, "Member 'UPyConfig_131::StandPointDistance_Inner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, TransformTotalTime_Inner) == 0x000D38, "Member 'UPyConfig_131::TransformTotalTime_Inner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MinAngleDiffrence_Inner) == 0x000D3C, "Member 'UPyConfig_131::MinAngleDiffrence_Inner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxAngleDiffrence_Inner) == 0x000D40, "Member 'UPyConfig_131::MaxAngleDiffrence_Inner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxDistanceToCross_Outer) == 0x000D44, "Member 'UPyConfig_131::MaxDistanceToCross_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, StandPointDistance_Outer) == 0x000D48, "Member 'UPyConfig_131::StandPointDistance_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, TransformTotalTime_Outer) == 0x000D4C, "Member 'UPyConfig_131::TransformTotalTime_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MinAngleDiffrence_Outer) == 0x000D50, "Member 'UPyConfig_131::MinAngleDiffrence_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxAngleDiffrence_Outer) == 0x000D54, "Member 'UPyConfig_131::MaxAngleDiffrence_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxAngleCanCross_Outer) == 0x000D58, "Member 'UPyConfig_131::MaxAngleCanCross_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DistanceToEdge_Outer) == 0x000D5C, "Member 'UPyConfig_131::DistanceToEdge_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MaxTiltAngleAtTopOfWall) == 0x000D60, "Member 'UPyConfig_131::MaxTiltAngleAtTopOfWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, MinDistanceToTopOfWall) == 0x000D64, "Member 'UPyConfig_131::MinDistanceToTopOfWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, ForwardSpeedAfterDashTopOfWall) == 0x000D68, "Member 'UPyConfig_131::ForwardSpeedAfterDashTopOfWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, ReachTopOfWallDashInfo) == 0x000D70, "Member 'UPyConfig_131::ReachTopOfWallDashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraInterpNormal) == 0x001938, "Member 'UPyConfig_131::CameraInterpNormal' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraInterpFromSwinging) == 0x001940, "Member 'UPyConfig_131::CameraInterpFromSwinging' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraShakeClassFromSwinging) == 0x001948, "Member 'UPyConfig_131::CameraShakeClassFromSwinging' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraInterpForSprintRunning) == 0x001950, "Member 'UPyConfig_131::CameraInterpForSprintRunning' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, IsLockCameraWhenOuterCross) == 0x001958, "Member 'UPyConfig_131::IsLockCameraWhenOuterCross' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, IsCameraDecoupledFromCapsule) == 0x001959, "Member 'UPyConfig_131::IsCameraDecoupledFromCapsule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraInterpSpeed_Outer) == 0x00195C, "Member 'UPyConfig_131::CameraInterpSpeed_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, CameraInterp_Outer) == 0x001960, "Member 'UPyConfig_131::CameraInterp_Outer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_131, DebugDrawOuterCrossCamera) == 0x001968, "Member 'UPyConfig_131::DebugDrawOuterCrossCamera' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_131;
 
 // PythonClass PyAbility_131.PyCue_AbilityLoop_13101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_AbilityLoop_13101 : public AMarvelCueNotify_Ability
 {
 public:
@@ -144,18 +102,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_13101">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_13101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_13101")
 	}
 	static class APyCue_AbilityLoop_13101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_13101>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_13101) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_13101");
-static_assert(sizeof(APyCue_AbilityLoop_13101) == 0x0011B0, "Wrong size on APyCue_AbilityLoop_13101");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_13101;
 
 // PythonClass PyAbility_131.PyAbility_131
-// 0x0000 (0x2A78 - 0x2A78)
+// 0x0000 (0x2B58 - 0x2B58)
 class UPyAbility_131 : public UWallRunningAbility
 {
 public:
@@ -166,7 +127,6 @@ public:
 	void ExtractInfoFromEventData(float EventMagnitude);
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
 	void K2_OnEndAbility(bool bWasCancelled);
-	void K2_OnTick(float DeltaTime);
 	bool K2_OnWallRunningEnd(const struct FWallRunningEndInfo& InWallRunningEndInfo);
 	void OnDashFinish_DownWall(EDashStopReason Reason);
 	void OnDashFinish_ReachTop(EDashStopReason Reason);
@@ -175,15 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_131">();
+		STATIC_CLASS_IMPL("PyAbility_131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_131")
 	}
 	static class UPyAbility_131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_131>();
 	}
 };
-static_assert(alignof(UPyAbility_131) == 0x000008, "Wrong alignment on UPyAbility_131");
-static_assert(sizeof(UPyAbility_131) == 0x002A78, "Wrong size on UPyAbility_131");
+DUMPER7_ASSERTS_UPyAbility_131;
 
 }
 

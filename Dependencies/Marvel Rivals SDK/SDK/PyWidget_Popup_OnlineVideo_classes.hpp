@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Popup_OnlineVideo.PyWidget_Popup_OnlineVideo
-// 0x0000 (0x0610 - 0x0610)
+// 0x0000 (0x0618 - 0x0618)
 class UPyWidget_Popup_OnlineVideo final : public UPyWidget_OnlineVideo
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Popup_OnlineVideo">();
+		STATIC_CLASS_IMPL("PyWidget_Popup_OnlineVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Popup_OnlineVideo")
 	}
 	static class UPyWidget_Popup_OnlineVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Popup_OnlineVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_Popup_OnlineVideo) == 0x000008, "Wrong alignment on UPyWidget_Popup_OnlineVideo");
-static_assert(sizeof(UPyWidget_Popup_OnlineVideo) == 0x000610, "Wrong size on UPyWidget_Popup_OnlineVideo");
+DUMPER7_ASSERTS_UPyWidget_Popup_OnlineVideo;
 
 }
 

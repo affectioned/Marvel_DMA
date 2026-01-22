@@ -17,96 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.WhileActive
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool APyProjectileLoop_10284101_Cue::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "WhileActive");
-
-	Params::PyProjectileLoop_10284101_Cue_WhileActive Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.OnExecute
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool APyProjectileLoop_10284101_Cue::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "OnExecute");
-
-	Params::PyProjectileLoop_10284101_Cue_OnExecute Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.OnRemove
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool APyProjectileLoop_10284101_Cue::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "OnRemove");
-
-	Params::PyProjectileLoop_10284101_Cue_OnRemove Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction PyAbility_102841.PyProjectile_10284101.ReceiveBeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -214,20 +124,75 @@ void UPyAbility_102841::BeginPlay()
 }
 
 
-// PythonFunction PyAbility_102841.PyAbility_102841.K2_ActivateAbility
+// PythonFunction PyAbility_102841.PyAbility_102841.EndPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyAbility_102841::K2_ActivateAbility()
+void UPyAbility_102841::EndPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_102841", "K2_ActivateAbility");
+		Func = Class->GetFunction("PyAbility_102841", "EndPlay");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102841.PyAbility_102841.TryMakeTriggerContext
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGameplayEventData&              EventData                                              (Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyAbility_102841::TryMakeTriggerContext(struct FGameplayEventData& EventData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_102841", "TryMakeTriggerContext");
+
+	Params::PyAbility_102841_TryMakeTriggerContext Parms{};
+
+	Parms.EventData = std::move(EventData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	EventData = std::move(Parms.EventData);
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_102841.PyAbility_102841.K2_ActivateAbilityFromEvent
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPyAbility_102841::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_102841", "K2_ActivateAbilityFromEvent");
+
+	Params::PyAbility_102841_K2_ActivateAbilityFromEvent Parms{};
+
+	Parms.EventData = std::move(EventData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -274,6 +239,96 @@ void UPyAbility_102841::K2_OnEndAbility(bool bWasCancelled)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.WhileActive
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyProjectileLoop_10284101_Cue::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "WhileActive");
+
+	Params::PyProjectileLoop_10284101_Cue_WhileActive Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.OnExecute
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyProjectileLoop_10284101_Cue::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "OnExecute");
+
+	Params::PyProjectileLoop_10284101_Cue_OnExecute Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_102841.PyProjectileLoop_10284101_Cue.OnRemove
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyProjectileLoop_10284101_Cue::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectileLoop_10284101_Cue", "OnRemove");
+
+	Params::PyProjectileLoop_10284101_Cue_OnRemove Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 }

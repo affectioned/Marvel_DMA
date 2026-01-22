@@ -17,25 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Scope_10235101_BP.Scope_10235101_BP_C
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class AScope_10235101_BP_C final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	class UScopeModifierComponent*                ScopeModifier;                                     // 0x1AA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UScopeModifierComponent*                ScopeModifier;                                     // 0x1B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scope_10235101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Scope_10235101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_10235101_BP_C")
 	}
 	static class AScope_10235101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_10235101_BP_C>();
 	}
 };
-static_assert(alignof(AScope_10235101_BP_C) == 0x000010, "Wrong alignment on AScope_10235101_BP_C");
-static_assert(sizeof(AScope_10235101_BP_C) == 0x001AB0, "Wrong size on AScope_10235101_BP_C");
-static_assert(offsetof(AScope_10235101_BP_C, ScopeModifier) == 0x001AA0, "Member 'AScope_10235101_BP_C::ScopeModifier' has a wrong offset!");
+DUMPER7_ASSERTS_AScope_10235101_BP_C;
 
 }
 

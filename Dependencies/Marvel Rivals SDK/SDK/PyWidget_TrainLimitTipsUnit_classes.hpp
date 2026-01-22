@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_TrainLimitTipsUnit.PyWidget_TrainLimitTipsUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_TrainLimitTipsUnit : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_TrainLimitTipsUnit">();
+		STATIC_CLASS_IMPL("PyWidget_TrainLimitTipsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_TrainLimitTipsUnit")
 	}
 	static class UPyWidget_TrainLimitTipsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_TrainLimitTipsUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_TrainLimitTipsUnit) == 0x000008, "Wrong alignment on UPyWidget_TrainLimitTipsUnit");
-static_assert(sizeof(UPyWidget_TrainLimitTipsUnit) == 0x0005C0, "Wrong size on UPyWidget_TrainLimitTipsUnit");
+DUMPER7_ASSERTS_UPyWidget_TrainLimitTipsUnit;
 
 }
 

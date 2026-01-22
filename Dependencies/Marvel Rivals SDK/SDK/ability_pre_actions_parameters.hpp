@@ -22,10 +22,7 @@ public:
 	class UMarvelGameplayAbility*                 Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelAIController*                    AIController;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityPreActionBase_DoPreAction) == 0x000008, "Wrong alignment on PyAbilityPreActionBase_DoPreAction");
-static_assert(sizeof(PyAbilityPreActionBase_DoPreAction) == 0x000010, "Wrong size on PyAbilityPreActionBase_DoPreAction");
-static_assert(offsetof(PyAbilityPreActionBase_DoPreAction, Ability) == 0x000000, "Member 'PyAbilityPreActionBase_DoPreAction::Ability' has a wrong offset!");
-static_assert(offsetof(PyAbilityPreActionBase_DoPreAction, AIController) == 0x000008, "Member 'PyAbilityPreActionBase_DoPreAction::AIController' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityPreActionBase_DoPreAction;
 
 // PythonFunction ability_pre_actions.PyPreAction_SetWeaponActionName.DoPreAction
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +32,7 @@ public:
 	class UMarvelGameplayAbility*                 Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelAIController*                    AIController;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPreAction_SetWeaponActionName_DoPreAction) == 0x000008, "Wrong alignment on PyPreAction_SetWeaponActionName_DoPreAction");
-static_assert(sizeof(PyPreAction_SetWeaponActionName_DoPreAction) == 0x000010, "Wrong size on PyPreAction_SetWeaponActionName_DoPreAction");
-static_assert(offsetof(PyPreAction_SetWeaponActionName_DoPreAction, Ability) == 0x000000, "Member 'PyPreAction_SetWeaponActionName_DoPreAction::Ability' has a wrong offset!");
-static_assert(offsetof(PyPreAction_SetWeaponActionName_DoPreAction, AIController) == 0x000008, "Member 'PyPreAction_SetWeaponActionName_DoPreAction::AIController' has a wrong offset!");
+DUMPER7_ASSERTS_PyPreAction_SetWeaponActionName_DoPreAction;
 
 }
 

@@ -23,15 +23,18 @@ class UEQC_GetAllyDPS_C final : public UEnvQueryContext_CharacterGroup
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetAllyDPS_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetAllyDPS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetAllyDPS_C")
 	}
 	static class UEQC_GetAllyDPS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetAllyDPS_C>();
 	}
 };
-static_assert(alignof(UEQC_GetAllyDPS_C) == 0x000008, "Wrong alignment on UEQC_GetAllyDPS_C");
-static_assert(sizeof(UEQC_GetAllyDPS_C) == 0x000038, "Wrong size on UEQC_GetAllyDPS_C");
+DUMPER7_ASSERTS_UEQC_GetAllyDPS_C;
 
 }
 

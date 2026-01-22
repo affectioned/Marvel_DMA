@@ -23,9 +23,7 @@ struct PyAbility_102481_K2_OnAeroStateChanged final
 public:
 	EAeroState                                    NewAeroState;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102481_K2_OnAeroStateChanged) == 0x000001, "Wrong alignment on PyAbility_102481_K2_OnAeroStateChanged");
-static_assert(sizeof(PyAbility_102481_K2_OnAeroStateChanged) == 0x000001, "Wrong size on PyAbility_102481_K2_OnAeroStateChanged");
-static_assert(offsetof(PyAbility_102481_K2_OnAeroStateChanged, NewAeroState) == 0x000000, "Member 'PyAbility_102481_K2_OnAeroStateChanged::NewAeroState' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102481_K2_OnAeroStateChanged;
 
 // PythonFunction PyAbility_102481.PyAbility_102481.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_102481_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102481_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102481_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102481_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102481_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102481_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_102481_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102481_K2_OnEndAbility;
 
 }
 

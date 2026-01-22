@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_10396101_PullEffect.BuffAbility_10396101_PullEffect_C
-// 0x0000 (0x13A8 - 0x13A8)
+// 0x0000 (0x13C0 - 0x13C0)
 class UBuffAbility_10396101_PullEffect_C final : public UAbility_136_AddMovementInput
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_10396101_PullEffect_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_10396101_PullEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10396101_PullEffect_C")
 	}
 	static class UBuffAbility_10396101_PullEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10396101_PullEffect_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_10396101_PullEffect_C) == 0x000008, "Wrong alignment on UBuffAbility_10396101_PullEffect_C");
-static_assert(sizeof(UBuffAbility_10396101_PullEffect_C) == 0x0013A8, "Wrong size on UBuffAbility_10396101_PullEffect_C");
+DUMPER7_ASSERTS_UBuffAbility_10396101_PullEffect_C;
 
 }
 

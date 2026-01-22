@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_ScheduleOverview.WBP_League_ScheduleOverview_Btn
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_League_ScheduleOverview_Btn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,25 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_League_ScheduleOverview_Btn">();
+		STATIC_CLASS_IMPL("WBP_League_ScheduleOverview_Btn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_League_ScheduleOverview_Btn")
 	}
 	static class UWBP_League_ScheduleOverview_Btn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_League_ScheduleOverview_Btn>();
 	}
 };
-static_assert(alignof(UWBP_League_ScheduleOverview_Btn) == 0x000008, "Wrong alignment on UWBP_League_ScheduleOverview_Btn");
-static_assert(sizeof(UWBP_League_ScheduleOverview_Btn) == 0x0005D8, "Wrong size on UWBP_League_ScheduleOverview_Btn");
-static_assert(offsetof(UWBP_League_ScheduleOverview_Btn, BtnText) == 0x0005C0, "Member 'UWBP_League_ScheduleOverview_Btn::BtnText' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_League_ScheduleOverview_Btn;
 
 // PythonClass PyWidget_League_ScheduleOverview.PyWidget_League_ScheduleOverview
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           UpperAction;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           LowerAction;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           UpperAction;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           LowerAction;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -64,17 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview")
 	}
 	static class UPyWidget_League_ScheduleOverview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview) == 0x0005D0, "Wrong size on UPyWidget_League_ScheduleOverview");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview, UpperAction) == 0x0005C0, "Member 'UPyWidget_League_ScheduleOverview::UpperAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview, LowerAction) == 0x0005C8, "Member 'UPyWidget_League_ScheduleOverview::LowerAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview;
 
 }
 

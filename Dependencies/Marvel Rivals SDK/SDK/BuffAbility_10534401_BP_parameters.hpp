@@ -23,11 +23,7 @@ public:
 	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWasCancelled;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP) == 0x000004, "Wrong alignment on BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP");
-static_assert(sizeof(BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP) == 0x00000C, "Wrong size on BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP");
-static_assert(offsetof(BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP, EntryPoint) == 0x000000, "Member 'BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP, K2Node_Event_DeltaTime) == 0x000004, "Member 'BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP::K2Node_Event_DeltaTime' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP, K2Node_Event_bWasCancelled) == 0x000008, "Member 'BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10534401_BP_C_ExecuteUbergraph_BuffAbility_10534401_BP;
 
 // Function BuffAbility_10534401_BP.BuffAbility_10534401_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +32,7 @@ struct BuffAbility_10534401_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10534401_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on BuffAbility_10534401_BP_C_K2_OnEndAbility");
-static_assert(sizeof(BuffAbility_10534401_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on BuffAbility_10534401_BP_C_K2_OnEndAbility");
-static_assert(offsetof(BuffAbility_10534401_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'BuffAbility_10534401_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10534401_BP_C_K2_OnEndAbility;
 
 // Function BuffAbility_10534401_BP.BuffAbility_10534401_BP_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +41,7 @@ struct BuffAbility_10534401_BP_C_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10534401_BP_C_ReceiveTick) == 0x000004, "Wrong alignment on BuffAbility_10534401_BP_C_ReceiveTick");
-static_assert(sizeof(BuffAbility_10534401_BP_C_ReceiveTick) == 0x000004, "Wrong size on BuffAbility_10534401_BP_C_ReceiveTick");
-static_assert(offsetof(BuffAbility_10534401_BP_C_ReceiveTick, DeltaTime) == 0x000000, "Member 'BuffAbility_10534401_BP_C_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10534401_BP_C_ReceiveTick;
 
 }
 

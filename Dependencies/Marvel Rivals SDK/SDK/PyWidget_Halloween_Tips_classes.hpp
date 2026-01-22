@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Tips.PyWidget_Halloween_Skill_Tips
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_Halloween_Skill_Tips final : public UPyWidget_CommonTipsBase
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Skill_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Skill_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Skill_Tips")
 	}
 	static class UPyWidget_Halloween_Skill_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Skill_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Skill_Tips) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Skill_Tips");
-static_assert(sizeof(UPyWidget_Halloween_Skill_Tips) == 0x0005D8, "Wrong size on UPyWidget_Halloween_Skill_Tips");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Skill_Tips;
 
 // PythonClass PyWidget_Halloween_Tips.PyWidget_Halloween_talent_TipsV2
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_Halloween_talent_TipsV2 final : public UPyWidget_CommonTipsBase
 {
 public:
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_talent_TipsV2">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_talent_TipsV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_talent_TipsV2")
 	}
 	static class UPyWidget_Halloween_talent_TipsV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_talent_TipsV2>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_talent_TipsV2) == 0x000008, "Wrong alignment on UPyWidget_Halloween_talent_TipsV2");
-static_assert(sizeof(UPyWidget_Halloween_talent_TipsV2) == 0x0005D8, "Wrong size on UPyWidget_Halloween_talent_TipsV2");
+DUMPER7_ASSERTS_UPyWidget_Halloween_talent_TipsV2;
 
 }
 

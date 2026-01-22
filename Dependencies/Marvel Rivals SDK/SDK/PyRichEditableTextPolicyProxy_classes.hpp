@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichEditableTextPolicyProxy">();
+		STATIC_CLASS_IMPL("PyRichEditableTextPolicyProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichEditableTextPolicyProxy")
 	}
 	static class UPyRichEditableTextPolicyProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichEditableTextPolicyProxy>();
 	}
 };
-static_assert(alignof(UPyRichEditableTextPolicyProxy) == 0x000008, "Wrong alignment on UPyRichEditableTextPolicyProxy");
-static_assert(sizeof(UPyRichEditableTextPolicyProxy) == 0x000030, "Wrong size on UPyRichEditableTextPolicyProxy");
+DUMPER7_ASSERTS_UPyRichEditableTextPolicyProxy;
 
 }
 

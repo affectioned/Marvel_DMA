@@ -23,15 +23,18 @@ class ACooperateBarrierCtrl_C final : public APyCooperateBarrierCtrl
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CooperateBarrierCtrl_C">();
+		BP_STATIC_CLASS_IMPL("CooperateBarrierCtrl_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CooperateBarrierCtrl_C")
 	}
 	static class ACooperateBarrierCtrl_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACooperateBarrierCtrl_C>();
 	}
 };
-static_assert(alignof(ACooperateBarrierCtrl_C) == 0x000010, "Wrong alignment on ACooperateBarrierCtrl_C");
-static_assert(sizeof(ACooperateBarrierCtrl_C) == 0x000710, "Wrong size on ACooperateBarrierCtrl_C");
+DUMPER7_ASSERTS_ACooperateBarrierCtrl_C;
 
 }
 

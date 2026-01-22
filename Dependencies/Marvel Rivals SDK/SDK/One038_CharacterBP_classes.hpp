@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1038_CharacterBP.1038_CharacterBP_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class AOne038_CharacterBP_C final : public APyScarletWitchCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1038_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1038_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1038_CharacterBP_C")
 	}
 	static class AOne038_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne038_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne038_CharacterBP_C) == 0x000010, "Wrong alignment on AOne038_CharacterBP_C");
-static_assert(sizeof(AOne038_CharacterBP_C) == 0x0021B0, "Wrong size on AOne038_CharacterBP_C");
+DUMPER7_ASSERTS_AOne038_CharacterBP_C;
 
 }
 

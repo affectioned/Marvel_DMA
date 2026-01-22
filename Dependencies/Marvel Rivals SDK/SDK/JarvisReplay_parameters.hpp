@@ -23,10 +23,7 @@ public:
 	bool                                          bExecuted;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplayLibrary_RecordInputActionExecutionResult) == 0x000008, "Wrong alignment on JarvisReplayLibrary_RecordInputActionExecutionResult");
-static_assert(sizeof(JarvisReplayLibrary_RecordInputActionExecutionResult) == 0x000010, "Wrong size on JarvisReplayLibrary_RecordInputActionExecutionResult");
-static_assert(offsetof(JarvisReplayLibrary_RecordInputActionExecutionResult, WCO) == 0x000000, "Member 'JarvisReplayLibrary_RecordInputActionExecutionResult::WCO' has a wrong offset!");
-static_assert(offsetof(JarvisReplayLibrary_RecordInputActionExecutionResult, bExecuted) == 0x000008, "Member 'JarvisReplayLibrary_RecordInputActionExecutionResult::bExecuted' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplayLibrary_RecordInputActionExecutionResult;
 
 // Function JarvisReplay.JarvisReplaySubsystem.LocalRecordJarvisReplay
 // 0x0030 (0x0030 - 0x0000)
@@ -37,11 +34,7 @@ public:
 	class FString                                 FriendlyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Options;                                           // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_LocalRecordJarvisReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_LocalRecordJarvisReplay");
-static_assert(sizeof(JarvisReplaySubsystem_LocalRecordJarvisReplay) == 0x000030, "Wrong size on JarvisReplaySubsystem_LocalRecordJarvisReplay");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordJarvisReplay, Name_0) == 0x000000, "Member 'JarvisReplaySubsystem_LocalRecordJarvisReplay::Name_0' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordJarvisReplay, FriendlyName) == 0x000010, "Member 'JarvisReplaySubsystem_LocalRecordJarvisReplay::FriendlyName' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordJarvisReplay, Options) == 0x000020, "Member 'JarvisReplaySubsystem_LocalRecordJarvisReplay::Options' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_LocalRecordJarvisReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.LocalRecordWidgetEventReplay
 // 0x0030 (0x0030 - 0x0000)
@@ -52,11 +45,7 @@ public:
 	class FString                                 FriendlyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Options;                                           // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_LocalRecordWidgetEventReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_LocalRecordWidgetEventReplay");
-static_assert(sizeof(JarvisReplaySubsystem_LocalRecordWidgetEventReplay) == 0x000030, "Wrong size on JarvisReplaySubsystem_LocalRecordWidgetEventReplay");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordWidgetEventReplay, Name_0) == 0x000000, "Member 'JarvisReplaySubsystem_LocalRecordWidgetEventReplay::Name_0' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordWidgetEventReplay, FriendlyName) == 0x000010, "Member 'JarvisReplaySubsystem_LocalRecordWidgetEventReplay::FriendlyName' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_LocalRecordWidgetEventReplay, Options) == 0x000020, "Member 'JarvisReplaySubsystem_LocalRecordWidgetEventReplay::Options' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_LocalRecordWidgetEventReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.PlayJarvisReplay
 // 0x0018 (0x0018 - 0x0000)
@@ -68,11 +57,7 @@ public:
 	bool                                          InIsInGameRecord;                                  // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplaySubsystem_PlayJarvisReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_PlayJarvisReplay");
-static_assert(sizeof(JarvisReplaySubsystem_PlayJarvisReplay) == 0x000018, "Wrong size on JarvisReplaySubsystem_PlayJarvisReplay");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplay, DemoURL) == 0x000000, "Member 'JarvisReplaySubsystem_PlayJarvisReplay::DemoURL' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplay, bIsNetFile) == 0x000010, "Member 'JarvisReplaySubsystem_PlayJarvisReplay::bIsNetFile' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplay, InIsInGameRecord) == 0x000011, "Member 'JarvisReplaySubsystem_PlayJarvisReplay::InIsInGameRecord' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_PlayJarvisReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.PlayJarvisReplaySequence
 // 0x0020 (0x0020 - 0x0000)
@@ -85,12 +70,7 @@ public:
 	bool                                          bInQuitAppOnEnd;                                   // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplaySubsystem_PlayJarvisReplaySequence) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_PlayJarvisReplaySequence");
-static_assert(sizeof(JarvisReplaySubsystem_PlayJarvisReplaySequence) == 0x000020, "Wrong size on JarvisReplaySubsystem_PlayJarvisReplaySequence");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplaySequence, ReplayIDSequence) == 0x000000, "Member 'JarvisReplaySubsystem_PlayJarvisReplaySequence::ReplayIDSequence' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplaySequence, InLoopTimes) == 0x000010, "Member 'JarvisReplaySubsystem_PlayJarvisReplaySequence::InLoopTimes' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplaySequence, InReplayInterval) == 0x000014, "Member 'JarvisReplaySubsystem_PlayJarvisReplaySequence::InReplayInterval' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayJarvisReplaySequence, bInQuitAppOnEnd) == 0x000018, "Member 'JarvisReplaySubsystem_PlayJarvisReplaySequence::bInQuitAppOnEnd' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_PlayJarvisReplaySequence;
 
 // Function JarvisReplay.JarvisReplaySubsystem.PlayWidgetEventReplay
 // 0x0018 (0x0018 - 0x0000)
@@ -102,11 +82,7 @@ public:
 	bool                                          InIsInGameRecord;                                  // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplaySubsystem_PlayWidgetEventReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_PlayWidgetEventReplay");
-static_assert(sizeof(JarvisReplaySubsystem_PlayWidgetEventReplay) == 0x000018, "Wrong size on JarvisReplaySubsystem_PlayWidgetEventReplay");
-static_assert(offsetof(JarvisReplaySubsystem_PlayWidgetEventReplay, DemoURL) == 0x000000, "Member 'JarvisReplaySubsystem_PlayWidgetEventReplay::DemoURL' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayWidgetEventReplay, bIsNetFile) == 0x000010, "Member 'JarvisReplaySubsystem_PlayWidgetEventReplay::bIsNetFile' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_PlayWidgetEventReplay, InIsInGameRecord) == 0x000011, "Member 'JarvisReplaySubsystem_PlayWidgetEventReplay::InIsInGameRecord' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_PlayWidgetEventReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.RecordJarvisReplay
 // 0x0018 (0x0018 - 0x0000)
@@ -117,10 +93,7 @@ public:
 	bool                                          bInIsInGameRecord;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplaySubsystem_RecordJarvisReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_RecordJarvisReplay");
-static_assert(sizeof(JarvisReplaySubsystem_RecordJarvisReplay) == 0x000018, "Wrong size on JarvisReplaySubsystem_RecordJarvisReplay");
-static_assert(offsetof(JarvisReplaySubsystem_RecordJarvisReplay, Options) == 0x000000, "Member 'JarvisReplaySubsystem_RecordJarvisReplay::Options' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_RecordJarvisReplay, bInIsInGameRecord) == 0x000010, "Member 'JarvisReplaySubsystem_RecordJarvisReplay::bInIsInGameRecord' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_RecordJarvisReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.RecordWidgetEventReplay
 // 0x0018 (0x0018 - 0x0000)
@@ -131,10 +104,7 @@ public:
 	bool                                          bInIsInGameRecord;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(JarvisReplaySubsystem_RecordWidgetEventReplay) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_RecordWidgetEventReplay");
-static_assert(sizeof(JarvisReplaySubsystem_RecordWidgetEventReplay) == 0x000018, "Wrong size on JarvisReplaySubsystem_RecordWidgetEventReplay");
-static_assert(offsetof(JarvisReplaySubsystem_RecordWidgetEventReplay, Options) == 0x000000, "Member 'JarvisReplaySubsystem_RecordWidgetEventReplay::Options' has a wrong offset!");
-static_assert(offsetof(JarvisReplaySubsystem_RecordWidgetEventReplay, bInIsInGameRecord) == 0x000010, "Member 'JarvisReplaySubsystem_RecordWidgetEventReplay::bInIsInGameRecord' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_RecordWidgetEventReplay;
 
 // Function JarvisReplay.JarvisReplaySubsystem.GetRecordingDemoCurrentTime
 // 0x0004 (0x0004 - 0x0000)
@@ -143,9 +113,7 @@ struct JarvisReplaySubsystem_GetRecordingDemoCurrentTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_GetRecordingDemoCurrentTime) == 0x000004, "Wrong alignment on JarvisReplaySubsystem_GetRecordingDemoCurrentTime");
-static_assert(sizeof(JarvisReplaySubsystem_GetRecordingDemoCurrentTime) == 0x000004, "Wrong size on JarvisReplaySubsystem_GetRecordingDemoCurrentTime");
-static_assert(offsetof(JarvisReplaySubsystem_GetRecordingDemoCurrentTime, ReturnValue) == 0x000000, "Member 'JarvisReplaySubsystem_GetRecordingDemoCurrentTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_GetRecordingDemoCurrentTime;
 
 // Function JarvisReplay.JarvisReplaySubsystem.GetRecordingReplayID
 // 0x0010 (0x0010 - 0x0000)
@@ -154,9 +122,7 @@ struct JarvisReplaySubsystem_GetRecordingReplayID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_GetRecordingReplayID) == 0x000008, "Wrong alignment on JarvisReplaySubsystem_GetRecordingReplayID");
-static_assert(sizeof(JarvisReplaySubsystem_GetRecordingReplayID) == 0x000010, "Wrong size on JarvisReplaySubsystem_GetRecordingReplayID");
-static_assert(offsetof(JarvisReplaySubsystem_GetRecordingReplayID, ReturnValue) == 0x000000, "Member 'JarvisReplaySubsystem_GetRecordingReplayID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_GetRecordingReplayID;
 
 // Function JarvisReplay.JarvisReplaySubsystem.IsInGameRecord
 // 0x0001 (0x0001 - 0x0000)
@@ -165,9 +131,7 @@ struct JarvisReplaySubsystem_IsInGameRecord final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_IsInGameRecord) == 0x000001, "Wrong alignment on JarvisReplaySubsystem_IsInGameRecord");
-static_assert(sizeof(JarvisReplaySubsystem_IsInGameRecord) == 0x000001, "Wrong size on JarvisReplaySubsystem_IsInGameRecord");
-static_assert(offsetof(JarvisReplaySubsystem_IsInGameRecord, ReturnValue) == 0x000000, "Member 'JarvisReplaySubsystem_IsInGameRecord::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_IsInGameRecord;
 
 // Function JarvisReplay.JarvisReplaySubsystem.IsJarvisRecording
 // 0x0001 (0x0001 - 0x0000)
@@ -176,9 +140,7 @@ struct JarvisReplaySubsystem_IsJarvisRecording final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_IsJarvisRecording) == 0x000001, "Wrong alignment on JarvisReplaySubsystem_IsJarvisRecording");
-static_assert(sizeof(JarvisReplaySubsystem_IsJarvisRecording) == 0x000001, "Wrong size on JarvisReplaySubsystem_IsJarvisRecording");
-static_assert(offsetof(JarvisReplaySubsystem_IsJarvisRecording, ReturnValue) == 0x000000, "Member 'JarvisReplaySubsystem_IsJarvisRecording::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_IsJarvisRecording;
 
 // Function JarvisReplay.JarvisReplaySubsystem.IsRecordingWidgetEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -187,9 +149,7 @@ struct JarvisReplaySubsystem_IsRecordingWidgetEvent final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JarvisReplaySubsystem_IsRecordingWidgetEvent) == 0x000001, "Wrong alignment on JarvisReplaySubsystem_IsRecordingWidgetEvent");
-static_assert(sizeof(JarvisReplaySubsystem_IsRecordingWidgetEvent) == 0x000001, "Wrong size on JarvisReplaySubsystem_IsRecordingWidgetEvent");
-static_assert(offsetof(JarvisReplaySubsystem_IsRecordingWidgetEvent, ReturnValue) == 0x000000, "Member 'JarvisReplaySubsystem_IsRecordingWidgetEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_JarvisReplaySubsystem_IsRecordingWidgetEvent;
 
 }
 

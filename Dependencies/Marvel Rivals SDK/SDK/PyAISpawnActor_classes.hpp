@@ -28,7 +28,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISpawnActor">();
+		STATIC_CLASS_IMPL("PyAISpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISpawnActor")
 	}
 	static class APyAISpawnActor* GetDefaultObj()
 	{
@@ -36,9 +40,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyAISpawnActor) == 0x000010, "Wrong alignment on APyAISpawnActor");
-static_assert(sizeof(APyAISpawnActor) == 0x0006F0, "Wrong size on APyAISpawnActor");
-static_assert(offsetof(APyAISpawnActor, Enabled) == 0x0006E0, "Member 'APyAISpawnActor::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_APyAISpawnActor;
 
 }
 

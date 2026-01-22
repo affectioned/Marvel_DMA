@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyCheckLocationIsValid">();
+		STATIC_CLASS_IMPL("BTS_PyCheckLocationIsValid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyCheckLocationIsValid")
 	}
 	static class UBTS_PyCheckLocationIsValid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyCheckLocationIsValid>();
 	}
 };
-static_assert(alignof(UBTS_PyCheckLocationIsValid) == 0x000008, "Wrong alignment on UBTS_PyCheckLocationIsValid");
-static_assert(sizeof(UBTS_PyCheckLocationIsValid) == 0x000108, "Wrong size on UBTS_PyCheckLocationIsValid");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, NavCheckExtent) == 0x0000A8, "Member 'UBTS_PyCheckLocationIsValid::NavCheckExtent' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, NavCheckOffsetZ) == 0x0000C0, "Member 'UBTS_PyCheckLocationIsValid::NavCheckOffsetZ' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, TryingExitState) == 0x0000C8, "Member 'UBTS_PyCheckLocationIsValid::TryingExitState' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, LeaveMeshTolerance) == 0x0000F8, "Member 'UBTS_PyCheckLocationIsValid::LeaveMeshTolerance' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, LowSpeedTolerance) == 0x0000FC, "Member 'UBTS_PyCheckLocationIsValid::LowSpeedTolerance' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckLocationIsValid, ShutSpeedAndSpawnPointCheck) == 0x000100, "Member 'UBTS_PyCheckLocationIsValid::ShutSpeedAndSpawnPointCheck' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyCheckLocationIsValid;
 
 }
 

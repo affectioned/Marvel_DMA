@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GMCmd_BtnTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GMCmd_BtnTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GMCmd_BtnTips_C")
 	}
 	static class UWBP_GMCmd_BtnTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GMCmd_BtnTips_C>();
 	}
 };
-static_assert(alignof(UWBP_GMCmd_BtnTips_C) == 0x000008, "Wrong alignment on UWBP_GMCmd_BtnTips_C");
-static_assert(sizeof(UWBP_GMCmd_BtnTips_C) == 0x0003D0, "Wrong size on UWBP_GMCmd_BtnTips_C");
-static_assert(offsetof(UWBP_GMCmd_BtnTips_C, MarvelImage_442) == 0x0003B8, "Member 'UWBP_GMCmd_BtnTips_C::MarvelImage_442' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_BtnTips_C, SizeBox_CMD) == 0x0003C0, "Member 'UWBP_GMCmd_BtnTips_C::SizeBox_CMD' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_BtnTips_C, Text_Tips) == 0x0003C8, "Member 'UWBP_GMCmd_BtnTips_C::Text_Tips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GMCmd_BtnTips_C;
 
 }
 

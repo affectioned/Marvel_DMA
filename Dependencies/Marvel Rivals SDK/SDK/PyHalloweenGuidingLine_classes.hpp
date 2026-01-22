@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenGuidingLine">();
+		STATIC_CLASS_IMPL("PyHalloweenGuidingLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenGuidingLine")
 	}
 	static class APyHalloweenGuidingLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenGuidingLine>();
 	}
 };
-static_assert(alignof(APyHalloweenGuidingLine) == 0x000010, "Wrong alignment on APyHalloweenGuidingLine");
-static_assert(sizeof(APyHalloweenGuidingLine) == 0x0006F0, "Wrong size on APyHalloweenGuidingLine");
-static_assert(offsetof(APyHalloweenGuidingLine, State) == 0x0006E8, "Member 'APyHalloweenGuidingLine::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenGuidingLine;
 
 }
 

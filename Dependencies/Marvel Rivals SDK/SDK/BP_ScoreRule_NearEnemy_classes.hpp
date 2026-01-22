@@ -23,15 +23,18 @@ class UBP_ScoreRule_NearEnemy_C final : public UAIScoreModuleRule
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ScoreRule_NearEnemy_C">();
+		BP_STATIC_CLASS_IMPL("BP_ScoreRule_NearEnemy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ScoreRule_NearEnemy_C")
 	}
 	static class UBP_ScoreRule_NearEnemy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ScoreRule_NearEnemy_C>();
 	}
 };
-static_assert(alignof(UBP_ScoreRule_NearEnemy_C) == 0x000008, "Wrong alignment on UBP_ScoreRule_NearEnemy_C");
-static_assert(sizeof(UBP_ScoreRule_NearEnemy_C) == 0x000060, "Wrong size on UBP_ScoreRule_NearEnemy_C");
+DUMPER7_ASSERTS_UBP_ScoreRule_NearEnemy_C;
 
 }
 

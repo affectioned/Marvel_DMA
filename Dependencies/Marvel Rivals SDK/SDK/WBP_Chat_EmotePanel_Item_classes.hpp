@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ChatInputEmote_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_ChatInputEmote_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Chat_EmotePanel_Item.WBP_Chat_EmotePanel_Item_C
-// 0x0010 (0x05E8 - 0x05D8)
+// 0x0010 (0x05F0 - 0x05E0)
 class UWBP_Chat_EmotePanel_Item_C final : public UPyWidget_ChatEmoteBtnItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Common_Item_V2_C*                  WBP_Common_Item_V2;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void OnListItemObjectSet(class UObject* ListItemObject);
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_EmotePanel_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_EmotePanel_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_EmotePanel_Item_C")
 	}
 	static class UWBP_Chat_EmotePanel_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_EmotePanel_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_EmotePanel_Item_C) == 0x000008, "Wrong alignment on UWBP_Chat_EmotePanel_Item_C");
-static_assert(sizeof(UWBP_Chat_EmotePanel_Item_C) == 0x0005E8, "Wrong size on UWBP_Chat_EmotePanel_Item_C");
-static_assert(offsetof(UWBP_Chat_EmotePanel_Item_C, UberGraphFrame) == 0x0005D8, "Member 'UWBP_Chat_EmotePanel_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_EmotePanel_Item_C, WBP_Common_Item_V2) == 0x0005E0, "Member 'UWBP_Chat_EmotePanel_Item_C::WBP_Common_Item_V2' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_EmotePanel_Item_C;
 
 }
 

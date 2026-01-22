@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyActor_BattlePass_LinkPoint_Crystal.PyActor_BattlePass_LinkPoint_Crystal
-// 0x0030 (0x0710 - 0x06E0)
+// 0x00D0 (0x07B0 - 0x06E0)
 class APyActor_BattlePass_LinkPoint_Crystal final : public AActor
 {
 public:
@@ -29,6 +29,8 @@ public:
 	class UMarvelWidgetComponent*                 WidgetComp_Crystal;                                // 0x06F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMarvelWidgetComponent*                 WidgetComp_Regain;                                 // 0x0700(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMarvelWidgetComponent*                 WidgetComp_Interaction;                            // 0x0708(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, bool>                     NiagaraParams_Buy;                                 // 0x0710(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, bool>                     NiagaraParams_NotBuy;                              // 0x0760(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -40,21 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActor_BattlePass_LinkPoint_Crystal">();
+		STATIC_CLASS_IMPL("PyActor_BattlePass_LinkPoint_Crystal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActor_BattlePass_LinkPoint_Crystal")
 	}
 	static class APyActor_BattlePass_LinkPoint_Crystal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyActor_BattlePass_LinkPoint_Crystal>();
 	}
 };
-static_assert(alignof(APyActor_BattlePass_LinkPoint_Crystal) == 0x000010, "Wrong alignment on APyActor_BattlePass_LinkPoint_Crystal");
-static_assert(sizeof(APyActor_BattlePass_LinkPoint_Crystal) == 0x000710, "Wrong size on APyActor_BattlePass_LinkPoint_Crystal");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, DefaultScene) == 0x0006E0, "Member 'APyActor_BattlePass_LinkPoint_Crystal::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, NiagaraComp_Crystal) == 0x0006E8, "Member 'APyActor_BattlePass_LinkPoint_Crystal::NiagaraComp_Crystal' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, NiagaraComp_Foundation) == 0x0006F0, "Member 'APyActor_BattlePass_LinkPoint_Crystal::NiagaraComp_Foundation' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, WidgetComp_Crystal) == 0x0006F8, "Member 'APyActor_BattlePass_LinkPoint_Crystal::WidgetComp_Crystal' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, WidgetComp_Regain) == 0x000700, "Member 'APyActor_BattlePass_LinkPoint_Crystal::WidgetComp_Regain' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_LinkPoint_Crystal, WidgetComp_Interaction) == 0x000708, "Member 'APyActor_BattlePass_LinkPoint_Crystal::WidgetComp_Interaction' has a wrong offset!");
+DUMPER7_ASSERTS_APyActor_BattlePass_LinkPoint_Crystal;
 
 }
 

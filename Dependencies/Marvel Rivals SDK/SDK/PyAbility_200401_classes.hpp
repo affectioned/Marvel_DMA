@@ -31,27 +31,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_200401">();
+		STATIC_CLASS_IMPL("PyConfig_200401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_200401")
 	}
 	static class UPyConfig_200401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_200401>();
 	}
 };
-static_assert(alignof(UPyConfig_200401) == 0x000008, "Wrong alignment on UPyConfig_200401");
-static_assert(sizeof(UPyConfig_200401) == 0x000128, "Wrong size on UPyConfig_200401");
-static_assert(offsetof(UPyConfig_200401, AscendModeID) == 0x0000F8, "Member 'UPyConfig_200401::AscendModeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200401, CustomActiveUserSetting) == 0x0000FC, "Member 'UPyConfig_200401::CustomActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200401, MinFlyTime) == 0x000124, "Member 'UPyConfig_200401::MinFlyTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_200401;
 
 // PythonClass PyAbility_200401.PyAbility_200401
-// 0x00B8 (0x2BC8 - 0x2B10)
+// 0x00B8 (0x2C18 - 0x2B60)
 class UPyAbility_200401 : public UAbility_200401
 {
 public:
-	struct FGameplayTagQuery                      BlockAbilityQuery;                                 // 0x2B10(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  SpecialBlockAbilityTags;                           // 0x2B58(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMarvelGameplayEffectTemplate> GravityZoneEfectTemplate;                       // 0x2BC0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagQuery                      BlockAbilityQuery;                                 // 0x2B60(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SpecialBlockAbilityTags;                           // 0x2BA8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMarvelGameplayEffectTemplate> GravityZoneEfectTemplate;                       // 0x2C10(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -66,18 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200401">();
+		STATIC_CLASS_IMPL("PyAbility_200401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200401")
 	}
 	static class UPyAbility_200401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200401>();
 	}
 };
-static_assert(alignof(UPyAbility_200401) == 0x000008, "Wrong alignment on UPyAbility_200401");
-static_assert(sizeof(UPyAbility_200401) == 0x002BC8, "Wrong size on UPyAbility_200401");
-static_assert(offsetof(UPyAbility_200401, BlockAbilityQuery) == 0x002B10, "Member 'UPyAbility_200401::BlockAbilityQuery' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200401, SpecialBlockAbilityTags) == 0x002B58, "Member 'UPyAbility_200401::SpecialBlockAbilityTags' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200401, GravityZoneEfectTemplate) == 0x002BC0, "Member 'UPyAbility_200401::GravityZoneEfectTemplate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200401;
 
 }
 

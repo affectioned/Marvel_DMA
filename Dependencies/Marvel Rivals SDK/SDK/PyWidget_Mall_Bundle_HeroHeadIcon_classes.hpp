@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Bundle_HeroHeadIcon.PyWidget_Mall_Bundle_HeroHeadIcon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mall_Bundle_HeroHeadIcon final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_HeroHeadIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_HeroHeadIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_HeroHeadIcon")
 	}
 	static class UPyWidget_Mall_Bundle_HeroHeadIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_HeroHeadIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_HeroHeadIcon) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_HeroHeadIcon");
-static_assert(sizeof(UPyWidget_Mall_Bundle_HeroHeadIcon) == 0x0005C0, "Wrong size on UPyWidget_Mall_Bundle_HeroHeadIcon");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_HeroHeadIcon;
 
 }
 

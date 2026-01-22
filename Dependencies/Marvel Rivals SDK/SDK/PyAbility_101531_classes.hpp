@@ -23,15 +23,18 @@ class UPyCue_Ability_Instant_10153101 final : public UCue_Ability_Instant_101531
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10153101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10153101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10153101")
 	}
 	static class UPyCue_Ability_Instant_10153101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10153101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10153101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10153101");
-static_assert(sizeof(UPyCue_Ability_Instant_10153101) == 0x0003F8, "Wrong size on UPyCue_Ability_Instant_10153101");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10153101;
 
 }
 

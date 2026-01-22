@@ -23,15 +23,18 @@ class UAIAbilityExitStage_10477102_C final : public UAIAbilityExitStageLogic_Bin
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_10477102_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_10477102_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_10477102_C")
 	}
 	static class UAIAbilityExitStage_10477102_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_10477102_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_10477102_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_10477102_C");
-static_assert(sizeof(UAIAbilityExitStage_10477102_C) == 0x000050, "Wrong size on UAIAbilityExitStage_10477102_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_10477102_C;
 
 }
 

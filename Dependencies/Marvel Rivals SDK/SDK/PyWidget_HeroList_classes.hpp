@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroList.PyWidget_HeroList
-// 0x0148 (0x0750 - 0x0608)
+// 0x0148 (0x0758 - 0x0610)
 class UPyWidget_HeroList final : public UPyWidget_LobbyPageList
 {
 public:
-	class UUserWidget*                            HeroTeamFilter;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        RotateGuideTipsStyle;                              // 0x0610(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         HeroBtnShownTime;                                  // 0x0730(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_734[0x4];                                      // 0x0734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ShowActorVisible;                          // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ShowActorInvisible;                        // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            HeroTeamFilter;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        RotateGuideTipsStyle;                              // 0x0618(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         HeroBtnShownTime;                                  // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_73C[0x4];                                      // 0x073C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ShowActorVisible;                          // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ShowActorInvisible;                        // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,21 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroList">();
+		STATIC_CLASS_IMPL("PyWidget_HeroList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroList")
 	}
 	static class UPyWidget_HeroList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroList>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroList) == 0x000008, "Wrong alignment on UPyWidget_HeroList");
-static_assert(sizeof(UPyWidget_HeroList) == 0x000750, "Wrong size on UPyWidget_HeroList");
-static_assert(offsetof(UPyWidget_HeroList, HeroTeamFilter) == 0x000608, "Member 'UPyWidget_HeroList::HeroTeamFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList, RotateGuideTipsStyle) == 0x000610, "Member 'UPyWidget_HeroList::RotateGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList, HeroBtnShownTime) == 0x000730, "Member 'UPyWidget_HeroList::HeroBtnShownTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList, HeroList_CardUnit) == 0x000738, "Member 'UPyWidget_HeroList::HeroList_CardUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList, AkEvent_ShowActorVisible) == 0x000740, "Member 'UPyWidget_HeroList::AkEvent_ShowActorVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList, AkEvent_ShowActorInvisible) == 0x000748, "Member 'UPyWidget_HeroList::AkEvent_ShowActorInvisible' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroList;
 
 }
 

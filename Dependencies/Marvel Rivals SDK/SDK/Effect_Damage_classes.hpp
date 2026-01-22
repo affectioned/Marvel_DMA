@@ -23,15 +23,18 @@ class UEffect_Damage_C final : public UMarvelGameplayEffectDamage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Effect_Damage_C">();
+		BP_STATIC_CLASS_IMPL("Effect_Damage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Effect_Damage_C")
 	}
 	static class UEffect_Damage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffect_Damage_C>();
 	}
 };
-static_assert(alignof(UEffect_Damage_C) == 0x000008, "Wrong alignment on UEffect_Damage_C");
-static_assert(sizeof(UEffect_Damage_C) == 0x001778, "Wrong size on UEffect_Damage_C");
+DUMPER7_ASSERTS_UEffect_Damage_C;
 
 }
 

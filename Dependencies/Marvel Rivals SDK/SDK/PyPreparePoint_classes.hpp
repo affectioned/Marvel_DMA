@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPreparePoint">();
+		STATIC_CLASS_IMPL("PyPreparePoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPreparePoint")
 	}
 	static class APyPreparePoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPreparePoint>();
 	}
 };
-static_assert(alignof(APyPreparePoint) == 0x000010, "Wrong alignment on APyPreparePoint");
-static_assert(sizeof(APyPreparePoint) == 0x0006F0, "Wrong size on APyPreparePoint");
-static_assert(offsetof(APyPreparePoint, RallyState) == 0x0006E0, "Member 'APyPreparePoint::RallyState' has a wrong offset!");
-static_assert(offsetof(APyPreparePoint, WaveIndex) == 0x0006E4, "Member 'APyPreparePoint::WaveIndex' has a wrong offset!");
+DUMPER7_ASSERTS_APyPreparePoint;
 
 }
 

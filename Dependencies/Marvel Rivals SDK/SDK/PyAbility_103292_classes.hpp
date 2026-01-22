@@ -17,27 +17,6 @@
 namespace SDK
 {
 
-// PythonClass PyAbility_103292.PyTraceComponent_10329201
-// 0x0000 (0x2200 - 0x2200)
-class UPyTraceComponent_10329201 final : public UMarvelAgentTraceComponent
-{
-public:
-	void K2_Initialize();
-	void HandleTrace(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyTraceComponent_10329201">();
-	}
-	static class UPyTraceComponent_10329201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyTraceComponent_10329201>();
-	}
-};
-static_assert(alignof(UPyTraceComponent_10329201) == 0x000010, "Wrong alignment on UPyTraceComponent_10329201");
-static_assert(sizeof(UPyTraceComponent_10329201) == 0x002200, "Wrong size on UPyTraceComponent_10329201");
-
 // PythonClass PyAbility_103292.PyConfig_103292
 // 0x0008 (0x00A0 - 0x0098)
 class UPyConfig_103292 final : public UMarvelAbilityConfig
@@ -48,19 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103292">();
+		STATIC_CLASS_IMPL("PyConfig_103292")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103292")
 	}
 	static class UPyConfig_103292* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103292>();
 	}
 };
-static_assert(alignof(UPyConfig_103292) == 0x000008, "Wrong alignment on UPyConfig_103292");
-static_assert(sizeof(UPyConfig_103292) == 0x0000A0, "Wrong size on UPyConfig_103292");
-static_assert(offsetof(UPyConfig_103292, TraceTime) == 0x000098, "Member 'UPyConfig_103292::TraceTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103292;
 
 // PythonClass PyAbility_103292.PyAbility_103292
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103292 : public UAbility_108
 {
 public:
@@ -69,31 +50,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103292">();
+		STATIC_CLASS_IMPL("PyAbility_103292")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103292")
 	}
 	static class UPyAbility_103292* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103292>();
 	}
 };
-static_assert(alignof(UPyAbility_103292) == 0x000008, "Wrong alignment on UPyAbility_103292");
-static_assert(sizeof(UPyAbility_103292) == 0x0029F8, "Wrong size on UPyAbility_103292");
+DUMPER7_ASSERTS_UPyAbility_103292;
 
 // PythonClass PyAbility_103292.PyProjectile_10329201
-// 0x00B0 (0x3C40 - 0x3B90)
+// 0x00B0 (0x3F50 - 0x3EA0)
 class APyProjectile_10329201 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ApplyBuffID;                                       // 0x3B90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B94[0x4];                                     // 0x3B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UProjectileHomingComponent*             HomingComponent;                                   // 0x3B98(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           StatusBreakConnect;                                // 0x3BA0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3BAC[0x4];                                     // 0x3BAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TagToResetTarget;                                  // 0x3BB0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class AActor*                                 HomingActor;                                       // 0x3C18(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* HomingTarget)> OnHomingTargetChanged;                // 0x3C20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnForceEndAgentTask;                               // 0x3C30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ApplyBuffID;                                       // 0x3EA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EA4[0x4];                                     // 0x3EA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UProjectileHomingComponent*             HomingComponent;                                   // 0x3EA8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           StatusBreakConnect;                                // 0x3EB0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EBC[0x4];                                     // 0x3EBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TagToResetTarget;                                  // 0x3EC0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class AActor*                                 HomingActor;                                       // 0x3F28(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* HomingTarget)> OnHomingTargetChanged;                // 0x3F30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnForceEndAgentTask;                               // 0x3F40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -108,33 +92,53 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10329201">();
+		STATIC_CLASS_IMPL("PyProjectile_10329201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10329201")
 	}
 	static class APyProjectile_10329201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10329201>();
 	}
 };
-static_assert(alignof(APyProjectile_10329201) == 0x000010, "Wrong alignment on APyProjectile_10329201");
-static_assert(sizeof(APyProjectile_10329201) == 0x003C40, "Wrong size on APyProjectile_10329201");
-static_assert(offsetof(APyProjectile_10329201, ApplyBuffID) == 0x003B90, "Member 'APyProjectile_10329201::ApplyBuffID' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, HomingComponent) == 0x003B98, "Member 'APyProjectile_10329201::HomingComponent' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, StatusBreakConnect) == 0x003BA0, "Member 'APyProjectile_10329201::StatusBreakConnect' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, TagToResetTarget) == 0x003BB0, "Member 'APyProjectile_10329201::TagToResetTarget' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, HomingActor) == 0x003C18, "Member 'APyProjectile_10329201::HomingActor' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, OnHomingTargetChanged) == 0x003C20, "Member 'APyProjectile_10329201::OnHomingTargetChanged' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10329201, OnForceEndAgentTask) == 0x003C30, "Member 'APyProjectile_10329201::OnForceEndAgentTask' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10329201;
+
+// PythonClass PyAbility_103292.PyTraceComponent_10329201
+// 0x0000 (0x2600 - 0x2600)
+class UPyTraceComponent_10329201 final : public UMarvelAgentTraceComponent
+{
+public:
+	void K2_Initialize();
+	void HandleTrace(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyTraceComponent_10329201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10329201")
+	}
+	static class UPyTraceComponent_10329201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyTraceComponent_10329201>();
+	}
+};
+DUMPER7_ASSERTS_UPyTraceComponent_10329201;
 
 // PythonClass PyAbility_103292.PyCueNotify_Projectile_Loop_10329201
-// 0x0030 (0x1160 - 0x1130)
+// 0x0030 (0x1170 - 0x1140)
 class APyCueNotify_Projectile_Loop_10329201 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         JumpDistance;                                      // 0x1130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1134[0x4];                                     // 0x1134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnHit;                                             // 0x1138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnJump;                                            // 0x1148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         JumpDistance;                                      // 0x1140(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1144[0x4];                                     // 0x1144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnHit;                                             // 0x1148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnJump;                                            // 0x1158(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -149,18 +153,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCueNotify_Projectile_Loop_10329201">();
+		STATIC_CLASS_IMPL("PyCueNotify_Projectile_Loop_10329201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCueNotify_Projectile_Loop_10329201")
 	}
 	static class APyCueNotify_Projectile_Loop_10329201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCueNotify_Projectile_Loop_10329201>();
 	}
 };
-static_assert(alignof(APyCueNotify_Projectile_Loop_10329201) == 0x000010, "Wrong alignment on APyCueNotify_Projectile_Loop_10329201");
-static_assert(sizeof(APyCueNotify_Projectile_Loop_10329201) == 0x001160, "Wrong size on APyCueNotify_Projectile_Loop_10329201");
-static_assert(offsetof(APyCueNotify_Projectile_Loop_10329201, JumpDistance) == 0x001130, "Member 'APyCueNotify_Projectile_Loop_10329201::JumpDistance' has a wrong offset!");
-static_assert(offsetof(APyCueNotify_Projectile_Loop_10329201, OnHit) == 0x001138, "Member 'APyCueNotify_Projectile_Loop_10329201::OnHit' has a wrong offset!");
-static_assert(offsetof(APyCueNotify_Projectile_Loop_10329201, OnJump) == 0x001148, "Member 'APyCueNotify_Projectile_Loop_10329201::OnJump' has a wrong offset!");
+DUMPER7_ASSERTS_APyCueNotify_Projectile_Loop_10329201;
 
 }
 

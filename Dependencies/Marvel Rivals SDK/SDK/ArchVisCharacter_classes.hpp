@@ -35,59 +35,49 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ArchVisCharacter">();
+		STATIC_CLASS_IMPL("ArchVisCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArchVisCharacter")
 	}
 	static class AArchVisCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AArchVisCharacter>();
 	}
 };
-static_assert(alignof(AArchVisCharacter) == 0x000010, "Wrong alignment on AArchVisCharacter");
-static_assert(sizeof(AArchVisCharacter) == 0x000E00, "Wrong size on AArchVisCharacter");
-static_assert(offsetof(AArchVisCharacter, LookUpAxisName) == 0x000D90, "Member 'AArchVisCharacter::LookUpAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, LookUpAtRateAxisName) == 0x000DA0, "Member 'AArchVisCharacter::LookUpAtRateAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, TurnAxisName) == 0x000DB0, "Member 'AArchVisCharacter::TurnAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, TurnAtRateAxisName) == 0x000DC0, "Member 'AArchVisCharacter::TurnAtRateAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MoveForwardAxisName) == 0x000DD0, "Member 'AArchVisCharacter::MoveForwardAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MoveRightAxisName) == 0x000DE0, "Member 'AArchVisCharacter::MoveRightAxisName' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MouseSensitivityScale_Pitch) == 0x000DF0, "Member 'AArchVisCharacter::MouseSensitivityScale_Pitch' has a wrong offset!");
-static_assert(offsetof(AArchVisCharacter, MouseSensitivityScale_Yaw) == 0x000DF4, "Member 'AArchVisCharacter::MouseSensitivityScale_Yaw' has a wrong offset!");
+DUMPER7_ASSERTS_AArchVisCharacter;
 
 // Class ArchVisCharacter.ArchVisCharMovementComponent
-// 0x0090 (0x1F60 - 0x1ED0)
+// 0x0090 (0x1FC0 - 0x1F30)
 class UArchVisCharMovementComponent final : public UCharacterMovementComponent
 {
 public:
-	struct FRotator                               RotationalAcceleration;                            // 0x1EC8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FRotator                               RotationalDeceleration;                            // 0x1EE0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FRotator                               MaxRotationalVelocity;                             // 0x1EF8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         MinPitch;                                          // 0x1F10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxPitch;                                          // 0x1F14(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WalkingFriction;                                   // 0x1F18(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WalkingSpeed;                                      // 0x1F1C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WalkingAcceleration;                               // 0x1F20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F24[0x3C];                                    // 0x1F24(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FRotator                               RotationalAcceleration;                            // 0x1F28(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               RotationalDeceleration;                            // 0x1F40(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               MaxRotationalVelocity;                             // 0x1F58(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         MinPitch;                                          // 0x1F70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxPitch;                                          // 0x1F74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WalkingFriction;                                   // 0x1F78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WalkingSpeed;                                      // 0x1F7C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WalkingAcceleration;                               // 0x1F80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F84[0x3C];                                    // 0x1F84(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ArchVisCharMovementComponent">();
+		STATIC_CLASS_IMPL("ArchVisCharMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ArchVisCharMovementComponent")
 	}
 	static class UArchVisCharMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UArchVisCharMovementComponent>();
 	}
 };
-static_assert(alignof(UArchVisCharMovementComponent) == 0x000010, "Wrong alignment on UArchVisCharMovementComponent");
-static_assert(sizeof(UArchVisCharMovementComponent) == 0x001F60, "Wrong size on UArchVisCharMovementComponent");
-static_assert(offsetof(UArchVisCharMovementComponent, RotationalAcceleration) == 0x001EC8, "Member 'UArchVisCharMovementComponent::RotationalAcceleration' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, RotationalDeceleration) == 0x001EE0, "Member 'UArchVisCharMovementComponent::RotationalDeceleration' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MaxRotationalVelocity) == 0x001EF8, "Member 'UArchVisCharMovementComponent::MaxRotationalVelocity' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MinPitch) == 0x001F10, "Member 'UArchVisCharMovementComponent::MinPitch' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, MaxPitch) == 0x001F14, "Member 'UArchVisCharMovementComponent::MaxPitch' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingFriction) == 0x001F18, "Member 'UArchVisCharMovementComponent::WalkingFriction' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingSpeed) == 0x001F1C, "Member 'UArchVisCharMovementComponent::WalkingSpeed' has a wrong offset!");
-static_assert(offsetof(UArchVisCharMovementComponent, WalkingAcceleration) == 0x001F20, "Member 'UArchVisCharMovementComponent::WalkingAcceleration' has a wrong offset!");
+DUMPER7_ASSERTS_UArchVisCharMovementComponent;
 
 }
 

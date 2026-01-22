@@ -56,10 +56,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0020)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            KeyBrush;                                          // 0x0020(0x00D0)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeyBrushConfiguration) == 0x000010, "Wrong alignment on FCommonInputKeyBrushConfiguration");
-static_assert(sizeof(FCommonInputKeyBrushConfiguration) == 0x0000F0, "Wrong size on FCommonInputKeyBrushConfiguration");
-static_assert(offsetof(FCommonInputKeyBrushConfiguration, Key) == 0x000000, "Member 'FCommonInputKeyBrushConfiguration::Key' has a wrong offset!");
-static_assert(offsetof(FCommonInputKeyBrushConfiguration, KeyBrush) == 0x000020, "Member 'FCommonInputKeyBrushConfiguration::KeyBrush' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputKeyBrushConfiguration;
 
 // ScriptStruct CommonInput.CommonInputKeySetBrushConfiguration
 // 0x00E0 (0x00E0 - 0x0000)
@@ -69,10 +66,7 @@ public:
 	TArray<struct FKey>                           Keys;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            KeyBrush;                                          // 0x0010(0x00D0)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeySetBrushConfiguration) == 0x000010, "Wrong alignment on FCommonInputKeySetBrushConfiguration");
-static_assert(sizeof(FCommonInputKeySetBrushConfiguration) == 0x0000E0, "Wrong size on FCommonInputKeySetBrushConfiguration");
-static_assert(offsetof(FCommonInputKeySetBrushConfiguration, Keys) == 0x000000, "Member 'FCommonInputKeySetBrushConfiguration::Keys' has a wrong offset!");
-static_assert(offsetof(FCommonInputKeySetBrushConfiguration, KeyBrush) == 0x000010, "Member 'FCommonInputKeySetBrushConfiguration::KeyBrush' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputKeySetBrushConfiguration;
 
 // ScriptStruct CommonInput.InputDeviceIdentifierPair
 // 0x0020 (0x0020 - 0x0000)
@@ -83,10 +77,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 HardwareDeviceIdentifier;                          // 0x0010(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInputDeviceIdentifierPair) == 0x000008, "Wrong alignment on FInputDeviceIdentifierPair");
-static_assert(sizeof(FInputDeviceIdentifierPair) == 0x000020, "Wrong size on FInputDeviceIdentifierPair");
-static_assert(offsetof(FInputDeviceIdentifierPair, InputDeviceName) == 0x000000, "Member 'FInputDeviceIdentifierPair::InputDeviceName' has a wrong offset!");
-static_assert(offsetof(FInputDeviceIdentifierPair, HardwareDeviceIdentifier) == 0x000010, "Member 'FInputDeviceIdentifierPair::HardwareDeviceIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_FInputDeviceIdentifierPair;
 
 // ScriptStruct CommonInput.InputHoldData
 // 0x0008 (0x0008 - 0x0000)
@@ -96,10 +87,7 @@ public:
 	float                                         HoldTime;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HoldRollbackTime;                                  // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInputHoldData) == 0x000004, "Wrong alignment on FInputHoldData");
-static_assert(sizeof(FInputHoldData) == 0x000008, "Wrong size on FInputHoldData");
-static_assert(offsetof(FInputHoldData, HoldTime) == 0x000000, "Member 'FInputHoldData::HoldTime' has a wrong offset!");
-static_assert(offsetof(FInputHoldData, HoldRollbackTime) == 0x000004, "Member 'FInputHoldData::HoldRollbackTime' has a wrong offset!");
+DUMPER7_ASSERTS_FInputHoldData;
 
 // ScriptStruct CommonInput.CommonInputPlatformBaseData
 // 0x0040 (0x0040 - 0x0000)
@@ -118,16 +106,7 @@ public:
 	TArray<TSoftClassPtr<class UClass>>           ControllerData;                                    // 0x0020(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;                 // 0x0030(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FCommonInputPlatformBaseData) == 0x000008, "Wrong alignment on FCommonInputPlatformBaseData");
-static_assert(sizeof(FCommonInputPlatformBaseData) == 0x000040, "Wrong size on FCommonInputPlatformBaseData");
-static_assert(offsetof(FCommonInputPlatformBaseData, DefaultInputType) == 0x000008, "Member 'FCommonInputPlatformBaseData::DefaultInputType' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, bSupportsMouseAndKeyboard) == 0x000009, "Member 'FCommonInputPlatformBaseData::bSupportsMouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, bSupportsGamepad) == 0x00000A, "Member 'FCommonInputPlatformBaseData::bSupportsGamepad' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, DefaultGamepadName) == 0x00000C, "Member 'FCommonInputPlatformBaseData::DefaultGamepadName' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, bCanChangeGamepadType) == 0x000018, "Member 'FCommonInputPlatformBaseData::bCanChangeGamepadType' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, bSupportsTouch) == 0x000019, "Member 'FCommonInputPlatformBaseData::bSupportsTouch' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, ControllerData) == 0x000020, "Member 'FCommonInputPlatformBaseData::ControllerData' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformBaseData, ControllerDataClasses) == 0x000030, "Member 'FCommonInputPlatformBaseData::ControllerDataClasses' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputPlatformBaseData;
 
 }
 

@@ -25,18 +25,21 @@ class UPyWidget_Clan_TrophyData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_TrophyData">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_TrophyData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_TrophyData")
 	}
 	static class UPyWidget_Clan_TrophyData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_TrophyData>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_TrophyData) == 0x000008, "Wrong alignment on UPyWidget_Clan_TrophyData");
-static_assert(sizeof(UPyWidget_Clan_TrophyData) == 0x000030, "Wrong size on UPyWidget_Clan_TrophyData");
+DUMPER7_ASSERTS_UPyWidget_Clan_TrophyData;
 
 // PythonClass PyWidget_Secondary_ClanEditTrophy.PyWidget_ClanTrophyItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_ClanTrophyItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -47,18 +50,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanTrophyItem">();
+		STATIC_CLASS_IMPL("PyWidget_ClanTrophyItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanTrophyItem")
 	}
 	static class UPyWidget_ClanTrophyItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanTrophyItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanTrophyItem) == 0x000010, "Wrong alignment on UPyWidget_ClanTrophyItem");
-static_assert(sizeof(UPyWidget_ClanTrophyItem) == 0x0008C0, "Wrong size on UPyWidget_ClanTrophyItem");
+DUMPER7_ASSERTS_UPyWidget_ClanTrophyItem;
 
 // PythonClass PyWidget_Secondary_ClanEditTrophy.PyWidget_Secondary_ClanTrophyEdit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ClanTrophyEdit final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanTrophyEdit">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanTrophyEdit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanTrophyEdit")
 	}
 	static class UPyWidget_Secondary_ClanTrophyEdit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanTrophyEdit>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanTrophyEdit) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanTrophyEdit");
-static_assert(sizeof(UPyWidget_Secondary_ClanTrophyEdit) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ClanTrophyEdit");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanTrophyEdit;
 
 }
 

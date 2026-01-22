@@ -23,9 +23,7 @@ struct PySpecialAreaFire_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaFire_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpecialAreaFire_ReceiveEndPlay");
-static_assert(sizeof(PySpecialAreaFire_ReceiveEndPlay) == 0x000001, "Wrong size on PySpecialAreaFire_ReceiveEndPlay");
-static_assert(offsetof(PySpecialAreaFire_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySpecialAreaFire_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaFire_ReceiveEndPlay;
 
 // PythonFunction PySpecialAreaFire.PySpecialAreaFire.SrvSetFireState
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PySpecialAreaFire_SrvSetFireState final
 public:
 	class FString                                 State_0;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaFire_SrvSetFireState) == 0x000008, "Wrong alignment on PySpecialAreaFire_SrvSetFireState");
-static_assert(sizeof(PySpecialAreaFire_SrvSetFireState) == 0x000010, "Wrong size on PySpecialAreaFire_SrvSetFireState");
-static_assert(offsetof(PySpecialAreaFire_SrvSetFireState, State_0) == 0x000000, "Member 'PySpecialAreaFire_SrvSetFireState::State_0' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaFire_SrvSetFireState;
 
 }
 

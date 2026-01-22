@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_KeyPressPrompt.WBP_Common_KeyPressPrompt_C
-// 0x0018 (0x0490 - 0x0478)
+// 0x0018 (0x0470 - 0x0458)
 class UWBP_Common_KeyPressPrompt_C final : public UCommonKeyPressPrompt
 {
 public:
-	class UWidgetAnimation*                       Anim_Normal_State;                                 // 0x0478(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Img_Key;                                           // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             NameSlot;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Normal_State;                                 // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Img_Key;                                           // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             NameSlot;                                          // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_KeyPressPrompt_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_KeyPressPrompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_KeyPressPrompt_C")
 	}
 	static class UWBP_Common_KeyPressPrompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_KeyPressPrompt_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_KeyPressPrompt_C) == 0x000008, "Wrong alignment on UWBP_Common_KeyPressPrompt_C");
-static_assert(sizeof(UWBP_Common_KeyPressPrompt_C) == 0x000490, "Wrong size on UWBP_Common_KeyPressPrompt_C");
-static_assert(offsetof(UWBP_Common_KeyPressPrompt_C, Anim_Normal_State) == 0x000478, "Member 'UWBP_Common_KeyPressPrompt_C::Anim_Normal_State' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_KeyPressPrompt_C, Img_Key) == 0x000480, "Member 'UWBP_Common_KeyPressPrompt_C::Img_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_KeyPressPrompt_C, NameSlot) == 0x000488, "Member 'UWBP_Common_KeyPressPrompt_C::NameSlot' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_KeyPressPrompt_C;
 
 }
 

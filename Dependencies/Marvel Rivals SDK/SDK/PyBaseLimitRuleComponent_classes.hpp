@@ -23,15 +23,18 @@ class UPyBaseLimitRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBaseLimitRuleComponent">();
+		STATIC_CLASS_IMPL("PyBaseLimitRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBaseLimitRuleComponent")
 	}
 	static class UPyBaseLimitRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBaseLimitRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBaseLimitRuleComponent) == 0x000008, "Wrong alignment on UPyBaseLimitRuleComponent");
-static_assert(sizeof(UPyBaseLimitRuleComponent) == 0x000108, "Wrong size on UPyBaseLimitRuleComponent");
+DUMPER7_ASSERTS_UPyBaseLimitRuleComponent;
 
 }
 

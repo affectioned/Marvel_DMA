@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft) == 0x000008, "Wrong alignment on PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft");
-static_assert(sizeof(PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft) == 0x000010, "Wrong size on PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft");
-static_assert(offsetof(PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_S3_1SeasonStory_Top_OnBtnRuleNavLeft;
 
 }
 

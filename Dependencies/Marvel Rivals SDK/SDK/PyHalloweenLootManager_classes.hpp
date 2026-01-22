@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -49,27 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenLootManager">();
+		STATIC_CLASS_IMPL("PyHalloweenLootManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenLootManager")
 	}
 	static class APyHalloweenLootManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenLootManager>();
 	}
 };
-static_assert(alignof(APyHalloweenLootManager) == 0x000010, "Wrong alignment on APyHalloweenLootManager");
-static_assert(sizeof(APyHalloweenLootManager) == 0x000940, "Wrong size on APyHalloweenLootManager");
-static_assert(offsetof(APyHalloweenLootManager, LootClass) == 0x000800, "Member 'APyHalloweenLootManager::LootClass' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, ClientLootClass) == 0x000808, "Member 'APyHalloweenLootManager::ClientLootClass' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, LootNiagaraMap) == 0x000810, "Member 'APyHalloweenLootManager::LootNiagaraMap' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, PickupRadiusDictance) == 0x000860, "Member 'APyHalloweenLootManager::PickupRadiusDictance' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, AttachDurationConfig) == 0x0008B0, "Member 'APyHalloweenLootManager::AttachDurationConfig' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, DistanceTimeFactor) == 0x0008B4, "Member 'APyHalloweenLootManager::DistanceTimeFactor' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, ItemBuffDict) == 0x0008B8, "Member 'APyHalloweenLootManager::ItemBuffDict' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, GoldAmount) == 0x000908, "Member 'APyHalloweenLootManager::GoldAmount' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, AbsorbDistance) == 0x00090C, "Member 'APyHalloweenLootManager::AbsorbDistance' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, AbsorbItems) == 0x000910, "Member 'APyHalloweenLootManager::AbsorbItems' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, IgnoreTags) == 0x000920, "Member 'APyHalloweenLootManager::IgnoreTags' has a wrong offset!");
-static_assert(offsetof(APyHalloweenLootManager, ServerLootActor) == 0x000930, "Member 'APyHalloweenLootManager::ServerLootActor' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenLootManager;
 
 }
 

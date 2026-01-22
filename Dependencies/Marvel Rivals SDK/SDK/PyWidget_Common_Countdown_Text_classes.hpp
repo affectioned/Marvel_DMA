@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Countdown_Text.PyWidget_Common_Roll_Text
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Common_Roll_Text final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_Roll;                                         // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnRollAnimFinished;                                // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_Roll;                                         // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnRollAnimFinished;                                // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
@@ -31,20 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Roll_Text">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Roll_Text")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Roll_Text")
 	}
 	static class UPyWidget_Common_Roll_Text* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Roll_Text>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Roll_Text) == 0x000008, "Wrong alignment on UPyWidget_Common_Roll_Text");
-static_assert(sizeof(UPyWidget_Common_Roll_Text) == 0x0005D8, "Wrong size on UPyWidget_Common_Roll_Text");
-static_assert(offsetof(UPyWidget_Common_Roll_Text, Anim_Roll) == 0x0005C0, "Member 'UPyWidget_Common_Roll_Text::Anim_Roll' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Roll_Text, OnRollAnimFinished) == 0x0005C8, "Member 'UPyWidget_Common_Roll_Text::OnRollAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Roll_Text;
 
 // PythonClass PyWidget_Common_Countdown_Text.PyWidget_Common_Countdown_Text
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Common_Countdown_Text final : public UPyMarvelUserWidget
 {
 public:
@@ -53,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Countdown_Text">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Countdown_Text")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Countdown_Text")
 	}
 	static class UPyWidget_Common_Countdown_Text* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Countdown_Text>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Countdown_Text) == 0x000008, "Wrong alignment on UPyWidget_Common_Countdown_Text");
-static_assert(sizeof(UPyWidget_Common_Countdown_Text) == 0x0005C0, "Wrong size on UPyWidget_Common_Countdown_Text");
+DUMPER7_ASSERTS_UPyWidget_Common_Countdown_Text;
 
 }
 

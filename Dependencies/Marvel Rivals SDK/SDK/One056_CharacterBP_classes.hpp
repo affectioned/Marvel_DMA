@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1056_CharacterBP.1056_CharacterBP_C
-// 0x0000 (0x2310 - 0x2310)
+// 0x0000 (0x2420 - 0x2420)
 class AOne056_CharacterBP_C final : public APyAngelaCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1056_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1056_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1056_CharacterBP_C")
 	}
 	static class AOne056_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne056_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne056_CharacterBP_C) == 0x000010, "Wrong alignment on AOne056_CharacterBP_C");
-static_assert(sizeof(AOne056_CharacterBP_C) == 0x002310, "Wrong size on AOne056_CharacterBP_C");
+DUMPER7_ASSERTS_AOne056_CharacterBP_C;
 
 }
 

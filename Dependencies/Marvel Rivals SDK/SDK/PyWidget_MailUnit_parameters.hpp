@@ -21,9 +21,7 @@ struct PyMailDataItem_SetIsSelected final
 public:
 	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMailDataItem_SetIsSelected) == 0x000001, "Wrong alignment on PyMailDataItem_SetIsSelected");
-static_assert(sizeof(PyMailDataItem_SetIsSelected) == 0x000001, "Wrong size on PyMailDataItem_SetIsSelected");
-static_assert(offsetof(PyMailDataItem_SetIsSelected, IsSelected_0) == 0x000000, "Member 'PyMailDataItem_SetIsSelected::IsSelected_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyMailDataItem_SetIsSelected;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.SetPlayTime
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_MailUnit_SetPlayTime final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_SetPlayTime) == 0x000004, "Wrong alignment on PyWidget_MailUnit_SetPlayTime");
-static_assert(sizeof(PyWidget_MailUnit_SetPlayTime) == 0x000004, "Wrong size on PyWidget_MailUnit_SetPlayTime");
-static_assert(offsetof(PyWidget_MailUnit_SetPlayTime, Time) == 0x000000, "Member 'PyWidget_MailUnit_SetPlayTime::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_SetPlayTime;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_MailUnit_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_MailUnit_MarvelSetVisible");
-static_assert(sizeof(PyWidget_MailUnit_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_MailUnit_MarvelSetVisible");
-static_assert(offsetof(PyWidget_MailUnit_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_MailUnit_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_MarvelSetVisible;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.SetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_MailUnit_SetAnimationStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_SetAnimationStart) == 0x000004, "Wrong alignment on PyWidget_MailUnit_SetAnimationStart");
-static_assert(sizeof(PyWidget_MailUnit_SetAnimationStart) == 0x000004, "Wrong size on PyWidget_MailUnit_SetAnimationStart");
-static_assert(offsetof(PyWidget_MailUnit_SetAnimationStart, Time) == 0x000000, "Member 'PyWidget_MailUnit_SetAnimationStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_SetAnimationStart;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_MailUnit_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_MailUnit_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_MailUnit_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_MailUnit_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_MailUnit_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'PyWidget_MailUnit_OnListItemObjectSet::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_OnListItemObjectSet;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_MailUnit_BP_OnItemSelectionChanged final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on PyWidget_MailUnit_BP_OnItemSelectionChanged");
-static_assert(sizeof(PyWidget_MailUnit_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on PyWidget_MailUnit_BP_OnItemSelectionChanged");
-static_assert(offsetof(PyWidget_MailUnit_BP_OnItemSelectionChanged, IsSelected) == 0x000000, "Member 'PyWidget_MailUnit_BP_OnItemSelectionChanged::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_BP_OnItemSelectionChanged;
 
 // PythonFunction PyWidget_MailUnit.PyWidget_MailUnit.SetCurItemSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +75,7 @@ struct PyWidget_MailUnit_SetCurItemSelected final
 public:
 	bool                                          Selected;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailUnit_SetCurItemSelected) == 0x000001, "Wrong alignment on PyWidget_MailUnit_SetCurItemSelected");
-static_assert(sizeof(PyWidget_MailUnit_SetCurItemSelected) == 0x000001, "Wrong size on PyWidget_MailUnit_SetCurItemSelected");
-static_assert(offsetof(PyWidget_MailUnit_SetCurItemSelected, Selected) == 0x000000, "Member 'PyWidget_MailUnit_SetCurItemSelected::Selected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailUnit_SetCurItemSelected;
 
 }
 

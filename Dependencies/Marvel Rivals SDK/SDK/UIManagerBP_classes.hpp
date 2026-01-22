@@ -23,15 +23,18 @@ class UUIManagerBP_C final : public UPyUIManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("UIManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIManagerBP_C")
 	}
 	static class UUIManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIManagerBP_C>();
 	}
 };
-static_assert(alignof(UUIManagerBP_C) == 0x000008, "Wrong alignment on UUIManagerBP_C");
-static_assert(sizeof(UUIManagerBP_C) == 0x000108, "Wrong size on UUIManagerBP_C");
+DUMPER7_ASSERTS_UUIManagerBP_C;
 
 }
 

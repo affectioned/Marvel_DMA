@@ -74,6 +74,31 @@ void UPyWidget_DataCenter_Btn::Destruct()
 }
 
 
+// PythonFunction PyWidget_DropDownList_Network.PyWidget_DataCenter_Btn.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_DataCenter_Btn::OnCascadingVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_DataCenter_Btn", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_DataCenter_Btn_OnCascadingVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_DropDownList_Network.PyWidget_DropDownList_Network.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

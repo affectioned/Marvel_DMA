@@ -23,15 +23,18 @@ class UPyHighlightActorsWithinScopeComponent : public UHighlightActorsWithinScop
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHighlightActorsWithinScopeComponent">();
+		STATIC_CLASS_IMPL("PyHighlightActorsWithinScopeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHighlightActorsWithinScopeComponent")
 	}
 	static class UPyHighlightActorsWithinScopeComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHighlightActorsWithinScopeComponent>();
 	}
 };
-static_assert(alignof(UPyHighlightActorsWithinScopeComponent) == 0x000008, "Wrong alignment on UPyHighlightActorsWithinScopeComponent");
-static_assert(sizeof(UPyHighlightActorsWithinScopeComponent) == 0x000260, "Wrong size on UPyHighlightActorsWithinScopeComponent");
+DUMPER7_ASSERTS_UPyHighlightActorsWithinScopeComponent;
 
 }
 

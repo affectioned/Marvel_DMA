@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_IATV_MainPanel.PyWidget_IATV_MainPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_IATV_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_IATV_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_IATV_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_IATV_MainPanel")
 	}
 	static class UPyWidget_IATV_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_IATV_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_IATV_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_IATV_MainPanel");
-static_assert(sizeof(UPyWidget_IATV_MainPanel) == 0x0005F8, "Wrong size on UPyWidget_IATV_MainPanel");
+DUMPER7_ASSERTS_UPyWidget_IATV_MainPanel;
 
 }
 

@@ -189,6 +189,95 @@ void AFillColorBox::UpdateItemState(const TArray<int32>& ArrayIndexList, const i
 }
 
 
+// Function MarvelLevel.FillColorBoxV2.GetIndexListInBox
+// (Final, Native, Public)
+// Parameters:
+// int32                                   Box_x_min                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Box_x_max                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Box_y_min                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Box_y_max                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<int32> AFillColorBoxV2::GetIndexListInBox(int32 Box_x_min, int32 Box_x_max, int32 Box_y_min, int32 Box_y_max)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FillColorBoxV2", "GetIndexListInBox");
+
+	Params::FillColorBoxV2_GetIndexListInBox Parms{};
+
+	Parms.Box_x_min = Box_x_min;
+	Parms.Box_x_max = Box_x_max;
+	Parms.Box_y_min = Box_y_min;
+	Parms.Box_y_max = Box_y_max;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelLevel.FillColorBoxV2.GetIndexListInRange
+// (Final, Native, Public, HasDefaults)
+// Parameters:
+// const struct FVector&                   CenterPos                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// double                                  Radius                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<int32> AFillColorBoxV2::GetIndexListInRange(const struct FVector& CenterPos, double Radius)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FillColorBoxV2", "GetIndexListInRange");
+
+	Params::FillColorBoxV2_GetIndexListInRange Parms{};
+
+	Parms.CenterPos = std::move(CenterPos);
+	Parms.Radius = Radius;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelLevel.LevelPackageRulesFuncLibrary.UpdatePackageDataTables
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FMarvelPackageContext&     InPackageContext                                       (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void ULevelPackageRulesFuncLibrary::UpdatePackageDataTables(const struct FMarvelPackageContext& InPackageContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LevelPackageRulesFuncLibrary", "UpdatePackageDataTables");
+
+	Params::LevelPackageRulesFuncLibrary_UpdatePackageDataTables Parms{};
+
+	Parms.InPackageContext = std::move(InPackageContext);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function MarvelLevel.FillColorPoint.FillColor
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -206,6 +295,86 @@ void AFillColorPoint::FillColor(EBattleSide BattleSide)
 	Parms.BattleSide = BattleSide;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelLevel.MarvelLevelSummonedBase.SetHittable
+// (Final, Native, Public)
+// Parameters:
+// bool                                    Hittable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelLevelSummonedBase::SetHittable(bool Hittable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelLevelSummonedBase", "SetHittable");
+
+	Params::MarvelLevelSummonedBase_SetHittable Parms{};
+
+	Parms.Hittable = Hittable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelLevel.MarvelLevelSummonedBase.SetTriggerRepCheck
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelLevelSummonedBase::SetTriggerRepCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelLevelSummonedBase", "SetTriggerRepCheck");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelLevel.LevelGravityElevator.GetPathVelocity
+// (Native, Event, Public, HasDefaults, BlueprintEvent, Const)
+// Parameters:
+// const struct FVector&                   InVelocity                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPrimitiveComponent*              UpdatedComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InGravity                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EMovementMode                           MovementMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector ALevelGravityElevator::GetPathVelocity(const struct FVector& InVelocity, class UPrimitiveComponent* UpdatedComponent, const struct FVector& InGravity, float DeltaTime, EMovementMode MovementMode) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LevelGravityElevator", "GetPathVelocity");
+
+	Params::LevelGravityElevator_GetPathVelocity Parms{};
+
+	Parms.InVelocity = std::move(InVelocity);
+	Parms.UpdatedComponent = UpdatedComponent;
+	Parms.InGravity = std::move(InGravity);
+	Parms.DeltaTime = DeltaTime;
+	Parms.MovementMode = MovementMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -827,6 +996,34 @@ bool ULevelFunctionLibrary::IsActorInAABBRange(const struct FTransform& LocalTra
 }
 
 
+// Function MarvelLevel.LevelFunctionLibrary.IsEditorSimulate
+// (Final, Native, Static, Public)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULevelFunctionLibrary::IsEditorSimulate(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("LevelFunctionLibrary", "IsEditorSimulate");
+
+	Params::LevelFunctionLibrary_IsEditorSimulate Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function MarvelLevel.LevelFunctionLibrary.IsEnableLevelAsyncLoadInQueue
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1012,83 +1209,28 @@ void ULevelFunctionLibrary::SequencePlayerJumpToSkippingSpawn(class ULevelSequen
 }
 
 
-// Function MarvelLevel.MarvelLevelSummonedBase.SetHittable
-// (Final, Native, Public)
+// Function MarvelLevel.LevelFunctionLibrary.WakeUpNiagaraComponentsFromScalability
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// bool                                    Hittable                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<class UNiagaraComponent*>& NiagaraComponents                                      (Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-void AMarvelLevelSummonedBase::SetHittable(bool Hittable)
+void ULevelFunctionLibrary::WakeUpNiagaraComponentsFromScalability(const TArray<class UNiagaraComponent*>& NiagaraComponents)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelLevelSummonedBase", "SetHittable");
+		Func = StaticClass()->GetFunction("LevelFunctionLibrary", "WakeUpNiagaraComponentsFromScalability");
 
-	Params::MarvelLevelSummonedBase_SetHittable Parms{};
+	Params::LevelFunctionLibrary_WakeUpNiagaraComponentsFromScalability Parms{};
 
-	Parms.Hittable = Hittable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelLevel.MarvelLevelSummonedBase.SetTriggerRepCheck
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelLevelSummonedBase::SetTriggerRepCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelLevelSummonedBase", "SetTriggerRepCheck");
+	Parms.NiagaraComponents = std::move(NiagaraComponents);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelLevel.LevelGravityElevator.GetPathVelocity
-// (Native, Event, Public, HasDefaults, BlueprintEvent, Const)
-// Parameters:
-// const struct FVector&                   InVelocity                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPrimitiveComponent*              UpdatedComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InGravity                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EMovementMode                           MovementMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector ALevelGravityElevator::GetPathVelocity(const struct FVector& InVelocity, class UPrimitiveComponent* UpdatedComponent, const struct FVector& InGravity, float DeltaTime, EMovementMode MovementMode) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelGravityElevator", "GetPathVelocity");
-
-	Params::LevelGravityElevator_GetPathVelocity Parms{};
-
-	Parms.InVelocity = std::move(InVelocity);
-	Parms.UpdatedComponent = UpdatedComponent;
-	Parms.InGravity = std::move(InGravity);
-	Parms.DeltaTime = DeltaTime;
-	Parms.MovementMode = MovementMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1191,25 +1333,6 @@ void ALevelLightControlActor::StopChangeLights()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelLevel.LevelPackageRulesFuncLibrary.UpdatePackageDataTables
-// (Final, Native, Static, Public, BlueprintCallable)
-
-void ULevelPackageRulesFuncLibrary::UpdatePackageDataTables()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LevelPackageRulesFuncLibrary", "UpdatePackageDataTables");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

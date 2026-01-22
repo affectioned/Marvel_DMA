@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryCASSharpnessHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryCASSharpnessHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryCASSharpnessHandler")
 	}
 	static class UUISettingEntryCASSharpnessHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryCASSharpnessHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryCASSharpnessHandler) == 0x000008, "Wrong alignment on UUISettingEntryCASSharpnessHandler");
-static_assert(sizeof(UUISettingEntryCASSharpnessHandler) == 0x000030, "Wrong size on UUISettingEntryCASSharpnessHandler");
+DUMPER7_ASSERTS_UUISettingEntryCASSharpnessHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryAntiAliasingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryAntiAliasingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryAntiAliasingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryAntiAliasingHandler")
 	}
 	static class UUISettingEntryAntiAliasingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryAntiAliasingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryAntiAliasingHandler) == 0x000008, "Wrong alignment on UUISettingEntryAntiAliasingHandler");
-static_assert(sizeof(UUISettingEntryAntiAliasingHandler) == 0x000030, "Wrong size on UUISettingEntryAntiAliasingHandler");
+DUMPER7_ASSERTS_UUISettingEntryAntiAliasingHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -72,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationHandler")
 	}
 	static class UUISettingEntryFrameGenerationHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationHandler) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationHandler");
-static_assert(sizeof(UUISettingEntryFrameGenerationHandler) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationHandler");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryScreenPercentageHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -94,54 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryScreenPercentageHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryScreenPercentageHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryScreenPercentageHandler")
 	}
 	static class UUISettingEntryScreenPercentageHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryScreenPercentageHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryScreenPercentageHandler) == 0x000008, "Wrong alignment on UUISettingEntryScreenPercentageHandler");
-static_assert(sizeof(UUISettingEntryScreenPercentageHandler) == 0x000030, "Wrong size on UUISettingEntryScreenPercentageHandler");
-
-// PythonClass AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler
-// 0x0000 (0x0030 - 0x0030)
-class U_UISettingEntryLowLatencyHandler : public UUISettingEntrySettingHandler
-{
-public:
-	void BP_OnApply(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& options, float value);
-	float BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o);
-	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"_UISettingEntryLowLatencyHandler">();
-	}
-	static class U_UISettingEntryLowLatencyHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<U_UISettingEntryLowLatencyHandler>();
-	}
-};
-static_assert(alignof(U_UISettingEntryLowLatencyHandler) == 0x000008, "Wrong alignment on U_UISettingEntryLowLatencyHandler");
-static_assert(sizeof(U_UISettingEntryLowLatencyHandler) == 0x000030, "Wrong size on U_UISettingEntryLowLatencyHandler");
-
-// PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryLowLatencyXeSSHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingEntryLowLatencyXeSSHandler final : public U_UISettingEntryLowLatencyHandler
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingEntryLowLatencyXeSSHandler">();
-	}
-	static class UUISettingEntryLowLatencyXeSSHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingEntryLowLatencyXeSSHandler>();
-	}
-};
-static_assert(alignof(UUISettingEntryLowLatencyXeSSHandler) == 0x000008, "Wrong alignment on UUISettingEntryLowLatencyXeSSHandler");
-static_assert(sizeof(UUISettingEntryLowLatencyXeSSHandler) == 0x000030, "Wrong size on UUISettingEntryLowLatencyXeSSHandler");
+DUMPER7_ASSERTS_UUISettingEntryScreenPercentageHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryAntiAliasingOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -154,15 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryAntiAliasingOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryAntiAliasingOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryAntiAliasingOptionsGenerator")
 	}
 	static class UUISettingEntryAntiAliasingOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryAntiAliasingOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryAntiAliasingOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryAntiAliasingOptionsGenerator");
-static_assert(sizeof(UUISettingEntryAntiAliasingOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryAntiAliasingOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryAntiAliasingOptionsGenerator;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntrySSQualityOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -174,15 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySSQualityOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntrySSQualityOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySSQualityOptionsGenerator")
 	}
 	static class UUISettingEntrySSQualityOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySSQualityOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntrySSQualityOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntrySSQualityOptionsGenerator");
-static_assert(sizeof(UUISettingEntrySSQualityOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntrySSQualityOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntrySSQualityOptionsGenerator;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntrySSQualityHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -195,15 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySSQualityHandler">();
+		STATIC_CLASS_IMPL("UISettingEntrySSQualityHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySSQualityHandler")
 	}
 	static class UUISettingEntrySSQualityHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySSQualityHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntrySSQualityHandler) == 0x000008, "Wrong alignment on UUISettingEntrySSQualityHandler");
-static_assert(sizeof(UUISettingEntrySSQualityHandler) == 0x000030, "Wrong size on UUISettingEntrySSQualityHandler");
+DUMPER7_ASSERTS_UUISettingEntrySSQualityHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -215,15 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationOptionsGenerator")
 	}
 	static class UUISettingEntryFrameGenerationOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationOptionsGenerator");
-static_assert(sizeof(UUISettingEntryFrameGenerationOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationOptionsGenerator;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationDLSSxXHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -237,15 +222,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationDLSSxXHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationDLSSxXHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationDLSSxXHandler")
 	}
 	static class UUISettingEntryFrameGenerationDLSSxXHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationDLSSxXHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationDLSSxXHandler) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationDLSSxXHandler");
-static_assert(sizeof(UUISettingEntryFrameGenerationDLSSxXHandler) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationDLSSxXHandler");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationDLSSxXHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationDLSSOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -257,15 +245,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationDLSSOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationDLSSOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationDLSSOptionsGenerator")
 	}
 	static class UUISettingEntryFrameGenerationDLSSOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationDLSSOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationDLSSOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationDLSSOptionsGenerator");
-static_assert(sizeof(UUISettingEntryFrameGenerationDLSSOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationDLSSOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationDLSSOptionsGenerator;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic._UISettingEntryFrameGenerationHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -279,15 +270,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"_UISettingEntryFrameGenerationHandler">();
+		STATIC_CLASS_IMPL("_UISettingEntryFrameGenerationHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"_UISettingEntryFrameGenerationHandler")
 	}
 	static class U_UISettingEntryFrameGenerationHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<U_UISettingEntryFrameGenerationHandler>();
 	}
 };
-static_assert(alignof(U_UISettingEntryFrameGenerationHandler) == 0x000008, "Wrong alignment on U_UISettingEntryFrameGenerationHandler");
-static_assert(sizeof(U_UISettingEntryFrameGenerationHandler) == 0x000030, "Wrong size on U_UISettingEntryFrameGenerationHandler");
+DUMPER7_ASSERTS_U_UISettingEntryFrameGenerationHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationDLSSHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -296,15 +290,18 @@ class UUISettingEntryFrameGenerationDLSSHandler final : public U_UISettingEntryF
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationDLSSHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationDLSSHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationDLSSHandler")
 	}
 	static class UUISettingEntryFrameGenerationDLSSHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationDLSSHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationDLSSHandler) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationDLSSHandler");
-static_assert(sizeof(UUISettingEntryFrameGenerationDLSSHandler) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationDLSSHandler");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationDLSSHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationFSRHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -313,15 +310,18 @@ class UUISettingEntryFrameGenerationFSRHandler final : public U_UISettingEntryFr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationFSRHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationFSRHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationFSRHandler")
 	}
 	static class UUISettingEntryFrameGenerationFSRHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationFSRHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationFSRHandler) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationFSRHandler");
-static_assert(sizeof(UUISettingEntryFrameGenerationFSRHandler) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationFSRHandler");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationFSRHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryFrameGenerationXeSSHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -330,15 +330,18 @@ class UUISettingEntryFrameGenerationXeSSHandler final : public U_UISettingEntryF
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFrameGenerationXeSSHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFrameGenerationXeSSHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFrameGenerationXeSSHandler")
 	}
 	static class UUISettingEntryFrameGenerationXeSSHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFrameGenerationXeSSHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFrameGenerationXeSSHandler) == 0x000008, "Wrong alignment on UUISettingEntryFrameGenerationXeSSHandler");
-static_assert(sizeof(UUISettingEntryFrameGenerationXeSSHandler) == 0x000030, "Wrong size on UUISettingEntryFrameGenerationXeSSHandler");
+DUMPER7_ASSERTS_UUISettingEntryFrameGenerationXeSSHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISetingentryLowLatencyModeOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -350,15 +353,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISetingentryLowLatencyModeOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISetingentryLowLatencyModeOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISetingentryLowLatencyModeOptionsGenerator")
 	}
 	static class UUISetingentryLowLatencyModeOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISetingentryLowLatencyModeOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISetingentryLowLatencyModeOptionsGenerator) == 0x000008, "Wrong alignment on UUISetingentryLowLatencyModeOptionsGenerator");
-static_assert(sizeof(UUISetingentryLowLatencyModeOptionsGenerator) == 0x000030, "Wrong size on UUISetingentryLowLatencyModeOptionsGenerator");
+DUMPER7_ASSERTS_UUISetingentryLowLatencyModeOptionsGenerator;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISetingentryLowLatencyModeHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -372,15 +378,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISetingentryLowLatencyModeHandler">();
+		STATIC_CLASS_IMPL("UISetingentryLowLatencyModeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISetingentryLowLatencyModeHandler")
 	}
 	static class UUISetingentryLowLatencyModeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISetingentryLowLatencyModeHandler>();
 	}
 };
-static_assert(alignof(UUISetingentryLowLatencyModeHandler) == 0x000008, "Wrong alignment on UUISetingentryLowLatencyModeHandler");
-static_assert(sizeof(UUISetingentryLowLatencyModeHandler) == 0x000030, "Wrong size on UUISetingentryLowLatencyModeHandler");
+DUMPER7_ASSERTS_UUISetingentryLowLatencyModeHandler;
+
+// PythonClass AntiAliasingAndSuperSamplingLogic._UISettingEntryLowLatencyHandler
+// 0x0000 (0x0030 - 0x0030)
+class U_UISettingEntryLowLatencyHandler : public UUISettingEntrySettingHandler
+{
+public:
+	void BP_OnApply(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& options, float value);
+	float BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o);
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("_UISettingEntryLowLatencyHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"_UISettingEntryLowLatencyHandler")
+	}
+	static class U_UISettingEntryLowLatencyHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<U_UISettingEntryLowLatencyHandler>();
+	}
+};
+DUMPER7_ASSERTS_U_UISettingEntryLowLatencyHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryLowLatencyDLSSHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -389,15 +423,38 @@ class UUISettingEntryLowLatencyDLSSHandler final : public U_UISettingEntryLowLat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryLowLatencyDLSSHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryLowLatencyDLSSHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLowLatencyDLSSHandler")
 	}
 	static class UUISettingEntryLowLatencyDLSSHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryLowLatencyDLSSHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryLowLatencyDLSSHandler) == 0x000008, "Wrong alignment on UUISettingEntryLowLatencyDLSSHandler");
-static_assert(sizeof(UUISettingEntryLowLatencyDLSSHandler) == 0x000030, "Wrong size on UUISettingEntryLowLatencyDLSSHandler");
+DUMPER7_ASSERTS_UUISettingEntryLowLatencyDLSSHandler;
+
+// PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryLowLatencyXeSSHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingEntryLowLatencyXeSSHandler final : public U_UISettingEntryLowLatencyHandler
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingEntryLowLatencyXeSSHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLowLatencyXeSSHandler")
+	}
+	static class UUISettingEntryLowLatencyXeSSHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingEntryLowLatencyXeSSHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingEntryLowLatencyXeSSHandler;
 
 // PythonClass AntiAliasingAndSuperSamplingLogic.UISettingEntryLowLatencyFSRHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -406,15 +463,18 @@ class UUISettingEntryLowLatencyFSRHandler final : public U_UISettingEntryLowLate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryLowLatencyFSRHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryLowLatencyFSRHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLowLatencyFSRHandler")
 	}
 	static class UUISettingEntryLowLatencyFSRHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryLowLatencyFSRHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryLowLatencyFSRHandler) == 0x000008, "Wrong alignment on UUISettingEntryLowLatencyFSRHandler");
-static_assert(sizeof(UUISettingEntryLowLatencyFSRHandler) == 0x000030, "Wrong size on UUISettingEntryLowLatencyFSRHandler");
+DUMPER7_ASSERTS_UUISettingEntryLowLatencyFSRHandler;
 
 }
 

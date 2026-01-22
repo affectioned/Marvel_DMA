@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_classes.hpp"
-#include "UIParticle_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "UIParticle_structs.hpp"
 
 
 namespace SDK
@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIParticle">();
+		STATIC_CLASS_IMPL("UIParticle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIParticle")
 	}
 	static class UUIParticle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIParticle>();
 	}
 };
-static_assert(alignof(UUIParticle) == 0x000008, "Wrong alignment on UUIParticle");
-static_assert(sizeof(UUIParticle) == 0x0001E8, "Wrong size on UUIParticle");
-static_assert(offsetof(UUIParticle, Asset) == 0x0001B8, "Member 'UUIParticle::Asset' has a wrong offset!");
-static_assert(offsetof(UUIParticle, EventOnEnd) == 0x0001C0, "Member 'UUIParticle::EventOnEnd' has a wrong offset!");
-static_assert(offsetof(UUIParticle, IsPlaying) == 0x0001D1, "Member 'UUIParticle::IsPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_UUIParticle;
 
 // Class UIParticle.UIParticleAsset
 // 0x0010 (0x0040 - 0x0030)
@@ -62,16 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIParticleAsset">();
+		STATIC_CLASS_IMPL("UIParticleAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIParticleAsset")
 	}
 	static class UUIParticleAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIParticleAsset>();
 	}
 };
-static_assert(alignof(UUIParticleAsset) == 0x000008, "Wrong alignment on UUIParticleAsset");
-static_assert(sizeof(UUIParticleAsset) == 0x000040, "Wrong size on UUIParticleAsset");
-static_assert(offsetof(UUIParticleAsset, Emitters) == 0x000030, "Member 'UUIParticleAsset::Emitters' has a wrong offset!");
+DUMPER7_ASSERTS_UUIParticleAsset;
 
 // Class UIParticle.UIParticleEmitter
 // 0x0030 (0x01E8 - 0x01B8)
@@ -93,18 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIParticleEmitter">();
+		STATIC_CLASS_IMPL("UIParticleEmitter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIParticleEmitter")
 	}
 	static class UUIParticleEmitter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIParticleEmitter>();
 	}
 };
-static_assert(alignof(UUIParticleEmitter) == 0x000008, "Wrong alignment on UUIParticleEmitter");
-static_assert(sizeof(UUIParticleEmitter) == 0x0001E8, "Wrong size on UUIParticleEmitter");
-static_assert(offsetof(UUIParticleEmitter, Asset) == 0x0001B8, "Member 'UUIParticleEmitter::Asset' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitter, EventOnEnd) == 0x0001C0, "Member 'UUIParticleEmitter::EventOnEnd' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitter, IsPlaying) == 0x0001D1, "Member 'UUIParticleEmitter::IsPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_UUIParticleEmitter;
 
 // Class UIParticle.UIParticleEmitterAsset
 // 0xD6E8 (0xD718 - 0x0030)
@@ -164,58 +166,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIParticleEmitterAsset">();
+		STATIC_CLASS_IMPL("UIParticleEmitterAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIParticleEmitterAsset")
 	}
 	static class UUIParticleEmitterAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIParticleEmitterAsset>();
 	}
 };
-static_assert(alignof(UUIParticleEmitterAsset) == 0x000008, "Wrong alignment on UUIParticleEmitterAsset");
-static_assert(sizeof(UUIParticleEmitterAsset) == 0x00D718, "Wrong size on UUIParticleEmitterAsset");
-static_assert(offsetof(UUIParticleEmitterAsset, EmitterType) == 0x000030, "Member 'UUIParticleEmitterAsset::EmitterType' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, EmitSeconds) == 0x000034, "Member 'UUIParticleEmitterAsset::EmitSeconds' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, MaxParticleCount) == 0x000038, "Member 'UUIParticleEmitterAsset::MaxParticleCount' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, SpawnParticlePerSecond) == 0x000828, "Member 'UUIParticleEmitterAsset::SpawnParticlePerSecond' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ParticleEmitAngle) == 0x001018, "Member 'UUIParticleEmitterAsset::ParticleEmitAngle' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, EmitPosRange) == 0x001808, "Member 'UUIParticleEmitterAsset::EmitPosRange' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, EmitPosition) == 0x001828, "Member 'UUIParticleEmitterAsset::EmitPosition' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, AutoEmitPosRange) == 0x002808, "Member 'UUIParticleEmitterAsset::AutoEmitPosRange' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, AutoScale) == 0x002809, "Member 'UUIParticleEmitterAsset::AutoScale' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ScaleByX) == 0x00280A, "Member 'UUIParticleEmitterAsset::ScaleByX' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, DesignSize) == 0x002810, "Member 'UUIParticleEmitterAsset::DesignSize' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, PositionType) == 0x002820, "Member 'UUIParticleEmitterAsset::PositionType' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, LifeSpan) == 0x002828, "Member 'UUIParticleEmitterAsset::LifeSpan' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, Size) == 0x003018, "Member 'UUIParticleEmitterAsset::Size' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, Pivot) == 0x003808, "Member 'UUIParticleEmitterAsset::Pivot' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, RotationStart) == 0x003FF8, "Member 'UUIParticleEmitterAsset::RotationStart' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, RotationSpeed) == 0x0047E8, "Member 'UUIParticleEmitterAsset::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, Color) == 0x004FD8, "Member 'UUIParticleEmitterAsset::Color' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ResourceObject) == 0x0057C8, "Member 'UUIParticleEmitterAsset::ResourceObject' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, RotationFollowSpeed) == 0x0057D0, "Member 'UUIParticleEmitterAsset::RotationFollowSpeed' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, UseSeparateSize) == 0x0057D1, "Member 'UUIParticleEmitterAsset::UseSeparateSize' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, Gravity) == 0x0057D8, "Member 'UUIParticleEmitterAsset::Gravity' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, StartSpeed) == 0x005FC8, "Member 'UUIParticleEmitterAsset::StartSpeed' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, AirResistance) == 0x0067B8, "Member 'UUIParticleEmitterAsset::AirResistance' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, RadialAcceleration) == 0x006FA8, "Member 'UUIParticleEmitterAsset::RadialAcceleration' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, TangentialAcceleration) == 0x007798, "Member 'UUIParticleEmitterAsset::TangentialAcceleration' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, Radius) == 0x007F88, "Member 'UUIParticleEmitterAsset::Radius' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, DegreePerSecond) == 0x008778, "Member 'UUIParticleEmitterAsset::DegreePerSecond' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, PositionX) == 0x008F68, "Member 'UUIParticleEmitterAsset::PositionX' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, PositionY) == 0x009758, "Member 'UUIParticleEmitterAsset::PositionY' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ChildrenEmitters) == 0x009F48, "Member 'UUIParticleEmitterAsset::ChildrenEmitters' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ScalarParams) == 0x009F58, "Member 'UUIParticleEmitterAsset::ScalarParams' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ScalarParamsWhenStart) == 0x009F68, "Member 'UUIParticleEmitterAsset::ScalarParamsWhenStart' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, DrawEffect) == 0x009F78, "Member 'UUIParticleEmitterAsset::DrawEffect' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, UseScaleFollowSpeedDirection) == 0x009F79, "Member 'UUIParticleEmitterAsset::UseScaleFollowSpeedDirection' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ScaleFollowSpeedDirection) == 0x009F80, "Member 'UUIParticleEmitterAsset::ScaleFollowSpeedDirection' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, UseScaleFollowSpeedVertical) == 0x00A770, "Member 'UUIParticleEmitterAsset::UseScaleFollowSpeedVertical' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, ScaleFollowSpeedVertical) == 0x00A778, "Member 'UUIParticleEmitterAsset::ScaleFollowSpeedVertical' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, DirectionScale) == 0x00AF68, "Member 'UUIParticleEmitterAsset::DirectionScale' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, VerticalDirectionScale) == 0x00B758, "Member 'UUIParticleEmitterAsset::VerticalDirectionScale' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, SineDirectionStart) == 0x00BF48, "Member 'UUIParticleEmitterAsset::SineDirectionStart' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, SineDirectionSpeed) == 0x00C738, "Member 'UUIParticleEmitterAsset::SineDirectionSpeed' has a wrong offset!");
-static_assert(offsetof(UUIParticleEmitterAsset, SineDirectionRange) == 0x00CF28, "Member 'UUIParticleEmitterAsset::SineDirectionRange' has a wrong offset!");
+DUMPER7_ASSERTS_UUIParticleEmitterAsset;
 
 }
 

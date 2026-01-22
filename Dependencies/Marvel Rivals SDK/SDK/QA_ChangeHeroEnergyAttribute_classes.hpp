@@ -23,15 +23,18 @@ class UQA_ChangeHeroEnergyAttribute_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QA_ChangeHeroEnergyAttribute_C">();
+		BP_STATIC_CLASS_IMPL("QA_ChangeHeroEnergyAttribute_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QA_ChangeHeroEnergyAttribute_C")
 	}
 	static class UQA_ChangeHeroEnergyAttribute_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQA_ChangeHeroEnergyAttribute_C>();
 	}
 };
-static_assert(alignof(UQA_ChangeHeroEnergyAttribute_C) == 0x000008, "Wrong alignment on UQA_ChangeHeroEnergyAttribute_C");
-static_assert(sizeof(UQA_ChangeHeroEnergyAttribute_C) == 0x001418, "Wrong size on UQA_ChangeHeroEnergyAttribute_C");
+DUMPER7_ASSERTS_UQA_ChangeHeroEnergyAttribute_C;
 
 }
 

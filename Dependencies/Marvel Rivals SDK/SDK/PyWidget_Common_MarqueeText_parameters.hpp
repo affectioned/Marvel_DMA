@@ -21,9 +21,7 @@ struct PyWidget_Common_MarqueeText_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_MarqueeText_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Common_MarqueeText_PreConstruct");
-static_assert(sizeof(PyWidget_Common_MarqueeText_PreConstruct) == 0x000001, "Wrong size on PyWidget_Common_MarqueeText_PreConstruct");
-static_assert(offsetof(PyWidget_Common_MarqueeText_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Common_MarqueeText_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_MarqueeText_PreConstruct;
 
 // PythonFunction PyWidget_Common_MarqueeText.PyWidget_Common_MarqueeText.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Common_MarqueeText_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_MarqueeText_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Common_MarqueeText_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Common_MarqueeText_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Common_MarqueeText_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Common_MarqueeText_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Common_MarqueeText_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_MarqueeText_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Common_MarqueeText.PyWidget_Common_MarqueeText.SetText
 // 0x0018 (0x0018 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Common_MarqueeText_SetText final
 public:
 	class FText                                   text;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_Common_MarqueeText_SetText) == 0x000008, "Wrong alignment on PyWidget_Common_MarqueeText_SetText");
-static_assert(sizeof(PyWidget_Common_MarqueeText_SetText) == 0x000018, "Wrong size on PyWidget_Common_MarqueeText_SetText");
-static_assert(offsetof(PyWidget_Common_MarqueeText_SetText, text) == 0x000000, "Member 'PyWidget_Common_MarqueeText_SetText::text' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_MarqueeText_SetText;
 
 }
 

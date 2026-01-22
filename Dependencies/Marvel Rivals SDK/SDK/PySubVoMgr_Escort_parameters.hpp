@@ -24,10 +24,7 @@ public:
 	class AActor*                                 control_base;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                owner_side;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySubVoMgr_Escort_OnPayloadOwnerSideChanged) == 0x000008, "Wrong alignment on PySubVoMgr_Escort_OnPayloadOwnerSideChanged");
-static_assert(sizeof(PySubVoMgr_Escort_OnPayloadOwnerSideChanged) == 0x000010, "Wrong size on PySubVoMgr_Escort_OnPayloadOwnerSideChanged");
-static_assert(offsetof(PySubVoMgr_Escort_OnPayloadOwnerSideChanged, control_base) == 0x000000, "Member 'PySubVoMgr_Escort_OnPayloadOwnerSideChanged::control_base' has a wrong offset!");
-static_assert(offsetof(PySubVoMgr_Escort_OnPayloadOwnerSideChanged, owner_side) == 0x000008, "Member 'PySubVoMgr_Escort_OnPayloadOwnerSideChanged::owner_side' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Escort_OnPayloadOwnerSideChanged;
 
 }
 

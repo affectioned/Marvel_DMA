@@ -23,15 +23,18 @@ class UAIMoveControl_StormUltimate_C final : public UAIAbilityMoveControlLogic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_StormUltimate_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_StormUltimate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_StormUltimate_C")
 	}
 	static class UAIMoveControl_StormUltimate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_StormUltimate_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_StormUltimate_C) == 0x000008, "Wrong alignment on UAIMoveControl_StormUltimate_C");
-static_assert(sizeof(UAIMoveControl_StormUltimate_C) == 0x0000B8, "Wrong size on UAIMoveControl_StormUltimate_C");
+DUMPER7_ASSERTS_UAIMoveControl_StormUltimate_C;
 
 }
 

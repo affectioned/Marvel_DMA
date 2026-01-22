@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Training_Countdown.PyWidget_Train_Countdown
-// 0x0018 (0x05B0 - 0x0598)
+// 0x0018 (0x05B8 - 0x05A0)
 class UPyWidget_Train_Countdown : public UPyWidget_Common_Countdown
 {
 public:
-	int32                                         CountDownVoice;                                    // 0x0594(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          CountownAudioEvent;                                // 0x0598(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          StartAudioEvent;                                   // 0x05A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          EndAudioEvent;                                     // 0x05A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CountDownVoice;                                    // 0x059C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          CountownAudioEvent;                                // 0x05A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          StartAudioEvent;                                   // 0x05A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          EndAudioEvent;                                     // 0x05B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Train_Countdown">();
+		STATIC_CLASS_IMPL("PyWidget_Train_Countdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Train_Countdown")
 	}
 	static class UPyWidget_Train_Countdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Train_Countdown>();
 	}
 };
-static_assert(alignof(UPyWidget_Train_Countdown) == 0x000008, "Wrong alignment on UPyWidget_Train_Countdown");
-static_assert(sizeof(UPyWidget_Train_Countdown) == 0x0005B0, "Wrong size on UPyWidget_Train_Countdown");
-static_assert(offsetof(UPyWidget_Train_Countdown, CountDownVoice) == 0x000594, "Member 'UPyWidget_Train_Countdown::CountDownVoice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Train_Countdown, CountownAudioEvent) == 0x000598, "Member 'UPyWidget_Train_Countdown::CountownAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Train_Countdown, StartAudioEvent) == 0x0005A0, "Member 'UPyWidget_Train_Countdown::StartAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Train_Countdown, EndAudioEvent) == 0x0005A8, "Member 'UPyWidget_Train_Countdown::EndAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Train_Countdown;
 
 }
 

@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_NameplateFrame.WBP_NameplateFrame_C
-// 0x0018 (0x0600 - 0x05E8)
+// 0x0018 (0x0608 - 0x05F0)
 class UWBP_NameplateFrame_C final : public UPyWidget_NameplateFrame
 {
 public:
-	class UMarvelImage*                           Img_Frame;                                         // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_123;                                   // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             NamedSlot_Dynamic;                                 // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_123;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             NamedSlot_Dynamic;                                 // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_NameplateFrame_C">();
+		BP_STATIC_CLASS_IMPL("WBP_NameplateFrame_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_NameplateFrame_C")
 	}
 	static class UWBP_NameplateFrame_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_NameplateFrame_C>();
 	}
 };
-static_assert(alignof(UWBP_NameplateFrame_C) == 0x000008, "Wrong alignment on UWBP_NameplateFrame_C");
-static_assert(sizeof(UWBP_NameplateFrame_C) == 0x000600, "Wrong size on UWBP_NameplateFrame_C");
-static_assert(offsetof(UWBP_NameplateFrame_C, Img_Frame) == 0x0005E8, "Member 'UWBP_NameplateFrame_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_NameplateFrame_C, MarvelImage_123) == 0x0005F0, "Member 'UWBP_NameplateFrame_C::MarvelImage_123' has a wrong offset!");
-static_assert(offsetof(UWBP_NameplateFrame_C, NamedSlot_Dynamic) == 0x0005F8, "Member 'UWBP_NameplateFrame_C::NamedSlot_Dynamic' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_NameplateFrame_C;
 
 }
 

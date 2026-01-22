@@ -17,6 +17,191 @@
 namespace SDK
 {
 
+// PythonFunction PyAbility_103352.PyProjectile_10335202.K2_OnBounce
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyProjectile_10335202::K2_OnBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10335202", "K2_OnBounce");
+
+	Params::PyProjectile_10335202_K2_OnBounce Parms{};
+
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PyProjectile_10335202.K2_OnEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyProjectile_10335202::K2_OnEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10335202", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnInitializeData
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyProjectile_10335201::K2_OnInitializeData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnInitializeData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyProjectile_10335201::K2_OnBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnProcessHit
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyProjectile_10335201::K2_OnProcessHit(const struct FHitResult& ImpactResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnProcessHit");
+
+	Params::PyProjectile_10335201_K2_OnProcessHit Parms{};
+
+	Parms.ImpactResult = std::move(ImpactResult);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PySummoned_10335201.ReceiveBeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APySummoned_10335201::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummoned_10335201", "ReceiveBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PySummoned_10335201.K2_OnSummonedBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APySummoned_10335201::K2_OnSummonedBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummoned_10335201", "K2_OnSummonedBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PySummoned_10335201.DelaySpawnScope
+// (Native, Public, BlueprintCallable)
+
+void APySummoned_10335201::DelaySpawnScope()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummoned_10335201", "DelaySpawnScope");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PySummoned_10335201.K2_OnSummonedEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APySummoned_10335201::K2_OnSummonedEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummoned_10335201", "K2_OnSummonedEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_103352.PyAbility_103352.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -193,6 +378,44 @@ void UPyAbility_103352::EndPlay()
 }
 
 
+// PythonFunction PyAbility_103352.PyEffectiveComponent_10335201.K2_Initialize
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyEffectiveComponent_10335201::K2_Initialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyEffectiveComponent_10335201", "K2_Initialize");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103352.PyTraceComponent_10335201.K2_Initialize
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyTraceComponent_10335201::K2_Initialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyTraceComponent_10335201", "K2_Initialize");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_103352.PyCue_Scope_Start_10335201.SetExplosionNiagaraParameter
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -244,229 +467,6 @@ void UPyCue_Scope_Start_10335201::OnExecuteFX(class AActor* MyTarget, const stru
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnInitializeData
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyProjectile_10335201::K2_OnInitializeData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnInitializeData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyProjectile_10335201::K2_OnBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyProjectile_10335201.K2_OnProcessHit
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyProjectile_10335201::K2_OnProcessHit(const struct FHitResult& ImpactResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10335201", "K2_OnProcessHit");
-
-	Params::PyProjectile_10335201_K2_OnProcessHit Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyTraceComponent_10335201.K2_Initialize
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyTraceComponent_10335201::K2_Initialize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyTraceComponent_10335201", "K2_Initialize");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PySummoned_10335201.ReceiveBeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APySummoned_10335201::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummoned_10335201", "ReceiveBeginPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PySummoned_10335201.K2_OnSummonedBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APySummoned_10335201::K2_OnSummonedBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummoned_10335201", "K2_OnSummonedBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PySummoned_10335201.DelaySpawnScope
-// (Native, Public, BlueprintCallable)
-
-void APySummoned_10335201::DelaySpawnScope()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummoned_10335201", "DelaySpawnScope");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PySummoned_10335201.K2_OnSummonedEndAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APySummoned_10335201::K2_OnSummonedEndAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummoned_10335201", "K2_OnSummonedEndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyEffectiveComponent_10335201.K2_Initialize
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyEffectiveComponent_10335201::K2_Initialize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyEffectiveComponent_10335201", "K2_Initialize");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyProjectile_10335202.K2_OnBounce
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyProjectile_10335202::K2_OnBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10335202", "K2_OnBounce");
-
-	Params::PyProjectile_10335202_K2_OnBounce Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103352.PyProjectile_10335202.K2_OnEndAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyProjectile_10335202::K2_OnEndAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10335202", "K2_OnEndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

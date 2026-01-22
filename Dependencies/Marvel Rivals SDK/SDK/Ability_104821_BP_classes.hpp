@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104821_BP.Ability_104821_BP_C
-// 0x03B0 (0x2E88 - 0x2AD8)
+// 0x04F0 (0x3018 - 0x2B28)
 class UAbility_104821_BP_C final : public UAbility_106
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2AD8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          HasValidHit;                                       // 0x2AE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2AE1[0x7];                                     // 0x2AE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x2AE8(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         HitCount;                                          // 0x2E80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         BuffCount;                                         // 0x2E84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2B28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          HasValidHit;                                       // 0x2B30(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B31[0x7];                                     // 0x2B31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x2B38(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         HitCount;                                          // 0x3010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BuffCount;                                         // 0x3014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Ability_104821_BP(int32 EntryPoint);
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104821_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_104821_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104821_BP_C")
 	}
 	static class UAbility_104821_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_104821_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104821_BP_C) == 0x000008, "Wrong alignment on UAbility_104821_BP_C");
-static_assert(sizeof(UAbility_104821_BP_C) == 0x002E88, "Wrong size on UAbility_104821_BP_C");
-static_assert(offsetof(UAbility_104821_BP_C, UberGraphFrame) == 0x002AD8, "Member 'UAbility_104821_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_104821_BP_C, HasValidHit) == 0x002AE0, "Member 'UAbility_104821_BP_C::HasValidHit' has a wrong offset!");
-static_assert(offsetof(UAbility_104821_BP_C, Trace_Rule) == 0x002AE8, "Member 'UAbility_104821_BP_C::Trace_Rule' has a wrong offset!");
-static_assert(offsetof(UAbility_104821_BP_C, HitCount) == 0x002E80, "Member 'UAbility_104821_BP_C::HitCount' has a wrong offset!");
-static_assert(offsetof(UAbility_104821_BP_C, BuffCount) == 0x002E84, "Member 'UAbility_104821_BP_C::BuffCount' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_104821_BP_C;
 
 }
 

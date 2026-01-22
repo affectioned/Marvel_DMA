@@ -23,15 +23,18 @@ class UAIAbilityActivation_AddFocusControl_10517201_C final : public UPyAIAbilit
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_AddFocusControl_10517201_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_AddFocusControl_10517201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_AddFocusControl_10517201_C")
 	}
 	static class UAIAbilityActivation_AddFocusControl_10517201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_AddFocusControl_10517201_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_AddFocusControl_10517201_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_AddFocusControl_10517201_C");
-static_assert(sizeof(UAIAbilityActivation_AddFocusControl_10517201_C) == 0x000048, "Wrong size on UAIAbilityActivation_AddFocusControl_10517201_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_AddFocusControl_10517201_C;
 
 }
 

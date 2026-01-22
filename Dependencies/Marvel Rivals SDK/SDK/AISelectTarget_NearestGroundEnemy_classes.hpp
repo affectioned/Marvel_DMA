@@ -23,15 +23,18 @@ class UAISelectTarget_NearestGroundEnemy_C final : public UPyAISelectTarget_Near
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_NearestGroundEnemy_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_NearestGroundEnemy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_NearestGroundEnemy_C")
 	}
 	static class UAISelectTarget_NearestGroundEnemy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_NearestGroundEnemy_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_NearestGroundEnemy_C) == 0x000008, "Wrong alignment on UAISelectTarget_NearestGroundEnemy_C");
-static_assert(sizeof(UAISelectTarget_NearestGroundEnemy_C) == 0x000080, "Wrong size on UAISelectTarget_NearestGroundEnemy_C");
+DUMPER7_ASSERTS_UAISelectTarget_NearestGroundEnemy_C;
 
 }
 

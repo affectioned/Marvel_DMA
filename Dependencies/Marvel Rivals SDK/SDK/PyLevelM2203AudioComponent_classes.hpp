@@ -24,15 +24,18 @@ class UPyLevelM2203AudioComponent final : public UPyLevelTeamDeathMatchAudioComp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelM2203AudioComponent">();
+		STATIC_CLASS_IMPL("PyLevelM2203AudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelM2203AudioComponent")
 	}
 	static class UPyLevelM2203AudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelM2203AudioComponent>();
 	}
 };
-static_assert(alignof(UPyLevelM2203AudioComponent) == 0x000008, "Wrong alignment on UPyLevelM2203AudioComponent");
-static_assert(sizeof(UPyLevelM2203AudioComponent) == 0x000120, "Wrong size on UPyLevelM2203AudioComponent");
+DUMPER7_ASSERTS_UPyLevelM2203AudioComponent;
 
 // PythonClass PyLevelM2203AudioComponent.PyLevelM2203AudioItem
 // 0x0040 (0x0268 - 0x0228)
@@ -47,19 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelM2203AudioItem">();
+		STATIC_CLASS_IMPL("PyLevelM2203AudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelM2203AudioItem")
 	}
 	static class UPyLevelM2203AudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelM2203AudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelM2203AudioItem) == 0x000008, "Wrong alignment on UPyLevelM2203AudioItem");
-static_assert(sizeof(UPyLevelM2203AudioItem) == 0x000268, "Wrong size on UPyLevelM2203AudioItem");
-static_assert(offsetof(UPyLevelM2203AudioItem, M2203AddScoreOwn) == 0x000228, "Member 'UPyLevelM2203AudioItem::M2203AddScoreOwn' has a wrong offset!");
-static_assert(offsetof(UPyLevelM2203AudioItem, M2203AddScoreEnemy) == 0x000238, "Member 'UPyLevelM2203AudioItem::M2203AddScoreEnemy' has a wrong offset!");
-static_assert(offsetof(UPyLevelM2203AudioItem, M2203CloseToWinOwn) == 0x000248, "Member 'UPyLevelM2203AudioItem::M2203CloseToWinOwn' has a wrong offset!");
-static_assert(offsetof(UPyLevelM2203AudioItem, M2203CloseToWinEnemy) == 0x000258, "Member 'UPyLevelM2203AudioItem::M2203CloseToWinEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelM2203AudioItem;
 
 }
 

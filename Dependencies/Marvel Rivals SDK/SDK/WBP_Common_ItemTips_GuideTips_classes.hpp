@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_ItemTips_GuideTips.WBP_Common_ItemTips_GuideTips_C
-// 0x0010 (0x0A30 - 0x0A20)
+// 0x0010 (0x0A90 - 0x0A80)
 class UWBP_Common_ItemTips_GuideTips_C final : public UPyWidget_GuideActionTips
 {
 public:
-	class UMarvelImage*                           Img_Pc_Line;                                       // 0x0A20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Ps_Line;                                       // 0x0A28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Pc_Line;                                       // 0x0A80(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Ps_Line;                                       // 0x0A88(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_ItemTips_GuideTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_ItemTips_GuideTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_ItemTips_GuideTips_C")
 	}
 	static class UWBP_Common_ItemTips_GuideTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_ItemTips_GuideTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_ItemTips_GuideTips_C) == 0x000010, "Wrong alignment on UWBP_Common_ItemTips_GuideTips_C");
-static_assert(sizeof(UWBP_Common_ItemTips_GuideTips_C) == 0x000A30, "Wrong size on UWBP_Common_ItemTips_GuideTips_C");
-static_assert(offsetof(UWBP_Common_ItemTips_GuideTips_C, Img_Pc_Line) == 0x000A20, "Member 'UWBP_Common_ItemTips_GuideTips_C::Img_Pc_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_ItemTips_GuideTips_C, Img_Ps_Line) == 0x000A28, "Member 'UWBP_Common_ItemTips_GuideTips_C::Img_Ps_Line' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_ItemTips_GuideTips_C;
 
 }
 

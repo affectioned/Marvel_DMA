@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MissionUnit_SeasonGoal.PyWidget_Mission_SeasonGoal_ProgressItem
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Mission_SeasonGoal_ProgressItem : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            BattleFinishTextColor;                             // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BattleTextColor;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LobbyTextColor;                                    // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            BattleFinishTextColor;                             // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BattleTextColor;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LobbyTextColor;                                    // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_SeasonGoal_ProgressItem">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_SeasonGoal_ProgressItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_SeasonGoal_ProgressItem")
 	}
 	static class UPyWidget_Mission_SeasonGoal_ProgressItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_SeasonGoal_ProgressItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_SeasonGoal_ProgressItem) == 0x000008, "Wrong alignment on UPyWidget_Mission_SeasonGoal_ProgressItem");
-static_assert(sizeof(UPyWidget_Mission_SeasonGoal_ProgressItem) == 0x0005F8, "Wrong size on UPyWidget_Mission_SeasonGoal_ProgressItem");
-static_assert(offsetof(UPyWidget_Mission_SeasonGoal_ProgressItem, BattleFinishTextColor) == 0x0005BC, "Member 'UPyWidget_Mission_SeasonGoal_ProgressItem::BattleFinishTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_SeasonGoal_ProgressItem, BattleTextColor) == 0x0005D0, "Member 'UPyWidget_Mission_SeasonGoal_ProgressItem::BattleTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_SeasonGoal_ProgressItem, LobbyTextColor) == 0x0005E4, "Member 'UPyWidget_Mission_SeasonGoal_ProgressItem::LobbyTextColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_SeasonGoal_ProgressItem;
 
 // PythonClass PyWidget_MissionUnit_SeasonGoal.Mission_UnitWidgetItemSeasonGoal
 // 0x0000 (0x0030 - 0x0030)
@@ -55,18 +55,21 @@ class UMission_UnitWidgetItemSeasonGoal final : public UMission_UnitWidgetItemDa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Mission_UnitWidgetItemSeasonGoal">();
+		STATIC_CLASS_IMPL("Mission_UnitWidgetItemSeasonGoal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mission_UnitWidgetItemSeasonGoal")
 	}
 	static class UMission_UnitWidgetItemSeasonGoal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMission_UnitWidgetItemSeasonGoal>();
 	}
 };
-static_assert(alignof(UMission_UnitWidgetItemSeasonGoal) == 0x000008, "Wrong alignment on UMission_UnitWidgetItemSeasonGoal");
-static_assert(sizeof(UMission_UnitWidgetItemSeasonGoal) == 0x000030, "Wrong size on UMission_UnitWidgetItemSeasonGoal");
+DUMPER7_ASSERTS_UMission_UnitWidgetItemSeasonGoal;
 
 // PythonClass PyWidget_MissionUnit_SeasonGoal.PyWidget_MissionUnit_SeasonGoal
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_MissionUnit_SeasonGoal : public UPyWidget_MissionUnit_Base
 {
 public:
@@ -78,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MissionUnit_SeasonGoal">();
+		STATIC_CLASS_IMPL("PyWidget_MissionUnit_SeasonGoal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MissionUnit_SeasonGoal")
 	}
 	static class UPyWidget_MissionUnit_SeasonGoal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MissionUnit_SeasonGoal>();
 	}
 };
-static_assert(alignof(UPyWidget_MissionUnit_SeasonGoal) == 0x000008, "Wrong alignment on UPyWidget_MissionUnit_SeasonGoal");
-static_assert(sizeof(UPyWidget_MissionUnit_SeasonGoal) == 0x0005C0, "Wrong size on UPyWidget_MissionUnit_SeasonGoal");
+DUMPER7_ASSERTS_UPyWidget_MissionUnit_SeasonGoal;
 
 }
 

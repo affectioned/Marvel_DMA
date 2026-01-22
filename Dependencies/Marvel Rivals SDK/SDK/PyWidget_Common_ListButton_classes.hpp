@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_ListButton.PyWidget_CommonVXButton
-// 0x0090 (0x0950 - 0x08C0)
+// 0x0090 (0x09B0 - 0x0920)
 class UPyWidget_CommonVXButton : public UPyWidget_BaseCommonButton
 {
 public:
-	struct FVector2D                              Size;                                              // 0x08B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalFontColor;                                   // 0x08C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HoverFontColor;                                    // 0x08DC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedFontColor;                                 // 0x08F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UnSelectedIconColor;                               // 0x0904(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedIconColor;                                 // 0x0918(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_92C[0x4];                                      // 0x092C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnHoveredEvenSelected;                             // 0x0930(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUnhoveredEvenSelected;                           // 0x0940(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FVector2D                              Size;                                              // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalFontColor;                                   // 0x0928(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HoverFontColor;                                    // 0x093C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedFontColor;                                 // 0x0950(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UnSelectedIconColor;                               // 0x0964(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedIconColor;                                 // 0x0978(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_98C[0x4];                                      // 0x098C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnHoveredEvenSelected;                             // 0x0990(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUnhoveredEvenSelected;                           // 0x09A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -43,57 +43,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonVXButton">();
+		STATIC_CLASS_IMPL("PyWidget_CommonVXButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonVXButton")
 	}
 	static class UPyWidget_CommonVXButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonVXButton>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonVXButton) == 0x000010, "Wrong alignment on UPyWidget_CommonVXButton");
-static_assert(sizeof(UPyWidget_CommonVXButton) == 0x000950, "Wrong size on UPyWidget_CommonVXButton");
-static_assert(offsetof(UPyWidget_CommonVXButton, Size) == 0x0008B8, "Member 'UPyWidget_CommonVXButton::Size' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, NormalFontColor) == 0x0008C8, "Member 'UPyWidget_CommonVXButton::NormalFontColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, HoverFontColor) == 0x0008DC, "Member 'UPyWidget_CommonVXButton::HoverFontColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, SelectedFontColor) == 0x0008F0, "Member 'UPyWidget_CommonVXButton::SelectedFontColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, UnSelectedIconColor) == 0x000904, "Member 'UPyWidget_CommonVXButton::UnSelectedIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, SelectedIconColor) == 0x000918, "Member 'UPyWidget_CommonVXButton::SelectedIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, OnHoveredEvenSelected) == 0x000930, "Member 'UPyWidget_CommonVXButton::OnHoveredEvenSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonVXButton, OnUnhoveredEvenSelected) == 0x000940, "Member 'UPyWidget_CommonVXButton::OnUnhoveredEvenSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonVXButton;
 
 // PythonClass PyWidget_Common_ListButton.PyWidget_CommonVXButtonLVX
-// 0x0000 (0x0950 - 0x0950)
+// 0x0000 (0x09B0 - 0x09B0)
 class UPyWidget_CommonVXButtonLVX : public UPyWidget_CommonVXButton
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonVXButtonLVX">();
+		STATIC_CLASS_IMPL("PyWidget_CommonVXButtonLVX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonVXButtonLVX")
 	}
 	static class UPyWidget_CommonVXButtonLVX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonVXButtonLVX>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonVXButtonLVX) == 0x000010, "Wrong alignment on UPyWidget_CommonVXButtonLVX");
-static_assert(sizeof(UPyWidget_CommonVXButtonLVX) == 0x000950, "Wrong size on UPyWidget_CommonVXButtonLVX");
+DUMPER7_ASSERTS_UPyWidget_CommonVXButtonLVX;
 
 // PythonClass PyWidget_Common_ListButton.PyWidget_CommonVXButtonV3
-// 0x0000 (0x0950 - 0x0950)
+// 0x0000 (0x09B0 - 0x09B0)
 class UPyWidget_CommonVXButtonV3 final : public UPyWidget_CommonVXButton
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonVXButtonV3">();
+		STATIC_CLASS_IMPL("PyWidget_CommonVXButtonV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonVXButtonV3")
 	}
 	static class UPyWidget_CommonVXButtonV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonVXButtonV3>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonVXButtonV3) == 0x000010, "Wrong alignment on UPyWidget_CommonVXButtonV3");
-static_assert(sizeof(UPyWidget_CommonVXButtonV3) == 0x000950, "Wrong size on UPyWidget_CommonVXButtonV3");
+DUMPER7_ASSERTS_UPyWidget_CommonVXButtonV3;
 
 }
 

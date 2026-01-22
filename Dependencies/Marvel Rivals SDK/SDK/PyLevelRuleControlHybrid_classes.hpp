@@ -23,15 +23,18 @@ class UPyLevelRuleControlHybrid final : public UPyLevelRuleControlComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelRuleControlHybrid">();
+		STATIC_CLASS_IMPL("PyLevelRuleControlHybrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelRuleControlHybrid")
 	}
 	static class UPyLevelRuleControlHybrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelRuleControlHybrid>();
 	}
 };
-static_assert(alignof(UPyLevelRuleControlHybrid) == 0x000008, "Wrong alignment on UPyLevelRuleControlHybrid");
-static_assert(sizeof(UPyLevelRuleControlHybrid) == 0x000208, "Wrong size on UPyLevelRuleControlHybrid");
+DUMPER7_ASSERTS_UPyLevelRuleControlHybrid;
 
 }
 

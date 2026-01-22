@@ -26,11 +26,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_PageView_OnMouseWheel) == 0x000008, "Wrong alignment on PyWidget_PageView_OnMouseWheel");
-static_assert(sizeof(PyWidget_PageView_OnMouseWheel) == 0x000178, "Wrong size on PyWidget_PageView_OnMouseWheel");
-static_assert(offsetof(PyWidget_PageView_OnMouseWheel, MyGeometry) == 0x000000, "Member 'PyWidget_PageView_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_PageView_OnMouseWheel, MouseEvent) == 0x000038, "Member 'PyWidget_PageView_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_PageView_OnMouseWheel, ReturnValue) == 0x0000B8, "Member 'PyWidget_PageView_OnMouseWheel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PageView_OnMouseWheel;
 
 }
 

@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Arrow_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Arrow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Arrow_C")
 	}
 	static class UWBP_Arrow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Arrow_C>();
 	}
 };
-static_assert(alignof(UWBP_Arrow_C) == 0x000008, "Wrong alignment on UWBP_Arrow_C");
-static_assert(sizeof(UWBP_Arrow_C) == 0x0003D0, "Wrong size on UWBP_Arrow_C");
-static_assert(offsetof(UWBP_Arrow_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Arrow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_C, Anim_Loop) == 0x0003C0, "Member 'UWBP_Arrow_C::Anim_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Arrow_C, Img_Arrow) == 0x0003C8, "Member 'UWBP_Arrow_C::Img_Arrow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Arrow_C;
 
 }
 

@@ -17,22 +17,23 @@ namespace SDK
 {
 
 // PythonClass PyLoginPanelV3.PyLoginPanelV3
-// 0x0078 (0x0670 - 0x05F8)
+// 0x0080 (0x0680 - 0x0600)
 class UPyLoginPanelV3 final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         StartTime;                                         // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartTimeWithLogo;                                 // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StartTimeWithoutLogo;                              // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnableLogo;                                      // 0x0604(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_605[0x3];                                      // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           InputAction_Thumbstick;                            // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           InputAction_StartGame;                             // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           InputAction_CancelGame;                            // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   IsLoadingPatchText;                                // 0x0620(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   IsCheckingPatchText;                               // 0x0638(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   IsVerifyingPatchText;                              // 0x0650(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnStartLogin;                              // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartTime;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartTimeWithLogo;                                 // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StartTimeWithoutLogo;                              // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnableLogo;                                      // 0x060C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60D[0x3];                                      // 0x060D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           InputAction_Thumbstick;                            // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           InputAction_StartGame;                             // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           InputAction_CancelGame;                            // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   IsLoadingPatchText;                                // 0x0628(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   IsCheckingPatchText;                               // 0x0640(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   IsVerifyingPatchText;                              // 0x0658(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnStartLogin;                              // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                LoginServerPanelClass;                             // 0x0678(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -48,26 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLoginPanelV3">();
+		STATIC_CLASS_IMPL("PyLoginPanelV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLoginPanelV3")
 	}
 	static class UPyLoginPanelV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLoginPanelV3>();
 	}
 };
-static_assert(alignof(UPyLoginPanelV3) == 0x000008, "Wrong alignment on UPyLoginPanelV3");
-static_assert(sizeof(UPyLoginPanelV3) == 0x000670, "Wrong size on UPyLoginPanelV3");
-static_assert(offsetof(UPyLoginPanelV3, StartTime) == 0x0005F8, "Member 'UPyLoginPanelV3::StartTime' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, StartTimeWithLogo) == 0x0005FC, "Member 'UPyLoginPanelV3::StartTimeWithLogo' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, StartTimeWithoutLogo) == 0x000600, "Member 'UPyLoginPanelV3::StartTimeWithoutLogo' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, IsEnableLogo) == 0x000604, "Member 'UPyLoginPanelV3::IsEnableLogo' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, InputAction_Thumbstick) == 0x000608, "Member 'UPyLoginPanelV3::InputAction_Thumbstick' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, InputAction_StartGame) == 0x000610, "Member 'UPyLoginPanelV3::InputAction_StartGame' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, InputAction_CancelGame) == 0x000618, "Member 'UPyLoginPanelV3::InputAction_CancelGame' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, IsLoadingPatchText) == 0x000620, "Member 'UPyLoginPanelV3::IsLoadingPatchText' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, IsCheckingPatchText) == 0x000638, "Member 'UPyLoginPanelV3::IsCheckingPatchText' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, IsVerifyingPatchText) == 0x000650, "Member 'UPyLoginPanelV3::IsVerifyingPatchText' has a wrong offset!");
-static_assert(offsetof(UPyLoginPanelV3, AkEvent_OnStartLogin) == 0x000668, "Member 'UPyLoginPanelV3::AkEvent_OnStartLogin' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLoginPanelV3;
 
 }
 

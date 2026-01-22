@@ -124,6 +124,31 @@ void UPyWidget_CommonItem::SetIsHover(bool IsHover_0)
 }
 
 
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnItemSelectionChanged
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bIsSelected                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::OnItemSelectionChanged(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "OnItemSelectionChanged");
+
+	Params::PyWidget_CommonItem_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnFocusReceived
 // (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -248,31 +273,6 @@ void UPyWidget_CommonItem::SetItemObject(class UObject* ItemObject_0)
 }
 
 
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.OnItemSelectionChanged
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bIsSelected                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::OnItemSelectionChanged(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "OnItemSelectionChanged");
-
-	Params::PyWidget_CommonItem_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemData
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -329,6 +329,31 @@ void UPyWidget_CommonItem::SetConvertNum(int32 ConvertNum, const class FString& 
 	Parms.ConvertNum = ConvertNum;
 	Parms.CurrencyID = std::move(CurrencyID);
 	Parms.Small = Small;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedTips
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsNeedTips_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetIsNeedTips(bool IsNeedTips_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsNeedTips");
+
+	Params::PyWidget_CommonItem_SetIsNeedTips Parms{};
+
+	Parms.IsNeedTips_0 = IsNeedTips_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -416,33 +441,6 @@ void UPyWidget_CommonItem::SetItemIcon(class UTexture2D* Img_Icon, TSoftObjectPt
 }
 
 
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemDynamicIcon
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    AtlasPath                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    SkeletonPath                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetItemDynamicIcon(const class FString& AtlasPath, const class FString& SkeletonPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetItemDynamicIcon");
-
-	Params::PyWidget_CommonItem_SetItemDynamicIcon Parms{};
-
-	Parms.AtlasPath = std::move(AtlasPath);
-	Parms.SkeletonPath = std::move(SkeletonPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemIconQuality
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -458,58 +456,6 @@ void UPyWidget_CommonItem::SetItemIconQuality(EItemQualityType ItemQuality)
 	Params::PyWidget_CommonItem_SetItemIconQuality Parms{};
 
 	Parms.ItemQuality = ItemQuality;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemNum
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ItemNum_0                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Multiple                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetItemNum(int32 ItemNum_0, int32 Multiple)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetItemNum");
-
-	Params::PyWidget_CommonItem_SetItemNum Parms{};
-
-	Parms.ItemNum_0 = ItemNum_0;
-	Parms.Multiple = Multiple;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNumVisible
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsNumVisible                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetIsNumVisible(bool IsNumVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsNumVisible");
-
-	Params::PyWidget_CommonItem_SetIsNumVisible Parms{};
-
-	Parms.IsNumVisible = IsNumVisible;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -560,31 +506,6 @@ void UPyWidget_CommonItem::SetIsNeedClick(bool IsNeedClick_0)
 	Params::PyWidget_CommonItem_SetIsNeedClick Parms{};
 
 	Parms.IsNeedClick_0 = IsNeedClick_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNeedTips
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsNeedTips_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetIsNeedTips(bool IsNeedTips_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsNeedTips");
-
-	Params::PyWidget_CommonItem_SetIsNeedTips Parms{};
-
-	Parms.IsNeedTips_0 = IsNeedTips_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -670,31 +591,6 @@ void UPyWidget_CommonItem::SetIsGot(bool IsGot_0)
 }
 
 
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsExpire
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsExpire_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetIsExpire(bool IsExpire_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsExpire");
-
-	Params::PyWidget_CommonItem_SetIsExpire Parms{};
-
-	Parms.IsExpire_0 = IsExpire_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsActivity
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -710,56 +606,6 @@ void UPyWidget_CommonItem::SetIsActivity(bool IsActivity)
 	Params::PyWidget_CommonItem_SetIsActivity Parms{};
 
 	Parms.IsActivity = IsActivity;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsLimitTime
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsLimitTime_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetIsLimitTime(bool IsLimitTime_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsLimitTime");
-
-	Params::PyWidget_CommonItem_SetIsLimitTime Parms{};
-
-	Parms.IsLimitTime_0 = IsLimitTime_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetTimeColorState
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// EItemTimeColorState                     time_color_state                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_CommonItem::SetTimeColorState(EItemTimeColorState time_color_state)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CommonItem", "SetTimeColorState");
-
-	Params::PyWidget_CommonItem_SetTimeColorState Parms{};
-
-	Parms.time_color_state = time_color_state;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -885,6 +731,187 @@ void UPyWidget_CommonItem::SetIsOverlay(bool IsOverlay)
 	Params::PyWidget_CommonItem_SetIsOverlay Parms{};
 
 	Parms.IsOverlay = IsOverlay;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemTag
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FText&                      Content                                                (Parm)
+// const class FString&                    Color                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetItemTag(const class FText& Content, const class FString& Color)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetItemTag");
+
+	Params::PyWidget_CommonItem_SetItemTag Parms{};
+
+	Parms.Content = std::move(Content);
+	Parms.Color = std::move(Color);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemNum
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ItemNum_0                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Multiple                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetItemNum(int32 ItemNum_0, int32 Multiple)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetItemNum");
+
+	Params::PyWidget_CommonItem_SetItemNum Parms{};
+
+	Parms.ItemNum_0 = ItemNum_0;
+	Parms.Multiple = Multiple;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsNumVisible
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsNumVisible                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetIsNumVisible(bool IsNumVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsNumVisible");
+
+	Params::PyWidget_CommonItem_SetIsNumVisible Parms{};
+
+	Parms.IsNumVisible = IsNumVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsExpire
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsExpire_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetIsExpire(bool IsExpire_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsExpire");
+
+	Params::PyWidget_CommonItem_SetIsExpire Parms{};
+
+	Parms.IsExpire_0 = IsExpire_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetIsLimitTime
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsLimitTime_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetIsLimitTime(bool IsLimitTime_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetIsLimitTime");
+
+	Params::PyWidget_CommonItem_SetIsLimitTime Parms{};
+
+	Parms.IsLimitTime_0 = IsLimitTime_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetTimeColorState
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// EItemTimeColorState                     time_color_state                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetTimeColorState(EItemTimeColorState time_color_state)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetTimeColorState");
+
+	Params::PyWidget_CommonItem_SetTimeColorState Parms{};
+
+	Parms.time_color_state = time_color_state;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CommonItem_V2.PyWidget_CommonItem.SetItemSpineIcon
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    AtlasPath                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    SkeletonPath                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyWidget_CommonItem::SetItemSpineIcon(const class FString& AtlasPath, const class FString& SkeletonPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CommonItem", "SetItemSpineIcon");
+
+	Params::PyWidget_CommonItem_SetItemSpineIcon Parms{};
+
+	Parms.AtlasPath = std::move(AtlasPath);
+	Parms.SkeletonPath = std::move(SkeletonPath);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -36,6 +36,69 @@ void UPyWidget_M2201SwitchPanel::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_M2201SwitchPanel.PyWidget_M2201SwitchPanel.OnAnimationFinished
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_M2201SwitchPanel::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_M2201SwitchPanel", "OnAnimationFinished");
+
+	Params::PyWidget_M2201SwitchPanel_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_M2201SwitchPanel.PyWidget_M2201SwitchPanel.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_M2201SwitchPanel::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_M2201SwitchPanel", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_M2201SwitchPanel.PyWidget_M2201SwitchPanel.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_M2201SwitchPanel::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_M2201SwitchPanel", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_M2201SwitchPanel.PyWidget_M2201SwitchPanel.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

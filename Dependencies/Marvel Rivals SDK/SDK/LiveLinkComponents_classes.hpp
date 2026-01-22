@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "LiveLinkInterface_structs.hpp"
-#include "LiveLinkComponents_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "LiveLinkInterface_structs.hpp"
+#include "LiveLinkComponents_structs.hpp"
 
 
 namespace SDK
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkComponentSettings">();
+		STATIC_CLASS_IMPL("LiveLinkComponentSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkComponentSettings")
 	}
 	static class ULiveLinkComponentSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkComponentSettings>();
 	}
 };
-static_assert(alignof(ULiveLinkComponentSettings) == 0x000008, "Wrong alignment on ULiveLinkComponentSettings");
-static_assert(sizeof(ULiveLinkComponentSettings) == 0x000080, "Wrong size on ULiveLinkComponentSettings");
-static_assert(offsetof(ULiveLinkComponentSettings, DefaultControllerForRole) == 0x000030, "Member 'ULiveLinkComponentSettings::DefaultControllerForRole' has a wrong offset!");
+DUMPER7_ASSERTS_ULiveLinkComponentSettings;
 
 // Class LiveLinkComponents.LiveLinkControllerBase
 // 0x0050 (0x0080 - 0x0030)
@@ -52,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkControllerBase">();
+		STATIC_CLASS_IMPL("LiveLinkControllerBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkControllerBase")
 	}
 	static class ULiveLinkControllerBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkControllerBase>();
 	}
 };
-static_assert(alignof(ULiveLinkControllerBase) == 0x000008, "Wrong alignment on ULiveLinkControllerBase");
-static_assert(sizeof(ULiveLinkControllerBase) == 0x000080, "Wrong size on ULiveLinkControllerBase");
-static_assert(offsetof(ULiveLinkControllerBase, ComponentPicker) == 0x000030, "Member 'ULiveLinkControllerBase::ComponentPicker' has a wrong offset!");
+DUMPER7_ASSERTS_ULiveLinkControllerBase;
 
 // Class LiveLinkComponents.LiveLinkLightController
 // 0x0000 (0x0080 - 0x0080)
@@ -70,15 +74,18 @@ class ULiveLinkLightController final : public ULiveLinkControllerBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkLightController">();
+		STATIC_CLASS_IMPL("LiveLinkLightController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkLightController")
 	}
 	static class ULiveLinkLightController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkLightController>();
 	}
 };
-static_assert(alignof(ULiveLinkLightController) == 0x000008, "Wrong alignment on ULiveLinkLightController");
-static_assert(sizeof(ULiveLinkLightController) == 0x000080, "Wrong size on ULiveLinkLightController");
+DUMPER7_ASSERTS_ULiveLinkLightController;
 
 // Class LiveLinkComponents.LiveLinkTransformController
 // 0x0008 (0x0088 - 0x0080)
@@ -91,16 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkTransformController">();
+		STATIC_CLASS_IMPL("LiveLinkTransformController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkTransformController")
 	}
 	static class ULiveLinkTransformController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkTransformController>();
 	}
 };
-static_assert(alignof(ULiveLinkTransformController) == 0x000008, "Wrong alignment on ULiveLinkTransformController");
-static_assert(sizeof(ULiveLinkTransformController) == 0x000088, "Wrong size on ULiveLinkTransformController");
-static_assert(offsetof(ULiveLinkTransformController, TransformData) == 0x000080, "Member 'ULiveLinkTransformController::TransformData' has a wrong offset!");
+DUMPER7_ASSERTS_ULiveLinkTransformController;
 
 // Class LiveLinkComponents.LiveLinkComponentController
 // 0x00B0 (0x01B8 - 0x0108)
@@ -126,23 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkComponentController">();
+		STATIC_CLASS_IMPL("LiveLinkComponentController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkComponentController")
 	}
 	static class ULiveLinkComponentController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkComponentController>();
 	}
 };
-static_assert(alignof(ULiveLinkComponentController) == 0x000008, "Wrong alignment on ULiveLinkComponentController");
-static_assert(sizeof(ULiveLinkComponentController) == 0x0001B8, "Wrong size on ULiveLinkComponentController");
-static_assert(offsetof(ULiveLinkComponentController, SubjectRepresentation) == 0x000108, "Member 'ULiveLinkComponentController::SubjectRepresentation' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, ControllerMap) == 0x000120, "Member 'ULiveLinkComponentController::ControllerMap' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, bUpdateInEditor) == 0x000170, "Member 'ULiveLinkComponentController::bUpdateInEditor' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, OnLiveLinkUpdated) == 0x000178, "Member 'ULiveLinkComponentController::OnLiveLinkUpdated' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, OnControllerMapUpdatedDelegate) == 0x000188, "Member 'ULiveLinkComponentController::OnControllerMapUpdatedDelegate' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, bDisableEvaluateLiveLinkWhenSpawnable) == 0x000198, "Member 'ULiveLinkComponentController::bDisableEvaluateLiveLinkWhenSpawnable' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, bEvaluateLiveLink) == 0x000199, "Member 'ULiveLinkComponentController::bEvaluateLiveLink' has a wrong offset!");
-static_assert(offsetof(ULiveLinkComponentController, bUpdateInPreviewEditor) == 0x00019A, "Member 'ULiveLinkComponentController::bUpdateInPreviewEditor' has a wrong offset!");
+DUMPER7_ASSERTS_ULiveLinkComponentController;
 
 }
 

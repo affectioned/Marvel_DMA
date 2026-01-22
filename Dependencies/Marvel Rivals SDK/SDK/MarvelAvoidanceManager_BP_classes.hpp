@@ -23,15 +23,18 @@ class UMarvelAvoidanceManager_BP_C final : public UMarvelAvoidanceManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelAvoidanceManager_BP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelAvoidanceManager_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAvoidanceManager_BP_C")
 	}
 	static class UMarvelAvoidanceManager_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAvoidanceManager_BP_C>();
 	}
 };
-static_assert(alignof(UMarvelAvoidanceManager_BP_C) == 0x000008, "Wrong alignment on UMarvelAvoidanceManager_BP_C");
-static_assert(sizeof(UMarvelAvoidanceManager_BP_C) == 0x0001C8, "Wrong size on UMarvelAvoidanceManager_BP_C");
+DUMPER7_ASSERTS_UMarvelAvoidanceManager_BP_C;
 
 }
 

@@ -33,17 +33,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP) == 0x000010, "Wrong alignment on BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP");
-static_assert(sizeof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP) == 0x0000D0, "Wrong size on BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, EntryPoint) == 0x000000, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, K2Node_CustomEvent_Active) == 0x000004, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::K2Node_CustomEvent_Active' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, CallFunc_GetGameplayAbility_ReturnValue) == 0x000008, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::CallFunc_GetGameplayAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, K2Node_MakeStruct_MarvelAbilitySocketInfo) == 0x000010, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::K2Node_MakeStruct_MarvelAbilitySocketInfo' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, K2Node_Event_InTag) == 0x0000B0, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::K2Node_Event_InTag' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, K2Node_Event_Count) == 0x0000BC, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::K2Node_Event_Count' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, CallFunc_SpawnSummonedTask_ReturnValue) == 0x0000C0, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::CallFunc_SpawnSummonedTask_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C8, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x0000C9, "Member 'BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446190_BP_C_ExecuteUbergraph_BuffAbility_10130_10446190_BP;
 
 // Function BuffAbility_10130_10446190_BP.BuffAbility_10130_10446190_BP_C.OnAbilityRightActive
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +42,7 @@ struct BuffAbility_10130_10446190_BP_C_OnAbilityRightActive final
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446190_BP_C_OnAbilityRightActive) == 0x000001, "Wrong alignment on BuffAbility_10130_10446190_BP_C_OnAbilityRightActive");
-static_assert(sizeof(BuffAbility_10130_10446190_BP_C_OnAbilityRightActive) == 0x000001, "Wrong size on BuffAbility_10130_10446190_BP_C_OnAbilityRightActive");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_OnAbilityRightActive, Active) == 0x000000, "Member 'BuffAbility_10130_10446190_BP_C_OnAbilityRightActive::Active' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446190_BP_C_OnAbilityRightActive;
 
 // Function BuffAbility_10130_10446190_BP.BuffAbility_10130_10446190_BP_C.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +52,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate");
-static_assert(sizeof(BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10130_10446190_BP_C_OnGenericGameplayTagUpdate;
 
 }
 

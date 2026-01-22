@@ -23,9 +23,7 @@ struct PyAbility_105341_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105341_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105341_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105341_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105341_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105341_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105341_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105341_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105341.PyAbility_105341.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_105341_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105341_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_105341_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_105341_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_105341_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_105341_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_105341_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105341_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_105341.PyAbility_105341.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_105341_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105341_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_105341_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_105341_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_105341_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_105341_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_105341_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105341_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_105341.PyAbility_105341.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAbility_105341_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105341_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_105341_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_105341_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_105341_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_105341_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_105341_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105341_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_105341.PyCueNotify_Buff_Loop_10534101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -68,10 +60,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCueNotify_Buff_Loop_10534101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCueNotify_Buff_Loop_10534101_OnExecuteFX");
-static_assert(sizeof(PyCueNotify_Buff_Loop_10534101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCueNotify_Buff_Loop_10534101_OnExecuteFX");
-static_assert(offsetof(PyCueNotify_Buff_Loop_10534101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCueNotify_Buff_Loop_10534101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCueNotify_Buff_Loop_10534101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCueNotify_Buff_Loop_10534101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCueNotify_Buff_Loop_10534101_OnExecuteFX;
 
 }
 

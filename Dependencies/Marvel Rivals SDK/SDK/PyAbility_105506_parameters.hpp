@@ -23,9 +23,7 @@ struct PyAbility_105506_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105506_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105506_CanActivate");
-static_assert(sizeof(PyAbility_105506_CanActivate) == 0x000001, "Wrong size on PyAbility_105506_CanActivate");
-static_assert(offsetof(PyAbility_105506_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105506_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105506_CanActivate;
 
 // PythonFunction PyAbility_105506.PyAbility_105506.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_105506_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105506_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_105506_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_105506_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_105506_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_105506_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_105506_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105506_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_105506.PyAbility_105506.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_105506_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105506_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_105506_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_105506_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_105506_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_105506_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_105506_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105506_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_105506.PyAbility_105506.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAbility_105506_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105506_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_105506_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_105506_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_105506_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_105506_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_105506_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105506_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_105506.PyAbility_105506.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyAbility_105506_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105506_OnDashFinish) == 0x000001, "Wrong alignment on PyAbility_105506_OnDashFinish");
-static_assert(sizeof(PyAbility_105506_OnDashFinish) == 0x000001, "Wrong size on PyAbility_105506_OnDashFinish");
-static_assert(offsetof(PyAbility_105506_OnDashFinish, Reason) == 0x000000, "Member 'PyAbility_105506_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105506_OnDashFinish;
 
 }
 

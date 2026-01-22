@@ -20,20 +20,16 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_101711.PyAbility_101711.ModifyDeathImpulseInfo
-// 0x07C0 (0x07C0 - 0x0000)
+// 0x07D8 (0x07D8 - 0x0000)
 struct PyAbility_101711_ModifyDeathImpulseInfo final
 {
 public:
 	int32                                         ImpulseLevel;                                      // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                DeathDir;                                          // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0020(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0020(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_101711_ModifyDeathImpulseInfo) == 0x000008, "Wrong alignment on PyAbility_101711_ModifyDeathImpulseInfo");
-static_assert(sizeof(PyAbility_101711_ModifyDeathImpulseInfo) == 0x0007C0, "Wrong size on PyAbility_101711_ModifyDeathImpulseInfo");
-static_assert(offsetof(PyAbility_101711_ModifyDeathImpulseInfo, ImpulseLevel) == 0x000000, "Member 'PyAbility_101711_ModifyDeathImpulseInfo::ImpulseLevel' has a wrong offset!");
-static_assert(offsetof(PyAbility_101711_ModifyDeathImpulseInfo, DeathDir) == 0x000008, "Member 'PyAbility_101711_ModifyDeathImpulseInfo::DeathDir' has a wrong offset!");
-static_assert(offsetof(PyAbility_101711_ModifyDeathImpulseInfo, ModifierParameter) == 0x000020, "Member 'PyAbility_101711_ModifyDeathImpulseInfo::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101711_ModifyDeathImpulseInfo;
 
 // PythonFunction PyAbility_101711.PyUIController_101711.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -43,21 +39,16 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101711_OnTagUpdate) == 0x000004, "Wrong alignment on PyUIController_101711_OnTagUpdate");
-static_assert(sizeof(PyUIController_101711_OnTagUpdate) == 0x000010, "Wrong size on PyUIController_101711_OnTagUpdate");
-static_assert(offsetof(PyUIController_101711_OnTagUpdate, Tag) == 0x000000, "Member 'PyUIController_101711_OnTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyUIController_101711_OnTagUpdate, Exist) == 0x00000C, "Member 'PyUIController_101711_OnTagUpdate::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101711_OnTagUpdate;
 
 // PythonFunction PyAbility_101711.PyProjectile_10171102.K2_OnFlyOverMaxDistance
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10171102_K2_OnFlyOverMaxDistance final
 {
 public:
-	struct FHitResult                             HitResult;                                         // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             HitResult;                                         // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10171102_K2_OnFlyOverMaxDistance) == 0x000008, "Wrong alignment on PyProjectile_10171102_K2_OnFlyOverMaxDistance");
-static_assert(sizeof(PyProjectile_10171102_K2_OnFlyOverMaxDistance) == 0x0001F0, "Wrong size on PyProjectile_10171102_K2_OnFlyOverMaxDistance");
-static_assert(offsetof(PyProjectile_10171102_K2_OnFlyOverMaxDistance, HitResult) == 0x000000, "Member 'PyProjectile_10171102_K2_OnFlyOverMaxDistance::HitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10171102_K2_OnFlyOverMaxDistance;
 
 }
 

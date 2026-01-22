@@ -25,11 +25,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara");
-static_assert(sizeof(PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara) == 0x0001E0, "Wrong size on PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara");
-static_assert(offsetof(PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara, InNSComponent) == 0x000000, "Member 'PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara::InNSComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara, MyTarget) == 0x000008, "Member 'PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara, Parameters) == 0x000010, "Member 'PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10418101_OnSpawnedInstantNiagara;
 
 // PythonFunction PyAbility_104181.PyAbility_104181.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -38,9 +34,7 @@ struct PyAbility_104181_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104181_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_104181_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_104181_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_104181_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_104181_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_104181_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104181_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_104181.PyAbility_104181.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -49,9 +43,7 @@ struct PyAbility_104181_NativeOnMontageEvent final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104181_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104181_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104181_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104181_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104181_NativeOnMontageEvent, EventTag) == 0x000000, "Member 'PyAbility_104181_NativeOnMontageEvent::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104181_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_104181.PyUIController_104181.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -62,10 +54,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_104181_SetAbility) == 0x000008, "Wrong alignment on PyUIController_104181_SetAbility");
-static_assert(sizeof(PyUIController_104181_SetAbility) == 0x000010, "Wrong size on PyUIController_104181_SetAbility");
-static_assert(offsetof(PyUIController_104181_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_104181_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_104181_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_104181_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_104181_SetAbility;
 
 }
 

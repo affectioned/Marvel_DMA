@@ -71,9 +71,7 @@ struct FMarvelSessionCustomData final
 public:
 	TMap<class FString, class FString>            Settings;                                          // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMarvelSessionCustomData) == 0x000008, "Wrong alignment on FMarvelSessionCustomData");
-static_assert(sizeof(FMarvelSessionCustomData) == 0x000050, "Wrong size on FMarvelSessionCustomData");
-static_assert(offsetof(FMarvelSessionCustomData, Settings) == 0x000000, "Member 'FMarvelSessionCustomData::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelSessionCustomData;
 
 }
 

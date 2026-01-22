@@ -41,20 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoorMesh">();
+		STATIC_CLASS_IMPL("PyDoorMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoorMesh")
 	}
 	static class APyDoorMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoorMesh>();
 	}
 };
-static_assert(alignof(APyDoorMesh) == 0x000010, "Wrong alignment on APyDoorMesh");
-static_assert(sizeof(APyDoorMesh) == 0x000790, "Wrong size on APyDoorMesh");
-static_assert(offsetof(APyDoorMesh, OpenState) == 0x000760, "Member 'APyDoorMesh::OpenState' has a wrong offset!");
-static_assert(offsetof(APyDoorMesh, DeltaMove) == 0x000768, "Member 'APyDoorMesh::DeltaMove' has a wrong offset!");
-static_assert(offsetof(APyDoorMesh, AnimSpeed) == 0x000780, "Member 'APyDoorMesh::AnimSpeed' has a wrong offset!");
-static_assert(offsetof(APyDoorMesh, Delay) == 0x000784, "Member 'APyDoorMesh::Delay' has a wrong offset!");
-static_assert(offsetof(APyDoorMesh, AudioEvent) == 0x000788, "Member 'APyDoorMesh::AudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoorMesh;
 
 }
 

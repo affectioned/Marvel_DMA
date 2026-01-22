@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_WeaponAmmoBuffDuration.WBP_WeaponAmmoBuffDuration_C
-// 0x0010 (0x1C30 - 0x1C20)
+// 0x0010 (0x1CD8 - 0x1CC8)
 class UWBP_WeaponAmmoBuffDuration_C final : public UWidget_AbilityDuration
 {
 public:
-	class UMarvelImage*                           Img_CountdownBar;                                  // 0x1C20(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_SmallBar;                                  // 0x1C28(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_CountdownBar;                                  // 0x1CC8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_SmallBar;                                  // 0x1CD0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_WeaponAmmoBuffDuration_C">();
+		BP_STATIC_CLASS_IMPL("WBP_WeaponAmmoBuffDuration_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_WeaponAmmoBuffDuration_C")
 	}
 	static class UWBP_WeaponAmmoBuffDuration_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_WeaponAmmoBuffDuration_C>();
 	}
 };
-static_assert(alignof(UWBP_WeaponAmmoBuffDuration_C) == 0x000008, "Wrong alignment on UWBP_WeaponAmmoBuffDuration_C");
-static_assert(sizeof(UWBP_WeaponAmmoBuffDuration_C) == 0x001C30, "Wrong size on UWBP_WeaponAmmoBuffDuration_C");
-static_assert(offsetof(UWBP_WeaponAmmoBuffDuration_C, Img_CountdownBar) == 0x001C20, "Member 'UWBP_WeaponAmmoBuffDuration_C::Img_CountdownBar' has a wrong offset!");
-static_assert(offsetof(UWBP_WeaponAmmoBuffDuration_C, Overlay_SmallBar) == 0x001C28, "Member 'UWBP_WeaponAmmoBuffDuration_C::Overlay_SmallBar' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_WeaponAmmoBuffDuration_C;
 
 }
 

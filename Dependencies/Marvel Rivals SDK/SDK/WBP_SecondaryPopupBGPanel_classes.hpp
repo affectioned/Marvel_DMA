@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SecondaryPopupBGPanel.WBP_SecondaryPopupBGPanel_C
-// 0x0018 (0x0628 - 0x0610)
+// 0x0018 (0x0630 - 0x0618)
 class UWBP_SecondaryPopupBGPanel_C final : public UPyWidget_SecondaryPopupBGPanel
 {
 public:
-	class UMarvelOverlay*                         Overlay_BG;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Panel_A_C*                  WBP_Common_Panel;                                  // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Panel_B_C*                  WBP_Common_Panel_B;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_BG;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Panel_A_C*                  WBP_Common_Panel;                                  // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Panel_B_C*                  WBP_Common_Panel_B;                                // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SecondaryPopupBGPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SecondaryPopupBGPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SecondaryPopupBGPanel_C")
 	}
 	static class UWBP_SecondaryPopupBGPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SecondaryPopupBGPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_SecondaryPopupBGPanel_C) == 0x000008, "Wrong alignment on UWBP_SecondaryPopupBGPanel_C");
-static_assert(sizeof(UWBP_SecondaryPopupBGPanel_C) == 0x000628, "Wrong size on UWBP_SecondaryPopupBGPanel_C");
-static_assert(offsetof(UWBP_SecondaryPopupBGPanel_C, Overlay_BG) == 0x000610, "Member 'UWBP_SecondaryPopupBGPanel_C::Overlay_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_SecondaryPopupBGPanel_C, WBP_Common_Panel) == 0x000618, "Member 'UWBP_SecondaryPopupBGPanel_C::WBP_Common_Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_SecondaryPopupBGPanel_C, WBP_Common_Panel_B) == 0x000620, "Member 'UWBP_SecondaryPopupBGPanel_C::WBP_Common_Panel_B' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SecondaryPopupBGPanel_C;
 
 }
 

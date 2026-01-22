@@ -30,24 +30,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLODCollectorProcessor">();
+		STATIC_CLASS_IMPL("MassLODCollectorProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLODCollectorProcessor")
 	}
 	static class UMassLODCollectorProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLODCollectorProcessor>();
 	}
 };
-static_assert(alignof(UMassLODCollectorProcessor) == 0x000008, "Wrong alignment on UMassLODCollectorProcessor");
-static_assert(sizeof(UMassLODCollectorProcessor) == 0x000B60, "Wrong size on UMassLODCollectorProcessor");
+DUMPER7_ASSERTS_UMassLODCollectorProcessor;
 
 // Class MassLOD.MassLODSubsystem
-// 0x00B0 (0x00F8 - 0x0048)
+// 0x00B0 (0x0100 - 0x0050)
 class UMassLODSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	TArray<struct FViewerInfo>                    Viewers;                                           // 0x0048(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	TMap<uint32, struct FMassViewerHandle>        ViewerMap;                                         // 0x0058(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A8[0x50];                                      // 0x00A8(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<struct FViewerInfo>                    Viewers;                                           // 0x0050(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	TMap<uint32, struct FMassViewerHandle>        ViewerMap;                                         // 0x0060(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_B0[0x50];                                      // 0x00B0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnPlayerControllerEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason);
@@ -55,17 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLODSubsystem">();
+		STATIC_CLASS_IMPL("MassLODSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLODSubsystem")
 	}
 	static class UMassLODSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLODSubsystem>();
 	}
 };
-static_assert(alignof(UMassLODSubsystem) == 0x000008, "Wrong alignment on UMassLODSubsystem");
-static_assert(sizeof(UMassLODSubsystem) == 0x0000F8, "Wrong size on UMassLODSubsystem");
-static_assert(offsetof(UMassLODSubsystem, Viewers) == 0x000048, "Member 'UMassLODSubsystem::Viewers' has a wrong offset!");
-static_assert(offsetof(UMassLODSubsystem, ViewerMap) == 0x000058, "Member 'UMassLODSubsystem::ViewerMap' has a wrong offset!");
+DUMPER7_ASSERTS_UMassLODSubsystem;
 
 // Class MassLOD.MassLODCollectorTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -74,15 +78,18 @@ class UMassLODCollectorTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassLODCollectorTrait">();
+		STATIC_CLASS_IMPL("MassLODCollectorTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassLODCollectorTrait")
 	}
 	static class UMassLODCollectorTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassLODCollectorTrait>();
 	}
 };
-static_assert(alignof(UMassLODCollectorTrait) == 0x000008, "Wrong alignment on UMassLODCollectorTrait");
-static_assert(sizeof(UMassLODCollectorTrait) == 0x000030, "Wrong size on UMassLODCollectorTrait");
+DUMPER7_ASSERTS_UMassLODCollectorTrait;
 
 // Class MassLOD.MassSimulationLODTrait
 // 0x0040 (0x0070 - 0x0030)
@@ -97,18 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimulationLODTrait">();
+		STATIC_CLASS_IMPL("MassSimulationLODTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimulationLODTrait")
 	}
 	static class UMassSimulationLODTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimulationLODTrait>();
 	}
 };
-static_assert(alignof(UMassSimulationLODTrait) == 0x000008, "Wrong alignment on UMassSimulationLODTrait");
-static_assert(sizeof(UMassSimulationLODTrait) == 0x000070, "Wrong size on UMassSimulationLODTrait");
-static_assert(offsetof(UMassSimulationLODTrait, Params_0) == 0x000030, "Member 'UMassSimulationLODTrait::Params_0' has a wrong offset!");
-static_assert(offsetof(UMassSimulationLODTrait, bEnableVariableTicking) == 0x000058, "Member 'UMassSimulationLODTrait::bEnableVariableTicking' has a wrong offset!");
-static_assert(offsetof(UMassSimulationLODTrait, VariableTickParams) == 0x00005C, "Member 'UMassSimulationLODTrait::VariableTickParams' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSimulationLODTrait;
 
 // Class MassLOD.MassSimulationLODProcessor
 // 0x0D28 (0x0DF0 - 0x00C8)
@@ -120,15 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimulationLODProcessor">();
+		STATIC_CLASS_IMPL("MassSimulationLODProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimulationLODProcessor")
 	}
 	static class UMassSimulationLODProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimulationLODProcessor>();
 	}
 };
-static_assert(alignof(UMassSimulationLODProcessor) == 0x000008, "Wrong alignment on UMassSimulationLODProcessor");
-static_assert(sizeof(UMassSimulationLODProcessor) == 0x000DF0, "Wrong size on UMassSimulationLODProcessor");
+DUMPER7_ASSERTS_UMassSimulationLODProcessor;
 
 }
 

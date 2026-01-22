@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity143_Lottery.PyWidget_Activity143_Lottery
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Activity143_Lottery final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<class UTexture2D*>                     CandyIconList;                                     // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     CandyIconList;                                     // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_Lottery">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_Lottery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_Lottery")
 	}
 	static class UPyWidget_Activity143_Lottery* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_Lottery>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_Lottery) == 0x000008, "Wrong alignment on UPyWidget_Activity143_Lottery");
-static_assert(sizeof(UPyWidget_Activity143_Lottery) == 0x000608, "Wrong size on UPyWidget_Activity143_Lottery");
-static_assert(offsetof(UPyWidget_Activity143_Lottery, CandyIconList) == 0x0005F8, "Member 'UPyWidget_Activity143_Lottery::CandyIconList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity143_Lottery;
 
 }
 

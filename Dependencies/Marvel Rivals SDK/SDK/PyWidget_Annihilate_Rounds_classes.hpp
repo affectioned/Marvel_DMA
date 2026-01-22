@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Annihilate_Rounds.PyWidget_Annihilate_Rounds
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Annihilate_Rounds final : public UPyMarvelUserWidget
 {
 public:
@@ -28,32 +28,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_Rounds">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_Rounds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_Rounds")
 	}
 	static class UPyWidget_Annihilate_Rounds* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_Rounds>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_Rounds) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_Rounds");
-static_assert(sizeof(UPyWidget_Annihilate_Rounds) == 0x0005C0, "Wrong size on UPyWidget_Annihilate_Rounds");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_Rounds;
 
 // PythonClass PyWidget_Annihilate_Rounds.PyWidget_Annihilate_Rounds_Unit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Annihilate_Rounds_Unit final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_Rounds_Unit">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_Rounds_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_Rounds_Unit")
 	}
 	static class UPyWidget_Annihilate_Rounds_Unit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_Rounds_Unit>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_Rounds_Unit) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_Rounds_Unit");
-static_assert(sizeof(UPyWidget_Annihilate_Rounds_Unit) == 0x0005C0, "Wrong size on UPyWidget_Annihilate_Rounds_Unit");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_Rounds_Unit;
 
 }
 

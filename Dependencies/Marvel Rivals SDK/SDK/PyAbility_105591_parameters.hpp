@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105591_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_105591_OnTagUpdate");
-static_assert(sizeof(PyAbility_105591_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_105591_OnTagUpdate");
-static_assert(offsetof(PyAbility_105591_OnTagUpdate, tag) == 0x000000, "Member 'PyAbility_105591_OnTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_105591_OnTagUpdate, exist) == 0x00000C, "Member 'PyAbility_105591_OnTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105591_OnTagUpdate;
 
 // PythonFunction PyAbility_105591.PyAbility_105591.ListenHuntingTarget
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyAbility_105591_ListenHuntingTarget final
 public:
 	bool                                          is_enable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105591_ListenHuntingTarget) == 0x000001, "Wrong alignment on PyAbility_105591_ListenHuntingTarget");
-static_assert(sizeof(PyAbility_105591_ListenHuntingTarget) == 0x000001, "Wrong size on PyAbility_105591_ListenHuntingTarget");
-static_assert(offsetof(PyAbility_105591_ListenHuntingTarget, is_enable) == 0x000000, "Member 'PyAbility_105591_ListenHuntingTarget::is_enable' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105591_ListenHuntingTarget;
 
 // PythonFunction PyAbility_105591.PyAbility_105591.OnSetActiveTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyAbility_105591_OnSetActiveTarget final
 public:
 	class AActor*                                 target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105591_OnSetActiveTarget) == 0x000008, "Wrong alignment on PyAbility_105591_OnSetActiveTarget");
-static_assert(sizeof(PyAbility_105591_OnSetActiveTarget) == 0x000008, "Wrong size on PyAbility_105591_OnSetActiveTarget");
-static_assert(offsetof(PyAbility_105591_OnSetActiveTarget, target) == 0x000000, "Member 'PyAbility_105591_OnSetActiveTarget::target' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105591_OnSetActiveTarget;
 
 }
 

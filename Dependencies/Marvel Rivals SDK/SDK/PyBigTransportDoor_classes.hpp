@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FXStartNotify">();
+		STATIC_CLASS_IMPL("FXStartNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FXStartNotify")
 	}
 	static class UFXStartNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFXStartNotify>();
 	}
 };
-static_assert(alignof(UFXStartNotify) == 0x000008, "Wrong alignment on UFXStartNotify");
-static_assert(sizeof(UFXStartNotify) == 0x000040, "Wrong size on UFXStartNotify");
+DUMPER7_ASSERTS_UFXStartNotify;
 
 // PythonClass PyBigTransportDoor.FXEndNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -49,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FXEndNotify">();
+		STATIC_CLASS_IMPL("FXEndNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FXEndNotify")
 	}
 	static class UFXEndNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFXEndNotify>();
 	}
 };
-static_assert(alignof(UFXEndNotify) == 0x000008, "Wrong alignment on UFXEndNotify");
-static_assert(sizeof(UFXEndNotify) == 0x000040, "Wrong size on UFXEndNotify");
+DUMPER7_ASSERTS_UFXEndNotify;
 
 // PythonClass PyBigTransportDoor.FXLoopEndNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -69,15 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FXLoopEndNotify">();
+		STATIC_CLASS_IMPL("FXLoopEndNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FXLoopEndNotify")
 	}
 	static class UFXLoopEndNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFXLoopEndNotify>();
 	}
 };
-static_assert(alignof(UFXLoopEndNotify) == 0x000008, "Wrong alignment on UFXLoopEndNotify");
-static_assert(sizeof(UFXLoopEndNotify) == 0x000040, "Wrong size on UFXLoopEndNotify");
+DUMPER7_ASSERTS_UFXLoopEndNotify;
 
 // PythonClass PyBigTransportDoor.PyBigTransportDoor
 // 0x0040 (0x0720 - 0x06E0)
@@ -101,21 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBigTransportDoor">();
+		STATIC_CLASS_IMPL("PyBigTransportDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBigTransportDoor")
 	}
 	static class APyBigTransportDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBigTransportDoor>();
 	}
 };
-static_assert(alignof(APyBigTransportDoor) == 0x000010, "Wrong alignment on APyBigTransportDoor");
-static_assert(sizeof(APyBigTransportDoor) == 0x000720, "Wrong size on APyBigTransportDoor");
-static_assert(offsetof(APyBigTransportDoor, StartNS) == 0x0006E0, "Member 'APyBigTransportDoor::StartNS' has a wrong offset!");
-static_assert(offsetof(APyBigTransportDoor, LoopNS) == 0x0006E8, "Member 'APyBigTransportDoor::LoopNS' has a wrong offset!");
-static_assert(offsetof(APyBigTransportDoor, EndNS) == 0x0006F0, "Member 'APyBigTransportDoor::EndNS' has a wrong offset!");
-static_assert(offsetof(APyBigTransportDoor, OpenAudioEvent) == 0x0006F8, "Member 'APyBigTransportDoor::OpenAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyBigTransportDoor, CloseAudioEvent) == 0x000700, "Member 'APyBigTransportDoor::CloseAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyBigTransportDoor, State) == 0x000708, "Member 'APyBigTransportDoor::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyBigTransportDoor;
 
 }
 

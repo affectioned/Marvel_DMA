@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_AddDamageToTreat.PyBuffAbility_120_AddDamageToTreat
-// 0x0458 (0x17C8 - 0x1370)
+// 0x0598 (0x1920 - 0x1388)
 class UPyBuffAbility_120_AddDamageToTreat final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         TreatToDamageRatio;                                // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo;                           // 0x1378(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo1;                          // 0x1478(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo2;                          // 0x1578(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo3;                          // 0x1678(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<int32, TArray<int32>>                    HeroTreatWithDamageScopeInfo;                      // 0x1778(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         TreatToDamageRatio;                                // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo;                           // 0x1390(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo1;                          // 0x14E0(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo2;                          // 0x1630(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     DamageScopeBuffSpecInfo3;                          // 0x1780(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<int32, TArray<int32>>                    HeroTreatWithDamageScopeInfo;                      // 0x18D0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_AddDamageToTreat">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_AddDamageToTreat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_AddDamageToTreat")
 	}
 	static class UPyBuffAbility_120_AddDamageToTreat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_AddDamageToTreat>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_AddDamageToTreat) == 0x000008, "Wrong alignment on UPyBuffAbility_120_AddDamageToTreat");
-static_assert(sizeof(UPyBuffAbility_120_AddDamageToTreat) == 0x0017C8, "Wrong size on UPyBuffAbility_120_AddDamageToTreat");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, TreatToDamageRatio) == 0x001370, "Member 'UPyBuffAbility_120_AddDamageToTreat::TreatToDamageRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, DamageScopeBuffSpecInfo) == 0x001378, "Member 'UPyBuffAbility_120_AddDamageToTreat::DamageScopeBuffSpecInfo' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, DamageScopeBuffSpecInfo1) == 0x001478, "Member 'UPyBuffAbility_120_AddDamageToTreat::DamageScopeBuffSpecInfo1' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, DamageScopeBuffSpecInfo2) == 0x001578, "Member 'UPyBuffAbility_120_AddDamageToTreat::DamageScopeBuffSpecInfo2' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, DamageScopeBuffSpecInfo3) == 0x001678, "Member 'UPyBuffAbility_120_AddDamageToTreat::DamageScopeBuffSpecInfo3' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_AddDamageToTreat, HeroTreatWithDamageScopeInfo) == 0x001778, "Member 'UPyBuffAbility_120_AddDamageToTreat::HeroTreatWithDamageScopeInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_AddDamageToTreat;
 
 }
 

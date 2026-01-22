@@ -30,12 +30,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_102411_OnActorDeath) == 0x000008, "Wrong alignment on Ability_102411_OnActorDeath");
-static_assert(sizeof(Ability_102411_OnActorDeath) == 0x000030, "Wrong size on Ability_102411_OnActorDeath");
-static_assert(offsetof(Ability_102411_OnActorDeath, Killer) == 0x000000, "Member 'Ability_102411_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(Ability_102411_OnActorDeath, Target) == 0x000008, "Member 'Ability_102411_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(Ability_102411_OnActorDeath, ModifierParameterHandle) == 0x000010, "Member 'Ability_102411_OnActorDeath::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(Ability_102411_OnActorDeath, ExtraData) == 0x000028, "Member 'Ability_102411_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102411_OnActorDeath;
 
 // Function Hero_1024.Ability_102411.OnAssistKill
 // 0x0158 (0x0158 - 0x0000)
@@ -44,9 +39,7 @@ struct Ability_102411_OnAssistKill final
 public:
 	struct FUIKillInfo                            KillInfo;                                          // 0x0000(0x0158)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102411_OnAssistKill) == 0x000008, "Wrong alignment on Ability_102411_OnAssistKill");
-static_assert(sizeof(Ability_102411_OnAssistKill) == 0x000158, "Wrong size on Ability_102411_OnAssistKill");
-static_assert(offsetof(Ability_102411_OnAssistKill, KillInfo) == 0x000000, "Member 'Ability_102411_OnAssistKill::KillInfo' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102411_OnAssistKill;
 
 // Function Hero_1024.Projectile_10244101.ListenHitComponentCollisionChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -57,10 +50,7 @@ public:
 	bool                                          bListen;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Projectile_10244101_ListenHitComponentCollisionChanged) == 0x000008, "Wrong alignment on Projectile_10244101_ListenHitComponentCollisionChanged");
-static_assert(sizeof(Projectile_10244101_ListenHitComponentCollisionChanged) == 0x000010, "Wrong size on Projectile_10244101_ListenHitComponentCollisionChanged");
-static_assert(offsetof(Projectile_10244101_ListenHitComponentCollisionChanged, InComponent) == 0x000000, "Member 'Projectile_10244101_ListenHitComponentCollisionChanged::InComponent' has a wrong offset!");
-static_assert(offsetof(Projectile_10244101_ListenHitComponentCollisionChanged, bListen) == 0x000008, "Member 'Projectile_10244101_ListenHitComponentCollisionChanged::bListen' has a wrong offset!");
+DUMPER7_ASSERTS_Projectile_10244101_ListenHitComponentCollisionChanged;
 
 // Function Hero_1024.Projectile_10244101.OnHitComponentCollisionChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -69,9 +59,7 @@ struct Projectile_10244101_OnHitComponentCollisionChanged final
 public:
 	class UPrimitiveComponent*                    InPrimitiveComponent;                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Projectile_10244101_OnHitComponentCollisionChanged) == 0x000008, "Wrong alignment on Projectile_10244101_OnHitComponentCollisionChanged");
-static_assert(sizeof(Projectile_10244101_OnHitComponentCollisionChanged) == 0x000008, "Wrong size on Projectile_10244101_OnHitComponentCollisionChanged");
-static_assert(offsetof(Projectile_10244101_OnHitComponentCollisionChanged, InPrimitiveComponent) == 0x000000, "Member 'Projectile_10244101_OnHitComponentCollisionChanged::InPrimitiveComponent' has a wrong offset!");
+DUMPER7_ASSERTS_Projectile_10244101_OnHitComponentCollisionChanged;
 
 // Function Hero_1024.Cue_Ability_Loop_10244101.GetFXRotation
 // 0x0028 (0x0028 - 0x0000)
@@ -83,11 +71,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Ability_Loop_10244101_GetFXRotation) == 0x000008, "Wrong alignment on Cue_Ability_Loop_10244101_GetFXRotation");
-static_assert(sizeof(Cue_Ability_Loop_10244101_GetFXRotation) == 0x000028, "Wrong size on Cue_Ability_Loop_10244101_GetFXRotation");
-static_assert(offsetof(Cue_Ability_Loop_10244101_GetFXRotation, FXComponent) == 0x000000, "Member 'Cue_Ability_Loop_10244101_GetFXRotation::FXComponent' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_10244101_GetFXRotation, DeltaTime) == 0x000008, "Member 'Cue_Ability_Loop_10244101_GetFXRotation::DeltaTime' has a wrong offset!");
-static_assert(offsetof(Cue_Ability_Loop_10244101_GetFXRotation, ReturnValue) == 0x000010, "Member 'Cue_Ability_Loop_10244101_GetFXRotation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_10244101_GetFXRotation;
 
 // Function Hero_1024.Ability_102451.InBirthRoom
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +80,7 @@ struct Ability_102451_InBirthRoom final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102451_InBirthRoom) == 0x000001, "Wrong alignment on Ability_102451_InBirthRoom");
-static_assert(sizeof(Ability_102451_InBirthRoom) == 0x000001, "Wrong size on Ability_102451_InBirthRoom");
-static_assert(offsetof(Ability_102451_InBirthRoom, ReturnValue) == 0x000000, "Member 'Ability_102451_InBirthRoom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102451_InBirthRoom;
 
 // Function Hero_1024.Cue_Projectile_Loop_10245101.InitializeSummonedSceneIndicator
 // 0x0004 (0x0004 - 0x0000)
@@ -107,9 +89,7 @@ struct Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator final
 public:
 	float                                         TotalTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator) == 0x000004, "Wrong alignment on Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator");
-static_assert(sizeof(Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator) == 0x000004, "Wrong size on Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator");
-static_assert(offsetof(Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator, TotalTime) == 0x000000, "Member 'Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator::TotalTime' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Projectile_Loop_10245101_InitializeSummonedSceneIndicator;
 
 // Function Hero_1024.Cue_Projectile_Loop_10245101.OnViewingCharacterChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -118,9 +98,7 @@ struct Cue_Projectile_Loop_10245101_OnViewingCharacterChanged final
 public:
 	class AMarvelBaseCharacter*                   InCharacter;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Projectile_Loop_10245101_OnViewingCharacterChanged) == 0x000008, "Wrong alignment on Cue_Projectile_Loop_10245101_OnViewingCharacterChanged");
-static_assert(sizeof(Cue_Projectile_Loop_10245101_OnViewingCharacterChanged) == 0x000008, "Wrong size on Cue_Projectile_Loop_10245101_OnViewingCharacterChanged");
-static_assert(offsetof(Cue_Projectile_Loop_10245101_OnViewingCharacterChanged, InCharacter) == 0x000000, "Member 'Cue_Projectile_Loop_10245101_OnViewingCharacterChanged::InCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Projectile_Loop_10245101_OnViewingCharacterChanged;
 
 // Function Hero_1024.ForceMoveToAbility_102461.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -129,9 +107,7 @@ struct ForceMoveToAbility_102461_OnDashFinish final
 public:
 	EDashStopReason                               InReason;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ForceMoveToAbility_102461_OnDashFinish) == 0x000001, "Wrong alignment on ForceMoveToAbility_102461_OnDashFinish");
-static_assert(sizeof(ForceMoveToAbility_102461_OnDashFinish) == 0x000001, "Wrong size on ForceMoveToAbility_102461_OnDashFinish");
-static_assert(offsetof(ForceMoveToAbility_102461_OnDashFinish, InReason) == 0x000000, "Member 'ForceMoveToAbility_102461_OnDashFinish::InReason' has a wrong offset!");
+DUMPER7_ASSERTS_ForceMoveToAbility_102461_OnDashFinish;
 
 // Function Hero_1024.Ability_102471.CheckHeightAboveGround
 // 0x0001 (0x0001 - 0x0000)
@@ -140,9 +116,7 @@ struct Ability_102471_CheckHeightAboveGround final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102471_CheckHeightAboveGround) == 0x000001, "Wrong alignment on Ability_102471_CheckHeightAboveGround");
-static_assert(sizeof(Ability_102471_CheckHeightAboveGround) == 0x000001, "Wrong size on Ability_102471_CheckHeightAboveGround");
-static_assert(offsetof(Ability_102471_CheckHeightAboveGround, ReturnValue) == 0x000000, "Member 'Ability_102471_CheckHeightAboveGround::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102471_CheckHeightAboveGround;
 
 // Function Hero_1024.Ability_102471.OnAbilityActiveFailed
 // 0x0070 (0x0070 - 0x0000)
@@ -152,10 +126,7 @@ public:
 	const class UGameplayAbility*                 InAbility;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102471_OnAbilityActiveFailed) == 0x000008, "Wrong alignment on Ability_102471_OnAbilityActiveFailed");
-static_assert(sizeof(Ability_102471_OnAbilityActiveFailed) == 0x000070, "Wrong size on Ability_102471_OnAbilityActiveFailed");
-static_assert(offsetof(Ability_102471_OnAbilityActiveFailed, InAbility) == 0x000000, "Member 'Ability_102471_OnAbilityActiveFailed::InAbility' has a wrong offset!");
-static_assert(offsetof(Ability_102471_OnAbilityActiveFailed, Tags) == 0x000008, "Member 'Ability_102471_OnAbilityActiveFailed::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102471_OnAbilityActiveFailed;
 
 // Function Hero_1024.Cue_Ability_Loop_102491.GetWeaponSummoner
 // 0x0008 (0x0008 - 0x0000)
@@ -164,9 +135,7 @@ struct Cue_Ability_Loop_102491_GetWeaponSummoner final
 public:
 	class APhysicsSummoner*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Cue_Ability_Loop_102491_GetWeaponSummoner) == 0x000008, "Wrong alignment on Cue_Ability_Loop_102491_GetWeaponSummoner");
-static_assert(sizeof(Cue_Ability_Loop_102491_GetWeaponSummoner) == 0x000008, "Wrong size on Cue_Ability_Loop_102491_GetWeaponSummoner");
-static_assert(offsetof(Cue_Ability_Loop_102491_GetWeaponSummoner, ReturnValue) == 0x000000, "Member 'Cue_Ability_Loop_102491_GetWeaponSummoner::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Cue_Ability_Loop_102491_GetWeaponSummoner;
 
 // Function Hero_1024.Ability_102494.RemoveAllyBuffIDs
 // 0x0008 (0x0008 - 0x0000)
@@ -175,9 +144,7 @@ struct Ability_102494_RemoveAllyBuffIDs final
 public:
 	class UAbilitySystemComponent*                TargetASC;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102494_RemoveAllyBuffIDs) == 0x000008, "Wrong alignment on Ability_102494_RemoveAllyBuffIDs");
-static_assert(sizeof(Ability_102494_RemoveAllyBuffIDs) == 0x000008, "Wrong size on Ability_102494_RemoveAllyBuffIDs");
-static_assert(offsetof(Ability_102494_RemoveAllyBuffIDs, TargetASC) == 0x000000, "Member 'Ability_102494_RemoveAllyBuffIDs::TargetASC' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102494_RemoveAllyBuffIDs;
 
 // Function Hero_1024.Ability_102494.SetHitResult
 // 0x0010 (0x0010 - 0x0000)
@@ -186,9 +153,7 @@ struct Ability_102494_SetHitResult final
 public:
 	TArray<struct FHitResult>                     InHitResult;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_102494_SetHitResult) == 0x000008, "Wrong alignment on Ability_102494_SetHitResult");
-static_assert(sizeof(Ability_102494_SetHitResult) == 0x000010, "Wrong size on Ability_102494_SetHitResult");
-static_assert(offsetof(Ability_102494_SetHitResult, InHitResult) == 0x000000, "Member 'Ability_102494_SetHitResult::InHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102494_SetHitResult;
 
 // Function Hero_1024.BuffAbility_10249403.UpdateFallingFrictionAndDeceleration
 // 0x0001 (0x0001 - 0x0000)
@@ -197,9 +162,7 @@ struct BuffAbility_10249403_UpdateFallingFrictionAndDeceleration final
 public:
 	bool                                          bHasSpeedDown;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_10249403_UpdateFallingFrictionAndDeceleration) == 0x000001, "Wrong alignment on BuffAbility_10249403_UpdateFallingFrictionAndDeceleration");
-static_assert(sizeof(BuffAbility_10249403_UpdateFallingFrictionAndDeceleration) == 0x000001, "Wrong size on BuffAbility_10249403_UpdateFallingFrictionAndDeceleration");
-static_assert(offsetof(BuffAbility_10249403_UpdateFallingFrictionAndDeceleration, bHasSpeedDown) == 0x000000, "Member 'BuffAbility_10249403_UpdateFallingFrictionAndDeceleration::bHasSpeedDown' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_10249403_UpdateFallingFrictionAndDeceleration;
 
 // Function Hero_1024.HelaAnimInstance.SetAutoDescend
 // 0x0001 (0x0001 - 0x0000)
@@ -208,9 +171,7 @@ struct HelaAnimInstance_SetAutoDescend final
 public:
 	bool                                          bInOpenAutoDescend;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HelaAnimInstance_SetAutoDescend) == 0x000001, "Wrong alignment on HelaAnimInstance_SetAutoDescend");
-static_assert(sizeof(HelaAnimInstance_SetAutoDescend) == 0x000001, "Wrong size on HelaAnimInstance_SetAutoDescend");
-static_assert(offsetof(HelaAnimInstance_SetAutoDescend, bInOpenAutoDescend) == 0x000000, "Member 'HelaAnimInstance_SetAutoDescend::bInOpenAutoDescend' has a wrong offset!");
+DUMPER7_ASSERTS_HelaAnimInstance_SetAutoDescend;
 
 // Function Hero_1024.HelaCharacter.DelaySpawnPassiveAbilityDamageScope
 // 0x00C0 (0x00C0 - 0x0000)
@@ -224,12 +185,7 @@ public:
 	int32                                         ScopeID;                                           // 0x00B4(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B8[0x8];                                       // 0x00B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope) == 0x000010, "Wrong alignment on HelaCharacter_DelaySpawnPassiveAbilityDamageScope");
-static_assert(sizeof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope) == 0x0000C0, "Wrong size on HelaCharacter_DelaySpawnPassiveAbilityDamageScope");
-static_assert(offsetof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope, InAbility) == 0x000000, "Member 'HelaCharacter_DelaySpawnPassiveAbilityDamageScope::InAbility' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope, SocketInfo) == 0x000010, "Member 'HelaCharacter_DelaySpawnPassiveAbilityDamageScope::SocketInfo' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope, DelayTime) == 0x0000B0, "Member 'HelaCharacter_DelaySpawnPassiveAbilityDamageScope::DelayTime' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_DelaySpawnPassiveAbilityDamageScope, ScopeID) == 0x0000B4, "Member 'HelaCharacter_DelaySpawnPassiveAbilityDamageScope::ScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_HelaCharacter_DelaySpawnPassiveAbilityDamageScope;
 
 // Function Hero_1024.HelaCharacter.OnDeathDeal
 // 0x0028 (0x0028 - 0x0000)
@@ -240,25 +196,18 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HelaCharacter_OnDeathDeal) == 0x000008, "Wrong alignment on HelaCharacter_OnDeathDeal");
-static_assert(sizeof(HelaCharacter_OnDeathDeal) == 0x000028, "Wrong size on HelaCharacter_OnDeathDeal");
-static_assert(offsetof(HelaCharacter_OnDeathDeal, DamageCauser) == 0x000000, "Member 'HelaCharacter_OnDeathDeal::DamageCauser' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_OnDeathDeal, TargetActor) == 0x000008, "Member 'HelaCharacter_OnDeathDeal::TargetActor' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_OnDeathDeal, ModifierParameterHandle) == 0x000010, "Member 'HelaCharacter_OnDeathDeal::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_HelaCharacter_OnDeathDeal;
 
 // Function Hero_1024.HelaCharacter.OnRebornDeal
-// 0x0820 (0x0820 - 0x0000)
+// 0x0840 (0x0840 - 0x0000)
 struct HelaCharacter_OnRebornDeal final
 {
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0810)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0830)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HelaCharacter_OnRebornDeal) == 0x000010, "Wrong alignment on HelaCharacter_OnRebornDeal");
-static_assert(sizeof(HelaCharacter_OnRebornDeal) == 0x000820, "Wrong size on HelaCharacter_OnRebornDeal");
-static_assert(offsetof(HelaCharacter_OnRebornDeal, InActor) == 0x000000, "Member 'HelaCharacter_OnRebornDeal::InActor' has a wrong offset!");
-static_assert(offsetof(HelaCharacter_OnRebornDeal, Param) == 0x000010, "Member 'HelaCharacter_OnRebornDeal::Param' has a wrong offset!");
+DUMPER7_ASSERTS_HelaCharacter_OnRebornDeal;
 
 // Function Hero_1024.TabData_1024.OnPostApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -269,11 +218,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TabData_1024_OnPostApplyDamage) == 0x000008, "Wrong alignment on TabData_1024_OnPostApplyDamage");
-static_assert(sizeof(TabData_1024_OnPostApplyDamage) == 0x000028, "Wrong size on TabData_1024_OnPostApplyDamage");
-static_assert(offsetof(TabData_1024_OnPostApplyDamage, InSource) == 0x000000, "Member 'TabData_1024_OnPostApplyDamage::InSource' has a wrong offset!");
-static_assert(offsetof(TabData_1024_OnPostApplyDamage, InTarget) == 0x000008, "Member 'TabData_1024_OnPostApplyDamage::InTarget' has a wrong offset!");
-static_assert(offsetof(TabData_1024_OnPostApplyDamage, ModifierParameterHandle) == 0x000010, "Member 'TabData_1024_OnPostApplyDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_TabData_1024_OnPostApplyDamage;
 
 }
 

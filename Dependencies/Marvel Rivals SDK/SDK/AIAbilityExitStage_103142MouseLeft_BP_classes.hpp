@@ -23,15 +23,18 @@ class UAIAbilityExitStage_103142MouseLeft_BP_C final : public UAIAbilityExitStag
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_103142MouseLeft_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_103142MouseLeft_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_103142MouseLeft_BP_C")
 	}
 	static class UAIAbilityExitStage_103142MouseLeft_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_103142MouseLeft_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_103142MouseLeft_BP_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_103142MouseLeft_BP_C");
-static_assert(sizeof(UAIAbilityExitStage_103142MouseLeft_BP_C) == 0x000050, "Wrong size on UAIAbilityExitStage_103142MouseLeft_BP_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_103142MouseLeft_BP_C;
 
 }
 

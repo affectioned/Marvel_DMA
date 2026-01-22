@@ -33,23 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_WarningColor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_WarningColor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_WarningColor_C")
 	}
 	static class UWBP_Setting_WarningColor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_WarningColor_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_WarningColor_C) == 0x000008, "Wrong alignment on UWBP_Setting_WarningColor_C");
-static_assert(sizeof(UWBP_Setting_WarningColor_C) == 0x0003F8, "Wrong size on UWBP_Setting_WarningColor_C");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, Img_Chat_Bg) == 0x0003B8, "Member 'UWBP_Setting_WarningColor_C::Img_Chat_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, RichText_Preview_Tips) == 0x0003C0, "Member 'UWBP_Setting_WarningColor_C::RichText_Preview_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, VBox_Chat) == 0x0003C8, "Member 'UWBP_Setting_WarningColor_C::VBox_Chat' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, WBP_Dying) == 0x0003D0, "Member 'UWBP_Setting_WarningColor_C::WBP_Dying' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, WBP_ItemText_Warning) == 0x0003D8, "Member 'UWBP_Setting_WarningColor_C::WBP_ItemText_Warning' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, WBP_KillReticle) == 0x0003E0, "Member 'UWBP_Setting_WarningColor_C::WBP_KillReticle' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, WBP_Summoned) == 0x0003E8, "Member 'UWBP_Setting_WarningColor_C::WBP_Summoned' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_WarningColor_C, WBP_Warning) == 0x0003F0, "Member 'UWBP_Setting_WarningColor_C::WBP_Warning' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_WarningColor_C;
 
 }
 

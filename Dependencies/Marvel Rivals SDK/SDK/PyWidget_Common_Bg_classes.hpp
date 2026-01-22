@@ -30,25 +30,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_CommonBg_RegisterNavigationLv2">();
+		STATIC_CLASS_IMPL("PyExtension_CommonBg_RegisterNavigationLv2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_CommonBg_RegisterNavigationLv2")
 	}
 	static class UPyExtension_CommonBg_RegisterNavigationLv2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_CommonBg_RegisterNavigationLv2>();
 	}
 };
-static_assert(alignof(UPyExtension_CommonBg_RegisterNavigationLv2) == 0x000008, "Wrong alignment on UPyExtension_CommonBg_RegisterNavigationLv2");
-static_assert(sizeof(UPyExtension_CommonBg_RegisterNavigationLv2) == 0x000030, "Wrong size on UPyExtension_CommonBg_RegisterNavigationLv2");
+DUMPER7_ASSERTS_UPyExtension_CommonBg_RegisterNavigationLv2;
 
 // PythonClass PyWidget_Common_Bg.PyWidget_Common_Bg
-// 0x0020 (0x0588 - 0x0568)
+// 0x0020 (0x0590 - 0x0570)
 class UPyWidget_Common_Bg : public UMarvelUserWidget
 {
 public:
-	class UWidgetAnimation*                       Anim_Narrow_FadeIn;                                // 0x0568(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Narrow_FadeOut;                               // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NarrowFlow_FadeIn;                            // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NarrowFlow_Loop;                              // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Narrow_FadeIn;                                // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Narrow_FadeOut;                               // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NarrowFlow_FadeIn;                            // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NarrowFlow_Loop;                              // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,19 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Bg">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Bg")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Bg")
 	}
 	static class UPyWidget_Common_Bg* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Bg>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Bg) == 0x000008, "Wrong alignment on UPyWidget_Common_Bg");
-static_assert(sizeof(UPyWidget_Common_Bg) == 0x000588, "Wrong size on UPyWidget_Common_Bg");
-static_assert(offsetof(UPyWidget_Common_Bg, Anim_Narrow_FadeIn) == 0x000568, "Member 'UPyWidget_Common_Bg::Anim_Narrow_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Bg, Anim_Narrow_FadeOut) == 0x000570, "Member 'UPyWidget_Common_Bg::Anim_Narrow_FadeOut' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Bg, Anim_NarrowFlow_FadeIn) == 0x000578, "Member 'UPyWidget_Common_Bg::Anim_NarrowFlow_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Bg, Anim_NarrowFlow_Loop) == 0x000580, "Member 'UPyWidget_Common_Bg::Anim_NarrowFlow_Loop' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Bg;
 
 // PythonClass PyWidget_Common_Bg.PyExtension_CommonBg_HideWhenWidgetShow
 // 0x0000 (0x0030 - 0x0030)
@@ -89,15 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_CommonBg_HideWhenWidgetShow">();
+		STATIC_CLASS_IMPL("PyExtension_CommonBg_HideWhenWidgetShow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_CommonBg_HideWhenWidgetShow")
 	}
 	static class UPyExtension_CommonBg_HideWhenWidgetShow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_CommonBg_HideWhenWidgetShow>();
 	}
 };
-static_assert(alignof(UPyExtension_CommonBg_HideWhenWidgetShow) == 0x000008, "Wrong alignment on UPyExtension_CommonBg_HideWhenWidgetShow");
-static_assert(sizeof(UPyExtension_CommonBg_HideWhenWidgetShow) == 0x000030, "Wrong size on UPyExtension_CommonBg_HideWhenWidgetShow");
+DUMPER7_ASSERTS_UPyExtension_CommonBg_HideWhenWidgetShow;
 
 // PythonClass PyWidget_Common_Bg.PyExtension_CommonBg_RegisterNavigationLv1
 // 0x0000 (0x0030 - 0x0030)
@@ -112,15 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_CommonBg_RegisterNavigationLv1">();
+		STATIC_CLASS_IMPL("PyExtension_CommonBg_RegisterNavigationLv1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_CommonBg_RegisterNavigationLv1")
 	}
 	static class UPyExtension_CommonBg_RegisterNavigationLv1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_CommonBg_RegisterNavigationLv1>();
 	}
 };
-static_assert(alignof(UPyExtension_CommonBg_RegisterNavigationLv1) == 0x000008, "Wrong alignment on UPyExtension_CommonBg_RegisterNavigationLv1");
-static_assert(sizeof(UPyExtension_CommonBg_RegisterNavigationLv1) == 0x000030, "Wrong size on UPyExtension_CommonBg_RegisterNavigationLv1");
+DUMPER7_ASSERTS_UPyExtension_CommonBg_RegisterNavigationLv1;
 
 // PythonClass PyWidget_Common_Bg.PyExtension_Career_RegisterNavigationLv1
 // 0x0000 (0x0030 - 0x0030)
@@ -132,15 +140,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Career_RegisterNavigationLv1">();
+		STATIC_CLASS_IMPL("PyExtension_Career_RegisterNavigationLv1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Career_RegisterNavigationLv1")
 	}
 	static class UPyExtension_Career_RegisterNavigationLv1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Career_RegisterNavigationLv1>();
 	}
 };
-static_assert(alignof(UPyExtension_Career_RegisterNavigationLv1) == 0x000008, "Wrong alignment on UPyExtension_Career_RegisterNavigationLv1");
-static_assert(sizeof(UPyExtension_Career_RegisterNavigationLv1) == 0x000030, "Wrong size on UPyExtension_Career_RegisterNavigationLv1");
+DUMPER7_ASSERTS_UPyExtension_Career_RegisterNavigationLv1;
 
 }
 

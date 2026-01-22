@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function AeroLocomotionV2.AeroLocomotionV2_C.ExecuteUbergraph_AeroLocomotionV2
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAeroLocomotionV2_C::ExecuteUbergraph_AeroLocomotionV2(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AeroLocomotionV2_C", "ExecuteUbergraph_AeroLocomotionV2");
+
+	Params::AeroLocomotionV2_C_ExecuteUbergraph_AeroLocomotionV2 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AeroLocomotionV2.AeroLocomotionV2_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -38,26 +58,6 @@ void UAeroLocomotionV2_C::AnimGraph(const struct FPoseLink& InGroundMotionPose, 
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function AeroLocomotionV2.AeroLocomotionV2_C.ExecuteUbergraph_AeroLocomotionV2
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAeroLocomotionV2_C::ExecuteUbergraph_AeroLocomotionV2(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AeroLocomotionV2_C", "ExecuteUbergraph_AeroLocomotionV2");
-
-	Params::AeroLocomotionV2_C_ExecuteUbergraph_AeroLocomotionV2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

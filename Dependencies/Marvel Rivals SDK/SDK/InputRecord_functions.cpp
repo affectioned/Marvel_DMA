@@ -372,6 +372,56 @@ float UInputRecordComponent::GetCurrentLockDeltaTime()
 }
 
 
+// Function InputRecord.InputRecordComponent.GetCurrentRecordPath
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UInputRecordComponent::GetCurrentRecordPath()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputRecordComponent", "GetCurrentRecordPath");
+
+	Params::InputRecordComponent_GetCurrentRecordPath Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function InputRecord.InputRecordComponent.GetIgnoreKeyNames
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class FName>                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class FName> UInputRecordComponent::GetIgnoreKeyNames()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputRecordComponent", "GetIgnoreKeyNames");
+
+	Params::InputRecordComponent_GetIgnoreKeyNames Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function InputRecord.InputRecordComponent.HasFrameCounterData
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1030,6 +1080,81 @@ void UInputRecordComponent::ToggleRotationCorrection(bool bInCorrection)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InputRecord.InputRecordComponent.GetCurrentFrameCounter
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int64                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int64 UInputRecordComponent::GetCurrentFrameCounter() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputRecordComponent", "GetCurrentFrameCounter");
+
+	Params::InputRecordComponent_GetCurrentFrameCounter Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function InputRecord.InputRecordComponent.GetCurrentRecordPathEnum
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EInputRecordPath                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EInputRecordPath UInputRecordComponent::GetCurrentRecordPathEnum() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputRecordComponent", "GetCurrentRecordPathEnum");
+
+	Params::InputRecordComponent_GetCurrentRecordPathEnum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function InputRecord.InputRecordComponent.GetFrameCounter
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int64                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int64 UInputRecordComponent::GetFrameCounter() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("InputRecordComponent", "GetFrameCounter");
+
+	Params::InputRecordComponent_GetFrameCounter Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity125_RewardsBtn.PyWidget_Activity125_RewardsBtn
-// 0x0010 (0x0738 - 0x0728)
+// 0x0010 (0x0790 - 0x0780)
 class UPyWidget_Activity125_RewardsBtn final : public UPyWidget_Button
 {
 public:
-	TArray<float>                                 ProgressBar_List;                                  // 0x0728(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 ProgressBar_List;                                  // 0x0780(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity125_RewardsBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity125_RewardsBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity125_RewardsBtn")
 	}
 	static class UPyWidget_Activity125_RewardsBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity125_RewardsBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity125_RewardsBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity125_RewardsBtn");
-static_assert(sizeof(UPyWidget_Activity125_RewardsBtn) == 0x000738, "Wrong size on UPyWidget_Activity125_RewardsBtn");
-static_assert(offsetof(UPyWidget_Activity125_RewardsBtn, ProgressBar_List) == 0x000728, "Member 'UPyWidget_Activity125_RewardsBtn::ProgressBar_List' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity125_RewardsBtn;
 
 }
 

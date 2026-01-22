@@ -21,9 +21,7 @@ struct FUltronBotMaterialSet final
 public:
 	TArray<class UMaterialInstance*>              MaterialInstances;                                 // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUltronBotMaterialSet) == 0x000008, "Wrong alignment on FUltronBotMaterialSet");
-static_assert(sizeof(FUltronBotMaterialSet) == 0x000010, "Wrong size on FUltronBotMaterialSet");
-static_assert(offsetof(FUltronBotMaterialSet, MaterialInstances) == 0x000000, "Member 'FUltronBotMaterialSet::MaterialInstances' has a wrong offset!");
+DUMPER7_ASSERTS_FUltronBotMaterialSet;
 
 }
 

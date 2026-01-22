@@ -24,11 +24,7 @@ public:
 	class UGATask_SpawnScope*                     CallFunc_SpawnScopeWithObject_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP) == 0x000008, "Wrong alignment on Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP");
-static_assert(sizeof(Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP) == 0x000018, "Wrong size on Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP");
-static_assert(offsetof(Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP, EntryPoint) == 0x000000, "Member 'Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP, CallFunc_SpawnScopeWithObject_ReturnValue) == 0x000008, "Member 'Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP::CallFunc_SpawnScopeWithObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Summoner_10449301_BP_C_ExecuteUbergraph_Summoner_10449301_BP;
 
 }
 

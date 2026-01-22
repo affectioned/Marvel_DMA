@@ -46,22 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroComponent">();
+		STATIC_CLASS_IMPL("PyHeroComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroComponent")
 	}
 	static class UPyHeroComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroComponent>();
 	}
 };
-static_assert(alignof(UPyHeroComponent) == 0x000008, "Wrong alignment on UPyHeroComponent");
-static_assert(sizeof(UPyHeroComponent) == 0x000150, "Wrong size on UPyHeroComponent");
-static_assert(offsetof(UPyHeroComponent, RedUsedHeroList) == 0x000108, "Member 'UPyHeroComponent::RedUsedHeroList' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, BlueUsedHeroList) == 0x000118, "Member 'UPyHeroComponent::BlueUsedHeroList' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, OpenHeroList) == 0x000128, "Member 'UPyHeroComponent::OpenHeroList' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, bSelectHeroAllowedWhenAlive) == 0x000138, "Member 'UPyHeroComponent::bSelectHeroAllowedWhenAlive' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, bSelectHeroAllowedWhenDead) == 0x000139, "Member 'UPyHeroComponent::bSelectHeroAllowedWhenDead' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, bSelectHeroAllowedInBirthBase) == 0x00013A, "Member 'UPyHeroComponent::bSelectHeroAllowedInBirthBase' has a wrong offset!");
-static_assert(offsetof(UPyHeroComponent, EventInitGlobalHeroIDPool) == 0x000140, "Member 'UPyHeroComponent::EventInitGlobalHeroIDPool' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroComponent;
 
 }
 

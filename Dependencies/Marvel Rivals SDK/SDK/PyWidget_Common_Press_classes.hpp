@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Press.PyWidget_Common_Press_DynamicCore
-// 0x0038 (0x05A0 - 0x0568)
+// 0x0038 (0x05A8 - 0x0570)
 class UPyWidget_Common_Press_DynamicCore : public UMarvelUserWidget
 {
 public:
-	struct FGameplayTag                           ColorTag;                                          // 0x0568(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_Press;                                        // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press_White;                                  // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press_Yellow;                                 // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press_Orange;                                 // 0x0590(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Press_Gray;                                   // 0x0598(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ColorTag;                                          // 0x0570(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_57C[0x4];                                      // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_Press;                                        // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press_White;                                  // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press_Yellow;                                 // 0x0590(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press_Orange;                                 // 0x0598(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Press_Gray;                                   // 0x05A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -37,42 +37,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Press_DynamicCore">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Press_DynamicCore")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Press_DynamicCore")
 	}
 	static class UPyWidget_Common_Press_DynamicCore* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Press_DynamicCore>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Press_DynamicCore) == 0x000008, "Wrong alignment on UPyWidget_Common_Press_DynamicCore");
-static_assert(sizeof(UPyWidget_Common_Press_DynamicCore) == 0x0005A0, "Wrong size on UPyWidget_Common_Press_DynamicCore");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, ColorTag) == 0x000568, "Member 'UPyWidget_Common_Press_DynamicCore::ColorTag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, Anim_Press) == 0x000578, "Member 'UPyWidget_Common_Press_DynamicCore::Anim_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, Anim_Press_White) == 0x000580, "Member 'UPyWidget_Common_Press_DynamicCore::Anim_Press_White' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, Anim_Press_Yellow) == 0x000588, "Member 'UPyWidget_Common_Press_DynamicCore::Anim_Press_Yellow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, Anim_Press_Orange) == 0x000590, "Member 'UPyWidget_Common_Press_DynamicCore::Anim_Press_Orange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Press_DynamicCore, Anim_Press_Gray) == 0x000598, "Member 'UPyWidget_Common_Press_DynamicCore::Anim_Press_Gray' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Press_DynamicCore;
 
 // PythonClass PyWidget_Common_Press.PyWidget_Common_Press
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UPyWidget_Common_Press : public UMarvelUserWidget
 {
 public:
-	TSubclassOf<class UUserWidget>                WBP_Com_VX_Press_DynamicCore;                      // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WBP_Com_VX_Press_DynamicCore;                      // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Press">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Press")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Press")
 	}
 	static class UPyWidget_Common_Press* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Press>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Press) == 0x000008, "Wrong alignment on UPyWidget_Common_Press");
-static_assert(sizeof(UPyWidget_Common_Press) == 0x000570, "Wrong size on UPyWidget_Common_Press");
-static_assert(offsetof(UPyWidget_Common_Press, WBP_Com_VX_Press_DynamicCore) == 0x000568, "Member 'UPyWidget_Common_Press::WBP_Com_VX_Press_DynamicCore' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Press;
 
 }
 

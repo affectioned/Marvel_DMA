@@ -22,60 +22,59 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_HpBar.PyWidget_ScreenFXManager
-// 0x00A0 (0x0638 - 0x0598)
-class UPyWidget_ScreenFXManager : public UWidget_ScreenFXManager
+// PythonClass PyWidget_HpBar.PyWidget_ScreenFXHealing
+// 0x0008 (0x0578 - 0x0570)
+class UPyWidget_ScreenFXHealing final : public UMarvelUserWidget
 {
 public:
-	TMap<struct FGameplayTag, class FString>      FXWidgetsNames;                                    // 0x0598(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x05E8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_RestoreMax;                                   // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void OnInitialized();
-	void SetTargetActor(class AActor* InActor);
-	void SetTargetTreatPercentageCur(float InPercentage);
-	bool ShouldShowBuff(const class FString& Tag);
+	void Destruct();
+	void MarvelSetVisible(bool bIsVisible);
 	void OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist);
+	void OnFinishRestoreMax();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ScreenFXManager">();
+		STATIC_CLASS_IMPL("PyWidget_ScreenFXHealing")
 	}
-	static class UPyWidget_ScreenFXManager* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_ScreenFXManager>();
+		STATIC_NAME_IMPL(L"PyWidget_ScreenFXHealing")
+	}
+	static class UPyWidget_ScreenFXHealing* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_ScreenFXHealing>();
 	}
 };
-static_assert(alignof(UPyWidget_ScreenFXManager) == 0x000008, "Wrong alignment on UPyWidget_ScreenFXManager");
-static_assert(sizeof(UPyWidget_ScreenFXManager) == 0x000638, "Wrong size on UPyWidget_ScreenFXManager");
-static_assert(offsetof(UPyWidget_ScreenFXManager, FXWidgetsNames) == 0x000598, "Member 'UPyWidget_ScreenFXManager::FXWidgetsNames' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ScreenFXManager, BlockCueTagsMap) == 0x0005E8, "Member 'UPyWidget_ScreenFXManager::BlockCueTagsMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ScreenFXHealing;
 
 // PythonClass PyWidget_HpBar.PyWidget_HpBar_V3
-// 0x00E8 (0x08D0 - 0x07E8)
+// 0x00E8 (0x08D8 - 0x07F0)
 class UPyWidget_HpBar_V3 : public UWidget_HpBar
 {
 public:
-	bool                                          IsUsedIn3D;                                        // 0x07E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7E9[0x3];                                      // 0x07E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           HpColor;                                           // 0x07EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7FC[0x4];                                      // 0x07FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x0800(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HpBarVxClass;                                      // 0x0850(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGameplayTag>                   BuffDisplayOrder;                                  // 0x0858(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Ultimate;                                  // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_BuffBg;                                        // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_BuffBg_HpAligned;                              // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_OuterFrame;                                    // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_OuterFrame_HpAligned;                          // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_InsideFrame;                                   // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_InsideFrame_HpAligned;                         // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HPBuff_Healing_FadeIn;                        // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HPBuff_Healing_Loop;                          // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_HPBuff_Healing_FadeOut;                       // 0x08B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Bleeding_Percent;                             // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BreakEndedDispatcher;                              // 0x08C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsUsedIn3D;                                        // 0x07F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7F1[0x3];                                      // 0x07F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           HpColor;                                           // 0x07F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_804[0x4];                                      // 0x0804(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x0808(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HpBarVxClass;                                      // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGameplayTag>                   BuffDisplayOrder;                                  // 0x0860(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class ULazyWidget*                            Lazy_UltimateBar;                                  // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_BuffBg;                                        // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_BuffBg_HpAligned;                              // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_OuterFrame;                                    // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_OuterFrame_HpAligned;                          // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_InsideFrame;                                   // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_InsideFrame_HpAligned;                         // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HPBuff_Healing_FadeIn;                        // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HPBuff_Healing_Loop;                          // 0x08B0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_HPBuff_Healing_FadeOut;                       // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Bleeding_Percent;                             // 0x08C0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BreakEndedDispatcher;                              // 0x08C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -97,6 +96,7 @@ public:
 	void SetShowUltimateBar(bool bShow);
 	void SetUltimateEnergyPercent(float InPercentage);
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+	void SetShowUltimateIcon(bool bShow);
 	void OnComponentVisibilityChanged();
 	void SetIsAlly(const bool bIsAlly);
 
@@ -108,32 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HpBar_V3">();
+		STATIC_CLASS_IMPL("PyWidget_HpBar_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HpBar_V3")
 	}
 	static class UPyWidget_HpBar_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HpBar_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_HpBar_V3) == 0x000008, "Wrong alignment on UPyWidget_HpBar_V3");
-static_assert(sizeof(UPyWidget_HpBar_V3) == 0x0008D0, "Wrong size on UPyWidget_HpBar_V3");
-static_assert(offsetof(UPyWidget_HpBar_V3, IsUsedIn3D) == 0x0007E8, "Member 'UPyWidget_HpBar_V3::IsUsedIn3D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, HpColor) == 0x0007EC, "Member 'UPyWidget_HpBar_V3::HpColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, BlockCueTagsMap) == 0x000800, "Member 'UPyWidget_HpBar_V3::BlockCueTagsMap' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, HpBarVxClass) == 0x000850, "Member 'UPyWidget_HpBar_V3::HpBarVxClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, BuffDisplayOrder) == 0x000858, "Member 'UPyWidget_HpBar_V3::BuffDisplayOrder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Overlay_Ultimate) == 0x000868, "Member 'UPyWidget_HpBar_V3::Overlay_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_BuffBg) == 0x000870, "Member 'UPyWidget_HpBar_V3::Img_BuffBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_BuffBg_HpAligned) == 0x000878, "Member 'UPyWidget_HpBar_V3::Img_BuffBg_HpAligned' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_OuterFrame) == 0x000880, "Member 'UPyWidget_HpBar_V3::Img_OuterFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_OuterFrame_HpAligned) == 0x000888, "Member 'UPyWidget_HpBar_V3::Img_OuterFrame_HpAligned' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_InsideFrame) == 0x000890, "Member 'UPyWidget_HpBar_V3::Img_InsideFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Img_InsideFrame_HpAligned) == 0x000898, "Member 'UPyWidget_HpBar_V3::Img_InsideFrame_HpAligned' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Anim_HPBuff_Healing_FadeIn) == 0x0008A0, "Member 'UPyWidget_HpBar_V3::Anim_HPBuff_Healing_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Anim_HPBuff_Healing_Loop) == 0x0008A8, "Member 'UPyWidget_HpBar_V3::Anim_HPBuff_Healing_Loop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Anim_HPBuff_Healing_FadeOut) == 0x0008B0, "Member 'UPyWidget_HpBar_V3::Anim_HPBuff_Healing_FadeOut' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, Anim_Bleeding_Percent) == 0x0008B8, "Member 'UPyWidget_HpBar_V3::Anim_Bleeding_Percent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBar_V3, BreakEndedDispatcher) == 0x0008C0, "Member 'UPyWidget_HpBar_V3::BreakEndedDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HpBar_V3;
 
 // PythonClass PyWidget_HpBar.PyWidgetStyle_HpBarVX
 // 0x0020 (0x0058 - 0x0038)
@@ -146,82 +132,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetStyle_HpBarVX">();
+		STATIC_CLASS_IMPL("PyWidgetStyle_HpBarVX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetStyle_HpBarVX")
 	}
 	static class UPyWidgetStyle_HpBarVX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetStyle_HpBarVX>();
 	}
 };
-static_assert(alignof(UPyWidgetStyle_HpBarVX) == 0x000008, "Wrong alignment on UPyWidgetStyle_HpBarVX");
-static_assert(sizeof(UPyWidgetStyle_HpBarVX) == 0x000058, "Wrong size on UPyWidgetStyle_HpBarVX");
-static_assert(offsetof(UPyWidgetStyle_HpBarVX, BaseColorAlly) == 0x000038, "Member 'UPyWidgetStyle_HpBarVX::BaseColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidgetStyle_HpBarVX, DotAColorAlly) == 0x000048, "Member 'UPyWidgetStyle_HpBarVX::DotAColorAlly' has a wrong offset!");
-
-// PythonClass PyWidget_HpBar.PyWidget_CharacterInfo
-// 0x0000 (0x1B10 - 0x1B10)
-class UPyWidget_CharacterInfo final : public UWidget_CharacterInfo
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_CharacterInfo">();
-	}
-	static class UPyWidget_CharacterInfo* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_CharacterInfo>();
-	}
-};
-static_assert(alignof(UPyWidget_CharacterInfo) == 0x000010, "Wrong alignment on UPyWidget_CharacterInfo");
-static_assert(sizeof(UPyWidget_CharacterInfo) == 0x001B10, "Wrong size on UPyWidget_CharacterInfo");
-
-// PythonClass PyWidget_HpBar.PyWidget_DyingScreenFX
-// 0x0010 (0x05B0 - 0x05A0)
-class UPyWidget_DyingScreenFX : public UWidget_HurtHintPanel
-{
-public:
-	float                                         DyingEffectCD;                                     // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5A4[0x4];                                      // 0x05A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CameraMaterial;                                    // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-	bool ShouldBeVisible();
-	void SetTargetCharacter(class AMarvelBaseCharacter* InCharacter);
-	void SetDying(bool InDying);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_DyingScreenFX">();
-	}
-	static class UPyWidget_DyingScreenFX* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_DyingScreenFX>();
-	}
-};
-static_assert(alignof(UPyWidget_DyingScreenFX) == 0x000008, "Wrong alignment on UPyWidget_DyingScreenFX");
-static_assert(sizeof(UPyWidget_DyingScreenFX) == 0x0005B0, "Wrong size on UPyWidget_DyingScreenFX");
-static_assert(offsetof(UPyWidget_DyingScreenFX, DyingEffectCD) == 0x0005A0, "Member 'UPyWidget_DyingScreenFX::DyingEffectCD' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DyingScreenFX, CameraMaterial) == 0x0005A8, "Member 'UPyWidget_DyingScreenFX::CameraMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetStyle_HpBarVX;
 
 // PythonClass PyWidget_HpBar.PyWidget_HpBarVX_V3
-// 0x0068 (0x05E8 - 0x0580)
+// 0x0068 (0x05F0 - 0x0588)
 class UPyWidget_HpBarVX_V3 : public UWidget_HpBar_VX
 {
 public:
-	struct FSlateColor                            BaseColorAlly;                                     // 0x0580(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BaseColorEnemy;                                    // 0x0594(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerMaterial;                                   // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerMaterial_3D;                                // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerParticleMaterial1;                          // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerParticleMaterial1_3D;                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerParticleMaterial2;                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     PointerParticleMaterial2_3D;                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidgetStyle_HpBarVX*                 WidgetStyle;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseTime;                                       // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BaseColorAlly;                                     // 0x0588(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BaseColorEnemy;                                    // 0x059C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerMaterial;                                   // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerMaterial_3D;                                // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerParticleMaterial1;                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerParticleMaterial1_3D;                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerParticleMaterial2;                          // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     PointerParticleMaterial2_3D;                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidgetStyle_HpBarVX*                 WidgetStyle;                                       // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseTime;                                       // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -229,35 +167,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HpBarVX_V3">();
+		STATIC_CLASS_IMPL("PyWidget_HpBarVX_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HpBarVX_V3")
 	}
 	static class UPyWidget_HpBarVX_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HpBarVX_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_HpBarVX_V3) == 0x000008, "Wrong alignment on UPyWidget_HpBarVX_V3");
-static_assert(sizeof(UPyWidget_HpBarVX_V3) == 0x0005E8, "Wrong size on UPyWidget_HpBarVX_V3");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, BaseColorAlly) == 0x000580, "Member 'UPyWidget_HpBarVX_V3::BaseColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, BaseColorEnemy) == 0x000594, "Member 'UPyWidget_HpBarVX_V3::BaseColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerMaterial) == 0x0005A8, "Member 'UPyWidget_HpBarVX_V3::PointerMaterial' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerMaterial_3D) == 0x0005B0, "Member 'UPyWidget_HpBarVX_V3::PointerMaterial_3D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerParticleMaterial1) == 0x0005B8, "Member 'UPyWidget_HpBarVX_V3::PointerParticleMaterial1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerParticleMaterial1_3D) == 0x0005C0, "Member 'UPyWidget_HpBarVX_V3::PointerParticleMaterial1_3D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerParticleMaterial2) == 0x0005C8, "Member 'UPyWidget_HpBarVX_V3::PointerParticleMaterial2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, PointerParticleMaterial2_3D) == 0x0005D0, "Member 'UPyWidget_HpBarVX_V3::PointerParticleMaterial2_3D' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, WidgetStyle) == 0x0005D8, "Member 'UPyWidget_HpBarVX_V3::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HpBarVX_V3, ReleaseTime) == 0x0005E0, "Member 'UPyWidget_HpBarVX_V3::ReleaseTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HpBarVX_V3;
 
 // PythonClass PyWidget_HpBar.PyWidget_BattleHpBar_V3
-// 0x00A8 (0x0648 - 0x05A0)
+// 0x00A8 (0x0650 - 0x05A8)
 class UPyWidget_BattleHpBar_V3 : public UWidget_ViewTargetHpBar
 {
 public:
-	TMap<struct FGameplayTag, struct FSlateBrush> CueTagIconsMap;                                    // 0x05A0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x05F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         CustomColorPreview_Health;                         // 0x0640(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CustomColorPreview_Shield;                         // 0x0644(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, struct FSlateBrush> CueTagIconsMap;                                    // 0x05A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x05F8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         CustomColorPreview_Health;                         // 0x0648(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CustomColorPreview_Shield;                         // 0x064C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -277,47 +208,102 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleHpBar_V3">();
+		STATIC_CLASS_IMPL("PyWidget_BattleHpBar_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleHpBar_V3")
 	}
 	static class UPyWidget_BattleHpBar_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleHpBar_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleHpBar_V3) == 0x000008, "Wrong alignment on UPyWidget_BattleHpBar_V3");
-static_assert(sizeof(UPyWidget_BattleHpBar_V3) == 0x000648, "Wrong size on UPyWidget_BattleHpBar_V3");
-static_assert(offsetof(UPyWidget_BattleHpBar_V3, CueTagIconsMap) == 0x0005A0, "Member 'UPyWidget_BattleHpBar_V3::CueTagIconsMap' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleHpBar_V3, BlockCueTagsMap) == 0x0005F0, "Member 'UPyWidget_BattleHpBar_V3::BlockCueTagsMap' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleHpBar_V3, CustomColorPreview_Health) == 0x000640, "Member 'UPyWidget_BattleHpBar_V3::CustomColorPreview_Health' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleHpBar_V3, CustomColorPreview_Shield) == 0x000644, "Member 'UPyWidget_BattleHpBar_V3::CustomColorPreview_Shield' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleHpBar_V3;
 
-// PythonClass PyWidget_HpBar.PyWidget_ScreenFXHealing
-// 0x0008 (0x0570 - 0x0568)
-class UPyWidget_ScreenFXHealing final : public UMarvelUserWidget
+// PythonClass PyWidget_HpBar.PyWidget_ScreenFXManager
+// 0x00A0 (0x0640 - 0x05A0)
+class UPyWidget_ScreenFXManager : public UWidget_ScreenFXManager
 {
 public:
-	class UWidgetAnimation*                       Anim_RestoreMax;                                   // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, class FString>      FXWidgetsNames;                                    // 0x05A0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<struct FGameplayTag, struct FGameplayTag> BlockCueTagsMap;                                  // 0x05F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
-	void Destruct();
-	void MarvelSetVisible(bool bIsVisible);
+	void OnInitialized();
+	void SetTargetActor(class AActor* InActor);
+	void SetTargetTreatPercentageCur(float InPercentage);
+	bool ShouldShowBuff(const class FString& Tag);
 	void OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist);
-	void OnFinishFadeIn();
-	void OnFinishRestoreMax();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ScreenFXHealing">();
+		STATIC_CLASS_IMPL("PyWidget_ScreenFXManager")
 	}
-	static class UPyWidget_ScreenFXHealing* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_ScreenFXHealing>();
+		STATIC_NAME_IMPL(L"PyWidget_ScreenFXManager")
+	}
+	static class UPyWidget_ScreenFXManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_ScreenFXManager>();
 	}
 };
-static_assert(alignof(UPyWidget_ScreenFXHealing) == 0x000008, "Wrong alignment on UPyWidget_ScreenFXHealing");
-static_assert(sizeof(UPyWidget_ScreenFXHealing) == 0x000570, "Wrong size on UPyWidget_ScreenFXHealing");
-static_assert(offsetof(UPyWidget_ScreenFXHealing, Anim_RestoreMax) == 0x000568, "Member 'UPyWidget_ScreenFXHealing::Anim_RestoreMax' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ScreenFXManager;
+
+// PythonClass PyWidget_HpBar.PyWidget_CharacterInfo
+// 0x0000 (0x23B0 - 0x23B0)
+class UPyWidget_CharacterInfo final : public UWidget_CharacterInfo
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_CharacterInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CharacterInfo")
+	}
+	static class UPyWidget_CharacterInfo* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_CharacterInfo>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_CharacterInfo;
+
+// PythonClass PyWidget_HpBar.PyWidget_DyingScreenFX
+// 0x0010 (0x05B8 - 0x05A8)
+class UPyWidget_DyingScreenFX : public UWidget_HurtHintPanel
+{
+public:
+	float                                         DyingEffectCD;                                     // 0x05A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CameraMaterial;                                    // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	bool ShouldBeVisible();
+	void SetTargetCharacter(class AMarvelBaseCharacter* InCharacter);
+	void SetDying(bool InDying);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_DyingScreenFX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DyingScreenFX")
+	}
+	static class UPyWidget_DyingScreenFX* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_DyingScreenFX>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_DyingScreenFX;
 
 }
 

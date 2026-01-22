@@ -21,11 +21,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_WatchView.PyWidget_League_WatchView_Item
-// 0x0008 (0x0578 - 0x0570)
-class UPyWidget_League_WatchView_Item final : public UWidget_ListEntry
+// 0x0030 (0x05A8 - 0x0578)
+class UPyWidget_League_WatchView_Item : public UWidget_ListEntry
 {
 public:
-	class UTexture2D*                             BtnWatchIcon;                                      // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BtnWatchIcon;                                      // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClanHideColor;                                     // 0x0580(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClanLightColor;                                    // 0x0594(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,41 +39,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_WatchView_Item">();
+		STATIC_CLASS_IMPL("PyWidget_League_WatchView_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_WatchView_Item")
 	}
 	static class UPyWidget_League_WatchView_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_WatchView_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_League_WatchView_Item) == 0x000008, "Wrong alignment on UPyWidget_League_WatchView_Item");
-static_assert(sizeof(UPyWidget_League_WatchView_Item) == 0x000578, "Wrong size on UPyWidget_League_WatchView_Item");
-static_assert(offsetof(UPyWidget_League_WatchView_Item, BtnWatchIcon) == 0x000570, "Member 'UPyWidget_League_WatchView_Item::BtnWatchIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_WatchView_Item;
 
 // PythonClass PyWidget_League_WatchView.League_WatchView_ItemData
 // 0x0000 (0x0030 - 0x0030)
-class ULeague_WatchView_ItemData final : public UObject
+class ULeague_WatchView_ItemData : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"League_WatchView_ItemData">();
+		STATIC_CLASS_IMPL("League_WatchView_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"League_WatchView_ItemData")
 	}
 	static class ULeague_WatchView_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeague_WatchView_ItemData>();
 	}
 };
-static_assert(alignof(ULeague_WatchView_ItemData) == 0x000008, "Wrong alignment on ULeague_WatchView_ItemData");
-static_assert(sizeof(ULeague_WatchView_ItemData) == 0x000030, "Wrong size on ULeague_WatchView_ItemData");
+DUMPER7_ASSERTS_ULeague_WatchView_ItemData;
 
 // PythonClass PyWidget_League_WatchView.PyWidget_League_WatchView
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_League_WatchView final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                ShowResultGuideTipsStyle;                          // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                HideResultGuideTipsStyle;                          // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowResultGuideTipsStyle;                          // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                HideResultGuideTipsStyle;                          // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -82,17 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_WatchView">();
+		STATIC_CLASS_IMPL("PyWidget_League_WatchView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_WatchView")
 	}
 	static class UPyWidget_League_WatchView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_WatchView>();
 	}
 };
-static_assert(alignof(UPyWidget_League_WatchView) == 0x000008, "Wrong alignment on UPyWidget_League_WatchView");
-static_assert(sizeof(UPyWidget_League_WatchView) == 0x000618, "Wrong size on UPyWidget_League_WatchView");
-static_assert(offsetof(UPyWidget_League_WatchView, ShowResultGuideTipsStyle) == 0x0005F8, "Member 'UPyWidget_League_WatchView::ShowResultGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_WatchView, HideResultGuideTipsStyle) == 0x000608, "Member 'UPyWidget_League_WatchView::HideResultGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_WatchView;
 
 }
 

@@ -49,12 +49,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EFXState_103871>                       FXState;                                           // 0x0018(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFXConfig_103871) == 0x000008, "Wrong alignment on FFXConfig_103871");
-static_assert(sizeof(FFXConfig_103871) == 0x000028, "Wrong size on FFXConfig_103871");
-static_assert(offsetof(FFXConfig_103871, AbilityID) == 0x000000, "Member 'FFXConfig_103871::AbilityID' has a wrong offset!");
-static_assert(offsetof(FFXConfig_103871, AbilityTag) == 0x000004, "Member 'FFXConfig_103871::AbilityTag' has a wrong offset!");
-static_assert(offsetof(FFXConfig_103871, bUsedCombo) == 0x000010, "Member 'FFXConfig_103871::bUsedCombo' has a wrong offset!");
-static_assert(offsetof(FFXConfig_103871, FXState) == 0x000018, "Member 'FFXConfig_103871::FXState' has a wrong offset!");
+DUMPER7_ASSERTS_FFXConfig_103871;
 
 // ScriptStruct Hero_1038.MaterialFadeInfo_103871
 // 0x0028 (0x0028 - 0x0000)
@@ -68,13 +63,7 @@ public:
 	class UCurveFloat*                            FadeInCurve;                                       // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            FadeOutCurve;                                      // 0x0020(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialFadeInfo_103871) == 0x000008, "Wrong alignment on FMaterialFadeInfo_103871");
-static_assert(sizeof(FMaterialFadeInfo_103871) == 0x000028, "Wrong size on FMaterialFadeInfo_103871");
-static_assert(offsetof(FMaterialFadeInfo_103871, AbilityTag) == 0x000000, "Member 'FMaterialFadeInfo_103871::AbilityTag' has a wrong offset!");
-static_assert(offsetof(FMaterialFadeInfo_103871, FadeInTime) == 0x00000C, "Member 'FMaterialFadeInfo_103871::FadeInTime' has a wrong offset!");
-static_assert(offsetof(FMaterialFadeInfo_103871, FadeOutTime) == 0x000010, "Member 'FMaterialFadeInfo_103871::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(FMaterialFadeInfo_103871, FadeInCurve) == 0x000018, "Member 'FMaterialFadeInfo_103871::FadeInCurve' has a wrong offset!");
-static_assert(offsetof(FMaterialFadeInfo_103871, FadeOutCurve) == 0x000020, "Member 'FMaterialFadeInfo_103871::FadeOutCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialFadeInfo_103871;
 
 }
 

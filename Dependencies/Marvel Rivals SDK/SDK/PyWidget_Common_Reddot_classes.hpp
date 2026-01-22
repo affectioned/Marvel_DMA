@@ -18,77 +18,88 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Reddot.PyWidget_Common_Reddot
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Common_Reddot : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ReddotOffset;                                      // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ReddotOffset;                                      // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Reddot">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Reddot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Reddot")
 	}
 	static class UPyWidget_Common_Reddot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Reddot>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Reddot) == 0x000008, "Wrong alignment on UPyWidget_Common_Reddot");
-static_assert(sizeof(UPyWidget_Common_Reddot) == 0x0005D0, "Wrong size on UPyWidget_Common_Reddot");
-static_assert(offsetof(UPyWidget_Common_Reddot, ReddotOffset) == 0x0005C0, "Member 'UPyWidget_Common_Reddot::ReddotOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Reddot;
 
 // PythonClass PyWidget_Common_Reddot.PyWidget_Common_NumReddot
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Common_NumReddot : public UPyWidget_Common_Reddot
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NumReddot">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NumReddot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NumReddot")
 	}
 	static class UPyWidget_Common_NumReddot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NumReddot>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NumReddot) == 0x000008, "Wrong alignment on UPyWidget_Common_NumReddot");
-static_assert(sizeof(UPyWidget_Common_NumReddot) == 0x0005D0, "Wrong size on UPyWidget_Common_NumReddot");
+DUMPER7_ASSERTS_UPyWidget_Common_NumReddot;
 
 // PythonClass PyWidget_Common_Reddot.PyWidget_Common_NewReddot
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class PyWidget_Common_Reddot::UPyWidget_Common_NewReddot : public UPyWidget_Common_Reddot
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonClass PyWidget_Common_Reddot.PyWidget_Common_NewReddot", true>();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyWidget_Common_Reddot.PyWidget_Common_NewReddot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NewReddot")
 	}
 	static class PyWidget_Common_Reddot::UPyWidget_Common_NewReddot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<PyWidget_Common_Reddot::UPyWidget_Common_NewReddot>();
 	}
 };
-static_assert(alignof(PyWidget_Common_Reddot::UPyWidget_Common_NewReddot) == 0x000008, "Wrong alignment on PyWidget_Common_Reddot::UPyWidget_Common_NewReddot");
-static_assert(sizeof(PyWidget_Common_Reddot::UPyWidget_Common_NewReddot) == 0x0005D0, "Wrong size on PyWidget_Common_Reddot::UPyWidget_Common_NewReddot");
+DUMPER7_ASSERTS_PyWidget_Common_Reddot__UPyWidget_Common_NewReddot;
 
 // PythonClass PyWidget_Common_Reddot.PyWidget_Common_ActivityReddot
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Common_ActivityReddot : public UPyWidget_Common_Reddot
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_ActivityReddot">();
+		STATIC_CLASS_IMPL("PyWidget_Common_ActivityReddot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_ActivityReddot")
 	}
 	static class UPyWidget_Common_ActivityReddot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_ActivityReddot>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_ActivityReddot) == 0x000008, "Wrong alignment on UPyWidget_Common_ActivityReddot");
-static_assert(sizeof(UPyWidget_Common_ActivityReddot) == 0x0005D0, "Wrong size on UPyWidget_Common_ActivityReddot");
+DUMPER7_ASSERTS_UPyWidget_Common_ActivityReddot;
 
 }
 

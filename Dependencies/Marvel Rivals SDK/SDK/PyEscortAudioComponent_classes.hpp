@@ -42,30 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortAudioItem">();
+		STATIC_CLASS_IMPL("PyEscortAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortAudioItem")
 	}
 	static class UPyEscortAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortAudioItem>();
 	}
 };
-static_assert(alignof(UPyEscortAudioItem) == 0x000008, "Wrong alignment on UPyEscortAudioItem");
-static_assert(sizeof(UPyEscortAudioItem) == 0x0001C8, "Wrong size on UPyEscortAudioItem");
-static_assert(offsetof(UPyEscortAudioItem, ActivateCar) == 0x0000D8, "Member 'UPyEscortAudioItem::ActivateCar' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, StartOccupy) == 0x0000E8, "Member 'UPyEscortAudioItem::StartOccupy' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, StalemateOccupy) == 0x0000F8, "Member 'UPyEscortAudioItem::StalemateOccupy' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, FinishOccupy) == 0x000108, "Member 'UPyEscortAudioItem::FinishOccupy' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, MovingCar) == 0x000118, "Member 'UPyEscortAudioItem::MovingCar' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, AlmostCheckPoint) == 0x000128, "Member 'UPyEscortAudioItem::AlmostCheckPoint' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, EndCheckPoint) == 0x000138, "Member 'UPyEscortAudioItem::EndCheckPoint' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, ReachCheckPoint) == 0x000148, "Member 'UPyEscortAudioItem::ReachCheckPoint' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, SustainForward) == 0x000158, "Member 'UPyEscortAudioItem::SustainForward' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, SustainBack) == 0x000168, "Member 'UPyEscortAudioItem::SustainBack' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, SustainToDest) == 0x000178, "Member 'UPyEscortAudioItem::SustainToDest' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, Progress50ToAB) == 0x000188, "Member 'UPyEscortAudioItem::Progress50ToAB' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, Progress80ToAB) == 0x000198, "Member 'UPyEscortAudioItem::Progress80ToAB' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, Progress50ToEnd) == 0x0001A8, "Member 'UPyEscortAudioItem::Progress50ToEnd' has a wrong offset!");
-static_assert(offsetof(UPyEscortAudioItem, Progress80ToEnd) == 0x0001B8, "Member 'UPyEscortAudioItem::Progress80ToEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEscortAudioItem;
 
 // PythonClass PyEscortAudioComponent.PyEscortAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -77,15 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortAudioComponent">();
+		STATIC_CLASS_IMPL("PyEscortAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortAudioComponent")
 	}
 	static class UPyEscortAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortAudioComponent>();
 	}
 };
-static_assert(alignof(UPyEscortAudioComponent) == 0x000008, "Wrong alignment on UPyEscortAudioComponent");
-static_assert(sizeof(UPyEscortAudioComponent) == 0x000120, "Wrong size on UPyEscortAudioComponent");
+DUMPER7_ASSERTS_UPyEscortAudioComponent;
 
 }
 

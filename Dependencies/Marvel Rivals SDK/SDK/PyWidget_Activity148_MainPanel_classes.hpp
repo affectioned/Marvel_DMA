@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel_Item
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Activity148_MainPanel_Item final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -29,18 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity148_MainPanel_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity148_MainPanel_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity148_MainPanel_Item")
 	}
 	static class UPyWidget_Activity148_MainPanel_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity148_MainPanel_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity148_MainPanel_Item) == 0x000010, "Wrong alignment on UPyWidget_Activity148_MainPanel_Item");
-static_assert(sizeof(UPyWidget_Activity148_MainPanel_Item) == 0x0008C0, "Wrong size on UPyWidget_Activity148_MainPanel_Item");
+DUMPER7_ASSERTS_UPyWidget_Activity148_MainPanel_Item;
 
 // PythonClass PyWidget_Activity148_MainPanel.PyWidget_Activity148_MainPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity148_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -54,15 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity148_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity148_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity148_MainPanel")
 	}
 	static class UPyWidget_Activity148_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity148_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity148_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity148_MainPanel");
-static_assert(sizeof(UPyWidget_Activity148_MainPanel) == 0x0005F8, "Wrong size on UPyWidget_Activity148_MainPanel");
+DUMPER7_ASSERTS_UPyWidget_Activity148_MainPanel;
 
 }
 

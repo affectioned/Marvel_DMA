@@ -21,9 +21,7 @@ struct PyWidget_Secondary_DataCenter_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_DataCenter_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Secondary_DataCenter_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Secondary_DataCenter_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Secondary_DataCenter_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Secondary_DataCenter_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Secondary_DataCenter_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_DataCenter_MarvelSetVisible;
 
 // PythonFunction PyWidget_Secondary_DataCenter.PyWidget_DataCenter_Item.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_DataCenter_Item_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DataCenter_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_DataCenter_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_DataCenter_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_DataCenter_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_DataCenter_Item_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_DataCenter_Item_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DataCenter_Item_OnListItemObjectSet;
 
 }
 

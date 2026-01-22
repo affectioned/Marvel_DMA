@@ -24,10 +24,7 @@ public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104931_IsActorMatchRequirement) == 0x000008, "Wrong alignment on PyAbility_104931_IsActorMatchRequirement");
-static_assert(sizeof(PyAbility_104931_IsActorMatchRequirement) == 0x000010, "Wrong size on PyAbility_104931_IsActorMatchRequirement");
-static_assert(offsetof(PyAbility_104931_IsActorMatchRequirement, InActor) == 0x000000, "Member 'PyAbility_104931_IsActorMatchRequirement::InActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_104931_IsActorMatchRequirement, ReturnValue) == 0x000008, "Member 'PyAbility_104931_IsActorMatchRequirement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104931_IsActorMatchRequirement;
 
 // PythonFunction PyAbility_104931.PyAbility_104931.IsWolverineParticipateInKillEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104931_IsWolverineParticipateInKillEvent) == 0x000008, "Wrong alignment on PyAbility_104931_IsWolverineParticipateInKillEvent");
-static_assert(sizeof(PyAbility_104931_IsWolverineParticipateInKillEvent) == 0x000020, "Wrong size on PyAbility_104931_IsWolverineParticipateInKillEvent");
-static_assert(offsetof(PyAbility_104931_IsWolverineParticipateInKillEvent, ParamHandle) == 0x000000, "Member 'PyAbility_104931_IsWolverineParticipateInKillEvent::ParamHandle' has a wrong offset!");
-static_assert(offsetof(PyAbility_104931_IsWolverineParticipateInKillEvent, ReturnValue) == 0x000018, "Member 'PyAbility_104931_IsWolverineParticipateInKillEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104931_IsWolverineParticipateInKillEvent;
 
 // PythonFunction PyAbility_104931.PyAbility_104931.BindWolverineParticipateInKillEvent
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct PyAbility_104931_BindWolverineParticipateInKillEvent final
 public:
 	bool                                          ShouldBind;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104931_BindWolverineParticipateInKillEvent) == 0x000001, "Wrong alignment on PyAbility_104931_BindWolverineParticipateInKillEvent");
-static_assert(sizeof(PyAbility_104931_BindWolverineParticipateInKillEvent) == 0x000001, "Wrong size on PyAbility_104931_BindWolverineParticipateInKillEvent");
-static_assert(offsetof(PyAbility_104931_BindWolverineParticipateInKillEvent, ShouldBind) == 0x000000, "Member 'PyAbility_104931_BindWolverineParticipateInKillEvent::ShouldBind' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104931_BindWolverineParticipateInKillEvent;
 
 // PythonFunction PyAbility_104931.PyAbility_104931.OnGlobalActorDealth
 // 0x0030 (0x0030 - 0x0000)
@@ -63,12 +55,7 @@ public:
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_104931_OnGlobalActorDealth) == 0x000008, "Wrong alignment on PyAbility_104931_OnGlobalActorDealth");
-static_assert(sizeof(PyAbility_104931_OnGlobalActorDealth) == 0x000030, "Wrong size on PyAbility_104931_OnGlobalActorDealth");
-static_assert(offsetof(PyAbility_104931_OnGlobalActorDealth, Killer) == 0x000000, "Member 'PyAbility_104931_OnGlobalActorDealth::Killer' has a wrong offset!");
-static_assert(offsetof(PyAbility_104931_OnGlobalActorDealth, Target) == 0x000008, "Member 'PyAbility_104931_OnGlobalActorDealth::Target' has a wrong offset!");
-static_assert(offsetof(PyAbility_104931_OnGlobalActorDealth, ParamHandle) == 0x000010, "Member 'PyAbility_104931_OnGlobalActorDealth::ParamHandle' has a wrong offset!");
-static_assert(offsetof(PyAbility_104931_OnGlobalActorDealth, ExtraData) == 0x000028, "Member 'PyAbility_104931_OnGlobalActorDealth::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104931_OnGlobalActorDealth;
 
 // PythonFunction PyAbility_104931.PyAbility_104931.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +64,7 @@ struct PyAbility_104931_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104931_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104931_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104931_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104931_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104931_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104931_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104931_K2_OnEndAbility;
 
 }
 

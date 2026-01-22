@@ -25,9 +25,7 @@ struct PyLevelSummoned_21300301_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300301_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelSummoned_21300301_ReceiveEndPlay");
-static_assert(sizeof(PyLevelSummoned_21300301_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelSummoned_21300301_ReceiveEndPlay");
-static_assert(offsetof(PyLevelSummoned_21300301_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelSummoned_21300301_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300301_ReceiveEndPlay;
 
 // PythonFunction PyLevelSummoned_21300301.PyLevelSummoned_21300301.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -38,11 +36,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300301_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_21300301_OnDeath");
-static_assert(sizeof(PyLevelSummoned_21300301_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_21300301_OnDeath");
-static_assert(offsetof(PyLevelSummoned_21300301_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_21300301_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300301_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_21300301_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300301_OnDeath, ModifierParameterHandle) == 0x000010, "Member 'PyLevelSummoned_21300301_OnDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300301_OnDeath;
 
 // PythonFunction PyLevelSummoned_21300301.PyLevelSummoned_21300301.DetermineDeathCue
 // 0x0028 (0x0028 - 0x0000)
@@ -53,11 +47,7 @@ public:
 	struct FGameplayTag                           InOutDeathTag;                                     // 0x0018(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300301_DetermineDeathCue) == 0x000008, "Wrong alignment on PyLevelSummoned_21300301_DetermineDeathCue");
-static_assert(sizeof(PyLevelSummoned_21300301_DetermineDeathCue) == 0x000028, "Wrong size on PyLevelSummoned_21300301_DetermineDeathCue");
-static_assert(offsetof(PyLevelSummoned_21300301_DetermineDeathCue, ModifierParameterHandle) == 0x000000, "Member 'PyLevelSummoned_21300301_DetermineDeathCue::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300301_DetermineDeathCue, InOutDeathTag) == 0x000018, "Member 'PyLevelSummoned_21300301_DetermineDeathCue::InOutDeathTag' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300301_DetermineDeathCue, ReturnValue) == 0x000024, "Member 'PyLevelSummoned_21300301_DetermineDeathCue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300301_DetermineDeathCue;
 
 // PythonFunction PyLevelSummoned_21300301.PyLevelSummoned_21300301.SetState
 // 0x0004 (0x0004 - 0x0000)
@@ -66,9 +56,7 @@ struct PyLevelSummoned_21300301_SetState final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300301_SetState) == 0x000004, "Wrong alignment on PyLevelSummoned_21300301_SetState");
-static_assert(sizeof(PyLevelSummoned_21300301_SetState) == 0x000004, "Wrong size on PyLevelSummoned_21300301_SetState");
-static_assert(offsetof(PyLevelSummoned_21300301_SetState, NewState) == 0x000000, "Member 'PyLevelSummoned_21300301_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300301_SetState;
 
 // PythonFunction PyLevelSummoned_21300301.PyLevelSummoned_21300301.ShouldApplyEffect
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +65,7 @@ struct PyLevelSummoned_21300301_ShouldApplyEffect final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300301_ShouldApplyEffect) == 0x000001, "Wrong alignment on PyLevelSummoned_21300301_ShouldApplyEffect");
-static_assert(sizeof(PyLevelSummoned_21300301_ShouldApplyEffect) == 0x000001, "Wrong size on PyLevelSummoned_21300301_ShouldApplyEffect");
-static_assert(offsetof(PyLevelSummoned_21300301_ShouldApplyEffect, ReturnValue) == 0x000000, "Member 'PyLevelSummoned_21300301_ShouldApplyEffect::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300301_ShouldApplyEffect;
 
 }
 

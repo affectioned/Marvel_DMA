@@ -235,6 +235,58 @@ class UAnimMontage* UPyAbility_212::GetCurrentEmoteAnim()
 }
 
 
+// PythonFunction PyAbility_212.PyAbility_212.K2_OnSetEmoteAnimPosition
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewPosition                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    Reason                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyAbility_212::K2_OnSetEmoteAnimPosition(float NewPosition, const class FString& Reason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_212", "K2_OnSetEmoteAnimPosition");
+
+	Params::PyAbility_212_K2_OnSetEmoteAnimPosition Parms{};
+
+	Parms.NewPosition = NewPosition;
+	Parms.Reason = std::move(Reason);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_212.PyAbility_212.K2_OnSetEmoteAnimPlayRate
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   InRate                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyAbility_212::K2_OnSetEmoteAnimPlayRate(float InRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_212", "K2_OnSetEmoteAnimPlayRate");
+
+	Params::PyAbility_212_K2_OnSetEmoteAnimPlayRate Parms{};
+
+	Parms.InRate = InRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_212.PyAbility_212.OnRep_RepEmoteAnimInfo
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

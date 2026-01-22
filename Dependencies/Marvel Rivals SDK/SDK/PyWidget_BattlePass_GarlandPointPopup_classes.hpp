@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_GarlandPointPopup.PyWidget_BattlePass_GarlandPointTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattlePass_GarlandPointTips final : public UPyMarvelUserWidget
 {
 public:
@@ -26,26 +26,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_GarlandPointTips">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_GarlandPointTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_GarlandPointTips")
 	}
 	static class UPyWidget_BattlePass_GarlandPointTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_GarlandPointTips>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_GarlandPointTips) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_GarlandPointTips");
-static_assert(sizeof(UPyWidget_BattlePass_GarlandPointTips) == 0x0005C0, "Wrong size on UPyWidget_BattlePass_GarlandPointTips");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_GarlandPointTips;
 
 // PythonClass PyWidget_BattlePass_GarlandPointPopup.PyWidget_BattlePass_GarlandPointPopup
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_BattlePass_GarlandPointPopup final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   SourceText_Title;                                  // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   RichText_Title;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_FinishTask_Hover;                              // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_CrystalLattice_Hover;                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   SourceText_Title;                                  // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   RichText_Title;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_FinishTask_Hover;                              // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_CrystalLattice_Hover;                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -55,19 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_GarlandPointPopup">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_GarlandPointPopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_GarlandPointPopup")
 	}
 	static class UPyWidget_BattlePass_GarlandPointPopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_GarlandPointPopup>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_GarlandPointPopup) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_GarlandPointPopup");
-static_assert(sizeof(UPyWidget_BattlePass_GarlandPointPopup) == 0x0005F0, "Wrong size on UPyWidget_BattlePass_GarlandPointPopup");
-static_assert(offsetof(UPyWidget_BattlePass_GarlandPointPopup, SourceText_Title) == 0x0005C0, "Member 'UPyWidget_BattlePass_GarlandPointPopup::SourceText_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_GarlandPointPopup, RichText_Title) == 0x0005D8, "Member 'UPyWidget_BattlePass_GarlandPointPopup::RichText_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_GarlandPointPopup, Img_FinishTask_Hover) == 0x0005E0, "Member 'UPyWidget_BattlePass_GarlandPointPopup::Img_FinishTask_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_GarlandPointPopup, Img_CrystalLattice_Hover) == 0x0005E8, "Member 'UPyWidget_BattlePass_GarlandPointPopup::Img_CrystalLattice_Hover' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_GarlandPointPopup;
 
 }
 

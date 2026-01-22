@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_120_10321120.PyBuffAbility_120_10321120
-// 0x0390 (0x17A0 - 0x1410)
+// 0x04D0 (0x18F8 - 0x1428)
 class UPyBuffAbility_120_10321120 final : public UMarvelTimelineAccelerateAbility
 {
 public:
-	float                                         MaxAmmo1;                                          // 0x1410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1414[0x4];                                     // 0x1414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelCollisionRule                   CollisionRule;                                     // 0x1418(0x0388)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         MaxAmmo1;                                          // 0x1428(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_142C[0x4];                                     // 0x142C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelCollisionRule                   CollisionRule;                                     // 0x1430(0x04C8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10321120">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10321120")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10321120")
 	}
 	static class UPyBuffAbility_120_10321120* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10321120>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10321120) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10321120");
-static_assert(sizeof(UPyBuffAbility_120_10321120) == 0x0017A0, "Wrong size on UPyBuffAbility_120_10321120");
-static_assert(offsetof(UPyBuffAbility_120_10321120, MaxAmmo1) == 0x001410, "Member 'UPyBuffAbility_120_10321120::MaxAmmo1' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10321120, CollisionRule) == 0x001418, "Member 'UPyBuffAbility_120_10321120::CollisionRule' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10321120;
 
 }
 

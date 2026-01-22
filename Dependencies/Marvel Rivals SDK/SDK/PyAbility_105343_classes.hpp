@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105343.PyBuffAbility_10534301
-// 0x0008 (0x2040 - 0x2038)
+// 0x0008 (0x2390 - 0x2388)
 class UPyBuffAbility_10534301 : public UMarvelKnockUpAbility
 {
 public:
-	TSubclassOf<class ULegacyCameraShake>         ShakeClass;                                        // 0x2038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULegacyCameraShake>         ShakeClass;                                        // 0x2388(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,20 +31,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10534301">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10534301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10534301")
 	}
 	static class UPyBuffAbility_10534301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10534301>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10534301) == 0x000008, "Wrong alignment on UPyBuffAbility_10534301");
-static_assert(sizeof(UPyBuffAbility_10534301) == 0x002040, "Wrong size on UPyBuffAbility_10534301");
-static_assert(offsetof(UPyBuffAbility_10534301, ShakeClass) == 0x002038, "Member 'UPyBuffAbility_10534301::ShakeClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10534301;
 
 // PythonClass PyAbility_105343.PyCue_Ability_Instant_10534301
-// 0x0000 (0x05C8 - 0x05C8)
-class UPyCue_Ability_Instant_10534301 : public UMarvelCueNotify_HitImpact
+// 0x0000 (0x05E8 - 0x05E8)
+class UPyCue_Ability_Instant_10534301 final : public UMarvelCueNotify_HitImpact
 {
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -52,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10534301">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10534301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10534301")
 	}
 	static class UPyCue_Ability_Instant_10534301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10534301>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10534301) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10534301");
-static_assert(sizeof(UPyCue_Ability_Instant_10534301) == 0x0005C8, "Wrong size on UPyCue_Ability_Instant_10534301");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10534301;
 
 }
 

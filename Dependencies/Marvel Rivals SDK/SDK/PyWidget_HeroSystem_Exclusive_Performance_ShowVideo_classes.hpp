@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_ShowVideo.PyWidget_HeroSystem_Exclusive_Performance_ShowVideo
-// 0x0140 (0x0750 - 0x0610)
+// 0x0140 (0x0758 - 0x0618)
 class UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo final : public UPyWidget_OnlineVideo
 {
 public:
-	class UInputAction*                           SwtichTab_Action;                                  // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ScrollUp_Action;                                   // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ScrollDown_Action;                                 // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_SwtichTab;                                 // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ScrollGuideTips;                                   // 0x0630(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwtichTab_Action;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ScrollUp_Action;                                   // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ScrollDown_Action;                                 // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_SwtichTab;                                 // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ScrollGuideTips;                                   // 0x0638(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_ShowVideo">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_ShowVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_ShowVideo")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo) == 0x000750, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo, SwtichTab_Action) == 0x000610, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo::SwtichTab_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo, ScrollUp_Action) == 0x000618, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo::ScrollUp_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo, ScrollDown_Action) == 0x000620, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo::ScrollDown_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo, AkEvent_SwtichTab) == 0x000628, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo::AkEvent_SwtichTab' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo, ScrollGuideTips) == 0x000630, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo::ScrollGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_ShowVideo;
 
 }
 

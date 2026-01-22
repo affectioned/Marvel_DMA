@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWaterfallSwitchingLSA">();
+		STATIC_CLASS_IMPL("PyWaterfallSwitchingLSA")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWaterfallSwitchingLSA")
 	}
 	static class APyWaterfallSwitchingLSA* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWaterfallSwitchingLSA>();
 	}
 };
-static_assert(alignof(APyWaterfallSwitchingLSA) == 0x000010, "Wrong alignment on APyWaterfallSwitchingLSA");
-static_assert(sizeof(APyWaterfallSwitchingLSA) == 0x0007A0, "Wrong size on APyWaterfallSwitchingLSA");
-static_assert(offsetof(APyWaterfallSwitchingLSA, bUseTargetDestructionActorTag) == 0x000780, "Member 'APyWaterfallSwitchingLSA::bUseTargetDestructionActorTag' has a wrong offset!");
-static_assert(offsetof(APyWaterfallSwitchingLSA, TargetDestructionActorTag) == 0x000784, "Member 'APyWaterfallSwitchingLSA::TargetDestructionActorTag' has a wrong offset!");
-static_assert(offsetof(APyWaterfallSwitchingLSA, bUseTargetDestructionActor) == 0x000790, "Member 'APyWaterfallSwitchingLSA::bUseTargetDestructionActor' has a wrong offset!");
-static_assert(offsetof(APyWaterfallSwitchingLSA, TargetDestructionActor) == 0x000798, "Member 'APyWaterfallSwitchingLSA::TargetDestructionActor' has a wrong offset!");
+DUMPER7_ASSERTS_APyWaterfallSwitchingLSA;
 
 }
 

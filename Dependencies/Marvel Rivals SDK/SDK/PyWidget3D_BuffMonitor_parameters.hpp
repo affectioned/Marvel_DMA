@@ -21,9 +21,7 @@ struct PyWidget3D_BuffMonitor_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_BuffMonitor_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget3D_BuffMonitor_ShouldBeVisible");
-static_assert(sizeof(PyWidget3D_BuffMonitor_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget3D_BuffMonitor_ShouldBeVisible");
-static_assert(offsetof(PyWidget3D_BuffMonitor_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget3D_BuffMonitor_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_BuffMonitor_ShouldBeVisible;
 
 // PythonFunction PyWidget3D_BuffMonitor.PyWidget3D_BuffMonitor.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget3D_BuffMonitor_OnVisibleChanged final
 public:
 	bool                                          IsVisible_0;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_BuffMonitor_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget3D_BuffMonitor_OnVisibleChanged");
-static_assert(sizeof(PyWidget3D_BuffMonitor_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget3D_BuffMonitor_OnVisibleChanged");
-static_assert(offsetof(PyWidget3D_BuffMonitor_OnVisibleChanged, IsVisible_0) == 0x000000, "Member 'PyWidget3D_BuffMonitor_OnVisibleChanged::IsVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_BuffMonitor_OnVisibleChanged;
 
 }
 

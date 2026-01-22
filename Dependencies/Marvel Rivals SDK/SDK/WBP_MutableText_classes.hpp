@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MutableText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MutableText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MutableText_C")
 	}
 	static class UWBP_MutableText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MutableText_C>();
 	}
 };
-static_assert(alignof(UWBP_MutableText_C) == 0x000008, "Wrong alignment on UWBP_MutableText_C");
-static_assert(sizeof(UWBP_MutableText_C) == 0x0003D0, "Wrong size on UWBP_MutableText_C");
-static_assert(offsetof(UWBP_MutableText_C, Overlay_Input) == 0x0003B8, "Member 'UWBP_MutableText_C::Overlay_Input' has a wrong offset!");
-static_assert(offsetof(UWBP_MutableText_C, Text_Content) == 0x0003C0, "Member 'UWBP_MutableText_C::Text_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_MutableText_C, WBP_Rename) == 0x0003C8, "Member 'UWBP_MutableText_C::WBP_Rename' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MutableText_C;
 
 }
 

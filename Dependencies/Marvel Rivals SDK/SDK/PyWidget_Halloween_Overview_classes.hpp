@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Overview.PyWidget_Halloween_Overview
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_Halloween_Overview final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            NormalBtnColor;                                    // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DisableBtnColor;                                   // 0x060C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadToPreparedness;                             // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamepadToGame;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEventToPreparedness;                             // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEventToGame;                                     // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalBtnColor;                                    // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DisableBtnColor;                                   // 0x0614(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadToPreparedness;                             // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamepadToGame;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEventToPreparedness;                             // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEventToGame;                                     // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Overview">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Overview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Overview")
 	}
 	static class UPyWidget_Halloween_Overview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Overview>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Overview) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Overview");
-static_assert(sizeof(UPyWidget_Halloween_Overview) == 0x000640, "Wrong size on UPyWidget_Halloween_Overview");
-static_assert(offsetof(UPyWidget_Halloween_Overview, NormalBtnColor) == 0x0005F8, "Member 'UPyWidget_Halloween_Overview::NormalBtnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Overview, DisableBtnColor) == 0x00060C, "Member 'UPyWidget_Halloween_Overview::DisableBtnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Overview, GamepadToPreparedness) == 0x000620, "Member 'UPyWidget_Halloween_Overview::GamepadToPreparedness' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Overview, GamepadToGame) == 0x000628, "Member 'UPyWidget_Halloween_Overview::GamepadToGame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Overview, AKEventToPreparedness) == 0x000630, "Member 'UPyWidget_Halloween_Overview::AKEventToPreparedness' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Overview, AKEventToGame) == 0x000638, "Member 'UPyWidget_Halloween_Overview::AKEventToGame' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Overview;
 
 }
 

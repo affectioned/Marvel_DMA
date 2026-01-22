@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mode_Indicator_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Mode_Indicator_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mode_Indicator_Base")
 	}
 	static class UPyWidget_Mode_Indicator_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mode_Indicator_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Mode_Indicator_Base) == 0x000010, "Wrong alignment on UPyWidget_Mode_Indicator_Base");
-static_assert(sizeof(UPyWidget_Mode_Indicator_Base) == 0x0008A0, "Wrong size on UPyWidget_Mode_Indicator_Base");
-static_assert(offsetof(UPyWidget_Mode_Indicator_Base, NullOccupyColor) == 0x000870, "Member 'UPyWidget_Mode_Indicator_Base::NullOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_Indicator_Base, AllyOccupyColor) == 0x000880, "Member 'UPyWidget_Mode_Indicator_Base::AllyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_Indicator_Base, EmenyOccupyColor) == 0x000890, "Member 'UPyWidget_Mode_Indicator_Base::EmenyOccupyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mode_Indicator_Base;
 
 }
 

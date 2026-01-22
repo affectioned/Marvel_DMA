@@ -23,9 +23,7 @@ struct PyAbility_101132_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101132_CanActivate) == 0x000001, "Wrong alignment on PyAbility_101132_CanActivate");
-static_assert(sizeof(PyAbility_101132_CanActivate) == 0x000001, "Wrong size on PyAbility_101132_CanActivate");
-static_assert(offsetof(PyAbility_101132_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_101132_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101132_CanActivate;
 
 // PythonFunction PyAbility_101132.PyAbility_101132.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_101132_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101132_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101132_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101132_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101132_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101132_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101132_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101132_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101132.PyAbility_101132.OnTargetDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -47,11 +43,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101132_OnTargetDeath) == 0x000008, "Wrong alignment on PyAbility_101132_OnTargetDeath");
-static_assert(sizeof(PyAbility_101132_OnTargetDeath) == 0x000028, "Wrong size on PyAbility_101132_OnTargetDeath");
-static_assert(offsetof(PyAbility_101132_OnTargetDeath, DamageCauser) == 0x000000, "Member 'PyAbility_101132_OnTargetDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyAbility_101132_OnTargetDeath, TargetActor) == 0x000008, "Member 'PyAbility_101132_OnTargetDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_101132_OnTargetDeath, ModifierParameterHandle) == 0x000010, "Member 'PyAbility_101132_OnTargetDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101132_OnTargetDeath;
 
 // PythonFunction PyAbility_101132.PyAbility_101132.GetEnergyToCache
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +52,7 @@ struct PyAbility_101132_GetEnergyToCache final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101132_GetEnergyToCache) == 0x000004, "Wrong alignment on PyAbility_101132_GetEnergyToCache");
-static_assert(sizeof(PyAbility_101132_GetEnergyToCache) == 0x000004, "Wrong size on PyAbility_101132_GetEnergyToCache");
-static_assert(offsetof(PyAbility_101132_GetEnergyToCache, ReturnValue) == 0x000000, "Member 'PyAbility_101132_GetEnergyToCache::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101132_GetEnergyToCache;
 
 // PythonFunction PyAbility_101132.PyAbility_101132.IsPrimaryAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +61,7 @@ struct PyAbility_101132_IsPrimaryAbility final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101132_IsPrimaryAbility) == 0x000001, "Wrong alignment on PyAbility_101132_IsPrimaryAbility");
-static_assert(sizeof(PyAbility_101132_IsPrimaryAbility) == 0x000001, "Wrong size on PyAbility_101132_IsPrimaryAbility");
-static_assert(offsetof(PyAbility_101132_IsPrimaryAbility, ReturnValue) == 0x000000, "Member 'PyAbility_101132_IsPrimaryAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101132_IsPrimaryAbility;
 
 }
 

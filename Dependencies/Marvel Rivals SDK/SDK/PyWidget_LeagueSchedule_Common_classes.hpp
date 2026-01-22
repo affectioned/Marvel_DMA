@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_League_ClanIcon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ClanIcon : public UPyMarvelUserWidget
 {
 public:
@@ -30,32 +30,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ClanIcon">();
+		STATIC_CLASS_IMPL("PyWidget_League_ClanIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ClanIcon")
 	}
 	static class UPyWidget_League_ClanIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ClanIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ClanIcon) == 0x000008, "Wrong alignment on UPyWidget_League_ClanIcon");
-static_assert(sizeof(UPyWidget_League_ClanIcon) == 0x0005C0, "Wrong size on UPyWidget_League_ClanIcon");
+DUMPER7_ASSERTS_UPyWidget_League_ClanIcon;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Clan
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_LeagueSchedule_Clan final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FontColorDefault;                                  // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorMyClan;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorDefaultMini;                              // 0x05E4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorMyClanMini;                               // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         FontOpacityMyClanMini;                             // 0x060C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FontOpacityDefaultMini;                            // 0x0610(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ColorAlphaLoser;                                   // 0x0614(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorEliminatedBg;                                 // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorClanBg;                                       // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UListItemObject_LeagueSchedule_Clan*    ItemObject;                                        // 0x0638(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FontColorDefault;                                  // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorMyClan;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorDefaultMini;                              // 0x05EC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorMyClanMini;                               // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         FontOpacityMyClanMini;                             // 0x0614(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FontOpacityDefaultMini;                            // 0x0618(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ColorAlphaLoser;                                   // 0x061C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorEliminatedBg;                                 // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorClanBg;                                       // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UListItemObject_LeagueSchedule_Clan*    ItemObject;                                        // 0x0640(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -67,46 +70,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Clan">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_Clan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Clan")
 	}
 	static class UPyWidget_LeagueSchedule_Clan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Clan>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Clan) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Clan");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Clan) == 0x000640, "Wrong size on UPyWidget_LeagueSchedule_Clan");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontColorDefault) == 0x0005BC, "Member 'UPyWidget_LeagueSchedule_Clan::FontColorDefault' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontColorMyClan) == 0x0005D0, "Member 'UPyWidget_LeagueSchedule_Clan::FontColorMyClan' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontColorDefaultMini) == 0x0005E4, "Member 'UPyWidget_LeagueSchedule_Clan::FontColorDefaultMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontColorMyClanMini) == 0x0005F8, "Member 'UPyWidget_LeagueSchedule_Clan::FontColorMyClanMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontOpacityMyClanMini) == 0x00060C, "Member 'UPyWidget_LeagueSchedule_Clan::FontOpacityMyClanMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, FontOpacityDefaultMini) == 0x000610, "Member 'UPyWidget_LeagueSchedule_Clan::FontOpacityDefaultMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, ColorAlphaLoser) == 0x000614, "Member 'UPyWidget_LeagueSchedule_Clan::ColorAlphaLoser' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, ColorEliminatedBg) == 0x000618, "Member 'UPyWidget_LeagueSchedule_Clan::ColorEliminatedBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, ColorClanBg) == 0x000628, "Member 'UPyWidget_LeagueSchedule_Clan::ColorClanBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Clan, ItemObject) == 0x000638, "Member 'UPyWidget_LeagueSchedule_Clan::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_Clan;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_League_LiveIcon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_LiveIcon : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_LiveIcon">();
+		STATIC_CLASS_IMPL("PyWidget_League_LiveIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_LiveIcon")
 	}
 	static class UPyWidget_League_LiveIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_LiveIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_League_LiveIcon) == 0x000008, "Wrong alignment on UPyWidget_League_LiveIcon");
-static_assert(sizeof(UPyWidget_League_LiveIcon) == 0x0005C0, "Wrong size on UPyWidget_League_LiveIcon");
+DUMPER7_ASSERTS_UPyWidget_League_LiveIcon;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Cup
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_LeagueSchedule_Cup final : public UPyMarvelUserWidget
+// 0x0000 (0x05C8 - 0x05C8)
+class PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Cup final : public UPyMarvelUserWidget
 {
 public:
 	void Construct();
@@ -115,15 +114,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Cup">();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Cup")
 	}
-	static class UPyWidget_LeagueSchedule_Cup* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Cup>();
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Cup")
+	}
+	static class PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Cup* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Cup>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Cup) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Cup");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Cup) == 0x0005C0, "Wrong size on UPyWidget_LeagueSchedule_Cup");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Common__UPyWidget_LeagueSchedule_Cup;
 
 // PythonClass PyWidget_LeagueSchedule_Common.ListItemObject_LeagueSchedule_Clan
 // 0x0000 (0x0030 - 0x0030)
@@ -132,18 +134,21 @@ class UListItemObject_LeagueSchedule_Clan final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ListItemObject_LeagueSchedule_Clan">();
+		STATIC_CLASS_IMPL("ListItemObject_LeagueSchedule_Clan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ListItemObject_LeagueSchedule_Clan")
 	}
 	static class UListItemObject_LeagueSchedule_Clan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UListItemObject_LeagueSchedule_Clan>();
 	}
 };
-static_assert(alignof(UListItemObject_LeagueSchedule_Clan) == 0x000008, "Wrong alignment on UListItemObject_LeagueSchedule_Clan");
-static_assert(sizeof(UListItemObject_LeagueSchedule_Clan) == 0x000030, "Wrong size on UListItemObject_LeagueSchedule_Clan");
+DUMPER7_ASSERTS_UListItemObject_LeagueSchedule_Clan;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_DualPlay
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueSchedule_DualPlay final : public UPyMarvelUserWidget
 {
 public:
@@ -153,15 +158,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_DualPlay">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_DualPlay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_DualPlay")
 	}
 	static class UPyWidget_LeagueSchedule_DualPlay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_DualPlay>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_DualPlay) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_DualPlay");
-static_assert(sizeof(UPyWidget_LeagueSchedule_DualPlay) == 0x0005C0, "Wrong size on UPyWidget_LeagueSchedule_DualPlay");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_DualPlay;
 
 // PythonClass PyWidget_LeagueSchedule_Common.ListItemObject_LeagueSchedule_Dual
 // 0x0000 (0x0030 - 0x0030)
@@ -170,23 +178,26 @@ class UListItemObject_LeagueSchedule_Dual final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ListItemObject_LeagueSchedule_Dual">();
+		STATIC_CLASS_IMPL("ListItemObject_LeagueSchedule_Dual")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ListItemObject_LeagueSchedule_Dual")
 	}
 	static class UListItemObject_LeagueSchedule_Dual* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UListItemObject_LeagueSchedule_Dual>();
 	}
 };
-static_assert(alignof(UListItemObject_LeagueSchedule_Dual) == 0x000008, "Wrong alignment on UListItemObject_LeagueSchedule_Dual");
-static_assert(sizeof(UListItemObject_LeagueSchedule_Dual) == 0x000030, "Wrong size on UListItemObject_LeagueSchedule_Dual");
+DUMPER7_ASSERTS_UListItemObject_LeagueSchedule_Dual;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual
-// 0x0008 (0x05C8 - 0x05C0)
-class UPyWidget_LeagueSchedule_Dual final : public UPyMarvelUserWidget
+// 0x0008 (0x05D0 - 0x05C8)
+class PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UListItemObject_LeagueSchedule_Dual*    ItemObject;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UListItemObject_LeagueSchedule_Dual*    ItemObject;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -199,19 +210,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_Dual">();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual")
 	}
-	static class UPyWidget_LeagueSchedule_Dual* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_Dual>();
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_Dual")
+	}
+	static class PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_Dual) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_Dual");
-static_assert(sizeof(UPyWidget_LeagueSchedule_Dual) == 0x0005C8, "Wrong size on UPyWidget_LeagueSchedule_Dual");
-static_assert(offsetof(UPyWidget_LeagueSchedule_Dual, ItemObject) == 0x0005C0, "Member 'UPyWidget_LeagueSchedule_Dual::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Common__UPyWidget_LeagueSchedule_Dual;
 
 // PythonClass PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_ContentBase
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueSchedule_ContentBase : public UPyMarvelUserWidget
 {
 public:
@@ -220,15 +233,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueSchedule_ContentBase">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueSchedule_ContentBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueSchedule_ContentBase")
 	}
 	static class UPyWidget_LeagueSchedule_ContentBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueSchedule_ContentBase>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueSchedule_ContentBase) == 0x000008, "Wrong alignment on UPyWidget_LeagueSchedule_ContentBase");
-static_assert(sizeof(UPyWidget_LeagueSchedule_ContentBase) == 0x0005C0, "Wrong size on UPyWidget_LeagueSchedule_ContentBase");
+DUMPER7_ASSERTS_UPyWidget_LeagueSchedule_ContentBase;
 
 }
 

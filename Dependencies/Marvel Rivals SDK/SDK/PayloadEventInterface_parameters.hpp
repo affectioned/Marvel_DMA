@@ -22,10 +22,7 @@ public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	double                                        EventArgs;                                         // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PayloadEventInterface_C_S_Payload_Reach) == 0x000008, "Wrong alignment on PayloadEventInterface_C_S_Payload_Reach");
-static_assert(sizeof(PayloadEventInterface_C_S_Payload_Reach) == 0x000018, "Wrong size on PayloadEventInterface_C_S_Payload_Reach");
-static_assert(offsetof(PayloadEventInterface_C_S_Payload_Reach, EventName) == 0x000000, "Member 'PayloadEventInterface_C_S_Payload_Reach::EventName' has a wrong offset!");
-static_assert(offsetof(PayloadEventInterface_C_S_Payload_Reach, EventArgs) == 0x000010, "Member 'PayloadEventInterface_C_S_Payload_Reach::EventArgs' has a wrong offset!");
+DUMPER7_ASSERTS_PayloadEventInterface_C_S_Payload_Reach;
 
 }
 

@@ -24,9 +24,7 @@ struct PyWidget_HitIndicator_OnViewingTargetChanged final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnViewingTargetChanged) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnViewingTargetChanged");
-static_assert(sizeof(PyWidget_HitIndicator_OnViewingTargetChanged) == 0x000008, "Wrong size on PyWidget_HitIndicator_OnViewingTargetChanged");
-static_assert(offsetof(PyWidget_HitIndicator_OnViewingTargetChanged, InActor) == 0x000000, "Member 'PyWidget_HitIndicator_OnViewingTargetChanged::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnViewingTargetChanged;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.SetCharacter
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_HitIndicator_SetCharacter final
 public:
 	class AMarvelBaseCharacter*                   ViewingCharacter;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_SetCharacter) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_SetCharacter");
-static_assert(sizeof(PyWidget_HitIndicator_SetCharacter) == 0x000008, "Wrong size on PyWidget_HitIndicator_SetCharacter");
-static_assert(offsetof(PyWidget_HitIndicator_SetCharacter, ViewingCharacter) == 0x000000, "Member 'PyWidget_HitIndicator_SetCharacter::ViewingCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_SetCharacter;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnApplyTreat
 // 0x0028 (0x0028 - 0x0000)
@@ -48,11 +44,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnApplyTreat) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnApplyTreat");
-static_assert(sizeof(PyWidget_HitIndicator_OnApplyTreat) == 0x000028, "Wrong size on PyWidget_HitIndicator_OnApplyTreat");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyTreat, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_OnApplyTreat::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyTreat, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_OnApplyTreat::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyTreat, ModifierHandle) == 0x000010, "Member 'PyWidget_HitIndicator_OnApplyTreat::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnApplyTreat;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -63,11 +55,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnApplyDamage) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnApplyDamage");
-static_assert(sizeof(PyWidget_HitIndicator_OnApplyDamage) == 0x000028, "Wrong size on PyWidget_HitIndicator_OnApplyDamage");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamage, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_OnApplyDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamage, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_OnApplyDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamage, ModifierHandle) == 0x000010, "Member 'PyWidget_HitIndicator_OnApplyDamage::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnApplyDamage;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnApplyDamageMerged
 // 0x0028 (0x0028 - 0x0000)
@@ -78,11 +66,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnApplyDamageMerged) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnApplyDamageMerged");
-static_assert(sizeof(PyWidget_HitIndicator_OnApplyDamageMerged) == 0x000028, "Wrong size on PyWidget_HitIndicator_OnApplyDamageMerged");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageMerged, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_OnApplyDamageMerged::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageMerged, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_OnApplyDamageMerged::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageMerged, ModifierHandle) == 0x000010, "Member 'PyWidget_HitIndicator_OnApplyDamageMerged::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnApplyDamageMerged;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.ApplyDamageEffect
 // 0x0030 (0x0030 - 0x0000)
@@ -94,12 +78,7 @@ public:
 	struct FAttributeModifierHandle               parameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          is_merged;                                         // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_ApplyDamageEffect) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_ApplyDamageEffect");
-static_assert(sizeof(PyWidget_HitIndicator_ApplyDamageEffect) == 0x000030, "Wrong size on PyWidget_HitIndicator_ApplyDamageEffect");
-static_assert(offsetof(PyWidget_HitIndicator_ApplyDamageEffect, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_ApplyDamageEffect::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_ApplyDamageEffect, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_ApplyDamageEffect::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_ApplyDamageEffect, parameterHandle) == 0x000010, "Member 'PyWidget_HitIndicator_ApplyDamageEffect::parameterHandle' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_ApplyDamageEffect, is_merged) == 0x000028, "Member 'PyWidget_HitIndicator_ApplyDamageEffect::is_merged' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_ApplyDamageEffect;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnApplyDamageByField
 // 0x0018 (0x0018 - 0x0000)
@@ -110,11 +89,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         RealDeltaValue;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnApplyDamageByField) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnApplyDamageByField");
-static_assert(sizeof(PyWidget_HitIndicator_OnApplyDamageByField) == 0x000018, "Wrong size on PyWidget_HitIndicator_OnApplyDamageByField");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageByField, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_OnApplyDamageByField::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageByField, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_OnApplyDamageByField::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageByField, RealDeltaValue) == 0x000010, "Member 'PyWidget_HitIndicator_OnApplyDamageByField::RealDeltaValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnApplyDamageByField;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnApplyDamageOnDestruction
 // 0x0018 (0x0018 - 0x0000)
@@ -125,11 +100,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         RealDeltaValue;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnApplyDamageOnDestruction) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnApplyDamageOnDestruction");
-static_assert(sizeof(PyWidget_HitIndicator_OnApplyDamageOnDestruction) == 0x000018, "Wrong size on PyWidget_HitIndicator_OnApplyDamageOnDestruction");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageOnDestruction, InSourceAvatar) == 0x000000, "Member 'PyWidget_HitIndicator_OnApplyDamageOnDestruction::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageOnDestruction, InTargetAvatar) == 0x000008, "Member 'PyWidget_HitIndicator_OnApplyDamageOnDestruction::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyWidget_HitIndicator_OnApplyDamageOnDestruction, RealDeltaValue) == 0x000010, "Member 'PyWidget_HitIndicator_OnApplyDamageOnDestruction::RealDeltaValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnApplyDamageOnDestruction;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitIndicator.OnDamageImmunized
 // 0x0068 (0x0068 - 0x0000)
@@ -138,9 +109,7 @@ struct PyWidget_HitIndicator_OnDamageImmunized final
 public:
 	struct FGameplayTagContainer                  ImmunitySpecTags;                                  // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_HitIndicator_OnDamageImmunized) == 0x000008, "Wrong alignment on PyWidget_HitIndicator_OnDamageImmunized");
-static_assert(sizeof(PyWidget_HitIndicator_OnDamageImmunized) == 0x000068, "Wrong size on PyWidget_HitIndicator_OnDamageImmunized");
-static_assert(offsetof(PyWidget_HitIndicator_OnDamageImmunized, ImmunitySpecTags) == 0x000000, "Member 'PyWidget_HitIndicator_OnDamageImmunized::ImmunitySpecTags' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitIndicator_OnDamageImmunized;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_Healing.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -149,9 +118,7 @@ struct PyWidget_Healing_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Healing_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Healing_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Healing_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Healing_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Healing_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Healing_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Healing_OnAnimationFinished;
 
 // PythonFunction PyWidget_HitIndicator.PyWidget_HitSpecialBuff.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -160,9 +127,7 @@ struct PyWidget_HitSpecialBuff_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HitSpecialBuff_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_HitSpecialBuff_OnAnimationFinished");
-static_assert(sizeof(PyWidget_HitSpecialBuff_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_HitSpecialBuff_OnAnimationFinished");
-static_assert(offsetof(PyWidget_HitSpecialBuff_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_HitSpecialBuff_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HitSpecialBuff_OnAnimationFinished;
 
 }
 

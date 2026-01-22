@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControllerVibrationSubsystem">();
+		STATIC_CLASS_IMPL("PyControllerVibrationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControllerVibrationSubsystem")
 	}
 	static class UPyControllerVibrationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControllerVibrationSubsystem>();
 	}
 };
-static_assert(alignof(UPyControllerVibrationSubsystem) == 0x000008, "Wrong alignment on UPyControllerVibrationSubsystem");
-static_assert(sizeof(UPyControllerVibrationSubsystem) == 0x000038, "Wrong size on UPyControllerVibrationSubsystem");
+DUMPER7_ASSERTS_UPyControllerVibrationSubsystem;
 
 }
 

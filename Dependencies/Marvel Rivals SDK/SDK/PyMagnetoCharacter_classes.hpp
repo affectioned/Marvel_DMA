@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyMagnetoCharacter.PyMagnetoCharacter
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class APyMagnetoCharacter : public AMagnetoCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMagnetoCharacter">();
+		STATIC_CLASS_IMPL("PyMagnetoCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMagnetoCharacter")
 	}
 	static class APyMagnetoCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMagnetoCharacter>();
 	}
 };
-static_assert(alignof(APyMagnetoCharacter) == 0x000010, "Wrong alignment on APyMagnetoCharacter");
-static_assert(sizeof(APyMagnetoCharacter) == 0x0021E0, "Wrong size on APyMagnetoCharacter");
+DUMPER7_ASSERTS_APyMagnetoCharacter;
 
 }
 

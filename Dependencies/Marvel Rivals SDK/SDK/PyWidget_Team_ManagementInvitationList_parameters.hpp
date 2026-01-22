@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList");
-static_assert(sizeof(PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList) == 0x000010, "Wrong size on PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList");
-static_assert(offsetof(PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_ManagementInvitationList_BottomNavToList;
 
 // PythonFunction PyWidget_Team_ManagementInvitationList.PyWidget_Secondary_Team_ManagementInvitationList.TopNavToList
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList");
-static_assert(sizeof(PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList) == 0x000010, "Wrong size on PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList");
-static_assert(offsetof(PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_ManagementInvitationList_TopNavToList;
 
 }
 

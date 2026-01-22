@@ -21,9 +21,7 @@ struct PyBuffAbility_120_10376182_OnGameplayActorAdded final
 public:
 	class AActor*                                 GameplayActor;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10376182_OnGameplayActorAdded) == 0x000008, "Wrong alignment on PyBuffAbility_120_10376182_OnGameplayActorAdded");
-static_assert(sizeof(PyBuffAbility_120_10376182_OnGameplayActorAdded) == 0x000008, "Wrong size on PyBuffAbility_120_10376182_OnGameplayActorAdded");
-static_assert(offsetof(PyBuffAbility_120_10376182_OnGameplayActorAdded, GameplayActor) == 0x000000, "Member 'PyBuffAbility_120_10376182_OnGameplayActorAdded::GameplayActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10376182_OnGameplayActorAdded;
 
 }
 

@@ -17,6 +17,132 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_CombatAudioControlEntry::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_CombatAudioControlEntry::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_CombatAudioControlEntry::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.OnPictureLoadCompleted
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_CombatAudioControlEntry::OnPictureLoadCompleted(class UTexture2D* Picture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "OnPictureLoadCompleted");
+
+	Params::PyWidget_CombatAudioControlEntry_OnPictureLoadCompleted Parms{};
+
+	Parms.Picture = Picture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceReportButton.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_VoiceReportButton::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_VoiceReportButton", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceReportButton.PreConstruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_VoiceReportButton::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_VoiceReportButton", "PreConstruct");
+
+	Params::PyWidget_VoiceReportButton_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateBase.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -50,219 +176,6 @@ void UPyWidget_VoiceStateBase::Destruct()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateBase.SetMicrophoneState
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   MicrophoneState                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateBase::SetMicrophoneState(int32 MicrophoneState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateBase", "SetMicrophoneState");
-
-	Params::PyWidget_VoiceStateBase_SetMicrophoneState Parms{};
-
-	Parms.MicrophoneState = MicrophoneState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateBase.SetVoiceState
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   Voice                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateBase::SetVoiceState(int32 Voice)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateBase", "SetVoiceState");
-
-	Params::PyWidget_VoiceStateBase_SetVoiceState Parms{};
-
-	Parms.Voice = Voice;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_VoiceStateImage::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_VoiceStateImage::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetMicrophoneState
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// int32                                   MicrophoneState                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateImage::SetMicrophoneState(int32 MicrophoneState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetMicrophoneState");
-
-	Params::PyWidget_VoiceStateImage_SetMicrophoneState Parms{};
-
-	Parms.MicrophoneState = MicrophoneState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetVoiceState
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// int32                                   Voice                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateImage::SetVoiceState(int32 Voice)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetVoiceState");
-
-	Params::PyWidget_VoiceStateImage_SetVoiceState Parms{};
-
-	Parms.Voice = Voice;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetIconColor
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FLinearColor&              Color                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateImage::SetIconColor(const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetIconColor");
-
-	Params::PyWidget_VoiceStateImage_SetIconColor Parms{};
-
-	Parms.Color = std::move(Color);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetMessageState
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   state                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateImage::SetMessageState(int32 state)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetMessageState");
-
-	Params::PyWidget_VoiceStateImage_SetMessageState Parms{};
-
-	Parms.state = state;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.OnAnimationFinished
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_VoiceStateImage::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceStateImage", "OnAnimationFinished");
-
-	Params::PyWidget_VoiceStateImage_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -394,15 +307,15 @@ void UPyWidget_VoiceStateButton::PreConstruct(bool IsDesignTime)
 }
 
 
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.OnInitialized
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_CombatAudioControlEntry::OnInitialized()
+void UPyWidget_VoiceStateImage::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -413,15 +326,15 @@ void UPyWidget_CombatAudioControlEntry::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.Construct
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_CombatAudioControlEntry::Construct()
+void UPyWidget_VoiceStateImage::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "Construct");
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -432,40 +345,21 @@ void UPyWidget_CombatAudioControlEntry::Construct()
 }
 
 
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_CombatAudioControlEntry::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry.OnPictureLoadCompleted
-// (Native, Public, BlueprintCallable)
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_CombatAudioControlEntry::OnPictureLoadCompleted(class UTexture2D* Picture)
+void UPyWidget_VoiceStateImage::OnCascadingVisibleChanged(bool bNewVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_CombatAudioControlEntry", "OnPictureLoadCompleted");
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "OnCascadingVisibleChanged");
 
-	Params::PyWidget_CombatAudioControlEntry_OnPictureLoadCompleted Parms{};
+	Params::PyWidget_VoiceStateImage_OnCascadingVisibleChanged Parms{};
 
-	Parms.Picture = Picture;
+	Parms.bNewVisible = bNewVisible;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -476,40 +370,71 @@ void UPyWidget_CombatAudioControlEntry::OnPictureLoadCompleted(class UTexture2D*
 }
 
 
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceReportButton.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetIconColor
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FLinearColor&              Color                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_VoiceReportButton::OnInitialized()
+void UPyWidget_VoiceStateImage::SetIconColor(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceReportButton", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetIconColor");
+
+	Params::PyWidget_VoiceStateImage_SetIconColor Parms{};
+
+	Parms.Color = std::move(Color);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceReportButton.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.SetMessageState
+// (Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   state                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_VoiceReportButton::PreConstruct(bool IsDesignTime)
+void UPyWidget_VoiceStateImage::SetMessageState(int32 state)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_VoiceReportButton", "PreConstruct");
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "SetMessageState");
 
-	Params::PyWidget_VoiceReportButton_PreConstruct Parms{};
+	Params::PyWidget_VoiceStateImage_SetMessageState Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.state = state;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage.OnAnimationFinished
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_VoiceStateImage::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_VoiceStateImage", "OnAnimationFinished");
+
+	Params::PyWidget_VoiceStateImage_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

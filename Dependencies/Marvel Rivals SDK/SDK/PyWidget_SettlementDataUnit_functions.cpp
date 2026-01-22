@@ -74,6 +74,25 @@ void UPyWidget_SettlementData_Slot::Destruct()
 }
 
 
+// PythonFunction PyWidget_SettlementDataUnit.PyWidget_SettlementDataUnit_Common.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_SettlementDataUnit_Common::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettlementDataUnit_Common", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_SettlementDataUnit.PyWidget_SettlementDataUnit_Common.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -112,6 +131,25 @@ void UPyWidget_SettlementDataUnit_Common::Destruct()
 }
 
 
+// PythonFunction PyWidget_SettlementDataUnit.PyWidget_SettlementDataUnit_Normal.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_SettlementDataUnit_Normal::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettlementDataUnit_Normal", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_SettlementDataUnit.PyWidget_SettlementDataMedalTipsUnit.OnIconLoaded
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -132,25 +170,6 @@ void UPyWidget_SettlementDataMedalTipsUnit::OnIconLoaded(class UObject* Img_Pict
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettlementDataUnit.PyWidget_SettlementDataUnit_Normal.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_SettlementDataUnit_Normal::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettlementDataUnit_Normal", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

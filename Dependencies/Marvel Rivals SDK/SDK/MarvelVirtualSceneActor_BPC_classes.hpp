@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelVirtualSceneActor_BPC.MarvelVirtualSceneActor_BPC_C
-// 0x0010 (0x1DC0 - 0x1DB0)
+// 0x0010 (0x2130 - 0x2120)
 class AMarvelVirtualSceneActor_BPC_C final : public APyMarvelVirtualSceneActor
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1DB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x2120(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelVirtualSceneActor_BPC_C">();
+		BP_STATIC_CLASS_IMPL("MarvelVirtualSceneActor_BPC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelVirtualSceneActor_BPC_C")
 	}
 	static class AMarvelVirtualSceneActor_BPC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelVirtualSceneActor_BPC_C>();
 	}
 };
-static_assert(alignof(AMarvelVirtualSceneActor_BPC_C) == 0x000010, "Wrong alignment on AMarvelVirtualSceneActor_BPC_C");
-static_assert(sizeof(AMarvelVirtualSceneActor_BPC_C) == 0x001DC0, "Wrong size on AMarvelVirtualSceneActor_BPC_C");
-static_assert(offsetof(AMarvelVirtualSceneActor_BPC_C, DefaultSceneRoot) == 0x001DB0, "Member 'AMarvelVirtualSceneActor_BPC_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelVirtualSceneActor_BPC_C;
 
 }
 

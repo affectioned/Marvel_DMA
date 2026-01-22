@@ -21,9 +21,7 @@ struct PyWidget_Activity147_Assemble_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Assemble_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity147_Assemble_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity147_Assemble_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity147_Assemble_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity147_Assemble_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity147_Assemble_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Assemble_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity147_Assemble.PyWidget_Activity147_AssembleEntry.SetListItemObject
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity147_AssembleEntry_SetListItemObject final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_AssembleEntry_SetListItemObject) == 0x000008, "Wrong alignment on PyWidget_Activity147_AssembleEntry_SetListItemObject");
-static_assert(sizeof(PyWidget_Activity147_AssembleEntry_SetListItemObject) == 0x000008, "Wrong size on PyWidget_Activity147_AssembleEntry_SetListItemObject");
-static_assert(offsetof(PyWidget_Activity147_AssembleEntry_SetListItemObject, ItemObject_0) == 0x000000, "Member 'PyWidget_Activity147_AssembleEntry_SetListItemObject::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_AssembleEntry_SetListItemObject;
 
 }
 

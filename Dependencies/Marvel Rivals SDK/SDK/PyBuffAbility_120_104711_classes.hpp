@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104711.PyBuffAbility_120_104711
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_104711 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ListenAbility;                                     // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Angle_Offset;                                      // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 FireModeIndexes;                                   // 0x1378(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         ListenAbility;                                     // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Angle_Offset;                                      // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 FireModeIndexes;                                   // 0x1390(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_104711">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_104711")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_104711")
 	}
 	static class UPyBuffAbility_120_104711* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_104711>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_104711) == 0x000008, "Wrong alignment on UPyBuffAbility_120_104711");
-static_assert(sizeof(UPyBuffAbility_120_104711) == 0x001388, "Wrong size on UPyBuffAbility_120_104711");
-static_assert(offsetof(UPyBuffAbility_120_104711, ListenAbility) == 0x001370, "Member 'UPyBuffAbility_120_104711::ListenAbility' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_104711, Angle_Offset) == 0x001374, "Member 'UPyBuffAbility_120_104711::Angle_Offset' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_104711, FireModeIndexes) == 0x001378, "Member 'UPyBuffAbility_120_104711::FireModeIndexes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_104711;
 
 }
 

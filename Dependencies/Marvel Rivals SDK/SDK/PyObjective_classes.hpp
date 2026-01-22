@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "DeclarativeUnreal_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "PyCamp_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
+#include "DeclarativeUnreal_structs.hpp"
 
 
 namespace SDK
@@ -77,40 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyObjective">();
+		STATIC_CLASS_IMPL("PyObjective")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyObjective")
 	}
 	static class APyObjective* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyObjective>();
 	}
 };
-static_assert(alignof(APyObjective) == 0x000010, "Wrong alignment on APyObjective");
-static_assert(sizeof(APyObjective) == 0x000A80, "Wrong size on APyObjective");
-static_assert(offsetof(APyObjective, OccupyProgress) == 0x000870, "Member 'APyObjective::OccupyProgress' has a wrong offset!");
-static_assert(offsetof(APyObjective, ProgressSpeed) == 0x000874, "Member 'APyObjective::ProgressSpeed' has a wrong offset!");
-static_assert(offsetof(APyObjective, CurrentStage) == 0x000878, "Member 'APyObjective::CurrentStage' has a wrong offset!");
-static_assert(offsetof(APyObjective, NAME) == 0x000880, "Member 'APyObjective::NAME' has a wrong offset!");
-static_assert(offsetof(APyObjective, OccupyLosingSpeed) == 0x000890, "Member 'APyObjective::OccupyLosingSpeed' has a wrong offset!");
-static_assert(offsetof(APyObjective, OccupyRaisingSpeed) == 0x000898, "Member 'APyObjective::OccupyRaisingSpeed' has a wrong offset!");
-static_assert(offsetof(APyObjective, OccupyProgressStage) == 0x0008E8, "Member 'APyObjective::OccupyProgressStage' has a wrong offset!");
-static_assert(offsetof(APyObjective, TimeToLoseOccupy) == 0x000938, "Member 'APyObjective::TimeToLoseOccupy' has a wrong offset!");
-static_assert(offsetof(APyObjective, SingleLevelEvent) == 0x000940, "Member 'APyObjective::SingleLevelEvent' has a wrong offset!");
-static_assert(offsetof(APyObjective, RoundLevelEvents) == 0x000968, "Member 'APyObjective::RoundLevelEvents' has a wrong offset!");
-static_assert(offsetof(APyObjective, EmitterTemplate) == 0x0009B8, "Member 'APyObjective::EmitterTemplate' has a wrong offset!");
-static_assert(offsetof(APyObjective, EmitterTemplateNS) == 0x0009C0, "Member 'APyObjective::EmitterTemplateNS' has a wrong offset!");
-static_assert(offsetof(APyObjective, MaterialColorWhite) == 0x0009C8, "Member 'APyObjective::MaterialColorWhite' has a wrong offset!");
-static_assert(offsetof(APyObjective, MaterialColorBlue) == 0x0009D0, "Member 'APyObjective::MaterialColorBlue' has a wrong offset!");
-static_assert(offsetof(APyObjective, MaterialColorRed) == 0x0009D8, "Member 'APyObjective::MaterialColorRed' has a wrong offset!");
-static_assert(offsetof(APyObjective, ProgressChangedDispatcher) == 0x0009E0, "Member 'APyObjective::ProgressChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyObjective, ProgressFinish) == 0x0009F0, "Member 'APyObjective::ProgressFinish' has a wrong offset!");
-static_assert(offsetof(APyObjective, DispatcherProgressInfoChange) == 0x000A00, "Member 'APyObjective::DispatcherProgressInfoChange' has a wrong offset!");
-static_assert(offsetof(APyObjective, UpdateColorDispatcher) == 0x000A10, "Member 'APyObjective::UpdateColorDispatcher' has a wrong offset!");
-static_assert(offsetof(APyObjective, ClientCampEndDispatcher) == 0x000A20, "Member 'APyObjective::ClientCampEndDispatcher' has a wrong offset!");
-static_assert(offsetof(APyObjective, OnBothSideIn) == 0x000A30, "Member 'APyObjective::OnBothSideIn' has a wrong offset!");
-static_assert(offsetof(APyObjective, OnBothSideOut) == 0x000A40, "Member 'APyObjective::OnBothSideOut' has a wrong offset!");
-static_assert(offsetof(APyObjective, OnlyAttackIn) == 0x000A50, "Member 'APyObjective::OnlyAttackIn' has a wrong offset!");
-static_assert(offsetof(APyObjective, OnlyDefendIn) == 0x000A60, "Member 'APyObjective::OnlyDefendIn' has a wrong offset!");
-static_assert(offsetof(APyObjective, OnStageChange) == 0x000A70, "Member 'APyObjective::OnStageChange' has a wrong offset!");
+DUMPER7_ASSERTS_APyObjective;
 
 // PythonClass PyObjective.PyObjectiveV2
 // 0x0000 (0x0A80 - 0x0A80)
@@ -122,39 +100,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyObjectiveV2">();
+		STATIC_CLASS_IMPL("PyObjectiveV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyObjectiveV2")
 	}
 	static class APyObjectiveV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyObjectiveV2>();
 	}
 };
-static_assert(alignof(APyObjectiveV2) == 0x000010, "Wrong alignment on APyObjectiveV2");
-static_assert(sizeof(APyObjectiveV2) == 0x000A80, "Wrong size on APyObjectiveV2");
+DUMPER7_ASSERTS_APyObjectiveV2;
 
 // PythonClass PyObjective.PyCue_Level_100002
-// 0x00C0 (0x12E0 - 0x1220)
+// 0x00C0 (0x12F0 - 0x1230)
 class PyObjective::APyCue_Level_100002 final : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1220(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1228(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorDefaultBlue;                                  // 0x1250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorDefaultRed;                                   // 0x1260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           LatticeUV;                                         // 0x1270(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x1280(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x1290(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LightUpCurve;                                      // 0x12A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LightDownCurve;                                    // 0x12A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FadeOutCurve;                                      // 0x12B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ProgressLightUpCurve;                              // 0x12B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ProgressLightDownCurve;                            // 0x12C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x12C8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      MaterialColorWhite;                                // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorBlue;                                 // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialColorRed;                                  // 0x1240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorWhite;                                 // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorBlue;                                  // 0x1250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               DynamicColorRed;                                   // 0x1258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorDefaultBlue;                                  // 0x1260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorDefaultRed;                                   // 0x1270(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           LatticeUV;                                         // 0x1280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x1290(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x12A0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightUpCurve;                                      // 0x12B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LightDownCurve;                                    // 0x12B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FadeOutCurve;                                      // 0x12C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ProgressLightUpCurve;                              // 0x12C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ProgressLightDownCurve;                            // 0x12D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x12D8(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -167,32 +148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonClass PyObjective.PyCue_Level_100002", true>();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyObjective.PyCue_Level_100002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_100002")
 	}
 	static class PyObjective::APyCue_Level_100002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<PyObjective::APyCue_Level_100002>();
 	}
 };
-static_assert(alignof(PyObjective::APyCue_Level_100002) == 0x000010, "Wrong alignment on PyObjective::APyCue_Level_100002");
-static_assert(sizeof(PyObjective::APyCue_Level_100002) == 0x0012E0, "Wrong size on PyObjective::APyCue_Level_100002");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, MaterialColorWhite) == 0x001220, "Member 'PyObjective::APyCue_Level_100002::MaterialColorWhite' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, MaterialColorBlue) == 0x001228, "Member 'PyObjective::APyCue_Level_100002::MaterialColorBlue' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, MaterialColorRed) == 0x001230, "Member 'PyObjective::APyCue_Level_100002::MaterialColorRed' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, DynamicColorWhite) == 0x001238, "Member 'PyObjective::APyCue_Level_100002::DynamicColorWhite' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, DynamicColorBlue) == 0x001240, "Member 'PyObjective::APyCue_Level_100002::DynamicColorBlue' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, DynamicColorRed) == 0x001248, "Member 'PyObjective::APyCue_Level_100002::DynamicColorRed' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, ColorDefaultBlue) == 0x001250, "Member 'PyObjective::APyCue_Level_100002::ColorDefaultBlue' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, ColorDefaultRed) == 0x001260, "Member 'PyObjective::APyCue_Level_100002::ColorDefaultRed' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, LatticeUV) == 0x001270, "Member 'PyObjective::APyCue_Level_100002::LatticeUV' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, AllyColor) == 0x001280, "Member 'PyObjective::APyCue_Level_100002::AllyColor' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, EnemyColor) == 0x001290, "Member 'PyObjective::APyCue_Level_100002::EnemyColor' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, LightUpCurve) == 0x0012A0, "Member 'PyObjective::APyCue_Level_100002::LightUpCurve' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, LightDownCurve) == 0x0012A8, "Member 'PyObjective::APyCue_Level_100002::LightDownCurve' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, FadeOutCurve) == 0x0012B0, "Member 'PyObjective::APyCue_Level_100002::FadeOutCurve' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, ProgressLightUpCurve) == 0x0012B8, "Member 'PyObjective::APyCue_Level_100002::ProgressLightUpCurve' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, ProgressLightDownCurve) == 0x0012C0, "Member 'PyObjective::APyCue_Level_100002::ProgressLightDownCurve' has a wrong offset!");
-static_assert(offsetof(PyObjective::APyCue_Level_100002, ViewTargetWatcher) == 0x0012C8, "Member 'PyObjective::APyCue_Level_100002::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_PyObjective__APyCue_Level_100002;
 
 }
 

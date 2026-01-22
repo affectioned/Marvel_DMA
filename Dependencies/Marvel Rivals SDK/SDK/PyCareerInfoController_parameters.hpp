@@ -23,9 +23,7 @@ struct PyCareerInfoController_OnChessRanked final
 public:
 	int32                                         PlayerUID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_OnChessRanked) == 0x000004, "Wrong alignment on PyCareerInfoController_OnChessRanked");
-static_assert(sizeof(PyCareerInfoController_OnChessRanked) == 0x000004, "Wrong size on PyCareerInfoController_OnChessRanked");
-static_assert(offsetof(PyCareerInfoController_OnChessRanked, PlayerUID) == 0x000000, "Member 'PyCareerInfoController_OnChessRanked::PlayerUID' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_OnChessRanked;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.OnPauseToContinue
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyCareerInfoController_OnPauseToContinue final
 public:
 	float                                         total_pause_time;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_OnPauseToContinue) == 0x000004, "Wrong alignment on PyCareerInfoController_OnPauseToContinue");
-static_assert(sizeof(PyCareerInfoController_OnPauseToContinue) == 0x000004, "Wrong size on PyCareerInfoController_OnPauseToContinue");
-static_assert(offsetof(PyCareerInfoController_OnPauseToContinue, total_pause_time) == 0x000000, "Member 'PyCareerInfoController_OnPauseToContinue::total_pause_time' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_OnPauseToContinue;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnActorKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -52,15 +48,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAttributeModifierHandle               modifier_parameter_handler;                        // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnActorKillOther) == 0x000008, "Wrong alignment on PyCareerInfoController_PyOnActorKillOther");
-static_assert(sizeof(PyCareerInfoController_PyOnActorKillOther) == 0x000028, "Wrong size on PyCareerInfoController_PyOnActorKillOther");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, player_uid) == 0x000000, "Member 'PyCareerInfoController_PyOnActorKillOther::player_uid' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, hero_id) == 0x000004, "Member 'PyCareerInfoController_PyOnActorKillOther::hero_id' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, is_solo_kill) == 0x000008, "Member 'PyCareerInfoController_PyOnActorKillOther::is_solo_kill' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, is_head_kill) == 0x000009, "Member 'PyCareerInfoController_PyOnActorKillOther::is_head_kill' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, is_last_kill) == 0x00000A, "Member 'PyCareerInfoController_PyOnActorKillOther::is_last_kill' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, is_terrain_kill) == 0x00000B, "Member 'PyCareerInfoController_PyOnActorKillOther::is_terrain_kill' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorKillOther, modifier_parameter_handler) == 0x000010, "Member 'PyCareerInfoController_PyOnActorKillOther::modifier_parameter_handler' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnActorKillOther;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnActorBeKill
 // 0x0008 (0x0008 - 0x0000)
@@ -70,10 +58,7 @@ public:
 	int32                                         player_uid;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         hero_id;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnActorBeKill) == 0x000004, "Wrong alignment on PyCareerInfoController_PyOnActorBeKill");
-static_assert(sizeof(PyCareerInfoController_PyOnActorBeKill) == 0x000008, "Wrong size on PyCareerInfoController_PyOnActorBeKill");
-static_assert(offsetof(PyCareerInfoController_PyOnActorBeKill, player_uid) == 0x000000, "Member 'PyCareerInfoController_PyOnActorBeKill::player_uid' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnActorBeKill, hero_id) == 0x000004, "Member 'PyCareerInfoController_PyOnActorBeKill::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnActorBeKill;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyCharacterSelectIDChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -83,10 +68,7 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         hero_id;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyCharacterSelectIDChanged) == 0x000008, "Wrong alignment on PyCareerInfoController_PyCharacterSelectIDChanged");
-static_assert(sizeof(PyCareerInfoController_PyCharacterSelectIDChanged) == 0x000010, "Wrong size on PyCareerInfoController_PyCharacterSelectIDChanged");
-static_assert(offsetof(PyCareerInfoController_PyCharacterSelectIDChanged, PlayerState) == 0x000000, "Member 'PyCareerInfoController_PyCharacterSelectIDChanged::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyCharacterSelectIDChanged, hero_id) == 0x000008, "Member 'PyCareerInfoController_PyCharacterSelectIDChanged::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyCharacterSelectIDChanged;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnPossessNewCharacter
 // 0x0010 (0x0010 - 0x0000)
@@ -96,10 +78,7 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnPossessNewCharacter) == 0x000008, "Wrong alignment on PyCareerInfoController_PyOnPossessNewCharacter");
-static_assert(sizeof(PyCareerInfoController_PyOnPossessNewCharacter) == 0x000010, "Wrong size on PyCareerInfoController_PyOnPossessNewCharacter");
-static_assert(offsetof(PyCareerInfoController_PyOnPossessNewCharacter, PlayerState) == 0x000000, "Member 'PyCareerInfoController_PyOnPossessNewCharacter::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnPossessNewCharacter, Character) == 0x000008, "Member 'PyCareerInfoController_PyOnPossessNewCharacter::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnPossessNewCharacter;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnSwitchSkinState
 // 0x0010 (0x0010 - 0x0000)
@@ -109,10 +88,7 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnSwitchSkinState) == 0x000008, "Wrong alignment on PyCareerInfoController_PyOnSwitchSkinState");
-static_assert(sizeof(PyCareerInfoController_PyOnSwitchSkinState) == 0x000010, "Wrong size on PyCareerInfoController_PyOnSwitchSkinState");
-static_assert(offsetof(PyCareerInfoController_PyOnSwitchSkinState, PlayerState) == 0x000000, "Member 'PyCareerInfoController_PyOnSwitchSkinState::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyCareerInfoController_PyOnSwitchSkinState, Character) == 0x000008, "Member 'PyCareerInfoController_PyOnSwitchSkinState::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnSwitchSkinState;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnAddPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -121,9 +97,7 @@ struct PyCareerInfoController_PyOnAddPlayerState final
 public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnAddPlayerState) == 0x000008, "Wrong alignment on PyCareerInfoController_PyOnAddPlayerState");
-static_assert(sizeof(PyCareerInfoController_PyOnAddPlayerState) == 0x000008, "Wrong size on PyCareerInfoController_PyOnAddPlayerState");
-static_assert(offsetof(PyCareerInfoController_PyOnAddPlayerState, PlayerState) == 0x000000, "Member 'PyCareerInfoController_PyOnAddPlayerState::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnAddPlayerState;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.PyOnDelPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -132,9 +106,7 @@ struct PyCareerInfoController_PyOnDelPlayerState final
 public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_PyOnDelPlayerState) == 0x000008, "Wrong alignment on PyCareerInfoController_PyOnDelPlayerState");
-static_assert(sizeof(PyCareerInfoController_PyOnDelPlayerState) == 0x000008, "Wrong size on PyCareerInfoController_PyOnDelPlayerState");
-static_assert(offsetof(PyCareerInfoController_PyOnDelPlayerState, PlayerState) == 0x000000, "Member 'PyCareerInfoController_PyOnDelPlayerState::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_PyOnDelPlayerState;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.OnControlOwnerChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -143,9 +115,7 @@ struct PyCareerInfoController_OnControlOwnerChanged final
 public:
 	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_OnControlOwnerChanged) == 0x000001, "Wrong alignment on PyCareerInfoController_OnControlOwnerChanged");
-static_assert(sizeof(PyCareerInfoController_OnControlOwnerChanged) == 0x000001, "Wrong size on PyCareerInfoController_OnControlOwnerChanged");
-static_assert(offsetof(PyCareerInfoController_OnControlOwnerChanged, battle_side) == 0x000000, "Member 'PyCareerInfoController_OnControlOwnerChanged::battle_side' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_OnControlOwnerChanged;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.OnMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -154,9 +124,7 @@ struct PyCareerInfoController_OnMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_OnMatchStateChanged) == 0x000001, "Wrong alignment on PyCareerInfoController_OnMatchStateChanged");
-static_assert(sizeof(PyCareerInfoController_OnMatchStateChanged) == 0x000001, "Wrong size on PyCareerInfoController_OnMatchStateChanged");
-static_assert(offsetof(PyCareerInfoController_OnMatchStateChanged, MatchState) == 0x000000, "Member 'PyCareerInfoController_OnMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_OnMatchStateChanged;
 
 // PythonFunction PyCareerInfoController.PyCareerInfoController.OnBattleChessMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -165,9 +133,7 @@ struct PyCareerInfoController_OnBattleChessMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCareerInfoController_OnBattleChessMatchStateChanged) == 0x000001, "Wrong alignment on PyCareerInfoController_OnBattleChessMatchStateChanged");
-static_assert(sizeof(PyCareerInfoController_OnBattleChessMatchStateChanged) == 0x000001, "Wrong size on PyCareerInfoController_OnBattleChessMatchStateChanged");
-static_assert(offsetof(PyCareerInfoController_OnBattleChessMatchStateChanged, MatchState) == 0x000000, "Member 'PyCareerInfoController_OnBattleChessMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCareerInfoController_OnBattleChessMatchStateChanged;
 
 }
 

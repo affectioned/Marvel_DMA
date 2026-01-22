@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlLevelStatistics">();
+		STATIC_CLASS_IMPL("PyControlLevelStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlLevelStatistics")
 	}
 	static class UPyControlLevelStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlLevelStatistics>();
 	}
 };
-static_assert(alignof(UPyControlLevelStatistics) == 0x000008, "Wrong alignment on UPyControlLevelStatistics");
-static_assert(sizeof(UPyControlLevelStatistics) == 0x000038, "Wrong size on UPyControlLevelStatistics");
+DUMPER7_ASSERTS_UPyControlLevelStatistics;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Navigator_NavigationBar">();
+		STATIC_CLASS_IMPL("PyExtension_Navigator_NavigationBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Navigator_NavigationBar")
 	}
 	static class UPyExtension_Navigator_NavigationBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Navigator_NavigationBar>();
 	}
 };
-static_assert(alignof(UPyExtension_Navigator_NavigationBar) == 0x000008, "Wrong alignment on UPyExtension_Navigator_NavigationBar");
-static_assert(sizeof(UPyExtension_Navigator_NavigationBar) == 0x000030, "Wrong size on UPyExtension_Navigator_NavigationBar");
+DUMPER7_ASSERTS_UPyExtension_Navigator_NavigationBar;
 
 }
 

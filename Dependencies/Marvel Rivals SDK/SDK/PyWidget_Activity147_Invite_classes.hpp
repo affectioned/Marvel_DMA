@@ -17,53 +17,8 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_Activity147_Invite.Activity147InviteObject
-// 0x0000 (0x0030 - 0x0030)
-class UActivity147InviteObject final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Activity147InviteObject">();
-	}
-	static class UActivity147InviteObject* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UActivity147InviteObject>();
-	}
-};
-static_assert(alignof(UActivity147InviteObject) == 0x000008, "Wrong alignment on UActivity147InviteObject");
-static_assert(sizeof(UActivity147InviteObject) == 0x000030, "Wrong size on UActivity147InviteObject");
-
-// PythonClass PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry
-// 0x0008 (0x05C8 - 0x05C0)
-class UPyWidget_Activity147_InviteEntry final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                ItemObject;                                        // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-	void SetListItemObject(class UObject* ItemObject_0);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Activity147_InviteEntry">();
-	}
-	static class UPyWidget_Activity147_InviteEntry* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Activity147_InviteEntry>();
-	}
-};
-static_assert(alignof(UPyWidget_Activity147_InviteEntry) == 0x000008, "Wrong alignment on UPyWidget_Activity147_InviteEntry");
-static_assert(sizeof(UPyWidget_Activity147_InviteEntry) == 0x0005C8, "Wrong size on UPyWidget_Activity147_InviteEntry");
-static_assert(offsetof(UPyWidget_Activity147_InviteEntry, ItemObject) == 0x0005C0, "Member 'UPyWidget_Activity147_InviteEntry::ItemObject' has a wrong offset!");
-
 // PythonClass PyWidget_Activity147_Invite.PyWidget_Activity147_Invite
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity147_Invite final : public UPyMarvelUserWidget
 {
 public:
@@ -75,15 +30,68 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Invite">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Invite")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Invite")
 	}
 	static class UPyWidget_Activity147_Invite* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Invite>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Invite) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Invite");
-static_assert(sizeof(UPyWidget_Activity147_Invite) == 0x0005C0, "Wrong size on UPyWidget_Activity147_Invite");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Invite;
+
+// PythonClass PyWidget_Activity147_Invite.Activity147InviteObject
+// 0x0000 (0x0030 - 0x0030)
+class UActivity147InviteObject final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Activity147InviteObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Activity147InviteObject")
+	}
+	static class UActivity147InviteObject* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UActivity147InviteObject>();
+	}
+};
+DUMPER7_ASSERTS_UActivity147InviteObject;
+
+// PythonClass PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry
+// 0x0008 (0x05D0 - 0x05C8)
+class UPyWidget_Activity147_InviteEntry final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                ItemObject;                                        // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	void SetListItemObject(class UObject* ItemObject_0);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Activity147_InviteEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_InviteEntry")
+	}
+	static class UPyWidget_Activity147_InviteEntry* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Activity147_InviteEntry>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Activity147_InviteEntry;
 
 }
 

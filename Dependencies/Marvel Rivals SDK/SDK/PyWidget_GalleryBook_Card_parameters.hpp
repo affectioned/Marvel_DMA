@@ -21,9 +21,7 @@ struct PyWidget_GalleryBook_Card_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_GalleryBook_Card_MarvelSetVisible");
-static_assert(sizeof(PyWidget_GalleryBook_Card_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_GalleryBook_Card_MarvelSetVisible");
-static_assert(offsetof(PyWidget_GalleryBook_Card_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_GalleryBook_Card_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_MarvelSetVisible;
 
 // PythonFunction PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_GalleryBook_Card_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_Card_OnAnimationStarted");
-static_assert(sizeof(PyWidget_GalleryBook_Card_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_GalleryBook_Card_OnAnimationStarted");
-static_assert(offsetof(PyWidget_GalleryBook_Card_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_GalleryBook_Card_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_OnAnimationStarted;
 
 // PythonFunction PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_GalleryBook_Card_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_Card_OnAnimationFinished");
-static_assert(sizeof(PyWidget_GalleryBook_Card_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_GalleryBook_Card_OnAnimationFinished");
-static_assert(offsetof(PyWidget_GalleryBook_Card_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_GalleryBook_Card_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_OnAnimationFinished;
 
 // PythonFunction PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_GalleryBook_Card_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_GalleryBook_Card_SetIsHover");
-static_assert(sizeof(PyWidget_GalleryBook_Card_SetIsHover) == 0x000001, "Wrong size on PyWidget_GalleryBook_Card_SetIsHover");
-static_assert(offsetof(PyWidget_GalleryBook_Card_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_GalleryBook_Card_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_SetIsHover;
 
 // PythonFunction PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_GalleryBook_Card_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_GalleryBook_Card_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_GalleryBook_Card_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_GalleryBook_Card_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_GalleryBook_Card_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_GalleryBook_Card_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_SetBtnIsPressed;
 
 // PythonFunction PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_GalleryBook_Card_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_Card_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_Card_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_GalleryBook_Card_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_GalleryBook_Card_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_GalleryBook_Card_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_GalleryBook_Card_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_Card_GetAutoTestDebugName;
 
 }
 

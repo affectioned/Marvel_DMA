@@ -17,85 +17,6 @@
 namespace SDK
 {
 
-// Function MarvelAI.WayPointRandomSelectComponent.DebugDraw
-// (Final, Native, Public)
-
-void UWayPointRandomSelectComponent::DebugDraw()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPointRandomSelectComponent", "DebugDraw");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.WayPointRandomSelectComponent.SelectNextWayPoint
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AActor* UWayPointRandomSelectComponent::SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPointRandomSelectComponent", "SelectNextWayPoint");
-
-	Params::WayPointRandomSelectComponent_SelectNextWayPoint Parms{};
-
-	Parms.ActorMovingAlong = ActorMovingAlong;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsagePointCondition.CheckIsValidPoint
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FAbilityUsagePointData&    StandPoint                                             (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const class AMarvelAIController*        AIController                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAbilityUsagePointCondition::CheckIsValidPoint(const struct FAbilityUsagePointData& StandPoint, const class AMarvelAIController* AIController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityUsagePointCondition", "CheckIsValidPoint");
-
-	Params::AIAbilityUsagePointCondition_CheckIsValidPoint Parms{};
-
-	Parms.StandPoint = std::move(StandPoint);
-	Parms.AIController = AIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function MarvelAI.AbilityTacticsTask.GetSelectCheck
 // (Final, Native, Protected, Const)
 // Parameters:
@@ -151,460 +72,6 @@ void UAbilityTacticsTask_AILab::OnAIAbilityServerResponse(bool bSuccess, int64 R
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAutoAbilitySolver.Init
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<int32>&                    UsageList                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAIAutoAbilitySolver::Init(const TArray<int32>& UsageList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAutoAbilitySolver", "Init");
-
-	Params::AIAutoAbilitySolver_Init Parms{};
-
-	Parms.UsageList = std::move(UsageList);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAutoAbilitySolver.OnUsageFailed
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIAutoAbilitySolver::OnUsageFailed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAutoAbilitySolver", "OnUsageFailed");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAutoAbilitySolver.TryGetAbilityUsage
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FRequiredAIDataForAutoAbility&RequiredData                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// struct FAIAbilityUsage*                 OutAbilityUsage                                        (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAutoAbilitySolver::TryGetAbilityUsage(const struct FRequiredAIDataForAutoAbility& RequiredData, struct FAIAbilityUsage* OutAbilityUsage) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAutoAbilitySolver", "TryGetAbilityUsage");
-
-	Params::AIAutoAbilitySolver_TryGetAbilityUsage Parms{};
-
-	Parms.RequiredData = std::move(RequiredData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutAbilityUsage != nullptr)
-		*OutAbilityUsage = std::move(Parms.OutAbilityUsage);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.AddConfigDataAsTestCase
-// (Final, Native, Protected, BlueprintCallable)
-
-void ASVONPathFindTester::AddConfigDataAsTestCase()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "AddConfigDataAsTestCase");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.AnalyzeStatData
-// (Final, Native, Protected, BlueprintCallable)
-
-void ASVONPathFindTester::AnalyzeStatData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "AnalyzeStatData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.ClassifyTestCases
-// (Final, Native, Protected, BlueprintCallable)
-
-void ASVONPathFindTester::ClassifyTestCases()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "ClassifyTestCases");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.GenerateRandomTestCasesFromActorList
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<class AActor*>&            ActorList                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   TryTimes                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASVONPathFindTester::GenerateRandomTestCasesFromActorList(const TArray<class AActor*>& ActorList, int32 TryTimes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "GenerateRandomTestCasesFromActorList");
-
-	Params::SVONPathFindTester_GenerateRandomTestCasesFromActorList Parms{};
-
-	Parms.ActorList = std::move(ActorList);
-	Parms.TryTimes = TryTimes;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.GenerateTestCaseFromWayPoints
-// (Final, Native, Protected, BlueprintCallable)
-
-void ASVONPathFindTester::GenerateTestCaseFromWayPoints()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "GenerateTestCaseFromWayPoints");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.MakeDataForTestCase
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   StartPoint                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetPoint                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRequireHavePath                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASVONPathFindTester::MakeDataForTestCase(const struct FVector& StartPoint, const struct FVector& TargetPoint, bool bRequireHavePath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "MakeDataForTestCase");
-
-	Params::SVONPathFindTester_MakeDataForTestCase Parms{};
-
-	Parms.StartPoint = std::move(StartPoint);
-	Parms.TargetPoint = std::move(TargetPoint);
-	Parms.bRequireHavePath = bRequireHavePath;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.ReceiveAnalyzeStatData
-// (Event, Protected, BlueprintEvent)
-
-void ASVONPathFindTester::ReceiveAnalyzeStatData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "ReceiveAnalyzeStatData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.SVONPathFindTester.UpdateTestCasePathResult
-// (Final, Native, Protected, BlueprintCallable)
-
-void ASVONPathFindTester::UpdateTestCasePathResult()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "UpdateTestCasePathResult");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.K2_FindPath
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FVector&                   StartPoint                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetPoint                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FVector>*                 OutPathPoints                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASVONPathFindTester::K2_FindPath(const struct FVector& StartPoint, const struct FVector& TargetPoint, TArray<struct FVector>* OutPathPoints) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "K2_FindPath");
-
-	Params::SVONPathFindTester_K2_FindPath Parms{};
-
-	Parms.StartPoint = std::move(StartPoint);
-	Parms.TargetPoint = std::move(TargetPoint);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutPathPoints != nullptr)
-		*OutPathPoints = std::move(Parms.OutPathPoints);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.K2_RunCheckForCase
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FPathFindTestCase&         TestCase                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASVONPathFindTester::K2_RunCheckForCase(const struct FPathFindTestCase& TestCase) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "K2_RunCheckForCase");
-
-	Params::SVONPathFindTester_K2_RunCheckForCase Parms{};
-
-	Parms.TestCase = std::move(TestCase);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.RunTestCaseWithIndexList
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const TArray<int32>&                    CaseIndexList                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASVONPathFindTester::RunTestCaseWithIndexList(const TArray<int32>& CaseIndexList) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "RunTestCaseWithIndexList");
-
-	Params::SVONPathFindTester_RunTestCaseWithIndexList Parms{};
-
-	Parms.CaseIndexList = std::move(CaseIndexList);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.RunTestCategory
-// (Final, Native, Protected, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FPathTestCaseCategory&     TestCaseCategory                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void ASVONPathFindTester::RunTestCategory(const struct FPathTestCaseCategory& TestCaseCategory) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "RunTestCategory");
-
-	Params::SVONPathFindTester_RunTestCategory Parms{};
-
-	Parms.TestCaseCategory = std::move(TestCaseCategory);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.RunTestCategoryByIndex
-// (Final, Native, Protected, BlueprintCallable, Const)
-
-void ASVONPathFindTester::RunTestCategoryByIndex() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "RunTestCategoryByIndex");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.TestAllCase
-// (Final, Native, Protected, BlueprintCallable, Const)
-
-void ASVONPathFindTester::TestAllCase() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "TestAllCase");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.TestAllCategory
-// (Final, Native, Protected, BlueprintCallable, Const)
-
-void ASVONPathFindTester::TestAllCategory() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "TestAllCategory");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.TestCertainCase
-// (Final, Native, Protected, BlueprintCallable, Const)
-
-void ASVONPathFindTester::TestCertainCase() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "TestCertainCase");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SVONPathFindTester.UpdateVolume
-// (Final, Native, Protected, BlueprintCallable, Const)
-
-void ASVONPathFindTester::UpdateVolume() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SVONPathFindTester", "UpdateVolume");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -914,31 +381,6 @@ bool AAbilityUsageStandPoint::GetDataForUsage(const class UAIAbilityUsageObject*
 
 	if (OutData != nullptr)
 		*OutData = std::move(Parms.OutData);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIHitRateModify.CalculateHitRateModifyAI
-// (Event, Protected, BlueprintEvent, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAIHitRateModify::CalculateHitRateModifyAI(class AMarvelBaseCharacter* Source, class AActor* Target) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIHitRateModify", "CalculateHitRateModifyAI");
-
-	Params::AIHitRateModify_CalculateHitRateModifyAI Parms{};
-
-	Parms.Source = Source;
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -1531,133 +973,6 @@ void UAIAbilityExecutorManagerComponent::UpdateAbilityState(class UAIAbilityExec
 }
 
 
-// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetControlledHero
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelBaseCharacter* UBTDecorator_MarvelInstancedBase::K2_GetControlledHero() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetControlledHero");
-
-	Params::BTDecorator_MarvelInstancedBase_K2_GetControlledHero Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetControlledPawn
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class APawn* UBTDecorator_MarvelInstancedBase::K2_GetControlledPawn() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetControlledPawn");
-
-	Params::BTDecorator_MarvelInstancedBase_K2_GetControlledPawn Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetMarvelAIOwner
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelAIController* UBTDecorator_MarvelInstancedBase::K2_GetMarvelAIOwner() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetMarvelAIOwner");
-
-	Params::BTDecorator_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetOwnerBTComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBehaviorTreeComponent* UBTDecorator_MarvelInstancedBase::K2_GetOwnerBTComp() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetOwnerBTComp");
-
-	Params::BTDecorator_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_CheckGameplayTag.OnCheckTagUpdated
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              InTag                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bExists                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTD_CheckGameplayTag::OnCheckTagUpdated(const struct FGameplayTag& InTag, bool bExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_CheckGameplayTag", "OnCheckTagUpdated");
-
-	Params::BTD_CheckGameplayTag_OnCheckTagUpdated Parms{};
-
-	Parms.InTag = std::move(InTag);
-	Parms.bExists = bExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function MarvelAI.AIAbilityExitStageLogic.GetAbilityExitStageLogic
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1734,64 +1049,6 @@ void UAIAbilityExitStageLogic::InitLogic()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.ActionRequirementBase.Requirement
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UActionRequirementBase::Requirement(class AAIController* OwnerController, class AActor* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ActionRequirementBase", "Requirement");
-
-	Params::ActionRequirementBase_Requirement Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_SpaceDistCheck.Check
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTD_SpaceDistCheck::Check(class UBehaviorTreeComponent* OwnerComp) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_SpaceDistCheck", "Check");
-
-	Params::BTD_SpaceDistCheck_Check Parms{};
-
-	Parms.OwnerComp = OwnerComp;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -2204,56 +1461,6 @@ bool UAIAbilitySelectCheckBase::ReceivePreCheck(const struct FRequiredAIDataForA
 
 	Parms.RequiredData = std::move(RequiredData);
 	Parms.AbilityConfig = std::move(AbilityConfig);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AICliffEdgeNote.GetLookAtTargetLocalPosition
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector AAICliffEdgeNote::GetLookAtTargetLocalPosition() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AICliffEdgeNote", "GetLookAtTargetLocalPosition");
-
-	Params::AICliffEdgeNote_GetLookAtTargetLocalPosition Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AICliffEdgeNote.GetLookAtTargetPosition
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector AAICliffEdgeNote::GetLookAtTargetPosition() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AICliffEdgeNote", "GetLookAtTargetPosition");
-
-	Params::AICliffEdgeNote_GetLookAtTargetPosition Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2914,6 +2121,187 @@ bool UAIAbilityUsageObject::IsValid() const
 }
 
 
+// Function MarvelAI.MarvelAIDataProvider.GetBoolValue
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIDataProviderBoolValue&  InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIDataProvider::GetBoolValue(const struct FAIDataProviderBoolValue& InProvider, const class UObject* Owner, int32 RequestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetBoolValue");
+
+	Params::MarvelAIDataProvider_GetBoolValue Parms{};
+
+	Parms.InProvider = std::move(InProvider);
+	Parms.Owner = Owner;
+	Parms.RequestId = RequestId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider.GetFloatValue
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIDataProviderFloatValue& InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UMarvelAIDataProvider::GetFloatValue(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner, int32 RequestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetFloatValue");
+
+	Params::MarvelAIDataProvider_GetFloatValue Parms{};
+
+	Parms.InProvider = std::move(InProvider);
+	Parms.Owner = Owner;
+	Parms.RequestId = RequestId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider.GetFloatValue_Blueprint
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIDataProviderFloatValue& InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UMarvelAIDataProvider::GetFloatValue_Blueprint(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetFloatValue_Blueprint");
+
+	Params::MarvelAIDataProvider_GetFloatValue_Blueprint Parms{};
+
+	Parms.InProvider = std::move(InProvider);
+	Parms.Owner = Owner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider.GetIntValue
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIDataProviderIntValue&   InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UMarvelAIDataProvider::GetIntValue(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner, int32 RequestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetIntValue");
+
+	Params::MarvelAIDataProvider_GetIntValue Parms{};
+
+	Parms.InProvider = std::move(InProvider);
+	Parms.Owner = Owner;
+	Parms.RequestId = RequestId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider.GetIntValue_Blueprint
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIDataProviderIntValue&   InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UMarvelAIDataProvider::GetIntValue_Blueprint(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetIntValue_Blueprint");
+
+	Params::MarvelAIDataProvider_GetIntValue_Blueprint Parms{};
+
+	Parms.InProvider = std::move(InProvider);
+	Parms.Owner = Owner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider.SetAllValue
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// float                                   NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIDataProvider::SetAllValue(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIDataProvider", "SetAllValue");
+
+	Params::MarvelAIDataProvider_SetAllValue Parms{};
+
+	Parms.NewValue = NewValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function MarvelAI.AIActionArea.WhenAIEnter
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:
@@ -2961,34 +2349,6 @@ void AAIActionArea::WhenAIExit(class ACharacter* Player)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIBattleAreaFilterBase.CheckCouldPass
-// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIBattleAreaFilterBase::CheckCouldPass(class AAIBattleAreaBase* BattleArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIBattleAreaFilterBase", "CheckCouldPass");
-
-	Params::AIBattleAreaFilterBase_CheckCouldPass Parms{};
-
-	Parms.BattleArea = BattleArea;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -3173,8632 +2533,6 @@ class AStandPointBase* AAIBattleAreaBase::GetStandPoint(class AMarvelAIControlle
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIBattleAreaManager.FindBattleArea
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      AreaName                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AAIBattleAreaBase*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AAIBattleAreaBase* UMarvelAIBattleAreaManager::FindBattleArea(const class FName& AreaName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIBattleAreaManager", "FindBattleArea");
-
-	Params::MarvelAIBattleAreaManager_FindBattleArea Parms{};
-
-	Parms.AreaName = AreaName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIBattleAreaManager.GetCurrentBattleArea
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EBattleAreaType                         InBattleAreaType                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AAIBattleAreaBase*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AAIBattleAreaBase* UMarvelAIBattleAreaManager::GetCurrentBattleArea(class AActor* TargetActor, EBattleAreaType InBattleAreaType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIBattleAreaManager", "GetCurrentBattleArea");
-
-	Params::MarvelAIBattleAreaManager_GetCurrentBattleArea Parms{};
-
-	Parms.TargetActor = TargetActor;
-	Parms.InBattleAreaType = InBattleAreaType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIBattleAreaManager.Init
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIBattleAreaManager::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIBattleAreaManager", "Init");
-
-	Params::MarvelAIBattleAreaManager_Init Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIBattleAreaManager.RegisterBattleArea
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIBattleAreaManager::RegisterBattleArea(class AAIBattleAreaBase* BattleArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIBattleAreaManager", "RegisterBattleArea");
-
-	Params::MarvelAIBattleAreaManager_RegisterBattleArea Parms{};
-
-	Parms.BattleArea = BattleArea;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIBattleAreaManager.UnRegisterBattleArea
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIBattleAreaManager::UnRegisterBattleArea(class AAIBattleAreaBase* BattleArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIBattleAreaManager", "UnRegisterBattleArea");
-
-	Params::MarvelAIBattleAreaManager_UnRegisterBattleArea Parms{};
-
-	Parms.BattleArea = BattleArea;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.AddExtraConfig
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UAIAbilityActivationExtraConfig*  NewConfig                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::AddExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "AddExtraConfig");
-
-	Params::AIControllerInfo_AddExtraConfig Parms{};
-
-	Parms.NewConfig = NewConfig;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.AddTag
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::AddTag(const struct FGameplayTag& Tag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "AddTag");
-
-	Params::AIControllerInfo_AddTag Parms{};
-
-	Parms.Tag = std::move(Tag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.ApplyTagContainer
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::ApplyTagContainer(const struct FGameplayTagContainer& TagContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "ApplyTagContainer");
-
-	Params::AIControllerInfo_ApplyTagContainer Parms{};
-
-	Parms.TagContainer = std::move(TagContainer);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.CheckIsConcentratingTarget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::CheckIsConcentratingTarget(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "CheckIsConcentratingTarget");
-
-	Params::AIControllerInfo_CheckIsConcentratingTarget Parms{};
-
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.CheckTeamActionIsExpired
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   ValidDuration                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::CheckTeamActionIsExpired(float ValidDuration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "CheckTeamActionIsExpired");
-
-	Params::AIControllerInfo_CheckTeamActionIsExpired Parms{};
-
-	Parms.ValidDuration = ValidDuration;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.Clear
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::Clear()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "Clear");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.DeleteConcentratedTarget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::DeleteConcentratedTarget(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "DeleteConcentratedTarget");
-
-	Params::AIControllerInfo_DeleteConcentratedTarget Parms{};
-
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.GetExtraConfig
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAIAbilityActivationExtraConfig*  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAIAbilityActivationExtraConfig* UAIControllerInfo::GetExtraConfig(const class FString& ConfigName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "GetExtraConfig");
-
-	Params::AIControllerInfo_GetExtraConfig Parms{};
-
-	Parms.ConfigName = std::move(ConfigName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.HasExtraConfig
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::HasExtraConfig(const class FString& ConfigName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "HasExtraConfig");
-
-	Params::AIControllerInfo_HasExtraConfig Parms{};
-
-	Parms.ConfigName = std::move(ConfigName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.OverwriteExtraConfig
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UAIAbilityActivationExtraConfig*  NewConfig                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::OverwriteExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "OverwriteExtraConfig");
-
-	Params::AIControllerInfo_OverwriteExtraConfig Parms{};
-
-	Parms.NewConfig = NewConfig;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.RemoveExtraConfig
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::RemoveExtraConfig(const class FString& ConfigName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "RemoveExtraConfig");
-
-	Params::AIControllerInfo_RemoveExtraConfig Parms{};
-
-	Parms.ConfigName = std::move(ConfigName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.RemoveTag
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::RemoveTag(const struct FGameplayTag& Tag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "RemoveTag");
-
-	Params::AIControllerInfo_RemoveTag Parms{};
-
-	Parms.Tag = std::move(Tag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.RemoveTagContainer
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::RemoveTagContainer(const struct FGameplayTagContainer& TagContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "RemoveTagContainer");
-
-	Params::AIControllerInfo_RemoveTagContainer Parms{};
-
-	Parms.TagContainer = std::move(TagContainer);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.ResetAIDifficulty
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::ResetAIDifficulty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "ResetAIDifficulty");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.ResetViewInfo
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::ResetViewInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "ResetViewInfo");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.SetNewTeamAction
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EAITeamAction                           NewAction                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bNewIsActionFromSelf                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::SetNewTeamAction(EAITeamAction NewAction, bool bNewIsActionFromSelf)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "SetNewTeamAction");
-
-	Params::AIControllerInfo_SetNewTeamAction Parms{};
-
-	Parms.NewAction = NewAction;
-	Parms.bNewIsActionFromSelf = bNewIsActionFromSelf;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.TrySyncWaypointPathProgress
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FWayPointPath&             Target                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::TrySyncWaypointPathProgress(const struct FWayPointPath& Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "TrySyncWaypointPathProgress");
-
-	Params::AIControllerInfo_TrySyncWaypointPathProgress Parms{};
-
-	Parms.Target = std::move(Target);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.UpdateConcentratedTarget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIControllerInfo::UpdateConcentratedTarget(class AActor* Target, float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "UpdateConcentratedTarget");
-
-	Params::AIControllerInfo_UpdateConcentratedTarget Parms{};
-
-	Parms.Target = Target;
-	Parms.DeltaTime = DeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.WayPointPathGoNext
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::WayPointPathGoNext()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "WayPointPathGoNext");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.WayPointPathUpdateProgress
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::WayPointPathUpdateProgress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "WayPointPathUpdateProgress");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.WayPointPathUpdateProgress_MOBA
-// (Final, Native, Public, BlueprintCallable)
-
-void UAIControllerInfo::WayPointPathUpdateProgress_MOBA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "WayPointPathUpdateProgress_MOBA");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIControllerInfo.CheckIsInBattle
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::CheckIsInBattle() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "CheckIsInBattle");
-
-	Params::AIControllerInfo_CheckIsInBattle Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.GetConcentratedTargets
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<class AActor*>                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<class AActor*> UAIControllerInfo::GetConcentratedTargets() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "GetConcentratedTargets");
-
-	Params::AIControllerInfo_GetConcentratedTargets Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.GetCurrentTargetHitRate
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAIHitRateTagContainer&    HitRateTagContainer                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAIControllerInfo::GetCurrentTargetHitRate(class AActor* Target, const struct FAIHitRateTagContainer& HitRateTagContainer) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "GetCurrentTargetHitRate");
-
-	Params::AIControllerInfo_GetCurrentTargetHitRate Parms{};
-
-	Parms.Target = Target;
-	Parms.HitRateTagContainer = std::move(HitRateTagContainer);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.GetTagCount
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UAIControllerInfo::GetTagCount(const struct FGameplayTag& Tag) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "GetTagCount");
-
-	Params::AIControllerInfo_GetTagCount Parms{};
-
-	Parms.Tag = std::move(Tag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.HasAllMatchingTags
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::HasAllMatchingTags(const struct FGameplayTagContainer& TagContainer) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "HasAllMatchingTags");
-
-	Params::AIControllerInfo_HasAllMatchingTags Parms{};
-
-	Parms.TagContainer = std::move(TagContainer);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.HasAnyMatchingTags
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::HasAnyMatchingTags(const struct FGameplayTagContainer& TagContainer) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "HasAnyMatchingTags");
-
-	Params::AIControllerInfo_HasAnyMatchingTags Parms{};
-
-	Parms.TagContainer = std::move(TagContainer);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.HasMatchingTag
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::HasMatchingTag(const struct FGameplayTag& Tag) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "HasMatchingTag");
-
-	Params::AIControllerInfo_HasMatchingTag Parms{};
-
-	Parms.Tag = std::move(Tag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIControllerInfo.IsSyncLeaderPath
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIControllerInfo::IsSyncLeaderPath() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIControllerInfo", "IsSyncLeaderPath");
-
-	Params::AIControllerInfo_IsSyncLeaderPath Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AICustomServiceLogicBase.BeginService
-// (Event, Public, BlueprintEvent)
-
-void UAICustomServiceLogicBase::BeginService()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AICustomServiceLogicBase", "BeginService");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.AICustomServiceLogicBase.EndService
-// (Event, Public, BlueprintEvent)
-
-void UAICustomServiceLogicBase::EndService()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AICustomServiceLogicBase", "EndService");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.AICustomServiceLogicBase.TickService
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAICustomServiceLogicBase::TickService(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AICustomServiceLogicBase", "TickService");
-
-	Params::AICustomServiceLogicBase_TickService Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.GetSubsystem
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    ContextObject                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAIDebugSubSystem*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAIDebugSubSystem* UAIDebugSubSystem::GetSubsystem(const class UObject* ContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "GetSubsystem");
-
-	Params::AIDebugSubSystem_GetSubsystem Parms{};
-
-	Parms.ContextObject = ContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.SetGameplayDebugTarget
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WCO                                                    (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   TargetUID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIDebugSubSystem::SetGameplayDebugTarget(const class UObject* WCO, int32 TargetUID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "SetGameplayDebugTarget");
-
-	Params::AIDebugSubSystem_SetGameplayDebugTarget Parms{};
-
-	Parms.WCO = WCO;
-	Parms.TargetUID = TargetUID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.StoreMoveNodeMsg
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    NodeMsg                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIDebugSubSystem::StoreMoveNodeMsg(class UObject* WCO, class AMarvelAIController* AIController, const class FString& NodeMsg)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveNodeMsg");
-
-	Params::AIDebugSubSystem_StoreMoveNodeMsg Parms{};
-
-	Parms.WCO = WCO;
-	Parms.AIController = AIController;
-	Parms.NodeMsg = std::move(NodeMsg);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.StoreMoveResultDebugInfo
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayTag&              NodeTag                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    MoveSuccess                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIDebugSubSystem::StoreMoveResultDebugInfo(class UObject* WCO, const struct FGameplayTag& NodeTag, bool MoveSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveResultDebugInfo");
-
-	Params::AIDebugSubSystem_StoreMoveResultDebugInfo Parms{};
-
-	Parms.WCO = WCO;
-	Parms.NodeTag = std::move(NodeTag);
-	Parms.MoveSuccess = MoveSuccess;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.StoreMoveTargetDebugInfo
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class AActor*                     TargetActor                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIDebugSubSystem::StoreMoveTargetDebugInfo(class UObject* WCO, class AMarvelAIController* AIController, const class AActor* TargetActor, const struct FVector& TargetLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveTargetDebugInfo");
-
-	Params::AIDebugSubSystem_StoreMoveTargetDebugInfo Parms{};
-
-	Parms.WCO = WCO;
-	Parms.AIController = AIController;
-	Parms.TargetActor = TargetActor;
-	Parms.TargetLocation = std::move(TargetLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIDebugSubSystem.ToggleEQSDebugMode
-// (Final, Native, Static, Public, BlueprintCallable)
-
-void UAIDebugSubSystem::ToggleEQSDebugMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDebugSubSystem", "ToggleEQSDebugMode");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIDifficultyExtendAsset.GetHitRateModifyFactor
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class AMarvelBaseCharacter*             Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAIHitRateTagContainer&    HitRateTagContainer                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAIDifficultyExtendAsset::GetHitRateModifyFactor(class AMarvelBaseCharacter* Source, const struct FAIHitRateTagContainer& HitRateTagContainer, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIDifficultyExtendAsset", "GetHitRateModifyFactor");
-
-	Params::AIDifficultyExtendAsset_GetHitRateModifyFactor Parms{};
-
-	Parms.Source = Source;
-	Parms.HitRateTagContainer = std::move(HitRateTagContainer);
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIDynamicDifficultyAsset.IsValid
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIDynamicDifficultyAsset::IsValid() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIDynamicDifficultyAsset", "IsValid");
-
-	Params::AIDynamicDifficultyAsset_IsValid Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.OnActorEnergyFull
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAIGameEventSubsystem::OnActorEnergyFull(class AActor* Source, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "OnActorEnergyFull");
-
-	Params::AIGameEventSubsystem_OnActorEnergyFull Parms{};
-
-	Parms.Source = Source;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-	Parms.ExtraData = std::move(ExtraData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.OnHealthChanged
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIGameEventSubsystem::OnHealthChanged(class AActor* Source, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "OnHealthChanged");
-
-	Params::AIGameEventSubsystem_OnHealthChanged Parms{};
-
-	Parms.Source = Source;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.OnPlayerKill
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// class AActor*                           Killer                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAIGameEventSubsystem::OnPlayerKill(class AActor* Killer, class AActor* Target, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "OnPlayerKill");
-
-	Params::AIGameEventSubsystem_OnPlayerKill Parms{};
-
-	Parms.Killer = Killer;
-	Parms.Target = Target;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-	Parms.ExtraData = std::move(ExtraData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.PreparingStartCallback
-// (Final, Native, Private)
-
-void UAIGameEventSubsystem::PreparingStartCallback()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "PreparingStartCallback");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.QuittingStartCallback
-// (Final, Native, Private)
-
-void UAIGameEventSubsystem::QuittingStartCallback()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "QuittingStartCallback");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.RegisterGameModeEvent
-// (Final, Native, Private)
-
-void UAIGameEventSubsystem::RegisterGameModeEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "RegisterGameModeEvent");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameEventSubsystem.UnRegisterGameModeEvent
-// (Final, Native, Private)
-
-void UAIGameEventSubsystem::UnRegisterGameModeEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameEventSubsystem", "UnRegisterGameModeEvent");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIGameInstanceSubsystem.OnAIAssetsLoaded
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const TArray<class UObject*>&           AIAssets_0                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAIGameInstanceSubsystem::OnAIAssetsLoaded(const TArray<class UObject*>& AIAssets_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIGameInstanceSubsystem", "OnAIAssetsLoaded");
-
-	Params::AIGameInstanceSubsystem_OnAIAssetsLoaded Parms{};
-
-	Parms.AIAssets_0 = std::move(AIAssets_0);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIHeroCustomComponent.OnGameplayTagUpdate
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIHeroCustomComponent::OnGameplayTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIHeroCustomComponent", "OnGameplayTagUpdate");
-
-	Params::AIHeroCustomComponent_OnGameplayTagUpdate Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.TagExists = TagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetAILabSubSystem
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAILabSubSystem*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAILabSubSystem* UAILabSubSystem::GetAILabSubSystem(class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AILabSubSystem", "GetAILabSubSystem");
-
-	Params::AILabSubSystem_GetAILabSubSystem Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetAbilitySummonedDataList
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TArray<struct FAILabProtoSummonedData>* OutSummonedDataList                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::GetAbilitySummonedDataList(TArray<struct FAILabProtoSummonedData>* OutSummonedDataList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetAbilitySummonedDataList");
-
-	Params::AILabSubSystem_GetAbilitySummonedDataList Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutSummonedDataList != nullptr)
-		*OutSummonedDataList = std::move(Parms.OutSummonedDataList);
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetAILabProtoTickData
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FAILabProtoTickData*             OutTickData                                            (Parm, OutParm, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::GetAILabProtoTickData(struct FAILabProtoTickData* OutTickData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetAILabProtoTickData");
-
-	Params::AILabSubSystem_GetAILabProtoTickData Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutTickData != nullptr)
-		*OutTickData = std::move(Parms.OutTickData);
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetAmmoClipData
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAILabProtoWeaponClipData*       OutWeaponClipData                                      (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::GetAmmoClipData(class AMarvelBaseCharacter* Character, struct FAILabProtoWeaponClipData* OutWeaponClipData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetAmmoClipData");
-
-	Params::AILabSubSystem_GetAmmoClipData Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutWeaponClipData != nullptr)
-		*OutWeaponClipData = std::move(Parms.OutWeaponClipData);
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetBuffData
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class AMarvelBaseCharacter*       Character                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FAILabProtoBuffData>*     OutBuffDataList                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::GetBuffData(const class AMarvelBaseCharacter* Character, TArray<struct FAILabProtoBuffData>* OutBuffDataList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetBuffData");
-
-	Params::AILabSubSystem_GetBuffData Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutBuffDataList != nullptr)
-		*OutBuffDataList = std::move(Parms.OutBuffDataList);
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetCharacterAbilityData
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAILabProtoAbilityData*          OutAbilityData                                         (Parm, OutParm, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::GetCharacterAbilityData(class AMarvelBaseCharacter* Character, struct FAILabProtoAbilityData* OutAbilityData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetCharacterAbilityData");
-
-	Params::AILabSubSystem_GetCharacterAbilityData Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutAbilityData != nullptr)
-		*OutAbilityData = std::move(Parms.OutAbilityData);
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetCurrentAmmoTypeList
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<int32> UAILabSubSystem::GetCurrentAmmoTypeList(class AMarvelBaseCharacter* Character)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetCurrentAmmoTypeList");
-
-	Params::AILabSubSystem_GetCurrentAmmoTypeList Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AILabSubSystem.GetLevelParamData
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// TArray<float>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<float> UAILabSubSystem::GetLevelParamData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "GetLevelParamData");
-
-	Params::AILabSubSystem_GetLevelParamData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AILabSubSystem.InitAILabLogic
-// (Final, Native, Public)
-
-void UAILabSubSystem::InitAILabLogic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "InitAILabLogic");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AILabSubSystem.InitFromAILabConfig
-// (Final, Native, Private)
-
-void UAILabSubSystem::InitFromAILabConfig()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "InitFromAILabConfig");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AILabSubSystem.OnAbilityCommitCD
-// (Final, Native, Public)
-// Parameters:
-// class AMarvelBaseCharacter*             SourceCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bAddCD                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::OnAbilityCommitCD(class AMarvelBaseCharacter* SourceCharacter, int32 AbilityID, bool bAddCD)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "OnAbilityCommitCD");
-
-	Params::AILabSubSystem_OnAbilityCommitCD Parms{};
-
-	Parms.SourceCharacter = SourceCharacter;
-	Parms.AbilityID = AbilityID;
-	Parms.bAddCD = bAddCD;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AILabSubSystem.OnGameQuittingStart
-// (Final, Native, Public)
-
-void UAILabSubSystem::OnGameQuittingStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "OnGameQuittingStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AILabSubSystem.PyBindEvents
-// (Event, Public, BlueprintEvent)
-
-void UAILabSubSystem::PyBindEvents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "PyBindEvents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.AILabSubSystem.PyUnBindEvents
-// (Event, Public, BlueprintEvent)
-
-void UAILabSubSystem::PyUnBindEvents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "PyUnBindEvents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.AILabSubSystem.ReceiveFirstRequestInit
-// (Event, Protected, BlueprintEvent)
-
-void UAILabSubSystem::ReceiveFirstRequestInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "ReceiveFirstRequestInit");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.AILabSubSystem.TryGetAICharacterView
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class AMarvelBaseCharacter*       Characters                                             (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAILabProtoEnvironmentData&      OutEnvironmentData                                     (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UAILabSubSystem::TryGetAICharacterView(const class AMarvelBaseCharacter* Characters, struct FAILabProtoEnvironmentData& OutEnvironmentData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AILabSubSystem", "TryGetAICharacterView");
-
-	Params::AILabSubSystem_TryGetAICharacterView Parms{};
-
-	Parms.Characters = Characters;
-	Parms.OutEnvironmentData = std::move(OutEnvironmentData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	OutEnvironmentData = std::move(Parms.OutEnvironmentData);
-}
-
-
-// Function MarvelAI.AIMementoComponent.OnAbilityActivate
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    String                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGlobalEventExtraData&     GlobalEventExtraData                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAIMementoComponent::OnAbilityActivate(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& String, const struct FGlobalEventExtraData& GlobalEventExtraData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIMementoComponent", "OnAbilityActivate");
-
-	Params::AIMementoComponent_OnAbilityActivate Parms{};
-
-	Parms.ASC = ASC;
-	Parms.AbilityID = AbilityID;
-	Parms.String = std::move(String);
-	Parms.GlobalEventExtraData = std::move(GlobalEventExtraData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIMementoComponent.OnAbilityDeActivate
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    String                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGlobalEventExtraData&     GlobalEventExtraData                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAIMementoComponent::OnAbilityDeActivate(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& String, const struct FGlobalEventExtraData& GlobalEventExtraData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIMementoComponent", "OnAbilityDeActivate");
-
-	Params::AIMementoComponent_OnAbilityDeActivate Parms{};
-
-	Parms.ASC = ASC;
-	Parms.AbilityID = AbilityID;
-	Parms.String = std::move(String);
-	Parms.GlobalEventExtraData = std::move(GlobalEventExtraData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIMementoComponent.OnTagUpdated
-// (Final, Native, Private, HasOutParams)
-// Parameters:
-// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayTag&              GameplayTag                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIMementoComponent::OnTagUpdated(class UAbilitySystemComponent* ASC, const struct FGameplayTag& GameplayTag, bool bTagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIMementoComponent", "OnTagUpdated");
-
-	Params::AIMementoComponent_OnTagUpdated Parms{};
-
-	Parms.ASC = ASC;
-	Parms.GameplayTag = std::move(GameplayTag);
-	Parms.bTagExists = bTagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIPathSelectComponent.GetPathToTargetFromActor
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AActor*                           PathSelector                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FWayPointPath*                   OutWayPointPath                                        (Parm, OutParm, NativeAccessSpecifierPublic)
-// bool                                    ShouldUpdateProgressInPath                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIPathSelectComponent::GetPathToTargetFromActor(class AActor* PathSelector, class AActor* ActorMovingAlong, class AActor* Target, struct FWayPointPath* OutWayPointPath, bool ShouldUpdateProgressInPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIPathSelectComponent", "GetPathToTargetFromActor");
-
-	Params::AIPathSelectComponent_GetPathToTargetFromActor Parms{};
-
-	Parms.PathSelector = PathSelector;
-	Parms.ActorMovingAlong = ActorMovingAlong;
-	Parms.Target = Target;
-	Parms.ShouldUpdateProgressInPath = ShouldUpdateProgressInPath;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutWayPointPath != nullptr)
-		*OutWayPointPath = std::move(Parms.OutWayPointPath);
-}
-
-
-// Function MarvelAI.AIPathSelectComponent.GetPathToTarget
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FWayPointPath*                   OutWayPointPath                                        (Parm, OutParm, NativeAccessSpecifierPublic)
-// bool                                    ShouldUpdateProgressInPath                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIPathSelectComponent::GetPathToTarget(class AActor* ActorMovingAlong, class AActor* Target, struct FWayPointPath* OutWayPointPath, bool ShouldUpdateProgressInPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPathSelectComponent", "GetPathToTarget");
-
-	Params::AIPathSelectComponent_GetPathToTarget Parms{};
-
-	Parms.ActorMovingAlong = ActorMovingAlong;
-	Parms.Target = Target;
-	Parms.ShouldUpdateProgressInPath = ShouldUpdateProgressInPath;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutWayPointPath != nullptr)
-		*OutWayPointPath = std::move(Parms.OutWayPointPath);
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.GetSelectTargetLogicObject
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AMarvelAIController*              MarvelAIOwner                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSubclassOf<class UAISelectTargetLogicBase>SelectLogicClass                                       (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAISelectTargetLogicBase*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAISelectTargetLogicBase* UAISelectTargetLogicBase::GetSelectTargetLogicObject(class AMarvelAIController* MarvelAIOwner, TSubclassOf<class UAISelectTargetLogicBase> SelectLogicClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISelectTargetLogicBase", "GetSelectTargetLogicObject");
-
-	Params::AISelectTargetLogicBase_GetSelectTargetLogicObject Parms{};
-
-	Parms.MarvelAIOwner = MarvelAIOwner;
-	Parms.SelectLogicClass = SelectLogicClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.CheckMissAndAddMissOffset
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AMarvelAIController*              MarvelAI                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAISelectTargetLogicBase::CheckMissAndAddMissOffset(class AMarvelAIController* MarvelAI, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "CheckMissAndAddMissOffset");
-
-	Params::AISelectTargetLogicBase_CheckMissAndAddMissOffset Parms{};
-
-	Parms.MarvelAI = MarvelAI;
-	Parms.OutAITarget = std::move(OutAITarget);
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	OutAITarget = std::move(Parms.OutAITarget);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.OnDestroy
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class AMarvelAIController*              MarvelAIController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAIAbilityUsage*                 AbilityUsage                                           (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAISelectTargetLogicBase::OnDestroy(class AMarvelAIController* MarvelAIController, struct FAIAbilityUsage* AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "OnDestroy");
-
-	Params::AISelectTargetLogicBase_OnDestroy Parms{};
-
-	Parms.MarvelAIController = MarvelAIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (AbilityUsage != nullptr)
-		*AbilityUsage = std::move(Parms.AbilityUsage);
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.OnInitialize
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class AMarvelAIController*              MarvelAIController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FAIAbilityUsage*                 AbilityUsage                                           (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAISelectTargetLogicBase::OnInitialize(class AMarvelAIController* MarvelAIController, struct FAIAbilityUsage* AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "OnInitialize");
-
-	Params::AISelectTargetLogicBase_OnInitialize Parms{};
-
-	Parms.MarvelAIController = MarvelAIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (AbilityUsage != nullptr)
-		*AbilityUsage = std::move(Parms.AbilityUsage);
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.SelectTargetForAbilityCheck
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FRequiredAIDataForAutoAbility&AbilityContext                                         (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAISelectTargetLogicBase::SelectTargetForAbilityCheck(const struct FRequiredAIDataForAutoAbility& AbilityContext, struct FMarvelAITarget& OutAITarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "SelectTargetForAbilityCheck");
-
-	Params::AISelectTargetLogicBase_SelectTargetForAbilityCheck Parms{};
-
-	Parms.AbilityContext = std::move(AbilityContext);
-	Parms.OutAITarget = std::move(OutAITarget);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	OutAITarget = std::move(Parms.OutAITarget);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.SelectTargetOrLocation
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAISelectTargetLogicBase::SelectTargetOrLocation(class AMarvelAIController* AIController, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "SelectTargetOrLocation");
-
-	Params::AISelectTargetLogicBase_SelectTargetOrLocation Parms{};
-
-	Parms.AIController = AIController;
-	Parms.OutAITarget = std::move(OutAITarget);
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	OutAITarget = std::move(Parms.OutAITarget);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.TakeResultAITarget
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAISelectTargetLogicBase::TakeResultAITarget(class AMarvelAIController* AIController, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "TakeResultAITarget");
-
-	Params::AISelectTargetLogicBase_TakeResultAITarget Parms{};
-
-	Parms.AIController = AIController;
-	Parms.OutAITarget = std::move(OutAITarget);
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	OutAITarget = std::move(Parms.OutAITarget);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AISelectTargetLogicBase.UpdateProjectilePredicateSpeed
-// (Native, Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelProjectileAgentTable&ProjectileAgentTable                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAISelectTargetLogicBase::UpdateProjectilePredicateSpeed(class AMarvelAIController* AIController, const struct FAIAbilityUsage& AbilityUsage, const struct FMarvelProjectileAgentTable& ProjectileAgentTable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISelectTargetLogicBase", "UpdateProjectilePredicateSpeed");
-
-	Params::AISelectTargetLogicBase_UpdateProjectilePredicateSpeed Parms{};
-
-	Parms.AIController = AIController;
-	Parms.AbilityUsage = std::move(AbilityUsage);
-	Parms.ProjectileAgentTable = std::move(ProjectileAgentTable);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIServerRequestServices.GetAILabServerUrl
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UAIServerRequestServices::GetAILabServerUrl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIServerRequestServices", "GetAILabServerUrl");
-
-	Params::AIServerRequestServices_GetAILabServerUrl Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIServerRequestServices.InitRequestServicesLogic
-// (Final, Native, Public)
-
-void UAIServerRequestServices::InitRequestServicesLogic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIServerRequestServices", "InitRequestServicesLogic");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIServerRequestServices.RequestTimer
-// (Final, Native, Protected)
-// Parameters:
-// bool                                    bRetry                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIServerRequestServices::RequestTimer(bool bRetry)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIServerRequestServices", "RequestTimer");
-
-	Params::AIServerRequestServices_RequestTimer Parms{};
-
-	Parms.bRetry = bRetry;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIServerRequestServices.SetAILabServerUrl
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    NewUrl                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIServerRequestServices::SetAILabServerUrl(const class FString& NewUrl, const class FString& Msg)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIServerRequestServices", "SetAILabServerUrl");
-
-	Params::AIServerRequestServices_SetAILabServerUrl Parms{};
-
-	Parms.NewUrl = std::move(NewUrl);
-	Parms.Msg = std::move(Msg);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIStandPointManager.FindStandPoint
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FName&                      PointName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AStandPointBase*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AStandPointBase* UMarvelAIStandPointManager::FindStandPoint(const class FName& PointName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIStandPointManager", "FindStandPoint");
-
-	Params::MarvelAIStandPointManager_FindStandPoint Parms{};
-
-	Parms.PointName = PointName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIStandPointManager.RegisterStandPoint
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AStandPointBase*                  StandPoint                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIStandPointManager::RegisterStandPoint(class AStandPointBase* StandPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIStandPointManager", "RegisterStandPoint");
-
-	Params::MarvelAIStandPointManager_RegisterStandPoint Parms{};
-
-	Parms.StandPoint = StandPoint;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIStandPointManager.UnRegisterStandPoint
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AStandPointBase*                  StandPoint                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIStandPointManager::UnRegisterStandPoint(class AStandPointBase* StandPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIStandPointManager", "UnRegisterStandPoint");
-
-	Params::MarvelAIStandPointManager_UnRegisterStandPoint Parms{};
-
-	Parms.StandPoint = StandPoint;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIStrategyAreaVolume.GetGroupState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EGroupState                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EGroupState AAIStrategyAreaVolume::GetGroupState() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIStrategyAreaVolume", "GetGroupState");
-
-	Params::AIStrategyAreaVolume_GetGroupState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIStrategyAreaVolume.GetMatchState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AAIStrategyAreaVolume::GetMatchState() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIStrategyAreaVolume", "GetMatchState");
-
-	Params::AIStrategyAreaVolume_GetMatchState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIStrategyAreaVolume.GetStrategyType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EStrategyType                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EStrategyType AAIStrategyAreaVolume::GetStrategyType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIStrategyAreaVolume", "GetStrategyType");
-
-	Params::AIStrategyAreaVolume_GetStrategyType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.CancelConcentrateTarget
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAITargetFactorLibrary::CancelConcentrateTarget(class AMarvelAIController* MyController, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "CancelConcentrateTarget");
-
-	Params::AITargetFactorLibrary_CancelConcentrateTarget Parms{};
-
-	Parms.MyController = MyController;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.GetDamageSourceFactorForTarget
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAITargetFactorLibrary::GetDamageSourceFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetDamageSourceFactorForTarget");
-
-	Params::AITargetFactorLibrary_GetDamageSourceFactorForTarget Parms{};
-
-	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
-	Parms.MyController = MyController;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.GetLowHpFactorForTarget
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MarkLife                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAITargetFactorLibrary::GetLowHpFactorForTarget(class AActor* Target, float MarkLife)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetLowHpFactorForTarget");
-
-	Params::AITargetFactorLibrary_GetLowHpFactorForTarget Parms{};
-
-	Parms.Target = Target;
-	Parms.MarkLife = MarkLife;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.GetRoleFactorForTarget
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           MyActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAITargetFactorLibrary::GetRoleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AActor* MyActor, class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetRoleFactorForTarget");
-
-	Params::AITargetFactorLibrary_GetRoleFactorForTarget Parms{};
-
-	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
-	Parms.MyActor = MyActor;
-	Parms.TargetActor = TargetActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.GetTargetChangeProbability
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FTargetChangeConfig&       Config                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   TargetHpRatio                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAITargetFactorLibrary::GetTargetChangeProbability(const struct FTargetChangeConfig& Config, float TargetHpRatio)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetTargetChangeProbability");
-
-	Params::AITargetFactorLibrary_GetTargetChangeProbability Parms{};
-
-	Parms.Config = std::move(Config);
-	Parms.TargetHpRatio = TargetHpRatio;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.GetVisibleFactorForTarget
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAITargetFactorLibrary::GetVisibleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetVisibleFactorForTarget");
-
-	Params::AITargetFactorLibrary_GetVisibleFactorForTarget Parms{};
-
-	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
-	Parms.MyController = MyController;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AITargetFactorLibrary.TryAddHpLowMarkToTarget
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FTargetChangeConfig&       Config                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MarkLife                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAITargetFactorLibrary::TryAddHpLowMarkToTarget(const struct FTargetChangeConfig& Config, class AActor* Target, float MarkLife)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "TryAddHpLowMarkToTarget");
-
-	Params::AITargetFactorLibrary_TryAddHpLowMarkToTarget Parms{};
-
-	Parms.Config = std::move(Config);
-	Parms.Target = Target;
-	Parms.MarkLife = MarkLife;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityByUsageID
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   AbilityUsageID                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelGameplayAbility* UAIAbilityUsageLibrary::GetAbilityByUsageID(int32 AbilityUsageID, class AMarvelAIController* OwnerController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityByUsageID");
-
-	Params::AIAbilityUsageLibrary_GetAbilityByUsageID Parms{};
-
-	Parms.AbilityUsageID = AbilityUsageID;
-	Parms.OwnerController = OwnerController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityFromContext
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FRequiredAIDataForAutoAbility&AutoAbilityContext                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelGameplayAbility* UAIAbilityUsageLibrary::GetAbilityFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityFromContext");
-
-	Params::AIAbilityUsageLibrary_GetAbilityFromContext Parms{};
-
-	Parms.AutoAbilityContext = std::move(AutoAbilityContext);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityUsageDescription
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UAIAbilityUsageLibrary::GetAbilityUsageDescription(const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityUsageDescription");
-
-	Params::AIAbilityUsageLibrary_GetAbilityUsageDescription Parms{};
-
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetTargetLocation
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector UAIAbilityUsageLibrary::GetTargetLocation(const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetTargetLocation");
-
-	Params::AIAbilityUsageLibrary_GetTargetLocation Parms{};
-
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetUsageConfig
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMarvelAIAutoAbilityTable        ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FMarvelAIAutoAbilityTable UAIAbilityUsageLibrary::GetUsageConfig(const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetUsageConfig");
-
-	Params::AIAbilityUsageLibrary_GetUsageConfig Parms{};
-
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.GetUsageConfigFromContext
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FRequiredAIDataForAutoAbility&AutoAbilityContext                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// struct FMarvelAIAutoAbilityTable*       OutUsageConfig                                         (Parm, OutParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAbilityUsageLibrary::GetUsageConfigFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, struct FMarvelAIAutoAbilityTable* OutUsageConfig)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetUsageConfigFromContext");
-
-	Params::AIAbilityUsageLibrary_GetUsageConfigFromContext Parms{};
-
-	Parms.AutoAbilityContext = std::move(AutoAbilityContext);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutUsageConfig != nullptr)
-		*OutUsageConfig = std::move(Parms.OutUsageConfig);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsageLibrary.IsValidAbilityUsage
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAbilityUsageLibrary::IsValidAbilityUsage(const struct FAIAbilityUsage& AbilityUsage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "IsValidAbilityUsage");
-
-	Params::AIAbilityUsageLibrary_IsValidAbilityUsage Parms{};
-
-	Parms.AbilityUsage = std::move(AbilityUsage);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityUsagePointCalculator.CalculateUsagePointPosition
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FAbilityUsagePointData&          StandPoint                                             (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAbilityUsagePointCalculator::CalculateUsagePointPosition(struct FAbilityUsagePointData& StandPoint, class AMarvelAIController* AIController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityUsagePointCalculator", "CalculateUsagePointPosition");
-
-	Params::AIAbilityUsagePointCalculator_CalculateUsagePointPosition Parms{};
-
-	Parms.StandPoint = std::move(StandPoint);
-	Parms.AIController = AIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	StandPoint = std::move(Parms.StandPoint);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityPreAction.DoPreAction
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIAbilityPreAction::DoPreAction(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityPreAction", "DoPreAction");
-
-	Params::AIAbilityPreAction_DoPreAction Parms{};
-
-	Parms.Ability = Ability;
-	Parms.AIController = AIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAbilityUsageAsset.DoAllPreActions
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIAbilityUsageAsset::DoAllPreActions(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityUsageAsset", "DoAllPreActions");
-
-	Params::AIAbilityUsageAsset_DoAllPreActions Parms{};
-
-	Parms.Ability = Ability;
-	Parms.AIController = AIController;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAbilityUsageAsset.ShouldSkipCanActivateCheck
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAIAbilityUsageAsset::ShouldSkipCanActivateCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityUsageAsset", "ShouldSkipCanActivateCheck");
-
-	Params::AIAbilityUsageAsset_ShouldSkipCanActivateCheck Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreSubsystem
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UBattleScoreSubsystem*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBattleScoreSubsystem* UBattleScoreSubsystem::GetBattleScoreSubsystem(const class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BattleScoreSubsystem", "GetBattleScoreSubsystem");
-
-	Params::BattleScoreSubsystem_GetBattleScoreSubsystem Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForActor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class AActor*                     TargetActor                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBattleScoreSubsystem::GetBattleScoreForActor(const class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForActor");
-
-	Params::BattleScoreSubsystem_GetBattleScoreForActor Parms{};
-
-	Parms.TargetActor = TargetActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForCharacter
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class AMarvelBaseCharacter*       HeroCharacter                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBattleScoreSubsystem::GetBattleScoreForCharacter(const class AMarvelBaseCharacter* HeroCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForCharacter");
-
-	Params::BattleScoreSubsystem_GetBattleScoreForCharacter Parms{};
-
-	Parms.HeroCharacter = HeroCharacter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForCharacterGroup
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<class AMarvelBaseCharacter*>&CharacterGroup                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBattleScoreSubsystem::GetBattleScoreForCharacterGroup(const TArray<class AMarvelBaseCharacter*>& CharacterGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForCharacterGroup");
-
-	Params::BattleScoreSubsystem_GetBattleScoreForCharacterGroup Parms{};
-
-	Parms.CharacterGroup = std::move(CharacterGroup);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_CampCheck.Check
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const class UBehaviorTreeComponent*     OwnerComp                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTD_CampCheck::Check(const class UBehaviorTreeComponent* OwnerComp) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_CampCheck", "Check");
-
-	Params::BTD_CampCheck_Check Parms{};
-
-	Parms.OwnerComp = OwnerComp;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_CampCheck.CheckOwnershipType
-// (Native, Event, Public, BlueprintEvent, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIFilterSide                           BattleSide                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTD_CampCheck::CheckOwnershipType(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_CampCheck", "CheckOwnershipType");
-
-	Params::BTD_CampCheck_CheckOwnershipType Parms{};
-
-	Parms.OwnerCharacter = OwnerCharacter;
-	Parms.BattleSide = BattleSide;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_CampCheck.GetScoreForSide
-// (Native, Event, Public, BlueprintEvent, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIFilterSide                           BattleSide                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBTD_CampCheck::GetScoreForSide(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_CampCheck", "GetScoreForSide");
-
-	Params::BTD_CampCheck_GetScoreForSide Parms{};
-
-	Parms.OwnerCharacter = OwnerCharacter;
-	Parms.BattleSide = BattleSide;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTD_PayloadCheck.Check
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   Stage                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Speed                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Team                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EOwnershipType                          Ownership                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTD_PayloadCheck::Check(int32 Stage, float Score, float Speed, int32 Team, EOwnershipType Ownership) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTD_PayloadCheck", "Check");
-
-	Params::BTD_PayloadCheck_Check Parms{};
-
-	Parms.Stage = Stage;
-	Parms.Score = Score;
-	Parms.Speed = Speed;
-	Parms.Team = Team;
-	Parms.Ownership = Ownership;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTService_MarvelInstancedBase.OnDestroyed
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTService_MarvelInstancedBase::OnDestroyed(class UBehaviorTreeComponent* OwnerComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_MarvelInstancedBase", "OnDestroyed");
-
-	Params::BTService_MarvelInstancedBase_OnDestroyed Parms{};
-
-	Parms.OwnerComp = OwnerComp;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetControlledHero
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelBaseCharacter* UBTService_MarvelInstancedBase::K2_GetControlledHero() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetControlledHero");
-
-	Params::BTService_MarvelInstancedBase_K2_GetControlledHero Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetControlledPawn
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class APawn* UBTService_MarvelInstancedBase::K2_GetControlledPawn() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetControlledPawn");
-
-	Params::BTService_MarvelInstancedBase_K2_GetControlledPawn Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetMarvelAIOwner
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelAIController* UBTService_MarvelInstancedBase::K2_GetMarvelAIOwner() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetMarvelAIOwner");
-
-	Params::BTService_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetOwnerBTComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBehaviorTreeComponent* UBTService_MarvelInstancedBase::K2_GetOwnerBTComp() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetOwnerBTComp");
-
-	Params::BTService_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_DamageStatistics.OnTakingDamage
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_DamageStatistics::OnTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_DamageStatistics", "OnTakingDamage");
-
-	Params::BTS_DamageStatistics_OnTakingDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SelectTargetNew.OnTargetTakingDamage
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_SelectTargetNew::OnTargetTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SelectTargetNew", "OnTargetTakingDamage");
-
-	Params::BTS_SelectTargetNew_OnTargetTakingDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.GetAIUserName
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UBTS_SendChatMessage::GetAIUserName(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "GetAIUserName");
-
-	Params::BTS_SendChatMessage_GetAIUserName Parms{};
-
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnAllDeath
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnAllDeath(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnAllDeath");
-
-	Params::BTS_SendChatMessage_OnAllDeath Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnDeath
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnDeath(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnDeath");
-
-	Params::BTS_SendChatMessage_OnDeath Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnEnergyFull
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnEnergyFull(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnEnergyFull");
-
-	Params::BTS_SendChatMessage_OnEnergyFull Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnGameBegin
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnGameBegin(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnGameBegin");
-
-	Params::BTS_SendChatMessage_OnGameBegin Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnGameEnd
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnGameEnd(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnGameEnd");
-
-	Params::BTS_SendChatMessage_OnGameEnd Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnHeal
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnHeal(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnHeal");
-
-	Params::BTS_SendChatMessage_OnHeal Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.OnHealthChanged
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::OnHealthChanged(const struct FAIEventArgs& Args)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "OnHealthChanged");
-
-	Params::BTS_SendChatMessage_OnHealthChanged Parms{};
-
-	Parms.Args = std::move(Args);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.SendChatMessage
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::SendChatMessage(const class FString& Msg, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "SendChatMessage");
-
-	Params::BTS_SendChatMessage_SendChatMessage Parms{};
-
-	Parms.Msg = std::move(Msg);
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.SendMessage
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FAICommunicateEx*                Communicate                                            (Parm, OutParm, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::SendMessage(struct FAICommunicateEx* Communicate, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "SendMessage");
-
-	Params::BTS_SendChatMessage_SendMessage Parms{};
-
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (Communicate != nullptr)
-		*Communicate = std::move(Parms.Communicate);
-}
-
-
-// Function MarvelAI.BTS_SendChatMessage.SendQuickMessage
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const int32&                            ID                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_SendChatMessage::SendQuickMessage(const int32& ID, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_SendChatMessage", "SendQuickMessage");
-
-	Params::BTS_SendChatMessage_SendQuickMessage Parms{};
-
-	Parms.ID = ID;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_UpdateMatchState_New.OnMatchStateChange
-// (Final, Native, Private)
-// Parameters:
-// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_UpdateMatchState_New::OnMatchStateChange(EMatchState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateMatchState_New", "OnMatchStateChange");
-
-	Params::BTS_UpdateMatchState_New_OnMatchStateChange Parms{};
-
-	Parms.NewState = NewState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.SniperStandPoint.CheckEnemyIsInWarningRange
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           EnemyActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASniperStandPoint::CheckEnemyIsInWarningRange(class AActor* EnemyActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SniperStandPoint", "CheckEnemyIsInWarningRange");
-
-	Params::SniperStandPoint_CheckEnemyIsInWarningRange Parms{};
-
-	Parms.EnemyActor = EnemyActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateControlState.GetCampControlState
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIFilterSide                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EAIFilterSide UBTS_UpdateControlState::GetCampControlState(class AMarvelBaseCharacter* OwnerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateControlState", "GetCampControlState");
-
-	Params::BTS_UpdateControlState_GetCampControlState Parms{};
-
-	Parms.OwnerCharacter = OwnerCharacter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateControlState.GetCampProgress
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<float>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<float> UBTS_UpdateControlState::GetCampProgress(class AMarvelBaseCharacter* OwnerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateControlState", "GetCampProgress");
-
-	Params::BTS_UpdateControlState_GetCampProgress Parms{};
-
-	Parms.OwnerCharacter = OwnerCharacter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayloadOwnership
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// EOwnershipType                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EOwnershipType UBTS_UpdateEscortStateNew::GetPayloadOwnership()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayloadOwnership");
-
-	Params::BTS_UpdateEscortStateNew_GetPayloadOwnership Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayLoadProgress
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBTS_UpdateEscortStateNew::GetPayLoadProgress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayLoadProgress");
-
-	Params::BTS_UpdateEscortStateNew_GetPayLoadProgress Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayLoadSpeed
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBTS_UpdateEscortStateNew::GetPayLoadSpeed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayLoadSpeed");
-
-	Params::BTS_UpdateEscortStateNew_GetPayLoadSpeed Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateEscortStateNew.OnPreGameMatchEvent
-// (Final, Native, Private)
-// Parameters:
-// EMatchState                             MatchState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_UpdateEscortStateNew::OnPreGameMatchEvent(EMatchState MatchState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "OnPreGameMatchEvent");
-
-	Params::BTS_UpdateEscortStateNew_OnPreGameMatchEvent Parms{};
-
-	Parms.MatchState = MatchState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_UpdateEscortStateNew.SetCurrentStage
-// (Final, Native, Private)
-// Parameters:
-// const class FString&                    StageName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_UpdateEscortStateNew::SetCurrentStage(const class FString& StageName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "SetCurrentStage");
-
-	Params::BTS_UpdateEscortStateNew_SetCurrentStage Parms{};
-
-	Parms.StageName = std::move(StageName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_UpdateFireLine.IsActorInFireLineState
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// const class AMarvelBaseCharacter*       Character                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTS_UpdateFireLine::IsActorInFireLineState(const class AMarvelBaseCharacter* Character)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateFireLine", "IsActorInFireLineState");
-
-	Params::BTS_UpdateFireLine_IsActorInFireLineState Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTS_UpdateMatchState.OnMatchStateChange
-// (Final, Native, Protected)
-// Parameters:
-// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_UpdateMatchState::OnMatchStateChange(EMatchState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateMatchState", "OnMatchStateChange");
-
-	Params::BTS_UpdateMatchState_OnMatchStateChange Parms{};
-
-	Parms.NewState = NewState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_UpdatePath.OnLeaderPathUpdate
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FAIMoveRequest&            MoveRequest                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const struct FNavPathWrapper&           NewPath                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTS_UpdatePath::OnLeaderPathUpdate(const struct FAIMoveRequest& MoveRequest, const struct FNavPathWrapper& NewPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdatePath", "OnLeaderPathUpdate");
-
-	Params::BTS_UpdatePath_OnLeaderPathUpdate Parms{};
-
-	Parms.MoveRequest = std::move(MoveRequest);
-	Parms.NewPath = std::move(NewPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTS_UpdateSight.OnResetSightConfig
-// (Final, Native, Protected)
-// Parameters:
-// float                                   NewRadius                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTS_UpdateSight::OnResetSightConfig(float NewRadius)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTS_UpdateSight", "OnResetSightConfig");
-
-	Params::BTS_UpdateSight_OnResetSightConfig Parms{};
-
-	Parms.NewRadius = NewRadius;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.ShelterPathFinder.RequestMove
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelAIController*              AIOwner                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EPathFollowingRequestResult             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EPathFollowingRequestResult UShelterPathFinder::RequestMove(class AMarvelAIController* AIOwner, const struct FVector& TargetLocation) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShelterPathFinder", "RequestMove");
-
-	Params::ShelterPathFinder_RequestMove Parms{};
-
-	Parms.AIOwner = AIOwner;
-	Parms.TargetLocation = std::move(TargetLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTTask_GeneralActivateAbility.EndCurrentTask
-// (Final, Native, Protected)
-
-void UBTTask_GeneralActivateAbility::EndCurrentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_GeneralActivateAbility", "EndCurrentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTTask_GeneralActivateAbility.OnAbilityBreak
-// (Final, Native, Protected)
-
-void UBTTask_GeneralActivateAbility::OnAbilityBreak()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_GeneralActivateAbility", "OnAbilityBreak");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTTask_AIActivateAbilityTask.InitAbilityTask
-// (Final, Native, Protected)
-
-void UBTTask_AIActivateAbilityTask::InitAbilityTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_AIActivateAbilityTask", "InitAbilityTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTTask_ChaseTarget.OnActorBump
-// (Final, Native, Public, HasOutParams, HasDefaults)
-// Parameters:
-// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           OtherActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   NormalImpulse                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UBTTask_ChaseTarget::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_ChaseTarget", "OnActorBump");
-
-	Params::BTTask_ChaseTarget_OnActorBump Parms{};
-
-	Parms.SelfActor = SelfActor;
-	Parms.OtherActor = OtherActor;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.IsTaskEnded
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTTask_MarvelInstancedBase::IsTaskEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "IsTaskEnded");
-
-	Params::BTTask_MarvelInstancedBase_IsTaskEnded Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.ReceiveOnTaskFinished
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EBTNodeResult                           Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_MarvelInstancedBase::ReceiveOnTaskFinished(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "ReceiveOnTaskFinished");
-
-	Params::BTTask_MarvelInstancedBase_ReceiveOnTaskFinished Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.SetTickInterval
-// (Final, Native, Public)
-// Parameters:
-// float                                   NewTickInterval                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_MarvelInstancedBase::SetTickInterval(float NewTickInterval)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "SetTickInterval");
-
-	Params::BTTask_MarvelInstancedBase_SetTickInterval Parms{};
-
-	Parms.NewTickInterval = NewTickInterval;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetControlledHero
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelBaseCharacter* UBTTask_MarvelInstancedBase::K2_GetControlledHero() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetControlledHero");
-
-	Params::BTTask_MarvelInstancedBase_K2_GetControlledHero Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetControlledPawn
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class APawn* UBTTask_MarvelInstancedBase::K2_GetControlledPawn() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetControlledPawn");
-
-	Params::BTTask_MarvelInstancedBase_K2_GetControlledPawn Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetMarvelAIOwner
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AMarvelAIController* UBTTask_MarvelInstancedBase::K2_GetMarvelAIOwner() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetMarvelAIOwner");
-
-	Params::BTTask_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetOwnerBTComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBehaviorTreeComponent* UBTTask_MarvelInstancedBase::K2_GetOwnerBTComp() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetOwnerBTComp");
-
-	Params::BTTask_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTT_GeneralMoveTo.OnForceMoveTaskEnd
-// (Final, Native, Protected)
-// Parameters:
-// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTT_GeneralMoveTo::OnForceMoveTaskEnd(bool bSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnForceMoveTaskEnd");
-
-	Params::BTT_GeneralMoveTo_OnForceMoveTaskEnd Parms{};
-
-	Parms.bSuccess = bSuccess;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTT_GeneralMoveTo.OnMoveCompleted
-// (Final, Native, Protected)
-// Parameters:
-// const struct FAIRequestID&              RequestID                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// EPathFollowingResult                    Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint16                                  Flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTT_GeneralMoveTo::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult Result, uint16 Flag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnMoveCompleted");
-
-	Params::BTT_GeneralMoveTo_OnMoveCompleted Parms{};
-
-	Parms.RequestID = std::move(RequestID);
-	Parms.Result = Result;
-	Parms.Flag = Flag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.BTT_GeneralMoveTo.OnSVONMoveRequestFailed
-// (Final, Native, Protected)
-
-void UBTT_GeneralMoveTo::OnSVONMoveRequestFailed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnSVONMoveRequestFailed");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.StrategyPointActor.SetShelterIsBroken
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bNewIsBroken                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AStrategyPointActor::SetShelterIsBroken(bool bNewIsBroken)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StrategyPointActor", "SetShelterIsBroken");
-
-	Params::StrategyPointActor_SetShelterIsBroken Parms{};
-
-	Parms.bNewIsBroken = bNewIsBroken;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.StrategyPointActor.DebugDrawPointData
-// (Final, Native, Public, Const)
-
-void AStrategyPointActor::DebugDrawPointData() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StrategyPointActor", "DebugDrawPointData");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.WayPoint.CheckValid
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AWayPoint::CheckValid()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPoint", "CheckValid");
-
-	Params::WayPoint_CheckValid Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPoint.SelectNextWayPoint
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AWayPoint*                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AWayPoint* AWayPoint::SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPoint", "SelectNextWayPoint");
-
-	Params::WayPoint_SelectNextWayPoint Parms{};
-
-	Parms.ActorMovingAlong = ActorMovingAlong;
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPoint.CheckIsProgressInRange
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   CurrentProgress                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AWayPoint::CheckIsProgressInRange(float CurrentProgress) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPoint", "CheckIsProgressInRange");
-
-	Params::WayPoint_CheckIsProgressInRange Parms{};
-
-	Parms.CurrentProgress = CurrentProgress;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPoint.GetMaxSafeFactorInNextRoutes
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AWayPoint::GetMaxSafeFactorInNextRoutes() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPoint", "GetMaxSafeFactorInNextRoutes");
-
-	Params::WayPoint_GetMaxSafeFactorInNextRoutes Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPoint.IsPrepareArea
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AWayPoint::IsPrepareArea() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WayPoint", "IsPrepareArea");
-
-	Params::WayPoint_IsPrepareArea Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.BTT_TokenGateTemplate.ReceiveExecuteTokenTask
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTT_TokenGateTemplate::ReceiveExecuteTokenTask(class UBehaviorTreeComponent* OwnerComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTT_TokenGateTemplate", "ReceiveExecuteTokenTask");
-
-	Params::BTT_TokenGateTemplate_ReceiveExecuteTokenTask Parms{};
-
-	Parms.OwnerComp = OwnerComp;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.BuildDefaultSimplePath
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           MovingActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           FinalTarget                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::BuildDefaultSimplePath(struct FWayPointPath& WayPointPath, class AActor* MovingActor, class AActor* FinalTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "BuildDefaultSimplePath");
-
-	Params::WayPointPathFunctionLibrary_BuildDefaultSimplePath Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.MovingActor = MovingActor;
-	Parms.FinalTarget = FinalTarget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.Clear
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::Clear(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "Clear");
-
-	Params::WayPointPathFunctionLibrary_Clear Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.GetCurrentWayPoint
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AActor* UWayPointPathFunctionLibrary::GetCurrentWayPoint(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GetCurrentWayPoint");
-
-	Params::WayPointPathFunctionLibrary_GetCurrentWayPoint Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.GetFinalTarget
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AActor* UWayPointPathFunctionLibrary::GetFinalTarget(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GetFinalTarget");
-
-	Params::WayPointPathFunctionLibrary_GetFinalTarget Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.GoNext
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::GoNext(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GoNext");
-
-	Params::WayPointPathFunctionLibrary_GoNext Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.InitPathForMovingActor
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           MovingActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ShouldUpdateProgress                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EWayPointMark                           PathMark                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::InitPathForMovingActor(struct FWayPointPath& WayPointPath, class AActor* MovingActor, bool ShouldUpdateProgress, EWayPointMark PathMark)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "InitPathForMovingActor");
-
-	Params::WayPointPathFunctionLibrary_InitPathForMovingActor Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.MovingActor = MovingActor;
-	Parms.ShouldUpdateProgress = ShouldUpdateProgress;
-	Parms.PathMark = PathMark;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.IsMovingActorOutOfPath
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   AllowedRadius                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::IsMovingActorOutOfPath(const struct FWayPointPath& WayPointPath, float AllowedRadius)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsMovingActorOutOfPath");
-
-	Params::WayPointPathFunctionLibrary_IsMovingActorOutOfPath Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.AllowedRadius = AllowedRadius;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.IsPathFinished
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::IsPathFinished(const struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsPathFinished");
-
-	Params::WayPointPathFunctionLibrary_IsPathFinished Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.IsPathValid
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::IsPathValid(const struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsPathValid");
-
-	Params::WayPointPathFunctionLibrary_IsPathValid Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.IsRingPath
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::IsRingPath(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsRingPath");
-
-	Params::WayPointPathFunctionLibrary_IsRingPath Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.MarkRingPath
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           RingStartPoint                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::MarkRingPath(struct FWayPointPath& WayPointPath, class AActor* RingStartPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "MarkRingPath");
-
-	Params::WayPointPathFunctionLibrary_MarkRingPath Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.RingStartPoint = RingStartPoint;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.ResetProgress
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::ResetProgress(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "ResetProgress");
-
-	Params::WayPointPathFunctionLibrary_ResetProgress Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.SetPathMark
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// EWayPointMark                           NewWayPointMark                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::SetPathMark(struct FWayPointPath& WayPointPath, EWayPointMark NewWayPointMark)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "SetPathMark");
-
-	Params::WayPointPathFunctionLibrary_SetPathMark Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.NewWayPointMark = NewWayPointMark;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.TakeNextLocationToReach
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector UWayPointPathFunctionLibrary::TakeNextLocationToReach(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "TakeNextLocationToReach");
-
-	Params::WayPointPathFunctionLibrary_TakeNextLocationToReach Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.UpdateProgressInPath
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UWayPointPathFunctionLibrary::UpdateProgressInPath(struct FWayPointPath& WayPointPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "UpdateProgressInPath");
-
-	Params::WayPointPathFunctionLibrary_UpdateProgressInPath Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	WayPointPath = std::move(Parms.WayPointPath);
-}
-
-
-// Function MarvelAI.WayPointPathFunctionLibrary.UpdateSafeFactorForRoutes
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   SafeFactor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UWayPointPathFunctionLibrary::UpdateSafeFactorForRoutes(const struct FWayPointPath& WayPointPath, float SafeFactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "UpdateSafeFactorForRoutes");
-
-	Params::WayPointPathFunctionLibrary_UpdateSafeFactorForRoutes Parms{};
-
-	Parms.WayPointPath = std::move(WayPointPath);
-	Parms.SafeFactor = SafeFactor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.CleanUp
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::CleanUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "CleanUp");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DebugDrawEdges
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::DebugDrawEdges()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawEdges");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DebugDrawLevelKnockUp
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::DebugDrawLevelKnockUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawLevelKnockUp");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DebugDrawLinks
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::DebugDrawLinks()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawLinks");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DoGenerate
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::DoGenerate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DoGenerate");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.ToggleGlobalDebugDraw
-// (Final, Native, Public)
-
-void ANavLinkAutoGenerator::ToggleGlobalDebugDraw()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "ToggleGlobalDebugDraw");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DebugCheckCollisionForLink
-// (Final, Native, Protected, Const)
-
-void ANavLinkAutoGenerator::DebugCheckCollisionForLink() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugCheckCollisionForLink");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.NavLinkAutoGenerator.DebugDrawStrategyPoints
-// (Final, Native, Protected, Const)
-
-void ANavLinkAutoGenerator::DebugDrawStrategyPoints() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawStrategyPoints");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIAlarmSubsystem.OnActorActivateAbility
-// (Final, Native, Private)
-// Parameters:
-// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    SessionID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelGameplayAbility*           SourceAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIAlarmSubsystem::OnActorActivateAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnActorActivateAbility");
-
-	Params::MarvelAIAlarmSubsystem_OnActorActivateAbility Parms{};
-
-	Parms.Source = Source;
-	Parms.AbilityID = AbilityID;
-	Parms.SessionID = std::move(SessionID);
-	Parms.SourceAbility = SourceAbility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIAlarmSubsystem.OnActorEndAbility
-// (Final, Native, Private)
-// Parameters:
-// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    SessionID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelGameplayAbility*           SourceAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIAlarmSubsystem::OnActorEndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnActorEndAbility");
-
-	Params::MarvelAIAlarmSubsystem_OnActorEndAbility Parms{};
-
-	Parms.Source = Source;
-	Parms.AbilityID = AbilityID;
-	Parms.SessionID = std::move(SessionID);
-	Parms.SourceAbility = SourceAbility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIAlarmSubsystem.OnGameQuittingStart
-// (Final, Native, Private)
-
-void UMarvelAIAlarmSubsystem::OnGameQuittingStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnGameQuittingStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIAlarmSubsystem.OnMatchStateChange
-// (Final, Native, Private)
-// Parameters:
-// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIAlarmSubsystem::OnMatchStateChange(EMatchState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnMatchStateChange");
-
-	Params::MarvelAIAlarmSubsystem_OnMatchStateChange Parms{};
-
-	Parms.NewState = NewState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.AIAbilityActivationExtraConfig.GetConfigName
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UAIAbilityActivationExtraConfig::GetConfigName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityActivationExtraConfig", "GetConfigName");
-
-	Params::AIAbilityActivationExtraConfig_GetConfigName Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIAbilityActivationExtraConfig.InitExtraConfig
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class UObject*                          AIOwner                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIAbilityActivationExtraConfig::InitExtraConfig(class UObject* AIOwner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAbilityActivationExtraConfig", "InitExtraConfig");
-
-	Params::AIAbilityActivationExtraConfig_InitExtraConfig Parms{};
-
-	Parms.AIOwner = AIOwner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.AllowPreSelectHeroDelay
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delay                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::AllowPreSelectHeroDelay(float Delay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "AllowPreSelectHeroDelay");
-
-	Params::MarvelAIController_AllowPreSelectHeroDelay Parms{};
-
-	Parms.Delay = Delay;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.ApplyGameplayEffectToPawn
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TSubclassOf<class UGameplayEffect>      EffectClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayTag&              DataTag                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   CallerMagnitude                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Period                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bUseControllerAsCauser                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FActiveGameplayEffectHandle      ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FActiveGameplayEffectHandle AMarvelAIController::ApplyGameplayEffectToPawn(TSubclassOf<class UGameplayEffect> EffectClass, const struct FGameplayTag& DataTag, float CallerMagnitude, float Period, bool bUseControllerAsCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ApplyGameplayEffectToPawn");
-
-	Params::MarvelAIController_ApplyGameplayEffectToPawn Parms{};
-
-	Parms.EffectClass = EffectClass;
-	Parms.DataTag = std::move(DataTag);
-	Parms.CallerMagnitude = CallerMagnitude;
-	Parms.Period = Period;
-	Parms.bUseControllerAsCauser = bUseControllerAsCauser;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.CallInputAction
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   AbilityId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             ActionName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bPressed                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::CallInputAction(int32 AbilityId, class FName ActionName, bool bPressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "CallInputAction");
-
-	Params::MarvelAIController_CallInputAction Parms{};
-
-	Parms.AbilityId = AbilityId;
-	Parms.ActionName = ActionName;
-	Parms.bPressed = bPressed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.CanActivateAbility
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::CanActivateAbility(int32 AbilityID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "CanActivateAbility");
-
-	Params::MarvelAIController_CanActivateAbility Parms{};
-
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.CheckInitAIDifficulty
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::CheckInitAIDifficulty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "CheckInitAIDifficulty");
-
-	Params::MarvelAIController_CheckInitAIDifficulty Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.ClearBehaviorTreeFocus
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Delay                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::ClearBehaviorTreeFocus(float Delay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ClearBehaviorTreeFocus");
-
-	Params::MarvelAIController_ClearBehaviorTreeFocus Parms{};
-
-	Parms.Delay = Delay;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.ConsumeRecommendedHeroID
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  HeroID                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::ConsumeRecommendedHeroID(int32* HeroID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ConsumeRecommendedHeroID");
-
-	Params::MarvelAIController_ConsumeRecommendedHeroID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (HeroID != nullptr)
-		*HeroID = Parms.HeroID;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetCurrentMoveDirection
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector AMarvelAIController::GetCurrentMoveDirection()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetCurrentMoveDirection");
-
-	Params::MarvelAIController_GetCurrentMoveDirection Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.InitAIDifficulty
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EAIDifficultyMode                       DifficultyMode                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   DifficultyLevel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::InitAIDifficulty(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "InitAIDifficulty");
-
-	Params::MarvelAIController_InitAIDifficulty Parms{};
-
-	Parms.DifficultyMode = DifficultyMode;
-	Parms.DifficultyLevel = DifficultyLevel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.InitDifficultyEffect
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ForceInit                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::InitDifficultyEffect(bool ForceInit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "InitDifficultyEffect");
-
-	Params::MarvelAIController_InitDifficultyEffect Parms{};
-
-	Parms.ForceInit = ForceInit;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.InitNoPSPlayerInfo
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InTeamID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InUID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::InitNoPSPlayerInfo(int32 InTeamID, int32 InUID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "InitNoPSPlayerInfo");
-
-	Params::MarvelAIController_InitNoPSPlayerInfo Parms{};
-
-	Parms.InTeamID = InTeamID;
-	Parms.InUID = InUID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.InitSummonedForAI
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::InitSummonedForAI(class AActor* Source)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "InitSummonedForAI");
-
-	Params::MarvelAIController_InitSummonedForAI Parms{};
-
-	Parms.Source = Source;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsInArea
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// TSubclassOf<class AAIActionArea>        AreaClassType                                          (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsInArea(TSubclassOf<class AAIActionArea> AreaClassType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsInArea");
-
-	Params::MarvelAIController_IsInArea Parms{};
-
-	Parms.AreaClassType = AreaClassType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsInView
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const class AActor*                     ToCheckTarget                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsInView(const class AActor* ToCheckTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsInView");
-
-	Params::MarvelAIController_IsInView Parms{};
-
-	Parms.ToCheckTarget = ToCheckTarget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsTakingCure
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsTakingCure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsTakingCure");
-
-	Params::MarvelAIController_IsTakingCure Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_ClearAllFocus
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::K2_ClearAllFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_ClearAllFocus");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_ClearFocusByPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::K2_ClearFocusByPriority(uint8 FocusPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_ClearFocusByPriority");
-
-	Params::MarvelAIController_K2_ClearFocusByPriority Parms{};
-
-	Parms.FocusPriority = FocusPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_GetAIDifficultyConfig
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// struct FMarvelAIDifficultyTable*        OutDifficultyConfig                                    (Parm, OutParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::K2_GetAIDifficultyConfig(struct FMarvelAIDifficultyTable* OutDifficultyConfig)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_GetAIDifficultyConfig");
-
-	Params::MarvelAIController_K2_GetAIDifficultyConfig Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutDifficultyConfig != nullptr)
-		*OutDifficultyConfig = std::move(Parms.OutDifficultyConfig);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_GetPriorityFactorInPerceptionComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AMarvelAIController::K2_GetPriorityFactorInPerceptionComp(class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_GetPriorityFactorInPerceptionComp");
-
-	Params::MarvelAIController_K2_GetPriorityFactorInPerceptionComp Parms{};
-
-	Parms.TargetActor = TargetActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_PauseCurrentMove
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::K2_PauseCurrentMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_PauseCurrentMove");
-
-	Params::MarvelAIController_K2_PauseCurrentMove Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_ResumeCurrentMove
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::K2_ResumeCurrentMove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_ResumeCurrentMove");
-
-	Params::MarvelAIController_K2_ResumeCurrentMove Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_SetFocalPointByPriority
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   NewFocus                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::K2_SetFocalPointByPriority(const struct FVector& NewFocus, uint8 FocusPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_SetFocalPointByPriority");
-
-	Params::MarvelAIController_K2_SetFocalPointByPriority Parms{};
-
-	Parms.NewFocus = std::move(NewFocus);
-	Parms.FocusPriority = FocusPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_SetFocusByPriority
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           NewFocus                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::K2_SetFocusByPriority(class AActor* NewFocus, uint8 FocusPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_SetFocusByPriority");
-
-	Params::MarvelAIController_K2_SetFocusByPriority Parms{};
-
-	Parms.NewFocus = NewFocus;
-	Parms.FocusPriority = FocusPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_SetFocusByTarget
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FMarvelAITarget&           Target                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::K2_SetFocusByTarget(const struct FMarvelAITarget& Target, uint8 FocusPriority)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_SetFocusByTarget");
-
-	Params::MarvelAIController_K2_SetFocusByTarget Parms{};
-
-	Parms.Target = std::move(Target);
-	Parms.FocusPriority = FocusPriority;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_StopMovement
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::K2_StopMovement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_StopMovement");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.MarkAsTrainingTarget
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::MarkAsTrainingTarget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "MarkAsTrainingTarget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnAIChangeHero
-// (Final, Native, Protected)
-// Parameters:
-// class APawn*                            NewPawn                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnAIChangeHero(class APawn* NewPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnAIChangeHero");
-
-	Params::MarvelAIController_OnAIChangeHero Parms{};
-
-	Parms.NewPawn = NewPawn;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnEnterArea
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AAIActionArea*                    NewArea                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnEnterArea(class AAIActionArea* NewArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnEnterArea");
-
-	Params::MarvelAIController_OnEnterArea Parms{};
-
-	Parms.NewArea = NewArea;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnExitArea
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AAIActionArea*                    OldArea                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnExitArea(class AAIActionArea* OldArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnExitArea");
-
-	Params::MarvelAIController_OnExitArea Parms{};
-
-	Parms.OldArea = OldArea;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnPawnDeath
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnPawnDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnPawnDeath");
-
-	Params::MarvelAIController_OnPawnDeath Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnPawnReborn
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FCharacterRebornParam&     RebornParam                                            (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnPawnReborn(class AActor* InSourceActor, const struct FCharacterRebornParam& RebornParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnPawnReborn");
-
-	Params::MarvelAIController_OnPawnReborn Parms{};
-
-	Parms.InSourceActor = InSourceActor;
-	Parms.RebornParam = std::move(RebornParam);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnPawnTakeDamage
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnPawnTakeDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnPawnTakeDamage");
-
-	Params::MarvelAIController_OnPawnTakeDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnPostReplaceController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AController*                      old_controller                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnPostReplaceController(class AController* old_controller)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnPostReplaceController");
-
-	Params::MarvelAIController_OnPostReplaceController Parms{};
-
-	Parms.old_controller = old_controller;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnPreReplaceController
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AController*                      new_controller                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnPreReplaceController(class AController* new_controller)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnPreReplaceController");
-
-	Params::MarvelAIController_OnPreReplaceController Parms{};
-
-	Parms.new_controller = new_controller;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnResetBTFocusTarget
-// (Final, Native, Public)
-
-void AMarvelAIController::OnResetBTFocusTarget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnResetBTFocusTarget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnSculptChanged
-// (Final, Native, Protected)
-// Parameters:
-// int32                                   SculptId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OnSculptChanged(int32 SculptId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnSculptChanged");
-
-	Params::MarvelAIController_OnSculptChanged Parms{};
-
-	Parms.SculptId = SculptId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OnSVONMoveRequestFailed
-// (Final, Native, Public)
-
-void AMarvelAIController::OnSVONMoveRequestFailed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OnSVONMoveRequestFailed");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.OverrideJumpAbility
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   NewJumpAbilityID                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OverrideJumpAbility(int32 NewJumpAbilityID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OverrideJumpAbility");
-
-	Params::MarvelAIController_OverrideJumpAbility Parms{};
-
-	Parms.NewJumpAbilityID = NewJumpAbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.ReceiveLoadHeroConfig
-// (Event, Protected, BlueprintEvent)
-
-void AMarvelAIController::ReceiveLoadHeroConfig()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ReceiveLoadHeroConfig");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MarvelAI.MarvelAIController.ReceiveRecommendedHeroUpdate
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NewRecommendedHeroID                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::ReceiveRecommendedHeroUpdate(int32 NewRecommendedHeroID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ReceiveRecommendedHeroUpdate");
-
-	Params::MarvelAIController_ReceiveRecommendedHeroUpdate Parms{};
-
-	Parms.NewRecommendedHeroID = NewRecommendedHeroID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MarvelAI.MarvelAIController.ResetBehaviorTree
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBehaviorTree*                    BTAsset                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::ResetBehaviorTree(class UBehaviorTree* BTAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ResetBehaviorTree");
-
-	Params::MarvelAIController_ResetBehaviorTree Parms{};
-
-	Parms.BTAsset = BTAsset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.ResetFocalOffsetOnActor
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::ResetFocalOffsetOnActor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ResetFocalOffsetOnActor");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.ResetTreatApplyToStatic
-// (Final, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::ResetTreatApplyToStatic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "ResetTreatApplyToStatic");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SelectChangeHero
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    NeedChangeRole                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    AllowRepeatHero                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::SelectChangeHero(bool NeedChangeRole, bool AllowRepeatHero)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SelectChangeHero");
-
-	Params::MarvelAIController_SelectChangeHero Parms{};
-
-	Parms.NeedChangeRole = NeedChangeRole;
-	Parms.AllowRepeatHero = AllowRepeatHero;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetAbilityTacticClass
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UClass*                           AbilityTacticClass_0                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetAbilityTacticClass(class UClass* AbilityTacticClass_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetAbilityTacticClass");
-
-	Params::MarvelAIController_SetAbilityTacticClass Parms{};
-
-	Parms.AbilityTacticClass_0 = AbilityTacticClass_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetAIAbilityServer
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetAIAbilityServer(int32 NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetAIAbilityServer");
-
-	Params::MarvelAIController_SetAIAbilityServer Parms{};
-
-	Parms.NewValue = NewValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetAIAnthropomorphic
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetAIAnthropomorphic(bool bEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetAIAnthropomorphic");
-
-	Params::MarvelAIController_SetAIAnthropomorphic Parms{};
-
-	Parms.bEnable = bEnable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetDynamicDifficultyEnabled
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    Enable                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetDynamicDifficultyEnabled(bool Enable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetDynamicDifficultyEnabled");
-
-	Params::MarvelAIController_SetDynamicDifficultyEnabled Parms{};
-
-	Parms.Enable = Enable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetEnableAIProcessInput
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    Enable                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetEnableAIProcessInput(bool Enable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetEnableAIProcessInput");
-
-	Params::MarvelAIController_SetEnableAIProcessInput Parms{};
-
-	Parms.Enable = Enable;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetEnergyFull
-// (Final, Exec, Native, Public, BlueprintCallable)
-
-void AMarvelAIController::SetEnergyFull()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetEnergyFull");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetFocusOffsetOnActor
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Offset                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsInLocalCoordinate                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetFocusOffsetOnActor(const struct FVector& Offset, bool IsInLocalCoordinate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetFocusOffsetOnActor");
-
-	Params::MarvelAIController_SetFocusOffsetOnActor Parms{};
-
-	Parms.Offset = std::move(Offset);
-	Parms.IsInLocalCoordinate = IsInLocalCoordinate;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetFocusSpeedFactor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const float                             NewFocusSpeedFactor                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetFocusSpeedFactor(const float NewFocusSpeedFactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetFocusSpeedFactor");
-
-	Params::MarvelAIController_SetFocusSpeedFactor Parms{};
-
-	Parms.NewFocusSpeedFactor = NewFocusSpeedFactor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetIsTestAI
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    NewIsTestAI                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetIsTestAI(bool NewIsTestAI)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetIsTestAI");
-
-	Params::MarvelAIController_SetIsTestAI Parms{};
-
-	Parms.NewIsTestAI = NewIsTestAI;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetSVONPathFindingMethod
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ESVONPathFindingMethod                  ModeMethod                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetSVONPathFindingMethod(ESVONPathFindingMethod ModeMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetSVONPathFindingMethod");
-
-	Params::MarvelAIController_SetSVONPathFindingMethod Parms{};
-
-	Parms.ModeMethod = ModeMethod;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetTestAttributeRatio
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   NewRatio                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::SetTestAttributeRatio(float NewRatio)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetTestAttributeRatio");
-
-	Params::MarvelAIController_SetTestAttributeRatio Parms{};
-
-	Parms.NewRatio = NewRatio;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetUsePreciseReachLogic
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    UsePrecise                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetUsePreciseReachLogic(bool UsePrecise)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetUsePreciseReachLogic");
-
-	Params::MarvelAIController_SetUsePreciseReachLogic Parms{};
-
-	Parms.UsePrecise = UsePrecise;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SvonMoveToLocation
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Dest                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   AcceptanceRadius                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bStopOnOverlap                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bUsePathfinding                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bProjectDestinationToNavigation                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bCanStrafe                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSubclassOf<class UNavigationQueryFilter>FilterClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bAllowPartialPath                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EPathFollowingRequestResult             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EPathFollowingRequestResult AMarvelAIController::SvonMoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SvonMoveToLocation");
-
-	Params::MarvelAIController_SvonMoveToLocation Parms{};
-
-	Parms.Dest = std::move(Dest);
-	Parms.AcceptanceRadius = AcceptanceRadius;
-	Parms.bStopOnOverlap = bStopOnOverlap;
-	Parms.bUsePathfinding = bUsePathfinding;
-	Parms.bProjectDestinationToNavigation = bProjectDestinationToNavigation;
-	Parms.bCanStrafe = bCanStrafe;
-	Parms.FilterClass = FilterClass;
-	Parms.bAllowPartialPath = bAllowPartialPath;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TriggerAbilityLocalInput
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bIsPressed                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::TriggerAbilityLocalInput(int32 InputID, int32 AbilityID, bool bIsPressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TriggerAbilityLocalInput");
-
-	Params::MarvelAIController_TriggerAbilityLocalInput Parms{};
-
-	Parms.InputID = InputID;
-	Parms.AbilityID = AbilityID;
-	Parms.bIsPressed = bIsPressed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.TriggerPawnAbilityInputBinding
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPressed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::TriggerPawnAbilityInputBinding(int32 InputID, int32 AbilityID, bool IsPressed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TriggerPawnAbilityInputBinding");
-
-	Params::MarvelAIController_TriggerPawnAbilityInputBinding Parms{};
-
-	Parms.InputID = InputID;
-	Parms.AbilityID = AbilityID;
-	Parms.IsPressed = IsPressed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.TriggerPawnLocalInputBind
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsConfirmed                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::TriggerPawnLocalInputBind(int32 InputID, bool IsConfirmed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TriggerPawnLocalInputBind");
-
-	Params::MarvelAIController_TriggerPawnLocalInputBind Parms{};
-
-	Parms.InputID = InputID;
-	Parms.IsConfirmed = IsConfirmed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryActivateAbilityWithID
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    UseInputPressed                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FGameplayAbilitySpecHandle*      OutHandle                                              (Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryActivateAbilityWithID(int32 AbilityID, bool UseInputPressed, struct FGameplayAbilitySpecHandle* OutHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryActivateAbilityWithID");
-
-	Params::MarvelAIController_TryActivateAbilityWithID Parms{};
-
-	Parms.AbilityID = AbilityID;
-	Parms.UseInputPressed = UseInputPressed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutHandle != nullptr)
-		*OutHandle = std::move(Parms.OutHandle);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryEndAbility
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const struct FGameplayAbilitySpecHandle&SpecHandle                                             (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    UseInputRelease                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryEndAbility(const struct FGameplayAbilitySpecHandle& SpecHandle, bool UseInputRelease)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryEndAbility");
-
-	Params::MarvelAIController_TryEndAbility Parms{};
-
-	Parms.SpecHandle = std::move(SpecHandle);
-	Parms.UseInputRelease = UseInputRelease;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryGetActionArea
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// TSubclassOf<class AAIActionArea>        AreaClassType                                          (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AAIActionArea**                   OutArea                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryGetActionArea(TSubclassOf<class AAIActionArea> AreaClassType, class AAIActionArea** OutArea)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryGetActionArea");
-
-	Params::MarvelAIController_TryGetActionArea Parms{};
-
-	Parms.AreaClassType = AreaClassType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutArea != nullptr)
-		*OutArea = Parms.OutArea;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.UpdateAIDifficulty
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EAIDifficultyMode                       DifficultyMode                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   DifficultyLevel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::UpdateAIDifficulty(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "UpdateAIDifficulty");
-
-	Params::MarvelAIController_UpdateAIDifficulty Parms{};
-
-	Parms.DifficultyMode = DifficultyMode;
-	Parms.DifficultyLevel = DifficultyLevel;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.UpdateAILevel
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::UpdateAILevel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "UpdateAILevel");
-
-	Params::MarvelAIController_UpdateAILevel Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.UpdateMoveBlockFlag
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bAdd                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::UpdateMoveBlockFlag(bool bAdd)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "UpdateMoveBlockFlag");
-
-	Params::MarvelAIController_UpdateMoveBlockFlag Parms{};
-
-	Parms.bAdd = bAdd;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.UpdatePreviewHeroID
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                                   NewHeroID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    Immediate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::UpdatePreviewHeroID(int32 NewHeroID, bool Immediate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "UpdatePreviewHeroID");
-
-	Params::MarvelAIController_UpdatePreviewHeroID Parms{};
-
-	Parms.NewHeroID = NewHeroID;
-	Parms.Immediate = Immediate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MarvelAI.MarvelAIController.UpdateRecommendedHeroID
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::UpdateRecommendedHeroID(int32 HeroID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "UpdateRecommendedHeroID");
-
-	Params::MarvelAIController_UpdateRecommendedHeroID Parms{};
-
-	Parms.HeroID = HeroID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.CanChangeSelectedHero
-// (Final, Native, Protected, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool*                                   OutNeedChangeRole                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    OnlyCheckForLineup                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::CanChangeSelectedHero(bool* OutNeedChangeRole, bool OnlyCheckForLineup) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "CanChangeSelectedHero");
-
-	Params::MarvelAIController_CanChangeSelectedHero Parms{};
-
-	Parms.OnlyCheckForLineup = OnlyCheckForLineup;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutNeedChangeRole != nullptr)
-		*OutNeedChangeRole = Parms.OutNeedChangeRole;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetAIAbilityServer
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::GetAIAbilityServer() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetAIAbilityServer");
-
-	Params::MarvelAIController_GetAIAbilityServer Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetAIAnthropomorphic
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetAIAnthropomorphic() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetAIAnthropomorphic");
-
-	Params::MarvelAIController_GetAIAnthropomorphic Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetAIInfo
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UAIControllerInfo*                ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAIControllerInfo* AMarvelAIController::GetAIInfo() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetAIInfo");
-
-	Params::MarvelAIController_GetAIInfo Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetBehaviorTreeComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UMarvelBehaviorTreeComponent*     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelBehaviorTreeComponent* AMarvelAIController::GetBehaviorTreeComp() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetBehaviorTreeComp");
-
-	Params::MarvelAIController_GetBehaviorTreeComp Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetCurrentTreeName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString AMarvelAIController::GetCurrentTreeName() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetCurrentTreeName");
-
-	Params::MarvelAIController_GetCurrentTreeName Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetDamageFromActor
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AMarvelAIController::GetDamageFromActor(const class AActor* Actor) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetDamageFromActor");
-
-	Params::MarvelAIController_GetDamageFromActor Parms{};
-
-	Parms.Actor = Actor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetDynamicTreatApplyMagnitude
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   DynamicDifficultyFactor                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AMarvelAIController::GetDynamicTreatApplyMagnitude(float DynamicDifficultyFactor) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetDynamicTreatApplyMagnitude");
-
-	Params::MarvelAIController_GetDynamicTreatApplyMagnitude Parms{};
-
-	Parms.DynamicDifficultyFactor = DynamicDifficultyFactor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetEnableAIProcessInput
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetEnableAIProcessInput() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetEnableAIProcessInput");
-
-	Params::MarvelAIController_GetEnableAIProcessInput Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetHasMeetEnemy
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetHasMeetEnemy() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetHasMeetEnemy");
-
-	Params::MarvelAIController_GetHasMeetEnemy Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetHeroBTConfig
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FMarvelHeroBehaviorTreeTable*    OutHeroBTConfig                                        (Parm, OutParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetHeroBTConfig(struct FMarvelHeroBehaviorTreeTable* OutHeroBTConfig) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetHeroBTConfig");
-
-	Params::MarvelAIController_GetHeroBTConfig Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutHeroBTConfig != nullptr)
-		*OutHeroBTConfig = std::move(Parms.OutHeroBTConfig);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetHeroID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::GetHeroID() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetHeroID");
-
-	Params::MarvelAIController_GetHeroID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetIsTestAI
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetIsTestAI() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetIsTestAI");
-
-	Params::MarvelAIController_GetIsTestAI Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetMarvelAIPerceptionComp
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UMarvelAIPerceptionComponent*     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelAIPerceptionComponent* AMarvelAIController::GetMarvelAIPerceptionComp() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetMarvelAIPerceptionComp");
-
-	Params::MarvelAIController_GetMarvelAIPerceptionComp Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetPawnAbilityByID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelGameplayAbility* AMarvelAIController::GetPawnAbilityByID(int32 AbilityID) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetPawnAbilityByID");
-
-	Params::MarvelAIController_GetPawnAbilityByID Parms{};
-
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetPawnAbilityIdByInputBind
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const EAbilityInputBinds                InputBind                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::GetPawnAbilityIdByInputBind(const EAbilityInputBinds InputBind) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetPawnAbilityIdByInputBind");
-
-	Params::MarvelAIController_GetPawnAbilityIdByInputBind Parms{};
-
-	Parms.InputBind = InputBind;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetPawnHeroRole
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EHeroRole                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EHeroRole AMarvelAIController::GetPawnHeroRole() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetPawnHeroRole");
-
-	Params::MarvelAIController_GetPawnHeroRole Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetRotateSpeed
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AMarvelAIController::GetRotateSpeed() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetRotateSpeed");
-
-	Params::MarvelAIController_GetRotateSpeed Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetTeamID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::GetTeamID() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetTeamID");
-
-	Params::MarvelAIController_GetTeamID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetTestAttributeRatio
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AMarvelAIController::GetTestAttributeRatio() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetTestAttributeRatio");
-
-	Params::MarvelAIController_GetTestAttributeRatio Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetTestAttributeValues
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TMap<class FString, float>*             OutAttributesList                                      (Parm, OutParm, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::GetTestAttributeValues(TMap<class FString, float>* OutAttributesList) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetTestAttributeValues");
-
-	Params::MarvelAIController_GetTestAttributeValues Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutAttributesList != nullptr)
-		*OutAttributesList = std::move(Parms.OutAttributesList);
-}
-
-
-// Function MarvelAI.MarvelAIController.GetUID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 AMarvelAIController::GetUID() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetUID");
-
-	Params::MarvelAIController_GetUID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.GetUsePreciseReachLogic
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::GetUsePreciseReachLogic() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "GetUsePreciseReachLogic");
-
-	Params::MarvelAIController_GetUsePreciseReachLogic Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsAlive
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsAlive() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsAlive");
-
-	Params::MarvelAIController_IsAlive Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsAlreadyRequestAsyncPathFinding
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsAlreadyRequestAsyncPathFinding() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsAlreadyRequestAsyncPathFinding");
-
-	Params::MarvelAIController_IsAlreadyRequestAsyncPathFinding Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsAutoChangeHeroByAILab
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsAutoChangeHeroByAILab() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsAutoChangeHeroByAILab");
-
-	Params::MarvelAIController_IsAutoChangeHeroByAILab Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsDynamicDifficultyEnabled
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsDynamicDifficultyEnabled() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsDynamicDifficultyEnabled");
-
-	Params::MarvelAIController_IsDynamicDifficultyEnabled Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsMoveBlocked
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsMoveBlocked() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsMoveBlocked");
-
-	Params::MarvelAIController_IsMoveBlocked Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsTakingDamage
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsTakingDamage() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsTakingDamage");
-
-	Params::MarvelAIController_IsTakingDamage Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsTakingDamageByTarget
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const class AActor*                     ToCheckTarget                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsTakingDamageByTarget(const class AActor* ToCheckTarget) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsTakingDamageByTarget");
-
-	Params::MarvelAIController_IsTakingDamageByTarget Parms{};
-
-	Parms.ToCheckTarget = ToCheckTarget;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.IsTrainingTarget
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::IsTrainingTarget() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "IsTrainingTarget");
-
-	Params::MarvelAIController_IsTrainingTarget Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_GetCurrentFocusAsAITarget
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FMarvelAITarget*                 OutTarget                                              (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::K2_GetCurrentFocusAsAITarget(struct FMarvelAITarget* OutTarget) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_GetCurrentFocusAsAITarget");
-
-	Params::MarvelAIController_K2_GetCurrentFocusAsAITarget Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutTarget != nullptr)
-		*OutTarget = std::move(Parms.OutTarget);
-}
-
-
-// Function MarvelAI.MarvelAIController.K2_GetHeroBattleConfig
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FAIBattleConfig*                 OutBattleConfig                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::K2_GetHeroBattleConfig(struct FAIBattleConfig* OutBattleConfig) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "K2_GetHeroBattleConfig");
-
-	Params::MarvelAIController_K2_GetHeroBattleConfig Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutBattleConfig != nullptr)
-		*OutBattleConfig = std::move(Parms.OutBattleConfig);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.OverrideSightRadius
-// (Final, Native, Public, BlueprintCallable, Const)
-// Parameters:
-// const float                             NewRadius                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::OverrideSightRadius(const float NewRadius) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "OverrideSightRadius");
-
-	Params::MarvelAIController_OverrideSightRadius Parms{};
-
-	Parms.NewRadius = NewRadius;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.SetUsageGroupTags
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const struct FGameplayTagContainer&     NewTags                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::SetUsageGroupTags(const struct FGameplayTagContainer& NewTags) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "SetUsageGroupTags");
-
-	Params::MarvelAIController_SetUsageGroupTags Parms{};
-
-	Parms.NewTags = std::move(NewTags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.StoreAutoChangeHeroDebugInfo
-// (Final, Native, Protected, BlueprintCallable, Const)
-// Parameters:
-// int32                                   UID                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIChangeHeroReason                     ChangeReason                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ChangeResult                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    FailedReason                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Curve_Energy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ChangeCD                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Curve_KD                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AMarvelAIController::StoreAutoChangeHeroDebugInfo(int32 UID, EAIChangeHeroReason ChangeReason, bool ChangeResult, const class FString& FailedReason, float Curve_Energy, int32 ChangeCD, float Curve_KD) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "StoreAutoChangeHeroDebugInfo");
-
-	Params::MarvelAIController_StoreAutoChangeHeroDebugInfo Parms{};
-
-	Parms.UID = UID;
-	Parms.ChangeReason = ChangeReason;
-	Parms.ChangeResult = ChangeResult;
-	Parms.FailedReason = std::move(FailedReason);
-	Parms.Curve_Energy = Curve_Energy;
-	Parms.ChangeCD = ChangeCD;
-	Parms.Curve_KD = Curve_KD;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryActivatePawnAbilityByID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryActivatePawnAbilityByID(int32 AbilityID) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnAbilityByID");
-
-	Params::MarvelAIController_TryActivatePawnAbilityByID Parms{};
-
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryActivatePawnAbilityByInputBind
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EAbilityInputBinds                      InputBind                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryActivatePawnAbilityByInputBind(EAbilityInputBinds InputBind) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnAbilityByInputBind");
-
-	Params::MarvelAIController_TryActivatePawnAbilityByInputBind Parms{};
-
-	Parms.InputBind = InputBind;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryActivatePawnNormalJump
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryActivatePawnNormalJump() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnNormalJump");
-
-	Params::MarvelAIController_TryActivatePawnNormalJump Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIController.TryCancelPawnAbilityByID
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool AMarvelAIController::TryCancelPawnAbilityByID(int32 AbilityID) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIController", "TryCancelPawnAbilityByID");
-
-	Params::MarvelAIController_TryCancelPawnAbilityByID Parms{};
-
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.GetBoolValue
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIDataProviderBoolValue&  InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIDataProvider::GetBoolValue(const struct FAIDataProviderBoolValue& InProvider, const class UObject* Owner, int32 RequestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetBoolValue");
-
-	Params::MarvelAIDataProvider_GetBoolValue Parms{};
-
-	Parms.InProvider = std::move(InProvider);
-	Parms.Owner = Owner;
-	Parms.RequestId = RequestId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.GetFloatValue
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIDataProviderFloatValue& InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UMarvelAIDataProvider::GetFloatValue(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner, int32 RequestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetFloatValue");
-
-	Params::MarvelAIDataProvider_GetFloatValue Parms{};
-
-	Parms.InProvider = std::move(InProvider);
-	Parms.Owner = Owner;
-	Parms.RequestId = RequestId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.GetFloatValue_Blueprint
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIDataProviderFloatValue& InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UMarvelAIDataProvider::GetFloatValue_Blueprint(const struct FAIDataProviderFloatValue& InProvider, const class UObject* Owner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetFloatValue_Blueprint");
-
-	Params::MarvelAIDataProvider_GetFloatValue_Blueprint Parms{};
-
-	Parms.InProvider = std::move(InProvider);
-	Parms.Owner = Owner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.GetIntValue
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIDataProviderIntValue&   InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UMarvelAIDataProvider::GetIntValue(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner, int32 RequestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetIntValue");
-
-	Params::MarvelAIDataProvider_GetIntValue Parms{};
-
-	Parms.InProvider = std::move(InProvider);
-	Parms.Owner = Owner;
-	Parms.RequestId = RequestId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.GetIntValue_Blueprint
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// const struct FAIDataProviderIntValue&   InProvider                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UMarvelAIDataProvider::GetIntValue_Blueprint(const struct FAIDataProviderIntValue& InProvider, const class UObject* Owner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIDataProvider", "GetIntValue_Blueprint");
-
-	Params::MarvelAIDataProvider_GetIntValue_Blueprint Parms{};
-
-	Parms.InProvider = std::move(InProvider);
-	Parms.Owner = Owner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider.SetAllValue
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// float                                   NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIDataProvider::SetAllValue(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIDataProvider", "SetAllValue");
-
-	Params::MarvelAIDataProvider_SetAllValue Parms{};
-
-	Parms.NewValue = NewValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIDataProvider_PyBase.PyBindData
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIDataProvider_PyBase::PyBindData(const class UObject* Owner, int32 RequestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIDataProvider_PyBase", "PyBindData");
-
-	Params::MarvelAIDataProvider_PyBase_PyBindData Parms{};
-
-	Parms.Owner = Owner;
-	Parms.RequestId = RequestId;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.AIDifficultyTableHelper.GetAttributeValueForHero
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAIDifficultyAttributeConfig&AttributeConfig                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AMarvelBaseCharacter*             MarvelHero                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAIDifficultyTableHelper::GetAttributeValueForHero(const struct FAIDifficultyAttributeConfig& AttributeConfig, class AMarvelBaseCharacter* MarvelHero)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIDifficultyTableHelper", "GetAttributeValueForHero");
-
-	Params::AIDifficultyTableHelper_GetAttributeValueForHero Parms{};
-
-	Parms.AttributeConfig = std::move(AttributeConfig);
-	Parms.MarvelHero = MarvelHero;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetAIGlobalDataSubsystem
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelAIGlobalDataSubsystem*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelAIGlobalDataSubsystem* UMarvelAIGlobalDataSubsystem::GetAIGlobalDataSubsystem(const class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAIGlobalDataSubsystem", "GetAIGlobalDataSubsystem");
-
-	Params::MarvelAIGlobalDataSubsystem_GetAIGlobalDataSubsystem Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.CanSummonerBeSense
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const int32                             SummonerID                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIGlobalDataSubsystem::CanSummonerBeSense(const int32 SummonerID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "CanSummonerBeSense");
-
-	Params::MarvelAIGlobalDataSubsystem_CanSummonerBeSense Parms{};
-
-	Parms.SummonerID = SummonerID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.CheckExistLevelStaticActor
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIGlobalDataSubsystem::CheckExistLevelStaticActor(TSubclassOf<class AActor> ActorClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "CheckExistLevelStaticActor");
-
-	Params::MarvelAIGlobalDataSubsystem_CheckExistLevelStaticActor Parms{};
-
-	Parms.ActorClass = ActorClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetActorUID
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UMarvelAIGlobalDataSubsystem::GetActorUID(const class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetActorUID");
-
-	Params::MarvelAIGlobalDataSubsystem_GetActorUID Parms{};
-
-	Parms.Actor = Actor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetLevelStaticActors
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UMarvelAIGlobalDataSubsystem::GetLevelStaticActors(TSubclassOf<class AActor> ActorClass, TArray<class AActor*>* OutActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetLevelStaticActors");
-
-	Params::MarvelAIGlobalDataSubsystem_GetLevelStaticActors Parms{};
-
-	Parms.ActorClass = ActorClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutActors != nullptr)
-		*OutActors = std::move(Parms.OutActors);
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetLevelStaticActorsWithTag
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FName&                      Tag                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UMarvelAIGlobalDataSubsystem::GetLevelStaticActorsWithTag(TSubclassOf<class AActor> ActorClass, const class FName& Tag, TArray<class AActor*>* OutActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetLevelStaticActorsWithTag");
-
-	Params::MarvelAIGlobalDataSubsystem_GetLevelStaticActorsWithTag Parms{};
-
-	Parms.ActorClass = ActorClass;
-	Parms.Tag = Tag;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutActors != nullptr)
-		*OutActors = std::move(Parms.OutActors);
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetNearestPortal
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   QueryLocation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const double                            LimitDistance                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APortalViewActor_Level*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class APortalViewActor_Level* UMarvelAIGlobalDataSubsystem::GetNearestPortal(const struct FVector& QueryLocation, const double LimitDistance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetNearestPortal");
-
-	Params::MarvelAIGlobalDataSubsystem_GetNearestPortal Parms{};
-
-	Parms.QueryLocation = std::move(QueryLocation);
-	Parms.LimitDistance = LimitDistance;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetPositionProgress
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class AMarvelAIController*        QueryAI                                                (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class AMarvelBaseCharacter*       TargetChar                                             (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float*                                  PositionProgress                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIGlobalDataSubsystem::GetPositionProgress(const class AMarvelAIController* QueryAI, const class AMarvelBaseCharacter* TargetChar, float* PositionProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetPositionProgress");
-
-	Params::MarvelAIGlobalDataSubsystem_GetPositionProgress Parms{};
-
-	Parms.QueryAI = QueryAI;
-	Parms.TargetChar = TargetChar;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PositionProgress != nullptr)
-		*PositionProgress = Parms.PositionProgress;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.IsAIUsableHero_Static
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIGlobalDataSubsystem::IsAIUsableHero_Static(const class UObject* WorldContextObject, int32 HeroID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "IsAIUsableHero_Static");
-
-	Params::MarvelAIGlobalDataSubsystem_IsAIUsableHero_Static Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.HeroID = HeroID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIGlobalDataSubsystem.OnLevelPrepareStart
-// (Final, Native, Public)
-
-void UMarvelAIGlobalDataSubsystem::OnLevelPrepareStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "OnLevelPrepareStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -12837,9 +3571,10 @@ class UDataTable* UMarvelAILibrary::GetAIHeroTable()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   SculptID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const TArray<struct FAIHeroTagLogicConfig>ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 
-const TArray<struct FAIHeroTagLogicConfig> UMarvelAILibrary::GetAIHeroTagLogics(int32 HeroID)
+const TArray<struct FAIHeroTagLogicConfig> UMarvelAILibrary::GetAIHeroTagLogics(int32 HeroID, int32 SculptID)
 {
 	static class UFunction* Func = nullptr;
 
@@ -12849,6 +3584,7 @@ const TArray<struct FAIHeroTagLogicConfig> UMarvelAILibrary::GetAIHeroTagLogics(
 	Params::MarvelAILibrary_GetAIHeroTagLogics Parms{};
 
 	Parms.HeroID = HeroID;
+	Parms.SculptID = SculptID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -15043,164 +5779,22 @@ void UMarvelAILibrary::VlogPathPoints(const class AActor* LogOwner, const TArray
 }
 
 
-// Function MarvelAI.MarvelAIPerceptionComponent.K2_ConfigureSense
-// (Final, Native, Public, BlueprintCallable)
+// Function MarvelAI.AIBattleAreaFilterBase.CheckCouldPass
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAISenseConfig*                   SenseConfig                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIPerceptionComponent::K2_ConfigureSense(class UAISenseConfig* SenseConfig)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_ConfigureSense");
-
-	Params::MarvelAIPerceptionComponent_K2_ConfigureSense Parms{};
-
-	Parms.SenseConfig = SenseConfig;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIPerceptionComponent.K2_NotifyTargetToTeam
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NotifyRange                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NotifyStrength                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIPerceptionComponent::K2_NotifyTargetToTeam(class AActor* TargetActor, float NotifyRange, float NotifyStrength)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_NotifyTargetToTeam");
-
-	Params::MarvelAIPerceptionComponent_K2_NotifyTargetToTeam Parms{};
-
-	Parms.TargetActor = TargetActor;
-	Parms.NotifyRange = NotifyRange;
-	Parms.NotifyStrength = NotifyStrength;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIPerceptionComponent.NotifyEnemyTarget
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NotifyRange                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelAIPerceptionComponent::NotifyEnemyTarget(class AActor* TargetActor, float NotifyRange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "NotifyEnemyTarget");
-
-	Params::MarvelAIPerceptionComponent_NotifyEnemyTarget Parms{};
-
-	Parms.TargetActor = TargetActor;
-	Parms.NotifyRange = NotifyRange;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelAIPerceptionComponent.GetPerceivedActors
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TSubclassOf<class UAISense>             SenseClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UMarvelAIPerceptionComponent::GetPerceivedActors(TSubclassOf<class UAISense> SenseClass, TArray<class AActor*>* OutActors) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "GetPerceivedActors");
-
-	Params::MarvelAIPerceptionComponent_GetPerceivedActors Parms{};
-
-	Parms.SenseClass = SenseClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutActors != nullptr)
-		*OutActors = std::move(Parms.OutActors);
-}
-
-
-// Function MarvelAI.MarvelAIPerceptionComponent.GetTargetTeleportTransform
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const int32                             TargetUID                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FTransform*                      OutTeleportTransform                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMarvelAIPerceptionComponent::GetTargetTeleportTransform(const int32 TargetUID, struct FTransform* OutTeleportTransform) const
+bool UAIBattleAreaFilterBase::CheckCouldPass(class AAIBattleAreaBase* BattleArea)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "GetTargetTeleportTransform");
+		Func = Class->GetFunction("AIBattleAreaFilterBase", "CheckCouldPass");
 
-	Params::MarvelAIPerceptionComponent_GetTargetTeleportTransform Parms{};
+	Params::AIBattleAreaFilterBase_CheckCouldPass Parms{};
 
-	Parms.TargetUID = TargetUID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutTeleportTransform != nullptr)
-		*OutTeleportTransform = std::move(Parms.OutTeleportTransform);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelAIPerceptionComponent.IsCurrentlyInSight
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const class AActor*                     TargetToCheck                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelAIPerceptionComponent::IsCurrentlyInSight(const class AActor* TargetToCheck) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "IsCurrentlyInSight");
-
-	Params::MarvelAIPerceptionComponent_IsCurrentlyInSight Parms{};
-
-	Parms.TargetToCheck = TargetToCheck;
+	Parms.BattleArea = BattleArea;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -15213,20 +5807,284 @@ bool UMarvelAIPerceptionComponent::IsCurrentlyInSight(const class AActor* Target
 }
 
 
-// Function MarvelAI.MarvelAIPerceptionComponent.K2_GetPriorityFactor
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function MarvelAI.MarvelAIBattleAreaManager.FindBattleArea
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FName&                      AreaName                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AAIBattleAreaBase*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AAIBattleAreaBase* UMarvelAIBattleAreaManager::FindBattleArea(const class FName& AreaName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIBattleAreaManager", "FindBattleArea");
+
+	Params::MarvelAIBattleAreaManager_FindBattleArea Parms{};
+
+	Parms.AreaName = AreaName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIBattleAreaManager.GetCurrentBattleArea
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBattleAreaType                         InBattleAreaType                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AAIBattleAreaBase*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AAIBattleAreaBase* UMarvelAIBattleAreaManager::GetCurrentBattleArea(class AActor* TargetActor, EBattleAreaType InBattleAreaType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIBattleAreaManager", "GetCurrentBattleArea");
+
+	Params::MarvelAIBattleAreaManager_GetCurrentBattleArea Parms{};
+
+	Parms.TargetActor = TargetActor;
+	Parms.InBattleAreaType = InBattleAreaType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIBattleAreaManager.Init
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIBattleAreaManager::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIBattleAreaManager", "Init");
+
+	Params::MarvelAIBattleAreaManager_Init Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIBattleAreaManager.RegisterBattleArea
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIBattleAreaManager::RegisterBattleArea(class AAIBattleAreaBase* BattleArea)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIBattleAreaManager", "RegisterBattleArea");
+
+	Params::MarvelAIBattleAreaManager_RegisterBattleArea Parms{};
+
+	Parms.BattleArea = BattleArea;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIBattleAreaManager.UnRegisterBattleArea
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AAIBattleAreaBase*                BattleArea                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIBattleAreaManager::UnRegisterBattleArea(class AAIBattleAreaBase* BattleArea)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIBattleAreaManager", "UnRegisterBattleArea");
+
+	Params::MarvelAIBattleAreaManager_UnRegisterBattleArea Parms{};
+
+	Parms.BattleArea = BattleArea;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AICliffEdgeNote.GetLookAtTargetLocalPosition
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector AAICliffEdgeNote::GetLookAtTargetLocalPosition() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AICliffEdgeNote", "GetLookAtTargetLocalPosition");
+
+	Params::AICliffEdgeNote_GetLookAtTargetLocalPosition Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AICliffEdgeNote.GetLookAtTargetPosition
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector AAICliffEdgeNote::GetLookAtTargetPosition() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AICliffEdgeNote", "GetLookAtTargetPosition");
+
+	Params::AICliffEdgeNote_GetLookAtTargetPosition Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.AddExtraConfig
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAIAbilityActivationExtraConfig*  NewConfig                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::AddExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "AddExtraConfig");
+
+	Params::AIControllerInfo_AddExtraConfig Parms{};
+
+	Parms.NewConfig = NewConfig;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.AddTag
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::AddTag(const struct FGameplayTag& Tag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "AddTag");
+
+	Params::AIControllerInfo_AddTag Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.ApplyTagContainer
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::ApplyTagContainer(const struct FGameplayTagContainer& TagContainer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "ApplyTagContainer");
+
+	Params::AIControllerInfo_ApplyTagContainer Parms{};
+
+	Parms.TagContainer = std::move(TagContainer);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.CheckIsConcentratingTarget
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UMarvelAIPerceptionComponent::K2_GetPriorityFactor(class AActor* Target) const
+bool UAIControllerInfo::CheckIsConcentratingTarget(class AActor* Target)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_GetPriorityFactor");
+		Func = Class->GetFunction("AIControllerInfo", "CheckIsConcentratingTarget");
 
-	Params::MarvelAIPerceptionComponent_K2_GetPriorityFactor Parms{};
+	Params::AIControllerInfo_CheckIsConcentratingTarget Parms{};
 
 	Parms.Target = Target;
 
@@ -15241,38 +6099,650 @@ float UMarvelAIPerceptionComponent::K2_GetPriorityFactor(class AActor* Target) c
 }
 
 
-// Function MarvelAI.MarvelAISense_Damage.MarvelReportDamageEvent
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function MarvelAI.AIControllerInfo.CheckTeamActionIsExpired
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           DamagedActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Instigator                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DamageAmount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   EventLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   HitLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ValidDuration                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UMarvelAISense_Damage::MarvelReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation)
+bool UAIControllerInfo::CheckTeamActionIsExpired(float ValidDuration)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelAISense_Damage", "MarvelReportDamageEvent");
+		Func = Class->GetFunction("AIControllerInfo", "CheckTeamActionIsExpired");
 
-	Params::MarvelAISense_Damage_MarvelReportDamageEvent Parms{};
+	Params::AIControllerInfo_CheckTeamActionIsExpired Parms{};
 
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.DamagedActor = DamagedActor;
-	Parms.Instigator = Instigator;
-	Parms.DamageAmount = DamageAmount;
-	Parms.EventLocation = std::move(EventLocation);
-	Parms.HitLocation = std::move(HitLocation);
+	Parms.ValidDuration = ValidDuration;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.Clear
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::Clear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "Clear");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.DeleteConcentratedTarget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::DeleteConcentratedTarget(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "DeleteConcentratedTarget");
+
+	Params::AIControllerInfo_DeleteConcentratedTarget Parms{};
+
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.GetExtraConfig
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAIAbilityActivationExtraConfig*  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAIAbilityActivationExtraConfig* UAIControllerInfo::GetExtraConfig(const class FString& ConfigName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "GetExtraConfig");
+
+	Params::AIControllerInfo_GetExtraConfig Parms{};
+
+	Parms.ConfigName = std::move(ConfigName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.HasExtraConfig
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::HasExtraConfig(const class FString& ConfigName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "HasExtraConfig");
+
+	Params::AIControllerInfo_HasExtraConfig Parms{};
+
+	Parms.ConfigName = std::move(ConfigName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.OnChangeHeroClear
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::OnChangeHeroClear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "OnChangeHeroClear");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.OverwriteExtraConfig
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAIAbilityActivationExtraConfig*  NewConfig                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::OverwriteExtraConfig(class UAIAbilityActivationExtraConfig* NewConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "OverwriteExtraConfig");
+
+	Params::AIControllerInfo_OverwriteExtraConfig Parms{};
+
+	Parms.NewConfig = NewConfig;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.RemoveExtraConfig
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    ConfigName                                             (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::RemoveExtraConfig(const class FString& ConfigName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "RemoveExtraConfig");
+
+	Params::AIControllerInfo_RemoveExtraConfig Parms{};
+
+	Parms.ConfigName = std::move(ConfigName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.RemoveTag
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::RemoveTag(const struct FGameplayTag& Tag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "RemoveTag");
+
+	Params::AIControllerInfo_RemoveTag Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.RemoveTagContainer
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::RemoveTagContainer(const struct FGameplayTagContainer& TagContainer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "RemoveTagContainer");
+
+	Params::AIControllerInfo_RemoveTagContainer Parms{};
+
+	Parms.TagContainer = std::move(TagContainer);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.ResetAIDifficulty
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::ResetAIDifficulty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "ResetAIDifficulty");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.ResetViewInfo
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::ResetViewInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "ResetViewInfo");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.SetNewTeamAction
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EAITeamAction                           NewAction                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bNewIsActionFromSelf                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::SetNewTeamAction(EAITeamAction NewAction, bool bNewIsActionFromSelf)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "SetNewTeamAction");
+
+	Params::AIControllerInfo_SetNewTeamAction Parms{};
+
+	Parms.NewAction = NewAction;
+	Parms.bNewIsActionFromSelf = bNewIsActionFromSelf;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.TrySyncWaypointPathProgress
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FWayPointPath&             Target                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::TrySyncWaypointPathProgress(const struct FWayPointPath& Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "TrySyncWaypointPathProgress");
+
+	Params::AIControllerInfo_TrySyncWaypointPathProgress Parms{};
+
+	Parms.Target = std::move(Target);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.UpdateConcentratedTarget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIControllerInfo::UpdateConcentratedTarget(class AActor* Target, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "UpdateConcentratedTarget");
+
+	Params::AIControllerInfo_UpdateConcentratedTarget Parms{};
+
+	Parms.Target = Target;
+	Parms.DeltaTime = DeltaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.WayPointPathGoNext
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::WayPointPathGoNext()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "WayPointPathGoNext");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.WayPointPathUpdateProgress
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::WayPointPathUpdateProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "WayPointPathUpdateProgress");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.WayPointPathUpdateProgress_MOBA
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIControllerInfo::WayPointPathUpdateProgress_MOBA()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "WayPointPathUpdateProgress_MOBA");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIControllerInfo.CheckIsInBattle
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::CheckIsInBattle() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "CheckIsInBattle");
+
+	Params::AIControllerInfo_CheckIsInBattle Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.GetConcentratedTargets
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class AActor*>                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class AActor*> UAIControllerInfo::GetConcentratedTargets() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "GetConcentratedTargets");
+
+	Params::AIControllerInfo_GetConcentratedTargets Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.GetCurrentTargetHitRate
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAIHitRateTagContainer&    HitRateTagContainer                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAIControllerInfo::GetCurrentTargetHitRate(class AActor* Target, const struct FAIHitRateTagContainer& HitRateTagContainer) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "GetCurrentTargetHitRate");
+
+	Params::AIControllerInfo_GetCurrentTargetHitRate Parms{};
+
+	Parms.Target = Target;
+	Parms.HitRateTagContainer = std::move(HitRateTagContainer);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.GetTagCount
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAIControllerInfo::GetTagCount(const struct FGameplayTag& Tag) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "GetTagCount");
+
+	Params::AIControllerInfo_GetTagCount Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.HasAllMatchingTags
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::HasAllMatchingTags(const struct FGameplayTagContainer& TagContainer) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "HasAllMatchingTags");
+
+	Params::AIControllerInfo_HasAllMatchingTags Parms{};
+
+	Parms.TagContainer = std::move(TagContainer);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.HasAnyMatchingTags
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FGameplayTagContainer&     TagContainer                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::HasAnyMatchingTags(const struct FGameplayTagContainer& TagContainer) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "HasAnyMatchingTags");
+
+	Params::AIControllerInfo_HasAnyMatchingTags Parms{};
+
+	Parms.TagContainer = std::move(TagContainer);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.HasMatchingTag
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::HasMatchingTag(const struct FGameplayTag& Tag) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "HasMatchingTag");
+
+	Params::AIControllerInfo_HasMatchingTag Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIControllerInfo.IsSyncLeaderPath
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIControllerInfo::IsSyncLeaderPath() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIControllerInfo", "IsSyncLeaderPath");
+
+	Params::AIControllerInfo_IsSyncLeaderPath Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -15364,6 +6834,4455 @@ void UMarvelAISense_DangerousTarget::OnAbilityActivate(class AActor* Source, int
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AICustomServiceLogicBase.BeginService
+// (Event, Public, BlueprintEvent)
+
+void UAICustomServiceLogicBase::BeginService()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AICustomServiceLogicBase", "BeginService");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.AICustomServiceLogicBase.EndService
+// (Event, Public, BlueprintEvent)
+
+void UAICustomServiceLogicBase::EndService()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AICustomServiceLogicBase", "EndService");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.AICustomServiceLogicBase.TickService
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAICustomServiceLogicBase::TickService(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AICustomServiceLogicBase", "TickService");
+
+	Params::AICustomServiceLogicBase_TickService Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.GetSubsystem
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    ContextObject                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAIDebugSubSystem*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAIDebugSubSystem* UAIDebugSubSystem::GetSubsystem(const class UObject* ContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "GetSubsystem");
+
+	Params::AIDebugSubSystem_GetSubsystem Parms{};
+
+	Parms.ContextObject = ContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.SetGameplayDebugTarget
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WCO                                                    (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   TargetUID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIDebugSubSystem::SetGameplayDebugTarget(const class UObject* WCO, int32 TargetUID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "SetGameplayDebugTarget");
+
+	Params::AIDebugSubSystem_SetGameplayDebugTarget Parms{};
+
+	Parms.WCO = WCO;
+	Parms.TargetUID = TargetUID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.StoreMoveNodeMsg
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    NodeMsg                                                (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIDebugSubSystem::StoreMoveNodeMsg(class UObject* WCO, class AMarvelAIController* AIController, const class FString& NodeMsg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveNodeMsg");
+
+	Params::AIDebugSubSystem_StoreMoveNodeMsg Parms{};
+
+	Parms.WCO = WCO;
+	Parms.AIController = AIController;
+	Parms.NodeMsg = std::move(NodeMsg);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.StoreMoveResultDebugInfo
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayTag&              NodeTag                                                (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    MoveSuccess                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIDebugSubSystem::StoreMoveResultDebugInfo(class UObject* WCO, const struct FGameplayTag& NodeTag, bool MoveSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveResultDebugInfo");
+
+	Params::AIDebugSubSystem_StoreMoveResultDebugInfo Parms{};
+
+	Parms.WCO = WCO;
+	Parms.NodeTag = std::move(NodeTag);
+	Parms.MoveSuccess = MoveSuccess;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.StoreMoveTargetDebugInfo
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class AActor*                     TargetActor                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIDebugSubSystem::StoreMoveTargetDebugInfo(class UObject* WCO, class AMarvelAIController* AIController, const class AActor* TargetActor, const struct FVector& TargetLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "StoreMoveTargetDebugInfo");
+
+	Params::AIDebugSubSystem_StoreMoveTargetDebugInfo Parms{};
+
+	Parms.WCO = WCO;
+	Parms.AIController = AIController;
+	Parms.TargetActor = TargetActor;
+	Parms.TargetLocation = std::move(TargetLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDebugSubSystem.ToggleEQSDebugMode
+// (Final, Native, Static, Public, BlueprintCallable)
+
+void UAIDebugSubSystem::ToggleEQSDebugMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDebugSubSystem", "ToggleEQSDebugMode");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDifficultyExtendAsset.GetHitRateModifyFactor
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class AMarvelBaseCharacter*             Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAIHitRateTagContainer&    HitRateTagContainer                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAIDifficultyExtendAsset::GetHitRateModifyFactor(class AMarvelBaseCharacter* Source, const struct FAIHitRateTagContainer& HitRateTagContainer, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIDifficultyExtendAsset", "GetHitRateModifyFactor");
+
+	Params::AIDifficultyExtendAsset_GetHitRateModifyFactor Parms{};
+
+	Parms.Source = Source;
+	Parms.HitRateTagContainer = std::move(HitRateTagContainer);
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIDynamicDifficultyAsset.IsValid
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIDynamicDifficultyAsset::IsValid() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIDynamicDifficultyAsset", "IsValid");
+
+	Params::AIDynamicDifficultyAsset_IsValid Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.OnActorEnergyFull
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAIGameEventSubsystem::OnActorEnergyFull(class AActor* Source, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "OnActorEnergyFull");
+
+	Params::AIGameEventSubsystem_OnActorEnergyFull Parms{};
+
+	Parms.Source = Source;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+	Parms.ExtraData = std::move(ExtraData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.OnHealthChanged
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIGameEventSubsystem::OnHealthChanged(class AActor* Source, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "OnHealthChanged");
+
+	Params::AIGameEventSubsystem_OnHealthChanged Parms{};
+
+	Parms.Source = Source;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.OnPlayerKill
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// class AActor*                           Killer                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAIGameEventSubsystem::OnPlayerKill(class AActor* Killer, class AActor* Target, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "OnPlayerKill");
+
+	Params::AIGameEventSubsystem_OnPlayerKill Parms{};
+
+	Parms.Killer = Killer;
+	Parms.Target = Target;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+	Parms.ExtraData = std::move(ExtraData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.PreparingStartCallback
+// (Final, Native, Private)
+
+void UAIGameEventSubsystem::PreparingStartCallback()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "PreparingStartCallback");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.QuittingStartCallback
+// (Final, Native, Private)
+
+void UAIGameEventSubsystem::QuittingStartCallback()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "QuittingStartCallback");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.RegisterGameModeEvent
+// (Final, Native, Private)
+
+void UAIGameEventSubsystem::RegisterGameModeEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "RegisterGameModeEvent");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameEventSubsystem.UnRegisterGameModeEvent
+// (Final, Native, Private)
+
+void UAIGameEventSubsystem::UnRegisterGameModeEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameEventSubsystem", "UnRegisterGameModeEvent");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIGameInstanceSubsystem.OnAIAssetsLoaded
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const TArray<class UObject*>&           AIAssets_0                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAIGameInstanceSubsystem::OnAIAssetsLoaded(const TArray<class UObject*>& AIAssets_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIGameInstanceSubsystem", "OnAIAssetsLoaded");
+
+	Params::AIGameInstanceSubsystem_OnAIAssetsLoaded Parms{};
+
+	Parms.AIAssets_0 = std::move(AIAssets_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIHeroCustomComponent.OnGameplayTagUpdate
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIHeroCustomComponent::OnGameplayTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIHeroCustomComponent", "OnGameplayTagUpdate");
+
+	Params::AIHeroCustomComponent_OnGameplayTagUpdate Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.TagExists = TagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIHitRateModify.CalculateHitRateModifyAI
+// (Event, Protected, BlueprintEvent, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAIHitRateModify::CalculateHitRateModifyAI(class AMarvelBaseCharacter* Source, class AActor* Target) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIHitRateModify", "CalculateHitRateModifyAI");
+
+	Params::AIHitRateModify_CalculateHitRateModifyAI Parms{};
+
+	Parms.Source = Source;
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetAILabSubSystem
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAILabSubSystem*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAILabSubSystem* UAILabSubSystem::GetAILabSubSystem(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AILabSubSystem", "GetAILabSubSystem");
+
+	Params::AILabSubSystem_GetAILabSubSystem Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetAbilitySummonedDataList
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<struct FAILabProtoSummonedData>* OutSummonedDataList                                    (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::GetAbilitySummonedDataList(TArray<struct FAILabProtoSummonedData>* OutSummonedDataList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetAbilitySummonedDataList");
+
+	Params::AILabSubSystem_GetAbilitySummonedDataList Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutSummonedDataList != nullptr)
+		*OutSummonedDataList = std::move(Parms.OutSummonedDataList);
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetAILabProtoTickData
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FAILabProtoTickData*             OutTickData                                            (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::GetAILabProtoTickData(struct FAILabProtoTickData* OutTickData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetAILabProtoTickData");
+
+	Params::AILabSubSystem_GetAILabProtoTickData Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutTickData != nullptr)
+		*OutTickData = std::move(Parms.OutTickData);
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetAmmoClipData
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAILabProtoWeaponClipData*       OutWeaponClipData                                      (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::GetAmmoClipData(class AMarvelBaseCharacter* Character, struct FAILabProtoWeaponClipData* OutWeaponClipData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetAmmoClipData");
+
+	Params::AILabSubSystem_GetAmmoClipData Parms{};
+
+	Parms.Character = Character;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutWeaponClipData != nullptr)
+		*OutWeaponClipData = std::move(Parms.OutWeaponClipData);
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetBuffData
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class AMarvelBaseCharacter*       Character                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FAILabProtoBuffData>*     OutBuffDataList                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::GetBuffData(const class AMarvelBaseCharacter* Character, TArray<struct FAILabProtoBuffData>* OutBuffDataList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetBuffData");
+
+	Params::AILabSubSystem_GetBuffData Parms{};
+
+	Parms.Character = Character;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutBuffDataList != nullptr)
+		*OutBuffDataList = std::move(Parms.OutBuffDataList);
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetCharacterAbilityData
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAILabProtoAbilityData*          OutAbilityData                                         (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::GetCharacterAbilityData(class AMarvelBaseCharacter* Character, struct FAILabProtoAbilityData* OutAbilityData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetCharacterAbilityData");
+
+	Params::AILabSubSystem_GetCharacterAbilityData Parms{};
+
+	Parms.Character = Character;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAbilityData != nullptr)
+		*OutAbilityData = std::move(Parms.OutAbilityData);
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetCurrentAmmoTypeList
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AMarvelBaseCharacter*             Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<int32> UAILabSubSystem::GetCurrentAmmoTypeList(class AMarvelBaseCharacter* Character)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetCurrentAmmoTypeList");
+
+	Params::AILabSubSystem_GetCurrentAmmoTypeList Parms{};
+
+	Parms.Character = Character;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AILabSubSystem.GetLevelParamData
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// TArray<float>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<float> UAILabSubSystem::GetLevelParamData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "GetLevelParamData");
+
+	Params::AILabSubSystem_GetLevelParamData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AILabSubSystem.InitAILabLogic
+// (Final, Native, Public)
+
+void UAILabSubSystem::InitAILabLogic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "InitAILabLogic");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AILabSubSystem.InitFromAILabConfig
+// (Final, Native, Private)
+
+void UAILabSubSystem::InitFromAILabConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "InitFromAILabConfig");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AILabSubSystem.OnAbilityCommitCD
+// (Final, Native, Public)
+// Parameters:
+// class AMarvelBaseCharacter*             SourceCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bAddCD                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::OnAbilityCommitCD(class AMarvelBaseCharacter* SourceCharacter, int32 AbilityID, bool bAddCD)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "OnAbilityCommitCD");
+
+	Params::AILabSubSystem_OnAbilityCommitCD Parms{};
+
+	Parms.SourceCharacter = SourceCharacter;
+	Parms.AbilityID = AbilityID;
+	Parms.bAddCD = bAddCD;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AILabSubSystem.OnGameQuittingStart
+// (Final, Native, Public)
+
+void UAILabSubSystem::OnGameQuittingStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "OnGameQuittingStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AILabSubSystem.PyBindEvents
+// (Event, Public, BlueprintEvent)
+
+void UAILabSubSystem::PyBindEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "PyBindEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.AILabSubSystem.PyUnBindEvents
+// (Event, Public, BlueprintEvent)
+
+void UAILabSubSystem::PyUnBindEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "PyUnBindEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.AILabSubSystem.ReceiveFirstRequestInit
+// (Event, Protected, BlueprintEvent)
+
+void UAILabSubSystem::ReceiveFirstRequestInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "ReceiveFirstRequestInit");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.AILabSubSystem.TryGetAICharacterView
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class AMarvelBaseCharacter*       Characters                                             (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAILabProtoEnvironmentData&      OutEnvironmentData                                     (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAILabSubSystem::TryGetAICharacterView(const class AMarvelBaseCharacter* Characters, struct FAILabProtoEnvironmentData& OutEnvironmentData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AILabSubSystem", "TryGetAICharacterView");
+
+	Params::AILabSubSystem_TryGetAICharacterView Parms{};
+
+	Parms.Characters = Characters;
+	Parms.OutEnvironmentData = std::move(OutEnvironmentData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	OutEnvironmentData = std::move(Parms.OutEnvironmentData);
+}
+
+
+// Function MarvelAI.AIMementoComponent.OnAbilityActivate
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    String                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGlobalEventExtraData&     GlobalEventExtraData                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAIMementoComponent::OnAbilityActivate(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& String, const struct FGlobalEventExtraData& GlobalEventExtraData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIMementoComponent", "OnAbilityActivate");
+
+	Params::AIMementoComponent_OnAbilityActivate Parms{};
+
+	Parms.ASC = ASC;
+	Parms.AbilityID = AbilityID;
+	Parms.String = std::move(String);
+	Parms.GlobalEventExtraData = std::move(GlobalEventExtraData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIMementoComponent.OnAbilityDeActivate
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    String                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGlobalEventExtraData&     GlobalEventExtraData                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAIMementoComponent::OnAbilityDeActivate(class UAbilitySystemComponent* ASC, int32 AbilityID, const class FString& String, const struct FGlobalEventExtraData& GlobalEventExtraData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIMementoComponent", "OnAbilityDeActivate");
+
+	Params::AIMementoComponent_OnAbilityDeActivate Parms{};
+
+	Parms.ASC = ASC;
+	Parms.AbilityID = AbilityID;
+	Parms.String = std::move(String);
+	Parms.GlobalEventExtraData = std::move(GlobalEventExtraData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIMementoComponent.OnTagUpdated
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// class UAbilitySystemComponent*          ASC                                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayTag&              GameplayTag                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIMementoComponent::OnTagUpdated(class UAbilitySystemComponent* ASC, const struct FGameplayTag& GameplayTag, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIMementoComponent", "OnTagUpdated");
+
+	Params::AIMementoComponent_OnTagUpdated Parms{};
+
+	Parms.ASC = ASC;
+	Parms.GameplayTag = std::move(GameplayTag);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIPathSelectComponent.GetPathToTargetFromActor
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AActor*                           PathSelector                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FWayPointPath*                   OutWayPointPath                                        (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ShouldUpdateProgressInPath                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIPathSelectComponent::GetPathToTargetFromActor(class AActor* PathSelector, class AActor* ActorMovingAlong, class AActor* Target, struct FWayPointPath* OutWayPointPath, bool ShouldUpdateProgressInPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIPathSelectComponent", "GetPathToTargetFromActor");
+
+	Params::AIPathSelectComponent_GetPathToTargetFromActor Parms{};
+
+	Parms.PathSelector = PathSelector;
+	Parms.ActorMovingAlong = ActorMovingAlong;
+	Parms.Target = Target;
+	Parms.ShouldUpdateProgressInPath = ShouldUpdateProgressInPath;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutWayPointPath != nullptr)
+		*OutWayPointPath = std::move(Parms.OutWayPointPath);
+}
+
+
+// Function MarvelAI.AIPathSelectComponent.GetPathToTarget
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FWayPointPath*                   OutWayPointPath                                        (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ShouldUpdateProgressInPath                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIPathSelectComponent::GetPathToTarget(class AActor* ActorMovingAlong, class AActor* Target, struct FWayPointPath* OutWayPointPath, bool ShouldUpdateProgressInPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIPathSelectComponent", "GetPathToTarget");
+
+	Params::AIPathSelectComponent_GetPathToTarget Parms{};
+
+	Parms.ActorMovingAlong = ActorMovingAlong;
+	Parms.Target = Target;
+	Parms.ShouldUpdateProgressInPath = ShouldUpdateProgressInPath;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutWayPointPath != nullptr)
+		*OutWayPointPath = std::move(Parms.OutWayPointPath);
+}
+
+
+// Function MarvelAI.AIAbilityActivationExtraConfig.GetConfigName
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAIAbilityActivationExtraConfig::GetConfigName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityActivationExtraConfig", "GetConfigName");
+
+	Params::AIAbilityActivationExtraConfig_GetConfigName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityActivationExtraConfig.InitExtraConfig
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class UObject*                          AIOwner                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIAbilityActivationExtraConfig::InitExtraConfig(class UObject* AIOwner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityActivationExtraConfig", "InitExtraConfig");
+
+	Params::AIAbilityActivationExtraConfig_InitExtraConfig Parms{};
+
+	Parms.AIOwner = AIOwner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.GetSelectTargetLogicObject
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AMarvelAIController*              MarvelAIOwner                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class UAISelectTargetLogicBase>SelectLogicClass                                       (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAISelectTargetLogicBase*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAISelectTargetLogicBase* UAISelectTargetLogicBase::GetSelectTargetLogicObject(class AMarvelAIController* MarvelAIOwner, TSubclassOf<class UAISelectTargetLogicBase> SelectLogicClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AISelectTargetLogicBase", "GetSelectTargetLogicObject");
+
+	Params::AISelectTargetLogicBase_GetSelectTargetLogicObject Parms{};
+
+	Parms.MarvelAIOwner = MarvelAIOwner;
+	Parms.SelectLogicClass = SelectLogicClass;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.CheckMissAndAddMissOffset
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AMarvelAIController*              MarvelAI                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAISelectTargetLogicBase::CheckMissAndAddMissOffset(class AMarvelAIController* MarvelAI, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "CheckMissAndAddMissOffset");
+
+	Params::AISelectTargetLogicBase_CheckMissAndAddMissOffset Parms{};
+
+	Parms.MarvelAI = MarvelAI;
+	Parms.OutAITarget = std::move(OutAITarget);
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	OutAITarget = std::move(Parms.OutAITarget);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.OnDestroy
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AMarvelAIController*              MarvelAIController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAIAbilityUsage*                 AbilityUsage                                           (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAISelectTargetLogicBase::OnDestroy(class AMarvelAIController* MarvelAIController, struct FAIAbilityUsage* AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "OnDestroy");
+
+	Params::AISelectTargetLogicBase_OnDestroy Parms{};
+
+	Parms.MarvelAIController = MarvelAIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (AbilityUsage != nullptr)
+		*AbilityUsage = std::move(Parms.AbilityUsage);
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.OnInitialize
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AMarvelAIController*              MarvelAIController                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAIAbilityUsage*                 AbilityUsage                                           (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAISelectTargetLogicBase::OnInitialize(class AMarvelAIController* MarvelAIController, struct FAIAbilityUsage* AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "OnInitialize");
+
+	Params::AISelectTargetLogicBase_OnInitialize Parms{};
+
+	Parms.MarvelAIController = MarvelAIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (AbilityUsage != nullptr)
+		*AbilityUsage = std::move(Parms.AbilityUsage);
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.SelectTargetForAbilityCheck
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FRequiredAIDataForAutoAbility&AbilityContext                                         (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAISelectTargetLogicBase::SelectTargetForAbilityCheck(const struct FRequiredAIDataForAutoAbility& AbilityContext, struct FMarvelAITarget& OutAITarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "SelectTargetForAbilityCheck");
+
+	Params::AISelectTargetLogicBase_SelectTargetForAbilityCheck Parms{};
+
+	Parms.AbilityContext = std::move(AbilityContext);
+	Parms.OutAITarget = std::move(OutAITarget);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	OutAITarget = std::move(Parms.OutAITarget);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.SelectTargetOrLocation
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAISelectTargetLogicBase::SelectTargetOrLocation(class AMarvelAIController* AIController, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "SelectTargetOrLocation");
+
+	Params::AISelectTargetLogicBase_SelectTargetOrLocation Parms{};
+
+	Parms.AIController = AIController;
+	Parms.OutAITarget = std::move(OutAITarget);
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	OutAITarget = std::move(Parms.OutAITarget);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.TakeResultAITarget
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FMarvelAITarget&                 OutAITarget                                            (Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAISelectTargetLogicBase::TakeResultAITarget(class AMarvelAIController* AIController, struct FMarvelAITarget& OutAITarget, const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "TakeResultAITarget");
+
+	Params::AISelectTargetLogicBase_TakeResultAITarget Parms{};
+
+	Parms.AIController = AIController;
+	Parms.OutAITarget = std::move(OutAITarget);
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	OutAITarget = std::move(Parms.OutAITarget);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AISelectTargetLogicBase.UpdateProjectilePredicateSpeed
+// (Native, Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FMarvelProjectileAgentTable&ProjectileAgentTable                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAISelectTargetLogicBase::UpdateProjectilePredicateSpeed(class AMarvelAIController* AIController, const struct FAIAbilityUsage& AbilityUsage, const struct FMarvelProjectileAgentTable& ProjectileAgentTable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AISelectTargetLogicBase", "UpdateProjectilePredicateSpeed");
+
+	Params::AISelectTargetLogicBase_UpdateProjectilePredicateSpeed Parms{};
+
+	Parms.AIController = AIController;
+	Parms.AbilityUsage = std::move(AbilityUsage);
+	Parms.ProjectileAgentTable = std::move(ProjectileAgentTable);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SniperStandPoint.CheckEnemyIsInWarningRange
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           EnemyActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASniperStandPoint::CheckEnemyIsInWarningRange(class AActor* EnemyActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SniperStandPoint", "CheckEnemyIsInWarningRange");
+
+	Params::SniperStandPoint_CheckEnemyIsInWarningRange Parms{};
+
+	Parms.EnemyActor = EnemyActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.AllowPreSelectHeroDelay
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delay                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::AllowPreSelectHeroDelay(float Delay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "AllowPreSelectHeroDelay");
+
+	Params::MarvelAIController_AllowPreSelectHeroDelay Parms{};
+
+	Parms.Delay = Delay;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.ApplyGameplayEffectToPawn
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TSubclassOf<class UGameplayEffect>      EffectClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayTag&              DataTag                                                (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   CallerMagnitude                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Period                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bUseControllerAsCauser                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FActiveGameplayEffectHandle      ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FActiveGameplayEffectHandle AMarvelAIController::ApplyGameplayEffectToPawn(TSubclassOf<class UGameplayEffect> EffectClass, const struct FGameplayTag& DataTag, float CallerMagnitude, float Period, bool bUseControllerAsCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ApplyGameplayEffectToPawn");
+
+	Params::MarvelAIController_ApplyGameplayEffectToPawn Parms{};
+
+	Parms.EffectClass = EffectClass;
+	Parms.DataTag = std::move(DataTag);
+	Parms.CallerMagnitude = CallerMagnitude;
+	Parms.Period = Period;
+	Parms.bUseControllerAsCauser = bUseControllerAsCauser;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.CallInputAction
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   AbilityId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             ActionName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bPressed                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::CallInputAction(int32 AbilityId, class FName ActionName, bool bPressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "CallInputAction");
+
+	Params::MarvelAIController_CallInputAction Parms{};
+
+	Parms.AbilityId = AbilityId;
+	Parms.ActionName = ActionName;
+	Parms.bPressed = bPressed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.CanActivateAbility
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::CanActivateAbility(int32 AbilityID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "CanActivateAbility");
+
+	Params::MarvelAIController_CanActivateAbility Parms{};
+
+	Parms.AbilityID = AbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.CheckInitAIDifficulty
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::CheckInitAIDifficulty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "CheckInitAIDifficulty");
+
+	Params::MarvelAIController_CheckInitAIDifficulty Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.ClearBehaviorTreeFocus
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Delay                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::ClearBehaviorTreeFocus(float Delay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ClearBehaviorTreeFocus");
+
+	Params::MarvelAIController_ClearBehaviorTreeFocus Parms{};
+
+	Parms.Delay = Delay;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.ConsumeRecommendedHeroID
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32*                                  HeroID                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::ConsumeRecommendedHeroID(int32* HeroID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ConsumeRecommendedHeroID");
+
+	Params::MarvelAIController_ConsumeRecommendedHeroID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (HeroID != nullptr)
+		*HeroID = Parms.HeroID;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetCurrentMoveDirection
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector AMarvelAIController::GetCurrentMoveDirection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetCurrentMoveDirection");
+
+	Params::MarvelAIController_GetCurrentMoveDirection Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.InitAIDifficulty
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EAIDifficultyMode                       DifficultyMode                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   DifficultyLevel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::InitAIDifficulty(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "InitAIDifficulty");
+
+	Params::MarvelAIController_InitAIDifficulty Parms{};
+
+	Parms.DifficultyMode = DifficultyMode;
+	Parms.DifficultyLevel = DifficultyLevel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.InitDifficultyEffect
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ForceInit                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::InitDifficultyEffect(bool ForceInit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "InitDifficultyEffect");
+
+	Params::MarvelAIController_InitDifficultyEffect Parms{};
+
+	Parms.ForceInit = ForceInit;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.InitNoPSPlayerInfo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InTeamID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InUID                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::InitNoPSPlayerInfo(int32 InTeamID, int32 InUID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "InitNoPSPlayerInfo");
+
+	Params::MarvelAIController_InitNoPSPlayerInfo Parms{};
+
+	Parms.InTeamID = InTeamID;
+	Parms.InUID = InUID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.InitSummonedForAI
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::InitSummonedForAI(class AActor* Source)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "InitSummonedForAI");
+
+	Params::MarvelAIController_InitSummonedForAI Parms{};
+
+	Parms.Source = Source;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsInArea
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// TSubclassOf<class AAIActionArea>        AreaClassType                                          (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsInArea(TSubclassOf<class AAIActionArea> AreaClassType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsInArea");
+
+	Params::MarvelAIController_IsInArea Parms{};
+
+	Parms.AreaClassType = AreaClassType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsInView
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class AActor*                     ToCheckTarget                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsInView(const class AActor* ToCheckTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsInView");
+
+	Params::MarvelAIController_IsInView Parms{};
+
+	Parms.ToCheckTarget = ToCheckTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsTakingCure
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsTakingCure()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsTakingCure");
+
+	Params::MarvelAIController_IsTakingCure Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_ClearAllFocus
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::K2_ClearAllFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_ClearAllFocus");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_ClearFocusByPriority
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::K2_ClearFocusByPriority(uint8 FocusPriority)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_ClearFocusByPriority");
+
+	Params::MarvelAIController_K2_ClearFocusByPriority Parms{};
+
+	Parms.FocusPriority = FocusPriority;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_GetAIDifficultyConfig
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FMarvelAIDifficultyTable*        OutDifficultyConfig                                    (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::K2_GetAIDifficultyConfig(struct FMarvelAIDifficultyTable* OutDifficultyConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_GetAIDifficultyConfig");
+
+	Params::MarvelAIController_K2_GetAIDifficultyConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutDifficultyConfig != nullptr)
+		*OutDifficultyConfig = std::move(Parms.OutDifficultyConfig);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_GetPriorityFactorInPerceptionComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AMarvelAIController::K2_GetPriorityFactorInPerceptionComp(class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_GetPriorityFactorInPerceptionComp");
+
+	Params::MarvelAIController_K2_GetPriorityFactorInPerceptionComp Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_PauseCurrentMove
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::K2_PauseCurrentMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_PauseCurrentMove");
+
+	Params::MarvelAIController_K2_PauseCurrentMove Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_ResumeCurrentMove
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::K2_ResumeCurrentMove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_ResumeCurrentMove");
+
+	Params::MarvelAIController_K2_ResumeCurrentMove Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_SetFocalPointByPriority
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   NewFocus                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::K2_SetFocalPointByPriority(const struct FVector& NewFocus, uint8 FocusPriority)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_SetFocalPointByPriority");
+
+	Params::MarvelAIController_K2_SetFocalPointByPriority Parms{};
+
+	Parms.NewFocus = std::move(NewFocus);
+	Parms.FocusPriority = FocusPriority;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_SetFocusByPriority
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           NewFocus                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::K2_SetFocusByPriority(class AActor* NewFocus, uint8 FocusPriority)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_SetFocusByPriority");
+
+	Params::MarvelAIController_K2_SetFocusByPriority Parms{};
+
+	Parms.NewFocus = NewFocus;
+	Parms.FocusPriority = FocusPriority;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_SetFocusByTarget
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FMarvelAITarget&           Target                                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// uint8                                   FocusPriority                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::K2_SetFocusByTarget(const struct FMarvelAITarget& Target, uint8 FocusPriority)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_SetFocusByTarget");
+
+	Params::MarvelAIController_K2_SetFocusByTarget Parms{};
+
+	Parms.Target = std::move(Target);
+	Parms.FocusPriority = FocusPriority;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_StopMovement
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::K2_StopMovement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_StopMovement");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.MarkAsTrainingTarget
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::MarkAsTrainingTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "MarkAsTrainingTarget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnAIChangeHero
+// (Final, Native, Protected)
+// Parameters:
+// class APawn*                            NewPawn                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnAIChangeHero(class APawn* NewPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnAIChangeHero");
+
+	Params::MarvelAIController_OnAIChangeHero Parms{};
+
+	Parms.NewPawn = NewPawn;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnEnterArea
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AAIActionArea*                    NewArea                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnEnterArea(class AAIActionArea* NewArea)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnEnterArea");
+
+	Params::MarvelAIController_OnEnterArea Parms{};
+
+	Parms.NewArea = NewArea;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnExitArea
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AAIActionArea*                    OldArea                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnExitArea(class AAIActionArea* OldArea)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnExitArea");
+
+	Params::MarvelAIController_OnExitArea Parms{};
+
+	Parms.OldArea = OldArea;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnPawnDeath
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnPawnDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnPawnDeath");
+
+	Params::MarvelAIController_OnPawnDeath Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnPawnReborn
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FCharacterRebornParam&     RebornParam                                            (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnPawnReborn(class AActor* InSourceActor, const struct FCharacterRebornParam& RebornParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnPawnReborn");
+
+	Params::MarvelAIController_OnPawnReborn Parms{};
+
+	Parms.InSourceActor = InSourceActor;
+	Parms.RebornParam = std::move(RebornParam);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnPawnTakeDamage
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnPawnTakeDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnPawnTakeDamage");
+
+	Params::MarvelAIController_OnPawnTakeDamage Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnPostReplaceController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AController*                      old_controller                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnPostReplaceController(class AController* old_controller)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnPostReplaceController");
+
+	Params::MarvelAIController_OnPostReplaceController Parms{};
+
+	Parms.old_controller = old_controller;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnPreReplaceController
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AController*                      new_controller                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnPreReplaceController(class AController* new_controller)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnPreReplaceController");
+
+	Params::MarvelAIController_OnPreReplaceController Parms{};
+
+	Parms.new_controller = new_controller;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnResetBTFocusTarget
+// (Final, Native, Public)
+
+void AMarvelAIController::OnResetBTFocusTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnResetBTFocusTarget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnSculptChanged
+// (Final, Native, Protected)
+// Parameters:
+// int32                                   SculptId                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OnSculptChanged(int32 SculptId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnSculptChanged");
+
+	Params::MarvelAIController_OnSculptChanged Parms{};
+
+	Parms.SculptId = SculptId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OnSVONMoveRequestFailed
+// (Final, Native, Public)
+
+void AMarvelAIController::OnSVONMoveRequestFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OnSVONMoveRequestFailed");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.OverrideJumpAbility
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   NewJumpAbilityID                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OverrideJumpAbility(int32 NewJumpAbilityID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OverrideJumpAbility");
+
+	Params::MarvelAIController_OverrideJumpAbility Parms{};
+
+	Parms.NewJumpAbilityID = NewJumpAbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.ReceiveLoadHeroConfig
+// (Event, Protected, BlueprintEvent)
+
+void AMarvelAIController::ReceiveLoadHeroConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ReceiveLoadHeroConfig");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.MarvelAIController.ReceiveRecommendedHeroUpdate
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   NewRecommendedHeroID                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::ReceiveRecommendedHeroUpdate(int32 NewRecommendedHeroID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ReceiveRecommendedHeroUpdate");
+
+	Params::MarvelAIController_ReceiveRecommendedHeroUpdate Parms{};
+
+	Parms.NewRecommendedHeroID = NewRecommendedHeroID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelAI.MarvelAIController.ResetBehaviorTree
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBehaviorTree*                    BTAsset                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::ResetBehaviorTree(class UBehaviorTree* BTAsset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ResetBehaviorTree");
+
+	Params::MarvelAIController_ResetBehaviorTree Parms{};
+
+	Parms.BTAsset = BTAsset;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.ResetFocalOffsetOnActor
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::ResetFocalOffsetOnActor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ResetFocalOffsetOnActor");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.ResetTreatApplyToStatic
+// (Final, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::ResetTreatApplyToStatic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "ResetTreatApplyToStatic");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SelectChangeHero
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    NeedChangeRole                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    AllowRepeatHero                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::SelectChangeHero(bool NeedChangeRole, bool AllowRepeatHero)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SelectChangeHero");
+
+	Params::MarvelAIController_SelectChangeHero Parms{};
+
+	Parms.NeedChangeRole = NeedChangeRole;
+	Parms.AllowRepeatHero = AllowRepeatHero;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetAbilityTacticClass
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UClass*                           AbilityTacticClass_0                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetAbilityTacticClass(class UClass* AbilityTacticClass_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetAbilityTacticClass");
+
+	Params::MarvelAIController_SetAbilityTacticClass Parms{};
+
+	Parms.AbilityTacticClass_0 = AbilityTacticClass_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetAIAbilityServer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetAIAbilityServer(int32 NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetAIAbilityServer");
+
+	Params::MarvelAIController_SetAIAbilityServer Parms{};
+
+	Parms.NewValue = NewValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetAIAnthropomorphic
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetAIAnthropomorphic(bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetAIAnthropomorphic");
+
+	Params::MarvelAIController_SetAIAnthropomorphic Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetDynamicDifficultyEnabled
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    Enable                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetDynamicDifficultyEnabled(bool Enable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetDynamicDifficultyEnabled");
+
+	Params::MarvelAIController_SetDynamicDifficultyEnabled Parms{};
+
+	Parms.Enable = Enable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetEnableAIProcessInput
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    Enable                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetEnableAIProcessInput(bool Enable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetEnableAIProcessInput");
+
+	Params::MarvelAIController_SetEnableAIProcessInput Parms{};
+
+	Parms.Enable = Enable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetEnergyEmpty
+// (Final, Exec, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::SetEnergyEmpty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetEnergyEmpty");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetEnergyFull
+// (Final, Exec, Native, Public, BlueprintCallable)
+
+void AMarvelAIController::SetEnergyFull()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetEnergyFull");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetFocusOffsetOnActor
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Offset                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsInLocalCoordinate                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetFocusOffsetOnActor(const struct FVector& Offset, bool IsInLocalCoordinate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetFocusOffsetOnActor");
+
+	Params::MarvelAIController_SetFocusOffsetOnActor Parms{};
+
+	Parms.Offset = std::move(Offset);
+	Parms.IsInLocalCoordinate = IsInLocalCoordinate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetFocusSpeedFactor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const float                             NewFocusSpeedFactor                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetFocusSpeedFactor(const float NewFocusSpeedFactor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetFocusSpeedFactor");
+
+	Params::MarvelAIController_SetFocusSpeedFactor Parms{};
+
+	Parms.NewFocusSpeedFactor = NewFocusSpeedFactor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetIsTestAI
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    NewIsTestAI                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetIsTestAI(bool NewIsTestAI)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetIsTestAI");
+
+	Params::MarvelAIController_SetIsTestAI Parms{};
+
+	Parms.NewIsTestAI = NewIsTestAI;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetSVONPathFindingMethod
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ESVONPathFindingMethod                  ModeMethod                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetSVONPathFindingMethod(ESVONPathFindingMethod ModeMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetSVONPathFindingMethod");
+
+	Params::MarvelAIController_SetSVONPathFindingMethod Parms{};
+
+	Parms.ModeMethod = ModeMethod;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetTestAttributeRatio
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   NewRatio                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::SetTestAttributeRatio(float NewRatio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetTestAttributeRatio");
+
+	Params::MarvelAIController_SetTestAttributeRatio Parms{};
+
+	Parms.NewRatio = NewRatio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetUsePreciseReachLogic
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    UsePrecise                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetUsePreciseReachLogic(bool UsePrecise)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetUsePreciseReachLogic");
+
+	Params::MarvelAIController_SetUsePreciseReachLogic Parms{};
+
+	Parms.UsePrecise = UsePrecise;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SvonMoveToLocation
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Dest                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   AcceptanceRadius                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bStopOnOverlap                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bUsePathfinding                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bProjectDestinationToNavigation                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bCanStrafe                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class UNavigationQueryFilter>FilterClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bAllowPartialPath                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPathFollowingRequestResult             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPathFollowingRequestResult AMarvelAIController::SvonMoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SvonMoveToLocation");
+
+	Params::MarvelAIController_SvonMoveToLocation Parms{};
+
+	Parms.Dest = std::move(Dest);
+	Parms.AcceptanceRadius = AcceptanceRadius;
+	Parms.bStopOnOverlap = bStopOnOverlap;
+	Parms.bUsePathfinding = bUsePathfinding;
+	Parms.bProjectDestinationToNavigation = bProjectDestinationToNavigation;
+	Parms.bCanStrafe = bCanStrafe;
+	Parms.FilterClass = FilterClass;
+	Parms.bAllowPartialPath = bAllowPartialPath;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TriggerAbilityLocalInput
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIsPressed                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::TriggerAbilityLocalInput(int32 InputID, int32 AbilityID, bool bIsPressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TriggerAbilityLocalInput");
+
+	Params::MarvelAIController_TriggerAbilityLocalInput Parms{};
+
+	Parms.InputID = InputID;
+	Parms.AbilityID = AbilityID;
+	Parms.bIsPressed = bIsPressed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.TriggerPawnAbilityInputBinding
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsPressed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::TriggerPawnAbilityInputBinding(int32 InputID, int32 AbilityID, bool IsPressed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TriggerPawnAbilityInputBinding");
+
+	Params::MarvelAIController_TriggerPawnAbilityInputBinding Parms{};
+
+	Parms.InputID = InputID;
+	Parms.AbilityID = AbilityID;
+	Parms.IsPressed = IsPressed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.TriggerPawnLocalInputBind
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsConfirmed                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::TriggerPawnLocalInputBind(int32 InputID, bool IsConfirmed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TriggerPawnLocalInputBind");
+
+	Params::MarvelAIController_TriggerPawnLocalInputBind Parms{};
+
+	Parms.InputID = InputID;
+	Parms.IsConfirmed = IsConfirmed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryActivateAbilityWithID
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    UseInputPressed                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FGameplayAbilitySpecHandle*      OutHandle                                              (Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryActivateAbilityWithID(int32 AbilityID, bool UseInputPressed, struct FGameplayAbilitySpecHandle* OutHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryActivateAbilityWithID");
+
+	Params::MarvelAIController_TryActivateAbilityWithID Parms{};
+
+	Parms.AbilityID = AbilityID;
+	Parms.UseInputPressed = UseInputPressed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutHandle != nullptr)
+		*OutHandle = std::move(Parms.OutHandle);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryEndAbility
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const struct FGameplayAbilitySpecHandle&SpecHandle                                             (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    UseInputRelease                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryEndAbility(const struct FGameplayAbilitySpecHandle& SpecHandle, bool UseInputRelease)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryEndAbility");
+
+	Params::MarvelAIController_TryEndAbility Parms{};
+
+	Parms.SpecHandle = std::move(SpecHandle);
+	Parms.UseInputRelease = UseInputRelease;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryGetActionArea
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// TSubclassOf<class AAIActionArea>        AreaClassType                                          (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AAIActionArea**                   OutArea                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryGetActionArea(TSubclassOf<class AAIActionArea> AreaClassType, class AAIActionArea** OutArea)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryGetActionArea");
+
+	Params::MarvelAIController_TryGetActionArea Parms{};
+
+	Parms.AreaClassType = AreaClassType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutArea != nullptr)
+		*OutArea = Parms.OutArea;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.UpdateAIDifficulty
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EAIDifficultyMode                       DifficultyMode                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   DifficultyLevel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::UpdateAIDifficulty(EAIDifficultyMode DifficultyMode, int32 DifficultyLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "UpdateAIDifficulty");
+
+	Params::MarvelAIController_UpdateAIDifficulty Parms{};
+
+	Parms.DifficultyMode = DifficultyMode;
+	Parms.DifficultyLevel = DifficultyLevel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.UpdateAILevel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::UpdateAILevel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "UpdateAILevel");
+
+	Params::MarvelAIController_UpdateAILevel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.UpdateMoveBlockFlag
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bAdd                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::UpdateMoveBlockFlag(bool bAdd)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "UpdateMoveBlockFlag");
+
+	Params::MarvelAIController_UpdateMoveBlockFlag Parms{};
+
+	Parms.bAdd = bAdd;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.UpdatePreviewHeroID
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                                   NewHeroID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    Immediate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::UpdatePreviewHeroID(int32 NewHeroID, bool Immediate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "UpdatePreviewHeroID");
+
+	Params::MarvelAIController_UpdatePreviewHeroID Parms{};
+
+	Parms.NewHeroID = NewHeroID;
+	Parms.Immediate = Immediate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelAI.MarvelAIController.UpdateRecommendedHeroID
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::UpdateRecommendedHeroID(int32 HeroID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "UpdateRecommendedHeroID");
+
+	Params::MarvelAIController_UpdateRecommendedHeroID Parms{};
+
+	Parms.HeroID = HeroID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.CanChangeSelectedHero
+// (Final, Native, Protected, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool*                                   OutNeedChangeRole                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    OnlyCheckForLineup                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::CanChangeSelectedHero(bool* OutNeedChangeRole, bool OnlyCheckForLineup) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "CanChangeSelectedHero");
+
+	Params::MarvelAIController_CanChangeSelectedHero Parms{};
+
+	Parms.OnlyCheckForLineup = OnlyCheckForLineup;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutNeedChangeRole != nullptr)
+		*OutNeedChangeRole = Parms.OutNeedChangeRole;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetAIAbilityServer
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::GetAIAbilityServer() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetAIAbilityServer");
+
+	Params::MarvelAIController_GetAIAbilityServer Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetAIAnthropomorphic
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetAIAnthropomorphic() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetAIAnthropomorphic");
+
+	Params::MarvelAIController_GetAIAnthropomorphic Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetAIInfo
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UAIControllerInfo*                ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAIControllerInfo* AMarvelAIController::GetAIInfo() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetAIInfo");
+
+	Params::MarvelAIController_GetAIInfo Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetBehaviorTreeComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UMarvelBehaviorTreeComponent*     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelBehaviorTreeComponent* AMarvelAIController::GetBehaviorTreeComp() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetBehaviorTreeComp");
+
+	Params::MarvelAIController_GetBehaviorTreeComp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetCurrentTreeName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString AMarvelAIController::GetCurrentTreeName() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetCurrentTreeName");
+
+	Params::MarvelAIController_GetCurrentTreeName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetDamageFromActor
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AMarvelAIController::GetDamageFromActor(const class AActor* Actor) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetDamageFromActor");
+
+	Params::MarvelAIController_GetDamageFromActor Parms{};
+
+	Parms.Actor = Actor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetDynamicTreatApplyMagnitude
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   DynamicDifficultyFactor                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AMarvelAIController::GetDynamicTreatApplyMagnitude(float DynamicDifficultyFactor) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetDynamicTreatApplyMagnitude");
+
+	Params::MarvelAIController_GetDynamicTreatApplyMagnitude Parms{};
+
+	Parms.DynamicDifficultyFactor = DynamicDifficultyFactor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetEnableAIProcessInput
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetEnableAIProcessInput() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetEnableAIProcessInput");
+
+	Params::MarvelAIController_GetEnableAIProcessInput Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetHasMeetEnemy
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetHasMeetEnemy() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetHasMeetEnemy");
+
+	Params::MarvelAIController_GetHasMeetEnemy Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetHeroBTConfig
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FMarvelHeroBehaviorTreeTable*    OutHeroBTConfig                                        (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetHeroBTConfig(struct FMarvelHeroBehaviorTreeTable* OutHeroBTConfig) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetHeroBTConfig");
+
+	Params::MarvelAIController_GetHeroBTConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutHeroBTConfig != nullptr)
+		*OutHeroBTConfig = std::move(Parms.OutHeroBTConfig);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetHeroID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::GetHeroID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetHeroID");
+
+	Params::MarvelAIController_GetHeroID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetIsTestAI
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetIsTestAI() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetIsTestAI");
+
+	Params::MarvelAIController_GetIsTestAI Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetMarvelAIPerceptionComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UMarvelAIPerceptionComponent*     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelAIPerceptionComponent* AMarvelAIController::GetMarvelAIPerceptionComp() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetMarvelAIPerceptionComp");
+
+	Params::MarvelAIController_GetMarvelAIPerceptionComp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetPawnAbilityByID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelGameplayAbility* AMarvelAIController::GetPawnAbilityByID(int32 AbilityID) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetPawnAbilityByID");
+
+	Params::MarvelAIController_GetPawnAbilityByID Parms{};
+
+	Parms.AbilityID = AbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetPawnAbilityIdByInputBind
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const EAbilityInputBinds                InputBind                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::GetPawnAbilityIdByInputBind(const EAbilityInputBinds InputBind) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetPawnAbilityIdByInputBind");
+
+	Params::MarvelAIController_GetPawnAbilityIdByInputBind Parms{};
+
+	Parms.InputBind = InputBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetPawnHeroRole
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EHeroRole                               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EHeroRole AMarvelAIController::GetPawnHeroRole() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetPawnHeroRole");
+
+	Params::MarvelAIController_GetPawnHeroRole Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetRotateSpeed
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AMarvelAIController::GetRotateSpeed() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetRotateSpeed");
+
+	Params::MarvelAIController_GetRotateSpeed Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetTeamID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::GetTeamID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetTeamID");
+
+	Params::MarvelAIController_GetTeamID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetTestAttributeRatio
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AMarvelAIController::GetTestAttributeRatio() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetTestAttributeRatio");
+
+	Params::MarvelAIController_GetTestAttributeRatio Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetTestAttributeValues
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TMap<class FString, float>*             OutAttributesList                                      (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::GetTestAttributeValues(TMap<class FString, float>* OutAttributesList) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetTestAttributeValues");
+
+	Params::MarvelAIController_GetTestAttributeValues Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAttributesList != nullptr)
+		*OutAttributesList = std::move(Parms.OutAttributesList);
+}
+
+
+// Function MarvelAI.MarvelAIController.GetUID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AMarvelAIController::GetUID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetUID");
+
+	Params::MarvelAIController_GetUID Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.GetUsePreciseReachLogic
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::GetUsePreciseReachLogic() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "GetUsePreciseReachLogic");
+
+	Params::MarvelAIController_GetUsePreciseReachLogic Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsAlive
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsAlive() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsAlive");
+
+	Params::MarvelAIController_IsAlive Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsAlreadyRequestAsyncPathFinding
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsAlreadyRequestAsyncPathFinding() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsAlreadyRequestAsyncPathFinding");
+
+	Params::MarvelAIController_IsAlreadyRequestAsyncPathFinding Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsAutoChangeHeroByAILab
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsAutoChangeHeroByAILab() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsAutoChangeHeroByAILab");
+
+	Params::MarvelAIController_IsAutoChangeHeroByAILab Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsDynamicDifficultyEnabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsDynamicDifficultyEnabled() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsDynamicDifficultyEnabled");
+
+	Params::MarvelAIController_IsDynamicDifficultyEnabled Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsMoveBlocked
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsMoveBlocked() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsMoveBlocked");
+
+	Params::MarvelAIController_IsMoveBlocked Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsTakingDamage
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsTakingDamage() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsTakingDamage");
+
+	Params::MarvelAIController_IsTakingDamage Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsTakingDamageByTarget
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const class AActor*                     ToCheckTarget                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsTakingDamageByTarget(const class AActor* ToCheckTarget) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsTakingDamageByTarget");
+
+	Params::MarvelAIController_IsTakingDamageByTarget Parms{};
+
+	Parms.ToCheckTarget = ToCheckTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.IsTrainingTarget
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::IsTrainingTarget() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "IsTrainingTarget");
+
+	Params::MarvelAIController_IsTrainingTarget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_GetCurrentFocusAsAITarget
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FMarvelAITarget*                 OutTarget                                              (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::K2_GetCurrentFocusAsAITarget(struct FMarvelAITarget* OutTarget) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_GetCurrentFocusAsAITarget");
+
+	Params::MarvelAIController_K2_GetCurrentFocusAsAITarget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutTarget != nullptr)
+		*OutTarget = std::move(Parms.OutTarget);
+}
+
+
+// Function MarvelAI.MarvelAIController.K2_GetHeroBattleConfig
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FAIBattleConfig*                 OutBattleConfig                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::K2_GetHeroBattleConfig(struct FAIBattleConfig* OutBattleConfig) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "K2_GetHeroBattleConfig");
+
+	Params::MarvelAIController_K2_GetHeroBattleConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutBattleConfig != nullptr)
+		*OutBattleConfig = std::move(Parms.OutBattleConfig);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.OverrideSightRadius
+// (Final, Native, Public, BlueprintCallable, Const)
+// Parameters:
+// const float                             NewRadius                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::OverrideSightRadius(const float NewRadius) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "OverrideSightRadius");
+
+	Params::MarvelAIController_OverrideSightRadius Parms{};
+
+	Parms.NewRadius = NewRadius;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.SetUsageGroupTags
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FGameplayTagContainer&     NewTags                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::SetUsageGroupTags(const struct FGameplayTagContainer& NewTags) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "SetUsageGroupTags");
+
+	Params::MarvelAIController_SetUsageGroupTags Parms{};
+
+	Parms.NewTags = std::move(NewTags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.StoreAutoChangeHeroDebugInfo
+// (Final, Native, Protected, BlueprintCallable, Const)
+// Parameters:
+// int32                                   UID                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIChangeHeroReason                     ChangeReason                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ChangeResult                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    FailedReason                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Curve_Energy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ChangeCD                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Curve_KD                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AMarvelAIController::StoreAutoChangeHeroDebugInfo(int32 UID, EAIChangeHeroReason ChangeReason, bool ChangeResult, const class FString& FailedReason, float Curve_Energy, int32 ChangeCD, float Curve_KD) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "StoreAutoChangeHeroDebugInfo");
+
+	Params::MarvelAIController_StoreAutoChangeHeroDebugInfo Parms{};
+
+	Parms.UID = UID;
+	Parms.ChangeReason = ChangeReason;
+	Parms.ChangeResult = ChangeResult;
+	Parms.FailedReason = std::move(FailedReason);
+	Parms.Curve_Energy = Curve_Energy;
+	Parms.ChangeCD = ChangeCD;
+	Parms.Curve_KD = Curve_KD;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryActivatePawnAbilityByID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryActivatePawnAbilityByID(int32 AbilityID) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnAbilityByID");
+
+	Params::MarvelAIController_TryActivatePawnAbilityByID Parms{};
+
+	Parms.AbilityID = AbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryActivatePawnAbilityByInputBind
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EAbilityInputBinds                      InputBind                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryActivatePawnAbilityByInputBind(EAbilityInputBinds InputBind) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnAbilityByInputBind");
+
+	Params::MarvelAIController_TryActivatePawnAbilityByInputBind Parms{};
+
+	Parms.InputBind = InputBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryActivatePawnNormalJump
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryActivatePawnNormalJump() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryActivatePawnNormalJump");
+
+	Params::MarvelAIController_TryActivatePawnNormalJump Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIController.TryCancelPawnAbilityByID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AMarvelAIController::TryCancelPawnAbilityByID(int32 AbilityID) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIController", "TryCancelPawnAbilityByID");
+
+	Params::MarvelAIController_TryCancelPawnAbilityByID Parms{};
+
+	Parms.AbilityID = AbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIServerRequestServices.GetAILabServerUrl
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAIServerRequestServices::GetAILabServerUrl()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIServerRequestServices", "GetAILabServerUrl");
+
+	Params::AIServerRequestServices_GetAILabServerUrl Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIServerRequestServices.InitRequestServicesLogic
+// (Final, Native, Public)
+
+void UAIServerRequestServices::InitRequestServicesLogic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIServerRequestServices", "InitRequestServicesLogic");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIServerRequestServices.RequestTimer
+// (Final, Native, Protected)
+// Parameters:
+// bool                                    bRetry                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIServerRequestServices::RequestTimer(bool bRetry)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIServerRequestServices", "RequestTimer");
+
+	Params::AIServerRequestServices_RequestTimer Parms{};
+
+	Parms.bRetry = bRetry;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIServerRequestServices.SetAILabServerUrl
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    NewUrl                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIServerRequestServices::SetAILabServerUrl(const class FString& NewUrl, const class FString& Msg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIServerRequestServices", "SetAILabServerUrl");
+
+	Params::AIServerRequestServices_SetAILabServerUrl Parms{};
+
+	Parms.NewUrl = std::move(NewUrl);
+	Parms.Msg = std::move(Msg);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIStandPointManager.FindStandPoint
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FName&                      PointName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AStandPointBase*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AStandPointBase* UMarvelAIStandPointManager::FindStandPoint(const class FName& PointName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIStandPointManager", "FindStandPoint");
+
+	Params::MarvelAIStandPointManager_FindStandPoint Parms{};
+
+	Parms.PointName = PointName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIStandPointManager.RegisterStandPoint
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AStandPointBase*                  StandPoint                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIStandPointManager::RegisterStandPoint(class AStandPointBase* StandPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIStandPointManager", "RegisterStandPoint");
+
+	Params::MarvelAIStandPointManager_RegisterStandPoint Parms{};
+
+	Parms.StandPoint = StandPoint;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIStandPointManager.UnRegisterStandPoint
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AStandPointBase*                  StandPoint                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIStandPointManager::UnRegisterStandPoint(class AStandPointBase* StandPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIStandPointManager", "UnRegisterStandPoint");
+
+	Params::MarvelAIStandPointManager_UnRegisterStandPoint Parms{};
+
+	Parms.StandPoint = StandPoint;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIStrategyAreaVolume.GetGroupState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EGroupState                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EGroupState AAIStrategyAreaVolume::GetGroupState() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIStrategyAreaVolume", "GetGroupState");
+
+	Params::AIStrategyAreaVolume_GetGroupState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIStrategyAreaVolume.GetMatchState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 AAIStrategyAreaVolume::GetMatchState() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIStrategyAreaVolume", "GetMatchState");
+
+	Params::AIStrategyAreaVolume_GetMatchState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIStrategyAreaVolume.GetStrategyType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EStrategyType                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EStrategyType AAIStrategyAreaVolume::GetStrategyType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIStrategyAreaVolume", "GetStrategyType");
+
+	Params::AIStrategyAreaVolume_GetStrategyType Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -15470,6 +11389,1058 @@ void UMarvelAIStimuliSourceComponent::WhenOwnerReborn(class AActor* TargetActor,
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.CancelConcentrateTarget
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAITargetFactorLibrary::CancelConcentrateTarget(class AMarvelAIController* MyController, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "CancelConcentrateTarget");
+
+	Params::AITargetFactorLibrary_CancelConcentrateTarget Parms{};
+
+	Parms.MyController = MyController;
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.GetDamageSourceFactorForTarget
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAITargetFactorLibrary::GetDamageSourceFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetDamageSourceFactorForTarget");
+
+	Params::AITargetFactorLibrary_GetDamageSourceFactorForTarget Parms{};
+
+	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
+	Parms.MyController = MyController;
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.GetLowHpFactorForTarget
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   MarkLife                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAITargetFactorLibrary::GetLowHpFactorForTarget(class AActor* Target, float MarkLife)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetLowHpFactorForTarget");
+
+	Params::AITargetFactorLibrary_GetLowHpFactorForTarget Parms{};
+
+	Parms.Target = Target;
+	Parms.MarkLife = MarkLife;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.GetRoleFactorForTarget
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           MyActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAITargetFactorLibrary::GetRoleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AActor* MyActor, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetRoleFactorForTarget");
+
+	Params::AITargetFactorLibrary_GetRoleFactorForTarget Parms{};
+
+	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
+	Parms.MyActor = MyActor;
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.GetTargetChangeProbability
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FTargetChangeConfig&       Config                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   TargetHpRatio                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAITargetFactorLibrary::GetTargetChangeProbability(const struct FTargetChangeConfig& Config, float TargetHpRatio)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetTargetChangeProbability");
+
+	Params::AITargetFactorLibrary_GetTargetChangeProbability Parms{};
+
+	Parms.Config = std::move(Config);
+	Parms.TargetHpRatio = TargetHpRatio;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.GetVisibleFactorForTarget
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAITargetFactorConfig&     TargetFactorConfig                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              MyController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAITargetFactorLibrary::GetVisibleFactorForTarget(const struct FAITargetFactorConfig& TargetFactorConfig, class AMarvelAIController* MyController, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "GetVisibleFactorForTarget");
+
+	Params::AITargetFactorLibrary_GetVisibleFactorForTarget Parms{};
+
+	Parms.TargetFactorConfig = std::move(TargetFactorConfig);
+	Parms.MyController = MyController;
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AITargetFactorLibrary.TryAddHpLowMarkToTarget
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FTargetChangeConfig&       Config                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   MarkLife                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAITargetFactorLibrary::TryAddHpLowMarkToTarget(const struct FTargetChangeConfig& Config, class AActor* Target, float MarkLife)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITargetFactorLibrary", "TryAddHpLowMarkToTarget");
+
+	Params::AITargetFactorLibrary_TryAddHpLowMarkToTarget Parms{};
+
+	Parms.Config = std::move(Config);
+	Parms.Target = Target;
+	Parms.MarkLife = MarkLife;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityByUsageID
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   AbilityUsageID                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelGameplayAbility* UAIAbilityUsageLibrary::GetAbilityByUsageID(int32 AbilityUsageID, class AMarvelAIController* OwnerController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityByUsageID");
+
+	Params::AIAbilityUsageLibrary_GetAbilityByUsageID Parms{};
+
+	Parms.AbilityUsageID = AbilityUsageID;
+	Parms.OwnerController = OwnerController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityFromContext
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FRequiredAIDataForAutoAbility&AutoAbilityContext                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// class UMarvelGameplayAbility*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelGameplayAbility* UAIAbilityUsageLibrary::GetAbilityFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityFromContext");
+
+	Params::AIAbilityUsageLibrary_GetAbilityFromContext Parms{};
+
+	Parms.AutoAbilityContext = std::move(AutoAbilityContext);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetAbilityUsageDescription
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAIAbilityUsageLibrary::GetAbilityUsageDescription(const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetAbilityUsageDescription");
+
+	Params::AIAbilityUsageLibrary_GetAbilityUsageDescription Parms{};
+
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetTargetLocation
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector UAIAbilityUsageLibrary::GetTargetLocation(const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetTargetLocation");
+
+	Params::AIAbilityUsageLibrary_GetTargetLocation Parms{};
+
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetUsageConfig
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FMarvelAIAutoAbilityTable        ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FMarvelAIAutoAbilityTable UAIAbilityUsageLibrary::GetUsageConfig(const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetUsageConfig");
+
+	Params::AIAbilityUsageLibrary_GetUsageConfig Parms{};
+
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.GetUsageConfigFromContext
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FRequiredAIDataForAutoAbility&AutoAbilityContext                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FMarvelAIAutoAbilityTable*       OutUsageConfig                                         (Parm, OutParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAbilityUsageLibrary::GetUsageConfigFromContext(const struct FRequiredAIDataForAutoAbility& AutoAbilityContext, struct FMarvelAIAutoAbilityTable* OutUsageConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "GetUsageConfigFromContext");
+
+	Params::AIAbilityUsageLibrary_GetUsageConfigFromContext Parms{};
+
+	Parms.AutoAbilityContext = std::move(AutoAbilityContext);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutUsageConfig != nullptr)
+		*OutUsageConfig = std::move(Parms.OutUsageConfig);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsageLibrary.IsValidAbilityUsage
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAIAbilityUsage&           AbilityUsage                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAbilityUsageLibrary::IsValidAbilityUsage(const struct FAIAbilityUsage& AbilityUsage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIAbilityUsageLibrary", "IsValidAbilityUsage");
+
+	Params::AIAbilityUsageLibrary_IsValidAbilityUsage Parms{};
+
+	Parms.AbilityUsage = std::move(AbilityUsage);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsagePointCondition.CheckIsValidPoint
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FAbilityUsagePointData&    StandPoint                                             (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const class AMarvelAIController*        AIController                                           (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAbilityUsagePointCondition::CheckIsValidPoint(const struct FAbilityUsagePointData& StandPoint, const class AMarvelAIController* AIController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityUsagePointCondition", "CheckIsValidPoint");
+
+	Params::AIAbilityUsagePointCondition_CheckIsValidPoint Parms{};
+
+	Parms.StandPoint = std::move(StandPoint);
+	Parms.AIController = AIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityUsagePointCalculator.CalculateUsagePointPosition
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FAbilityUsagePointData&          StandPoint                                             (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAbilityUsagePointCalculator::CalculateUsagePointPosition(struct FAbilityUsagePointData& StandPoint, class AMarvelAIController* AIController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityUsagePointCalculator", "CalculateUsagePointPosition");
+
+	Params::AIAbilityUsagePointCalculator_CalculateUsagePointPosition Parms{};
+
+	Parms.StandPoint = std::move(StandPoint);
+	Parms.AIController = AIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	StandPoint = std::move(Parms.StandPoint);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAbilityPreAction.DoPreAction
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIAbilityPreAction::DoPreAction(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityPreAction", "DoPreAction");
+
+	Params::AIAbilityPreAction_DoPreAction Parms{};
+
+	Parms.Ability = Ability;
+	Parms.AIController = AIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIAbilityUsageAsset.DoAllPreActions
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AMarvelAIController*              AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAIAbilityUsageAsset::DoAllPreActions(class UMarvelGameplayAbility* Ability, class AMarvelAIController* AIController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityUsageAsset", "DoAllPreActions");
+
+	Params::AIAbilityUsageAsset_DoAllPreActions Parms{};
+
+	Parms.Ability = Ability;
+	Parms.AIController = AIController;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIAbilityUsageAsset.ShouldSkipCanActivateCheck
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAbilityUsageAsset::ShouldSkipCanActivateCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAbilityUsageAsset", "ShouldSkipCanActivateCheck");
+
+	Params::AIAbilityUsageAsset_ShouldSkipCanActivateCheck Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.AIAutoAbilitySolver.Init
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<int32>&                    UsageList                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAIAutoAbilitySolver::Init(const TArray<int32>& UsageList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAutoAbilitySolver", "Init");
+
+	Params::AIAutoAbilitySolver_Init Parms{};
+
+	Parms.UsageList = std::move(UsageList);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIAutoAbilitySolver.OnUsageFailed
+// (Final, Native, Public, BlueprintCallable)
+
+void UAIAutoAbilitySolver::OnUsageFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAutoAbilitySolver", "OnUsageFailed");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIAutoAbilitySolver.TryGetAbilityUsage
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FRequiredAIDataForAutoAbility&RequiredData                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FAIAbilityUsage*                 OutAbilityUsage                                        (Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAIAutoAbilitySolver::TryGetAbilityUsage(const struct FRequiredAIDataForAutoAbility& RequiredData, struct FAIAbilityUsage* OutAbilityUsage) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAutoAbilitySolver", "TryGetAbilityUsage");
+
+	Params::AIAutoAbilitySolver_TryGetAbilityUsage Parms{};
+
+	Parms.RequiredData = std::move(RequiredData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAbilityUsage != nullptr)
+		*OutAbilityUsage = std::move(Parms.OutAbilityUsage);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreSubsystem
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UBattleScoreSubsystem*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBattleScoreSubsystem* UBattleScoreSubsystem::GetBattleScoreSubsystem(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BattleScoreSubsystem", "GetBattleScoreSubsystem");
+
+	Params::BattleScoreSubsystem_GetBattleScoreSubsystem Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class AActor*                     TargetActor                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBattleScoreSubsystem::GetBattleScoreForActor(const class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForActor");
+
+	Params::BattleScoreSubsystem_GetBattleScoreForActor Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForCharacter
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class AMarvelBaseCharacter*       HeroCharacter                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBattleScoreSubsystem::GetBattleScoreForCharacter(const class AMarvelBaseCharacter* HeroCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForCharacter");
+
+	Params::BattleScoreSubsystem_GetBattleScoreForCharacter Parms{};
+
+	Parms.HeroCharacter = HeroCharacter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BattleScoreSubsystem.GetBattleScoreForCharacterGroup
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<class AMarvelBaseCharacter*>&CharacterGroup                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBattleScoreSubsystem::GetBattleScoreForCharacterGroup(const TArray<class AMarvelBaseCharacter*>& CharacterGroup)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BattleScoreSubsystem", "GetBattleScoreForCharacterGroup");
+
+	Params::BattleScoreSubsystem_GetBattleScoreForCharacterGroup Parms{};
+
+	Parms.CharacterGroup = std::move(CharacterGroup);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIDataProvider_PyBase.PyBindData
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UObject*                    Owner                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RequestId                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIDataProvider_PyBase::PyBindData(const class UObject* Owner, int32 RequestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIDataProvider_PyBase", "PyBindData");
+
+	Params::MarvelAIDataProvider_PyBase_PyBindData Parms{};
+
+	Parms.Owner = Owner;
+	Parms.RequestId = RequestId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetControlledHero
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelBaseCharacter* UBTDecorator_MarvelInstancedBase::K2_GetControlledHero() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetControlledHero");
+
+	Params::BTDecorator_MarvelInstancedBase_K2_GetControlledHero Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetControlledPawn
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class APawn* UBTDecorator_MarvelInstancedBase::K2_GetControlledPawn() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetControlledPawn");
+
+	Params::BTDecorator_MarvelInstancedBase_K2_GetControlledPawn Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetMarvelAIOwner
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelAIController* UBTDecorator_MarvelInstancedBase::K2_GetMarvelAIOwner() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetMarvelAIOwner");
+
+	Params::BTDecorator_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTDecorator_MarvelInstancedBase.K2_GetOwnerBTComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBehaviorTreeComponent* UBTDecorator_MarvelInstancedBase::K2_GetOwnerBTComp() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTDecorator_MarvelInstancedBase", "K2_GetOwnerBTComp");
+
+	Params::BTDecorator_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTD_CampCheck.Check
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const class UBehaviorTreeComponent*     OwnerComp                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTD_CampCheck::Check(const class UBehaviorTreeComponent* OwnerComp) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_CampCheck", "Check");
+
+	Params::BTD_CampCheck_Check Parms{};
+
+	Parms.OwnerComp = OwnerComp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTD_CampCheck.CheckOwnershipType
+// (Native, Event, Public, BlueprintEvent, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIFilterSide                           BattleSide                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTD_CampCheck::CheckOwnershipType(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_CampCheck", "CheckOwnershipType");
+
+	Params::BTD_CampCheck_CheckOwnershipType Parms{};
+
+	Parms.OwnerCharacter = OwnerCharacter;
+	Parms.BattleSide = BattleSide;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTD_CampCheck.GetScoreForSide
+// (Native, Event, Public, BlueprintEvent, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIFilterSide                           BattleSide                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBTD_CampCheck::GetScoreForSide(class AMarvelBaseCharacter* OwnerCharacter, EAIFilterSide BattleSide) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_CampCheck", "GetScoreForSide");
+
+	Params::BTD_CampCheck_GetScoreForSide Parms{};
+
+	Parms.OwnerCharacter = OwnerCharacter;
+	Parms.BattleSide = BattleSide;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTD_CheckGameplayTag.OnCheckTagUpdated
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              InTag                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bExists                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTD_CheckGameplayTag::OnCheckTagUpdated(const struct FGameplayTag& InTag, bool bExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_CheckGameplayTag", "OnCheckTagUpdated");
+
+	Params::BTD_CheckGameplayTag_OnCheckTagUpdated Parms{};
+
+	Parms.InTag = std::move(InTag);
+	Parms.bExists = bExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTD_PayloadCheck.Check
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   Stage                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Score                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Speed                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Team                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EOwnershipType                          Ownership                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTD_PayloadCheck::Check(int32 Stage, float Score, float Speed, int32 Team, EOwnershipType Ownership) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_PayloadCheck", "Check");
+
+	Params::BTD_PayloadCheck_Check Parms{};
+
+	Parms.Stage = Stage;
+	Parms.Score = Score;
+	Parms.Speed = Speed;
+	Parms.Team = Team;
+	Parms.Ownership = Ownership;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTD_SpaceDistCheck.Check
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTD_SpaceDistCheck::Check(class UBehaviorTreeComponent* OwnerComp) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTD_SpaceDistCheck", "Check");
+
+	Params::BTD_SpaceDistCheck_Check Parms{};
+
+	Parms.OwnerComp = OwnerComp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -16116,6 +13087,33 @@ void UMarvelAISystem::RemoveInputRecordAI(const struct FImGuiAutomationTestConte
 }
 
 
+// Function MarvelAI.MarvelAISystem.SetAIAbilityRedirect
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const int32                             OriginalAbilityID                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             RedirectAbilityID                                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAISystem::SetAIAbilityRedirect(const int32 OriginalAbilityID, const int32 RedirectAbilityID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAISystem", "SetAIAbilityRedirect");
+
+	Params::MarvelAISystem_SetAIAbilityRedirect Parms{};
+
+	Parms.OriginalAbilityID = OriginalAbilityID;
+	Parms.RedirectAbilityID = RedirectAbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function MarvelAI.MarvelAISystem.SetCustomVisLogCategories
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -16202,9 +13200,10 @@ void UMarvelAISystem::UnregisterAI(class AMarvelAIController* AIController)
 // const class FString&                    Name_0                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   DifficultyMode                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   DifficultyLevel                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EHeroRole                               HeroRole                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class AMarvelAIControllerBase*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class AMarvelAIControllerBase* UMarvelAISystem::AddAI(int32 UID, int32 HeroID, EBattleSide BattleSide, const class FString& Name_0, int32 DifficultyMode, int32 DifficultyLevel) const
+class AMarvelAIControllerBase* UMarvelAISystem::AddAI(int32 UID, int32 HeroID, EBattleSide BattleSide, const class FString& Name_0, int32 DifficultyMode, int32 DifficultyLevel, EHeroRole HeroRole) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -16219,6 +13218,7 @@ class AMarvelAIControllerBase* UMarvelAISystem::AddAI(int32 UID, int32 HeroID, E
 	Parms.Name_0 = std::move(Name_0);
 	Parms.DifficultyMode = DifficultyMode;
 	Parms.DifficultyLevel = DifficultyLevel;
+	Parms.HeroRole = HeroRole;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -16264,6 +13264,34 @@ const class UMarvelAIGameModeDefaultConfigAsset* UMarvelAISystem::GetAIGameModeC
 		Func = Class->GetFunction("MarvelAISystem", "GetAIGameModeConfig");
 
 	Params::MarvelAISystem_GetAIGameModeConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAISystem.GetAIRedirectAbilityID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   OriginalAbilityID                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UMarvelAISystem::GetAIRedirectAbilityID(int32 OriginalAbilityID) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAISystem", "GetAIRedirectAbilityID");
+
+	Params::MarvelAISystem_GetAIRedirectAbilityID Parms{};
+
+	Parms.OriginalAbilityID = OriginalAbilityID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -16323,6 +13351,3452 @@ bool UMarvelAISystem::IsInRound() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTService_MarvelInstancedBase.OnDestroyed
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTService_MarvelInstancedBase::OnDestroyed(class UBehaviorTreeComponent* OwnerComp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTService_MarvelInstancedBase", "OnDestroyed");
+
+	Params::BTService_MarvelInstancedBase_OnDestroyed Parms{};
+
+	Parms.OwnerComp = OwnerComp;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetControlledHero
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelBaseCharacter* UBTService_MarvelInstancedBase::K2_GetControlledHero() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetControlledHero");
+
+	Params::BTService_MarvelInstancedBase_K2_GetControlledHero Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetControlledPawn
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class APawn* UBTService_MarvelInstancedBase::K2_GetControlledPawn() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetControlledPawn");
+
+	Params::BTService_MarvelInstancedBase_K2_GetControlledPawn Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetMarvelAIOwner
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelAIController* UBTService_MarvelInstancedBase::K2_GetMarvelAIOwner() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetMarvelAIOwner");
+
+	Params::BTService_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTService_MarvelInstancedBase.K2_GetOwnerBTComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBehaviorTreeComponent* UBTService_MarvelInstancedBase::K2_GetOwnerBTComp() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTService_MarvelInstancedBase", "K2_GetOwnerBTComp");
+
+	Params::BTService_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavModifierComponent.K2_UpdateNavEffect
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    bEffectNav                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelNavModifierComponent::K2_UpdateNavEffect(bool bEffectNav)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelNavModifierComponent", "K2_UpdateNavEffect");
+
+	Params::MarvelNavModifierComponent_K2_UpdateNavEffect Parms{};
+
+	Parms.bEffectNav = bEffectNav;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.CheckShortDistancePointReachable
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AAIController*                    AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   MaxSearchNode                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::CheckShortDistancePointReachable(class AAIController* AIController, const struct FVector& TargetLocation, int32 MaxSearchNode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "CheckShortDistancePointReachable");
+
+	Params::MarvelNavigationLibrary_CheckShortDistancePointReachable Parms{};
+
+	Parms.AIController = AIController;
+	Parms.TargetLocation = std::move(TargetLocation);
+	Parms.MaxSearchNode = MaxSearchNode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.DebugDrawTileLayersBB
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   WorldPosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelNavigationLibrary::DebugDrawTileLayersBB(class UObject* WorldContextObject, const struct FVector& WorldPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "DebugDrawTileLayersBB");
+
+	Params::MarvelNavigationLibrary_DebugDrawTileLayersBB Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.WorldPosition = std::move(WorldPosition);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.GetLocationTileCoord
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ShouldMarkDebug                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  OutTileX                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  OutTileY                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::GetLocationTileCoord(class UObject* WorldContext, const struct FVector& InLocation, bool ShouldMarkDebug, int32* OutTileX, int32* OutTileY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "GetLocationTileCoord");
+
+	Params::MarvelNavigationLibrary_GetLocationTileCoord Parms{};
+
+	Parms.WorldContext = WorldContext;
+	Parms.InLocation = std::move(InLocation);
+	Parms.ShouldMarkDebug = ShouldMarkDebug;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutTileX != nullptr)
+		*OutTileX = Parms.OutTileX;
+
+	if (OutTileY != nullptr)
+		*OutTileY = Parms.OutTileY;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.HasValidFlyPath
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   StartLocation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::HasValidFlyPath(class UObject* WCO, const struct FVector& StartLocation, const struct FVector& TargetLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "HasValidFlyPath");
+
+	Params::MarvelNavigationLibrary_HasValidFlyPath Parms{};
+
+	Parms.WCO = WCO;
+	Parms.StartLocation = std::move(StartLocation);
+	Parms.TargetLocation = std::move(TargetLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.K2_ProjectLocationToNavMesh
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   InExtent                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector*                         OutLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::K2_ProjectLocationToNavMesh(class UObject* WorldContext, const struct FVector& InLocation, const struct FVector& InExtent, struct FVector* OutLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "K2_ProjectLocationToNavMesh");
+
+	Params::MarvelNavigationLibrary_K2_ProjectLocationToNavMesh Parms{};
+
+	Parms.WorldContext = WorldContext;
+	Parms.InLocation = std::move(InLocation);
+	Parms.InExtent = std::move(InExtent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutLocation != nullptr)
+		*OutLocation = std::move(Parms.OutLocation);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.RebuildNavmesh
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelNavigationLibrary::RebuildNavmesh(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "RebuildNavmesh");
+
+	Params::MarvelNavigationLibrary_RebuildNavmesh Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.SetDirtyAreaMarkEnabled
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    NewIsEnabled                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelNavigationLibrary::SetDirtyAreaMarkEnabled(class UObject* WorldContext, bool NewIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "SetDirtyAreaMarkEnabled");
+
+	Params::MarvelNavigationLibrary_SetDirtyAreaMarkEnabled Parms{};
+
+	Parms.WorldContext = WorldContext;
+	Parms.NewIsEnabled = NewIsEnabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.SetStaticNavigation
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bNewIsStrictlyStatic                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelNavigationLibrary::SetStaticNavigation(bool bNewIsStrictlyStatic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "SetStaticNavigation");
+
+	Params::MarvelNavigationLibrary_SetStaticNavigation Parms{};
+
+	Parms.bNewIsStrictlyStatic = bNewIsStrictlyStatic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.VLogNavData
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AActor*                           CenterActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::VLogNavData(class AActor* CenterActor, const struct FVector& Extent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "VLogNavData");
+
+	Params::MarvelNavigationLibrary_VLogNavData Parms{};
+
+	Parms.CenterActor = CenterActor;
+	Parms.Extent = std::move(Extent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelNavigationLibrary.VLogTileData
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InTileX                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InTileY                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelNavigationLibrary::VLogTileData(class UObject* WorldContext, int32 InTileX, int32 InTileY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "VLogTileData");
+
+	Params::MarvelNavigationLibrary_VLogTileData Parms{};
+
+	Parms.WorldContext = WorldContext;
+	Parms.InTileX = InTileX;
+	Parms.InTileY = InTileY;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.ActionRequirementBase.Requirement
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UActionRequirementBase::Requirement(class AAIController* OwnerController, class AActor* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ActionRequirementBase", "Requirement");
+
+	Params::ActionRequirementBase_Requirement Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.ClearOverrideMoveFocus
+// (Final, Native, Public, BlueprintCallable)
+
+void UMarvelPathFollowingComponent::ClearOverrideMoveFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "ClearOverrideMoveFocus");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.MarkCrossMoveForDuration
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// float                                   NewDuration                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelPathFollowingComponent::MarkCrossMoveForDuration(float NewDuration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "MarkCrossMoveForDuration");
+
+	Params::MarvelPathFollowingComponent_MarkCrossMoveForDuration Parms{};
+
+	Parms.NewDuration = NewDuration;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.SetCrossMoveEnabled
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    NewIsEnabled                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelPathFollowingComponent::SetCrossMoveEnabled(bool NewIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetCrossMoveEnabled");
+
+	Params::MarvelPathFollowingComponent_SetCrossMoveEnabled Parms{};
+
+	Parms.NewIsEnabled = NewIsEnabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.SetDecelerateForLastPathSegment
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bNewIsEnabled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelPathFollowingComponent::SetDecelerateForLastPathSegment(bool bNewIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetDecelerateForLastPathSegment");
+
+	Params::MarvelPathFollowingComponent_SetDecelerateForLastPathSegment Parms{};
+
+	Parms.bNewIsEnabled = bNewIsEnabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.SetMoveInputScale
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelPathFollowingComponent::SetMoveInputScale(float Scale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetMoveInputScale");
+
+	Params::MarvelPathFollowingComponent_SetMoveInputScale Parms{};
+
+	Parms.Scale = Scale;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.SetOverrideMoveFocus
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   NewMoveFocus                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelPathFollowingComponent::SetOverrideMoveFocus(const struct FVector& NewMoveFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetOverrideMoveFocus");
+
+	Params::MarvelPathFollowingComponent_SetOverrideMoveFocus Parms{};
+
+	Parms.NewMoveFocus = std::move(NewMoveFocus);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.CheckCurrentStatus
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EPathFollowingStatus                    TargetStatus                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelPathFollowingComponent::CheckCurrentStatus(EPathFollowingStatus TargetStatus) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "CheckCurrentStatus");
+
+	Params::MarvelPathFollowingComponent_CheckCurrentStatus Parms{};
+
+	Parms.TargetStatus = TargetStatus;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.GetCurrentStatus
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EPathFollowingStatus                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPathFollowingStatus UMarvelPathFollowingComponent::GetCurrentStatus() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "GetCurrentStatus");
+
+	Params::MarvelPathFollowingComponent_GetCurrentStatus Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelPathFollowingComponent.IsHandlingLinkMove
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelPathFollowingComponent::IsHandlingLinkMove() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelPathFollowingComponent", "IsHandlingLinkMove");
+
+	Params::MarvelPathFollowingComponent_IsHandlingLinkMove Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.BuildDefaultSimplePath
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           MovingActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           FinalTarget                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::BuildDefaultSimplePath(struct FWayPointPath& WayPointPath, class AActor* MovingActor, class AActor* FinalTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "BuildDefaultSimplePath");
+
+	Params::WayPointPathFunctionLibrary_BuildDefaultSimplePath Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.MovingActor = MovingActor;
+	Parms.FinalTarget = FinalTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.Clear
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::Clear(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "Clear");
+
+	Params::WayPointPathFunctionLibrary_Clear Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.GetCurrentWayPoint
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AActor* UWayPointPathFunctionLibrary::GetCurrentWayPoint(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GetCurrentWayPoint");
+
+	Params::WayPointPathFunctionLibrary_GetCurrentWayPoint Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.GetFinalTarget
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AActor* UWayPointPathFunctionLibrary::GetFinalTarget(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GetFinalTarget");
+
+	Params::WayPointPathFunctionLibrary_GetFinalTarget Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.GoNext
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::GoNext(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "GoNext");
+
+	Params::WayPointPathFunctionLibrary_GoNext Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.InitPathForMovingActor
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           MovingActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ShouldUpdateProgress                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EWayPointMark                           PathMark                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::InitPathForMovingActor(struct FWayPointPath& WayPointPath, class AActor* MovingActor, bool ShouldUpdateProgress, EWayPointMark PathMark)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "InitPathForMovingActor");
+
+	Params::WayPointPathFunctionLibrary_InitPathForMovingActor Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.MovingActor = MovingActor;
+	Parms.ShouldUpdateProgress = ShouldUpdateProgress;
+	Parms.PathMark = PathMark;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.IsMovingActorOutOfPath
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   AllowedRadius                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::IsMovingActorOutOfPath(const struct FWayPointPath& WayPointPath, float AllowedRadius)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsMovingActorOutOfPath");
+
+	Params::WayPointPathFunctionLibrary_IsMovingActorOutOfPath Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.AllowedRadius = AllowedRadius;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.IsPathFinished
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::IsPathFinished(const struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsPathFinished");
+
+	Params::WayPointPathFunctionLibrary_IsPathFinished Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.IsPathValid
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::IsPathValid(const struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsPathValid");
+
+	Params::WayPointPathFunctionLibrary_IsPathValid Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.IsRingPath
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::IsRingPath(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "IsRingPath");
+
+	Params::WayPointPathFunctionLibrary_IsRingPath Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.MarkRingPath
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           RingStartPoint                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::MarkRingPath(struct FWayPointPath& WayPointPath, class AActor* RingStartPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "MarkRingPath");
+
+	Params::WayPointPathFunctionLibrary_MarkRingPath Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.RingStartPoint = RingStartPoint;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.ResetProgress
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::ResetProgress(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "ResetProgress");
+
+	Params::WayPointPathFunctionLibrary_ResetProgress Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.SetPathMark
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// EWayPointMark                           NewWayPointMark                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::SetPathMark(struct FWayPointPath& WayPointPath, EWayPointMark NewWayPointMark)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "SetPathMark");
+
+	Params::WayPointPathFunctionLibrary_SetPathMark Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.NewWayPointMark = NewWayPointMark;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.TakeNextLocationToReach
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector UWayPointPathFunctionLibrary::TakeNextLocationToReach(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "TakeNextLocationToReach");
+
+	Params::WayPointPathFunctionLibrary_TakeNextLocationToReach Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.UpdateProgressInPath
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FWayPointPath&                   WayPointPath                                           (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UWayPointPathFunctionLibrary::UpdateProgressInPath(struct FWayPointPath& WayPointPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "UpdateProgressInPath");
+
+	Params::WayPointPathFunctionLibrary_UpdateProgressInPath Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	WayPointPath = std::move(Parms.WayPointPath);
+}
+
+
+// Function MarvelAI.WayPointPathFunctionLibrary.UpdateSafeFactorForRoutes
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FWayPointPath&             WayPointPath                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   SafeFactor                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UWayPointPathFunctionLibrary::UpdateSafeFactorForRoutes(const struct FWayPointPath& WayPointPath, float SafeFactor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("WayPointPathFunctionLibrary", "UpdateSafeFactorForRoutes");
+
+	Params::WayPointPathFunctionLibrary_UpdateSafeFactorForRoutes Parms{};
+
+	Parms.WayPointPath = std::move(WayPointPath);
+	Parms.SafeFactor = SafeFactor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_DamageStatistics.OnTakingDamage
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_DamageStatistics::OnTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_DamageStatistics", "OnTakingDamage");
+
+	Params::BTS_DamageStatistics_OnTakingDamage Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SelectTargetNew.OnTargetTakingDamage
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_SelectTargetNew::OnTargetTakingDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SelectTargetNew", "OnTargetTakingDamage");
+
+	Params::BTS_SelectTargetNew_OnTargetTakingDamage Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.GetAIUserName
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UBTS_SendChatMessage::GetAIUserName(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "GetAIUserName");
+
+	Params::BTS_SendChatMessage_GetAIUserName Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnAllDeath
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnAllDeath(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnAllDeath");
+
+	Params::BTS_SendChatMessage_OnAllDeath Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnDeath
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnDeath(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnDeath");
+
+	Params::BTS_SendChatMessage_OnDeath Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnEnergyFull
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnEnergyFull(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnEnergyFull");
+
+	Params::BTS_SendChatMessage_OnEnergyFull Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnGameBegin
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnGameBegin(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnGameBegin");
+
+	Params::BTS_SendChatMessage_OnGameBegin Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnGameEnd
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnGameEnd(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnGameEnd");
+
+	Params::BTS_SendChatMessage_OnGameEnd Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnHeal
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnHeal(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnHeal");
+
+	Params::BTS_SendChatMessage_OnHeal Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.OnHealthChanged
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIEventArgs&              Args                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::OnHealthChanged(const struct FAIEventArgs& Args)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "OnHealthChanged");
+
+	Params::BTS_SendChatMessage_OnHealthChanged Parms{};
+
+	Parms.Args = std::move(Args);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.SendChatMessage
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::SendChatMessage(const class FString& Msg, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "SendChatMessage");
+
+	Params::BTS_SendChatMessage_SendChatMessage Parms{};
+
+	Parms.Msg = std::move(Msg);
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.SendMessage
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// struct FAICommunicateEx*                Communicate                                            (Parm, OutParm, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::SendMessage(struct FAICommunicateEx* Communicate, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "SendMessage");
+
+	Params::BTS_SendChatMessage_SendMessage Parms{};
+
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (Communicate != nullptr)
+		*Communicate = std::move(Parms.Communicate);
+}
+
+
+// Function MarvelAI.BTS_SendChatMessage.SendQuickMessage
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const int32&                            ID                                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_SendChatMessage::SendQuickMessage(const int32& ID, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_SendChatMessage", "SendQuickMessage");
+
+	Params::BTS_SendChatMessage_SendQuickMessage Parms{};
+
+	Parms.ID = ID;
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdateMatchState_New.OnMatchStateChange
+// (Final, Native, Private)
+// Parameters:
+// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_UpdateMatchState_New::OnMatchStateChange(EMatchState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateMatchState_New", "OnMatchStateChange");
+
+	Params::BTS_UpdateMatchState_New_OnMatchStateChange Parms{};
+
+	Parms.NewState = NewState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdateControlState.GetCampControlState
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIFilterSide                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EAIFilterSide UBTS_UpdateControlState::GetCampControlState(class AMarvelBaseCharacter* OwnerCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateControlState", "GetCampControlState");
+
+	Params::BTS_UpdateControlState_GetCampControlState Parms{};
+
+	Parms.OwnerCharacter = OwnerCharacter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateControlState.GetCampProgress
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class AMarvelBaseCharacter*             OwnerCharacter                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<float>                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<float> UBTS_UpdateControlState::GetCampProgress(class AMarvelBaseCharacter* OwnerCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateControlState", "GetCampProgress");
+
+	Params::BTS_UpdateControlState_GetCampProgress Parms{};
+
+	Parms.OwnerCharacter = OwnerCharacter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayloadOwnership
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// EOwnershipType                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EOwnershipType UBTS_UpdateEscortStateNew::GetPayloadOwnership()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayloadOwnership");
+
+	Params::BTS_UpdateEscortStateNew_GetPayloadOwnership Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayLoadProgress
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBTS_UpdateEscortStateNew::GetPayLoadProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayLoadProgress");
+
+	Params::BTS_UpdateEscortStateNew_GetPayLoadProgress Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateEscortStateNew.GetPayLoadSpeed
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBTS_UpdateEscortStateNew::GetPayLoadSpeed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "GetPayLoadSpeed");
+
+	Params::BTS_UpdateEscortStateNew_GetPayLoadSpeed Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateEscortStateNew.OnPreGameMatchEvent
+// (Final, Native, Private)
+// Parameters:
+// EMatchState                             MatchState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_UpdateEscortStateNew::OnPreGameMatchEvent(EMatchState MatchState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "OnPreGameMatchEvent");
+
+	Params::BTS_UpdateEscortStateNew_OnPreGameMatchEvent Parms{};
+
+	Parms.MatchState = MatchState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdateEscortStateNew.SetCurrentStage
+// (Final, Native, Private)
+// Parameters:
+// const class FString&                    StageName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_UpdateEscortStateNew::SetCurrentStage(const class FString& StageName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateEscortStateNew", "SetCurrentStage");
+
+	Params::BTS_UpdateEscortStateNew_SetCurrentStage Parms{};
+
+	Parms.StageName = std::move(StageName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdateFireLine.IsActorInFireLineState
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// const class AMarvelBaseCharacter*       Character                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTS_UpdateFireLine::IsActorInFireLineState(const class AMarvelBaseCharacter* Character)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateFireLine", "IsActorInFireLineState");
+
+	Params::BTS_UpdateFireLine_IsActorInFireLineState Parms{};
+
+	Parms.Character = Character;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTS_UpdateMatchState.OnMatchStateChange
+// (Final, Native, Protected)
+// Parameters:
+// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_UpdateMatchState::OnMatchStateChange(EMatchState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateMatchState", "OnMatchStateChange");
+
+	Params::BTS_UpdateMatchState_OnMatchStateChange Parms{};
+
+	Parms.NewState = NewState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdatePath.OnLeaderPathUpdate
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FAIMoveRequest&            MoveRequest                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FNavPathWrapper&           NewPath                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTS_UpdatePath::OnLeaderPathUpdate(const struct FAIMoveRequest& MoveRequest, const struct FNavPathWrapper& NewPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdatePath", "OnLeaderPathUpdate");
+
+	Params::BTS_UpdatePath_OnLeaderPathUpdate Parms{};
+
+	Parms.MoveRequest = std::move(MoveRequest);
+	Parms.NewPath = std::move(NewPath);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTS_UpdateSight.OnResetSightConfig
+// (Final, Native, Protected)
+// Parameters:
+// float                                   NewRadius                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTS_UpdateSight::OnResetSightConfig(float NewRadius)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTS_UpdateSight", "OnResetSightConfig");
+
+	Params::BTS_UpdateSight_OnResetSightConfig Parms{};
+
+	Parms.NewRadius = NewRadius;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.ShelterPathFinder.RequestMove
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelAIController*              AIOwner                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPathFollowingRequestResult             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPathFollowingRequestResult UShelterPathFinder::RequestMove(class AMarvelAIController* AIOwner, const struct FVector& TargetLocation) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShelterPathFinder", "RequestMove");
+
+	Params::ShelterPathFinder_RequestMove Parms{};
+
+	Parms.AIOwner = AIOwner;
+	Parms.TargetLocation = std::move(TargetLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_GeneralActivateAbility.EndCurrentTask
+// (Final, Native, Protected)
+
+void UBTTask_GeneralActivateAbility::EndCurrentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_GeneralActivateAbility", "EndCurrentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTTask_GeneralActivateAbility.OnAbilityBreak
+// (Final, Native, Protected)
+
+void UBTTask_GeneralActivateAbility::OnAbilityBreak()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_GeneralActivateAbility", "OnAbilityBreak");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTTask_AIActivateAbilityTask.InitAbilityTask
+// (Final, Native, Protected)
+
+void UBTTask_AIActivateAbilityTask::InitAbilityTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_AIActivateAbilityTask", "InitAbilityTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTTask_ChaseTarget.OnActorBump
+// (Final, Native, Public, HasOutParams, HasDefaults)
+// Parameters:
+// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           OtherActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   NormalImpulse                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UBTTask_ChaseTarget::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_ChaseTarget", "OnActorBump");
+
+	Params::BTTask_ChaseTarget_OnActorBump Parms{};
+
+	Parms.SelfActor = SelfActor;
+	Parms.OtherActor = OtherActor;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIAssetLibrary.GetGameModeDefaultConfig
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UMarvelAIGameModeDefaultConfigAsset*ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+const class UMarvelAIGameModeDefaultConfigAsset* UMarvelAIAssetLibrary::GetGameModeDefaultConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIAssetLibrary", "GetGameModeDefaultConfig");
+
+	Params::MarvelAIAssetLibrary_GetGameModeDefaultConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.IsTaskEnded
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTTask_MarvelInstancedBase::IsTaskEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "IsTaskEnded");
+
+	Params::BTTask_MarvelInstancedBase_IsTaskEnded Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.ReceiveOnTaskFinished
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EBTNodeResult                           Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_MarvelInstancedBase::ReceiveOnTaskFinished(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "ReceiveOnTaskFinished");
+
+	Params::BTTask_MarvelInstancedBase_ReceiveOnTaskFinished Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.SetTickInterval
+// (Final, Native, Public)
+// Parameters:
+// float                                   NewTickInterval                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_MarvelInstancedBase::SetTickInterval(float NewTickInterval)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "SetTickInterval");
+
+	Params::BTTask_MarvelInstancedBase_SetTickInterval Parms{};
+
+	Parms.NewTickInterval = NewTickInterval;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetControlledHero
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelBaseCharacter*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelBaseCharacter* UBTTask_MarvelInstancedBase::K2_GetControlledHero() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetControlledHero");
+
+	Params::BTTask_MarvelInstancedBase_K2_GetControlledHero Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetControlledPawn
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APawn*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class APawn* UBTTask_MarvelInstancedBase::K2_GetControlledPawn() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetControlledPawn");
+
+	Params::BTTask_MarvelInstancedBase_K2_GetControlledPawn Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetMarvelAIOwner
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AMarvelAIController*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AMarvelAIController* UBTTask_MarvelInstancedBase::K2_GetMarvelAIOwner() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetMarvelAIOwner");
+
+	Params::BTTask_MarvelInstancedBase_K2_GetMarvelAIOwner Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.BTTask_MarvelInstancedBase.K2_GetOwnerBTComp
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBehaviorTreeComponent* UBTTask_MarvelInstancedBase::K2_GetOwnerBTComp() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_MarvelInstancedBase", "K2_GetOwnerBTComp");
+
+	Params::BTTask_MarvelInstancedBase_K2_GetOwnerBTComp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.AddConfigDataAsTestCase
+// (Final, Native, Protected, BlueprintCallable)
+
+void ASVONPathFindTester::AddConfigDataAsTestCase()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "AddConfigDataAsTestCase");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.AnalyzeStatData
+// (Final, Native, Protected, BlueprintCallable)
+
+void ASVONPathFindTester::AnalyzeStatData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "AnalyzeStatData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.ClassifyTestCases
+// (Final, Native, Protected, BlueprintCallable)
+
+void ASVONPathFindTester::ClassifyTestCases()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "ClassifyTestCases");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.GenerateRandomTestCasesFromActorList
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<class AActor*>&            ActorList                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   TryTimes                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASVONPathFindTester::GenerateRandomTestCasesFromActorList(const TArray<class AActor*>& ActorList, int32 TryTimes)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "GenerateRandomTestCasesFromActorList");
+
+	Params::SVONPathFindTester_GenerateRandomTestCasesFromActorList Parms{};
+
+	Parms.ActorList = std::move(ActorList);
+	Parms.TryTimes = TryTimes;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.GenerateTestCaseFromWayPoints
+// (Final, Native, Protected, BlueprintCallable)
+
+void ASVONPathFindTester::GenerateTestCaseFromWayPoints()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "GenerateTestCaseFromWayPoints");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.MakeDataForTestCase
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   StartPoint                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetPoint                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRequireHavePath                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASVONPathFindTester::MakeDataForTestCase(const struct FVector& StartPoint, const struct FVector& TargetPoint, bool bRequireHavePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "MakeDataForTestCase");
+
+	Params::SVONPathFindTester_MakeDataForTestCase Parms{};
+
+	Parms.StartPoint = std::move(StartPoint);
+	Parms.TargetPoint = std::move(TargetPoint);
+	Parms.bRequireHavePath = bRequireHavePath;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.ReceiveAnalyzeStatData
+// (Event, Protected, BlueprintEvent)
+
+void ASVONPathFindTester::ReceiveAnalyzeStatData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "ReceiveAnalyzeStatData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MarvelAI.SVONPathFindTester.UpdateTestCasePathResult
+// (Final, Native, Protected, BlueprintCallable)
+
+void ASVONPathFindTester::UpdateTestCasePathResult()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "UpdateTestCasePathResult");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.K2_FindPath
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FVector&                   StartPoint                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   TargetPoint                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>*                 OutPathPoints                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASVONPathFindTester::K2_FindPath(const struct FVector& StartPoint, const struct FVector& TargetPoint, TArray<struct FVector>* OutPathPoints) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "K2_FindPath");
+
+	Params::SVONPathFindTester_K2_FindPath Parms{};
+
+	Parms.StartPoint = std::move(StartPoint);
+	Parms.TargetPoint = std::move(TargetPoint);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutPathPoints != nullptr)
+		*OutPathPoints = std::move(Parms.OutPathPoints);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.K2_RunCheckForCase
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FPathFindTestCase&         TestCase                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASVONPathFindTester::K2_RunCheckForCase(const struct FPathFindTestCase& TestCase) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "K2_RunCheckForCase");
+
+	Params::SVONPathFindTester_K2_RunCheckForCase Parms{};
+
+	Parms.TestCase = std::move(TestCase);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.RunTestCaseWithIndexList
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const TArray<int32>&                    CaseIndexList                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASVONPathFindTester::RunTestCaseWithIndexList(const TArray<int32>& CaseIndexList) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "RunTestCaseWithIndexList");
+
+	Params::SVONPathFindTester_RunTestCaseWithIndexList Parms{};
+
+	Parms.CaseIndexList = std::move(CaseIndexList);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.RunTestCategory
+// (Final, Native, Protected, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const struct FPathTestCaseCategory&     TestCaseCategory                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void ASVONPathFindTester::RunTestCategory(const struct FPathTestCaseCategory& TestCaseCategory) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "RunTestCategory");
+
+	Params::SVONPathFindTester_RunTestCategory Parms{};
+
+	Parms.TestCaseCategory = std::move(TestCaseCategory);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.RunTestCategoryByIndex
+// (Final, Native, Protected, BlueprintCallable, Const)
+
+void ASVONPathFindTester::RunTestCategoryByIndex() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "RunTestCategoryByIndex");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.TestAllCase
+// (Final, Native, Protected, BlueprintCallable, Const)
+
+void ASVONPathFindTester::TestAllCase() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "TestAllCase");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.TestAllCategory
+// (Final, Native, Protected, BlueprintCallable, Const)
+
+void ASVONPathFindTester::TestAllCategory() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "TestAllCategory");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.TestCertainCase
+// (Final, Native, Protected, BlueprintCallable, Const)
+
+void ASVONPathFindTester::TestCertainCase() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "TestCertainCase");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.SVONPathFindTester.UpdateVolume
+// (Final, Native, Protected, BlueprintCallable, Const)
+
+void ASVONPathFindTester::UpdateVolume() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SVONPathFindTester", "UpdateVolume");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTT_GeneralMoveTo.OnForceMoveTaskEnd
+// (Final, Native, Protected)
+// Parameters:
+// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTT_GeneralMoveTo::OnForceMoveTaskEnd(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnForceMoveTaskEnd");
+
+	Params::BTT_GeneralMoveTo_OnForceMoveTaskEnd Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTT_GeneralMoveTo.OnMoveCompleted
+// (Final, Native, Protected)
+// Parameters:
+// const struct FAIRequestID&              RequestID                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// EPathFollowingResult                    Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint16                                  Flag                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTT_GeneralMoveTo::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult Result, uint16 Flag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnMoveCompleted");
+
+	Params::BTT_GeneralMoveTo_OnMoveCompleted Parms{};
+
+	Parms.RequestID = std::move(RequestID);
+	Parms.Result = Result;
+	Parms.Flag = Flag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTT_GeneralMoveTo.OnSVONMoveRequestFailed
+// (Final, Native, Protected)
+
+void UBTT_GeneralMoveTo::OnSVONMoveRequestFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTT_GeneralMoveTo", "OnSVONMoveRequestFailed");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.StrategyPointActor.SetShelterIsBroken
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bNewIsBroken                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AStrategyPointActor::SetShelterIsBroken(bool bNewIsBroken)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StrategyPointActor", "SetShelterIsBroken");
+
+	Params::StrategyPointActor_SetShelterIsBroken Parms{};
+
+	Parms.bNewIsBroken = bNewIsBroken;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.StrategyPointActor.DebugDrawPointData
+// (Final, Native, Public, Const)
+
+void AStrategyPointActor::DebugDrawPointData() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StrategyPointActor", "DebugDrawPointData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.BTT_TokenGateTemplate.ReceiveExecuteTokenTask
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UBehaviorTreeComponent*           OwnerComp                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTT_TokenGateTemplate::ReceiveExecuteTokenTask(class UBehaviorTreeComponent* OwnerComp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTT_TokenGateTemplate", "ReceiveExecuteTokenTask");
+
+	Params::BTT_TokenGateTemplate_ReceiveExecuteTokenTask Parms{};
+
+	Parms.OwnerComp = OwnerComp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MarvelAI.WayPoint.CheckValid
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AWayPoint::CheckValid()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPoint", "CheckValid");
+
+	Params::WayPoint_CheckValid Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPoint.SelectNextWayPoint
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AWayPoint*                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AWayPoint* AWayPoint::SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPoint", "SelectNextWayPoint");
+
+	Params::WayPoint_SelectNextWayPoint Parms{};
+
+	Parms.ActorMovingAlong = ActorMovingAlong;
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPoint.CheckIsProgressInRange
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   CurrentProgress                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AWayPoint::CheckIsProgressInRange(float CurrentProgress) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPoint", "CheckIsProgressInRange");
+
+	Params::WayPoint_CheckIsProgressInRange Parms{};
+
+	Parms.CurrentProgress = CurrentProgress;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPoint.GetMaxSafeFactorInNextRoutes
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AWayPoint::GetMaxSafeFactorInNextRoutes() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPoint", "GetMaxSafeFactorInNextRoutes");
+
+	Params::WayPoint_GetMaxSafeFactorInNextRoutes Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPoint.IsPrepareArea
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AWayPoint::IsPrepareArea() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPoint", "IsPrepareArea");
+
+	Params::WayPoint_IsPrepareArea Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIAlarmSubsystem.OnActorActivateAbility
+// (Final, Native, Private)
+// Parameters:
+// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    SessionID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelGameplayAbility*           SourceAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIAlarmSubsystem::OnActorActivateAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnActorActivateAbility");
+
+	Params::MarvelAIAlarmSubsystem_OnActorActivateAbility Parms{};
+
+	Parms.Source = Source;
+	Parms.AbilityID = AbilityID;
+	Parms.SessionID = std::move(SessionID);
+	Parms.SourceAbility = SourceAbility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIAlarmSubsystem.OnActorEndAbility
+// (Final, Native, Private)
+// Parameters:
+// class AActor*                           Source                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    SessionID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelGameplayAbility*           SourceAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIAlarmSubsystem::OnActorEndAbility(class AActor* Source, int32 AbilityID, const class FString& SessionID, class UMarvelGameplayAbility* SourceAbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnActorEndAbility");
+
+	Params::MarvelAIAlarmSubsystem_OnActorEndAbility Parms{};
+
+	Parms.Source = Source;
+	Parms.AbilityID = AbilityID;
+	Parms.SessionID = std::move(SessionID);
+	Parms.SourceAbility = SourceAbility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIAlarmSubsystem.OnGameQuittingStart
+// (Final, Native, Private)
+
+void UMarvelAIAlarmSubsystem::OnGameQuittingStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnGameQuittingStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIAlarmSubsystem.OnMatchStateChange
+// (Final, Native, Private)
+// Parameters:
+// EMatchState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIAlarmSubsystem::OnMatchStateChange(EMatchState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIAlarmSubsystem", "OnMatchStateChange");
+
+	Params::MarvelAIAlarmSubsystem_OnMatchStateChange Parms{};
+
+	Parms.NewState = NewState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.AIDifficultyTableHelper.GetAttributeValueForHero
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAIDifficultyAttributeConfig&AttributeConfig                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AMarvelBaseCharacter*             MarvelHero                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAIDifficultyTableHelper::GetAttributeValueForHero(const struct FAIDifficultyAttributeConfig& AttributeConfig, class AMarvelBaseCharacter* MarvelHero)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AIDifficultyTableHelper", "GetAttributeValueForHero");
+
+	Params::AIDifficultyTableHelper_GetAttributeValueForHero Parms{};
+
+	Parms.AttributeConfig = std::move(AttributeConfig);
+	Parms.MarvelHero = MarvelHero;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetAIGlobalDataSubsystem
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelAIGlobalDataSubsystem*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelAIGlobalDataSubsystem* UMarvelAIGlobalDataSubsystem::GetAIGlobalDataSubsystem(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAIGlobalDataSubsystem", "GetAIGlobalDataSubsystem");
+
+	Params::MarvelAIGlobalDataSubsystem_GetAIGlobalDataSubsystem Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.CanSummonerBeSense
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const int32                             SummonerID                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIGlobalDataSubsystem::CanSummonerBeSense(const int32 SummonerID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "CanSummonerBeSense");
+
+	Params::MarvelAIGlobalDataSubsystem_CanSummonerBeSense Parms{};
+
+	Parms.SummonerID = SummonerID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.CheckExistLevelStaticActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIGlobalDataSubsystem::CheckExistLevelStaticActor(TSubclassOf<class AActor> ActorClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "CheckExistLevelStaticActor");
+
+	Params::MarvelAIGlobalDataSubsystem_CheckExistLevelStaticActor Parms{};
+
+	Parms.ActorClass = ActorClass;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetActorUID
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UMarvelAIGlobalDataSubsystem::GetActorUID(const class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetActorUID");
+
+	Params::MarvelAIGlobalDataSubsystem_GetActorUID Parms{};
+
+	Parms.Actor = Actor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetLevelStaticActors
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UMarvelAIGlobalDataSubsystem::GetLevelStaticActors(TSubclassOf<class AActor> ActorClass, TArray<class AActor*>* OutActors)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetLevelStaticActors");
+
+	Params::MarvelAIGlobalDataSubsystem_GetLevelStaticActors Parms{};
+
+	Parms.ActorClass = ActorClass;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutActors != nullptr)
+		*OutActors = std::move(Parms.OutActors);
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetLevelStaticActorsWithTag
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TSubclassOf<class AActor>               ActorClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      Tag                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UMarvelAIGlobalDataSubsystem::GetLevelStaticActorsWithTag(TSubclassOf<class AActor> ActorClass, const class FName& Tag, TArray<class AActor*>* OutActors)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetLevelStaticActorsWithTag");
+
+	Params::MarvelAIGlobalDataSubsystem_GetLevelStaticActorsWithTag Parms{};
+
+	Parms.ActorClass = ActorClass;
+	Parms.Tag = Tag;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutActors != nullptr)
+		*OutActors = std::move(Parms.OutActors);
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetNearestPortal
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   QueryLocation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const double                            LimitDistance                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APortalViewActor_Level*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class APortalViewActor_Level* UMarvelAIGlobalDataSubsystem::GetNearestPortal(const struct FVector& QueryLocation, const double LimitDistance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetNearestPortal");
+
+	Params::MarvelAIGlobalDataSubsystem_GetNearestPortal Parms{};
+
+	Parms.QueryLocation = std::move(QueryLocation);
+	Parms.LimitDistance = LimitDistance;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.GetPositionProgress
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class AMarvelAIController*        QueryAI                                                (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class AMarvelBaseCharacter*       TargetChar                                             (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float*                                  PositionProgress                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIGlobalDataSubsystem::GetPositionProgress(const class AMarvelAIController* QueryAI, const class AMarvelBaseCharacter* TargetChar, float* PositionProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "GetPositionProgress");
+
+	Params::MarvelAIGlobalDataSubsystem_GetPositionProgress Parms{};
+
+	Parms.QueryAI = QueryAI;
+	Parms.TargetChar = TargetChar;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PositionProgress != nullptr)
+		*PositionProgress = Parms.PositionProgress;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.IsAIUsableHero_Static
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIGlobalDataSubsystem::IsAIUsableHero_Static(const class UObject* WorldContextObject, int32 HeroID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "IsAIUsableHero_Static");
+
+	Params::MarvelAIGlobalDataSubsystem_IsAIUsableHero_Static Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.HeroID = HeroID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIGlobalDataSubsystem.OnLevelPrepareStart
+// (Final, Native, Public)
+
+void UMarvelAIGlobalDataSubsystem::OnLevelPrepareStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIGlobalDataSubsystem", "OnLevelPrepareStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.K2_ConfigureSense
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAISenseConfig*                   SenseConfig                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIPerceptionComponent::K2_ConfigureSense(class UAISenseConfig* SenseConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_ConfigureSense");
+
+	Params::MarvelAIPerceptionComponent_K2_ConfigureSense Parms{};
+
+	Parms.SenseConfig = SenseConfig;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.K2_NotifyTargetToTeam
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NotifyRange                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NotifyStrength                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIPerceptionComponent::K2_NotifyTargetToTeam(class AActor* TargetActor, float NotifyRange, float NotifyStrength)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_NotifyTargetToTeam");
+
+	Params::MarvelAIPerceptionComponent_K2_NotifyTargetToTeam Parms{};
+
+	Parms.TargetActor = TargetActor;
+	Parms.NotifyRange = NotifyRange;
+	Parms.NotifyStrength = NotifyStrength;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.NotifyEnemyTarget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   NotifyRange                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAIPerceptionComponent::NotifyEnemyTarget(class AActor* TargetActor, float NotifyRange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "NotifyEnemyTarget");
+
+	Params::MarvelAIPerceptionComponent_NotifyEnemyTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+	Parms.NotifyRange = NotifyRange;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.GetPerceivedActors
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TSubclassOf<class UAISense>             SenseClass                                             (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class AActor*>*                  OutActors                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UMarvelAIPerceptionComponent::GetPerceivedActors(TSubclassOf<class UAISense> SenseClass, TArray<class AActor*>* OutActors) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "GetPerceivedActors");
+
+	Params::MarvelAIPerceptionComponent_GetPerceivedActors Parms{};
+
+	Parms.SenseClass = SenseClass;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutActors != nullptr)
+		*OutActors = std::move(Parms.OutActors);
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.GetTargetTeleportTransform
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const int32                             TargetUID                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTransform*                      OutTeleportTransform                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIPerceptionComponent::GetTargetTeleportTransform(const int32 TargetUID, struct FTransform* OutTeleportTransform) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "GetTargetTeleportTransform");
+
+	Params::MarvelAIPerceptionComponent_GetTargetTeleportTransform Parms{};
+
+	Parms.TargetUID = TargetUID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutTeleportTransform != nullptr)
+		*OutTeleportTransform = std::move(Parms.OutTeleportTransform);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.IsCurrentlyInSight
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const class AActor*                     TargetToCheck                                          (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelAIPerceptionComponent::IsCurrentlyInSight(const class AActor* TargetToCheck) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "IsCurrentlyInSight");
+
+	Params::MarvelAIPerceptionComponent_IsCurrentlyInSight Parms{};
+
+	Parms.TargetToCheck = TargetToCheck;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAIPerceptionComponent.K2_GetPriorityFactor
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UMarvelAIPerceptionComponent::K2_GetPriorityFactor(class AActor* Target) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelAIPerceptionComponent", "K2_GetPriorityFactor");
+
+	Params::MarvelAIPerceptionComponent_K2_GetPriorityFactor Parms{};
+
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.MarvelAISense_Damage.MarvelReportDamageEvent
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           DamagedActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Instigator                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DamageAmount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   EventLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   HitLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelAISense_Damage::MarvelReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("MarvelAISense_Damage", "MarvelReportDamageEvent");
+
+	Params::MarvelAISense_Damage_MarvelReportDamageEvent Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.DamagedActor = DamagedActor;
+	Parms.Instigator = Instigator;
+	Parms.DamageAmount = DamageAmount;
+	Parms.EventLocation = std::move(EventLocation);
+	Parms.HitLocation = std::move(HitLocation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -17592,312 +18066,6 @@ void UMarvelBTFunctionLibrary::MarvelSetBlackboardValueAsVector(class AAIControl
 }
 
 
-// Function MarvelAI.MarvelNavigationLibrary.CheckShortDistancePointReachable
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class AAIController*                    AIController                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   MaxSearchNode                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::CheckShortDistancePointReachable(class AAIController* AIController, const struct FVector& TargetLocation, int32 MaxSearchNode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "CheckShortDistancePointReachable");
-
-	Params::MarvelNavigationLibrary_CheckShortDistancePointReachable Parms{};
-
-	Parms.AIController = AIController;
-	Parms.TargetLocation = std::move(TargetLocation);
-	Parms.MaxSearchNode = MaxSearchNode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.DebugDrawTileLayersBB
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   WorldPosition                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelNavigationLibrary::DebugDrawTileLayersBB(class UObject* WorldContextObject, const struct FVector& WorldPosition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "DebugDrawTileLayersBB");
-
-	Params::MarvelNavigationLibrary_DebugDrawTileLayersBB Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.WorldPosition = std::move(WorldPosition);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.GetLocationTileCoord
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ShouldMarkDebug                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  OutTileX                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  OutTileY                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::GetLocationTileCoord(class UObject* WorldContext, const struct FVector& InLocation, bool ShouldMarkDebug, int32* OutTileX, int32* OutTileY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "GetLocationTileCoord");
-
-	Params::MarvelNavigationLibrary_GetLocationTileCoord Parms{};
-
-	Parms.WorldContext = WorldContext;
-	Parms.InLocation = std::move(InLocation);
-	Parms.ShouldMarkDebug = ShouldMarkDebug;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutTileX != nullptr)
-		*OutTileX = Parms.OutTileX;
-
-	if (OutTileY != nullptr)
-		*OutTileY = Parms.OutTileY;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.HasValidFlyPath
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WCO                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   StartLocation                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   TargetLocation                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::HasValidFlyPath(class UObject* WCO, const struct FVector& StartLocation, const struct FVector& TargetLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "HasValidFlyPath");
-
-	Params::MarvelNavigationLibrary_HasValidFlyPath Parms{};
-
-	Parms.WCO = WCO;
-	Parms.StartLocation = std::move(StartLocation);
-	Parms.TargetLocation = std::move(TargetLocation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.K2_ProjectLocationToNavMesh
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InLocation                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InExtent                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector*                         OutLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::K2_ProjectLocationToNavMesh(class UObject* WorldContext, const struct FVector& InLocation, const struct FVector& InExtent, struct FVector* OutLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "K2_ProjectLocationToNavMesh");
-
-	Params::MarvelNavigationLibrary_K2_ProjectLocationToNavMesh Parms{};
-
-	Parms.WorldContext = WorldContext;
-	Parms.InLocation = std::move(InLocation);
-	Parms.InExtent = std::move(InExtent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutLocation != nullptr)
-		*OutLocation = std::move(Parms.OutLocation);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.RebuildNavmesh
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelNavigationLibrary::RebuildNavmesh(class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "RebuildNavmesh");
-
-	Params::MarvelNavigationLibrary_RebuildNavmesh Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.SetDirtyAreaMarkEnabled
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    NewIsEnabled                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelNavigationLibrary::SetDirtyAreaMarkEnabled(class UObject* WorldContext, bool NewIsEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "SetDirtyAreaMarkEnabled");
-
-	Params::MarvelNavigationLibrary_SetDirtyAreaMarkEnabled Parms{};
-
-	Parms.WorldContext = WorldContext;
-	Parms.NewIsEnabled = NewIsEnabled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.SetStaticNavigation
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bNewIsStrictlyStatic                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelNavigationLibrary::SetStaticNavigation(bool bNewIsStrictlyStatic)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "SetStaticNavigation");
-
-	Params::MarvelNavigationLibrary_SetStaticNavigation Parms{};
-
-	Parms.bNewIsStrictlyStatic = bNewIsStrictlyStatic;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.VLogNavData
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class AActor*                           CenterActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::VLogNavData(class AActor* CenterActor, const struct FVector& Extent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "VLogNavData");
-
-	Params::MarvelNavigationLibrary_VLogNavData Parms{};
-
-	Parms.CenterActor = CenterActor;
-	Parms.Extent = std::move(Extent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelNavigationLibrary.VLogTileData
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContext                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InTileX                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InTileY                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelNavigationLibrary::VLogTileData(class UObject* WorldContext, int32 InTileX, int32 InTileY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MarvelNavigationLibrary", "VLogTileData");
-
-	Params::MarvelNavigationLibrary_VLogTileData Parms{};
-
-	Parms.WorldContext = WorldContext;
-	Parms.InTileX = InTileX;
-	Parms.InTileY = InTileY;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function MarvelAI.MarvelNavigationSystem.OnGameMapLoadFinished
 // (Final, Native, Public)
 
@@ -17963,31 +18131,6 @@ void AMarvelNavLinkProxy::DrawNavigationBound() const
 }
 
 
-// Function MarvelAI.MarvelNavModifierComponent.K2_UpdateNavEffect
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// bool                                    bEffectNav                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelNavModifierComponent::K2_UpdateNavEffect(bool bEffectNav)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelNavModifierComponent", "K2_UpdateNavEffect");
-
-	Params::MarvelNavModifierComponent_K2_UpdateNavEffect Parms{};
-
-	Parms.bEffectNav = bEffectNav;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function MarvelAI.MarvelObstacleNavLinkProxy.TestBlockTrace
 // (Final, Native, Public)
 
@@ -18004,228 +18147,6 @@ void AMarvelObstacleNavLinkProxy::TestBlockTrace()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.ClearOverrideMoveFocus
-// (Final, Native, Public, BlueprintCallable)
-
-void UMarvelPathFollowingComponent::ClearOverrideMoveFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "ClearOverrideMoveFocus");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.MarkCrossMoveForDuration
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// float                                   NewDuration                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelPathFollowingComponent::MarkCrossMoveForDuration(float NewDuration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "MarkCrossMoveForDuration");
-
-	Params::MarvelPathFollowingComponent_MarkCrossMoveForDuration Parms{};
-
-	Parms.NewDuration = NewDuration;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.SetCrossMoveEnabled
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// bool                                    NewIsEnabled                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelPathFollowingComponent::SetCrossMoveEnabled(bool NewIsEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetCrossMoveEnabled");
-
-	Params::MarvelPathFollowingComponent_SetCrossMoveEnabled Parms{};
-
-	Parms.NewIsEnabled = NewIsEnabled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.SetDecelerateForLastPathSegment
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bNewIsEnabled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelPathFollowingComponent::SetDecelerateForLastPathSegment(bool bNewIsEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetDecelerateForLastPathSegment");
-
-	Params::MarvelPathFollowingComponent_SetDecelerateForLastPathSegment Parms{};
-
-	Parms.bNewIsEnabled = bNewIsEnabled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.SetMoveInputScale
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelPathFollowingComponent::SetMoveInputScale(float Scale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetMoveInputScale");
-
-	Params::MarvelPathFollowingComponent_SetMoveInputScale Parms{};
-
-	Parms.Scale = Scale;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.SetOverrideMoveFocus
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   NewMoveFocus                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelPathFollowingComponent::SetOverrideMoveFocus(const struct FVector& NewMoveFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "SetOverrideMoveFocus");
-
-	Params::MarvelPathFollowingComponent_SetOverrideMoveFocus Parms{};
-
-	Parms.NewMoveFocus = std::move(NewMoveFocus);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.CheckCurrentStatus
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EPathFollowingStatus                    TargetStatus                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelPathFollowingComponent::CheckCurrentStatus(EPathFollowingStatus TargetStatus) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "CheckCurrentStatus");
-
-	Params::MarvelPathFollowingComponent_CheckCurrentStatus Parms{};
-
-	Parms.TargetStatus = TargetStatus;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.GetCurrentStatus
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EPathFollowingStatus                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EPathFollowingStatus UMarvelPathFollowingComponent::GetCurrentStatus() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "GetCurrentStatus");
-
-	Params::MarvelPathFollowingComponent_GetCurrentStatus Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MarvelAI.MarvelPathFollowingComponent.IsHandlingLinkMove
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelPathFollowingComponent::IsHandlingLinkMove() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelPathFollowingComponent", "IsHandlingLinkMove");
-
-	Params::MarvelPathFollowingComponent_IsHandlingLinkMove Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -18341,6 +18262,158 @@ class AStartWayPoint* AMarvelWayPointManager::GetStartWayPointFromMap(const clas
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.CleanUp
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::CleanUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "CleanUp");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DebugDrawEdges
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::DebugDrawEdges()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawEdges");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DebugDrawLevelKnockUp
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::DebugDrawLevelKnockUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawLevelKnockUp");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DebugDrawLinks
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::DebugDrawLinks()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawLinks");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DoGenerate
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::DoGenerate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DoGenerate");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.ToggleGlobalDebugDraw
+// (Final, Native, Public)
+
+void ANavLinkAutoGenerator::ToggleGlobalDebugDraw()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "ToggleGlobalDebugDraw");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DebugCheckCollisionForLink
+// (Final, Native, Protected, Const)
+
+void ANavLinkAutoGenerator::DebugCheckCollisionForLink() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugCheckCollisionForLink");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.NavLinkAutoGenerator.DebugDrawStrategyPoints
+// (Final, Native, Protected, Const)
+
+void ANavLinkAutoGenerator::DebugDrawStrategyPoints() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NavLinkAutoGenerator", "DebugDrawStrategyPoints");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -18832,6 +18905,55 @@ TArray<class AStrategyPointActor*> UStrategyPointSubsystem::GetAllStrategyPointA
 
 	Parms.Center = std::move(Center);
 	Parms.Radius = Radius;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MarvelAI.WayPointRandomSelectComponent.DebugDraw
+// (Final, Native, Public)
+
+void UWayPointRandomSelectComponent::DebugDraw()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPointRandomSelectComponent", "DebugDraw");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelAI.WayPointRandomSelectComponent.SelectNextWayPoint
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           ActorMovingAlong                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AActor* UWayPointRandomSelectComponent::SelectNextWayPoint(class AActor* ActorMovingAlong, class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WayPointRandomSelectComponent", "SelectNextWayPoint");
+
+	Params::WayPointRandomSelectComponent_SelectNextWayPoint Parms{};
+
+	Parms.ActorMovingAlong = ActorMovingAlong;
+	Parms.Target = Target;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

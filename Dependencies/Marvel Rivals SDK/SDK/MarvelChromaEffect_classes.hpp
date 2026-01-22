@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChromaEffectManager">();
+		STATIC_CLASS_IMPL("ChromaEffectManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChromaEffectManager")
 	}
 	static class UChromaEffectManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChromaEffectManager>();
 	}
 };
-static_assert(alignof(UChromaEffectManager) == 0x000008, "Wrong alignment on UChromaEffectManager");
-static_assert(sizeof(UChromaEffectManager) == 0x0000A8, "Wrong size on UChromaEffectManager");
-static_assert(offsetof(UChromaEffectManager, WorldContextObject) == 0x000030, "Member 'UChromaEffectManager::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(UChromaEffectManager, LocalController) == 0x000038, "Member 'UChromaEffectManager::LocalController' has a wrong offset!");
-static_assert(offsetof(UChromaEffectManager, ChromaEffectTable) == 0x000040, "Member 'UChromaEffectManager::ChromaEffectTable' has a wrong offset!");
+DUMPER7_ASSERTS_UChromaEffectManager;
 
 }
 

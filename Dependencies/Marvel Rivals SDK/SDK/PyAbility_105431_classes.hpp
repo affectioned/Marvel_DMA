@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105431.PyCue_Buff_10543101
-// 0x0080 (0x16C0 - 0x1640)
+// 0x0080 (0x1770 - 0x16F0)
 class APyCue_Buff_10543101 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         AttackFXAsset;                                     // 0x1640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1648[0x8];                                     // 0x1648(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             AttackFXOffset;                                    // 0x1650(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           HitCueTag;                                         // 0x16B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         AttackFXAsset;                                     // 0x16F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16F8[0x8];                                     // 0x16F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             AttackFXOffset;                                    // 0x1700(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HitCueTag;                                         // 0x1760(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -36,26 +36,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10543101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10543101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10543101")
 	}
 	static class APyCue_Buff_10543101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10543101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10543101) == 0x000010, "Wrong alignment on APyCue_Buff_10543101");
-static_assert(sizeof(APyCue_Buff_10543101) == 0x0016C0, "Wrong size on APyCue_Buff_10543101");
-static_assert(offsetof(APyCue_Buff_10543101, AttackFXAsset) == 0x001640, "Member 'APyCue_Buff_10543101::AttackFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10543101, AttackFXOffset) == 0x001650, "Member 'APyCue_Buff_10543101::AttackFXOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10543101, HitCueTag) == 0x0016B0, "Member 'APyCue_Buff_10543101::HitCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10543101;
 
 // PythonClass PyAbility_105431.PyCue_Instant_HitImpact_10541101
-// 0x0010 (0x0610 - 0x0600)
+// 0x0010 (0x0630 - 0x0620)
 class UPyCue_Instant_HitImpact_10541101 final : public UMarvelCueNotify_InstantHitImpact
 {
 public:
-	class UFXSystemAsset*                         ReleaseFXAsset;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReleaseFXOffset;                                   // 0x0608(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ReleaseFXAsset;                                    // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReleaseFXOffset;                                   // 0x0628(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -63,17 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Instant_HitImpact_10541101">();
+		STATIC_CLASS_IMPL("PyCue_Instant_HitImpact_10541101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Instant_HitImpact_10541101")
 	}
 	static class UPyCue_Instant_HitImpact_10541101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Instant_HitImpact_10541101>();
 	}
 };
-static_assert(alignof(UPyCue_Instant_HitImpact_10541101) == 0x000008, "Wrong alignment on UPyCue_Instant_HitImpact_10541101");
-static_assert(sizeof(UPyCue_Instant_HitImpact_10541101) == 0x000610, "Wrong size on UPyCue_Instant_HitImpact_10541101");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10541101, ReleaseFXAsset) == 0x000600, "Member 'UPyCue_Instant_HitImpact_10541101::ReleaseFXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Instant_HitImpact_10541101, ReleaseFXOffset) == 0x000608, "Member 'UPyCue_Instant_HitImpact_10541101::ReleaseFXOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Instant_HitImpact_10541101;
 
 }
 

@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mode_Indicator_Escort">();
+		STATIC_CLASS_IMPL("PyWidget_Mode_Indicator_Escort")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mode_Indicator_Escort")
 	}
 	static class UPyWidget_Mode_Indicator_Escort* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mode_Indicator_Escort>();
 	}
 };
-static_assert(alignof(UPyWidget_Mode_Indicator_Escort) == 0x000010, "Wrong alignment on UPyWidget_Mode_Indicator_Escort");
-static_assert(sizeof(UPyWidget_Mode_Indicator_Escort) == 0x0008A0, "Wrong size on UPyWidget_Mode_Indicator_Escort");
+DUMPER7_ASSERTS_UPyWidget_Mode_Indicator_Escort;
 
 }
 

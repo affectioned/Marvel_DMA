@@ -26,10 +26,7 @@ public:
 	bool                                          ReachEndPoint;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HaveNextRoute;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_BroadcastRouteChange) == 0x000001, "Wrong alignment on PyPayload_BroadcastRouteChange");
-static_assert(sizeof(PyPayload_BroadcastRouteChange) == 0x000002, "Wrong size on PyPayload_BroadcastRouteChange");
-static_assert(offsetof(PyPayload_BroadcastRouteChange, ReachEndPoint) == 0x000000, "Member 'PyPayload_BroadcastRouteChange::ReachEndPoint' has a wrong offset!");
-static_assert(offsetof(PyPayload_BroadcastRouteChange, HaveNextRoute) == 0x000001, "Member 'PyPayload_BroadcastRouteChange::HaveNextRoute' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_BroadcastRouteChange;
 
 // PythonFunction PyPayload.PyPayload.DispatchOnRouteIndexChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	class UObject*                                TaskOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int64                                         Magnitude;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_DispatchOnRouteIndexChanged) == 0x000008, "Wrong alignment on PyPayload_DispatchOnRouteIndexChanged");
-static_assert(sizeof(PyPayload_DispatchOnRouteIndexChanged) == 0x000010, "Wrong size on PyPayload_DispatchOnRouteIndexChanged");
-static_assert(offsetof(PyPayload_DispatchOnRouteIndexChanged, TaskOwner) == 0x000000, "Member 'PyPayload_DispatchOnRouteIndexChanged::TaskOwner' has a wrong offset!");
-static_assert(offsetof(PyPayload_DispatchOnRouteIndexChanged, Magnitude) == 0x000008, "Member 'PyPayload_DispatchOnRouteIndexChanged::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_DispatchOnRouteIndexChanged;
 
 // PythonFunction PyPayload.PyPayload.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -51,9 +45,7 @@ struct PyPayload_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPayload_ReceiveEndPlay");
-static_assert(sizeof(PyPayload_ReceiveEndPlay) == 0x000001, "Wrong size on PyPayload_ReceiveEndPlay");
-static_assert(offsetof(PyPayload_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPayload_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_ReceiveEndPlay;
 
 // PythonFunction PyPayload.PyPayload.GetOwnerSide
 // 0x0001 (0x0001 - 0x0000)
@@ -62,9 +54,7 @@ struct PyPayload_GetOwnerSide final
 public:
 	EOwnershipType                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_GetOwnerSide) == 0x000001, "Wrong alignment on PyPayload_GetOwnerSide");
-static_assert(sizeof(PyPayload_GetOwnerSide) == 0x000001, "Wrong size on PyPayload_GetOwnerSide");
-static_assert(offsetof(PyPayload_GetOwnerSide, ReturnValue) == 0x000000, "Member 'PyPayload_GetOwnerSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetOwnerSide;
 
 // PythonFunction PyPayload.PyPayload.BSetOccupySpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -73,9 +63,7 @@ struct PyPayload_BSetOccupySpeed final
 public:
 	float                                         speed;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_BSetOccupySpeed) == 0x000004, "Wrong alignment on PyPayload_BSetOccupySpeed");
-static_assert(sizeof(PyPayload_BSetOccupySpeed) == 0x000004, "Wrong size on PyPayload_BSetOccupySpeed");
-static_assert(offsetof(PyPayload_BSetOccupySpeed, speed) == 0x000000, "Member 'PyPayload_BSetOccupySpeed::speed' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_BSetOccupySpeed;
 
 // PythonFunction PyPayload.PyPayload.GetTraceList
 // 0x0010 (0x0010 - 0x0000)
@@ -84,9 +72,7 @@ struct PyPayload_GetTraceList final
 public:
 	TArray<class APyPayloadTrace*>                ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyPayload_GetTraceList) == 0x000008, "Wrong alignment on PyPayload_GetTraceList");
-static_assert(sizeof(PyPayload_GetTraceList) == 0x000010, "Wrong size on PyPayload_GetTraceList");
-static_assert(offsetof(PyPayload_GetTraceList, ReturnValue) == 0x000000, "Member 'PyPayload_GetTraceList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetTraceList;
 
 // PythonFunction PyPayload.PyPayload.GetCurrSplineIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -95,9 +81,7 @@ struct PyPayload_GetCurrSplineIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_GetCurrSplineIndex) == 0x000004, "Wrong alignment on PyPayload_GetCurrSplineIndex");
-static_assert(sizeof(PyPayload_GetCurrSplineIndex) == 0x000004, "Wrong size on PyPayload_GetCurrSplineIndex");
-static_assert(offsetof(PyPayload_GetCurrSplineIndex, ReturnValue) == 0x000000, "Member 'PyPayload_GetCurrSplineIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetCurrSplineIndex;
 
 // PythonFunction PyPayload.PyPayload.GetTraceListForBake
 // 0x0010 (0x0010 - 0x0000)
@@ -106,9 +90,7 @@ struct PyPayload_GetTraceListForBake final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyPayload_GetTraceListForBake) == 0x000008, "Wrong alignment on PyPayload_GetTraceListForBake");
-static_assert(sizeof(PyPayload_GetTraceListForBake) == 0x000010, "Wrong size on PyPayload_GetTraceListForBake");
-static_assert(offsetof(PyPayload_GetTraceListForBake, ReturnValue) == 0x000000, "Member 'PyPayload_GetTraceListForBake::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetTraceListForBake;
 
 // PythonFunction PyPayload.PyPayload.PayloadEndFight
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +99,7 @@ struct PyPayload_PayloadEndFight final
 public:
 	EBattleSide                                   win_side;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_PayloadEndFight) == 0x000001, "Wrong alignment on PyPayload_PayloadEndFight");
-static_assert(sizeof(PyPayload_PayloadEndFight) == 0x000001, "Wrong size on PyPayload_PayloadEndFight");
-static_assert(offsetof(PyPayload_PayloadEndFight, win_side) == 0x000000, "Member 'PyPayload_PayloadEndFight::win_side' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_PayloadEndFight;
 
 // PythonFunction PyPayload.PyPayload.SetTraceList
 // 0x0010 (0x0010 - 0x0000)
@@ -128,9 +108,7 @@ struct PyPayload_SetTraceList final
 public:
 	TArray<class APyPayloadTrace*>                trace_list;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPayload_SetTraceList) == 0x000008, "Wrong alignment on PyPayload_SetTraceList");
-static_assert(sizeof(PyPayload_SetTraceList) == 0x000010, "Wrong size on PyPayload_SetTraceList");
-static_assert(offsetof(PyPayload_SetTraceList, trace_list) == 0x000000, "Member 'PyPayload_SetTraceList::trace_list' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_SetTraceList;
 
 // PythonFunction PyPayload.PyPayload.OnRemainingTimeChange
 // 0x0004 (0x0004 - 0x0000)
@@ -139,9 +117,7 @@ struct PyPayload_OnRemainingTimeChange final
 public:
 	float                                         RemainingTime;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_OnRemainingTimeChange) == 0x000004, "Wrong alignment on PyPayload_OnRemainingTimeChange");
-static_assert(sizeof(PyPayload_OnRemainingTimeChange) == 0x000004, "Wrong size on PyPayload_OnRemainingTimeChange");
-static_assert(offsetof(PyPayload_OnRemainingTimeChange, RemainingTime) == 0x000000, "Member 'PyPayload_OnRemainingTimeChange::RemainingTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_OnRemainingTimeChange;
 
 // PythonFunction PyPayload.PyPayload.S_on_player_enter_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +126,7 @@ struct PyPayload_S_on_player_enter_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_S_on_player_enter_camp) == 0x000008, "Wrong alignment on PyPayload_S_on_player_enter_camp");
-static_assert(sizeof(PyPayload_S_on_player_enter_camp) == 0x000008, "Wrong size on PyPayload_S_on_player_enter_camp");
-static_assert(offsetof(PyPayload_S_on_player_enter_camp, Char) == 0x000000, "Member 'PyPayload_S_on_player_enter_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_S_on_player_enter_camp;
 
 // PythonFunction PyPayload.PyPayload.S_on_player_exit_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +135,7 @@ struct PyPayload_S_on_player_exit_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_S_on_player_exit_camp) == 0x000008, "Wrong alignment on PyPayload_S_on_player_exit_camp");
-static_assert(sizeof(PyPayload_S_on_player_exit_camp) == 0x000008, "Wrong size on PyPayload_S_on_player_exit_camp");
-static_assert(offsetof(PyPayload_S_on_player_exit_camp, Char) == 0x000000, "Member 'PyPayload_S_on_player_exit_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_S_on_player_exit_camp;
 
 // PythonFunction PyPayload.PyPayload.IsAttackInsideRecently
 // 0x0001 (0x0001 - 0x0000)
@@ -172,9 +144,7 @@ struct PyPayload_IsAttackInsideRecently final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_IsAttackInsideRecently) == 0x000001, "Wrong alignment on PyPayload_IsAttackInsideRecently");
-static_assert(sizeof(PyPayload_IsAttackInsideRecently) == 0x000001, "Wrong size on PyPayload_IsAttackInsideRecently");
-static_assert(offsetof(PyPayload_IsAttackInsideRecently, ReturnValue) == 0x000000, "Member 'PyPayload_IsAttackInsideRecently::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_IsAttackInsideRecently;
 
 // PythonFunction PyPayload.PyPayload.IsDefendInsideRecently
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +153,7 @@ struct PyPayload_IsDefendInsideRecently final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_IsDefendInsideRecently) == 0x000001, "Wrong alignment on PyPayload_IsDefendInsideRecently");
-static_assert(sizeof(PyPayload_IsDefendInsideRecently) == 0x000001, "Wrong size on PyPayload_IsDefendInsideRecently");
-static_assert(offsetof(PyPayload_IsDefendInsideRecently, ReturnValue) == 0x000000, "Member 'PyPayload_IsDefendInsideRecently::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_IsDefendInsideRecently;
 
 // PythonFunction PyPayload.PyPayload.SetProgressSpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -194,9 +162,7 @@ struct PyPayload_SetProgressSpeed final
 public:
 	float                                         speed;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_SetProgressSpeed) == 0x000004, "Wrong alignment on PyPayload_SetProgressSpeed");
-static_assert(sizeof(PyPayload_SetProgressSpeed) == 0x000004, "Wrong size on PyPayload_SetProgressSpeed");
-static_assert(offsetof(PyPayload_SetProgressSpeed, speed) == 0x000000, "Member 'PyPayload_SetProgressSpeed::speed' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_SetProgressSpeed;
 
 // PythonFunction PyPayload.PyPayload.GetCurTraceName
 // 0x0010 (0x0010 - 0x0000)
@@ -205,9 +171,7 @@ struct PyPayload_GetCurTraceName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_GetCurTraceName) == 0x000008, "Wrong alignment on PyPayload_GetCurTraceName");
-static_assert(sizeof(PyPayload_GetCurTraceName) == 0x000010, "Wrong size on PyPayload_GetCurTraceName");
-static_assert(offsetof(PyPayload_GetCurTraceName, ReturnValue) == 0x000000, "Member 'PyPayload_GetCurTraceName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetCurTraceName;
 
 // PythonFunction PyPayload.PyPayload.GetEscortProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -216,9 +180,7 @@ struct PyPayload_GetEscortProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_GetEscortProgress) == 0x000004, "Wrong alignment on PyPayload_GetEscortProgress");
-static_assert(sizeof(PyPayload_GetEscortProgress) == 0x000004, "Wrong size on PyPayload_GetEscortProgress");
-static_assert(offsetof(PyPayload_GetEscortProgress, ReturnValue) == 0x000000, "Member 'PyPayload_GetEscortProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetEscortProgress;
 
 // PythonFunction PyPayload.PyPayload.GetType
 // 0x0001 (0x0001 - 0x0000)
@@ -227,9 +189,7 @@ struct PyPayload_GetType final
 public:
 	EControlPointType                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayload_GetType) == 0x000001, "Wrong alignment on PyPayload_GetType");
-static_assert(sizeof(PyPayload_GetType) == 0x000001, "Wrong size on PyPayload_GetType");
-static_assert(offsetof(PyPayload_GetType, ReturnValue) == 0x000000, "Member 'PyPayload_GetType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayload_GetType;
 
 // PythonFunction PyPayload.PyCue_Level_100003.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -240,11 +200,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100003_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_100003_WhileActive");
-static_assert(sizeof(PyCue_Level_100003_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_100003_WhileActive");
-static_assert(offsetof(PyCue_Level_100003_WhileActive, PayloadActor) == 0x000000, "Member 'PyCue_Level_100003_WhileActive::PayloadActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_100003_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_100003_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_100003_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_100003_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100003_WhileActive;
 
 // PythonFunction PyPayload.PyCue_Level_100003.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -253,9 +209,7 @@ struct PyCue_Level_100003_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100003_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyCue_Level_100003_ReceiveEndPlay");
-static_assert(sizeof(PyCue_Level_100003_ReceiveEndPlay) == 0x000001, "Wrong size on PyCue_Level_100003_ReceiveEndPlay");
-static_assert(offsetof(PyCue_Level_100003_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyCue_Level_100003_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100003_ReceiveEndPlay;
 
 // PythonFunction PyPayload.PyCue_Level_100003.OnPayloadScopeVisible
 // 0x0004 (0x0004 - 0x0000)
@@ -264,9 +218,7 @@ struct PyCue_Level_100003_OnPayloadScopeVisible final
 public:
 	int32                                         IsVisible;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100003_OnPayloadScopeVisible) == 0x000004, "Wrong alignment on PyCue_Level_100003_OnPayloadScopeVisible");
-static_assert(sizeof(PyCue_Level_100003_OnPayloadScopeVisible) == 0x000004, "Wrong size on PyCue_Level_100003_OnPayloadScopeVisible");
-static_assert(offsetof(PyCue_Level_100003_OnPayloadScopeVisible, IsVisible) == 0x000000, "Member 'PyCue_Level_100003_OnPayloadScopeVisible::IsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100003_OnPayloadScopeVisible;
 
 // PythonFunction PyPayload.PyCue_Level_100003.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -275,9 +227,7 @@ struct PyCue_Level_100003_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_100003_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Level_100003_ReceiveTick");
-static_assert(sizeof(PyCue_Level_100003_ReceiveTick) == 0x000004, "Wrong size on PyCue_Level_100003_ReceiveTick");
-static_assert(offsetof(PyCue_Level_100003_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Level_100003_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_100003_ReceiveTick;
 
 }
 

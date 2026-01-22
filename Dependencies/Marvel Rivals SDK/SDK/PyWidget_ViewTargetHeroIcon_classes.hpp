@@ -17,13 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ViewTargetHeroIcon.PyWidget_ViewTargetHeroIcon
-// 0x0008 (0x0570 - 0x0568)
+// 0x0018 (0x0588 - 0x0570)
 class UPyWidget_ViewTargetHeroIcon : public UMarvelUserWidget
 {
 public:
-	bool                                          bCustomColorPreview;                               // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_569[0x3];                                      // 0x0569(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CustomColorPreview_HeroID;                         // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_571[0x3];                                      // 0x0571(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CustomColorPreview_HeroID;                         // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefualtBadgeBgLeft;                                // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_Common_HeroRoleIcon*          WBP_Common_HeroRoleIcon;                           // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ViewTargetHeroIcon">();
+		STATIC_CLASS_IMPL("PyWidget_ViewTargetHeroIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ViewTargetHeroIcon")
 	}
 	static class UPyWidget_ViewTargetHeroIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ViewTargetHeroIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_ViewTargetHeroIcon) == 0x000008, "Wrong alignment on UPyWidget_ViewTargetHeroIcon");
-static_assert(sizeof(UPyWidget_ViewTargetHeroIcon) == 0x000570, "Wrong size on UPyWidget_ViewTargetHeroIcon");
-static_assert(offsetof(UPyWidget_ViewTargetHeroIcon, bCustomColorPreview) == 0x000568, "Member 'UPyWidget_ViewTargetHeroIcon::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ViewTargetHeroIcon, CustomColorPreview_HeroID) == 0x00056C, "Member 'UPyWidget_ViewTargetHeroIcon::CustomColorPreview_HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ViewTargetHeroIcon;
 
 }
 

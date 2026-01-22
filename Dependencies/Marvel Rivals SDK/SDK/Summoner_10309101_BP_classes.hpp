@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoner_10309101_BP.Summoner_10309101_BP_C
-// 0x0010 (0x0B60 - 0x0B50)
+// 0x0010 (0x0B80 - 0x0B70)
 class ASummoner_10309101_BP_C final : public APySummoned_10449301
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B50(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelProjectileComponent*             Gravity;                                           // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B70(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelProjectileComponent*             Gravity;                                           // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Summoner_10309101_BP(int32 EntryPoint);
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoner_10309101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoner_10309101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoner_10309101_BP_C")
 	}
 	static class ASummoner_10309101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoner_10309101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoner_10309101_BP_C) == 0x000010, "Wrong alignment on ASummoner_10309101_BP_C");
-static_assert(sizeof(ASummoner_10309101_BP_C) == 0x000B60, "Wrong size on ASummoner_10309101_BP_C");
-static_assert(offsetof(ASummoner_10309101_BP_C, UberGraphFrame) == 0x000B50, "Member 'ASummoner_10309101_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASummoner_10309101_BP_C, Gravity) == 0x000B58, "Member 'ASummoner_10309101_BP_C::Gravity' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoner_10309101_BP_C;
 
 }
 

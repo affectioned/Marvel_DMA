@@ -19,21 +19,21 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_LeagueRegionList.PyWidget_LeagueRegionEntry
-// 0x00A0 (0x0660 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_LeagueRegionEntry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Color_Green_Bg;                                    // 0x05BC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Red_Bg;                                      // 0x05CC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Yellow_Bg;                                   // 0x05DC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color_Blue_Bg;                                     // 0x05EC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Green_Text;                                  // 0x05FC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Red_Text;                                    // 0x0610(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Yellow_Text;                                 // 0x0624(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Blue_Text;                                   // 0x0638(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              GotoOtherLeague;                                   // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Color_Green_Bg;                                    // 0x05C4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Red_Bg;                                      // 0x05D4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Yellow_Bg;                                   // 0x05E4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Blue_Bg;                                     // 0x05F4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Green_Text;                                  // 0x0604(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Red_Text;                                    // 0x0618(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Yellow_Text;                                 // 0x062C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Blue_Text;                                   // 0x0640(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_654[0x4];                                      // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              GotoOtherLeague;                                   // 0x0658(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -43,32 +43,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueRegionEntry">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueRegionEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueRegionEntry")
 	}
 	static class UPyWidget_LeagueRegionEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueRegionEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueRegionEntry) == 0x000008, "Wrong alignment on UPyWidget_LeagueRegionEntry");
-static_assert(sizeof(UPyWidget_LeagueRegionEntry) == 0x000660, "Wrong size on UPyWidget_LeagueRegionEntry");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Green_Bg) == 0x0005BC, "Member 'UPyWidget_LeagueRegionEntry::Color_Green_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Red_Bg) == 0x0005CC, "Member 'UPyWidget_LeagueRegionEntry::Color_Red_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Yellow_Bg) == 0x0005DC, "Member 'UPyWidget_LeagueRegionEntry::Color_Yellow_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Blue_Bg) == 0x0005EC, "Member 'UPyWidget_LeagueRegionEntry::Color_Blue_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Green_Text) == 0x0005FC, "Member 'UPyWidget_LeagueRegionEntry::Color_Green_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Red_Text) == 0x000610, "Member 'UPyWidget_LeagueRegionEntry::Color_Red_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Yellow_Text) == 0x000624, "Member 'UPyWidget_LeagueRegionEntry::Color_Yellow_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, Color_Blue_Text) == 0x000638, "Member 'UPyWidget_LeagueRegionEntry::Color_Blue_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRegionEntry, GotoOtherLeague) == 0x000650, "Member 'UPyWidget_LeagueRegionEntry::GotoOtherLeague' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueRegionEntry;
 
 // PythonClass PyWidget_Secondary_LeagueRegionList.PyWidget_Secondary_LeagueRegionList
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_LeagueRegionList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_LeagueRegionEntry> WidgetClassEntry;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_LeagueRegionEntry> WidgetClassEntry;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -79,16 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_LeagueRegionList">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_LeagueRegionList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_LeagueRegionList")
 	}
 	static class UPyWidget_Secondary_LeagueRegionList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_LeagueRegionList>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_LeagueRegionList) == 0x000008, "Wrong alignment on UPyWidget_Secondary_LeagueRegionList");
-static_assert(sizeof(UPyWidget_Secondary_LeagueRegionList) == 0x0005C8, "Wrong size on UPyWidget_Secondary_LeagueRegionList");
-static_assert(offsetof(UPyWidget_Secondary_LeagueRegionList, WidgetClassEntry) == 0x0005C0, "Member 'UPyWidget_Secondary_LeagueRegionList::WidgetClassEntry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_LeagueRegionList;
 
 }
 

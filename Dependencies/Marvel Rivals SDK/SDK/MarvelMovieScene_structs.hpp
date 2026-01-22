@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "BlastNiagara_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ChaosNiagara_structs.hpp"
 #include "MovieSceneTracks_structs.hpp"
@@ -48,11 +48,7 @@ public:
 	TArray<struct FBlastFXChunkParticleData>      FXChunksParticleData;                              // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                MeshPaths;                                         // 0x0020(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBlastDynamicFragmentsSoftEventData) == 0x000008, "Wrong alignment on FBlastDynamicFragmentsSoftEventData");
-static_assert(sizeof(FBlastDynamicFragmentsSoftEventData) == 0x000030, "Wrong size on FBlastDynamicFragmentsSoftEventData");
-static_assert(offsetof(FBlastDynamicFragmentsSoftEventData, BigChunksState) == 0x000000, "Member 'FBlastDynamicFragmentsSoftEventData::BigChunksState' has a wrong offset!");
-static_assert(offsetof(FBlastDynamicFragmentsSoftEventData, FXChunksParticleData) == 0x000010, "Member 'FBlastDynamicFragmentsSoftEventData::FXChunksParticleData' has a wrong offset!");
-static_assert(offsetof(FBlastDynamicFragmentsSoftEventData, MeshPaths) == 0x000020, "Member 'FBlastDynamicFragmentsSoftEventData::MeshPaths' has a wrong offset!");
+DUMPER7_ASSERTS_FBlastDynamicFragmentsSoftEventData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneBlastDynamicFragmentsData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -63,11 +59,7 @@ public:
 	TArray<struct FBlastDynamicFragmentsSoftEventData> KeyValues;                                    // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneBlastDynamicFragmentsData) == 0x000008, "Wrong alignment on FMovieSceneBlastDynamicFragmentsData");
-static_assert(sizeof(FMovieSceneBlastDynamicFragmentsData) == 0x0000F8, "Wrong size on FMovieSceneBlastDynamicFragmentsData");
-static_assert(offsetof(FMovieSceneBlastDynamicFragmentsData, Times) == 0x000050, "Member 'FMovieSceneBlastDynamicFragmentsData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneBlastDynamicFragmentsData, KeyValues) == 0x000060, "Member 'FMovieSceneBlastDynamicFragmentsData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneBlastDynamicFragmentsData, KeyHandles) == 0x000070, "Member 'FMovieSceneBlastDynamicFragmentsData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneBlastDynamicFragmentsData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelBlastDynamicFragmentsTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -76,9 +68,7 @@ struct FMovieSceneMarvelBlastDynamicFragmentsTemplate final : public FMovieScene
 public:
 	struct FMovieSceneBlastDynamicFragmentsData   InstanceData;                                      // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelBlastDynamicFragmentsTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelBlastDynamicFragmentsTemplate");
-static_assert(sizeof(FMovieSceneMarvelBlastDynamicFragmentsTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelBlastDynamicFragmentsTemplate");
-static_assert(offsetof(FMovieSceneMarvelBlastDynamicFragmentsTemplate, InstanceData) == 0x000020, "Member 'FMovieSceneMarvelBlastDynamicFragmentsTemplate::InstanceData' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelBlastDynamicFragmentsTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelCableActorTemplate
 // 0x0310 (0x0330 - 0x0020)
@@ -90,11 +80,7 @@ public:
 	struct FMovieSceneBoolChannel                 CanUpdateDashTopKeys;                              // 0x0228(0x0100)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelCableActorTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelCableActorTemplate");
-static_assert(sizeof(FMovieSceneMarvelCableActorTemplate) == 0x000330, "Wrong size on FMovieSceneMarvelCableActorTemplate");
-static_assert(offsetof(FMovieSceneMarvelCableActorTemplate, CableAbilityStageKeys) == 0x000020, "Member 'FMovieSceneMarvelCableActorTemplate::CableAbilityStageKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCableActorTemplate, IsStartHighSwingingKeys) == 0x000128, "Member 'FMovieSceneMarvelCableActorTemplate::IsStartHighSwingingKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCableActorTemplate, CanUpdateDashTopKeys) == 0x000228, "Member 'FMovieSceneMarvelCableActorTemplate::CanUpdateDashTopKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelCableActorTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneChaosEffectData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -105,11 +91,7 @@ public:
 	TArray<struct FChaosEffectEventData>          KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneChaosEffectData) == 0x000008, "Wrong alignment on FMovieSceneChaosEffectData");
-static_assert(sizeof(FMovieSceneChaosEffectData) == 0x0000F8, "Wrong size on FMovieSceneChaosEffectData");
-static_assert(offsetof(FMovieSceneChaosEffectData, Times) == 0x000050, "Member 'FMovieSceneChaosEffectData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneChaosEffectData, KeyValues) == 0x000060, "Member 'FMovieSceneChaosEffectData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneChaosEffectData, KeyHandles) == 0x000070, "Member 'FMovieSceneChaosEffectData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneChaosEffectData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelChaosEffectTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -118,9 +100,7 @@ struct FMovieSceneMarvelChaosEffectTemplate final : public FMovieSceneEvalTempla
 public:
 	struct FMovieSceneChaosEffectData             InstanceData;                                      // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelChaosEffectTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelChaosEffectTemplate");
-static_assert(sizeof(FMovieSceneMarvelChaosEffectTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelChaosEffectTemplate");
-static_assert(offsetof(FMovieSceneMarvelChaosEffectTemplate, InstanceData) == 0x000020, "Member 'FMovieSceneMarvelChaosEffectTemplate::InstanceData' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelChaosEffectTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneChaosFieldParamsData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -131,11 +111,7 @@ public:
 	TArray<struct FFieldParams>                   KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneChaosFieldParamsData) == 0x000008, "Wrong alignment on FMovieSceneChaosFieldParamsData");
-static_assert(sizeof(FMovieSceneChaosFieldParamsData) == 0x0000F8, "Wrong size on FMovieSceneChaosFieldParamsData");
-static_assert(offsetof(FMovieSceneChaosFieldParamsData, Times) == 0x000050, "Member 'FMovieSceneChaosFieldParamsData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneChaosFieldParamsData, KeyValues) == 0x000060, "Member 'FMovieSceneChaosFieldParamsData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneChaosFieldParamsData, KeyHandles) == 0x000070, "Member 'FMovieSceneChaosFieldParamsData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneChaosFieldParamsData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelChaosFieldParamsTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -144,9 +120,7 @@ struct FMovieSceneMarvelChaosFieldParamsTemplate final : public FMovieSceneEvalT
 public:
 	struct FMovieSceneChaosFieldParamsData        FieldParamsData;                                   // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelChaosFieldParamsTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelChaosFieldParamsTemplate");
-static_assert(sizeof(FMovieSceneMarvelChaosFieldParamsTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelChaosFieldParamsTemplate");
-static_assert(offsetof(FMovieSceneMarvelChaosFieldParamsTemplate, FieldParamsData) == 0x000020, "Member 'FMovieSceneMarvelChaosFieldParamsTemplate::FieldParamsData' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelChaosFieldParamsTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelCharacterInfoTemplate
 // 0x0DA8 (0x0DC8 - 0x0020)
@@ -168,82 +142,21 @@ public:
 	struct FMovieSceneFloatChannel                TargetTreatPercentageKeys;                         // 0x0CB0(0x0110)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_DC0[0x8];                                      // 0x0DC0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelCharacterInfoTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelCharacterInfoTemplate");
-static_assert(sizeof(FMovieSceneMarvelCharacterInfoTemplate) == 0x000DC8, "Wrong size on FMovieSceneMarvelCharacterInfoTemplate");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, ViewTargetIsAllyKeys) == 0x000020, "Member 'FMovieSceneMarvelCharacterInfoTemplate::ViewTargetIsAllyKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, NameKeys) == 0x000120, "Member 'FMovieSceneMarvelCharacterInfoTemplate::NameKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpWhiteMaxKeys) == 0x000230, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpWhiteMaxKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpWhiteCurrentKeys) == 0x000340, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpWhiteCurrentKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpBlueMaxKeys) == 0x000450, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpBlueMaxKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpBlueCurrentKeys) == 0x000560, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpBlueCurrentKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpGreyMaxKeys) == 0x000670, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpGreyMaxKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpGreyCurrentKeys) == 0x000780, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpGreyCurrentKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, HpVisibleKeys) == 0x000890, "Member 'FMovieSceneMarvelCharacterInfoTemplate::HpVisibleKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, ExistingTagsKeys) == 0x000990, "Member 'FMovieSceneMarvelCharacterInfoTemplate::ExistingTagsKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, UnderTreatmentKeys) == 0x000AA0, "Member 'FMovieSceneMarvelCharacterInfoTemplate::UnderTreatmentKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, BeheadedRatioKeys) == 0x000BA0, "Member 'FMovieSceneMarvelCharacterInfoTemplate::BeheadedRatioKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCharacterInfoTemplate, TargetTreatPercentageKeys) == 0x000CB0, "Member 'FMovieSceneMarvelCharacterInfoTemplate::TargetTreatPercentageKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelCharacterInfoTemplate;
 
-// ScriptStruct MarvelMovieScene.MovieScenePaintSceneCommandData
-// 0x00A8 (0x00F8 - 0x0050)
-struct FMovieScenePaintSceneCommandData final : public FMovieSceneChannel
-{
-public:
-	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<struct FPaintSceneCommand>             KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FMovieScenePaintSceneCommandData) == 0x000008, "Wrong alignment on FMovieScenePaintSceneCommandData");
-static_assert(sizeof(FMovieScenePaintSceneCommandData) == 0x0000F8, "Wrong size on FMovieScenePaintSceneCommandData");
-static_assert(offsetof(FMovieScenePaintSceneCommandData, Times) == 0x000050, "Member 'FMovieScenePaintSceneCommandData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieScenePaintSceneCommandData, KeyValues) == 0x000060, "Member 'FMovieScenePaintSceneCommandData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieScenePaintSceneCommandData, KeyHandles) == 0x000070, "Member 'FMovieScenePaintSceneCommandData::KeyHandles' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.MovieScenePaintSceneReconnectRebuildData
-// 0x00A8 (0x00F8 - 0x0050)
-struct FMovieScenePaintSceneReconnectRebuildData final : public FMovieSceneChannel
-{
-public:
-	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<struct FPaintSceneReconnectRebuildData> KeyValues;                                        // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FMovieScenePaintSceneReconnectRebuildData) == 0x000008, "Wrong alignment on FMovieScenePaintSceneReconnectRebuildData");
-static_assert(sizeof(FMovieScenePaintSceneReconnectRebuildData) == 0x0000F8, "Wrong size on FMovieScenePaintSceneReconnectRebuildData");
-static_assert(offsetof(FMovieScenePaintSceneReconnectRebuildData, Times) == 0x000050, "Member 'FMovieScenePaintSceneReconnectRebuildData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieScenePaintSceneReconnectRebuildData, KeyValues) == 0x000060, "Member 'FMovieScenePaintSceneReconnectRebuildData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieScenePaintSceneReconnectRebuildData, KeyHandles) == 0x000070, "Member 'FMovieScenePaintSceneReconnectRebuildData::KeyHandles' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.MovieSceneMarvelPaintSceneTemplate
-// 0x01F0 (0x0210 - 0x0020)
-struct FMovieSceneMarvelPaintSceneTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	struct FMovieScenePaintSceneCommandData       Commands;                                          // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
-	struct FMovieScenePaintSceneReconnectRebuildData RebuildData;                                    // 0x0118(0x00F8)(NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneMarvelPaintSceneTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelPaintSceneTemplate");
-static_assert(sizeof(FMovieSceneMarvelPaintSceneTemplate) == 0x000210, "Wrong size on FMovieSceneMarvelPaintSceneTemplate");
-static_assert(offsetof(FMovieSceneMarvelPaintSceneTemplate, Commands) == 0x000020, "Member 'FMovieSceneMarvelPaintSceneTemplate::Commands' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelPaintSceneTemplate, RebuildData) == 0x000118, "Member 'FMovieSceneMarvelPaintSceneTemplate::RebuildData' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.MovieSceneMarvelBattleChessInfoTemplate
-// 0x0418 (0x0438 - 0x0020)
-struct FMovieSceneMarvelBattleChessInfoTemplate final : public FMovieSceneEvalTemplate
+// ScriptStruct MarvelMovieScene.MovieSceneMarvelUltimateInfoTemplate
+// 0x0518 (0x0538 - 0x0020)
+struct FMovieSceneMarvelUltimateInfoTemplate final : public FMovieSceneEvalTemplate
 {
 public:
 	struct FMovieSceneBoolChannel                 ShowUltimateBarKeys;                               // 0x0020(0x0100)(NativeAccessSpecifierPublic)
-	struct FMovieSceneFloatChannel                UltimateEnergyPercentKeys;                         // 0x0120(0x0110)(NativeAccessSpecifierPublic)
-	struct FMovieSceneBoolChannel                 ShowBattleChessHeroLevelKeys;                      // 0x0230(0x0100)(NativeAccessSpecifierPublic)
-	struct FMovieSceneIntegerChannel              HeroLevelKeys;                                     // 0x0330(0x0100)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_430[0x8];                                      // 0x0430(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMovieSceneBoolChannel                 ShowUltimateIconKeys;                              // 0x0120(0x0100)(NativeAccessSpecifierPublic)
+	struct FMovieSceneFloatChannel                UltimateEnergyPercentKeys;                         // 0x0220(0x0110)(NativeAccessSpecifierPublic)
+	struct FMovieSceneBoolChannel                 ShowBattleChessHeroLevelKeys;                      // 0x0330(0x0100)(NativeAccessSpecifierPublic)
+	struct FMovieSceneIntegerChannel              HeroLevelKeys;                                     // 0x0430(0x0100)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_530[0x8];                                      // 0x0530(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelBattleChessInfoTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelBattleChessInfoTemplate");
-static_assert(sizeof(FMovieSceneMarvelBattleChessInfoTemplate) == 0x000438, "Wrong size on FMovieSceneMarvelBattleChessInfoTemplate");
-static_assert(offsetof(FMovieSceneMarvelBattleChessInfoTemplate, ShowUltimateBarKeys) == 0x000020, "Member 'FMovieSceneMarvelBattleChessInfoTemplate::ShowUltimateBarKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelBattleChessInfoTemplate, UltimateEnergyPercentKeys) == 0x000120, "Member 'FMovieSceneMarvelBattleChessInfoTemplate::UltimateEnergyPercentKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelBattleChessInfoTemplate, ShowBattleChessHeroLevelKeys) == 0x000230, "Member 'FMovieSceneMarvelBattleChessInfoTemplate::ShowBattleChessHeroLevelKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelBattleChessInfoTemplate, HeroLevelKeys) == 0x000330, "Member 'FMovieSceneMarvelBattleChessInfoTemplate::HeroLevelKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelUltimateInfoTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneCombineTriggerFXData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -254,11 +167,7 @@ public:
 	TArray<struct FCombineTriggerFXInstanceData>  KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneCombineTriggerFXData) == 0x000008, "Wrong alignment on FMovieSceneCombineTriggerFXData");
-static_assert(sizeof(FMovieSceneCombineTriggerFXData) == 0x0000F8, "Wrong size on FMovieSceneCombineTriggerFXData");
-static_assert(offsetof(FMovieSceneCombineTriggerFXData, Times) == 0x000050, "Member 'FMovieSceneCombineTriggerFXData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCombineTriggerFXData, KeyValues) == 0x000060, "Member 'FMovieSceneCombineTriggerFXData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCombineTriggerFXData, KeyHandles) == 0x000070, "Member 'FMovieSceneCombineTriggerFXData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneCombineTriggerFXData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelCombineTriggerFXTemplate
 // 0x0100 (0x0120 - 0x0020)
@@ -269,10 +178,7 @@ public:
 	ETriggerFXType                                EffectType;                                        // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelCombineTriggerFXTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelCombineTriggerFXTemplate");
-static_assert(sizeof(FMovieSceneMarvelCombineTriggerFXTemplate) == 0x000120, "Wrong size on FMovieSceneMarvelCombineTriggerFXTemplate");
-static_assert(offsetof(FMovieSceneMarvelCombineTriggerFXTemplate, InstanceData) == 0x000020, "Member 'FMovieSceneMarvelCombineTriggerFXTemplate::InstanceData' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelCombineTriggerFXTemplate, EffectType) == 0x000118, "Member 'FMovieSceneMarvelCombineTriggerFXTemplate::EffectType' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelCombineTriggerFXTemplate;
 
 // ScriptStruct MarvelMovieScene.ChaosFragmentParticleDataStore
 // 0x0030 (0x0030 - 0x0000)
@@ -285,27 +191,7 @@ public:
 	struct FVector3f                              Scale;                                             // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Index;                                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosFragmentParticleDataStore) == 0x000010, "Wrong alignment on FChaosFragmentParticleDataStore");
-static_assert(sizeof(FChaosFragmentParticleDataStore) == 0x000030, "Wrong size on FChaosFragmentParticleDataStore");
-static_assert(offsetof(FChaosFragmentParticleDataStore, Position) == 0x000000, "Member 'FChaosFragmentParticleDataStore::Position' has a wrong offset!");
-static_assert(offsetof(FChaosFragmentParticleDataStore, Rotation) == 0x000010, "Member 'FChaosFragmentParticleDataStore::Rotation' has a wrong offset!");
-static_assert(offsetof(FChaosFragmentParticleDataStore, Scale) == 0x000020, "Member 'FChaosFragmentParticleDataStore::Scale' has a wrong offset!");
-static_assert(offsetof(FChaosFragmentParticleDataStore, Index) == 0x00002C, "Member 'FChaosFragmentParticleDataStore::Index' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.SplineCurvesChannel
-// 0x00A8 (0x00F8 - 0x0050)
-struct FSplineCurvesChannel final : public FMovieSceneChannel
-{
-public:
-	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<struct FSplineCurves>                  KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FSplineCurvesChannel) == 0x000008, "Wrong alignment on FSplineCurvesChannel");
-static_assert(sizeof(FSplineCurvesChannel) == 0x0000F8, "Wrong size on FSplineCurvesChannel");
-static_assert(offsetof(FSplineCurvesChannel, Times) == 0x000050, "Member 'FSplineCurvesChannel::Times' has a wrong offset!");
-static_assert(offsetof(FSplineCurvesChannel, KeyValues) == 0x000060, "Member 'FSplineCurvesChannel::KeyValues' has a wrong offset!");
-static_assert(offsetof(FSplineCurvesChannel, KeyHandles) == 0x000070, "Member 'FSplineCurvesChannel::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosFragmentParticleDataStore;
 
 // ScriptStruct MarvelMovieScene.DynamicBatchMeshEventData
 // 0x0010 (0x0010 - 0x0000)
@@ -314,9 +200,7 @@ struct FDynamicBatchMeshEventData final
 public:
 	TArray<struct FChaosFragmentParticleDataStore> ParticleDatas;                                    // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDynamicBatchMeshEventData) == 0x000008, "Wrong alignment on FDynamicBatchMeshEventData");
-static_assert(sizeof(FDynamicBatchMeshEventData) == 0x000010, "Wrong size on FDynamicBatchMeshEventData");
-static_assert(offsetof(FDynamicBatchMeshEventData, ParticleDatas) == 0x000000, "Member 'FDynamicBatchMeshEventData::ParticleDatas' has a wrong offset!");
+DUMPER7_ASSERTS_FDynamicBatchMeshEventData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneDynamicBatchMeshData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -327,11 +211,7 @@ public:
 	TArray<struct FDynamicBatchMeshEventData>     KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneDynamicBatchMeshData) == 0x000008, "Wrong alignment on FMovieSceneDynamicBatchMeshData");
-static_assert(sizeof(FMovieSceneDynamicBatchMeshData) == 0x0000F8, "Wrong size on FMovieSceneDynamicBatchMeshData");
-static_assert(offsetof(FMovieSceneDynamicBatchMeshData, Times) == 0x000050, "Member 'FMovieSceneDynamicBatchMeshData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDynamicBatchMeshData, KeyValues) == 0x000060, "Member 'FMovieSceneDynamicBatchMeshData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneDynamicBatchMeshData, KeyHandles) == 0x000070, "Member 'FMovieSceneDynamicBatchMeshData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneDynamicBatchMeshData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelDynamicBatchMeshTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -340,9 +220,7 @@ struct FMovieSceneMarvelDynamicBatchMeshTemplate final : public FMovieSceneEvalT
 public:
 	struct FMovieSceneDynamicBatchMeshData        InstanceData;                                      // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelDynamicBatchMeshTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelDynamicBatchMeshTemplate");
-static_assert(sizeof(FMovieSceneMarvelDynamicBatchMeshTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelDynamicBatchMeshTemplate");
-static_assert(offsetof(FMovieSceneMarvelDynamicBatchMeshTemplate, InstanceData) == 0x000020, "Member 'FMovieSceneMarvelDynamicBatchMeshTemplate::InstanceData' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelDynamicBatchMeshTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelMiscTemplate
 // 0x0318 (0x0338 - 0x0020)
@@ -354,26 +232,7 @@ public:
 	struct FMovieSceneBoolChannel                 BoolKeys;                                          // 0x0230(0x0100)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_330[0x8];                                      // 0x0330(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelMiscTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelMiscTemplate");
-static_assert(sizeof(FMovieSceneMarvelMiscTemplate) == 0x000338, "Wrong size on FMovieSceneMarvelMiscTemplate");
-static_assert(offsetof(FMovieSceneMarvelMiscTemplate, IntKeys) == 0x000020, "Member 'FMovieSceneMarvelMiscTemplate::IntKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelMiscTemplate, FloatKeys) == 0x000120, "Member 'FMovieSceneMarvelMiscTemplate::FloatKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelMiscTemplate, BoolKeys) == 0x000230, "Member 'FMovieSceneMarvelMiscTemplate::BoolKeys' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.MovieSceneMarvelWeightedBlendableTemplate
-// 0x0120 (0x0140 - 0x0020)
-struct FMovieSceneMarvelWeightedBlendableTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	int32                                         ArrayIndex;                                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMovieSceneFloatChannel                WeightKeys;                                        // 0x0028(0x0110)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMovieSceneMarvelWeightedBlendableTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelWeightedBlendableTemplate");
-static_assert(sizeof(FMovieSceneMarvelWeightedBlendableTemplate) == 0x000140, "Wrong size on FMovieSceneMarvelWeightedBlendableTemplate");
-static_assert(offsetof(FMovieSceneMarvelWeightedBlendableTemplate, ArrayIndex) == 0x000020, "Member 'FMovieSceneMarvelWeightedBlendableTemplate::ArrayIndex' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelWeightedBlendableTemplate, WeightKeys) == 0x000028, "Member 'FMovieSceneMarvelWeightedBlendableTemplate::WeightKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelMiscTemplate;
 
 // ScriptStruct MarvelMovieScene.NiagaraArrayFloatBundleData
 // 0x0078 (0x0078 - 0x0000)
@@ -390,16 +249,7 @@ public:
 	ENiagaraArrayFloatType                        FloatType;                                         // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNiagaraArrayFloatBundleData) == 0x000008, "Wrong alignment on FNiagaraArrayFloatBundleData");
-static_assert(sizeof(FNiagaraArrayFloatBundleData) == 0x000078, "Wrong size on FNiagaraArrayFloatBundleData");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, FloatData1) == 0x000000, "Member 'FNiagaraArrayFloatBundleData::FloatData1' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, FloatData2) == 0x000010, "Member 'FNiagaraArrayFloatBundleData::FloatData2' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, FloatData3) == 0x000020, "Member 'FNiagaraArrayFloatBundleData::FloatData3' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, FloatData4) == 0x000030, "Member 'FNiagaraArrayFloatBundleData::FloatData4' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, ColorData) == 0x000040, "Member 'FNiagaraArrayFloatBundleData::ColorData' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, QuatData) == 0x000050, "Member 'FNiagaraArrayFloatBundleData::QuatData' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, MatrixData) == 0x000060, "Member 'FNiagaraArrayFloatBundleData::MatrixData' has a wrong offset!");
-static_assert(offsetof(FNiagaraArrayFloatBundleData, FloatType) == 0x000070, "Member 'FNiagaraArrayFloatBundleData::FloatType' has a wrong offset!");
+DUMPER7_ASSERTS_FNiagaraArrayFloatBundleData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneNiagaraArrayFloatData
 // 0x00A8 (0x00F8 - 0x0050)
@@ -410,11 +260,7 @@ public:
 	TArray<struct FNiagaraArrayFloatBundleData>   KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneNiagaraArrayFloatData) == 0x000008, "Wrong alignment on FMovieSceneNiagaraArrayFloatData");
-static_assert(sizeof(FMovieSceneNiagaraArrayFloatData) == 0x0000F8, "Wrong size on FMovieSceneNiagaraArrayFloatData");
-static_assert(offsetof(FMovieSceneNiagaraArrayFloatData, Times) == 0x000050, "Member 'FMovieSceneNiagaraArrayFloatData::Times' has a wrong offset!");
-static_assert(offsetof(FMovieSceneNiagaraArrayFloatData, KeyValues) == 0x000060, "Member 'FMovieSceneNiagaraArrayFloatData::KeyValues' has a wrong offset!");
-static_assert(offsetof(FMovieSceneNiagaraArrayFloatData, KeyHandles) == 0x000070, "Member 'FMovieSceneNiagaraArrayFloatData::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneNiagaraArrayFloatData;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelNiagaraArrayFloatTemplate
 // 0x0108 (0x0128 - 0x0020)
@@ -425,21 +271,7 @@ public:
 	class FName                                   OverrideName;                                      // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelNiagaraArrayFloatTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelNiagaraArrayFloatTemplate");
-static_assert(sizeof(FMovieSceneMarvelNiagaraArrayFloatTemplate) == 0x000128, "Wrong size on FMovieSceneMarvelNiagaraArrayFloatTemplate");
-static_assert(offsetof(FMovieSceneMarvelNiagaraArrayFloatTemplate, ArrayFloatData) == 0x000020, "Member 'FMovieSceneMarvelNiagaraArrayFloatTemplate::ArrayFloatData' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelNiagaraArrayFloatTemplate, OverrideName) == 0x000118, "Member 'FMovieSceneMarvelNiagaraArrayFloatTemplate::OverrideName' has a wrong offset!");
-
-// ScriptStruct MarvelMovieScene.MovieSceneMarvelSplineComponentTemplate
-// 0x00F8 (0x0118 - 0x0020)
-struct FMovieSceneMarvelSplineComponentTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	struct FSplineCurvesChannel                   SplineCurves;                                      // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneMarvelSplineComponentTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelSplineComponentTemplate");
-static_assert(sizeof(FMovieSceneMarvelSplineComponentTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelSplineComponentTemplate");
-static_assert(offsetof(FMovieSceneMarvelSplineComponentTemplate, SplineCurves) == 0x000020, "Member 'FMovieSceneMarvelSplineComponentTemplate::SplineCurves' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelNiagaraArrayFloatTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelNiagaraParameterCollectionTemplate
 // 0x0140 (0x0160 - 0x0020)
@@ -449,9 +281,7 @@ public:
 	struct FMovieSceneObjectPathChannel           NiagaraParameterCollectionInstances;               // 0x0020(0x0138)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelNiagaraParameterCollectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelNiagaraParameterCollectionTemplate");
-static_assert(sizeof(FMovieSceneMarvelNiagaraParameterCollectionTemplate) == 0x000160, "Wrong size on FMovieSceneMarvelNiagaraParameterCollectionTemplate");
-static_assert(offsetof(FMovieSceneMarvelNiagaraParameterCollectionTemplate, NiagaraParameterCollectionInstances) == 0x000020, "Member 'FMovieSceneMarvelNiagaraParameterCollectionTemplate::NiagaraParameterCollectionInstances' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelNiagaraParameterCollectionTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelNiagaraShowModeTemplate
 // 0x0110 (0x0130 - 0x0020)
@@ -461,9 +291,7 @@ public:
 	struct FMovieSceneByteChannel                 NiagaraShowModeKeys;                               // 0x0020(0x0108)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelNiagaraShowModeTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelNiagaraShowModeTemplate");
-static_assert(sizeof(FMovieSceneMarvelNiagaraShowModeTemplate) == 0x000130, "Wrong size on FMovieSceneMarvelNiagaraShowModeTemplate");
-static_assert(offsetof(FMovieSceneMarvelNiagaraShowModeTemplate, NiagaraShowModeKeys) == 0x000020, "Member 'FMovieSceneMarvelNiagaraShowModeTemplate::NiagaraShowModeKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelNiagaraShowModeTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelNiagaraTickScaleTemplate
 // 0x0118 (0x0138 - 0x0020)
@@ -473,9 +301,7 @@ public:
 	struct FMovieSceneFloatChannel                NiagaraTickScaleInstances;                         // 0x0020(0x0110)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelNiagaraTickScaleTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelNiagaraTickScaleTemplate");
-static_assert(sizeof(FMovieSceneMarvelNiagaraTickScaleTemplate) == 0x000138, "Wrong size on FMovieSceneMarvelNiagaraTickScaleTemplate");
-static_assert(offsetof(FMovieSceneMarvelNiagaraTickScaleTemplate, NiagaraTickScaleInstances) == 0x000020, "Member 'FMovieSceneMarvelNiagaraTickScaleTemplate::NiagaraTickScaleInstances' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelNiagaraTickScaleTemplate;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelOwnerSeeTemplate
 // 0x0208 (0x0228 - 0x0020)
@@ -486,10 +312,39 @@ public:
 	struct FMovieSceneBoolChannel                 OnlyOwnerSeeKeys;                                  // 0x0120(0x0100)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneMarvelOwnerSeeTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelOwnerSeeTemplate");
-static_assert(sizeof(FMovieSceneMarvelOwnerSeeTemplate) == 0x000228, "Wrong size on FMovieSceneMarvelOwnerSeeTemplate");
-static_assert(offsetof(FMovieSceneMarvelOwnerSeeTemplate, OwnerNoSeeKeys) == 0x000020, "Member 'FMovieSceneMarvelOwnerSeeTemplate::OwnerNoSeeKeys' has a wrong offset!");
-static_assert(offsetof(FMovieSceneMarvelOwnerSeeTemplate, OnlyOwnerSeeKeys) == 0x000120, "Member 'FMovieSceneMarvelOwnerSeeTemplate::OnlyOwnerSeeKeys' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelOwnerSeeTemplate;
+
+// ScriptStruct MarvelMovieScene.MovieScenePaintSceneCommandData
+// 0x00A8 (0x00F8 - 0x0050)
+struct FMovieScenePaintSceneCommandData final : public FMovieSceneChannel
+{
+public:
+	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FPaintSceneCommand>             KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FMovieScenePaintSceneCommandData;
+
+// ScriptStruct MarvelMovieScene.MovieScenePaintSceneReconnectRebuildData
+// 0x00A8 (0x00F8 - 0x0050)
+struct FMovieScenePaintSceneReconnectRebuildData final : public FMovieSceneChannel
+{
+public:
+	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FPaintSceneReconnectRebuildData> KeyValues;                                        // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FMovieScenePaintSceneReconnectRebuildData;
+
+// ScriptStruct MarvelMovieScene.MovieSceneMarvelPaintSceneTemplate
+// 0x01F0 (0x0210 - 0x0020)
+struct FMovieSceneMarvelPaintSceneTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	struct FMovieScenePaintSceneCommandData       Commands;                                          // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
+	struct FMovieScenePaintSceneReconnectRebuildData RebuildData;                                    // 0x0118(0x00F8)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMovieSceneMarvelPaintSceneTemplate;
 
 // ScriptStruct MarvelMovieScene.BoneSpaceTransformsData
 // 0x0010 (0x0010 - 0x0000)
@@ -498,9 +353,7 @@ struct FBoneSpaceTransformsData final
 public:
 	TArray<struct FTransform>                     Transforms;                                        // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBoneSpaceTransformsData) == 0x000008, "Wrong alignment on FBoneSpaceTransformsData");
-static_assert(sizeof(FBoneSpaceTransformsData) == 0x000010, "Wrong size on FBoneSpaceTransformsData");
-static_assert(offsetof(FBoneSpaceTransformsData, Transforms) == 0x000000, "Member 'FBoneSpaceTransformsData::Transforms' has a wrong offset!");
+DUMPER7_ASSERTS_FBoneSpaceTransformsData;
 
 // ScriptStruct MarvelMovieScene.BoneSpaceTransformsChannel
 // 0x00A8 (0x00F8 - 0x0050)
@@ -511,11 +364,7 @@ public:
 	TArray<struct FBoneSpaceTransformsData>       KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FBoneSpaceTransformsChannel) == 0x000008, "Wrong alignment on FBoneSpaceTransformsChannel");
-static_assert(sizeof(FBoneSpaceTransformsChannel) == 0x0000F8, "Wrong size on FBoneSpaceTransformsChannel");
-static_assert(offsetof(FBoneSpaceTransformsChannel, Times) == 0x000050, "Member 'FBoneSpaceTransformsChannel::Times' has a wrong offset!");
-static_assert(offsetof(FBoneSpaceTransformsChannel, KeyValues) == 0x000060, "Member 'FBoneSpaceTransformsChannel::KeyValues' has a wrong offset!");
-static_assert(offsetof(FBoneSpaceTransformsChannel, KeyHandles) == 0x000070, "Member 'FBoneSpaceTransformsChannel::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FBoneSpaceTransformsChannel;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelPoseableMeshComponentTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -524,9 +373,27 @@ struct FMovieSceneMarvelPoseableMeshComponentTemplate final : public FMovieScene
 public:
 	struct FBoneSpaceTransformsChannel            BoneSpaceTransforms;                               // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelPoseableMeshComponentTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelPoseableMeshComponentTemplate");
-static_assert(sizeof(FMovieSceneMarvelPoseableMeshComponentTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelPoseableMeshComponentTemplate");
-static_assert(offsetof(FMovieSceneMarvelPoseableMeshComponentTemplate, BoneSpaceTransforms) == 0x000020, "Member 'FMovieSceneMarvelPoseableMeshComponentTemplate::BoneSpaceTransforms' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelPoseableMeshComponentTemplate;
+
+// ScriptStruct MarvelMovieScene.SplineCurvesChannel
+// 0x00A8 (0x00F8 - 0x0050)
+struct FSplineCurvesChannel final : public FMovieSceneChannel
+{
+public:
+	TArray<struct FFrameNumber>                   Times;                                             // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FSplineCurves>                  KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FSplineCurvesChannel;
+
+// ScriptStruct MarvelMovieScene.MovieSceneMarvelSplineComponentTemplate
+// 0x00F8 (0x0118 - 0x0020)
+struct FMovieSceneMarvelSplineComponentTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	struct FSplineCurvesChannel                   SplineCurves;                                      // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMovieSceneMarvelSplineComponentTemplate;
 
 // ScriptStruct MarvelMovieScene.SplineMeshParamsChannel
 // 0x00A8 (0x00F8 - 0x0050)
@@ -537,11 +404,7 @@ public:
 	TArray<struct FSplineMeshParams>              KeyValues;                                         // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FMovieSceneKeyHandleMap                KeyHandles;                                        // 0x0070(0x0088)(Transient, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FSplineMeshParamsChannel) == 0x000008, "Wrong alignment on FSplineMeshParamsChannel");
-static_assert(sizeof(FSplineMeshParamsChannel) == 0x0000F8, "Wrong size on FSplineMeshParamsChannel");
-static_assert(offsetof(FSplineMeshParamsChannel, Times) == 0x000050, "Member 'FSplineMeshParamsChannel::Times' has a wrong offset!");
-static_assert(offsetof(FSplineMeshParamsChannel, KeyValues) == 0x000060, "Member 'FSplineMeshParamsChannel::KeyValues' has a wrong offset!");
-static_assert(offsetof(FSplineMeshParamsChannel, KeyHandles) == 0x000070, "Member 'FSplineMeshParamsChannel::KeyHandles' has a wrong offset!");
+DUMPER7_ASSERTS_FSplineMeshParamsChannel;
 
 // ScriptStruct MarvelMovieScene.MovieSceneMarvelSplineMeshComponentTemplate
 // 0x00F8 (0x0118 - 0x0020)
@@ -550,9 +413,19 @@ struct FMovieSceneMarvelSplineMeshComponentTemplate final : public FMovieSceneEv
 public:
 	struct FSplineMeshParamsChannel               SplineMeshParams;                                  // 0x0020(0x00F8)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneMarvelSplineMeshComponentTemplate) == 0x000008, "Wrong alignment on FMovieSceneMarvelSplineMeshComponentTemplate");
-static_assert(sizeof(FMovieSceneMarvelSplineMeshComponentTemplate) == 0x000118, "Wrong size on FMovieSceneMarvelSplineMeshComponentTemplate");
-static_assert(offsetof(FMovieSceneMarvelSplineMeshComponentTemplate, SplineMeshParams) == 0x000020, "Member 'FMovieSceneMarvelSplineMeshComponentTemplate::SplineMeshParams' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneMarvelSplineMeshComponentTemplate;
+
+// ScriptStruct MarvelMovieScene.MovieSceneMarvelWeightedBlendableTemplate
+// 0x0120 (0x0140 - 0x0020)
+struct FMovieSceneMarvelWeightedBlendableTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	int32                                         ArrayIndex;                                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMovieSceneFloatChannel                WeightKeys;                                        // 0x0028(0x0110)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMovieSceneMarvelWeightedBlendableTemplate;
 
 }
 

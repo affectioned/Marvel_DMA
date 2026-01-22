@@ -21,9 +21,7 @@ struct PyWidget_DeathMatchPanel_Team_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DeathMatchPanel_Team_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_DeathMatchPanel_Team_OnAnimationFinished");
-static_assert(sizeof(PyWidget_DeathMatchPanel_Team_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_DeathMatchPanel_Team_OnAnimationFinished");
-static_assert(offsetof(PyWidget_DeathMatchPanel_Team_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_DeathMatchPanel_Team_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DeathMatchPanel_Team_OnAnimationFinished;
 
 // PythonFunction PyWidget_DeathMatchPanel_Team.PyWidget_DeathMatchPanel_End.OnTeamDeathMatchScoreChange
 // 0x0010 (0x0010 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	class AMarvelPlayerState*                     PS;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalScore;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange) == 0x000008, "Wrong alignment on PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange");
-static_assert(sizeof(PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange) == 0x000010, "Wrong size on PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange");
-static_assert(offsetof(PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange, PS) == 0x000000, "Member 'PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange::PS' has a wrong offset!");
-static_assert(offsetof(PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange, TotalScore) == 0x000008, "Member 'PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange::TotalScore' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DeathMatchPanel_End_OnTeamDeathMatchScoreChange;
 
 }
 

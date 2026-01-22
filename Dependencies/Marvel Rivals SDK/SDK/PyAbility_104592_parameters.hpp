@@ -24,9 +24,7 @@ struct PyAbility_104592_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104592_CanActivate");
-static_assert(sizeof(PyAbility_104592_CanActivate) == 0x000001, "Wrong size on PyAbility_104592_CanActivate");
-static_assert(offsetof(PyAbility_104592_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104592_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_CanActivate;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.OnWaitTaskCancel
 // 0x0168 (0x0168 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_104592_OnWaitTaskCancel final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104592_OnWaitTaskCancel) == 0x000008, "Wrong alignment on PyAbility_104592_OnWaitTaskCancel");
-static_assert(sizeof(PyAbility_104592_OnWaitTaskCancel) == 0x000168, "Wrong size on PyAbility_104592_OnWaitTaskCancel");
-static_assert(offsetof(PyAbility_104592_OnWaitTaskCancel, Data) == 0x000000, "Member 'PyAbility_104592_OnWaitTaskCancel::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_OnWaitTaskCancel;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.OnWaitTaskConfirm
 // 0x0168 (0x0168 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_104592_OnWaitTaskConfirm final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104592_OnWaitTaskConfirm) == 0x000008, "Wrong alignment on PyAbility_104592_OnWaitTaskConfirm");
-static_assert(sizeof(PyAbility_104592_OnWaitTaskConfirm) == 0x000168, "Wrong size on PyAbility_104592_OnWaitTaskConfirm");
-static_assert(offsetof(PyAbility_104592_OnWaitTaskConfirm, Data) == 0x000000, "Member 'PyAbility_104592_OnWaitTaskConfirm::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_OnWaitTaskConfirm;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_104592_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104592_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104592_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104592_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104592_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_104592_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +60,7 @@ struct PyAbility_104592_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104592_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104592_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104592_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104592_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104592_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -79,9 +69,7 @@ struct PyAbility_104592_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_104592_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_104592_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_104592_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_104592_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_104592_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -90,9 +78,7 @@ struct PyAbility_104592_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_104592_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_104592_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_104592_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_104592_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_104592_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_104592.PyAbility_104592.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -101,22 +87,17 @@ struct PyAbility_104592_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104592_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_104592_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_104592_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_104592_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_104592_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_104592_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104592_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_104592.PyTraceComponent_10459201.OnTraceFilterExecute
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PyTraceComponent_10459201_OnTraceFilterExecute final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          ReturnValue;                                       // 0x01F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          ReturnValue;                                       // 0x0208(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTraceComponent_10459201_OnTraceFilterExecute) == 0x000008, "Wrong alignment on PyTraceComponent_10459201_OnTraceFilterExecute");
-static_assert(sizeof(PyTraceComponent_10459201_OnTraceFilterExecute) == 0x0001F8, "Wrong size on PyTraceComponent_10459201_OnTraceFilterExecute");
-static_assert(offsetof(PyTraceComponent_10459201_OnTraceFilterExecute, Hit) == 0x000000, "Member 'PyTraceComponent_10459201_OnTraceFilterExecute::Hit' has a wrong offset!");
-static_assert(offsetof(PyTraceComponent_10459201_OnTraceFilterExecute, ReturnValue) == 0x0001F0, "Member 'PyTraceComponent_10459201_OnTraceFilterExecute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_10459201_OnTraceFilterExecute;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	bool                                          IsHovering;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsVertical;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIManager_OnListHoverChanged) == 0x000001, "Wrong alignment on PyUIManager_OnListHoverChanged");
-static_assert(sizeof(PyUIManager_OnListHoverChanged) == 0x000002, "Wrong size on PyUIManager_OnListHoverChanged");
-static_assert(offsetof(PyUIManager_OnListHoverChanged, IsHovering) == 0x000000, "Member 'PyUIManager_OnListHoverChanged::IsHovering' has a wrong offset!");
-static_assert(offsetof(PyUIManager_OnListHoverChanged, IsVertical) == 0x000001, "Member 'PyUIManager_OnListHoverChanged::IsVertical' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIManager_OnListHoverChanged;
 
 }
 

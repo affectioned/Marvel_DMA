@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_EditPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_Replay_EditPanel_Tick");
-static_assert(sizeof(PyWidget_Replay_EditPanel_Tick) == 0x00003C, "Wrong size on PyWidget_Replay_EditPanel_Tick");
-static_assert(offsetof(PyWidget_Replay_EditPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Replay_EditPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_EditPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Replay_EditPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_EditPanel_Tick;
 
 }
 

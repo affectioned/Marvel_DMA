@@ -12,8 +12,8 @@
 
 #include "Marvel_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "Slate_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Slate_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -27,37 +27,42 @@ class UPyWidget_Halloween_BuildLevelData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_BuildLevelData">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_BuildLevelData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_BuildLevelData")
 	}
 	static class UPyWidget_Halloween_BuildLevelData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_BuildLevelData>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_BuildLevelData) == 0x000008, "Wrong alignment on UPyWidget_Halloween_BuildLevelData");
-static_assert(sizeof(UPyWidget_Halloween_BuildLevelData) == 0x000030, "Wrong size on UPyWidget_Halloween_BuildLevelData");
+DUMPER7_ASSERTS_UPyWidget_Halloween_BuildLevelData;
 
 // PythonClass PyWidget_Halloween_CardCategoryToolTips.PyWidget_Halloween_CardCategoryToolTipsUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Halloween_CardCategoryToolTipsUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         InactiveOpacity;                                   // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         InactiveOpacity;                                   // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CardCategoryToolTipsUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CardCategoryToolTipsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CardCategoryToolTipsUnit")
 	}
 	static class UPyWidget_Halloween_CardCategoryToolTipsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CardCategoryToolTipsUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CardCategoryToolTipsUnit) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CardCategoryToolTipsUnit");
-static_assert(sizeof(UPyWidget_Halloween_CardCategoryToolTipsUnit) == 0x0005C0, "Wrong size on UPyWidget_Halloween_CardCategoryToolTipsUnit");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTipsUnit, InactiveOpacity) == 0x0005BC, "Member 'UPyWidget_Halloween_CardCategoryToolTipsUnit::InactiveOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CardCategoryToolTipsUnit;
 
 // PythonClass PyWidget_Halloween_CardCategoryToolTips.PyWidget_Halloween_BuildCardData
 // 0x0000 (0x0030 - 0x0030)
@@ -66,24 +71,27 @@ class UPyWidget_Halloween_BuildCardData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_BuildCardData">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_BuildCardData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_BuildCardData")
 	}
 	static class UPyWidget_Halloween_BuildCardData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_BuildCardData>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_BuildCardData) == 0x000008, "Wrong alignment on UPyWidget_Halloween_BuildCardData");
-static_assert(sizeof(UPyWidget_Halloween_BuildCardData) == 0x000030, "Wrong size on UPyWidget_Halloween_BuildCardData");
+DUMPER7_ASSERTS_UPyWidget_Halloween_BuildCardData;
 
 // PythonClass PyWidget_Halloween_CardCategoryToolTips.PyWidget_Halloween_CardCategoryToolTipsCardUnit
-// 0x00A0 (0x0660 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_Halloween_CardCategoryToolTipsCardUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ECardQualityType, class FText>           QualityText;                                       // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<ECardQualityType, class UTexture2D*>     QualityStarT2D;                                    // 0x0610(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ECardQualityType, class FText>           QualityText;                                       // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<ECardQualityType, class UTexture2D*>     QualityStarT2D;                                    // 0x0618(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
@@ -91,31 +99,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CardCategoryToolTipsCardUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CardCategoryToolTipsCardUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CardCategoryToolTipsCardUnit")
 	}
 	static class UPyWidget_Halloween_CardCategoryToolTipsCardUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CardCategoryToolTipsCardUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CardCategoryToolTipsCardUnit) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CardCategoryToolTipsCardUnit");
-static_assert(sizeof(UPyWidget_Halloween_CardCategoryToolTipsCardUnit) == 0x000660, "Wrong size on UPyWidget_Halloween_CardCategoryToolTipsCardUnit");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTipsCardUnit, QualityText) == 0x0005C0, "Member 'UPyWidget_Halloween_CardCategoryToolTipsCardUnit::QualityText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTipsCardUnit, QualityStarT2D) == 0x000610, "Member 'UPyWidget_Halloween_CardCategoryToolTipsCardUnit::QualityStarT2D' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CardCategoryToolTipsCardUnit;
 
 // PythonClass PyWidget_Halloween_CardCategoryToolTips.PyWidget_Halloween_CardCategoryToolTips
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_Halloween_CardCategoryToolTips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnchors                               NormalAnchors;                                     // 0x05C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FAnchors                               PreviewAnchors;                                    // 0x05E0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PreviewColor;                                      // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          Is_ScoreBoard;                                     // 0x0628(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_629[0x7];                                      // 0x0629(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     BGT2D;                                             // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnchors                               NormalAnchors;                                     // 0x05C8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAnchors                               PreviewAnchors;                                    // 0x05E8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x0608(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PreviewColor;                                      // 0x061C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          Is_ScoreBoard;                                     // 0x0630(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     BGT2D;                                             // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -126,21 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CardCategoryToolTips">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CardCategoryToolTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CardCategoryToolTips")
 	}
 	static class UPyWidget_Halloween_CardCategoryToolTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CardCategoryToolTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CardCategoryToolTips) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CardCategoryToolTips");
-static_assert(sizeof(UPyWidget_Halloween_CardCategoryToolTips) == 0x000640, "Wrong size on UPyWidget_Halloween_CardCategoryToolTips");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, NormalAnchors) == 0x0005C0, "Member 'UPyWidget_Halloween_CardCategoryToolTips::NormalAnchors' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, PreviewAnchors) == 0x0005E0, "Member 'UPyWidget_Halloween_CardCategoryToolTips::PreviewAnchors' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, NormalColor) == 0x000600, "Member 'UPyWidget_Halloween_CardCategoryToolTips::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, PreviewColor) == 0x000614, "Member 'UPyWidget_Halloween_CardCategoryToolTips::PreviewColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, Is_ScoreBoard) == 0x000628, "Member 'UPyWidget_Halloween_CardCategoryToolTips::Is_ScoreBoard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CardCategoryToolTips, BGT2D) == 0x000630, "Member 'UPyWidget_Halloween_CardCategoryToolTips::BGT2D' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CardCategoryToolTips;
 
 }
 

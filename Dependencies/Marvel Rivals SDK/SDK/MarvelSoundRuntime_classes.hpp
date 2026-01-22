@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorWithAkAudioEvent">();
+		STATIC_CLASS_IMPL("ActorWithAkAudioEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorWithAkAudioEvent")
 	}
 	static class AActorWithAkAudioEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AActorWithAkAudioEvent>();
 	}
 };
-static_assert(alignof(AActorWithAkAudioEvent) == 0x000010, "Wrong alignment on AActorWithAkAudioEvent");
-static_assert(sizeof(AActorWithAkAudioEvent) == 0x0006E0, "Wrong size on AActorWithAkAudioEvent");
-static_assert(offsetof(AActorWithAkAudioEvent, AkEvent) == 0x0006D8, "Member 'AActorWithAkAudioEvent::AkEvent' has a wrong offset!");
+DUMPER7_ASSERTS_AActorWithAkAudioEvent;
 
 // Class MarvelSoundRuntime.AudioAutoShowLog
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioAutoShowLog">();
+		STATIC_CLASS_IMPL("AudioAutoShowLog")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioAutoShowLog")
 	}
 	static class UAudioAutoShowLog* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioAutoShowLog>();
 	}
 };
-static_assert(alignof(UAudioAutoShowLog) == 0x000008, "Wrong alignment on UAudioAutoShowLog");
-static_assert(sizeof(UAudioAutoShowLog) == 0x000030, "Wrong size on UAudioAutoShowLog");
+DUMPER7_ASSERTS_UAudioAutoShowLog;
 
 }
 

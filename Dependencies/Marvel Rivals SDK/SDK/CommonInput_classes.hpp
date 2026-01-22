@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputActionDomain">();
+		STATIC_CLASS_IMPL("CommonInputActionDomain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputActionDomain")
 	}
 	static class UCommonInputActionDomain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputActionDomain>();
 	}
 };
-static_assert(alignof(UCommonInputActionDomain) == 0x000008, "Wrong alignment on UCommonInputActionDomain");
-static_assert(sizeof(UCommonInputActionDomain) == 0x000048, "Wrong size on UCommonInputActionDomain");
-static_assert(offsetof(UCommonInputActionDomain, Behavior) == 0x000038, "Member 'UCommonInputActionDomain::Behavior' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomain, InnerBehavior) == 0x00003C, "Member 'UCommonInputActionDomain::InnerBehavior' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomain, bUseActionDomainDesiredInputConfig) == 0x000040, "Member 'UCommonInputActionDomain::bUseActionDomainDesiredInputConfig' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomain, InputMode) == 0x000041, "Member 'UCommonInputActionDomain::InputMode' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomain, MouseCaptureMode) == 0x000042, "Member 'UCommonInputActionDomain::MouseCaptureMode' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputActionDomain;
 
 // Class CommonInput.CommonInputActionDomainTable
 // 0x0018 (0x0050 - 0x0038)
@@ -64,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputActionDomainTable">();
+		STATIC_CLASS_IMPL("CommonInputActionDomainTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputActionDomainTable")
 	}
 	static class UCommonInputActionDomainTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputActionDomainTable>();
 	}
 };
-static_assert(alignof(UCommonInputActionDomainTable) == 0x000008, "Wrong alignment on UCommonInputActionDomainTable");
-static_assert(sizeof(UCommonInputActionDomainTable) == 0x000050, "Wrong size on UCommonInputActionDomainTable");
-static_assert(offsetof(UCommonInputActionDomainTable, ActionDomains) == 0x000038, "Member 'UCommonInputActionDomainTable::ActionDomains' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomainTable, InputMode) == 0x000048, "Member 'UCommonInputActionDomainTable::InputMode' has a wrong offset!");
-static_assert(offsetof(UCommonInputActionDomainTable, MouseCaptureMode) == 0x000049, "Member 'UCommonInputActionDomainTable::MouseCaptureMode' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputActionDomainTable;
 
 // Class CommonInput.CommonUIInputData
 // 0x0070 (0x00A0 - 0x0030)
@@ -91,20 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUIInputData">();
+		STATIC_CLASS_IMPL("CommonUIInputData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUIInputData")
 	}
 	static class UCommonUIInputData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUIInputData>();
 	}
 };
-static_assert(alignof(UCommonUIInputData) == 0x000008, "Wrong alignment on UCommonUIInputData");
-static_assert(sizeof(UCommonUIInputData) == 0x0000A0, "Wrong size on UCommonUIInputData");
-static_assert(offsetof(UCommonUIInputData, DefaultClickAction) == 0x000030, "Member 'UCommonUIInputData::DefaultClickAction' has a wrong offset!");
-static_assert(offsetof(UCommonUIInputData, DefaultBackAction) == 0x000048, "Member 'UCommonUIInputData::DefaultBackAction' has a wrong offset!");
-static_assert(offsetof(UCommonUIInputData, DefaultHoldData) == 0x000060, "Member 'UCommonUIInputData::DefaultHoldData' has a wrong offset!");
-static_assert(offsetof(UCommonUIInputData, EnhancedInputClickAction) == 0x000090, "Member 'UCommonUIInputData::EnhancedInputClickAction' has a wrong offset!");
-static_assert(offsetof(UCommonUIInputData, EnhancedInputBackAction) == 0x000098, "Member 'UCommonUIInputData::EnhancedInputBackAction' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonUIInputData;
 
 // Class CommonInput.CommonUIHoldData
 // 0x0018 (0x0048 - 0x0030)
@@ -118,18 +114,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUIHoldData">();
+		STATIC_CLASS_IMPL("CommonUIHoldData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUIHoldData")
 	}
 	static class UCommonUIHoldData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUIHoldData>();
 	}
 };
-static_assert(alignof(UCommonUIHoldData) == 0x000008, "Wrong alignment on UCommonUIHoldData");
-static_assert(sizeof(UCommonUIHoldData) == 0x000048, "Wrong size on UCommonUIHoldData");
-static_assert(offsetof(UCommonUIHoldData, KeyboardAndMouse) == 0x000030, "Member 'UCommonUIHoldData::KeyboardAndMouse' has a wrong offset!");
-static_assert(offsetof(UCommonUIHoldData, Gamepad) == 0x000038, "Member 'UCommonUIHoldData::Gamepad' has a wrong offset!");
-static_assert(offsetof(UCommonUIHoldData, Touch) == 0x000040, "Member 'UCommonUIHoldData::Touch' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonUIHoldData;
 
 // Class CommonInput.CommonInputBaseControllerData
 // 0x00E8 (0x0118 - 0x0030)
@@ -154,25 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputBaseControllerData">();
+		STATIC_CLASS_IMPL("CommonInputBaseControllerData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputBaseControllerData")
 	}
 	static class UCommonInputBaseControllerData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputBaseControllerData>();
 	}
 };
-static_assert(alignof(UCommonInputBaseControllerData) == 0x000008, "Wrong alignment on UCommonInputBaseControllerData");
-static_assert(sizeof(UCommonInputBaseControllerData) == 0x000118, "Wrong size on UCommonInputBaseControllerData");
-static_assert(offsetof(UCommonInputBaseControllerData, InputType) == 0x000030, "Member 'UCommonInputBaseControllerData::InputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, GamepadName) == 0x000034, "Member 'UCommonInputBaseControllerData::GamepadName' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, GamepadDisplayName) == 0x000040, "Member 'UCommonInputBaseControllerData::GamepadDisplayName' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, GamepadCategory) == 0x000058, "Member 'UCommonInputBaseControllerData::GamepadCategory' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, GamepadPlatformName) == 0x000070, "Member 'UCommonInputBaseControllerData::GamepadPlatformName' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, GamepadHardwareIdMapping) == 0x000088, "Member 'UCommonInputBaseControllerData::GamepadHardwareIdMapping' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, ControllerTexture) == 0x000098, "Member 'UCommonInputBaseControllerData::ControllerTexture' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, ControllerButtonMaskTexture) == 0x0000C8, "Member 'UCommonInputBaseControllerData::ControllerButtonMaskTexture' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, InputBrushDataMap) == 0x0000F8, "Member 'UCommonInputBaseControllerData::InputBrushDataMap' has a wrong offset!");
-static_assert(offsetof(UCommonInputBaseControllerData, InputBrushKeySets) == 0x000108, "Member 'UCommonInputBaseControllerData::InputBrushKeySets' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputBaseControllerData;
 
 // Class CommonInput.CommonInputPlatformSettings
 // 0x0038 (0x0088 - 0x0050)
@@ -192,23 +181,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputPlatformSettings">();
+		STATIC_CLASS_IMPL("CommonInputPlatformSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputPlatformSettings")
 	}
 	static class UCommonInputPlatformSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputPlatformSettings>();
 	}
 };
-static_assert(alignof(UCommonInputPlatformSettings) == 0x000008, "Wrong alignment on UCommonInputPlatformSettings");
-static_assert(sizeof(UCommonInputPlatformSettings) == 0x000088, "Wrong size on UCommonInputPlatformSettings");
-static_assert(offsetof(UCommonInputPlatformSettings, DefaultInputType) == 0x000050, "Member 'UCommonInputPlatformSettings::DefaultInputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, bSupportsMouseAndKeyboard) == 0x000051, "Member 'UCommonInputPlatformSettings::bSupportsMouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, bSupportsTouch) == 0x000052, "Member 'UCommonInputPlatformSettings::bSupportsTouch' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, bSupportsGamepad) == 0x000053, "Member 'UCommonInputPlatformSettings::bSupportsGamepad' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, DefaultGamepadName) == 0x000054, "Member 'UCommonInputPlatformSettings::DefaultGamepadName' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, bCanChangeGamepadType) == 0x000060, "Member 'UCommonInputPlatformSettings::bCanChangeGamepadType' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, ControllerData) == 0x000068, "Member 'UCommonInputPlatformSettings::ControllerData' has a wrong offset!");
-static_assert(offsetof(UCommonInputPlatformSettings, ControllerDataClasses) == 0x000078, "Member 'UCommonInputPlatformSettings::ControllerDataClasses' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputPlatformSettings;
 
 // Class CommonInput.CommonInputSettings
 // 0x00F8 (0x0140 - 0x0048)
@@ -238,28 +222,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputSettings">();
+		STATIC_CLASS_IMPL("CommonInputSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputSettings")
 	}
 	static class UCommonInputSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputSettings>();
 	}
 };
-static_assert(alignof(UCommonInputSettings) == 0x000008, "Wrong alignment on UCommonInputSettings");
-static_assert(sizeof(UCommonInputSettings) == 0x000140, "Wrong size on UCommonInputSettings");
-static_assert(offsetof(UCommonInputSettings, InputData) == 0x000048, "Member 'UCommonInputSettings::InputData' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, PlatformInput) == 0x000078, "Member 'UCommonInputSettings::PlatformInput' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, CommonInputPlatformData) == 0x000088, "Member 'UCommonInputSettings::CommonInputPlatformData' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, bEnableInputMethodThrashingProtection) == 0x0000D8, "Member 'UCommonInputSettings::bEnableInputMethodThrashingProtection' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, InputMethodThrashingLimit) == 0x0000DC, "Member 'UCommonInputSettings::InputMethodThrashingLimit' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, InputMethodThrashingWindowInSeconds) == 0x0000E0, "Member 'UCommonInputSettings::InputMethodThrashingWindowInSeconds' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, InputMethodThrashingCooldownInSeconds) == 0x0000E8, "Member 'UCommonInputSettings::InputMethodThrashingCooldownInSeconds' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, bAllowOutOfFocusDeviceInput) == 0x0000F0, "Member 'UCommonInputSettings::bAllowOutOfFocusDeviceInput' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, bEnableDefaultInputConfig) == 0x0000F1, "Member 'UCommonInputSettings::bEnableDefaultInputConfig' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, bEnableEnhancedInputSupport) == 0x0000F2, "Member 'UCommonInputSettings::bEnableEnhancedInputSupport' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, ActionDomainTable) == 0x0000F8, "Member 'UCommonInputSettings::ActionDomainTable' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, InputDataClass) == 0x000130, "Member 'UCommonInputSettings::InputDataClass' has a wrong offset!");
-static_assert(offsetof(UCommonInputSettings, ActionDomainTablePtr) == 0x000138, "Member 'UCommonInputSettings::ActionDomainTablePtr' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputSettings;
 
 // Class CommonInput.CommonInputSubsystem
 // 0x00E8 (0x0120 - 0x0038)
@@ -297,25 +271,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputSubsystem">();
+		STATIC_CLASS_IMPL("CommonInputSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputSubsystem")
 	}
 	static class UCommonInputSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputSubsystem>();
 	}
 };
-static_assert(alignof(UCommonInputSubsystem) == 0x000008, "Wrong alignment on UCommonInputSubsystem");
-static_assert(sizeof(UCommonInputSubsystem) == 0x000120, "Wrong size on UCommonInputSubsystem");
-static_assert(offsetof(UCommonInputSubsystem, OnInputMethodChanged) == 0x000070, "Member 'UCommonInputSubsystem::OnInputMethodChanged' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, NumberOfInputMethodChangesRecently) == 0x000080, "Member 'UCommonInputSubsystem::NumberOfInputMethodChangesRecently' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, LastInputMethodChangeTime) == 0x000088, "Member 'UCommonInputSubsystem::LastInputMethodChangeTime' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, LastTimeInputMethodThrashingBegan) == 0x000090, "Member 'UCommonInputSubsystem::LastTimeInputMethodThrashingBegan' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, LastInputType) == 0x000098, "Member 'UCommonInputSubsystem::LastInputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, CurrentInputType) == 0x000099, "Member 'UCommonInputSubsystem::CurrentInputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, GamepadInputType) == 0x00009C, "Member 'UCommonInputSubsystem::GamepadInputType' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, CurrentInputLocks) == 0x0000A8, "Member 'UCommonInputSubsystem::CurrentInputLocks' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, ActionDomainTable) == 0x000100, "Member 'UCommonInputSubsystem::ActionDomainTable' has a wrong offset!");
-static_assert(offsetof(UCommonInputSubsystem, bIsGamepadSimulatedClick) == 0x000108, "Member 'UCommonInputSubsystem::bIsGamepadSimulatedClick' has a wrong offset!");
+DUMPER7_ASSERTS_UCommonInputSubsystem;
 
 }
 

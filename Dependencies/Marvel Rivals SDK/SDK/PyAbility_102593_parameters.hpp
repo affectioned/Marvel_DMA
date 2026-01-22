@@ -21,9 +21,7 @@ struct PyAbility_102593_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102593_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102593_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102593_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102593_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102593_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_102593_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102593_K2_OnEndAbility;
 
 // PythonFunction PyAbility_102593.PyAbility_102593.On_Listening_Ability_Activated
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_102593_On_Listening_Ability_Activated final
 public:
 	class UGameplayAbility*                       OtherAbility;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102593_On_Listening_Ability_Activated) == 0x000008, "Wrong alignment on PyAbility_102593_On_Listening_Ability_Activated");
-static_assert(sizeof(PyAbility_102593_On_Listening_Ability_Activated) == 0x000008, "Wrong size on PyAbility_102593_On_Listening_Ability_Activated");
-static_assert(offsetof(PyAbility_102593_On_Listening_Ability_Activated, OtherAbility) == 0x000000, "Member 'PyAbility_102593_On_Listening_Ability_Activated::OtherAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102593_On_Listening_Ability_Activated;
 
 // PythonFunction PyAbility_102593.PyAbility_102593.On_Listening_Ability_Missile
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_102593_On_Listening_Ability_Missile final
 public:
 	class UGameplayAbility*                       OtherAbility;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102593_On_Listening_Ability_Missile) == 0x000008, "Wrong alignment on PyAbility_102593_On_Listening_Ability_Missile");
-static_assert(sizeof(PyAbility_102593_On_Listening_Ability_Missile) == 0x000008, "Wrong size on PyAbility_102593_On_Listening_Ability_Missile");
-static_assert(offsetof(PyAbility_102593_On_Listening_Ability_Missile, OtherAbility) == 0x000000, "Member 'PyAbility_102593_On_Listening_Ability_Missile::OtherAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102593_On_Listening_Ability_Missile;
 
 }
 

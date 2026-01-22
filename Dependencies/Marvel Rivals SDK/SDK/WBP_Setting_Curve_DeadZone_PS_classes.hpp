@@ -17,40 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Curve_DeadZone_PS.WBP_Setting_Curve_DeadZone_PS_C
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UWBP_Setting_Curve_DeadZone_PS_C final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_InnerCircle;                                  // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_OuterCircle;                                  // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Img_Arrow_Left;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Arrow_Right;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps;                                            // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Ps4;                                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Curve_Joystick_C*          WBP_Joystick_Left;                                 // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Curve_Joystick_C*          WBP_Joystick_Right;                                // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_InnerCircle;                                  // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_OuterCircle;                                  // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Img_Arrow_Left;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Arrow_Right;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps;                                            // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Ps4;                                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Curve_Joystick_C*          WBP_Joystick_Left;                                 // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Curve_Joystick_C*          WBP_Joystick_Right;                                // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Curve_DeadZone_PS_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Curve_DeadZone_PS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Curve_DeadZone_PS_C")
 	}
 	static class UWBP_Setting_Curve_DeadZone_PS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Curve_DeadZone_PS_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Curve_DeadZone_PS_C) == 0x000008, "Wrong alignment on UWBP_Setting_Curve_DeadZone_PS_C");
-static_assert(sizeof(UWBP_Setting_Curve_DeadZone_PS_C) == 0x000600, "Wrong size on UWBP_Setting_Curve_DeadZone_PS_C");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Anim_InnerCircle) == 0x0005C0, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Anim_InnerCircle' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Anim_OuterCircle) == 0x0005C8, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Anim_OuterCircle' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Img_Arrow_Left) == 0x0005D0, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Img_Arrow_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Img_Arrow_Right) == 0x0005D8, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Img_Arrow_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Img_Ps) == 0x0005E0, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Img_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, Img_Ps4) == 0x0005E8, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::Img_Ps4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, WBP_Joystick_Left) == 0x0005F0, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::WBP_Joystick_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_DeadZone_PS_C, WBP_Joystick_Right) == 0x0005F8, "Member 'UWBP_Setting_Curve_DeadZone_PS_C::WBP_Joystick_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Curve_DeadZone_PS_C;
 
 }
 

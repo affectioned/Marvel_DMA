@@ -11,35 +11,35 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "PyWidget_Common_Button_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_RoomSelectMapV2.PyWidget_RoomSelectMapV2
-// 0x00A8 (0x06A0 - 0x05F8)
+// 0x00A8 (0x06A8 - 0x0600)
 class UPyWidget_RoomSelectMapV2 final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           LeftSwitchAction;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightSwitchAction;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ModeTabItemClass;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                SelectMapColumnClass;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PageMapItemNum;                                    // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x064C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x065C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x066C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x067C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         HoveredRenderValue;                                // 0x068C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BG_FadeIn_Delay_Time;                              // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Items_FadeIn_Time;                                 // 0x0694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableWheelChangePage;                             // 0x0698(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           LeftSwitchAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightSwitchAction;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ModeTabItemClass;                                  // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SelectMapColumnClass;                              // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PageMapItemNum;                                    // 0x0630(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x0634(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x0644(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x0654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x0664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x0674(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x0684(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         HoveredRenderValue;                                // 0x0694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BG_FadeIn_Delay_Time;                              // 0x0698(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Items_FadeIn_Time;                                 // 0x069C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableWheelChangePage;                             // 0x06A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -53,35 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomSelectMapV2">();
+		STATIC_CLASS_IMPL("PyWidget_RoomSelectMapV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomSelectMapV2")
 	}
 	static class UPyWidget_RoomSelectMapV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RoomSelectMapV2>();
 	}
 };
-static_assert(alignof(UPyWidget_RoomSelectMapV2) == 0x000008, "Wrong alignment on UPyWidget_RoomSelectMapV2");
-static_assert(sizeof(UPyWidget_RoomSelectMapV2) == 0x0006A0, "Wrong size on UPyWidget_RoomSelectMapV2");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, LeftSwitchAction) == 0x0005F8, "Member 'UPyWidget_RoomSelectMapV2::LeftSwitchAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, RightSwitchAction) == 0x000600, "Member 'UPyWidget_RoomSelectMapV2::RightSwitchAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, MapItem) == 0x000608, "Member 'UPyWidget_RoomSelectMapV2::MapItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, PageCuttingItem) == 0x000610, "Member 'UPyWidget_RoomSelectMapV2::PageCuttingItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, ModeTabItemClass) == 0x000618, "Member 'UPyWidget_RoomSelectMapV2::ModeTabItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, SelectMapColumnClass) == 0x000620, "Member 'UPyWidget_RoomSelectMapV2::SelectMapColumnClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, PageMapItemNum) == 0x000628, "Member 'UPyWidget_RoomSelectMapV2::PageMapItemNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Normal_Left) == 0x00062C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Normal_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Normal_Mid) == 0x00063C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Normal_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Normal_Right) == 0x00064C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Normal_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Hover_Left) == 0x00065C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Hover_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Hover_Mid) == 0x00066C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Hover_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Mode_Item_Padding_Hover_Right) == 0x00067C, "Member 'UPyWidget_RoomSelectMapV2::Mode_Item_Padding_Hover_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, HoveredRenderValue) == 0x00068C, "Member 'UPyWidget_RoomSelectMapV2::HoveredRenderValue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, BG_FadeIn_Delay_Time) == 0x000690, "Member 'UPyWidget_RoomSelectMapV2::BG_FadeIn_Delay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, Items_FadeIn_Time) == 0x000694, "Member 'UPyWidget_RoomSelectMapV2::Items_FadeIn_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomSelectMapV2, EnableWheelChangePage) == 0x000698, "Member 'UPyWidget_RoomSelectMapV2::EnableWheelChangePage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RoomSelectMapV2;
 
 // PythonClass PyWidget_RoomSelectMapV2.PyWidget_RoomSelectMapUnitV2
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_RoomSelectMapUnitV2 final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -94,15 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomSelectMapUnitV2">();
+		STATIC_CLASS_IMPL("PyWidget_RoomSelectMapUnitV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomSelectMapUnitV2")
 	}
 	static class UPyWidget_RoomSelectMapUnitV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RoomSelectMapUnitV2>();
 	}
 };
-static_assert(alignof(UPyWidget_RoomSelectMapUnitV2) == 0x000010, "Wrong alignment on UPyWidget_RoomSelectMapUnitV2");
-static_assert(sizeof(UPyWidget_RoomSelectMapUnitV2) == 0x0008C0, "Wrong size on UPyWidget_RoomSelectMapUnitV2");
+DUMPER7_ASSERTS_UPyWidget_RoomSelectMapUnitV2;
 
 }
 

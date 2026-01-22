@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_SkillState.PyWidget_Replay_SkillState
-// 0x0020 (0x0590 - 0x0570)
+// 0x0020 (0x0598 - 0x0578)
 class UPyWidget_Replay_SkillState final : public UWidget_ReplayUltimateAbility
 {
 public:
-	struct FMargin                                SkillPercentPadding;                               // 0x0570(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bActive)>  OnUltimateAbilityActiveChange;                     // 0x0580(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FMargin                                SkillPercentPadding;                               // 0x0578(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bActive)>  OnUltimateAbilityActiveChange;                     // 0x0588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -42,17 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_SkillState">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_SkillState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_SkillState")
 	}
 	static class UPyWidget_Replay_SkillState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_SkillState>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_SkillState) == 0x000008, "Wrong alignment on UPyWidget_Replay_SkillState");
-static_assert(sizeof(UPyWidget_Replay_SkillState) == 0x000590, "Wrong size on UPyWidget_Replay_SkillState");
-static_assert(offsetof(UPyWidget_Replay_SkillState, SkillPercentPadding) == 0x000570, "Member 'UPyWidget_Replay_SkillState::SkillPercentPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SkillState, OnUltimateAbilityActiveChange) == 0x000580, "Member 'UPyWidget_Replay_SkillState::OnUltimateAbilityActiveChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_SkillState;
 
 }
 

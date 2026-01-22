@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_AuxiliaryGrid">();
+		STATIC_CLASS_IMPL("PyWidget_Common_AuxiliaryGrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_AuxiliaryGrid")
 	}
 	static class UPyWidget_Common_AuxiliaryGrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_AuxiliaryGrid>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_AuxiliaryGrid) == 0x000008, "Wrong alignment on UPyWidget_Common_AuxiliaryGrid");
-static_assert(sizeof(UPyWidget_Common_AuxiliaryGrid) == 0x0003D0, "Wrong size on UPyWidget_Common_AuxiliaryGrid");
-static_assert(offsetof(UPyWidget_Common_AuxiliaryGrid, GridLineColor) == 0x0003B8, "Member 'UPyWidget_Common_AuxiliaryGrid::GridLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_AuxiliaryGrid, GridLineThickness) == 0x0003C8, "Member 'UPyWidget_Common_AuxiliaryGrid::GridLineThickness' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_AuxiliaryGrid, AuxiliaryGridSize) == 0x0003CC, "Member 'UPyWidget_Common_AuxiliaryGrid::AuxiliaryGridSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_AuxiliaryGrid;
 
 }
 

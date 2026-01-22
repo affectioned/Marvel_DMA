@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatClashTab">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatClashTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatClashTab")
 	}
 	static class UPyWidget_LeagueChatClashTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatClashTab>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatClashTab) == 0x000008, "Wrong alignment on UPyWidget_LeagueChatClashTab");
-static_assert(sizeof(UPyWidget_LeagueChatClashTab) == 0x0003B8, "Wrong size on UPyWidget_LeagueChatClashTab");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatClashTab;
 
 }
 

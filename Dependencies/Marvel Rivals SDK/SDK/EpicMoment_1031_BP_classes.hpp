@@ -23,15 +23,18 @@ class UEpicMoment_1031_BP_C final : public UEpicMomentAction_1031
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EpicMoment_1031_BP_C">();
+		BP_STATIC_CLASS_IMPL("EpicMoment_1031_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicMoment_1031_BP_C")
 	}
 	static class UEpicMoment_1031_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEpicMoment_1031_BP_C>();
 	}
 };
-static_assert(alignof(UEpicMoment_1031_BP_C) == 0x000008, "Wrong alignment on UEpicMoment_1031_BP_C");
-static_assert(sizeof(UEpicMoment_1031_BP_C) == 0x0001C0, "Wrong size on UEpicMoment_1031_BP_C");
+DUMPER7_ASSERTS_UEpicMoment_1031_BP_C;
 
 }
 

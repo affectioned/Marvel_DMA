@@ -100,90 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_MiniKeyBoard_New_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_MiniKeyBoard_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_MiniKeyBoard_New_C")
 	}
 	static class UWBP_Setting_MiniKeyBoard_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_MiniKeyBoard_New_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_MiniKeyBoard_New_C) == 0x000008, "Wrong alignment on UWBP_Setting_MiniKeyBoard_New_C");
-static_assert(sizeof(UWBP_Setting_MiniKeyBoard_New_C) == 0x000610, "Wrong size on UWBP_Setting_MiniKeyBoard_New_C");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, Bg) == 0x0003B8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, HBox_MiniKeyBoard) == 0x0003C0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::HBox_MiniKeyBoard' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_A) == 0x0003C8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_A' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_AltLeft) == 0x0003D0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_AltLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_AltRight) == 0x0003D8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_AltRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Apostrophe) == 0x0003E0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Apostrophe' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_B) == 0x0003E8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_B' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Backslash) == 0x0003F0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Backslash' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_BracketsLeft) == 0x0003F8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_BracketsLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_BracketsRight) == 0x000400, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_BracketsRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_C) == 0x000408, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_C' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Caps) == 0x000410, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Caps' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Comma) == 0x000418, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Comma' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_CtrlLeft) == 0x000420, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_CtrlLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_CtrlRight) == 0x000428, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_CtrlRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_D) == 0x000430, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_D' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_E) == 0x000438, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_E' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_F) == 0x000440, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_F' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_G) == 0x000448, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_G' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_H) == 0x000450, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_H' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_I) == 0x000458, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_I' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_J) == 0x000460, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_J' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_K) == 0x000468, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_K' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_L) == 0x000470, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_L' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_M) == 0x000478, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_M' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_N) == 0x000480, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_N' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_O) == 0x000488, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_O' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_P) == 0x000490, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_P' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Period) == 0x000498, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Period' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Q) == 0x0004A0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Q' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_R) == 0x0004A8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_R' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_S) == 0x0004B0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_S' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Semicolon) == 0x0004B8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Semicolon' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_ShiftLeft) == 0x0004C0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_ShiftLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_ShiftRight) == 0x0004C8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_ShiftRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Slash) == 0x0004D0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Slash' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Space) == 0x0004D8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Space' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_T) == 0x0004E0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_T' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_U) == 0x0004E8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_U' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_V) == 0x0004F0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_V' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_W) == 0x0004F8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_W' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_WinLeft) == 0x000500, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_WinLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_WinRight) == 0x000508, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_WinRight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_X) == 0x000510, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_X' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Y) == 0x000518, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Y' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Key_Z) == 0x000520, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Key_Z' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_Backspace) == 0x000528, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_Backspace' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_Enter) == 0x000530, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_Enter' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_Equals) == 0x000538, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_Equals' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_ESC) == 0x000540, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_ESC' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_1) == 0x000548, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_2) == 0x000550, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_3) == 0x000558, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_4) == 0x000560, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_5) == 0x000568, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_6) == 0x000570, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_7) == 0x000578, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_7' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_8) == 0x000580, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_8' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_9) == 0x000588, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_9' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_10) == 0x000590, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_10' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_11) == 0x000598, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_11' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_F_12) == 0x0005A0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_F_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_hyphen) == 0x0005A8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_hyphen' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_Tab) == 0x0005B0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_MiniKeyBoard_Tilde) == 0x0005B8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_MiniKeyBoard_Tilde' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_0) == 0x0005C0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_1) == 0x0005C8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_2) == 0x0005D0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_3) == 0x0005D8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_4) == 0x0005E0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_5) == 0x0005E8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_6) == 0x0005F0, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_7) == 0x0005F8, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_7' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_8) == 0x000600, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_8' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_New_C, WBP_Number_9) == 0x000608, "Member 'UWBP_Setting_MiniKeyBoard_New_C::WBP_Number_9' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_MiniKeyBoard_New_C;
 
 }
 

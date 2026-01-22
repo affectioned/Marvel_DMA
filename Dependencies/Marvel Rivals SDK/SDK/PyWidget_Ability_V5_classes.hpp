@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Ability_V5.PyWidget_AbilityCommon_V5
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_AbilityCommon_V5 : public UWidget_AbilityCommon
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityCommon_V5">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityCommon_V5")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityCommon_V5")
 	}
 	static class UPyWidget_AbilityCommon_V5* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityCommon_V5>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityCommon_V5) == 0x000008, "Wrong alignment on UPyWidget_AbilityCommon_V5");
-static_assert(sizeof(UPyWidget_AbilityCommon_V5) == 0x000568, "Wrong size on UPyWidget_AbilityCommon_V5");
+DUMPER7_ASSERTS_UPyWidget_AbilityCommon_V5;
 
 }
 

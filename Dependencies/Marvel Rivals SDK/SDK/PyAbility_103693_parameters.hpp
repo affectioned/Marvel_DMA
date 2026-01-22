@@ -21,9 +21,7 @@ struct PyAbility_103693_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103693_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103693_CanActivate");
-static_assert(sizeof(PyAbility_103693_CanActivate) == 0x000001, "Wrong size on PyAbility_103693_CanActivate");
-static_assert(offsetof(PyAbility_103693_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103693_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103693_CanActivate;
 
 // PythonFunction PyAbility_103693.PyAbility_103693.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_103693_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103693_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_103693_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_103693_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_103693_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_103693_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_103693_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103693_NativeOnMontageEvent;
 
 }
 

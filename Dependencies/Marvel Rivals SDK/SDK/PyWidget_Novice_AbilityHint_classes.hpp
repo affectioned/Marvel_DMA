@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Novice_AbilityHint.PyWidget_Novice_AbilityHint
-// 0x0020 (0x0588 - 0x0568)
+// 0x0020 (0x0590 - 0x0570)
 class UPyWidget_Novice_AbilityHint final : public UMarvelUserWidget
 {
 public:
-	struct FVector2D                              PositionOffset;                                    // 0x0568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              WrapPadding;                                       // 0x0578(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              PositionOffset;                                    // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              WrapPadding;                                       // 0x0580(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,26 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_AbilityHint">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_AbilityHint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_AbilityHint")
 	}
 	static class UPyWidget_Novice_AbilityHint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_AbilityHint>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_AbilityHint) == 0x000008, "Wrong alignment on UPyWidget_Novice_AbilityHint");
-static_assert(sizeof(UPyWidget_Novice_AbilityHint) == 0x000588, "Wrong size on UPyWidget_Novice_AbilityHint");
-static_assert(offsetof(UPyWidget_Novice_AbilityHint, PositionOffset) == 0x000568, "Member 'UPyWidget_Novice_AbilityHint::PositionOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_AbilityHint, WrapPadding) == 0x000578, "Member 'UPyWidget_Novice_AbilityHint::WrapPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_AbilityHint;
 
 // PythonClass PyWidget_Novice_AbilityHint.PyWidget_Novice_AbilityHint_VX
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Novice_AbilityHint_VX : public UMarvelUserWidget
 {
 public:
-	float                                         ShowLoopDelay;                                     // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          FadeInAudio;                                       // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShowLoopDelay;                                     // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          FadeInAudio;                                       // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -62,17 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_AbilityHint_VX">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_AbilityHint_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_AbilityHint_VX")
 	}
 	static class UPyWidget_Novice_AbilityHint_VX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_AbilityHint_VX>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_AbilityHint_VX) == 0x000008, "Wrong alignment on UPyWidget_Novice_AbilityHint_VX");
-static_assert(sizeof(UPyWidget_Novice_AbilityHint_VX) == 0x000578, "Wrong size on UPyWidget_Novice_AbilityHint_VX");
-static_assert(offsetof(UPyWidget_Novice_AbilityHint_VX, ShowLoopDelay) == 0x000568, "Member 'UPyWidget_Novice_AbilityHint_VX::ShowLoopDelay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_AbilityHint_VX, FadeInAudio) == 0x000570, "Member 'UPyWidget_Novice_AbilityHint_VX::FadeInAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_AbilityHint_VX;
 
 }
 

@@ -23,9 +23,7 @@ struct PyMarvelGameHUD_M2201_ReceiveEndPlay final
 public:
 	EEndPlayReason                                Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelGameHUD_M2201_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelGameHUD_M2201_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelGameHUD_M2201_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelGameHUD_M2201_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelGameHUD_M2201_ReceiveEndPlay, Reason) == 0x000000, "Member 'PyMarvelGameHUD_M2201_ReceiveEndPlay::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelGameHUD_M2201_ReceiveEndPlay;
 
 }
 

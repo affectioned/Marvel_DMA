@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingMouseSensitivityHandler">();
+		STATIC_CLASS_IMPL("UISettingMouseSensitivityHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingMouseSensitivityHandler")
 	}
 	static class UUISettingMouseSensitivityHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingMouseSensitivityHandler>();
 	}
 };
-static_assert(alignof(UUISettingMouseSensitivityHandler) == 0x000008, "Wrong alignment on UUISettingMouseSensitivityHandler");
-static_assert(sizeof(UUISettingMouseSensitivityHandler) == 0x000030, "Wrong size on UUISettingMouseSensitivityHandler");
+DUMPER7_ASSERTS_UUISettingMouseSensitivityHandler;
 
 // PythonClass Mouse.UISettingMouseInvertCameraHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingMouseInvertCameraHandler">();
+		STATIC_CLASS_IMPL("UISettingMouseInvertCameraHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingMouseInvertCameraHandler")
 	}
 	static class UUISettingMouseInvertCameraHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingMouseInvertCameraHandler>();
 	}
 };
-static_assert(alignof(UUISettingMouseInvertCameraHandler) == 0x000008, "Wrong alignment on UUISettingMouseInvertCameraHandler");
-static_assert(sizeof(UUISettingMouseInvertCameraHandler) == 0x000030, "Wrong size on UUISettingMouseInvertCameraHandler");
+DUMPER7_ASSERTS_UUISettingMouseInvertCameraHandler;
 
 // PythonClass Mouse.UISettingMouseAccelerationHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -72,15 +78,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingMouseAccelerationHandler">();
+		STATIC_CLASS_IMPL("UISettingMouseAccelerationHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingMouseAccelerationHandler")
 	}
 	static class UUISettingMouseAccelerationHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingMouseAccelerationHandler>();
 	}
 };
-static_assert(alignof(UUISettingMouseAccelerationHandler) == 0x000008, "Wrong alignment on UUISettingMouseAccelerationHandler");
-static_assert(sizeof(UUISettingMouseAccelerationHandler) == 0x000030, "Wrong size on UUISettingMouseAccelerationHandler");
+DUMPER7_ASSERTS_UUISettingMouseAccelerationHandler;
+
+// PythonClass Mouse.UISettingMouseHighPollingHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingMouseHighPollingHandler final : public UUISettingEntrySettingHandler
+{
+public:
+	float BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o);
+	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
+	float BP_GetDefaultValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingMouseHighPollingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingMouseHighPollingHandler")
+	}
+	static class UUISettingMouseHighPollingHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingMouseHighPollingHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingMouseHighPollingHandler;
 
 }
 

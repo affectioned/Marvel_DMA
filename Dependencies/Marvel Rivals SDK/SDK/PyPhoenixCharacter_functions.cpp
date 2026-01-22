@@ -17,6 +17,63 @@
 namespace SDK
 {
 
+// PythonFunction PyPhoenixCharacter.PyPhoenixPhantomChildActor.ReceivePoolBeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyPhoenixPhantomChildActor::ReceivePoolBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPhoenixPhantomChildActor", "ReceivePoolBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPhoenixCharacter.PyPhoenixPhantomChildActor.ReceivePoolEndPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyPhoenixPhantomChildActor::ReceivePoolEndPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPhoenixPhantomChildActor", "ReceivePoolEndPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyPhoenixCharacter.PyPhoenixPhantomChildActor.RefreshSkinIDAndSlots
+// (Native, Public, BlueprintCallable)
+
+void APyPhoenixPhantomChildActor::RefreshSkinIDAndSlots()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPhoenixPhantomChildActor", "RefreshSkinIDAndSlots");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyPhoenixCharacter.PyPhoenixPhantomChildActor.K2_UpdatePhantomVisibility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -39,25 +96,6 @@ void APyPhoenixPhantomChildActor::K2_UpdatePhantomVisibility(bool bVisible, cons
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyPhoenixCharacter.PyPhoenixPhantomChildActor.ReceivePoolBeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyPhoenixPhantomChildActor::ReceivePoolBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyPhoenixPhantomChildActor", "ReceivePoolBeginPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

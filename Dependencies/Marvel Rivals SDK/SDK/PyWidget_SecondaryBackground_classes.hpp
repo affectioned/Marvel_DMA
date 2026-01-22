@@ -18,53 +18,54 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SP_BG_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SP_BG_Base : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SP_BG_Base">();
+		STATIC_CLASS_IMPL("PyWidget_SP_BG_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SP_BG_Base")
 	}
 	static class UPyWidget_SP_BG_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SP_BG_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_SP_BG_Base) == 0x000008, "Wrong alignment on UPyWidget_SP_BG_Base");
-static_assert(sizeof(UPyWidget_SP_BG_Base) == 0x0005C0, "Wrong size on UPyWidget_SP_BG_Base");
+DUMPER7_ASSERTS_UPyWidget_SP_BG_Base;
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SP_BG_CommonButtonAreaBase
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_SP_BG_CommonButtonAreaBase : public UPyWidget_SP_BG_Base
 {
 public:
-	TSubclassOf<class UUserWidget>                WhiteButtonWidget;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                YellowButtonWidget;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                PaddingOfButton;                                   // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ButtonPriceWidget;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ExchangePriceWidget;                               // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WhiteButtonWidget;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                YellowButtonWidget;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                PaddingOfButton;                                   // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ButtonPriceWidget;                                 // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ExchangePriceWidget;                               // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SP_BG_CommonButtonAreaBase">();
+		STATIC_CLASS_IMPL("PyWidget_SP_BG_CommonButtonAreaBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SP_BG_CommonButtonAreaBase")
 	}
 	static class UPyWidget_SP_BG_CommonButtonAreaBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SP_BG_CommonButtonAreaBase>();
 	}
 };
-static_assert(alignof(UPyWidget_SP_BG_CommonButtonAreaBase) == 0x000008, "Wrong alignment on UPyWidget_SP_BG_CommonButtonAreaBase");
-static_assert(sizeof(UPyWidget_SP_BG_CommonButtonAreaBase) == 0x0005F0, "Wrong size on UPyWidget_SP_BG_CommonButtonAreaBase");
-static_assert(offsetof(UPyWidget_SP_BG_CommonButtonAreaBase, WhiteButtonWidget) == 0x0005C0, "Member 'UPyWidget_SP_BG_CommonButtonAreaBase::WhiteButtonWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SP_BG_CommonButtonAreaBase, YellowButtonWidget) == 0x0005C8, "Member 'UPyWidget_SP_BG_CommonButtonAreaBase::YellowButtonWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SP_BG_CommonButtonAreaBase, PaddingOfButton) == 0x0005D0, "Member 'UPyWidget_SP_BG_CommonButtonAreaBase::PaddingOfButton' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SP_BG_CommonButtonAreaBase, ButtonPriceWidget) == 0x0005E0, "Member 'UPyWidget_SP_BG_CommonButtonAreaBase::ButtonPriceWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SP_BG_CommonButtonAreaBase, ExchangePriceWidget) == 0x0005E8, "Member 'UPyWidget_SP_BG_CommonButtonAreaBase::ExchangePriceWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SP_BG_CommonButtonAreaBase;
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SP_BG_CommonBase
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_SP_BG_CommonBase : public UPyWidget_SP_BG_CommonButtonAreaBase
 {
 public:
@@ -74,63 +75,71 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SP_BG_CommonBase">();
+		STATIC_CLASS_IMPL("PyWidget_SP_BG_CommonBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SP_BG_CommonBase")
 	}
 	static class UPyWidget_SP_BG_CommonBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SP_BG_CommonBase>();
 	}
 };
-static_assert(alignof(UPyWidget_SP_BG_CommonBase) == 0x000008, "Wrong alignment on UPyWidget_SP_BG_CommonBase");
-static_assert(sizeof(UPyWidget_SP_BG_CommonBase) == 0x0005F0, "Wrong size on UPyWidget_SP_BG_CommonBase");
+DUMPER7_ASSERTS_UPyWidget_SP_BG_CommonBase;
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SecondaryBackground_Content_A
-// 0x0008 (0x05F8 - 0x05F0)
+// 0x0008 (0x0600 - 0x05F8)
 class UPyWidget_SecondaryBackground_Content_A final : public UPyWidget_SP_BG_CommonBase
 {
 public:
-	TSubclassOf<class UPyWidget_Common_ExpirationReminder> WidgetExpirationReminder;                 // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Common_ExpirationReminder> WidgetExpirationReminder;                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryBackground_Content_A">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryBackground_Content_A")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryBackground_Content_A")
 	}
 	static class UPyWidget_SecondaryBackground_Content_A* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryBackground_Content_A>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryBackground_Content_A) == 0x000008, "Wrong alignment on UPyWidget_SecondaryBackground_Content_A");
-static_assert(sizeof(UPyWidget_SecondaryBackground_Content_A) == 0x0005F8, "Wrong size on UPyWidget_SecondaryBackground_Content_A");
-static_assert(offsetof(UPyWidget_SecondaryBackground_Content_A, WidgetExpirationReminder) == 0x0005F0, "Member 'UPyWidget_SecondaryBackground_Content_A::WidgetExpirationReminder' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryBackground_Content_A;
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SecondaryBackground_Content_B
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_SecondaryBackground_Content_B final : public UPyWidget_SP_BG_CommonBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryBackground_Content_B">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryBackground_Content_B")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryBackground_Content_B")
 	}
 	static class UPyWidget_SecondaryBackground_Content_B* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryBackground_Content_B>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryBackground_Content_B) == 0x000008, "Wrong alignment on UPyWidget_SecondaryBackground_Content_B");
-static_assert(sizeof(UPyWidget_SecondaryBackground_Content_B) == 0x0005F0, "Wrong size on UPyWidget_SecondaryBackground_Content_B");
+DUMPER7_ASSERTS_UPyWidget_SecondaryBackground_Content_B;
 
 // PythonClass PyWidget_SecondaryBackground.PyWidget_SecondaryBackground_Content_ClanLeague
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_SecondaryBackground_Content_ClanLeague final : public UPyWidget_SP_BG_Base
 {
 public:
-	TSubclassOf<class UUserWidget>                WhiteButtonWidget;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                YellowButtonWidget;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                PaddingOfButton;                                   // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ButtonPriceWidget;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WhiteButtonWidget;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                YellowButtonWidget;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                PaddingOfButton;                                   // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ButtonPriceWidget;                                 // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -138,19 +147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryBackground_Content_ClanLeague">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryBackground_Content_ClanLeague")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryBackground_Content_ClanLeague")
 	}
 	static class UPyWidget_SecondaryBackground_Content_ClanLeague* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryBackground_Content_ClanLeague>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryBackground_Content_ClanLeague) == 0x000008, "Wrong alignment on UPyWidget_SecondaryBackground_Content_ClanLeague");
-static_assert(sizeof(UPyWidget_SecondaryBackground_Content_ClanLeague) == 0x0005E8, "Wrong size on UPyWidget_SecondaryBackground_Content_ClanLeague");
-static_assert(offsetof(UPyWidget_SecondaryBackground_Content_ClanLeague, WhiteButtonWidget) == 0x0005C0, "Member 'UPyWidget_SecondaryBackground_Content_ClanLeague::WhiteButtonWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryBackground_Content_ClanLeague, YellowButtonWidget) == 0x0005C8, "Member 'UPyWidget_SecondaryBackground_Content_ClanLeague::YellowButtonWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryBackground_Content_ClanLeague, PaddingOfButton) == 0x0005D0, "Member 'UPyWidget_SecondaryBackground_Content_ClanLeague::PaddingOfButton' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryBackground_Content_ClanLeague, ButtonPriceWidget) == 0x0005E0, "Member 'UPyWidget_SecondaryBackground_Content_ClanLeague::ButtonPriceWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryBackground_Content_ClanLeague;
 
 }
 

@@ -23,15 +23,18 @@ class UCue_CustomEvent_C final : public UMarvelCueNotify_CustomEvent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_CustomEvent_C">();
+		BP_STATIC_CLASS_IMPL("Cue_CustomEvent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_CustomEvent_C")
 	}
 	static class UCue_CustomEvent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_CustomEvent_C>();
 	}
 };
-static_assert(alignof(UCue_CustomEvent_C) == 0x000008, "Wrong alignment on UCue_CustomEvent_C");
-static_assert(sizeof(UCue_CustomEvent_C) == 0x0002B0, "Wrong size on UCue_CustomEvent_C");
+DUMPER7_ASSERTS_UCue_CustomEvent_C;
 
 }
 

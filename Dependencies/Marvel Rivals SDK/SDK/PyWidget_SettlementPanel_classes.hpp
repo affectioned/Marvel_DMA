@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
@@ -19,24 +19,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettlementPanel.PyWidget_SettlementPanel
-// 0x00F8 (0x06F0 - 0x05F8)
+// 0x00F8 (0x06F8 - 0x0600)
 class UPyWidget_SettlementPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                ScoreboardGuideTipsStyle;                          // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyle;                                // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                HightlightTipsStyle;                               // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShareTipsStyle;                                    // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                MissionGuideTipsStyle;                             // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CoronaTipsStyle;                                   // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           Show_Scoreboard_PressAction;                       // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenChatAction;                                    // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSlateBrush>                    ResultIamge;                                       // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         BlendToMVPCamTime;                                 // 0x0678(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MVPToLikeTime;                                     // 0x067C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                BGPanel;                                           // 0x0680(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelVideoCaptureSettings            VideoCaptureSetting;                               // 0x0688(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           Score_Board_Action;                                // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ScoreboardGuideTipsStyle;                          // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyle;                                // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                HightlightTipsStyle;                               // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShareTipsStyle;                                    // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MissionGuideTipsStyle;                             // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CoronaTipsStyle;                                   // 0x0650(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           Show_Scoreboard_PressAction;                       // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenChatAction;                                    // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSlateBrush>                    ResultIamge;                                       // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         BlendToMVPCamTime;                                 // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MVPToLikeTime;                                     // 0x0684(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                BGPanel;                                           // 0x0688(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelVideoCaptureSettings            VideoCaptureSetting;                               // 0x0690(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           Score_Board_Action;                                // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -49,29 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementPanel")
 	}
 	static class UPyWidget_SettlementPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementPanel) == 0x000008, "Wrong alignment on UPyWidget_SettlementPanel");
-static_assert(sizeof(UPyWidget_SettlementPanel) == 0x0006F0, "Wrong size on UPyWidget_SettlementPanel");
-static_assert(offsetof(UPyWidget_SettlementPanel, ScoreboardGuideTipsStyle) == 0x0005F8, "Member 'UPyWidget_SettlementPanel::ScoreboardGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, SkipGuideTipsStyle) == 0x000608, "Member 'UPyWidget_SettlementPanel::SkipGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, HightlightTipsStyle) == 0x000618, "Member 'UPyWidget_SettlementPanel::HightlightTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, ShareTipsStyle) == 0x000628, "Member 'UPyWidget_SettlementPanel::ShareTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, MissionGuideTipsStyle) == 0x000638, "Member 'UPyWidget_SettlementPanel::MissionGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, CoronaTipsStyle) == 0x000648, "Member 'UPyWidget_SettlementPanel::CoronaTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, Show_Scoreboard_PressAction) == 0x000658, "Member 'UPyWidget_SettlementPanel::Show_Scoreboard_PressAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, OpenChatAction) == 0x000660, "Member 'UPyWidget_SettlementPanel::OpenChatAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, ResultIamge) == 0x000668, "Member 'UPyWidget_SettlementPanel::ResultIamge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, BlendToMVPCamTime) == 0x000678, "Member 'UPyWidget_SettlementPanel::BlendToMVPCamTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, MVPToLikeTime) == 0x00067C, "Member 'UPyWidget_SettlementPanel::MVPToLikeTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, BGPanel) == 0x000680, "Member 'UPyWidget_SettlementPanel::BGPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, VideoCaptureSetting) == 0x000688, "Member 'UPyWidget_SettlementPanel::VideoCaptureSetting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementPanel, Score_Board_Action) == 0x0006E8, "Member 'UPyWidget_SettlementPanel::Score_Board_Action' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettlementPanel;
 
 }
 

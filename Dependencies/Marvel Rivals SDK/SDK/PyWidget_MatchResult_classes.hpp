@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "UMG_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MatchResult.PyWidget_MatchResult
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_MatchResult final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         ShowTime;                                          // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnVictory;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnDefeat;                                  // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnDraw;                                    // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULazyWidget*                            Lazy_FinalRanking;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShowTime;                                          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnVictory;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnDefeat;                                  // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnDraw;                                    // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULazyWidget*                            Lazy_FinalRanking;                                 // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,23 +42,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MatchResult">();
+		STATIC_CLASS_IMPL("PyWidget_MatchResult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MatchResult")
 	}
 	static class UPyWidget_MatchResult* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MatchResult>();
 	}
 };
-static_assert(alignof(UPyWidget_MatchResult) == 0x000008, "Wrong alignment on UPyWidget_MatchResult");
-static_assert(sizeof(UPyWidget_MatchResult) == 0x000620, "Wrong size on UPyWidget_MatchResult");
-static_assert(offsetof(UPyWidget_MatchResult, ShowTime) == 0x0005F8, "Member 'UPyWidget_MatchResult::ShowTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MatchResult, AkEvent_OnVictory) == 0x000600, "Member 'UPyWidget_MatchResult::AkEvent_OnVictory' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MatchResult, AkEvent_OnDefeat) == 0x000608, "Member 'UPyWidget_MatchResult::AkEvent_OnDefeat' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MatchResult, AkEvent_OnDraw) == 0x000610, "Member 'UPyWidget_MatchResult::AkEvent_OnDraw' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MatchResult, Lazy_FinalRanking) == 0x000618, "Member 'UPyWidget_MatchResult::Lazy_FinalRanking' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MatchResult;
 
 // PythonClass PyWidget_MatchResult.PyWidget_MatchResultLighting
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_MatchResultLighting final : public UPyMarvelUserWidget
 {
 public:
@@ -68,15 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MatchResultLighting">();
+		STATIC_CLASS_IMPL("PyWidget_MatchResultLighting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MatchResultLighting")
 	}
 	static class UPyWidget_MatchResultLighting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MatchResultLighting>();
 	}
 };
-static_assert(alignof(UPyWidget_MatchResultLighting) == 0x000008, "Wrong alignment on UPyWidget_MatchResultLighting");
-static_assert(sizeof(UPyWidget_MatchResultLighting) == 0x0005C0, "Wrong size on UPyWidget_MatchResultLighting");
+DUMPER7_ASSERTS_UPyWidget_MatchResultLighting;
 
 }
 

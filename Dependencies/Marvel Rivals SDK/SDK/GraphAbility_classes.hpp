@@ -24,16 +24,16 @@ namespace SDK
 {
 
 // Class GraphAbility.GATaskBase
-// 0x0030 (0x01D0 - 0x01A0)
+// 0x0030 (0x01C8 - 0x0198)
 class UGATaskBase : public UAbilityTask
 {
 public:
-	TArray<class UGameplayTask*>                  SubTasks;                                          // 0x01A0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void()>              OnGATaskFailed;                                    // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	class UObject*                                TaskCaller;                                        // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsEnding;                                         // 0x01C8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCancelAbilityWhenFailed;                          // 0x01C9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CA[0x6];                                      // 0x01CA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class UGameplayTask*>                  SubTasks;                                          // 0x0198(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void()>              OnGATaskFailed;                                    // 0x01A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	class UObject*                                TaskCaller;                                        // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsEnding;                                         // 0x01C0(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCancelAbilityWhenFailed;                          // 0x01C1(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C2[0x6];                                      // 0x01C2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void EndTask_Aborted();
@@ -46,27 +46,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATaskBase">();
+		STATIC_CLASS_IMPL("GATaskBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATaskBase")
 	}
 	static class UGATaskBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATaskBase>();
 	}
 };
-static_assert(alignof(UGATaskBase) == 0x000008, "Wrong alignment on UGATaskBase");
-static_assert(sizeof(UGATaskBase) == 0x0001D0, "Wrong size on UGATaskBase");
-static_assert(offsetof(UGATaskBase, SubTasks) == 0x0001A0, "Member 'UGATaskBase::SubTasks' has a wrong offset!");
-static_assert(offsetof(UGATaskBase, OnGATaskFailed) == 0x0001B0, "Member 'UGATaskBase::OnGATaskFailed' has a wrong offset!");
-static_assert(offsetof(UGATaskBase, TaskCaller) == 0x0001C0, "Member 'UGATaskBase::TaskCaller' has a wrong offset!");
-static_assert(offsetof(UGATaskBase, bIsEnding) == 0x0001C8, "Member 'UGATaskBase::bIsEnding' has a wrong offset!");
-static_assert(offsetof(UGATaskBase, bCancelAbilityWhenFailed) == 0x0001C9, "Member 'UGATaskBase::bCancelAbilityWhenFailed' has a wrong offset!");
+DUMPER7_ASSERTS_UGATaskBase;
 
 // Class GraphAbility.GASpecTaskBase
-// 0x0008 (0x01D8 - 0x01D0)
+// 0x0008 (0x01D0 - 0x01C8)
 class UGASpecTaskBase : public UGATaskBase
 {
 public:
-	uint8                                         Pad_1D0[0x8];                                      // 0x01D0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8[0x8];                                      // 0x01C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnSpecBegin();
@@ -75,18 +73,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GASpecTaskBase">();
+		STATIC_CLASS_IMPL("GASpecTaskBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GASpecTaskBase")
 	}
 	static class UGASpecTaskBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGASpecTaskBase>();
 	}
 };
-static_assert(alignof(UGASpecTaskBase) == 0x000008, "Wrong alignment on UGASpecTaskBase");
-static_assert(sizeof(UGASpecTaskBase) == 0x0001D8, "Wrong size on UGASpecTaskBase");
+DUMPER7_ASSERTS_UGASpecTaskBase;
 
 // Class GraphAbility.GASpecTaskBase_Ability
-// 0x0000 (0x01D8 - 0x01D8)
+// 0x0000 (0x01D0 - 0x01D0)
 class UGASpecTaskBase_Ability : public UGASpecTaskBase
 {
 public:
@@ -97,24 +98,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GASpecTaskBase_Ability">();
+		STATIC_CLASS_IMPL("GASpecTaskBase_Ability")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GASpecTaskBase_Ability")
 	}
 	static class UGASpecTaskBase_Ability* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGASpecTaskBase_Ability>();
 	}
 };
-static_assert(alignof(UGASpecTaskBase_Ability) == 0x000008, "Wrong alignment on UGASpecTaskBase_Ability");
-static_assert(sizeof(UGASpecTaskBase_Ability) == 0x0001D8, "Wrong size on UGASpecTaskBase_Ability");
+DUMPER7_ASSERTS_UGASpecTaskBase_Ability;
 
 // Class GraphAbility.GASpecTask_SelectTarget
-// 0x17F8 (0x19D0 - 0x01D8)
+// 0x1BA0 (0x1D70 - 0x01D0)
 class alignas(0x10) UGASpecTask_SelectTarget final : public UGASpecTaskBase_Ability
 {
 public:
-	uint8                                         Pad_1D8[0x17D0];                                   // 0x01D8(0x17D0)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelAbilityTask_SelectTarget*        SelectTargetTask;                                  // 0x19A8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19B0[0x20];                                    // 0x19B0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D0[0x1B78];                                   // 0x01D0(0x1B78)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelAbilityTask_SelectTarget*        SelectTargetTask;                                  // 0x1D48(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1D50[0x20];                                    // 0x1D50(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGASpecTask_SelectTarget* AsSelectTargetAbility(class UGameplayAbility* OwningAbility, TDelegate<void(const struct FHitResult& HitInfo, bool* bResult)> FilterDelegate, const struct FSelectTaskParam& SelectParam, bool bAutoBeginSelect, bool bShouldCheckActivate);
@@ -126,30 +130,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GASpecTask_SelectTarget">();
+		STATIC_CLASS_IMPL("GASpecTask_SelectTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GASpecTask_SelectTarget")
 	}
 	static class UGASpecTask_SelectTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGASpecTask_SelectTarget>();
 	}
 };
-static_assert(alignof(UGASpecTask_SelectTarget) == 0x000010, "Wrong alignment on UGASpecTask_SelectTarget");
-static_assert(sizeof(UGASpecTask_SelectTarget) == 0x0019D0, "Wrong size on UGASpecTask_SelectTarget");
-static_assert(offsetof(UGASpecTask_SelectTarget, SelectTargetTask) == 0x0019A8, "Member 'UGASpecTask_SelectTarget::SelectTargetTask' has a wrong offset!");
+DUMPER7_ASSERTS_UGASpecTask_SelectTarget;
 
 // Class GraphAbility.GATask_ApplyDash
-// 0x0C78 (0x0E48 - 0x01D0)
+// 0x0F98 (0x1160 - 0x01C8)
 class UGATask_ApplyDash final : public UGATaskBase
 {
 public:
-	class UMarvelAbilityTask_Dash*                SubDashTask;                                       // 0x01D0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void(class AActor* HitTarget, const struct FHitResult& HitInfo)> OnHit; // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EDashStopReason Reason, const struct FHitResult& HitInfo)> OnEnd;  // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x01F8(0x0BC8)(Transient, NativeAccessSpecifierPrivate)
-	struct FVector                                DashToLocation;                                    // 0x0DC0(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                DashToDirection;                                   // 0x0DD8(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AActor*                                 DashToTarget;                                      // 0x0DF0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPortalSegments                        PortalSegments;                                    // 0x0DF8(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	class UMarvelAbilityTask_Dash*                SubDashTask;                                       // 0x01C8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(class AActor* HitTarget, const struct FHitResult& HitInfo)> OnHit; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EDashStopReason Reason, const struct FHitResult& HitInfo)> OnEnd;  // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x01F0(0x0EE8)(Transient, NativeAccessSpecifierPrivate)
+	struct FVector                                DashToLocation;                                    // 0x10D8(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                DashToDirection;                                   // 0x10F0(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 DashToTarget;                                      // 0x1108(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPortalSegments                        PortalSegments;                                    // 0x1110(0x0050)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_ApplyDash* ApplyDash(class UGameplayAbility* OwningAbility, const struct FDashAbilityInfo& DashInfo_0, const struct FVector& ToLocation, const struct FVector& ToDirection, class AActor* ToTargetActor, const struct FPortalSegments& PortalSegments_0);
@@ -161,32 +167,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_ApplyDash">();
+		STATIC_CLASS_IMPL("GATask_ApplyDash")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_ApplyDash")
 	}
 	static class UGATask_ApplyDash* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_ApplyDash>();
 	}
 };
-static_assert(alignof(UGATask_ApplyDash) == 0x000008, "Wrong alignment on UGATask_ApplyDash");
-static_assert(sizeof(UGATask_ApplyDash) == 0x000E48, "Wrong size on UGATask_ApplyDash");
-static_assert(offsetof(UGATask_ApplyDash, SubDashTask) == 0x0001D0, "Member 'UGATask_ApplyDash::SubDashTask' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, OnHit) == 0x0001D8, "Member 'UGATask_ApplyDash::OnHit' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, OnEnd) == 0x0001E8, "Member 'UGATask_ApplyDash::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, DashInfo) == 0x0001F8, "Member 'UGATask_ApplyDash::DashInfo' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, DashToLocation) == 0x000DC0, "Member 'UGATask_ApplyDash::DashToLocation' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, DashToDirection) == 0x000DD8, "Member 'UGATask_ApplyDash::DashToDirection' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, DashToTarget) == 0x000DF0, "Member 'UGATask_ApplyDash::DashToTarget' has a wrong offset!");
-static_assert(offsetof(UGATask_ApplyDash, PortalSegments) == 0x000DF8, "Member 'UGATask_ApplyDash::PortalSegments' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_ApplyDash;
 
 // Class GraphAbility.GATask_Gather
-// 0x0030 (0x0200 - 0x01D0)
+// 0x0030 (0x01F8 - 0x01C8)
 class UGATask_Gather final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(float TotalTime, int32 GatherIndex)> OnStopDelegate;               // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Value)>   OnGatherCallbackDelegate;                          // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F0[0x10];                                     // 0x01F0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(float TotalTime, int32 GatherIndex)> OnStopDelegate;               // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Value)>   OnGatherCallbackDelegate;                          // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E8[0x10];                                     // 0x01E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_Gather* GA_StartGather(class UGameplayAbility* OwningAbility, bool bStopAtMax, float CustomDuration);
@@ -199,32 +200,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_Gather">();
+		STATIC_CLASS_IMPL("GATask_Gather")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_Gather")
 	}
 	static class UGATask_Gather* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_Gather>();
 	}
 };
-static_assert(alignof(UGATask_Gather) == 0x000008, "Wrong alignment on UGATask_Gather");
-static_assert(sizeof(UGATask_Gather) == 0x000200, "Wrong size on UGATask_Gather");
-static_assert(offsetof(UGATask_Gather, OnStopDelegate) == 0x0001D0, "Member 'UGATask_Gather::OnStopDelegate' has a wrong offset!");
-static_assert(offsetof(UGATask_Gather, OnGatherCallbackDelegate) == 0x0001E0, "Member 'UGATask_Gather::OnGatherCallbackDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_Gather;
 
 // Class GraphAbility.GATask_PlayTimeline
-// 0x0088 (0x0258 - 0x01D0)
+// 0x0088 (0x0250 - 0x01C8)
 class UGATask_PlayTimeline final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnCompletedDelegate;         // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnBlendOutDelegate;          // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnInterruptedDelegate;       // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnCancelledDelegate;         // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnTriggerEvent;              // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TArray<class UAnimTimeline*>                  Timelines;                                         // 0x0220(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<int32>                                 AnimIndexs;                                        // 0x0230(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<int32>                                 TimelineIndexs;                                    // 0x0240(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_250[0x8];                                      // 0x0250(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnCompletedDelegate;         // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnBlendOutDelegate;          // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnInterruptedDelegate;       // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnCancelledDelegate;         // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameplayTag& EventTag)> OnTriggerEvent;              // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TArray<class UAnimTimeline*>                  Timelines;                                         // 0x0218(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<int32>                                 AnimIndexs;                                        // 0x0228(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<int32>                                 TimelineIndexs;                                    // 0x0238(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_248[0x8];                                      // 0x0248(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_PlayTimeline* PlayTimeline(class UGameplayAbility* OwningAbility, const TArray<class UAnimTimeline*>& Timelines_0, const TArray<int32>& AnimIndexs_0, bool bStopTimeline);
@@ -240,35 +242,71 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_PlayTimeline">();
+		STATIC_CLASS_IMPL("GATask_PlayTimeline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_PlayTimeline")
 	}
 	static class UGATask_PlayTimeline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_PlayTimeline>();
 	}
 };
-static_assert(alignof(UGATask_PlayTimeline) == 0x000008, "Wrong alignment on UGATask_PlayTimeline");
-static_assert(sizeof(UGATask_PlayTimeline) == 0x000258, "Wrong size on UGATask_PlayTimeline");
-static_assert(offsetof(UGATask_PlayTimeline, OnCompletedDelegate) == 0x0001D0, "Member 'UGATask_PlayTimeline::OnCompletedDelegate' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, OnBlendOutDelegate) == 0x0001E0, "Member 'UGATask_PlayTimeline::OnBlendOutDelegate' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, OnInterruptedDelegate) == 0x0001F0, "Member 'UGATask_PlayTimeline::OnInterruptedDelegate' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, OnCancelledDelegate) == 0x000200, "Member 'UGATask_PlayTimeline::OnCancelledDelegate' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, OnTriggerEvent) == 0x000210, "Member 'UGATask_PlayTimeline::OnTriggerEvent' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, Timelines) == 0x000220, "Member 'UGATask_PlayTimeline::Timelines' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, AnimIndexs) == 0x000230, "Member 'UGATask_PlayTimeline::AnimIndexs' has a wrong offset!");
-static_assert(offsetof(UGATask_PlayTimeline, TimelineIndexs) == 0x000240, "Member 'UGATask_PlayTimeline::TimelineIndexs' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_PlayTimeline;
+
+// Class GraphAbility.GATask_WeaponFireOnce
+// 0x00E0 (0x02A8 - 0x01C8)
+class UGATask_WeaponFireOnce final : public UGATaskBase
+{
+public:
+	TMulticastInlineDelegate<void()>              OnFired;                                           // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnEnd;                                             // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         WeaponID;                                          // 0x01E8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 ShootModes;                                        // 0x01F0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	int32                                         ShootCount;                                        // 0x0200(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         ShootDelay;                                        // 0x0204(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         ReloadAbilityID;                                   // 0x0208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AShootingWeapon*                        MyWeapon;                                          // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPredictionKey                         ShootPredictKey;                                   // 0x0218(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         TriggeredShootCount;                               // 0x0288(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_28C[0x1C];                                     // 0x028C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UGATask_WeaponFireOnce* WeaponFireOnce_MultiMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, const TArray<int32>& ShootModes_0, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0);
+	static class UGATask_WeaponFireOnce* WeaponFireOnce_SingleMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, int32 ShootMode, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0);
+
+	void Shoot();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GATask_WeaponFireOnce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WeaponFireOnce")
+	}
+	static class UGATask_WeaponFireOnce* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGATask_WeaponFireOnce>();
+	}
+};
+DUMPER7_ASSERTS_UGATask_WeaponFireOnce;
 
 // Class GraphAbility.GATask_ProjectileHoming
-// 0x0050 (0x0220 - 0x01D0)
+// 0x0050 (0x0218 - 0x01C8)
 class UGATask_ProjectileHoming final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnFinished; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnOvertime; // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnTargetLose; // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnCanceled; // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class AMarvelAbilityTargetActor_Projectile*   Projectile;                                        // 0x0210(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 HomingTarget;                                      // 0x0218(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnFinished; // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnOvertime; // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnTargetLose; // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnCanceled; // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class AMarvelAbilityTargetActor_Projectile*   Projectile;                                        // 0x0208(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 HomingTarget;                                      // 0x0210(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UGATask_ProjectileHoming* SetProjectileHoming(class UGameplayAbility* OwningAbility, class AMarvelAbilityTargetActor_Projectile* Projectile_0, class AActor* HomingToTarget);
@@ -279,38 +317,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_ProjectileHoming">();
+		STATIC_CLASS_IMPL("GATask_ProjectileHoming")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_ProjectileHoming")
 	}
 	static class UGATask_ProjectileHoming* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_ProjectileHoming>();
 	}
 };
-static_assert(alignof(UGATask_ProjectileHoming) == 0x000008, "Wrong alignment on UGATask_ProjectileHoming");
-static_assert(sizeof(UGATask_ProjectileHoming) == 0x000220, "Wrong size on UGATask_ProjectileHoming");
-static_assert(offsetof(UGATask_ProjectileHoming, OnFinished) == 0x0001D0, "Member 'UGATask_ProjectileHoming::OnFinished' has a wrong offset!");
-static_assert(offsetof(UGATask_ProjectileHoming, OnOvertime) == 0x0001E0, "Member 'UGATask_ProjectileHoming::OnOvertime' has a wrong offset!");
-static_assert(offsetof(UGATask_ProjectileHoming, OnTargetLose) == 0x0001F0, "Member 'UGATask_ProjectileHoming::OnTargetLose' has a wrong offset!");
-static_assert(offsetof(UGATask_ProjectileHoming, OnCanceled) == 0x000200, "Member 'UGATask_ProjectileHoming::OnCanceled' has a wrong offset!");
-static_assert(offsetof(UGATask_ProjectileHoming, Projectile) == 0x000210, "Member 'UGATask_ProjectileHoming::Projectile' has a wrong offset!");
-static_assert(offsetof(UGATask_ProjectileHoming, HomingTarget) == 0x000218, "Member 'UGATask_ProjectileHoming::HomingTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_ProjectileHoming;
 
 // Class GraphAbility.GATask_SpawnProjectile
-// 0x0090 (0x0260 - 0x01D0)
+// 0x0090 (0x0258 - 0x01C8)
 class UGATask_SpawnProjectile final : public UGATaskBase
 {
 public:
-	class AMarvelAbilityTargetActor_Projectile*   Projectile;                                        // 0x01D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnBegin;  // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnEnd;    // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile, class AActor* HitTarget, const struct FVector& HitLocation)> OnHit; // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnDamage; // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x0218(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21C[0x4];                                      // 0x021C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 SourceActor;                                       // 0x0220(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                CustomLocation;                                    // 0x0228(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FRotator                               CustomRotation;                                    // 0x0240(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AMarvelAbilityTargetActor_Projectile*   Projectile;                                        // 0x01C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnBegin;  // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnEnd;    // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile, class AActor* HitTarget, const struct FVector& HitLocation)> OnHit; // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Projectile* Projectile)> OnDamage; // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x0210(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SourceActor;                                       // 0x0218(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                CustomLocation;                                    // 0x0220(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FRotator                               CustomRotation;                                    // 0x0238(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_250[0x8];                                      // 0x0250(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_SpawnProjectile* SpawnProjectile(class UGameplayAbility* OwningAbility, int32 InProjectileID, const struct FVector& CustomLocation_0, const struct FRotator& CustomRotation_0, bool bRelative);
@@ -326,43 +361,67 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_SpawnProjectile">();
+		STATIC_CLASS_IMPL("GATask_SpawnProjectile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_SpawnProjectile")
 	}
 	static class UGATask_SpawnProjectile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_SpawnProjectile>();
 	}
 };
-static_assert(alignof(UGATask_SpawnProjectile) == 0x000008, "Wrong alignment on UGATask_SpawnProjectile");
-static_assert(sizeof(UGATask_SpawnProjectile) == 0x000260, "Wrong size on UGATask_SpawnProjectile");
-static_assert(offsetof(UGATask_SpawnProjectile, Projectile) == 0x0001D0, "Member 'UGATask_SpawnProjectile::Projectile' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, OnBegin) == 0x0001D8, "Member 'UGATask_SpawnProjectile::OnBegin' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, OnEnd) == 0x0001E8, "Member 'UGATask_SpawnProjectile::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, OnHit) == 0x0001F8, "Member 'UGATask_SpawnProjectile::OnHit' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, OnDamage) == 0x000208, "Member 'UGATask_SpawnProjectile::OnDamage' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, ProjectileID) == 0x000218, "Member 'UGATask_SpawnProjectile::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, SourceActor) == 0x000220, "Member 'UGATask_SpawnProjectile::SourceActor' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, CustomLocation) == 0x000228, "Member 'UGATask_SpawnProjectile::CustomLocation' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnProjectile, CustomRotation) == 0x000240, "Member 'UGATask_SpawnProjectile::CustomRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_SpawnProjectile;
+
+// Class GraphAbility.GATask_WaitKillEvent
+// 0x0088 (0x0250 - 0x01C8)
+class UGATask_WaitKillEvent final : public UGATaskBase
+{
+public:
+	TMulticastInlineDelegate<void(const struct FUIKillInfo& KillInfo)> OnKillEvent;                  // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1D8[0x78];                                     // 0x01D8(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UGATask_WaitKillEvent* WaitKillEvent(class UGameplayAbility* OwningAbility, class AActor* SourceCharacter, class AActor* TargetCharacter);
+
+	void EndWaiting();
+	void OnKillCallback(const struct FUIKillInfo& KillInfo);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GATask_WaitKillEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitKillEvent")
+	}
+	static class UGATask_WaitKillEvent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGATask_WaitKillEvent>();
+	}
+};
+DUMPER7_ASSERTS_UGATask_WaitKillEvent;
 
 // Class GraphAbility.GATask_SpawnScope
-// 0x00A8 (0x0278 - 0x01D0)
+// 0x00A8 (0x0270 - 0x01C8)
 class UGATask_SpawnScope final : public UGATaskBase
 {
 public:
-	class AMarvelAbilityTargetActor_Scope*        ScopeActor;                                        // 0x01D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelAgentTraceComponent*             ScopeTraceComp;                                    // 0x01D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelAgentEffectiveComponent*         ScopeEffectComp;                                   // 0x01E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnBegin;       // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnEnd;         // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor, class AActor* Target, const struct FVector& Location)> OnHit; // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor, const TArray<struct FHitResult>& HitInfos)> OnHitAll; // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnDamage;      // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x0238(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 SourceActor;                                       // 0x0240(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                CustomLocation;                                    // 0x0248(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FRotator                               CustomRotation;                                    // 0x0260(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	class AMarvelAbilityTargetActor_Scope*        ScopeActor;                                        // 0x01C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAgentTraceComponent*             ScopeTraceComp;                                    // 0x01D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelAgentEffectiveComponent*         ScopeEffectComp;                                   // 0x01D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnBegin;       // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnEnd;         // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor, class AActor* Target, const struct FVector& Location)> OnHit; // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor, const TArray<struct FHitResult>& HitInfos)> OnHitAll; // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelAbilityTargetActor_Scope* ScopeActor)> OnDamage;      // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x0230(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SourceActor;                                       // 0x0238(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                CustomLocation;                                    // 0x0240(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FRotator                               CustomRotation;                                    // 0x0258(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_SpawnScope* SpawnScope(class UGameplayAbility* OwningAbility, int32 InScopeID, const struct FVector& CustomLocation_0, const struct FRotator& CustomRotation_0);
@@ -380,43 +439,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_SpawnScope">();
+		STATIC_CLASS_IMPL("GATask_SpawnScope")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_SpawnScope")
 	}
 	static class UGATask_SpawnScope* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_SpawnScope>();
 	}
 };
-static_assert(alignof(UGATask_SpawnScope) == 0x000008, "Wrong alignment on UGATask_SpawnScope");
-static_assert(sizeof(UGATask_SpawnScope) == 0x000278, "Wrong size on UGATask_SpawnScope");
-static_assert(offsetof(UGATask_SpawnScope, ScopeActor) == 0x0001D0, "Member 'UGATask_SpawnScope::ScopeActor' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, ScopeTraceComp) == 0x0001D8, "Member 'UGATask_SpawnScope::ScopeTraceComp' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, ScopeEffectComp) == 0x0001E0, "Member 'UGATask_SpawnScope::ScopeEffectComp' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, OnBegin) == 0x0001E8, "Member 'UGATask_SpawnScope::OnBegin' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, OnEnd) == 0x0001F8, "Member 'UGATask_SpawnScope::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, OnHit) == 0x000208, "Member 'UGATask_SpawnScope::OnHit' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, OnHitAll) == 0x000218, "Member 'UGATask_SpawnScope::OnHitAll' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, OnDamage) == 0x000228, "Member 'UGATask_SpawnScope::OnDamage' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, ScopeID) == 0x000238, "Member 'UGATask_SpawnScope::ScopeID' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, SourceActor) == 0x000240, "Member 'UGATask_SpawnScope::SourceActor' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, CustomLocation) == 0x000248, "Member 'UGATask_SpawnScope::CustomLocation' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnScope, CustomRotation) == 0x000260, "Member 'UGATask_SpawnScope::CustomRotation' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_SpawnScope;
 
 // Class GraphAbility.GATask_SpawnSummoned
-// 0x0080 (0x0250 - 0x01D0)
+// 0x0080 (0x0248 - 0x01C8)
 class UGATask_SpawnSummoned final : public UGATaskBase
 {
 public:
-	class AActor*                                 SummonedActor;                                     // 0x01D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Summoner)> OnBegin;                                  // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Summoner)> OnEnd;                                    // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Summoner)> OnDeath;                                  // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         SummonedID;                                        // 0x0208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 SourceActor;                                       // 0x0210(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                CustomLocation;                                    // 0x0218(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FRotator                               CustomRotation;                                    // 0x0230(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	class UMarvelSummonedComponent*               SpawnedSummonedComp;                               // 0x0248(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 SummonedActor;                                     // 0x01C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Summoner)> OnBegin;                                  // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Summoner)> OnEnd;                                    // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Summoner)> OnDeath;                                  // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         SummonedID;                                        // 0x0200(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SourceActor;                                       // 0x0208(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                CustomLocation;                                    // 0x0210(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FRotator                               CustomRotation;                                    // 0x0228(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	class UMarvelSummonedComponent*               SpawnedSummonedComp;                               // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_SpawnSummoned* SpawnProjectileWithObject(class UObject* Source, int32 InSummonedID, const struct FVector& CustomLocation_0, const struct FRotator& CustomRotation_0);
@@ -431,36 +481,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_SpawnSummoned">();
+		STATIC_CLASS_IMPL("GATask_SpawnSummoned")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_SpawnSummoned")
 	}
 	static class UGATask_SpawnSummoned* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_SpawnSummoned>();
 	}
 };
-static_assert(alignof(UGATask_SpawnSummoned) == 0x000008, "Wrong alignment on UGATask_SpawnSummoned");
-static_assert(sizeof(UGATask_SpawnSummoned) == 0x000250, "Wrong size on UGATask_SpawnSummoned");
-static_assert(offsetof(UGATask_SpawnSummoned, SummonedActor) == 0x0001D0, "Member 'UGATask_SpawnSummoned::SummonedActor' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, OnBegin) == 0x0001D8, "Member 'UGATask_SpawnSummoned::OnBegin' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, OnEnd) == 0x0001E8, "Member 'UGATask_SpawnSummoned::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, OnDeath) == 0x0001F8, "Member 'UGATask_SpawnSummoned::OnDeath' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, SummonedID) == 0x000208, "Member 'UGATask_SpawnSummoned::SummonedID' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, SourceActor) == 0x000210, "Member 'UGATask_SpawnSummoned::SourceActor' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, CustomLocation) == 0x000218, "Member 'UGATask_SpawnSummoned::CustomLocation' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, CustomRotation) == 0x000230, "Member 'UGATask_SpawnSummoned::CustomRotation' has a wrong offset!");
-static_assert(offsetof(UGATask_SpawnSummoned, SpawnedSummonedComp) == 0x000248, "Member 'UGATask_SpawnSummoned::SpawnedSummonedComp' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_SpawnSummoned;
 
 // Class GraphAbility.GATask_WaitAbilityHit
-// 0x0098 (0x0268 - 0x01D0)
+// 0x0098 (0x0260 - 0x01C8)
 class UGATask_WaitAbilityHit final : public UGATaskBase
 {
 public:
-	int32                                         ID;                                                // 0x01D0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETargetActorType                              ActorType;                                         // 0x01D4(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)> OnHitResult; // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)> OnNoResult; // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FPredictionKey                         OnHitResultKey;                                    // 0x01F8(0x0070)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         ID;                                                // 0x01C8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETargetActorType                              ActorType;                                         // 0x01CC(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1CD[0x3];                                      // 0x01CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)> OnHitResult; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)> OnNoResult; // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FPredictionKey                         OnHitResultKey;                                    // 0x01F0(0x0070)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UGATask_WaitAbilityHit* WaitAbilityHit(class UGameplayAbility* OwningAbility, int32 AgentID, ETargetActorType InActorType);
@@ -470,39 +514,37 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitAbilityHit">();
+		STATIC_CLASS_IMPL("GATask_WaitAbilityHit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitAbilityHit")
 	}
 	static class UGATask_WaitAbilityHit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitAbilityHit>();
 	}
 };
-static_assert(alignof(UGATask_WaitAbilityHit) == 0x000008, "Wrong alignment on UGATask_WaitAbilityHit");
-static_assert(sizeof(UGATask_WaitAbilityHit) == 0x000268, "Wrong size on UGATask_WaitAbilityHit");
-static_assert(offsetof(UGATask_WaitAbilityHit, ID) == 0x0001D0, "Member 'UGATask_WaitAbilityHit::ID' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAbilityHit, ActorType) == 0x0001D4, "Member 'UGATask_WaitAbilityHit::ActorType' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAbilityHit, OnHitResult) == 0x0001D8, "Member 'UGATask_WaitAbilityHit::OnHitResult' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAbilityHit, OnNoResult) == 0x0001E8, "Member 'UGATask_WaitAbilityHit::OnNoResult' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAbilityHit, OnHitResultKey) == 0x0001F8, "Member 'UGATask_WaitAbilityHit::OnHitResultKey' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitAbilityHit;
 
 // Class GraphAbility.GATask_WaitAttributeChange
-// 0x0080 (0x0250 - 0x01D0)
+// 0x0080 (0x0248 - 0x01C8)
 class UGATask_WaitAttributeChange final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(float NewValue)> OnInRange;                                        // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float NewValue)> OnOutRange;                                       // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     Attribute;                                         // 0x01F0(0x0040)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         MinValue;                                          // 0x0230(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIncludeMin;                                       // 0x0234(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxValue;                                          // 0x0238(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIncludeMax;                                       // 0x023C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bTriggerOnce;                                      // 0x023D(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bBeginCheck;                                       // 0x023E(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bLastInRange;                                      // 0x023F(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAbilitySystemComponent*                TargetASC;                                         // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_248[0x8];                                      // 0x0248(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(float NewValue)> OnInRange;                                        // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float NewValue)> OnOutRange;                                       // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x01E8(0x0040)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         MinValue;                                          // 0x0228(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIncludeMin;                                       // 0x022C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_22D[0x3];                                      // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxValue;                                          // 0x0230(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIncludeMax;                                       // 0x0234(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bTriggerOnce;                                      // 0x0235(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bBeginCheck;                                       // 0x0236(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bLastInRange;                                      // 0x0237(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAbilitySystemComponent*                TargetASC;                                         // 0x0238(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_240[0x8];                                      // 0x0240(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_WaitAttributeChange* WaitAttributeChange_Range(class UGameplayAbility* OwningAbility, const struct FGameplayAttribute& Attribute_0, float MinValue_0, bool bIncludeMin_0, float MaxValue_0, bool bIncludeMax_0, bool bTriggerOnce_0, bool bBeginCheck_0);
@@ -511,42 +553,68 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitAttributeChange">();
+		STATIC_CLASS_IMPL("GATask_WaitAttributeChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitAttributeChange")
 	}
 	static class UGATask_WaitAttributeChange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitAttributeChange>();
 	}
 };
-static_assert(alignof(UGATask_WaitAttributeChange) == 0x000008, "Wrong alignment on UGATask_WaitAttributeChange");
-static_assert(sizeof(UGATask_WaitAttributeChange) == 0x000250, "Wrong size on UGATask_WaitAttributeChange");
-static_assert(offsetof(UGATask_WaitAttributeChange, OnInRange) == 0x0001D0, "Member 'UGATask_WaitAttributeChange::OnInRange' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, OnOutRange) == 0x0001E0, "Member 'UGATask_WaitAttributeChange::OnOutRange' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, Attribute) == 0x0001F0, "Member 'UGATask_WaitAttributeChange::Attribute' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, MinValue) == 0x000230, "Member 'UGATask_WaitAttributeChange::MinValue' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, bIncludeMin) == 0x000234, "Member 'UGATask_WaitAttributeChange::bIncludeMin' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, MaxValue) == 0x000238, "Member 'UGATask_WaitAttributeChange::MaxValue' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, bIncludeMax) == 0x00023C, "Member 'UGATask_WaitAttributeChange::bIncludeMax' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, bTriggerOnce) == 0x00023D, "Member 'UGATask_WaitAttributeChange::bTriggerOnce' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, bBeginCheck) == 0x00023E, "Member 'UGATask_WaitAttributeChange::bBeginCheck' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, bLastInRange) == 0x00023F, "Member 'UGATask_WaitAttributeChange::bLastInRange' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitAttributeChange, TargetASC) == 0x000240, "Member 'UGATask_WaitAttributeChange::TargetASC' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitAttributeChange;
+
+// Class GraphAbility.GATask_WaitTargetData
+// 0x1A38 (0x1C00 - 0x01C8)
+class UGATask_WaitTargetData final : public UGATaskBase
+{
+public:
+	TMulticastInlineDelegate<void(const struct FVector& Location)> OnConfirm;                        // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCancel;                                          // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E8[0x8];                                      // 0x01E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFindGroundParam                       TraceParams;                                       // 0x01F0(0x1A00)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           PlacementCueTag;                                   // 0x1BF0(0x000C)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1BFC[0x4];                                     // 0x1BFC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UGATask_WaitTargetData* WaitTargetData_PawnPlacement(class UGameplayAbility* OwningAbility, const struct FFindGroundParam& TraceParams_0, const struct FGameplayTag& PlacementCueTag_0);
+
+	void OnCancelledCallback(const struct FGameplayAbilityTargetDataHandle& Data);
+	void OnValidDataCallback(const struct FGameplayAbilityTargetDataHandle& Data);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GATask_WaitTargetData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitTargetData")
+	}
+	static class UGATask_WaitTargetData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGATask_WaitTargetData>();
+	}
+};
+DUMPER7_ASSERTS_UGATask_WaitTargetData;
 
 // Class GraphAbility.GATask_WaitBuffEvent
-// 0x0138 (0x0308 - 0x01D0)
+// 0x0138 (0x0300 - 0x01C8)
 class UGATask_WaitBuffEvent final : public UGATaskBase
 {
 public:
-	uint8                                         Pad_1D0[0x18];                                     // 0x01D0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 NewStackCount, int32 OldStackCount)> OnApplied;              // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 NewStackCount, int32 OldStackCount)> OnRemoved;              // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x0208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAbilitySystemComponent*                TargetASC;                                         // 0x0210(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAbilitySystemComponent*                SourceASC;                                         // 0x0218(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FActiveGameplayEffectHandle            EffectHandle;                                      // 0x0220(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPredictionKey                         ApplyBuffKey;                                      // 0x0228(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPredictionKey                         RemoveBuffKey;                                     // 0x0298(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C8[0x18];                                     // 0x01C8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 NewStackCount, int32 OldStackCount)> OnApplied;              // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 NewStackCount, int32 OldStackCount)> OnRemoved;              // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x0200(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAbilitySystemComponent*                TargetASC;                                         // 0x0208(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAbilitySystemComponent*                SourceASC;                                         // 0x0210(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FActiveGameplayEffectHandle            EffectHandle;                                      // 0x0218(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPredictionKey                         ApplyBuffKey;                                      // 0x0220(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPredictionKey                         RemoveBuffKey;                                     // 0x0290(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_WaitBuffEvent* WaitBuffEvent(class UGameplayAbility* OwningAbility, int32 BuffID_0);
@@ -557,45 +625,40 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitBuffEvent">();
+		STATIC_CLASS_IMPL("GATask_WaitBuffEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitBuffEvent")
 	}
 	static class UGATask_WaitBuffEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitBuffEvent>();
 	}
 };
-static_assert(alignof(UGATask_WaitBuffEvent) == 0x000008, "Wrong alignment on UGATask_WaitBuffEvent");
-static_assert(sizeof(UGATask_WaitBuffEvent) == 0x000308, "Wrong size on UGATask_WaitBuffEvent");
-static_assert(offsetof(UGATask_WaitBuffEvent, OnApplied) == 0x0001E8, "Member 'UGATask_WaitBuffEvent::OnApplied' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, OnRemoved) == 0x0001F8, "Member 'UGATask_WaitBuffEvent::OnRemoved' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, BuffID) == 0x000208, "Member 'UGATask_WaitBuffEvent::BuffID' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, TargetASC) == 0x000210, "Member 'UGATask_WaitBuffEvent::TargetASC' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, SourceASC) == 0x000218, "Member 'UGATask_WaitBuffEvent::SourceASC' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, EffectHandle) == 0x000220, "Member 'UGATask_WaitBuffEvent::EffectHandle' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, ApplyBuffKey) == 0x000228, "Member 'UGATask_WaitBuffEvent::ApplyBuffKey' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitBuffEvent, RemoveBuffKey) == 0x000298, "Member 'UGATask_WaitBuffEvent::RemoveBuffKey' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitBuffEvent;
 
 // Class GraphAbility.GATask_WaitConfirmCancel
-// 0x00F8 (0x02C8 - 0x01D0)
+// 0x00F8 (0x02C0 - 0x01C8)
 class UGATask_WaitConfirmCancel final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void()>              OnConfirmPressed;                                  // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnConfirmReleased;                                 // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCancelPressed;                                   // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCancelReleased;                                  // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTimeout;                                         // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	EAbilityInputBinds                            ConfirmInputBind;                                  // 0x0220(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EAbilityInputBinds                            CancelInputBind;                                   // 0x0221(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bSkipNowTrigger;                                   // 0x0222(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_223[0x1];                                      // 0x0223(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         WaitTime;                                          // 0x0224(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMarvelAbilityTask_WaitBindInput*       ConfirmInputTask;                                  // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMarvelAbilityTask_WaitBindInput*       CancelInputTask;                                   // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_238[0x18];                                     // 0x0238(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsTimeout;                                        // 0x0250(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPredictionKey                         TimerKey;                                          // 0x0258(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void()>              OnConfirmPressed;                                  // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnConfirmReleased;                                 // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCancelPressed;                                   // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCancelReleased;                                  // 0x01F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTimeout;                                         // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	EAbilityInputBinds                            ConfirmInputBind;                                  // 0x0218(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EAbilityInputBinds                            CancelInputBind;                                   // 0x0219(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bSkipNowTrigger;                                   // 0x021A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21B[0x1];                                      // 0x021B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WaitTime;                                          // 0x021C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMarvelAbilityTask_WaitBindInput*       ConfirmInputTask;                                  // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMarvelAbilityTask_WaitBindInput*       CancelInputTask;                                   // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_230[0x18];                                     // 0x0230(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsTimeout;                                        // 0x0248(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPredictionKey                         TimerKey;                                          // 0x0250(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_WaitConfirmCancel* WaitConfirmCancel(class UGameplayAbility* OwningAbility, EAbilityInputBinds ConfirmInput, EAbilityInputBinds CancelInput, bool bSkipNowTrigger_0, float MaxWaitTime);
@@ -611,37 +674,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitConfirmCancel">();
+		STATIC_CLASS_IMPL("GATask_WaitConfirmCancel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitConfirmCancel")
 	}
 	static class UGATask_WaitConfirmCancel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitConfirmCancel>();
 	}
 };
-static_assert(alignof(UGATask_WaitConfirmCancel) == 0x000008, "Wrong alignment on UGATask_WaitConfirmCancel");
-static_assert(sizeof(UGATask_WaitConfirmCancel) == 0x0002C8, "Wrong size on UGATask_WaitConfirmCancel");
-static_assert(offsetof(UGATask_WaitConfirmCancel, OnConfirmPressed) == 0x0001D0, "Member 'UGATask_WaitConfirmCancel::OnConfirmPressed' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, OnConfirmReleased) == 0x0001E0, "Member 'UGATask_WaitConfirmCancel::OnConfirmReleased' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, OnCancelPressed) == 0x0001F0, "Member 'UGATask_WaitConfirmCancel::OnCancelPressed' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, OnCancelReleased) == 0x000200, "Member 'UGATask_WaitConfirmCancel::OnCancelReleased' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, OnTimeout) == 0x000210, "Member 'UGATask_WaitConfirmCancel::OnTimeout' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, ConfirmInputBind) == 0x000220, "Member 'UGATask_WaitConfirmCancel::ConfirmInputBind' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, CancelInputBind) == 0x000221, "Member 'UGATask_WaitConfirmCancel::CancelInputBind' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, bSkipNowTrigger) == 0x000222, "Member 'UGATask_WaitConfirmCancel::bSkipNowTrigger' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, WaitTime) == 0x000224, "Member 'UGATask_WaitConfirmCancel::WaitTime' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, ConfirmInputTask) == 0x000228, "Member 'UGATask_WaitConfirmCancel::ConfirmInputTask' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, CancelInputTask) == 0x000230, "Member 'UGATask_WaitConfirmCancel::CancelInputTask' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, bIsTimeout) == 0x000250, "Member 'UGATask_WaitConfirmCancel::bIsTimeout' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitConfirmCancel, TimerKey) == 0x000258, "Member 'UGATask_WaitConfirmCancel::TimerKey' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitConfirmCancel;
 
 // Class GraphAbility.GATask_WaitDamageEvent
-// 0x0090 (0x0260 - 0x01D0)
+// 0x0090 (0x0258 - 0x01C8)
 class UGATask_WaitDamageEvent final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* OtherActor, const struct FAttributeModifierHandle& ModifierParameterHandle)> OnDamageOrTreatEvent; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UMarvelBaseAbilitySystemComponent*      SourceASC;                                         // 0x01E0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E8[0x78];                                     // 0x01E8(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class AActor* OtherActor, const struct FAttributeModifierHandle& ModifierParameterHandle)> OnDamageOrTreatEvent; // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class UMarvelBaseAbilitySystemComponent*      SourceASC;                                         // 0x01D8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1E0[0x78];                                     // 0x01E0(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_WaitDamageEvent* WaitDamageEvent(class UGameplayAbility* OwningAbility, EDamageEventType EventType);
@@ -652,68 +705,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitDamageEvent">();
+		STATIC_CLASS_IMPL("GATask_WaitDamageEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitDamageEvent")
 	}
 	static class UGATask_WaitDamageEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitDamageEvent>();
 	}
 };
-static_assert(alignof(UGATask_WaitDamageEvent) == 0x000008, "Wrong alignment on UGATask_WaitDamageEvent");
-static_assert(sizeof(UGATask_WaitDamageEvent) == 0x000260, "Wrong size on UGATask_WaitDamageEvent");
-static_assert(offsetof(UGATask_WaitDamageEvent, OnDamageOrTreatEvent) == 0x0001D0, "Member 'UGATask_WaitDamageEvent::OnDamageOrTreatEvent' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitDamageEvent, SourceASC) == 0x0001E0, "Member 'UGATask_WaitDamageEvent::SourceASC' has a wrong offset!");
-
-// Class GraphAbility.GATask_WaitKillEvent
-// 0x0088 (0x0258 - 0x01D0)
-class UGATask_WaitKillEvent final : public UGATaskBase
-{
-public:
-	TMulticastInlineDelegate<void(const struct FUIKillInfo& KillInfo)> OnKillEvent;                  // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E0[0x78];                                     // 0x01E0(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UGATask_WaitKillEvent* WaitKillEvent(class UGameplayAbility* OwningAbility, class AActor* SourceCharacter, class AActor* TargetCharacter);
-
-	void EndWaiting();
-	void OnKillCallback(const struct FUIKillInfo& KillInfo);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"GATask_WaitKillEvent">();
-	}
-	static class UGATask_WaitKillEvent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGATask_WaitKillEvent>();
-	}
-};
-static_assert(alignof(UGATask_WaitKillEvent) == 0x000008, "Wrong alignment on UGATask_WaitKillEvent");
-static_assert(sizeof(UGATask_WaitKillEvent) == 0x000258, "Wrong size on UGATask_WaitKillEvent");
-static_assert(offsetof(UGATask_WaitKillEvent, OnKillEvent) == 0x0001D0, "Member 'UGATask_WaitKillEvent::OnKillEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitDamageEvent;
 
 // Class GraphAbility.GATask_WaitInput
-// 0x0150 (0x0320 - 0x01D0)
+// 0x0150 (0x0318 - 0x01C8)
 class UGATask_WaitInput final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(float Duration)> OnPress;                                          // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Duration)> OnRelease;                                        // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Duration)> OnTimeout;                                        // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	EAbilityInputBinds                            InputBind;                                         // 0x0200(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bSkipNowTrigger;                                   // 0x0201(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_202[0x2];                                      // 0x0202(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         WaitTime;                                          // 0x0204(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bTriggerOnce;                                      // 0x0208(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActionTipsParam                       ActionTipsParam;                                   // 0x0210(0x0078)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_288[0x18];                                     // 0x0288(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsTimeout;                                        // 0x02A0(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         LastPressElapsedTime;                              // 0x02A4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         LastReleaseElapsedTime;                            // 0x02A8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPredictionKey                         TimerKey;                                          // 0x02B0(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(float Duration)> OnPress;                                          // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Duration)> OnRelease;                                        // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Duration)> OnTimeout;                                        // 0x01E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	EAbilityInputBinds                            InputBind;                                         // 0x01F8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bSkipNowTrigger;                                   // 0x01F9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1FA[0x2];                                      // 0x01FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WaitTime;                                          // 0x01FC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bTriggerOnce;                                      // 0x0200(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FActionTipsParam                       ActionTipsParam;                                   // 0x0208(0x0078)(Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_280[0x18];                                     // 0x0280(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsTimeout;                                        // 0x0298(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         LastPressElapsedTime;                              // 0x029C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         LastReleaseElapsedTime;                            // 0x02A0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPredictionKey                         TimerKey;                                          // 0x02A8(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_WaitInput* WaitCancel(class UGameplayAbility* OwningAbility, bool bSkipNowTrigger_0, float MaxWaitTime);
@@ -728,36 +754,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitInput">();
+		STATIC_CLASS_IMPL("GATask_WaitInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitInput")
 	}
 	static class UGATask_WaitInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitInput>();
 	}
 };
-static_assert(alignof(UGATask_WaitInput) == 0x000008, "Wrong alignment on UGATask_WaitInput");
-static_assert(sizeof(UGATask_WaitInput) == 0x000320, "Wrong size on UGATask_WaitInput");
-static_assert(offsetof(UGATask_WaitInput, OnPress) == 0x0001D0, "Member 'UGATask_WaitInput::OnPress' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, OnRelease) == 0x0001E0, "Member 'UGATask_WaitInput::OnRelease' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, OnTimeout) == 0x0001F0, "Member 'UGATask_WaitInput::OnTimeout' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, InputBind) == 0x000200, "Member 'UGATask_WaitInput::InputBind' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, bSkipNowTrigger) == 0x000201, "Member 'UGATask_WaitInput::bSkipNowTrigger' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, WaitTime) == 0x000204, "Member 'UGATask_WaitInput::WaitTime' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, bTriggerOnce) == 0x000208, "Member 'UGATask_WaitInput::bTriggerOnce' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, ActionTipsParam) == 0x000210, "Member 'UGATask_WaitInput::ActionTipsParam' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, bIsTimeout) == 0x0002A0, "Member 'UGATask_WaitInput::bIsTimeout' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, LastPressElapsedTime) == 0x0002A4, "Member 'UGATask_WaitInput::LastPressElapsedTime' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, LastReleaseElapsedTime) == 0x0002A8, "Member 'UGATask_WaitInput::LastReleaseElapsedTime' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitInput, TimerKey) == 0x0002B0, "Member 'UGATask_WaitInput::TimerKey' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitInput;
 
 // Class GraphAbility.GATask_WaitOwnerKillOther
-// 0x0088 (0x0258 - 0x01D0)
+// 0x0088 (0x0250 - 0x01C8)
 class UGATask_WaitOwnerKillOther final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)> OnCharacterKillOther; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FPredictionKey                         OnKillOtherKey;                                    // 0x01E0(0x0070)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMarvelBaseCharacter*                   TargetCharacter;                                   // 0x0250(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)> OnCharacterKillOther; // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FPredictionKey                         OnKillOtherKey;                                    // 0x01D8(0x0070)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMarvelBaseCharacter*                   TargetCharacter;                                   // 0x0248(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UGATask_WaitOwnerKillOther* WaitAbilityOwnerKillOther(class UGameplayAbility* OwningAbility);
@@ -768,30 +785,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitOwnerKillOther">();
+		STATIC_CLASS_IMPL("GATask_WaitOwnerKillOther")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitOwnerKillOther")
 	}
 	static class UGATask_WaitOwnerKillOther* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitOwnerKillOther>();
 	}
 };
-static_assert(alignof(UGATask_WaitOwnerKillOther) == 0x000008, "Wrong alignment on UGATask_WaitOwnerKillOther");
-static_assert(sizeof(UGATask_WaitOwnerKillOther) == 0x000258, "Wrong size on UGATask_WaitOwnerKillOther");
-static_assert(offsetof(UGATask_WaitOwnerKillOther, OnCharacterKillOther) == 0x0001D0, "Member 'UGATask_WaitOwnerKillOther::OnCharacterKillOther' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitOwnerKillOther, OnKillOtherKey) == 0x0001E0, "Member 'UGATask_WaitOwnerKillOther::OnKillOtherKey' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitOwnerKillOther, TargetCharacter) == 0x000250, "Member 'UGATask_WaitOwnerKillOther::TargetCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitOwnerKillOther;
 
 // Class GraphAbility.GATask_WaitSignal
-// 0x0090 (0x0260 - 0x01D0)
+// 0x0090 (0x0258 - 0x01C8)
 class UGATask_WaitSignal final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void()>              OnReceiveSignal;                                   // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class FName                                   SignalName;                                        // 0x01E0(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ESignalLevel                                  ReceiveLevel;                                      // 0x01EC(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bTriggerOnce;                                      // 0x01ED(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1EE[0x2];                                      // 0x01EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPredictionKey                         TriggerKey;                                        // 0x01F0(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void()>              OnReceiveSignal;                                   // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class FName                                   SignalName;                                        // 0x01D8(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ESignalLevel                                  ReceiveLevel;                                      // 0x01E4(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bTriggerOnce;                                      // 0x01E5(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1E6[0x2];                                      // 0x01E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPredictionKey                         TriggerKey;                                        // 0x01E8(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_WaitSignal* WaitSignalEvent(class UGameplayAbility* OwningAbility, class FName SignalName_0, ESignalLevel Level, bool bOnce);
@@ -801,63 +818,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitSignal">();
+		STATIC_CLASS_IMPL("GATask_WaitSignal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitSignal")
 	}
 	static class UGATask_WaitSignal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitSignal>();
 	}
 };
-static_assert(alignof(UGATask_WaitSignal) == 0x000008, "Wrong alignment on UGATask_WaitSignal");
-static_assert(sizeof(UGATask_WaitSignal) == 0x000260, "Wrong size on UGATask_WaitSignal");
-static_assert(offsetof(UGATask_WaitSignal, OnReceiveSignal) == 0x0001D0, "Member 'UGATask_WaitSignal::OnReceiveSignal' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitSignal, SignalName) == 0x0001E0, "Member 'UGATask_WaitSignal::SignalName' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitSignal, ReceiveLevel) == 0x0001EC, "Member 'UGATask_WaitSignal::ReceiveLevel' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitSignal, bTriggerOnce) == 0x0001ED, "Member 'UGATask_WaitSignal::bTriggerOnce' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitSignal, TriggerKey) == 0x0001F0, "Member 'UGATask_WaitSignal::TriggerKey' has a wrong offset!");
-
-// Class GraphAbility.GATask_WaitTargetData
-// 0x16E0 (0x18B0 - 0x01D0)
-class UGATask_WaitTargetData final : public UGATaskBase
-{
-public:
-	TMulticastInlineDelegate<void(const struct FVector& Location)> OnConfirm;                        // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCancel;                                          // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       TraceParams;                                       // 0x01F0(0x16B0)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           PlacementCueTag;                                   // 0x18A0(0x000C)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_18AC[0x4];                                     // 0x18AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UGATask_WaitTargetData* WaitTargetData_PawnPlacement(class UGameplayAbility* OwningAbility, const struct FFindGroundParam& TraceParams_0, const struct FGameplayTag& PlacementCueTag_0);
-
-	void OnCancelledCallback(const struct FGameplayAbilityTargetDataHandle& Data);
-	void OnValidDataCallback(const struct FGameplayAbilityTargetDataHandle& Data);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"GATask_WaitTargetData">();
-	}
-	static class UGATask_WaitTargetData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGATask_WaitTargetData>();
-	}
-};
-static_assert(alignof(UGATask_WaitTargetData) == 0x000010, "Wrong alignment on UGATask_WaitTargetData");
-static_assert(sizeof(UGATask_WaitTargetData) == 0x0018B0, "Wrong size on UGATask_WaitTargetData");
-static_assert(offsetof(UGATask_WaitTargetData, OnConfirm) == 0x0001D0, "Member 'UGATask_WaitTargetData::OnConfirm' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitTargetData, OnCancel) == 0x0001E0, "Member 'UGATask_WaitTargetData::OnCancel' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitTargetData, TraceParams) == 0x0001F0, "Member 'UGATask_WaitTargetData::TraceParams' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitTargetData, PlacementCueTag) == 0x0018A0, "Member 'UGATask_WaitTargetData::PlacementCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitSignal;
 
 // Class GraphAbility.GATask_WaitTime
-// 0x0018 (0x01E8 - 0x01D0)
+// 0x0018 (0x01E0 - 0x01C8)
 class UGATask_WaitTime final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void()>              OnFinished;                                        // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x01E0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnFinished;                                        // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	float                                         Time;                                              // 0x01D8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGATask_WaitTime* WaitTimeSeconds(class UGameplayAbility* OwningAbility, float Seconds);
@@ -867,86 +848,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WaitTime">();
+		STATIC_CLASS_IMPL("GATask_WaitTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WaitTime")
 	}
 	static class UGATask_WaitTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WaitTime>();
 	}
 };
-static_assert(alignof(UGATask_WaitTime) == 0x000008, "Wrong alignment on UGATask_WaitTime");
-static_assert(sizeof(UGATask_WaitTime) == 0x0001E8, "Wrong size on UGATask_WaitTime");
-static_assert(offsetof(UGATask_WaitTime, OnFinished) == 0x0001D0, "Member 'UGATask_WaitTime::OnFinished' has a wrong offset!");
-static_assert(offsetof(UGATask_WaitTime, Time) == 0x0001E0, "Member 'UGATask_WaitTime::Time' has a wrong offset!");
-
-// Class GraphAbility.GATask_WeaponFireOnce
-// 0x00E0 (0x02B0 - 0x01D0)
-class UGATask_WeaponFireOnce final : public UGATaskBase
-{
-public:
-	TMulticastInlineDelegate<void()>              OnFired;                                           // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnEnd;                                             // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         WeaponID;                                          // 0x01F0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 ShootModes;                                        // 0x01F8(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	int32                                         ShootCount;                                        // 0x0208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         ShootDelay;                                        // 0x020C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         ReloadAbilityID;                                   // 0x0210(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AShootingWeapon*                        MyWeapon;                                          // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPredictionKey                         ShootPredictKey;                                   // 0x0220(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         TriggeredShootCount;                               // 0x0290(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_294[0x1C];                                     // 0x0294(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UGATask_WeaponFireOnce* WeaponFireOnce_MultiMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, const TArray<int32>& ShootModes_0, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0);
-	static class UGATask_WeaponFireOnce* WeaponFireOnce_SingleMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, int32 ShootMode, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0);
-
-	void Shoot();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"GATask_WeaponFireOnce">();
-	}
-	static class UGATask_WeaponFireOnce* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGATask_WeaponFireOnce>();
-	}
-};
-static_assert(alignof(UGATask_WeaponFireOnce) == 0x000008, "Wrong alignment on UGATask_WeaponFireOnce");
-static_assert(sizeof(UGATask_WeaponFireOnce) == 0x0002B0, "Wrong size on UGATask_WeaponFireOnce");
-static_assert(offsetof(UGATask_WeaponFireOnce, OnFired) == 0x0001D0, "Member 'UGATask_WeaponFireOnce::OnFired' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, OnEnd) == 0x0001E0, "Member 'UGATask_WeaponFireOnce::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, WeaponID) == 0x0001F0, "Member 'UGATask_WeaponFireOnce::WeaponID' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, ShootModes) == 0x0001F8, "Member 'UGATask_WeaponFireOnce::ShootModes' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, ShootCount) == 0x000208, "Member 'UGATask_WeaponFireOnce::ShootCount' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, ShootDelay) == 0x00020C, "Member 'UGATask_WeaponFireOnce::ShootDelay' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, ReloadAbilityID) == 0x000210, "Member 'UGATask_WeaponFireOnce::ReloadAbilityID' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, MyWeapon) == 0x000218, "Member 'UGATask_WeaponFireOnce::MyWeapon' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, ShootPredictKey) == 0x000220, "Member 'UGATask_WeaponFireOnce::ShootPredictKey' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFireOnce, TriggeredShootCount) == 0x000290, "Member 'UGATask_WeaponFireOnce::TriggeredShootCount' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WaitTime;
 
 // Class GraphAbility.GATask_WeaponFiring
-// 0x00C8 (0x0298 - 0x01D0)
+// 0x00C8 (0x0290 - 0x01C8)
 class UGATask_WeaponFiring final : public UGATaskBase
 {
 public:
-	TMulticastInlineDelegate<void()>              OnFire;                                            // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnEnd;                                             // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         WeaponID;                                          // 0x01F0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 ShootModes;                                        // 0x01F8(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	bool                                          bIsRoundRobin;                                     // 0x0208(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ReloadAbilityID;                                   // 0x020C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DelayEndTask;                                      // 0x0210(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EAbilityInputBinds                            InputBind;                                         // 0x0214(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_215[0x3];                                      // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPredictionKey                         FireKey;                                           // 0x0218(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         FireIndex;                                         // 0x0288(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelWeaponTask_Firing*               SubFireTask;                                       // 0x0290(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void()>              OnFire;                                            // 0x01C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnEnd;                                             // 0x01D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         WeaponID;                                          // 0x01E8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 ShootModes;                                        // 0x01F0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	bool                                          bIsRoundRobin;                                     // 0x0200(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_201[0x3];                                      // 0x0201(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReloadAbilityID;                                   // 0x0204(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DelayEndTask;                                      // 0x0208(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EAbilityInputBinds                            InputBind;                                         // 0x020C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPredictionKey                         FireKey;                                           // 0x0210(0x0070)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         FireIndex;                                         // 0x0280(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelWeaponTask_Firing*               SubFireTask;                                       // 0x0288(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGATask_WeaponFiring* WeaponFiring_MultiModes(class UGameplayAbility* OwningAbility, int32 WeaponID_0, const TArray<int32>& ShootModes_0, bool bIsRoundRobin_0, int32 ReloadAbilityID_0, float DelayEndTask_0, EAbilityInputBinds Input);
@@ -959,26 +893,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GATask_WeaponFiring">();
+		STATIC_CLASS_IMPL("GATask_WeaponFiring")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GATask_WeaponFiring")
 	}
 	static class UGATask_WeaponFiring* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGATask_WeaponFiring>();
 	}
 };
-static_assert(alignof(UGATask_WeaponFiring) == 0x000008, "Wrong alignment on UGATask_WeaponFiring");
-static_assert(sizeof(UGATask_WeaponFiring) == 0x000298, "Wrong size on UGATask_WeaponFiring");
-static_assert(offsetof(UGATask_WeaponFiring, OnFire) == 0x0001D0, "Member 'UGATask_WeaponFiring::OnFire' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, OnEnd) == 0x0001E0, "Member 'UGATask_WeaponFiring::OnEnd' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, WeaponID) == 0x0001F0, "Member 'UGATask_WeaponFiring::WeaponID' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, ShootModes) == 0x0001F8, "Member 'UGATask_WeaponFiring::ShootModes' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, bIsRoundRobin) == 0x000208, "Member 'UGATask_WeaponFiring::bIsRoundRobin' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, ReloadAbilityID) == 0x00020C, "Member 'UGATask_WeaponFiring::ReloadAbilityID' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, DelayEndTask) == 0x000210, "Member 'UGATask_WeaponFiring::DelayEndTask' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, InputBind) == 0x000214, "Member 'UGATask_WeaponFiring::InputBind' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, FireKey) == 0x000218, "Member 'UGATask_WeaponFiring::FireKey' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, FireIndex) == 0x000288, "Member 'UGATask_WeaponFiring::FireIndex' has a wrong offset!");
-static_assert(offsetof(UGATask_WeaponFiring, SubFireTask) == 0x000290, "Member 'UGATask_WeaponFiring::SubFireTask' has a wrong offset!");
+DUMPER7_ASSERTS_UGATask_WeaponFiring;
 
 // Class GraphAbility.GraphAbilityFuncLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -999,15 +925,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GraphAbilityFuncLibrary">();
+		STATIC_CLASS_IMPL("GraphAbilityFuncLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GraphAbilityFuncLibrary")
 	}
 	static class UGraphAbilityFuncLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGraphAbilityFuncLibrary>();
 	}
 };
-static_assert(alignof(UGraphAbilityFuncLibrary) == 0x000008, "Wrong alignment on UGraphAbilityFuncLibrary");
-static_assert(sizeof(UGraphAbilityFuncLibrary) == 0x000030, "Wrong size on UGraphAbilityFuncLibrary");
+DUMPER7_ASSERTS_UGraphAbilityFuncLibrary;
 
 // Class GraphAbility.GraphAbilityFuncNodes
 // 0x0000 (0x0030 - 0x0030)
@@ -1033,15 +962,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GraphAbilityFuncNodes">();
+		STATIC_CLASS_IMPL("GraphAbilityFuncNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GraphAbilityFuncNodes")
 	}
 	static class UGraphAbilityFuncNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGraphAbilityFuncNodes>();
 	}
 };
-static_assert(alignof(UGraphAbilityFuncNodes) == 0x000008, "Wrong alignment on UGraphAbilityFuncNodes");
-static_assert(sizeof(UGraphAbilityFuncNodes) == 0x000030, "Wrong size on UGraphAbilityFuncNodes");
+DUMPER7_ASSERTS_UGraphAbilityFuncNodes;
 
 // Class GraphAbility.GraphAbilityFuncNodes_Ability
 // 0x0000 (0x0030 - 0x0030)
@@ -1069,15 +1001,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GraphAbilityFuncNodes_Ability">();
+		STATIC_CLASS_IMPL("GraphAbilityFuncNodes_Ability")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GraphAbilityFuncNodes_Ability")
 	}
 	static class UGraphAbilityFuncNodes_Ability* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGraphAbilityFuncNodes_Ability>();
 	}
 };
-static_assert(alignof(UGraphAbilityFuncNodes_Ability) == 0x000008, "Wrong alignment on UGraphAbilityFuncNodes_Ability");
-static_assert(sizeof(UGraphAbilityFuncNodes_Ability) == 0x000030, "Wrong size on UGraphAbilityFuncNodes_Ability");
+DUMPER7_ASSERTS_UGraphAbilityFuncNodes_Ability;
 
 // Class GraphAbility.GraphAbilityFuncNodes_AbilityTarget
 // 0x0000 (0x0030 - 0x0030)
@@ -1090,23 +1025,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GraphAbilityFuncNodes_AbilityTarget">();
+		STATIC_CLASS_IMPL("GraphAbilityFuncNodes_AbilityTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GraphAbilityFuncNodes_AbilityTarget")
 	}
 	static class UGraphAbilityFuncNodes_AbilityTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGraphAbilityFuncNodes_AbilityTarget>();
 	}
 };
-static_assert(alignof(UGraphAbilityFuncNodes_AbilityTarget) == 0x000008, "Wrong alignment on UGraphAbilityFuncNodes_AbilityTarget");
-static_assert(sizeof(UGraphAbilityFuncNodes_AbilityTarget) == 0x000030, "Wrong size on UGraphAbilityFuncNodes_AbilityTarget");
+DUMPER7_ASSERTS_UGraphAbilityFuncNodes_AbilityTarget;
 
 // Class GraphAbility.GraphAbilityTaskMgr
-// 0x0198 (0x01D0 - 0x0038)
+// 0x0198 (0x01D8 - 0x0040)
 class UGraphAbilityTaskMgr final : public UWorldSubsystem
 {
 public:
-	class UAbilityTargetMgmtSys*                  AbilityTargetMgmt;                                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_40[0x190];                                     // 0x0040(0x0190)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UAbilityTargetMgmtSys*                  AbilityTargetMgmt;                                 // 0x0040(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_48[0x190];                                     // 0x0048(0x0190)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CheckCanActivateAbilityForGASpec(class UGameplayAbility* InAbility);
@@ -1119,16 +1057,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GraphAbilityTaskMgr">();
+		STATIC_CLASS_IMPL("GraphAbilityTaskMgr")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GraphAbilityTaskMgr")
 	}
 	static class UGraphAbilityTaskMgr* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGraphAbilityTaskMgr>();
 	}
 };
-static_assert(alignof(UGraphAbilityTaskMgr) == 0x000008, "Wrong alignment on UGraphAbilityTaskMgr");
-static_assert(sizeof(UGraphAbilityTaskMgr) == 0x0001D0, "Wrong size on UGraphAbilityTaskMgr");
-static_assert(offsetof(UGraphAbilityTaskMgr, AbilityTargetMgmt) == 0x000038, "Member 'UGraphAbilityTaskMgr::AbilityTargetMgmt' has a wrong offset!");
+DUMPER7_ASSERTS_UGraphAbilityTaskMgr;
 
 }
 

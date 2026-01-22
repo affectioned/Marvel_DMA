@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
@@ -19,20 +20,25 @@ namespace SDK
 {
 
 // PythonClass PyLevelController_Activity151.PyLevelController_Activity151
-// 0x01A0 (0x0880 - 0x06E0)
+// 0x03B0 (0x0A90 - 0x06E0)
 class APyLevelController_Activity151 final : public AActor
 {
 public:
 	uint8                                         Pad_6D8[0x8];                                      // 0x06D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLevelSequencePlayStyle                LS_OpeningRemarks;                                 // 0x06E0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLevelSequencePlayStyle                LS_GyroX;                                          // 0x0760(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLevelSequencePlayStyle                LS_GyroY;                                          // 0x07E0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            Curve_InterpSpeed;                                 // 0x0860(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PositionInterpSpeed;                               // 0x0868(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaximumPositionDistanceX;                          // 0x086C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaximumPositionDistanceY;                          // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_874[0x4];                                      // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBinkMediaPlayer*                       CarPlayer;                                         // 0x0878(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_Fireworks;                                      // 0x0760(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_ColouredRibbon;                                 // 0x07E0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_Spotlight;                                      // 0x0860(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_SceneDark;                                      // 0x08E0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_GyroX;                                          // 0x0960(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLevelSequencePlayStyle                LS_GyroY;                                          // 0x09E0(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            Curve_InterpSpeed;                                 // 0x0A60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PositionInterpSpeed;                               // 0x0A68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaximumPositionDistanceX;                          // 0x0A6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaximumPositionDistanceY;                          // 0x0A70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A74[0x4];                                      // 0x0A74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              MakeHeartCameraPos;                                // 0x0A78(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       CarPlayer;                                         // 0x0A88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -42,23 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Activity151">();
+		STATIC_CLASS_IMPL("PyLevelController_Activity151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Activity151")
 	}
 	static class APyLevelController_Activity151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Activity151>();
 	}
 };
-static_assert(alignof(APyLevelController_Activity151) == 0x000010, "Wrong alignment on APyLevelController_Activity151");
-static_assert(sizeof(APyLevelController_Activity151) == 0x000880, "Wrong size on APyLevelController_Activity151");
-static_assert(offsetof(APyLevelController_Activity151, LS_OpeningRemarks) == 0x0006E0, "Member 'APyLevelController_Activity151::LS_OpeningRemarks' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, LS_GyroX) == 0x000760, "Member 'APyLevelController_Activity151::LS_GyroX' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, LS_GyroY) == 0x0007E0, "Member 'APyLevelController_Activity151::LS_GyroY' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, Curve_InterpSpeed) == 0x000860, "Member 'APyLevelController_Activity151::Curve_InterpSpeed' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, PositionInterpSpeed) == 0x000868, "Member 'APyLevelController_Activity151::PositionInterpSpeed' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, MaximumPositionDistanceX) == 0x00086C, "Member 'APyLevelController_Activity151::MaximumPositionDistanceX' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, MaximumPositionDistanceY) == 0x000870, "Member 'APyLevelController_Activity151::MaximumPositionDistanceY' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity151, CarPlayer) == 0x000878, "Member 'APyLevelController_Activity151::CarPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_Activity151;
 
 }
 

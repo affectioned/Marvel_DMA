@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_GotoPage616_Panel.PyWidget_Mall_GotoPage616_Panel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Mall_GotoPage616_Panel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_GotoPage616_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_GotoPage616_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_GotoPage616_Panel")
 	}
 	static class UPyWidget_Mall_GotoPage616_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_GotoPage616_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_GotoPage616_Panel) == 0x000008, "Wrong alignment on UPyWidget_Mall_GotoPage616_Panel");
-static_assert(sizeof(UPyWidget_Mall_GotoPage616_Panel) == 0x0005F8, "Wrong size on UPyWidget_Mall_GotoPage616_Panel");
+DUMPER7_ASSERTS_UPyWidget_Mall_GotoPage616_Panel;
 
 }
 

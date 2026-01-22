@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData_Activity.PyWidget_Settlement_PersonalData_Activity
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Activity final : public UPyWidget_Settlement_PersonalData_Base
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Activity">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Activity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Activity")
 	}
 	static class UPyWidget_Settlement_PersonalData_Activity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Activity>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Activity) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Activity");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Activity) == 0x0005C0, "Wrong size on UPyWidget_Settlement_PersonalData_Activity");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Activity;
 
 }
 

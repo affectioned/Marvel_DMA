@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUIActionData                          InActionData;                                      // 0x0008(0x0058)(Parm)
 };
-static_assert(alignof(PyWidget_AbilityTarget_AddTip) == 0x000008, "Wrong alignment on PyWidget_AbilityTarget_AddTip");
-static_assert(sizeof(PyWidget_AbilityTarget_AddTip) == 0x000060, "Wrong size on PyWidget_AbilityTarget_AddTip");
-static_assert(offsetof(PyWidget_AbilityTarget_AddTip, InTipID) == 0x000000, "Member 'PyWidget_AbilityTarget_AddTip::InTipID' has a wrong offset!");
-static_assert(offsetof(PyWidget_AbilityTarget_AddTip, InActionData) == 0x000008, "Member 'PyWidget_AbilityTarget_AddTip::InActionData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityTarget_AddTip;
 
 // PythonFunction PyWidget_AbilityTarget.PyWidget_AbilityTarget.RemoveTip
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_AbilityTarget_RemoveTip final
 public:
 	int32                                         InTipID;                                           // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityTarget_RemoveTip) == 0x000004, "Wrong alignment on PyWidget_AbilityTarget_RemoveTip");
-static_assert(sizeof(PyWidget_AbilityTarget_RemoveTip) == 0x000004, "Wrong size on PyWidget_AbilityTarget_RemoveTip");
-static_assert(offsetof(PyWidget_AbilityTarget_RemoveTip, InTipID) == 0x000000, "Member 'PyWidget_AbilityTarget_RemoveTip::InTipID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityTarget_RemoveTip;
 
 // PythonFunction PyWidget_AbilityTarget.PyWidget_AbilityTarget.GetTipsNum
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +43,7 @@ struct PyWidget_AbilityTarget_GetTipsNum final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityTarget_GetTipsNum) == 0x000004, "Wrong alignment on PyWidget_AbilityTarget_GetTipsNum");
-static_assert(sizeof(PyWidget_AbilityTarget_GetTipsNum) == 0x000004, "Wrong size on PyWidget_AbilityTarget_GetTipsNum");
-static_assert(offsetof(PyWidget_AbilityTarget_GetTipsNum, ReturnValue) == 0x000000, "Member 'PyWidget_AbilityTarget_GetTipsNum::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityTarget_GetTipsNum;
 
 // PythonFunction PyWidget_AbilityTarget.PyWidget_AbilityTarget.SetIsEnemy
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +52,7 @@ struct PyWidget_AbilityTarget_SetIsEnemy final
 public:
 	bool                                          bIsEnemy;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityTarget_SetIsEnemy) == 0x000001, "Wrong alignment on PyWidget_AbilityTarget_SetIsEnemy");
-static_assert(sizeof(PyWidget_AbilityTarget_SetIsEnemy) == 0x000001, "Wrong size on PyWidget_AbilityTarget_SetIsEnemy");
-static_assert(offsetof(PyWidget_AbilityTarget_SetIsEnemy, bIsEnemy) == 0x000000, "Member 'PyWidget_AbilityTarget_SetIsEnemy::bIsEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityTarget_SetIsEnemy;
 
 }
 

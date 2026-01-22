@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // UserDefinedStruct LeagueTrophyIconBaseMapTable.LeagueTrophyIconBaseMapTable
-// 0x0238 (0x0238 - 0x0000)
+// 0x0388 (0x0388 - 0x0000)
 struct FLeagueTrophyIconBaseMapTable final
 {
 public:
@@ -36,23 +36,16 @@ public:
 	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 BaseComment_29_2EC864EF42E91EAAE2241E8B8604C644;   // 0x0218(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	struct FSeasonOptions                         SeasonOpiton_34_E1E6FF514A7C18E4D09086B86AD5FE5F;  // 0x0228(0x000C)(Edit, BlueprintVisible, NoDestructor)
+	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture>                rank_5_39_3D6392764D64E20A9C652A932D86B9B6;        // 0x0238(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_6_41_5E0F1E5C44FB00C425D53DBCB461CEE6;        // 0x0268(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_7_43_23751FF44596E3EE9ADB6780F3F5BB5E;        // 0x0298(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_9_45_04E5D1844D759512D4A17FA6AD8CF1CA;        // 0x02C8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_10_47_5ABB4A584955A16421E4B0970C4E06A0;       // 0x02F8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_open_qualifiers_53_CDBE899742EBA1D99D978DB467FB1A85; // 0x0328(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture>                rank_closed_qualifiers_54_9EAC4BB2412BCBE176882F9084C33931; // 0x0358(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FLeagueTrophyIconBaseMapTable) == 0x000008, "Wrong alignment on FLeagueTrophyIconBaseMapTable");
-static_assert(sizeof(FLeagueTrophyIconBaseMapTable) == 0x000238, "Wrong size on FLeagueTrophyIconBaseMapTable");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_1_5_EAD25804418E1E47DEA522B1A1324C2B) == 0x000000, "Member 'FLeagueTrophyIconBaseMapTable::rank_1_5_EAD25804418E1E47DEA522B1A1324C2B' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_2_4_2B0687DA4C4EA254189574B091C3F57C) == 0x000030, "Member 'FLeagueTrophyIconBaseMapTable::rank_2_4_2B0687DA4C4EA254189574B091C3F57C' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_3_7_F16838364C98B05BC2AC908FA839F2D6) == 0x000060, "Member 'FLeagueTrophyIconBaseMapTable::rank_3_7_F16838364C98B05BC2AC908FA839F2D6' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_4_9_ACEB61544790465ED5C02EAC664D0E65) == 0x000090, "Member 'FLeagueTrophyIconBaseMapTable::rank_4_9_ACEB61544790465ED5C02EAC664D0E65' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_8_12_141697584B3D232EC3170582716D731B) == 0x0000C0, "Member 'FLeagueTrophyIconBaseMapTable::rank_8_12_141697584B3D232EC3170582716D731B' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_16_13_8531E6DF4E59807D097ECF946364FF22) == 0x0000F0, "Member 'FLeagueTrophyIconBaseMapTable::rank_16_13_8531E6DF4E59807D097ECF946364FF22' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_32_18_71E356CD49F44BCEDBB0DD9B940D3671) == 0x000120, "Member 'FLeagueTrophyIconBaseMapTable::rank_32_18_71E356CD49F44BCEDBB0DD9B940D3671' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_64_19_2DF8494E465974C1DDA6BA96FB91004C) == 0x000150, "Member 'FLeagueTrophyIconBaseMapTable::rank_64_19_2DF8494E465974C1DDA6BA96FB91004C' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_128_20_A458715D47D1CD70DE0AF5AA84F845CA) == 0x000180, "Member 'FLeagueTrophyIconBaseMapTable::rank_128_20_A458715D47D1CD70DE0AF5AA84F845CA' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_256_21_3271E31C4D42FE6F91C84EADF44EF7AB) == 0x0001B0, "Member 'FLeagueTrophyIconBaseMapTable::rank_256_21_3271E31C4D42FE6F91C84EADF44EF7AB' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, rank_empty_24_389CCF0F449226A0E0A313B3DBE1A1FC) == 0x0001E0, "Member 'FLeagueTrophyIconBaseMapTable::rank_empty_24_389CCF0F449226A0E0A313B3DBE1A1FC' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, Delivery_26_81E8AFB24F31272A823EAB8385BA1CB5) == 0x000210, "Member 'FLeagueTrophyIconBaseMapTable::Delivery_26_81E8AFB24F31272A823EAB8385BA1CB5' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, BaseComment_29_2EC864EF42E91EAAE2241E8B8604C644) == 0x000218, "Member 'FLeagueTrophyIconBaseMapTable::BaseComment_29_2EC864EF42E91EAAE2241E8B8604C644' has a wrong offset!");
-static_assert(offsetof(FLeagueTrophyIconBaseMapTable, SeasonOpiton_34_E1E6FF514A7C18E4D09086B86AD5FE5F) == 0x000228, "Member 'FLeagueTrophyIconBaseMapTable::SeasonOpiton_34_E1E6FF514A7C18E4D09086B86AD5FE5F' has a wrong offset!");
+DUMPER7_ASSERTS_FLeagueTrophyIconBaseMapTable;
 
 }
 

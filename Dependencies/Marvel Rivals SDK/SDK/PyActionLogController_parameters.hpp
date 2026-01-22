@@ -23,9 +23,7 @@ struct PyActionLogController_OnPlayerLogoutPause final
 public:
 	int32                                         player_uid;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogController_OnPlayerLogoutPause) == 0x000004, "Wrong alignment on PyActionLogController_OnPlayerLogoutPause");
-static_assert(sizeof(PyActionLogController_OnPlayerLogoutPause) == 0x000004, "Wrong size on PyActionLogController_OnPlayerLogoutPause");
-static_assert(offsetof(PyActionLogController_OnPlayerLogoutPause, player_uid) == 0x000000, "Member 'PyActionLogController_OnPlayerLogoutPause::player_uid' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogController_OnPlayerLogoutPause;
 
 // PythonFunction PyActionLogController.PyActionLogController.OnPointActive
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	int32                                         player_uid;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         point_id;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogController_OnPointActive) == 0x000004, "Wrong alignment on PyActionLogController_OnPointActive");
-static_assert(sizeof(PyActionLogController_OnPointActive) == 0x000008, "Wrong size on PyActionLogController_OnPointActive");
-static_assert(offsetof(PyActionLogController_OnPointActive, player_uid) == 0x000000, "Member 'PyActionLogController_OnPointActive::player_uid' has a wrong offset!");
-static_assert(offsetof(PyActionLogController_OnPointActive, point_id) == 0x000004, "Member 'PyActionLogController_OnPointActive::point_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogController_OnPointActive;
 
 // PythonFunction PyActionLogController.PyActionLogController.OnPartNameChange
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +42,7 @@ struct PyActionLogController_OnPartNameChange final
 public:
 	class FString                                 current_part_name;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogController_OnPartNameChange) == 0x000008, "Wrong alignment on PyActionLogController_OnPartNameChange");
-static_assert(sizeof(PyActionLogController_OnPartNameChange) == 0x000010, "Wrong size on PyActionLogController_OnPartNameChange");
-static_assert(offsetof(PyActionLogController_OnPartNameChange, current_part_name) == 0x000000, "Member 'PyActionLogController_OnPartNameChange::current_part_name' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogController_OnPartNameChange;
 
 // PythonFunction PyActionLogController.PyActionLogController.OnMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyActionLogController_OnMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogController_OnMatchStateChanged) == 0x000001, "Wrong alignment on PyActionLogController_OnMatchStateChanged");
-static_assert(sizeof(PyActionLogController_OnMatchStateChanged) == 0x000001, "Wrong size on PyActionLogController_OnMatchStateChanged");
-static_assert(offsetof(PyActionLogController_OnMatchStateChanged, MatchState) == 0x000000, "Member 'PyActionLogController_OnMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogController_OnMatchStateChanged;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItemBase">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItemBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItemBase")
 	}
 	static class UPyExtension_ShowItemBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItemBase>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItemBase) == 0x000008, "Wrong alignment on UPyExtension_ShowItemBase");
-static_assert(sizeof(UPyExtension_ShowItemBase) == 0x000030, "Wrong size on UPyExtension_ShowItemBase");
+DUMPER7_ASSERTS_UPyExtension_ShowItemBase;
 
 }
 

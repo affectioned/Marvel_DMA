@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelHiddenManager">();
+		STATIC_CLASS_IMPL("PyLevelHiddenManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelHiddenManager")
 	}
 	static class APyLevelHiddenManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelHiddenManager>();
 	}
 };
-static_assert(alignof(APyLevelHiddenManager) == 0x000010, "Wrong alignment on APyLevelHiddenManager");
-static_assert(sizeof(APyLevelHiddenManager) == 0x0006F0, "Wrong size on APyLevelHiddenManager");
-static_assert(offsetof(APyLevelHiddenManager, HiddenActorList) == 0x0006E0, "Member 'APyLevelHiddenManager::HiddenActorList' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelHiddenManager;
 
 }
 

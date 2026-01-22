@@ -60,35 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_HeroDetail">();
+		STATIC_CLASS_IMPL("PyLevelController_HeroDetail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_HeroDetail")
 	}
 	static class APyLevelController_HeroDetail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_HeroDetail>();
 	}
 };
-static_assert(alignof(APyLevelController_HeroDetail) == 0x000010, "Wrong alignment on APyLevelController_HeroDetail");
-static_assert(sizeof(APyLevelController_HeroDetail) == 0x000AC0, "Wrong size on APyLevelController_HeroDetail");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_LevelBGFadeIn) == 0x0006E0, "Member 'APyLevelController_HeroDetail::LS_LevelBGFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_LevelBGLoop) == 0x000760, "Member 'APyLevelController_HeroDetail::LS_LevelBGLoop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, Audio_LevelBGLoop) == 0x0007E0, "Member 'APyLevelController_HeroDetail::Audio_LevelBGLoop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, IsCommonLevel) == 0x0007E8, "Member 'APyLevelController_HeroDetail::IsCommonLevel' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, IsUseNsSmoke) == 0x0007E9, "Member 'APyLevelController_HeroDetail::IsUseNsSmoke' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LevelBGType) == 0x0007EA, "Member 'APyLevelController_HeroDetail::LevelBGType' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LobbyCommonBGMaterial) == 0x0007F0, "Member 'APyLevelController_HeroDetail::LobbyCommonBGMaterial' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_LevelBGSwitchEffect) == 0x0007F8, "Member 'APyLevelController_HeroDetail::LS_LevelBGSwitchEffect' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_CommonBGFadeIn) == 0x000878, "Member 'APyLevelController_HeroDetail::LS_CommonBGFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_CommonBGFadeOut) == 0x0008F8, "Member 'APyLevelController_HeroDetail::LS_CommonBGFadeOut' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_HeroHalf) == 0x000978, "Member 'APyLevelController_HeroDetail::LS_HeroHalf' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, LS_ItemHalf) == 0x0009F8, "Member 'APyLevelController_HeroDetail::LS_ItemHalf' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, NS_HD_Smoke) == 0x000A78, "Member 'APyLevelController_HeroDetail::NS_HD_Smoke' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, NS_Backdrop) == 0x000A80, "Member 'APyLevelController_HeroDetail::NS_Backdrop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, PostProcess_HeroDetail) == 0x000A88, "Member 'APyLevelController_HeroDetail::PostProcess_HeroDetail' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, PostProcess_HeroList) == 0x000A90, "Member 'APyLevelController_HeroDetail::PostProcess_HeroList' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, MPC_Background) == 0x000A98, "Member 'APyLevelController_HeroDetail::MPC_Background' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, MPC_UIParameterCollection) == 0x000AA0, "Member 'APyLevelController_HeroDetail::MPC_UIParameterCollection' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, MPC_CameMove) == 0x000AA8, "Member 'APyLevelController_HeroDetail::MPC_CameMove' has a wrong offset!");
-static_assert(offsetof(APyLevelController_HeroDetail, MI_Hide) == 0x000AB0, "Member 'APyLevelController_HeroDetail::MI_Hide' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_HeroDetail;
 
 }
 

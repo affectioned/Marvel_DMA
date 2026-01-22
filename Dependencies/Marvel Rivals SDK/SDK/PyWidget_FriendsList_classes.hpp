@@ -21,21 +21,21 @@ namespace SDK
 {
 
 // PythonClass PyWidget_FriendsList.PyWidget_Friends_List
-// 0x00A0 (0x0660 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_Friends_List final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayTime;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   TitleText;                                         // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   FriendTitleText;                                   // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   FactionTitleText;                                  // 0x05F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   ClashFactionTitleText;                             // 0x0608(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   SearchTitleText;                                   // 0x0620(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   SearchNullText;                                    // 0x0638(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         FactionLoopTime;                                   // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FactionUpdateCdTime;                               // 0x0654(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFriendPanelListType                          FriendsListType;                                   // 0x0658(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayTime;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   TitleText;                                         // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   FriendTitleText;                                   // 0x05E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   FactionTitleText;                                  // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   ClashFactionTitleText;                             // 0x0610(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   SearchTitleText;                                   // 0x0628(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   SearchNullText;                                    // 0x0640(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         FactionLoopTime;                                   // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FactionUpdateCdTime;                               // 0x065C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFriendPanelListType                          FriendsListType;                                   // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,33 +47,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Friends_List">();
+		STATIC_CLASS_IMPL("PyWidget_Friends_List")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Friends_List")
 	}
 	static class UPyWidget_Friends_List* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Friends_List>();
 	}
 };
-static_assert(alignof(UPyWidget_Friends_List) == 0x000008, "Wrong alignment on UPyWidget_Friends_List");
-static_assert(sizeof(UPyWidget_Friends_List) == 0x000660, "Wrong size on UPyWidget_Friends_List");
-static_assert(offsetof(UPyWidget_Friends_List, DelayTime) == 0x0005BC, "Member 'UPyWidget_Friends_List::DelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, TitleText) == 0x0005C0, "Member 'UPyWidget_Friends_List::TitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, FriendTitleText) == 0x0005D8, "Member 'UPyWidget_Friends_List::FriendTitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, FactionTitleText) == 0x0005F0, "Member 'UPyWidget_Friends_List::FactionTitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, ClashFactionTitleText) == 0x000608, "Member 'UPyWidget_Friends_List::ClashFactionTitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, SearchTitleText) == 0x000620, "Member 'UPyWidget_Friends_List::SearchTitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, SearchNullText) == 0x000638, "Member 'UPyWidget_Friends_List::SearchNullText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, FactionLoopTime) == 0x000650, "Member 'UPyWidget_Friends_List::FactionLoopTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, FactionUpdateCdTime) == 0x000654, "Member 'UPyWidget_Friends_List::FactionUpdateCdTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_List, FriendsListType) == 0x000658, "Member 'UPyWidget_Friends_List::FriendsListType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Friends_List;
 
 // PythonClass PyWidget_FriendsList.PyWidget_Friends_ListTitle
-// 0x0028 (0x0750 - 0x0728)
+// 0x0028 (0x07A8 - 0x0780)
 class UPyWidget_Friends_ListTitle final : public UPyWidget_Button
 {
 public:
-	struct FSlateColor                            NormalColor;                                       // 0x0728(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HoveredColor;                                      // 0x073C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x0780(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HoveredColor;                                      // 0x0794(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void SetIsHover(bool IsHover_0);
@@ -81,29 +74,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Friends_ListTitle">();
+		STATIC_CLASS_IMPL("PyWidget_Friends_ListTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Friends_ListTitle")
 	}
 	static class UPyWidget_Friends_ListTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Friends_ListTitle>();
 	}
 };
-static_assert(alignof(UPyWidget_Friends_ListTitle) == 0x000008, "Wrong alignment on UPyWidget_Friends_ListTitle");
-static_assert(sizeof(UPyWidget_Friends_ListTitle) == 0x000750, "Wrong size on UPyWidget_Friends_ListTitle");
-static_assert(offsetof(UPyWidget_Friends_ListTitle, NormalColor) == 0x000728, "Member 'UPyWidget_Friends_ListTitle::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Friends_ListTitle, HoveredColor) == 0x00073C, "Member 'UPyWidget_Friends_ListTitle::HoveredColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Friends_ListTitle;
 
 // PythonClass PyWidget_FriendsList.PyWidget_FriendsItemBtn
-// 0x0360 (0x0C20 - 0x08C0)
+// 0x0360 (0x0C80 - 0x0920)
 class UPyWidget_FriendsItemBtn final : public UPyWidget_BaseCommonButton
 {
 public:
-	uint8                                         Pad_8B8[0x8];                                      // 0x08B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            NormalIcon;                                        // 0x08C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            HoverIcon;                                         // 0x0990(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            PresslIcon;                                        // 0x0A60(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DisablelIcon;                                      // 0x0B30(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   HoverTipsText;                                     // 0x0C00(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_918[0x8];                                      // 0x0918(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            NormalIcon;                                        // 0x0920(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            HoverIcon;                                         // 0x09F0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PresslIcon;                                        // 0x0AC0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DisablelIcon;                                      // 0x0B90(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   HoverTipsText;                                     // 0x0C60(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -113,20 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendsItemBtn">();
+		STATIC_CLASS_IMPL("PyWidget_FriendsItemBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendsItemBtn")
 	}
 	static class UPyWidget_FriendsItemBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendsItemBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendsItemBtn) == 0x000010, "Wrong alignment on UPyWidget_FriendsItemBtn");
-static_assert(sizeof(UPyWidget_FriendsItemBtn) == 0x000C20, "Wrong size on UPyWidget_FriendsItemBtn");
-static_assert(offsetof(UPyWidget_FriendsItemBtn, NormalIcon) == 0x0008C0, "Member 'UPyWidget_FriendsItemBtn::NormalIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsItemBtn, HoverIcon) == 0x000990, "Member 'UPyWidget_FriendsItemBtn::HoverIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsItemBtn, PresslIcon) == 0x000A60, "Member 'UPyWidget_FriendsItemBtn::PresslIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsItemBtn, DisablelIcon) == 0x000B30, "Member 'UPyWidget_FriendsItemBtn::DisablelIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsItemBtn, HoverTipsText) == 0x000C00, "Member 'UPyWidget_FriendsItemBtn::HoverTipsText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_FriendsItemBtn;
 
 }
 

@@ -23,15 +23,18 @@ class UAISelectTargetLogic_RunEQS_ReccoonE_BP_C final : public UAISelectTargetLo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTargetLogic_RunEQS_ReccoonE_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTargetLogic_RunEQS_ReccoonE_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTargetLogic_RunEQS_ReccoonE_BP_C")
 	}
 	static class UAISelectTargetLogic_RunEQS_ReccoonE_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTargetLogic_RunEQS_ReccoonE_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTargetLogic_RunEQS_ReccoonE_BP_C) == 0x000008, "Wrong alignment on UAISelectTargetLogic_RunEQS_ReccoonE_BP_C");
-static_assert(sizeof(UAISelectTargetLogic_RunEQS_ReccoonE_BP_C) == 0x0000B8, "Wrong size on UAISelectTargetLogic_RunEQS_ReccoonE_BP_C");
+DUMPER7_ASSERTS_UAISelectTargetLogic_RunEQS_ReccoonE_BP_C;
 
 }
 

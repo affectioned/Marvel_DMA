@@ -26,14 +26,7 @@ public:
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BP_GetCurrentValue_ReturnValue;           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue) == 0x000008, "Wrong alignment on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue");
-static_assert(sizeof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue) == 0x0000C0, "Wrong size on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, Object) == 0x000000, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::Object' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, SettingKey) == 0x000008, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::SettingKey' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, Params_0) == 0x000018, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::Params_0' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, Options) == 0x000068, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::Options' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue, CallFunc_BP_GetCurrentValue_ReturnValue) == 0x0000BC, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue::CallFunc_BP_GetCurrentValue_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_GetCurrentValue;
 
 // Function PS4_UISettingEntryGraphicSettingHandlerBP.PS4_UISettingEntryGraphicSettingHandlerBP_C.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -46,13 +39,7 @@ public:
 	TMap<int32, class FText>                      Options;                                           // 0x0068(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	float                                         Value;                                             // 0x00B8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply) == 0x000008, "Wrong alignment on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply");
-static_assert(sizeof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply) == 0x0000C0, "Wrong size on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply, Object) == 0x000000, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply::Object' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply, SettingKey) == 0x000008, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply::SettingKey' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply, Params_0) == 0x000018, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply::Params_0' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply, Options) == 0x000068, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply::Options' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply, Value) == 0x0000B8, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnApply;
 
 // Function PS4_UISettingEntryGraphicSettingHandlerBP.PS4_UISettingEntryGraphicSettingHandlerBP_C.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -68,15 +55,7 @@ public:
 	TMap<class FString, int32>                    CurrentTags;                                       // 0x00C0(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged) == 0x000008, "Wrong alignment on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged");
-static_assert(sizeof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged) == 0x000160, "Wrong size on PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, Object) == 0x000000, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::Object' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, SettingKey) == 0x000008, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::SettingKey' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, Params_0) == 0x000018, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::Params_0' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, Options) == 0x000068, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::Options' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, Value) == 0x0000B8, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::Value' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, CurrentTags) == 0x0000C0, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::CurrentTags' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged, ReturnValue) == 0x000110, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PS4_UISettingEntryGraphicSettingHandlerBP_C_BP_OnChanged;
 
 // Function PS4_UISettingEntryGraphicSettingHandlerBP.PS4_UISettingEntryGraphicSettingHandlerBP_C.ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP
 // 0x0120 (0x0120 - 0x0000)
@@ -111,32 +90,7 @@ public:
 	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP) == 0x000008, "Wrong alignment on PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP");
-static_assert(sizeof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP) == 0x000120, "Wrong size on PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, EntryPoint) == 0x000000, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_GetMarvelGameUserSettings_ReturnValue) == 0x000008, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_GetMarvelGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_GetGameUserSettings_ReturnValue) == 0x000010, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item) == 0x000018, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_1) == 0x00001C, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_2) == 0x000028, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_3) == 0x00002C, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_4) == 0x000030, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_5) == 0x000034, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_6) == 0x000038, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_7) == 0x00003C, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_8) == 0x000040, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_9) == 0x000044, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_9' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_Event_Object) == 0x000048, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_Event_SettingKey) == 0x000050, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_Event_SettingKey' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_Event_Params) == 0x000060, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_Event_Params' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_Event_Options) == 0x0000B0, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_Event_Options' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_Event_Value) == 0x000100, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_Array_Get_Item_10) == 0x000104, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_Array_Get_Item_10' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_FTrunc_ReturnValue) == 0x000108, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, K2Node_SwitchInteger_CmpSuccess) == 0x00010C, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_SetFrameRateLimit_NewLimit_ImplicitCast) == 0x000110, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_SetFrameRateLimit_NewLimit_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP, CallFunc_FTrunc_A_ImplicitCast) == 0x000118, "Member 'PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PS4_UISettingEntryGraphicSettingHandlerBP_C_ExecuteUbergraph_PS4_UISettingEntryGraphicSettingHandlerBP;
 
 }
 

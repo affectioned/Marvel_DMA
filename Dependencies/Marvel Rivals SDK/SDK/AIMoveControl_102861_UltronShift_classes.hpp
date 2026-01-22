@@ -23,15 +23,18 @@ class UAIMoveControl_102861_UltronShift_C final : public UAIAbilityMoveControlLo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_102861_UltronShift_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_102861_UltronShift_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_102861_UltronShift_C")
 	}
 	static class UAIMoveControl_102861_UltronShift_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_102861_UltronShift_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_102861_UltronShift_C) == 0x000008, "Wrong alignment on UAIMoveControl_102861_UltronShift_C");
-static_assert(sizeof(UAIMoveControl_102861_UltronShift_C) == 0x0000B8, "Wrong size on UAIMoveControl_102861_UltronShift_C");
+DUMPER7_ASSERTS_UAIMoveControl_102861_UltronShift_C;
 
 }
 

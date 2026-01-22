@@ -29,20 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103613">();
+		STATIC_CLASS_IMPL("PyConfig_103613")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103613")
 	}
 	static class UPyConfig_103613* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103613>();
 	}
 };
-static_assert(alignof(UPyConfig_103613) == 0x000008, "Wrong alignment on UPyConfig_103613");
-static_assert(sizeof(UPyConfig_103613) == 0x0000C0, "Wrong size on UPyConfig_103613");
-static_assert(offsetof(UPyConfig_103613, RCDs) == 0x000098, "Member 'UPyConfig_103613::RCDs' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103613, LaunchVelocity) == 0x0000A8, "Member 'UPyConfig_103613::LaunchVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103613;
 
 // PythonClass PyAbility_103613.PyAbility_103613
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103613 : public UAbility_108
 {
 public:
@@ -62,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103613">();
+		STATIC_CLASS_IMPL("PyAbility_103613")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103613")
 	}
 	static class UPyAbility_103613* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103613>();
 	}
 };
-static_assert(alignof(UPyAbility_103613) == 0x000008, "Wrong alignment on UPyAbility_103613");
-static_assert(sizeof(UPyAbility_103613) == 0x0029F8, "Wrong size on UPyAbility_103613");
+DUMPER7_ASSERTS_UPyAbility_103613;
 
 }
 

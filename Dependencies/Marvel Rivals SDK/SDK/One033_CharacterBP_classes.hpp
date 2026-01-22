@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1033_CharacterBP.1033_CharacterBP_C
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class AOne033_CharacterBP_C final : public APyBlackWidowCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1033_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1033_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1033_CharacterBP_C")
 	}
 	static class AOne033_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne033_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne033_CharacterBP_C) == 0x000010, "Wrong alignment on AOne033_CharacterBP_C");
-static_assert(sizeof(AOne033_CharacterBP_C) == 0x002220, "Wrong size on AOne033_CharacterBP_C");
+DUMPER7_ASSERTS_AOne033_CharacterBP_C;
 
 }
 

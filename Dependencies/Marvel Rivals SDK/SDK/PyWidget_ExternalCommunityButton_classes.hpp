@@ -19,18 +19,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ExternalCommunityButton.PyWidget_ExternalCommunityButton
-// 0x0148 (0x0870 - 0x0728)
+// 0x0140 (0x08C0 - 0x0780)
 class UPyWidget_ExternalCommunityButton final : public UPyWidget_Button
 {
 public:
-	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            TabIcon;                                           // 0x0730(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	class FString                                 TabName;                                           // 0x0800(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           IconDeepColor;                                     // 0x0810(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NameDeepColor;                                     // 0x0820(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgDeepColor;                                       // 0x0834(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x0844(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& TabName)> OnTabSelected;                      // 0x0858(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TabIcon;                                           // 0x0780(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	class FString                                 TabName;                                           // 0x0850(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IconDeepColor;                                     // 0x0860(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NameDeepColor;                                     // 0x0870(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgDeepColor;                                       // 0x0884(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x0894(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& TabName)> OnTabSelected;                      // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -38,22 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ExternalCommunityButton">();
+		STATIC_CLASS_IMPL("PyWidget_ExternalCommunityButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ExternalCommunityButton")
 	}
 	static class UPyWidget_ExternalCommunityButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ExternalCommunityButton>();
 	}
 };
-static_assert(alignof(UPyWidget_ExternalCommunityButton) == 0x000010, "Wrong alignment on UPyWidget_ExternalCommunityButton");
-static_assert(sizeof(UPyWidget_ExternalCommunityButton) == 0x000870, "Wrong size on UPyWidget_ExternalCommunityButton");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, TabIcon) == 0x000730, "Member 'UPyWidget_ExternalCommunityButton::TabIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, TabName) == 0x000800, "Member 'UPyWidget_ExternalCommunityButton::TabName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, IconDeepColor) == 0x000810, "Member 'UPyWidget_ExternalCommunityButton::IconDeepColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, NameDeepColor) == 0x000820, "Member 'UPyWidget_ExternalCommunityButton::NameDeepColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, BgDeepColor) == 0x000834, "Member 'UPyWidget_ExternalCommunityButton::BgDeepColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, WhiteSlateColor) == 0x000844, "Member 'UPyWidget_ExternalCommunityButton::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ExternalCommunityButton, OnTabSelected) == 0x000858, "Member 'UPyWidget_ExternalCommunityButton::OnTabSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ExternalCommunityButton;
 
 }
 

@@ -30,21 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102961">();
+		STATIC_CLASS_IMPL("PyConfig_102961")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102961")
 	}
 	static class UPyConfig_102961* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102961>();
 	}
 };
-static_assert(alignof(UPyConfig_102961) == 0x000008, "Wrong alignment on UPyConfig_102961");
-static_assert(sizeof(UPyConfig_102961) == 0x0000C0, "Wrong size on UPyConfig_102961");
-static_assert(offsetof(UPyConfig_102961, SummonedID) == 0x000098, "Member 'UPyConfig_102961::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102961, SpawnOffset) == 0x0000A0, "Member 'UPyConfig_102961::SpawnOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102961, SphereRadius) == 0x0000B8, "Member 'UPyConfig_102961::SphereRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102961;
 
 // PythonClass PyAbility_102961.PyAbility_102961
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102961 : public UAbility_108
 {
 public:
@@ -55,24 +55,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102961">();
+		STATIC_CLASS_IMPL("PyAbility_102961")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102961")
 	}
 	static class UPyAbility_102961* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102961>();
 	}
 };
-static_assert(alignof(UPyAbility_102961) == 0x000008, "Wrong alignment on UPyAbility_102961");
-static_assert(sizeof(UPyAbility_102961) == 0x0029F8, "Wrong size on UPyAbility_102961");
+DUMPER7_ASSERTS_UPyAbility_102961;
 
 // PythonClass PyAbility_102961.PyCue_Summoner_Loop_10296101
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_Summoner_Loop_10296101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           MTAppearLoop;                                      // 0x1200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimMontage*                           MTDisappear;                                       // 0x1208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           MTAppearLoop;                                      // 0x1260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           MTDisappear;                                       // 0x1268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -81,17 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10296101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10296101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10296101")
 	}
 	static class APyCue_Summoner_Loop_10296101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10296101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10296101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10296101");
-static_assert(sizeof(APyCue_Summoner_Loop_10296101) == 0x001210, "Wrong size on APyCue_Summoner_Loop_10296101");
-static_assert(offsetof(APyCue_Summoner_Loop_10296101, MTAppearLoop) == 0x001200, "Member 'APyCue_Summoner_Loop_10296101::MTAppearLoop' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10296101, MTDisappear) == 0x001208, "Member 'APyCue_Summoner_Loop_10296101::MTDisappear' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10296101;
 
 }
 

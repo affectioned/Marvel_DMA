@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103511.PyCue_Scope_HitImpact_10351101
-// 0x0028 (0x08A0 - 0x0878)
+// 0x0028 (0x08E0 - 0x08B8)
 class UPyCue_Scope_HitImpact_10351101 final : public UMarvelCueNotify_MeleeHitImpact
 {
 public:
-	TArray<int32>                                 ComboHitAudioID;                                   // 0x0878(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<ECommonHitAudioType>                   ComboHitAudioType;                                 // 0x0888(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         AbilityID;                                         // 0x0898(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ComboHitAudioID;                                   // 0x08B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<ECommonHitAudioType>                   ComboHitAudioType;                                 // 0x08C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x08D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10351101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10351101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10351101")
 	}
 	static class UPyCue_Scope_HitImpact_10351101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10351101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10351101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10351101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10351101) == 0x0008A0, "Wrong size on UPyCue_Scope_HitImpact_10351101");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10351101, ComboHitAudioID) == 0x000878, "Member 'UPyCue_Scope_HitImpact_10351101::ComboHitAudioID' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10351101, ComboHitAudioType) == 0x000888, "Member 'UPyCue_Scope_HitImpact_10351101::ComboHitAudioType' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10351101, AbilityID) == 0x000898, "Member 'UPyCue_Scope_HitImpact_10351101::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10351101;
 
 }
 

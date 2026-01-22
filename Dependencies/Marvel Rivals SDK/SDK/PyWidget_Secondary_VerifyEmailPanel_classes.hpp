@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_VerifyEmailPanel.PyWidget_Secondary_VerifyEmailPanel
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_Secondary_VerifyEmailPanel final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputTips                             WrongTip_EmailAddressInCorrect;                    // 0x05C0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTip_EmailAddressInConsistent;                 // 0x05E0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTip_NoneCaptchaCode;                          // 0x0600(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTip_CaptchaCodeInCorrect;                     // 0x0620(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FInputTips                             WrongTip_EmailAddressInCorrect;                    // 0x05C8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTip_EmailAddressInConsistent;                 // 0x05E8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTip_NoneCaptchaCode;                          // 0x0608(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTip_CaptchaCodeInCorrect;                     // 0x0628(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_VerifyEmailPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_VerifyEmailPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_VerifyEmailPanel")
 	}
 	static class UPyWidget_Secondary_VerifyEmailPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_VerifyEmailPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_VerifyEmailPanel) == 0x000008, "Wrong alignment on UPyWidget_Secondary_VerifyEmailPanel");
-static_assert(sizeof(UPyWidget_Secondary_VerifyEmailPanel) == 0x000640, "Wrong size on UPyWidget_Secondary_VerifyEmailPanel");
-static_assert(offsetof(UPyWidget_Secondary_VerifyEmailPanel, WrongTip_EmailAddressInCorrect) == 0x0005C0, "Member 'UPyWidget_Secondary_VerifyEmailPanel::WrongTip_EmailAddressInCorrect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_VerifyEmailPanel, WrongTip_EmailAddressInConsistent) == 0x0005E0, "Member 'UPyWidget_Secondary_VerifyEmailPanel::WrongTip_EmailAddressInConsistent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_VerifyEmailPanel, WrongTip_NoneCaptchaCode) == 0x000600, "Member 'UPyWidget_Secondary_VerifyEmailPanel::WrongTip_NoneCaptchaCode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_VerifyEmailPanel, WrongTip_CaptchaCodeInCorrect) == 0x000620, "Member 'UPyWidget_Secondary_VerifyEmailPanel::WrongTip_CaptchaCodeInCorrect' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_VerifyEmailPanel;
 
 }
 

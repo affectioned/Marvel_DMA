@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindStaticLevelActor">();
+		STATIC_CLASS_IMPL("BTT_PyFindStaticLevelActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindStaticLevelActor")
 	}
 	static class UBTT_PyFindStaticLevelActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindStaticLevelActor>();
 	}
 };
-static_assert(alignof(UBTT_PyFindStaticLevelActor) == 0x000008, "Wrong alignment on UBTT_PyFindStaticLevelActor");
-static_assert(sizeof(UBTT_PyFindStaticLevelActor) == 0x000178, "Wrong size on UBTT_PyFindStaticLevelActor");
-static_assert(offsetof(UBTT_PyFindStaticLevelActor, ActorClass) == 0x000158, "Member 'UBTT_PyFindStaticLevelActor::ActorClass' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindStaticLevelActor, NeedHasSpecificTag) == 0x000160, "Member 'UBTT_PyFindStaticLevelActor::NeedHasSpecificTag' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindStaticLevelActor, Tag) == 0x000168, "Member 'UBTT_PyFindStaticLevelActor::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindStaticLevelActor;
 
 }
 

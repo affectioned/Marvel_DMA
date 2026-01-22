@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityPreActionBase">();
+		STATIC_CLASS_IMPL("PyAbilityPreActionBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityPreActionBase")
 	}
 	static class UPyAbilityPreActionBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityPreActionBase>();
 	}
 };
-static_assert(alignof(UPyAbilityPreActionBase) == 0x000008, "Wrong alignment on UPyAbilityPreActionBase");
-static_assert(sizeof(UPyAbilityPreActionBase) == 0x000030, "Wrong size on UPyAbilityPreActionBase");
+DUMPER7_ASSERTS_UPyAbilityPreActionBase;
 
 // PythonClass ability_pre_actions.PyPreAction_SetWeaponActionName
 // 0x0010 (0x0040 - 0x0030)
@@ -49,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPreAction_SetWeaponActionName">();
+		STATIC_CLASS_IMPL("PyPreAction_SetWeaponActionName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPreAction_SetWeaponActionName")
 	}
 	static class UPyPreAction_SetWeaponActionName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPreAction_SetWeaponActionName>();
 	}
 };
-static_assert(alignof(UPyPreAction_SetWeaponActionName) == 0x000008, "Wrong alignment on UPyPreAction_SetWeaponActionName");
-static_assert(sizeof(UPyPreAction_SetWeaponActionName) == 0x000040, "Wrong size on UPyPreAction_SetWeaponActionName");
-static_assert(offsetof(UPyPreAction_SetWeaponActionName, WeaponActionName) == 0x000030, "Member 'UPyPreAction_SetWeaponActionName::WeaponActionName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPreAction_SetWeaponActionName;
 
 }
 

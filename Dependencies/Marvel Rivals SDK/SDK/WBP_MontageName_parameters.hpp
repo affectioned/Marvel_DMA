@@ -32,16 +32,7 @@ public:
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName) == 0x000008, "Wrong alignment on WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName");
-static_assert(sizeof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName) == 0x000078, "Wrong size on WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, EntryPoint) == 0x000000, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, CallFunc_IsEmpty_ReturnValue) == 0x000018, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, K2Node_Event_MyGeometry) == 0x000038, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, K2Node_Event_InDeltaTime) == 0x000070, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000074, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000075, "Member 'WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MontageName_C_ExecuteUbergraph_WBP_MontageName;
 
 // Function WBP_MontageName.WBP_MontageName_C.Get_EventName_Text
 // 0x0030 (0x0030 - 0x0000)
@@ -51,10 +42,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(WBP_MontageName_C_Get_EventName_Text) == 0x000008, "Wrong alignment on WBP_MontageName_C_Get_EventName_Text");
-static_assert(sizeof(WBP_MontageName_C_Get_EventName_Text) == 0x000030, "Wrong size on WBP_MontageName_C_Get_EventName_Text");
-static_assert(offsetof(WBP_MontageName_C_Get_EventName_Text, ReturnValue) == 0x000000, "Member 'WBP_MontageName_C_Get_EventName_Text::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_Get_EventName_Text, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'WBP_MontageName_C_Get_EventName_Text::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MontageName_C_Get_EventName_Text;
 
 // Function WBP_MontageName.WBP_MontageName_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -64,10 +52,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MontageName_C_Tick) == 0x000004, "Wrong alignment on WBP_MontageName_C_Tick");
-static_assert(sizeof(WBP_MontageName_C_Tick) == 0x00003C, "Wrong size on WBP_MontageName_C_Tick");
-static_assert(offsetof(WBP_MontageName_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_MontageName_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MontageName_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_MontageName_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_MontageName_C_Tick;
 
 }
 

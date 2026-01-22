@@ -17,52 +17,55 @@
 namespace SDK
 {
 
-// PythonClass PyAbility_105542.PyUIController_105542
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_105542 final : public UUIC_Ability
+// PythonClass PyAbility_105542.PyEffectiveComponent_10554201
+// 0x0000 (0x2040 - 0x2040)
+class UPyEffectiveComponent_10554201 final : public UMarvelAgentEffectiveComponent
 {
 public:
-	void OnInit();
-	void OnDestruct();
+	bool ShouldAccumulateApplyTimes(const TArray<struct FHitResult>& HitResults) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_105542">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10554201")
 	}
-	static class UPyUIController_105542* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyUIController_105542>();
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10554201")
+	}
+	static class UPyEffectiveComponent_10554201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyEffectiveComponent_10554201>();
 	}
 };
-static_assert(alignof(UPyUIController_105542) == 0x000008, "Wrong alignment on UPyUIController_105542");
-static_assert(sizeof(UPyUIController_105542) == 0x000F10, "Wrong size on UPyUIController_105542");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10554201;
 
 // PythonClass PyAbility_105542.PyConfig_105542
-// 0x0C98 (0x0D30 - 0x0098)
+// 0x1008 (0x10A0 - 0x0098)
 class UPyConfig_105542 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMarvelGameplayTagRequirements         DashSatisfyCondition;                              // 0x0C60(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         DashSatisfyCondition;                              // 0x0F80(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105542">();
+		STATIC_CLASS_IMPL("PyConfig_105542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105542")
 	}
 	static class UPyConfig_105542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105542>();
 	}
 };
-static_assert(alignof(UPyConfig_105542) == 0x000008, "Wrong alignment on UPyConfig_105542");
-static_assert(sizeof(UPyConfig_105542) == 0x000D30, "Wrong size on UPyConfig_105542");
-static_assert(offsetof(UPyConfig_105542, DashInfo) == 0x000098, "Member 'UPyConfig_105542::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105542, DashSatisfyCondition) == 0x000C60, "Member 'UPyConfig_105542::DashSatisfyCondition' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105542;
 
 // PythonClass PyAbility_105542.PyAbility_105542
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105542 : public UAbility_108
 {
 public:
@@ -74,15 +77,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105542">();
+		STATIC_CLASS_IMPL("PyAbility_105542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105542")
 	}
 	static class UPyAbility_105542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105542>();
 	}
 };
-static_assert(alignof(UPyAbility_105542) == 0x000008, "Wrong alignment on UPyAbility_105542");
-static_assert(sizeof(UPyAbility_105542) == 0x0029F8, "Wrong size on UPyAbility_105542");
+DUMPER7_ASSERTS_UPyAbility_105542;
+
+// PythonClass PyAbility_105542.PyUIController_105542
+// 0x0000 (0x11F0 - 0x11F0)
+class UPyUIController_105542 final : public UUIC_Ability
+{
+public:
+	void OnInit();
+	void OnDestruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyUIController_105542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_105542")
+	}
+	static class UPyUIController_105542* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyUIController_105542>();
+	}
+};
+DUMPER7_ASSERTS_UPyUIController_105542;
 
 }
 

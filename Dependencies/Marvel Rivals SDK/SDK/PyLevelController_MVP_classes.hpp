@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_MVP">();
+		STATIC_CLASS_IMPL("PyLevelController_MVP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_MVP")
 	}
 	static class APyLevelController_MVP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_MVP>();
 	}
 };
-static_assert(alignof(APyLevelController_MVP) == 0x000010, "Wrong alignment on APyLevelController_MVP");
-static_assert(sizeof(APyLevelController_MVP) == 0x000700, "Wrong size on APyLevelController_MVP");
-static_assert(offsetof(APyLevelController_MVP, MVP_RimLight_RT) == 0x0006E0, "Member 'APyLevelController_MVP::MVP_RimLight_RT' has a wrong offset!");
-static_assert(offsetof(APyLevelController_MVP, MVP_RimLight_RGBSeparate_RT) == 0x0006E8, "Member 'APyLevelController_MVP::MVP_RimLight_RGBSeparate_RT' has a wrong offset!");
-static_assert(offsetof(APyLevelController_MVP, MVP_RimLight_RGBSeparate) == 0x0006F0, "Member 'APyLevelController_MVP::MVP_RimLight_RGBSeparate' has a wrong offset!");
-static_assert(offsetof(APyLevelController_MVP, MPC_MasterSwitch) == 0x0006F8, "Member 'APyLevelController_MVP::MPC_MasterSwitch' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_MVP;
 
 }
 

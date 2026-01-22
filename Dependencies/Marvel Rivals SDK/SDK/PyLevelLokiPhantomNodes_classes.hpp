@@ -48,28 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLokiPhantomManagerComponent">();
+		STATIC_CLASS_IMPL("PyLokiPhantomManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLokiPhantomManagerComponent")
 	}
 	static class UPyLokiPhantomManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLokiPhantomManagerComponent>();
 	}
 };
-static_assert(alignof(UPyLokiPhantomManagerComponent) == 0x000008, "Wrong alignment on UPyLokiPhantomManagerComponent");
-static_assert(sizeof(UPyLokiPhantomManagerComponent) == 0x000160, "Wrong size on UPyLokiPhantomManagerComponent");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, LokiPhantomClass) == 0x000108, "Member 'UPyLokiPhantomManagerComponent::LokiPhantomClass' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, FirstDelayAppearTime) == 0x000110, "Member 'UPyLokiPhantomManagerComponent::FirstDelayAppearTime' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, SecondDelayAppearTime) == 0x000114, "Member 'UPyLokiPhantomManagerComponent::SecondDelayAppearTime' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, UpdateInterval) == 0x000118, "Member 'UPyLokiPhantomManagerComponent::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, MaterialParameterName) == 0x000120, "Member 'UPyLokiPhantomManagerComponent::MaterialParameterName' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, MaterialVisibleValue) == 0x000130, "Member 'UPyLokiPhantomManagerComponent::MaterialVisibleValue' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, MaterialInvisibleValue) == 0x000134, "Member 'UPyLokiPhantomManagerComponent::MaterialInvisibleValue' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, MaterialAppearTime) == 0x000138, "Member 'UPyLokiPhantomManagerComponent::MaterialAppearTime' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, MaterialDisappearTime) == 0x00013C, "Member 'UPyLokiPhantomManagerComponent::MaterialDisappearTime' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, NiagaraParameterName) == 0x000140, "Member 'UPyLokiPhantomManagerComponent::NiagaraParameterName' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, NiagaraVisibleValue) == 0x000150, "Member 'UPyLokiPhantomManagerComponent::NiagaraVisibleValue' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, NiagaraInvisibleValue) == 0x000154, "Member 'UPyLokiPhantomManagerComponent::NiagaraInvisibleValue' has a wrong offset!");
-static_assert(offsetof(UPyLokiPhantomManagerComponent, NiagaraDisappearTime) == 0x000158, "Member 'UPyLokiPhantomManagerComponent::NiagaraDisappearTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLokiPhantomManagerComponent;
 
 // PythonClass PyLevelLokiPhantomNodes.PyLokiPhantom
 // 0x0080 (0x0790 - 0x0710)
@@ -89,21 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLokiPhantom">();
+		STATIC_CLASS_IMPL("PyLokiPhantom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLokiPhantom")
 	}
 	static class APyLokiPhantom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLokiPhantom>();
 	}
 };
-static_assert(alignof(APyLokiPhantom) == 0x000010, "Wrong alignment on APyLokiPhantom");
-static_assert(sizeof(APyLokiPhantom) == 0x000790, "Wrong size on APyLokiPhantom");
-static_assert(offsetof(APyLokiPhantom, Niagara) == 0x000710, "Member 'APyLokiPhantom::Niagara' has a wrong offset!");
-static_assert(offsetof(APyLokiPhantom, AppearAkEvent) == 0x000718, "Member 'APyLokiPhantom::AppearAkEvent' has a wrong offset!");
-static_assert(offsetof(APyLokiPhantom, LoopAkEvent) == 0x000720, "Member 'APyLokiPhantom::LoopAkEvent' has a wrong offset!");
-static_assert(offsetof(APyLokiPhantom, DisappearAkEvent) == 0x000728, "Member 'APyLokiPhantom::DisappearAkEvent' has a wrong offset!");
-static_assert(offsetof(APyLokiPhantom, BasicVoice) == 0x000730, "Member 'APyLokiPhantom::BasicVoice' has a wrong offset!");
-static_assert(offsetof(APyLokiPhantom, SpecialVoice) == 0x000740, "Member 'APyLokiPhantom::SpecialVoice' has a wrong offset!");
+DUMPER7_ASSERTS_APyLokiPhantom;
 
 }
 

@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Team_ClanName_FullName.WBP_Team_ClanName_FullName_C
-// 0x0008 (0x0670 - 0x0668)
+// 0x0008 (0x0678 - 0x0670)
 class UWBP_Team_ClanName_FullName_C final : public UPyWidget_CommonClanName
 {
 public:
-	class UMarvelTextBlock*                       Text_ClanName_FullName;                            // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_ClanName_FullName;                            // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Team_ClanName_FullName_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Team_ClanName_FullName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Team_ClanName_FullName_C")
 	}
 	static class UWBP_Team_ClanName_FullName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Team_ClanName_FullName_C>();
 	}
 };
-static_assert(alignof(UWBP_Team_ClanName_FullName_C) == 0x000008, "Wrong alignment on UWBP_Team_ClanName_FullName_C");
-static_assert(sizeof(UWBP_Team_ClanName_FullName_C) == 0x000670, "Wrong size on UWBP_Team_ClanName_FullName_C");
-static_assert(offsetof(UWBP_Team_ClanName_FullName_C, Text_ClanName_FullName) == 0x000668, "Member 'UWBP_Team_ClanName_FullName_C::Text_ClanName_FullName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Team_ClanName_FullName_C;
 
 }
 

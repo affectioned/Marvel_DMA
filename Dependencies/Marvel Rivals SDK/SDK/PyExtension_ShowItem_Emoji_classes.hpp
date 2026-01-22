@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_Emoji">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_Emoji")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_Emoji")
 	}
 	static class UPyExtension_ShowItem_Emoji* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_Emoji>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_Emoji) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_Emoji");
-static_assert(sizeof(UPyExtension_ShowItem_Emoji) == 0x000030, "Wrong size on UPyExtension_ShowItem_Emoji");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_Emoji;
 
 }
 

@@ -36,6 +36,62 @@ void UPyWidget_HeroSystem_Exclusive_Performance_Item::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item.GetFocusUp
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UPyWidget_HeroSystem_Exclusive_Performance_Item::GetFocusUp(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_Exclusive_Performance_Item", "GetFocusUp");
+
+	Params::PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusUp Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item.GetFocusDown
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UPyWidget_HeroSystem_Exclusive_Performance_Item::GetFocusDown(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_Exclusive_Performance_Item", "GetFocusDown");
+
+	Params::PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusDown Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item_V2.OnMouseEnter
 // (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

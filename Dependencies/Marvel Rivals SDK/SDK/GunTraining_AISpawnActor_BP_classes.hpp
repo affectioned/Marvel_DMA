@@ -17,31 +17,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GunTraining_AISpawnActor_BP.GunTraining_AISpawnActor_BP_C
-// 0x0020 (0x07D0 - 0x07B0)
+// 0x0020 (0x07E0 - 0x07C0)
 class AGunTraining_AISpawnActor_BP_C final : public APyAIGunTrainingSpawnActor
 {
 public:
-	class UAkComponent*                           AK;                                                // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        Arrow;                                             // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Capsule;                                           // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7B1[0x7];                                      // 0x07B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkComponent*                           AK;                                                // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        Arrow;                                             // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Capsule;                                           // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GunTraining_AISpawnActor_BP_C">();
+		BP_STATIC_CLASS_IMPL("GunTraining_AISpawnActor_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GunTraining_AISpawnActor_BP_C")
 	}
 	static class AGunTraining_AISpawnActor_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGunTraining_AISpawnActor_BP_C>();
 	}
 };
-static_assert(alignof(AGunTraining_AISpawnActor_BP_C) == 0x000010, "Wrong alignment on AGunTraining_AISpawnActor_BP_C");
-static_assert(sizeof(AGunTraining_AISpawnActor_BP_C) == 0x0007D0, "Wrong size on AGunTraining_AISpawnActor_BP_C");
-static_assert(offsetof(AGunTraining_AISpawnActor_BP_C, AK) == 0x0007B0, "Member 'AGunTraining_AISpawnActor_BP_C::AK' has a wrong offset!");
-static_assert(offsetof(AGunTraining_AISpawnActor_BP_C, Arrow) == 0x0007B8, "Member 'AGunTraining_AISpawnActor_BP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AGunTraining_AISpawnActor_BP_C, Capsule) == 0x0007C0, "Member 'AGunTraining_AISpawnActor_BP_C::Capsule' has a wrong offset!");
-static_assert(offsetof(AGunTraining_AISpawnActor_BP_C, DefaultSceneRoot) == 0x0007C8, "Member 'AGunTraining_AISpawnActor_BP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AGunTraining_AISpawnActor_BP_C;
 
 }
 

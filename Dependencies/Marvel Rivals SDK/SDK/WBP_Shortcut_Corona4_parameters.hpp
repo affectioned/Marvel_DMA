@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Shortcut_Corona4_C_Tick) == 0x000004, "Wrong alignment on WBP_Shortcut_Corona4_C_Tick");
-static_assert(sizeof(WBP_Shortcut_Corona4_C_Tick) == 0x00003C, "Wrong size on WBP_Shortcut_Corona4_C_Tick");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Shortcut_Corona4_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Shortcut_Corona4_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Shortcut_Corona4_C_Tick;
 
 // Function WBP_Shortcut_Corona4.WBP_Shortcut_Corona4_C.SetCoronaVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	int32                                         InPos;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InVisible;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Shortcut_Corona4_C_SetCoronaVisible) == 0x000004, "Wrong alignment on WBP_Shortcut_Corona4_C_SetCoronaVisible");
-static_assert(sizeof(WBP_Shortcut_Corona4_C_SetCoronaVisible) == 0x000008, "Wrong size on WBP_Shortcut_Corona4_C_SetCoronaVisible");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_SetCoronaVisible, InPos) == 0x000000, "Member 'WBP_Shortcut_Corona4_C_SetCoronaVisible::InPos' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_SetCoronaVisible, InVisible) == 0x000004, "Member 'WBP_Shortcut_Corona4_C_SetCoronaVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Shortcut_Corona4_C_SetCoronaVisible;
 
 // Function WBP_Shortcut_Corona4.WBP_Shortcut_Corona4_C.SetCoronas
 // 0x0010 (0x0010 - 0x0000)
@@ -49,9 +43,7 @@ struct WBP_Shortcut_Corona4_C_SetCoronas final
 public:
 	TArray<int32>                                 InCoronas;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Shortcut_Corona4_C_SetCoronas) == 0x000008, "Wrong alignment on WBP_Shortcut_Corona4_C_SetCoronas");
-static_assert(sizeof(WBP_Shortcut_Corona4_C_SetCoronas) == 0x000010, "Wrong size on WBP_Shortcut_Corona4_C_SetCoronas");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_SetCoronas, InCoronas) == 0x000000, "Member 'WBP_Shortcut_Corona4_C_SetCoronas::InCoronas' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Shortcut_Corona4_C_SetCoronas;
 
 // Function WBP_Shortcut_Corona4.WBP_Shortcut_Corona4_C.ExecuteUbergraph_WBP_Shortcut_Corona4
 // 0x00E8 (0x00E8 - 0x0000)
@@ -96,39 +88,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4) == 0x000008, "Wrong alignment on WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4");
-static_assert(sizeof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4) == 0x0000E8, "Wrong size on WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, EntryPoint) == 0x000000, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_Event_MyGeometry) == 0x000004, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_real_Variable) == 0x000040, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_real_Variable_1) == 0x000048, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_real_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_bool_Variable) == 0x000050, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_int_Array_Index_Variable) == 0x000054, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_int_Array_Index_Variable_1) == 0x000060, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_CustomEvent_InPos) == 0x000064, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_CustomEvent_InPos' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_CustomEvent_InVisible) == 0x000068, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_CustomEvent_InVisible' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_Select_Default) == 0x000070, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000079, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_BooleanAND_ReturnValue) == 0x00007A, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Get_Item) == 0x000080, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000088, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_MakeArray_Array) == 0x000090, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, K2Node_CustomEvent_InCoronas) == 0x0000A0, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::K2Node_CustomEvent_InCoronas' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Get_Item_1) == 0x0000B0, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Get_Item_2) == 0x0000B8, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0000C0, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Length_ReturnValue_1) == 0x0000C8, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Array_Length_ReturnValue_2) == 0x0000CC, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, Temp_int_Loop_Counter_Variable_1) == 0x0000D4, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000D8, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000DC, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000E0, "Member 'WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Shortcut_Corona4_C_ExecuteUbergraph_WBP_Shortcut_Corona4;
 
 }
 

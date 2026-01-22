@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelDataCenter">();
+		STATIC_CLASS_IMPL("PyMarvelDataCenter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelDataCenter")
 	}
 	static class UPyMarvelDataCenter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelDataCenter>();
 	}
 };
-static_assert(alignof(UPyMarvelDataCenter) == 0x000008, "Wrong alignment on UPyMarvelDataCenter");
-static_assert(sizeof(UPyMarvelDataCenter) == 0x000038, "Wrong size on UPyMarvelDataCenter");
+DUMPER7_ASSERTS_UPyMarvelDataCenter;
 
 }
 

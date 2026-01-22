@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleScaleBox">();
+		STATIC_CLASS_IMPL("PyBattleScaleBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleScaleBox")
 	}
 	static class UPyBattleScaleBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleScaleBox>();
 	}
 };
-static_assert(alignof(UPyBattleScaleBox) == 0x000008, "Wrong alignment on UPyBattleScaleBox");
-static_assert(sizeof(UPyBattleScaleBox) == 0x000220, "Wrong size on UPyBattleScaleBox");
+DUMPER7_ASSERTS_UPyBattleScaleBox;
 
 }
 

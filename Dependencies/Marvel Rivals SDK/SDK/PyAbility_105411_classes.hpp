@@ -42,19 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_BuffMarker_10541101">();
+		STATIC_CLASS_IMPL("PyWidget3D_BuffMarker_10541101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_BuffMarker_10541101")
 	}
 	static class UPyWidget3D_BuffMarker_10541101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_BuffMarker_10541101>();
 	}
 };
-static_assert(alignof(UPyWidget3D_BuffMarker_10541101) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMarker_10541101");
-static_assert(sizeof(UPyWidget3D_BuffMarker_10541101) == 0x000890, "Wrong size on UPyWidget3D_BuffMarker_10541101");
-static_assert(offsetof(UPyWidget3D_BuffMarker_10541101, ViewTargetWatcher) == 0x000870, "Member 'UPyWidget3D_BuffMarker_10541101::ViewTargetWatcher' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker_10541101, bVisibleForBuffTarget) == 0x000880, "Member 'UPyWidget3D_BuffMarker_10541101::bVisibleForBuffTarget' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker_10541101, bVisibleForBuffInstigator) == 0x000881, "Member 'UPyWidget3D_BuffMarker_10541101::bVisibleForBuffInstigator' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker_10541101, MPC_Collection) == 0x000888, "Member 'UPyWidget3D_BuffMarker_10541101::MPC_Collection' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_BuffMarker_10541101;
 
 }
 

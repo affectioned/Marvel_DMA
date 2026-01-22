@@ -30,14 +30,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              HeadIcon_27_FFDBFEEB493D71046BDE91BAB9D0F2CF;      // 0x00D8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          IsDarkBg_25_24BF846A40F60E65BC80AA9D4B78CAE1;      // 0x0108(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelNameplateFrame_BP) == 0x000008, "Wrong alignment on FMarvelNameplateFrame_BP");
-static_assert(sizeof(FMarvelNameplateFrame_BP) == 0x000110, "Wrong size on FMarvelNameplateFrame_BP");
-static_assert(offsetof(FMarvelNameplateFrame_BP, Desc_19_AD2E9F8045EAADE70DDC98B3F727EB34) == 0x000000, "Member 'FMarvelNameplateFrame_BP::Desc_19_AD2E9F8045EAADE70DDC98B3F727EB34' has a wrong offset!");
-static_assert(offsetof(FMarvelNameplateFrame_BP, Type_7_73BD80794AA69D13E0F3F290D380CB85) == 0x000010, "Member 'FMarvelNameplateFrame_BP::Type_7_73BD80794AA69D13E0F3F290D380CB85' has a wrong offset!");
-static_assert(offsetof(FMarvelNameplateFrame_BP, Image_26_EB097BE64A0127514BCAE8B95A881B3A) == 0x000018, "Member 'FMarvelNameplateFrame_BP::Image_26_EB097BE64A0127514BCAE8B95A881B3A' has a wrong offset!");
-static_assert(offsetof(FMarvelNameplateFrame_BP, DynamicData_16_E077B2DC486000AB8F1A5A9D99CFB336) == 0x000048, "Member 'FMarvelNameplateFrame_BP::DynamicData_16_E077B2DC486000AB8F1A5A9D99CFB336' has a wrong offset!");
-static_assert(offsetof(FMarvelNameplateFrame_BP, HeadIcon_27_FFDBFEEB493D71046BDE91BAB9D0F2CF) == 0x0000D8, "Member 'FMarvelNameplateFrame_BP::HeadIcon_27_FFDBFEEB493D71046BDE91BAB9D0F2CF' has a wrong offset!");
-static_assert(offsetof(FMarvelNameplateFrame_BP, IsDarkBg_25_24BF846A40F60E65BC80AA9D4B78CAE1) == 0x000108, "Member 'FMarvelNameplateFrame_BP::IsDarkBg_25_24BF846A40F60E65BC80AA9D4B78CAE1' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelNameplateFrame_BP;
 
 }
 

@@ -24,9 +24,7 @@ struct PyWC_Widget_Camp_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Widget_Camp_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWC_Widget_Camp_ShouldBeVisible");
-static_assert(sizeof(PyWC_Widget_Camp_ShouldBeVisible) == 0x000001, "Wrong size on PyWC_Widget_Camp_ShouldBeVisible");
-static_assert(offsetof(PyWC_Widget_Camp_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWC_Widget_Camp_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_ShouldBeVisible;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.SetIsInVision
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWC_Widget_Camp_SetIsInVision final
 public:
 	bool                                          InVision;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Widget_Camp_SetIsInVision) == 0x000001, "Wrong alignment on PyWC_Widget_Camp_SetIsInVision");
-static_assert(sizeof(PyWC_Widget_Camp_SetIsInVision) == 0x000001, "Wrong size on PyWC_Widget_Camp_SetIsInVision");
-static_assert(offsetof(PyWC_Widget_Camp_SetIsInVision, InVision) == 0x000000, "Member 'PyWC_Widget_Camp_SetIsInVision::InVision' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_SetIsInVision;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.SetWcCampVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -46,22 +42,17 @@ struct PyWC_Widget_Camp_SetWcCampVisible final
 public:
 	bool                                          bVisible_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Widget_Camp_SetWcCampVisible) == 0x000001, "Wrong alignment on PyWC_Widget_Camp_SetWcCampVisible");
-static_assert(sizeof(PyWC_Widget_Camp_SetWcCampVisible) == 0x000001, "Wrong size on PyWC_Widget_Camp_SetWcCampVisible");
-static_assert(offsetof(PyWC_Widget_Camp_SetWcCampVisible, bVisible_0) == 0x000000, "Member 'PyWC_Widget_Camp_SetWcCampVisible::bVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_SetWcCampVisible;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.GetSpecificTag
-// 0x0228 (0x0228 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct PyWC_Widget_Camp_GetSpecificTag final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
-	struct FGameplayTag                           ReturnValue;                                       // 0x0218(0x000C)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
+	struct FGameplayTag                           ReturnValue;                                       // 0x0230(0x000C)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Widget_Camp_GetSpecificTag) == 0x000008, "Wrong alignment on PyWC_Widget_Camp_GetSpecificTag");
-static_assert(sizeof(PyWC_Widget_Camp_GetSpecificTag) == 0x000228, "Wrong size on PyWC_Widget_Camp_GetSpecificTag");
-static_assert(offsetof(PyWC_Widget_Camp_GetSpecificTag, Result) == 0x000000, "Member 'PyWC_Widget_Camp_GetSpecificTag::Result' has a wrong offset!");
-static_assert(offsetof(PyWC_Widget_Camp_GetSpecificTag, ReturnValue) == 0x000218, "Member 'PyWC_Widget_Camp_GetSpecificTag::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_GetSpecificTag;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.GetSignalWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -70,31 +61,25 @@ struct PyWC_Widget_Camp_GetSignalWidget final
 public:
 	class UUserWidget*                            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_Widget_Camp_GetSignalWidget) == 0x000008, "Wrong alignment on PyWC_Widget_Camp_GetSignalWidget");
-static_assert(sizeof(PyWC_Widget_Camp_GetSignalWidget) == 0x000008, "Wrong size on PyWC_Widget_Camp_GetSignalWidget");
-static_assert(offsetof(PyWC_Widget_Camp_GetSignalWidget, ReturnValue) == 0x000000, "Member 'PyWC_Widget_Camp_GetSignalWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_GetSignalWidget;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.StartHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWC_Widget_Camp_StartHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWC_Widget_Camp_StartHandlerSignal) == 0x000008, "Wrong alignment on PyWC_Widget_Camp_StartHandlerSignal");
-static_assert(sizeof(PyWC_Widget_Camp_StartHandlerSignal) == 0x000218, "Wrong size on PyWC_Widget_Camp_StartHandlerSignal");
-static_assert(offsetof(PyWC_Widget_Camp_StartHandlerSignal, Result) == 0x000000, "Member 'PyWC_Widget_Camp_StartHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_StartHandlerSignal;
 
 // PythonFunction PyWC_Widget_Camp.PyWC_Widget_Camp.EndHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWC_Widget_Camp_EndHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWC_Widget_Camp_EndHandlerSignal) == 0x000008, "Wrong alignment on PyWC_Widget_Camp_EndHandlerSignal");
-static_assert(sizeof(PyWC_Widget_Camp_EndHandlerSignal) == 0x000218, "Wrong size on PyWC_Widget_Camp_EndHandlerSignal");
-static_assert(offsetof(PyWC_Widget_Camp_EndHandlerSignal, Result) == 0x000000, "Member 'PyWC_Widget_Camp_EndHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_Widget_Camp_EndHandlerSignal;
 
 }
 

@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_BubbleBig_OnCombat_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_BubbleBig_OnCombat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_BubbleBig_OnCombat_C")
 	}
 	static class UWBP_Chat_BubbleBig_OnCombat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_BubbleBig_OnCombat_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_BubbleBig_OnCombat_C) == 0x000010, "Wrong alignment on UWBP_Chat_BubbleBig_OnCombat_C");
-static_assert(sizeof(UWBP_Chat_BubbleBig_OnCombat_C) == 0x0008E0, "Wrong size on UWBP_Chat_BubbleBig_OnCombat_C");
-static_assert(offsetof(UWBP_Chat_BubbleBig_OnCombat_C, Anim_Sequence) == 0x0008C0, "Member 'UWBP_Chat_BubbleBig_OnCombat_C::Anim_Sequence' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_BubbleBig_OnCombat_C, Img_Bg) == 0x0008C8, "Member 'UWBP_Chat_BubbleBig_OnCombat_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_BubbleBig_OnCombat_C, Img_Personal_Icon) == 0x0008D0, "Member 'UWBP_Chat_BubbleBig_OnCombat_C::Img_Personal_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_BubbleBig_OnCombat_C, Img_Vx_Sequence) == 0x0008D8, "Member 'UWBP_Chat_BubbleBig_OnCombat_C::Img_Vx_Sequence' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_BubbleBig_OnCombat_C;
 
 }
 

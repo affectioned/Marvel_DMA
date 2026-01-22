@@ -24,9 +24,7 @@ struct PyBuffAbility_10130_10471008_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471008_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_10130_10471008_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_10130_10471008_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_10130_10471008_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_10130_10471008_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_10130_10471008_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471008_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_10130_1047_10471008.PyBuffAbility_10130_10471008.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         TagCount;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate, Tag) == 0x000000, "Member 'PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate, TagCount) == 0x00000C, "Member 'PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate::TagCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471008_OnGenericGameplayTagUpdate;
 
 // PythonFunction PyBuffAbility_10130_1047_10471008.PyBuffAbility_10130_10471008.OnAbilityActivate
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +43,7 @@ struct PyBuffAbility_10130_10471008_OnAbilityActivate final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471008_OnAbilityActivate) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10471008_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_10130_10471008_OnAbilityActivate) == 0x000008, "Wrong size on PyBuffAbility_10130_10471008_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_10130_10471008_OnAbilityActivate, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10471008_OnAbilityActivate::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471008_OnAbilityActivate;
 
 // PythonFunction PyBuffAbility_10130_1047_10471008.PyBuffAbility_10130_10471008.OnAbilityEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -59,9 +52,7 @@ struct PyBuffAbility_10130_10471008_OnAbilityEnd final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471008_OnAbilityEnd) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10471008_OnAbilityEnd");
-static_assert(sizeof(PyBuffAbility_10130_10471008_OnAbilityEnd) == 0x000008, "Wrong size on PyBuffAbility_10130_10471008_OnAbilityEnd");
-static_assert(offsetof(PyBuffAbility_10130_10471008_OnAbilityEnd, Ability) == 0x000000, "Member 'PyBuffAbility_10130_10471008_OnAbilityEnd::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471008_OnAbilityEnd;
 
 // PythonFunction PyBuffAbility_10130_1047_10471008.PyBuffAbility_10130_10471010.OnGameplayActorRemoved
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +61,7 @@ struct PyBuffAbility_10130_10471010_OnGameplayActorRemoved final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471010_OnGameplayActorRemoved) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10471010_OnGameplayActorRemoved");
-static_assert(sizeof(PyBuffAbility_10130_10471010_OnGameplayActorRemoved) == 0x000008, "Wrong size on PyBuffAbility_10130_10471010_OnGameplayActorRemoved");
-static_assert(offsetof(PyBuffAbility_10130_10471010_OnGameplayActorRemoved, InActor) == 0x000000, "Member 'PyBuffAbility_10130_10471010_OnGameplayActorRemoved::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471010_OnGameplayActorRemoved;
 
 // PythonFunction PyBuffAbility_10130_1047_10471008.PyBuffAbility_10130_10471010.OnBuffStackChange
 // 0x0010 (0x0010 - 0x0000)
@@ -83,11 +72,7 @@ public:
 	int32                                         NewStackCount;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PreviousStackCount;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10471010_OnBuffStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_10130_10471010_OnBuffStackChange");
-static_assert(sizeof(PyBuffAbility_10130_10471010_OnBuffStackChange) == 0x000010, "Wrong size on PyBuffAbility_10130_10471010_OnBuffStackChange");
-static_assert(offsetof(PyBuffAbility_10130_10471010_OnBuffStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_10130_10471010_OnBuffStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10471010_OnBuffStackChange, NewStackCount) == 0x000008, "Member 'PyBuffAbility_10130_10471010_OnBuffStackChange::NewStackCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10471010_OnBuffStackChange, PreviousStackCount) == 0x00000C, "Member 'PyBuffAbility_10130_10471010_OnBuffStackChange::PreviousStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10471010_OnBuffStackChange;
 
 }
 

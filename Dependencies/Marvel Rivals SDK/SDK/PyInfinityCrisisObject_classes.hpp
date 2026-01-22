@@ -14,25 +14,25 @@
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "PyTimeCrystalBase_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyInfinityCrisisObject.PyInfinityCrisisObject
-// 0x0020 (0x0CF0 - 0x0CD0)
+// 0x0020 (0x0D10 - 0x0CF0)
 class APyInfinityCrisisObject final : public APyTimeCrystalBase
 {
 public:
-	EOwnershipType                                OldOwnerSide;                                      // 0x0CD0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EOwnershipType                                OwnerSide;                                         // 0x0CD1(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CD2[0x2];                                      // 0x0CD2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SyncUnlockTime;                                    // 0x0CD4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InitUnlockTime;                                    // 0x0CD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RegularUnlockTime;                                 // 0x0CDC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BeSeenThroughBuffID;                               // 0x0CE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EOwnershipType                                OldOwnerSide;                                      // 0x0CF0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EOwnershipType                                OwnerSide;                                         // 0x0CF1(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CF2[0x2];                                      // 0x0CF2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SyncUnlockTime;                                    // 0x0CF4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InitUnlockTime;                                    // 0x0CF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RegularUnlockTime;                                 // 0x0CFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BeSeenThroughBuffID;                               // 0x0D00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -52,47 +52,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyInfinityCrisisObject">();
+		STATIC_CLASS_IMPL("PyInfinityCrisisObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyInfinityCrisisObject")
 	}
 	static class APyInfinityCrisisObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyInfinityCrisisObject>();
 	}
 };
-static_assert(alignof(APyInfinityCrisisObject) == 0x000010, "Wrong alignment on APyInfinityCrisisObject");
-static_assert(sizeof(APyInfinityCrisisObject) == 0x000CF0, "Wrong size on APyInfinityCrisisObject");
-static_assert(offsetof(APyInfinityCrisisObject, OldOwnerSide) == 0x000CD0, "Member 'APyInfinityCrisisObject::OldOwnerSide' has a wrong offset!");
-static_assert(offsetof(APyInfinityCrisisObject, OwnerSide) == 0x000CD1, "Member 'APyInfinityCrisisObject::OwnerSide' has a wrong offset!");
-static_assert(offsetof(APyInfinityCrisisObject, SyncUnlockTime) == 0x000CD4, "Member 'APyInfinityCrisisObject::SyncUnlockTime' has a wrong offset!");
-static_assert(offsetof(APyInfinityCrisisObject, InitUnlockTime) == 0x000CD8, "Member 'APyInfinityCrisisObject::InitUnlockTime' has a wrong offset!");
-static_assert(offsetof(APyInfinityCrisisObject, RegularUnlockTime) == 0x000CDC, "Member 'APyInfinityCrisisObject::RegularUnlockTime' has a wrong offset!");
-static_assert(offsetof(APyInfinityCrisisObject, BeSeenThroughBuffID) == 0x000CE0, "Member 'APyInfinityCrisisObject::BeSeenThroughBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_APyInfinityCrisisObject;
 
 // PythonClass PyInfinityCrisisObject.PyCue_Level_20020001
-// 0x00A0 (0x12C0 - 0x1220)
+// 0x00A0 (0x12D0 - 0x1230)
 class APyCue_Level_20020001 final : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OpacityGround;                                     // 0x1220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OpacityAttach;                                     // 0x1224(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialWhite;                                     // 0x1228(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialBlue;                                      // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialRed;                                       // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HoldingBallLerpSpeed;                              // 0x1240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1244[0x4];                                     // 0x1244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               HoldingBallRotSpeed;                               // 0x1248(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                 StopLerpAbilities;                                 // 0x1260(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         StopLerpSpeed;                                     // 0x1270(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1274[0x4];                                     // 0x1274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          PlacedAudioEvent;                                  // 0x1278(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          DroppedAudioEvent;                                 // 0x1280(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          PickUpAudioEvent;                                  // 0x1288(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          PlacedLoopAudioEvent;                              // 0x1290(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          BounceAudioEvent;                                  // 0x1298(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BounceVelocityThreshold;                           // 0x12A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A4[0x4];                                     // 0x12A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDeclarationHolder                     ViewerSideWatcher;                                 // 0x12A8(0x0010)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OpacityGround;                                     // 0x1230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OpacityAttach;                                     // 0x1234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialWhite;                                     // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialBlue;                                      // 0x1240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialRed;                                       // 0x1248(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HoldingBallLerpSpeed;                              // 0x1250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1254[0x4];                                     // 0x1254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               HoldingBallRotSpeed;                               // 0x1258(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                 StopLerpAbilities;                                 // 0x1270(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         StopLerpSpeed;                                     // 0x1280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1284[0x4];                                     // 0x1284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          PlacedAudioEvent;                                  // 0x1288(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          DroppedAudioEvent;                                 // 0x1290(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          PickUpAudioEvent;                                  // 0x1298(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          PlacedLoopAudioEvent;                              // 0x12A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          BounceAudioEvent;                                  // 0x12A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BounceVelocityThreshold;                           // 0x12B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12B4[0x4];                                     // 0x12B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDeclarationHolder                     ViewerSideWatcher;                                 // 0x12B8(0x0010)(NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -107,31 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_20020001">();
+		STATIC_CLASS_IMPL("PyCue_Level_20020001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_20020001")
 	}
 	static class APyCue_Level_20020001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_20020001>();
 	}
 };
-static_assert(alignof(APyCue_Level_20020001) == 0x000010, "Wrong alignment on APyCue_Level_20020001");
-static_assert(sizeof(APyCue_Level_20020001) == 0x0012C0, "Wrong size on APyCue_Level_20020001");
-static_assert(offsetof(APyCue_Level_20020001, OpacityGround) == 0x001220, "Member 'APyCue_Level_20020001::OpacityGround' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, OpacityAttach) == 0x001224, "Member 'APyCue_Level_20020001::OpacityAttach' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, MaterialWhite) == 0x001228, "Member 'APyCue_Level_20020001::MaterialWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, MaterialBlue) == 0x001230, "Member 'APyCue_Level_20020001::MaterialBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, MaterialRed) == 0x001238, "Member 'APyCue_Level_20020001::MaterialRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, HoldingBallLerpSpeed) == 0x001240, "Member 'APyCue_Level_20020001::HoldingBallLerpSpeed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, HoldingBallRotSpeed) == 0x001248, "Member 'APyCue_Level_20020001::HoldingBallRotSpeed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, StopLerpAbilities) == 0x001260, "Member 'APyCue_Level_20020001::StopLerpAbilities' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, StopLerpSpeed) == 0x001270, "Member 'APyCue_Level_20020001::StopLerpSpeed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, PlacedAudioEvent) == 0x001278, "Member 'APyCue_Level_20020001::PlacedAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, DroppedAudioEvent) == 0x001280, "Member 'APyCue_Level_20020001::DroppedAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, PickUpAudioEvent) == 0x001288, "Member 'APyCue_Level_20020001::PickUpAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, PlacedLoopAudioEvent) == 0x001290, "Member 'APyCue_Level_20020001::PlacedLoopAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, BounceAudioEvent) == 0x001298, "Member 'APyCue_Level_20020001::BounceAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, BounceVelocityThreshold) == 0x0012A0, "Member 'APyCue_Level_20020001::BounceVelocityThreshold' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_20020001, ViewerSideWatcher) == 0x0012A8, "Member 'APyCue_Level_20020001::ViewerSideWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_20020001;
 
 }
 

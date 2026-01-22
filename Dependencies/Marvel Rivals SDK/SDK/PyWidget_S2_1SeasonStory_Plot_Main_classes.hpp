@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S2_1SeasonStory_Plot_Main.PyWidget_S2_1SeasonStory_Plot_Main
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_S2_1SeasonStory_Plot_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S2_1SeasonStory_Plot_Main">();
+		STATIC_CLASS_IMPL("PyWidget_S2_1SeasonStory_Plot_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S2_1SeasonStory_Plot_Main")
 	}
 	static class UPyWidget_S2_1SeasonStory_Plot_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S2_1SeasonStory_Plot_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_S2_1SeasonStory_Plot_Main) == 0x000008, "Wrong alignment on UPyWidget_S2_1SeasonStory_Plot_Main");
-static_assert(sizeof(UPyWidget_S2_1SeasonStory_Plot_Main) == 0x0005F8, "Wrong size on UPyWidget_S2_1SeasonStory_Plot_Main");
+DUMPER7_ASSERTS_UPyWidget_S2_1SeasonStory_Plot_Main;
 
 }
 

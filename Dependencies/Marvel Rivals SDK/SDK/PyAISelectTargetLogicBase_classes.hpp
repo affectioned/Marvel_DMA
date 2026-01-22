@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTargetLogicBase">();
+		STATIC_CLASS_IMPL("PyAISelectTargetLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTargetLogicBase")
 	}
 	static class UPyAISelectTargetLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTargetLogicBase>();
 	}
 };
-static_assert(alignof(UPyAISelectTargetLogicBase) == 0x000008, "Wrong alignment on UPyAISelectTargetLogicBase");
-static_assert(sizeof(UPyAISelectTargetLogicBase) == 0x000070, "Wrong size on UPyAISelectTargetLogicBase");
+DUMPER7_ASSERTS_UPyAISelectTargetLogicBase;
 
 }
 

@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPerLSPlayer">();
+		STATIC_CLASS_IMPL("PyPerLSPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPerLSPlayer")
 	}
 	static class APyPerLSPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPerLSPlayer>();
 	}
 };
-static_assert(alignof(APyPerLSPlayer) == 0x000010, "Wrong alignment on APyPerLSPlayer");
-static_assert(sizeof(APyPerLSPlayer) == 0x000700, "Wrong size on APyPerLSPlayer");
-static_assert(offsetof(APyPerLSPlayer, Sequence) == 0x0006E0, "Member 'APyPerLSPlayer::Sequence' has a wrong offset!");
-static_assert(offsetof(APyPerLSPlayer, PerSeqPlayer) == 0x0006E8, "Member 'APyPerLSPlayer::PerSeqPlayer' has a wrong offset!");
-static_assert(offsetof(APyPerLSPlayer, PerSeqActor) == 0x0006F0, "Member 'APyPerLSPlayer::PerSeqActor' has a wrong offset!");
-static_assert(offsetof(APyPerLSPlayer, LevelSequenceFrameDisplayClass) == 0x0006F8, "Member 'APyPerLSPlayer::LevelSequenceFrameDisplayClass' has a wrong offset!");
+DUMPER7_ASSERTS_APyPerLSPlayer;
 
 }
 

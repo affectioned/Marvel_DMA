@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102101.PyAbility_102101
-// 0x0000 (0x2AB8 - 0x2AB8)
+// 0x0000 (0x2B08 - 0x2B08)
 class UPyAbility_102101 : public UMarvelAbility_DoubleJump
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102101">();
+		STATIC_CLASS_IMPL("PyAbility_102101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102101")
 	}
 	static class UPyAbility_102101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102101>();
 	}
 };
-static_assert(alignof(UPyAbility_102101) == 0x000008, "Wrong alignment on UPyAbility_102101");
-static_assert(sizeof(UPyAbility_102101) == 0x002AB8, "Wrong size on UPyAbility_102101");
+DUMPER7_ASSERTS_UPyAbility_102101;
 
 // PythonClass PyAbility_102101.PyCue_Ability_Loop_10210101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10210101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -47,32 +50,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10210101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10210101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10210101")
 	}
 	static class APyCue_Ability_Loop_10210101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10210101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10210101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10210101");
-static_assert(sizeof(APyCue_Ability_Loop_10210101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10210101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10210101;
 
 // PythonClass PyAbility_102101.PyWidget_10210101
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_10210101 final : public UMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_10210101">();
+		STATIC_CLASS_IMPL("PyWidget_10210101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_10210101")
 	}
 	static class UPyWidget_10210101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_10210101>();
 	}
 };
-static_assert(alignof(UPyWidget_10210101) == 0x000008, "Wrong alignment on UPyWidget_10210101");
-static_assert(sizeof(UPyWidget_10210101) == 0x000568, "Wrong size on UPyWidget_10210101");
+DUMPER7_ASSERTS_UPyWidget_10210101;
 
 }
 

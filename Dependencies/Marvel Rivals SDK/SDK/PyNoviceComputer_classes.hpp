@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceComputer">();
+		STATIC_CLASS_IMPL("PyNoviceComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceComputer")
 	}
 	static class APyNoviceComputer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNoviceComputer>();
 	}
 };
-static_assert(alignof(APyNoviceComputer) == 0x000010, "Wrong alignment on APyNoviceComputer");
-static_assert(sizeof(APyNoviceComputer) == 0x000790, "Wrong size on APyNoviceComputer");
-static_assert(offsetof(APyNoviceComputer, HoldActionTips) == 0x0006E0, "Member 'APyNoviceComputer::HoldActionTips' has a wrong offset!");
-static_assert(offsetof(APyNoviceComputer, PressActionTips) == 0x000738, "Member 'APyNoviceComputer::PressActionTips' has a wrong offset!");
+DUMPER7_ASSERTS_APyNoviceComputer;
 
 }
 

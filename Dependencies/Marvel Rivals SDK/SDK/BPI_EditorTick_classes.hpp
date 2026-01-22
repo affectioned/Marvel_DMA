@@ -26,7 +26,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_EditorTick_C">();
+		BP_STATIC_CLASS_IMPL("BPI_EditorTick_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_EditorTick_C")
 	}
 	static class IBPI_EditorTick_C* GetDefaultObj()
 	{
@@ -42,8 +46,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IBPI_EditorTick_C) == 0x000001, "Wrong alignment on IBPI_EditorTick_C");
-static_assert(sizeof(IBPI_EditorTick_C) == 0x000001, "Wrong size on IBPI_EditorTick_C");
+DUMPER7_ASSERTS_IBPI_EditorTick_C;
 
 }
 

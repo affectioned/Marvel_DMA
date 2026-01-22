@@ -22,10 +22,7 @@ public:
 	float                                         CurPercent;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Speed;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_222_K2_PlayAnimation) == 0x000004, "Wrong alignment on PyUIController_222_K2_PlayAnimation");
-static_assert(sizeof(PyUIController_222_K2_PlayAnimation) == 0x000008, "Wrong size on PyUIController_222_K2_PlayAnimation");
-static_assert(offsetof(PyUIController_222_K2_PlayAnimation, CurPercent) == 0x000000, "Member 'PyUIController_222_K2_PlayAnimation::CurPercent' has a wrong offset!");
-static_assert(offsetof(PyUIController_222_K2_PlayAnimation, Speed) == 0x000004, "Member 'PyUIController_222_K2_PlayAnimation::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_222_K2_PlayAnimation;
 
 }
 

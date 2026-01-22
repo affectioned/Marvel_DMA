@@ -25,11 +25,7 @@ public:
 	class AActor*                                 TargetAvatar;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage");
-static_assert(sizeof(PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage) == 0x000028, "Wrong size on PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage");
-static_assert(offsetof(PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage, SourceAvatar) == 0x000000, "Member 'PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage::SourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage, TargetAvatar) == 0x000008, "Member 'PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage::TargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10441190_K2_CustomLogicOnApplyDamage;
 
 }
 

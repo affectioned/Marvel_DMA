@@ -19,18 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_TrainTipsInfo.PyWidget_TrainTipsInfo
-// 0x0100 (0x06C0 - 0x05C0)
+// 0x0110 (0x06D8 - 0x05C8)
 class UPyWidget_TrainTipsInfo : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Overlay_Bg_Padding;                                // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          UIActionData_PC;                                   // 0x05D0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          UIActionData_Host;                                 // 0x0628(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Tips_Text;                                         // 0x0680(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Tips_Text_Host;                                    // 0x0698(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMargin                                KeyPadding;                                        // 0x06B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                Overlay_Bg_Padding;                                // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Overlay_KeyWidget_PaddingOnPS;                     // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          UIActionData_PC;                                   // 0x05E8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          UIActionData_Host;                                 // 0x0640(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Tips_Text;                                         // 0x0698(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Tips_Text_Host;                                    // 0x06B0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMargin                                KeyPadding;                                        // 0x06C8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,21 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_TrainTipsInfo">();
+		STATIC_CLASS_IMPL("PyWidget_TrainTipsInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_TrainTipsInfo")
 	}
 	static class UPyWidget_TrainTipsInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_TrainTipsInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_TrainTipsInfo) == 0x000008, "Wrong alignment on UPyWidget_TrainTipsInfo");
-static_assert(sizeof(UPyWidget_TrainTipsInfo) == 0x0006C0, "Wrong size on UPyWidget_TrainTipsInfo");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, Overlay_Bg_Padding) == 0x0005BC, "Member 'UPyWidget_TrainTipsInfo::Overlay_Bg_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, UIActionData_PC) == 0x0005D0, "Member 'UPyWidget_TrainTipsInfo::UIActionData_PC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, UIActionData_Host) == 0x000628, "Member 'UPyWidget_TrainTipsInfo::UIActionData_Host' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, Tips_Text) == 0x000680, "Member 'UPyWidget_TrainTipsInfo::Tips_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, Tips_Text_Host) == 0x000698, "Member 'UPyWidget_TrainTipsInfo::Tips_Text_Host' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TrainTipsInfo, KeyPadding) == 0x0006B0, "Member 'UPyWidget_TrainTipsInfo::KeyPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_TrainTipsInfo;
 
 }
 

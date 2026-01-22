@@ -24,15 +24,18 @@ class UOnlyShowEmojiFullListItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlyShowEmojiFullListItemData">();
+		STATIC_CLASS_IMPL("OnlyShowEmojiFullListItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlyShowEmojiFullListItemData")
 	}
 	static class UOnlyShowEmojiFullListItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlyShowEmojiFullListItemData>();
 	}
 };
-static_assert(alignof(UOnlyShowEmojiFullListItemData) == 0x000008, "Wrong alignment on UOnlyShowEmojiFullListItemData");
-static_assert(sizeof(UOnlyShowEmojiFullListItemData) == 0x000030, "Wrong size on UOnlyShowEmojiFullListItemData");
+DUMPER7_ASSERTS_UOnlyShowEmojiFullListItemData;
 
 // PythonClass PyWidget_OnlyShowEmojiWidgets.PyWidget_OnlyShowEmojiFullListWidget
 // 0x0000 (0x03B8 - 0x03B8)
@@ -44,15 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_OnlyShowEmojiFullListWidget">();
+		STATIC_CLASS_IMPL("PyWidget_OnlyShowEmojiFullListWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_OnlyShowEmojiFullListWidget")
 	}
 	static class UPyWidget_OnlyShowEmojiFullListWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_OnlyShowEmojiFullListWidget>();
 	}
 };
-static_assert(alignof(UPyWidget_OnlyShowEmojiFullListWidget) == 0x000008, "Wrong alignment on UPyWidget_OnlyShowEmojiFullListWidget");
-static_assert(sizeof(UPyWidget_OnlyShowEmojiFullListWidget) == 0x0003B8, "Wrong size on UPyWidget_OnlyShowEmojiFullListWidget");
+DUMPER7_ASSERTS_UPyWidget_OnlyShowEmojiFullListWidget;
 
 // PythonClass PyWidget_OnlyShowEmojiWidgets.PyWidget_OnlyShowEmojiFullList
 // 0x0000 (0x03B8 - 0x03B8)
@@ -64,15 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_OnlyShowEmojiFullList">();
+		STATIC_CLASS_IMPL("PyWidget_OnlyShowEmojiFullList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_OnlyShowEmojiFullList")
 	}
 	static class UPyWidget_OnlyShowEmojiFullList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_OnlyShowEmojiFullList>();
 	}
 };
-static_assert(alignof(UPyWidget_OnlyShowEmojiFullList) == 0x000008, "Wrong alignment on UPyWidget_OnlyShowEmojiFullList");
-static_assert(sizeof(UPyWidget_OnlyShowEmojiFullList) == 0x0003B8, "Wrong size on UPyWidget_OnlyShowEmojiFullList");
+DUMPER7_ASSERTS_UPyWidget_OnlyShowEmojiFullList;
 
 }
 

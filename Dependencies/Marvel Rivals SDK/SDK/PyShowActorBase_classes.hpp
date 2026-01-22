@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyShowActorBase.PyShowActorBase
-// 0x0AD0 (0x11C0 - 0x06F0)
+// 0x0B00 (0x11F0 - 0x06F0)
 class APyShowActorBase final : public AShowActorBase
 {
 public:
@@ -74,97 +74,98 @@ public:
 	struct FVector                                HalfToHalf_CameraOffset;                           // 0x0DE8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             SelectHeroTransform;                               // 0x0E00(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SelectHeroTime;                                    // 0x0E60(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAutoPlayHeroVoice;                               // 0x0E64(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E65[0x3];                                      // 0x0E65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxAnglePerSecond;                                 // 0x0E68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ActorDefaultRotationYaw;                           // 0x0E6C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          TurnCameraGaze;                                    // 0x0E70(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E71[0x7];                                      // 0x0E71(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Stand_GazeEffectiveAngle;                          // 0x0E78(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Half_GazeEffectiveAngle;                           // 0x0E88(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Stand_CameraGazeAngle;                             // 0x0E98(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Half_CameraGazeAngle;                              // 0x0EA8(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OpenGazeDelay;                                     // 0x0EB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CloseGazeDelay;                                    // 0x0EBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GazeLeadTimeToggleStand;                           // 0x0EC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GazeLeadTimeToggleHalf;                            // 0x0EC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OpenGazeBlendTime;                                 // 0x0EC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ECC[0x4];                                      // 0x0ECC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CameraGazeInterp;                                  // 0x0ED0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PositiveOffsetAngle;                               // 0x0EE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngleSignChangeTime;                               // 0x0EEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLoadHeroGalleryAsset;                            // 0x0EF0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AutoHiddenActor;                                   // 0x0EF1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EF2[0x2];                                      // 0x0EF2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HeroID;                                            // 0x0EF4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SkinID;                                            // 0x0EF8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShapeID;                                           // 0x0EFC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsToggleHalf;                                      // 0x0F00(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsHalfToHalf;                                      // 0x0F01(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F02[0x6];                                      // 0x0F02(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UObject*>                        ShowActorAsset;                                    // 0x0F08(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UObject*>                        ShowActorEmoteAsset;                               // 0x0F18(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          IsInputLog;                                        // 0x0F28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EShowActorStage                               ShowActorStage;                                    // 0x0F29(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EShowActorStage                               DefaultShowActorStage;                             // 0x0F2A(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EShowActorResType                             ShowActorResType;                                  // 0x0F2B(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F2C[0x4];                                      // 0x0F2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        DefaultScene;                                      // 0x0F30(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        MainScene;                                         // 0x0F38(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        ShowScene;                                         // 0x0F40(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        MeshScene;                                         // 0x0F48(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        CameraScene;                                       // 0x0F50(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                        WidgetScene;                                       // 0x0F58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 Mesh1;                                             // 0x0F60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 Weapon1;                                           // 0x0F68(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 SpiderWeb;                                         // 0x0F70(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 SK_Shell;                                          // 0x0F78(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelWidgetComponent*                 LikeWidget;                                        // 0x0F80(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelWidgetComponent*                 MVPWidget;                                         // 0x0F88(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelWidgetComponent*                 EmojiWidget;                                       // 0x0F90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelWidgetComponent*                 EmojiHalfWidget;                                   // 0x0F98(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkeletalMeshComponent*                 LightRootMesh;                                     // 0x0FA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   ShowBPLight;                                       // 0x0FA8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   AccessoryComponent;                                // 0x0FB0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraComponent*                      AccessoryFXComponent;                              // 0x0FB8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   SH_Stand_Camera;                                   // 0x0FC0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   SH_Half_Camera;                                    // 0x0FC8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   HG_Stand_Camera;                                   // 0x0FD0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   HG_Half_Camera;                                    // 0x0FD8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   AI_Half_Camera;                                    // 0x0FE0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   AI_Head_Camera;                                    // 0x0FE8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UChildActorComponent*                   ShowPose_Camera;                                   // 0x0FF0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   GyroRed;                                           // 0x0FF8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   CharacterGazePoint;                                // 0x1000(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPostProcessComponent*                  PostProcessCharacter;                              // 0x1008(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPostProcessComponent*                  PostProcessVFX;                                    // 0x1010(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraComponent*                      NiagaraFXComponent;                                // 0x1018(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPlay)>   OnPlayShowAnim;                                    // 0x1020(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsToggleHalf)> OnPlayToggleAnim;                              // 0x1030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayToggleAnim;                                // 0x1040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnJumpStandIdle;                                   // 0x1050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnJumpHalfIdle;                                    // 0x1060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResetPersonality;                                // 0x1070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResetAllAnim;                                    // 0x1080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayTurnAnim;                                    // 0x1090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPrePlayEmoteAnim;                                // 0x10A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnPlayEmoteAnim;                     // 0x10B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayEmoteAnimFinished;                           // 0x10C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayMVPAnim;                                     // 0x10D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayLikeAnim;                                    // 0x10E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x10F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResetHeroGallery;                                // 0x1100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayHeroGallerAnim;                              // 0x1110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPlay_CardPose)> OnPlayHeroGaller_CardPose;                  // 0x1120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPlay_HoverStand)> OnPlayHeroGaller_HoverStand;              // 0x1130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayHoverStandFinished;                          // 0x1140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UAnimSequence* VoiceAnim)> OnPlayVoiceAnim;                  // 0x1150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnStopVoiceAnim;                                   // 0x1160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* ShowActor)> OnLoadShowAssetFinished;                 // 0x1170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool TurnCameraGaze, const struct FVector& CameraLocation, float OpenBlendTime, float CloseBlendTime)> OnShowActorCameraGaze; // 0x1180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EShowActorStage ShowActorStage)> OnShowActorStageChanged;          // 0x1190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsToggleHalf)> OnIsHalfChanged;                               // 0x11A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bVisible)> OnVisibleChange;                                   // 0x11B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         MaxAnglePerSecond;                                 // 0x0E64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ActorDefaultRotationYaw;                           // 0x0E68(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          TurnCameraGaze;                                    // 0x0E6C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E6D[0x3];                                      // 0x0E6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Stand_GazeEffectiveAngle;                          // 0x0E70(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Half_GazeEffectiveAngle;                           // 0x0E80(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Stand_CameraGazeAngle;                             // 0x0E90(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Half_CameraGazeAngle;                              // 0x0EA0(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OpenGazeDelay;                                     // 0x0EB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CloseGazeDelay;                                    // 0x0EB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GazeLeadTimeToggleStand;                           // 0x0EB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GazeLeadTimeToggleHalf;                            // 0x0EBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OpenGazeBlendTime;                                 // 0x0EC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EC4[0x4];                                      // 0x0EC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CameraGazeInterp;                                  // 0x0EC8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PositiveOffsetAngle;                               // 0x0EE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngleSignChangeTime;                               // 0x0EE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLoadHeroGalleryAsset;                            // 0x0EE8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AutoHiddenActor;                                   // 0x0EE9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EEA[0x2];                                      // 0x0EEA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HeroID;                                            // 0x0EEC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SkinID;                                            // 0x0EF0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShapeID;                                           // 0x0EF4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsToggleHalf;                                      // 0x0EF8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsHalfToHalf;                                      // 0x0EF9(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EFA[0x6];                                      // 0x0EFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UObject*>                        ShowActorAsset;                                    // 0x0F00(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UObject*>                        ShowActoItemAsset;                                 // 0x0F10(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          IsInputLog;                                        // 0x0F20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EShowActorStage                               ShowActorStage;                                    // 0x0F21(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EShowActorStage                               DefaultShowActorStage;                             // 0x0F22(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EShowActorResType                             ShowActorResType;                                  // 0x0F23(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F24[0x4];                                      // 0x0F24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        DefaultScene;                                      // 0x0F28(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        MainScene;                                         // 0x0F30(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        ShowScene;                                         // 0x0F38(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        MeshScene;                                         // 0x0F40(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        CameraScene;                                       // 0x0F48(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        WidgetScene;                                       // 0x0F50(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 Mesh1;                                             // 0x0F58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 Weapon1;                                           // 0x0F60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 SpiderWeb;                                         // 0x0F68(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 SK_Shell;                                          // 0x0F70(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelWidgetComponent*                 LikeWidget;                                        // 0x0F78(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelWidgetComponent*                 MVPWidget;                                         // 0x0F80(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelWidgetComponent*                 EmojiWidget;                                       // 0x0F88(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelWidgetComponent*                 EmojiHalfWidget;                                   // 0x0F90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 LightRootMesh;                                     // 0x0F98(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   ShowBPLight;                                       // 0x0FA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   AccessoryComponent;                                // 0x0FA8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      AccessoryFXComponent;                              // 0x0FB0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   SH_Stand_Camera;                                   // 0x0FB8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   SH_Half_Camera;                                    // 0x0FC0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   HG_Stand_Camera;                                   // 0x0FC8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   HG_Half_Camera;                                    // 0x0FD0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   AI_Half_Camera;                                    // 0x0FD8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   AI_Head_Camera;                                    // 0x0FE0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UChildActorComponent*                   ShowPose_Camera;                                   // 0x0FE8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   GyroRed;                                           // 0x0FF0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   CharacterGazePoint;                                // 0x0FF8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPostProcessComponent*                  PostProcessCharacter;                              // 0x1000(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPostProcessComponent*                  PostProcessVFX;                                    // 0x1008(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      NiagaraFXComponent;                                // 0x1010(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPlay)>   OnPlayShowAnim;                                    // 0x1018(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsToggleHalf)> OnPlayToggleAnim;                              // 0x1028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayToggleAnim;                                // 0x1038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnJumpStandIdle;                                   // 0x1048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnJumpHalfIdle;                                    // 0x1058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResetPersonality;                                // 0x1068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResetAllAnim;                                    // 0x1078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayTurnAnim;                                    // 0x1088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPrePlayEmoteAnim;                                // 0x1098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnPlayEmoteAnim;                     // 0x10A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayEmoteAnimFinished;                           // 0x10B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPrePlaySkinCustomizationAnim;                    // 0x10C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnPlaySkinCustomizationAnim;         // 0x10D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlaySkinCustomizationAnimFinished;               // 0x10E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayMVPAnim;                                     // 0x10F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayLikeAnim;                                    // 0x1108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x1118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResetHeroGallery;                                // 0x1128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayHeroGallerAnim;                              // 0x1138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPlay_CardPose)> OnPlayHeroGaller_CardPose;                  // 0x1148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPlay_HoverStand)> OnPlayHeroGaller_HoverStand;              // 0x1158(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayHoverStandFinished;                          // 0x1168(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UAnimSequence* VoiceAnim)> OnPlayVoiceAnim;                  // 0x1178(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnStopVoiceAnim;                                   // 0x1188(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* ShowActor)> OnLoadShowAssetFinished;                 // 0x1198(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool TurnCameraGaze, const struct FVector& CameraLocation, float OpenBlendTime, float CloseBlendTime)> OnShowActorCameraGaze; // 0x11A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EShowActorStage ShowActorStage)> OnShowActorStageChanged;          // 0x11B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsToggleHalf)> OnIsHalfChanged;                               // 0x11C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bVisible)> OnVisibleChange;                                   // 0x11D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -214,146 +215,24 @@ public:
 	void SetCustomSkinID(int32 CustomSkinID);
 	void OnPlayEmoteAnimItem(const class FString& ItemID);
 	bool GetIsNeedReplaceOverlayMaterial();
+	void OnPlaySkinCustomizationAnimItem(const class FString& ItemID);
 	void SetBindingTagInLevelSequenceActor(class ALevelSequenceActor* ls_actor);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorBase">();
+		STATIC_CLASS_IMPL("PyShowActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorBase")
 	}
 	static class APyShowActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyShowActorBase>();
 	}
 };
-static_assert(alignof(APyShowActorBase) == 0x000010, "Wrong alignment on APyShowActorBase");
-static_assert(sizeof(APyShowActorBase) == 0x0011C0, "Wrong size on APyShowActorBase");
-static_assert(offsetof(APyShowActorBase, ShowActorExtensionClass) == 0x0006F0, "Member 'APyShowActorBase::ShowActorExtensionClass' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorExtensionObjectAssert) == 0x000700, "Member 'APyShowActorBase::ShowActorExtensionObjectAssert' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorExtensionObject) == 0x000750, "Member 'APyShowActorBase::ShowActorExtensionObject' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsAllowedUseCommonSHCamera) == 0x000760, "Member 'APyShowActorBase::IsAllowedUseCommonSHCamera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsDisableAllCameras) == 0x000761, "Member 'APyShowActorBase::IsDisableAllCameras' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, BlendTime) == 0x000764, "Member 'APyShowActorBase::BlendTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, BlendFunc) == 0x000768, "Member 'APyShowActorBase::BlendFunc' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, BlendExp) == 0x00076C, "Member 'APyShowActorBase::BlendExp' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LockOutgoing) == 0x000770, "Member 'APyShowActorBase::LockOutgoing' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, DefaultCameraDistance) == 0x000774, "Member 'APyShowActorBase::DefaultCameraDistance' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CameraAperture) == 0x000778, "Member 'APyShowActorBase::CameraAperture' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CameraBlurRelativeOffset) == 0x000780, "Member 'APyShowActorBase::CameraBlurRelativeOffset' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AutoPlayTime) == 0x000798, "Member 'APyShowActorBase::AutoPlayTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsAutoPlayPersonality) == 0x00079C, "Member 'APyShowActorBase::IsAutoPlayPersonality' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_HoverToggleStand) == 0x0007A0, "Member 'APyShowActorBase::LS_HoverToggleStand' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_StandToggleHalf2) == 0x000820, "Member 'APyShowActorBase::LS_StandToggleHalf2' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_Half2ToggleStand) == 0x0008A0, "Member 'APyShowActorBase::LS_Half2ToggleStand' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_StandPersonality) == 0x000920, "Member 'APyShowActorBase::LS_StandPersonality' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_HalfPersonality) == 0x0009A0, "Member 'APyShowActorBase::LS_HalfPersonality' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_Stand_Rotation) == 0x000A20, "Member 'APyShowActorBase::LS_Stand_Rotation' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_Half_Rotation) == 0x000AA0, "Member 'APyShowActorBase::LS_Half_Rotation' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_CardPose) == 0x000B20, "Member 'APyShowActorBase::LS_CardPose' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_HoverIdle) == 0x000BA0, "Member 'APyShowActorBase::LS_HoverIdle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_MVP) == 0x000C20, "Member 'APyShowActorBase::LS_MVP' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LS_LikeFX) == 0x000CA0, "Member 'APyShowActorBase::LS_LikeFX' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight_SelectHero) == 0x000D20, "Member 'APyShowActorBase::ShowBPLight_SelectHero' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight_HeroList) == 0x000D28, "Member 'APyShowActorBase::ShowBPLight_HeroList' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight_HeroDetail) == 0x000D30, "Member 'APyShowActorBase::ShowBPLight_HeroDetail' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight_MVP) == 0x000D38, "Member 'APyShowActorBase::ShowBPLight_MVP' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight_BattlePass) == 0x000D40, "Member 'APyShowActorBase::ShowBPLight_BattlePass' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLightType) == 0x000D48, "Member 'APyShowActorBase::ShowBPLightType' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LightMaskBoxTransform) == 0x000D50, "Member 'APyShowActorBase::LightMaskBoxTransform' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LightMaskBoxOn) == 0x000DB0, "Member 'APyShowActorBase::LightMaskBoxOn' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PhysicsRootNames) == 0x000DB8, "Member 'APyShowActorBase::PhysicsRootNames' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PhysicsConfigByBoneChain) == 0x000DC8, "Member 'APyShowActorBase::PhysicsConfigByBoneChain' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PhysicsBlendWeightMin) == 0x000DD8, "Member 'APyShowActorBase::PhysicsBlendWeightMin' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PhysicsBlendWeightMax) == 0x000DDC, "Member 'APyShowActorBase::PhysicsBlendWeightMax' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PhysicsBlendWeightTime) == 0x000DE0, "Member 'APyShowActorBase::PhysicsBlendWeightTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, HalfToHalf_CameraOffset) == 0x000DE8, "Member 'APyShowActorBase::HalfToHalf_CameraOffset' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SelectHeroTransform) == 0x000E00, "Member 'APyShowActorBase::SelectHeroTransform' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SelectHeroTime) == 0x000E60, "Member 'APyShowActorBase::SelectHeroTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsAutoPlayHeroVoice) == 0x000E64, "Member 'APyShowActorBase::IsAutoPlayHeroVoice' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, MaxAnglePerSecond) == 0x000E68, "Member 'APyShowActorBase::MaxAnglePerSecond' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ActorDefaultRotationYaw) == 0x000E6C, "Member 'APyShowActorBase::ActorDefaultRotationYaw' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, TurnCameraGaze) == 0x000E70, "Member 'APyShowActorBase::TurnCameraGaze' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Stand_GazeEffectiveAngle) == 0x000E78, "Member 'APyShowActorBase::Stand_GazeEffectiveAngle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Half_GazeEffectiveAngle) == 0x000E88, "Member 'APyShowActorBase::Half_GazeEffectiveAngle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Stand_CameraGazeAngle) == 0x000E98, "Member 'APyShowActorBase::Stand_CameraGazeAngle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Half_CameraGazeAngle) == 0x000EA8, "Member 'APyShowActorBase::Half_CameraGazeAngle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OpenGazeDelay) == 0x000EB8, "Member 'APyShowActorBase::OpenGazeDelay' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CloseGazeDelay) == 0x000EBC, "Member 'APyShowActorBase::CloseGazeDelay' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, GazeLeadTimeToggleStand) == 0x000EC0, "Member 'APyShowActorBase::GazeLeadTimeToggleStand' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, GazeLeadTimeToggleHalf) == 0x000EC4, "Member 'APyShowActorBase::GazeLeadTimeToggleHalf' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OpenGazeBlendTime) == 0x000EC8, "Member 'APyShowActorBase::OpenGazeBlendTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CameraGazeInterp) == 0x000ED0, "Member 'APyShowActorBase::CameraGazeInterp' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PositiveOffsetAngle) == 0x000EE8, "Member 'APyShowActorBase::PositiveOffsetAngle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AngleSignChangeTime) == 0x000EEC, "Member 'APyShowActorBase::AngleSignChangeTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsLoadHeroGalleryAsset) == 0x000EF0, "Member 'APyShowActorBase::IsLoadHeroGalleryAsset' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AutoHiddenActor) == 0x000EF1, "Member 'APyShowActorBase::AutoHiddenActor' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, HeroID) == 0x000EF4, "Member 'APyShowActorBase::HeroID' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SkinID) == 0x000EF8, "Member 'APyShowActorBase::SkinID' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShapeID) == 0x000EFC, "Member 'APyShowActorBase::ShapeID' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsToggleHalf) == 0x000F00, "Member 'APyShowActorBase::IsToggleHalf' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsHalfToHalf) == 0x000F01, "Member 'APyShowActorBase::IsHalfToHalf' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorAsset) == 0x000F08, "Member 'APyShowActorBase::ShowActorAsset' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorEmoteAsset) == 0x000F18, "Member 'APyShowActorBase::ShowActorEmoteAsset' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, IsInputLog) == 0x000F28, "Member 'APyShowActorBase::IsInputLog' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorStage) == 0x000F29, "Member 'APyShowActorBase::ShowActorStage' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, DefaultShowActorStage) == 0x000F2A, "Member 'APyShowActorBase::DefaultShowActorStage' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowActorResType) == 0x000F2B, "Member 'APyShowActorBase::ShowActorResType' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, DefaultScene) == 0x000F30, "Member 'APyShowActorBase::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, MainScene) == 0x000F38, "Member 'APyShowActorBase::MainScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowScene) == 0x000F40, "Member 'APyShowActorBase::ShowScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, MeshScene) == 0x000F48, "Member 'APyShowActorBase::MeshScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CameraScene) == 0x000F50, "Member 'APyShowActorBase::CameraScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, WidgetScene) == 0x000F58, "Member 'APyShowActorBase::WidgetScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Mesh1) == 0x000F60, "Member 'APyShowActorBase::Mesh1' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, Weapon1) == 0x000F68, "Member 'APyShowActorBase::Weapon1' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SpiderWeb) == 0x000F70, "Member 'APyShowActorBase::SpiderWeb' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SK_Shell) == 0x000F78, "Member 'APyShowActorBase::SK_Shell' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LikeWidget) == 0x000F80, "Member 'APyShowActorBase::LikeWidget' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, MVPWidget) == 0x000F88, "Member 'APyShowActorBase::MVPWidget' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, EmojiWidget) == 0x000F90, "Member 'APyShowActorBase::EmojiWidget' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, EmojiHalfWidget) == 0x000F98, "Member 'APyShowActorBase::EmojiHalfWidget' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, LightRootMesh) == 0x000FA0, "Member 'APyShowActorBase::LightRootMesh' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowBPLight) == 0x000FA8, "Member 'APyShowActorBase::ShowBPLight' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AccessoryComponent) == 0x000FB0, "Member 'APyShowActorBase::AccessoryComponent' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AccessoryFXComponent) == 0x000FB8, "Member 'APyShowActorBase::AccessoryFXComponent' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SH_Stand_Camera) == 0x000FC0, "Member 'APyShowActorBase::SH_Stand_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, SH_Half_Camera) == 0x000FC8, "Member 'APyShowActorBase::SH_Half_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, HG_Stand_Camera) == 0x000FD0, "Member 'APyShowActorBase::HG_Stand_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, HG_Half_Camera) == 0x000FD8, "Member 'APyShowActorBase::HG_Half_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AI_Half_Camera) == 0x000FE0, "Member 'APyShowActorBase::AI_Half_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, AI_Head_Camera) == 0x000FE8, "Member 'APyShowActorBase::AI_Head_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, ShowPose_Camera) == 0x000FF0, "Member 'APyShowActorBase::ShowPose_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, GyroRed) == 0x000FF8, "Member 'APyShowActorBase::GyroRed' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, CharacterGazePoint) == 0x001000, "Member 'APyShowActorBase::CharacterGazePoint' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PostProcessCharacter) == 0x001008, "Member 'APyShowActorBase::PostProcessCharacter' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, PostProcessVFX) == 0x001010, "Member 'APyShowActorBase::PostProcessVFX' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, NiagaraFXComponent) == 0x001018, "Member 'APyShowActorBase::NiagaraFXComponent' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayShowAnim) == 0x001020, "Member 'APyShowActorBase::OnPlayShowAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayToggleAnim) == 0x001030, "Member 'APyShowActorBase::OnPlayToggleAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnReplayToggleAnim) == 0x001040, "Member 'APyShowActorBase::OnReplayToggleAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnJumpStandIdle) == 0x001050, "Member 'APyShowActorBase::OnJumpStandIdle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnJumpHalfIdle) == 0x001060, "Member 'APyShowActorBase::OnJumpHalfIdle' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnResetPersonality) == 0x001070, "Member 'APyShowActorBase::OnResetPersonality' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnResetAllAnim) == 0x001080, "Member 'APyShowActorBase::OnResetAllAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayTurnAnim) == 0x001090, "Member 'APyShowActorBase::OnPlayTurnAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPrePlayEmoteAnim) == 0x0010A0, "Member 'APyShowActorBase::OnPrePlayEmoteAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayEmoteAnim) == 0x0010B0, "Member 'APyShowActorBase::OnPlayEmoteAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayEmoteAnimFinished) == 0x0010C0, "Member 'APyShowActorBase::OnPlayEmoteAnimFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayMVPAnim) == 0x0010D0, "Member 'APyShowActorBase::OnPlayMVPAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayLikeAnim) == 0x0010E0, "Member 'APyShowActorBase::OnPlayLikeAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayEmojiAnimFinished) == 0x0010F0, "Member 'APyShowActorBase::OnPlayEmojiAnimFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnResetHeroGallery) == 0x001100, "Member 'APyShowActorBase::OnResetHeroGallery' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayHeroGallerAnim) == 0x001110, "Member 'APyShowActorBase::OnPlayHeroGallerAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayHeroGaller_CardPose) == 0x001120, "Member 'APyShowActorBase::OnPlayHeroGaller_CardPose' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayHeroGaller_HoverStand) == 0x001130, "Member 'APyShowActorBase::OnPlayHeroGaller_HoverStand' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayHoverStandFinished) == 0x001140, "Member 'APyShowActorBase::OnPlayHoverStandFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnPlayVoiceAnim) == 0x001150, "Member 'APyShowActorBase::OnPlayVoiceAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnStopVoiceAnim) == 0x001160, "Member 'APyShowActorBase::OnStopVoiceAnim' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnLoadShowAssetFinished) == 0x001170, "Member 'APyShowActorBase::OnLoadShowAssetFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnShowActorCameraGaze) == 0x001180, "Member 'APyShowActorBase::OnShowActorCameraGaze' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnShowActorStageChanged) == 0x001190, "Member 'APyShowActorBase::OnShowActorStageChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnIsHalfChanged) == 0x0011A0, "Member 'APyShowActorBase::OnIsHalfChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorBase, OnVisibleChange) == 0x0011B0, "Member 'APyShowActorBase::OnVisibleChange' has a wrong offset!");
+DUMPER7_ASSERTS_APyShowActorBase;
 
 }
 

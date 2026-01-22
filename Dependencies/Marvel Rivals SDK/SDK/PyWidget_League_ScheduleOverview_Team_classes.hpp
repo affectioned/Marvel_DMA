@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_IntegralTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_IntegralTips final : public UPyMarvelUserWidget
 {
 public:
@@ -27,35 +27,40 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_IntegralTips">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_IntegralTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_IntegralTips")
 	}
 	static class UPyWidget_League_ScheduleOverview_IntegralTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_IntegralTips>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_IntegralTips) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_IntegralTips");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_IntegralTips) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_IntegralTips");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_IntegralTips;
 
 // PythonClass PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_Team
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_Team final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Tex_Bg;                                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Show_IntegralTips;                                 // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Cup_Icon;                                          // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Show_Cup_Icon;                                     // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D9[0x3];                                      // 0x05D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Text_Team_Name_Color;                              // 0x05DC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Show_Team_Tips;                                    // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Tex_Bg;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Show_IntegralTips;                                 // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Cup_Icon;                                          // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Match_Win_Icon;                                    // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Match_Lose_Icon;                                   // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Show_Cup_Icon;                                     // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5F1[0x3];                                      // 0x05F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            WBP_TeamTips_Text_Team_Name_Color;                 // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         WBP_TeamTips_SizeBox_Height;                       // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             WBP_TeamTips_Tex_Bg;                               // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Team_Name_Color;                              // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Show_Team_Tips;                                    // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_609[0x3];                                      // 0x0609(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            WBP_TeamTips_Text_Team_Name_Color;                 // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         WBP_TeamTips_SizeBox_Height;                       // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             WBP_TeamTips_Tex_Bg;                               // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,32 +71,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_Team">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_Team")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_Team")
 	}
 	static class UPyWidget_League_ScheduleOverview_Team* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_Team>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_Team) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_Team");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_Team) == 0x000618, "Wrong size on UPyWidget_League_ScheduleOverview_Team");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Tex_Bg) == 0x0005C0, "Member 'UPyWidget_League_ScheduleOverview_Team::Tex_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Show_IntegralTips) == 0x0005C8, "Member 'UPyWidget_League_ScheduleOverview_Team::Show_IntegralTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Cup_Icon) == 0x0005D0, "Member 'UPyWidget_League_ScheduleOverview_Team::Cup_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Show_Cup_Icon) == 0x0005D8, "Member 'UPyWidget_League_ScheduleOverview_Team::Show_Cup_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Text_Team_Name_Color) == 0x0005DC, "Member 'UPyWidget_League_ScheduleOverview_Team::Text_Team_Name_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, Show_Team_Tips) == 0x0005F0, "Member 'UPyWidget_League_ScheduleOverview_Team::Show_Team_Tips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, WBP_TeamTips_Text_Team_Name_Color) == 0x0005F4, "Member 'UPyWidget_League_ScheduleOverview_Team::WBP_TeamTips_Text_Team_Name_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, WBP_TeamTips_SizeBox_Height) == 0x000608, "Member 'UPyWidget_League_ScheduleOverview_Team::WBP_TeamTips_SizeBox_Height' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_Team, WBP_TeamTips_Tex_Bg) == 0x000610, "Member 'UPyWidget_League_ScheduleOverview_Team::WBP_TeamTips_Tex_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_Team;
 
 // PythonClass PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_TeamIntegral
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_TeamIntegral final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Tex_Bg;                                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Tex_Bg;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -102,30 +101,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_TeamIntegral">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_TeamIntegral")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_TeamIntegral")
 	}
 	static class UPyWidget_League_ScheduleOverview_TeamIntegral* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_TeamIntegral>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_TeamIntegral) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_TeamIntegral");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_TeamIntegral) == 0x0005C8, "Wrong size on UPyWidget_League_ScheduleOverview_TeamIntegral");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamIntegral, Tex_Bg) == 0x0005C0, "Member 'UPyWidget_League_ScheduleOverview_TeamIntegral::Tex_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_TeamIntegral;
 
 // PythonClass PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_TeamBig
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_TeamBig final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Tex_Bg;                                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_Team_Name_Color;                              // 0x05C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Show_Team_Tips;                                    // 0x05DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DD[0x3];                                      // 0x05DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            WBP_TeamTips_Text_Team_Name_Color;                 // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         WBP_TeamTips_SizeBox_Height;                       // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             WBP_TeamTips_Tex_Bg;                               // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Tex_Bg;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_Team_Name_Color;                              // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Show_Team_Tips;                                    // 0x05E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E5[0x3];                                      // 0x05E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            WBP_TeamTips_Text_Team_Name_Color;                 // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         WBP_TeamTips_SizeBox_Height;                       // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             WBP_TeamTips_Tex_Bg;                               // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -136,24 +137,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_TeamBig">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_TeamBig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_TeamBig")
 	}
 	static class UPyWidget_League_ScheduleOverview_TeamBig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_TeamBig>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_TeamBig) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_TeamBig");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_TeamBig) == 0x000600, "Wrong size on UPyWidget_League_ScheduleOverview_TeamBig");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, Tex_Bg) == 0x0005C0, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::Tex_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, Text_Team_Name_Color) == 0x0005C8, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::Text_Team_Name_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, Show_Team_Tips) == 0x0005DC, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::Show_Team_Tips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, WBP_TeamTips_Text_Team_Name_Color) == 0x0005E0, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::WBP_TeamTips_Text_Team_Name_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, WBP_TeamTips_SizeBox_Height) == 0x0005F4, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::WBP_TeamTips_SizeBox_Height' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_TeamBig, WBP_TeamTips_Tex_Bg) == 0x0005F8, "Member 'UPyWidget_League_ScheduleOverview_TeamBig::WBP_TeamTips_Tex_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_TeamBig;
 
 // PythonClass PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_TeamTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_TeamTips final : public UPyMarvelUserWidget
 {
 public:
@@ -164,15 +162,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_TeamTips">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_TeamTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_TeamTips")
 	}
 	static class UPyWidget_League_ScheduleOverview_TeamTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_TeamTips>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_TeamTips) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_TeamTips");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_TeamTips) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_TeamTips");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_TeamTips;
 
 }
 

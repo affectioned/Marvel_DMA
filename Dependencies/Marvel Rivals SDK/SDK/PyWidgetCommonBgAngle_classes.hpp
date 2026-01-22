@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // PythonClass PyWidgetCommonBgAngle.PyWidgetCommonBgAngle
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidgetCommonBgAngle : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EAngle>                                ImgToCollapse;                                     // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EAngle, struct FVector2D>                ImgToTransform;                                    // 0x05D0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EAngle>                                ImgToCollapse;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EAngle, struct FVector2D>                ImgToTransform;                                    // 0x05D8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetCommonBgAngle">();
+		STATIC_CLASS_IMPL("PyWidgetCommonBgAngle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetCommonBgAngle")
 	}
 	static class UPyWidgetCommonBgAngle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetCommonBgAngle>();
 	}
 };
-static_assert(alignof(UPyWidgetCommonBgAngle) == 0x000008, "Wrong alignment on UPyWidgetCommonBgAngle");
-static_assert(sizeof(UPyWidgetCommonBgAngle) == 0x000620, "Wrong size on UPyWidgetCommonBgAngle");
-static_assert(offsetof(UPyWidgetCommonBgAngle, ImgToCollapse) == 0x0005C0, "Member 'UPyWidgetCommonBgAngle::ImgToCollapse' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonBgAngle, ImgToTransform) == 0x0005D0, "Member 'UPyWidgetCommonBgAngle::ImgToTransform' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetCommonBgAngle;
 
 }
 

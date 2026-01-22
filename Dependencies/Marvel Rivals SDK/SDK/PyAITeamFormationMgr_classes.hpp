@@ -31,18 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITeamFormation">();
+		STATIC_CLASS_IMPL("PyAITeamFormation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITeamFormation")
 	}
 	static class UPyAITeamFormation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAITeamFormation>();
 	}
 };
-static_assert(alignof(UPyAITeamFormation) == 0x000008, "Wrong alignment on UPyAITeamFormation");
-static_assert(sizeof(UPyAITeamFormation) == 0x000050, "Wrong size on UPyAITeamFormation");
-static_assert(offsetof(UPyAITeamFormation, Teammates) == 0x000030, "Member 'UPyAITeamFormation::Teammates' has a wrong offset!");
-static_assert(offsetof(UPyAITeamFormation, TeamRange) == 0x000040, "Member 'UPyAITeamFormation::TeamRange' has a wrong offset!");
-static_assert(offsetof(UPyAITeamFormation, Captain) == 0x000048, "Member 'UPyAITeamFormation::Captain' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAITeamFormation;
 
 // PythonClass PyAITeamFormationMgr.PyAITeamFormationMgr
 // 0x00A0 (0x01A8 - 0x0108)
@@ -58,17 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITeamFormationMgr">();
+		STATIC_CLASS_IMPL("PyAITeamFormationMgr")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITeamFormationMgr")
 	}
 	static class UPyAITeamFormationMgr* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAITeamFormationMgr>();
 	}
 };
-static_assert(alignof(UPyAITeamFormationMgr) == 0x000008, "Wrong alignment on UPyAITeamFormationMgr");
-static_assert(sizeof(UPyAITeamFormationMgr) == 0x0001A8, "Wrong size on UPyAITeamFormationMgr");
-static_assert(offsetof(UPyAITeamFormationMgr, TeamFormationMap) == 0x000108, "Member 'UPyAITeamFormationMgr::TeamFormationMap' has a wrong offset!");
-static_assert(offsetof(UPyAITeamFormationMgr, TeamFormationRangeMap) == 0x000158, "Member 'UPyAITeamFormationMgr::TeamFormationRangeMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAITeamFormationMgr;
 
 }
 

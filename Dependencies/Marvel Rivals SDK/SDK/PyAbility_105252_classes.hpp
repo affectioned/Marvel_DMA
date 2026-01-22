@@ -18,32 +18,32 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105252.PyConfig_105252
-// 0x0F68 (0x1000 - 0x0098)
+// 0x13C8 (0x1460 - 0x0098)
 class UPyConfig_105252 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       ScopeTraceRule;                                    // 0x0C60(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            DamageCurve;                                       // 0x0FF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       ScopeTraceRule;                                    // 0x0F80(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DamageCurve;                                       // 0x1458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105252">();
+		STATIC_CLASS_IMPL("PyConfig_105252")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105252")
 	}
 	static class UPyConfig_105252* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105252>();
 	}
 };
-static_assert(alignof(UPyConfig_105252) == 0x000008, "Wrong alignment on UPyConfig_105252");
-static_assert(sizeof(UPyConfig_105252) == 0x001000, "Wrong size on UPyConfig_105252");
-static_assert(offsetof(UPyConfig_105252, DashInfo) == 0x000098, "Member 'UPyConfig_105252::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105252, ScopeTraceRule) == 0x000C60, "Member 'UPyConfig_105252::ScopeTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105252, DamageCurve) == 0x000FF8, "Member 'UPyConfig_105252::DamageCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105252;
 
 // PythonClass PyAbility_105252.PyAbility_105252
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105252 final : public UMarvelGameplayAbility
 {
 public:
@@ -59,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105252">();
+		STATIC_CLASS_IMPL("PyAbility_105252")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105252")
 	}
 	static class UPyAbility_105252* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105252>();
 	}
 };
-static_assert(alignof(UPyAbility_105252) == 0x000008, "Wrong alignment on UPyAbility_105252");
-static_assert(sizeof(UPyAbility_105252) == 0x0029F0, "Wrong size on UPyAbility_105252");
+DUMPER7_ASSERTS_UPyAbility_105252;
 
 }
 

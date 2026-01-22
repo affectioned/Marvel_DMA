@@ -23,9 +23,7 @@ struct PyAbility_103991_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103991_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_103991_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_103991_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_103991_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_103991_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_103991_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103991_K2_OnEndAbility;
 
 // PythonFunction PyAbility_103991.PyAbility_103991.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_103991_NativeOnMontageEvent final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103991_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_103991_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_103991_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_103991_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_103991_NativeOnMontageEvent, EventTag) == 0x000000, "Member 'PyAbility_103991_NativeOnMontageEvent::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103991_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_103991.PyEffectiveComponent_10399101.K2_OnPreApplyContainer
 // 0x0020 (0x0020 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10399101_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10399101_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10399101_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10399101_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10399101_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10399101_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10399101_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10399101_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10399101_K2_OnPreApplyContainer;
 
 }
 

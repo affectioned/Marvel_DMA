@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_BreakIce">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_BreakIce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_BreakIce")
 	}
 	static class UPyExtension_ShowItem_BreakIce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_BreakIce>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_BreakIce) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_BreakIce");
-static_assert(sizeof(UPyExtension_ShowItem_BreakIce) == 0x000030, "Wrong size on UPyExtension_ShowItem_BreakIce");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_BreakIce;
 
 }
 

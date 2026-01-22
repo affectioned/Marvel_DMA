@@ -32,20 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Activity127">();
+		STATIC_CLASS_IMPL("PyLevelController_Activity127")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Activity127")
 	}
 	static class APyLevelController_Activity127* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Activity127>();
 	}
 };
-static_assert(alignof(APyLevelController_Activity127) == 0x000010, "Wrong alignment on APyLevelController_Activity127");
-static_assert(sizeof(APyLevelController_Activity127) == 0x0008F0, "Wrong size on APyLevelController_Activity127");
-static_assert(offsetof(APyLevelController_Activity127, LS_FadeIn) == 0x0006E0, "Member 'APyLevelController_Activity127::LS_FadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity127, LS_Loop) == 0x000760, "Member 'APyLevelController_Activity127::LS_Loop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity127, LS_Hero_FadeIn) == 0x0007E0, "Member 'APyLevelController_Activity127::LS_Hero_FadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity127, LS_Hero_Loop) == 0x000860, "Member 'APyLevelController_Activity127::LS_Hero_Loop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity127, OnFadeInFinished) == 0x0008E0, "Member 'APyLevelController_Activity127::OnFadeInFinished' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_Activity127;
 
 }
 

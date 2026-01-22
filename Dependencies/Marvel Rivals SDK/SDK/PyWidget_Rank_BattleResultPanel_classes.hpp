@@ -19,29 +19,29 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Rank_BattleResultPanel.PyWidget_Rank_LiftingDan
-// 0x0140 (0x0738 - 0x05F8)
+// 0x0140 (0x0740 - 0x0600)
 class UPyWidget_Rank_LiftingDan final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<TSubclassOf<class UUserWidget>>        UIBP_Dan_Icon_Lifting_Vx_List;                     // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_1;                                 // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_2;                                 // 0x061C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_3;                                 // 0x0630(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_4;                                 // 0x0644(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_5;                                 // 0x0658(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_6;                                 // 0x066C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_7;                                 // 0x0680(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_8;                                 // 0x0694(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_DanTextBg_9;                                 // 0x06A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6BC[0x4];                                      // 0x06BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TArray<struct FSlateColor>>            Dark_Color_List1;                                  // 0x06C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<TArray<struct FSlateColor>>            Dark_Color_List2;                                  // 0x06D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMaterialParameterCollection*           MPC_UIParameterCollection;                         // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_RankUp;                                    // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_LevelUp;                                   // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Qualification1;                              // 0x06F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Qualification2;                              // 0x070C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Qualification3;                              // 0x0720(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class UUserWidget>>        UIBP_Dan_Icon_Lifting_Vx_List;                     // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_1;                                 // 0x0610(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_2;                                 // 0x0624(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_3;                                 // 0x0638(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_4;                                 // 0x064C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_5;                                 // 0x0660(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_6;                                 // 0x0674(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_7;                                 // 0x0688(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_8;                                 // 0x069C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DanTextBg_9;                                 // 0x06B0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6C4[0x4];                                      // 0x06C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TArray<struct FSlateColor>>            Dark_Color_List1;                                  // 0x06C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<TArray<struct FSlateColor>>            Dark_Color_List2;                                  // 0x06D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialParameterCollection*           MPC_UIParameterCollection;                         // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_RankUp;                                    // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_LevelUp;                                   // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Qualification1;                              // 0x0700(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Qualification2;                              // 0x0714(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Qualification3;                              // 0x0728(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,46 +50,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_LiftingDan">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_LiftingDan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_LiftingDan")
 	}
 	static class UPyWidget_Rank_LiftingDan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_LiftingDan>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_LiftingDan) == 0x000008, "Wrong alignment on UPyWidget_Rank_LiftingDan");
-static_assert(sizeof(UPyWidget_Rank_LiftingDan) == 0x000738, "Wrong size on UPyWidget_Rank_LiftingDan");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, UIBP_Dan_Icon_Lifting_Vx_List) == 0x0005F8, "Member 'UPyWidget_Rank_LiftingDan::UIBP_Dan_Icon_Lifting_Vx_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_1) == 0x000608, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_2) == 0x00061C, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_3) == 0x000630, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_4) == 0x000644, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_5) == 0x000658, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_5' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_6) == 0x00066C, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_6' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_7) == 0x000680, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_7' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_8) == 0x000694, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_8' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_DanTextBg_9) == 0x0006A8, "Member 'UPyWidget_Rank_LiftingDan::Color_DanTextBg_9' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Dark_Color_List1) == 0x0006C0, "Member 'UPyWidget_Rank_LiftingDan::Dark_Color_List1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Dark_Color_List2) == 0x0006D0, "Member 'UPyWidget_Rank_LiftingDan::Dark_Color_List2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, MPC_UIParameterCollection) == 0x0006E0, "Member 'UPyWidget_Rank_LiftingDan::MPC_UIParameterCollection' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, AkEvent_RankUp) == 0x0006E8, "Member 'UPyWidget_Rank_LiftingDan::AkEvent_RankUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, AkEvent_LevelUp) == 0x0006F0, "Member 'UPyWidget_Rank_LiftingDan::AkEvent_LevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_Qualification1) == 0x0006F8, "Member 'UPyWidget_Rank_LiftingDan::Color_Qualification1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_Qualification2) == 0x00070C, "Member 'UPyWidget_Rank_LiftingDan::Color_Qualification2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_LiftingDan, Color_Qualification3) == 0x000720, "Member 'UPyWidget_Rank_LiftingDan::Color_Qualification3' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_LiftingDan;
 
 // PythonClass PyWidget_Rank_BattleResultPanel.PyWidget_Rank_BattleResultPanel
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Rank_BattleResultPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayTime_TimeCrys;                                // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpgradeAnimTime;                                   // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTime_RankInfo;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_LoseCrys;                                // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_RankRecover;                             // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Down;                                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayTime_TimeCrys;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpgradeAnimTime;                                   // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTime_RankInfo;                                // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_LoseCrys;                                // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_RankRecover;                             // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Down;                                      // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -102,21 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_BattleResultPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_BattleResultPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_BattleResultPanel")
 	}
 	static class UPyWidget_Rank_BattleResultPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_BattleResultPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_BattleResultPanel) == 0x000008, "Wrong alignment on UPyWidget_Rank_BattleResultPanel");
-static_assert(sizeof(UPyWidget_Rank_BattleResultPanel) == 0x0005D8, "Wrong size on UPyWidget_Rank_BattleResultPanel");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, DelayTime_TimeCrys) == 0x0005BC, "Member 'UPyWidget_Rank_BattleResultPanel::DelayTime_TimeCrys' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, UpgradeAnimTime) == 0x0005C0, "Member 'UPyWidget_Rank_BattleResultPanel::UpgradeAnimTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, DelayTime_RankInfo) == 0x0005C4, "Member 'UPyWidget_Rank_BattleResultPanel::DelayTime_RankInfo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, DelatTime_LoseCrys) == 0x0005C8, "Member 'UPyWidget_Rank_BattleResultPanel::DelatTime_LoseCrys' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, DelatTime_RankRecover) == 0x0005CC, "Member 'UPyWidget_Rank_BattleResultPanel::DelatTime_RankRecover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_BattleResultPanel, AkEvent_Down) == 0x0005D0, "Member 'UPyWidget_Rank_BattleResultPanel::AkEvent_Down' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_BattleResultPanel;
 
 }
 

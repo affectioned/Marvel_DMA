@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_StarLordElementGun.Weapon_StarLordElementGun_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_StarLordElementGun_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_StarLordElementGun_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_StarLordElementGun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_StarLordElementGun_C")
 	}
 	static class AWeapon_StarLordElementGun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_StarLordElementGun_C>();
 	}
 };
-static_assert(alignof(AWeapon_StarLordElementGun_C) == 0x000010, "Wrong alignment on AWeapon_StarLordElementGun_C");
-static_assert(sizeof(AWeapon_StarLordElementGun_C) == 0x000CB0, "Wrong size on AWeapon_StarLordElementGun_C");
+DUMPER7_ASSERTS_AWeapon_StarLordElementGun_C;
 
 }
 

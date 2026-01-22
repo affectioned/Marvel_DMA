@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineAtlasAsset">();
+		STATIC_CLASS_IMPL("SpineAtlasAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineAtlasAsset")
 	}
 	static class USpineAtlasAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineAtlasAsset>();
 	}
 };
-static_assert(alignof(USpineAtlasAsset) == 0x000008, "Wrong alignment on USpineAtlasAsset");
-static_assert(sizeof(USpineAtlasAsset) == 0x000068, "Wrong size on USpineAtlasAsset");
-static_assert(offsetof(USpineAtlasAsset, atlasPages) == 0x000030, "Member 'USpineAtlasAsset::atlasPages' has a wrong offset!");
-static_assert(offsetof(USpineAtlasAsset, rawData) == 0x000048, "Member 'USpineAtlasAsset::rawData' has a wrong offset!");
-static_assert(offsetof(USpineAtlasAsset, atlasFileName) == 0x000058, "Member 'USpineAtlasAsset::atlasFileName' has a wrong offset!");
+DUMPER7_ASSERTS_USpineAtlasAsset;
 
 // Class SpinePlugin.SpineBoneDriverComponent
 // 0x0020 (0x0360 - 0x0340)
@@ -68,21 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineBoneDriverComponent">();
+		STATIC_CLASS_IMPL("SpineBoneDriverComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineBoneDriverComponent")
 	}
 	static class USpineBoneDriverComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineBoneDriverComponent>();
 	}
 };
-static_assert(alignof(USpineBoneDriverComponent) == 0x000010, "Wrong alignment on USpineBoneDriverComponent");
-static_assert(sizeof(USpineBoneDriverComponent) == 0x000360, "Wrong size on USpineBoneDriverComponent");
-static_assert(offsetof(USpineBoneDriverComponent, Target) == 0x000338, "Member 'USpineBoneDriverComponent::Target' has a wrong offset!");
-static_assert(offsetof(USpineBoneDriverComponent, BoneName) == 0x000340, "Member 'USpineBoneDriverComponent::BoneName' has a wrong offset!");
-static_assert(offsetof(USpineBoneDriverComponent, UseComponentTransform) == 0x000350, "Member 'USpineBoneDriverComponent::UseComponentTransform' has a wrong offset!");
-static_assert(offsetof(USpineBoneDriverComponent, UsePosition) == 0x000351, "Member 'USpineBoneDriverComponent::UsePosition' has a wrong offset!");
-static_assert(offsetof(USpineBoneDriverComponent, UseRotation) == 0x000352, "Member 'USpineBoneDriverComponent::UseRotation' has a wrong offset!");
-static_assert(offsetof(USpineBoneDriverComponent, UseScale) == 0x000353, "Member 'USpineBoneDriverComponent::UseScale' has a wrong offset!");
+DUMPER7_ASSERTS_USpineBoneDriverComponent;
 
 // Class SpinePlugin.SpineBoneFollowerComponent
 // 0x0020 (0x0360 - 0x0340)
@@ -100,21 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineBoneFollowerComponent">();
+		STATIC_CLASS_IMPL("SpineBoneFollowerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineBoneFollowerComponent")
 	}
 	static class USpineBoneFollowerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineBoneFollowerComponent>();
 	}
 };
-static_assert(alignof(USpineBoneFollowerComponent) == 0x000010, "Wrong alignment on USpineBoneFollowerComponent");
-static_assert(sizeof(USpineBoneFollowerComponent) == 0x000360, "Wrong size on USpineBoneFollowerComponent");
-static_assert(offsetof(USpineBoneFollowerComponent, Target) == 0x000338, "Member 'USpineBoneFollowerComponent::Target' has a wrong offset!");
-static_assert(offsetof(USpineBoneFollowerComponent, BoneName) == 0x000340, "Member 'USpineBoneFollowerComponent::BoneName' has a wrong offset!");
-static_assert(offsetof(USpineBoneFollowerComponent, UseComponentTransform) == 0x000350, "Member 'USpineBoneFollowerComponent::UseComponentTransform' has a wrong offset!");
-static_assert(offsetof(USpineBoneFollowerComponent, UsePosition) == 0x000351, "Member 'USpineBoneFollowerComponent::UsePosition' has a wrong offset!");
-static_assert(offsetof(USpineBoneFollowerComponent, UseRotation) == 0x000352, "Member 'USpineBoneFollowerComponent::UseRotation' has a wrong offset!");
-static_assert(offsetof(USpineBoneFollowerComponent, UseScale) == 0x000353, "Member 'USpineBoneFollowerComponent::UseScale' has a wrong offset!");
+DUMPER7_ASSERTS_USpineBoneFollowerComponent;
 
 // Class SpinePlugin.TrackEntry
 // 0x0068 (0x0098 - 0x0030)
@@ -166,21 +160,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TrackEntry">();
+		STATIC_CLASS_IMPL("TrackEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrackEntry")
 	}
 	static class UTrackEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrackEntry>();
 	}
 };
-static_assert(alignof(UTrackEntry) == 0x000008, "Wrong alignment on UTrackEntry");
-static_assert(sizeof(UTrackEntry) == 0x000098, "Wrong size on UTrackEntry");
-static_assert(offsetof(UTrackEntry, AnimationStart) == 0x000030, "Member 'UTrackEntry::AnimationStart' has a wrong offset!");
-static_assert(offsetof(UTrackEntry, AnimationInterrupt) == 0x000040, "Member 'UTrackEntry::AnimationInterrupt' has a wrong offset!");
-static_assert(offsetof(UTrackEntry, AnimationEvent) == 0x000050, "Member 'UTrackEntry::AnimationEvent' has a wrong offset!");
-static_assert(offsetof(UTrackEntry, AnimationComplete) == 0x000060, "Member 'UTrackEntry::AnimationComplete' has a wrong offset!");
-static_assert(offsetof(UTrackEntry, AnimationEnd) == 0x000070, "Member 'UTrackEntry::AnimationEnd' has a wrong offset!");
-static_assert(offsetof(UTrackEntry, AnimationDispose) == 0x000080, "Member 'UTrackEntry::AnimationDispose' has a wrong offset!");
+DUMPER7_ASSERTS_UTrackEntry;
 
 // Class SpinePlugin.SpineSkeletonComponent
 // 0x0060 (0x0168 - 0x0108)
@@ -221,19 +212,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineSkeletonComponent">();
+		STATIC_CLASS_IMPL("SpineSkeletonComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineSkeletonComponent")
 	}
 	static class USpineSkeletonComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineSkeletonComponent>();
 	}
 };
-static_assert(alignof(USpineSkeletonComponent) == 0x000008, "Wrong alignment on USpineSkeletonComponent");
-static_assert(sizeof(USpineSkeletonComponent) == 0x000168, "Wrong size on USpineSkeletonComponent");
-static_assert(offsetof(USpineSkeletonComponent, Atlas) == 0x000108, "Member 'USpineSkeletonComponent::Atlas' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonComponent, SkeletonData) == 0x000110, "Member 'USpineSkeletonComponent::SkeletonData' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonComponent, BeforeUpdateWorldTransform) == 0x000118, "Member 'USpineSkeletonComponent::BeforeUpdateWorldTransform' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonComponent, AfterUpdateWorldTransform) == 0x000128, "Member 'USpineSkeletonComponent::AfterUpdateWorldTransform' has a wrong offset!");
+DUMPER7_ASSERTS_USpineSkeletonComponent;
 
 // Class SpinePlugin.SpineSkeletonAnimationComponent
 // 0x0108 (0x0270 - 0x0168)
@@ -270,25 +260,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineSkeletonAnimationComponent">();
+		STATIC_CLASS_IMPL("SpineSkeletonAnimationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineSkeletonAnimationComponent")
 	}
 	static class USpineSkeletonAnimationComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineSkeletonAnimationComponent>();
 	}
 };
-static_assert(alignof(USpineSkeletonAnimationComponent) == 0x000008, "Wrong alignment on USpineSkeletonAnimationComponent");
-static_assert(sizeof(USpineSkeletonAnimationComponent) == 0x000270, "Wrong size on USpineSkeletonAnimationComponent");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationStart) == 0x000168, "Member 'USpineSkeletonAnimationComponent::AnimationStart' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationInterrupt) == 0x000178, "Member 'USpineSkeletonAnimationComponent::AnimationInterrupt' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationEvent) == 0x000188, "Member 'USpineSkeletonAnimationComponent::AnimationEvent' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationComplete) == 0x000198, "Member 'USpineSkeletonAnimationComponent::AnimationComplete' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationEnd) == 0x0001A8, "Member 'USpineSkeletonAnimationComponent::AnimationEnd' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, AnimationDispose) == 0x0001B8, "Member 'USpineSkeletonAnimationComponent::AnimationDispose' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, PreviewAnimation) == 0x0001C8, "Member 'USpineSkeletonAnimationComponent::PreviewAnimation' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, PreviewSkin) == 0x0001D8, "Member 'USpineSkeletonAnimationComponent::PreviewSkin' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, trackEntries) == 0x0001F0, "Member 'USpineSkeletonAnimationComponent::trackEntries' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonAnimationComponent, bAutoPlaying) == 0x000240, "Member 'USpineSkeletonAnimationComponent::bAutoPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_USpineSkeletonAnimationComponent;
 
 // Class SpinePlugin.SpineSkeletonDataAsset
 // 0x00D8 (0x0108 - 0x0030)
@@ -310,24 +293,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineSkeletonDataAsset">();
+		STATIC_CLASS_IMPL("SpineSkeletonDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineSkeletonDataAsset")
 	}
 	static class USpineSkeletonDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineSkeletonDataAsset>();
 	}
 };
-static_assert(alignof(USpineSkeletonDataAsset) == 0x000008, "Wrong alignment on USpineSkeletonDataAsset");
-static_assert(sizeof(USpineSkeletonDataAsset) == 0x000108, "Wrong size on USpineSkeletonDataAsset");
-static_assert(offsetof(USpineSkeletonDataAsset, DefaultMix) == 0x000030, "Member 'USpineSkeletonDataAsset::DefaultMix' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, MixData) == 0x000038, "Member 'USpineSkeletonDataAsset::MixData' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, Bones) == 0x000048, "Member 'USpineSkeletonDataAsset::Bones' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, Slots) == 0x000058, "Member 'USpineSkeletonDataAsset::Slots' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, Skins) == 0x000068, "Member 'USpineSkeletonDataAsset::Skins' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, Animations) == 0x000078, "Member 'USpineSkeletonDataAsset::Animations' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, Events) == 0x000088, "Member 'USpineSkeletonDataAsset::Events' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, rawData) == 0x000098, "Member 'USpineSkeletonDataAsset::rawData' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonDataAsset, skeletonDataFileName) == 0x0000A8, "Member 'USpineSkeletonDataAsset::skeletonDataFileName' has a wrong offset!");
+DUMPER7_ASSERTS_USpineSkeletonDataAsset;
 
 // Class SpinePlugin.SpineSkeletonRendererComponent
 // 0x03C0 (0x0CC0 - 0x0900)
@@ -348,34 +325,25 @@ public:
 	uint8                                         Pad_A50[0x50];                                     // 0x0A50(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DepthOffset;                                       // 0x0AA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   TextureParameterName;                              // 0x0AA4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color;                                             // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateCollision;                                  // 0x0AC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_AC1[0x1FF];                                    // 0x0AC1(0x01FF)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineSkeletonRendererComponent">();
+		STATIC_CLASS_IMPL("SpineSkeletonRendererComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineSkeletonRendererComponent")
 	}
 	static class USpineSkeletonRendererComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineSkeletonRendererComponent>();
 	}
 };
-static_assert(alignof(USpineSkeletonRendererComponent) == 0x000010, "Wrong alignment on USpineSkeletonRendererComponent");
-static_assert(sizeof(USpineSkeletonRendererComponent) == 0x000CC0, "Wrong size on USpineSkeletonRendererComponent");
-static_assert(offsetof(USpineSkeletonRendererComponent, NormalBlendMaterial) == 0x000900, "Member 'USpineSkeletonRendererComponent::NormalBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, AdditiveBlendMaterial) == 0x000908, "Member 'USpineSkeletonRendererComponent::AdditiveBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, MultiplyBlendMaterial) == 0x000910, "Member 'USpineSkeletonRendererComponent::MultiplyBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, ScreenBlendMaterial) == 0x000918, "Member 'USpineSkeletonRendererComponent::ScreenBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, atlasNormalBlendMaterials) == 0x000920, "Member 'USpineSkeletonRendererComponent::atlasNormalBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, atlasAdditiveBlendMaterials) == 0x000980, "Member 'USpineSkeletonRendererComponent::atlasAdditiveBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, atlasMultiplyBlendMaterials) == 0x0009E0, "Member 'USpineSkeletonRendererComponent::atlasMultiplyBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, atlasScreenBlendMaterials) == 0x000A40, "Member 'USpineSkeletonRendererComponent::atlasScreenBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, DepthOffset) == 0x000AA0, "Member 'USpineSkeletonRendererComponent::DepthOffset' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, TextureParameterName) == 0x000AA4, "Member 'USpineSkeletonRendererComponent::TextureParameterName' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, Color) == 0x000AB0, "Member 'USpineSkeletonRendererComponent::Color' has a wrong offset!");
-static_assert(offsetof(USpineSkeletonRendererComponent, bCreateCollision) == 0x000AC0, "Member 'USpineSkeletonRendererComponent::bCreateCollision' has a wrong offset!");
+DUMPER7_ASSERTS_USpineSkeletonRendererComponent;
 
 // Class SpinePlugin.SpineWidget
 // 0x05C8 (0x0780 - 0x01B8)
@@ -385,14 +353,16 @@ public:
 	class FString                                 InitialSkin;                                       // 0x01B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USpineAtlasAsset*                       Atlas;                                             // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USpineSkeletonDataAsset*                SkeletonData;                                      // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     NormalBlendMaterial;                               // 0x01D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     AdditiveBlendMaterial;                             // 0x01E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MultiplyBlendMaterial;                             // 0x01E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     ScreenBlendMaterial;                               // 0x01F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   TextureParameterName;                              // 0x01F8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DepthOffset;                                       // 0x0204(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Color;                                             // 0x0208(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218[0x8];                                      // 0x0218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          IsOpenAutoTick;                                    // 0x01D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AutoTickDeltaTime;                                 // 0x01DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     NormalBlendMaterial;                               // 0x01E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     AdditiveBlendMaterial;                             // 0x01E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MultiplyBlendMaterial;                             // 0x01F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     ScreenBlendMaterial;                               // 0x01F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   TextureParameterName;                              // 0x0200(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DepthOffset;                                       // 0x020C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0210(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            Brush;                                             // 0x0220(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class USpineWidget* skeleton)> BeforeUpdateWorldTransform;         // 0x02F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class USpineWidget* skeleton)> AfterUpdateWorldTransform;          // 0x0300(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -416,8 +386,11 @@ public:
 	uint8                                         Pad_771[0xF];                                      // 0x0771(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	static void BatchTickSpineWidgets(const TArray<class USpineWidget*>& InWidgets, float DeltaTime, bool CallDelegates);
+
 	class UTrackEntry* AddAnimation(int32 trackIndex, const class FString& animationName, bool loop, float delay);
 	class UTrackEntry* AddEmptyAnimation(int32 trackIndex, float mixDuration, float delay);
+	void AutoTick(float CurrDetaTime);
 	void CheckState();
 	void ClearTrack(int32 trackIndex);
 	void ClearTracks();
@@ -439,8 +412,10 @@ public:
 	void SetAnimationStateDelegateEnabled(bool bEnabled);
 	bool SetAttachment(const class FString& slotName, const class FString& attachmentName);
 	void SetAutoPlay(bool bInAutoPlays);
+	void SetAutoTickDeltaTime(float DeltaTime);
 	void SetBonesToSetupPose();
 	class UTrackEntry* SetEmptyAnimation(int32 trackIndex, float mixDuration);
+	void SetIsOpenAutoTick(bool IsOpen);
 	void SetPlaybackTime(float InPlaybackTime, bool bCallDelegates);
 	void SetScaleX(float scaleX);
 	void SetScaleY(float scaleY);
@@ -455,40 +430,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpineWidget">();
+		STATIC_CLASS_IMPL("SpineWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpineWidget")
 	}
 	static class USpineWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpineWidget>();
 	}
 };
-static_assert(alignof(USpineWidget) == 0x000010, "Wrong alignment on USpineWidget");
-static_assert(sizeof(USpineWidget) == 0x000780, "Wrong size on USpineWidget");
-static_assert(offsetof(USpineWidget, InitialSkin) == 0x0001B8, "Member 'USpineWidget::InitialSkin' has a wrong offset!");
-static_assert(offsetof(USpineWidget, Atlas) == 0x0001C8, "Member 'USpineWidget::Atlas' has a wrong offset!");
-static_assert(offsetof(USpineWidget, SkeletonData) == 0x0001D0, "Member 'USpineWidget::SkeletonData' has a wrong offset!");
-static_assert(offsetof(USpineWidget, NormalBlendMaterial) == 0x0001D8, "Member 'USpineWidget::NormalBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AdditiveBlendMaterial) == 0x0001E0, "Member 'USpineWidget::AdditiveBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineWidget, MultiplyBlendMaterial) == 0x0001E8, "Member 'USpineWidget::MultiplyBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineWidget, ScreenBlendMaterial) == 0x0001F0, "Member 'USpineWidget::ScreenBlendMaterial' has a wrong offset!");
-static_assert(offsetof(USpineWidget, TextureParameterName) == 0x0001F8, "Member 'USpineWidget::TextureParameterName' has a wrong offset!");
-static_assert(offsetof(USpineWidget, DepthOffset) == 0x000204, "Member 'USpineWidget::DepthOffset' has a wrong offset!");
-static_assert(offsetof(USpineWidget, Color) == 0x000208, "Member 'USpineWidget::Color' has a wrong offset!");
-static_assert(offsetof(USpineWidget, Brush) == 0x000220, "Member 'USpineWidget::Brush' has a wrong offset!");
-static_assert(offsetof(USpineWidget, BeforeUpdateWorldTransform) == 0x0002F0, "Member 'USpineWidget::BeforeUpdateWorldTransform' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AfterUpdateWorldTransform) == 0x000300, "Member 'USpineWidget::AfterUpdateWorldTransform' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationStart) == 0x000310, "Member 'USpineWidget::AnimationStart' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationInterrupt) == 0x000320, "Member 'USpineWidget::AnimationInterrupt' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationEvent) == 0x000330, "Member 'USpineWidget::AnimationEvent' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationComplete) == 0x000340, "Member 'USpineWidget::AnimationComplete' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationEnd) == 0x000350, "Member 'USpineWidget::AnimationEnd' has a wrong offset!");
-static_assert(offsetof(USpineWidget, AnimationDispose) == 0x000360, "Member 'USpineWidget::AnimationDispose' has a wrong offset!");
-static_assert(offsetof(USpineWidget, atlasNormalBlendMaterials) == 0x0003B0, "Member 'USpineWidget::atlasNormalBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineWidget, atlasAdditiveBlendMaterials) == 0x000410, "Member 'USpineWidget::atlasAdditiveBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineWidget, atlasMultiplyBlendMaterials) == 0x000470, "Member 'USpineWidget::atlasMultiplyBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineWidget, atlasScreenBlendMaterials) == 0x0004D0, "Member 'USpineWidget::atlasScreenBlendMaterials' has a wrong offset!");
-static_assert(offsetof(USpineWidget, trackEntries) == 0x000720, "Member 'USpineWidget::trackEntries' has a wrong offset!");
-static_assert(offsetof(USpineWidget, bAutoPlaying) == 0x000770, "Member 'USpineWidget::bAutoPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_USpineWidget;
 
 }
 

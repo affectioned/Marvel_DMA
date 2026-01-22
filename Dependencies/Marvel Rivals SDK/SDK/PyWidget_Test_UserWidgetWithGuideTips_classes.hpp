@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Test_UserWidgetWithGuideTips">();
+		STATIC_CLASS_IMPL("PyWidget_Test_UserWidgetWithGuideTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Test_UserWidgetWithGuideTips")
 	}
 	static class UPyWidget_Test_UserWidgetWithGuideTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Test_UserWidgetWithGuideTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Test_UserWidgetWithGuideTips) == 0x000008, "Wrong alignment on UPyWidget_Test_UserWidgetWithGuideTips");
-static_assert(sizeof(UPyWidget_Test_UserWidgetWithGuideTips) == 0x0003C8, "Wrong size on UPyWidget_Test_UserWidgetWithGuideTips");
-static_assert(offsetof(UPyWidget_Test_UserWidgetWithGuideTips, GuideTipsStyles) == 0x0003B8, "Member 'UPyWidget_Test_UserWidgetWithGuideTips::GuideTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Test_UserWidgetWithGuideTips;
 
 }
 

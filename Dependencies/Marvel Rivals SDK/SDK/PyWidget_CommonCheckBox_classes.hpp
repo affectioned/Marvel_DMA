@@ -18,30 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CommonCheckBox.PyWidget_CommonCheckBox
-// 0x01E8 (0x0910 - 0x0728)
+// 0x01E0 (0x0960 - 0x0780)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_CommonCheckBox : public UPyWidget_Button
 {
 public:
-	bool                                          IsCheck;                                           // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUnuseHoverFrame;                                 // 0x0729(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_72A[0x6];                                      // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CheckText;                                         // 0x0730(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         ButtonTextFont;                                    // 0x0748(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnTextColor_Normal;                               // 0x07B0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnTextColor_Hovered;                              // 0x07C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnTextColor_Pressed;                              // 0x07D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnTextColor_Disable;                              // 0x07EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsIconVisible;                                     // 0x0800(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_801[0xF];                                      // 0x0801(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            IconBrush;                                         // 0x0810(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Check;                                        // 0x08E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Check_Icon;                                    // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BtnDiable;                                         // 0x08F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OnlyClickOnce;                                     // 0x08F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DisableText;                                       // 0x08F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8F3[0x5];                                      // 0x08F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool Checked)>  OnCheckStateChanged;                               // 0x08F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsCheck;                                           // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUnuseHoverFrame;                                 // 0x0781(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_782[0x6];                                      // 0x0782(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CheckText;                                         // 0x0788(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ButtonTextFont;                                    // 0x07A0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Normal;                               // 0x0808(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Hovered;                              // 0x081C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Pressed;                              // 0x0830(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Disable;                              // 0x0844(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsIconVisible;                                     // 0x0858(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_859[0x7];                                      // 0x0859(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            IconBrush;                                         // 0x0860(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Check;                                        // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Check_Icon;                                    // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BtnDiable;                                         // 0x0940(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OnlyClickOnce;                                     // 0x0941(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DisableText;                                       // 0x0942(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_943[0x5];                                      // 0x0943(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool Checked)>  OnCheckStateChanged;                               // 0x0948(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,7 +51,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonCheckBox">();
+		STATIC_CLASS_IMPL("PyWidget_CommonCheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonCheckBox")
 	}
 	static class UPyWidget_CommonCheckBox* GetDefaultObj()
 	{
@@ -59,24 +63,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CommonCheckBox) == 0x000010, "Wrong alignment on UPyWidget_CommonCheckBox");
-static_assert(sizeof(UPyWidget_CommonCheckBox) == 0x000910, "Wrong size on UPyWidget_CommonCheckBox");
-static_assert(offsetof(UPyWidget_CommonCheckBox, IsCheck) == 0x000728, "Member 'UPyWidget_CommonCheckBox::IsCheck' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, IsUnuseHoverFrame) == 0x000729, "Member 'UPyWidget_CommonCheckBox::IsUnuseHoverFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, CheckText) == 0x000730, "Member 'UPyWidget_CommonCheckBox::CheckText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, ButtonTextFont) == 0x000748, "Member 'UPyWidget_CommonCheckBox::ButtonTextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, BtnTextColor_Normal) == 0x0007B0, "Member 'UPyWidget_CommonCheckBox::BtnTextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, BtnTextColor_Hovered) == 0x0007C4, "Member 'UPyWidget_CommonCheckBox::BtnTextColor_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, BtnTextColor_Pressed) == 0x0007D8, "Member 'UPyWidget_CommonCheckBox::BtnTextColor_Pressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, BtnTextColor_Disable) == 0x0007EC, "Member 'UPyWidget_CommonCheckBox::BtnTextColor_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, IsIconVisible) == 0x000800, "Member 'UPyWidget_CommonCheckBox::IsIconVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, IconBrush) == 0x000810, "Member 'UPyWidget_CommonCheckBox::IconBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, Text_Check) == 0x0008E0, "Member 'UPyWidget_CommonCheckBox::Text_Check' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, Img_Check_Icon) == 0x0008E8, "Member 'UPyWidget_CommonCheckBox::Img_Check_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, BtnDiable) == 0x0008F0, "Member 'UPyWidget_CommonCheckBox::BtnDiable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, OnlyClickOnce) == 0x0008F1, "Member 'UPyWidget_CommonCheckBox::OnlyClickOnce' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, DisableText) == 0x0008F2, "Member 'UPyWidget_CommonCheckBox::DisableText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonCheckBox, OnCheckStateChanged) == 0x0008F8, "Member 'UPyWidget_CommonCheckBox::OnCheckStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonCheckBox;
 
 }
 

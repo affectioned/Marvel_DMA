@@ -23,15 +23,18 @@ class UAISelectTarget_AngelaShift_ToTeammate_BP_C final : public UPyAISelectTarg
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_AngelaShift_ToTeammate_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_AngelaShift_ToTeammate_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_AngelaShift_ToTeammate_BP_C")
 	}
 	static class UAISelectTarget_AngelaShift_ToTeammate_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_AngelaShift_ToTeammate_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_AngelaShift_ToTeammate_BP_C) == 0x000008, "Wrong alignment on UAISelectTarget_AngelaShift_ToTeammate_BP_C");
-static_assert(sizeof(UAISelectTarget_AngelaShift_ToTeammate_BP_C) == 0x000080, "Wrong size on UAISelectTarget_AngelaShift_ToTeammate_BP_C");
+DUMPER7_ASSERTS_UAISelectTarget_AngelaShift_ToTeammate_BP_C;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101111.PyCue_Weapon_Loop_101111
-// 0x0000 (0x1460 - 0x1460)
+// 0x0000 (0x1470 - 0x1470)
 class APyCue_Weapon_Loop_101111 final : public ACue_Weapon_Loop_101111
 {
 public:
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_101111">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_101111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_101111")
 	}
 	static class APyCue_Weapon_Loop_101111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_101111>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_101111) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_101111");
-static_assert(sizeof(APyCue_Weapon_Loop_101111) == 0x001460, "Wrong size on APyCue_Weapon_Loop_101111");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_101111;
 
 }
 

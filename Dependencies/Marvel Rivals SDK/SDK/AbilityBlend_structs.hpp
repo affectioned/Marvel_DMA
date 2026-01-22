@@ -25,9 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 __ArrayProperty;                                   // 0x0008(0x0010)(BlueprintVisible, EditFixedSize)
 };
-static_assert(alignof(AbilityBlend::FAnimBlueprintGeneratedMutableData) == 0x000008, "Wrong alignment on AbilityBlend::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(AbilityBlend::FAnimBlueprintGeneratedMutableData) == 0x000018, "Wrong size on AbilityBlend::FAnimBlueprintGeneratedMutableData");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedMutableData, __ArrayProperty) == 0x000008, "Member 'AbilityBlend::FAnimBlueprintGeneratedMutableData::__ArrayProperty' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityBlend__FAnimBlueprintGeneratedMutableData;
 
 // ScriptStruct AbilityBlend.AbilityBlend_C.AnimBlueprintGeneratedConstantData
 // 0x01B7 (0x01B8 - 0x0001)
@@ -64,31 +62,7 @@ public:
 	struct FAnimSubsystem                         AnimBlueprintExtension_NodeRelevancy;              // 0x0198(0x0008)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x01A0(0x0018)()
 };
-static_assert(alignof(AbilityBlend::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on AbilityBlend::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(AbilityBlend::FAnimBlueprintGeneratedConstantData) == 0x0001B8, "Wrong size on AbilityBlend::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __NameProperty_276) == 0x000004, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__NameProperty_276' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ArrayProperty_277) == 0x000010, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ArrayProperty_277' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __FloatProperty_278) == 0x000020, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__FloatProperty_278' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __BoolProperty_279) == 0x000024, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__BoolProperty_279' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __FloatProperty_280) == 0x000028, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__FloatProperty_280' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __EnumProperty_281) == 0x00002C, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__EnumProperty_281' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __NameProperty_282) == 0x000030, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__NameProperty_282' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ArrayProperty_283) == 0x000040, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ArrayProperty_283' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ArrayProperty_284) == 0x000050, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ArrayProperty_284' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __StructProperty_285) == 0x000060, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__StructProperty_285' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ByteProperty_286) == 0x000088, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ByteProperty_286' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ArrayProperty_287) == 0x000090, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ArrayProperty_287' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __StructProperty_288) == 0x0000A0, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__StructProperty_288' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __BlendProfile_289) == 0x0000C8, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__BlendProfile_289' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __CurveFloat_290) == 0x0000D0, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__CurveFloat_290' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __BoolProperty_291) == 0x0000D8, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__BoolProperty_291' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __EnumProperty_292) == 0x0000D9, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__EnumProperty_292' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __EnumProperty_293) == 0x0000DA, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__EnumProperty_293' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __ArrayProperty_294) == 0x0000E0, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__ArrayProperty_294' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, __StructProperty_295) == 0x0000F0, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::__StructProperty_295' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000118, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_NodeRelevancy) == 0x000198, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_NodeRelevancy' has a wrong offset!");
-static_assert(offsetof(AbilityBlend::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0001A0, "Member 'AbilityBlend::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityBlend__FAnimBlueprintGeneratedConstantData;
 
 }
 

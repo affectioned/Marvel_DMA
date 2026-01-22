@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_WarmupGame_Popup.PyWidget_Squad_WarmupGame_Popup
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Squad_WarmupGame_Popup final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                WarmCard_Item;                                     // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                WarmCard_TrainItem;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                WarmCard_PageList;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WarmCard_Item;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WarmCard_TrainItem;                                // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WarmCard_PageList;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_WarmupGame_Popup">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_WarmupGame_Popup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_WarmupGame_Popup")
 	}
 	static class UPyWidget_Squad_WarmupGame_Popup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_WarmupGame_Popup>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_WarmupGame_Popup) == 0x000008, "Wrong alignment on UPyWidget_Squad_WarmupGame_Popup");
-static_assert(sizeof(UPyWidget_Squad_WarmupGame_Popup) == 0x000610, "Wrong size on UPyWidget_Squad_WarmupGame_Popup");
-static_assert(offsetof(UPyWidget_Squad_WarmupGame_Popup, WarmCard_Item) == 0x0005F8, "Member 'UPyWidget_Squad_WarmupGame_Popup::WarmCard_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_WarmupGame_Popup, WarmCard_TrainItem) == 0x000600, "Member 'UPyWidget_Squad_WarmupGame_Popup::WarmCard_TrainItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_WarmupGame_Popup, WarmCard_PageList) == 0x000608, "Member 'UPyWidget_Squad_WarmupGame_Popup::WarmCard_PageList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_WarmupGame_Popup;
 
 }
 

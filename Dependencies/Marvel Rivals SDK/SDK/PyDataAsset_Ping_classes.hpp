@@ -31,20 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_Ping">();
+		STATIC_CLASS_IMPL("PyDataAsset_Ping")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_Ping")
 	}
 	static class UPyDataAsset_Ping* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_Ping>();
 	}
 };
-static_assert(alignof(UPyDataAsset_Ping) == 0x000008, "Wrong alignment on UPyDataAsset_Ping");
-static_assert(sizeof(UPyDataAsset_Ping) == 0x000080, "Wrong size on UPyDataAsset_Ping");
-static_assert(offsetof(UPyDataAsset_Ping, WeakSignalColor) == 0x000038, "Member 'UPyDataAsset_Ping::WeakSignalColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Ping, MediumSignalColor) == 0x00004C, "Member 'UPyDataAsset_Ping::MediumSignalColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Ping, StrongSignalColor) == 0x000060, "Member 'UPyDataAsset_Ping::StrongSignalColor' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Ping, WeakSignalThreshold) == 0x000074, "Member 'UPyDataAsset_Ping::WeakSignalThreshold' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Ping, MediumSignalThreshold) == 0x000078, "Member 'UPyDataAsset_Ping::MediumSignalThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_Ping;
 
 }
 

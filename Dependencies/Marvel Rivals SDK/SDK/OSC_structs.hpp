@@ -21,8 +21,7 @@ struct alignas(0x08) FOSCMessage final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOSCMessage) == 0x000008, "Wrong alignment on FOSCMessage");
-static_assert(sizeof(FOSCMessage) == 0x000010, "Wrong size on FOSCMessage");
+DUMPER7_ASSERTS_FOSCMessage;
 
 // ScriptStruct OSC.OSCAddress
 // 0x0028 (0x0028 - 0x0000)
@@ -33,10 +32,7 @@ public:
 	class FString                                 Method;                                            // 0x0010(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_20[0x8];                                       // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOSCAddress) == 0x000008, "Wrong alignment on FOSCAddress");
-static_assert(sizeof(FOSCAddress) == 0x000028, "Wrong size on FOSCAddress");
-static_assert(offsetof(FOSCAddress, Containers) == 0x000000, "Member 'FOSCAddress::Containers' has a wrong offset!");
-static_assert(offsetof(FOSCAddress, Method) == 0x000010, "Member 'FOSCAddress::Method' has a wrong offset!");
+DUMPER7_ASSERTS_FOSCAddress;
 
 // ScriptStruct OSC.OSCBundle
 // 0x0010 (0x0010 - 0x0000)
@@ -45,8 +41,7 @@ struct alignas(0x08) FOSCBundle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOSCBundle) == 0x000008, "Wrong alignment on FOSCBundle");
-static_assert(sizeof(FOSCBundle) == 0x000010, "Wrong size on FOSCBundle");
+DUMPER7_ASSERTS_FOSCBundle;
 
 }
 

@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SurrenderButton.PyWidget_SurrenderButton
-// 0x00E8 (0x0810 - 0x0728)
+// 0x00E8 (0x0868 - 0x0780)
 class UPyWidget_SurrenderButton final : public UPyWidget_Button
 {
 public:
-	struct FLinearColor                           BgColor;                                           // 0x0728(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKeyWidgetStyle                        BtnKeyWidgetStyle;                                 // 0x0738(0x00D4)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor;                                           // 0x0780(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKeyWidgetStyle                        BtnKeyWidgetStyle;                                 // 0x0790(0x00D4)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SurrenderButton">();
+		STATIC_CLASS_IMPL("PyWidget_SurrenderButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SurrenderButton")
 	}
 	static class UPyWidget_SurrenderButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SurrenderButton>();
 	}
 };
-static_assert(alignof(UPyWidget_SurrenderButton) == 0x000008, "Wrong alignment on UPyWidget_SurrenderButton");
-static_assert(sizeof(UPyWidget_SurrenderButton) == 0x000810, "Wrong size on UPyWidget_SurrenderButton");
-static_assert(offsetof(UPyWidget_SurrenderButton, BgColor) == 0x000728, "Member 'UPyWidget_SurrenderButton::BgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderButton, BtnKeyWidgetStyle) == 0x000738, "Member 'UPyWidget_SurrenderButton::BtnKeyWidgetStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SurrenderButton;
 
 }
 

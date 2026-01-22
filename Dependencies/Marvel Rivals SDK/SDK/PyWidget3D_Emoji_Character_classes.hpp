@@ -28,22 +28,25 @@ public:
 public:
 	void OnInitialized();
 	void Destruct();
+	bool ShouldBeVisible();
 	void MarvelSetVisible(bool bVisible_0);
 	void SetWidgetComponentOwner(class UWidgetComponent* InWidgetComponent);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_Emoji_Character">();
+		STATIC_CLASS_IMPL("PyWidget3D_Emoji_Character")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_Emoji_Character")
 	}
 	static class UPyWidget3D_Emoji_Character* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_Emoji_Character>();
 	}
 };
-static_assert(alignof(UPyWidget3D_Emoji_Character) == 0x000010, "Wrong alignment on UPyWidget3D_Emoji_Character");
-static_assert(sizeof(UPyWidget3D_Emoji_Character) == 0x0008C0, "Wrong size on UPyWidget3D_Emoji_Character");
-static_assert(offsetof(UPyWidget3D_Emoji_Character, CombatEmojiOffsetData) == 0x000870, "Member 'UPyWidget3D_Emoji_Character::CombatEmojiOffsetData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_Emoji_Character;
 
 }
 

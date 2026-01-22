@@ -184,15 +184,15 @@ void APyCue_AbilityLoop_Cable_Base::AfterCableUpdate_PY(float DeltaTime)
 }
 
 
-// PythonFunction PyCue_AbilityLoop_Cable_Base.PyCue_AbilityLoop_Cable_Base.OnTimeToStartFadeOut
+// PythonFunction PyCue_AbilityLoop_Cable_Base.PyCue_AbilityLoop_Cable_Base.OnTimeToStartFadeOut_PY
 // (Native, Public, BlueprintCallable)
 
-void APyCue_AbilityLoop_Cable_Base::OnTimeToStartFadeOut()
+void APyCue_AbilityLoop_Cable_Base::OnTimeToStartFadeOut_PY()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_AbilityLoop_Cable_Base", "OnTimeToStartFadeOut");
+		Func = Class->GetFunction("PyCue_AbilityLoop_Cable_Base", "OnTimeToStartFadeOut_PY");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

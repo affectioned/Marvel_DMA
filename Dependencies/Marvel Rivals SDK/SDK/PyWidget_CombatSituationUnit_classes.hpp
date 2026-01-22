@@ -46,21 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CombatSituationPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CombatSituationPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CombatSituationPanel")
 	}
 	static class UPyWidget_CombatSituationPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CombatSituationPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CombatSituationPanel) == 0x000008, "Wrong alignment on UPyWidget_CombatSituationPanel");
-static_assert(sizeof(UPyWidget_CombatSituationPanel) == 0x0003F0, "Wrong size on UPyWidget_CombatSituationPanel");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, PlayTestInfo) == 0x0003B8, "Member 'UPyWidget_CombatSituationPanel::PlayTestInfo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, WidgetClass_Unit) == 0x0003C0, "Member 'UPyWidget_CombatSituationPanel::WidgetClass_Unit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, MaxItemNum) == 0x0003C8, "Member 'UPyWidget_CombatSituationPanel::MaxItemNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, KillEventAlly) == 0x0003D0, "Member 'UPyWidget_CombatSituationPanel::KillEventAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, KillEventEnemy) == 0x0003D8, "Member 'UPyWidget_CombatSituationPanel::KillEventEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationPanel, SlotWidgetClassList) == 0x0003E0, "Member 'UPyWidget_CombatSituationPanel::SlotWidgetClassList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CombatSituationPanel;
 
 // PythonClass PyWidget_CombatSituationUnit.PyWidget_CombatSituation_HeroHead
 // 0x0010 (0x04C0 - 0x04B0)
@@ -72,19 +69,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CombatSituation_HeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_CombatSituation_HeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CombatSituation_HeroHead")
 	}
 	static class UPyWidget_CombatSituation_HeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CombatSituation_HeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_CombatSituation_HeroHead) == 0x000010, "Wrong alignment on UPyWidget_CombatSituation_HeroHead");
-static_assert(sizeof(UPyWidget_CombatSituation_HeroHead) == 0x0004C0, "Wrong size on UPyWidget_CombatSituation_HeroHead");
-static_assert(offsetof(UPyWidget_CombatSituation_HeroHead, HeroIdentifier) == 0x0004B0, "Member 'UPyWidget_CombatSituation_HeroHead::HeroIdentifier' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CombatSituation_HeroHead;
 
 // PythonClass PyWidget_CombatSituationUnit.PyWidget_CombatSituationUnit_V3
-// 0x0478 (0x0830 - 0x03B8)
+// 0x0488 (0x0840 - 0x03B8)
 class UPyWidget_CombatSituationUnit_V3 : public UUserWidget
 {
 public:
@@ -107,6 +106,8 @@ public:
 	bool                                          bCustomColorPreview;                               // 0x07C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C1[0x7];                                      // 0x07C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCombatSituationInfo                   CustomColorPreviewData;                            // 0x07C8(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UPyWidget_Common_HeroRoleIcon*          WBP_HeroRoleIcon_SourceHero;                       // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_Common_HeroRoleIcon*          WBP_HeroRoleIcon_TargetHero;                       // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -117,32 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CombatSituationUnit_V3">();
+		STATIC_CLASS_IMPL("PyWidget_CombatSituationUnit_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CombatSituationUnit_V3")
 	}
 	static class UPyWidget_CombatSituationUnit_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CombatSituationUnit_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_CombatSituationUnit_V3) == 0x000010, "Wrong alignment on UPyWidget_CombatSituationUnit_V3");
-static_assert(sizeof(UPyWidget_CombatSituationUnit_V3) == 0x000830, "Wrong size on UPyWidget_CombatSituationUnit_V3");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IconColorSelfAlly) == 0x0003B8, "Member 'UPyWidget_CombatSituationUnit_V3::IconColorSelfAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IconColorSelfEnemy) == 0x0003C8, "Member 'UPyWidget_CombatSituationUnit_V3::IconColorSelfEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IconColorAlly) == 0x0003D8, "Member 'UPyWidget_CombatSituationUnit_V3::IconColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IconColorEnemy) == 0x0003E8, "Member 'UPyWidget_CombatSituationUnit_V3::IconColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, FontColorSelfAlly) == 0x0003F8, "Member 'UPyWidget_CombatSituationUnit_V3::FontColorSelfAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, FontColorSelfEnemy) == 0x00040C, "Member 'UPyWidget_CombatSituationUnit_V3::FontColorSelfEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, FontColorAlly) == 0x000420, "Member 'UPyWidget_CombatSituationUnit_V3::FontColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, FontColorEnemy) == 0x000434, "Member 'UPyWidget_CombatSituationUnit_V3::FontColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, BgColorSelf) == 0x000448, "Member 'UPyWidget_CombatSituationUnit_V3::BgColorSelf' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, BgColorAlly) == 0x000458, "Member 'UPyWidget_CombatSituationUnit_V3::BgColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, BgColorEnemy) == 0x000468, "Member 'UPyWidget_CombatSituationUnit_V3::BgColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IconMelee) == 0x000480, "Member 'UPyWidget_CombatSituationUnit_V3::IconMelee' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IcoDeathInfoWizard) == 0x000550, "Member 'UPyWidget_CombatSituationUnit_V3::IcoDeathInfoWizard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, IcoDeathInfoFall) == 0x000620, "Member 'UPyWidget_CombatSituationUnit_V3::IcoDeathInfoFall' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, Icn_Ability_104661) == 0x0006F0, "Member 'UPyWidget_CombatSituationUnit_V3::Icn_Ability_104661' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, bCustomColorPreview) == 0x0007C0, "Member 'UPyWidget_CombatSituationUnit_V3::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatSituationUnit_V3, CustomColorPreviewData) == 0x0007C8, "Member 'UPyWidget_CombatSituationUnit_V3::CustomColorPreviewData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CombatSituationUnit_V3;
 
 }
 

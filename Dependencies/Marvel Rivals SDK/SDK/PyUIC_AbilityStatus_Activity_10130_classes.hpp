@@ -24,36 +24,41 @@ class UPyUIC_HpBar_V3_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_HpBar_V3_10130">();
+		STATIC_CLASS_IMPL("PyUIC_HpBar_V3_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_HpBar_V3_10130")
 	}
 	static class UPyUIC_HpBar_V3_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_HpBar_V3_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_HpBar_V3_10130) == 0x000008, "Wrong alignment on UPyUIC_HpBar_V3_10130");
-static_assert(sizeof(UPyUIC_HpBar_V3_10130) == 0x000030, "Wrong size on UPyUIC_HpBar_V3_10130");
+DUMPER7_ASSERTS_UPyUIC_HpBar_V3_10130;
 
 // PythonClass PyUIC_AbilityStatus_Activity_10130.PyWidget_AbilitySign_10130
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_AbilitySign_10130 : public UMarvelUserWidget
 {
 public:
-	TArray<class UTexture2D*>                     LevelIcon;                                         // 0x0568(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     LevelIcon;                                         // 0x0570(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilitySign_10130">();
+		STATIC_CLASS_IMPL("PyWidget_AbilitySign_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilitySign_10130")
 	}
 	static class UPyWidget_AbilitySign_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilitySign_10130>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilitySign_10130) == 0x000008, "Wrong alignment on UPyWidget_AbilitySign_10130");
-static_assert(sizeof(UPyWidget_AbilitySign_10130) == 0x000578, "Wrong size on UPyWidget_AbilitySign_10130");
-static_assert(offsetof(UPyWidget_AbilitySign_10130, LevelIcon) == 0x000568, "Member 'UPyWidget_AbilitySign_10130::LevelIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilitySign_10130;
 
 // PythonClass PyUIC_AbilityStatus_Activity_10130.PyUIC_Activity_10130_Base
 // 0x0000 (0x0030 - 0x0030)
@@ -62,15 +67,18 @@ class UPyUIC_Activity_10130_Base : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_Activity_10130_Base">();
+		STATIC_CLASS_IMPL("PyUIC_Activity_10130_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_Activity_10130_Base")
 	}
 	static class UPyUIC_Activity_10130_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_Activity_10130_Base>();
 	}
 };
-static_assert(alignof(UPyUIC_Activity_10130_Base) == 0x000008, "Wrong alignment on UPyUIC_Activity_10130_Base");
-static_assert(sizeof(UPyUIC_Activity_10130_Base) == 0x000030, "Wrong size on UPyUIC_Activity_10130_Base");
+DUMPER7_ASSERTS_UPyUIC_Activity_10130_Base;
 
 // PythonClass PyUIC_AbilityStatus_Activity_10130.PyUIC_AbilityStatus_Normal_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -79,15 +87,18 @@ class UPyUIC_AbilityStatus_Normal_10130 final : public UPyUIC_Activity_10130_Bas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_AbilityStatus_Normal_10130">();
+		STATIC_CLASS_IMPL("PyUIC_AbilityStatus_Normal_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_AbilityStatus_Normal_10130")
 	}
 	static class UPyUIC_AbilityStatus_Normal_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_AbilityStatus_Normal_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_AbilityStatus_Normal_10130) == 0x000008, "Wrong alignment on UPyUIC_AbilityStatus_Normal_10130");
-static_assert(sizeof(UPyUIC_AbilityStatus_Normal_10130) == 0x000030, "Wrong size on UPyUIC_AbilityStatus_Normal_10130");
+DUMPER7_ASSERTS_UPyUIC_AbilityStatus_Normal_10130;
 
 // PythonClass PyUIC_AbilityStatus_Activity_10130.PyUIC_AbilityIntroUnit_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -96,15 +107,18 @@ class UPyUIC_AbilityIntroUnit_10130 final : public UPyUIC_Activity_10130_Base
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_AbilityIntroUnit_10130">();
+		STATIC_CLASS_IMPL("PyUIC_AbilityIntroUnit_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_AbilityIntroUnit_10130")
 	}
 	static class UPyUIC_AbilityIntroUnit_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_AbilityIntroUnit_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_AbilityIntroUnit_10130) == 0x000008, "Wrong alignment on UPyUIC_AbilityIntroUnit_10130");
-static_assert(sizeof(UPyUIC_AbilityIntroUnit_10130) == 0x000030, "Wrong size on UPyUIC_AbilityIntroUnit_10130");
+DUMPER7_ASSERTS_UPyUIC_AbilityIntroUnit_10130;
 
 }
 

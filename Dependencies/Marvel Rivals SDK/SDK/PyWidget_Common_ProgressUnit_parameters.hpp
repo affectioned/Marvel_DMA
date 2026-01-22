@@ -21,9 +21,7 @@ struct PyWidget_Common_ProgressUnit_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ProgressUnit_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Common_ProgressUnit_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Common_ProgressUnit_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Common_ProgressUnit_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Common_ProgressUnit_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Common_ProgressUnit_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ProgressUnit_OnAnimationFinished;
 
 // PythonFunction PyWidget_Common_ProgressUnit.PyWidget_Common_ProgressBarUnit.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Common_ProgressBarUnit_MarvelSetVisible final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ProgressBarUnit_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Common_ProgressBarUnit_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Common_ProgressBarUnit_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Common_ProgressBarUnit_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Common_ProgressBarUnit_MarvelSetVisible, bInVisible) == 0x000000, "Member 'PyWidget_Common_ProgressBarUnit_MarvelSetVisible::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ProgressBarUnit_MarvelSetVisible;
 
 // PythonFunction PyWidget_Common_ProgressUnit.PyWidget_Common_ProgressBarUnit.MarvelSetVisibleImmediately
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately final
 public:
 	bool                                          bInVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately");
-static_assert(sizeof(PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately");
-static_assert(offsetof(PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately, bInVisible) == 0x000000, "Member 'PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately::bInVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ProgressBarUnit_MarvelSetVisibleImmediately;
 
 // PythonFunction PyWidget_Common_ProgressUnit.PyWidget_Common_ProgressBarUnit.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Common_ProgressBarUnit_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_ProgressBarUnit_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Common_ProgressBarUnit_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Common_ProgressBarUnit_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Common_ProgressBarUnit_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Common_ProgressBarUnit_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Common_ProgressBarUnit_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_ProgressBarUnit_OnAnimationStarted;
 
 }
 

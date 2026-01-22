@@ -21,9 +21,7 @@ struct PyWidget_Setting_ManageBlockedWords_Item_SetItemObject final
 public:
 	class UObject*                                item_object;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Setting_ManageBlockedWords_Item_SetItemObject) == 0x000008, "Wrong alignment on PyWidget_Setting_ManageBlockedWords_Item_SetItemObject");
-static_assert(sizeof(PyWidget_Setting_ManageBlockedWords_Item_SetItemObject) == 0x000008, "Wrong size on PyWidget_Setting_ManageBlockedWords_Item_SetItemObject");
-static_assert(offsetof(PyWidget_Setting_ManageBlockedWords_Item_SetItemObject, item_object) == 0x000000, "Member 'PyWidget_Setting_ManageBlockedWords_Item_SetItemObject::item_object' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Setting_ManageBlockedWords_Item_SetItemObject;
 
 }
 

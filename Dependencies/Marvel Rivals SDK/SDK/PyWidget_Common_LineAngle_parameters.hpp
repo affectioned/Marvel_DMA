@@ -21,9 +21,7 @@ struct PyWidget_Common_LineAngle_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_LineAngle_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Common_LineAngle_PreConstruct");
-static_assert(sizeof(PyWidget_Common_LineAngle_PreConstruct) == 0x000001, "Wrong size on PyWidget_Common_LineAngle_PreConstruct");
-static_assert(offsetof(PyWidget_Common_LineAngle_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Common_LineAngle_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_LineAngle_PreConstruct;
 
 // PythonFunction PyWidget_Common_LineAngle.PyWidget_Common_Line.TriggerAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Common_Line_TriggerAnimationFinished final
 public:
 	class UWidgetAnimation*                       Animation;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Line_TriggerAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Common_Line_TriggerAnimationFinished");
-static_assert(sizeof(PyWidget_Common_Line_TriggerAnimationFinished) == 0x000008, "Wrong size on PyWidget_Common_Line_TriggerAnimationFinished");
-static_assert(offsetof(PyWidget_Common_Line_TriggerAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Common_Line_TriggerAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Line_TriggerAnimationFinished;
 
 }
 

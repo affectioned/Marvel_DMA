@@ -22,17 +22,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_BuyBtn
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_BattlePass_BuyBtn final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          KeyPromptVisible;                                  // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedUseKeyMain;                                    // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          HotKey;                                            // 0x05C0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NotEnoughMoneyColor;                               // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnoughMoneyColor;                                  // 0x062C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClickBuy;                                        // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          KeyPromptVisible;                                  // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedUseKeyMain;                                    // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          HotKey;                                            // 0x05C8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NotEnoughMoneyColor;                               // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnoughMoneyColor;                                  // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClickBuy;                                        // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void trigger_focus_func();
@@ -42,24 +42,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_BuyBtn">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_BuyBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_BuyBtn")
 	}
 	static class UPyWidget_BattlePass_BuyBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_BuyBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_BuyBtn) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_BuyBtn");
-static_assert(sizeof(UPyWidget_BattlePass_BuyBtn) == 0x000650, "Wrong size on UPyWidget_BattlePass_BuyBtn");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, KeyPromptVisible) == 0x0005BA, "Member 'UPyWidget_BattlePass_BuyBtn::KeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, NeedUseKeyMain) == 0x0005BB, "Member 'UPyWidget_BattlePass_BuyBtn::NeedUseKeyMain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, HotKey) == 0x0005C0, "Member 'UPyWidget_BattlePass_BuyBtn::HotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, NotEnoughMoneyColor) == 0x000618, "Member 'UPyWidget_BattlePass_BuyBtn::NotEnoughMoneyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, EnoughMoneyColor) == 0x00062C, "Member 'UPyWidget_BattlePass_BuyBtn::EnoughMoneyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_BuyBtn, OnClickBuy) == 0x000640, "Member 'UPyWidget_BattlePass_BuyBtn::OnClickBuy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_BuyBtn;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_Recharge
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_BattlePass_Recharge final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -73,18 +70,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Recharge">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Recharge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Recharge")
 	}
 	static class UPyWidget_BattlePass_Recharge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Recharge>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Recharge) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Recharge");
-static_assert(sizeof(UPyWidget_BattlePass_Recharge) == 0x0005F8, "Wrong size on UPyWidget_BattlePass_Recharge");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Recharge;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_RechargeUpgradeCard
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_BattlePass_RechargeUpgradeCard final : public UMarvelUserWidget
 {
 public:
@@ -93,18 +93,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RechargeUpgradeCard">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RechargeUpgradeCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RechargeUpgradeCard")
 	}
 	static class UPyWidget_BattlePass_RechargeUpgradeCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RechargeUpgradeCard>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RechargeUpgradeCard) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RechargeUpgradeCard");
-static_assert(sizeof(UPyWidget_BattlePass_RechargeUpgradeCard) == 0x000568, "Wrong size on UPyWidget_BattlePass_RechargeUpgradeCard");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RechargeUpgradeCard;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_BuyConfirm
-// 0x0000 (0x06A0 - 0x06A0)
+// 0x0000 (0x06A8 - 0x06A8)
 class UPyWidget_BattlePass_BuyConfirm final : public UPyWidget_Common_SecondaryConfirm_Button
 {
 public:
@@ -115,18 +118,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_BuyConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_BuyConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_BuyConfirm")
 	}
 	static class UPyWidget_BattlePass_BuyConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_BuyConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_BuyConfirm) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_BuyConfirm");
-static_assert(sizeof(UPyWidget_BattlePass_BuyConfirm) == 0x0006A0, "Wrong size on UPyWidget_BattlePass_BuyConfirm");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_BuyConfirm;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_RechargeInfoCard
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_BattlePass_RechargeInfoCard final : public UMarvelUserWidget
 {
 public:
@@ -135,23 +141,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RechargeInfoCard">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RechargeInfoCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RechargeInfoCard")
 	}
 	static class UPyWidget_BattlePass_RechargeInfoCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RechargeInfoCard>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RechargeInfoCard) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RechargeInfoCard");
-static_assert(sizeof(UPyWidget_BattlePass_RechargeInfoCard) == 0x000568, "Wrong size on UPyWidget_BattlePass_RechargeInfoCard");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RechargeInfoCard;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_Recharge_InfoCard_BaseItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_BattlePass_Recharge_InfoCard_BaseItem : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Item_ID;                                           // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Item_ID;                                           // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -160,50 +169,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Recharge_InfoCard_BaseItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Recharge_InfoCard_BaseItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Recharge_InfoCard_BaseItem")
 	}
 	static class UPyWidget_BattlePass_Recharge_InfoCard_BaseItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Recharge_InfoCard_BaseItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Recharge_InfoCard_BaseItem) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Recharge_InfoCard_BaseItem");
-static_assert(sizeof(UPyWidget_BattlePass_Recharge_InfoCard_BaseItem) == 0x0005D0, "Wrong size on UPyWidget_BattlePass_Recharge_InfoCard_BaseItem");
-static_assert(offsetof(UPyWidget_BattlePass_Recharge_InfoCard_BaseItem, Item_ID) == 0x0005C0, "Member 'UPyWidget_BattlePass_Recharge_InfoCard_BaseItem::Item_ID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Recharge_InfoCard_BaseItem;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_Recharge_InfoCard_Item
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_BattlePass_Recharge_InfoCard_Item final : public UPyWidget_BattlePass_Recharge_InfoCard_BaseItem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Recharge_InfoCard_Item">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Recharge_InfoCard_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Recharge_InfoCard_Item")
 	}
 	static class UPyWidget_BattlePass_Recharge_InfoCard_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Recharge_InfoCard_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Recharge_InfoCard_Item) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Recharge_InfoCard_Item");
-static_assert(sizeof(UPyWidget_BattlePass_Recharge_InfoCard_Item) == 0x0005D0, "Wrong size on UPyWidget_BattlePass_Recharge_InfoCard_Item");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Recharge_InfoCard_Item;
 
 // PythonClass PyWidget_BattlePass_Recharge.PyWidget_BattlePass_RechargeInfoCard2
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattlePass_RechargeInfoCard2 final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RechargeInfoCard2">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RechargeInfoCard2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RechargeInfoCard2")
 	}
 	static class UPyWidget_BattlePass_RechargeInfoCard2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RechargeInfoCard2>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RechargeInfoCard2) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RechargeInfoCard2");
-static_assert(sizeof(UPyWidget_BattlePass_RechargeInfoCard2) == 0x0005C0, "Wrong size on UPyWidget_BattlePass_RechargeInfoCard2");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RechargeInfoCard2;
 
 }
 

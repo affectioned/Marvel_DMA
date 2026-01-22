@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass KnockUp_200001_BP.KnockUp_200001_BP_C
-// 0x0008 (0x2040 - 0x2038)
+// 0x0008 (0x2390 - 0x2388)
 class UKnockUp_200001_BP_C final : public UMarvelLevelKnockUpAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2038(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_KnockUp_200001_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KnockUp_200001_BP_C">();
+		BP_STATIC_CLASS_IMPL("KnockUp_200001_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KnockUp_200001_BP_C")
 	}
 	static class UKnockUp_200001_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKnockUp_200001_BP_C>();
 	}
 };
-static_assert(alignof(UKnockUp_200001_BP_C) == 0x000008, "Wrong alignment on UKnockUp_200001_BP_C");
-static_assert(sizeof(UKnockUp_200001_BP_C) == 0x002040, "Wrong size on UKnockUp_200001_BP_C");
-static_assert(offsetof(UKnockUp_200001_BP_C, UberGraphFrame) == 0x002038, "Member 'UKnockUp_200001_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UKnockUp_200001_BP_C;
 
 }
 

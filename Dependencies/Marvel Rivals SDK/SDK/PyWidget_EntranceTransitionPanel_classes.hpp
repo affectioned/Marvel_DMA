@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_EntranceTransitionPanel.PyWidget_EntranceTransitionPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_EntranceTransitionPanel final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_EntranceTransitionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_EntranceTransitionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_EntranceTransitionPanel")
 	}
 	static class UPyWidget_EntranceTransitionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_EntranceTransitionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_EntranceTransitionPanel) == 0x000008, "Wrong alignment on UPyWidget_EntranceTransitionPanel");
-static_assert(sizeof(UPyWidget_EntranceTransitionPanel) == 0x0005C0, "Wrong size on UPyWidget_EntranceTransitionPanel");
+DUMPER7_ASSERTS_UPyWidget_EntranceTransitionPanel;
 
 }
 

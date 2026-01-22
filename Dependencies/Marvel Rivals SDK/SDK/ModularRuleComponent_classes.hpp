@@ -23,15 +23,18 @@ class UModularRuleComponent_C : public UPyModularRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ModularRuleComponent_C">();
+		BP_STATIC_CLASS_IMPL("ModularRuleComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModularRuleComponent_C")
 	}
 	static class UModularRuleComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModularRuleComponent_C>();
 	}
 };
-static_assert(alignof(UModularRuleComponent_C) == 0x000008, "Wrong alignment on UModularRuleComponent_C");
-static_assert(sizeof(UModularRuleComponent_C) == 0x000110, "Wrong size on UModularRuleComponent_C");
+DUMPER7_ASSERTS_UModularRuleComponent_C;
 
 }
 

@@ -64,16 +64,7 @@ struct alignas(0x04) FFlameBuffData final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFlameBuffData) == 0x000004, "Wrong alignment on FFlameBuffData");
-static_assert(sizeof(FFlameBuffData) == 0x000018, "Wrong size on FFlameBuffData");
-
-// ScriptStruct Hero_1054.GameplayCue_NormalTransformInfo_10544102
-// 0x0000 (0x0008 - 0x0008)
-struct FGameplayCue_NormalTransformInfo_10544102 final : public FGameplayCue_TransformInfo_Base
-{
-};
-static_assert(alignof(FGameplayCue_NormalTransformInfo_10544102) == 0x000008, "Wrong alignment on FGameplayCue_NormalTransformInfo_10544102");
-static_assert(sizeof(FGameplayCue_NormalTransformInfo_10544102) == 0x000008, "Wrong size on FGameplayCue_NormalTransformInfo_10544102");
+DUMPER7_ASSERTS_FFlameBuffData;
 
 // ScriptStruct Hero_1054.MontageArrays_1054
 // 0x0010 (0x0010 - 0x0000)
@@ -82,9 +73,14 @@ struct FMontageArrays_1054 final
 public:
 	TArray<class UAnimMontage*>                   Montages;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMontageArrays_1054) == 0x000008, "Wrong alignment on FMontageArrays_1054");
-static_assert(sizeof(FMontageArrays_1054) == 0x000010, "Wrong size on FMontageArrays_1054");
-static_assert(offsetof(FMontageArrays_1054, Montages) == 0x000000, "Member 'FMontageArrays_1054::Montages' has a wrong offset!");
+DUMPER7_ASSERTS_FMontageArrays_1054;
+
+// ScriptStruct Hero_1054.GameplayCue_NormalTransformInfo_10544102
+// 0x0000 (0x0008 - 0x0008)
+struct FGameplayCue_NormalTransformInfo_10544102 final : public FGameplayCue_TransformInfo_Base
+{
+};
+DUMPER7_ASSERTS_FGameplayCue_NormalTransformInfo_10544102;
 
 // ScriptStruct Hero_1054.GameplayAbilityTargetData_ID_Phantom
 // 0x0008 (0x0010 - 0x0008)
@@ -94,9 +90,7 @@ public:
 	int32                                         Value;                                             // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGameplayAbilityTargetData_ID_Phantom) == 0x000008, "Wrong alignment on FGameplayAbilityTargetData_ID_Phantom");
-static_assert(sizeof(FGameplayAbilityTargetData_ID_Phantom) == 0x000010, "Wrong size on FGameplayAbilityTargetData_ID_Phantom");
-static_assert(offsetof(FGameplayAbilityTargetData_ID_Phantom, Value) == 0x000008, "Member 'FGameplayAbilityTargetData_ID_Phantom::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FGameplayAbilityTargetData_ID_Phantom;
 
 }
 

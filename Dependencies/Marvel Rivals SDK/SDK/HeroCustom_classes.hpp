@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingHeroCustomHandler">();
+		STATIC_CLASS_IMPL("UISettingHeroCustomHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingHeroCustomHandler")
 	}
 	static class UUISettingHeroCustomHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingHeroCustomHandler>();
 	}
 };
-static_assert(alignof(UUISettingHeroCustomHandler) == 0x000008, "Wrong alignment on UUISettingHeroCustomHandler");
-static_assert(sizeof(UUISettingHeroCustomHandler) == 0x000030, "Wrong size on UUISettingHeroCustomHandler");
+DUMPER7_ASSERTS_UUISettingHeroCustomHandler;
 
 }
 

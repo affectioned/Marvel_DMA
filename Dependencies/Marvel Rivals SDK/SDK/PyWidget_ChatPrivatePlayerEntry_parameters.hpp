@@ -21,9 +21,7 @@ struct PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet final
 public:
 	class UObject*                                _itm;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet, _itm) == 0x000000, "Member 'PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet::_itm' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatPrivatePlayerEntry_OnListItemObjectSet;
 
 }
 

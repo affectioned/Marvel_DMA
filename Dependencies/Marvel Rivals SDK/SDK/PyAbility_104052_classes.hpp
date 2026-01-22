@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104052.PyAbility_104052
-// 0x0000 (0x2C40 - 0x2C40)
+// 0x0000 (0x2C90 - 0x2C90)
 class UPyAbility_104052 : public UAbility_109
 {
 public:
@@ -37,15 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104052">();
+		STATIC_CLASS_IMPL("PyAbility_104052")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104052")
 	}
 	static class UPyAbility_104052* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104052>();
 	}
 };
-static_assert(alignof(UPyAbility_104052) == 0x000008, "Wrong alignment on UPyAbility_104052");
-static_assert(sizeof(UPyAbility_104052) == 0x002C40, "Wrong size on UPyAbility_104052");
+DUMPER7_ASSERTS_UPyAbility_104052;
 
 // PythonClass PyAbility_104052.PyConfig_104052
 // 0x0028 (0x00E8 - 0x00C0)
@@ -61,27 +64,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104052">();
+		STATIC_CLASS_IMPL("PyConfig_104052")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104052")
 	}
 	static class UPyConfig_104052* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104052>();
 	}
 };
-static_assert(alignof(UPyConfig_104052) == 0x000008, "Wrong alignment on UPyConfig_104052");
-static_assert(sizeof(UPyConfig_104052) == 0x0000E8, "Wrong size on UPyConfig_104052");
-static_assert(offsetof(UPyConfig_104052, ActivateRemoveBuffID) == 0x0000C0, "Member 'UPyConfig_104052::ActivateRemoveBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104052, ChangeSculptAbilityID) == 0x0000C4, "Member 'UPyConfig_104052::ChangeSculptAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104052, ProjectileID) == 0x0000C8, "Member 'UPyConfig_104052::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104052, ReboundEffectTag) == 0x0000CC, "Member 'UPyConfig_104052::ReboundEffectTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104052, ReboundAudioTag) == 0x0000D8, "Member 'UPyConfig_104052::ReboundAudioTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104052;
 
 // PythonClass PyAbility_104052.PyCue_AbilityLoop_104052
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_AbilityLoop_104052 final : public AMarvelCueNotify_Ability
 {
 public:
-	TSubclassOf<class ULegacyCameraShake>         SpawnProjectileCameraShakeClass;                   // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULegacyCameraShake>         SpawnProjectileCameraShakeClass;                   // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -89,16 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_104052">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_104052")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_104052")
 	}
 	static class APyCue_AbilityLoop_104052* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_104052>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_104052) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_104052");
-static_assert(sizeof(APyCue_AbilityLoop_104052) == 0x0011C0, "Wrong size on APyCue_AbilityLoop_104052");
-static_assert(offsetof(APyCue_AbilityLoop_104052, SpawnProjectileCameraShakeClass) == 0x0011B0, "Member 'APyCue_AbilityLoop_104052::SpawnProjectileCameraShakeClass' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_104052;
 
 }
 

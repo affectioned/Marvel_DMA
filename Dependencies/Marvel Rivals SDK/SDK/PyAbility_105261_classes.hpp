@@ -33,28 +33,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105261">();
+		STATIC_CLASS_IMPL("PyConfig_105261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105261")
 	}
 	static class UPyConfig_105261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105261>();
 	}
 };
-static_assert(alignof(UPyConfig_105261) == 0x000008, "Wrong alignment on UPyConfig_105261");
-static_assert(sizeof(UPyConfig_105261) == 0x000188, "Wrong size on UPyConfig_105261");
-static_assert(offsetof(UPyConfig_105261, ControlBuff) == 0x000098, "Member 'UPyConfig_105261::ControlBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105261, CountdownBuff) == 0x00009C, "Member 'UPyConfig_105261::CountdownBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105261, WaitTagList) == 0x0000A0, "Member 'UPyConfig_105261::WaitTagList' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105261, WaitBreakList) == 0x000108, "Member 'UPyConfig_105261::WaitBreakList' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105261, PreBlockTime) == 0x000118, "Member 'UPyConfig_105261::PreBlockTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105261, PreBlockTag) == 0x000120, "Member 'UPyConfig_105261::PreBlockTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105261;
 
 // PythonClass PyAbility_105261.PyAbility_105261
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_105261 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              fadeout;                                           // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              fadeout;                                           // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -69,24 +66,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105261">();
+		STATIC_CLASS_IMPL("PyAbility_105261")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105261")
 	}
 	static class UPyAbility_105261* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105261>();
 	}
 };
-static_assert(alignof(UPyAbility_105261) == 0x000008, "Wrong alignment on UPyAbility_105261");
-static_assert(sizeof(UPyAbility_105261) == 0x002A00, "Wrong size on UPyAbility_105261");
-static_assert(offsetof(UPyAbility_105261, fadeout) == 0x0029F0, "Member 'UPyAbility_105261::fadeout' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105261;
 
 // PythonClass PyAbility_105261.PyCue_Ability_Loop_10526101
-// 0x0020 (0x11D0 - 0x11B0)
+// 0x0020 (0x11E0 - 0x11C0)
 class APyCue_Ability_Loop_10526101 final : public AMarvelCueNotify_Ability
 {
 public:
-	TMulticastInlineDelegate<void()>              fadein;                                            // 0x11B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              fadeout;                                           // 0x11C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              fadein;                                            // 0x11C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              fadeout;                                           // 0x11D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -94,17 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10526101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10526101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10526101")
 	}
 	static class APyCue_Ability_Loop_10526101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10526101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10526101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10526101");
-static_assert(sizeof(APyCue_Ability_Loop_10526101) == 0x0011D0, "Wrong size on APyCue_Ability_Loop_10526101");
-static_assert(offsetof(APyCue_Ability_Loop_10526101, fadein) == 0x0011B0, "Member 'APyCue_Ability_Loop_10526101::fadein' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10526101, fadeout) == 0x0011C0, "Member 'APyCue_Ability_Loop_10526101::fadeout' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10526101;
 
 }
 

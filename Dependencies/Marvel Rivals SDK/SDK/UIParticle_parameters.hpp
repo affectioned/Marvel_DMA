@@ -21,9 +21,7 @@ struct UIParticle_SetPlayParticle final
 public:
 	bool                                          InPlayParticle;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UIParticle_SetPlayParticle) == 0x000001, "Wrong alignment on UIParticle_SetPlayParticle");
-static_assert(sizeof(UIParticle_SetPlayParticle) == 0x000001, "Wrong size on UIParticle_SetPlayParticle");
-static_assert(offsetof(UIParticle_SetPlayParticle, InPlayParticle) == 0x000000, "Member 'UIParticle_SetPlayParticle::InPlayParticle' has a wrong offset!");
+DUMPER7_ASSERTS_UIParticle_SetPlayParticle;
 
 // Function UIParticle.UIParticleEmitter.SetPlayParticle
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct UIParticleEmitter_SetPlayParticle final
 public:
 	bool                                          InPlayParticle;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UIParticleEmitter_SetPlayParticle) == 0x000001, "Wrong alignment on UIParticleEmitter_SetPlayParticle");
-static_assert(sizeof(UIParticleEmitter_SetPlayParticle) == 0x000001, "Wrong size on UIParticleEmitter_SetPlayParticle");
-static_assert(offsetof(UIParticleEmitter_SetPlayParticle, InPlayParticle) == 0x000000, "Member 'UIParticleEmitter_SetPlayParticle::InPlayParticle' has a wrong offset!");
+DUMPER7_ASSERTS_UIParticleEmitter_SetPlayParticle;
 
 }
 

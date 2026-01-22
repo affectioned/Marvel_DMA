@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_DamageSource.PyBuffAbility_120_DamageSource
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_DamageSource final : public UMarvelStackCountChangeAbility
 {
 public:
-	int32                                         DamageSourceBuffID;                                // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TakeDamageThreshold;                               // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageSourceBuffID;                                // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TakeDamageThreshold;                               // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,25 +33,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_DamageSource">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_DamageSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_DamageSource")
 	}
 	static class UPyBuffAbility_120_DamageSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_DamageSource>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_DamageSource) == 0x000008, "Wrong alignment on UPyBuffAbility_120_DamageSource");
-static_assert(sizeof(UPyBuffAbility_120_DamageSource) == 0x001378, "Wrong size on UPyBuffAbility_120_DamageSource");
-static_assert(offsetof(UPyBuffAbility_120_DamageSource, DamageSourceBuffID) == 0x001370, "Member 'UPyBuffAbility_120_DamageSource::DamageSourceBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_DamageSource, TakeDamageThreshold) == 0x001374, "Member 'UPyBuffAbility_120_DamageSource::TakeDamageThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_DamageSource;
 
 // PythonClass PyBuffAbility_120_DamageSource.PyBuffAbility_IgnoreSourceDamagePercent
-// 0x0078 (0x13E8 - 0x1370)
+// 0x0078 (0x1400 - 0x1388)
 class UPyBuffAbility_IgnoreSourceDamagePercent final : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<int32>                                 ScopeIDs;                                          // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  DamageAssetTags;                                   // 0x1380(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ScopeIDs;                                          // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  DamageAssetTags;                                   // 0x1398(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -60,17 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_IgnoreSourceDamagePercent">();
+		STATIC_CLASS_IMPL("PyBuffAbility_IgnoreSourceDamagePercent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_IgnoreSourceDamagePercent")
 	}
 	static class UPyBuffAbility_IgnoreSourceDamagePercent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_IgnoreSourceDamagePercent>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_IgnoreSourceDamagePercent) == 0x000008, "Wrong alignment on UPyBuffAbility_IgnoreSourceDamagePercent");
-static_assert(sizeof(UPyBuffAbility_IgnoreSourceDamagePercent) == 0x0013E8, "Wrong size on UPyBuffAbility_IgnoreSourceDamagePercent");
-static_assert(offsetof(UPyBuffAbility_IgnoreSourceDamagePercent, ScopeIDs) == 0x001370, "Member 'UPyBuffAbility_IgnoreSourceDamagePercent::ScopeIDs' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_IgnoreSourceDamagePercent, DamageAssetTags) == 0x001380, "Member 'UPyBuffAbility_IgnoreSourceDamagePercent::DamageAssetTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_IgnoreSourceDamagePercent;
 
 }
 

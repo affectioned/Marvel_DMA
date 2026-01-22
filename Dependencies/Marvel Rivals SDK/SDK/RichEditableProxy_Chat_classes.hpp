@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichEditableProxy_Chat">();
+		STATIC_CLASS_IMPL("RichEditableProxy_Chat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichEditableProxy_Chat")
 	}
 	static class URichEditableProxy_Chat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichEditableProxy_Chat>();
 	}
 };
-static_assert(alignof(URichEditableProxy_Chat) == 0x000008, "Wrong alignment on URichEditableProxy_Chat");
-static_assert(sizeof(URichEditableProxy_Chat) == 0x000030, "Wrong size on URichEditableProxy_Chat");
+DUMPER7_ASSERTS_URichEditableProxy_Chat;
 
 }
 

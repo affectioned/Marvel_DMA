@@ -21,9 +21,7 @@ struct PyWidget_RandomHome_SelectCard_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RandomHome_SelectCard_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_RandomHome_SelectCard_MarvelSetVisible");
-static_assert(sizeof(PyWidget_RandomHome_SelectCard_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_RandomHome_SelectCard_MarvelSetVisible");
-static_assert(offsetof(PyWidget_RandomHome_SelectCard_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_RandomHome_SelectCard_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RandomHome_SelectCard_MarvelSetVisible;
 
 }
 

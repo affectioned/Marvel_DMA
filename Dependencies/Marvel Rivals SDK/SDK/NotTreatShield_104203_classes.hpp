@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NotTreatShield_104203.NotTreatShield_104203_C
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UNotTreatShield_104203_C final : public UAbility_NotTreatFall_C
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NotTreatShield_104203_C">();
+		BP_STATIC_CLASS_IMPL("NotTreatShield_104203_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotTreatShield_104203_C")
 	}
 	static class UNotTreatShield_104203_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNotTreatShield_104203_C>();
 	}
 };
-static_assert(alignof(UNotTreatShield_104203_C) == 0x000008, "Wrong alignment on UNotTreatShield_104203_C");
-static_assert(sizeof(UNotTreatShield_104203_C) == 0x001540, "Wrong size on UNotTreatShield_104203_C");
+DUMPER7_ASSERTS_UNotTreatShield_104203_C;
 
 }
 

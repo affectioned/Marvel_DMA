@@ -12,6 +12,7 @@
 
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -19,51 +20,68 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_LeftInfo.PyWidget_HeroSystem_LeftInfo
-// 0x0098 (0x0658 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_HeroSystem_LeftInfo final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Role_Unknown;                                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Tank;                                         // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Damage;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Role_Support;                                      // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedInkHeroColor;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DarkBgRelativeTextColor;                           // 0x05F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DarkBgRealNameColor;                               // 0x0604(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DarkBgShadowColor;                                 // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           LightBgShadowColor;                                // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   DescText;                                          // 0x0638(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_HeroSign;                                      // 0x0650(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Role_Unknown;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Tank;                                         // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Damage;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Role_Support;                                      // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedInkHeroColor;                                   // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DarkBgRelativeTextColor;                           // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DarkBgRealNameColor;                               // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DarkBgShadowColor;                                 // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           LightBgShadowColor;                                // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   DescText;                                          // 0x0640(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_HeroSign;                                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                LeftInfo_RoleUnit;                                 // 0x0660(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
+	void OnAnimationStarted(const class UWidgetAnimation* Animation);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_LeftInfo">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_LeftInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_LeftInfo")
 	}
 	static class UPyWidget_HeroSystem_LeftInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_LeftInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_LeftInfo) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_LeftInfo");
-static_assert(sizeof(UPyWidget_HeroSystem_LeftInfo) == 0x000658, "Wrong size on UPyWidget_HeroSystem_LeftInfo");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, Role_Unknown) == 0x0005C0, "Member 'UPyWidget_HeroSystem_LeftInfo::Role_Unknown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, Role_Tank) == 0x0005C8, "Member 'UPyWidget_HeroSystem_LeftInfo::Role_Tank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, Role_Damage) == 0x0005D0, "Member 'UPyWidget_HeroSystem_LeftInfo::Role_Damage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, Role_Support) == 0x0005D8, "Member 'UPyWidget_HeroSystem_LeftInfo::Role_Support' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, RedInkHeroColor) == 0x0005E0, "Member 'UPyWidget_HeroSystem_LeftInfo::RedInkHeroColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, DarkBgRelativeTextColor) == 0x0005F0, "Member 'UPyWidget_HeroSystem_LeftInfo::DarkBgRelativeTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, DarkBgRealNameColor) == 0x000604, "Member 'UPyWidget_HeroSystem_LeftInfo::DarkBgRealNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, DarkBgShadowColor) == 0x000618, "Member 'UPyWidget_HeroSystem_LeftInfo::DarkBgShadowColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, LightBgShadowColor) == 0x000628, "Member 'UPyWidget_HeroSystem_LeftInfo::LightBgShadowColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, DescText) == 0x000638, "Member 'UPyWidget_HeroSystem_LeftInfo::DescText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_LeftInfo, Img_HeroSign) == 0x000650, "Member 'UPyWidget_HeroSystem_LeftInfo::Img_HeroSign' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_LeftInfo;
+
+// PythonClass PyWidget_HeroSystem_LeftInfo.PyWidget_HeroSystem_LeftInfo_RoleUnit
+// 0x0000 (0x03B8 - 0x03B8)
+class UPyWidget_HeroSystem_LeftInfo_RoleUnit final : public UUserWidget
+{
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_LeftInfo_RoleUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_LeftInfo_RoleUnit")
+	}
+	static class UPyWidget_HeroSystem_LeftInfo_RoleUnit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_HeroSystem_LeftInfo_RoleUnit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_LeftInfo_RoleUnit;
 
 }
 

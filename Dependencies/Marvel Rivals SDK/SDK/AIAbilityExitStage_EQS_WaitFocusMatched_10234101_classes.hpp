@@ -23,15 +23,18 @@ class UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C final : public UAIAbil
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_EQS_WaitFocusMatched_10234101_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_EQS_WaitFocusMatched_10234101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_EQS_WaitFocusMatched_10234101_C")
 	}
 	static class UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C");
-static_assert(sizeof(UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C) == 0x000050, "Wrong size on UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_EQS_WaitFocusMatched_10234101_C;
 
 }
 

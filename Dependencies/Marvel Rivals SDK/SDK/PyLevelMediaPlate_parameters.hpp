@@ -22,10 +22,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InstanceName_0;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelMediaPlate_MediaPlatePlay) == 0x000008, "Wrong alignment on PyLevelMediaPlate_MediaPlatePlay");
-static_assert(sizeof(PyLevelMediaPlate_MediaPlatePlay) == 0x000018, "Wrong size on PyLevelMediaPlate_MediaPlatePlay");
-static_assert(offsetof(PyLevelMediaPlate_MediaPlatePlay, WorldContextObject) == 0x000000, "Member 'PyLevelMediaPlate_MediaPlatePlay::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(PyLevelMediaPlate_MediaPlatePlay, InstanceName_0) == 0x000008, "Member 'PyLevelMediaPlate_MediaPlatePlay::InstanceName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelMediaPlate_MediaPlatePlay;
 
 }
 

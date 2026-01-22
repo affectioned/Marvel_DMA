@@ -18,34 +18,34 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_102931.PyAbility_10130_102931
-// 0x02F8 (0x1838 - 0x1540)
+// 0x02F8 (0x18B8 - 0x15C0)
 class UPyAbility_10130_102931 : public UMarvelNotTreatFallAbility
 {
 public:
-	struct FGameplayTag                           NormalSculptTag;                                   // 0x1540(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DefaultShieldBuff;                                 // 0x154C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseDamageToShieldCoeff_Default;                   // 0x1550(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldMax_Default;                                 // 0x1554(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Note_Coeff_Add;                                    // 0x1558(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Note_Shield;                                       // 0x1568(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 EffectID_Normal;                                   // 0x1578(0x0010)(Edit, NativeAccessSpecifierPublic)
-	float                                         BaseDamageToShieldCoeff_Normal;                    // 0x1588(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackDamageToShieldCoeff_Normal;                   // 0x158C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseShieldMax_Normal;                              // 0x1590(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackShieldMax_Normal;                             // 0x1594(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            StackDamageToShieldCoeffNew_Normal;                // 0x1598(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, class UCurveFloat*>               StackDamageToShieldCurve_Normal;                   // 0x15E8(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            StackShieldMaxAdd_Normal;                          // 0x1638(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, class UCurveFloat*>               StackShieldMaxAddCurve_Normal;                     // 0x1688(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TArray<int32>                                 EffectID_Ultimate;                                 // 0x16D8(0x0010)(Edit, NativeAccessSpecifierPublic)
-	float                                         BaseDamageToShieldCoeff_Ultimate;                  // 0x16E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackDamageToShieldCoeff_Ultimate;                 // 0x16EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseShieldMax_Ultimate;                            // 0x16F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackShieldMax_Ultimate;                           // 0x16F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            StackDamageToShieldCoeffNew_Ultimate;              // 0x16F8(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, class UCurveFloat*>               StackDamageToShieldCurve_Ultimate;                 // 0x1748(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            StackShieldMaxAdd_Ultimate;                        // 0x1798(0x0050)(Edit, NativeAccessSpecifierPublic)
-	TMap<int32, class UCurveFloat*>               StackShieldMaxAddCurve_Ultimate;                   // 0x17E8(0x0050)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           NormalSculptTag;                                   // 0x15C0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DefaultShieldBuff;                                 // 0x15CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseDamageToShieldCoeff_Default;                   // 0x15D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldMax_Default;                                 // 0x15D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Note_Coeff_Add;                                    // 0x15D8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Note_Shield;                                       // 0x15E8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 EffectID_Normal;                                   // 0x15F8(0x0010)(Edit, NativeAccessSpecifierPublic)
+	float                                         BaseDamageToShieldCoeff_Normal;                    // 0x1608(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackDamageToShieldCoeff_Normal;                   // 0x160C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseShieldMax_Normal;                              // 0x1610(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackShieldMax_Normal;                             // 0x1614(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            StackDamageToShieldCoeffNew_Normal;                // 0x1618(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, class UCurveFloat*>               StackDamageToShieldCurve_Normal;                   // 0x1668(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            StackShieldMaxAdd_Normal;                          // 0x16B8(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, class UCurveFloat*>               StackShieldMaxAddCurve_Normal;                     // 0x1708(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TArray<int32>                                 EffectID_Ultimate;                                 // 0x1758(0x0010)(Edit, NativeAccessSpecifierPublic)
+	float                                         BaseDamageToShieldCoeff_Ultimate;                  // 0x1768(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackDamageToShieldCoeff_Ultimate;                 // 0x176C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseShieldMax_Ultimate;                            // 0x1770(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackShieldMax_Ultimate;                           // 0x1774(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            StackDamageToShieldCoeffNew_Ultimate;              // 0x1778(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, class UCurveFloat*>               StackDamageToShieldCurve_Ultimate;                 // 0x17C8(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            StackShieldMaxAdd_Ultimate;                        // 0x1818(0x0050)(Edit, NativeAccessSpecifierPublic)
+	TMap<int32, class UCurveFloat*>               StackShieldMaxAddCurve_Ultimate;                   // 0x1868(0x0050)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -56,39 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_102931">();
+		STATIC_CLASS_IMPL("PyAbility_10130_102931")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_102931")
 	}
 	static class UPyAbility_10130_102931* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_102931>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_102931) == 0x000008, "Wrong alignment on UPyAbility_10130_102931");
-static_assert(sizeof(UPyAbility_10130_102931) == 0x001838, "Wrong size on UPyAbility_10130_102931");
-static_assert(offsetof(UPyAbility_10130_102931, NormalSculptTag) == 0x001540, "Member 'UPyAbility_10130_102931::NormalSculptTag' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, DefaultShieldBuff) == 0x00154C, "Member 'UPyAbility_10130_102931::DefaultShieldBuff' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, BaseDamageToShieldCoeff_Default) == 0x001550, "Member 'UPyAbility_10130_102931::BaseDamageToShieldCoeff_Default' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, ShieldMax_Default) == 0x001554, "Member 'UPyAbility_10130_102931::ShieldMax_Default' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, Note_Coeff_Add) == 0x001558, "Member 'UPyAbility_10130_102931::Note_Coeff_Add' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, Note_Shield) == 0x001568, "Member 'UPyAbility_10130_102931::Note_Shield' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, EffectID_Normal) == 0x001578, "Member 'UPyAbility_10130_102931::EffectID_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, BaseDamageToShieldCoeff_Normal) == 0x001588, "Member 'UPyAbility_10130_102931::BaseDamageToShieldCoeff_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCoeff_Normal) == 0x00158C, "Member 'UPyAbility_10130_102931::StackDamageToShieldCoeff_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, BaseShieldMax_Normal) == 0x001590, "Member 'UPyAbility_10130_102931::BaseShieldMax_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMax_Normal) == 0x001594, "Member 'UPyAbility_10130_102931::StackShieldMax_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCoeffNew_Normal) == 0x001598, "Member 'UPyAbility_10130_102931::StackDamageToShieldCoeffNew_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCurve_Normal) == 0x0015E8, "Member 'UPyAbility_10130_102931::StackDamageToShieldCurve_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMaxAdd_Normal) == 0x001638, "Member 'UPyAbility_10130_102931::StackShieldMaxAdd_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMaxAddCurve_Normal) == 0x001688, "Member 'UPyAbility_10130_102931::StackShieldMaxAddCurve_Normal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, EffectID_Ultimate) == 0x0016D8, "Member 'UPyAbility_10130_102931::EffectID_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, BaseDamageToShieldCoeff_Ultimate) == 0x0016E8, "Member 'UPyAbility_10130_102931::BaseDamageToShieldCoeff_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCoeff_Ultimate) == 0x0016EC, "Member 'UPyAbility_10130_102931::StackDamageToShieldCoeff_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, BaseShieldMax_Ultimate) == 0x0016F0, "Member 'UPyAbility_10130_102931::BaseShieldMax_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMax_Ultimate) == 0x0016F4, "Member 'UPyAbility_10130_102931::StackShieldMax_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCoeffNew_Ultimate) == 0x0016F8, "Member 'UPyAbility_10130_102931::StackDamageToShieldCoeffNew_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackDamageToShieldCurve_Ultimate) == 0x001748, "Member 'UPyAbility_10130_102931::StackDamageToShieldCurve_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMaxAdd_Ultimate) == 0x001798, "Member 'UPyAbility_10130_102931::StackShieldMaxAdd_Ultimate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_10130_102931, StackShieldMaxAddCurve_Ultimate) == 0x0017E8, "Member 'UPyAbility_10130_102931::StackShieldMaxAddCurve_Ultimate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_10130_102931;
 
 }
 

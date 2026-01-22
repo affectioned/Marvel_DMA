@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_DebugMsg.WBP_DebugMsg_C
-// 0x0008 (0x05F0 - 0x05E8)
+// 0x0008 (0x05F8 - 0x05F0)
 class UWBP_DebugMsg_C final : public UPyDebugMsgPanel
 {
 public:
-	class UMarvelVerticalBox*                     VBox_Debug;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_Debug;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugMsg_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugMsg_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugMsg_C")
 	}
 	static class UWBP_DebugMsg_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugMsg_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugMsg_C) == 0x000008, "Wrong alignment on UWBP_DebugMsg_C");
-static_assert(sizeof(UWBP_DebugMsg_C) == 0x0005F0, "Wrong size on UWBP_DebugMsg_C");
-static_assert(offsetof(UWBP_DebugMsg_C, VBox_Debug) == 0x0005E8, "Member 'UWBP_DebugMsg_C::VBox_Debug' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugMsg_C;
 
 }
 

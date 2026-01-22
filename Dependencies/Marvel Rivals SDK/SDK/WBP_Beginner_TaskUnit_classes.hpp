@@ -17,61 +17,45 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Beginner_TaskUnit.WBP_Beginner_TaskUnit_C
-// 0x0098 (0x0610 - 0x0578)
+// 0x0098 (0x0618 - 0x0580)
 class UWBP_Beginner_TaskUnit_C final : public UPyWidget_Novice_MissionDetail
 {
 public:
-	class UWidgetAnimation*                       Anim_Normal;                                       // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Complete;                                     // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx1;                                        // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx2;                                        // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx3;                                        // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx4;                                        // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx5;                                        // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx6;                                        // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx7;                                        // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Vx8;                                        // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Frame_Selected;                                // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Frame_UnSelected;                              // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Icon_UnSelected;                               // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Icon_UnSelected_1;                             // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_CheckBox;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_CheckBox_Selected;                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_CheckBox_UnSelected;                       // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Lighting;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_TaskContent;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Normal;                                       // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Complete;                                     // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx1;                                        // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx2;                                        // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx3;                                        // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx4;                                        // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx5;                                        // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx6;                                        // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx7;                                        // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Vx8;                                        // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Frame_Selected;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Frame_UnSelected;                              // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Icon_UnSelected;                               // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Icon_UnSelected_1;                             // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_CheckBox;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_CheckBox_Selected;                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_CheckBox_UnSelected;                       // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Lighting;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_TaskContent;                                  // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Beginner_TaskUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Beginner_TaskUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Beginner_TaskUnit_C")
 	}
 	static class UWBP_Beginner_TaskUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Beginner_TaskUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_Beginner_TaskUnit_C) == 0x000008, "Wrong alignment on UWBP_Beginner_TaskUnit_C");
-static_assert(sizeof(UWBP_Beginner_TaskUnit_C) == 0x000610, "Wrong size on UWBP_Beginner_TaskUnit_C");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Anim_Normal) == 0x000578, "Member 'UWBP_Beginner_TaskUnit_C::Anim_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Anim_Complete) == 0x000580, "Member 'UWBP_Beginner_TaskUnit_C::Anim_Complete' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx1) == 0x000588, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx2) == 0x000590, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx2' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx3) == 0x000598, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx3' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx4) == 0x0005A0, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx4' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx5) == 0x0005A8, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx5' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx6) == 0x0005B0, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx6' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx7) == 0x0005B8, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx7' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Bg_Vx8) == 0x0005C0, "Member 'UWBP_Beginner_TaskUnit_C::Img_Bg_Vx8' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Frame_Selected) == 0x0005C8, "Member 'UWBP_Beginner_TaskUnit_C::Img_Frame_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Frame_UnSelected) == 0x0005D0, "Member 'UWBP_Beginner_TaskUnit_C::Img_Frame_UnSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Icon_UnSelected) == 0x0005D8, "Member 'UWBP_Beginner_TaskUnit_C::Img_Icon_UnSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Img_Icon_UnSelected_1) == 0x0005E0, "Member 'UWBP_Beginner_TaskUnit_C::Img_Icon_UnSelected_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Overlay_CheckBox) == 0x0005E8, "Member 'UWBP_Beginner_TaskUnit_C::Overlay_CheckBox' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Overlay_CheckBox_Selected) == 0x0005F0, "Member 'UWBP_Beginner_TaskUnit_C::Overlay_CheckBox_Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Overlay_CheckBox_UnSelected) == 0x0005F8, "Member 'UWBP_Beginner_TaskUnit_C::Overlay_CheckBox_UnSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Overlay_Lighting) == 0x000600, "Member 'UWBP_Beginner_TaskUnit_C::Overlay_Lighting' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_TaskUnit_C, Text_TaskContent) == 0x000608, "Member 'UWBP_Beginner_TaskUnit_C::Text_TaskContent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Beginner_TaskUnit_C;
 
 }
 

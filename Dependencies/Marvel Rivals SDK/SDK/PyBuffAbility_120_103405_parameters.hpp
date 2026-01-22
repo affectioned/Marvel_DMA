@@ -23,9 +23,7 @@ struct PyEffectAbility_120_10340511_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10340511_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_120_10340511_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_120_10340511_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_120_10340511_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_120_10340511_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_120_10340511_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10340511_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_103405.PyEffectAbility_120_10340511.OnAllyDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -36,11 +34,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10340511_OnAllyDeath) == 0x000008, "Wrong alignment on PyEffectAbility_120_10340511_OnAllyDeath");
-static_assert(sizeof(PyEffectAbility_120_10340511_OnAllyDeath) == 0x000028, "Wrong size on PyEffectAbility_120_10340511_OnAllyDeath");
-static_assert(offsetof(PyEffectAbility_120_10340511_OnAllyDeath, DamageCauser) == 0x000000, "Member 'PyEffectAbility_120_10340511_OnAllyDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyEffectAbility_120_10340511_OnAllyDeath, TargetActor) == 0x000008, "Member 'PyEffectAbility_120_10340511_OnAllyDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyEffectAbility_120_10340511_OnAllyDeath, ModifierParameterHandle) == 0x000010, "Member 'PyEffectAbility_120_10340511_OnAllyDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10340511_OnAllyDeath;
 
 }
 

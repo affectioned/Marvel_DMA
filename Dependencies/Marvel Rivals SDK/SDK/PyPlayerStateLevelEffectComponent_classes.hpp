@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // PythonClass PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent
-// 0x0020 (0x0128 - 0x0108)
-class UPyPlayerStateLevelEffectComponent : public UMarvelActorComponentBase
+// 0x0000 (0x0238 - 0x0238)
+class UPyPlayerStateLevelEffectComponent : public UPlayerStateLevelEffectComponent
 {
 public:
-	TArray<int32>                                 OwnCardList;                                       // 0x0108(0x0010)(Net, RepNotify, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnOwnCardListChanged;                              // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
 	void ReceiveInitializeComponent();
-	void OnCharacterRegister(class AActor* Character);
 	void OnPlayerPossessCharacter(class AMarvelPlayerState* PlayerState, class AMarvelBaseCharacter* Character);
-	void OnRep_OwnCardList();
+	void K2_PreReplicatedRemove(struct FLevelEffectItem* EffectInfo);
+	void K2_PostReplicatedAdd(struct FLevelEffectItem* EffectInfo);
+	void K2_PostReplicatedChange(struct FLevelEffectItem* EffectInfo);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateLevelEffectComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateLevelEffectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateLevelEffectComponent")
 	}
 	static class UPyPlayerStateLevelEffectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateLevelEffectComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateLevelEffectComponent) == 0x000008, "Wrong alignment on UPyPlayerStateLevelEffectComponent");
-static_assert(sizeof(UPyPlayerStateLevelEffectComponent) == 0x000128, "Wrong size on UPyPlayerStateLevelEffectComponent");
-static_assert(offsetof(UPyPlayerStateLevelEffectComponent, OwnCardList) == 0x000108, "Member 'UPyPlayerStateLevelEffectComponent::OwnCardList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateLevelEffectComponent, OnOwnCardListChanged) == 0x000118, "Member 'UPyPlayerStateLevelEffectComponent::OnOwnCardListChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateLevelEffectComponent;
 
 }
 

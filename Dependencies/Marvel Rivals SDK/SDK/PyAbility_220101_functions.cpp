@@ -17,6 +17,31 @@
 namespace SDK
 {
 
+// PythonFunction PyAbility_220101.PyAbility_220101.CanActivate
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyAbility_220101::CanActivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_220101", "CanActivate");
+
+	Params::PyAbility_220101_CanActivate Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction PyAbility_220101.PyAbility_220101.K2_ActivateAbility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

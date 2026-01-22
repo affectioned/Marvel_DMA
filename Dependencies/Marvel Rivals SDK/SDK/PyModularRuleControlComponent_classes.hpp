@@ -44,17 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModularRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyModularRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModularRuleControlComponent")
 	}
 	static class UPyModularRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyModularRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyModularRuleControlComponent) == 0x000008, "Wrong alignment on UPyModularRuleControlComponent");
-static_assert(sizeof(UPyModularRuleControlComponent) == 0x000218, "Wrong size on UPyModularRuleControlComponent");
-static_assert(offsetof(UPyModularRuleControlComponent, ModuleModePanelClass) == 0x000208, "Member 'UPyModularRuleControlComponent::ModuleModePanelClass' has a wrong offset!");
-static_assert(offsetof(UPyModularRuleControlComponent, RoundCount) == 0x000210, "Member 'UPyModularRuleControlComponent::RoundCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyModularRuleControlComponent;
 
 }
 

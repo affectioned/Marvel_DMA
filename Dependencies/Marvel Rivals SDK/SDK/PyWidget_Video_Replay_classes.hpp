@@ -17,43 +17,43 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Video_Replay.PyWidget_Video_Replay
-// 0x0130 (0x06F0 - 0x05C0)
+// 0x0130 (0x06F8 - 0x05C8)
 class UPyWidget_Video_Replay final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnReplayStarted;                                   // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayEnded;                                     // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayStartPlaying;                              // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayClosed;                                    // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayPaused;                                    // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnReplayResumed;                                   // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnVideoSwitchAnimFinished;                         // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNeedReopen;                                      // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	class FText                                   Text_Loading;                                      // 0x0640(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   Text_Failed;                                       // 0x0658(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   Text_NoExist;                                      // 0x0670(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          AutoSize;                                          // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedSound;                                         // 0x0689(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_68A[0x6];                                      // 0x068A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                MI_Replay;                                         // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableInteract;                                    // 0x0698(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedShowTips;                                      // 0x0699(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69A[0x6];                                      // 0x069A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Texture_Pause;                                     // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Play;                                      // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_PlayHover;                                 // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Refresh;                                   // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_RefreshHover;                              // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BtnMainIsFocusable;                                // 0x06C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ExternallyPerformReopen;                           // 0x06C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AutoLoop;                                          // 0x06CA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DebugReplay;                                       // 0x06CB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6CC[0x4];                                      // 0x06CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DebugReplaySessionName;                            // 0x06D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DebugReplayUid;                                    // 0x06E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DebugReplayStartTime;                              // 0x06E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DebugReplayEndTime;                                // 0x06E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnReplayStarted;                                   // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayEnded;                                     // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayStartPlaying;                              // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayClosed;                                    // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayPaused;                                    // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnReplayResumed;                                   // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnVideoSwitchAnimFinished;                         // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNeedReopen;                                      // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class FText                                   Text_Loading;                                      // 0x0648(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   Text_Failed;                                       // 0x0660(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   Text_NoExist;                                      // 0x0678(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          AutoSize;                                          // 0x0690(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedSound;                                         // 0x0691(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_692[0x6];                                      // 0x0692(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                MI_Replay;                                         // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableInteract;                                    // 0x06A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedShowTips;                                      // 0x06A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6A2[0x6];                                      // 0x06A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Texture_Pause;                                     // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Play;                                      // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_PlayHover;                                 // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Refresh;                                   // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_RefreshHover;                              // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BtnMainIsFocusable;                                // 0x06D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ExternallyPerformReopen;                           // 0x06D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AutoLoop;                                          // 0x06D2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DebugReplay;                                       // 0x06D3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6D4[0x4];                                      // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DebugReplaySessionName;                            // 0x06D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DebugReplayUid;                                    // 0x06E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DebugReplayStartTime;                              // 0x06EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DebugReplayEndTime;                                // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -65,44 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Video_Replay">();
+		STATIC_CLASS_IMPL("PyWidget_Video_Replay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Video_Replay")
 	}
 	static class UPyWidget_Video_Replay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Video_Replay>();
 	}
 };
-static_assert(alignof(UPyWidget_Video_Replay) == 0x000008, "Wrong alignment on UPyWidget_Video_Replay");
-static_assert(sizeof(UPyWidget_Video_Replay) == 0x0006F0, "Wrong size on UPyWidget_Video_Replay");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayStarted) == 0x0005C0, "Member 'UPyWidget_Video_Replay::OnReplayStarted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayEnded) == 0x0005D0, "Member 'UPyWidget_Video_Replay::OnReplayEnded' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayStartPlaying) == 0x0005E0, "Member 'UPyWidget_Video_Replay::OnReplayStartPlaying' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayClosed) == 0x0005F0, "Member 'UPyWidget_Video_Replay::OnReplayClosed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayPaused) == 0x000600, "Member 'UPyWidget_Video_Replay::OnReplayPaused' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnReplayResumed) == 0x000610, "Member 'UPyWidget_Video_Replay::OnReplayResumed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnVideoSwitchAnimFinished) == 0x000620, "Member 'UPyWidget_Video_Replay::OnVideoSwitchAnimFinished' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, OnNeedReopen) == 0x000630, "Member 'UPyWidget_Video_Replay::OnNeedReopen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Text_Loading) == 0x000640, "Member 'UPyWidget_Video_Replay::Text_Loading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Text_Failed) == 0x000658, "Member 'UPyWidget_Video_Replay::Text_Failed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Text_NoExist) == 0x000670, "Member 'UPyWidget_Video_Replay::Text_NoExist' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, AutoSize) == 0x000688, "Member 'UPyWidget_Video_Replay::AutoSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, NeedSound) == 0x000689, "Member 'UPyWidget_Video_Replay::NeedSound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, MI_Replay) == 0x000690, "Member 'UPyWidget_Video_Replay::MI_Replay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, EnableInteract) == 0x000698, "Member 'UPyWidget_Video_Replay::EnableInteract' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, NeedShowTips) == 0x000699, "Member 'UPyWidget_Video_Replay::NeedShowTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Texture_Pause) == 0x0006A0, "Member 'UPyWidget_Video_Replay::Texture_Pause' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Texture_Play) == 0x0006A8, "Member 'UPyWidget_Video_Replay::Texture_Play' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Texture_PlayHover) == 0x0006B0, "Member 'UPyWidget_Video_Replay::Texture_PlayHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Texture_Refresh) == 0x0006B8, "Member 'UPyWidget_Video_Replay::Texture_Refresh' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, Texture_RefreshHover) == 0x0006C0, "Member 'UPyWidget_Video_Replay::Texture_RefreshHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, BtnMainIsFocusable) == 0x0006C8, "Member 'UPyWidget_Video_Replay::BtnMainIsFocusable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, ExternallyPerformReopen) == 0x0006C9, "Member 'UPyWidget_Video_Replay::ExternallyPerformReopen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, AutoLoop) == 0x0006CA, "Member 'UPyWidget_Video_Replay::AutoLoop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, DebugReplay) == 0x0006CB, "Member 'UPyWidget_Video_Replay::DebugReplay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, DebugReplaySessionName) == 0x0006D0, "Member 'UPyWidget_Video_Replay::DebugReplaySessionName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, DebugReplayUid) == 0x0006E0, "Member 'UPyWidget_Video_Replay::DebugReplayUid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, DebugReplayStartTime) == 0x0006E4, "Member 'UPyWidget_Video_Replay::DebugReplayStartTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Video_Replay, DebugReplayEndTime) == 0x0006E8, "Member 'UPyWidget_Video_Replay::DebugReplayEndTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Video_Replay;
 
 }
 

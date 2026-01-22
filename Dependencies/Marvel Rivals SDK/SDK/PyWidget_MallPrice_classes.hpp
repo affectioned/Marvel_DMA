@@ -18,43 +18,43 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallPrice.PyWidget_MallPrice
-// 0x0280 (0x0840 - 0x05C0)
+// 0x0288 (0x0850 - 0x05C8)
 class UPyWidget_MallPrice : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            PriceIcon;                                         // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         PriceText;                                         // 0x0690(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         PriceTextLower;                                    // 0x06F8(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OriginalPrice;                                     // 0x0760(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OriginalPrice2;                                    // 0x0764(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DiscountPrice;                                     // 0x0768(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DrawRedNumberIfNoEnoughMoney;                      // 0x076C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_76D[0x3];                                      // 0x076D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            ColorNotEnoughMoney;                               // 0x0770(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorEnoughMoney;                                  // 0x0784(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorOrigPrice;                                    // 0x0798(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          NeedOverride_ColorOldPrice;                        // 0x07AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7AD[0x3];                                      // 0x07AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            ColorOldPrice;                                     // 0x07B0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorUseCoupon;                                    // 0x07C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsUseCoupon;                                       // 0x07D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7D9[0x3];                                      // 0x07D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PriceType;                                         // 0x07DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ViewNotEnoughMoney;                                // 0x07E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Need_Custom_Old_Price_Padding;                     // 0x07E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7E2[0x2];                                      // 0x07E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Padding_Of_Old_Price;                              // 0x07E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7F4[0x4];                                      // 0x07F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelHorizontalBox*                   HBox_RollAnim;                                     // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                RollAnimWidget;                                    // 0x0800(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Original;                                     // 0x0808(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Discount;                                     // 0x0810(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_PreDiscount;                                  // 0x0818(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemID;                                            // 0x0820(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemPrice;                                         // 0x0830(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemBeforeCouponPrice;                             // 0x0834(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemDiscountPrice;                                 // 0x0838(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            PriceIcon;                                         // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         PriceText;                                         // 0x06A0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         PriceTextLower;                                    // 0x0708(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OriginalPrice;                                     // 0x0770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OriginalPrice2;                                    // 0x0774(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DiscountPrice;                                     // 0x0778(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DrawRedNumberIfNoEnoughMoney;                      // 0x077C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_77D[0x3];                                      // 0x077D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            ColorNotEnoughMoney;                               // 0x0780(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorEnoughMoney;                                  // 0x0794(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorOrigPrice;                                    // 0x07A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          NeedOverride_ColorOldPrice;                        // 0x07BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7BD[0x3];                                      // 0x07BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            ColorOldPrice;                                     // 0x07C0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorUseCoupon;                                    // 0x07D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsUseCoupon;                                       // 0x07E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7E9[0x3];                                      // 0x07E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PriceType;                                         // 0x07EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ViewNotEnoughMoney;                                // 0x07F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Need_Custom_Old_Price_Padding;                     // 0x07F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7F2[0x2];                                      // 0x07F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                Padding_Of_Old_Price;                              // 0x07F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_804[0x4];                                      // 0x0804(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelHorizontalBox*                   HBox_RollAnim;                                     // 0x0808(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                RollAnimWidget;                                    // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Original;                                     // 0x0818(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Discount;                                     // 0x0820(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_PreDiscount;                                  // 0x0828(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemID;                                            // 0x0830(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemPrice;                                         // 0x0840(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemBeforeCouponPrice;                             // 0x0844(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemDiscountPrice;                                 // 0x0848(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -68,42 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallPrice">();
+		STATIC_CLASS_IMPL("PyWidget_MallPrice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallPrice")
 	}
 	static class UPyWidget_MallPrice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallPrice>();
 	}
 };
-static_assert(alignof(UPyWidget_MallPrice) == 0x000010, "Wrong alignment on UPyWidget_MallPrice");
-static_assert(sizeof(UPyWidget_MallPrice) == 0x000840, "Wrong size on UPyWidget_MallPrice");
-static_assert(offsetof(UPyWidget_MallPrice, PriceIcon) == 0x0005C0, "Member 'UPyWidget_MallPrice::PriceIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, PriceText) == 0x000690, "Member 'UPyWidget_MallPrice::PriceText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, PriceTextLower) == 0x0006F8, "Member 'UPyWidget_MallPrice::PriceTextLower' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, OriginalPrice) == 0x000760, "Member 'UPyWidget_MallPrice::OriginalPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, OriginalPrice2) == 0x000764, "Member 'UPyWidget_MallPrice::OriginalPrice2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, DiscountPrice) == 0x000768, "Member 'UPyWidget_MallPrice::DiscountPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, DrawRedNumberIfNoEnoughMoney) == 0x00076C, "Member 'UPyWidget_MallPrice::DrawRedNumberIfNoEnoughMoney' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ColorNotEnoughMoney) == 0x000770, "Member 'UPyWidget_MallPrice::ColorNotEnoughMoney' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ColorEnoughMoney) == 0x000784, "Member 'UPyWidget_MallPrice::ColorEnoughMoney' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ColorOrigPrice) == 0x000798, "Member 'UPyWidget_MallPrice::ColorOrigPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, NeedOverride_ColorOldPrice) == 0x0007AC, "Member 'UPyWidget_MallPrice::NeedOverride_ColorOldPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ColorOldPrice) == 0x0007B0, "Member 'UPyWidget_MallPrice::ColorOldPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ColorUseCoupon) == 0x0007C4, "Member 'UPyWidget_MallPrice::ColorUseCoupon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, IsUseCoupon) == 0x0007D8, "Member 'UPyWidget_MallPrice::IsUseCoupon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, PriceType) == 0x0007DC, "Member 'UPyWidget_MallPrice::PriceType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ViewNotEnoughMoney) == 0x0007E0, "Member 'UPyWidget_MallPrice::ViewNotEnoughMoney' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, Need_Custom_Old_Price_Padding) == 0x0007E1, "Member 'UPyWidget_MallPrice::Need_Custom_Old_Price_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, Padding_Of_Old_Price) == 0x0007E4, "Member 'UPyWidget_MallPrice::Padding_Of_Old_Price' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, HBox_RollAnim) == 0x0007F8, "Member 'UPyWidget_MallPrice::HBox_RollAnim' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, RollAnimWidget) == 0x000800, "Member 'UPyWidget_MallPrice::RollAnimWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, Anim_Original) == 0x000808, "Member 'UPyWidget_MallPrice::Anim_Original' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, Anim_Discount) == 0x000810, "Member 'UPyWidget_MallPrice::Anim_Discount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, Anim_PreDiscount) == 0x000818, "Member 'UPyWidget_MallPrice::Anim_PreDiscount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ItemID) == 0x000820, "Member 'UPyWidget_MallPrice::ItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ItemPrice) == 0x000830, "Member 'UPyWidget_MallPrice::ItemPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ItemBeforeCouponPrice) == 0x000834, "Member 'UPyWidget_MallPrice::ItemBeforeCouponPrice' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice, ItemDiscountPrice) == 0x000838, "Member 'UPyWidget_MallPrice::ItemDiscountPrice' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallPrice;
 
 }
 

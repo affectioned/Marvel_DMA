@@ -16,6 +16,28 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item.GetFocusUp
+// 0x0010 (0x0010 - 0x0000)
+struct PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusUp final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusUp;
+
+// PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item.GetFocusDown
+// 0x0010 (0x0010 - 0x0000)
+struct PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusDown final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Exclusive_Performance_Item_GetFocusDown;
+
 // PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item_V2.OnMouseEnter
 // 0x00B8 (0x00B8 - 0x0000)
 struct PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter final
@@ -24,10 +46,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter");
-static_assert(sizeof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter");
-static_assert(offsetof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseEnter;
 
 // PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item_V2.OnMouseLeave
 // 0x0080 (0x0080 - 0x0000)
@@ -36,9 +55,7 @@ struct PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave");
-static_assert(sizeof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave) == 0x000080, "Wrong size on PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave");
-static_assert(offsetof(PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Exclusive_Performance_Item_V2_OnMouseLeave;
 
 // PythonFunction PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +64,7 @@ struct PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct fina
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct");
-static_assert(sizeof(PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct) == 0x000001, "Wrong size on PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct");
-static_assert(offsetof(PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon_PreConstruct;
 
 }
 

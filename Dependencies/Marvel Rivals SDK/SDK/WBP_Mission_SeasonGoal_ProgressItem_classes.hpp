@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mission_SeasonGoal_ProgressItem.WBP_Mission_SeasonGoal_ProgressItem_C
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UWBP_Mission_SeasonGoal_ProgressItem_C final : public UPyWidget_Mission_SeasonGoal_ProgressItem
 {
 public:
-	class UMarvelImage*                           Img_Complete;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Normal;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Preview;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Num;                                          // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Item_V2_C*                  WBP_Reward;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Complete;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Normal;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Preview;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Num;                                          // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Item_V2_C*                  WBP_Reward;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mission_SeasonGoal_ProgressItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mission_SeasonGoal_ProgressItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mission_SeasonGoal_ProgressItem_C")
 	}
 	static class UWBP_Mission_SeasonGoal_ProgressItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mission_SeasonGoal_ProgressItem_C>();
 	}
 };
-static_assert(alignof(UWBP_Mission_SeasonGoal_ProgressItem_C) == 0x000008, "Wrong alignment on UWBP_Mission_SeasonGoal_ProgressItem_C");
-static_assert(sizeof(UWBP_Mission_SeasonGoal_ProgressItem_C) == 0x000620, "Wrong size on UWBP_Mission_SeasonGoal_ProgressItem_C");
-static_assert(offsetof(UWBP_Mission_SeasonGoal_ProgressItem_C, Img_Complete) == 0x0005F8, "Member 'UWBP_Mission_SeasonGoal_ProgressItem_C::Img_Complete' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_SeasonGoal_ProgressItem_C, Img_Normal) == 0x000600, "Member 'UWBP_Mission_SeasonGoal_ProgressItem_C::Img_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_SeasonGoal_ProgressItem_C, Img_Preview) == 0x000608, "Member 'UWBP_Mission_SeasonGoal_ProgressItem_C::Img_Preview' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_SeasonGoal_ProgressItem_C, Text_Num) == 0x000610, "Member 'UWBP_Mission_SeasonGoal_ProgressItem_C::Text_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_SeasonGoal_ProgressItem_C, WBP_Reward) == 0x000618, "Member 'UWBP_Mission_SeasonGoal_ProgressItem_C::WBP_Reward' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mission_SeasonGoal_ProgressItem_C;
 
 }
 

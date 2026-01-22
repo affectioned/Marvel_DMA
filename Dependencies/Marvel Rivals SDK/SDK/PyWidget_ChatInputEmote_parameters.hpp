@@ -23,9 +23,7 @@ struct PyWidget_ChatEmotePanel_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatEmotePanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_ChatEmotePanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_ChatEmotePanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_ChatEmotePanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_ChatEmotePanel_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_ChatEmotePanel_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatEmotePanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_ChatInputEmote.PyWidget_ChatEmoteBtnItem.SetEmoteData
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_ChatEmoteBtnItem_SetEmoteData final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatEmoteBtnItem_SetEmoteData) == 0x000008, "Wrong alignment on PyWidget_ChatEmoteBtnItem_SetEmoteData");
-static_assert(sizeof(PyWidget_ChatEmoteBtnItem_SetEmoteData) == 0x000008, "Wrong size on PyWidget_ChatEmoteBtnItem_SetEmoteData");
-static_assert(offsetof(PyWidget_ChatEmoteBtnItem_SetEmoteData, ItemObject_0) == 0x000000, "Member 'PyWidget_ChatEmoteBtnItem_SetEmoteData::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatEmoteBtnItem_SetEmoteData;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyLevelPortalScreenFX.PyWidget_ScreenFX_LevelPortal_Teleportation
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_ScreenFX_LevelPortal_Teleportation final : public UMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ScreenFX_LevelPortal_Teleportation">();
+		STATIC_CLASS_IMPL("PyWidget_ScreenFX_LevelPortal_Teleportation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ScreenFX_LevelPortal_Teleportation")
 	}
 	static class UPyWidget_ScreenFX_LevelPortal_Teleportation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ScreenFX_LevelPortal_Teleportation>();
 	}
 };
-static_assert(alignof(UPyWidget_ScreenFX_LevelPortal_Teleportation) == 0x000008, "Wrong alignment on UPyWidget_ScreenFX_LevelPortal_Teleportation");
-static_assert(sizeof(UPyWidget_ScreenFX_LevelPortal_Teleportation) == 0x000568, "Wrong size on UPyWidget_ScreenFX_LevelPortal_Teleportation");
+DUMPER7_ASSERTS_UPyWidget_ScreenFX_LevelPortal_Teleportation;
 
 }
 

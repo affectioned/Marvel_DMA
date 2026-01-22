@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S3_1SeasonStory_Reward_ProgressItem.PyWidget_S3_1SeasonStory_Reward_ProgressItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_S3_1SeasonStory_Reward_ProgressItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RewardIdx;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ScheduleId, const class FString& ItemId)> OnClicked;         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RewardIdx;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ScheduleId, const class FString& ItemId)> OnClicked;         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_Reward_ProgressItem">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_Reward_ProgressItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_Reward_ProgressItem")
 	}
 	static class UPyWidget_S3_1SeasonStory_Reward_ProgressItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_Reward_ProgressItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_Reward_ProgressItem) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_Reward_ProgressItem");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_Reward_ProgressItem) == 0x0005D0, "Wrong size on UPyWidget_S3_1SeasonStory_Reward_ProgressItem");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward_ProgressItem, RewardIdx) == 0x0005BC, "Member 'UPyWidget_S3_1SeasonStory_Reward_ProgressItem::RewardIdx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_Reward_ProgressItem, OnClicked) == 0x0005C0, "Member 'UPyWidget_S3_1SeasonStory_Reward_ProgressItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_Reward_ProgressItem;
 
 }
 

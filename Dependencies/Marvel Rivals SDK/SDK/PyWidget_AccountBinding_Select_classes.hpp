@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_AccountBinding_Select.PyWidget_AccountBinding_Item_Small
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_AccountBinding_Item_Small final : public UPyMarvelUserWidget
 {
 public:
@@ -29,23 +29,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccountBinding_Item_Small">();
+		STATIC_CLASS_IMPL("PyWidget_AccountBinding_Item_Small")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccountBinding_Item_Small")
 	}
 	static class UPyWidget_AccountBinding_Item_Small* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccountBinding_Item_Small>();
 	}
 };
-static_assert(alignof(UPyWidget_AccountBinding_Item_Small) == 0x000008, "Wrong alignment on UPyWidget_AccountBinding_Item_Small");
-static_assert(sizeof(UPyWidget_AccountBinding_Item_Small) == 0x0005C0, "Wrong size on UPyWidget_AccountBinding_Item_Small");
+DUMPER7_ASSERTS_UPyWidget_AccountBinding_Item_Small;
 
 // PythonClass PyWidget_AccountBinding_Select.PyWidget_AccountBinding_Select
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_AccountBinding_Select final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_AccountBinding_Item_Small> Item;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_AccountBinding_Item_Small> Item;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -55,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccountBinding_Select">();
+		STATIC_CLASS_IMPL("PyWidget_AccountBinding_Select")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccountBinding_Select")
 	}
 	static class UPyWidget_AccountBinding_Select* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccountBinding_Select>();
 	}
 };
-static_assert(alignof(UPyWidget_AccountBinding_Select) == 0x000008, "Wrong alignment on UPyWidget_AccountBinding_Select");
-static_assert(sizeof(UPyWidget_AccountBinding_Select) == 0x0005C8, "Wrong size on UPyWidget_AccountBinding_Select");
-static_assert(offsetof(UPyWidget_AccountBinding_Select, Item) == 0x0005C0, "Member 'UPyWidget_AccountBinding_Select::Item' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AccountBinding_Select;
 
 }
 

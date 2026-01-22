@@ -16,15 +16,15 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry.OnInitialized
+// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry_Base.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ChampionshipLeagueHonorHallEntry::OnInitialized()
+void UPyWidget_ChampionshipLeagueHonorHallEntry_Base::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry_Base", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -35,15 +35,15 @@ void UPyWidget_ChampionshipLeagueHonorHallEntry::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry.Construct
+// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry_Base.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ChampionshipLeagueHonorHallEntry::Construct()
+void UPyWidget_ChampionshipLeagueHonorHallEntry_Base::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry", "Construct");
+		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry_Base", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -54,15 +54,15 @@ void UPyWidget_ChampionshipLeagueHonorHallEntry::Construct()
 }
 
 
-// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry.Destruct
+// PythonFunction PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry_Base.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ChampionshipLeagueHonorHallEntry::Destruct()
+void UPyWidget_ChampionshipLeagueHonorHallEntry_Base::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry", "Destruct");
+		Func = Class->GetFunction("PyWidget_ChampionshipLeagueHonorHallEntry_Base", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

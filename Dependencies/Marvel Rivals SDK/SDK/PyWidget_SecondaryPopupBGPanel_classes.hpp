@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryPopupBGPanel.PyWidget_SecondaryPopupBGPanel
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_SecondaryPopupBGPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TitleText;                                         // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   LeftBtnText;                                       // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   RightBtnText;                                      // 0x05F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	ECommonBGType                                 CommonBGType;                                      // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TitleText;                                         // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   LeftBtnText;                                       // 0x05E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   RightBtnText;                                      // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	ECommonBGType                                 CommonBGType;                                      // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -54,26 +54,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPopupBGPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPopupBGPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPopupBGPanel")
 	}
 	static class UPyWidget_SecondaryPopupBGPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPopupBGPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPopupBGPanel) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPopupBGPanel");
-static_assert(sizeof(UPyWidget_SecondaryPopupBGPanel) == 0x000610, "Wrong size on UPyWidget_SecondaryPopupBGPanel");
-static_assert(offsetof(UPyWidget_SecondaryPopupBGPanel, TitleText) == 0x0005C0, "Member 'UPyWidget_SecondaryPopupBGPanel::TitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupBGPanel, LeftBtnText) == 0x0005D8, "Member 'UPyWidget_SecondaryPopupBGPanel::LeftBtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupBGPanel, RightBtnText) == 0x0005F0, "Member 'UPyWidget_SecondaryPopupBGPanel::RightBtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPopupBGPanel, CommonBGType) == 0x000608, "Member 'UPyWidget_SecondaryPopupBGPanel::CommonBGType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPopupBGPanel;
 
 // PythonClass PyWidget_SecondaryPopupBGPanel.PyWidget_SecondaryPopupBGUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SecondaryPopupBGUnit : public UPyMarvelUserWidget
 {
 public:
-	ECommonBGType                                 CommonBGType;                                      // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECommonBGType                                 CommonBGType;                                      // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -85,19 +84,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPopupBGUnit">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPopupBGUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPopupBGUnit")
 	}
 	static class UPyWidget_SecondaryPopupBGUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPopupBGUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPopupBGUnit) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPopupBGUnit");
-static_assert(sizeof(UPyWidget_SecondaryPopupBGUnit) == 0x0005C0, "Wrong size on UPyWidget_SecondaryPopupBGUnit");
-static_assert(offsetof(UPyWidget_SecondaryPopupBGUnit, CommonBGType) == 0x0005BA, "Member 'UPyWidget_SecondaryPopupBGUnit::CommonBGType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPopupBGUnit;
 
 // PythonClass PyWidget_SecondaryPopupBGPanel.PyWidget_SecondaryPopupBGUnit_V2
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SecondaryPopupBGUnit_V2 : public UPyWidget_SecondaryPopupBGUnit
 {
 public:
@@ -108,15 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPopupBGUnit_V2">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPopupBGUnit_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPopupBGUnit_V2")
 	}
 	static class UPyWidget_SecondaryPopupBGUnit_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPopupBGUnit_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPopupBGUnit_V2) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPopupBGUnit_V2");
-static_assert(sizeof(UPyWidget_SecondaryPopupBGUnit_V2) == 0x0005C0, "Wrong size on UPyWidget_SecondaryPopupBGUnit_V2");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPopupBGUnit_V2;
 
 }
 

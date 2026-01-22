@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelProcessController_NewYorkH01">();
+		STATIC_CLASS_IMPL("PyLevelProcessController_NewYorkH01")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelProcessController_NewYorkH01")
 	}
 	static class APyLevelProcessController_NewYorkH01* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelProcessController_NewYorkH01>();
 	}
 };
-static_assert(alignof(APyLevelProcessController_NewYorkH01) == 0x000010, "Wrong alignment on APyLevelProcessController_NewYorkH01");
-static_assert(sizeof(APyLevelProcessController_NewYorkH01) == 0x000770, "Wrong size on APyLevelProcessController_NewYorkH01");
-static_assert(offsetof(APyLevelProcessController_NewYorkH01, TransferAbilityID) == 0x000760, "Member 'APyLevelProcessController_NewYorkH01::TransferAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelProcessController_NewYorkH01;
 
 }
 

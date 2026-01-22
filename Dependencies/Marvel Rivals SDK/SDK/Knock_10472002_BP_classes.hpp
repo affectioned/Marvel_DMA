@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Knock_10472002_BP.Knock_10472002_BP_C
-// 0x0000 (0x2038 - 0x2038)
+// 0x0000 (0x2388 - 0x2388)
 class UKnock_10472002_BP_C final : public UMarvelKnockUpAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Knock_10472002_BP_C">();
+		BP_STATIC_CLASS_IMPL("Knock_10472002_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Knock_10472002_BP_C")
 	}
 	static class UKnock_10472002_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKnock_10472002_BP_C>();
 	}
 };
-static_assert(alignof(UKnock_10472002_BP_C) == 0x000008, "Wrong alignment on UKnock_10472002_BP_C");
-static_assert(sizeof(UKnock_10472002_BP_C) == 0x002038, "Wrong size on UKnock_10472002_BP_C");
+DUMPER7_ASSERTS_UKnock_10472002_BP_C;
 
 }
 

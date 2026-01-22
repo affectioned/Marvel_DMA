@@ -23,9 +23,7 @@ struct PyElevatorCatcher_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyElevatorCatcher_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyElevatorCatcher_ReceiveEndPlay");
-static_assert(sizeof(PyElevatorCatcher_ReceiveEndPlay) == 0x000001, "Wrong size on PyElevatorCatcher_ReceiveEndPlay");
-static_assert(offsetof(PyElevatorCatcher_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyElevatorCatcher_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyElevatorCatcher_ReceiveEndPlay;
 
 // PythonFunction PyElevatorCatcher.PyElevatorCatcher.SrvSetPlayback
 // 0x0018 (0x0018 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         pos;                                               // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyElevatorCatcher_SrvSetPlayback) == 0x000008, "Wrong alignment on PyElevatorCatcher_SrvSetPlayback");
-static_assert(sizeof(PyElevatorCatcher_SrvSetPlayback) == 0x000018, "Wrong size on PyElevatorCatcher_SrvSetPlayback");
-static_assert(offsetof(PyElevatorCatcher_SrvSetPlayback, state) == 0x000000, "Member 'PyElevatorCatcher_SrvSetPlayback::state' has a wrong offset!");
-static_assert(offsetof(PyElevatorCatcher_SrvSetPlayback, pos) == 0x000010, "Member 'PyElevatorCatcher_SrvSetPlayback::pos' has a wrong offset!");
+DUMPER7_ASSERTS_PyElevatorCatcher_SrvSetPlayback;
 
 }
 

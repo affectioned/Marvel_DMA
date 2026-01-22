@@ -47,27 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01ResourceContainer">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01ResourceContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01ResourceContainer")
 	}
 	static class APyKlyntarEC01ResourceContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarEC01ResourceContainer>();
 	}
 };
-static_assert(alignof(APyKlyntarEC01ResourceContainer) == 0x000010, "Wrong alignment on APyKlyntarEC01ResourceContainer");
-static_assert(sizeof(APyKlyntarEC01ResourceContainer) == 0x0007C0, "Wrong size on APyKlyntarEC01ResourceContainer");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, OwnerControl) == 0x0006E0, "Member 'APyKlyntarEC01ResourceContainer::OwnerControl' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, Percent) == 0x0006E8, "Member 'APyKlyntarEC01ResourceContainer::Percent' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, IsUnlock) == 0x0006EC, "Member 'APyKlyntarEC01ResourceContainer::IsUnlock' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, LockEmissiveColor) == 0x0006F0, "Member 'APyKlyntarEC01ResourceContainer::LockEmissiveColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, LockFresnelColor) == 0x000708, "Member 'APyKlyntarEC01ResourceContainer::LockFresnelColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, UnlockEmissiveColor) == 0x000720, "Member 'APyKlyntarEC01ResourceContainer::UnlockEmissiveColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, UnlockFresnelColor) == 0x000738, "Member 'APyKlyntarEC01ResourceContainer::UnlockFresnelColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, CapsuleHeadSourceLocation) == 0x000750, "Member 'APyKlyntarEC01ResourceContainer::CapsuleHeadSourceLocation' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, CapsuleHeadTargetLocation) == 0x000768, "Member 'APyKlyntarEC01ResourceContainer::CapsuleHeadTargetLocation' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, CapsuleBodySourceLocation) == 0x000780, "Member 'APyKlyntarEC01ResourceContainer::CapsuleBodySourceLocation' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, CapsuleBodyTargetLocation) == 0x000798, "Member 'APyKlyntarEC01ResourceContainer::CapsuleBodyTargetLocation' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01ResourceContainer, CapsuleHeadTransitionCurve) == 0x0007B0, "Member 'APyKlyntarEC01ResourceContainer::CapsuleHeadTransitionCurve' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarEC01ResourceContainer;
 
 }
 

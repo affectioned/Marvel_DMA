@@ -47,16 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroVoiceManager">();
+		STATIC_CLASS_IMPL("PyHeroVoiceManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroVoiceManager")
 	}
 	static class APyHeroVoiceManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHeroVoiceManager>();
 	}
 };
-static_assert(alignof(APyHeroVoiceManager) == 0x000010, "Wrong alignment on APyHeroVoiceManager");
-static_assert(sizeof(APyHeroVoiceManager) == 0x000B20, "Wrong size on APyHeroVoiceManager");
-static_assert(offsetof(APyHeroVoiceManager, OnVoicePostFailed) == 0x000B10, "Member 'APyHeroVoiceManager::OnVoicePostFailed' has a wrong offset!");
+DUMPER7_ASSERTS_APyHeroVoiceManager;
 
 }
 

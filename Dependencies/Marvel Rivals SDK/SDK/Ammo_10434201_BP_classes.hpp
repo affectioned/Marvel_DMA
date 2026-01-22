@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ammo_10434201_BP.Ammo_10434201_BP_C
-// 0x0000 (0x08F0 - 0x08F0)
+// 0x0000 (0x0960 - 0x0960)
 class AAmmo_10434201_BP_C final : public AInstantAmmo
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ammo_10434201_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ammo_10434201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ammo_10434201_BP_C")
 	}
 	static class AAmmo_10434201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmmo_10434201_BP_C>();
 	}
 };
-static_assert(alignof(AAmmo_10434201_BP_C) == 0x000010, "Wrong alignment on AAmmo_10434201_BP_C");
-static_assert(sizeof(AAmmo_10434201_BP_C) == 0x0008F0, "Wrong size on AAmmo_10434201_BP_C");
+DUMPER7_ASSERTS_AAmmo_10434201_BP_C;
 
 }
 

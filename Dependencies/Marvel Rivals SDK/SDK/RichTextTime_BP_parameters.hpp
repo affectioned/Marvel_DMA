@@ -23,11 +23,7 @@ public:
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 	class FString                                 CallFunc_FormatTimeFromPython_ReturnValue;         // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RichTextTime_BP_C_FormatTimeFromPython) == 0x000008, "Wrong alignment on RichTextTime_BP_C_FormatTimeFromPython");
-static_assert(sizeof(RichTextTime_BP_C_FormatTimeFromPython) == 0x000030, "Wrong size on RichTextTime_BP_C_FormatTimeFromPython");
-static_assert(offsetof(RichTextTime_BP_C_FormatTimeFromPython, TimeString) == 0x000000, "Member 'RichTextTime_BP_C_FormatTimeFromPython::TimeString' has a wrong offset!");
-static_assert(offsetof(RichTextTime_BP_C_FormatTimeFromPython, ReturnValue) == 0x000010, "Member 'RichTextTime_BP_C_FormatTimeFromPython::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RichTextTime_BP_C_FormatTimeFromPython, CallFunc_FormatTimeFromPython_ReturnValue) == 0x000020, "Member 'RichTextTime_BP_C_FormatTimeFromPython::CallFunc_FormatTimeFromPython_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_RichTextTime_BP_C_FormatTimeFromPython;
 
 }
 

@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneReplaySection">();
+		STATIC_CLASS_IMPL("MovieSceneReplaySection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneReplaySection")
 	}
 	static class UMovieSceneReplaySection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneReplaySection>();
 	}
 };
-static_assert(alignof(UMovieSceneReplaySection) == 0x000008, "Wrong alignment on UMovieSceneReplaySection");
-static_assert(sizeof(UMovieSceneReplaySection) == 0x000140, "Wrong size on UMovieSceneReplaySection");
-static_assert(offsetof(UMovieSceneReplaySection, ReplayName) == 0x000100, "Member 'UMovieSceneReplaySection::ReplayName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneReplaySection, AdditionalOptions) == 0x000110, "Member 'UMovieSceneReplaySection::AdditionalOptions' has a wrong offset!");
-static_assert(offsetof(UMovieSceneReplaySection, ViewTargetCharacterName) == 0x000120, "Member 'UMovieSceneReplaySection::ViewTargetCharacterName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneReplaySection, SpecifiedPlayerName) == 0x000130, "Member 'UMovieSceneReplaySection::SpecifiedPlayerName' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneReplaySection;
 
 // Class ReplayTracks.MovieSceneReplaySystem
 // 0x0020 (0x0068 - 0x0048)
@@ -54,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneReplaySystem">();
+		STATIC_CLASS_IMPL("MovieSceneReplaySystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneReplaySystem")
 	}
 	static class UMovieSceneReplaySystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneReplaySystem>();
 	}
 };
-static_assert(alignof(UMovieSceneReplaySystem) == 0x000008, "Wrong alignment on UMovieSceneReplaySystem");
-static_assert(sizeof(UMovieSceneReplaySystem) == 0x000068, "Wrong size on UMovieSceneReplaySystem");
+DUMPER7_ASSERTS_UMovieSceneReplaySystem;
 
 // Class ReplayTracks.MovieSceneReplayTrack
 // 0x0010 (0x00B0 - 0x00A0)
@@ -74,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneReplayTrack">();
+		STATIC_CLASS_IMPL("MovieSceneReplayTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneReplayTrack")
 	}
 	static class UMovieSceneReplayTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneReplayTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneReplayTrack) == 0x000008, "Wrong alignment on UMovieSceneReplayTrack");
-static_assert(sizeof(UMovieSceneReplayTrack) == 0x0000B0, "Wrong size on UMovieSceneReplayTrack");
-static_assert(offsetof(UMovieSceneReplayTrack, Sections) == 0x0000A0, "Member 'UMovieSceneReplayTrack::Sections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneReplayTrack;
 
 }
 

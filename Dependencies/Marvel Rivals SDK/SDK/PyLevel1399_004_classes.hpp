@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_004">();
+		STATIC_CLASS_IMPL("PyLevel1399_004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_004")
 	}
 	static class APyLevel1399_004* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_004>();
 	}
 };
-static_assert(alignof(APyLevel1399_004) == 0x000010, "Wrong alignment on APyLevel1399_004");
-static_assert(sizeof(APyLevel1399_004) == 0x000770, "Wrong size on APyLevel1399_004");
-static_assert(offsetof(APyLevel1399_004, AlignCoord00) == 0x000730, "Member 'APyLevel1399_004::AlignCoord00' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_004, AlignCoord07) == 0x000740, "Member 'APyLevel1399_004::AlignCoord07' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_004, AlignCoord70) == 0x000750, "Member 'APyLevel1399_004::AlignCoord70' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_004, FadeInSeconds) == 0x000760, "Member 'APyLevel1399_004::FadeInSeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_004, FadeOutSeconds) == 0x000764, "Member 'APyLevel1399_004::FadeOutSeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_004, PuzzleDoneLSA) == 0x000768, "Member 'APyLevel1399_004::PuzzleDoneLSA' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevel1399_004;
 
 }
 

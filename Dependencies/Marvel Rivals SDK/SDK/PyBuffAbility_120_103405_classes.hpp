@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103405.PyEffectAbility_120_10340511
-// 0x00E8 (0x1458 - 0x1370)
+// 0x0138 (0x14C0 - 0x1388)
 class UPyEffectAbility_120_10340511 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         GainEnergyValue;                                   // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UGameplayEffect>            GainEnergyEffect;                                  // 0x1378(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NotTreatArmorBuffID;                               // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NotTreatArmorValueRefresh;                         // 0x1384(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1385[0x3];                                     // 0x1385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelGameplayTagRequirements         AllyTagRequirements;                               // 0x1388(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         GainEnergyValue;                                   // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UGameplayEffect>            GainEnergyEffect;                                  // 0x1390(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NotTreatArmorBuffID;                               // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NotTreatArmorValueRefresh;                         // 0x139C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_139D[0x3];                                     // 0x139D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelGameplayTagRequirements         AllyTagRequirements;                               // 0x13A0(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10340511">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10340511")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10340511")
 	}
 	static class UPyEffectAbility_120_10340511* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10340511>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10340511) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10340511");
-static_assert(sizeof(UPyEffectAbility_120_10340511) == 0x001458, "Wrong size on UPyEffectAbility_120_10340511");
-static_assert(offsetof(UPyEffectAbility_120_10340511, GainEnergyValue) == 0x001370, "Member 'UPyEffectAbility_120_10340511::GainEnergyValue' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10340511, GainEnergyEffect) == 0x001378, "Member 'UPyEffectAbility_120_10340511::GainEnergyEffect' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10340511, NotTreatArmorBuffID) == 0x001380, "Member 'UPyEffectAbility_120_10340511::NotTreatArmorBuffID' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10340511, NotTreatArmorValueRefresh) == 0x001384, "Member 'UPyEffectAbility_120_10340511::NotTreatArmorValueRefresh' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10340511, AllyTagRequirements) == 0x001388, "Member 'UPyEffectAbility_120_10340511::AllyTagRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10340511;
 
 }
 

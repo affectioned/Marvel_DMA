@@ -23,9 +23,7 @@ struct PyWidget_Career_TeamHall_List_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_List_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Career_TeamHall_List_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Career_TeamHall_List_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Career_TeamHall_List_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Career_TeamHall_List_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Career_TeamHall_List_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_List_OnVisibleChanged;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetItemData
 // 0x0020 (0x0020 - 0x0000)
@@ -38,12 +36,7 @@ public:
 	int32                                         ItemNum;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Multiple;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetItemData) == 0x000008, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetItemData");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetItemData) == 0x000020, "Wrong size on PyWidget_Career_TeamHall_Item_SetItemData");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemData, ItemID) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetItemData::ItemID' has a wrong offset!");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemData, ItemType) == 0x000010, "Member 'PyWidget_Career_TeamHall_Item_SetItemData::ItemType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemData, ItemNum) == 0x000014, "Member 'PyWidget_Career_TeamHall_Item_SetItemData::ItemNum' has a wrong offset!");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemData, Multiple) == 0x000018, "Member 'PyWidget_Career_TeamHall_Item_SetItemData::Multiple' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetItemData;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetItemName
 // 0x0010 (0x0010 - 0x0000)
@@ -52,9 +45,7 @@ struct PyWidget_Career_TeamHall_Item_SetItemName final
 public:
 	class FString                                 ItemName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetItemName) == 0x000008, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetItemName");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetItemName) == 0x000010, "Wrong size on PyWidget_Career_TeamHall_Item_SetItemName");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemName, ItemName) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetItemName::ItemName' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetItemName;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetItemIconQuality
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +54,7 @@ struct PyWidget_Career_TeamHall_Item_SetItemIconQuality final
 public:
 	EItemQualityType                              ItemQuality;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetItemIconQuality) == 0x000001, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetItemIconQuality");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetItemIconQuality) == 0x000001, "Wrong size on PyWidget_Career_TeamHall_Item_SetItemIconQuality");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetItemIconQuality, ItemQuality) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetItemIconQuality::ItemQuality' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetItemIconQuality;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetIsSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +63,7 @@ struct PyWidget_Career_TeamHall_Item_SetIsSelected final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetIsSelected) == 0x000001, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetIsSelected");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetIsSelected) == 0x000001, "Wrong size on PyWidget_Career_TeamHall_Item_SetIsSelected");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetIsSelected, IsSelected) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetIsSelected::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetIsSelected;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetIsLocked
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +72,7 @@ struct PyWidget_Career_TeamHall_Item_SetIsLocked final
 public:
 	bool                                          IsLocked;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetIsLocked) == 0x000001, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetIsLocked");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetIsLocked) == 0x000001, "Wrong size on PyWidget_Career_TeamHall_Item_SetIsLocked");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetIsLocked, IsLocked) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetIsLocked::IsLocked' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetIsLocked;
 
 // PythonFunction PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item.SetIsEquipped
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +81,7 @@ struct PyWidget_Career_TeamHall_Item_SetIsEquipped final
 public:
 	bool                                          IsEquipped;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Career_TeamHall_Item_SetIsEquipped) == 0x000001, "Wrong alignment on PyWidget_Career_TeamHall_Item_SetIsEquipped");
-static_assert(sizeof(PyWidget_Career_TeamHall_Item_SetIsEquipped) == 0x000001, "Wrong size on PyWidget_Career_TeamHall_Item_SetIsEquipped");
-static_assert(offsetof(PyWidget_Career_TeamHall_Item_SetIsEquipped, IsEquipped) == 0x000000, "Member 'PyWidget_Career_TeamHall_Item_SetIsEquipped::IsEquipped' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Career_TeamHall_Item_SetIsEquipped;
 
 }
 

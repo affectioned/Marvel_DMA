@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyCheckNeedGoBack">();
+		STATIC_CLASS_IMPL("BTS_PyCheckNeedGoBack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyCheckNeedGoBack")
 	}
 	static class UBTS_PyCheckNeedGoBack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyCheckNeedGoBack>();
 	}
 };
-static_assert(alignof(UBTS_PyCheckNeedGoBack) == 0x000008, "Wrong alignment on UBTS_PyCheckNeedGoBack");
-static_assert(sizeof(UBTS_PyCheckNeedGoBack) == 0x000198, "Wrong size on UBTS_PyCheckNeedGoBack");
-static_assert(offsetof(UBTS_PyCheckNeedGoBack, OutNeedGoBack) == 0x0000A8, "Member 'UBTS_PyCheckNeedGoBack::OutNeedGoBack' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckNeedGoBack, OutGoBackLocation) == 0x0000D8, "Member 'UBTS_PyCheckNeedGoBack::OutGoBackLocation' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckNeedGoBack, InBase) == 0x000108, "Member 'UBTS_PyCheckNeedGoBack::InBase' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckNeedGoBack, InGoBackTriggerTime) == 0x000138, "Member 'UBTS_PyCheckNeedGoBack::InGoBackTriggerTime' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckNeedGoBack, InGoBackLimitTime) == 0x000168, "Member 'UBTS_PyCheckNeedGoBack::InGoBackLimitTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyCheckNeedGoBack;
 
 }
 

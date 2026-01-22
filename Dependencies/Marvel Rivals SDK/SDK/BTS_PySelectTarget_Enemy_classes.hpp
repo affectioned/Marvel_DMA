@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "AIModule_structs.hpp"
 #include "MarvelAI_structs.hpp"
 #include "BTS_PySelectTarget_Base_classes.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySelectTarget_Enemy">();
+		STATIC_CLASS_IMPL("BTS_PySelectTarget_Enemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySelectTarget_Enemy")
 	}
 	static class UBTS_PySelectTarget_Enemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySelectTarget_Enemy>();
 	}
 };
-static_assert(alignof(UBTS_PySelectTarget_Enemy) == 0x000008, "Wrong alignment on UBTS_PySelectTarget_Enemy");
-static_assert(sizeof(UBTS_PySelectTarget_Enemy) == 0x0001C0, "Wrong size on UBTS_PySelectTarget_Enemy");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, TargetFactorConfig_Difficulty) == 0x0000E0, "Member 'UBTS_PySelectTarget_Enemy::TargetFactorConfig_Difficulty' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, bEnableConcentrate) == 0x000130, "Member 'UBTS_PySelectTarget_Enemy::bEnableConcentrate' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, TargetChange) == 0x000138, "Member 'UBTS_PySelectTarget_Enemy::TargetChange' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, CheckInterval) == 0x000188, "Member 'UBTS_PySelectTarget_Enemy::CheckInterval' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, MaskLife) == 0x00018C, "Member 'UBTS_PySelectTarget_Enemy::MaskLife' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Enemy, InOutPriorityTarget) == 0x000190, "Member 'UBTS_PySelectTarget_Enemy::InOutPriorityTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySelectTarget_Enemy;
 
 }
 

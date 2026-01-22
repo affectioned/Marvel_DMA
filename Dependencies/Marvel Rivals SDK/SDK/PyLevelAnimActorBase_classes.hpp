@@ -40,25 +40,55 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelAnimActorBase">();
+		STATIC_CLASS_IMPL("PyLevelAnimActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelAnimActorBase")
 	}
 	static class APyLevelAnimActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelAnimActorBase>();
 	}
 };
-static_assert(alignof(APyLevelAnimActorBase) == 0x000010, "Wrong alignment on APyLevelAnimActorBase");
-static_assert(sizeof(APyLevelAnimActorBase) == 0x000720, "Wrong size on APyLevelAnimActorBase");
-static_assert(offsetof(APyLevelAnimActorBase, DefaultScene) == 0x0006E0, "Member 'APyLevelAnimActorBase::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, Mesh1) == 0x0006E8, "Member 'APyLevelAnimActorBase::Mesh1' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, LevelOptimization) == 0x0006F0, "Member 'APyLevelAnimActorBase::LevelOptimization' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, EnableControlPlayAnimTime) == 0x0006F8, "Member 'APyLevelAnimActorBase::EnableControlPlayAnimTime' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, IdleAnim) == 0x000700, "Member 'APyLevelAnimActorBase::IdleAnim' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, AfterDelayAnim) == 0x000708, "Member 'APyLevelAnimActorBase::AfterDelayAnim' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, EnableConstantDelayTime) == 0x000710, "Member 'APyLevelAnimActorBase::EnableConstantDelayTime' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, ConstantDelayTime) == 0x000714, "Member 'APyLevelAnimActorBase::ConstantDelayTime' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, RandomTimeMin) == 0x000718, "Member 'APyLevelAnimActorBase::RandomTimeMin' has a wrong offset!");
-static_assert(offsetof(APyLevelAnimActorBase, RandomTimeMax) == 0x00071C, "Member 'APyLevelAnimActorBase::RandomTimeMax' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelAnimActorBase;
+
+// PythonClass PyLevelAnimActorBase.PyLevelAnimActorReplicated
+// 0x0040 (0x0720 - 0x06E0)
+class APyLevelAnimActorReplicated final : public ALevelAnimBaseActor
+{
+public:
+	class USceneComponent*                        DefaultScene;                                      // 0x06E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 Mesh1;                                             // 0x06E8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableControlPlayAnimTime;                         // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6F1[0x7];                                      // 0x06F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimationAsset*                        IdleAnim;                                          // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        AfterDelayAnim;                                    // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConstantDelayTime;                                 // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimPosition;                                      // 0x070C(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAfterDelay;                                      // 0x0710(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void OnRep_IsAfterDelay();
+	void OnRep_AnimPosition();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyLevelAnimActorReplicated")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelAnimActorReplicated")
+	}
+	static class APyLevelAnimActorReplicated* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyLevelAnimActorReplicated>();
+	}
+};
+DUMPER7_ASSERTS_APyLevelAnimActorReplicated;
 
 }
 

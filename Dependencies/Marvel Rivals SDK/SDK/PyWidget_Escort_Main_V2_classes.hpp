@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Escort_Main_V2.PyWidget_Escort_Main_V2
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Escort_Main_V2 final : public UPyMarvelUserWidget
 {
 public:
@@ -29,18 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Escort_Main_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Escort_Main_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Escort_Main_V2")
 	}
 	static class UPyWidget_Escort_Main_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Escort_Main_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Escort_Main_V2) == 0x000008, "Wrong alignment on UPyWidget_Escort_Main_V2");
-static_assert(sizeof(UPyWidget_Escort_Main_V2) == 0x0005C0, "Wrong size on UPyWidget_Escort_Main_V2");
+DUMPER7_ASSERTS_UPyWidget_Escort_Main_V2;
 
 // PythonClass PyWidget_Escort_Main_V2.PyWidget_EscortProgress_V2
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_EscortProgress_V2 final : public UMarvelUserWidget
 {
 public:
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_EscortProgress_V2">();
+		STATIC_CLASS_IMPL("PyWidget_EscortProgress_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_EscortProgress_V2")
 	}
 	static class UPyWidget_EscortProgress_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_EscortProgress_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_EscortProgress_V2) == 0x000008, "Wrong alignment on UPyWidget_EscortProgress_V2");
-static_assert(sizeof(UPyWidget_EscortProgress_V2) == 0x000568, "Wrong size on UPyWidget_EscortProgress_V2");
+DUMPER7_ASSERTS_UPyWidget_EscortProgress_V2;
 
 }
 

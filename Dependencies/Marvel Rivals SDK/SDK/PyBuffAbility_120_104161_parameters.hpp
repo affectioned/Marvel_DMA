@@ -21,9 +21,7 @@ struct PyBuffAbility_120_10416112_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10416112_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10416112_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10416112_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10416112_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10416112_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10416112_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10416112_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_104161.PyBuffAbility_120_10416112.OnBattleChessWinOnHpReduceStart
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart final
 public:
 	TArray<class AMarvelBaseCharacter*>           WinnerCharacterList;                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart) == 0x000008, "Wrong alignment on PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart");
-static_assert(sizeof(PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart) == 0x000010, "Wrong size on PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart");
-static_assert(offsetof(PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart, WinnerCharacterList) == 0x000000, "Member 'PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart::WinnerCharacterList' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10416112_OnBattleChessWinOnHpReduceStart;
 
 }
 

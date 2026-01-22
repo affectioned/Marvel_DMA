@@ -21,9 +21,7 @@ struct PyKillCamLoadingPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKillCamLoadingPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyKillCamLoadingPanel_OnAnimationFinished");
-static_assert(sizeof(PyKillCamLoadingPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyKillCamLoadingPanel_OnAnimationFinished");
-static_assert(offsetof(PyKillCamLoadingPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyKillCamLoadingPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyKillCamLoadingPanel_OnAnimationFinished;
 
 }
 

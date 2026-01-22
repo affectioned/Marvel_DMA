@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ListView">();
+		STATIC_CLASS_IMPL("PyExtension_ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ListView")
 	}
 	static class UPyExtension_ListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ListView>();
 	}
 };
-static_assert(alignof(UPyExtension_ListView) == 0x000008, "Wrong alignment on UPyExtension_ListView");
-static_assert(sizeof(UPyExtension_ListView) == 0x000030, "Wrong size on UPyExtension_ListView");
+DUMPER7_ASSERTS_UPyExtension_ListView;
 
 }
 

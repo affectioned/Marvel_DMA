@@ -25,9 +25,7 @@ struct PyMarvelSpectatorPawn_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelSpectatorPawn_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelSpectatorPawn_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelSpectatorPawn_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelSpectatorPawn_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelSpectatorPawn_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelSpectatorPawn_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelSpectatorPawn_ReceiveEndPlay;
 
 // PythonFunction PyMarvelSpectatorPawn.PyMarvelSpectatorPawn.AddPresetPointInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -39,11 +37,7 @@ public:
 	struct FVector                                InLocation;                                        // 0x0008(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               InRotation;                                        // 0x0020(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyMarvelSpectatorPawn_AddPresetPointInfo) == 0x000008, "Wrong alignment on PyMarvelSpectatorPawn_AddPresetPointInfo");
-static_assert(sizeof(PyMarvelSpectatorPawn_AddPresetPointInfo) == 0x000038, "Wrong size on PyMarvelSpectatorPawn_AddPresetPointInfo");
-static_assert(offsetof(PyMarvelSpectatorPawn_AddPresetPointInfo, Index_0) == 0x000000, "Member 'PyMarvelSpectatorPawn_AddPresetPointInfo::Index_0' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_AddPresetPointInfo, InLocation) == 0x000008, "Member 'PyMarvelSpectatorPawn_AddPresetPointInfo::InLocation' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_AddPresetPointInfo, InRotation) == 0x000020, "Member 'PyMarvelSpectatorPawn_AddPresetPointInfo::InRotation' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelSpectatorPawn_AddPresetPointInfo;
 
 // PythonFunction PyMarvelSpectatorPawn.PyMarvelSpectatorPawn.GetPresetPointInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -57,13 +51,7 @@ public:
 	bool                                          OutCanSwitch;                                      // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0039(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelSpectatorPawn_GetPresetPointInfo) == 0x000008, "Wrong alignment on PyMarvelSpectatorPawn_GetPresetPointInfo");
-static_assert(sizeof(PyMarvelSpectatorPawn_GetPresetPointInfo) == 0x000040, "Wrong size on PyMarvelSpectatorPawn_GetPresetPointInfo");
-static_assert(offsetof(PyMarvelSpectatorPawn_GetPresetPointInfo, Index_0) == 0x000000, "Member 'PyMarvelSpectatorPawn_GetPresetPointInfo::Index_0' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_GetPresetPointInfo, OutLocation) == 0x000008, "Member 'PyMarvelSpectatorPawn_GetPresetPointInfo::OutLocation' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_GetPresetPointInfo, OutRotation) == 0x000020, "Member 'PyMarvelSpectatorPawn_GetPresetPointInfo::OutRotation' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_GetPresetPointInfo, OutCanSwitch) == 0x000038, "Member 'PyMarvelSpectatorPawn_GetPresetPointInfo::OutCanSwitch' has a wrong offset!");
-static_assert(offsetof(PyMarvelSpectatorPawn_GetPresetPointInfo, ReturnValue) == 0x000039, "Member 'PyMarvelSpectatorPawn_GetPresetPointInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelSpectatorPawn_GetPresetPointInfo;
 
 // PythonFunction PyMarvelSpectatorPawn.PyMarvelSpectatorPawn.OnScreenshotSaved
 // 0x0010 (0x0010 - 0x0000)
@@ -72,9 +60,7 @@ struct PyMarvelSpectatorPawn_OnScreenshotSaved final
 public:
 	class FString                                 FileUrl;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelSpectatorPawn_OnScreenshotSaved) == 0x000008, "Wrong alignment on PyMarvelSpectatorPawn_OnScreenshotSaved");
-static_assert(sizeof(PyMarvelSpectatorPawn_OnScreenshotSaved) == 0x000010, "Wrong size on PyMarvelSpectatorPawn_OnScreenshotSaved");
-static_assert(offsetof(PyMarvelSpectatorPawn_OnScreenshotSaved, FileUrl) == 0x000000, "Member 'PyMarvelSpectatorPawn_OnScreenshotSaved::FileUrl' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelSpectatorPawn_OnScreenshotSaved;
 
 // PythonFunction PyMarvelSpectatorPawn.PyMarvelSpectatorPawn.ResetFreeModeRoll
 // 0x0020 (0x0020 - 0x0000)
@@ -83,9 +69,7 @@ struct PyMarvelSpectatorPawn_ResetFreeModeRoll final
 public:
 	struct FInputActionValue                      OutValue;                                          // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyMarvelSpectatorPawn_ResetFreeModeRoll) == 0x000008, "Wrong alignment on PyMarvelSpectatorPawn_ResetFreeModeRoll");
-static_assert(sizeof(PyMarvelSpectatorPawn_ResetFreeModeRoll) == 0x000020, "Wrong size on PyMarvelSpectatorPawn_ResetFreeModeRoll");
-static_assert(offsetof(PyMarvelSpectatorPawn_ResetFreeModeRoll, OutValue) == 0x000000, "Member 'PyMarvelSpectatorPawn_ResetFreeModeRoll::OutValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelSpectatorPawn_ResetFreeModeRoll;
 
 }
 

@@ -36,6 +36,44 @@ void UPyWidget_BanPickStageInfo::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_BanPickStageInfo.PyWidget_BanPickStageInfo.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_BanPickStageInfo::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_BanPickStageInfo", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_BanPickStageInfo.PyWidget_BanPickStageInfo.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_BanPickStageInfo::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_BanPickStageInfo", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_BanPickStageInfo.PyWidget_BanPickStageInfo.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

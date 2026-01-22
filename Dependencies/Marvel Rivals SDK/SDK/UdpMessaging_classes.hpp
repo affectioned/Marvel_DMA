@@ -48,33 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UdpMessagingSettings">();
+		STATIC_CLASS_IMPL("UdpMessagingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UdpMessagingSettings")
 	}
 	static class UUdpMessagingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUdpMessagingSettings>();
 	}
 };
-static_assert(alignof(UUdpMessagingSettings) == 0x000008, "Wrong alignment on UUdpMessagingSettings");
-static_assert(sizeof(UUdpMessagingSettings) == 0x0000C0, "Wrong size on UUdpMessagingSettings");
-static_assert(offsetof(UUdpMessagingSettings, EnabledByDefault) == 0x000030, "Member 'UUdpMessagingSettings::EnabledByDefault' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, EnableTransport) == 0x000031, "Member 'UUdpMessagingSettings::EnableTransport' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, bAutoRepair) == 0x000032, "Member 'UUdpMessagingSettings::bAutoRepair' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, MaxSendRate) == 0x000034, "Member 'UUdpMessagingSettings::MaxSendRate' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, AutoRepairAttemptLimit) == 0x000038, "Member 'UUdpMessagingSettings::AutoRepairAttemptLimit' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, WorkQueueSize) == 0x00003C, "Member 'UUdpMessagingSettings::WorkQueueSize' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, bStopServiceWhenAppDeactivates) == 0x00003E, "Member 'UUdpMessagingSettings::bStopServiceWhenAppDeactivates' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, UnicastEndpoint) == 0x000040, "Member 'UUdpMessagingSettings::UnicastEndpoint' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, MulticastEndpoint) == 0x000050, "Member 'UUdpMessagingSettings::MulticastEndpoint' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, MessageFormat) == 0x000060, "Member 'UUdpMessagingSettings::MessageFormat' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, MulticastTimeToLive) == 0x000061, "Member 'UUdpMessagingSettings::MulticastTimeToLive' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, StaticEndpoints) == 0x000068, "Member 'UUdpMessagingSettings::StaticEndpoints' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, ExcludedEndpoints) == 0x000078, "Member 'UUdpMessagingSettings::ExcludedEndpoints' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, bShareKnownNodesWithActiveConnections) == 0x000088, "Member 'UUdpMessagingSettings::bShareKnownNodesWithActiveConnections' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, EnableTunnel) == 0x000089, "Member 'UUdpMessagingSettings::EnableTunnel' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, TunnelUnicastEndpoint) == 0x000090, "Member 'UUdpMessagingSettings::TunnelUnicastEndpoint' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, TunnelMulticastEndpoint) == 0x0000A0, "Member 'UUdpMessagingSettings::TunnelMulticastEndpoint' has a wrong offset!");
-static_assert(offsetof(UUdpMessagingSettings, RemoteTunnelEndpoints) == 0x0000B0, "Member 'UUdpMessagingSettings::RemoteTunnelEndpoints' has a wrong offset!");
+DUMPER7_ASSERTS_UUdpMessagingSettings;
 
 }
 

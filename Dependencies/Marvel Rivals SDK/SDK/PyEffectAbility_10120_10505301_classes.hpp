@@ -33,25 +33,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityModifier_10505301">();
+		STATIC_CLASS_IMPL("AbilityModifier_10505301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityModifier_10505301")
 	}
 	static class UAbilityModifier_10505301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityModifier_10505301>();
 	}
 };
-static_assert(alignof(UAbilityModifier_10505301) == 0x000008, "Wrong alignment on UAbilityModifier_10505301");
-static_assert(sizeof(UAbilityModifier_10505301) == 0x000048, "Wrong size on UAbilityModifier_10505301");
-static_assert(offsetof(UAbilityModifier_10505301, AbilityCD) == 0x000038, "Member 'UAbilityModifier_10505301::AbilityCD' has a wrong offset!");
-static_assert(offsetof(UAbilityModifier_10505301, ScopeRadius) == 0x00003C, "Member 'UAbilityModifier_10505301::ScopeRadius' has a wrong offset!");
-static_assert(offsetof(UAbilityModifier_10505301, AddMoveBP) == 0x000040, "Member 'UAbilityModifier_10505301::AddMoveBP' has a wrong offset!");
+DUMPER7_ASSERTS_UAbilityModifier_10505301;
 
 // PythonClass PyEffectAbility_10120_10505301.PyEffectAbility_10120_10505301
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyEffectAbility_10120_10505301 final : public UMarvelEffectGameplayAbility
 {
 public:
-	class UAbilityModifier_10505301*              AbilityModifier;                                   // 0x1370(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAbilityModifier_10505301*              AbilityModifier;                                   // 0x1388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -60,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_10120_10505301">();
+		STATIC_CLASS_IMPL("PyEffectAbility_10120_10505301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_10120_10505301")
 	}
 	static class UPyEffectAbility_10120_10505301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_10120_10505301>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_10120_10505301) == 0x000008, "Wrong alignment on UPyEffectAbility_10120_10505301");
-static_assert(sizeof(UPyEffectAbility_10120_10505301) == 0x001378, "Wrong size on UPyEffectAbility_10120_10505301");
-static_assert(offsetof(UPyEffectAbility_10120_10505301, AbilityModifier) == 0x001370, "Member 'UPyEffectAbility_10120_10505301::AbilityModifier' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_10120_10505301;
 
 }
 

@@ -17,39 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_MSG.WBP_Common_MSG_C
-// 0x0040 (0x0620 - 0x05E0)
+// 0x0040 (0x0628 - 0x05E8)
 class UWBP_Common_MSG_C final : public UPyWidget_SystemTipsPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_Show;                                         // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_MSG_Bg;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_MSG_Marquee;                                   // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Panel_Game_MSG;                                    // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Marquee;                                   // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_MSG;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   SystemTips;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   SystemTips_Marquee;                                // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Show;                                         // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_MSG_Bg;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_MSG_Marquee;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Panel_Game_MSG;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Marquee;                                   // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_MSG;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   SystemTips;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   SystemTips_Marquee;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_MSG_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_MSG_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_MSG_C")
 	}
 	static class UWBP_Common_MSG_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_MSG_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_MSG_C) == 0x000008, "Wrong alignment on UWBP_Common_MSG_C");
-static_assert(sizeof(UWBP_Common_MSG_C) == 0x000620, "Wrong size on UWBP_Common_MSG_C");
-static_assert(offsetof(UWBP_Common_MSG_C, Anim_Show) == 0x0005E0, "Member 'UWBP_Common_MSG_C::Anim_Show' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, Img_MSG_Bg) == 0x0005E8, "Member 'UWBP_Common_MSG_C::Img_MSG_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, Img_MSG_Marquee) == 0x0005F0, "Member 'UWBP_Common_MSG_C::Img_MSG_Marquee' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, Panel_Game_MSG) == 0x0005F8, "Member 'UWBP_Common_MSG_C::Panel_Game_MSG' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, SizeBox_Marquee) == 0x000600, "Member 'UWBP_Common_MSG_C::SizeBox_Marquee' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, SizeBox_MSG) == 0x000608, "Member 'UWBP_Common_MSG_C::SizeBox_MSG' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, SystemTips) == 0x000610, "Member 'UWBP_Common_MSG_C::SystemTips' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_MSG_C, SystemTips_Marquee) == 0x000618, "Member 'UWBP_Common_MSG_C::SystemTips_Marquee' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_MSG_C;
 
 }
 

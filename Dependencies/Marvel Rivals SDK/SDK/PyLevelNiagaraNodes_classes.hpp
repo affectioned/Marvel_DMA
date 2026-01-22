@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelVoiceNodes">();
+		STATIC_CLASS_IMPL("PyLevelVoiceNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelVoiceNodes")
 	}
 	static class UPyLevelVoiceNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelVoiceNodes>();
 	}
 };
-static_assert(alignof(UPyLevelVoiceNodes) == 0x000008, "Wrong alignment on UPyLevelVoiceNodes");
-static_assert(sizeof(UPyLevelVoiceNodes) == 0x000030, "Wrong size on UPyLevelVoiceNodes");
+DUMPER7_ASSERTS_UPyLevelVoiceNodes;
 
 }
 

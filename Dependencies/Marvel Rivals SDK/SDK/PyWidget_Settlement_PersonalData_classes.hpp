@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_RankTimeCrys_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "Marvel_classes.hpp"
-#include "PyWidget_RankTimeCrys_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData.PyWidget_Settlement_MissionUnit
-// 0x0018 (0x0588 - 0x0570)
+// 0x0018 (0x0590 - 0x0578)
 class UPyWidget_Settlement_MissionUnit final : public UWidget_ListEntry
 {
 public:
-	float                                         TitleOpacity;                                      // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComplishTagOpacity;                                // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RewardIconOpacity;                                 // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RewardCountOpacity;                                // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnComplete;                                // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TitleOpacity;                                      // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComplishTagOpacity;                                // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RewardIconOpacity;                                 // 0x0580(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RewardCountOpacity;                                // 0x0584(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnComplete;                                // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,42 +37,40 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_MissionUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_MissionUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_MissionUnit")
 	}
 	static class UPyWidget_Settlement_MissionUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_MissionUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_MissionUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_MissionUnit");
-static_assert(sizeof(UPyWidget_Settlement_MissionUnit) == 0x000588, "Wrong size on UPyWidget_Settlement_MissionUnit");
-static_assert(offsetof(UPyWidget_Settlement_MissionUnit, TitleOpacity) == 0x000570, "Member 'UPyWidget_Settlement_MissionUnit::TitleOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_MissionUnit, ComplishTagOpacity) == 0x000574, "Member 'UPyWidget_Settlement_MissionUnit::ComplishTagOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_MissionUnit, RewardIconOpacity) == 0x000578, "Member 'UPyWidget_Settlement_MissionUnit::RewardIconOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_MissionUnit, RewardCountOpacity) == 0x00057C, "Member 'UPyWidget_Settlement_MissionUnit::RewardCountOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_MissionUnit, AkEvent_OnComplete) == 0x000580, "Member 'UPyWidget_Settlement_MissionUnit::AkEvent_OnComplete' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_MissionUnit;
 
 // PythonClass PyWidget_Settlement_PersonalData.PyWidget_Settlement_PersonalData
-// 0x0068 (0x0628 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_Settlement_PersonalData final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                WBP_Settlement_TaskUnit_Item;                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpgradeAnimTime;                                   // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTime_RankInfo;                                // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_RankRecover;                             // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_Mission;                                 // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_Level;                                   // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_LevelUp;                                 // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnUpgrade;                                 // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnDowngrade;                               // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnPositionBarPlay;                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMargin>                        Margin_Rank_Icon_List;                             // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                BigHead_HeroList;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                BigHead_HeroEntry;                                 // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                WBP_Settlement_TaskUnit_Item;                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpgradeAnimTime;                                   // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTime_RankInfo;                                // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_RankRecover;                             // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_Mission;                                 // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_Level;                                   // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_LevelUp;                                 // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnUpgrade;                                 // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnDowngrade;                               // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnPositionBarPlay;                         // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMargin>                        Margin_Rank_Icon_List;                             // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BigHead_HeroList;                                  // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BigHead_HeroEntry;                                 // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -85,47 +83,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData")
 	}
 	static class UPyWidget_Settlement_PersonalData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData) == 0x000628, "Wrong size on UPyWidget_Settlement_PersonalData");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, WBP_Settlement_TaskUnit_Item) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalData::WBP_Settlement_TaskUnit_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, UpgradeAnimTime) == 0x0005C8, "Member 'UPyWidget_Settlement_PersonalData::UpgradeAnimTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, DelayTime_RankInfo) == 0x0005CC, "Member 'UPyWidget_Settlement_PersonalData::DelayTime_RankInfo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, DelatTime_RankRecover) == 0x0005D0, "Member 'UPyWidget_Settlement_PersonalData::DelatTime_RankRecover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, DelatTime_Mission) == 0x0005D4, "Member 'UPyWidget_Settlement_PersonalData::DelatTime_Mission' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, DelatTime_Level) == 0x0005D8, "Member 'UPyWidget_Settlement_PersonalData::DelatTime_Level' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, DelatTime_LevelUp) == 0x0005DC, "Member 'UPyWidget_Settlement_PersonalData::DelatTime_LevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, AkEvent_OnUpgrade) == 0x0005E0, "Member 'UPyWidget_Settlement_PersonalData::AkEvent_OnUpgrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, AkEvent_OnDowngrade) == 0x0005E8, "Member 'UPyWidget_Settlement_PersonalData::AkEvent_OnDowngrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, AkEvent_OnPositionBarPlay) == 0x0005F0, "Member 'UPyWidget_Settlement_PersonalData::AkEvent_OnPositionBarPlay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, AkEvent_OnExpIncreaced) == 0x0005F8, "Member 'UPyWidget_Settlement_PersonalData::AkEvent_OnExpIncreaced' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, AkEvent_OnLevelUp) == 0x000600, "Member 'UPyWidget_Settlement_PersonalData::AkEvent_OnLevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, Margin_Rank_Icon_List) == 0x000608, "Member 'UPyWidget_Settlement_PersonalData::Margin_Rank_Icon_List' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, BigHead_HeroList) == 0x000618, "Member 'UPyWidget_Settlement_PersonalData::BigHead_HeroList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData, BigHead_HeroEntry) == 0x000620, "Member 'UPyWidget_Settlement_PersonalData::BigHead_HeroEntry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData;
 
 // PythonClass PyWidget_Settlement_PersonalData.PyWidget_Settlement_RankTimeCrys
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyWidget_Settlement_RankTimeCrys final : public UPyWidget_RankTimeCrys
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_RankTimeCrys">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_RankTimeCrys")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_RankTimeCrys")
 	}
 	static class UPyWidget_Settlement_RankTimeCrys* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_RankTimeCrys>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_RankTimeCrys) == 0x000008, "Wrong alignment on UPyWidget_Settlement_RankTimeCrys");
-static_assert(sizeof(UPyWidget_Settlement_RankTimeCrys) == 0x0005E0, "Wrong size on UPyWidget_Settlement_RankTimeCrys");
+DUMPER7_ASSERTS_UPyWidget_Settlement_RankTimeCrys;
 
 }
 

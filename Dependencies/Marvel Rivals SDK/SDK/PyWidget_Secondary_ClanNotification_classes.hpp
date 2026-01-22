@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ClanNotification.PyWidget_Secondary_ClanNotification
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_ClanNotification final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ClickAkEvent;                                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ClickAkEvent;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,27 +34,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanNotification">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanNotification")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanNotification")
 	}
 	static class UPyWidget_Secondary_ClanNotification* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanNotification>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanNotification) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanNotification");
-static_assert(sizeof(UPyWidget_Secondary_ClanNotification) == 0x0005C8, "Wrong size on UPyWidget_Secondary_ClanNotification");
-static_assert(offsetof(UPyWidget_Secondary_ClanNotification, ClickAkEvent) == 0x0005C0, "Member 'UPyWidget_Secondary_ClanNotification::ClickAkEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanNotification;
 
 // PythonClass PyWidget_Secondary_ClanNotification.PyWidget_ClanNotificationBtn
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_ClanNotificationBtn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedColor;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedColor;                                     // 0x05F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -64,19 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanNotificationBtn">();
+		STATIC_CLASS_IMPL("PyWidget_ClanNotificationBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanNotificationBtn")
 	}
 	static class UPyWidget_ClanNotificationBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanNotificationBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanNotificationBtn) == 0x000008, "Wrong alignment on UPyWidget_ClanNotificationBtn");
-static_assert(sizeof(UPyWidget_ClanNotificationBtn) == 0x000610, "Wrong size on UPyWidget_ClanNotificationBtn");
-static_assert(offsetof(UPyWidget_ClanNotificationBtn, BtnText) == 0x0005C0, "Member 'UPyWidget_ClanNotificationBtn::BtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanNotificationBtn, NormalColor) == 0x0005D8, "Member 'UPyWidget_ClanNotificationBtn::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanNotificationBtn, SelectedColor) == 0x0005EC, "Member 'UPyWidget_ClanNotificationBtn::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanNotificationBtn, OnClicked) == 0x000600, "Member 'UPyWidget_ClanNotificationBtn::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ClanNotificationBtn;
 
 }
 

@@ -21,9 +21,7 @@ struct NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam fina
 public:
 	class APortalViewActor*                       InPortal;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam) == 0x000008, "Wrong alignment on NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam");
-static_assert(sizeof(NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam) == 0x000008, "Wrong size on NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam");
-static_assert(offsetof(NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam, InPortal) == 0x000000, "Member 'NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam::InPortal' has a wrong offset!");
+DUMPER7_ASSERTS_NiagaraDataInterfaceRibbonSupportPortal_OnTranslatedByPortalOneParam;
 
 }
 

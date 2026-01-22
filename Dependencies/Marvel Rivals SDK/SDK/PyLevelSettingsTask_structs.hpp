@@ -24,12 +24,7 @@ public:
 	float                                         horizontal_sensitivity;                            // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         vertical_sensitivity;                              // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSensitivityConfig) == 0x000008, "Wrong alignment on FSensitivityConfig");
-static_assert(sizeof(FSensitivityConfig) == 0x000038, "Wrong size on FSensitivityConfig");
-static_assert(offsetof(FSensitivityConfig, type_name) == 0x000000, "Member 'FSensitivityConfig::type_name' has a wrong offset!");
-static_assert(offsetof(FSensitivityConfig, type_tips) == 0x000018, "Member 'FSensitivityConfig::type_tips' has a wrong offset!");
-static_assert(offsetof(FSensitivityConfig, horizontal_sensitivity) == 0x000030, "Member 'FSensitivityConfig::horizontal_sensitivity' has a wrong offset!");
-static_assert(offsetof(FSensitivityConfig, vertical_sensitivity) == 0x000034, "Member 'FSensitivityConfig::vertical_sensitivity' has a wrong offset!");
+DUMPER7_ASSERTS_FSensitivityConfig;
 
 }
 

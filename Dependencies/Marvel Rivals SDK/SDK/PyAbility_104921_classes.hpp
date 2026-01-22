@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104921.PyWidget_Extra_104921
-// 0x0008 (0x0778 - 0x0770)
+// 0x0008 (0x0780 - 0x0778)
 class UPyWidget_Extra_104921 final : public UWidget_AbilityStatus_Normal
 {
 public:
-	bool                                          PlayConsumeAnimOnlyWhenFull;                       // 0x0770(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DisplayAbsoluteEnergyValueForText;                 // 0x0771(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PlayConsumeAnimOnlyWhenFull;                       // 0x0778(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DisplayAbsoluteEnergyValueForText;                 // 0x0779(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Extra_104921">();
+		STATIC_CLASS_IMPL("PyWidget_Extra_104921")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Extra_104921")
 	}
 	static class UPyWidget_Extra_104921* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Extra_104921>();
 	}
 };
-static_assert(alignof(UPyWidget_Extra_104921) == 0x000008, "Wrong alignment on UPyWidget_Extra_104921");
-static_assert(sizeof(UPyWidget_Extra_104921) == 0x000778, "Wrong size on UPyWidget_Extra_104921");
-static_assert(offsetof(UPyWidget_Extra_104921, PlayConsumeAnimOnlyWhenFull) == 0x000770, "Member 'UPyWidget_Extra_104921::PlayConsumeAnimOnlyWhenFull' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Extra_104921, DisplayAbsoluteEnergyValueForText) == 0x000771, "Member 'UPyWidget_Extra_104921::DisplayAbsoluteEnergyValueForText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Extra_104921;
 
 }
 

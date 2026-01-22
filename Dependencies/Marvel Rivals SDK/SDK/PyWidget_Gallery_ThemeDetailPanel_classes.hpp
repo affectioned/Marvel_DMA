@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Common_Button_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_ThemeDetailPanel.PyWidget_Gallery_ThemeDetailPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Gallery_ThemeDetailPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                MapVideoItem;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapVideoItem;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_ThemeDetailPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_ThemeDetailPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_ThemeDetailPanel")
 	}
 	static class UPyWidget_Gallery_ThemeDetailPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_ThemeDetailPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_ThemeDetailPanel) == 0x000008, "Wrong alignment on UPyWidget_Gallery_ThemeDetailPanel");
-static_assert(sizeof(UPyWidget_Gallery_ThemeDetailPanel) == 0x000600, "Wrong size on UPyWidget_Gallery_ThemeDetailPanel");
-static_assert(offsetof(UPyWidget_Gallery_ThemeDetailPanel, MapVideoItem) == 0x0005F8, "Member 'UPyWidget_Gallery_ThemeDetailPanel::MapVideoItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Gallery_ThemeDetailPanel;
 
 // PythonClass PyWidget_Gallery_ThemeDetailPanel.PyWidget_Gallery_MapVideoItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Gallery_MapVideoItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -58,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_MapVideoItem">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_MapVideoItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_MapVideoItem")
 	}
 	static class UPyWidget_Gallery_MapVideoItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_MapVideoItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_MapVideoItem) == 0x000010, "Wrong alignment on UPyWidget_Gallery_MapVideoItem");
-static_assert(sizeof(UPyWidget_Gallery_MapVideoItem) == 0x0008C0, "Wrong size on UPyWidget_Gallery_MapVideoItem");
+DUMPER7_ASSERTS_UPyWidget_Gallery_MapVideoItem;
 
 }
 

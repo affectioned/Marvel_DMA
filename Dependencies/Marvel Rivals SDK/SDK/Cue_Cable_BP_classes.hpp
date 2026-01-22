@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Cable_BP.Cue_Cable_BP_C
-// 0x0000 (0x14B0 - 0x14B0)
+// 0x0000 (0x14C0 - 0x14C0)
 class ACue_Cable_BP_C final : public AMarvelCueNotify_CableBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Cable_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Cable_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Cable_BP_C")
 	}
 	static class ACue_Cable_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Cable_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Cable_BP_C) == 0x000010, "Wrong alignment on ACue_Cable_BP_C");
-static_assert(sizeof(ACue_Cable_BP_C) == 0x0014B0, "Wrong size on ACue_Cable_BP_C");
+DUMPER7_ASSERTS_ACue_Cable_BP_C;
 
 }
 

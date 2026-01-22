@@ -21,9 +21,7 @@ struct PyWidget_League_ScheduleOverview_Team_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_ScheduleOverview_Team_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_League_ScheduleOverview_Team_PreConstruct");
-static_assert(sizeof(PyWidget_League_ScheduleOverview_Team_PreConstruct) == 0x000001, "Wrong size on PyWidget_League_ScheduleOverview_Team_PreConstruct");
-static_assert(offsetof(PyWidget_League_ScheduleOverview_Team_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_League_ScheduleOverview_Team_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_ScheduleOverview_Team_PreConstruct;
 
 // PythonFunction PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_TeamIntegral.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct");
-static_assert(sizeof(PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct) == 0x000001, "Wrong size on PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct");
-static_assert(offsetof(PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_ScheduleOverview_TeamIntegral_PreConstruct;
 
 // PythonFunction PyWidget_League_ScheduleOverview_Team.PyWidget_League_ScheduleOverview_TeamBig.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_League_ScheduleOverview_TeamBig_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_ScheduleOverview_TeamBig_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_League_ScheduleOverview_TeamBig_PreConstruct");
-static_assert(sizeof(PyWidget_League_ScheduleOverview_TeamBig_PreConstruct) == 0x000001, "Wrong size on PyWidget_League_ScheduleOverview_TeamBig_PreConstruct");
-static_assert(offsetof(PyWidget_League_ScheduleOverview_TeamBig_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_League_ScheduleOverview_TeamBig_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_ScheduleOverview_TeamBig_PreConstruct;
 
 }
 

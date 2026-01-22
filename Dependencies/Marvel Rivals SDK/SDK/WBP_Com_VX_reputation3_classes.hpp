@@ -40,30 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Com_VX_reputation3_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Com_VX_reputation3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Com_VX_reputation3_C")
 	}
 	static class UWBP_Com_VX_reputation3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Com_VX_reputation3_C>();
 	}
 };
-static_assert(alignof(UWBP_Com_VX_reputation3_C) == 0x000008, "Wrong alignment on UWBP_Com_VX_reputation3_C");
-static_assert(sizeof(UWBP_Com_VX_reputation3_C) == 0x000430, "Wrong size on UWBP_Com_VX_reputation3_C");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Anim_Loop) == 0x0003B8, "Member 'UWBP_Com_VX_reputation3_C::Anim_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, SizeBox_HeadIcon) == 0x0003C0, "Member 'UWBP_Com_VX_reputation3_C::SizeBox_HeadIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_1) == 0x0003C8, "Member 'UWBP_Com_VX_reputation3_C::Vx_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_2) == 0x0003D0, "Member 'UWBP_Com_VX_reputation3_C::Vx_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_3) == 0x0003D8, "Member 'UWBP_Com_VX_reputation3_C::Vx_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_4) == 0x0003E0, "Member 'UWBP_Com_VX_reputation3_C::Vx_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_5) == 0x0003E8, "Member 'UWBP_Com_VX_reputation3_C::Vx_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_6) == 0x0003F0, "Member 'UWBP_Com_VX_reputation3_C::Vx_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_7) == 0x0003F8, "Member 'UWBP_Com_VX_reputation3_C::Vx_7' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_8) == 0x000400, "Member 'UWBP_Com_VX_reputation3_C::Vx_8' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_9) == 0x000408, "Member 'UWBP_Com_VX_reputation3_C::Vx_9' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_10) == 0x000410, "Member 'UWBP_Com_VX_reputation3_C::Vx_10' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_11) == 0x000418, "Member 'UWBP_Com_VX_reputation3_C::Vx_11' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_12) == 0x000420, "Member 'UWBP_Com_VX_reputation3_C::Vx_12' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_VX_reputation3_C, Vx_13) == 0x000428, "Member 'UWBP_Com_VX_reputation3_C::Vx_13' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Com_VX_reputation3_C;
 
 }
 

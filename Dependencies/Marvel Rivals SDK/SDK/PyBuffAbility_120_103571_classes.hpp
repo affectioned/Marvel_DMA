@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103571.PyBuffAbility_120_10357190
-// 0x0040 (0x13B8 - 0x1378)
+// 0x0040 (0x13D0 - 0x1390)
 class UPyBuffAbility_120_10357190 final : public UBuffAbility_CommonChess
 {
 public:
-	int32                                         AbilityID;                                         // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DisableShield;                                     // 0x1380(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1381[0x3];                                     // 0x1381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TrueHealthCoff;                                    // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HealthCoff;                                        // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxHealth;                                         // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnlargeCoff;                                       // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxEnlargeScale;                                   // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ArmorBuffID;                                       // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_139C[0x4];                                     // 0x139C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                NewScale;                                          // 0x13A0(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DisableShield;                                     // 0x1398(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1399[0x3];                                     // 0x1399(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TrueHealthCoff;                                    // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HealthCoff;                                        // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxHealth;                                         // 0x13A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnlargeCoff;                                       // 0x13A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxEnlargeScale;                                   // 0x13AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ArmorBuffID;                                       // 0x13B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13B4[0x4];                                     // 0x13B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                NewScale;                                          // 0x13B8(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -48,25 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10357190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10357190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10357190")
 	}
 	static class UPyBuffAbility_120_10357190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10357190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10357190) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10357190");
-static_assert(sizeof(UPyBuffAbility_120_10357190) == 0x0013B8, "Wrong size on UPyBuffAbility_120_10357190");
-static_assert(offsetof(UPyBuffAbility_120_10357190, AbilityID) == 0x001378, "Member 'UPyBuffAbility_120_10357190::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, ScopeID) == 0x00137C, "Member 'UPyBuffAbility_120_10357190::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, DisableShield) == 0x001380, "Member 'UPyBuffAbility_120_10357190::DisableShield' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, TrueHealthCoff) == 0x001384, "Member 'UPyBuffAbility_120_10357190::TrueHealthCoff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, HealthCoff) == 0x001388, "Member 'UPyBuffAbility_120_10357190::HealthCoff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, MaxHealth) == 0x00138C, "Member 'UPyBuffAbility_120_10357190::MaxHealth' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, EnlargeCoff) == 0x001390, "Member 'UPyBuffAbility_120_10357190::EnlargeCoff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, MaxEnlargeScale) == 0x001394, "Member 'UPyBuffAbility_120_10357190::MaxEnlargeScale' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, ArmorBuffID) == 0x001398, "Member 'UPyBuffAbility_120_10357190::ArmorBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10357190, NewScale) == 0x0013A0, "Member 'UPyBuffAbility_120_10357190::NewScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10357190;
 
 }
 

@@ -23,9 +23,7 @@ struct PyGamemodeAudioMgr_ReceiveNotifyVoice final
 public:
 	struct FProcedureNotifyDataVoice              DataVoice;                                         // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyGamemodeAudioMgr_ReceiveNotifyVoice) == 0x000008, "Wrong alignment on PyGamemodeAudioMgr_ReceiveNotifyVoice");
-static_assert(sizeof(PyGamemodeAudioMgr_ReceiveNotifyVoice) == 0x000030, "Wrong size on PyGamemodeAudioMgr_ReceiveNotifyVoice");
-static_assert(offsetof(PyGamemodeAudioMgr_ReceiveNotifyVoice, DataVoice) == 0x000000, "Member 'PyGamemodeAudioMgr_ReceiveNotifyVoice::DataVoice' has a wrong offset!");
+DUMPER7_ASSERTS_PyGamemodeAudioMgr_ReceiveNotifyVoice;
 
 }
 

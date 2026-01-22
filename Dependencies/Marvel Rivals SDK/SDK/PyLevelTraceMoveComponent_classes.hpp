@@ -17,21 +17,21 @@ namespace SDK
 {
 
 // PythonClass PyLevelTraceMoveComponent.PyLevelTraceMoveComponent
-// 0x0040 (0x0210 - 0x01D0)
+// 0x0040 (0x0220 - 0x01E0)
 class UPyLevelTraceMoveComponent final : public ULevelMoveComponent
 {
 public:
-	float                                         CurProgress;                                       // 0x01D0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CurTime;                                           // 0x01D4(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RouteIndex;                                        // 0x01D8(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          StopMove;                                          // 0x01DC(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DD[0x3];                                      // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MoveSpeed;                                         // 0x01E0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultMove;                                       // 0x01E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class AActor>                     TraceClass;                                        // 0x01E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class ALevelMoveActor*>                OtherMoveActor;                                    // 0x01F0(0x0010)(Edit, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              EventFinished;                                     // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         CurProgress;                                       // 0x01E0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CurTime;                                           // 0x01E4(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RouteIndex;                                        // 0x01E8(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          StopMove;                                          // 0x01EC(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MoveSpeed;                                         // 0x01F0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultMove;                                       // 0x01F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class AActor>                     TraceClass;                                        // 0x01F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class ALevelMoveActor*>                OtherMoveActor;                                    // 0x0200(0x0010)(Edit, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              EventFinished;                                     // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInitializeComponent();
@@ -53,24 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTraceMoveComponent">();
+		STATIC_CLASS_IMPL("PyLevelTraceMoveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTraceMoveComponent")
 	}
 	static class UPyLevelTraceMoveComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTraceMoveComponent>();
 	}
 };
-static_assert(alignof(UPyLevelTraceMoveComponent) == 0x000008, "Wrong alignment on UPyLevelTraceMoveComponent");
-static_assert(sizeof(UPyLevelTraceMoveComponent) == 0x000210, "Wrong size on UPyLevelTraceMoveComponent");
-static_assert(offsetof(UPyLevelTraceMoveComponent, CurProgress) == 0x0001D0, "Member 'UPyLevelTraceMoveComponent::CurProgress' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, CurTime) == 0x0001D4, "Member 'UPyLevelTraceMoveComponent::CurTime' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, RouteIndex) == 0x0001D8, "Member 'UPyLevelTraceMoveComponent::RouteIndex' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, StopMove) == 0x0001DC, "Member 'UPyLevelTraceMoveComponent::StopMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, MoveSpeed) == 0x0001E0, "Member 'UPyLevelTraceMoveComponent::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, DefaultMove) == 0x0001E4, "Member 'UPyLevelTraceMoveComponent::DefaultMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, TraceClass) == 0x0001E8, "Member 'UPyLevelTraceMoveComponent::TraceClass' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, OtherMoveActor) == 0x0001F0, "Member 'UPyLevelTraceMoveComponent::OtherMoveActor' has a wrong offset!");
-static_assert(offsetof(UPyLevelTraceMoveComponent, EventFinished) == 0x000200, "Member 'UPyLevelTraceMoveComponent::EventFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelTraceMoveComponent;
 
 }
 

@@ -33,18 +33,7 @@ public:
 	float                                         K2Node_CustomEvent_TimeWaited;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP) == 0x000008, "Wrong alignment on Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP");
-static_assert(sizeof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP) == 0x000060, "Wrong size on Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, EntryPoint) == 0x000000, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, CallFunc_GetDelaySectionTime_DelayTime) == 0x000008, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::CallFunc_GetDelaySectionTime_DelayTime' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CustomEvent_AbilityEnded) == 0x000038, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CustomEvent_AbilityEnded' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CreateDelegate_OutputDelegate_2) == 0x00003C, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CustomEvent_TimeHeld) == 0x000054, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CustomEvent_TimeHeld' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, K2Node_CustomEvent_TimeWaited) == 0x000058, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::K2Node_CustomEvent_TimeWaited' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP, CallFunc_Delay_Duration_ImplicitCast) == 0x00005C, "Member 'Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104711_BP_C_ExecuteUbergraph_Ability_104711_BP;
 
 // Function Ability_104711_BP.Ability_104711_BP_C.GetDelaySectionTime
 // 0x0048 (0x0048 - 0x0000)
@@ -63,18 +52,7 @@ public:
 	double                                        CallFunc_FMin_A_ImplicitCast;                      // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FMin_B_ImplicitCast;                      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104711_BP_C_GetDelaySectionTime) == 0x000008, "Wrong alignment on Ability_104711_BP_C_GetDelaySectionTime");
-static_assert(sizeof(Ability_104711_BP_C_GetDelaySectionTime) == 0x000048, "Wrong size on Ability_104711_BP_C_GetDelaySectionTime");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, DelayTime) == 0x000000, "Member 'Ability_104711_BP_C_GetDelaySectionTime::DelayTime' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_GetMarvelAbilityConfig_ReturnValue) == 0x000008, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_GetMarvelAbilityConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, K2Node_DynamicCast_AsConfig_104711) == 0x000010, "Member 'Ability_104711_BP_C_GetDelaySectionTime::K2Node_DynamicCast_AsConfig_104711' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Ability_104711_BP_C_GetDelaySectionTime::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_FMin_ReturnValue) == 0x000020, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000028, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_FMax_ReturnValue) == 0x000030, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_FMin_A_ImplicitCast) == 0x000038, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_FMin_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(Ability_104711_BP_C_GetDelaySectionTime, CallFunc_FMin_B_ImplicitCast) == 0x000040, "Member 'Ability_104711_BP_C_GetDelaySectionTime::CallFunc_FMin_B_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104711_BP_C_GetDelaySectionTime;
 
 // Function Ability_104711_BP.Ability_104711_BP_C.OnFireTaskEnded
 // 0x0001 (0x0001 - 0x0000)
@@ -83,9 +61,7 @@ struct Ability_104711_BP_C_OnFireTaskEnded final
 public:
 	bool                                          AbilityEnded;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104711_BP_C_OnFireTaskEnded) == 0x000001, "Wrong alignment on Ability_104711_BP_C_OnFireTaskEnded");
-static_assert(sizeof(Ability_104711_BP_C_OnFireTaskEnded) == 0x000001, "Wrong size on Ability_104711_BP_C_OnFireTaskEnded");
-static_assert(offsetof(Ability_104711_BP_C_OnFireTaskEnded, AbilityEnded) == 0x000000, "Member 'Ability_104711_BP_C_OnFireTaskEnded::AbilityEnded' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104711_BP_C_OnFireTaskEnded;
 
 // Function Ability_104711_BP.Ability_104711_BP_C.OnPress_事件
 // 0x0004 (0x0004 - 0x0000)
@@ -94,9 +70,7 @@ struct Ability_104711_BP_C_OnPress_事件 final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104711_BP_C_OnPress_事件) == 0x000004, "Wrong alignment on Ability_104711_BP_C_OnPress_事件");
-static_assert(sizeof(Ability_104711_BP_C_OnPress_事件) == 0x000004, "Wrong size on Ability_104711_BP_C_OnPress_事件");
-static_assert(offsetof(Ability_104711_BP_C_OnPress_事件, TimeWaited) == 0x000000, "Member 'Ability_104711_BP_C_OnPress_事件::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104711_BP_C_OnPress_事件;
 
 // Function Ability_104711_BP.Ability_104711_BP_C.自定义事件
 // 0x0004 (0x0004 - 0x0000)
@@ -105,9 +79,7 @@ struct Ability_104711_BP_C_自定义事件 final
 public:
 	float                                         TimeHeld;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104711_BP_C_自定义事件) == 0x000004, "Wrong alignment on Ability_104711_BP_C_自定义事件");
-static_assert(sizeof(Ability_104711_BP_C_自定义事件) == 0x000004, "Wrong size on Ability_104711_BP_C_自定义事件");
-static_assert(offsetof(Ability_104711_BP_C_自定义事件, TimeHeld) == 0x000000, "Member 'Ability_104711_BP_C_自定义事件::TimeHeld' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104711_BP_C_自定义事件;
 
 }
 

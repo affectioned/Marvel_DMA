@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSignalSensitiveHandler">();
+		STATIC_CLASS_IMPL("UISettingSignalSensitiveHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSignalSensitiveHandler")
 	}
 	static class UUISettingSignalSensitiveHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSignalSensitiveHandler>();
 	}
 };
-static_assert(alignof(UUISettingSignalSensitiveHandler) == 0x000008, "Wrong alignment on UUISettingSignalSensitiveHandler");
-static_assert(sizeof(UUISettingSignalSensitiveHandler) == 0x000030, "Wrong size on UUISettingSignalSensitiveHandler");
+DUMPER7_ASSERTS_UUISettingSignalSensitiveHandler;
 
 // PythonClass Communication.UISettingWheelTypeHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -49,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingWheelTypeHandler">();
+		STATIC_CLASS_IMPL("UISettingWheelTypeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingWheelTypeHandler")
 	}
 	static class UUISettingWheelTypeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingWheelTypeHandler>();
 	}
 };
-static_assert(alignof(UUISettingWheelTypeHandler) == 0x000008, "Wrong alignment on UUISettingWheelTypeHandler");
-static_assert(sizeof(UUISettingWheelTypeHandler) == 0x000030, "Wrong size on UUISettingWheelTypeHandler");
+DUMPER7_ASSERTS_UUISettingWheelTypeHandler;
 
 // PythonClass Communication.UISettingBondAbilityHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingBondAbilityHandler">();
+		STATIC_CLASS_IMPL("UISettingBondAbilityHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingBondAbilityHandler")
 	}
 	static class UUISettingBondAbilityHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingBondAbilityHandler>();
 	}
 };
-static_assert(alignof(UUISettingBondAbilityHandler) == 0x000008, "Wrong alignment on UUISettingBondAbilityHandler");
-static_assert(sizeof(UUISettingBondAbilityHandler) == 0x000030, "Wrong size on UUISettingBondAbilityHandler");
+DUMPER7_ASSERTS_UUISettingBondAbilityHandler;
 
 }
 

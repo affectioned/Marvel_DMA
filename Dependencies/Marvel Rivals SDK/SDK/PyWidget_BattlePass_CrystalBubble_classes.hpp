@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_CrystalBubble.PyWidget_BattlePass_CrystalBubble
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_BattlePass_CrystalBubble final : public UMarvelUserWidget
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CrystalBubble">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CrystalBubble")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CrystalBubble")
 	}
 	static class UPyWidget_BattlePass_CrystalBubble* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CrystalBubble>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CrystalBubble) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CrystalBubble");
-static_assert(sizeof(UPyWidget_BattlePass_CrystalBubble) == 0x000568, "Wrong size on UPyWidget_BattlePass_CrystalBubble");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CrystalBubble;
 
 // PythonClass PyWidget_BattlePass_CrystalBubble.PyWidget_BattlePass_CrystalGuideBubble
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_BattlePass_CrystalGuideBubble final : public UMarvelUserWidget
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CrystalGuideBubble">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CrystalGuideBubble")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CrystalGuideBubble")
 	}
 	static class UPyWidget_BattlePass_CrystalGuideBubble* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CrystalGuideBubble>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CrystalGuideBubble) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CrystalGuideBubble");
-static_assert(sizeof(UPyWidget_BattlePass_CrystalGuideBubble) == 0x000568, "Wrong size on UPyWidget_BattlePass_CrystalGuideBubble");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CrystalGuideBubble;
 
 }
 

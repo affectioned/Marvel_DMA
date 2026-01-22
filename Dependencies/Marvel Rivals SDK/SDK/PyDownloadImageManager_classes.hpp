@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDownloadImageManger">();
+		STATIC_CLASS_IMPL("PyDownloadImageManger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDownloadImageManger")
 	}
 	static class UPyDownloadImageManger* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDownloadImageManger>();
 	}
 };
-static_assert(alignof(UPyDownloadImageManger) == 0x000008, "Wrong alignment on UPyDownloadImageManger");
-static_assert(sizeof(UPyDownloadImageManger) == 0x000040, "Wrong size on UPyDownloadImageManger");
-static_assert(offsetof(UPyDownloadImageManger, ImageList) == 0x000030, "Member 'UPyDownloadImageManger::ImageList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDownloadImageManger;
 
 }
 

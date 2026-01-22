@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HealthPackRespawnProgressBar_New_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HealthPackRespawnProgressBar_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HealthPackRespawnProgressBar_New_C")
 	}
 	static class UWBP_HealthPackRespawnProgressBar_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HealthPackRespawnProgressBar_New_C>();
 	}
 };
-static_assert(alignof(UWBP_HealthPackRespawnProgressBar_New_C) == 0x000010, "Wrong alignment on UWBP_HealthPackRespawnProgressBar_New_C");
-static_assert(sizeof(UWBP_HealthPackRespawnProgressBar_New_C) == 0x000880, "Wrong size on UWBP_HealthPackRespawnProgressBar_New_C");
-static_assert(offsetof(UWBP_HealthPackRespawnProgressBar_New_C, Anim_Charge) == 0x000870, "Member 'UWBP_HealthPackRespawnProgressBar_New_C::Anim_Charge' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HealthPackRespawnProgressBar_New_C;
 
 }
 

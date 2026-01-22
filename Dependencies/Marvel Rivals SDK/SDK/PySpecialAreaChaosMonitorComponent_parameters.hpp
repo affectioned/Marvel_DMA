@@ -23,9 +23,7 @@ struct PySpecialAreaChaosMonitorComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaChaosMonitorComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpecialAreaChaosMonitorComponent_ReceiveEndPlay");
-static_assert(sizeof(PySpecialAreaChaosMonitorComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PySpecialAreaChaosMonitorComponent_ReceiveEndPlay");
-static_assert(offsetof(PySpecialAreaChaosMonitorComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySpecialAreaChaosMonitorComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaChaosMonitorComponent_ReceiveEndPlay;
 
 // PythonFunction PySpecialAreaChaosMonitorComponent.PySpecialAreaChaosMonitorComponent.OnTriggerBrokenDegreeHandler
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler final
 public:
 	float                                         Degree;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler) == 0x000004, "Wrong alignment on PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler");
-static_assert(sizeof(PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler) == 0x000004, "Wrong size on PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler");
-static_assert(offsetof(PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler, Degree) == 0x000000, "Member 'PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler::Degree' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaChaosMonitorComponent_OnTriggerBrokenDegreeHandler;
 
 // PythonFunction PySpecialAreaChaosMonitorComponent.PySpecialAreaChaosMonitorComponent.MulticastTrigger
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PySpecialAreaChaosMonitorComponent_MulticastTrigger final
 public:
 	float                                         Degree;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaChaosMonitorComponent_MulticastTrigger) == 0x000004, "Wrong alignment on PySpecialAreaChaosMonitorComponent_MulticastTrigger");
-static_assert(sizeof(PySpecialAreaChaosMonitorComponent_MulticastTrigger) == 0x000004, "Wrong size on PySpecialAreaChaosMonitorComponent_MulticastTrigger");
-static_assert(offsetof(PySpecialAreaChaosMonitorComponent_MulticastTrigger, Degree) == 0x000000, "Member 'PySpecialAreaChaosMonitorComponent_MulticastTrigger::Degree' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaChaosMonitorComponent_MulticastTrigger;
 
 }
 

@@ -21,9 +21,7 @@ struct PyExtension_LayerWidgetEntry_BP_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_LayerWidgetEntry_BP_OnVisibleChanged) == 0x000001, "Wrong alignment on PyExtension_LayerWidgetEntry_BP_OnVisibleChanged");
-static_assert(sizeof(PyExtension_LayerWidgetEntry_BP_OnVisibleChanged) == 0x000001, "Wrong size on PyExtension_LayerWidgetEntry_BP_OnVisibleChanged");
-static_assert(offsetof(PyExtension_LayerWidgetEntry_BP_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyExtension_LayerWidgetEntry_BP_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_LayerWidgetEntry_BP_OnVisibleChanged;
 
 // PythonFunction PyExtension_LayerWidgetEntry.PyExtension_LayerWidgetEntry.BP_OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged");
-static_assert(sizeof(PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged");
-static_assert(offsetof(PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_LayerWidgetEntry_BP_OnCascadingVisibleChanged;
 
 }
 

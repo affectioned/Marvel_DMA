@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "PyWidget_InvitePopup_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_FriendRecommendPopup.PyWidget_FriendRecommendPopup
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_FriendRecommendPopup final : public UPyWidget_InvitePopupBase
 {
 public:
@@ -30,18 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendRecommendPopup">();
+		STATIC_CLASS_IMPL("PyWidget_FriendRecommendPopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendRecommendPopup")
 	}
 	static class UPyWidget_FriendRecommendPopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendRecommendPopup>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendRecommendPopup) == 0x000008, "Wrong alignment on UPyWidget_FriendRecommendPopup");
-static_assert(sizeof(UPyWidget_FriendRecommendPopup) == 0x0005F0, "Wrong size on UPyWidget_FriendRecommendPopup");
+DUMPER7_ASSERTS_UPyWidget_FriendRecommendPopup;
 
 // PythonClass PyWidget_FriendRecommendPopup.PyWidget_FriendRecommendPopup_HeroHead
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_FriendRecommendPopup_HeroHead final : public UPyMarvelUserWidget
 {
 public:
@@ -50,39 +53,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendRecommendPopup_HeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_FriendRecommendPopup_HeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendRecommendPopup_HeroHead")
 	}
 	static class UPyWidget_FriendRecommendPopup_HeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendRecommendPopup_HeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendRecommendPopup_HeroHead) == 0x000008, "Wrong alignment on UPyWidget_FriendRecommendPopup_HeroHead");
-static_assert(sizeof(UPyWidget_FriendRecommendPopup_HeroHead) == 0x0005C0, "Wrong size on UPyWidget_FriendRecommendPopup_HeroHead");
+DUMPER7_ASSERTS_UPyWidget_FriendRecommendPopup_HeroHead;
 
 // PythonClass PyWidget_FriendRecommendPopup.PyWidget_FriendRecommendPopup_Performance
-// 0x00A0 (0x0660 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_FriendRecommendPopup_Performance final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EHeroRole, class UTexture2D*>            RoleBgImgs;                                        // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EHeroRole, struct FLinearColor>          IconColors;                                        // 0x0610(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EHeroRole, class UTexture2D*>            RoleBgImgs;                                        // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EHeroRole, struct FLinearColor>          IconColors;                                        // 0x0618(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendRecommendPopup_Performance">();
+		STATIC_CLASS_IMPL("PyWidget_FriendRecommendPopup_Performance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendRecommendPopup_Performance")
 	}
 	static class UPyWidget_FriendRecommendPopup_Performance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendRecommendPopup_Performance>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendRecommendPopup_Performance) == 0x000008, "Wrong alignment on UPyWidget_FriendRecommendPopup_Performance");
-static_assert(sizeof(UPyWidget_FriendRecommendPopup_Performance) == 0x000660, "Wrong size on UPyWidget_FriendRecommendPopup_Performance");
-static_assert(offsetof(UPyWidget_FriendRecommendPopup_Performance, RoleBgImgs) == 0x0005C0, "Member 'UPyWidget_FriendRecommendPopup_Performance::RoleBgImgs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendRecommendPopup_Performance, IconColors) == 0x000610, "Member 'UPyWidget_FriendRecommendPopup_Performance::IconColors' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_FriendRecommendPopup_Performance;
 
 }
 

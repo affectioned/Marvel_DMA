@@ -21,9 +21,7 @@ struct PyAbility_105042_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105042_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105042_CanActivate");
-static_assert(sizeof(PyAbility_105042_CanActivate) == 0x000001, "Wrong size on PyAbility_105042_CanActivate");
-static_assert(offsetof(PyAbility_105042_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105042_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105042_CanActivate;
 
 }
 

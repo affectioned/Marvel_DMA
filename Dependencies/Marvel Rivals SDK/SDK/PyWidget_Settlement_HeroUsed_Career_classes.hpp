@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_HeroUsed_Career.PyWidget_Settlement_HeroUsed_Career
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_Settlement_HeroUsed_Career final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           Exit_InputAction;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ViewTipOffset;                                     // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_Settlement_HeroUsed_Item> HeroItemWidget;                            // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Exit_InputAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ViewTipOffset;                                     // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Settlement_HeroUsed_Item> HeroItemWidget;                            // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_HeroUsed_Career">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_HeroUsed_Career")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_HeroUsed_Career")
 	}
 	static class UPyWidget_Settlement_HeroUsed_Career* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_HeroUsed_Career>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_HeroUsed_Career) == 0x000008, "Wrong alignment on UPyWidget_Settlement_HeroUsed_Career");
-static_assert(sizeof(UPyWidget_Settlement_HeroUsed_Career) == 0x000618, "Wrong size on UPyWidget_Settlement_HeroUsed_Career");
-static_assert(offsetof(UPyWidget_Settlement_HeroUsed_Career, Exit_InputAction) == 0x0005F8, "Member 'UPyWidget_Settlement_HeroUsed_Career::Exit_InputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_HeroUsed_Career, ViewTipOffset) == 0x000600, "Member 'UPyWidget_Settlement_HeroUsed_Career::ViewTipOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_HeroUsed_Career, HeroItemWidget) == 0x000610, "Member 'UPyWidget_Settlement_HeroUsed_Career::HeroItemWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_HeroUsed_Career;
 
 }
 

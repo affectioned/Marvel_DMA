@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_ProgressUnit.PyWidget_Common_ProgressUnit
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Common_ProgressUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           AttackerColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefenderColor;                                     // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                WBP_CompetitiveIdentifier;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_ProhibitProg;                                 // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           AttackerColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefenderColor;                                     // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                WBP_CompetitiveIdentifier;                         // 0x05E8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_ProhibitProg;                                 // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -38,28 +38,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_ProgressUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Common_ProgressUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_ProgressUnit")
 	}
 	static class UPyWidget_Common_ProgressUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_ProgressUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_ProgressUnit) == 0x000008, "Wrong alignment on UPyWidget_Common_ProgressUnit");
-static_assert(sizeof(UPyWidget_Common_ProgressUnit) == 0x0005F0, "Wrong size on UPyWidget_Common_ProgressUnit");
-static_assert(offsetof(UPyWidget_Common_ProgressUnit, AttackerColor) == 0x0005BC, "Member 'UPyWidget_Common_ProgressUnit::AttackerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressUnit, DefenderColor) == 0x0005CC, "Member 'UPyWidget_Common_ProgressUnit::DefenderColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressUnit, WBP_CompetitiveIdentifier) == 0x0005E0, "Member 'UPyWidget_Common_ProgressUnit::WBP_CompetitiveIdentifier' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressUnit, Anim_ProhibitProg) == 0x0005E8, "Member 'UPyWidget_Common_ProgressUnit::Anim_ProhibitProg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_ProgressUnit;
 
 // PythonClass PyWidget_Common_ProgressUnit.PyWidget_Common_PayloadProgress
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Common_PayloadProgress final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           AttackerColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefenderColor;                                     // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           AttackerColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefenderColor;                                     // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -69,32 +68,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PayloadProgress">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PayloadProgress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PayloadProgress")
 	}
 	static class UPyWidget_Common_PayloadProgress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PayloadProgress>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PayloadProgress) == 0x000008, "Wrong alignment on UPyWidget_Common_PayloadProgress");
-static_assert(sizeof(UPyWidget_Common_PayloadProgress) == 0x0005E0, "Wrong size on UPyWidget_Common_PayloadProgress");
-static_assert(offsetof(UPyWidget_Common_PayloadProgress, AttackerColor) == 0x0005BC, "Member 'UPyWidget_Common_PayloadProgress::AttackerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PayloadProgress, DefenderColor) == 0x0005CC, "Member 'UPyWidget_Common_PayloadProgress::DefenderColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_PayloadProgress;
 
 // PythonClass PyWidget_Common_ProgressUnit.PyWidget_Common_ProgressBarUnit
-// 0x0078 (0x0638 - 0x05C0)
+// 0x0078 (0x0640 - 0x05C8)
 class UPyWidget_Common_ProgressBarUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         VisibleDistanceThreshHold;                         // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ApprochingMusicThreshHold;                         // 0x05C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Blue_FinishBgColor;                                // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Red_FinishBgColor;                                 // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeamColorAlly;                                     // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeamColorEnemy;                                    // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            VXColorAlly;                                       // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            VXColorEnemy;                                      // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         VisibleDistanceThreshHold;                         // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ApprochingMusicThreshHold;                         // 0x05C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Blue_FinishBgColor;                                // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Red_FinishBgColor;                                 // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeamColorAlly;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeamColorEnemy;                                    // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            VXColorAlly;                                       // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            VXColorEnemy;                                      // 0x0628(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -107,23 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_ProgressBarUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Common_ProgressBarUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_ProgressBarUnit")
 	}
 	static class UPyWidget_Common_ProgressBarUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_ProgressBarUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_ProgressBarUnit) == 0x000008, "Wrong alignment on UPyWidget_Common_ProgressBarUnit");
-static_assert(sizeof(UPyWidget_Common_ProgressBarUnit) == 0x000638, "Wrong size on UPyWidget_Common_ProgressBarUnit");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, VisibleDistanceThreshHold) == 0x0005BC, "Member 'UPyWidget_Common_ProgressBarUnit::VisibleDistanceThreshHold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, ApprochingMusicThreshHold) == 0x0005C0, "Member 'UPyWidget_Common_ProgressBarUnit::ApprochingMusicThreshHold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, Blue_FinishBgColor) == 0x0005C4, "Member 'UPyWidget_Common_ProgressBarUnit::Blue_FinishBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, Red_FinishBgColor) == 0x0005D4, "Member 'UPyWidget_Common_ProgressBarUnit::Red_FinishBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, TeamColorAlly) == 0x0005E4, "Member 'UPyWidget_Common_ProgressBarUnit::TeamColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, TeamColorEnemy) == 0x0005F8, "Member 'UPyWidget_Common_ProgressBarUnit::TeamColorEnemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, VXColorAlly) == 0x00060C, "Member 'UPyWidget_Common_ProgressBarUnit::VXColorAlly' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ProgressBarUnit, VXColorEnemy) == 0x000620, "Member 'UPyWidget_Common_ProgressBarUnit::VXColorEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_ProgressBarUnit;
 
 }
 

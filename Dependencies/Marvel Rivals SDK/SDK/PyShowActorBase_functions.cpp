@@ -1202,6 +1202,31 @@ bool APyShowActorBase::GetIsNeedReplaceOverlayMaterial()
 }
 
 
+// PythonFunction PyShowActorBase.PyShowActorBase.OnPlaySkinCustomizationAnimItem
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    ItemID                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void APyShowActorBase::OnPlaySkinCustomizationAnimItem(const class FString& ItemID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyShowActorBase", "OnPlaySkinCustomizationAnimItem");
+
+	Params::PyShowActorBase_OnPlaySkinCustomizationAnimItem Parms{};
+
+	Parms.ItemID = std::move(ItemID);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyShowActorBase.PyShowActorBase.SetBindingTagInLevelSequenceActor
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

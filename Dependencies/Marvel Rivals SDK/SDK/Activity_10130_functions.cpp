@@ -17,111 +17,11 @@
 namespace SDK
 {
 
-// Function Activity_10130.ZombieAbility.CanActivate
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UZombieAbility::CanActivate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieAbility", "CanActivate");
-
-	Params::ZombieAbility_CanActivate Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Activity_10130.ZombieAbility.GetComboState
-// (Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UZombieAbility::GetComboState() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieAbility", "GetComboState");
-
-	Params::ZombieAbility_GetComboState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Activity_10130.ZombieAbility.IsActivated
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UZombieAbility::IsActivated() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieAbility", "IsActivated");
-
-	Params::ZombieAbility_IsActivated Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Activity_10130.ZombieAbility_402221.OnLivingStateChanged
-// (Final, Native, Protected)
-// Parameters:
-// const EPlayerLivingState                LivingState                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UZombieAbility_402221::OnLivingStateChanged(const EPlayerLivingState LivingState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieAbility_402221", "OnLivingStateChanged");
-
-	Params::ZombieAbility_402221_OnLivingStateChanged Parms{};
-
-	Parms.LivingState = LivingState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Activity_10130.BuffAbility_CommonCardEffect.ApplyConfigEffect
 // (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UBuffAbility_CommonCardEffect::ApplyConfigEffect(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -453,7 +353,7 @@ void UBuffAbility_CommonCardEffect::MulticastProbSeed(float HitSeed, float Damag
 // (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UBuffAbility_CommonCardEffect::OnAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -1251,31 +1151,6 @@ bool UAbility_10130_10391032::IsTargetCharValidToSplash(class AMarvelBaseCharact
 }
 
 
-// Function Activity_10130.Cue_Buff_40241101.OnComponentCollisionChanged
-// (Final, Native, Protected)
-// Parameters:
-// class UPrimitiveComponent*              ChangedComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_40241101::OnComponentCollisionChanged(class UPrimitiveComponent* ChangedComponent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_40241101", "OnComponentCollisionChanged");
-
-	Params::Cue_Buff_40241101_OnComponentCollisionChanged Parms{};
-
-	Parms.ChangedComponent = ChangedComponent;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Activity_10130.Ability_10130_104494.CreateProjectileWithInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -1302,7 +1177,7 @@ void UAbility_10130_104494::CreateProjectileWithInfo(const struct FMarvelAbility
 // (Final, Native, Protected, HasOutParams)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UAbility_10130_104494::OnAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -1485,153 +1360,6 @@ bool AProjectile_10130_10449490::MergeDamage(int32 InMergeCnt)
 }
 
 
-// Function Activity_10130.ArmorAttenuation_10472005.AddArmor
-// (Final, Native, Public)
-// Parameters:
-// float                                   DeltaValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UArmorAttenuation_10472005::AddArmor(float DeltaValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArmorAttenuation_10472005", "AddArmor");
-
-	Params::ArmorAttenuation_10472005_AddArmor Parms{};
-
-	Parms.DeltaValue = DeltaValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.MarvelZombieAnimInstance.AbilityMontageJumpToSection
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class FName                             SectionName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelZombieAnimInstance::AbilityMontageJumpToSection(class FName SectionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelZombieAnimInstance", "AbilityMontageJumpToSection");
-
-	Params::MarvelZombieAnimInstance_AbilityMontageJumpToSection Parms{};
-
-	Parms.SectionName = SectionName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.MarvelZombieAnimInstance.IsInAbilityState
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EZombieSkelotAnimState                  InAnimState                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UMarvelZombieAnimInstance::IsInAbilityState(EZombieSkelotAnimState InAnimState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelZombieAnimInstance", "IsInAbilityState");
-
-	Params::MarvelZombieAnimInstance_IsInAbilityState Parms{};
-
-	Parms.InAnimState = InAnimState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Activity_10130.MarvelZombieAnimInstance.PlayAbilityMontage
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EZombieSkelotAnimState                  InSkelotAnimState                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelZombieAnimInstance::PlayAbilityMontage(EZombieSkelotAnimState InSkelotAnimState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelZombieAnimInstance", "PlayAbilityMontage");
-
-	Params::MarvelZombieAnimInstance_PlayAbilityMontage Parms{};
-
-	Parms.InSkelotAnimState = InSkelotAnimState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.MarvelZombieAnimInstance.PlayHitMontage
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// EZombieBeHittingState                   InBeHittingState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMarvelZombieAnimInstance::PlayHitMontage(EZombieBeHittingState InBeHittingState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelZombieAnimInstance", "PlayHitMontage");
-
-	Params::MarvelZombieAnimInstance_PlayHitMontage Parms{};
-
-	Parms.InBeHittingState = InBeHittingState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.MarvelZombieAnimInstance.StopAbilityMontage
-// (Final, Native, Public, BlueprintCallable)
-
-void UMarvelZombieAnimInstance::StopAbilityMontage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MarvelZombieAnimInstance", "StopAbilityMontage");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Activity_10130.Projectile_10130_10449491.RemoveFromOwner
 // (Event, Public, BlueprintEvent)
 
@@ -1671,31 +1399,6 @@ void AProjectile_10130_10449491::SetProjectileData(int32 InIndex, int32 InNum, f
 	Parms.OutwardTime = OutwardTime;
 	Parms.OutwardInterval = OutwardInterval;
 	Parms.OutwardEnd = OutwardEnd;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.Cue_Ability_Loop_40242101.OnGameplayActorAdd
-// (Final, Native, Public)
-// Parameters:
-// class AActor*                           GameplayActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Ability_Loop_40242101::OnGameplayActorAdd(class AActor* GameplayActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Ability_Loop_40242101", "OnGameplayActorAdd");
-
-	Params::Cue_Ability_Loop_40242101_OnGameplayActorAdd Parms{};
-
-	Parms.GameplayActor = GameplayActor;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1758,104 +1461,6 @@ float UAbility_10130_104724::K2_MarvelPreApplyCost(const struct FGameplayTag& Co
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function Activity_10130.NamorBossCharacter.K2_OnCombatStart
-// (Event, Public, BlueprintEvent)
-
-void ANamorBossCharacter::K2_OnCombatStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NamorBossCharacter", "K2_OnCombatStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Activity_10130.NamorBossCharacter.OnCombatStart
-// (Final, Native, Public, BlueprintCallable)
-
-void ANamorBossCharacter::OnCombatStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NamorBossCharacter", "OnCombatStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.NamorBossCharacter.OnRep_IsCombatStarted
-// (Final, Native, Public)
-
-void ANamorBossCharacter::OnRep_IsCombatStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NamorBossCharacter", "OnRep_IsCombatStarted");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.NamorBossCharacter.OnTimeToDestroyMe
-// (Final, Native, Public)
-
-void ANamorBossCharacter::OnTimeToDestroyMe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NamorBossCharacter", "OnTimeToDestroyMe");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.NamorBossCharacter.ReplaceOctopus
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class USummonedComp_40255101*           CurrentSummonedComp                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NewSummonedID                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ANamorBossCharacter::ReplaceOctopus(class USummonedComp_40255101* CurrentSummonedComp, int32 NewSummonedID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NamorBossCharacter", "ReplaceOctopus");
-
-	Params::NamorBossCharacter_ReplaceOctopus Parms{};
-
-	Parms.CurrentSummonedComp = CurrentSummonedComp;
-	Parms.NewSummonedID = NewSummonedID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2327,50 +1932,6 @@ void UBuffAbility_10471135::SpawnFireRegion(const struct FVector& SpawnLocation,
 }
 
 
-// Function Activity_10130.ZombieCombineNiagaraComponent.OnLivingStateChanged
-// (Final, Native, Public)
-// Parameters:
-// EPlayerLivingState                      Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UZombieCombineNiagaraComponent::OnLivingStateChanged(EPlayerLivingState Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieCombineNiagaraComponent", "OnLivingStateChanged");
-
-	Params::ZombieCombineNiagaraComponent_OnLivingStateChanged Parms{};
-
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Activity_10130.ZombieCombineNiagaraComponent.UpdateNiagaraTransform
-// (Final, Native, Public, BlueprintCallable)
-
-void UZombieCombineNiagaraComponent::UpdateNiagaraTransform()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZombieCombineNiagaraComponent", "UpdateNiagaraTransform");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Activity_10130.Scope_10472005.ApplyArmorToTarget
 // (Final, Native, Protected)
 // Parameters:
@@ -2473,6 +2034,31 @@ void UBuffAbility_10475131::OnBindTagUpdated(const struct FGameplayTag& TagUpdat
 }
 
 
+// Function Activity_10130.ArmorAttenuation_10472005.AddArmor
+// (Final, Native, Public)
+// Parameters:
+// float                                   DeltaValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UArmorAttenuation_10472005::AddArmor(float DeltaValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ArmorAttenuation_10472005", "AddArmor");
+
+	Params::ArmorAttenuation_10472005_AddArmor Parms{};
+
+	Parms.DeltaValue = DeltaValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Activity_10130.Cue_Ability_Loop_10472005.OnTagChanged
 // (Final, Native, Public, HasOutParams)
 // Parameters:
@@ -2525,6 +2111,81 @@ void ACue_Ability_Loop_10472005::SetShieldMaterial(float Value)
 }
 
 
+// Function Activity_10130.ZombieAbility.CanActivate
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UZombieAbility::CanActivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieAbility", "CanActivate");
+
+	Params::ZombieAbility_CanActivate Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Activity_10130.ZombieAbility.GetComboState
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UZombieAbility::GetComboState() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieAbility", "GetComboState");
+
+	Params::ZombieAbility_GetComboState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Activity_10130.ZombieAbility.IsActivated
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UZombieAbility::IsActivated() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieAbility", "IsActivated");
+
+	Params::ZombieAbility_IsActivated Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Activity_10130.ZombieAbility_402101.OnMovementModeChanged
 // (Final, Native, Public)
 // Parameters:
@@ -2544,6 +2205,81 @@ void UZombieAbility_402101::OnMovementModeChanged(class ACharacter* Character, E
 	Parms.Character = Character;
 	Parms.PrevMovementMode = PrevMovementMode;
 	Parms.PreviousCustomMode = PreviousCustomMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.ZombieAbility_402221.OnLivingStateChanged
+// (Final, Native, Protected)
+// Parameters:
+// const EPlayerLivingState                LivingState                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UZombieAbility_402221::OnLivingStateChanged(const EPlayerLivingState LivingState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieAbility_402221", "OnLivingStateChanged");
+
+	Params::ZombieAbility_402221_OnLivingStateChanged Parms{};
+
+	Parms.LivingState = LivingState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.Cue_Buff_40241101.OnComponentCollisionChanged
+// (Final, Native, Protected)
+// Parameters:
+// class UPrimitiveComponent*              ChangedComponent                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_Buff_40241101::OnComponentCollisionChanged(class UPrimitiveComponent* ChangedComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Buff_40241101", "OnComponentCollisionChanged");
+
+	Params::Cue_Buff_40241101_OnComponentCollisionChanged Parms{};
+
+	Parms.ChangedComponent = ChangedComponent;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.Cue_Ability_Loop_40242101.OnGameplayActorAdd
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                           GameplayActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_Ability_Loop_40242101::OnGameplayActorAdd(class AActor* GameplayActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Ability_Loop_40242101", "OnGameplayActorAdd");
+
+	Params::Cue_Ability_Loop_40242101_OnGameplayActorAdd Parms{};
+
+	Parms.GameplayActor = GameplayActor;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4163,6 +3899,128 @@ void AMarvelMassReplicatedZombie::SetClientMassInPoolStatus(bool bInPool)
 }
 
 
+// Function Activity_10130.MarvelZombieAnimInstance.AbilityMontageJumpToSection
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FName                             SectionName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelZombieAnimInstance::AbilityMontageJumpToSection(class FName SectionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelZombieAnimInstance", "AbilityMontageJumpToSection");
+
+	Params::MarvelZombieAnimInstance_AbilityMontageJumpToSection Parms{};
+
+	Parms.SectionName = SectionName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.MarvelZombieAnimInstance.IsInAbilityState
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EZombieSkelotAnimState                  InAnimState                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UMarvelZombieAnimInstance::IsInAbilityState(EZombieSkelotAnimState InAnimState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelZombieAnimInstance", "IsInAbilityState");
+
+	Params::MarvelZombieAnimInstance_IsInAbilityState Parms{};
+
+	Parms.InAnimState = InAnimState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Activity_10130.MarvelZombieAnimInstance.PlayAbilityMontage
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EZombieSkelotAnimState                  InSkelotAnimState                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelZombieAnimInstance::PlayAbilityMontage(EZombieSkelotAnimState InSkelotAnimState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelZombieAnimInstance", "PlayAbilityMontage");
+
+	Params::MarvelZombieAnimInstance_PlayAbilityMontage Parms{};
+
+	Parms.InSkelotAnimState = InSkelotAnimState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.MarvelZombieAnimInstance.PlayHitMontage
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EZombieBeHittingState                   InBeHittingState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMarvelZombieAnimInstance::PlayHitMontage(EZombieBeHittingState InBeHittingState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelZombieAnimInstance", "PlayHitMontage");
+
+	Params::MarvelZombieAnimInstance_PlayHitMontage Parms{};
+
+	Parms.InBeHittingState = InBeHittingState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.MarvelZombieAnimInstance.StopAbilityMontage
+// (Final, Native, Public, BlueprintCallable)
+
+void UMarvelZombieAnimInstance::StopAbilityMontage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MarvelZombieAnimInstance", "StopAbilityMontage");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Activity_10130.MarvelZombieManager.CmdEnableZombieCache
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -4581,6 +4439,104 @@ bool UMarvelZombieManager::PoolEnabled() const
 }
 
 
+// Function Activity_10130.NamorBossCharacter.K2_OnCombatStart
+// (Event, Public, BlueprintEvent)
+
+void ANamorBossCharacter::K2_OnCombatStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NamorBossCharacter", "K2_OnCombatStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Activity_10130.NamorBossCharacter.OnCombatStart
+// (Final, Native, Public, BlueprintCallable)
+
+void ANamorBossCharacter::OnCombatStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NamorBossCharacter", "OnCombatStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.NamorBossCharacter.OnRep_IsCombatStarted
+// (Final, Native, Public)
+
+void ANamorBossCharacter::OnRep_IsCombatStarted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NamorBossCharacter", "OnRep_IsCombatStarted");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.NamorBossCharacter.OnTimeToDestroyMe
+// (Final, Native, Public)
+
+void ANamorBossCharacter::OnTimeToDestroyMe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NamorBossCharacter", "OnTimeToDestroyMe");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.NamorBossCharacter.ReplaceOctopus
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USummonedComp_40255101*           CurrentSummonedComp                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NewSummonedID                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ANamorBossCharacter::ReplaceOctopus(class USummonedComp_40255101* CurrentSummonedComp, int32 NewSummonedID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NamorBossCharacter", "ReplaceOctopus");
+
+	Params::NamorBossCharacter_ReplaceOctopus Parms{};
+
+	Parms.CurrentSummonedComp = CurrentSummonedComp;
+	Parms.NewSummonedID = NewSummonedID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Activity_10130.ScarletWitchBossCharacter.AddScopeToCache
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -4718,6 +4674,50 @@ class UGameplayAbility* AZombieAbilitySourceCharacter::GetCommonAbility() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Activity_10130.ZombieCombineNiagaraComponent.OnLivingStateChanged
+// (Final, Native, Public)
+// Parameters:
+// EPlayerLivingState                      Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UZombieCombineNiagaraComponent::OnLivingStateChanged(EPlayerLivingState Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieCombineNiagaraComponent", "OnLivingStateChanged");
+
+	Params::ZombieCombineNiagaraComponent_OnLivingStateChanged Parms{};
+
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Activity_10130.ZombieCombineNiagaraComponent.UpdateNiagaraTransform
+// (Final, Native, Public, BlueprintCallable)
+
+void UZombieCombineNiagaraComponent::UpdateNiagaraTransform()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ZombieCombineNiagaraComponent", "UpdateNiagaraTransform");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 }

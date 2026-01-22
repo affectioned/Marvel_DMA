@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_RegainList.PyWidget_BattlePass_RegainItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattlePass_RegainItem final : public UPyMarvelUserWidget
 {
 public:
@@ -26,23 +26,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RegainItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RegainItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RegainItem")
 	}
 	static class UPyWidget_BattlePass_RegainItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RegainItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RegainItem) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RegainItem");
-static_assert(sizeof(UPyWidget_BattlePass_RegainItem) == 0x0005C0, "Wrong size on UPyWidget_BattlePass_RegainItem");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RegainItem;
 
 // PythonClass PyWidget_BattlePass_RegainList.PyWidget_BattlePass_RegainList
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_BattlePass_RegainList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                RegainItem;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                RegainItem;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,16 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RegainList">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RegainList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RegainList")
 	}
 	static class UPyWidget_BattlePass_RegainList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RegainList>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RegainList) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RegainList");
-static_assert(sizeof(UPyWidget_BattlePass_RegainList) == 0x0005C8, "Wrong size on UPyWidget_BattlePass_RegainList");
-static_assert(offsetof(UPyWidget_BattlePass_RegainList, RegainItem) == 0x0005C0, "Member 'UPyWidget_BattlePass_RegainList::RegainItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RegainList;
 
 }
 

@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWheel">();
+		STATIC_CLASS_IMPL("PyWheel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWheel")
 	}
 	static class APyWheel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWheel>();
 	}
 };
-static_assert(alignof(APyWheel) == 0x000010, "Wrong alignment on APyWheel");
-static_assert(sizeof(APyWheel) == 0x000700, "Wrong size on APyWheel");
-static_assert(offsetof(APyWheel, RotationSpeed) == 0x0006E0, "Member 'APyWheel::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(APyWheel, State) == 0x0006E8, "Member 'APyWheel::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyWheel;
 
 }
 

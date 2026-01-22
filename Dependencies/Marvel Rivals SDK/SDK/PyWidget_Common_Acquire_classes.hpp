@@ -19,21 +19,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Acquire.PyWidget_Common_Acquire
-// 0x01A0 (0x0798 - 0x05F8)
+// 0x01C8 (0x07C8 - 0x0600)
 class UPyWidget_Common_Acquire final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                ContinueTipsStyle;                                 // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciateTipsStyle;                               // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipTipsStyle;                                     // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShareTipsStyle;                                    // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChangeShapeInputAction;                            // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, TArray<class UTexture2D*>> QualityBg;                                     // 0x0658(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, class UTexture2D*>     QualityVxBg;                                       // 0x06A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, struct FLinearColor>   QualityVxBgColor;                                  // 0x06F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, class UAkAudioEvent*>  QualityBgm;                                        // 0x0748(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ContinueTipsStyle;                                 // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciateTipsStyle;                               // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipTipsStyle;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShareTipsStyle;                                    // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShareTipsStyle_Gamepad;                            // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShareTipsStyle_Gamepad_Fake;                       // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChangeShapeInputAction;                            // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            Btn_Share;                                         // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, TArray<class UTexture2D*>> QualityBg;                                     // 0x0688(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, class UTexture2D*>     QualityVxBg;                                       // 0x06D8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, struct FLinearColor>   QualityVxBgColor;                                  // 0x0728(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, class UAkAudioEvent*>  QualityBgm;                                        // 0x0778(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,26 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Acquire">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Acquire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Acquire")
 	}
 	static class UPyWidget_Common_Acquire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Acquire>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Acquire) == 0x000008, "Wrong alignment on UPyWidget_Common_Acquire");
-static_assert(sizeof(UPyWidget_Common_Acquire) == 0x000798, "Wrong size on UPyWidget_Common_Acquire");
-static_assert(offsetof(UPyWidget_Common_Acquire, ContinueTipsStyle) == 0x0005F8, "Member 'UPyWidget_Common_Acquire::ContinueTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, ReturnTipsStyle) == 0x000608, "Member 'UPyWidget_Common_Acquire::ReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, AppreciateTipsStyle) == 0x000618, "Member 'UPyWidget_Common_Acquire::AppreciateTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, SkipTipsStyle) == 0x000628, "Member 'UPyWidget_Common_Acquire::SkipTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, ShareTipsStyle) == 0x000638, "Member 'UPyWidget_Common_Acquire::ShareTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, AkEvent_OnChangeItem) == 0x000648, "Member 'UPyWidget_Common_Acquire::AkEvent_OnChangeItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, ChangeShapeInputAction) == 0x000650, "Member 'UPyWidget_Common_Acquire::ChangeShapeInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, QualityBg) == 0x000658, "Member 'UPyWidget_Common_Acquire::QualityBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, QualityVxBg) == 0x0006A8, "Member 'UPyWidget_Common_Acquire::QualityVxBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, QualityVxBgColor) == 0x0006F8, "Member 'UPyWidget_Common_Acquire::QualityVxBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Acquire, QualityBgm) == 0x000748, "Member 'UPyWidget_Common_Acquire::QualityBgm' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Acquire;
 
 }
 

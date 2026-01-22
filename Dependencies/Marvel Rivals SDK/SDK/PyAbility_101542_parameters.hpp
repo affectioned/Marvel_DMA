@@ -21,9 +21,7 @@ struct PyAbility_101542_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101542_CanActivate) == 0x000001, "Wrong alignment on PyAbility_101542_CanActivate");
-static_assert(sizeof(PyAbility_101542_CanActivate) == 0x000001, "Wrong size on PyAbility_101542_CanActivate");
-static_assert(offsetof(PyAbility_101542_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_101542_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101542_CanActivate;
 
 // PythonFunction PyAbility_101542.PyAbility_101542.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_101542_K2_OnEndAbility final
 public:
 	bool                                          bCanceled;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101542_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101542_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101542_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101542_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101542_K2_OnEndAbility, bCanceled) == 0x000000, "Member 'PyAbility_101542_K2_OnEndAbility::bCanceled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101542_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101542.PyAbility_101542.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_101542_NativeOnMontageEvent final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101542_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_101542_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_101542_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_101542_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_101542_NativeOnMontageEvent, EventTag) == 0x000000, "Member 'PyAbility_101542_NativeOnMontageEvent::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101542_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_101542.PyAbility_101542.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_101542_NativeOnMontageCompleted final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101542_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_101542_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_101542_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_101542_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_101542_NativeOnMontageCompleted, EventTag) == 0x000000, "Member 'PyAbility_101542_NativeOnMontageCompleted::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101542_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_101542.PyUIController_101542.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +59,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101542_SetAbility) == 0x000008, "Wrong alignment on PyUIController_101542_SetAbility");
-static_assert(sizeof(PyUIController_101542_SetAbility) == 0x000010, "Wrong size on PyUIController_101542_SetAbility");
-static_assert(offsetof(PyUIController_101542_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_101542_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_101542_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_101542_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101542_SetAbility;
 
 }
 

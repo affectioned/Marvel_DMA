@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISpawner">();
+		STATIC_CLASS_IMPL("PyAISpawner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISpawner")
 	}
 	static class APyAISpawner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAISpawner>();
 	}
 };
-static_assert(alignof(APyAISpawner) == 0x000010, "Wrong alignment on APyAISpawner");
-static_assert(sizeof(APyAISpawner) == 0x0006E0, "Wrong size on APyAISpawner");
+DUMPER7_ASSERTS_APyAISpawner;
 
 }
 

@@ -23,15 +23,18 @@ class UBattleAreaManagerBP_C final : public UMarvelAIBattleAreaManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattleAreaManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("BattleAreaManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattleAreaManagerBP_C")
 	}
 	static class UBattleAreaManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattleAreaManagerBP_C>();
 	}
 };
-static_assert(alignof(UBattleAreaManagerBP_C) == 0x000008, "Wrong alignment on UBattleAreaManagerBP_C");
-static_assert(sizeof(UBattleAreaManagerBP_C) == 0x0000A8, "Wrong size on UBattleAreaManagerBP_C");
+DUMPER7_ASSERTS_UBattleAreaManagerBP_C;
 
 }
 

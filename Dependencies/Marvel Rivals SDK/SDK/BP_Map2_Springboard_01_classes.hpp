@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Map2_Springboard_01_C">();
+		BP_STATIC_CLASS_IMPL("BP_Map2_Springboard_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Map2_Springboard_01_C")
 	}
 	static class ABP_Map2_Springboard_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Map2_Springboard_01_C>();
 	}
 };
-static_assert(alignof(ABP_Map2_Springboard_01_C) == 0x000010, "Wrong alignment on ABP_Map2_Springboard_01_C");
-static_assert(sizeof(ABP_Map2_Springboard_01_C) == 0x000700, "Wrong size on ABP_Map2_Springboard_01_C");
-static_assert(offsetof(ABP_Map2_Springboard_01_C, FX_SpringboardGlow) == 0x0006E0, "Member 'ABP_Map2_Springboard_01_C::FX_SpringboardGlow' has a wrong offset!");
-static_assert(offsetof(ABP_Map2_Springboard_01_C, FX_Springboard) == 0x0006E8, "Member 'ABP_Map2_Springboard_01_C::FX_Springboard' has a wrong offset!");
-static_assert(offsetof(ABP_Map2_Springboard_01_C, Niagara) == 0x0006F0, "Member 'ABP_Map2_Springboard_01_C::Niagara' has a wrong offset!");
-static_assert(offsetof(ABP_Map2_Springboard_01_C, DefaultSceneRoot) == 0x0006F8, "Member 'ABP_Map2_Springboard_01_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Map2_Springboard_01_C;
 
 }
 

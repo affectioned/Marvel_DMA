@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyLoginWarnPanel.PyLoginWarnPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyLoginWarnPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLoginWarnPanel">();
+		STATIC_CLASS_IMPL("PyLoginWarnPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLoginWarnPanel")
 	}
 	static class UPyLoginWarnPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLoginWarnPanel>();
 	}
 };
-static_assert(alignof(UPyLoginWarnPanel) == 0x000008, "Wrong alignment on UPyLoginWarnPanel");
-static_assert(sizeof(UPyLoginWarnPanel) == 0x0005F8, "Wrong size on UPyLoginWarnPanel");
+DUMPER7_ASSERTS_UPyLoginWarnPanel;
 
 }
 

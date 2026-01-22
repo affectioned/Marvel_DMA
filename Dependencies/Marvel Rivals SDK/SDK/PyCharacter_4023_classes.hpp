@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyCharacter_4023.PyCharacter_4023
-// 0x0000 (0x2630 - 0x2630)
+// 0x0000 (0x2740 - 0x2740)
 class APyCharacter_4023 final : public AMarvelZombie
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacter_4023">();
+		STATIC_CLASS_IMPL("PyCharacter_4023")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacter_4023")
 	}
 	static class APyCharacter_4023* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCharacter_4023>();
 	}
 };
-static_assert(alignof(APyCharacter_4023) == 0x000010, "Wrong alignment on APyCharacter_4023");
-static_assert(sizeof(APyCharacter_4023) == 0x002630, "Wrong size on APyCharacter_4023");
+DUMPER7_ASSERTS_APyCharacter_4023;
 
 // PythonClass PyCharacter_4023.PyCue_Buff_40230101
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_40230101 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_40230101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_40230101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_40230101")
 	}
 	static class APyCue_Buff_40230101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_40230101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_40230101) == 0x000010, "Wrong alignment on APyCue_Buff_40230101");
-static_assert(sizeof(APyCue_Buff_40230101) == 0x001640, "Wrong size on APyCue_Buff_40230101");
+DUMPER7_ASSERTS_APyCue_Buff_40230101;
 
 }
 

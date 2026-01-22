@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            K2Node_Event_InExtraWidget;                        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP) == 0x000008, "Wrong alignment on Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP");
-static_assert(sizeof(Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP) == 0x000010, "Wrong size on Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP");
-static_assert(offsetof(Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP, EntryPoint) == 0x000000, "Member 'Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP, K2Node_Event_InExtraWidget) == 0x000008, "Member 'Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP::K2Node_Event_InExtraWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103022_BP_C_ExecuteUbergraph_Ability_103022_BP;
 
 // Function Ability_103022_BP.Ability_103022_BP_C.SetAbilityExtraWidget_1
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +32,7 @@ struct Ability_103022_BP_C_SetAbilityExtraWidget_1 final
 public:
 	class UUserWidget*                            InExtraWidget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103022_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong alignment on Ability_103022_BP_C_SetAbilityExtraWidget_1");
-static_assert(sizeof(Ability_103022_BP_C_SetAbilityExtraWidget_1) == 0x000008, "Wrong size on Ability_103022_BP_C_SetAbilityExtraWidget_1");
-static_assert(offsetof(Ability_103022_BP_C_SetAbilityExtraWidget_1, InExtraWidget) == 0x000000, "Member 'Ability_103022_BP_C_SetAbilityExtraWidget_1::InExtraWidget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103022_BP_C_SetAbilityExtraWidget_1;
 
 }
 

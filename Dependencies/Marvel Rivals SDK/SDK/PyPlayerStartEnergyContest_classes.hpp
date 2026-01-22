@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStartEnergyContest">();
+		STATIC_CLASS_IMPL("PyPlayerStartEnergyContest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStartEnergyContest")
 	}
 	static class APyPlayerStartEnergyContest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPlayerStartEnergyContest>();
 	}
 };
-static_assert(alignof(APyPlayerStartEnergyContest) == 0x000010, "Wrong alignment on APyPlayerStartEnergyContest");
-static_assert(sizeof(APyPlayerStartEnergyContest) == 0x000740, "Wrong size on APyPlayerStartEnergyContest");
-static_assert(offsetof(APyPlayerStartEnergyContest, AssociatedMine) == 0x000730, "Member 'APyPlayerStartEnergyContest::AssociatedMine' has a wrong offset!");
+DUMPER7_ASSERTS_APyPlayerStartEnergyContest;
 
 }
 

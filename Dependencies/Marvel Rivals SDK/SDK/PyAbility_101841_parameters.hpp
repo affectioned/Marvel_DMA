@@ -25,9 +25,7 @@ struct PyAbility_101841_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101841_CanActivate) == 0x000001, "Wrong alignment on PyAbility_101841_CanActivate");
-static_assert(sizeof(PyAbility_101841_CanActivate) == 0x000001, "Wrong size on PyAbility_101841_CanActivate");
-static_assert(offsetof(PyAbility_101841_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_101841_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101841_CanActivate;
 
 // PythonFunction PyAbility_101841.PyAbility_101841.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct PyAbility_101841_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101841_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101841_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101841_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101841_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101841_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101841_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101841_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101841.PyAbility_101841.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +43,7 @@ struct PyAbility_101841_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101841_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_101841_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_101841_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_101841_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_101841_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_101841_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101841_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_101841.PySummonedCue_10184101.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -60,11 +54,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedCue_10184101_WhileActive) == 0x000008, "Wrong alignment on PySummonedCue_10184101_WhileActive");
-static_assert(sizeof(PySummonedCue_10184101_WhileActive) == 0x0001E0, "Wrong size on PySummonedCue_10184101_WhileActive");
-static_assert(offsetof(PySummonedCue_10184101_WhileActive, MyTarget) == 0x000000, "Member 'PySummonedCue_10184101_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PySummonedCue_10184101_WhileActive, Parameters) == 0x000008, "Member 'PySummonedCue_10184101_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PySummonedCue_10184101_WhileActive, ReturnValue) == 0x0001D8, "Member 'PySummonedCue_10184101_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedCue_10184101_WhileActive;
 
 // PythonFunction PyAbility_101841.PySummonedCue_10184101.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -75,11 +65,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedCue_10184101_OnRemove) == 0x000008, "Wrong alignment on PySummonedCue_10184101_OnRemove");
-static_assert(sizeof(PySummonedCue_10184101_OnRemove) == 0x0001E0, "Wrong size on PySummonedCue_10184101_OnRemove");
-static_assert(offsetof(PySummonedCue_10184101_OnRemove, MyTarget) == 0x000000, "Member 'PySummonedCue_10184101_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PySummonedCue_10184101_OnRemove, Parameters) == 0x000008, "Member 'PySummonedCue_10184101_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PySummonedCue_10184101_OnRemove, ReturnValue) == 0x0001D8, "Member 'PySummonedCue_10184101_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedCue_10184101_OnRemove;
 
 // PythonFunction PyAbility_101841.PySummonedCue_10184101.OnAttributeChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -89,10 +75,7 @@ public:
 	class AActor*                                 SourceAcatar;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedCue_10184101_OnAttributeChanged) == 0x000008, "Wrong alignment on PySummonedCue_10184101_OnAttributeChanged");
-static_assert(sizeof(PySummonedCue_10184101_OnAttributeChanged) == 0x000020, "Wrong size on PySummonedCue_10184101_OnAttributeChanged");
-static_assert(offsetof(PySummonedCue_10184101_OnAttributeChanged, SourceAcatar) == 0x000000, "Member 'PySummonedCue_10184101_OnAttributeChanged::SourceAcatar' has a wrong offset!");
-static_assert(offsetof(PySummonedCue_10184101_OnAttributeChanged, ModifierParameterHandle) == 0x000008, "Member 'PySummonedCue_10184101_OnAttributeChanged::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedCue_10184101_OnAttributeChanged;
 
 // PythonFunction PyAbility_101841.PySummonedCue_10184101.SwtichBarrierTimeline
 // 0x0018 (0x0018 - 0x0000)
@@ -101,9 +84,7 @@ struct PySummonedCue_10184101_SwtichBarrierTimeline final
 public:
 	struct FVector                                OutValue;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedCue_10184101_SwtichBarrierTimeline) == 0x000008, "Wrong alignment on PySummonedCue_10184101_SwtichBarrierTimeline");
-static_assert(sizeof(PySummonedCue_10184101_SwtichBarrierTimeline) == 0x000018, "Wrong size on PySummonedCue_10184101_SwtichBarrierTimeline");
-static_assert(offsetof(PySummonedCue_10184101_SwtichBarrierTimeline, OutValue) == 0x000000, "Member 'PySummonedCue_10184101_SwtichBarrierTimeline::OutValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedCue_10184101_SwtichBarrierTimeline;
 
 }
 

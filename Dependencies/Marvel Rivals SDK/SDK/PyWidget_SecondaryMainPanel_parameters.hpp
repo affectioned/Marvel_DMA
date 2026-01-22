@@ -21,9 +21,7 @@ struct PyWidget_SecondaryMainPanel_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryMainPanel_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SecondaryMainPanel_PreConstruct");
-static_assert(sizeof(PyWidget_SecondaryMainPanel_PreConstruct) == 0x000001, "Wrong size on PyWidget_SecondaryMainPanel_PreConstruct");
-static_assert(offsetof(PyWidget_SecondaryMainPanel_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SecondaryMainPanel_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryMainPanel_PreConstruct;
 
 // PythonFunction PyWidget_SecondaryMainPanel.PyWidget_SecondaryMainPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SecondaryMainPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryMainPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryMainPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_SecondaryMainPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_SecondaryMainPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_SecondaryMainPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryMainPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryMainPanel_MarvelSetVisible;
 
 }
 

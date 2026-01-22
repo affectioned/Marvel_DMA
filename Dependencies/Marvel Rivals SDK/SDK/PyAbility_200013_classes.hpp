@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200013.PyUIController_200013
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_200013 final : public UUIC_Ability
 {
 public:
@@ -29,63 +29,60 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200013">();
+		STATIC_CLASS_IMPL("PyUIController_200013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200013")
 	}
 	static class UPyUIController_200013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200013>();
 	}
 };
-static_assert(alignof(UPyUIController_200013) == 0x000008, "Wrong alignment on UPyUIController_200013");
-static_assert(sizeof(UPyUIController_200013) == 0x000F10, "Wrong size on UPyUIController_200013");
+DUMPER7_ASSERTS_UPyUIController_200013;
 
 // PythonClass PyAbility_200013.PyConfig_200013
-// 0x0BE8 (0x0C80 - 0x0098)
+// 0x0F08 (0x0FA0 - 0x0098)
 class UPyConfig_200013 final : public UMarvelAbilityConfig
 {
 public:
 	float                                         GravityScale;                                      // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SkillChargeRate;                                   // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         DashBaseSpeed;                                     // 0x0C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComboDashSpeedAddition;                            // 0x0C6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDashSpeed;                                      // 0x0C70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RocketShoesSpeed_Vertical;                         // 0x0C74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RocketShoesSpeed_Forward;                          // 0x0C78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComboResetTime;                                    // 0x0C7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         DashBaseSpeed;                                     // 0x0F88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComboDashSpeedAddition;                            // 0x0F8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDashSpeed;                                      // 0x0F90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RocketShoesSpeed_Vertical;                         // 0x0F94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RocketShoesSpeed_Forward;                          // 0x0F98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComboResetTime;                                    // 0x0F9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_200013">();
+		STATIC_CLASS_IMPL("PyConfig_200013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_200013")
 	}
 	static class UPyConfig_200013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_200013>();
 	}
 };
-static_assert(alignof(UPyConfig_200013) == 0x000008, "Wrong alignment on UPyConfig_200013");
-static_assert(sizeof(UPyConfig_200013) == 0x000C80, "Wrong size on UPyConfig_200013");
-static_assert(offsetof(UPyConfig_200013, GravityScale) == 0x000098, "Member 'UPyConfig_200013::GravityScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, SkillChargeRate) == 0x00009C, "Member 'UPyConfig_200013::SkillChargeRate' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, DashInfo) == 0x0000A0, "Member 'UPyConfig_200013::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, DashBaseSpeed) == 0x000C68, "Member 'UPyConfig_200013::DashBaseSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, ComboDashSpeedAddition) == 0x000C6C, "Member 'UPyConfig_200013::ComboDashSpeedAddition' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, MaxDashSpeed) == 0x000C70, "Member 'UPyConfig_200013::MaxDashSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, RocketShoesSpeed_Vertical) == 0x000C74, "Member 'UPyConfig_200013::RocketShoesSpeed_Vertical' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, RocketShoesSpeed_Forward) == 0x000C78, "Member 'UPyConfig_200013::RocketShoesSpeed_Forward' has a wrong offset!");
-static_assert(offsetof(UPyConfig_200013, ComboResetTime) == 0x000C7C, "Member 'UPyConfig_200013::ComboResetTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_200013;
 
 // PythonClass PyAbility_200013.PyAbility_200013
-// 0x0040 (0x2A30 - 0x29F0)
+// 0x0040 (0x2A80 - 0x2A40)
 class UPyAbility_200013 : public UMarvelGameplayAbility
 {
 public:
-	bool                                          CanDoubleJump;                                     // 0x29F0(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F1[0x7];                                     // 0x29F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ComboInfo;                                         // 0x29F8(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool CanDoubleJump)> OnCanDoubleJumpChanged;                       // 0x2A10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FVector& ComboInfo)> OnComboInfoChanged;              // 0x2A20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          CanDoubleJump;                                     // 0x2A40(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A41[0x7];                                     // 0x2A41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ComboInfo;                                         // 0x2A48(0x0018)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool CanDoubleJump)> OnCanDoubleJumpChanged;                       // 0x2A60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FVector& ComboInfo)> OnComboInfoChanged;              // 0x2A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -102,19 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200013">();
+		STATIC_CLASS_IMPL("PyAbility_200013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200013")
 	}
 	static class UPyAbility_200013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200013>();
 	}
 };
-static_assert(alignof(UPyAbility_200013) == 0x000008, "Wrong alignment on UPyAbility_200013");
-static_assert(sizeof(UPyAbility_200013) == 0x002A30, "Wrong size on UPyAbility_200013");
-static_assert(offsetof(UPyAbility_200013, CanDoubleJump) == 0x0029F0, "Member 'UPyAbility_200013::CanDoubleJump' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200013, ComboInfo) == 0x0029F8, "Member 'UPyAbility_200013::ComboInfo' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200013, OnCanDoubleJumpChanged) == 0x002A10, "Member 'UPyAbility_200013::OnCanDoubleJumpChanged' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200013, OnComboInfoChanged) == 0x002A20, "Member 'UPyAbility_200013::OnComboInfoChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200013;
 
 }
 

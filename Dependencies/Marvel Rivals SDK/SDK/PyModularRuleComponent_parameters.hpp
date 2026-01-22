@@ -26,11 +26,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RemainTime;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_OnCampStart) == 0x000008, "Wrong alignment on PyModularRuleComponent_OnCampStart");
-static_assert(sizeof(PyModularRuleComponent_OnCampStart) == 0x000018, "Wrong size on PyModularRuleComponent_OnCampStart");
-static_assert(offsetof(PyModularRuleComponent_OnCampStart, Name_0) == 0x000000, "Member 'PyModularRuleComponent_OnCampStart::Name_0' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnCampStart, AttackSide) == 0x000010, "Member 'PyModularRuleComponent_OnCampStart::AttackSide' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnCampStart, RemainTime) == 0x000014, "Member 'PyModularRuleComponent_OnCampStart::RemainTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_OnCampStart;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetCurrentCamp
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +35,7 @@ struct PyModularRuleComponent_GetCurrentCamp final
 public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_GetCurrentCamp) == 0x000008, "Wrong alignment on PyModularRuleComponent_GetCurrentCamp");
-static_assert(sizeof(PyModularRuleComponent_GetCurrentCamp) == 0x000008, "Wrong size on PyModularRuleComponent_GetCurrentCamp");
-static_assert(offsetof(PyModularRuleComponent_GetCurrentCamp, ReturnValue) == 0x000000, "Member 'PyModularRuleComponent_GetCurrentCamp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetCurrentCamp;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetCampByName
 // 0x0018 (0x0018 - 0x0000)
@@ -51,10 +45,7 @@ public:
 	class FString                                 CampName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_GetCampByName) == 0x000008, "Wrong alignment on PyModularRuleComponent_GetCampByName");
-static_assert(sizeof(PyModularRuleComponent_GetCampByName) == 0x000018, "Wrong size on PyModularRuleComponent_GetCampByName");
-static_assert(offsetof(PyModularRuleComponent_GetCampByName, CampName) == 0x000000, "Member 'PyModularRuleComponent_GetCampByName::CampName' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_GetCampByName, ReturnValue) == 0x000010, "Member 'PyModularRuleComponent_GetCampByName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetCampByName;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetDefaultHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -63,9 +54,7 @@ struct PyModularRuleComponent_SetDefaultHeroID final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SetDefaultHeroID) == 0x000004, "Wrong alignment on PyModularRuleComponent_SetDefaultHeroID");
-static_assert(sizeof(PyModularRuleComponent_SetDefaultHeroID) == 0x000004, "Wrong size on PyModularRuleComponent_SetDefaultHeroID");
-static_assert(offsetof(PyModularRuleComponent_SetDefaultHeroID, HeroID) == 0x000000, "Member 'PyModularRuleComponent_SetDefaultHeroID::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetDefaultHeroID;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetBattleSideDefaultHeroID
 // 0x0050 (0x0050 - 0x0000)
@@ -74,9 +63,7 @@ struct PyModularRuleComponent_SetBattleSideDefaultHeroID final
 public:
 	TMap<EBattleSide, int32>                      DefaultHeroMap;                                    // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_SetBattleSideDefaultHeroID) == 0x000008, "Wrong alignment on PyModularRuleComponent_SetBattleSideDefaultHeroID");
-static_assert(sizeof(PyModularRuleComponent_SetBattleSideDefaultHeroID) == 0x000050, "Wrong size on PyModularRuleComponent_SetBattleSideDefaultHeroID");
-static_assert(offsetof(PyModularRuleComponent_SetBattleSideDefaultHeroID, DefaultHeroMap) == 0x000000, "Member 'PyModularRuleComponent_SetBattleSideDefaultHeroID::DefaultHeroMap' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetBattleSideDefaultHeroID;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetAllPlayerHeroByHeroId
 // 0x0004 (0x0004 - 0x0000)
@@ -85,9 +72,7 @@ struct PyModularRuleComponent_SetAllPlayerHeroByHeroId final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SetAllPlayerHeroByHeroId) == 0x000004, "Wrong alignment on PyModularRuleComponent_SetAllPlayerHeroByHeroId");
-static_assert(sizeof(PyModularRuleComponent_SetAllPlayerHeroByHeroId) == 0x000004, "Wrong size on PyModularRuleComponent_SetAllPlayerHeroByHeroId");
-static_assert(offsetof(PyModularRuleComponent_SetAllPlayerHeroByHeroId, HeroID) == 0x000000, "Member 'PyModularRuleComponent_SetAllPlayerHeroByHeroId::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetAllPlayerHeroByHeroId;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetSidePlayerHeroByHeroId
 // 0x0008 (0x0008 - 0x0000)
@@ -97,10 +82,7 @@ public:
 	int32                                         AttackSideHeroID;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         DefendSideHeroID;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SetSidePlayerHeroByHeroId) == 0x000004, "Wrong alignment on PyModularRuleComponent_SetSidePlayerHeroByHeroId");
-static_assert(sizeof(PyModularRuleComponent_SetSidePlayerHeroByHeroId) == 0x000008, "Wrong size on PyModularRuleComponent_SetSidePlayerHeroByHeroId");
-static_assert(offsetof(PyModularRuleComponent_SetSidePlayerHeroByHeroId, AttackSideHeroID) == 0x000000, "Member 'PyModularRuleComponent_SetSidePlayerHeroByHeroId::AttackSideHeroID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_SetSidePlayerHeroByHeroId, DefendSideHeroID) == 0x000004, "Member 'PyModularRuleComponent_SetSidePlayerHeroByHeroId::DefendSideHeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetSidePlayerHeroByHeroId;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetPlayerHeroByHeroId
 // 0x0008 (0x0008 - 0x0000)
@@ -110,10 +92,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         HeroID;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SetPlayerHeroByHeroId) == 0x000004, "Wrong alignment on PyModularRuleComponent_SetPlayerHeroByHeroId");
-static_assert(sizeof(PyModularRuleComponent_SetPlayerHeroByHeroId) == 0x000008, "Wrong size on PyModularRuleComponent_SetPlayerHeroByHeroId");
-static_assert(offsetof(PyModularRuleComponent_SetPlayerHeroByHeroId, UID) == 0x000000, "Member 'PyModularRuleComponent_SetPlayerHeroByHeroId::UID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_SetPlayerHeroByHeroId, HeroID) == 0x000004, "Member 'PyModularRuleComponent_SetPlayerHeroByHeroId::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetPlayerHeroByHeroId;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetPayloadProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -122,9 +101,7 @@ struct PyModularRuleComponent_GetPayloadProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_GetPayloadProgress) == 0x000004, "Wrong alignment on PyModularRuleComponent_GetPayloadProgress");
-static_assert(sizeof(PyModularRuleComponent_GetPayloadProgress) == 0x000004, "Wrong size on PyModularRuleComponent_GetPayloadProgress");
-static_assert(offsetof(PyModularRuleComponent_GetPayloadProgress, ReturnValue) == 0x000000, "Member 'PyModularRuleComponent_GetPayloadProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetPayloadProgress;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SideGetPoints
 // 0x0008 (0x0008 - 0x0000)
@@ -135,10 +112,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Score;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SideGetPoints) == 0x000004, "Wrong alignment on PyModularRuleComponent_SideGetPoints");
-static_assert(sizeof(PyModularRuleComponent_SideGetPoints) == 0x000008, "Wrong size on PyModularRuleComponent_SideGetPoints");
-static_assert(offsetof(PyModularRuleComponent_SideGetPoints, BattleSide) == 0x000000, "Member 'PyModularRuleComponent_SideGetPoints::BattleSide' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_SideGetPoints, Score) == 0x000004, "Member 'PyModularRuleComponent_SideGetPoints::Score' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SideGetPoints;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.CheckSideScore
 // 0x0008 (0x0008 - 0x0000)
@@ -148,10 +122,7 @@ public:
 	float                                         Score;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_CheckSideScore) == 0x000004, "Wrong alignment on PyModularRuleComponent_CheckSideScore");
-static_assert(sizeof(PyModularRuleComponent_CheckSideScore) == 0x000008, "Wrong size on PyModularRuleComponent_CheckSideScore");
-static_assert(offsetof(PyModularRuleComponent_CheckSideScore, Score) == 0x000000, "Member 'PyModularRuleComponent_CheckSideScore::Score' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_CheckSideScore, ReturnValue) == 0x000004, "Member 'PyModularRuleComponent_CheckSideScore::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_CheckSideScore;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetScoreSide
 // 0x0008 (0x0008 - 0x0000)
@@ -161,10 +132,7 @@ public:
 	float                                         Score;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBattleSide                                   ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_GetScoreSide) == 0x000004, "Wrong alignment on PyModularRuleComponent_GetScoreSide");
-static_assert(sizeof(PyModularRuleComponent_GetScoreSide) == 0x000008, "Wrong size on PyModularRuleComponent_GetScoreSide");
-static_assert(offsetof(PyModularRuleComponent_GetScoreSide, Score) == 0x000000, "Member 'PyModularRuleComponent_GetScoreSide::Score' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_GetScoreSide, ReturnValue) == 0x000004, "Member 'PyModularRuleComponent_GetScoreSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetScoreSide;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.EscortTouchProgressCheck
 // 0x0008 (0x0008 - 0x0000)
@@ -174,10 +142,7 @@ public:
 	float                                         Progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBattleSide                                   AttackSide;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_EscortTouchProgressCheck) == 0x000004, "Wrong alignment on PyModularRuleComponent_EscortTouchProgressCheck");
-static_assert(sizeof(PyModularRuleComponent_EscortTouchProgressCheck) == 0x000008, "Wrong size on PyModularRuleComponent_EscortTouchProgressCheck");
-static_assert(offsetof(PyModularRuleComponent_EscortTouchProgressCheck, Progress) == 0x000000, "Member 'PyModularRuleComponent_EscortTouchProgressCheck::Progress' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_EscortTouchProgressCheck, AttackSide) == 0x000004, "Member 'PyModularRuleComponent_EscortTouchProgressCheck::AttackSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_EscortTouchProgressCheck;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.OnSpawnCharacterBP
 // 0x0008 (0x0008 - 0x0000)
@@ -186,9 +151,7 @@ struct PyModularRuleComponent_OnSpawnCharacterBP final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_OnSpawnCharacterBP) == 0x000008, "Wrong alignment on PyModularRuleComponent_OnSpawnCharacterBP");
-static_assert(sizeof(PyModularRuleComponent_OnSpawnCharacterBP) == 0x000008, "Wrong size on PyModularRuleComponent_OnSpawnCharacterBP");
-static_assert(offsetof(PyModularRuleComponent_OnSpawnCharacterBP, Character) == 0x000000, "Member 'PyModularRuleComponent_OnSpawnCharacterBP::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_OnSpawnCharacterBP;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.AddBuffToPlayer
 // 0x0018 (0x0018 - 0x0000)
@@ -199,10 +162,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ActorList;                                         // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_AddBuffToPlayer) == 0x000008, "Wrong alignment on PyModularRuleComponent_AddBuffToPlayer");
-static_assert(sizeof(PyModularRuleComponent_AddBuffToPlayer) == 0x000018, "Wrong size on PyModularRuleComponent_AddBuffToPlayer");
-static_assert(offsetof(PyModularRuleComponent_AddBuffToPlayer, BuffID) == 0x000000, "Member 'PyModularRuleComponent_AddBuffToPlayer::BuffID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_AddBuffToPlayer, ActorList) == 0x000008, "Member 'PyModularRuleComponent_AddBuffToPlayer::ActorList' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_AddBuffToPlayer;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.RemoveBuffToPlayer
 // 0x0018 (0x0018 - 0x0000)
@@ -213,10 +173,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 PlayerUIDList;                                     // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_RemoveBuffToPlayer) == 0x000008, "Wrong alignment on PyModularRuleComponent_RemoveBuffToPlayer");
-static_assert(sizeof(PyModularRuleComponent_RemoveBuffToPlayer) == 0x000018, "Wrong size on PyModularRuleComponent_RemoveBuffToPlayer");
-static_assert(offsetof(PyModularRuleComponent_RemoveBuffToPlayer, BuffID) == 0x000000, "Member 'PyModularRuleComponent_RemoveBuffToPlayer::BuffID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_RemoveBuffToPlayer, PlayerUIDList) == 0x000008, "Member 'PyModularRuleComponent_RemoveBuffToPlayer::PlayerUIDList' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_RemoveBuffToPlayer;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.RespawnPlayer
 // 0x0010 (0x0010 - 0x0000)
@@ -225,9 +182,7 @@ struct PyModularRuleComponent_RespawnPlayer final
 public:
 	TArray<int32>                                 ActorList;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_RespawnPlayer) == 0x000008, "Wrong alignment on PyModularRuleComponent_RespawnPlayer");
-static_assert(sizeof(PyModularRuleComponent_RespawnPlayer) == 0x000010, "Wrong size on PyModularRuleComponent_RespawnPlayer");
-static_assert(offsetof(PyModularRuleComponent_RespawnPlayer, ActorList) == 0x000000, "Member 'PyModularRuleComponent_RespawnPlayer::ActorList' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_RespawnPlayer;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetAllPlayer
 // 0x0010 (0x0010 - 0x0000)
@@ -236,9 +191,7 @@ struct PyModularRuleComponent_GetAllPlayer final
 public:
 	TArray<int32>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyModularRuleComponent_GetAllPlayer) == 0x000008, "Wrong alignment on PyModularRuleComponent_GetAllPlayer");
-static_assert(sizeof(PyModularRuleComponent_GetAllPlayer) == 0x000010, "Wrong size on PyModularRuleComponent_GetAllPlayer");
-static_assert(offsetof(PyModularRuleComponent_GetAllPlayer, ReturnValue) == 0x000000, "Member 'PyModularRuleComponent_GetAllPlayer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetAllPlayer;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.GetPlayerDeathCount
 // 0x0008 (0x0008 - 0x0000)
@@ -248,10 +201,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_GetPlayerDeathCount) == 0x000004, "Wrong alignment on PyModularRuleComponent_GetPlayerDeathCount");
-static_assert(sizeof(PyModularRuleComponent_GetPlayerDeathCount) == 0x000008, "Wrong size on PyModularRuleComponent_GetPlayerDeathCount");
-static_assert(offsetof(PyModularRuleComponent_GetPlayerDeathCount, UID) == 0x000000, "Member 'PyModularRuleComponent_GetPlayerDeathCount::UID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_GetPlayerDeathCount, ReturnValue) == 0x000004, "Member 'PyModularRuleComponent_GetPlayerDeathCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_GetPlayerDeathCount;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.OnPlayerAbilityHit
 // 0x0030 (0x0030 - 0x0000)
@@ -262,11 +212,7 @@ public:
 	TArray<int32>                                 AbilityList;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	class FString                                 EventName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_OnPlayerAbilityHit) == 0x000008, "Wrong alignment on PyModularRuleComponent_OnPlayerAbilityHit");
-static_assert(sizeof(PyModularRuleComponent_OnPlayerAbilityHit) == 0x000030, "Wrong size on PyModularRuleComponent_OnPlayerAbilityHit");
-static_assert(offsetof(PyModularRuleComponent_OnPlayerAbilityHit, PlayerList) == 0x000000, "Member 'PyModularRuleComponent_OnPlayerAbilityHit::PlayerList' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnPlayerAbilityHit, AbilityList) == 0x000010, "Member 'PyModularRuleComponent_OnPlayerAbilityHit::AbilityList' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnPlayerAbilityHit, EventName) == 0x000020, "Member 'PyModularRuleComponent_OnPlayerAbilityHit::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_OnPlayerAbilityHit;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.OnActorWeaponAmmoUse
 // 0x0018 (0x0018 - 0x0000)
@@ -280,14 +226,7 @@ public:
 	bool                                          bIsCritHit;                                        // 0x0015(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0016(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyModularRuleComponent_OnActorWeaponAmmoUse) == 0x000008, "Wrong alignment on PyModularRuleComponent_OnActorWeaponAmmoUse");
-static_assert(sizeof(PyModularRuleComponent_OnActorWeaponAmmoUse) == 0x000018, "Wrong size on PyModularRuleComponent_OnActorWeaponAmmoUse");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, Source) == 0x000000, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::Source' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, Target) == 0x000008, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::Target' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, AbilityID) == 0x000010, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, bHit) == 0x000014, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::bHit' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, bIsCritHit) == 0x000015, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::bIsCritHit' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_OnActorWeaponAmmoUse, ExtraData) == 0x000016, "Member 'PyModularRuleComponent_OnActorWeaponAmmoUse::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_OnActorWeaponAmmoUse;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.AddCharHealthAttr
 // 0x000C (0x000C - 0x0000)
@@ -298,11 +237,7 @@ public:
 	float                                         PercentValue;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FixedValue;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_AddCharHealthAttr) == 0x000004, "Wrong alignment on PyModularRuleComponent_AddCharHealthAttr");
-static_assert(sizeof(PyModularRuleComponent_AddCharHealthAttr) == 0x00000C, "Wrong size on PyModularRuleComponent_AddCharHealthAttr");
-static_assert(offsetof(PyModularRuleComponent_AddCharHealthAttr, PlayerUID) == 0x000000, "Member 'PyModularRuleComponent_AddCharHealthAttr::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_AddCharHealthAttr, PercentValue) == 0x000004, "Member 'PyModularRuleComponent_AddCharHealthAttr::PercentValue' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_AddCharHealthAttr, FixedValue) == 0x000008, "Member 'PyModularRuleComponent_AddCharHealthAttr::FixedValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_AddCharHealthAttr;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ReduceCharHealthAttr
 // 0x000C (0x000C - 0x0000)
@@ -313,11 +248,7 @@ public:
 	float                                         PercentValue;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FixedValue;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ReduceCharHealthAttr) == 0x000004, "Wrong alignment on PyModularRuleComponent_ReduceCharHealthAttr");
-static_assert(sizeof(PyModularRuleComponent_ReduceCharHealthAttr) == 0x00000C, "Wrong size on PyModularRuleComponent_ReduceCharHealthAttr");
-static_assert(offsetof(PyModularRuleComponent_ReduceCharHealthAttr, PlayerUID) == 0x000000, "Member 'PyModularRuleComponent_ReduceCharHealthAttr::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ReduceCharHealthAttr, PercentValue) == 0x000004, "Member 'PyModularRuleComponent_ReduceCharHealthAttr::PercentValue' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ReduceCharHealthAttr, FixedValue) == 0x000008, "Member 'PyModularRuleComponent_ReduceCharHealthAttr::FixedValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ReduceCharHealthAttr;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetBirthBaseState
 // 0x0050 (0x0050 - 0x0000)
@@ -326,9 +257,7 @@ struct PyModularRuleComponent_SetBirthBaseState final
 public:
 	TMap<class FString, bool>                     BirthBaseState;                                    // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_SetBirthBaseState) == 0x000008, "Wrong alignment on PyModularRuleComponent_SetBirthBaseState");
-static_assert(sizeof(PyModularRuleComponent_SetBirthBaseState) == 0x000050, "Wrong size on PyModularRuleComponent_SetBirthBaseState");
-static_assert(offsetof(PyModularRuleComponent_SetBirthBaseState, BirthBaseState) == 0x000000, "Member 'PyModularRuleComponent_SetBirthBaseState::BirthBaseState' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetBirthBaseState;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetBirthBaseOpen
 // 0x0050 (0x0050 - 0x0000)
@@ -337,9 +266,7 @@ struct PyModularRuleComponent_SetBirthBaseOpen final
 public:
 	TMap<class FString, bool>                     BirthBaseState;                                    // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyModularRuleComponent_SetBirthBaseOpen) == 0x000008, "Wrong alignment on PyModularRuleComponent_SetBirthBaseOpen");
-static_assert(sizeof(PyModularRuleComponent_SetBirthBaseOpen) == 0x000050, "Wrong size on PyModularRuleComponent_SetBirthBaseOpen");
-static_assert(offsetof(PyModularRuleComponent_SetBirthBaseOpen, BirthBaseState) == 0x000000, "Member 'PyModularRuleComponent_SetBirthBaseOpen::BirthBaseState' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetBirthBaseOpen;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.EndWithResult
 // 0x0001 (0x0001 - 0x0000)
@@ -348,9 +275,7 @@ struct PyModularRuleComponent_EndWithResult final
 public:
 	EBattleSide                                   WinnerSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_EndWithResult) == 0x000001, "Wrong alignment on PyModularRuleComponent_EndWithResult");
-static_assert(sizeof(PyModularRuleComponent_EndWithResult) == 0x000001, "Wrong size on PyModularRuleComponent_EndWithResult");
-static_assert(offsetof(PyModularRuleComponent_EndWithResult, WinnerSide) == 0x000000, "Member 'PyModularRuleComponent_EndWithResult::WinnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_EndWithResult;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.BindPlayerDeathEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -361,10 +286,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_BindPlayerDeathEvent) == 0x000008, "Wrong alignment on PyModularRuleComponent_BindPlayerDeathEvent");
-static_assert(sizeof(PyModularRuleComponent_BindPlayerDeathEvent) == 0x000018, "Wrong size on PyModularRuleComponent_BindPlayerDeathEvent");
-static_assert(offsetof(PyModularRuleComponent_BindPlayerDeathEvent, PlayerUID) == 0x000000, "Member 'PyModularRuleComponent_BindPlayerDeathEvent::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_BindPlayerDeathEvent, EventName) == 0x000008, "Member 'PyModularRuleComponent_BindPlayerDeathEvent::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_BindPlayerDeathEvent;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.OpenSelectHeroPanel
 // 0x0004 (0x0004 - 0x0000)
@@ -373,9 +295,7 @@ struct PyModularRuleComponent_OpenSelectHeroPanel final
 public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_OpenSelectHeroPanel) == 0x000004, "Wrong alignment on PyModularRuleComponent_OpenSelectHeroPanel");
-static_assert(sizeof(PyModularRuleComponent_OpenSelectHeroPanel) == 0x000004, "Wrong size on PyModularRuleComponent_OpenSelectHeroPanel");
-static_assert(offsetof(PyModularRuleComponent_OpenSelectHeroPanel, UID) == 0x000000, "Member 'PyModularRuleComponent_OpenSelectHeroPanel::UID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_OpenSelectHeroPanel;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.SetModularHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -384,9 +304,7 @@ struct PyModularRuleComponent_SetModularHeroID final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_SetModularHeroID) == 0x000004, "Wrong alignment on PyModularRuleComponent_SetModularHeroID");
-static_assert(sizeof(PyModularRuleComponent_SetModularHeroID) == 0x000004, "Wrong size on PyModularRuleComponent_SetModularHeroID");
-static_assert(offsetof(PyModularRuleComponent_SetModularHeroID, HeroID) == 0x000000, "Member 'PyModularRuleComponent_SetModularHeroID::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_SetModularHeroID;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ClearPlayerAbilityCD
 // 0x0008 (0x0008 - 0x0000)
@@ -395,9 +313,7 @@ struct PyModularRuleComponent_ClearPlayerAbilityCD final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ClearPlayerAbilityCD) == 0x000008, "Wrong alignment on PyModularRuleComponent_ClearPlayerAbilityCD");
-static_assert(sizeof(PyModularRuleComponent_ClearPlayerAbilityCD) == 0x000008, "Wrong size on PyModularRuleComponent_ClearPlayerAbilityCD");
-static_assert(offsetof(PyModularRuleComponent_ClearPlayerAbilityCD, Character) == 0x000000, "Member 'PyModularRuleComponent_ClearPlayerAbilityCD::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ClearPlayerAbilityCD;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ChargePlayerAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -406,9 +322,7 @@ struct PyModularRuleComponent_ChargePlayerAbility final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ChargePlayerAbility) == 0x000008, "Wrong alignment on PyModularRuleComponent_ChargePlayerAbility");
-static_assert(sizeof(PyModularRuleComponent_ChargePlayerAbility) == 0x000008, "Wrong size on PyModularRuleComponent_ChargePlayerAbility");
-static_assert(offsetof(PyModularRuleComponent_ChargePlayerAbility, Character) == 0x000000, "Member 'PyModularRuleComponent_ChargePlayerAbility::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ChargePlayerAbility;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.MonitorPlayerDamage
 // 0x0008 (0x0008 - 0x0000)
@@ -417,9 +331,7 @@ struct PyModularRuleComponent_MonitorPlayerDamage final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_MonitorPlayerDamage) == 0x000008, "Wrong alignment on PyModularRuleComponent_MonitorPlayerDamage");
-static_assert(sizeof(PyModularRuleComponent_MonitorPlayerDamage) == 0x000008, "Wrong size on PyModularRuleComponent_MonitorPlayerDamage");
-static_assert(offsetof(PyModularRuleComponent_MonitorPlayerDamage, Character) == 0x000000, "Member 'PyModularRuleComponent_MonitorPlayerDamage::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_MonitorPlayerDamage;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ApplyDamageTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -431,12 +343,7 @@ public:
 	float                                         Damage;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AbilityID;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ApplyDamageTrigger) == 0x000008, "Wrong alignment on PyModularRuleComponent_ApplyDamageTrigger");
-static_assert(sizeof(PyModularRuleComponent_ApplyDamageTrigger) == 0x000018, "Wrong size on PyModularRuleComponent_ApplyDamageTrigger");
-static_assert(offsetof(PyModularRuleComponent_ApplyDamageTrigger, source) == 0x000000, "Member 'PyModularRuleComponent_ApplyDamageTrigger::source' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyDamageTrigger, target) == 0x000008, "Member 'PyModularRuleComponent_ApplyDamageTrigger::target' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyDamageTrigger, Damage) == 0x000010, "Member 'PyModularRuleComponent_ApplyDamageTrigger::Damage' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyDamageTrigger, AbilityID) == 0x000014, "Member 'PyModularRuleComponent_ApplyDamageTrigger::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ApplyDamageTrigger;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.MonitorPlayerTreat
 // 0x0008 (0x0008 - 0x0000)
@@ -445,9 +352,7 @@ struct PyModularRuleComponent_MonitorPlayerTreat final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_MonitorPlayerTreat) == 0x000008, "Wrong alignment on PyModularRuleComponent_MonitorPlayerTreat");
-static_assert(sizeof(PyModularRuleComponent_MonitorPlayerTreat) == 0x000008, "Wrong size on PyModularRuleComponent_MonitorPlayerTreat");
-static_assert(offsetof(PyModularRuleComponent_MonitorPlayerTreat, Character) == 0x000000, "Member 'PyModularRuleComponent_MonitorPlayerTreat::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_MonitorPlayerTreat;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ApplyTreatTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -459,12 +364,7 @@ public:
 	float                                         Treat;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AbilityID;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ApplyTreatTrigger) == 0x000008, "Wrong alignment on PyModularRuleComponent_ApplyTreatTrigger");
-static_assert(sizeof(PyModularRuleComponent_ApplyTreatTrigger) == 0x000018, "Wrong size on PyModularRuleComponent_ApplyTreatTrigger");
-static_assert(offsetof(PyModularRuleComponent_ApplyTreatTrigger, source) == 0x000000, "Member 'PyModularRuleComponent_ApplyTreatTrigger::source' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyTreatTrigger, target) == 0x000008, "Member 'PyModularRuleComponent_ApplyTreatTrigger::target' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyTreatTrigger, Treat) == 0x000010, "Member 'PyModularRuleComponent_ApplyTreatTrigger::Treat' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyTreatTrigger, AbilityID) == 0x000014, "Member 'PyModularRuleComponent_ApplyTreatTrigger::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ApplyTreatTrigger;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.MonitorPlayerBuff
 // 0x0008 (0x0008 - 0x0000)
@@ -473,9 +373,7 @@ struct PyModularRuleComponent_MonitorPlayerBuff final
 public:
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_MonitorPlayerBuff) == 0x000008, "Wrong alignment on PyModularRuleComponent_MonitorPlayerBuff");
-static_assert(sizeof(PyModularRuleComponent_MonitorPlayerBuff) == 0x000008, "Wrong size on PyModularRuleComponent_MonitorPlayerBuff");
-static_assert(offsetof(PyModularRuleComponent_MonitorPlayerBuff, Character) == 0x000000, "Member 'PyModularRuleComponent_MonitorPlayerBuff::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_MonitorPlayerBuff;
 
 // PythonFunction PyModularRuleComponent.PyModularRuleComponent.ApplyBuffTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -486,11 +384,7 @@ public:
 	class AActor*                                 target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         BuffId;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyModularRuleComponent_ApplyBuffTrigger) == 0x000008, "Wrong alignment on PyModularRuleComponent_ApplyBuffTrigger");
-static_assert(sizeof(PyModularRuleComponent_ApplyBuffTrigger) == 0x000018, "Wrong size on PyModularRuleComponent_ApplyBuffTrigger");
-static_assert(offsetof(PyModularRuleComponent_ApplyBuffTrigger, source) == 0x000000, "Member 'PyModularRuleComponent_ApplyBuffTrigger::source' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyBuffTrigger, target) == 0x000008, "Member 'PyModularRuleComponent_ApplyBuffTrigger::target' has a wrong offset!");
-static_assert(offsetof(PyModularRuleComponent_ApplyBuffTrigger, BuffId) == 0x000010, "Member 'PyModularRuleComponent_ApplyBuffTrigger::BuffId' has a wrong offset!");
+DUMPER7_ASSERTS_PyModularRuleComponent_ApplyBuffTrigger;
 
 }
 

@@ -20,15 +20,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_InvitePopup.PyWidget_InvitePopupBase
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_InvitePopupBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AKEvent_ClickYes;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_ClickNo;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           InviteColor;                                       // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ApplyColor;                                        // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AKEvent_ClickYes;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_ClickNo;                                   // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           InviteColor;                                       // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ApplyColor;                                        // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,109 +39,102 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopupBase">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopupBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopupBase")
 	}
 	static class UPyWidget_InvitePopupBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopupBase>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopupBase) == 0x000008, "Wrong alignment on UPyWidget_InvitePopupBase");
-static_assert(sizeof(UPyWidget_InvitePopupBase) == 0x0005F0, "Wrong size on UPyWidget_InvitePopupBase");
-static_assert(offsetof(UPyWidget_InvitePopupBase, AKEvent_ClickYes) == 0x0005C0, "Member 'UPyWidget_InvitePopupBase::AKEvent_ClickYes' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopupBase, AKEvent_ClickNo) == 0x0005C8, "Member 'UPyWidget_InvitePopupBase::AKEvent_ClickNo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopupBase, InviteColor) == 0x0005D0, "Member 'UPyWidget_InvitePopupBase::InviteColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopupBase, ApplyColor) == 0x0005E0, "Member 'UPyWidget_InvitePopupBase::ApplyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InvitePopupBase;
 
 // PythonClass PyWidget_InvitePopup.PyWidget_InvitePopup_League
-// 0x0058 (0x0648 - 0x05F0)
+// 0x0058 (0x0650 - 0x05F8)
 class UPyWidget_InvitePopup_League final : public UPyWidget_InvitePopupBase
 {
 public:
-	class UTexture2D*                             ImgBgMRC;                                          // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgBgClash;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                NameMarginMRC;                                     // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                NameMarginClash;                                   // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NameColorMRC;                                      // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NameColorClash;                                    // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgMRC;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgClash;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                NameMarginMRC;                                     // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                NameMarginClash;                                   // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NameColorMRC;                                      // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NameColorClash;                                    // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopup_League">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopup_League")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopup_League")
 	}
 	static class UPyWidget_InvitePopup_League* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopup_League>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopup_League) == 0x000008, "Wrong alignment on UPyWidget_InvitePopup_League");
-static_assert(sizeof(UPyWidget_InvitePopup_League) == 0x000648, "Wrong size on UPyWidget_InvitePopup_League");
-static_assert(offsetof(UPyWidget_InvitePopup_League, ImgBgMRC) == 0x0005F0, "Member 'UPyWidget_InvitePopup_League::ImgBgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_League, ImgBgClash) == 0x0005F8, "Member 'UPyWidget_InvitePopup_League::ImgBgClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_League, NameMarginMRC) == 0x000600, "Member 'UPyWidget_InvitePopup_League::NameMarginMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_League, NameMarginClash) == 0x000610, "Member 'UPyWidget_InvitePopup_League::NameMarginClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_League, NameColorMRC) == 0x000620, "Member 'UPyWidget_InvitePopup_League::NameColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_League, NameColorClash) == 0x000634, "Member 'UPyWidget_InvitePopup_League::NameColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InvitePopup_League;
 
 // PythonClass PyWidget_InvitePopup.PyWidget_InvitePopup
-// 0x01A8 (0x0798 - 0x05F0)
+// 0x01B8 (0x07B0 - 0x05F8)
 class UPyWidget_InvitePopup final : public UPyWidget_InvitePopupBase
 {
 public:
-	class UTexture2D*                             Img_RefereeHead;                                   // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Game_Ensure;                                // 0x05F8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Game_Close;                                 // 0x0650(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Game_Confirm;                               // 0x06A8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          HotKey_Game_Cancel;                                // 0x0700(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedNameColor;                                      // 0x0758(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BlueNameColor;                                     // 0x076C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DefaultNameColor;                                  // 0x0780(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_RefereeHead;                                   // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Game_Ensure;                                // 0x0600(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Game_Close;                                 // 0x0658(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Game_Confirm;                               // 0x06B0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          HotKey_Game_Cancel;                                // 0x0708(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedNameColor;                                      // 0x0760(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BlueNameColor;                                     // 0x0774(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DefaultNameColor;                                  // 0x0788(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RequestColor;                                      // 0x079C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopup">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopup")
 	}
 	static class UPyWidget_InvitePopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopup>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopup) == 0x000008, "Wrong alignment on UPyWidget_InvitePopup");
-static_assert(sizeof(UPyWidget_InvitePopup) == 0x000798, "Wrong size on UPyWidget_InvitePopup");
-static_assert(offsetof(UPyWidget_InvitePopup, Img_RefereeHead) == 0x0005F0, "Member 'UPyWidget_InvitePopup::Img_RefereeHead' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, HotKey_Game_Ensure) == 0x0005F8, "Member 'UPyWidget_InvitePopup::HotKey_Game_Ensure' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, HotKey_Game_Close) == 0x000650, "Member 'UPyWidget_InvitePopup::HotKey_Game_Close' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, HotKey_Game_Confirm) == 0x0006A8, "Member 'UPyWidget_InvitePopup::HotKey_Game_Confirm' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, HotKey_Game_Cancel) == 0x000700, "Member 'UPyWidget_InvitePopup::HotKey_Game_Cancel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, RedNameColor) == 0x000758, "Member 'UPyWidget_InvitePopup::RedNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, BlueNameColor) == 0x00076C, "Member 'UPyWidget_InvitePopup::BlueNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup, DefaultNameColor) == 0x000780, "Member 'UPyWidget_InvitePopup::DefaultNameColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InvitePopup;
 
 // PythonClass PyWidget_InvitePopup.PyWidget_InvitePopup_FriendInvitation
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_InvitePopup_FriendInvitation final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             InviteIcon;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ApplyIcon;                                         // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             InviteIcon;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ApplyIcon;                                         // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopup_FriendInvitation">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopup_FriendInvitation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopup_FriendInvitation")
 	}
 	static class UPyWidget_InvitePopup_FriendInvitation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopup_FriendInvitation>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopup_FriendInvitation) == 0x000008, "Wrong alignment on UPyWidget_InvitePopup_FriendInvitation");
-static_assert(sizeof(UPyWidget_InvitePopup_FriendInvitation) == 0x0005D0, "Wrong size on UPyWidget_InvitePopup_FriendInvitation");
-static_assert(offsetof(UPyWidget_InvitePopup_FriendInvitation, InviteIcon) == 0x0005C0, "Member 'UPyWidget_InvitePopup_FriendInvitation::InviteIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InvitePopup_FriendInvitation, ApplyIcon) == 0x0005C8, "Member 'UPyWidget_InvitePopup_FriendInvitation::ApplyIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InvitePopup_FriendInvitation;
 
 }
 

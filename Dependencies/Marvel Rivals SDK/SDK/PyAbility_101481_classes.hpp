@@ -30,33 +30,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101481">();
+		STATIC_CLASS_IMPL("PyConfig_101481")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101481")
 	}
 	static class UPyConfig_101481* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101481>();
 	}
 };
-static_assert(alignof(UPyConfig_101481) == 0x000008, "Wrong alignment on UPyConfig_101481");
-static_assert(sizeof(UPyConfig_101481) == 0x0000B0, "Wrong size on UPyConfig_101481");
-static_assert(offsetof(UPyConfig_101481, GatlingFireTag) == 0x000098, "Member 'UPyConfig_101481::GatlingFireTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101481, EndGaltingEquipTag) == 0x0000A4, "Member 'UPyConfig_101481::EndGaltingEquipTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101481;
 
 // PythonClass PyAbility_101481.PyCue_Ability_Loop_10148101
-// 0x0100 (0x12B0 - 0x11B0)
+// 0x0100 (0x12C0 - 0x11C0)
 class APyCue_Ability_Loop_10148101 final : public AMarvelCueNotify_Ability
 {
 public:
-	float                                         ShowCurveTime;                                     // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HideCurveTime;                                     // 0x11B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ShowDissolveCurve0;                                // 0x11B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ShowDissolveCurve1;                                // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            HideDissolveCurve0;                                // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            HideDissolveCurve1;                                // 0x11D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<struct FMaterialQuery, class UMaterialInterface*> OverrideMaterialsQuery;                   // 0x11D8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, class UMaterialInterface*>        OverrideMaterials;                                 // 0x1228(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FMaterialQuery>                 MaterialQueryList;                                 // 0x1278(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMaterialQuery                         EyeMaterialQuery;                                  // 0x1288(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShowCurveTime;                                     // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HideCurveTime;                                     // 0x11C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ShowDissolveCurve0;                                // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ShowDissolveCurve1;                                // 0x11D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            HideDissolveCurve0;                                // 0x11D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            HideDissolveCurve1;                                // 0x11E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<struct FMaterialQuery, class UMaterialInterface*> OverrideMaterialsQuery;                   // 0x11E8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, class UMaterialInterface*>        OverrideMaterials;                                 // 0x1238(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FMaterialQuery>                 MaterialQueryList;                                 // 0x1288(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMaterialQuery                         EyeMaterialQuery;                                  // 0x1298(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -68,34 +69,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10148101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10148101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10148101")
 	}
 	static class APyCue_Ability_Loop_10148101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10148101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10148101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10148101");
-static_assert(sizeof(APyCue_Ability_Loop_10148101) == 0x0012B0, "Wrong size on APyCue_Ability_Loop_10148101");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, ShowCurveTime) == 0x0011B0, "Member 'APyCue_Ability_Loop_10148101::ShowCurveTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, HideCurveTime) == 0x0011B4, "Member 'APyCue_Ability_Loop_10148101::HideCurveTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, ShowDissolveCurve0) == 0x0011B8, "Member 'APyCue_Ability_Loop_10148101::ShowDissolveCurve0' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, ShowDissolveCurve1) == 0x0011C0, "Member 'APyCue_Ability_Loop_10148101::ShowDissolveCurve1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, HideDissolveCurve0) == 0x0011C8, "Member 'APyCue_Ability_Loop_10148101::HideDissolveCurve0' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, HideDissolveCurve1) == 0x0011D0, "Member 'APyCue_Ability_Loop_10148101::HideDissolveCurve1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, OverrideMaterialsQuery) == 0x0011D8, "Member 'APyCue_Ability_Loop_10148101::OverrideMaterialsQuery' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, OverrideMaterials) == 0x001228, "Member 'APyCue_Ability_Loop_10148101::OverrideMaterials' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, MaterialQueryList) == 0x001278, "Member 'APyCue_Ability_Loop_10148101::MaterialQueryList' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10148101, EyeMaterialQuery) == 0x001288, "Member 'APyCue_Ability_Loop_10148101::EyeMaterialQuery' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10148101;
 
 // PythonClass PyAbility_101481.PyAbility_101481
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPyAbility_101481 : public UMarvelGameplayAbility
 {
 public:
-	EState_101481                                 AbilityState;                                      // 0x29F0(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F1[0x7];                                     // 0x29F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EState_101481 NewState)> OnAbilityStateChangedDelegate;            // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EState_101481                                 AbilityState;                                      // 0x2A40(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A41[0x7];                                     // 0x2A41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EState_101481 NewState)> OnAbilityStateChangedDelegate;            // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -115,17 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101481">();
+		STATIC_CLASS_IMPL("PyAbility_101481")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101481")
 	}
 	static class UPyAbility_101481* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101481>();
 	}
 };
-static_assert(alignof(UPyAbility_101481) == 0x000008, "Wrong alignment on UPyAbility_101481");
-static_assert(sizeof(UPyAbility_101481) == 0x002A08, "Wrong size on UPyAbility_101481");
-static_assert(offsetof(UPyAbility_101481, AbilityState) == 0x0029F0, "Member 'UPyAbility_101481::AbilityState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101481, OnAbilityStateChangedDelegate) == 0x0029F8, "Member 'UPyAbility_101481::OnAbilityStateChangedDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101481;
 
 }
 

@@ -33,9 +33,7 @@ struct FUpdateSummonedTickFunction_105071 final : public FTickFunction
 public:
 	class AScope_10507101*                        Scope;                                             // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUpdateSummonedTickFunction_105071) == 0x000008, "Wrong alignment on FUpdateSummonedTickFunction_105071");
-static_assert(sizeof(FUpdateSummonedTickFunction_105071) == 0x000038, "Wrong size on FUpdateSummonedTickFunction_105071");
-static_assert(offsetof(FUpdateSummonedTickFunction_105071, Scope) == 0x000030, "Member 'FUpdateSummonedTickFunction_105071::Scope' has a wrong offset!");
+DUMPER7_ASSERTS_FUpdateSummonedTickFunction_105071;
 
 }
 

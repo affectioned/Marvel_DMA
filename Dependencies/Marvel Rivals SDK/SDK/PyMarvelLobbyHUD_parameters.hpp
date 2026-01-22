@@ -23,9 +23,7 @@ struct PyLobbyAudioComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLobbyAudioComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLobbyAudioComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLobbyAudioComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLobbyAudioComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLobbyAudioComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLobbyAudioComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLobbyAudioComponent_ReceiveEndPlay;
 
 // PythonFunction PyMarvelLobbyHUD.PyMarvelLobbyHUD.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyMarvelLobbyHUD_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelLobbyHUD_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelLobbyHUD_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelLobbyHUD_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelLobbyHUD_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelLobbyHUD_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelLobbyHUD_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelLobbyHUD_ReceiveEndPlay;
 
 }
 

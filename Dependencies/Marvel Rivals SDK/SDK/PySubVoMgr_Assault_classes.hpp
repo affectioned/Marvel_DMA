@@ -23,15 +23,18 @@ class UPySubVoMgr_Assault final : public UPySubVoMgrBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgr_Assault">();
+		STATIC_CLASS_IMPL("PySubVoMgr_Assault")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgr_Assault")
 	}
 	static class UPySubVoMgr_Assault* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgr_Assault>();
 	}
 };
-static_assert(alignof(UPySubVoMgr_Assault) == 0x000008, "Wrong alignment on UPySubVoMgr_Assault");
-static_assert(sizeof(UPySubVoMgr_Assault) == 0x000108, "Wrong size on UPySubVoMgr_Assault");
+DUMPER7_ASSERTS_UPySubVoMgr_Assault;
 
 }
 

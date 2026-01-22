@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Countdown">();
+		STATIC_CLASS_IMPL("PyExtension_Countdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Countdown")
 	}
 	static class UPyExtension_Countdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Countdown>();
 	}
 };
-static_assert(alignof(UPyExtension_Countdown) == 0x000008, "Wrong alignment on UPyExtension_Countdown");
-static_assert(sizeof(UPyExtension_Countdown) == 0x000030, "Wrong size on UPyExtension_Countdown");
+DUMPER7_ASSERTS_UPyExtension_Countdown;
 
 }
 

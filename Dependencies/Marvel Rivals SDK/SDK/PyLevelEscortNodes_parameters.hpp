@@ -27,14 +27,7 @@ public:
 	float                                         DelayForwardTime;                                  // 0x0070(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DelayBackTime;                                     // 0x0074(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelEscortNodes_SetEscortArgs) == 0x000008, "Wrong alignment on PyLevelEscortNodes_SetEscortArgs");
-static_assert(sizeof(PyLevelEscortNodes_SetEscortArgs) == 0x000078, "Wrong size on PyLevelEscortNodes_SetEscortArgs");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, payload) == 0x000000, "Member 'PyLevelEscortNodes_SetEscortArgs::payload' has a wrong offset!");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, MoveSpeed) == 0x000008, "Member 'PyLevelEscortNodes_SetEscortArgs::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, BackwordSpeed) == 0x000058, "Member 'PyLevelEscortNodes_SetEscortArgs::BackwordSpeed' has a wrong offset!");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, BuffId) == 0x000060, "Member 'PyLevelEscortNodes_SetEscortArgs::BuffId' has a wrong offset!");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, DelayForwardTime) == 0x000070, "Member 'PyLevelEscortNodes_SetEscortArgs::DelayForwardTime' has a wrong offset!");
-static_assert(offsetof(PyLevelEscortNodes_SetEscortArgs, DelayBackTime) == 0x000074, "Member 'PyLevelEscortNodes_SetEscortArgs::DelayBackTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelEscortNodes_SetEscortArgs;
 
 }
 

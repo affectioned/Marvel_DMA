@@ -24,9 +24,7 @@ struct PyAbility_104781_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104781_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104781_CanActivate");
-static_assert(sizeof(PyAbility_104781_CanActivate) == 0x000001, "Wrong size on PyAbility_104781_CanActivate");
-static_assert(offsetof(PyAbility_104781_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104781_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_CanActivate;
 
 // PythonFunction PyAbility_104781.PyAbility_104781.ShouldPlayTimeline
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_104781_ShouldPlayTimeline final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104781_ShouldPlayTimeline) == 0x000001, "Wrong alignment on PyAbility_104781_ShouldPlayTimeline");
-static_assert(sizeof(PyAbility_104781_ShouldPlayTimeline) == 0x000001, "Wrong size on PyAbility_104781_ShouldPlayTimeline");
-static_assert(offsetof(PyAbility_104781_ShouldPlayTimeline, ReturnValue) == 0x000000, "Member 'PyAbility_104781_ShouldPlayTimeline::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_ShouldPlayTimeline;
 
 // PythonFunction PyAbility_104781.PyAbility_104781.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_104781_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104781_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_104781_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_104781_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_104781_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_104781_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_104781_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_104781.PyAbility_104781.CheckViewportTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	const class AActor*                           InTarget;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104781_CheckViewportTarget) == 0x000008, "Wrong alignment on PyAbility_104781_CheckViewportTarget");
-static_assert(sizeof(PyAbility_104781_CheckViewportTarget) == 0x000010, "Wrong size on PyAbility_104781_CheckViewportTarget");
-static_assert(offsetof(PyAbility_104781_CheckViewportTarget, InTarget) == 0x000000, "Member 'PyAbility_104781_CheckViewportTarget::InTarget' has a wrong offset!");
-static_assert(offsetof(PyAbility_104781_CheckViewportTarget, ReturnValue) == 0x000008, "Member 'PyAbility_104781_CheckViewportTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_CheckViewportTarget;
 
 // PythonFunction PyAbility_104781.PyAbility_104781.OnDashTaskFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +61,7 @@ struct PyAbility_104781_OnDashTaskFinish final
 public:
 	EDashStopReason                               reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104781_OnDashTaskFinish) == 0x000001, "Wrong alignment on PyAbility_104781_OnDashTaskFinish");
-static_assert(sizeof(PyAbility_104781_OnDashTaskFinish) == 0x000001, "Wrong size on PyAbility_104781_OnDashTaskFinish");
-static_assert(offsetof(PyAbility_104781_OnDashTaskFinish, reason) == 0x000000, "Member 'PyAbility_104781_OnDashTaskFinish::reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_OnDashTaskFinish;
 
 // PythonFunction PyAbility_104781.PyAbility_104781.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +70,7 @@ struct PyAbility_104781_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104781_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104781_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104781_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104781_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104781_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104781_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104781_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104781.PyBondEnhanceSourceResolver_104781.GetEnhanceSource
 // 0x0148 (0x0148 - 0x0000)
@@ -97,13 +84,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0138(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   ReturnValue;                                       // 0x0140(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource) == 0x000008, "Wrong alignment on PyBondEnhanceSourceResolver_104781_GetEnhanceSource");
-static_assert(sizeof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource) == 0x000148, "Wrong size on PyBondEnhanceSourceResolver_104781_GetEnhanceSource");
-static_assert(offsetof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource, InOwnerCharacter) == 0x000000, "Member 'PyBondEnhanceSourceResolver_104781_GetEnhanceSource::InOwnerCharacter' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource, InOwnerAbilityID) == 0x000008, "Member 'PyBondEnhanceSourceResolver_104781_GetEnhanceSource::InOwnerAbilityID' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource, InBondInstance) == 0x000010, "Member 'PyBondEnhanceSourceResolver_104781_GetEnhanceSource::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource, InTarget) == 0x000138, "Member 'PyBondEnhanceSourceResolver_104781_GetEnhanceSource::InTarget' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_104781_GetEnhanceSource, ReturnValue) == 0x000140, "Member 'PyBondEnhanceSourceResolver_104781_GetEnhanceSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBondEnhanceSourceResolver_104781_GetEnhanceSource;
 
 // PythonFunction PyAbility_104781.PyUIC_SelectTarget_104781.GetTargets
 // 0x0010 (0x0010 - 0x0000)
@@ -112,9 +93,7 @@ struct PyUIC_SelectTarget_104781_GetTargets final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyUIC_SelectTarget_104781_GetTargets) == 0x000008, "Wrong alignment on PyUIC_SelectTarget_104781_GetTargets");
-static_assert(sizeof(PyUIC_SelectTarget_104781_GetTargets) == 0x000010, "Wrong size on PyUIC_SelectTarget_104781_GetTargets");
-static_assert(offsetof(PyUIC_SelectTarget_104781_GetTargets, ReturnValue) == 0x000000, "Member 'PyUIC_SelectTarget_104781_GetTargets::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SelectTarget_104781_GetTargets;
 
 // PythonFunction PyAbility_104781.PyUIC_SelectTarget_104781.GetTaskResults
 // 0x0010 (0x0010 - 0x0000)
@@ -123,9 +102,7 @@ struct PyUIC_SelectTarget_104781_GetTaskResults final
 public:
 	TArray<struct FSelectTaskResult>              ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyUIC_SelectTarget_104781_GetTaskResults) == 0x000008, "Wrong alignment on PyUIC_SelectTarget_104781_GetTaskResults");
-static_assert(sizeof(PyUIC_SelectTarget_104781_GetTaskResults) == 0x000010, "Wrong size on PyUIC_SelectTarget_104781_GetTaskResults");
-static_assert(offsetof(PyUIC_SelectTarget_104781_GetTaskResults, ReturnValue) == 0x000000, "Member 'PyUIC_SelectTarget_104781_GetTaskResults::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SelectTarget_104781_GetTaskResults;
 
 // PythonFunction PyAbility_104781.PyUIC_SelectTarget_104781.ShouldTrace
 // 0x0001 (0x0001 - 0x0000)
@@ -134,9 +111,7 @@ struct PyUIC_SelectTarget_104781_ShouldTrace final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_SelectTarget_104781_ShouldTrace) == 0x000001, "Wrong alignment on PyUIC_SelectTarget_104781_ShouldTrace");
-static_assert(sizeof(PyUIC_SelectTarget_104781_ShouldTrace) == 0x000001, "Wrong size on PyUIC_SelectTarget_104781_ShouldTrace");
-static_assert(offsetof(PyUIC_SelectTarget_104781_ShouldTrace, ReturnValue) == 0x000000, "Member 'PyUIC_SelectTarget_104781_ShouldTrace::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SelectTarget_104781_ShouldTrace;
 
 }
 

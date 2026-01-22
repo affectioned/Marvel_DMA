@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry
-// 0x0050 (0x0610 - 0x05C0)
-class UPyWidget_ChampionshipLeagueHonorHallEntry final : public UPyMarvelUserWidget
+// PythonClass PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry_Base
+// 0x0050 (0x0618 - 0x05C8)
+class UPyWidget_ChampionshipLeagueHonorHallEntry_Base : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     ImgRankBgList;                                     // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FVector2D                              CardSize;                                          // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   ColorFirstHoveredVXList;                           // 0x05E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   ColorSecondaryHoveredVXList;                       // 0x05F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     ImgRankBgList;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FVector2D                              CardSize;                                          // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   ColorFirstHoveredVXList;                           // 0x05E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   ColorSecondaryHoveredVXList;                       // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,20 +38,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChampionshipLeagueHonorHallEntry">();
+		STATIC_CLASS_IMPL("PyWidget_ChampionshipLeagueHonorHallEntry_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChampionshipLeagueHonorHallEntry_Base")
+	}
+	static class UPyWidget_ChampionshipLeagueHonorHallEntry_Base* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_ChampionshipLeagueHonorHallEntry_Base>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_ChampionshipLeagueHonorHallEntry_Base;
+
+// PythonClass PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry_Old
+// 0x0000 (0x0618 - 0x0618)
+class UPyWidget_ChampionshipLeagueHonorHallEntry_Old final : public UPyWidget_ChampionshipLeagueHonorHallEntry_Base
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_ChampionshipLeagueHonorHallEntry_Old")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChampionshipLeagueHonorHallEntry_Old")
+	}
+	static class UPyWidget_ChampionshipLeagueHonorHallEntry_Old* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_ChampionshipLeagueHonorHallEntry_Old>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_ChampionshipLeagueHonorHallEntry_Old;
+
+// PythonClass PyWidget_ChampionshipLeagueHonorHallEntry.PyWidget_ChampionshipLeagueHonorHallEntry
+// 0x0000 (0x0618 - 0x0618)
+class UPyWidget_ChampionshipLeagueHonorHallEntry final : public UPyWidget_ChampionshipLeagueHonorHallEntry_Base
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_ChampionshipLeagueHonorHallEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChampionshipLeagueHonorHallEntry")
 	}
 	static class UPyWidget_ChampionshipLeagueHonorHallEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChampionshipLeagueHonorHallEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_ChampionshipLeagueHonorHallEntry) == 0x000008, "Wrong alignment on UPyWidget_ChampionshipLeagueHonorHallEntry");
-static_assert(sizeof(UPyWidget_ChampionshipLeagueHonorHallEntry) == 0x000610, "Wrong size on UPyWidget_ChampionshipLeagueHonorHallEntry");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHallEntry, ImgRankBgList) == 0x0005C0, "Member 'UPyWidget_ChampionshipLeagueHonorHallEntry::ImgRankBgList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHallEntry, CardSize) == 0x0005D0, "Member 'UPyWidget_ChampionshipLeagueHonorHallEntry::CardSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHallEntry, ColorFirstHoveredVXList) == 0x0005E0, "Member 'UPyWidget_ChampionshipLeagueHonorHallEntry::ColorFirstHoveredVXList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHallEntry, ColorSecondaryHoveredVXList) == 0x0005F0, "Member 'UPyWidget_ChampionshipLeagueHonorHallEntry::ColorSecondaryHoveredVXList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHallEntry, GuideActions) == 0x000600, "Member 'UPyWidget_ChampionshipLeagueHonorHallEntry::GuideActions' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChampionshipLeagueHonorHallEntry;
 
 }
 

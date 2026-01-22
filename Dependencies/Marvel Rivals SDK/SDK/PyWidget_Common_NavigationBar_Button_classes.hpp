@@ -18,23 +18,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_NavigationBar_Button.PyWidget_Common_NavigationBar_Button
-// 0x0098 (0x07C0 - 0x0728)
+// 0x0098 (0x0818 - 0x0780)
 class UPyWidget_Common_NavigationBar_Button : public UPyWidget_Button
 {
 public:
-	struct FSlateColor                            BtnNameColor;                                      // 0x0728(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNameSelectColor;                                // 0x073C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNameHoverColor;                                 // 0x0750(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNamePressColor;                                 // 0x0764(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Disable_Bg_Select;                                 // 0x0778(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelected;                                        // 0x0779(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_77A[0x6];                                      // 0x077A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_Press;                                        // 0x0780(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Tab_Select;                                // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNamedSlot*                             Slot_Reddot;                                       // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Tab_Press;                                     // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsSelected)> OnIsSelectedChanged;                             // 0x07A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResetToDefaultIndex;                             // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameColor;                                      // 0x0780(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameSelectColor;                                // 0x0794(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameHoverColor;                                 // 0x07A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNamePressColor;                                 // 0x07BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Disable_Bg_Select;                                 // 0x07D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelected;                                        // 0x07D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7D2[0x6];                                      // 0x07D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_Press;                                        // 0x07D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Tab_Select;                                // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNamedSlot*                             Slot_Reddot;                                       // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Tab_Press;                                     // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsSelected)> OnIsSelectedChanged;                             // 0x07F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResetToDefaultIndex;                             // 0x0808(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,30 +46,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_Button")
 	}
 	static class UPyWidget_Common_NavigationBar_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar_Button) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar_Button");
-static_assert(sizeof(UPyWidget_Common_NavigationBar_Button) == 0x0007C0, "Wrong size on UPyWidget_Common_NavigationBar_Button");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, BtnNameColor) == 0x000728, "Member 'UPyWidget_Common_NavigationBar_Button::BtnNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, BtnNameSelectColor) == 0x00073C, "Member 'UPyWidget_Common_NavigationBar_Button::BtnNameSelectColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, BtnNameHoverColor) == 0x000750, "Member 'UPyWidget_Common_NavigationBar_Button::BtnNameHoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, BtnNamePressColor) == 0x000764, "Member 'UPyWidget_Common_NavigationBar_Button::BtnNamePressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, Disable_Bg_Select) == 0x000778, "Member 'UPyWidget_Common_NavigationBar_Button::Disable_Bg_Select' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, IsSelected) == 0x000779, "Member 'UPyWidget_Common_NavigationBar_Button::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, Anim_Press) == 0x000780, "Member 'UPyWidget_Common_NavigationBar_Button::Anim_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, Overlay_Tab_Select) == 0x000788, "Member 'UPyWidget_Common_NavigationBar_Button::Overlay_Tab_Select' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, Slot_Reddot) == 0x000790, "Member 'UPyWidget_Common_NavigationBar_Button::Slot_Reddot' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, Img_Tab_Press) == 0x000798, "Member 'UPyWidget_Common_NavigationBar_Button::Img_Tab_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, OnIsSelectedChanged) == 0x0007A0, "Member 'UPyWidget_Common_NavigationBar_Button::OnIsSelectedChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar_Button, OnResetToDefaultIndex) == 0x0007B0, "Member 'UPyWidget_Common_NavigationBar_Button::OnResetToDefaultIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_Button;
 
 // PythonClass PyWidget_Common_NavigationBar_Button.PyWidget_Common_NavigationBar_FirstInfo_Button
-// 0x0000 (0x07C0 - 0x07C0)
+// 0x0000 (0x0818 - 0x0818)
 class UPyWidget_Common_NavigationBar_FirstInfo_Button : public UPyWidget_Common_NavigationBar_Button
 {
 public:
@@ -78,15 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar_FirstInfo_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_FirstInfo_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_FirstInfo_Button")
 	}
 	static class UPyWidget_Common_NavigationBar_FirstInfo_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_FirstInfo_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar_FirstInfo_Button) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar_FirstInfo_Button");
-static_assert(sizeof(UPyWidget_Common_NavigationBar_FirstInfo_Button) == 0x0007C0, "Wrong size on UPyWidget_Common_NavigationBar_FirstInfo_Button");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_FirstInfo_Button;
 
 }
 

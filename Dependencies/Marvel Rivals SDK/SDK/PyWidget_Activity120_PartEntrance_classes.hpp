@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_PartEntrance.PyWidget_Activity120_PartEntrance
-// 0x0080 (0x07A8 - 0x0728)
+// 0x0080 (0x0800 - 0x0780)
 class UPyWidget_Activity120_PartEntrance final : public UPyWidget_Button
 {
 public:
-	class UTexture2D*                             Texture_Part_Icon;                                 // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Part_Icon_UnOpen;                          // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Part_BG;                                   // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Part_Ani_Bg_Common;                        // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Part_Ani_Bg_UnLock;                        // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Part_Ani_Bg_Reward;                        // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMat_Unopen;                                // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMat_Open;                                  // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BigTitleColor_Unopen;                              // 0x0768(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BigTitleColor_Open;                                // 0x0778(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TipBgColor_Unopen;                                 // 0x0788(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TipBgColor_Open;                                   // 0x0798(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_Icon;                                 // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_Icon_UnOpen;                          // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_BG;                                   // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_Ani_Bg_Common;                        // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_Ani_Bg_UnLock;                        // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Part_Ani_Bg_Reward;                        // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMat_Unopen;                                // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMat_Open;                                  // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BigTitleColor_Unopen;                              // 0x07C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BigTitleColor_Open;                                // 0x07D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TipBgColor_Unopen;                                 // 0x07E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TipBgColor_Open;                                   // 0x07F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,27 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_PartEntrance">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_PartEntrance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_PartEntrance")
 	}
 	static class UPyWidget_Activity120_PartEntrance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_PartEntrance>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_PartEntrance) == 0x000008, "Wrong alignment on UPyWidget_Activity120_PartEntrance");
-static_assert(sizeof(UPyWidget_Activity120_PartEntrance) == 0x0007A8, "Wrong size on UPyWidget_Activity120_PartEntrance");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_Icon) == 0x000728, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_Icon_UnOpen) == 0x000730, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_Icon_UnOpen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_BG) == 0x000738, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_BG' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_Ani_Bg_Common) == 0x000740, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_Ani_Bg_Common' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_Ani_Bg_UnLock) == 0x000748, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_Ani_Bg_UnLock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, Texture_Part_Ani_Bg_Reward) == 0x000750, "Member 'UPyWidget_Activity120_PartEntrance::Texture_Part_Ani_Bg_Reward' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, BigTitleMat_Unopen) == 0x000758, "Member 'UPyWidget_Activity120_PartEntrance::BigTitleMat_Unopen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, BigTitleMat_Open) == 0x000760, "Member 'UPyWidget_Activity120_PartEntrance::BigTitleMat_Open' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, BigTitleColor_Unopen) == 0x000768, "Member 'UPyWidget_Activity120_PartEntrance::BigTitleColor_Unopen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, BigTitleColor_Open) == 0x000778, "Member 'UPyWidget_Activity120_PartEntrance::BigTitleColor_Open' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, TipBgColor_Unopen) == 0x000788, "Member 'UPyWidget_Activity120_PartEntrance::TipBgColor_Unopen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_PartEntrance, TipBgColor_Open) == 0x000798, "Member 'UPyWidget_Activity120_PartEntrance::TipBgColor_Open' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_PartEntrance;
 
 }
 

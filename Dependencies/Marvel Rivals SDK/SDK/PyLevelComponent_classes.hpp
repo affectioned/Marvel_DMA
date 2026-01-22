@@ -51,20 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelComponent">();
+		STATIC_CLASS_IMPL("PyLevelComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelComponent")
 	}
 	static class UPyLevelComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelComponent>();
 	}
 };
-static_assert(alignof(UPyLevelComponent) == 0x000008, "Wrong alignment on UPyLevelComponent");
-static_assert(sizeof(UPyLevelComponent) == 0x000278, "Wrong size on UPyLevelComponent");
-static_assert(offsetof(UPyLevelComponent, FakeRoundIndex) == 0x000108, "Member 'UPyLevelComponent::FakeRoundIndex' has a wrong offset!");
-static_assert(offsetof(UPyLevelComponent, MatchState) == 0x00010C, "Member 'UPyLevelComponent::MatchState' has a wrong offset!");
-static_assert(offsetof(UPyLevelComponent, PreparingTimer) == 0x000110, "Member 'UPyLevelComponent::PreparingTimer' has a wrong offset!");
-static_assert(offsetof(UPyLevelComponent, SelectHeroTimer) == 0x000188, "Member 'UPyLevelComponent::SelectHeroTimer' has a wrong offset!");
-static_assert(offsetof(UPyLevelComponent, BattleResultTimer) == 0x000200, "Member 'UPyLevelComponent::BattleResultTimer' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelComponent;
 
 }
 

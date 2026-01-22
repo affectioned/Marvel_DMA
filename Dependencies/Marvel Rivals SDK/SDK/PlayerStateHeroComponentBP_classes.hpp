@@ -23,15 +23,18 @@ class UPlayerStateHeroComponentBP_C final : public UPyPlayerStateHeroComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerStateHeroComponentBP_C">();
+		BP_STATIC_CLASS_IMPL("PlayerStateHeroComponentBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerStateHeroComponentBP_C")
 	}
 	static class UPlayerStateHeroComponentBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerStateHeroComponentBP_C>();
 	}
 };
-static_assert(alignof(UPlayerStateHeroComponentBP_C) == 0x000008, "Wrong alignment on UPlayerStateHeroComponentBP_C");
-static_assert(sizeof(UPlayerStateHeroComponentBP_C) == 0x000188, "Wrong size on UPlayerStateHeroComponentBP_C");
+DUMPER7_ASSERTS_UPlayerStateHeroComponentBP_C;
 
 }
 

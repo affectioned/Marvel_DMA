@@ -23,15 +23,18 @@ class UFriend_ListEntry_ItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Friend_ListEntry_ItemData">();
+		STATIC_CLASS_IMPL("Friend_ListEntry_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Friend_ListEntry_ItemData")
 	}
 	static class UFriend_ListEntry_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriend_ListEntry_ItemData>();
 	}
 };
-static_assert(alignof(UFriend_ListEntry_ItemData) == 0x000008, "Wrong alignment on UFriend_ListEntry_ItemData");
-static_assert(sizeof(UFriend_ListEntry_ItemData) == 0x000030, "Wrong size on UFriend_ListEntry_ItemData");
+DUMPER7_ASSERTS_UFriend_ListEntry_ItemData;
 
 }
 

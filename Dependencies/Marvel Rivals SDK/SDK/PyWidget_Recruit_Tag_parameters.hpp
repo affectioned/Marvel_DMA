@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Recruit_Tag_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_Recruit_Tag_OnMouseEnter");
-static_assert(sizeof(PyWidget_Recruit_Tag_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_Recruit_Tag_OnMouseEnter");
-static_assert(offsetof(PyWidget_Recruit_Tag_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_Recruit_Tag_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Recruit_Tag_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_Recruit_Tag_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Recruit_Tag_OnMouseEnter;
 
 }
 

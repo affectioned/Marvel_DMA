@@ -16,7 +16,7 @@ namespace SDK
 
 // PythonEnum PyFillColorBox.EFillColorState
 // NumValues: 0x0004
-enum class EFillColorState : uint8
+enum class PyFillColorBox::EFillColorState : uint8
 {
 	Empty                                    = 0,
 	Blue                                     = 1,
@@ -26,7 +26,7 @@ enum class EFillColorState : uint8
 
 // PythonEnum PyFillColorBox.EScenePaintState
 // NumValues: 0x0004
-enum class EScenePaintState : uint64
+enum class PyFillColorBox::EScenePaintState : uint64
 {
 	Empty                                    = 18446744073709551615,
 	Ally                                     = 0,

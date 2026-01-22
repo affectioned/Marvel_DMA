@@ -25,12 +25,7 @@ public:
 	class UWBP_DebugHeroAudioInfo_C*              K2Node_DynamicCast_AsWBP_Debug_Hero_Audio_Info;    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP) == 0x000008, "Wrong alignment on WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP");
-static_assert(sizeof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP) == 0x000020, "Wrong size on WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP, EntryPoint) == 0x000000, "Member 'WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP, CallFunc_GetWidget_ReturnValue) == 0x000008, "Member 'WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP::CallFunc_GetWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP, K2Node_DynamicCast_AsWBP_Debug_Hero_Audio_Info) == 0x000010, "Member 'WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP::K2Node_DynamicCast_AsWBP_Debug_Hero_Audio_Info' has a wrong offset!");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_WC_DebugHeroAudioInfoBP_C_ExecuteUbergraph_WC_DebugHeroAudioInfoBP;
 
 // Function WC_DebugHeroAudioInfoBP.WC_DebugHeroAudioInfoBP_C.SetOwnerAk
 // 0x0010 (0x0010 - 0x0000)
@@ -40,10 +35,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkComponent*                           CallFunc_GetComponentByClass_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WC_DebugHeroAudioInfoBP_C_SetOwnerAk) == 0x000008, "Wrong alignment on WC_DebugHeroAudioInfoBP_C_SetOwnerAk");
-static_assert(sizeof(WC_DebugHeroAudioInfoBP_C_SetOwnerAk) == 0x000010, "Wrong size on WC_DebugHeroAudioInfoBP_C_SetOwnerAk");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_SetOwnerAk, CallFunc_GetOwner_ReturnValue) == 0x000000, "Member 'WC_DebugHeroAudioInfoBP_C_SetOwnerAk::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WC_DebugHeroAudioInfoBP_C_SetOwnerAk, CallFunc_GetComponentByClass_ReturnValue) == 0x000008, "Member 'WC_DebugHeroAudioInfoBP_C_SetOwnerAk::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WC_DebugHeroAudioInfoBP_C_SetOwnerAk;
 
 }
 

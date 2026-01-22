@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Accessory_LobbyPreview.PyWidget_Accessory_LobbyPreview
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Accessory_LobbyPreview final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Accessory_LobbyPreview">();
+		STATIC_CLASS_IMPL("PyWidget_Accessory_LobbyPreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Accessory_LobbyPreview")
 	}
 	static class UPyWidget_Accessory_LobbyPreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Accessory_LobbyPreview>();
 	}
 };
-static_assert(alignof(UPyWidget_Accessory_LobbyPreview) == 0x000008, "Wrong alignment on UPyWidget_Accessory_LobbyPreview");
-static_assert(sizeof(UPyWidget_Accessory_LobbyPreview) == 0x0005C0, "Wrong size on UPyWidget_Accessory_LobbyPreview");
+DUMPER7_ASSERTS_UPyWidget_Accessory_LobbyPreview;
 
 }
 

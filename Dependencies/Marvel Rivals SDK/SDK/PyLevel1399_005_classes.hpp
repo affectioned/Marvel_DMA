@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_005">();
+		STATIC_CLASS_IMPL("PyLevel1399_005")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_005")
 	}
 	static class APyLevel1399_005* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_005>();
 	}
 };
-static_assert(alignof(APyLevel1399_005) == 0x000010, "Wrong alignment on APyLevel1399_005");
-static_assert(sizeof(APyLevel1399_005) == 0x000730, "Wrong size on APyLevel1399_005");
+DUMPER7_ASSERTS_APyLevel1399_005;
 
 }
 

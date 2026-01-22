@@ -17,38 +17,34 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 4018000_ChildBP.4018000_ChildBP_C
-// 0x0040 (0x0E60 - 0x0E20)
+// 0x0040 (0x0E70 - 0x0E30)
 class AFour018000_ChildBP_C final : public AMarvelCharacterChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelHitShape_Capsule*                HitLowerArm_L_1;                                   // 0x0E20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitUpperArm_L_0;                                   // 0x0E28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitLowerArm_R_1;                                   // 0x0E30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitUpperArm_R_0;                                   // 0x0E38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitHead_0;                                         // 0x0E40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitAbdomen_0;                                      // 0x0E48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Capsule*                HitChest_0;                                        // 0x0E50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelHitShape_Capsule*                HitLowerArm_L_1;                                   // 0x0E30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitUpperArm_L_0;                                   // 0x0E38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitLowerArm_R_1;                                   // 0x0E40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitUpperArm_R_0;                                   // 0x0E48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitHead_0;                                         // 0x0E50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitAbdomen_0;                                      // 0x0E58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Capsule*                HitChest_0;                                        // 0x0E60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"4018000_ChildBP_C">();
+		BP_STATIC_CLASS_IMPL("4018000_ChildBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"4018000_ChildBP_C")
 	}
 	static class AFour018000_ChildBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFour018000_ChildBP_C>();
 	}
 };
-static_assert(alignof(AFour018000_ChildBP_C) == 0x000010, "Wrong alignment on AFour018000_ChildBP_C");
-static_assert(sizeof(AFour018000_ChildBP_C) == 0x000E60, "Wrong size on AFour018000_ChildBP_C");
-static_assert(offsetof(AFour018000_ChildBP_C, HitLowerArm_L_1) == 0x000E20, "Member 'AFour018000_ChildBP_C::HitLowerArm_L_1' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitUpperArm_L_0) == 0x000E28, "Member 'AFour018000_ChildBP_C::HitUpperArm_L_0' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitLowerArm_R_1) == 0x000E30, "Member 'AFour018000_ChildBP_C::HitLowerArm_R_1' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitUpperArm_R_0) == 0x000E38, "Member 'AFour018000_ChildBP_C::HitUpperArm_R_0' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitHead_0) == 0x000E40, "Member 'AFour018000_ChildBP_C::HitHead_0' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitAbdomen_0) == 0x000E48, "Member 'AFour018000_ChildBP_C::HitAbdomen_0' has a wrong offset!");
-static_assert(offsetof(AFour018000_ChildBP_C, HitChest_0) == 0x000E50, "Member 'AFour018000_ChildBP_C::HitChest_0' has a wrong offset!");
+DUMPER7_ASSERTS_AFour018000_ChildBP_C;
 
 }
 

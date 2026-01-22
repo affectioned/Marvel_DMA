@@ -18,25 +18,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mall_Skin_PriceSmall.WBP_Mall_Skin_PriceSmall_C
-// 0x0080 (0x08C0 - 0x0840)
+// 0x0080 (0x08D0 - 0x0850)
 class UWBP_Mall_Skin_PriceSmall_C final : public UPyWidget_MallPrice
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_Text_Sweep;                                   // 0x0848(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Coupon;                                       // 0x0850(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Old_Price;                                     // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Old_Price_1;                                   // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Price_Icon;                                    // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Old_Price;                                 // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Old_Price_Coupon;                          // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Old_Price;                                    // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Old_Price_Coupon;                             // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number;                                 // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number_1;                               // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number_2;                               // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number_3;                               // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price_Number_4;                               // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0850(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_Text_Sweep;                                   // 0x0858(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Coupon;                                       // 0x0860(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Old_Price;                                     // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Old_Price_1;                                   // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Price_Icon;                                    // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Old_Price;                                 // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Old_Price_Coupon;                          // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Old_Price;                                    // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Old_Price_Coupon;                             // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number;                                 // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number_1;                               // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number_2;                               // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number_3;                               // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price_Number_4;                               // 0x08C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void SequenceEvent__ENTRYPOINTWBP_Mall_Skin_PriceSmall();
@@ -46,30 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mall_Skin_PriceSmall_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mall_Skin_PriceSmall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mall_Skin_PriceSmall_C")
 	}
 	static class UWBP_Mall_Skin_PriceSmall_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mall_Skin_PriceSmall_C>();
 	}
 };
-static_assert(alignof(UWBP_Mall_Skin_PriceSmall_C) == 0x000010, "Wrong alignment on UWBP_Mall_Skin_PriceSmall_C");
-static_assert(sizeof(UWBP_Mall_Skin_PriceSmall_C) == 0x0008C0, "Wrong size on UWBP_Mall_Skin_PriceSmall_C");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, UberGraphFrame) == 0x000840, "Member 'UWBP_Mall_Skin_PriceSmall_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Anim_Text_Sweep) == 0x000848, "Member 'UWBP_Mall_Skin_PriceSmall_C::Anim_Text_Sweep' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Anim_Coupon) == 0x000850, "Member 'UWBP_Mall_Skin_PriceSmall_C::Anim_Coupon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Img_Old_Price) == 0x000858, "Member 'UWBP_Mall_Skin_PriceSmall_C::Img_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Img_Old_Price_1) == 0x000860, "Member 'UWBP_Mall_Skin_PriceSmall_C::Img_Old_Price_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Img_Price_Icon) == 0x000868, "Member 'UWBP_Mall_Skin_PriceSmall_C::Img_Price_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Overlay_Old_Price) == 0x000870, "Member 'UWBP_Mall_Skin_PriceSmall_C::Overlay_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Overlay_Old_Price_Coupon) == 0x000878, "Member 'UWBP_Mall_Skin_PriceSmall_C::Overlay_Old_Price_Coupon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Old_Price) == 0x000880, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Old_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Old_Price_Coupon) == 0x000888, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Old_Price_Coupon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Price_Number) == 0x000890, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Price_Number' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Price_Number_1) == 0x000898, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Price_Number_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Price_Number_2) == 0x0008A0, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Price_Number_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Price_Number_3) == 0x0008A8, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Price_Number_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Skin_PriceSmall_C, Text_Price_Number_4) == 0x0008B0, "Member 'UWBP_Mall_Skin_PriceSmall_C::Text_Price_Number_4' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mall_Skin_PriceSmall_C;
 
 }
 

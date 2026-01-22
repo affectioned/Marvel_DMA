@@ -23,15 +23,18 @@ class UAISelectTarget_LessEnemyLocationAround_10278102_C final : public UPyAISel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_LessEnemyLocationAround_10278102_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_LessEnemyLocationAround_10278102_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_LessEnemyLocationAround_10278102_C")
 	}
 	static class UAISelectTarget_LessEnemyLocationAround_10278102_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_LessEnemyLocationAround_10278102_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_LessEnemyLocationAround_10278102_C) == 0x000008, "Wrong alignment on UAISelectTarget_LessEnemyLocationAround_10278102_C");
-static_assert(sizeof(UAISelectTarget_LessEnemyLocationAround_10278102_C) == 0x000088, "Wrong size on UAISelectTarget_LessEnemyLocationAround_10278102_C");
+DUMPER7_ASSERTS_UAISelectTarget_LessEnemyLocationAround_10278102_C;
 
 }
 

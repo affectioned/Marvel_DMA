@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AgeAppropriateness_Panel.PyWidget_AgeAppropriateness_Panel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_AgeAppropriateness_Panel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Display_Time;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Display_Time;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AgeAppropriateness_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_AgeAppropriateness_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AgeAppropriateness_Panel")
 	}
 	static class UPyWidget_AgeAppropriateness_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AgeAppropriateness_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_AgeAppropriateness_Panel) == 0x000008, "Wrong alignment on UPyWidget_AgeAppropriateness_Panel");
-static_assert(sizeof(UPyWidget_AgeAppropriateness_Panel) == 0x0005C0, "Wrong size on UPyWidget_AgeAppropriateness_Panel");
-static_assert(offsetof(UPyWidget_AgeAppropriateness_Panel, Display_Time) == 0x0005BC, "Member 'UPyWidget_AgeAppropriateness_Panel::Display_Time' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AgeAppropriateness_Panel;
 
 }
 

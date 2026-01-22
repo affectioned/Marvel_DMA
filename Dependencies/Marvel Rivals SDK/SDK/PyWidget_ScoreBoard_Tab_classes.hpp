@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ScoreBoard_Tab.PyWidget_ScoreBoard_Tab
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ScoreBoard_Tab final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ScoreBoard_Tab">();
+		STATIC_CLASS_IMPL("PyWidget_ScoreBoard_Tab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ScoreBoard_Tab")
 	}
 	static class UPyWidget_ScoreBoard_Tab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ScoreBoard_Tab>();
 	}
 };
-static_assert(alignof(UPyWidget_ScoreBoard_Tab) == 0x000008, "Wrong alignment on UPyWidget_ScoreBoard_Tab");
-static_assert(sizeof(UPyWidget_ScoreBoard_Tab) == 0x0005C0, "Wrong size on UPyWidget_ScoreBoard_Tab");
+DUMPER7_ASSERTS_UPyWidget_ScoreBoard_Tab;
 
 }
 

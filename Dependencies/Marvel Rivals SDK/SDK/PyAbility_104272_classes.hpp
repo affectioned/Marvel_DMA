@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104272.PyAbility_104272
-// 0x0010 (0x2A18 - 0x2A08)
+// 0x0010 (0x2A68 - 0x2A58)
 class UPyAbility_104272 : public UPyAbility_104251
 {
 public:
-	TMulticastInlineDelegate<void()>              OnShowCoolDownUI;                                  // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnShowCoolDownUI;                                  // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void MissileEventNotify();
@@ -31,23 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104272">();
+		STATIC_CLASS_IMPL("PyAbility_104272")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104272")
 	}
 	static class UPyAbility_104272* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104272>();
 	}
 };
-static_assert(alignof(UPyAbility_104272) == 0x000008, "Wrong alignment on UPyAbility_104272");
-static_assert(sizeof(UPyAbility_104272) == 0x002A18, "Wrong size on UPyAbility_104272");
-static_assert(offsetof(UPyAbility_104272, OnShowCoolDownUI) == 0x002A08, "Member 'UPyAbility_104272::OnShowCoolDownUI' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104272;
 
 // PythonClass PyAbility_104272.PyUIController_104272
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_104272 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x0F10(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x11F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -56,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104272">();
+		STATIC_CLASS_IMPL("PyUIController_104272")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104272")
 	}
 	static class UPyUIController_104272* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104272>();
 	}
 };
-static_assert(alignof(UPyUIController_104272) == 0x000008, "Wrong alignment on UPyUIController_104272");
-static_assert(sizeof(UPyUIController_104272) == 0x000F20, "Wrong size on UPyUIController_104272");
-static_assert(offsetof(UPyUIController_104272, SpecialAbilityTag) == 0x000F10, "Member 'UPyUIController_104272::SpecialAbilityTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_104272;
 
 }
 

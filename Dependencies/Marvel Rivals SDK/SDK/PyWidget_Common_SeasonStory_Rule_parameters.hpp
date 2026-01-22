@@ -21,9 +21,7 @@ struct PyWidget_Common_SeasonStory_Rule_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_SeasonStory_Rule_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Common_SeasonStory_Rule_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Common_SeasonStory_Rule_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Common_SeasonStory_Rule_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Common_SeasonStory_Rule_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Common_SeasonStory_Rule_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_SeasonStory_Rule_OnVisibleChanged;
 
 }
 

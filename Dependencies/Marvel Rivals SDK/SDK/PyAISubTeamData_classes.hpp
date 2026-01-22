@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISubTeamData">();
+		STATIC_CLASS_IMPL("PyAISubTeamData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISubTeamData")
 	}
 	static class APyAISubTeamData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAISubTeamData>();
 	}
 };
-static_assert(alignof(APyAISubTeamData) == 0x000010, "Wrong alignment on APyAISubTeamData");
-static_assert(sizeof(APyAISubTeamData) == 0x000760, "Wrong size on APyAISubTeamData");
-static_assert(offsetof(APyAISubTeamData, SubTeamMembers) == 0x000748, "Member 'APyAISubTeamData::SubTeamMembers' has a wrong offset!");
+DUMPER7_ASSERTS_APyAISubTeamData;
 
 }
 

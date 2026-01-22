@@ -40,18 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEntryDoorControl">();
+		STATIC_CLASS_IMPL("PyEntryDoorControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEntryDoorControl")
 	}
 	static class APyEntryDoorControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEntryDoorControl>();
 	}
 };
-static_assert(alignof(APyEntryDoorControl) == 0x000010, "Wrong alignment on APyEntryDoorControl");
-static_assert(sizeof(APyEntryDoorControl) == 0x000700, "Wrong size on APyEntryDoorControl");
-static_assert(offsetof(APyEntryDoorControl, LevelSequenceRes) == 0x0006E0, "Member 'APyEntryDoorControl::LevelSequenceRes' has a wrong offset!");
-static_assert(offsetof(APyEntryDoorControl, OpenAudio) == 0x0006E8, "Member 'APyEntryDoorControl::OpenAudio' has a wrong offset!");
-static_assert(offsetof(APyEntryDoorControl, State) == 0x0006F0, "Member 'APyEntryDoorControl::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyEntryDoorControl;
 
 }
 

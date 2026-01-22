@@ -23,15 +23,18 @@ class UMaskHeroHeadBP_C final : public UPyWidget_MaskHeroHead
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MaskHeroHeadBP_C">();
+		BP_STATIC_CLASS_IMPL("MaskHeroHeadBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaskHeroHeadBP_C")
 	}
 	static class UMaskHeroHeadBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaskHeroHeadBP_C>();
 	}
 };
-static_assert(alignof(UMaskHeroHeadBP_C) == 0x000010, "Wrong alignment on UMaskHeroHeadBP_C");
-static_assert(sizeof(UMaskHeroHeadBP_C) == 0x0004D0, "Wrong size on UMaskHeroHeadBP_C");
+DUMPER7_ASSERTS_UMaskHeroHeadBP_C;
 
 }
 

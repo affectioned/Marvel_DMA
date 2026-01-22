@@ -36,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRebirthConfig">();
+		STATIC_CLASS_IMPL("PyRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRebirthConfig")
 	}
 	static class UPyRebirthConfig* GetDefaultObj()
 	{
@@ -44,14 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyRebirthConfig) == 0x000008, "Wrong alignment on UPyRebirthConfig");
-static_assert(sizeof(UPyRebirthConfig) == 0x000098, "Wrong size on UPyRebirthConfig");
-static_assert(offsetof(UPyRebirthConfig, BirthType) == 0x000030, "Member 'UPyRebirthConfig::BirthType' has a wrong offset!");
-static_assert(offsetof(UPyRebirthConfig, RebirthTime) == 0x000034, "Member 'UPyRebirthConfig::RebirthTime' has a wrong offset!");
-static_assert(offsetof(UPyRebirthConfig, OverTimeAdd) == 0x000038, "Member 'UPyRebirthConfig::OverTimeAdd' has a wrong offset!");
-static_assert(offsetof(UPyRebirthConfig, RebirthBuffIds) == 0x000040, "Member 'UPyRebirthConfig::RebirthBuffIds' has a wrong offset!");
-static_assert(offsetof(UPyRebirthConfig, bPreBirthRoom) == 0x000090, "Member 'UPyRebirthConfig::bPreBirthRoom' has a wrong offset!");
-static_assert(offsetof(UPyRebirthConfig, bCanSelectPlayerStart) == 0x000091, "Member 'UPyRebirthConfig::bCanSelectPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyKeepAwayRebirthConfig
 // 0x0008 (0x00A0 - 0x0098)
@@ -67,7 +64,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKeepAwayRebirthConfig">();
+		STATIC_CLASS_IMPL("PyKeepAwayRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKeepAwayRebirthConfig")
 	}
 	static class UPyKeepAwayRebirthConfig* GetDefaultObj()
 	{
@@ -75,11 +76,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyKeepAwayRebirthConfig) == 0x000008, "Wrong alignment on UPyKeepAwayRebirthConfig");
-static_assert(sizeof(UPyKeepAwayRebirthConfig) == 0x0000A0, "Wrong size on UPyKeepAwayRebirthConfig");
-static_assert(offsetof(UPyKeepAwayRebirthConfig, bInitialCheckBattleSide) == 0x000092, "Member 'UPyKeepAwayRebirthConfig::bInitialCheckBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyKeepAwayRebirthConfig, InitialStartUseCount) == 0x000094, "Member 'UPyKeepAwayRebirthConfig::InitialStartUseCount' has a wrong offset!");
-static_assert(offsetof(UPyKeepAwayRebirthConfig, bKeeyAwayByBattleSide) == 0x000098, "Member 'UPyKeepAwayRebirthConfig::bKeeyAwayByBattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKeepAwayRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyDeathMatchRebirthConfig
 // 0x0008 (0x00A8 - 0x00A0)
@@ -93,17 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathMatchRebirthConfig">();
+		STATIC_CLASS_IMPL("PyDeathMatchRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathMatchRebirthConfig")
 	}
 	static class UPyDeathMatchRebirthConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDeathMatchRebirthConfig>();
 	}
 };
-static_assert(alignof(UPyDeathMatchRebirthConfig) == 0x000008, "Wrong alignment on UPyDeathMatchRebirthConfig");
-static_assert(sizeof(UPyDeathMatchRebirthConfig) == 0x0000A8, "Wrong size on UPyDeathMatchRebirthConfig");
-static_assert(offsetof(UPyDeathMatchRebirthConfig, RebirthTimeSelf) == 0x00009C, "Member 'UPyDeathMatchRebirthConfig::RebirthTimeSelf' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchRebirthConfig, RebirthStartNum) == 0x0000A0, "Member 'UPyDeathMatchRebirthConfig::RebirthStartNum' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDeathMatchRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyTimestreamRaidRebirthConfig
 // 0x0008 (0x00A0 - 0x0098)
@@ -117,17 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimestreamRaidRebirthConfig">();
+		STATIC_CLASS_IMPL("PyTimestreamRaidRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimestreamRaidRebirthConfig")
 	}
 	static class UPyTimestreamRaidRebirthConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTimestreamRaidRebirthConfig>();
 	}
 };
-static_assert(alignof(UPyTimestreamRaidRebirthConfig) == 0x000008, "Wrong alignment on UPyTimestreamRaidRebirthConfig");
-static_assert(sizeof(UPyTimestreamRaidRebirthConfig) == 0x0000A0, "Wrong size on UPyTimestreamRaidRebirthConfig");
-static_assert(offsetof(UPyTimestreamRaidRebirthConfig, WaveRebirthTime) == 0x000094, "Member 'UPyTimestreamRaidRebirthConfig::WaveRebirthTime' has a wrong offset!");
-static_assert(offsetof(UPyTimestreamRaidRebirthConfig, WaveRebirthTimeThreshold) == 0x000098, "Member 'UPyTimestreamRaidRebirthConfig::WaveRebirthTimeThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTimestreamRaidRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyAssultRebirthConfig
 // 0x0008 (0x00A0 - 0x0098)
@@ -142,18 +141,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAssultRebirthConfig">();
+		STATIC_CLASS_IMPL("PyAssultRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAssultRebirthConfig")
 	}
 	static class UPyAssultRebirthConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAssultRebirthConfig>();
 	}
 };
-static_assert(alignof(UPyAssultRebirthConfig) == 0x000008, "Wrong alignment on UPyAssultRebirthConfig");
-static_assert(sizeof(UPyAssultRebirthConfig) == 0x0000A0, "Wrong size on UPyAssultRebirthConfig");
-static_assert(offsetof(UPyAssultRebirthConfig, TimeFactorK) == 0x000094, "Member 'UPyAssultRebirthConfig::TimeFactorK' has a wrong offset!");
-static_assert(offsetof(UPyAssultRebirthConfig, ActiveUpTime) == 0x000098, "Member 'UPyAssultRebirthConfig::ActiveUpTime' has a wrong offset!");
-static_assert(offsetof(UPyAssultRebirthConfig, ActiveDownTime) == 0x00009C, "Member 'UPyAssultRebirthConfig::ActiveDownTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAssultRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyMultiBirthBaseConfig
 // 0x0000 (0x0098 - 0x0098)
@@ -166,16 +165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiBirthBaseConfig">();
+		STATIC_CLASS_IMPL("PyMultiBirthBaseConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiBirthBaseConfig")
 	}
 	static class UPyMultiBirthBaseConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiBirthBaseConfig>();
 	}
 };
-static_assert(alignof(UPyMultiBirthBaseConfig) == 0x000008, "Wrong alignment on UPyMultiBirthBaseConfig");
-static_assert(sizeof(UPyMultiBirthBaseConfig) == 0x000098, "Wrong size on UPyMultiBirthBaseConfig");
-static_assert(offsetof(UPyMultiBirthBaseConfig, MaxPlayerNumPerBirthBase) == 0x000094, "Member 'UPyMultiBirthBaseConfig::MaxPlayerNumPerBirthBase' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMultiBirthBaseConfig;
 
 // PythonClass PyRebirthRuleComponent.PyEscortRebirthConfig
 // 0x0008 (0x00A8 - 0x00A0)
@@ -187,16 +188,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortRebirthConfig">();
+		STATIC_CLASS_IMPL("PyEscortRebirthConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortRebirthConfig")
 	}
 	static class UPyEscortRebirthConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortRebirthConfig>();
 	}
 };
-static_assert(alignof(UPyEscortRebirthConfig) == 0x000008, "Wrong alignment on UPyEscortRebirthConfig");
-static_assert(sizeof(UPyEscortRebirthConfig) == 0x0000A8, "Wrong size on UPyEscortRebirthConfig");
-static_assert(offsetof(UPyEscortRebirthConfig, ActiveDis) == 0x0000A0, "Member 'UPyEscortRebirthConfig::ActiveDis' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEscortRebirthConfig;
 
 // PythonClass PyRebirthRuleComponent.PyRebirthRuleComponent
 // 0x0088 (0x0190 - 0x0108)
@@ -226,26 +229,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRebirthRuleComponent">();
+		STATIC_CLASS_IMPL("PyRebirthRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRebirthRuleComponent")
 	}
 	static class UPyRebirthRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRebirthRuleComponent>();
 	}
 };
-static_assert(alignof(UPyRebirthRuleComponent) == 0x000008, "Wrong alignment on UPyRebirthRuleComponent");
-static_assert(sizeof(UPyRebirthRuleComponent) == 0x000190, "Wrong size on UPyRebirthRuleComponent");
-static_assert(offsetof(UPyRebirthRuleComponent, BirthType) == 0x000108, "Member 'UPyRebirthRuleComponent::BirthType' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, RebirthTime) == 0x00010C, "Member 'UPyRebirthRuleComponent::RebirthTime' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, OverTimeAdd) == 0x000110, "Member 'UPyRebirthRuleComponent::OverTimeAdd' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, RebirthBuffIds) == 0x000118, "Member 'UPyRebirthRuleComponent::RebirthBuffIds' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, RebirthTimeSelf) == 0x000168, "Member 'UPyRebirthRuleComponent::RebirthTimeSelf' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, RebirthStartNum) == 0x00016C, "Member 'UPyRebirthRuleComponent::RebirthStartNum' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, bInitialCheckBattleSide) == 0x000170, "Member 'UPyRebirthRuleComponent::bInitialCheckBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, InitialStartUseCount) == 0x000174, "Member 'UPyRebirthRuleComponent::InitialStartUseCount' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, bKeeyAwayByBattleSide) == 0x000178, "Member 'UPyRebirthRuleComponent::bKeeyAwayByBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, bCanSelectPlayerStart) == 0x000179, "Member 'UPyRebirthRuleComponent::bCanSelectPlayerStart' has a wrong offset!");
-static_assert(offsetof(UPyRebirthRuleComponent, BirthBases) == 0x000180, "Member 'UPyRebirthRuleComponent::BirthBases' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRebirthRuleComponent;
 
 // PythonClass PyRebirthRuleComponent.PyTimestreamRaidRebirthComponent
 // 0x0000 (0x0190 - 0x0190)
@@ -254,15 +249,18 @@ class UPyTimestreamRaidRebirthComponent final : public UPyRebirthRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimestreamRaidRebirthComponent">();
+		STATIC_CLASS_IMPL("PyTimestreamRaidRebirthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimestreamRaidRebirthComponent")
 	}
 	static class UPyTimestreamRaidRebirthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTimestreamRaidRebirthComponent>();
 	}
 };
-static_assert(alignof(UPyTimestreamRaidRebirthComponent) == 0x000008, "Wrong alignment on UPyTimestreamRaidRebirthComponent");
-static_assert(sizeof(UPyTimestreamRaidRebirthComponent) == 0x000190, "Wrong size on UPyTimestreamRaidRebirthComponent");
+DUMPER7_ASSERTS_UPyTimestreamRaidRebirthComponent;
 
 // PythonClass PyRebirthRuleComponent.PyMultiBirthBaseRebirthComponent
 // 0x0008 (0x0198 - 0x0190)
@@ -274,16 +272,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiBirthBaseRebirthComponent">();
+		STATIC_CLASS_IMPL("PyMultiBirthBaseRebirthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiBirthBaseRebirthComponent")
 	}
 	static class UPyMultiBirthBaseRebirthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiBirthBaseRebirthComponent>();
 	}
 };
-static_assert(alignof(UPyMultiBirthBaseRebirthComponent) == 0x000008, "Wrong alignment on UPyMultiBirthBaseRebirthComponent");
-static_assert(sizeof(UPyMultiBirthBaseRebirthComponent) == 0x000198, "Wrong size on UPyMultiBirthBaseRebirthComponent");
-static_assert(offsetof(UPyMultiBirthBaseRebirthComponent, MaxPlayerNumPerBirthBase) == 0x000190, "Member 'UPyMultiBirthBaseRebirthComponent::MaxPlayerNumPerBirthBase' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMultiBirthBaseRebirthComponent;
 
 }
 

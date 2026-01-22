@@ -75,10 +75,7 @@ public:
 	class ASVONVolume*                            MyDataVolume;                                      // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UObject*                                MyQuerier;                                         // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FSvonGraphWrapper) == 0x000008, "Wrong alignment on FSvonGraphWrapper");
-static_assert(sizeof(FSvonGraphWrapper) == 0x000010, "Wrong size on FSvonGraphWrapper");
-static_assert(offsetof(FSvonGraphWrapper, MyDataVolume) == 0x000000, "Member 'FSvonGraphWrapper::MyDataVolume' has a wrong offset!");
-static_assert(offsetof(FSvonGraphWrapper, MyQuerier) == 0x000008, "Member 'FSvonGraphWrapper::MyQuerier' has a wrong offset!");
+DUMPER7_ASSERTS_FSvonGraphWrapper;
 
 // ScriptStruct UESVON.SVONPathFinderSettings
 // 0x0048 (0x0048 - 0x0000)
@@ -113,29 +110,7 @@ public:
 	int32                                         AStarNodePoolLimit;                                // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSVONPathFinderSettings) == 0x000008, "Wrong alignment on FSVONPathFinderSettings");
-static_assert(sizeof(FSVONPathFinderSettings) == 0x000048, "Wrong size on FSVONPathFinderSettings");
-static_assert(offsetof(FSVONPathFinderSettings, PathFindingMethod) == 0x000000, "Member 'FSVONPathFinderSettings::PathFindingMethod' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, UsePathCache) == 0x000001, "Member 'FSVONPathFinderSettings::UsePathCache' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, UseUnitCost) == 0x000002, "Member 'FSVONPathFinderSettings::UseUnitCost' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, UnitCost) == 0x000004, "Member 'FSVONPathFinderSettings::UnitCost' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, EstimateWeight) == 0x000008, "Member 'FSVONPathFinderSettings::EstimateWeight' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, NodeSizeCompensation) == 0x00000C, "Member 'FSVONPathFinderSettings::NodeSizeCompensation' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, UseStartLayerForHeuristicsCost) == 0x000010, "Member 'FSVONPathFinderSettings::UseStartLayerForHeuristicsCost' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, SmoothingIterations) == 0x000014, "Member 'FSVONPathFinderSettings::SmoothingIterations' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, bAllowPartialPath) == 0x000018, "Member 'FSVONPathFinderSettings::bAllowPartialPath' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, bEnablePathOptimizeWithTrace) == 0x000019, "Member 'FSVONPathFinderSettings::bEnablePathOptimizeWithTrace' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, MaxTraceNumWithPathOptimize) == 0x00001C, "Member 'FSVONPathFinderSettings::MaxTraceNumWithPathOptimize' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, MaxAllowedTraceDistance) == 0x000020, "Member 'FSVONPathFinderSettings::MaxAllowedTraceDistance' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, TraceTestCapsuleRadius) == 0x000024, "Member 'FSVONPathFinderSettings::TraceTestCapsuleRadius' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, TraceTestCapsuleHalfHeight) == 0x000028, "Member 'FSVONPathFinderSettings::TraceTestCapsuleHalfHeight' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, bTryUseCharacterCapsuleForTrace) == 0x00002C, "Member 'FSVONPathFinderSettings::bTryUseCharacterCapsuleForTrace' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, PathCostType) == 0x00002D, "Member 'FSVONPathFinderSettings::PathCostType' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, bEnableIterationNumLimit) == 0x00002E, "Member 'FSVONPathFinderSettings::bEnableIterationNumLimit' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, IterationEstimator) == 0x000030, "Member 'FSVONPathFinderSettings::IterationEstimator' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, bUseSpaceCost) == 0x000038, "Member 'FSVONPathFinderSettings::bUseSpaceCost' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, SpaceCost) == 0x00003C, "Member 'FSVONPathFinderSettings::SpaceCost' has a wrong offset!");
-static_assert(offsetof(FSVONPathFinderSettings, AStarNodePoolLimit) == 0x000040, "Member 'FSVONPathFinderSettings::AStarNodePoolLimit' has a wrong offset!");
+DUMPER7_ASSERTS_FSVONPathFinderSettings;
 
 // ScriptStruct UESVON.AStarStat
 // 0x0010 (0x0010 - 0x0000)
@@ -147,12 +122,7 @@ public:
 	float                                         PathLength;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeCostInMilliseconds;                            // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAStarStat) == 0x000004, "Wrong alignment on FAStarStat");
-static_assert(sizeof(FAStarStat) == 0x000010, "Wrong size on FAStarStat");
-static_assert(offsetof(FAStarStat, IterationNum) == 0x000000, "Member 'FAStarStat::IterationNum' has a wrong offset!");
-static_assert(offsetof(FAStarStat, PathNodeNum) == 0x000004, "Member 'FAStarStat::PathNodeNum' has a wrong offset!");
-static_assert(offsetof(FAStarStat, PathLength) == 0x000008, "Member 'FAStarStat::PathLength' has a wrong offset!");
-static_assert(offsetof(FAStarStat, TimeCostInMilliseconds) == 0x00000C, "Member 'FAStarStat::TimeCostInMilliseconds' has a wrong offset!");
+DUMPER7_ASSERTS_FAStarStat;
 
 // ScriptStruct UESVON.VectorPair
 // 0x0030 (0x0030 - 0x0000)
@@ -162,10 +132,7 @@ public:
 	struct FVector                                Start;                                             // 0x0000(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                End;                                               // 0x0018(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVectorPair) == 0x000008, "Wrong alignment on FVectorPair");
-static_assert(sizeof(FVectorPair) == 0x000030, "Wrong size on FVectorPair");
-static_assert(offsetof(FVectorPair, Start) == 0x000000, "Member 'FVectorPair::Start' has a wrong offset!");
-static_assert(offsetof(FVectorPair, End) == 0x000018, "Member 'FVectorPair::End' has a wrong offset!");
+DUMPER7_ASSERTS_FVectorPair;
 
 // ScriptStruct UESVON.SvonDebugRenderingSettings
 // 0x0020 (0x0020 - 0x0000)
@@ -186,10 +153,7 @@ public:
 	uint8                                         bDebugDrawActivePaths : 1;                         // 0x0018(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSvonDebugRenderingSettings) == 0x000008, "Wrong alignment on FSvonDebugRenderingSettings");
-static_assert(sizeof(FSvonDebugRenderingSettings) == 0x000020, "Wrong size on FSvonDebugRenderingSettings");
-static_assert(offsetof(FSvonDebugRenderingSettings, DebugRange) == 0x000000, "Member 'FSvonDebugRenderingSettings::DebugRange' has a wrong offset!");
-static_assert(offsetof(FSvonDebugRenderingSettings, LayerIndexToDraw) == 0x000008, "Member 'FSvonDebugRenderingSettings::LayerIndexToDraw' has a wrong offset!");
+DUMPER7_ASSERTS_FSvonDebugRenderingSettings;
 
 }
 

@@ -23,15 +23,18 @@ class UPySubVoMgr_Chat final : public UPySubVoMgrBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgr_Chat">();
+		STATIC_CLASS_IMPL("PySubVoMgr_Chat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgr_Chat")
 	}
 	static class UPySubVoMgr_Chat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgr_Chat>();
 	}
 };
-static_assert(alignof(UPySubVoMgr_Chat) == 0x000008, "Wrong alignment on UPySubVoMgr_Chat");
-static_assert(sizeof(UPySubVoMgr_Chat) == 0x000108, "Wrong size on UPySubVoMgr_Chat");
+DUMPER7_ASSERTS_UPySubVoMgr_Chat;
 
 }
 

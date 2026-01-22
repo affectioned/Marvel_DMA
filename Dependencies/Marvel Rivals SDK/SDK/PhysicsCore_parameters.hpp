@@ -22,10 +22,7 @@ public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UChaosServerCollisionDebugSubsystem*    ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChaosServerCollisionDebugSubsystem_GetDebugInstance) == 0x000008, "Wrong alignment on ChaosServerCollisionDebugSubsystem_GetDebugInstance");
-static_assert(sizeof(ChaosServerCollisionDebugSubsystem_GetDebugInstance) == 0x000010, "Wrong size on ChaosServerCollisionDebugSubsystem_GetDebugInstance");
-static_assert(offsetof(ChaosServerCollisionDebugSubsystem_GetDebugInstance, WorldContextObject) == 0x000000, "Member 'ChaosServerCollisionDebugSubsystem_GetDebugInstance::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(ChaosServerCollisionDebugSubsystem_GetDebugInstance, ReturnValue) == 0x000008, "Member 'ChaosServerCollisionDebugSubsystem_GetDebugInstance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ChaosServerCollisionDebugSubsystem_GetDebugInstance;
 
 }
 

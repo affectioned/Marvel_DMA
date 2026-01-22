@@ -21,9 +21,7 @@ struct PyLevelLoadSubsystem_IsReplayMapLoadCompleted final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelLoadSubsystem_IsReplayMapLoadCompleted) == 0x000001, "Wrong alignment on PyLevelLoadSubsystem_IsReplayMapLoadCompleted");
-static_assert(sizeof(PyLevelLoadSubsystem_IsReplayMapLoadCompleted) == 0x000001, "Wrong size on PyLevelLoadSubsystem_IsReplayMapLoadCompleted");
-static_assert(offsetof(PyLevelLoadSubsystem_IsReplayMapLoadCompleted, ReturnValue) == 0x000000, "Member 'PyLevelLoadSubsystem_IsReplayMapLoadCompleted::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelLoadSubsystem_IsReplayMapLoadCompleted;
 
 // PythonFunction PyLevelLoadSubsystem.PyLevelLoadSubsystem.PyReplayLoadMap
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyLevelLoadSubsystem_PyReplayLoadMap final
 public:
 	int32                                         map_part_id;                                       // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelLoadSubsystem_PyReplayLoadMap) == 0x000004, "Wrong alignment on PyLevelLoadSubsystem_PyReplayLoadMap");
-static_assert(sizeof(PyLevelLoadSubsystem_PyReplayLoadMap) == 0x000004, "Wrong size on PyLevelLoadSubsystem_PyReplayLoadMap");
-static_assert(offsetof(PyLevelLoadSubsystem_PyReplayLoadMap, map_part_id) == 0x000000, "Member 'PyLevelLoadSubsystem_PyReplayLoadMap::map_part_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelLoadSubsystem_PyReplayLoadMap;
 
 }
 

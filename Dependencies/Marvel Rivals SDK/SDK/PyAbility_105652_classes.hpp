@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105652.PyConfig_105652
-// 0x0BF0 (0x0C88 - 0x0098)
+// 0x0F10 (0x0FA8 - 0x0098)
 class UPyConfig_105652 final : public UMarvelAbilityConfig
 {
 public:
@@ -28,27 +28,26 @@ public:
 	struct FVector                                DefalutDashDir;                                    // 0x00A0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ElevationAngle;                                    // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00C0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00C0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105652">();
+		STATIC_CLASS_IMPL("PyConfig_105652")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105652")
 	}
 	static class UPyConfig_105652* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105652>();
 	}
 };
-static_assert(alignof(UPyConfig_105652) == 0x000008, "Wrong alignment on UPyConfig_105652");
-static_assert(sizeof(UPyConfig_105652) == 0x000C88, "Wrong size on UPyConfig_105652");
-static_assert(offsetof(UPyConfig_105652, ToAirState) == 0x000098, "Member 'UPyConfig_105652::ToAirState' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105652, DefalutDashDir) == 0x0000A0, "Member 'UPyConfig_105652::DefalutDashDir' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105652, ElevationAngle) == 0x0000B8, "Member 'UPyConfig_105652::ElevationAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105652, DashInfo) == 0x0000C0, "Member 'UPyConfig_105652::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105652;
 
 // PythonClass PyAbility_105652.PyAbility_105652
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105652 : public UAbility_108
 {
 public:
@@ -61,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105652">();
+		STATIC_CLASS_IMPL("PyAbility_105652")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105652")
 	}
 	static class UPyAbility_105652* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105652>();
 	}
 };
-static_assert(alignof(UPyAbility_105652) == 0x000008, "Wrong alignment on UPyAbility_105652");
-static_assert(sizeof(UPyAbility_105652) == 0x0029F8, "Wrong size on UPyAbility_105652");
+DUMPER7_ASSERTS_UPyAbility_105652;
 
 }
 

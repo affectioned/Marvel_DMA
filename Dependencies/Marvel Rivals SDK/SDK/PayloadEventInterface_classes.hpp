@@ -26,7 +26,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PayloadEventInterface_C">();
+		BP_STATIC_CLASS_IMPL("PayloadEventInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PayloadEventInterface_C")
 	}
 	static class IPayloadEventInterface_C* GetDefaultObj()
 	{
@@ -42,8 +46,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IPayloadEventInterface_C) == 0x000001, "Wrong alignment on IPayloadEventInterface_C");
-static_assert(sizeof(IPayloadEventInterface_C) == 0x000001, "Wrong size on IPayloadEventInterface_C");
+DUMPER7_ASSERTS_IPayloadEventInterface_C;
 
 }
 

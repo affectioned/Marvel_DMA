@@ -21,9 +21,7 @@ struct PyLevelSummoned_21300101_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300101_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelSummoned_21300101_ReceiveTick");
-static_assert(sizeof(PyLevelSummoned_21300101_ReceiveTick) == 0x000004, "Wrong size on PyLevelSummoned_21300101_ReceiveTick");
-static_assert(offsetof(PyLevelSummoned_21300101_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelSummoned_21300101_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300101_ReceiveTick;
 
 }
 

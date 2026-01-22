@@ -21,9 +21,7 @@ struct PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible");
-static_assert(sizeof(PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible");
-static_assert(offsetof(PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HomeEntrance_Activity_Item_EpicLinkage_MarvelSetVisible;
 
 }
 

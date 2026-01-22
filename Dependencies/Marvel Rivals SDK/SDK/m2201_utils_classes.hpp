@@ -23,15 +23,18 @@ class UMemberUnitItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MemberUnitItemData">();
+		STATIC_CLASS_IMPL("MemberUnitItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MemberUnitItemData")
 	}
 	static class UMemberUnitItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMemberUnitItemData>();
 	}
 };
-static_assert(alignof(UMemberUnitItemData) == 0x000008, "Wrong alignment on UMemberUnitItemData");
-static_assert(sizeof(UMemberUnitItemData) == 0x000030, "Wrong size on UMemberUnitItemData");
+DUMPER7_ASSERTS_UMemberUnitItemData;
 
 }
 

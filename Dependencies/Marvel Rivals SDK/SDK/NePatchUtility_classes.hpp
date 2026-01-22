@@ -23,15 +23,18 @@ class UNeExtractSerializedShaderArchiveCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NeExtractSerializedShaderArchiveCommandlet">();
+		STATIC_CLASS_IMPL("NeExtractSerializedShaderArchiveCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NeExtractSerializedShaderArchiveCommandlet")
 	}
 	static class UNeExtractSerializedShaderArchiveCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNeExtractSerializedShaderArchiveCommandlet>();
 	}
 };
-static_assert(alignof(UNeExtractSerializedShaderArchiveCommandlet) == 0x000008, "Wrong alignment on UNeExtractSerializedShaderArchiveCommandlet");
-static_assert(sizeof(UNeExtractSerializedShaderArchiveCommandlet) == 0x000088, "Wrong size on UNeExtractSerializedShaderArchiveCommandlet");
+DUMPER7_ASSERTS_UNeExtractSerializedShaderArchiveCommandlet;
 
 // Class NePatchUtility.NePakCommandlet
 // 0x0000 (0x0088 - 0x0088)
@@ -40,15 +43,18 @@ class UNePakCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NePakCommandlet">();
+		STATIC_CLASS_IMPL("NePakCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NePakCommandlet")
 	}
 	static class UNePakCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNePakCommandlet>();
 	}
 };
-static_assert(alignof(UNePakCommandlet) == 0x000008, "Wrong alignment on UNePakCommandlet");
-static_assert(sizeof(UNePakCommandlet) == 0x000088, "Wrong size on UNePakCommandlet");
+DUMPER7_ASSERTS_UNePakCommandlet;
 
 // Class NePatchUtility.NeGenHashFromPakCommandlet
 // 0x0000 (0x0088 - 0x0088)
@@ -57,15 +63,18 @@ class UNeGenHashFromPakCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NeGenHashFromPakCommandlet">();
+		STATIC_CLASS_IMPL("NeGenHashFromPakCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NeGenHashFromPakCommandlet")
 	}
 	static class UNeGenHashFromPakCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNeGenHashFromPakCommandlet>();
 	}
 };
-static_assert(alignof(UNeGenHashFromPakCommandlet) == 0x000008, "Wrong alignment on UNeGenHashFromPakCommandlet");
-static_assert(sizeof(UNeGenHashFromPakCommandlet) == 0x000088, "Wrong size on UNeGenHashFromPakCommandlet");
+DUMPER7_ASSERTS_UNeGenHashFromPakCommandlet;
 
 // Class NePatchUtility.NeUCasPatchTestCommandlet
 // 0x0000 (0x0088 - 0x0088)
@@ -74,15 +83,18 @@ class UNeUCasPatchTestCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NeUCasPatchTestCommandlet">();
+		STATIC_CLASS_IMPL("NeUCasPatchTestCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NeUCasPatchTestCommandlet")
 	}
 	static class UNeUCasPatchTestCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNeUCasPatchTestCommandlet>();
 	}
 };
-static_assert(alignof(UNeUCasPatchTestCommandlet) == 0x000008, "Wrong alignment on UNeUCasPatchTestCommandlet");
-static_assert(sizeof(UNeUCasPatchTestCommandlet) == 0x000088, "Wrong size on UNeUCasPatchTestCommandlet");
+DUMPER7_ASSERTS_UNeUCasPatchTestCommandlet;
 
 // Class NePatchUtility.NePatchUtility
 // 0x0000 (0x0030 - 0x0030)
@@ -151,15 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NePatchUtility">();
+		STATIC_CLASS_IMPL("NePatchUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NePatchUtility")
 	}
 	static class UNePatchUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNePatchUtility>();
 	}
 };
-static_assert(alignof(UNePatchUtility) == 0x000008, "Wrong alignment on UNePatchUtility");
-static_assert(sizeof(UNePatchUtility) == 0x000030, "Wrong size on UNePatchUtility");
+DUMPER7_ASSERTS_UNePatchUtility;
 
 }
 

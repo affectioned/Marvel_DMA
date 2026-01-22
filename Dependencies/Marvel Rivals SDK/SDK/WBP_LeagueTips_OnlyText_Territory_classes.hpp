@@ -40,30 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LeagueTips_OnlyText_Territory_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LeagueTips_OnlyText_Territory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LeagueTips_OnlyText_Territory_C")
 	}
 	static class UWBP_LeagueTips_OnlyText_Territory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LeagueTips_OnlyText_Territory_C>();
 	}
 };
-static_assert(alignof(UWBP_LeagueTips_OnlyText_Territory_C) == 0x000008, "Wrong alignment on UWBP_LeagueTips_OnlyText_Territory_C");
-static_assert(sizeof(UWBP_LeagueTips_OnlyText_Territory_C) == 0x000430, "Wrong size on UWBP_LeagueTips_OnlyText_Territory_C");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Img_ClanBg) == 0x0003B8, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Img_ClanBg' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Img_ClanBg_1) == 0x0003C0, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Img_ClanBg_1' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Img_ClanIcon) == 0x0003C8, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Img_ClanIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Img_ClanIcon_1) == 0x0003D0, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Img_ClanIcon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Img_Territory_Bg) == 0x0003D8, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Img_Territory_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Overlay_ClanIcon) == 0x0003E0, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Overlay_ClanIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Overlay_ClanIcon_1) == 0x0003E8, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Overlay_ClanIcon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Overlay_Territory_Pc) == 0x0003F0, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Overlay_Territory_Pc' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Overlay_Territory_Ps) == 0x0003F8, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Overlay_Territory_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Text_Territory_Name) == 0x000400, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Text_Territory_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Text_Territory_Name_1) == 0x000408, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Text_Territory_Name_1' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Text_TimeZone) == 0x000410, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Text_TimeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, Text_TimeZone_1) == 0x000418, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::Text_TimeZone_1' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, WBP_Platform_Console) == 0x000420, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::WBP_Platform_Console' has a wrong offset!");
-static_assert(offsetof(UWBP_LeagueTips_OnlyText_Territory_C, WBP_Platform_Pc) == 0x000428, "Member 'UWBP_LeagueTips_OnlyText_Territory_C::WBP_Platform_Pc' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_LeagueTips_OnlyText_Territory_C;
 
 }
 

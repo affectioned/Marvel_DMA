@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUpdraftRange">();
+		STATIC_CLASS_IMPL("PyUpdraftRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUpdraftRange")
 	}
 	static class APyUpdraftRange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyUpdraftRange>();
 	}
 };
-static_assert(alignof(APyUpdraftRange) == 0x000010, "Wrong alignment on APyUpdraftRange");
-static_assert(sizeof(APyUpdraftRange) == 0x000770, "Wrong size on APyUpdraftRange");
-static_assert(offsetof(APyUpdraftRange, VelocityZ) == 0x000760, "Member 'APyUpdraftRange::VelocityZ' has a wrong offset!");
+DUMPER7_ASSERTS_APyUpdraftRange;
 
 }
 

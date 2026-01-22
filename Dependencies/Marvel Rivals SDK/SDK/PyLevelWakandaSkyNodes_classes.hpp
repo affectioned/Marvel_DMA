@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelWakandaSkyNodes">();
+		STATIC_CLASS_IMPL("PyLevelWakandaSkyNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelWakandaSkyNodes")
 	}
 	static class UPyLevelWakandaSkyNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelWakandaSkyNodes>();
 	}
 };
-static_assert(alignof(UPyLevelWakandaSkyNodes) == 0x000008, "Wrong alignment on UPyLevelWakandaSkyNodes");
-static_assert(sizeof(UPyLevelWakandaSkyNodes) == 0x000030, "Wrong size on UPyLevelWakandaSkyNodes");
+DUMPER7_ASSERTS_UPyLevelWakandaSkyNodes;
 
 // PythonClass PyLevelWakandaSkyNodes.PyWakandaSkyManagerComponent
 // 0x0038 (0x0140 - 0x0108)
@@ -57,22 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWakandaSkyManagerComponent">();
+		STATIC_CLASS_IMPL("PyWakandaSkyManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWakandaSkyManagerComponent")
 	}
 	static class UPyWakandaSkyManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWakandaSkyManagerComponent>();
 	}
 };
-static_assert(alignof(UPyWakandaSkyManagerComponent) == 0x000008, "Wrong alignment on UPyWakandaSkyManagerComponent");
-static_assert(sizeof(UPyWakandaSkyManagerComponent) == 0x000140, "Wrong size on UPyWakandaSkyManagerComponent");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, Payload) == 0x000108, "Member 'UPyWakandaSkyManagerComponent::Payload' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, ProgressCurve) == 0x000110, "Member 'UPyWakandaSkyManagerComponent::ProgressCurve' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, MaterialParameter) == 0x000118, "Member 'UPyWakandaSkyManagerComponent::MaterialParameter' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, ParameterName) == 0x000120, "Member 'UPyWakandaSkyManagerComponent::ParameterName' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, FloatStartValue) == 0x000130, "Member 'UPyWakandaSkyManagerComponent::FloatStartValue' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, FloatEndValue) == 0x000134, "Member 'UPyWakandaSkyManagerComponent::FloatEndValue' has a wrong offset!");
-static_assert(offsetof(UPyWakandaSkyManagerComponent, UpdateInterval) == 0x000138, "Member 'UPyWakandaSkyManagerComponent::UpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWakandaSkyManagerComponent;
 
 }
 

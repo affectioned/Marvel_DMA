@@ -23,15 +23,18 @@ class UBTT_PyFindDeathCrystal : public UBTT_PyFindLevelActorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindDeathCrystal">();
+		STATIC_CLASS_IMPL("BTT_PyFindDeathCrystal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindDeathCrystal")
 	}
 	static class UBTT_PyFindDeathCrystal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindDeathCrystal>();
 	}
 };
-static_assert(alignof(UBTT_PyFindDeathCrystal) == 0x000008, "Wrong alignment on UBTT_PyFindDeathCrystal");
-static_assert(sizeof(UBTT_PyFindDeathCrystal) == 0x000158, "Wrong size on UBTT_PyFindDeathCrystal");
+DUMPER7_ASSERTS_UBTT_PyFindDeathCrystal;
 
 }
 

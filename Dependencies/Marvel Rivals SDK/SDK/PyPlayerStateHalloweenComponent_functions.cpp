@@ -486,31 +486,6 @@ void UPyPlayerStateHalloweenComponent::ClientReceiveWaveReward(const TArray<int3
 }
 
 
-// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnAbilityFinished
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           char_0                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyPlayerStateHalloweenComponent::OnAbilityFinished(class AActor* char_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyPlayerStateHalloweenComponent", "OnAbilityFinished");
-
-	Params::PyPlayerStateHalloweenComponent_OnAbilityFinished Parms{};
-
-	Parms.char_0 = char_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnRep_StoreCardList
 // (Native, Public, BlueprintCallable)
 
@@ -549,15 +524,15 @@ void UPyPlayerStateHalloweenComponent::OnRep_TalentTreeEffectList()
 }
 
 
-// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnRep_StorePoints
+// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnRep_OwnCardList
 // (Native, Public, BlueprintCallable)
 
-void UPyPlayerStateHalloweenComponent::OnRep_StorePoints()
+void UPyPlayerStateHalloweenComponent::OnRep_OwnCardList()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyPlayerStateHalloweenComponent", "OnRep_StorePoints");
+		Func = Class->GetFunction("PyPlayerStateHalloweenComponent", "OnRep_OwnCardList");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -568,15 +543,15 @@ void UPyPlayerStateHalloweenComponent::OnRep_StorePoints()
 }
 
 
-// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnRep_EffectList
+// PythonFunction PyPlayerStateHalloweenComponent.PyPlayerStateHalloweenComponent.OnRep_StorePoints
 // (Native, Public, BlueprintCallable)
 
-void UPyPlayerStateHalloweenComponent::OnRep_EffectList()
+void UPyPlayerStateHalloweenComponent::OnRep_StorePoints()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyPlayerStateHalloweenComponent", "OnRep_EffectList");
+		Func = Class->GetFunction("PyPlayerStateHalloweenComponent", "OnRep_StorePoints");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

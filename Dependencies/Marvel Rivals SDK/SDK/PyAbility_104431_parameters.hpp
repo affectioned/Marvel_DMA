@@ -24,9 +24,7 @@ struct PyAbility_104431_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104431_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104431_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104431_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104431_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104431_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104431.PyAbility_104431.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_104431_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104431_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104431_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104431_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104431_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_104431_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_104431.PyAbility_104431.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_104431_NativeOnMontageCompleted final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_104431_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_104431_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_104431_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_104431_NativeOnMontageCompleted, EventTag) == 0x000000, "Member 'PyAbility_104431_NativeOnMontageCompleted::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_104431.PyAbility_104431.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_104431_NativeOnMontageCancelled final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_104431_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_104431_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_104431_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_104431_NativeOnMontageCancelled, EventTag) == 0x000000, "Member 'PyAbility_104431_NativeOnMontageCancelled::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_104431.PyAbility_104431.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -68,9 +60,7 @@ struct PyAbility_104431_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_OnDashFinish) == 0x000001, "Wrong alignment on PyAbility_104431_OnDashFinish");
-static_assert(sizeof(PyAbility_104431_OnDashFinish) == 0x000001, "Wrong size on PyAbility_104431_OnDashFinish");
-static_assert(offsetof(PyAbility_104431_OnDashFinish, Reason) == 0x000000, "Member 'PyAbility_104431_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_OnDashFinish;
 
 // PythonFunction PyAbility_104431.PyAbility_104431.ClientHitTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +69,7 @@ struct PyAbility_104431_ClientHitTarget final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104431_ClientHitTarget) == 0x000008, "Wrong alignment on PyAbility_104431_ClientHitTarget");
-static_assert(sizeof(PyAbility_104431_ClientHitTarget) == 0x000008, "Wrong size on PyAbility_104431_ClientHitTarget");
-static_assert(offsetof(PyAbility_104431_ClientHitTarget, Target) == 0x000000, "Member 'PyAbility_104431_ClientHitTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104431_ClientHitTarget;
 
 // PythonFunction PyAbility_104431.PyEffectiveComponent_10443101.K2_OnPreApplyContainer
 // 0x0020 (0x0020 - 0x0000)
@@ -91,10 +79,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10443101_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10443101_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10443101_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10443101_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10443101_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10443101_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10443101_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10443101_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10443101_K2_OnPreApplyContainer;
 
 }
 

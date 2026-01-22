@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.SetListItemObject
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_Activity147_InviteEntry_SetListItemObject final
-{
-public:
-	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Activity147_InviteEntry_SetListItemObject) == 0x000008, "Wrong alignment on PyWidget_Activity147_InviteEntry_SetListItemObject");
-static_assert(sizeof(PyWidget_Activity147_InviteEntry_SetListItemObject) == 0x000008, "Wrong size on PyWidget_Activity147_InviteEntry_SetListItemObject");
-static_assert(offsetof(PyWidget_Activity147_InviteEntry_SetListItemObject, ItemObject_0) == 0x000000, "Member 'PyWidget_Activity147_InviteEntry_SetListItemObject::ItemObject_0' has a wrong offset!");
-
 // PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_Invite.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
 struct PyWidget_Activity147_Invite_MarvelSetVisible final
@@ -32,9 +21,16 @@ struct PyWidget_Activity147_Invite_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Invite_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity147_Invite_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity147_Invite_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity147_Invite_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity147_Invite_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity147_Invite_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Invite_MarvelSetVisible;
+
+// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.SetListItemObject
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_Activity147_InviteEntry_SetListItemObject final
+{
+public:
+	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_Activity147_InviteEntry_SetListItemObject;
 
 }
 

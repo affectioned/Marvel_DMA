@@ -24,9 +24,7 @@ struct PyLevelSummoned_20000010_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelSummoned_20000010_ReceiveTick");
-static_assert(sizeof(PyLevelSummoned_20000010_ReceiveTick) == 0x000004, "Wrong size on PyLevelSummoned_20000010_ReceiveTick");
-static_assert(offsetof(PyLevelSummoned_20000010_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelSummoned_20000010_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_ReceiveTick;
 
 // PythonFunction PyLevelSummoned_20000010.PyLevelSummoned_20000010.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyLevelSummoned_20000010_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelSummoned_20000010_ReceiveEndPlay");
-static_assert(sizeof(PyLevelSummoned_20000010_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelSummoned_20000010_ReceiveEndPlay");
-static_assert(offsetof(PyLevelSummoned_20000010_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelSummoned_20000010_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_ReceiveEndPlay;
 
 // PythonFunction PyLevelSummoned_20000010.PyLevelSummoned_20000010.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -48,11 +44,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_20000010_OnDeath");
-static_assert(sizeof(PyLevelSummoned_20000010_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_20000010_OnDeath");
-static_assert(offsetof(PyLevelSummoned_20000010_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_20000010_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000010_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_20000010_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000010_OnDeath, ParameterHandle) == 0x000010, "Member 'PyLevelSummoned_20000010_OnDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_OnDeath;
 
 // PythonFunction PyLevelSummoned_20000010.PyLevelSummoned_20000010.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -63,11 +55,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_OnTakeDamage) == 0x000008, "Wrong alignment on PyLevelSummoned_20000010_OnTakeDamage");
-static_assert(sizeof(PyLevelSummoned_20000010_OnTakeDamage) == 0x000028, "Wrong size on PyLevelSummoned_20000010_OnTakeDamage");
-static_assert(offsetof(PyLevelSummoned_20000010_OnTakeDamage, InSource) == 0x000000, "Member 'PyLevelSummoned_20000010_OnTakeDamage::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000010_OnTakeDamage, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_20000010_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000010_OnTakeDamage, ParameterHandle) == 0x000010, "Member 'PyLevelSummoned_20000010_OnTakeDamage::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_OnTakeDamage;
 
 // PythonFunction PyLevelSummoned_20000010.PyLevelSummoned_20000010.ShouldApplyEffect
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +64,7 @@ struct PyLevelSummoned_20000010_ShouldApplyEffect final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_ShouldApplyEffect) == 0x000001, "Wrong alignment on PyLevelSummoned_20000010_ShouldApplyEffect");
-static_assert(sizeof(PyLevelSummoned_20000010_ShouldApplyEffect) == 0x000001, "Wrong size on PyLevelSummoned_20000010_ShouldApplyEffect");
-static_assert(offsetof(PyLevelSummoned_20000010_ShouldApplyEffect, ReturnValue) == 0x000000, "Member 'PyLevelSummoned_20000010_ShouldApplyEffect::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_ShouldApplyEffect;
 
 // PythonFunction PyLevelSummoned_20000010.PyLevelSummoned_20000010.call_client_set_anim
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +73,7 @@ struct PyLevelSummoned_20000010_call_client_set_anim final
 public:
 	bool                                          is_hide;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000010_call_client_set_anim) == 0x000001, "Wrong alignment on PyLevelSummoned_20000010_call_client_set_anim");
-static_assert(sizeof(PyLevelSummoned_20000010_call_client_set_anim) == 0x000001, "Wrong size on PyLevelSummoned_20000010_call_client_set_anim");
-static_assert(offsetof(PyLevelSummoned_20000010_call_client_set_anim, is_hide) == 0x000000, "Member 'PyLevelSummoned_20000010_call_client_set_anim::is_hide' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000010_call_client_set_anim;
 
 }
 

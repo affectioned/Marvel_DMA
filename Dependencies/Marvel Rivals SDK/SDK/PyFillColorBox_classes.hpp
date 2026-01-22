@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "MarvelLevel_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -23,6 +23,7 @@ namespace SDK
 class APyFillColorBox final : public AFillColorBox
 {
 public:
+	uint8                                         Pad_6E8[0x8];                                      // 0x06E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class AActor>                     PointActor;                                        // 0x06F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<EObjectTypeQuery>                      TraceObjectTypes;                                  // 0x06F8(0x0010)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	int32                                         PointInterval;                                     // 0x0708(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -51,27 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFillColorBox">();
+		STATIC_CLASS_IMPL("PyFillColorBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFillColorBox")
 	}
 	static class APyFillColorBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyFillColorBox>();
 	}
 };
-static_assert(alignof(APyFillColorBox) == 0x000010, "Wrong alignment on APyFillColorBox");
-static_assert(sizeof(APyFillColorBox) == 0x000790, "Wrong size on APyFillColorBox");
-static_assert(offsetof(APyFillColorBox, PointActor) == 0x0006F0, "Member 'APyFillColorBox::PointActor' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, TraceObjectTypes) == 0x0006F8, "Member 'APyFillColorBox::TraceObjectTypes' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, PointInterval) == 0x000708, "Member 'APyFillColorBox::PointInterval' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, PointDict) == 0x000710, "Member 'APyFillColorBox::PointDict' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, PointPosList) == 0x000760, "Member 'APyFillColorBox::PointPosList' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, XMin) == 0x000770, "Member 'APyFillColorBox::XMin' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, YMin) == 0x000774, "Member 'APyFillColorBox::YMin' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, XMax) == 0x000778, "Member 'APyFillColorBox::XMax' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, YMax) == 0x00077C, "Member 'APyFillColorBox::YMax' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, XCount) == 0x000780, "Member 'APyFillColorBox::XCount' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, YCount) == 0x000784, "Member 'APyFillColorBox::YCount' has a wrong offset!");
-static_assert(offsetof(APyFillColorBox, PointCount) == 0x000788, "Member 'APyFillColorBox::PointCount' has a wrong offset!");
+DUMPER7_ASSERTS_APyFillColorBox;
 
 }
 

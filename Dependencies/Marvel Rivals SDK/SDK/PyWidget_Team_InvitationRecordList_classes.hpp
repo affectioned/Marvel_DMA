@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Team_InvitationRecordList.PyWidget_Team_InvitationRecordEntry
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Team_InvitationRecordEntry final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Team_InvitationRecordEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Team_InvitationRecordEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Team_InvitationRecordEntry")
 	}
 	static class UPyWidget_Team_InvitationRecordEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Team_InvitationRecordEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Team_InvitationRecordEntry) == 0x000008, "Wrong alignment on UPyWidget_Team_InvitationRecordEntry");
-static_assert(sizeof(UPyWidget_Team_InvitationRecordEntry) == 0x0005C0, "Wrong size on UPyWidget_Team_InvitationRecordEntry");
+DUMPER7_ASSERTS_UPyWidget_Team_InvitationRecordEntry;
 
 // PythonClass PyWidget_Team_InvitationRecordList.PyWidget_Clan_Application_ItemData
 // 0x0000 (0x0030 - 0x0030)
@@ -45,18 +48,21 @@ class UPyWidget_Clan_Application_ItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_Application_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_Application_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_Application_ItemData")
 	}
 	static class UPyWidget_Clan_Application_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_Application_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_Application_ItemData) == 0x000008, "Wrong alignment on UPyWidget_Clan_Application_ItemData");
-static_assert(sizeof(UPyWidget_Clan_Application_ItemData) == 0x000030, "Wrong size on UPyWidget_Clan_Application_ItemData");
+DUMPER7_ASSERTS_UPyWidget_Clan_Application_ItemData;
 
 // PythonClass PyWidget_Team_InvitationRecordList.PyWidget_Team_InvitationRecordList
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Team_InvitationRecordList final : public UPyMarvelUserWidget
 {
 public:
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Team_InvitationRecordList">();
+		STATIC_CLASS_IMPL("PyWidget_Team_InvitationRecordList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Team_InvitationRecordList")
 	}
 	static class UPyWidget_Team_InvitationRecordList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Team_InvitationRecordList>();
 	}
 };
-static_assert(alignof(UPyWidget_Team_InvitationRecordList) == 0x000008, "Wrong alignment on UPyWidget_Team_InvitationRecordList");
-static_assert(sizeof(UPyWidget_Team_InvitationRecordList) == 0x0005C0, "Wrong size on UPyWidget_Team_InvitationRecordList");
+DUMPER7_ASSERTS_UPyWidget_Team_InvitationRecordList;
 
 }
 

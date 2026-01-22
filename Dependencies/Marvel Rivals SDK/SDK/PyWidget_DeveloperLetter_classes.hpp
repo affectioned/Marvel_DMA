@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DeveloperLetter.PyWidget_DeveloperLetter
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_DeveloperLetter final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DeveloperLetter">();
+		STATIC_CLASS_IMPL("PyWidget_DeveloperLetter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DeveloperLetter")
 	}
 	static class UPyWidget_DeveloperLetter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DeveloperLetter>();
 	}
 };
-static_assert(alignof(UPyWidget_DeveloperLetter) == 0x000008, "Wrong alignment on UPyWidget_DeveloperLetter");
-static_assert(sizeof(UPyWidget_DeveloperLetter) == 0x0005F8, "Wrong size on UPyWidget_DeveloperLetter");
+DUMPER7_ASSERTS_UPyWidget_DeveloperLetter;
 
 }
 

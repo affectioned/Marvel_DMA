@@ -13,20 +13,20 @@
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // Class Hero_1052.Ability_105221
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UAbility_105221 : public UMarvelGameplayAbility
 {
 public:
-	bool                                          bIsFloating;                                       // 0x29F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_29F1[0xF];                                     // 0x29F1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bIsFloating;                                       // 0x2A40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A41[0xF];                                     // 0x2A41(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void EndFloating();
@@ -37,16 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_105221">();
+		STATIC_CLASS_IMPL("Ability_105221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105221")
 	}
 	static class UAbility_105221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105221>();
 	}
 };
-static_assert(alignof(UAbility_105221) == 0x000008, "Wrong alignment on UAbility_105221");
-static_assert(sizeof(UAbility_105221) == 0x002A00, "Wrong size on UAbility_105221");
-static_assert(offsetof(UAbility_105221, bIsFloating) == 0x0029F0, "Member 'UAbility_105221::bIsFloating' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105221;
 
 // Class Hero_1052.Config_105211
 // 0x0008 (0x00C8 - 0x00C0)
@@ -60,25 +62,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Config_105211">();
+		STATIC_CLASS_IMPL("Config_105211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Config_105211")
 	}
 	static class UConfig_105211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfig_105211>();
 	}
 };
-static_assert(alignof(UConfig_105211) == 0x000008, "Wrong alignment on UConfig_105211");
-static_assert(sizeof(UConfig_105211) == 0x0000C8, "Wrong size on UConfig_105211");
-static_assert(offsetof(UConfig_105211, bEnterCD) == 0x0000C0, "Member 'UConfig_105211::bEnterCD' has a wrong offset!");
-static_assert(offsetof(UConfig_105211, bRecoverEnergy) == 0x0000C1, "Member 'UConfig_105211::bRecoverEnergy' has a wrong offset!");
+DUMPER7_ASSERTS_UConfig_105211;
 
 // Class Hero_1052.Ability_105231
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UAbility_105231 : public UMarvelGameplayAbility
 {
 public:
-	uint8                                         Pad_29F0[0x8];                                     // 0x29F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class AMarvelBaseCharacter*                   InstigatorCharacter;                               // 0x29F8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2A40[0x8];                                     // 0x2A40(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class AMarvelBaseCharacter*                   InstigatorCharacter;                               // 0x2A48(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void OnBlockedSucceed(float BlockValue);
@@ -88,28 +91,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_105231">();
+		STATIC_CLASS_IMPL("Ability_105231")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105231")
 	}
 	static class UAbility_105231* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105231>();
 	}
 };
-static_assert(alignof(UAbility_105231) == 0x000008, "Wrong alignment on UAbility_105231");
-static_assert(sizeof(UAbility_105231) == 0x002A00, "Wrong size on UAbility_105231");
-static_assert(offsetof(UAbility_105231, InstigatorCharacter) == 0x0029F8, "Member 'UAbility_105231::InstigatorCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105231;
 
 // Class Hero_1052.NotTreatShield_105241
-// 0x0068 (0x13D8 - 0x1370)
+// 0x0068 (0x13F0 - 0x1388)
 class UNotTreatShield_105241 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         AdditionSpeed;                                     // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Interval;                                          // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxAttribute;                                      // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137C[0x4];                                     // 0x137C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAttribute                     Attribute;                                         // 0x1380(0x0040)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTimerHandle                           UpdateTimerHandle;                                 // 0x13C0(0x0018)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         AdditionSpeed;                                     // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Interval;                                          // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxAttribute;                                      // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1394[0x4];                                     // 0x1394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAttribute                     Attribute;                                         // 0x1398(0x0040)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimerHandle                           UpdateTimerHandle;                                 // 0x13D8(0x0018)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void AddAttributeValue();
@@ -117,28 +122,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NotTreatShield_105241">();
+		STATIC_CLASS_IMPL("NotTreatShield_105241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotTreatShield_105241")
 	}
 	static class UNotTreatShield_105241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNotTreatShield_105241>();
 	}
 };
-static_assert(alignof(UNotTreatShield_105241) == 0x000008, "Wrong alignment on UNotTreatShield_105241");
-static_assert(sizeof(UNotTreatShield_105241) == 0x0013D8, "Wrong size on UNotTreatShield_105241");
-static_assert(offsetof(UNotTreatShield_105241, AdditionSpeed) == 0x001370, "Member 'UNotTreatShield_105241::AdditionSpeed' has a wrong offset!");
-static_assert(offsetof(UNotTreatShield_105241, Interval) == 0x001374, "Member 'UNotTreatShield_105241::Interval' has a wrong offset!");
-static_assert(offsetof(UNotTreatShield_105241, MaxAttribute) == 0x001378, "Member 'UNotTreatShield_105241::MaxAttribute' has a wrong offset!");
-static_assert(offsetof(UNotTreatShield_105241, Attribute) == 0x001380, "Member 'UNotTreatShield_105241::Attribute' has a wrong offset!");
-static_assert(offsetof(UNotTreatShield_105241, UpdateTimerHandle) == 0x0013C0, "Member 'UNotTreatShield_105241::UpdateTimerHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UNotTreatShield_105241;
 
 // Class Hero_1052.Ability_105232
-// 0x0078 (0x2A68 - 0x29F0)
+// 0x0078 (0x2AB8 - 0x2A40)
 class UAbility_105232 : public UMarvelGameplayAbility
 {
 public:
-	struct FPredictionKey                         PlayTimelineKey;                                   // 0x29F0(0x0070)(HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMarvelAbilityTask_PlayMontageAndWaitForEvent* PlayTimelineTask;                           // 0x2A60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPredictionKey                         PlayTimelineKey;                                   // 0x2A40(0x0070)(HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMarvelAbilityTask_PlayMontageAndWaitForEvent* PlayTimelineTask;                           // 0x2AB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void CallServerPlayTimeline(int32 TimelineIndex, const struct FHitResult& InHitResult, bool BlockDash, const struct FVector& ClientTargetLocation);
@@ -148,17 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Ability_105232">();
+		STATIC_CLASS_IMPL("Ability_105232")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105232")
 	}
 	static class UAbility_105232* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105232>();
 	}
 };
-static_assert(alignof(UAbility_105232) == 0x000008, "Wrong alignment on UAbility_105232");
-static_assert(sizeof(UAbility_105232) == 0x002A68, "Wrong size on UAbility_105232");
-static_assert(offsetof(UAbility_105232, PlayTimelineKey) == 0x0029F0, "Member 'UAbility_105232::PlayTimelineKey' has a wrong offset!");
-static_assert(offsetof(UAbility_105232, PlayTimelineTask) == 0x002A60, "Member 'UAbility_105232::PlayTimelineTask' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105232;
 
 // Class Hero_1052.LinLieAnimInstance
 // 0x0070 (0x0A90 - 0x0A20)
@@ -179,35 +183,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinLieAnimInstance">();
+		STATIC_CLASS_IMPL("LinLieAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinLieAnimInstance")
 	}
 	static class ULinLieAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULinLieAnimInstance>();
 	}
 };
-static_assert(alignof(ULinLieAnimInstance) == 0x000010, "Wrong alignment on ULinLieAnimInstance");
-static_assert(sizeof(ULinLieAnimInstance) == 0x000A90, "Wrong size on ULinLieAnimInstance");
-static_assert(offsetof(ULinLieAnimInstance, bIsOnTheWall) == 0x000A20, "Member 'ULinLieAnimInstance::bIsOnTheWall' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, bIsRunLeft) == 0x000A21, "Member 'ULinLieAnimInstance::bIsRunLeft' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, bShouldUseAO) == 0x000A22, "Member 'ULinLieAnimInstance::bShouldUseAO' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, StartVelocity) == 0x000A28, "Member 'ULinLieAnimInstance::StartVelocity' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, IsDoubleJumpingFlag) == 0x000A40, "Member 'ULinLieAnimInstance::IsDoubleJumpingFlag' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, IsJumpIndexChange) == 0x000A41, "Member 'ULinLieAnimInstance::IsJumpIndexChange' has a wrong offset!");
-static_assert(offsetof(ULinLieAnimInstance, JumpIndex) == 0x000A44, "Member 'ULinLieAnimInstance::JumpIndex' has a wrong offset!");
+DUMPER7_ASSERTS_ULinLieAnimInstance;
 
 // Class Hero_1052.LinLieCharacter
-// 0x0050 (0x21F0 - 0x21A0)
+// 0x0050 (0x2300 - 0x22B0)
 class ALinLieCharacter : public AMarvelBaseCharacter
 {
 public:
-	bool                                          bIsRunLeft;                                        // 0x21A0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21A1[0x7];                                     // 0x21A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 Value)>   OnJumpIndexUpdatedDelegate;                        // 0x21A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         JumpIndex;                                         // 0x21B8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21BC[0x4];                                     // 0x21BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULinLieMoveLogicBaseComponent*          LinLieMoveLogic;                                   // 0x21C0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_21C8[0x28];                                    // 0x21C8(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bIsRunLeft;                                        // 0x22B0(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22B1[0x7];                                     // 0x22B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 Value)>   OnJumpIndexUpdatedDelegate;                        // 0x22B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         JumpIndex;                                         // 0x22C8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22CC[0x4];                                     // 0x22CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULinLieMoveLogicBaseComponent*          LinLieMoveLogic;                                   // 0x22D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_22D8[0x28];                                    // 0x22D8(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 GetShareComboState();
@@ -221,74 +221,71 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinLieCharacter">();
+		STATIC_CLASS_IMPL("LinLieCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinLieCharacter")
 	}
 	static class ALinLieCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALinLieCharacter>();
 	}
 };
-static_assert(alignof(ALinLieCharacter) == 0x000010, "Wrong alignment on ALinLieCharacter");
-static_assert(sizeof(ALinLieCharacter) == 0x0021F0, "Wrong size on ALinLieCharacter");
-static_assert(offsetof(ALinLieCharacter, bIsRunLeft) == 0x0021A0, "Member 'ALinLieCharacter::bIsRunLeft' has a wrong offset!");
-static_assert(offsetof(ALinLieCharacter, OnJumpIndexUpdatedDelegate) == 0x0021A8, "Member 'ALinLieCharacter::OnJumpIndexUpdatedDelegate' has a wrong offset!");
-static_assert(offsetof(ALinLieCharacter, JumpIndex) == 0x0021B8, "Member 'ALinLieCharacter::JumpIndex' has a wrong offset!");
-static_assert(offsetof(ALinLieCharacter, LinLieMoveLogic) == 0x0021C0, "Member 'ALinLieCharacter::LinLieMoveLogic' has a wrong offset!");
+DUMPER7_ASSERTS_ALinLieCharacter;
 
 // Class Hero_1052.LinLieMoveLogicBaseComponent
-// 0x0000 (0x0400 - 0x0400)
+// 0x0000 (0x0488 - 0x0488)
 class ULinLieMoveLogicBaseComponent final : public UMarvelMoveLogicBaseComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinLieMoveLogicBaseComponent">();
+		STATIC_CLASS_IMPL("LinLieMoveLogicBaseComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinLieMoveLogicBaseComponent")
 	}
 	static class ULinLieMoveLogicBaseComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULinLieMoveLogicBaseComponent>();
 	}
 };
-static_assert(alignof(ULinLieMoveLogicBaseComponent) == 0x000008, "Wrong alignment on ULinLieMoveLogicBaseComponent");
-static_assert(sizeof(ULinLieMoveLogicBaseComponent) == 0x000400, "Wrong size on ULinLieMoveLogicBaseComponent");
+DUMPER7_ASSERTS_ULinLieMoveLogicBaseComponent;
 
 // Class Hero_1052.LinLieMovementComponent
-// 0x1690 (0x52B0 - 0x3C20)
+// 0x19E0 (0x5750 - 0x3D70)
 class ULinLieMovementComponent final : public UCharacterWallRunningComponent
 {
 public:
-	float                                         MaxGroundSlop;                                     // 0x3C18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTraceDestructible;                                // 0x3C1C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTraceSceneCommoned;                               // 0x3C1D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTraceAirWall;                                     // 0x3C1E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C1F[0x1];                                     // 0x3C1F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinWallHeight;                                     // 0x3C20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WallZSpeed;                                        // 0x3C24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C28[0x8];                                     // 0x3C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             EffectiveTraceContext;                             // 0x3C30(0x1660)(Edit, BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	class ALinLieCharacter*                       LinLieCharacter;                                   // 0x5290(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5298[0x18];                                    // 0x5298(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         MaxGroundSlop;                                     // 0x3D68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTraceDestructible;                                // 0x3D6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTraceSceneCommoned;                               // 0x3D6D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTraceAirWall;                                     // 0x3D6E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D6F[0x1];                                     // 0x3D6F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinWallHeight;                                     // 0x3D70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WallZSpeed;                                        // 0x3D74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D78[0x8];                                     // 0x3D78(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             EffectiveTraceContext;                             // 0x3D80(0x19B0)(Edit, BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class ALinLieCharacter*                       LinLieCharacter;                                   // 0x5730(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5738[0x18];                                    // 0x5738(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LinLieMovementComponent">();
+		STATIC_CLASS_IMPL("LinLieMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LinLieMovementComponent")
 	}
 	static class ULinLieMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULinLieMovementComponent>();
 	}
 };
-static_assert(alignof(ULinLieMovementComponent) == 0x000010, "Wrong alignment on ULinLieMovementComponent");
-static_assert(sizeof(ULinLieMovementComponent) == 0x0052B0, "Wrong size on ULinLieMovementComponent");
-static_assert(offsetof(ULinLieMovementComponent, MaxGroundSlop) == 0x003C18, "Member 'ULinLieMovementComponent::MaxGroundSlop' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, bTraceDestructible) == 0x003C1C, "Member 'ULinLieMovementComponent::bTraceDestructible' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, bTraceSceneCommoned) == 0x003C1D, "Member 'ULinLieMovementComponent::bTraceSceneCommoned' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, bTraceAirWall) == 0x003C1E, "Member 'ULinLieMovementComponent::bTraceAirWall' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, MinWallHeight) == 0x003C20, "Member 'ULinLieMovementComponent::MinWallHeight' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, WallZSpeed) == 0x003C24, "Member 'ULinLieMovementComponent::WallZSpeed' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, EffectiveTraceContext) == 0x003C30, "Member 'ULinLieMovementComponent::EffectiveTraceContext' has a wrong offset!");
-static_assert(offsetof(ULinLieMovementComponent, LinLieCharacter) == 0x005290, "Member 'ULinLieMovementComponent::LinLieCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_ULinLieMovementComponent;
 
 }
 

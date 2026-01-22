@@ -23,15 +23,18 @@ class UAIAbilityExitStage_AmmoNumCheck_10173101_C final : public UPyAIAbilityExi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_AmmoNumCheck_10173101_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_AmmoNumCheck_10173101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_AmmoNumCheck_10173101_C")
 	}
 	static class UAIAbilityExitStage_AmmoNumCheck_10173101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_AmmoNumCheck_10173101_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_AmmoNumCheck_10173101_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_AmmoNumCheck_10173101_C");
-static_assert(sizeof(UAIAbilityExitStage_AmmoNumCheck_10173101_C) == 0x000040, "Wrong size on UAIAbilityExitStage_AmmoNumCheck_10173101_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_AmmoNumCheck_10173101_C;
 
 }
 

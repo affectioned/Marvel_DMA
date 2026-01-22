@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_Rank_LeagueBG.PyWidget_Loading_Rank_LeagueBG
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Loading_Rank_LeagueBG final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_Rank_LeagueBG">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_Rank_LeagueBG")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_Rank_LeagueBG")
 	}
 	static class UPyWidget_Loading_Rank_LeagueBG* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_Rank_LeagueBG>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_Rank_LeagueBG) == 0x000008, "Wrong alignment on UPyWidget_Loading_Rank_LeagueBG");
-static_assert(sizeof(UPyWidget_Loading_Rank_LeagueBG) == 0x0005C0, "Wrong size on UPyWidget_Loading_Rank_LeagueBG");
+DUMPER7_ASSERTS_UPyWidget_Loading_Rank_LeagueBG;
 
 }
 

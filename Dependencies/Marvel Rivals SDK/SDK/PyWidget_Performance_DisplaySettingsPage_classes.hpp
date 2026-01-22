@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_DisplaySettingsPage.PyWidget_Performance_DisplaySettingsPage
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Performance_DisplaySettingsPage final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                HBox_RestartTheGame;                               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                HBox_RejoinTheMatch;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                HBox_RestartTheGame;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                HBox_RejoinTheMatch;                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_DisplaySettingsPage">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_DisplaySettingsPage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_DisplaySettingsPage")
 	}
 	static class UPyWidget_Performance_DisplaySettingsPage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_DisplaySettingsPage>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_DisplaySettingsPage) == 0x000008, "Wrong alignment on UPyWidget_Performance_DisplaySettingsPage");
-static_assert(sizeof(UPyWidget_Performance_DisplaySettingsPage) == 0x000610, "Wrong size on UPyWidget_Performance_DisplaySettingsPage");
-static_assert(offsetof(UPyWidget_Performance_DisplaySettingsPage, WBP_Setting_Key_Class) == 0x0005F8, "Member 'UPyWidget_Performance_DisplaySettingsPage::WBP_Setting_Key_Class' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_DisplaySettingsPage, HBox_RestartTheGame) == 0x000600, "Member 'UPyWidget_Performance_DisplaySettingsPage::HBox_RestartTheGame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_DisplaySettingsPage, HBox_RejoinTheMatch) == 0x000608, "Member 'UPyWidget_Performance_DisplaySettingsPage::HBox_RejoinTheMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_DisplaySettingsPage;
 
 }
 

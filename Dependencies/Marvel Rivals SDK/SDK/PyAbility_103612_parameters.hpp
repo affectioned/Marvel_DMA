@@ -25,9 +25,7 @@ struct PyAbility_103612_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103612_CanActivate");
-static_assert(sizeof(PyAbility_103612_CanActivate) == 0x000001, "Wrong size on PyAbility_103612_CanActivate");
-static_assert(offsetof(PyAbility_103612_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103612_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_CanActivate;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -36,9 +34,7 @@ struct PyAbility_103612_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_103612_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_103612_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_103612_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_103612_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_103612_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.OnOtherAbilityEnded
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +43,7 @@ struct PyAbility_103612_OnOtherAbilityEnded final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_OnOtherAbilityEnded) == 0x000008, "Wrong alignment on PyAbility_103612_OnOtherAbilityEnded");
-static_assert(sizeof(PyAbility_103612_OnOtherAbilityEnded) == 0x000008, "Wrong size on PyAbility_103612_OnOtherAbilityEnded");
-static_assert(offsetof(PyAbility_103612_OnOtherAbilityEnded, Ability) == 0x000000, "Member 'PyAbility_103612_OnOtherAbilityEnded::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_OnOtherAbilityEnded;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.OnOtherAbilityOnBreaked
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +52,7 @@ struct PyAbility_103612_OnOtherAbilityOnBreaked final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_OnOtherAbilityOnBreaked) == 0x000008, "Wrong alignment on PyAbility_103612_OnOtherAbilityOnBreaked");
-static_assert(sizeof(PyAbility_103612_OnOtherAbilityOnBreaked) == 0x000008, "Wrong size on PyAbility_103612_OnOtherAbilityOnBreaked");
-static_assert(offsetof(PyAbility_103612_OnOtherAbilityOnBreaked, Ability) == 0x000000, "Member 'PyAbility_103612_OnOtherAbilityOnBreaked::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_OnOtherAbilityOnBreaked;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.OnAirAbilityActivated
 // 0x0008 (0x0008 - 0x0000)
@@ -69,20 +61,16 @@ struct PyAbility_103612_OnAirAbilityActivated final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_OnAirAbilityActivated) == 0x000008, "Wrong alignment on PyAbility_103612_OnAirAbilityActivated");
-static_assert(sizeof(PyAbility_103612_OnAirAbilityActivated) == 0x000008, "Wrong size on PyAbility_103612_OnAirAbilityActivated");
-static_assert(offsetof(PyAbility_103612_OnAirAbilityActivated, Ability) == 0x000000, "Member 'PyAbility_103612_OnAirAbilityActivated::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_OnAirAbilityActivated;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.OnLandedCallBack
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyAbility_103612_OnLandedCallBack final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_103612_OnLandedCallBack) == 0x000008, "Wrong alignment on PyAbility_103612_OnLandedCallBack");
-static_assert(sizeof(PyAbility_103612_OnLandedCallBack) == 0x0001F0, "Wrong size on PyAbility_103612_OnLandedCallBack");
-static_assert(offsetof(PyAbility_103612_OnLandedCallBack, Hit) == 0x000000, "Member 'PyAbility_103612_OnLandedCallBack::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_OnLandedCallBack;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.OnMovementModeChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -93,27 +81,19 @@ public:
 	EMovementMode                                 PrevMode;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CustomMode;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103612_OnMovementModeChanged) == 0x000008, "Wrong alignment on PyAbility_103612_OnMovementModeChanged");
-static_assert(sizeof(PyAbility_103612_OnMovementModeChanged) == 0x000010, "Wrong size on PyAbility_103612_OnMovementModeChanged");
-static_assert(offsetof(PyAbility_103612_OnMovementModeChanged, MyCharacter) == 0x000000, "Member 'PyAbility_103612_OnMovementModeChanged::MyCharacter' has a wrong offset!");
-static_assert(offsetof(PyAbility_103612_OnMovementModeChanged, PrevMode) == 0x000008, "Member 'PyAbility_103612_OnMovementModeChanged::PrevMode' has a wrong offset!");
-static_assert(offsetof(PyAbility_103612_OnMovementModeChanged, CustomMode) == 0x000009, "Member 'PyAbility_103612_OnMovementModeChanged::CustomMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_OnMovementModeChanged;
 
 // PythonFunction PyAbility_103612.PyAbility_103612.ModifyDeathImpulseInfo
-// 0x07C0 (0x07C0 - 0x0000)
+// 0x07D8 (0x07D8 - 0x0000)
 struct PyAbility_103612_ModifyDeathImpulseInfo final
 {
 public:
 	int32                                         ImpulseLevel;                                      // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                DeathDir;                                          // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0020(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0020(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_103612_ModifyDeathImpulseInfo) == 0x000008, "Wrong alignment on PyAbility_103612_ModifyDeathImpulseInfo");
-static_assert(sizeof(PyAbility_103612_ModifyDeathImpulseInfo) == 0x0007C0, "Wrong size on PyAbility_103612_ModifyDeathImpulseInfo");
-static_assert(offsetof(PyAbility_103612_ModifyDeathImpulseInfo, ImpulseLevel) == 0x000000, "Member 'PyAbility_103612_ModifyDeathImpulseInfo::ImpulseLevel' has a wrong offset!");
-static_assert(offsetof(PyAbility_103612_ModifyDeathImpulseInfo, DeathDir) == 0x000008, "Member 'PyAbility_103612_ModifyDeathImpulseInfo::DeathDir' has a wrong offset!");
-static_assert(offsetof(PyAbility_103612_ModifyDeathImpulseInfo, ModifierParameter) == 0x000020, "Member 'PyAbility_103612_ModifyDeathImpulseInfo::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103612_ModifyDeathImpulseInfo;
 
 }
 

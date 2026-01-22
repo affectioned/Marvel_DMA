@@ -18,11 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_102921.PyTraceComponent_10292151
-// 0x0010 (0x2210 - 0x2200)
+// 0x0010 (0x2610 - 0x2600)
 class UPyTraceComponent_10292151 : public UMarvelAgentTraceComponent
 {
 public:
-	class UCurveFloat*                            RadiusCurve;                                       // 0x2200(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25F8[0x8];                                     // 0x25F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            RadiusCurve;                                       // 0x2600(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -32,23 +33,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10292151">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10292151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10292151")
 	}
 	static class UPyTraceComponent_10292151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10292151>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10292151) == 0x000010, "Wrong alignment on UPyTraceComponent_10292151");
-static_assert(sizeof(UPyTraceComponent_10292151) == 0x002210, "Wrong size on UPyTraceComponent_10292151");
-static_assert(offsetof(UPyTraceComponent_10292151, RadiusCurve) == 0x002200, "Member 'UPyTraceComponent_10292151::RadiusCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTraceComponent_10292151;
 
 // PythonClass PyAbility_10130_102921.PyProjectile_10130_10292101
-// 0x0000 (0x3BA0 - 0x3BA0)
+// 0x0000 (0x3EB0 - 0x3EB0)
 class APyProjectile_10130_10292101 : public APyProjectile_10292101
 {
 public:
-	float                                         MaxPenetrateDistance;                              // 0x3B94(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxPenetrateDistance;                              // 0x3EA4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnPenetrate(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
@@ -57,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10130_10292101">();
+		STATIC_CLASS_IMPL("PyProjectile_10130_10292101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10130_10292101")
 	}
 	static class APyProjectile_10130_10292101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10130_10292101>();
 	}
 };
-static_assert(alignof(APyProjectile_10130_10292101) == 0x000010, "Wrong alignment on APyProjectile_10130_10292101");
-static_assert(sizeof(APyProjectile_10130_10292101) == 0x003BA0, "Wrong size on APyProjectile_10130_10292101");
-static_assert(offsetof(APyProjectile_10130_10292101, MaxPenetrateDistance) == 0x003B94, "Member 'APyProjectile_10130_10292101::MaxPenetrateDistance' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10130_10292101;
 
 }
 

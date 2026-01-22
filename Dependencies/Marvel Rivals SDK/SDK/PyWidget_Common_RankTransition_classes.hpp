@@ -18,44 +18,44 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_RankTransition.PyWidget_Common_RankTransition
-// 0x0190 (0x0750 - 0x05C0)
+// 0x0190 (0x0758 - 0x05C8)
 class UPyWidget_Common_RankTransition : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            MySideAttackTitleColor;                            // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MySideDefenceTitleColor;                           // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MySideAttackContentColor;                          // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MySideDefenceContentColor;                         // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemySideAttackTitleColor;                         // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemySideDefenceTitleColor;                        // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemySideAttackContentColor;                       // 0x0634(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemySideDefenceContentColor;                      // 0x0648(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SwitchVXAllyColor;                                 // 0x065C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SwitchVXEnemyColor;                                // 0x0670(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AllyScoreDarkColor;                                // 0x0684(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemyScoreDarkColor;                               // 0x0698(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AttackTitleColor;                                  // 0x06AC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DefenceTitleColor;                                 // 0x06C0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AttackContentColor;                                // 0x06D4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DefenceContentColor;                               // 0x06E8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         ScoreChangeDelayTime;                              // 0x06FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScoreTransitionTime;                               // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScoreUpdateFrequency;                              // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScoreToDistanceDelayTime;                          // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProgressTransitionTime;                            // 0x070C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProgressUpdateFrequency;                           // 0x0710(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceTransitionTime;                            // 0x0714(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceUpdateFrequency;                           // 0x0718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceToTimeDelayTime;                           // 0x071C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeTransitionTime;                                // 0x0720(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeUpdateFrequency;                               // 0x0724(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConvertDelayTime;                                  // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_72C[0x4];                                      // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          TransitionAudioEvent;                              // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          TeamChangeAudioEvent;                              // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ScoreChangeAudioEvent;                             // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          TimeChangeAudioEvent;                              // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            MySideAttackTitleColor;                            // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MySideDefenceTitleColor;                           // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MySideAttackContentColor;                          // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MySideDefenceContentColor;                         // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemySideAttackTitleColor;                         // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemySideDefenceTitleColor;                        // 0x0628(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemySideAttackContentColor;                       // 0x063C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemySideDefenceContentColor;                      // 0x0650(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SwitchVXAllyColor;                                 // 0x0664(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SwitchVXEnemyColor;                                // 0x0678(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllyScoreDarkColor;                                // 0x068C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemyScoreDarkColor;                               // 0x06A0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AttackTitleColor;                                  // 0x06B4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DefenceTitleColor;                                 // 0x06C8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AttackContentColor;                                // 0x06DC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DefenceContentColor;                               // 0x06F0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         ScoreChangeDelayTime;                              // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScoreTransitionTime;                               // 0x0708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScoreUpdateFrequency;                              // 0x070C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScoreToDistanceDelayTime;                          // 0x0710(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProgressTransitionTime;                            // 0x0714(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProgressUpdateFrequency;                           // 0x0718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceTransitionTime;                            // 0x071C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceUpdateFrequency;                           // 0x0720(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceToTimeDelayTime;                           // 0x0724(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeTransitionTime;                                // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeUpdateFrequency;                               // 0x072C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConvertDelayTime;                                  // 0x0730(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_734[0x4];                                      // 0x0734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          TransitionAudioEvent;                              // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          TeamChangeAudioEvent;                              // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ScoreChangeAudioEvent;                             // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          TimeChangeAudioEvent;                              // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -65,47 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_RankTransition">();
+		STATIC_CLASS_IMPL("PyWidget_Common_RankTransition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_RankTransition")
 	}
 	static class UPyWidget_Common_RankTransition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_RankTransition>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_RankTransition) == 0x000008, "Wrong alignment on UPyWidget_Common_RankTransition");
-static_assert(sizeof(UPyWidget_Common_RankTransition) == 0x000750, "Wrong size on UPyWidget_Common_RankTransition");
-static_assert(offsetof(UPyWidget_Common_RankTransition, MySideAttackTitleColor) == 0x0005BC, "Member 'UPyWidget_Common_RankTransition::MySideAttackTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, MySideDefenceTitleColor) == 0x0005D0, "Member 'UPyWidget_Common_RankTransition::MySideDefenceTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, MySideAttackContentColor) == 0x0005E4, "Member 'UPyWidget_Common_RankTransition::MySideAttackContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, MySideDefenceContentColor) == 0x0005F8, "Member 'UPyWidget_Common_RankTransition::MySideDefenceContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, EnemySideAttackTitleColor) == 0x00060C, "Member 'UPyWidget_Common_RankTransition::EnemySideAttackTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, EnemySideDefenceTitleColor) == 0x000620, "Member 'UPyWidget_Common_RankTransition::EnemySideDefenceTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, EnemySideAttackContentColor) == 0x000634, "Member 'UPyWidget_Common_RankTransition::EnemySideAttackContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, EnemySideDefenceContentColor) == 0x000648, "Member 'UPyWidget_Common_RankTransition::EnemySideDefenceContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, SwitchVXAllyColor) == 0x00065C, "Member 'UPyWidget_Common_RankTransition::SwitchVXAllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, SwitchVXEnemyColor) == 0x000670, "Member 'UPyWidget_Common_RankTransition::SwitchVXEnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, AllyScoreDarkColor) == 0x000684, "Member 'UPyWidget_Common_RankTransition::AllyScoreDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, EnemyScoreDarkColor) == 0x000698, "Member 'UPyWidget_Common_RankTransition::EnemyScoreDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, AttackTitleColor) == 0x0006AC, "Member 'UPyWidget_Common_RankTransition::AttackTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, DefenceTitleColor) == 0x0006C0, "Member 'UPyWidget_Common_RankTransition::DefenceTitleColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, AttackContentColor) == 0x0006D4, "Member 'UPyWidget_Common_RankTransition::AttackContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, DefenceContentColor) == 0x0006E8, "Member 'UPyWidget_Common_RankTransition::DefenceContentColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ScoreChangeDelayTime) == 0x0006FC, "Member 'UPyWidget_Common_RankTransition::ScoreChangeDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ScoreTransitionTime) == 0x000700, "Member 'UPyWidget_Common_RankTransition::ScoreTransitionTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ScoreUpdateFrequency) == 0x000704, "Member 'UPyWidget_Common_RankTransition::ScoreUpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ScoreToDistanceDelayTime) == 0x000708, "Member 'UPyWidget_Common_RankTransition::ScoreToDistanceDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ProgressTransitionTime) == 0x00070C, "Member 'UPyWidget_Common_RankTransition::ProgressTransitionTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ProgressUpdateFrequency) == 0x000710, "Member 'UPyWidget_Common_RankTransition::ProgressUpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, DistanceTransitionTime) == 0x000714, "Member 'UPyWidget_Common_RankTransition::DistanceTransitionTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, DistanceUpdateFrequency) == 0x000718, "Member 'UPyWidget_Common_RankTransition::DistanceUpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, DistanceToTimeDelayTime) == 0x00071C, "Member 'UPyWidget_Common_RankTransition::DistanceToTimeDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, TimeTransitionTime) == 0x000720, "Member 'UPyWidget_Common_RankTransition::TimeTransitionTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, TimeUpdateFrequency) == 0x000724, "Member 'UPyWidget_Common_RankTransition::TimeUpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ConvertDelayTime) == 0x000728, "Member 'UPyWidget_Common_RankTransition::ConvertDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, TransitionAudioEvent) == 0x000730, "Member 'UPyWidget_Common_RankTransition::TransitionAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, TeamChangeAudioEvent) == 0x000738, "Member 'UPyWidget_Common_RankTransition::TeamChangeAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, ScoreChangeAudioEvent) == 0x000740, "Member 'UPyWidget_Common_RankTransition::ScoreChangeAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RankTransition, TimeChangeAudioEvent) == 0x000748, "Member 'UPyWidget_Common_RankTransition::TimeChangeAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_RankTransition;
 
 }
 

@@ -23,9 +23,7 @@ struct PyLevel1399_005_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_005_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevel1399_005_ReceiveEndPlay");
-static_assert(sizeof(PyLevel1399_005_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevel1399_005_ReceiveEndPlay");
-static_assert(offsetof(PyLevel1399_005_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevel1399_005_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_005_ReceiveEndPlay;
 
 }
 

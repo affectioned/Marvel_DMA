@@ -28,26 +28,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmd_SelectParameters_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmd_SelectParameters_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmd_SelectParameters_ItemData")
 	}
 	static class UPyWidget_GMCmd_SelectParameters_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmd_SelectParameters_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmd_SelectParameters_ItemData) == 0x000008, "Wrong alignment on UPyWidget_GMCmd_SelectParameters_ItemData");
-static_assert(sizeof(UPyWidget_GMCmd_SelectParameters_ItemData) == 0x000050, "Wrong size on UPyWidget_GMCmd_SelectParameters_ItemData");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters_ItemData, ParametersName) == 0x000030, "Member 'UPyWidget_GMCmd_SelectParameters_ItemData::ParametersName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters_ItemData, ParametersValue) == 0x000040, "Member 'UPyWidget_GMCmd_SelectParameters_ItemData::ParametersValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmd_SelectParameters_ItemData;
 
 // PythonClass PyWidget_GMCmd_SelectParameters.PyWidget_GMCmd_SelectParameters
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_GMCmd_SelectParameters : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                SelectItemClass;                                   // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnParametersChanged; // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                SelectItemClass;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnParametersChanged; // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,27 +59,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmd_SelectParameters">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmd_SelectParameters")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmd_SelectParameters")
 	}
 	static class UPyWidget_GMCmd_SelectParameters* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmd_SelectParameters>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmd_SelectParameters) == 0x000008, "Wrong alignment on UPyWidget_GMCmd_SelectParameters");
-static_assert(sizeof(UPyWidget_GMCmd_SelectParameters) == 0x0005D8, "Wrong size on UPyWidget_GMCmd_SelectParameters");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters, SelectItemClass) == 0x0005C0, "Member 'UPyWidget_GMCmd_SelectParameters::SelectItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters, OnParametersChanged) == 0x0005C8, "Member 'UPyWidget_GMCmd_SelectParameters::OnParametersChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmd_SelectParameters;
 
 // PythonClass PyWidget_GMCmd_SelectParameters.PyWidget_GMCmd_SelectParameters_Item
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_GMCmd_SelectParameters_Item : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                ItemObject;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnCmdBtnClicked; // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnCmdBtnDoubleClicked; // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                ItemObject;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnCmdBtnClicked; // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ParametersName, const class FString& ParametersValue)> OnCmdBtnDoubleClicked; // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -87,18 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmd_SelectParameters_Item">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmd_SelectParameters_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmd_SelectParameters_Item")
 	}
 	static class UPyWidget_GMCmd_SelectParameters_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmd_SelectParameters_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmd_SelectParameters_Item) == 0x000008, "Wrong alignment on UPyWidget_GMCmd_SelectParameters_Item");
-static_assert(sizeof(UPyWidget_GMCmd_SelectParameters_Item) == 0x0005E8, "Wrong size on UPyWidget_GMCmd_SelectParameters_Item");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters_Item, ItemObject) == 0x0005C0, "Member 'UPyWidget_GMCmd_SelectParameters_Item::ItemObject' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters_Item, OnCmdBtnClicked) == 0x0005C8, "Member 'UPyWidget_GMCmd_SelectParameters_Item::OnCmdBtnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmd_SelectParameters_Item, OnCmdBtnDoubleClicked) == 0x0005D8, "Member 'UPyWidget_GMCmd_SelectParameters_Item::OnCmdBtnDoubleClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmd_SelectParameters_Item;
 
 }
 

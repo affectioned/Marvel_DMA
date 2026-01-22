@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AccessoriesCatelog_HeroItem.PyWidget_AccessoriesCatelog_HeroItem
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_AccessoriesCatelog_HeroItem final : public UMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccessoriesCatelog_HeroItem">();
+		STATIC_CLASS_IMPL("PyWidget_AccessoriesCatelog_HeroItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccessoriesCatelog_HeroItem")
 	}
 	static class UPyWidget_AccessoriesCatelog_HeroItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccessoriesCatelog_HeroItem>();
 	}
 };
-static_assert(alignof(UPyWidget_AccessoriesCatelog_HeroItem) == 0x000008, "Wrong alignment on UPyWidget_AccessoriesCatelog_HeroItem");
-static_assert(sizeof(UPyWidget_AccessoriesCatelog_HeroItem) == 0x000568, "Wrong size on UPyWidget_AccessoriesCatelog_HeroItem");
+DUMPER7_ASSERTS_UPyWidget_AccessoriesCatelog_HeroItem;
 
 }
 

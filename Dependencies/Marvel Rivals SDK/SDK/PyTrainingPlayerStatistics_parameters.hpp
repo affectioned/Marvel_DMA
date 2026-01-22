@@ -21,9 +21,7 @@ struct PyTrainingPlayerStatistics_Initialize final
 public:
 	class AMarvelPlayerState*                     player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingPlayerStatistics_Initialize) == 0x000008, "Wrong alignment on PyTrainingPlayerStatistics_Initialize");
-static_assert(sizeof(PyTrainingPlayerStatistics_Initialize) == 0x000008, "Wrong size on PyTrainingPlayerStatistics_Initialize");
-static_assert(offsetof(PyTrainingPlayerStatistics_Initialize, player_state) == 0x000000, "Member 'PyTrainingPlayerStatistics_Initialize::player_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingPlayerStatistics_Initialize;
 
 }
 

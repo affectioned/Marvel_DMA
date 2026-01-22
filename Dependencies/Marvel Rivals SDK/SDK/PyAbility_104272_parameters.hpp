@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_104272_SetAbility) == 0x000008, "Wrong alignment on PyUIController_104272_SetAbility");
-static_assert(sizeof(PyUIController_104272_SetAbility) == 0x000010, "Wrong size on PyUIController_104272_SetAbility");
-static_assert(offsetof(PyUIController_104272_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_104272_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_104272_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_104272_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_104272_SetAbility;
 
 }
 

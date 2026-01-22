@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Hybrid_Vx_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Hybrid_Vx_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Hybrid_Vx_V2")
 	}
 	static class UPyWidget_Hybrid_Vx_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Hybrid_Vx_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Hybrid_Vx_V2) == 0x000008, "Wrong alignment on UPyWidget_Hybrid_Vx_V2");
-static_assert(sizeof(UPyWidget_Hybrid_Vx_V2) == 0x0003B8, "Wrong size on UPyWidget_Hybrid_Vx_V2");
+DUMPER7_ASSERTS_UPyWidget_Hybrid_Vx_V2;
 
 // PythonClass PyWidget_Hybrid_Vx_V2.PyWidget_Hybrid_Vx2_V2
 // 0x0000 (0x03B8 - 0x03B8)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Hybrid_Vx2_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Hybrid_Vx2_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Hybrid_Vx2_V2")
 	}
 	static class UPyWidget_Hybrid_Vx2_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Hybrid_Vx2_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Hybrid_Vx2_V2) == 0x000008, "Wrong alignment on UPyWidget_Hybrid_Vx2_V2");
-static_assert(sizeof(UPyWidget_Hybrid_Vx2_V2) == 0x0003B8, "Wrong size on UPyWidget_Hybrid_Vx2_V2");
+DUMPER7_ASSERTS_UPyWidget_Hybrid_Vx2_V2;
 
 }
 

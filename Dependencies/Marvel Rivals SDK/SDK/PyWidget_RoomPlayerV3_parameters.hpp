@@ -21,9 +21,7 @@ struct PyWidget_RoomPlayerV4_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_PreConstruct");
-static_assert(sizeof(PyWidget_RoomPlayerV4_PreConstruct) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_PreConstruct");
-static_assert(offsetof(PyWidget_RoomPlayerV4_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_RoomPlayerV4_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_PreConstruct;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetAIData
 // 0x0008 (0x0008 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	int32                                         HeroID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AILevel_0;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetAIData) == 0x000004, "Wrong alignment on PyWidget_RoomPlayerV4_SetAIData");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetAIData) == 0x000008, "Wrong size on PyWidget_RoomPlayerV4_SetAIData");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetAIData, HeroID_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetAIData::HeroID_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetAIData, AILevel_0) == 0x000004, "Member 'PyWidget_RoomPlayerV4_SetAIData::AILevel_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetAIData;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +40,7 @@ struct PyWidget_RoomPlayerV4_SetIsOwner final
 public:
 	bool                                          IsOwner_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsOwner) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsOwner");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsOwner) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsOwner");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsOwner, IsOwner_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsOwner::IsOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsOwner;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsSelfOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +49,7 @@ struct PyWidget_RoomPlayerV4_SetIsSelfOwner final
 public:
 	bool                                          IsSelfOwner_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsSelfOwner) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsSelfOwner");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsSelfOwner) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsSelfOwner");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsSelfOwner, IsSelfOwner_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsSelfOwner::IsSelfOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsSelfOwner;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsLocalPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +58,7 @@ struct PyWidget_RoomPlayerV4_SetIsLocalPlayer final
 public:
 	bool                                          IsLocalPlayer_0;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsLocalPlayer) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsLocalPlayer");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsLocalPlayer) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsLocalPlayer");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsLocalPlayer, IsLocalPlayer_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsLocalPlayer::IsLocalPlayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsLocalPlayer;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsEmpty
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +67,7 @@ struct PyWidget_RoomPlayerV4_SetIsEmpty final
 public:
 	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsEmpty) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsEmpty");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsEmpty) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsEmpty");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsEmpty, IsEmpty_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsEmpty::IsEmpty_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsEmpty;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsInvitating
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +76,7 @@ struct PyWidget_RoomPlayerV4_SetIsInvitating final
 public:
 	bool                                          IsInvitating_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsInvitating) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsInvitating");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsInvitating) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsInvitating");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsInvitating, IsInvitating_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsInvitating::IsInvitating_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsInvitating;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsAI
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +85,7 @@ struct PyWidget_RoomPlayerV4_SetIsAI final
 public:
 	bool                                          IsAI_0;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsAI) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsAI");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsAI) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsAI");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsAI, IsAI_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsAI::IsAI_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsAI;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsAttacker
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +94,7 @@ struct PyWidget_RoomPlayerV4_SetIsAttacker final
 public:
 	bool                                          IsAttacker_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsAttacker) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsAttacker");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsAttacker) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsAttacker");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsAttacker, IsAttacker_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsAttacker::IsAttacker_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsAttacker;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsLeagueAttacker
 // 0x0001 (0x0001 - 0x0000)
@@ -122,9 +103,7 @@ struct PyWidget_RoomPlayerV4_SetIsLeagueAttacker final
 public:
 	bool                                          IsAttacker_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsLeagueAttacker) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsLeagueAttacker");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsLeagueAttacker) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsLeagueAttacker");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsLeagueAttacker, IsAttacker_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsLeagueAttacker::IsAttacker_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsLeagueAttacker;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsWaitExchg
 // 0x0001 (0x0001 - 0x0000)
@@ -133,9 +112,7 @@ struct PyWidget_RoomPlayerV4_SetIsWaitExchg final
 public:
 	bool                                          IsWaitExchg_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsWaitExchg) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsWaitExchg");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsWaitExchg) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsWaitExchg");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsWaitExchg, IsWaitExchg_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsWaitExchg::IsWaitExchg_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsWaitExchg;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsLimitExchg
 // 0x0001 (0x0001 - 0x0000)
@@ -144,9 +121,7 @@ struct PyWidget_RoomPlayerV4_SetIsLimitExchg final
 public:
 	bool                                          IsLimitExchg_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsLimitExchg) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsLimitExchg");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsLimitExchg) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsLimitExchg");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsLimitExchg, IsLimitExchg_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsLimitExchg::IsLimitExchg_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsLimitExchg;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsClickExchg
 // 0x0001 (0x0001 - 0x0000)
@@ -155,9 +130,7 @@ struct PyWidget_RoomPlayerV4_SetIsClickExchg final
 public:
 	bool                                          IsClickExchg_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsClickExchg) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsClickExchg");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsClickExchg) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsClickExchg");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsClickExchg, IsClickExchg_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsClickExchg::IsClickExchg_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsClickExchg;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsGame
 // 0x0001 (0x0001 - 0x0000)
@@ -166,9 +139,7 @@ struct PyWidget_RoomPlayerV4_SetIsGame final
 public:
 	bool                                          IsGame_0;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsGame) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsGame");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsGame) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsGame");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsGame, IsGame_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsGame::IsGame_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsGame;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4.SetIsExchg
 // 0x0001 (0x0001 - 0x0000)
@@ -177,9 +148,7 @@ struct PyWidget_RoomPlayerV4_SetIsExchg final
 public:
 	bool                                          IsExchg_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomPlayerV4_SetIsExchg) == 0x000001, "Wrong alignment on PyWidget_RoomPlayerV4_SetIsExchg");
-static_assert(sizeof(PyWidget_RoomPlayerV4_SetIsExchg) == 0x000001, "Wrong size on PyWidget_RoomPlayerV4_SetIsExchg");
-static_assert(offsetof(PyWidget_RoomPlayerV4_SetIsExchg, IsExchg_0) == 0x000000, "Member 'PyWidget_RoomPlayerV4_SetIsExchg::IsExchg_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomPlayerV4_SetIsExchg;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsAttacker
 // 0x0001 (0x0001 - 0x0000)
@@ -188,9 +157,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsAttacker final
 public:
 	bool                                          IsAttacker_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsAttacker) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsAttacker");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsAttacker) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsAttacker");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsAttacker, IsAttacker_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsAttacker::IsAttacker_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsAttacker;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -199,9 +166,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsOwner final
 public:
 	bool                                          IsOwner_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsOwner) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsOwner");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsOwner) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsOwner");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsOwner, IsOwner_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsOwner::IsOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsOwner;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsSelfOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -210,9 +175,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner final
 public:
 	bool                                          IsSelfOwner_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner, IsSelfOwner_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner::IsSelfOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsSelfOwner;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsEmpty
 // 0x0001 (0x0001 - 0x0000)
@@ -221,9 +184,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsEmpty final
 public:
 	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsEmpty) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsEmpty");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsEmpty) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsEmpty");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsEmpty, IsEmpty_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsEmpty::IsEmpty_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsEmpty;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsInvitating
 // 0x0001 (0x0001 - 0x0000)
@@ -232,9 +193,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsInvitating final
 public:
 	bool                                          IsInvitating_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsInvitating) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsInvitating");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsInvitating) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsInvitating");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsInvitating, IsInvitating_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsInvitating::IsInvitating_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsInvitating;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsAI
 // 0x0001 (0x0001 - 0x0000)
@@ -243,9 +202,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsAI final
 public:
 	bool                                          IsAI_0;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsAI) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsAI");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsAI) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsAI");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsAI, IsAI_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsAI::IsAI_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsAI;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsGame
 // 0x0001 (0x0001 - 0x0000)
@@ -254,9 +211,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsGame final
 public:
 	bool                                          IsGame_0;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsGame) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsGame");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsGame) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsGame");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsGame, IsGame_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsGame::IsGame_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsGame;
 
 // PythonFunction PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4.SetIsLocalPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -265,9 +220,7 @@ struct PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer final
 public:
 	bool                                          IsLocalPlayer_0;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer) == 0x000001, "Wrong alignment on PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer");
-static_assert(sizeof(PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer) == 0x000001, "Wrong size on PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer");
-static_assert(offsetof(PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer, IsLocalPlayer_0) == 0x000000, "Member 'PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer::IsLocalPlayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomSpectatorPlayerV4_SetIsLocalPlayer;
 
 }
 

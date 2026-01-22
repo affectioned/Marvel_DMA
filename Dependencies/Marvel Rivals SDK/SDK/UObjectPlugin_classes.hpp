@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MyPluginObject">();
+		STATIC_CLASS_IMPL("MyPluginObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MyPluginObject")
 	}
 	static class UMyPluginObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMyPluginObject>();
 	}
 };
-static_assert(alignof(UMyPluginObject) == 0x000008, "Wrong alignment on UMyPluginObject");
-static_assert(sizeof(UMyPluginObject) == 0x000040, "Wrong size on UMyPluginObject");
-static_assert(offsetof(UMyPluginObject, MyStruct) == 0x000030, "Member 'UMyPluginObject::MyStruct' has a wrong offset!");
+DUMPER7_ASSERTS_UMyPluginObject;
 
 }
 

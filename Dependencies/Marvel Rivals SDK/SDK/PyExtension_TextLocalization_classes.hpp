@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_TextLocalization">();
+		STATIC_CLASS_IMPL("PyExtension_TextLocalization")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_TextLocalization")
 	}
 	static class UPyExtension_TextLocalization* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_TextLocalization>();
 	}
 };
-static_assert(alignof(UPyExtension_TextLocalization) == 0x000008, "Wrong alignment on UPyExtension_TextLocalization");
-static_assert(sizeof(UPyExtension_TextLocalization) == 0x000030, "Wrong size on UPyExtension_TextLocalization");
+DUMPER7_ASSERTS_UPyExtension_TextLocalization;
 
 }
 

@@ -18,27 +18,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_Custom_Item.WBP_SelectHero_Custom_Item_C
-// 0x0088 (0x0800 - 0x0778)
+// 0x0088 (0x0858 - 0x07D0)
 class UWBP_SelectHero_Custom_Item_C final : public UPyWidget_SelectHero_Custom_ListView_Item
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0778(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_Hovered;                                      // 0x0780(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HoriBox_Item;                                      // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Check;                                         // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_LeftColor;                                     // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Line_C*                            Img_Line;                                          // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Mask_Disable;                                  // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Privilege_Icon;                                // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tips;                                          // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Check;                                     // 0x07C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x07C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Main;                                      // 0x07D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_MainBtn;                                   // 0x07D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_Privilege;                                // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Main;                                      // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DropDown_Icon_C*                   WBP_DropDown_Icon;                                 // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_HeroSystem_Custom_Icon_C*          WBP_Item;                                          // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x07D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_Hovered;                                      // 0x07D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HoriBox_Item;                                      // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Check;                                         // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_LeftColor;                                     // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Line_C*                            Img_Line;                                          // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Mask_Disable;                                  // 0x0800(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Privilege_Icon;                                // 0x0808(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tips;                                          // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Check;                                     // 0x0818(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Main;                                      // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_MainBtn;                                   // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_Privilege;                                // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Main;                                      // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DropDown_Icon_C*                   WBP_DropDown_Icon;                                 // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_HeroSystem_Custom_Icon_C*          WBP_Item;                                          // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void UnBindAllEvents();
@@ -51,32 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_Custom_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_Custom_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_Custom_Item_C")
 	}
 	static class UWBP_SelectHero_Custom_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_Custom_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_Custom_Item_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_Custom_Item_C");
-static_assert(sizeof(UWBP_SelectHero_Custom_Item_C) == 0x000800, "Wrong size on UWBP_SelectHero_Custom_Item_C");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, UberGraphFrame) == 0x000778, "Member 'UWBP_SelectHero_Custom_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Anim_Hovered) == 0x000780, "Member 'UWBP_SelectHero_Custom_Item_C::Anim_Hovered' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, HoriBox_Item) == 0x000788, "Member 'UWBP_SelectHero_Custom_Item_C::HoriBox_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_Check) == 0x000790, "Member 'UWBP_SelectHero_Custom_Item_C::Img_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_LeftColor) == 0x000798, "Member 'UWBP_SelectHero_Custom_Item_C::Img_LeftColor' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_Line) == 0x0007A0, "Member 'UWBP_SelectHero_Custom_Item_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_Mask_Disable) == 0x0007A8, "Member 'UWBP_SelectHero_Custom_Item_C::Img_Mask_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_Privilege_Icon) == 0x0007B0, "Member 'UWBP_SelectHero_Custom_Item_C::Img_Privilege_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Img_Tips) == 0x0007B8, "Member 'UWBP_SelectHero_Custom_Item_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Overlay_Check) == 0x0007C0, "Member 'UWBP_SelectHero_Custom_Item_C::Overlay_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Overlay_Content) == 0x0007C8, "Member 'UWBP_SelectHero_Custom_Item_C::Overlay_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Overlay_Main) == 0x0007D0, "Member 'UWBP_SelectHero_Custom_Item_C::Overlay_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, Overlay_MainBtn) == 0x0007D8, "Member 'UWBP_SelectHero_Custom_Item_C::Overlay_MainBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, ScaleBox_Privilege) == 0x0007E0, "Member 'UWBP_SelectHero_Custom_Item_C::ScaleBox_Privilege' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, SizeBox_Main) == 0x0007E8, "Member 'UWBP_SelectHero_Custom_Item_C::SizeBox_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, WBP_DropDown_Icon) == 0x0007F0, "Member 'UWBP_SelectHero_Custom_Item_C::WBP_DropDown_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Custom_Item_C, WBP_Item) == 0x0007F8, "Member 'UWBP_SelectHero_Custom_Item_C::WBP_Item' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_Custom_Item_C;
 
 }
 

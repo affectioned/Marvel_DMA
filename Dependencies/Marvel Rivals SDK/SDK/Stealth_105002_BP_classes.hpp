@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1050_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Stealth_105002_BP.Stealth_105002_BP_C
-// 0x0000 (0x15A8 - 0x15A8)
-class UStealth_105002_BP_C final : public UStealth_105002
+// 0x0000 (0x15C0 - 0x15C0)
+class UStealth_105002_BP_C final : public UMarvelStealthAbility_NonBattle
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Stealth_105002_BP_C">();
+		BP_STATIC_CLASS_IMPL("Stealth_105002_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Stealth_105002_BP_C")
 	}
 	static class UStealth_105002_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStealth_105002_BP_C>();
 	}
 };
-static_assert(alignof(UStealth_105002_BP_C) == 0x000008, "Wrong alignment on UStealth_105002_BP_C");
-static_assert(sizeof(UStealth_105002_BP_C) == 0x0015A8, "Wrong size on UStealth_105002_BP_C");
+DUMPER7_ASSERTS_UStealth_105002_BP_C;
 
 }
 

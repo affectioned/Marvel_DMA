@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_Clan_MainMain.PyWidget_Clan_MainMain.MarvelSetVisible
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_Clan_MainMain_MarvelSetVisible final
+{
+public:
+	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_Clan_MainMain_MarvelSetVisible;
+
 // PythonFunction PyWidget_Clan_MainMain.PyWidget_Clan_MainMain.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
 struct PyWidget_Clan_MainMain_OnCascadingVisibleChanged final
@@ -21,9 +30,7 @@ struct PyWidget_Clan_MainMain_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Clan_MainMain_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Clan_MainMain_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Clan_MainMain_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Clan_MainMain_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Clan_MainMain_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Clan_MainMain_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Clan_MainMain_OnCascadingVisibleChanged;
 
 }
 

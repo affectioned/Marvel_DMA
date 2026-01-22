@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1035_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1035_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_103531_BP.Ability_103531_BP_C
-// 0x0008 (0x2E30 - 0x2E28)
+// 0x0008 (0x2E98 - 0x2E90)
 class UAbility_103531_BP_C final : public UAbility_103531
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2E28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2E90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_Ability_103531_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_103531_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_103531_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_103531_BP_C")
 	}
 	static class UAbility_103531_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_103531_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_103531_BP_C) == 0x000008, "Wrong alignment on UAbility_103531_BP_C");
-static_assert(sizeof(UAbility_103531_BP_C) == 0x002E30, "Wrong size on UAbility_103531_BP_C");
-static_assert(offsetof(UAbility_103531_BP_C, UberGraphFrame) == 0x002E28, "Member 'UAbility_103531_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_103531_BP_C;
 
 }
 

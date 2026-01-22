@@ -27,11 +27,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyReplayInputBlock_OnMouseButtonDown) == 0x000008, "Wrong alignment on PyReplayInputBlock_OnMouseButtonDown");
-static_assert(sizeof(PyReplayInputBlock_OnMouseButtonDown) == 0x000178, "Wrong size on PyReplayInputBlock_OnMouseButtonDown");
-static_assert(offsetof(PyReplayInputBlock_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'PyReplayInputBlock_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyReplayInputBlock_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'PyReplayInputBlock_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyReplayInputBlock_OnMouseButtonDown, ReturnValue) == 0x0000B8, "Member 'PyReplayInputBlock_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyReplayInputBlock_OnMouseButtonDown;
 
 }
 

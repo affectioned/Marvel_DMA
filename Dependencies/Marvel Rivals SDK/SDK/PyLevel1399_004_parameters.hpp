@@ -23,9 +23,7 @@ struct PyLevel1399_004_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_004_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevel1399_004_ReceiveEndPlay");
-static_assert(sizeof(PyLevel1399_004_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevel1399_004_ReceiveEndPlay");
-static_assert(offsetof(PyLevel1399_004_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevel1399_004_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_004_ReceiveEndPlay;
 
 // PythonFunction PyLevel1399_004.PyLevel1399_004.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevel1399_004_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_004_ReceiveTick) == 0x000004, "Wrong alignment on PyLevel1399_004_ReceiveTick");
-static_assert(sizeof(PyLevel1399_004_ReceiveTick) == 0x000004, "Wrong size on PyLevel1399_004_ReceiveTick");
-static_assert(offsetof(PyLevel1399_004_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevel1399_004_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_004_ReceiveTick;
 
 }
 

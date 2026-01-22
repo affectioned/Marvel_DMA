@@ -23,9 +23,7 @@ struct PyAbility_105201_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_105201_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_105201_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_105201_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_105201_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_105201_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_105201_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105201_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_105201.PyAbility_105201.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_105201_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105201_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105201_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105201_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105201_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105201_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105201_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105201_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105201.PyAbility_105201.Server_SetInputDir
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_105201_Server_SetInputDir final
 public:
 	float                                         InputDir;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105201_Server_SetInputDir) == 0x000004, "Wrong alignment on PyAbility_105201_Server_SetInputDir");
-static_assert(sizeof(PyAbility_105201_Server_SetInputDir) == 0x000004, "Wrong size on PyAbility_105201_Server_SetInputDir");
-static_assert(offsetof(PyAbility_105201_Server_SetInputDir, InputDir) == 0x000000, "Member 'PyAbility_105201_Server_SetInputDir::InputDir' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105201_Server_SetInputDir;
 
 }
 

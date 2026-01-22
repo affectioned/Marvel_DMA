@@ -23,15 +23,18 @@ class UAIAbilityExiSatge_CheckTargetBelow_10179402_C final : public UPyAIAbility
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExiSatge_CheckTargetBelow_10179402_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExiSatge_CheckTargetBelow_10179402_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExiSatge_CheckTargetBelow_10179402_C")
 	}
 	static class UAIAbilityExiSatge_CheckTargetBelow_10179402_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExiSatge_CheckTargetBelow_10179402_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExiSatge_CheckTargetBelow_10179402_C) == 0x000008, "Wrong alignment on UAIAbilityExiSatge_CheckTargetBelow_10179402_C");
-static_assert(sizeof(UAIAbilityExiSatge_CheckTargetBelow_10179402_C) == 0x000050, "Wrong size on UAIAbilityExiSatge_CheckTargetBelow_10179402_C");
+DUMPER7_ASSERTS_UAIAbilityExiSatge_CheckTargetBelow_10179402_C;
 
 }
 

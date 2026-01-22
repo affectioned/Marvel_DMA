@@ -36,21 +36,7 @@ public:
 	float                                         NiagaraInvisibleValue_0;                           // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         NiagaraDisappearTime_0;                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLokiPhantomManagerComponent_LokiPhantomInitialize) == 0x000008, "Wrong alignment on PyLokiPhantomManagerComponent_LokiPhantomInitialize");
-static_assert(sizeof(PyLokiPhantomManagerComponent_LokiPhantomInitialize) == 0x000058, "Wrong size on PyLokiPhantomManagerComponent_LokiPhantomInitialize");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, ProcessController) == 0x000000, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, FirstDelayAppearTime_0) == 0x000008, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::FirstDelayAppearTime_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, SecondDelayAppearTime_0) == 0x00000C, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::SecondDelayAppearTime_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, UpdateInterval_0) == 0x000010, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::UpdateInterval_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, MaterialParameterName_0) == 0x000018, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::MaterialParameterName_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, MaterialVisibleValue_0) == 0x000028, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::MaterialVisibleValue_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, MaterialInvisibleValue_0) == 0x00002C, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::MaterialInvisibleValue_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, MaterialAppearTime_0) == 0x000030, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::MaterialAppearTime_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, MaterialDisappearTime_0) == 0x000034, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::MaterialDisappearTime_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, NiagaraParameterName_0) == 0x000038, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::NiagaraParameterName_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, NiagaraVisibleValue_0) == 0x000048, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::NiagaraVisibleValue_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, NiagaraInvisibleValue_0) == 0x00004C, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::NiagaraInvisibleValue_0' has a wrong offset!");
-static_assert(offsetof(PyLokiPhantomManagerComponent_LokiPhantomInitialize, NiagaraDisappearTime_0) == 0x000050, "Member 'PyLokiPhantomManagerComponent_LokiPhantomInitialize::NiagaraDisappearTime_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyLokiPhantomManagerComponent_LokiPhantomInitialize;
 
 // PythonFunction PyLevelLokiPhantomNodes.PyLokiPhantomManagerComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +45,7 @@ struct PyLokiPhantomManagerComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLokiPhantomManagerComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLokiPhantomManagerComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLokiPhantomManagerComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLokiPhantomManagerComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLokiPhantomManagerComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLokiPhantomManagerComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLokiPhantomManagerComponent_ReceiveEndPlay;
 
 // PythonFunction PyLevelLokiPhantomNodes.PyLokiPhantom.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +54,7 @@ struct PyLokiPhantom_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLokiPhantom_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLokiPhantom_ReceiveEndPlay");
-static_assert(sizeof(PyLokiPhantom_ReceiveEndPlay) == 0x000001, "Wrong size on PyLokiPhantom_ReceiveEndPlay");
-static_assert(offsetof(PyLokiPhantom_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLokiPhantom_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLokiPhantom_ReceiveEndPlay;
 
 }
 

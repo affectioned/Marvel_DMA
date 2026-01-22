@@ -21,9 +21,7 @@ struct PyWidget_Ranking_Unit_RankRanking_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Ranking_Unit_RankRanking_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Ranking_Unit_RankRanking_PreConstruct");
-static_assert(sizeof(PyWidget_Ranking_Unit_RankRanking_PreConstruct) == 0x000001, "Wrong size on PyWidget_Ranking_Unit_RankRanking_PreConstruct");
-static_assert(offsetof(PyWidget_Ranking_Unit_RankRanking_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Ranking_Unit_RankRanking_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Ranking_Unit_RankRanking_PreConstruct;
 
 // PythonFunction PyWidget_Ranking_Unit_RankRanking.PyWidget_Ranking_Unit_RankRanking.SetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Ranking_Unit_RankRanking_SetAnimationStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Ranking_Unit_RankRanking_SetAnimationStart) == 0x000004, "Wrong alignment on PyWidget_Ranking_Unit_RankRanking_SetAnimationStart");
-static_assert(sizeof(PyWidget_Ranking_Unit_RankRanking_SetAnimationStart) == 0x000004, "Wrong size on PyWidget_Ranking_Unit_RankRanking_SetAnimationStart");
-static_assert(offsetof(PyWidget_Ranking_Unit_RankRanking_SetAnimationStart, Time) == 0x000000, "Member 'PyWidget_Ranking_Unit_RankRanking_SetAnimationStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Ranking_Unit_RankRanking_SetAnimationStart;
 
 // PythonFunction PyWidget_Ranking_Unit_RankRanking.PyWidget_Ranking_Unit_RankRanking.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Ranking_Unit_RankRanking_OnAnimationFinished;
 
 }
 

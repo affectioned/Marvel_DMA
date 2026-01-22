@@ -18,39 +18,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105251.PyConfig_105251
-// 0x1310 (0x13A8 - 0x0098)
+// 0x18B0 (0x1948 - 0x0098)
 class UPyConfig_105251 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       SummonedScopeTraceRule;                            // 0x0C60(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         SummonedDamage;                                    // 0x0FF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FFC[0x4];                                      // 0x0FFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       CharScopeTraceRule;                                // 0x1000(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            CharDamageCurve;                                   // 0x1398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         KickDash;                                          // 0x13A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       SummonedScopeTraceRule;                            // 0x0F80(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         SummonedDamage;                                    // 0x1458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_145C[0x4];                                     // 0x145C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       CharScopeTraceRule;                                // 0x1460(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            CharDamageCurve;                                   // 0x1938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KickDash;                                          // 0x1940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105251">();
+		STATIC_CLASS_IMPL("PyConfig_105251")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105251")
 	}
 	static class UPyConfig_105251* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105251>();
 	}
 };
-static_assert(alignof(UPyConfig_105251) == 0x000008, "Wrong alignment on UPyConfig_105251");
-static_assert(sizeof(UPyConfig_105251) == 0x0013A8, "Wrong size on UPyConfig_105251");
-static_assert(offsetof(UPyConfig_105251, DashInfo) == 0x000098, "Member 'UPyConfig_105251::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105251, SummonedScopeTraceRule) == 0x000C60, "Member 'UPyConfig_105251::SummonedScopeTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105251, SummonedDamage) == 0x000FF8, "Member 'UPyConfig_105251::SummonedDamage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105251, CharScopeTraceRule) == 0x001000, "Member 'UPyConfig_105251::CharScopeTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105251, CharDamageCurve) == 0x001398, "Member 'UPyConfig_105251::CharDamageCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105251, KickDash) == 0x0013A0, "Member 'UPyConfig_105251::KickDash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105251;
 
 // PythonClass PyAbility_105251.PyAbility_105251
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105251 : public UMarvelGameplayAbility
 {
 public:
@@ -66,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105251">();
+		STATIC_CLASS_IMPL("PyAbility_105251")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105251")
 	}
 	static class UPyAbility_105251* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105251>();
 	}
 };
-static_assert(alignof(UPyAbility_105251) == 0x000008, "Wrong alignment on UPyAbility_105251");
-static_assert(sizeof(UPyAbility_105251) == 0x0029F0, "Wrong size on UPyAbility_105251");
+DUMPER7_ASSERTS_UPyAbility_105251;
 
 }
 

@@ -23,15 +23,18 @@ class UEQC_GetHealthPack_C final : public UEnvQueryContext_BlackboardActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetHealthPack_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetHealthPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetHealthPack_C")
 	}
 	static class UEQC_GetHealthPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetHealthPack_C>();
 	}
 };
-static_assert(alignof(UEQC_GetHealthPack_C) == 0x000008, "Wrong alignment on UEQC_GetHealthPack_C");
-static_assert(sizeof(UEQC_GetHealthPack_C) == 0x000040, "Wrong size on UEQC_GetHealthPack_C");
+DUMPER7_ASSERTS_UEQC_GetHealthPack_C;
 
 }
 

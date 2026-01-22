@@ -24,9 +24,7 @@ struct PyBuffAbility_10130_10449492_K2_OnConditionSatisfied final
 public:
 	struct FCardEffectParameter                   Parameter;                                         // 0x0000(0x0010)(Parm)
 };
-static_assert(alignof(PyBuffAbility_10130_10449492_K2_OnConditionSatisfied) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10449492_K2_OnConditionSatisfied");
-static_assert(sizeof(PyBuffAbility_10130_10449492_K2_OnConditionSatisfied) == 0x000010, "Wrong size on PyBuffAbility_10130_10449492_K2_OnConditionSatisfied");
-static_assert(offsetof(PyBuffAbility_10130_10449492_K2_OnConditionSatisfied, Parameter) == 0x000000, "Member 'PyBuffAbility_10130_10449492_K2_OnConditionSatisfied::Parameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10449492_K2_OnConditionSatisfied;
 
 // PythonFunction PyBuffAbility_10130_10441025.PyAbility_104420.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_104420_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104420_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104420_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104420_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104420_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104420_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104420_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104420_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_10130_10441025.PyAbility_104420.OnDashFinished
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_104420_OnDashFinished final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104420_OnDashFinished) == 0x000001, "Wrong alignment on PyAbility_104420_OnDashFinished");
-static_assert(sizeof(PyAbility_104420_OnDashFinished) == 0x000001, "Wrong size on PyAbility_104420_OnDashFinished");
-static_assert(offsetof(PyAbility_104420_OnDashFinished, Reason) == 0x000000, "Member 'PyAbility_104420_OnDashFinished::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104420_OnDashFinished;
 
 // PythonFunction PyBuffAbility_10130_10441025.PyAbility_104420.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_104420_NativeOnMontageCompleted final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104420_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_104420_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_104420_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_104420_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_104420_NativeOnMontageCompleted, EventTag) == 0x000000, "Member 'PyAbility_104420_NativeOnMontageCompleted::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104420_NativeOnMontageCompleted;
 
 // PythonFunction PyBuffAbility_10130_10441025.PyAbility_104420.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -68,9 +60,7 @@ struct PyAbility_104420_NativeOnMontageCancelled final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104420_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_104420_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_104420_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_104420_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_104420_NativeOnMontageCancelled, EventTag) == 0x000000, "Member 'PyAbility_104420_NativeOnMontageCancelled::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104420_NativeOnMontageCancelled;
 
 }
 

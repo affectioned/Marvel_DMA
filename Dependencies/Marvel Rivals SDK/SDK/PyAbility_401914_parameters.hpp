@@ -21,9 +21,7 @@ struct PyAbility_401914_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_401914_CanActivate) == 0x000001, "Wrong alignment on PyAbility_401914_CanActivate");
-static_assert(sizeof(PyAbility_401914_CanActivate) == 0x000001, "Wrong size on PyAbility_401914_CanActivate");
-static_assert(offsetof(PyAbility_401914_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_401914_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_401914_CanActivate;
 
 // PythonFunction PyAbility_401914.PyAbility_401914.OnFirstScopeEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_401914_OnFirstScopeEnd final
 public:
 	class AActor*                                 ScopeActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_401914_OnFirstScopeEnd) == 0x000008, "Wrong alignment on PyAbility_401914_OnFirstScopeEnd");
-static_assert(sizeof(PyAbility_401914_OnFirstScopeEnd) == 0x000008, "Wrong size on PyAbility_401914_OnFirstScopeEnd");
-static_assert(offsetof(PyAbility_401914_OnFirstScopeEnd, ScopeActor) == 0x000000, "Member 'PyAbility_401914_OnFirstScopeEnd::ScopeActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_401914_OnFirstScopeEnd;
 
 // PythonFunction PyAbility_401914.PyAbility_401914.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_401914_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_401914_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_401914_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_401914_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_401914_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_401914_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_401914_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_401914_K2_OnEndAbility;
 
 }
 

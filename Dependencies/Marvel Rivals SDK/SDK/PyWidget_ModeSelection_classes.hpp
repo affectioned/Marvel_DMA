@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ModeSelection.PyWidget_Secondary_Picture
-// 0x0008 (0x05F8 - 0x05F0)
+// 0x0008 (0x0600 - 0x05F8)
 class UPyWidget_Secondary_Picture final : public UPyWidget_SP_BG_CommonButtonAreaBase
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnClose;                                   // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnClose;                                   // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Picture">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Picture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Picture")
 	}
 	static class UPyWidget_Secondary_Picture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Picture>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Picture) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Picture");
-static_assert(sizeof(UPyWidget_Secondary_Picture) == 0x0005F8, "Wrong size on UPyWidget_Secondary_Picture");
-static_assert(offsetof(UPyWidget_Secondary_Picture, AkEvent_OnClose) == 0x0005F0, "Member 'UPyWidget_Secondary_Picture::AkEvent_OnClose' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Picture;
 
 }
 

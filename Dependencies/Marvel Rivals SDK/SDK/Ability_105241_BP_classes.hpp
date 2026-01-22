@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105241_BP.Ability_105241_BP_C
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UAbility_105241_BP_C : public UPyAbility_105241
 {
 public:
-	bool                                          NewVar;                                            // 0x29F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewVar;                                            // 0x2A40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105241_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105241_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105241_BP_C")
 	}
 	static class UAbility_105241_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105241_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105241_BP_C) == 0x000008, "Wrong alignment on UAbility_105241_BP_C");
-static_assert(sizeof(UAbility_105241_BP_C) == 0x0029F8, "Wrong size on UAbility_105241_BP_C");
-static_assert(offsetof(UAbility_105241_BP_C, NewVar) == 0x0029F0, "Member 'UAbility_105241_BP_C::NewVar' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105241_BP_C;
 
 }
 

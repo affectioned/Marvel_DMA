@@ -47,11 +47,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DecreaseValue;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FReduceCDItem) == 0x000004, "Wrong alignment on FReduceCDItem");
-static_assert(sizeof(FReduceCDItem) == 0x00000C, "Wrong size on FReduceCDItem");
-static_assert(offsetof(FReduceCDItem, AbilityID) == 0x000000, "Member 'FReduceCDItem::AbilityID' has a wrong offset!");
-static_assert(offsetof(FReduceCDItem, Moment) == 0x000004, "Member 'FReduceCDItem::Moment' has a wrong offset!");
-static_assert(offsetof(FReduceCDItem, DecreaseValue) == 0x000008, "Member 'FReduceCDItem::DecreaseValue' has a wrong offset!");
+DUMPER7_ASSERTS_FReduceCDItem;
 
 }
 

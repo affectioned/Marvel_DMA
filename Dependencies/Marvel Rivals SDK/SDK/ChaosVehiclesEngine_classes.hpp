@@ -23,15 +23,18 @@ class UChaosVehicles final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosVehicles">();
+		STATIC_CLASS_IMPL("ChaosVehicles")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosVehicles")
 	}
 	static class UChaosVehicles* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosVehicles>();
 	}
 };
-static_assert(alignof(UChaosVehicles) == 0x000008, "Wrong alignment on UChaosVehicles");
-static_assert(sizeof(UChaosVehicles) == 0x000030, "Wrong size on UChaosVehicles");
+DUMPER7_ASSERTS_UChaosVehicles;
 
 }
 

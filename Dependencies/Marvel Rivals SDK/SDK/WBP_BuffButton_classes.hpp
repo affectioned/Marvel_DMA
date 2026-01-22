@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BuffButton.WBP_BuffButton_C
-// 0x0040 (0x0768 - 0x0728)
+// 0x0040 (0x07C0 - 0x0780)
 class UWBP_BuffButton_C final : public UPyWidget_Button
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0728(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             TextInfo;                                          // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         EffectID;                                          // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_73C[0x4];                                      // 0x073C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   EffectName;                                        // 0x0740(0x0018)(Edit, BlueprintVisible)
-	double                                        DurationValue;                                     // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AttributeValue;                                    // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             TextInfo;                                          // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         EffectID;                                          // 0x0790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   EffectName;                                        // 0x0798(0x0018)(Edit, BlueprintVisible)
+	double                                        DurationValue;                                     // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AttributeValue;                                    // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SetBtnData(int32 EffectID_0, const class FText& EffectName_0);
@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BuffButton_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BuffButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BuffButton_C")
 	}
 	static class UWBP_BuffButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BuffButton_C>();
 	}
 };
-static_assert(alignof(UWBP_BuffButton_C) == 0x000008, "Wrong alignment on UWBP_BuffButton_C");
-static_assert(sizeof(UWBP_BuffButton_C) == 0x000768, "Wrong size on UWBP_BuffButton_C");
-static_assert(offsetof(UWBP_BuffButton_C, UberGraphFrame) == 0x000728, "Member 'UWBP_BuffButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffButton_C, TextInfo) == 0x000730, "Member 'UWBP_BuffButton_C::TextInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffButton_C, EffectID) == 0x000738, "Member 'UWBP_BuffButton_C::EffectID' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffButton_C, EffectName) == 0x000740, "Member 'UWBP_BuffButton_C::EffectName' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffButton_C, DurationValue) == 0x000758, "Member 'UWBP_BuffButton_C::DurationValue' has a wrong offset!");
-static_assert(offsetof(UWBP_BuffButton_C, AttributeValue) == 0x000760, "Member 'UWBP_BuffButton_C::AttributeValue' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BuffButton_C;
 
 }
 

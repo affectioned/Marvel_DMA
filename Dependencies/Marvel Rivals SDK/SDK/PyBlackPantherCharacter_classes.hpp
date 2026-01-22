@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyBlackPantherCharacter.PyBlackPantherCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyBlackPantherCharacter : public ABlackPantherCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBlackPantherCharacter">();
+		STATIC_CLASS_IMPL("PyBlackPantherCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBlackPantherCharacter")
 	}
 	static class APyBlackPantherCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBlackPantherCharacter>();
 	}
 };
-static_assert(alignof(APyBlackPantherCharacter) == 0x000010, "Wrong alignment on APyBlackPantherCharacter");
-static_assert(sizeof(APyBlackPantherCharacter) == 0x0021B0, "Wrong size on APyBlackPantherCharacter");
+DUMPER7_ASSERTS_APyBlackPantherCharacter;
 
 }
 

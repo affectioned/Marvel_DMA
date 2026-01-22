@@ -21,9 +21,7 @@ struct PyWidget_Control_Progress_Unit_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Control_Progress_Unit_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Control_Progress_Unit_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Control_Progress_Unit_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Control_Progress_Unit_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Control_Progress_Unit_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Control_Progress_Unit_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Control_Progress_Unit_OnAnimationStarted;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_KnockoutStage_WatchView_Item_OnListItemObjectSet;
 
 // PythonFunction PyWidget_League_KnockoutStage_WatchView.PwWidget_League_KnockoutStage_WatchView.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible) == 0x000001, "Wrong alignment on PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible");
-static_assert(sizeof(PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible) == 0x000001, "Wrong size on PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible");
-static_assert(offsetof(PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible, Visible) == 0x000000, "Member 'PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PwWidget_League_KnockoutStage_WatchView_MarvelSetVisible;
 
 }
 

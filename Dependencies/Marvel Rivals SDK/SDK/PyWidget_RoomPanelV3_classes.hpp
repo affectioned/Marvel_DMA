@@ -19,32 +19,33 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RoomPanelV3.PyWidget_RoomPanel_V4
-// 0x0418 (0x0A10 - 0x05F8)
+// 0x0420 (0x0A20 - 0x0600)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_RoomPanel_V4 : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_CustomRoomInvitationDeclienedBarrage;      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CustomRoomAddClick;                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonLeftArrowClick;                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_LockRoom;                                  // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ExChangeTeam;                              // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FText>                           PermissionSettingsText;                            // 0x0620(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           TranspositionSettingsText;                         // 0x0630(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           SpectateSettingsText;                              // 0x0640(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           AILevelList;                                       // 0x0650(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Team_1_Name;                                       // 0x0660(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Team_2_Name;                                       // 0x0678(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             RandomImg;                                         // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             RandomThemeImg;                                    // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_Add;                                           // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_Delete;                                        // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MapColor;                                          // 0x0848(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_858[0x8];                                      // 0x0858(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            AttackerColor;                                     // 0x0860(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DefenderColor;                                     // 0x0930(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                SpectatorItem_Class;                               // 0x0A00(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CustomRoomInvitationDeclienedBarrage;      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CustomRoomAddClick;                        // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonLeftArrowClick;                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_LockRoom;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ExChangeTeam;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FText>                           PermissionSettingsText;                            // 0x0628(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           TranspositionSettingsText;                         // 0x0638(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           SpectateSettingsText;                              // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           AILevelList;                                       // 0x0658(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Team_1_Name;                                       // 0x0668(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Team_2_Name;                                       // 0x0680(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             RandomImg;                                         // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             RandomThemeImg;                                    // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6A8[0x8];                                      // 0x06A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Img_Add;                                           // 0x06B0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_Delete;                                        // 0x0780(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0850(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MapColor;                                          // 0x0858(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_868[0x8];                                      // 0x0868(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            AttackerColor;                                     // 0x0870(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DefenderColor;                                     // 0x0940(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SpectatorItem_Class;                               // 0x0A10(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -70,7 +71,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomPanel_V4">();
+		STATIC_CLASS_IMPL("PyWidget_RoomPanel_V4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomPanel_V4")
 	}
 	static class UPyWidget_RoomPanel_V4* GetDefaultObj()
 	{
@@ -78,28 +83,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_RoomPanel_V4) == 0x000010, "Wrong alignment on UPyWidget_RoomPanel_V4");
-static_assert(sizeof(UPyWidget_RoomPanel_V4) == 0x000A10, "Wrong size on UPyWidget_RoomPanel_V4");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AkEvent_CustomRoomInvitationDeclienedBarrage) == 0x0005F8, "Member 'UPyWidget_RoomPanel_V4::AkEvent_CustomRoomInvitationDeclienedBarrage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AkEvent_CustomRoomAddClick) == 0x000600, "Member 'UPyWidget_RoomPanel_V4::AkEvent_CustomRoomAddClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AkEvent_CommonLeftArrowClick) == 0x000608, "Member 'UPyWidget_RoomPanel_V4::AkEvent_CommonLeftArrowClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AkEvent_LockRoom) == 0x000610, "Member 'UPyWidget_RoomPanel_V4::AkEvent_LockRoom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AkEvent_ExChangeTeam) == 0x000618, "Member 'UPyWidget_RoomPanel_V4::AkEvent_ExChangeTeam' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, PermissionSettingsText) == 0x000620, "Member 'UPyWidget_RoomPanel_V4::PermissionSettingsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, TranspositionSettingsText) == 0x000630, "Member 'UPyWidget_RoomPanel_V4::TranspositionSettingsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, SpectateSettingsText) == 0x000640, "Member 'UPyWidget_RoomPanel_V4::SpectateSettingsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AILevelList) == 0x000650, "Member 'UPyWidget_RoomPanel_V4::AILevelList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, Team_1_Name) == 0x000660, "Member 'UPyWidget_RoomPanel_V4::Team_1_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, Team_2_Name) == 0x000678, "Member 'UPyWidget_RoomPanel_V4::Team_2_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, RandomImg) == 0x000690, "Member 'UPyWidget_RoomPanel_V4::RandomImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, RandomThemeImg) == 0x000698, "Member 'UPyWidget_RoomPanel_V4::RandomThemeImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, Img_Add) == 0x0006A0, "Member 'UPyWidget_RoomPanel_V4::Img_Add' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, Img_Delete) == 0x000770, "Member 'UPyWidget_RoomPanel_V4::Img_Delete' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, MapNameClass) == 0x000840, "Member 'UPyWidget_RoomPanel_V4::MapNameClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, MapColor) == 0x000848, "Member 'UPyWidget_RoomPanel_V4::MapColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, AttackerColor) == 0x000860, "Member 'UPyWidget_RoomPanel_V4::AttackerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, DefenderColor) == 0x000930, "Member 'UPyWidget_RoomPanel_V4::DefenderColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPanel_V4, SpectatorItem_Class) == 0x000A00, "Member 'UPyWidget_RoomPanel_V4::SpectatorItem_Class' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RoomPanel_V4;
 
 }
 

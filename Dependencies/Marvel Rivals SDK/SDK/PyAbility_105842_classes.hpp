@@ -18,34 +18,33 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105842.PyConfig_105842
-// 0x0BD8 (0x0C70 - 0x0098)
+// 0x0EF8 (0x0F90 - 0x0098)
 class UPyConfig_105842 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x0C60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScopeSpawnInterval;                                // 0x0C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeSpawnTotalNum;                                // 0x0C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x0F80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScopeSpawnInterval;                                // 0x0F84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeSpawnTotalNum;                                // 0x0F88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105842">();
+		STATIC_CLASS_IMPL("PyConfig_105842")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105842")
 	}
 	static class UPyConfig_105842* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105842>();
 	}
 };
-static_assert(alignof(UPyConfig_105842) == 0x000008, "Wrong alignment on UPyConfig_105842");
-static_assert(sizeof(UPyConfig_105842) == 0x000C70, "Wrong size on UPyConfig_105842");
-static_assert(offsetof(UPyConfig_105842, DashInfo) == 0x000098, "Member 'UPyConfig_105842::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105842, ScopeID) == 0x000C60, "Member 'UPyConfig_105842::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105842, ScopeSpawnInterval) == 0x000C64, "Member 'UPyConfig_105842::ScopeSpawnInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105842, ScopeSpawnTotalNum) == 0x000C68, "Member 'UPyConfig_105842::ScopeSpawnTotalNum' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105842;
 
 // PythonClass PyAbility_105842.PyCue_Scope_HitImpact_10584201
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Scope_HitImpact_10584201 final : public UMarvelCueNotify_HitImpact
 {
 public:
@@ -54,18 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10584201">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10584201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10584201")
 	}
 	static class UPyCue_Scope_HitImpact_10584201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10584201>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10584201) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10584201");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10584201) == 0x0005C8, "Wrong size on UPyCue_Scope_HitImpact_10584201");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10584201;
 
 // PythonClass PyAbility_105842.PyAbility_105842
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105842 : public UAbility_108
 {
 public:
@@ -79,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105842">();
+		STATIC_CLASS_IMPL("PyAbility_105842")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105842")
 	}
 	static class UPyAbility_105842* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105842>();
 	}
 };
-static_assert(alignof(UPyAbility_105842) == 0x000008, "Wrong alignment on UPyAbility_105842");
-static_assert(sizeof(UPyAbility_105842) == 0x0029F8, "Wrong size on UPyAbility_105842");
+DUMPER7_ASSERTS_UPyAbility_105842;
 
 }
 

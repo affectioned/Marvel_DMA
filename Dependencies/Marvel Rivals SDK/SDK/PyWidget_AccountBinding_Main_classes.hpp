@@ -10,27 +10,27 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_AccountBinding_Main.PyWidget_AccountBinding_Item
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_AccountBinding_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Steam;                                             // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PlayStation;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             LoadingBay;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Epic;                                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Xbox;                                              // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Other;                                             // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             CurrentPlatformBg;                                 // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NormalPlatformBg;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Steam;                                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PlayStation;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             LoadingBay;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Epic;                                              // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Xbox;                                              // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Other;                                             // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             CurrentPlatformBg;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NormalPlatformBg;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,31 +40,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccountBinding_Item">();
+		STATIC_CLASS_IMPL("PyWidget_AccountBinding_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccountBinding_Item")
 	}
 	static class UPyWidget_AccountBinding_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccountBinding_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_AccountBinding_Item) == 0x000008, "Wrong alignment on UPyWidget_AccountBinding_Item");
-static_assert(sizeof(UPyWidget_AccountBinding_Item) == 0x000600, "Wrong size on UPyWidget_AccountBinding_Item");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, Steam) == 0x0005C0, "Member 'UPyWidget_AccountBinding_Item::Steam' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, PlayStation) == 0x0005C8, "Member 'UPyWidget_AccountBinding_Item::PlayStation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, LoadingBay) == 0x0005D0, "Member 'UPyWidget_AccountBinding_Item::LoadingBay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, Epic) == 0x0005D8, "Member 'UPyWidget_AccountBinding_Item::Epic' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, Xbox) == 0x0005E0, "Member 'UPyWidget_AccountBinding_Item::Xbox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, Other) == 0x0005E8, "Member 'UPyWidget_AccountBinding_Item::Other' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, CurrentPlatformBg) == 0x0005F0, "Member 'UPyWidget_AccountBinding_Item::CurrentPlatformBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AccountBinding_Item, NormalPlatformBg) == 0x0005F8, "Member 'UPyWidget_AccountBinding_Item::NormalPlatformBg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AccountBinding_Item;
 
 // PythonClass PyWidget_AccountBinding_Main.PyWidget_AccountBinding_Main
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_AccountBinding_Main final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_AccountBinding_Item> Item;                                           // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_AccountBinding_Item> Item;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,16 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccountBinding_Main">();
+		STATIC_CLASS_IMPL("PyWidget_AccountBinding_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccountBinding_Main")
 	}
 	static class UPyWidget_AccountBinding_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccountBinding_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_AccountBinding_Main) == 0x000008, "Wrong alignment on UPyWidget_AccountBinding_Main");
-static_assert(sizeof(UPyWidget_AccountBinding_Main) == 0x0005C8, "Wrong size on UPyWidget_AccountBinding_Main");
-static_assert(offsetof(UPyWidget_AccountBinding_Main, Item) == 0x0005C0, "Member 'UPyWidget_AccountBinding_Main::Item' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AccountBinding_Main;
 
 }
 

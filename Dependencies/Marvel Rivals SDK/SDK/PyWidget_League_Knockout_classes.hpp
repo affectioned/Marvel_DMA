@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Knockout.PyWidget_League_Knockout
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_League_Knockout final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             BgMRC;                                             // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgClash;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleColorMRC;                                     // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleColorClash;                                   // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             BgMRC;                                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgClash;                                           // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleColorMRC;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleColorClash;                                   // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Knockout">();
+		STATIC_CLASS_IMPL("PyWidget_League_Knockout")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Knockout")
 	}
 	static class UPyWidget_League_Knockout* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Knockout>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Knockout) == 0x000008, "Wrong alignment on UPyWidget_League_Knockout");
-static_assert(sizeof(UPyWidget_League_Knockout) == 0x0005F8, "Wrong size on UPyWidget_League_Knockout");
-static_assert(offsetof(UPyWidget_League_Knockout, BgMRC) == 0x0005C0, "Member 'UPyWidget_League_Knockout::BgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Knockout, BgClash) == 0x0005C8, "Member 'UPyWidget_League_Knockout::BgClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Knockout, TitleColorMRC) == 0x0005D0, "Member 'UPyWidget_League_Knockout::TitleColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Knockout, TitleColorClash) == 0x0005E4, "Member 'UPyWidget_League_Knockout::TitleColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Knockout;
 
 }
 

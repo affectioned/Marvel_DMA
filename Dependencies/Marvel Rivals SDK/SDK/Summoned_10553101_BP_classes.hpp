@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10553101_BP.Summoned_10553101_BP_C
-// 0x0010 (0x0BB0 - 0x0BA0)
+// 0x0010 (0x0BD0 - 0x0BC0)
 class ASummoned_10553101_BP_C final : public APySummoned_10553101
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B98(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          BoxShapeRight;                                     // 0x0BA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          BoxShapeLeft;                                      // 0x0BA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BB8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          BoxShapeRight;                                     // 0x0BC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          BoxShapeLeft;                                      // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Summoned_10553101_BP(int32 EntryPoint);
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10553101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10553101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10553101_BP_C")
 	}
 	static class ASummoned_10553101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10553101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10553101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10553101_BP_C");
-static_assert(sizeof(ASummoned_10553101_BP_C) == 0x000BB0, "Wrong size on ASummoned_10553101_BP_C");
-static_assert(offsetof(ASummoned_10553101_BP_C, UberGraphFrame) == 0x000B98, "Member 'ASummoned_10553101_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASummoned_10553101_BP_C, BoxShapeRight) == 0x000BA0, "Member 'ASummoned_10553101_BP_C::BoxShapeRight' has a wrong offset!");
-static_assert(offsetof(ASummoned_10553101_BP_C, BoxShapeLeft) == 0x000BA8, "Member 'ASummoned_10553101_BP_C::BoxShapeLeft' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10553101_BP_C;
 
 }
 

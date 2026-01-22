@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHashTextMoodWidgetDecoratorProxy">();
+		STATIC_CLASS_IMPL("PyHashTextMoodWidgetDecoratorProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHashTextMoodWidgetDecoratorProxy")
 	}
 	static class UPyHashTextMoodWidgetDecoratorProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHashTextMoodWidgetDecoratorProxy>();
 	}
 };
-static_assert(alignof(UPyHashTextMoodWidgetDecoratorProxy) == 0x000008, "Wrong alignment on UPyHashTextMoodWidgetDecoratorProxy");
-static_assert(sizeof(UPyHashTextMoodWidgetDecoratorProxy) == 0x000088, "Wrong size on UPyHashTextMoodWidgetDecoratorProxy");
+DUMPER7_ASSERTS_UPyHashTextMoodWidgetDecoratorProxy;
 
 }
 

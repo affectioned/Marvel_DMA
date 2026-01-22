@@ -46,35 +46,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrajectoryPortal">();
+		STATIC_CLASS_IMPL("PyTrajectoryPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrajectoryPortal")
 	}
 	static class APyTrajectoryPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTrajectoryPortal>();
 	}
 };
-static_assert(alignof(APyTrajectoryPortal) == 0x000010, "Wrong alignment on APyTrajectoryPortal");
-static_assert(sizeof(APyTrajectoryPortal) == 0x000780, "Wrong size on APyTrajectoryPortal");
-static_assert(offsetof(APyTrajectoryPortal, PortalState) == 0x000730, "Member 'APyTrajectoryPortal::PortalState' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, CueTag) == 0x000734, "Member 'APyTrajectoryPortal::CueTag' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, Trace) == 0x000740, "Member 'APyTrajectoryPortal::Trace' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, TeleportCooldown) == 0x000748, "Member 'APyTrajectoryPortal::TeleportCooldown' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, MoveSpeed) == 0x00074C, "Member 'APyTrajectoryPortal::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, FadeInTime) == 0x000750, "Member 'APyTrajectoryPortal::FadeInTime' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, FadeOutTime) == 0x000754, "Member 'APyTrajectoryPortal::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, AbilityID) == 0x000758, "Member 'APyTrajectoryPortal::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, AbilityRequireTag) == 0x00075C, "Member 'APyTrajectoryPortal::AbilityRequireTag' has a wrong offset!");
-static_assert(offsetof(APyTrajectoryPortal, DispatcherPortalStateUpdate) == 0x000768, "Member 'APyTrajectoryPortal::DispatcherPortalStateUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_APyTrajectoryPortal;
 
 // PythonClass PyTrajectoryPortal.PyCue_Level_TrajectoryPortal
-// 0x0020 (0x1240 - 0x1220)
+// 0x0020 (0x1250 - 0x1230)
 class APyCue_Level_TrajectoryPortal final : public AMarvelCueNotify_LoopNoRecycle
 {
 public:
-	float                                         EffectDisplayCooldown;                             // 0x1220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1224[0x4];                                     // 0x1224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          OpenAudioEvent;                                    // 0x1228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          loopAudioEvent;                                    // 0x1230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EffectDisplayCooldown;                             // 0x1230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1234[0x4];                                     // 0x1234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          OpenAudioEvent;                                    // 0x1238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          loopAudioEvent;                                    // 0x1240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -84,18 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_TrajectoryPortal">();
+		STATIC_CLASS_IMPL("PyCue_Level_TrajectoryPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_TrajectoryPortal")
 	}
 	static class APyCue_Level_TrajectoryPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_TrajectoryPortal>();
 	}
 };
-static_assert(alignof(APyCue_Level_TrajectoryPortal) == 0x000010, "Wrong alignment on APyCue_Level_TrajectoryPortal");
-static_assert(sizeof(APyCue_Level_TrajectoryPortal) == 0x001240, "Wrong size on APyCue_Level_TrajectoryPortal");
-static_assert(offsetof(APyCue_Level_TrajectoryPortal, EffectDisplayCooldown) == 0x001220, "Member 'APyCue_Level_TrajectoryPortal::EffectDisplayCooldown' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_TrajectoryPortal, OpenAudioEvent) == 0x001228, "Member 'APyCue_Level_TrajectoryPortal::OpenAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_TrajectoryPortal, loopAudioEvent) == 0x001230, "Member 'APyCue_Level_TrajectoryPortal::loopAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_TrajectoryPortal;
 
 }
 

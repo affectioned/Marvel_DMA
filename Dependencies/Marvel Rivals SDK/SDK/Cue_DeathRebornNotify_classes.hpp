@@ -23,15 +23,18 @@ class UCue_DeathRebornNotify_C final : public UCue_DeathRebornNotify
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_DeathRebornNotify_C">();
+		BP_STATIC_CLASS_IMPL("Cue_DeathRebornNotify_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_DeathRebornNotify_C")
 	}
 	static class UCue_DeathRebornNotify_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_DeathRebornNotify_C>();
 	}
 };
-static_assert(alignof(UCue_DeathRebornNotify_C) == 0x000008, "Wrong alignment on UCue_DeathRebornNotify_C");
-static_assert(sizeof(UCue_DeathRebornNotify_C) == 0x000050, "Wrong size on UCue_DeathRebornNotify_C");
+DUMPER7_ASSERTS_UCue_DeathRebornNotify_C;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Marvel_classes.hpp"
 #include "Hero_1015_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -31,22 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101541">();
+		STATIC_CLASS_IMPL("PyConfig_101541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101541")
 	}
 	static class UPyConfig_101541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101541>();
 	}
 };
-static_assert(alignof(UPyConfig_101541) == 0x000008, "Wrong alignment on UPyConfig_101541");
-static_assert(sizeof(UPyConfig_101541) == 0x0000B8, "Wrong size on UPyConfig_101541");
-static_assert(offsetof(UPyConfig_101541, DefaultWeatherTag) == 0x000098, "Member 'UPyConfig_101541::DefaultWeatherTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101541, EnhancedThunderDamage) == 0x0000A4, "Member 'UPyConfig_101541::EnhancedThunderDamage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101541, EnhancedThunderDamageDelay) == 0x0000A8, "Member 'UPyConfig_101541::EnhancedThunderDamageDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101541, EnhancedThunderHitCueTag) == 0x0000AC, "Member 'UPyConfig_101541::EnhancedThunderHitCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101541;
 
 // PythonClass PyAbility_101541.PyUIController_101541
-// 0x0000 (0x2590 - 0x2590)
+// 0x0000 (0x2BC0 - 0x2BC0)
 class UPyUIController_101541 final : public UUIController_101541
 {
 public:
@@ -55,18 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101541">();
+		STATIC_CLASS_IMPL("PyUIController_101541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101541")
 	}
 	static class UPyUIController_101541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101541>();
 	}
 };
-static_assert(alignof(UPyUIController_101541) == 0x000010, "Wrong alignment on UPyUIController_101541");
-static_assert(sizeof(UPyUIController_101541) == 0x002590, "Wrong size on UPyUIController_101541");
+DUMPER7_ASSERTS_UPyUIController_101541;
 
 // PythonClass PyAbility_101541.PyAbility_101541
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101541 : public UAbility_101541
 {
 public:
@@ -80,28 +82,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101541">();
+		STATIC_CLASS_IMPL("PyAbility_101541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101541")
 	}
 	static class UPyAbility_101541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101541>();
 	}
 };
-static_assert(alignof(UPyAbility_101541) == 0x000008, "Wrong alignment on UPyAbility_101541");
-static_assert(sizeof(UPyAbility_101541) == 0x0029F8, "Wrong size on UPyAbility_101541");
+DUMPER7_ASSERTS_UPyAbility_101541;
 
 // PythonClass PyAbility_101541.PyCue_Ability_Loop_101541
-// 0x0020 (0x11E0 - 0x11C0)
+// 0x0020 (0x11F0 - 0x11D0)
 class APyCue_Ability_Loop_101541 : public ACue_Ability_Loop_101541
 {
 public:
-	int32                                         StormAudioId;                                      // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ThunderAudioId;                                    // 0x11C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EnhancedStormAudioId;                              // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EnhancedThunderAudioId;                            // 0x11CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferStormAudioId;                              // 0x11D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferLittleStormAudioId;                        // 0x11D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferThunderAudioId;                            // 0x11D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StormAudioId;                                      // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ThunderAudioId;                                    // 0x11D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnhancedStormAudioId;                              // 0x11D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnhancedThunderAudioId;                            // 0x11DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferStormAudioId;                              // 0x11E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferLittleStormAudioId;                        // 0x11E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferThunderAudioId;                            // 0x11E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -116,25 +121,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_101541">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_101541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_101541")
 	}
 	static class APyCue_Ability_Loop_101541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_101541>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_101541) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_101541");
-static_assert(sizeof(APyCue_Ability_Loop_101541) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_101541");
-static_assert(offsetof(APyCue_Ability_Loop_101541, StormAudioId) == 0x0011C0, "Member 'APyCue_Ability_Loop_101541::StormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, ThunderAudioId) == 0x0011C4, "Member 'APyCue_Ability_Loop_101541::ThunderAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, EnhancedStormAudioId) == 0x0011C8, "Member 'APyCue_Ability_Loop_101541::EnhancedStormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, EnhancedThunderAudioId) == 0x0011CC, "Member 'APyCue_Ability_Loop_101541::EnhancedThunderAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, TransferStormAudioId) == 0x0011D0, "Member 'APyCue_Ability_Loop_101541::TransferStormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, TransferLittleStormAudioId) == 0x0011D4, "Member 'APyCue_Ability_Loop_101541::TransferLittleStormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101541, TransferThunderAudioId) == 0x0011D8, "Member 'APyCue_Ability_Loop_101541::TransferThunderAudioId' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_101541;
 
 // PythonClass PyAbility_101541.PyCue_Ability_Loop_101541_502
-// 0x0000 (0x11E0 - 0x11E0)
+// 0x0000 (0x11F0 - 0x11F0)
 class APyCue_Ability_Loop_101541_502 final : public APyCue_Ability_Loop_101541
 {
 public:
@@ -144,24 +145,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_101541_502">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_101541_502")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_101541_502")
 	}
 	static class APyCue_Ability_Loop_101541_502* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_101541_502>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_101541_502) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_101541_502");
-static_assert(sizeof(APyCue_Ability_Loop_101541_502) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_101541_502");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_101541_502;
 
 // PythonClass PyAbility_101541.PyWidget_101541
-// 0x0078 (0x05E0 - 0x0568)
+// 0x0078 (0x05E8 - 0x0570)
 class UPyWidget_101541 final : public UMarvelUserWidget
 {
 public:
-	int32                                         TraceScopeID;                                      // 0x0568(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           UltimateAbilityTag;                                // 0x056C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  WidgetStateRelatedTags;                            // 0x0578(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         TraceScopeID;                                      // 0x0570(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           UltimateAbilityTag;                                // 0x0574(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  WidgetStateRelatedTags;                            // 0x0580(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	bool ShouldBeVisible();
@@ -170,18 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_101541">();
+		STATIC_CLASS_IMPL("PyWidget_101541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_101541")
 	}
 	static class UPyWidget_101541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_101541>();
 	}
 };
-static_assert(alignof(UPyWidget_101541) == 0x000008, "Wrong alignment on UPyWidget_101541");
-static_assert(sizeof(UPyWidget_101541) == 0x0005E0, "Wrong size on UPyWidget_101541");
-static_assert(offsetof(UPyWidget_101541, TraceScopeID) == 0x000568, "Member 'UPyWidget_101541::TraceScopeID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_101541, UltimateAbilityTag) == 0x00056C, "Member 'UPyWidget_101541::UltimateAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_101541, WidgetStateRelatedTags) == 0x000578, "Member 'UPyWidget_101541::WidgetStateRelatedTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_101541;
 
 }
 

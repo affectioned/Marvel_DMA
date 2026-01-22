@@ -43,17 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MosUEClient">();
+		STATIC_CLASS_IMPL("MosUEClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MosUEClient")
 	}
 	static class UMosUEClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMosUEClient>();
 	}
 };
-static_assert(alignof(UMosUEClient) == 0x000010, "Wrong alignment on UMosUEClient");
-static_assert(sizeof(UMosUEClient) == 0x000160, "Wrong size on UMosUEClient");
-static_assert(offsetof(UMosUEClient, GameInstance) == 0x000070, "Member 'UMosUEClient::GameInstance' has a wrong offset!");
-static_assert(offsetof(UMosUEClient, State) == 0x000078, "Member 'UMosUEClient::State' has a wrong offset!");
+DUMPER7_ASSERTS_UMosUEClient;
 
 }
 

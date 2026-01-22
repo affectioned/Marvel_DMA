@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindRandomPointCenterSelf">();
+		STATIC_CLASS_IMPL("BTT_PyFindRandomPointCenterSelf")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindRandomPointCenterSelf")
 	}
 	static class UBTT_PyFindRandomPointCenterSelf* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindRandomPointCenterSelf>();
 	}
 };
-static_assert(alignof(UBTT_PyFindRandomPointCenterSelf) == 0x000008, "Wrong alignment on UBTT_PyFindRandomPointCenterSelf");
-static_assert(sizeof(UBTT_PyFindRandomPointCenterSelf) == 0x0000F8, "Wrong size on UBTT_PyFindRandomPointCenterSelf");
-static_assert(offsetof(UBTT_PyFindRandomPointCenterSelf, TargetLocationKey) == 0x0000C0, "Member 'UBTT_PyFindRandomPointCenterSelf::TargetLocationKey' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindRandomPointCenterSelf, SearchRadius) == 0x0000F0, "Member 'UBTT_PyFindRandomPointCenterSelf::SearchRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindRandomPointCenterSelf, SearchMinRadius) == 0x0000F4, "Member 'UBTT_PyFindRandomPointCenterSelf::SearchMinRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindRandomPointCenterSelf;
 
 // PythonClass BTT_PyFindRandomPointCenterSelf.BTT_PyForceMoveTo
 // 0x0038 (0x00F8 - 0x00C0)
@@ -61,18 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyForceMoveTo">();
+		STATIC_CLASS_IMPL("BTT_PyForceMoveTo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyForceMoveTo")
 	}
 	static class UBTT_PyForceMoveTo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyForceMoveTo>();
 	}
 };
-static_assert(alignof(UBTT_PyForceMoveTo) == 0x000008, "Wrong alignment on UBTT_PyForceMoveTo");
-static_assert(sizeof(UBTT_PyForceMoveTo) == 0x0000F8, "Wrong size on UBTT_PyForceMoveTo");
-static_assert(offsetof(UBTT_PyForceMoveTo, TargetLocationKey) == 0x0000C0, "Member 'UBTT_PyForceMoveTo::TargetLocationKey' has a wrong offset!");
-static_assert(offsetof(UBTT_PyForceMoveTo, ReachRadius) == 0x0000F0, "Member 'UBTT_PyForceMoveTo::ReachRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyForceMoveTo, MaxMoveTime) == 0x0000F4, "Member 'UBTT_PyForceMoveTo::MaxMoveTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyForceMoveTo;
 
 }
 

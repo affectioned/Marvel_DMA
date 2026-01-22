@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyWithinBattleKeepDist">();
+		STATIC_CLASS_IMPL("BTD_PyWithinBattleKeepDist")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyWithinBattleKeepDist")
 	}
 	static class UBTD_PyWithinBattleKeepDist* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyWithinBattleKeepDist>();
 	}
 };
-static_assert(alignof(UBTD_PyWithinBattleKeepDist) == 0x000008, "Wrong alignment on UBTD_PyWithinBattleKeepDist");
-static_assert(sizeof(UBTD_PyWithinBattleKeepDist) == 0x000118, "Wrong size on UBTD_PyWithinBattleKeepDist");
-static_assert(offsetof(UBTD_PyWithinBattleKeepDist, LocationOneKey) == 0x0000B8, "Member 'UBTD_PyWithinBattleKeepDist::LocationOneKey' has a wrong offset!");
-static_assert(offsetof(UBTD_PyWithinBattleKeepDist, LocationTwoKey) == 0x0000E8, "Member 'UBTD_PyWithinBattleKeepDist::LocationTwoKey' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyWithinBattleKeepDist;
 
 }
 

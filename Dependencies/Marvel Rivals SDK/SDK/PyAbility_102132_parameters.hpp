@@ -25,21 +25,16 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10213201_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10213201_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10213201_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10213201_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10213201_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10213201_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10213201_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10213201_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10213201_K2_OnPreApplyContainer;
 
 // PythonFunction PyAbility_102132.PyProjectile_10213201.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10213201_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10213201_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_10213201_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_10213201_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_10213201_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_10213201_K2_OnProcessHit, ImpactResult) == 0x000000, "Member 'PyProjectile_10213201_K2_OnProcessHit::ImpactResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10213201_K2_OnProcessHit;
 
 // PythonFunction PyAbility_102132.PyAbility_102132.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct PyAbility_102132_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102132_CanActivate) == 0x000001, "Wrong alignment on PyAbility_102132_CanActivate");
-static_assert(sizeof(PyAbility_102132_CanActivate) == 0x000001, "Wrong size on PyAbility_102132_CanActivate");
-static_assert(offsetof(PyAbility_102132_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_102132_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102132_CanActivate;
 
 // PythonFunction PyAbility_102132.PyCue_Projectile_HitImpact_10213201.OnExecuteAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Projectile_HitImpact_10213201_OnExecuteAudio) == 0x000008, "Wrong alignment on PyCue_Projectile_HitImpact_10213201_OnExecuteAudio");
-static_assert(sizeof(PyCue_Projectile_HitImpact_10213201_OnExecuteAudio) == 0x0001D8, "Wrong size on PyCue_Projectile_HitImpact_10213201_OnExecuteAudio");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10213201_OnExecuteAudio, MyTarget) == 0x000000, "Member 'PyCue_Projectile_HitImpact_10213201_OnExecuteAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10213201_OnExecuteAudio, Parameters) == 0x000008, "Member 'PyCue_Projectile_HitImpact_10213201_OnExecuteAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_HitImpact_10213201_OnExecuteAudio;
 
 // PythonFunction PyAbility_102132.PyCue_Projectile_Loop_10213201.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -73,10 +63,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Projectile_Loop_10213201_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Projectile_Loop_10213201_WhileActiveFX");
-static_assert(sizeof(PyCue_Projectile_Loop_10213201_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Projectile_Loop_10213201_WhileActiveFX");
-static_assert(offsetof(PyCue_Projectile_Loop_10213201_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Projectile_Loop_10213201_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_10213201_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Projectile_Loop_10213201_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_Loop_10213201_WhileActiveFX;
 
 }
 

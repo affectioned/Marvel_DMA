@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMovingAvoidanceProcessor">();
+		STATIC_CLASS_IMPL("MassMovingAvoidanceProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMovingAvoidanceProcessor")
 	}
 	static class UMassMovingAvoidanceProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassMovingAvoidanceProcessor>();
 	}
 };
-static_assert(alignof(UMassMovingAvoidanceProcessor) == 0x000008, "Wrong alignment on UMassMovingAvoidanceProcessor");
-static_assert(sizeof(UMassMovingAvoidanceProcessor) == 0x000380, "Wrong size on UMassMovingAvoidanceProcessor");
+DUMPER7_ASSERTS_UMassMovingAvoidanceProcessor;
 
 // Class MassNavigation.MassStandingAvoidanceProcessor
 // 0x02B8 (0x0380 - 0x00C8)
@@ -49,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStandingAvoidanceProcessor">();
+		STATIC_CLASS_IMPL("MassStandingAvoidanceProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStandingAvoidanceProcessor")
 	}
 	static class UMassStandingAvoidanceProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStandingAvoidanceProcessor>();
 	}
 };
-static_assert(alignof(UMassStandingAvoidanceProcessor) == 0x000008, "Wrong alignment on UMassStandingAvoidanceProcessor");
-static_assert(sizeof(UMassStandingAvoidanceProcessor) == 0x000380, "Wrong size on UMassStandingAvoidanceProcessor");
+DUMPER7_ASSERTS_UMassStandingAvoidanceProcessor;
 
 // Class MassNavigation.MassObstacleAvoidanceTrait
 // 0x0078 (0x00A8 - 0x0030)
@@ -70,17 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassObstacleAvoidanceTrait">();
+		STATIC_CLASS_IMPL("MassObstacleAvoidanceTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassObstacleAvoidanceTrait")
 	}
 	static class UMassObstacleAvoidanceTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassObstacleAvoidanceTrait>();
 	}
 };
-static_assert(alignof(UMassObstacleAvoidanceTrait) == 0x000008, "Wrong alignment on UMassObstacleAvoidanceTrait");
-static_assert(sizeof(UMassObstacleAvoidanceTrait) == 0x0000A8, "Wrong size on UMassObstacleAvoidanceTrait");
-static_assert(offsetof(UMassObstacleAvoidanceTrait, MovingParameters) == 0x000030, "Member 'UMassObstacleAvoidanceTrait::MovingParameters' has a wrong offset!");
-static_assert(offsetof(UMassObstacleAvoidanceTrait, StandingParameters) == 0x000074, "Member 'UMassObstacleAvoidanceTrait::StandingParameters' has a wrong offset!");
+DUMPER7_ASSERTS_UMassObstacleAvoidanceTrait;
 
 // Class MassNavigation.MassNavigationObstacleTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -89,15 +96,18 @@ class UMassNavigationObstacleTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNavigationObstacleTrait">();
+		STATIC_CLASS_IMPL("MassNavigationObstacleTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNavigationObstacleTrait")
 	}
 	static class UMassNavigationObstacleTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNavigationObstacleTrait>();
 	}
 };
-static_assert(alignof(UMassNavigationObstacleTrait) == 0x000008, "Wrong alignment on UMassNavigationObstacleTrait");
-static_assert(sizeof(UMassNavigationObstacleTrait) == 0x000030, "Wrong size on UMassNavigationObstacleTrait");
+DUMPER7_ASSERTS_UMassNavigationObstacleTrait;
 
 // Class MassNavigation.MassOffLODNavigationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -109,15 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassOffLODNavigationProcessor">();
+		STATIC_CLASS_IMPL("MassOffLODNavigationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassOffLODNavigationProcessor")
 	}
 	static class UMassOffLODNavigationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassOffLODNavigationProcessor>();
 	}
 };
-static_assert(alignof(UMassOffLODNavigationProcessor) == 0x000008, "Wrong alignment on UMassOffLODNavigationProcessor");
-static_assert(sizeof(UMassOffLODNavigationProcessor) == 0x000370, "Wrong size on UMassOffLODNavigationProcessor");
+DUMPER7_ASSERTS_UMassOffLODNavigationProcessor;
 
 // Class MassNavigation.MassNavigationSmoothHeightProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -129,15 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNavigationSmoothHeightProcessor">();
+		STATIC_CLASS_IMPL("MassNavigationSmoothHeightProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNavigationSmoothHeightProcessor")
 	}
 	static class UMassNavigationSmoothHeightProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNavigationSmoothHeightProcessor>();
 	}
 };
-static_assert(alignof(UMassNavigationSmoothHeightProcessor) == 0x000008, "Wrong alignment on UMassNavigationSmoothHeightProcessor");
-static_assert(sizeof(UMassNavigationSmoothHeightProcessor) == 0x000370, "Wrong size on UMassNavigationSmoothHeightProcessor");
+DUMPER7_ASSERTS_UMassNavigationSmoothHeightProcessor;
 
 // Class MassNavigation.MassMoveTargetFragmentInitializer
 // 0x02A0 (0x0380 - 0x00E0)
@@ -149,15 +165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMoveTargetFragmentInitializer">();
+		STATIC_CLASS_IMPL("MassMoveTargetFragmentInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMoveTargetFragmentInitializer")
 	}
 	static class UMassMoveTargetFragmentInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassMoveTargetFragmentInitializer>();
 	}
 };
-static_assert(alignof(UMassMoveTargetFragmentInitializer) == 0x000008, "Wrong alignment on UMassMoveTargetFragmentInitializer");
-static_assert(sizeof(UMassMoveTargetFragmentInitializer) == 0x000380, "Wrong size on UMassMoveTargetFragmentInitializer");
+DUMPER7_ASSERTS_UMassMoveTargetFragmentInitializer;
 
 // Class MassNavigation.MassNavigationObstacleGridProcessor
 // 0x07E8 (0x08B0 - 0x00C8)
@@ -169,15 +188,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNavigationObstacleGridProcessor">();
+		STATIC_CLASS_IMPL("MassNavigationObstacleGridProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNavigationObstacleGridProcessor")
 	}
 	static class UMassNavigationObstacleGridProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNavigationObstacleGridProcessor>();
 	}
 };
-static_assert(alignof(UMassNavigationObstacleGridProcessor) == 0x000008, "Wrong alignment on UMassNavigationObstacleGridProcessor");
-static_assert(sizeof(UMassNavigationObstacleGridProcessor) == 0x0008B0, "Wrong size on UMassNavigationObstacleGridProcessor");
+DUMPER7_ASSERTS_UMassNavigationObstacleGridProcessor;
 
 // Class MassNavigation.MassNavigationObstacleRemoverProcessor
 // 0x02A0 (0x0380 - 0x00E0)
@@ -189,35 +211,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNavigationObstacleRemoverProcessor">();
+		STATIC_CLASS_IMPL("MassNavigationObstacleRemoverProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNavigationObstacleRemoverProcessor")
 	}
 	static class UMassNavigationObstacleRemoverProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNavigationObstacleRemoverProcessor>();
 	}
 };
-static_assert(alignof(UMassNavigationObstacleRemoverProcessor) == 0x000008, "Wrong alignment on UMassNavigationObstacleRemoverProcessor");
-static_assert(sizeof(UMassNavigationObstacleRemoverProcessor) == 0x000380, "Wrong size on UMassNavigationObstacleRemoverProcessor");
+DUMPER7_ASSERTS_UMassNavigationObstacleRemoverProcessor;
 
 // Class MassNavigation.MassNavigationSubsystem
-// 0x00A8 (0x00E0 - 0x0038)
+// 0x00A8 (0x00E8 - 0x0040)
 class UMassNavigationSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0xA8];                                      // 0x0038(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0xA8];                                      // 0x0040(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassNavigationSubsystem">();
+		STATIC_CLASS_IMPL("MassNavigationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassNavigationSubsystem")
 	}
 	static class UMassNavigationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassNavigationSubsystem>();
 	}
 };
-static_assert(alignof(UMassNavigationSubsystem) == 0x000008, "Wrong alignment on UMassNavigationSubsystem");
-static_assert(sizeof(UMassNavigationSubsystem) == 0x0000E0, "Wrong size on UMassNavigationSubsystem");
+DUMPER7_ASSERTS_UMassNavigationSubsystem;
 
 // Class MassNavigation.MassSmoothOrientationProcessor
 // 0x0548 (0x0610 - 0x00C8)
@@ -229,15 +257,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmoothOrientationProcessor">();
+		STATIC_CLASS_IMPL("MassSmoothOrientationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmoothOrientationProcessor")
 	}
 	static class UMassSmoothOrientationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmoothOrientationProcessor>();
 	}
 };
-static_assert(alignof(UMassSmoothOrientationProcessor) == 0x000008, "Wrong alignment on UMassSmoothOrientationProcessor");
-static_assert(sizeof(UMassSmoothOrientationProcessor) == 0x000610, "Wrong size on UMassSmoothOrientationProcessor");
+DUMPER7_ASSERTS_UMassSmoothOrientationProcessor;
 
 // Class MassNavigation.MassSmoothOrientationTrait
 // 0x0018 (0x0048 - 0x0030)
@@ -249,16 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSmoothOrientationTrait">();
+		STATIC_CLASS_IMPL("MassSmoothOrientationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSmoothOrientationTrait")
 	}
 	static class UMassSmoothOrientationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSmoothOrientationTrait>();
 	}
 };
-static_assert(alignof(UMassSmoothOrientationTrait) == 0x000008, "Wrong alignment on UMassSmoothOrientationTrait");
-static_assert(sizeof(UMassSmoothOrientationTrait) == 0x000048, "Wrong size on UMassSmoothOrientationTrait");
-static_assert(offsetof(UMassSmoothOrientationTrait, Orientation) == 0x000030, "Member 'UMassSmoothOrientationTrait::Orientation' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSmoothOrientationTrait;
 
 // Class MassNavigation.MassSteerToMoveTargetProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -270,15 +303,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSteerToMoveTargetProcessor">();
+		STATIC_CLASS_IMPL("MassSteerToMoveTargetProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSteerToMoveTargetProcessor")
 	}
 	static class UMassSteerToMoveTargetProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSteerToMoveTargetProcessor>();
 	}
 };
-static_assert(alignof(UMassSteerToMoveTargetProcessor) == 0x000008, "Wrong alignment on UMassSteerToMoveTargetProcessor");
-static_assert(sizeof(UMassSteerToMoveTargetProcessor) == 0x000370, "Wrong size on UMassSteerToMoveTargetProcessor");
+DUMPER7_ASSERTS_UMassSteerToMoveTargetProcessor;
 
 // Class MassNavigation.MassSteeringTrait
 // 0x0028 (0x0058 - 0x0030)
@@ -291,17 +327,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSteeringTrait">();
+		STATIC_CLASS_IMPL("MassSteeringTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSteeringTrait")
 	}
 	static class UMassSteeringTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSteeringTrait>();
 	}
 };
-static_assert(alignof(UMassSteeringTrait) == 0x000008, "Wrong alignment on UMassSteeringTrait");
-static_assert(sizeof(UMassSteeringTrait) == 0x000058, "Wrong size on UMassSteeringTrait");
-static_assert(offsetof(UMassSteeringTrait, MovingSteering) == 0x000030, "Member 'UMassSteeringTrait::MovingSteering' has a wrong offset!");
-static_assert(offsetof(UMassSteeringTrait, StandingSteering) == 0x000038, "Member 'UMassSteeringTrait::StandingSteering' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSteeringTrait;
 
 }
 

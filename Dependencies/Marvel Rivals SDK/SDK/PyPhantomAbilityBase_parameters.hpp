@@ -24,9 +24,7 @@ struct PyPhantomAbilityBase_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPhantomAbilityBase_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyPhantomAbilityBase_K2_OnEndAbility");
-static_assert(sizeof(PyPhantomAbilityBase_K2_OnEndAbility) == 0x000001, "Wrong size on PyPhantomAbilityBase_K2_OnEndAbility");
-static_assert(offsetof(PyPhantomAbilityBase_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyPhantomAbilityBase_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyPhantomAbilityBase_K2_OnEndAbility;
 
 // PythonFunction PyPhantomAbilityBase.PyPhantomAbilityBase.OnSummonedSpawned
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyPhantomAbilityBase_OnSummonedSpawned final
 public:
 	class AActor*                                 SpawnedSummoned;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPhantomAbilityBase_OnSummonedSpawned) == 0x000008, "Wrong alignment on PyPhantomAbilityBase_OnSummonedSpawned");
-static_assert(sizeof(PyPhantomAbilityBase_OnSummonedSpawned) == 0x000008, "Wrong size on PyPhantomAbilityBase_OnSummonedSpawned");
-static_assert(offsetof(PyPhantomAbilityBase_OnSummonedSpawned, SpawnedSummoned) == 0x000000, "Member 'PyPhantomAbilityBase_OnSummonedSpawned::SpawnedSummoned' has a wrong offset!");
+DUMPER7_ASSERTS_PyPhantomAbilityBase_OnSummonedSpawned;
 
 // PythonFunction PyPhantomAbilityBase.PyPhantomAbilityBase.OnMontageCompleted_Local
 // 0x02A0 (0x02A0 - 0x0000)
@@ -48,10 +44,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPhantomAbilityBase_OnMontageCompleted_Local) == 0x000008, "Wrong alignment on PyPhantomAbilityBase_OnMontageCompleted_Local");
-static_assert(sizeof(PyPhantomAbilityBase_OnMontageCompleted_Local) == 0x0002A0, "Wrong size on PyPhantomAbilityBase_OnMontageCompleted_Local");
-static_assert(offsetof(PyPhantomAbilityBase_OnMontageCompleted_Local, EventTag) == 0x000000, "Member 'PyPhantomAbilityBase_OnMontageCompleted_Local::EventTag' has a wrong offset!");
-static_assert(offsetof(PyPhantomAbilityBase_OnMontageCompleted_Local, EventData) == 0x000010, "Member 'PyPhantomAbilityBase_OnMontageCompleted_Local::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyPhantomAbilityBase_OnMontageCompleted_Local;
 
 // PythonFunction PyPhantomAbilityBase.PyCue_Buff_PhantomStealthBuff.OnActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -62,11 +55,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_PhantomStealthBuff_OnActive) == 0x000008, "Wrong alignment on PyCue_Buff_PhantomStealthBuff_OnActive");
-static_assert(sizeof(PyCue_Buff_PhantomStealthBuff_OnActive) == 0x0001E0, "Wrong size on PyCue_Buff_PhantomStealthBuff_OnActive");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnActive, MyTarget) == 0x000000, "Member 'PyCue_Buff_PhantomStealthBuff_OnActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnActive, Parameters) == 0x000008, "Member 'PyCue_Buff_PhantomStealthBuff_OnActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_PhantomStealthBuff_OnActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_PhantomStealthBuff_OnActive;
 
 // PythonFunction PyPhantomAbilityBase.PyCue_Buff_PhantomStealthBuff.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -77,11 +66,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_PhantomStealthBuff_OnRemove) == 0x000008, "Wrong alignment on PyCue_Buff_PhantomStealthBuff_OnRemove");
-static_assert(sizeof(PyCue_Buff_PhantomStealthBuff_OnRemove) == 0x0001E0, "Wrong size on PyCue_Buff_PhantomStealthBuff_OnRemove");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Buff_PhantomStealthBuff_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Buff_PhantomStealthBuff_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_PhantomStealthBuff_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_PhantomStealthBuff_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_PhantomStealthBuff_OnRemove;
 
 // PythonFunction PyPhantomAbilityBase.PyCue_Ability_PhantomShell.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -92,11 +77,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_PhantomShell_WhileActive) == 0x000008, "Wrong alignment on PyCue_Ability_PhantomShell_WhileActive");
-static_assert(sizeof(PyCue_Ability_PhantomShell_WhileActive) == 0x0001E0, "Wrong size on PyCue_Ability_PhantomShell_WhileActive");
-static_assert(offsetof(PyCue_Ability_PhantomShell_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Ability_PhantomShell_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_PhantomShell_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Ability_PhantomShell_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_PhantomShell_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_PhantomShell_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_PhantomShell_WhileActive;
 
 // PythonFunction PyPhantomAbilityBase.PyCue_Ability_PhantomShell.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -106,10 +87,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_PhantomShell_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Ability_PhantomShell_OnRemoveFX");
-static_assert(sizeof(PyCue_Ability_PhantomShell_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Ability_PhantomShell_OnRemoveFX");
-static_assert(offsetof(PyCue_Ability_PhantomShell_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_PhantomShell_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_PhantomShell_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_PhantomShell_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_PhantomShell_OnRemoveFX;
 
 }
 

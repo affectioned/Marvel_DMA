@@ -899,6 +899,25 @@ void APyCue_Level_100003::OnPayloadScopeVisible(int32 IsVisible)
 }
 
 
+// PythonFunction PyPayload.PyCue_Level_100003.OnPayloadTypeChanged
+// (Native, Public, BlueprintCallable)
+
+void APyCue_Level_100003::OnPayloadTypeChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Level_100003", "OnPayloadTypeChanged");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyPayload.PyCue_Level_100003.ReceiveTick
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

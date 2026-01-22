@@ -11,50 +11,50 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FloorDecal01.BP_FloorDecal01_C
-// 0x0110 (0x0800 - 0x06F0)
+// 0x0110 (0x0810 - 0x0700)
 class ABP_FloorDecal01_C final : public AEnvironmentStaticActor
 {
 public:
-	class USplineComponent*                       Spline1;                                           // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        spline_mesh;                                       // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynamic_Material;                                  // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           偏色;                                              // 0x0708(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UVtiling;                                          // 0x0718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71C[0x4];                                      // 0x071C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               Mask;                                              // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         Roughness;                                         // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Opacity;                                           // 0x072C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               ColorTex;                                          // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         BaseTiling;                                        // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_73C[0x4];                                      // 0x073C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        ColorAlpha_Mul;                                    // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Color_Mul;                                         // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               MRO;                                               // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture*                               NORMAL;                                            // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Metallic_Mul;                                      // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Roughness_Mul;                                     // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Normal_Mul;                                        // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Linear;                                            // 0x0778(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESplinePointType                              SplineType;                                        // 0x0779(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_77A[0x6];                                      // 0x077A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USplineMeshComponent*                   spline_local;                                      // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              u_offset;                                          // 0x0788(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Mat_Instance;                                      // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              v_offset;                                          // 0x07A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NumMasks;                                          // 0x07B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentMask;                                       // 0x07B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              uv_offset;                                         // 0x07B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                starttangent;                                      // 0x07C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                endtangent;                                        // 0x07E0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RenderSort;                                        // 0x07F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USplineComponent*                       Spline1;                                           // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        spline_mesh;                                       // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynamic_Material;                                  // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           偏色;                                              // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         UVtiling;                                          // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72C[0x4];                                      // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture*                               Mask;                                              // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         Roughness;                                         // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Opacity;                                           // 0x073C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               ColorTex;                                          // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         BaseTiling;                                        // 0x0748(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74C[0x4];                                      // 0x074C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        ColorAlpha_Mul;                                    // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Color_Mul;                                         // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               MRO;                                               // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                               NORMAL;                                            // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        Metallic_Mul;                                      // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Roughness_Mul;                                     // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Normal_Mul;                                        // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Linear;                                            // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESplinePointType                              SplineType;                                        // 0x0789(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_78A[0x6];                                      // 0x078A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USplineMeshComponent*                   spline_local;                                      // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              u_offset;                                          // 0x0798(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Mat_Instance;                                      // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              v_offset;                                          // 0x07B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NumMasks;                                          // 0x07C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentMask;                                       // 0x07C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              uv_offset;                                         // 0x07C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                starttangent;                                      // 0x07D8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                endtangent;                                        // 0x07F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RenderSort;                                        // 0x0808(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -64,44 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FloorDecal01_C">();
+		BP_STATIC_CLASS_IMPL("BP_FloorDecal01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FloorDecal01_C")
 	}
 	static class ABP_FloorDecal01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FloorDecal01_C>();
 	}
 };
-static_assert(alignof(ABP_FloorDecal01_C) == 0x000010, "Wrong alignment on ABP_FloorDecal01_C");
-static_assert(sizeof(ABP_FloorDecal01_C) == 0x000800, "Wrong size on ABP_FloorDecal01_C");
-static_assert(offsetof(ABP_FloorDecal01_C, Spline1) == 0x0006F0, "Member 'ABP_FloorDecal01_C::Spline1' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, spline_mesh) == 0x0006F8, "Member 'ABP_FloorDecal01_C::spline_mesh' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Dynamic_Material) == 0x000700, "Member 'ABP_FloorDecal01_C::Dynamic_Material' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, 偏色) == 0x000708, "Member 'ABP_FloorDecal01_C::偏色' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, UVtiling) == 0x000718, "Member 'ABP_FloorDecal01_C::UVtiling' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Mask) == 0x000720, "Member 'ABP_FloorDecal01_C::Mask' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Roughness) == 0x000728, "Member 'ABP_FloorDecal01_C::Roughness' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Opacity) == 0x00072C, "Member 'ABP_FloorDecal01_C::Opacity' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, ColorTex) == 0x000730, "Member 'ABP_FloorDecal01_C::ColorTex' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, BaseTiling) == 0x000738, "Member 'ABP_FloorDecal01_C::BaseTiling' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, ColorAlpha_Mul) == 0x000740, "Member 'ABP_FloorDecal01_C::ColorAlpha_Mul' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Color_Mul) == 0x000748, "Member 'ABP_FloorDecal01_C::Color_Mul' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, MRO) == 0x000750, "Member 'ABP_FloorDecal01_C::MRO' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, NORMAL) == 0x000758, "Member 'ABP_FloorDecal01_C::NORMAL' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Metallic_Mul) == 0x000760, "Member 'ABP_FloorDecal01_C::Metallic_Mul' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Roughness_Mul) == 0x000768, "Member 'ABP_FloorDecal01_C::Roughness_Mul' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Normal_Mul) == 0x000770, "Member 'ABP_FloorDecal01_C::Normal_Mul' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Linear) == 0x000778, "Member 'ABP_FloorDecal01_C::Linear' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, SplineType) == 0x000779, "Member 'ABP_FloorDecal01_C::SplineType' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, spline_local) == 0x000780, "Member 'ABP_FloorDecal01_C::spline_local' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, u_offset) == 0x000788, "Member 'ABP_FloorDecal01_C::u_offset' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, Mat_Instance) == 0x000798, "Member 'ABP_FloorDecal01_C::Mat_Instance' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, v_offset) == 0x0007A0, "Member 'ABP_FloorDecal01_C::v_offset' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, NumMasks) == 0x0007B0, "Member 'ABP_FloorDecal01_C::NumMasks' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, CurrentMask) == 0x0007B4, "Member 'ABP_FloorDecal01_C::CurrentMask' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, uv_offset) == 0x0007B8, "Member 'ABP_FloorDecal01_C::uv_offset' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, starttangent) == 0x0007C8, "Member 'ABP_FloorDecal01_C::starttangent' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, endtangent) == 0x0007E0, "Member 'ABP_FloorDecal01_C::endtangent' has a wrong offset!");
-static_assert(offsetof(ABP_FloorDecal01_C, RenderSort) == 0x0007F8, "Member 'ABP_FloorDecal01_C::RenderSort' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_FloorDecal01_C;
 
 }
 

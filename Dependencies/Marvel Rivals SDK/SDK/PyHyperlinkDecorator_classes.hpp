@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHyperlinkDecorator">();
+		STATIC_CLASS_IMPL("PyHyperlinkDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHyperlinkDecorator")
 	}
 	static class UPyHyperlinkDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHyperlinkDecorator>();
 	}
 };
-static_assert(alignof(UPyHyperlinkDecorator) == 0x000010, "Wrong alignment on UPyHyperlinkDecorator");
-static_assert(sizeof(UPyHyperlinkDecorator) == 0x000F50, "Wrong size on UPyHyperlinkDecorator");
+DUMPER7_ASSERTS_UPyHyperlinkDecorator;
 
 // PythonClass PyHyperlinkDecorator.PyHyperlinkImageDecorator
 // 0x0000 (0x0038 - 0x0038)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHyperlinkImageDecorator">();
+		STATIC_CLASS_IMPL("PyHyperlinkImageDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHyperlinkImageDecorator")
 	}
 	static class UPyHyperlinkImageDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHyperlinkImageDecorator>();
 	}
 };
-static_assert(alignof(UPyHyperlinkImageDecorator) == 0x000008, "Wrong alignment on UPyHyperlinkImageDecorator");
-static_assert(sizeof(UPyHyperlinkImageDecorator) == 0x000038, "Wrong size on UPyHyperlinkImageDecorator");
+DUMPER7_ASSERTS_UPyHyperlinkImageDecorator;
 
 // PythonClass PyHyperlinkDecorator.PyHyperlinkDecorator_HashText
 // 0x0000 (0x0F50 - 0x0F50)
@@ -73,15 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHyperlinkDecorator_HashText">();
+		STATIC_CLASS_IMPL("PyHyperlinkDecorator_HashText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHyperlinkDecorator_HashText")
 	}
 	static class UPyHyperlinkDecorator_HashText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHyperlinkDecorator_HashText>();
 	}
 };
-static_assert(alignof(UPyHyperlinkDecorator_HashText) == 0x000010, "Wrong alignment on UPyHyperlinkDecorator_HashText");
-static_assert(sizeof(UPyHyperlinkDecorator_HashText) == 0x000F50, "Wrong size on UPyHyperlinkDecorator_HashText");
+DUMPER7_ASSERTS_UPyHyperlinkDecorator_HashText;
 
 // PythonClass PyHyperlinkDecorator.PyHyperlinkImageDecorator_HashText
 // 0x0000 (0x0038 - 0x0038)
@@ -93,15 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHyperlinkImageDecorator_HashText">();
+		STATIC_CLASS_IMPL("PyHyperlinkImageDecorator_HashText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHyperlinkImageDecorator_HashText")
 	}
 	static class UPyHyperlinkImageDecorator_HashText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHyperlinkImageDecorator_HashText>();
 	}
 };
-static_assert(alignof(UPyHyperlinkImageDecorator_HashText) == 0x000008, "Wrong alignment on UPyHyperlinkImageDecorator_HashText");
-static_assert(sizeof(UPyHyperlinkImageDecorator_HashText) == 0x000038, "Wrong size on UPyHyperlinkImageDecorator_HashText");
+DUMPER7_ASSERTS_UPyHyperlinkImageDecorator_HashText;
 
 }
 

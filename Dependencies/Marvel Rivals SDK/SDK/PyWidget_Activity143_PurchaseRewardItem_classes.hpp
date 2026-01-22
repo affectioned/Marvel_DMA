@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity143_PurchaseRewardItem.PyWidget_Activity143_PurchaseRewardItem
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Activity143_PurchaseRewardItem : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,34 +34,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_PurchaseRewardItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_PurchaseRewardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_PurchaseRewardItem")
 	}
 	static class UPyWidget_Activity143_PurchaseRewardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_PurchaseRewardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_PurchaseRewardItem) == 0x000008, "Wrong alignment on UPyWidget_Activity143_PurchaseRewardItem");
-static_assert(sizeof(UPyWidget_Activity143_PurchaseRewardItem) == 0x0005E0, "Wrong size on UPyWidget_Activity143_PurchaseRewardItem");
-static_assert(offsetof(UPyWidget_Activity143_PurchaseRewardItem, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity143_PurchaseRewardItem::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_PurchaseRewardItem, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity143_PurchaseRewardItem::Image_OffsetUV_Normal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity143_PurchaseRewardItem;
 
 // PythonClass PyWidget_Activity143_PurchaseRewardItem.PyWidget_Activity143_BigPurchaseRewardItem_Big
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyWidget_Activity143_BigPurchaseRewardItem_Big final : public UPyWidget_Activity143_PurchaseRewardItem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_BigPurchaseRewardItem_Big">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_BigPurchaseRewardItem_Big")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_BigPurchaseRewardItem_Big")
 	}
 	static class UPyWidget_Activity143_BigPurchaseRewardItem_Big* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_BigPurchaseRewardItem_Big>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_BigPurchaseRewardItem_Big) == 0x000008, "Wrong alignment on UPyWidget_Activity143_BigPurchaseRewardItem_Big");
-static_assert(sizeof(UPyWidget_Activity143_BigPurchaseRewardItem_Big) == 0x0005E0, "Wrong size on UPyWidget_Activity143_BigPurchaseRewardItem_Big");
+DUMPER7_ASSERTS_UPyWidget_Activity143_BigPurchaseRewardItem_Big;
 
 }
 

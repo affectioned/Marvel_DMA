@@ -28,15 +28,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingVideoRecordParam_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingVideoRecordParam_BP_OnBtnClicked");
-static_assert(sizeof(UISettingVideoRecordParam_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingVideoRecordParam_BP_OnBtnClicked");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordParam_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingVideoRecordParam_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingVideoRecordParam_BP_OnBtnClicked;
 
 // PythonFunction VideoRecord.UISettingVideoRecordOpenPath.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -52,15 +44,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingVideoRecordOpenPath_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingVideoRecordOpenPath_BP_OnBtnClicked");
-static_assert(sizeof(UISettingVideoRecordOpenPath_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingVideoRecordOpenPath_BP_OnBtnClicked");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordOpenPath_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingVideoRecordOpenPath_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingVideoRecordOpenPath_BP_OnBtnClicked;
 
 // PythonFunction VideoRecord.UISettingVideoRecordChangePath.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -76,15 +60,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingVideoRecordChangePath_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingVideoRecordChangePath_BP_OnBtnClicked");
-static_assert(sizeof(UISettingVideoRecordChangePath_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingVideoRecordChangePath_BP_OnBtnClicked");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingVideoRecordChangePath_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingVideoRecordChangePath_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingVideoRecordChangePath_BP_OnBtnClicked;
 
 // PythonFunction VideoRecord.UISettingVideoRecordChangePath.OnSavePathChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -93,9 +69,7 @@ struct UISettingVideoRecordChangePath_OnSavePathChanged final
 public:
 	class FString                                 SelectedPath;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingVideoRecordChangePath_OnSavePathChanged) == 0x000008, "Wrong alignment on UISettingVideoRecordChangePath_OnSavePathChanged");
-static_assert(sizeof(UISettingVideoRecordChangePath_OnSavePathChanged) == 0x000010, "Wrong size on UISettingVideoRecordChangePath_OnSavePathChanged");
-static_assert(offsetof(UISettingVideoRecordChangePath_OnSavePathChanged, SelectedPath) == 0x000000, "Member 'UISettingVideoRecordChangePath_OnSavePathChanged::SelectedPath' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingVideoRecordChangePath_OnSavePathChanged;
 
 }
 

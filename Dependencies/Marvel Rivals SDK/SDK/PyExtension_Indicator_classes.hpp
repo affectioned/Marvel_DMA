@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Indicator">();
+		STATIC_CLASS_IMPL("PyExtension_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Indicator")
 	}
 	static class UPyExtension_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Indicator>();
 	}
 };
-static_assert(alignof(UPyExtension_Indicator) == 0x000008, "Wrong alignment on UPyExtension_Indicator");
-static_assert(sizeof(UPyExtension_Indicator) == 0x000030, "Wrong size on UPyExtension_Indicator");
+DUMPER7_ASSERTS_UPyExtension_Indicator;
 
 }
 

@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityIndicator_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityIndicator_C")
 	}
 	static class UWBP_AbilityIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityIndicator_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityIndicator_C) == 0x000010, "Wrong alignment on UWBP_AbilityIndicator_C");
-static_assert(sizeof(UWBP_AbilityIndicator_C) == 0x000AB0, "Wrong size on UWBP_AbilityIndicator_C");
-static_assert(offsetof(UWBP_AbilityIndicator_C, Anim_Percent) == 0x000A88, "Member 'UWBP_AbilityIndicator_C::Anim_Percent' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityIndicator_C, Img_Bg) == 0x000A90, "Member 'UWBP_AbilityIndicator_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityIndicator_C, Img_Countdown) == 0x000A98, "Member 'UWBP_AbilityIndicator_C::Img_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityIndicator_C, Overlay_Countdown) == 0x000AA0, "Member 'UWBP_AbilityIndicator_C::Overlay_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityIndicator_C, Text_Distance) == 0x000AA8, "Member 'UWBP_AbilityIndicator_C::Text_Distance' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityIndicator_C;
 
 }
 

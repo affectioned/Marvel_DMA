@@ -22,20 +22,23 @@ namespace SDK
 class UHeroPackageFuncLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	static void UpdatePackageDataTables(int32 InPackageRulesType);
+	static void UpdatePackageDataTables(const struct FMarvelPackageContext& InPackageContext);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HeroPackageFuncLibrary">();
+		STATIC_CLASS_IMPL("HeroPackageFuncLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroPackageFuncLibrary")
 	}
 	static class UHeroPackageFuncLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroPackageFuncLibrary>();
 	}
 };
-static_assert(alignof(UHeroPackageFuncLibrary) == 0x000008, "Wrong alignment on UHeroPackageFuncLibrary");
-static_assert(sizeof(UHeroPackageFuncLibrary) == 0x000030, "Wrong size on UHeroPackageFuncLibrary");
+DUMPER7_ASSERTS_UHeroPackageFuncLibrary;
 
 // Class HeroPackageRules.HeroPackageSettings
 // 0x0010 (0x0058 - 0x0048)
@@ -47,16 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HeroPackageSettings">();
+		STATIC_CLASS_IMPL("HeroPackageSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroPackageSettings")
 	}
 	static class UHeroPackageSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroPackageSettings>();
 	}
 };
-static_assert(alignof(UHeroPackageSettings) == 0x000008, "Wrong alignment on UHeroPackageSettings");
-static_assert(sizeof(UHeroPackageSettings) == 0x000058, "Wrong size on UHeroPackageSettings");
-static_assert(offsetof(UHeroPackageSettings, Package_DataTables) == 0x000048, "Member 'UHeroPackageSettings::Package_DataTables' has a wrong offset!");
+DUMPER7_ASSERTS_UHeroPackageSettings;
 
 }
 

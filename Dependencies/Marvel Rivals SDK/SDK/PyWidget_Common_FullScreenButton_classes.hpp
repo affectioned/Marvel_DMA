@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_FullScreenButton.PyWidget_Common_FullScreenButton
-// 0x0008 (0x0730 - 0x0728)
+// 0x0008 (0x0788 - 0x0780)
 class UPyWidget_Common_FullScreenButton : public UPyWidget_Button
 {
 public:
-	EFullScreenButtonType                         FullScreenButtonType;                              // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowFullScreenBG;                                // 0x0729(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFullScreenButtonType                         FullScreenButtonType;                              // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowFullScreenBG;                                // 0x0781(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_FullScreenButton">();
+		STATIC_CLASS_IMPL("PyWidget_Common_FullScreenButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_FullScreenButton")
 	}
 	static class UPyWidget_Common_FullScreenButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_FullScreenButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_FullScreenButton) == 0x000008, "Wrong alignment on UPyWidget_Common_FullScreenButton");
-static_assert(sizeof(UPyWidget_Common_FullScreenButton) == 0x000730, "Wrong size on UPyWidget_Common_FullScreenButton");
-static_assert(offsetof(UPyWidget_Common_FullScreenButton, FullScreenButtonType) == 0x000728, "Member 'UPyWidget_Common_FullScreenButton::FullScreenButtonType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_FullScreenButton, IsShowFullScreenBG) == 0x000729, "Member 'UPyWidget_Common_FullScreenButton::IsShowFullScreenBG' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_FullScreenButton;
 
 }
 

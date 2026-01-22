@@ -115,7 +115,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayload">();
+		STATIC_CLASS_IMPL("PyPayload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayload")
 	}
 	static class APyPayload* GetDefaultObj()
 	{
@@ -123,92 +127,45 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyPayload) == 0x000010, "Wrong alignment on APyPayload");
-static_assert(sizeof(APyPayload) == 0x000AC0, "Wrong size on APyPayload");
-static_assert(offsetof(APyPayload, OccupyProgress) == 0x000870, "Member 'APyPayload::OccupyProgress' has a wrong offset!");
-static_assert(offsetof(APyPayload, ProgressSpeed) == 0x000874, "Member 'APyPayload::ProgressSpeed' has a wrong offset!");
-static_assert(offsetof(APyPayload, OccupySide) == 0x000878, "Member 'APyPayload::OccupySide' has a wrong offset!");
-static_assert(offsetof(APyPayload, OwnerSide) == 0x000879, "Member 'APyPayload::OwnerSide' has a wrong offset!");
-static_assert(offsetof(APyPayload, OccupyProgressMax) == 0x00087C, "Member 'APyPayload::OccupyProgressMax' has a wrong offset!");
-static_assert(offsetof(APyPayload, OccupyProgressSpeed) == 0x000880, "Member 'APyPayload::OccupyProgressSpeed' has a wrong offset!");
-static_assert(offsetof(APyPayload, OccupyLosingSpeed) == 0x0008D0, "Member 'APyPayload::OccupyLosingSpeed' has a wrong offset!");
-static_assert(offsetof(APyPayload, TimeLosingOccupy) == 0x0008D4, "Member 'APyPayload::TimeLosingOccupy' has a wrong offset!");
-static_assert(offsetof(APyPayload, MaxDistance) == 0x0008D8, "Member 'APyPayload::MaxDistance' has a wrong offset!");
-static_assert(offsetof(APyPayload, TotalProgress) == 0x0008DC, "Member 'APyPayload::TotalProgress' has a wrong offset!");
-static_assert(offsetof(APyPayload, RouteIndex) == 0x0008E0, "Member 'APyPayload::RouteIndex' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadMoveSpeed) == 0x0008E8, "Member 'APyPayload::PayloadMoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadBackwordSpeed) == 0x000938, "Member 'APyPayload::PayloadBackwordSpeed' has a wrong offset!");
-static_assert(offsetof(APyPayload, BuffId) == 0x000940, "Member 'APyPayload::BuffId' has a wrong offset!");
-static_assert(offsetof(APyPayload, DelayForwardTime) == 0x000950, "Member 'APyPayload::DelayForwardTime' has a wrong offset!");
-static_assert(offsetof(APyPayload, DelayBackTime) == 0x000954, "Member 'APyPayload::DelayBackTime' has a wrong offset!");
-static_assert(offsetof(APyPayload, DecalVisible) == 0x000958, "Member 'APyPayload::DecalVisible' has a wrong offset!");
-static_assert(offsetof(APyPayload, DecalShowTime) == 0x00095C, "Member 'APyPayload::DecalShowTime' has a wrong offset!");
-static_assert(offsetof(APyPayload, DecalShowDistance) == 0x000960, "Member 'APyPayload::DecalShowDistance' has a wrong offset!");
-static_assert(offsetof(APyPayload, ApproachingDistance) == 0x000964, "Member 'APyPayload::ApproachingDistance' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadAudioEvent) == 0x000968, "Member 'APyPayload::PayloadAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyPayload, SpawnAudioRange) == 0x000970, "Member 'APyPayload::SpawnAudioRange' has a wrong offset!");
-static_assert(offsetof(APyPayload, FadeoutDuration) == 0x000974, "Member 'APyPayload::FadeoutDuration' has a wrong offset!");
-static_assert(offsetof(APyPayload, TyreNoiseAudioEvent) == 0x000978, "Member 'APyPayload::TyreNoiseAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyPayload, BrakeAudioEvent) == 0x000980, "Member 'APyPayload::BrakeAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyPayload, BrakeGapTime) == 0x000988, "Member 'APyPayload::BrakeGapTime' has a wrong offset!");
-static_assert(offsetof(APyPayload, ExhaustAudioEvent) == 0x000990, "Member 'APyPayload::ExhaustAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyPayload, AudioRTPCDict) == 0x000998, "Member 'APyPayload::AudioRTPCDict' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadBackRTPC) == 0x0009E8, "Member 'APyPayload::PayloadBackRTPC' has a wrong offset!");
-static_assert(offsetof(APyPayload, BrakeConditionTime) == 0x0009EC, "Member 'APyPayload::BrakeConditionTime' has a wrong offset!");
-static_assert(offsetof(APyPayload, ApproachingDis) == 0x0009F0, "Member 'APyPayload::ApproachingDis' has a wrong offset!");
-static_assert(offsetof(APyPayload, OccupyProgressChanged) == 0x0009F8, "Member 'APyPayload::OccupyProgressChanged' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadOwnerSideChanged) == 0x000A08, "Member 'APyPayload::PayloadOwnerSideChanged' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadOccupySideChanged) == 0x000A18, "Member 'APyPayload::PayloadOccupySideChanged' has a wrong offset!");
-static_assert(offsetof(APyPayload, PayloadRpcActivate) == 0x000A28, "Member 'APyPayload::PayloadRpcActivate' has a wrong offset!");
-static_assert(offsetof(APyPayload, RouteIndexDispatcher) == 0x000A38, "Member 'APyPayload::RouteIndexDispatcher' has a wrong offset!");
-static_assert(offsetof(APyPayload, DispatcherProgressInfoChange) == 0x000A48, "Member 'APyPayload::DispatcherProgressInfoChange' has a wrong offset!");
-static_assert(offsetof(APyPayload, OnProgressChange) == 0x000A58, "Member 'APyPayload::OnProgressChange' has a wrong offset!");
-static_assert(offsetof(APyPayload, TriggerEventPoint) == 0x000A68, "Member 'APyPayload::TriggerEventPoint' has a wrong offset!");
-static_assert(offsetof(APyPayload, OnBothSideIn) == 0x000A78, "Member 'APyPayload::OnBothSideIn' has a wrong offset!");
-static_assert(offsetof(APyPayload, OnBothSideOut) == 0x000A88, "Member 'APyPayload::OnBothSideOut' has a wrong offset!");
-static_assert(offsetof(APyPayload, OnlyAttackIn) == 0x000A98, "Member 'APyPayload::OnlyAttackIn' has a wrong offset!");
-static_assert(offsetof(APyPayload, OnlyDefendIn) == 0x000AA8, "Member 'APyPayload::OnlyDefendIn' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayload;
 
 // PythonClass PyPayload.PyCue_Level_100003
-// 0x0030 (0x1250 - 0x1220)
+// 0x0030 (0x1260 - 0x1230)
 class APyCue_Level_100003 final : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         GuideLineGapTime;                                  // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GuideLineStartIndex;                               // 0x1224(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GuideLineSumIndex;                                 // 0x1228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GuideLineHideTime;                                 // 0x122C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialBlue;                                      // 0x1230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MaterialRed;                                       // 0x1238(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeInFandOutTime;                                 // 0x1240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         GuideLineGapTime;                                  // 0x1230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GuideLineStartIndex;                               // 0x1234(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GuideLineSumIndex;                                 // 0x1238(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GuideLineHideTime;                                 // 0x123C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialBlue;                                      // 0x1240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MaterialRed;                                       // 0x1248(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeInFandOutTime;                                 // 0x1250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
 	bool WhileActive(class AActor* PayloadActor, const struct FGameplayCueParameters& Parameters);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void OnPayloadScopeVisible(int32 IsVisible);
+	void OnPayloadTypeChanged();
 	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_100003">();
+		STATIC_CLASS_IMPL("PyCue_Level_100003")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_100003")
 	}
 	static class APyCue_Level_100003* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_100003>();
 	}
 };
-static_assert(alignof(APyCue_Level_100003) == 0x000010, "Wrong alignment on APyCue_Level_100003");
-static_assert(sizeof(APyCue_Level_100003) == 0x001250, "Wrong size on APyCue_Level_100003");
-static_assert(offsetof(APyCue_Level_100003, GuideLineGapTime) == 0x001220, "Member 'APyCue_Level_100003::GuideLineGapTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, GuideLineStartIndex) == 0x001224, "Member 'APyCue_Level_100003::GuideLineStartIndex' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, GuideLineSumIndex) == 0x001228, "Member 'APyCue_Level_100003::GuideLineSumIndex' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, GuideLineHideTime) == 0x00122C, "Member 'APyCue_Level_100003::GuideLineHideTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, MaterialBlue) == 0x001230, "Member 'APyCue_Level_100003::MaterialBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, MaterialRed) == 0x001238, "Member 'APyCue_Level_100003::MaterialRed' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_100003, FadeInFandOutTime) == 0x001240, "Member 'APyCue_Level_100003::FadeInFandOutTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_100003;
 
 }
 

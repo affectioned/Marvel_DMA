@@ -34,10 +34,7 @@ public:
 	int32                                         SummonedID;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AbilityID;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLokiPhantomSpec) == 0x000004, "Wrong alignment on FLokiPhantomSpec");
-static_assert(sizeof(FLokiPhantomSpec) == 0x000008, "Wrong size on FLokiPhantomSpec");
-static_assert(offsetof(FLokiPhantomSpec, SummonedID) == 0x000000, "Member 'FLokiPhantomSpec::SummonedID' has a wrong offset!");
-static_assert(offsetof(FLokiPhantomSpec, AbilityID) == 0x000004, "Member 'FLokiPhantomSpec::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_FLokiPhantomSpec;
 
 // ScriptStruct Hero_1016.LokiPhantomFollowBondInfo
 // 0x0058 (0x0058 - 0x0000)
@@ -48,18 +45,14 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<int32>                                   BondBuffs;                                         // 0x0008(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLokiPhantomFollowBondInfo) == 0x000008, "Wrong alignment on FLokiPhantomFollowBondInfo");
-static_assert(sizeof(FLokiPhantomFollowBondInfo) == 0x000058, "Wrong size on FLokiPhantomFollowBondInfo");
-static_assert(offsetof(FLokiPhantomFollowBondInfo, BondAbilityID) == 0x000000, "Member 'FLokiPhantomFollowBondInfo::BondAbilityID' has a wrong offset!");
-static_assert(offsetof(FLokiPhantomFollowBondInfo, BondBuffs) == 0x000008, "Member 'FLokiPhantomFollowBondInfo::BondBuffs' has a wrong offset!");
+DUMPER7_ASSERTS_FLokiPhantomFollowBondInfo;
 
 // ScriptStruct Hero_1016.LokiPhantomGroundMotionSubAnimInstanceProxy
 // 0x0000 (0x0A30 - 0x0A30)
 struct FLokiPhantomGroundMotionSubAnimInstanceProxy final : public FGroundMotionSubAnimInstanceProxyV2
 {
 };
-static_assert(alignof(FLokiPhantomGroundMotionSubAnimInstanceProxy) == 0x000010, "Wrong alignment on FLokiPhantomGroundMotionSubAnimInstanceProxy");
-static_assert(sizeof(FLokiPhantomGroundMotionSubAnimInstanceProxy) == 0x000A30, "Wrong size on FLokiPhantomGroundMotionSubAnimInstanceProxy");
+DUMPER7_ASSERTS_FLokiPhantomGroundMotionSubAnimInstanceProxy;
 
 }
 

@@ -36,6 +36,25 @@ void UPyWidget_LCMN_ClanSelect_DualCard::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_LCMN_ClanSelect_DualCard.PyWidget_LCMN_ClanSelect_DualCard.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LCMN_ClanSelect_DualCard::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LCMN_ClanSelect_DualCard", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_LCMN_ClanSelect_DualCard.PyWidget_LCMN_ClanSelect_DualCard.PyOnListItemObjectSet
 // (Native, Protected, BlueprintCallable)
 // Parameters:

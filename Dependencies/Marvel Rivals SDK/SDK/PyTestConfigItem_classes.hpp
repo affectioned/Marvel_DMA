@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTestConfigItem">();
+		STATIC_CLASS_IMPL("PyTestConfigItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTestConfigItem")
 	}
 	static class UPyTestConfigItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTestConfigItem>();
 	}
 };
-static_assert(alignof(UPyTestConfigItem) == 0x000008, "Wrong alignment on UPyTestConfigItem");
-static_assert(sizeof(UPyTestConfigItem) == 0x000038, "Wrong size on UPyTestConfigItem");
+DUMPER7_ASSERTS_UPyTestConfigItem;
 
 }
 

@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // PythonClass PyVoComp_1065.VoiceItem_1065
-// 0x0058 (0x0908 - 0x08B0)
+// 0x0058 (0x08F8 - 0x08A0)
 class UVoiceItem_1065 final : public UMarvelVoiceItem
 {
 public:
-	class UMarvelVoiceItem*                       CopyVoiceItem;                                     // 0x08B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            EndCopyVoices;                                     // 0x08B8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelVoiceItem*                       CopyVoiceItem;                                     // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            EndCopyVoices;                                     // 0x08A8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VoiceItem_1065">();
+		STATIC_CLASS_IMPL("VoiceItem_1065")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceItem_1065")
 	}
 	static class UVoiceItem_1065* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceItem_1065>();
 	}
 };
-static_assert(alignof(UVoiceItem_1065) == 0x000008, "Wrong alignment on UVoiceItem_1065");
-static_assert(sizeof(UVoiceItem_1065) == 0x000908, "Wrong size on UVoiceItem_1065");
-static_assert(offsetof(UVoiceItem_1065, CopyVoiceItem) == 0x0008B0, "Member 'UVoiceItem_1065::CopyVoiceItem' has a wrong offset!");
-static_assert(offsetof(UVoiceItem_1065, EndCopyVoices) == 0x0008B8, "Member 'UVoiceItem_1065::EndCopyVoices' has a wrong offset!");
+DUMPER7_ASSERTS_UVoiceItem_1065;
 
 }
 

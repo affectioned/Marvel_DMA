@@ -23,9 +23,7 @@ struct PyWidget_CareerAchievementPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CareerAchievementPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CareerAchievementPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CareerAchievementPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_CareerAchievementPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_CareerAchievementPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CareerAchievementPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CareerAchievementPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CareerAchievementPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementPanel.OnListViewNavigationLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementPanel_OnListViewNavigationLeft) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementPanel_OnListViewNavigationLeft");
-static_assert(sizeof(PyWidget_CareerAchievementPanel_OnListViewNavigationLeft) == 0x000010, "Wrong size on PyWidget_CareerAchievementPanel_OnListViewNavigationLeft");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnListViewNavigationLeft, Navigation_0) == 0x000000, "Member 'PyWidget_CareerAchievementPanel_OnListViewNavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnListViewNavigationLeft, ReturnValue) == 0x000008, "Member 'PyWidget_CareerAchievementPanel_OnListViewNavigationLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementPanel_OnListViewNavigationLeft;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementPanel.OnBtnReceiveAllNavigationLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -61,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft");
-static_assert(sizeof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft) == 0x000010, "Wrong size on PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft, Navigation_0) == 0x000000, "Member 'PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft, ReturnValue) == 0x000008, "Member 'PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationLeft;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementPanel.OnBtnReceiveAllNavigationTop
 // 0x0010 (0x0010 - 0x0000)
@@ -75,10 +65,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop");
-static_assert(sizeof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop) == 0x000010, "Wrong size on PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop, Navigation_0) == 0x000000, "Member 'PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop, ReturnValue) == 0x000008, "Member 'PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementPanel_OnBtnReceiveAllNavigationTop;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementUnit.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -87,9 +74,7 @@ struct PyWidget_CareerAchievementUnit_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementUnit_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementUnit_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CareerAchievementUnit_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CareerAchievementUnit_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CareerAchievementUnit_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CareerAchievementUnit_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementUnit_OnAnimationFinished;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementUnit.SetAchievementData
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +83,7 @@ struct PyWidget_CareerAchievementUnit_SetAchievementData final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementUnit_SetAchievementData) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementUnit_SetAchievementData");
-static_assert(sizeof(PyWidget_CareerAchievementUnit_SetAchievementData) == 0x000008, "Wrong size on PyWidget_CareerAchievementUnit_SetAchievementData");
-static_assert(offsetof(PyWidget_CareerAchievementUnit_SetAchievementData, ItemObject_0) == 0x000000, "Member 'PyWidget_CareerAchievementUnit_SetAchievementData::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementUnit_SetAchievementData;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementUnit.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +92,7 @@ struct PyWidget_CareerAchievementUnit_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementUnit_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_CareerAchievementUnit_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_CareerAchievementUnit_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_CareerAchievementUnit_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_CareerAchievementUnit_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_CareerAchievementUnit_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementUnit_SetBtnIsPressed;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementTopUnit.OnTopUnitNavigationDown
 // 0x0010 (0x0010 - 0x0000)
@@ -122,10 +103,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown");
-static_assert(sizeof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown) == 0x000010, "Wrong size on PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown");
-static_assert(offsetof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown, Navigation_0) == 0x000000, "Member 'PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown, ReturnValue) == 0x000008, "Member 'PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationDown;
 
 // PythonFunction PyWidget_CareerAchievementPanel.PyWidget_CareerAchievementTopUnit.OnTopUnitNavigationLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -136,10 +114,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft) == 0x000008, "Wrong alignment on PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft");
-static_assert(sizeof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft) == 0x000010, "Wrong size on PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft");
-static_assert(offsetof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft, Navigation_0) == 0x000000, "Member 'PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft, ReturnValue) == 0x000008, "Member 'PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerAchievementTopUnit_OnTopUnitNavigationLeft;
 
 }
 

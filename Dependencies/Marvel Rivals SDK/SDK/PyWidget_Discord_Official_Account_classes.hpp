@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Discord_Official_Account.PyWidget_Discord_Official_Account
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_Official_Account final : public UPyMarvelUserWidget
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_Official_Account">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_Official_Account")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_Official_Account")
 	}
 	static class UPyWidget_Discord_Official_Account* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_Official_Account>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_Official_Account) == 0x000008, "Wrong alignment on UPyWidget_Discord_Official_Account");
-static_assert(sizeof(UPyWidget_Discord_Official_Account) == 0x0005C0, "Wrong size on UPyWidget_Discord_Official_Account");
+DUMPER7_ASSERTS_UPyWidget_Discord_Official_Account;
 
 // PythonClass PyWidget_Discord_Official_Account.PyWidget_Discord_Mini_Program
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_Mini_Program final : public UPyMarvelUserWidget
 {
 public:
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_Mini_Program">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_Mini_Program")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_Mini_Program")
 	}
 	static class UPyWidget_Discord_Mini_Program* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_Mini_Program>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_Mini_Program) == 0x000008, "Wrong alignment on UPyWidget_Discord_Mini_Program");
-static_assert(sizeof(UPyWidget_Discord_Mini_Program) == 0x0005C0, "Wrong size on UPyWidget_Discord_Mini_Program");
+DUMPER7_ASSERTS_UPyWidget_Discord_Mini_Program;
 
 }
 

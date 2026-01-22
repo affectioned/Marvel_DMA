@@ -26,23 +26,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103903">();
+		STATIC_CLASS_IMPL("PyConfig_103903")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103903")
 	}
 	static class UPyConfig_103903* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103903>();
 	}
 };
-static_assert(alignof(UPyConfig_103903) == 0x000008, "Wrong alignment on UPyConfig_103903");
-static_assert(sizeof(UPyConfig_103903) == 0x0000A8, "Wrong size on UPyConfig_103903");
-static_assert(offsetof(UPyConfig_103903, AwakeningBuffDurationCost) == 0x0000A0, "Member 'UPyConfig_103903::AwakeningBuffDurationCost' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103903;
 
 // PythonClass PyAbility_103903.PyAbility_103903
-// 0x0010 (0x2A08 - 0x29F8)
+// 0x0010 (0x2A58 - 0x2A48)
 class UPyAbility_103903 : public UAbility_108
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* Projectile)> OnProjectileSpawned;                    // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Projectile)> OnProjectileSpawned;                    // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool CanActivate();
@@ -52,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103903">();
+		STATIC_CLASS_IMPL("PyAbility_103903")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103903")
 	}
 	static class UPyAbility_103903* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103903>();
 	}
 };
-static_assert(alignof(UPyAbility_103903) == 0x000008, "Wrong alignment on UPyAbility_103903");
-static_assert(sizeof(UPyAbility_103903) == 0x002A08, "Wrong size on UPyAbility_103903");
-static_assert(offsetof(UPyAbility_103903, OnProjectileSpawned) == 0x0029F8, "Member 'UPyAbility_103903::OnProjectileSpawned' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103903;
 
 }
 

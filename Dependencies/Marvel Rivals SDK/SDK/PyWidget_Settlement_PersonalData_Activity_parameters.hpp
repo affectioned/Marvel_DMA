@@ -21,9 +21,7 @@ struct PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_PersonalData_Activity_OnAnimationFinished;
 
 // PythonFunction PyWidget_Settlement_PersonalData_Activity.PyWidget_Settlement_PersonalData_Activity.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Settlement_PersonalData_Activity_MarvelSetVisible;
 
 }
 

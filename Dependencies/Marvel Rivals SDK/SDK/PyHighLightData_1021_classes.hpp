@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHighLightData_1021">();
+		STATIC_CLASS_IMPL("PyHighLightData_1021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHighLightData_1021")
 	}
 	static class UPyHighLightData_1021* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHighLightData_1021>();
 	}
 };
-static_assert(alignof(UPyHighLightData_1021) == 0x000008, "Wrong alignment on UPyHighLightData_1021");
-static_assert(sizeof(UPyHighLightData_1021) == 0x000058, "Wrong size on UPyHighLightData_1021");
-static_assert(offsetof(UPyHighLightData_1021, HighLightID_102131) == 0x000048, "Member 'UPyHighLightData_1021::HighLightID_102131' has a wrong offset!");
-static_assert(offsetof(UPyHighLightData_1021, EnergyPercent) == 0x00004C, "Member 'UPyHighLightData_1021::EnergyPercent' has a wrong offset!");
-static_assert(offsetof(UPyHighLightData_1021, bHeadKill) == 0x000050, "Member 'UPyHighLightData_1021::bHeadKill' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHighLightData_1021;
 
 }
 

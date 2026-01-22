@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RespawnZone_C">();
+		BP_STATIC_CLASS_IMPL("RespawnZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RespawnZone_C")
 	}
 	static class ARespawnZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARespawnZone_C>();
 	}
 };
-static_assert(alignof(ARespawnZone_C) == 0x000010, "Wrong alignment on ARespawnZone_C");
-static_assert(sizeof(ARespawnZone_C) == 0x000710, "Wrong size on ARespawnZone_C");
-static_assert(offsetof(ARespawnZone_C, Cube) == 0x0006F8, "Member 'ARespawnZone_C::Cube' has a wrong offset!");
-static_assert(offsetof(ARespawnZone_C, LevelScopeCheckComponentBP) == 0x000700, "Member 'ARespawnZone_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ARespawnZone_C, DefaultSceneRoot) == 0x000708, "Member 'ARespawnZone_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ARespawnZone_C;
 
 }
 

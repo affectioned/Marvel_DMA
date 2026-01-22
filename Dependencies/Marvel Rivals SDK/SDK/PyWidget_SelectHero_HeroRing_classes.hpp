@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_HeroRing.PyWidget_SelectHero_HeroRing
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SelectHero_HeroRing : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_HeroRing">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_HeroRing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_HeroRing")
 	}
 	static class UPyWidget_SelectHero_HeroRing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_HeroRing>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_HeroRing) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_HeroRing");
-static_assert(sizeof(UPyWidget_SelectHero_HeroRing) == 0x0005C0, "Wrong size on UPyWidget_SelectHero_HeroRing");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_HeroRing;
 
 }
 

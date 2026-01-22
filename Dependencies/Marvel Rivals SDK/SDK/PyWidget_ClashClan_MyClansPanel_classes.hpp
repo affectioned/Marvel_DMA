@@ -26,22 +26,25 @@ class UClashClan_MyClanItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClashClan_MyClanItemData">();
+		STATIC_CLASS_IMPL("ClashClan_MyClanItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClashClan_MyClanItemData")
 	}
 	static class UClashClan_MyClanItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClashClan_MyClanItemData>();
 	}
 };
-static_assert(alignof(UClashClan_MyClanItemData) == 0x000008, "Wrong alignment on UClashClan_MyClanItemData");
-static_assert(sizeof(UClashClan_MyClanItemData) == 0x000030, "Wrong size on UClashClan_MyClanItemData");
+DUMPER7_ASSERTS_UClashClan_MyClanItemData;
 
 // PythonClass PyWidget_ClashClan_MyClansPanel.PyWidget_ClashClan_MyClanItem
-// 0x0008 (0x0578 - 0x0570)
+// 0x0008 (0x0580 - 0x0578)
 class UPyWidget_ClashClan_MyClanItem final : public UWidget_ListEntry
 {
 public:
-	class UTexture2D*                             DefaultBackground;                                 // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultBackground;                                 // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -50,24 +53,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClashClan_MyClanItem">();
+		STATIC_CLASS_IMPL("PyWidget_ClashClan_MyClanItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClashClan_MyClanItem")
 	}
 	static class UPyWidget_ClashClan_MyClanItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClashClan_MyClanItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ClashClan_MyClanItem) == 0x000008, "Wrong alignment on UPyWidget_ClashClan_MyClanItem");
-static_assert(sizeof(UPyWidget_ClashClan_MyClanItem) == 0x000578, "Wrong size on UPyWidget_ClashClan_MyClanItem");
-static_assert(offsetof(UPyWidget_ClashClan_MyClanItem, DefaultBackground) == 0x000570, "Member 'UPyWidget_ClashClan_MyClanItem::DefaultBackground' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ClashClan_MyClanItem;
 
 // PythonClass PyWidget_ClashClan_MyClansPanel.PyWidget_ClashClan_MyClansPanel
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ClashClan_MyClansPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                CheckTeamGuideTipsStyles;                          // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                CheckTeamGuideTipsStyles;                          // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -77,16 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClashClan_MyClansPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ClashClan_MyClansPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClashClan_MyClansPanel")
 	}
 	static class UPyWidget_ClashClan_MyClansPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClashClan_MyClansPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ClashClan_MyClansPanel) == 0x000008, "Wrong alignment on UPyWidget_ClashClan_MyClansPanel");
-static_assert(sizeof(UPyWidget_ClashClan_MyClansPanel) == 0x0005D0, "Wrong size on UPyWidget_ClashClan_MyClansPanel");
-static_assert(offsetof(UPyWidget_ClashClan_MyClansPanel, CheckTeamGuideTipsStyles) == 0x0005C0, "Member 'UPyWidget_ClashClan_MyClansPanel::CheckTeamGuideTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ClashClan_MyClansPanel;
 
 }
 

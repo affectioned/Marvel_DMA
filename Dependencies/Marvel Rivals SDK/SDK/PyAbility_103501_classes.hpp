@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103501.PyCue_AbilityLoop_10350101
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_AbilityLoop_10350101 final : public APyCue_AbilityLoop_13101
 {
 public:
-	float                                         DelayTimeToActivate;                               // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenIdleOpacity;                                   // 0x11B4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B5[0x3];                                     // 0x11B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         IdleOpacity;                                       // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToActivate;                               // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenIdleOpacity;                                   // 0x11C4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C5[0x3];                                     // 0x11C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         IdleOpacity;                                       // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -34,52 +34,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10350101">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10350101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10350101")
 	}
 	static class APyCue_AbilityLoop_10350101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_10350101>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_10350101) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10350101");
-static_assert(sizeof(APyCue_AbilityLoop_10350101) == 0x0011C0, "Wrong size on APyCue_AbilityLoop_10350101");
-static_assert(offsetof(APyCue_AbilityLoop_10350101, DelayTimeToActivate) == 0x0011B0, "Member 'APyCue_AbilityLoop_10350101::DelayTimeToActivate' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10350101, OpenIdleOpacity) == 0x0011B4, "Member 'APyCue_AbilityLoop_10350101::OpenIdleOpacity' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10350101, IdleOpacity) == 0x0011B8, "Member 'APyCue_AbilityLoop_10350101::IdleOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10350101;
 
 // PythonClass PyAbility_103501.PyConfig_103501
-// 0x0000 (0x1970 - 0x1970)
+// 0x0000 (0x2EB0 - 0x2EB0)
 class UPyConfig_103501 final : public UPyConfig_131
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103501">();
+		STATIC_CLASS_IMPL("PyConfig_103501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103501")
 	}
 	static class UPyConfig_103501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103501>();
 	}
 };
-static_assert(alignof(UPyConfig_103501) == 0x000008, "Wrong alignment on UPyConfig_103501");
-static_assert(sizeof(UPyConfig_103501) == 0x001970, "Wrong size on UPyConfig_103501");
+DUMPER7_ASSERTS_UPyConfig_103501;
 
 // PythonClass PyAbility_103501.PyAbility_103501
-// 0x0000 (0x2A78 - 0x2A78)
+// 0x0000 (0x2B58 - 0x2B58)
 class UPyAbility_103501 : public UPyAbility_131
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103501">();
+		STATIC_CLASS_IMPL("PyAbility_103501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103501")
 	}
 	static class UPyAbility_103501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103501>();
 	}
 };
-static_assert(alignof(UPyAbility_103501) == 0x000008, "Wrong alignment on UPyAbility_103501");
-static_assert(sizeof(UPyAbility_103501) == 0x002A78, "Wrong size on UPyAbility_103501");
+DUMPER7_ASSERTS_UPyAbility_103501;
 
 }
 

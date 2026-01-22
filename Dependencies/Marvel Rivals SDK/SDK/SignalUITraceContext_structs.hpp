@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              TraceContext_5_5B81004C4C030E55F1F431A7A46BE66D;   // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FSignalUITraceContext) == 0x000008, "Wrong alignment on FSignalUITraceContext");
-static_assert(sizeof(FSignalUITraceContext) == 0x000020, "Wrong size on FSignalUITraceContext");
-static_assert(offsetof(FSignalUITraceContext, Tag_2_FCADB8744CB5A2FBA220E8B16C6F65DB) == 0x000000, "Member 'FSignalUITraceContext::Tag_2_FCADB8744CB5A2FBA220E8B16C6F65DB' has a wrong offset!");
-static_assert(offsetof(FSignalUITraceContext, TraceContext_5_5B81004C4C030E55F1F431A7A46BE66D) == 0x000010, "Member 'FSignalUITraceContext::TraceContext_5_5B81004C4C030E55F1F431A7A46BE66D' has a wrong offset!");
+DUMPER7_ASSERTS_FSignalUITraceContext;
 
 }
 

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Hero_1053_structs.hpp"
+#include "Hero_1053_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Hero_1053_structs.hpp"
-#include "Hero_1053_classes.hpp"
 
 
 namespace SDK
@@ -39,31 +39,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105321">();
+		STATIC_CLASS_IMPL("PyConfig_105321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105321")
 	}
 	static class UPyConfig_105321* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105321>();
 	}
 };
-static_assert(alignof(UPyConfig_105321) == 0x000008, "Wrong alignment on UPyConfig_105321");
-static_assert(sizeof(UPyConfig_105321) == 0x0001C8, "Wrong size on UPyConfig_105321");
-static_assert(offsetof(UPyConfig_105321, ActiveUserSetting) == 0x0000A8, "Member 'UPyConfig_105321::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, ScopeID) == 0x0000D0, "Member 'UPyConfig_105321::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, BlockReduceTag) == 0x0000D8, "Member 'UPyConfig_105321::BlockReduceTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, BlockEnergyUITag) == 0x000140, "Member 'UPyConfig_105321::BlockEnergyUITag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, EnergyReduceBuffID) == 0x0001A8, "Member 'UPyConfig_105321::EnergyReduceBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, SkillEnergyMax) == 0x0001AC, "Member 'UPyConfig_105321::SkillEnergyMax' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, AttenuationDelay) == 0x0001B0, "Member 'UPyConfig_105321::AttenuationDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, AttenuationEnergy) == 0x0001B4, "Member 'UPyConfig_105321::AttenuationEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105321, EnergyIncreaseInfo) == 0x0001B8, "Member 'UPyConfig_105321::EnergyIncreaseInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105321;
 
 // PythonClass PyAbility_105321.PyAbility_105321
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_105321 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnApplyPrimaryDamage;                              // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnApplyPrimaryDamage;                              // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -79,19 +73,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105321">();
+		STATIC_CLASS_IMPL("PyAbility_105321")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105321")
 	}
 	static class UPyAbility_105321* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105321>();
 	}
 };
-static_assert(alignof(UPyAbility_105321) == 0x000008, "Wrong alignment on UPyAbility_105321");
-static_assert(sizeof(UPyAbility_105321) == 0x002A00, "Wrong size on UPyAbility_105321");
-static_assert(offsetof(UPyAbility_105321, OnApplyPrimaryDamage) == 0x0029F0, "Member 'UPyAbility_105321::OnApplyPrimaryDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105321;
 
 // PythonClass PyAbility_105321.PyBuffAbility_10532101
-// 0x0000 (0x1440 - 0x1440)
+// 0x0000 (0x1458 - 0x1458)
 class UPyBuffAbility_10532101 : public UMarvelSkillEnergyReduceRegenAbility
 {
 public:
@@ -103,22 +99,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10532101">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10532101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10532101")
 	}
 	static class UPyBuffAbility_10532101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10532101>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10532101) == 0x000008, "Wrong alignment on UPyBuffAbility_10532101");
-static_assert(sizeof(UPyBuffAbility_10532101) == 0x001440, "Wrong size on UPyBuffAbility_10532101");
+DUMPER7_ASSERTS_UPyBuffAbility_10532101;
 
 // PythonClass PyAbility_105321.PyCue_Ability_Loop_10532101
-// 0x0010 (0x11C0 - 0x11B0)
-class APyCue_Ability_Loop_10532101 : public AMarvelCueNotify_Ability
+// 0x0010 (0x11D0 - 0x11C0)
+class APyCue_Ability_Loop_10532101 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         EnergyFullAudioID;                                 // 0x11B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnergyFullAudioID;                                 // 0x11C0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -127,16 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10532101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10532101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10532101")
 	}
 	static class APyCue_Ability_Loop_10532101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10532101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10532101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10532101");
-static_assert(sizeof(APyCue_Ability_Loop_10532101) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10532101");
-static_assert(offsetof(APyCue_Ability_Loop_10532101, EnergyFullAudioID) == 0x0011B0, "Member 'APyCue_Ability_Loop_10532101::EnergyFullAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10532101;
 
 }
 

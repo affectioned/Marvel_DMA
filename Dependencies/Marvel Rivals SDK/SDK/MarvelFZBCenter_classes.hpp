@@ -31,25 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClientComputeFactory">();
+		STATIC_CLASS_IMPL("ClientComputeFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClientComputeFactory")
 	}
 	static class UClientComputeFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClientComputeFactory>();
 	}
 };
-static_assert(alignof(UClientComputeFactory) == 0x000010, "Wrong alignment on UClientComputeFactory");
-static_assert(sizeof(UClientComputeFactory) == 0x0000C0, "Wrong size on UClientComputeFactory");
-static_assert(offsetof(UClientComputeFactory, LastTickTime) == 0x000034, "Member 'UClientComputeFactory::LastTickTime' has a wrong offset!");
-static_assert(offsetof(UClientComputeFactory, ModelData) == 0x000038, "Member 'UClientComputeFactory::ModelData' has a wrong offset!");
+DUMPER7_ASSERTS_UClientComputeFactory;
 
 // Class MarvelFZBCenter.MarvelFZBSubsystem
-// 0x0010 (0x0048 - 0x0038)
+// 0x0010 (0x0050 - 0x0040)
 class UMarvelFZBSubsystem final : public UWorldSubsystem
 {
 public:
-	TWeakObjectPtr<class UWorld>                  CurrentWorld;                                      // 0x0038(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UClientComputeFactory*                  ClientComputeFactory;                              // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TWeakObjectPtr<class UWorld>                  CurrentWorld;                                      // 0x0040(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UClientComputeFactory*                  ClientComputeFactory;                              // 0x0048(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void OnEnterGameRound();
@@ -58,17 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelFZBSubsystem">();
+		STATIC_CLASS_IMPL("MarvelFZBSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelFZBSubsystem")
 	}
 	static class UMarvelFZBSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelFZBSubsystem>();
 	}
 };
-static_assert(alignof(UMarvelFZBSubsystem) == 0x000008, "Wrong alignment on UMarvelFZBSubsystem");
-static_assert(sizeof(UMarvelFZBSubsystem) == 0x000048, "Wrong size on UMarvelFZBSubsystem");
-static_assert(offsetof(UMarvelFZBSubsystem, CurrentWorld) == 0x000038, "Member 'UMarvelFZBSubsystem::CurrentWorld' has a wrong offset!");
-static_assert(offsetof(UMarvelFZBSubsystem, ClientComputeFactory) == 0x000040, "Member 'UMarvelFZBSubsystem::ClientComputeFactory' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelFZBSubsystem;
 
 }
 

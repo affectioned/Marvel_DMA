@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10376182.PyBuffAbility_120_10376182
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10376182 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         LoopDuration;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxPowerValue;                                     // 0x1374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ScopeDamageCurve;                                  // 0x1378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LoopDuration;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxPowerValue;                                     // 0x138C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ScopeDamageCurve;                                  // 0x1390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10376182">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10376182")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10376182")
 	}
 	static class UPyBuffAbility_120_10376182* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10376182>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10376182) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10376182");
-static_assert(sizeof(UPyBuffAbility_120_10376182) == 0x001380, "Wrong size on UPyBuffAbility_120_10376182");
-static_assert(offsetof(UPyBuffAbility_120_10376182, LoopDuration) == 0x001370, "Member 'UPyBuffAbility_120_10376182::LoopDuration' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10376182, MaxPowerValue) == 0x001374, "Member 'UPyBuffAbility_120_10376182::MaxPowerValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10376182, ScopeDamageCurve) == 0x001378, "Member 'UPyBuffAbility_120_10376182::ScopeDamageCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10376182;
 
 }
 

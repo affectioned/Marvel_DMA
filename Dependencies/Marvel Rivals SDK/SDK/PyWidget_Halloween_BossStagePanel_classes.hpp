@@ -19,35 +19,35 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_BossStagePanel.PyWidget_Halloween_BossStagePanel
-// 0x00C8 (0x0688 - 0x05C0)
+// 0x00C8 (0x0690 - 0x05C8)
 class UPyWidget_Halloween_BossStagePanel final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsSecondBoss;                                      // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSingleHP;                                        // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurHP;                                             // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxHP;                                             // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UnitHP;                                            // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   HPColors;                                          // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         CurArmor;                                          // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxArmor;                                          // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ArmorColor;                                        // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsInvincible;                                      // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUsingSkill;                                      // 0x05F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5F2[0x6];                                      // 0x05F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   SkillName;                                         // 0x05F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         SkillChargePercent;                                // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0624(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ProtectBG;                                         // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ProtectIcon;                                       // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BossBG;                                            // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Boss2BG;                                           // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TextSizeNormal;                                    // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TextSize2Boss;                                     // 0x065C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorProtect;                                  // 0x0660(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorBoss;                                     // 0x0674(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsSecondBoss;                                      // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSingleHP;                                        // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurHP;                                             // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxHP;                                             // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UnitHP;                                            // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   HPColors;                                          // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         CurArmor;                                          // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxArmor;                                          // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ArmorColor;                                        // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsInvincible;                                      // 0x05F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUsingSkill;                                      // 0x05F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5FA[0x6];                                      // 0x05FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   SkillName;                                         // 0x0600(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         SkillChargePercent;                                // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_63C[0x4];                                      // 0x063C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ProtectBG;                                         // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ProtectIcon;                                       // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BossBG;                                            // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Boss2BG;                                           // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TextSizeNormal;                                    // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TextSize2Boss;                                     // 0x0664(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorProtect;                                  // 0x0668(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorBoss;                                     // 0x067C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,38 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_BossStagePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_BossStagePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_BossStagePanel")
 	}
 	static class UPyWidget_Halloween_BossStagePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_BossStagePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_BossStagePanel) == 0x000008, "Wrong alignment on UPyWidget_Halloween_BossStagePanel");
-static_assert(sizeof(UPyWidget_Halloween_BossStagePanel) == 0x000688, "Wrong size on UPyWidget_Halloween_BossStagePanel");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, IsSecondBoss) == 0x0005BA, "Member 'UPyWidget_Halloween_BossStagePanel::IsSecondBoss' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, IsSingleHP) == 0x0005BB, "Member 'UPyWidget_Halloween_BossStagePanel::IsSingleHP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, CurHP) == 0x0005BC, "Member 'UPyWidget_Halloween_BossStagePanel::CurHP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, MaxHP) == 0x0005C0, "Member 'UPyWidget_Halloween_BossStagePanel::MaxHP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, UnitHP) == 0x0005C4, "Member 'UPyWidget_Halloween_BossStagePanel::UnitHP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, HPColors) == 0x0005C8, "Member 'UPyWidget_Halloween_BossStagePanel::HPColors' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, CurArmor) == 0x0005D8, "Member 'UPyWidget_Halloween_BossStagePanel::CurArmor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, MaxArmor) == 0x0005DC, "Member 'UPyWidget_Halloween_BossStagePanel::MaxArmor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, ArmorColor) == 0x0005E0, "Member 'UPyWidget_Halloween_BossStagePanel::ArmorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, IsInvincible) == 0x0005F0, "Member 'UPyWidget_Halloween_BossStagePanel::IsInvincible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, IsUsingSkill) == 0x0005F1, "Member 'UPyWidget_Halloween_BossStagePanel::IsUsingSkill' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, SkillName) == 0x0005F8, "Member 'UPyWidget_Halloween_BossStagePanel::SkillName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, SkillChargePercent) == 0x000610, "Member 'UPyWidget_Halloween_BossStagePanel::SkillChargePercent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, AllyColor) == 0x000614, "Member 'UPyWidget_Halloween_BossStagePanel::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, EnemyColor) == 0x000624, "Member 'UPyWidget_Halloween_BossStagePanel::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, ProtectBG) == 0x000638, "Member 'UPyWidget_Halloween_BossStagePanel::ProtectBG' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, ProtectIcon) == 0x000640, "Member 'UPyWidget_Halloween_BossStagePanel::ProtectIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, BossBG) == 0x000648, "Member 'UPyWidget_Halloween_BossStagePanel::BossBG' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, Boss2BG) == 0x000650, "Member 'UPyWidget_Halloween_BossStagePanel::Boss2BG' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, TextSizeNormal) == 0x000658, "Member 'UPyWidget_Halloween_BossStagePanel::TextSizeNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, TextSize2Boss) == 0x00065C, "Member 'UPyWidget_Halloween_BossStagePanel::TextSize2Boss' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, TextColorProtect) == 0x000660, "Member 'UPyWidget_Halloween_BossStagePanel::TextColorProtect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_BossStagePanel, TextColorBoss) == 0x000674, "Member 'UPyWidget_Halloween_BossStagePanel::TextColorBoss' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_BossStagePanel;
 
 }
 

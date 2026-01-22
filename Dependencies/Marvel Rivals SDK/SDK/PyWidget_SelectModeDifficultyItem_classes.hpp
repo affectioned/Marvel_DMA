@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectModeDifficultyItem.PyWidget_SelectModeDifficultyItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_SelectModeDifficultyItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectModeDifficultyItem">();
+		STATIC_CLASS_IMPL("PyWidget_SelectModeDifficultyItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectModeDifficultyItem")
 	}
 	static class UPyWidget_SelectModeDifficultyItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectModeDifficultyItem>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectModeDifficultyItem) == 0x000010, "Wrong alignment on UPyWidget_SelectModeDifficultyItem");
-static_assert(sizeof(UPyWidget_SelectModeDifficultyItem) == 0x0008C0, "Wrong size on UPyWidget_SelectModeDifficultyItem");
+DUMPER7_ASSERTS_UPyWidget_SelectModeDifficultyItem;
 
 }
 

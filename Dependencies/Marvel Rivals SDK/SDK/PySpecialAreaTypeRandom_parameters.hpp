@@ -23,9 +23,7 @@ struct PySpecialAreaTypeRandom_SrvChangeRandomTypes final
 public:
 	TArray<ESpecialAreaType>                      RandomTypes_0;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySpecialAreaTypeRandom_SrvChangeRandomTypes) == 0x000008, "Wrong alignment on PySpecialAreaTypeRandom_SrvChangeRandomTypes");
-static_assert(sizeof(PySpecialAreaTypeRandom_SrvChangeRandomTypes) == 0x000010, "Wrong size on PySpecialAreaTypeRandom_SrvChangeRandomTypes");
-static_assert(offsetof(PySpecialAreaTypeRandom_SrvChangeRandomTypes, RandomTypes_0) == 0x000000, "Member 'PySpecialAreaTypeRandom_SrvChangeRandomTypes::RandomTypes_0' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaTypeRandom_SrvChangeRandomTypes;
 
 }
 

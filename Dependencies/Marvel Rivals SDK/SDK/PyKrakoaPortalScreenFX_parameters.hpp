@@ -21,9 +21,7 @@ struct PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible final
 public:
 	bool                                          bInExist;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible");
-static_assert(sizeof(PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible");
-static_assert(offsetof(PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible, bInExist) == 0x000000, "Member 'PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible::bInExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ScreenFX_KrakoaPortal_Teleportation_MarvelSetVisible;
 
 }
 

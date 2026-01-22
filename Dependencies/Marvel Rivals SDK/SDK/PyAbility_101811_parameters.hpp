@@ -17,15 +17,13 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_101811.PyProjectile_10181111.K2_OnProjectileInfoForceChanged_ThreadSafe
-// 0x02E0 (0x02E0 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe final
 {
 public:
-	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02E0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FProjectileForceChangedInfo            InProjectileForceChangedInfo;                      // 0x0000(0x02F8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x000008, "Wrong alignment on PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(sizeof(PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe) == 0x0002E0, "Wrong size on PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe");
-static_assert(offsetof(PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe, InProjectileForceChangedInfo) == 0x000000, "Member 'PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe::InProjectileForceChangedInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10181111_K2_OnProjectileInfoForceChanged_ThreadSafe;
 
 // PythonFunction PyAbility_101811.PyAbility_101811.HandleAnimSocketInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0010(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_101811_HandleAnimSocketInfo) == 0x000010, "Wrong alignment on PyAbility_101811_HandleAnimSocketInfo");
-static_assert(sizeof(PyAbility_101811_HandleAnimSocketInfo) == 0x0000B0, "Wrong size on PyAbility_101811_HandleAnimSocketInfo");
-static_assert(offsetof(PyAbility_101811_HandleAnimSocketInfo, SocketId) == 0x000000, "Member 'PyAbility_101811_HandleAnimSocketInfo::SocketId' has a wrong offset!");
-static_assert(offsetof(PyAbility_101811_HandleAnimSocketInfo, SocketInfo) == 0x000010, "Member 'PyAbility_101811_HandleAnimSocketInfo::SocketInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101811_HandleAnimSocketInfo;
 
 // PythonFunction PyAbility_101811.PyAbility_101811.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +43,7 @@ struct PyAbility_101811_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101811_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101811_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101811_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101811_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101811_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101811_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101811_K2_OnEndAbility;
 
 }
 

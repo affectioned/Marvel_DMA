@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyLevelOverlapHandlerComponent.PyLevelOverlapHandlerComponent
-// 0x0000 (0x0D68 - 0x0D68)
+// 0x0000 (0x1098 - 0x1098)
 class UPyLevelOverlapHandlerComponent : public UOverlapHandlerComponent
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelOverlapHandlerComponent">();
+		STATIC_CLASS_IMPL("PyLevelOverlapHandlerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelOverlapHandlerComponent")
 	}
 	static class UPyLevelOverlapHandlerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelOverlapHandlerComponent>();
 	}
 };
-static_assert(alignof(UPyLevelOverlapHandlerComponent) == 0x000008, "Wrong alignment on UPyLevelOverlapHandlerComponent");
-static_assert(sizeof(UPyLevelOverlapHandlerComponent) == 0x000D68, "Wrong size on UPyLevelOverlapHandlerComponent");
+DUMPER7_ASSERTS_UPyLevelOverlapHandlerComponent;
 
 }
 

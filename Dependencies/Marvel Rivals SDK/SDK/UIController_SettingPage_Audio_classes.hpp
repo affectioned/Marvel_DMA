@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_Audio">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_Audio")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_Audio")
 	}
 	static class UPyUIController_SettingPage_Audio* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_Audio>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_Audio) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_Audio");
-static_assert(sizeof(UPyUIController_SettingPage_Audio) == 0x000050, "Wrong size on UPyUIController_SettingPage_Audio");
-static_assert(offsetof(UPyUIController_SettingPage_Audio, KeyAsset) == 0x000030, "Member 'UPyUIController_SettingPage_Audio::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Audio, RichInlineImageWidth) == 0x000038, "Member 'UPyUIController_SettingPage_Audio::RichInlineImageWidth' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Audio, RichInlineImageHeight) == 0x00003C, "Member 'UPyUIController_SettingPage_Audio::RichInlineImageHeight' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Audio, RichInlineImageScale) == 0x000040, "Member 'UPyUIController_SettingPage_Audio::RichInlineImageScale' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Audio, SubtitleSettings) == 0x000048, "Member 'UPyUIController_SettingPage_Audio::SubtitleSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_Audio;
 
 }
 

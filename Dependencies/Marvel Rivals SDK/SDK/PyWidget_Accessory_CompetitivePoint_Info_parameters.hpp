@@ -21,9 +21,7 @@ struct PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible, visible) == 0x000000, "Member 'PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CompetitionPoint_FullScreenPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_Accessory_CompetitivePoint_Info.PyWidget_CompetitionPoint_FullScreenPanel.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CompetitionPoint_FullScreenPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Accessory_CompetitivePoint_Info.PyWidget_Accessory_CompetitivePoint_Info.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Accessory_CompetitivePoint_Info_OnCascadingVisibleChanged;
 
 }
 

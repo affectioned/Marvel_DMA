@@ -28,12 +28,7 @@ public:
 	EOwnershipType                                OldSie;                                            // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                NewSide;                                           // 0x0003(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged) == 0x000001, "Wrong alignment on PyLevelSummoned_20020901_OnTimeCrystalStateChanged");
-static_assert(sizeof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged) == 0x000004, "Wrong size on PyLevelSummoned_20020901_OnTimeCrystalStateChanged");
-static_assert(offsetof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged, OldState) == 0x000000, "Member 'PyLevelSummoned_20020901_OnTimeCrystalStateChanged::OldState' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged, NewState) == 0x000001, "Member 'PyLevelSummoned_20020901_OnTimeCrystalStateChanged::NewState' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged, OldSie) == 0x000002, "Member 'PyLevelSummoned_20020901_OnTimeCrystalStateChanged::OldSie' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020901_OnTimeCrystalStateChanged, NewSide) == 0x000003, "Member 'PyLevelSummoned_20020901_OnTimeCrystalStateChanged::NewSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020901_OnTimeCrystalStateChanged;
 
 // PythonFunction PyLevelSummoned_20020901.PyLevelSummoned_20020901.OnFlagPlaceInZone
 // 0x0008 (0x0008 - 0x0000)
@@ -42,9 +37,7 @@ struct PyLevelSummoned_20020901_OnFlagPlaceInZone final
 public:
 	class AActor*                                 LegalZone;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020901_OnFlagPlaceInZone) == 0x000008, "Wrong alignment on PyLevelSummoned_20020901_OnFlagPlaceInZone");
-static_assert(sizeof(PyLevelSummoned_20020901_OnFlagPlaceInZone) == 0x000008, "Wrong size on PyLevelSummoned_20020901_OnFlagPlaceInZone");
-static_assert(offsetof(PyLevelSummoned_20020901_OnFlagPlaceInZone, LegalZone) == 0x000000, "Member 'PyLevelSummoned_20020901_OnFlagPlaceInZone::LegalZone' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020901_OnFlagPlaceInZone;
 
 // PythonFunction PyLevelSummoned_20020901.PyLevelSummoned_20020901.ServerSetActiveState
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +46,7 @@ struct PyLevelSummoned_20020901_ServerSetActiveState final
 public:
 	int32                                         new_state;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020901_ServerSetActiveState) == 0x000004, "Wrong alignment on PyLevelSummoned_20020901_ServerSetActiveState");
-static_assert(sizeof(PyLevelSummoned_20020901_ServerSetActiveState) == 0x000004, "Wrong size on PyLevelSummoned_20020901_ServerSetActiveState");
-static_assert(offsetof(PyLevelSummoned_20020901_ServerSetActiveState, new_state) == 0x000000, "Member 'PyLevelSummoned_20020901_ServerSetActiveState::new_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020901_ServerSetActiveState;
 
 // PythonFunction PyLevelSummoned_20020901.PyLevelSummoned_20020901.IsNeutral
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +55,7 @@ struct PyLevelSummoned_20020901_IsNeutral final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020901_IsNeutral) == 0x000001, "Wrong alignment on PyLevelSummoned_20020901_IsNeutral");
-static_assert(sizeof(PyLevelSummoned_20020901_IsNeutral) == 0x000001, "Wrong size on PyLevelSummoned_20020901_IsNeutral");
-static_assert(offsetof(PyLevelSummoned_20020901_IsNeutral, ReturnValue) == 0x000000, "Member 'PyLevelSummoned_20020901_IsNeutral::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020901_IsNeutral;
 
 // PythonFunction PyLevelSummoned_20020901.PyLevelSummoned_20020901.HasTargetPortal
 // 0x0010 (0x0010 - 0x0000)
@@ -76,10 +65,7 @@ public:
 	class AActor*                                 LegalZone;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020901_HasTargetPortal) == 0x000008, "Wrong alignment on PyLevelSummoned_20020901_HasTargetPortal");
-static_assert(sizeof(PyLevelSummoned_20020901_HasTargetPortal) == 0x000010, "Wrong size on PyLevelSummoned_20020901_HasTargetPortal");
-static_assert(offsetof(PyLevelSummoned_20020901_HasTargetPortal, LegalZone) == 0x000000, "Member 'PyLevelSummoned_20020901_HasTargetPortal::LegalZone' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020901_HasTargetPortal, ReturnValue) == 0x000008, "Member 'PyLevelSummoned_20020901_HasTargetPortal::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020901_HasTargetPortal;
 
 // PythonFunction PyLevelSummoned_20020901.PyCue_Level_20020901.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -90,11 +76,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020901_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_20020901_WhileActive");
-static_assert(sizeof(PyCue_Level_20020901_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_20020901_WhileActive");
-static_assert(offsetof(PyCue_Level_20020901_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Level_20020901_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020901_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_20020901_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020901_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_20020901_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020901_WhileActive;
 
 // PythonFunction PyLevelSummoned_20020901.PyCue_Level_20020901.OnActiveStateChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -103,9 +85,7 @@ struct PyCue_Level_20020901_OnActiveStateChanged final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020901_OnActiveStateChanged) == 0x000004, "Wrong alignment on PyCue_Level_20020901_OnActiveStateChanged");
-static_assert(sizeof(PyCue_Level_20020901_OnActiveStateChanged) == 0x000004, "Wrong size on PyCue_Level_20020901_OnActiveStateChanged");
-static_assert(offsetof(PyCue_Level_20020901_OnActiveStateChanged, NewState) == 0x000000, "Member 'PyCue_Level_20020901_OnActiveStateChanged::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020901_OnActiveStateChanged;
 
 // PythonFunction PyLevelSummoned_20020901.PyCue_Level_20020901.OnViewTargetChangeEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -114,9 +94,7 @@ struct PyCue_Level_20020901_OnViewTargetChangeEvent final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020901_OnViewTargetChangeEvent) == 0x000008, "Wrong alignment on PyCue_Level_20020901_OnViewTargetChangeEvent");
-static_assert(sizeof(PyCue_Level_20020901_OnViewTargetChangeEvent) == 0x000008, "Wrong size on PyCue_Level_20020901_OnViewTargetChangeEvent");
-static_assert(offsetof(PyCue_Level_20020901_OnViewTargetChangeEvent, InActor) == 0x000000, "Member 'PyCue_Level_20020901_OnViewTargetChangeEvent::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020901_OnViewTargetChangeEvent;
 
 }
 

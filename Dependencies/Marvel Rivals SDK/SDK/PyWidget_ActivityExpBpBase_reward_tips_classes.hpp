@@ -17,24 +17,27 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ActivityExpBpBase_reward_tips.PyWidget_ActivityExpBpBase_Reward_Tips_Bar
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_Reward_Tips_Bar : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Reward_Tips_Bar">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Reward_Tips_Bar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Reward_Tips_Bar")
 	}
 	static class UPyWidget_ActivityExpBpBase_Reward_Tips_Bar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Reward_Tips_Bar>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Reward_Tips_Bar) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Reward_Tips_Bar");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Reward_Tips_Bar) == 0x0005C0, "Wrong size on UPyWidget_ActivityExpBpBase_Reward_Tips_Bar");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Reward_Tips_Bar;
 
 // PythonClass PyWidget_ActivityExpBpBase_reward_tips.PyWidget_ActivityExpBpBase_Reward_Tips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_Reward_Tips : public UPyMarvelUserWidget
 {
 public:
@@ -44,15 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Reward_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Reward_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Reward_Tips")
 	}
 	static class UPyWidget_ActivityExpBpBase_Reward_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Reward_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Reward_Tips) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Reward_Tips");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Reward_Tips) == 0x0005C0, "Wrong size on UPyWidget_ActivityExpBpBase_Reward_Tips");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Reward_Tips;
 
 }
 

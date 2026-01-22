@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_TreatSource.PyBuffAbility_120_DamageToCure
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_DamageToCure final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         InvincibleTime;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageToCureRatio;                                 // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageToCureBuffID;                                // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvincibleTime;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageToCureRatio;                                 // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageToCureBuffID;                                // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,25 +35,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_DamageToCure">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_DamageToCure")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_DamageToCure")
 	}
 	static class UPyBuffAbility_120_DamageToCure* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_DamageToCure>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_DamageToCure) == 0x000008, "Wrong alignment on UPyBuffAbility_120_DamageToCure");
-static_assert(sizeof(UPyBuffAbility_120_DamageToCure) == 0x001380, "Wrong size on UPyBuffAbility_120_DamageToCure");
-static_assert(offsetof(UPyBuffAbility_120_DamageToCure, InvincibleTime) == 0x001370, "Member 'UPyBuffAbility_120_DamageToCure::InvincibleTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_DamageToCure, DamageToCureRatio) == 0x001374, "Member 'UPyBuffAbility_120_DamageToCure::DamageToCureRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_DamageToCure, DamageToCureBuffID) == 0x001378, "Member 'UPyBuffAbility_120_DamageToCure::DamageToCureBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_DamageToCure;
 
 // PythonClass PyBuffAbility_120_TreatSource.PyBuffAbility_120_ChanceDoubleTreat
-// 0x0008 (0x1380 - 0x1378)
+// 0x0008 (0x1398 - 0x1390)
 class UPyBuffAbility_120_ChanceDoubleTreat final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         DoubleTreatChance;                                 // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DoubleTreatChance;                                 // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -64,19 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_ChanceDoubleTreat">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_ChanceDoubleTreat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_ChanceDoubleTreat")
 	}
 	static class UPyBuffAbility_120_ChanceDoubleTreat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_ChanceDoubleTreat>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_ChanceDoubleTreat) == 0x000008, "Wrong alignment on UPyBuffAbility_120_ChanceDoubleTreat");
-static_assert(sizeof(UPyBuffAbility_120_ChanceDoubleTreat) == 0x001380, "Wrong size on UPyBuffAbility_120_ChanceDoubleTreat");
-static_assert(offsetof(UPyBuffAbility_120_ChanceDoubleTreat, DoubleTreatChance) == 0x001378, "Member 'UPyBuffAbility_120_ChanceDoubleTreat::DoubleTreatChance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_ChanceDoubleTreat;
 
 // PythonClass PyBuffAbility_120_TreatSource.PyLevelTeamBuffAbility_TreateOverflow
-// 0x0000 (0x1378 - 0x1378)
+// 0x0000 (0x1390 - 0x1390)
 class UPyLevelTeamBuffAbility_TreateOverflow final : public ULevelTeamBuffAbility
 {
 public:
@@ -86,15 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTeamBuffAbility_TreateOverflow">();
+		STATIC_CLASS_IMPL("PyLevelTeamBuffAbility_TreateOverflow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTeamBuffAbility_TreateOverflow")
 	}
 	static class UPyLevelTeamBuffAbility_TreateOverflow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTeamBuffAbility_TreateOverflow>();
 	}
 };
-static_assert(alignof(UPyLevelTeamBuffAbility_TreateOverflow) == 0x000008, "Wrong alignment on UPyLevelTeamBuffAbility_TreateOverflow");
-static_assert(sizeof(UPyLevelTeamBuffAbility_TreateOverflow) == 0x001378, "Wrong size on UPyLevelTeamBuffAbility_TreateOverflow");
+DUMPER7_ASSERTS_UPyLevelTeamBuffAbility_TreateOverflow;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_EnergyContest_ProgressBar_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_EnergyContest_ProgressBar_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_EnergyContest_ProgressBar_OnAnimationFinished");
-static_assert(sizeof(PyWidget_EnergyContest_ProgressBar_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_EnergyContest_ProgressBar_OnAnimationFinished");
-static_assert(offsetof(PyWidget_EnergyContest_ProgressBar_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_EnergyContest_ProgressBar_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_EnergyContest_ProgressBar_OnAnimationFinished;
 
 }
 

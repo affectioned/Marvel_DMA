@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ability_SkillBuffCharge.WBP_Ability_SkillBuffCharge_C
-// 0x0020 (0x0478 - 0x0458)
+// 0x0020 (0x0458 - 0x0438)
 class UWBP_Ability_SkillBuffCharge_C final : public UMarvelSimpleUserWidget
 {
 public:
-	class UWidgetAnimation*                       Anim_Progress;                                     // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Circle;                                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Cd;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Progress;                                     // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Circle;                                        // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Cd;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_SkillBuffCharge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_SkillBuffCharge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_SkillBuffCharge_C")
 	}
 	static class UWBP_Ability_SkillBuffCharge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_SkillBuffCharge_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_SkillBuffCharge_C) == 0x000008, "Wrong alignment on UWBP_Ability_SkillBuffCharge_C");
-static_assert(sizeof(UWBP_Ability_SkillBuffCharge_C) == 0x000478, "Wrong size on UWBP_Ability_SkillBuffCharge_C");
-static_assert(offsetof(UWBP_Ability_SkillBuffCharge_C, Anim_Progress) == 0x000458, "Member 'UWBP_Ability_SkillBuffCharge_C::Anim_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_SkillBuffCharge_C, Img_AbilityIcon) == 0x000460, "Member 'UWBP_Ability_SkillBuffCharge_C::Img_AbilityIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_SkillBuffCharge_C, Img_Circle) == 0x000468, "Member 'UWBP_Ability_SkillBuffCharge_C::Img_Circle' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_SkillBuffCharge_C, Overlay_Cd) == 0x000470, "Member 'UWBP_Ability_SkillBuffCharge_C::Overlay_Cd' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_SkillBuffCharge_C;
 
 }
 

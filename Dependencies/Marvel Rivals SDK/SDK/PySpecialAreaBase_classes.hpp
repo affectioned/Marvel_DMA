@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -71,41 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaBase">();
+		STATIC_CLASS_IMPL("PySpecialAreaBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaBase")
 	}
 	static class APySpecialAreaBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpecialAreaBase>();
 	}
 };
-static_assert(alignof(APySpecialAreaBase) == 0x000010, "Wrong alignment on APySpecialAreaBase");
-static_assert(sizeof(APySpecialAreaBase) == 0x0007C0, "Wrong size on APySpecialAreaBase");
-static_assert(offsetof(APySpecialAreaBase, Delay) == 0x0006E0, "Member 'APySpecialAreaBase::Delay' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, State) == 0x0006E4, "Member 'APySpecialAreaBase::State' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TotemLSActors) == 0x0006E8, "Member 'APySpecialAreaBase::TotemLSActors' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TotemStageData) == 0x0006F8, "Member 'APySpecialAreaBase::TotemStageData' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TotemFadeInTime) == 0x000700, "Member 'APySpecialAreaBase::TotemFadeInTime' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, IsRandomType) == 0x000704, "Member 'APySpecialAreaBase::IsRandomType' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, AreaType) == 0x000705, "Member 'APySpecialAreaBase::AreaType' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, IsStaged) == 0x000706, "Member 'APySpecialAreaBase::IsStaged' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TakeEffectStages) == 0x000708, "Member 'APySpecialAreaBase::TakeEffectStages' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TotemAudio) == 0x000718, "Member 'APySpecialAreaBase::TotemAudio' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, FlyEffectDesPoints) == 0x000720, "Member 'APySpecialAreaBase::FlyEffectDesPoints' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneFlyTime) == 0x000730, "Member 'APySpecialAreaBase::RuneFlyTime' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneFlyEffect) == 0x000738, "Member 'APySpecialAreaBase::RuneFlyEffect' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneFlyAudioEvent) == 0x000740, "Member 'APySpecialAreaBase::RuneFlyAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneGroundEffect) == 0x000748, "Member 'APySpecialAreaBase::RuneGroundEffect' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneGroundAudio) == 0x000750, "Member 'APySpecialAreaBase::RuneGroundAudio' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneLifeTime) == 0x000758, "Member 'APySpecialAreaBase::RuneLifeTime' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneWidth) == 0x00075C, "Member 'APySpecialAreaBase::RuneWidth' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RuneColorFactor) == 0x000760, "Member 'APySpecialAreaBase::RuneColorFactor' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RandomTypeComp) == 0x000768, "Member 'APySpecialAreaBase::RandomTypeComp' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, RandomRoundComp) == 0x000770, "Member 'APySpecialAreaBase::RandomRoundComp' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, TotemComp) == 0x000778, "Member 'APySpecialAreaBase::TotemComp' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, CanBeTriggered) == 0x000780, "Member 'APySpecialAreaBase::CanBeTriggered' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, OnStateChanged) == 0x000790, "Member 'APySpecialAreaBase::OnStateChanged' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, OnTakeEffect) == 0x0007A0, "Member 'APySpecialAreaBase::OnTakeEffect' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaBase, OnStopTakeEffect) == 0x0007B0, "Member 'APySpecialAreaBase::OnStopTakeEffect' has a wrong offset!");
+DUMPER7_ASSERTS_APySpecialAreaBase;
 
 }
 

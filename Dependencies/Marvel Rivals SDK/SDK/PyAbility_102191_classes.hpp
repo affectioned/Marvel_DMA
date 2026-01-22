@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102191.PyCue_Summoned_HitImpact_10219101
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Summoned_HitImpact_10219101 final : public UMarvelCueNotify_HitImpact
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoned_HitImpact_10219101">();
+		STATIC_CLASS_IMPL("PyCue_Summoned_HitImpact_10219101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoned_HitImpact_10219101")
 	}
 	static class UPyCue_Summoned_HitImpact_10219101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Summoned_HitImpact_10219101>();
 	}
 };
-static_assert(alignof(UPyCue_Summoned_HitImpact_10219101) == 0x000008, "Wrong alignment on UPyCue_Summoned_HitImpact_10219101");
-static_assert(sizeof(UPyCue_Summoned_HitImpact_10219101) == 0x0005C8, "Wrong size on UPyCue_Summoned_HitImpact_10219101");
+DUMPER7_ASSERTS_UPyCue_Summoned_HitImpact_10219101;
 
 }
 

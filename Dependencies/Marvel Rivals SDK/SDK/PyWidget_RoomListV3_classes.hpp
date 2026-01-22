@@ -11,28 +11,28 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_RoomListV3.PyWidget_RoomListV3
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_RoomListV3 final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AKEvent_JoinRoom;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_FailJoinRoom;                              // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           MapColor;                                          // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressThreshold;                                // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShortPressThreshold;                               // 0x0624(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_DropDownList_Network;                          // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                LoadRoomBtn_Class;                                 // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                RoomListLine_Class;                                // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_JoinRoom;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_FailJoinRoom;                              // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapNameClass;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           MapColor;                                          // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressThreshold;                                // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShortPressThreshold;                               // 0x062C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_DropDownList_Network;                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                LoadRoomBtn_Class;                                 // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                RoomListLine_Class;                                // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,24 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomListV3">();
+		STATIC_CLASS_IMPL("PyWidget_RoomListV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomListV3")
 	}
 	static class UPyWidget_RoomListV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RoomListV3>();
 	}
 };
-static_assert(alignof(UPyWidget_RoomListV3) == 0x000008, "Wrong alignment on UPyWidget_RoomListV3");
-static_assert(sizeof(UPyWidget_RoomListV3) == 0x000640, "Wrong size on UPyWidget_RoomListV3");
-static_assert(offsetof(UPyWidget_RoomListV3, AKEvent_JoinRoom) == 0x0005F8, "Member 'UPyWidget_RoomListV3::AKEvent_JoinRoom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, AKEvent_FailJoinRoom) == 0x000600, "Member 'UPyWidget_RoomListV3::AKEvent_FailJoinRoom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, MapNameClass) == 0x000608, "Member 'UPyWidget_RoomListV3::MapNameClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, MapColor) == 0x000610, "Member 'UPyWidget_RoomListV3::MapColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, LongPressThreshold) == 0x000620, "Member 'UPyWidget_RoomListV3::LongPressThreshold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, ShortPressThreshold) == 0x000624, "Member 'UPyWidget_RoomListV3::ShortPressThreshold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, WBP_DropDownList_Network) == 0x000628, "Member 'UPyWidget_RoomListV3::WBP_DropDownList_Network' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, LoadRoomBtn_Class) == 0x000630, "Member 'UPyWidget_RoomListV3::LoadRoomBtn_Class' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomListV3, RoomListLine_Class) == 0x000638, "Member 'UPyWidget_RoomListV3::RoomListLine_Class' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RoomListV3;
 
 }
 

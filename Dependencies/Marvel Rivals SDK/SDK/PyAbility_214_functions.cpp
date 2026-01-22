@@ -90,5 +90,33 @@ bool UPyCue_Ability_Instant_21401::OnExecute(class AActor* MyTarget, const struc
 	return Parms.ReturnValue;
 }
 
+
+// PythonFunction PyAbility_214.PyAbility_214.IsValidEmote
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int64                                   emote_id                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyAbility_214::IsValidEmote(int64 emote_id)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_214", "IsValidEmote");
+
+	Params::PyAbility_214_IsValidEmote Parms{};
+
+	Parms.emote_id = emote_id;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
 }
 

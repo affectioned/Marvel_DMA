@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10000011.PyBuffAbility_10130_10000011
-// 0x0050 (0x13C0 - 0x1370)
+// 0x0050 (0x13D8 - 0x1388)
 class UPyBuffAbility_10130_10000011 : public UMarvelEffectGameplayAbility
 {
 public:
-	TMap<int32, struct FOutBuildEffect>           EffectConfig;                                      // 0x1370(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, struct FOutBuildEffect>           EffectConfig;                                      // 0x1388(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10000011">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10000011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10000011")
 	}
 	static class UPyBuffAbility_10130_10000011* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10000011>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10000011) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10000011");
-static_assert(sizeof(UPyBuffAbility_10130_10000011) == 0x0013C0, "Wrong size on UPyBuffAbility_10130_10000011");
-static_assert(offsetof(UPyBuffAbility_10130_10000011, EffectConfig) == 0x001370, "Member 'UPyBuffAbility_10130_10000011::EffectConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10000011;
 
 }
 

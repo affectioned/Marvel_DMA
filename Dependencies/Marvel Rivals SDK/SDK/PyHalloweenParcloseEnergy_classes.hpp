@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenParcloseEnergy">();
+		STATIC_CLASS_IMPL("PyHalloweenParcloseEnergy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenParcloseEnergy")
 	}
 	static class APyHalloweenParcloseEnergy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenParcloseEnergy>();
 	}
 };
-static_assert(alignof(APyHalloweenParcloseEnergy) == 0x000010, "Wrong alignment on APyHalloweenParcloseEnergy");
-static_assert(sizeof(APyHalloweenParcloseEnergy) == 0x000700, "Wrong size on APyHalloweenParcloseEnergy");
-static_assert(offsetof(APyHalloweenParcloseEnergy, PermitWaveIndex) == 0x0006E0, "Member 'APyHalloweenParcloseEnergy::PermitWaveIndex' has a wrong offset!");
-static_assert(offsetof(APyHalloweenParcloseEnergy, HideAudioEvent) == 0x0006E8, "Member 'APyHalloweenParcloseEnergy::HideAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyHalloweenParcloseEnergy, State) == 0x0006F0, "Member 'APyHalloweenParcloseEnergy::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenParcloseEnergy;
 
 }
 

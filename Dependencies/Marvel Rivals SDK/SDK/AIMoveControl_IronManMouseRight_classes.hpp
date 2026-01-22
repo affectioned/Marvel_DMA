@@ -23,15 +23,18 @@ class UAIMoveControl_IronManMouseRight_C final : public UPyAIMoveControlLogicBas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_IronManMouseRight_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_IronManMouseRight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_IronManMouseRight_C")
 	}
 	static class UAIMoveControl_IronManMouseRight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_IronManMouseRight_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_IronManMouseRight_C) == 0x000008, "Wrong alignment on UAIMoveControl_IronManMouseRight_C");
-static_assert(sizeof(UAIMoveControl_IronManMouseRight_C) == 0x0000B8, "Wrong size on UAIMoveControl_IronManMouseRight_C");
+DUMPER7_ASSERTS_UAIMoveControl_IronManMouseRight_C;
 
 }
 

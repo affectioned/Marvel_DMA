@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_402461.PySummonedComp_40246101
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_40246101 final : public UMarvelSummonedComponent
 {
 public:
@@ -29,26 +29,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_40246101">();
+		STATIC_CLASS_IMPL("PySummonedComp_40246101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_40246101")
 	}
 	static class UPySummonedComp_40246101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_40246101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_40246101) == 0x000008, "Wrong alignment on UPySummonedComp_40246101");
-static_assert(sizeof(UPySummonedComp_40246101) == 0x000DB0, "Wrong size on UPySummonedComp_40246101");
+DUMPER7_ASSERTS_UPySummonedComp_40246101;
 
 // PythonClass PyAbility_10130_402461.PyCue_Summoner_Loop_40246101
-// 0x1680 (0x2880 - 0x1200)
+// 0x19D0 (0x2C30 - 0x1260)
 class APyCue_Summoner_Loop_40246101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 Rune;                                              // 0x1200(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimMontage*                           MyAnimMontage;                                     // 0x1208(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1210(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         AdvanceEndAnimTime;                                // 0x2870(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 Rune;                                              // 0x1260(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           MyAnimMontage;                                     // 0x1268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1270(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         AdvanceEndAnimTime;                                // 0x2C20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -58,19 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_40246101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_40246101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_40246101")
 	}
 	static class APyCue_Summoner_Loop_40246101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_40246101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_40246101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_40246101");
-static_assert(sizeof(APyCue_Summoner_Loop_40246101) == 0x002880, "Wrong size on APyCue_Summoner_Loop_40246101");
-static_assert(offsetof(APyCue_Summoner_Loop_40246101, Rune) == 0x001200, "Member 'APyCue_Summoner_Loop_40246101::Rune' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_40246101, MyAnimMontage) == 0x001208, "Member 'APyCue_Summoner_Loop_40246101::MyAnimMontage' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_40246101, GroundTraceContext) == 0x001210, "Member 'APyCue_Summoner_Loop_40246101::GroundTraceContext' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_40246101, AdvanceEndAnimTime) == 0x002870, "Member 'APyCue_Summoner_Loop_40246101::AdvanceEndAnimTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_40246101;
 
 // PythonClass PyAbility_10130_402461.PyConfig_402461
 // 0x0080 (0x0118 - 0x0098)
@@ -88,25 +90,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_402461">();
+		STATIC_CLASS_IMPL("PyConfig_402461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_402461")
 	}
 	static class UPyConfig_402461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_402461>();
 	}
 };
-static_assert(alignof(UPyConfig_402461) == 0x000008, "Wrong alignment on UPyConfig_402461");
-static_assert(sizeof(UPyConfig_402461) == 0x000118, "Wrong size on UPyConfig_402461");
-static_assert(offsetof(UPyConfig_402461, levelCenterLocation) == 0x000098, "Member 'UPyConfig_402461::levelCenterLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, LoopDurationDict) == 0x0000B0, "Member 'UPyConfig_402461::LoopDurationDict' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, IntervalToGenerateCrystalSummoner) == 0x000100, "Member 'UPyConfig_402461::IntervalToGenerateCrystalSummoner' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, DurationIncrementWhenCrystalSummonerIsBreak) == 0x000104, "Member 'UPyConfig_402461::DurationIncrementWhenCrystalSummonerIsBreak' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, CrystalSummonerId) == 0x000108, "Member 'UPyConfig_402461::CrystalSummonerId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, CrystalMinRadius) == 0x00010C, "Member 'UPyConfig_402461::CrystalMinRadius' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402461, CrystalMaxRadius) == 0x000110, "Member 'UPyConfig_402461::CrystalMaxRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_402461;
 
 // PythonClass PyAbility_10130_402461.PyAbility_402461
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_402461 final : public UMarvelGameplayAbility
 {
 public:
@@ -122,15 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_402461">();
+		STATIC_CLASS_IMPL("PyAbility_402461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_402461")
 	}
 	static class UPyAbility_402461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_402461>();
 	}
 };
-static_assert(alignof(UPyAbility_402461) == 0x000008, "Wrong alignment on UPyAbility_402461");
-static_assert(sizeof(UPyAbility_402461) == 0x0029F0, "Wrong size on UPyAbility_402461");
+DUMPER7_ASSERTS_UPyAbility_402461;
 
 }
 

@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_215_Emoji_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_215_Emoji_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_215_Emoji_BP_C")
 	}
 	static class AAbility_215_Emoji_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAbility_215_Emoji_BP_C>();
 	}
 };
-static_assert(alignof(AAbility_215_Emoji_BP_C) == 0x000010, "Wrong alignment on AAbility_215_Emoji_BP_C");
-static_assert(sizeof(AAbility_215_Emoji_BP_C) == 0x000700, "Wrong size on AAbility_215_Emoji_BP_C");
-static_assert(offsetof(AAbility_215_Emoji_BP_C, MarvelWidget_OnRemote) == 0x0006E0, "Member 'AAbility_215_Emoji_BP_C::MarvelWidget_OnRemote' has a wrong offset!");
-static_assert(offsetof(AAbility_215_Emoji_BP_C, MarvelWidget) == 0x0006E8, "Member 'AAbility_215_Emoji_BP_C::MarvelWidget' has a wrong offset!");
-static_assert(offsetof(AAbility_215_Emoji_BP_C, DefaultSceneRoot) == 0x0006F0, "Member 'AAbility_215_Emoji_BP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAbility_215_Emoji_BP_C;
 
 }
 

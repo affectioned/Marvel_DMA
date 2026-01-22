@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105602.PyConfig_105602
-// 0x00F0 (0x0260 - 0x0170)
+// 0x0140 (0x02B0 - 0x0170)
 class UPyConfig_105602 final : public UGlidingAbilityConfig
 {
 public:
@@ -32,57 +32,26 @@ public:
 	EAmmoClipType                                 EnergyType;                                        // 0x0188(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAmmoClipType                                 UIEnergyType;                                      // 0x0189(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18A[0x6];                                      // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelGameplayTagRequirements         AddEnergyCondition;                                // 0x0190(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         AddEnergyCondition;                                // 0x0190(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105602">();
+		STATIC_CLASS_IMPL("PyConfig_105602")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105602")
 	}
 	static class UPyConfig_105602* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105602>();
 	}
 };
-static_assert(alignof(UPyConfig_105602) == 0x000008, "Wrong alignment on UPyConfig_105602");
-static_assert(sizeof(UPyConfig_105602) == 0x000260, "Wrong size on UPyConfig_105602");
-static_assert(offsetof(UPyConfig_105602, TimeInterval) == 0x000170, "Member 'UPyConfig_105602::TimeInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, EnableAddCurve) == 0x000174, "Member 'UPyConfig_105602::EnableAddCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, AddEnergyPerSecond) == 0x000178, "Member 'UPyConfig_105602::AddEnergyPerSecond' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, Velocity_Add_Curve) == 0x000180, "Member 'UPyConfig_105602::Velocity_Add_Curve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, EnergyType) == 0x000188, "Member 'UPyConfig_105602::EnergyType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, UIEnergyType) == 0x000189, "Member 'UPyConfig_105602::UIEnergyType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105602, AddEnergyCondition) == 0x000190, "Member 'UPyConfig_105602::AddEnergyCondition' has a wrong offset!");
-
-// PythonClass PyAbility_105602.PyCue_AbilityLoop_10560201
-// 0x0010 (0x11E0 - 0x11D0)
-class APyCue_AbilityLoop_10560201 final : public ACue_AbilityLoop_10560201
-{
-public:
-	class UAnimMontage*                           GlidingMontage;                                    // 0x11D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnTimelineChanged(const int32 NewIndex);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnReceiveTimelineSectionSwitch(class UAnimTimeline* Timeline, const class FString& SectionName);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10560201">();
-	}
-	static class APyCue_AbilityLoop_10560201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_AbilityLoop_10560201>();
-	}
-};
-static_assert(alignof(APyCue_AbilityLoop_10560201) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10560201");
-static_assert(sizeof(APyCue_AbilityLoop_10560201) == 0x0011E0, "Wrong size on APyCue_AbilityLoop_10560201");
-static_assert(offsetof(APyCue_AbilityLoop_10560201, GlidingMontage) == 0x0011D0, "Member 'APyCue_AbilityLoop_10560201::GlidingMontage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105602;
 
 // PythonClass PyAbility_105602.PyAbility_105602
-// 0x0000 (0x2BE0 - 0x2BE0)
+// 0x0000 (0x2C30 - 0x2C30)
 class UPyAbility_105602 : public UAbility_105602
 {
 public:
@@ -101,15 +70,47 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105602">();
+		STATIC_CLASS_IMPL("PyAbility_105602")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105602")
 	}
 	static class UPyAbility_105602* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105602>();
 	}
 };
-static_assert(alignof(UPyAbility_105602) == 0x000008, "Wrong alignment on UPyAbility_105602");
-static_assert(sizeof(UPyAbility_105602) == 0x002BE0, "Wrong size on UPyAbility_105602");
+DUMPER7_ASSERTS_UPyAbility_105602;
+
+// PythonClass PyAbility_105602.PyCue_AbilityLoop_10560201
+// 0x0010 (0x11F0 - 0x11E0)
+class APyCue_AbilityLoop_10560201 final : public ACue_AbilityLoop_10560201
+{
+public:
+	class UAnimMontage*                           GlidingMontage;                                    // 0x11E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnTimelineChanged(const int32 NewIndex);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnReceiveTimelineSectionSwitch(class UAnimTimeline* Timeline, const class FString& SectionName);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10560201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10560201")
+	}
+	static class APyCue_AbilityLoop_10560201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_AbilityLoop_10560201>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10560201;
 
 }
 

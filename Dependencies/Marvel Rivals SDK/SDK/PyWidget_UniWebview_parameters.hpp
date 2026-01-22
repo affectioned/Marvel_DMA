@@ -23,9 +23,7 @@ struct PyWidget_UniWebview_OpenUrl final
 public:
 	class FString                                 url;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_UniWebview_OpenUrl) == 0x000008, "Wrong alignment on PyWidget_UniWebview_OpenUrl");
-static_assert(sizeof(PyWidget_UniWebview_OpenUrl) == 0x000010, "Wrong size on PyWidget_UniWebview_OpenUrl");
-static_assert(offsetof(PyWidget_UniWebview_OpenUrl, url) == 0x000000, "Member 'PyWidget_UniWebview_OpenUrl::url' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_UniWebview_OpenUrl;
 
 // PythonFunction PyWidget_UniWebview.PyWidget_UniWebview.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_UniWebview_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_UniWebview_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_UniWebview_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_UniWebview_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_UniWebview_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_UniWebview_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_UniWebview_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_UniWebview_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_UniWebview.PyWidget_UniWebview.Tick
 // 0x003C (0x003C - 0x0000)
@@ -46,10 +42,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_UniWebview_Tick) == 0x000004, "Wrong alignment on PyWidget_UniWebview_Tick");
-static_assert(sizeof(PyWidget_UniWebview_Tick) == 0x00003C, "Wrong size on PyWidget_UniWebview_Tick");
-static_assert(offsetof(PyWidget_UniWebview_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_UniWebview_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_UniWebview_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_UniWebview_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_UniWebview_Tick;
 
 }
 

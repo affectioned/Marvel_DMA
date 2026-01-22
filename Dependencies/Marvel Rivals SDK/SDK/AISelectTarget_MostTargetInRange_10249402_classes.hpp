@@ -23,15 +23,18 @@ class UAISelectTarget_MostTargetInRange_10249402_C final : public UPyAISelectTar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_MostTargetInRange_10249402_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_MostTargetInRange_10249402_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_MostTargetInRange_10249402_C")
 	}
 	static class UAISelectTarget_MostTargetInRange_10249402_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_MostTargetInRange_10249402_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_MostTargetInRange_10249402_C) == 0x000008, "Wrong alignment on UAISelectTarget_MostTargetInRange_10249402_C");
-static_assert(sizeof(UAISelectTarget_MostTargetInRange_10249402_C) == 0x000098, "Wrong size on UAISelectTarget_MostTargetInRange_10249402_C");
+DUMPER7_ASSERTS_UAISelectTarget_MostTargetInRange_10249402_C;
 
 }
 

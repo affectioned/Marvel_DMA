@@ -17,75 +17,53 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ScoreBoard_DeathUnit1.WBP_ScoreBoard_DeathUnit1_C
-// 0x00D0 (0x06F8 - 0x0628)
+// 0x00D8 (0x0708 - 0x0630)
 class UWBP_ScoreBoard_DeathUnit1_C final : public UPyScoreBoardUnit
 {
 public:
-	class UWidgetAnimation*                       Anim_UltimateReady;                                // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Connecting;                                   // 0x0630(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Respawn;                                      // 0x0638(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   Hbox_Kda;                                          // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Icon_Developer;                                    // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Connecting;                                  // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Image_Duty;                                        // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Image_LeftGame;                                    // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Image_TeammateBg;                                  // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Head_Mask;                                     // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_HeadBg;                                        // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_InfoBg;                                        // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_KDABg;                                         // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           img_Line;                                          // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_NameBg;                                        // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Rank_Frist;                                    // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroHead_Spuare_C*          ImgHeroIcon;                                       // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Score;                                             // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         ScoreBoardUnit;                                    // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_RankNum;                                      // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextDeath;                                         // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextKill;                                          // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextRespawnTime;                                   // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       TextScore;                                         // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Team_ClanName_Abbreviation_C*      WBP_ClanName_Abbreviation;                         // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_MarqueeText_C*              WBP_PlayerName;                                    // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_UltimateReady;                                // 0x0630(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Connecting;                                   // 0x0638(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Respawn;                                      // 0x0640(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   Hbox_Kda;                                          // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Icon_Developer;                                    // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Connecting;                                  // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Image_Duty;                                        // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Image_LeftGame;                                    // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Image_TeammateBg;                                  // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Head_Mask;                                     // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HeadBg;                                        // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_InfoBg;                                        // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_KDABg;                                         // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           img_Line;                                          // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_NameBg;                                        // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Rank_Frist;                                    // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          ImgHeroIcon;                                       // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Score;                                             // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         ScoreBoardUnit;                                    // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_RankNum;                                      // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextDeath;                                         // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextKill;                                          // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextRespawnTime;                                   // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       TextScore;                                         // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Team_ClanName_Abbreviation_C*      WBP_ClanName_Abbreviation;                         // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_MarqueeText_C*              WBP_PlayerName;                                    // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScoreBoard_Badge_Small_C*          WBP_ScoreBoard_Badge;                              // 0x0700(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ScoreBoard_DeathUnit1_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ScoreBoard_DeathUnit1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ScoreBoard_DeathUnit1_C")
 	}
 	static class UWBP_ScoreBoard_DeathUnit1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ScoreBoard_DeathUnit1_C>();
 	}
 };
-static_assert(alignof(UWBP_ScoreBoard_DeathUnit1_C) == 0x000008, "Wrong alignment on UWBP_ScoreBoard_DeathUnit1_C");
-static_assert(sizeof(UWBP_ScoreBoard_DeathUnit1_C) == 0x0006F8, "Wrong size on UWBP_ScoreBoard_DeathUnit1_C");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Anim_UltimateReady) == 0x000628, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Anim_UltimateReady' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Anim_Connecting) == 0x000630, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Anim_Connecting' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Anim_Respawn) == 0x000638, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Anim_Respawn' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Hbox_Kda) == 0x000640, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Hbox_Kda' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Icon_Developer) == 0x000648, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Icon_Developer' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Image_Connecting) == 0x000650, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Image_Connecting' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Image_Duty) == 0x000658, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Image_Duty' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Image_LeftGame) == 0x000660, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Image_LeftGame' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Image_TeammateBg) == 0x000668, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Image_TeammateBg' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_Head_Mask) == 0x000670, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_Head_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_HeadBg) == 0x000678, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_HeadBg' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_InfoBg) == 0x000680, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_InfoBg' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_KDABg) == 0x000688, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_KDABg' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, img_Line) == 0x000690, "Member 'UWBP_ScoreBoard_DeathUnit1_C::img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_NameBg) == 0x000698, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_NameBg' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Img_Rank_Frist) == 0x0006A0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Img_Rank_Frist' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, ImgHeroIcon) == 0x0006A8, "Member 'UWBP_ScoreBoard_DeathUnit1_C::ImgHeroIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Score) == 0x0006B0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Score' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, ScoreBoardUnit) == 0x0006B8, "Member 'UWBP_ScoreBoard_DeathUnit1_C::ScoreBoardUnit' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, Text_RankNum) == 0x0006C0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::Text_RankNum' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, TextDeath) == 0x0006C8, "Member 'UWBP_ScoreBoard_DeathUnit1_C::TextDeath' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, TextKill) == 0x0006D0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::TextKill' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, TextRespawnTime) == 0x0006D8, "Member 'UWBP_ScoreBoard_DeathUnit1_C::TextRespawnTime' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, TextScore) == 0x0006E0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::TextScore' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, WBP_ClanName_Abbreviation) == 0x0006E8, "Member 'UWBP_ScoreBoard_DeathUnit1_C::WBP_ClanName_Abbreviation' has a wrong offset!");
-static_assert(offsetof(UWBP_ScoreBoard_DeathUnit1_C, WBP_PlayerName) == 0x0006F0, "Member 'UWBP_ScoreBoard_DeathUnit1_C::WBP_PlayerName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ScoreBoard_DeathUnit1_C;
 
 }
 

@@ -98,5 +98,30 @@ void UPyWidget_BanPickInfo::OnCascadingVisibleChanged(bool bNewVisible)
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_BanPickInfo.PyWidget_BanPickInfo.OnAnimationFinished
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_BanPickInfo::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_BanPickInfo", "OnAnimationFinished");
+
+	Params::PyWidget_BanPickInfo_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

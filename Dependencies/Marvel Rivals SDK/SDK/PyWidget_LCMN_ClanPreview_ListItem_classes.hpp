@@ -24,32 +24,38 @@ class UEntry_LCMN_ClanPreview_ListItem final : public UMarvelMVVMListEntryObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Entry_LCMN_ClanPreview_ListItem">();
+		STATIC_CLASS_IMPL("Entry_LCMN_ClanPreview_ListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Entry_LCMN_ClanPreview_ListItem")
 	}
 	static class UEntry_LCMN_ClanPreview_ListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEntry_LCMN_ClanPreview_ListItem>();
 	}
 };
-static_assert(alignof(UEntry_LCMN_ClanPreview_ListItem) == 0x000008, "Wrong alignment on UEntry_LCMN_ClanPreview_ListItem");
-static_assert(sizeof(UEntry_LCMN_ClanPreview_ListItem) == 0x000030, "Wrong size on UEntry_LCMN_ClanPreview_ListItem");
+DUMPER7_ASSERTS_UEntry_LCMN_ClanPreview_ListItem;
 
 // PythonClass PyWidget_LCMN_ClanPreview_ListItem.PyWidget_LCMN_ClanPreview_ListItem
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_LCMN_ClanPreview_ListItem final : public UPyMarvelListEntryWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_ClanPreview_ListItem">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_ClanPreview_ListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_ClanPreview_ListItem")
 	}
 	static class UPyWidget_LCMN_ClanPreview_ListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_ClanPreview_ListItem>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_ClanPreview_ListItem) == 0x000008, "Wrong alignment on UPyWidget_LCMN_ClanPreview_ListItem");
-static_assert(sizeof(UPyWidget_LCMN_ClanPreview_ListItem) == 0x0005F0, "Wrong size on UPyWidget_LCMN_ClanPreview_ListItem");
+DUMPER7_ASSERTS_UPyWidget_LCMN_ClanPreview_ListItem;
 
 }
 

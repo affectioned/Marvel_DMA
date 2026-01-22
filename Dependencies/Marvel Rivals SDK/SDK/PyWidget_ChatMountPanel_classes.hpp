@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ChatMountPanel.PyWidget_ChatMountPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ChatMountPanel : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatMountPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ChatMountPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatMountPanel")
 	}
 	static class UPyWidget_ChatMountPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatMountPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatMountPanel) == 0x000008, "Wrong alignment on UPyWidget_ChatMountPanel");
-static_assert(sizeof(UPyWidget_ChatMountPanel) == 0x0005C0, "Wrong size on UPyWidget_ChatMountPanel");
+DUMPER7_ASSERTS_UPyWidget_ChatMountPanel;
 
 }
 

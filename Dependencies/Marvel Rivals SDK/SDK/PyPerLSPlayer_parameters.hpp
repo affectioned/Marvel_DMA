@@ -22,10 +22,7 @@ public:
 	int32                                         loop_times;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         play_rate;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPerLSPlayer_StartPlaying) == 0x000004, "Wrong alignment on PyPerLSPlayer_StartPlaying");
-static_assert(sizeof(PyPerLSPlayer_StartPlaying) == 0x000008, "Wrong size on PyPerLSPlayer_StartPlaying");
-static_assert(offsetof(PyPerLSPlayer_StartPlaying, loop_times) == 0x000000, "Member 'PyPerLSPlayer_StartPlaying::loop_times' has a wrong offset!");
-static_assert(offsetof(PyPerLSPlayer_StartPlaying, play_rate) == 0x000004, "Member 'PyPerLSPlayer_StartPlaying::play_rate' has a wrong offset!");
+DUMPER7_ASSERTS_PyPerLSPlayer_StartPlaying;
 
 // PythonFunction PyPerLSPlayer.PyPerLSPlayer.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct PyPerLSPlayer_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPerLSPlayer_ReceiveTick) == 0x000004, "Wrong alignment on PyPerLSPlayer_ReceiveTick");
-static_assert(sizeof(PyPerLSPlayer_ReceiveTick) == 0x000004, "Wrong size on PyPerLSPlayer_ReceiveTick");
-static_assert(offsetof(PyPerLSPlayer_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyPerLSPlayer_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyPerLSPlayer_ReceiveTick;
 
 }
 

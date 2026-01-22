@@ -23,15 +23,18 @@ class URichTextChatIconViewImage_BP_C final : public URichTextBlockImageDecorato
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextChatIconViewImage_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextChatIconViewImage_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextChatIconViewImage_BP_C")
 	}
 	static class URichTextChatIconViewImage_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextChatIconViewImage_BP_C>();
 	}
 };
-static_assert(alignof(URichTextChatIconViewImage_BP_C) == 0x000008, "Wrong alignment on URichTextChatIconViewImage_BP_C");
-static_assert(sizeof(URichTextChatIconViewImage_BP_C) == 0x000038, "Wrong size on URichTextChatIconViewImage_BP_C");
+DUMPER7_ASSERTS_URichTextChatIconViewImage_BP_C;
 
 }
 

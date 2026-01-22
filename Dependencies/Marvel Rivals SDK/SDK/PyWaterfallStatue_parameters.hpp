@@ -24,9 +24,7 @@ struct PyWaterfallStatue_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWaterfallStatue_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyWaterfallStatue_ReceiveEndPlay");
-static_assert(sizeof(PyWaterfallStatue_ReceiveEndPlay) == 0x000001, "Wrong size on PyWaterfallStatue_ReceiveEndPlay");
-static_assert(offsetof(PyWaterfallStatue_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PyWaterfallStatue_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyWaterfallStatue_ReceiveEndPlay;
 
 // PythonFunction PyWaterfallStatue.PyWaterfallStatue.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	class AActor*                                 control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                side;                                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWaterfallStatue_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyWaterfallStatue_OnControlOwnerChanged");
-static_assert(sizeof(PyWaterfallStatue_OnControlOwnerChanged) == 0x000010, "Wrong size on PyWaterfallStatue_OnControlOwnerChanged");
-static_assert(offsetof(PyWaterfallStatue_OnControlOwnerChanged, control) == 0x000000, "Member 'PyWaterfallStatue_OnControlOwnerChanged::control' has a wrong offset!");
-static_assert(offsetof(PyWaterfallStatue_OnControlOwnerChanged, side) == 0x000008, "Member 'PyWaterfallStatue_OnControlOwnerChanged::side' has a wrong offset!");
+DUMPER7_ASSERTS_PyWaterfallStatue_OnControlOwnerChanged;
 
 }
 

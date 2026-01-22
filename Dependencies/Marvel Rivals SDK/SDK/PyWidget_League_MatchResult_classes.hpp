@@ -18,19 +18,62 @@
 namespace SDK
 {
 
+// PythonClass PyWidget_League_MatchResult.PyWidget_League_MatchResult
+// 0x0068 (0x0630 - 0x05C8)
+class UPyWidget_League_MatchResult final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_Champion;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_RunnerUp;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Third;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Other;                                     // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFrameMRC;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFrameClash;                                     // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgDecorateMRC;                                    // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgDecorateClash;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorMRC;                                          // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorClash;                                        // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MemberName_BP;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void OnAnimNameFadeIn();
+	void OnAnimNameFadeOut();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_League_MatchResult")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_MatchResult")
+	}
+	static class UPyWidget_League_MatchResult* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_MatchResult>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_League_MatchResult;
+
 // PythonClass PyWidget_League_MatchResult.PyWidget_League_RankingTitle
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_League_RankingTitle final : public UPyMarvelUserWidget
 {
 public:
-	ELeagueRankingTitle                           Initial_State;                                     // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Preview_RankN;                                     // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialChampion;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialRunnerUp;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialThird;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialOther;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialNone;                                      // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ELeagueRankingTitle                           Initial_State;                                     // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x1];                                      // 0x05C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Preview_RankN;                                     // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialChampion;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialRunnerUp;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialThird;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     Material4To64;                                     // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     Material128To256;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialOther;                                     // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialNone;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FontSize;                                          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,68 +83,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_RankingTitle">();
+		STATIC_CLASS_IMPL("PyWidget_League_RankingTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_RankingTitle")
 	}
 	static class UPyWidget_League_RankingTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_RankingTitle>();
 	}
 };
-static_assert(alignof(UPyWidget_League_RankingTitle) == 0x000008, "Wrong alignment on UPyWidget_League_RankingTitle");
-static_assert(sizeof(UPyWidget_League_RankingTitle) == 0x0005E8, "Wrong size on UPyWidget_League_RankingTitle");
-static_assert(offsetof(UPyWidget_League_RankingTitle, Initial_State) == 0x0005BA, "Member 'UPyWidget_League_RankingTitle::Initial_State' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, Preview_RankN) == 0x0005BC, "Member 'UPyWidget_League_RankingTitle::Preview_RankN' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, MaterialChampion) == 0x0005C0, "Member 'UPyWidget_League_RankingTitle::MaterialChampion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, MaterialRunnerUp) == 0x0005C8, "Member 'UPyWidget_League_RankingTitle::MaterialRunnerUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, MaterialThird) == 0x0005D0, "Member 'UPyWidget_League_RankingTitle::MaterialThird' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, MaterialOther) == 0x0005D8, "Member 'UPyWidget_League_RankingTitle::MaterialOther' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RankingTitle, MaterialNone) == 0x0005E0, "Member 'UPyWidget_League_RankingTitle::MaterialNone' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_RankingTitle;
 
-// PythonClass PyWidget_League_MatchResult.PyWidget_League_MatchResult
-// 0x0068 (0x0628 - 0x05C0)
-class UPyWidget_League_MatchResult final : public UPyMarvelUserWidget
+// PythonClass PyWidget_League_MatchResult.PyWidget_League_MemberName
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_League_MemberName final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_Champion;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_RunnerUp;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Third;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Other;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFrameMRC;                                       // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFrameClash;                                     // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgDecorateMRC;                                    // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgDecorateClash;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorMRC;                                          // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorClash;                                        // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MemberName_BP;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
 	void OnInitialized();
-	void Construct();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_MatchResult">();
+		STATIC_CLASS_IMPL("PyWidget_League_MemberName")
 	}
-	static class UPyWidget_League_MatchResult* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_League_MatchResult>();
+		STATIC_NAME_IMPL(L"PyWidget_League_MemberName")
+	}
+	static class UPyWidget_League_MemberName* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_MemberName>();
 	}
 };
-static_assert(alignof(UPyWidget_League_MatchResult) == 0x000008, "Wrong alignment on UPyWidget_League_MatchResult");
-static_assert(sizeof(UPyWidget_League_MatchResult) == 0x000628, "Wrong size on UPyWidget_League_MatchResult");
-static_assert(offsetof(UPyWidget_League_MatchResult, AkEvent_Champion) == 0x0005C0, "Member 'UPyWidget_League_MatchResult::AkEvent_Champion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, AkEvent_RunnerUp) == 0x0005C8, "Member 'UPyWidget_League_MatchResult::AkEvent_RunnerUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, AkEvent_Third) == 0x0005D0, "Member 'UPyWidget_League_MatchResult::AkEvent_Third' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, AkEvent_Other) == 0x0005D8, "Member 'UPyWidget_League_MatchResult::AkEvent_Other' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ImgFrameMRC) == 0x0005E0, "Member 'UPyWidget_League_MatchResult::ImgFrameMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ImgFrameClash) == 0x0005E8, "Member 'UPyWidget_League_MatchResult::ImgFrameClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ImgDecorateMRC) == 0x0005F0, "Member 'UPyWidget_League_MatchResult::ImgDecorateMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ImgDecorateClash) == 0x0005F8, "Member 'UPyWidget_League_MatchResult::ImgDecorateClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ColorMRC) == 0x000600, "Member 'UPyWidget_League_MatchResult::ColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, ColorClash) == 0x000610, "Member 'UPyWidget_League_MatchResult::ColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MatchResult, MemberName_BP) == 0x000620, "Member 'UPyWidget_League_MatchResult::MemberName_BP' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_MemberName;
 
 }
 

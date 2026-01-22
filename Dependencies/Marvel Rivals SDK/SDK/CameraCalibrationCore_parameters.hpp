@@ -25,9 +25,7 @@ struct LensDistortionModelHandlerBase_SetDistortionState final
 public:
 	struct FLensDistortionState                   InNewState;                                        // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensDistortionModelHandlerBase_SetDistortionState) == 0x000008, "Wrong alignment on LensDistortionModelHandlerBase_SetDistortionState");
-static_assert(sizeof(LensDistortionModelHandlerBase_SetDistortionState) == 0x000030, "Wrong size on LensDistortionModelHandlerBase_SetDistortionState");
-static_assert(offsetof(LensDistortionModelHandlerBase_SetDistortionState, InNewState) == 0x000000, "Member 'LensDistortionModelHandlerBase_SetDistortionState::InNewState' has a wrong offset!");
+DUMPER7_ASSERTS_LensDistortionModelHandlerBase_SetDistortionState;
 
 // Function CameraCalibrationCore.LensDistortionModelHandlerBase.GetDistortionDisplacementMap
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +34,7 @@ struct LensDistortionModelHandlerBase_GetDistortionDisplacementMap final
 public:
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensDistortionModelHandlerBase_GetDistortionDisplacementMap) == 0x000008, "Wrong alignment on LensDistortionModelHandlerBase_GetDistortionDisplacementMap");
-static_assert(sizeof(LensDistortionModelHandlerBase_GetDistortionDisplacementMap) == 0x000008, "Wrong size on LensDistortionModelHandlerBase_GetDistortionDisplacementMap");
-static_assert(offsetof(LensDistortionModelHandlerBase_GetDistortionDisplacementMap, ReturnValue) == 0x000000, "Member 'LensDistortionModelHandlerBase_GetDistortionDisplacementMap::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensDistortionModelHandlerBase_GetDistortionDisplacementMap;
 
 // Function CameraCalibrationCore.LensDistortionModelHandlerBase.GetUndistortionDisplacementMap
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +43,7 @@ struct LensDistortionModelHandlerBase_GetUndistortionDisplacementMap final
 public:
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensDistortionModelHandlerBase_GetUndistortionDisplacementMap) == 0x000008, "Wrong alignment on LensDistortionModelHandlerBase_GetUndistortionDisplacementMap");
-static_assert(sizeof(LensDistortionModelHandlerBase_GetUndistortionDisplacementMap) == 0x000008, "Wrong size on LensDistortionModelHandlerBase_GetUndistortionDisplacementMap");
-static_assert(offsetof(LensDistortionModelHandlerBase_GetUndistortionDisplacementMap, ReturnValue) == 0x000000, "Member 'LensDistortionModelHandlerBase_GetUndistortionDisplacementMap::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensDistortionModelHandlerBase_GetUndistortionDisplacementMap;
 
 // Function CameraCalibrationCore.LensDistortionModelHandlerBase.IsModelSupported
 // 0x0010 (0x0010 - 0x0000)
@@ -60,10 +54,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensDistortionModelHandlerBase_IsModelSupported) == 0x000008, "Wrong alignment on LensDistortionModelHandlerBase_IsModelSupported");
-static_assert(sizeof(LensDistortionModelHandlerBase_IsModelSupported) == 0x000010, "Wrong size on LensDistortionModelHandlerBase_IsModelSupported");
-static_assert(offsetof(LensDistortionModelHandlerBase_IsModelSupported, ModelToSupport) == 0x000000, "Member 'LensDistortionModelHandlerBase_IsModelSupported::ModelToSupport' has a wrong offset!");
-static_assert(offsetof(LensDistortionModelHandlerBase_IsModelSupported, ReturnValue) == 0x000008, "Member 'LensDistortionModelHandlerBase_IsModelSupported::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensDistortionModelHandlerBase_IsModelSupported;
 
 // Function CameraCalibrationCore.CalibrationPointComponent.GetNamespacedPointNames
 // 0x0010 (0x0010 - 0x0000)
@@ -72,9 +63,7 @@ struct CalibrationPointComponent_GetNamespacedPointNames final
 public:
 	TArray<class FString>                         OutNamespacedNames;                                // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CalibrationPointComponent_GetNamespacedPointNames) == 0x000008, "Wrong alignment on CalibrationPointComponent_GetNamespacedPointNames");
-static_assert(sizeof(CalibrationPointComponent_GetNamespacedPointNames) == 0x000010, "Wrong size on CalibrationPointComponent_GetNamespacedPointNames");
-static_assert(offsetof(CalibrationPointComponent_GetNamespacedPointNames, OutNamespacedNames) == 0x000000, "Member 'CalibrationPointComponent_GetNamespacedPointNames::OutNamespacedNames' has a wrong offset!");
+DUMPER7_ASSERTS_CalibrationPointComponent_GetNamespacedPointNames;
 
 // Function CameraCalibrationCore.CalibrationPointComponent.GetWorldLocation
 // 0x0030 (0x0030 - 0x0000)
@@ -86,11 +75,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CalibrationPointComponent_GetWorldLocation) == 0x000008, "Wrong alignment on CalibrationPointComponent_GetWorldLocation");
-static_assert(sizeof(CalibrationPointComponent_GetWorldLocation) == 0x000030, "Wrong size on CalibrationPointComponent_GetWorldLocation");
-static_assert(offsetof(CalibrationPointComponent_GetWorldLocation, InPointName) == 0x000000, "Member 'CalibrationPointComponent_GetWorldLocation::InPointName' has a wrong offset!");
-static_assert(offsetof(CalibrationPointComponent_GetWorldLocation, OutLocation) == 0x000010, "Member 'CalibrationPointComponent_GetWorldLocation::OutLocation' has a wrong offset!");
-static_assert(offsetof(CalibrationPointComponent_GetWorldLocation, ReturnValue) == 0x000028, "Member 'CalibrationPointComponent_GetWorldLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CalibrationPointComponent_GetWorldLocation;
 
 // Function CameraCalibrationCore.CalibrationPointComponent.NamespacedSubpointName
 // 0x0028 (0x0028 - 0x0000)
@@ -102,11 +87,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CalibrationPointComponent_NamespacedSubpointName) == 0x000008, "Wrong alignment on CalibrationPointComponent_NamespacedSubpointName");
-static_assert(sizeof(CalibrationPointComponent_NamespacedSubpointName) == 0x000028, "Wrong size on CalibrationPointComponent_NamespacedSubpointName");
-static_assert(offsetof(CalibrationPointComponent_NamespacedSubpointName, InSubpointName) == 0x000000, "Member 'CalibrationPointComponent_NamespacedSubpointName::InSubpointName' has a wrong offset!");
-static_assert(offsetof(CalibrationPointComponent_NamespacedSubpointName, OutNamespacedName) == 0x000010, "Member 'CalibrationPointComponent_NamespacedSubpointName::OutNamespacedName' has a wrong offset!");
-static_assert(offsetof(CalibrationPointComponent_NamespacedSubpointName, ReturnValue) == 0x000020, "Member 'CalibrationPointComponent_NamespacedSubpointName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CalibrationPointComponent_NamespacedSubpointName;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.FindOrCreateDistortionModelHandler
 // 0x0038 (0x0038 - 0x0000)
@@ -117,11 +98,7 @@ public:
 	TSubclassOf<class ULensModel>                 LensModelClass;                                    // 0x0028(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULensDistortionModelHandlerBase*        ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler");
-static_assert(sizeof(CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler) == 0x000038, "Wrong size on CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler");
-static_assert(offsetof(CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler, DistortionHandlerPicker) == 0x000000, "Member 'CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler::DistortionHandlerPicker' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler, LensModelClass) == 0x000028, "Member 'CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler::LensModelClass' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler, ReturnValue) == 0x000030, "Member 'CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_FindOrCreateDistortionModelHandler;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetDistortionModelHandlers
 // 0x0018 (0x0018 - 0x0000)
@@ -131,10 +108,7 @@ public:
 	class UCineCameraComponent*                   Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class ULensDistortionModelHandlerBase*> ReturnValue;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetDistortionModelHandlers) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetDistortionModelHandlers");
-static_assert(sizeof(CameraCalibrationSubsystem_GetDistortionModelHandlers) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetDistortionModelHandlers");
-static_assert(offsetof(CameraCalibrationSubsystem_GetDistortionModelHandlers, Component) == 0x000000, "Member 'CameraCalibrationSubsystem_GetDistortionModelHandlers::Component' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetDistortionModelHandlers, ReturnValue) == 0x000008, "Member 'CameraCalibrationSubsystem_GetDistortionModelHandlers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetDistortionModelHandlers;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.SetDefaultLensFile
 // 0x0008 (0x0008 - 0x0000)
@@ -143,9 +117,7 @@ struct CameraCalibrationSubsystem_SetDefaultLensFile final
 public:
 	class ULensFile*                              NewDefaultLensFile;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_SetDefaultLensFile) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_SetDefaultLensFile");
-static_assert(sizeof(CameraCalibrationSubsystem_SetDefaultLensFile) == 0x000008, "Wrong size on CameraCalibrationSubsystem_SetDefaultLensFile");
-static_assert(offsetof(CameraCalibrationSubsystem_SetDefaultLensFile, NewDefaultLensFile) == 0x000000, "Member 'CameraCalibrationSubsystem_SetDefaultLensFile::NewDefaultLensFile' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_SetDefaultLensFile;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.UnregisterDistortionModelHandler
 // 0x0010 (0x0010 - 0x0000)
@@ -155,10 +127,7 @@ public:
 	class UCineCameraComponent*                   Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULensDistortionModelHandlerBase*        Handler;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_UnregisterDistortionModelHandler) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_UnregisterDistortionModelHandler");
-static_assert(sizeof(CameraCalibrationSubsystem_UnregisterDistortionModelHandler) == 0x000010, "Wrong size on CameraCalibrationSubsystem_UnregisterDistortionModelHandler");
-static_assert(offsetof(CameraCalibrationSubsystem_UnregisterDistortionModelHandler, Component) == 0x000000, "Member 'CameraCalibrationSubsystem_UnregisterDistortionModelHandler::Component' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_UnregisterDistortionModelHandler, Handler) == 0x000008, "Member 'CameraCalibrationSubsystem_UnregisterDistortionModelHandler::Handler' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_UnregisterDistortionModelHandler;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.FindDistortionModelHandler
 // 0x0038 (0x0038 - 0x0000)
@@ -170,11 +139,7 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULensDistortionModelHandlerBase*        ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_FindDistortionModelHandler) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_FindDistortionModelHandler");
-static_assert(sizeof(CameraCalibrationSubsystem_FindDistortionModelHandler) == 0x000038, "Wrong size on CameraCalibrationSubsystem_FindDistortionModelHandler");
-static_assert(offsetof(CameraCalibrationSubsystem_FindDistortionModelHandler, DistortionHandlerPicker) == 0x000000, "Member 'CameraCalibrationSubsystem_FindDistortionModelHandler::DistortionHandlerPicker' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_FindDistortionModelHandler, bUpdatePicker) == 0x000028, "Member 'CameraCalibrationSubsystem_FindDistortionModelHandler::bUpdatePicker' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_FindDistortionModelHandler, ReturnValue) == 0x000030, "Member 'CameraCalibrationSubsystem_FindDistortionModelHandler::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_FindDistortionModelHandler;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraCalibrationStep
 // 0x0018 (0x0018 - 0x0000)
@@ -185,10 +150,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UCameraCalibrationStep>     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraCalibrationStep) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraCalibrationStep");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraCalibrationStep) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetCameraCalibrationStep");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraCalibrationStep, Name_0) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraCalibrationStep::Name_0' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraCalibrationStep, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetCameraCalibrationStep::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraCalibrationStep;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraCalibrationSteps
 // 0x0010 (0x0010 - 0x0000)
@@ -197,9 +159,7 @@ struct CameraCalibrationSubsystem_GetCameraCalibrationSteps final
 public:
 	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraCalibrationSteps) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraCalibrationSteps");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraCalibrationSteps) == 0x000010, "Wrong size on CameraCalibrationSubsystem_GetCameraCalibrationSteps");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraCalibrationSteps, ReturnValue) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraCalibrationSteps::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraCalibrationSteps;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraImageCenterAlgo
 // 0x0018 (0x0018 - 0x0000)
@@ -210,10 +170,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UCameraImageCenterAlgo>     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraImageCenterAlgo) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraImageCenterAlgo");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraImageCenterAlgo) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetCameraImageCenterAlgo");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraImageCenterAlgo, Name_0) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraImageCenterAlgo::Name_0' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraImageCenterAlgo, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetCameraImageCenterAlgo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraImageCenterAlgo;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraImageCenterAlgos
 // 0x0010 (0x0010 - 0x0000)
@@ -222,9 +179,7 @@ struct CameraCalibrationSubsystem_GetCameraImageCenterAlgos final
 public:
 	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraImageCenterAlgos) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraImageCenterAlgos");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraImageCenterAlgos) == 0x000010, "Wrong size on CameraCalibrationSubsystem_GetCameraImageCenterAlgos");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraImageCenterAlgos, ReturnValue) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraImageCenterAlgos::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraImageCenterAlgos;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraNodalOffsetAlgo
 // 0x0018 (0x0018 - 0x0000)
@@ -235,10 +190,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UCameraNodalOffsetAlgo>     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo, Name_0) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo::Name_0' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraNodalOffsetAlgo;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetCameraNodalOffsetAlgos
 // 0x0010 (0x0010 - 0x0000)
@@ -247,9 +199,7 @@ struct CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos final
 public:
 	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos");
-static_assert(sizeof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos) == 0x000010, "Wrong size on CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos");
-static_assert(offsetof(CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos, ReturnValue) == 0x000000, "Member 'CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetCameraNodalOffsetAlgos;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetDefaultLensFile
 // 0x0008 (0x0008 - 0x0000)
@@ -258,9 +208,7 @@ struct CameraCalibrationSubsystem_GetDefaultLensFile final
 public:
 	class ULensFile*                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetDefaultLensFile) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetDefaultLensFile");
-static_assert(sizeof(CameraCalibrationSubsystem_GetDefaultLensFile) == 0x000008, "Wrong size on CameraCalibrationSubsystem_GetDefaultLensFile");
-static_assert(offsetof(CameraCalibrationSubsystem_GetDefaultLensFile, ReturnValue) == 0x000000, "Member 'CameraCalibrationSubsystem_GetDefaultLensFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetDefaultLensFile;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetLensFile
 // 0x0018 (0x0018 - 0x0000)
@@ -270,10 +218,7 @@ public:
 	struct FLensFilePicker                        Picker;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class ULensFile*                              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetLensFile) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetLensFile");
-static_assert(sizeof(CameraCalibrationSubsystem_GetLensFile) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetLensFile");
-static_assert(offsetof(CameraCalibrationSubsystem_GetLensFile, Picker) == 0x000000, "Member 'CameraCalibrationSubsystem_GetLensFile::Picker' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetLensFile, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetLensFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetLensFile;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetOverlayMaterial
 // 0x0018 (0x0018 - 0x0000)
@@ -284,10 +229,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetOverlayMaterial) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetOverlayMaterial");
-static_assert(sizeof(CameraCalibrationSubsystem_GetOverlayMaterial) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetOverlayMaterial");
-static_assert(offsetof(CameraCalibrationSubsystem_GetOverlayMaterial, OverlayName) == 0x000000, "Member 'CameraCalibrationSubsystem_GetOverlayMaterial::OverlayName' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetOverlayMaterial, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetOverlayMaterial::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetOverlayMaterial;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetOverlayMaterialNames
 // 0x0010 (0x0010 - 0x0000)
@@ -296,9 +238,7 @@ struct CameraCalibrationSubsystem_GetOverlayMaterialNames final
 public:
 	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetOverlayMaterialNames) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetOverlayMaterialNames");
-static_assert(sizeof(CameraCalibrationSubsystem_GetOverlayMaterialNames) == 0x000010, "Wrong size on CameraCalibrationSubsystem_GetOverlayMaterialNames");
-static_assert(offsetof(CameraCalibrationSubsystem_GetOverlayMaterialNames, ReturnValue) == 0x000000, "Member 'CameraCalibrationSubsystem_GetOverlayMaterialNames::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetOverlayMaterialNames;
 
 // Function CameraCalibrationCore.CameraCalibrationSubsystem.GetRegisteredLensModel
 // 0x0018 (0x0018 - 0x0000)
@@ -309,10 +249,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ULensModel>                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CameraCalibrationSubsystem_GetRegisteredLensModel) == 0x000008, "Wrong alignment on CameraCalibrationSubsystem_GetRegisteredLensModel");
-static_assert(sizeof(CameraCalibrationSubsystem_GetRegisteredLensModel) == 0x000018, "Wrong size on CameraCalibrationSubsystem_GetRegisteredLensModel");
-static_assert(offsetof(CameraCalibrationSubsystem_GetRegisteredLensModel, ModelName) == 0x000000, "Member 'CameraCalibrationSubsystem_GetRegisteredLensModel::ModelName' has a wrong offset!");
-static_assert(offsetof(CameraCalibrationSubsystem_GetRegisteredLensModel, ReturnValue) == 0x000010, "Member 'CameraCalibrationSubsystem_GetRegisteredLensModel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CameraCalibrationSubsystem_GetRegisteredLensModel;
 
 // Function CameraCalibrationCore.LensComponent.ApplyNodalOffset
 // 0x0018 (0x0018 - 0x0000)
@@ -326,12 +263,7 @@ public:
 	float                                         ManualZoomInput;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensComponent_ApplyNodalOffset) == 0x000008, "Wrong alignment on LensComponent_ApplyNodalOffset");
-static_assert(sizeof(LensComponent_ApplyNodalOffset) == 0x000018, "Wrong size on LensComponent_ApplyNodalOffset");
-static_assert(offsetof(LensComponent_ApplyNodalOffset, ComponentToOffset) == 0x000000, "Member 'LensComponent_ApplyNodalOffset::ComponentToOffset' has a wrong offset!");
-static_assert(offsetof(LensComponent_ApplyNodalOffset, bUseManualInputs) == 0x000008, "Member 'LensComponent_ApplyNodalOffset::bUseManualInputs' has a wrong offset!");
-static_assert(offsetof(LensComponent_ApplyNodalOffset, ManualFocusInput) == 0x00000C, "Member 'LensComponent_ApplyNodalOffset::ManualFocusInput' has a wrong offset!");
-static_assert(offsetof(LensComponent_ApplyNodalOffset, ManualZoomInput) == 0x000010, "Member 'LensComponent_ApplyNodalOffset::ManualZoomInput' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_ApplyNodalOffset;
 
 // Function CameraCalibrationCore.LensComponent.SetApplyDistortion
 // 0x0001 (0x0001 - 0x0000)
@@ -340,9 +272,7 @@ struct LensComponent_SetApplyDistortion final
 public:
 	bool                                          bApply;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetApplyDistortion) == 0x000001, "Wrong alignment on LensComponent_SetApplyDistortion");
-static_assert(sizeof(LensComponent_SetApplyDistortion) == 0x000001, "Wrong size on LensComponent_SetApplyDistortion");
-static_assert(offsetof(LensComponent_SetApplyDistortion, bApply) == 0x000000, "Member 'LensComponent_SetApplyDistortion::bApply' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetApplyDistortion;
 
 // Function CameraCalibrationCore.LensComponent.SetApplyNodalOffsetOnTick
 // 0x0001 (0x0001 - 0x0000)
@@ -351,9 +281,7 @@ struct LensComponent_SetApplyNodalOffsetOnTick final
 public:
 	bool                                          bApplyNodalOffset;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetApplyNodalOffsetOnTick) == 0x000001, "Wrong alignment on LensComponent_SetApplyNodalOffsetOnTick");
-static_assert(sizeof(LensComponent_SetApplyNodalOffsetOnTick) == 0x000001, "Wrong size on LensComponent_SetApplyNodalOffsetOnTick");
-static_assert(offsetof(LensComponent_SetApplyNodalOffsetOnTick, bApplyNodalOffset) == 0x000000, "Member 'LensComponent_SetApplyNodalOffsetOnTick::bApplyNodalOffset' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetApplyNodalOffsetOnTick;
 
 // Function CameraCalibrationCore.LensComponent.SetCroppedFilmback
 // 0x000C (0x000C - 0x0000)
@@ -362,9 +290,7 @@ struct LensComponent_SetCroppedFilmback final
 public:
 	struct FCameraFilmbackSettings                Filmback;                                          // 0x0000(0x000C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetCroppedFilmback) == 0x000004, "Wrong alignment on LensComponent_SetCroppedFilmback");
-static_assert(sizeof(LensComponent_SetCroppedFilmback) == 0x00000C, "Wrong size on LensComponent_SetCroppedFilmback");
-static_assert(offsetof(LensComponent_SetCroppedFilmback, Filmback) == 0x000000, "Member 'LensComponent_SetCroppedFilmback::Filmback' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetCroppedFilmback;
 
 // Function CameraCalibrationCore.LensComponent.SetDistortionSource
 // 0x0001 (0x0001 - 0x0000)
@@ -373,9 +299,7 @@ struct LensComponent_SetDistortionSource final
 public:
 	EDistortionSource                             Source;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetDistortionSource) == 0x000001, "Wrong alignment on LensComponent_SetDistortionSource");
-static_assert(sizeof(LensComponent_SetDistortionSource) == 0x000001, "Wrong size on LensComponent_SetDistortionSource");
-static_assert(offsetof(LensComponent_SetDistortionSource, Source) == 0x000000, "Member 'LensComponent_SetDistortionSource::Source' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetDistortionSource;
 
 // Function CameraCalibrationCore.LensComponent.SetDistortionState
 // 0x0030 (0x0030 - 0x0000)
@@ -384,9 +308,7 @@ struct LensComponent_SetDistortionState final
 public:
 	struct FLensDistortionState                   State;                                             // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetDistortionState) == 0x000008, "Wrong alignment on LensComponent_SetDistortionState");
-static_assert(sizeof(LensComponent_SetDistortionState) == 0x000030, "Wrong size on LensComponent_SetDistortionState");
-static_assert(offsetof(LensComponent_SetDistortionState, State) == 0x000000, "Member 'LensComponent_SetDistortionState::State' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetDistortionState;
 
 // Function CameraCalibrationCore.LensComponent.SetFilmbackOverrideSetting
 // 0x0001 (0x0001 - 0x0000)
@@ -395,9 +317,7 @@ struct LensComponent_SetFilmbackOverrideSetting final
 public:
 	EFilmbackOverrideSource                       Setting;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetFilmbackOverrideSetting) == 0x000001, "Wrong alignment on LensComponent_SetFilmbackOverrideSetting");
-static_assert(sizeof(LensComponent_SetFilmbackOverrideSetting) == 0x000001, "Wrong size on LensComponent_SetFilmbackOverrideSetting");
-static_assert(offsetof(LensComponent_SetFilmbackOverrideSetting, Setting) == 0x000000, "Member 'LensComponent_SetFilmbackOverrideSetting::Setting' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetFilmbackOverrideSetting;
 
 // Function CameraCalibrationCore.LensComponent.SetFIZEvaluationMode
 // 0x0001 (0x0001 - 0x0000)
@@ -406,9 +326,7 @@ struct LensComponent_SetFIZEvaluationMode final
 public:
 	EFIZEvaluationMode                            Mode;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetFIZEvaluationMode) == 0x000001, "Wrong alignment on LensComponent_SetFIZEvaluationMode");
-static_assert(sizeof(LensComponent_SetFIZEvaluationMode) == 0x000001, "Wrong size on LensComponent_SetFIZEvaluationMode");
-static_assert(offsetof(LensComponent_SetFIZEvaluationMode, Mode) == 0x000000, "Member 'LensComponent_SetFIZEvaluationMode::Mode' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetFIZEvaluationMode;
 
 // Function CameraCalibrationCore.LensComponent.SetLensFile
 // 0x0008 (0x0008 - 0x0000)
@@ -417,9 +335,7 @@ struct LensComponent_SetLensFile final
 public:
 	class ULensFile*                              LensFile;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetLensFile) == 0x000008, "Wrong alignment on LensComponent_SetLensFile");
-static_assert(sizeof(LensComponent_SetLensFile) == 0x000008, "Wrong size on LensComponent_SetLensFile");
-static_assert(offsetof(LensComponent_SetLensFile, LensFile) == 0x000000, "Member 'LensComponent_SetLensFile::LensFile' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetLensFile;
 
 // Function CameraCalibrationCore.LensComponent.SetLensFilePicker
 // 0x0010 (0x0010 - 0x0000)
@@ -428,9 +344,7 @@ struct LensComponent_SetLensFilePicker final
 public:
 	struct FLensFilePicker                        LensFile;                                          // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetLensFilePicker) == 0x000008, "Wrong alignment on LensComponent_SetLensFilePicker");
-static_assert(sizeof(LensComponent_SetLensFilePicker) == 0x000010, "Wrong size on LensComponent_SetLensFilePicker");
-static_assert(offsetof(LensComponent_SetLensFilePicker, LensFile) == 0x000000, "Member 'LensComponent_SetLensFilePicker::LensFile' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetLensFilePicker;
 
 // Function CameraCalibrationCore.LensComponent.SetLensModel
 // 0x0008 (0x0008 - 0x0000)
@@ -439,9 +353,7 @@ struct LensComponent_SetLensModel final
 public:
 	TSubclassOf<class ULensModel>                 Model;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetLensModel) == 0x000008, "Wrong alignment on LensComponent_SetLensModel");
-static_assert(sizeof(LensComponent_SetLensModel) == 0x000008, "Wrong size on LensComponent_SetLensModel");
-static_assert(offsetof(LensComponent_SetLensModel, Model) == 0x000000, "Member 'LensComponent_SetLensModel::Model' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetLensModel;
 
 // Function CameraCalibrationCore.LensComponent.SetOverscanMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -450,9 +362,7 @@ struct LensComponent_SetOverscanMultiplier final
 public:
 	float                                         Multiplier;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_SetOverscanMultiplier) == 0x000004, "Wrong alignment on LensComponent_SetOverscanMultiplier");
-static_assert(sizeof(LensComponent_SetOverscanMultiplier) == 0x000004, "Wrong size on LensComponent_SetOverscanMultiplier");
-static_assert(offsetof(LensComponent_SetOverscanMultiplier, Multiplier) == 0x000000, "Member 'LensComponent_SetOverscanMultiplier::Multiplier' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_SetOverscanMultiplier;
 
 // Function CameraCalibrationCore.LensComponent.GetCroppedFilmback
 // 0x000C (0x000C - 0x0000)
@@ -461,9 +371,7 @@ struct LensComponent_GetCroppedFilmback final
 public:
 	struct FCameraFilmbackSettings                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetCroppedFilmback) == 0x000004, "Wrong alignment on LensComponent_GetCroppedFilmback");
-static_assert(sizeof(LensComponent_GetCroppedFilmback) == 0x00000C, "Wrong size on LensComponent_GetCroppedFilmback");
-static_assert(offsetof(LensComponent_GetCroppedFilmback, ReturnValue) == 0x000000, "Member 'LensComponent_GetCroppedFilmback::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetCroppedFilmback;
 
 // Function CameraCalibrationCore.LensComponent.GetDistortionSource
 // 0x0001 (0x0001 - 0x0000)
@@ -472,9 +380,7 @@ struct LensComponent_GetDistortionSource final
 public:
 	EDistortionSource                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetDistortionSource) == 0x000001, "Wrong alignment on LensComponent_GetDistortionSource");
-static_assert(sizeof(LensComponent_GetDistortionSource) == 0x000001, "Wrong size on LensComponent_GetDistortionSource");
-static_assert(offsetof(LensComponent_GetDistortionSource, ReturnValue) == 0x000000, "Member 'LensComponent_GetDistortionSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetDistortionSource;
 
 // Function CameraCalibrationCore.LensComponent.GetDistortionState
 // 0x0030 (0x0030 - 0x0000)
@@ -483,9 +389,7 @@ struct LensComponent_GetDistortionState final
 public:
 	struct FLensDistortionState                   ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetDistortionState) == 0x000008, "Wrong alignment on LensComponent_GetDistortionState");
-static_assert(sizeof(LensComponent_GetDistortionState) == 0x000030, "Wrong size on LensComponent_GetDistortionState");
-static_assert(offsetof(LensComponent_GetDistortionState, ReturnValue) == 0x000000, "Member 'LensComponent_GetDistortionState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetDistortionState;
 
 // Function CameraCalibrationCore.LensComponent.GetFilmbackOverrideSetting
 // 0x0001 (0x0001 - 0x0000)
@@ -494,9 +398,7 @@ struct LensComponent_GetFilmbackOverrideSetting final
 public:
 	EFilmbackOverrideSource                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetFilmbackOverrideSetting) == 0x000001, "Wrong alignment on LensComponent_GetFilmbackOverrideSetting");
-static_assert(sizeof(LensComponent_GetFilmbackOverrideSetting) == 0x000001, "Wrong size on LensComponent_GetFilmbackOverrideSetting");
-static_assert(offsetof(LensComponent_GetFilmbackOverrideSetting, ReturnValue) == 0x000000, "Member 'LensComponent_GetFilmbackOverrideSetting::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetFilmbackOverrideSetting;
 
 // Function CameraCalibrationCore.LensComponent.GetFIZEvaluationMode
 // 0x0001 (0x0001 - 0x0000)
@@ -505,9 +407,7 @@ struct LensComponent_GetFIZEvaluationMode final
 public:
 	EFIZEvaluationMode                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetFIZEvaluationMode) == 0x000001, "Wrong alignment on LensComponent_GetFIZEvaluationMode");
-static_assert(sizeof(LensComponent_GetFIZEvaluationMode) == 0x000001, "Wrong size on LensComponent_GetFIZEvaluationMode");
-static_assert(offsetof(LensComponent_GetFIZEvaluationMode, ReturnValue) == 0x000000, "Member 'LensComponent_GetFIZEvaluationMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetFIZEvaluationMode;
 
 // Function CameraCalibrationCore.LensComponent.GetLensFile
 // 0x0008 (0x0008 - 0x0000)
@@ -516,9 +416,7 @@ struct LensComponent_GetLensFile final
 public:
 	class ULensFile*                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetLensFile) == 0x000008, "Wrong alignment on LensComponent_GetLensFile");
-static_assert(sizeof(LensComponent_GetLensFile) == 0x000008, "Wrong size on LensComponent_GetLensFile");
-static_assert(offsetof(LensComponent_GetLensFile, ReturnValue) == 0x000000, "Member 'LensComponent_GetLensFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetLensFile;
 
 // Function CameraCalibrationCore.LensComponent.GetLensFileEvaluationInputs
 // 0x001C (0x001C - 0x0000)
@@ -527,9 +425,7 @@ struct LensComponent_GetLensFileEvaluationInputs final
 public:
 	struct FLensFileEvaluationInputs              ReturnValue;                                       // 0x0000(0x001C)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetLensFileEvaluationInputs) == 0x000004, "Wrong alignment on LensComponent_GetLensFileEvaluationInputs");
-static_assert(sizeof(LensComponent_GetLensFileEvaluationInputs) == 0x00001C, "Wrong size on LensComponent_GetLensFileEvaluationInputs");
-static_assert(offsetof(LensComponent_GetLensFileEvaluationInputs, ReturnValue) == 0x000000, "Member 'LensComponent_GetLensFileEvaluationInputs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetLensFileEvaluationInputs;
 
 // Function CameraCalibrationCore.LensComponent.GetLensFilePicker
 // 0x0010 (0x0010 - 0x0000)
@@ -538,9 +434,7 @@ struct LensComponent_GetLensFilePicker final
 public:
 	struct FLensFilePicker                        ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetLensFilePicker) == 0x000008, "Wrong alignment on LensComponent_GetLensFilePicker");
-static_assert(sizeof(LensComponent_GetLensFilePicker) == 0x000010, "Wrong size on LensComponent_GetLensFilePicker");
-static_assert(offsetof(LensComponent_GetLensFilePicker, ReturnValue) == 0x000000, "Member 'LensComponent_GetLensFilePicker::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetLensFilePicker;
 
 // Function CameraCalibrationCore.LensComponent.GetLensModel
 // 0x0008 (0x0008 - 0x0000)
@@ -549,9 +443,7 @@ struct LensComponent_GetLensModel final
 public:
 	TSubclassOf<class ULensModel>                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetLensModel) == 0x000008, "Wrong alignment on LensComponent_GetLensModel");
-static_assert(sizeof(LensComponent_GetLensModel) == 0x000008, "Wrong size on LensComponent_GetLensModel");
-static_assert(offsetof(LensComponent_GetLensModel, ReturnValue) == 0x000000, "Member 'LensComponent_GetLensModel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetLensModel;
 
 // Function CameraCalibrationCore.LensComponent.GetOriginalFocalLength
 // 0x0004 (0x0004 - 0x0000)
@@ -560,9 +452,7 @@ struct LensComponent_GetOriginalFocalLength final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetOriginalFocalLength) == 0x000004, "Wrong alignment on LensComponent_GetOriginalFocalLength");
-static_assert(sizeof(LensComponent_GetOriginalFocalLength) == 0x000004, "Wrong size on LensComponent_GetOriginalFocalLength");
-static_assert(offsetof(LensComponent_GetOriginalFocalLength, ReturnValue) == 0x000000, "Member 'LensComponent_GetOriginalFocalLength::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetOriginalFocalLength;
 
 // Function CameraCalibrationCore.LensComponent.GetOverscanMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -571,9 +461,7 @@ struct LensComponent_GetOverscanMultiplier final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_GetOverscanMultiplier) == 0x000004, "Wrong alignment on LensComponent_GetOverscanMultiplier");
-static_assert(sizeof(LensComponent_GetOverscanMultiplier) == 0x000004, "Wrong size on LensComponent_GetOverscanMultiplier");
-static_assert(offsetof(LensComponent_GetOverscanMultiplier, ReturnValue) == 0x000000, "Member 'LensComponent_GetOverscanMultiplier::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_GetOverscanMultiplier;
 
 // Function CameraCalibrationCore.LensComponent.ShouldApplyDistortion
 // 0x0001 (0x0001 - 0x0000)
@@ -582,9 +470,7 @@ struct LensComponent_ShouldApplyDistortion final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_ShouldApplyDistortion) == 0x000001, "Wrong alignment on LensComponent_ShouldApplyDistortion");
-static_assert(sizeof(LensComponent_ShouldApplyDistortion) == 0x000001, "Wrong size on LensComponent_ShouldApplyDistortion");
-static_assert(offsetof(LensComponent_ShouldApplyDistortion, ReturnValue) == 0x000000, "Member 'LensComponent_ShouldApplyDistortion::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_ShouldApplyDistortion;
 
 // Function CameraCalibrationCore.LensComponent.ShouldApplyNodalOffsetOnTick
 // 0x0001 (0x0001 - 0x0000)
@@ -593,9 +479,7 @@ struct LensComponent_ShouldApplyNodalOffsetOnTick final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_ShouldApplyNodalOffsetOnTick) == 0x000001, "Wrong alignment on LensComponent_ShouldApplyNodalOffsetOnTick");
-static_assert(sizeof(LensComponent_ShouldApplyNodalOffsetOnTick) == 0x000001, "Wrong size on LensComponent_ShouldApplyNodalOffsetOnTick");
-static_assert(offsetof(LensComponent_ShouldApplyNodalOffsetOnTick, ReturnValue) == 0x000000, "Member 'LensComponent_ShouldApplyNodalOffsetOnTick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_ShouldApplyNodalOffsetOnTick;
 
 // Function CameraCalibrationCore.LensComponent.WasDistortionEvaluated
 // 0x0001 (0x0001 - 0x0000)
@@ -604,9 +488,7 @@ struct LensComponent_WasDistortionEvaluated final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_WasDistortionEvaluated) == 0x000001, "Wrong alignment on LensComponent_WasDistortionEvaluated");
-static_assert(sizeof(LensComponent_WasDistortionEvaluated) == 0x000001, "Wrong size on LensComponent_WasDistortionEvaluated");
-static_assert(offsetof(LensComponent_WasDistortionEvaluated, ReturnValue) == 0x000000, "Member 'LensComponent_WasDistortionEvaluated::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_WasDistortionEvaluated;
 
 // Function CameraCalibrationCore.LensComponent.WasNodalOffsetAppliedThisTick
 // 0x0001 (0x0001 - 0x0000)
@@ -615,9 +497,7 @@ struct LensComponent_WasNodalOffsetAppliedThisTick final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensComponent_WasNodalOffsetAppliedThisTick) == 0x000001, "Wrong alignment on LensComponent_WasNodalOffsetAppliedThisTick");
-static_assert(sizeof(LensComponent_WasNodalOffsetAppliedThisTick) == 0x000001, "Wrong size on LensComponent_WasNodalOffsetAppliedThisTick");
-static_assert(offsetof(LensComponent_WasNodalOffsetAppliedThisTick, ReturnValue) == 0x000000, "Member 'LensComponent_WasNodalOffsetAppliedThisTick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensComponent_WasNodalOffsetAppliedThisTick;
 
 // Function CameraCalibrationCore.LensFile.AddDistortionPoint
 // 0x0028 (0x0028 - 0x0000)
@@ -629,12 +509,7 @@ public:
 	struct FDistortionInfo                        NewPoint;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FFocalLengthInfo                       NewFocalLength;                                    // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_AddDistortionPoint) == 0x000008, "Wrong alignment on LensFile_AddDistortionPoint");
-static_assert(sizeof(LensFile_AddDistortionPoint) == 0x000028, "Wrong size on LensFile_AddDistortionPoint");
-static_assert(offsetof(LensFile_AddDistortionPoint, NewFocus) == 0x000000, "Member 'LensFile_AddDistortionPoint::NewFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_AddDistortionPoint, NewZoom) == 0x000004, "Member 'LensFile_AddDistortionPoint::NewZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_AddDistortionPoint, NewPoint) == 0x000008, "Member 'LensFile_AddDistortionPoint::NewPoint' has a wrong offset!");
-static_assert(offsetof(LensFile_AddDistortionPoint, NewFocalLength) == 0x000018, "Member 'LensFile_AddDistortionPoint::NewFocalLength' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_AddDistortionPoint;
 
 // Function CameraCalibrationCore.LensFile.AddFocalLengthPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -645,11 +520,7 @@ public:
 	float                                         NewZoom;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFocalLengthInfo                       NewFocalLength;                                    // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_AddFocalLengthPoint) == 0x000008, "Wrong alignment on LensFile_AddFocalLengthPoint");
-static_assert(sizeof(LensFile_AddFocalLengthPoint) == 0x000018, "Wrong size on LensFile_AddFocalLengthPoint");
-static_assert(offsetof(LensFile_AddFocalLengthPoint, NewFocus) == 0x000000, "Member 'LensFile_AddFocalLengthPoint::NewFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_AddFocalLengthPoint, NewZoom) == 0x000004, "Member 'LensFile_AddFocalLengthPoint::NewZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_AddFocalLengthPoint, NewFocalLength) == 0x000008, "Member 'LensFile_AddFocalLengthPoint::NewFocalLength' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_AddFocalLengthPoint;
 
 // Function CameraCalibrationCore.LensFile.AddImageCenterPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -660,11 +531,7 @@ public:
 	float                                         NewZoom;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FImageCenterInfo                       NewPoint;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_AddImageCenterPoint) == 0x000008, "Wrong alignment on LensFile_AddImageCenterPoint");
-static_assert(sizeof(LensFile_AddImageCenterPoint) == 0x000018, "Wrong size on LensFile_AddImageCenterPoint");
-static_assert(offsetof(LensFile_AddImageCenterPoint, NewFocus) == 0x000000, "Member 'LensFile_AddImageCenterPoint::NewFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_AddImageCenterPoint, NewZoom) == 0x000004, "Member 'LensFile_AddImageCenterPoint::NewZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_AddImageCenterPoint, NewPoint) == 0x000008, "Member 'LensFile_AddImageCenterPoint::NewPoint' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_AddImageCenterPoint;
 
 // Function CameraCalibrationCore.LensFile.AddNodalOffsetPoint
 // 0x0050 (0x0050 - 0x0000)
@@ -676,11 +543,7 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNodalPointOffset                      NewPoint;                                          // 0x0010(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_AddNodalOffsetPoint) == 0x000010, "Wrong alignment on LensFile_AddNodalOffsetPoint");
-static_assert(sizeof(LensFile_AddNodalOffsetPoint) == 0x000050, "Wrong size on LensFile_AddNodalOffsetPoint");
-static_assert(offsetof(LensFile_AddNodalOffsetPoint, NewFocus) == 0x000000, "Member 'LensFile_AddNodalOffsetPoint::NewFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_AddNodalOffsetPoint, NewZoom) == 0x000004, "Member 'LensFile_AddNodalOffsetPoint::NewZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_AddNodalOffsetPoint, NewPoint) == 0x000010, "Member 'LensFile_AddNodalOffsetPoint::NewPoint' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_AddNodalOffsetPoint;
 
 // Function CameraCalibrationCore.LensFile.AddSTMapPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -691,11 +554,7 @@ public:
 	float                                         NewZoom;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSTMapInfo                             NewPoint;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_AddSTMapPoint) == 0x000008, "Wrong alignment on LensFile_AddSTMapPoint");
-static_assert(sizeof(LensFile_AddSTMapPoint) == 0x000018, "Wrong size on LensFile_AddSTMapPoint");
-static_assert(offsetof(LensFile_AddSTMapPoint, NewFocus) == 0x000000, "Member 'LensFile_AddSTMapPoint::NewFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_AddSTMapPoint, NewZoom) == 0x000004, "Member 'LensFile_AddSTMapPoint::NewZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_AddSTMapPoint, NewPoint) == 0x000008, "Member 'LensFile_AddSTMapPoint::NewPoint' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_AddSTMapPoint;
 
 // Function CameraCalibrationCore.LensFile.ClearData
 // 0x0001 (0x0001 - 0x0000)
@@ -704,9 +563,7 @@ struct LensFile_ClearData final
 public:
 	ELensDataCategory                             InDataCategory;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_ClearData) == 0x000001, "Wrong alignment on LensFile_ClearData");
-static_assert(sizeof(LensFile_ClearData) == 0x000001, "Wrong size on LensFile_ClearData");
-static_assert(offsetof(LensFile_ClearData, InDataCategory) == 0x000000, "Member 'LensFile_ClearData::InDataCategory' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_ClearData;
 
 // Function CameraCalibrationCore.LensFile.RemoveFocusPoint
 // 0x0008 (0x0008 - 0x0000)
@@ -717,10 +574,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         InFocus;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_RemoveFocusPoint) == 0x000004, "Wrong alignment on LensFile_RemoveFocusPoint");
-static_assert(sizeof(LensFile_RemoveFocusPoint) == 0x000008, "Wrong size on LensFile_RemoveFocusPoint");
-static_assert(offsetof(LensFile_RemoveFocusPoint, InDataCategory) == 0x000000, "Member 'LensFile_RemoveFocusPoint::InDataCategory' has a wrong offset!");
-static_assert(offsetof(LensFile_RemoveFocusPoint, InFocus) == 0x000004, "Member 'LensFile_RemoveFocusPoint::InFocus' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_RemoveFocusPoint;
 
 // Function CameraCalibrationCore.LensFile.RemoveZoomPoint
 // 0x000C (0x000C - 0x0000)
@@ -732,11 +586,7 @@ public:
 	float                                         InFocus;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InZoom;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_RemoveZoomPoint) == 0x000004, "Wrong alignment on LensFile_RemoveZoomPoint");
-static_assert(sizeof(LensFile_RemoveZoomPoint) == 0x00000C, "Wrong size on LensFile_RemoveZoomPoint");
-static_assert(offsetof(LensFile_RemoveZoomPoint, InDataCategory) == 0x000000, "Member 'LensFile_RemoveZoomPoint::InDataCategory' has a wrong offset!");
-static_assert(offsetof(LensFile_RemoveZoomPoint, InFocus) == 0x000004, "Member 'LensFile_RemoveZoomPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_RemoveZoomPoint, InZoom) == 0x000008, "Member 'LensFile_RemoveZoomPoint::InZoom' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_RemoveZoomPoint;
 
 // Function CameraCalibrationCore.LensFile.EvaluateDistortionData
 // 0x0028 (0x0028 - 0x0000)
@@ -750,13 +600,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_EvaluateDistortionData) == 0x000008, "Wrong alignment on LensFile_EvaluateDistortionData");
-static_assert(sizeof(LensFile_EvaluateDistortionData) == 0x000028, "Wrong size on LensFile_EvaluateDistortionData");
-static_assert(offsetof(LensFile_EvaluateDistortionData, InFocus) == 0x000000, "Member 'LensFile_EvaluateDistortionData::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionData, InZoom) == 0x000004, "Member 'LensFile_EvaluateDistortionData::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionData, InFilmback) == 0x000008, "Member 'LensFile_EvaluateDistortionData::InFilmback' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionData, InLensHandler) == 0x000018, "Member 'LensFile_EvaluateDistortionData::InLensHandler' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionData, ReturnValue) == 0x000020, "Member 'LensFile_EvaluateDistortionData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateDistortionData;
 
 // Function CameraCalibrationCore.LensFile.EvaluateDistortionParameters
 // 0x0020 (0x0020 - 0x0000)
@@ -769,12 +613,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_EvaluateDistortionParameters) == 0x000008, "Wrong alignment on LensFile_EvaluateDistortionParameters");
-static_assert(sizeof(LensFile_EvaluateDistortionParameters) == 0x000020, "Wrong size on LensFile_EvaluateDistortionParameters");
-static_assert(offsetof(LensFile_EvaluateDistortionParameters, InFocus) == 0x000000, "Member 'LensFile_EvaluateDistortionParameters::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionParameters, InZoom) == 0x000004, "Member 'LensFile_EvaluateDistortionParameters::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionParameters, OutEvaluatedValue) == 0x000008, "Member 'LensFile_EvaluateDistortionParameters::OutEvaluatedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateDistortionParameters, ReturnValue) == 0x000018, "Member 'LensFile_EvaluateDistortionParameters::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateDistortionParameters;
 
 // Function CameraCalibrationCore.LensFile.EvaluateFocalLength
 // 0x0020 (0x0020 - 0x0000)
@@ -787,12 +626,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_EvaluateFocalLength) == 0x000008, "Wrong alignment on LensFile_EvaluateFocalLength");
-static_assert(sizeof(LensFile_EvaluateFocalLength) == 0x000020, "Wrong size on LensFile_EvaluateFocalLength");
-static_assert(offsetof(LensFile_EvaluateFocalLength, InFocus) == 0x000000, "Member 'LensFile_EvaluateFocalLength::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateFocalLength, InZoom) == 0x000004, "Member 'LensFile_EvaluateFocalLength::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateFocalLength, OutEvaluatedValue) == 0x000008, "Member 'LensFile_EvaluateFocalLength::OutEvaluatedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateFocalLength, ReturnValue) == 0x000018, "Member 'LensFile_EvaluateFocalLength::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateFocalLength;
 
 // Function CameraCalibrationCore.LensFile.EvaluateImageCenterParameters
 // 0x0020 (0x0020 - 0x0000)
@@ -805,12 +639,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_EvaluateImageCenterParameters) == 0x000008, "Wrong alignment on LensFile_EvaluateImageCenterParameters");
-static_assert(sizeof(LensFile_EvaluateImageCenterParameters) == 0x000020, "Wrong size on LensFile_EvaluateImageCenterParameters");
-static_assert(offsetof(LensFile_EvaluateImageCenterParameters, InFocus) == 0x000000, "Member 'LensFile_EvaluateImageCenterParameters::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateImageCenterParameters, InZoom) == 0x000004, "Member 'LensFile_EvaluateImageCenterParameters::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateImageCenterParameters, OutEvaluatedValue) == 0x000008, "Member 'LensFile_EvaluateImageCenterParameters::OutEvaluatedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateImageCenterParameters, ReturnValue) == 0x000018, "Member 'LensFile_EvaluateImageCenterParameters::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateImageCenterParameters;
 
 // Function CameraCalibrationCore.LensFile.EvaluateNodalPointOffset
 // 0x0060 (0x0060 - 0x0000)
@@ -824,12 +653,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_EvaluateNodalPointOffset) == 0x000010, "Wrong alignment on LensFile_EvaluateNodalPointOffset");
-static_assert(sizeof(LensFile_EvaluateNodalPointOffset) == 0x000060, "Wrong size on LensFile_EvaluateNodalPointOffset");
-static_assert(offsetof(LensFile_EvaluateNodalPointOffset, InFocus) == 0x000000, "Member 'LensFile_EvaluateNodalPointOffset::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateNodalPointOffset, InZoom) == 0x000004, "Member 'LensFile_EvaluateNodalPointOffset::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateNodalPointOffset, OutEvaluatedValue) == 0x000010, "Member 'LensFile_EvaluateNodalPointOffset::OutEvaluatedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateNodalPointOffset, ReturnValue) == 0x000050, "Member 'LensFile_EvaluateNodalPointOffset::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateNodalPointOffset;
 
 // Function CameraCalibrationCore.LensFile.EvaluateNormalizedFocus
 // 0x0008 (0x0008 - 0x0000)
@@ -839,10 +663,7 @@ public:
 	float                                         InNormalizedValue;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_EvaluateNormalizedFocus) == 0x000004, "Wrong alignment on LensFile_EvaluateNormalizedFocus");
-static_assert(sizeof(LensFile_EvaluateNormalizedFocus) == 0x000008, "Wrong size on LensFile_EvaluateNormalizedFocus");
-static_assert(offsetof(LensFile_EvaluateNormalizedFocus, InNormalizedValue) == 0x000000, "Member 'LensFile_EvaluateNormalizedFocus::InNormalizedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateNormalizedFocus, ReturnValue) == 0x000004, "Member 'LensFile_EvaluateNormalizedFocus::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateNormalizedFocus;
 
 // Function CameraCalibrationCore.LensFile.EvaluateNormalizedIris
 // 0x0008 (0x0008 - 0x0000)
@@ -852,10 +673,7 @@ public:
 	float                                         InNormalizedValue;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_EvaluateNormalizedIris) == 0x000004, "Wrong alignment on LensFile_EvaluateNormalizedIris");
-static_assert(sizeof(LensFile_EvaluateNormalizedIris) == 0x000008, "Wrong size on LensFile_EvaluateNormalizedIris");
-static_assert(offsetof(LensFile_EvaluateNormalizedIris, InNormalizedValue) == 0x000000, "Member 'LensFile_EvaluateNormalizedIris::InNormalizedValue' has a wrong offset!");
-static_assert(offsetof(LensFile_EvaluateNormalizedIris, ReturnValue) == 0x000004, "Member 'LensFile_EvaluateNormalizedIris::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_EvaluateNormalizedIris;
 
 // Function CameraCalibrationCore.LensFile.GetDistortionPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -868,12 +686,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_GetDistortionPoint) == 0x000008, "Wrong alignment on LensFile_GetDistortionPoint");
-static_assert(sizeof(LensFile_GetDistortionPoint) == 0x000020, "Wrong size on LensFile_GetDistortionPoint");
-static_assert(offsetof(LensFile_GetDistortionPoint, InFocus) == 0x000000, "Member 'LensFile_GetDistortionPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_GetDistortionPoint, InZoom) == 0x000004, "Member 'LensFile_GetDistortionPoint::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_GetDistortionPoint, OutDistortionInfo) == 0x000008, "Member 'LensFile_GetDistortionPoint::OutDistortionInfo' has a wrong offset!");
-static_assert(offsetof(LensFile_GetDistortionPoint, ReturnValue) == 0x000018, "Member 'LensFile_GetDistortionPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetDistortionPoint;
 
 // Function CameraCalibrationCore.LensFile.GetDistortionPoints
 // 0x0010 (0x0010 - 0x0000)
@@ -882,9 +695,7 @@ struct LensFile_GetDistortionPoints final
 public:
 	TArray<struct FDistortionPointInfo>           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetDistortionPoints) == 0x000008, "Wrong alignment on LensFile_GetDistortionPoints");
-static_assert(sizeof(LensFile_GetDistortionPoints) == 0x000010, "Wrong size on LensFile_GetDistortionPoints");
-static_assert(offsetof(LensFile_GetDistortionPoints, ReturnValue) == 0x000000, "Member 'LensFile_GetDistortionPoints::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetDistortionPoints;
 
 // Function CameraCalibrationCore.LensFile.GetFocalLengthPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -897,12 +708,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_GetFocalLengthPoint) == 0x000008, "Wrong alignment on LensFile_GetFocalLengthPoint");
-static_assert(sizeof(LensFile_GetFocalLengthPoint) == 0x000020, "Wrong size on LensFile_GetFocalLengthPoint");
-static_assert(offsetof(LensFile_GetFocalLengthPoint, InFocus) == 0x000000, "Member 'LensFile_GetFocalLengthPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_GetFocalLengthPoint, InZoom) == 0x000004, "Member 'LensFile_GetFocalLengthPoint::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_GetFocalLengthPoint, OutFocalLengthInfo) == 0x000008, "Member 'LensFile_GetFocalLengthPoint::OutFocalLengthInfo' has a wrong offset!");
-static_assert(offsetof(LensFile_GetFocalLengthPoint, ReturnValue) == 0x000018, "Member 'LensFile_GetFocalLengthPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetFocalLengthPoint;
 
 // Function CameraCalibrationCore.LensFile.GetFocalLengthPoints
 // 0x0010 (0x0010 - 0x0000)
@@ -911,9 +717,7 @@ struct LensFile_GetFocalLengthPoints final
 public:
 	TArray<struct FFocalLengthPointInfo>          ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetFocalLengthPoints) == 0x000008, "Wrong alignment on LensFile_GetFocalLengthPoints");
-static_assert(sizeof(LensFile_GetFocalLengthPoints) == 0x000010, "Wrong size on LensFile_GetFocalLengthPoints");
-static_assert(offsetof(LensFile_GetFocalLengthPoints, ReturnValue) == 0x000000, "Member 'LensFile_GetFocalLengthPoints::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetFocalLengthPoints;
 
 // Function CameraCalibrationCore.LensFile.GetImageCenterPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -926,12 +730,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_GetImageCenterPoint) == 0x000008, "Wrong alignment on LensFile_GetImageCenterPoint");
-static_assert(sizeof(LensFile_GetImageCenterPoint) == 0x000020, "Wrong size on LensFile_GetImageCenterPoint");
-static_assert(offsetof(LensFile_GetImageCenterPoint, InFocus) == 0x000000, "Member 'LensFile_GetImageCenterPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_GetImageCenterPoint, InZoom) == 0x000004, "Member 'LensFile_GetImageCenterPoint::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_GetImageCenterPoint, OutImageCenterInfo) == 0x000008, "Member 'LensFile_GetImageCenterPoint::OutImageCenterInfo' has a wrong offset!");
-static_assert(offsetof(LensFile_GetImageCenterPoint, ReturnValue) == 0x000018, "Member 'LensFile_GetImageCenterPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetImageCenterPoint;
 
 // Function CameraCalibrationCore.LensFile.GetImageCenterPoints
 // 0x0010 (0x0010 - 0x0000)
@@ -940,9 +739,7 @@ struct LensFile_GetImageCenterPoints final
 public:
 	TArray<struct FImageCenterPointInfo>          ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetImageCenterPoints) == 0x000008, "Wrong alignment on LensFile_GetImageCenterPoints");
-static_assert(sizeof(LensFile_GetImageCenterPoints) == 0x000010, "Wrong size on LensFile_GetImageCenterPoints");
-static_assert(offsetof(LensFile_GetImageCenterPoints, ReturnValue) == 0x000000, "Member 'LensFile_GetImageCenterPoints::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetImageCenterPoints;
 
 // Function CameraCalibrationCore.LensFile.GetNodalOffsetPoint
 // 0x0060 (0x0060 - 0x0000)
@@ -956,12 +753,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_GetNodalOffsetPoint) == 0x000010, "Wrong alignment on LensFile_GetNodalOffsetPoint");
-static_assert(sizeof(LensFile_GetNodalOffsetPoint) == 0x000060, "Wrong size on LensFile_GetNodalOffsetPoint");
-static_assert(offsetof(LensFile_GetNodalOffsetPoint, InFocus) == 0x000000, "Member 'LensFile_GetNodalOffsetPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_GetNodalOffsetPoint, InZoom) == 0x000004, "Member 'LensFile_GetNodalOffsetPoint::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_GetNodalOffsetPoint, OutNodalPointOffset) == 0x000010, "Member 'LensFile_GetNodalOffsetPoint::OutNodalPointOffset' has a wrong offset!");
-static_assert(offsetof(LensFile_GetNodalOffsetPoint, ReturnValue) == 0x000050, "Member 'LensFile_GetNodalOffsetPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetNodalOffsetPoint;
 
 // Function CameraCalibrationCore.LensFile.GetNodalOffsetPoints
 // 0x0010 (0x0010 - 0x0000)
@@ -970,9 +762,7 @@ struct LensFile_GetNodalOffsetPoints final
 public:
 	TArray<struct FNodalOffsetPointInfo>          ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetNodalOffsetPoints) == 0x000008, "Wrong alignment on LensFile_GetNodalOffsetPoints");
-static_assert(sizeof(LensFile_GetNodalOffsetPoints) == 0x000010, "Wrong size on LensFile_GetNodalOffsetPoints");
-static_assert(offsetof(LensFile_GetNodalOffsetPoints, ReturnValue) == 0x000000, "Member 'LensFile_GetNodalOffsetPoints::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetNodalOffsetPoints;
 
 // Function CameraCalibrationCore.LensFile.GetSTMapPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -985,12 +775,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LensFile_GetSTMapPoint) == 0x000008, "Wrong alignment on LensFile_GetSTMapPoint");
-static_assert(sizeof(LensFile_GetSTMapPoint) == 0x000020, "Wrong size on LensFile_GetSTMapPoint");
-static_assert(offsetof(LensFile_GetSTMapPoint, InFocus) == 0x000000, "Member 'LensFile_GetSTMapPoint::InFocus' has a wrong offset!");
-static_assert(offsetof(LensFile_GetSTMapPoint, InZoom) == 0x000004, "Member 'LensFile_GetSTMapPoint::InZoom' has a wrong offset!");
-static_assert(offsetof(LensFile_GetSTMapPoint, OutSTMapInfo) == 0x000008, "Member 'LensFile_GetSTMapPoint::OutSTMapInfo' has a wrong offset!");
-static_assert(offsetof(LensFile_GetSTMapPoint, ReturnValue) == 0x000018, "Member 'LensFile_GetSTMapPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetSTMapPoint;
 
 // Function CameraCalibrationCore.LensFile.GetSTMapPoints
 // 0x0010 (0x0010 - 0x0000)
@@ -999,9 +784,7 @@ struct LensFile_GetSTMapPoints final
 public:
 	TArray<struct FSTMapPointInfo>                ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetSTMapPoints) == 0x000008, "Wrong alignment on LensFile_GetSTMapPoints");
-static_assert(sizeof(LensFile_GetSTMapPoints) == 0x000010, "Wrong size on LensFile_GetSTMapPoints");
-static_assert(offsetof(LensFile_GetSTMapPoints, ReturnValue) == 0x000000, "Member 'LensFile_GetSTMapPoints::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetSTMapPoints;
 
 // Function CameraCalibrationCore.LensFile.GetTotalPointNum
 // 0x0008 (0x0008 - 0x0000)
@@ -1012,10 +795,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_GetTotalPointNum) == 0x000004, "Wrong alignment on LensFile_GetTotalPointNum");
-static_assert(sizeof(LensFile_GetTotalPointNum) == 0x000008, "Wrong size on LensFile_GetTotalPointNum");
-static_assert(offsetof(LensFile_GetTotalPointNum, InDataCategory) == 0x000000, "Member 'LensFile_GetTotalPointNum::InDataCategory' has a wrong offset!");
-static_assert(offsetof(LensFile_GetTotalPointNum, ReturnValue) == 0x000004, "Member 'LensFile_GetTotalPointNum::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_GetTotalPointNum;
 
 // Function CameraCalibrationCore.LensFile.HasFocusEncoderMapping
 // 0x0001 (0x0001 - 0x0000)
@@ -1024,9 +804,7 @@ struct LensFile_HasFocusEncoderMapping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_HasFocusEncoderMapping) == 0x000001, "Wrong alignment on LensFile_HasFocusEncoderMapping");
-static_assert(sizeof(LensFile_HasFocusEncoderMapping) == 0x000001, "Wrong size on LensFile_HasFocusEncoderMapping");
-static_assert(offsetof(LensFile_HasFocusEncoderMapping, ReturnValue) == 0x000000, "Member 'LensFile_HasFocusEncoderMapping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_HasFocusEncoderMapping;
 
 // Function CameraCalibrationCore.LensFile.HasIrisEncoderMapping
 // 0x0001 (0x0001 - 0x0000)
@@ -1035,9 +813,7 @@ struct LensFile_HasIrisEncoderMapping final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_HasIrisEncoderMapping) == 0x000001, "Wrong alignment on LensFile_HasIrisEncoderMapping");
-static_assert(sizeof(LensFile_HasIrisEncoderMapping) == 0x000001, "Wrong size on LensFile_HasIrisEncoderMapping");
-static_assert(offsetof(LensFile_HasIrisEncoderMapping, ReturnValue) == 0x000000, "Member 'LensFile_HasIrisEncoderMapping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_HasIrisEncoderMapping;
 
 // Function CameraCalibrationCore.LensFile.HasSamples
 // 0x0002 (0x0002 - 0x0000)
@@ -1047,10 +823,7 @@ public:
 	ELensDataCategory                             InDataCategory;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LensFile_HasSamples) == 0x000001, "Wrong alignment on LensFile_HasSamples");
-static_assert(sizeof(LensFile_HasSamples) == 0x000002, "Wrong size on LensFile_HasSamples");
-static_assert(offsetof(LensFile_HasSamples, InDataCategory) == 0x000000, "Member 'LensFile_HasSamples::InDataCategory' has a wrong offset!");
-static_assert(offsetof(LensFile_HasSamples, ReturnValue) == 0x000001, "Member 'LensFile_HasSamples::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LensFile_HasSamples;
 
 }
 

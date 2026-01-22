@@ -23,15 +23,18 @@ class UWC_Training_MonitorBP_C final : public UWC_Training_Monitor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_Training_MonitorBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_Training_MonitorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_Training_MonitorBP_C")
 	}
 	static class UWC_Training_MonitorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_Training_MonitorBP_C>();
 	}
 };
-static_assert(alignof(UWC_Training_MonitorBP_C) == 0x000010, "Wrong alignment on UWC_Training_MonitorBP_C");
-static_assert(sizeof(UWC_Training_MonitorBP_C) == 0x000A10, "Wrong size on UWC_Training_MonitorBP_C");
+DUMPER7_ASSERTS_UWC_Training_MonitorBP_C;
 
 }
 

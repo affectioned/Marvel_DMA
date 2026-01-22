@@ -17,41 +17,39 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SkinCustomization_ItemGroup.PyWidget_SkinCustomization_ItemGroup
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_SkinCustomization_ItemGroup final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                BuyItem;                                           // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ConfirmItem;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedBuyBtn;                                        // 0x05D0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 GroupIndex, const class FString& ItemID)> OnItemSelected;    // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnPriceClicked;                                    // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnPriceCanceled;                                   // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                BuyItem;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ConfirmItem;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedBuyBtn;                                        // 0x05D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 GroupIndex, const class FString& ItemID)> OnItemSelected;    // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnPriceClicked;                                    // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnPriceCanceled;                                   // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Destruct();
+	class UButton* on_try_srcoll_when_next_focusable_child_change(int32 ChildIndex, int32 FocusedChildDirection, int32 NumItemsLine);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SkinCustomization_ItemGroup">();
+		STATIC_CLASS_IMPL("PyWidget_SkinCustomization_ItemGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SkinCustomization_ItemGroup")
 	}
 	static class UPyWidget_SkinCustomization_ItemGroup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SkinCustomization_ItemGroup>();
 	}
 };
-static_assert(alignof(UPyWidget_SkinCustomization_ItemGroup) == 0x000008, "Wrong alignment on UPyWidget_SkinCustomization_ItemGroup");
-static_assert(sizeof(UPyWidget_SkinCustomization_ItemGroup) == 0x000608, "Wrong size on UPyWidget_SkinCustomization_ItemGroup");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, BuyItem) == 0x0005C0, "Member 'UPyWidget_SkinCustomization_ItemGroup::BuyItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, ConfirmItem) == 0x0005C8, "Member 'UPyWidget_SkinCustomization_ItemGroup::ConfirmItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, NeedBuyBtn) == 0x0005D0, "Member 'UPyWidget_SkinCustomization_ItemGroup::NeedBuyBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, OnItemSelected) == 0x0005D8, "Member 'UPyWidget_SkinCustomization_ItemGroup::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, OnPriceClicked) == 0x0005E8, "Member 'UPyWidget_SkinCustomization_ItemGroup::OnPriceClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SkinCustomization_ItemGroup, OnPriceCanceled) == 0x0005F8, "Member 'UPyWidget_SkinCustomization_ItemGroup::OnPriceCanceled' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SkinCustomization_ItemGroup;
 
 }
 

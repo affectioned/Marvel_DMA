@@ -23,11 +23,7 @@ public:
 	class FString                                 vendor_7_CF641987490FB4FAB6DF49BAE6AB6C36;         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	double                                        grade_11_19598F1A419A773AECB6C7877AA33C07;         // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FBenchmarkGradeSetting) == 0x000008, "Wrong alignment on FBenchmarkGradeSetting");
-static_assert(sizeof(FBenchmarkGradeSetting) == 0x000028, "Wrong size on FBenchmarkGradeSetting");
-static_assert(offsetof(FBenchmarkGradeSetting, series_5_27CCCA4E495586F47F8EF79477BF2DD4) == 0x000000, "Member 'FBenchmarkGradeSetting::series_5_27CCCA4E495586F47F8EF79477BF2DD4' has a wrong offset!");
-static_assert(offsetof(FBenchmarkGradeSetting, vendor_7_CF641987490FB4FAB6DF49BAE6AB6C36) == 0x000010, "Member 'FBenchmarkGradeSetting::vendor_7_CF641987490FB4FAB6DF49BAE6AB6C36' has a wrong offset!");
-static_assert(offsetof(FBenchmarkGradeSetting, grade_11_19598F1A419A773AECB6C7877AA33C07) == 0x000020, "Member 'FBenchmarkGradeSetting::grade_11_19598F1A419A773AECB6C7877AA33C07' has a wrong offset!");
+DUMPER7_ASSERTS_FBenchmarkGradeSetting;
 
 }
 

@@ -17,39 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Loading_Icon.WBP_Loading_Icon_C
-// 0x0040 (0x05B8 - 0x0578)
+// 0x0040 (0x05C0 - 0x0580)
 class UWBP_Loading_Icon_C final : public UPyWidget_Loading_Icon
 {
 public:
-	class UMarvelImage*                           Img_Loading;                                       // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Bg;                                    // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Glow;                                  // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Left;                                  // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Left_Light;                            // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Light;                                 // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Right;                                 // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Loading_Right_Light;                           // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading;                                       // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Bg;                                    // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Glow;                                  // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Left;                                  // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Left_Light;                            // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Light;                                 // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Right;                                 // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Loading_Right_Light;                           // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Loading_Icon_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Loading_Icon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Loading_Icon_C")
 	}
 	static class UWBP_Loading_Icon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Loading_Icon_C>();
 	}
 };
-static_assert(alignof(UWBP_Loading_Icon_C) == 0x000008, "Wrong alignment on UWBP_Loading_Icon_C");
-static_assert(sizeof(UWBP_Loading_Icon_C) == 0x0005B8, "Wrong size on UWBP_Loading_Icon_C");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading) == 0x000578, "Member 'UWBP_Loading_Icon_C::Img_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Bg) == 0x000580, "Member 'UWBP_Loading_Icon_C::Img_Loading_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Glow) == 0x000588, "Member 'UWBP_Loading_Icon_C::Img_Loading_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Left) == 0x000590, "Member 'UWBP_Loading_Icon_C::Img_Loading_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Left_Light) == 0x000598, "Member 'UWBP_Loading_Icon_C::Img_Loading_Left_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Light) == 0x0005A0, "Member 'UWBP_Loading_Icon_C::Img_Loading_Light' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Right) == 0x0005A8, "Member 'UWBP_Loading_Icon_C::Img_Loading_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Icon_C, Img_Loading_Right_Light) == 0x0005B0, "Member 'UWBP_Loading_Icon_C::Img_Loading_Right_Light' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Loading_Icon_C;
 
 }
 

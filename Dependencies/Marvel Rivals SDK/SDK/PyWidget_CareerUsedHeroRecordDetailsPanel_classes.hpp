@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerUsedHeroRecordDetailsPanel.PyWidget_CareerUsedHeroRecordDetailsPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_CareerUsedHeroRecordDetailsPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_ChangePageBtnClick;                        // 0x05F8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ChangePageBtnClick;                        // 0x0600(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerUsedHeroRecordDetailsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerUsedHeroRecordDetailsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerUsedHeroRecordDetailsPanel")
 	}
 	static class UPyWidget_CareerUsedHeroRecordDetailsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerUsedHeroRecordDetailsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerUsedHeroRecordDetailsPanel) == 0x000008, "Wrong alignment on UPyWidget_CareerUsedHeroRecordDetailsPanel");
-static_assert(sizeof(UPyWidget_CareerUsedHeroRecordDetailsPanel) == 0x000600, "Wrong size on UPyWidget_CareerUsedHeroRecordDetailsPanel");
-static_assert(offsetof(UPyWidget_CareerUsedHeroRecordDetailsPanel, AkEvent_ChangePageBtnClick) == 0x0005F8, "Member 'UPyWidget_CareerUsedHeroRecordDetailsPanel::AkEvent_ChangePageBtnClick' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerUsedHeroRecordDetailsPanel;
 
 }
 

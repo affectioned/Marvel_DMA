@@ -25,11 +25,7 @@ public:
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX) == 0x000004, "Wrong alignment on WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX");
-static_assert(sizeof(WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX) == 0x000040, "Wrong size on WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX");
-static_assert(offsetof(WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX, EntryPoint) == 0x000000, "Member 'WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX, K2Node_Event_MyGeometry) == 0x000004, "Member 'WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX::K2Node_Event_InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Nameplate_Spine_VX_C_ExecuteUbergraph_WBP_Nameplate_Spine_VX;
 
 // Function WBP_Nameplate_Spine_VX.WBP_Nameplate_Spine_VX_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -39,10 +35,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Nameplate_Spine_VX_C_Tick) == 0x000004, "Wrong alignment on WBP_Nameplate_Spine_VX_C_Tick");
-static_assert(sizeof(WBP_Nameplate_Spine_VX_C_Tick) == 0x00003C, "Wrong size on WBP_Nameplate_Spine_VX_C_Tick");
-static_assert(offsetof(WBP_Nameplate_Spine_VX_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Nameplate_Spine_VX_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Nameplate_Spine_VX_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_Nameplate_Spine_VX_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Nameplate_Spine_VX_C_Tick;
 
 }
 

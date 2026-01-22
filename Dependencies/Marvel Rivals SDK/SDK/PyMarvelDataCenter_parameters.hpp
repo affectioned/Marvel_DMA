@@ -24,11 +24,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class FString>            Labels;                                            // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelDataCenter_RecordHistogramMetric) == 0x000008, "Wrong alignment on PyMarvelDataCenter_RecordHistogramMetric");
-static_assert(sizeof(PyMarvelDataCenter_RecordHistogramMetric) == 0x000068, "Wrong size on PyMarvelDataCenter_RecordHistogramMetric");
-static_assert(offsetof(PyMarvelDataCenter_RecordHistogramMetric, DataName) == 0x000000, "Member 'PyMarvelDataCenter_RecordHistogramMetric::DataName' has a wrong offset!");
-static_assert(offsetof(PyMarvelDataCenter_RecordHistogramMetric, Value) == 0x000010, "Member 'PyMarvelDataCenter_RecordHistogramMetric::Value' has a wrong offset!");
-static_assert(offsetof(PyMarvelDataCenter_RecordHistogramMetric, Labels) == 0x000018, "Member 'PyMarvelDataCenter_RecordHistogramMetric::Labels' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelDataCenter_RecordHistogramMetric;
 
 // PythonFunction PyMarvelDataCenter.PyMarvelDataCenter.OnStartOnlineHitchCounting
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +33,7 @@ struct PyMarvelDataCenter_OnStartOnlineHitchCounting final
 public:
 	int32                                         MapId;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelDataCenter_OnStartOnlineHitchCounting) == 0x000004, "Wrong alignment on PyMarvelDataCenter_OnStartOnlineHitchCounting");
-static_assert(sizeof(PyMarvelDataCenter_OnStartOnlineHitchCounting) == 0x000004, "Wrong size on PyMarvelDataCenter_OnStartOnlineHitchCounting");
-static_assert(offsetof(PyMarvelDataCenter_OnStartOnlineHitchCounting, MapId) == 0x000000, "Member 'PyMarvelDataCenter_OnStartOnlineHitchCounting::MapId' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelDataCenter_OnStartOnlineHitchCounting;
 
 // PythonFunction PyMarvelDataCenter.PyMarvelDataCenter.IncHitchCount
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +42,7 @@ struct PyMarvelDataCenter_IncHitchCount final
 public:
 	float                                         FrameTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelDataCenter_IncHitchCount) == 0x000004, "Wrong alignment on PyMarvelDataCenter_IncHitchCount");
-static_assert(sizeof(PyMarvelDataCenter_IncHitchCount) == 0x000004, "Wrong size on PyMarvelDataCenter_IncHitchCount");
-static_assert(offsetof(PyMarvelDataCenter_IncHitchCount, FrameTime) == 0x000000, "Member 'PyMarvelDataCenter_IncHitchCount::FrameTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelDataCenter_IncHitchCount;
 
 }
 

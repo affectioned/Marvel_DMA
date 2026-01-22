@@ -26,12 +26,7 @@ public:
 	struct FAIAbilityUsage                        AbilityUsage;                                      // 0x0068(0x00E8)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0150(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAISelectTargetLogicBase_SelectTargetOrLocation) == 0x000008, "Wrong alignment on PyAISelectTargetLogicBase_SelectTargetOrLocation");
-static_assert(sizeof(PyAISelectTargetLogicBase_SelectTargetOrLocation) == 0x000158, "Wrong size on PyAISelectTargetLogicBase_SelectTargetOrLocation");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetOrLocation, AIController) == 0x000000, "Member 'PyAISelectTargetLogicBase_SelectTargetOrLocation::AIController' has a wrong offset!");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetOrLocation, OutAITarget) == 0x000008, "Member 'PyAISelectTargetLogicBase_SelectTargetOrLocation::OutAITarget' has a wrong offset!");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetOrLocation, AbilityUsage) == 0x000068, "Member 'PyAISelectTargetLogicBase_SelectTargetOrLocation::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetOrLocation, ReturnValue) == 0x000150, "Member 'PyAISelectTargetLogicBase_SelectTargetOrLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAISelectTargetLogicBase_SelectTargetOrLocation;
 
 // PythonFunction PyAISelectTargetLogicBase.PyAISelectTargetLogicBase.SelectTargetForAbilityCheck
 // 0x0098 (0x0098 - 0x0000)
@@ -42,11 +37,7 @@ public:
 	struct FMarvelAITarget                        OutAITarget;                                       // 0x0030(0x0060)(Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAISelectTargetLogicBase_SelectTargetForAbilityCheck) == 0x000008, "Wrong alignment on PyAISelectTargetLogicBase_SelectTargetForAbilityCheck");
-static_assert(sizeof(PyAISelectTargetLogicBase_SelectTargetForAbilityCheck) == 0x000098, "Wrong size on PyAISelectTargetLogicBase_SelectTargetForAbilityCheck");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetForAbilityCheck, AbilityContext) == 0x000000, "Member 'PyAISelectTargetLogicBase_SelectTargetForAbilityCheck::AbilityContext' has a wrong offset!");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetForAbilityCheck, OutAITarget) == 0x000030, "Member 'PyAISelectTargetLogicBase_SelectTargetForAbilityCheck::OutAITarget' has a wrong offset!");
-static_assert(offsetof(PyAISelectTargetLogicBase_SelectTargetForAbilityCheck, ReturnValue) == 0x000090, "Member 'PyAISelectTargetLogicBase_SelectTargetForAbilityCheck::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAISelectTargetLogicBase_SelectTargetForAbilityCheck;
 
 }
 

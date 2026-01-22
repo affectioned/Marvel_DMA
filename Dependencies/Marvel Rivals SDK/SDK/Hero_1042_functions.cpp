@@ -17,95 +17,19 @@
 namespace SDK
 {
 
-// Function Hero_1042.Ability_104202.ClimbEnd
-// (Final, Native, Public, BlueprintCallable)
-
-void UAbility_104202::ClimbEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104202", "ClimbEnd");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Ability_104202.ClimbStart
-// (Final, Native, Public, BlueprintCallable)
-
-void UAbility_104202::ClimbStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104202", "ClimbStart");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Ability_104202.ClimbWall
-// (Final, Native, Public, BlueprintCallable)
-
-void UAbility_104202::ClimbWall()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104202", "ClimbWall");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Ability_104202.UpdateAbilityResources
-// (Final, Native, Public, BlueprintCallable)
-
-void UAbility_104202::UpdateAbilityResources()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104202", "UpdateAbilityResources");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424101.GetCurrentState
-// (Event, Protected, BlueprintEvent)
+// Function Hero_1042.SummonedComp_10424103.GetWebMaxOffsetDistance
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// EState_10424101                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EState_10424101 ASummoned_10424101::GetCurrentState()
+float USummonedComp_10424103::GetWebMaxOffsetDistance()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424101", "GetCurrentState");
+		Func = Class->GetFunction("SummonedComp_10424103", "GetWebMaxOffsetDistance");
 
-	Params::Summoned_10424101_GetCurrentState Parms{};
+	Params::SummonedComp_10424103_GetWebMaxOffsetDistance Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -113,272 +37,45 @@ EState_10424101 ASummoned_10424101::GetCurrentState()
 }
 
 
-// Function Hero_1042.SummonedComp_10424101.OnMovementPlaced
+// Function Hero_1042.SummonedComp_10424103.K2_OnGenMeshDestroy
 // (Event, Public, BlueprintEvent)
 
-void USummonedComp_10424101::OnMovementPlaced()
+void USummonedComp_10424103::K2_OnGenMeshDestroy()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedComp_10424101", "OnMovementPlaced");
+		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnGenMeshDestroy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Hero_1042.Summoned_10424102.BeginAgentTask
-// (Native, Public)
+// Function Hero_1042.SummonedComp_10424103.K2_OnGenMeshReform
+// (Event, Public, BlueprintEvent)
 
-void ASummoned_10424102::BeginAgentTask()
+void USummonedComp_10424103::K2_OnGenMeshReform()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "BeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnGenMeshReform");
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
-// Function Hero_1042.Summoned_10424102.EndAgentTask
-// (Native, Public)
+// Function Hero_1042.SummonedComp_10424103.K2_OnWebActive
+// (Event, Public, BlueprintEvent)
 
-void ASummoned_10424102::EndAgentTask()
+void USummonedComp_10424103::K2_OnWebActive()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "EndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
+		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnWebActive");
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.IsConfigValid
-// (Final, Native, Public)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool ASummoned_10424102::IsConfigValid()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "IsConfigValid");
-
-	Params::Summoned_10424102_IsConfigValid Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1042.Summoned_10424102.MulticastLaunch
-// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
-// Parameters:
-// const struct FVector&                   StartLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Velocity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASummoned_10424102::MulticastLaunch(const struct FVector& StartLocation, const struct FVector& Velocity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "MulticastLaunch");
-
-	Params::Summoned_10424102_MulticastLaunch Parms{};
-
-	Parms.StartLocation = std::move(StartLocation);
-	Parms.Velocity = std::move(Velocity);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.MulticastRegisterSpider
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-// const struct FSpiderSpawnInfo&          SpawnInfo                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-void ASummoned_10424102::MulticastRegisterSpider(const struct FSpiderSpawnInfo& SpawnInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "MulticastRegisterSpider");
-
-	Params::Summoned_10424102_MulticastRegisterSpider Parms{};
-
-	Parms.SpawnInfo = std::move(SpawnInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.OnRep_MoveMode
-// (Final, Native, Public)
-
-void ASummoned_10424102::OnRep_MoveMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "OnRep_MoveMode");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.OnRep_State
-// (Final, Native, Public)
-
-void ASummoned_10424102::OnRep_State()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "OnRep_State");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.OnSpiderMovingStateChange
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bNewIsMoving                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASummoned_10424102::OnSpiderMovingStateChange(bool bNewIsMoving)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "OnSpiderMovingStateChange");
-
-	Params::Summoned_10424102_OnSpiderMovingStateChange Parms{};
-
-	Parms.bNewIsMoving = bNewIsMoving;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.OnSpiderProjectileStop
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void ASummoned_10424102::OnSpiderProjectileStop(const struct FHitResult& ImpactResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "OnSpiderProjectileStop");
-
-	Params::Summoned_10424102_OnSpiderProjectileStop Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.ServerSetWeb
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class ASummoned_10424103*               InWeb                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InNodeIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASummoned_10424102::ServerSetWeb(class ASummoned_10424103* InWeb, int32 InNodeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "ServerSetWeb");
-
-	Params::Summoned_10424102_ServerSetWeb Parms{};
-
-	Parms.InWeb = InWeb;
-	Parms.InNodeIndex = InNodeIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.Summoned_10424102.GetSpiderEntity
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UMarvelSpiderEntity*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelSpiderEntity* ASummoned_10424102::GetSpiderEntity() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summoned_10424102", "GetSpiderEntity");
-
-	Params::Summoned_10424102_GetSpiderEntity Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1022,19 +719,127 @@ bool ASummoned_10424103::IsWebSpawned() const
 }
 
 
-// Function Hero_1042.SummonedComp_10424103.GetWebMaxOffsetDistance
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function Hero_1042.Ability_104202.ClimbEnd
+// (Final, Native, Public, BlueprintCallable)
 
-float USummonedComp_10424103::GetWebMaxOffsetDistance()
+void UAbility_104202::ClimbEnd()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedComp_10424103", "GetWebMaxOffsetDistance");
+		Func = Class->GetFunction("Ability_104202", "ClimbEnd");
 
-	Params::SummonedComp_10424103_GetWebMaxOffsetDistance Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Ability_104202.ClimbStart
+// (Final, Native, Public, BlueprintCallable)
+
+void UAbility_104202::ClimbStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104202", "ClimbStart");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Ability_104202.ClimbWall
+// (Final, Native, Public, BlueprintCallable)
+
+void UAbility_104202::ClimbWall()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104202", "ClimbWall");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Ability_104202.UpdateAbilityResources
+// (Final, Native, Public, BlueprintCallable)
+
+void UAbility_104202::UpdateAbilityResources()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104202", "UpdateAbilityResources");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.EffectiveComponent_10420102.FindNearestLinkedWeb
+// (Final, Native, Public, HasOutParams, HasDefaults)
+// Parameters:
+// const struct FVector&                   TargetActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32*                                 OutNearestIndex                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UMarvelWebEntity*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelWebEntity* UEffectiveComponent_10420102::FindNearestLinkedWeb(const struct FVector& TargetActor, uint32* OutNearestIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EffectiveComponent_10420102", "FindNearestLinkedWeb");
+
+	Params::EffectiveComponent_10420102_FindNearestLinkedWeb Parms{};
+
+	Parms.TargetActor = std::move(TargetActor);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutNearestIndex != nullptr)
+		*OutNearestIndex = Parms.OutNearestIndex;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1042.Summoned_10424101.GetCurrentState
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EState_10424101                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EState_10424101 ASummoned_10424101::GetCurrentState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424101", "GetCurrentState");
+
+	Params::Summoned_10424101_GetCurrentState Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1042,45 +847,272 @@ float USummonedComp_10424103::GetWebMaxOffsetDistance()
 }
 
 
-// Function Hero_1042.SummonedComp_10424103.K2_OnGenMeshDestroy
+// Function Hero_1042.SummonedComp_10424101.OnMovementPlaced
 // (Event, Public, BlueprintEvent)
 
-void USummonedComp_10424103::K2_OnGenMeshDestroy()
+void USummonedComp_10424101::OnMovementPlaced()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnGenMeshDestroy");
+		Func = Class->GetFunction("SummonedComp_10424101", "OnMovementPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Hero_1042.SummonedComp_10424103.K2_OnGenMeshReform
-// (Event, Public, BlueprintEvent)
+// Function Hero_1042.Summoned_10424102.BeginAgentTask
+// (Native, Public)
 
-void USummonedComp_10424103::K2_OnGenMeshReform()
+void ASummoned_10424102::BeginAgentTask()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnGenMeshReform");
+		Func = Class->GetFunction("Summoned_10424102", "BeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
-// Function Hero_1042.SummonedComp_10424103.K2_OnWebActive
-// (Event, Public, BlueprintEvent)
+// Function Hero_1042.Summoned_10424102.EndAgentTask
+// (Native, Public)
 
-void USummonedComp_10424103::K2_OnWebActive()
+void ASummoned_10424102::EndAgentTask()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedComp_10424103", "K2_OnWebActive");
+		Func = Class->GetFunction("Summoned_10424102", "EndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.IsConfigValid
+// (Final, Native, Public)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ASummoned_10424102::IsConfigValid()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "IsConfigValid");
+
+	Params::Summoned_10424102_IsConfigValid Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1042.Summoned_10424102.MulticastLaunch
+// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults)
+// Parameters:
+// const struct FVector&                   StartLocation                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   Velocity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASummoned_10424102::MulticastLaunch(const struct FVector& StartLocation, const struct FVector& Velocity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "MulticastLaunch");
+
+	Params::Summoned_10424102_MulticastLaunch Parms{};
+
+	Parms.StartLocation = std::move(StartLocation);
+	Parms.Velocity = std::move(Velocity);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.MulticastRegisterSpider
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+// const struct FSpiderSpawnInfo&          SpawnInfo                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
+
+void ASummoned_10424102::MulticastRegisterSpider(const struct FSpiderSpawnInfo& SpawnInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "MulticastRegisterSpider");
+
+	Params::Summoned_10424102_MulticastRegisterSpider Parms{};
+
+	Parms.SpawnInfo = std::move(SpawnInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.OnRep_MoveMode
+// (Final, Native, Public)
+
+void ASummoned_10424102::OnRep_MoveMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "OnRep_MoveMode");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.OnRep_State
+// (Final, Native, Public)
+
+void ASummoned_10424102::OnRep_State()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "OnRep_State");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.OnSpiderMovingStateChange
+// (Final, Native, Public)
+// Parameters:
+// bool                                    bNewIsMoving                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASummoned_10424102::OnSpiderMovingStateChange(bool bNewIsMoving)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "OnSpiderMovingStateChange");
+
+	Params::Summoned_10424102_OnSpiderMovingStateChange Parms{};
+
+	Parms.bNewIsMoving = bNewIsMoving;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.OnSpiderProjectileStop
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void ASummoned_10424102::OnSpiderProjectileStop(const struct FHitResult& ImpactResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "OnSpiderProjectileStop");
+
+	Params::Summoned_10424102_OnSpiderProjectileStop Parms{};
+
+	Parms.ImpactResult = std::move(ImpactResult);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.ServerSetWeb
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class ASummoned_10424103*               InWeb                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InNodeIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASummoned_10424102::ServerSetWeb(class ASummoned_10424103* InWeb, int32 InNodeIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "ServerSetWeb");
+
+	Params::Summoned_10424102_ServerSetWeb Parms{};
+
+	Parms.InWeb = InWeb;
+	Parms.InNodeIndex = InNodeIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1042.Summoned_10424102.GetSpiderEntity
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UMarvelSpiderEntity*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UMarvelSpiderEntity* ASummoned_10424102::GetSpiderEntity() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summoned_10424102", "GetSpiderEntity");
+
+	Params::Summoned_10424102_GetSpiderEntity Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -1160,38 +1192,6 @@ void UTraceComponent_10420102::InitCheckPoints()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1042.EffectiveComponent_10420102.FindNearestLinkedWeb
-// (Final, Native, Public, HasOutParams, HasDefaults)
-// Parameters:
-// const struct FVector&                   TargetActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint32*                                 OutNearestIndex                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UMarvelWebEntity*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UMarvelWebEntity* UEffectiveComponent_10420102::FindNearestLinkedWeb(const struct FVector& TargetActor, uint32* OutNearestIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EffectiveComponent_10420102", "FindNearestLinkedWeb");
-
-	Params::EffectiveComponent_10420102_FindNearestLinkedWeb Parms{};
-
-	Parms.TargetActor = std::move(TargetActor);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutNearestIndex != nullptr)
-		*OutNearestIndex = Parms.OutNearestIndex;
-
-	return Parms.ReturnValue;
 }
 
 

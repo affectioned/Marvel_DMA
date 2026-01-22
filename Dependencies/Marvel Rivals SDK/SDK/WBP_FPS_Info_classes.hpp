@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FPS_Info.WBP_FPS_Info_C
-// 0x0028 (0x0610 - 0x05E8)
+// 0x0028 (0x0618 - 0x05F0)
 class UWBP_FPS_Info_C final : public UPyWidget_FPSInfoPanel
 {
 public:
-	class UMarvelRichTextBlock*                   RichText_FPS;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VBox;                                              // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_Delay;                                    // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_Disconnect;                               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_PacketLoss;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_FPS;                                      // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox;                                              // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_Delay;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_Disconnect;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_FPS_InfoIcon_C*                    WBP_Icon_PacketLoss;                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_FPS_Info_C">();
+		BP_STATIC_CLASS_IMPL("WBP_FPS_Info_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_FPS_Info_C")
 	}
 	static class UWBP_FPS_Info_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_FPS_Info_C>();
 	}
 };
-static_assert(alignof(UWBP_FPS_Info_C) == 0x000008, "Wrong alignment on UWBP_FPS_Info_C");
-static_assert(sizeof(UWBP_FPS_Info_C) == 0x000610, "Wrong size on UWBP_FPS_Info_C");
-static_assert(offsetof(UWBP_FPS_Info_C, RichText_FPS) == 0x0005E8, "Member 'UWBP_FPS_Info_C::RichText_FPS' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_Info_C, VBox) == 0x0005F0, "Member 'UWBP_FPS_Info_C::VBox' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_Info_C, WBP_Icon_Delay) == 0x0005F8, "Member 'UWBP_FPS_Info_C::WBP_Icon_Delay' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_Info_C, WBP_Icon_Disconnect) == 0x000600, "Member 'UWBP_FPS_Info_C::WBP_Icon_Disconnect' has a wrong offset!");
-static_assert(offsetof(UWBP_FPS_Info_C, WBP_Icon_PacketLoss) == 0x000608, "Member 'UWBP_FPS_Info_C::WBP_Icon_PacketLoss' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_FPS_Info_C;
 
 }
 

@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_Btn_Lv3.WBP_Common_Btn_Lv3_C
-// 0x0020 (0x08E0 - 0x08C0)
+// 0x0020 (0x0940 - 0x0920)
 class UWBP_Common_Btn_Lv3_C final : public UPyWidget_CommonButton_Lv3
 {
 public:
-	class UMarvelImage*                           Img_Btn_Hover;                                     // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x08C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Press;                                     // 0x08C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         MarvelOverlay;                                     // 0x08D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_Price;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Hover;                                     // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Press;                                     // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         MarvelOverlay;                                     // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Price;                                        // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Btn_Lv3_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Btn_Lv3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Btn_Lv3_C")
 	}
 	static class UWBP_Common_Btn_Lv3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Btn_Lv3_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Btn_Lv3_C) == 0x000010, "Wrong alignment on UWBP_Common_Btn_Lv3_C");
-static_assert(sizeof(UWBP_Common_Btn_Lv3_C) == 0x0008E0, "Wrong size on UWBP_Common_Btn_Lv3_C");
-static_assert(offsetof(UWBP_Common_Btn_Lv3_C, Img_Btn_Hover) == 0x0008B8, "Member 'UWBP_Common_Btn_Lv3_C::Img_Btn_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_Lv3_C, Img_Btn_Normal) == 0x0008C0, "Member 'UWBP_Common_Btn_Lv3_C::Img_Btn_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_Lv3_C, Img_Btn_Press) == 0x0008C8, "Member 'UWBP_Common_Btn_Lv3_C::Img_Btn_Press' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_Lv3_C, MarvelOverlay) == 0x0008D0, "Member 'UWBP_Common_Btn_Lv3_C::MarvelOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_Lv3_C, Slot_Price) == 0x0008D8, "Member 'UWBP_Common_Btn_Lv3_C::Slot_Price' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Btn_Lv3_C;
 
 }
 

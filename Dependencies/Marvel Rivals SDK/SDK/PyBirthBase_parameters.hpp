@@ -23,9 +23,7 @@ struct PyBirthBase_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBirthBase_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBirthBase_ReceiveEndPlay");
-static_assert(sizeof(PyBirthBase_ReceiveEndPlay) == 0x000001, "Wrong size on PyBirthBase_ReceiveEndPlay");
-static_assert(offsetof(PyBirthBase_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBirthBase_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBirthBase_ReceiveEndPlay;
 
 // PythonFunction PyBirthBase.PyBirthBase.DispatchOnActiveChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class UObject*                                TaskOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int64                                         Magnitude;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBirthBase_DispatchOnActiveChanged) == 0x000008, "Wrong alignment on PyBirthBase_DispatchOnActiveChanged");
-static_assert(sizeof(PyBirthBase_DispatchOnActiveChanged) == 0x000010, "Wrong size on PyBirthBase_DispatchOnActiveChanged");
-static_assert(offsetof(PyBirthBase_DispatchOnActiveChanged, TaskOwner) == 0x000000, "Member 'PyBirthBase_DispatchOnActiveChanged::TaskOwner' has a wrong offset!");
-static_assert(offsetof(PyBirthBase_DispatchOnActiveChanged, Magnitude) == 0x000008, "Member 'PyBirthBase_DispatchOnActiveChanged::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_PyBirthBase_DispatchOnActiveChanged;
 
 // PythonFunction PyBirthBase.PyBirthBase.GetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +42,7 @@ struct PyBirthBase_GetActive final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBirthBase_GetActive) == 0x000001, "Wrong alignment on PyBirthBase_GetActive");
-static_assert(sizeof(PyBirthBase_GetActive) == 0x000001, "Wrong size on PyBirthBase_GetActive");
-static_assert(offsetof(PyBirthBase_GetActive, ReturnValue) == 0x000000, "Member 'PyBirthBase_GetActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBirthBase_GetActive;
 
 // PythonFunction PyBirthBase.PyBirthBase.SrvSetForceUpdateTransCache
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyBirthBase_SrvSetForceUpdateTransCache final
 public:
 	bool                                          Force;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBirthBase_SrvSetForceUpdateTransCache) == 0x000001, "Wrong alignment on PyBirthBase_SrvSetForceUpdateTransCache");
-static_assert(sizeof(PyBirthBase_SrvSetForceUpdateTransCache) == 0x000001, "Wrong size on PyBirthBase_SrvSetForceUpdateTransCache");
-static_assert(offsetof(PyBirthBase_SrvSetForceUpdateTransCache, Force) == 0x000000, "Member 'PyBirthBase_SrvSetForceUpdateTransCache::Force' has a wrong offset!");
+DUMPER7_ASSERTS_PyBirthBase_SrvSetForceUpdateTransCache;
 
 }
 

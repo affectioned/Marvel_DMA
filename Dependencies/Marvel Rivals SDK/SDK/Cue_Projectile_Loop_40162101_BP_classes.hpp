@@ -17,26 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Projectile_Loop_40162101_BP.Cue_Projectile_Loop_40162101_BP_C
-// 0x0010 (0x1140 - 0x1130)
+// 0x0010 (0x1150 - 0x1140)
 class ACue_Projectile_Loop_40162101_BP_C final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      Niagara;                                           // 0x1130(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      Niagara;                                           // 0x1140(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Projectile_Loop_40162101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Projectile_Loop_40162101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Projectile_Loop_40162101_BP_C")
 	}
 	static class ACue_Projectile_Loop_40162101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Projectile_Loop_40162101_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Projectile_Loop_40162101_BP_C) == 0x000010, "Wrong alignment on ACue_Projectile_Loop_40162101_BP_C");
-static_assert(sizeof(ACue_Projectile_Loop_40162101_BP_C) == 0x001140, "Wrong size on ACue_Projectile_Loop_40162101_BP_C");
-static_assert(offsetof(ACue_Projectile_Loop_40162101_BP_C, Niagara) == 0x001130, "Member 'ACue_Projectile_Loop_40162101_BP_C::Niagara' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Projectile_Loop_40162101_BP_C;
 
 }
 

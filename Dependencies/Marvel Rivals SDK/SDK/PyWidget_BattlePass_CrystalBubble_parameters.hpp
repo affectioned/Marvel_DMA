@@ -21,9 +21,7 @@ struct PyWidget_BattlePass_CrystalBubble_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CrystalBubble_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BattlePass_CrystalBubble_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BattlePass_CrystalBubble_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BattlePass_CrystalBubble_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BattlePass_CrystalBubble_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BattlePass_CrystalBubble_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CrystalBubble_OnAnimationFinished;
 
 // PythonFunction PyWidget_BattlePass_CrystalBubble.PyWidget_BattlePass_CrystalGuideBubble.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CrystalGuideBubble_OnAnimationFinished;
 
 // PythonFunction PyWidget_BattlePass_CrystalBubble.PyWidget_BattlePass_CrystalGuideBubble.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged final
 public:
 	bool                                          bIsVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged, bIsVisible) == 0x000000, "Member 'PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged::bIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CrystalGuideBubble_OnCascadingVisibleChanged;
 
 }
 

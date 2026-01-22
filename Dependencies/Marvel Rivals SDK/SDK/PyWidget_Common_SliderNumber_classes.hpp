@@ -18,23 +18,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_SliderNumber.PyWidget_Common_SliderNumber
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_Common_SliderNumber : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxRangeNum;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinRangeNum;                                       // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClickNumber;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedPercent;                                       // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C9[0x3];                                      // 0x05C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HoldThreshold;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HoldResponseIntervel;                              // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AKEvent_OnValueChanged;                            // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                Class_Common_Slider_Color;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxRangeNum;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinRangeNum;                                       // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClickNumber;                                       // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedPercent;                                       // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D1[0x3];                                      // 0x05D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HoldThreshold;                                     // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HoldResponseIntervel;                              // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AKEvent_OnValueChanged;                            // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_Common_Slider_Color;                         // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnHovered;                                         // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,25 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_SliderNumber">();
+		STATIC_CLASS_IMPL("PyWidget_Common_SliderNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_SliderNumber")
 	}
 	static class UPyWidget_Common_SliderNumber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_SliderNumber>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_SliderNumber) == 0x000008, "Wrong alignment on UPyWidget_Common_SliderNumber");
-static_assert(sizeof(UPyWidget_Common_SliderNumber) == 0x000608, "Wrong size on UPyWidget_Common_SliderNumber");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, MaxRangeNum) == 0x0005BC, "Member 'UPyWidget_Common_SliderNumber::MaxRangeNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, MinRangeNum) == 0x0005C0, "Member 'UPyWidget_Common_SliderNumber::MinRangeNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, ClickNumber) == 0x0005C4, "Member 'UPyWidget_Common_SliderNumber::ClickNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, NeedPercent) == 0x0005C8, "Member 'UPyWidget_Common_SliderNumber::NeedPercent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, HoldThreshold) == 0x0005CC, "Member 'UPyWidget_Common_SliderNumber::HoldThreshold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, HoldResponseIntervel) == 0x0005D0, "Member 'UPyWidget_Common_SliderNumber::HoldResponseIntervel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, AKEvent_OnValueChanged) == 0x0005D8, "Member 'UPyWidget_Common_SliderNumber::AKEvent_OnValueChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, Class_Common_Slider_Color) == 0x0005E0, "Member 'UPyWidget_Common_SliderNumber::Class_Common_Slider_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, OnHovered) == 0x0005E8, "Member 'UPyWidget_Common_SliderNumber::OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SliderNumber, OnUnhovered) == 0x0005F8, "Member 'UPyWidget_Common_SliderNumber::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_SliderNumber;
 
 }
 

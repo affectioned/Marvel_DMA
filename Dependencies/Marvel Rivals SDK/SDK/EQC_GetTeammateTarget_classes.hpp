@@ -23,15 +23,18 @@ class UEQC_GetTeammateTarget_C final : public UEnvQueryContext_BlackboardActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetTeammateTarget_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetTeammateTarget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetTeammateTarget_C")
 	}
 	static class UEQC_GetTeammateTarget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetTeammateTarget_C>();
 	}
 };
-static_assert(alignof(UEQC_GetTeammateTarget_C) == 0x000008, "Wrong alignment on UEQC_GetTeammateTarget_C");
-static_assert(sizeof(UEQC_GetTeammateTarget_C) == 0x000040, "Wrong size on UEQC_GetTeammateTarget_C");
+DUMPER7_ASSERTS_UEQC_GetTeammateTarget_C;
 
 }
 

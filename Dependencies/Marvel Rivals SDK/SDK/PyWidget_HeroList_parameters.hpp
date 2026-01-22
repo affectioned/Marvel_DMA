@@ -23,9 +23,7 @@ struct PyWidget_HeroList_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroList_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_HeroList_PreConstruct");
-static_assert(sizeof(PyWidget_HeroList_PreConstruct) == 0x000001, "Wrong size on PyWidget_HeroList_PreConstruct");
-static_assert(offsetof(PyWidget_HeroList_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_HeroList_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroList_PreConstruct;
 
 // PythonFunction PyWidget_HeroList.PyWidget_HeroList.Tick
 // 0x003C (0x003C - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroList_Tick) == 0x000004, "Wrong alignment on PyWidget_HeroList_Tick");
-static_assert(sizeof(PyWidget_HeroList_Tick) == 0x00003C, "Wrong size on PyWidget_HeroList_Tick");
-static_assert(offsetof(PyWidget_HeroList_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_HeroList_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_HeroList_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_HeroList_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroList_Tick;
 
 // PythonFunction PyWidget_HeroList.PyWidget_HeroList.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_HeroList_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroList_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_HeroList_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_HeroList_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_HeroList_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_HeroList_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_HeroList_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroList_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_HeroList.PyWidget_HeroList.OnCardNvigation
 // 0x0010 (0x0010 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroList_OnCardNvigation) == 0x000008, "Wrong alignment on PyWidget_HeroList_OnCardNvigation");
-static_assert(sizeof(PyWidget_HeroList_OnCardNvigation) == 0x000010, "Wrong size on PyWidget_HeroList_OnCardNvigation");
-static_assert(offsetof(PyWidget_HeroList_OnCardNvigation, NavType) == 0x000000, "Member 'PyWidget_HeroList_OnCardNvigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_HeroList_OnCardNvigation, ReturnValue) == 0x000008, "Member 'PyWidget_HeroList_OnCardNvigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroList_OnCardNvigation;
 
 // PythonFunction PyWidget_HeroList.PyWidget_HeroList.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +62,7 @@ struct PyWidget_HeroList_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroList_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_HeroList_OnAnimationFinished");
-static_assert(sizeof(PyWidget_HeroList_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_HeroList_OnAnimationFinished");
-static_assert(offsetof(PyWidget_HeroList_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_HeroList_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroList_OnAnimationFinished;
 
 }
 

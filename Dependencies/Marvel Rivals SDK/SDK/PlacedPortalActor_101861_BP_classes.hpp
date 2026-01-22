@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlacedPortalActor_101861_BP.PlacedPortalActor_101861_BP_C
-// 0x0000 (0x0A20 - 0x0A20)
+// 0x0000 (0x0A30 - 0x0A30)
 class APlacedPortalActor_101861_BP_C final : public APlacedPortalActor_101861
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlacedPortalActor_101861_BP_C">();
+		BP_STATIC_CLASS_IMPL("PlacedPortalActor_101861_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlacedPortalActor_101861_BP_C")
 	}
 	static class APlacedPortalActor_101861_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlacedPortalActor_101861_BP_C>();
 	}
 };
-static_assert(alignof(APlacedPortalActor_101861_BP_C) == 0x000010, "Wrong alignment on APlacedPortalActor_101861_BP_C");
-static_assert(sizeof(APlacedPortalActor_101861_BP_C) == 0x000A20, "Wrong size on APlacedPortalActor_101861_BP_C");
+DUMPER7_ASSERTS_APlacedPortalActor_101861_BP_C;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Control_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Control_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Control_Main")
 	}
 	static class UPyWidget_Control_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Control_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Control_Main) == 0x000008, "Wrong alignment on UPyWidget_Control_Main");
-static_assert(sizeof(UPyWidget_Control_Main) == 0x0003B8, "Wrong size on UPyWidget_Control_Main");
+DUMPER7_ASSERTS_UPyWidget_Control_Main;
 
 }
 

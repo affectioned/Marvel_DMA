@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphData">();
+		STATIC_CLASS_IMPL("ZoneGraphData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphData")
 	}
 	static class AZoneGraphData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZoneGraphData>();
 	}
 };
-static_assert(alignof(AZoneGraphData) == 0x000010, "Wrong alignment on AZoneGraphData");
-static_assert(sizeof(AZoneGraphData) == 0x000810, "Wrong size on AZoneGraphData");
-static_assert(offsetof(AZoneGraphData, bEnableDrawing) == 0x0006D9, "Member 'AZoneGraphData::bEnableDrawing' has a wrong offset!");
-static_assert(offsetof(AZoneGraphData, RenderingComp) == 0x0006E0, "Member 'AZoneGraphData::RenderingComp' has a wrong offset!");
-static_assert(offsetof(AZoneGraphData, ZoneStorage) == 0x0006E8, "Member 'AZoneGraphData::ZoneStorage' has a wrong offset!");
-static_assert(offsetof(AZoneGraphData, CombinedShapeHash) == 0x000800, "Member 'AZoneGraphData::CombinedShapeHash' has a wrong offset!");
+DUMPER7_ASSERTS_AZoneGraphData;
 
 // Class ZoneGraph.ZoneGraphRenderingComponent
 // 0x0020 (0x07E0 - 0x07C0)
@@ -59,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphRenderingComponent">();
+		STATIC_CLASS_IMPL("ZoneGraphRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphRenderingComponent")
 	}
 	static class UZoneGraphRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphRenderingComponent>();
 	}
 };
-static_assert(alignof(UZoneGraphRenderingComponent) == 0x000010, "Wrong alignment on UZoneGraphRenderingComponent");
-static_assert(sizeof(UZoneGraphRenderingComponent) == 0x0007E0, "Wrong size on UZoneGraphRenderingComponent");
+DUMPER7_ASSERTS_UZoneGraphRenderingComponent;
 
 // Class ZoneGraph.ZoneGraphSettings
 // 0x02E0 (0x0328 - 0x0048)
@@ -85,44 +87,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphSettings">();
+		STATIC_CLASS_IMPL("ZoneGraphSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphSettings")
 	}
 	static class UZoneGraphSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphSettings>();
 	}
 };
-static_assert(alignof(UZoneGraphSettings) == 0x000008, "Wrong alignment on UZoneGraphSettings");
-static_assert(sizeof(UZoneGraphSettings) == 0x000328, "Wrong size on UZoneGraphSettings");
-static_assert(offsetof(UZoneGraphSettings, LaneProfiles) == 0x000048, "Member 'UZoneGraphSettings::LaneProfiles' has a wrong offset!");
-static_assert(offsetof(UZoneGraphSettings, Tags) == 0x000058, "Member 'UZoneGraphSettings::Tags' has a wrong offset!");
-static_assert(offsetof(UZoneGraphSettings, VisualizedTags) == 0x0002D8, "Member 'UZoneGraphSettings::VisualizedTags' has a wrong offset!");
-static_assert(offsetof(UZoneGraphSettings, ShapeMaxDrawDistance) == 0x0002DC, "Member 'UZoneGraphSettings::ShapeMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(UZoneGraphSettings, BuildSettings) == 0x0002E0, "Member 'UZoneGraphSettings::BuildSettings' has a wrong offset!");
-static_assert(offsetof(UZoneGraphSettings, bBuildZoneGraphWhileEditing) == 0x000320, "Member 'UZoneGraphSettings::bBuildZoneGraphWhileEditing' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphSettings;
 
 // Class ZoneGraph.ZoneGraphSubsystem
-// 0x0050 (0x0098 - 0x0048)
+// 0x0050 (0x00A0 - 0x0050)
 class UZoneGraphSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	uint8                                         Pad_48[0x28];                                      // 0x0048(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRegisteredZoneGraphData>       RegisteredZoneGraphData;                           // 0x0070(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_80[0x18];                                      // 0x0080(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x28];                                      // 0x0050(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRegisteredZoneGraphData>       RegisteredZoneGraphData;                           // 0x0078(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_88[0x18];                                      // 0x0088(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphSubsystem">();
+		STATIC_CLASS_IMPL("ZoneGraphSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphSubsystem")
 	}
 	static class UZoneGraphSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphSubsystem>();
 	}
 };
-static_assert(alignof(UZoneGraphSubsystem) == 0x000008, "Wrong alignment on UZoneGraphSubsystem");
-static_assert(sizeof(UZoneGraphSubsystem) == 0x000098, "Wrong size on UZoneGraphSubsystem");
-static_assert(offsetof(UZoneGraphSubsystem, RegisteredZoneGraphData) == 0x000070, "Member 'UZoneGraphSubsystem::RegisteredZoneGraphData' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphSubsystem;
 
 // Class ZoneGraph.ZoneShape
 // 0x0000 (0x06E0 - 0x06E0)
@@ -134,16 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneShape">();
+		STATIC_CLASS_IMPL("ZoneShape")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneShape")
 	}
 	static class AZoneShape* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZoneShape>();
 	}
 };
-static_assert(alignof(AZoneShape) == 0x000010, "Wrong alignment on AZoneShape");
-static_assert(sizeof(AZoneShape) == 0x0006E0, "Wrong size on AZoneShape");
-static_assert(offsetof(AZoneShape, ShapeComponent) == 0x0006D8, "Member 'AZoneShape::ShapeComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AZoneShape;
 
 // Class ZoneGraph.ZoneShapeComponent
 // 0x0060 (0x0820 - 0x07C0)
@@ -175,24 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneShapeComponent">();
+		STATIC_CLASS_IMPL("ZoneShapeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneShapeComponent")
 	}
 	static class UZoneShapeComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneShapeComponent>();
 	}
 };
-static_assert(alignof(UZoneShapeComponent) == 0x000010, "Wrong alignment on UZoneShapeComponent");
-static_assert(sizeof(UZoneShapeComponent) == 0x000820, "Wrong size on UZoneShapeComponent");
-static_assert(offsetof(UZoneShapeComponent, LaneProfile) == 0x0007B8, "Member 'UZoneShapeComponent::LaneProfile' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, bReverseLaneProfile) == 0x0007D4, "Member 'UZoneShapeComponent::bReverseLaneProfile' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, PerPointLaneProfiles) == 0x0007D8, "Member 'UZoneShapeComponent::PerPointLaneProfiles' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, Points) == 0x0007E8, "Member 'UZoneShapeComponent::Points' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, ShapeType) == 0x0007F8, "Member 'UZoneShapeComponent::ShapeType' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, PolygonRoutingType) == 0x0007F9, "Member 'UZoneShapeComponent::PolygonRoutingType' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, Tags) == 0x0007FC, "Member 'UZoneShapeComponent::Tags' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, ShapeConnectors) == 0x000800, "Member 'UZoneShapeComponent::ShapeConnectors' has a wrong offset!");
-static_assert(offsetof(UZoneShapeComponent, ConnectedShapes) == 0x000810, "Member 'UZoneShapeComponent::ConnectedShapes' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneShapeComponent;
 
 }
 

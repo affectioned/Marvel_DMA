@@ -13,25 +13,25 @@
 #include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyAbility_103333_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "PyAbility_103333_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_103333_BP.Ability_103333_BP_C
-// 0x0048 (0x36A0 - 0x3658)
+// 0x0048 (0x3A10 - 0x39C8)
 class UAbility_103333_BP_C final : public UPyAbility_103333
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3658(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	float                                         冲撞伤害;                                          // 0x3660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3664[0x4];                                     // 0x3664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                冲刺向上的偏移;                                    // 0x3668(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          开始踢击;                                          // 0x3680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3681[0x7];                                     // 0x3681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectContextHandle           Context;                                           // 0x3688(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x39C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                         冲撞伤害;                                          // 0x39D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39D4[0x4];                                     // 0x39D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                冲刺向上的偏移;                                    // 0x39D8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          开始踢击;                                          // 0x39F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39F1[0x7];                                     // 0x39F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayEffectContextHandle           Context;                                           // 0x39F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Event碰到敌方(class ACharacter* 碰到的敌方);
@@ -50,20 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_103333_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_103333_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_103333_BP_C")
 	}
 	static class UAbility_103333_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_103333_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_103333_BP_C) == 0x000008, "Wrong alignment on UAbility_103333_BP_C");
-static_assert(sizeof(UAbility_103333_BP_C) == 0x0036A0, "Wrong size on UAbility_103333_BP_C");
-static_assert(offsetof(UAbility_103333_BP_C, UberGraphFrame) == 0x003658, "Member 'UAbility_103333_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_103333_BP_C, 冲撞伤害) == 0x003660, "Member 'UAbility_103333_BP_C::冲撞伤害' has a wrong offset!");
-static_assert(offsetof(UAbility_103333_BP_C, 冲刺向上的偏移) == 0x003668, "Member 'UAbility_103333_BP_C::冲刺向上的偏移' has a wrong offset!");
-static_assert(offsetof(UAbility_103333_BP_C, 开始踢击) == 0x003680, "Member 'UAbility_103333_BP_C::开始踢击' has a wrong offset!");
-static_assert(offsetof(UAbility_103333_BP_C, Context) == 0x003688, "Member 'UAbility_103333_BP_C::Context' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_103333_BP_C;
 
 }
 

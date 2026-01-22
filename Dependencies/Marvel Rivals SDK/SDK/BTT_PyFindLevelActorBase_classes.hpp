@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BTT_PyFindLevelActorBase_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "PyBTNodeBase_classes.hpp"
-#include "BTT_PyFindLevelActorBase_structs.hpp"
 
 
 namespace SDK
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindLevelActorBase">();
+		STATIC_CLASS_IMPL("BTT_PyFindLevelActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindLevelActorBase")
 	}
 	static class UBTT_PyFindLevelActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindLevelActorBase>();
 	}
 };
-static_assert(alignof(UBTT_PyFindLevelActorBase) == 0x000008, "Wrong alignment on UBTT_PyFindLevelActorBase");
-static_assert(sizeof(UBTT_PyFindLevelActorBase) == 0x000158, "Wrong size on UBTT_PyFindLevelActorBase");
-static_assert(offsetof(UBTT_PyFindLevelActorBase, OutFoundActor) == 0x0000C0, "Member 'UBTT_PyFindLevelActorBase::OutFoundActor' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindLevelActorBase, OutFoundActorLocation) == 0x0000F0, "Member 'UBTT_PyFindLevelActorBase::OutFoundActorLocation' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindLevelActorBase, FilterRule) == 0x000120, "Member 'UBTT_PyFindLevelActorBase::FilterRule' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindLevelActorBase, OverrideFilterStartPoint) == 0x000121, "Member 'UBTT_PyFindLevelActorBase::OverrideFilterStartPoint' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindLevelActorBase, InFilterStartPoint) == 0x000128, "Member 'UBTT_PyFindLevelActorBase::InFilterStartPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindLevelActorBase;
 
 }
 

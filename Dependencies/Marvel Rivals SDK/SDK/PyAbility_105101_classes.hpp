@@ -20,7 +20,8 @@ namespace SDK
 
 // PythonClass PyAbility_105101.PyConfig_105101
 // 0x0020 (0x00B8 - 0x0098)
-class UPyConfig_105101 final : public UMarvelAbilityConfig
+#pragma pack(push, 0x1)
+class alignas(0x08) UPyConfig_105101 : public UMarvelAbilityConfig
 {
 public:
 	int32                                         BuffID;                                            // 0x0098(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -30,25 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105101">();
+		STATIC_CLASS_IMPL("PyConfig_105101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105101")
 	}
 	static class UPyConfig_105101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105101>();
 	}
 };
-static_assert(alignof(UPyConfig_105101) == 0x000008, "Wrong alignment on UPyConfig_105101");
-static_assert(sizeof(UPyConfig_105101) == 0x0000B8, "Wrong size on UPyConfig_105101");
-static_assert(offsetof(UPyConfig_105101, BuffID) == 0x000098, "Member 'UPyConfig_105101::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105101, DispelBuffTag) == 0x00009C, "Member 'UPyConfig_105101::DispelBuffTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105101, PinnedIgnoreTag) == 0x0000A8, "Member 'UPyConfig_105101::PinnedIgnoreTag' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_UPyConfig_105101;
 
 // PythonClass PyAbility_105101.PyAbility_105101
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_105101 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* Instigator)> OnBlockBuff;                            // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Instigator)> OnBlockBuff;                            // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -59,29 +61,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105101">();
+		STATIC_CLASS_IMPL("PyAbility_105101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105101")
 	}
 	static class UPyAbility_105101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105101>();
 	}
 };
-static_assert(alignof(UPyAbility_105101) == 0x000008, "Wrong alignment on UPyAbility_105101");
-static_assert(sizeof(UPyAbility_105101) == 0x002A00, "Wrong size on UPyAbility_105101");
-static_assert(offsetof(UPyAbility_105101, OnBlockBuff) == 0x0029F0, "Member 'UPyAbility_105101::OnBlockBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105101;
 
 // PythonClass PyAbility_105101.PyCue_Buff_Loop_10510101
-// 0x0050 (0x1690 - 0x1640)
+// 0x0050 (0x1740 - 0x16F0)
 class APyCue_Buff_Loop_10510101 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         NiagaraAsset;                                      // 0x1640(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 NiagaraSocket;                                     // 0x1648(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NiagaraOffset;                                     // 0x1658(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BlockAudioID;                                      // 0x1670(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TriggerCoolDown;                                   // 0x1674(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBlockBuffDelegate;                               // 0x1678(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         NiagaraAsset;                                      // 0x16F0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 NiagaraSocket;                                     // 0x16F8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                NiagaraOffset;                                     // 0x1708(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BlockAudioID;                                      // 0x1720(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TriggerCoolDown;                                   // 0x1724(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBlockBuffDelegate;                               // 0x1728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -91,21 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10510101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10510101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10510101")
 	}
 	static class APyCue_Buff_Loop_10510101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10510101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10510101) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10510101");
-static_assert(sizeof(APyCue_Buff_Loop_10510101) == 0x001690, "Wrong size on APyCue_Buff_Loop_10510101");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, NiagaraAsset) == 0x001640, "Member 'APyCue_Buff_Loop_10510101::NiagaraAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, NiagaraSocket) == 0x001648, "Member 'APyCue_Buff_Loop_10510101::NiagaraSocket' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, NiagaraOffset) == 0x001658, "Member 'APyCue_Buff_Loop_10510101::NiagaraOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, BlockAudioID) == 0x001670, "Member 'APyCue_Buff_Loop_10510101::BlockAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, TriggerCoolDown) == 0x001674, "Member 'APyCue_Buff_Loop_10510101::TriggerCoolDown' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_Loop_10510101, OnBlockBuffDelegate) == 0x001678, "Member 'APyCue_Buff_Loop_10510101::OnBlockBuffDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10510101;
 
 }
 

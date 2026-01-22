@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ability_200301_ActionTips.WBP_Ability_200301_ActionTips_C
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UWBP_Ability_200301_ActionTips_C final : public UMarvelUserWidget
 {
 public:
-	class UWBP_Beginner_ActionTips_C*             WBP_ActionTip_Left;                                // 0x0568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Beginner_ActionTips_C*             WBP_ActionTip_Left;                                // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_200301_ActionTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_200301_ActionTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_200301_ActionTips_C")
 	}
 	static class UWBP_Ability_200301_ActionTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_200301_ActionTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_200301_ActionTips_C) == 0x000008, "Wrong alignment on UWBP_Ability_200301_ActionTips_C");
-static_assert(sizeof(UWBP_Ability_200301_ActionTips_C) == 0x000570, "Wrong size on UWBP_Ability_200301_ActionTips_C");
-static_assert(offsetof(UWBP_Ability_200301_ActionTips_C, WBP_ActionTip_Left) == 0x000568, "Member 'UWBP_Ability_200301_ActionTips_C::WBP_ActionTip_Left' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_200301_ActionTips_C;
 
 }
 

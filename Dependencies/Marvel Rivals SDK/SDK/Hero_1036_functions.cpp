@@ -786,6 +786,61 @@ void UAbility_103681::ServerEndSpecialFalling(bool ByCancelled)
 }
 
 
+// Function Hero_1036.Cue_SummonerLoop_10369501.CanPlaceLoopEffect
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// float                                   InLineTraceLength                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    InDebugDraw                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ACue_SummonerLoop_10369501::CanPlaceLoopEffect(float InLineTraceLength, bool InDebugDraw)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_SummonerLoop_10369501", "CanPlaceLoopEffect");
+
+	Params::Cue_SummonerLoop_10369501_CanPlaceLoopEffect Parms{};
+
+	Parms.InLineTraceLength = InLineTraceLength;
+	Parms.InDebugDraw = InDebugDraw;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1036.Cue_SummonerLoop_10369501.InitializeSpiderWebDecal
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bDisableCache                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_SummonerLoop_10369501::InitializeSpiderWebDecal(bool bDisableCache)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_SummonerLoop_10369501", "InitializeSpiderWebDecal");
+
+	Params::Cue_SummonerLoop_10369501_InitializeSpiderWebDecal Parms{};
+
+	Parms.bDisableCache = bDisableCache;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1036.EpicMomentAction_1036.OnActorAbilityCancel
 // (Native, Public)
 // Parameters:

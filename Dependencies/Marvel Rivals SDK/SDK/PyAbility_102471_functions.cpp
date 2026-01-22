@@ -17,267 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_102471.PyUIController_102471.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_102471::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_102471", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PyUIController_102471.Destruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_102471::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_102471", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.ReceiveBeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10247101::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "ReceiveBeginPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10247101::K2_OnBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnFogTagupdate
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// bool                                    Exist                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPySummonedComp_10247101::OnFogTagupdate(const struct FGameplayTag& Tag, bool Exist)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnFogTagupdate");
-
-	Params::PySummonedComp_10247101_OnFogTagupdate Parms{};
-
-	Parms.Tag = std::move(Tag);
-	Parms.Exist = Exist;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnViewTargetChange
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPySummonedComp_10247101::OnViewTargetChange(class AActor* InActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnViewTargetChange");
-
-	Params::PySummonedComp_10247101_OnViewTargetChange Parms{};
-
-	Parms.InActor = InActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnSculptAssetsLoaded
-// (Native, Public, BlueprintCallable)
-
-void UPySummonedComp_10247101::OnSculptAssetsLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnSculptAssetsLoaded");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnEndAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10247101::K2_OnEndAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnEndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnRep_AbilityStatus
-// (Native, Public, BlueprintCallable)
-
-void UPySummonedComp_10247101::OnRep_AbilityStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnRep_AbilityStatus");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnRep_CrowAttackNotify
-// (Native, Public, BlueprintCallable)
-
-void UPySummonedComp_10247101::OnRep_CrowAttackNotify()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnRep_CrowAttackNotify");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnAttackMontageMissile
-// (Native, Public, BlueprintCallable)
-
-void UPySummonedComp_10247101::OnAttackMontageMissile()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "OnAttackMontageMissile");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.MulticastOnCameraBlendFinished
-// (Net, Native, NetMulticast, Public, BlueprintCallable)
-
-void UPySummonedComp_10247101::MulticastOnCameraBlendFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "MulticastOnCameraBlendFinished");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnRecycleAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPySummonedComp_10247101::K2_OnRecycleAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnRecycleAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_102471.PyCue_SummonedLoop_10247101.WhileActive
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -675,6 +414,267 @@ void UPyAbility_102471::OnDurationEnd()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyAbility_102471", "OnDurationEnd");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.ReceiveBeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10247101::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "ReceiveBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10247101::K2_OnBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnFogTagupdate
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// bool                                    Exist                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPySummonedComp_10247101::OnFogTagupdate(const struct FGameplayTag& Tag, bool Exist)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnFogTagupdate");
+
+	Params::PySummonedComp_10247101_OnFogTagupdate Parms{};
+
+	Parms.Tag = std::move(Tag);
+	Parms.Exist = Exist;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnViewTargetChange
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPySummonedComp_10247101::OnViewTargetChange(class AActor* InActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnViewTargetChange");
+
+	Params::PySummonedComp_10247101_OnViewTargetChange Parms{};
+
+	Parms.InActor = InActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnSculptAssetsLoaded
+// (Native, Public, BlueprintCallable)
+
+void UPySummonedComp_10247101::OnSculptAssetsLoaded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnSculptAssetsLoaded");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10247101::K2_OnEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnRep_AbilityStatus
+// (Native, Public, BlueprintCallable)
+
+void UPySummonedComp_10247101::OnRep_AbilityStatus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnRep_AbilityStatus");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnRep_CrowAttackNotify
+// (Native, Public, BlueprintCallable)
+
+void UPySummonedComp_10247101::OnRep_CrowAttackNotify()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnRep_CrowAttackNotify");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.OnAttackMontageMissile
+// (Native, Public, BlueprintCallable)
+
+void UPySummonedComp_10247101::OnAttackMontageMissile()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "OnAttackMontageMissile");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.MulticastOnCameraBlendFinished
+// (Net, Native, NetMulticast, Public, BlueprintCallable)
+
+void UPySummonedComp_10247101::MulticastOnCameraBlendFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "MulticastOnCameraBlendFinished");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PySummonedComp_10247101.K2_OnRecycleAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPySummonedComp_10247101::K2_OnRecycleAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummonedComp_10247101", "K2_OnRecycleAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PyUIController_102471.OnInit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_102471::OnInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_102471", "OnInit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102471.PyUIController_102471.Destruct
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_102471::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_102471", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

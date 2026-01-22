@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Bundle.PyWidget_Mall_Bundle
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_Mall_Bundle : public UPyWidget_Mall_Bundle_Base
 {
 public:
-	bool                                          ShowBundleTag;                                     // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BundleNameColor_Unhovered;                         // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BundleNameColor_Hovered;                           // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          ShowBundleTag;                                     // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BundleNameColor_Unhovered;                         // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BundleNameColor_Hovered;                           // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,7 +41,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle")
 	}
 	static class UPyWidget_Mall_Bundle* GetDefaultObj()
 	{
@@ -49,28 +53,27 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Mall_Bundle) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle");
-static_assert(sizeof(UPyWidget_Mall_Bundle) == 0x0005E8, "Wrong size on UPyWidget_Mall_Bundle");
-static_assert(offsetof(UPyWidget_Mall_Bundle, ShowBundleTag) == 0x0005BB, "Member 'UPyWidget_Mall_Bundle::ShowBundleTag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle, BundleNameColor_Unhovered) == 0x0005BC, "Member 'UPyWidget_Mall_Bundle::BundleNameColor_Unhovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle, BundleNameColor_Hovered) == 0x0005D0, "Member 'UPyWidget_Mall_Bundle::BundleNameColor_Hovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle;
 
 // PythonClass PyWidget_Mall_Bundle.PyWidget_Mall_Bundle_Common
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05F0 - 0x05F0)
 class UPyWidget_Mall_Bundle_Common final : public UPyWidget_Mall_Bundle
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Common">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Common")
 	}
 	static class UPyWidget_Mall_Bundle_Common* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_Common>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_Common) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Common");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Common) == 0x0005E8, "Wrong size on UPyWidget_Mall_Bundle_Common");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Common;
 
 }
 

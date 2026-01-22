@@ -23,15 +23,18 @@ class UAISelectTarget_BlackboardTeammate_C final : public UAISelectTargetLogic_B
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_BlackboardTeammate_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_BlackboardTeammate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_BlackboardTeammate_C")
 	}
 	static class UAISelectTarget_BlackboardTeammate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_BlackboardTeammate_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_BlackboardTeammate_C) == 0x000008, "Wrong alignment on UAISelectTarget_BlackboardTeammate_C");
-static_assert(sizeof(UAISelectTarget_BlackboardTeammate_C) == 0x000080, "Wrong size on UAISelectTarget_BlackboardTeammate_C");
+DUMPER7_ASSERTS_UAISelectTarget_BlackboardTeammate_C;
 
 }
 

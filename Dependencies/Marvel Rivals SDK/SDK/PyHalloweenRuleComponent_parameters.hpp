@@ -24,9 +24,7 @@ struct PyHalloweenRuleComponent_OnEnterPreparePoint final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRuleComponent_OnEnterPreparePoint) == 0x000004, "Wrong alignment on PyHalloweenRuleComponent_OnEnterPreparePoint");
-static_assert(sizeof(PyHalloweenRuleComponent_OnEnterPreparePoint) == 0x000004, "Wrong size on PyHalloweenRuleComponent_OnEnterPreparePoint");
-static_assert(offsetof(PyHalloweenRuleComponent_OnEnterPreparePoint, Index_0) == 0x000000, "Member 'PyHalloweenRuleComponent_OnEnterPreparePoint::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRuleComponent_OnEnterPreparePoint;
 
 // PythonFunction PyHalloweenRuleComponent.PyHalloweenRuleComponent.OnAllPlayerRally
 // 0x0008 (0x0008 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PrepareTime;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRuleComponent_OnAllPlayerRally) == 0x000004, "Wrong alignment on PyHalloweenRuleComponent_OnAllPlayerRally");
-static_assert(sizeof(PyHalloweenRuleComponent_OnAllPlayerRally) == 0x000008, "Wrong size on PyHalloweenRuleComponent_OnAllPlayerRally");
-static_assert(offsetof(PyHalloweenRuleComponent_OnAllPlayerRally, Index_0) == 0x000000, "Member 'PyHalloweenRuleComponent_OnAllPlayerRally::Index_0' has a wrong offset!");
-static_assert(offsetof(PyHalloweenRuleComponent_OnAllPlayerRally, PrepareTime) == 0x000004, "Member 'PyHalloweenRuleComponent_OnAllPlayerRally::PrepareTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRuleComponent_OnAllPlayerRally;
 
 // PythonFunction PyHalloweenRuleComponent.PyHalloweenRuleComponent.OnActorDeath
 // 0x0030 (0x0030 - 0x0000)
@@ -51,12 +46,7 @@ public:
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyHalloweenRuleComponent_OnActorDeath) == 0x000008, "Wrong alignment on PyHalloweenRuleComponent_OnActorDeath");
-static_assert(sizeof(PyHalloweenRuleComponent_OnActorDeath) == 0x000030, "Wrong size on PyHalloweenRuleComponent_OnActorDeath");
-static_assert(offsetof(PyHalloweenRuleComponent_OnActorDeath, Killer) == 0x000000, "Member 'PyHalloweenRuleComponent_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(PyHalloweenRuleComponent_OnActorDeath, Target) == 0x000008, "Member 'PyHalloweenRuleComponent_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PyHalloweenRuleComponent_OnActorDeath, ParameterHandle) == 0x000010, "Member 'PyHalloweenRuleComponent_OnActorDeath::ParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyHalloweenRuleComponent_OnActorDeath, ExtraData) == 0x000028, "Member 'PyHalloweenRuleComponent_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRuleComponent_OnActorDeath;
 
 // PythonFunction PyHalloweenRuleComponent.PyHalloweenRuleComponent.OnRespawnStart
 // 0x0008 (0x0008 - 0x0000)
@@ -66,10 +56,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RespawnTime;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRuleComponent_OnRespawnStart) == 0x000004, "Wrong alignment on PyHalloweenRuleComponent_OnRespawnStart");
-static_assert(sizeof(PyHalloweenRuleComponent_OnRespawnStart) == 0x000008, "Wrong size on PyHalloweenRuleComponent_OnRespawnStart");
-static_assert(offsetof(PyHalloweenRuleComponent_OnRespawnStart, UID) == 0x000000, "Member 'PyHalloweenRuleComponent_OnRespawnStart::UID' has a wrong offset!");
-static_assert(offsetof(PyHalloweenRuleComponent_OnRespawnStart, RespawnTime) == 0x000004, "Member 'PyHalloweenRuleComponent_OnRespawnStart::RespawnTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRuleComponent_OnRespawnStart;
 
 // PythonFunction PyHalloweenRuleComponent.PyHalloweenRuleComponent.OnCharacterAbilityFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +65,7 @@ struct PyHalloweenRuleComponent_OnCharacterAbilityFinished final
 public:
 	class AActor*                                 Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenRuleComponent_OnCharacterAbilityFinished) == 0x000008, "Wrong alignment on PyHalloweenRuleComponent_OnCharacterAbilityFinished");
-static_assert(sizeof(PyHalloweenRuleComponent_OnCharacterAbilityFinished) == 0x000008, "Wrong size on PyHalloweenRuleComponent_OnCharacterAbilityFinished");
-static_assert(offsetof(PyHalloweenRuleComponent_OnCharacterAbilityFinished, Character) == 0x000000, "Member 'PyHalloweenRuleComponent_OnCharacterAbilityFinished::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenRuleComponent_OnCharacterAbilityFinished;
 
 // PythonFunction PyHalloweenRuleComponent.PyCHalloweenRuleComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +74,7 @@ struct PyCHalloweenRuleComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCHalloweenRuleComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyCHalloweenRuleComponent_ReceiveEndPlay");
-static_assert(sizeof(PyCHalloweenRuleComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyCHalloweenRuleComponent_ReceiveEndPlay");
-static_assert(offsetof(PyCHalloweenRuleComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyCHalloweenRuleComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCHalloweenRuleComponent_ReceiveEndPlay;
 
 }
 

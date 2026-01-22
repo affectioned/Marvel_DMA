@@ -588,6 +588,25 @@ void UPyWidget_Gallery_CardAppreciate::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_Gallery_Item.PyWidget_Gallery_CardAppreciate.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Gallery_CardAppreciate::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Gallery_CardAppreciate", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Gallery_Item.PyWidget_Gallery_CardAppreciate.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

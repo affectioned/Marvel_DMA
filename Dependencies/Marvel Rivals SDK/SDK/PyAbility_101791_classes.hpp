@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101791.PyAbility_101791
-// 0x0000 (0x2AD8 - 0x2AD8)
+// 0x0000 (0x2B28 - 0x2B28)
 class UPyAbility_101791 : public UMarvelAbility_SelectTarget_Bond
 {
 public:
@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101791">();
+		STATIC_CLASS_IMPL("PyAbility_101791")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101791")
 	}
 	static class UPyAbility_101791* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101791>();
 	}
 };
-static_assert(alignof(UPyAbility_101791) == 0x000008, "Wrong alignment on UPyAbility_101791");
-static_assert(sizeof(UPyAbility_101791) == 0x002AD8, "Wrong size on UPyAbility_101791");
+DUMPER7_ASSERTS_UPyAbility_101791;
 
 }
 

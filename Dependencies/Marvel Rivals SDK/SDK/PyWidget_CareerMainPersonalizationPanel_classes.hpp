@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerMainPersonalizationPanel.PyWidget_CareerMainPersonalizationPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CareerMainPersonalizationPanel final : public UPyWidget_CareerChildPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerMainPersonalizationPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerMainPersonalizationPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerMainPersonalizationPanel")
 	}
 	static class UPyWidget_CareerMainPersonalizationPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerMainPersonalizationPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerMainPersonalizationPanel) == 0x000008, "Wrong alignment on UPyWidget_CareerMainPersonalizationPanel");
-static_assert(sizeof(UPyWidget_CareerMainPersonalizationPanel) == 0x0005C0, "Wrong size on UPyWidget_CareerMainPersonalizationPanel");
+DUMPER7_ASSERTS_UPyWidget_CareerMainPersonalizationPanel;
 
 }
 

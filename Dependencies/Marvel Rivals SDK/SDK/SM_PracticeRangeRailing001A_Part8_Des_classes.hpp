@@ -46,36 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRangeRailing001A_Part8_Des_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRangeRailing001A_Part8_Des_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRangeRailing001A_Part8_Des_C")
 	}
 	static class ASM_PracticeRangeRailing001A_Part8_Des_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRangeRailing001A_Part8_Des_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRangeRailing001A_Part8_Des_C) == 0x000010, "Wrong alignment on ASM_PracticeRangeRailing001A_Part8_Des_C");
-static_assert(sizeof(ASM_PracticeRangeRailing001A_Part8_Des_C) == 0x000810, "Wrong size on ASM_PracticeRangeRailing001A_Part8_Des_C");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A105) == 0x000760, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A105' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A104) == 0x000768, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A104' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A103) == 0x000770, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A103' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_PracticeRangeRailing009A) == 0x000778, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_PracticeRangeRailing009A' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_PracticeRangeRailing010A) == 0x000780, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_PracticeRangeRailing010A' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A99) == 0x000788, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A99' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A101) == 0x000790, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A101' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A94) == 0x000798, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A94' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A100) == 0x0007A0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A100' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A98) == 0x0007A8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A98' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A97) == 0x0007B0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A97' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A96) == 0x0007B8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A96' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A95) == 0x0007C0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A95' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A102) == 0x0007C8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A102' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A93) == 0x0007D0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A93' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A92) == 0x0007D8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A92' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A91) == 0x0007E0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A91' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A84) == 0x0007E8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A84' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_WakandaH01Building009A_A83) == 0x0007F0, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_WakandaH01Building009A_A83' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, Railing_Part) == 0x0007F8, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::Railing_Part' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeRailing001A_Part8_Des_C, SM_PracticeRangeBuilding001A_Part1_Des) == 0x000800, "Member 'ASM_PracticeRangeRailing001A_Part8_Des_C::SM_PracticeRangeBuilding001A_Part1_Des' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRangeRailing001A_Part8_Des_C;
 
 }
 

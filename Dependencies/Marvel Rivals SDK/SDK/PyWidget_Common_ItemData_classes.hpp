@@ -20,40 +20,40 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_ItemData.PyWidget_Common_ItemData
-// 0x02A8 (0x0868 - 0x05C0)
+// 0x02A8 (0x0870 - 0x05C8)
 class UPyWidget_Common_ItemData : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            InDataTime;                                        // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            OutDataTime;                                       // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           InDataTimeImg;                                     // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           OutDataTimeImg;                                    // 0x05F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeNormalColor;                                   // 0x0604(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiringColor;                                 // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiredColor;                                  // 0x062C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   QualityColor;                                      // 0x0640(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TitleDarkColor;                                    // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescDarkColor;                                     // 0x0660(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AccessDarkColor;                                   // 0x0674(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SourceDarkColor;                                   // 0x0688(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ShadowDarkColor;                                   // 0x069C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TitleLightColor;                                   // 0x06AC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescLightColor;                                    // 0x06BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AccessLightColor;                                  // 0x06D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SourceLightColor;                                  // 0x06E4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ShadowLightColor;                                  // 0x06F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsDarkStyle;                                       // 0x0708(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowTheme;                                       // 0x0709(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPanelPositionType                            PanelPosition;                                     // 0x070A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_70B[0x5];                                      // 0x070B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        SourceGuideStyle;                                  // 0x0710(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_SourceGuide;                               // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_HoverDesc;                                 // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SourceString;                                      // 0x0840(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_HaveLimit;                                    // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Warning;                                      // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BtnFocusable;                                      // 0x0860(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            InDataTime;                                        // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            OutDataTime;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           InDataTimeImg;                                     // 0x05EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           OutDataTimeImg;                                    // 0x05FC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeNormalColor;                                   // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiringColor;                                 // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiredColor;                                  // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   QualityColor;                                      // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TitleDarkColor;                                    // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescDarkColor;                                     // 0x0668(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AccessDarkColor;                                   // 0x067C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SourceDarkColor;                                   // 0x0690(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ShadowDarkColor;                                   // 0x06A4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TitleLightColor;                                   // 0x06B4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescLightColor;                                    // 0x06C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AccessLightColor;                                  // 0x06D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SourceLightColor;                                  // 0x06EC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ShadowLightColor;                                  // 0x0700(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsDarkStyle;                                       // 0x0710(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowTheme;                                       // 0x0711(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPanelPositionType                            PanelPosition;                                     // 0x0712(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_713[0x5];                                      // 0x0713(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        SourceGuideStyle;                                  // 0x0718(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_SourceGuide;                               // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_HoverDesc;                                 // 0x0840(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SourceString;                                      // 0x0848(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_HaveLimit;                                    // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Warning;                                      // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BtnFocusable;                                      // 0x0868(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -65,43 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_Common_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_ItemData")
 	}
 	static class UPyWidget_Common_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_ItemData) == 0x000008, "Wrong alignment on UPyWidget_Common_ItemData");
-static_assert(sizeof(UPyWidget_Common_ItemData) == 0x000868, "Wrong size on UPyWidget_Common_ItemData");
-static_assert(offsetof(UPyWidget_Common_ItemData, InDataTime) == 0x0005BC, "Member 'UPyWidget_Common_ItemData::InDataTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, OutDataTime) == 0x0005D0, "Member 'UPyWidget_Common_ItemData::OutDataTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, InDataTimeImg) == 0x0005E4, "Member 'UPyWidget_Common_ItemData::InDataTimeImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, OutDataTimeImg) == 0x0005F4, "Member 'UPyWidget_Common_ItemData::OutDataTimeImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, TimeNormalColor) == 0x000604, "Member 'UPyWidget_Common_ItemData::TimeNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, TimeExpiringColor) == 0x000618, "Member 'UPyWidget_Common_ItemData::TimeExpiringColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, TimeExpiredColor) == 0x00062C, "Member 'UPyWidget_Common_ItemData::TimeExpiredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, QualityColor) == 0x000640, "Member 'UPyWidget_Common_ItemData::QualityColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, TitleDarkColor) == 0x000650, "Member 'UPyWidget_Common_ItemData::TitleDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, DescDarkColor) == 0x000660, "Member 'UPyWidget_Common_ItemData::DescDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, AccessDarkColor) == 0x000674, "Member 'UPyWidget_Common_ItemData::AccessDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, SourceDarkColor) == 0x000688, "Member 'UPyWidget_Common_ItemData::SourceDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, ShadowDarkColor) == 0x00069C, "Member 'UPyWidget_Common_ItemData::ShadowDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, TitleLightColor) == 0x0006AC, "Member 'UPyWidget_Common_ItemData::TitleLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, DescLightColor) == 0x0006BC, "Member 'UPyWidget_Common_ItemData::DescLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, AccessLightColor) == 0x0006D0, "Member 'UPyWidget_Common_ItemData::AccessLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, SourceLightColor) == 0x0006E4, "Member 'UPyWidget_Common_ItemData::SourceLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, ShadowLightColor) == 0x0006F8, "Member 'UPyWidget_Common_ItemData::ShadowLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, IsDarkStyle) == 0x000708, "Member 'UPyWidget_Common_ItemData::IsDarkStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, IsShowTheme) == 0x000709, "Member 'UPyWidget_Common_ItemData::IsShowTheme' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, PanelPosition) == 0x00070A, "Member 'UPyWidget_Common_ItemData::PanelPosition' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, SourceGuideStyle) == 0x000710, "Member 'UPyWidget_Common_ItemData::SourceGuideStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, AKEvent_SourceGuide) == 0x000830, "Member 'UPyWidget_Common_ItemData::AKEvent_SourceGuide' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, AKEvent_HoverDesc) == 0x000838, "Member 'UPyWidget_Common_ItemData::AKEvent_HoverDesc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, SourceString) == 0x000840, "Member 'UPyWidget_Common_ItemData::SourceString' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, Text_HaveLimit) == 0x000850, "Member 'UPyWidget_Common_ItemData::Text_HaveLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, Text_Warning) == 0x000858, "Member 'UPyWidget_Common_ItemData::Text_Warning' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ItemData, BtnFocusable) == 0x000860, "Member 'UPyWidget_Common_ItemData::BtnFocusable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_ItemData;
 
 }
 

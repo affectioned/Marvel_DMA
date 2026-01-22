@@ -25,8 +25,7 @@ struct alignas(0x10) FAimIKChainLink final
 public:
 	uint8                                         Pad_0[0x140];                                      // 0x0000(0x0140)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAimIKChainLink) == 0x000010, "Wrong alignment on FAimIKChainLink");
-static_assert(sizeof(FAimIKChainLink) == 0x000140, "Wrong size on FAimIKChainLink");
+DUMPER7_ASSERTS_FAimIKChainLink;
 
 // ScriptStruct AnimationProCore.AimIKConfig
 // 0x00F0 (0x00F0 - 0x0000)
@@ -47,19 +46,7 @@ public:
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAxis                                  UpAxis;                                            // 0x00D0(0x0020)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAimIKConfig) == 0x000010, "Wrong alignment on FAimIKConfig");
-static_assert(sizeof(FAimIKConfig) == 0x0000F0, "Wrong size on FAimIKConfig");
-static_assert(offsetof(FAimIKConfig, AimSocketOffset) == 0x000000, "Member 'FAimIKConfig::AimSocketOffset' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, AimAxis) == 0x000060, "Member 'FAimIKConfig::AimAxis' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, TipBone) == 0x000080, "Member 'FAimIKConfig::TipBone' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, RootBone) == 0x000094, "Member 'FAimIKConfig::RootBone' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, Tolerance) == 0x0000A8, "Member 'FAimIKConfig::Tolerance' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, MaxIterations) == 0x0000AC, "Member 'FAimIKConfig::MaxIterations' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, bEnableRotateLimit) == 0x0000B0, "Member 'FAimIKConfig::bEnableRotateLimit' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, InterpolationSpeed) == 0x0000B4, "Member 'FAimIKConfig::InterpolationSpeed' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, RotationLimitPerJoints) == 0x0000B8, "Member 'FAimIKConfig::RotationLimitPerJoints' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, bUseLookUpAxis) == 0x0000C8, "Member 'FAimIKConfig::bUseLookUpAxis' has a wrong offset!");
-static_assert(offsetof(FAimIKConfig, UpAxis) == 0x0000D0, "Member 'FAimIKConfig::UpAxis' has a wrong offset!");
+DUMPER7_ASSERTS_FAimIKConfig;
 
 }
 

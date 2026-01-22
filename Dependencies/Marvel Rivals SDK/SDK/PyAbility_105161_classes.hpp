@@ -17,28 +17,30 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105161.PyConfig_105161
-// 0x0010 (0x1B20 - 0x1B10)
+// 0x0010 (0x1F20 - 0x1F10)
 class UPyConfig_105161 final : public UConfig_100015
 {
 public:
-	int32                                         BenjiaminGrimMarkBuffID;                           // 0x1B10(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BenjiaminGrimMarkBuffID;                           // 0x1F10(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105161">();
+		STATIC_CLASS_IMPL("PyConfig_105161")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105161")
 	}
 	static class UPyConfig_105161* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105161>();
 	}
 };
-static_assert(alignof(UPyConfig_105161) == 0x000010, "Wrong alignment on UPyConfig_105161");
-static_assert(sizeof(UPyConfig_105161) == 0x001B20, "Wrong size on UPyConfig_105161");
-static_assert(offsetof(UPyConfig_105161, BenjiaminGrimMarkBuffID) == 0x001B10, "Member 'UPyConfig_105161::BenjiaminGrimMarkBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105161;
 
 // PythonClass PyAbility_105161.PyAbility_105161
-// 0x0000 (0x3260 - 0x3260)
+// 0x0000 (0x32F8 - 0x32F8)
 class UPyAbility_105161 : public UAbility_100015
 {
 public:
@@ -54,15 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105161">();
+		STATIC_CLASS_IMPL("PyAbility_105161")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105161")
 	}
 	static class UPyAbility_105161* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105161>();
 	}
 };
-static_assert(alignof(UPyAbility_105161) == 0x000008, "Wrong alignment on UPyAbility_105161");
-static_assert(sizeof(UPyAbility_105161) == 0x003260, "Wrong size on UPyAbility_105161");
+DUMPER7_ASSERTS_UPyAbility_105161;
 
 }
 

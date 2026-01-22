@@ -16,42 +16,8 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_2DActivityItem
-// 0x0028 (0x05E8 - 0x05C0)
-class UPyWidget_Activity151_2DActivityItem : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         activity_id;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   activity_name;                                     // 0x05C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UTexture2D*                             activity_icon;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             reward_icon;                                       // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-	void PreConstruct(bool IsDesignTime);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Activity151_2DActivityItem">();
-	}
-	static class UPyWidget_Activity151_2DActivityItem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Activity151_2DActivityItem>();
-	}
-};
-static_assert(alignof(UPyWidget_Activity151_2DActivityItem) == 0x000008, "Wrong alignment on UPyWidget_Activity151_2DActivityItem");
-static_assert(sizeof(UPyWidget_Activity151_2DActivityItem) == 0x0005E8, "Wrong size on UPyWidget_Activity151_2DActivityItem");
-static_assert(offsetof(UPyWidget_Activity151_2DActivityItem, activity_id) == 0x0005BC, "Member 'UPyWidget_Activity151_2DActivityItem::activity_id' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_2DActivityItem, activity_name) == 0x0005C0, "Member 'UPyWidget_Activity151_2DActivityItem::activity_name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_2DActivityItem, activity_icon) == 0x0005D8, "Member 'UPyWidget_Activity151_2DActivityItem::activity_icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_2DActivityItem, reward_icon) == 0x0005E0, "Member 'UPyWidget_Activity151_2DActivityItem::reward_icon' has a wrong offset!");
-
 // PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_3DActivityItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity151_3DActivityItem : public UPyMarvelUserWidget
 {
 public:
@@ -62,92 +28,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_3DActivityItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_3DActivityItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_3DActivityItem")
 	}
 	static class UPyWidget_Activity151_3DActivityItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_3DActivityItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_3DActivityItem) == 0x000008, "Wrong alignment on UPyWidget_Activity151_3DActivityItem");
-static_assert(sizeof(UPyWidget_Activity151_3DActivityItem) == 0x0005C0, "Wrong size on UPyWidget_Activity151_3DActivityItem");
-
-// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_M2201
-// 0x0050 (0x0610 - 0x05C0)
-class UPyWidget_Activity151_M2201 final : public UPyWidget_Activity151_3DActivityItem
-{
-public:
-	class UBinkMediaPlayer*                       countdown_fadein_video;                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       countdown_fadein_mask_video;                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       countdown_loop_video;                              // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       countdown_loop_mask_video;                         // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewarded_fadein_video;                             // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewarded_fadein_mask_video;                        // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewarded_loop_video;                               // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewarded_loop_mask_video;                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewardable_loop_video;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       rewardable_loop_mask_video;                        // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Activity151_M2201">();
-	}
-	static class UPyWidget_Activity151_M2201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Activity151_M2201>();
-	}
-};
-static_assert(alignof(UPyWidget_Activity151_M2201) == 0x000008, "Wrong alignment on UPyWidget_Activity151_M2201");
-static_assert(sizeof(UPyWidget_Activity151_M2201) == 0x000610, "Wrong size on UPyWidget_Activity151_M2201");
-static_assert(offsetof(UPyWidget_Activity151_M2201, countdown_fadein_video) == 0x0005C0, "Member 'UPyWidget_Activity151_M2201::countdown_fadein_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, countdown_fadein_mask_video) == 0x0005C8, "Member 'UPyWidget_Activity151_M2201::countdown_fadein_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, countdown_loop_video) == 0x0005D0, "Member 'UPyWidget_Activity151_M2201::countdown_loop_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, countdown_loop_mask_video) == 0x0005D8, "Member 'UPyWidget_Activity151_M2201::countdown_loop_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewarded_fadein_video) == 0x0005E0, "Member 'UPyWidget_Activity151_M2201::rewarded_fadein_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewarded_fadein_mask_video) == 0x0005E8, "Member 'UPyWidget_Activity151_M2201::rewarded_fadein_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewarded_loop_video) == 0x0005F0, "Member 'UPyWidget_Activity151_M2201::rewarded_loop_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewarded_loop_mask_video) == 0x0005F8, "Member 'UPyWidget_Activity151_M2201::rewarded_loop_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewardable_loop_video) == 0x000600, "Member 'UPyWidget_Activity151_M2201::rewardable_loop_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_M2201, rewardable_loop_mask_video) == 0x000608, "Member 'UPyWidget_Activity151_M2201::rewardable_loop_mask_video' has a wrong offset!");
-
-// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_Activity146
-// 0x0000 (0x05E8 - 0x05E8)
-class UPyWidget_Activity151_Activity146 final : public UPyWidget_Activity151_2DActivityItem
-{
-public:
-	void OnInitialized();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Activity151_Activity146">();
-	}
-	static class UPyWidget_Activity151_Activity146* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Activity151_Activity146>();
-	}
-};
-static_assert(alignof(UPyWidget_Activity151_Activity146) == 0x000008, "Wrong alignment on UPyWidget_Activity151_Activity146");
-static_assert(sizeof(UPyWidget_Activity151_Activity146) == 0x0005E8, "Wrong size on UPyWidget_Activity151_Activity146");
+DUMPER7_ASSERTS_UPyWidget_Activity151_3DActivityItem;
 
 // PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_3DSimpleActivityItem
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Activity151_3DSimpleActivityItem : public UPyWidget_Activity151_3DActivityItem
 {
 public:
-	class UBinkMediaPlayer*                       normal_loop_video;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       normal_loop_mask_video;                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       hover_fadein_video;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       hover_fadein_mask_video;                           // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       hover_loop_video;                                  // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       hover_loop_mask_video;                             // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       normal_loop_video;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       normal_loop_mask_video;                            // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       hover_fadein_video;                                // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       hover_fadein_mask_video;                           // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       hover_loop_video;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       hover_loop_mask_video;                             // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -155,24 +59,79 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_3DSimpleActivityItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_3DSimpleActivityItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_3DSimpleActivityItem")
 	}
 	static class UPyWidget_Activity151_3DSimpleActivityItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_3DSimpleActivityItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_3DSimpleActivityItem) == 0x000008, "Wrong alignment on UPyWidget_Activity151_3DSimpleActivityItem");
-static_assert(sizeof(UPyWidget_Activity151_3DSimpleActivityItem) == 0x0005F0, "Wrong size on UPyWidget_Activity151_3DSimpleActivityItem");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, normal_loop_video) == 0x0005C0, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::normal_loop_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, normal_loop_mask_video) == 0x0005C8, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::normal_loop_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, hover_fadein_video) == 0x0005D0, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::hover_fadein_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, hover_fadein_mask_video) == 0x0005D8, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::hover_fadein_mask_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, hover_loop_video) == 0x0005E0, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::hover_loop_video' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DSimpleActivityItem, hover_loop_mask_video) == 0x0005E8, "Member 'UPyWidget_Activity151_3DSimpleActivityItem::hover_loop_mask_video' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_3DSimpleActivityItem;
+
+// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_2DActivityItem
+// 0x0028 (0x05F0 - 0x05C8)
+class UPyWidget_Activity151_2DActivityItem : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         activity_id;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   activity_name;                                     // 0x05C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UTexture2D*                             activity_icon;                                     // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             reward_icon;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	void PreConstruct(bool IsDesignTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Activity151_2DActivityItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_2DActivityItem")
+	}
+	static class UPyWidget_Activity151_2DActivityItem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Activity151_2DActivityItem>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Activity151_2DActivityItem;
+
+// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_Activity146
+// 0x0000 (0x05F0 - 0x05F0)
+class UPyWidget_Activity151_Activity146 final : public UPyWidget_Activity151_2DActivityItem
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Activity151_Activity146")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_Activity146")
+	}
+	static class UPyWidget_Activity151_Activity146* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Activity151_Activity146>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Activity151_Activity146;
 
 // PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_Activity149
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_Activity151_Activity149 final : public UPyWidget_Activity151_3DSimpleActivityItem
 {
 public:
@@ -182,15 +141,55 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_Activity149">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_Activity149")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_Activity149")
 	}
 	static class UPyWidget_Activity151_Activity149* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_Activity149>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_Activity149) == 0x000008, "Wrong alignment on UPyWidget_Activity151_Activity149");
-static_assert(sizeof(UPyWidget_Activity151_Activity149) == 0x0005F0, "Wrong size on UPyWidget_Activity151_Activity149");
+DUMPER7_ASSERTS_UPyWidget_Activity151_Activity149;
+
+// PythonClass PyWidget_Activity151_ActivityItem.PyWidget_Activity151_M2201
+// 0x0050 (0x0618 - 0x05C8)
+class UPyWidget_Activity151_M2201 final : public UPyWidget_Activity151_3DActivityItem
+{
+public:
+	class UBinkMediaPlayer*                       countdown_fadein_video;                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       countdown_fadein_mask_video;                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       countdown_loop_video;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       countdown_loop_mask_video;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewarded_fadein_video;                             // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewarded_fadein_mask_video;                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewarded_loop_video;                               // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewarded_loop_mask_video;                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewardable_loop_video;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       rewardable_loop_mask_video;                        // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Activity151_M2201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_M2201")
+	}
+	static class UPyWidget_Activity151_M2201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Activity151_M2201>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Activity151_M2201;
 
 }
 

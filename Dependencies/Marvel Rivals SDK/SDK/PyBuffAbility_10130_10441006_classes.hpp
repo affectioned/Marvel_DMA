@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441006.PyBuffAbility_10130_10441006_Base
-// 0x0018 (0x1A48 - 0x1A30)
+// 0x0018 (0x1A60 - 0x1A48)
 class UPyBuffAbility_10130_10441006_Base : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<float>                                 AdditionalIncreaseOfStack;                         // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         HealthCheckInterval;                               // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 AdditionalIncreaseOfStack;                         // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         HealthCheckInterval;                               // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,59 +33,64 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10441006_Base">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10441006_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10441006_Base")
 	}
 	static class UPyBuffAbility_10130_10441006_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10441006_Base>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10441006_Base) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10441006_Base");
-static_assert(sizeof(UPyBuffAbility_10130_10441006_Base) == 0x001A48, "Wrong size on UPyBuffAbility_10130_10441006_Base");
-static_assert(offsetof(UPyBuffAbility_10130_10441006_Base, AdditionalIncreaseOfStack) == 0x001A30, "Member 'UPyBuffAbility_10130_10441006_Base::AdditionalIncreaseOfStack' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10441006_Base, HealthCheckInterval) == 0x001A40, "Member 'UPyBuffAbility_10130_10441006_Base::HealthCheckInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10441006_Base;
 
 // PythonClass PyBuffAbility_10130_10441006.PyBuffAbility_10130_10440091
-// 0x0008 (0x1A50 - 0x1A48)
+// 0x0008 (0x1A68 - 0x1A60)
 class UPyBuffAbility_10130_10440091 : public UPyBuffAbility_10130_10441006_Base
 {
 public:
-	class UCurveFloat*                            HealIncreaseOfLostHealth;                          // 0x1A48(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            HealIncreaseOfLostHealth;                          // 0x1A60(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10440091">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10440091")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10440091")
 	}
 	static class UPyBuffAbility_10130_10440091* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10440091>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10440091) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10440091");
-static_assert(sizeof(UPyBuffAbility_10130_10440091) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10440091");
-static_assert(offsetof(UPyBuffAbility_10130_10440091, HealIncreaseOfLostHealth) == 0x001A48, "Member 'UPyBuffAbility_10130_10440091::HealIncreaseOfLostHealth' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10440091;
 
 // PythonClass PyBuffAbility_10130_10441006.PyBuffAbility_10130_10440090
-// 0x0008 (0x1A50 - 0x1A48)
+// 0x0008 (0x1A68 - 0x1A60)
 class UPyBuffAbility_10130_10440090 : public UPyBuffAbility_10130_10441006_Base
 {
 public:
-	class UCurveFloat*                            DamageIncreaseOfLostHealth;                        // 0x1A48(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DamageIncreaseOfLostHealth;                        // 0x1A60(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10440090">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10440090")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10440090")
 	}
 	static class UPyBuffAbility_10130_10440090* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10440090>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10440090) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10440090");
-static_assert(sizeof(UPyBuffAbility_10130_10440090) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10440090");
-static_assert(offsetof(UPyBuffAbility_10130_10440090, DamageIncreaseOfLostHealth) == 0x001A48, "Member 'UPyBuffAbility_10130_10440090::DamageIncreaseOfLostHealth' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10440090;
 
 }
 

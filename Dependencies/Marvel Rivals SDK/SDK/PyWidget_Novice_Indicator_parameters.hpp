@@ -21,9 +21,7 @@ struct PyWidget_Novice_Indicator_SetWidgetComponentOwner final
 public:
 	class UWidgetComponent*                       InWidgetComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Novice_Indicator_SetWidgetComponentOwner) == 0x000008, "Wrong alignment on PyWidget_Novice_Indicator_SetWidgetComponentOwner");
-static_assert(sizeof(PyWidget_Novice_Indicator_SetWidgetComponentOwner) == 0x000008, "Wrong size on PyWidget_Novice_Indicator_SetWidgetComponentOwner");
-static_assert(offsetof(PyWidget_Novice_Indicator_SetWidgetComponentOwner, InWidgetComponent) == 0x000000, "Member 'PyWidget_Novice_Indicator_SetWidgetComponentOwner::InWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Novice_Indicator_SetWidgetComponentOwner;
 
 }
 

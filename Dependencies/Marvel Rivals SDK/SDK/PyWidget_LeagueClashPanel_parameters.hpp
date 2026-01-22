@@ -23,9 +23,7 @@ struct PyWidget_LeagueClashPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueClashPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_LeagueClashPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_LeagueClashPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_LeagueClashPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_LeagueClashPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_LeagueClashPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueClashPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_LeagueClashPanel.PyWidget_LeagueClashPanel.btn_navigation_rule
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueClashPanel_btn_navigation_rule) == 0x000008, "Wrong alignment on PyWidget_LeagueClashPanel_btn_navigation_rule");
-static_assert(sizeof(PyWidget_LeagueClashPanel_btn_navigation_rule) == 0x000010, "Wrong size on PyWidget_LeagueClashPanel_btn_navigation_rule");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_rule, NavType) == 0x000000, "Member 'PyWidget_LeagueClashPanel_btn_navigation_rule::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_rule, ReturnValue) == 0x000008, "Member 'PyWidget_LeagueClashPanel_btn_navigation_rule::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueClashPanel_btn_navigation_rule;
 
 // PythonFunction PyWidget_LeagueClashPanel.PyWidget_LeagueClashPanel.btn_navigation_battle_team
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueClashPanel_btn_navigation_battle_team) == 0x000008, "Wrong alignment on PyWidget_LeagueClashPanel_btn_navigation_battle_team");
-static_assert(sizeof(PyWidget_LeagueClashPanel_btn_navigation_battle_team) == 0x000010, "Wrong size on PyWidget_LeagueClashPanel_btn_navigation_battle_team");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_battle_team, NavType) == 0x000000, "Member 'PyWidget_LeagueClashPanel_btn_navigation_battle_team::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_battle_team, ReturnValue) == 0x000008, "Member 'PyWidget_LeagueClashPanel_btn_navigation_battle_team::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueClashPanel_btn_navigation_battle_team;
 
 // PythonFunction PyWidget_LeagueClashPanel.PyWidget_LeagueClashPanel.btn_navigation_league_go_to
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +56,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueClashPanel_btn_navigation_league_go_to) == 0x000008, "Wrong alignment on PyWidget_LeagueClashPanel_btn_navigation_league_go_to");
-static_assert(sizeof(PyWidget_LeagueClashPanel_btn_navigation_league_go_to) == 0x000010, "Wrong size on PyWidget_LeagueClashPanel_btn_navigation_league_go_to");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_league_go_to, NavType) == 0x000000, "Member 'PyWidget_LeagueClashPanel_btn_navigation_league_go_to::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_LeagueClashPanel_btn_navigation_league_go_to, ReturnValue) == 0x000008, "Member 'PyWidget_LeagueClashPanel_btn_navigation_league_go_to::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueClashPanel_btn_navigation_league_go_to;
 
 }
 

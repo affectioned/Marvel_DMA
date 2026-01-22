@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105002.PyCue_Ability_Loop_10500201
-// 0x0070 (0x1220 - 0x11B0)
+// 0x0070 (0x1230 - 0x11C0)
 class APyCue_Ability_Loop_10500201 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FGameplayTagContainer                  TagsRemoveHandNiagara;                             // 0x11B0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  TagsRemoveHandNiagara;                             // 0x11C0(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10500201">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10500201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10500201")
 	}
 	static class APyCue_Ability_Loop_10500201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10500201>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10500201) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10500201");
-static_assert(sizeof(APyCue_Ability_Loop_10500201) == 0x001220, "Wrong size on APyCue_Ability_Loop_10500201");
-static_assert(offsetof(APyCue_Ability_Loop_10500201, TagsRemoveHandNiagara) == 0x0011B0, "Member 'APyCue_Ability_Loop_10500201::TagsRemoveHandNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10500201;
 
 }
 

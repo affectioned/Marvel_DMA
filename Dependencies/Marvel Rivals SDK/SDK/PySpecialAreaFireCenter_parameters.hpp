@@ -23,9 +23,7 @@ struct PySpecialAreaFireCenter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaFireCenter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpecialAreaFireCenter_ReceiveEndPlay");
-static_assert(sizeof(PySpecialAreaFireCenter_ReceiveEndPlay) == 0x000001, "Wrong size on PySpecialAreaFireCenter_ReceiveEndPlay");
-static_assert(offsetof(PySpecialAreaFireCenter_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySpecialAreaFireCenter_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaFireCenter_ReceiveEndPlay;
 
 // PythonFunction PySpecialAreaFireCenter.PySpecialAreaFireCenter.OnMonitorTriggeredHandler
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PySpecialAreaFireCenter_OnMonitorTriggeredHandler final
 public:
 	float                                         Degree;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaFireCenter_OnMonitorTriggeredHandler) == 0x000004, "Wrong alignment on PySpecialAreaFireCenter_OnMonitorTriggeredHandler");
-static_assert(sizeof(PySpecialAreaFireCenter_OnMonitorTriggeredHandler) == 0x000004, "Wrong size on PySpecialAreaFireCenter_OnMonitorTriggeredHandler");
-static_assert(offsetof(PySpecialAreaFireCenter_OnMonitorTriggeredHandler, Degree) == 0x000000, "Member 'PySpecialAreaFireCenter_OnMonitorTriggeredHandler::Degree' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaFireCenter_OnMonitorTriggeredHandler;
 
 }
 

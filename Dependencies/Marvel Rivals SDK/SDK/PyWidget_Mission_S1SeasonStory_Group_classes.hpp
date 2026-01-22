@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_S1SeasonStory_Group.PyWidget_Mission_S1SeasonStory_Group
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Mission_S1SeasonStory_Group final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EventId;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MissionItem_V1;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                MissionItem_V2;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FadeInAnimInterval;                                // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EventId;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MissionItem_V1;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MissionItem_V2;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FadeInAnimInterval;                                // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S1SeasonStory_Group">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S1SeasonStory_Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S1SeasonStory_Group")
 	}
 	static class UPyWidget_Mission_S1SeasonStory_Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S1SeasonStory_Group>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S1SeasonStory_Group) == 0x000008, "Wrong alignment on UPyWidget_Mission_S1SeasonStory_Group");
-static_assert(sizeof(UPyWidget_Mission_S1SeasonStory_Group) == 0x0005D8, "Wrong size on UPyWidget_Mission_S1SeasonStory_Group");
-static_assert(offsetof(UPyWidget_Mission_S1SeasonStory_Group, EventId) == 0x0005BC, "Member 'UPyWidget_Mission_S1SeasonStory_Group::EventId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_S1SeasonStory_Group, MissionItem_V1) == 0x0005C0, "Member 'UPyWidget_Mission_S1SeasonStory_Group::MissionItem_V1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_S1SeasonStory_Group, MissionItem_V2) == 0x0005C8, "Member 'UPyWidget_Mission_S1SeasonStory_Group::MissionItem_V2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_S1SeasonStory_Group, FadeInAnimInterval) == 0x0005D0, "Member 'UPyWidget_Mission_S1SeasonStory_Group::FadeInAnimInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_S1SeasonStory_Group;
 
 }
 

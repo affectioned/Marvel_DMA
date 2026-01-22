@@ -10,40 +10,40 @@
 
 #include "Basic.hpp"
 
+#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Hero_1041_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
-#include "Hero_1041_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104181.PyConfig_104181
-// 0x1670 (0x2F70 - 0x1900)
+// 0x19C0 (0x3670 - 0x1CB0)
 class UPyConfig_104181 final : public UConfig_104181
 {
 public:
-	struct FGameplayTag                           SpawnScopeTag;                                     // 0x1900(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x190C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x1910(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SpawnScopeTag;                                     // 0x1CB0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1CBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x1CC0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104181">();
+		STATIC_CLASS_IMPL("PyConfig_104181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104181")
 	}
 	static class UPyConfig_104181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104181>();
 	}
 };
-static_assert(alignof(UPyConfig_104181) == 0x000010, "Wrong alignment on UPyConfig_104181");
-static_assert(sizeof(UPyConfig_104181) == 0x002F70, "Wrong size on UPyConfig_104181");
-static_assert(offsetof(UPyConfig_104181, SpawnScopeTag) == 0x001900, "Member 'UPyConfig_104181::SpawnScopeTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104181, ScopeID) == 0x00190C, "Member 'UPyConfig_104181::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104181, TraceContext) == 0x001910, "Member 'UPyConfig_104181::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104181;
 
 // PythonClass PyAbility_104181.PyCue_Scope_Start_10418101
 // 0x0000 (0x0478 - 0x0478)
@@ -55,23 +55,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10418101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10418101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10418101")
 	}
 	static class UPyCue_Scope_Start_10418101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10418101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10418101) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10418101");
-static_assert(sizeof(UPyCue_Scope_Start_10418101) == 0x000478, "Wrong size on UPyCue_Scope_Start_10418101");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10418101;
 
 // PythonClass PyAbility_104181.PyAbility_104181
-// 0x0030 (0x2D78 - 0x2D48)
+// 0x0030 (0x2DC8 - 0x2D98)
 class UPyAbility_104181 : public UAbility_104182
 {
 public:
-	struct FVector                                ImpactNormal;                                      // 0x2D48(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                RelativeLocation_ImpactPoint;                      // 0x2D60(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ImpactNormal;                                      // 0x2D98(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                RelativeLocation_ImpactPoint;                      // 0x2DB0(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -84,20 +87,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104181">();
+		STATIC_CLASS_IMPL("PyAbility_104181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104181")
 	}
 	static class UPyAbility_104181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104181>();
 	}
 };
-static_assert(alignof(UPyAbility_104181) == 0x000008, "Wrong alignment on UPyAbility_104181");
-static_assert(sizeof(UPyAbility_104181) == 0x002D78, "Wrong size on UPyAbility_104181");
-static_assert(offsetof(UPyAbility_104181, ImpactNormal) == 0x002D48, "Member 'UPyAbility_104181::ImpactNormal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104181, RelativeLocation_ImpactPoint) == 0x002D60, "Member 'UPyAbility_104181::RelativeLocation_ImpactPoint' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104181;
 
 // PythonClass PyAbility_104181.PyUIController_104181
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104181 final : public UUIC_Ability
 {
 public:
@@ -106,15 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104181">();
+		STATIC_CLASS_IMPL("PyUIController_104181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104181")
 	}
 	static class UPyUIController_104181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104181>();
 	}
 };
-static_assert(alignof(UPyUIController_104181) == 0x000008, "Wrong alignment on UPyUIController_104181");
-static_assert(sizeof(UPyUIController_104181) == 0x000F10, "Wrong size on UPyUIController_104181");
+DUMPER7_ASSERTS_UPyUIController_104181;
 
 }
 

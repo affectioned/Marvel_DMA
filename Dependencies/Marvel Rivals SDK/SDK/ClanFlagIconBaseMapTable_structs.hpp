@@ -25,13 +25,7 @@ public:
 	TSoftObjectPtr<class UTexture>                BaseMap_vx3_12_6652CDB8457B0AFD37BB0BAFB1E5D8B7;   // 0x0090(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          IsFree_14_B18CB55947E77A60296B60A5AED83396;        // 0x00C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FClanFlagIconBaseMapTable) == 0x000008, "Wrong alignment on FClanFlagIconBaseMapTable");
-static_assert(sizeof(FClanFlagIconBaseMapTable) == 0x0000C8, "Wrong size on FClanFlagIconBaseMapTable");
-static_assert(offsetof(FClanFlagIconBaseMapTable, BaseMap_3_2C5B40C44F5C0D33F94E36A3C2DA36DF) == 0x000000, "Member 'FClanFlagIconBaseMapTable::BaseMap_3_2C5B40C44F5C0D33F94E36A3C2DA36DF' has a wrong offset!");
-static_assert(offsetof(FClanFlagIconBaseMapTable, BaseMap_vx1_10_311B0AE94110757EC9A0F08753788C33) == 0x000030, "Member 'FClanFlagIconBaseMapTable::BaseMap_vx1_10_311B0AE94110757EC9A0F08753788C33' has a wrong offset!");
-static_assert(offsetof(FClanFlagIconBaseMapTable, BaseMap_vx2_11_B217A29E430EC2E9F3F5219209A7DD2C) == 0x000060, "Member 'FClanFlagIconBaseMapTable::BaseMap_vx2_11_B217A29E430EC2E9F3F5219209A7DD2C' has a wrong offset!");
-static_assert(offsetof(FClanFlagIconBaseMapTable, BaseMap_vx3_12_6652CDB8457B0AFD37BB0BAFB1E5D8B7) == 0x000090, "Member 'FClanFlagIconBaseMapTable::BaseMap_vx3_12_6652CDB8457B0AFD37BB0BAFB1E5D8B7' has a wrong offset!");
-static_assert(offsetof(FClanFlagIconBaseMapTable, IsFree_14_B18CB55947E77A60296B60A5AED83396) == 0x0000C0, "Member 'FClanFlagIconBaseMapTable::IsFree_14_B18CB55947E77A60296B60A5AED83396' has a wrong offset!");
+DUMPER7_ASSERTS_FClanFlagIconBaseMapTable;
 
 }
 

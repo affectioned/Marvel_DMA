@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103962.PyAbility_103962
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UPyAbility_103962 : public UMarvelAeroBaseAbility
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103962">();
+		STATIC_CLASS_IMPL("PyAbility_103962")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103962")
 	}
 	static class UPyAbility_103962* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103962>();
 	}
 };
-static_assert(alignof(UPyAbility_103962) == 0x000008, "Wrong alignment on UPyAbility_103962");
-static_assert(sizeof(UPyAbility_103962) == 0x002B10, "Wrong size on UPyAbility_103962");
+DUMPER7_ASSERTS_UPyAbility_103962;
 
 }
 

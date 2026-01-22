@@ -18,28 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101781.PyConfig_101781
-// 0x0BC8 (0x0C60 - 0x0098)
+// 0x0EE8 (0x0F80 - 0x0098)
 class UPyConfig_101781 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101781">();
+		STATIC_CLASS_IMPL("PyConfig_101781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101781")
 	}
 	static class UPyConfig_101781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101781>();
 	}
 };
-static_assert(alignof(UPyConfig_101781) == 0x000008, "Wrong alignment on UPyConfig_101781");
-static_assert(sizeof(UPyConfig_101781) == 0x000C60, "Wrong size on UPyConfig_101781");
-static_assert(offsetof(UPyConfig_101781, DashInfo) == 0x000098, "Member 'UPyConfig_101781::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101781;
 
 // PythonClass PyAbility_101781.PyAbility_101781
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101781 : public UAbility_108
 {
 public:
@@ -50,18 +52,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101781">();
+		STATIC_CLASS_IMPL("PyAbility_101781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101781")
 	}
 	static class UPyAbility_101781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101781>();
 	}
 };
-static_assert(alignof(UPyAbility_101781) == 0x000008, "Wrong alignment on UPyAbility_101781");
-static_assert(sizeof(UPyAbility_101781) == 0x0029F8, "Wrong size on UPyAbility_101781");
+DUMPER7_ASSERTS_UPyAbility_101781;
 
 // PythonClass PyAbility_101781.PyUIController_101781
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_101781 final : public UUIC_Ability
 {
 public:
@@ -70,15 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101781">();
+		STATIC_CLASS_IMPL("PyUIController_101781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101781")
 	}
 	static class UPyUIController_101781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101781>();
 	}
 };
-static_assert(alignof(UPyUIController_101781) == 0x000008, "Wrong alignment on UPyUIController_101781");
-static_assert(sizeof(UPyUIController_101781) == 0x000F10, "Wrong size on UPyUIController_101781");
+DUMPER7_ASSERTS_UPyUIController_101781;
 
 }
 

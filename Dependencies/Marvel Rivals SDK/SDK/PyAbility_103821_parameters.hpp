@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_103821_SetAbility) == 0x000008, "Wrong alignment on PyUIController_103821_SetAbility");
-static_assert(sizeof(PyUIController_103821_SetAbility) == 0x000010, "Wrong size on PyUIController_103821_SetAbility");
-static_assert(offsetof(PyUIController_103821_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_103821_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_103821_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_103821_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_103821_SetAbility;
 
 // PythonFunction PyAbility_103821.PyUIController_103821.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_103821_OnTagUpdate) == 0x000004, "Wrong alignment on PyUIController_103821_OnTagUpdate");
-static_assert(sizeof(PyUIController_103821_OnTagUpdate) == 0x000010, "Wrong size on PyUIController_103821_OnTagUpdate");
-static_assert(offsetof(PyUIController_103821_OnTagUpdate, tag) == 0x000000, "Member 'PyUIController_103821_OnTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PyUIController_103821_OnTagUpdate, exist) == 0x00000C, "Member 'PyUIController_103821_OnTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_103821_OnTagUpdate;
 
 }
 

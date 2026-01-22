@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "level_battle_chess_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "PyBTNodeBase_classes.hpp"
-#include "level_battle_chess_structs.hpp"
 
 
 namespace SDK
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateBattleChessPS">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateBattleChessPS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateBattleChessPS")
 	}
 	static class UBTS_PyUpdateBattleChessPS* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateBattleChessPS>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateBattleChessPS) == 0x000008, "Wrong alignment on UBTS_PyUpdateBattleChessPS");
-static_assert(sizeof(UBTS_PyUpdateBattleChessPS) == 0x0000D8, "Wrong size on UBTS_PyUpdateBattleChessPS");
-static_assert(offsetof(UBTS_PyUpdateBattleChessPS, BattleChessPsStateKey) == 0x0000A8, "Member 'UBTS_PyUpdateBattleChessPS::BattleChessPsStateKey' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateBattleChessPS;
 
 }
 

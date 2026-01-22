@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_101404.PyCue_Weapon_Loop_101404
-// 0x0000 (0x1410 - 0x1410)
+// 0x0000 (0x1420 - 0x1420)
 class APyCue_Weapon_Loop_101404 final : public AMarvelCueNotify_Weapon_Loop
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_101404">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_101404")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_101404")
 	}
 	static class APyCue_Weapon_Loop_101404* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_101404>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_101404) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_101404");
-static_assert(sizeof(APyCue_Weapon_Loop_101404) == 0x001410, "Wrong size on APyCue_Weapon_Loop_101404");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_101404;
 
 }
 

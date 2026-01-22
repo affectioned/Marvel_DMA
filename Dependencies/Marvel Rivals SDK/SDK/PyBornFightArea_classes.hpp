@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBornFightArea">();
+		STATIC_CLASS_IMPL("PyBornFightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBornFightArea")
 	}
 	static class APyBornFightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBornFightArea>();
 	}
 };
-static_assert(alignof(APyBornFightArea) == 0x000010, "Wrong alignment on APyBornFightArea");
-static_assert(sizeof(APyBornFightArea) == 0x0007D0, "Wrong size on APyBornFightArea");
-static_assert(offsetof(APyBornFightArea, EnterBuffs) == 0x0006E0, "Member 'APyBornFightArea::EnterBuffs' has a wrong offset!");
-static_assert(offsetof(APyBornFightArea, AudioAreaNo) == 0x000730, "Member 'APyBornFightArea::AudioAreaNo' has a wrong offset!");
-static_assert(offsetof(APyBornFightArea, BanAudioAreaNo) == 0x000780, "Member 'APyBornFightArea::BanAudioAreaNo' has a wrong offset!");
+DUMPER7_ASSERTS_APyBornFightArea;
 
 }
 

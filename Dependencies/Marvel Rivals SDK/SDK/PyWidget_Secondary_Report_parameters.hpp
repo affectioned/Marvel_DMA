@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Report_UniformGrid_Left_Navigation) == 0x000008, "Wrong alignment on PyWidget_Secondary_Report_UniformGrid_Left_Navigation");
-static_assert(sizeof(PyWidget_Secondary_Report_UniformGrid_Left_Navigation) == 0x000010, "Wrong size on PyWidget_Secondary_Report_UniformGrid_Left_Navigation");
-static_assert(offsetof(PyWidget_Secondary_Report_UniformGrid_Left_Navigation, NavType) == 0x000000, "Member 'PyWidget_Secondary_Report_UniformGrid_Left_Navigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Report_UniformGrid_Left_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Report_UniformGrid_Left_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Report_UniformGrid_Left_Navigation;
 
 // PythonFunction PyWidget_Secondary_Report.PyWidget_Secondary_Report.UniformGrid_Right_Navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Report_UniformGrid_Right_Navigation) == 0x000008, "Wrong alignment on PyWidget_Secondary_Report_UniformGrid_Right_Navigation");
-static_assert(sizeof(PyWidget_Secondary_Report_UniformGrid_Right_Navigation) == 0x000010, "Wrong size on PyWidget_Secondary_Report_UniformGrid_Right_Navigation");
-static_assert(offsetof(PyWidget_Secondary_Report_UniformGrid_Right_Navigation, NavType) == 0x000000, "Member 'PyWidget_Secondary_Report_UniformGrid_Right_Navigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Report_UniformGrid_Right_Navigation, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Report_UniformGrid_Right_Navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Report_UniformGrid_Right_Navigation;
 
 }
 

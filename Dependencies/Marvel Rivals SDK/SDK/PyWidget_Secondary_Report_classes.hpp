@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_Report.PyWidget_Secondary_Report
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_Report final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Grid_Column_Count;                                 // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUniformGridPanel*                      UniformGrid_Report_ItemList;                       // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Grid_Column_Count;                                 // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUniformGridPanel*                      UniformGrid_Report_ItemList;                       // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	class UWidget* UniformGrid_Left_Navigation(EUINavigation NavType);
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Report">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Report")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Report")
 	}
 	static class UPyWidget_Secondary_Report* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Report>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Report) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Report");
-static_assert(sizeof(UPyWidget_Secondary_Report) == 0x0005C8, "Wrong size on UPyWidget_Secondary_Report");
-static_assert(offsetof(UPyWidget_Secondary_Report, Grid_Column_Count) == 0x0005BC, "Member 'UPyWidget_Secondary_Report::Grid_Column_Count' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_Report, UniformGrid_Report_ItemList) == 0x0005C0, "Member 'UPyWidget_Secondary_Report::UniformGrid_Report_ItemList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Report;
 
 }
 

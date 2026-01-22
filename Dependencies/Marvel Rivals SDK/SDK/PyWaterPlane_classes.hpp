@@ -45,24 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWaterPlane">();
+		STATIC_CLASS_IMPL("PyWaterPlane")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWaterPlane")
 	}
 	static class APyWaterPlane* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWaterPlane>();
 	}
 };
-static_assert(alignof(APyWaterPlane) == 0x000010, "Wrong alignment on APyWaterPlane");
-static_assert(sizeof(APyWaterPlane) == 0x000730, "Wrong size on APyWaterPlane");
-static_assert(offsetof(APyWaterPlane, NSJump) == 0x0006E0, "Member 'APyWaterPlane::NSJump' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSLand) == 0x0006E8, "Member 'APyWaterPlane::NSLand' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSWalk) == 0x0006F0, "Member 'APyWaterPlane::NSWalk' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSHitted) == 0x0006F8, "Member 'APyWaterPlane::NSHitted' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSUltimateSkill) == 0x000700, "Member 'APyWaterPlane::NSUltimateSkill' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSSummoner) == 0x000708, "Member 'APyWaterPlane::NSSummoner' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, NSBroken) == 0x000710, "Member 'APyWaterPlane::NSBroken' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, WalkDelay) == 0x000718, "Member 'APyWaterPlane::WalkDelay' has a wrong offset!");
-static_assert(offsetof(APyWaterPlane, TraceSceneObjectType) == 0x000720, "Member 'APyWaterPlane::TraceSceneObjectType' has a wrong offset!");
+DUMPER7_ASSERTS_APyWaterPlane;
 
 }
 

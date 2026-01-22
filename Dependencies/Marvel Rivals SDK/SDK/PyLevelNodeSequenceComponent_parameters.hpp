@@ -26,12 +26,7 @@ public:
 	class ULevelSequence*                         Sequence_0;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         SequenceTime;                                      // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeSequenceComponent_SequenceComponentInitialize) == 0x000008, "Wrong alignment on PyLevelNodeSequenceComponent_SequenceComponentInitialize");
-static_assert(sizeof(PyLevelNodeSequenceComponent_SequenceComponentInitialize) == 0x000028, "Wrong size on PyLevelNodeSequenceComponent_SequenceComponentInitialize");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentInitialize, ProcessController) == 0x000000, "Member 'PyLevelNodeSequenceComponent_SequenceComponentInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentInitialize, NewComponentName) == 0x000008, "Member 'PyLevelNodeSequenceComponent_SequenceComponentInitialize::NewComponentName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentInitialize, Sequence_0) == 0x000018, "Member 'PyLevelNodeSequenceComponent_SequenceComponentInitialize::Sequence_0' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentInitialize, SequenceTime) == 0x000020, "Member 'PyLevelNodeSequenceComponent_SequenceComponentInitialize::SequenceTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeSequenceComponent_SequenceComponentInitialize;
 
 // PythonFunction PyLevelNodeSequenceComponent.PyLevelNodeSequenceComponent.SequenceComponentPlay
 // 0x0018 (0x0018 - 0x0000)
@@ -41,10 +36,7 @@ public:
 	class AActor*                                 ProcessController;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 ComponentName_0;                                   // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeSequenceComponent_SequenceComponentPlay) == 0x000008, "Wrong alignment on PyLevelNodeSequenceComponent_SequenceComponentPlay");
-static_assert(sizeof(PyLevelNodeSequenceComponent_SequenceComponentPlay) == 0x000018, "Wrong size on PyLevelNodeSequenceComponent_SequenceComponentPlay");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentPlay, ProcessController) == 0x000000, "Member 'PyLevelNodeSequenceComponent_SequenceComponentPlay::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeSequenceComponent_SequenceComponentPlay, ComponentName_0) == 0x000008, "Member 'PyLevelNodeSequenceComponent_SequenceComponentPlay::ComponentName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeSequenceComponent_SequenceComponentPlay;
 
 // PythonFunction PyLevelNodeSequenceComponent.PyLevelNodeSequenceComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -53,9 +45,7 @@ struct PyLevelNodeSequenceComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeSequenceComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelNodeSequenceComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelNodeSequenceComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelNodeSequenceComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelNodeSequenceComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelNodeSequenceComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeSequenceComponent_ReceiveEndPlay;
 
 }
 

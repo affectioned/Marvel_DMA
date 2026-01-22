@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_LokiDisguiseTarget">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_LokiDisguiseTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_LokiDisguiseTarget")
 	}
 	static class UPyAISelectTarget_LokiDisguiseTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_LokiDisguiseTarget>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_LokiDisguiseTarget) == 0x000008, "Wrong alignment on UPyAISelectTarget_LokiDisguiseTarget");
-static_assert(sizeof(UPyAISelectTarget_LokiDisguiseTarget) == 0x000078, "Wrong size on UPyAISelectTarget_LokiDisguiseTarget");
-static_assert(offsetof(UPyAISelectTarget_LokiDisguiseTarget, ChooseTank) == 0x000070, "Member 'UPyAISelectTarget_LokiDisguiseTarget::ChooseTank' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LokiDisguiseTarget, ChooseDamage) == 0x000071, "Member 'UPyAISelectTarget_LokiDisguiseTarget::ChooseDamage' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LokiDisguiseTarget, ChooseSupport) == 0x000072, "Member 'UPyAISelectTarget_LokiDisguiseTarget::ChooseSupport' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_LokiDisguiseTarget;
 
 }
 

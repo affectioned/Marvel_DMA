@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpectationUISettingSubsystem">();
+		STATIC_CLASS_IMPL("PySpectationUISettingSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpectationUISettingSubsystem")
 	}
 	static class UPySpectationUISettingSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpectationUISettingSubsystem>();
 	}
 };
-static_assert(alignof(UPySpectationUISettingSubsystem) == 0x000008, "Wrong alignment on UPySpectationUISettingSubsystem");
-static_assert(sizeof(UPySpectationUISettingSubsystem) == 0x0000E8, "Wrong size on UPySpectationUISettingSubsystem");
-static_assert(offsetof(UPySpectationUISettingSubsystem, HpBarVisibleIfGlobalSpectatingChanged) == 0x0000C8, "Member 'UPySpectationUISettingSubsystem::HpBarVisibleIfGlobalSpectatingChanged' has a wrong offset!");
-static_assert(offsetof(UPySpectationUISettingSubsystem, PlayerNameVisibleIfGlobalSpectatingChanged) == 0x0000D8, "Member 'UPySpectationUISettingSubsystem::PlayerNameVisibleIfGlobalSpectatingChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpectationUISettingSubsystem;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryCommonTriggerHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryCommonTriggerHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryCommonTriggerHandler")
 	}
 	static class UUISettingEntryCommonTriggerHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryCommonTriggerHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryCommonTriggerHandler) == 0x000008, "Wrong alignment on UUISettingEntryCommonTriggerHandler");
-static_assert(sizeof(UUISettingEntryCommonTriggerHandler) == 0x000030, "Wrong size on UUISettingEntryCommonTriggerHandler");
+DUMPER7_ASSERTS_UUISettingEntryCommonTriggerHandler;
 
 // PythonClass SettingCommonLogic.PySettingEntryUIController
 // 0x0000 (0x0030 - 0x0030)
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUIController">();
+		STATIC_CLASS_IMPL("PySettingEntryUIController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUIController")
 	}
 	static class UPySettingEntryUIController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUIController>();
 	}
 };
-static_assert(alignof(UPySettingEntryUIController) == 0x000008, "Wrong alignment on UPySettingEntryUIController");
-static_assert(sizeof(UPySettingEntryUIController) == 0x000030, "Wrong size on UPySettingEntryUIController");
+DUMPER7_ASSERTS_UPySettingEntryUIController;
 
 }
 

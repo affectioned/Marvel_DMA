@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroCustomDataComponent_PlayerState">();
+		STATIC_CLASS_IMPL("PyHeroCustomDataComponent_PlayerState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroCustomDataComponent_PlayerState")
 	}
 	static class UPyHeroCustomDataComponent_PlayerState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroCustomDataComponent_PlayerState>();
 	}
 };
-static_assert(alignof(UPyHeroCustomDataComponent_PlayerState) == 0x000008, "Wrong alignment on UPyHeroCustomDataComponent_PlayerState");
-static_assert(sizeof(UPyHeroCustomDataComponent_PlayerState) == 0x000118, "Wrong size on UPyHeroCustomDataComponent_PlayerState");
+DUMPER7_ASSERTS_UPyHeroCustomDataComponent_PlayerState;
 
 }
 

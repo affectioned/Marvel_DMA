@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ActivityEvent_Item_128.PyWidget_ActivityEvent_Item_128
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ActivityEvent_Item_128 final : public UPyWidget_ActivityEvent_Item_Base
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityEvent_Item_128">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityEvent_Item_128")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityEvent_Item_128")
 	}
 	static class UPyWidget_ActivityEvent_Item_128* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityEvent_Item_128>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityEvent_Item_128) == 0x000008, "Wrong alignment on UPyWidget_ActivityEvent_Item_128");
-static_assert(sizeof(UPyWidget_ActivityEvent_Item_128) == 0x0005C0, "Wrong size on UPyWidget_ActivityEvent_Item_128");
+DUMPER7_ASSERTS_UPyWidget_ActivityEvent_Item_128;
 
 }
 

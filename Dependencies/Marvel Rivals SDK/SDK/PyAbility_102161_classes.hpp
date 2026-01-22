@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102161.PyAbility_102161
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102161 : public UAbility_108
 {
 public:
@@ -28,28 +28,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102161">();
+		STATIC_CLASS_IMPL("PyAbility_102161")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102161")
 	}
 	static class UPyAbility_102161* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102161>();
 	}
 };
-static_assert(alignof(UPyAbility_102161) == 0x000008, "Wrong alignment on UPyAbility_102161");
-static_assert(sizeof(UPyAbility_102161) == 0x0029F8, "Wrong size on UPyAbility_102161");
+DUMPER7_ASSERTS_UPyAbility_102161;
 
 // PythonClass PyAbility_102161.PyCue_Projectile_Loop_10216101
-// 0x0020 (0x1150 - 0x1130)
+// 0x0020 (0x1160 - 0x1140)
 class APyCue_Projectile_Loop_10216101 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SonicBoomFxLen;                                    // 0x1130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1134[0x4];                                     // 0x1134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         ReleaseFx;                                         // 0x1138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FXScaleCurve;                                      // 0x1140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimerInterval;                                     // 0x1148(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTimeToPlayFloorEffect;                        // 0x114C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SonicBoomFxLen;                                    // 0x1140(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1144[0x4];                                     // 0x1144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         ReleaseFx;                                         // 0x1148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FXScaleCurve;                                      // 0x1150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimerInterval;                                     // 0x1158(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToPlayFloorEffect;                        // 0x115C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -60,20 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10216101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10216101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10216101")
 	}
 	static class APyCue_Projectile_Loop_10216101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10216101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10216101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10216101");
-static_assert(sizeof(APyCue_Projectile_Loop_10216101) == 0x001150, "Wrong size on APyCue_Projectile_Loop_10216101");
-static_assert(offsetof(APyCue_Projectile_Loop_10216101, SonicBoomFxLen) == 0x001130, "Member 'APyCue_Projectile_Loop_10216101::SonicBoomFxLen' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10216101, ReleaseFx) == 0x001138, "Member 'APyCue_Projectile_Loop_10216101::ReleaseFx' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10216101, FXScaleCurve) == 0x001140, "Member 'APyCue_Projectile_Loop_10216101::FXScaleCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10216101, TimerInterval) == 0x001148, "Member 'APyCue_Projectile_Loop_10216101::TimerInterval' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10216101, DelayTimeToPlayFloorEffect) == 0x00114C, "Member 'APyCue_Projectile_Loop_10216101::DelayTimeToPlayFloorEffect' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10216101;
 
 }
 

@@ -43,20 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpaceVehicle">();
+		STATIC_CLASS_IMPL("PySpaceVehicle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpaceVehicle")
 	}
 	static class APySpaceVehicle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpaceVehicle>();
 	}
 };
-static_assert(alignof(APySpaceVehicle) == 0x000010, "Wrong alignment on APySpaceVehicle");
-static_assert(sizeof(APySpaceVehicle) == 0x000750, "Wrong size on APySpaceVehicle");
-static_assert(offsetof(APySpaceVehicle, ControlPoint) == 0x000720, "Member 'APySpaceVehicle::ControlPoint' has a wrong offset!");
-static_assert(offsetof(APySpaceVehicle, RemainStartTime) == 0x000728, "Member 'APySpaceVehicle::RemainStartTime' has a wrong offset!");
-static_assert(offsetof(APySpaceVehicle, State) == 0x00072C, "Member 'APySpaceVehicle::State' has a wrong offset!");
-static_assert(offsetof(APySpaceVehicle, Frame) == 0x000730, "Member 'APySpaceVehicle::Frame' has a wrong offset!");
-static_assert(offsetof(APySpaceVehicle, EventFlyToTop) == 0x000738, "Member 'APySpaceVehicle::EventFlyToTop' has a wrong offset!");
+DUMPER7_ASSERTS_APySpaceVehicle;
 
 // PythonClass PySpaceVehicle.PySpaceVehiclAnimNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -68,15 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpaceVehiclAnimNotify">();
+		STATIC_CLASS_IMPL("PySpaceVehiclAnimNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpaceVehiclAnimNotify")
 	}
 	static class UPySpaceVehiclAnimNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpaceVehiclAnimNotify>();
 	}
 };
-static_assert(alignof(UPySpaceVehiclAnimNotify) == 0x000008, "Wrong alignment on UPySpaceVehiclAnimNotify");
-static_assert(sizeof(UPySpaceVehiclAnimNotify) == 0x000040, "Wrong size on UPySpaceVehiclAnimNotify");
+DUMPER7_ASSERTS_UPySpaceVehiclAnimNotify;
 
 // PythonClass PySpaceVehicle.PySpaceVehicleAinmEndNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -88,15 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpaceVehicleAinmEndNotify">();
+		STATIC_CLASS_IMPL("PySpaceVehicleAinmEndNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpaceVehicleAinmEndNotify")
 	}
 	static class UPySpaceVehicleAinmEndNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpaceVehicleAinmEndNotify>();
 	}
 };
-static_assert(alignof(UPySpaceVehicleAinmEndNotify) == 0x000008, "Wrong alignment on UPySpaceVehicleAinmEndNotify");
-static_assert(sizeof(UPySpaceVehicleAinmEndNotify) == 0x000040, "Wrong size on UPySpaceVehicleAinmEndNotify");
+DUMPER7_ASSERTS_UPySpaceVehicleAinmEndNotify;
 
 // PythonClass PySpaceVehicle.PySpaceVehicleNoCollisionAnimNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -108,15 +112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpaceVehicleNoCollisionAnimNotify">();
+		STATIC_CLASS_IMPL("PySpaceVehicleNoCollisionAnimNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpaceVehicleNoCollisionAnimNotify")
 	}
 	static class UPySpaceVehicleNoCollisionAnimNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpaceVehicleNoCollisionAnimNotify>();
 	}
 };
-static_assert(alignof(UPySpaceVehicleNoCollisionAnimNotify) == 0x000008, "Wrong alignment on UPySpaceVehicleNoCollisionAnimNotify");
-static_assert(sizeof(UPySpaceVehicleNoCollisionAnimNotify) == 0x000040, "Wrong size on UPySpaceVehicleNoCollisionAnimNotify");
+DUMPER7_ASSERTS_UPySpaceVehicleNoCollisionAnimNotify;
 
 }
 

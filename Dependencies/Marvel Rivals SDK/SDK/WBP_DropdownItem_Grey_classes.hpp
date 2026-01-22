@@ -46,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DropdownItem_Grey_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DropdownItem_Grey_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DropdownItem_Grey_C")
 	}
 	static class UWBP_DropdownItem_Grey_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DropdownItem_Grey_C>();
 	}
 };
-static_assert(alignof(UWBP_DropdownItem_Grey_C) == 0x000008, "Wrong alignment on UWBP_DropdownItem_Grey_C");
-static_assert(sizeof(UWBP_DropdownItem_Grey_C) == 0x000420, "Wrong size on UWBP_DropdownItem_Grey_C");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_DropdownItem_Grey_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Anim_FadeIn) == 0x0003C0, "Member 'UWBP_DropdownItem_Grey_C::Anim_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Anim_Hovered) == 0x0003C8, "Member 'UWBP_DropdownItem_Grey_C::Anim_Hovered' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Btn_Main) == 0x0003D0, "Member 'UWBP_DropdownItem_Grey_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, HoriBox_Item) == 0x0003D8, "Member 'UWBP_DropdownItem_Grey_C::HoriBox_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Img_Check) == 0x0003E0, "Member 'UWBP_DropdownItem_Grey_C::Img_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Img_LeftColor) == 0x0003E8, "Member 'UWBP_DropdownItem_Grey_C::Img_LeftColor' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Img_Line) == 0x0003F0, "Member 'UWBP_DropdownItem_Grey_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Img_Mask_Disable) == 0x0003F8, "Member 'UWBP_DropdownItem_Grey_C::Img_Mask_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Img_Tips) == 0x000400, "Member 'UWBP_DropdownItem_Grey_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Overlay_Main) == 0x000408, "Member 'UWBP_DropdownItem_Grey_C::Overlay_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, SizeBox_Main) == 0x000410, "Member 'UWBP_DropdownItem_Grey_C::SizeBox_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_DropdownItem_Grey_C, Text_BtnName) == 0x000418, "Member 'UWBP_DropdownItem_Grey_C::Text_BtnName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DropdownItem_Grey_C;
 
 }
 

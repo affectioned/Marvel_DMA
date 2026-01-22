@@ -50,37 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRankingSettings">();
+		STATIC_CLASS_IMPL("PyRankingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRankingSettings")
 	}
 	static class UPyRankingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRankingSettings>();
 	}
 };
-static_assert(alignof(UPyRankingSettings) == 0x000008, "Wrong alignment on UPyRankingSettings");
-static_assert(sizeof(UPyRankingSettings) == 0x0000B0, "Wrong size on UPyRankingSettings");
-static_assert(offsetof(UPyRankingSettings, FirstPageDisplayItemLimit) == 0x000038, "Member 'UPyRankingSettings::FirstPageDisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, DisplayItemLimit) == 0x00003C, "Member 'UPyRankingSettings::DisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, TotalNumLimit) == 0x000040, "Member 'UPyRankingSettings::TotalNumLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, NearListLimit) == 0x000044, "Member 'UPyRankingSettings::NearListLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, InListLevelLimit) == 0x000048, "Member 'UPyRankingSettings::InListLevelLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, RequestPageLimit) == 0x00004C, "Member 'UPyRankingSettings::RequestPageLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, RankFlag) == 0x000050, "Member 'UPyRankingSettings::RankFlag' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, RankRefreshTime_CN) == 0x000058, "Member 'UPyRankingSettings::RankRefreshTime_CN' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, RankRefreshTime_EN) == 0x000060, "Member 'UPyRankingSettings::RankRefreshTime_EN' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, MergeRankLevel) == 0x000068, "Member 'UPyRankingSettings::MergeRankLevel' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroFirstPageDisplayItemLimit) == 0x00006C, "Member 'UPyRankingSettings::HeroFirstPageDisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroDisplayItemLimit) == 0x000070, "Member 'UPyRankingSettings::HeroDisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroTotalNumLimit) == 0x000074, "Member 'UPyRankingSettings::HeroTotalNumLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroNearListLimit) == 0x000078, "Member 'UPyRankingSettings::HeroNearListLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroRankFlag) == 0x00007C, "Member 'UPyRankingSettings::HeroRankFlag' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroRankRefreshTime_CN) == 0x000080, "Member 'UPyRankingSettings::HeroRankRefreshTime_CN' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, HeroRankRefreshTime_EN) == 0x000088, "Member 'UPyRankingSettings::HeroRankRefreshTime_EN' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, WildcardSearchFirstPageDisplayItemLimit) == 0x000090, "Member 'UPyRankingSettings::WildcardSearchFirstPageDisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, WildcardSearchDisplayItemLimit) == 0x000094, "Member 'UPyRankingSettings::WildcardSearchDisplayItemLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, WildcardSearchLimit) == 0x000098, "Member 'UPyRankingSettings::WildcardSearchLimit' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, WildcardSearchRefreshTime_CN) == 0x0000A0, "Member 'UPyRankingSettings::WildcardSearchRefreshTime_CN' has a wrong offset!");
-static_assert(offsetof(UPyRankingSettings, WildcardSearchRefreshTime_EN) == 0x0000A8, "Member 'UPyRankingSettings::WildcardSearchRefreshTime_EN' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRankingSettings;
 
 }
 

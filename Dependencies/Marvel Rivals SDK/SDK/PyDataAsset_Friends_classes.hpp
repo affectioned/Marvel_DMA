@@ -32,20 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_Friends">();
+		STATIC_CLASS_IMPL("PyDataAsset_Friends")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_Friends")
 	}
 	static class UPyDataAsset_Friends* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_Friends>();
 	}
 };
-static_assert(alignof(UPyDataAsset_Friends) == 0x000008, "Wrong alignment on UPyDataAsset_Friends");
-static_assert(sizeof(UPyDataAsset_Friends) == 0x0000C8, "Wrong size on UPyDataAsset_Friends");
-static_assert(offsetof(UPyDataAsset_Friends, UserState_2_Text) == 0x000038, "Member 'UPyDataAsset_Friends::UserState_2_Text' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Friends, UserStateColor_Offline) == 0x000088, "Member 'UPyDataAsset_Friends::UserStateColor_Offline' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Friends, UserStateColor_Available) == 0x000098, "Member 'UPyDataAsset_Friends::UserStateColor_Available' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Friends, UserStateColor_Busy) == 0x0000A8, "Member 'UPyDataAsset_Friends::UserStateColor_Busy' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_Friends, UserStateColor_Game) == 0x0000B8, "Member 'UPyDataAsset_Friends::UserStateColor_Game' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_Friends;
 
 }
 

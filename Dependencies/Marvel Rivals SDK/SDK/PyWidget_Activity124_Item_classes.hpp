@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity124_Item.PyWidget_Activity124_Item
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_Activity124_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalName_Color;                                  // 0x05F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Gain;                                   // 0x0608(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Normal;                                 // 0x061C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnClicked;                                         // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05E8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalName_Color;                                  // 0x05FC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Gain;                                   // 0x0610(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Normal;                                 // 0x0624(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnClicked;                                         // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity124_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity124_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity124_Item")
 	}
 	static class UPyWidget_Activity124_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity124_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity124_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity124_Item");
-static_assert(sizeof(UPyWidget_Activity124_Item) == 0x000640, "Wrong size on UPyWidget_Activity124_Item");
-static_assert(offsetof(UPyWidget_Activity124_Item, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity124_Item::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity124_Item::Image_OffsetUV_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, BreakIceCoinName_Color) == 0x0005E0, "Member 'UPyWidget_Activity124_Item::BreakIceCoinName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, NormalName_Color) == 0x0005F4, "Member 'UPyWidget_Activity124_Item::NormalName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, CountColor_Gain) == 0x000608, "Member 'UPyWidget_Activity124_Item::CountColor_Gain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, CountColor_Normal) == 0x00061C, "Member 'UPyWidget_Activity124_Item::CountColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_Item, OnClicked) == 0x000630, "Member 'UPyWidget_Activity124_Item::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity124_Item;
 
 }
 

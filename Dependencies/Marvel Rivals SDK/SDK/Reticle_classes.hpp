@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReticleColorSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingReticleColorSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleColorSettingHandler")
 	}
 	static class UUISettingReticleColorSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleColorSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingReticleColorSettingHandler) == 0x000008, "Wrong alignment on UUISettingReticleColorSettingHandler");
-static_assert(sizeof(UUISettingReticleColorSettingHandler) == 0x000038, "Wrong size on UUISettingReticleColorSettingHandler");
-static_assert(offsetof(UUISettingReticleColorSettingHandler, MPC_Slider) == 0x000030, "Member 'UUISettingReticleColorSettingHandler::MPC_Slider' has a wrong offset!");
+DUMPER7_ASSERTS_UUISettingReticleColorSettingHandler;
 
 // PythonClass Reticle.UISettingReticleSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -58,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReticleSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingReticleSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleSettingHandler")
 	}
 	static class UUISettingReticleSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingReticleSettingHandler) == 0x000008, "Wrong alignment on UUISettingReticleSettingHandler");
-static_assert(sizeof(UUISettingReticleSettingHandler) == 0x000030, "Wrong size on UUISettingReticleSettingHandler");
+DUMPER7_ASSERTS_UUISettingReticleSettingHandler;
 
 // PythonClass Reticle.UISettingEntrySaveHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -80,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySaveHandler">();
+		STATIC_CLASS_IMPL("UISettingEntrySaveHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySaveHandler")
 	}
 	static class UUISettingEntrySaveHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySaveHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntrySaveHandler) == 0x000008, "Wrong alignment on UUISettingEntrySaveHandler");
-static_assert(sizeof(UUISettingEntrySaveHandler) == 0x000030, "Wrong size on UUISettingEntrySaveHandler");
+DUMPER7_ASSERTS_UUISettingEntrySaveHandler;
 
 // PythonClass Reticle.UISettingEntryReticleSaveSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -102,15 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryReticleSaveSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryReticleSaveSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryReticleSaveSettingHandler")
 	}
 	static class UUISettingEntryReticleSaveSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryReticleSaveSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryReticleSaveSettingHandler) == 0x000008, "Wrong alignment on UUISettingEntryReticleSaveSettingHandler");
-static_assert(sizeof(UUISettingEntryReticleSaveSettingHandler) == 0x000030, "Wrong size on UUISettingEntryReticleSaveSettingHandler");
+DUMPER7_ASSERTS_UUISettingEntryReticleSaveSettingHandler;
 
 // PythonClass Reticle.UISettingReticleTypeSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -125,15 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReticleTypeSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingReticleTypeSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleTypeSettingHandler")
 	}
 	static class UUISettingReticleTypeSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleTypeSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingReticleTypeSettingHandler) == 0x000008, "Wrong alignment on UUISettingReticleTypeSettingHandler");
-static_assert(sizeof(UUISettingReticleTypeSettingHandler) == 0x000030, "Wrong size on UUISettingReticleTypeSettingHandler");
+DUMPER7_ASSERTS_UUISettingReticleTypeSettingHandler;
 
 // PythonClass Reticle.UISettingReticleAnimSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -147,15 +161,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReticleAnimSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingReticleAnimSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleAnimSettingHandler")
 	}
 	static class UUISettingReticleAnimSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleAnimSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingReticleAnimSettingHandler) == 0x000008, "Wrong alignment on UUISettingReticleAnimSettingHandler");
-static_assert(sizeof(UUISettingReticleAnimSettingHandler) == 0x000030, "Wrong size on UUISettingReticleAnimSettingHandler");
+DUMPER7_ASSERTS_UUISettingReticleAnimSettingHandler;
 
 // PythonClass Reticle.UISettingReticleTreatHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -170,15 +187,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReticleTreatHandler">();
+		STATIC_CLASS_IMPL("UISettingReticleTreatHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReticleTreatHandler")
 	}
 	static class UUISettingReticleTreatHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReticleTreatHandler>();
 	}
 };
-static_assert(alignof(UUISettingReticleTreatHandler) == 0x000008, "Wrong alignment on UUISettingReticleTreatHandler");
-static_assert(sizeof(UUISettingReticleTreatHandler) == 0x000030, "Wrong size on UUISettingReticleTreatHandler");
+DUMPER7_ASSERTS_UUISettingReticleTreatHandler;
 
 // PythonClass Reticle.UISettingEntryReticleSaveOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -190,15 +210,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryReticleSaveOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryReticleSaveOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryReticleSaveOptionsGenerator")
 	}
 	static class UUISettingEntryReticleSaveOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryReticleSaveOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryReticleSaveOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryReticleSaveOptionsGenerator");
-static_assert(sizeof(UUISettingEntryReticleSaveOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryReticleSaveOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryReticleSaveOptionsGenerator;
 
 }
 

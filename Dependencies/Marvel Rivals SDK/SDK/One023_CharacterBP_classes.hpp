@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1023_CharacterBP.1023_CharacterBP_C
-// 0x0000 (0x2230 - 0x2230)
+// 0x0000 (0x2340 - 0x2340)
 class AOne023_CharacterBP_C final : public APyRocketRaccoonCharacter
 {
 public:
-	class UAbilityModifierComponent*              AbilityModifier;                                   // 0x2228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAbilityModifierComponent*              AbilityModifier;                                   // 0x2338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1023_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1023_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1023_CharacterBP_C")
 	}
 	static class AOne023_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne023_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne023_CharacterBP_C) == 0x000010, "Wrong alignment on AOne023_CharacterBP_C");
-static_assert(sizeof(AOne023_CharacterBP_C) == 0x002230, "Wrong size on AOne023_CharacterBP_C");
-static_assert(offsetof(AOne023_CharacterBP_C, AbilityModifier) == 0x002228, "Member 'AOne023_CharacterBP_C::AbilityModifier' has a wrong offset!");
+DUMPER7_ASSERTS_AOne023_CharacterBP_C;
 
 }
 

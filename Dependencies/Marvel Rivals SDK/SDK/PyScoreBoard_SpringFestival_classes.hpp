@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyScoreBoard_SpringFestival.PyScoreBoard_SpringFestival
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05D0 - 0x05D0)
 class UPyScoreBoard_SpringFestival final : public UPyScoreBoard
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoard_SpringFestival">();
+		STATIC_CLASS_IMPL("PyScoreBoard_SpringFestival")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoard_SpringFestival")
 	}
 	static class UPyScoreBoard_SpringFestival* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoard_SpringFestival>();
 	}
 };
-static_assert(alignof(UPyScoreBoard_SpringFestival) == 0x000008, "Wrong alignment on UPyScoreBoard_SpringFestival");
-static_assert(sizeof(UPyScoreBoard_SpringFestival) == 0x0005C8, "Wrong size on UPyScoreBoard_SpringFestival");
+DUMPER7_ASSERTS_UPyScoreBoard_SpringFestival;
 
 // PythonClass PyScoreBoard_SpringFestival.PyScoreBoardUnit_SpringFestival
-// 0x0000 (0x0628 - 0x0628)
+// 0x0000 (0x0630 - 0x0630)
 class UPyScoreBoardUnit_SpringFestival final : public UPyScoreBoardUnit
 {
 public:
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoardUnit_SpringFestival">();
+		STATIC_CLASS_IMPL("PyScoreBoardUnit_SpringFestival")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoardUnit_SpringFestival")
 	}
 	static class UPyScoreBoardUnit_SpringFestival* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoardUnit_SpringFestival>();
 	}
 };
-static_assert(alignof(UPyScoreBoardUnit_SpringFestival) == 0x000008, "Wrong alignment on UPyScoreBoardUnit_SpringFestival");
-static_assert(sizeof(UPyScoreBoardUnit_SpringFestival) == 0x000628, "Wrong size on UPyScoreBoardUnit_SpringFestival");
+DUMPER7_ASSERTS_UPyScoreBoardUnit_SpringFestival;
 
 }
 

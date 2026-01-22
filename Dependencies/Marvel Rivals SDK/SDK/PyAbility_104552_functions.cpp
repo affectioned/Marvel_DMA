@@ -103,7 +103,7 @@ void UPyAbility_104552::K2_ActivateAbility()
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // class UGameplayAbility*                 Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPyAbility_104552::OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)

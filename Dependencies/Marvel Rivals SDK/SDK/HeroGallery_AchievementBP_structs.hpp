@@ -24,10 +24,7 @@ public:
 	struct FMaskUIAssetInfo                       AchievementPortrait_207_A81AEF7E4D7FE4BC907AB081A7A2A1E7; // 0x0000(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              ProficiencyThemeBg_208_9A04C4D04C8C52F95173ADB34F017189; // 0x0068(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroGallery_AchievementBP) == 0x000008, "Wrong alignment on FHeroGallery_AchievementBP");
-static_assert(sizeof(FHeroGallery_AchievementBP) == 0x000098, "Wrong size on FHeroGallery_AchievementBP");
-static_assert(offsetof(FHeroGallery_AchievementBP, AchievementPortrait_207_A81AEF7E4D7FE4BC907AB081A7A2A1E7) == 0x000000, "Member 'FHeroGallery_AchievementBP::AchievementPortrait_207_A81AEF7E4D7FE4BC907AB081A7A2A1E7' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_AchievementBP, ProficiencyThemeBg_208_9A04C4D04C8C52F95173ADB34F017189) == 0x000068, "Member 'FHeroGallery_AchievementBP::ProficiencyThemeBg_208_9A04C4D04C8C52F95173ADB34F017189' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroGallery_AchievementBP;
 
 }
 

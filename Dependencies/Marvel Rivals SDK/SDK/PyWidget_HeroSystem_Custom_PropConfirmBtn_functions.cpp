@@ -53,5 +53,24 @@ void UPyWidget_HeroSystem_Custom_PropConfirmBtn::Destruct()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_HeroSystem_Custom_PropConfirmBtn.PyWidget_HeroSystem_Custom_PropConfirmBtn.trigger_focus_func
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_HeroSystem_Custom_PropConfirmBtn::trigger_focus_func()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_Custom_PropConfirmBtn", "trigger_focus_func");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

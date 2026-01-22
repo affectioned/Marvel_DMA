@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_102671.PyBuffAbility_120_10267191
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10267191 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         StunDuration;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StunDuration;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,49 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10267191">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10267191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10267191")
 	}
 	static class UPyBuffAbility_120_10267191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10267191>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10267191) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10267191");
-static_assert(sizeof(UPyBuffAbility_120_10267191) == 0x001378, "Wrong size on UPyBuffAbility_120_10267191");
-static_assert(offsetof(UPyBuffAbility_120_10267191, StunDuration) == 0x001370, "Member 'UPyBuffAbility_120_10267191::StunDuration' has a wrong offset!");
-
-// PythonClass PyBuffAbility_120_102671.PyBuffAbility_120_10267194
-// 0x0008 (0x1378 - 0x1370)
-class UPyBuffAbility_120_10267194 final : public UMarvelEffectGameplayAbility
-{
-public:
-	float                                         BaseLeopardDamage;                                 // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtraLeopardDamage;                                // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_120_10267194">();
-	}
-	static class UPyBuffAbility_120_10267194* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_120_10267194>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_120_10267194) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10267194");
-static_assert(sizeof(UPyBuffAbility_120_10267194) == 0x001378, "Wrong size on UPyBuffAbility_120_10267194");
-static_assert(offsetof(UPyBuffAbility_120_10267194, BaseLeopardDamage) == 0x001370, "Member 'UPyBuffAbility_120_10267194::BaseLeopardDamage' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10267194, ExtraLeopardDamage) == 0x001374, "Member 'UPyBuffAbility_120_10267194::ExtraLeopardDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10267191;
 
 // PythonClass PyBuffAbility_120_102671.PyBuffAbility_120_10267193
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10267193 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ExtraAttackCount;                                  // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraAttackCount;                                  // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -84,27 +60,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10267193">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10267193")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10267193")
 	}
 	static class UPyBuffAbility_120_10267193* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10267193>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10267193) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10267193");
-static_assert(sizeof(UPyBuffAbility_120_10267193) == 0x001378, "Wrong size on UPyBuffAbility_120_10267193");
-static_assert(offsetof(UPyBuffAbility_120_10267193, ExtraAttackCount) == 0x001370, "Member 'UPyBuffAbility_120_10267193::ExtraAttackCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10267193;
 
 // PythonClass PyBuffAbility_120_102671.PyCue_Scope_Loop_10267193
-// 0x0020 (0x1150 - 0x1130)
+// 0x0020 (0x1160 - 0x1140)
 class APyCue_Scope_Loop_10267193 final : public ACue_Scope_Loop_10267193
 {
 public:
-	class UAnimationAsset*                        AnimToPlay;                                        // 0x1130(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToDetachMesh;                                  // 0x1138(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeMeshExists;                                    // 0x113C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeSmokeAppear;                                   // 0x1140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeSmokeExists;                                   // 0x1144(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        AnimToPlay;                                        // 0x1140(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToDetachMesh;                                  // 0x1148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeMeshExists;                                    // 0x114C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeSmokeAppear;                                   // 0x1150(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeSmokeExists;                                   // 0x1154(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -116,20 +94,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10267193">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10267193")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10267193")
 	}
 	static class APyCue_Scope_Loop_10267193* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10267193>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10267193) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10267193");
-static_assert(sizeof(APyCue_Scope_Loop_10267193) == 0x001150, "Wrong size on APyCue_Scope_Loop_10267193");
-static_assert(offsetof(APyCue_Scope_Loop_10267193, AnimToPlay) == 0x001130, "Member 'APyCue_Scope_Loop_10267193::AnimToPlay' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10267193, TimeToDetachMesh) == 0x001138, "Member 'APyCue_Scope_Loop_10267193::TimeToDetachMesh' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10267193, TimeMeshExists) == 0x00113C, "Member 'APyCue_Scope_Loop_10267193::TimeMeshExists' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10267193, TimeSmokeAppear) == 0x001140, "Member 'APyCue_Scope_Loop_10267193::TimeSmokeAppear' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10267193, TimeSmokeExists) == 0x001144, "Member 'APyCue_Scope_Loop_10267193::TimeSmokeExists' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10267193;
+
+// PythonClass PyBuffAbility_120_102671.PyBuffAbility_120_10267194
+// 0x0008 (0x1390 - 0x1388)
+class UPyBuffAbility_120_10267194 final : public UMarvelEffectGameplayAbility
+{
+public:
+	float                                         BaseLeopardDamage;                                 // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtraLeopardDamage;                                // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10267194")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10267194")
+	}
+	static class UPyBuffAbility_120_10267194* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_120_10267194>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_120_10267194;
 
 }
 

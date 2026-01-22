@@ -25,10 +25,7 @@ public:
 	class AMarvelPlayerState*                     PS;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOnlineStatus                                 OnlineStatus;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200401_OnOnlineStatusChanged) == 0x000008, "Wrong alignment on PyAbility_200401_OnOnlineStatusChanged");
-static_assert(sizeof(PyAbility_200401_OnOnlineStatusChanged) == 0x000010, "Wrong size on PyAbility_200401_OnOnlineStatusChanged");
-static_assert(offsetof(PyAbility_200401_OnOnlineStatusChanged, PS) == 0x000000, "Member 'PyAbility_200401_OnOnlineStatusChanged::PS' has a wrong offset!");
-static_assert(offsetof(PyAbility_200401_OnOnlineStatusChanged, OnlineStatus) == 0x000008, "Member 'PyAbility_200401_OnOnlineStatusChanged::OnlineStatus' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200401_OnOnlineStatusChanged;
 
 // PythonFunction PyAbility_200401.PyAbility_200401.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +34,7 @@ struct PyAbility_200401_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200401_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_200401_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_200401_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_200401_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_200401_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_200401_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200401_K2_OnEndAbility;
 
 // PythonFunction PyAbility_200401.PyAbility_200401.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +43,7 @@ struct PyAbility_200401_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200401_OnAbilityActivate) == 0x000004, "Wrong alignment on PyAbility_200401_OnAbilityActivate");
-static_assert(sizeof(PyAbility_200401_OnAbilityActivate) == 0x000004, "Wrong size on PyAbility_200401_OnAbilityActivate");
-static_assert(offsetof(PyAbility_200401_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyAbility_200401_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200401_OnAbilityActivate;
 
 // PythonFunction PyAbility_200401.PyAbility_200401.GetFinalInputDirection
 // 0x0028 (0x0028 - 0x0000)
@@ -64,12 +57,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200401_GetFinalInputDirection) == 0x000008, "Wrong alignment on PyAbility_200401_GetFinalInputDirection");
-static_assert(sizeof(PyAbility_200401_GetFinalInputDirection) == 0x000028, "Wrong size on PyAbility_200401_GetFinalInputDirection");
-static_assert(offsetof(PyAbility_200401_GetFinalInputDirection, InMovementInputs) == 0x000000, "Member 'PyAbility_200401_GetFinalInputDirection::InMovementInputs' has a wrong offset!");
-static_assert(offsetof(PyAbility_200401_GetFinalInputDirection, DeltaTime) == 0x000004, "Member 'PyAbility_200401_GetFinalInputDirection::DeltaTime' has a wrong offset!");
-static_assert(offsetof(PyAbility_200401_GetFinalInputDirection, bIsFloat) == 0x000008, "Member 'PyAbility_200401_GetFinalInputDirection::bIsFloat' has a wrong offset!");
-static_assert(offsetof(PyAbility_200401_GetFinalInputDirection, ReturnValue) == 0x000010, "Member 'PyAbility_200401_GetFinalInputDirection::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200401_GetFinalInputDirection;
 
 }
 

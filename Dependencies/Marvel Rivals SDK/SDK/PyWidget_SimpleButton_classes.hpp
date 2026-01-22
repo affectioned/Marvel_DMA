@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SimpleButton.PyWidget_SimpleButton
-// 0x0030 (0x0488 - 0x0458)
+// 0x0030 (0x0468 - 0x0438)
 class UPyWidget_SimpleButton : public UMarvelSimpleUserWidget
 {
 public:
-	class UMarvelButton*                          Btn_Main;                                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NormalToHover;                                // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   HoveredTips;                                       // 0x0468(0x0018)(Edit, NativeAccessSpecifierPublic)
-	bool                                          bUnHoverWhenClicked;                               // 0x0480(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelButton*                          Btn_Main;                                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NormalToHover;                                // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   HoveredTips;                                       // 0x0448(0x0018)(Edit, NativeAccessSpecifierPublic)
+	bool                                          bUnHoverWhenClicked;                               // 0x0460(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -33,19 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SimpleButton">();
+		STATIC_CLASS_IMPL("PyWidget_SimpleButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SimpleButton")
 	}
 	static class UPyWidget_SimpleButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SimpleButton>();
 	}
 };
-static_assert(alignof(UPyWidget_SimpleButton) == 0x000008, "Wrong alignment on UPyWidget_SimpleButton");
-static_assert(sizeof(UPyWidget_SimpleButton) == 0x000488, "Wrong size on UPyWidget_SimpleButton");
-static_assert(offsetof(UPyWidget_SimpleButton, Btn_Main) == 0x000458, "Member 'UPyWidget_SimpleButton::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SimpleButton, Anim_NormalToHover) == 0x000460, "Member 'UPyWidget_SimpleButton::Anim_NormalToHover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SimpleButton, HoveredTips) == 0x000468, "Member 'UPyWidget_SimpleButton::HoveredTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SimpleButton, bUnHoverWhenClicked) == 0x000480, "Member 'UPyWidget_SimpleButton::bUnHoverWhenClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SimpleButton;
 
 }
 

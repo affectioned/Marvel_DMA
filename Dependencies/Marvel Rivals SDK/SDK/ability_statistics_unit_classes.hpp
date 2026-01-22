@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass ability_statistics_unit.PyAbilityStatisticsUnit
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyAbilityStatisticsUnit final : public UAbilityStatisticsUnit
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityStatisticsUnit">();
+		STATIC_CLASS_IMPL("PyAbilityStatisticsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityStatisticsUnit")
 	}
 	static class UPyAbilityStatisticsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityStatisticsUnit>();
 	}
 };
-static_assert(alignof(UPyAbilityStatisticsUnit) == 0x000008, "Wrong alignment on UPyAbilityStatisticsUnit");
-static_assert(sizeof(UPyAbilityStatisticsUnit) == 0x0005E0, "Wrong size on UPyAbilityStatisticsUnit");
+DUMPER7_ASSERTS_UPyAbilityStatisticsUnit;
 
 }
 

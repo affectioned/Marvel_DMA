@@ -89,15 +89,34 @@ void UStuckDetectorSubsystem::K2_OnPostLoadMap(class UWorld* InWorld)
 }
 
 
-// Function MarvelStuckDetector.StuckDetectorSubsystem.SendStuckData
+// Function MarvelStuckDetector.StuckDetectorSubsystem.RequestClearRecords
 // (Final, Native, Public, BlueprintCallable)
 
-void UStuckDetectorSubsystem::SendStuckData()
+void UStuckDetectorSubsystem::RequestClearRecords()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("StuckDetectorSubsystem", "SendStuckData");
+		Func = Class->GetFunction("StuckDetectorSubsystem", "RequestClearRecords");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MarvelStuckDetector.StuckDetectorSubsystem.RequestSendData
+// (Final, Native, Public, BlueprintCallable)
+
+void UStuckDetectorSubsystem::RequestSendData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StuckDetectorSubsystem", "RequestSendData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

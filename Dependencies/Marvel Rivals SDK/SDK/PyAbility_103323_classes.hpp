@@ -11,31 +11,10 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
-
-// PythonClass PyAbility_103323.PyWidget_Reticle_103323
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Reticle_103323 final : public UPyMarvelUserWidget
-{
-public:
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Reticle_103323">();
-	}
-	static class UPyWidget_Reticle_103323* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Reticle_103323>();
-	}
-};
-static_assert(alignof(UPyWidget_Reticle_103323) == 0x000008, "Wrong alignment on UPyWidget_Reticle_103323");
-static_assert(sizeof(UPyWidget_Reticle_103323) == 0x0005C0, "Wrong size on UPyWidget_Reticle_103323");
 
 // PythonClass PyAbility_103323.PyConfig_103323
 // 0x0000 (0x0120 - 0x0120)
@@ -44,18 +23,21 @@ class UPyConfig_103323 final : public UConfig_106
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103323">();
+		STATIC_CLASS_IMPL("PyConfig_103323")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103323")
 	}
 	static class UPyConfig_103323* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103323>();
 	}
 };
-static_assert(alignof(UPyConfig_103323) == 0x000008, "Wrong alignment on UPyConfig_103323");
-static_assert(sizeof(UPyConfig_103323) == 0x000120, "Wrong size on UPyConfig_103323");
+DUMPER7_ASSERTS_UPyConfig_103323;
 
 // PythonClass PyAbility_103323.PyAbility_103323
-// 0x0000 (0x2AD8 - 0x2AD8)
+// 0x0000 (0x2B28 - 0x2B28)
 class UPyAbility_103323 : public UAbility_106
 {
 public:
@@ -65,18 +47,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103323">();
+		STATIC_CLASS_IMPL("PyAbility_103323")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103323")
 	}
 	static class UPyAbility_103323* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103323>();
 	}
 };
-static_assert(alignof(UPyAbility_103323) == 0x000008, "Wrong alignment on UPyAbility_103323");
-static_assert(sizeof(UPyAbility_103323) == 0x002AD8, "Wrong size on UPyAbility_103323");
+DUMPER7_ASSERTS_UPyAbility_103323;
 
 // PythonClass PyAbility_103323.PyProjectile_10332301
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10332301 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -85,53 +70,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10332301">();
+		STATIC_CLASS_IMPL("PyProjectile_10332301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10332301")
 	}
 	static class APyProjectile_10332301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10332301>();
 	}
 };
-static_assert(alignof(APyProjectile_10332301) == 0x000010, "Wrong alignment on APyProjectile_10332301");
-static_assert(sizeof(APyProjectile_10332301) == 0x003B90, "Wrong size on APyProjectile_10332301");
+DUMPER7_ASSERTS_APyProjectile_10332301;
 
 // PythonClass PyAbility_103323.PyEffectiveComponent_10332301
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10332301 final : public UMarvelAgentEffectiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10332301">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10332301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10332301")
 	}
 	static class UPyEffectiveComponent_10332301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10332301>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10332301) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10332301");
-static_assert(sizeof(UPyEffectiveComponent_10332301) == 0x001C70, "Wrong size on UPyEffectiveComponent_10332301");
-
-// PythonClass PyAbility_103323.PyUIController_103323
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_103323 final : public UUIC_Ability
-{
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_103323">();
-	}
-	static class UPyUIController_103323* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_103323>();
-	}
-};
-static_assert(alignof(UPyUIController_103323) == 0x000008, "Wrong alignment on UPyUIController_103323");
-static_assert(sizeof(UPyUIController_103323) == 0x000F10, "Wrong size on UPyUIController_103323");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10332301;
 
 }
 

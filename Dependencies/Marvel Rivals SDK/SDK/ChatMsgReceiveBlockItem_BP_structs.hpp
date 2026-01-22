@@ -24,10 +24,7 @@ public:
 	bool                                          IsRevert_1_471DE6E440B88DE4033F8F819FABF8F6;       // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EChatMsgReceiveBlockType                      Condition_5_BD0B01F54F150C50D51FCCB6DAD5338C;      // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FChatMsgReceiveBlockItem_BP) == 0x000001, "Wrong alignment on FChatMsgReceiveBlockItem_BP");
-static_assert(sizeof(FChatMsgReceiveBlockItem_BP) == 0x000002, "Wrong size on FChatMsgReceiveBlockItem_BP");
-static_assert(offsetof(FChatMsgReceiveBlockItem_BP, IsRevert_1_471DE6E440B88DE4033F8F819FABF8F6) == 0x000000, "Member 'FChatMsgReceiveBlockItem_BP::IsRevert_1_471DE6E440B88DE4033F8F819FABF8F6' has a wrong offset!");
-static_assert(offsetof(FChatMsgReceiveBlockItem_BP, Condition_5_BD0B01F54F150C50D51FCCB6DAD5338C) == 0x000001, "Member 'FChatMsgReceiveBlockItem_BP::Condition_5_BD0B01F54F150C50D51FCCB6DAD5338C' has a wrong offset!");
+DUMPER7_ASSERTS_FChatMsgReceiveBlockItem_BP;
 
 }
 

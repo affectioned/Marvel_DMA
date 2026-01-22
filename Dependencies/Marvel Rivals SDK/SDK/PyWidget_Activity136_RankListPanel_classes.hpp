@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity136_RankListPanel.PyWidget_Activity136_RankListPanel
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Activity136_RankListPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         Intervals;                                         // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                GoToMyActions;                                     // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Intervals;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                GoToMyActions;                                     // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity136_RankListPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity136_RankListPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity136_RankListPanel")
 	}
 	static class UPyWidget_Activity136_RankListPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity136_RankListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity136_RankListPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity136_RankListPanel");
-static_assert(sizeof(UPyWidget_Activity136_RankListPanel) == 0x000610, "Wrong size on UPyWidget_Activity136_RankListPanel");
-static_assert(offsetof(UPyWidget_Activity136_RankListPanel, Intervals) == 0x0005F8, "Member 'UPyWidget_Activity136_RankListPanel::Intervals' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity136_RankListPanel, GoToMyActions) == 0x000600, "Member 'UPyWidget_Activity136_RankListPanel::GoToMyActions' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity136_RankListPanel;
 
 }
 

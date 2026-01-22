@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Main.PyWidget_HomeEntrance_Main
-// 0x0140 (0x0700 - 0x05C0)
+// 0x0140 (0x0708 - 0x05C8)
 class UPyWidget_HomeEntrance_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           GamePadFoldAction;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          GamePadFoldActionSoundEffect;                      // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                WidgetMargin;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ScrollTabGuideTipsStyle;                           // 0x05E0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           GamePadFoldAction;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          GamePadFoldActionSoundEffect;                      // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                WidgetMargin;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ScrollTabGuideTipsStyle;                           // 0x05E8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Main">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Main")
 	}
 	static class UPyWidget_HomeEntrance_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Main) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Main");
-static_assert(sizeof(UPyWidget_HomeEntrance_Main) == 0x000700, "Wrong size on UPyWidget_HomeEntrance_Main");
-static_assert(offsetof(UPyWidget_HomeEntrance_Main, GamePadFoldAction) == 0x0005C0, "Member 'UPyWidget_HomeEntrance_Main::GamePadFoldAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Main, GamePadFoldActionSoundEffect) == 0x0005C8, "Member 'UPyWidget_HomeEntrance_Main::GamePadFoldActionSoundEffect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Main, WidgetMargin) == 0x0005D0, "Member 'UPyWidget_HomeEntrance_Main::WidgetMargin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Main, ScrollTabGuideTipsStyle) == 0x0005E0, "Member 'UPyWidget_HomeEntrance_Main::ScrollTabGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Main;
 
 }
 

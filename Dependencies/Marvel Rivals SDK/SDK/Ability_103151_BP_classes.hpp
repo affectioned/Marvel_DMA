@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_103151_BP.Ability_103151_BP_C
-// 0x03A0 (0x2D90 - 0x29F0)
+// 0x04E0 (0x2F20 - 0x2A40)
 class UAbility_103151_BP_C final : public UMarvelGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x29F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x29F8(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2A40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x2A48(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_Ability_103151_BP(int32 EntryPoint);
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_103151_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_103151_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_103151_BP_C")
 	}
 	static class UAbility_103151_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_103151_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_103151_BP_C) == 0x000008, "Wrong alignment on UAbility_103151_BP_C");
-static_assert(sizeof(UAbility_103151_BP_C) == 0x002D90, "Wrong size on UAbility_103151_BP_C");
-static_assert(offsetof(UAbility_103151_BP_C, UberGraphFrame) == 0x0029F0, "Member 'UAbility_103151_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_103151_BP_C, Trace_Rule) == 0x0029F8, "Member 'UAbility_103151_BP_C::Trace_Rule' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_103151_BP_C;
 
 }
 

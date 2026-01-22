@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,25 +24,19 @@ struct PyPayloadV2Goat_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayloadV2Goat_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPayloadV2Goat_ReceiveEndPlay");
-static_assert(sizeof(PyPayloadV2Goat_ReceiveEndPlay) == 0x000001, "Wrong size on PyPayloadV2Goat_ReceiveEndPlay");
-static_assert(offsetof(PyPayloadV2Goat_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPayloadV2Goat_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayloadV2Goat_ReceiveEndPlay;
 
 // PythonFunction PyPayloadV2Goat.PyPayloadV2Goat.HandleHittedDisplayCueLocal
-// 0x18A0 (0x18A0 - 0x0000)
+// 0x1C10 (0x1C10 - 0x0000)
 struct PyPayloadV2Goat_HandleHittedDisplayCueLocal final
 {
 public:
 	class AActor*                                 InSource;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelHittedDisplayData               InHittedDisplayData;                               // 0x0010(0x16A0)(Parm)
-	struct FHitResult                             InHit;                                             // 0x16B0(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelHittedDisplayData               InHittedDisplayData;                               // 0x0010(0x19F0)(Parm)
+	struct FHitResult                             InHit;                                             // 0x1A00(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPayloadV2Goat_HandleHittedDisplayCueLocal) == 0x000010, "Wrong alignment on PyPayloadV2Goat_HandleHittedDisplayCueLocal");
-static_assert(sizeof(PyPayloadV2Goat_HandleHittedDisplayCueLocal) == 0x0018A0, "Wrong size on PyPayloadV2Goat_HandleHittedDisplayCueLocal");
-static_assert(offsetof(PyPayloadV2Goat_HandleHittedDisplayCueLocal, InSource) == 0x000000, "Member 'PyPayloadV2Goat_HandleHittedDisplayCueLocal::InSource' has a wrong offset!");
-static_assert(offsetof(PyPayloadV2Goat_HandleHittedDisplayCueLocal, InHittedDisplayData) == 0x000010, "Member 'PyPayloadV2Goat_HandleHittedDisplayCueLocal::InHittedDisplayData' has a wrong offset!");
-static_assert(offsetof(PyPayloadV2Goat_HandleHittedDisplayCueLocal, InHit) == 0x0016B0, "Member 'PyPayloadV2Goat_HandleHittedDisplayCueLocal::InHit' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayloadV2Goat_HandleHittedDisplayCueLocal;
 
 }
 

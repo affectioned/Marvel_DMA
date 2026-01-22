@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Hero_1045_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1045_classes.hpp"
 
 
 namespace SDK
@@ -29,24 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104554">();
+		STATIC_CLASS_IMPL("PyConfig_104554")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104554")
 	}
 	static class UPyConfig_104554* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104554>();
 	}
 };
-static_assert(alignof(UPyConfig_104554) == 0x000008, "Wrong alignment on UPyConfig_104554");
-static_assert(sizeof(UPyConfig_104554) == 0x0000A0, "Wrong size on UPyConfig_104554");
-static_assert(offsetof(UPyConfig_104554, MaxAttackAngle) == 0x000098, "Member 'UPyConfig_104554::MaxAttackAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104554, SpawnProjectileID) == 0x00009C, "Member 'UPyConfig_104554::SpawnProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104554;
 
 // PythonClass PyAbility_104554.PyAbility_104554
-// 0x1660 (0x4070 - 0x2A10)
+// 0x19B0 (0x4410 - 0x2A60)
 class UPyAbility_104554 : public UAbility_104554
 {
 public:
-	struct FMarvelAbilityTraceContext             LineTraceContext;                                  // 0x2A10(0x1660)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             LineTraceContext;                                  // 0x2A60(0x19B0)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -66,16 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104554">();
+		STATIC_CLASS_IMPL("PyAbility_104554")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104554")
 	}
 	static class UPyAbility_104554* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104554>();
 	}
 };
-static_assert(alignof(UPyAbility_104554) == 0x000010, "Wrong alignment on UPyAbility_104554");
-static_assert(sizeof(UPyAbility_104554) == 0x004070, "Wrong size on UPyAbility_104554");
-static_assert(offsetof(UPyAbility_104554, LineTraceContext) == 0x002A10, "Member 'UPyAbility_104554::LineTraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104554;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyFullScreenFrame.PyFullScreenFrame
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyFullScreenFrame : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFullScreenFrame">();
+		STATIC_CLASS_IMPL("PyFullScreenFrame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFullScreenFrame")
 	}
 	static class UPyFullScreenFrame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyFullScreenFrame>();
 	}
 };
-static_assert(alignof(UPyFullScreenFrame) == 0x000008, "Wrong alignment on UPyFullScreenFrame");
-static_assert(sizeof(UPyFullScreenFrame) == 0x0005C0, "Wrong size on UPyFullScreenFrame");
+DUMPER7_ASSERTS_UPyFullScreenFrame;
 
 }
 

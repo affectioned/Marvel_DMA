@@ -21,9 +21,7 @@ struct PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING final
 public:
 	class FString                                 image_group;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING) == 0x000008, "Wrong alignment on PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING");
-static_assert(sizeof(PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING) == 0x000010, "Wrong size on PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING");
-static_assert(offsetof(PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING, image_group) == 0x000000, "Member 'PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING::image_group' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_CreatePanel_C_GET_LEAGUE_IMAGE_BASE64_ENCODING;
 
 // PythonFunction PyWidget_League_CreatePanel.PyWidget_League_CreatePanel.OnUrlChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_League_CreatePanel_OnUrlChanged final
 public:
 	class FText                                   Url;                                               // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_League_CreatePanel_OnUrlChanged) == 0x000008, "Wrong alignment on PyWidget_League_CreatePanel_OnUrlChanged");
-static_assert(sizeof(PyWidget_League_CreatePanel_OnUrlChanged) == 0x000018, "Wrong size on PyWidget_League_CreatePanel_OnUrlChanged");
-static_assert(offsetof(PyWidget_League_CreatePanel_OnUrlChanged, Url) == 0x000000, "Member 'PyWidget_League_CreatePanel_OnUrlChanged::Url' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_CreatePanel_OnUrlChanged;
 
 // PythonFunction PyWidget_League_CreatePanel.PyWidget_League_CreatePanel.OnBeforePopup
 // 0x0020 (0x0020 - 0x0000)
@@ -44,10 +40,7 @@ public:
 	class FString                                 Url;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Frame;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_CreatePanel_OnBeforePopup) == 0x000008, "Wrong alignment on PyWidget_League_CreatePanel_OnBeforePopup");
-static_assert(sizeof(PyWidget_League_CreatePanel_OnBeforePopup) == 0x000020, "Wrong size on PyWidget_League_CreatePanel_OnBeforePopup");
-static_assert(offsetof(PyWidget_League_CreatePanel_OnBeforePopup, Url) == 0x000000, "Member 'PyWidget_League_CreatePanel_OnBeforePopup::Url' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_CreatePanel_OnBeforePopup, Frame) == 0x000010, "Member 'PyWidget_League_CreatePanel_OnBeforePopup::Frame' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_CreatePanel_OnBeforePopup;
 
 // PythonFunction PyWidget_League_CreatePanel.PyWidget_League_CreatePanel.JSNotify
 // 0x0020 (0x0020 - 0x0000)
@@ -57,10 +50,7 @@ public:
 	class FString                                 Params_0;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CBName;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_CreatePanel_JSNotify) == 0x000008, "Wrong alignment on PyWidget_League_CreatePanel_JSNotify");
-static_assert(sizeof(PyWidget_League_CreatePanel_JSNotify) == 0x000020, "Wrong size on PyWidget_League_CreatePanel_JSNotify");
-static_assert(offsetof(PyWidget_League_CreatePanel_JSNotify, Params_0) == 0x000000, "Member 'PyWidget_League_CreatePanel_JSNotify::Params_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_CreatePanel_JSNotify, CBName) == 0x000010, "Member 'PyWidget_League_CreatePanel_JSNotify::CBName' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_CreatePanel_JSNotify;
 
 }
 

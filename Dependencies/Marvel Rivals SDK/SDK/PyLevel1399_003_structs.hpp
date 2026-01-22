@@ -23,11 +23,7 @@ public:
 	TArray<class FString>                         Orders;                                            // 0x0010(0x0010)(Edit, NativeAccessSpecifierPublic)
 	TArray<class AChaosDestructionActor*>         OtherBlackPieces;                                  // 0x0020(0x0010)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBoardLayoutConfig) == 0x000008, "Wrong alignment on FBoardLayoutConfig");
-static_assert(sizeof(FBoardLayoutConfig) == 0x000030, "Wrong size on FBoardLayoutConfig");
-static_assert(offsetof(FBoardLayoutConfig, LayoutList) == 0x000000, "Member 'FBoardLayoutConfig::LayoutList' has a wrong offset!");
-static_assert(offsetof(FBoardLayoutConfig, Orders) == 0x000010, "Member 'FBoardLayoutConfig::Orders' has a wrong offset!");
-static_assert(offsetof(FBoardLayoutConfig, OtherBlackPieces) == 0x000020, "Member 'FBoardLayoutConfig::OtherBlackPieces' has a wrong offset!");
+DUMPER7_ASSERTS_FBoardLayoutConfig;
 
 }
 

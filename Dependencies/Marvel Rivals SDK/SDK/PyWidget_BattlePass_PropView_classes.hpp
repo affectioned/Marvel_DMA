@@ -13,8 +13,8 @@
 #include "PyMarvelUserWidget_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -22,17 +22,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_Confirm_Popup
-// 0x00D8 (0x0698 - 0x05C0)
+// 0x00D8 (0x06A0 - 0x05C8)
 class UPyWidget_BattlePass_Confirm_Popup final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ViewItemTime;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPyWidget_CommonItem_ItemData*>  ViewItemList;                                      // 0x05C0(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FUIActionData                          ConfirmHotKey;                                     // 0x05D0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          CancelHotKey;                                      // 0x0628(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UInputAction*                           CloseInputAction;                                  // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& anim_name)> OnConfirmPopupAnimFinish;         // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ViewItemTime;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPyWidget_CommonItem_ItemData*>  ViewItemList;                                      // 0x05C8(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FUIActionData                          ConfirmHotKey;                                     // 0x05D8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          CancelHotKey;                                      // 0x0630(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UInputAction*                           CloseInputAction;                                  // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& anim_name)> OnConfirmPopupAnimFinish;         // 0x0690(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,33 +41,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Confirm_Popup">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Confirm_Popup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Confirm_Popup")
 	}
 	static class UPyWidget_BattlePass_Confirm_Popup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Confirm_Popup>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Confirm_Popup) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Confirm_Popup");
-static_assert(sizeof(UPyWidget_BattlePass_Confirm_Popup) == 0x000698, "Wrong size on UPyWidget_BattlePass_Confirm_Popup");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, ViewItemTime) == 0x0005BC, "Member 'UPyWidget_BattlePass_Confirm_Popup::ViewItemTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, ViewItemList) == 0x0005C0, "Member 'UPyWidget_BattlePass_Confirm_Popup::ViewItemList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, ConfirmHotKey) == 0x0005D0, "Member 'UPyWidget_BattlePass_Confirm_Popup::ConfirmHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, CancelHotKey) == 0x000628, "Member 'UPyWidget_BattlePass_Confirm_Popup::CancelHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, CloseInputAction) == 0x000680, "Member 'UPyWidget_BattlePass_Confirm_Popup::CloseInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Confirm_Popup, OnConfirmPopupAnimFinish) == 0x000688, "Member 'UPyWidget_BattlePass_Confirm_Popup::OnConfirmPopupAnimFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Confirm_Popup;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItemList
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_BattlePass_CuttingItemList : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMarvelBattlePassCuttingItemStyle> ItemStyleList;                                  // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ItemFocusConfigList;                               // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         PrePageBtnFocusItemIndex;                          // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NextPageBtnFocusItemIndex;                         // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Switch_NoBuy;                                 // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMarvelBattlePassCuttingItemStyle> ItemStyleList;                                  // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ItemFocusConfigList;                               // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         PrePageBtnFocusItemIndex;                          // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NextPageBtnFocusItemIndex;                         // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Switch_NoBuy;                                 // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -77,57 +74,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CuttingItemList">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CuttingItemList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CuttingItemList")
 	}
 	static class UPyWidget_BattlePass_CuttingItemList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CuttingItemList>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CuttingItemList) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CuttingItemList");
-static_assert(sizeof(UPyWidget_BattlePass_CuttingItemList) == 0x0005F0, "Wrong size on UPyWidget_BattlePass_CuttingItemList");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItemList, ItemStyleList) == 0x0005C0, "Member 'UPyWidget_BattlePass_CuttingItemList::ItemStyleList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItemList, ItemFocusConfigList) == 0x0005D0, "Member 'UPyWidget_BattlePass_CuttingItemList::ItemFocusConfigList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItemList, PrePageBtnFocusItemIndex) == 0x0005E0, "Member 'UPyWidget_BattlePass_CuttingItemList::PrePageBtnFocusItemIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItemList, NextPageBtnFocusItemIndex) == 0x0005E4, "Member 'UPyWidget_BattlePass_CuttingItemList::NextPageBtnFocusItemIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItemList, Anim_Switch_NoBuy) == 0x0005E8, "Member 'UPyWidget_BattlePass_CuttingItemList::Anim_Switch_NoBuy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CuttingItemList;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItemList_Currency
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_BattlePass_CuttingItemList_Currency final : public UPyWidget_BattlePass_CuttingItemList
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CuttingItemList_Currency">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CuttingItemList_Currency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CuttingItemList_Currency")
 	}
 	static class UPyWidget_BattlePass_CuttingItemList_Currency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CuttingItemList_Currency>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CuttingItemList_Currency) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CuttingItemList_Currency");
-static_assert(sizeof(UPyWidget_BattlePass_CuttingItemList_Currency) == 0x0005F0, "Wrong size on UPyWidget_BattlePass_CuttingItemList_Currency");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CuttingItemList_Currency;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItemPrice
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattlePass_CuttingItemPrice final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CuttingItemPrice">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CuttingItemPrice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CuttingItemPrice")
 	}
 	static class UPyWidget_BattlePass_CuttingItemPrice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CuttingItemPrice>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CuttingItemPrice) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_CuttingItemPrice");
-static_assert(sizeof(UPyWidget_BattlePass_CuttingItemPrice) == 0x0005C0, "Wrong size on UPyWidget_BattlePass_CuttingItemPrice");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CuttingItemPrice;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_PageItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_BattlePass_PageItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -139,24 +140,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_PageItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_PageItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_PageItem")
 	}
 	static class UPyWidget_BattlePass_PageItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_PageItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_PageItem) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_PageItem");
-static_assert(sizeof(UPyWidget_BattlePass_PageItem) == 0x0008C0, "Wrong size on UPyWidget_BattlePass_PageItem");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_PageItem;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItem
-// 0x0300 (0x0BC0 - 0x08C0)
+// 0x0300 (0x0C20 - 0x0920)
 class UPyWidget_BattlePass_CuttingItem final : public UPyWidget_BaseCommonButton
 {
 public:
-	uint8                                         Pad_8B8[0x8];                                      // 0x08B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelBattlePassCuttingItemStyle      ItemStyle;                                         // 0x08C0(0x02F0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_Common_ImageMaskCut_Vx;                        // 0x0BB0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_918[0x8];                                      // 0x0918(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelBattlePassCuttingItemStyle      ItemStyle;                                         // 0x0920(0x02F0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_Common_ImageMaskCut_Vx;                        // 0x0C10(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -170,48 +174,49 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_CuttingItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_CuttingItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_CuttingItem")
 	}
 	static class UPyWidget_BattlePass_CuttingItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_CuttingItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_CuttingItem) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_CuttingItem");
-static_assert(sizeof(UPyWidget_BattlePass_CuttingItem) == 0x000BC0, "Wrong size on UPyWidget_BattlePass_CuttingItem");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItem, ItemStyle) == 0x0008C0, "Member 'UPyWidget_BattlePass_CuttingItem::ItemStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_CuttingItem, WBP_Common_ImageMaskCut_Vx) == 0x000BB0, "Member 'UPyWidget_BattlePass_CuttingItem::WBP_Common_ImageMaskCut_Vx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_CuttingItem;
 
 // PythonClass PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView
-// 0x02D8 (0x08D0 - 0x05F8)
+// 0x02D8 (0x08D8 - 0x0600)
 class UPyWidget_BattlePass_PropView final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TMap<EBattlePassCuttingPlateLayout, TSubclassOf<class UUserWidget>> CuttingPlateClasses;         // 0x05F8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_BattlePass_PageItem> TabWidget;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciationReturnTipsStyle;                       // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SwitchPageTipsStyle;                               // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0670(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ViewMenuTipsStyle;                                 // 0x0680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ConfirmReturnTipsStyle;                            // 0x0690(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ItemContinuteStyle;                                // 0x06A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         ChangePageStep;                                    // 0x06B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ItemNormalColor;                                   // 0x06B4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ItemActiveColor;                                   // 0x06C4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConfirmPopupFadeInTime;                            // 0x06D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyDataAsset_BattlePass*                BattlePassDataAsset;                               // 0x06D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConfirmPopupOffsetY;                               // 0x06E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6E4[0x4];                                      // 0x06E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          BtnBuyHotKey1;                                     // 0x06E8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          BtnBuyHotKey2;                                     // 0x0740(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          BtnBuyHotKey3;                                     // 0x0798(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          BtnBuyHotKey4;                                     // 0x07F0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FUIActionData                          BtnNorHotKey;                                      // 0x0848(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     CanvasPanel_Left;                                  // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     CanvasPanel_Right;                                 // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelCanvasPanel*                     CanvasPanel_Full;                                  // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_BattlePass_PropViewTitle;                      // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 PreviewBattlePassId;                               // 0x08C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EBattlePassCuttingPlateLayout, TSubclassOf<class UUserWidget>> CuttingPlateClasses;         // 0x0600(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_BattlePass_PageItem> TabWidget;                                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciationReturnTipsStyle;                       // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SwitchPageTipsStyle;                               // 0x0668(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0678(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ViewMenuTipsStyle;                                 // 0x0688(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ConfirmReturnTipsStyle;                            // 0x0698(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ItemContinuteStyle;                                // 0x06A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         ChangePageStep;                                    // 0x06B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ItemNormalColor;                                   // 0x06BC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ItemActiveColor;                                   // 0x06CC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConfirmPopupFadeInTime;                            // 0x06DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyDataAsset_BattlePass*                BattlePassDataAsset;                               // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConfirmPopupOffsetY;                               // 0x06E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6EC[0x4];                                      // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          BtnBuyHotKey1;                                     // 0x06F0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          BtnBuyHotKey2;                                     // 0x0748(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          BtnBuyHotKey3;                                     // 0x07A0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          BtnBuyHotKey4;                                     // 0x07F8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FUIActionData                          BtnNorHotKey;                                      // 0x0850(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     CanvasPanel_Left;                                  // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     CanvasPanel_Right;                                 // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     CanvasPanel_Full;                                  // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_BattlePass_PropViewTitle;                      // 0x08C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PreviewBattlePassId;                               // 0x08C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -239,39 +244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_PropView">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_PropView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_PropView")
 	}
 	static class UPyWidget_BattlePass_PropView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_PropView>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_PropView) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_PropView");
-static_assert(sizeof(UPyWidget_BattlePass_PropView) == 0x0008D0, "Wrong size on UPyWidget_BattlePass_PropView");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, CuttingPlateClasses) == 0x0005F8, "Member 'UPyWidget_BattlePass_PropView::CuttingPlateClasses' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, TabWidget) == 0x000648, "Member 'UPyWidget_BattlePass_PropView::TabWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, AppreciationReturnTipsStyle) == 0x000650, "Member 'UPyWidget_BattlePass_PropView::AppreciationReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, SwitchPageTipsStyle) == 0x000660, "Member 'UPyWidget_BattlePass_PropView::SwitchPageTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, AppreciationTipsStyle) == 0x000670, "Member 'UPyWidget_BattlePass_PropView::AppreciationTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ViewMenuTipsStyle) == 0x000680, "Member 'UPyWidget_BattlePass_PropView::ViewMenuTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ConfirmReturnTipsStyle) == 0x000690, "Member 'UPyWidget_BattlePass_PropView::ConfirmReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ItemContinuteStyle) == 0x0006A0, "Member 'UPyWidget_BattlePass_PropView::ItemContinuteStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ChangePageStep) == 0x0006B0, "Member 'UPyWidget_BattlePass_PropView::ChangePageStep' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ItemNormalColor) == 0x0006B4, "Member 'UPyWidget_BattlePass_PropView::ItemNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ItemActiveColor) == 0x0006C4, "Member 'UPyWidget_BattlePass_PropView::ItemActiveColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ConfirmPopupFadeInTime) == 0x0006D4, "Member 'UPyWidget_BattlePass_PropView::ConfirmPopupFadeInTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BattlePassDataAsset) == 0x0006D8, "Member 'UPyWidget_BattlePass_PropView::BattlePassDataAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, ConfirmPopupOffsetY) == 0x0006E0, "Member 'UPyWidget_BattlePass_PropView::ConfirmPopupOffsetY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BtnBuyHotKey1) == 0x0006E8, "Member 'UPyWidget_BattlePass_PropView::BtnBuyHotKey1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BtnBuyHotKey2) == 0x000740, "Member 'UPyWidget_BattlePass_PropView::BtnBuyHotKey2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BtnBuyHotKey3) == 0x000798, "Member 'UPyWidget_BattlePass_PropView::BtnBuyHotKey3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BtnBuyHotKey4) == 0x0007F0, "Member 'UPyWidget_BattlePass_PropView::BtnBuyHotKey4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, BtnNorHotKey) == 0x000848, "Member 'UPyWidget_BattlePass_PropView::BtnNorHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, CanvasPanel_Left) == 0x0008A0, "Member 'UPyWidget_BattlePass_PropView::CanvasPanel_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, CanvasPanel_Right) == 0x0008A8, "Member 'UPyWidget_BattlePass_PropView::CanvasPanel_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, CanvasPanel_Full) == 0x0008B0, "Member 'UPyWidget_BattlePass_PropView::CanvasPanel_Full' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, WBP_BattlePass_PropViewTitle) == 0x0008B8, "Member 'UPyWidget_BattlePass_PropView::WBP_BattlePass_PropViewTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_PropView, PreviewBattlePassId) == 0x0008C0, "Member 'UPyWidget_BattlePass_PropView::PreviewBattlePassId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_PropView;
 
 }
 

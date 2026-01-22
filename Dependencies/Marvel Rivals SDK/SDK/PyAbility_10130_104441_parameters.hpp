@@ -26,11 +26,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10130_10444102_WhileActive) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10130_10444102_WhileActive");
-static_assert(sizeof(PyCue_Ability_Loop_10130_10444102_WhileActive) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10130_10444102_WhileActive");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10130_10444102_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10130_10444102_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10130_10444102_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10130_10444102_WhileActive;
 
 // PythonFunction PyAbility_10130_104441.PyCue_Ability_Loop_10130_10444102.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -41,11 +37,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10130_10444102_OnRemove) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10130_10444102_OnRemove");
-static_assert(sizeof(PyCue_Ability_Loop_10130_10444102_OnRemove) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10130_10444102_OnRemove");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10130_10444102_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10130_10444102_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10130_10444102_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10130_10444102_OnRemove;
 
 // PythonFunction PyAbility_10130_104441.PyCue_Ability_Loop_10130_10444102.OnApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -56,11 +48,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10130_10444102_OnApplyDamage) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10130_10444102_OnApplyDamage");
-static_assert(sizeof(PyCue_Ability_Loop_10130_10444102_OnApplyDamage) == 0x000028, "Wrong size on PyCue_Ability_Loop_10130_10444102_OnApplyDamage");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnApplyDamage, Instigator_0) == 0x000000, "Member 'PyCue_Ability_Loop_10130_10444102_OnApplyDamage::Instigator_0' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnApplyDamage, Target) == 0x000008, "Member 'PyCue_Ability_Loop_10130_10444102_OnApplyDamage::Target' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10130_10444102_OnApplyDamage, ModifierHandle) == 0x000010, "Member 'PyCue_Ability_Loop_10130_10444102_OnApplyDamage::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10130_10444102_OnApplyDamage;
 
 }
 

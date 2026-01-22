@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "PySpecialAreaBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaFireCenter">();
+		STATIC_CLASS_IMPL("PySpecialAreaFireCenter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaFireCenter")
 	}
 	static class APySpecialAreaFireCenter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpecialAreaFireCenter>();
 	}
 };
-static_assert(alignof(APySpecialAreaFireCenter) == 0x000010, "Wrong alignment on APySpecialAreaFireCenter");
-static_assert(sizeof(APySpecialAreaFireCenter) == 0x0007E0, "Wrong size on APySpecialAreaFireCenter");
-static_assert(offsetof(APySpecialAreaFireCenter, AreaCollections) == 0x0007C0, "Member 'APySpecialAreaFireCenter::AreaCollections' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFireCenter, ChoiceInterval) == 0x0007D0, "Member 'APySpecialAreaFireCenter::ChoiceInterval' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFireCenter, ChoiceMaxCount) == 0x0007D4, "Member 'APySpecialAreaFireCenter::ChoiceMaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_APySpecialAreaFireCenter;
 
 }
 

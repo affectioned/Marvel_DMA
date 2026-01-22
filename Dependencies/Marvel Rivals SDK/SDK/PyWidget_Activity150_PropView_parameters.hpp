@@ -23,9 +23,7 @@ struct PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct");
-static_assert(sizeof(PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct");
-static_assert(offsetof(PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_Preview_Item_Base_PreConstruct;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView_PurchaseCurrency.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct");
-static_assert(sizeof(PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct");
-static_assert(offsetof(PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_PurchaseCurrency_PreConstruct;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView_SkinPreview.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Activity150_PropView_SkinPreview_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_SkinPreview_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity150_PropView_SkinPreview_PreConstruct");
-static_assert(sizeof(PyWidget_Activity150_PropView_SkinPreview_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity150_PropView_SkinPreview_PreConstruct");
-static_assert(offsetof(PyWidget_Activity150_PropView_SkinPreview_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity150_PropView_SkinPreview_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_SkinPreview_PreConstruct;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView_SkinPreview.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_SkinPreview_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView_ItemEmpty.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_Activity150_PropView_ItemEmpty_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_ItemEmpty_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity150_PropView_ItemEmpty_PreConstruct");
-static_assert(sizeof(PyWidget_Activity150_PropView_ItemEmpty_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity150_PropView_ItemEmpty_PreConstruct");
-static_assert(offsetof(PyWidget_Activity150_PropView_ItemEmpty_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity150_PropView_ItemEmpty_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_ItemEmpty_PreConstruct;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_Activity150_PropView_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity150_PropView_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity150_PropView_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity150_PropView_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity150_PropView_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity150_PropView_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity150_PropView.PyWidget_Activity150_PropView.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_Activity150_PropView_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity150_PropView_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity150_PropView_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity150_PropView_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity150_PropView_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity150_PropView_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity150_PropView_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity150_PropView_OnAnimationFinished;
 
 }
 

@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0010(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_102711_HandleAnimSocketInfo) == 0x000010, "Wrong alignment on PyAbility_102711_HandleAnimSocketInfo");
-static_assert(sizeof(PyAbility_102711_HandleAnimSocketInfo) == 0x0000B0, "Wrong size on PyAbility_102711_HandleAnimSocketInfo");
-static_assert(offsetof(PyAbility_102711_HandleAnimSocketInfo, SocketId) == 0x000000, "Member 'PyAbility_102711_HandleAnimSocketInfo::SocketId' has a wrong offset!");
-static_assert(offsetof(PyAbility_102711_HandleAnimSocketInfo, SocketInfo) == 0x000010, "Member 'PyAbility_102711_HandleAnimSocketInfo::SocketInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102711_HandleAnimSocketInfo;
 
 // PythonFunction PyAbility_102711.PyAbility_102711.OnProjectileTaskSuccess
 // 0x0170 (0x0170 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_102711_OnProjectileTaskSuccess) == 0x000008, "Wrong alignment on PyAbility_102711_OnProjectileTaskSuccess");
-static_assert(sizeof(PyAbility_102711_OnProjectileTaskSuccess) == 0x000170, "Wrong size on PyAbility_102711_OnProjectileTaskSuccess");
-static_assert(offsetof(PyAbility_102711_OnProjectileTaskSuccess, SpawnActor) == 0x000000, "Member 'PyAbility_102711_OnProjectileTaskSuccess::SpawnActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_102711_OnProjectileTaskSuccess, Data) == 0x000008, "Member 'PyAbility_102711_OnProjectileTaskSuccess::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102711_OnProjectileTaskSuccess;
 
 // PythonFunction PyAbility_102711.PyAbility_102711.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -51,9 +45,7 @@ struct PyAbility_102711_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102711_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_102711_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_102711_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_102711_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_102711_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_102711_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102711_NativeOnMontageEvent;
 
 }
 

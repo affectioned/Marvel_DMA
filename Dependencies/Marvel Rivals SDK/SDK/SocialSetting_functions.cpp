@@ -17,75 +17,7 @@
 namespace SDK
 {
 
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_GetCurrentValue
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         o                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float UUISettingAlternateNameHandler::BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_GetCurrentValue");
-
-	Params::UISettingAlternateNameHandler_BP_GetCurrentValue Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.p = std::move(p);
-	Parms.o = std::move(o);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.GetOverrideEntryName
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    entry_name                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
-
-class FString UUISettingAlternateNameHandler::GetOverrideEntryName(class UObject* obj, const class FString& setting_key, const class FString& entry_name, const TMap<class FString, class FString>& p)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAlternateNameHandler", "GetOverrideEntryName");
-
-	Params::UISettingAlternateNameHandler_GetOverrideEntryName Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.entry_name = std::move(entry_name);
-	Parms.p = std::move(p);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnBtnClicked
+// PythonFunction SocialSetting.UISettingSocialDiscordActionHandler.BP_OnBtnClicked
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -96,14 +28,14 @@ class FString UUISettingAlternateNameHandler::GetOverrideEntryName(class UObject
 // const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 // TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
+TMap<class FString, int32> UUISettingSocialDiscordActionHandler::BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnBtnClicked");
+		Func = Class->GetFunction("UISettingSocialDiscordActionHandler", "BP_OnBtnClicked");
 
-	Params::UISettingAlternateNameHandler_BP_OnBtnClicked Parms{};
+	Params::UISettingSocialDiscordActionHandler_BP_OnBtnClicked Parms{};
 
 	Parms.obj = obj;
 	Parms.setting_key = std::move(setting_key);
@@ -123,45 +55,7 @@ TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnBtnClicked(class
 }
 
 
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnStrValueChanged
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
-// const class FString&                    value                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
-// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnStrValueChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, const class FString& value, const TMap<class FString, int32>& tags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnStrValueChanged");
-
-	Params::UISettingAlternateNameHandler_BP_OnStrValueChanged Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.params = std::move(params);
-	Parms.options = std::move(options);
-	Parms.value = std::move(value);
-	Parms.tags = std::move(tags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnChanged
+// PythonFunction SocialSetting.UISettingAnchorModeHandler.BP_OnChanged
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -172,14 +66,14 @@ TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnStrValueChanged(
 // const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 // TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
+TMap<class FString, int32> UUISettingAnchorModeHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnChanged");
+		Func = Class->GetFunction("UISettingAnchorModeHandler", "BP_OnChanged");
 
-	Params::UISettingAlternateNameHandler_BP_OnChanged Parms{};
+	Params::UISettingAnchorModeHandler_BP_OnChanged Parms{};
 
 	Parms.obj = obj;
 	Parms.setting_key = std::move(setting_key);
@@ -347,82 +241,6 @@ TMap<class FString, int32> UUISettingCrossPlatformHandler::BP_OnChanged(class UO
 }
 
 
-// PythonFunction SocialSetting.UISettingSocialDiscordActionHandler.BP_OnBtnClicked
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
-// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TMap<class FString, int32> UUISettingSocialDiscordActionHandler::BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingSocialDiscordActionHandler", "BP_OnBtnClicked");
-
-	Params::UISettingSocialDiscordActionHandler_BP_OnBtnClicked Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.params = std::move(params);
-	Parms.options = std::move(options);
-	Parms.value = value;
-	Parms.tags = std::move(tags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction SocialSetting.UISettingAnchorModeHandler.BP_OnChanged
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
-// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
-// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TMap<class FString, int32> UUISettingAnchorModeHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingAnchorModeHandler", "BP_OnChanged");
-
-	Params::UISettingAnchorModeHandler_BP_OnChanged Parms{};
-
-	Parms.obj = obj;
-	Parms.setting_key = std::move(setting_key);
-	Parms.params = std::move(params);
-	Parms.options = std::move(options);
-	Parms.value = value;
-	Parms.tags = std::move(tags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction SocialSetting.UISettingSocialM2201Handler.BP_OnChanged
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -518,6 +336,188 @@ TMap<class FString, int32> UUISettingStreamerAnonymousOneselfHandler::BP_OnChang
 		Func = Class->GetFunction("UISettingStreamerAnonymousOneselfHandler", "BP_OnChanged");
 
 	Params::UISettingStreamerAnonymousOneselfHandler_BP_OnChanged Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.params = std::move(params);
+	Parms.options = std::move(options);
+	Parms.value = value;
+	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_GetCurrentValue
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         o                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float UUISettingAlternateNameHandler::BP_GetCurrentValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& p, const TMap<int32, class FText>& o)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_GetCurrentValue");
+
+	Params::UISettingAlternateNameHandler_BP_GetCurrentValue Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.p = std::move(p);
+	Parms.o = std::move(o);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.GetOverrideEntryName
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    entry_name                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&p                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString UUISettingAlternateNameHandler::GetOverrideEntryName(class UObject* obj, const class FString& setting_key, const class FString& entry_name, const TMap<class FString, class FString>& p)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingAlternateNameHandler", "GetOverrideEntryName");
+
+	Params::UISettingAlternateNameHandler_GetOverrideEntryName Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.entry_name = std::move(entry_name);
+	Parms.p = std::move(p);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnBtnClicked
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnBtnClicked(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnBtnClicked");
+
+	Params::UISettingAlternateNameHandler_BP_OnBtnClicked Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.params = std::move(params);
+	Parms.options = std::move(options);
+	Parms.value = value;
+	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnStrValueChanged
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FString&                    value                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnStrValueChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, const class FString& value, const TMap<class FString, int32>& tags)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnStrValueChanged");
+
+	Params::UISettingAlternateNameHandler_BP_OnStrValueChanged Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.params = std::move(params);
+	Parms.options = std::move(options);
+	Parms.value = std::move(value);
+	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction SocialSetting.UISettingAlternateNameHandler.BP_OnChanged
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         options                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FString, int32>&       tags                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// TMap<class FString, int32>              ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TMap<class FString, int32> UUISettingAlternateNameHandler::BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingAlternateNameHandler", "BP_OnChanged");
+
+	Params::UISettingAlternateNameHandler_BP_OnChanged Parms{};
 
 	Parms.obj = obj;
 	Parms.setting_key = std::move(setting_key);

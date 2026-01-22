@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UserState">();
+		STATIC_CLASS_IMPL("PyWidget_UserState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UserState")
 	}
 	static class UPyWidget_UserState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UserState>();
 	}
 };
-static_assert(alignof(UPyWidget_UserState) == 0x000008, "Wrong alignment on UPyWidget_UserState");
-static_assert(sizeof(UPyWidget_UserState) == 0x0003C8, "Wrong size on UPyWidget_UserState");
-static_assert(offsetof(UPyWidget_UserState, Text_State) == 0x0003B8, "Member 'UPyWidget_UserState::Text_State' has a wrong offset!");
-static_assert(offsetof(UPyWidget_UserState, Img_State) == 0x0003C0, "Member 'UPyWidget_UserState::Img_State' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_UserState;
 
 }
 

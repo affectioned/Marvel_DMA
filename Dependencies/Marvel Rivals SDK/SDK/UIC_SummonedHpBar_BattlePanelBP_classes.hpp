@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UIC_SummonedHpBar_BattlePanelBP.UIC_SummonedHpBar_BattlePanelBP_C
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0280 - 0x0280)
 class UUIC_SummonedHpBar_BattlePanelBP_C final : public UPyUIC_Summoned_HpBar
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIC_SummonedHpBar_BattlePanelBP_C">();
+		BP_STATIC_CLASS_IMPL("UIC_SummonedHpBar_BattlePanelBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIC_SummonedHpBar_BattlePanelBP_C")
 	}
 	static class UUIC_SummonedHpBar_BattlePanelBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIC_SummonedHpBar_BattlePanelBP_C>();
 	}
 };
-static_assert(alignof(UUIC_SummonedHpBar_BattlePanelBP_C) == 0x000008, "Wrong alignment on UUIC_SummonedHpBar_BattlePanelBP_C");
-static_assert(sizeof(UUIC_SummonedHpBar_BattlePanelBP_C) == 0x000230, "Wrong size on UUIC_SummonedHpBar_BattlePanelBP_C");
+DUMPER7_ASSERTS_UUIC_SummonedHpBar_BattlePanelBP_C;
 
 }
 

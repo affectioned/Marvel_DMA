@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_BanquetListBtn.PyWidget_Activity120_BanquetListBtn
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity120_BanquetListBtn final : public UPyWidget_Button
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_BanquetListBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_BanquetListBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_BanquetListBtn")
 	}
 	static class UPyWidget_Activity120_BanquetListBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_BanquetListBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_BanquetListBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity120_BanquetListBtn");
-static_assert(sizeof(UPyWidget_Activity120_BanquetListBtn) == 0x000728, "Wrong size on UPyWidget_Activity120_BanquetListBtn");
+DUMPER7_ASSERTS_UPyWidget_Activity120_BanquetListBtn;
 
 }
 

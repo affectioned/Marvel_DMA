@@ -21,9 +21,7 @@ struct PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur final
 public:
 	float                                         InTotalHpCur;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur) == 0x000004, "Wrong alignment on PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur");
-static_assert(sizeof(PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur) == 0x000004, "Wrong size on PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur");
-static_assert(offsetof(PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur, InTotalHpCur) == 0x000000, "Member 'PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur::InTotalHpCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroInfo_Hp_Watcher_SetTotalHpCur;
 
 }
 

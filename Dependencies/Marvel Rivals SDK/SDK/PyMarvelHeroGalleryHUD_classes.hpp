@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelHeroGalleryHUD">();
+		STATIC_CLASS_IMPL("PyMarvelHeroGalleryHUD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelHeroGalleryHUD")
 	}
 	static class APyMarvelHeroGalleryHUD* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelHeroGalleryHUD>();
 	}
 };
-static_assert(alignof(APyMarvelHeroGalleryHUD) == 0x000010, "Wrong alignment on APyMarvelHeroGalleryHUD");
-static_assert(sizeof(APyMarvelHeroGalleryHUD) == 0x000950, "Wrong size on APyMarvelHeroGalleryHUD");
-static_assert(offsetof(APyMarvelHeroGalleryHUD, ArtItemTable) == 0x000948, "Member 'APyMarvelHeroGalleryHUD::ArtItemTable' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelHeroGalleryHUD;
 
 }
 

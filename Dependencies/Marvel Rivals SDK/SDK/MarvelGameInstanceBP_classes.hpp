@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelGameInstanceBP.MarvelGameInstanceBP_C
-// 0x0000 (0x0718 - 0x0718)
+// 0x0000 (0x0778 - 0x0778)
 class UMarvelGameInstanceBP_C final : public UPyMarvelGameInstance
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelGameInstanceBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelGameInstanceBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGameInstanceBP_C")
 	}
 	static class UMarvelGameInstanceBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelGameInstanceBP_C>();
 	}
 };
-static_assert(alignof(UMarvelGameInstanceBP_C) == 0x000008, "Wrong alignment on UMarvelGameInstanceBP_C");
-static_assert(sizeof(UMarvelGameInstanceBP_C) == 0x000718, "Wrong size on UMarvelGameInstanceBP_C");
+DUMPER7_ASSERTS_UMarvelGameInstanceBP_C;
 
 }
 

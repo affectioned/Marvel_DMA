@@ -23,9 +23,7 @@ struct WC_Training_Monitor_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WC_Training_Monitor_ReceiveEndPlay) == 0x000001, "Wrong alignment on WC_Training_Monitor_ReceiveEndPlay");
-static_assert(sizeof(WC_Training_Monitor_ReceiveEndPlay) == 0x000001, "Wrong size on WC_Training_Monitor_ReceiveEndPlay");
-static_assert(offsetof(WC_Training_Monitor_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'WC_Training_Monitor_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_WC_Training_Monitor_ReceiveEndPlay;
 
 // PythonFunction PyWidget_Traning_ScoreBoard.PyWidget_Training_Scoreboard.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Training_Scoreboard_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Training_Scoreboard_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Training_Scoreboard_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Training_Scoreboard_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Training_Scoreboard_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Training_Scoreboard_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Training_Scoreboard_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Training_Scoreboard_OnAnimationFinished;
 
 // PythonFunction PyWidget_Traning_ScoreBoard.PyWidget_Training_Scoreboard_Unit.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Training_Scoreboard_Unit_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Training_Scoreboard_Unit_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Training_Scoreboard_Unit_PreConstruct");
-static_assert(sizeof(PyWidget_Training_Scoreboard_Unit_PreConstruct) == 0x000001, "Wrong size on PyWidget_Training_Scoreboard_Unit_PreConstruct");
-static_assert(offsetof(PyWidget_Training_Scoreboard_Unit_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Training_Scoreboard_Unit_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Training_Scoreboard_Unit_PreConstruct;
 
 }
 

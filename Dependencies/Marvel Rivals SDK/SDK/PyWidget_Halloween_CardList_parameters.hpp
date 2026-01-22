@@ -23,9 +23,7 @@ struct PyWidget_Halloween_CardList_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_CardList_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Halloween_CardList_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Halloween_CardList_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Halloween_CardList_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Halloween_CardList_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Halloween_CardList_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_CardList_OnVisibleChanged;
 
 // PythonFunction PyWidget_Halloween_CardList.PyWidget_Halloween_CardList.navigation_to_next_content
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_CardList_navigation_to_next_content) == 0x000008, "Wrong alignment on PyWidget_Halloween_CardList_navigation_to_next_content");
-static_assert(sizeof(PyWidget_Halloween_CardList_navigation_to_next_content) == 0x000010, "Wrong size on PyWidget_Halloween_CardList_navigation_to_next_content");
-static_assert(offsetof(PyWidget_Halloween_CardList_navigation_to_next_content, NavType) == 0x000000, "Member 'PyWidget_Halloween_CardList_navigation_to_next_content::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Halloween_CardList_navigation_to_next_content, ReturnValue) == 0x000008, "Member 'PyWidget_Halloween_CardList_navigation_to_next_content::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_CardList_navigation_to_next_content;
 
 // PythonFunction PyWidget_Halloween_CardList.PyWidget_Halloween_CardList.navigation_to_card_list
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_CardList_navigation_to_card_list) == 0x000008, "Wrong alignment on PyWidget_Halloween_CardList_navigation_to_card_list");
-static_assert(sizeof(PyWidget_Halloween_CardList_navigation_to_card_list) == 0x000010, "Wrong size on PyWidget_Halloween_CardList_navigation_to_card_list");
-static_assert(offsetof(PyWidget_Halloween_CardList_navigation_to_card_list, NavType) == 0x000000, "Member 'PyWidget_Halloween_CardList_navigation_to_card_list::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Halloween_CardList_navigation_to_card_list, ReturnValue) == 0x000008, "Member 'PyWidget_Halloween_CardList_navigation_to_card_list::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_CardList_navigation_to_card_list;
 
 }
 

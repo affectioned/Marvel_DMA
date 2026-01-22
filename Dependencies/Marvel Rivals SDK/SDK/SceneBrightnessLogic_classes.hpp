@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySceneBrightnessHandler">();
+		STATIC_CLASS_IMPL("UISettingEntrySceneBrightnessHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySceneBrightnessHandler")
 	}
 	static class UUISettingEntrySceneBrightnessHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySceneBrightnessHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntrySceneBrightnessHandler) == 0x000008, "Wrong alignment on UUISettingEntrySceneBrightnessHandler");
-static_assert(sizeof(UUISettingEntrySceneBrightnessHandler) == 0x000030, "Wrong size on UUISettingEntrySceneBrightnessHandler");
+DUMPER7_ASSERTS_UUISettingEntrySceneBrightnessHandler;
 
 // PythonClass SceneBrightnessLogic.UISettingEntryHDRSwitchHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryHDRSwitchHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryHDRSwitchHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryHDRSwitchHandler")
 	}
 	static class UUISettingEntryHDRSwitchHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryHDRSwitchHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryHDRSwitchHandler) == 0x000008, "Wrong alignment on UUISettingEntryHDRSwitchHandler");
-static_assert(sizeof(UUISettingEntryHDRSwitchHandler) == 0x000030, "Wrong size on UUISettingEntryHDRSwitchHandler");
+DUMPER7_ASSERTS_UUISettingEntryHDRSwitchHandler;
 
 // PythonClass SceneBrightnessLogic.UISettingEntryHDRBrightnessHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -74,15 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryHDRBrightnessHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryHDRBrightnessHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryHDRBrightnessHandler")
 	}
 	static class UUISettingEntryHDRBrightnessHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryHDRBrightnessHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryHDRBrightnessHandler) == 0x000008, "Wrong alignment on UUISettingEntryHDRBrightnessHandler");
-static_assert(sizeof(UUISettingEntryHDRBrightnessHandler) == 0x000030, "Wrong size on UUISettingEntryHDRBrightnessHandler");
+DUMPER7_ASSERTS_UUISettingEntryHDRBrightnessHandler;
 
 // PythonClass SceneBrightnessLogic.UISettingEntryHDRContrastHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -97,15 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryHDRContrastHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryHDRContrastHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryHDRContrastHandler")
 	}
 	static class UUISettingEntryHDRContrastHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryHDRContrastHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryHDRContrastHandler) == 0x000008, "Wrong alignment on UUISettingEntryHDRContrastHandler");
-static_assert(sizeof(UUISettingEntryHDRContrastHandler) == 0x000030, "Wrong size on UUISettingEntryHDRContrastHandler");
+DUMPER7_ASSERTS_UUISettingEntryHDRContrastHandler;
 
 }
 

@@ -25,10 +25,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10156102_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10156102_WhileActiveFX");
-static_assert(sizeof(PyCue_Ability_Loop_10156102_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10156102_WhileActiveFX");
-static_assert(offsetof(PyCue_Ability_Loop_10156102_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10156102_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10156102_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10156102_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10156102_WhileActiveFX;
 
 // PythonFunction PyAbility_101561.PyCue_Ability_Loop_10156102.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -39,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10156102_OnRemove) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10156102_OnRemove");
-static_assert(sizeof(PyCue_Ability_Loop_10156102_OnRemove) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10156102_OnRemove");
-static_assert(offsetof(PyCue_Ability_Loop_10156102_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10156102_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10156102_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10156102_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10156102_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10156102_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10156102_OnRemove;
 
 // PythonFunction PyAbility_101561.PyBondEnhanceSourceResolver_101561.GetEnhanceSource
 // 0x0148 (0x0148 - 0x0000)
@@ -57,13 +50,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0138(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   ReturnValue;                                       // 0x0140(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource) == 0x000008, "Wrong alignment on PyBondEnhanceSourceResolver_101561_GetEnhanceSource");
-static_assert(sizeof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource) == 0x000148, "Wrong size on PyBondEnhanceSourceResolver_101561_GetEnhanceSource");
-static_assert(offsetof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource, InOwnerCharacter) == 0x000000, "Member 'PyBondEnhanceSourceResolver_101561_GetEnhanceSource::InOwnerCharacter' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource, InOwnerAbilityID) == 0x000008, "Member 'PyBondEnhanceSourceResolver_101561_GetEnhanceSource::InOwnerAbilityID' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource, InBondInstance) == 0x000010, "Member 'PyBondEnhanceSourceResolver_101561_GetEnhanceSource::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource, InTarget) == 0x000138, "Member 'PyBondEnhanceSourceResolver_101561_GetEnhanceSource::InTarget' has a wrong offset!");
-static_assert(offsetof(PyBondEnhanceSourceResolver_101561_GetEnhanceSource, ReturnValue) == 0x000140, "Member 'PyBondEnhanceSourceResolver_101561_GetEnhanceSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBondEnhanceSourceResolver_101561_GetEnhanceSource;
 
 }
 

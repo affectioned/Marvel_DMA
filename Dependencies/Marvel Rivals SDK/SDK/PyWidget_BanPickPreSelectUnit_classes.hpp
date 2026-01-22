@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BanPickPreSelectUnit.PyWidget_BanPickPreSelectUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BanPickPreSelectUnit : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BanPickPreSelectUnit">();
+		STATIC_CLASS_IMPL("PyWidget_BanPickPreSelectUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BanPickPreSelectUnit")
 	}
 	static class UPyWidget_BanPickPreSelectUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BanPickPreSelectUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_BanPickPreSelectUnit) == 0x000008, "Wrong alignment on UPyWidget_BanPickPreSelectUnit");
-static_assert(sizeof(UPyWidget_BanPickPreSelectUnit) == 0x0005C0, "Wrong size on UPyWidget_BanPickPreSelectUnit");
+DUMPER7_ASSERTS_UPyWidget_BanPickPreSelectUnit;
 
 }
 

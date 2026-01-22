@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestDeboostDoor">();
+		STATIC_CLASS_IMPL("PyEnergyContestDeboostDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestDeboostDoor")
 	}
 	static class APyEnergyContestDeboostDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEnergyContestDeboostDoor>();
 	}
 };
-static_assert(alignof(APyEnergyContestDeboostDoor) == 0x000010, "Wrong alignment on APyEnergyContestDeboostDoor");
-static_assert(sizeof(APyEnergyContestDeboostDoor) == 0x000740, "Wrong size on APyEnergyContestDeboostDoor");
-static_assert(offsetof(APyEnergyContestDeboostDoor, BoostBuffId) == 0x000730, "Member 'APyEnergyContestDeboostDoor::BoostBuffId' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestDeboostDoor, AutoActive) == 0x000734, "Member 'APyEnergyContestDeboostDoor::AutoActive' has a wrong offset!");
+DUMPER7_ASSERTS_APyEnergyContestDeboostDoor;
 
 }
 

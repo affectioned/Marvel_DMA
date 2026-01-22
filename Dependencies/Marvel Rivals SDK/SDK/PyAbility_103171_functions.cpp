@@ -17,15 +17,173 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_103171.PyWidget_Switch_AbilityStatus_103171.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.WhileActiveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void UPyWidget_Switch_AbilityStatus_103171::Construct()
+void APyCue_Scope_Loop_10317101::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Switch_AbilityStatus_103171", "Construct");
+		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "WhileActiveFX");
+
+	Params::PyCue_Scope_Loop_10317101_WhileActiveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.OnActiveAudio
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Scope_Loop_10317101::OnActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "OnActiveAudio");
+
+	Params::PyCue_Scope_Loop_10317101_OnActiveAudio Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.UpdateMusic
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           Instigator_0                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Scope_Loop_10317101::UpdateMusic(class AActor* Instigator_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "UpdateMusic");
+
+	Params::PyCue_Scope_Loop_10317101_UpdateMusic Parms{};
+
+	Parms.Instigator_0 = Instigator_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.OnRemoveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Scope_Loop_10317101::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "OnRemoveFX");
+
+	Params::PyCue_Scope_Loop_10317101_OnRemoveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyUIController_103171.SetAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InAbilityID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyUIController_103171::SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_103171", "SetAbility");
+
+	Params::PyUIController_103171_SetAbility Parms{};
+
+	Parms.InAbilityID = InAbilityID;
+	Parms.InAbility = InAbility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyUIController_103171.UpdateWidget
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   ScopeID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyUIController_103171::UpdateWidget(int32 ScopeID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_103171", "UpdateWidget");
+
+	Params::PyUIController_103171_UpdateWidget Parms{};
+
+	Parms.ScopeID = ScopeID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyUIController_103171.Destruct
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_103171::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_103171", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -312,151 +470,26 @@ void UPyAbility_103171::OnRep_ScopeID()
 }
 
 
-// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.WhileActiveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCue_Scope_Loop_10317101::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "WhileActiveFX");
-
-	Params::PyCue_Scope_Loop_10317101_WhileActiveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.UpdateMusic
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Instigator_0                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Scope_Loop_10317101::UpdateMusic(class AActor* Instigator_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "UpdateMusic");
-
-	Params::PyCue_Scope_Loop_10317101_UpdateMusic Parms{};
-
-	Parms.Instigator_0 = Instigator_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103171.PyCue_Scope_Loop_10317101.OnRemoveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCue_Scope_Loop_10317101::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_Loop_10317101", "OnRemoveFX");
-
-	Params::PyCue_Scope_Loop_10317101_OnRemoveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103171.PyUIController_103171.SetAbility
+// PythonFunction PyAbility_103171.PyAbility_103171.SetSkinFXUpgraded
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InAbilityID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bUpgrade                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyUIController_103171::SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility)
+void UPyAbility_103171::SetSkinFXUpgraded(bool bUpgrade)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_103171", "SetAbility");
+		Func = Class->GetFunction("PyAbility_103171", "SetSkinFXUpgraded");
 
-	Params::PyUIController_103171_SetAbility Parms{};
+	Params::PyAbility_103171_SetSkinFXUpgraded Parms{};
 
-	Parms.InAbilityID = InAbilityID;
-	Parms.InAbility = InAbility;
+	Parms.bUpgrade = bUpgrade;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103171.PyUIController_103171.UpdateWidget
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   ScopeID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyUIController_103171::UpdateWidget(int32 ScopeID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_103171", "UpdateWidget");
-
-	Params::PyUIController_103171_UpdateWidget Parms{};
-
-	Parms.ScopeID = ScopeID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103171.PyUIController_103171.Destruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_103171::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_103171", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -493,7 +526,7 @@ bool APyCue_Ability_Loop_10317101::WhileActive(class AActor* MyTarget, const str
 
 
 // PythonFunction PyAbility_103171.PyCue_Ability_Loop_10317101.OnScopeChanged
-// (Native, Public, BlueprintCallable)
+// (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   scope_id                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -544,6 +577,44 @@ bool APyCue_Ability_Loop_10317101::OnRemove(class AActor* MyTarget, const struct
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_103171.PyScope_10317102.K2_OnEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyScope_10317102::K2_OnEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyScope_10317102", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103171.PyWidget_Switch_AbilityStatus_103171.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Switch_AbilityStatus_103171::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Switch_AbilityStatus_103171", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 }

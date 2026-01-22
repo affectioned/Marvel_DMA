@@ -24,9 +24,7 @@ struct PyAlarmVoice_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmVoice_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyAlarmVoice_ReceiveEndPlay");
-static_assert(sizeof(PyAlarmVoice_ReceiveEndPlay) == 0x000001, "Wrong size on PyAlarmVoice_ReceiveEndPlay");
-static_assert(offsetof(PyAlarmVoice_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyAlarmVoice_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmVoice_ReceiveEndPlay;
 
 // PythonFunction PyAlarmVoice.PyAlarmVoice.OnMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAlarmVoice_OnMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmVoice_OnMatchStateChanged) == 0x000001, "Wrong alignment on PyAlarmVoice_OnMatchStateChanged");
-static_assert(sizeof(PyAlarmVoice_OnMatchStateChanged) == 0x000001, "Wrong size on PyAlarmVoice_OnMatchStateChanged");
-static_assert(offsetof(PyAlarmVoice_OnMatchStateChanged, MatchState) == 0x000000, "Member 'PyAlarmVoice_OnMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmVoice_OnMatchStateChanged;
 
 }
 

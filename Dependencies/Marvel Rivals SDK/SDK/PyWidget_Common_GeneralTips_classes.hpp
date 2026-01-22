@@ -10,22 +10,81 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyWidget_Common_GeneralTips.PyWidget_Common_GeneralTips
-// 0x0030 (0x0628 - 0x05F8)
-class UPyWidget_Common_GeneralTips : public UPyWidget_ModuleMainPanel
+// PythonClass PyWidget_Common_GeneralTips.PyWidget_Common_GeneralTips_Vx_Base
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Common_GeneralTips_Vx_Base : public UPyMarvelUserWidget
 {
 public:
-	class UInputAction*                           ChangeShapeInputAction;                            // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMarvelUserWidget>          GlowWidget;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UMarvelUserWidget>          SelectWidget;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                ClimbWidget;                                       // 0x0610(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GuideTipsName;                                     // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Common_GeneralTips_Vx_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GeneralTips_Vx_Base")
+	}
+	static class UPyWidget_Common_GeneralTips_Vx_Base* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Common_GeneralTips_Vx_Base>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Common_GeneralTips_Vx_Base;
+
+// PythonClass PyWidget_Common_GeneralTips.PyWidget_Common_GeneralTips_Vx_Glow
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Common_GeneralTips_Vx_Glow final : public UPyWidget_Common_GeneralTips_Vx_Base
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Common_GeneralTips_Vx_Glow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GeneralTips_Vx_Glow")
+	}
+	static class UPyWidget_Common_GeneralTips_Vx_Glow* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Common_GeneralTips_Vx_Glow>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Common_GeneralTips_Vx_Glow;
+
+// PythonClass PyWidget_Common_GeneralTips.PyWidget_Common_GeneralTips_Vx_Select
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Common_GeneralTips_Vx_Select final : public UPyWidget_Common_GeneralTips_Vx_Base
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Common_GeneralTips_Vx_Select")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GeneralTips_Vx_Select")
+	}
+	static class UPyWidget_Common_GeneralTips_Vx_Select* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Common_GeneralTips_Vx_Select>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Common_GeneralTips_Vx_Select;
+
+// PythonClass PyWidget_Common_GeneralTips.PyWidget_Common_GeneralTips
+// 0x0020 (0x0620 - 0x0600)
+class UPyWidget_Common_GeneralTips final : public UPyWidget_ModuleMainPanel
+{
+public:
+	class UInputAction*                           ChangeShapeInputAction;                            // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                ClimbWidget;                                       // 0x0608(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GuideTipsName;                                     // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,20 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_GeneralTips">();
+		STATIC_CLASS_IMPL("PyWidget_Common_GeneralTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GeneralTips")
 	}
 	static class UPyWidget_Common_GeneralTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_GeneralTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_GeneralTips) == 0x000008, "Wrong alignment on UPyWidget_Common_GeneralTips");
-static_assert(sizeof(UPyWidget_Common_GeneralTips) == 0x000628, "Wrong size on UPyWidget_Common_GeneralTips");
-static_assert(offsetof(UPyWidget_Common_GeneralTips, ChangeShapeInputAction) == 0x0005F8, "Member 'UPyWidget_Common_GeneralTips::ChangeShapeInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GeneralTips, GlowWidget) == 0x000600, "Member 'UPyWidget_Common_GeneralTips::GlowWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GeneralTips, SelectWidget) == 0x000608, "Member 'UPyWidget_Common_GeneralTips::SelectWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GeneralTips, ClimbWidget) == 0x000610, "Member 'UPyWidget_Common_GeneralTips::ClimbWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GeneralTips, GuideTipsName) == 0x000618, "Member 'UPyWidget_Common_GeneralTips::GuideTipsName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_GeneralTips;
 
 }
 

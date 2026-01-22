@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Marvel_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,46 +24,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105851_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_105851_OnTagUpdate");
-static_assert(sizeof(PyAbility_105851_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_105851_OnTagUpdate");
-static_assert(offsetof(PyAbility_105851_OnTagUpdate, Tag) == 0x000000, "Member 'PyAbility_105851_OnTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_105851_OnTagUpdate, Exist) == 0x00000C, "Member 'PyAbility_105851_OnTagUpdate::Exist' has a wrong offset!");
-
-// PythonFunction PyAbility_105851.PyWidget_AbilityHUD_1058HandCrad.ShouldBeVisible
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible");
-static_assert(sizeof(PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible");
-static_assert(offsetof(PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_AbilityHUD_1058HandCrad_ShouldBeVisible::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyAbility_105851.PyUIController_AbilityIcon_1058.SetAbility
-// 0x0010 (0x0010 - 0x0000)
-struct PyUIController_AbilityIcon_1058_SetAbility final
-{
-public:
-	int32                                         InAbilityID;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_AbilityIcon_1058_SetAbility) == 0x000008, "Wrong alignment on PyUIController_AbilityIcon_1058_SetAbility");
-static_assert(sizeof(PyUIController_AbilityIcon_1058_SetAbility) == 0x000010, "Wrong size on PyUIController_AbilityIcon_1058_SetAbility");
-static_assert(offsetof(PyUIController_AbilityIcon_1058_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_AbilityIcon_1058_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_AbilityIcon_1058_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_AbilityIcon_1058_SetAbility::InAbility' has a wrong offset!");
-
-// PythonFunction PyAbility_105851.PyWidget_AbilityHUD_1058HandList.SetStyle
-// 0x0110 (0x0110 - 0x0000)
-struct PyWidget_AbilityHUD_1058HandList_SetStyle final
-{
-public:
-	struct FWidgetStyle_AbilityCharge             Style;                                             // 0x0000(0x0110)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyWidget_AbilityHUD_1058HandList_SetStyle) == 0x000008, "Wrong alignment on PyWidget_AbilityHUD_1058HandList_SetStyle");
-static_assert(sizeof(PyWidget_AbilityHUD_1058HandList_SetStyle) == 0x000110, "Wrong size on PyWidget_AbilityHUD_1058HandList_SetStyle");
-static_assert(offsetof(PyWidget_AbilityHUD_1058HandList_SetStyle, Style) == 0x000000, "Member 'PyWidget_AbilityHUD_1058HandList_SetStyle::Style' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105851_OnTagUpdate;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_OnlyShowEmojiFullListWidget_SetListItem final
 public:
 	class UOnlyShowEmojiFullListItemData*         ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_OnlyShowEmojiFullListWidget_SetListItem) == 0x000008, "Wrong alignment on PyWidget_OnlyShowEmojiFullListWidget_SetListItem");
-static_assert(sizeof(PyWidget_OnlyShowEmojiFullListWidget_SetListItem) == 0x000008, "Wrong size on PyWidget_OnlyShowEmojiFullListWidget_SetListItem");
-static_assert(offsetof(PyWidget_OnlyShowEmojiFullListWidget_SetListItem, ItemObject) == 0x000000, "Member 'PyWidget_OnlyShowEmojiFullListWidget_SetListItem::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_OnlyShowEmojiFullListWidget_SetListItem;
 
 }
 

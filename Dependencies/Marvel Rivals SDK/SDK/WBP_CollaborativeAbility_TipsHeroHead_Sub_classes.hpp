@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CollaborativeAbility_TipsHeroHead_Sub.WBP_CollaborativeAbility_TipsHeroHead_Sub_C
-// 0x0058 (0x0410 - 0x03B8)
+// 0x0060 (0x0418 - 0x03B8)
 class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C final : public UUserWidget
 {
 public:
@@ -30,9 +30,10 @@ public:
 	class UMarvelImage*                           img_Vx;                                            // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMarvelImage*                           img_Vx_1;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMarvelImage*                           img_Vx_2;                                          // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             NoSelect;                                          // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Selected;                                          // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_Select;                                         // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UWBP_Common_HeroRoleIcon_C*             WBP_Common_HeroRoleIcon;                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTexture2D*                             NoSelect;                                          // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Selected;                                          // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_Select;                                         // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -41,26 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CollaborativeAbility_TipsHeroHead_Sub_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CollaborativeAbility_TipsHeroHead_Sub_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CollaborativeAbility_TipsHeroHead_Sub_C")
 	}
 	static class UWBP_CollaborativeAbility_TipsHeroHead_Sub_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CollaborativeAbility_TipsHeroHead_Sub_C>();
 	}
 };
-static_assert(alignof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C) == 0x000008, "Wrong alignment on UWBP_CollaborativeAbility_TipsHeroHead_Sub_C");
-static_assert(sizeof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C) == 0x000410, "Wrong size on UWBP_CollaborativeAbility_TipsHeroHead_Sub_C");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, Anim_FadeIn_Lose) == 0x0003C0, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::Anim_FadeIn_Lose' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, Anim_FadeIn_Activate) == 0x0003C8, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::Anim_FadeIn_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, HeroHead) == 0x0003D0, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, Img_Frame) == 0x0003D8, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, img_Vx) == 0x0003E0, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::img_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, img_Vx_1) == 0x0003E8, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::img_Vx_1' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, img_Vx_2) == 0x0003F0, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::img_Vx_2' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, NoSelect) == 0x0003F8, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::NoSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, Selected) == 0x000400, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::Selected' has a wrong offset!");
-static_assert(offsetof(UWBP_CollaborativeAbility_TipsHeroHead_Sub_C, Is_Select) == 0x000408, "Member 'UWBP_CollaborativeAbility_TipsHeroHead_Sub_C::Is_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CollaborativeAbility_TipsHeroHead_Sub_C;
 
 }
 

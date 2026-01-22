@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102612.PyAbility_102612
-// 0x0008 (0x2A10 - 0x2A08)
+// 0x0008 (0x2A60 - 0x2A58)
 class UPyAbility_102612 : public UWallRunningPassiveAbility
 {
 public:
-	bool                                          CanAirJump;                                        // 0x2A08(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanAirJump;                                        // 0x2A58(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -37,16 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102612">();
+		STATIC_CLASS_IMPL("PyAbility_102612")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102612")
 	}
 	static class UPyAbility_102612* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102612>();
 	}
 };
-static_assert(alignof(UPyAbility_102612) == 0x000008, "Wrong alignment on UPyAbility_102612");
-static_assert(sizeof(UPyAbility_102612) == 0x002A10, "Wrong size on UPyAbility_102612");
-static_assert(offsetof(UPyAbility_102612, CanAirJump) == 0x002A08, "Member 'UPyAbility_102612::CanAirJump' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102612;
 
 }
 

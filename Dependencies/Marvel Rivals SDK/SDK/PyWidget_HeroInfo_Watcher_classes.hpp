@@ -35,26 +35,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroInfo_Watcher">();
+		STATIC_CLASS_IMPL("PyWidget_HeroInfo_Watcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroInfo_Watcher")
 	}
 	static class UPyWidget_HeroInfo_Watcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroInfo_Watcher>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroInfo_Watcher) == 0x000010, "Wrong alignment on UPyWidget_HeroInfo_Watcher");
-static_assert(sizeof(UPyWidget_HeroInfo_Watcher) == 0x0008A0, "Wrong size on UPyWidget_HeroInfo_Watcher");
-static_assert(offsetof(UPyWidget_HeroInfo_Watcher, Red_NameColor) == 0x000870, "Member 'UPyWidget_HeroInfo_Watcher::Red_NameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroInfo_Watcher, Blue_NameColor) == 0x000884, "Member 'UPyWidget_HeroInfo_Watcher::Blue_NameColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroInfo_Watcher;
 
 // PythonClass PyWidget_HeroInfo_Watcher.PyWidget_HeroInfo_Hp_Watcher
-// 0x0030 (0x0818 - 0x07E8)
+// 0x0030 (0x0820 - 0x07F0)
 class UPyWidget_HeroInfo_Hp_Watcher final : public UWidget_HpBar
 {
 public:
-	struct FLinearColor                           Red_HPColor;                                       // 0x07E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Blue_HPColor;                                      // 0x07F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float InCurHp)> OnCurHpChanged;                                    // 0x0808(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Red_HPColor;                                       // 0x07F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Blue_HPColor;                                      // 0x0800(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float InCurHp)> OnCurHpChanged;                                    // 0x0810(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,18 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroInfo_Hp_Watcher">();
+		STATIC_CLASS_IMPL("PyWidget_HeroInfo_Hp_Watcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroInfo_Hp_Watcher")
 	}
 	static class UPyWidget_HeroInfo_Hp_Watcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroInfo_Hp_Watcher>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroInfo_Hp_Watcher) == 0x000008, "Wrong alignment on UPyWidget_HeroInfo_Hp_Watcher");
-static_assert(sizeof(UPyWidget_HeroInfo_Hp_Watcher) == 0x000818, "Wrong size on UPyWidget_HeroInfo_Hp_Watcher");
-static_assert(offsetof(UPyWidget_HeroInfo_Hp_Watcher, Red_HPColor) == 0x0007E8, "Member 'UPyWidget_HeroInfo_Hp_Watcher::Red_HPColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroInfo_Hp_Watcher, Blue_HPColor) == 0x0007F8, "Member 'UPyWidget_HeroInfo_Hp_Watcher::Blue_HPColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroInfo_Hp_Watcher, OnCurHpChanged) == 0x000808, "Member 'UPyWidget_HeroInfo_Hp_Watcher::OnCurHpChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroInfo_Hp_Watcher;
 
 }
 

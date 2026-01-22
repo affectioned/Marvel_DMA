@@ -35,21 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_MouseAndKeyboard">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_MouseAndKeyboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_MouseAndKeyboard")
 	}
 	static class UPyUIController_SettingPage_MouseAndKeyboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_MouseAndKeyboard>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_MouseAndKeyboard) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_MouseAndKeyboard");
-static_assert(sizeof(UPyUIController_SettingPage_MouseAndKeyboard) == 0x000078, "Wrong size on UPyUIController_SettingPage_MouseAndKeyboard");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, KeyAsset) == 0x000030, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, RichInlineImageWidth) == 0x000038, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::RichInlineImageWidth' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, RichInlineImageHeight) == 0x00003C, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::RichInlineImageHeight' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, RichInlineImageScale) == 0x000040, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::RichInlineImageScale' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, Special_1022_Name) == 0x000048, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::Special_1022_Name' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_MouseAndKeyboard, Special_1036_Name) == 0x000060, "Member 'UPyUIController_SettingPage_MouseAndKeyboard::Special_1036_Name' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_MouseAndKeyboard;
 
 }
 

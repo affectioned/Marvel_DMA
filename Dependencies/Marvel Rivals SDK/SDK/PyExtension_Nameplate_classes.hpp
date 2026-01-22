@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Nameplate">();
+		STATIC_CLASS_IMPL("PyExtension_Nameplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Nameplate")
 	}
 	static class UPyExtension_Nameplate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Nameplate>();
 	}
 };
-static_assert(alignof(UPyExtension_Nameplate) == 0x000008, "Wrong alignment on UPyExtension_Nameplate");
-static_assert(sizeof(UPyExtension_Nameplate) == 0x000030, "Wrong size on UPyExtension_Nameplate");
+DUMPER7_ASSERTS_UPyExtension_Nameplate;
 
 }
 

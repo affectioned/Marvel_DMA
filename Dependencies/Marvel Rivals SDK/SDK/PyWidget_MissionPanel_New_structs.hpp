@@ -40,10 +40,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UUserWidget>                WidgetClass;                                       // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FListViewWidgetClassInfo) == 0x000008, "Wrong alignment on FListViewWidgetClassInfo");
-static_assert(sizeof(FListViewWidgetClassInfo) == 0x000010, "Wrong size on FListViewWidgetClassInfo");
-static_assert(offsetof(FListViewWidgetClassInfo, ViewType) == 0x000000, "Member 'FListViewWidgetClassInfo::ViewType' has a wrong offset!");
-static_assert(offsetof(FListViewWidgetClassInfo, WidgetClass) == 0x000008, "Member 'FListViewWidgetClassInfo::WidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_FListViewWidgetClassInfo;
 
 }
 

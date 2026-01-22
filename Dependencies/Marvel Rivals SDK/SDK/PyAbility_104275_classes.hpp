@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Hero_1042_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
@@ -28,23 +28,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104275">();
+		STATIC_CLASS_IMPL("PyConfig_104275")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104275")
 	}
 	static class UPyConfig_104275* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104275>();
 	}
 };
-static_assert(alignof(UPyConfig_104275) == 0x000008, "Wrong alignment on UPyConfig_104275");
-static_assert(sizeof(UPyConfig_104275) == 0x0000A8, "Wrong size on UPyConfig_104275");
-static_assert(offsetof(UPyConfig_104275, SpeiderLegTriggerSeq) == 0x000098, "Member 'UPyConfig_104275::SpeiderLegTriggerSeq' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104275;
 
 // PythonClass PyAbility_104275.PyUIController_104275
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_104275 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x0F10(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SpecialAbilityTag;                                 // 0x11F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -53,19 +55,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104275">();
+		STATIC_CLASS_IMPL("PyUIController_104275")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104275")
 	}
 	static class UPyUIController_104275* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104275>();
 	}
 };
-static_assert(alignof(UPyUIController_104275) == 0x000008, "Wrong alignment on UPyUIController_104275");
-static_assert(sizeof(UPyUIController_104275) == 0x000F20, "Wrong size on UPyUIController_104275");
-static_assert(offsetof(UPyUIController_104275, SpecialAbilityTag) == 0x000F10, "Member 'UPyUIController_104275::SpecialAbilityTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_104275;
 
 // PythonClass PyAbility_104275.PyAbility_104275
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104275 : public UAbility_108
 {
 public:
@@ -74,27 +78,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104275">();
+		STATIC_CLASS_IMPL("PyAbility_104275")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104275")
 	}
 	static class UPyAbility_104275* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104275>();
 	}
 };
-static_assert(alignof(UPyAbility_104275) == 0x000008, "Wrong alignment on UPyAbility_104275");
-static_assert(sizeof(UPyAbility_104275) == 0x0029F8, "Wrong size on UPyAbility_104275");
+DUMPER7_ASSERTS_UPyAbility_104275;
 
 // PythonClass PyAbility_104275.PyAbilityCue_10427501
-// 0x0030 (0x11E0 - 0x11B0)
+// 0x0030 (0x11F0 - 0x11C0)
 class APyAbilityCue_10427501 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         AbilityID;                                         // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SweepAudioID;                                      // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FormalUpperLeftAnimation;                          // 0x11B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FormalLowLeftAnimation;                            // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FormalUpperRightAnimation;                         // 0x11C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FormalLowRightAnimation;                           // 0x11D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SweepAudioID;                                      // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FormalUpperLeftAnimation;                          // 0x11C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FormalLowLeftAnimation;                            // 0x11D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FormalUpperRightAnimation;                         // 0x11D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FormalLowRightAnimation;                           // 0x11E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -102,21 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityCue_10427501">();
+		STATIC_CLASS_IMPL("PyAbilityCue_10427501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityCue_10427501")
 	}
 	static class APyAbilityCue_10427501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAbilityCue_10427501>();
 	}
 };
-static_assert(alignof(APyAbilityCue_10427501) == 0x000010, "Wrong alignment on APyAbilityCue_10427501");
-static_assert(sizeof(APyAbilityCue_10427501) == 0x0011E0, "Wrong size on APyAbilityCue_10427501");
-static_assert(offsetof(APyAbilityCue_10427501, AbilityID) == 0x0011B0, "Member 'APyAbilityCue_10427501::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427501, SweepAudioID) == 0x0011B4, "Member 'APyAbilityCue_10427501::SweepAudioID' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427501, FormalUpperLeftAnimation) == 0x0011B8, "Member 'APyAbilityCue_10427501::FormalUpperLeftAnimation' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427501, FormalLowLeftAnimation) == 0x0011C0, "Member 'APyAbilityCue_10427501::FormalLowLeftAnimation' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427501, FormalUpperRightAnimation) == 0x0011C8, "Member 'APyAbilityCue_10427501::FormalUpperRightAnimation' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_10427501, FormalLowRightAnimation) == 0x0011D0, "Member 'APyAbilityCue_10427501::FormalLowRightAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_APyAbilityCue_10427501;
 
 }
 

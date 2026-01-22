@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyTrainComputer.PyTrainComputer
-// 0x0160 (0x0890 - 0x0730)
+// 0x01B0 (0x08E0 - 0x0730)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyTrainComputer : public ATrainComputer
 {
@@ -48,6 +48,8 @@ public:
 	int32                                         IsHidden;                                          // 0x086C(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTag>                   NotifyTagList;                                     // 0x0870(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int32                                         AIUltimateEnergyBuff;                              // 0x0880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_884[0x4];                                      // 0x0884(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            AIExUltimateEnergyBuff;                            // 0x0888(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -67,7 +69,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainComputer">();
+		STATIC_CLASS_IMPL("PyTrainComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainComputer")
 	}
 	static class APyTrainComputer* GetDefaultObj()
 	{
@@ -75,27 +81,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyTrainComputer) == 0x000010, "Wrong alignment on APyTrainComputer");
-static_assert(sizeof(APyTrainComputer) == 0x000890, "Wrong size on APyTrainComputer");
-static_assert(offsetof(APyTrainComputer, TrainUIMode) == 0x000730, "Member 'APyTrainComputer::TrainUIMode' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, LimitConfig) == 0x000738, "Member 'APyTrainComputer::LimitConfig' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, TrainingInfo) == 0x000748, "Member 'APyTrainComputer::TrainingInfo' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, TrainNumber) == 0x000758, "Member 'APyTrainComputer::TrainNumber' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, AkEvent_Teleport_In) == 0x000760, "Member 'APyTrainComputer::AkEvent_Teleport_In' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, AkEvent_Teleport_Out) == 0x000768, "Member 'APyTrainComputer::AkEvent_Teleport_Out' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, Text_ComputerDisplayName) == 0x000770, "Member 'APyTrainComputer::Text_ComputerDisplayName' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, AssistInfo) == 0x000788, "Member 'APyTrainComputer::AssistInfo' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, RelativeLocation) == 0x000798, "Member 'APyTrainComputer::RelativeLocation' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, AdditionalTagMap) == 0x0007B0, "Member 'APyTrainComputer::AdditionalTagMap' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, OverrideShapeConfig) == 0x000800, "Member 'APyTrainComputer::OverrideShapeConfig' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, ActiveTag) == 0x000850, "Member 'APyTrainComputer::ActiveTag' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, TrainHeroID) == 0x00085C, "Member 'APyTrainComputer::TrainHeroID' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, TrainShapeID) == 0x000860, "Member 'APyTrainComputer::TrainShapeID' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, TrainSkinID) == 0x000864, "Member 'APyTrainComputer::TrainSkinID' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, bIsCooperate) == 0x000868, "Member 'APyTrainComputer::bIsCooperate' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, IsHidden) == 0x00086C, "Member 'APyTrainComputer::IsHidden' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, NotifyTagList) == 0x000870, "Member 'APyTrainComputer::NotifyTagList' has a wrong offset!");
-static_assert(offsetof(APyTrainComputer, AIUltimateEnergyBuff) == 0x000880, "Member 'APyTrainComputer::AIUltimateEnergyBuff' has a wrong offset!");
+DUMPER7_ASSERTS_APyTrainComputer;
 
 }
 

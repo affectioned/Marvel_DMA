@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PrivilegeBtnTip.PyWidget_PrivilegeBtnTip
-// 0x0020 (0x08E0 - 0x08C0)
+// 0x0020 (0x0940 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_PrivilegeBtnTip : public UPyWidget_BaseCommonButton
 {
 public:
-	class UTexture2D*                             Texture_Privilege_National_Icon_Normal;            // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_National_Icon_Hover;             // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon_Normal;             // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon_Hover;              // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_National_Icon_Normal;            // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_National_Icon_Hover;             // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon_Normal;             // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon_Hover;              // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,7 +35,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PrivilegeBtnTip">();
+		STATIC_CLASS_IMPL("PyWidget_PrivilegeBtnTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PrivilegeBtnTip")
 	}
 	static class UPyWidget_PrivilegeBtnTip* GetDefaultObj()
 	{
@@ -43,12 +47,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_PrivilegeBtnTip) == 0x000010, "Wrong alignment on UPyWidget_PrivilegeBtnTip");
-static_assert(sizeof(UPyWidget_PrivilegeBtnTip) == 0x0008E0, "Wrong size on UPyWidget_PrivilegeBtnTip");
-static_assert(offsetof(UPyWidget_PrivilegeBtnTip, Texture_Privilege_National_Icon_Normal) == 0x0008B8, "Member 'UPyWidget_PrivilegeBtnTip::Texture_Privilege_National_Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeBtnTip, Texture_Privilege_National_Icon_Hover) == 0x0008C0, "Member 'UPyWidget_PrivilegeBtnTip::Texture_Privilege_National_Icon_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeBtnTip, Texture_Privilege_Oversea_Icon_Normal) == 0x0008C8, "Member 'UPyWidget_PrivilegeBtnTip::Texture_Privilege_Oversea_Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeBtnTip, Texture_Privilege_Oversea_Icon_Hover) == 0x0008D0, "Member 'UPyWidget_PrivilegeBtnTip::Texture_Privilege_Oversea_Icon_Hover' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PrivilegeBtnTip;
 
 }
 

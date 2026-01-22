@@ -10,52 +10,50 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1050_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1050_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105041.PyConfig_105041
-// 0x0020 (0x18A0 - 0x1880)
+// 0x0020 (0x1C50 - 0x1C30)
 class UPyConfig_105041 final : public USelectAbilityConfigBase
 {
 public:
-	uint8                                         Pad_1878[0x8];                                     // 0x1878(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BarrierID;                                         // 0x1880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BarrierHeight;                                     // 0x1884(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinHeight;                                         // 0x1888(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BarrierDist;                                       // 0x188C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinBlockedDelta;                                   // 0x1890(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinCooldown;                                       // 0x1894(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C28[0x8];                                     // 0x1C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BarrierID;                                         // 0x1C30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BarrierHeight;                                     // 0x1C34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinHeight;                                         // 0x1C38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BarrierDist;                                       // 0x1C3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinBlockedDelta_ForAlly;                           // 0x1C40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinBlockedDelta_ForSelf;                           // 0x1C44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinCooldown;                                       // 0x1C48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105041">();
+		STATIC_CLASS_IMPL("PyConfig_105041")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105041")
 	}
 	static class UPyConfig_105041* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105041>();
 	}
 };
-static_assert(alignof(UPyConfig_105041) == 0x000010, "Wrong alignment on UPyConfig_105041");
-static_assert(sizeof(UPyConfig_105041) == 0x0018A0, "Wrong size on UPyConfig_105041");
-static_assert(offsetof(UPyConfig_105041, BarrierID) == 0x001880, "Member 'UPyConfig_105041::BarrierID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105041, BarrierHeight) == 0x001884, "Member 'UPyConfig_105041::BarrierHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105041, MinHeight) == 0x001888, "Member 'UPyConfig_105041::MinHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105041, BarrierDist) == 0x00188C, "Member 'UPyConfig_105041::BarrierDist' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105041, MinBlockedDelta) == 0x001890, "Member 'UPyConfig_105041::MinBlockedDelta' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105041, MinCooldown) == 0x001894, "Member 'UPyConfig_105041::MinCooldown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105041;
 
 // PythonClass PyAbility_105041.PyAbility_105041
-// 0x0008 (0x2A70 - 0x2A68)
+// 0x0008 (0x2AC0 - 0x2AB8)
 class UPyAbility_105041 : public UMarvelAbility_SelectTarget
 {
 public:
-	class AMarvelBarrierBase*                     BarrierRef;                                        // 0x2A68(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelBarrierBase*                     BarrierRef;                                        // 0x2AB8(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -63,39 +61,39 @@ public:
 	void OnCharacterReborn(class AActor* TargetActor, const struct FCharacterRebornParam& Param);
 	void EndPlay();
 	void K2_ActivateAbility();
-	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
 	void OnBarrierDeath();
 	void InitShield(class AActor* InActor);
 	bool CanActivate();
 	void HandleAbilityStageActions(const EMarvelAbilityStage InStage);
 	class AActor* GetSelectTarget();
 	void K2_OnEndAbility(bool bWasCancelled);
-	void K2_OnClientActivateAbilityRejected(bool bIsCurrentActivation);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105041">();
+		STATIC_CLASS_IMPL("PyAbility_105041")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105041")
 	}
 	static class UPyAbility_105041* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105041>();
 	}
 };
-static_assert(alignof(UPyAbility_105041) == 0x000008, "Wrong alignment on UPyAbility_105041");
-static_assert(sizeof(UPyAbility_105041) == 0x002A70, "Wrong size on UPyAbility_105041");
-static_assert(offsetof(UPyAbility_105041, BarrierRef) == 0x002A68, "Member 'UPyAbility_105041::BarrierRef' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105041;
 
 // PythonClass PyAbility_105041.PyCue_Summoner_Loop_10504101
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_Summoner_Loop_10504101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BarrierCrushProp;                                  // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BarrierActiveAudio;                                // 0x1204(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BarrierEndAudio;                                   // 0x1208(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BarrierLoopAudio;                                  // 0x120C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BarrierCrushProp;                                  // 0x1260(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BarrierActiveAudio;                                // 0x1264(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BarrierEndAudio;                                   // 0x1268(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BarrierLoopAudio;                                  // 0x126C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -111,29 +109,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10504101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10504101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10504101")
 	}
 	static class APyCue_Summoner_Loop_10504101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10504101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10504101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10504101");
-static_assert(sizeof(APyCue_Summoner_Loop_10504101) == 0x001210, "Wrong size on APyCue_Summoner_Loop_10504101");
-static_assert(offsetof(APyCue_Summoner_Loop_10504101, BarrierCrushProp) == 0x001200, "Member 'APyCue_Summoner_Loop_10504101::BarrierCrushProp' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10504101, BarrierActiveAudio) == 0x001204, "Member 'APyCue_Summoner_Loop_10504101::BarrierActiveAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10504101, BarrierEndAudio) == 0x001208, "Member 'APyCue_Summoner_Loop_10504101::BarrierEndAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10504101, BarrierLoopAudio) == 0x00120C, "Member 'APyCue_Summoner_Loop_10504101::BarrierLoopAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10504101;
 
 // PythonClass PyAbility_105041.PySummoned_10504101
-// 0x0020 (0x0C10 - 0x0BF0)
+// 0x0020 (0x0C50 - 0x0C30)
 class APySummoned_10504101 : public ASummoned_10504101
 {
 public:
-	int32                                         HealingScopeID;                                    // 0x0BF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BF4[0x4];                                      // 0x0BF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 BarrierTarget;                                     // 0x0BF8(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* NewTarget)> OnBarrierTargetChange;                   // 0x0C00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         HealingScopeID;                                    // 0x0C30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C34[0x4];                                      // 0x0C34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 BarrierTarget;                                     // 0x0C38(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* NewTarget)> OnBarrierTargetChange;                   // 0x0C40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnSummonedBeginAgentTask();
@@ -148,21 +145,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10504101">();
+		STATIC_CLASS_IMPL("PySummoned_10504101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10504101")
 	}
 	static class APySummoned_10504101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10504101>();
 	}
 };
-static_assert(alignof(APySummoned_10504101) == 0x000010, "Wrong alignment on APySummoned_10504101");
-static_assert(sizeof(APySummoned_10504101) == 0x000C10, "Wrong size on APySummoned_10504101");
-static_assert(offsetof(APySummoned_10504101, HealingScopeID) == 0x000BF0, "Member 'APySummoned_10504101::HealingScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10504101, BarrierTarget) == 0x000BF8, "Member 'APySummoned_10504101::BarrierTarget' has a wrong offset!");
-static_assert(offsetof(APySummoned_10504101, OnBarrierTargetChange) == 0x000C00, "Member 'APySummoned_10504101::OnBarrierTargetChange' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10504101;
 
 // PythonClass PyAbility_105041.PySummonedComp_10504101
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10504101 final : public UMarvelSummonedComponent
 {
 public:
@@ -171,15 +168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10504101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10504101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10504101")
 	}
 	static class UPySummonedComp_10504101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10504101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10504101) == 0x000008, "Wrong alignment on UPySummonedComp_10504101");
-static_assert(sizeof(UPySummonedComp_10504101) == 0x000DB0, "Wrong size on UPySummonedComp_10504101");
+DUMPER7_ASSERTS_UPySummonedComp_10504101;
 
 }
 

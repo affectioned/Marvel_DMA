@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_AbilityCharge_V5_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "PyWidget_AbilityCharge_V5_classes.hpp"
 #include "PyWidget3D_BuffMonitor_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102041.PyCue_Buff_10204101
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10204101 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -31,22 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10204101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10204101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10204101")
 	}
 	static class APyCue_Buff_10204101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10204101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10204101) == 0x000010, "Wrong alignment on APyCue_Buff_10204101");
-static_assert(sizeof(APyCue_Buff_10204101) == 0x001640, "Wrong size on APyCue_Buff_10204101");
+DUMPER7_ASSERTS_APyCue_Buff_10204101;
 
 // PythonClass PyAbility_102041.PyWidget3D_BuffMarker_10204101
-// 0x0040 (0x08B0 - 0x0870)
+// 0x0040 (0x08C0 - 0x0880)
 class UPyWidget3D_BuffMarker_10204101 final : public UPyWidget3D_BuffMonitor
 {
 public:
-	struct FBuffDurationSubscribeHandle           BuffDurationBindHandle;                            // 0x0870(0x0040)(NoDestructor, NativeAccessSpecifierPublic)
+	struct FBuffDurationSubscribeHandle           BuffDurationBindHandle;                            // 0x0878(0x0040)(NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OwnerCueActiveChanged();
@@ -55,19 +58,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_BuffMarker_10204101">();
+		STATIC_CLASS_IMPL("PyWidget3D_BuffMarker_10204101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_BuffMarker_10204101")
 	}
 	static class UPyWidget3D_BuffMarker_10204101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_BuffMarker_10204101>();
 	}
 };
-static_assert(alignof(UPyWidget3D_BuffMarker_10204101) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMarker_10204101");
-static_assert(sizeof(UPyWidget3D_BuffMarker_10204101) == 0x0008B0, "Wrong size on UPyWidget3D_BuffMarker_10204101");
-static_assert(offsetof(UPyWidget3D_BuffMarker_10204101, BuffDurationBindHandle) == 0x000870, "Member 'UPyWidget3D_BuffMarker_10204101::BuffDurationBindHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_BuffMarker_10204101;
 
 // PythonClass PyAbility_102041.PyUIController_1020_Common
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_1020_Common final : public UUIC_Ability
 {
 public:
@@ -78,18 +83,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_1020_Common">();
+		STATIC_CLASS_IMPL("PyUIController_1020_Common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_1020_Common")
 	}
 	static class UPyUIController_1020_Common* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_1020_Common>();
 	}
 };
-static_assert(alignof(UPyUIController_1020_Common) == 0x000008, "Wrong alignment on UPyUIController_1020_Common");
-static_assert(sizeof(UPyUIController_1020_Common) == 0x000F10, "Wrong size on UPyUIController_1020_Common");
+DUMPER7_ASSERTS_UPyUIController_1020_Common;
 
 // PythonClass PyAbility_102041.PyWidget_1020Leaf
-// 0x0000 (0x05E8 - 0x05E8)
+// 0x0000 (0x05F0 - 0x05F0)
 class UPyWidget_1020Leaf final : public UPyWidget_AbilityChargeSingle_v5
 {
 public:
@@ -98,15 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_1020Leaf">();
+		STATIC_CLASS_IMPL("PyWidget_1020Leaf")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_1020Leaf")
 	}
 	static class UPyWidget_1020Leaf* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_1020Leaf>();
 	}
 };
-static_assert(alignof(UPyWidget_1020Leaf) == 0x000008, "Wrong alignment on UPyWidget_1020Leaf");
-static_assert(sizeof(UPyWidget_1020Leaf) == 0x0005E8, "Wrong size on UPyWidget_1020Leaf");
+DUMPER7_ASSERTS_UPyWidget_1020Leaf;
 
 }
 

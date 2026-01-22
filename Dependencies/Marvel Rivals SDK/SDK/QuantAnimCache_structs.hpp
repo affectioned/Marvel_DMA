@@ -24,9 +24,7 @@ public:
 	bool                                          bCacheEnabled;                                     // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_QuantCacheBase) == 0x000008, "Wrong alignment on FAnimNode_QuantCacheBase");
-static_assert(sizeof(FAnimNode_QuantCacheBase) == 0x000030, "Wrong size on FAnimNode_QuantCacheBase");
-static_assert(offsetof(FAnimNode_QuantCacheBase, bCacheEnabled) == 0x000028, "Member 'FAnimNode_QuantCacheBase::bCacheEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_QuantCacheBase;
 
 // ScriptStruct QuantAnimCache.AnimNode_QuantCacheBlendSpacePlayer
 // 0x0030 (0x0060 - 0x0030)
@@ -36,9 +34,7 @@ public:
 	struct FPoseLink                              Source;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x20];                                      // 0x0040(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_QuantCacheBlendSpacePlayer) == 0x000008, "Wrong alignment on FAnimNode_QuantCacheBlendSpacePlayer");
-static_assert(sizeof(FAnimNode_QuantCacheBlendSpacePlayer) == 0x000060, "Wrong size on FAnimNode_QuantCacheBlendSpacePlayer");
-static_assert(offsetof(FAnimNode_QuantCacheBlendSpacePlayer, Source) == 0x000030, "Member 'FAnimNode_QuantCacheBlendSpacePlayer::Source' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_QuantCacheBlendSpacePlayer;
 
 // ScriptStruct QuantAnimCache.AnimNode_QuantCacheSequencePlayer
 // 0x0030 (0x0060 - 0x0030)
@@ -48,9 +44,7 @@ public:
 	struct FPoseLink                              Source;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x20];                                      // 0x0040(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_QuantCacheSequencePlayer) == 0x000008, "Wrong alignment on FAnimNode_QuantCacheSequencePlayer");
-static_assert(sizeof(FAnimNode_QuantCacheSequencePlayer) == 0x000060, "Wrong size on FAnimNode_QuantCacheSequencePlayer");
-static_assert(offsetof(FAnimNode_QuantCacheSequencePlayer, Source) == 0x000030, "Member 'FAnimNode_QuantCacheSequencePlayer::Source' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_QuantCacheSequencePlayer;
 
 }
 

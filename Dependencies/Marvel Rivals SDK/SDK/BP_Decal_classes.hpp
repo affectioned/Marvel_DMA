@@ -45,29 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Decal_C">();
+		BP_STATIC_CLASS_IMPL("BP_Decal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Decal_C")
 	}
 	static class ABP_Decal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Decal_C>();
 	}
 };
-static_assert(alignof(ABP_Decal_C) == 0x000010, "Wrong alignment on ABP_Decal_C");
-static_assert(sizeof(ABP_Decal_C) == 0x000750, "Wrong size on ABP_Decal_C");
-static_assert(offsetof(ABP_Decal_C, TotalRow) == 0x0006E0, "Member 'ABP_Decal_C::TotalRow' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, TotalCol) == 0x0006E8, "Member 'ABP_Decal_C::TotalCol' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, CellSizeX) == 0x0006F0, "Member 'ABP_Decal_C::CellSizeX' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, CellSizeZ) == 0x0006F8, "Member 'ABP_Decal_C::CellSizeZ' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, Roughness) == 0x000700, "Member 'ABP_Decal_C::Roughness' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, SelectX) == 0x000708, "Member 'ABP_Decal_C::SelectX' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, SelectY) == 0x000710, "Member 'ABP_Decal_C::SelectY' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, BaseColorMap) == 0x000718, "Member 'ABP_Decal_C::BaseColorMap' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, Opacity) == 0x000720, "Member 'ABP_Decal_C::Opacity' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, Normal) == 0x000728, "Member 'ABP_Decal_C::Normal' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, Color) == 0x000730, "Member 'ABP_Decal_C::Color' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, MROMap) == 0x000738, "Member 'ABP_Decal_C::MROMap' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, UseMROMap) == 0x000740, "Member 'ABP_Decal_C::UseMROMap' has a wrong offset!");
-static_assert(offsetof(ABP_Decal_C, MID) == 0x000748, "Member 'ABP_Decal_C::MID' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Decal_C;
 
 }
 

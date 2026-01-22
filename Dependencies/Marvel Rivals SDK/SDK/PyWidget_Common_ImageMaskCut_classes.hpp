@@ -45,22 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_ImageMaskCut">();
+		STATIC_CLASS_IMPL("PyWidget_Common_ImageMaskCut")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_ImageMaskCut")
 	}
 	static class UPyWidget_Common_ImageMaskCut* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_ImageMaskCut>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_ImageMaskCut) == 0x000008, "Wrong alignment on UPyWidget_Common_ImageMaskCut");
-static_assert(sizeof(UPyWidget_Common_ImageMaskCut) == 0x000408, "Wrong size on UPyWidget_Common_ImageMaskCut");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, Img_Picture) == 0x0003B8, "Member 'UPyWidget_Common_ImageMaskCut::Img_Picture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, Img_Mask) == 0x0003C0, "Member 'UPyWidget_Common_ImageMaskCut::Img_Mask' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, Image_Scale) == 0x0003C8, "Member 'UPyWidget_Common_ImageMaskCut::Image_Scale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, Image_OffsetUV) == 0x0003D0, "Member 'UPyWidget_Common_ImageMaskCut::Image_OffsetUV' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, bPureWhite) == 0x0003E0, "Member 'UPyWidget_Common_ImageMaskCut::bPureWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, OnMaskLoadCompleted) == 0x0003E8, "Member 'UPyWidget_Common_ImageMaskCut::OnMaskLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_ImageMaskCut, OnPictureLoadCompleted) == 0x0003F8, "Member 'UPyWidget_Common_ImageMaskCut::OnPictureLoadCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_ImageMaskCut;
 
 }
 

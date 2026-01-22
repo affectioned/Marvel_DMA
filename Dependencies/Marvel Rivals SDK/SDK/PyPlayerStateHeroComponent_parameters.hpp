@@ -24,9 +24,7 @@ struct PyPlayerStateHeroComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPlayerStateHeroComponent_ReceiveEndPlay");
-static_assert(sizeof(PyPlayerStateHeroComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyPlayerStateHeroComponent_ReceiveEndPlay");
-static_assert(offsetof(PyPlayerStateHeroComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPlayerStateHeroComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_ReceiveEndPlay;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvAddOpenedHeroID
 // 0x0008 (0x0008 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	EHeroIDReason                                 Reason;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvAddOpenedHeroID) == 0x000004, "Wrong alignment on PyPlayerStateHeroComponent_SrvAddOpenedHeroID");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvAddOpenedHeroID) == 0x000008, "Wrong size on PyPlayerStateHeroComponent_SrvAddOpenedHeroID");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroID, HeroID) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroID::HeroID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroID, Reason) == 0x000004, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroID::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroID, ReturnValue) == 0x000005, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvAddOpenedHeroID;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvAddOpenedHeroIDs
 // 0x0018 (0x0018 - 0x0000)
@@ -52,11 +46,7 @@ public:
 	EHeroIDReason                                 Reason;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs) == 0x000018, "Wrong size on PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs, HeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs::HeroIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs, Reason) == 0x000010, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs, ReturnValue) == 0x000011, "Member 'PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvAddOpenedHeroIDs;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvAddClosedHeroID
 // 0x0008 (0x0008 - 0x0000)
@@ -67,11 +57,7 @@ public:
 	EHeroIDReason                                 Reason;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvAddClosedHeroID) == 0x000004, "Wrong alignment on PyPlayerStateHeroComponent_SrvAddClosedHeroID");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvAddClosedHeroID) == 0x000008, "Wrong size on PyPlayerStateHeroComponent_SrvAddClosedHeroID");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroID, HeroID) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroID::HeroID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroID, Reason) == 0x000004, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroID::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroID, ReturnValue) == 0x000005, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvAddClosedHeroID;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvAddClosedHeroIDs
 // 0x0018 (0x0018 - 0x0000)
@@ -82,11 +68,7 @@ public:
 	EHeroIDReason                                 Reason;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDs) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvAddClosedHeroIDs");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDs) == 0x000018, "Wrong size on PyPlayerStateHeroComponent_SrvAddClosedHeroIDs");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDs, HeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroIDs::HeroIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDs, Reason) == 0x000010, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroIDs::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDs, ReturnValue) == 0x000011, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroIDs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvAddClosedHeroIDs;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvAddClosedHeroIDByItems
 // 0x0018 (0x0018 - 0x0000)
@@ -96,10 +78,7 @@ public:
 	TArray<struct FHeroIDPoolsItem>               Items;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems) == 0x000018, "Wrong size on PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems, Items) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems::Items' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems, ReturnValue) == 0x000010, "Member 'PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvAddClosedHeroIDByItems;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvSetShowInHeroPanel
 // 0x0018 (0x0018 - 0x0000)
@@ -109,10 +88,7 @@ public:
 	TArray<int32>                                 HeroIDs;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          enabled;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvSetShowInHeroPanel) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvSetShowInHeroPanel");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvSetShowInHeroPanel) == 0x000018, "Wrong size on PyPlayerStateHeroComponent_SrvSetShowInHeroPanel");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvSetShowInHeroPanel, HeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvSetShowInHeroPanel::HeroIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvSetShowInHeroPanel, enabled) == 0x000010, "Member 'PyPlayerStateHeroComponent_SrvSetShowInHeroPanel::enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvSetShowInHeroPanel;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvClearHeroID
 // 0x0020 (0x0020 - 0x0000)
@@ -124,11 +100,7 @@ public:
 	class FString                                 Reason;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvClearHeroID) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvClearHeroID");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvClearHeroID) == 0x000020, "Wrong size on PyPlayerStateHeroComponent_SrvClearHeroID");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroID, HeroID) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvClearHeroID::HeroID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroID, Reason) == 0x000008, "Member 'PyPlayerStateHeroComponent_SrvClearHeroID::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroID, ReturnValue) == 0x000018, "Member 'PyPlayerStateHeroComponent_SrvClearHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvClearHeroID;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.SrvClearHeroIDs
 // 0x0028 (0x0028 - 0x0000)
@@ -139,11 +111,7 @@ public:
 	class FString                                 Reason;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_SrvClearHeroIDs) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_SrvClearHeroIDs");
-static_assert(sizeof(PyPlayerStateHeroComponent_SrvClearHeroIDs) == 0x000028, "Wrong size on PyPlayerStateHeroComponent_SrvClearHeroIDs");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroIDs, HeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_SrvClearHeroIDs::HeroIDs' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroIDs, Reason) == 0x000010, "Member 'PyPlayerStateHeroComponent_SrvClearHeroIDs::Reason' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_SrvClearHeroIDs, ReturnValue) == 0x000020, "Member 'PyPlayerStateHeroComponent_SrvClearHeroIDs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_SrvClearHeroIDs;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.OnRep_OpenedHeroIDs
 // 0x0010 (0x0010 - 0x0000)
@@ -152,9 +120,7 @@ struct PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs final
 public:
 	TArray<int32>                                 LastOpenedHeroIDs;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs");
-static_assert(sizeof(PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs) == 0x000010, "Wrong size on PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs");
-static_assert(offsetof(PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs, LastOpenedHeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs::LastOpenedHeroIDs' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_OnRep_OpenedHeroIDs;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.OnRep_ClosedHeroIDs
 // 0x0010 (0x0010 - 0x0000)
@@ -163,9 +129,7 @@ struct PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs final
 public:
 	TArray<int32>                                 LastClosedHeroIDs;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs");
-static_assert(sizeof(PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs) == 0x000010, "Wrong size on PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs");
-static_assert(offsetof(PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs, LastClosedHeroIDs) == 0x000000, "Member 'PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs::LastClosedHeroIDs' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_OnRep_ClosedHeroIDs;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.CanSelectHeroID
 // 0x0008 (0x0008 - 0x0000)
@@ -175,10 +139,7 @@ public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_CanSelectHeroID) == 0x000004, "Wrong alignment on PyPlayerStateHeroComponent_CanSelectHeroID");
-static_assert(sizeof(PyPlayerStateHeroComponent_CanSelectHeroID) == 0x000008, "Wrong size on PyPlayerStateHeroComponent_CanSelectHeroID");
-static_assert(offsetof(PyPlayerStateHeroComponent_CanSelectHeroID, HeroID) == 0x000000, "Member 'PyPlayerStateHeroComponent_CanSelectHeroID::HeroID' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_CanSelectHeroID, ReturnValue) == 0x000004, "Member 'PyPlayerStateHeroComponent_CanSelectHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_CanSelectHeroID;
 
 // PythonFunction PyPlayerStateHeroComponent.PyPlayerStateHeroComponent.RandomHeroID
 // 0x0018 (0x0018 - 0x0000)
@@ -188,10 +149,7 @@ public:
 	TArray<int32>                                 filters;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateHeroComponent_RandomHeroID) == 0x000008, "Wrong alignment on PyPlayerStateHeroComponent_RandomHeroID");
-static_assert(sizeof(PyPlayerStateHeroComponent_RandomHeroID) == 0x000018, "Wrong size on PyPlayerStateHeroComponent_RandomHeroID");
-static_assert(offsetof(PyPlayerStateHeroComponent_RandomHeroID, filters) == 0x000000, "Member 'PyPlayerStateHeroComponent_RandomHeroID::filters' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateHeroComponent_RandomHeroID, ReturnValue) == 0x000010, "Member 'PyPlayerStateHeroComponent_RandomHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateHeroComponent_RandomHeroID;
 
 }
 

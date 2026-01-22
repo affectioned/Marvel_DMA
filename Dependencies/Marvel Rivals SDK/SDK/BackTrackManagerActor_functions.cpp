@@ -31,6 +31,20 @@ void ABackTrackManagerActor_C::自定义事件()
 }
 
 
+// Function BackTrackManagerActor.BackTrackManagerActor_C.Reset
+// (BlueprintCallable, BlueprintEvent)
+
+void ABackTrackManagerActor_C::Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BackTrackManagerActor_C", "Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BackTrackManagerActor.BackTrackManagerActor_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -112,20 +126,6 @@ void ABackTrackManagerActor_C::ActivateBackTrackAudio(bool IsActive, class FName
 	Parms.Tag = Tag;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BackTrackManagerActor.BackTrackManagerActor_C.Reset
-// (BlueprintCallable, BlueprintEvent)
-
-void ABackTrackManagerActor_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BackTrackManagerActor_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

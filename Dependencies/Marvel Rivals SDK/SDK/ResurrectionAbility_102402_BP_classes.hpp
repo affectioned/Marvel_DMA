@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ResurrectionAbility_102402_BP.ResurrectionAbility_102402_BP_C
-// 0x0000 (0x1418 - 0x1418)
+// 0x0000 (0x1430 - 0x1430)
 class UResurrectionAbility_102402_BP_C final : public UResurrectionAbility_10240201
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ResurrectionAbility_102402_BP_C">();
+		BP_STATIC_CLASS_IMPL("ResurrectionAbility_102402_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResurrectionAbility_102402_BP_C")
 	}
 	static class UResurrectionAbility_102402_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResurrectionAbility_102402_BP_C>();
 	}
 };
-static_assert(alignof(UResurrectionAbility_102402_BP_C) == 0x000008, "Wrong alignment on UResurrectionAbility_102402_BP_C");
-static_assert(sizeof(UResurrectionAbility_102402_BP_C) == 0x001418, "Wrong size on UResurrectionAbility_102402_BP_C");
+DUMPER7_ASSERTS_UResurrectionAbility_102402_BP_C;
 
 }
 

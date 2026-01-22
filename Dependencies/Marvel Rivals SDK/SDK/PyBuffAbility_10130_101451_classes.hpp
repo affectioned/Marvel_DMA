@@ -32,24 +32,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyZiplineSlideZombieHelper">();
+		STATIC_CLASS_IMPL("PyZiplineSlideZombieHelper")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyZiplineSlideZombieHelper")
 	}
 	static class UPyZiplineSlideZombieHelper* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyZiplineSlideZombieHelper>();
 	}
 };
-static_assert(alignof(UPyZiplineSlideZombieHelper) == 0x000008, "Wrong alignment on UPyZiplineSlideZombieHelper");
-static_assert(sizeof(UPyZiplineSlideZombieHelper) == 0x000108, "Wrong size on UPyZiplineSlideZombieHelper");
+DUMPER7_ASSERTS_UPyZiplineSlideZombieHelper;
 
 // PythonClass PyBuffAbility_10130_101451.PyBuffAbility_10130_10145101
-// 0x1670 (0x4060 - 0x29F0)
+// 0x19C0 (0x4400 - 0x2A40)
 class UPyBuffAbility_10130_10145101 : public UMarvelGameplayAbility
 {
 public:
-	struct FMarvelAbilityTraceContext             TraceZombieContext;                                // 0x29F0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         TraceZombieInterval;                               // 0x4050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SlideZombieSpeed;                                  // 0x4054(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceZombieContext;                                // 0x2A40(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         TraceZombieInterval;                               // 0x43F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SlideZombieSpeed;                                  // 0x43F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -59,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10145101">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10145101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10145101")
 	}
 	static class UPyBuffAbility_10130_10145101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10145101>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10145101) == 0x000010, "Wrong alignment on UPyBuffAbility_10130_10145101");
-static_assert(sizeof(UPyBuffAbility_10130_10145101) == 0x004060, "Wrong size on UPyBuffAbility_10130_10145101");
-static_assert(offsetof(UPyBuffAbility_10130_10145101, TraceZombieContext) == 0x0029F0, "Member 'UPyBuffAbility_10130_10145101::TraceZombieContext' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10145101, TraceZombieInterval) == 0x004050, "Member 'UPyBuffAbility_10130_10145101::TraceZombieInterval' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10145101, SlideZombieSpeed) == 0x004054, "Member 'UPyBuffAbility_10130_10145101::SlideZombieSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10145101;
 
 }
 

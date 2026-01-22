@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10503101_BP.Projectile_10503101_BP_C
-// 0x03A0 (0x3F30 - 0x3B90)
+// 0x04E0 (0x4380 - 0x3EA0)
 class AProjectile_10503101_BP_C final : public APyProjectile_10503101
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3B98(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3EA0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3EA8(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_Projectile_10503101_BP(int32 EntryPoint);
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10503101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10503101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10503101_BP_C")
 	}
 	static class AProjectile_10503101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10503101_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10503101_BP_C) == 0x000010, "Wrong alignment on AProjectile_10503101_BP_C");
-static_assert(sizeof(AProjectile_10503101_BP_C) == 0x003F30, "Wrong size on AProjectile_10503101_BP_C");
-static_assert(offsetof(AProjectile_10503101_BP_C, UberGraphFrame) == 0x003B90, "Member 'AProjectile_10503101_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectile_10503101_BP_C, Trace_Rule) == 0x003B98, "Member 'AProjectile_10503101_BP_C::Trace_Rule' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10503101_BP_C;
 
 }
 

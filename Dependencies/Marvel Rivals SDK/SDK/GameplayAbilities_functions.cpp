@@ -3450,6 +3450,31 @@ void UGameplayAbility::OnKeepActiveAbility()
 }
 
 
+// Function GameplayAbilities.GameplayAbility.OnServerActivateAbilityRejected
+// (Native, Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     FailureTags                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UGameplayAbility::OnServerActivateAbilityRejected(const struct FGameplayTagContainer& FailureTags)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GameplayAbility", "OnServerActivateAbilityRejected");
+
+	Params::GameplayAbility_OnServerActivateAbilityRejected Parms{};
+
+	Parms.FailureTags = std::move(FailureTags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function GameplayAbilities.GameplayAbility.OnSetKeepActiveParams
 // (Native, Event, Public, BlueprintEvent)
 
@@ -8154,6 +8179,36 @@ struct FGameplayEffectSpecHandle UAbilitySystemBlueprintLibrary::CloneSpecHandle
 }
 
 
+// Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesActorMeetTagRequirements
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayTagRequirements&  TagRequirements                                        (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAbilitySystemBlueprintLibrary::DoesActorMeetTagRequirements(class AActor* Actor, const struct FGameplayTagRequirements& TagRequirements)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AbilitySystemBlueprintLibrary", "DoesActorMeetTagRequirements");
+
+	Params::AbilitySystemBlueprintLibrary_DoesActorMeetTagRequirements Parms{};
+
+	Parms.Actor = Actor;
+	Parms.TagRequirements = std::move(TagRequirements);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesGameplayCueMeetTagRequirements
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -11551,6 +11606,231 @@ void UAbilitySystemComponent::KeepExpiredPredictionKey(const class FString& Key)
 }
 
 
+// Function GameplayAbilities.AbilitySystemComponent.KeepExpiredRootPredictionKey
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    Key                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::KeepExpiredRootPredictionKey(const class FString& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "KeepExpiredRootPredictionKey");
+
+	Params::AbilitySystemComponent_KeepExpiredRootPredictionKey Parms{};
+
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastInvokeSimpleCueAddEvent
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FSimpleApplyEffectParam&   SimpleAGE                                              (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastInvokeSimpleCueAddEvent(const struct FSimpleApplyEffectParam& SimpleAGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastInvokeSimpleCueAddEvent");
+
+	Params::AbilitySystemComponent_MulticastInvokeSimpleCueAddEvent Parms{};
+
+	Parms.SimpleAGE = std::move(SimpleAGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastInvokeSimpleCueRemoveEvent
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FSimpleApplyEffectParam&   SimpleAGE                                              (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastInvokeSimpleCueRemoveEvent(const struct FSimpleApplyEffectParam& SimpleAGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastInvokeSimpleCueRemoveEvent");
+
+	Params::AbilitySystemComponent_MulticastInvokeSimpleCueRemoveEvent Parms{};
+
+	Parms.SimpleAGE = std::move(SimpleAGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnAddGameplayEffect_InitOnly
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FActiveGameplayEffect&     NewActiveGE                                            (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnAddGameplayEffect_InitOnly(const struct FActiveGameplayEffect& NewActiveGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnAddGameplayEffect_InitOnly");
+
+	Params::AbilitySystemComponent_MulticastOnAddGameplayEffect_InitOnly Parms{};
+
+	Parms.NewActiveGE = std::move(NewActiveGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnAddGameplayEffect_SimpleApply
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FSimpleApplyEffectParam&   SimpleAGE                                              (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnAddGameplayEffect_SimpleApply(const struct FSimpleApplyEffectParam& SimpleAGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnAddGameplayEffect_SimpleApply");
+
+	Params::AbilitySystemComponent_MulticastOnAddGameplayEffect_SimpleApply Parms{};
+
+	Parms.SimpleAGE = std::move(SimpleAGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnChangeGameplayEffect_InitOnly
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FActiveGameplayEffect&     ChangedActiveGE                                        (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnChangeGameplayEffect_InitOnly(const struct FActiveGameplayEffect& ChangedActiveGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnChangeGameplayEffect_InitOnly");
+
+	Params::AbilitySystemComponent_MulticastOnChangeGameplayEffect_InitOnly Parms{};
+
+	Parms.ChangedActiveGE = std::move(ChangedActiveGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnChangeGameplayEffect_SimpleApply
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FSimpleApplyEffectParam&   SimpleAGE                                              (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnChangeGameplayEffect_SimpleApply(const struct FSimpleApplyEffectParam& SimpleAGE)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnChangeGameplayEffect_SimpleApply");
+
+	Params::AbilitySystemComponent_MulticastOnChangeGameplayEffect_SimpleApply Parms{};
+
+	Parms.SimpleAGE = std::move(SimpleAGE);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnRemoveGameplayEffect_InitOnly
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FActiveGameplayEffectHandle&RepHandle                                              (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnRemoveGameplayEffect_InitOnly(const struct FActiveGameplayEffectHandle& RepHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnRemoveGameplayEffect_InitOnly");
+
+	Params::AbilitySystemComponent_MulticastOnRemoveGameplayEffect_InitOnly Parms{};
+
+	Parms.RepHandle = std::move(RepHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.MulticastOnRemoveGameplayEffect_SimpleApply
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// const struct FActiveGameplayEffectHandle&RepHandle                                              (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::MulticastOnRemoveGameplayEffect_SimpleApply(const struct FActiveGameplayEffectHandle& RepHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "MulticastOnRemoveGameplayEffect_SimpleApply");
+
+	Params::AbilitySystemComponent_MulticastOnRemoveGameplayEffect_SimpleApply Parms{};
+
+	Parms.RepHandle = std::move(RepHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded
 // (Net, Native, Event, NetMulticast, Public)
 // Parameters:
@@ -12561,6 +12841,33 @@ void UAbilitySystemComponent::ServerCurrentMontageSetPlayRate(class UAnimMontage
 	Params::AbilitySystemComponent_ServerCurrentMontageSetPlayRate Parms{};
 
 	Parms.ClientAnimMontage = ClientAnimMontage;
+	Parms.InPlayRate = InPlayRate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayAbilities.AbilitySystemComponent.ServerCurrentTimelineSetPlayRate
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// Parameters:
+// class UAnimTimeline*                    Timeline                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InPlayRate                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbilitySystemComponent::ServerCurrentTimelineSetPlayRate(class UAnimTimeline* Timeline, float InPlayRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AbilitySystemComponent", "ServerCurrentTimelineSetPlayRate");
+
+	Params::AbilitySystemComponent_ServerCurrentTimelineSetPlayRate Parms{};
+
+	Parms.Timeline = Timeline;
 	Parms.InPlayRate = InPlayRate;
 
 	auto Flgs = Func->FunctionFlags;

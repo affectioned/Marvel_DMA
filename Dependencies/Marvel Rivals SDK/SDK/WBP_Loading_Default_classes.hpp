@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Loading_Default.WBP_Loading_Default_C
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UWBP_Loading_Default_C final : public UPyWidget_Loading_Default
 {
 public:
-	class UImage*                                 Img_Black;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_LoadingIcon;                               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Loading_SimpleIcon_C*              WBP_Loading_SimpleIcon;                            // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Black;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_LoadingIcon;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Loading_SimpleIcon_C*              WBP_Loading_SimpleIcon;                            // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Loading_Default_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Loading_Default_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Loading_Default_C")
 	}
 	static class UWBP_Loading_Default_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Loading_Default_C>();
 	}
 };
-static_assert(alignof(UWBP_Loading_Default_C) == 0x000008, "Wrong alignment on UWBP_Loading_Default_C");
-static_assert(sizeof(UWBP_Loading_Default_C) == 0x000610, "Wrong size on UWBP_Loading_Default_C");
-static_assert(offsetof(UWBP_Loading_Default_C, Img_Black) == 0x0005F8, "Member 'UWBP_Loading_Default_C::Img_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Default_C, Overlay_LoadingIcon) == 0x000600, "Member 'UWBP_Loading_Default_C::Overlay_LoadingIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Loading_Default_C, WBP_Loading_SimpleIcon) == 0x000608, "Member 'UWBP_Loading_Default_C::WBP_Loading_SimpleIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Loading_Default_C;
 
 }
 

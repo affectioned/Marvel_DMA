@@ -17,39 +17,6 @@
 namespace SDK
 {
 
-// PythonClass PyAbility_103352.PyAbility_103352
-// 0x0010 (0x2A10 - 0x2A00)
-class UPyAbility_103352 : public UAbility_103352
-{
-public:
-	TSubclassOf<class AMarvelSummonerBase>        SummonedClass;                                     // 0x2A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class AMarvelAbilityTargetActor_Projectile> ProjectileClass;                         // 0x2A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void BeginPlay();
-	bool CanActivate();
-	void OnPreLoadedSummonedSpawned(class AActor* SpawnedActor);
-	void K2_ActivateAbility();
-	void K2_OnEndAbility(bool bWasCancelled);
-	void OnDurationEnd();
-	void NativeOnMontageEvent(const class FString& Tag);
-	void EndPlay();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyAbility_103352">();
-	}
-	static class UPyAbility_103352* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyAbility_103352>();
-	}
-};
-static_assert(alignof(UPyAbility_103352) == 0x000008, "Wrong alignment on UPyAbility_103352");
-static_assert(sizeof(UPyAbility_103352) == 0x002A10, "Wrong size on UPyAbility_103352");
-static_assert(offsetof(UPyAbility_103352, SummonedClass) == 0x002A00, "Member 'UPyAbility_103352::SummonedClass' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103352, ProjectileClass) == 0x002A08, "Member 'UPyAbility_103352::ProjectileClass' has a wrong offset!");
-
 // PythonClass PyAbility_103352.PyConfig_103352
 // 0x0048 (0x0108 - 0x00C0)
 class UPyConfig_103352 final : public UConfig_103352
@@ -80,34 +47,184 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103352">();
+		STATIC_CLASS_IMPL("PyConfig_103352")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103352")
 	}
 	static class UPyConfig_103352* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103352>();
 	}
 };
-static_assert(alignof(UPyConfig_103352) == 0x000008, "Wrong alignment on UPyConfig_103352");
-static_assert(sizeof(UPyConfig_103352) == 0x000108, "Wrong size on UPyConfig_103352");
-static_assert(offsetof(UPyConfig_103352, WeaponFireMode) == 0x0000C0, "Member 'UPyConfig_103352::WeaponFireMode' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, EquipmentID) == 0x0000C4, "Member 'UPyConfig_103352::EquipmentID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, FireDuration) == 0x0000C8, "Member 'UPyConfig_103352::FireDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, ElectroProjectileID) == 0x0000CC, "Member 'UPyConfig_103352::ElectroProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MinExplosionDamage) == 0x0000D0, "Member 'UPyConfig_103352::MinExplosionDamage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MaxExplosionDamage) == 0x0000D4, "Member 'UPyConfig_103352::MaxExplosionDamage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MinExplosionRadius) == 0x0000D8, "Member 'UPyConfig_103352::MinExplosionRadius' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MaxExplosionRadius) == 0x0000DC, "Member 'UPyConfig_103352::MaxExplosionRadius' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MinPlasmaNum) == 0x0000E0, "Member 'UPyConfig_103352::MinPlasmaNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MaxPlasmaNum) == 0x0000E4, "Member 'UPyConfig_103352::MaxPlasmaNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MinOutAngle) == 0x0000E8, "Member 'UPyConfig_103352::MinOutAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, MaxOutAngle) == 0x0000EC, "Member 'UPyConfig_103352::MaxOutAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, OutBlendTime) == 0x0000F0, "Member 'UPyConfig_103352::OutBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, UltiDerivativeAngleMax) == 0x0000F4, "Member 'UPyConfig_103352::UltiDerivativeAngleMax' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, ResetToBulletLoadedAtMissile) == 0x0000F8, "Member 'UPyConfig_103352::ResetToBulletLoadedAtMissile' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, DebugNoRandomAngle) == 0x0000F9, "Member 'UPyConfig_103352::DebugNoRandomAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, DebugOutAngle) == 0x0000FC, "Member 'UPyConfig_103352::DebugOutAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, DebugNoRandomSpeed) == 0x000100, "Member 'UPyConfig_103352::DebugNoRandomSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103352, DebugSpeed) == 0x000104, "Member 'UPyConfig_103352::DebugSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103352;
+
+// PythonClass PyAbility_103352.PyProjectile_10335202
+// 0x0000 (0x3EB0 - 0x3EB0)
+class APyProjectile_10335202 final : public AProjectile_10335202
+{
+public:
+	void K2_OnBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
+	void K2_OnEndAgentTask();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyProjectile_10335202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10335202")
+	}
+	static class APyProjectile_10335202* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyProjectile_10335202>();
+	}
+};
+DUMPER7_ASSERTS_APyProjectile_10335202;
+
+// PythonClass PyAbility_103352.PyProjectile_10335201
+// 0x0010 (0x3EB0 - 0x3EA0)
+class APyProjectile_10335201 final : public AMarvelAbilityTargetActor_Projectile
+{
+public:
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ChargeDuration;                                    // 0x3EA0(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargePercent;                                     // 0x3EA4(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_OnInitializeData();
+	void K2_OnBeginAgentTask();
+	void K2_OnProcessHit(const struct FHitResult& ImpactResult);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyProjectile_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10335201")
+	}
+	static class APyProjectile_10335201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyProjectile_10335201>();
+	}
+};
+DUMPER7_ASSERTS_APyProjectile_10335201;
+
+// PythonClass PyAbility_103352.PySummoned_10335201
+// 0x0010 (0x0B70 - 0x0B60)
+#pragma pack(push, 0x1)
+class alignas(0x10) APySummoned_10335201 : public AMarvelSummonerBase
+{
+public:
+	int32                                         ScopeID;                                           // 0x0B60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeDuration;                                    // 0x0B64(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void ReceiveBeginPlay();
+	void K2_OnSummonedBeginAgentTask();
+	void DelaySpawnScope();
+	void K2_OnSummonedEndAgentTask();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PySummoned_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10335201")
+	}
+	static class APySummoned_10335201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APySummoned_10335201>();
+	}
+};
+#pragma pack(pop)
+DUMPER7_ASSERTS_APySummoned_10335201;
+
+// PythonClass PyAbility_103352.PyAbility_103352
+// 0x0010 (0x2A78 - 0x2A68)
+class UPyAbility_103352 : public UAbility_103352
+{
+public:
+	TSubclassOf<class AMarvelSummonerBase>        SummonedClass;                                     // 0x2A68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AMarvelAbilityTargetActor_Projectile> ProjectileClass;                         // 0x2A70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void BeginPlay();
+	bool CanActivate();
+	void OnPreLoadedSummonedSpawned(class AActor* SpawnedActor);
+	void K2_ActivateAbility();
+	void K2_OnEndAbility(bool bWasCancelled);
+	void OnDurationEnd();
+	void NativeOnMontageEvent(const class FString& Tag);
+	void EndPlay();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAbility_103352")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103352")
+	}
+	static class UPyAbility_103352* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAbility_103352>();
+	}
+};
+DUMPER7_ASSERTS_UPyAbility_103352;
+
+// PythonClass PyAbility_103352.PyEffectiveComponent_10335201
+// 0x0000 (0x2040 - 0x2040)
+class UPyEffectiveComponent_10335201 final : public UMarvelAgentEffectiveComponent
+{
+public:
+	void K2_Initialize();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10335201")
+	}
+	static class UPyEffectiveComponent_10335201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyEffectiveComponent_10335201>();
+	}
+};
+DUMPER7_ASSERTS_UPyEffectiveComponent_10335201;
+
+// PythonClass PyAbility_103352.PyTraceComponent_10335201
+// 0x0000 (0x2600 - 0x2600)
+class UPyTraceComponent_10335201 final : public UMarvelAgentTraceComponent
+{
+public:
+	void K2_Initialize();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyTraceComponent_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10335201")
+	}
+	static class UPyTraceComponent_10335201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyTraceComponent_10335201>();
+	}
+};
+DUMPER7_ASSERTS_UPyTraceComponent_10335201;
 
 // PythonClass PyAbility_103352.PyCue_Scope_Start_10335201
 // 0x0020 (0x03E0 - 0x03C0)
@@ -127,146 +244,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10335201">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10335201")
 	}
 	static class UPyCue_Scope_Start_10335201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10335201>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10335201) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10335201");
-static_assert(sizeof(UPyCue_Scope_Start_10335201) == 0x0003E0, "Wrong size on UPyCue_Scope_Start_10335201");
-static_assert(offsetof(UPyCue_Scope_Start_10335201, GroundFX) == 0x0003C0, "Member 'UPyCue_Scope_Start_10335201::GroundFX' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10335201, DecalCheckHeight) == 0x0003C8, "Member 'UPyCue_Scope_Start_10335201::DecalCheckHeight' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10335201, Ignores) == 0x0003D0, "Member 'UPyCue_Scope_Start_10335201::Ignores' has a wrong offset!");
-
-// PythonClass PyAbility_103352.PyProjectile_10335201
-// 0x0010 (0x3BA0 - 0x3B90)
-class APyProjectile_10335201 final : public AMarvelAbilityTargetActor_Projectile
-{
-public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ChargeDuration;                                    // 0x3B90(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChargePercent;                                     // 0x3B94(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_OnInitializeData();
-	void K2_OnBeginAgentTask();
-	void K2_OnProcessHit(const struct FHitResult& ImpactResult);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyProjectile_10335201">();
-	}
-	static class APyProjectile_10335201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyProjectile_10335201>();
-	}
-};
-static_assert(alignof(APyProjectile_10335201) == 0x000010, "Wrong alignment on APyProjectile_10335201");
-static_assert(sizeof(APyProjectile_10335201) == 0x003BA0, "Wrong size on APyProjectile_10335201");
-static_assert(offsetof(APyProjectile_10335201, ChargeDuration) == 0x003B90, "Member 'APyProjectile_10335201::ChargeDuration' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10335201, ChargePercent) == 0x003B94, "Member 'APyProjectile_10335201::ChargePercent' has a wrong offset!");
-
-// PythonClass PyAbility_103352.PyTraceComponent_10335201
-// 0x0000 (0x2200 - 0x2200)
-class UPyTraceComponent_10335201 final : public UMarvelAgentTraceComponent
-{
-public:
-	void K2_Initialize();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyTraceComponent_10335201">();
-	}
-	static class UPyTraceComponent_10335201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyTraceComponent_10335201>();
-	}
-};
-static_assert(alignof(UPyTraceComponent_10335201) == 0x000010, "Wrong alignment on UPyTraceComponent_10335201");
-static_assert(sizeof(UPyTraceComponent_10335201) == 0x002200, "Wrong size on UPyTraceComponent_10335201");
-
-// PythonClass PyAbility_103352.PySummoned_10335201
-// 0x0010 (0x0B50 - 0x0B40)
-#pragma pack(push, 0x1)
-class alignas(0x10) APySummoned_10335201 : public AMarvelSummonerBase
-{
-public:
-	int32                                         ScopeID;                                           // 0x0B40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChargeDuration;                                    // 0x0B44(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void ReceiveBeginPlay();
-	void K2_OnSummonedBeginAgentTask();
-	void DelaySpawnScope();
-	void K2_OnSummonedEndAgentTask();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PySummoned_10335201">();
-	}
-	static class APySummoned_10335201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APySummoned_10335201>();
-	}
-};
-#pragma pack(pop)
-static_assert(alignof(APySummoned_10335201) == 0x000010, "Wrong alignment on APySummoned_10335201");
-static_assert(sizeof(APySummoned_10335201) == 0x000B50, "Wrong size on APySummoned_10335201");
-static_assert(offsetof(APySummoned_10335201, ScopeID) == 0x000B40, "Member 'APySummoned_10335201::ScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10335201, ChargeDuration) == 0x000B44, "Member 'APySummoned_10335201::ChargeDuration' has a wrong offset!");
-
-// PythonClass PyAbility_103352.PyEffectiveComponent_10335201
-// 0x0000 (0x1C70 - 0x1C70)
-class UPyEffectiveComponent_10335201 final : public UMarvelAgentEffectiveComponent
-{
-public:
-	void K2_Initialize();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyEffectiveComponent_10335201">();
-	}
-	static class UPyEffectiveComponent_10335201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyEffectiveComponent_10335201>();
-	}
-};
-static_assert(alignof(UPyEffectiveComponent_10335201) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10335201");
-static_assert(sizeof(UPyEffectiveComponent_10335201) == 0x001C70, "Wrong size on UPyEffectiveComponent_10335201");
-
-// PythonClass PyAbility_103352.PyProjectile_10335202
-// 0x0000 (0x3BA0 - 0x3BA0)
-class APyProjectile_10335202 final : public AProjectile_10335202
-{
-public:
-	void K2_OnBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void K2_OnEndAgentTask();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyProjectile_10335202">();
-	}
-	static class APyProjectile_10335202* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyProjectile_10335202>();
-	}
-};
-static_assert(alignof(APyProjectile_10335202) == 0x000010, "Wrong alignment on APyProjectile_10335202");
-static_assert(sizeof(APyProjectile_10335202) == 0x003BA0, "Wrong size on APyProjectile_10335202");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10335201;
 
 // PythonClass PyAbility_103352.PyCue_Ability_Loop_10335201
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10335201 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         MaxEnergyAudioID;                                  // 0x11B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxEnergyAudioID;                                  // 0x11C0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -276,19 +272,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10335201">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10335201")
 	}
 	static class APyCue_Ability_Loop_10335201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10335201>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10335201) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10335201");
-static_assert(sizeof(APyCue_Ability_Loop_10335201) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10335201");
-static_assert(offsetof(APyCue_Ability_Loop_10335201, MaxEnergyAudioID) == 0x0011B0, "Member 'APyCue_Ability_Loop_10335201::MaxEnergyAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10335201;
 
 // PythonClass PyAbility_103352.PyCue_Projectile_Loop_10335201
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10335201 final : public AMarvelCueNotify_Projectile
 {
 public:
@@ -297,15 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10335201">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10335201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10335201")
 	}
 	static class APyCue_Projectile_Loop_10335201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10335201>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10335201) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10335201");
-static_assert(sizeof(APyCue_Projectile_Loop_10335201) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10335201");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10335201;
 
 }
 

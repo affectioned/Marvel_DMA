@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
@@ -25,18 +25,21 @@ class UPyWidget_BattlePass_RewardItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RewardItemData">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RewardItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RewardItemData")
 	}
 	static class UPyWidget_BattlePass_RewardItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RewardItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RewardItemData) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_RewardItemData");
-static_assert(sizeof(UPyWidget_BattlePass_RewardItemData) == 0x000030, "Wrong size on UPyWidget_BattlePass_RewardItemData");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RewardItemData;
 
 // PythonClass PyWidget_BattlePass_Unlock.PyWidget_BattlePass_RewardItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_BattlePass_RewardItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -45,24 +48,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_RewardItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_RewardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_RewardItem")
 	}
 	static class UPyWidget_BattlePass_RewardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_RewardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_RewardItem) == 0x000010, "Wrong alignment on UPyWidget_BattlePass_RewardItem");
-static_assert(sizeof(UPyWidget_BattlePass_RewardItem) == 0x0008C0, "Wrong size on UPyWidget_BattlePass_RewardItem");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_RewardItem;
 
 // PythonClass PyWidget_BattlePass_Unlock.PyWidget_BattlePass_Unlock
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_BattlePass_Unlock final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         Reward_Delay_Time;                                 // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Normal_To_Advance_Text_Delay_Time;                 // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Upgrade;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Reward_Delay_Time;                                 // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Normal_To_Advance_Text_Delay_Time;                 // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Upgrade;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -75,18 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Unlock">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Unlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Unlock")
 	}
 	static class UPyWidget_BattlePass_Unlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Unlock>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Unlock) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Unlock");
-static_assert(sizeof(UPyWidget_BattlePass_Unlock) == 0x000608, "Wrong size on UPyWidget_BattlePass_Unlock");
-static_assert(offsetof(UPyWidget_BattlePass_Unlock, Reward_Delay_Time) == 0x0005F8, "Member 'UPyWidget_BattlePass_Unlock::Reward_Delay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Unlock, Normal_To_Advance_Text_Delay_Time) == 0x0005FC, "Member 'UPyWidget_BattlePass_Unlock::Normal_To_Advance_Text_Delay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Unlock, AkEvent_Upgrade) == 0x000600, "Member 'UPyWidget_BattlePass_Unlock::AkEvent_Upgrade' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Unlock;
 
 }
 

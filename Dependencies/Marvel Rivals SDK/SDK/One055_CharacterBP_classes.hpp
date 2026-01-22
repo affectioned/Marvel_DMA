@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1055_classes.hpp"
+#include "PyDaredevilCharacter_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass 1055_CharacterBP.1055_CharacterBP_C
-// 0x0000 (0x21C0 - 0x21C0)
-class AOne055_CharacterBP_C final : public ADaredevilCharacter
+// 0x0000 (0x22F0 - 0x22F0)
+class AOne055_CharacterBP_C final : public APyDaredevilCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1055_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1055_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1055_CharacterBP_C")
 	}
 	static class AOne055_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne055_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne055_CharacterBP_C) == 0x000010, "Wrong alignment on AOne055_CharacterBP_C");
-static_assert(sizeof(AOne055_CharacterBP_C) == 0x0021C0, "Wrong size on AOne055_CharacterBP_C");
+DUMPER7_ASSERTS_AOne055_CharacterBP_C;
 
 }
 

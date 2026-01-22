@@ -44,31 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PC_UISettingEntryScalabilityGeneratorBP_C">();
+		BP_STATIC_CLASS_IMPL("PC_UISettingEntryScalabilityGeneratorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PC_UISettingEntryScalabilityGeneratorBP_C")
 	}
 	static class UPC_UISettingEntryScalabilityGeneratorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPC_UISettingEntryScalabilityGeneratorBP_C>();
 	}
 };
-static_assert(alignof(UPC_UISettingEntryScalabilityGeneratorBP_C) == 0x000008, "Wrong alignment on UPC_UISettingEntryScalabilityGeneratorBP_C");
-static_assert(sizeof(UPC_UISettingEntryScalabilityGeneratorBP_C) == 0x0000B8, "Wrong size on UPC_UISettingEntryScalabilityGeneratorBP_C");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, anti_aliasing_quality) == 0x000030, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::anti_aliasing_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, view_distance_quality) == 0x000034, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::view_distance_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, shadow_quality) == 0x000038, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::shadow_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, global_illumination_quality) == 0x00003C, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::global_illumination_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, reflection_quality) == 0x000040, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::reflection_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, texture_quality) == 0x000044, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::texture_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, visual_effect_quality) == 0x000048, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::visual_effect_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, post_processing_quality) == 0x00004C, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::post_processing_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, foliage_quality) == 0x000050, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::foliage_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, shading_quality) == 0x000054, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::shading_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, SettingQuality) == 0x000058, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::SettingQuality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, SettingQuality_WithoutReflection) == 0x000068, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::SettingQuality_WithoutReflection' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, high) == 0x000078, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::high' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, epic) == 0x000088, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::epic' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, mid) == 0x000098, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::mid' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityGeneratorBP_C, low) == 0x0000A8, "Member 'UPC_UISettingEntryScalabilityGeneratorBP_C::low' has a wrong offset!");
+DUMPER7_ASSERTS_UPC_UISettingEntryScalabilityGeneratorBP_C;
 
 }
 

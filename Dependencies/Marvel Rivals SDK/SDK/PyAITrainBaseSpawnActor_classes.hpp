@@ -36,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITrainBaseSpawnActor">();
+		STATIC_CLASS_IMPL("PyAITrainBaseSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITrainBaseSpawnActor")
 	}
 	static class APyAITrainBaseSpawnActor* GetDefaultObj()
 	{
@@ -44,11 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyAITrainBaseSpawnActor) == 0x000010, "Wrong alignment on APyAITrainBaseSpawnActor");
-static_assert(sizeof(APyAITrainBaseSpawnActor) == 0x000760, "Wrong size on APyAITrainBaseSpawnActor");
-static_assert(offsetof(APyAITrainBaseSpawnActor, TrainingAITag) == 0x0006E8, "Member 'APyAITrainBaseSpawnActor::TrainingAITag' has a wrong offset!");
-static_assert(offsetof(APyAITrainBaseSpawnActor, SwitchAudioEvent) == 0x000750, "Member 'APyAITrainBaseSpawnActor::SwitchAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyAITrainBaseSpawnActor, SpawnCount) == 0x000758, "Member 'APyAITrainBaseSpawnActor::SpawnCount' has a wrong offset!");
+DUMPER7_ASSERTS_APyAITrainBaseSpawnActor;
 
 }
 

@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKrakoaPortalPlayerStateComp">();
+		STATIC_CLASS_IMPL("PyKrakoaPortalPlayerStateComp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKrakoaPortalPlayerStateComp")
 	}
 	static class UPyKrakoaPortalPlayerStateComp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKrakoaPortalPlayerStateComp>();
 	}
 };
-static_assert(alignof(UPyKrakoaPortalPlayerStateComp) == 0x000008, "Wrong alignment on UPyKrakoaPortalPlayerStateComp");
-static_assert(sizeof(UPyKrakoaPortalPlayerStateComp) == 0x000110, "Wrong size on UPyKrakoaPortalPlayerStateComp");
-static_assert(offsetof(UPyKrakoaPortalPlayerStateComp, ColorIndex) == 0x000108, "Member 'UPyKrakoaPortalPlayerStateComp::ColorIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKrakoaPortalPlayerStateComp;
 
 }
 

@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10325101_V2_BP.Summoned_10325101_V2_BP_C
-// 0x0010 (0x18A0 - 0x1890)
+// 0x0010 (0x1930 - 0x1920)
 class ASummoned_10325101_V2_BP_C final : public ASummoned_V2_10325101
 {
 public:
-	class UMarvelHitShape_Sphere*                 MarvelHitShape_Sphere;                             // 0x1890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCameraComponent*                       Camera;                                            // 0x1898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Sphere*                 MarvelHitShape_Sphere;                             // 0x1920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCameraComponent*                       Camera;                                            // 0x1928(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10325101_V2_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10325101_V2_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10325101_V2_BP_C")
 	}
 	static class ASummoned_10325101_V2_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10325101_V2_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10325101_V2_BP_C) == 0x000010, "Wrong alignment on ASummoned_10325101_V2_BP_C");
-static_assert(sizeof(ASummoned_10325101_V2_BP_C) == 0x0018A0, "Wrong size on ASummoned_10325101_V2_BP_C");
-static_assert(offsetof(ASummoned_10325101_V2_BP_C, MarvelHitShape_Sphere) == 0x001890, "Member 'ASummoned_10325101_V2_BP_C::MarvelHitShape_Sphere' has a wrong offset!");
-static_assert(offsetof(ASummoned_10325101_V2_BP_C, Camera) == 0x001898, "Member 'ASummoned_10325101_V2_BP_C::Camera' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10325101_V2_BP_C;
 
 }
 

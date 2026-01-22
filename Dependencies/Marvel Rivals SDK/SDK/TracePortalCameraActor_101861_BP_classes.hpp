@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TracePortalCameraActor_101861_BP.TracePortalCameraActor_101861_BP_C
-// 0x0010 (0x14F0 - 0x14E0)
+// 0x0010 (0x1500 - 0x14F0)
 class ATracePortalCameraActor_101861_BP_C final : public ATracePortalCameraActor_101861
 {
 public:
-	class USummonedAbilitySystemComponent*        AbilitySystemComponent;                            // 0x14E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedAbilitySystemComponent*        AbilitySystemComponent;                            // 0x14F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TracePortalCameraActor_101861_BP_C">();
+		BP_STATIC_CLASS_IMPL("TracePortalCameraActor_101861_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TracePortalCameraActor_101861_BP_C")
 	}
 	static class ATracePortalCameraActor_101861_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATracePortalCameraActor_101861_BP_C>();
 	}
 };
-static_assert(alignof(ATracePortalCameraActor_101861_BP_C) == 0x000010, "Wrong alignment on ATracePortalCameraActor_101861_BP_C");
-static_assert(sizeof(ATracePortalCameraActor_101861_BP_C) == 0x0014F0, "Wrong size on ATracePortalCameraActor_101861_BP_C");
-static_assert(offsetof(ATracePortalCameraActor_101861_BP_C, AbilitySystemComponent) == 0x0014E0, "Member 'ATracePortalCameraActor_101861_BP_C::AbilitySystemComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ATracePortalCameraActor_101861_BP_C;
 
 }
 

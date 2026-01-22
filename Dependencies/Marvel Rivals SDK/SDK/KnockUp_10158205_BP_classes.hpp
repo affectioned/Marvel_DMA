@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass KnockUp_10158205_BP.KnockUp_10158205_BP_C
-// 0x0000 (0x2058 - 0x2058)
+// 0x0000 (0x23A8 - 0x23A8)
 class UKnockUp_10158205_BP_C final : public UKnockUpAbility_10158205
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KnockUp_10158205_BP_C">();
+		BP_STATIC_CLASS_IMPL("KnockUp_10158205_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KnockUp_10158205_BP_C")
 	}
 	static class UKnockUp_10158205_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKnockUp_10158205_BP_C>();
 	}
 };
-static_assert(alignof(UKnockUp_10158205_BP_C) == 0x000008, "Wrong alignment on UKnockUp_10158205_BP_C");
-static_assert(sizeof(UKnockUp_10158205_BP_C) == 0x002058, "Wrong size on UKnockUp_10158205_BP_C");
+DUMPER7_ASSERTS_UKnockUp_10158205_BP_C;
 
 }
 

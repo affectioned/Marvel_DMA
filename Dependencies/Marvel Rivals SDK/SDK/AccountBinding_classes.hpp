@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUICAccountBinding">();
+		STATIC_CLASS_IMPL("PySettingEntryUICAccountBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUICAccountBinding")
 	}
 	static class UPySettingEntryUICAccountBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUICAccountBinding>();
 	}
 };
-static_assert(alignof(UPySettingEntryUICAccountBinding) == 0x000008, "Wrong alignment on UPySettingEntryUICAccountBinding");
-static_assert(sizeof(UPySettingEntryUICAccountBinding) == 0x000030, "Wrong size on UPySettingEntryUICAccountBinding");
+DUMPER7_ASSERTS_UPySettingEntryUICAccountBinding;
 
 }
 

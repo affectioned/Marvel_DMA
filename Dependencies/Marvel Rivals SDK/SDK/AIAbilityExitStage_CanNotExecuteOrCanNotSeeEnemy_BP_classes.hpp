@@ -23,15 +23,18 @@ class UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C final : public UAIA
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C")
 	}
 	static class UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C");
-static_assert(sizeof(UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C) == 0x000050, "Wrong size on UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_CanNotExecuteOrCanNotSeeEnemy_BP_C;
 
 }
 

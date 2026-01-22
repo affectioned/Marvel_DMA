@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NotTreatShield_101631_BP.NotTreatShield_101631_BP_C
-// 0x0000 (0x1478 - 0x1478)
+// 0x0000 (0x1490 - 0x1490)
 class UNotTreatShield_101631_BP_C final : public UUMarvelTreatOverflowConvAbility_10163101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NotTreatShield_101631_BP_C">();
+		BP_STATIC_CLASS_IMPL("NotTreatShield_101631_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotTreatShield_101631_BP_C")
 	}
 	static class UNotTreatShield_101631_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNotTreatShield_101631_BP_C>();
 	}
 };
-static_assert(alignof(UNotTreatShield_101631_BP_C) == 0x000008, "Wrong alignment on UNotTreatShield_101631_BP_C");
-static_assert(sizeof(UNotTreatShield_101631_BP_C) == 0x001478, "Wrong size on UNotTreatShield_101631_BP_C");
+DUMPER7_ASSERTS_UNotTreatShield_101631_BP_C;
 
 }
 

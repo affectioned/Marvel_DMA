@@ -55,31 +55,6 @@ void UPyWidget_Loading_Nameplate::Destruct()
 }
 
 
-// PythonFunction PyWidget_Loading_Nameplate.PyWidget_Loading_Nameplate.OnLoadingVisibleChanged
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVisible_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Loading_Nameplate::OnLoadingVisibleChanged(bool bVisible_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Loading_Nameplate", "OnLoadingVisibleChanged");
-
-	Params::PyWidget_Loading_Nameplate_OnLoadingVisibleChanged Parms{};
-
-	Parms.bVisible_0 = bVisible_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_Loading_Nameplate.PyWidget_Loading_Nameplate.OnAnimationFinished
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

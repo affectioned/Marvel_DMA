@@ -24,9 +24,7 @@ struct MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID final
 public:
 	struct FMovieSceneObjectBindingID             InConstraintBindingID;                             // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID, InConstraintBindingID) == 0x000000, "Member 'MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID::InConstraintBindingID' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelNiagaraMeshComponentSection_SetConstraintBindingID;
 
 // Function MarvelMovieScene.MovieSceneMarvelNiagaraMeshComponentSection.GetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -35,9 +33,7 @@ struct MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID final
 public:
 	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID, ReturnValue) == 0x000000, "Member 'MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelNiagaraMeshComponentSection_GetConstraintBindingID;
 
 // Function MarvelMovieScene.MovieSceneMarvelNiagaraSplineComponentSection.SetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -46,9 +42,7 @@ struct MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID fina
 public:
 	struct FMovieSceneObjectBindingID             InConstraintBindingID;                             // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID, InConstraintBindingID) == 0x000000, "Member 'MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID::InConstraintBindingID' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelNiagaraSplineComponentSection_SetConstraintBindingID;
 
 // Function MarvelMovieScene.MovieSceneMarvelNiagaraSplineComponentSection.GetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -57,9 +51,7 @@ struct MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID fina
 public:
 	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID, ReturnValue) == 0x000000, "Member 'MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelNiagaraSplineComponentSection_GetConstraintBindingID;
 
 // Function MarvelMovieScene.MovieSceneMarvelPortalLinkTargetSection.SetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -68,9 +60,7 @@ struct MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID final
 public:
 	struct FMovieSceneObjectBindingID             InConstraintBindingID;                             // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID, InConstraintBindingID) == 0x000000, "Member 'MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID::InConstraintBindingID' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelPortalLinkTargetSection_SetConstraintBindingID;
 
 // Function MarvelMovieScene.MovieSceneMarvelPortalLinkTargetSection.GetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -79,9 +69,7 @@ struct MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID final
 public:
 	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID) == 0x000004, "Wrong alignment on MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID");
-static_assert(sizeof(MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID) == 0x000018, "Wrong size on MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID");
-static_assert(offsetof(MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID, ReturnValue) == 0x000000, "Member 'MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneMarvelPortalLinkTargetSection_GetConstraintBindingID;
 
 // Function MarvelMovieScene.PaintSceneManagerActor.OnScenePushPaintSceneCommands
 // 0x0050 (0x0050 - 0x0000)
@@ -90,9 +78,7 @@ struct PaintSceneManagerActor_OnScenePushPaintSceneCommands final
 public:
 	struct FPaintSceneCommand                     InCommand;                                         // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PaintSceneManagerActor_OnScenePushPaintSceneCommands) == 0x000010, "Wrong alignment on PaintSceneManagerActor_OnScenePushPaintSceneCommands");
-static_assert(sizeof(PaintSceneManagerActor_OnScenePushPaintSceneCommands) == 0x000050, "Wrong size on PaintSceneManagerActor_OnScenePushPaintSceneCommands");
-static_assert(offsetof(PaintSceneManagerActor_OnScenePushPaintSceneCommands, InCommand) == 0x000000, "Member 'PaintSceneManagerActor_OnScenePushPaintSceneCommands::InCommand' has a wrong offset!");
+DUMPER7_ASSERTS_PaintSceneManagerActor_OnScenePushPaintSceneCommands;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct PyWidget_Replay_ControlPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_ControlPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Replay_ControlPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Replay_ControlPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Replay_ControlPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Replay_ControlPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Replay_ControlPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ControlPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_Replay_ControlPanel.PyWidget_Replay_ControlPanel.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_Replay_ControlPanel_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_ControlPanel_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Replay_ControlPanel_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Replay_ControlPanel_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Replay_ControlPanel_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Replay_ControlPanel_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Replay_ControlPanel_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ControlPanel_OnAnimationStarted;
 
 // PythonFunction PyWidget_Replay_ControlPanel.PyWidget_Replay_ControlPanel.OnReceiveInputKey
 // 0x0028 (0x0028 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x0020(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_ControlPanel_OnReceiveInputKey) == 0x000008, "Wrong alignment on PyWidget_Replay_ControlPanel_OnReceiveInputKey");
-static_assert(sizeof(PyWidget_Replay_ControlPanel_OnReceiveInputKey) == 0x000028, "Wrong size on PyWidget_Replay_ControlPanel_OnReceiveInputKey");
-static_assert(offsetof(PyWidget_Replay_ControlPanel_OnReceiveInputKey, InKey) == 0x000000, "Member 'PyWidget_Replay_ControlPanel_OnReceiveInputKey::InKey' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_ControlPanel_OnReceiveInputKey, EventType) == 0x000020, "Member 'PyWidget_Replay_ControlPanel_OnReceiveInputKey::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_ControlPanel_OnReceiveInputKey;
 
 }
 

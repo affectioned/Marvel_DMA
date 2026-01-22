@@ -23,9 +23,7 @@ struct PyMaintainRoomStair_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMaintainRoomStair_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMaintainRoomStair_ReceiveEndPlay");
-static_assert(sizeof(PyMaintainRoomStair_ReceiveEndPlay) == 0x000001, "Wrong size on PyMaintainRoomStair_ReceiveEndPlay");
-static_assert(offsetof(PyMaintainRoomStair_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMaintainRoomStair_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMaintainRoomStair_ReceiveEndPlay;
 
 // PythonFunction PyMaintainRoomStair.PyMaintainRoomStair.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyMaintainRoomStair_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMaintainRoomStair_SrvSetState) == 0x000008, "Wrong alignment on PyMaintainRoomStair_SrvSetState");
-static_assert(sizeof(PyMaintainRoomStair_SrvSetState) == 0x000010, "Wrong size on PyMaintainRoomStair_SrvSetState");
-static_assert(offsetof(PyMaintainRoomStair_SrvSetState, state) == 0x000000, "Member 'PyMaintainRoomStair_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyMaintainRoomStair_SrvSetState;
 
 }
 

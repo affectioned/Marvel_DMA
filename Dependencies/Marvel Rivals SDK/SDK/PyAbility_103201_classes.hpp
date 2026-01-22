@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103201.PyAbility_103201
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_103201 : public UMarvelGameplayAbility
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103201">();
+		STATIC_CLASS_IMPL("PyAbility_103201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103201")
 	}
 	static class UPyAbility_103201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103201>();
 	}
 };
-static_assert(alignof(UPyAbility_103201) == 0x000008, "Wrong alignment on UPyAbility_103201");
-static_assert(sizeof(UPyAbility_103201) == 0x0029F0, "Wrong size on UPyAbility_103201");
+DUMPER7_ASSERTS_UPyAbility_103201;
 
 // PythonClass PyAbility_103201.PyCue_Ability_Instant_10320101
 // 0x0000 (0x03C0 - 0x03C0)
@@ -50,18 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10320101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10320101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10320101")
 	}
 	static class UPyCue_Ability_Instant_10320101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10320101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10320101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10320101");
-static_assert(sizeof(UPyCue_Ability_Instant_10320101) == 0x0003C0, "Wrong size on UPyCue_Ability_Instant_10320101");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10320101;
 
 // PythonClass PyAbility_103201.PyCue_Ability_Loop_10320101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10320101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10320101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10320101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10320101")
 	}
 	static class APyCue_Ability_Loop_10320101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10320101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10320101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10320101");
-static_assert(sizeof(APyCue_Ability_Loop_10320101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10320101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10320101;
 
 }
 

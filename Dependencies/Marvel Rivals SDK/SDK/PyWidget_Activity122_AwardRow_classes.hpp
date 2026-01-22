@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_AwardRow.PyWidget_Activity122_AwardRow
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Activity122_AwardRow final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     PreviewBGMaskList;                                 // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     PreviewItemMaskList;                               // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     PreviewBGMaskList_Higher;                          // 0x05E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     PreviewItemMaskList_Higher;                        // 0x05F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     DisplayMaskList;                                   // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     PreviewBGMaskList;                                 // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     PreviewItemMaskList;                               // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     PreviewBGMaskList_Higher;                          // 0x05E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     PreviewItemMaskList_Higher;                        // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     DisplayMaskList;                                   // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_AwardRow">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_AwardRow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_AwardRow")
 	}
 	static class UPyWidget_Activity122_AwardRow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_AwardRow>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_AwardRow) == 0x000008, "Wrong alignment on UPyWidget_Activity122_AwardRow");
-static_assert(sizeof(UPyWidget_Activity122_AwardRow) == 0x000610, "Wrong size on UPyWidget_Activity122_AwardRow");
-static_assert(offsetof(UPyWidget_Activity122_AwardRow, PreviewBGMaskList) == 0x0005C0, "Member 'UPyWidget_Activity122_AwardRow::PreviewBGMaskList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardRow, PreviewItemMaskList) == 0x0005D0, "Member 'UPyWidget_Activity122_AwardRow::PreviewItemMaskList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardRow, PreviewBGMaskList_Higher) == 0x0005E0, "Member 'UPyWidget_Activity122_AwardRow::PreviewBGMaskList_Higher' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardRow, PreviewItemMaskList_Higher) == 0x0005F0, "Member 'UPyWidget_Activity122_AwardRow::PreviewItemMaskList_Higher' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_AwardRow, DisplayMaskList) == 0x000600, "Member 'UPyWidget_Activity122_AwardRow::DisplayMaskList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_AwardRow;
 
 }
 

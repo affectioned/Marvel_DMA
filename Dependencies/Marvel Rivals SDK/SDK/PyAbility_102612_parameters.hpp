@@ -24,9 +24,7 @@ struct PyAbility_102612_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102612_CanActivate) == 0x000001, "Wrong alignment on PyAbility_102612_CanActivate");
-static_assert(sizeof(PyAbility_102612_CanActivate) == 0x000001, "Wrong size on PyAbility_102612_CanActivate");
-static_assert(offsetof(PyAbility_102612_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_102612_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102612_CanActivate;
 
 // PythonFunction PyAbility_102612.PyAbility_102612.K2_CanGetOnWall
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_102612_K2_CanGetOnWall final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102612_K2_CanGetOnWall) == 0x000001, "Wrong alignment on PyAbility_102612_K2_CanGetOnWall");
-static_assert(sizeof(PyAbility_102612_K2_CanGetOnWall) == 0x000001, "Wrong size on PyAbility_102612_K2_CanGetOnWall");
-static_assert(offsetof(PyAbility_102612_K2_CanGetOnWall, ReturnValue) == 0x000000, "Member 'PyAbility_102612_K2_CanGetOnWall::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102612_K2_CanGetOnWall;
 
 // PythonFunction PyAbility_102612.PyAbility_102612.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_102612_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102612_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102612_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102612_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102612_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102612_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_102612_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102612_K2_OnEndAbility;
 
 // PythonFunction PyAbility_102612.PyAbility_102612.OnMovementModeChange
 // 0x0010 (0x0010 - 0x0000)
@@ -59,11 +53,7 @@ public:
 	EMovementMode                                 PrevMode;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CustomMode;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102612_OnMovementModeChange) == 0x000008, "Wrong alignment on PyAbility_102612_OnMovementModeChange");
-static_assert(sizeof(PyAbility_102612_OnMovementModeChange) == 0x000010, "Wrong size on PyAbility_102612_OnMovementModeChange");
-static_assert(offsetof(PyAbility_102612_OnMovementModeChange, MyCharacter) == 0x000000, "Member 'PyAbility_102612_OnMovementModeChange::MyCharacter' has a wrong offset!");
-static_assert(offsetof(PyAbility_102612_OnMovementModeChange, PrevMode) == 0x000008, "Member 'PyAbility_102612_OnMovementModeChange::PrevMode' has a wrong offset!");
-static_assert(offsetof(PyAbility_102612_OnMovementModeChange, CustomMode) == 0x000009, "Member 'PyAbility_102612_OnMovementModeChange::CustomMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102612_OnMovementModeChange;
 
 // PythonFunction PyAbility_102612.PyAbility_102612.OnCooldownTagUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -73,10 +63,7 @@ public:
 	struct FGameplayTag                           TagUpdated;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExists;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102612_OnCooldownTagUpdated) == 0x000004, "Wrong alignment on PyAbility_102612_OnCooldownTagUpdated");
-static_assert(sizeof(PyAbility_102612_OnCooldownTagUpdated) == 0x000010, "Wrong size on PyAbility_102612_OnCooldownTagUpdated");
-static_assert(offsetof(PyAbility_102612_OnCooldownTagUpdated, TagUpdated) == 0x000000, "Member 'PyAbility_102612_OnCooldownTagUpdated::TagUpdated' has a wrong offset!");
-static_assert(offsetof(PyAbility_102612_OnCooldownTagUpdated, TagExists) == 0x00000C, "Member 'PyAbility_102612_OnCooldownTagUpdated::TagExists' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102612_OnCooldownTagUpdated;
 
 }
 

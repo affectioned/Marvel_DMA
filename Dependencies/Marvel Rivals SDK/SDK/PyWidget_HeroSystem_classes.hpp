@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem.PyWidget_HeroSystem
-// 0x0078 (0x0670 - 0x05F8)
+// 0x0078 (0x0678 - 0x0600)
 class UPyWidget_HeroSystem final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                UnlockItemStyle;                                   // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                EquipItemTipsStyle;                                // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SelectTipsStyle;                                   // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                VideoPauseStyle;                                   // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                VideoPlayStyle;                                    // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                VideoRefreshStyle;                                 // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PrestigeScrollStyle;                               // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                UnlockItemStyle;                                   // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                EquipItemTipsStyle;                                // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SelectTipsStyle;                                   // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                VideoPauseStyle;                                   // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                VideoPlayStyle;                                    // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                VideoRefreshStyle;                                 // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PrestigeScrollStyle;                               // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,23 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem")
 	}
 	static class UPyWidget_HeroSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem");
-static_assert(sizeof(UPyWidget_HeroSystem) == 0x000670, "Wrong size on UPyWidget_HeroSystem");
-static_assert(offsetof(UPyWidget_HeroSystem, UnlockItemStyle) == 0x0005F8, "Member 'UPyWidget_HeroSystem::UnlockItemStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, EquipItemTipsStyle) == 0x000608, "Member 'UPyWidget_HeroSystem::EquipItemTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, SelectTipsStyle) == 0x000618, "Member 'UPyWidget_HeroSystem::SelectTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, VideoPauseStyle) == 0x000628, "Member 'UPyWidget_HeroSystem::VideoPauseStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, VideoPlayStyle) == 0x000638, "Member 'UPyWidget_HeroSystem::VideoPlayStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, VideoRefreshStyle) == 0x000648, "Member 'UPyWidget_HeroSystem::VideoRefreshStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, PrestigeScrollStyle) == 0x000658, "Member 'UPyWidget_HeroSystem::PrestigeScrollStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem, AkEvent_PersonalPanelClick) == 0x000668, "Member 'UPyWidget_HeroSystem::AkEvent_PersonalPanelClick' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem;
 
 }
 

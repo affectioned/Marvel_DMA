@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ShowItem_2DItemPanel.PyWidget_ShowItem_2DItemPanel
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_ShowItem_2DItemPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EItemType, struct FShowItemTypeWidgetClass> ItemTypeWidgetSoftClasses;                      // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EItemType, struct FShowItemTypeWidgetClass> ItemTypeWidgetSoftClasses;                      // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShowItem_2DItemPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ShowItem_2DItemPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShowItem_2DItemPanel")
 	}
 	static class UPyWidget_ShowItem_2DItemPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShowItem_2DItemPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ShowItem_2DItemPanel) == 0x000008, "Wrong alignment on UPyWidget_ShowItem_2DItemPanel");
-static_assert(sizeof(UPyWidget_ShowItem_2DItemPanel) == 0x000610, "Wrong size on UPyWidget_ShowItem_2DItemPanel");
-static_assert(offsetof(UPyWidget_ShowItem_2DItemPanel, ItemTypeWidgetSoftClasses) == 0x0005C0, "Member 'UPyWidget_ShowItem_2DItemPanel::ItemTypeWidgetSoftClasses' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShowItem_2DItemPanel;
 
 }
 

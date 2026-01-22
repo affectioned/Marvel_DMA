@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEndLSDataAsset">();
+		STATIC_CLASS_IMPL("PyEndLSDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEndLSDataAsset")
 	}
 	static class UPyEndLSDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEndLSDataAsset>();
 	}
 };
-static_assert(alignof(UPyEndLSDataAsset) == 0x000008, "Wrong alignment on UPyEndLSDataAsset");
-static_assert(sizeof(UPyEndLSDataAsset) == 0x0000D8, "Wrong size on UPyEndLSDataAsset");
-static_assert(offsetof(UPyEndLSDataAsset, SomatotypeLSs) == 0x000038, "Member 'UPyEndLSDataAsset::SomatotypeLSs' has a wrong offset!");
-static_assert(offsetof(UPyEndLSDataAsset, HeroLSs) == 0x000088, "Member 'UPyEndLSDataAsset::HeroLSs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEndLSDataAsset;
 
 // PythonClass PyLevelController_SelectHero_Wakanda.PyLevelController_SelectHero_Wakanda
 // 0x0020 (0x0830 - 0x0810)
@@ -59,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero_Wakanda">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero_Wakanda")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero_Wakanda")
 	}
 	static class APyLevelController_SelectHero_Wakanda* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelectHero_Wakanda>();
 	}
 };
-static_assert(alignof(APyLevelController_SelectHero_Wakanda) == 0x000010, "Wrong alignment on APyLevelController_SelectHero_Wakanda");
-static_assert(sizeof(APyLevelController_SelectHero_Wakanda) == 0x000830, "Wrong size on APyLevelController_SelectHero_Wakanda");
-static_assert(offsetof(APyLevelController_SelectHero_Wakanda, EndLSData) == 0x000810, "Member 'APyLevelController_SelectHero_Wakanda::EndLSData' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Wakanda, CineCam) == 0x000818, "Member 'APyLevelController_SelectHero_Wakanda::CineCam' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Wakanda, BlendTime) == 0x000820, "Member 'APyLevelController_SelectHero_Wakanda::BlendTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero_Wakanda;
 
 }
 

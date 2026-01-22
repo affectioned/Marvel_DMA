@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101431.PyBuffAbility_120_10143180
-// 0x03A0 (0x1710 - 0x1370)
+// 0x04E0 (0x1868 - 0x1388)
 class UPyBuffAbility_120_10143180 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         PenetrateCount;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpeedChangeCount;                                  // 0x1374(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       PenetrateTraceRule;                                // 0x1378(0x0398)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         PenetrateCount;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpeedChangeCount;                                  // 0x138C(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       PenetrateTraceRule;                                // 0x1390(0x04D8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -34,28 +34,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10143180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10143180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10143180")
 	}
 	static class UPyBuffAbility_120_10143180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10143180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10143180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10143180");
-static_assert(sizeof(UPyBuffAbility_120_10143180) == 0x001710, "Wrong size on UPyBuffAbility_120_10143180");
-static_assert(offsetof(UPyBuffAbility_120_10143180, PenetrateCount) == 0x001370, "Member 'UPyBuffAbility_120_10143180::PenetrateCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10143180, SpeedChangeCount) == 0x001374, "Member 'UPyBuffAbility_120_10143180::SpeedChangeCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10143180, PenetrateTraceRule) == 0x001378, "Member 'UPyBuffAbility_120_10143180::PenetrateTraceRule' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10143180;
 
 // PythonClass PyBuffAbility_120_101431.PyBuffAbility_120_10143181
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10143181 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ListenAbility;                                     // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraAmmoCount;                                    // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Angle_Offset;                                      // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ModeIndex;                                         // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ListenAbility;                                     // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraAmmoCount;                                    // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Angle_Offset;                                      // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ModeIndex;                                         // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -65,19 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10143181">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10143181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10143181")
 	}
 	static class UPyBuffAbility_120_10143181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10143181>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10143181) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10143181");
-static_assert(sizeof(UPyBuffAbility_120_10143181) == 0x001380, "Wrong size on UPyBuffAbility_120_10143181");
-static_assert(offsetof(UPyBuffAbility_120_10143181, ListenAbility) == 0x001370, "Member 'UPyBuffAbility_120_10143181::ListenAbility' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10143181, ExtraAmmoCount) == 0x001374, "Member 'UPyBuffAbility_120_10143181::ExtraAmmoCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10143181, Angle_Offset) == 0x001378, "Member 'UPyBuffAbility_120_10143181::Angle_Offset' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10143181, ModeIndex) == 0x00137C, "Member 'UPyBuffAbility_120_10143181::ModeIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10143181;
 
 }
 

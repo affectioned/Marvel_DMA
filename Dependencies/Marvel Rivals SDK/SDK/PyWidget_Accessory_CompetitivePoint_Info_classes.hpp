@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Accessory_CompetitivePoint_Info.PyWidget_CompetitionPoint_FullScreenPanel
-// 0x0120 (0x0718 - 0x05F8)
+// 0x0120 (0x0720 - 0x0600)
 class UPyWidget_CompetitionPoint_FullScreenPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x05F8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x0600(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,30 +36,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CompetitionPoint_FullScreenPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CompetitionPoint_FullScreenPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CompetitionPoint_FullScreenPanel")
 	}
 	static class UPyWidget_CompetitionPoint_FullScreenPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CompetitionPoint_FullScreenPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CompetitionPoint_FullScreenPanel) == 0x000008, "Wrong alignment on UPyWidget_CompetitionPoint_FullScreenPanel");
-static_assert(sizeof(UPyWidget_CompetitionPoint_FullScreenPanel) == 0x000718, "Wrong size on UPyWidget_CompetitionPoint_FullScreenPanel");
-static_assert(offsetof(UPyWidget_CompetitionPoint_FullScreenPanel, ReturnGuideTips) == 0x0005F8, "Member 'UPyWidget_CompetitionPoint_FullScreenPanel::ReturnGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CompetitionPoint_FullScreenPanel;
 
 // PythonClass PyWidget_Accessory_CompetitivePoint_Info.PyWidget_Accessory_CompetitivePoint_Info
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Accessory_CompetitivePoint_Info : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FullValueColor1;                                   // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LowValueColor1;                                    // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           GuideAction;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedInputAction;                                   // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultIsFocusable;                                // 0x05F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultShowRuleBtn;                                // 0x05F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FullValueColor1;                                   // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LowValueColor1;                                    // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           GuideAction;                                       // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedInputAction;                                   // 0x05F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultIsFocusable;                                // 0x05F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultShowRuleBtn;                                // 0x05FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -70,21 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Accessory_CompetitivePoint_Info">();
+		STATIC_CLASS_IMPL("PyWidget_Accessory_CompetitivePoint_Info")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Accessory_CompetitivePoint_Info")
 	}
 	static class UPyWidget_Accessory_CompetitivePoint_Info* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Accessory_CompetitivePoint_Info>();
 	}
 };
-static_assert(alignof(UPyWidget_Accessory_CompetitivePoint_Info) == 0x000008, "Wrong alignment on UPyWidget_Accessory_CompetitivePoint_Info");
-static_assert(sizeof(UPyWidget_Accessory_CompetitivePoint_Info) == 0x0005F8, "Wrong size on UPyWidget_Accessory_CompetitivePoint_Info");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, FullValueColor1) == 0x0005BC, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::FullValueColor1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, LowValueColor1) == 0x0005D0, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::LowValueColor1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, GuideAction) == 0x0005E8, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::GuideAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, NeedInputAction) == 0x0005F0, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::NeedInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, DefaultIsFocusable) == 0x0005F1, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::DefaultIsFocusable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Accessory_CompetitivePoint_Info, DefaultShowRuleBtn) == 0x0005F2, "Member 'UPyWidget_Accessory_CompetitivePoint_Info::DefaultShowRuleBtn' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Accessory_CompetitivePoint_Info;
 
 }
 

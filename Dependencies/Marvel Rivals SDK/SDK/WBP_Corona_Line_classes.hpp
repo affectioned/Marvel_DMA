@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Corona_Line_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Corona_Line_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Corona_Line_C")
 	}
 	static class UWBP_Corona_Line_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Corona_Line_C>();
 	}
 };
-static_assert(alignof(UWBP_Corona_Line_C) == 0x000008, "Wrong alignment on UWBP_Corona_Line_C");
-static_assert(sizeof(UWBP_Corona_Line_C) == 0x0003F0, "Wrong size on UWBP_Corona_Line_C");
-static_assert(offsetof(UWBP_Corona_Line_C, Anim_Loop_Arrow) == 0x0003B8, "Member 'UWBP_Corona_Line_C::Anim_Loop_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Anim_FadeIn_Arrow) == 0x0003C0, "Member 'UWBP_Corona_Line_C::Anim_FadeIn_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Img_Arrow) == 0x0003C8, "Member 'UWBP_Corona_Line_C::Img_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Img_Line) == 0x0003D0, "Member 'UWBP_Corona_Line_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Img_Point_Start) == 0x0003D8, "Member 'UWBP_Corona_Line_C::Img_Point_Start' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Img_Point_Target) == 0x0003E0, "Member 'UWBP_Corona_Line_C::Img_Point_Target' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Line_C, Overlay_Arrow) == 0x0003E8, "Member 'UWBP_Corona_Line_C::Overlay_Arrow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Corona_Line_C;
 
 }
 

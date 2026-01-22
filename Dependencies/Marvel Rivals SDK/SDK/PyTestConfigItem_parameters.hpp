@@ -21,9 +21,7 @@ struct PyTestConfigItem_ReceiveInit final
 public:
 	class UDevTestConfigSubsystem*                DevTestSystem;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTestConfigItem_ReceiveInit) == 0x000008, "Wrong alignment on PyTestConfigItem_ReceiveInit");
-static_assert(sizeof(PyTestConfigItem_ReceiveInit) == 0x000008, "Wrong size on PyTestConfigItem_ReceiveInit");
-static_assert(offsetof(PyTestConfigItem_ReceiveInit, DevTestSystem) == 0x000000, "Member 'PyTestConfigItem_ReceiveInit::DevTestSystem' has a wrong offset!");
+DUMPER7_ASSERTS_PyTestConfigItem_ReceiveInit;
 
 // PythonFunction PyTestConfigItem.PyTestConfigItem.ReceiveDeInit
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyTestConfigItem_ReceiveDeInit final
 public:
 	class UDevTestConfigSubsystem*                DevTestSystem;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTestConfigItem_ReceiveDeInit) == 0x000008, "Wrong alignment on PyTestConfigItem_ReceiveDeInit");
-static_assert(sizeof(PyTestConfigItem_ReceiveDeInit) == 0x000008, "Wrong size on PyTestConfigItem_ReceiveDeInit");
-static_assert(offsetof(PyTestConfigItem_ReceiveDeInit, DevTestSystem) == 0x000000, "Member 'PyTestConfigItem_ReceiveDeInit::DevTestSystem' has a wrong offset!");
+DUMPER7_ASSERTS_PyTestConfigItem_ReceiveDeInit;
 
 }
 

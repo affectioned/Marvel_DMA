@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyLevelSustainedEffectAbility.PyLevelSustainedEffectAbility
-// 0x0000 (0x1390 - 0x1390)
+// 0x0000 (0x13A8 - 0x13A8)
 class UPyLevelSustainedEffectAbility final : public ULevelSustainedDamageAndHealingAbility
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSustainedEffectAbility">();
+		STATIC_CLASS_IMPL("PyLevelSustainedEffectAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSustainedEffectAbility")
 	}
 	static class UPyLevelSustainedEffectAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSustainedEffectAbility>();
 	}
 };
-static_assert(alignof(UPyLevelSustainedEffectAbility) == 0x000008, "Wrong alignment on UPyLevelSustainedEffectAbility");
-static_assert(sizeof(UPyLevelSustainedEffectAbility) == 0x001390, "Wrong size on UPyLevelSustainedEffectAbility");
+DUMPER7_ASSERTS_UPyLevelSustainedEffectAbility;
 
 }
 

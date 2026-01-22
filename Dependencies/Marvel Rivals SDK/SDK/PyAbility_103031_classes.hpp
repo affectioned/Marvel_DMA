@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103031.PyCue_Ability_Loop_10303101
-// 0x0010 (0x11D0 - 0x11C0)
+// 0x0010 (0x11E0 - 0x11D0)
 class APyCue_Ability_Loop_10303101 final : public ACue_Ability_Loop_10303101
 {
 public:
-	class UAnimSequence*                          MoonWeaponAnim;                                    // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          MoonWeaponAnim;                                    // 0x11D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10303101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10303101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10303101")
 	}
 	static class APyCue_Ability_Loop_10303101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10303101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10303101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10303101");
-static_assert(sizeof(APyCue_Ability_Loop_10303101) == 0x0011D0, "Wrong size on APyCue_Ability_Loop_10303101");
-static_assert(offsetof(APyCue_Ability_Loop_10303101, MoonWeaponAnim) == 0x0011C0, "Member 'APyCue_Ability_Loop_10303101::MoonWeaponAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10303101;
 
 }
 

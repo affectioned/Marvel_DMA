@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MissionRefreshPanel.PyWidget_MissionRefreshPanel
-// 0x0240 (0x0838 - 0x05F8)
+// 0x0240 (0x0840 - 0x0600)
 class UPyWidget_MissionRefreshPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FGuideTipsStyle                        HoverListGuide;                                    // 0x05F8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        RefreshGuide;                                      // 0x0718(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        HoverListGuide;                                    // 0x0600(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        RefreshGuide;                                      // 0x0720(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MissionRefreshPanel">();
+		STATIC_CLASS_IMPL("PyWidget_MissionRefreshPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MissionRefreshPanel")
 	}
 	static class UPyWidget_MissionRefreshPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MissionRefreshPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_MissionRefreshPanel) == 0x000008, "Wrong alignment on UPyWidget_MissionRefreshPanel");
-static_assert(sizeof(UPyWidget_MissionRefreshPanel) == 0x000838, "Wrong size on UPyWidget_MissionRefreshPanel");
-static_assert(offsetof(UPyWidget_MissionRefreshPanel, HoverListGuide) == 0x0005F8, "Member 'UPyWidget_MissionRefreshPanel::HoverListGuide' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MissionRefreshPanel, RefreshGuide) == 0x000718, "Member 'UPyWidget_MissionRefreshPanel::RefreshGuide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MissionRefreshPanel;
 
 }
 

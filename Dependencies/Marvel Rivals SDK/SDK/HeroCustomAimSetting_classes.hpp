@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingHeroCustomAimSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingHeroCustomAimSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingHeroCustomAimSettingHandler")
 	}
 	static class UUISettingHeroCustomAimSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingHeroCustomAimSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingHeroCustomAimSettingHandler) == 0x000008, "Wrong alignment on UUISettingHeroCustomAimSettingHandler");
-static_assert(sizeof(UUISettingHeroCustomAimSettingHandler) == 0x000030, "Wrong size on UUISettingHeroCustomAimSettingHandler");
+DUMPER7_ASSERTS_UUISettingHeroCustomAimSettingHandler;
 
 }
 

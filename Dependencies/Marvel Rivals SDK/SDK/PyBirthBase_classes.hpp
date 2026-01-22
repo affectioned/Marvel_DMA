@@ -63,31 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBirthBase">();
+		STATIC_CLASS_IMPL("PyBirthBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBirthBase")
 	}
 	static class APyBirthBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBirthBase>();
 	}
 };
-static_assert(alignof(APyBirthBase) == 0x000010, "Wrong alignment on APyBirthBase");
-static_assert(sizeof(APyBirthBase) == 0x0009B0, "Wrong size on APyBirthBase");
-static_assert(offsetof(APyBirthBase, State) == 0x0008D0, "Member 'APyBirthBase::State' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, RespawnIndex) == 0x0008D4, "Member 'APyBirthBase::RespawnIndex' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, BattleSide) == 0x0008D8, "Member 'APyBirthBase::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, Index_0) == 0x0008DC, "Member 'APyBirthBase::Index_0' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, BirthDoors) == 0x0008E0, "Member 'APyBirthBase::BirthDoors' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, SRoomAudioAreaNo) == 0x0008F0, "Member 'APyBirthBase::SRoomAudioAreaNo' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, TRoomAudioAreaNo) == 0x0008F4, "Member 'APyBirthBase::TRoomAudioAreaNo' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, SRoomBanAudioAreaNo) == 0x0008F8, "Member 'APyBirthBase::SRoomBanAudioAreaNo' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, TRoomBanAudioAreaNo) == 0x0008FC, "Member 'APyBirthBase::TRoomBanAudioAreaNo' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, BlockAbilityList) == 0x000900, "Member 'APyBirthBase::BlockAbilityList' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, DoorList) == 0x000910, "Member 'APyBirthBase::DoorList' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, CheckEnemyInterval) == 0x000920, "Member 'APyBirthBase::CheckEnemyInterval' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, SwitchTimer) == 0x000928, "Member 'APyBirthBase::SwitchTimer' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, SwitchDurationTime) == 0x0009A0, "Member 'APyBirthBase::SwitchDurationTime' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, SwitchAbilityBuffID) == 0x0009A4, "Member 'APyBirthBase::SwitchAbilityBuffID' has a wrong offset!");
-static_assert(offsetof(APyBirthBase, bForceUpdateTransCache) == 0x0009A8, "Member 'APyBirthBase::bForceUpdateTransCache' has a wrong offset!");
+DUMPER7_ASSERTS_APyBirthBase;
 
 }
 

@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingBatchPickHero.PyWidget_SettingBatchPickHero
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_SettingBatchPickHero final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                CharacterItemClass;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LineCount;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayShowTime;                                     // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RowAnimInterval;                                   // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LineAnimInterval;                                  // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayCloseTime;                                    // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                CharacterItemClass;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LineCount;                                         // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayShowTime;                                     // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RowAnimInterval;                                   // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LineAnimInterval;                                  // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayCloseTime;                                    // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingBatchPickHero">();
+		STATIC_CLASS_IMPL("PyWidget_SettingBatchPickHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingBatchPickHero")
 	}
 	static class UPyWidget_SettingBatchPickHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingBatchPickHero>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingBatchPickHero) == 0x000008, "Wrong alignment on UPyWidget_SettingBatchPickHero");
-static_assert(sizeof(UPyWidget_SettingBatchPickHero) == 0x000618, "Wrong size on UPyWidget_SettingBatchPickHero");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, CharacterItemClass) == 0x0005F8, "Member 'UPyWidget_SettingBatchPickHero::CharacterItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, LineCount) == 0x000600, "Member 'UPyWidget_SettingBatchPickHero::LineCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, DelayShowTime) == 0x000604, "Member 'UPyWidget_SettingBatchPickHero::DelayShowTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, RowAnimInterval) == 0x000608, "Member 'UPyWidget_SettingBatchPickHero::RowAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, LineAnimInterval) == 0x00060C, "Member 'UPyWidget_SettingBatchPickHero::LineAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingBatchPickHero, DelayCloseTime) == 0x000610, "Member 'UPyWidget_SettingBatchPickHero::DelayCloseTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingBatchPickHero;
 
 }
 

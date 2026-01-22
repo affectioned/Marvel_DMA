@@ -24,9 +24,7 @@ struct PyTokyoE01SpiderZero_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoE01SpiderZero_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyTokyoE01SpiderZero_ReceiveEndPlay");
-static_assert(sizeof(PyTokyoE01SpiderZero_ReceiveEndPlay) == 0x000001, "Wrong size on PyTokyoE01SpiderZero_ReceiveEndPlay");
-static_assert(offsetof(PyTokyoE01SpiderZero_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyTokyoE01SpiderZero_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoE01SpiderZero_ReceiveEndPlay;
 
 // PythonFunction PyTokyoE01SpiderZero.PyTokyoE01SpiderZero.OnPayloadActivate
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyTokyoE01SpiderZero_OnPayloadActivate final
 public:
 	class AActor*                                 Payload;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoE01SpiderZero_OnPayloadActivate) == 0x000008, "Wrong alignment on PyTokyoE01SpiderZero_OnPayloadActivate");
-static_assert(sizeof(PyTokyoE01SpiderZero_OnPayloadActivate) == 0x000008, "Wrong size on PyTokyoE01SpiderZero_OnPayloadActivate");
-static_assert(offsetof(PyTokyoE01SpiderZero_OnPayloadActivate, Payload) == 0x000000, "Member 'PyTokyoE01SpiderZero_OnPayloadActivate::Payload' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoE01SpiderZero_OnPayloadActivate;
 
 // PythonFunction PyTokyoE01SpiderZero.PyTokyoE01SpiderZero.PayloadOwnerChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyTokyoE01SpiderZero_PayloadOwnerChanged final
 public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoE01SpiderZero_PayloadOwnerChanged) == 0x000001, "Wrong alignment on PyTokyoE01SpiderZero_PayloadOwnerChanged");
-static_assert(sizeof(PyTokyoE01SpiderZero_PayloadOwnerChanged) == 0x000001, "Wrong size on PyTokyoE01SpiderZero_PayloadOwnerChanged");
-static_assert(offsetof(PyTokyoE01SpiderZero_PayloadOwnerChanged, BattleSide) == 0x000000, "Member 'PyTokyoE01SpiderZero_PayloadOwnerChanged::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoE01SpiderZero_PayloadOwnerChanged;
 
 // PythonFunction PyTokyoE01SpiderZero.PyTokyoE01SpiderZero.OnAttackPlayerEnterPayload
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +51,7 @@ struct PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload final
 public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload) == 0x000004, "Wrong alignment on PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload");
-static_assert(sizeof(PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload) == 0x000004, "Wrong size on PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload");
-static_assert(offsetof(PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload, UID) == 0x000000, "Member 'PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload::UID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoE01SpiderZero_OnAttackPlayerEnterPayload;
 
 // PythonFunction PyTokyoE01SpiderZero.PyTokyoE01SpiderZero.PyGetDefaultAkComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +60,7 @@ struct PyTokyoE01SpiderZero_PyGetDefaultAkComponent final
 public:
 	class UAkComponent*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoE01SpiderZero_PyGetDefaultAkComponent) == 0x000008, "Wrong alignment on PyTokyoE01SpiderZero_PyGetDefaultAkComponent");
-static_assert(sizeof(PyTokyoE01SpiderZero_PyGetDefaultAkComponent) == 0x000008, "Wrong size on PyTokyoE01SpiderZero_PyGetDefaultAkComponent");
-static_assert(offsetof(PyTokyoE01SpiderZero_PyGetDefaultAkComponent, ReturnValue) == 0x000000, "Member 'PyTokyoE01SpiderZero_PyGetDefaultAkComponent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoE01SpiderZero_PyGetDefaultAkComponent;
 
 }
 

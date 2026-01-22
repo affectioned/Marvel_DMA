@@ -50,11 +50,7 @@ public:
 	class UNiagaraSystem*                         HitCharacterNiagaraInVampire;                      // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNiagaraSystem*                         HitSceneNiagaraInVampire;                          // 0x0038(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCue_NiagaraAsset_BladeHit) == 0x000008, "Wrong alignment on FCue_NiagaraAsset_BladeHit");
-static_assert(sizeof(FCue_NiagaraAsset_BladeHit) == 0x000040, "Wrong size on FCue_NiagaraAsset_BladeHit");
-static_assert(offsetof(FCue_NiagaraAsset_BladeHit, InVampireTag) == 0x000020, "Member 'FCue_NiagaraAsset_BladeHit::InVampireTag' has a wrong offset!");
-static_assert(offsetof(FCue_NiagaraAsset_BladeHit, HitCharacterNiagaraInVampire) == 0x000030, "Member 'FCue_NiagaraAsset_BladeHit::HitCharacterNiagaraInVampire' has a wrong offset!");
-static_assert(offsetof(FCue_NiagaraAsset_BladeHit, HitSceneNiagaraInVampire) == 0x000038, "Member 'FCue_NiagaraAsset_BladeHit::HitSceneNiagaraInVampire' has a wrong offset!");
+DUMPER7_ASSERTS_FCue_NiagaraAsset_BladeHit;
 
 // ScriptStruct Hero_1044.BladeDashPathSegInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -64,10 +60,7 @@ public:
 	struct FVector                                StartLoc;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EndLoc;                                            // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBladeDashPathSegInfo) == 0x000008, "Wrong alignment on FBladeDashPathSegInfo");
-static_assert(sizeof(FBladeDashPathSegInfo) == 0x000030, "Wrong size on FBladeDashPathSegInfo");
-static_assert(offsetof(FBladeDashPathSegInfo, StartLoc) == 0x000000, "Member 'FBladeDashPathSegInfo::StartLoc' has a wrong offset!");
-static_assert(offsetof(FBladeDashPathSegInfo, EndLoc) == 0x000018, "Member 'FBladeDashPathSegInfo::EndLoc' has a wrong offset!");
+DUMPER7_ASSERTS_FBladeDashPathSegInfo;
 
 }
 

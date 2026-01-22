@@ -7,7 +7,7 @@
 #include "Player List/Player List.h"
 
 std::vector<uintptr_t> m_AllActors{};
-std::vector<uint32_t> m_TypeCheck{};
+
 void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 {
 	auto& Actors = Marvel::m_Actors;
@@ -35,12 +35,12 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 		return;
 	}
 
-	m_TypeCheck.resize(m_AllActors.size());
+	std::vector<uintptr_t> rootComponents(m_AllActors.size());
 
 	for (size_t i = 0; i < m_AllActors.size(); i++)
 	{
-		uintptr_t TypeFlagsPtr = m_AllActors[i] + Offsets::Actor::TypeCheck;
-		VMMDLL_Scatter_PrepareEx(vmsh, TypeFlagsPtr, sizeof(uint32_t), reinterpret_cast<BYTE*>(&m_TypeCheck[i]), nullptr);
+		uintptr_t RootComponentPtr = m_AllActors[i] + offsetof(SDK::AActor, RootComponent);
+		VMMDLL_Scatter_PrepareEx(vmsh, RootComponentPtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&rootComponents[i]), nullptr);
 	}
 
 	VMMDLL_Scatter_Execute(vmsh);
@@ -52,9 +52,11 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 	for (size_t i = 0; i < m_AllActors.size(); i++)
 	{
 		auto& ActorAddr = m_AllActors[i];
-		auto& TypeCheck = m_TypeCheck[i];
+		auto& RootComponent = rootComponents[i];
 
-		if (TypeCheck == 0x100)
-			PlayerList::m_PlayerAddresses.push_back(ActorAddr);
+		if (!RootComponent)
+			continue;
+
+		PlayerList::m_PlayerAddresses.push_back(ActorAddr);
 	}
 }

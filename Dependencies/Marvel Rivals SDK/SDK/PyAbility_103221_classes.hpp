@@ -19,36 +19,34 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103221.PyConfig_103221
-// 0x0030 (0x1760 - 0x1730)
+// 0x0030 (0x1AB0 - 0x1A80)
 class UPyConfig_103221 final : public UConfig_103221
 {
 public:
-	class UCurveFloat*                            ProjectileCurve;                                   // 0x1730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            MeshCurve;                                         // 0x1738(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                CustomInitLocationOffset;                          // 0x1740(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x1758(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UIChargeTime;                                      // 0x175C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ProjectileCurve;                                   // 0x1A80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            MeshCurve;                                         // 0x1A88(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                CustomInitLocationOffset;                          // 0x1A90(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1AA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UIChargeTime;                                      // 0x1AAC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103221">();
+		STATIC_CLASS_IMPL("PyConfig_103221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103221")
 	}
 	static class UPyConfig_103221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103221>();
 	}
 };
-static_assert(alignof(UPyConfig_103221) == 0x000010, "Wrong alignment on UPyConfig_103221");
-static_assert(sizeof(UPyConfig_103221) == 0x001760, "Wrong size on UPyConfig_103221");
-static_assert(offsetof(UPyConfig_103221, ProjectileCurve) == 0x001730, "Member 'UPyConfig_103221::ProjectileCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103221, MeshCurve) == 0x001738, "Member 'UPyConfig_103221::MeshCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103221, CustomInitLocationOffset) == 0x001740, "Member 'UPyConfig_103221::CustomInitLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103221, ProjectileID) == 0x001758, "Member 'UPyConfig_103221::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103221, UIChargeTime) == 0x00175C, "Member 'UPyConfig_103221::UIChargeTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103221;
 
 // PythonClass PyAbility_103221.PyCue_Ability_Loop_10323203
-// 0x0000 (0x2260 - 0x2260)
+// 0x0000 (0x26D0 - 0x26D0)
 class APyCue_Ability_Loop_10323203 final : public ACue_Ability_Loop_10322103
 {
 public:
@@ -58,18 +56,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10323203">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10323203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10323203")
 	}
 	static class APyCue_Ability_Loop_10323203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10323203>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10323203) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10323203");
-static_assert(sizeof(APyCue_Ability_Loop_10323203) == 0x002260, "Wrong size on APyCue_Ability_Loop_10323203");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10323203;
 
 // PythonClass PyAbility_103221.PyUIController_103221
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_103221 final : public UUIC_Ability
 {
 public:
@@ -80,18 +81,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103221">();
+		STATIC_CLASS_IMPL("PyUIController_103221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103221")
 	}
 	static class UPyUIController_103221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103221>();
 	}
 };
-static_assert(alignof(UPyUIController_103221) == 0x000008, "Wrong alignment on UPyUIController_103221");
-static_assert(sizeof(UPyUIController_103221) == 0x000F10, "Wrong size on UPyUIController_103221");
+DUMPER7_ASSERTS_UPyUIController_103221;
 
 // PythonClass PyAbility_103221.PyCue_Projectile_Loop_10322101
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10322101 final : public AMarvelCueNotify_Projectile
 {
 public:
@@ -100,23 +104,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10322101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10322101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10322101")
 	}
 	static class APyCue_Projectile_Loop_10322101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10322101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10322101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10322101");
-static_assert(sizeof(APyCue_Projectile_Loop_10322101) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10322101");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10322101;
 
 // PythonClass PyAbility_103221.PyCue_Ability_Loop_10322102
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_Loop_10322102 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UAnimationAsset*                        AnimToPlay;                                        // 0x11B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        AnimToEnd;                                         // 0x11B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        AnimToPlay;                                        // 0x11C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        AnimToEnd;                                         // 0x11C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -127,25 +134,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10322102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10322102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10322102")
 	}
 	static class APyCue_Ability_Loop_10322102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10322102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10322102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10322102");
-static_assert(sizeof(APyCue_Ability_Loop_10322102) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10322102");
-static_assert(offsetof(APyCue_Ability_Loop_10322102, AnimToPlay) == 0x0011B0, "Member 'APyCue_Ability_Loop_10322102::AnimToPlay' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10322102, AnimToEnd) == 0x0011B8, "Member 'APyCue_Ability_Loop_10322102::AnimToEnd' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10322102;
 
 // PythonClass PyAbility_103221.PyProjectile_10322101
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_10322101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ChargeTime;                                        // 0x3B90(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ChargeTime;                                        // 0x3EA0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -153,31 +161,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10322101">();
+		STATIC_CLASS_IMPL("PyProjectile_10322101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10322101")
 	}
 	static class APyProjectile_10322101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10322101>();
 	}
 };
-static_assert(alignof(APyProjectile_10322101) == 0x000010, "Wrong alignment on APyProjectile_10322101");
-static_assert(sizeof(APyProjectile_10322101) == 0x003BA0, "Wrong size on APyProjectile_10322101");
-static_assert(offsetof(APyProjectile_10322101, ChargeTime) == 0x003B90, "Member 'APyProjectile_10322101::ChargeTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10322101;
 
 // PythonClass PyAbility_103221.PyCue_Buff_10322101
-// 0x0020 (0x1660 - 0x1640)
+// 0x0020 (0x1710 - 0x16F0)
 class APyCue_Buff_10322101 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SquirrelRadiusRadio;                               // 0x1640(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HaloRadiusRadio;                                   // 0x1644(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAdaptTerrain;                                    // 0x1648(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1649[0x3];                                     // 0x1649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TerrainDetectDistance;                             // 0x164C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpdateFrequnency;                                  // 0x1650(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1654[0x4];                                     // 0x1654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         BuffEndFX;                                         // 0x1658(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SquirrelRadiusRadio;                               // 0x16F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HaloRadiusRadio;                                   // 0x16F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAdaptTerrain;                                    // 0x16F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16F9[0x3];                                     // 0x16F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TerrainDetectDistance;                             // 0x16FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpdateFrequnency;                                  // 0x1700(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1704[0x4];                                     // 0x1704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         BuffEndFX;                                         // 0x1708(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -186,28 +196,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10322101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10322101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10322101")
 	}
 	static class APyCue_Buff_10322101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10322101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10322101) == 0x000010, "Wrong alignment on APyCue_Buff_10322101");
-static_assert(sizeof(APyCue_Buff_10322101) == 0x001660, "Wrong size on APyCue_Buff_10322101");
-static_assert(offsetof(APyCue_Buff_10322101, SquirrelRadiusRadio) == 0x001640, "Member 'APyCue_Buff_10322101::SquirrelRadiusRadio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10322101, HaloRadiusRadio) == 0x001644, "Member 'APyCue_Buff_10322101::HaloRadiusRadio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10322101, IsAdaptTerrain) == 0x001648, "Member 'APyCue_Buff_10322101::IsAdaptTerrain' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10322101, TerrainDetectDistance) == 0x00164C, "Member 'APyCue_Buff_10322101::TerrainDetectDistance' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10322101, UpdateFrequnency) == 0x001650, "Member 'APyCue_Buff_10322101::UpdateFrequnency' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10322101, BuffEndFX) == 0x001658, "Member 'APyCue_Buff_10322101::BuffEndFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10322101;
 
 // PythonClass PyAbility_103221.PyAbility_103221
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_103221 : public UAbility_103221
 {
 public:
-	TMulticastInlineDelegate<void()>              OnGatherStop;                                      // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnGatherStop;                                      // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -224,16 +231,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103221">();
+		STATIC_CLASS_IMPL("PyAbility_103221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103221")
 	}
 	static class UPyAbility_103221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103221>();
 	}
 };
-static_assert(alignof(UPyAbility_103221) == 0x000008, "Wrong alignment on UPyAbility_103221");
-static_assert(sizeof(UPyAbility_103221) == 0x002A00, "Wrong size on UPyAbility_103221");
-static_assert(offsetof(UPyAbility_103221, OnGatherStop) == 0x0029F0, "Member 'UPyAbility_103221::OnGatherStop' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103221;
 
 }
 

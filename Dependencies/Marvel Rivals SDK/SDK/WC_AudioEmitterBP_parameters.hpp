@@ -21,9 +21,7 @@ struct WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP) == 0x000004, "Wrong alignment on WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP");
-static_assert(sizeof(WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP) == 0x000004, "Wrong size on WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP");
-static_assert(offsetof(WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP, EntryPoint) == 0x000000, "Member 'WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WC_AudioEmitterBP_C_ExecuteUbergraph_WC_AudioEmitterBP;
 
 }
 

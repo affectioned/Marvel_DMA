@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BatchReplaceKeyHeroTip.PyWidget_BatchReplaceKeyHeroTip
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_BatchReplaceKeyHeroTip final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ViewTipOffset;                                     // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                TipItemClass;                                      // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ViewTipOffset;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                TipItemClass;                                      // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,20 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BatchReplaceKeyHeroTip">();
+		STATIC_CLASS_IMPL("PyWidget_BatchReplaceKeyHeroTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BatchReplaceKeyHeroTip")
 	}
 	static class UPyWidget_BatchReplaceKeyHeroTip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BatchReplaceKeyHeroTip>();
 	}
 };
-static_assert(alignof(UPyWidget_BatchReplaceKeyHeroTip) == 0x000008, "Wrong alignment on UPyWidget_BatchReplaceKeyHeroTip");
-static_assert(sizeof(UPyWidget_BatchReplaceKeyHeroTip) == 0x0005D8, "Wrong size on UPyWidget_BatchReplaceKeyHeroTip");
-static_assert(offsetof(UPyWidget_BatchReplaceKeyHeroTip, ViewTipOffset) == 0x0005C0, "Member 'UPyWidget_BatchReplaceKeyHeroTip::ViewTipOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BatchReplaceKeyHeroTip, TipItemClass) == 0x0005D0, "Member 'UPyWidget_BatchReplaceKeyHeroTip::TipItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BatchReplaceKeyHeroTip;
 
 // PythonClass PyWidget_BatchReplaceKeyHeroTip.PyWidget_BatchReplaceKeyHeroTipItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BatchReplaceKeyHeroTipItem final : public UPyMarvelUserWidget
 {
 public:
@@ -59,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BatchReplaceKeyHeroTipItem">();
+		STATIC_CLASS_IMPL("PyWidget_BatchReplaceKeyHeroTipItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BatchReplaceKeyHeroTipItem")
 	}
 	static class UPyWidget_BatchReplaceKeyHeroTipItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BatchReplaceKeyHeroTipItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BatchReplaceKeyHeroTipItem) == 0x000008, "Wrong alignment on UPyWidget_BatchReplaceKeyHeroTipItem");
-static_assert(sizeof(UPyWidget_BatchReplaceKeyHeroTipItem) == 0x0005C0, "Wrong size on UPyWidget_BatchReplaceKeyHeroTipItem");
+DUMPER7_ASSERTS_UPyWidget_BatchReplaceKeyHeroTipItem;
 
 }
 

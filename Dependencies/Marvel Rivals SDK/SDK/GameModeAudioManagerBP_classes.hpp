@@ -23,15 +23,18 @@ class UGameModeAudioManagerBP_C final : public UPyGamemodeAudioMgr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GameModeAudioManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("GameModeAudioManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameModeAudioManagerBP_C")
 	}
 	static class UGameModeAudioManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameModeAudioManagerBP_C>();
 	}
 };
-static_assert(alignof(UGameModeAudioManagerBP_C) == 0x000008, "Wrong alignment on UGameModeAudioManagerBP_C");
-static_assert(sizeof(UGameModeAudioManagerBP_C) == 0x0008D8, "Wrong size on UGameModeAudioManagerBP_C");
+DUMPER7_ASSERTS_UGameModeAudioManagerBP_C;
 
 }
 

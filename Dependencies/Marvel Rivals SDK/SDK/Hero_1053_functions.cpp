@@ -17,35 +17,6 @@
 namespace SDK
 {
 
-// Function Hero_1053.BuffAbility_10536101.OnGameplayEffectStackChange
-// (Final, Native, Public)
-// Parameters:
-// const struct FActiveGameplayEffectHandle&Handle                                                 (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NewCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   OldCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBuffAbility_10536101::OnGameplayEffectStackChange(const struct FActiveGameplayEffectHandle& Handle, int32 NewCount, int32 OldCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuffAbility_10536101", "OnGameplayEffectStackChange");
-
-	Params::BuffAbility_10536101_OnGameplayEffectStackChange Parms{};
-
-	Parms.Handle = std::move(Handle);
-	Parms.NewCount = NewCount;
-	Parms.OldCount = OldCount;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1053.EffectiveComponent_10532101_Base.K2_OnPreApplyContainer
 // (Native, Public, HasOutParams)
 // Parameters:
@@ -175,6 +146,35 @@ class UMarvelAbilityTask_WaitAbilityTargetData* UAbilityTask_105331::CreateAbili
 }
 
 
+// Function Hero_1053.BuffAbility_10536101.OnGameplayEffectStackChange
+// (Final, Native, Public)
+// Parameters:
+// const struct FActiveGameplayEffectHandle&Handle                                                 (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NewCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   OldCount                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBuffAbility_10536101::OnGameplayEffectStackChange(const struct FActiveGameplayEffectHandle& Handle, int32 NewCount, int32 OldCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuffAbility_10536101", "OnGameplayEffectStackChange");
+
+	Params::BuffAbility_10536101_OnGameplayEffectStackChange Parms{};
+
+	Parms.Handle = std::move(Handle);
+	Parms.NewCount = NewCount;
+	Parms.OldCount = OldCount;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1053.BuffAbility_10536102.OnGameplayTagUpdate
 // (Final, Native, Protected, HasOutParams)
 // Parameters:
@@ -192,6 +192,63 @@ void UBuffAbility_10536102::OnGameplayTagUpdate(const struct FGameplayTag& InTag
 
 	Parms.InTag = std::move(InTag);
 	Parms.bExist = bExist;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1053.Ability_105392.CheckPointValid
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const struct FStructCheckPoint&         MainPoint                                              (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const TArray<struct FStructCheckPoint>& BackCheckPoints                                        (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// const TArray<struct FStructCheckPoint>& FrontCheckPoints                                       (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// struct FStructCheckPoint                ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FStructCheckPoint UAbility_105392::CheckPointValid(const struct FStructCheckPoint& MainPoint, const TArray<struct FStructCheckPoint>& BackCheckPoints, const TArray<struct FStructCheckPoint>& FrontCheckPoints)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_105392", "CheckPointValid");
+
+	Params::Ability_105392_CheckPointValid Parms{};
+
+	Parms.MainPoint = std::move(MainPoint);
+	Parms.BackCheckPoints = std::move(BackCheckPoints);
+	Parms.FrontCheckPoints = std::move(FrontCheckPoints);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1053.Ability_105392.PushMovable
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FTransform&                Transform                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_105392::PushMovable(const struct FTransform& Transform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_105392", "PushMovable");
+
+	Params::Ability_105392_PushMovable Parms{};
+
+	Parms.Transform = std::move(Transform);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

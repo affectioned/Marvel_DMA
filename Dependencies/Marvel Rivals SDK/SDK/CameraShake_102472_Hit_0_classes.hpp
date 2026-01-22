@@ -23,15 +23,18 @@ class CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C final : public ULegacy
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass CameraShake_102472_Hit.CameraShake_102472_Hit_C", true, "CameraShake_102472_Hit_C">();
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass CameraShake_102472_Hit.CameraShake_102472_Hit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraShake_102472_Hit_C")
 	}
 	static class CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C>();
 	}
 };
-static_assert(alignof(CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C) == 0x000010, "Wrong alignment on CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C");
-static_assert(sizeof(CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C) == 0x0002B0, "Wrong size on CameraShake_102472_Hit_0::UCameraShake_102472_Hit_C");
+DUMPER7_ASSERTS_CameraShake_102472_Hit_0__UCameraShake_102472_Hit_C;
 
 }
 

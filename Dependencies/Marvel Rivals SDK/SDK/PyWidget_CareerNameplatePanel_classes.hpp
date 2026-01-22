@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_CareerNameplatePanel.PyWidget_CareerNameplatePanel
-// 0x02D8 (0x08D8 - 0x0600)
+// 0x02D8 (0x08E0 - 0x0608)
 class UPyWidget_CareerNameplatePanel final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
-	struct FGuideTipsStyle                        EquipGuideTipsStyle;                               // 0x0600(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        UnlockGuideTipsStyle;                              // 0x0720(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           ShowHonorAction;                                   // 0x0840(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ShowLeagueAction;                                  // 0x0848(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EItemQualityType, class UTexture2D*>     QualityIconMap;                                    // 0x0850(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             HonorEmptyIcon;                                    // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EquipHonorColor;                                   // 0x08A8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UnequipHonorColor;                                 // 0x08BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_HonorClick;                                // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        EquipGuideTipsStyle;                               // 0x0608(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        UnlockGuideTipsStyle;                              // 0x0728(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           ShowHonorAction;                                   // 0x0848(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ShowLeagueAction;                                  // 0x0850(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EItemQualityType, class UTexture2D*>     QualityIconMap;                                    // 0x0858(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             HonorEmptyIcon;                                    // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EquipHonorColor;                                   // 0x08B0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UnequipHonorColor;                                 // 0x08C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_HonorClick;                                // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerNameplatePanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerNameplatePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerNameplatePanel")
 	}
 	static class UPyWidget_CareerNameplatePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerNameplatePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerNameplatePanel) == 0x000008, "Wrong alignment on UPyWidget_CareerNameplatePanel");
-static_assert(sizeof(UPyWidget_CareerNameplatePanel) == 0x0008D8, "Wrong size on UPyWidget_CareerNameplatePanel");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, EquipGuideTipsStyle) == 0x000600, "Member 'UPyWidget_CareerNameplatePanel::EquipGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, UnlockGuideTipsStyle) == 0x000720, "Member 'UPyWidget_CareerNameplatePanel::UnlockGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, ShowHonorAction) == 0x000840, "Member 'UPyWidget_CareerNameplatePanel::ShowHonorAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, ShowLeagueAction) == 0x000848, "Member 'UPyWidget_CareerNameplatePanel::ShowLeagueAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, QualityIconMap) == 0x000850, "Member 'UPyWidget_CareerNameplatePanel::QualityIconMap' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, HonorEmptyIcon) == 0x0008A0, "Member 'UPyWidget_CareerNameplatePanel::HonorEmptyIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, EquipHonorColor) == 0x0008A8, "Member 'UPyWidget_CareerNameplatePanel::EquipHonorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, UnequipHonorColor) == 0x0008BC, "Member 'UPyWidget_CareerNameplatePanel::UnequipHonorColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerNameplatePanel, AKEvent_HonorClick) == 0x0008D0, "Member 'UPyWidget_CareerNameplatePanel::AKEvent_HonorClick' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerNameplatePanel;
 
 }
 

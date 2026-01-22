@@ -23,9 +23,7 @@ struct PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished fin
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnAnimationFinished;
 
 // PythonFunction PyWidget_Halloween_MilitaryPreparedness_GiftSkill.PyWidget_Halloween_MilitaryPreparedness_GiftSkill.OnMouseEnter
 // 0x00B8 (0x00B8 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter");
-static_assert(sizeof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter");
-static_assert(offsetof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseEnter;
 
 // PythonFunction PyWidget_Halloween_MilitaryPreparedness_GiftSkill.PyWidget_Halloween_MilitaryPreparedness_GiftSkill.OnMouseLeave
 // 0x0080 (0x0080 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave) == 0x000008, "Wrong alignment on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave");
-static_assert(sizeof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave) == 0x000080, "Wrong size on PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave");
-static_assert(offsetof(PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_MilitaryPreparedness_GiftSkill_OnMouseLeave;
 
 }
 

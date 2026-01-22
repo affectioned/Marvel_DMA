@@ -23,9 +23,7 @@ struct PySpaceVehicle_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicle_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpaceVehicle_ReceiveEndPlay");
-static_assert(sizeof(PySpaceVehicle_ReceiveEndPlay) == 0x000001, "Wrong size on PySpaceVehicle_ReceiveEndPlay");
-static_assert(offsetof(PySpaceVehicle_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PySpaceVehicle_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicle_ReceiveEndPlay;
 
 // PythonFunction PySpaceVehicle.PySpaceVehicle.OnControlStartUnlock
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PySpaceVehicle_OnControlStartUnlock final
 public:
 	class AActor*                                 control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicle_OnControlStartUnlock) == 0x000008, "Wrong alignment on PySpaceVehicle_OnControlStartUnlock");
-static_assert(sizeof(PySpaceVehicle_OnControlStartUnlock) == 0x000008, "Wrong size on PySpaceVehicle_OnControlStartUnlock");
-static_assert(offsetof(PySpaceVehicle_OnControlStartUnlock, control) == 0x000000, "Member 'PySpaceVehicle_OnControlStartUnlock::control' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicle_OnControlStartUnlock;
 
 // PythonFunction PySpaceVehicle.PySpaceVehicle.OnControlFightStart
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PySpaceVehicle_OnControlFightStart final
 public:
 	class AActor*                                 control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicle_OnControlFightStart) == 0x000008, "Wrong alignment on PySpaceVehicle_OnControlFightStart");
-static_assert(sizeof(PySpaceVehicle_OnControlFightStart) == 0x000008, "Wrong size on PySpaceVehicle_OnControlFightStart");
-static_assert(offsetof(PySpaceVehicle_OnControlFightStart, control) == 0x000000, "Member 'PySpaceVehicle_OnControlFightStart::control' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicle_OnControlFightStart;
 
 // PythonFunction PySpaceVehicle.PySpaceVehicle.SrvSetFrame
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PySpaceVehicle_SrvSetFrame final
 public:
 	float                                         frame;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicle_SrvSetFrame) == 0x000004, "Wrong alignment on PySpaceVehicle_SrvSetFrame");
-static_assert(sizeof(PySpaceVehicle_SrvSetFrame) == 0x000004, "Wrong size on PySpaceVehicle_SrvSetFrame");
-static_assert(offsetof(PySpaceVehicle_SrvSetFrame, frame) == 0x000000, "Member 'PySpaceVehicle_SrvSetFrame::frame' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicle_SrvSetFrame;
 
 // PythonFunction PySpaceVehicle.PySpaceVehiclAnimNotify.Received_Notify
 // 0x0048 (0x0048 - 0x0000)
@@ -70,12 +62,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehiclAnimNotify_Received_Notify) == 0x000008, "Wrong alignment on PySpaceVehiclAnimNotify_Received_Notify");
-static_assert(sizeof(PySpaceVehiclAnimNotify_Received_Notify) == 0x000048, "Wrong size on PySpaceVehiclAnimNotify_Received_Notify");
-static_assert(offsetof(PySpaceVehiclAnimNotify_Received_Notify, MeshComp) == 0x000000, "Member 'PySpaceVehiclAnimNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(PySpaceVehiclAnimNotify_Received_Notify, Animation) == 0x000008, "Member 'PySpaceVehiclAnimNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(PySpaceVehiclAnimNotify_Received_Notify, EventReference) == 0x000010, "Member 'PySpaceVehiclAnimNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(PySpaceVehiclAnimNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'PySpaceVehiclAnimNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehiclAnimNotify_Received_Notify;
 
 // PythonFunction PySpaceVehicle.PySpaceVehicleAinmEndNotify.Received_Notify
 // 0x0048 (0x0048 - 0x0000)
@@ -87,12 +74,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicleAinmEndNotify_Received_Notify) == 0x000008, "Wrong alignment on PySpaceVehicleAinmEndNotify_Received_Notify");
-static_assert(sizeof(PySpaceVehicleAinmEndNotify_Received_Notify) == 0x000048, "Wrong size on PySpaceVehicleAinmEndNotify_Received_Notify");
-static_assert(offsetof(PySpaceVehicleAinmEndNotify_Received_Notify, MeshComp) == 0x000000, "Member 'PySpaceVehicleAinmEndNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleAinmEndNotify_Received_Notify, Animation) == 0x000008, "Member 'PySpaceVehicleAinmEndNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleAinmEndNotify_Received_Notify, EventReference) == 0x000010, "Member 'PySpaceVehicleAinmEndNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleAinmEndNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'PySpaceVehicleAinmEndNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicleAinmEndNotify_Received_Notify;
 
 // PythonFunction PySpaceVehicle.PySpaceVehicleNoCollisionAnimNotify.Received_Notify
 // 0x0048 (0x0048 - 0x0000)
@@ -104,12 +86,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify) == 0x000008, "Wrong alignment on PySpaceVehicleNoCollisionAnimNotify_Received_Notify");
-static_assert(sizeof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify) == 0x000048, "Wrong size on PySpaceVehicleNoCollisionAnimNotify_Received_Notify");
-static_assert(offsetof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify, MeshComp) == 0x000000, "Member 'PySpaceVehicleNoCollisionAnimNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify, Animation) == 0x000008, "Member 'PySpaceVehicleNoCollisionAnimNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify, EventReference) == 0x000010, "Member 'PySpaceVehicleNoCollisionAnimNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(PySpaceVehicleNoCollisionAnimNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'PySpaceVehicleNoCollisionAnimNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PySpaceVehicleNoCollisionAnimNotify_Received_Notify;
 
 }
 

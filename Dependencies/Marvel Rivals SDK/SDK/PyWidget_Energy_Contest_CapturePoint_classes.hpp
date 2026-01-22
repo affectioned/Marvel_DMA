@@ -18,38 +18,38 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Energy_Contest_CapturePoint.PyWidget_ResourceRumble_CapturePoint
-// 0x00E8 (0x06A8 - 0x05C0)
+// 0x00E8 (0x06B0 - 0x05C8)
 class UPyWidget_ResourceRumble_CapturePoint final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           NullOccupyColor;                                   // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyOccupyColor;                                   // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EmenyOccupyColor;                                  // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Img_Bg_Default_Opacity;                            // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Cycle_Vx;                                      // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Img_FrameBg_Normal;                                // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Img_IconBg_Normal;                                 // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Img_IconBg_Contend;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Img_IconFrame_Normal;                              // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Img_IconFrame_Contend;                             // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Lock;                                      // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Nolock;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_FrameBg;                                   // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Lock_Normal;                               // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Lock_Contend;                              // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Bg_Normal;                                 // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Bg_Contend;                                // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Disable;                                   // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       PointNameLock;                                     // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       PointNameNoLock;                                   // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Progress;                                      // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Unlock;                                       // 0x0678(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NormalColor;                                  // 0x0680(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_ChangeColor;                                  // 0x0688(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Disable;                                      // 0x0690(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_State;                                        // 0x0698(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_ShowHighlight;                                // 0x06A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           NullOccupyColor;                                   // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyOccupyColor;                                   // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EmenyOccupyColor;                                  // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Img_Bg_Default_Opacity;                            // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Cycle_Vx;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Img_FrameBg_Normal;                                // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Img_IconBg_Normal;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Img_IconBg_Contend;                                // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Img_IconFrame_Normal;                              // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Img_IconFrame_Contend;                             // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Lock;                                      // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Nolock;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_FrameBg;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Lock_Normal;                               // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Lock_Contend;                              // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Bg_Normal;                                 // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Bg_Contend;                                // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Disable;                                   // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       PointNameLock;                                     // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       PointNameNoLock;                                   // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Progress;                                      // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Unlock;                                       // 0x0680(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NormalColor;                                  // 0x0688(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_ChangeColor;                                  // 0x0690(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Disable;                                      // 0x0698(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_State;                                        // 0x06A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_ShowHighlight;                                // 0x06A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,42 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ResourceRumble_CapturePoint">();
+		STATIC_CLASS_IMPL("PyWidget_ResourceRumble_CapturePoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ResourceRumble_CapturePoint")
 	}
 	static class UPyWidget_ResourceRumble_CapturePoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ResourceRumble_CapturePoint>();
 	}
 };
-static_assert(alignof(UPyWidget_ResourceRumble_CapturePoint) == 0x000008, "Wrong alignment on UPyWidget_ResourceRumble_CapturePoint");
-static_assert(sizeof(UPyWidget_ResourceRumble_CapturePoint) == 0x0006A8, "Wrong size on UPyWidget_ResourceRumble_CapturePoint");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, NullOccupyColor) == 0x0005BC, "Member 'UPyWidget_ResourceRumble_CapturePoint::NullOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, AllyOccupyColor) == 0x0005CC, "Member 'UPyWidget_ResourceRumble_CapturePoint::AllyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, EmenyOccupyColor) == 0x0005DC, "Member 'UPyWidget_ResourceRumble_CapturePoint::EmenyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_Bg_Default_Opacity) == 0x0005EC, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_Bg_Default_Opacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_Cycle_Vx) == 0x0005F0, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_Cycle_Vx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_FrameBg_Normal) == 0x0005F8, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_FrameBg_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_IconBg_Normal) == 0x000600, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_IconBg_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_IconBg_Contend) == 0x000608, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_IconBg_Contend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_IconFrame_Normal) == 0x000610, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_IconFrame_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Img_IconFrame_Contend) == 0x000618, "Member 'UPyWidget_ResourceRumble_CapturePoint::Img_IconFrame_Contend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Lock) == 0x000620, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Lock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Nolock) == 0x000628, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Nolock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_FrameBg) == 0x000630, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_FrameBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Lock_Normal) == 0x000638, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Lock_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Lock_Contend) == 0x000640, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Lock_Contend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Bg_Normal) == 0x000648, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Bg_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Bg_Contend) == 0x000650, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Bg_Contend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Overlay_Disable) == 0x000658, "Member 'UPyWidget_ResourceRumble_CapturePoint::Overlay_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, PointNameLock) == 0x000660, "Member 'UPyWidget_ResourceRumble_CapturePoint::PointNameLock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, PointNameNoLock) == 0x000668, "Member 'UPyWidget_ResourceRumble_CapturePoint::PointNameNoLock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, WBP_Progress) == 0x000670, "Member 'UPyWidget_ResourceRumble_CapturePoint::WBP_Progress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_Unlock) == 0x000678, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_Unlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_NormalColor) == 0x000680, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_ChangeColor) == 0x000688, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_ChangeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_Disable) == 0x000690, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_State) == 0x000698, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_State' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ResourceRumble_CapturePoint, Anim_ShowHighlight) == 0x0006A0, "Member 'UPyWidget_ResourceRumble_CapturePoint::Anim_ShowHighlight' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ResourceRumble_CapturePoint;
 
 }
 

@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10335201_BP.Summoned_10335201_BP_C
-// 0x0010 (0x0B60 - 0x0B50)
+// 0x0010 (0x0B80 - 0x0B70)
 class ASummoned_10335201_BP_C final : public APySummoned_10335201
 {
 public:
-	class USummonedAbilitySystemComponent*        SummonedAbilitySystem;                             // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedAbilitySystemComponent*        SummonedAbilitySystem;                             // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10335201_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10335201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10335201_BP_C")
 	}
 	static class ASummoned_10335201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10335201_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10335201_BP_C) == 0x000010, "Wrong alignment on ASummoned_10335201_BP_C");
-static_assert(sizeof(ASummoned_10335201_BP_C) == 0x000B60, "Wrong size on ASummoned_10335201_BP_C");
-static_assert(offsetof(ASummoned_10335201_BP_C, SummonedAbilitySystem) == 0x000B48, "Member 'ASummoned_10335201_BP_C::SummonedAbilitySystem' has a wrong offset!");
-static_assert(offsetof(ASummoned_10335201_BP_C, SummonedMovement) == 0x000B50, "Member 'ASummoned_10335201_BP_C::SummonedMovement' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10335201_BP_C;
 
 }
 

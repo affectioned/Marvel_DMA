@@ -29,22 +29,23 @@ public:
 public:
 	void OnInitialized();
 	void Construct();
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MailContent">();
+		STATIC_CLASS_IMPL("PyWidget_MailContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MailContent")
 	}
 	static class UPyWidget_MailContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MailContent>();
 	}
 };
-static_assert(alignof(UPyWidget_MailContent) == 0x000008, "Wrong alignment on UPyWidget_MailContent");
-static_assert(sizeof(UPyWidget_MailContent) == 0x0003E0, "Wrong size on UPyWidget_MailContent");
-static_assert(offsetof(UPyWidget_MailContent, ItemPadding) == 0x0003B8, "Member 'UPyWidget_MailContent::ItemPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailContent, LinkImgDataTable) == 0x0003C8, "Member 'UPyWidget_MailContent::LinkImgDataTable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailContent, ImagePadding) == 0x0003D0, "Member 'UPyWidget_MailContent::ImagePadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MailContent;
 
 // PythonClass PyWidget_MailContent.PyWidget_MailSurveyBtn
 // 0x0000 (0x03B8 - 0x03B8)
@@ -57,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MailSurveyBtn">();
+		STATIC_CLASS_IMPL("PyWidget_MailSurveyBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MailSurveyBtn")
 	}
 	static class UPyWidget_MailSurveyBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MailSurveyBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_MailSurveyBtn) == 0x000008, "Wrong alignment on UPyWidget_MailSurveyBtn");
-static_assert(sizeof(UPyWidget_MailSurveyBtn) == 0x0003B8, "Wrong size on UPyWidget_MailSurveyBtn");
+DUMPER7_ASSERTS_UPyWidget_MailSurveyBtn;
 
 }
 

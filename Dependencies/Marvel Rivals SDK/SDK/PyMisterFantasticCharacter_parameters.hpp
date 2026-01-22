@@ -24,9 +24,7 @@ struct PyMisterFantasticCharacter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMisterFantasticCharacter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMisterFantasticCharacter_ReceiveEndPlay");
-static_assert(sizeof(PyMisterFantasticCharacter_ReceiveEndPlay) == 0x000001, "Wrong size on PyMisterFantasticCharacter_ReceiveEndPlay");
-static_assert(offsetof(PyMisterFantasticCharacter_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMisterFantasticCharacter_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMisterFantasticCharacter_ReceiveEndPlay;
 
 // PythonFunction PyMisterFantasticCharacter.PyMisterFantasticCharacter.OnHeroReviving
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyMisterFantasticCharacter_OnHeroReviving final
 public:
 	EPlayerLivingState                            state;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMisterFantasticCharacter_OnHeroReviving) == 0x000001, "Wrong alignment on PyMisterFantasticCharacter_OnHeroReviving");
-static_assert(sizeof(PyMisterFantasticCharacter_OnHeroReviving) == 0x000001, "Wrong size on PyMisterFantasticCharacter_OnHeroReviving");
-static_assert(offsetof(PyMisterFantasticCharacter_OnHeroReviving, state) == 0x000000, "Member 'PyMisterFantasticCharacter_OnHeroReviving::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyMisterFantasticCharacter_OnHeroReviving;
 
 // PythonFunction PyMisterFantasticCharacter.PyMisterFantasticCharacter.OnResurrecting
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	class AActor*                                 Instigator_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMisterFantasticCharacter_OnResurrecting) == 0x000008, "Wrong alignment on PyMisterFantasticCharacter_OnResurrecting");
-static_assert(sizeof(PyMisterFantasticCharacter_OnResurrecting) == 0x000010, "Wrong size on PyMisterFantasticCharacter_OnResurrecting");
-static_assert(offsetof(PyMisterFantasticCharacter_OnResurrecting, Instigator_0) == 0x000000, "Member 'PyMisterFantasticCharacter_OnResurrecting::Instigator_0' has a wrong offset!");
-static_assert(offsetof(PyMisterFantasticCharacter_OnResurrecting, Target) == 0x000008, "Member 'PyMisterFantasticCharacter_OnResurrecting::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyMisterFantasticCharacter_OnResurrecting;
 
 // PythonFunction PyMisterFantasticCharacter.PyMisterFantasticCharacter.OnPreDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -61,22 +54,16 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameter;                                 // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMisterFantasticCharacter_OnPreDeath) == 0x000008, "Wrong alignment on PyMisterFantasticCharacter_OnPreDeath");
-static_assert(sizeof(PyMisterFantasticCharacter_OnPreDeath) == 0x000028, "Wrong size on PyMisterFantasticCharacter_OnPreDeath");
-static_assert(offsetof(PyMisterFantasticCharacter_OnPreDeath, InSource) == 0x000000, "Member 'PyMisterFantasticCharacter_OnPreDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyMisterFantasticCharacter_OnPreDeath, InSourceAvatar) == 0x000008, "Member 'PyMisterFantasticCharacter_OnPreDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyMisterFantasticCharacter_OnPreDeath, ModifierParameter) == 0x000010, "Member 'PyMisterFantasticCharacter_OnPreDeath::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyMisterFantasticCharacter_OnPreDeath;
 
 // PythonFunction PyMisterFantasticCharacter.PyMisterFantasticCharacter.OnReborn
-// 0x0810 (0x0810 - 0x0000)
+// 0x0830 (0x0830 - 0x0000)
 struct PyMisterFantasticCharacter_OnReborn final
 {
 public:
-	struct FCharacterRebornParam                  RebornParameter;                                   // 0x0000(0x0810)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCharacterRebornParam                  RebornParameter;                                   // 0x0000(0x0830)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMisterFantasticCharacter_OnReborn) == 0x000010, "Wrong alignment on PyMisterFantasticCharacter_OnReborn");
-static_assert(sizeof(PyMisterFantasticCharacter_OnReborn) == 0x000810, "Wrong size on PyMisterFantasticCharacter_OnReborn");
-static_assert(offsetof(PyMisterFantasticCharacter_OnReborn, RebornParameter) == 0x000000, "Member 'PyMisterFantasticCharacter_OnReborn::RebornParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyMisterFantasticCharacter_OnReborn;
 
 }
 

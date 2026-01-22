@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10146901_BP.Summoned_10146901_BP_C
-// 0x0010 (0x0CC0 - 0x0CB0)
+// 0x0010 (0x0CE0 - 0x0CD0)
 class ASummoned_10146901_BP_C final : public ASummoned_10146901
 {
 public:
-	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0CB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0CB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0CD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0CD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10146901_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10146901_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10146901_BP_C")
 	}
 	static class ASummoned_10146901_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10146901_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10146901_BP_C) == 0x000010, "Wrong alignment on ASummoned_10146901_BP_C");
-static_assert(sizeof(ASummoned_10146901_BP_C) == 0x000CC0, "Wrong size on ASummoned_10146901_BP_C");
-static_assert(offsetof(ASummoned_10146901_BP_C, MarvelNavModifier) == 0x000CB0, "Member 'ASummoned_10146901_BP_C::MarvelNavModifier' has a wrong offset!");
-static_assert(offsetof(ASummoned_10146901_BP_C, NavEffectBox) == 0x000CB8, "Member 'ASummoned_10146901_BP_C::NavEffectBox' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10146901_BP_C;
 
 }
 

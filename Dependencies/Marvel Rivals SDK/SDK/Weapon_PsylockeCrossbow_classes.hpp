@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_PsylockeCrossbow.Weapon_PsylockeCrossbow_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_PsylockeCrossbow_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_PsylockeCrossbow_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_PsylockeCrossbow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_PsylockeCrossbow_C")
 	}
 	static class AWeapon_PsylockeCrossbow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_PsylockeCrossbow_C>();
 	}
 };
-static_assert(alignof(AWeapon_PsylockeCrossbow_C) == 0x000010, "Wrong alignment on AWeapon_PsylockeCrossbow_C");
-static_assert(sizeof(AWeapon_PsylockeCrossbow_C) == 0x000CB0, "Wrong size on AWeapon_PsylockeCrossbow_C");
+DUMPER7_ASSERTS_AWeapon_PsylockeCrossbow_C;
 
 }
 

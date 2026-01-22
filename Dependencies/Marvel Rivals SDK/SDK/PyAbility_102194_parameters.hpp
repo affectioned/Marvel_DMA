@@ -18,21 +18,16 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_102194.PyCue_Scope_HitImpact_10219402.GetAbilityHitAudioIDWithHit
-// 0x03D0 (0x03D0 - 0x0000)
+// 0x03E8 (0x03E8 - 0x0000)
 struct PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FHitResult                             HitRes;                                            // 0x01D8(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	int32                                         ReturnValue;                                       // 0x03C8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             HitRes;                                            // 0x01D8(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	int32                                         ReturnValue;                                       // 0x03E0(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit");
-static_assert(sizeof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit) == 0x0003D0, "Wrong size on PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit");
-static_assert(offsetof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit, MyTarget) == 0x000000, "Member 'PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit, Parameters) == 0x000008, "Member 'PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit, HitRes) == 0x0001D8, "Member 'PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit::HitRes' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit, ReturnValue) == 0x0003C8, "Member 'PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10219402_GetAbilityHitAudioIDWithHit;
 
 }
 

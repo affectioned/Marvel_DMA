@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyReplayLoadingPanel.PyReplayLoadingPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyReplayLoadingPanel : public UPyMarvelUserWidget
 {
@@ -29,7 +29,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReplayLoadingPanel">();
+		STATIC_CLASS_IMPL("PyReplayLoadingPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReplayLoadingPanel")
 	}
 	static class UPyReplayLoadingPanel* GetDefaultObj()
 	{
@@ -37,16 +41,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyReplayLoadingPanel) == 0x000008, "Wrong alignment on UPyReplayLoadingPanel");
-static_assert(sizeof(UPyReplayLoadingPanel) == 0x0005C0, "Wrong size on UPyReplayLoadingPanel");
+DUMPER7_ASSERTS_UPyReplayLoadingPanel;
 
 // PythonClass PyReplayLoadingPanel.PyKillCamLoadingPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyKillCamLoadingPanel : public UPyReplayLoadingPanel
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Speed;                                             // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Speed;                                             // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKillCamLoadingPanel">();
+		STATIC_CLASS_IMPL("PyKillCamLoadingPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKillCamLoadingPanel")
 	}
 	static class UPyKillCamLoadingPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKillCamLoadingPanel>();
 	}
 };
-static_assert(alignof(UPyKillCamLoadingPanel) == 0x000008, "Wrong alignment on UPyKillCamLoadingPanel");
-static_assert(sizeof(UPyKillCamLoadingPanel) == 0x0005C0, "Wrong size on UPyKillCamLoadingPanel");
-static_assert(offsetof(UPyKillCamLoadingPanel, Speed) == 0x0005BC, "Member 'UPyKillCamLoadingPanel::Speed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKillCamLoadingPanel;
 
 }
 

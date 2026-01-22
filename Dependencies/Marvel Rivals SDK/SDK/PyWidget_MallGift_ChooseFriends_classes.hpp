@@ -39,35 +39,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChooseFriends_Item_Data">();
+		STATIC_CLASS_IMPL("ChooseFriends_Item_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChooseFriends_Item_Data")
 	}
 	static class UChooseFriends_Item_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChooseFriends_Item_Data>();
 	}
 };
-static_assert(alignof(UChooseFriends_Item_Data) == 0x000008, "Wrong alignment on UChooseFriends_Item_Data");
-static_assert(sizeof(UChooseFriends_Item_Data) == 0x000090, "Wrong size on UChooseFriends_Item_Data");
-static_assert(offsetof(UChooseFriends_Item_Data, UID) == 0x000030, "Member 'UChooseFriends_Item_Data::UID' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, Name_0) == 0x000038, "Member 'UChooseFriends_Item_Data::Name_0' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, Level) == 0x000048, "Member 'UChooseFriends_Item_Data::Level' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, State) == 0x00004C, "Member 'UChooseFriends_Item_Data::State' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, ClanID) == 0x000050, "Member 'UChooseFriends_Item_Data::ClanID' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, HeadIconID) == 0x000060, "Member 'UChooseFriends_Item_Data::HeadIconID' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, NameplateFrameID) == 0x000070, "Member 'UChooseFriends_Item_Data::NameplateFrameID' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, GiftState) == 0x000080, "Member 'UChooseFriends_Item_Data::GiftState' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, ECode) == 0x000084, "Member 'UChooseFriends_Item_Data::ECode' has a wrong offset!");
-static_assert(offsetof(UChooseFriends_Item_Data, AllowRecvGift) == 0x000088, "Member 'UChooseFriends_Item_Data::AllowRecvGift' has a wrong offset!");
+DUMPER7_ASSERTS_UChooseFriends_Item_Data;
 
 // PythonClass PyWidget_MallGift_ChooseFriends.PyWidget_MallGift_ChooseFriends_Item
-// 0x0030 (0x0598 - 0x0568)
+// 0x0030 (0x05A0 - 0x0570)
 class UPyWidget_MallGift_ChooseFriends_Item final : public UMarvelUserWidget
 {
 public:
-	TArray<class FText>                           TabPlayerState;                                    // 0x0568(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0578(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Ak_Hovered;                                        // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Ak_Clicked;                                        // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FText>                           TabPlayerState;                                    // 0x0570(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   TabStateColor;                                     // 0x0580(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Ak_Hovered;                                        // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Ak_Clicked;                                        // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -76,22 +69,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_ChooseFriends_Item">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_ChooseFriends_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_ChooseFriends_Item")
 	}
 	static class UPyWidget_MallGift_ChooseFriends_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_ChooseFriends_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_ChooseFriends_Item) == 0x000008, "Wrong alignment on UPyWidget_MallGift_ChooseFriends_Item");
-static_assert(sizeof(UPyWidget_MallGift_ChooseFriends_Item) == 0x000598, "Wrong size on UPyWidget_MallGift_ChooseFriends_Item");
-static_assert(offsetof(UPyWidget_MallGift_ChooseFriends_Item, TabPlayerState) == 0x000568, "Member 'UPyWidget_MallGift_ChooseFriends_Item::TabPlayerState' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_ChooseFriends_Item, TabStateColor) == 0x000578, "Member 'UPyWidget_MallGift_ChooseFriends_Item::TabStateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_ChooseFriends_Item, Ak_Hovered) == 0x000588, "Member 'UPyWidget_MallGift_ChooseFriends_Item::Ak_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_ChooseFriends_Item, Ak_Clicked) == 0x000590, "Member 'UPyWidget_MallGift_ChooseFriends_Item::Ak_Clicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallGift_ChooseFriends_Item;
 
 // PythonClass PyWidget_MallGift_ChooseFriends.PyWidget_MallGift_ChooseFriends
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_MallGift_ChooseFriends final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -101,15 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_ChooseFriends">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_ChooseFriends")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_ChooseFriends")
 	}
 	static class UPyWidget_MallGift_ChooseFriends* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_ChooseFriends>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_ChooseFriends) == 0x000008, "Wrong alignment on UPyWidget_MallGift_ChooseFriends");
-static_assert(sizeof(UPyWidget_MallGift_ChooseFriends) == 0x0005F8, "Wrong size on UPyWidget_MallGift_ChooseFriends");
+DUMPER7_ASSERTS_UPyWidget_MallGift_ChooseFriends;
 
 }
 

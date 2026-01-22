@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelDefaultBondAbility.MarvelDefaultBondAbility_C
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UMarvelDefaultBondAbility_C final : public UPyMarvelDefaultBondAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelDefaultBondAbility_C">();
+		BP_STATIC_CLASS_IMPL("MarvelDefaultBondAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelDefaultBondAbility_C")
 	}
 	static class UMarvelDefaultBondAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelDefaultBondAbility_C>();
 	}
 };
-static_assert(alignof(UMarvelDefaultBondAbility_C) == 0x000008, "Wrong alignment on UMarvelDefaultBondAbility_C");
-static_assert(sizeof(UMarvelDefaultBondAbility_C) == 0x0029F0, "Wrong size on UMarvelDefaultBondAbility_C");
+DUMPER7_ASSERTS_UMarvelDefaultBondAbility_C;
 
 }
 

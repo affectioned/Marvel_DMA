@@ -24,9 +24,7 @@ struct PyScarletWitchCharacter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScarletWitchCharacter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyScarletWitchCharacter_ReceiveEndPlay");
-static_assert(sizeof(PyScarletWitchCharacter_ReceiveEndPlay) == 0x000001, "Wrong size on PyScarletWitchCharacter_ReceiveEndPlay");
-static_assert(offsetof(PyScarletWitchCharacter_ReceiveEndPlay, Reason) == 0x000000, "Member 'PyScarletWitchCharacter_ReceiveEndPlay::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyScarletWitchCharacter_ReceiveEndPlay;
 
 // PythonFunction PyScarletWitchCharacter.PyScarletWitchChildActor.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScarletWitchChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyScarletWitchChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyScarletWitchChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyScarletWitchChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyScarletWitchChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyScarletWitchChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyScarletWitchChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyScarletWitchChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyScarletWitchChildActor_OnGenericGameplayTagUpdate;
 
 }
 

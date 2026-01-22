@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101731.PyCue_Buff_Loop_10173102
-// 0x0010 (0x1650 - 0x1640)
+// 0x0010 (0x1700 - 0x16F0)
 class APyCue_Buff_Loop_10173102 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         BuffAsset;                                         // 0x1640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         BuffAsset;                                         // 0x16F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -30,23 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10173102">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10173102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10173102")
 	}
 	static class APyCue_Buff_Loop_10173102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10173102>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10173102) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10173102");
-static_assert(sizeof(APyCue_Buff_Loop_10173102) == 0x001650, "Wrong size on APyCue_Buff_Loop_10173102");
-static_assert(offsetof(APyCue_Buff_Loop_10173102, BuffAsset) == 0x001640, "Member 'APyCue_Buff_Loop_10173102::BuffAsset' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10173102;
 
 // PythonClass PyAbility_101731.PyCue_Scope_Loop_10173105
-// 0x0010 (0x10F0 - 0x10E0)
+// 0x0010 (0x1100 - 0x10F0)
 class APyCue_Scope_Loop_10173105 final : public AMarvelCueNotify_Scope
 {
 public:
-	float                                         DelayTime;                                         // 0x10E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTime;                                         // 0x10F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -55,33 +57,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10173105">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10173105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10173105")
 	}
 	static class APyCue_Scope_Loop_10173105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10173105>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10173105) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10173105");
-static_assert(sizeof(APyCue_Scope_Loop_10173105) == 0x0010F0, "Wrong size on APyCue_Scope_Loop_10173105");
-static_assert(offsetof(APyCue_Scope_Loop_10173105, DelayTime) == 0x0010E0, "Member 'APyCue_Scope_Loop_10173105::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10173105;
 
 // PythonClass PyAbility_101731.PyCue_Summoner_Loop_10173101
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APyCue_Summoner_Loop_10173101 final : public AMarvelCueNotify_Summoned
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10173101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10173101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10173101")
 	}
 	static class APyCue_Summoner_Loop_10173101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10173101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10173101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10173101");
-static_assert(sizeof(APyCue_Summoner_Loop_10173101) == 0x001200, "Wrong size on APyCue_Summoner_Loop_10173101");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10173101;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
@@ -53,30 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01PlunderContainer">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01PlunderContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01PlunderContainer")
 	}
 	static class APyKlyntarEC01PlunderContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarEC01PlunderContainer>();
 	}
 };
-static_assert(alignof(APyKlyntarEC01PlunderContainer) == 0x000010, "Wrong alignment on APyKlyntarEC01PlunderContainer");
-static_assert(sizeof(APyKlyntarEC01PlunderContainer) == 0x0007E0, "Wrong size on APyKlyntarEC01PlunderContainer");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, OwnerControl) == 0x0006E0, "Member 'APyKlyntarEC01PlunderContainer::OwnerControl' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, BattleSide) == 0x0006E8, "Member 'APyKlyntarEC01PlunderContainer::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, Percent) == 0x0006EC, "Member 'APyKlyntarEC01PlunderContainer::Percent' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, bActive) == 0x0006F0, "Member 'APyKlyntarEC01PlunderContainer::bActive' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, ReplicateState) == 0x0006F4, "Member 'APyKlyntarEC01PlunderContainer::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, FloatParameter) == 0x0006F8, "Member 'APyKlyntarEC01PlunderContainer::FloatParameter' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, FloatStartValue) == 0x0006FC, "Member 'APyKlyntarEC01PlunderContainer::FloatStartValue' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, FloatEndValue) == 0x000700, "Member 'APyKlyntarEC01PlunderContainer::FloatEndValue' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, UpdateInterval) == 0x000704, "Member 'APyKlyntarEC01PlunderContainer::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, ChangeTime) == 0x000708, "Member 'APyKlyntarEC01PlunderContainer::ChangeTime' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, MaterialEffectIndex) == 0x000710, "Member 'APyKlyntarEC01PlunderContainer::MaterialEffectIndex' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, Materials) == 0x000720, "Member 'APyKlyntarEC01PlunderContainer::Materials' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, DynamicMaterials) == 0x000770, "Member 'APyKlyntarEC01PlunderContainer::DynamicMaterials' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, EmissiveSourceColor) == 0x0007C0, "Member 'APyKlyntarEC01PlunderContainer::EmissiveSourceColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderContainer, EmissiveTargetColor) == 0x0007D0, "Member 'APyKlyntarEC01PlunderContainer::EmissiveTargetColor' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarEC01PlunderContainer;
 
 }
 

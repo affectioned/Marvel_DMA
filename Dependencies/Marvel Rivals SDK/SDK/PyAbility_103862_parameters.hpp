@@ -21,9 +21,7 @@ struct PyAbility_103862_GetCurrentTimelineIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103862_GetCurrentTimelineIndex) == 0x000004, "Wrong alignment on PyAbility_103862_GetCurrentTimelineIndex");
-static_assert(sizeof(PyAbility_103862_GetCurrentTimelineIndex) == 0x000004, "Wrong size on PyAbility_103862_GetCurrentTimelineIndex");
-static_assert(offsetof(PyAbility_103862_GetCurrentTimelineIndex, ReturnValue) == 0x000000, "Member 'PyAbility_103862_GetCurrentTimelineIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103862_GetCurrentTimelineIndex;
 
 // PythonFunction PyAbility_103862.PyAbility_103862.OnProjectileSpawnSuccess
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_103862_OnProjectileSpawnSuccess final
 public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103862_OnProjectileSpawnSuccess) == 0x000008, "Wrong alignment on PyAbility_103862_OnProjectileSpawnSuccess");
-static_assert(sizeof(PyAbility_103862_OnProjectileSpawnSuccess) == 0x000008, "Wrong size on PyAbility_103862_OnProjectileSpawnSuccess");
-static_assert(offsetof(PyAbility_103862_OnProjectileSpawnSuccess, SpawnActor) == 0x000000, "Member 'PyAbility_103862_OnProjectileSpawnSuccess::SpawnActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103862_OnProjectileSpawnSuccess;
 
 }
 

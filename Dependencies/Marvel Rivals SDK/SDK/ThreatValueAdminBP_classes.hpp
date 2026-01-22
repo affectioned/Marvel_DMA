@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ThreatValueAdminBP.ThreatValueAdminBP_C
-// 0x0010 (0x0B30 - 0x0B20)
+// 0x0010 (0x0B60 - 0x0B50)
 class AThreatValueAdminBP_C final : public AThreatValueAdmin
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_DebugAudio_C*                      ThreatValueHUD;                                    // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B50(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_DebugAudio_C*                      ThreatValueHUD;                                    // 0x0B58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindShowDebugPanel();
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ThreatValueAdminBP_C">();
+		BP_STATIC_CLASS_IMPL("ThreatValueAdminBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThreatValueAdminBP_C")
 	}
 	static class AThreatValueAdminBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AThreatValueAdminBP_C>();
 	}
 };
-static_assert(alignof(AThreatValueAdminBP_C) == 0x000010, "Wrong alignment on AThreatValueAdminBP_C");
-static_assert(sizeof(AThreatValueAdminBP_C) == 0x000B30, "Wrong size on AThreatValueAdminBP_C");
-static_assert(offsetof(AThreatValueAdminBP_C, UberGraphFrame) == 0x000B20, "Member 'AThreatValueAdminBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AThreatValueAdminBP_C, ThreatValueHUD) == 0x000B28, "Member 'AThreatValueAdminBP_C::ThreatValueHUD' has a wrong offset!");
+DUMPER7_ASSERTS_AThreatValueAdminBP_C;
 
 }
 

@@ -23,15 +23,18 @@ class AInteractor_NewYorkE01Component044A_NoCollision_C final : public AMarvelIn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Interactor_NewYorkE01Component044A_NoCollision_C">();
+		BP_STATIC_CLASS_IMPL("Interactor_NewYorkE01Component044A_NoCollision_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Interactor_NewYorkE01Component044A_NoCollision_C")
 	}
 	static class AInteractor_NewYorkE01Component044A_NoCollision_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInteractor_NewYorkE01Component044A_NoCollision_C>();
 	}
 };
-static_assert(alignof(AInteractor_NewYorkE01Component044A_NoCollision_C) == 0x000010, "Wrong alignment on AInteractor_NewYorkE01Component044A_NoCollision_C");
-static_assert(sizeof(AInteractor_NewYorkE01Component044A_NoCollision_C) == 0x000790, "Wrong size on AInteractor_NewYorkE01Component044A_NoCollision_C");
+DUMPER7_ASSERTS_AInteractor_NewYorkE01Component044A_NoCollision_C;
 
 }
 

@@ -131,10 +131,7 @@ public:
 	uint32                                        ShapeHash;                                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0xC];                                        // 0x000C(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphBuilderRegisteredComponent) == 0x000008, "Wrong alignment on FZoneGraphBuilderRegisteredComponent");
-static_assert(sizeof(FZoneGraphBuilderRegisteredComponent) == 0x000018, "Wrong size on FZoneGraphBuilderRegisteredComponent");
-static_assert(offsetof(FZoneGraphBuilderRegisteredComponent, Component) == 0x000000, "Member 'FZoneGraphBuilderRegisteredComponent::Component' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuilderRegisteredComponent, ShapeHash) == 0x000008, "Member 'FZoneGraphBuilderRegisteredComponent::ShapeHash' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBuilderRegisteredComponent;
 
 // ScriptStruct ZoneGraph.ZoneGraphDataHandle
 // 0x0004 (0x0004 - 0x0000)
@@ -144,10 +141,7 @@ public:
 	uint16                                        Index;                                             // 0x0000(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                        Generation;                                        // 0x0002(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphDataHandle) == 0x000002, "Wrong alignment on FZoneGraphDataHandle");
-static_assert(sizeof(FZoneGraphDataHandle) == 0x000004, "Wrong size on FZoneGraphDataHandle");
-static_assert(offsetof(FZoneGraphDataHandle, Index) == 0x000000, "Member 'FZoneGraphDataHandle::Index' has a wrong offset!");
-static_assert(offsetof(FZoneGraphDataHandle, Generation) == 0x000002, "Member 'FZoneGraphDataHandle::Generation' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphDataHandle;
 
 // ScriptStruct ZoneGraph.ZoneGraphLaneHandle
 // 0x0008 (0x0008 - 0x0000)
@@ -157,10 +151,7 @@ public:
 	int32                                         Index;                                             // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FZoneGraphDataHandle                   DataHandle;                                        // 0x0004(0x0004)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphLaneHandle) == 0x000004, "Wrong alignment on FZoneGraphLaneHandle");
-static_assert(sizeof(FZoneGraphLaneHandle) == 0x000008, "Wrong size on FZoneGraphLaneHandle");
-static_assert(offsetof(FZoneGraphLaneHandle, Index) == 0x000000, "Member 'FZoneGraphLaneHandle::Index' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneHandle, DataHandle) == 0x000004, "Member 'FZoneGraphLaneHandle::DataHandle' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphLaneHandle;
 
 // ScriptStruct ZoneGraph.ZoneShapeComponentBuildData
 // 0x0018 (0x0018 - 0x0000)
@@ -171,10 +162,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FZoneGraphLaneHandle>           Lanes;                                             // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneShapeComponentBuildData) == 0x000008, "Wrong alignment on FZoneShapeComponentBuildData");
-static_assert(sizeof(FZoneShapeComponentBuildData) == 0x000018, "Wrong size on FZoneShapeComponentBuildData");
-static_assert(offsetof(FZoneShapeComponentBuildData, ZoneIndex) == 0x000000, "Member 'FZoneShapeComponentBuildData::ZoneIndex' has a wrong offset!");
-static_assert(offsetof(FZoneShapeComponentBuildData, Lanes) == 0x000008, "Member 'FZoneShapeComponentBuildData::Lanes' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneShapeComponentBuildData;
 
 // ScriptStruct ZoneGraph.ZoneGraphBuildData
 // 0x0050 (0x0050 - 0x0000)
@@ -183,9 +171,7 @@ struct FZoneGraphBuildData final
 public:
 	TMap<class UZoneShapeComponent*, struct FZoneShapeComponentBuildData> ZoneShapeComponentBuildData; // 0x0000(0x0050)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphBuildData) == 0x000008, "Wrong alignment on FZoneGraphBuildData");
-static_assert(sizeof(FZoneGraphBuildData) == 0x000050, "Wrong size on FZoneGraphBuildData");
-static_assert(offsetof(FZoneGraphBuildData, ZoneShapeComponentBuildData) == 0x000000, "Member 'FZoneGraphBuildData::ZoneShapeComponentBuildData' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBuildData;
 
 // ScriptStruct ZoneGraph.ZoneGraphBuilder
 // 0x0198 (0x0198 - 0x0000)
@@ -198,12 +184,7 @@ public:
 	struct FZoneGraphBuildData                    BuildData;                                         // 0x0070(0x0050)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_C0[0xD8];                                      // 0x00C0(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphBuilder) == 0x000008, "Wrong alignment on FZoneGraphBuilder");
-static_assert(sizeof(FZoneGraphBuilder) == 0x000198, "Wrong size on FZoneGraphBuilder");
-static_assert(offsetof(FZoneGraphBuilder, ShapeComponents) == 0x000000, "Member 'FZoneGraphBuilder::ShapeComponents' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuilder, ShapeComponentsFreeList) == 0x000010, "Member 'FZoneGraphBuilder::ShapeComponentsFreeList' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuilder, ShapeComponentToIndex) == 0x000020, "Member 'FZoneGraphBuilder::ShapeComponentToIndex' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuilder, BuildData) == 0x000070, "Member 'FZoneGraphBuilder::BuildData' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBuilder;
 
 // ScriptStruct ZoneGraph.ZoneGraphBVNode
 // 0x0010 (0x0010 - 0x0000)
@@ -218,15 +199,7 @@ public:
 	uint16                                        MaxZ;                                              // 0x000A(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Index;                                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphBVNode) == 0x000004, "Wrong alignment on FZoneGraphBVNode");
-static_assert(sizeof(FZoneGraphBVNode) == 0x000010, "Wrong size on FZoneGraphBVNode");
-static_assert(offsetof(FZoneGraphBVNode, MinX) == 0x000000, "Member 'FZoneGraphBVNode::MinX' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, MinY) == 0x000002, "Member 'FZoneGraphBVNode::MinY' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, MinZ) == 0x000004, "Member 'FZoneGraphBVNode::MinZ' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, MaxX) == 0x000006, "Member 'FZoneGraphBVNode::MaxX' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, MaxY) == 0x000008, "Member 'FZoneGraphBVNode::MaxY' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, MaxZ) == 0x00000A, "Member 'FZoneGraphBVNode::MaxZ' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVNode, Index) == 0x00000C, "Member 'FZoneGraphBVNode::Index' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBVNode;
 
 // ScriptStruct ZoneGraph.ZoneGraphBVTree
 // 0x0030 (0x0030 - 0x0000)
@@ -238,11 +211,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FZoneGraphBVNode>               Nodes;                                             // 0x0020(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FZoneGraphBVTree) == 0x000008, "Wrong alignment on FZoneGraphBVTree");
-static_assert(sizeof(FZoneGraphBVTree) == 0x000030, "Wrong size on FZoneGraphBVTree");
-static_assert(offsetof(FZoneGraphBVTree, Origin) == 0x000000, "Member 'FZoneGraphBVTree::Origin' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVTree, QuantizationScale) == 0x000018, "Member 'FZoneGraphBVTree::QuantizationScale' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBVTree, Nodes) == 0x000020, "Member 'FZoneGraphBVTree::Nodes' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBVTree;
 
 // ScriptStruct ZoneGraph.RegisteredZoneGraphData
 // 0x0010 (0x0010 - 0x0000)
@@ -252,9 +221,7 @@ public:
 	class AZoneGraphData*                         ZoneGraphData;                                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRegisteredZoneGraphData) == 0x000008, "Wrong alignment on FRegisteredZoneGraphData");
-static_assert(sizeof(FRegisteredZoneGraphData) == 0x000010, "Wrong size on FRegisteredZoneGraphData");
-static_assert(offsetof(FRegisteredZoneGraphData, ZoneGraphData) == 0x000000, "Member 'FRegisteredZoneGraphData::ZoneGraphData' has a wrong offset!");
+DUMPER7_ASSERTS_FRegisteredZoneGraphData;
 
 // ScriptStruct ZoneGraph.ZoneHandle
 // 0x0004 (0x0004 - 0x0000)
@@ -263,9 +230,7 @@ struct FZoneHandle final
 public:
 	uint32                                        Index;                                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FZoneHandle) == 0x000004, "Wrong alignment on FZoneHandle");
-static_assert(sizeof(FZoneHandle) == 0x000004, "Wrong size on FZoneHandle");
-static_assert(offsetof(FZoneHandle, Index) == 0x000000, "Member 'FZoneHandle::Index' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneHandle;
 
 // ScriptStruct ZoneGraph.ZoneGraphTag
 // 0x0001 (0x0001 - 0x0000)
@@ -274,9 +239,7 @@ struct FZoneGraphTag final
 public:
 	uint8                                         Bit;                                               // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FZoneGraphTag) == 0x000001, "Wrong alignment on FZoneGraphTag");
-static_assert(sizeof(FZoneGraphTag) == 0x000001, "Wrong size on FZoneGraphTag");
-static_assert(offsetof(FZoneGraphTag, Bit) == 0x000000, "Member 'FZoneGraphTag::Bit' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphTag;
 
 // ScriptStruct ZoneGraph.ZoneGraphTagMask
 // 0x0004 (0x0004 - 0x0000)
@@ -285,9 +248,7 @@ struct FZoneGraphTagMask final
 public:
 	uint32                                        Mask;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FZoneGraphTagMask) == 0x000004, "Wrong alignment on FZoneGraphTagMask");
-static_assert(sizeof(FZoneGraphTagMask) == 0x000004, "Wrong size on FZoneGraphTagMask");
-static_assert(offsetof(FZoneGraphTagMask, Mask) == 0x000000, "Member 'FZoneGraphTagMask::Mask' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphTagMask;
 
 // ScriptStruct ZoneGraph.ZoneGraphTagFilter
 // 0x000C (0x000C - 0x0000)
@@ -298,11 +259,7 @@ public:
 	struct FZoneGraphTagMask                      AllTags;                                           // 0x0004(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FZoneGraphTagMask                      NotTags;                                           // 0x0008(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphTagFilter) == 0x000004, "Wrong alignment on FZoneGraphTagFilter");
-static_assert(sizeof(FZoneGraphTagFilter) == 0x00000C, "Wrong size on FZoneGraphTagFilter");
-static_assert(offsetof(FZoneGraphTagFilter, AnyTags) == 0x000000, "Member 'FZoneGraphTagFilter::AnyTags' has a wrong offset!");
-static_assert(offsetof(FZoneGraphTagFilter, AllTags) == 0x000004, "Member 'FZoneGraphTagFilter::AllTags' has a wrong offset!");
-static_assert(offsetof(FZoneGraphTagFilter, NotTags) == 0x000008, "Member 'FZoneGraphTagFilter::NotTags' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphTagFilter;
 
 // ScriptStruct ZoneGraph.ZoneGraphTagInfo
 // 0x0014 (0x0014 - 0x0000)
@@ -314,11 +271,7 @@ public:
 	struct FZoneGraphTag                          Tag;                                               // 0x0010(0x0001)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphTagInfo) == 0x000004, "Wrong alignment on FZoneGraphTagInfo");
-static_assert(sizeof(FZoneGraphTagInfo) == 0x000014, "Wrong size on FZoneGraphTagInfo");
-static_assert(offsetof(FZoneGraphTagInfo, Name) == 0x000000, "Member 'FZoneGraphTagInfo::Name' has a wrong offset!");
-static_assert(offsetof(FZoneGraphTagInfo, Color) == 0x00000C, "Member 'FZoneGraphTagInfo::Color' has a wrong offset!");
-static_assert(offsetof(FZoneGraphTagInfo, Tag) == 0x000010, "Member 'FZoneGraphTagInfo::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphTagInfo;
 
 // ScriptStruct ZoneGraph.ZoneLaneDesc
 // 0x000C (0x000C - 0x0000)
@@ -330,11 +283,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FZoneGraphTagMask                      Tags;                                              // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneLaneDesc) == 0x000004, "Wrong alignment on FZoneLaneDesc");
-static_assert(sizeof(FZoneLaneDesc) == 0x00000C, "Wrong size on FZoneLaneDesc");
-static_assert(offsetof(FZoneLaneDesc, Width) == 0x000000, "Member 'FZoneLaneDesc::Width' has a wrong offset!");
-static_assert(offsetof(FZoneLaneDesc, Direction) == 0x000004, "Member 'FZoneLaneDesc::Direction' has a wrong offset!");
-static_assert(offsetof(FZoneLaneDesc, Tags) == 0x000008, "Member 'FZoneLaneDesc::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneLaneDesc;
 
 // ScriptStruct ZoneGraph.ZoneLaneProfile
 // 0x0030 (0x0030 - 0x0000)
@@ -346,11 +295,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FZoneLaneDesc>                  Lanes;                                             // 0x0020(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneLaneProfile) == 0x000008, "Wrong alignment on FZoneLaneProfile");
-static_assert(sizeof(FZoneLaneProfile) == 0x000030, "Wrong size on FZoneLaneProfile");
-static_assert(offsetof(FZoneLaneProfile, Name) == 0x000000, "Member 'FZoneLaneProfile::Name' has a wrong offset!");
-static_assert(offsetof(FZoneLaneProfile, ID) == 0x00000C, "Member 'FZoneLaneProfile::ID' has a wrong offset!");
-static_assert(offsetof(FZoneLaneProfile, Lanes) == 0x000020, "Member 'FZoneLaneProfile::Lanes' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneLaneProfile;
 
 // ScriptStruct ZoneGraph.ZoneLaneProfileRef
 // 0x001C (0x001C - 0x0000)
@@ -360,10 +305,7 @@ public:
 	class FName                                   Name;                                              // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  ID;                                                // 0x000C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneLaneProfileRef) == 0x000004, "Wrong alignment on FZoneLaneProfileRef");
-static_assert(sizeof(FZoneLaneProfileRef) == 0x00001C, "Wrong size on FZoneLaneProfileRef");
-static_assert(offsetof(FZoneLaneProfileRef, Name) == 0x000000, "Member 'FZoneLaneProfileRef::Name' has a wrong offset!");
-static_assert(offsetof(FZoneLaneProfileRef, ID) == 0x00000C, "Member 'FZoneLaneProfileRef::ID' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneLaneProfileRef;
 
 // ScriptStruct ZoneGraph.ZoneLaneLinkData
 // 0x0008 (0x0008 - 0x0000)
@@ -375,11 +317,7 @@ public:
 	uint8                                         Flags;                                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneLaneLinkData) == 0x000004, "Wrong alignment on FZoneLaneLinkData");
-static_assert(sizeof(FZoneLaneLinkData) == 0x000008, "Wrong size on FZoneLaneLinkData");
-static_assert(offsetof(FZoneLaneLinkData, DestLaneIndex) == 0x000000, "Member 'FZoneLaneLinkData::DestLaneIndex' has a wrong offset!");
-static_assert(offsetof(FZoneLaneLinkData, Type) == 0x000004, "Member 'FZoneLaneLinkData::Type' has a wrong offset!");
-static_assert(offsetof(FZoneLaneLinkData, Flags) == 0x000005, "Member 'FZoneLaneLinkData::Flags' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneLaneLinkData;
 
 // ScriptStruct ZoneGraph.ZoneLaneData
 // 0x0020 (0x0020 - 0x0000)
@@ -396,17 +334,7 @@ public:
 	uint16                                        StartEntryId;                                      // 0x001C(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                        EndEntryId;                                        // 0x001E(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneLaneData) == 0x000004, "Wrong alignment on FZoneLaneData");
-static_assert(sizeof(FZoneLaneData) == 0x000020, "Wrong size on FZoneLaneData");
-static_assert(offsetof(FZoneLaneData, Width) == 0x000000, "Member 'FZoneLaneData::Width' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, Tags) == 0x000004, "Member 'FZoneLaneData::Tags' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, PointsBegin) == 0x000008, "Member 'FZoneLaneData::PointsBegin' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, PointsEnd) == 0x00000C, "Member 'FZoneLaneData::PointsEnd' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, LinksBegin) == 0x000010, "Member 'FZoneLaneData::LinksBegin' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, LinksEnd) == 0x000014, "Member 'FZoneLaneData::LinksEnd' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, ZoneIndex) == 0x000018, "Member 'FZoneLaneData::ZoneIndex' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, StartEntryId) == 0x00001C, "Member 'FZoneLaneData::StartEntryId' has a wrong offset!");
-static_assert(offsetof(FZoneLaneData, EndEntryId) == 0x00001E, "Member 'FZoneLaneData::EndEntryId' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneLaneData;
 
 // ScriptStruct ZoneGraph.ZoneData
 // 0x0050 (0x0050 - 0x0000)
@@ -421,14 +349,7 @@ public:
 	struct FZoneGraphTagMask                      Tags;                                              // 0x0048(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneData) == 0x000008, "Wrong alignment on FZoneData");
-static_assert(sizeof(FZoneData) == 0x000050, "Wrong size on FZoneData");
-static_assert(offsetof(FZoneData, BoundaryPointsBegin) == 0x000000, "Member 'FZoneData::BoundaryPointsBegin' has a wrong offset!");
-static_assert(offsetof(FZoneData, BoundaryPointsEnd) == 0x000004, "Member 'FZoneData::BoundaryPointsEnd' has a wrong offset!");
-static_assert(offsetof(FZoneData, LanesBegin) == 0x000008, "Member 'FZoneData::LanesBegin' has a wrong offset!");
-static_assert(offsetof(FZoneData, LanesEnd) == 0x00000C, "Member 'FZoneData::LanesEnd' has a wrong offset!");
-static_assert(offsetof(FZoneData, Bounds) == 0x000010, "Member 'FZoneData::Bounds' has a wrong offset!");
-static_assert(offsetof(FZoneData, Tags) == 0x000048, "Member 'FZoneData::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneData;
 
 // ScriptStruct ZoneGraph.ZoneGraphLaneLocation
 // 0x0070 (0x0070 - 0x0000)
@@ -443,15 +364,7 @@ public:
 	int32                                         LaneSegment;                                       // 0x0068(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DistanceAlongLane;                                 // 0x006C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphLaneLocation) == 0x000008, "Wrong alignment on FZoneGraphLaneLocation");
-static_assert(sizeof(FZoneGraphLaneLocation) == 0x000070, "Wrong size on FZoneGraphLaneLocation");
-static_assert(offsetof(FZoneGraphLaneLocation, Position) == 0x000000, "Member 'FZoneGraphLaneLocation::Position' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, Direction) == 0x000018, "Member 'FZoneGraphLaneLocation::Direction' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, Tangent) == 0x000030, "Member 'FZoneGraphLaneLocation::Tangent' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, Up) == 0x000048, "Member 'FZoneGraphLaneLocation::Up' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, LaneHandle) == 0x000060, "Member 'FZoneGraphLaneLocation::LaneHandle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, LaneSegment) == 0x000068, "Member 'FZoneGraphLaneLocation::LaneSegment' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneLocation, DistanceAlongLane) == 0x00006C, "Member 'FZoneGraphLaneLocation::DistanceAlongLane' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphLaneLocation;
 
 // ScriptStruct ZoneGraph.ZoneGraphCompactLaneLocation
 // 0x000C (0x000C - 0x0000)
@@ -461,10 +374,7 @@ public:
 	struct FZoneGraphLaneHandle                   LaneHandle;                                        // 0x0000(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DistanceAlongLane;                                 // 0x0008(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphCompactLaneLocation) == 0x000004, "Wrong alignment on FZoneGraphCompactLaneLocation");
-static_assert(sizeof(FZoneGraphCompactLaneLocation) == 0x00000C, "Wrong size on FZoneGraphCompactLaneLocation");
-static_assert(offsetof(FZoneGraphCompactLaneLocation, LaneHandle) == 0x000000, "Member 'FZoneGraphCompactLaneLocation::LaneHandle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphCompactLaneLocation, DistanceAlongLane) == 0x000008, "Member 'FZoneGraphCompactLaneLocation::DistanceAlongLane' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphCompactLaneLocation;
 
 // ScriptStruct ZoneGraph.ZoneGraphLaneSection
 // 0x0010 (0x0010 - 0x0000)
@@ -475,11 +385,7 @@ public:
 	float                                         StartDistanceAlongLane;                            // 0x0008(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EndDistanceAlongLane;                              // 0x000C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphLaneSection) == 0x000004, "Wrong alignment on FZoneGraphLaneSection");
-static_assert(sizeof(FZoneGraphLaneSection) == 0x000010, "Wrong size on FZoneGraphLaneSection");
-static_assert(offsetof(FZoneGraphLaneSection, LaneHandle) == 0x000000, "Member 'FZoneGraphLaneSection::LaneHandle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneSection, StartDistanceAlongLane) == 0x000008, "Member 'FZoneGraphLaneSection::StartDistanceAlongLane' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneSection, EndDistanceAlongLane) == 0x00000C, "Member 'FZoneGraphLaneSection::EndDistanceAlongLane' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphLaneSection;
 
 // ScriptStruct ZoneGraph.ZoneGraphLinkedLane
 // 0x000C (0x000C - 0x0000)
@@ -491,11 +397,7 @@ public:
 	uint8                                         Flags;                                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphLinkedLane) == 0x000004, "Wrong alignment on FZoneGraphLinkedLane");
-static_assert(sizeof(FZoneGraphLinkedLane) == 0x00000C, "Wrong size on FZoneGraphLinkedLane");
-static_assert(offsetof(FZoneGraphLinkedLane, DestLane) == 0x000000, "Member 'FZoneGraphLinkedLane::DestLane' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLinkedLane, Type) == 0x000008, "Member 'FZoneGraphLinkedLane::Type' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLinkedLane, Flags) == 0x000009, "Member 'FZoneGraphLinkedLane::Flags' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphLinkedLane;
 
 // ScriptStruct ZoneGraph.ZoneGraphStorage
 // 0x00F0 (0x00F0 - 0x0000)
@@ -514,18 +416,7 @@ public:
 	struct FZoneGraphBVTree                       ZoneBVTree;                                        // 0x00B8(0x0030)(NativeAccessSpecifierPublic)
 	uint8                                         Pad_E8[0x8];                                       // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphStorage) == 0x000008, "Wrong alignment on FZoneGraphStorage");
-static_assert(sizeof(FZoneGraphStorage) == 0x0000F0, "Wrong size on FZoneGraphStorage");
-static_assert(offsetof(FZoneGraphStorage, Zones) == 0x000000, "Member 'FZoneGraphStorage::Zones' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, Lanes) == 0x000010, "Member 'FZoneGraphStorage::Lanes' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, BoundaryPoints) == 0x000020, "Member 'FZoneGraphStorage::BoundaryPoints' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, LanePoints) == 0x000030, "Member 'FZoneGraphStorage::LanePoints' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, LaneUpVectors) == 0x000040, "Member 'FZoneGraphStorage::LaneUpVectors' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, LaneTangentVectors) == 0x000050, "Member 'FZoneGraphStorage::LaneTangentVectors' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, LanePointProgressions) == 0x000060, "Member 'FZoneGraphStorage::LanePointProgressions' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, LaneLinks) == 0x000070, "Member 'FZoneGraphStorage::LaneLinks' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, Bounds) == 0x000080, "Member 'FZoneGraphStorage::Bounds' has a wrong offset!");
-static_assert(offsetof(FZoneGraphStorage, ZoneBVTree) == 0x0000B8, "Member 'FZoneGraphStorage::ZoneBVTree' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphStorage;
 
 // ScriptStruct ZoneGraph.ZoneShapePoint
 // 0x0070 (0x0070 - 0x0000)
@@ -544,18 +435,7 @@ public:
 	uint8                                         Pad_6B[0x1];                                       // 0x006B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         LaneConnectionRestrictions;                        // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneShapePoint) == 0x000008, "Wrong alignment on FZoneShapePoint");
-static_assert(sizeof(FZoneShapePoint) == 0x000070, "Wrong size on FZoneShapePoint");
-static_assert(offsetof(FZoneShapePoint, Position) == 0x000000, "Member 'FZoneShapePoint::Position' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, InControlPoint) == 0x000018, "Member 'FZoneShapePoint::InControlPoint' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, OutControlPoint) == 0x000030, "Member 'FZoneShapePoint::OutControlPoint' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, TangentLength) == 0x000048, "Member 'FZoneShapePoint::TangentLength' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, InnerTurnRadius) == 0x00004C, "Member 'FZoneShapePoint::InnerTurnRadius' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, Rotation) == 0x000050, "Member 'FZoneShapePoint::Rotation' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, Type) == 0x000068, "Member 'FZoneShapePoint::Type' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, LaneProfile) == 0x000069, "Member 'FZoneShapePoint::LaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, bReverseLaneProfile) == 0x00006A, "Member 'FZoneShapePoint::bReverseLaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneShapePoint, LaneConnectionRestrictions) == 0x00006C, "Member 'FZoneShapePoint::LaneConnectionRestrictions' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneShapePoint;
 
 // ScriptStruct ZoneGraph.ZoneShapeConnector
 // 0x0070 (0x0070 - 0x0000)
@@ -571,15 +451,7 @@ public:
 	EFZoneShapeType                               ShapeType;                                         // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneShapeConnector) == 0x000008, "Wrong alignment on FZoneShapeConnector");
-static_assert(sizeof(FZoneShapeConnector) == 0x000070, "Wrong size on FZoneShapeConnector");
-static_assert(offsetof(FZoneShapeConnector, Position) == 0x000000, "Member 'FZoneShapeConnector::Position' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, Normal) == 0x000018, "Member 'FZoneShapeConnector::Normal' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, Up) == 0x000030, "Member 'FZoneShapeConnector::Up' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, PointIndex) == 0x000048, "Member 'FZoneShapeConnector::PointIndex' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, LaneProfile) == 0x00004C, "Member 'FZoneShapeConnector::LaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, bReverseLaneProfile) == 0x000068, "Member 'FZoneShapeConnector::bReverseLaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnector, ShapeType) == 0x000069, "Member 'FZoneShapeConnector::ShapeType' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneShapeConnector;
 
 // ScriptStruct ZoneGraph.ZoneShapeConnection
 // 0x000C (0x000C - 0x0000)
@@ -589,10 +461,7 @@ public:
 	TWeakObjectPtr<class UZoneShapeComponent>     ShapeComponent;                                    // 0x0000(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConnectorIndex;                                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneShapeConnection) == 0x000004, "Wrong alignment on FZoneShapeConnection");
-static_assert(sizeof(FZoneShapeConnection) == 0x00000C, "Wrong size on FZoneShapeConnection");
-static_assert(offsetof(FZoneShapeConnection, ShapeComponent) == 0x000000, "Member 'FZoneShapeConnection::ShapeComponent' has a wrong offset!");
-static_assert(offsetof(FZoneShapeConnection, ConnectorIndex) == 0x000008, "Member 'FZoneShapeConnection::ConnectorIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneShapeConnection;
 
 // ScriptStruct ZoneGraph.ZoneGraphTessellationSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -602,10 +471,7 @@ public:
 	struct FZoneGraphTagFilter                    LaneFilter;                                        // 0x0000(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         TessellationTolerance;                             // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphTessellationSettings) == 0x000004, "Wrong alignment on FZoneGraphTessellationSettings");
-static_assert(sizeof(FZoneGraphTessellationSettings) == 0x000010, "Wrong size on FZoneGraphTessellationSettings");
-static_assert(offsetof(FZoneGraphTessellationSettings, LaneFilter) == 0x000000, "Member 'FZoneGraphTessellationSettings::LaneFilter' has a wrong offset!");
-static_assert(offsetof(FZoneGraphTessellationSettings, TessellationTolerance) == 0x00000C, "Member 'FZoneGraphTessellationSettings::TessellationTolerance' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphTessellationSettings;
 
 // ScriptStruct ZoneGraph.ZoneGraphLaneRoutingRule
 // 0x0068 (0x0068 - 0x0000)
@@ -624,16 +490,7 @@ public:
 	int32                                         ConnectionRestrictions;                            // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FZoneGraphLaneRoutingRule) == 0x000008, "Wrong alignment on FZoneGraphLaneRoutingRule");
-static_assert(sizeof(FZoneGraphLaneRoutingRule) == 0x000068, "Wrong size on FZoneGraphLaneRoutingRule");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, bEnabled) == 0x000000, "Member 'FZoneGraphLaneRoutingRule::bEnabled' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, Comment) == 0x000008, "Member 'FZoneGraphLaneRoutingRule::Comment' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, ZoneTagFilter) == 0x000018, "Member 'FZoneGraphLaneRoutingRule::ZoneTagFilter' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, SourceLaneProfile) == 0x000024, "Member 'FZoneGraphLaneRoutingRule::SourceLaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, DestinationLaneProfile) == 0x000040, "Member 'FZoneGraphLaneRoutingRule::DestinationLaneProfile' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, SourceOutgoingConnections) == 0x00005C, "Member 'FZoneGraphLaneRoutingRule::SourceOutgoingConnections' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, DestinationIncomingConnections) == 0x00005D, "Member 'FZoneGraphLaneRoutingRule::DestinationIncomingConnections' has a wrong offset!");
-static_assert(offsetof(FZoneGraphLaneRoutingRule, ConnectionRestrictions) == 0x000060, "Member 'FZoneGraphLaneRoutingRule::ConnectionRestrictions' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphLaneRoutingRule;
 
 // ScriptStruct ZoneGraph.ZoneGraphBuildSettings
 // 0x0040 (0x0040 - 0x0000)
@@ -651,16 +508,7 @@ public:
 	float                                         ConnectionSnapDistance;                            // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ConnectionSnapAngle;                               // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneGraphBuildSettings) == 0x000008, "Wrong alignment on FZoneGraphBuildSettings");
-static_assert(sizeof(FZoneGraphBuildSettings) == 0x000040, "Wrong size on FZoneGraphBuildSettings");
-static_assert(offsetof(FZoneGraphBuildSettings, CommonTessellationTolerance) == 0x000000, "Member 'FZoneGraphBuildSettings::CommonTessellationTolerance' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, SpecificTessellationTolerances) == 0x000008, "Member 'FZoneGraphBuildSettings::SpecificTessellationTolerances' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, LaneConnectionAngle) == 0x000018, "Member 'FZoneGraphBuildSettings::LaneConnectionAngle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, LaneConnectionMask) == 0x00001C, "Member 'FZoneGraphBuildSettings::LaneConnectionMask' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, TurnThresholdAngle) == 0x000020, "Member 'FZoneGraphBuildSettings::TurnThresholdAngle' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, PolygonRoutingRules) == 0x000028, "Member 'FZoneGraphBuildSettings::PolygonRoutingRules' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, ConnectionSnapDistance) == 0x000038, "Member 'FZoneGraphBuildSettings::ConnectionSnapDistance' has a wrong offset!");
-static_assert(offsetof(FZoneGraphBuildSettings, ConnectionSnapAngle) == 0x00003C, "Member 'FZoneGraphBuildSettings::ConnectionSnapAngle' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneGraphBuildSettings;
 
 // ScriptStruct ZoneGraph.ZoneShapeLaneInternalLink
 // 0x000C (0x000C - 0x0000)
@@ -670,10 +518,7 @@ public:
 	int32                                         LaneIndex;                                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FZoneLaneLinkData                      LinkData;                                          // 0x0004(0x0008)(NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZoneShapeLaneInternalLink) == 0x000004, "Wrong alignment on FZoneShapeLaneInternalLink");
-static_assert(sizeof(FZoneShapeLaneInternalLink) == 0x00000C, "Wrong size on FZoneShapeLaneInternalLink");
-static_assert(offsetof(FZoneShapeLaneInternalLink, LaneIndex) == 0x000000, "Member 'FZoneShapeLaneInternalLink::LaneIndex' has a wrong offset!");
-static_assert(offsetof(FZoneShapeLaneInternalLink, LinkData) == 0x000004, "Member 'FZoneShapeLaneInternalLink::LinkData' has a wrong offset!");
+DUMPER7_ASSERTS_FZoneShapeLaneInternalLink;
 
 }
 

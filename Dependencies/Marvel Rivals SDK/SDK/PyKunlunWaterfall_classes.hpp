@@ -45,22 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKunlunWaterfall">();
+		STATIC_CLASS_IMPL("PyKunlunWaterfall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKunlunWaterfall")
 	}
 	static class APyKunlunWaterfall* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKunlunWaterfall>();
 	}
 };
-static_assert(alignof(APyKunlunWaterfall) == 0x000010, "Wrong alignment on APyKunlunWaterfall");
-static_assert(sizeof(APyKunlunWaterfall) == 0x000720, "Wrong size on APyKunlunWaterfall");
-static_assert(offsetof(APyKunlunWaterfall, TargetRtpcValue) == 0x0006F0, "Member 'APyKunlunWaterfall::TargetRtpcValue' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, RtpcChangeTime) == 0x0006F4, "Member 'APyKunlunWaterfall::RtpcChangeTime' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, SplashIsActivate) == 0x0006F8, "Member 'APyKunlunWaterfall::SplashIsActivate' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, SplashNiagaraActor) == 0x000700, "Member 'APyKunlunWaterfall::SplashNiagaraActor' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, SplashCloseTime) == 0x000708, "Member 'APyKunlunWaterfall::SplashCloseTime' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, QueryEnabled) == 0x00070C, "Member 'APyKunlunWaterfall::QueryEnabled' has a wrong offset!");
-static_assert(offsetof(APyKunlunWaterfall, QueryCloseTime) == 0x000710, "Member 'APyKunlunWaterfall::QueryCloseTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyKunlunWaterfall;
 
 }
 

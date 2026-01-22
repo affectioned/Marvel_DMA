@@ -51,12 +51,7 @@ public:
 	bool                                          bEnableDestroy;                                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFireWall) == 0x000008, "Wrong alignment on FFireWall");
-static_assert(sizeof(FFireWall) == 0x000038, "Wrong size on FFireWall");
-static_assert(offsetof(FFireWall, Start) == 0x000000, "Member 'FFireWall::Start' has a wrong offset!");
-static_assert(offsetof(FFireWall, End) == 0x000018, "Member 'FFireWall::End' has a wrong offset!");
-static_assert(offsetof(FFireWall, LiftTime) == 0x000030, "Member 'FFireWall::LiftTime' has a wrong offset!");
-static_assert(offsetof(FFireWall, bEnableDestroy) == 0x000034, "Member 'FFireWall::bEnableDestroy' has a wrong offset!");
+DUMPER7_ASSERTS_FFireWall;
 
 // ScriptStruct Hero_1017.ConnectedArea
 // 0x0018 (0x0018 - 0x0000)
@@ -67,10 +62,7 @@ public:
 	float                                         LowestHeight;                                      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FConnectedArea) == 0x000008, "Wrong alignment on FConnectedArea");
-static_assert(sizeof(FConnectedArea) == 0x000018, "Wrong size on FConnectedArea");
-static_assert(offsetof(FConnectedArea, Vertices) == 0x000000, "Member 'FConnectedArea::Vertices' has a wrong offset!");
-static_assert(offsetof(FConnectedArea, LowestHeight) == 0x000010, "Member 'FConnectedArea::LowestHeight' has a wrong offset!");
+DUMPER7_ASSERTS_FConnectedArea;
 
 // ScriptStruct Hero_1017.ScalarTransitionParam
 // 0x0014 (0x0014 - 0x0000)
@@ -81,11 +73,7 @@ public:
 	float                                         InitValue;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FinalValue;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FScalarTransitionParam) == 0x000004, "Wrong alignment on FScalarTransitionParam");
-static_assert(sizeof(FScalarTransitionParam) == 0x000014, "Wrong size on FScalarTransitionParam");
-static_assert(offsetof(FScalarTransitionParam, ParamterName) == 0x000000, "Member 'FScalarTransitionParam::ParamterName' has a wrong offset!");
-static_assert(offsetof(FScalarTransitionParam, InitValue) == 0x00000C, "Member 'FScalarTransitionParam::InitValue' has a wrong offset!");
-static_assert(offsetof(FScalarTransitionParam, FinalValue) == 0x000010, "Member 'FScalarTransitionParam::FinalValue' has a wrong offset!");
+DUMPER7_ASSERTS_FScalarTransitionParam;
 
 // ScriptStruct Hero_1017.VectorTransitionParam
 // 0x002C (0x002C - 0x0000)
@@ -96,11 +84,7 @@ public:
 	struct FLinearColor                           InitValue;                                         // 0x000C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           FinalValue;                                        // 0x001C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVectorTransitionParam) == 0x000004, "Wrong alignment on FVectorTransitionParam");
-static_assert(sizeof(FVectorTransitionParam) == 0x00002C, "Wrong size on FVectorTransitionParam");
-static_assert(offsetof(FVectorTransitionParam, ParamterName) == 0x000000, "Member 'FVectorTransitionParam::ParamterName' has a wrong offset!");
-static_assert(offsetof(FVectorTransitionParam, InitValue) == 0x00000C, "Member 'FVectorTransitionParam::InitValue' has a wrong offset!");
-static_assert(offsetof(FVectorTransitionParam, FinalValue) == 0x00001C, "Member 'FVectorTransitionParam::FinalValue' has a wrong offset!");
+DUMPER7_ASSERTS_FVectorTransitionParam;
 
 // ScriptStruct Hero_1017.MaterialTransitionParams
 // 0x0028 (0x0028 - 0x0000)
@@ -112,11 +96,7 @@ public:
 	TArray<struct FScalarTransitionParam>         ScalarTransParams;                                 // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVectorTransitionParam>         VectorTransParams;                                 // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialTransitionParams) == 0x000008, "Wrong alignment on FMaterialTransitionParams");
-static_assert(sizeof(FMaterialTransitionParams) == 0x000028, "Wrong size on FMaterialTransitionParams");
-static_assert(offsetof(FMaterialTransitionParams, MaterialSlot) == 0x000000, "Member 'FMaterialTransitionParams::MaterialSlot' has a wrong offset!");
-static_assert(offsetof(FMaterialTransitionParams, ScalarTransParams) == 0x000008, "Member 'FMaterialTransitionParams::ScalarTransParams' has a wrong offset!");
-static_assert(offsetof(FMaterialTransitionParams, VectorTransParams) == 0x000018, "Member 'FMaterialTransitionParams::VectorTransParams' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialTransitionParams;
 
 // ScriptStruct Hero_1017.HumanTorchMidArray
 // 0x0010 (0x0010 - 0x0000)
@@ -125,9 +105,7 @@ struct FHumanTorchMidArray final
 public:
 	TArray<class UMaterialInstanceDynamic*>       Mids;                                              // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHumanTorchMidArray) == 0x000008, "Wrong alignment on FHumanTorchMidArray");
-static_assert(sizeof(FHumanTorchMidArray) == 0x000010, "Wrong size on FHumanTorchMidArray");
-static_assert(offsetof(FHumanTorchMidArray, Mids) == 0x000000, "Member 'FHumanTorchMidArray::Mids' has a wrong offset!");
+DUMPER7_ASSERTS_FHumanTorchMidArray;
 
 }
 

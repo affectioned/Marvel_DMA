@@ -21,9 +21,7 @@ struct PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity128_BuyPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Activity128_BuyPanel.PyWidget_Activity128_BuyPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity128_BuyPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity128_BuyPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity128_BuyPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity128_BuyPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity128_BuyPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity128_BuyPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity128_BuyPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity128_BuyPanel_OnAnimationFinished;
 
 }
 

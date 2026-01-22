@@ -23,9 +23,7 @@ struct PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_RankListPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Activity122_RankListPanel.PyWidget_Activity122_RankListPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Activity122_RankListPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_RankListPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity122_RankListPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity122_RankListPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity122_RankListPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity122_RankListPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity122_RankListPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_RankListPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity122_RankListPanel.PyWidget_Activity122_RankListPanel.OnCardNavigation
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_RankListPanel_OnCardNavigation) == 0x000008, "Wrong alignment on PyWidget_Activity122_RankListPanel_OnCardNavigation");
-static_assert(sizeof(PyWidget_Activity122_RankListPanel_OnCardNavigation) == 0x000010, "Wrong size on PyWidget_Activity122_RankListPanel_OnCardNavigation");
-static_assert(offsetof(PyWidget_Activity122_RankListPanel_OnCardNavigation, NavType) == 0x000000, "Member 'PyWidget_Activity122_RankListPanel_OnCardNavigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_Activity122_RankListPanel_OnCardNavigation, ReturnValue) == 0x000008, "Member 'PyWidget_Activity122_RankListPanel_OnCardNavigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_RankListPanel_OnCardNavigation;
 
 }
 

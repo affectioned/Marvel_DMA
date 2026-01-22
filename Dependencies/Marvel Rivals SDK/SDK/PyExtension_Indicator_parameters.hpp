@@ -21,9 +21,7 @@ struct PyExtension_Indicator_BP_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Indicator_BP_OnVisibleChanged) == 0x000001, "Wrong alignment on PyExtension_Indicator_BP_OnVisibleChanged");
-static_assert(sizeof(PyExtension_Indicator_BP_OnVisibleChanged) == 0x000001, "Wrong size on PyExtension_Indicator_BP_OnVisibleChanged");
-static_assert(offsetof(PyExtension_Indicator_BP_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyExtension_Indicator_BP_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Indicator_BP_OnVisibleChanged;
 
 }
 

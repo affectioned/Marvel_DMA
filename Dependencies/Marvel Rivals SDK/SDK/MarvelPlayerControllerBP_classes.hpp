@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelPlayerControllerBP.MarvelPlayerControllerBP_C
-// 0x00A0 (0x1530 - 0x1490)
+// 0x00A0 (0x15A0 - 0x1500)
 class AMarvelPlayerControllerBP_C final : public APyMarvelPlayerController
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1488(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPythonComponent*                       Wizcmd;                                            // 0x1490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnClientCharacterBeginPlay;                        // 0x1498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class FText Message)> OnServerCmdMsg;                              // 0x14A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class FText Message)> OnShowMessage;                               // 0x14B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              Ability1ReleaseDispatcher;                         // 0x14C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              Ability2ReleaseDispatcher;                         // 0x14D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              Ability5ReleaseDispatcher;                         // 0x14E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              Ability5PressDispatcher;                           // 0x14F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FGameplayEffectSpecHandle              EffectHandle;                                      // 0x1508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	double                                        AttributeData;                                     // 0x1518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class FText Message, int32 Type)> OnShowPlayerMessage;             // 0x1520(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x14F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPythonComponent*                       Wizcmd;                                            // 0x1500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnClientCharacterBeginPlay;                        // 0x1508(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FText Message)> OnServerCmdMsg;                              // 0x1518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FText Message)> OnShowMessage;                               // 0x1528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              Ability1ReleaseDispatcher;                         // 0x1538(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              Ability2ReleaseDispatcher;                         // 0x1548(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              Ability5ReleaseDispatcher;                         // 0x1558(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              Ability5PressDispatcher;                           // 0x1568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FGameplayEffectSpecHandle              EffectHandle;                                      // 0x1578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                        AttributeData;                                     // 0x1588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class FText Message, int32 Type)> OnShowPlayerMessage;             // 0x1590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ShowMessageToChatPanelWithType(const class FString& Message, int32 Type);
@@ -51,27 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelPlayerControllerBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelPlayerControllerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelPlayerControllerBP_C")
 	}
 	static class AMarvelPlayerControllerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelPlayerControllerBP_C>();
 	}
 };
-static_assert(alignof(AMarvelPlayerControllerBP_C) == 0x000010, "Wrong alignment on AMarvelPlayerControllerBP_C");
-static_assert(sizeof(AMarvelPlayerControllerBP_C) == 0x001530, "Wrong size on AMarvelPlayerControllerBP_C");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, UberGraphFrame) == 0x001488, "Member 'AMarvelPlayerControllerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, Wizcmd) == 0x001490, "Member 'AMarvelPlayerControllerBP_C::Wizcmd' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, OnClientCharacterBeginPlay) == 0x001498, "Member 'AMarvelPlayerControllerBP_C::OnClientCharacterBeginPlay' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, OnServerCmdMsg) == 0x0014A8, "Member 'AMarvelPlayerControllerBP_C::OnServerCmdMsg' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, OnShowMessage) == 0x0014B8, "Member 'AMarvelPlayerControllerBP_C::OnShowMessage' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, Ability1ReleaseDispatcher) == 0x0014C8, "Member 'AMarvelPlayerControllerBP_C::Ability1ReleaseDispatcher' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, Ability2ReleaseDispatcher) == 0x0014D8, "Member 'AMarvelPlayerControllerBP_C::Ability2ReleaseDispatcher' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, Ability5ReleaseDispatcher) == 0x0014E8, "Member 'AMarvelPlayerControllerBP_C::Ability5ReleaseDispatcher' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, Ability5PressDispatcher) == 0x0014F8, "Member 'AMarvelPlayerControllerBP_C::Ability5PressDispatcher' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, EffectHandle) == 0x001508, "Member 'AMarvelPlayerControllerBP_C::EffectHandle' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, AttributeData) == 0x001518, "Member 'AMarvelPlayerControllerBP_C::AttributeData' has a wrong offset!");
-static_assert(offsetof(AMarvelPlayerControllerBP_C, OnShowPlayerMessage) == 0x001520, "Member 'AMarvelPlayerControllerBP_C::OnShowPlayerMessage' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelPlayerControllerBP_C;
 
 }
 

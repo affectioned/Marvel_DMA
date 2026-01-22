@@ -46,12 +46,7 @@ public:
 	float                                         ClimbingHorizontalAngle;                           // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CameraArmLengthInClimb;                            // 0x000C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHulkClimbParam) == 0x000004, "Wrong alignment on FHulkClimbParam");
-static_assert(sizeof(FHulkClimbParam) == 0x000010, "Wrong size on FHulkClimbParam");
-static_assert(offsetof(FHulkClimbParam, DistanceToWall) == 0x000000, "Member 'FHulkClimbParam::DistanceToWall' has a wrong offset!");
-static_assert(offsetof(FHulkClimbParam, ClimbingAngle) == 0x000004, "Member 'FHulkClimbParam::ClimbingAngle' has a wrong offset!");
-static_assert(offsetof(FHulkClimbParam, ClimbingHorizontalAngle) == 0x000008, "Member 'FHulkClimbParam::ClimbingHorizontalAngle' has a wrong offset!");
-static_assert(offsetof(FHulkClimbParam, CameraArmLengthInClimb) == 0x00000C, "Member 'FHulkClimbParam::CameraArmLengthInClimb' has a wrong offset!");
+DUMPER7_ASSERTS_FHulkClimbParam;
 
 // ScriptStruct Hero_1011.EnergyData
 // 0x0008 (0x0008 - 0x0000)
@@ -60,8 +55,7 @@ struct alignas(0x04) FEnergyData final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FEnergyData) == 0x000004, "Wrong alignment on FEnergyData");
-static_assert(sizeof(FEnergyData) == 0x000008, "Wrong size on FEnergyData");
+DUMPER7_ASSERTS_FEnergyData;
 
 // ScriptStruct Hero_1011.Projectile_ExtendedConfig_101122
 // 0x0058 (0x0060 - 0x0008)
@@ -72,10 +66,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, float>                            ReduceCDInfo;                                      // 0x0010(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FProjectile_ExtendedConfig_101122) == 0x000008, "Wrong alignment on FProjectile_ExtendedConfig_101122");
-static_assert(sizeof(FProjectile_ExtendedConfig_101122) == 0x000060, "Wrong size on FProjectile_ExtendedConfig_101122");
-static_assert(offsetof(FProjectile_ExtendedConfig_101122, bHitReduceCD) == 0x000008, "Member 'FProjectile_ExtendedConfig_101122::bHitReduceCD' has a wrong offset!");
-static_assert(offsetof(FProjectile_ExtendedConfig_101122, ReduceCDInfo) == 0x000010, "Member 'FProjectile_ExtendedConfig_101122::ReduceCDInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectile_ExtendedConfig_101122;
 
 // ScriptStruct Hero_1011.HulkJumpParam
 // 0x0078 (0x0078 - 0x0000)
@@ -112,34 +103,7 @@ public:
 	bool                                          bCheckWallValidWhileClimbing;                      // 0x0074(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHulkJumpParam) == 0x000004, "Wrong alignment on FHulkJumpParam");
-static_assert(sizeof(FHulkJumpParam) == 0x000078, "Wrong size on FHulkJumpParam");
-static_assert(offsetof(FHulkJumpParam, ShiftJumpAbilityID) == 0x000000, "Member 'FHulkJumpParam::ShiftJumpAbilityID' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpTimeOnWall) == 0x000004, "Member 'FHulkJumpParam::JumpTimeOnWall' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpTimeOnFloor) == 0x000008, "Member 'FHulkJumpParam::JumpTimeOnFloor' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpPitchMin) == 0x00000C, "Member 'FHulkJumpParam::JumpPitchMin' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpPitchMax) == 0x000010, "Member 'FHulkJumpParam::JumpPitchMax' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpPitchOffset) == 0x000014, "Member 'FHulkJumpParam::JumpPitchOffset' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpPitchOffsetOnSlope) == 0x000018, "Member 'FHulkJumpParam::JumpPitchOffsetOnSlope' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpUpGravityScale) == 0x00001C, "Member 'FHulkJumpParam::JumpUpGravityScale' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpDownGravityScale) == 0x000020, "Member 'FHulkJumpParam::JumpDownGravityScale' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpBlockGravityScale) == 0x000024, "Member 'FHulkJumpParam::JumpBlockGravityScale' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpHitWallDownGravityScale) == 0x000028, "Member 'FHulkJumpParam::JumpHitWallDownGravityScale' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, MaxAcceleration) == 0x00002C, "Member 'FHulkJumpParam::MaxAcceleration' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, bNeedPredictLand) == 0x000030, "Member 'FHulkJumpParam::bNeedPredictLand' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, MinLandTime) == 0x000034, "Member 'FHulkJumpParam::MinLandTime' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpLandPermitHeight) == 0x000038, "Member 'FHulkJumpParam::JumpLandPermitHeight' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpLandHoldingTime) == 0x00003C, "Member 'FHulkJumpParam::JumpLandHoldingTime' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, SpecialJumpLandHoldingTime) == 0x000040, "Member 'FHulkJumpParam::SpecialJumpLandHoldingTime' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpLandAttackTag) == 0x000044, "Member 'FHulkJumpParam::JumpLandAttackTag' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpRecoveryAnimSeconds) == 0x000050, "Member 'FHulkJumpParam::JumpRecoveryAnimSeconds' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, JumpRecoveryEndTag) == 0x000054, "Member 'FHulkJumpParam::JumpRecoveryEndTag' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, ClimbAbilityID) == 0x000060, "Member 'FHulkJumpParam::ClimbAbilityID' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, bDrawJumpDebugInfo) == 0x000064, "Member 'FHulkJumpParam::bDrawJumpDebugInfo' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, ServerDropClientMovePingThreshold) == 0x000068, "Member 'FHulkJumpParam::ServerDropClientMovePingThreshold' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, ServerDropClientMoveMinInterval) == 0x00006C, "Member 'FHulkJumpParam::ServerDropClientMoveMinInterval' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, ServerDropClientMoveMaxInterval) == 0x000070, "Member 'FHulkJumpParam::ServerDropClientMoveMaxInterval' has a wrong offset!");
-static_assert(offsetof(FHulkJumpParam, bCheckWallValidWhileClimbing) == 0x000074, "Member 'FHulkJumpParam::bCheckWallValidWhileClimbing' has a wrong offset!");
+DUMPER7_ASSERTS_FHulkJumpParam;
 
 }
 

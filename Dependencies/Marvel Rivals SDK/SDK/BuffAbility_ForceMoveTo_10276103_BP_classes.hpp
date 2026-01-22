@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_ForceMoveTo_10276103_BP.BuffAbility_ForceMoveTo_10276103_BP_C
-// 0x0000 (0x2088 - 0x2088)
+// 0x0000 (0x23C0 - 0x23C0)
 class UBuffAbility_ForceMoveTo_10276103_BP_C final : public UBuffAbility_ForceMoveTo_10276103
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_ForceMoveTo_10276103_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_ForceMoveTo_10276103_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_ForceMoveTo_10276103_BP_C")
 	}
 	static class UBuffAbility_ForceMoveTo_10276103_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_ForceMoveTo_10276103_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_ForceMoveTo_10276103_BP_C) == 0x000008, "Wrong alignment on UBuffAbility_ForceMoveTo_10276103_BP_C");
-static_assert(sizeof(UBuffAbility_ForceMoveTo_10276103_BP_C) == 0x002088, "Wrong size on UBuffAbility_ForceMoveTo_10276103_BP_C");
+DUMPER7_ASSERTS_UBuffAbility_ForceMoveTo_10276103_BP_C;
 
 }
 

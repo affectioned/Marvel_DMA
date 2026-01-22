@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         NewScale;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerBigHeadStateComponent_BroadcastInstanceEffect) == 0x000004, "Wrong alignment on PyPlayerBigHeadStateComponent_BroadcastInstanceEffect");
-static_assert(sizeof(PyPlayerBigHeadStateComponent_BroadcastInstanceEffect) == 0x000008, "Wrong size on PyPlayerBigHeadStateComponent_BroadcastInstanceEffect");
-static_assert(offsetof(PyPlayerBigHeadStateComponent_BroadcastInstanceEffect, IsMax) == 0x000000, "Member 'PyPlayerBigHeadStateComponent_BroadcastInstanceEffect::IsMax' has a wrong offset!");
-static_assert(offsetof(PyPlayerBigHeadStateComponent_BroadcastInstanceEffect, NewScale) == 0x000004, "Member 'PyPlayerBigHeadStateComponent_BroadcastInstanceEffect::NewScale' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerBigHeadStateComponent_BroadcastInstanceEffect;
 
 // PythonFunction PyBigHeadRuleComponent.PyBigHeadRuleComponent.OnPlayerStateAdded
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +34,7 @@ struct PyBigHeadRuleComponent_OnPlayerStateAdded final
 public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBigHeadRuleComponent_OnPlayerStateAdded) == 0x000008, "Wrong alignment on PyBigHeadRuleComponent_OnPlayerStateAdded");
-static_assert(sizeof(PyBigHeadRuleComponent_OnPlayerStateAdded) == 0x000008, "Wrong size on PyBigHeadRuleComponent_OnPlayerStateAdded");
-static_assert(offsetof(PyBigHeadRuleComponent_OnPlayerStateAdded, PlayerState) == 0x000000, "Member 'PyBigHeadRuleComponent_OnPlayerStateAdded::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBigHeadRuleComponent_OnPlayerStateAdded;
 
 // PythonFunction PyBigHeadRuleComponent.PyBigHeadRuleComponent.OnActorDeath
 // 0x0030 (0x0030 - 0x0000)
@@ -51,12 +46,7 @@ public:
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyBigHeadRuleComponent_OnActorDeath) == 0x000008, "Wrong alignment on PyBigHeadRuleComponent_OnActorDeath");
-static_assert(sizeof(PyBigHeadRuleComponent_OnActorDeath) == 0x000030, "Wrong size on PyBigHeadRuleComponent_OnActorDeath");
-static_assert(offsetof(PyBigHeadRuleComponent_OnActorDeath, Killer) == 0x000000, "Member 'PyBigHeadRuleComponent_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(PyBigHeadRuleComponent_OnActorDeath, Target) == 0x000008, "Member 'PyBigHeadRuleComponent_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PyBigHeadRuleComponent_OnActorDeath, ParameterHandle) == 0x000010, "Member 'PyBigHeadRuleComponent_OnActorDeath::ParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyBigHeadRuleComponent_OnActorDeath, ExtraData) == 0x000028, "Member 'PyBigHeadRuleComponent_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyBigHeadRuleComponent_OnActorDeath;
 
 // PythonFunction PyBigHeadRuleComponent.PyBigHeadRuleComponent.OnGlobalCharacterRegister
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +55,7 @@ struct PyBigHeadRuleComponent_OnGlobalCharacterRegister final
 public:
 	class AActor*                                 Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBigHeadRuleComponent_OnGlobalCharacterRegister) == 0x000008, "Wrong alignment on PyBigHeadRuleComponent_OnGlobalCharacterRegister");
-static_assert(sizeof(PyBigHeadRuleComponent_OnGlobalCharacterRegister) == 0x000008, "Wrong size on PyBigHeadRuleComponent_OnGlobalCharacterRegister");
-static_assert(offsetof(PyBigHeadRuleComponent_OnGlobalCharacterRegister, Character) == 0x000000, "Member 'PyBigHeadRuleComponent_OnGlobalCharacterRegister::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyBigHeadRuleComponent_OnGlobalCharacterRegister;
 
 }
 

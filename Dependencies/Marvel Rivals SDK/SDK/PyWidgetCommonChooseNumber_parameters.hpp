@@ -21,9 +21,7 @@ struct PyWidgetCommonChooseNumber_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetCommonChooseNumber_PreConstruct) == 0x000001, "Wrong alignment on PyWidgetCommonChooseNumber_PreConstruct");
-static_assert(sizeof(PyWidgetCommonChooseNumber_PreConstruct) == 0x000001, "Wrong size on PyWidgetCommonChooseNumber_PreConstruct");
-static_assert(offsetof(PyWidgetCommonChooseNumber_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidgetCommonChooseNumber_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetCommonChooseNumber_PreConstruct;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidgetCommonChooseNumber.SubmitText
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidgetCommonChooseNumber_SubmitText final
 public:
 	class FString                                 TextStr;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetCommonChooseNumber_SubmitText) == 0x000008, "Wrong alignment on PyWidgetCommonChooseNumber_SubmitText");
-static_assert(sizeof(PyWidgetCommonChooseNumber_SubmitText) == 0x000010, "Wrong size on PyWidgetCommonChooseNumber_SubmitText");
-static_assert(offsetof(PyWidgetCommonChooseNumber_SubmitText, TextStr) == 0x000000, "Member 'PyWidgetCommonChooseNumber_SubmitText::TextStr' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetCommonChooseNumber_SubmitText;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidgetCommonChooseNumber.ChangeText
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidgetCommonChooseNumber_ChangeText final
 public:
 	class FString                                 TextStr;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetCommonChooseNumber_ChangeText) == 0x000008, "Wrong alignment on PyWidgetCommonChooseNumber_ChangeText");
-static_assert(sizeof(PyWidgetCommonChooseNumber_ChangeText) == 0x000010, "Wrong size on PyWidgetCommonChooseNumber_ChangeText");
-static_assert(offsetof(PyWidgetCommonChooseNumber_ChangeText, TextStr) == 0x000000, "Member 'PyWidgetCommonChooseNumber_ChangeText::TextStr' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetCommonChooseNumber_ChangeText;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidgetCommonChooseNumber.ChangeDisplayTextVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidgetCommonChooseNumber_ChangeDisplayTextVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetCommonChooseNumber_ChangeDisplayTextVisible) == 0x000001, "Wrong alignment on PyWidgetCommonChooseNumber_ChangeDisplayTextVisible");
-static_assert(sizeof(PyWidgetCommonChooseNumber_ChangeDisplayTextVisible) == 0x000001, "Wrong size on PyWidgetCommonChooseNumber_ChangeDisplayTextVisible");
-static_assert(offsetof(PyWidgetCommonChooseNumber_ChangeDisplayTextVisible, Visible) == 0x000000, "Member 'PyWidgetCommonChooseNumber_ChangeDisplayTextVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetCommonChooseNumber_ChangeDisplayTextVisible;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidget_CommonButton_AddNum.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_CommonButton_AddNum_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_AddNum_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_CommonButton_AddNum_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_CommonButton_AddNum_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_CommonButton_AddNum_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_CommonButton_AddNum_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_CommonButton_AddNum_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_AddNum_SetBtnIsPressed;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidget_CommonButton_AddNum.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_CommonButton_AddNum_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_AddNum_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CommonButton_AddNum_SetIsHover");
-static_assert(sizeof(PyWidget_CommonButton_AddNum_SetIsHover) == 0x000001, "Wrong size on PyWidget_CommonButton_AddNum_SetIsHover");
-static_assert(offsetof(PyWidget_CommonButton_AddNum_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CommonButton_AddNum_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_AddNum_SetIsHover;
 
 // PythonFunction PyWidgetCommonChooseNumber.PyWidget_CommonButton_AddNum.SetBtnIsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +75,7 @@ struct PyWidget_CommonButton_AddNum_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_AddNum_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_CommonButton_AddNum_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_CommonButton_AddNum_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_CommonButton_AddNum_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_CommonButton_AddNum_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_CommonButton_AddNum_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_AddNum_SetBtnIsEnabled;
 
 }
 

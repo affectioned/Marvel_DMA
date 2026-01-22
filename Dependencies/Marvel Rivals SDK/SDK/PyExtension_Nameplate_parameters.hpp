@@ -21,9 +21,7 @@ struct PyExtension_Nameplate_BP_OnCascadingVisibleChanged final
 public:
 	bool                                          bCascadingVisible;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Nameplate_BP_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyExtension_Nameplate_BP_OnCascadingVisibleChanged");
-static_assert(sizeof(PyExtension_Nameplate_BP_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyExtension_Nameplate_BP_OnCascadingVisibleChanged");
-static_assert(offsetof(PyExtension_Nameplate_BP_OnCascadingVisibleChanged, bCascadingVisible) == 0x000000, "Member 'PyExtension_Nameplate_BP_OnCascadingVisibleChanged::bCascadingVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Nameplate_BP_OnCascadingVisibleChanged;
 
 // PythonFunction PyExtension_Nameplate.PyExtension_Nameplate.OnSpineAnimationComplete
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyExtension_Nameplate_OnSpineAnimationComplete final
 public:
 	class UTrackEntry*                            entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Nameplate_OnSpineAnimationComplete) == 0x000008, "Wrong alignment on PyExtension_Nameplate_OnSpineAnimationComplete");
-static_assert(sizeof(PyExtension_Nameplate_OnSpineAnimationComplete) == 0x000008, "Wrong size on PyExtension_Nameplate_OnSpineAnimationComplete");
-static_assert(offsetof(PyExtension_Nameplate_OnSpineAnimationComplete, entry) == 0x000000, "Member 'PyExtension_Nameplate_OnSpineAnimationComplete::entry' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Nameplate_OnSpineAnimationComplete;
 
 }
 

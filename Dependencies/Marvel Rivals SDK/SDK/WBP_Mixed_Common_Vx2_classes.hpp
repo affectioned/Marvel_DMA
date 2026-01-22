@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mixed_Common_Vx2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mixed_Common_Vx2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mixed_Common_Vx2_C")
 	}
 	static class UWBP_Mixed_Common_Vx2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mixed_Common_Vx2_C>();
 	}
 };
-static_assert(alignof(UWBP_Mixed_Common_Vx2_C) == 0x000008, "Wrong alignment on UWBP_Mixed_Common_Vx2_C");
-static_assert(sizeof(UWBP_Mixed_Common_Vx2_C) == 0x0003D0, "Wrong size on UWBP_Mixed_Common_Vx2_C");
-static_assert(offsetof(UWBP_Mixed_Common_Vx2_C, Anim_FadeIn) == 0x0003B8, "Member 'UWBP_Mixed_Common_Vx2_C::Anim_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_Mixed_Common_Vx2_C, Img_Common_Add_Vx) == 0x0003C0, "Member 'UWBP_Mixed_Common_Vx2_C::Img_Common_Add_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Mixed_Common_Vx2_C, Img_Common_Vx) == 0x0003C8, "Member 'UWBP_Mixed_Common_Vx2_C::Img_Common_Vx' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mixed_Common_Vx2_C;
 
 }
 

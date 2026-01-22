@@ -24,11 +24,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      FxComponent;                                       // 0x0008(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHelaFXInfo) == 0x000008, "Wrong alignment on FHelaFXInfo");
-static_assert(sizeof(FHelaFXInfo) == 0x000010, "Wrong size on FHelaFXInfo");
-static_assert(offsetof(FHelaFXInfo, DelaySeconds) == 0x000000, "Member 'FHelaFXInfo::DelaySeconds' has a wrong offset!");
-static_assert(offsetof(FHelaFXInfo, EnableTick) == 0x000004, "Member 'FHelaFXInfo::EnableTick' has a wrong offset!");
-static_assert(offsetof(FHelaFXInfo, FxComponent) == 0x000008, "Member 'FHelaFXInfo::FxComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FHelaFXInfo;
 
 }
 

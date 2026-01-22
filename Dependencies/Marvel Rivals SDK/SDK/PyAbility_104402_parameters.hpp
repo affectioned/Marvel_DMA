@@ -23,9 +23,7 @@ struct PyAbility_104402_OnVampireActivated final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnVampireActivated) == 0x000008, "Wrong alignment on PyAbility_104402_OnVampireActivated");
-static_assert(sizeof(PyAbility_104402_OnVampireActivated) == 0x000008, "Wrong size on PyAbility_104402_OnVampireActivated");
-static_assert(offsetof(PyAbility_104402_OnVampireActivated, Ability) == 0x000000, "Member 'PyAbility_104402_OnVampireActivated::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnVampireActivated;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.OnVampireEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_104402_OnVampireEnd final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnVampireEnd) == 0x000008, "Wrong alignment on PyAbility_104402_OnVampireEnd");
-static_assert(sizeof(PyAbility_104402_OnVampireEnd) == 0x000008, "Wrong size on PyAbility_104402_OnVampireEnd");
-static_assert(offsetof(PyAbility_104402_OnVampireEnd, Ability) == 0x000000, "Member 'PyAbility_104402_OnVampireEnd::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnVampireEnd;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.OnPressOne
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_104402_OnPressOne final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnPressOne) == 0x000004, "Wrong alignment on PyAbility_104402_OnPressOne");
-static_assert(sizeof(PyAbility_104402_OnPressOne) == 0x000004, "Wrong size on PyAbility_104402_OnPressOne");
-static_assert(offsetof(PyAbility_104402_OnPressOne, TimeWaited) == 0x000000, "Member 'PyAbility_104402_OnPressOne::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnPressOne;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.OnPressTwo
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAbility_104402_OnPressTwo final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnPressTwo) == 0x000004, "Wrong alignment on PyAbility_104402_OnPressTwo");
-static_assert(sizeof(PyAbility_104402_OnPressTwo) == 0x000004, "Wrong size on PyAbility_104402_OnPressTwo");
-static_assert(offsetof(PyAbility_104402_OnPressTwo, TimeWaited) == 0x000000, "Member 'PyAbility_104402_OnPressTwo::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnPressTwo;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.OnMouseWheel
 // 0x0004 (0x0004 - 0x0000)
@@ -67,9 +59,7 @@ struct PyAbility_104402_OnMouseWheel final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnMouseWheel) == 0x000004, "Wrong alignment on PyAbility_104402_OnMouseWheel");
-static_assert(sizeof(PyAbility_104402_OnMouseWheel) == 0x000004, "Wrong size on PyAbility_104402_OnMouseWheel");
-static_assert(offsetof(PyAbility_104402_OnMouseWheel, TimeWaited) == 0x000000, "Member 'PyAbility_104402_OnMouseWheel::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnMouseWheel;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.K2_OnClientActivateAbilityRejected
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +68,7 @@ struct PyAbility_104402_K2_OnClientActivateAbilityRejected final
 public:
 	bool                                          bIsCurrentActivation;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong alignment on PyAbility_104402_K2_OnClientActivateAbilityRejected");
-static_assert(sizeof(PyAbility_104402_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong size on PyAbility_104402_K2_OnClientActivateAbilityRejected");
-static_assert(offsetof(PyAbility_104402_K2_OnClientActivateAbilityRejected, bIsCurrentActivation) == 0x000000, "Member 'PyAbility_104402_K2_OnClientActivateAbilityRejected::bIsCurrentActivation' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_K2_OnClientActivateAbilityRejected;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.ClientCheckPassedMissileAndRevert
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +77,7 @@ struct PyAbility_104402_ClientCheckPassedMissileAndRevert final
 public:
 	bool                                          ShouldEquipGun;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_ClientCheckPassedMissileAndRevert) == 0x000001, "Wrong alignment on PyAbility_104402_ClientCheckPassedMissileAndRevert");
-static_assert(sizeof(PyAbility_104402_ClientCheckPassedMissileAndRevert) == 0x000001, "Wrong size on PyAbility_104402_ClientCheckPassedMissileAndRevert");
-static_assert(offsetof(PyAbility_104402_ClientCheckPassedMissileAndRevert, ShouldEquipGun) == 0x000000, "Member 'PyAbility_104402_ClientCheckPassedMissileAndRevert::ShouldEquipGun' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_ClientCheckPassedMissileAndRevert;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.GetTimelineIndexToPlay
 // 0x0004 (0x0004 - 0x0000)
@@ -100,9 +86,7 @@ struct PyAbility_104402_GetTimelineIndexToPlay final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_GetTimelineIndexToPlay) == 0x000004, "Wrong alignment on PyAbility_104402_GetTimelineIndexToPlay");
-static_assert(sizeof(PyAbility_104402_GetTimelineIndexToPlay) == 0x000004, "Wrong size on PyAbility_104402_GetTimelineIndexToPlay");
-static_assert(offsetof(PyAbility_104402_GetTimelineIndexToPlay, ReturnValue) == 0x000000, "Member 'PyAbility_104402_GetTimelineIndexToPlay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_GetTimelineIndexToPlay;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.SetShotgunEquipped
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +95,7 @@ struct PyAbility_104402_SetShotgunEquipped final
 public:
 	bool                                          bEquipped;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_SetShotgunEquipped) == 0x000001, "Wrong alignment on PyAbility_104402_SetShotgunEquipped");
-static_assert(sizeof(PyAbility_104402_SetShotgunEquipped) == 0x000001, "Wrong size on PyAbility_104402_SetShotgunEquipped");
-static_assert(offsetof(PyAbility_104402_SetShotgunEquipped, bEquipped) == 0x000000, "Member 'PyAbility_104402_SetShotgunEquipped::bEquipped' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_SetShotgunEquipped;
 
 // PythonFunction PyAbility_104402.PyAbility_104402.OnWeaponSculptChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -122,9 +104,7 @@ struct PyAbility_104402_OnWeaponSculptChanged final
 public:
 	EBladeSculpt                                  WeaponSculpt;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104402_OnWeaponSculptChanged) == 0x000001, "Wrong alignment on PyAbility_104402_OnWeaponSculptChanged");
-static_assert(sizeof(PyAbility_104402_OnWeaponSculptChanged) == 0x000001, "Wrong size on PyAbility_104402_OnWeaponSculptChanged");
-static_assert(offsetof(PyAbility_104402_OnWeaponSculptChanged, WeaponSculpt) == 0x000000, "Member 'PyAbility_104402_OnWeaponSculptChanged::WeaponSculpt' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104402_OnWeaponSculptChanged;
 
 }
 

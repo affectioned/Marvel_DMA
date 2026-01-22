@@ -10,25 +10,55 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
+// PythonClass PyWidget_Mood_Group.PyWidget_Mood_GroupList
+// 0x0018 (0x05E0 - 0x05C8)
+class UPyWidget_Mood_GroupList final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                GroupWidgetClass;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSelectItem;                        // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Mood_GroupList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_GroupList")
+	}
+	static class UPyWidget_Mood_GroupList* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Mood_GroupList>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Mood_GroupList;
+
 // PythonClass PyWidget_Mood_Group.PyWidget_Mood_Group
-// 0x0030 (0x0600 - 0x05D0)
+// 0x0030 (0x0608 - 0x05D8)
 class UPyWidget_Mood_Group final : public UPyWidget_CareerCustomizeItemListBase
 {
 public:
-	TSubclassOf<class UUserWidget>                ItemWidgetClass;                                   // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemType                                     ItemType;                                          // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ItemSize;                                          // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDispalyListChanged;                              // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ItemWidgetClass;                                   // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemType                                     ItemType;                                          // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ItemSize;                                          // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDispalyListChanged;                              // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,48 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mood_Group">();
+		STATIC_CLASS_IMPL("PyWidget_Mood_Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_Group")
 	}
 	static class UPyWidget_Mood_Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mood_Group>();
 	}
 };
-static_assert(alignof(UPyWidget_Mood_Group) == 0x000008, "Wrong alignment on UPyWidget_Mood_Group");
-static_assert(sizeof(UPyWidget_Mood_Group) == 0x000600, "Wrong size on UPyWidget_Mood_Group");
-static_assert(offsetof(UPyWidget_Mood_Group, ItemWidgetClass) == 0x0005D0, "Member 'UPyWidget_Mood_Group::ItemWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mood_Group, ItemType) == 0x0005D8, "Member 'UPyWidget_Mood_Group::ItemType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mood_Group, ItemSize) == 0x0005E0, "Member 'UPyWidget_Mood_Group::ItemSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mood_Group, OnDispalyListChanged) == 0x0005F0, "Member 'UPyWidget_Mood_Group::OnDispalyListChanged' has a wrong offset!");
-
-// PythonClass PyWidget_Mood_Group.PyWidget_Mood_GroupList
-// 0x0018 (0x05D8 - 0x05C0)
-class UPyWidget_Mood_GroupList final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                GroupWidgetClass;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnSelectItem;                        // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Mood_GroupList">();
-	}
-	static class UPyWidget_Mood_GroupList* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Mood_GroupList>();
-	}
-};
-static_assert(alignof(UPyWidget_Mood_GroupList) == 0x000008, "Wrong alignment on UPyWidget_Mood_GroupList");
-static_assert(sizeof(UPyWidget_Mood_GroupList) == 0x0005D8, "Wrong size on UPyWidget_Mood_GroupList");
-static_assert(offsetof(UPyWidget_Mood_GroupList, GroupWidgetClass) == 0x0005C0, "Member 'UPyWidget_Mood_GroupList::GroupWidgetClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mood_GroupList, OnSelectItem) == 0x0005C8, "Member 'UPyWidget_Mood_GroupList::OnSelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mood_Group;
 
 }
 

@@ -21,9 +21,7 @@ struct PyLevelController_SelectHero_Tokyo_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelController_SelectHero_Tokyo_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelController_SelectHero_Tokyo_ReceiveTick");
-static_assert(sizeof(PyLevelController_SelectHero_Tokyo_ReceiveTick) == 0x000004, "Wrong size on PyLevelController_SelectHero_Tokyo_ReceiveTick");
-static_assert(offsetof(PyLevelController_SelectHero_Tokyo_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelController_SelectHero_Tokyo_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelController_SelectHero_Tokyo_ReceiveTick;
 
 }
 

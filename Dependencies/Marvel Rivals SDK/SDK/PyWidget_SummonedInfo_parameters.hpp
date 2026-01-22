@@ -23,9 +23,7 @@ struct PyWidget_SummonedNum_SetTotalNumCur final
 public:
 	int32                                         InTotalNumCur;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedNum_SetTotalNumCur) == 0x000004, "Wrong alignment on PyWidget_SummonedNum_SetTotalNumCur");
-static_assert(sizeof(PyWidget_SummonedNum_SetTotalNumCur) == 0x000004, "Wrong size on PyWidget_SummonedNum_SetTotalNumCur");
-static_assert(offsetof(PyWidget_SummonedNum_SetTotalNumCur, InTotalNumCur) == 0x000000, "Member 'PyWidget_SummonedNum_SetTotalNumCur::InTotalNumCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedNum_SetTotalNumCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedNum.SetTotalNumMax
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_SummonedNum_SetTotalNumMax final
 public:
 	int32                                         InTotalNumMax;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedNum_SetTotalNumMax) == 0x000004, "Wrong alignment on PyWidget_SummonedNum_SetTotalNumMax");
-static_assert(sizeof(PyWidget_SummonedNum_SetTotalNumMax) == 0x000004, "Wrong size on PyWidget_SummonedNum_SetTotalNumMax");
-static_assert(offsetof(PyWidget_SummonedNum_SetTotalNumMax, InTotalNumMax) == 0x000000, "Member 'PyWidget_SummonedNum_SetTotalNumMax::InTotalNumMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedNum_SetTotalNumMax;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedNum.SetSummonedDesc
 // 0x0018 (0x0018 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_SummonedNum_SetSummonedDesc final
 public:
 	class FText                                   InDesc;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SummonedNum_SetSummonedDesc) == 0x000008, "Wrong alignment on PyWidget_SummonedNum_SetSummonedDesc");
-static_assert(sizeof(PyWidget_SummonedNum_SetSummonedDesc) == 0x000018, "Wrong size on PyWidget_SummonedNum_SetSummonedDesc");
-static_assert(offsetof(PyWidget_SummonedNum_SetSummonedDesc, InDesc) == 0x000000, "Member 'PyWidget_SummonedNum_SetSummonedDesc::InDesc' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedNum_SetSummonedDesc;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedNum.SetStyle
 // 0x0030 (0x0030 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_SummonedNum_SetStyle final
 public:
 	struct FWidgetStyle_HealthBar_BattlePanel     WidgetStyle;                                       // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_SummonedNum_SetStyle) == 0x000008, "Wrong alignment on PyWidget_SummonedNum_SetStyle");
-static_assert(sizeof(PyWidget_SummonedNum_SetStyle) == 0x000030, "Wrong size on PyWidget_SummonedNum_SetStyle");
-static_assert(offsetof(PyWidget_SummonedNum_SetStyle, WidgetStyle) == 0x000000, "Member 'PyWidget_SummonedNum_SetStyle::WidgetStyle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedNum_SetStyle;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedNum.SetIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_SummonedNum_SetIcon final
 public:
 	TSoftObjectPtr<class UTexture2D>              InIcon;                                            // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedNum_SetIcon) == 0x000008, "Wrong alignment on PyWidget_SummonedNum_SetIcon");
-static_assert(sizeof(PyWidget_SummonedNum_SetIcon) == 0x000030, "Wrong size on PyWidget_SummonedNum_SetIcon");
-static_assert(offsetof(PyWidget_SummonedNum_SetIcon, InIcon) == 0x000000, "Member 'PyWidget_SummonedNum_SetIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedNum_SetIcon;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedHpBar.SetTotalHpCur
 // 0x0004 (0x0004 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_SummonedHpBar_SetTotalHpCur final
 public:
 	float                                         InTotalHpCur;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedHpBar_SetTotalHpCur) == 0x000004, "Wrong alignment on PyWidget_SummonedHpBar_SetTotalHpCur");
-static_assert(sizeof(PyWidget_SummonedHpBar_SetTotalHpCur) == 0x000004, "Wrong size on PyWidget_SummonedHpBar_SetTotalHpCur");
-static_assert(offsetof(PyWidget_SummonedHpBar_SetTotalHpCur, InTotalHpCur) == 0x000000, "Member 'PyWidget_SummonedHpBar_SetTotalHpCur::InTotalHpCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedHpBar_SetTotalHpCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedHpBar.SetSummonedDesc
 // 0x0018 (0x0018 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_SummonedHpBar_SetSummonedDesc final
 public:
 	class FText                                   InDesc;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SummonedHpBar_SetSummonedDesc) == 0x000008, "Wrong alignment on PyWidget_SummonedHpBar_SetSummonedDesc");
-static_assert(sizeof(PyWidget_SummonedHpBar_SetSummonedDesc) == 0x000018, "Wrong size on PyWidget_SummonedHpBar_SetSummonedDesc");
-static_assert(offsetof(PyWidget_SummonedHpBar_SetSummonedDesc, InDesc) == 0x000000, "Member 'PyWidget_SummonedHpBar_SetSummonedDesc::InDesc' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedHpBar_SetSummonedDesc;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedHpBar.SetStyle
 // 0x0030 (0x0030 - 0x0000)
@@ -100,9 +86,7 @@ struct PyWidget_SummonedHpBar_SetStyle final
 public:
 	struct FWidgetStyle_HealthBar_BattlePanel     WidgetStyle;                                       // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_SummonedHpBar_SetStyle) == 0x000008, "Wrong alignment on PyWidget_SummonedHpBar_SetStyle");
-static_assert(sizeof(PyWidget_SummonedHpBar_SetStyle) == 0x000030, "Wrong size on PyWidget_SummonedHpBar_SetStyle");
-static_assert(offsetof(PyWidget_SummonedHpBar_SetStyle, WidgetStyle) == 0x000000, "Member 'PyWidget_SummonedHpBar_SetStyle::WidgetStyle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedHpBar_SetStyle;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedHpBar.SetIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -111,9 +95,7 @@ struct PyWidget_SummonedHpBar_SetIcon final
 public:
 	TSoftObjectPtr<class UTexture2D>              InIcon;                                            // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedHpBar_SetIcon) == 0x000008, "Wrong alignment on PyWidget_SummonedHpBar_SetIcon");
-static_assert(sizeof(PyWidget_SummonedHpBar_SetIcon) == 0x000030, "Wrong size on PyWidget_SummonedHpBar_SetIcon");
-static_assert(offsetof(PyWidget_SummonedHpBar_SetIcon, InIcon) == 0x000000, "Member 'PyWidget_SummonedHpBar_SetIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedHpBar_SetIcon;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedHpBar.SetTargetActor
 // 0x0008 (0x0008 - 0x0000)
@@ -122,9 +104,7 @@ struct PyWidget_SummonedHpBar_SetTargetActor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedHpBar_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_SummonedHpBar_SetTargetActor");
-static_assert(sizeof(PyWidget_SummonedHpBar_SetTargetActor) == 0x000008, "Wrong size on PyWidget_SummonedHpBar_SetTargetActor");
-static_assert(offsetof(PyWidget_SummonedHpBar_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_SummonedHpBar_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedHpBar_SetTargetActor;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetIsHp
 // 0x0001 (0x0001 - 0x0000)
@@ -133,9 +113,7 @@ struct PyWidget_SummonedInfo_SetIsHp final
 public:
 	bool                                          InIsHP;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetIsHp) == 0x000001, "Wrong alignment on PyWidget_SummonedInfo_SetIsHp");
-static_assert(sizeof(PyWidget_SummonedInfo_SetIsHp) == 0x000001, "Wrong size on PyWidget_SummonedInfo_SetIsHp");
-static_assert(offsetof(PyWidget_SummonedInfo_SetIsHp, InIsHP) == 0x000000, "Member 'PyWidget_SummonedInfo_SetIsHp::InIsHP' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetIsHp;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetTotalHpCur
 // 0x0004 (0x0004 - 0x0000)
@@ -144,9 +122,7 @@ struct PyWidget_SummonedInfo_SetTotalHpCur final
 public:
 	float                                         InTotalHpCur;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetTotalHpCur) == 0x000004, "Wrong alignment on PyWidget_SummonedInfo_SetTotalHpCur");
-static_assert(sizeof(PyWidget_SummonedInfo_SetTotalHpCur) == 0x000004, "Wrong size on PyWidget_SummonedInfo_SetTotalHpCur");
-static_assert(offsetof(PyWidget_SummonedInfo_SetTotalHpCur, InTotalHpCur) == 0x000000, "Member 'PyWidget_SummonedInfo_SetTotalHpCur::InTotalHpCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetTotalHpCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetTotalHpMax
 // 0x0004 (0x0004 - 0x0000)
@@ -155,9 +131,7 @@ struct PyWidget_SummonedInfo_SetTotalHpMax final
 public:
 	float                                         InTotalHpMax;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetTotalHpMax) == 0x000004, "Wrong alignment on PyWidget_SummonedInfo_SetTotalHpMax");
-static_assert(sizeof(PyWidget_SummonedInfo_SetTotalHpMax) == 0x000004, "Wrong size on PyWidget_SummonedInfo_SetTotalHpMax");
-static_assert(offsetof(PyWidget_SummonedInfo_SetTotalHpMax, InTotalHpMax) == 0x000000, "Member 'PyWidget_SummonedInfo_SetTotalHpMax::InTotalHpMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetTotalHpMax;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetShieldExternal
 // 0x0004 (0x0004 - 0x0000)
@@ -166,9 +140,7 @@ struct PyWidget_SummonedInfo_SetShieldExternal final
 public:
 	float                                         InShieldExternal;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetShieldExternal) == 0x000004, "Wrong alignment on PyWidget_SummonedInfo_SetShieldExternal");
-static_assert(sizeof(PyWidget_SummonedInfo_SetShieldExternal) == 0x000004, "Wrong size on PyWidget_SummonedInfo_SetShieldExternal");
-static_assert(offsetof(PyWidget_SummonedInfo_SetShieldExternal, InShieldExternal) == 0x000000, "Member 'PyWidget_SummonedInfo_SetShieldExternal::InShieldExternal' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetShieldExternal;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetTotalNumCur
 // 0x0004 (0x0004 - 0x0000)
@@ -177,9 +149,7 @@ struct PyWidget_SummonedInfo_SetTotalNumCur final
 public:
 	int32                                         InTotalNumCur;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetTotalNumCur) == 0x000004, "Wrong alignment on PyWidget_SummonedInfo_SetTotalNumCur");
-static_assert(sizeof(PyWidget_SummonedInfo_SetTotalNumCur) == 0x000004, "Wrong size on PyWidget_SummonedInfo_SetTotalNumCur");
-static_assert(offsetof(PyWidget_SummonedInfo_SetTotalNumCur, InTotalNumCur) == 0x000000, "Member 'PyWidget_SummonedInfo_SetTotalNumCur::InTotalNumCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetTotalNumCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetTotalNumMax
 // 0x0004 (0x0004 - 0x0000)
@@ -188,9 +158,7 @@ struct PyWidget_SummonedInfo_SetTotalNumMax final
 public:
 	int32                                         InTotalNumMax;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetTotalNumMax) == 0x000004, "Wrong alignment on PyWidget_SummonedInfo_SetTotalNumMax");
-static_assert(sizeof(PyWidget_SummonedInfo_SetTotalNumMax) == 0x000004, "Wrong size on PyWidget_SummonedInfo_SetTotalNumMax");
-static_assert(offsetof(PyWidget_SummonedInfo_SetTotalNumMax, InTotalNumMax) == 0x000000, "Member 'PyWidget_SummonedInfo_SetTotalNumMax::InTotalNumMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetTotalNumMax;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetSummonedDesc
 // 0x0018 (0x0018 - 0x0000)
@@ -199,9 +167,7 @@ struct PyWidget_SummonedInfo_SetSummonedDesc final
 public:
 	class FText                                   InDesc;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetSummonedDesc) == 0x000008, "Wrong alignment on PyWidget_SummonedInfo_SetSummonedDesc");
-static_assert(sizeof(PyWidget_SummonedInfo_SetSummonedDesc) == 0x000018, "Wrong size on PyWidget_SummonedInfo_SetSummonedDesc");
-static_assert(offsetof(PyWidget_SummonedInfo_SetSummonedDesc, InDesc) == 0x000000, "Member 'PyWidget_SummonedInfo_SetSummonedDesc::InDesc' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetSummonedDesc;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetStyle
 // 0x0030 (0x0030 - 0x0000)
@@ -210,9 +176,7 @@ struct PyWidget_SummonedInfo_SetStyle final
 public:
 	struct FWidgetStyle_HealthBar_BattlePanel     WidgetStyle;                                       // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetStyle) == 0x000008, "Wrong alignment on PyWidget_SummonedInfo_SetStyle");
-static_assert(sizeof(PyWidget_SummonedInfo_SetStyle) == 0x000030, "Wrong size on PyWidget_SummonedInfo_SetStyle");
-static_assert(offsetof(PyWidget_SummonedInfo_SetStyle, WidgetStyle) == 0x000000, "Member 'PyWidget_SummonedInfo_SetStyle::WidgetStyle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetStyle;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfo.SetIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -221,9 +185,7 @@ struct PyWidget_SummonedInfo_SetIcon final
 public:
 	TSoftObjectPtr<class UTexture2D>              InIcon;                                            // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfo_SetIcon) == 0x000008, "Wrong alignment on PyWidget_SummonedInfo_SetIcon");
-static_assert(sizeof(PyWidget_SummonedInfo_SetIcon) == 0x000030, "Wrong size on PyWidget_SummonedInfo_SetIcon");
-static_assert(offsetof(PyWidget_SummonedInfo_SetIcon, InIcon) == 0x000000, "Member 'PyWidget_SummonedInfo_SetIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfo_SetIcon;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetTotalHpCur
 // 0x0004 (0x0004 - 0x0000)
@@ -232,9 +194,7 @@ struct PyWidget_SummonedInfoPanel_SetTotalHpCur final
 public:
 	float                                         InTotalHpCur;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetTotalHpCur) == 0x000004, "Wrong alignment on PyWidget_SummonedInfoPanel_SetTotalHpCur");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetTotalHpCur) == 0x000004, "Wrong size on PyWidget_SummonedInfoPanel_SetTotalHpCur");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetTotalHpCur, InTotalHpCur) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetTotalHpCur::InTotalHpCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetTotalHpCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetTotalHpMax
 // 0x0004 (0x0004 - 0x0000)
@@ -243,9 +203,7 @@ struct PyWidget_SummonedInfoPanel_SetTotalHpMax final
 public:
 	float                                         InTotalHpMax;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetTotalHpMax) == 0x000004, "Wrong alignment on PyWidget_SummonedInfoPanel_SetTotalHpMax");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetTotalHpMax) == 0x000004, "Wrong size on PyWidget_SummonedInfoPanel_SetTotalHpMax");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetTotalHpMax, InTotalHpMax) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetTotalHpMax::InTotalHpMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetTotalHpMax;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetTotalNumCur
 // 0x0004 (0x0004 - 0x0000)
@@ -254,9 +212,7 @@ struct PyWidget_SummonedInfoPanel_SetTotalNumCur final
 public:
 	int32                                         InTotalNumCur;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetTotalNumCur) == 0x000004, "Wrong alignment on PyWidget_SummonedInfoPanel_SetTotalNumCur");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetTotalNumCur) == 0x000004, "Wrong size on PyWidget_SummonedInfoPanel_SetTotalNumCur");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetTotalNumCur, InTotalNumCur) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetTotalNumCur::InTotalNumCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetTotalNumCur;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetTotalNumMax
 // 0x0004 (0x0004 - 0x0000)
@@ -265,9 +221,7 @@ struct PyWidget_SummonedInfoPanel_SetTotalNumMax final
 public:
 	int32                                         InTotalNumMax;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetTotalNumMax) == 0x000004, "Wrong alignment on PyWidget_SummonedInfoPanel_SetTotalNumMax");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetTotalNumMax) == 0x000004, "Wrong size on PyWidget_SummonedInfoPanel_SetTotalNumMax");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetTotalNumMax, InTotalNumMax) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetTotalNumMax::InTotalNumMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetTotalNumMax;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetSummonedDesc
 // 0x0018 (0x0018 - 0x0000)
@@ -276,9 +230,7 @@ struct PyWidget_SummonedInfoPanel_SetSummonedDesc final
 public:
 	class FText                                   InDesc;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetSummonedDesc) == 0x000008, "Wrong alignment on PyWidget_SummonedInfoPanel_SetSummonedDesc");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetSummonedDesc) == 0x000018, "Wrong size on PyWidget_SummonedInfoPanel_SetSummonedDesc");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetSummonedDesc, InDesc) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetSummonedDesc::InDesc' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetSummonedDesc;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetStyle
 // 0x0030 (0x0030 - 0x0000)
@@ -287,9 +239,7 @@ struct PyWidget_SummonedInfoPanel_SetStyle final
 public:
 	struct FWidgetStyle_HealthBar_BattlePanel     WidgetStyle;                                       // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetStyle) == 0x000008, "Wrong alignment on PyWidget_SummonedInfoPanel_SetStyle");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetStyle) == 0x000030, "Wrong size on PyWidget_SummonedInfoPanel_SetStyle");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetStyle, WidgetStyle) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetStyle::WidgetStyle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetStyle;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -298,9 +248,7 @@ struct PyWidget_SummonedInfoPanel_SetIcon final
 public:
 	TSoftObjectPtr<class UTexture2D>              InIcon;                                            // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetIcon) == 0x000008, "Wrong alignment on PyWidget_SummonedInfoPanel_SetIcon");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetIcon) == 0x000030, "Wrong size on PyWidget_SummonedInfoPanel_SetIcon");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetIcon, InIcon) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetIcon;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.SetTargetActor
 // 0x0008 (0x0008 - 0x0000)
@@ -309,9 +257,7 @@ struct PyWidget_SummonedInfoPanel_SetTargetActor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_SummonedInfoPanel_SetTargetActor");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_SetTargetActor) == 0x000008, "Wrong size on PyWidget_SummonedInfoPanel_SetTargetActor");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_SetTargetActor;
 
 // PythonFunction PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -320,9 +266,7 @@ struct PyWidget_SummonedInfoPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SummonedInfoPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_SummonedInfoPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_SummonedInfoPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_SummonedInfoPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_SummonedInfoPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_SummonedInfoPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SummonedInfoPanel_MarvelSetVisible;
 
 }
 

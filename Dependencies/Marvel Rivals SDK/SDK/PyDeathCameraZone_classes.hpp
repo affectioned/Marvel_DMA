@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathCamaraZone">();
+		STATIC_CLASS_IMPL("PyDeathCamaraZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathCamaraZone")
 	}
 	static class APyDeathCamaraZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDeathCamaraZone>();
 	}
 };
-static_assert(alignof(APyDeathCamaraZone) == 0x000010, "Wrong alignment on APyDeathCamaraZone");
-static_assert(sizeof(APyDeathCamaraZone) == 0x0006E0, "Wrong size on APyDeathCamaraZone");
+DUMPER7_ASSERTS_APyDeathCamaraZone;
 
 // PythonClass PyDeathCameraZone.PyDeathCameraPoint
 // 0x0000 (0x06E0 - 0x06E0)
@@ -43,15 +46,18 @@ class APyDeathCameraPoint final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathCameraPoint">();
+		STATIC_CLASS_IMPL("PyDeathCameraPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathCameraPoint")
 	}
 	static class APyDeathCameraPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDeathCameraPoint>();
 	}
 };
-static_assert(alignof(APyDeathCameraPoint) == 0x000010, "Wrong alignment on APyDeathCameraPoint");
-static_assert(sizeof(APyDeathCameraPoint) == 0x0006E0, "Wrong size on APyDeathCameraPoint");
+DUMPER7_ASSERTS_APyDeathCameraPoint;
 
 }
 

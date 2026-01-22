@@ -31,23 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103693">();
+		STATIC_CLASS_IMPL("PyConfig_103693")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103693")
 	}
 	static class UPyConfig_103693* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103693>();
 	}
 };
-static_assert(alignof(UPyConfig_103693) == 0x000008, "Wrong alignment on UPyConfig_103693");
-static_assert(sizeof(UPyConfig_103693) == 0x0000A8, "Wrong size on UPyConfig_103693");
-static_assert(offsetof(UPyConfig_103693, LaunchSpeed) == 0x000098, "Member 'UPyConfig_103693::LaunchSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103693, IsXYOverride) == 0x00009C, "Member 'UPyConfig_103693::IsXYOverride' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103693, IsZOverride) == 0x00009D, "Member 'UPyConfig_103693::IsZOverride' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103693, NeedLimitMinPitch) == 0x00009E, "Member 'UPyConfig_103693::NeedLimitMinPitch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103693, MinPitch) == 0x0000A0, "Member 'UPyConfig_103693::MinPitch' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103693;
 
 // PythonClass PyAbility_103693.PyAbility_103693
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103693 : public UAbility_108
 {
 public:
@@ -59,15 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103693">();
+		STATIC_CLASS_IMPL("PyAbility_103693")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103693")
 	}
 	static class UPyAbility_103693* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103693>();
 	}
 };
-static_assert(alignof(UPyAbility_103693) == 0x000008, "Wrong alignment on UPyAbility_103693");
-static_assert(sizeof(UPyAbility_103693) == 0x0029F8, "Wrong size on UPyAbility_103693");
+DUMPER7_ASSERTS_UPyAbility_103693;
 
 }
 

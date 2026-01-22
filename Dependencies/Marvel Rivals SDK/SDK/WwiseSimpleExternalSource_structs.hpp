@@ -28,12 +28,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MediaName;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWwiseExternalSourceCookieDefaultMedia) == 0x000008, "Wrong alignment on FWwiseExternalSourceCookieDefaultMedia");
-static_assert(sizeof(FWwiseExternalSourceCookieDefaultMedia) == 0x000040, "Wrong size on FWwiseExternalSourceCookieDefaultMedia");
-static_assert(offsetof(FWwiseExternalSourceCookieDefaultMedia, ExternalSourceCookie) == 0x000010, "Member 'FWwiseExternalSourceCookieDefaultMedia::ExternalSourceCookie' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceCookieDefaultMedia, ExternalSourceName) == 0x000018, "Member 'FWwiseExternalSourceCookieDefaultMedia::ExternalSourceName' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceCookieDefaultMedia, MediaInfoId) == 0x000028, "Member 'FWwiseExternalSourceCookieDefaultMedia::MediaInfoId' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceCookieDefaultMedia, MediaName) == 0x000030, "Member 'FWwiseExternalSourceCookieDefaultMedia::MediaName' has a wrong offset!");
+DUMPER7_ASSERTS_FWwiseExternalSourceCookieDefaultMedia;
 
 // ScriptStruct WwiseSimpleExternalSource.WwiseExternalSourceMediaInfo
 // 0x0020 (0x0030 - 0x0010)
@@ -49,15 +44,7 @@ public:
 	int32                                         MemoryAlignment;                                   // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PrefetchSize;                                      // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWwiseExternalSourceMediaInfo) == 0x000008, "Wrong alignment on FWwiseExternalSourceMediaInfo");
-static_assert(sizeof(FWwiseExternalSourceMediaInfo) == 0x000030, "Wrong size on FWwiseExternalSourceMediaInfo");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, ExternalSourceMediaInfoId) == 0x000010, "Member 'FWwiseExternalSourceMediaInfo::ExternalSourceMediaInfoId' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, MediaName) == 0x000014, "Member 'FWwiseExternalSourceMediaInfo::MediaName' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, CodecID) == 0x000020, "Member 'FWwiseExternalSourceMediaInfo::CodecID' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, bIsStreamed) == 0x000024, "Member 'FWwiseExternalSourceMediaInfo::bIsStreamed' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, bUseDeviceMemory) == 0x000025, "Member 'FWwiseExternalSourceMediaInfo::bUseDeviceMemory' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, MemoryAlignment) == 0x000028, "Member 'FWwiseExternalSourceMediaInfo::MemoryAlignment' has a wrong offset!");
-static_assert(offsetof(FWwiseExternalSourceMediaInfo, PrefetchSize) == 0x00002C, "Member 'FWwiseExternalSourceMediaInfo::PrefetchSize' has a wrong offset!");
+DUMPER7_ASSERTS_FWwiseExternalSourceMediaInfo;
 
 }
 

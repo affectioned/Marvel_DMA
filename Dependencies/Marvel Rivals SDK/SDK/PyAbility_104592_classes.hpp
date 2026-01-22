@@ -19,47 +19,41 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104592.PyConfig_104592
-// 0x2D48 (0x2DE0 - 0x0098)
+// 0x33E8 (0x3480 - 0x0098)
 class UPyConfig_104592 final : public UMarvelAbilityConfig
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFindGroundParam                       SelectPointParm;                                   // 0x00A0(0x16B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CueTag;                                            // 0x1750(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175C[0x4];                                     // 0x175C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCameraInterp*                          SelectingPointCameraInterp;                        // 0x1760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TaskCancelDelayEnd;                                // 0x1768(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x176C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID2;                                          // 0x1770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScopeID2_Delay;                                    // 0x1774(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID2_InsideLength;                             // 0x1778(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177C[0x4];                                     // 0x177C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             ScopeID2_OutsideTraceContext;                      // 0x1780(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       SelectPointParm;                                   // 0x00A0(0x1A00)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CueTag;                                            // 0x1AA0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1AAC[0x4];                                     // 0x1AAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCameraInterp*                          SelectingPointCameraInterp;                        // 0x1AB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TaskCancelDelayEnd;                                // 0x1AB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1ABC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID2;                                          // 0x1AC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScopeID2_Delay;                                    // 0x1AC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID2_InsideLength;                             // 0x1AC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1ACC[0x4];                                     // 0x1ACC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             ScopeID2_OutsideTraceContext;                      // 0x1AD0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104592">();
+		STATIC_CLASS_IMPL("PyConfig_104592")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104592")
 	}
 	static class UPyConfig_104592* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104592>();
 	}
 };
-static_assert(alignof(UPyConfig_104592) == 0x000010, "Wrong alignment on UPyConfig_104592");
-static_assert(sizeof(UPyConfig_104592) == 0x002DE0, "Wrong size on UPyConfig_104592");
-static_assert(offsetof(UPyConfig_104592, SelectPointParm) == 0x0000A0, "Member 'UPyConfig_104592::SelectPointParm' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, CueTag) == 0x001750, "Member 'UPyConfig_104592::CueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, SelectingPointCameraInterp) == 0x001760, "Member 'UPyConfig_104592::SelectingPointCameraInterp' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, TaskCancelDelayEnd) == 0x001768, "Member 'UPyConfig_104592::TaskCancelDelayEnd' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, ScopeID) == 0x00176C, "Member 'UPyConfig_104592::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, ScopeID2) == 0x001770, "Member 'UPyConfig_104592::ScopeID2' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, ScopeID2_Delay) == 0x001774, "Member 'UPyConfig_104592::ScopeID2_Delay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, ScopeID2_InsideLength) == 0x001778, "Member 'UPyConfig_104592::ScopeID2_InsideLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104592, ScopeID2_OutsideTraceContext) == 0x001780, "Member 'UPyConfig_104592::ScopeID2_OutsideTraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104592;
 
 // PythonClass PyAbility_104592.PyAbility_104592
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104592 : public UMarvelGameplayAbility
 {
 public:
@@ -77,18 +71,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104592">();
+		STATIC_CLASS_IMPL("PyAbility_104592")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104592")
 	}
 	static class UPyAbility_104592* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104592>();
 	}
 };
-static_assert(alignof(UPyAbility_104592) == 0x000008, "Wrong alignment on UPyAbility_104592");
-static_assert(sizeof(UPyAbility_104592) == 0x0029F0, "Wrong size on UPyAbility_104592");
+DUMPER7_ASSERTS_UPyAbility_104592;
 
 // PythonClass PyAbility_104592.PyTraceComponent_10459201
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10459201 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -99,15 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10459201">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10459201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10459201")
 	}
 	static class UPyTraceComponent_10459201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10459201>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10459201) == 0x000010, "Wrong alignment on UPyTraceComponent_10459201");
-static_assert(sizeof(UPyTraceComponent_10459201) == 0x002200, "Wrong size on UPyTraceComponent_10459201");
+DUMPER7_ASSERTS_UPyTraceComponent_10459201;
 
 }
 

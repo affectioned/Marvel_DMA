@@ -23,9 +23,7 @@ struct PySimpleLevelCheckActor_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySimpleLevelCheckActor_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySimpleLevelCheckActor_ReceiveEndPlay");
-static_assert(sizeof(PySimpleLevelCheckActor_ReceiveEndPlay) == 0x000001, "Wrong size on PySimpleLevelCheckActor_ReceiveEndPlay");
-static_assert(offsetof(PySimpleLevelCheckActor_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySimpleLevelCheckActor_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySimpleLevelCheckActor_ReceiveEndPlay;
 
 }
 

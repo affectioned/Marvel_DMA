@@ -17,88 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Activity147_InviteEntry::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Activity147_InviteEntry::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Activity147_InviteEntry::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.SetListItemObject
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          ItemObject_0                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Activity147_InviteEntry::SetListItemObject(class UObject* ItemObject_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "SetListItemObject");
-
-	Params::PyWidget_Activity147_InviteEntry_SetListItemObject Parms{};
-
-	Parms.ItemObject_0 = ItemObject_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_Invite.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -171,6 +89,88 @@ void UPyWidget_Activity147_Invite::MarvelSetVisible(bool Visible)
 	Params::PyWidget_Activity147_Invite_MarvelSetVisible Parms{};
 
 	Parms.Visible = Visible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Activity147_InviteEntry::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Activity147_InviteEntry::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Activity147_InviteEntry::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Activity147_Invite.PyWidget_Activity147_InviteEntry.SetListItemObject
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          ItemObject_0                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Activity147_InviteEntry::SetListItemObject(class UObject* ItemObject_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Activity147_InviteEntry", "SetListItemObject");
+
+	Params::PyWidget_Activity147_InviteEntry_SetListItemObject Parms{};
+
+	Parms.ItemObject_0 = ItemObject_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

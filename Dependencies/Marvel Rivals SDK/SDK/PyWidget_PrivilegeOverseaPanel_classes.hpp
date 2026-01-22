@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PrivilegeOverseaPanel.PyWidget_PrivilegeOverseaPanel
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_PrivilegeOverseaPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            BtnTextColor_Normal;                               // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnTextColor_Hovered;                              // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Normal;                               // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnTextColor_Hovered;                              // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PrivilegeOverseaPanel">();
+		STATIC_CLASS_IMPL("PyWidget_PrivilegeOverseaPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PrivilegeOverseaPanel")
 	}
 	static class UPyWidget_PrivilegeOverseaPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PrivilegeOverseaPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PrivilegeOverseaPanel) == 0x000008, "Wrong alignment on UPyWidget_PrivilegeOverseaPanel");
-static_assert(sizeof(UPyWidget_PrivilegeOverseaPanel) == 0x000620, "Wrong size on UPyWidget_PrivilegeOverseaPanel");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaPanel, BtnTextColor_Normal) == 0x0005F8, "Member 'UPyWidget_PrivilegeOverseaPanel::BtnTextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaPanel, BtnTextColor_Hovered) == 0x00060C, "Member 'UPyWidget_PrivilegeOverseaPanel::BtnTextColor_Hovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PrivilegeOverseaPanel;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BTT_PlayEmotes_BP.BTT_PlayEmotes_BP_C
-// 0x0000 (0x00E0 - 0x00E0)
+// 0x0000 (0x0100 - 0x0100)
 class UBTT_PlayEmotes_BP_C final : public UBTT_PlayEmotes
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_PlayEmotes_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_PlayEmotes_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PlayEmotes_BP_C")
 	}
 	static class UBTT_PlayEmotes_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PlayEmotes_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_PlayEmotes_BP_C) == 0x000008, "Wrong alignment on UBTT_PlayEmotes_BP_C");
-static_assert(sizeof(UBTT_PlayEmotes_BP_C) == 0x0000E0, "Wrong size on UBTT_PlayEmotes_BP_C");
+DUMPER7_ASSERTS_UBTT_PlayEmotes_BP_C;
 
 }
 

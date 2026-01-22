@@ -23,9 +23,7 @@ struct PyWidget_Mission_MissionUnit_Activity147_SetItemObject final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_MissionUnit_Activity147_SetItemObject) == 0x000008, "Wrong alignment on PyWidget_Mission_MissionUnit_Activity147_SetItemObject");
-static_assert(sizeof(PyWidget_Mission_MissionUnit_Activity147_SetItemObject) == 0x000008, "Wrong size on PyWidget_Mission_MissionUnit_Activity147_SetItemObject");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_SetItemObject, Object) == 0x000000, "Member 'PyWidget_Mission_MissionUnit_Activity147_SetItemObject::Object' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_MissionUnit_Activity147_SetItemObject;
 
 // PythonFunction PyWidget_Mission_MissionUnit_Activity147.PyWidget_Mission_MissionUnit_Activity147.OnNavLeft_BtnMission
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission) == 0x000008, "Wrong alignment on PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission");
-static_assert(sizeof(PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission) == 0x000010, "Wrong size on PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_MissionUnit_Activity147_OnNavLeft_BtnMission;
 
 // PythonFunction PyWidget_Mission_MissionUnit_Activity147.PyWidget_Mission_MissionUnit_Activity147.OnNavUp_BtnMission
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission) == 0x000008, "Wrong alignment on PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission");
-static_assert(sizeof(PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission) == 0x000010, "Wrong size on PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_MissionUnit_Activity147_OnNavUp_BtnMission;
 
 // PythonFunction PyWidget_Mission_MissionUnit_Activity147.PyWidget_Mission_MissionUnit_Activity147.OnNavDown_BtnMission
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +56,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission) == 0x000008, "Wrong alignment on PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission");
-static_assert(sizeof(PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission) == 0x000010, "Wrong size on PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_MissionUnit_Activity147_OnNavDown_BtnMission;
 
 }
 

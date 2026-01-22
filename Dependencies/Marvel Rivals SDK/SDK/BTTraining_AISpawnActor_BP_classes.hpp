@@ -17,29 +17,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BTTraining_AISpawnActor_BP.BTTraining_AISpawnActor_BP_C
-// 0x0020 (0x07B0 - 0x0790)
+// 0x0010 (0x07B0 - 0x07A0)
 class ABTTraining_AISpawnActor_BP_C final : public APyAIBtreeTestSpawnActor
 {
 public:
-	class UArrowComponent*                        Arrow;                                             // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Capsule;                                           // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_791[0x7];                                      // 0x0791(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UArrowComponent*                        Arrow;                                             // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Capsule;                                           // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTTraining_AISpawnActor_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTTraining_AISpawnActor_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTraining_AISpawnActor_BP_C")
 	}
 	static class ABTTraining_AISpawnActor_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABTTraining_AISpawnActor_BP_C>();
 	}
 };
-static_assert(alignof(ABTTraining_AISpawnActor_BP_C) == 0x000010, "Wrong alignment on ABTTraining_AISpawnActor_BP_C");
-static_assert(sizeof(ABTTraining_AISpawnActor_BP_C) == 0x0007B0, "Wrong size on ABTTraining_AISpawnActor_BP_C");
-static_assert(offsetof(ABTTraining_AISpawnActor_BP_C, Arrow) == 0x000790, "Member 'ABTTraining_AISpawnActor_BP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ABTTraining_AISpawnActor_BP_C, Capsule) == 0x000798, "Member 'ABTTraining_AISpawnActor_BP_C::Capsule' has a wrong offset!");
-static_assert(offsetof(ABTTraining_AISpawnActor_BP_C, DefaultSceneRoot) == 0x0007A0, "Member 'ABTTraining_AISpawnActor_BP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABTTraining_AISpawnActor_BP_C;
 
 }
 

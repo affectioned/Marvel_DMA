@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_104421.PyCue_Weapon_Loop_104421
-// 0x0030 (0x1440 - 0x1410)
+// 0x0030 (0x1450 - 0x1420)
 class APyCue_Weapon_Loop_104421 final : public AMarvelCueNotify_Weapon_Loop
 {
 public:
-	struct FGameplayTag                           OnHiddenEventTag;                                  // 0x1410(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           UnHiddenEventTag;                                  // 0x141C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           HiddenStateTag;                                    // 0x1428(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           OnHiddenEventTag;                                  // 0x1420(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           UnHiddenEventTag;                                  // 0x142C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HiddenStateTag;                                    // 0x1438(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_HandleWeaponEvent(const struct FWeaponNotifyEvent& Event);
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_104421">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_104421")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_104421")
 	}
 	static class APyCue_Weapon_Loop_104421* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_104421>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_104421) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_104421");
-static_assert(sizeof(APyCue_Weapon_Loop_104421) == 0x001440, "Wrong size on APyCue_Weapon_Loop_104421");
-static_assert(offsetof(APyCue_Weapon_Loop_104421, OnHiddenEventTag) == 0x001410, "Member 'APyCue_Weapon_Loop_104421::OnHiddenEventTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104421, UnHiddenEventTag) == 0x00141C, "Member 'APyCue_Weapon_Loop_104421::UnHiddenEventTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104421, HiddenStateTag) == 0x001428, "Member 'APyCue_Weapon_Loop_104421::HiddenStateTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_104421;
 
 }
 

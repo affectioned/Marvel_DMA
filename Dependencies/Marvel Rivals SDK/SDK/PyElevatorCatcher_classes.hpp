@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyElevatorCatcher">();
+		STATIC_CLASS_IMPL("PyElevatorCatcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyElevatorCatcher")
 	}
 	static class APyElevatorCatcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyElevatorCatcher>();
 	}
 };
-static_assert(alignof(APyElevatorCatcher) == 0x000010, "Wrong alignment on APyElevatorCatcher");
-static_assert(sizeof(APyElevatorCatcher) == 0x000740, "Wrong size on APyElevatorCatcher");
-static_assert(offsetof(APyElevatorCatcher, Countdown) == 0x000720, "Member 'APyElevatorCatcher::Countdown' has a wrong offset!");
-static_assert(offsetof(APyElevatorCatcher, AnimLength) == 0x000724, "Member 'APyElevatorCatcher::AnimLength' has a wrong offset!");
-static_assert(offsetof(APyElevatorCatcher, PlayState) == 0x000728, "Member 'APyElevatorCatcher::PlayState' has a wrong offset!");
-static_assert(offsetof(APyElevatorCatcher, PlayPosition) == 0x000738, "Member 'APyElevatorCatcher::PlayPosition' has a wrong offset!");
+DUMPER7_ASSERTS_APyElevatorCatcher;
 
 }
 

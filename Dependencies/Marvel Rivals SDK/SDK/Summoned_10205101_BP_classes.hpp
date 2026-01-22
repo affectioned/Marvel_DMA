@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10205101_BP.Summoned_10205101_BP_C
-// 0x0030 (0x0B70 - 0x0B40)
+// 0x0030 (0x0B90 - 0x0B60)
 class ASummoned_10205101_BP_C final : public AMarvelSummonerBase
 {
 public:
-	class UCapsuleComponent*                      CapsuleComponent;                                  // 0x0B40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      RightHand;                                         // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      LeftHand;                                          // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Abdomen;                                           // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      Chest;                                             // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       Head;                                              // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      CapsuleComponent;                                  // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      RightHand;                                         // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      LeftHand;                                          // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Abdomen;                                           // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      Chest;                                             // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Head;                                              // 0x0B88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10205101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10205101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10205101_BP_C")
 	}
 	static class ASummoned_10205101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10205101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10205101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10205101_BP_C");
-static_assert(sizeof(ASummoned_10205101_BP_C) == 0x000B70, "Wrong size on ASummoned_10205101_BP_C");
-static_assert(offsetof(ASummoned_10205101_BP_C, CapsuleComponent) == 0x000B40, "Member 'ASummoned_10205101_BP_C::CapsuleComponent' has a wrong offset!");
-static_assert(offsetof(ASummoned_10205101_BP_C, RightHand) == 0x000B48, "Member 'ASummoned_10205101_BP_C::RightHand' has a wrong offset!");
-static_assert(offsetof(ASummoned_10205101_BP_C, LeftHand) == 0x000B50, "Member 'ASummoned_10205101_BP_C::LeftHand' has a wrong offset!");
-static_assert(offsetof(ASummoned_10205101_BP_C, Abdomen) == 0x000B58, "Member 'ASummoned_10205101_BP_C::Abdomen' has a wrong offset!");
-static_assert(offsetof(ASummoned_10205101_BP_C, Chest) == 0x000B60, "Member 'ASummoned_10205101_BP_C::Chest' has a wrong offset!");
-static_assert(offsetof(ASummoned_10205101_BP_C, Head) == 0x000B68, "Member 'ASummoned_10205101_BP_C::Head' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10205101_BP_C;
 
 }
 

@@ -29,13 +29,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              CardBackground_69_1E680D5240F38114C5CABAA033053489; // 0x0020(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class FString                                 CardDescribe_77_72AFB73D48A3B099CA591784E5CBDD61;  // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FCardData) == 0x000008, "Wrong alignment on FCardData");
-static_assert(sizeof(FCardData) == 0x000060, "Wrong size on FCardData");
-static_assert(offsetof(FCardData, CardID_64_CC9CEDDF4E4198FAEAC83788C5B70386) == 0x000000, "Member 'FCardData::CardID_64_CC9CEDDF4E4198FAEAC83788C5B70386' has a wrong offset!");
-static_assert(offsetof(FCardData, CardName_76_8CB9C6B240C6981FE4BCE298018684C6) == 0x000008, "Member 'FCardData::CardName_76_8CB9C6B240C6981FE4BCE298018684C6' has a wrong offset!");
-static_assert(offsetof(FCardData, CardQuality_75_03B894F54C66CFBF0B7158AAE2F82895) == 0x000018, "Member 'FCardData::CardQuality_75_03B894F54C66CFBF0B7158AAE2F82895' has a wrong offset!");
-static_assert(offsetof(FCardData, CardBackground_69_1E680D5240F38114C5CABAA033053489) == 0x000020, "Member 'FCardData::CardBackground_69_1E680D5240F38114C5CABAA033053489' has a wrong offset!");
-static_assert(offsetof(FCardData, CardDescribe_77_72AFB73D48A3B099CA591784E5CBDD61) == 0x000050, "Member 'FCardData::CardDescribe_77_72AFB73D48A3B099CA591784E5CBDD61' has a wrong offset!");
+DUMPER7_ASSERTS_FCardData;
 
 }
 

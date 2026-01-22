@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SeasonStory_Story.PyWidget_Gallery_SeasonStory_Story
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Gallery_SeasonStory_Story final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SeasonStory_Story">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SeasonStory_Story")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SeasonStory_Story")
 	}
 	static class UPyWidget_Gallery_SeasonStory_Story* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SeasonStory_Story>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SeasonStory_Story) == 0x000008, "Wrong alignment on UPyWidget_Gallery_SeasonStory_Story");
-static_assert(sizeof(UPyWidget_Gallery_SeasonStory_Story) == 0x0005C0, "Wrong size on UPyWidget_Gallery_SeasonStory_Story");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SeasonStory_Story;
 
 }
 

@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnInitialized
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ScreenFXManager::OnInitialized()
+void UPyWidget_ScreenFXHealing::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXManager", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -36,21 +36,21 @@ void UPyWidget_ScreenFXManager::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetActor
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVisible                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_ScreenFXManager::SetTargetActor(class AActor* InActor)
+void UPyWidget_ScreenFXHealing::MarvelSetVisible(bool bIsVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXManager", "SetTargetActor");
+		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "MarvelSetVisible");
 
-	Params::PyWidget_ScreenFXManager_SetTargetActor Parms{};
+	Params::PyWidget_ScreenFXHealing_MarvelSetVisible Parms{};
 
-	Parms.InActor = InActor;
+	Parms.bIsVisible = bIsVisible;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61,73 +61,20 @@ void UPyWidget_ScreenFXManager::SetTargetActor(class AActor* InActor)
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetTreatPercentageCur
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   InPercentage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_ScreenFXManager::SetTargetTreatPercentageCur(float InPercentage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXManager", "SetTargetTreatPercentageCur");
-
-	Params::PyWidget_ScreenFXManager_SetTargetTreatPercentageCur Parms{};
-
-	Parms.InPercentage = InPercentage;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.ShouldShowBuff
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnTagUpdated
 // (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class FString&                    Tag                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UPyWidget_ScreenFXManager::ShouldShowBuff(const class FString& Tag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXManager", "ShouldShowBuff");
-
-	Params::PyWidget_ScreenFXManager_ShouldShowBuff Parms{};
-
-	Parms.Tag = std::move(Tag);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnTagUpdated
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 // bool                                    TagExist                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_ScreenFXManager::OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist)
+void UPyWidget_ScreenFXHealing::OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXManager", "OnTagUpdated");
+		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "OnTagUpdated");
 
-	Params::PyWidget_ScreenFXManager_OnTagUpdated Parms{};
+	Params::PyWidget_ScreenFXHealing_OnTagUpdated Parms{};
 
 	Parms.Tag = std::move(Tag);
 	Parms.TagExist = TagExist;
@@ -136,6 +83,25 @@ void UPyWidget_ScreenFXManager::OnTagUpdated(const struct FGameplayTag& Tag, boo
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnFinishRestoreMax
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_ScreenFXHealing::OnFinishRestoreMax()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "OnFinishRestoreMax");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -611,6 +577,31 @@ void UPyWidget_HpBar_V3::OnAnimationFinished(const class UWidgetAnimation* Anima
 }
 
 
+// PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetShowUltimateIcon
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bShow                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_HpBar_V3::SetShowUltimateIcon(bool bShow)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HpBar_V3", "SetShowUltimateIcon");
+
+	Params::PyWidget_HpBar_V3_SetShowUltimateIcon Parms{};
+
+	Parms.bShow = bShow;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.OnComponentVisibilityChanged
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -752,138 +743,6 @@ float UPyWidget_HpBar_V3::GetUltimateEnergyPercent() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_DyingScreenFX::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_DyingScreenFX::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_DyingScreenFX::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.ShouldBeVisible
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UPyWidget_DyingScreenFX::ShouldBeVisible()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "ShouldBeVisible");
-
-	Params::PyWidget_DyingScreenFX_ShouldBeVisible Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetTargetCharacter
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AMarvelBaseCharacter*             InCharacter                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_DyingScreenFX::SetTargetCharacter(class AMarvelBaseCharacter* InCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "SetTargetCharacter");
-
-	Params::PyWidget_DyingScreenFX_SetTargetCharacter Parms{};
-
-	Parms.InCharacter = InCharacter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetDying
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InDying                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_DyingScreenFX::SetDying(bool InDying)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_DyingScreenFX", "SetDying");
-
-	Params::PyWidget_DyingScreenFX_SetDying Parms{};
-
-	Parms.InDying = InDying;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -1232,15 +1091,15 @@ void UPyWidget_BattleHpBar_V3::OnTagUpdated(const struct FGameplayTag& Tag, bool
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.Destruct
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ScreenFXHealing::Destruct()
+void UPyWidget_ScreenFXManager::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "Destruct");
+		Func = Class->GetFunction("PyWidget_ScreenFXManager", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1251,21 +1110,21 @@ void UPyWidget_ScreenFXHealing::Destruct()
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.MarvelSetVisible
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetActor
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsVisible                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_ScreenFXHealing::MarvelSetVisible(bool bIsVisible)
+void UPyWidget_ScreenFXManager::SetTargetActor(class AActor* InActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "MarvelSetVisible");
+		Func = Class->GetFunction("PyWidget_ScreenFXManager", "SetTargetActor");
 
-	Params::PyWidget_ScreenFXHealing_MarvelSetVisible Parms{};
+	Params::PyWidget_ScreenFXManager_SetTargetActor Parms{};
 
-	Parms.bIsVisible = bIsVisible;
+	Parms.InActor = InActor;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1276,20 +1135,73 @@ void UPyWidget_ScreenFXHealing::MarvelSetVisible(bool bIsVisible)
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnTagUpdated
-// (Native, Public, HasOutParams, BlueprintCallable)
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetTreatPercentageCur
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// bool                                    TagExist                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   InPercentage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_ScreenFXHealing::OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist)
+void UPyWidget_ScreenFXManager::SetTargetTreatPercentageCur(float InPercentage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "OnTagUpdated");
+		Func = Class->GetFunction("PyWidget_ScreenFXManager", "SetTargetTreatPercentageCur");
 
-	Params::PyWidget_ScreenFXHealing_OnTagUpdated Parms{};
+	Params::PyWidget_ScreenFXManager_SetTargetTreatPercentageCur Parms{};
+
+	Parms.InPercentage = InPercentage;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.ShouldShowBuff
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class FString&                    Tag                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyWidget_ScreenFXManager::ShouldShowBuff(const class FString& Tag)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_ScreenFXManager", "ShouldShowBuff");
+
+	Params::PyWidget_ScreenFXManager_ShouldShowBuff Parms{};
+
+	Parms.Tag = std::move(Tag);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnTagUpdated
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// bool                                    TagExist                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_ScreenFXManager::OnTagUpdated(const struct FGameplayTag& Tag, bool TagExist)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_ScreenFXManager", "OnTagUpdated");
+
+	Params::PyWidget_ScreenFXManager_OnTagUpdated Parms{};
 
 	Parms.Tag = std::move(Tag);
 	Parms.TagExist = TagExist;
@@ -1303,15 +1215,15 @@ void UPyWidget_ScreenFXHealing::OnTagUpdated(const struct FGameplayTag& Tag, boo
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnFinishFadeIn
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ScreenFXHealing::OnFinishFadeIn()
+void UPyWidget_DyingScreenFX::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "OnFinishFadeIn");
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1322,20 +1234,114 @@ void UPyWidget_ScreenFXHealing::OnFinishFadeIn()
 }
 
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnFinishRestoreMax
-// (Native, Public, BlueprintCallable)
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_ScreenFXHealing::OnFinishRestoreMax()
+void UPyWidget_DyingScreenFX::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ScreenFXHealing", "OnFinishRestoreMax");
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_DyingScreenFX::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.ShouldBeVisible
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyWidget_DyingScreenFX::ShouldBeVisible()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "ShouldBeVisible");
+
+	Params::PyWidget_DyingScreenFX_ShouldBeVisible Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetTargetCharacter
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AMarvelBaseCharacter*             InCharacter                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_DyingScreenFX::SetTargetCharacter(class AMarvelBaseCharacter* InCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "SetTargetCharacter");
+
+	Params::PyWidget_DyingScreenFX_SetTargetCharacter Parms{};
+
+	Parms.InCharacter = InCharacter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetDying
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InDying                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_DyingScreenFX::SetDying(bool InDying)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_DyingScreenFX", "SetDying");
+
+	Params::PyWidget_DyingScreenFX_SetDying Parms{};
+
+	Parms.InDying = InDying;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

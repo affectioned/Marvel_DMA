@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpringFestivalStatComponent">();
+		STATIC_CLASS_IMPL("PySpringFestivalStatComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpringFestivalStatComponent")
 	}
 	static class UPySpringFestivalStatComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpringFestivalStatComponent>();
 	}
 };
-static_assert(alignof(UPySpringFestivalStatComponent) == 0x000008, "Wrong alignment on UPySpringFestivalStatComponent");
-static_assert(sizeof(UPySpringFestivalStatComponent) == 0x000168, "Wrong size on UPySpringFestivalStatComponent");
+DUMPER7_ASSERTS_UPySpringFestivalStatComponent;
 
 }
 

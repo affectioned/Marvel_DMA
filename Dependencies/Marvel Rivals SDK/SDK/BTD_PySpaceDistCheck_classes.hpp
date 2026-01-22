@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PySpaceDistCheck">();
+		STATIC_CLASS_IMPL("BTD_PySpaceDistCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PySpaceDistCheck")
 	}
 	static class UBTD_PySpaceDistCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PySpaceDistCheck>();
 	}
 };
-static_assert(alignof(UBTD_PySpaceDistCheck) == 0x000008, "Wrong alignment on UBTD_PySpaceDistCheck");
-static_assert(sizeof(UBTD_PySpaceDistCheck) == 0x0000D8, "Wrong size on UBTD_PySpaceDistCheck");
+DUMPER7_ASSERTS_UBTD_PySpaceDistCheck;
 
 }
 

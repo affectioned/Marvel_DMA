@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStart">();
+		STATIC_CLASS_IMPL("PyPlayerStart")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStart")
 	}
 	static class APyPlayerStart* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPlayerStart>();
 	}
 };
-static_assert(alignof(APyPlayerStart) == 0x000010, "Wrong alignment on APyPlayerStart");
-static_assert(sizeof(APyPlayerStart) == 0x000730, "Wrong size on APyPlayerStart");
-static_assert(offsetof(APyPlayerStart, IsInitial) == 0x000720, "Member 'APyPlayerStart::IsInitial' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, IsFixed) == 0x000721, "Member 'APyPlayerStart::IsFixed' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, IsTrain) == 0x000722, "Member 'APyPlayerStart::IsTrain' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, TrainArea) == 0x000723, "Member 'APyPlayerStart::TrainArea' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, BattleSide) == 0x000724, "Member 'APyPlayerStart::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, Index_0) == 0x000728, "Member 'APyPlayerStart::Index_0' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, IsForBirthRoom) == 0x00072C, "Member 'APyPlayerStart::IsForBirthRoom' has a wrong offset!");
-static_assert(offsetof(APyPlayerStart, IsMovablePlayerStart) == 0x00072D, "Member 'APyPlayerStart::IsMovablePlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_APyPlayerStart;
 
 }
 

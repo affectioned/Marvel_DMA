@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadTrace">();
+		STATIC_CLASS_IMPL("PyPayloadTrace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadTrace")
 	}
 	static class APyPayloadTrace* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPayloadTrace>();
 	}
 };
-static_assert(alignof(APyPayloadTrace) == 0x000010, "Wrong alignment on APyPayloadTrace");
-static_assert(sizeof(APyPayloadTrace) == 0x0007C0, "Wrong size on APyPayloadTrace");
-static_assert(offsetof(APyPayloadTrace, RealName) == 0x0006E0, "Member 'APyPayloadTrace::RealName' has a wrong offset!");
-static_assert(offsetof(APyPayloadTrace, EventPoint) == 0x0006F0, "Member 'APyPayloadTrace::EventPoint' has a wrong offset!");
-static_assert(offsetof(APyPayloadTrace, ActivePoints) == 0x000700, "Member 'APyPayloadTrace::ActivePoints' has a wrong offset!");
-static_assert(offsetof(APyPayloadTrace, MultiActivePoints) == 0x000710, "Member 'APyPayloadTrace::MultiActivePoints' has a wrong offset!");
-static_assert(offsetof(APyPayloadTrace, EventPoints) == 0x000760, "Member 'APyPayloadTrace::EventPoints' has a wrong offset!");
-static_assert(offsetof(APyPayloadTrace, MultiRound) == 0x000770, "Member 'APyPayloadTrace::MultiRound' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadTrace;
 
 }
 

@@ -384,25 +384,6 @@ void UPyAbility_104831::ActivateRecallAbility(bool bShouldCancel)
 }
 
 
-// PythonFunction PyAbility_104831.PyWidget_ResetWhenFadeOut.OnFinishFadeOut
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_ResetWhenFadeOut::OnFinishFadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_ResetWhenFadeOut", "OnFinishFadeOut");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_104831.PyProjectile_10483102.K2_OnPenetrate
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -477,79 +458,6 @@ float APyProjectile_10483102::K2_GetSecondSpeed() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_104831.PyUIController_104831.SetAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InAbilityID                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyUIController_104831::SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_104831", "SetAbility");
-
-	Params::PyUIController_104831_SetAbility Parms{};
-
-	Parms.InAbilityID = InAbilityID;
-	Parms.InAbility = InAbility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104831.PyUIController_104831.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_104831::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_104831", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104831.PyUIController_104831.OnAbilityTagUpdate
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTag&              InTag                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// bool                                    bExists                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyUIController_104831::OnAbilityTagUpdate(const struct FGameplayTag& InTag, bool bExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_104831", "OnAbilityTagUpdate");
-
-	Params::PyUIController_104831_OnAbilityTagUpdate Parms{};
-
-	Parms.InTag = std::move(InTag);
-	Parms.bExists = bExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103561.PyBuffAbility_120_10356105
-// 0x0008 (0x1428 - 0x1420)
+// 0x0008 (0x1440 - 0x1438)
 class UPyBuffAbility_120_10356105 final : public UMarvelCDReductionEffectAbility_V2
 {
 public:
-	float                                         Factor;                                            // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Factor;                                            // 0x1438(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10356105">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10356105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10356105")
 	}
 	static class UPyBuffAbility_120_10356105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10356105>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10356105) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10356105");
-static_assert(sizeof(UPyBuffAbility_120_10356105) == 0x001428, "Wrong size on UPyBuffAbility_120_10356105");
-static_assert(offsetof(UPyBuffAbility_120_10356105, Factor) == 0x001420, "Member 'UPyBuffAbility_120_10356105::Factor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10356105;
 
 }
 

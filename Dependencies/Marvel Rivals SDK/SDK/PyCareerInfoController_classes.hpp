@@ -43,15 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCareerInfoController">();
+		STATIC_CLASS_IMPL("PyCareerInfoController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCareerInfoController")
 	}
 	static class UPyCareerInfoController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCareerInfoController>();
 	}
 };
-static_assert(alignof(UPyCareerInfoController) == 0x000008, "Wrong alignment on UPyCareerInfoController");
-static_assert(sizeof(UPyCareerInfoController) == 0x000040, "Wrong size on UPyCareerInfoController");
+DUMPER7_ASSERTS_UPyCareerInfoController;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryLimitTimeTrainHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryLimitTimeTrainHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLimitTimeTrainHandler")
 	}
 	static class UUISettingEntryLimitTimeTrainHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryLimitTimeTrainHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryLimitTimeTrainHandler) == 0x000008, "Wrong alignment on UUISettingEntryLimitTimeTrainHandler");
-static_assert(sizeof(UUISettingEntryLimitTimeTrainHandler) == 0x000030, "Wrong size on UUISettingEntryLimitTimeTrainHandler");
+DUMPER7_ASSERTS_UUISettingEntryLimitTimeTrainHandler;
 
 }
 

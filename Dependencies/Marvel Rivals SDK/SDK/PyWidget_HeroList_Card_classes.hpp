@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroList_Card.PyWidget_HeroList_Card
-// 0x0060 (0x0788 - 0x0728)
+// 0x0060 (0x07E0 - 0x0780)
 class UPyWidget_HeroList_Card final : public UPyWidget_Button
 {
 public:
-	int32                                         HeroID;                                            // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SkinID;                                            // 0x072C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUnlock;                                          // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNew;                                             // 0x0731(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_732[0x6];                                      // 0x0732(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_ShowActorVisible;                          // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ShowActorInvisible;                        // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChangeShapeInputAction;                            // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              NormalBtnSize;                                     // 0x0750(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              HoverBtnSize;                                      // 0x0760(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UButton*                                Btn_Navigation;                                    // 0x0770(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDelayHovered;                                    // 0x0778(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         HeroID;                                            // 0x0780(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SkinID;                                            // 0x0784(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUnlock;                                          // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNew;                                             // 0x0789(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_78A[0x6];                                      // 0x078A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_ShowActorVisible;                          // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ShowActorInvisible;                        // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChangeShapeInputAction;                            // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              NormalBtnSize;                                     // 0x07A8(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              HoverBtnSize;                                      // 0x07B8(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UButton*                                Btn_Navigation;                                    // 0x07C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDelayHovered;                                    // 0x07D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -48,26 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroList_Card">();
+		STATIC_CLASS_IMPL("PyWidget_HeroList_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroList_Card")
 	}
 	static class UPyWidget_HeroList_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroList_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroList_Card) == 0x000008, "Wrong alignment on UPyWidget_HeroList_Card");
-static_assert(sizeof(UPyWidget_HeroList_Card) == 0x000788, "Wrong size on UPyWidget_HeroList_Card");
-static_assert(offsetof(UPyWidget_HeroList_Card, HeroID) == 0x000728, "Member 'UPyWidget_HeroList_Card::HeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, SkinID) == 0x00072C, "Member 'UPyWidget_HeroList_Card::SkinID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, IsUnlock) == 0x000730, "Member 'UPyWidget_HeroList_Card::IsUnlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, IsNew) == 0x000731, "Member 'UPyWidget_HeroList_Card::IsNew' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, AkEvent_ShowActorVisible) == 0x000738, "Member 'UPyWidget_HeroList_Card::AkEvent_ShowActorVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, AkEvent_ShowActorInvisible) == 0x000740, "Member 'UPyWidget_HeroList_Card::AkEvent_ShowActorInvisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, ChangeShapeInputAction) == 0x000748, "Member 'UPyWidget_HeroList_Card::ChangeShapeInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, NormalBtnSize) == 0x000750, "Member 'UPyWidget_HeroList_Card::NormalBtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, HoverBtnSize) == 0x000760, "Member 'UPyWidget_HeroList_Card::HoverBtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, Btn_Navigation) == 0x000770, "Member 'UPyWidget_HeroList_Card::Btn_Navigation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroList_Card, OnDelayHovered) == 0x000778, "Member 'UPyWidget_HeroList_Card::OnDelayHovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroList_Card;
 
 }
 

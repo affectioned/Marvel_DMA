@@ -23,9 +23,7 @@ struct PyGalactaBigBotCharacter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGalactaBigBotCharacter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyGalactaBigBotCharacter_ReceiveEndPlay");
-static_assert(sizeof(PyGalactaBigBotCharacter_ReceiveEndPlay) == 0x000001, "Wrong size on PyGalactaBigBotCharacter_ReceiveEndPlay");
-static_assert(offsetof(PyGalactaBigBotCharacter_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyGalactaBigBotCharacter_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyGalactaBigBotCharacter_ReceiveEndPlay;
 
 // PythonFunction PyGalactaBigBotCharacter.PyGalactaBigBotCharacter.ShouldExecuteNotMatch
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyGalactaBigBotCharacter_ShouldExecuteNotMatch final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGalactaBigBotCharacter_ShouldExecuteNotMatch) == 0x000001, "Wrong alignment on PyGalactaBigBotCharacter_ShouldExecuteNotMatch");
-static_assert(sizeof(PyGalactaBigBotCharacter_ShouldExecuteNotMatch) == 0x000001, "Wrong size on PyGalactaBigBotCharacter_ShouldExecuteNotMatch");
-static_assert(offsetof(PyGalactaBigBotCharacter_ShouldExecuteNotMatch, ReturnValue) == 0x000000, "Member 'PyGalactaBigBotCharacter_ShouldExecuteNotMatch::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyGalactaBigBotCharacter_ShouldExecuteNotMatch;
 
 }
 

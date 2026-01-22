@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetMoveLocationAlongDir_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetMoveLocationAlongDir_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetMoveLocationAlongDir_C")
 	}
 	static class UEQC_GetMoveLocationAlongDir_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetMoveLocationAlongDir_C>();
 	}
 };
-static_assert(alignof(UEQC_GetMoveLocationAlongDir_C) == 0x000008, "Wrong alignment on UEQC_GetMoveLocationAlongDir_C");
-static_assert(sizeof(UEQC_GetMoveLocationAlongDir_C) == 0x000038, "Wrong size on UEQC_GetMoveLocationAlongDir_C");
+DUMPER7_ASSERTS_UEQC_GetMoveLocationAlongDir_C;
 
 }
 

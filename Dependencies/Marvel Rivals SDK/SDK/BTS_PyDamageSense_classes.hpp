@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyDamageSense">();
+		STATIC_CLASS_IMPL("BTS_PyDamageSense")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyDamageSense")
 	}
 	static class UBTS_PyDamageSense* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyDamageSense>();
 	}
 };
-static_assert(alignof(UBTS_PyDamageSense) == 0x000008, "Wrong alignment on UBTS_PyDamageSense");
-static_assert(sizeof(UBTS_PyDamageSense) == 0x0000C0, "Wrong size on UBTS_PyDamageSense");
-static_assert(offsetof(UBTS_PyDamageSense, WeightToFindDamageSource) == 0x0000A8, "Member 'UBTS_PyDamageSense::WeightToFindDamageSource' has a wrong offset!");
-static_assert(offsetof(UBTS_PyDamageSense, WeightToCrossMove) == 0x0000AC, "Member 'UBTS_PyDamageSense::WeightToCrossMove' has a wrong offset!");
-static_assert(offsetof(UBTS_PyDamageSense, WeightToIgnoreDamage) == 0x0000B0, "Member 'UBTS_PyDamageSense::WeightToIgnoreDamage' has a wrong offset!");
-static_assert(offsetof(UBTS_PyDamageSense, IgnoreCrossMoveIfInBattle) == 0x0000B4, "Member 'UBTS_PyDamageSense::IgnoreCrossMoveIfInBattle' has a wrong offset!");
-static_assert(offsetof(UBTS_PyDamageSense, CrossMoveDuration) == 0x0000B8, "Member 'UBTS_PyDamageSense::CrossMoveDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyDamageSense;
 
 }
 

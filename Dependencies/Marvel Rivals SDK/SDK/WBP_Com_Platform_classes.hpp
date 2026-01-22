@@ -19,19 +19,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Com_Platform.WBP_Com_Platform_C
-// 0x0048 (0x0668 - 0x0620)
+// 0x0050 (0x0678 - 0x0628)
 class UWBP_Com_Platform_C final : public UPyWidget_Common_Platform_Icon
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0620(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_Platform_Console;                              // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Epic;                                 // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Launch;                               // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Pc;                                   // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Ps;                                   // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Steam;                                // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Platform_Xbox;                                 // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Platform;                                  // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0628(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_Platform_All;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Console;                              // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Epic;                                 // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Launch;                               // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Pc;                                   // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Ps;                                   // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Steam;                                // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Platform_Xbox;                                 // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Platform;                                  // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Com_Platform(int32 EntryPoint);
@@ -40,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Com_Platform_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Com_Platform_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Com_Platform_C")
 	}
 	static class UWBP_Com_Platform_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Com_Platform_C>();
 	}
 };
-static_assert(alignof(UWBP_Com_Platform_C) == 0x000008, "Wrong alignment on UWBP_Com_Platform_C");
-static_assert(sizeof(UWBP_Com_Platform_C) == 0x000668, "Wrong size on UWBP_Com_Platform_C");
-static_assert(offsetof(UWBP_Com_Platform_C, UberGraphFrame) == 0x000620, "Member 'UWBP_Com_Platform_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Console) == 0x000628, "Member 'UWBP_Com_Platform_C::Img_Platform_Console' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Epic) == 0x000630, "Member 'UWBP_Com_Platform_C::Img_Platform_Epic' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Launch) == 0x000638, "Member 'UWBP_Com_Platform_C::Img_Platform_Launch' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Pc) == 0x000640, "Member 'UWBP_Com_Platform_C::Img_Platform_Pc' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Ps) == 0x000648, "Member 'UWBP_Com_Platform_C::Img_Platform_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Steam) == 0x000650, "Member 'UWBP_Com_Platform_C::Img_Platform_Steam' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, Img_Platform_Xbox) == 0x000658, "Member 'UWBP_Com_Platform_C::Img_Platform_Xbox' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_Platform_C, SizeBox_Platform) == 0x000660, "Member 'UWBP_Com_Platform_C::SizeBox_Platform' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Com_Platform_C;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PyVibranium_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVibraniumWithShake">();
+		STATIC_CLASS_IMPL("PyVibraniumWithShake")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVibraniumWithShake")
 	}
 	static class APyVibraniumWithShake* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVibraniumWithShake>();
 	}
 };
-static_assert(alignof(APyVibraniumWithShake) == 0x000010, "Wrong alignment on APyVibraniumWithShake");
-static_assert(sizeof(APyVibraniumWithShake) == 0x000730, "Wrong size on APyVibraniumWithShake");
-static_assert(offsetof(APyVibraniumWithShake, State) == 0x000700, "Member 'APyVibraniumWithShake::State' has a wrong offset!");
-static_assert(offsetof(APyVibraniumWithShake, IsNeedShake) == 0x000710, "Member 'APyVibraniumWithShake::IsNeedShake' has a wrong offset!");
-static_assert(offsetof(APyVibraniumWithShake, StabilizerEffectLSAsset) == 0x000718, "Member 'APyVibraniumWithShake::StabilizerEffectLSAsset' has a wrong offset!");
-static_assert(offsetof(APyVibraniumWithShake, EventStateChanged) == 0x000720, "Member 'APyVibraniumWithShake::EventStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyVibraniumWithShake;
 
 }
 

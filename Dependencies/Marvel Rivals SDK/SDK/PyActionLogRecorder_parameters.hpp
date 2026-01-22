@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
+#include "UnrealEnginePython_structs.hpp"
 
 
 namespace SDK::Params
@@ -26,11 +27,7 @@ public:
 	struct FActionLogBattleContext                BattleContext;                                     // 0x0010(0x0068)(Parm, OutParm)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0078(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordActorDeath) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordActorDeath");
-static_assert(sizeof(PyActionLogRecorder_OnRecordActorDeath) == 0x000090, "Wrong size on PyActionLogRecorder_OnRecordActorDeath");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDeath, DeathExtraInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordActorDeath::DeathExtraInfo' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDeath, BattleContext) == 0x000010, "Member 'PyActionLogRecorder_OnRecordActorDeath::BattleContext' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDeath, ParameterHandle) == 0x000078, "Member 'PyActionLogRecorder_OnRecordActorDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordActorDeath;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordHeroSwitchOut
 // 0x0020 (0x0020 - 0x0000)
@@ -39,31 +36,25 @@ struct PyActionLogRecorder_OnRecordHeroSwitchOut final
 public:
 	struct FActionLogHeroUseRecord                HeroUseRecord;                                     // 0x0000(0x0020)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordHeroSwitchOut) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordHeroSwitchOut");
-static_assert(sizeof(PyActionLogRecorder_OnRecordHeroSwitchOut) == 0x000020, "Wrong size on PyActionLogRecorder_OnRecordHeroSwitchOut");
-static_assert(offsetof(PyActionLogRecorder_OnRecordHeroSwitchOut, HeroUseRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordHeroSwitchOut::HeroUseRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordHeroSwitchOut;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordUnitUseInfo
 // 0x0008 (0x0008 - 0x0000)
 struct PyActionLogRecorder_OnRecordUnitUseInfo final
 {
 public:
-	class UPyObjectWrapper*                       AbilityUseInfo;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUnsafePyObjectWrapper                 AbilityUseInfo;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordUnitUseInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordUnitUseInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordUnitUseInfo) == 0x000008, "Wrong size on PyActionLogRecorder_OnRecordUnitUseInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordUnitUseInfo, AbilityUseInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordUnitUseInfo::AbilityUseInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordUnitUseInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordAbilityUseInfo
 // 0x0008 (0x0008 - 0x0000)
 struct PyActionLogRecorder_OnRecordAbilityUseInfo final
 {
 public:
-	class UPyObjectWrapper*                       AbilityUseInfo;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUnsafePyObjectWrapper                 AbilityUseInfo;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordAbilityUseInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordAbilityUseInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordAbilityUseInfo) == 0x000008, "Wrong size on PyActionLogRecorder_OnRecordAbilityUseInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityUseInfo, AbilityUseInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordAbilityUseInfo::AbilityUseInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordAbilityUseInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordActorDamages
 // 0x00C0 (0x00C0 - 0x0000)
@@ -72,9 +63,7 @@ struct PyActionLogRecorder_OnRecordActorDamages final
 public:
 	struct FActionLogDamageMerge                  LogStruct;                                         // 0x0000(0x00C0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordActorDamages) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordActorDamages");
-static_assert(sizeof(PyActionLogRecorder_OnRecordActorDamages) == 0x0000C0, "Wrong size on PyActionLogRecorder_OnRecordActorDamages");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDamages, LogStruct) == 0x000000, "Member 'PyActionLogRecorder_OnRecordActorDamages::LogStruct' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordActorDamages;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordActorDamage
 // 0x0080 (0x0080 - 0x0000)
@@ -84,10 +73,7 @@ public:
 	struct FActionLogBattleContext                BattleContext;                                     // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0068(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordActorDamage) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordActorDamage");
-static_assert(sizeof(PyActionLogRecorder_OnRecordActorDamage) == 0x000080, "Wrong size on PyActionLogRecorder_OnRecordActorDamage");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDamage, BattleContext) == 0x000000, "Member 'PyActionLogRecorder_OnRecordActorDamage::BattleContext' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorDamage, ParameterHandle) == 0x000068, "Member 'PyActionLogRecorder_OnRecordActorDamage::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordActorDamage;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordActorHeals
 // 0x00C8 (0x00C8 - 0x0000)
@@ -98,10 +84,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActionLogDamageMerge                  LogStruct;                                         // 0x0008(0x00C0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordActorHeals) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordActorHeals");
-static_assert(sizeof(PyActionLogRecorder_OnRecordActorHeals) == 0x0000C8, "Wrong size on PyActionLogRecorder_OnRecordActorHeals");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeals, HealType) == 0x000000, "Member 'PyActionLogRecorder_OnRecordActorHeals::HealType' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeals, LogStruct) == 0x000008, "Member 'PyActionLogRecorder_OnRecordActorHeals::LogStruct' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordActorHeals;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordActorHeal
 // 0x0088 (0x0088 - 0x0000)
@@ -114,23 +97,16 @@ public:
 	struct FActionLogBattleContext                BattleContext;                                     // 0x0008(0x0068)(Parm, OutParm)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0070(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordActorHeal) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordActorHeal");
-static_assert(sizeof(PyActionLogRecorder_OnRecordActorHeal) == 0x000088, "Wrong size on PyActionLogRecorder_OnRecordActorHeal");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeal, HealType) == 0x000000, "Member 'PyActionLogRecorder_OnRecordActorHeal::HealType' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeal, IsNearDeathHeal) == 0x000001, "Member 'PyActionLogRecorder_OnRecordActorHeal::IsNearDeathHeal' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeal, BattleContext) == 0x000008, "Member 'PyActionLogRecorder_OnRecordActorHeal::BattleContext' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordActorHeal, ParameterHandle) == 0x000070, "Member 'PyActionLogRecorder_OnRecordActorHeal::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordActorHeal;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordBuffInfoCVer
 // 0x0008 (0x0008 - 0x0000)
 struct PyActionLogRecorder_OnRecordBuffInfoCVer final
 {
 public:
-	class UPyObjectWrapper*                       Buff;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUnsafePyObjectWrapper                 Buff;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordBuffInfoCVer) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordBuffInfoCVer");
-static_assert(sizeof(PyActionLogRecorder_OnRecordBuffInfoCVer) == 0x000008, "Wrong size on PyActionLogRecorder_OnRecordBuffInfoCVer");
-static_assert(offsetof(PyActionLogRecorder_OnRecordBuffInfoCVer, Buff) == 0x000000, "Member 'PyActionLogRecorder_OnRecordBuffInfoCVer::Buff' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordBuffInfoCVer;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordBuffInfo
 // 0x0068 (0x0068 - 0x0000)
@@ -139,9 +115,7 @@ struct PyActionLogRecorder_OnRecordBuffInfo final
 public:
 	struct FActionLogBuffRecord                   BuffRecord;                                        // 0x0000(0x0068)(Parm, OutParm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordBuffInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordBuffInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordBuffInfo) == 0x000068, "Wrong size on PyActionLogRecorder_OnRecordBuffInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordBuffInfo, BuffRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordBuffInfo::BuffRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordBuffInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordHeroSculptIDChange
 // 0x0018 (0x0018 - 0x0000)
@@ -150,20 +124,16 @@ struct PyActionLogRecorder_OnRecordHeroSculptIDChange final
 public:
 	struct FActionLogHeroSculptIDChangeRecord     ChangeRecord;                                      // 0x0000(0x0018)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordHeroSculptIDChange) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordHeroSculptIDChange");
-static_assert(sizeof(PyActionLogRecorder_OnRecordHeroSculptIDChange) == 0x000018, "Wrong size on PyActionLogRecorder_OnRecordHeroSculptIDChange");
-static_assert(offsetof(PyActionLogRecorder_OnRecordHeroSculptIDChange, ChangeRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordHeroSculptIDChange::ChangeRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordHeroSculptIDChange;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordEnergyChangedCVer
 // 0x0008 (0x0008 - 0x0000)
 struct PyActionLogRecorder_OnRecordEnergyChangedCVer final
 {
 public:
-	class UPyObjectWrapper*                       EnergyChangeRecord;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUnsafePyObjectWrapper                 EnergyChangeRecord;                                // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordEnergyChangedCVer) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordEnergyChangedCVer");
-static_assert(sizeof(PyActionLogRecorder_OnRecordEnergyChangedCVer) == 0x000008, "Wrong size on PyActionLogRecorder_OnRecordEnergyChangedCVer");
-static_assert(offsetof(PyActionLogRecorder_OnRecordEnergyChangedCVer, EnergyChangeRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordEnergyChangedCVer::EnergyChangeRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordEnergyChangedCVer;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordEnergyChanged
 // 0x0028 (0x0028 - 0x0000)
@@ -172,9 +142,7 @@ struct PyActionLogRecorder_OnRecordEnergyChanged final
 public:
 	struct FActionLogEnergyChangeRecord           EnergyChangeRecord;                                // 0x0000(0x0028)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordEnergyChanged) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordEnergyChanged");
-static_assert(sizeof(PyActionLogRecorder_OnRecordEnergyChanged) == 0x000028, "Wrong size on PyActionLogRecorder_OnRecordEnergyChanged");
-static_assert(offsetof(PyActionLogRecorder_OnRecordEnergyChanged, EnergyChangeRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordEnergyChanged::EnergyChangeRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordEnergyChanged;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordSummonedInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -183,9 +151,7 @@ struct PyActionLogRecorder_OnRecordSummonedInfo final
 public:
 	struct FActionLogSummonedRecord               SummonedRecord;                                    // 0x0000(0x0040)(Parm, OutParm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordSummonedInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordSummonedInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordSummonedInfo) == 0x000040, "Wrong size on PyActionLogRecorder_OnRecordSummonedInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordSummonedInfo, SummonedRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordSummonedInfo::SummonedRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordSummonedInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordCompetitionInfo
 // 0x0014 (0x0014 - 0x0000)
@@ -194,9 +160,7 @@ struct PyActionLogRecorder_OnRecordCompetitionInfo final
 public:
 	struct FActionLogCompetitionRecord            CompetitionRecord;                                 // 0x0000(0x0014)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordCompetitionInfo) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordCompetitionInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordCompetitionInfo) == 0x000014, "Wrong size on PyActionLogRecorder_OnRecordCompetitionInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordCompetitionInfo, CompetitionRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordCompetitionInfo::CompetitionRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordCompetitionInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordUltimateRelease
 // 0x001C (0x001C - 0x0000)
@@ -205,9 +169,7 @@ struct PyActionLogRecorder_OnRecordUltimateRelease final
 public:
 	struct FActionLogUltimateRelease              ReleaseRecord;                                     // 0x0000(0x001C)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordUltimateRelease) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordUltimateRelease");
-static_assert(sizeof(PyActionLogRecorder_OnRecordUltimateRelease) == 0x00001C, "Wrong size on PyActionLogRecorder_OnRecordUltimateRelease");
-static_assert(offsetof(PyActionLogRecorder_OnRecordUltimateRelease, ReleaseRecord) == 0x000000, "Member 'PyActionLogRecorder_OnRecordUltimateRelease::ReleaseRecord' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordUltimateRelease;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordAbilityExtraNormal
 // 0x0038 (0x0038 - 0x0000)
@@ -219,11 +181,7 @@ public:
 	class FString                                 ExtraKey;                                          // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         ExtraValue;                                        // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordAbilityExtraNormal) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordAbilityExtraNormal");
-static_assert(sizeof(PyActionLogRecorder_OnRecordAbilityExtraNormal) == 0x000038, "Wrong size on PyActionLogRecorder_OnRecordAbilityExtraNormal");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraNormal, BaseInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordAbilityExtraNormal::BaseInfo' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraNormal, ExtraKey) == 0x000020, "Member 'PyActionLogRecorder_OnRecordAbilityExtraNormal::ExtraKey' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraNormal, ExtraValue) == 0x000030, "Member 'PyActionLogRecorder_OnRecordAbilityExtraNormal::ExtraValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordAbilityExtraNormal;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordAbilityExtraHitRate
 // 0x0040 (0x0040 - 0x0000)
@@ -235,11 +193,7 @@ public:
 	class FString                                 ExtraKey;                                          // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FAbilityExtraHitRate                   ExtraHitRate;                                      // 0x0030(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordAbilityExtraHitRate) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordAbilityExtraHitRate");
-static_assert(sizeof(PyActionLogRecorder_OnRecordAbilityExtraHitRate) == 0x000040, "Wrong size on PyActionLogRecorder_OnRecordAbilityExtraHitRate");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraHitRate, BaseInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordAbilityExtraHitRate::BaseInfo' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraHitRate, ExtraKey) == 0x000020, "Member 'PyActionLogRecorder_OnRecordAbilityExtraHitRate::ExtraKey' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordAbilityExtraHitRate, ExtraHitRate) == 0x000030, "Member 'PyActionLogRecorder_OnRecordAbilityExtraHitRate::ExtraHitRate' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordAbilityExtraHitRate;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordFirstEnterBattle
 // 0x0014 (0x0014 - 0x0000)
@@ -248,9 +202,7 @@ struct PyActionLogRecorder_OnRecordFirstEnterBattle final
 public:
 	struct FActionLogFirstEnterBattle             FirstEnterBattle;                                  // 0x0000(0x0014)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordFirstEnterBattle) == 0x000004, "Wrong alignment on PyActionLogRecorder_OnRecordFirstEnterBattle");
-static_assert(sizeof(PyActionLogRecorder_OnRecordFirstEnterBattle) == 0x000014, "Wrong size on PyActionLogRecorder_OnRecordFirstEnterBattle");
-static_assert(offsetof(PyActionLogRecorder_OnRecordFirstEnterBattle, FirstEnterBattle) == 0x000000, "Member 'PyActionLogRecorder_OnRecordFirstEnterBattle::FirstEnterBattle' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordFirstEnterBattle;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordHealPackRefreshInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -259,9 +211,7 @@ struct PyActionLogRecorder_OnRecordHealPackRefreshInfo final
 public:
 	class FString                                 HealPackName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordHealPackRefreshInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordHealPackRefreshInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordHealPackRefreshInfo) == 0x000010, "Wrong size on PyActionLogRecorder_OnRecordHealPackRefreshInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordHealPackRefreshInfo, HealPackName) == 0x000000, "Member 'PyActionLogRecorder_OnRecordHealPackRefreshInfo::HealPackName' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordHealPackRefreshInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordLevelTriggerInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -270,9 +220,7 @@ struct PyActionLogRecorder_OnRecordLevelTriggerInfo final
 public:
 	struct FActionLogLevelTriggerInfo             LevelTriggerInfo;                                  // 0x0000(0x0020)(Parm, OutParm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordLevelTriggerInfo) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordLevelTriggerInfo");
-static_assert(sizeof(PyActionLogRecorder_OnRecordLevelTriggerInfo) == 0x000020, "Wrong size on PyActionLogRecorder_OnRecordLevelTriggerInfo");
-static_assert(offsetof(PyActionLogRecorder_OnRecordLevelTriggerInfo, LevelTriggerInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordLevelTriggerInfo::LevelTriggerInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordLevelTriggerInfo;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordDestructionDamage
 // 0x0058 (0x0058 - 0x0000)
@@ -283,10 +231,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDestructionExtraInfo                  ExtraInfo;                                         // 0x0018(0x0040)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordDestructionDamage) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordDestructionDamage");
-static_assert(sizeof(PyActionLogRecorder_OnRecordDestructionDamage) == 0x000058, "Wrong size on PyActionLogRecorder_OnRecordDestructionDamage");
-static_assert(offsetof(PyActionLogRecorder_OnRecordDestructionDamage, DestructionDamage) == 0x000000, "Member 'PyActionLogRecorder_OnRecordDestructionDamage::DestructionDamage' has a wrong offset!");
-static_assert(offsetof(PyActionLogRecorder_OnRecordDestructionDamage, ExtraInfo) == 0x000018, "Member 'PyActionLogRecorder_OnRecordDestructionDamage::ExtraInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordDestructionDamage;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosDamages
 // 0x0010 (0x0010 - 0x0000)
@@ -295,9 +240,7 @@ struct PyActionLogRecorder_OnRecordChaosDamages final
 public:
 	struct FActionLogChaosLogInfos                ChaosInfos;                                        // 0x0000(0x0010)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosDamages) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosDamages");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosDamages) == 0x000010, "Wrong size on PyActionLogRecorder_OnRecordChaosDamages");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosDamages, ChaosInfos) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosDamages::ChaosInfos' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosDamages;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosDamage
 // 0x00A0 (0x00A0 - 0x0000)
@@ -306,9 +249,7 @@ struct PyActionLogRecorder_OnRecordChaosDamage final
 public:
 	struct FActionLogChaosLogInfo                 ChaosInfo;                                         // 0x0000(0x00A0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosDamage) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosDamage");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosDamage) == 0x0000A0, "Wrong size on PyActionLogRecorder_OnRecordChaosDamage");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosDamage, ChaosInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosDamage::ChaosInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosDamage;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosBreaks
 // 0x0010 (0x0010 - 0x0000)
@@ -317,9 +258,7 @@ struct PyActionLogRecorder_OnRecordChaosBreaks final
 public:
 	struct FActionLogChaosLogInfos                ChaosInfos;                                        // 0x0000(0x0010)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosBreaks) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosBreaks");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosBreaks) == 0x000010, "Wrong size on PyActionLogRecorder_OnRecordChaosBreaks");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosBreaks, ChaosInfos) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosBreaks::ChaosInfos' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosBreaks;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosBreak
 // 0x00A0 (0x00A0 - 0x0000)
@@ -328,9 +267,7 @@ struct PyActionLogRecorder_OnRecordChaosBreak final
 public:
 	struct FActionLogChaosLogInfo                 ChaosInfo;                                         // 0x0000(0x00A0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosBreak) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosBreak");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosBreak) == 0x0000A0, "Wrong size on PyActionLogRecorder_OnRecordChaosBreak");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosBreak, ChaosInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosBreak::ChaosInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosBreak;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosRecover
 // 0x00A0 (0x00A0 - 0x0000)
@@ -339,9 +276,7 @@ struct PyActionLogRecorder_OnRecordChaosRecover final
 public:
 	struct FActionLogChaosLogInfo                 ChaosInfo;                                         // 0x0000(0x00A0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosRecover) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosRecover");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosRecover) == 0x0000A0, "Wrong size on PyActionLogRecorder_OnRecordChaosRecover");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosRecover, ChaosInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosRecover::ChaosInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosRecover;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosCollapse
 // 0x00A0 (0x00A0 - 0x0000)
@@ -350,9 +285,7 @@ struct PyActionLogRecorder_OnRecordChaosCollapse final
 public:
 	struct FActionLogChaosLogInfo                 ChaosInfo;                                         // 0x0000(0x00A0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosCollapse) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosCollapse");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosCollapse) == 0x0000A0, "Wrong size on PyActionLogRecorder_OnRecordChaosCollapse");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosCollapse, ChaosInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosCollapse::ChaosInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosCollapse;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordChaosEndPlay
 // 0x00A0 (0x00A0 - 0x0000)
@@ -361,9 +294,7 @@ struct PyActionLogRecorder_OnRecordChaosEndPlay final
 public:
 	struct FActionLogChaosLogInfo                 ChaosInfo;                                         // 0x0000(0x00A0)(Parm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordChaosEndPlay) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordChaosEndPlay");
-static_assert(sizeof(PyActionLogRecorder_OnRecordChaosEndPlay) == 0x0000A0, "Wrong size on PyActionLogRecorder_OnRecordChaosEndPlay");
-static_assert(offsetof(PyActionLogRecorder_OnRecordChaosEndPlay, ChaosInfo) == 0x000000, "Member 'PyActionLogRecorder_OnRecordChaosEndPlay::ChaosInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordChaosEndPlay;
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordTeamComposition
 // 0x0068 (0x0068 - 0x0000)
@@ -372,9 +303,7 @@ struct PyActionLogRecorder_OnRecordTeamComposition final
 public:
 	struct FActionLogTeamComposition              TeamComposition;                                   // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyActionLogRecorder_OnRecordTeamComposition) == 0x000008, "Wrong alignment on PyActionLogRecorder_OnRecordTeamComposition");
-static_assert(sizeof(PyActionLogRecorder_OnRecordTeamComposition) == 0x000068, "Wrong size on PyActionLogRecorder_OnRecordTeamComposition");
-static_assert(offsetof(PyActionLogRecorder_OnRecordTeamComposition, TeamComposition) == 0x000000, "Member 'PyActionLogRecorder_OnRecordTeamComposition::TeamComposition' has a wrong offset!");
+DUMPER7_ASSERTS_PyActionLogRecorder_OnRecordTeamComposition;
 
 }
 

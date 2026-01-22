@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10472201_BP.Projectile_10472201_BP_C
-// 0x0200 (0x3D90 - 0x3B90)
+// 0x0210 (0x40B0 - 0x3EA0)
 class AProjectile_10472201_BP_C final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FHitResult                             Impact_Result;                                     // 0x3B98(0x01F0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3EA0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FHitResult                             Impact_Result;                                     // 0x3EA8(0x0208)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_Projectile_10472201_BP(int32 EntryPoint);
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10472201_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10472201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10472201_BP_C")
 	}
 	static class AProjectile_10472201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10472201_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10472201_BP_C) == 0x000010, "Wrong alignment on AProjectile_10472201_BP_C");
-static_assert(sizeof(AProjectile_10472201_BP_C) == 0x003D90, "Wrong size on AProjectile_10472201_BP_C");
-static_assert(offsetof(AProjectile_10472201_BP_C, UberGraphFrame) == 0x003B90, "Member 'AProjectile_10472201_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectile_10472201_BP_C, Impact_Result) == 0x003B98, "Member 'AProjectile_10472201_BP_C::Impact_Result' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10472201_BP_C;
 
 }
 

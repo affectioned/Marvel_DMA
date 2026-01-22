@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104501_WhileActive) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_104501_WhileActive");
-static_assert(sizeof(PyCue_Weapon_Loop_104501_WhileActive) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_104501_WhileActive");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_104501_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_104501_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_104501_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104501_WhileActive;
 
 // PythonFunction PyCue_Weapon_Loop_104501.PyCue_Weapon_Loop_104501.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104501_OnRemove) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_104501_OnRemove");
-static_assert(sizeof(PyCue_Weapon_Loop_104501_OnRemove) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_104501_OnRemove");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_104501_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_104501_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104501_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_104501_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104501_OnRemove;
 
 }
 

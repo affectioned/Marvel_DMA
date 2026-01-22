@@ -23,15 +23,18 @@ class APyLevelController_Activity135 final : public APyLevelController_Activity1
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Activity135">();
+		STATIC_CLASS_IMPL("PyLevelController_Activity135")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Activity135")
 	}
 	static class APyLevelController_Activity135* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Activity135>();
 	}
 };
-static_assert(alignof(APyLevelController_Activity135) == 0x000010, "Wrong alignment on APyLevelController_Activity135");
-static_assert(sizeof(APyLevelController_Activity135) == 0x0008F0, "Wrong size on APyLevelController_Activity135");
+DUMPER7_ASSERTS_APyLevelController_Activity135;
 
 }
 

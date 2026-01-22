@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_CreatePanel.PyWidget_League_CreatePanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_League_CreatePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_CreatePanel">();
+		STATIC_CLASS_IMPL("PyWidget_League_CreatePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_CreatePanel")
 	}
 	static class UPyWidget_League_CreatePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_CreatePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_League_CreatePanel) == 0x000008, "Wrong alignment on UPyWidget_League_CreatePanel");
-static_assert(sizeof(UPyWidget_League_CreatePanel) == 0x0005F8, "Wrong size on UPyWidget_League_CreatePanel");
+DUMPER7_ASSERTS_UPyWidget_League_CreatePanel;
 
 }
 

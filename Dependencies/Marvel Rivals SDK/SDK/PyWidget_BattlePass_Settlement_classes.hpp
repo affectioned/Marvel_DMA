@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_Settlement.PyWidget_Secondary_BattlePass_Settlement
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_BattlePass_Settlement final : public UPyWidget_SP_BG_Base
 {
 public:
-	class UPyDataAsset_BattlePass*                BattlePassDataAsset;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyDataAsset_BattlePass*                BattlePassDataAsset;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,19 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_BattlePass_Settlement">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_BattlePass_Settlement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_BattlePass_Settlement")
 	}
 	static class UPyWidget_Secondary_BattlePass_Settlement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_BattlePass_Settlement>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_BattlePass_Settlement) == 0x000008, "Wrong alignment on UPyWidget_Secondary_BattlePass_Settlement");
-static_assert(sizeof(UPyWidget_Secondary_BattlePass_Settlement) == 0x0005C8, "Wrong size on UPyWidget_Secondary_BattlePass_Settlement");
-static_assert(offsetof(UPyWidget_Secondary_BattlePass_Settlement, BattlePassDataAsset) == 0x0005C0, "Member 'UPyWidget_Secondary_BattlePass_Settlement::BattlePassDataAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_BattlePass_Settlement;
 
 // PythonClass PyWidget_BattlePass_Settlement.PyWidget_BattlePass_Settlement
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_BattlePass_Settlement final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -57,15 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Settlement">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Settlement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Settlement")
 	}
 	static class UPyWidget_BattlePass_Settlement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Settlement>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Settlement) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Settlement");
-static_assert(sizeof(UPyWidget_BattlePass_Settlement) == 0x0005F8, "Wrong size on UPyWidget_BattlePass_Settlement");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Settlement;
 
 }
 

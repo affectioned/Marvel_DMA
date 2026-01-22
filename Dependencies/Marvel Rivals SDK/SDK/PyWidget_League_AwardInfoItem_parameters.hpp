@@ -21,9 +21,7 @@ struct PyWidget_League_AwardInfoCollectItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_AwardInfoCollectItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_League_AwardInfoCollectItem_PreConstruct");
-static_assert(sizeof(PyWidget_League_AwardInfoCollectItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_League_AwardInfoCollectItem_PreConstruct");
-static_assert(offsetof(PyWidget_League_AwardInfoCollectItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_League_AwardInfoCollectItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_AwardInfoCollectItem_PreConstruct;
 
 // PythonFunction PyWidget_League_AwardInfoItem.PyWidget_League_ReceivedBonus_Item.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet final
 public:
 	class UObject*                                item_object;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet, item_object) == 0x000000, "Member 'PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet::item_object' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_ReceivedBonus_Item_OnListItemObjectSet;
 
 // PythonFunction PyWidget_League_AwardInfoItem.PyWidget_DropDownList_LeagueAwardInfo.SetItemID
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_DropDownList_LeagueAwardInfo_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_LeagueAwardInfo_SetItemID) == 0x000004, "Wrong alignment on PyWidget_DropDownList_LeagueAwardInfo_SetItemID");
-static_assert(sizeof(PyWidget_DropDownList_LeagueAwardInfo_SetItemID) == 0x000004, "Wrong size on PyWidget_DropDownList_LeagueAwardInfo_SetItemID");
-static_assert(offsetof(PyWidget_DropDownList_LeagueAwardInfo_SetItemID, ItemID_0) == 0x000000, "Member 'PyWidget_DropDownList_LeagueAwardInfo_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_LeagueAwardInfo_SetItemID;
 
 }
 

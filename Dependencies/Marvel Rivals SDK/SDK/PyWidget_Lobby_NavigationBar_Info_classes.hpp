@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Lobby_NavigationBar_Info.PyWidget_Lobby_NavigationBar_FirstInfo
-// 0x0000 (0x0630 - 0x0630)
+// 0x0000 (0x0638 - 0x0638)
 class UPyWidget_Lobby_NavigationBar_FirstInfo final : public UPyWidget_Common_NavigationBar_FirstInfo
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar_FirstInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar_FirstInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar_FirstInfo")
 	}
 	static class UPyWidget_Lobby_NavigationBar_FirstInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_FirstInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_NavigationBar_FirstInfo) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar_FirstInfo");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar_FirstInfo) == 0x000630, "Wrong size on UPyWidget_Lobby_NavigationBar_FirstInfo");
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar_FirstInfo;
 
 }
 

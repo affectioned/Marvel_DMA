@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
+#include "PyWidget_CommonTipsBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
-#include "PyWidget_CommonTipsBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_CommonItemTips.PyWidget_Multi_CommomItemTips
-// 0x0010 (0x05E8 - 0x05D8)
+// 0x0010 (0x05F0 - 0x05E0)
 class UPyWidget_Multi_CommomItemTips : public UPyWidget_CommonTipsBase
 {
 public:
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyMarvelUserWidget>        CommonItemClass;                                   // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Shortcut_Key_RightAudio;                           // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyMarvelUserWidget>        CommonItemClass;                                   // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Shortcut_Key_RightAudio;                           // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Multi_CommomItemTips">();
+		STATIC_CLASS_IMPL("PyWidget_Multi_CommomItemTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Multi_CommomItemTips")
 	}
 	static class UPyWidget_Multi_CommomItemTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Multi_CommomItemTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Multi_CommomItemTips) == 0x000008, "Wrong alignment on UPyWidget_Multi_CommomItemTips");
-static_assert(sizeof(UPyWidget_Multi_CommomItemTips) == 0x0005E8, "Wrong size on UPyWidget_Multi_CommomItemTips");
-static_assert(offsetof(UPyWidget_Multi_CommomItemTips, CommonItemClass) == 0x0005D8, "Member 'UPyWidget_Multi_CommomItemTips::CommonItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Multi_CommomItemTips, Shortcut_Key_RightAudio) == 0x0005E0, "Member 'UPyWidget_Multi_CommomItemTips::Shortcut_Key_RightAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Multi_CommomItemTips;
 
 // PythonClass PyWidget_CommonItemTips.PyWidget_CommonItemTips_AwardItem
 // 0x0000 (0x03B8 - 0x03B8)
@@ -55,35 +56,38 @@ class UPyWidget_CommonItemTips_AwardItem : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonItemTips_AwardItem">();
+		STATIC_CLASS_IMPL("PyWidget_CommonItemTips_AwardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonItemTips_AwardItem")
 	}
 	static class UPyWidget_CommonItemTips_AwardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonItemTips_AwardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonItemTips_AwardItem) == 0x000008, "Wrong alignment on UPyWidget_CommonItemTips_AwardItem");
-static_assert(sizeof(UPyWidget_CommonItemTips_AwardItem) == 0x0003B8, "Wrong size on UPyWidget_CommonItemTips_AwardItem");
+DUMPER7_ASSERTS_UPyWidget_CommonItemTips_AwardItem;
 
 // PythonClass PyWidget_CommonItemTips.PyWidget_CommonItemTips
-// 0x0100 (0x06C0 - 0x05C0)
+// 0x0100 (0x06C8 - 0x05C8)
 class UPyWidget_CommonItemTips : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ItemId;                                            // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EItemType                                     ItemType;                                          // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EItemQualityType, struct FSlateBrush>    ItemQualityBg;                                     // 0x05D8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                AwardItemClass;                                    // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_GuideActionTips>  Class_TipsOnlyDisplay;                             // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                GuideTipsStyles;                                   // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   ClanLabelBgColor;                                  // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CurrencyTextColor_Default;                         // 0x0658(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CurrencyTextColor_BattlePass;                      // 0x066C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedColor;                                          // 0x0680(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            GreenColor;                                        // 0x0694(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x06A8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ItemId;                                            // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EItemType                                     ItemType;                                          // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EItemQualityType, struct FSlateBrush>    ItemQualityBg;                                     // 0x05E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                AwardItemClass;                                    // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_GuideActionTips>  Class_TipsOnlyDisplay;                             // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                GuideTipsStyles;                                   // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   ClanLabelBgColor;                                  // 0x0650(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CurrencyTextColor_Default;                         // 0x0660(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CurrencyTextColor_BattlePass;                      // 0x0674(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedColor;                                          // 0x0688(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GreenColor;                                        // 0x069C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x06B0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -94,30 +98,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonItemTips">();
+		STATIC_CLASS_IMPL("PyWidget_CommonItemTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonItemTips")
 	}
 	static class UPyWidget_CommonItemTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonItemTips>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonItemTips) == 0x000008, "Wrong alignment on UPyWidget_CommonItemTips");
-static_assert(sizeof(UPyWidget_CommonItemTips) == 0x0006C0, "Wrong size on UPyWidget_CommonItemTips");
-static_assert(offsetof(UPyWidget_CommonItemTips, ItemId) == 0x0005C0, "Member 'UPyWidget_CommonItemTips::ItemId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, ItemType) == 0x0005D0, "Member 'UPyWidget_CommonItemTips::ItemType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, ItemQualityBg) == 0x0005D8, "Member 'UPyWidget_CommonItemTips::ItemQualityBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, AwardItemClass) == 0x000628, "Member 'UPyWidget_CommonItemTips::AwardItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, Class_TipsOnlyDisplay) == 0x000630, "Member 'UPyWidget_CommonItemTips::Class_TipsOnlyDisplay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, GuideTipsStyles) == 0x000638, "Member 'UPyWidget_CommonItemTips::GuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, ClanLabelBgColor) == 0x000648, "Member 'UPyWidget_CommonItemTips::ClanLabelBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, CurrencyTextColor_Default) == 0x000658, "Member 'UPyWidget_CommonItemTips::CurrencyTextColor_Default' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, CurrencyTextColor_BattlePass) == 0x00066C, "Member 'UPyWidget_CommonItemTips::CurrencyTextColor_BattlePass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, RedColor) == 0x000680, "Member 'UPyWidget_CommonItemTips::RedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, GreenColor) == 0x000694, "Member 'UPyWidget_CommonItemTips::GreenColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonItemTips, NormalColor) == 0x0006A8, "Member 'UPyWidget_CommonItemTips::NormalColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonItemTips;
 
 // PythonClass PyWidget_CommonItemTips.PyWidget_ItemDesc_Prompt
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_ItemDesc_Prompt final : public UPyWidget_CommonTipsBase
 {
 public:
@@ -126,32 +121,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ItemDesc_Prompt">();
+		STATIC_CLASS_IMPL("PyWidget_ItemDesc_Prompt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ItemDesc_Prompt")
 	}
 	static class UPyWidget_ItemDesc_Prompt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ItemDesc_Prompt>();
 	}
 };
-static_assert(alignof(UPyWidget_ItemDesc_Prompt) == 0x000008, "Wrong alignment on UPyWidget_ItemDesc_Prompt");
-static_assert(sizeof(UPyWidget_ItemDesc_Prompt) == 0x0005D8, "Wrong size on UPyWidget_ItemDesc_Prompt");
+DUMPER7_ASSERTS_UPyWidget_ItemDesc_Prompt;
 
 // PythonClass PyWidget_CommonItemTips.PyWidget_ItemDesc_Panel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ItemDesc_Panel final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ItemDesc_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_ItemDesc_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ItemDesc_Panel")
 	}
 	static class UPyWidget_ItemDesc_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ItemDesc_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_ItemDesc_Panel) == 0x000008, "Wrong alignment on UPyWidget_ItemDesc_Panel");
-static_assert(sizeof(UPyWidget_ItemDesc_Panel) == 0x0005C0, "Wrong size on UPyWidget_ItemDesc_Panel");
+DUMPER7_ASSERTS_UPyWidget_ItemDesc_Panel;
 
 }
 

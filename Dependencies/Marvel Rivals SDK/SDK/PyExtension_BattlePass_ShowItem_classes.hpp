@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_BattlePass_ShowItem">();
+		STATIC_CLASS_IMPL("PyExtension_BattlePass_ShowItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_BattlePass_ShowItem")
 	}
 	static class UPyExtension_BattlePass_ShowItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_BattlePass_ShowItem>();
 	}
 };
-static_assert(alignof(UPyExtension_BattlePass_ShowItem) == 0x000008, "Wrong alignment on UPyExtension_BattlePass_ShowItem");
-static_assert(sizeof(UPyExtension_BattlePass_ShowItem) == 0x000030, "Wrong size on UPyExtension_BattlePass_ShowItem");
+DUMPER7_ASSERTS_UPyExtension_BattlePass_ShowItem;
 
 }
 

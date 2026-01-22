@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_LevelBinkVideoEntrance.WBP_LevelBinkVideoEntrance_C
-// 0x0018 (0x0620 - 0x0608)
+// 0x0018 (0x0628 - 0x0610)
 class UWBP_LevelBinkVideoEntrance_C final : public UPyWidget_LevelBinkVideoEntrance
 {
 public:
-	class UMarvelButton*                          Btn_Cursor;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_Entrance;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BinkVideo_C*                       WBP_Video_Entrance;                                // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Cursor;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_Entrance;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BinkVideo_C*                       WBP_Video_Entrance;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LevelBinkVideoEntrance_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LevelBinkVideoEntrance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LevelBinkVideoEntrance_C")
 	}
 	static class UWBP_LevelBinkVideoEntrance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LevelBinkVideoEntrance_C>();
 	}
 };
-static_assert(alignof(UWBP_LevelBinkVideoEntrance_C) == 0x000008, "Wrong alignment on UWBP_LevelBinkVideoEntrance_C");
-static_assert(sizeof(UWBP_LevelBinkVideoEntrance_C) == 0x000620, "Wrong size on UWBP_LevelBinkVideoEntrance_C");
-static_assert(offsetof(UWBP_LevelBinkVideoEntrance_C, Btn_Cursor) == 0x000608, "Member 'UWBP_LevelBinkVideoEntrance_C::Btn_Cursor' has a wrong offset!");
-static_assert(offsetof(UWBP_LevelBinkVideoEntrance_C, ScaleBox_Entrance) == 0x000610, "Member 'UWBP_LevelBinkVideoEntrance_C::ScaleBox_Entrance' has a wrong offset!");
-static_assert(offsetof(UWBP_LevelBinkVideoEntrance_C, WBP_Video_Entrance) == 0x000618, "Member 'UWBP_LevelBinkVideoEntrance_C::WBP_Video_Entrance' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_LevelBinkVideoEntrance_C;
 
 }
 

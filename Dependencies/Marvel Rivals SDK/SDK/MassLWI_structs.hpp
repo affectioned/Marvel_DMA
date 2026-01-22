@@ -23,9 +23,7 @@ struct FMassStoredActorsContainer final
 public:
 	TArray<class AActor*>                         Container;                                         // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassStoredActorsContainer) == 0x000008, "Wrong alignment on FMassStoredActorsContainer");
-static_assert(sizeof(FMassStoredActorsContainer) == 0x000010, "Wrong size on FMassStoredActorsContainer");
-static_assert(offsetof(FMassStoredActorsContainer, Container) == 0x000000, "Member 'FMassStoredActorsContainer::Container' has a wrong offset!");
+DUMPER7_ASSERTS_FMassStoredActorsContainer;
 
 // ScriptStruct MassLWI.MassLWIManagerSharedFragment
 // 0x0030 (0x0030 - 0x0000)
@@ -34,9 +32,7 @@ struct FMassLWIManagerSharedFragment final : public FMassSharedFragment
 public:
 	TSoftObjectPtr<class AMassLWIStaticMeshManager> LWIManager;                                      // 0x0000(0x0030)(Transient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassLWIManagerSharedFragment) == 0x000008, "Wrong alignment on FMassLWIManagerSharedFragment");
-static_assert(sizeof(FMassLWIManagerSharedFragment) == 0x000030, "Wrong size on FMassLWIManagerSharedFragment");
-static_assert(offsetof(FMassLWIManagerSharedFragment, LWIManager) == 0x000000, "Member 'FMassLWIManagerSharedFragment::LWIManager' has a wrong offset!");
+DUMPER7_ASSERTS_FMassLWIManagerSharedFragment;
 
 }
 

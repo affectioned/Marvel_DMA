@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PySymbiosis.PySymbiosis
-// 0x0010 (0x0700 - 0x06F0)
+// 0x0010 (0x0710 - 0x0700)
 class APySymbiosis final : public AEnvironmentStaticActor
 {
 public:
-	float                                         Radius;                                            // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChangeTime;                                        // 0x06F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USphereComponent*                       SphereCollision;                                   // 0x06F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangeTime;                                        // 0x0704(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USphereComponent*                       SphereCollision;                                   // 0x0708(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySymbiosis">();
+		STATIC_CLASS_IMPL("PySymbiosis")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySymbiosis")
 	}
 	static class APySymbiosis* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySymbiosis>();
 	}
 };
-static_assert(alignof(APySymbiosis) == 0x000010, "Wrong alignment on APySymbiosis");
-static_assert(sizeof(APySymbiosis) == 0x000700, "Wrong size on APySymbiosis");
-static_assert(offsetof(APySymbiosis, Radius) == 0x0006F0, "Member 'APySymbiosis::Radius' has a wrong offset!");
-static_assert(offsetof(APySymbiosis, ChangeTime) == 0x0006F4, "Member 'APySymbiosis::ChangeTime' has a wrong offset!");
-static_assert(offsetof(APySymbiosis, SphereCollision) == 0x0006F8, "Member 'APySymbiosis::SphereCollision' has a wrong offset!");
+DUMPER7_ASSERTS_APySymbiosis;
 
 }
 

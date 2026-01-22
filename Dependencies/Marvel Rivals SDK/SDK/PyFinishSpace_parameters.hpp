@@ -24,9 +24,7 @@ struct PyFinishSpace_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFinishSpace_ReceiveTick) == 0x000004, "Wrong alignment on PyFinishSpace_ReceiveTick");
-static_assert(sizeof(PyFinishSpace_ReceiveTick) == 0x000004, "Wrong size on PyFinishSpace_ReceiveTick");
-static_assert(offsetof(PyFinishSpace_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyFinishSpace_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyFinishSpace_ReceiveTick;
 
 // PythonFunction PyFinishSpace.PyFinishSpace.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyFinishSpace_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFinishSpace_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyFinishSpace_ReceiveEndPlay");
-static_assert(sizeof(PyFinishSpace_ReceiveEndPlay) == 0x000001, "Wrong size on PyFinishSpace_ReceiveEndPlay");
-static_assert(offsetof(PyFinishSpace_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyFinishSpace_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyFinishSpace_ReceiveEndPlay;
 
 // PythonFunction PyFinishSpace.PyFinishSpace.OnMatchStateChangeDispatcher
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyFinishSpace_OnMatchStateChangeDispatcher final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFinishSpace_OnMatchStateChangeDispatcher) == 0x000001, "Wrong alignment on PyFinishSpace_OnMatchStateChangeDispatcher");
-static_assert(sizeof(PyFinishSpace_OnMatchStateChangeDispatcher) == 0x000001, "Wrong size on PyFinishSpace_OnMatchStateChangeDispatcher");
-static_assert(offsetof(PyFinishSpace_OnMatchStateChangeDispatcher, MatchState) == 0x000000, "Member 'PyFinishSpace_OnMatchStateChangeDispatcher::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyFinishSpace_OnMatchStateChangeDispatcher;
 
 }
 

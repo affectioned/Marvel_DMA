@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivationLogicBase">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivationLogicBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivationLogicBase")
 	}
 	static class UPyAIAbilityActivationLogicBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivationLogicBase>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivationLogicBase) == 0x000008, "Wrong alignment on UPyAIAbilityActivationLogicBase");
-static_assert(sizeof(UPyAIAbilityActivationLogicBase) == 0x000038, "Wrong size on UPyAIAbilityActivationLogicBase");
+DUMPER7_ASSERTS_UPyAIAbilityActivationLogicBase;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckAndChangeButton
 // 0x0008 (0x0040 - 0x0038)
@@ -51,7 +54,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckAndChangeButton">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckAndChangeButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckAndChangeButton")
 	}
 	static class UPyAIAbilityActivation_CheckAndChangeButton* GetDefaultObj()
 	{
@@ -59,9 +66,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyAIAbilityActivation_CheckAndChangeButton) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckAndChangeButton");
-static_assert(sizeof(UPyAIAbilityActivation_CheckAndChangeButton) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckAndChangeButton");
-static_assert(offsetof(UPyAIAbilityActivation_CheckAndChangeButton, Button) == 0x000038, "Member 'UPyAIAbilityActivation_CheckAndChangeButton::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckAndChangeButton;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn
 // 0x0000 (0x0040 - 0x0040)
@@ -71,7 +76,11 @@ class alignas(0x08) UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn : publi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn")
 	}
 	static class UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn* GetDefaultObj()
 	{
@@ -79,8 +88,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn) == 0x000040, "Wrong size on UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButtonIfCanNotPlacePawn;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelByPlaceConfig
 // 0x0000 (0x0040 - 0x0040)
@@ -93,16 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelByPlaceConfig">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelByPlaceConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelByPlaceConfig")
 	}
 	static class UPyAIAbilityActivation_CheckCancelByPlaceConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelByPlaceConfig>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelByPlaceConfig) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelByPlaceConfig");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelByPlaceConfig) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelByPlaceConfig");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelByPlaceConfig, AbilityID) == 0x00003C, "Member 'UPyAIAbilityActivation_CheckCancelByPlaceConfig::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelByPlaceConfig;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelNamorWhaleWave
 // 0x0000 (0x0040 - 0x0040)
@@ -111,15 +121,18 @@ class UPyAIAbilityActivation_CheckCancelNamorWhaleWave : public UPyAIAbilityActi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelNamorWhaleWave">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelNamorWhaleWave")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelNamorWhaleWave")
 	}
 	static class UPyAIAbilityActivation_CheckCancelNamorWhaleWave* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelNamorWhaleWave>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelNamorWhaleWave) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelNamorWhaleWave");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelNamorWhaleWave) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelNamorWhaleWave");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelNamorWhaleWave;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckAndChangeAbility
 // 0x0008 (0x0040 - 0x0038)
@@ -133,17 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckAndChangeAbility">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckAndChangeAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckAndChangeAbility")
 	}
 	static class UPyAIAbilityActivation_CheckAndChangeAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckAndChangeAbility>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckAndChangeAbility) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckAndChangeAbility");
-static_assert(sizeof(UPyAIAbilityActivation_CheckAndChangeAbility) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckAndChangeAbility");
-static_assert(offsetof(UPyAIAbilityActivation_CheckAndChangeAbility, Button) == 0x000038, "Member 'UPyAIAbilityActivation_CheckAndChangeAbility::Button' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_CheckAndChangeAbility, AbilityID) == 0x00003C, "Member 'UPyAIAbilityActivation_CheckAndChangeAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckAndChangeAbility;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_DebugLog
 // 0x0000 (0x0038 - 0x0038)
@@ -152,15 +166,18 @@ class UPyAIAbilityActivation_DebugLog final : public UPyAIAbilityActivationLogic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_DebugLog">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DebugLog")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DebugLog")
 	}
 	static class UPyAIAbilityActivation_DebugLog* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_DebugLog>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_DebugLog) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_DebugLog");
-static_assert(sizeof(UPyAIAbilityActivation_DebugLog) == 0x000038, "Wrong size on UPyAIAbilityActivation_DebugLog");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DebugLog;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButtonIfNoEnemy
 // 0x0008 (0x0048 - 0x0040)
@@ -173,16 +190,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeButtonIfNoEnemy">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButtonIfNoEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButtonIfNoEnemy")
 	}
 	static class UPyAIAbilityActivation_ChangeButtonIfNoEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeButtonIfNoEnemy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ChangeButtonIfNoEnemy) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeButtonIfNoEnemy");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeButtonIfNoEnemy) == 0x000048, "Wrong size on UPyAIAbilityActivation_ChangeButtonIfNoEnemy");
-static_assert(offsetof(UPyAIAbilityActivation_ChangeButtonIfNoEnemy, CheckRadius) == 0x00003C, "Member 'UPyAIAbilityActivation_ChangeButtonIfNoEnemy::CheckRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButtonIfNoEnemy;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckAndChangeBindAnyButton
 // 0x0000 (0x0038 - 0x0038)
@@ -191,15 +210,18 @@ class UPyAIAbilityActivation_CheckAndChangeBindAnyButton : public UPyAIAbilityAc
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckAndChangeBindAnyButton">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckAndChangeBindAnyButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckAndChangeBindAnyButton")
 	}
 	static class UPyAIAbilityActivation_CheckAndChangeBindAnyButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckAndChangeBindAnyButton>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckAndChangeBindAnyButton) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckAndChangeBindAnyButton");
-static_assert(sizeof(UPyAIAbilityActivation_CheckAndChangeBindAnyButton) == 0x000038, "Wrong size on UPyAIAbilityActivation_CheckAndChangeBindAnyButton");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckAndChangeBindAnyButton;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckAndChangeButtonWithAutoReset
 // 0x0008 (0x0040 - 0x0038)
@@ -211,16 +233,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckAndChangeButtonWithAutoReset">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckAndChangeButtonWithAutoReset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckAndChangeButtonWithAutoReset")
 	}
 	static class UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset");
-static_assert(sizeof(UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset");
-static_assert(offsetof(UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset, Button) == 0x000038, "Member 'UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset::Button' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckAndChangeButtonWithAutoReset;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButtonIfAbilityIsActivated
 // 0x0000 (0x0040 - 0x0040)
@@ -233,16 +257,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeButtonIfAbilityIsActivated">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButtonIfAbilityIsActivated")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButtonIfAbilityIsActivated")
 	}
 	static class UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated) == 0x000040, "Wrong size on UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated");
-static_assert(offsetof(UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated, CheckAbilityID) == 0x00003C, "Member 'UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated::CheckAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButtonIfAbilityIsActivated;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeAbilityIfAbilityInCD
 // 0x0008 (0x0048 - 0x0040)
@@ -254,16 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeAbilityIfAbilityInCD">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeAbilityIfAbilityInCD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeAbilityIfAbilityInCD")
 	}
 	static class UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD) == 0x000048, "Wrong size on UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD");
-static_assert(offsetof(UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD, CheckAbilityID) == 0x000040, "Member 'UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD::CheckAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeAbilityIfAbilityInCD;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_SetFocusAgain
 // 0x0000 (0x0038 - 0x0038)
@@ -272,15 +300,18 @@ class UPyAIAbilityActivation_SetFocusAgain final : public UPyAIAbilityActivation
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_SetFocusAgain">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_SetFocusAgain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_SetFocusAgain")
 	}
 	static class UPyAIAbilityActivation_SetFocusAgain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_SetFocusAgain>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_SetFocusAgain) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_SetFocusAgain");
-static_assert(sizeof(UPyAIAbilityActivation_SetFocusAgain) == 0x000038, "Wrong size on UPyAIAbilityActivation_SetFocusAgain");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_SetFocusAgain;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_AbortMove
 // 0x0000 (0x0038 - 0x0038)
@@ -289,15 +320,18 @@ class UPyAIAbilityActivation_AbortMove final : public UPyAIAbilityActivationLogi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_AbortMove">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_AbortMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_AbortMove")
 	}
 	static class UPyAIAbilityActivation_AbortMove* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_AbortMove>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_AbortMove) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_AbortMove");
-static_assert(sizeof(UPyAIAbilityActivation_AbortMove) == 0x000038, "Wrong size on UPyAIAbilityActivation_AbortMove");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_AbortMove;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_AbortMoveWhenActive
 // 0x0000 (0x0038 - 0x0038)
@@ -306,15 +340,18 @@ class UPyAIAbilityActivation_AbortMoveWhenActive : public UPyAIAbilityActivation
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_AbortMoveWhenActive">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_AbortMoveWhenActive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_AbortMoveWhenActive")
 	}
 	static class UPyAIAbilityActivation_AbortMoveWhenActive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_AbortMoveWhenActive>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_AbortMoveWhenActive) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_AbortMoveWhenActive");
-static_assert(sizeof(UPyAIAbilityActivation_AbortMoveWhenActive) == 0x000038, "Wrong size on UPyAIAbilityActivation_AbortMoveWhenActive");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_AbortMoveWhenActive;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ForbiddenRequestMoveForDuration
 // 0x0008 (0x0040 - 0x0038)
@@ -326,16 +363,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ForbiddenRequestMoveForDuration">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ForbiddenRequestMoveForDuration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ForbiddenRequestMoveForDuration")
 	}
 	static class UPyAIAbilityActivation_ForbiddenRequestMoveForDuration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ForbiddenRequestMoveForDuration>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ForbiddenRequestMoveForDuration) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ForbiddenRequestMoveForDuration");
-static_assert(sizeof(UPyAIAbilityActivation_ForbiddenRequestMoveForDuration) == 0x000040, "Wrong size on UPyAIAbilityActivation_ForbiddenRequestMoveForDuration");
-static_assert(offsetof(UPyAIAbilityActivation_ForbiddenRequestMoveForDuration, Duration) == 0x000038, "Member 'UPyAIAbilityActivation_ForbiddenRequestMoveForDuration::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ForbiddenRequestMoveForDuration;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ForbiddenRequestMove
 // 0x0000 (0x0038 - 0x0038)
@@ -344,15 +383,18 @@ class UPyAIAbilityActivation_ForbiddenRequestMove : public UPyAIAbilityActivatio
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ForbiddenRequestMove">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ForbiddenRequestMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ForbiddenRequestMove")
 	}
 	static class UPyAIAbilityActivation_ForbiddenRequestMove* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ForbiddenRequestMove>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ForbiddenRequestMove) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ForbiddenRequestMove");
-static_assert(sizeof(UPyAIAbilityActivation_ForbiddenRequestMove) == 0x000038, "Wrong size on UPyAIAbilityActivation_ForbiddenRequestMove");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ForbiddenRequestMove;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ForceEndMoveNode
 // 0x0008 (0x0040 - 0x0038)
@@ -366,18 +408,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ForceEndMoveNode">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ForceEndMoveNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ForceEndMoveNode")
 	}
 	static class UPyAIAbilityActivation_ForceEndMoveNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ForceEndMoveNode>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ForceEndMoveNode) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ForceEndMoveNode");
-static_assert(sizeof(UPyAIAbilityActivation_ForceEndMoveNode) == 0x000040, "Wrong size on UPyAIAbilityActivation_ForceEndMoveNode");
-static_assert(offsetof(UPyAIAbilityActivation_ForceEndMoveNode, bTriggerOnStageStart) == 0x000038, "Member 'UPyAIAbilityActivation_ForceEndMoveNode::bTriggerOnStageStart' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_ForceEndMoveNode, bTriggerOnStageEnd) == 0x000039, "Member 'UPyAIAbilityActivation_ForceEndMoveNode::bTriggerOnStageEnd' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_ForceEndMoveNode, bGeneralMoveToReturn) == 0x00003A, "Member 'UPyAIAbilityActivation_ForceEndMoveNode::bGeneralMoveToReturn' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ForceEndMoveNode;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_AddRecover
 // 0x0000 (0x0038 - 0x0038)
@@ -386,15 +428,18 @@ class UPyAIAbilityActivation_AddRecover final : public UPyAIAbilityActivationLog
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_AddRecover">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_AddRecover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_AddRecover")
 	}
 	static class UPyAIAbilityActivation_AddRecover* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_AddRecover>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_AddRecover) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_AddRecover");
-static_assert(sizeof(UPyAIAbilityActivation_AddRecover) == 0x000038, "Wrong size on UPyAIAbilityActivation_AddRecover");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_AddRecover;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_AddFocusResourceRequest
 // 0x0010 (0x0048 - 0x0038)
@@ -407,17 +452,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_AddFocusResourceRequest">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_AddFocusResourceRequest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_AddFocusResourceRequest")
 	}
 	static class UPyAIAbilityActivation_AddFocusResourceRequest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_AddFocusResourceRequest>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_AddFocusResourceRequest) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_AddFocusResourceRequest");
-static_assert(sizeof(UPyAIAbilityActivation_AddFocusResourceRequest) == 0x000048, "Wrong size on UPyAIAbilityActivation_AddFocusResourceRequest");
-static_assert(offsetof(UPyAIAbilityActivation_AddFocusResourceRequest, FocusControlLogicClass) == 0x000038, "Member 'UPyAIAbilityActivation_AddFocusResourceRequest::FocusControlLogicClass' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_AddFocusResourceRequest, ConflictBehavior) == 0x000040, "Member 'UPyAIAbilityActivation_AddFocusResourceRequest::ConflictBehavior' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_AddFocusResourceRequest;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_AddMoveResourceRequest
 // 0x0010 (0x0048 - 0x0038)
@@ -430,17 +476,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_AddMoveResourceRequest">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_AddMoveResourceRequest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_AddMoveResourceRequest")
 	}
 	static class UPyAIAbilityActivation_AddMoveResourceRequest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_AddMoveResourceRequest>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_AddMoveResourceRequest) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_AddMoveResourceRequest");
-static_assert(sizeof(UPyAIAbilityActivation_AddMoveResourceRequest) == 0x000048, "Wrong size on UPyAIAbilityActivation_AddMoveResourceRequest");
-static_assert(offsetof(UPyAIAbilityActivation_AddMoveResourceRequest, MoveControlLogicClass) == 0x000038, "Member 'UPyAIAbilityActivation_AddMoveResourceRequest::MoveControlLogicClass' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_AddMoveResourceRequest, ConflictBehavior) == 0x000040, "Member 'UPyAIAbilityActivation_AddMoveResourceRequest::ConflictBehavior' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_AddMoveResourceRequest;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_DeleteFocusResourceRequest
 // 0x0000 (0x0038 - 0x0038)
@@ -449,15 +496,18 @@ class UPyAIAbilityActivation_DeleteFocusResourceRequest : public UPyAIAbilityAct
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_DeleteFocusResourceRequest">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DeleteFocusResourceRequest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DeleteFocusResourceRequest")
 	}
 	static class UPyAIAbilityActivation_DeleteFocusResourceRequest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_DeleteFocusResourceRequest>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_DeleteFocusResourceRequest) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_DeleteFocusResourceRequest");
-static_assert(sizeof(UPyAIAbilityActivation_DeleteFocusResourceRequest) == 0x000038, "Wrong size on UPyAIAbilityActivation_DeleteFocusResourceRequest");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DeleteFocusResourceRequest;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_DeleteMoveResourceRequest
 // 0x0000 (0x0038 - 0x0038)
@@ -466,15 +516,18 @@ class UPyAIAbilityActivation_DeleteMoveResourceRequest final : public UPyAIAbili
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_DeleteMoveResourceRequest">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DeleteMoveResourceRequest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DeleteMoveResourceRequest")
 	}
 	static class UPyAIAbilityActivation_DeleteMoveResourceRequest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_DeleteMoveResourceRequest>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_DeleteMoveResourceRequest) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_DeleteMoveResourceRequest");
-static_assert(sizeof(UPyAIAbilityActivation_DeleteMoveResourceRequest) == 0x000038, "Wrong size on UPyAIAbilityActivation_DeleteMoveResourceRequest");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DeleteMoveResourceRequest;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButtonIfNoBuff
 // 0x0000 (0x0040 - 0x0040)
@@ -487,16 +540,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeButtonIfNoBuff">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButtonIfNoBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButtonIfNoBuff")
 	}
 	static class UPyAIAbilityActivation_ChangeButtonIfNoBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeButtonIfNoBuff>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ChangeButtonIfNoBuff) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeButtonIfNoBuff");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeButtonIfNoBuff) == 0x000040, "Wrong size on UPyAIAbilityActivation_ChangeButtonIfNoBuff");
-static_assert(offsetof(UPyAIAbilityActivation_ChangeButtonIfNoBuff, BuffID) == 0x00003C, "Member 'UPyAIAbilityActivation_ChangeButtonIfNoBuff::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButtonIfNoBuff;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_StopCurStageIfbHited
 // 0x0000 (0x0038 - 0x0038)
@@ -508,15 +563,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_StopCurStageIfbHited">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_StopCurStageIfbHited")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_StopCurStageIfbHited")
 	}
 	static class UPyAIAbilityActivation_StopCurStageIfbHited* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_StopCurStageIfbHited>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_StopCurStageIfbHited) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_StopCurStageIfbHited");
-static_assert(sizeof(UPyAIAbilityActivation_StopCurStageIfbHited) == 0x000038, "Wrong size on UPyAIAbilityActivation_StopCurStageIfbHited");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_StopCurStageIfbHited;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckAndChangeSpeed
 // 0x0008 (0x0040 - 0x0038)
@@ -528,16 +586,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckAndChangeSpeed">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckAndChangeSpeed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckAndChangeSpeed")
 	}
 	static class UPyAIAbilityActivation_CheckAndChangeSpeed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckAndChangeSpeed>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckAndChangeSpeed) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckAndChangeSpeed");
-static_assert(sizeof(UPyAIAbilityActivation_CheckAndChangeSpeed) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckAndChangeSpeed");
-static_assert(offsetof(UPyAIAbilityActivation_CheckAndChangeSpeed, SpeedThreshold) == 0x000038, "Member 'UPyAIAbilityActivation_CheckAndChangeSpeed::SpeedThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckAndChangeSpeed;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelLokiPhantom
 // 0x0000 (0x0040 - 0x0040)
@@ -546,15 +606,18 @@ class UPyAIAbilityActivation_CheckCancelLokiPhantom : public UPyAIAbilityActivat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelLokiPhantom">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelLokiPhantom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelLokiPhantom")
 	}
 	static class UPyAIAbilityActivation_CheckCancelLokiPhantom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelLokiPhantom>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelLokiPhantom) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelLokiPhantom");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelLokiPhantom) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelLokiPhantom");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelLokiPhantom;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelGrootWoodWall
 // 0x0000 (0x0040 - 0x0040)
@@ -567,16 +630,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelGrootWoodWall">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelGrootWoodWall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelGrootWoodWall")
 	}
 	static class UPyAIAbilityActivation_CheckCancelGrootWoodWall* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelGrootWoodWall>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelGrootWoodWall) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelGrootWoodWall");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelGrootWoodWall) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelGrootWoodWall");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelGrootWoodWall, AbilityID) == 0x00003C, "Member 'UPyAIAbilityActivation_CheckCancelGrootWoodWall::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelGrootWoodWall;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelSpiderNest
 // 0x0028 (0x0068 - 0x0040)
@@ -592,19 +657,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelSpiderNest">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelSpiderNest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelSpiderNest")
 	}
 	static class UPyAIAbilityActivation_CheckCancelSpiderNest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelSpiderNest>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelSpiderNest) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelSpiderNest");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelSpiderNest) == 0x000068, "Wrong size on UPyAIAbilityActivation_CheckCancelSpiderNest");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelSpiderNest, Tip) == 0x000040, "Member 'UPyAIAbilityActivation_CheckCancelSpiderNest::Tip' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelSpiderNest, AbilityID) == 0x000050, "Member 'UPyAIAbilityActivation_CheckCancelSpiderNest::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelSpiderNest, DynamicUpperLimitBuffID) == 0x000054, "Member 'UPyAIAbilityActivation_CheckCancelSpiderNest::DynamicUpperLimitBuffID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancelSpiderNest, BuffIDTip) == 0x000058, "Member 'UPyAIAbilityActivation_CheckCancelSpiderNest::BuffIDTip' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelSpiderNest;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelSpiderNestByTrace
 // 0x0000 (0x0040 - 0x0040)
@@ -613,15 +677,18 @@ class UPyAIAbilityActivation_CheckCancelSpiderNestByTrace final : public UPyAIAb
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelSpiderNestByTrace">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelSpiderNestByTrace")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelSpiderNestByTrace")
 	}
 	static class UPyAIAbilityActivation_CheckCancelSpiderNestByTrace* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelSpiderNestByTrace>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelSpiderNestByTrace) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelSpiderNestByTrace");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelSpiderNestByTrace) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelSpiderNestByTrace");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelSpiderNestByTrace;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelRocketCosmicEnergy
 // 0x0000 (0x0040 - 0x0040)
@@ -630,15 +697,18 @@ class UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy : public UPyAIAbility
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelRocketCosmicEnergy">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelRocketCosmicEnergy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelRocketCosmicEnergy")
 	}
 	static class UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelRocketCosmicEnergy;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelKhonshu
 // 0x0000 (0x0040 - 0x0040)
@@ -647,15 +717,18 @@ class UPyAIAbilityActivation_CheckCancelKhonshu : public UPyAIAbilityActivation_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelKhonshu">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelKhonshu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelKhonshu")
 	}
 	static class UPyAIAbilityActivation_CheckCancelKhonshu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelKhonshu>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelKhonshu) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelKhonshu");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelKhonshu) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelKhonshu");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelKhonshu;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancelInvisibleForceField
 // 0x0000 (0x0040 - 0x0040)
@@ -664,15 +737,18 @@ class UPyAIAbilityActivation_CheckCancelInvisibleForceField : public UPyAIAbilit
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancelInvisibleForceField">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancelInvisibleForceField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancelInvisibleForceField")
 	}
 	static class UPyAIAbilityActivation_CheckCancelInvisibleForceField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancelInvisibleForceField>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancelInvisibleForceField) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancelInvisibleForceField");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancelInvisibleForceField) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancelInvisibleForceField");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancelInvisibleForceField;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_LunaSnowSwitchState
 // 0x0020 (0x0058 - 0x0038)
@@ -691,23 +767,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_LunaSnowSwitchState">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_LunaSnowSwitchState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_LunaSnowSwitchState")
 	}
 	static class UPyAIAbilityActivation_LunaSnowSwitchState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_LunaSnowSwitchState>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_LunaSnowSwitchState) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_LunaSnowSwitchState");
-static_assert(sizeof(UPyAIAbilityActivation_LunaSnowSwitchState) == 0x000058, "Wrong size on UPyAIAbilityActivation_LunaSnowSwitchState");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, TeammateHealth) == 0x000038, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::TeammateHealth' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, GroupHealth) == 0x00003C, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::GroupHealth' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, TeammateNum) == 0x000040, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::TeammateNum' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, Range) == 0x000044, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::Range' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, Delay) == 0x000048, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::Delay' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, StartDelay) == 0x00004C, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::StartDelay' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, UltimateAbilityID) == 0x000050, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::UltimateAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_LunaSnowSwitchState, SwitchButton) == 0x000054, "Member 'UPyAIAbilityActivation_LunaSnowSwitchState::SwitchButton' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_LunaSnowSwitchState;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_HulkJumpAirCtrl
 // 0x0008 (0x0040 - 0x0038)
@@ -720,17 +791,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_HulkJumpAirCtrl">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_HulkJumpAirCtrl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_HulkJumpAirCtrl")
 	}
 	static class UPyAIAbilityActivation_HulkJumpAirCtrl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_HulkJumpAirCtrl>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_HulkJumpAirCtrl) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_HulkJumpAirCtrl");
-static_assert(sizeof(UPyAIAbilityActivation_HulkJumpAirCtrl) == 0x000040, "Wrong size on UPyAIAbilityActivation_HulkJumpAirCtrl");
-static_assert(offsetof(UPyAIAbilityActivation_HulkJumpAirCtrl, Acceleration) == 0x000038, "Member 'UPyAIAbilityActivation_HulkJumpAirCtrl::Acceleration' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_HulkJumpAirCtrl, BeginCtrlSpeedZ) == 0x00003C, "Member 'UPyAIAbilityActivation_HulkJumpAirCtrl::BeginCtrlSpeedZ' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_HulkJumpAirCtrl;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_DetachAIInfoTag
 // 0x0000 (0x0038 - 0x0038)
@@ -739,15 +811,18 @@ class UPyAIAbilityActivation_DetachAIInfoTag final : public UPyAIAbilityActivati
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_DetachAIInfoTag">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DetachAIInfoTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DetachAIInfoTag")
 	}
 	static class UPyAIAbilityActivation_DetachAIInfoTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_DetachAIInfoTag>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_DetachAIInfoTag) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_DetachAIInfoTag");
-static_assert(sizeof(UPyAIAbilityActivation_DetachAIInfoTag) == 0x000038, "Wrong size on UPyAIAbilityActivation_DetachAIInfoTag");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DetachAIInfoTag;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_TryActiveAbility
 // 0x0008 (0x0040 - 0x0038)
@@ -761,18 +836,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_TryActiveAbility">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_TryActiveAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_TryActiveAbility")
 	}
 	static class UPyAIAbilityActivation_TryActiveAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_TryActiveAbility>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_TryActiveAbility) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_TryActiveAbility");
-static_assert(sizeof(UPyAIAbilityActivation_TryActiveAbility) == 0x000040, "Wrong size on UPyAIAbilityActivation_TryActiveAbility");
-static_assert(offsetof(UPyAIAbilityActivation_TryActiveAbility, AbilityID) == 0x000038, "Member 'UPyAIAbilityActivation_TryActiveAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_TryActiveAbility, TryActiveAtBegin) == 0x00003C, "Member 'UPyAIAbilityActivation_TryActiveAbility::TryActiveAtBegin' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_TryActiveAbility, TryActiveAtEnd) == 0x00003D, "Member 'UPyAIAbilityActivation_TryActiveAbility::TryActiveAtEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_TryActiveAbility;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ModifyKeepDistanceInBattle
 // 0x0008 (0x0040 - 0x0038)
@@ -784,16 +859,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ModifyKeepDistanceInBattle">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ModifyKeepDistanceInBattle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ModifyKeepDistanceInBattle")
 	}
 	static class UPyAIAbilityActivation_ModifyKeepDistanceInBattle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ModifyKeepDistanceInBattle>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ModifyKeepDistanceInBattle) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ModifyKeepDistanceInBattle");
-static_assert(sizeof(UPyAIAbilityActivation_ModifyKeepDistanceInBattle) == 0x000040, "Wrong size on UPyAIAbilityActivation_ModifyKeepDistanceInBattle");
-static_assert(offsetof(UPyAIAbilityActivation_ModifyKeepDistanceInBattle, ValueToChange) == 0x000038, "Member 'UPyAIAbilityActivation_ModifyKeepDistanceInBattle::ValueToChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ModifyKeepDistanceInBattle;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_105131AdjustDirection
 // 0x0010 (0x0048 - 0x0038)
@@ -808,19 +885,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_105131AdjustDirection">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_105131AdjustDirection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_105131AdjustDirection")
 	}
 	static class UPyAIAbilityActivation_105131AdjustDirection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_105131AdjustDirection>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_105131AdjustDirection) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_105131AdjustDirection");
-static_assert(sizeof(UPyAIAbilityActivation_105131AdjustDirection) == 0x000048, "Wrong size on UPyAIAbilityActivation_105131AdjustDirection");
-static_assert(offsetof(UPyAIAbilityActivation_105131AdjustDirection, HalfAngle) == 0x000038, "Member 'UPyAIAbilityActivation_105131AdjustDirection::HalfAngle' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_105131AdjustDirection, AbilityID) == 0x00003C, "Member 'UPyAIAbilityActivation_105131AdjustDirection::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_105131AdjustDirection, UpdateTargetInterval) == 0x000040, "Member 'UPyAIAbilityActivation_105131AdjustDirection::UpdateTargetInterval' has a wrong offset!");
-static_assert(offsetof(UPyAIAbilityActivation_105131AdjustDirection, FilterRadius) == 0x000044, "Member 'UPyAIAbilityActivation_105131AdjustDirection::FilterRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_105131AdjustDirection;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_CheckCancle_SummonerNotExist
 // 0x0000 (0x0040 - 0x0040)
@@ -833,16 +909,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_CheckCancle_SummonerNotExist">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_CheckCancle_SummonerNotExist")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_CheckCancle_SummonerNotExist")
 	}
 	static class UPyAIAbilityActivation_CheckCancle_SummonerNotExist* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_CheckCancle_SummonerNotExist>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_CheckCancle_SummonerNotExist) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_CheckCancle_SummonerNotExist");
-static_assert(sizeof(UPyAIAbilityActivation_CheckCancle_SummonerNotExist) == 0x000040, "Wrong size on UPyAIAbilityActivation_CheckCancle_SummonerNotExist");
-static_assert(offsetof(UPyAIAbilityActivation_CheckCancle_SummonerNotExist, SummonerID) == 0x00003C, "Member 'UPyAIAbilityActivation_CheckCancle_SummonerNotExist::SummonerID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_CheckCancle_SummonerNotExist;
 
 // PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButton_CurNoTarget
 // 0x0000 (0x0040 - 0x0040)
@@ -854,16 +932,112 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIAbilityActivation_ChangeButton_CurNoTarget">();
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButton_CurNoTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButton_CurNoTarget")
 	}
 	static class UPyAIAbilityActivation_ChangeButton_CurNoTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeButton_CurNoTarget>();
 	}
 };
-static_assert(alignof(UPyAIAbilityActivation_ChangeButton_CurNoTarget) == 0x000008, "Wrong alignment on UPyAIAbilityActivation_ChangeButton_CurNoTarget");
-static_assert(sizeof(UPyAIAbilityActivation_ChangeButton_CurNoTarget) == 0x000040, "Wrong size on UPyAIAbilityActivation_ChangeButton_CurNoTarget");
-static_assert(offsetof(UPyAIAbilityActivation_ChangeButton_CurNoTarget, TargetSelectType) == 0x000039, "Member 'UPyAIAbilityActivation_ChangeButton_CurNoTarget::TargetSelectType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButton_CurNoTarget;
+
+// PythonClass ability_activation_logic.PyAIAbilityActivation_ChangeButton_AppointHero
+// 0x0000 (0x0040 - 0x0040)
+class UPyAIAbilityActivation_ChangeButton_AppointHero : public UPyAIAbilityActivation_CheckAndChangeButton
+{
+public:
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HeroID;                                            // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ChangeButton_AppointHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ChangeButton_AppointHero")
+	}
+	static class UPyAIAbilityActivation_ChangeButton_AppointHero* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAIAbilityActivation_ChangeButton_AppointHero>();
+	}
+};
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ChangeButton_AppointHero;
+
+// PythonClass ability_activation_logic.PyAIAbilityActivation_DeadpoolUpGradeAbility
+// 0x0008 (0x0040 - 0x0038)
+class UPyAIAbilityActivation_DeadpoolUpGradeAbility : public UPyAIAbilityActivationLogicBase
+{
+public:
+	int32                                         UpGradeAbilityID;                                  // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DeadpoolUpGradeAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DeadpoolUpGradeAbility")
+	}
+	static class UPyAIAbilityActivation_DeadpoolUpGradeAbility* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAIAbilityActivation_DeadpoolUpGradeAbility>();
+	}
+};
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DeadpoolUpGradeAbility;
+
+// PythonClass ability_activation_logic.PyAIAbilityActivation_ActivatePhoto
+// 0x0008 (0x0040 - 0x0038)
+class UPyAIAbilityActivation_ActivatePhoto final : public UPyAIAbilityActivationLogicBase
+{
+public:
+	int32                                         AbilityID;                                         // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_ActivatePhoto")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_ActivatePhoto")
+	}
+	static class UPyAIAbilityActivation_ActivatePhoto* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAIAbilityActivation_ActivatePhoto>();
+	}
+};
+DUMPER7_ASSERTS_UPyAIAbilityActivation_ActivatePhoto;
+
+// PythonClass ability_activation_logic.PyAIAbilityActivation_DeadpoolCloseBook
+// 0x0008 (0x0040 - 0x0038)
+class UPyAIAbilityActivation_DeadpoolCloseBook : public UPyAIAbilityActivationLogicBase
+{
+public:
+	int32                                         AbilityID;                                         // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAIAbilityActivation_DeadpoolCloseBook")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIAbilityActivation_DeadpoolCloseBook")
+	}
+	static class UPyAIAbilityActivation_DeadpoolCloseBook* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAIAbilityActivation_DeadpoolCloseBook>();
+	}
+};
+DUMPER7_ASSERTS_UPyAIAbilityActivation_DeadpoolCloseBook;
 
 }
 

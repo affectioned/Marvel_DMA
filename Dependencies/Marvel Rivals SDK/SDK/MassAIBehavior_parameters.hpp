@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function MassAIBehavior.MassComponentHitSubsystem.OnHitCallback
-// 0x0220 (0x0220 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct MassComponentHitSubsystem_OnHitCallback final
 {
 public:
@@ -26,15 +26,9 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             Hit;                                               // 0x0030(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitResult                             Hit;                                               // 0x0030(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassComponentHitSubsystem_OnHitCallback) == 0x000008, "Wrong alignment on MassComponentHitSubsystem_OnHitCallback");
-static_assert(sizeof(MassComponentHitSubsystem_OnHitCallback) == 0x000220, "Wrong size on MassComponentHitSubsystem_OnHitCallback");
-static_assert(offsetof(MassComponentHitSubsystem_OnHitCallback, HitComp) == 0x000000, "Member 'MassComponentHitSubsystem_OnHitCallback::HitComp' has a wrong offset!");
-static_assert(offsetof(MassComponentHitSubsystem_OnHitCallback, OtherActor) == 0x000008, "Member 'MassComponentHitSubsystem_OnHitCallback::OtherActor' has a wrong offset!");
-static_assert(offsetof(MassComponentHitSubsystem_OnHitCallback, OtherComp) == 0x000010, "Member 'MassComponentHitSubsystem_OnHitCallback::OtherComp' has a wrong offset!");
-static_assert(offsetof(MassComponentHitSubsystem_OnHitCallback, NormalImpulse) == 0x000018, "Member 'MassComponentHitSubsystem_OnHitCallback::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(MassComponentHitSubsystem_OnHitCallback, Hit) == 0x000030, "Member 'MassComponentHitSubsystem_OnHitCallback::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_MassComponentHitSubsystem_OnHitCallback;
 
 }
 

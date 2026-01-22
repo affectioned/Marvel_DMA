@@ -21,9 +21,7 @@ struct PyInvisibleWomanCharacter_RegenSkillEnergy final
 public:
 	float                                         AddEnergy;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInvisibleWomanCharacter_RegenSkillEnergy) == 0x000004, "Wrong alignment on PyInvisibleWomanCharacter_RegenSkillEnergy");
-static_assert(sizeof(PyInvisibleWomanCharacter_RegenSkillEnergy) == 0x000004, "Wrong size on PyInvisibleWomanCharacter_RegenSkillEnergy");
-static_assert(offsetof(PyInvisibleWomanCharacter_RegenSkillEnergy, AddEnergy) == 0x000000, "Member 'PyInvisibleWomanCharacter_RegenSkillEnergy::AddEnergy' has a wrong offset!");
+DUMPER7_ASSERTS_PyInvisibleWomanCharacter_RegenSkillEnergy;
 
 // PythonFunction PyInvisibleWomanCharacter.PyInvisibleWomanCharacter.ResetShieldRegenValue
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyInvisibleWomanCharacter_ResetShieldRegenValue final
 public:
 	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInvisibleWomanCharacter_ResetShieldRegenValue) == 0x000004, "Wrong alignment on PyInvisibleWomanCharacter_ResetShieldRegenValue");
-static_assert(sizeof(PyInvisibleWomanCharacter_ResetShieldRegenValue) == 0x000004, "Wrong size on PyInvisibleWomanCharacter_ResetShieldRegenValue");
-static_assert(offsetof(PyInvisibleWomanCharacter_ResetShieldRegenValue, NewValue) == 0x000000, "Member 'PyInvisibleWomanCharacter_ResetShieldRegenValue::NewValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyInvisibleWomanCharacter_ResetShieldRegenValue;
 
 // PythonFunction PyInvisibleWomanCharacter.PyInvisibleWomanCharacter.GetCurrentShieldOnTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -46,11 +42,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInvisibleWomanCharacter_GetCurrentShieldOnTarget) == 0x000008, "Wrong alignment on PyInvisibleWomanCharacter_GetCurrentShieldOnTarget");
-static_assert(sizeof(PyInvisibleWomanCharacter_GetCurrentShieldOnTarget) == 0x000018, "Wrong size on PyInvisibleWomanCharacter_GetCurrentShieldOnTarget");
-static_assert(offsetof(PyInvisibleWomanCharacter_GetCurrentShieldOnTarget, ImmunityBuffID) == 0x000000, "Member 'PyInvisibleWomanCharacter_GetCurrentShieldOnTarget::ImmunityBuffID' has a wrong offset!");
-static_assert(offsetof(PyInvisibleWomanCharacter_GetCurrentShieldOnTarget, Target) == 0x000008, "Member 'PyInvisibleWomanCharacter_GetCurrentShieldOnTarget::Target' has a wrong offset!");
-static_assert(offsetof(PyInvisibleWomanCharacter_GetCurrentShieldOnTarget, ReturnValue) == 0x000010, "Member 'PyInvisibleWomanCharacter_GetCurrentShieldOnTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyInvisibleWomanCharacter_GetCurrentShieldOnTarget;
 
 // PythonFunction PyInvisibleWomanCharacter.PyInvisibleWomanCharacter.GetRegisteredProjectile_105051
 // 0x0008 (0x0008 - 0x0000)
@@ -59,9 +51,7 @@ struct PyInvisibleWomanCharacter_GetRegisteredProjectile_105051 final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInvisibleWomanCharacter_GetRegisteredProjectile_105051) == 0x000008, "Wrong alignment on PyInvisibleWomanCharacter_GetRegisteredProjectile_105051");
-static_assert(sizeof(PyInvisibleWomanCharacter_GetRegisteredProjectile_105051) == 0x000008, "Wrong size on PyInvisibleWomanCharacter_GetRegisteredProjectile_105051");
-static_assert(offsetof(PyInvisibleWomanCharacter_GetRegisteredProjectile_105051, ReturnValue) == 0x000000, "Member 'PyInvisibleWomanCharacter_GetRegisteredProjectile_105051::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyInvisibleWomanCharacter_GetRegisteredProjectile_105051;
 
 // PythonFunction PyInvisibleWomanCharacter.PyInvisibleWomanCharacter.SetRegisteredProjectile_105051
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +60,7 @@ struct PyInvisibleWomanCharacter_SetRegisteredProjectile_105051 final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   Projectile;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInvisibleWomanCharacter_SetRegisteredProjectile_105051) == 0x000008, "Wrong alignment on PyInvisibleWomanCharacter_SetRegisteredProjectile_105051");
-static_assert(sizeof(PyInvisibleWomanCharacter_SetRegisteredProjectile_105051) == 0x000008, "Wrong size on PyInvisibleWomanCharacter_SetRegisteredProjectile_105051");
-static_assert(offsetof(PyInvisibleWomanCharacter_SetRegisteredProjectile_105051, Projectile) == 0x000000, "Member 'PyInvisibleWomanCharacter_SetRegisteredProjectile_105051::Projectile' has a wrong offset!");
+DUMPER7_ASSERTS_PyInvisibleWomanCharacter_SetRegisteredProjectile_105051;
 
 }
 

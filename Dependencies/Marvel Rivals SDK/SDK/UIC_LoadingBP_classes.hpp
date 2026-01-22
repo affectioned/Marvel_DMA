@@ -23,15 +23,18 @@ class UUIC_LoadingBP_C final : public UPyUIC_Loading
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIC_LoadingBP_C">();
+		BP_STATIC_CLASS_IMPL("UIC_LoadingBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIC_LoadingBP_C")
 	}
 	static class UUIC_LoadingBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIC_LoadingBP_C>();
 	}
 };
-static_assert(alignof(UUIC_LoadingBP_C) == 0x000010, "Wrong alignment on UUIC_LoadingBP_C");
-static_assert(sizeof(UUIC_LoadingBP_C) == 0x0000F0, "Wrong size on UUIC_LoadingBP_C");
+DUMPER7_ASSERTS_UUIC_LoadingBP_C;
 
 }
 

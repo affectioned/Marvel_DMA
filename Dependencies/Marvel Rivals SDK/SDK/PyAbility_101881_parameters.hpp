@@ -24,9 +24,7 @@ struct PyUIController_101881_OnAttributeChanged final
 public:
 	struct FOnAttributeChangeDataExtend           Parameter;                                         // 0x0000(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyUIController_101881_OnAttributeChanged) == 0x000008, "Wrong alignment on PyUIController_101881_OnAttributeChanged");
-static_assert(sizeof(PyUIController_101881_OnAttributeChanged) == 0x000048, "Wrong size on PyUIController_101881_OnAttributeChanged");
-static_assert(offsetof(PyUIController_101881_OnAttributeChanged, Parameter) == 0x000000, "Member 'PyUIController_101881_OnAttributeChanged::Parameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101881_OnAttributeChanged;
 
 // PythonFunction PyAbility_101881.PyUIController_101881.OnActivateAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyUIController_101881_OnActivateAbility final
 public:
 	int32                                         AbilityID_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101881_OnActivateAbility) == 0x000004, "Wrong alignment on PyUIController_101881_OnActivateAbility");
-static_assert(sizeof(PyUIController_101881_OnActivateAbility) == 0x000004, "Wrong size on PyUIController_101881_OnActivateAbility");
-static_assert(offsetof(PyUIController_101881_OnActivateAbility, AbilityID_0) == 0x000000, "Member 'PyUIController_101881_OnActivateAbility::AbilityID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101881_OnActivateAbility;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10188101_WhileActiveFX");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10188101_WhileActiveFX");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10188101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_WhileActiveFX;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10188101_OnRemoveFX");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10188101_OnRemoveFX");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10188101_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_OnRemoveFX;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.OnDarkManaValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -72,9 +62,7 @@ struct PyCue_Ability_Loop_10188101_OnDarkManaValueChanged final
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_OnDarkManaValueChanged) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_OnDarkManaValueChanged");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_OnDarkManaValueChanged) == 0x000004, "Wrong size on PyCue_Ability_Loop_10188101_OnDarkManaValueChanged");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_OnDarkManaValueChanged, Value) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_OnDarkManaValueChanged::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_OnDarkManaValueChanged;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.GetCurrentMaterialValue
 // 0x0008 (0x0008 - 0x0000)
@@ -84,10 +72,7 @@ public:
 	float                                         ManaValue;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_GetCurrentMaterialValue) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_GetCurrentMaterialValue");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_GetCurrentMaterialValue) == 0x000008, "Wrong size on PyCue_Ability_Loop_10188101_GetCurrentMaterialValue");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_GetCurrentMaterialValue, ManaValue) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_GetCurrentMaterialValue::ManaValue' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_GetCurrentMaterialValue, ReturnValue) == 0x000004, "Member 'PyCue_Ability_Loop_10188101_GetCurrentMaterialValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_GetCurrentMaterialValue;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.SetCurrentState
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +81,7 @@ struct PyCue_Ability_Loop_10188101_SetCurrentState final
 public:
 	ECueAbilityState_101881                       NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_SetCurrentState) == 0x000001, "Wrong alignment on PyCue_Ability_Loop_10188101_SetCurrentState");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_SetCurrentState) == 0x000001, "Wrong size on PyCue_Ability_Loop_10188101_SetCurrentState");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetCurrentState, NewState) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_SetCurrentState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_SetCurrentState;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.SetEdgeMaterialValue
 // 0x0004 (0x0004 - 0x0000)
@@ -107,9 +90,7 @@ struct PyCue_Ability_Loop_10188101_SetEdgeMaterialValue final
 public:
 	float                                         ManaValue;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_SetEdgeMaterialValue) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_SetEdgeMaterialValue");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_SetEdgeMaterialValue) == 0x000004, "Wrong size on PyCue_Ability_Loop_10188101_SetEdgeMaterialValue");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetEdgeMaterialValue, ManaValue) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_SetEdgeMaterialValue::ManaValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_SetEdgeMaterialValue;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.SetCenterMaterialValue
 // 0x0004 (0x0004 - 0x0000)
@@ -118,9 +99,7 @@ struct PyCue_Ability_Loop_10188101_SetCenterMaterialValue final
 public:
 	float                                         MaterialValue;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_SetCenterMaterialValue) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_SetCenterMaterialValue");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_SetCenterMaterialValue) == 0x000004, "Wrong size on PyCue_Ability_Loop_10188101_SetCenterMaterialValue");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetCenterMaterialValue, MaterialValue) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_SetCenterMaterialValue::MaterialValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_SetCenterMaterialValue;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.SetStartCenterEdgeMaterialValue
 // 0x001C (0x001C - 0x0000)
@@ -131,11 +110,7 @@ public:
 	class FName                                   PropertyName;                                      // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         OutValue;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue) == 0x00001C, "Wrong size on PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue, TrackName) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue::TrackName' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue, PropertyName) == 0x00000C, "Member 'PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue::PropertyName' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue, OutValue) == 0x000018, "Member 'PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue::OutValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_SetStartCenterEdgeMaterialValue;
 
 // PythonFunction PyAbility_101881.PyCue_Ability_Loop_10188101.SetEndCenterEdgeMaterialValue
 // 0x001C (0x001C - 0x0000)
@@ -146,11 +121,7 @@ public:
 	class FName                                   PropertyName;                                      // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         OutValue;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue");
-static_assert(sizeof(PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue) == 0x00001C, "Wrong size on PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue, TrackName) == 0x000000, "Member 'PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue::TrackName' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue, PropertyName) == 0x00000C, "Member 'PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue::PropertyName' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue, OutValue) == 0x000018, "Member 'PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue::OutValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10188101_SetEndCenterEdgeMaterialValue;
 
 }
 

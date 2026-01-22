@@ -24,10 +24,7 @@ public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Type;                                              // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType");
-static_assert(sizeof(MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType) == 0x000018, "Wrong size on MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType, Message) == 0x000000, "Member 'MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType::Message' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType, Type) == 0x000010, "Member 'MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType::Type' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_ShowMessageToChatPanelWithType;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.ShowMessageToChatPanel
 // 0x0010 (0x0010 - 0x0000)
@@ -36,9 +33,7 @@ struct MarvelPlayerControllerBP_C_ShowMessageToChatPanel final
 public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_ShowMessageToChatPanel) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_ShowMessageToChatPanel");
-static_assert(sizeof(MarvelPlayerControllerBP_C_ShowMessageToChatPanel) == 0x000010, "Wrong size on MarvelPlayerControllerBP_C_ShowMessageToChatPanel");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ShowMessageToChatPanel, Message) == 0x000000, "Member 'MarvelPlayerControllerBP_C_ShowMessageToChatPanel::Message' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_ShowMessageToChatPanel;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.SendCmdToPython
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +42,7 @@ struct MarvelPlayerControllerBP_C_SendCmdToPython final
 public:
 	class FString                                 Command;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_SendCmdToPython) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_SendCmdToPython");
-static_assert(sizeof(MarvelPlayerControllerBP_C_SendCmdToPython) == 0x000010, "Wrong size on MarvelPlayerControllerBP_C_SendCmdToPython");
-static_assert(offsetof(MarvelPlayerControllerBP_C_SendCmdToPython, Command) == 0x000000, "Member 'MarvelPlayerControllerBP_C_SendCmdToPython::Command' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_SendCmdToPython;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.IsActiveAbility
 // 0x0038 (0x0038 - 0x0000)
@@ -66,15 +59,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_IsActiveAbility) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_IsActiveAbility");
-static_assert(sizeof(MarvelPlayerControllerBP_C_IsActiveAbility) == 0x000038, "Wrong size on MarvelPlayerControllerBP_C_IsActiveAbility");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, Abiliting) == 0x000000, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::Abiliting' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, CallFunc_K2_GetPawn_ReturnValue) == 0x000008, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, K2Node_DynamicCast_AsMarvel_Base_Character) == 0x000010, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::K2Node_DynamicCast_AsMarvel_Base_Character' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, CallFunc_GetActiveAbilitiesWithTags_ActiveAbilities) == 0x000020, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::CallFunc_GetActiveAbilitiesWithTags_ActiveAbilities' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_IsActiveAbility, CallFunc_Greater_IntInt_ReturnValue) == 0x000034, "Member 'MarvelPlayerControllerBP_C_IsActiveAbility::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_IsActiveAbility;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1
 // 0x0020 (0x0020 - 0x0000)
@@ -83,9 +68,7 @@ struct MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActio
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1");
-static_assert(sizeof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1) == 0x000020, "Wrong size on MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1");
-static_assert(offsetof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1, Key) == 0x000000, "Member 'MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1::Key' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_1;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0
 // 0x0020 (0x0020 - 0x0000)
@@ -94,9 +77,7 @@ struct MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActio
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0");
-static_assert(sizeof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0) == 0x000020, "Wrong size on MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0");
-static_assert(offsetof(MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0, Key) == 0x000000, "Member 'MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0::Key' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_InpActEvt_AbilityInstruction_K2Node_InputActionEvent_0;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.InpActEvt_Ability2_K2Node_InputActionEvent_2
 // 0x0020 (0x0020 - 0x0000)
@@ -105,9 +86,7 @@ struct MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2 f
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2");
-static_assert(sizeof(MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2) == 0x000020, "Wrong size on MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2");
-static_assert(offsetof(MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2, Key) == 0x000000, "Member 'MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2::Key' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_InpActEvt_Ability2_K2Node_InputActionEvent_2;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.InpActEvt_Ability1_K2Node_InputActionEvent_3
 // 0x0020 (0x0020 - 0x0000)
@@ -116,9 +95,7 @@ struct MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3 f
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3");
-static_assert(sizeof(MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3) == 0x000020, "Wrong size on MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3");
-static_assert(offsetof(MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3, Key) == 0x000000, "Member 'MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3::Key' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_InpActEvt_Ability1_K2Node_InputActionEvent_3;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.ExecuteUbergraph_MarvelPlayerControllerBP
 // 0x0150 (0x0150 - 0x0000)
@@ -143,23 +120,7 @@ public:
 	struct FKey                                   K2Node_InputActionEvent_Key_2;                     // 0x0110(0x0020)(HasGetValueTypeHash)
 	struct FKey                                   K2Node_InputActionEvent_Key_3;                     // 0x0130(0x0020)(HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP");
-static_assert(sizeof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP) == 0x000150, "Wrong size on MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, EntryPoint) == 0x000000, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_Event_Message) == 0x000008, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_Event_Message' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_Event_Type) == 0x000018, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_Event_Type' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_InputActionEvent_Key_1) == 0x000020, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_InputActionEvent_Key_1' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, CallFunc_Conv_StringToText_ReturnValue) == 0x000040, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_InputActionEvent_Key) == 0x000058, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_InputActionEvent_Key' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, Temp_struct_Variable) == 0x000078, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_Event_Command) == 0x000098, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_Event_Command' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_CustomEvent_Message) == 0x0000A8, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_CustomEvent_Message' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, CallFunc_CallPythonComponentMethodString_ReturnValue) == 0x0000C0, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::CallFunc_CallPythonComponentMethodString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000D0, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_Event_Message_1) == 0x0000E8, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_Event_Message_1' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0000F8, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_InputActionEvent_Key_2) == 0x000110, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_InputActionEvent_Key_2' has a wrong offset!");
-static_assert(offsetof(MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP, K2Node_InputActionEvent_Key_3) == 0x000130, "Member 'MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP::K2Node_InputActionEvent_Key_3' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_ExecuteUbergraph_MarvelPlayerControllerBP;
 
 // Function MarvelPlayerControllerBP.MarvelPlayerControllerBP_C.EventTellClientMsg
 // 0x0018 (0x0018 - 0x0000)
@@ -168,9 +129,7 @@ struct MarvelPlayerControllerBP_C_EventTellClientMsg final
 public:
 	class FText                                   Message;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(MarvelPlayerControllerBP_C_EventTellClientMsg) == 0x000008, "Wrong alignment on MarvelPlayerControllerBP_C_EventTellClientMsg");
-static_assert(sizeof(MarvelPlayerControllerBP_C_EventTellClientMsg) == 0x000018, "Wrong size on MarvelPlayerControllerBP_C_EventTellClientMsg");
-static_assert(offsetof(MarvelPlayerControllerBP_C_EventTellClientMsg, Message) == 0x000000, "Member 'MarvelPlayerControllerBP_C_EventTellClientMsg::Message' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelPlayerControllerBP_C_EventTellClientMsg;
 
 }
 

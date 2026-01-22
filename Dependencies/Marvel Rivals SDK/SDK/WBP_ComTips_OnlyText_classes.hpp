@@ -17,39 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ComTips_OnlyText.WBP_ComTips_OnlyText_C
-// 0x0040 (0x0618 - 0x05D8)
+// 0x0040 (0x0620 - 0x05E0)
 class UWBP_ComTips_OnlyText_C final : public UPyWidget_Common_Tips
 {
 public:
-	class UMarvelImage*                           Img_Decorate;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Decorate2;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Diagram;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScBox_Title;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_OnlyText;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_Tips;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Tips_Name;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ComTips_Bg_C*                      WBP_ComTips_Bg;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Decorate;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Decorate2;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Diagram;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScBox_Title;                                       // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_OnlyText;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_Tips;                                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Tips_Name;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ComTips_Bg_C*                      WBP_ComTips_Bg;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ComTips_OnlyText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ComTips_OnlyText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ComTips_OnlyText_C")
 	}
 	static class UWBP_ComTips_OnlyText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ComTips_OnlyText_C>();
 	}
 };
-static_assert(alignof(UWBP_ComTips_OnlyText_C) == 0x000008, "Wrong alignment on UWBP_ComTips_OnlyText_C");
-static_assert(sizeof(UWBP_ComTips_OnlyText_C) == 0x000618, "Wrong size on UWBP_ComTips_OnlyText_C");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, Img_Decorate) == 0x0005D8, "Member 'UWBP_ComTips_OnlyText_C::Img_Decorate' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, Img_Decorate2) == 0x0005E0, "Member 'UWBP_ComTips_OnlyText_C::Img_Decorate2' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, Img_Diagram) == 0x0005E8, "Member 'UWBP_ComTips_OnlyText_C::Img_Diagram' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, ScBox_Title) == 0x0005F0, "Member 'UWBP_ComTips_OnlyText_C::ScBox_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, SizeBox_OnlyText) == 0x0005F8, "Member 'UWBP_ComTips_OnlyText_C::SizeBox_OnlyText' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, Text_Tips) == 0x000600, "Member 'UWBP_ComTips_OnlyText_C::Text_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, Text_Tips_Name) == 0x000608, "Member 'UWBP_ComTips_OnlyText_C::Text_Tips_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_OnlyText_C, WBP_ComTips_Bg) == 0x000610, "Member 'UWBP_ComTips_OnlyText_C::WBP_ComTips_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ComTips_OnlyText_C;
 
 }
 

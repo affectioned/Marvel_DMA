@@ -21,9 +21,7 @@ struct ControlAnalyzerSubsystem_ChangeTimerInterval final
 public:
 	float                                         NewInterval;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ControlAnalyzerSubsystem_ChangeTimerInterval) == 0x000004, "Wrong alignment on ControlAnalyzerSubsystem_ChangeTimerInterval");
-static_assert(sizeof(ControlAnalyzerSubsystem_ChangeTimerInterval) == 0x000004, "Wrong size on ControlAnalyzerSubsystem_ChangeTimerInterval");
-static_assert(offsetof(ControlAnalyzerSubsystem_ChangeTimerInterval, NewInterval) == 0x000000, "Member 'ControlAnalyzerSubsystem_ChangeTimerInterval::NewInterval' has a wrong offset!");
+DUMPER7_ASSERTS_ControlAnalyzerSubsystem_ChangeTimerInterval;
 
 // Function MarvelControlAnalyzer.ControlAnalyzerSubsystem.ResetScoreReportConfig
 // 0x0014 (0x0014 - 0x0000)
@@ -36,13 +34,7 @@ public:
 	float                                         NewRTThreshold;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewInterval;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ControlAnalyzerSubsystem_ResetScoreReportConfig) == 0x000004, "Wrong alignment on ControlAnalyzerSubsystem_ResetScoreReportConfig");
-static_assert(sizeof(ControlAnalyzerSubsystem_ResetScoreReportConfig) == 0x000014, "Wrong size on ControlAnalyzerSubsystem_ResetScoreReportConfig");
-static_assert(offsetof(ControlAnalyzerSubsystem_ResetScoreReportConfig, NewLSThreshold) == 0x000000, "Member 'ControlAnalyzerSubsystem_ResetScoreReportConfig::NewLSThreshold' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_ResetScoreReportConfig, NewRSThreshold) == 0x000004, "Member 'ControlAnalyzerSubsystem_ResetScoreReportConfig::NewRSThreshold' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_ResetScoreReportConfig, NewLTThreshold) == 0x000008, "Member 'ControlAnalyzerSubsystem_ResetScoreReportConfig::NewLTThreshold' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_ResetScoreReportConfig, NewRTThreshold) == 0x00000C, "Member 'ControlAnalyzerSubsystem_ResetScoreReportConfig::NewRTThreshold' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_ResetScoreReportConfig, NewInterval) == 0x000010, "Member 'ControlAnalyzerSubsystem_ResetScoreReportConfig::NewInterval' has a wrong offset!");
+DUMPER7_ASSERTS_ControlAnalyzerSubsystem_ResetScoreReportConfig;
 
 // Function MarvelControlAnalyzer.ControlAnalyzerSubsystem.SendWarning
 // 0x0040 (0x0040 - 0x0000)
@@ -54,12 +46,7 @@ public:
 	TArray<int32>                                 LTScores;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<int32>                                 RTScores;                                          // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ControlAnalyzerSubsystem_SendWarning) == 0x000008, "Wrong alignment on ControlAnalyzerSubsystem_SendWarning");
-static_assert(sizeof(ControlAnalyzerSubsystem_SendWarning) == 0x000040, "Wrong size on ControlAnalyzerSubsystem_SendWarning");
-static_assert(offsetof(ControlAnalyzerSubsystem_SendWarning, LSScores) == 0x000000, "Member 'ControlAnalyzerSubsystem_SendWarning::LSScores' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_SendWarning, RSScores) == 0x000010, "Member 'ControlAnalyzerSubsystem_SendWarning::RSScores' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_SendWarning, LTScores) == 0x000020, "Member 'ControlAnalyzerSubsystem_SendWarning::LTScores' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_SendWarning, RTScores) == 0x000030, "Member 'ControlAnalyzerSubsystem_SendWarning::RTScores' has a wrong offset!");
+DUMPER7_ASSERTS_ControlAnalyzerSubsystem_SendWarning;
 
 // Function MarvelControlAnalyzer.ControlAnalyzerSubsystem.SetDeviceInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -69,10 +56,7 @@ public:
 	int32                                         vendorId;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         productId;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ControlAnalyzerSubsystem_SetDeviceInfo) == 0x000004, "Wrong alignment on ControlAnalyzerSubsystem_SetDeviceInfo");
-static_assert(sizeof(ControlAnalyzerSubsystem_SetDeviceInfo) == 0x000008, "Wrong size on ControlAnalyzerSubsystem_SetDeviceInfo");
-static_assert(offsetof(ControlAnalyzerSubsystem_SetDeviceInfo, vendorId) == 0x000000, "Member 'ControlAnalyzerSubsystem_SetDeviceInfo::vendorId' has a wrong offset!");
-static_assert(offsetof(ControlAnalyzerSubsystem_SetDeviceInfo, productId) == 0x000004, "Member 'ControlAnalyzerSubsystem_SetDeviceInfo::productId' has a wrong offset!");
+DUMPER7_ASSERTS_ControlAnalyzerSubsystem_SetDeviceInfo;
 
 }
 

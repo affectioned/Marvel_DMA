@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelLobbyGameState">();
+		STATIC_CLASS_IMPL("PyMarvelLobbyGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelLobbyGameState")
 	}
 	static class APyMarvelLobbyGameState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelLobbyGameState>();
 	}
 };
-static_assert(alignof(APyMarvelLobbyGameState) == 0x000010, "Wrong alignment on APyMarvelLobbyGameState");
-static_assert(sizeof(APyMarvelLobbyGameState) == 0x000750, "Wrong size on APyMarvelLobbyGameState");
+DUMPER7_ASSERTS_APyMarvelLobbyGameState;
 
 }
 

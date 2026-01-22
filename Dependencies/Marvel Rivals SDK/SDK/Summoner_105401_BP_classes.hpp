@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoner_105401_BP.Summoner_105401_BP_C
-// 0x0000 (0x14E0 - 0x14E0)
+// 0x0000 (0x1550 - 0x1550)
 class ASummoner_105401_BP_C final : public APyPhoenixPhantom
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoner_105401_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoner_105401_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoner_105401_BP_C")
 	}
 	static class ASummoner_105401_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoner_105401_BP_C>();
 	}
 };
-static_assert(alignof(ASummoner_105401_BP_C) == 0x000010, "Wrong alignment on ASummoner_105401_BP_C");
-static_assert(sizeof(ASummoner_105401_BP_C) == 0x0014E0, "Wrong size on ASummoner_105401_BP_C");
+DUMPER7_ASSERTS_ASummoner_105401_BP_C;
 
 }
 

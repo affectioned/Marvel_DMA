@@ -23,15 +23,18 @@ class UNpcAudioComponentBP_C final : public UPyNpcAudioComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NpcAudioComponentBP_C">();
+		BP_STATIC_CLASS_IMPL("NpcAudioComponentBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NpcAudioComponentBP_C")
 	}
 	static class UNpcAudioComponentBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNpcAudioComponentBP_C>();
 	}
 };
-static_assert(alignof(UNpcAudioComponentBP_C) == 0x000008, "Wrong alignment on UNpcAudioComponentBP_C");
-static_assert(sizeof(UNpcAudioComponentBP_C) == 0x000160, "Wrong size on UNpcAudioComponentBP_C");
+DUMPER7_ASSERTS_UNpcAudioComponentBP_C;
 
 }
 

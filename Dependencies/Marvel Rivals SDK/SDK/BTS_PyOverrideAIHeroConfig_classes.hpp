@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyOverrideAIHeroConfig">();
+		STATIC_CLASS_IMPL("BTS_PyOverrideAIHeroConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyOverrideAIHeroConfig")
 	}
 	static class UBTS_PyOverrideAIHeroConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyOverrideAIHeroConfig>();
 	}
 };
-static_assert(alignof(UBTS_PyOverrideAIHeroConfig) == 0x000008, "Wrong alignment on UBTS_PyOverrideAIHeroConfig");
-static_assert(sizeof(UBTS_PyOverrideAIHeroConfig) == 0x0000F8, "Wrong size on UBTS_PyOverrideAIHeroConfig");
-static_assert(offsetof(UBTS_PyOverrideAIHeroConfig, OverrideKeepDistanceInBattleDict) == 0x0000A8, "Member 'UBTS_PyOverrideAIHeroConfig::OverrideKeepDistanceInBattleDict' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyOverrideAIHeroConfig;
 
 }
 

@@ -27,19 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103302">();
+		STATIC_CLASS_IMPL("PyConfig_103302")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103302")
 	}
 	static class UPyConfig_103302* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103302>();
 	}
 };
-static_assert(alignof(UPyConfig_103302) == 0x000008, "Wrong alignment on UPyConfig_103302");
-static_assert(sizeof(UPyConfig_103302) == 0x0000A8, "Wrong size on UPyConfig_103302");
-static_assert(offsetof(UPyConfig_103302, AutoPullBullet) == 0x0000A0, "Member 'UPyConfig_103302::AutoPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103302;
 
 // PythonClass PyAbility_103302.PyAbility_103302
-// 0x0000 (0x2B00 - 0x2B00)
+// 0x0000 (0x2B50 - 0x2B50)
 class UPyAbility_103302 : public UAbility_103302
 {
 public:
@@ -49,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103302">();
+		STATIC_CLASS_IMPL("PyAbility_103302")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103302")
 	}
 	static class UPyAbility_103302* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103302>();
 	}
 };
-static_assert(alignof(UPyAbility_103302) == 0x000008, "Wrong alignment on UPyAbility_103302");
-static_assert(sizeof(UPyAbility_103302) == 0x002B00, "Wrong size on UPyAbility_103302");
+DUMPER7_ASSERTS_UPyAbility_103302;
 
 }
 

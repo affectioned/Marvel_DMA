@@ -22,10 +22,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_PyFindLevelActorBase_ReceiveExecuteAI) == 0x000008, "Wrong alignment on BTT_PyFindLevelActorBase_ReceiveExecuteAI");
-static_assert(sizeof(BTT_PyFindLevelActorBase_ReceiveExecuteAI) == 0x000010, "Wrong size on BTT_PyFindLevelActorBase_ReceiveExecuteAI");
-static_assert(offsetof(BTT_PyFindLevelActorBase_ReceiveExecuteAI, OwnerController) == 0x000000, "Member 'BTT_PyFindLevelActorBase_ReceiveExecuteAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_PyFindLevelActorBase_ReceiveExecuteAI, ControlledPawn) == 0x000008, "Member 'BTT_PyFindLevelActorBase_ReceiveExecuteAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_PyFindLevelActorBase_ReceiveExecuteAI;
 
 }
 

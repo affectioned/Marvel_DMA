@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Scope_10249401_BP.Scope_10249401_BP_C
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B80 - 0x1B80)
 class AScope_10249401_BP_C final : public APyScope_10249401
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scope_10249401_BP_C">();
+		BP_STATIC_CLASS_IMPL("Scope_10249401_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_10249401_BP_C")
 	}
 	static class AScope_10249401_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_10249401_BP_C>();
 	}
 };
-static_assert(alignof(AScope_10249401_BP_C) == 0x000010, "Wrong alignment on AScope_10249401_BP_C");
-static_assert(sizeof(AScope_10249401_BP_C) == 0x001AB0, "Wrong size on AScope_10249401_BP_C");
+DUMPER7_ASSERTS_AScope_10249401_BP_C;
 
 }
 

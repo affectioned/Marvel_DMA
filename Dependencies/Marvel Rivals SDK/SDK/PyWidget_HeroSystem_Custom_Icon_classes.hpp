@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Custom_Icon.PyWidget_HeroSystem_Custom_Icon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HeroSystem_Custom_Icon : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Custom_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Custom_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Custom_Icon")
 	}
 	static class UPyWidget_HeroSystem_Custom_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Custom_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Custom_Icon) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Custom_Icon");
-static_assert(sizeof(UPyWidget_HeroSystem_Custom_Icon) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Custom_Icon");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Custom_Icon;
 
 }
 

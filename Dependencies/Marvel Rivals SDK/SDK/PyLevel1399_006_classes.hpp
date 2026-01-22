@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_006">();
+		STATIC_CLASS_IMPL("PyLevel1399_006")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_006")
 	}
 	static class APyLevel1399_006* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_006>();
 	}
 };
-static_assert(alignof(APyLevel1399_006) == 0x000010, "Wrong alignment on APyLevel1399_006");
-static_assert(sizeof(APyLevel1399_006) == 0x0007C0, "Wrong size on APyLevel1399_006");
-static_assert(offsetof(APyLevel1399_006, InsideGrantedTags) == 0x000730, "Member 'APyLevel1399_006::InsideGrantedTags' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_006, OnClientPlayerEnterArea) == 0x000798, "Member 'APyLevel1399_006::OnClientPlayerEnterArea' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_006, OnClientPlayerExitArea) == 0x0007A8, "Member 'APyLevel1399_006::OnClientPlayerExitArea' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevel1399_006;
 
 }
 

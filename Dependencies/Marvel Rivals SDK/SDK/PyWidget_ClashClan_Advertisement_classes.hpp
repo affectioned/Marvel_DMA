@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ClashClan_Advertisement.PyWidget_ClashClan_Advertisement
-// 0x0068 (0x0628 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_ClashClan_Advertisement final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             DefaultBackground;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMatLight;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMatDark;                                   // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SmallTitleColorLight;                              // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SmallTitleColorDark;                               // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescColorLight;                                    // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescColorDark;                                     // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             DefaultBackground;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMatLight;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMatDark;                                   // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SmallTitleColorLight;                              // 0x05E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SmallTitleColorDark;                               // 0x05F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescColorLight;                                    // 0x0608(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescColorDark;                                     // 0x061C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,22 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClashClan_Advertisement">();
+		STATIC_CLASS_IMPL("PyWidget_ClashClan_Advertisement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClashClan_Advertisement")
 	}
 	static class UPyWidget_ClashClan_Advertisement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClashClan_Advertisement>();
 	}
 };
-static_assert(alignof(UPyWidget_ClashClan_Advertisement) == 0x000008, "Wrong alignment on UPyWidget_ClashClan_Advertisement");
-static_assert(sizeof(UPyWidget_ClashClan_Advertisement) == 0x000628, "Wrong size on UPyWidget_ClashClan_Advertisement");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, DefaultBackground) == 0x0005C0, "Member 'UPyWidget_ClashClan_Advertisement::DefaultBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, BigTitleMatLight) == 0x0005C8, "Member 'UPyWidget_ClashClan_Advertisement::BigTitleMatLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, BigTitleMatDark) == 0x0005D0, "Member 'UPyWidget_ClashClan_Advertisement::BigTitleMatDark' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, SmallTitleColorLight) == 0x0005D8, "Member 'UPyWidget_ClashClan_Advertisement::SmallTitleColorLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, SmallTitleColorDark) == 0x0005EC, "Member 'UPyWidget_ClashClan_Advertisement::SmallTitleColorDark' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, DescColorLight) == 0x000600, "Member 'UPyWidget_ClashClan_Advertisement::DescColorLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClashClan_Advertisement, DescColorDark) == 0x000614, "Member 'UPyWidget_ClashClan_Advertisement::DescColorDark' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ClashClan_Advertisement;
 
 }
 

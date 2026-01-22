@@ -27,11 +27,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Projectile_Loop_40240101_OnActive) == 0x000008, "Wrong alignment on PyCue_Projectile_Loop_40240101_OnActive");
-static_assert(sizeof(PyCue_Projectile_Loop_40240101_OnActive) == 0x0001E0, "Wrong size on PyCue_Projectile_Loop_40240101_OnActive");
-static_assert(offsetof(PyCue_Projectile_Loop_40240101_OnActive, MyTarget) == 0x000000, "Member 'PyCue_Projectile_Loop_40240101_OnActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_40240101_OnActive, Parameters) == 0x000008, "Member 'PyCue_Projectile_Loop_40240101_OnActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_40240101_OnActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Projectile_Loop_40240101_OnActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_Loop_40240101_OnActive;
 
 // PythonFunction PyAbility_10130_402401.PyCue_Projectile_HitImpact_40240101.AdjustNiagaraRotation
 // 0x01E0 (0x01E0 - 0x0000)
@@ -42,28 +38,19 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation) == 0x000008, "Wrong alignment on PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation");
-static_assert(sizeof(PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation) == 0x0001E0, "Wrong size on PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation, InFXComponent) == 0x000000, "Member 'PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation::InFXComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation, MyTarget) == 0x000008, "Member 'PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation, Parameters) == 0x000010, "Member 'PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_HitImpact_40240101_AdjustNiagaraRotation;
 
 // PythonFunction PyAbility_10130_402401.PyCue_Projectile_HitImpact_40240101.ComputeDecalRotation
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation final
 {
 public:
 	class AActor*                                 InInstigator;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 InCauser;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitResult;                                         // 0x0010(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FRotator                               ReturnValue;                                       // 0x0200(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FHitResult                             HitResult;                                         // 0x0010(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FRotator                               ReturnValue;                                       // 0x0218(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation) == 0x000008, "Wrong alignment on PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation");
-static_assert(sizeof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation) == 0x000218, "Wrong size on PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation, InInstigator) == 0x000000, "Member 'PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation::InInstigator' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation, InCauser) == 0x000008, "Member 'PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation::InCauser' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation, HitResult) == 0x000010, "Member 'PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation::HitResult' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation, ReturnValue) == 0x000200, "Member 'PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_HitImpact_40240101_ComputeDecalRotation;
 
 }
 

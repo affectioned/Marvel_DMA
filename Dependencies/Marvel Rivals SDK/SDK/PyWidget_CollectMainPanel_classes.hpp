@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CollectMainPanel.PyWidget_CollectMainPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CollectMainPanel final : public UPyWidget_CareerChildPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CollectMainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CollectMainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CollectMainPanel")
 	}
 	static class UPyWidget_CollectMainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CollectMainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CollectMainPanel) == 0x000008, "Wrong alignment on UPyWidget_CollectMainPanel");
-static_assert(sizeof(UPyWidget_CollectMainPanel) == 0x0005C0, "Wrong size on UPyWidget_CollectMainPanel");
+DUMPER7_ASSERTS_UPyWidget_CollectMainPanel;
 
 }
 

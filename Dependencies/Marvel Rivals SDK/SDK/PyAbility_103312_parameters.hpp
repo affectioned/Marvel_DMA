@@ -23,9 +23,7 @@ struct PyAbility_103312_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103312_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103312_CanActivate");
-static_assert(sizeof(PyAbility_103312_CanActivate) == 0x000001, "Wrong size on PyAbility_103312_CanActivate");
-static_assert(offsetof(PyAbility_103312_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103312_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103312_CanActivate;
 
 // PythonFunction PyAbility_103312.PyAbility_103312.OnActivateFailed
 // 0x0068 (0x0068 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_103312_OnActivateFailed final
 public:
 	struct FGameplayTagContainer                  FailReason;                                        // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_103312_OnActivateFailed) == 0x000008, "Wrong alignment on PyAbility_103312_OnActivateFailed");
-static_assert(sizeof(PyAbility_103312_OnActivateFailed) == 0x000068, "Wrong size on PyAbility_103312_OnActivateFailed");
-static_assert(offsetof(PyAbility_103312_OnActivateFailed, FailReason) == 0x000000, "Member 'PyAbility_103312_OnActivateFailed::FailReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103312_OnActivateFailed;
 
 // PythonFunction PyAbility_103312.PyAbility_103312.GetAbilityDuration
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_103312_GetAbilityDuration final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103312_GetAbilityDuration) == 0x000004, "Wrong alignment on PyAbility_103312_GetAbilityDuration");
-static_assert(sizeof(PyAbility_103312_GetAbilityDuration) == 0x000004, "Wrong size on PyAbility_103312_GetAbilityDuration");
-static_assert(offsetof(PyAbility_103312_GetAbilityDuration, ReturnValue) == 0x000000, "Member 'PyAbility_103312_GetAbilityDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103312_GetAbilityDuration;
 
 // PythonFunction PyAbility_103312.PyAbility_103312.IsWeaponLoaded
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAbility_103312_IsWeaponLoaded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103312_IsWeaponLoaded) == 0x000001, "Wrong alignment on PyAbility_103312_IsWeaponLoaded");
-static_assert(sizeof(PyAbility_103312_IsWeaponLoaded) == 0x000001, "Wrong size on PyAbility_103312_IsWeaponLoaded");
-static_assert(offsetof(PyAbility_103312_IsWeaponLoaded, ReturnValue) == 0x000000, "Member 'PyAbility_103312_IsWeaponLoaded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103312_IsWeaponLoaded;
 
 }
 

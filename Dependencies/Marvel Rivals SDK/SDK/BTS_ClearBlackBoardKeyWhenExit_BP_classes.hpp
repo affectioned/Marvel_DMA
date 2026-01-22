@@ -23,15 +23,18 @@ class UBTS_ClearBlackBoardKeyWhenExit_BP_C final : public UBTS_PyClearBlackBoard
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_ClearBlackBoardKeyWhenExit_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_ClearBlackBoardKeyWhenExit_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_ClearBlackBoardKeyWhenExit_BP_C")
 	}
 	static class UBTS_ClearBlackBoardKeyWhenExit_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_ClearBlackBoardKeyWhenExit_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_ClearBlackBoardKeyWhenExit_BP_C) == 0x000008, "Wrong alignment on UBTS_ClearBlackBoardKeyWhenExit_BP_C");
-static_assert(sizeof(UBTS_ClearBlackBoardKeyWhenExit_BP_C) == 0x0000D8, "Wrong size on UBTS_ClearBlackBoardKeyWhenExit_BP_C");
+DUMPER7_ASSERTS_UBTS_ClearBlackBoardKeyWhenExit_BP_C;
 
 }
 

@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelWorldSettingsBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelWorldSettingsBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelWorldSettingsBP_C")
 	}
 	static class AMarvelWorldSettingsBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelWorldSettingsBP_C>();
 	}
 };
-static_assert(alignof(AMarvelWorldSettingsBP_C) == 0x000010, "Wrong alignment on AMarvelWorldSettingsBP_C");
-static_assert(sizeof(AMarvelWorldSettingsBP_C) == 0x000A00, "Wrong size on AMarvelWorldSettingsBP_C");
-static_assert(offsetof(AMarvelWorldSettingsBP_C, DefaultSceneRoot) == 0x0009F0, "Member 'AMarvelWorldSettingsBP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelWorldSettingsBP_C;
 
 }
 

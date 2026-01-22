@@ -21,20 +21,7 @@ struct PyAbility_105043_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105043_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105043_CanActivate");
-static_assert(sizeof(PyAbility_105043_CanActivate) == 0x000001, "Wrong size on PyAbility_105043_CanActivate");
-static_assert(offsetof(PyAbility_105043_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105043_CanActivate::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyAbility_105043.PyAbility_105043.K2_OnClientActivateAbilityRejected
-// 0x0001 (0x0001 - 0x0000)
-struct PyAbility_105043_K2_OnClientActivateAbilityRejected final
-{
-public:
-	bool                                          bIsCurrentActivation;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_105043_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong alignment on PyAbility_105043_K2_OnClientActivateAbilityRejected");
-static_assert(sizeof(PyAbility_105043_K2_OnClientActivateAbilityRejected) == 0x000001, "Wrong size on PyAbility_105043_K2_OnClientActivateAbilityRejected");
-static_assert(offsetof(PyAbility_105043_K2_OnClientActivateAbilityRejected, bIsCurrentActivation) == 0x000000, "Member 'PyAbility_105043_K2_OnClientActivateAbilityRejected::bIsCurrentActivation' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105043_CanActivate;
 
 }
 

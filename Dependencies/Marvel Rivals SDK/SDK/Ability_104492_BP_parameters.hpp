@@ -21,9 +21,7 @@ struct Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP) == 0x000004, "Wrong alignment on Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP");
-static_assert(sizeof(Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP) == 0x000004, "Wrong size on Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP");
-static_assert(offsetof(Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP, EntryPoint) == 0x000000, "Member 'Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104492_BP_C_ExecuteUbergraph_Ability_104492_BP;
 
 // Function Ability_104492_BP.Ability_104492_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct Ability_104492_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104492_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_104492_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_104492_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_104492_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_104492_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_104492_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104492_BP_C_K2_OnEndAbility;
 
 }
 

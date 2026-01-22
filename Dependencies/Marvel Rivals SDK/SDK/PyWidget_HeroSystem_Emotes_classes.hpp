@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Emotes.PyWidget_HeroSystem_Emotes
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_HeroSystem_Emotes final : public UPyWidget_HeroSystem_Customize_Unit
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Emotes">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Emotes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Emotes")
 	}
 	static class UPyWidget_HeroSystem_Emotes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Emotes>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Emotes) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Emotes");
-static_assert(sizeof(UPyWidget_HeroSystem_Emotes) == 0x000608, "Wrong size on UPyWidget_HeroSystem_Emotes");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Emotes;
 
 }
 

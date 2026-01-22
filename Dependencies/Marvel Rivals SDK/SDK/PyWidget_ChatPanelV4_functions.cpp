@@ -164,6 +164,31 @@ void UPyWidget_ChatPanelV4::Deactivate()
 }
 
 
+// PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.OnAnimationFinished
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_ChatPanelV4::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_ChatPanelV4", "OnAnimationFinished");
+
+	Params::PyWidget_ChatPanelV4_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_ChatPanelV4.PyWidget_ChatPanelV4.InputText_Up_Navigation
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:

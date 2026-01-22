@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_105851_classes.hpp"
+#include "PyUI_105851_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105861.PyUIController_105861
-// 0x0000 (0x0F18 - 0x0F18)
+// 0x0000 (0x11F8 - 0x11F8)
 class UPyUIController_105861 final : public UPyUIController_EmptyCard
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_105861">();
+		STATIC_CLASS_IMPL("PyUIController_105861")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_105861")
 	}
 	static class UPyUIController_105861* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_105861>();
 	}
 };
-static_assert(alignof(UPyUIController_105861) == 0x000008, "Wrong alignment on UPyUIController_105861");
-static_assert(sizeof(UPyUIController_105861) == 0x000F18, "Wrong size on UPyUIController_105861");
+DUMPER7_ASSERTS_UPyUIController_105861;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	class UMarvelAudioAdmin*                      CallFunc_GetMarvelAudioAdmin_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool Value)>                   K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_BindShowDebugPanel) == 0x000008, "Wrong alignment on ThreatValueAdminBP_C_BindShowDebugPanel");
-static_assert(sizeof(ThreatValueAdminBP_C_BindShowDebugPanel) == 0x000020, "Wrong size on ThreatValueAdminBP_C_BindShowDebugPanel");
-static_assert(offsetof(ThreatValueAdminBP_C_BindShowDebugPanel, CallFunc_GetMarvelAudioAdmin_ReturnValue) == 0x000000, "Member 'ThreatValueAdminBP_C_BindShowDebugPanel::CallFunc_GetMarvelAudioAdmin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThreatValueAdminBP_C_BindShowDebugPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ThreatValueAdminBP_C_BindShowDebugPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_BindShowDebugPanel;
 
 // Function ThreatValueAdminBP.ThreatValueAdminBP_C.ExecuteUbergraph_ThreatValueAdminBP
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP) == 0x000004, "Wrong alignment on ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP");
-static_assert(sizeof(ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP) == 0x000004, "Wrong size on ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP");
-static_assert(offsetof(ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP, EntryPoint) == 0x000000, "Member 'ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_ExecuteUbergraph_ThreatValueAdminBP;
 
 // Function ThreatValueAdminBP.ThreatValueAdminBP_C.HideDebugPanel
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +40,7 @@ struct ThreatValueAdminBP_C_HideDebugPanel final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_HideDebugPanel) == 0x000001, "Wrong alignment on ThreatValueAdminBP_C_HideDebugPanel");
-static_assert(sizeof(ThreatValueAdminBP_C_HideDebugPanel) == 0x000001, "Wrong size on ThreatValueAdminBP_C_HideDebugPanel");
-static_assert(offsetof(ThreatValueAdminBP_C_HideDebugPanel, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ThreatValueAdminBP_C_HideDebugPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_HideDebugPanel;
 
 // Function ThreatValueAdminBP.ThreatValueAdminBP_C.OnShowDebugPanel
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +49,7 @@ struct ThreatValueAdminBP_C_OnShowDebugPanel final
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_OnShowDebugPanel) == 0x000001, "Wrong alignment on ThreatValueAdminBP_C_OnShowDebugPanel");
-static_assert(sizeof(ThreatValueAdminBP_C_OnShowDebugPanel) == 0x000001, "Wrong size on ThreatValueAdminBP_C_OnShowDebugPanel");
-static_assert(offsetof(ThreatValueAdminBP_C_OnShowDebugPanel, Show) == 0x000000, "Member 'ThreatValueAdminBP_C_OnShowDebugPanel::Show' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_OnShowDebugPanel;
 
 // Function ThreatValueAdminBP.ThreatValueAdminBP_C.ShowDebugPanel
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +58,7 @@ struct ThreatValueAdminBP_C_ShowDebugPanel final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_ShowDebugPanel) == 0x000001, "Wrong alignment on ThreatValueAdminBP_C_ShowDebugPanel");
-static_assert(sizeof(ThreatValueAdminBP_C_ShowDebugPanel) == 0x000001, "Wrong size on ThreatValueAdminBP_C_ShowDebugPanel");
-static_assert(offsetof(ThreatValueAdminBP_C_ShowDebugPanel, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ThreatValueAdminBP_C_ShowDebugPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_ShowDebugPanel;
 
 // Function ThreatValueAdminBP.ThreatValueAdminBP_C.TryCreateDebugPanel
 // 0x0018 (0x0018 - 0x0000)
@@ -81,11 +70,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_DebugAudio_C*                      CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThreatValueAdminBP_C_TryCreateDebugPanel) == 0x000008, "Wrong alignment on ThreatValueAdminBP_C_TryCreateDebugPanel");
-static_assert(sizeof(ThreatValueAdminBP_C_TryCreateDebugPanel) == 0x000018, "Wrong size on ThreatValueAdminBP_C_TryCreateDebugPanel");
-static_assert(offsetof(ThreatValueAdminBP_C_TryCreateDebugPanel, CallFunc_GetPlayerController_ReturnValue) == 0x000000, "Member 'ThreatValueAdminBP_C_TryCreateDebugPanel::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThreatValueAdminBP_C_TryCreateDebugPanel, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ThreatValueAdminBP_C_TryCreateDebugPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThreatValueAdminBP_C_TryCreateDebugPanel, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ThreatValueAdminBP_C_TryCreateDebugPanel::CallFunc_Create_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ThreatValueAdminBP_C_TryCreateDebugPanel;
 
 }
 

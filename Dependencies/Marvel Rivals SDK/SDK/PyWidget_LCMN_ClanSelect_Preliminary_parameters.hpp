@@ -21,9 +21,7 @@ struct PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible");
-static_assert(sizeof(PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible");
-static_assert(offsetof(PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LCMN_ClanSelect_Preliminary_MarvelSetVisible;
 
 }
 

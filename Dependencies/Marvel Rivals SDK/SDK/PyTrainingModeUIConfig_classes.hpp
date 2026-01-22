@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainingModeUIConfig">();
+		STATIC_CLASS_IMPL("PyTrainingModeUIConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainingModeUIConfig")
 	}
 	static class UPyTrainingModeUIConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTrainingModeUIConfig>();
 	}
 };
-static_assert(alignof(UPyTrainingModeUIConfig) == 0x000008, "Wrong alignment on UPyTrainingModeUIConfig");
-static_assert(sizeof(UPyTrainingModeUIConfig) == 0x000048, "Wrong size on UPyTrainingModeUIConfig");
-static_assert(offsetof(UPyTrainingModeUIConfig, PressVerticalAxisSquared) == 0x000038, "Member 'UPyTrainingModeUIConfig::PressVerticalAxisSquared' has a wrong offset!");
-static_assert(offsetof(UPyTrainingModeUIConfig, PressHorizontalAxisSquared) == 0x00003C, "Member 'UPyTrainingModeUIConfig::PressHorizontalAxisSquared' has a wrong offset!");
-static_assert(offsetof(UPyTrainingModeUIConfig, LongPressDuration) == 0x000040, "Member 'UPyTrainingModeUIConfig::LongPressDuration' has a wrong offset!");
-static_assert(offsetof(UPyTrainingModeUIConfig, ClickDuration) == 0x000044, "Member 'UPyTrainingModeUIConfig::ClickDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTrainingModeUIConfig;
 
 }
 

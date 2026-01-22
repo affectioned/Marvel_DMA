@@ -26,15 +26,18 @@ class UPyAeroAbilityActionTipManager final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAeroAbilityActionTipManager">();
+		STATIC_CLASS_IMPL("PyAeroAbilityActionTipManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAeroAbilityActionTipManager")
 	}
 	static class UPyAeroAbilityActionTipManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAeroAbilityActionTipManager>();
 	}
 };
-static_assert(alignof(UPyAeroAbilityActionTipManager) == 0x000008, "Wrong alignment on UPyAeroAbilityActionTipManager");
-static_assert(sizeof(UPyAeroAbilityActionTipManager) == 0x000030, "Wrong size on UPyAeroAbilityActionTipManager");
+DUMPER7_ASSERTS_UPyAeroAbilityActionTipManager;
 
 // PythonClass PyUIController_AeroAbilityActionTips.PyUIController_AeroAbilityActionTip
 // 0x00C8 (0x0100 - 0x0038)
@@ -58,23 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_AeroAbilityActionTip">();
+		STATIC_CLASS_IMPL("PyUIController_AeroAbilityActionTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_AeroAbilityActionTip")
 	}
 	static class UPyUIController_AeroAbilityActionTip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_AeroAbilityActionTip>();
 	}
 };
-static_assert(alignof(UPyUIController_AeroAbilityActionTip) == 0x000008, "Wrong alignment on UPyUIController_AeroAbilityActionTip");
-static_assert(sizeof(UPyUIController_AeroAbilityActionTip) == 0x000100, "Wrong size on UPyUIController_AeroAbilityActionTip");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, SecondsToShowFreeFlyActionTipAfterLongTimeToUse) == 0x000038, "Member 'UPyUIController_AeroAbilityActionTip::SecondsToShowFreeFlyActionTipAfterLongTimeToUse' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, PersistentFreeFlyActionTipDuration) == 0x00003C, "Member 'UPyUIController_AeroAbilityActionTip::PersistentFreeFlyActionTipDuration' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, Tag_PersistentFreeFly) == 0x000040, "Member 'UPyUIController_AeroAbilityActionTip::Tag_PersistentFreeFly' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, Tag_IgnoreFreeFlyTips) == 0x00004C, "Member 'UPyUIController_AeroAbilityActionTip::Tag_IgnoreFreeFlyTips' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, FreeFlyActionTips) == 0x000058, "Member 'UPyUIController_AeroAbilityActionTip::FreeFlyActionTips' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, FreeFlyActionTipHandles) == 0x000068, "Member 'UPyUIController_AeroAbilityActionTip::FreeFlyActionTipHandles' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, CancelDescendActionTip) == 0x000078, "Member 'UPyUIController_AeroAbilityActionTip::CancelDescendActionTip' has a wrong offset!");
-static_assert(offsetof(UPyUIController_AeroAbilityActionTip, CancelDescendActionTipsHandle) == 0x0000F0, "Member 'UPyUIController_AeroAbilityActionTip::CancelDescendActionTipsHandle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_AeroAbilityActionTip;
 
 }
 

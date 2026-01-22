@@ -38,27 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResultDataAsset">();
+		STATIC_CLASS_IMPL("ResultDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResultDataAsset")
 	}
 	static class UResultDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResultDataAsset>();
 	}
 };
-static_assert(alignof(UResultDataAsset) == 0x000010, "Wrong alignment on UResultDataAsset");
-static_assert(sizeof(UResultDataAsset) == 0x0001F0, "Wrong size on UResultDataAsset");
-static_assert(offsetof(UResultDataAsset, OriginPosition) == 0x000038, "Member 'UResultDataAsset::OriginPosition' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, SmallPositions) == 0x000050, "Member 'UResultDataAsset::SmallPositions' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, LargePositions) == 0x000060, "Member 'UResultDataAsset::LargePositions' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, SmallCameras) == 0x000070, "Member 'UResultDataAsset::SmallCameras' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, MiddleCameras) == 0x0000D0, "Member 'UResultDataAsset::MiddleCameras' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, LargeCameras) == 0x000130, "Member 'UResultDataAsset::LargeCameras' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, OneScales) == 0x000190, "Member 'UResultDataAsset::OneScales' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, TwoScales) == 0x0001A0, "Member 'UResultDataAsset::TwoScales' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, ThreeScales) == 0x0001B0, "Member 'UResultDataAsset::ThreeScales' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, FourScales) == 0x0001C0, "Member 'UResultDataAsset::FourScales' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, FiveScales) == 0x0001D0, "Member 'UResultDataAsset::FiveScales' has a wrong offset!");
-static_assert(offsetof(UResultDataAsset, SixScales) == 0x0001E0, "Member 'UResultDataAsset::SixScales' has a wrong offset!");
+DUMPER7_ASSERTS_UResultDataAsset;
 
 }
 

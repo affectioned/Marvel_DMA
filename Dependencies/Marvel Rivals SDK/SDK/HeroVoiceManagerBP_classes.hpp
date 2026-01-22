@@ -23,15 +23,18 @@ class AHeroVoiceManagerBP_C final : public APyHeroVoiceManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroVoiceManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("HeroVoiceManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroVoiceManagerBP_C")
 	}
 	static class AHeroVoiceManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHeroVoiceManagerBP_C>();
 	}
 };
-static_assert(alignof(AHeroVoiceManagerBP_C) == 0x000010, "Wrong alignment on AHeroVoiceManagerBP_C");
-static_assert(sizeof(AHeroVoiceManagerBP_C) == 0x000B20, "Wrong size on AHeroVoiceManagerBP_C");
+DUMPER7_ASSERTS_AHeroVoiceManagerBP_C;
 
 }
 

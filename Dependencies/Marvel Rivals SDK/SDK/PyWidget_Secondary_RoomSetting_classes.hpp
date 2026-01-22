@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_RoomSetting.PyWidgetSecondaryRoomSetting
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidgetSecondaryRoomSetting final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetSecondaryRoomSetting">();
+		STATIC_CLASS_IMPL("PyWidgetSecondaryRoomSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetSecondaryRoomSetting")
 	}
 	static class UPyWidgetSecondaryRoomSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetSecondaryRoomSetting>();
 	}
 };
-static_assert(alignof(UPyWidgetSecondaryRoomSetting) == 0x000008, "Wrong alignment on UPyWidgetSecondaryRoomSetting");
-static_assert(sizeof(UPyWidgetSecondaryRoomSetting) == 0x0005C0, "Wrong size on UPyWidgetSecondaryRoomSetting");
+DUMPER7_ASSERTS_UPyWidgetSecondaryRoomSetting;
 
 }
 

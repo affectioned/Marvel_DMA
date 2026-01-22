@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -17,14 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroTeamFilter.PyWidget_HeroTeamFilter
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_HeroTeamFilter final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsShowUnlockBox;                                   // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowBondBtn;                                     // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const TArray<int32>& HeroID_List)> OnHeroTeamFilter;               // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsShowUnlockBox;                                   // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowBondBtn;                                     // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const TArray<int32>& HeroID_List)> OnHeroTeamFilter;               // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EHeroRoleType RoleID)> OnHeroFilterRoleChange;                     // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroTeamFilter">();
+		STATIC_CLASS_IMPL("PyWidget_HeroTeamFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroTeamFilter")
 	}
 	static class UPyWidget_HeroTeamFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroTeamFilter>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroTeamFilter) == 0x000008, "Wrong alignment on UPyWidget_HeroTeamFilter");
-static_assert(sizeof(UPyWidget_HeroTeamFilter) == 0x0005D0, "Wrong size on UPyWidget_HeroTeamFilter");
-static_assert(offsetof(UPyWidget_HeroTeamFilter, IsShowUnlockBox) == 0x0005BA, "Member 'UPyWidget_HeroTeamFilter::IsShowUnlockBox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroTeamFilter, IsShowBondBtn) == 0x0005BB, "Member 'UPyWidget_HeroTeamFilter::IsShowBondBtn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroTeamFilter, OnHeroTeamFilter) == 0x0005C0, "Member 'UPyWidget_HeroTeamFilter::OnHeroTeamFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroTeamFilter;
 
 }
 

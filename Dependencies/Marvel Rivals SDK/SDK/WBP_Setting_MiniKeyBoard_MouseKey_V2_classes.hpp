@@ -12,22 +12,21 @@
 
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "PyWidget_HostHandleUIPanel_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "PyWidget_HostHandleUIPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_MiniKeyBoard_MouseKey_V2.WBP_Setting_MiniKeyBoard_MouseKey_V2_C
-// 0x01E0 (0x0800 - 0x0620)
+// 0x01D8 (0x0800 - 0x0628)
 class UWBP_Setting_MiniKeyBoard_MouseKey_V2_C final : public UPyWidget_HandleUIKey
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0620(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_Bg;                                            // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Frame;                                      // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	uint8                                         Pad_638[0x8];                                      // 0x0638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0628(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_Bg;                                            // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Frame;                                      // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FSlateBrush                            Bg;                                                // 0x0640(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FSlateBrush                            BgFrame;                                           // 0x0710(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FLinearColor                           Bg_Color;                                          // 0x07E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_MiniKeyBoard_MouseKey_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_MiniKeyBoard_MouseKey_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_MiniKeyBoard_MouseKey_V2_C")
 	}
 	static class UWBP_Setting_MiniKeyBoard_MouseKey_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_MiniKeyBoard_MouseKey_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C) == 0x000010, "Wrong alignment on UWBP_Setting_MiniKeyBoard_MouseKey_V2_C");
-static_assert(sizeof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C) == 0x000800, "Wrong size on UWBP_Setting_MiniKeyBoard_MouseKey_V2_C");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, UberGraphFrame) == 0x000620, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, Img_Bg) == 0x000628, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, Img_Bg_Frame) == 0x000630, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::Img_Bg_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, Bg) == 0x000640, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, BgFrame) == 0x000710, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::BgFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, Bg_Color) == 0x0007E0, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::Bg_Color' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_MouseKey_V2_C, BgFrame_Color) == 0x0007F0, "Member 'UWBP_Setting_MiniKeyBoard_MouseKey_V2_C::BgFrame_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_MiniKeyBoard_MouseKey_V2_C;
 
 }
 

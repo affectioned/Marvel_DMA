@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_SettingHotkey">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_SettingHotkey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_SettingHotkey")
 	}
 	static class UPyWidget_Replay_SettingHotkey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_SettingHotkey>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_SettingHotkey) == 0x000008, "Wrong alignment on UPyWidget_Replay_SettingHotkey");
-static_assert(sizeof(UPyWidget_Replay_SettingHotkey) == 0x000418, "Wrong size on UPyWidget_Replay_SettingHotkey");
-static_assert(offsetof(UPyWidget_Replay_SettingHotkey, KeyActionData) == 0x0003B8, "Member 'UPyWidget_Replay_SettingHotkey::KeyActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_SettingHotkey, SepcialKey) == 0x000410, "Member 'UPyWidget_Replay_SettingHotkey::SepcialKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_SettingHotkey;
 
 }
 

@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "Engine_classes.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_MCU_Skin_Unite_Panel.PyWidget_MCUSkinUnitPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_MCUSkinUnitPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UDataAsset*                             MCUSKinBundleData;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataAsset*                             MCUSKinBundleData;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MCUSkinUnitPanel">();
+		STATIC_CLASS_IMPL("PyWidget_MCUSkinUnitPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MCUSkinUnitPanel")
 	}
 	static class UPyWidget_MCUSkinUnitPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MCUSkinUnitPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_MCUSkinUnitPanel) == 0x000008, "Wrong alignment on UPyWidget_MCUSkinUnitPanel");
-static_assert(sizeof(UPyWidget_MCUSkinUnitPanel) == 0x000600, "Wrong size on UPyWidget_MCUSkinUnitPanel");
-static_assert(offsetof(UPyWidget_MCUSkinUnitPanel, MCUSKinBundleData) == 0x0005F8, "Member 'UPyWidget_MCUSkinUnitPanel::MCUSKinBundleData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MCUSkinUnitPanel;
 
 // PythonClass PyWidget_MCU_Skin_Unite_Panel.MCUSkinBundleDataAsset
 // 0x0010 (0x0048 - 0x0038)
@@ -51,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MCUSkinBundleDataAsset">();
+		STATIC_CLASS_IMPL("MCUSkinBundleDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MCUSkinBundleDataAsset")
 	}
 	static class UMCUSkinBundleDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMCUSkinBundleDataAsset>();
 	}
 };
-static_assert(alignof(UMCUSkinBundleDataAsset) == 0x000008, "Wrong alignment on UMCUSkinBundleDataAsset");
-static_assert(sizeof(UMCUSkinBundleDataAsset) == 0x000048, "Wrong size on UMCUSkinBundleDataAsset");
-static_assert(offsetof(UMCUSkinBundleDataAsset, BundleList) == 0x000038, "Member 'UMCUSkinBundleDataAsset::BundleList' has a wrong offset!");
+DUMPER7_ASSERTS_UMCUSkinBundleDataAsset;
 
 }
 

@@ -37,22 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySqirrelCar">();
+		STATIC_CLASS_IMPL("PySqirrelCar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySqirrelCar")
 	}
 	static class APySqirrelCar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySqirrelCar>();
 	}
 };
-static_assert(alignof(APySqirrelCar) == 0x000010, "Wrong alignment on APySqirrelCar");
-static_assert(sizeof(APySqirrelCar) == 0x000B90, "Wrong size on APySqirrelCar");
-static_assert(offsetof(APySqirrelCar, VehicleState) == 0x000B64, "Member 'APySqirrelCar::VehicleState' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, ShowActor) == 0x000B68, "Member 'APySqirrelCar::ShowActor' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, ShowActorCollision) == 0x000B70, "Member 'APySqirrelCar::ShowActorCollision' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, LockingIdleAnim) == 0x000B78, "Member 'APySqirrelCar::LockingIdleAnim' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, EnteringGameAnimMT) == 0x000B80, "Member 'APySqirrelCar::EnteringGameAnimMT' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, ExpandCollisionDelay) == 0x000B88, "Member 'APySqirrelCar::ExpandCollisionDelay' has a wrong offset!");
-static_assert(offsetof(APySqirrelCar, ExpandTime) == 0x000B8C, "Member 'APySqirrelCar::ExpandTime' has a wrong offset!");
+DUMPER7_ASSERTS_APySqirrelCar;
 
 }
 

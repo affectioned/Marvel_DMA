@@ -56,46 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_CampColor_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_CampColor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_CampColor_C")
 	}
 	static class UWBP_Setting_CampColor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_CampColor_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_CampColor_C) == 0x000008, "Wrong alignment on UWBP_Setting_CampColor_C");
-static_assert(sizeof(UWBP_Setting_CampColor_C) == 0x0004B0, "Wrong size on UWBP_Setting_CampColor_C");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_0) == 0x0003B8, "Member 'UWBP_Setting_CampColor_C::Enemy_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_1) == 0x0003C0, "Member 'UWBP_Setting_CampColor_C::Enemy_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_2) == 0x0003C8, "Member 'UWBP_Setting_CampColor_C::Enemy_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_3) == 0x0003D0, "Member 'UWBP_Setting_CampColor_C::Enemy_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_4) == 0x0003D8, "Member 'UWBP_Setting_CampColor_C::Enemy_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Enemy_5) == 0x0003E0, "Member 'UWBP_Setting_CampColor_C::Enemy_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, HpBarWidget_Enemy) == 0x0003E8, "Member 'UWBP_Setting_CampColor_C::HpBarWidget_Enemy' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, HpBarWidget_Teammate) == 0x0003F0, "Member 'UWBP_Setting_CampColor_C::HpBarWidget_Teammate' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Image_TitleBg) == 0x0003F8, "Member 'UWBP_Setting_CampColor_C::Image_TitleBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Image_TitleBg_1) == 0x000400, "Member 'UWBP_Setting_CampColor_C::Image_TitleBg_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_A) == 0x000408, "Member 'UWBP_Setting_CampColor_C::Img_A' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_A_1) == 0x000410, "Member 'UWBP_Setting_CampColor_C::Img_A_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Death) == 0x000418, "Member 'UWBP_Setting_CampColor_C::Img_Death' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Death_1) == 0x000420, "Member 'UWBP_Setting_CampColor_C::Img_Death_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Enemy_Contour) == 0x000428, "Member 'UWBP_Setting_CampColor_C::Img_Enemy_Contour' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Kill) == 0x000430, "Member 'UWBP_Setting_CampColor_C::Img_Kill' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Kill_1) == 0x000438, "Member 'UWBP_Setting_CampColor_C::Img_Kill_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_MeleeTip) == 0x000440, "Member 'UWBP_Setting_CampColor_C::Img_MeleeTip' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_Score) == 0x000448, "Member 'UWBP_Setting_CampColor_C::Img_Score' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Img_ScoreBoard_Bg) == 0x000450, "Member 'UWBP_Setting_CampColor_C::Img_ScoreBoard_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, RichText_Preview_Tips) == 0x000458, "Member 'UWBP_Setting_CampColor_C::RichText_Preview_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_0) == 0x000460, "Member 'UWBP_Setting_CampColor_C::Teammate_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_1) == 0x000468, "Member 'UWBP_Setting_CampColor_C::Teammate_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_2) == 0x000470, "Member 'UWBP_Setting_CampColor_C::Teammate_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_3) == 0x000478, "Member 'UWBP_Setting_CampColor_C::Teammate_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_4) == 0x000480, "Member 'UWBP_Setting_CampColor_C::Teammate_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, Teammate_5) == 0x000488, "Member 'UWBP_Setting_CampColor_C::Teammate_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, WBox_Enemy) == 0x000490, "Member 'UWBP_Setting_CampColor_C::WBox_Enemy' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, WBox_Teammate) == 0x000498, "Member 'UWBP_Setting_CampColor_C::WBox_Teammate' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, WBP_BattleSituation) == 0x0004A0, "Member 'UWBP_Setting_CampColor_C::WBP_BattleSituation' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_CampColor_C, WBP_CharacterArrow) == 0x0004A8, "Member 'UWBP_Setting_CampColor_C::WBP_CharacterArrow' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_CampColor_C;
 
 }
 

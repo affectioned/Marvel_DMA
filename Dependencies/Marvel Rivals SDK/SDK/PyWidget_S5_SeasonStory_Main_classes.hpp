@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S5_SeasonStory_Main.PyWidget_S5_SeasonStory_Bg
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_S5_SeasonStory_Bg final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -31,24 +31,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S5_SeasonStory_Bg">();
+		STATIC_CLASS_IMPL("PyWidget_S5_SeasonStory_Bg")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S5_SeasonStory_Bg")
 	}
 	static class UPyWidget_S5_SeasonStory_Bg* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S5_SeasonStory_Bg>();
 	}
 };
-static_assert(alignof(UPyWidget_S5_SeasonStory_Bg) == 0x000008, "Wrong alignment on UPyWidget_S5_SeasonStory_Bg");
-static_assert(sizeof(UPyWidget_S5_SeasonStory_Bg) == 0x0005F8, "Wrong size on UPyWidget_S5_SeasonStory_Bg");
+DUMPER7_ASSERTS_UPyWidget_S5_SeasonStory_Bg;
 
 // PythonClass PyWidget_S5_SeasonStory_Main.PyWidget_S5_SeasonStory_Main
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_S5_SeasonStory_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            TimeColorNormal;                                   // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeColorExpiring;                                 // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            TimeColorNormal;                                   // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeColorExpiring;                                 // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -61,17 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S5_SeasonStory_Main">();
+		STATIC_CLASS_IMPL("PyWidget_S5_SeasonStory_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S5_SeasonStory_Main")
 	}
 	static class UPyWidget_S5_SeasonStory_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S5_SeasonStory_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_S5_SeasonStory_Main) == 0x000008, "Wrong alignment on UPyWidget_S5_SeasonStory_Main");
-static_assert(sizeof(UPyWidget_S5_SeasonStory_Main) == 0x0005E8, "Wrong size on UPyWidget_S5_SeasonStory_Main");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_Main, TimeColorNormal) == 0x0005BC, "Member 'UPyWidget_S5_SeasonStory_Main::TimeColorNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_Main, TimeColorExpiring) == 0x0005D0, "Member 'UPyWidget_S5_SeasonStory_Main::TimeColorExpiring' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S5_SeasonStory_Main;
 
 }
 

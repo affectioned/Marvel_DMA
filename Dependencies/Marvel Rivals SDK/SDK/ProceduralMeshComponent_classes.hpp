@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KismetProceduralMeshLibrary">();
+		STATIC_CLASS_IMPL("KismetProceduralMeshLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KismetProceduralMeshLibrary")
 	}
 	static class UKismetProceduralMeshLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKismetProceduralMeshLibrary>();
 	}
 };
-static_assert(alignof(UKismetProceduralMeshLibrary) == 0x000008, "Wrong alignment on UKismetProceduralMeshLibrary");
-static_assert(sizeof(UKismetProceduralMeshLibrary) == 0x000030, "Wrong size on UKismetProceduralMeshLibrary");
+DUMPER7_ASSERTS_UKismetProceduralMeshLibrary;
 
 // Class ProceduralMeshComponent.ProceduralMeshComponent
 // 0x0080 (0x0900 - 0x0880)
@@ -83,22 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralMeshComponent">();
+		STATIC_CLASS_IMPL("ProceduralMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralMeshComponent")
 	}
 	static class UProceduralMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProceduralMeshComponent>();
 	}
 };
-static_assert(alignof(UProceduralMeshComponent) == 0x000010, "Wrong alignment on UProceduralMeshComponent");
-static_assert(sizeof(UProceduralMeshComponent) == 0x000900, "Wrong size on UProceduralMeshComponent");
-static_assert(offsetof(UProceduralMeshComponent, bUseComplexAsSimpleCollision) == 0x000880, "Member 'UProceduralMeshComponent::bUseComplexAsSimpleCollision' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, bUseAsyncCooking) == 0x000881, "Member 'UProceduralMeshComponent::bUseAsyncCooking' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, ProcMeshBodySetup) == 0x000888, "Member 'UProceduralMeshComponent::ProcMeshBodySetup' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, ProcMeshSections) == 0x000898, "Member 'UProceduralMeshComponent::ProcMeshSections' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, CollisionConvexElems) == 0x0008A8, "Member 'UProceduralMeshComponent::CollisionConvexElems' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, LocalBounds) == 0x0008B8, "Member 'UProceduralMeshComponent::LocalBounds' has a wrong offset!");
-static_assert(offsetof(UProceduralMeshComponent, AsyncBodySetupQueue) == 0x0008F0, "Member 'UProceduralMeshComponent::AsyncBodySetupQueue' has a wrong offset!");
+DUMPER7_ASSERTS_UProceduralMeshComponent;
 
 }
 

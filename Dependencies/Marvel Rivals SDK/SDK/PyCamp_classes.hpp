@@ -75,37 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCamp">();
+		STATIC_CLASS_IMPL("PyCamp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCamp")
 	}
 	static class APyCamp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCamp>();
 	}
 };
-static_assert(alignof(APyCamp) == 0x000010, "Wrong alignment on APyCamp");
-static_assert(sizeof(APyCamp) == 0x000870, "Wrong size on APyCamp");
-static_assert(offsetof(APyCamp, WinnerSide) == 0x000760, "Member 'APyCamp::WinnerSide' has a wrong offset!");
-static_assert(offsetof(APyCamp, HolderSide) == 0x000761, "Member 'APyCamp::HolderSide' has a wrong offset!");
-static_assert(offsetof(APyCamp, CampState) == 0x000762, "Member 'APyCamp::CampState' has a wrong offset!");
-static_assert(offsetof(APyCamp, InsideCharList) == 0x000768, "Member 'APyCamp::InsideCharList' has a wrong offset!");
-static_assert(offsetof(APyCamp, TeamCountDict) == 0x000778, "Member 'APyCamp::TeamCountDict' has a wrong offset!");
-static_assert(offsetof(APyCamp, BluePlayerCount) == 0x0007C8, "Member 'APyCamp::BluePlayerCount' has a wrong offset!");
-static_assert(offsetof(APyCamp, RedPlayerCount) == 0x0007CC, "Member 'APyCamp::RedPlayerCount' has a wrong offset!");
-static_assert(offsetof(APyCamp, IsVisibleInPrepare) == 0x0007D0, "Member 'APyCamp::IsVisibleInPrepare' has a wrong offset!");
-static_assert(offsetof(APyCamp, UpdateInterval) == 0x0007D4, "Member 'APyCamp::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(APyCamp, UNLOCK_TIME) == 0x0007D8, "Member 'APyCamp::UNLOCK_TIME' has a wrong offset!");
-static_assert(offsetof(APyCamp, CueTag) == 0x0007DC, "Member 'APyCamp::CueTag' has a wrong offset!");
-static_assert(offsetof(APyCamp, CueBiasLocation) == 0x0007E8, "Member 'APyCamp::CueBiasLocation' has a wrong offset!");
-static_assert(offsetof(APyCamp, TimeInterval) == 0x000800, "Member 'APyCamp::TimeInterval' has a wrong offset!");
-static_assert(offsetof(APyCamp, FinalTriggerTime) == 0x000804, "Member 'APyCamp::FinalTriggerTime' has a wrong offset!");
-static_assert(offsetof(APyCamp, NormalTimeInterval) == 0x000808, "Member 'APyCamp::NormalTimeInterval' has a wrong offset!");
-static_assert(offsetof(APyCamp, ShortTimeInterval) == 0x00080C, "Member 'APyCamp::ShortTimeInterval' has a wrong offset!");
-static_assert(offsetof(APyCamp, DispatchCampBlockOccupying) == 0x000810, "Member 'APyCamp::DispatchCampBlockOccupying' has a wrong offset!");
-static_assert(offsetof(APyCamp, DispatchCampPlayerChanged) == 0x000820, "Member 'APyCamp::DispatchCampPlayerChanged' has a wrong offset!");
-static_assert(offsetof(APyCamp, VHolderSideDispatcher) == 0x000830, "Member 'APyCamp::VHolderSideDispatcher' has a wrong offset!");
-static_assert(offsetof(APyCamp, DispatchCampStateChange) == 0x000840, "Member 'APyCamp::DispatchCampStateChange' has a wrong offset!");
-static_assert(offsetof(APyCamp, DispatchClientCampPlayerChanged) == 0x000850, "Member 'APyCamp::DispatchClientCampPlayerChanged' has a wrong offset!");
-static_assert(offsetof(APyCamp, DispatcherClientProgressSpeed) == 0x000860, "Member 'APyCamp::DispatcherClientProgressSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_APyCamp;
 
 }
 

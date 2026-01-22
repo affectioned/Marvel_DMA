@@ -23,10 +23,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   BuffDesc_5_38848F6F419C43303E50029688593B00;       // 0x0008(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FMarvelCommonBuffDescBP) == 0x000008, "Wrong alignment on FMarvelCommonBuffDescBP");
-static_assert(sizeof(FMarvelCommonBuffDescBP) == 0x000020, "Wrong size on FMarvelCommonBuffDescBP");
-static_assert(offsetof(FMarvelCommonBuffDescBP, BuffID_2_85191D784EE5A40E6007138CBB68AC9E) == 0x000000, "Member 'FMarvelCommonBuffDescBP::BuffID_2_85191D784EE5A40E6007138CBB68AC9E' has a wrong offset!");
-static_assert(offsetof(FMarvelCommonBuffDescBP, BuffDesc_5_38848F6F419C43303E50029688593B00) == 0x000008, "Member 'FMarvelCommonBuffDescBP::BuffDesc_5_38848F6F419C43303E50029688593B00' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelCommonBuffDescBP;
 
 }
 

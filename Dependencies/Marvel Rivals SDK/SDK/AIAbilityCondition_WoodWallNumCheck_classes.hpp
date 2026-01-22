@@ -23,15 +23,18 @@ class UAIAbilityCondition_WoodWallNumCheck_C final : public UAIAbilityCondition_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityCondition_WoodWallNumCheck_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityCondition_WoodWallNumCheck_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityCondition_WoodWallNumCheck_C")
 	}
 	static class UAIAbilityCondition_WoodWallNumCheck_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityCondition_WoodWallNumCheck_C>();
 	}
 };
-static_assert(alignof(UAIAbilityCondition_WoodWallNumCheck_C) == 0x000008, "Wrong alignment on UAIAbilityCondition_WoodWallNumCheck_C");
-static_assert(sizeof(UAIAbilityCondition_WoodWallNumCheck_C) == 0x000060, "Wrong size on UAIAbilityCondition_WoodWallNumCheck_C");
+DUMPER7_ASSERTS_UAIAbilityCondition_WoodWallNumCheck_C;
 
 }
 

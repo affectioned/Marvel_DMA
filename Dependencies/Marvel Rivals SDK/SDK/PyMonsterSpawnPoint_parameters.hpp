@@ -21,9 +21,7 @@ struct PyMonsterSpawnPoint_CanDraw final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMonsterSpawnPoint_CanDraw) == 0x000001, "Wrong alignment on PyMonsterSpawnPoint_CanDraw");
-static_assert(sizeof(PyMonsterSpawnPoint_CanDraw) == 0x000001, "Wrong size on PyMonsterSpawnPoint_CanDraw");
-static_assert(offsetof(PyMonsterSpawnPoint_CanDraw, ReturnValue) == 0x000000, "Member 'PyMonsterSpawnPoint_CanDraw::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMonsterSpawnPoint_CanDraw;
 
 // PythonFunction PyMonsterSpawnPoint.PyMonsterSpawnPoint.IsSpawing
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyMonsterSpawnPoint_IsSpawing final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMonsterSpawnPoint_IsSpawing) == 0x000001, "Wrong alignment on PyMonsterSpawnPoint_IsSpawing");
-static_assert(sizeof(PyMonsterSpawnPoint_IsSpawing) == 0x000001, "Wrong size on PyMonsterSpawnPoint_IsSpawing");
-static_assert(offsetof(PyMonsterSpawnPoint_IsSpawing, ReturnValue) == 0x000000, "Member 'PyMonsterSpawnPoint_IsSpawing::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMonsterSpawnPoint_IsSpawing;
 
 // PythonFunction PyMonsterSpawnPoint.PyMonsterSpawnPoint.GetDebugInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -43,9 +39,7 @@ struct PyMonsterSpawnPoint_GetDebugInfo final
 public:
 	TMap<class FString, class FString>            ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyMonsterSpawnPoint_GetDebugInfo) == 0x000008, "Wrong alignment on PyMonsterSpawnPoint_GetDebugInfo");
-static_assert(sizeof(PyMonsterSpawnPoint_GetDebugInfo) == 0x000050, "Wrong size on PyMonsterSpawnPoint_GetDebugInfo");
-static_assert(offsetof(PyMonsterSpawnPoint_GetDebugInfo, ReturnValue) == 0x000000, "Member 'PyMonsterSpawnPoint_GetDebugInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMonsterSpawnPoint_GetDebugInfo;
 
 }
 

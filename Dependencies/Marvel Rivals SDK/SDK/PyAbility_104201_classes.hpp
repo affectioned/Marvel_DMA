@@ -18,30 +18,31 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104201.PyConfig_104201
-// 0x0BD0 (0x0CE8 - 0x0118)
+// 0x0EF0 (0x1F08 - 0x1018)
 class UPyConfig_104201 final : public UWallRunningAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       ReachTopOfWallDashInfo;                            // 0x0118(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         ForwardSpeedAfterDashTopOfWall;                    // 0x0CE0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       ReachTopOfWallDashInfo;                            // 0x1018(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         ForwardSpeedAfterDashTopOfWall;                    // 0x1F00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104201">();
+		STATIC_CLASS_IMPL("PyConfig_104201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104201")
 	}
 	static class UPyConfig_104201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104201>();
 	}
 };
-static_assert(alignof(UPyConfig_104201) == 0x000008, "Wrong alignment on UPyConfig_104201");
-static_assert(sizeof(UPyConfig_104201) == 0x000CE8, "Wrong size on UPyConfig_104201");
-static_assert(offsetof(UPyConfig_104201, ReachTopOfWallDashInfo) == 0x000118, "Member 'UPyConfig_104201::ReachTopOfWallDashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104201, ForwardSpeedAfterDashTopOfWall) == 0x000CE0, "Member 'UPyConfig_104201::ForwardSpeedAfterDashTopOfWall' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104201;
 
 // PythonClass PyAbility_104201.PyAbility_104201
-// 0x0000 (0x2A78 - 0x2A78)
+// 0x0000 (0x2B58 - 0x2B58)
 class UPyAbility_104201 : public UWallRunningAbility
 {
 public:
@@ -50,7 +51,6 @@ public:
 	bool CanActivate();
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
 	void K2_OnEndAbility(bool bWasCancelled);
-	void K2_OnTick(float DeltaTime);
 	bool K2_OnWallRunningEnd(const struct FWallRunningEndInfo& InWallRunningEndInfo);
 	void OnDashFinish_ReachTop(EDashStopReason Reason);
 	void BreakEventNotify();
@@ -58,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104201">();
+		STATIC_CLASS_IMPL("PyAbility_104201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104201")
 	}
 	static class UPyAbility_104201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104201>();
 	}
 };
-static_assert(alignof(UPyAbility_104201) == 0x000008, "Wrong alignment on UPyAbility_104201");
-static_assert(sizeof(UPyAbility_104201) == 0x002A78, "Wrong size on UPyAbility_104201");
+DUMPER7_ASSERTS_UPyAbility_104201;
 
 }
 

@@ -10,9 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -28,26 +26,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_221">();
+		STATIC_CLASS_IMPL("PyConfig_221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_221")
 	}
 	static class UPyConfig_221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_221>();
 	}
 };
-static_assert(alignof(UPyConfig_221) == 0x000008, "Wrong alignment on UPyConfig_221");
-static_assert(sizeof(UPyConfig_221) == 0x0000E0, "Wrong size on UPyConfig_221");
-static_assert(offsetof(UPyConfig_221, GamePadClickTime) == 0x0000D8, "Member 'UPyConfig_221::GamePadClickTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_221;
 
 // PythonClass PyAbility_221.PyAbility_221
-// 0x0040 (0x2A48 - 0x2A08)
+// 0x0040 (0x2A98 - 0x2A58)
 class UPyAbility_221 : public UMarvelAbility_LongPressTrigger
 {
 public:
-	TMulticastInlineDelegate<void()>              AbilityActivate;                                   // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AbilityHoldEnd;                                    // 0x2A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AbilityHoldTriggered;                              // 0x2A28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              TipsTextChanged;                                   // 0x2A38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AbilityActivate;                                   // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AbilityHoldEnd;                                    // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AbilityHoldTriggered;                              // 0x2A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              TipsTextChanged;                                   // 0x2A88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -59,56 +59,23 @@ public:
 	void K2_MaxHoldTimeGameplay(float HoldTime);
 	void K2_OnEndAbility(bool bWasCancelled);
 	void Server_AbilityActivated(class AActor* InteractedActor, class AMarvelPlayerState* ActivatedPlayerState);
+	void Server_AbilityActivated_WithIntParam(class AActor* InteractedActor, class AMarvelPlayerState* ActivatedPlayerState, int32 Param);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_221">();
+		STATIC_CLASS_IMPL("PyAbility_221")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_221")
 	}
 	static class UPyAbility_221* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_221>();
 	}
 };
-static_assert(alignof(UPyAbility_221) == 0x000008, "Wrong alignment on UPyAbility_221");
-static_assert(sizeof(UPyAbility_221) == 0x002A48, "Wrong size on UPyAbility_221");
-static_assert(offsetof(UPyAbility_221, AbilityActivate) == 0x002A08, "Member 'UPyAbility_221::AbilityActivate' has a wrong offset!");
-static_assert(offsetof(UPyAbility_221, AbilityHoldEnd) == 0x002A18, "Member 'UPyAbility_221::AbilityHoldEnd' has a wrong offset!");
-static_assert(offsetof(UPyAbility_221, AbilityHoldTriggered) == 0x002A28, "Member 'UPyAbility_221::AbilityHoldTriggered' has a wrong offset!");
-static_assert(offsetof(UPyAbility_221, TipsTextChanged) == 0x002A38, "Member 'UPyAbility_221::TipsTextChanged' has a wrong offset!");
-
-// PythonClass PyAbility_221.PyUIC_SelectTarget_221
-// 0x00B0 (0x0208 - 0x0158)
-class UPyUIC_SelectTarget_221 : public UUIC_SelectTarget
-{
-public:
-	float                                         SelectUIOffset;                                    // 0x0158(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ETrainAssist, class FText>               SelectTexts;                                       // 0x0160(0x0050)(Edit, NativeAccessSpecifierPublic)
-	struct FUIActionData                          SelectActionData;                                  // 0x01B0(0x0058)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	void OnInit();
-	void OnDestruct();
-	TArray<struct FSelectTaskResult> GetTaskResults();
-	struct FVector GetLocationFromActor(class AActor* InActor);
-	void OnTargetChanged();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIC_SelectTarget_221">();
-	}
-	static class UPyUIC_SelectTarget_221* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIC_SelectTarget_221>();
-	}
-};
-static_assert(alignof(UPyUIC_SelectTarget_221) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_221");
-static_assert(sizeof(UPyUIC_SelectTarget_221) == 0x000208, "Wrong size on UPyUIC_SelectTarget_221");
-static_assert(offsetof(UPyUIC_SelectTarget_221, SelectUIOffset) == 0x000158, "Member 'UPyUIC_SelectTarget_221::SelectUIOffset' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_221, SelectTexts) == 0x000160, "Member 'UPyUIC_SelectTarget_221::SelectTexts' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_221, SelectActionData) == 0x0001B0, "Member 'UPyUIC_SelectTarget_221::SelectActionData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_221;
 
 }
 

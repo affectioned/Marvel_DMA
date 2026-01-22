@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "PyLevelDeathMatchAudioComponent_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "PyAudioItemConfig_classes.hpp"
 
 
@@ -26,15 +26,18 @@ class UPyLevelTeamDeathMatchAudioComponent : public UPyLevelDeathMatchAudioCompo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTeamDeathMatchAudioComponent">();
+		STATIC_CLASS_IMPL("PyLevelTeamDeathMatchAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTeamDeathMatchAudioComponent")
 	}
 	static class UPyLevelTeamDeathMatchAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTeamDeathMatchAudioComponent>();
 	}
 };
-static_assert(alignof(UPyLevelTeamDeathMatchAudioComponent) == 0x000008, "Wrong alignment on UPyLevelTeamDeathMatchAudioComponent");
-static_assert(sizeof(UPyLevelTeamDeathMatchAudioComponent) == 0x000120, "Wrong size on UPyLevelTeamDeathMatchAudioComponent");
+DUMPER7_ASSERTS_UPyLevelTeamDeathMatchAudioComponent;
 
 // PythonClass PyLevelTeamDeathMatchAudioComponent.PyLevelTeamDeathMatchArcadeAudioComponent
 // 0x0010 (0x0130 - 0x0120)
@@ -49,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTeamDeathMatchArcadeAudioComponent">();
+		STATIC_CLASS_IMPL("PyLevelTeamDeathMatchArcadeAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTeamDeathMatchArcadeAudioComponent")
 	}
 	static class UPyLevelTeamDeathMatchArcadeAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTeamDeathMatchArcadeAudioComponent>();
 	}
 };
-static_assert(alignof(UPyLevelTeamDeathMatchArcadeAudioComponent) == 0x000008, "Wrong alignment on UPyLevelTeamDeathMatchArcadeAudioComponent");
-static_assert(sizeof(UPyLevelTeamDeathMatchArcadeAudioComponent) == 0x000130, "Wrong size on UPyLevelTeamDeathMatchArcadeAudioComponent");
-static_assert(offsetof(UPyLevelTeamDeathMatchArcadeAudioComponent, ViewTargetWatcher) == 0x000120, "Member 'UPyLevelTeamDeathMatchArcadeAudioComponent::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelTeamDeathMatchArcadeAudioComponent;
 
 // PythonClass PyLevelTeamDeathMatchAudioComponent.PyLevelTeamDeathMatchAudioItem
 // 0x0150 (0x0228 - 0x00D8)
@@ -90,36 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTeamDeathMatchAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelTeamDeathMatchAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTeamDeathMatchAudioItem")
 	}
 	static class UPyLevelTeamDeathMatchAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTeamDeathMatchAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelTeamDeathMatchAudioItem) == 0x000008, "Wrong alignment on UPyLevelTeamDeathMatchAudioItem");
-static_assert(sizeof(UPyLevelTeamDeathMatchAudioItem) == 0x000228, "Wrong size on UPyLevelTeamDeathMatchAudioItem");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SwitchAudioNumberKey) == 0x0000D8, "Member 'UPyLevelTeamDeathMatchAudioItem::SwitchAudioNumberKey' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, Respawn) == 0x0000E8, "Member 'UPyLevelTeamDeathMatchAudioItem::Respawn' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, WinScoreCheck) == 0x0000F8, "Member 'UPyLevelTeamDeathMatchAudioItem::WinScoreCheck' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, AddScore) == 0x000108, "Member 'UPyLevelTeamDeathMatchAudioItem::AddScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SubScore) == 0x000118, "Member 'UPyLevelTeamDeathMatchAudioItem::SubScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin1) == 0x000128, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin1' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin2) == 0x000138, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin2' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin3) == 0x000148, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin3' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin4) == 0x000158, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin4' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin5) == 0x000168, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin5' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin10) == 0x000178, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin10' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, SelfScoreWin15) == 0x000188, "Member 'UPyLevelTeamDeathMatchAudioItem::SelfScoreWin15' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin1) == 0x000198, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin1' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin2) == 0x0001A8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin2' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin3) == 0x0001B8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin3' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin4) == 0x0001C8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin4' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin5) == 0x0001D8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin5' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin10) == 0x0001E8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin10' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, EnemyScoreWin15) == 0x0001F8, "Member 'UPyLevelTeamDeathMatchAudioItem::EnemyScoreWin15' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, GainAdvantage) == 0x000208, "Member 'UPyLevelTeamDeathMatchAudioItem::GainAdvantage' has a wrong offset!");
-static_assert(offsetof(UPyLevelTeamDeathMatchAudioItem, LostAdvantage) == 0x000218, "Member 'UPyLevelTeamDeathMatchAudioItem::LostAdvantage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelTeamDeathMatchAudioItem;
 
 }
 

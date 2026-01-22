@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_ScoreIcon.PyWidget_League_ScoreIcon
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_League_ScoreIcon final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Size_MarvelOverlay;                                // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Size_MarvelOverlay;                                // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScoreIcon">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScoreIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScoreIcon")
 	}
 	static class UPyWidget_League_ScoreIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScoreIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScoreIcon) == 0x000008, "Wrong alignment on UPyWidget_League_ScoreIcon");
-static_assert(sizeof(UPyWidget_League_ScoreIcon) == 0x0005D0, "Wrong size on UPyWidget_League_ScoreIcon");
-static_assert(offsetof(UPyWidget_League_ScoreIcon, Size_MarvelOverlay) == 0x0005C0, "Member 'UPyWidget_League_ScoreIcon::Size_MarvelOverlay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScoreIcon;
 
 }
 

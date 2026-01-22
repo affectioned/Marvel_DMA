@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_AbilityLoop_10350101_WhileActive) == 0x000008, "Wrong alignment on PyCue_AbilityLoop_10350101_WhileActive");
-static_assert(sizeof(PyCue_AbilityLoop_10350101_WhileActive) == 0x0001E0, "Wrong size on PyCue_AbilityLoop_10350101_WhileActive");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_AbilityLoop_10350101_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_WhileActive, Parameters) == 0x000008, "Member 'PyCue_AbilityLoop_10350101_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_AbilityLoop_10350101_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_AbilityLoop_10350101_WhileActive;
 
 // PythonFunction PyAbility_103501.PyCue_AbilityLoop_10350101.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_AbilityLoop_10350101_OnRemove) == 0x000008, "Wrong alignment on PyCue_AbilityLoop_10350101_OnRemove");
-static_assert(sizeof(PyCue_AbilityLoop_10350101_OnRemove) == 0x0001E0, "Wrong size on PyCue_AbilityLoop_10350101_OnRemove");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_AbilityLoop_10350101_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_OnRemove, Parameters) == 0x000008, "Member 'PyCue_AbilityLoop_10350101_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_AbilityLoop_10350101_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_AbilityLoop_10350101_OnRemove;
 
 // PythonFunction PyAbility_103501.PyCue_AbilityLoop_10350101.OnTaskTick
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +45,7 @@ struct PyCue_AbilityLoop_10350101_OnTaskTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_AbilityLoop_10350101_OnTaskTick) == 0x000004, "Wrong alignment on PyCue_AbilityLoop_10350101_OnTaskTick");
-static_assert(sizeof(PyCue_AbilityLoop_10350101_OnTaskTick) == 0x000004, "Wrong size on PyCue_AbilityLoop_10350101_OnTaskTick");
-static_assert(offsetof(PyCue_AbilityLoop_10350101_OnTaskTick, DeltaTime) == 0x000000, "Member 'PyCue_AbilityLoop_10350101_OnTaskTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_AbilityLoop_10350101_OnTaskTick;
 
 }
 

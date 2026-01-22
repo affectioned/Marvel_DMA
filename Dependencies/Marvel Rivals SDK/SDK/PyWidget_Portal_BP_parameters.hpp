@@ -22,10 +22,7 @@ public:
 	class UTexture2D*                             Image_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Enable;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Portal_BP_SetIcon) == 0x000008, "Wrong alignment on PyWidget_Portal_BP_SetIcon");
-static_assert(sizeof(PyWidget_Portal_BP_SetIcon) == 0x000010, "Wrong size on PyWidget_Portal_BP_SetIcon");
-static_assert(offsetof(PyWidget_Portal_BP_SetIcon, Image_0) == 0x000000, "Member 'PyWidget_Portal_BP_SetIcon::Image_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Portal_BP_SetIcon, Enable) == 0x000008, "Member 'PyWidget_Portal_BP_SetIcon::Enable' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Portal_BP_SetIcon;
 
 }
 

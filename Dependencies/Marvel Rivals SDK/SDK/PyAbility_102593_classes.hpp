@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102593.PyAbility_102593
-// 0x0118 (0x2B08 - 0x29F0)
+// 0x0118 (0x2B58 - 0x2A40)
 class UPyAbility_102593 : public UMarvelGameplayAbility
 {
 public:
-	struct FGameplayTagRequirements               GameplayTagRequirementsToCancelThisAbility;        // 0x29F0(0x0118)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagRequirements               GameplayTagRequirementsToCancelThisAbility;        // 0x2A40(0x0118)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102593">();
+		STATIC_CLASS_IMPL("PyAbility_102593")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102593")
 	}
 	static class UPyAbility_102593* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102593>();
 	}
 };
-static_assert(alignof(UPyAbility_102593) == 0x000008, "Wrong alignment on UPyAbility_102593");
-static_assert(sizeof(UPyAbility_102593) == 0x002B08, "Wrong size on UPyAbility_102593");
-static_assert(offsetof(UPyAbility_102593, GameplayTagRequirementsToCancelThisAbility) == 0x0029F0, "Member 'UPyAbility_102593::GameplayTagRequirementsToCancelThisAbility' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102593;
 
 }
 

@@ -19,62 +19,62 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RoomPlayerV3.PyWidget_RoomPlayerV4
-// 0x09B0 (0x1270 - 0x08C0)
+// 0x09B0 (0x12D0 - 0x0920)
 class UPyWidget_RoomPlayerV4 : public UPyWidget_BaseCommonButton
 {
 public:
-	bool                                          IsEmpty;                                           // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsInvitating;                                      // 0x08B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAI;                                              // 0x08BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAttacker;                                        // 0x08BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLocalPlayer;                                     // 0x08BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOwner;                                           // 0x08BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelfOwner;                                       // 0x08BE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGame;                                            // 0x08BF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsExchg;                                           // 0x08C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLimitExchg;                                      // 0x08C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsClickExchg;                                      // 0x08C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsWaitExchg;                                       // 0x08C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsExchange;                                        // 0x08C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOnlyPlayer;                                      // 0x08C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HasInviting;                                       // 0x08C6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAiNeedShow;                                      // 0x08C7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UID;                                               // 0x08C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8CC[0x4];                                      // 0x08CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PlayerName;                                        // 0x08D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Level;                                             // 0x08E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Score;                                             // 0x08E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Pos;                                               // 0x08E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Camp;                                              // 0x08EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HeroID;                                            // 0x08F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AILevel;                                           // 0x08F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      AttackerColor;                                     // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      DefenderColor;                                     // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MouseCamp;                                         // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MousePos;                                          // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   AddFriendText;                                     // 0x0910(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   ViewCareerText;                                    // 0x0928(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   BlackListText;                                     // 0x0940(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   RemoveFromBlackListText;                           // 0x0958(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   RemovePlayer;                                      // 0x0970(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ShowScoreType;                                     // 0x0988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShowScoreNum;                                      // 0x098C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           EmptyButton;                                       // 0x0990(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           UnEmptyButton;                                     // 0x0D90(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LocalPlayerColor;                                  // 0x1190(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            OtherPlayerColor;                                  // 0x11A4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                MenuGuideTipsStyles;                               // 0x11B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                InviteGuideTipsStyles;                             // 0x11C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   EditAIText;                                        // 0x11D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DeletAIText;                                       // 0x11F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UPyDataAsset_Ping*                      PingInfoDataAsset;                                 // 0x1208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanCaptainIcon;                                   // 0x1210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanCoachIcon;                                     // 0x1218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnAIClicked;                              // 0x1220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnDeleteClicked;                          // 0x1230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnExchangeClicked;                        // 0x1240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnCancelExchangeClicked;                  // 0x1250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UUserWidget* Btn, bool IsClick)> OnOwnerExchangeClicked;     // 0x1260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsEmpty;                                           // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsInvitating;                                      // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAI;                                              // 0x091A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAttacker;                                        // 0x091B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLocalPlayer;                                     // 0x091C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOwner;                                           // 0x091D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelfOwner;                                       // 0x091E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGame;                                            // 0x091F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsExchg;                                           // 0x0920(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLimitExchg;                                      // 0x0921(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsClickExchg;                                      // 0x0922(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsWaitExchg;                                       // 0x0923(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsExchange;                                        // 0x0924(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOnlyPlayer;                                      // 0x0925(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HasInviting;                                       // 0x0926(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAiNeedShow;                                      // 0x0927(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UID;                                               // 0x0928(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_92C[0x4];                                      // 0x092C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PlayerName;                                        // 0x0930(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Level;                                             // 0x0940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Score;                                             // 0x0944(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Pos;                                               // 0x0948(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Camp;                                              // 0x094C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HeroID;                                            // 0x0950(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AILevel;                                           // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      AttackerColor;                                     // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      DefenderColor;                                     // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MouseCamp;                                         // 0x0968(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MousePos;                                          // 0x096C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   AddFriendText;                                     // 0x0970(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   ViewCareerText;                                    // 0x0988(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   BlackListText;                                     // 0x09A0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   RemoveFromBlackListText;                           // 0x09B8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   RemovePlayer;                                      // 0x09D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ShowScoreType;                                     // 0x09E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShowScoreNum;                                      // 0x09EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           EmptyButton;                                       // 0x09F0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           UnEmptyButton;                                     // 0x0DF0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LocalPlayerColor;                                  // 0x11F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            OtherPlayerColor;                                  // 0x1204(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MenuGuideTipsStyles;                               // 0x1218(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                InviteGuideTipsStyles;                             // 0x1228(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   EditAIText;                                        // 0x1238(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DeletAIText;                                       // 0x1250(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UPyDataAsset_Ping*                      PingInfoDataAsset;                                 // 0x1268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanCaptainIcon;                                   // 0x1270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanCoachIcon;                                     // 0x1278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnAIClicked;                              // 0x1280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnDeleteClicked;                          // 0x1290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnExchangeClicked;                        // 0x12A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* Btn)> OnCancelExchangeClicked;                  // 0x12B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UUserWidget* Btn, bool IsClick)> OnOwnerExchangeClicked;     // 0x12C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -102,69 +102,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomPlayerV4">();
+		STATIC_CLASS_IMPL("PyWidget_RoomPlayerV4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomPlayerV4")
 	}
 	static class UPyWidget_RoomPlayerV4* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RoomPlayerV4>();
 	}
 };
-static_assert(alignof(UPyWidget_RoomPlayerV4) == 0x000010, "Wrong alignment on UPyWidget_RoomPlayerV4");
-static_assert(sizeof(UPyWidget_RoomPlayerV4) == 0x001270, "Wrong size on UPyWidget_RoomPlayerV4");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsEmpty) == 0x0008B8, "Member 'UPyWidget_RoomPlayerV4::IsEmpty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsInvitating) == 0x0008B9, "Member 'UPyWidget_RoomPlayerV4::IsInvitating' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsAI) == 0x0008BA, "Member 'UPyWidget_RoomPlayerV4::IsAI' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsAttacker) == 0x0008BB, "Member 'UPyWidget_RoomPlayerV4::IsAttacker' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsLocalPlayer) == 0x0008BC, "Member 'UPyWidget_RoomPlayerV4::IsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsOwner) == 0x0008BD, "Member 'UPyWidget_RoomPlayerV4::IsOwner' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsSelfOwner) == 0x0008BE, "Member 'UPyWidget_RoomPlayerV4::IsSelfOwner' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsGame) == 0x0008BF, "Member 'UPyWidget_RoomPlayerV4::IsGame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsExchg) == 0x0008C0, "Member 'UPyWidget_RoomPlayerV4::IsExchg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsLimitExchg) == 0x0008C1, "Member 'UPyWidget_RoomPlayerV4::IsLimitExchg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsClickExchg) == 0x0008C2, "Member 'UPyWidget_RoomPlayerV4::IsClickExchg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsWaitExchg) == 0x0008C3, "Member 'UPyWidget_RoomPlayerV4::IsWaitExchg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsExchange) == 0x0008C4, "Member 'UPyWidget_RoomPlayerV4::IsExchange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsOnlyPlayer) == 0x0008C5, "Member 'UPyWidget_RoomPlayerV4::IsOnlyPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, HasInviting) == 0x0008C6, "Member 'UPyWidget_RoomPlayerV4::HasInviting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, IsAiNeedShow) == 0x0008C7, "Member 'UPyWidget_RoomPlayerV4::IsAiNeedShow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, UID) == 0x0008C8, "Member 'UPyWidget_RoomPlayerV4::UID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, PlayerName) == 0x0008D0, "Member 'UPyWidget_RoomPlayerV4::PlayerName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, Level) == 0x0008E0, "Member 'UPyWidget_RoomPlayerV4::Level' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, Score) == 0x0008E4, "Member 'UPyWidget_RoomPlayerV4::Score' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, Pos) == 0x0008E8, "Member 'UPyWidget_RoomPlayerV4::Pos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, Camp) == 0x0008EC, "Member 'UPyWidget_RoomPlayerV4::Camp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, HeroID) == 0x0008F0, "Member 'UPyWidget_RoomPlayerV4::HeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, AILevel) == 0x0008F4, "Member 'UPyWidget_RoomPlayerV4::AILevel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, AttackerColor) == 0x0008F8, "Member 'UPyWidget_RoomPlayerV4::AttackerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, DefenderColor) == 0x000900, "Member 'UPyWidget_RoomPlayerV4::DefenderColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, MouseCamp) == 0x000908, "Member 'UPyWidget_RoomPlayerV4::MouseCamp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, MousePos) == 0x00090C, "Member 'UPyWidget_RoomPlayerV4::MousePos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, AddFriendText) == 0x000910, "Member 'UPyWidget_RoomPlayerV4::AddFriendText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, ViewCareerText) == 0x000928, "Member 'UPyWidget_RoomPlayerV4::ViewCareerText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, BlackListText) == 0x000940, "Member 'UPyWidget_RoomPlayerV4::BlackListText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, RemoveFromBlackListText) == 0x000958, "Member 'UPyWidget_RoomPlayerV4::RemoveFromBlackListText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, RemovePlayer) == 0x000970, "Member 'UPyWidget_RoomPlayerV4::RemovePlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, ShowScoreType) == 0x000988, "Member 'UPyWidget_RoomPlayerV4::ShowScoreType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, ShowScoreNum) == 0x00098C, "Member 'UPyWidget_RoomPlayerV4::ShowScoreNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, EmptyButton) == 0x000990, "Member 'UPyWidget_RoomPlayerV4::EmptyButton' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, UnEmptyButton) == 0x000D90, "Member 'UPyWidget_RoomPlayerV4::UnEmptyButton' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, LocalPlayerColor) == 0x001190, "Member 'UPyWidget_RoomPlayerV4::LocalPlayerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OtherPlayerColor) == 0x0011A4, "Member 'UPyWidget_RoomPlayerV4::OtherPlayerColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, MenuGuideTipsStyles) == 0x0011B8, "Member 'UPyWidget_RoomPlayerV4::MenuGuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, InviteGuideTipsStyles) == 0x0011C8, "Member 'UPyWidget_RoomPlayerV4::InviteGuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, EditAIText) == 0x0011D8, "Member 'UPyWidget_RoomPlayerV4::EditAIText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, DeletAIText) == 0x0011F0, "Member 'UPyWidget_RoomPlayerV4::DeletAIText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, PingInfoDataAsset) == 0x001208, "Member 'UPyWidget_RoomPlayerV4::PingInfoDataAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, ClanCaptainIcon) == 0x001210, "Member 'UPyWidget_RoomPlayerV4::ClanCaptainIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, ClanCoachIcon) == 0x001218, "Member 'UPyWidget_RoomPlayerV4::ClanCoachIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OnAIClicked) == 0x001220, "Member 'UPyWidget_RoomPlayerV4::OnAIClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OnDeleteClicked) == 0x001230, "Member 'UPyWidget_RoomPlayerV4::OnDeleteClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OnExchangeClicked) == 0x001240, "Member 'UPyWidget_RoomPlayerV4::OnExchangeClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OnCancelExchangeClicked) == 0x001250, "Member 'UPyWidget_RoomPlayerV4::OnCancelExchangeClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RoomPlayerV4, OnOwnerExchangeClicked) == 0x001260, "Member 'UPyWidget_RoomPlayerV4::OnOwnerExchangeClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RoomPlayerV4;
 
 // PythonClass PyWidget_RoomPlayerV3.PyWidget_RoomSpectatorPlayerV4
-// 0x0000 (0x1270 - 0x1270)
+// 0x0000 (0x12D0 - 0x12D0)
 class UPyWidget_RoomSpectatorPlayerV4 final : public UPyWidget_RoomPlayerV4
 {
 public:
@@ -181,15 +133,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RoomSpectatorPlayerV4">();
+		STATIC_CLASS_IMPL("PyWidget_RoomSpectatorPlayerV4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RoomSpectatorPlayerV4")
 	}
 	static class UPyWidget_RoomSpectatorPlayerV4* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RoomSpectatorPlayerV4>();
 	}
 };
-static_assert(alignof(UPyWidget_RoomSpectatorPlayerV4) == 0x000010, "Wrong alignment on UPyWidget_RoomSpectatorPlayerV4");
-static_assert(sizeof(UPyWidget_RoomSpectatorPlayerV4) == 0x001270, "Wrong size on UPyWidget_RoomSpectatorPlayerV4");
+DUMPER7_ASSERTS_UPyWidget_RoomSpectatorPlayerV4;
 
 }
 

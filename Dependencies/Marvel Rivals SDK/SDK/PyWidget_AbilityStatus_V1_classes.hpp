@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AbilityStatus_V1.PyWidget_AbilityStatusPanel_V1
-// 0x0000 (0x0460 - 0x0460)
+// 0x0000 (0x0468 - 0x0468)
 class UPyWidget_AbilityStatusPanel_V1 : public UWidget_AbilityStatusPanel
 {
 public:
@@ -44,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityStatusPanel_V1">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityStatusPanel_V1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityStatusPanel_V1")
 	}
 	static class UPyWidget_AbilityStatusPanel_V1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityStatusPanel_V1>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityStatusPanel_V1) == 0x000008, "Wrong alignment on UPyWidget_AbilityStatusPanel_V1");
-static_assert(sizeof(UPyWidget_AbilityStatusPanel_V1) == 0x000460, "Wrong size on UPyWidget_AbilityStatusPanel_V1");
+DUMPER7_ASSERTS_UPyWidget_AbilityStatusPanel_V1;
 
 }
 

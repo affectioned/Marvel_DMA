@@ -23,9 +23,7 @@ struct ChromaEffectManager_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnAbilityActivate) == 0x000004, "Wrong alignment on ChromaEffectManager_OnAbilityActivate");
-static_assert(sizeof(ChromaEffectManager_OnAbilityActivate) == 0x000004, "Wrong size on ChromaEffectManager_OnAbilityActivate");
-static_assert(offsetof(ChromaEffectManager_OnAbilityActivate, AbilityID) == 0x000000, "Member 'ChromaEffectManager_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnAbilityActivate;
 
 // Function MarvelChromaEffect.ChromaEffectManager.OnAbilityEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct ChromaEffectManager_OnAbilityEnd final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnAbilityEnd) == 0x000004, "Wrong alignment on ChromaEffectManager_OnAbilityEnd");
-static_assert(sizeof(ChromaEffectManager_OnAbilityEnd) == 0x000004, "Wrong size on ChromaEffectManager_OnAbilityEnd");
-static_assert(offsetof(ChromaEffectManager_OnAbilityEnd, AbilityID) == 0x000000, "Member 'ChromaEffectManager_OnAbilityEnd::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnAbilityEnd;
 
 // Function MarvelChromaEffect.ChromaEffectManager.OnAbilityMissile
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct ChromaEffectManager_OnAbilityMissile final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnAbilityMissile) == 0x000008, "Wrong alignment on ChromaEffectManager_OnAbilityMissile");
-static_assert(sizeof(ChromaEffectManager_OnAbilityMissile) == 0x000008, "Wrong size on ChromaEffectManager_OnAbilityMissile");
-static_assert(offsetof(ChromaEffectManager_OnAbilityMissile, Ability) == 0x000000, "Member 'ChromaEffectManager_OnAbilityMissile::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnAbilityMissile;
 
 // Function MarvelChromaEffect.ChromaEffectManager.OnCharacterDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -58,25 +52,18 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnCharacterDeath) == 0x000008, "Wrong alignment on ChromaEffectManager_OnCharacterDeath");
-static_assert(sizeof(ChromaEffectManager_OnCharacterDeath) == 0x000028, "Wrong size on ChromaEffectManager_OnCharacterDeath");
-static_assert(offsetof(ChromaEffectManager_OnCharacterDeath, InSourceAvatar) == 0x000000, "Member 'ChromaEffectManager_OnCharacterDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(ChromaEffectManager_OnCharacterDeath, InTargetAvatar) == 0x000008, "Member 'ChromaEffectManager_OnCharacterDeath::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(ChromaEffectManager_OnCharacterDeath, ModifierParameterHandle) == 0x000010, "Member 'ChromaEffectManager_OnCharacterDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnCharacterDeath;
 
 // Function MarvelChromaEffect.ChromaEffectManager.OnCharacterReborn
-// 0x0820 (0x0820 - 0x0000)
+// 0x0840 (0x0840 - 0x0000)
 struct ChromaEffectManager_OnCharacterReborn final
 {
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0810)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0830)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnCharacterReborn) == 0x000010, "Wrong alignment on ChromaEffectManager_OnCharacterReborn");
-static_assert(sizeof(ChromaEffectManager_OnCharacterReborn) == 0x000820, "Wrong size on ChromaEffectManager_OnCharacterReborn");
-static_assert(offsetof(ChromaEffectManager_OnCharacterReborn, TargetActor) == 0x000000, "Member 'ChromaEffectManager_OnCharacterReborn::TargetActor' has a wrong offset!");
-static_assert(offsetof(ChromaEffectManager_OnCharacterReborn, Param) == 0x000010, "Member 'ChromaEffectManager_OnCharacterReborn::Param' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnCharacterReborn;
 
 // Function MarvelChromaEffect.ChromaEffectManager.OnPossesPawnChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -86,10 +73,7 @@ public:
 	class APawn*                                  OldPawn;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  NewPawn;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ChromaEffectManager_OnPossesPawnChanged) == 0x000008, "Wrong alignment on ChromaEffectManager_OnPossesPawnChanged");
-static_assert(sizeof(ChromaEffectManager_OnPossesPawnChanged) == 0x000010, "Wrong size on ChromaEffectManager_OnPossesPawnChanged");
-static_assert(offsetof(ChromaEffectManager_OnPossesPawnChanged, OldPawn) == 0x000000, "Member 'ChromaEffectManager_OnPossesPawnChanged::OldPawn' has a wrong offset!");
-static_assert(offsetof(ChromaEffectManager_OnPossesPawnChanged, NewPawn) == 0x000008, "Member 'ChromaEffectManager_OnPossesPawnChanged::NewPawn' has a wrong offset!");
+DUMPER7_ASSERTS_ChromaEffectManager_OnPossesPawnChanged;
 
 }
 

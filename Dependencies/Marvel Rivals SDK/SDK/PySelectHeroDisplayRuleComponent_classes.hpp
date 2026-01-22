@@ -45,32 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySelectHeroDisplayConfig">();
+		STATIC_CLASS_IMPL("PySelectHeroDisplayConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySelectHeroDisplayConfig")
 	}
 	static class UPySelectHeroDisplayConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySelectHeroDisplayConfig>();
 	}
 };
-static_assert(alignof(UPySelectHeroDisplayConfig) == 0x000008, "Wrong alignment on UPySelectHeroDisplayConfig");
-static_assert(sizeof(UPySelectHeroDisplayConfig) == 0x0000C0, "Wrong size on UPySelectHeroDisplayConfig");
-static_assert(offsetof(UPySelectHeroDisplayConfig, OverrideSkinDownListDisplayRule) == 0x000030, "Member 'UPySelectHeroDisplayConfig::OverrideSkinDownListDisplayRule' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowSkinDownList) == 0x000031, "Member 'UPySelectHeroDisplayConfig::ShowSkinDownList' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowHeroInfo) == 0x000032, "Member 'UPySelectHeroDisplayConfig::ShowHeroInfo' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowSelectHeroCorona) == 0x000033, "Member 'UPySelectHeroDisplayConfig::ShowSelectHeroCorona' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowSelectHeroBond) == 0x000034, "Member 'UPySelectHeroDisplayConfig::ShowSelectHeroBond' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, EnableSelectHeroBondRequest) == 0x000035, "Member 'UPySelectHeroDisplayConfig::EnableSelectHeroBondRequest' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, NeedRequestDuty) == 0x000036, "Member 'UPySelectHeroDisplayConfig::NeedRequestDuty' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowLackHeroTips) == 0x000037, "Member 'UPySelectHeroDisplayConfig::ShowLackHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowHeroFilter) == 0x000038, "Member 'UPySelectHeroDisplayConfig::ShowHeroFilter' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowHeroPreferred) == 0x000039, "Member 'UPySelectHeroDisplayConfig::ShowHeroPreferred' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowNoDutyAndSingleLine) == 0x00003A, "Member 'UPySelectHeroDisplayConfig::ShowNoDutyAndSingleLine' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowSelectHeroGameTime) == 0x00003B, "Member 'UPySelectHeroDisplayConfig::ShowSelectHeroGameTime' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ShowSelectHeroTips) == 0x00003C, "Member 'UPySelectHeroDisplayConfig::ShowSelectHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, SelectHeroTipsOverride) == 0x000040, "Member 'UPySelectHeroDisplayConfig::SelectHeroTipsOverride' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, MaxSelectHeroPlayersLimit) == 0x000058, "Member 'UPySelectHeroDisplayConfig::MaxSelectHeroPlayersLimit' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, PreviewHeroTips) == 0x000060, "Member 'UPySelectHeroDisplayConfig::PreviewHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayConfig, ForceShowStandHeroList) == 0x0000B0, "Member 'UPySelectHeroDisplayConfig::ForceShowStandHeroList' has a wrong offset!");
+DUMPER7_ASSERTS_UPySelectHeroDisplayConfig;
 
 // PythonClass PySelectHeroDisplayRuleComponent.PySelectHeroDisplayRuleComponent
 // 0x0090 (0x0198 - 0x0108)
@@ -100,32 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySelectHeroDisplayRuleComponent">();
+		STATIC_CLASS_IMPL("PySelectHeroDisplayRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySelectHeroDisplayRuleComponent")
 	}
 	static class UPySelectHeroDisplayRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySelectHeroDisplayRuleComponent>();
 	}
 };
-static_assert(alignof(UPySelectHeroDisplayRuleComponent) == 0x000008, "Wrong alignment on UPySelectHeroDisplayRuleComponent");
-static_assert(sizeof(UPySelectHeroDisplayRuleComponent) == 0x000198, "Wrong size on UPySelectHeroDisplayRuleComponent");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, OverrideSkinDownListDisplayRule) == 0x000108, "Member 'UPySelectHeroDisplayRuleComponent::OverrideSkinDownListDisplayRule' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowSkinDownList) == 0x000109, "Member 'UPySelectHeroDisplayRuleComponent::ShowSkinDownList' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowHeroInfo) == 0x00010A, "Member 'UPySelectHeroDisplayRuleComponent::ShowHeroInfo' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowSelectHeroCorona) == 0x00010B, "Member 'UPySelectHeroDisplayRuleComponent::ShowSelectHeroCorona' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowSelectHeroBond) == 0x00010C, "Member 'UPySelectHeroDisplayRuleComponent::ShowSelectHeroBond' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, EnableSelectHeroBondRequest) == 0x00010D, "Member 'UPySelectHeroDisplayRuleComponent::EnableSelectHeroBondRequest' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, NeedRequestDuty) == 0x00010E, "Member 'UPySelectHeroDisplayRuleComponent::NeedRequestDuty' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowLackHeroTips) == 0x00010F, "Member 'UPySelectHeroDisplayRuleComponent::ShowLackHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowHeroFilter) == 0x000110, "Member 'UPySelectHeroDisplayRuleComponent::ShowHeroFilter' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowHeroPreferred) == 0x000111, "Member 'UPySelectHeroDisplayRuleComponent::ShowHeroPreferred' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowNoDutyAndSingleLine) == 0x000112, "Member 'UPySelectHeroDisplayRuleComponent::ShowNoDutyAndSingleLine' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowSelectHeroGameTime) == 0x000113, "Member 'UPySelectHeroDisplayRuleComponent::ShowSelectHeroGameTime' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ShowSelectHeroTips) == 0x000114, "Member 'UPySelectHeroDisplayRuleComponent::ShowSelectHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, SelectHeroTipsOverride) == 0x000118, "Member 'UPySelectHeroDisplayRuleComponent::SelectHeroTipsOverride' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, MaxSelectHeroPlayersLimit) == 0x000130, "Member 'UPySelectHeroDisplayRuleComponent::MaxSelectHeroPlayersLimit' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, PreviewHeroTips) == 0x000138, "Member 'UPySelectHeroDisplayRuleComponent::PreviewHeroTips' has a wrong offset!");
-static_assert(offsetof(UPySelectHeroDisplayRuleComponent, ForceShowStandHeroList) == 0x000188, "Member 'UPySelectHeroDisplayRuleComponent::ForceShowStandHeroList' has a wrong offset!");
+DUMPER7_ASSERTS_UPySelectHeroDisplayRuleComponent;
 
 }
 

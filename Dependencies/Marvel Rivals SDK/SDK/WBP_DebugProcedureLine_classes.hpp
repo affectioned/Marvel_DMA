@@ -45,25 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugProcedureLine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugProcedureLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugProcedureLine_C")
 	}
 	static class UWBP_DebugProcedureLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugProcedureLine_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugProcedureLine_C) == 0x000008, "Wrong alignment on UWBP_DebugProcedureLine_C");
-static_assert(sizeof(UWBP_DebugProcedureLine_C) == 0x000430, "Wrong size on UWBP_DebugProcedureLine_C");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_DebugProcedureLine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, PostAnim) == 0x0003C0, "Member 'UWBP_DebugProcedureLine_C::PostAnim' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, ActiveName) == 0x0003C8, "Member 'UWBP_DebugProcedureLine_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, UnitMargin) == 0x0003D0, "Member 'UWBP_DebugProcedureLine_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, EventName) == 0x0003E0, "Member 'UWBP_DebugProcedureLine_C::EventName' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, AkEvent) == 0x0003F0, "Member 'UWBP_DebugProcedureLine_C::AkEvent' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, PostedColor) == 0x0003F8, "Member 'UWBP_DebugProcedureLine_C::PostedColor' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, Listener) == 0x000410, "Member 'UWBP_DebugProcedureLine_C::Listener' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, Valid) == 0x000418, "Member 'UWBP_DebugProcedureLine_C::Valid' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureLine_C, DefaultColor) == 0x00041C, "Member 'UWBP_DebugProcedureLine_C::DefaultColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugProcedureLine_C;
 
 }
 

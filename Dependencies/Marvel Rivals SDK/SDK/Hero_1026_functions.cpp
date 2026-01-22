@@ -350,7 +350,7 @@ void UAbility_102641::MyEndAbility()
 // (Final, Native, Public, HasOutParams)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UAbility_102641::OnAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)

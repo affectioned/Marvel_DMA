@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWinterSoldierCharacter.PyWinterSoldierCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyWinterSoldierCharacter : public AWinterSoldierCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWinterSoldierCharacter">();
+		STATIC_CLASS_IMPL("PyWinterSoldierCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWinterSoldierCharacter")
 	}
 	static class APyWinterSoldierCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWinterSoldierCharacter>();
 	}
 };
-static_assert(alignof(APyWinterSoldierCharacter) == 0x000010, "Wrong alignment on APyWinterSoldierCharacter");
-static_assert(sizeof(APyWinterSoldierCharacter) == 0x0021B0, "Wrong size on APyWinterSoldierCharacter");
+DUMPER7_ASSERTS_APyWinterSoldierCharacter;
 
 }
 

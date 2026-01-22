@@ -27,12 +27,7 @@ public:
 	TArray<struct FGraphicSettingStatusEntry>     Status_3_0A2A0FF941052EF4BF7082823C5AF546;         // 0x0018(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
 	class FString                                 Note_8_DE331B1F40953543AA39EC9A370AB8C8;           // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGraphicSettingStatus) == 0x000008, "Wrong alignment on FGraphicSettingStatus");
-static_assert(sizeof(FGraphicSettingStatus) == 0x000038, "Wrong size on FGraphicSettingStatus");
-static_assert(offsetof(FGraphicSettingStatus, OnModeChanged_11_DF19D87548B711227DBBF5B39847AB19) == 0x000000, "Member 'FGraphicSettingStatus::OnModeChanged_11_DF19D87548B711227DBBF5B39847AB19' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingStatus, ModeIDs_15_4247F11B46B50D37F3F03C82996A39E5) == 0x000008, "Member 'FGraphicSettingStatus::ModeIDs_15_4247F11B46B50D37F3F03C82996A39E5' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingStatus, Status_3_0A2A0FF941052EF4BF7082823C5AF546) == 0x000018, "Member 'FGraphicSettingStatus::Status_3_0A2A0FF941052EF4BF7082823C5AF546' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingStatus, Note_8_DE331B1F40953543AA39EC9A370AB8C8) == 0x000028, "Member 'FGraphicSettingStatus::Note_8_DE331B1F40953543AA39EC9A370AB8C8' has a wrong offset!");
+DUMPER7_ASSERTS_FGraphicSettingStatus;
 
 }
 

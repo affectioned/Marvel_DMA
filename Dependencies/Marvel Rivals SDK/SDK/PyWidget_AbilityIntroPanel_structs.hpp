@@ -16,6 +16,16 @@
 namespace SDK
 {
 
+// PythonEnum PyWidget_AbilityIntroPanel.EAbilityIntroRichTableType
+// NumValues: 0x0004
+enum class EAbilityIntroRichTableType : uint8
+{
+	Unknown                                  = 0,
+	Normal                                   = 1,
+	Small                                    = 2,
+	EAbilityIntroRichTableType_MAX           = 3,
+};
+
 // PythonStruct PyWidget_AbilityIntroPanel.SkillListUnitStyleConfig
 // 0x0020 (0x0020 - 0x0000)
 struct FSkillListUnitStyleConfig final
@@ -24,10 +34,7 @@ public:
 	struct FLinearColor                           NormalColor;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           SelectColor;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSkillListUnitStyleConfig) == 0x000004, "Wrong alignment on FSkillListUnitStyleConfig");
-static_assert(sizeof(FSkillListUnitStyleConfig) == 0x000020, "Wrong size on FSkillListUnitStyleConfig");
-static_assert(offsetof(FSkillListUnitStyleConfig, NormalColor) == 0x000000, "Member 'FSkillListUnitStyleConfig::NormalColor' has a wrong offset!");
-static_assert(offsetof(FSkillListUnitStyleConfig, SelectColor) == 0x000010, "Member 'FSkillListUnitStyleConfig::SelectColor' has a wrong offset!");
+DUMPER7_ASSERTS_FSkillListUnitStyleConfig;
 
 }
 

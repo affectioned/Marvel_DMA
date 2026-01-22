@@ -24,18 +24,21 @@ class UPyWidget_CareerCustomizeDataPopupItem_Data final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeDataPopupItem_Data">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeDataPopupItem_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeDataPopupItem_Data")
 	}
 	static class UPyWidget_CareerCustomizeDataPopupItem_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeDataPopupItem_Data>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeDataPopupItem_Data) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeDataPopupItem_Data");
-static_assert(sizeof(UPyWidget_CareerCustomizeDataPopupItem_Data) == 0x000030, "Wrong size on UPyWidget_CareerCustomizeDataPopupItem_Data");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeDataPopupItem_Data;
 
 // PythonClass PyWidget_CareerCustomizeDataPopupItem.PyWidget_CareerCustomizeDataPopupItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_CareerCustomizeDataPopupItem final : public UPyWidget_Button
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeDataPopupItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeDataPopupItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeDataPopupItem")
 	}
 	static class UPyWidget_CareerCustomizeDataPopupItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeDataPopupItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeDataPopupItem) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeDataPopupItem");
-static_assert(sizeof(UPyWidget_CareerCustomizeDataPopupItem) == 0x000728, "Wrong size on UPyWidget_CareerCustomizeDataPopupItem");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeDataPopupItem;
 
 }
 

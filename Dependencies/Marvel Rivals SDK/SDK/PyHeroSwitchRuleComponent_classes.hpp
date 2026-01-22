@@ -48,29 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroSwitchConfig">();
+		STATIC_CLASS_IMPL("PyHeroSwitchConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroSwitchConfig")
 	}
 	static class UPyHeroSwitchConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroSwitchConfig>();
 	}
 };
-static_assert(alignof(UPyHeroSwitchConfig) == 0x000008, "Wrong alignment on UPyHeroSwitchConfig");
-static_assert(sizeof(UPyHeroSwitchConfig) == 0x0000D8, "Wrong size on UPyHeroSwitchConfig");
-static_assert(offsetof(UPyHeroSwitchConfig, SwitchType) == 0x000030, "Member 'UPyHeroSwitchConfig::SwitchType' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, CanChangeHero) == 0x000031, "Member 'UPyHeroSwitchConfig::CanChangeHero' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, RepeatLimit) == 0x000034, "Member 'UPyHeroSwitchConfig::RepeatLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, TankHeroLimit) == 0x000038, "Member 'UPyHeroSwitchConfig::TankHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, DamageHeroLimit) == 0x00003C, "Member 'UPyHeroSwitchConfig::DamageHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, SupportHeroLimit) == 0x000040, "Member 'UPyHeroSwitchConfig::SupportHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, AllowRechooseRole) == 0x000044, "Member 'UPyHeroSwitchConfig::AllowRechooseRole' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, FixedInitialHero) == 0x000048, "Member 'UPyHeroSwitchConfig::FixedInitialHero' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, bWhitelist) == 0x00004C, "Member 'UPyHeroSwitchConfig::bWhitelist' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, HeroValidList) == 0x000050, "Member 'UPyHeroSwitchConfig::HeroValidList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, bBlacklist) == 0x000060, "Member 'UPyHeroSwitchConfig::bBlacklist' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, HeroLimitList) == 0x000068, "Member 'UPyHeroSwitchConfig::HeroLimitList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, SelectHeroValidList) == 0x000078, "Member 'UPyHeroSwitchConfig::SelectHeroValidList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchConfig, HeroSkinLimit) == 0x000088, "Member 'UPyHeroSwitchConfig::HeroSkinLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroSwitchConfig;
 
 // PythonClass PyHeroSwitchRuleComponent.PyHeroSwitchRuleComponent
 // 0x00A0 (0x01A8 - 0x0108)
@@ -105,27 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroSwitchRuleComponent">();
+		STATIC_CLASS_IMPL("PyHeroSwitchRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroSwitchRuleComponent")
 	}
 	static class UPyHeroSwitchRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroSwitchRuleComponent>();
 	}
 };
-static_assert(alignof(UPyHeroSwitchRuleComponent) == 0x000008, "Wrong alignment on UPyHeroSwitchRuleComponent");
-static_assert(sizeof(UPyHeroSwitchRuleComponent) == 0x0001A8, "Wrong size on UPyHeroSwitchRuleComponent");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, CanChangeHero) == 0x000108, "Member 'UPyHeroSwitchRuleComponent::CanChangeHero' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, SwitchType) == 0x000109, "Member 'UPyHeroSwitchRuleComponent::SwitchType' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, FixedInitialHero) == 0x00010C, "Member 'UPyHeroSwitchRuleComponent::FixedInitialHero' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, HeroValidList) == 0x000110, "Member 'UPyHeroSwitchRuleComponent::HeroValidList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, HeroLimitList) == 0x000120, "Member 'UPyHeroSwitchRuleComponent::HeroLimitList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, SelectHeroValidList) == 0x000130, "Member 'UPyHeroSwitchRuleComponent::SelectHeroValidList' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, RepeatLimit) == 0x000140, "Member 'UPyHeroSwitchRuleComponent::RepeatLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, TankHeroLimit) == 0x000144, "Member 'UPyHeroSwitchRuleComponent::TankHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, DamageHeroLimit) == 0x000148, "Member 'UPyHeroSwitchRuleComponent::DamageHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, SupportHeroLimit) == 0x00014C, "Member 'UPyHeroSwitchRuleComponent::SupportHeroLimit' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, AllowRechooseRole) == 0x000150, "Member 'UPyHeroSwitchRuleComponent::AllowRechooseRole' has a wrong offset!");
-static_assert(offsetof(UPyHeroSwitchRuleComponent, HeroSkinLimit) == 0x000158, "Member 'UPyHeroSwitchRuleComponent::HeroSkinLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroSwitchRuleComponent;
 
 }
 

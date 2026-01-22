@@ -23,15 +23,18 @@ class UAISelectTarget_10119701_C final : public UAISelectTarget_BuffedCharacter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_10119701_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_10119701_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_10119701_C")
 	}
 	static class UAISelectTarget_10119701_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_10119701_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_10119701_C) == 0x000008, "Wrong alignment on UAISelectTarget_10119701_C");
-static_assert(sizeof(UAISelectTarget_10119701_C) == 0x000118, "Wrong size on UAISelectTarget_10119701_C");
+DUMPER7_ASSERTS_UAISelectTarget_10119701_C;
 
 }
 

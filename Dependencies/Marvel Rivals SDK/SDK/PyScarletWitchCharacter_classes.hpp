@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyScarletWitchCharacter.PyScarletWitchCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyScarletWitchCharacter : public AScarletWitchCharacter
 {
 public:
@@ -29,24 +29,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScarletWitchCharacter">();
+		STATIC_CLASS_IMPL("PyScarletWitchCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScarletWitchCharacter")
 	}
 	static class APyScarletWitchCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScarletWitchCharacter>();
 	}
 };
-static_assert(alignof(APyScarletWitchCharacter) == 0x000010, "Wrong alignment on APyScarletWitchCharacter");
-static_assert(sizeof(APyScarletWitchCharacter) == 0x0021B0, "Wrong size on APyScarletWitchCharacter");
+DUMPER7_ASSERTS_APyScarletWitchCharacter;
 
 // PythonClass PyScarletWitchCharacter.PyScarletWitchChildActor
-// 0x0020 (0x1130 - 0x1110)
+// 0x0020 (0x1140 - 0x1120)
 class APyScarletWitchChildActor final : public AScarletWitchChildActor
 {
 public:
-	float                                         ReticleOpacityWhenForbidAttack;                    // 0x1110(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1114[0x4];                                     // 0x1114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGameplayTag>                   FadeAbilityTags;                                   // 0x1118(0x0010)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         ReticleOpacityWhenForbidAttack;                    // 0x1120(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1124[0x4];                                     // 0x1124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGameplayTag>                   FadeAbilityTags;                                   // 0x1128(0x0010)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnGenericGameplayTagUpdate(const struct FGameplayTag& InTag, int32 Count);
@@ -54,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScarletWitchChildActor">();
+		STATIC_CLASS_IMPL("PyScarletWitchChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScarletWitchChildActor")
 	}
 	static class APyScarletWitchChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScarletWitchChildActor>();
 	}
 };
-static_assert(alignof(APyScarletWitchChildActor) == 0x000010, "Wrong alignment on APyScarletWitchChildActor");
-static_assert(sizeof(APyScarletWitchChildActor) == 0x001130, "Wrong size on APyScarletWitchChildActor");
-static_assert(offsetof(APyScarletWitchChildActor, ReticleOpacityWhenForbidAttack) == 0x001110, "Member 'APyScarletWitchChildActor::ReticleOpacityWhenForbidAttack' has a wrong offset!");
-static_assert(offsetof(APyScarletWitchChildActor, FadeAbilityTags) == 0x001118, "Member 'APyScarletWitchChildActor::FadeAbilityTags' has a wrong offset!");
+DUMPER7_ASSERTS_APyScarletWitchChildActor;
 
 }
 

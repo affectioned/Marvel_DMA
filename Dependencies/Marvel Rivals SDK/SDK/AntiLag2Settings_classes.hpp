@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AntiLag2Settings">();
+		STATIC_CLASS_IMPL("AntiLag2Settings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AntiLag2Settings")
 	}
 	static class UAntiLag2Settings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAntiLag2Settings>();
 	}
 };
-static_assert(alignof(UAntiLag2Settings) == 0x000008, "Wrong alignment on UAntiLag2Settings");
-static_assert(sizeof(UAntiLag2Settings) == 0x000050, "Wrong size on UAntiLag2Settings");
-static_assert(offsetof(UAntiLag2Settings, bEnabled) == 0x000048, "Member 'UAntiLag2Settings::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UAntiLag2Settings;
 
 }
 

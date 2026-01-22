@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelVariantSets">();
+		STATIC_CLASS_IMPL("LevelVariantSets")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelVariantSets")
 	}
 	static class ULevelVariantSets* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelVariantSets>();
 	}
 };
-static_assert(alignof(ULevelVariantSets) == 0x000008, "Wrong alignment on ULevelVariantSets");
-static_assert(sizeof(ULevelVariantSets) == 0x000098, "Wrong size on ULevelVariantSets");
-static_assert(offsetof(ULevelVariantSets, DirectorClass) == 0x000030, "Member 'ULevelVariantSets::DirectorClass' has a wrong offset!");
-static_assert(offsetof(ULevelVariantSets, VariantSets) == 0x000038, "Member 'ULevelVariantSets::VariantSets' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelVariantSets;
 
 // Class VariantManagerContent.LevelVariantSetsActor
 // 0x0070 (0x0750 - 0x06E0)
@@ -65,17 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelVariantSetsActor">();
+		STATIC_CLASS_IMPL("LevelVariantSetsActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelVariantSetsActor")
 	}
 	static class ALevelVariantSetsActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelVariantSetsActor>();
 	}
 };
-static_assert(alignof(ALevelVariantSetsActor) == 0x000010, "Wrong alignment on ALevelVariantSetsActor");
-static_assert(sizeof(ALevelVariantSetsActor) == 0x000750, "Wrong size on ALevelVariantSetsActor");
-static_assert(offsetof(ALevelVariantSetsActor, LevelVariantSets) == 0x0006D8, "Member 'ALevelVariantSetsActor::LevelVariantSets' has a wrong offset!");
-static_assert(offsetof(ALevelVariantSetsActor, DirectorInstances) == 0x000700, "Member 'ALevelVariantSetsActor::DirectorInstances' has a wrong offset!");
+DUMPER7_ASSERTS_ALevelVariantSetsActor;
 
 // Class VariantManagerContent.LevelVariantSetsFunctionDirector
 // 0x0018 (0x0048 - 0x0030)
@@ -87,15 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelVariantSetsFunctionDirector">();
+		STATIC_CLASS_IMPL("LevelVariantSetsFunctionDirector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelVariantSetsFunctionDirector")
 	}
 	static class ULevelVariantSetsFunctionDirector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelVariantSetsFunctionDirector>();
 	}
 };
-static_assert(alignof(ULevelVariantSetsFunctionDirector) == 0x000008, "Wrong alignment on ULevelVariantSetsFunctionDirector");
-static_assert(sizeof(ULevelVariantSetsFunctionDirector) == 0x000048, "Wrong size on ULevelVariantSetsFunctionDirector");
+DUMPER7_ASSERTS_ULevelVariantSetsFunctionDirector;
 
 // Class VariantManagerContent.PropertyValue
 // 0x01A8 (0x01D8 - 0x0030)
@@ -126,25 +131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValue">();
+		STATIC_CLASS_IMPL("PropertyValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValue")
 	}
 	static class UPropertyValue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValue>();
 	}
 };
-static_assert(alignof(UPropertyValue) == 0x000008, "Wrong alignment on UPropertyValue");
-static_assert(sizeof(UPropertyValue) == 0x0001D8, "Wrong size on UPropertyValue");
-static_assert(offsetof(UPropertyValue, Properties) == 0x000090, "Member 'UPropertyValue::Properties' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, PropertyIndices) == 0x0000A0, "Member 'UPropertyValue::PropertyIndices' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, CapturedPropSegments) == 0x0000B0, "Member 'UPropertyValue::CapturedPropSegments' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, FullDisplayString) == 0x0000C0, "Member 'UPropertyValue::FullDisplayString' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, PropertySetterName) == 0x0000D0, "Member 'UPropertyValue::PropertySetterName' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, PropertySetterParameterDefaults) == 0x0000E0, "Member 'UPropertyValue::PropertySetterParameterDefaults' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, bHasRecordedData) == 0x000130, "Member 'UPropertyValue::bHasRecordedData' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, LeafPropertyClass) == 0x000138, "Member 'UPropertyValue::LeafPropertyClass' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, ValueBytes) == 0x000148, "Member 'UPropertyValue::ValueBytes' has a wrong offset!");
-static_assert(offsetof(UPropertyValue, PropCategory) == 0x000158, "Member 'UPropertyValue::PropCategory' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyValue;
 
 // Class VariantManagerContent.PropertyValueTransform
 // 0x0000 (0x01D8 - 0x01D8)
@@ -153,15 +151,18 @@ class UPropertyValueTransform final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueTransform">();
+		STATIC_CLASS_IMPL("PropertyValueTransform")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueTransform")
 	}
 	static class UPropertyValueTransform* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueTransform>();
 	}
 };
-static_assert(alignof(UPropertyValueTransform) == 0x000008, "Wrong alignment on UPropertyValueTransform");
-static_assert(sizeof(UPropertyValueTransform) == 0x0001D8, "Wrong size on UPropertyValueTransform");
+DUMPER7_ASSERTS_UPropertyValueTransform;
 
 // Class VariantManagerContent.PropertyValueVisibility
 // 0x0000 (0x01D8 - 0x01D8)
@@ -170,15 +171,18 @@ class UPropertyValueVisibility final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueVisibility">();
+		STATIC_CLASS_IMPL("PropertyValueVisibility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueVisibility")
 	}
 	static class UPropertyValueVisibility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueVisibility>();
 	}
 };
-static_assert(alignof(UPropertyValueVisibility) == 0x000008, "Wrong alignment on UPropertyValueVisibility");
-static_assert(sizeof(UPropertyValueVisibility) == 0x0001D8, "Wrong size on UPropertyValueVisibility");
+DUMPER7_ASSERTS_UPropertyValueVisibility;
 
 // Class VariantManagerContent.PropertyValueColor
 // 0x0000 (0x01D8 - 0x01D8)
@@ -187,15 +191,18 @@ class UPropertyValueColor final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueColor">();
+		STATIC_CLASS_IMPL("PropertyValueColor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueColor")
 	}
 	static class UPropertyValueColor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueColor>();
 	}
 };
-static_assert(alignof(UPropertyValueColor) == 0x000008, "Wrong alignment on UPropertyValueColor");
-static_assert(sizeof(UPropertyValueColor) == 0x0001D8, "Wrong size on UPropertyValueColor");
+DUMPER7_ASSERTS_UPropertyValueColor;
 
 // Class VariantManagerContent.PropertyValueMaterial
 // 0x0000 (0x01D8 - 0x01D8)
@@ -204,15 +211,18 @@ class UPropertyValueMaterial final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueMaterial">();
+		STATIC_CLASS_IMPL("PropertyValueMaterial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueMaterial")
 	}
 	static class UPropertyValueMaterial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueMaterial>();
 	}
 };
-static_assert(alignof(UPropertyValueMaterial) == 0x000008, "Wrong alignment on UPropertyValueMaterial");
-static_assert(sizeof(UPropertyValueMaterial) == 0x0001D8, "Wrong size on UPropertyValueMaterial");
+DUMPER7_ASSERTS_UPropertyValueMaterial;
 
 // Class VariantManagerContent.PropertyValueOption
 // 0x0000 (0x01D8 - 0x01D8)
@@ -221,15 +231,18 @@ class UPropertyValueOption final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueOption">();
+		STATIC_CLASS_IMPL("PropertyValueOption")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueOption")
 	}
 	static class UPropertyValueOption* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueOption>();
 	}
 };
-static_assert(alignof(UPropertyValueOption) == 0x000008, "Wrong alignment on UPropertyValueOption");
-static_assert(sizeof(UPropertyValueOption) == 0x0001D8, "Wrong size on UPropertyValueOption");
+DUMPER7_ASSERTS_UPropertyValueOption;
 
 // Class VariantManagerContent.PropertyValueSoftObject
 // 0x0000 (0x01D8 - 0x01D8)
@@ -238,15 +251,18 @@ class UPropertyValueSoftObject final : public UPropertyValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyValueSoftObject">();
+		STATIC_CLASS_IMPL("PropertyValueSoftObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyValueSoftObject")
 	}
 	static class UPropertyValueSoftObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyValueSoftObject>();
 	}
 };
-static_assert(alignof(UPropertyValueSoftObject) == 0x000008, "Wrong alignment on UPropertyValueSoftObject");
-static_assert(sizeof(UPropertyValueSoftObject) == 0x0001D8, "Wrong size on UPropertyValueSoftObject");
+DUMPER7_ASSERTS_UPropertyValueSoftObject;
 
 // Class VariantManagerContent.SwitchActor
 // 0x0020 (0x0700 - 0x06E0)
@@ -267,17 +283,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SwitchActor">();
+		STATIC_CLASS_IMPL("SwitchActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwitchActor")
 	}
 	static class ASwitchActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASwitchActor>();
 	}
 };
-static_assert(alignof(ASwitchActor) == 0x000010, "Wrong alignment on ASwitchActor");
-static_assert(sizeof(ASwitchActor) == 0x000700, "Wrong size on ASwitchActor");
-static_assert(offsetof(ASwitchActor, SceneComponent) == 0x0006F0, "Member 'ASwitchActor::SceneComponent' has a wrong offset!");
-static_assert(offsetof(ASwitchActor, LastSelectedOption) == 0x0006F8, "Member 'ASwitchActor::LastSelectedOption' has a wrong offset!");
+DUMPER7_ASSERTS_ASwitchActor;
 
 // Class VariantManagerContent.Variant
 // 0x0058 (0x0088 - 0x0030)
@@ -314,19 +331,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Variant">();
+		STATIC_CLASS_IMPL("Variant")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Variant")
 	}
 	static class UVariant* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVariant>();
 	}
 };
-static_assert(alignof(UVariant) == 0x000008, "Wrong alignment on UVariant");
-static_assert(sizeof(UVariant) == 0x000088, "Wrong size on UVariant");
-static_assert(offsetof(UVariant, Dependencies) == 0x000030, "Member 'UVariant::Dependencies' has a wrong offset!");
-static_assert(offsetof(UVariant, DisplayText) == 0x000040, "Member 'UVariant::DisplayText' has a wrong offset!");
-static_assert(offsetof(UVariant, ObjectBindings) == 0x000070, "Member 'UVariant::ObjectBindings' has a wrong offset!");
-static_assert(offsetof(UVariant, Thumbnail) == 0x000080, "Member 'UVariant::Thumbnail' has a wrong offset!");
+DUMPER7_ASSERTS_UVariant;
 
 // Class VariantManagerContent.VariantObjectBinding
 // 0x0070 (0x00A0 - 0x0030)
@@ -342,20 +358,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VariantObjectBinding">();
+		STATIC_CLASS_IMPL("VariantObjectBinding")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VariantObjectBinding")
 	}
 	static class UVariantObjectBinding* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVariantObjectBinding>();
 	}
 };
-static_assert(alignof(UVariantObjectBinding) == 0x000008, "Wrong alignment on UVariantObjectBinding");
-static_assert(sizeof(UVariantObjectBinding) == 0x0000A0, "Wrong size on UVariantObjectBinding");
-static_assert(offsetof(UVariantObjectBinding, CachedActorLabel) == 0x000030, "Member 'UVariantObjectBinding::CachedActorLabel' has a wrong offset!");
-static_assert(offsetof(UVariantObjectBinding, ObjectPtr) == 0x000040, "Member 'UVariantObjectBinding::ObjectPtr' has a wrong offset!");
-static_assert(offsetof(UVariantObjectBinding, LazyObjectPtr) == 0x000068, "Member 'UVariantObjectBinding::LazyObjectPtr' has a wrong offset!");
-static_assert(offsetof(UVariantObjectBinding, CapturedProperties) == 0x000080, "Member 'UVariantObjectBinding::CapturedProperties' has a wrong offset!");
-static_assert(offsetof(UVariantObjectBinding, FunctionCallers) == 0x000090, "Member 'UVariantObjectBinding::FunctionCallers' has a wrong offset!");
+DUMPER7_ASSERTS_UVariantObjectBinding;
 
 // Class VariantManagerContent.VariantSet
 // 0x0050 (0x0080 - 0x0030)
@@ -386,19 +400,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VariantSet">();
+		STATIC_CLASS_IMPL("VariantSet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VariantSet")
 	}
 	static class UVariantSet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVariantSet>();
 	}
 };
-static_assert(alignof(UVariantSet) == 0x000008, "Wrong alignment on UVariantSet");
-static_assert(sizeof(UVariantSet) == 0x000080, "Wrong size on UVariantSet");
-static_assert(offsetof(UVariantSet, DisplayText) == 0x000030, "Member 'UVariantSet::DisplayText' has a wrong offset!");
-static_assert(offsetof(UVariantSet, bExpanded) == 0x000060, "Member 'UVariantSet::bExpanded' has a wrong offset!");
-static_assert(offsetof(UVariantSet, Variants) == 0x000068, "Member 'UVariantSet::Variants' has a wrong offset!");
-static_assert(offsetof(UVariantSet, Thumbnail) == 0x000078, "Member 'UVariantSet::Thumbnail' has a wrong offset!");
+DUMPER7_ASSERTS_UVariantSet;
 
 }
 

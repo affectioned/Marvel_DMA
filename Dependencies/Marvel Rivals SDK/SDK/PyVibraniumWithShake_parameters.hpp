@@ -23,9 +23,7 @@ struct PyVibraniumWithShake_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyVibraniumWithShake_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyVibraniumWithShake_ReceiveEndPlay");
-static_assert(sizeof(PyVibraniumWithShake_ReceiveEndPlay) == 0x000001, "Wrong size on PyVibraniumWithShake_ReceiveEndPlay");
-static_assert(offsetof(PyVibraniumWithShake_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PyVibraniumWithShake_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyVibraniumWithShake_ReceiveEndPlay;
 
 }
 

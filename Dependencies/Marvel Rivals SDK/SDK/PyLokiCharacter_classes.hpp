@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyLokiCharacter.PyLokiCharacter
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class APyLokiCharacter : public ALokiCharacter
 {
 public:
-	int32                                         PhantomAbilityID;                                  // 0x21D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PhantomAbilityID;                                  // 0x22E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SpawnLokiPhantom(const struct FTransform& InTransform, const class UMarvelGameplayAbility* InAbility);
@@ -31,27 +31,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLokiCharacter">();
+		STATIC_CLASS_IMPL("PyLokiCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLokiCharacter")
 	}
 	static class APyLokiCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLokiCharacter>();
 	}
 };
-static_assert(alignof(APyLokiCharacter) == 0x000010, "Wrong alignment on APyLokiCharacter");
-static_assert(sizeof(APyLokiCharacter) == 0x0021E0, "Wrong size on APyLokiCharacter");
-static_assert(offsetof(APyLokiCharacter, PhantomAbilityID) == 0x0021D0, "Member 'APyLokiCharacter::PhantomAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyLokiCharacter;
 
 // PythonClass PyLokiCharacter.PyLokiChildActor
-// 0x00A0 (0x0ED0 - 0x0E30)
+// 0x00A0 (0x0EE0 - 0x0E40)
 class APyLokiChildActor final : public ALokiChildActor
 {
 public:
-	struct FMaterialQuery                         WeaponSlotQuery;                                   // 0x0E30(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WeaponSlotIndex;                                   // 0x0E54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   WeaponNiagaraSocket;                               // 0x0E58(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E64[0x4];                                      // 0x0E64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TagsToDisableWeaponFX;                             // 0x0E68(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FMaterialQuery                         WeaponSlotQuery;                                   // 0x0E40(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WeaponSlotIndex;                                   // 0x0E64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   WeaponNiagaraSocket;                               // 0x0E68(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E74[0x4];                                      // 0x0E74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  TagsToDisableWeaponFX;                             // 0x0E78(0x0068)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -62,19 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLokiChildActor">();
+		STATIC_CLASS_IMPL("PyLokiChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLokiChildActor")
 	}
 	static class APyLokiChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLokiChildActor>();
 	}
 };
-static_assert(alignof(APyLokiChildActor) == 0x000010, "Wrong alignment on APyLokiChildActor");
-static_assert(sizeof(APyLokiChildActor) == 0x000ED0, "Wrong size on APyLokiChildActor");
-static_assert(offsetof(APyLokiChildActor, WeaponSlotQuery) == 0x000E30, "Member 'APyLokiChildActor::WeaponSlotQuery' has a wrong offset!");
-static_assert(offsetof(APyLokiChildActor, WeaponSlotIndex) == 0x000E54, "Member 'APyLokiChildActor::WeaponSlotIndex' has a wrong offset!");
-static_assert(offsetof(APyLokiChildActor, WeaponNiagaraSocket) == 0x000E58, "Member 'APyLokiChildActor::WeaponNiagaraSocket' has a wrong offset!");
-static_assert(offsetof(APyLokiChildActor, TagsToDisableWeaponFX) == 0x000E68, "Member 'APyLokiChildActor::TagsToDisableWeaponFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyLokiChildActor;
 
 }
 

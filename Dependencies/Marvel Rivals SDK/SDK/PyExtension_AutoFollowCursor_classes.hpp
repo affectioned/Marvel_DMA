@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_AutoFollowCursor">();
+		STATIC_CLASS_IMPL("PyExtension_AutoFollowCursor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_AutoFollowCursor")
 	}
 	static class UPyExtension_AutoFollowCursor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_AutoFollowCursor>();
 	}
 };
-static_assert(alignof(UPyExtension_AutoFollowCursor) == 0x000008, "Wrong alignment on UPyExtension_AutoFollowCursor");
-static_assert(sizeof(UPyExtension_AutoFollowCursor) == 0x000030, "Wrong size on UPyExtension_AutoFollowCursor");
+DUMPER7_ASSERTS_UPyExtension_AutoFollowCursor;
 
 }
 

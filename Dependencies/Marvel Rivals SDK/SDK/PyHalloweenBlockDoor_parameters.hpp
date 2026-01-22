@@ -23,9 +23,7 @@ struct PyHalloweenBlockDoor_SetState final
 public:
 	EHalloweenObjectState                         state;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenBlockDoor_SetState) == 0x000001, "Wrong alignment on PyHalloweenBlockDoor_SetState");
-static_assert(sizeof(PyHalloweenBlockDoor_SetState) == 0x000001, "Wrong size on PyHalloweenBlockDoor_SetState");
-static_assert(offsetof(PyHalloweenBlockDoor_SetState, state) == 0x000000, "Member 'PyHalloweenBlockDoor_SetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenBlockDoor_SetState;
 
 }
 

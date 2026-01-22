@@ -27,37 +27,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSignalProcessorBase">();
+		STATIC_CLASS_IMPL("MassSignalProcessorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSignalProcessorBase")
 	}
 	static class UMassSignalProcessorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSignalProcessorBase>();
 	}
 };
-static_assert(alignof(UMassSignalProcessorBase) == 0x000008, "Wrong alignment on UMassSignalProcessorBase");
-static_assert(sizeof(UMassSignalProcessorBase) == 0x000430, "Wrong size on UMassSignalProcessorBase");
+DUMPER7_ASSERTS_UMassSignalProcessorBase;
 
 // Class MassSignals.MassSignalSubsystem
-// 0x0068 (0x00B0 - 0x0048)
+// 0x0068 (0x00B8 - 0x0050)
 class UMassSignalSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	uint8                                         Pad_48[0x60];                                      // 0x0048(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWorld*                                 CachedWorld;                                       // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x60];                                      // 0x0050(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWorld*                                 CachedWorld;                                       // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSignalSubsystem">();
+		STATIC_CLASS_IMPL("MassSignalSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSignalSubsystem")
 	}
 	static class UMassSignalSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSignalSubsystem>();
 	}
 };
-static_assert(alignof(UMassSignalSubsystem) == 0x000008, "Wrong alignment on UMassSignalSubsystem");
-static_assert(sizeof(UMassSignalSubsystem) == 0x0000B0, "Wrong size on UMassSignalSubsystem");
-static_assert(offsetof(UMassSignalSubsystem, CachedWorld) == 0x0000A8, "Member 'UMassSignalSubsystem::CachedWorld' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSignalSubsystem;
 
 }
 

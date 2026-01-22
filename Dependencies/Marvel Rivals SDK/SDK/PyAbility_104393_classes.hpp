@@ -17,55 +17,64 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104393.PyConfig_104393
-// 0x0000 (0x1730 - 0x1730)
+// 0x0000 (0x1A80 - 0x1A80)
 class UPyConfig_104393 final : public UPyConfig_104332
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104393">();
+		STATIC_CLASS_IMPL("PyConfig_104393")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104393")
 	}
 	static class UPyConfig_104393* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104393>();
 	}
 };
-static_assert(alignof(UPyConfig_104393) == 0x000010, "Wrong alignment on UPyConfig_104393");
-static_assert(sizeof(UPyConfig_104393) == 0x001730, "Wrong size on UPyConfig_104393");
+DUMPER7_ASSERTS_UPyConfig_104393;
 
 // PythonClass PyAbility_104393.PyAbility_104393
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104393 final : public UPyAbility_104332
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104393">();
+		STATIC_CLASS_IMPL("PyAbility_104393")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104393")
 	}
 	static class UPyAbility_104393* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104393>();
 	}
 };
-static_assert(alignof(UPyAbility_104393) == 0x000008, "Wrong alignment on UPyAbility_104393");
-static_assert(sizeof(UPyAbility_104393) == 0x0029F8, "Wrong size on UPyAbility_104393");
+DUMPER7_ASSERTS_UPyAbility_104393;
 
 // PythonClass PyAbility_104393.PyTraceComponent_10439301
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10439301 final : public UPyTraceComponent_10433201
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10439301">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10439301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10439301")
 	}
 	static class UPyTraceComponent_10439301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10439301>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10439301) == 0x000010, "Wrong alignment on UPyTraceComponent_10439301");
-static_assert(sizeof(UPyTraceComponent_10439301) == 0x002200, "Wrong size on UPyTraceComponent_10439301");
+DUMPER7_ASSERTS_UPyTraceComponent_10439301;
 
 }
 

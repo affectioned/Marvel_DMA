@@ -32,20 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelMusicData">();
+		STATIC_CLASS_IMPL("PyMarvelMusicData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelMusicData")
 	}
 	static class UPyMarvelMusicData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelMusicData>();
 	}
 };
-static_assert(alignof(UPyMarvelMusicData) == 0x000008, "Wrong alignment on UPyMarvelMusicData");
-static_assert(sizeof(UPyMarvelMusicData) == 0x000190, "Wrong size on UPyMarvelMusicData");
-static_assert(offsetof(UPyMarvelMusicData, PrepareCoutdownStart) == 0x000168, "Member 'UPyMarvelMusicData::PrepareCoutdownStart' has a wrong offset!");
-static_assert(offsetof(UPyMarvelMusicData, RemainTimeCoutdown) == 0x00016C, "Member 'UPyMarvelMusicData::RemainTimeCoutdown' has a wrong offset!");
-static_assert(offsetof(UPyMarvelMusicData, StateMapNone) == 0x000170, "Member 'UPyMarvelMusicData::StateMapNone' has a wrong offset!");
-static_assert(offsetof(UPyMarvelMusicData, HighLightChangeTime) == 0x000178, "Member 'UPyMarvelMusicData::HighLightChangeTime' has a wrong offset!");
-static_assert(offsetof(UPyMarvelMusicData, MvpSpecialItemIDs) == 0x000180, "Member 'UPyMarvelMusicData::MvpSpecialItemIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelMusicData;
 
 // PythonClass PyMarvelMusicMgr.PyMarvelMusicMgr
 // 0x0000 (0x0188 - 0x0188)
@@ -59,15 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelMusicMgr">();
+		STATIC_CLASS_IMPL("PyMarvelMusicMgr")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelMusicMgr")
 	}
 	static class UPyMarvelMusicMgr* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelMusicMgr>();
 	}
 };
-static_assert(alignof(UPyMarvelMusicMgr) == 0x000008, "Wrong alignment on UPyMarvelMusicMgr");
-static_assert(sizeof(UPyMarvelMusicMgr) == 0x000188, "Wrong size on UPyMarvelMusicMgr");
+DUMPER7_ASSERTS_UPyMarvelMusicMgr;
 
 }
 

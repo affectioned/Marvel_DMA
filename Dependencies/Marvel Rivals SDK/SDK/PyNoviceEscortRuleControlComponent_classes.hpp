@@ -23,15 +23,18 @@ class UPyNoviceEscortRuleControlComponent final : public UPyNoviceRuleControlCom
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceEscortRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyNoviceEscortRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceEscortRuleControlComponent")
 	}
 	static class UPyNoviceEscortRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNoviceEscortRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyNoviceEscortRuleControlComponent) == 0x000008, "Wrong alignment on UPyNoviceEscortRuleControlComponent");
-static_assert(sizeof(UPyNoviceEscortRuleControlComponent) == 0x000248, "Wrong size on UPyNoviceEscortRuleControlComponent");
+DUMPER7_ASSERTS_UPyNoviceEscortRuleControlComponent;
 
 }
 

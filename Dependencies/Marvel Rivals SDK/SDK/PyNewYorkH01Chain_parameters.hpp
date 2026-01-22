@@ -23,9 +23,7 @@ struct PyNewYorkH01Chain_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNewYorkH01Chain_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyNewYorkH01Chain_ReceiveEndPlay");
-static_assert(sizeof(PyNewYorkH01Chain_ReceiveEndPlay) == 0x000001, "Wrong size on PyNewYorkH01Chain_ReceiveEndPlay");
-static_assert(offsetof(PyNewYorkH01Chain_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyNewYorkH01Chain_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyNewYorkH01Chain_ReceiveEndPlay;
 
 }
 

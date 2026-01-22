@@ -21,9 +21,7 @@ struct WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame) == 0x000004, "Wrong alignment on WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame");
-static_assert(sizeof(WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame) == 0x000004, "Wrong size on WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame");
-static_assert(offsetof(WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame, EntryPoint) == 0x000000, "Member 'WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_FullScreenFrame_C_ExecuteUbergraph_WBP_FullScreenFrame;
 
 }
 

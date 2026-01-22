@@ -21,9 +21,7 @@ struct AntiLag2BlueprintLibrary_GetAMDAntiLag2Support final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AntiLag2BlueprintLibrary_GetAMDAntiLag2Support) == 0x000001, "Wrong alignment on AntiLag2BlueprintLibrary_GetAMDAntiLag2Support");
-static_assert(sizeof(AntiLag2BlueprintLibrary_GetAMDAntiLag2Support) == 0x000001, "Wrong size on AntiLag2BlueprintLibrary_GetAMDAntiLag2Support");
-static_assert(offsetof(AntiLag2BlueprintLibrary_GetAMDAntiLag2Support, ReturnValue) == 0x000000, "Member 'AntiLag2BlueprintLibrary_GetAMDAntiLag2Support::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_AntiLag2BlueprintLibrary_GetAMDAntiLag2Support;
 
 }
 

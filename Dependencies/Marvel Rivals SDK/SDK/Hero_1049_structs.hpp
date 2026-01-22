@@ -92,11 +92,7 @@ public:
 	struct FGameplayTag                           OwnerRequiredTag;                                  // 0x000C(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RageValue;                                         // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRageInfo_104921) == 0x000004, "Wrong alignment on FRageInfo_104921");
-static_assert(sizeof(FRageInfo_104921) == 0x00001C, "Wrong size on FRageInfo_104921");
-static_assert(offsetof(FRageInfo_104921, AbilityTag) == 0x000000, "Member 'FRageInfo_104921::AbilityTag' has a wrong offset!");
-static_assert(offsetof(FRageInfo_104921, OwnerRequiredTag) == 0x00000C, "Member 'FRageInfo_104921::OwnerRequiredTag' has a wrong offset!");
-static_assert(offsetof(FRageInfo_104921, RageValue) == 0x000018, "Member 'FRageInfo_104921::RageValue' has a wrong offset!");
+DUMPER7_ASSERTS_FRageInfo_104921;
 
 // ScriptStruct Hero_1049.SpecialMeshHideBoneSetting
 // 0x0010 (0x0010 - 0x0000)
@@ -105,9 +101,7 @@ struct FSpecialMeshHideBoneSetting final
 public:
 	TArray<class FName>                           HiddenBones;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSpecialMeshHideBoneSetting) == 0x000008, "Wrong alignment on FSpecialMeshHideBoneSetting");
-static_assert(sizeof(FSpecialMeshHideBoneSetting) == 0x000010, "Wrong size on FSpecialMeshHideBoneSetting");
-static_assert(offsetof(FSpecialMeshHideBoneSetting, HiddenBones) == 0x000000, "Member 'FSpecialMeshHideBoneSetting::HiddenBones' has a wrong offset!");
+DUMPER7_ASSERTS_FSpecialMeshHideBoneSetting;
 
 // ScriptStruct Hero_1049.Cue_NiagaraAsset_WolverineHit
 // 0x0018 (0x0038 - 0x0020)
@@ -118,11 +112,7 @@ public:
 	class UNiagaraSystem*                         HitSceneNiagaraFullAnger;                          // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNiagaraSystem*                         SynergyHitNiagara;                                 // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCue_NiagaraAsset_WolverineHit) == 0x000008, "Wrong alignment on FCue_NiagaraAsset_WolverineHit");
-static_assert(sizeof(FCue_NiagaraAsset_WolverineHit) == 0x000038, "Wrong size on FCue_NiagaraAsset_WolverineHit");
-static_assert(offsetof(FCue_NiagaraAsset_WolverineHit, HitCharacterNiagaraFullAnger) == 0x000020, "Member 'FCue_NiagaraAsset_WolverineHit::HitCharacterNiagaraFullAnger' has a wrong offset!");
-static_assert(offsetof(FCue_NiagaraAsset_WolverineHit, HitSceneNiagaraFullAnger) == 0x000028, "Member 'FCue_NiagaraAsset_WolverineHit::HitSceneNiagaraFullAnger' has a wrong offset!");
-static_assert(offsetof(FCue_NiagaraAsset_WolverineHit, SynergyHitNiagara) == 0x000030, "Member 'FCue_NiagaraAsset_WolverineHit::SynergyHitNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_FCue_NiagaraAsset_WolverineHit;
 
 // ScriptStruct Hero_1049.WolverineShiftJumpParam
 // 0x0058 (0x0058 - 0x0000)
@@ -148,24 +138,7 @@ public:
 	float                                         AfterHitVelocitySize;                              // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AfterHitAccelerationDirectionFactor;               // 0x0054(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWolverineShiftJumpParam) == 0x000008, "Wrong alignment on FWolverineShiftJumpParam");
-static_assert(sizeof(FWolverineShiftJumpParam) == 0x000058, "Wrong size on FWolverineShiftJumpParam");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpPitchMin) == 0x000000, "Member 'FWolverineShiftJumpParam::JumpPitchMin' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpPitchMax) == 0x000004, "Member 'FWolverineShiftJumpParam::JumpPitchMax' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpPitchOffset) == 0x000008, "Member 'FWolverineShiftJumpParam::JumpPitchOffset' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpUpGravityScale) == 0x00000C, "Member 'FWolverineShiftJumpParam::JumpUpGravityScale' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpDownGravityScale) == 0x000010, "Member 'FWolverineShiftJumpParam::JumpDownGravityScale' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, JumpBlockGravityScale) == 0x000014, "Member 'FWolverineShiftJumpParam::JumpBlockGravityScale' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, MaxAcceleration) == 0x000018, "Member 'FWolverineShiftJumpParam::MaxAcceleration' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, MaxVelocitySize) == 0x00001C, "Member 'FWolverineShiftJumpParam::MaxVelocitySize' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, ForceMoveSpeed) == 0x000020, "Member 'FWolverineShiftJumpParam::ForceMoveSpeed' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, bEnableAimDirectionFactor) == 0x000024, "Member 'FWolverineShiftJumpParam::bEnableAimDirectionFactor' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, AccelerationDirectionFactor) == 0x000028, "Member 'FWolverineShiftJumpParam::AccelerationDirectionFactor' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, VelocityAxisScale) == 0x000030, "Member 'FWolverineShiftJumpParam::VelocityAxisScale' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, AfterHitGravityScale) == 0x000048, "Member 'FWolverineShiftJumpParam::AfterHitGravityScale' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, AfterHitAcceleration) == 0x00004C, "Member 'FWolverineShiftJumpParam::AfterHitAcceleration' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, AfterHitVelocitySize) == 0x000050, "Member 'FWolverineShiftJumpParam::AfterHitVelocitySize' has a wrong offset!");
-static_assert(offsetof(FWolverineShiftJumpParam, AfterHitAccelerationDirectionFactor) == 0x000054, "Member 'FWolverineShiftJumpParam::AfterHitAccelerationDirectionFactor' has a wrong offset!");
+DUMPER7_ASSERTS_FWolverineShiftJumpParam;
 
 // ScriptStruct Hero_1049.WolverineSynergyRideAnimationData
 // 0x00A0 (0x00A0 - 0x0000)
@@ -175,10 +148,7 @@ public:
 	TMap<class FName, class UAnimSequence*>       SynergyRideLoopAnimations;                         // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TMap<class FName, class UAnimSequence*>       SynergyRideGatherAnimations;                       // 0x0050(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWolverineSynergyRideAnimationData) == 0x000008, "Wrong alignment on FWolverineSynergyRideAnimationData");
-static_assert(sizeof(FWolverineSynergyRideAnimationData) == 0x0000A0, "Wrong size on FWolverineSynergyRideAnimationData");
-static_assert(offsetof(FWolverineSynergyRideAnimationData, SynergyRideLoopAnimations) == 0x000000, "Member 'FWolverineSynergyRideAnimationData::SynergyRideLoopAnimations' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimationData, SynergyRideGatherAnimations) == 0x000050, "Member 'FWolverineSynergyRideAnimationData::SynergyRideGatherAnimations' has a wrong offset!");
+DUMPER7_ASSERTS_FWolverineSynergyRideAnimationData;
 
 // ScriptStruct Hero_1049.WolverineSynergyRideAnimBlendData
 // 0x0038 (0x0038 - 0x0000)
@@ -194,15 +164,7 @@ public:
 	bool                                          bUseZeroBuffer;                                    // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWolverineSynergyRideAnimBlendData) == 0x000008, "Wrong alignment on FWolverineSynergyRideAnimBlendData");
-static_assert(sizeof(FWolverineSynergyRideAnimBlendData) == 0x000038, "Wrong size on FWolverineSynergyRideAnimBlendData");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_0_Name) == 0x000000, "Member 'FWolverineSynergyRideAnimBlendData::Animation_0_Name' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_1_Name) == 0x00000C, "Member 'FWolverineSynergyRideAnimBlendData::Animation_1_Name' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_0) == 0x000018, "Member 'FWolverineSynergyRideAnimBlendData::Animation_0' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_1) == 0x000020, "Member 'FWolverineSynergyRideAnimBlendData::Animation_1' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_0_Position) == 0x000028, "Member 'FWolverineSynergyRideAnimBlendData::Animation_0_Position' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, Animation_1_Position) == 0x00002C, "Member 'FWolverineSynergyRideAnimBlendData::Animation_1_Position' has a wrong offset!");
-static_assert(offsetof(FWolverineSynergyRideAnimBlendData, bUseZeroBuffer) == 0x000030, "Member 'FWolverineSynergyRideAnimBlendData::bUseZeroBuffer' has a wrong offset!");
+DUMPER7_ASSERTS_FWolverineSynergyRideAnimBlendData;
 
 // ScriptStruct Hero_1049.WolverineSynergyAnimationRatioSpeedUpInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -211,9 +173,7 @@ struct FWolverineSynergyAnimationRatioSpeedUpInfo final
 public:
 	TSet<class FName>                             AnimationNames;                                    // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWolverineSynergyAnimationRatioSpeedUpInfo) == 0x000008, "Wrong alignment on FWolverineSynergyAnimationRatioSpeedUpInfo");
-static_assert(sizeof(FWolverineSynergyAnimationRatioSpeedUpInfo) == 0x000050, "Wrong size on FWolverineSynergyAnimationRatioSpeedUpInfo");
-static_assert(offsetof(FWolverineSynergyAnimationRatioSpeedUpInfo, AnimationNames) == 0x000000, "Member 'FWolverineSynergyAnimationRatioSpeedUpInfo::AnimationNames' has a wrong offset!");
+DUMPER7_ASSERTS_FWolverineSynergyAnimationRatioSpeedUpInfo;
 
 }
 

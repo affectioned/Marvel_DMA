@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Buff_10317103_BP.Cue_Buff_10317103_BP_C
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class ACue_Buff_10317103_BP_C final : public AMarvelCueNotify_Buff
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Buff_10317103_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Buff_10317103_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_10317103_BP_C")
 	}
 	static class ACue_Buff_10317103_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_10317103_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Buff_10317103_BP_C) == 0x000010, "Wrong alignment on ACue_Buff_10317103_BP_C");
-static_assert(sizeof(ACue_Buff_10317103_BP_C) == 0x001640, "Wrong size on ACue_Buff_10317103_BP_C");
+DUMPER7_ASSERTS_ACue_Buff_10317103_BP_C;
 
 }
 

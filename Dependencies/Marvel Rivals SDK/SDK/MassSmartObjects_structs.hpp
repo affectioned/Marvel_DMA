@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SmartObjectsModule_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "SmartObjectsModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "MassEntity_structs.hpp"
 #include "ZoneGraph_structs.hpp"
@@ -43,12 +43,7 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        InteractionCooldownEndTime;                        // 0x0090(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassSmartObjectUserFragment) == 0x000008, "Wrong alignment on FMassSmartObjectUserFragment");
-static_assert(sizeof(FMassSmartObjectUserFragment) == 0x000098, "Wrong size on FMassSmartObjectUserFragment");
-static_assert(offsetof(FMassSmartObjectUserFragment, UserTags) == 0x000000, "Member 'FMassSmartObjectUserFragment::UserTags' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectUserFragment, InteractionHandle) == 0x000068, "Member 'FMassSmartObjectUserFragment::InteractionHandle' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectUserFragment, InteractionStatus) == 0x000088, "Member 'FMassSmartObjectUserFragment::InteractionStatus' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectUserFragment, InteractionCooldownEndTime) == 0x000090, "Member 'FMassSmartObjectUserFragment::InteractionCooldownEndTime' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectUserFragment;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectTimedBehaviorFragment
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +52,7 @@ struct FMassSmartObjectTimedBehaviorFragment final : public FMassFragment
 public:
 	float                                         UseTime;                                           // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassSmartObjectTimedBehaviorFragment) == 0x000004, "Wrong alignment on FMassSmartObjectTimedBehaviorFragment");
-static_assert(sizeof(FMassSmartObjectTimedBehaviorFragment) == 0x000004, "Wrong size on FMassSmartObjectTimedBehaviorFragment");
-static_assert(offsetof(FMassSmartObjectTimedBehaviorFragment, UseTime) == 0x000000, "Member 'FMassSmartObjectTimedBehaviorFragment::UseTime' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectTimedBehaviorFragment;
 
 // ScriptStruct MassSmartObjects.SmartObjectCandidateSlot
 // 0x0020 (0x0020 - 0x0000)
@@ -70,10 +63,7 @@ public:
 	float                                         Cost;                                              // 0x0018(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSmartObjectCandidateSlot) == 0x000008, "Wrong alignment on FSmartObjectCandidateSlot");
-static_assert(sizeof(FSmartObjectCandidateSlot) == 0x000020, "Wrong size on FSmartObjectCandidateSlot");
-static_assert(offsetof(FSmartObjectCandidateSlot, Result) == 0x000000, "Member 'FSmartObjectCandidateSlot::Result' has a wrong offset!");
-static_assert(offsetof(FSmartObjectCandidateSlot, Cost) == 0x000018, "Member 'FSmartObjectCandidateSlot::Cost' has a wrong offset!");
+DUMPER7_ASSERTS_FSmartObjectCandidateSlot;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectRequestID
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +72,7 @@ struct FMassSmartObjectRequestID final
 public:
 	struct FMassEntityHandle                      Entity;                                            // 0x0000(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassSmartObjectRequestID) == 0x000008, "Wrong alignment on FMassSmartObjectRequestID");
-static_assert(sizeof(FMassSmartObjectRequestID) == 0x000008, "Wrong size on FMassSmartObjectRequestID");
-static_assert(offsetof(FMassSmartObjectRequestID, Entity) == 0x000000, "Member 'FMassSmartObjectRequestID::Entity' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectRequestID;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectCandidateSlots
 // 0x0088 (0x0088 - 0x0000)
@@ -95,9 +83,7 @@ public:
 	uint8                                         NumSlots;                                          // 0x0080(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSmartObjectCandidateSlots) == 0x000008, "Wrong alignment on FMassSmartObjectCandidateSlots");
-static_assert(sizeof(FMassSmartObjectCandidateSlots) == 0x000088, "Wrong size on FMassSmartObjectCandidateSlots");
-static_assert(offsetof(FMassSmartObjectCandidateSlots, NumSlots) == 0x000080, "Member 'FMassSmartObjectCandidateSlots::NumSlots' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectCandidateSlots;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectRequestResultFragment
 // 0x0090 (0x0090 - 0x0000)
@@ -108,10 +94,7 @@ public:
 	bool                                          bProcessed;                                        // 0x0088(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSmartObjectRequestResultFragment) == 0x000008, "Wrong alignment on FMassSmartObjectRequestResultFragment");
-static_assert(sizeof(FMassSmartObjectRequestResultFragment) == 0x000090, "Wrong size on FMassSmartObjectRequestResultFragment");
-static_assert(offsetof(FMassSmartObjectRequestResultFragment, Candidates) == 0x000000, "Member 'FMassSmartObjectRequestResultFragment::Candidates' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectRequestResultFragment, bProcessed) == 0x000088, "Member 'FMassSmartObjectRequestResultFragment::bProcessed' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectRequestResultFragment;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectWorldLocationRequestFragment
 // 0x00D0 (0x00D0 - 0x0000)
@@ -123,12 +106,7 @@ public:
 	struct FGameplayTagContainer                  UserTags;                                          // 0x0020(0x0068)(Transient, NativeAccessSpecifierPublic)
 	struct FGameplayTagQuery                      ActivityRequirements;                              // 0x0088(0x0048)(Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassSmartObjectWorldLocationRequestFragment) == 0x000008, "Wrong alignment on FMassSmartObjectWorldLocationRequestFragment");
-static_assert(sizeof(FMassSmartObjectWorldLocationRequestFragment) == 0x0000D0, "Wrong size on FMassSmartObjectWorldLocationRequestFragment");
-static_assert(offsetof(FMassSmartObjectWorldLocationRequestFragment, SearchOrigin) == 0x000000, "Member 'FMassSmartObjectWorldLocationRequestFragment::SearchOrigin' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectWorldLocationRequestFragment, RequestingEntity) == 0x000018, "Member 'FMassSmartObjectWorldLocationRequestFragment::RequestingEntity' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectWorldLocationRequestFragment, UserTags) == 0x000020, "Member 'FMassSmartObjectWorldLocationRequestFragment::UserTags' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectWorldLocationRequestFragment, ActivityRequirements) == 0x000088, "Member 'FMassSmartObjectWorldLocationRequestFragment::ActivityRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectWorldLocationRequestFragment;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectLaneLocationRequestFragment
 // 0x00C8 (0x00C8 - 0x0000)
@@ -140,19 +118,14 @@ public:
 	struct FGameplayTagContainer                  UserTags;                                          // 0x0018(0x0068)(Transient, NativeAccessSpecifierPublic)
 	struct FGameplayTagQuery                      ActivityRequirements;                              // 0x0080(0x0048)(Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassSmartObjectLaneLocationRequestFragment) == 0x000008, "Wrong alignment on FMassSmartObjectLaneLocationRequestFragment");
-static_assert(sizeof(FMassSmartObjectLaneLocationRequestFragment) == 0x0000C8, "Wrong size on FMassSmartObjectLaneLocationRequestFragment");
-static_assert(offsetof(FMassSmartObjectLaneLocationRequestFragment, RequestingEntity) == 0x000010, "Member 'FMassSmartObjectLaneLocationRequestFragment::RequestingEntity' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectLaneLocationRequestFragment, UserTags) == 0x000018, "Member 'FMassSmartObjectLaneLocationRequestFragment::UserTags' has a wrong offset!");
-static_assert(offsetof(FMassSmartObjectLaneLocationRequestFragment, ActivityRequirements) == 0x000080, "Member 'FMassSmartObjectLaneLocationRequestFragment::ActivityRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSmartObjectLaneLocationRequestFragment;
 
 // ScriptStruct MassSmartObjects.MassSmartObjectCompletedRequestTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassSmartObjectCompletedRequestTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassSmartObjectCompletedRequestTag) == 0x000001, "Wrong alignment on FMassSmartObjectCompletedRequestTag");
-static_assert(sizeof(FMassSmartObjectCompletedRequestTag) == 0x000001, "Wrong size on FMassSmartObjectCompletedRequestTag");
+DUMPER7_ASSERTS_FMassSmartObjectCompletedRequestTag;
 
 // ScriptStruct MassSmartObjects.SmartObjectMassEntityUserData
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +134,7 @@ struct FSmartObjectMassEntityUserData final
 public:
 	struct FMassEntityHandle                      UserEntity;                                        // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSmartObjectMassEntityUserData) == 0x000008, "Wrong alignment on FSmartObjectMassEntityUserData");
-static_assert(sizeof(FSmartObjectMassEntityUserData) == 0x000008, "Wrong size on FSmartObjectMassEntityUserData");
-static_assert(offsetof(FSmartObjectMassEntityUserData, UserEntity) == 0x000000, "Member 'FSmartObjectMassEntityUserData::UserEntity' has a wrong offset!");
+DUMPER7_ASSERTS_FSmartObjectMassEntityUserData;
 
 // ScriptStruct MassSmartObjects.SmartObjectLaneLocation
 // 0x0010 (0x0010 - 0x0000)
@@ -174,11 +145,7 @@ public:
 	int32                                         LaneIndex;                                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DistanceAlongLane;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSmartObjectLaneLocation) == 0x000008, "Wrong alignment on FSmartObjectLaneLocation");
-static_assert(sizeof(FSmartObjectLaneLocation) == 0x000010, "Wrong size on FSmartObjectLaneLocation");
-static_assert(offsetof(FSmartObjectLaneLocation, ObjectHandle) == 0x000000, "Member 'FSmartObjectLaneLocation::ObjectHandle' has a wrong offset!");
-static_assert(offsetof(FSmartObjectLaneLocation, LaneIndex) == 0x000008, "Member 'FSmartObjectLaneLocation::LaneIndex' has a wrong offset!");
-static_assert(offsetof(FSmartObjectLaneLocation, DistanceAlongLane) == 0x00000C, "Member 'FSmartObjectLaneLocation::DistanceAlongLane' has a wrong offset!");
+DUMPER7_ASSERTS_FSmartObjectLaneLocation;
 
 // ScriptStruct MassSmartObjects.SmartObjectLaneLocationIndices
 // 0x0010 (0x0010 - 0x0000)
@@ -187,9 +154,7 @@ struct FSmartObjectLaneLocationIndices final
 public:
 	TArray<int32>                                 SmartObjectLaneLocationIndices;                    // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSmartObjectLaneLocationIndices) == 0x000008, "Wrong alignment on FSmartObjectLaneLocationIndices");
-static_assert(sizeof(FSmartObjectLaneLocationIndices) == 0x000010, "Wrong size on FSmartObjectLaneLocationIndices");
-static_assert(offsetof(FSmartObjectLaneLocationIndices, SmartObjectLaneLocationIndices) == 0x000000, "Member 'FSmartObjectLaneLocationIndices::SmartObjectLaneLocationIndices' has a wrong offset!");
+DUMPER7_ASSERTS_FSmartObjectLaneLocationIndices;
 
 // ScriptStruct MassSmartObjects.SmartObjectAnnotationData
 // 0x00D0 (0x00D0 - 0x0000)
@@ -204,13 +169,7 @@ public:
 	TMap<int32, struct FSmartObjectLaneLocationIndices> LaneToLaneLocationIndicesLookup;             // 0x0078(0x0050)(Edit, EditConst, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSmartObjectAnnotationData) == 0x000008, "Wrong alignment on FSmartObjectAnnotationData");
-static_assert(sizeof(FSmartObjectAnnotationData) == 0x0000D0, "Wrong size on FSmartObjectAnnotationData");
-static_assert(offsetof(FSmartObjectAnnotationData, DataHandle) == 0x000000, "Member 'FSmartObjectAnnotationData::DataHandle' has a wrong offset!");
-static_assert(offsetof(FSmartObjectAnnotationData, AffectedLanes) == 0x000008, "Member 'FSmartObjectAnnotationData::AffectedLanes' has a wrong offset!");
-static_assert(offsetof(FSmartObjectAnnotationData, SmartObjectLaneLocations) == 0x000018, "Member 'FSmartObjectAnnotationData::SmartObjectLaneLocations' has a wrong offset!");
-static_assert(offsetof(FSmartObjectAnnotationData, SmartObjectToLaneLocationIndexLookup) == 0x000028, "Member 'FSmartObjectAnnotationData::SmartObjectToLaneLocationIndexLookup' has a wrong offset!");
-static_assert(offsetof(FSmartObjectAnnotationData, LaneToLaneLocationIndicesLookup) == 0x000078, "Member 'FSmartObjectAnnotationData::LaneToLaneLocationIndicesLookup' has a wrong offset!");
+DUMPER7_ASSERTS_FSmartObjectAnnotationData;
 
 }
 

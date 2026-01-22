@@ -27,15 +27,7 @@ public:
 	int64                                         Flags;                                             // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Hash;                                              // 0x0038(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNePatchEntry) == 0x000008, "Wrong alignment on FNePatchEntry");
-static_assert(sizeof(FNePatchEntry) == 0x000048, "Wrong size on FNePatchEntry");
-static_assert(offsetof(FNePatchEntry, Filename) == 0x000000, "Member 'FNePatchEntry::Filename' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, SourceHashFilename) == 0x000010, "Member 'FNePatchEntry::SourceHashFilename' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, Offset) == 0x000020, "Member 'FNePatchEntry::Offset' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, WholeSize) == 0x000028, "Member 'FNePatchEntry::WholeSize' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, FileSize) == 0x00002C, "Member 'FNePatchEntry::FileSize' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, Flags) == 0x000030, "Member 'FNePatchEntry::Flags' has a wrong offset!");
-static_assert(offsetof(FNePatchEntry, Hash) == 0x000038, "Member 'FNePatchEntry::Hash' has a wrong offset!");
+DUMPER7_ASSERTS_FNePatchEntry;
 
 // ScriptStruct NePatchUtility.NePatchHashFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -44,8 +36,7 @@ struct alignas(0x08) FNePatchHashFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchHashFileHandle) == 0x000008, "Wrong alignment on FNePatchHashFileHandle");
-static_assert(sizeof(FNePatchHashFileHandle) == 0x000010, "Wrong size on FNePatchHashFileHandle");
+DUMPER7_ASSERTS_FNePatchHashFileHandle;
 
 // ScriptStruct NePatchUtility.NePatchPakFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -54,8 +45,7 @@ struct alignas(0x08) FNePatchPakFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchPakFileHandle) == 0x000008, "Wrong alignment on FNePatchPakFileHandle");
-static_assert(sizeof(FNePatchPakFileHandle) == 0x000010, "Wrong size on FNePatchPakFileHandle");
+DUMPER7_ASSERTS_FNePatchPakFileHandle;
 
 // ScriptStruct NePatchUtility.NePatchShaderHashFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -64,8 +54,7 @@ struct alignas(0x08) FNePatchShaderHashFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchShaderHashFileHandle) == 0x000008, "Wrong alignment on FNePatchShaderHashFileHandle");
-static_assert(sizeof(FNePatchShaderHashFileHandle) == 0x000010, "Wrong size on FNePatchShaderHashFileHandle");
+DUMPER7_ASSERTS_FNePatchShaderHashFileHandle;
 
 // ScriptStruct NePatchUtility.NePatchShaderCodeEntry
 // 0x0020 (0x0020 - 0x0000)
@@ -77,11 +66,7 @@ public:
 	int32                                         Size;                                              // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchShaderCodeEntry) == 0x000008, "Wrong alignment on FNePatchShaderCodeEntry");
-static_assert(sizeof(FNePatchShaderCodeEntry) == 0x000020, "Wrong size on FNePatchShaderCodeEntry");
-static_assert(offsetof(FNePatchShaderCodeEntry, Hash) == 0x000000, "Member 'FNePatchShaderCodeEntry::Hash' has a wrong offset!");
-static_assert(offsetof(FNePatchShaderCodeEntry, Offset) == 0x000010, "Member 'FNePatchShaderCodeEntry::Offset' has a wrong offset!");
-static_assert(offsetof(FNePatchShaderCodeEntry, Size) == 0x000018, "Member 'FNePatchShaderCodeEntry::Size' has a wrong offset!");
+DUMPER7_ASSERTS_FNePatchShaderCodeEntry;
 
 // ScriptStruct NePatchUtility.NePatchShaderLibraryFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -90,8 +75,7 @@ struct alignas(0x08) FNePatchShaderLibraryFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchShaderLibraryFileHandle) == 0x000008, "Wrong alignment on FNePatchShaderLibraryFileHandle");
-static_assert(sizeof(FNePatchShaderLibraryFileHandle) == 0x000010, "Wrong size on FNePatchShaderLibraryFileHandle");
+DUMPER7_ASSERTS_FNePatchShaderLibraryFileHandle;
 
 // ScriptStruct NePatchUtility.NePatchUCasFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -100,8 +84,7 @@ struct alignas(0x08) FNePatchUCasFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchUCasFileHandle) == 0x000008, "Wrong alignment on FNePatchUCasFileHandle");
-static_assert(sizeof(FNePatchUCasFileHandle) == 0x000010, "Wrong size on FNePatchUCasFileHandle");
+DUMPER7_ASSERTS_FNePatchUCasFileHandle;
 
 // ScriptStruct NePatchUtility.NePatchUtocEntry
 // 0x00A8 (0x00A8 - 0x0000)
@@ -121,17 +104,7 @@ public:
 	int32                                         CompressedBlockSize;                               // 0x0060(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x44];                                      // 0x0064(0x0044)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchUtocEntry) == 0x000008, "Wrong alignment on FNePatchUtocEntry");
-static_assert(sizeof(FNePatchUtocEntry) == 0x0000A8, "Wrong size on FNePatchUtocEntry");
-static_assert(offsetof(FNePatchUtocEntry, ChunkIdStr) == 0x000010, "Member 'FNePatchUtocEntry::ChunkIdStr' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, AssetFileName) == 0x000020, "Member 'FNePatchUtocEntry::AssetFileName' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, PatchSourceFile) == 0x000030, "Member 'FNePatchUtocEntry::PatchSourceFile' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, Hash) == 0x000040, "Member 'FNePatchUtocEntry::Hash' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, CompressedOffset) == 0x000050, "Member 'FNePatchUtocEntry::CompressedOffset' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, TotalCompressedSize) == 0x000058, "Member 'FNePatchUtocEntry::TotalCompressedSize' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, bFromLocalUtoc) == 0x00005C, "Member 'FNePatchUtocEntry::bFromLocalUtoc' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, bContainerHeader) == 0x00005D, "Member 'FNePatchUtocEntry::bContainerHeader' has a wrong offset!");
-static_assert(offsetof(FNePatchUtocEntry, CompressedBlockSize) == 0x000060, "Member 'FNePatchUtocEntry::CompressedBlockSize' has a wrong offset!");
+DUMPER7_ASSERTS_FNePatchUtocEntry;
 
 // ScriptStruct NePatchUtility.NePatchUtocFileHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -140,8 +113,7 @@ struct alignas(0x08) FNePatchUtocFileHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNePatchUtocFileHandle) == 0x000008, "Wrong alignment on FNePatchUtocFileHandle");
-static_assert(sizeof(FNePatchUtocFileHandle) == 0x000010, "Wrong size on FNePatchUtocFileHandle");
+DUMPER7_ASSERTS_FNePatchUtocFileHandle;
 
 }
 

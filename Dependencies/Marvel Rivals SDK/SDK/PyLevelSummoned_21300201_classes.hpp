@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyLevelSummoned_21300201.PyLevelSummoned_21300201
-// 0x0010 (0x0C00 - 0x0BF0)
+// 0x0010 (0x0C20 - 0x0C10)
 class APyLevelSummoned_21300201 final : public APyLevelSummoned_21300101
 {
 public:
-	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 AbsorbSummonedIDList;                              // 0x0BE8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         AbsorbDistance;                                    // 0x0BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C04[0x4];                                      // 0x0C04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 AbsorbSummonedIDList;                              // 0x0C08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         AbsorbDistance;                                    // 0x0C18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_21300201">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_21300201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_21300201")
 	}
 	static class APyLevelSummoned_21300201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_21300201>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_21300201) == 0x000010, "Wrong alignment on APyLevelSummoned_21300201");
-static_assert(sizeof(APyLevelSummoned_21300201) == 0x000C00, "Wrong size on APyLevelSummoned_21300201");
-static_assert(offsetof(APyLevelSummoned_21300201, AbsorbSummonedIDList) == 0x000BE8, "Member 'APyLevelSummoned_21300201::AbsorbSummonedIDList' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300201, AbsorbDistance) == 0x000BF8, "Member 'APyLevelSummoned_21300201::AbsorbDistance' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_21300201;
 
 }
 

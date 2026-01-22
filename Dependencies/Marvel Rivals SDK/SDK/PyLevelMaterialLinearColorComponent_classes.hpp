@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialLinearColorComponent">();
+		STATIC_CLASS_IMPL("PyLevelMaterialLinearColorComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialLinearColorComponent")
 	}
 	static class UPyLevelMaterialLinearColorComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMaterialLinearColorComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMaterialLinearColorComponent) == 0x000010, "Wrong alignment on UPyLevelMaterialLinearColorComponent");
-static_assert(sizeof(UPyLevelMaterialLinearColorComponent) == 0x000140, "Wrong size on UPyLevelMaterialLinearColorComponent");
-static_assert(offsetof(UPyLevelMaterialLinearColorComponent, ParameterValue) == 0x000120, "Member 'UPyLevelMaterialLinearColorComponent::ParameterValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMaterialLinearColorComponent;
 
 }
 

@@ -36,26 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_NumberInput_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_NumberInput_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_NumberInput_C")
 	}
 	static class UWBP_Common_NumberInput_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_NumberInput_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_NumberInput_C) == 0x000010, "Wrong alignment on UWBP_Common_NumberInput_C");
-static_assert(sizeof(UWBP_Common_NumberInput_C) == 0x000870, "Wrong size on UWBP_Common_NumberInput_C");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Btn_Input) == 0x000818, "Member 'UWBP_Common_NumberInput_C::Btn_Input' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, CanvasPanel_0) == 0x000820, "Member 'UWBP_Common_NumberInput_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Img_HoverBg) == 0x000828, "Member 'UWBP_Common_NumberInput_C::Img_HoverBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Img_HoverFrame) == 0x000830, "Member 'UWBP_Common_NumberInput_C::Img_HoverFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Img_NormalBg) == 0x000838, "Member 'UWBP_Common_NumberInput_C::Img_NormalBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Img_PressBg) == 0x000840, "Member 'UWBP_Common_NumberInput_C::Img_PressBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Overlay_Hover) == 0x000848, "Member 'UWBP_Common_NumberInput_C::Overlay_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Overlay_Input) == 0x000850, "Member 'UWBP_Common_NumberInput_C::Overlay_Input' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Overlay_Normal) == 0x000858, "Member 'UWBP_Common_NumberInput_C::Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, Overlay_Press) == 0x000860, "Member 'UWBP_Common_NumberInput_C::Overlay_Press' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NumberInput_C, SizeBox_NumInput) == 0x000868, "Member 'UWBP_Common_NumberInput_C::SizeBox_NumInput' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_NumberInput_C;
 
 }
 

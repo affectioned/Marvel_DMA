@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettlementDataUnit_Halloween.PyWidget_SettlementDataUnit_Halloween
-// 0x0000 (0x0638 - 0x0638)
+// 0x0000 (0x0640 - 0x0640)
 class UPyWidget_SettlementDataUnit_Halloween final : public UPyWidget_SettlementDataUnit_Common
 {
 public:
@@ -26,32 +26,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataUnit_Halloween">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataUnit_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataUnit_Halloween")
 	}
 	static class UPyWidget_SettlementDataUnit_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementDataUnit_Halloween>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataUnit_Halloween) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataUnit_Halloween");
-static_assert(sizeof(UPyWidget_SettlementDataUnit_Halloween) == 0x000638, "Wrong size on UPyWidget_SettlementDataUnit_Halloween");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataUnit_Halloween;
 
 // PythonClass PyWidget_SettlementDataUnit_Halloween.PyWidget_SettlementData_Halloweeb_Slot
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_SettlementData_Halloweeb_Slot final : public UPyWidget_SettlementData_Slot
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementData_Halloweeb_Slot">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementData_Halloweeb_Slot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementData_Halloweeb_Slot")
 	}
 	static class UPyWidget_SettlementData_Halloweeb_Slot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementData_Halloweeb_Slot>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementData_Halloweeb_Slot) == 0x000008, "Wrong alignment on UPyWidget_SettlementData_Halloweeb_Slot");
-static_assert(sizeof(UPyWidget_SettlementData_Halloweeb_Slot) == 0x000778, "Wrong size on UPyWidget_SettlementData_Halloweeb_Slot");
+DUMPER7_ASSERTS_UPyWidget_SettlementData_Halloweeb_Slot;
 
 }
 

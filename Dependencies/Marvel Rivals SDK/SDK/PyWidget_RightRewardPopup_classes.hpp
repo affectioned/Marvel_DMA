@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RightRewardPopup.PyWidget_RightRewardPopup
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_RightRewardPopup final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RightRewardPopup">();
+		STATIC_CLASS_IMPL("PyWidget_RightRewardPopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RightRewardPopup")
 	}
 	static class UPyWidget_RightRewardPopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RightRewardPopup>();
 	}
 };
-static_assert(alignof(UPyWidget_RightRewardPopup) == 0x000008, "Wrong alignment on UPyWidget_RightRewardPopup");
-static_assert(sizeof(UPyWidget_RightRewardPopup) == 0x0005C0, "Wrong size on UPyWidget_RightRewardPopup");
+DUMPER7_ASSERTS_UPyWidget_RightRewardPopup;
 
 }
 

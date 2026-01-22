@@ -23,9 +23,7 @@ struct PyHalloweenVisionArea_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenVisionArea_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyHalloweenVisionArea_OnPlayerEnetered");
-static_assert(sizeof(PyHalloweenVisionArea_OnPlayerEnetered) == 0x000008, "Wrong size on PyHalloweenVisionArea_OnPlayerEnetered");
-static_assert(offsetof(PyHalloweenVisionArea_OnPlayerEnetered, actor) == 0x000000, "Member 'PyHalloweenVisionArea_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenVisionArea_OnPlayerEnetered;
 
 // PythonFunction PyHalloweenVisionArea.PyHalloweenVisionArea.SetState
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyHalloweenVisionArea_SetState final
 public:
 	EHalloweenObjectState                         NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenVisionArea_SetState) == 0x000001, "Wrong alignment on PyHalloweenVisionArea_SetState");
-static_assert(sizeof(PyHalloweenVisionArea_SetState) == 0x000001, "Wrong size on PyHalloweenVisionArea_SetState");
-static_assert(offsetof(PyHalloweenVisionArea_SetState, NewState) == 0x000000, "Member 'PyHalloweenVisionArea_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenVisionArea_SetState;
 
 // PythonFunction PyHalloweenVisionArea.PyHalloweenVisionArea.SetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyHalloweenVisionArea_SetActive final
 public:
 	bool                                          active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenVisionArea_SetActive) == 0x000001, "Wrong alignment on PyHalloweenVisionArea_SetActive");
-static_assert(sizeof(PyHalloweenVisionArea_SetActive) == 0x000001, "Wrong size on PyHalloweenVisionArea_SetActive");
-static_assert(offsetof(PyHalloweenVisionArea_SetActive, active) == 0x000000, "Member 'PyHalloweenVisionArea_SetActive::active' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenVisionArea_SetActive;
 
 // PythonFunction PyHalloweenVisionArea.PyHalloweenVisionArea.SetTriggered
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyHalloweenVisionArea_SetTriggered final
 public:
 	bool                                          is_triggered;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenVisionArea_SetTriggered) == 0x000001, "Wrong alignment on PyHalloweenVisionArea_SetTriggered");
-static_assert(sizeof(PyHalloweenVisionArea_SetTriggered) == 0x000001, "Wrong size on PyHalloweenVisionArea_SetTriggered");
-static_assert(offsetof(PyHalloweenVisionArea_SetTriggered, is_triggered) == 0x000000, "Member 'PyHalloweenVisionArea_SetTriggered::is_triggered' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenVisionArea_SetTriggered;
 
 }
 

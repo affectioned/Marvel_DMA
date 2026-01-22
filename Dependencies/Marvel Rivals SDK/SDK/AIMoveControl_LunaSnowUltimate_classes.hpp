@@ -23,15 +23,18 @@ class UAIMoveControl_LunaSnowUltimate_C final : public UAIAbilityMoveControlLogi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_LunaSnowUltimate_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_LunaSnowUltimate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_LunaSnowUltimate_C")
 	}
 	static class UAIMoveControl_LunaSnowUltimate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_LunaSnowUltimate_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_LunaSnowUltimate_C) == 0x000008, "Wrong alignment on UAIMoveControl_LunaSnowUltimate_C");
-static_assert(sizeof(UAIMoveControl_LunaSnowUltimate_C) == 0x0000B8, "Wrong size on UAIMoveControl_LunaSnowUltimate_C");
+DUMPER7_ASSERTS_UAIMoveControl_LunaSnowUltimate_C;
 
 }
 

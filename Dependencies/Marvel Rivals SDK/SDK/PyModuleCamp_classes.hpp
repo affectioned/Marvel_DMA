@@ -47,18 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModuleCamp">();
+		STATIC_CLASS_IMPL("PyModuleCamp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModuleCamp")
 	}
 	static class APyModuleCamp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyModuleCamp>();
 	}
 };
-static_assert(alignof(APyModuleCamp) == 0x000010, "Wrong alignment on APyModuleCamp");
-static_assert(sizeof(APyModuleCamp) == 0x000710, "Wrong size on APyModuleCamp");
-static_assert(offsetof(APyModuleCamp, NAME) == 0x0006F0, "Member 'APyModuleCamp::NAME' has a wrong offset!");
-static_assert(offsetof(APyModuleCamp, WinnerSide) == 0x000700, "Member 'APyModuleCamp::WinnerSide' has a wrong offset!");
-static_assert(offsetof(APyModuleCamp, AttackSide) == 0x000701, "Member 'APyModuleCamp::AttackSide' has a wrong offset!");
+DUMPER7_ASSERTS_APyModuleCamp;
 
 }
 

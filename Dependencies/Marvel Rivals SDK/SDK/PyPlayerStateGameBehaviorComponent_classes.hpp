@@ -41,18 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateGameBehaviorComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateGameBehaviorComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateGameBehaviorComponent")
 	}
 	static class UPyPlayerStateGameBehaviorComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateGameBehaviorComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateGameBehaviorComponent) == 0x000008, "Wrong alignment on UPyPlayerStateGameBehaviorComponent");
-static_assert(sizeof(UPyPlayerStateGameBehaviorComponent) == 0x000138, "Wrong size on UPyPlayerStateGameBehaviorComponent");
-static_assert(offsetof(UPyPlayerStateGameBehaviorComponent, OnInactiveStateChangeDispatch) == 0x000108, "Member 'UPyPlayerStateGameBehaviorComponent::OnInactiveStateChangeDispatch' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateGameBehaviorComponent, OnResetLastCountdownTime) == 0x000118, "Member 'UPyPlayerStateGameBehaviorComponent::OnResetLastCountdownTime' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateGameBehaviorComponent, OnResponseCheckInactiveStatusResult) == 0x000128, "Member 'UPyPlayerStateGameBehaviorComponent::OnResponseCheckInactiveStatusResult' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateGameBehaviorComponent;
 
 }
 

@@ -19,45 +19,48 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueClashPanel.PyWidget_LeagueClashPanel_Logo
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueClashPanel_Logo final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueClashPanel_Logo">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueClashPanel_Logo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueClashPanel_Logo")
 	}
 	static class UPyWidget_LeagueClashPanel_Logo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueClashPanel_Logo>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueClashPanel_Logo) == 0x000008, "Wrong alignment on UPyWidget_LeagueClashPanel_Logo");
-static_assert(sizeof(UPyWidget_LeagueClashPanel_Logo) == 0x0005C0, "Wrong size on UPyWidget_LeagueClashPanel_Logo");
+DUMPER7_ASSERTS_UPyWidget_LeagueClashPanel_Logo;
 
 // PythonClass PyWidget_LeagueClashPanel.PyWidget_LeagueClashPanel
-// 0x0108 (0x06C8 - 0x05C0)
+// 0x0108 (0x06D0 - 0x05C8)
 class UPyWidget_LeagueClashPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             DefaultBackground;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             EmptyBackground;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorSignUpSuccess;                            // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorSignUpCanceling;                          // 0x05E4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorSignUpConfirming;                         // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorPreliminaryMatching;                      // 0x060C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorPreliminaryFinish;                        // 0x0620(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorKnockoutEarlyStart;                       // 0x0634(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorWalkover;                                 // 0x0648(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorPromoted;                                 // 0x065C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           RuleKeyInputAction;                                // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CheckTeamGuideTipsStyles;                          // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMatLight;                                  // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     BigTitleMatDark;                                   // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SmallTitleColorLight;                              // 0x0698(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SmallTitleColorDark;                               // 0x06AC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OpenRule;                                  // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             DefaultBackground;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             EmptyBackground;                                   // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorSignUpSuccess;                            // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorSignUpCanceling;                          // 0x05EC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorSignUpConfirming;                         // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorPreliminaryMatching;                      // 0x0614(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorPreliminaryFinish;                        // 0x0628(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorKnockoutEarlyStart;                       // 0x063C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorWalkover;                                 // 0x0650(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorPromoted;                                 // 0x0664(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           RuleKeyInputAction;                                // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CheckTeamGuideTipsStyles;                          // 0x0680(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMatLight;                                  // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     BigTitleMatDark;                                   // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SmallTitleColorLight;                              // 0x06A0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SmallTitleColorDark;                               // 0x06B4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OpenRule;                                  // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -71,32 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueClashPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueClashPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueClashPanel")
 	}
 	static class UPyWidget_LeagueClashPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueClashPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueClashPanel) == 0x000008, "Wrong alignment on UPyWidget_LeagueClashPanel");
-static_assert(sizeof(UPyWidget_LeagueClashPanel) == 0x0006C8, "Wrong size on UPyWidget_LeagueClashPanel");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, DefaultBackground) == 0x0005C0, "Member 'UPyWidget_LeagueClashPanel::DefaultBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, EmptyBackground) == 0x0005C8, "Member 'UPyWidget_LeagueClashPanel::EmptyBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorSignUpSuccess) == 0x0005D0, "Member 'UPyWidget_LeagueClashPanel::TextColorSignUpSuccess' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorSignUpCanceling) == 0x0005E4, "Member 'UPyWidget_LeagueClashPanel::TextColorSignUpCanceling' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorSignUpConfirming) == 0x0005F8, "Member 'UPyWidget_LeagueClashPanel::TextColorSignUpConfirming' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorPreliminaryMatching) == 0x00060C, "Member 'UPyWidget_LeagueClashPanel::TextColorPreliminaryMatching' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorPreliminaryFinish) == 0x000620, "Member 'UPyWidget_LeagueClashPanel::TextColorPreliminaryFinish' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorKnockoutEarlyStart) == 0x000634, "Member 'UPyWidget_LeagueClashPanel::TextColorKnockoutEarlyStart' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorWalkover) == 0x000648, "Member 'UPyWidget_LeagueClashPanel::TextColorWalkover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, TextColorPromoted) == 0x00065C, "Member 'UPyWidget_LeagueClashPanel::TextColorPromoted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, RuleKeyInputAction) == 0x000670, "Member 'UPyWidget_LeagueClashPanel::RuleKeyInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, CheckTeamGuideTipsStyles) == 0x000678, "Member 'UPyWidget_LeagueClashPanel::CheckTeamGuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, BigTitleMatLight) == 0x000688, "Member 'UPyWidget_LeagueClashPanel::BigTitleMatLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, BigTitleMatDark) == 0x000690, "Member 'UPyWidget_LeagueClashPanel::BigTitleMatDark' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, SmallTitleColorLight) == 0x000698, "Member 'UPyWidget_LeagueClashPanel::SmallTitleColorLight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, SmallTitleColorDark) == 0x0006AC, "Member 'UPyWidget_LeagueClashPanel::SmallTitleColorDark' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueClashPanel, AkEvent_OpenRule) == 0x0006C0, "Member 'UPyWidget_LeagueClashPanel::AkEvent_OpenRule' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueClashPanel;
 
 }
 

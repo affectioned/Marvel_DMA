@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidge_SettingKeyBatchReplaceMain.PyWidge_SettingKeyBatchReplaceMain
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidge_SettingKeyBatchReplaceMain final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                CancelSelectTipStyles;                             // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CancelSelectTipStyles;                             // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidge_SettingKeyBatchReplaceMain">();
+		STATIC_CLASS_IMPL("PyWidge_SettingKeyBatchReplaceMain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidge_SettingKeyBatchReplaceMain")
 	}
 	static class UPyWidge_SettingKeyBatchReplaceMain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidge_SettingKeyBatchReplaceMain>();
 	}
 };
-static_assert(alignof(UPyWidge_SettingKeyBatchReplaceMain) == 0x000008, "Wrong alignment on UPyWidge_SettingKeyBatchReplaceMain");
-static_assert(sizeof(UPyWidge_SettingKeyBatchReplaceMain) == 0x000608, "Wrong size on UPyWidge_SettingKeyBatchReplaceMain");
-static_assert(offsetof(UPyWidge_SettingKeyBatchReplaceMain, CancelSelectTipStyles) == 0x0005F8, "Member 'UPyWidge_SettingKeyBatchReplaceMain::CancelSelectTipStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidge_SettingKeyBatchReplaceMain;
 
 }
 

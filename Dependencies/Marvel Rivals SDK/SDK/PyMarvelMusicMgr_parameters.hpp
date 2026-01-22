@@ -24,10 +24,7 @@ public:
 	EMusicStateType                               StateType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelMusicMgr_PostMusicStateDynamic) == 0x000001, "Wrong alignment on PyMarvelMusicMgr_PostMusicStateDynamic");
-static_assert(sizeof(PyMarvelMusicMgr_PostMusicStateDynamic) == 0x000002, "Wrong size on PyMarvelMusicMgr_PostMusicStateDynamic");
-static_assert(offsetof(PyMarvelMusicMgr_PostMusicStateDynamic, StateType) == 0x000000, "Member 'PyMarvelMusicMgr_PostMusicStateDynamic::StateType' has a wrong offset!");
-static_assert(offsetof(PyMarvelMusicMgr_PostMusicStateDynamic, ReturnValue) == 0x000001, "Member 'PyMarvelMusicMgr_PostMusicStateDynamic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelMusicMgr_PostMusicStateDynamic;
 
 }
 

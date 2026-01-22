@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PC_UISettingEntryBestSettingHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("PC_UISettingEntryBestSettingHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PC_UISettingEntryBestSettingHandlerBP_C")
 	}
 	static class UPC_UISettingEntryBestSettingHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPC_UISettingEntryBestSettingHandlerBP_C>();
 	}
 };
-static_assert(alignof(UPC_UISettingEntryBestSettingHandlerBP_C) == 0x000008, "Wrong alignment on UPC_UISettingEntryBestSettingHandlerBP_C");
-static_assert(sizeof(UPC_UISettingEntryBestSettingHandlerBP_C) == 0x000040, "Wrong size on UPC_UISettingEntryBestSettingHandlerBP_C");
-static_assert(offsetof(UPC_UISettingEntryBestSettingHandlerBP_C, TagRefresh) == 0x000030, "Member 'UPC_UISettingEntryBestSettingHandlerBP_C::TagRefresh' has a wrong offset!");
+DUMPER7_ASSERTS_UPC_UISettingEntryBestSettingHandlerBP_C;
 
 }
 

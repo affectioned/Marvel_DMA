@@ -33,7 +33,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceGuidingLine">();
+		STATIC_CLASS_IMPL("PyNoviceGuidingLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceGuidingLine")
 	}
 	static class APyNoviceGuidingLine* GetDefaultObj()
 	{
@@ -41,9 +45,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyNoviceGuidingLine) == 0x000010, "Wrong alignment on APyNoviceGuidingLine");
-static_assert(sizeof(APyNoviceGuidingLine) == 0x0006F0, "Wrong size on APyNoviceGuidingLine");
-static_assert(offsetof(APyNoviceGuidingLine, Material) == 0x0006E0, "Member 'APyNoviceGuidingLine::Material' has a wrong offset!");
+DUMPER7_ASSERTS_APyNoviceGuidingLine;
 
 }
 

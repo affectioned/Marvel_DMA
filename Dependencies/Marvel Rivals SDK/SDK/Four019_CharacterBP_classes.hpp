@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 4019_CharacterBP.4019_CharacterBP_C
-// 0x0000 (0x22C0 - 0x22C0)
+// 0x0000 (0x2420 - 0x2420)
 class AFour019_CharacterBP_C final : public APyUltronBotCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"4019_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("4019_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"4019_CharacterBP_C")
 	}
 	static class AFour019_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFour019_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AFour019_CharacterBP_C) == 0x000010, "Wrong alignment on AFour019_CharacterBP_C");
-static_assert(sizeof(AFour019_CharacterBP_C) == 0x0022C0, "Wrong size on AFour019_CharacterBP_C");
+DUMPER7_ASSERTS_AFour019_CharacterBP_C;
 
 }
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10475401_BP.Summoned_10475401_BP_C
-// 0x0010 (0x0C70 - 0x0C60)
+// 0x0010 (0x0C90 - 0x0C80)
 class ASummoned_10475401_BP_C final : public APySummoned_10130_104754
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C80(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_Summoned_10475401_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10475401_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10475401_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10475401_BP_C")
 	}
 	static class ASummoned_10475401_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10475401_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10475401_BP_C) == 0x000010, "Wrong alignment on ASummoned_10475401_BP_C");
-static_assert(sizeof(ASummoned_10475401_BP_C) == 0x000C70, "Wrong size on ASummoned_10475401_BP_C");
-static_assert(offsetof(ASummoned_10475401_BP_C, UberGraphFrame) == 0x000C60, "Member 'ASummoned_10475401_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10475401_BP_C;
 
 }
 

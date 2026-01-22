@@ -21,9 +21,7 @@ struct PyWidget_LeagueRanking_MainPanel_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueRanking_MainPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_LeagueRanking_MainPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_LeagueRanking_MainPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_LeagueRanking_MainPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_LeagueRanking_MainPanel_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_LeagueRanking_MainPanel_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueRanking_MainPanel_MarvelSetVisible;
 
 }
 

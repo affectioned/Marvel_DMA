@@ -21,9 +21,7 @@ struct PyAbilityModifier_10234401_ExecuteModifyOnApply final
 public:
 	class UMarvelGameplayAbility*                 Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityModifier_10234401_ExecuteModifyOnApply) == 0x000008, "Wrong alignment on PyAbilityModifier_10234401_ExecuteModifyOnApply");
-static_assert(sizeof(PyAbilityModifier_10234401_ExecuteModifyOnApply) == 0x000008, "Wrong size on PyAbilityModifier_10234401_ExecuteModifyOnApply");
-static_assert(offsetof(PyAbilityModifier_10234401_ExecuteModifyOnApply, Ability) == 0x000000, "Member 'PyAbilityModifier_10234401_ExecuteModifyOnApply::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityModifier_10234401_ExecuteModifyOnApply;
 
 // PythonFunction PyEffectAbility_120_10234401.PyAbilityModifier_10234401.RevertModifyOnRemove
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbilityModifier_10234401_RevertModifyOnRemove final
 public:
 	class UMarvelGameplayAbility*                 Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityModifier_10234401_RevertModifyOnRemove) == 0x000008, "Wrong alignment on PyAbilityModifier_10234401_RevertModifyOnRemove");
-static_assert(sizeof(PyAbilityModifier_10234401_RevertModifyOnRemove) == 0x000008, "Wrong size on PyAbilityModifier_10234401_RevertModifyOnRemove");
-static_assert(offsetof(PyAbilityModifier_10234401_RevertModifyOnRemove, Ability) == 0x000000, "Member 'PyAbilityModifier_10234401_RevertModifyOnRemove::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityModifier_10234401_RevertModifyOnRemove;
 
 // PythonFunction PyEffectAbility_120_10234401.PySummonedModifier_10234401.ExecuteModifyWhileSummonedInitData
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData final
 public:
 	class UMarvelSummonedComponent*               SummonedComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData) == 0x000008, "Wrong alignment on PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData");
-static_assert(sizeof(PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData) == 0x000008, "Wrong size on PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData");
-static_assert(offsetof(PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData, SummonedComponent) == 0x000000, "Member 'PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData::SummonedComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedModifier_10234401_ExecuteModifyWhileSummonedInitData;
 
 // PythonFunction PyEffectAbility_120_10234401.PyEffectAbility_120_10234401.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyEffectAbility_120_10234401_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10234401_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_120_10234401_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_120_10234401_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_120_10234401_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_120_10234401_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_120_10234401_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10234401_K2_OnEndAbility;
 
 }
 

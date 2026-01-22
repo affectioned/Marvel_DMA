@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Amb_Practicerange_Area_Virtual_C">();
+		BP_STATIC_CLASS_IMPL("Amb_Practicerange_Area_Virtual_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Amb_Practicerange_Area_Virtual_C")
 	}
 	static class AAmb_Practicerange_Area_Virtual_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmb_Practicerange_Area_Virtual_C>();
 	}
 };
-static_assert(alignof(AAmb_Practicerange_Area_Virtual_C) == 0x000010, "Wrong alignment on AAmb_Practicerange_Area_Virtual_C");
-static_assert(sizeof(AAmb_Practicerange_Area_Virtual_C) == 0x0006F0, "Wrong size on AAmb_Practicerange_Area_Virtual_C");
-static_assert(offsetof(AAmb_Practicerange_Area_Virtual_C, AmbientAudio) == 0x0006E0, "Member 'AAmb_Practicerange_Area_Virtual_C::AmbientAudio' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Area_Virtual_C, DefaultSceneRoot) == 0x0006E8, "Member 'AAmb_Practicerange_Area_Virtual_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAmb_Practicerange_Area_Virtual_C;
 
 }
 

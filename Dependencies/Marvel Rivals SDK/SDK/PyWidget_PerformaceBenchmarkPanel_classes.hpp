@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PerformaceBenchmarkPanel.PyWidget_PerformanceBenchmark_Progress
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PerformanceBenchmark_Progress final : public UPyMarvelUserWidget
 {
 public:
@@ -29,25 +29,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PerformanceBenchmark_Progress">();
+		STATIC_CLASS_IMPL("PyWidget_PerformanceBenchmark_Progress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PerformanceBenchmark_Progress")
 	}
 	static class UPyWidget_PerformanceBenchmark_Progress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PerformanceBenchmark_Progress>();
 	}
 };
-static_assert(alignof(UPyWidget_PerformanceBenchmark_Progress) == 0x000008, "Wrong alignment on UPyWidget_PerformanceBenchmark_Progress");
-static_assert(sizeof(UPyWidget_PerformanceBenchmark_Progress) == 0x0005C0, "Wrong size on UPyWidget_PerformanceBenchmark_Progress");
+DUMPER7_ASSERTS_UPyWidget_PerformanceBenchmark_Progress;
 
 // PythonClass PyWidget_PerformaceBenchmarkPanel.PyWidget_PerformanceBenchmark_ScorePanel
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_PerformanceBenchmark_ScorePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                InfoItemClass;                                     // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            GreenColor;                                        // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            OrangeColor;                                       // 0x0614(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedColor;                                          // 0x0628(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                InfoItemClass;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GreenColor;                                        // 0x0608(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            OrangeColor;                                       // 0x061C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedColor;                                          // 0x0630(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,22 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PerformanceBenchmark_ScorePanel">();
+		STATIC_CLASS_IMPL("PyWidget_PerformanceBenchmark_ScorePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PerformanceBenchmark_ScorePanel")
 	}
 	static class UPyWidget_PerformanceBenchmark_ScorePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PerformanceBenchmark_ScorePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PerformanceBenchmark_ScorePanel) == 0x000008, "Wrong alignment on UPyWidget_PerformanceBenchmark_ScorePanel");
-static_assert(sizeof(UPyWidget_PerformanceBenchmark_ScorePanel) == 0x000640, "Wrong size on UPyWidget_PerformanceBenchmark_ScorePanel");
-static_assert(offsetof(UPyWidget_PerformanceBenchmark_ScorePanel, InfoItemClass) == 0x0005F8, "Member 'UPyWidget_PerformanceBenchmark_ScorePanel::InfoItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PerformanceBenchmark_ScorePanel, GreenColor) == 0x000600, "Member 'UPyWidget_PerformanceBenchmark_ScorePanel::GreenColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PerformanceBenchmark_ScorePanel, OrangeColor) == 0x000614, "Member 'UPyWidget_PerformanceBenchmark_ScorePanel::OrangeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PerformanceBenchmark_ScorePanel, RedColor) == 0x000628, "Member 'UPyWidget_PerformanceBenchmark_ScorePanel::RedColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PerformanceBenchmark_ScorePanel;
 
 // PythonClass PyWidget_PerformaceBenchmarkPanel.PyWidget_PerformanceBenchmark_InfoItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PerformanceBenchmark_InfoItem final : public UPyMarvelUserWidget
 {
 public:
@@ -81,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PerformanceBenchmark_InfoItem">();
+		STATIC_CLASS_IMPL("PyWidget_PerformanceBenchmark_InfoItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PerformanceBenchmark_InfoItem")
 	}
 	static class UPyWidget_PerformanceBenchmark_InfoItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PerformanceBenchmark_InfoItem>();
 	}
 };
-static_assert(alignof(UPyWidget_PerformanceBenchmark_InfoItem) == 0x000008, "Wrong alignment on UPyWidget_PerformanceBenchmark_InfoItem");
-static_assert(sizeof(UPyWidget_PerformanceBenchmark_InfoItem) == 0x0005C0, "Wrong size on UPyWidget_PerformanceBenchmark_InfoItem");
+DUMPER7_ASSERTS_UPyWidget_PerformanceBenchmark_InfoItem;
 
 }
 

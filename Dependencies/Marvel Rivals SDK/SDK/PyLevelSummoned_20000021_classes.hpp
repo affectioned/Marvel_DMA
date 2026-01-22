@@ -13,15 +13,15 @@
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyLevelSummoned_20000021.PyCommonOverlapHandlerComponent
-// 0x0000 (0x0D68 - 0x0D68)
+// 0x0000 (0x1098 - 0x1098)
 class UPyCommonOverlapHandlerComponent final : public UOverlapHandlerComponent
 {
 public:
@@ -31,22 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCommonOverlapHandlerComponent">();
+		STATIC_CLASS_IMPL("PyCommonOverlapHandlerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCommonOverlapHandlerComponent")
 	}
 	static class UPyCommonOverlapHandlerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCommonOverlapHandlerComponent>();
 	}
 };
-static_assert(alignof(UPyCommonOverlapHandlerComponent) == 0x000008, "Wrong alignment on UPyCommonOverlapHandlerComponent");
-static_assert(sizeof(UPyCommonOverlapHandlerComponent) == 0x000D68, "Wrong size on UPyCommonOverlapHandlerComponent");
+DUMPER7_ASSERTS_UPyCommonOverlapHandlerComponent;
 
 // PythonClass PyLevelSummoned_20000021.PySummonedComp_20000021
-// 0x0008 (0x0DB8 - 0x0DB0)
+// 0x0008 (0x0E10 - 0x0E08)
 class UPySummonedComp_20000021 : public UMarvelSummonedComponent
 {
 public:
-	ECollisionChannel                             AbilityCollisionType;                              // 0x0DB0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             AbilityCollisionType;                              // 0x0E08(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -55,32 +58,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_20000021">();
+		STATIC_CLASS_IMPL("PySummonedComp_20000021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_20000021")
 	}
 	static class UPySummonedComp_20000021* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_20000021>();
 	}
 };
-static_assert(alignof(UPySummonedComp_20000021) == 0x000008, "Wrong alignment on UPySummonedComp_20000021");
-static_assert(sizeof(UPySummonedComp_20000021) == 0x000DB8, "Wrong size on UPySummonedComp_20000021");
-static_assert(offsetof(UPySummonedComp_20000021, AbilityCollisionType) == 0x000DB0, "Member 'UPySummonedComp_20000021::AbilityCollisionType' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_20000021;
 
 // PythonClass PyLevelSummoned_20000021.PyLevelSummoned_20000021
-// 0x0040 (0x0BB0 - 0x0B70)
+// 0x0040 (0x0BD0 - 0x0B90)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyLevelSummoned_20000021 : public AMarvelLevelSummonedBase
 {
 public:
-	uint8                                         Pad_B68[0x8];                                      // 0x0B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	EBattleSide                                   BattleSide;                                        // 0x0B70(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B71[0x3];                                      // 0x0B71(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PickUpUID;                                         // 0x0B74(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsLanded;                                         // 0x0B78(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsLaunched;                                       // 0x0B79(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B7A[0x6];                                      // 0x0B7A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                InitialVelocity;                                   // 0x0B80(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ClientEndAgentTask;                                // 0x0B98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B88[0x8];                                      // 0x0B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	EBattleSide                                   BattleSide;                                        // 0x0B90(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B91[0x3];                                      // 0x0B91(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PickUpUID;                                         // 0x0B94(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsLanded;                                         // 0x0B98(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsLaunched;                                       // 0x0B99(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B9A[0x6];                                      // 0x0B9A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                InitialVelocity;                                   // 0x0BA0(0x0018)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ClientEndAgentTask;                                // 0x0BB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -95,7 +100,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_20000021">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_20000021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_20000021")
 	}
 	static class APyLevelSummoned_20000021* GetDefaultObj()
 	{
@@ -103,17 +112,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyLevelSummoned_20000021) == 0x000010, "Wrong alignment on APyLevelSummoned_20000021");
-static_assert(sizeof(APyLevelSummoned_20000021) == 0x000BB0, "Wrong size on APyLevelSummoned_20000021");
-static_assert(offsetof(APyLevelSummoned_20000021, BattleSide) == 0x000B70, "Member 'APyLevelSummoned_20000021::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000021, PickUpUID) == 0x000B74, "Member 'APyLevelSummoned_20000021::PickUpUID' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000021, bIsLanded) == 0x000B78, "Member 'APyLevelSummoned_20000021::bIsLanded' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000021, bIsLaunched) == 0x000B79, "Member 'APyLevelSummoned_20000021::bIsLaunched' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000021, InitialVelocity) == 0x000B80, "Member 'APyLevelSummoned_20000021::InitialVelocity' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000021, ClientEndAgentTask) == 0x000B98, "Member 'APyLevelSummoned_20000021::ClientEndAgentTask' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_20000021;
 
 // PythonClass PyLevelSummoned_20000021.PyCue_Summoner_Loop_20030001_BP
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APyCue_Summoner_Loop_20030001_BP final : public AMarvelCueNotify_Summoned
 {
 public:
@@ -125,18 +127,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_20030001_BP">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_20030001_BP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_20030001_BP")
 	}
 	static class APyCue_Summoner_Loop_20030001_BP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_20030001_BP>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_20030001_BP) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_20030001_BP");
-static_assert(sizeof(APyCue_Summoner_Loop_20030001_BP) == 0x001200, "Wrong size on APyCue_Summoner_Loop_20030001_BP");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_20030001_BP;
 
 // PythonClass PyLevelSummoned_20000021.PyOverlapHandlerComponent_20000021
-// 0x0000 (0x0D68 - 0x0D68)
+// 0x0000 (0x1098 - 0x1098)
 class UPyOverlapHandlerComponent_20000021 final : public UOverlapHandlerComponent
 {
 public:
@@ -146,25 +151,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOverlapHandlerComponent_20000021">();
+		STATIC_CLASS_IMPL("PyOverlapHandlerComponent_20000021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOverlapHandlerComponent_20000021")
 	}
 	static class UPyOverlapHandlerComponent_20000021* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyOverlapHandlerComponent_20000021>();
 	}
 };
-static_assert(alignof(UPyOverlapHandlerComponent_20000021) == 0x000008, "Wrong alignment on UPyOverlapHandlerComponent_20000021");
-static_assert(sizeof(UPyOverlapHandlerComponent_20000021) == 0x000D68, "Wrong size on UPyOverlapHandlerComponent_20000021");
+DUMPER7_ASSERTS_UPyOverlapHandlerComponent_20000021;
 
 // PythonClass PyLevelSummoned_20000021.PyLevelSummoned_20000022
-// 0x0030 (0x0BA0 - 0x0B70)
+// 0x0030 (0x0BC0 - 0x0B90)
 class APyLevelSummoned_20000022 final : public AMarvelLevelSummonedBase
 {
 public:
-	uint8                                         Pad_B68[0x8];                                      // 0x0B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         AppearFX;                                          // 0x0B70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         ReleaseFX;                                         // 0x0B78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Velocity;                                          // 0x0B80(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B88[0x8];                                      // 0x0B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         AppearFX;                                          // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         ReleaseFX;                                         // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Velocity;                                          // 0x0BA0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -172,18 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_20000022">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_20000022")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_20000022")
 	}
 	static class APyLevelSummoned_20000022* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_20000022>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_20000022) == 0x000010, "Wrong alignment on APyLevelSummoned_20000022");
-static_assert(sizeof(APyLevelSummoned_20000022) == 0x000BA0, "Wrong size on APyLevelSummoned_20000022");
-static_assert(offsetof(APyLevelSummoned_20000022, AppearFX) == 0x000B70, "Member 'APyLevelSummoned_20000022::AppearFX' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000022, ReleaseFX) == 0x000B78, "Member 'APyLevelSummoned_20000022::ReleaseFX' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20000022, Velocity) == 0x000B80, "Member 'APyLevelSummoned_20000022::Velocity' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_20000022;
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReticleContainer.PyWidget_ReticleContainer
-// 0x0068 (0x0640 - 0x05D8)
+// 0x0068 (0x0648 - 0x05E0)
 class UPyWidget_ReticleContainer : public UWidget_ReticleContainer
 {
 public:
-	bool                                          UseGlobalHitEffectConfig;                          // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIHitEffectConfig                     GlobalUIHitEffectConfig;                           // 0x05E0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          UseGlobalHitEffectConfig;                          // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIHitEffectConfig                     GlobalUIHitEffectConfig;                           // 0x05E8(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,17 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReticleContainer">();
+		STATIC_CLASS_IMPL("PyWidget_ReticleContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReticleContainer")
 	}
 	static class UPyWidget_ReticleContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReticleContainer>();
 	}
 };
-static_assert(alignof(UPyWidget_ReticleContainer) == 0x000008, "Wrong alignment on UPyWidget_ReticleContainer");
-static_assert(sizeof(UPyWidget_ReticleContainer) == 0x000640, "Wrong size on UPyWidget_ReticleContainer");
-static_assert(offsetof(UPyWidget_ReticleContainer, UseGlobalHitEffectConfig) == 0x0005D8, "Member 'UPyWidget_ReticleContainer::UseGlobalHitEffectConfig' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReticleContainer, GlobalUIHitEffectConfig) == 0x0005E0, "Member 'UPyWidget_ReticleContainer::GlobalUIHitEffectConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReticleContainer;
 
 }
 

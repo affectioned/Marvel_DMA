@@ -23,15 +23,18 @@ class UAIScoreModuleCondition_Distance_BP_C final : public UAIScoreModuleConditi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIScoreModuleCondition_Distance_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIScoreModuleCondition_Distance_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModuleCondition_Distance_BP_C")
 	}
 	static class UAIScoreModuleCondition_Distance_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModuleCondition_Distance_BP_C>();
 	}
 };
-static_assert(alignof(UAIScoreModuleCondition_Distance_BP_C) == 0x000008, "Wrong alignment on UAIScoreModuleCondition_Distance_BP_C");
-static_assert(sizeof(UAIScoreModuleCondition_Distance_BP_C) == 0x000038, "Wrong size on UAIScoreModuleCondition_Distance_BP_C");
+DUMPER7_ASSERTS_UAIScoreModuleCondition_Distance_BP_C;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerChildPanel.PyWidget_CareerChildPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_CareerChildPanel : public UPyMarvelUserWidget
 {
@@ -29,7 +29,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerChildPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerChildPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerChildPanel")
 	}
 	static class UPyWidget_CareerChildPanel* GetDefaultObj()
 	{
@@ -37,8 +41,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_CareerChildPanel) == 0x000008, "Wrong alignment on UPyWidget_CareerChildPanel");
-static_assert(sizeof(UPyWidget_CareerChildPanel) == 0x0005C0, "Wrong size on UPyWidget_CareerChildPanel");
+DUMPER7_ASSERTS_UPyWidget_CareerChildPanel;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Penetration_C_ExecuteUbergraph_BP_Penetration) == 0x000004, "Wrong alignment on BP_Penetration_C_ExecuteUbergraph_BP_Penetration");
-static_assert(sizeof(BP_Penetration_C_ExecuteUbergraph_BP_Penetration) == 0x000008, "Wrong size on BP_Penetration_C_ExecuteUbergraph_BP_Penetration");
-static_assert(offsetof(BP_Penetration_C_ExecuteUbergraph_BP_Penetration, EntryPoint) == 0x000000, "Member 'BP_Penetration_C_ExecuteUbergraph_BP_Penetration::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Penetration_C_ExecuteUbergraph_BP_Penetration, CallFunc_IsServer_ReturnValue) == 0x000004, "Member 'BP_Penetration_C_ExecuteUbergraph_BP_Penetration::CallFunc_IsServer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_Penetration_C_ExecuteUbergraph_BP_Penetration;
 
 }
 

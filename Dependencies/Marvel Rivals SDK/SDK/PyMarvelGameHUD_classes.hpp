@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelGameHUD">();
+		STATIC_CLASS_IMPL("PyMarvelGameHUD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelGameHUD")
 	}
 	static class APyMarvelGameHUD* GetDefaultObj()
 	{
@@ -40,8 +44,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyMarvelGameHUD) == 0x000010, "Wrong alignment on APyMarvelGameHUD");
-static_assert(sizeof(APyMarvelGameHUD) == 0x000950, "Wrong size on APyMarvelGameHUD");
+DUMPER7_ASSERTS_APyMarvelGameHUD;
 
 }
 

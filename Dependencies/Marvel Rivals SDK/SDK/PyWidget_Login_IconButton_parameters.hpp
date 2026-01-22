@@ -21,9 +21,7 @@ struct PyWidget_Login_IconButton_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Login_IconButton_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Login_IconButton_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Login_IconButton_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Login_IconButton_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Login_IconButton_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_Login_IconButton_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Login_IconButton_OnCascadingVisibleChanged;
 
 }
 

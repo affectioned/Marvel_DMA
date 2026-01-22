@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyAbilityActionBase">();
+		STATIC_CLASS_IMPL("BTT_PyAbilityActionBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyAbilityActionBase")
 	}
 	static class UBTT_PyAbilityActionBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyAbilityActionBase>();
 	}
 };
-static_assert(alignof(UBTT_PyAbilityActionBase) == 0x000008, "Wrong alignment on UBTT_PyAbilityActionBase");
-static_assert(sizeof(UBTT_PyAbilityActionBase) == 0x0000F0, "Wrong size on UBTT_PyAbilityActionBase");
-static_assert(offsetof(UBTT_PyAbilityActionBase, InAbilityUsageObject) == 0x0000C0, "Member 'UBTT_PyAbilityActionBase::InAbilityUsageObject' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyAbilityActionBase;
 
 // PythonClass BTT_PyAbilityActionBase.BTT_PyAbilityActionButtonBase
 // 0x0008 (0x00F8 - 0x00F0)
@@ -59,17 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyAbilityActionButtonBase">();
+		STATIC_CLASS_IMPL("BTT_PyAbilityActionButtonBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyAbilityActionButtonBase")
 	}
 	static class UBTT_PyAbilityActionButtonBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyAbilityActionButtonBase>();
 	}
 };
-static_assert(alignof(UBTT_PyAbilityActionButtonBase) == 0x000008, "Wrong alignment on UBTT_PyAbilityActionButtonBase");
-static_assert(sizeof(UBTT_PyAbilityActionButtonBase) == 0x0000F8, "Wrong size on UBTT_PyAbilityActionButtonBase");
-static_assert(offsetof(UBTT_PyAbilityActionButtonBase, Action) == 0x0000F0, "Member 'UBTT_PyAbilityActionButtonBase::Action' has a wrong offset!");
-static_assert(offsetof(UBTT_PyAbilityActionButtonBase, PressDuration) == 0x0000F4, "Member 'UBTT_PyAbilityActionButtonBase::PressDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyAbilityActionButtonBase;
 
 }
 

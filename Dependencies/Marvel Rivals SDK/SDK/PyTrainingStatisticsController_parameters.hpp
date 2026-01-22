@@ -23,9 +23,7 @@ struct PyTrainingStatisticsController_Initialize final
 public:
 	class UObject*                                ActionlogController;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_Initialize) == 0x000008, "Wrong alignment on PyTrainingStatisticsController_Initialize");
-static_assert(sizeof(PyTrainingStatisticsController_Initialize) == 0x000008, "Wrong size on PyTrainingStatisticsController_Initialize");
-static_assert(offsetof(PyTrainingStatisticsController_Initialize, ActionlogController) == 0x000000, "Member 'PyTrainingStatisticsController_Initialize::ActionlogController' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_Initialize;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnAddPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyTrainingStatisticsController_OnAddPlayerState final
 public:
 	class AMarvelPlayerState*                     player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnAddPlayerState) == 0x000008, "Wrong alignment on PyTrainingStatisticsController_OnAddPlayerState");
-static_assert(sizeof(PyTrainingStatisticsController_OnAddPlayerState) == 0x000008, "Wrong size on PyTrainingStatisticsController_OnAddPlayerState");
-static_assert(offsetof(PyTrainingStatisticsController_OnAddPlayerState, player_state) == 0x000000, "Member 'PyTrainingStatisticsController_OnAddPlayerState::player_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnAddPlayerState;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnDelPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyTrainingStatisticsController_OnDelPlayerState final
 public:
 	class AMarvelPlayerState*                     player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnDelPlayerState) == 0x000008, "Wrong alignment on PyTrainingStatisticsController_OnDelPlayerState");
-static_assert(sizeof(PyTrainingStatisticsController_OnDelPlayerState) == 0x000008, "Wrong size on PyTrainingStatisticsController_OnDelPlayerState");
-static_assert(offsetof(PyTrainingStatisticsController_OnDelPlayerState, player_state) == 0x000000, "Member 'PyTrainingStatisticsController_OnDelPlayerState::player_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnDelPlayerState;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnEnterTrainArea
 // 0x0010 (0x0010 - 0x0000)
@@ -57,10 +51,7 @@ public:
 	class APyMarvelPlayerState*                   player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ETrainAreaType                                area_type;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnEnterTrainArea) == 0x000008, "Wrong alignment on PyTrainingStatisticsController_OnEnterTrainArea");
-static_assert(sizeof(PyTrainingStatisticsController_OnEnterTrainArea) == 0x000010, "Wrong size on PyTrainingStatisticsController_OnEnterTrainArea");
-static_assert(offsetof(PyTrainingStatisticsController_OnEnterTrainArea, player_state) == 0x000000, "Member 'PyTrainingStatisticsController_OnEnterTrainArea::player_state' has a wrong offset!");
-static_assert(offsetof(PyTrainingStatisticsController_OnEnterTrainArea, area_type) == 0x000008, "Member 'PyTrainingStatisticsController_OnEnterTrainArea::area_type' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnEnterTrainArea;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnLeaveTrainArea
 // 0x0010 (0x0010 - 0x0000)
@@ -70,10 +61,7 @@ public:
 	class APyMarvelPlayerState*                   player_state;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ETrainAreaType                                area_type;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnLeaveTrainArea) == 0x000008, "Wrong alignment on PyTrainingStatisticsController_OnLeaveTrainArea");
-static_assert(sizeof(PyTrainingStatisticsController_OnLeaveTrainArea) == 0x000010, "Wrong size on PyTrainingStatisticsController_OnLeaveTrainArea");
-static_assert(offsetof(PyTrainingStatisticsController_OnLeaveTrainArea, player_state) == 0x000000, "Member 'PyTrainingStatisticsController_OnLeaveTrainArea::player_state' has a wrong offset!");
-static_assert(offsetof(PyTrainingStatisticsController_OnLeaveTrainArea, area_type) == 0x000008, "Member 'PyTrainingStatisticsController_OnLeaveTrainArea::area_type' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnLeaveTrainArea;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnTrainStart
 // 0x0018 (0x0018 - 0x0000)
@@ -82,9 +70,7 @@ struct PyTrainingStatisticsController_OnTrainStart final
 public:
 	struct FTrainLogContent                       info;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnTrainStart) == 0x000004, "Wrong alignment on PyTrainingStatisticsController_OnTrainStart");
-static_assert(sizeof(PyTrainingStatisticsController_OnTrainStart) == 0x000018, "Wrong size on PyTrainingStatisticsController_OnTrainStart");
-static_assert(offsetof(PyTrainingStatisticsController_OnTrainStart, info) == 0x000000, "Member 'PyTrainingStatisticsController_OnTrainStart::info' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnTrainStart;
 
 // PythonFunction PyTrainingStatisticsController.PyTrainingStatisticsController.OnTrainEnd
 // 0x0010 (0x0010 - 0x0000)
@@ -97,12 +83,7 @@ public:
 	int32                                         uid;                                               // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          is_finish;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingStatisticsController_OnTrainEnd) == 0x000004, "Wrong alignment on PyTrainingStatisticsController_OnTrainEnd");
-static_assert(sizeof(PyTrainingStatisticsController_OnTrainEnd) == 0x000010, "Wrong size on PyTrainingStatisticsController_OnTrainEnd");
-static_assert(offsetof(PyTrainingStatisticsController_OnTrainEnd, ret) == 0x000000, "Member 'PyTrainingStatisticsController_OnTrainEnd::ret' has a wrong offset!");
-static_assert(offsetof(PyTrainingStatisticsController_OnTrainEnd, action) == 0x000004, "Member 'PyTrainingStatisticsController_OnTrainEnd::action' has a wrong offset!");
-static_assert(offsetof(PyTrainingStatisticsController_OnTrainEnd, uid) == 0x000008, "Member 'PyTrainingStatisticsController_OnTrainEnd::uid' has a wrong offset!");
-static_assert(offsetof(PyTrainingStatisticsController_OnTrainEnd, is_finish) == 0x00000C, "Member 'PyTrainingStatisticsController_OnTrainEnd::is_finish' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingStatisticsController_OnTrainEnd;
 
 }
 

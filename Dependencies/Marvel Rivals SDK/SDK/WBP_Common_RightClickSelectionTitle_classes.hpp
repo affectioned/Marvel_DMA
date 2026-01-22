@@ -31,21 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_RightClickSelectionTitle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_RightClickSelectionTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_RightClickSelectionTitle_C")
 	}
 	static class UWBP_Common_RightClickSelectionTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_RightClickSelectionTitle_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_RightClickSelectionTitle_C) == 0x000008, "Wrong alignment on UWBP_Common_RightClickSelectionTitle_C");
-static_assert(sizeof(UWBP_Common_RightClickSelectionTitle_C) == 0x0003F0, "Wrong size on UWBP_Common_RightClickSelectionTitle_C");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, Img_Discord_Icon) == 0x0003C0, "Member 'UWBP_Common_RightClickSelectionTitle_C::Img_Discord_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, Img_Line) == 0x0003C8, "Member 'UWBP_Common_RightClickSelectionTitle_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, Img_Platform_Bg) == 0x0003D0, "Member 'UWBP_Common_RightClickSelectionTitle_C::Img_Platform_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, Overlay_PlatformInfo) == 0x0003D8, "Member 'UWBP_Common_RightClickSelectionTitle_C::Overlay_PlatformInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, Text_Platform_Name) == 0x0003E0, "Member 'UWBP_Common_RightClickSelectionTitle_C::Text_Platform_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionTitle_C, WBP_Platform_Icon) == 0x0003E8, "Member 'UWBP_Common_RightClickSelectionTitle_C::WBP_Platform_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_RightClickSelectionTitle_C;
 
 }
 

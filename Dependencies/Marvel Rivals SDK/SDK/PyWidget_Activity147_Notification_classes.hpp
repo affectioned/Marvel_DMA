@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "SlateCore_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_Notification.PyWidget_Activity147_Notification_Tab
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Activity147_Notification_Tab final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedColor;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedColor;                                     // 0x05F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,27 +37,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Notification_Tab">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Notification_Tab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Notification_Tab")
 	}
 	static class UPyWidget_Activity147_Notification_Tab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Notification_Tab>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Notification_Tab) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Notification_Tab");
-static_assert(sizeof(UPyWidget_Activity147_Notification_Tab) == 0x000610, "Wrong size on UPyWidget_Activity147_Notification_Tab");
-static_assert(offsetof(UPyWidget_Activity147_Notification_Tab, BtnText) == 0x0005C0, "Member 'UPyWidget_Activity147_Notification_Tab::BtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Notification_Tab, NormalColor) == 0x0005D8, "Member 'UPyWidget_Activity147_Notification_Tab::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Notification_Tab, SelectedColor) == 0x0005EC, "Member 'UPyWidget_Activity147_Notification_Tab::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Notification_Tab, OnClicked) == 0x000600, "Member 'UPyWidget_Activity147_Notification_Tab::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Notification_Tab;
 
 // PythonClass PyWidget_Activity147_Notification.PyWidget_Activity147_Notification
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Activity147_Notification final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          SwitchTabAudio;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          SwitchTabAudio;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -67,16 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Notification">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Notification")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Notification")
 	}
 	static class UPyWidget_Activity147_Notification* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Notification>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Notification) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Notification");
-static_assert(sizeof(UPyWidget_Activity147_Notification) == 0x0005C8, "Wrong size on UPyWidget_Activity147_Notification");
-static_assert(offsetof(UPyWidget_Activity147_Notification, SwitchTabAudio) == 0x0005C0, "Member 'UPyWidget_Activity147_Notification::SwitchTabAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Notification;
 
 }
 

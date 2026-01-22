@@ -17,6 +17,181 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_AbilityIntroShapeLabel::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.PreConstruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "PreConstruct");
+
+	Params::PyWidget_AbilityIntroShapeLabel_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetSelected
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsSelected_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::SetSelected(bool IsSelected_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetSelected");
+
+	Params::PyWidget_AbilityIntroShapeLabel_SetSelected Parms{};
+
+	Parms.IsSelected_0 = IsSelected_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetIsHover
+// (Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    IsHover_0                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::SetIsHover(bool IsHover_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetIsHover");
+
+	Params::PyWidget_AbilityIntroShapeLabel_SetIsHover Parms{};
+
+	Parms.IsHover_0 = IsHover_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetHeroID
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ShapeID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PageID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHeroRole                               HeroRole                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::SetHeroID(int32 HeroID, int32 ShapeID, int32 PageID, EHeroRole HeroRole)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetHeroID");
+
+	Params::PyWidget_AbilityIntroShapeLabel_SetHeroID Parms{};
+
+	Parms.HeroID = HeroID;
+	Parms.ShapeID = ShapeID;
+	Parms.PageID = PageID;
+	Parms.HeroRole = HeroRole;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnHeroIconNoSelectedLoad
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::OnHeroIconNoSelectedLoad(class UTexture2D* Picture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnHeroIconNoSelectedLoad");
+
+	Params::PyWidget_AbilityIntroShapeLabel_OnHeroIconNoSelectedLoad Parms{};
+
+	Parms.Picture = Picture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnHeroIconSelectedLoad
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_AbilityIntroShapeLabel::OnHeroIconSelectedLoad(class UTexture2D* Picture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnHeroIconSelectedLoad");
+
+	Params::PyWidget_AbilityIntroShapeLabel_OnHeroIconSelectedLoad Parms{};
+
+	Parms.Picture = Picture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_AbilityIntroPanel.PyWidget_PageListUnit.PreConstruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -362,179 +537,6 @@ void UPyWidget_AbilityIntroUltimateUnit::OnInitialized()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_AbilityIntroShapeLabel::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "PreConstruct");
-
-	Params::PyWidget_AbilityIntroShapeLabel_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetSelected
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    IsSelected_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::SetSelected(bool IsSelected_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetSelected");
-
-	Params::PyWidget_AbilityIntroShapeLabel_SetSelected Parms{};
-
-	Parms.IsSelected_0 = IsSelected_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetIsHover
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// bool                                    IsHover_0                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::SetIsHover(bool IsHover_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetIsHover");
-
-	Params::PyWidget_AbilityIntroShapeLabel_SetIsHover Parms{};
-
-	Parms.IsHover_0 = IsHover_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.SetHeroID
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   HeroID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ShapeID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   PageID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::SetHeroID(int32 HeroID, int32 ShapeID, int32 PageID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "SetHeroID");
-
-	Params::PyWidget_AbilityIntroShapeLabel_SetHeroID Parms{};
-
-	Parms.HeroID = HeroID;
-	Parms.ShapeID = ShapeID;
-	Parms.PageID = PageID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnHeroIconNoSelectedLoad
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::OnHeroIconNoSelectedLoad(class UTexture2D* Picture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnHeroIconNoSelectedLoad");
-
-	Params::PyWidget_AbilityIntroShapeLabel_OnHeroIconNoSelectedLoad Parms{};
-
-	Parms.Picture = Picture;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AbilityIntroPanel.PyWidget_AbilityIntroShapeLabel.OnHeroIconSelectedLoad
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UTexture2D*                       Picture                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_AbilityIntroShapeLabel::OnHeroIconSelectedLoad(class UTexture2D* Picture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AbilityIntroShapeLabel", "OnHeroIconSelectedLoad");
-
-	Params::PyWidget_AbilityIntroShapeLabel_OnHeroIconSelectedLoad Parms{};
-
-	Parms.Picture = Picture;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

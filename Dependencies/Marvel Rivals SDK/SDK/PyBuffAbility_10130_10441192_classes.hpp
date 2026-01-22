@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441192.PyEffectAbility_10130_10441192
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyEffectAbility_10130_10441192 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         DamagePerStack;                                    // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ChangeDamageEffectID;                              // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamagePerStack;                                    // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ChangeDamageEffectID;                              // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_10130_10441192">();
+		STATIC_CLASS_IMPL("PyEffectAbility_10130_10441192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_10130_10441192")
 	}
 	static class UPyEffectAbility_10130_10441192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_10130_10441192>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_10130_10441192) == 0x000008, "Wrong alignment on UPyEffectAbility_10130_10441192");
-static_assert(sizeof(UPyEffectAbility_10130_10441192) == 0x001A38, "Wrong size on UPyEffectAbility_10130_10441192");
-static_assert(offsetof(UPyEffectAbility_10130_10441192, DamagePerStack) == 0x001A30, "Member 'UPyEffectAbility_10130_10441192::DamagePerStack' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_10130_10441192, ChangeDamageEffectID) == 0x001A34, "Member 'UPyEffectAbility_10130_10441192::ChangeDamageEffectID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_10130_10441192;
 
 }
 

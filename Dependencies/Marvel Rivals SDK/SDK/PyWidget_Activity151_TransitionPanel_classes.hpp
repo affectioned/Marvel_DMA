@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_TransitionPanel.PyWidget_Activity151_TransitionPanel
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_Activity151_TransitionPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         waiting_timepoint;                                 // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         waiting_timeout;                                   // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       main_video_player;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       mask_video_player;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          fadein_audio;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          fadeout_audio;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         waiting_timepoint;                                 // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         waiting_timeout;                                   // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       main_video_player;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       mask_video_player;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          fadein_audio;                                      // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          fadeout_audio;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_TransitionPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_TransitionPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_TransitionPanel")
 	}
 	static class UPyWidget_Activity151_TransitionPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_TransitionPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_TransitionPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity151_TransitionPanel");
-static_assert(sizeof(UPyWidget_Activity151_TransitionPanel) == 0x000620, "Wrong size on UPyWidget_Activity151_TransitionPanel");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, waiting_timepoint) == 0x0005F8, "Member 'UPyWidget_Activity151_TransitionPanel::waiting_timepoint' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, waiting_timeout) == 0x0005FC, "Member 'UPyWidget_Activity151_TransitionPanel::waiting_timeout' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, main_video_player) == 0x000600, "Member 'UPyWidget_Activity151_TransitionPanel::main_video_player' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, mask_video_player) == 0x000608, "Member 'UPyWidget_Activity151_TransitionPanel::mask_video_player' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, fadein_audio) == 0x000610, "Member 'UPyWidget_Activity151_TransitionPanel::fadein_audio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_TransitionPanel, fadeout_audio) == 0x000618, "Member 'UPyWidget_Activity151_TransitionPanel::fadeout_audio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_TransitionPanel;
 
 }
 

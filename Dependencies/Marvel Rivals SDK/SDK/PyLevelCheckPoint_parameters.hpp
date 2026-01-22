@@ -26,9 +26,7 @@ struct PyLevelCheckPoint_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ReceiveEndPlay");
-static_assert(sizeof(PyLevelCheckPoint_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelCheckPoint_ReceiveEndPlay");
-static_assert(offsetof(PyLevelCheckPoint_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelCheckPoint_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ReceiveEndPlay;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenWeaponAim
 // 0x0020 (0x0020 - 0x0000)
@@ -40,11 +38,7 @@ public:
 	class FString                                 TargetName;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	EObjectTypeQuery                              TargetType;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenWeaponAim) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenWeaponAim");
-static_assert(sizeof(PyLevelCheckPoint_ListenWeaponAim) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenWeaponAim");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAim, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenWeaponAim::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAim, TargetName) == 0x000008, "Member 'PyLevelCheckPoint_ListenWeaponAim::TargetName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAim, TargetType) == 0x000018, "Member 'PyLevelCheckPoint_ListenWeaponAim::TargetType' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenWeaponAim;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenWeaponAims
 // 0x0028 (0x0028 - 0x0000)
@@ -56,11 +50,7 @@ public:
 	TArray<class FString>                         TargetNameList;                                    // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<EObjectTypeQuery>                      TargetTypeList;                                    // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenWeaponAims) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenWeaponAims");
-static_assert(sizeof(PyLevelCheckPoint_ListenWeaponAims) == 0x000028, "Wrong size on PyLevelCheckPoint_ListenWeaponAims");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAims, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenWeaponAims::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAims, TargetNameList) == 0x000008, "Member 'PyLevelCheckPoint_ListenWeaponAims::TargetNameList' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenWeaponAims, TargetTypeList) == 0x000018, "Member 'PyLevelCheckPoint_ListenWeaponAims::TargetTypeList' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenWeaponAims;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenAIDeath
 // 0x0018 (0x0018 - 0x0000)
@@ -71,10 +61,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 NoviceAISpawnActorName;                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenAIDeath) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenAIDeath");
-static_assert(sizeof(PyLevelCheckPoint_ListenAIDeath) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenAIDeath");
-static_assert(offsetof(PyLevelCheckPoint_ListenAIDeath, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenAIDeath::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenAIDeath, NoviceAISpawnActorName) == 0x000008, "Member 'PyLevelCheckPoint_ListenAIDeath::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenAIDeath;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPlayerKillAI
 // 0x0020 (0x0020 - 0x0000)
@@ -88,12 +75,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FinishEvent;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPlayerKillAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenPlayerKillAI");
-static_assert(sizeof(PyLevelCheckPoint_ListenPlayerKillAI) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenPlayerKillAI");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAI, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenPlayerKillAI::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAI, HeroID) == 0x000004, "Member 'PyLevelCheckPoint_ListenPlayerKillAI::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAI, KillNum) == 0x000008, "Member 'PyLevelCheckPoint_ListenPlayerKillAI::KillNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAI, FinishEvent) == 0x000010, "Member 'PyLevelCheckPoint_ListenPlayerKillAI::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPlayerKillAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPlayerKillAIWithBuff
 // 0x0020 (0x0020 - 0x0000)
@@ -107,13 +89,7 @@ public:
 	int32                                         BuffID;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 FinishEvent;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenPlayerKillAIWithBuff");
-static_assert(sizeof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenPlayerKillAIWithBuff");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenPlayerKillAIWithBuff::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff, HeroID) == 0x000004, "Member 'PyLevelCheckPoint_ListenPlayerKillAIWithBuff::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff, KillNum) == 0x000008, "Member 'PyLevelCheckPoint_ListenPlayerKillAIWithBuff::KillNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff, BuffID) == 0x00000C, "Member 'PyLevelCheckPoint_ListenPlayerKillAIWithBuff::BuffID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPlayerKillAIWithBuff, FinishEvent) == 0x000010, "Member 'PyLevelCheckPoint_ListenPlayerKillAIWithBuff::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPlayerKillAIWithBuff;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenHitAI
 // 0x0028 (0x0028 - 0x0000)
@@ -130,14 +106,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FinishEvent;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenHitAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenHitAI");
-static_assert(sizeof(PyLevelCheckPoint_ListenHitAI) == 0x000028, "Wrong size on PyLevelCheckPoint_ListenHitAI");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenHitAI::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, HeroID) == 0x000004, "Member 'PyLevelCheckPoint_ListenHitAI::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, AbilityID) == 0x000008, "Member 'PyLevelCheckPoint_ListenHitAI::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, IsCriticalHit) == 0x00000C, "Member 'PyLevelCheckPoint_ListenHitAI::IsCriticalHit' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, HitNum) == 0x000010, "Member 'PyLevelCheckPoint_ListenHitAI::HitNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHitAI, FinishEvent) == 0x000018, "Member 'PyLevelCheckPoint_ListenHitAI::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenHitAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenBuff
 // 0x0020 (0x0020 - 0x0000)
@@ -151,13 +120,7 @@ public:
 	int32                                         HitNum;                                            // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 FinishEvent;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenBuff) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenBuff");
-static_assert(sizeof(PyLevelCheckPoint_ListenBuff) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenBuff");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuff, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenBuff::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuff, HeroID) == 0x000004, "Member 'PyLevelCheckPoint_ListenBuff::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuff, BuffID) == 0x000008, "Member 'PyLevelCheckPoint_ListenBuff::BuffID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuff, HitNum) == 0x00000C, "Member 'PyLevelCheckPoint_ListenBuff::HitNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuff, FinishEvent) == 0x000010, "Member 'PyLevelCheckPoint_ListenBuff::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenBuff;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenActivateAbility
 // 0x0020 (0x0020 - 0x0000)
@@ -171,12 +134,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FinishEvent;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenActivateAbility) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenActivateAbility");
-static_assert(sizeof(PyLevelCheckPoint_ListenActivateAbility) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenActivateAbility");
-static_assert(offsetof(PyLevelCheckPoint_ListenActivateAbility, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenActivateAbility::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenActivateAbility, AbilityID) == 0x000004, "Member 'PyLevelCheckPoint_ListenActivateAbility::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenActivateAbility, ActivateNum) == 0x000008, "Member 'PyLevelCheckPoint_ListenActivateAbility::ActivateNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenActivateAbility, FinishEvent) == 0x000010, "Member 'PyLevelCheckPoint_ListenActivateAbility::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenActivateAbility;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenBuffMiss
 // 0x0008 (0x0008 - 0x0000)
@@ -186,10 +144,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DelayTime;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenBuffMiss) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenBuffMiss");
-static_assert(sizeof(PyLevelCheckPoint_ListenBuffMiss) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenBuffMiss");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuffMiss, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ListenBuffMiss::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBuffMiss, DelayTime) == 0x000004, "Member 'PyLevelCheckPoint_ListenBuffMiss::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenBuffMiss;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenSummonedBuffMiss
 // 0x0008 (0x0008 - 0x0000)
@@ -199,10 +154,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DelayTime;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenSummonedBuffMiss) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenSummonedBuffMiss");
-static_assert(sizeof(PyLevelCheckPoint_ListenSummonedBuffMiss) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenSummonedBuffMiss");
-static_assert(offsetof(PyLevelCheckPoint_ListenSummonedBuffMiss, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ListenSummonedBuffMiss::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenSummonedBuffMiss, DelayTime) == 0x000004, "Member 'PyLevelCheckPoint_ListenSummonedBuffMiss::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenSummonedBuffMiss;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SummonedBuffMiss
 // 0x0008 (0x0008 - 0x0000)
@@ -211,9 +163,7 @@ struct PyLevelCheckPoint_SummonedBuffMiss final
 public:
 	class AActor*                                 Summoned;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SummonedBuffMiss) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SummonedBuffMiss");
-static_assert(sizeof(PyLevelCheckPoint_SummonedBuffMiss) == 0x000008, "Wrong size on PyLevelCheckPoint_SummonedBuffMiss");
-static_assert(offsetof(PyLevelCheckPoint_SummonedBuffMiss, Summoned) == 0x000000, "Member 'PyLevelCheckPoint_SummonedBuffMiss::Summoned' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SummonedBuffMiss;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenTagChange
 // 0x0028 (0x0028 - 0x0000)
@@ -227,12 +177,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FinishEvent;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenTagChange) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenTagChange");
-static_assert(sizeof(PyLevelCheckPoint_ListenTagChange) == 0x000028, "Wrong size on PyLevelCheckPoint_ListenTagChange");
-static_assert(offsetof(PyLevelCheckPoint_ListenTagChange, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenTagChange::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenTagChange, Tag) == 0x000004, "Member 'PyLevelCheckPoint_ListenTagChange::Tag' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenTagChange, bTagExists) == 0x000010, "Member 'PyLevelCheckPoint_ListenTagChange::bTagExists' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenTagChange, FinishEvent) == 0x000018, "Member 'PyLevelCheckPoint_ListenTagChange::FinishEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenTagChange;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenHeal
 // 0x0008 (0x0008 - 0x0000)
@@ -243,10 +188,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HealValue;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenHeal) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenHeal");
-static_assert(sizeof(PyLevelCheckPoint_ListenHeal) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenHeal");
-static_assert(offsetof(PyLevelCheckPoint_ListenHeal, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenHeal::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHeal, HealValue) == 0x000004, "Member 'PyLevelCheckPoint_ListenHeal::HealValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenHeal;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenResurrect
 // 0x0008 (0x0008 - 0x0000)
@@ -257,10 +199,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TargetHeroID;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenResurrect) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenResurrect");
-static_assert(sizeof(PyLevelCheckPoint_ListenResurrect) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenResurrect");
-static_assert(offsetof(PyLevelCheckPoint_ListenResurrect, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenResurrect::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenResurrect, TargetHeroID) == 0x000004, "Member 'PyLevelCheckPoint_ListenResurrect::TargetHeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenResurrect;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenEnterArea
 // 0x0001 (0x0001 - 0x0000)
@@ -269,9 +208,7 @@ struct PyLevelCheckPoint_ListenEnterArea final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenEnterArea) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenEnterArea");
-static_assert(sizeof(PyLevelCheckPoint_ListenEnterArea) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenEnterArea");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnterArea, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenEnterArea::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenEnterArea;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenUseHealPack
 // 0x0020 (0x0020 - 0x0000)
@@ -283,11 +220,7 @@ public:
 	class FString                                 HealPackName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         HealNum;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenUseHealPack) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenUseHealPack");
-static_assert(sizeof(PyLevelCheckPoint_ListenUseHealPack) == 0x000020, "Wrong size on PyLevelCheckPoint_ListenUseHealPack");
-static_assert(offsetof(PyLevelCheckPoint_ListenUseHealPack, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenUseHealPack::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenUseHealPack, HealPackName) == 0x000008, "Member 'PyLevelCheckPoint_ListenUseHealPack::HealPackName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenUseHealPack, HealNum) == 0x000018, "Member 'PyLevelCheckPoint_ListenUseHealPack::HealNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenUseHealPack;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPreDesLevelChange
 // 0x0018 (0x0018 - 0x0000)
@@ -298,10 +231,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PreDesName;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPreDesLevelChange) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenPreDesLevelChange");
-static_assert(sizeof(PyLevelCheckPoint_ListenPreDesLevelChange) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenPreDesLevelChange");
-static_assert(offsetof(PyLevelCheckPoint_ListenPreDesLevelChange, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenPreDesLevelChange::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPreDesLevelChange, PreDesName) == 0x000008, "Member 'PyLevelCheckPoint_ListenPreDesLevelChange::PreDesName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPreDesLevelChange;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenChaosTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -312,10 +242,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ChaosActorName;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenChaosTrigger) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenChaosTrigger");
-static_assert(sizeof(PyLevelCheckPoint_ListenChaosTrigger) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenChaosTrigger");
-static_assert(offsetof(PyLevelCheckPoint_ListenChaosTrigger, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenChaosTrigger::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenChaosTrigger, ChaosActorName) == 0x000008, "Member 'PyLevelCheckPoint_ListenChaosTrigger::ChaosActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenChaosTrigger;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenChaosBreak
 // 0x0028 (0x0028 - 0x0000)
@@ -327,11 +254,7 @@ public:
 	class FString                                 ChaosActorName;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	TArray<int32>                                 BreakIndexList;                                    // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenChaosBreak) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenChaosBreak");
-static_assert(sizeof(PyLevelCheckPoint_ListenChaosBreak) == 0x000028, "Wrong size on PyLevelCheckPoint_ListenChaosBreak");
-static_assert(offsetof(PyLevelCheckPoint_ListenChaosBreak, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenChaosBreak::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenChaosBreak, ChaosActorName) == 0x000008, "Member 'PyLevelCheckPoint_ListenChaosBreak::ChaosActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenChaosBreak, BreakIndexList) == 0x000018, "Member 'PyLevelCheckPoint_ListenChaosBreak::BreakIndexList' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenChaosBreak;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenTeleportTrigger
 // 0x0001 (0x0001 - 0x0000)
@@ -340,9 +263,7 @@ struct PyLevelCheckPoint_ListenTeleportTrigger final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenTeleportTrigger) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenTeleportTrigger");
-static_assert(sizeof(PyLevelCheckPoint_ListenTeleportTrigger) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenTeleportTrigger");
-static_assert(offsetof(PyLevelCheckPoint_ListenTeleportTrigger, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenTeleportTrigger::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenTeleportTrigger;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenDestructionPostProcess
 // 0x0001 (0x0001 - 0x0000)
@@ -351,9 +272,7 @@ struct PyLevelCheckPoint_ListenDestructionPostProcess final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenDestructionPostProcess) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenDestructionPostProcess");
-static_assert(sizeof(PyLevelCheckPoint_ListenDestructionPostProcess) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenDestructionPostProcess");
-static_assert(offsetof(PyLevelCheckPoint_ListenDestructionPostProcess, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenDestructionPostProcess::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenDestructionPostProcess;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenVoiceEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -362,9 +281,7 @@ struct PyLevelCheckPoint_ListenVoiceEnd final
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenVoiceEnd) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenVoiceEnd");
-static_assert(sizeof(PyLevelCheckPoint_ListenVoiceEnd) == 0x000004, "Wrong size on PyLevelCheckPoint_ListenVoiceEnd");
-static_assert(offsetof(PyLevelCheckPoint_ListenVoiceEnd, VoiceID) == 0x000000, "Member 'PyLevelCheckPoint_ListenVoiceEnd::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenVoiceEnd;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.OnVoiceEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -373,9 +290,7 @@ struct PyLevelCheckPoint_OnVoiceEnd final
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_OnVoiceEnd) == 0x000004, "Wrong alignment on PyLevelCheckPoint_OnVoiceEnd");
-static_assert(sizeof(PyLevelCheckPoint_OnVoiceEnd) == 0x000004, "Wrong size on PyLevelCheckPoint_OnVoiceEnd");
-static_assert(offsetof(PyLevelCheckPoint_OnVoiceEnd, VoiceID) == 0x000000, "Member 'PyLevelCheckPoint_OnVoiceEnd::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_OnVoiceEnd;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenControllerRotation
 // 0x000C (0x000C - 0x0000)
@@ -387,11 +302,7 @@ public:
 	float                                         RemainTime;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DelayTime;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenControllerRotation) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenControllerRotation");
-static_assert(sizeof(PyLevelCheckPoint_ListenControllerRotation) == 0x00000C, "Wrong size on PyLevelCheckPoint_ListenControllerRotation");
-static_assert(offsetof(PyLevelCheckPoint_ListenControllerRotation, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenControllerRotation::MainMission' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenControllerRotation, RemainTime) == 0x000004, "Member 'PyLevelCheckPoint_ListenControllerRotation::RemainTime' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenControllerRotation, DelayTime) == 0x000008, "Member 'PyLevelCheckPoint_ListenControllerRotation::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenControllerRotation;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenFlyUp
 // 0x0008 (0x0008 - 0x0000)
@@ -401,10 +312,7 @@ public:
 	int32                                         FlyAbilityID;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenFlyUp) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenFlyUp");
-static_assert(sizeof(PyLevelCheckPoint_ListenFlyUp) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenFlyUp");
-static_assert(offsetof(PyLevelCheckPoint_ListenFlyUp, FlyAbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ListenFlyUp::FlyAbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenFlyUp, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenFlyUp::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenFlyUp;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenFlyDown
 // 0x0008 (0x0008 - 0x0000)
@@ -414,10 +322,7 @@ public:
 	int32                                         FlyAbilityID;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenFlyDown) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenFlyDown");
-static_assert(sizeof(PyLevelCheckPoint_ListenFlyDown) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenFlyDown");
-static_assert(offsetof(PyLevelCheckPoint_ListenFlyDown, FlyAbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ListenFlyDown::FlyAbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenFlyDown, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenFlyDown::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenFlyDown;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenSignal
 // 0x0018 (0x0018 - 0x0000)
@@ -427,10 +332,7 @@ public:
 	TArray<int32>                                 SignalIDList;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          MainMission;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenSignal) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenSignal");
-static_assert(sizeof(PyLevelCheckPoint_ListenSignal) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenSignal");
-static_assert(offsetof(PyLevelCheckPoint_ListenSignal, SignalIDList) == 0x000000, "Member 'PyLevelCheckPoint_ListenSignal::SignalIDList' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenSignal, MainMission) == 0x000010, "Member 'PyLevelCheckPoint_ListenSignal::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenSignal;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenFullEnergy
 // 0x0001 (0x0001 - 0x0000)
@@ -439,9 +341,7 @@ struct PyLevelCheckPoint_ListenFullEnergy final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenFullEnergy) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenFullEnergy");
-static_assert(sizeof(PyLevelCheckPoint_ListenFullEnergy) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenFullEnergy");
-static_assert(offsetof(PyLevelCheckPoint_ListenFullEnergy, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenFullEnergy::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenFullEnergy;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenAbilityCurrentCostValue
 // 0x000C (0x000C - 0x0000)
@@ -453,11 +353,7 @@ public:
 	float                                         TargetValue;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenAbilityCurrentCostValue) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenAbilityCurrentCostValue");
-static_assert(sizeof(PyLevelCheckPoint_ListenAbilityCurrentCostValue) == 0x00000C, "Wrong size on PyLevelCheckPoint_ListenAbilityCurrentCostValue");
-static_assert(offsetof(PyLevelCheckPoint_ListenAbilityCurrentCostValue, AttributeType) == 0x000000, "Member 'PyLevelCheckPoint_ListenAbilityCurrentCostValue::AttributeType' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenAbilityCurrentCostValue, TargetValue) == 0x000004, "Member 'PyLevelCheckPoint_ListenAbilityCurrentCostValue::TargetValue' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenAbilityCurrentCostValue, MainMission) == 0x000008, "Member 'PyLevelCheckPoint_ListenAbilityCurrentCostValue::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenAbilityCurrentCostValue;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenResistDamage
 // 0x0001 (0x0001 - 0x0000)
@@ -466,9 +362,7 @@ struct PyLevelCheckPoint_ListenResistDamage final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenResistDamage) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenResistDamage");
-static_assert(sizeof(PyLevelCheckPoint_ListenResistDamage) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenResistDamage");
-static_assert(offsetof(PyLevelCheckPoint_ListenResistDamage, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenResistDamage::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenResistDamage;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenSummonedTakeDamage
 // 0x0008 (0x0008 - 0x0000)
@@ -478,10 +372,7 @@ public:
 	int32                                         SummonedID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenSummonedTakeDamage) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenSummonedTakeDamage");
-static_assert(sizeof(PyLevelCheckPoint_ListenSummonedTakeDamage) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenSummonedTakeDamage");
-static_assert(offsetof(PyLevelCheckPoint_ListenSummonedTakeDamage, SummonedID) == 0x000000, "Member 'PyLevelCheckPoint_ListenSummonedTakeDamage::SummonedID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenSummonedTakeDamage, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenSummonedTakeDamage::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenSummonedTakeDamage;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenAIRespawn
 // 0x0018 (0x0018 - 0x0000)
@@ -491,10 +382,7 @@ public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenAIRespawn) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenAIRespawn");
-static_assert(sizeof(PyLevelCheckPoint_ListenAIRespawn) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenAIRespawn");
-static_assert(offsetof(PyLevelCheckPoint_ListenAIRespawn, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_ListenAIRespawn::NoviceAISpawnActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenAIRespawn, MainMission) == 0x000010, "Member 'PyLevelCheckPoint_ListenAIRespawn::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenAIRespawn;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenHeroChange
 // 0x0008 (0x0008 - 0x0000)
@@ -504,10 +392,7 @@ public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenHeroChange) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenHeroChange");
-static_assert(sizeof(PyLevelCheckPoint_ListenHeroChange) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenHeroChange");
-static_assert(offsetof(PyLevelCheckPoint_ListenHeroChange, HeroID) == 0x000000, "Member 'PyLevelCheckPoint_ListenHeroChange::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHeroChange, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenHeroChange::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenHeroChange;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenBondTips
 // 0x000C (0x000C - 0x0000)
@@ -518,11 +403,7 @@ public:
 	float                                         TargetTime;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenBondTips) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenBondTips");
-static_assert(sizeof(PyLevelCheckPoint_ListenBondTips) == 0x00000C, "Wrong size on PyLevelCheckPoint_ListenBondTips");
-static_assert(offsetof(PyLevelCheckPoint_ListenBondTips, GroupID) == 0x000000, "Member 'PyLevelCheckPoint_ListenBondTips::GroupID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBondTips, TargetTime) == 0x000004, "Member 'PyLevelCheckPoint_ListenBondTips::TargetTime' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenBondTips, MainMission) == 0x000008, "Member 'PyLevelCheckPoint_ListenBondTips::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenBondTips;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenTargetPractice
 // 0x0018 (0x0018 - 0x0000)
@@ -532,10 +413,7 @@ public:
 	class FString                                 TargetPracticeComputerName;                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenTargetPractice) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenTargetPractice");
-static_assert(sizeof(PyLevelCheckPoint_ListenTargetPractice) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenTargetPractice");
-static_assert(offsetof(PyLevelCheckPoint_ListenTargetPractice, TargetPracticeComputerName) == 0x000000, "Member 'PyLevelCheckPoint_ListenTargetPractice::TargetPracticeComputerName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenTargetPractice, MainMission) == 0x000010, "Member 'PyLevelCheckPoint_ListenTargetPractice::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenTargetPractice;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenHealPractice
 // 0x0018 (0x0018 - 0x0000)
@@ -545,10 +423,7 @@ public:
 	class FString                                 HealPracticeComputerName;                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenHealPractice) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenHealPractice");
-static_assert(sizeof(PyLevelCheckPoint_ListenHealPractice) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenHealPractice");
-static_assert(offsetof(PyLevelCheckPoint_ListenHealPractice, HealPracticeComputerName) == 0x000000, "Member 'PyLevelCheckPoint_ListenHealPractice::HealPracticeComputerName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenHealPractice, MainMission) == 0x000010, "Member 'PyLevelCheckPoint_ListenHealPractice::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenHealPractice;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPantherAddShield
 // 0x0001 (0x0001 - 0x0000)
@@ -557,9 +432,7 @@ struct PyLevelCheckPoint_ListenPantherAddShield final
 public:
 	bool                                          MainMission;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPantherAddShield) == 0x000001, "Wrong alignment on PyLevelCheckPoint_ListenPantherAddShield");
-static_assert(sizeof(PyLevelCheckPoint_ListenPantherAddShield) == 0x000001, "Wrong size on PyLevelCheckPoint_ListenPantherAddShield");
-static_assert(offsetof(PyLevelCheckPoint_ListenPantherAddShield, MainMission) == 0x000000, "Member 'PyLevelCheckPoint_ListenPantherAddShield::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPantherAddShield;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPayloadOccupyProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -569,10 +442,7 @@ public:
 	float                                         TargetProgress;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPayloadOccupyProgress) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenPayloadOccupyProgress");
-static_assert(sizeof(PyLevelCheckPoint_ListenPayloadOccupyProgress) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenPayloadOccupyProgress");
-static_assert(offsetof(PyLevelCheckPoint_ListenPayloadOccupyProgress, TargetProgress) == 0x000000, "Member 'PyLevelCheckPoint_ListenPayloadOccupyProgress::TargetProgress' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPayloadOccupyProgress, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenPayloadOccupyProgress::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPayloadOccupyProgress;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenPayloadProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -582,10 +452,7 @@ public:
 	float                                         Progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenPayloadProgress) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenPayloadProgress");
-static_assert(sizeof(PyLevelCheckPoint_ListenPayloadProgress) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenPayloadProgress");
-static_assert(offsetof(PyLevelCheckPoint_ListenPayloadProgress, Progress) == 0x000000, "Member 'PyLevelCheckPoint_ListenPayloadProgress::Progress' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenPayloadProgress, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenPayloadProgress::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenPayloadProgress;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenControlOccupyProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -595,10 +462,7 @@ public:
 	float                                         TargetProgress;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenControlOccupyProgress) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenControlOccupyProgress");
-static_assert(sizeof(PyLevelCheckPoint_ListenControlOccupyProgress) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenControlOccupyProgress");
-static_assert(offsetof(PyLevelCheckPoint_ListenControlOccupyProgress, TargetProgress) == 0x000000, "Member 'PyLevelCheckPoint_ListenControlOccupyProgress::TargetProgress' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenControlOccupyProgress, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenControlOccupyProgress::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenControlOccupyProgress;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenControlVictoryProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -608,10 +472,7 @@ public:
 	float                                         TargetProgress;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenControlVictoryProgress) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenControlVictoryProgress");
-static_assert(sizeof(PyLevelCheckPoint_ListenControlVictoryProgress) == 0x000008, "Wrong size on PyLevelCheckPoint_ListenControlVictoryProgress");
-static_assert(offsetof(PyLevelCheckPoint_ListenControlVictoryProgress, TargetProgress) == 0x000000, "Member 'PyLevelCheckPoint_ListenControlVictoryProgress::TargetProgress' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenControlVictoryProgress, MainMission) == 0x000004, "Member 'PyLevelCheckPoint_ListenControlVictoryProgress::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenControlVictoryProgress;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenEnergyContestMineControlRemainPercent
 // 0x0018 (0x0018 - 0x0000)
@@ -622,11 +483,7 @@ public:
 	float                                         TargetPercent;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent");
-static_assert(sizeof(PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent, MineControlName) == 0x000000, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent::MineControlName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent, TargetPercent) == 0x000010, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent::TargetPercent' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent, MainMission) == 0x000014, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenEnergyContestMineControlRemainPercent;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenEnergyContestMineControlOwnerChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -637,11 +494,7 @@ public:
 	EOwnershipType                                TargetOwner;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged");
-static_assert(sizeof(PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged) == 0x000018, "Wrong size on PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged, MineControlName) == 0x000000, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged::MineControlName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged, TargetOwner) == 0x000010, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged::TargetOwner' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged, MainMission) == 0x000011, "Member 'PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenEnergyContestMineControlOwnerChanged;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ListenEnergyContestTeamScore
 // 0x000C (0x000C - 0x0000)
@@ -653,11 +506,7 @@ public:
 	float                                         TargetNum;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MainMission;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ListenEnergyContestTeamScore) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ListenEnergyContestTeamScore");
-static_assert(sizeof(PyLevelCheckPoint_ListenEnergyContestTeamScore) == 0x00000C, "Wrong size on PyLevelCheckPoint_ListenEnergyContestTeamScore");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestTeamScore, BattleSide) == 0x000000, "Member 'PyLevelCheckPoint_ListenEnergyContestTeamScore::BattleSide' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestTeamScore, TargetNum) == 0x000004, "Member 'PyLevelCheckPoint_ListenEnergyContestTeamScore::TargetNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ListenEnergyContestTeamScore, MainMission) == 0x000008, "Member 'PyLevelCheckPoint_ListenEnergyContestTeamScore::MainMission' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ListenEnergyContestTeamScore;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.UnblockAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -666,9 +515,7 @@ struct PyLevelCheckPoint_UnblockAbility final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_UnblockAbility) == 0x000004, "Wrong alignment on PyLevelCheckPoint_UnblockAbility");
-static_assert(sizeof(PyLevelCheckPoint_UnblockAbility) == 0x000004, "Wrong size on PyLevelCheckPoint_UnblockAbility");
-static_assert(offsetof(PyLevelCheckPoint_UnblockAbility, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_UnblockAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_UnblockAbility;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.BlockAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -677,9 +524,7 @@ struct PyLevelCheckPoint_BlockAbility final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_BlockAbility) == 0x000004, "Wrong alignment on PyLevelCheckPoint_BlockAbility");
-static_assert(sizeof(PyLevelCheckPoint_BlockAbility) == 0x000004, "Wrong size on PyLevelCheckPoint_BlockAbility");
-static_assert(offsetof(PyLevelCheckPoint_BlockAbility, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_BlockAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_BlockAbility;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ActivateCheckPoint
 // 0x0004 (0x0004 - 0x0000)
@@ -688,9 +533,7 @@ struct PyLevelCheckPoint_ActivateCheckPoint final
 public:
 	int32                                         NewCheckPointID;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ActivateCheckPoint) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ActivateCheckPoint");
-static_assert(sizeof(PyLevelCheckPoint_ActivateCheckPoint) == 0x000004, "Wrong size on PyLevelCheckPoint_ActivateCheckPoint");
-static_assert(offsetof(PyLevelCheckPoint_ActivateCheckPoint, NewCheckPointID) == 0x000000, "Member 'PyLevelCheckPoint_ActivateCheckPoint::NewCheckPointID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ActivateCheckPoint;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeHero
 // 0x0004 (0x0004 - 0x0000)
@@ -699,9 +542,7 @@ struct PyLevelCheckPoint_ChangeHero final
 public:
 	int32                                         HeroID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeHero) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeHero");
-static_assert(sizeof(PyLevelCheckPoint_ChangeHero) == 0x000004, "Wrong size on PyLevelCheckPoint_ChangeHero");
-static_assert(offsetof(PyLevelCheckPoint_ChangeHero, HeroID) == 0x000000, "Member 'PyLevelCheckPoint_ChangeHero::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeHero;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeRebirthPlayerStart
 // 0x0010 (0x0010 - 0x0000)
@@ -710,9 +551,7 @@ struct PyLevelCheckPoint_ChangeRebirthPlayerStart final
 public:
 	class FString                                 PlayerStartName;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeRebirthPlayerStart) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ChangeRebirthPlayerStart");
-static_assert(sizeof(PyLevelCheckPoint_ChangeRebirthPlayerStart) == 0x000010, "Wrong size on PyLevelCheckPoint_ChangeRebirthPlayerStart");
-static_assert(offsetof(PyLevelCheckPoint_ChangeRebirthPlayerStart, PlayerStartName) == 0x000000, "Member 'PyLevelCheckPoint_ChangeRebirthPlayerStart::PlayerStartName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeRebirthPlayerStart;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.AddBuff
 // 0x0004 (0x0004 - 0x0000)
@@ -721,9 +560,7 @@ struct PyLevelCheckPoint_AddBuff final
 public:
 	int32                                         BuffID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_AddBuff) == 0x000004, "Wrong alignment on PyLevelCheckPoint_AddBuff");
-static_assert(sizeof(PyLevelCheckPoint_AddBuff) == 0x000004, "Wrong size on PyLevelCheckPoint_AddBuff");
-static_assert(offsetof(PyLevelCheckPoint_AddBuff, BuffID) == 0x000000, "Member 'PyLevelCheckPoint_AddBuff::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_AddBuff;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.CharacterApplyBuffToAI
 // 0x0018 (0x0018 - 0x0000)
@@ -734,11 +571,7 @@ public:
 	int32                                         BuffID;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DurationOverride;                                  // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_CharacterApplyBuffToAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_CharacterApplyBuffToAI");
-static_assert(sizeof(PyLevelCheckPoint_CharacterApplyBuffToAI) == 0x000018, "Wrong size on PyLevelCheckPoint_CharacterApplyBuffToAI");
-static_assert(offsetof(PyLevelCheckPoint_CharacterApplyBuffToAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_CharacterApplyBuffToAI::NoviceAISpawnActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_CharacterApplyBuffToAI, BuffID) == 0x000010, "Member 'PyLevelCheckPoint_CharacterApplyBuffToAI::BuffID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_CharacterApplyBuffToAI, DurationOverride) == 0x000014, "Member 'PyLevelCheckPoint_CharacterApplyBuffToAI::DurationOverride' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_CharacterApplyBuffToAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ActivateBlockDoor
 // 0x0010 (0x0010 - 0x0000)
@@ -747,9 +580,7 @@ struct PyLevelCheckPoint_ActivateBlockDoor final
 public:
 	class FString                                 BlockDoorName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ActivateBlockDoor) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ActivateBlockDoor");
-static_assert(sizeof(PyLevelCheckPoint_ActivateBlockDoor) == 0x000010, "Wrong size on PyLevelCheckPoint_ActivateBlockDoor");
-static_assert(offsetof(PyLevelCheckPoint_ActivateBlockDoor, BlockDoorName) == 0x000000, "Member 'PyLevelCheckPoint_ActivateBlockDoor::BlockDoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ActivateBlockDoor;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.DeactivateBlockDoor
 // 0x0010 (0x0010 - 0x0000)
@@ -758,9 +589,7 @@ struct PyLevelCheckPoint_DeactivateBlockDoor final
 public:
 	class FString                                 BlockDoorName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_DeactivateBlockDoor) == 0x000008, "Wrong alignment on PyLevelCheckPoint_DeactivateBlockDoor");
-static_assert(sizeof(PyLevelCheckPoint_DeactivateBlockDoor) == 0x000010, "Wrong size on PyLevelCheckPoint_DeactivateBlockDoor");
-static_assert(offsetof(PyLevelCheckPoint_DeactivateBlockDoor, BlockDoorName) == 0x000000, "Member 'PyLevelCheckPoint_DeactivateBlockDoor::BlockDoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_DeactivateBlockDoor;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.DeactivateBlockingVolume
 // 0x0010 (0x0010 - 0x0000)
@@ -769,9 +598,7 @@ struct PyLevelCheckPoint_DeactivateBlockingVolume final
 public:
 	class FString                                 BlockingVolumeName;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_DeactivateBlockingVolume) == 0x000008, "Wrong alignment on PyLevelCheckPoint_DeactivateBlockingVolume");
-static_assert(sizeof(PyLevelCheckPoint_DeactivateBlockingVolume) == 0x000010, "Wrong size on PyLevelCheckPoint_DeactivateBlockingVolume");
-static_assert(offsetof(PyLevelCheckPoint_DeactivateBlockingVolume, BlockingVolumeName) == 0x000000, "Member 'PyLevelCheckPoint_DeactivateBlockingVolume::BlockingVolumeName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_DeactivateBlockingVolume;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.OpenDoor
 // 0x0010 (0x0010 - 0x0000)
@@ -780,9 +607,7 @@ struct PyLevelCheckPoint_OpenDoor final
 public:
 	class FString                                 DoorName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_OpenDoor) == 0x000008, "Wrong alignment on PyLevelCheckPoint_OpenDoor");
-static_assert(sizeof(PyLevelCheckPoint_OpenDoor) == 0x000010, "Wrong size on PyLevelCheckPoint_OpenDoor");
-static_assert(offsetof(PyLevelCheckPoint_OpenDoor, DoorName) == 0x000000, "Member 'PyLevelCheckPoint_OpenDoor::DoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_OpenDoor;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.CloseDoor
 // 0x0010 (0x0010 - 0x0000)
@@ -791,9 +616,7 @@ struct PyLevelCheckPoint_CloseDoor final
 public:
 	class FString                                 DoorName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_CloseDoor) == 0x000008, "Wrong alignment on PyLevelCheckPoint_CloseDoor");
-static_assert(sizeof(PyLevelCheckPoint_CloseDoor) == 0x000010, "Wrong size on PyLevelCheckPoint_CloseDoor");
-static_assert(offsetof(PyLevelCheckPoint_CloseDoor, DoorName) == 0x000000, "Member 'PyLevelCheckPoint_CloseDoor::DoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_CloseDoor;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetSplineVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -802,9 +625,7 @@ struct PyLevelCheckPoint_SetSplineVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetSplineVisible) == 0x000001, "Wrong alignment on PyLevelCheckPoint_SetSplineVisible");
-static_assert(sizeof(PyLevelCheckPoint_SetSplineVisible) == 0x000001, "Wrong size on PyLevelCheckPoint_SetSplineVisible");
-static_assert(offsetof(PyLevelCheckPoint_SetSplineVisible, InVisible) == 0x000000, "Member 'PyLevelCheckPoint_SetSplineVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetSplineVisible;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetTargetRangeVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -814,10 +635,7 @@ public:
 	class FString                                 TargetRangeName;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          InVisible;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetTargetRangeVisible) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetTargetRangeVisible");
-static_assert(sizeof(PyLevelCheckPoint_SetTargetRangeVisible) == 0x000018, "Wrong size on PyLevelCheckPoint_SetTargetRangeVisible");
-static_assert(offsetof(PyLevelCheckPoint_SetTargetRangeVisible, TargetRangeName) == 0x000000, "Member 'PyLevelCheckPoint_SetTargetRangeVisible::TargetRangeName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetTargetRangeVisible, InVisible) == 0x000010, "Member 'PyLevelCheckPoint_SetTargetRangeVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetTargetRangeVisible;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetSplineMaterial
 // 0x0008 (0x0008 - 0x0000)
@@ -826,9 +644,7 @@ struct PyLevelCheckPoint_SetSplineMaterial final
 public:
 	class UMaterialInstance*                      Material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetSplineMaterial) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetSplineMaterial");
-static_assert(sizeof(PyLevelCheckPoint_SetSplineMaterial) == 0x000008, "Wrong size on PyLevelCheckPoint_SetSplineMaterial");
-static_assert(offsetof(PyLevelCheckPoint_SetSplineMaterial, Material) == 0x000000, "Member 'PyLevelCheckPoint_SetSplineMaterial::Material' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetSplineMaterial;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetGuidingLineVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -838,10 +654,7 @@ public:
 	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          InVisible;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetGuidingLineVisible) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetGuidingLineVisible");
-static_assert(sizeof(PyLevelCheckPoint_SetGuidingLineVisible) == 0x000018, "Wrong size on PyLevelCheckPoint_SetGuidingLineVisible");
-static_assert(offsetof(PyLevelCheckPoint_SetGuidingLineVisible, Name_0) == 0x000000, "Member 'PyLevelCheckPoint_SetGuidingLineVisible::Name_0' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetGuidingLineVisible, InVisible) == 0x000010, "Member 'PyLevelCheckPoint_SetGuidingLineVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetGuidingLineVisible;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetConfigActorVisible
 // 0x0018 (0x0018 - 0x0000)
@@ -851,10 +664,7 @@ public:
 	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          InVisible;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetConfigActorVisible) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetConfigActorVisible");
-static_assert(sizeof(PyLevelCheckPoint_SetConfigActorVisible) == 0x000018, "Wrong size on PyLevelCheckPoint_SetConfigActorVisible");
-static_assert(offsetof(PyLevelCheckPoint_SetConfigActorVisible, Name_0) == 0x000000, "Member 'PyLevelCheckPoint_SetConfigActorVisible::Name_0' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetConfigActorVisible, InVisible) == 0x000010, "Member 'PyLevelCheckPoint_SetConfigActorVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetConfigActorVisible;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SpawnNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -863,9 +673,7 @@ struct PyLevelCheckPoint_SpawnNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SpawnNoviceAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SpawnNoviceAI");
-static_assert(sizeof(PyLevelCheckPoint_SpawnNoviceAI) == 0x000010, "Wrong size on PyLevelCheckPoint_SpawnNoviceAI");
-static_assert(offsetof(PyLevelCheckPoint_SpawnNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_SpawnNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SpawnNoviceAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ClearNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -874,9 +682,7 @@ struct PyLevelCheckPoint_ClearNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ClearNoviceAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ClearNoviceAI");
-static_assert(sizeof(PyLevelCheckPoint_ClearNoviceAI) == 0x000010, "Wrong size on PyLevelCheckPoint_ClearNoviceAI");
-static_assert(offsetof(PyLevelCheckPoint_ClearNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_ClearNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ClearNoviceAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.StopNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -885,9 +691,7 @@ struct PyLevelCheckPoint_StopNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_StopNoviceAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_StopNoviceAI");
-static_assert(sizeof(PyLevelCheckPoint_StopNoviceAI) == 0x000010, "Wrong size on PyLevelCheckPoint_StopNoviceAI");
-static_assert(offsetof(PyLevelCheckPoint_StopNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_StopNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_StopNoviceAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ContinueNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -896,9 +700,7 @@ struct PyLevelCheckPoint_ContinueNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ContinueNoviceAI) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ContinueNoviceAI");
-static_assert(sizeof(PyLevelCheckPoint_ContinueNoviceAI) == 0x000010, "Wrong size on PyLevelCheckPoint_ContinueNoviceAI");
-static_assert(offsetof(PyLevelCheckPoint_ContinueNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_ContinueNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ContinueNoviceAI;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.AITakeDamage
 // 0x0018 (0x0018 - 0x0000)
@@ -908,10 +710,7 @@ public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Damage;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_AITakeDamage) == 0x000008, "Wrong alignment on PyLevelCheckPoint_AITakeDamage");
-static_assert(sizeof(PyLevelCheckPoint_AITakeDamage) == 0x000018, "Wrong size on PyLevelCheckPoint_AITakeDamage");
-static_assert(offsetof(PyLevelCheckPoint_AITakeDamage, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_AITakeDamage::NoviceAISpawnActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_AITakeDamage, Damage) == 0x000010, "Member 'PyLevelCheckPoint_AITakeDamage::Damage' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_AITakeDamage;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.AIAddBuff
 // 0x0018 (0x0018 - 0x0000)
@@ -921,10 +720,7 @@ public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         BuffID;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_AIAddBuff) == 0x000008, "Wrong alignment on PyLevelCheckPoint_AIAddBuff");
-static_assert(sizeof(PyLevelCheckPoint_AIAddBuff) == 0x000018, "Wrong size on PyLevelCheckPoint_AIAddBuff");
-static_assert(offsetof(PyLevelCheckPoint_AIAddBuff, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelCheckPoint_AIAddBuff::NoviceAISpawnActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_AIAddBuff, BuffID) == 0x000010, "Member 'PyLevelCheckPoint_AIAddBuff::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_AIAddBuff;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.PlayAudio
 // 0x000C (0x000C - 0x0000)
@@ -933,9 +729,7 @@ struct PyLevelCheckPoint_PlayAudio final
 public:
 	struct FGameplayTag                           AudioTag;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_PlayAudio) == 0x000004, "Wrong alignment on PyLevelCheckPoint_PlayAudio");
-static_assert(sizeof(PyLevelCheckPoint_PlayAudio) == 0x00000C, "Wrong size on PyLevelCheckPoint_PlayAudio");
-static_assert(offsetof(PyLevelCheckPoint_PlayAudio, AudioTag) == 0x000000, "Member 'PyLevelCheckPoint_PlayAudio::AudioTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_PlayAudio;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.PlayGameStartMusic
 // 0x0010 (0x0010 - 0x0000)
@@ -944,9 +738,7 @@ struct PyLevelCheckPoint_PlayGameStartMusic final
 public:
 	class FString                                 MusicName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_PlayGameStartMusic) == 0x000008, "Wrong alignment on PyLevelCheckPoint_PlayGameStartMusic");
-static_assert(sizeof(PyLevelCheckPoint_PlayGameStartMusic) == 0x000010, "Wrong size on PyLevelCheckPoint_PlayGameStartMusic");
-static_assert(offsetof(PyLevelCheckPoint_PlayGameStartMusic, MusicName) == 0x000000, "Member 'PyLevelCheckPoint_PlayGameStartMusic::MusicName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_PlayGameStartMusic;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.StopGameStartMusic
 // 0x0010 (0x0010 - 0x0000)
@@ -955,9 +747,7 @@ struct PyLevelCheckPoint_StopGameStartMusic final
 public:
 	class FString                                 MusicName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_StopGameStartMusic) == 0x000008, "Wrong alignment on PyLevelCheckPoint_StopGameStartMusic");
-static_assert(sizeof(PyLevelCheckPoint_StopGameStartMusic) == 0x000010, "Wrong size on PyLevelCheckPoint_StopGameStartMusic");
-static_assert(offsetof(PyLevelCheckPoint_StopGameStartMusic, MusicName) == 0x000000, "Member 'PyLevelCheckPoint_StopGameStartMusic::MusicName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_StopGameStartMusic;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetDestructionDamageMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -966,9 +756,7 @@ struct PyLevelCheckPoint_SetDestructionDamageMultiplier final
 public:
 	float                                         Multiplier;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetDestructionDamageMultiplier) == 0x000004, "Wrong alignment on PyLevelCheckPoint_SetDestructionDamageMultiplier");
-static_assert(sizeof(PyLevelCheckPoint_SetDestructionDamageMultiplier) == 0x000004, "Wrong size on PyLevelCheckPoint_SetDestructionDamageMultiplier");
-static_assert(offsetof(PyLevelCheckPoint_SetDestructionDamageMultiplier, Multiplier) == 0x000000, "Member 'PyLevelCheckPoint_SetDestructionDamageMultiplier::Multiplier' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetDestructionDamageMultiplier;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetChaosImmunity
 // 0x0018 (0x0018 - 0x0000)
@@ -978,10 +766,7 @@ public:
 	class FString                                 ChaosActorName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          IsImmunity;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetChaosImmunity) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetChaosImmunity");
-static_assert(sizeof(PyLevelCheckPoint_SetChaosImmunity) == 0x000018, "Wrong size on PyLevelCheckPoint_SetChaosImmunity");
-static_assert(offsetof(PyLevelCheckPoint_SetChaosImmunity, ChaosActorName) == 0x000000, "Member 'PyLevelCheckPoint_SetChaosImmunity::ChaosActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetChaosImmunity, IsImmunity) == 0x000010, "Member 'PyLevelCheckPoint_SetChaosImmunity::IsImmunity' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetChaosImmunity;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetChaosForceNeedPostProcess
 // 0x0018 (0x0018 - 0x0000)
@@ -991,10 +776,7 @@ public:
 	class FString                                 ChaosActorName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          IsForceNeedPostProcess;                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetChaosForceNeedPostProcess) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetChaosForceNeedPostProcess");
-static_assert(sizeof(PyLevelCheckPoint_SetChaosForceNeedPostProcess) == 0x000018, "Wrong size on PyLevelCheckPoint_SetChaosForceNeedPostProcess");
-static_assert(offsetof(PyLevelCheckPoint_SetChaosForceNeedPostProcess, ChaosActorName) == 0x000000, "Member 'PyLevelCheckPoint_SetChaosForceNeedPostProcess::ChaosActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetChaosForceNeedPostProcess, IsForceNeedPostProcess) == 0x000010, "Member 'PyLevelCheckPoint_SetChaosForceNeedPostProcess::IsForceNeedPostProcess' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetChaosForceNeedPostProcess;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeAbilityRegenValue
 // 0x0008 (0x0008 - 0x0000)
@@ -1004,10 +786,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RegenValue;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeAbilityRegenValue) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeAbilityRegenValue");
-static_assert(sizeof(PyLevelCheckPoint_ChangeAbilityRegenValue) == 0x000008, "Wrong size on PyLevelCheckPoint_ChangeAbilityRegenValue");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityRegenValue, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ChangeAbilityRegenValue::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityRegenValue, RegenValue) == 0x000004, "Member 'PyLevelCheckPoint_ChangeAbilityRegenValue::RegenValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeAbilityRegenValue;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeAbilityRegenValueScale
 // 0x0008 (0x0008 - 0x0000)
@@ -1017,10 +796,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RegenValueScale;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeAbilityRegenValueScale) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeAbilityRegenValueScale");
-static_assert(sizeof(PyLevelCheckPoint_ChangeAbilityRegenValueScale) == 0x000008, "Wrong size on PyLevelCheckPoint_ChangeAbilityRegenValueScale");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityRegenValueScale, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ChangeAbilityRegenValueScale::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityRegenValueScale, RegenValueScale) == 0x000004, "Member 'PyLevelCheckPoint_ChangeAbilityRegenValueScale::RegenValueScale' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeAbilityRegenValueScale;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeAbilityCD
 // 0x0008 (0x0008 - 0x0000)
@@ -1030,10 +806,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CD;                                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeAbilityCD) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeAbilityCD");
-static_assert(sizeof(PyLevelCheckPoint_ChangeAbilityCD) == 0x000008, "Wrong size on PyLevelCheckPoint_ChangeAbilityCD");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityCD, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ChangeAbilityCD::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityCD, CD) == 0x000004, "Member 'PyLevelCheckPoint_ChangeAbilityCD::CD' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeAbilityCD;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ClearAbilityCD
 // 0x0004 (0x0004 - 0x0000)
@@ -1042,9 +815,7 @@ struct PyLevelCheckPoint_ClearAbilityCD final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ClearAbilityCD) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ClearAbilityCD");
-static_assert(sizeof(PyLevelCheckPoint_ClearAbilityCD) == 0x000004, "Wrong size on PyLevelCheckPoint_ClearAbilityCD");
-static_assert(offsetof(PyLevelCheckPoint_ClearAbilityCD, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_ClearAbilityCD::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ClearAbilityCD;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeSummonedProperty
 // 0x0008 (0x0008 - 0x0000)
@@ -1054,10 +825,7 @@ public:
 	int32                                         SummonedID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LifeSpan;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeSummonedProperty) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeSummonedProperty");
-static_assert(sizeof(PyLevelCheckPoint_ChangeSummonedProperty) == 0x000008, "Wrong size on PyLevelCheckPoint_ChangeSummonedProperty");
-static_assert(offsetof(PyLevelCheckPoint_ChangeSummonedProperty, SummonedID) == 0x000000, "Member 'PyLevelCheckPoint_ChangeSummonedProperty::SummonedID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ChangeSummonedProperty, LifeSpan) == 0x000004, "Member 'PyLevelCheckPoint_ChangeSummonedProperty::LifeSpan' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeSummonedProperty;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetSummonedLifeSpan
 // 0x0010 (0x0010 - 0x0000)
@@ -1067,10 +835,7 @@ public:
 	class AActor*                                 Summoned;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         LifeSpan;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetSummonedLifeSpan) == 0x000008, "Wrong alignment on PyLevelCheckPoint_SetSummonedLifeSpan");
-static_assert(sizeof(PyLevelCheckPoint_SetSummonedLifeSpan) == 0x000010, "Wrong size on PyLevelCheckPoint_SetSummonedLifeSpan");
-static_assert(offsetof(PyLevelCheckPoint_SetSummonedLifeSpan, Summoned) == 0x000000, "Member 'PyLevelCheckPoint_SetSummonedLifeSpan::Summoned' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetSummonedLifeSpan, LifeSpan) == 0x000008, "Member 'PyLevelCheckPoint_SetSummonedLifeSpan::LifeSpan' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetSummonedLifeSpan;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.PostVoice
 // 0x0004 (0x0004 - 0x0000)
@@ -1079,9 +844,7 @@ struct PyLevelCheckPoint_PostVoice final
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_PostVoice) == 0x000004, "Wrong alignment on PyLevelCheckPoint_PostVoice");
-static_assert(sizeof(PyLevelCheckPoint_PostVoice) == 0x000004, "Wrong size on PyLevelCheckPoint_PostVoice");
-static_assert(offsetof(PyLevelCheckPoint_PostVoice, VoiceID) == 0x000000, "Member 'PyLevelCheckPoint_PostVoice::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_PostVoice;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.PlayTrainerLevelSequence
 // 0x0010 (0x0010 - 0x0000)
@@ -1091,10 +854,7 @@ public:
 	class ULevelSequence*                         InLevelSequence;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsLoop;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_PlayTrainerLevelSequence) == 0x000008, "Wrong alignment on PyLevelCheckPoint_PlayTrainerLevelSequence");
-static_assert(sizeof(PyLevelCheckPoint_PlayTrainerLevelSequence) == 0x000010, "Wrong size on PyLevelCheckPoint_PlayTrainerLevelSequence");
-static_assert(offsetof(PyLevelCheckPoint_PlayTrainerLevelSequence, InLevelSequence) == 0x000000, "Member 'PyLevelCheckPoint_PlayTrainerLevelSequence::InLevelSequence' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_PlayTrainerLevelSequence, IsLoop) == 0x000008, "Member 'PyLevelCheckPoint_PlayTrainerLevelSequence::IsLoop' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_PlayTrainerLevelSequence;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.EndAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -1103,9 +863,7 @@ struct PyLevelCheckPoint_EndAbility final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_EndAbility) == 0x000004, "Wrong alignment on PyLevelCheckPoint_EndAbility");
-static_assert(sizeof(PyLevelCheckPoint_EndAbility) == 0x000004, "Wrong size on PyLevelCheckPoint_EndAbility");
-static_assert(offsetof(PyLevelCheckPoint_EndAbility, AbilityID) == 0x000000, "Member 'PyLevelCheckPoint_EndAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_EndAbility;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeAbilityDamageRegen
 // 0x0004 (0x0004 - 0x0000)
@@ -1114,9 +872,7 @@ struct PyLevelCheckPoint_ChangeAbilityDamageRegen final
 public:
 	float                                         DamageRegen;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeAbilityDamageRegen) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeAbilityDamageRegen");
-static_assert(sizeof(PyLevelCheckPoint_ChangeAbilityDamageRegen) == 0x000004, "Wrong size on PyLevelCheckPoint_ChangeAbilityDamageRegen");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityDamageRegen, DamageRegen) == 0x000000, "Member 'PyLevelCheckPoint_ChangeAbilityDamageRegen::DamageRegen' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeAbilityDamageRegen;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeAbilityCurrentCostValue
 // 0x0008 (0x0008 - 0x0000)
@@ -1127,10 +883,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         NewValue;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeAbilityCurrentCostValue) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeAbilityCurrentCostValue");
-static_assert(sizeof(PyLevelCheckPoint_ChangeAbilityCurrentCostValue) == 0x000008, "Wrong size on PyLevelCheckPoint_ChangeAbilityCurrentCostValue");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityCurrentCostValue, AttributeType) == 0x000000, "Member 'PyLevelCheckPoint_ChangeAbilityCurrentCostValue::AttributeType' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ChangeAbilityCurrentCostValue, NewValue) == 0x000004, "Member 'PyLevelCheckPoint_ChangeAbilityCurrentCostValue::NewValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeAbilityCurrentCostValue;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ShowSelectHeroPanel
 // 0x0004 (0x0004 - 0x0000)
@@ -1139,9 +892,7 @@ struct PyLevelCheckPoint_ShowSelectHeroPanel final
 public:
 	int32                                         PreviewHeroID;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ShowSelectHeroPanel) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ShowSelectHeroPanel");
-static_assert(sizeof(PyLevelCheckPoint_ShowSelectHeroPanel) == 0x000004, "Wrong size on PyLevelCheckPoint_ShowSelectHeroPanel");
-static_assert(offsetof(PyLevelCheckPoint_ShowSelectHeroPanel, PreviewHeroID) == 0x000000, "Member 'PyLevelCheckPoint_ShowSelectHeroPanel::PreviewHeroID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ShowSelectHeroPanel;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.PrepareTargetPractice
 // 0x0010 (0x0010 - 0x0000)
@@ -1150,9 +901,7 @@ struct PyLevelCheckPoint_PrepareTargetPractice final
 public:
 	class FString                                 TargetPracticeComputerName;                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_PrepareTargetPractice) == 0x000008, "Wrong alignment on PyLevelCheckPoint_PrepareTargetPractice");
-static_assert(sizeof(PyLevelCheckPoint_PrepareTargetPractice) == 0x000010, "Wrong size on PyLevelCheckPoint_PrepareTargetPractice");
-static_assert(offsetof(PyLevelCheckPoint_PrepareTargetPractice, TargetPracticeComputerName) == 0x000000, "Member 'PyLevelCheckPoint_PrepareTargetPractice::TargetPracticeComputerName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_PrepareTargetPractice;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ActivateHealPracticeComputer
 // 0x0010 (0x0010 - 0x0000)
@@ -1161,9 +910,7 @@ struct PyLevelCheckPoint_ActivateHealPracticeComputer final
 public:
 	class FString                                 HealPracticeComputerName;                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ActivateHealPracticeComputer) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ActivateHealPracticeComputer");
-static_assert(sizeof(PyLevelCheckPoint_ActivateHealPracticeComputer) == 0x000010, "Wrong size on PyLevelCheckPoint_ActivateHealPracticeComputer");
-static_assert(offsetof(PyLevelCheckPoint_ActivateHealPracticeComputer, HealPracticeComputerName) == 0x000000, "Member 'PyLevelCheckPoint_ActivateHealPracticeComputer::HealPracticeComputerName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ActivateHealPracticeComputer;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ActivateNoviceSelectHeroComputerByName
 // 0x0010 (0x0010 - 0x0000)
@@ -1172,9 +919,7 @@ struct PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName final
 public:
 	class FString                                 NoviceSelectHeroComputerName;                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName");
-static_assert(sizeof(PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName) == 0x000010, "Wrong size on PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName");
-static_assert(offsetof(PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName, NoviceSelectHeroComputerName) == 0x000000, "Member 'PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName::NoviceSelectHeroComputerName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ActivateNoviceSelectHeroComputerByName;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ChangeControlVictorySpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -1183,9 +928,7 @@ struct PyLevelCheckPoint_ChangeControlVictorySpeed final
 public:
 	float                                         NewSpeed;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ChangeControlVictorySpeed) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ChangeControlVictorySpeed");
-static_assert(sizeof(PyLevelCheckPoint_ChangeControlVictorySpeed) == 0x000004, "Wrong size on PyLevelCheckPoint_ChangeControlVictorySpeed");
-static_assert(offsetof(PyLevelCheckPoint_ChangeControlVictorySpeed, NewSpeed) == 0x000000, "Member 'PyLevelCheckPoint_ChangeControlVictorySpeed::NewSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ChangeControlVictorySpeed;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.EnergyContestGetScoreByBattleSide
 // 0x0008 (0x0008 - 0x0000)
@@ -1196,10 +939,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_EnergyContestGetScoreByBattleSide) == 0x000004, "Wrong alignment on PyLevelCheckPoint_EnergyContestGetScoreByBattleSide");
-static_assert(sizeof(PyLevelCheckPoint_EnergyContestGetScoreByBattleSide) == 0x000008, "Wrong size on PyLevelCheckPoint_EnergyContestGetScoreByBattleSide");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestGetScoreByBattleSide, BattleSide) == 0x000000, "Member 'PyLevelCheckPoint_EnergyContestGetScoreByBattleSide::BattleSide' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestGetScoreByBattleSide, ReturnValue) == 0x000004, "Member 'PyLevelCheckPoint_EnergyContestGetScoreByBattleSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_EnergyContestGetScoreByBattleSide;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.EnergyContestSetProgressMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -1208,9 +948,7 @@ struct PyLevelCheckPoint_EnergyContestSetProgressMultiplier final
 public:
 	float                                         Multiplier;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_EnergyContestSetProgressMultiplier) == 0x000004, "Wrong alignment on PyLevelCheckPoint_EnergyContestSetProgressMultiplier");
-static_assert(sizeof(PyLevelCheckPoint_EnergyContestSetProgressMultiplier) == 0x000004, "Wrong size on PyLevelCheckPoint_EnergyContestSetProgressMultiplier");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestSetProgressMultiplier, Multiplier) == 0x000000, "Member 'PyLevelCheckPoint_EnergyContestSetProgressMultiplier::Multiplier' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_EnergyContestSetProgressMultiplier;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.EnergyContestLockPillageStage
 // 0x0004 (0x0004 - 0x0000)
@@ -1219,9 +957,7 @@ struct PyLevelCheckPoint_EnergyContestLockPillageStage final
 public:
 	int32                                         TargetStage;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_EnergyContestLockPillageStage) == 0x000004, "Wrong alignment on PyLevelCheckPoint_EnergyContestLockPillageStage");
-static_assert(sizeof(PyLevelCheckPoint_EnergyContestLockPillageStage) == 0x000004, "Wrong size on PyLevelCheckPoint_EnergyContestLockPillageStage");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestLockPillageStage, TargetStage) == 0x000000, "Member 'PyLevelCheckPoint_EnergyContestLockPillageStage::TargetStage' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_EnergyContestLockPillageStage;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ShowMessage
 // 0x0010 (0x0010 - 0x0000)
@@ -1230,9 +966,7 @@ struct PyLevelCheckPoint_ShowMessage final
 public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ShowMessage) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ShowMessage");
-static_assert(sizeof(PyLevelCheckPoint_ShowMessage) == 0x000010, "Wrong size on PyLevelCheckPoint_ShowMessage");
-static_assert(offsetof(PyLevelCheckPoint_ShowMessage, Message) == 0x000000, "Member 'PyLevelCheckPoint_ShowMessage::Message' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ShowMessage;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.UpdateMission
 // 0x0018 (0x0018 - 0x0000)
@@ -1242,10 +976,7 @@ public:
 	class FString                                 MissionName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         ShowSubTaskCount;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_UpdateMission) == 0x000008, "Wrong alignment on PyLevelCheckPoint_UpdateMission");
-static_assert(sizeof(PyLevelCheckPoint_UpdateMission) == 0x000018, "Wrong size on PyLevelCheckPoint_UpdateMission");
-static_assert(offsetof(PyLevelCheckPoint_UpdateMission, MissionName) == 0x000000, "Member 'PyLevelCheckPoint_UpdateMission::MissionName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_UpdateMission, ShowSubTaskCount) == 0x000010, "Member 'PyLevelCheckPoint_UpdateMission::ShowSubTaskCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_UpdateMission;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetSubTaskShow
 // 0x0008 (0x0008 - 0x0000)
@@ -1255,10 +986,7 @@ public:
 	int32                                         SubTaskIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsShow;                                            // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetSubTaskShow) == 0x000004, "Wrong alignment on PyLevelCheckPoint_SetSubTaskShow");
-static_assert(sizeof(PyLevelCheckPoint_SetSubTaskShow) == 0x000008, "Wrong size on PyLevelCheckPoint_SetSubTaskShow");
-static_assert(offsetof(PyLevelCheckPoint_SetSubTaskShow, SubTaskIndex) == 0x000000, "Member 'PyLevelCheckPoint_SetSubTaskShow::SubTaskIndex' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_SetSubTaskShow, IsShow) == 0x000004, "Member 'PyLevelCheckPoint_SetSubTaskShow::IsShow' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetSubTaskShow;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ShowTaskTips
 // 0x0018 (0x0018 - 0x0000)
@@ -1269,11 +997,7 @@ public:
 	int32                                         SubTaskIndex;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ShowTaskTips) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ShowTaskTips");
-static_assert(sizeof(PyLevelCheckPoint_ShowTaskTips) == 0x000018, "Wrong size on PyLevelCheckPoint_ShowTaskTips");
-static_assert(offsetof(PyLevelCheckPoint_ShowTaskTips, MissionName) == 0x000000, "Member 'PyLevelCheckPoint_ShowTaskTips::MissionName' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowTaskTips, SubTaskIndex) == 0x000010, "Member 'PyLevelCheckPoint_ShowTaskTips::SubTaskIndex' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowTaskTips, Time) == 0x000014, "Member 'PyLevelCheckPoint_ShowTaskTips::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ShowTaskTips;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ShowCenterHint
 // 0x0050 (0x0050 - 0x0000)
@@ -1285,12 +1009,7 @@ public:
 	class FText                                   GamePadContent;                                    // 0x0030(0x0018)(Parm)
 	float                                         Time;                                              // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ShowCenterHint) == 0x000008, "Wrong alignment on PyLevelCheckPoint_ShowCenterHint");
-static_assert(sizeof(PyLevelCheckPoint_ShowCenterHint) == 0x000050, "Wrong size on PyLevelCheckPoint_ShowCenterHint");
-static_assert(offsetof(PyLevelCheckPoint_ShowCenterHint, Title) == 0x000000, "Member 'PyLevelCheckPoint_ShowCenterHint::Title' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowCenterHint, Content) == 0x000018, "Member 'PyLevelCheckPoint_ShowCenterHint::Content' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowCenterHint, GamePadContent) == 0x000030, "Member 'PyLevelCheckPoint_ShowCenterHint::GamePadContent' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowCenterHint, Time) == 0x000048, "Member 'PyLevelCheckPoint_ShowCenterHint::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ShowCenterHint;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.ShowHightlight
 // 0x000C (0x000C - 0x0000)
@@ -1303,12 +1022,7 @@ public:
 	int32                                         SkillID;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_ShowHightlight) == 0x000004, "Wrong alignment on PyLevelCheckPoint_ShowHightlight");
-static_assert(sizeof(PyLevelCheckPoint_ShowHightlight) == 0x00000C, "Wrong size on PyLevelCheckPoint_ShowHightlight");
-static_assert(offsetof(PyLevelCheckPoint_ShowHightlight, Type) == 0x000000, "Member 'PyLevelCheckPoint_ShowHightlight::Type' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowHightlight, IsBox) == 0x000001, "Member 'PyLevelCheckPoint_ShowHightlight::IsBox' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowHightlight, SkillID) == 0x000004, "Member 'PyLevelCheckPoint_ShowHightlight::SkillID' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_ShowHightlight, Time) == 0x000008, "Member 'PyLevelCheckPoint_ShowHightlight::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_ShowHightlight;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.EnergyContestShowHightLight
 // 0x0018 (0x0018 - 0x0000)
@@ -1320,11 +1034,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Time;                                              // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_EnergyContestShowHightLight) == 0x000008, "Wrong alignment on PyLevelCheckPoint_EnergyContestShowHightLight");
-static_assert(sizeof(PyLevelCheckPoint_EnergyContestShowHightLight) == 0x000018, "Wrong size on PyLevelCheckPoint_EnergyContestShowHightLight");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestShowHightLight, WidgetNameList) == 0x000000, "Member 'PyLevelCheckPoint_EnergyContestShowHightLight::WidgetNameList' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestShowHightLight, IsBox) == 0x000010, "Member 'PyLevelCheckPoint_EnergyContestShowHightLight::IsBox' has a wrong offset!");
-static_assert(offsetof(PyLevelCheckPoint_EnergyContestShowHightLight, Time) == 0x000014, "Member 'PyLevelCheckPoint_EnergyContestShowHightLight::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_EnergyContestShowHightLight;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.FinishSubMission
 // 0x0010 (0x0010 - 0x0000)
@@ -1333,9 +1043,7 @@ struct PyLevelCheckPoint_FinishSubMission final
 public:
 	class FString                                 SubMissionName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_FinishSubMission) == 0x000008, "Wrong alignment on PyLevelCheckPoint_FinishSubMission");
-static_assert(sizeof(PyLevelCheckPoint_FinishSubMission) == 0x000010, "Wrong size on PyLevelCheckPoint_FinishSubMission");
-static_assert(offsetof(PyLevelCheckPoint_FinishSubMission, SubMissionName) == 0x000000, "Member 'PyLevelCheckPoint_FinishSubMission::SubMissionName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_FinishSubMission;
 
 // PythonFunction PyLevelCheckPoint.PyLevelCheckPoint.SetIndicatorVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -1344,9 +1052,7 @@ struct PyLevelCheckPoint_SetIndicatorVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCheckPoint_SetIndicatorVisible) == 0x000001, "Wrong alignment on PyLevelCheckPoint_SetIndicatorVisible");
-static_assert(sizeof(PyLevelCheckPoint_SetIndicatorVisible) == 0x000001, "Wrong size on PyLevelCheckPoint_SetIndicatorVisible");
-static_assert(offsetof(PyLevelCheckPoint_SetIndicatorVisible, InVisible) == 0x000000, "Member 'PyLevelCheckPoint_SetIndicatorVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCheckPoint_SetIndicatorVisible;
 
 }
 

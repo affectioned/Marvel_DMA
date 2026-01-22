@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1011_CharacterBP.1011_CharacterBP_C
-// 0x0010 (0x2270 - 0x2260)
+// 0x0010 (0x2380 - 0x2370)
 class AOne011_CharacterBP_C final : public APyHulkBannerCharacter
 {
 public:
-	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x2370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1011_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1011_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1011_CharacterBP_C")
 	}
 	static class AOne011_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne011_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne011_CharacterBP_C) == 0x000010, "Wrong alignment on AOne011_CharacterBP_C");
-static_assert(sizeof(AOne011_CharacterBP_C) == 0x002270, "Wrong size on AOne011_CharacterBP_C");
-static_assert(offsetof(AOne011_CharacterBP_C, PhysicalInteraction) == 0x002260, "Member 'AOne011_CharacterBP_C::PhysicalInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_AOne011_CharacterBP_C;
 
 }
 

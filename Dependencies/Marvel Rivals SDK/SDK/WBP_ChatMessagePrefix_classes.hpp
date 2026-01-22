@@ -39,29 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatMessagePrefix_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatMessagePrefix_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatMessagePrefix_C")
 	}
 	static class UWBP_ChatMessagePrefix_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatMessagePrefix_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatMessagePrefix_C) == 0x000010, "Wrong alignment on UWBP_ChatMessagePrefix_C");
-static_assert(sizeof(UWBP_ChatMessagePrefix_C) == 0x0009B0, "Wrong size on UWBP_ChatMessagePrefix_C");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Btn_ChannelName) == 0x000940, "Member 'UWBP_ChatMessagePrefix_C::Btn_ChannelName' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Btn_PlayerName) == 0x000948, "Member 'UWBP_ChatMessagePrefix_C::Btn_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, HBox_Channel) == 0x000950, "Member 'UWBP_ChatMessagePrefix_C::HBox_Channel' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Img_ChannelIcon) == 0x000958, "Member 'UWBP_ChatMessagePrefix_C::Img_ChannelIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Img_PlayerIcon) == 0x000960, "Member 'UWBP_ChatMessagePrefix_C::Img_PlayerIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Overlay_Channel) == 0x000968, "Member 'UWBP_ChatMessagePrefix_C::Overlay_Channel' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_ChannelName) == 0x000970, "Member 'UWBP_ChatMessagePrefix_C::Text_ChannelName' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_ChannelPrefix) == 0x000978, "Member 'UWBP_ChatMessagePrefix_C::Text_ChannelPrefix' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_Colon) == 0x000980, "Member 'UWBP_ChatMessagePrefix_C::Text_Colon' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_Left) == 0x000988, "Member 'UWBP_ChatMessagePrefix_C::Text_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_PlayerName) == 0x000990, "Member 'UWBP_ChatMessagePrefix_C::Text_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_PlayerNamePrefix) == 0x000998, "Member 'UWBP_ChatMessagePrefix_C::Text_PlayerNamePrefix' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_PlayerNameSurfix) == 0x0009A0, "Member 'UWBP_ChatMessagePrefix_C::Text_PlayerNameSurfix' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMessagePrefix_C, Text_Right) == 0x0009A8, "Member 'UWBP_ChatMessagePrefix_C::Text_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatMessagePrefix_C;
 
 }
 

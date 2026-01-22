@@ -74,6 +74,56 @@ void UPyWidget3D_CharacterInfo::Destruct()
 }
 
 
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.K2_UpdateColor
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              Color                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget3D_CharacterInfo::K2_UpdateColor(const struct FLinearColor& Color)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "K2_UpdateColor");
+
+	Params::PyWidget3D_CharacterInfo_K2_UpdateColor Parms{};
+
+	Parms.Color = std::move(Color);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetShowUltimateIcon
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bShow                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget3D_CharacterInfo::SetShowUltimateIcon(bool bShow)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "SetShowUltimateIcon");
+
+	Params::PyWidget3D_CharacterInfo_SetShowUltimateIcon Parms{};
+
+	Parms.bShow = bShow;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetShowBattleChessHeroLevel
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -89,6 +139,31 @@ void UPyWidget3D_CharacterInfo::SetShowBattleChessHeroLevel(bool bShow)
 	Params::PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel Parms{};
 
 	Parms.bShow = bShow;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetUltimateEnergyPercent
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   InPercentage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget3D_CharacterInfo::SetUltimateEnergyPercent(float InPercentage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "SetUltimateEnergyPercent");
+
+	Params::PyWidget3D_CharacterInfo_SetUltimateEnergyPercent Parms{};
+
+	Parms.InPercentage = InPercentage;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -121,6 +196,81 @@ void UPyWidget3D_CharacterInfo::SetHeroLevel(int32 InLevel)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetIsAlly
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const bool                              bIsAlly                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget3D_CharacterInfo::SetIsAlly(const bool bIsAlly)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "SetIsAlly");
+
+	Params::PyWidget3D_CharacterInfo_SetIsAlly Parms{};
+
+	Parms.bIsAlly = bIsAlly;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.UpdateHpBarSideWidgetsLayout
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    Useless                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget3D_CharacterInfo::UpdateHpBarSideWidgetsLayout(bool Useless)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "UpdateHpBarSideWidgetsLayout");
+
+	Params::PyWidget3D_CharacterInfo_UpdateHpBarSideWidgetsLayout Parms{};
+
+	Parms.Useless = Useless;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.GetShowUltimateIcon
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyWidget3D_CharacterInfo::GetShowUltimateIcon() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_CharacterInfo", "GetShowUltimateIcon");
+
+	Params::PyWidget3D_CharacterInfo_GetShowUltimateIcon Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 

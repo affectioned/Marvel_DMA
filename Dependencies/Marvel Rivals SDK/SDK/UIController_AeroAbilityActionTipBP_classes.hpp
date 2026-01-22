@@ -23,15 +23,18 @@ class UUIController_AeroAbilityActionTipBP_C final : public UPyUIController_Aero
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIController_AeroAbilityActionTipBP_C">();
+		BP_STATIC_CLASS_IMPL("UIController_AeroAbilityActionTipBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_AeroAbilityActionTipBP_C")
 	}
 	static class UUIController_AeroAbilityActionTipBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_AeroAbilityActionTipBP_C>();
 	}
 };
-static_assert(alignof(UUIController_AeroAbilityActionTipBP_C) == 0x000008, "Wrong alignment on UUIController_AeroAbilityActionTipBP_C");
-static_assert(sizeof(UUIController_AeroAbilityActionTipBP_C) == 0x000100, "Wrong size on UUIController_AeroAbilityActionTipBP_C");
+DUMPER7_ASSERTS_UUIController_AeroAbilityActionTipBP_C;
 
 }
 

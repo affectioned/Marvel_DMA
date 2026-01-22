@@ -17,53 +17,41 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_CountDown.WBP_SelectHero_CountDown_C
-// 0x0078 (0x0638 - 0x05C0)
+// 0x0078 (0x0640 - 0x05C8)
 class UWBP_SelectHero_CountDown_C final : public UPyWidget_SelectHero_CountDown
 {
 public:
-	class UWidgetAnimation*                       Anim_Toggle;                                       // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Countdown;                                    // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_SelectCount;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_SelectCount_1;                                // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_SelectCount_2;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Countdown_Flash_Vx;                            // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Countdown_Flash_Vx_1;                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Countdown_Flash_Vx1;                           // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Countdown_Flash_Vx1_1;                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_SelectCount;                               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Vx;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Time;                                         // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Time_second;                                  // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Time_Vx;                                      // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Time_Vx_1;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Toggle;                                       // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Countdown;                                    // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_SelectCount;                                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_SelectCount_1;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_SelectCount_2;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Countdown_Flash_Vx;                            // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Countdown_Flash_Vx_1;                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Countdown_Flash_Vx1;                           // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Countdown_Flash_Vx1_1;                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_SelectCount;                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Vx;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Time;                                         // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Time_second;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Time_Vx;                                      // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Time_Vx_1;                                    // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_CountDown_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_CountDown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_CountDown_C")
 	}
 	static class UWBP_SelectHero_CountDown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_CountDown_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_CountDown_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_CountDown_C");
-static_assert(sizeof(UWBP_SelectHero_CountDown_C) == 0x000638, "Wrong size on UWBP_SelectHero_CountDown_C");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Anim_Toggle) == 0x0005C0, "Member 'UWBP_SelectHero_CountDown_C::Anim_Toggle' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Anim_Countdown) == 0x0005C8, "Member 'UWBP_SelectHero_CountDown_C::Anim_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, HBox_SelectCount) == 0x0005D0, "Member 'UWBP_SelectHero_CountDown_C::HBox_SelectCount' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, HBox_SelectCount_1) == 0x0005D8, "Member 'UWBP_SelectHero_CountDown_C::HBox_SelectCount_1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, HBox_SelectCount_2) == 0x0005E0, "Member 'UWBP_SelectHero_CountDown_C::HBox_SelectCount_2' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Img_Countdown_Flash_Vx) == 0x0005E8, "Member 'UWBP_SelectHero_CountDown_C::Img_Countdown_Flash_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Img_Countdown_Flash_Vx_1) == 0x0005F0, "Member 'UWBP_SelectHero_CountDown_C::Img_Countdown_Flash_Vx_1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Img_Countdown_Flash_Vx1) == 0x0005F8, "Member 'UWBP_SelectHero_CountDown_C::Img_Countdown_Flash_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Img_Countdown_Flash_Vx1_1) == 0x000600, "Member 'UWBP_SelectHero_CountDown_C::Img_Countdown_Flash_Vx1_1' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Overlay_SelectCount) == 0x000608, "Member 'UWBP_SelectHero_CountDown_C::Overlay_SelectCount' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Overlay_Vx) == 0x000610, "Member 'UWBP_SelectHero_CountDown_C::Overlay_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Text_Time) == 0x000618, "Member 'UWBP_SelectHero_CountDown_C::Text_Time' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Text_Time_second) == 0x000620, "Member 'UWBP_SelectHero_CountDown_C::Text_Time_second' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Text_Time_Vx) == 0x000628, "Member 'UWBP_SelectHero_CountDown_C::Text_Time_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_CountDown_C, Text_Time_Vx_1) == 0x000630, "Member 'UWBP_SelectHero_CountDown_C::Text_Time_Vx_1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_CountDown_C;
 
 }
 

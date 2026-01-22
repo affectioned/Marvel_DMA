@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWeaponFunctionLibrary">();
+		STATIC_CLASS_IMPL("PyWeaponFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWeaponFunctionLibrary")
 	}
 	static class UPyWeaponFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWeaponFunctionLibrary>();
 	}
 };
-static_assert(alignof(UPyWeaponFunctionLibrary) == 0x000008, "Wrong alignment on UPyWeaponFunctionLibrary");
-static_assert(sizeof(UPyWeaponFunctionLibrary) == 0x000030, "Wrong size on UPyWeaponFunctionLibrary");
+DUMPER7_ASSERTS_UPyWeaponFunctionLibrary;
 
 }
 

@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryMainPanel.PyWidget_SecondaryMainPanel
-// 0x00C0 (0x06B8 - 0x05F8)
+// 0x00C0 (0x06C0 - 0x0600)
 class UPyWidget_SecondaryMainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnVisible;                        // 0x05F8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnInvisible;                      // 0x0648(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ClickAudioEvents;                                  // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedPreview;                                       // 0x06A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PreviewSytle;                                      // 0x06A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnVisible;                        // 0x0600(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EPopupAudioEvent, class UAkAudioEvent*>  PopupAudioEvents_OnInvisible;                      // 0x0650(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ClickAudioEvents;                                  // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedPreview;                                       // 0x06A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6A9[0x7];                                      // 0x06A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PreviewSytle;                                      // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryMainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryMainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryMainPanel")
 	}
 	static class UPyWidget_SecondaryMainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryMainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryMainPanel) == 0x000008, "Wrong alignment on UPyWidget_SecondaryMainPanel");
-static_assert(sizeof(UPyWidget_SecondaryMainPanel) == 0x0006B8, "Wrong size on UPyWidget_SecondaryMainPanel");
-static_assert(offsetof(UPyWidget_SecondaryMainPanel, PopupAudioEvents_OnVisible) == 0x0005F8, "Member 'UPyWidget_SecondaryMainPanel::PopupAudioEvents_OnVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryMainPanel, PopupAudioEvents_OnInvisible) == 0x000648, "Member 'UPyWidget_SecondaryMainPanel::PopupAudioEvents_OnInvisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryMainPanel, ClickAudioEvents) == 0x000698, "Member 'UPyWidget_SecondaryMainPanel::ClickAudioEvents' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryMainPanel, NeedPreview) == 0x0006A0, "Member 'UPyWidget_SecondaryMainPanel::NeedPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryMainPanel, PreviewSytle) == 0x0006A8, "Member 'UPyWidget_SecondaryMainPanel::PreviewSytle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryMainPanel;
 
 }
 

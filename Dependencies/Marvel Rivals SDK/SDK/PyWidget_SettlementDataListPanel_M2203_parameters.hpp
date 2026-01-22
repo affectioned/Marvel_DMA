@@ -21,9 +21,7 @@ struct PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled final
 public:
 	float                                         scroll_offset;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled) == 0x000004, "Wrong alignment on PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled");
-static_assert(sizeof(PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled) == 0x000004, "Wrong size on PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled");
-static_assert(offsetof(PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled, scroll_offset) == 0x000000, "Member 'PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled::scroll_offset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SettlementDataListPanel_M2203_OnScrollBoxScrolled;
 
 }
 

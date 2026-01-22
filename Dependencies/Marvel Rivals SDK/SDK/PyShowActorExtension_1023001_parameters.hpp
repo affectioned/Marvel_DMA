@@ -23,9 +23,7 @@ struct PyShowActorExtension_1023302_SetShowActorStage final
 public:
 	EShowActorStage                               ShowActorStage;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1023302_SetShowActorStage) == 0x000001, "Wrong alignment on PyShowActorExtension_1023302_SetShowActorStage");
-static_assert(sizeof(PyShowActorExtension_1023302_SetShowActorStage) == 0x000001, "Wrong size on PyShowActorExtension_1023302_SetShowActorStage");
-static_assert(offsetof(PyShowActorExtension_1023302_SetShowActorStage, ShowActorStage) == 0x000000, "Member 'PyShowActorExtension_1023302_SetShowActorStage::ShowActorStage' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1023302_SetShowActorStage;
 
 }
 

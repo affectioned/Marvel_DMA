@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ResurrectionAbility_10466101_BP.ResurrectionAbility_10466101_BP_C
-// 0x0000 (0x1428 - 0x1428)
+// 0x0000 (0x1440 - 0x1440)
 class UResurrectionAbility_10466101_BP_C final : public UPyResurrectionAbility_10466101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ResurrectionAbility_10466101_BP_C">();
+		BP_STATIC_CLASS_IMPL("ResurrectionAbility_10466101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResurrectionAbility_10466101_BP_C")
 	}
 	static class UResurrectionAbility_10466101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResurrectionAbility_10466101_BP_C>();
 	}
 };
-static_assert(alignof(UResurrectionAbility_10466101_BP_C) == 0x000008, "Wrong alignment on UResurrectionAbility_10466101_BP_C");
-static_assert(sizeof(UResurrectionAbility_10466101_BP_C) == 0x001428, "Wrong size on UResurrectionAbility_10466101_BP_C");
+DUMPER7_ASSERTS_UResurrectionAbility_10466101_BP_C;
 
 }
 

@@ -35,22 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLensComponentSection">();
+		STATIC_CLASS_IMPL("MovieSceneLensComponentSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLensComponentSection")
 	}
 	static class UMovieSceneLensComponentSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLensComponentSection>();
 	}
 };
-static_assert(alignof(UMovieSceneLensComponentSection) == 0x000008, "Wrong alignment on UMovieSceneLensComponentSection");
-static_assert(sizeof(UMovieSceneLensComponentSection) == 0x000168, "Wrong size on UMovieSceneLensComponentSection");
-static_assert(offsetof(UMovieSceneLensComponentSection, bReapplyNodalOffset) == 0x000110, "Member 'UMovieSceneLensComponentSection::bReapplyNodalOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, OverrideLensFile) == 0x000118, "Member 'UMovieSceneLensComponentSection::OverrideLensFile' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, CachedLensFile) == 0x000120, "Member 'UMovieSceneLensComponentSection::CachedLensFile' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, DistortionParameterChannels) == 0x000128, "Member 'UMovieSceneLensComponentSection::DistortionParameterChannels' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, FxFyChannels) == 0x000138, "Member 'UMovieSceneLensComponentSection::FxFyChannels' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, ImageCenterChannels) == 0x000148, "Member 'UMovieSceneLensComponentSection::ImageCenterChannels' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLensComponentSection, LensModelClass) == 0x000158, "Member 'UMovieSceneLensComponentSection::LensModelClass' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneLensComponentSection;
 
 // Class CameraCalibrationCoreMovieScene.MovieSceneLensComponentTrack
 // 0x0010 (0x00B0 - 0x00A0)
@@ -62,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLensComponentTrack">();
+		STATIC_CLASS_IMPL("MovieSceneLensComponentTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLensComponentTrack")
 	}
 	static class UMovieSceneLensComponentTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLensComponentTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneLensComponentTrack) == 0x000008, "Wrong alignment on UMovieSceneLensComponentTrack");
-static_assert(sizeof(UMovieSceneLensComponentTrack) == 0x0000B0, "Wrong size on UMovieSceneLensComponentTrack");
-static_assert(offsetof(UMovieSceneLensComponentTrack, Sections) == 0x0000A0, "Member 'UMovieSceneLensComponentTrack::Sections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneLensComponentTrack;
 
 }
 

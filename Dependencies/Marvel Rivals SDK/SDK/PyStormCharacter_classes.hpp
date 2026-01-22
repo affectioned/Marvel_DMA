@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyStormCharacter.PyStormCharacter
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class APyStormCharacter : public AStormCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyStormCharacter">();
+		STATIC_CLASS_IMPL("PyStormCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyStormCharacter")
 	}
 	static class APyStormCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyStormCharacter>();
 	}
 };
-static_assert(alignof(APyStormCharacter) == 0x000010, "Wrong alignment on APyStormCharacter");
-static_assert(sizeof(APyStormCharacter) == 0x002220, "Wrong size on APyStormCharacter");
+DUMPER7_ASSERTS_APyStormCharacter;
 
 }
 

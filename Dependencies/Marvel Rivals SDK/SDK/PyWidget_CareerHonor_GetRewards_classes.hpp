@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHonor_GetRewards">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHonor_GetRewards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHonor_GetRewards")
 	}
 	static class UPyWidget_CareerHonor_GetRewards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHonor_GetRewards>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHonor_GetRewards) == 0x000008, "Wrong alignment on UPyWidget_CareerHonor_GetRewards");
-static_assert(sizeof(UPyWidget_CareerHonor_GetRewards) == 0x0003C0, "Wrong size on UPyWidget_CareerHonor_GetRewards");
-static_assert(offsetof(UPyWidget_CareerHonor_GetRewards, UnbindTagWidgetClass) == 0x0003B8, "Member 'UPyWidget_CareerHonor_GetRewards::UnbindTagWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHonor_GetRewards;
 
 }
 

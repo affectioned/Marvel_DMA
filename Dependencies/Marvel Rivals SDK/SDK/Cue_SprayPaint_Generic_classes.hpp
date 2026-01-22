@@ -23,15 +23,18 @@ class ACue_SprayPaint_Generic_C final : public AMarvelCueNotify_SprayPaint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_SprayPaint_Generic_C">();
+		BP_STATIC_CLASS_IMPL("Cue_SprayPaint_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_SprayPaint_Generic_C")
 	}
 	static class ACue_SprayPaint_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_SprayPaint_Generic_C>();
 	}
 };
-static_assert(alignof(ACue_SprayPaint_Generic_C) == 0x000010, "Wrong alignment on ACue_SprayPaint_Generic_C");
-static_assert(sizeof(ACue_SprayPaint_Generic_C) == 0x000A40, "Wrong size on ACue_SprayPaint_Generic_C");
+DUMPER7_ASSERTS_ACue_SprayPaint_Generic_C;
 
 }
 

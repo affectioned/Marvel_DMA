@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Death.Cue_Death_C
-// 0x0000 (0x0FE0 - 0x0FE0)
+// 0x0000 (0x0FF0 - 0x0FF0)
 class ACue_Death_C final : public ACue_Death
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Death_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Death_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Death_C")
 	}
 	static class ACue_Death_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Death_C>();
 	}
 };
-static_assert(alignof(ACue_Death_C) == 0x000010, "Wrong alignment on ACue_Death_C");
-static_assert(sizeof(ACue_Death_C) == 0x000FE0, "Wrong size on ACue_Death_C");
+DUMPER7_ASSERTS_ACue_Death_C;
 
 }
 

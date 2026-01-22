@@ -23,15 +23,18 @@ class UAIMoveControl_JeffVenomBond_10478301_C final : public UAIAbilityMoveContr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_JeffVenomBond_10478301_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_JeffVenomBond_10478301_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_JeffVenomBond_10478301_C")
 	}
 	static class UAIMoveControl_JeffVenomBond_10478301_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_JeffVenomBond_10478301_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_JeffVenomBond_10478301_C) == 0x000008, "Wrong alignment on UAIMoveControl_JeffVenomBond_10478301_C");
-static_assert(sizeof(UAIMoveControl_JeffVenomBond_10478301_C) == 0x0000B8, "Wrong size on UAIMoveControl_JeffVenomBond_10478301_C");
+DUMPER7_ASSERTS_UAIMoveControl_JeffVenomBond_10478301_C;
 
 }
 

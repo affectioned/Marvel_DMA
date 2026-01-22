@@ -23,9 +23,7 @@ struct PyBirthBaseEnergyContest_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBirthBaseEnergyContest_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBirthBaseEnergyContest_ReceiveEndPlay");
-static_assert(sizeof(PyBirthBaseEnergyContest_ReceiveEndPlay) == 0x000001, "Wrong size on PyBirthBaseEnergyContest_ReceiveEndPlay");
-static_assert(offsetof(PyBirthBaseEnergyContest_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBirthBaseEnergyContest_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBirthBaseEnergyContest_ReceiveEndPlay;
 
 }
 

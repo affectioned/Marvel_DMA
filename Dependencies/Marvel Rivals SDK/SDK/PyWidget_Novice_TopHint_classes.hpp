@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Novice_TopHint.PyWidget_Novice_TopHint
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Novice_TopHint final : public UMarvelUserWidget
 {
 public:
-	int32                                         RichInlineWeight;                                  // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlineHeight;                                  // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlinePadding;                                 // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineWeight;                                  // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineHeight;                                  // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlinePadding;                                 // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_TopHint">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_TopHint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_TopHint")
 	}
 	static class UPyWidget_Novice_TopHint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_TopHint>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_TopHint) == 0x000008, "Wrong alignment on UPyWidget_Novice_TopHint");
-static_assert(sizeof(UPyWidget_Novice_TopHint) == 0x000578, "Wrong size on UPyWidget_Novice_TopHint");
-static_assert(offsetof(UPyWidget_Novice_TopHint, RichInlineWeight) == 0x000568, "Member 'UPyWidget_Novice_TopHint::RichInlineWeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_TopHint, RichInlineHeight) == 0x00056C, "Member 'UPyWidget_Novice_TopHint::RichInlineHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_TopHint, RichInlinePadding) == 0x000570, "Member 'UPyWidget_Novice_TopHint::RichInlinePadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_TopHint;
 
 }
 

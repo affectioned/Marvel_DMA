@@ -26,10 +26,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyTraceComponent_120_10532101_HandleTrace) == 0x000008, "Wrong alignment on PyTraceComponent_120_10532101_HandleTrace");
-static_assert(sizeof(PyTraceComponent_120_10532101_HandleTrace) == 0x000018, "Wrong size on PyTraceComponent_120_10532101_HandleTrace");
-static_assert(offsetof(PyTraceComponent_120_10532101_HandleTrace, TraceSource) == 0x000000, "Member 'PyTraceComponent_120_10532101_HandleTrace::TraceSource' has a wrong offset!");
-static_assert(offsetof(PyTraceComponent_120_10532101_HandleTrace, HitResults) == 0x000008, "Member 'PyTraceComponent_120_10532101_HandleTrace::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_120_10532101_HandleTrace;
 
 // PythonFunction PyBuffAbility_120_105321.PyCue_Scope_10532109.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +37,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_10532109_WhileActive) == 0x000008, "Wrong alignment on PyCue_Scope_10532109_WhileActive");
-static_assert(sizeof(PyCue_Scope_10532109_WhileActive) == 0x0001E0, "Wrong size on PyCue_Scope_10532109_WhileActive");
-static_assert(offsetof(PyCue_Scope_10532109_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Scope_10532109_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_10532109_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Scope_10532109_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_10532109_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Scope_10532109_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_10532109_WhileActive;
 
 // PythonFunction PyBuffAbility_120_105321.PyCue_Scope_10532109.OnSkillEnergyChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -54,10 +47,7 @@ public:
 	class AActor*                                 SourceAcatar;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_10532109_OnSkillEnergyChanged) == 0x000008, "Wrong alignment on PyCue_Scope_10532109_OnSkillEnergyChanged");
-static_assert(sizeof(PyCue_Scope_10532109_OnSkillEnergyChanged) == 0x000020, "Wrong size on PyCue_Scope_10532109_OnSkillEnergyChanged");
-static_assert(offsetof(PyCue_Scope_10532109_OnSkillEnergyChanged, SourceAcatar) == 0x000000, "Member 'PyCue_Scope_10532109_OnSkillEnergyChanged::SourceAcatar' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_10532109_OnSkillEnergyChanged, ModifierParameterHandle) == 0x000008, "Member 'PyCue_Scope_10532109_OnSkillEnergyChanged::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_10532109_OnSkillEnergyChanged;
 
 // PythonFunction PyBuffAbility_120_105321.PyCue_Scope_10532109.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -67,10 +57,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_10532109_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Scope_10532109_OnExecuteFX");
-static_assert(sizeof(PyCue_Scope_10532109_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Scope_10532109_OnExecuteFX");
-static_assert(offsetof(PyCue_Scope_10532109_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_10532109_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_10532109_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Scope_10532109_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_10532109_OnExecuteFX;
 
 }
 

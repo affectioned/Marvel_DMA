@@ -23,9 +23,7 @@ struct PySubVoMgrBase_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySubVoMgrBase_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySubVoMgrBase_ReceiveEndPlay");
-static_assert(sizeof(PySubVoMgrBase_ReceiveEndPlay) == 0x000001, "Wrong size on PySubVoMgrBase_ReceiveEndPlay");
-static_assert(offsetof(PySubVoMgrBase_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySubVoMgrBase_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgrBase_ReceiveEndPlay;
 
 }
 

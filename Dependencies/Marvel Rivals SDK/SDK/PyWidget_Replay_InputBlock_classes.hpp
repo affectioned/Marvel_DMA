@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_InputBlock.PyReplayInputBlock
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyReplayInputBlock final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& action, EInputEvent event)> OnMousePressed;   // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& action, EInputEvent event)> OnMousePressed;   // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReplayInputBlock">();
+		STATIC_CLASS_IMPL("PyReplayInputBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReplayInputBlock")
 	}
 	static class UPyReplayInputBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyReplayInputBlock>();
 	}
 };
-static_assert(alignof(UPyReplayInputBlock) == 0x000008, "Wrong alignment on UPyReplayInputBlock");
-static_assert(sizeof(UPyReplayInputBlock) == 0x0005D0, "Wrong size on UPyReplayInputBlock");
-static_assert(offsetof(UPyReplayInputBlock, OnMousePressed) == 0x0005C0, "Member 'UPyReplayInputBlock::OnMousePressed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyReplayInputBlock;
 
 }
 

@@ -106,11 +106,7 @@ public:
 	float                                         RotateSpeed;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InitRotateAngle;                                   // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FProjectileSpreadRotateInfo) == 0x000008, "Wrong alignment on FProjectileSpreadRotateInfo");
-static_assert(sizeof(FProjectileSpreadRotateInfo) == 0x000010, "Wrong size on FProjectileSpreadRotateInfo");
-static_assert(offsetof(FProjectileSpreadRotateInfo, SpreadCurve) == 0x000000, "Member 'FProjectileSpreadRotateInfo::SpreadCurve' has a wrong offset!");
-static_assert(offsetof(FProjectileSpreadRotateInfo, RotateSpeed) == 0x000008, "Member 'FProjectileSpreadRotateInfo::RotateSpeed' has a wrong offset!");
-static_assert(offsetof(FProjectileSpreadRotateInfo, InitRotateAngle) == 0x00000C, "Member 'FProjectileSpreadRotateInfo::InitRotateAngle' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileSpreadRotateInfo;
 
 // ScriptStruct Hero_1018.CustomMaterialCurveMap
 // 0x0050 (0x0050 - 0x0000)
@@ -119,9 +115,7 @@ struct FCustomMaterialCurveMap final
 public:
 	TMap<class FName, class FName>                MaterialCurveMap;                                  // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCustomMaterialCurveMap) == 0x000008, "Wrong alignment on FCustomMaterialCurveMap");
-static_assert(sizeof(FCustomMaterialCurveMap) == 0x000050, "Wrong size on FCustomMaterialCurveMap");
-static_assert(offsetof(FCustomMaterialCurveMap, MaterialCurveMap) == 0x000000, "Member 'FCustomMaterialCurveMap::MaterialCurveMap' has a wrong offset!");
+DUMPER7_ASSERTS_FCustomMaterialCurveMap;
 
 // ScriptStruct Hero_1018.CustomMeshMaterialMap
 // 0x0050 (0x0050 - 0x0000)
@@ -130,9 +124,7 @@ struct FCustomMeshMaterialMap final
 public:
 	TMap<uint8, class UMaterialInstanceDynamic*>  MeshMaterialMap;                                   // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCustomMeshMaterialMap) == 0x000008, "Wrong alignment on FCustomMeshMaterialMap");
-static_assert(sizeof(FCustomMeshMaterialMap) == 0x000050, "Wrong size on FCustomMeshMaterialMap");
-static_assert(offsetof(FCustomMeshMaterialMap, MeshMaterialMap) == 0x000000, "Member 'FCustomMeshMaterialMap::MeshMaterialMap' has a wrong offset!");
+DUMPER7_ASSERTS_FCustomMeshMaterialMap;
 
 // ScriptStruct Hero_1018.AbilityPlaceMsg_101861
 // 0x0130 (0x0130 - 0x0000)
@@ -146,15 +138,10 @@ public:
 	struct FTransform                             Transform_StartPortal;                             // 0x0070(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             Transform_EndPortal;                               // 0x00D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityPlaceMsg_101861) == 0x000010, "Wrong alignment on FAbilityPlaceMsg_101861");
-static_assert(sizeof(FAbilityPlaceMsg_101861) == 0x000130, "Wrong size on FAbilityPlaceMsg_101861");
-static_assert(offsetof(FAbilityPlaceMsg_101861, bNeedCreatePortal) == 0x000002, "Member 'FAbilityPlaceMsg_101861::bNeedCreatePortal' has a wrong offset!");
-static_assert(offsetof(FAbilityPlaceMsg_101861, AutonomousTrans) == 0x000010, "Member 'FAbilityPlaceMsg_101861::AutonomousTrans' has a wrong offset!");
-static_assert(offsetof(FAbilityPlaceMsg_101861, Transform_StartPortal) == 0x000070, "Member 'FAbilityPlaceMsg_101861::Transform_StartPortal' has a wrong offset!");
-static_assert(offsetof(FAbilityPlaceMsg_101861, Transform_EndPortal) == 0x0000D0, "Member 'FAbilityPlaceMsg_101861::Transform_EndPortal' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityPlaceMsg_101861;
 
 // ScriptStruct Hero_1018.AbilityManaConfig_101881
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct FAbilityManaConfig_101881 final
 {
 public:
@@ -162,14 +149,9 @@ public:
 	float                                         Increasement;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAbilityIncreaseType_101881                   IncreaseMoment;                                    // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelGameplayTagRequirements         EnemyTagRequirements;                              // 0x0010(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         EnemyTagRequirements;                              // 0x0010(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityManaConfig_101881) == 0x000008, "Wrong alignment on FAbilityManaConfig_101881");
-static_assert(sizeof(FAbilityManaConfig_101881) == 0x0000E0, "Wrong size on FAbilityManaConfig_101881");
-static_assert(offsetof(FAbilityManaConfig_101881, AbilityID) == 0x000000, "Member 'FAbilityManaConfig_101881::AbilityID' has a wrong offset!");
-static_assert(offsetof(FAbilityManaConfig_101881, Increasement) == 0x000004, "Member 'FAbilityManaConfig_101881::Increasement' has a wrong offset!");
-static_assert(offsetof(FAbilityManaConfig_101881, IncreaseMoment) == 0x000008, "Member 'FAbilityManaConfig_101881::IncreaseMoment' has a wrong offset!");
-static_assert(offsetof(FAbilityManaConfig_101881, EnemyTagRequirements) == 0x000010, "Member 'FAbilityManaConfig_101881::EnemyTagRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityManaConfig_101881;
 
 // ScriptStruct Hero_1018.AbilityEffectConfig_101881
 // 0x0070 (0x0070 - 0x0000)
@@ -186,15 +168,7 @@ public:
 	struct FRotator                               RotationOffset;                                    // 0x0040(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                EffectScale;                                       // 0x0058(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityEffectConfig_101881) == 0x000008, "Wrong alignment on FAbilityEffectConfig_101881");
-static_assert(sizeof(FAbilityEffectConfig_101881) == 0x000070, "Wrong size on FAbilityEffectConfig_101881");
-static_assert(offsetof(FAbilityEffectConfig_101881, Threshold) == 0x000000, "Member 'FAbilityEffectConfig_101881::Threshold' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, Effect) == 0x000008, "Member 'FAbilityEffectConfig_101881::Effect' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, NiagaraEffect) == 0x000010, "Member 'FAbilityEffectConfig_101881::NiagaraEffect' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, AttachSocket) == 0x000018, "Member 'FAbilityEffectConfig_101881::AttachSocket' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, LocationOffset) == 0x000028, "Member 'FAbilityEffectConfig_101881::LocationOffset' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, RotationOffset) == 0x000040, "Member 'FAbilityEffectConfig_101881::RotationOffset' has a wrong offset!");
-static_assert(offsetof(FAbilityEffectConfig_101881, EffectScale) == 0x000058, "Member 'FAbilityEffectConfig_101881::EffectScale' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityEffectConfig_101881;
 
 }
 

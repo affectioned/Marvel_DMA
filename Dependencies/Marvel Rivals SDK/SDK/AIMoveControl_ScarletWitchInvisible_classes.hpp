@@ -23,15 +23,18 @@ class UAIMoveControl_ScarletWitchInvisible_C final : public UAIAbilityMoveContro
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_ScarletWitchInvisible_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_ScarletWitchInvisible_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_ScarletWitchInvisible_C")
 	}
 	static class UAIMoveControl_ScarletWitchInvisible_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_ScarletWitchInvisible_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_ScarletWitchInvisible_C) == 0x000008, "Wrong alignment on UAIMoveControl_ScarletWitchInvisible_C");
-static_assert(sizeof(UAIMoveControl_ScarletWitchInvisible_C) == 0x0000B8, "Wrong size on UAIMoveControl_ScarletWitchInvisible_C");
+DUMPER7_ASSERTS_UAIMoveControl_ScarletWitchInvisible_C;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryPerformanceDetectionHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryPerformanceDetectionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryPerformanceDetectionHandler")
 	}
 	static class UUISettingEntryPerformanceDetectionHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryPerformanceDetectionHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryPerformanceDetectionHandler) == 0x000008, "Wrong alignment on UUISettingEntryPerformanceDetectionHandler");
-static_assert(sizeof(UUISettingEntryPerformanceDetectionHandler) == 0x000030, "Wrong size on UUISettingEntryPerformanceDetectionHandler");
+DUMPER7_ASSERTS_UUISettingEntryPerformanceDetectionHandler;
 
 }
 

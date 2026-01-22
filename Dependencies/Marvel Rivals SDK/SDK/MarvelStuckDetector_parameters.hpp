@@ -21,9 +21,7 @@ struct StuckDetectorSubsystem_K2_OnPostLoadMap final
 public:
 	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StuckDetectorSubsystem_K2_OnPostLoadMap) == 0x000008, "Wrong alignment on StuckDetectorSubsystem_K2_OnPostLoadMap");
-static_assert(sizeof(StuckDetectorSubsystem_K2_OnPostLoadMap) == 0x000008, "Wrong size on StuckDetectorSubsystem_K2_OnPostLoadMap");
-static_assert(offsetof(StuckDetectorSubsystem_K2_OnPostLoadMap, InWorld) == 0x000000, "Member 'StuckDetectorSubsystem_K2_OnPostLoadMap::InWorld' has a wrong offset!");
+DUMPER7_ASSERTS_StuckDetectorSubsystem_K2_OnPostLoadMap;
 
 // Function MarvelStuckDetector.StuckDetectorSubsystem.SetDrpfFieldsByString
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct StuckDetectorSubsystem_SetDrpfFieldsByString final
 public:
 	class FString                                 JsonStr;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StuckDetectorSubsystem_SetDrpfFieldsByString) == 0x000008, "Wrong alignment on StuckDetectorSubsystem_SetDrpfFieldsByString");
-static_assert(sizeof(StuckDetectorSubsystem_SetDrpfFieldsByString) == 0x000010, "Wrong size on StuckDetectorSubsystem_SetDrpfFieldsByString");
-static_assert(offsetof(StuckDetectorSubsystem_SetDrpfFieldsByString, JsonStr) == 0x000000, "Member 'StuckDetectorSubsystem_SetDrpfFieldsByString::JsonStr' has a wrong offset!");
+DUMPER7_ASSERTS_StuckDetectorSubsystem_SetDrpfFieldsByString;
 
 // Function MarvelStuckDetector.StuckDetectorSubsystem.UpdateFilePickInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -44,10 +40,7 @@ public:
 	class FString                                 Url;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Token;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StuckDetectorSubsystem_UpdateFilePickInfo) == 0x000008, "Wrong alignment on StuckDetectorSubsystem_UpdateFilePickInfo");
-static_assert(sizeof(StuckDetectorSubsystem_UpdateFilePickInfo) == 0x000020, "Wrong size on StuckDetectorSubsystem_UpdateFilePickInfo");
-static_assert(offsetof(StuckDetectorSubsystem_UpdateFilePickInfo, Url) == 0x000000, "Member 'StuckDetectorSubsystem_UpdateFilePickInfo::Url' has a wrong offset!");
-static_assert(offsetof(StuckDetectorSubsystem_UpdateFilePickInfo, Token) == 0x000010, "Member 'StuckDetectorSubsystem_UpdateFilePickInfo::Token' has a wrong offset!");
+DUMPER7_ASSERTS_StuckDetectorSubsystem_UpdateFilePickInfo;
 
 }
 

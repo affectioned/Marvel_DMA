@@ -18,32 +18,32 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102342.PyConfig_102342
-// 0x0BD0 (0x0C68 - 0x0098)
+// 0x0EF0 (0x0F88 - 0x0098)
 class UPyConfig_102342 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         RocketShoesSpeed_Vertical;                         // 0x0C60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RocketShoesSpeed_Forward;                          // 0x0C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         RocketShoesSpeed_Vertical;                         // 0x0F80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RocketShoesSpeed_Forward;                          // 0x0F84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102342">();
+		STATIC_CLASS_IMPL("PyConfig_102342")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102342")
 	}
 	static class UPyConfig_102342* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102342>();
 	}
 };
-static_assert(alignof(UPyConfig_102342) == 0x000008, "Wrong alignment on UPyConfig_102342");
-static_assert(sizeof(UPyConfig_102342) == 0x000C68, "Wrong size on UPyConfig_102342");
-static_assert(offsetof(UPyConfig_102342, DashInfo) == 0x000098, "Member 'UPyConfig_102342::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102342, RocketShoesSpeed_Vertical) == 0x000C60, "Member 'UPyConfig_102342::RocketShoesSpeed_Vertical' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102342, RocketShoesSpeed_Forward) == 0x000C64, "Member 'UPyConfig_102342::RocketShoesSpeed_Forward' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102342;
 
 // PythonClass PyAbility_102342.PyAbility_102342
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102342 : public UMarvelGameplayAbility
 {
 public:
@@ -59,22 +59,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102342">();
+		STATIC_CLASS_IMPL("PyAbility_102342")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102342")
 	}
 	static class UPyAbility_102342* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102342>();
 	}
 };
-static_assert(alignof(UPyAbility_102342) == 0x000008, "Wrong alignment on UPyAbility_102342");
-static_assert(sizeof(UPyAbility_102342) == 0x0029F0, "Wrong size on UPyAbility_102342");
+DUMPER7_ASSERTS_UPyAbility_102342;
 
 // PythonClass PyAbility_102342.PyExtraWidget_102342
-// 0x00D0 (0x06F0 - 0x0620)
+// 0x0120 (0x0748 - 0x0628)
 class UPyExtraWidget_102342 final : public UWidget_AbilityStatus_Base
 {
 public:
-	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0620(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0628(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -83,16 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtraWidget_102342">();
+		STATIC_CLASS_IMPL("PyExtraWidget_102342")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtraWidget_102342")
 	}
 	static class UPyExtraWidget_102342* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtraWidget_102342>();
 	}
 };
-static_assert(alignof(UPyExtraWidget_102342) == 0x000008, "Wrong alignment on UPyExtraWidget_102342");
-static_assert(sizeof(UPyExtraWidget_102342) == 0x0006F0, "Wrong size on UPyExtraWidget_102342");
-static_assert(offsetof(UPyExtraWidget_102342, TagRequirements) == 0x000620, "Member 'UPyExtraWidget_102342::TagRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtraWidget_102342;
 
 }
 

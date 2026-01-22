@@ -17,25 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyNamorBossCharacter.PyNamorBossCharacter.ReceiveBeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyNamorBossCharacter::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyNamorBossCharacter", "ReceiveBeginPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyNamorBossCharacter.PyNamorBossChildActor.ReceivePoolBeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -142,6 +123,25 @@ void APyNamorBossChildActor::OnGenericGameplayTagUpdate(const struct FGameplayTa
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyNamorBossCharacter.PyNamorBossCharacter.ReceiveBeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyNamorBossCharacter::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyNamorBossCharacter", "ReceiveBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCBigHeadRuleComponent">();
+		STATIC_CLASS_IMPL("PyCBigHeadRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCBigHeadRuleComponent")
 	}
 	static class UPyCBigHeadRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCBigHeadRuleComponent>();
 	}
 };
-static_assert(alignof(UPyCBigHeadRuleComponent) == 0x000008, "Wrong alignment on UPyCBigHeadRuleComponent");
-static_assert(sizeof(UPyCBigHeadRuleComponent) == 0x0001F8, "Wrong size on UPyCBigHeadRuleComponent");
+DUMPER7_ASSERTS_UPyCBigHeadRuleComponent;
 
 }
 

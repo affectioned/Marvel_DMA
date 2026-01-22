@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103611.PyCue_Scope_HitImpact_10361101
-// 0x0008 (0x0880 - 0x0878)
+// 0x0008 (0x08C0 - 0x08B8)
 class UPyCue_Scope_HitImpact_10361101 final : public UMarvelCueNotify_MeleeHitImpact
 {
 public:
-	int32                                         FirstAudioId;                                      // 0x0878(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SecondAudioId;                                     // 0x087C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FirstAudioId;                                      // 0x08B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SecondAudioId;                                     // 0x08BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -30,20 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10361101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10361101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10361101")
 	}
 	static class UPyCue_Scope_HitImpact_10361101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10361101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10361101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10361101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10361101) == 0x000880, "Wrong size on UPyCue_Scope_HitImpact_10361101");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10361101, FirstAudioId) == 0x000878, "Member 'UPyCue_Scope_HitImpact_10361101::FirstAudioId' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10361101, SecondAudioId) == 0x00087C, "Member 'UPyCue_Scope_HitImpact_10361101::SecondAudioId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10361101;
 
 // PythonClass PyAbility_103611.PyAbility_103611
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103611 : public UAbility_108
 {
 public:
@@ -53,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103611">();
+		STATIC_CLASS_IMPL("PyAbility_103611")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103611")
 	}
 	static class UPyAbility_103611* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103611>();
 	}
 };
-static_assert(alignof(UPyAbility_103611) == 0x000008, "Wrong alignment on UPyAbility_103611");
-static_assert(sizeof(UPyAbility_103611) == 0x0029F8, "Wrong size on UPyAbility_103611");
+DUMPER7_ASSERTS_UPyAbility_103611;
 
 }
 

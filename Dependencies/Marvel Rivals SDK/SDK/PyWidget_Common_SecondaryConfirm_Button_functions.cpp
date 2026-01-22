@@ -155,5 +155,24 @@ void UPyWidget_Common_PropConfirm::OnInitialized()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_Common_SecondaryConfirm_Button.PyWidget_FullScreen_Popup_ConfirmBtn.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_FullScreen_Popup_ConfirmBtn::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_FullScreen_Popup_ConfirmBtn", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

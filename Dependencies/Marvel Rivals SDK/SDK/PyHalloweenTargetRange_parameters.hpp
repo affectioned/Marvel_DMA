@@ -23,9 +23,7 @@ struct PyHalloweenTargetRange_SetState final
 public:
 	EHalloweenObjectState                         NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenTargetRange_SetState) == 0x000001, "Wrong alignment on PyHalloweenTargetRange_SetState");
-static_assert(sizeof(PyHalloweenTargetRange_SetState) == 0x000001, "Wrong size on PyHalloweenTargetRange_SetState");
-static_assert(offsetof(PyHalloweenTargetRange_SetState, NewState) == 0x000000, "Member 'PyHalloweenTargetRange_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenTargetRange_SetState;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10413102_BP.Projectile_10413102_BP_C
-// 0x0000 (0x3BA0 - 0x3BA0)
+// 0x0000 (0x3EB0 - 0x3EB0)
 class AProjectile_10413102_BP_C final : public APyProjectile_10413102
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10413102_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10413102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10413102_BP_C")
 	}
 	static class AProjectile_10413102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10413102_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10413102_BP_C) == 0x000010, "Wrong alignment on AProjectile_10413102_BP_C");
-static_assert(sizeof(AProjectile_10413102_BP_C) == 0x003BA0, "Wrong size on AProjectile_10413102_BP_C");
+DUMPER7_ASSERTS_AProjectile_10413102_BP_C;
 
 }
 

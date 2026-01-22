@@ -22,10 +22,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PySelectTarget_Enemy_ReceiveActivationAI) == 0x000008, "Wrong alignment on BTS_PySelectTarget_Enemy_ReceiveActivationAI");
-static_assert(sizeof(BTS_PySelectTarget_Enemy_ReceiveActivationAI) == 0x000010, "Wrong size on BTS_PySelectTarget_Enemy_ReceiveActivationAI");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveActivationAI, OwnerController) == 0x000000, "Member 'BTS_PySelectTarget_Enemy_ReceiveActivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveActivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PySelectTarget_Enemy_ReceiveActivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PySelectTarget_Enemy_ReceiveActivationAI;
 
 // PythonFunction BTS_PySelectTarget_Enemy.BTS_PySelectTarget_Enemy.ReceiveTickAI
 // 0x0018 (0x0018 - 0x0000)
@@ -36,11 +33,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PySelectTarget_Enemy_ReceiveTickAI) == 0x000008, "Wrong alignment on BTS_PySelectTarget_Enemy_ReceiveTickAI");
-static_assert(sizeof(BTS_PySelectTarget_Enemy_ReceiveTickAI) == 0x000018, "Wrong size on BTS_PySelectTarget_Enemy_ReceiveTickAI");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveTickAI, OwnerController) == 0x000000, "Member 'BTS_PySelectTarget_Enemy_ReceiveTickAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveTickAI, ControlledPawn) == 0x000008, "Member 'BTS_PySelectTarget_Enemy_ReceiveTickAI::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveTickAI, DeltaSeconds) == 0x000010, "Member 'BTS_PySelectTarget_Enemy_ReceiveTickAI::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PySelectTarget_Enemy_ReceiveTickAI;
 
 // PythonFunction BTS_PySelectTarget_Enemy.BTS_PySelectTarget_Enemy.ReceiveDeactivationAI
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +43,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PySelectTarget_Enemy_ReceiveDeactivationAI) == 0x000008, "Wrong alignment on BTS_PySelectTarget_Enemy_ReceiveDeactivationAI");
-static_assert(sizeof(BTS_PySelectTarget_Enemy_ReceiveDeactivationAI) == 0x000010, "Wrong size on BTS_PySelectTarget_Enemy_ReceiveDeactivationAI");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveDeactivationAI, OwnerController) == 0x000000, "Member 'BTS_PySelectTarget_Enemy_ReceiveDeactivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PySelectTarget_Enemy_ReceiveDeactivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PySelectTarget_Enemy_ReceiveDeactivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PySelectTarget_Enemy_ReceiveDeactivationAI;
 
 }
 

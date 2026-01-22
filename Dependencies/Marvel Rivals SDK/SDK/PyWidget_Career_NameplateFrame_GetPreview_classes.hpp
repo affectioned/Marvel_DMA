@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Career_NameplateFrame_GetPreview.PyWidget_Career_NameplateFrame_GetPreview
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Career_NameplateFrame_GetPreview final : public UPyMarvelUserWidget
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_NameplateFrame_GetPreview">();
+		STATIC_CLASS_IMPL("PyWidget_Career_NameplateFrame_GetPreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_NameplateFrame_GetPreview")
 	}
 	static class UPyWidget_Career_NameplateFrame_GetPreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_NameplateFrame_GetPreview>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_NameplateFrame_GetPreview) == 0x000008, "Wrong alignment on UPyWidget_Career_NameplateFrame_GetPreview");
-static_assert(sizeof(UPyWidget_Career_NameplateFrame_GetPreview) == 0x0005C0, "Wrong size on UPyWidget_Career_NameplateFrame_GetPreview");
+DUMPER7_ASSERTS_UPyWidget_Career_NameplateFrame_GetPreview;
 
 }
 

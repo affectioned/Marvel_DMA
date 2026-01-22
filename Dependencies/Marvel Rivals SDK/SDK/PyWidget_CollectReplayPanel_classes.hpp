@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CollectReplayPanel.PyWidget_CollectReplayPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CollectReplayPanel final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CollectReplayPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CollectReplayPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CollectReplayPanel")
 	}
 	static class UPyWidget_CollectReplayPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CollectReplayPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CollectReplayPanel) == 0x000008, "Wrong alignment on UPyWidget_CollectReplayPanel");
-static_assert(sizeof(UPyWidget_CollectReplayPanel) == 0x0005C0, "Wrong size on UPyWidget_CollectReplayPanel");
+DUMPER7_ASSERTS_UPyWidget_CollectReplayPanel;
 
 }
 

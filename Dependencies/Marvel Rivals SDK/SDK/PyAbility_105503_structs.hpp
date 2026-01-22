@@ -34,16 +34,7 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, float>                            ParameterMap;                                      // 0x0040(0x0050)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialStageEffectConfig) == 0x000008, "Wrong alignment on FMaterialStageEffectConfig");
-static_assert(sizeof(FMaterialStageEffectConfig) == 0x000090, "Wrong size on FMaterialStageEffectConfig");
-static_assert(offsetof(FMaterialStageEffectConfig, QueryType) == 0x000000, "Member 'FMaterialStageEffectConfig::QueryType' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, SlotIndex) == 0x000004, "Member 'FMaterialStageEffectConfig::SlotIndex' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, SlotName) == 0x000008, "Member 'FMaterialStageEffectConfig::SlotName' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, SlotTag) == 0x000018, "Member 'FMaterialStageEffectConfig::SlotTag' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, ParameterName) == 0x000028, "Member 'FMaterialStageEffectConfig::ParameterName' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, LerpDuration) == 0x000038, "Member 'FMaterialStageEffectConfig::LerpDuration' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, SkipDrawingWhenZero) == 0x00003C, "Member 'FMaterialStageEffectConfig::SkipDrawingWhenZero' has a wrong offset!");
-static_assert(offsetof(FMaterialStageEffectConfig, ParameterMap) == 0x000040, "Member 'FMaterialStageEffectConfig::ParameterMap' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialStageEffectConfig;
 
 }
 

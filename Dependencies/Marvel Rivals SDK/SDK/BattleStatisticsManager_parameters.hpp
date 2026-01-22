@@ -23,9 +23,7 @@ struct PyBattleStatisticsManager_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_ReceiveTick) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_ReceiveTick");
-static_assert(sizeof(PyBattleStatisticsManager_ReceiveTick) == 0x000004, "Wrong size on PyBattleStatisticsManager_ReceiveTick");
-static_assert(offsetof(PyBattleStatisticsManager_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyBattleStatisticsManager_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_ReceiveTick;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_AbilityNormalLog
 // 0x0060 (0x0060 - 0x0000)
@@ -38,12 +36,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, float>                    KeyValue;                                          // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_AbilityNormalLog) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_K2_AbilityNormalLog");
-static_assert(sizeof(PyBattleStatisticsManager_K2_AbilityNormalLog) == 0x000060, "Wrong size on PyBattleStatisticsManager_K2_AbilityNormalLog");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityNormalLog, PlayerUID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_AbilityNormalLog::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityNormalLog, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_AbilityNormalLog::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityNormalLog, AbilityID) == 0x000008, "Member 'PyBattleStatisticsManager_K2_AbilityNormalLog::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityNormalLog, KeyValue) == 0x000010, "Member 'PyBattleStatisticsManager_K2_AbilityNormalLog::KeyValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_AbilityNormalLog;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_AbilityHitRateLog
 // 0x0030 (0x0030 - 0x0000)
@@ -59,15 +52,7 @@ public:
 	float                                         HitCnt;                                            // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CritCnt;                                           // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_AbilityHitRateLog) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_K2_AbilityHitRateLog");
-static_assert(sizeof(PyBattleStatisticsManager_K2_AbilityHitRateLog) == 0x000030, "Wrong size on PyBattleStatisticsManager_K2_AbilityHitRateLog");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, PlayerUID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, AbilityID) == 0x000008, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, Key) == 0x000010, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::Key' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, LanuchCnt) == 0x000020, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::LanuchCnt' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, HitCnt) == 0x000024, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::HitCnt' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_AbilityHitRateLog, CritCnt) == 0x000028, "Member 'PyBattleStatisticsManager_K2_AbilityHitRateLog::CritCnt' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_AbilityHitRateLog;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_HeroSpecialLog
 // 0x0010 (0x0010 - 0x0000)
@@ -79,12 +64,7 @@ public:
 	int32                                         LogID;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_HeroSpecialLog) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_K2_HeroSpecialLog");
-static_assert(sizeof(PyBattleStatisticsManager_K2_HeroSpecialLog) == 0x000010, "Wrong size on PyBattleStatisticsManager_K2_HeroSpecialLog");
-static_assert(offsetof(PyBattleStatisticsManager_K2_HeroSpecialLog, PlayerUID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_HeroSpecialLog::PlayerUID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_HeroSpecialLog, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_HeroSpecialLog::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_HeroSpecialLog, LogID) == 0x000008, "Member 'PyBattleStatisticsManager_K2_HeroSpecialLog::LogID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_HeroSpecialLog, Value) == 0x00000C, "Member 'PyBattleStatisticsManager_K2_HeroSpecialLog::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_HeroSpecialLog;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.GetHeroStatisticsInfo
 // 0x0068 (0x0068 - 0x0000)
@@ -96,12 +76,7 @@ public:
 	TArray<class FString>                         FieldList;                                         // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, float>                    ReturnValue;                                       // 0x0018(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyBattleStatisticsManager_GetHeroStatisticsInfo) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_GetHeroStatisticsInfo");
-static_assert(sizeof(PyBattleStatisticsManager_GetHeroStatisticsInfo) == 0x000068, "Wrong size on PyBattleStatisticsManager_GetHeroStatisticsInfo");
-static_assert(offsetof(PyBattleStatisticsManager_GetHeroStatisticsInfo, UID) == 0x000000, "Member 'PyBattleStatisticsManager_GetHeroStatisticsInfo::UID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_GetHeroStatisticsInfo, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_GetHeroStatisticsInfo::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_GetHeroStatisticsInfo, FieldList) == 0x000008, "Member 'PyBattleStatisticsManager_GetHeroStatisticsInfo::FieldList' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_GetHeroStatisticsInfo, ReturnValue) == 0x000018, "Member 'PyBattleStatisticsManager_GetHeroStatisticsInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_GetHeroStatisticsInfo;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_GetPlayerStatisticsUnit
 // 0x0008 (0x0008 - 0x0000)
@@ -111,10 +86,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelPlayerStatisticsUnit            ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit");
-static_assert(sizeof(PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit) == 0x000008, "Wrong size on PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit, UID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit::UID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit, ReturnValue) == 0x000004, "Member 'PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_GetPlayerStatisticsUnit;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_GetHeroStatisticsUnit
 // 0x0094 (0x0094 - 0x0000)
@@ -125,11 +97,7 @@ public:
 	int32                                         HeroID;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelHeroStatisticsUnit              ReturnValue;                                       // 0x0008(0x008C)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_GetHeroStatisticsUnit) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_K2_GetHeroStatisticsUnit");
-static_assert(sizeof(PyBattleStatisticsManager_K2_GetHeroStatisticsUnit) == 0x000094, "Wrong size on PyBattleStatisticsManager_K2_GetHeroStatisticsUnit");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetHeroStatisticsUnit, UID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_GetHeroStatisticsUnit::UID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetHeroStatisticsUnit, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_GetHeroStatisticsUnit::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetHeroStatisticsUnit, ReturnValue) == 0x000008, "Member 'PyBattleStatisticsManager_K2_GetHeroStatisticsUnit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_GetHeroStatisticsUnit;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_GetBuffStatisticsUnit
 // 0x0028 (0x0028 - 0x0000)
@@ -141,12 +109,7 @@ public:
 	int32                                         BuffID;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelBuffStatisticsUnit              ReturnValue;                                       // 0x000C(0x001C)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_K2_GetBuffStatisticsUnit");
-static_assert(sizeof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit) == 0x000028, "Wrong size on PyBattleStatisticsManager_K2_GetBuffStatisticsUnit");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit, UID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_GetBuffStatisticsUnit::UID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_GetBuffStatisticsUnit::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit, BuffID) == 0x000008, "Member 'PyBattleStatisticsManager_K2_GetBuffStatisticsUnit::BuffID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetBuffStatisticsUnit, ReturnValue) == 0x00000C, "Member 'PyBattleStatisticsManager_K2_GetBuffStatisticsUnit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_GetBuffStatisticsUnit;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.K2_GetAbilityStatisticsUnit
 // 0x002C (0x002C - 0x0000)
@@ -158,46 +121,31 @@ public:
 	int32                                         AbilityID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelAbilityStatisticsUnit           ReturnValue;                                       // 0x000C(0x0020)(Parm, OutParm, ReturnParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit");
-static_assert(sizeof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit) == 0x00002C, "Wrong size on PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit, UID) == 0x000000, "Member 'PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit::UID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit, HeroID) == 0x000004, "Member 'PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit::HeroID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit, AbilityID) == 0x000008, "Member 'PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit, ReturnValue) == 0x00000C, "Member 'PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_K2_GetAbilityStatisticsUnit;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnActorTakeDamage
-// 0x07B8 (0x07B8 - 0x0000)
+// 0x07D0 (0x07D0 - 0x0000)
 struct PyBattleStatisticsManager_PyOnActorTakeDamage final
 {
 public:
 	class AActor*                                 InInstigator;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0010(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGlobalEventExtraData                  ExtraData;                                         // 0x07B0(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0010(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGlobalEventExtraData                  ExtraData;                                         // 0x07C8(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnActorTakeDamage) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnActorTakeDamage");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnActorTakeDamage) == 0x0007B8, "Wrong size on PyBattleStatisticsManager_PyOnActorTakeDamage");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeDamage, InInstigator) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnActorTakeDamage::InInstigator' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeDamage, InTarget) == 0x000008, "Member 'PyBattleStatisticsManager_PyOnActorTakeDamage::InTarget' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeDamage, ModifierParameter) == 0x000010, "Member 'PyBattleStatisticsManager_PyOnActorTakeDamage::ModifierParameter' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeDamage, ExtraData) == 0x0007B0, "Member 'PyBattleStatisticsManager_PyOnActorTakeDamage::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnActorTakeDamage;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnActorTakeHealth
-// 0x07B8 (0x07B8 - 0x0000)
+// 0x07D0 (0x07D0 - 0x0000)
 struct PyBattleStatisticsManager_PyOnActorTakeHealth final
 {
 public:
 	class AActor*                                 InInstigator;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            InModifierParameter;                               // 0x0010(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGlobalEventExtraData                  ExtraData;                                         // 0x07B0(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FAttributeModifierParameter            InModifierParameter;                               // 0x0010(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGlobalEventExtraData                  ExtraData;                                         // 0x07C8(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnActorTakeHealth) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnActorTakeHealth");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnActorTakeHealth) == 0x0007B8, "Wrong size on PyBattleStatisticsManager_PyOnActorTakeHealth");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeHealth, InInstigator) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnActorTakeHealth::InInstigator' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeHealth, InTarget) == 0x000008, "Member 'PyBattleStatisticsManager_PyOnActorTakeHealth::InTarget' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeHealth, InModifierParameter) == 0x000010, "Member 'PyBattleStatisticsManager_PyOnActorTakeHealth::InModifierParameter' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorTakeHealth, ExtraData) == 0x0007B0, "Member 'PyBattleStatisticsManager_PyOnActorTakeHealth::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnActorTakeHealth;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnActorDefendDamage
 // 0x0040 (0x0040 - 0x0000)
@@ -214,16 +162,7 @@ public:
 	int32                                         AbilitySourceID;                                   // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SourceSeesionID;                                   // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnActorDefendDamage) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_OnActorDefendDamage");
-static_assert(sizeof(PyBattleStatisticsManager_OnActorDefendDamage) == 0x000040, "Wrong size on PyBattleStatisticsManager_OnActorDefendDamage");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, Instigator) == 0x000000, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::Instigator' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, Target) == 0x000008, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::Target' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, ParameterHandle) == 0x000010, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::ParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, ExtraData) == 0x000028, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::ExtraData' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, AbilityShieldID) == 0x00002C, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::AbilityShieldID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, ShieldSessionID) == 0x000030, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::ShieldSessionID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, AbilitySourceID) == 0x000034, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::AbilitySourceID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorDefendDamage, SourceSeesionID) == 0x000038, "Member 'PyBattleStatisticsManager_OnActorDefendDamage::SourceSeesionID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnActorDefendDamage;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnActorDeathForLevel
 // 0x000C (0x000C - 0x0000)
@@ -234,11 +173,7 @@ public:
 	int32                                         VictimTeam;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         KillReason;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnActorDeathForLevel) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_PyOnActorDeathForLevel");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnActorDeathForLevel) == 0x00000C, "Wrong size on PyBattleStatisticsManager_PyOnActorDeathForLevel");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorDeathForLevel, KillerTeam) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnActorDeathForLevel::KillerTeam' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorDeathForLevel, VictimTeam) == 0x000004, "Member 'PyBattleStatisticsManager_PyOnActorDeathForLevel::VictimTeam' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnActorDeathForLevel, KillReason) == 0x000008, "Member 'PyBattleStatisticsManager_PyOnActorDeathForLevel::KillReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnActorDeathForLevel;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnActorUseHealPack
 // 0x0028 (0x0028 - 0x0000)
@@ -252,14 +187,7 @@ public:
 	float                                         HealPackTreat;                                     // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HealthBeforUse;                                    // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnActorUseHealPack) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_OnActorUseHealPack");
-static_assert(sizeof(PyBattleStatisticsManager_OnActorUseHealPack) == 0x000028, "Wrong size on PyBattleStatisticsManager_OnActorUseHealPack");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, Source) == 0x000000, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::Source' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, HealPackName) == 0x000008, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::HealPackName' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, HealPackType) == 0x000018, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::HealPackType' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, ChargeTime) == 0x00001C, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::ChargeTime' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, HealPackTreat) == 0x000020, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::HealPackTreat' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnActorUseHealPack, HealthBeforUse) == 0x000024, "Member 'PyBattleStatisticsManager_OnActorUseHealPack::HealthBeforUse' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnActorUseHealPack;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnPlayerKill
 // 0x0008 (0x0008 - 0x0000)
@@ -269,10 +197,7 @@ public:
 	int32                                         KillerUID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TargetUID;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnPlayerKill) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_OnPlayerKill");
-static_assert(sizeof(PyBattleStatisticsManager_OnPlayerKill) == 0x000008, "Wrong size on PyBattleStatisticsManager_OnPlayerKill");
-static_assert(offsetof(PyBattleStatisticsManager_OnPlayerKill, KillerUID) == 0x000000, "Member 'PyBattleStatisticsManager_OnPlayerKill::KillerUID' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_OnPlayerKill, TargetUID) == 0x000004, "Member 'PyBattleStatisticsManager_OnPlayerKill::TargetUID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnPlayerKill;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -281,9 +206,7 @@ struct PyBattleStatisticsManager_OnMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnMatchStateChanged) == 0x000001, "Wrong alignment on PyBattleStatisticsManager_OnMatchStateChanged");
-static_assert(sizeof(PyBattleStatisticsManager_OnMatchStateChanged) == 0x000001, "Wrong size on PyBattleStatisticsManager_OnMatchStateChanged");
-static_assert(offsetof(PyBattleStatisticsManager_OnMatchStateChanged, MatchState) == 0x000000, "Member 'PyBattleStatisticsManager_OnMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnMatchStateChanged;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnAddPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -292,9 +215,7 @@ struct PyBattleStatisticsManager_PyOnAddPlayerState final
 public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnAddPlayerState) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnAddPlayerState");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnAddPlayerState) == 0x000008, "Wrong size on PyBattleStatisticsManager_PyOnAddPlayerState");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnAddPlayerState, PlayerState) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnAddPlayerState::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnAddPlayerState;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnDelPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -303,9 +224,7 @@ struct PyBattleStatisticsManager_PyOnDelPlayerState final
 public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnDelPlayerState) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnDelPlayerState");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnDelPlayerState) == 0x000008, "Wrong size on PyBattleStatisticsManager_PyOnDelPlayerState");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnDelPlayerState, PlayerState) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnDelPlayerState::PlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnDelPlayerState;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnHealRefreshed
 // 0x0010 (0x0010 - 0x0000)
@@ -314,9 +233,7 @@ struct PyBattleStatisticsManager_OnHealRefreshed final
 public:
 	class FString                                 heal_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnHealRefreshed) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_OnHealRefreshed");
-static_assert(sizeof(PyBattleStatisticsManager_OnHealRefreshed) == 0x000010, "Wrong size on PyBattleStatisticsManager_OnHealRefreshed");
-static_assert(offsetof(PyBattleStatisticsManager_OnHealRefreshed, heal_name) == 0x000000, "Member 'PyBattleStatisticsManager_OnHealRefreshed::heal_name' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnHealRefreshed;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.LogPosition
 // 0x0001 (0x0001 - 0x0000)
@@ -325,24 +242,18 @@ struct PyBattleStatisticsManager_LogPosition final
 public:
 	bool                                          force;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_LogPosition) == 0x000001, "Wrong alignment on PyBattleStatisticsManager_LogPosition");
-static_assert(sizeof(PyBattleStatisticsManager_LogPosition) == 0x000001, "Wrong size on PyBattleStatisticsManager_LogPosition");
-static_assert(offsetof(PyBattleStatisticsManager_LogPosition, force) == 0x000000, "Member 'PyBattleStatisticsManager_LogPosition::force' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_LogPosition;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnDestructionTakeDamage
-// 0x07F8 (0x07F8 - 0x0000)
+// 0x0810 (0x0810 - 0x0000)
 struct PyBattleStatisticsManager_PyOnDestructionTakeDamage final
 {
 public:
 	struct FDestructionDamageInfoContext          Context;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
-	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0018(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FDestructionExtraInfo                  ExtraInfo;                                         // 0x07B8(0x0040)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0018(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FDestructionExtraInfo                  ExtraInfo;                                         // 0x07D0(0x0040)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnDestructionTakeDamage) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnDestructionTakeDamage");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnDestructionTakeDamage) == 0x0007F8, "Wrong size on PyBattleStatisticsManager_PyOnDestructionTakeDamage");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnDestructionTakeDamage, Context) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnDestructionTakeDamage::Context' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnDestructionTakeDamage, ModifierParameter) == 0x000018, "Member 'PyBattleStatisticsManager_PyOnDestructionTakeDamage::ModifierParameter' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnDestructionTakeDamage, ExtraInfo) == 0x0007B8, "Member 'PyBattleStatisticsManager_PyOnDestructionTakeDamage::ExtraInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnDestructionTakeDamage;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnPresetDestructionLevelChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -353,11 +264,7 @@ public:
 	float                                         AchieveTime;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bRootLevel;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged) == 0x000010, "Wrong size on PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged, StatisticsUnit) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged::StatisticsUnit' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged, AchieveTime) == 0x000008, "Member 'PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged::AchieveTime' has a wrong offset!");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged, bRootLevel) == 0x00000C, "Member 'PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged::bRootLevel' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnPresetDestructionLevelChanged;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.OnLevelObjectTrigger
 // 0x0020 (0x0020 - 0x0000)
@@ -366,9 +273,7 @@ struct PyBattleStatisticsManager_OnLevelObjectTrigger final
 public:
 	struct FLevelObjectEventExtraData             ExtraData;                                         // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBattleStatisticsManager_OnLevelObjectTrigger) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_OnLevelObjectTrigger");
-static_assert(sizeof(PyBattleStatisticsManager_OnLevelObjectTrigger) == 0x000020, "Wrong size on PyBattleStatisticsManager_OnLevelObjectTrigger");
-static_assert(offsetof(PyBattleStatisticsManager_OnLevelObjectTrigger, ExtraData) == 0x000000, "Member 'PyBattleStatisticsManager_OnLevelObjectTrigger::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_OnLevelObjectTrigger;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnRecordHeroDeathInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -377,9 +282,7 @@ struct PyBattleStatisticsManager_PyOnRecordHeroDeathInfo final
 public:
 	struct FHeroDeathInfoLog                      DeathInfo;                                         // 0x0000(0x0028)(Parm, OutParm)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnRecordHeroDeathInfo) == 0x000008, "Wrong alignment on PyBattleStatisticsManager_PyOnRecordHeroDeathInfo");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnRecordHeroDeathInfo) == 0x000028, "Wrong size on PyBattleStatisticsManager_PyOnRecordHeroDeathInfo");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnRecordHeroDeathInfo, DeathInfo) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnRecordHeroDeathInfo::DeathInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnRecordHeroDeathInfo;
 
 // PythonFunction BattleStatisticsManager.PyBattleStatisticsManager.PyOnRecordFirstEnterBattle
 // 0x000C (0x000C - 0x0000)
@@ -388,9 +291,7 @@ struct PyBattleStatisticsManager_PyOnRecordFirstEnterBattle final
 public:
 	struct FFirstEnterBattleInfo                  BattleInfo;                                        // 0x0000(0x000C)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(PyBattleStatisticsManager_PyOnRecordFirstEnterBattle) == 0x000004, "Wrong alignment on PyBattleStatisticsManager_PyOnRecordFirstEnterBattle");
-static_assert(sizeof(PyBattleStatisticsManager_PyOnRecordFirstEnterBattle) == 0x00000C, "Wrong size on PyBattleStatisticsManager_PyOnRecordFirstEnterBattle");
-static_assert(offsetof(PyBattleStatisticsManager_PyOnRecordFirstEnterBattle, BattleInfo) == 0x000000, "Member 'PyBattleStatisticsManager_PyOnRecordFirstEnterBattle::BattleInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleStatisticsManager_PyOnRecordFirstEnterBattle;
 
 }
 

@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelCueNotify_HeroAccessory_WhileActive) == 0x000008, "Wrong alignment on PyMarvelCueNotify_HeroAccessory_WhileActive");
-static_assert(sizeof(PyMarvelCueNotify_HeroAccessory_WhileActive) == 0x0001E0, "Wrong size on PyMarvelCueNotify_HeroAccessory_WhileActive");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_WhileActive, MyTarget) == 0x000000, "Member 'PyMarvelCueNotify_HeroAccessory_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_WhileActive, Parameters) == 0x000008, "Member 'PyMarvelCueNotify_HeroAccessory_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyMarvelCueNotify_HeroAccessory_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelCueNotify_HeroAccessory_WhileActive;
 
 // PythonFunction PyCue_HeroAccessory.PyMarvelCueNotify_HeroAccessory.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelCueNotify_HeroAccessory_OnRemove) == 0x000008, "Wrong alignment on PyMarvelCueNotify_HeroAccessory_OnRemove");
-static_assert(sizeof(PyMarvelCueNotify_HeroAccessory_OnRemove) == 0x0001E0, "Wrong size on PyMarvelCueNotify_HeroAccessory_OnRemove");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_OnRemove, MyTarget) == 0x000000, "Member 'PyMarvelCueNotify_HeroAccessory_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_OnRemove, Parameters) == 0x000008, "Member 'PyMarvelCueNotify_HeroAccessory_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyMarvelCueNotify_HeroAccessory_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelCueNotify_HeroAccessory_OnRemove;
 
 // PythonFunction PyCue_HeroAccessory.PyMarvelCueNotify_HeroAccessory.OnWidgetShowUp
 // 0x0010 (0x0010 - 0x0000)
@@ -54,10 +46,7 @@ public:
 	class AMarvelBaseCharacter*                   TargetCharacter;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            DisplayWidget;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp) == 0x000008, "Wrong alignment on PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp");
-static_assert(sizeof(PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp) == 0x000010, "Wrong size on PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp, TargetCharacter) == 0x000000, "Member 'PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp::TargetCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp, DisplayWidget) == 0x000008, "Member 'PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp::DisplayWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelCueNotify_HeroAccessory_OnWidgetShowUp;
 
 // PythonFunction PyCue_HeroAccessory.PyMarvelHeroAccessoryLobby.OnChangeSculptID
 // 0x0004 (0x0004 - 0x0000)
@@ -66,9 +55,7 @@ struct PyMarvelHeroAccessoryLobby_OnChangeSculptID final
 public:
 	int32                                         SculptID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelHeroAccessoryLobby_OnChangeSculptID) == 0x000004, "Wrong alignment on PyMarvelHeroAccessoryLobby_OnChangeSculptID");
-static_assert(sizeof(PyMarvelHeroAccessoryLobby_OnChangeSculptID) == 0x000004, "Wrong size on PyMarvelHeroAccessoryLobby_OnChangeSculptID");
-static_assert(offsetof(PyMarvelHeroAccessoryLobby_OnChangeSculptID, SculptID) == 0x000000, "Member 'PyMarvelHeroAccessoryLobby_OnChangeSculptID::SculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelHeroAccessoryLobby_OnChangeSculptID;
 
 // PythonFunction PyCue_HeroAccessory.PyWidget_Accessory.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +64,7 @@ struct PyWidget_Accessory_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Accessory_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_Accessory_ShouldBeVisible");
-static_assert(sizeof(PyWidget_Accessory_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_Accessory_ShouldBeVisible");
-static_assert(offsetof(PyWidget_Accessory_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_Accessory_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Accessory_ShouldBeVisible;
 
 }
 

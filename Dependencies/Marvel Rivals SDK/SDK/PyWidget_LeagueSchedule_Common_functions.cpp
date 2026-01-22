@@ -165,7 +165,7 @@ void UPyWidget_LeagueSchedule_Clan::InterfaceOnItemSelectionChanged(bool IsSelec
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Cup.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_LeagueSchedule_Cup::Construct()
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Cup::Construct()
 {
 	static class UFunction* Func = nullptr;
 
@@ -186,7 +186,7 @@ void UPyWidget_LeagueSchedule_Cup::Construct()
 // Parameters:
 // bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_LeagueSchedule_Cup::PreConstruct(bool IsDesignTime)
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Cup::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
@@ -247,7 +247,7 @@ void UPyWidget_LeagueSchedule_DualPlay::Destruct()
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_LeagueSchedule_Dual::OnInitialized()
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
@@ -266,7 +266,7 @@ void UPyWidget_LeagueSchedule_Dual::OnInitialized()
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_LeagueSchedule_Dual::Construct()
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::Construct()
 {
 	static class UFunction* Func = nullptr;
 
@@ -285,7 +285,7 @@ void UPyWidget_LeagueSchedule_Dual::Construct()
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_LeagueSchedule_Dual::Destruct()
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
@@ -306,7 +306,7 @@ void UPyWidget_LeagueSchedule_Dual::Destruct()
 // Parameters:
 // class UObject*                          ItemObject_0                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_LeagueSchedule_Dual::InterfaceOnListItemObjectSet(class UObject* ItemObject_0)
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::InterfaceOnListItemObjectSet(class UObject* ItemObject_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -329,7 +329,7 @@ void UPyWidget_LeagueSchedule_Dual::InterfaceOnListItemObjectSet(class UObject* 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.InterfaceOnEntryReleased
 // (Native, Public, BlueprintCallable)
 
-void UPyWidget_LeagueSchedule_Dual::InterfaceOnEntryReleased()
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::InterfaceOnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
@@ -350,7 +350,7 @@ void UPyWidget_LeagueSchedule_Dual::InterfaceOnEntryReleased()
 // Parameters:
 // bool                                    IsSelected                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_LeagueSchedule_Dual::InterfaceOnItemSelectionChanged(bool IsSelected)
+void PyWidget_LeagueSchedule_Common::UPyWidget_LeagueSchedule_Dual::InterfaceOnItemSelectionChanged(bool IsSelected)
 {
 	static class UFunction* Func = nullptr;
 

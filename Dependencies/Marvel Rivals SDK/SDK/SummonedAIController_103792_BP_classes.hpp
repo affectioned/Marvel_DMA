@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SummonedAIController_103792_BP.SummonedAIController_103792_BP_C
-// 0x0000 (0x1270 - 0x1270)
+// 0x0000 (0x1400 - 0x1400)
 class ASummonedAIController_103792_BP_C final : public APhantomSummonedController
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SummonedAIController_103792_BP_C">();
+		BP_STATIC_CLASS_IMPL("SummonedAIController_103792_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SummonedAIController_103792_BP_C")
 	}
 	static class ASummonedAIController_103792_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummonedAIController_103792_BP_C>();
 	}
 };
-static_assert(alignof(ASummonedAIController_103792_BP_C) == 0x000010, "Wrong alignment on ASummonedAIController_103792_BP_C");
-static_assert(sizeof(ASummonedAIController_103792_BP_C) == 0x001270, "Wrong size on ASummonedAIController_103792_BP_C");
+DUMPER7_ASSERTS_ASummonedAIController_103792_BP_C;
 
 }
 

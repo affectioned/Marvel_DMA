@@ -21,9 +21,7 @@ struct PyStuckDetectorSubsystem_K2_OnPostLoadMap final
 public:
 	class UWorld*                                 InWorld;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyStuckDetectorSubsystem_K2_OnPostLoadMap) == 0x000008, "Wrong alignment on PyStuckDetectorSubsystem_K2_OnPostLoadMap");
-static_assert(sizeof(PyStuckDetectorSubsystem_K2_OnPostLoadMap) == 0x000008, "Wrong size on PyStuckDetectorSubsystem_K2_OnPostLoadMap");
-static_assert(offsetof(PyStuckDetectorSubsystem_K2_OnPostLoadMap, InWorld) == 0x000000, "Member 'PyStuckDetectorSubsystem_K2_OnPostLoadMap::InWorld' has a wrong offset!");
+DUMPER7_ASSERTS_PyStuckDetectorSubsystem_K2_OnPostLoadMap;
 
 }
 

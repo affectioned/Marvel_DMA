@@ -23,15 +23,18 @@ class UPyFormalRuleControlComponent final : public UPyLevelRuleControlComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFormalRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyFormalRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFormalRuleControlComponent")
 	}
 	static class UPyFormalRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyFormalRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyFormalRuleControlComponent) == 0x000008, "Wrong alignment on UPyFormalRuleControlComponent");
-static_assert(sizeof(UPyFormalRuleControlComponent) == 0x000208, "Wrong size on UPyFormalRuleControlComponent");
+DUMPER7_ASSERTS_UPyFormalRuleControlComponent;
 
 }
 

@@ -16,27 +16,6 @@
 namespace SDK
 {
 
-// Class DataflowEnginePlugin.DataflowActor
-// 0x0000 (0x06E0 - 0x06E0)
-class ADataflowActor final : public AActor
-{
-public:
-	class UDataflowComponent*                     DataflowComponent;                                 // 0x06D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DataflowActor">();
-	}
-	static class ADataflowActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ADataflowActor>();
-	}
-};
-static_assert(alignof(ADataflowActor) == 0x000010, "Wrong alignment on ADataflowActor");
-static_assert(sizeof(ADataflowActor) == 0x0006E0, "Wrong size on ADataflowActor");
-static_assert(offsetof(ADataflowActor, DataflowComponent) == 0x0006D8, "Member 'ADataflowActor::DataflowComponent' has a wrong offset!");
-
 // Class DataflowEnginePlugin.DataflowComponent
 // 0x0140 (0x0900 - 0x07C0)
 class UDataflowComponent final : public UPrimitiveComponent
@@ -47,15 +26,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowComponent">();
+		STATIC_CLASS_IMPL("DataflowComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowComponent")
 	}
 	static class UDataflowComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowComponent>();
 	}
 };
-static_assert(alignof(UDataflowComponent) == 0x000010, "Wrong alignment on UDataflowComponent");
-static_assert(sizeof(UDataflowComponent) == 0x000900, "Wrong size on UDataflowComponent");
+DUMPER7_ASSERTS_UDataflowComponent;
+
+// Class DataflowEnginePlugin.DataflowActor
+// 0x0000 (0x06E0 - 0x06E0)
+class ADataflowActor final : public AActor
+{
+public:
+	class UDataflowComponent*                     DataflowComponent;                                 // 0x06D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DataflowActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowActor")
+	}
+	static class ADataflowActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ADataflowActor>();
+	}
+};
+DUMPER7_ASSERTS_ADataflowActor;
 
 }
 

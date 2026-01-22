@@ -23,15 +23,18 @@ class UAIMoveControl_StarLordBarrage_C final : public UAIAbilityMoveControlLogic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_StarLordBarrage_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_StarLordBarrage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_StarLordBarrage_C")
 	}
 	static class UAIMoveControl_StarLordBarrage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_StarLordBarrage_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_StarLordBarrage_C) == 0x000008, "Wrong alignment on UAIMoveControl_StarLordBarrage_C");
-static_assert(sizeof(UAIMoveControl_StarLordBarrage_C) == 0x0000B8, "Wrong size on UAIMoveControl_StarLordBarrage_C");
+DUMPER7_ASSERTS_UAIMoveControl_StarLordBarrage_C;
 
 }
 

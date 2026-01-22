@@ -23,9 +23,7 @@ struct PyLevelRuleControlComponent_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelRuleControlComponent_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelRuleControlComponent_ReceiveTick");
-static_assert(sizeof(PyLevelRuleControlComponent_ReceiveTick) == 0x000004, "Wrong size on PyLevelRuleControlComponent_ReceiveTick");
-static_assert(offsetof(PyLevelRuleControlComponent_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelRuleControlComponent_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelRuleControlComponent_ReceiveTick;
 
 // PythonFunction PyLevelRuleControlComponent.PyLevelRuleControlComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelRuleControlComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelRuleControlComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelRuleControlComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelRuleControlComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelRuleControlComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelRuleControlComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelRuleControlComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelRuleControlComponent_ReceiveEndPlay;
 
 }
 

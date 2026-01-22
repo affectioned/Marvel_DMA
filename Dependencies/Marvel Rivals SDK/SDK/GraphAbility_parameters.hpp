@@ -30,10 +30,7 @@ public:
 	bool                                          bSubTaskWithAbility;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GATaskBase_RegisterSubTask) == 0x000008, "Wrong alignment on GATaskBase_RegisterSubTask");
-static_assert(sizeof(GATaskBase_RegisterSubTask) == 0x000010, "Wrong size on GATaskBase_RegisterSubTask");
-static_assert(offsetof(GATaskBase_RegisterSubTask, InTask) == 0x000000, "Member 'GATaskBase_RegisterSubTask::InTask' has a wrong offset!");
-static_assert(offsetof(GATaskBase_RegisterSubTask, bSubTaskWithAbility) == 0x000008, "Member 'GATaskBase_RegisterSubTask::bSubTaskWithAbility' has a wrong offset!");
+DUMPER7_ASSERTS_GATaskBase_RegisterSubTask;
 
 // Function GraphAbility.GATaskBase.GetOwnerNetRole
 // 0x0001 (0x0001 - 0x0000)
@@ -42,9 +39,7 @@ struct GATaskBase_GetOwnerNetRole final
 public:
 	ENetRole                                      ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATaskBase_GetOwnerNetRole) == 0x000001, "Wrong alignment on GATaskBase_GetOwnerNetRole");
-static_assert(sizeof(GATaskBase_GetOwnerNetRole) == 0x000001, "Wrong size on GATaskBase_GetOwnerNetRole");
-static_assert(offsetof(GATaskBase_GetOwnerNetRole, ReturnValue) == 0x000000, "Member 'GATaskBase_GetOwnerNetRole::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATaskBase_GetOwnerNetRole;
 
 // Function GraphAbility.GATaskBase.IsAbilityActivated
 // 0x0001 (0x0001 - 0x0000)
@@ -53,9 +48,7 @@ struct GATaskBase_IsAbilityActivated final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATaskBase_IsAbilityActivated) == 0x000001, "Wrong alignment on GATaskBase_IsAbilityActivated");
-static_assert(sizeof(GATaskBase_IsAbilityActivated) == 0x000001, "Wrong size on GATaskBase_IsAbilityActivated");
-static_assert(offsetof(GATaskBase_IsAbilityActivated, ReturnValue) == 0x000000, "Member 'GATaskBase_IsAbilityActivated::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATaskBase_IsAbilityActivated;
 
 // Function GraphAbility.GASpecTaskBase_Ability.CanActivateAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -64,32 +57,23 @@ struct GASpecTaskBase_Ability_CanActivateAbility final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GASpecTaskBase_Ability_CanActivateAbility) == 0x000001, "Wrong alignment on GASpecTaskBase_Ability_CanActivateAbility");
-static_assert(sizeof(GASpecTaskBase_Ability_CanActivateAbility) == 0x000001, "Wrong size on GASpecTaskBase_Ability_CanActivateAbility");
-static_assert(offsetof(GASpecTaskBase_Ability_CanActivateAbility, ReturnValue) == 0x000000, "Member 'GASpecTaskBase_Ability_CanActivateAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GASpecTaskBase_Ability_CanActivateAbility;
 
 // Function GraphAbility.GASpecTask_SelectTarget.AsSelectTargetAbility
-// 0x17F0 (0x17F0 - 0x0000)
+// 0x1BA0 (0x1BA0 - 0x0000)
 struct GASpecTask_SelectTarget_AsSelectTargetAbility final
 {
 public:
 	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(const struct FHitResult& HitInfo, bool* bResult)> FilterDelegate;                 // 0x0008(0x0014)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       SelectParam;                                       // 0x0020(0x17C0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bAutoBeginSelect;                                  // 0x17E0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldCheckActivate;                              // 0x17E1(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17E2[0x6];                                     // 0x17E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGASpecTask_SelectTarget*               ReturnValue;                                       // 0x17E8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSelectTaskParam                       SelectParam;                                       // 0x0020(0x1B70)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bAutoBeginSelect;                                  // 0x1B90(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bShouldCheckActivate;                              // 0x1B91(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B92[0x6];                                     // 0x1B92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGASpecTask_SelectTarget*               ReturnValue;                                       // 0x1B98(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GASpecTask_SelectTarget_AsSelectTargetAbility) == 0x000010, "Wrong alignment on GASpecTask_SelectTarget_AsSelectTargetAbility");
-static_assert(sizeof(GASpecTask_SelectTarget_AsSelectTargetAbility) == 0x0017F0, "Wrong size on GASpecTask_SelectTarget_AsSelectTargetAbility");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, OwningAbility) == 0x000000, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, FilterDelegate) == 0x000008, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::FilterDelegate' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, SelectParam) == 0x000020, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::SelectParam' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, bAutoBeginSelect) == 0x0017E0, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::bAutoBeginSelect' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, bShouldCheckActivate) == 0x0017E1, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::bShouldCheckActivate' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_AsSelectTargetAbility, ReturnValue) == 0x0017E8, "Member 'GASpecTask_SelectTarget_AsSelectTargetAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GASpecTask_SelectTarget_AsSelectTargetAbility;
 
 // Function GraphAbility.GASpecTask_SelectTarget.FilterTargets
 // 0x0028 (0x0028 - 0x0000)
@@ -99,33 +83,22 @@ public:
 	struct FVector                                TraceStart;                                        // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FHitResult>                     InHitResults;                                      // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GASpecTask_SelectTarget_FilterTargets) == 0x000008, "Wrong alignment on GASpecTask_SelectTarget_FilterTargets");
-static_assert(sizeof(GASpecTask_SelectTarget_FilterTargets) == 0x000028, "Wrong size on GASpecTask_SelectTarget_FilterTargets");
-static_assert(offsetof(GASpecTask_SelectTarget_FilterTargets, TraceStart) == 0x000000, "Member 'GASpecTask_SelectTarget_FilterTargets::TraceStart' has a wrong offset!");
-static_assert(offsetof(GASpecTask_SelectTarget_FilterTargets, InHitResults) == 0x000018, "Member 'GASpecTask_SelectTarget_FilterTargets::InHitResults' has a wrong offset!");
+DUMPER7_ASSERTS_GASpecTask_SelectTarget_FilterTargets;
 
 // Function GraphAbility.GATask_ApplyDash.ApplyDash
-// 0x0C60 (0x0C60 - 0x0000)
+// 0x0F80 (0x0F80 - 0x0000)
 struct GATask_ApplyDash_ApplyDash final
 {
 public:
 	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo_0;                                        // 0x0008(0x0BC8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                ToLocation;                                        // 0x0BD0(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ToDirection;                                       // 0x0BE8(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 ToTargetActor;                                     // 0x0C00(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPortalSegments                        PortalSegments_0;                                  // 0x0C08(0x0050)(Parm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	class UGATask_ApplyDash*                      ReturnValue;                                       // 0x0C58(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo_0;                                        // 0x0008(0x0EE8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                ToLocation;                                        // 0x0EF0(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ToDirection;                                       // 0x0F08(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 ToTargetActor;                                     // 0x0F20(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPortalSegments                        PortalSegments_0;                                  // 0x0F28(0x0050)(Parm, AdvancedDisplay, NativeAccessSpecifierPublic)
+	class UGATask_ApplyDash*                      ReturnValue;                                       // 0x0F78(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_ApplyDash_ApplyDash) == 0x000008, "Wrong alignment on GATask_ApplyDash_ApplyDash");
-static_assert(sizeof(GATask_ApplyDash_ApplyDash) == 0x000C60, "Wrong size on GATask_ApplyDash_ApplyDash");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, OwningAbility) == 0x000000, "Member 'GATask_ApplyDash_ApplyDash::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, DashInfo_0) == 0x000008, "Member 'GATask_ApplyDash_ApplyDash::DashInfo_0' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, ToLocation) == 0x000BD0, "Member 'GATask_ApplyDash_ApplyDash::ToLocation' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, ToDirection) == 0x000BE8, "Member 'GATask_ApplyDash_ApplyDash::ToDirection' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, ToTargetActor) == 0x000C00, "Member 'GATask_ApplyDash_ApplyDash::ToTargetActor' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, PortalSegments_0) == 0x000C08, "Member 'GATask_ApplyDash_ApplyDash::PortalSegments_0' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_ApplyDash, ReturnValue) == 0x000C58, "Member 'GATask_ApplyDash_ApplyDash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_ApplyDash_ApplyDash;
 
 // Function GraphAbility.GATask_ApplyDash.OnDashFinished
 // 0x0001 (0x0001 - 0x0000)
@@ -134,26 +107,19 @@ struct GATask_ApplyDash_OnDashFinished final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_ApplyDash_OnDashFinished) == 0x000001, "Wrong alignment on GATask_ApplyDash_OnDashFinished");
-static_assert(sizeof(GATask_ApplyDash_OnDashFinished) == 0x000001, "Wrong size on GATask_ApplyDash_OnDashFinished");
-static_assert(offsetof(GATask_ApplyDash_OnDashFinished, Reason) == 0x000000, "Member 'GATask_ApplyDash_OnDashFinished::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_ApplyDash_OnDashFinished;
 
 // Function GraphAbility.GATask_ApplyDash.OnDashHit
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct GATask_ApplyDash_OnDashHit final
 {
 public:
 	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                NormalImpulse;                                     // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             Hit;                                               // 0x0028(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitResult                             Hit;                                               // 0x0028(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_ApplyDash_OnDashHit) == 0x000008, "Wrong alignment on GATask_ApplyDash_OnDashHit");
-static_assert(sizeof(GATask_ApplyDash_OnDashHit) == 0x000218, "Wrong size on GATask_ApplyDash_OnDashHit");
-static_assert(offsetof(GATask_ApplyDash_OnDashHit, SelfActor) == 0x000000, "Member 'GATask_ApplyDash_OnDashHit::SelfActor' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_OnDashHit, OtherActor) == 0x000008, "Member 'GATask_ApplyDash_OnDashHit::OtherActor' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_OnDashHit, NormalImpulse) == 0x000010, "Member 'GATask_ApplyDash_OnDashHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(GATask_ApplyDash_OnDashHit, Hit) == 0x000028, "Member 'GATask_ApplyDash_OnDashHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_ApplyDash_OnDashHit;
 
 // Function GraphAbility.GATask_Gather.GA_StartGather
 // 0x0018 (0x0018 - 0x0000)
@@ -166,12 +132,7 @@ public:
 	float                                         CustomDuration;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_Gather*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_Gather_GA_StartGather) == 0x000008, "Wrong alignment on GATask_Gather_GA_StartGather");
-static_assert(sizeof(GATask_Gather_GA_StartGather) == 0x000018, "Wrong size on GATask_Gather_GA_StartGather");
-static_assert(offsetof(GATask_Gather_GA_StartGather, OwningAbility) == 0x000000, "Member 'GATask_Gather_GA_StartGather::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_GA_StartGather, bStopAtMax) == 0x000008, "Member 'GATask_Gather_GA_StartGather::bStopAtMax' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_GA_StartGather, CustomDuration) == 0x00000C, "Member 'GATask_Gather_GA_StartGather::CustomDuration' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_GA_StartGather, ReturnValue) == 0x000010, "Member 'GATask_Gather_GA_StartGather::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_Gather_GA_StartGather;
 
 // Function GraphAbility.GATask_Gather.StartGather
 // 0x0018 (0x0018 - 0x0000)
@@ -184,12 +145,7 @@ public:
 	float                                         CustomDuration;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_Gather*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_Gather_StartGather) == 0x000008, "Wrong alignment on GATask_Gather_StartGather");
-static_assert(sizeof(GATask_Gather_StartGather) == 0x000018, "Wrong size on GATask_Gather_StartGather");
-static_assert(offsetof(GATask_Gather_StartGather, OwningAbility) == 0x000000, "Member 'GATask_Gather_StartGather::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_StartGather, bStopAtMax) == 0x000008, "Member 'GATask_Gather_StartGather::bStopAtMax' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_StartGather, CustomDuration) == 0x00000C, "Member 'GATask_Gather_StartGather::CustomDuration' has a wrong offset!");
-static_assert(offsetof(GATask_Gather_StartGather, ReturnValue) == 0x000010, "Member 'GATask_Gather_StartGather::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_Gather_StartGather;
 
 // Function GraphAbility.GATask_Gather.OnGatherIndexChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -198,9 +154,7 @@ struct GATask_Gather_OnGatherIndexChanged final
 public:
 	int32                                         TriggeredIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_Gather_OnGatherIndexChanged) == 0x000004, "Wrong alignment on GATask_Gather_OnGatherIndexChanged");
-static_assert(sizeof(GATask_Gather_OnGatherIndexChanged) == 0x000004, "Wrong size on GATask_Gather_OnGatherIndexChanged");
-static_assert(offsetof(GATask_Gather_OnGatherIndexChanged, TriggeredIndex) == 0x000000, "Member 'GATask_Gather_OnGatherIndexChanged::TriggeredIndex' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_Gather_OnGatherIndexChanged;
 
 // Function GraphAbility.GATask_Gather.OnGatherStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -209,9 +163,7 @@ struct GATask_Gather_OnGatherStateChanged final
 public:
 	bool                                          bState;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_Gather_OnGatherStateChanged) == 0x000001, "Wrong alignment on GATask_Gather_OnGatherStateChanged");
-static_assert(sizeof(GATask_Gather_OnGatherStateChanged) == 0x000001, "Wrong size on GATask_Gather_OnGatherStateChanged");
-static_assert(offsetof(GATask_Gather_OnGatherStateChanged, bState) == 0x000000, "Member 'GATask_Gather_OnGatherStateChanged::bState' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_Gather_OnGatherStateChanged;
 
 // Function GraphAbility.GATask_PlayTimeline.PlayTimeline
 // 0x0038 (0x0038 - 0x0000)
@@ -225,13 +177,7 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_PlayTimeline*                   ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_PlayTimeline) == 0x000008, "Wrong alignment on GATask_PlayTimeline_PlayTimeline");
-static_assert(sizeof(GATask_PlayTimeline_PlayTimeline) == 0x000038, "Wrong size on GATask_PlayTimeline_PlayTimeline");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimeline, OwningAbility) == 0x000000, "Member 'GATask_PlayTimeline_PlayTimeline::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimeline, Timelines_0) == 0x000008, "Member 'GATask_PlayTimeline_PlayTimeline::Timelines_0' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimeline, AnimIndexs_0) == 0x000018, "Member 'GATask_PlayTimeline_PlayTimeline::AnimIndexs_0' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimeline, bStopTimeline) == 0x000028, "Member 'GATask_PlayTimeline_PlayTimeline::bStopTimeline' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimeline, ReturnValue) == 0x000030, "Member 'GATask_PlayTimeline_PlayTimeline::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_PlayTimeline;
 
 // Function GraphAbility.GATask_PlayTimeline.PlayTimelineByIndex
 // 0x0028 (0x0028 - 0x0000)
@@ -244,12 +190,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_PlayTimeline*                   ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_PlayTimelineByIndex) == 0x000008, "Wrong alignment on GATask_PlayTimeline_PlayTimelineByIndex");
-static_assert(sizeof(GATask_PlayTimeline_PlayTimelineByIndex) == 0x000028, "Wrong size on GATask_PlayTimeline_PlayTimelineByIndex");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimelineByIndex, OwningAbility) == 0x000000, "Member 'GATask_PlayTimeline_PlayTimelineByIndex::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimelineByIndex, TimelineIndexs_0) == 0x000008, "Member 'GATask_PlayTimeline_PlayTimelineByIndex::TimelineIndexs_0' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimelineByIndex, bStopTimeline) == 0x000018, "Member 'GATask_PlayTimeline_PlayTimelineByIndex::bStopTimeline' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_PlayTimelineByIndex, ReturnValue) == 0x000020, "Member 'GATask_PlayTimeline_PlayTimelineByIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_PlayTimelineByIndex;
 
 // Function GraphAbility.GATask_PlayTimeline.OnBlendOut
 // 0x02A0 (0x02A0 - 0x0000)
@@ -260,10 +201,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_OnBlendOut) == 0x000008, "Wrong alignment on GATask_PlayTimeline_OnBlendOut");
-static_assert(sizeof(GATask_PlayTimeline_OnBlendOut) == 0x0002A0, "Wrong size on GATask_PlayTimeline_OnBlendOut");
-static_assert(offsetof(GATask_PlayTimeline_OnBlendOut, EventTag) == 0x000000, "Member 'GATask_PlayTimeline_OnBlendOut::EventTag' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_OnBlendOut, EventData) == 0x000010, "Member 'GATask_PlayTimeline_OnBlendOut::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_OnBlendOut;
 
 // Function GraphAbility.GATask_PlayTimeline.OnCancelled
 // 0x02A0 (0x02A0 - 0x0000)
@@ -274,10 +212,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_OnCancelled) == 0x000008, "Wrong alignment on GATask_PlayTimeline_OnCancelled");
-static_assert(sizeof(GATask_PlayTimeline_OnCancelled) == 0x0002A0, "Wrong size on GATask_PlayTimeline_OnCancelled");
-static_assert(offsetof(GATask_PlayTimeline_OnCancelled, EventTag) == 0x000000, "Member 'GATask_PlayTimeline_OnCancelled::EventTag' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_OnCancelled, EventData) == 0x000010, "Member 'GATask_PlayTimeline_OnCancelled::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_OnCancelled;
 
 // Function GraphAbility.GATask_PlayTimeline.OnCompleted
 // 0x02A0 (0x02A0 - 0x0000)
@@ -288,10 +223,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_OnCompleted) == 0x000008, "Wrong alignment on GATask_PlayTimeline_OnCompleted");
-static_assert(sizeof(GATask_PlayTimeline_OnCompleted) == 0x0002A0, "Wrong size on GATask_PlayTimeline_OnCompleted");
-static_assert(offsetof(GATask_PlayTimeline_OnCompleted, EventTag) == 0x000000, "Member 'GATask_PlayTimeline_OnCompleted::EventTag' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_OnCompleted, EventData) == 0x000010, "Member 'GATask_PlayTimeline_OnCompleted::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_OnCompleted;
 
 // Function GraphAbility.GATask_PlayTimeline.OnInterrupted
 // 0x02A0 (0x02A0 - 0x0000)
@@ -302,10 +234,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_OnInterrupted) == 0x000008, "Wrong alignment on GATask_PlayTimeline_OnInterrupted");
-static_assert(sizeof(GATask_PlayTimeline_OnInterrupted) == 0x0002A0, "Wrong size on GATask_PlayTimeline_OnInterrupted");
-static_assert(offsetof(GATask_PlayTimeline_OnInterrupted, EventTag) == 0x000000, "Member 'GATask_PlayTimeline_OnInterrupted::EventTag' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_OnInterrupted, EventData) == 0x000010, "Member 'GATask_PlayTimeline_OnInterrupted::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_OnInterrupted;
 
 // Function GraphAbility.GATask_PlayTimeline.OnReceiveEvent
 // 0x02A0 (0x02A0 - 0x0000)
@@ -316,10 +245,40 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     EventData;                                         // 0x0010(0x0290)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_PlayTimeline_OnReceiveEvent) == 0x000008, "Wrong alignment on GATask_PlayTimeline_OnReceiveEvent");
-static_assert(sizeof(GATask_PlayTimeline_OnReceiveEvent) == 0x0002A0, "Wrong size on GATask_PlayTimeline_OnReceiveEvent");
-static_assert(offsetof(GATask_PlayTimeline_OnReceiveEvent, EventTag) == 0x000000, "Member 'GATask_PlayTimeline_OnReceiveEvent::EventTag' has a wrong offset!");
-static_assert(offsetof(GATask_PlayTimeline_OnReceiveEvent, EventData) == 0x000010, "Member 'GATask_PlayTimeline_OnReceiveEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_PlayTimeline_OnReceiveEvent;
+
+// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_MultiMode
+// 0x0038 (0x0038 - 0x0000)
+struct GATask_WeaponFireOnce_WeaponFireOnce_MultiMode final
+{
+public:
+	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WeaponID_0;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 ShootModes_0;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         ShootCount_0;                                      // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShootDelay_0;                                      // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReloadAbilityID_0;                                 // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGATask_WeaponFireOnce*                 ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WeaponFireOnce_WeaponFireOnce_MultiMode;
+
+// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_SingleMode
+// 0x0028 (0x0028 - 0x0000)
+struct GATask_WeaponFireOnce_WeaponFireOnce_SingleMode final
+{
+public:
+	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WeaponID_0;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShootMode;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShootCount_0;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShootDelay_0;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReloadAbilityID_0;                                 // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGATask_WeaponFireOnce*                 ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WeaponFireOnce_WeaponFireOnce_SingleMode;
 
 // Function GraphAbility.GATask_ProjectileHoming.SetProjectileHoming
 // 0x0020 (0x0020 - 0x0000)
@@ -331,12 +290,7 @@ public:
 	class AActor*                                 HomingToTarget;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_ProjectileHoming*               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_ProjectileHoming_SetProjectileHoming) == 0x000008, "Wrong alignment on GATask_ProjectileHoming_SetProjectileHoming");
-static_assert(sizeof(GATask_ProjectileHoming_SetProjectileHoming) == 0x000020, "Wrong size on GATask_ProjectileHoming_SetProjectileHoming");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHoming, OwningAbility) == 0x000000, "Member 'GATask_ProjectileHoming_SetProjectileHoming::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHoming, Projectile_0) == 0x000008, "Member 'GATask_ProjectileHoming_SetProjectileHoming::Projectile_0' has a wrong offset!");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHoming, HomingToTarget) == 0x000010, "Member 'GATask_ProjectileHoming_SetProjectileHoming::HomingToTarget' has a wrong offset!");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHoming, ReturnValue) == 0x000018, "Member 'GATask_ProjectileHoming_SetProjectileHoming::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_ProjectileHoming_SetProjectileHoming;
 
 // Function GraphAbility.GATask_ProjectileHoming.SetProjectileHomingWithProjectile
 // 0x0018 (0x0018 - 0x0000)
@@ -347,11 +301,7 @@ public:
 	class AActor*                                 HomingToTarget;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_ProjectileHoming*               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_ProjectileHoming_SetProjectileHomingWithProjectile) == 0x000008, "Wrong alignment on GATask_ProjectileHoming_SetProjectileHomingWithProjectile");
-static_assert(sizeof(GATask_ProjectileHoming_SetProjectileHomingWithProjectile) == 0x000018, "Wrong size on GATask_ProjectileHoming_SetProjectileHomingWithProjectile");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHomingWithProjectile, Projectile_0) == 0x000000, "Member 'GATask_ProjectileHoming_SetProjectileHomingWithProjectile::Projectile_0' has a wrong offset!");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHomingWithProjectile, HomingToTarget) == 0x000008, "Member 'GATask_ProjectileHoming_SetProjectileHomingWithProjectile::HomingToTarget' has a wrong offset!");
-static_assert(offsetof(GATask_ProjectileHoming_SetProjectileHomingWithProjectile, ReturnValue) == 0x000010, "Member 'GATask_ProjectileHoming_SetProjectileHomingWithProjectile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_ProjectileHoming_SetProjectileHomingWithProjectile;
 
 // Function GraphAbility.GATask_SpawnProjectile.SpawnProjectile
 // 0x0050 (0x0050 - 0x0000)
@@ -367,14 +317,7 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_SpawnProjectile*                ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_SpawnProjectile) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_SpawnProjectile");
-static_assert(sizeof(GATask_SpawnProjectile_SpawnProjectile) == 0x000050, "Wrong size on GATask_SpawnProjectile_SpawnProjectile");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, OwningAbility) == 0x000000, "Member 'GATask_SpawnProjectile_SpawnProjectile::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, InProjectileID) == 0x000008, "Member 'GATask_SpawnProjectile_SpawnProjectile::InProjectileID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnProjectile_SpawnProjectile::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnProjectile_SpawnProjectile::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, bRelative) == 0x000040, "Member 'GATask_SpawnProjectile_SpawnProjectile::bRelative' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectile, ReturnValue) == 0x000048, "Member 'GATask_SpawnProjectile_SpawnProjectile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_SpawnProjectile;
 
 // Function GraphAbility.GATask_SpawnProjectile.SpawnProjectileWithObject
 // 0x0048 (0x0048 - 0x0000)
@@ -388,13 +331,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnProjectile*                ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_SpawnProjectileWithObject) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_SpawnProjectileWithObject");
-static_assert(sizeof(GATask_SpawnProjectile_SpawnProjectileWithObject) == 0x000048, "Wrong size on GATask_SpawnProjectile_SpawnProjectileWithObject");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithObject, Source) == 0x000000, "Member 'GATask_SpawnProjectile_SpawnProjectileWithObject::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithObject, InProjectileID) == 0x000008, "Member 'GATask_SpawnProjectile_SpawnProjectileWithObject::InProjectileID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithObject, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnProjectile_SpawnProjectileWithObject::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithObject, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnProjectile_SpawnProjectileWithObject::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithObject, ReturnValue) == 0x000040, "Member 'GATask_SpawnProjectile_SpawnProjectileWithObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_SpawnProjectileWithObject;
 
 // Function GraphAbility.GATask_SpawnProjectile.SpawnProjectileWithSource
 // 0x0050 (0x0050 - 0x0000)
@@ -409,14 +346,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0030(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnProjectile*                ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_SpawnProjectileWithSource) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_SpawnProjectileWithSource");
-static_assert(sizeof(GATask_SpawnProjectile_SpawnProjectileWithSource) == 0x000050, "Wrong size on GATask_SpawnProjectile_SpawnProjectileWithSource");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, OwningAbility) == 0x000000, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, InProjectileID) == 0x000008, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::InProjectileID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, Source) == 0x000010, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, CustomLocation_0) == 0x000018, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, CustomRotation_0) == 0x000030, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_SpawnProjectileWithSource, ReturnValue) == 0x000048, "Member 'GATask_SpawnProjectile_SpawnProjectileWithSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_SpawnProjectileWithSource;
 
 // Function GraphAbility.GATask_SpawnProjectile.OnBeginAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -425,9 +355,7 @@ struct GATask_SpawnProjectile_OnBeginAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_OnBeginAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_OnBeginAgentTask");
-static_assert(sizeof(GATask_SpawnProjectile_OnBeginAgentTask) == 0x000008, "Wrong size on GATask_SpawnProjectile_OnBeginAgentTask");
-static_assert(offsetof(GATask_SpawnProjectile_OnBeginAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnProjectile_OnBeginAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_OnBeginAgentTask;
 
 // Function GraphAbility.GATask_SpawnProjectile.OnEndAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -436,20 +364,16 @@ struct GATask_SpawnProjectile_OnEndAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_OnEndAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_OnEndAgentTask");
-static_assert(sizeof(GATask_SpawnProjectile_OnEndAgentTask) == 0x000008, "Wrong size on GATask_SpawnProjectile_OnEndAgentTask");
-static_assert(offsetof(GATask_SpawnProjectile_OnEndAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnProjectile_OnEndAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_OnEndAgentTask;
 
 // Function GraphAbility.GATask_SpawnProjectile.OnHitOrTraceTarget
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct GATask_SpawnProjectile_OnHitOrTraceTarget final
 {
 public:
-	struct FHitResult                             HitTarget;                                         // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitResult                             HitTarget;                                         // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_OnHitOrTraceTarget) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_OnHitOrTraceTarget");
-static_assert(sizeof(GATask_SpawnProjectile_OnHitOrTraceTarget) == 0x0001F0, "Wrong size on GATask_SpawnProjectile_OnHitOrTraceTarget");
-static_assert(offsetof(GATask_SpawnProjectile_OnHitOrTraceTarget, HitTarget) == 0x000000, "Member 'GATask_SpawnProjectile_OnHitOrTraceTarget::HitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_OnHitOrTraceTarget;
 
 // Function GraphAbility.GATask_SpawnProjectile.OnSpawnSuccess
 // 0x0170 (0x0170 - 0x0000)
@@ -459,10 +383,28 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnProjectile_OnSpawnSuccess) == 0x000008, "Wrong alignment on GATask_SpawnProjectile_OnSpawnSuccess");
-static_assert(sizeof(GATask_SpawnProjectile_OnSpawnSuccess) == 0x000170, "Wrong size on GATask_SpawnProjectile_OnSpawnSuccess");
-static_assert(offsetof(GATask_SpawnProjectile_OnSpawnSuccess, SpawnActor) == 0x000000, "Member 'GATask_SpawnProjectile_OnSpawnSuccess::SpawnActor' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnProjectile_OnSpawnSuccess, Data) == 0x000008, "Member 'GATask_SpawnProjectile_OnSpawnSuccess::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnProjectile_OnSpawnSuccess;
+
+// Function GraphAbility.GATask_WaitKillEvent.WaitKillEvent
+// 0x0020 (0x0020 - 0x0000)
+struct GATask_WaitKillEvent_WaitKillEvent final
+{
+public:
+	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 SourceCharacter;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 TargetCharacter;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGATask_WaitKillEvent*                  ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WaitKillEvent_WaitKillEvent;
+
+// Function GraphAbility.GATask_WaitKillEvent.OnKillCallback
+// 0x0158 (0x0158 - 0x0000)
+struct GATask_WaitKillEvent_OnKillCallback final
+{
+public:
+	struct FUIKillInfo                            KillInfo;                                          // 0x0000(0x0158)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WaitKillEvent_OnKillCallback;
 
 // Function GraphAbility.GATask_SpawnScope.SpawnScope
 // 0x0048 (0x0048 - 0x0000)
@@ -476,13 +418,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnScope*                     ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_SpawnScope) == 0x000008, "Wrong alignment on GATask_SpawnScope_SpawnScope");
-static_assert(sizeof(GATask_SpawnScope_SpawnScope) == 0x000048, "Wrong size on GATask_SpawnScope_SpawnScope");
-static_assert(offsetof(GATask_SpawnScope_SpawnScope, OwningAbility) == 0x000000, "Member 'GATask_SpawnScope_SpawnScope::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScope, InScopeID) == 0x000008, "Member 'GATask_SpawnScope_SpawnScope::InScopeID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScope, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnScope_SpawnScope::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScope, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnScope_SpawnScope::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScope, ReturnValue) == 0x000040, "Member 'GATask_SpawnScope_SpawnScope::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_SpawnScope;
 
 // Function GraphAbility.GATask_SpawnScope.SpawnScopeWithObject
 // 0x0048 (0x0048 - 0x0000)
@@ -496,13 +432,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnScope*                     ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_SpawnScopeWithObject) == 0x000008, "Wrong alignment on GATask_SpawnScope_SpawnScopeWithObject");
-static_assert(sizeof(GATask_SpawnScope_SpawnScopeWithObject) == 0x000048, "Wrong size on GATask_SpawnScope_SpawnScopeWithObject");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithObject, Source) == 0x000000, "Member 'GATask_SpawnScope_SpawnScopeWithObject::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithObject, InScopeID) == 0x000008, "Member 'GATask_SpawnScope_SpawnScopeWithObject::InScopeID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithObject, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnScope_SpawnScopeWithObject::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithObject, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnScope_SpawnScopeWithObject::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithObject, ReturnValue) == 0x000040, "Member 'GATask_SpawnScope_SpawnScopeWithObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_SpawnScopeWithObject;
 
 // Function GraphAbility.GATask_SpawnScope.SpawnScopeWithSource
 // 0x0050 (0x0050 - 0x0000)
@@ -517,14 +447,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0030(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnScope*                     ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_SpawnScopeWithSource) == 0x000008, "Wrong alignment on GATask_SpawnScope_SpawnScopeWithSource");
-static_assert(sizeof(GATask_SpawnScope_SpawnScopeWithSource) == 0x000050, "Wrong size on GATask_SpawnScope_SpawnScopeWithSource");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, OwningAbility) == 0x000000, "Member 'GATask_SpawnScope_SpawnScopeWithSource::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, InScopeID) == 0x000008, "Member 'GATask_SpawnScope_SpawnScopeWithSource::InScopeID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, Source) == 0x000010, "Member 'GATask_SpawnScope_SpawnScopeWithSource::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, CustomLocation_0) == 0x000018, "Member 'GATask_SpawnScope_SpawnScopeWithSource::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, CustomRotation_0) == 0x000030, "Member 'GATask_SpawnScope_SpawnScopeWithSource::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_SpawnScopeWithSource, ReturnValue) == 0x000048, "Member 'GATask_SpawnScope_SpawnScopeWithSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_SpawnScopeWithSource;
 
 // Function GraphAbility.GATask_SpawnScope.OnActorBeginAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -533,9 +456,7 @@ struct GATask_SpawnScope_OnActorBeginAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_OnActorBeginAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnScope_OnActorBeginAgentTask");
-static_assert(sizeof(GATask_SpawnScope_OnActorBeginAgentTask) == 0x000008, "Wrong size on GATask_SpawnScope_OnActorBeginAgentTask");
-static_assert(offsetof(GATask_SpawnScope_OnActorBeginAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnScope_OnActorBeginAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_OnActorBeginAgentTask;
 
 // Function GraphAbility.GATask_SpawnScope.OnActorEndAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -544,9 +465,7 @@ struct GATask_SpawnScope_OnActorEndAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_OnActorEndAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnScope_OnActorEndAgentTask");
-static_assert(sizeof(GATask_SpawnScope_OnActorEndAgentTask) == 0x000008, "Wrong size on GATask_SpawnScope_OnActorEndAgentTask");
-static_assert(offsetof(GATask_SpawnScope_OnActorEndAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnScope_OnActorEndAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_OnActorEndAgentTask;
 
 // Function GraphAbility.GATask_SpawnScope.OnNoActorScopeInited
 // 0x0010 (0x0010 - 0x0000)
@@ -556,10 +475,7 @@ public:
 	class UMarvelAgentTraceComponent*             TraceComp;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMarvelAgentEffectiveComponent*         EffectComp;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_OnNoActorScopeInited) == 0x000008, "Wrong alignment on GATask_SpawnScope_OnNoActorScopeInited");
-static_assert(sizeof(GATask_SpawnScope_OnNoActorScopeInited) == 0x000010, "Wrong size on GATask_SpawnScope_OnNoActorScopeInited");
-static_assert(offsetof(GATask_SpawnScope_OnNoActorScopeInited, TraceComp) == 0x000000, "Member 'GATask_SpawnScope_OnNoActorScopeInited::TraceComp' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_OnNoActorScopeInited, EffectComp) == 0x000008, "Member 'GATask_SpawnScope_OnNoActorScopeInited::EffectComp' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_OnNoActorScopeInited;
 
 // Function GraphAbility.GATask_SpawnScope.OnSpawnActorSuccess
 // 0x0170 (0x0170 - 0x0000)
@@ -569,10 +485,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_OnSpawnActorSuccess) == 0x000008, "Wrong alignment on GATask_SpawnScope_OnSpawnActorSuccess");
-static_assert(sizeof(GATask_SpawnScope_OnSpawnActorSuccess) == 0x000170, "Wrong size on GATask_SpawnScope_OnSpawnActorSuccess");
-static_assert(offsetof(GATask_SpawnScope_OnSpawnActorSuccess, SpawnActor) == 0x000000, "Member 'GATask_SpawnScope_OnSpawnActorSuccess::SpawnActor' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_OnSpawnActorSuccess, Data) == 0x000008, "Member 'GATask_SpawnScope_OnSpawnActorSuccess::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_OnSpawnActorSuccess;
 
 // Function GraphAbility.GATask_SpawnScope.OnTrace
 // 0x0018 (0x0018 - 0x0000)
@@ -582,10 +495,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnScope_OnTrace) == 0x000008, "Wrong alignment on GATask_SpawnScope_OnTrace");
-static_assert(sizeof(GATask_SpawnScope_OnTrace) == 0x000018, "Wrong size on GATask_SpawnScope_OnTrace");
-static_assert(offsetof(GATask_SpawnScope_OnTrace, TraceSource) == 0x000000, "Member 'GATask_SpawnScope_OnTrace::TraceSource' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnScope_OnTrace, HitResults) == 0x000008, "Member 'GATask_SpawnScope_OnTrace::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnScope_OnTrace;
 
 // Function GraphAbility.GATask_SpawnSummoned.SpawnProjectileWithObject
 // 0x0048 (0x0048 - 0x0000)
@@ -599,13 +509,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnSummoned*                  ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_SpawnProjectileWithObject) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_SpawnProjectileWithObject");
-static_assert(sizeof(GATask_SpawnSummoned_SpawnProjectileWithObject) == 0x000048, "Wrong size on GATask_SpawnSummoned_SpawnProjectileWithObject");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnProjectileWithObject, Source) == 0x000000, "Member 'GATask_SpawnSummoned_SpawnProjectileWithObject::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnProjectileWithObject, InSummonedID) == 0x000008, "Member 'GATask_SpawnSummoned_SpawnProjectileWithObject::InSummonedID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnProjectileWithObject, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnSummoned_SpawnProjectileWithObject::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnProjectileWithObject, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnSummoned_SpawnProjectileWithObject::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnProjectileWithObject, ReturnValue) == 0x000040, "Member 'GATask_SpawnSummoned_SpawnProjectileWithObject::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_SpawnProjectileWithObject;
 
 // Function GraphAbility.GATask_SpawnSummoned.SpawnSummoned
 // 0x0048 (0x0048 - 0x0000)
@@ -619,13 +523,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnSummoned*                  ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_SpawnSummoned) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_SpawnSummoned");
-static_assert(sizeof(GATask_SpawnSummoned_SpawnSummoned) == 0x000048, "Wrong size on GATask_SpawnSummoned_SpawnSummoned");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummoned, OwningAbility) == 0x000000, "Member 'GATask_SpawnSummoned_SpawnSummoned::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummoned, InSummonedID) == 0x000008, "Member 'GATask_SpawnSummoned_SpawnSummoned::InSummonedID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummoned, CustomLocation_0) == 0x000010, "Member 'GATask_SpawnSummoned_SpawnSummoned::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummoned, CustomRotation_0) == 0x000028, "Member 'GATask_SpawnSummoned_SpawnSummoned::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummoned, ReturnValue) == 0x000040, "Member 'GATask_SpawnSummoned_SpawnSummoned::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_SpawnSummoned;
 
 // Function GraphAbility.GATask_SpawnSummoned.SpawnSummonedWithSource
 // 0x0050 (0x0050 - 0x0000)
@@ -640,14 +538,7 @@ public:
 	struct FRotator                               CustomRotation_0;                                  // 0x0030(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	class UGATask_SpawnSummoned*                  ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_SpawnSummonedWithSource) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_SpawnSummonedWithSource");
-static_assert(sizeof(GATask_SpawnSummoned_SpawnSummonedWithSource) == 0x000050, "Wrong size on GATask_SpawnSummoned_SpawnSummonedWithSource");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, OwningAbility) == 0x000000, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, InSummonedID) == 0x000008, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::InSummonedID' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, Source) == 0x000010, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::Source' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, CustomLocation_0) == 0x000018, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::CustomLocation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, CustomRotation_0) == 0x000030, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::CustomRotation_0' has a wrong offset!");
-static_assert(offsetof(GATask_SpawnSummoned_SpawnSummonedWithSource, ReturnValue) == 0x000048, "Member 'GATask_SpawnSummoned_SpawnSummonedWithSource::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_SpawnSummonedWithSource;
 
 // Function GraphAbility.GATask_SpawnSummoned.OnBeginAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -656,9 +547,7 @@ struct GATask_SpawnSummoned_OnBeginAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_OnBeginAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_OnBeginAgentTask");
-static_assert(sizeof(GATask_SpawnSummoned_OnBeginAgentTask) == 0x000008, "Wrong size on GATask_SpawnSummoned_OnBeginAgentTask");
-static_assert(offsetof(GATask_SpawnSummoned_OnBeginAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnSummoned_OnBeginAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_OnBeginAgentTask;
 
 // Function GraphAbility.GATask_SpawnSummoned.OnEndAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -667,9 +556,7 @@ struct GATask_SpawnSummoned_OnEndAgentTask final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_OnEndAgentTask) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_OnEndAgentTask");
-static_assert(sizeof(GATask_SpawnSummoned_OnEndAgentTask) == 0x000008, "Wrong size on GATask_SpawnSummoned_OnEndAgentTask");
-static_assert(offsetof(GATask_SpawnSummoned_OnEndAgentTask, TargetActor) == 0x000000, "Member 'GATask_SpawnSummoned_OnEndAgentTask::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_OnEndAgentTask;
 
 // Function GraphAbility.GATask_SpawnSummoned.OnSpawnSummonedSuccess
 // 0x0008 (0x0008 - 0x0000)
@@ -678,9 +565,7 @@ struct GATask_SpawnSummoned_OnSpawnSummonedSuccess final
 public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_OnSpawnSummonedSuccess) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_OnSpawnSummonedSuccess");
-static_assert(sizeof(GATask_SpawnSummoned_OnSpawnSummonedSuccess) == 0x000008, "Wrong size on GATask_SpawnSummoned_OnSpawnSummonedSuccess");
-static_assert(offsetof(GATask_SpawnSummoned_OnSpawnSummonedSuccess, SpawnActor) == 0x000000, "Member 'GATask_SpawnSummoned_OnSpawnSummonedSuccess::SpawnActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_OnSpawnSummonedSuccess;
 
 // Function GraphAbility.GATask_SpawnSummoned.OnSummonedDeath
 // 0x0008 (0x0008 - 0x0000)
@@ -689,9 +574,7 @@ struct GATask_SpawnSummoned_OnSummonedDeath final
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_SpawnSummoned_OnSummonedDeath) == 0x000008, "Wrong alignment on GATask_SpawnSummoned_OnSummonedDeath");
-static_assert(sizeof(GATask_SpawnSummoned_OnSummonedDeath) == 0x000008, "Wrong size on GATask_SpawnSummoned_OnSummonedDeath");
-static_assert(offsetof(GATask_SpawnSummoned_OnSummonedDeath, TargetActor) == 0x000000, "Member 'GATask_SpawnSummoned_OnSummonedDeath::TargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_SpawnSummoned_OnSummonedDeath;
 
 // Function GraphAbility.GATask_WaitAbilityHit.WaitAbilityHit
 // 0x0018 (0x0018 - 0x0000)
@@ -704,27 +587,18 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitAbilityHit*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitAbilityHit_WaitAbilityHit) == 0x000008, "Wrong alignment on GATask_WaitAbilityHit_WaitAbilityHit");
-static_assert(sizeof(GATask_WaitAbilityHit_WaitAbilityHit) == 0x000018, "Wrong size on GATask_WaitAbilityHit_WaitAbilityHit");
-static_assert(offsetof(GATask_WaitAbilityHit_WaitAbilityHit, OwningAbility) == 0x000000, "Member 'GATask_WaitAbilityHit_WaitAbilityHit::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAbilityHit_WaitAbilityHit, AgentID) == 0x000008, "Member 'GATask_WaitAbilityHit_WaitAbilityHit::AgentID' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAbilityHit_WaitAbilityHit, InActorType) == 0x00000C, "Member 'GATask_WaitAbilityHit_WaitAbilityHit::InActorType' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAbilityHit_WaitAbilityHit, ReturnValue) == 0x000010, "Member 'GATask_WaitAbilityHit_WaitAbilityHit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitAbilityHit_WaitAbilityHit;
 
 // Function GraphAbility.GATask_WaitAbilityHit.OnAbilityHit
-// 0x0030 (0x0030 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct GATask_WaitAbilityHit_OnAbilityHit final
 {
 public:
 	class UGameplayAbility*                       InAbility;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitAbilityHit_OnAbilityHit) == 0x000008, "Wrong alignment on GATask_WaitAbilityHit_OnAbilityHit");
-static_assert(sizeof(GATask_WaitAbilityHit_OnAbilityHit) == 0x000030, "Wrong size on GATask_WaitAbilityHit_OnAbilityHit");
-static_assert(offsetof(GATask_WaitAbilityHit_OnAbilityHit, InAbility) == 0x000000, "Member 'GATask_WaitAbilityHit_OnAbilityHit::InAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAbilityHit_OnAbilityHit, HitParams) == 0x000008, "Member 'GATask_WaitAbilityHit_OnAbilityHit::HitParams' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAbilityHit_OnAbilityHit, HitResults) == 0x000020, "Member 'GATask_WaitAbilityHit_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitAbilityHit_OnAbilityHit;
 
 // Function GraphAbility.GATask_WaitAttributeChange.WaitAttributeChange_Range
 // 0x0060 (0x0060 - 0x0000)
@@ -743,17 +617,7 @@ public:
 	uint8                                         Pad_57[0x1];                                       // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitAttributeChange*            ReturnValue;                                       // 0x0058(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitAttributeChange_WaitAttributeChange_Range) == 0x000008, "Wrong alignment on GATask_WaitAttributeChange_WaitAttributeChange_Range");
-static_assert(sizeof(GATask_WaitAttributeChange_WaitAttributeChange_Range) == 0x000060, "Wrong size on GATask_WaitAttributeChange_WaitAttributeChange_Range");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, OwningAbility) == 0x000000, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, Attribute_0) == 0x000008, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::Attribute_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, MinValue_0) == 0x000048, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::MinValue_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, bIncludeMin_0) == 0x00004C, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::bIncludeMin_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, MaxValue_0) == 0x000050, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::MaxValue_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, bIncludeMax_0) == 0x000054, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::bIncludeMax_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, bTriggerOnce_0) == 0x000055, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::bTriggerOnce_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, bBeginCheck_0) == 0x000056, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::bBeginCheck_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Range, ReturnValue) == 0x000058, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Range::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitAttributeChange_WaitAttributeChange_Range;
 
 // Function GraphAbility.GATask_WaitAttributeChange.WaitAttributeChange_Single
 // 0x0058 (0x0058 - 0x0000)
@@ -769,15 +633,40 @@ public:
 	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitAttributeChange*            ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitAttributeChange_WaitAttributeChange_Single) == 0x000008, "Wrong alignment on GATask_WaitAttributeChange_WaitAttributeChange_Single");
-static_assert(sizeof(GATask_WaitAttributeChange_WaitAttributeChange_Single) == 0x000058, "Wrong size on GATask_WaitAttributeChange_WaitAttributeChange_Single");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, OwningAbility) == 0x000000, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, Attribute_0) == 0x000008, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::Attribute_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, CompareValue) == 0x000048, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::CompareValue' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, Comparison) == 0x00004C, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::Comparison' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, bTriggerOnce_0) == 0x00004D, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::bTriggerOnce_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, bBeginCheck_0) == 0x00004E, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::bBeginCheck_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitAttributeChange_WaitAttributeChange_Single, ReturnValue) == 0x000050, "Member 'GATask_WaitAttributeChange_WaitAttributeChange_Single::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitAttributeChange_WaitAttributeChange_Single;
+
+// Function GraphAbility.GATask_WaitTargetData.WaitTargetData_PawnPlacement
+// 0x1A30 (0x1A30 - 0x0000)
+struct GATask_WaitTargetData_WaitTargetData_PawnPlacement final
+{
+public:
+	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFindGroundParam                       TraceParams_0;                                     // 0x0010(0x1A00)(Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PlacementCueTag_0;                                 // 0x1A10(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A1C[0x4];                                     // 0x1A1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGATask_WaitTargetData*                 ReturnValue;                                       // 0x1A20(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A28[0x8];                                     // 0x1A28(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_GATask_WaitTargetData_WaitTargetData_PawnPlacement;
+
+// Function GraphAbility.GATask_WaitTargetData.OnCancelledCallback
+// 0x0168 (0x0168 - 0x0000)
+struct GATask_WaitTargetData_OnCancelledCallback final
+{
+public:
+	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WaitTargetData_OnCancelledCallback;
+
+// Function GraphAbility.GATask_WaitTargetData.OnValidDataCallback
+// 0x0168 (0x0168 - 0x0000)
+struct GATask_WaitTargetData_OnValidDataCallback final
+{
+public:
+	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GATask_WaitTargetData_OnValidDataCallback;
 
 // Function GraphAbility.GATask_WaitBuffEvent.WaitBuffEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -789,11 +678,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitBuffEvent*                  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitBuffEvent_WaitBuffEvent) == 0x000008, "Wrong alignment on GATask_WaitBuffEvent_WaitBuffEvent");
-static_assert(sizeof(GATask_WaitBuffEvent_WaitBuffEvent) == 0x000018, "Wrong size on GATask_WaitBuffEvent_WaitBuffEvent");
-static_assert(offsetof(GATask_WaitBuffEvent_WaitBuffEvent, OwningAbility) == 0x000000, "Member 'GATask_WaitBuffEvent_WaitBuffEvent::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitBuffEvent_WaitBuffEvent, BuffID_0) == 0x000008, "Member 'GATask_WaitBuffEvent_WaitBuffEvent::BuffID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitBuffEvent_WaitBuffEvent, ReturnValue) == 0x000010, "Member 'GATask_WaitBuffEvent_WaitBuffEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitBuffEvent_WaitBuffEvent;
 
 // Function GraphAbility.GATask_WaitBuffEvent.OnAppliedReplicatedCallback
 // 0x0168 (0x0168 - 0x0000)
@@ -802,9 +687,7 @@ struct GATask_WaitBuffEvent_OnAppliedReplicatedCallback final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitBuffEvent_OnAppliedReplicatedCallback) == 0x000008, "Wrong alignment on GATask_WaitBuffEvent_OnAppliedReplicatedCallback");
-static_assert(sizeof(GATask_WaitBuffEvent_OnAppliedReplicatedCallback) == 0x000168, "Wrong size on GATask_WaitBuffEvent_OnAppliedReplicatedCallback");
-static_assert(offsetof(GATask_WaitBuffEvent_OnAppliedReplicatedCallback, Data) == 0x000000, "Member 'GATask_WaitBuffEvent_OnAppliedReplicatedCallback::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitBuffEvent_OnAppliedReplicatedCallback;
 
 // Function GraphAbility.GATask_WaitBuffEvent.OnRemovedReplicatedCallback
 // 0x0168 (0x0168 - 0x0000)
@@ -813,9 +696,7 @@ struct GATask_WaitBuffEvent_OnRemovedReplicatedCallback final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitBuffEvent_OnRemovedReplicatedCallback) == 0x000008, "Wrong alignment on GATask_WaitBuffEvent_OnRemovedReplicatedCallback");
-static_assert(sizeof(GATask_WaitBuffEvent_OnRemovedReplicatedCallback) == 0x000168, "Wrong size on GATask_WaitBuffEvent_OnRemovedReplicatedCallback");
-static_assert(offsetof(GATask_WaitBuffEvent_OnRemovedReplicatedCallback, Data) == 0x000000, "Member 'GATask_WaitBuffEvent_OnRemovedReplicatedCallback::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitBuffEvent_OnRemovedReplicatedCallback;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.WaitConfirmCancel
 // 0x0018 (0x0018 - 0x0000)
@@ -830,14 +711,7 @@ public:
 	float                                         MaxWaitTime;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitConfirmCancel*              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_WaitConfirmCancel) == 0x000008, "Wrong alignment on GATask_WaitConfirmCancel_WaitConfirmCancel");
-static_assert(sizeof(GATask_WaitConfirmCancel_WaitConfirmCancel) == 0x000018, "Wrong size on GATask_WaitConfirmCancel_WaitConfirmCancel");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, OwningAbility) == 0x000000, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, ConfirmInput) == 0x000008, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::ConfirmInput' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, CancelInput) == 0x000009, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::CancelInput' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, bSkipNowTrigger_0) == 0x00000A, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::bSkipNowTrigger_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, MaxWaitTime) == 0x00000C, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::MaxWaitTime' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancel, ReturnValue) == 0x000010, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_WaitConfirmCancel;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.WaitConfirmCancelDefault
 // 0x0018 (0x0018 - 0x0000)
@@ -850,12 +724,7 @@ public:
 	float                                         MaxWaitTime;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitConfirmCancel*              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault) == 0x000008, "Wrong alignment on GATask_WaitConfirmCancel_WaitConfirmCancelDefault");
-static_assert(sizeof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault) == 0x000018, "Wrong size on GATask_WaitConfirmCancel_WaitConfirmCancelDefault");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault, OwningAbility) == 0x000000, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancelDefault::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault, bSkipNowTrigger_0) == 0x000008, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancelDefault::bSkipNowTrigger_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault, MaxWaitTime) == 0x00000C, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancelDefault::MaxWaitTime' has a wrong offset!");
-static_assert(offsetof(GATask_WaitConfirmCancel_WaitConfirmCancelDefault, ReturnValue) == 0x000010, "Member 'GATask_WaitConfirmCancel_WaitConfirmCancelDefault::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_WaitConfirmCancelDefault;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.OnCancelPressedCallback
 // 0x0004 (0x0004 - 0x0000)
@@ -864,9 +733,7 @@ struct GATask_WaitConfirmCancel_OnCancelPressedCallback final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_OnCancelPressedCallback) == 0x000004, "Wrong alignment on GATask_WaitConfirmCancel_OnCancelPressedCallback");
-static_assert(sizeof(GATask_WaitConfirmCancel_OnCancelPressedCallback) == 0x000004, "Wrong size on GATask_WaitConfirmCancel_OnCancelPressedCallback");
-static_assert(offsetof(GATask_WaitConfirmCancel_OnCancelPressedCallback, TimeWaited) == 0x000000, "Member 'GATask_WaitConfirmCancel_OnCancelPressedCallback::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_OnCancelPressedCallback;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.OnCancelReleasedCallback
 // 0x0004 (0x0004 - 0x0000)
@@ -875,9 +742,7 @@ struct GATask_WaitConfirmCancel_OnCancelReleasedCallback final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_OnCancelReleasedCallback) == 0x000004, "Wrong alignment on GATask_WaitConfirmCancel_OnCancelReleasedCallback");
-static_assert(sizeof(GATask_WaitConfirmCancel_OnCancelReleasedCallback) == 0x000004, "Wrong size on GATask_WaitConfirmCancel_OnCancelReleasedCallback");
-static_assert(offsetof(GATask_WaitConfirmCancel_OnCancelReleasedCallback, TimeWaited) == 0x000000, "Member 'GATask_WaitConfirmCancel_OnCancelReleasedCallback::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_OnCancelReleasedCallback;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.OnConfirmPressedCallback
 // 0x0004 (0x0004 - 0x0000)
@@ -886,9 +751,7 @@ struct GATask_WaitConfirmCancel_OnConfirmPressedCallback final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_OnConfirmPressedCallback) == 0x000004, "Wrong alignment on GATask_WaitConfirmCancel_OnConfirmPressedCallback");
-static_assert(sizeof(GATask_WaitConfirmCancel_OnConfirmPressedCallback) == 0x000004, "Wrong size on GATask_WaitConfirmCancel_OnConfirmPressedCallback");
-static_assert(offsetof(GATask_WaitConfirmCancel_OnConfirmPressedCallback, TimeWaited) == 0x000000, "Member 'GATask_WaitConfirmCancel_OnConfirmPressedCallback::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_OnConfirmPressedCallback;
 
 // Function GraphAbility.GATask_WaitConfirmCancel.OnConfirmReleasedCallback
 // 0x0004 (0x0004 - 0x0000)
@@ -897,9 +760,7 @@ struct GATask_WaitConfirmCancel_OnConfirmReleasedCallback final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitConfirmCancel_OnConfirmReleasedCallback) == 0x000004, "Wrong alignment on GATask_WaitConfirmCancel_OnConfirmReleasedCallback");
-static_assert(sizeof(GATask_WaitConfirmCancel_OnConfirmReleasedCallback) == 0x000004, "Wrong size on GATask_WaitConfirmCancel_OnConfirmReleasedCallback");
-static_assert(offsetof(GATask_WaitConfirmCancel_OnConfirmReleasedCallback, TimeWaited) == 0x000000, "Member 'GATask_WaitConfirmCancel_OnConfirmReleasedCallback::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitConfirmCancel_OnConfirmReleasedCallback;
 
 // Function GraphAbility.GATask_WaitDamageEvent.WaitDamageEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -911,11 +772,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitDamageEvent*                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitDamageEvent_WaitDamageEvent) == 0x000008, "Wrong alignment on GATask_WaitDamageEvent_WaitDamageEvent");
-static_assert(sizeof(GATask_WaitDamageEvent_WaitDamageEvent) == 0x000018, "Wrong size on GATask_WaitDamageEvent_WaitDamageEvent");
-static_assert(offsetof(GATask_WaitDamageEvent_WaitDamageEvent, OwningAbility) == 0x000000, "Member 'GATask_WaitDamageEvent_WaitDamageEvent::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitDamageEvent_WaitDamageEvent, EventType) == 0x000008, "Member 'GATask_WaitDamageEvent_WaitDamageEvent::EventType' has a wrong offset!");
-static_assert(offsetof(GATask_WaitDamageEvent_WaitDamageEvent, ReturnValue) == 0x000010, "Member 'GATask_WaitDamageEvent_WaitDamageEvent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitDamageEvent_WaitDamageEvent;
 
 // Function GraphAbility.GATask_WaitDamageEvent.OnDamageCallback
 // 0x0028 (0x0028 - 0x0000)
@@ -926,39 +783,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitDamageEvent_OnDamageCallback) == 0x000008, "Wrong alignment on GATask_WaitDamageEvent_OnDamageCallback");
-static_assert(sizeof(GATask_WaitDamageEvent_OnDamageCallback) == 0x000028, "Wrong size on GATask_WaitDamageEvent_OnDamageCallback");
-static_assert(offsetof(GATask_WaitDamageEvent_OnDamageCallback, InSourceAvatar) == 0x000000, "Member 'GATask_WaitDamageEvent_OnDamageCallback::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(GATask_WaitDamageEvent_OnDamageCallback, InTargetAvatar) == 0x000008, "Member 'GATask_WaitDamageEvent_OnDamageCallback::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(GATask_WaitDamageEvent_OnDamageCallback, ModifierParameterHandle) == 0x000010, "Member 'GATask_WaitDamageEvent_OnDamageCallback::ModifierParameterHandle' has a wrong offset!");
-
-// Function GraphAbility.GATask_WaitKillEvent.WaitKillEvent
-// 0x0020 (0x0020 - 0x0000)
-struct GATask_WaitKillEvent_WaitKillEvent final
-{
-public:
-	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 SourceCharacter;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 TargetCharacter;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGATask_WaitKillEvent*                  ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WaitKillEvent_WaitKillEvent) == 0x000008, "Wrong alignment on GATask_WaitKillEvent_WaitKillEvent");
-static_assert(sizeof(GATask_WaitKillEvent_WaitKillEvent) == 0x000020, "Wrong size on GATask_WaitKillEvent_WaitKillEvent");
-static_assert(offsetof(GATask_WaitKillEvent_WaitKillEvent, OwningAbility) == 0x000000, "Member 'GATask_WaitKillEvent_WaitKillEvent::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitKillEvent_WaitKillEvent, SourceCharacter) == 0x000008, "Member 'GATask_WaitKillEvent_WaitKillEvent::SourceCharacter' has a wrong offset!");
-static_assert(offsetof(GATask_WaitKillEvent_WaitKillEvent, TargetCharacter) == 0x000010, "Member 'GATask_WaitKillEvent_WaitKillEvent::TargetCharacter' has a wrong offset!");
-static_assert(offsetof(GATask_WaitKillEvent_WaitKillEvent, ReturnValue) == 0x000018, "Member 'GATask_WaitKillEvent_WaitKillEvent::ReturnValue' has a wrong offset!");
-
-// Function GraphAbility.GATask_WaitKillEvent.OnKillCallback
-// 0x0158 (0x0158 - 0x0000)
-struct GATask_WaitKillEvent_OnKillCallback final
-{
-public:
-	struct FUIKillInfo                            KillInfo;                                          // 0x0000(0x0158)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WaitKillEvent_OnKillCallback) == 0x000008, "Wrong alignment on GATask_WaitKillEvent_OnKillCallback");
-static_assert(sizeof(GATask_WaitKillEvent_OnKillCallback) == 0x000158, "Wrong size on GATask_WaitKillEvent_OnKillCallback");
-static_assert(offsetof(GATask_WaitKillEvent_OnKillCallback, KillInfo) == 0x000000, "Member 'GATask_WaitKillEvent_OnKillCallback::KillInfo' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitDamageEvent_OnDamageCallback;
 
 // Function GraphAbility.GATask_WaitInput.WaitCancel
 // 0x0018 (0x0018 - 0x0000)
@@ -971,12 +796,7 @@ public:
 	float                                         MaxWaitTime;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitInput*                      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitInput_WaitCancel) == 0x000008, "Wrong alignment on GATask_WaitInput_WaitCancel");
-static_assert(sizeof(GATask_WaitInput_WaitCancel) == 0x000018, "Wrong size on GATask_WaitInput_WaitCancel");
-static_assert(offsetof(GATask_WaitInput_WaitCancel, OwningAbility) == 0x000000, "Member 'GATask_WaitInput_WaitCancel::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitCancel, bSkipNowTrigger_0) == 0x000008, "Member 'GATask_WaitInput_WaitCancel::bSkipNowTrigger_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitCancel, MaxWaitTime) == 0x00000C, "Member 'GATask_WaitInput_WaitCancel::MaxWaitTime' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitCancel, ReturnValue) == 0x000010, "Member 'GATask_WaitInput_WaitCancel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitInput_WaitCancel;
 
 // Function GraphAbility.GATask_WaitInput.WaitConfirm
 // 0x0018 (0x0018 - 0x0000)
@@ -989,12 +809,7 @@ public:
 	float                                         MaxWaitTime;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitInput*                      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitInput_WaitConfirm) == 0x000008, "Wrong alignment on GATask_WaitInput_WaitConfirm");
-static_assert(sizeof(GATask_WaitInput_WaitConfirm) == 0x000018, "Wrong size on GATask_WaitInput_WaitConfirm");
-static_assert(offsetof(GATask_WaitInput_WaitConfirm, OwningAbility) == 0x000000, "Member 'GATask_WaitInput_WaitConfirm::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitConfirm, bSkipNowTrigger_0) == 0x000008, "Member 'GATask_WaitInput_WaitConfirm::bSkipNowTrigger_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitConfirm, MaxWaitTime) == 0x00000C, "Member 'GATask_WaitInput_WaitConfirm::MaxWaitTime' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitConfirm, ReturnValue) == 0x000010, "Member 'GATask_WaitInput_WaitConfirm::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitInput_WaitConfirm;
 
 // Function GraphAbility.GATask_WaitInput.WaitInput
 // 0x0098 (0x0098 - 0x0000)
@@ -1011,15 +826,7 @@ public:
 	struct FActionTipsParam                       ActionTipsParam_0;                                 // 0x0018(0x0078)(Parm, NativeAccessSpecifierPublic)
 	class UGATask_WaitInput*                      ReturnValue;                                       // 0x0090(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitInput_WaitInput) == 0x000008, "Wrong alignment on GATask_WaitInput_WaitInput");
-static_assert(sizeof(GATask_WaitInput_WaitInput) == 0x000098, "Wrong size on GATask_WaitInput_WaitInput");
-static_assert(offsetof(GATask_WaitInput_WaitInput, OwningAbility) == 0x000000, "Member 'GATask_WaitInput_WaitInput::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, Input) == 0x000008, "Member 'GATask_WaitInput_WaitInput::Input' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, bSkipNowTrigger_0) == 0x000009, "Member 'GATask_WaitInput_WaitInput::bSkipNowTrigger_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, MaxWaitTime) == 0x00000C, "Member 'GATask_WaitInput_WaitInput::MaxWaitTime' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, bTriggerOnce_0) == 0x000010, "Member 'GATask_WaitInput_WaitInput::bTriggerOnce_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, ActionTipsParam_0) == 0x000018, "Member 'GATask_WaitInput_WaitInput::ActionTipsParam_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitInput_WaitInput, ReturnValue) == 0x000090, "Member 'GATask_WaitInput_WaitInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitInput_WaitInput;
 
 // Function GraphAbility.GATask_WaitInput.OnInputPressed
 // 0x0004 (0x0004 - 0x0000)
@@ -1028,9 +835,7 @@ struct GATask_WaitInput_OnInputPressed final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitInput_OnInputPressed) == 0x000004, "Wrong alignment on GATask_WaitInput_OnInputPressed");
-static_assert(sizeof(GATask_WaitInput_OnInputPressed) == 0x000004, "Wrong size on GATask_WaitInput_OnInputPressed");
-static_assert(offsetof(GATask_WaitInput_OnInputPressed, TimeWaited) == 0x000000, "Member 'GATask_WaitInput_OnInputPressed::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitInput_OnInputPressed;
 
 // Function GraphAbility.GATask_WaitInput.OnInputReleased
 // 0x0004 (0x0004 - 0x0000)
@@ -1039,9 +844,7 @@ struct GATask_WaitInput_OnInputReleased final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitInput_OnInputReleased) == 0x000004, "Wrong alignment on GATask_WaitInput_OnInputReleased");
-static_assert(sizeof(GATask_WaitInput_OnInputReleased) == 0x000004, "Wrong size on GATask_WaitInput_OnInputReleased");
-static_assert(offsetof(GATask_WaitInput_OnInputReleased, TimeWaited) == 0x000000, "Member 'GATask_WaitInput_OnInputReleased::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitInput_OnInputReleased;
 
 // Function GraphAbility.GATask_WaitOwnerKillOther.WaitAbilityOwnerKillOther
 // 0x0010 (0x0010 - 0x0000)
@@ -1051,10 +854,7 @@ public:
 	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitOwnerKillOther*             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther) == 0x000008, "Wrong alignment on GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther");
-static_assert(sizeof(GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther) == 0x000010, "Wrong size on GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther");
-static_assert(offsetof(GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther, OwningAbility) == 0x000000, "Member 'GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther, ReturnValue) == 0x000008, "Member 'GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitOwnerKillOther_WaitAbilityOwnerKillOther;
 
 // Function GraphAbility.GATask_WaitOwnerKillOther.WaitCharacterKillOther
 // 0x0018 (0x0018 - 0x0000)
@@ -1065,11 +865,7 @@ public:
 	class AActor*                                 InCharacter;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGATask_WaitOwnerKillOther*             ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitOwnerKillOther_WaitCharacterKillOther) == 0x000008, "Wrong alignment on GATask_WaitOwnerKillOther_WaitCharacterKillOther");
-static_assert(sizeof(GATask_WaitOwnerKillOther_WaitCharacterKillOther) == 0x000018, "Wrong size on GATask_WaitOwnerKillOther_WaitCharacterKillOther");
-static_assert(offsetof(GATask_WaitOwnerKillOther_WaitCharacterKillOther, OwningAbility) == 0x000000, "Member 'GATask_WaitOwnerKillOther_WaitCharacterKillOther::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitOwnerKillOther_WaitCharacterKillOther, InCharacter) == 0x000008, "Member 'GATask_WaitOwnerKillOther_WaitCharacterKillOther::InCharacter' has a wrong offset!");
-static_assert(offsetof(GATask_WaitOwnerKillOther_WaitCharacterKillOther, ReturnValue) == 0x000010, "Member 'GATask_WaitOwnerKillOther_WaitCharacterKillOther::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitOwnerKillOther_WaitCharacterKillOther;
 
 // Function GraphAbility.GATask_WaitOwnerKillOther.InternalOnCharacterKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -1080,11 +876,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitOwnerKillOther_InternalOnCharacterKillOther) == 0x000008, "Wrong alignment on GATask_WaitOwnerKillOther_InternalOnCharacterKillOther");
-static_assert(sizeof(GATask_WaitOwnerKillOther_InternalOnCharacterKillOther) == 0x000028, "Wrong size on GATask_WaitOwnerKillOther_InternalOnCharacterKillOther");
-static_assert(offsetof(GATask_WaitOwnerKillOther_InternalOnCharacterKillOther, InSourceAvatar) == 0x000000, "Member 'GATask_WaitOwnerKillOther_InternalOnCharacterKillOther::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(GATask_WaitOwnerKillOther_InternalOnCharacterKillOther, InTargetAvatar) == 0x000008, "Member 'GATask_WaitOwnerKillOther_InternalOnCharacterKillOther::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(GATask_WaitOwnerKillOther_InternalOnCharacterKillOther, ModifierParameterHandle) == 0x000010, "Member 'GATask_WaitOwnerKillOther_InternalOnCharacterKillOther::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitOwnerKillOther_InternalOnCharacterKillOther;
 
 // Function GraphAbility.GATask_WaitSignal.WaitSignalEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -1098,55 +890,7 @@ public:
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitSignal*                     ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitSignal_WaitSignalEvent) == 0x000008, "Wrong alignment on GATask_WaitSignal_WaitSignalEvent");
-static_assert(sizeof(GATask_WaitSignal_WaitSignalEvent) == 0x000020, "Wrong size on GATask_WaitSignal_WaitSignalEvent");
-static_assert(offsetof(GATask_WaitSignal_WaitSignalEvent, OwningAbility) == 0x000000, "Member 'GATask_WaitSignal_WaitSignalEvent::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitSignal_WaitSignalEvent, SignalName_0) == 0x000008, "Member 'GATask_WaitSignal_WaitSignalEvent::SignalName_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitSignal_WaitSignalEvent, Level) == 0x000014, "Member 'GATask_WaitSignal_WaitSignalEvent::Level' has a wrong offset!");
-static_assert(offsetof(GATask_WaitSignal_WaitSignalEvent, bOnce) == 0x000015, "Member 'GATask_WaitSignal_WaitSignalEvent::bOnce' has a wrong offset!");
-static_assert(offsetof(GATask_WaitSignal_WaitSignalEvent, ReturnValue) == 0x000018, "Member 'GATask_WaitSignal_WaitSignalEvent::ReturnValue' has a wrong offset!");
-
-// Function GraphAbility.GATask_WaitTargetData.WaitTargetData_PawnPlacement
-// 0x16E0 (0x16E0 - 0x0000)
-struct GATask_WaitTargetData_WaitTargetData_PawnPlacement final
-{
-public:
-	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFindGroundParam                       TraceParams_0;                                     // 0x0010(0x16B0)(Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PlacementCueTag_0;                                 // 0x16C0(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16CC[0x4];                                     // 0x16CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGATask_WaitTargetData*                 ReturnValue;                                       // 0x16D0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16D8[0x8];                                     // 0x16D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(GATask_WaitTargetData_WaitTargetData_PawnPlacement) == 0x000010, "Wrong alignment on GATask_WaitTargetData_WaitTargetData_PawnPlacement");
-static_assert(sizeof(GATask_WaitTargetData_WaitTargetData_PawnPlacement) == 0x0016E0, "Wrong size on GATask_WaitTargetData_WaitTargetData_PawnPlacement");
-static_assert(offsetof(GATask_WaitTargetData_WaitTargetData_PawnPlacement, OwningAbility) == 0x000000, "Member 'GATask_WaitTargetData_WaitTargetData_PawnPlacement::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitTargetData_WaitTargetData_PawnPlacement, TraceParams_0) == 0x000010, "Member 'GATask_WaitTargetData_WaitTargetData_PawnPlacement::TraceParams_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitTargetData_WaitTargetData_PawnPlacement, PlacementCueTag_0) == 0x0016C0, "Member 'GATask_WaitTargetData_WaitTargetData_PawnPlacement::PlacementCueTag_0' has a wrong offset!");
-static_assert(offsetof(GATask_WaitTargetData_WaitTargetData_PawnPlacement, ReturnValue) == 0x0016D0, "Member 'GATask_WaitTargetData_WaitTargetData_PawnPlacement::ReturnValue' has a wrong offset!");
-
-// Function GraphAbility.GATask_WaitTargetData.OnCancelledCallback
-// 0x0168 (0x0168 - 0x0000)
-struct GATask_WaitTargetData_OnCancelledCallback final
-{
-public:
-	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WaitTargetData_OnCancelledCallback) == 0x000008, "Wrong alignment on GATask_WaitTargetData_OnCancelledCallback");
-static_assert(sizeof(GATask_WaitTargetData_OnCancelledCallback) == 0x000168, "Wrong size on GATask_WaitTargetData_OnCancelledCallback");
-static_assert(offsetof(GATask_WaitTargetData_OnCancelledCallback, Data) == 0x000000, "Member 'GATask_WaitTargetData_OnCancelledCallback::Data' has a wrong offset!");
-
-// Function GraphAbility.GATask_WaitTargetData.OnValidDataCallback
-// 0x0168 (0x0168 - 0x0000)
-struct GATask_WaitTargetData_OnValidDataCallback final
-{
-public:
-	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WaitTargetData_OnValidDataCallback) == 0x000008, "Wrong alignment on GATask_WaitTargetData_OnValidDataCallback");
-static_assert(sizeof(GATask_WaitTargetData_OnValidDataCallback) == 0x000168, "Wrong size on GATask_WaitTargetData_OnValidDataCallback");
-static_assert(offsetof(GATask_WaitTargetData_OnValidDataCallback, Data) == 0x000000, "Member 'GATask_WaitTargetData_OnValidDataCallback::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitSignal_WaitSignalEvent;
 
 // Function GraphAbility.GATask_WaitTime.WaitTimeSeconds
 // 0x0018 (0x0018 - 0x0000)
@@ -1158,60 +902,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WaitTime*                       ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WaitTime_WaitTimeSeconds) == 0x000008, "Wrong alignment on GATask_WaitTime_WaitTimeSeconds");
-static_assert(sizeof(GATask_WaitTime_WaitTimeSeconds) == 0x000018, "Wrong size on GATask_WaitTime_WaitTimeSeconds");
-static_assert(offsetof(GATask_WaitTime_WaitTimeSeconds, OwningAbility) == 0x000000, "Member 'GATask_WaitTime_WaitTimeSeconds::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WaitTime_WaitTimeSeconds, Seconds) == 0x000008, "Member 'GATask_WaitTime_WaitTimeSeconds::Seconds' has a wrong offset!");
-static_assert(offsetof(GATask_WaitTime_WaitTimeSeconds, ReturnValue) == 0x000010, "Member 'GATask_WaitTime_WaitTimeSeconds::ReturnValue' has a wrong offset!");
-
-// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_MultiMode
-// 0x0038 (0x0038 - 0x0000)
-struct GATask_WeaponFireOnce_WeaponFireOnce_MultiMode final
-{
-public:
-	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WeaponID_0;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 ShootModes_0;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         ShootCount_0;                                      // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShootDelay_0;                                      // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReloadAbilityID_0;                                 // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGATask_WeaponFireOnce*                 ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode) == 0x000008, "Wrong alignment on GATask_WeaponFireOnce_WeaponFireOnce_MultiMode");
-static_assert(sizeof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode) == 0x000038, "Wrong size on GATask_WeaponFireOnce_WeaponFireOnce_MultiMode");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, OwningAbility) == 0x000000, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, WeaponID_0) == 0x000008, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::WeaponID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, ShootModes_0) == 0x000010, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::ShootModes_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, ShootCount_0) == 0x000020, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::ShootCount_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, ShootDelay_0) == 0x000024, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::ShootDelay_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, ReloadAbilityID_0) == 0x000028, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::ReloadAbilityID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_MultiMode, ReturnValue) == 0x000030, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_MultiMode::ReturnValue' has a wrong offset!");
-
-// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_SingleMode
-// 0x0028 (0x0028 - 0x0000)
-struct GATask_WeaponFireOnce_WeaponFireOnce_SingleMode final
-{
-public:
-	class UGameplayAbility*                       OwningAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WeaponID_0;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShootMode;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShootCount_0;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShootDelay_0;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReloadAbilityID_0;                                 // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGATask_WeaponFireOnce*                 ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode) == 0x000008, "Wrong alignment on GATask_WeaponFireOnce_WeaponFireOnce_SingleMode");
-static_assert(sizeof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode) == 0x000028, "Wrong size on GATask_WeaponFireOnce_WeaponFireOnce_SingleMode");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, OwningAbility) == 0x000000, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, WeaponID_0) == 0x000008, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::WeaponID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, ShootMode) == 0x00000C, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::ShootMode' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, ShootCount_0) == 0x000010, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::ShootCount_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, ShootDelay_0) == 0x000014, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::ShootDelay_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, ReloadAbilityID_0) == 0x000018, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::ReloadAbilityID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFireOnce_WeaponFireOnce_SingleMode, ReturnValue) == 0x000020, "Member 'GATask_WeaponFireOnce_WeaponFireOnce_SingleMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WaitTime_WaitTimeSeconds;
 
 // Function GraphAbility.GATask_WeaponFiring.WeaponFiring_MultiModes
 // 0x0038 (0x0038 - 0x0000)
@@ -1230,16 +921,7 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WeaponFiring*                   ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WeaponFiring_WeaponFiring_MultiModes) == 0x000008, "Wrong alignment on GATask_WeaponFiring_WeaponFiring_MultiModes");
-static_assert(sizeof(GATask_WeaponFiring_WeaponFiring_MultiModes) == 0x000038, "Wrong size on GATask_WeaponFiring_WeaponFiring_MultiModes");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, OwningAbility) == 0x000000, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, WeaponID_0) == 0x000008, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::WeaponID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, ShootModes_0) == 0x000010, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::ShootModes_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, bIsRoundRobin_0) == 0x000020, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::bIsRoundRobin_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, ReloadAbilityID_0) == 0x000024, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::ReloadAbilityID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, DelayEndTask_0) == 0x000028, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::DelayEndTask_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, Input) == 0x00002C, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::Input' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_MultiModes, ReturnValue) == 0x000030, "Member 'GATask_WeaponFiring_WeaponFiring_MultiModes::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WeaponFiring_WeaponFiring_MultiModes;
 
 // Function GraphAbility.GATask_WeaponFiring.WeaponFiring_SingleMode
 // 0x0028 (0x0028 - 0x0000)
@@ -1255,15 +937,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGATask_WeaponFiring*                   ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WeaponFiring_WeaponFiring_SingleMode) == 0x000008, "Wrong alignment on GATask_WeaponFiring_WeaponFiring_SingleMode");
-static_assert(sizeof(GATask_WeaponFiring_WeaponFiring_SingleMode) == 0x000028, "Wrong size on GATask_WeaponFiring_WeaponFiring_SingleMode");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, OwningAbility) == 0x000000, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::OwningAbility' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, WeaponID_0) == 0x000008, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::WeaponID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, ShootMode) == 0x00000C, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::ShootMode' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, ReloadAbilityID_0) == 0x000010, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::ReloadAbilityID_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, DelayEndTask_0) == 0x000014, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::DelayEndTask_0' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, Input) == 0x000018, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::Input' has a wrong offset!");
-static_assert(offsetof(GATask_WeaponFiring_WeaponFiring_SingleMode, ReturnValue) == 0x000020, "Member 'GATask_WeaponFiring_WeaponFiring_SingleMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WeaponFiring_WeaponFiring_SingleMode;
 
 // Function GraphAbility.GATask_WeaponFiring.OnFireReplicatedCallback
 // 0x0168 (0x0168 - 0x0000)
@@ -1272,9 +946,7 @@ struct GATask_WeaponFiring_OnFireReplicatedCallback final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WeaponFiring_OnFireReplicatedCallback) == 0x000008, "Wrong alignment on GATask_WeaponFiring_OnFireReplicatedCallback");
-static_assert(sizeof(GATask_WeaponFiring_OnFireReplicatedCallback) == 0x000168, "Wrong size on GATask_WeaponFiring_OnFireReplicatedCallback");
-static_assert(offsetof(GATask_WeaponFiring_OnFireReplicatedCallback, Data) == 0x000000, "Member 'GATask_WeaponFiring_OnFireReplicatedCallback::Data' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WeaponFiring_OnFireReplicatedCallback;
 
 // Function GraphAbility.GATask_WeaponFiring.OnWeaponFireTaskEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -1283,9 +955,7 @@ struct GATask_WeaponFiring_OnWeaponFireTaskEnd final
 public:
 	bool                                          AbilityEnded;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GATask_WeaponFiring_OnWeaponFireTaskEnd) == 0x000001, "Wrong alignment on GATask_WeaponFiring_OnWeaponFireTaskEnd");
-static_assert(sizeof(GATask_WeaponFiring_OnWeaponFireTaskEnd) == 0x000001, "Wrong size on GATask_WeaponFiring_OnWeaponFireTaskEnd");
-static_assert(offsetof(GATask_WeaponFiring_OnWeaponFireTaskEnd, AbilityEnded) == 0x000000, "Member 'GATask_WeaponFiring_OnWeaponFireTaskEnd::AbilityEnded' has a wrong offset!");
+DUMPER7_ASSERTS_GATask_WeaponFiring_OnWeaponFireTaskEnd;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetAbilityActorFromObj
 // 0x0010 (0x0010 - 0x0000)
@@ -1295,10 +965,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetAbilityActorFromObj) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetAbilityActorFromObj");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetAbilityActorFromObj) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetAbilityActorFromObj");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityActorFromObj, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetAbilityActorFromObj::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityActorFromObj, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetAbilityActorFromObj::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetAbilityActorFromObj;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetAbilityConfigFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1308,10 +975,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMarvelAbilityConfig*                   ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetAbilityConfigFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetAbilityTargetActorFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1321,10 +985,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetAbilityTargetActorFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetCurrentAbilityFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1334,10 +995,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGameplayAbility*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetCurrentAbilityFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetCurrentInstigatorFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1347,10 +1005,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetCurrentInstigatorFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetOriginAbilityFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1360,10 +1015,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGameplayAbility*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetOriginAbilityFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetOriginInstigatorFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1373,10 +1025,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetOriginInstigatorFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.GetTaskAbilityFromAbilityTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -1386,10 +1035,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGameplayAbility*                       ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget");
-static_assert(sizeof(GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_GetTaskAbilityFromAbilityTarget;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.OnTargetActorCallAbilityTask
 // 0x0010 (0x0010 - 0x0000)
@@ -1399,10 +1045,7 @@ public:
 	class UObject*                                TaskCaller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGameplayTask*                          InTask;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask");
-static_assert(sizeof(GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask) == 0x000010, "Wrong size on GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask");
-static_assert(offsetof(GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask, TaskCaller) == 0x000000, "Member 'GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask::TaskCaller' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask, InTask) == 0x000008, "Member 'GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask::InTask' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_OnTargetActorCallAbilityTask;
 
 // Function GraphAbility.GraphAbilityFuncLibrary.SetAbilityTaskBeforeActivation
 // 0x0030 (0x0030 - 0x0000)
@@ -1417,13 +1060,7 @@ public:
 	bool                                          bCancelAbilityWhenFailed;                          // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation) == 0x000008, "Wrong alignment on GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation");
-static_assert(sizeof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation) == 0x000030, "Wrong size on GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation");
-static_assert(offsetof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation, InObj) == 0x000000, "Member 'GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation, AbilityTask) == 0x000008, "Member 'GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation::AbilityTask' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation, IsWithAbility) == 0x000010, "Member 'GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation::IsWithAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation, GATaskName) == 0x000018, "Member 'GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation::GATaskName' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation, bCancelAbilityWhenFailed) == 0x000028, "Member 'GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation::bCancelAbilityWhenFailed' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncLibrary_SetAbilityTaskBeforeActivation;
 
 // Function GraphAbility.GraphAbilityFuncNodes.ApplyBuffToTarget
 // 0x0020 (0x0020 - 0x0000)
@@ -1436,12 +1073,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Source;                                            // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_ApplyBuffToTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_ApplyBuffToTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_ApplyBuffToTarget) == 0x000020, "Wrong size on GraphAbilityFuncNodes_ApplyBuffToTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_ApplyBuffToTarget, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_ApplyBuffToTarget::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_ApplyBuffToTarget, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_ApplyBuffToTarget::BuffID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_ApplyBuffToTarget, Target) == 0x000010, "Member 'GraphAbilityFuncNodes_ApplyBuffToTarget::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_ApplyBuffToTarget, Source) == 0x000018, "Member 'GraphAbilityFuncNodes_ApplyBuffToTarget::Source' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_ApplyBuffToTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes.GetAttributeValue
 // 0x0050 (0x0050 - 0x0000)
@@ -1454,12 +1086,7 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x004C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_GetAttributeValue) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_GetAttributeValue");
-static_assert(sizeof(GraphAbilityFuncNodes_GetAttributeValue) == 0x000050, "Wrong size on GraphAbilityFuncNodes_GetAttributeValue");
-static_assert(offsetof(GraphAbilityFuncNodes_GetAttributeValue, Actor) == 0x000000, "Member 'GraphAbilityFuncNodes_GetAttributeValue::Actor' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetAttributeValue, Attribute) == 0x000008, "Member 'GraphAbilityFuncNodes_GetAttributeValue::Attribute' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetAttributeValue, bSuccessfullyFoundAttribute) == 0x000048, "Member 'GraphAbilityFuncNodes_GetAttributeValue::bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetAttributeValue, ReturnValue) == 0x00004C, "Member 'GraphAbilityFuncNodes_GetAttributeValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_GetAttributeValue;
 
 // Function GraphAbility.GraphAbilityFuncNodes.GetDirectionByConfig
 // 0x0028 (0x0028 - 0x0000)
@@ -1471,11 +1098,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_GetDirectionByConfig) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_GetDirectionByConfig");
-static_assert(sizeof(GraphAbilityFuncNodes_GetDirectionByConfig) == 0x000028, "Wrong size on GraphAbilityFuncNodes_GetDirectionByConfig");
-static_assert(offsetof(GraphAbilityFuncNodes_GetDirectionByConfig, InObj) == 0x000000, "Member 'GraphAbilityFuncNodes_GetDirectionByConfig::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetDirectionByConfig, Direction) == 0x000008, "Member 'GraphAbilityFuncNodes_GetDirectionByConfig::Direction' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetDirectionByConfig, ReturnValue) == 0x000010, "Member 'GraphAbilityFuncNodes_GetDirectionByConfig::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_GetDirectionByConfig;
 
 // Function GraphAbility.GraphAbilityFuncNodes.GetSelfActor
 // 0x0010 (0x0010 - 0x0000)
@@ -1485,10 +1108,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_GetSelfActor) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_GetSelfActor");
-static_assert(sizeof(GraphAbilityFuncNodes_GetSelfActor) == 0x000010, "Wrong size on GraphAbilityFuncNodes_GetSelfActor");
-static_assert(offsetof(GraphAbilityFuncNodes_GetSelfActor, InObj) == 0x000000, "Member 'GraphAbilityFuncNodes_GetSelfActor::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetSelfActor, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncNodes_GetSelfActor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_GetSelfActor;
 
 // Function GraphAbility.GraphAbilityFuncNodes.GetSelfCurrentInstigator
 // 0x0010 (0x0010 - 0x0000)
@@ -1498,10 +1118,7 @@ public:
 	class UObject*                                InObj;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_GetSelfCurrentInstigator) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_GetSelfCurrentInstigator");
-static_assert(sizeof(GraphAbilityFuncNodes_GetSelfCurrentInstigator) == 0x000010, "Wrong size on GraphAbilityFuncNodes_GetSelfCurrentInstigator");
-static_assert(offsetof(GraphAbilityFuncNodes_GetSelfCurrentInstigator, InObj) == 0x000000, "Member 'GraphAbilityFuncNodes_GetSelfCurrentInstigator::InObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_GetSelfCurrentInstigator, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncNodes_GetSelfCurrentInstigator::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_GetSelfCurrentInstigator;
 
 // Function GraphAbility.GraphAbilityFuncNodes.HasOwnedBuff_Target
 // 0x0020 (0x0020 - 0x0000)
@@ -1515,12 +1132,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_HasOwnedBuff_Target) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_HasOwnedBuff_Target");
-static_assert(sizeof(GraphAbilityFuncNodes_HasOwnedBuff_Target) == 0x000020, "Wrong size on GraphAbilityFuncNodes_HasOwnedBuff_Target");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedBuff_Target, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_HasOwnedBuff_Target::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedBuff_Target, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_HasOwnedBuff_Target::BuffID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedBuff_Target, Target) == 0x000010, "Member 'GraphAbilityFuncNodes_HasOwnedBuff_Target::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedBuff_Target, ReturnValue) == 0x000018, "Member 'GraphAbilityFuncNodes_HasOwnedBuff_Target::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_HasOwnedBuff_Target;
 
 // Function GraphAbility.GraphAbilityFuncNodes.HasOwnedTag_Target
 // 0x0028 (0x0028 - 0x0000)
@@ -1534,48 +1146,33 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_HasOwnedTag_Target) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_HasOwnedTag_Target");
-static_assert(sizeof(GraphAbilityFuncNodes_HasOwnedTag_Target) == 0x000028, "Wrong size on GraphAbilityFuncNodes_HasOwnedTag_Target");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedTag_Target, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_HasOwnedTag_Target::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedTag_Target, InTag) == 0x000008, "Member 'GraphAbilityFuncNodes_HasOwnedTag_Target::InTag' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedTag_Target, Target) == 0x000018, "Member 'GraphAbilityFuncNodes_HasOwnedTag_Target::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_HasOwnedTag_Target, ReturnValue) == 0x000020, "Member 'GraphAbilityFuncNodes_HasOwnedTag_Target::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_HasOwnedTag_Target;
 
 // Function GraphAbility.GraphAbilityFuncNodes.IsActorValidAbilityTarget_Filter
-// 0x03B0 (0x03B0 - 0x0000)
+// 0x04F0 (0x04F0 - 0x0000)
 struct GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter final
 {
 public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       TraceRule;                                         // 0x0010(0x0398)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x03A8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       TraceRule;                                         // 0x0010(0x04D8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x04E8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter");
-static_assert(sizeof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter) == 0x0003B0, "Wrong size on GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter");
-static_assert(offsetof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter, TraceRule) == 0x000010, "Member 'GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter::TraceRule' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter, ReturnValue) == 0x0003A8, "Member 'GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_IsActorValidAbilityTarget_Filter;
 
 // Function GraphAbility.GraphAbilityFuncNodes.IsHitResultValidAbilityTarget_Filter
-// 0x0598 (0x0598 - 0x0000)
+// 0x06F0 (0x06F0 - 0x0000)
 struct GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter final
 {
 public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             HitResult;                                         // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       TraceRule;                                         // 0x01F8(0x0398)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0590(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitResult;                                         // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       TraceRule;                                         // 0x0210(0x04D8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x06E8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter");
-static_assert(sizeof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter) == 0x000598, "Wrong size on GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter");
-static_assert(offsetof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter, HitResult) == 0x000008, "Member 'GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter::HitResult' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter, TraceRule) == 0x0001F8, "Member 'GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter::TraceRule' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter, ReturnValue) == 0x000590, "Member 'GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_IsHitResultValidAbilityTarget_Filter;
 
 // Function GraphAbility.GraphAbilityFuncNodes.SetAttributeValue
 // 0x0050 (0x0050 - 0x0000)
@@ -1587,11 +1184,7 @@ public:
 	float                                         NewValue;                                          // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_SetAttributeValue) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_SetAttributeValue");
-static_assert(sizeof(GraphAbilityFuncNodes_SetAttributeValue) == 0x000050, "Wrong size on GraphAbilityFuncNodes_SetAttributeValue");
-static_assert(offsetof(GraphAbilityFuncNodes_SetAttributeValue, Actor) == 0x000000, "Member 'GraphAbilityFuncNodes_SetAttributeValue::Actor' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_SetAttributeValue, Attribute) == 0x000008, "Member 'GraphAbilityFuncNodes_SetAttributeValue::Attribute' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_SetAttributeValue, NewValue) == 0x000048, "Member 'GraphAbilityFuncNodes_SetAttributeValue::NewValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_SetAttributeValue;
 
 // Function GraphAbility.GraphAbilityFuncNodes.TeleportTargetWithDir
 // 0x0018 (0x0018 - 0x0000)
@@ -1604,12 +1197,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Distance;                                          // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_TeleportTargetWithDir) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_TeleportTargetWithDir");
-static_assert(sizeof(GraphAbilityFuncNodes_TeleportTargetWithDir) == 0x000018, "Wrong size on GraphAbilityFuncNodes_TeleportTargetWithDir");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithDir, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_TeleportTargetWithDir::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithDir, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_TeleportTargetWithDir::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithDir, Direction) == 0x000010, "Member 'GraphAbilityFuncNodes_TeleportTargetWithDir::Direction' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithDir, Distance) == 0x000014, "Member 'GraphAbilityFuncNodes_TeleportTargetWithDir::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_TeleportTargetWithDir;
 
 // Function GraphAbility.GraphAbilityFuncNodes.TeleportTargetWithLocation
 // 0x0028 (0x0028 - 0x0000)
@@ -1620,11 +1208,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_TeleportTargetWithLocation) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_TeleportTargetWithLocation");
-static_assert(sizeof(GraphAbilityFuncNodes_TeleportTargetWithLocation) == 0x000028, "Wrong size on GraphAbilityFuncNodes_TeleportTargetWithLocation");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithLocation, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_TeleportTargetWithLocation::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithLocation, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_TeleportTargetWithLocation::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TeleportTargetWithLocation, Location) == 0x000010, "Member 'GraphAbilityFuncNodes_TeleportTargetWithLocation::Location' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_TeleportTargetWithLocation;
 
 // Function GraphAbility.GraphAbilityFuncNodes.TriggerSignalEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -1636,11 +1220,7 @@ public:
 	ESignalLevel                                  Level;                                             // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_TriggerSignalEvent) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_TriggerSignalEvent");
-static_assert(sizeof(GraphAbilityFuncNodes_TriggerSignalEvent) == 0x000018, "Wrong size on GraphAbilityFuncNodes_TriggerSignalEvent");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEvent, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_TriggerSignalEvent::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEvent, SignalName) == 0x000008, "Member 'GraphAbilityFuncNodes_TriggerSignalEvent::SignalName' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEvent, Level) == 0x000014, "Member 'GraphAbilityFuncNodes_TriggerSignalEvent::Level' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_TriggerSignalEvent;
 
 // Function GraphAbility.GraphAbilityFuncNodes.TriggerSignalEventToTarget
 // 0x0020 (0x0020 - 0x0000)
@@ -1652,11 +1232,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Target;                                            // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_TriggerSignalEventToTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_TriggerSignalEventToTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_TriggerSignalEventToTarget) == 0x000020, "Wrong size on GraphAbilityFuncNodes_TriggerSignalEventToTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEventToTarget, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_TriggerSignalEventToTarget::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEventToTarget, SignalName) == 0x000008, "Member 'GraphAbilityFuncNodes_TriggerSignalEventToTarget::SignalName' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TriggerSignalEventToTarget, Target) == 0x000018, "Member 'GraphAbilityFuncNodes_TriggerSignalEventToTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_TriggerSignalEventToTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes.TryActivateAbilityByID
 // 0x0010 (0x0010 - 0x0000)
@@ -1668,11 +1244,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_TryActivateAbilityByID) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_TryActivateAbilityByID");
-static_assert(sizeof(GraphAbilityFuncNodes_TryActivateAbilityByID) == 0x000010, "Wrong size on GraphAbilityFuncNodes_TryActivateAbilityByID");
-static_assert(offsetof(GraphAbilityFuncNodes_TryActivateAbilityByID, Target) == 0x000000, "Member 'GraphAbilityFuncNodes_TryActivateAbilityByID::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TryActivateAbilityByID, AbilityID) == 0x000008, "Member 'GraphAbilityFuncNodes_TryActivateAbilityByID::AbilityID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_TryActivateAbilityByID, ReturnValue) == 0x00000C, "Member 'GraphAbilityFuncNodes_TryActivateAbilityByID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_TryActivateAbilityByID;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.AE_CancelAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -1681,9 +1253,7 @@ struct GraphAbilityFuncNodes_Ability_AE_CancelAbility final
 public:
 	class UGameplayAbility*                       SelfAbility;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_AE_CancelAbility) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_AE_CancelAbility");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_AE_CancelAbility) == 0x000008, "Wrong size on GraphAbilityFuncNodes_Ability_AE_CancelAbility");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_AE_CancelAbility, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_AE_CancelAbility::SelfAbility' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_AE_CancelAbility;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.ApplyBuffToSelf
 // 0x0010 (0x0010 - 0x0000)
@@ -1694,10 +1264,7 @@ public:
 	int32                                         BuffID;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_ApplyBuffToSelf) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_ApplyBuffToSelf");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_ApplyBuffToSelf) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_ApplyBuffToSelf");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ApplyBuffToSelf, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_ApplyBuffToSelf::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ApplyBuffToSelf, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_ApplyBuffToSelf::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_ApplyBuffToSelf;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.ApplyDamageToTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -1709,11 +1276,7 @@ public:
 	float                                         Damage;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_ApplyDamageToTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_ApplyDamageToTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_ApplyDamageToTarget) == 0x000018, "Wrong size on GraphAbilityFuncNodes_Ability_ApplyDamageToTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ApplyDamageToTarget, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_ApplyDamageToTarget::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ApplyDamageToTarget, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_ApplyDamageToTarget::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ApplyDamageToTarget, Damage) == 0x000010, "Member 'GraphAbilityFuncNodes_Ability_ApplyDamageToTarget::Damage' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_ApplyDamageToTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.CustomBeginSelectTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -1722,9 +1285,7 @@ struct GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget final
 public:
 	class UGameplayAbility*                       SelfAbility;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget) == 0x000008, "Wrong size on GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget::SelfAbility' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_CustomBeginSelectTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.CustomEndSelectTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -1733,9 +1294,7 @@ struct GraphAbilityFuncNodes_Ability_CustomEndSelectTarget final
 public:
 	class UGameplayAbility*                       SelfAbility;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_CustomEndSelectTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_CustomEndSelectTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_CustomEndSelectTarget) == 0x000008, "Wrong size on GraphAbilityFuncNodes_Ability_CustomEndSelectTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_CustomEndSelectTarget, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_CustomEndSelectTarget::SelfAbility' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_CustomEndSelectTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.DefaultProjectileStart
 // 0x0078 (0x0078 - 0x0000)
@@ -1752,15 +1311,7 @@ public:
 	EMarvelPawnBodyType                           LocationType;                                      // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_DefaultProjectileStart");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart) == 0x000078, "Wrong size on GraphAbilityFuncNodes_Ability_DefaultProjectileStart");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, OutLocation) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::OutLocation' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, OutRotation) == 0x000020, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::OutRotation' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, ProjectileID) == 0x000038, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::ProjectileID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, OffsetLocation) == 0x000040, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::OffsetLocation' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, OffsetRotation) == 0x000058, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::OffsetRotation' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_DefaultProjectileStart, LocationType) == 0x000070, "Member 'GraphAbilityFuncNodes_Ability_DefaultProjectileStart::LocationType' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_DefaultProjectileStart;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.ExecuteAbilityCue
 // 0x0018 (0x0018 - 0x0000)
@@ -1771,10 +1322,7 @@ public:
 	struct FGameplayTag                           CueTag;                                            // 0x0008(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_ExecuteAbilityCue) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_ExecuteAbilityCue");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_ExecuteAbilityCue) == 0x000018, "Wrong size on GraphAbilityFuncNodes_Ability_ExecuteAbilityCue");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ExecuteAbilityCue, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_ExecuteAbilityCue::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_ExecuteAbilityCue, CueTag) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_ExecuteAbilityCue::CueTag' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_ExecuteAbilityCue;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.GetSelectTarget
 // 0x0068 (0x0068 - 0x0000)
@@ -1787,12 +1335,7 @@ public:
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ReturnValue;                                       // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_GetSelectTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_GetSelectTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_GetSelectTarget) == 0x000068, "Wrong size on GraphAbilityFuncNodes_Ability_GetSelectTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_GetSelectTarget, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_GetSelectTarget::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_GetSelectTarget, OutPortalSegment) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_GetSelectTarget::OutPortalSegment' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_GetSelectTarget, bGetPortalSegment) == 0x000058, "Member 'GraphAbilityFuncNodes_Ability_GetSelectTarget::bGetPortalSegment' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_GetSelectTarget, ReturnValue) == 0x000060, "Member 'GraphAbilityFuncNodes_Ability_GetSelectTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_GetSelectTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.HasOwnedBuff
 // 0x0010 (0x0010 - 0x0000)
@@ -1804,11 +1347,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_HasOwnedBuff) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_HasOwnedBuff");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_HasOwnedBuff) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_HasOwnedBuff");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedBuff, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedBuff::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedBuff, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedBuff::BuffID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedBuff, ReturnValue) == 0x00000C, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedBuff::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_HasOwnedBuff;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.HasOwnedTag
 // 0x0018 (0x0018 - 0x0000)
@@ -1820,11 +1359,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_HasOwnedTag) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_HasOwnedTag");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_HasOwnedTag) == 0x000018, "Wrong size on GraphAbilityFuncNodes_Ability_HasOwnedTag");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedTag, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedTag::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedTag, InTag) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedTag::InTag' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_HasOwnedTag, ReturnValue) == 0x000014, "Member 'GraphAbilityFuncNodes_Ability_HasOwnedTag::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_HasOwnedTag;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.IsAbilityActivated
 // 0x0010 (0x0010 - 0x0000)
@@ -1835,10 +1370,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_IsAbilityActivated) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_IsAbilityActivated");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_IsAbilityActivated) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_IsAbilityActivated");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_IsAbilityActivated, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_IsAbilityActivated::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_IsAbilityActivated, ReturnValue) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_IsAbilityActivated::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_IsAbilityActivated;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.JumpTimelineSection
 // 0x0020 (0x0020 - 0x0000)
@@ -1850,11 +1382,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimTimeline*                          Timeline;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_JumpTimelineSection) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_JumpTimelineSection");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_JumpTimelineSection) == 0x000020, "Wrong size on GraphAbilityFuncNodes_Ability_JumpTimelineSection");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_JumpTimelineSection, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_JumpTimelineSection::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_JumpTimelineSection, SectionName) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_JumpTimelineSection::SectionName' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_JumpTimelineSection, Timeline) == 0x000018, "Member 'GraphAbilityFuncNodes_Ability_JumpTimelineSection::Timeline' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_JumpTimelineSection;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.RecycleAbilityTargetByID
 // 0x0010 (0x0010 - 0x0000)
@@ -1866,11 +1394,7 @@ public:
 	ETargetActorTypes                             TargetType;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID, TargetID) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID::TargetID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID, TargetType) == 0x00000C, "Member 'GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID::TargetType' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByID;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.RecycleAbilityTargetByObject
 // 0x0010 (0x0010 - 0x0000)
@@ -1880,10 +1404,7 @@ public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject, SelfObj) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject::SelfObj' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject::Target' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_RecycleAbilityTargetByObject;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.RemoveAbilityCue
 // 0x0018 (0x0018 - 0x0000)
@@ -1894,10 +1415,7 @@ public:
 	struct FGameplayTag                           CueTag;                                            // 0x0008(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_RemoveAbilityCue) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_RemoveAbilityCue");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_RemoveAbilityCue) == 0x000018, "Wrong size on GraphAbilityFuncNodes_Ability_RemoveAbilityCue");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveAbilityCue, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_RemoveAbilityCue::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveAbilityCue, CueTag) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_RemoveAbilityCue::CueTag' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_RemoveAbilityCue;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.RemoveBuffFromSelf
 // 0x0010 (0x0010 - 0x0000)
@@ -1908,10 +1426,7 @@ public:
 	int32                                         BuffID;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf) == 0x000010, "Wrong size on GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_RemoveBuffFromSelf;
 
 // Function GraphAbility.GraphAbilityFuncNodes_Ability.RemoveBuffFromTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -1923,11 +1438,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Target;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget) == 0x000018, "Wrong size on GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget, SelfAbility) == 0x000000, "Member 'GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget::SelfAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget, BuffID) == 0x000008, "Member 'GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget::BuffID' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget, Target) == 0x000010, "Member 'GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_Ability_RemoveBuffFromTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_AbilityTarget.ApplyDamageToTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -1939,11 +1450,7 @@ public:
 	float                                         Damage;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget");
-static_assert(sizeof(GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget) == 0x000018, "Wrong size on GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget");
-static_assert(offsetof(GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget, SelfObject) == 0x000000, "Member 'GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget::SelfObject' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget, Target) == 0x000008, "Member 'GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget, Damage) == 0x000010, "Member 'GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget::Damage' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_AbilityTarget_ApplyDamageToTarget;
 
 // Function GraphAbility.GraphAbilityFuncNodes_AbilityTarget.K2_EndAgentTask
 // 0x0008 (0x0008 - 0x0000)
@@ -1952,9 +1459,7 @@ struct GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask final
 public:
 	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask) == 0x000008, "Wrong alignment on GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask");
-static_assert(sizeof(GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask) == 0x000008, "Wrong size on GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask");
-static_assert(offsetof(GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask, SelfActor) == 0x000000, "Member 'GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask::SelfActor' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityFuncNodes_AbilityTarget_K2_EndAgentTask;
 
 // Function GraphAbility.GraphAbilityTaskMgr.CheckCanActivateAbilityForGASpec
 // 0x0010 (0x0010 - 0x0000)
@@ -1965,10 +1470,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec");
-static_assert(sizeof(GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec) == 0x000010, "Wrong size on GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec");
-static_assert(offsetof(GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec, InAbility) == 0x000000, "Member 'GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec::InAbility' has a wrong offset!");
-static_assert(offsetof(GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec, ReturnValue) == 0x000008, "Member 'GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_CheckCanActivateAbilityForGASpec;
 
 // Function GraphAbility.GraphAbilityTaskMgr.OnActorEndPlay
 // 0x0010 (0x0010 - 0x0000)
@@ -1979,10 +1481,7 @@ public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(GraphAbilityTaskMgr_OnActorEndPlay) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_OnActorEndPlay");
-static_assert(sizeof(GraphAbilityTaskMgr_OnActorEndPlay) == 0x000010, "Wrong size on GraphAbilityTaskMgr_OnActorEndPlay");
-static_assert(offsetof(GraphAbilityTaskMgr_OnActorEndPlay, Target) == 0x000000, "Member 'GraphAbilityTaskMgr_OnActorEndPlay::Target' has a wrong offset!");
-static_assert(offsetof(GraphAbilityTaskMgr_OnActorEndPlay, EndPlayReason) == 0x000008, "Member 'GraphAbilityTaskMgr_OnActorEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_OnActorEndPlay;
 
 // Function GraphAbility.GraphAbilityTaskMgr.OnCharacterDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -1993,11 +1492,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityTaskMgr_OnCharacterDeath) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_OnCharacterDeath");
-static_assert(sizeof(GraphAbilityTaskMgr_OnCharacterDeath) == 0x000028, "Wrong size on GraphAbilityTaskMgr_OnCharacterDeath");
-static_assert(offsetof(GraphAbilityTaskMgr_OnCharacterDeath, DamageCauser) == 0x000000, "Member 'GraphAbilityTaskMgr_OnCharacterDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(GraphAbilityTaskMgr_OnCharacterDeath, TargetActor) == 0x000008, "Member 'GraphAbilityTaskMgr_OnCharacterDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(GraphAbilityTaskMgr_OnCharacterDeath, ModifierParameterHandle) == 0x000010, "Member 'GraphAbilityTaskMgr_OnCharacterDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_OnCharacterDeath;
 
 // Function GraphAbility.GraphAbilityTaskMgr.OnProjectileUnregister
 // 0x0008 (0x0008 - 0x0000)
@@ -2006,9 +1501,7 @@ struct GraphAbilityTaskMgr_OnProjectileUnregister final
 public:
 	class AMarvelAbilityTargetActor_Projectile*   InProjectile;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityTaskMgr_OnProjectileUnregister) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_OnProjectileUnregister");
-static_assert(sizeof(GraphAbilityTaskMgr_OnProjectileUnregister) == 0x000008, "Wrong size on GraphAbilityTaskMgr_OnProjectileUnregister");
-static_assert(offsetof(GraphAbilityTaskMgr_OnProjectileUnregister, InProjectile) == 0x000000, "Member 'GraphAbilityTaskMgr_OnProjectileUnregister::InProjectile' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_OnProjectileUnregister;
 
 // Function GraphAbility.GraphAbilityTaskMgr.OnScopeActorUnregister
 // 0x0008 (0x0008 - 0x0000)
@@ -2017,9 +1510,7 @@ struct GraphAbilityTaskMgr_OnScopeActorUnregister final
 public:
 	class AMarvelAbilityTargetActor_Scope*        InScope;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityTaskMgr_OnScopeActorUnregister) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_OnScopeActorUnregister");
-static_assert(sizeof(GraphAbilityTaskMgr_OnScopeActorUnregister) == 0x000008, "Wrong size on GraphAbilityTaskMgr_OnScopeActorUnregister");
-static_assert(offsetof(GraphAbilityTaskMgr_OnScopeActorUnregister, InScope) == 0x000000, "Member 'GraphAbilityTaskMgr_OnScopeActorUnregister::InScope' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_OnScopeActorUnregister;
 
 // Function GraphAbility.GraphAbilityTaskMgr.OnSummonedUnregister
 // 0x0008 (0x0008 - 0x0000)
@@ -2028,9 +1519,7 @@ struct GraphAbilityTaskMgr_OnSummonedUnregister final
 public:
 	class UMarvelSummonedComponent*               InSummonedComp;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GraphAbilityTaskMgr_OnSummonedUnregister) == 0x000008, "Wrong alignment on GraphAbilityTaskMgr_OnSummonedUnregister");
-static_assert(sizeof(GraphAbilityTaskMgr_OnSummonedUnregister) == 0x000008, "Wrong size on GraphAbilityTaskMgr_OnSummonedUnregister");
-static_assert(offsetof(GraphAbilityTaskMgr_OnSummonedUnregister, InSummonedComp) == 0x000000, "Member 'GraphAbilityTaskMgr_OnSummonedUnregister::InSummonedComp' has a wrong offset!");
+DUMPER7_ASSERTS_GraphAbilityTaskMgr_OnSummonedUnregister;
 
 }
 

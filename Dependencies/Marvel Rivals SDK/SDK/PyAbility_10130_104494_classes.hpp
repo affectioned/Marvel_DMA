@@ -17,34 +17,33 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_104494.PyConfig_10130_104494
-// 0x0010 (0x1980 - 0x1970)
+// 0x0010 (0x1CD0 - 0x1CC0)
 class UPyConfig_10130_104494 final : public UConfig_10130_104494
 {
 public:
-	float                                         CircleTime;                                        // 0x1970(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CircleTimeFast;                                    // 0x1974(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FlyProjectileID;                                   // 0x1978(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RotateProjectileID;                                // 0x197C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CircleTime;                                        // 0x1CC0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CircleTimeFast;                                    // 0x1CC4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FlyProjectileID;                                   // 0x1CC8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RotateProjectileID;                                // 0x1CCC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_10130_104494">();
+		STATIC_CLASS_IMPL("PyConfig_10130_104494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_10130_104494")
 	}
 	static class UPyConfig_10130_104494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_10130_104494>();
 	}
 };
-static_assert(alignof(UPyConfig_10130_104494) == 0x000010, "Wrong alignment on UPyConfig_10130_104494");
-static_assert(sizeof(UPyConfig_10130_104494) == 0x001980, "Wrong size on UPyConfig_10130_104494");
-static_assert(offsetof(UPyConfig_10130_104494, CircleTime) == 0x001970, "Member 'UPyConfig_10130_104494::CircleTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10130_104494, CircleTimeFast) == 0x001974, "Member 'UPyConfig_10130_104494::CircleTimeFast' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10130_104494, FlyProjectileID) == 0x001978, "Member 'UPyConfig_10130_104494::FlyProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10130_104494, RotateProjectileID) == 0x00197C, "Member 'UPyConfig_10130_104494::RotateProjectileID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_10130_104494;
 
 // PythonClass PyAbility_10130_104494.PyAbility_10130_104494
-// 0x0000 (0x2A98 - 0x2A98)
+// 0x0000 (0x2AE8 - 0x2AE8)
 class UPyAbility_10130_104494 : public UAbility_10130_104494
 {
 public:
@@ -61,18 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104494">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104494")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104494")
 	}
 	static class UPyAbility_10130_104494* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104494>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104494) == 0x000008, "Wrong alignment on UPyAbility_10130_104494");
-static_assert(sizeof(UPyAbility_10130_104494) == 0x002A98, "Wrong size on UPyAbility_10130_104494");
+DUMPER7_ASSERTS_UPyAbility_10130_104494;
 
 // PythonClass PyAbility_10130_104494.PyProjectile_10130_10449491
-// 0x0000 (0x3BB0 - 0x3BB0)
+// 0x0000 (0x3EC0 - 0x3EC0)
 class APyProjectile_10130_10449491 : public AProjectile_10130_10449491
 {
 public:
@@ -81,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10130_10449491">();
+		STATIC_CLASS_IMPL("PyProjectile_10130_10449491")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10130_10449491")
 	}
 	static class APyProjectile_10130_10449491* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10130_10449491>();
 	}
 };
-static_assert(alignof(APyProjectile_10130_10449491) == 0x000010, "Wrong alignment on APyProjectile_10130_10449491");
-static_assert(sizeof(APyProjectile_10130_10449491) == 0x003BB0, "Wrong size on APyProjectile_10130_10449491");
+DUMPER7_ASSERTS_APyProjectile_10130_10449491;
 
 }
 

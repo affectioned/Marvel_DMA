@@ -23,9 +23,7 @@ struct PyAbility_202_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_202_CanActivate) == 0x000001, "Wrong alignment on PyAbility_202_CanActivate");
-static_assert(sizeof(PyAbility_202_CanActivate) == 0x000001, "Wrong size on PyAbility_202_CanActivate");
-static_assert(offsetof(PyAbility_202_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_202_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_202_CanActivate;
 
 // PythonFunction PyAbility_202.PyAbility_202.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_202_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_202_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_202_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_202_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_202_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_202_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_202_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_202_K2_ActivateAbilityFromEvent;
 
 }
 

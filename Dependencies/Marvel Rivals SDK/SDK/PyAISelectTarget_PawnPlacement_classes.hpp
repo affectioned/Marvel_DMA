@@ -24,15 +24,18 @@ class UPyAISelectTarget_PawnPlacementBase : public UPyAISelectTargetLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_PawnPlacementBase">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_PawnPlacementBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_PawnPlacementBase")
 	}
 	static class UPyAISelectTarget_PawnPlacementBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_PawnPlacementBase>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_PawnPlacementBase) == 0x000008, "Wrong alignment on UPyAISelectTarget_PawnPlacementBase");
-static_assert(sizeof(UPyAISelectTarget_PawnPlacementBase) == 0x000070, "Wrong size on UPyAISelectTarget_PawnPlacementBase");
+DUMPER7_ASSERTS_UPyAISelectTarget_PawnPlacementBase;
 
 // PythonClass PyAISelectTarget_PawnPlacement.PyAISelectTarget_LokiRandomSetPhantom
 // 0x0010 (0x0080 - 0x0070)
@@ -45,17 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_LokiRandomSetPhantom">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_LokiRandomSetPhantom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_LokiRandomSetPhantom")
 	}
 	static class UPyAISelectTarget_LokiRandomSetPhantom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_LokiRandomSetPhantom>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_LokiRandomSetPhantom) == 0x000008, "Wrong alignment on UPyAISelectTarget_LokiRandomSetPhantom");
-static_assert(sizeof(UPyAISelectTarget_LokiRandomSetPhantom) == 0x000080, "Wrong size on UPyAISelectTarget_LokiRandomSetPhantom");
-static_assert(offsetof(UPyAISelectTarget_LokiRandomSetPhantom, AbilityID) == 0x000070, "Member 'UPyAISelectTarget_LokiRandomSetPhantom::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LokiRandomSetPhantom, Range) == 0x000074, "Member 'UPyAISelectTarget_LokiRandomSetPhantom::Range' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_LokiRandomSetPhantom;
 
 // PythonClass PyAISelectTarget_PawnPlacement.PyAISelectTarget_LokiSetPhantomNearShelter
 // 0x0010 (0x0080 - 0x0070)
@@ -68,17 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_LokiSetPhantomNearShelter">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_LokiSetPhantomNearShelter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_LokiSetPhantomNearShelter")
 	}
 	static class UPyAISelectTarget_LokiSetPhantomNearShelter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_LokiSetPhantomNearShelter>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_LokiSetPhantomNearShelter) == 0x000008, "Wrong alignment on UPyAISelectTarget_LokiSetPhantomNearShelter");
-static_assert(sizeof(UPyAISelectTarget_LokiSetPhantomNearShelter) == 0x000080, "Wrong size on UPyAISelectTarget_LokiSetPhantomNearShelter");
-static_assert(offsetof(UPyAISelectTarget_LokiSetPhantomNearShelter, AbilityID) == 0x000070, "Member 'UPyAISelectTarget_LokiSetPhantomNearShelter::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LokiSetPhantomNearShelter, Range) == 0x000074, "Member 'UPyAISelectTarget_LokiSetPhantomNearShelter::Range' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_LokiSetPhantomNearShelter;
 
 }
 

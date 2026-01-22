@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10449012.PyEffective_Scope_10130_10446191
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffective_Scope_10130_10446191 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffective_Scope_10130_10446191">();
+		STATIC_CLASS_IMPL("PyEffective_Scope_10130_10446191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffective_Scope_10130_10446191")
 	}
 	static class UPyEffective_Scope_10130_10446191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffective_Scope_10130_10446191>();
 	}
 };
-static_assert(alignof(UPyEffective_Scope_10130_10446191) == 0x000010, "Wrong alignment on UPyEffective_Scope_10130_10446191");
-static_assert(sizeof(UPyEffective_Scope_10130_10446191) == 0x001C70, "Wrong size on UPyEffective_Scope_10130_10446191");
+DUMPER7_ASSERTS_UPyEffective_Scope_10130_10446191;
 
 }
 

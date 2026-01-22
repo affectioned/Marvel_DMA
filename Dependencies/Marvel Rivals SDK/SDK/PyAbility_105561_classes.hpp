@@ -12,32 +12,33 @@
 
 #include "Marvel_classes.hpp"
 #include "Hero_1055_classes.hpp"
-#include "PyWidget3D_BuffMarker_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105561.PyBuffAbility_10556101
-// 0x0010 (0x2C50 - 0x2C40)
+// 0x0010 (0x3020 - 0x3010)
 class UPyBuffAbility_10556101 : public UBuffAbility_10556101
 {
 public:
-	int32                                         BuffID;                                            // 0x2C40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x3010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10556101">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10556101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10556101")
 	}
 	static class UPyBuffAbility_10556101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10556101>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10556101) == 0x000010, "Wrong alignment on UPyBuffAbility_10556101");
-static_assert(sizeof(UPyBuffAbility_10556101) == 0x002C50, "Wrong size on UPyBuffAbility_10556101");
-static_assert(offsetof(UPyBuffAbility_10556101, BuffID) == 0x002C40, "Member 'UPyBuffAbility_10556101::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10556101;
 
 // PythonClass PyAbility_105561.PyConfig_105561
 // 0x0008 (0x00A0 - 0x0098)
@@ -45,25 +46,25 @@ class UPyConfig_105561 final : public UMarvelAbilityConfig
 {
 public:
 	int32                                         BuffID;                                            // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ToMaxBlindValueTime;                               // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105561">();
+		STATIC_CLASS_IMPL("PyConfig_105561")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105561")
 	}
 	static class UPyConfig_105561* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105561>();
 	}
 };
-static_assert(alignof(UPyConfig_105561) == 0x000008, "Wrong alignment on UPyConfig_105561");
-static_assert(sizeof(UPyConfig_105561) == 0x0000A0, "Wrong size on UPyConfig_105561");
-static_assert(offsetof(UPyConfig_105561, BuffID) == 0x000098, "Member 'UPyConfig_105561::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105561, ToMaxBlindValueTime) == 0x00009C, "Member 'UPyConfig_105561::ToMaxBlindValueTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105561;
 
 // PythonClass PyAbility_105561.PyCueBuff_10556103
-// 0x0000 (0x16B0 - 0x16B0)
+// 0x0000 (0x1760 - 0x1760)
 class APyCueBuff_10556103 final : public ACue_Buff_10556103
 {
 public:
@@ -73,18 +74,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCueBuff_10556103">();
+		STATIC_CLASS_IMPL("PyCueBuff_10556103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCueBuff_10556103")
 	}
 	static class APyCueBuff_10556103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCueBuff_10556103>();
 	}
 };
-static_assert(alignof(APyCueBuff_10556103) == 0x000010, "Wrong alignment on APyCueBuff_10556103");
-static_assert(sizeof(APyCueBuff_10556103) == 0x0016B0, "Wrong size on APyCueBuff_10556103");
+DUMPER7_ASSERTS_APyCueBuff_10556103;
 
 // PythonClass PyAbility_105561.PyAbility_105561
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105561 : public UAbility_105561
 {
 public:
@@ -96,23 +100,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105561">();
+		STATIC_CLASS_IMPL("PyAbility_105561")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105561")
 	}
 	static class UPyAbility_105561* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105561>();
 	}
 };
-static_assert(alignof(UPyAbility_105561) == 0x000008, "Wrong alignment on UPyAbility_105561");
-static_assert(sizeof(UPyAbility_105561) == 0x0029F0, "Wrong size on UPyAbility_105561");
+DUMPER7_ASSERTS_UPyAbility_105561;
 
 // PythonClass PyAbility_105561.PyBuffAbility_10556104
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_10556104 : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         Internal;                                          // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverNum;                                        // 0x1374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Internal;                                          // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverNum;                                        // 0x138C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -121,54 +128,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10556104">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10556104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10556104")
 	}
 	static class UPyBuffAbility_10556104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10556104>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10556104) == 0x000008, "Wrong alignment on UPyBuffAbility_10556104");
-static_assert(sizeof(UPyBuffAbility_10556104) == 0x001378, "Wrong size on UPyBuffAbility_10556104");
-static_assert(offsetof(UPyBuffAbility_10556104, Internal) == 0x001370, "Member 'UPyBuffAbility_10556104::Internal' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10556104, RecoverNum) == 0x001374, "Member 'UPyBuffAbility_10556104::RecoverNum' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10556104;
 
 // PythonClass PyAbility_105561.PyCueBuffLoop_10556103
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCueBuffLoop_10556103 final : public AMarvelCueNotify_Buff
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCueBuffLoop_10556103">();
+		STATIC_CLASS_IMPL("PyCueBuffLoop_10556103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCueBuffLoop_10556103")
 	}
 	static class APyCueBuffLoop_10556103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCueBuffLoop_10556103>();
 	}
 };
-static_assert(alignof(APyCueBuffLoop_10556103) == 0x000010, "Wrong alignment on APyCueBuffLoop_10556103");
-static_assert(sizeof(APyCueBuffLoop_10556103) == 0x001640, "Wrong size on APyCueBuffLoop_10556103");
-
-// PythonClass PyAbility_105561.PyWidget3D_BuffMarker_10556103
-// 0x0000 (0x0A90 - 0x0A90)
-class UPyWidget3D_BuffMarker_10556103 final : public UPyWidget3D_BuffMarker
-{
-public:
-	void OwnerCueActiveChanged();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget3D_BuffMarker_10556103">();
-	}
-	static class UPyWidget3D_BuffMarker_10556103* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget3D_BuffMarker_10556103>();
-	}
-};
-static_assert(alignof(UPyWidget3D_BuffMarker_10556103) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMarker_10556103");
-static_assert(sizeof(UPyWidget3D_BuffMarker_10556103) == 0x000A90, "Wrong size on UPyWidget3D_BuffMarker_10556103");
+DUMPER7_ASSERTS_APyCueBuffLoop_10556103;
 
 }
 

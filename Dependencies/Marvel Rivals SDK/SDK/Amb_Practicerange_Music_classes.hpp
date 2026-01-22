@@ -67,56 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Amb_Practicerange_Music_C">();
+		BP_STATIC_CLASS_IMPL("Amb_Practicerange_Music_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Amb_Practicerange_Music_C")
 	}
 	static class AAmb_Practicerange_Music_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmb_Practicerange_Music_C>();
 	}
 };
-static_assert(alignof(AAmb_Practicerange_Music_C) == 0x000010, "Wrong alignment on AAmb_Practicerange_Music_C");
-static_assert(sizeof(AAmb_Practicerange_Music_C) == 0x000830, "Wrong size on AAmb_Practicerange_Music_C");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere38) == 0x0006E0, "Member 'AAmb_Practicerange_Music_C::Sphere38' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere37) == 0x0006E8, "Member 'AAmb_Practicerange_Music_C::Sphere37' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere36) == 0x0006F0, "Member 'AAmb_Practicerange_Music_C::Sphere36' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere35) == 0x0006F8, "Member 'AAmb_Practicerange_Music_C::Sphere35' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere34) == 0x000700, "Member 'AAmb_Practicerange_Music_C::Sphere34' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere33) == 0x000708, "Member 'AAmb_Practicerange_Music_C::Sphere33' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere32) == 0x000710, "Member 'AAmb_Practicerange_Music_C::Sphere32' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere31) == 0x000718, "Member 'AAmb_Practicerange_Music_C::Sphere31' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere30) == 0x000720, "Member 'AAmb_Practicerange_Music_C::Sphere30' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere29) == 0x000728, "Member 'AAmb_Practicerange_Music_C::Sphere29' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere28) == 0x000730, "Member 'AAmb_Practicerange_Music_C::Sphere28' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere27) == 0x000738, "Member 'AAmb_Practicerange_Music_C::Sphere27' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere26) == 0x000740, "Member 'AAmb_Practicerange_Music_C::Sphere26' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere25) == 0x000748, "Member 'AAmb_Practicerange_Music_C::Sphere25' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere24) == 0x000750, "Member 'AAmb_Practicerange_Music_C::Sphere24' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere23) == 0x000758, "Member 'AAmb_Practicerange_Music_C::Sphere23' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere22) == 0x000760, "Member 'AAmb_Practicerange_Music_C::Sphere22' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere21) == 0x000768, "Member 'AAmb_Practicerange_Music_C::Sphere21' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere20) == 0x000770, "Member 'AAmb_Practicerange_Music_C::Sphere20' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere19) == 0x000778, "Member 'AAmb_Practicerange_Music_C::Sphere19' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere18) == 0x000780, "Member 'AAmb_Practicerange_Music_C::Sphere18' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere17) == 0x000788, "Member 'AAmb_Practicerange_Music_C::Sphere17' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere16) == 0x000790, "Member 'AAmb_Practicerange_Music_C::Sphere16' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere15) == 0x000798, "Member 'AAmb_Practicerange_Music_C::Sphere15' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere14) == 0x0007A0, "Member 'AAmb_Practicerange_Music_C::Sphere14' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere13) == 0x0007A8, "Member 'AAmb_Practicerange_Music_C::Sphere13' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere12) == 0x0007B0, "Member 'AAmb_Practicerange_Music_C::Sphere12' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere11) == 0x0007B8, "Member 'AAmb_Practicerange_Music_C::Sphere11' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere10) == 0x0007C0, "Member 'AAmb_Practicerange_Music_C::Sphere10' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere9) == 0x0007C8, "Member 'AAmb_Practicerange_Music_C::Sphere9' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere8) == 0x0007D0, "Member 'AAmb_Practicerange_Music_C::Sphere8' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere7) == 0x0007D8, "Member 'AAmb_Practicerange_Music_C::Sphere7' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere6) == 0x0007E0, "Member 'AAmb_Practicerange_Music_C::Sphere6' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere5) == 0x0007E8, "Member 'AAmb_Practicerange_Music_C::Sphere5' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere4) == 0x0007F0, "Member 'AAmb_Practicerange_Music_C::Sphere4' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere3) == 0x0007F8, "Member 'AAmb_Practicerange_Music_C::Sphere3' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere2) == 0x000800, "Member 'AAmb_Practicerange_Music_C::Sphere2' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere1) == 0x000808, "Member 'AAmb_Practicerange_Music_C::Sphere1' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, Sphere) == 0x000810, "Member 'AAmb_Practicerange_Music_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, MultiPosition) == 0x000818, "Member 'AAmb_Practicerange_Music_C::MultiPosition' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Music_C, DefaultSceneRoot) == 0x000820, "Member 'AAmb_Practicerange_Music_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAmb_Practicerange_Music_C;
 
 }
 

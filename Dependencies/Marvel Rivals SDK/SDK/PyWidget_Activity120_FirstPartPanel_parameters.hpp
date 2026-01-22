@@ -21,9 +21,7 @@ struct PyWidget_Activity120_FirstPartPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_FirstPartPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity120_FirstPartPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity120_FirstPartPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity120_FirstPartPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity120_FirstPartPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity120_FirstPartPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_FirstPartPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartMissionItem.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_FirstPartMissionItem_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartCardItem.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_FirstPartCardItem_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartProgressItem.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity120_FirstPartProgressItem_MarvelSetVisible;
 
 }
 

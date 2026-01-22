@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 4018_CharacterBP.4018_CharacterBP_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class AFour018_CharacterBP_C final : public APyGalactaBigBotCharacter
 {
 public:
-	class UMarvelMoveLogicBaseComponent*          MoveLogic;                                         // 0x21A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelMoveLogicBaseComponent*          MoveLogic;                                         // 0x22B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"4018_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("4018_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"4018_CharacterBP_C")
 	}
 	static class AFour018_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFour018_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AFour018_CharacterBP_C) == 0x000010, "Wrong alignment on AFour018_CharacterBP_C");
-static_assert(sizeof(AFour018_CharacterBP_C) == 0x0021B0, "Wrong size on AFour018_CharacterBP_C");
-static_assert(offsetof(AFour018_CharacterBP_C, MoveLogic) == 0x0021A8, "Member 'AFour018_CharacterBP_C::MoveLogic' has a wrong offset!");
+DUMPER7_ASSERTS_AFour018_CharacterBP_C;
 
 }
 

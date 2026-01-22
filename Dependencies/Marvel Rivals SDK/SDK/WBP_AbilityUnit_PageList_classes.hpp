@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityUnit_PageList.WBP_AbilityUnit_PageList_C
-// 0x0010 (0x0628 - 0x0618)
+// 0x0010 (0x0630 - 0x0620)
 class UWBP_AbilityUnit_PageList_C final : public UPyWidget_PageListUnit
 {
 public:
-	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Btn_Select;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Normal;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Btn_Select;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityUnit_PageList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityUnit_PageList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityUnit_PageList_C")
 	}
 	static class UWBP_AbilityUnit_PageList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityUnit_PageList_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityUnit_PageList_C) == 0x000008, "Wrong alignment on UWBP_AbilityUnit_PageList_C");
-static_assert(sizeof(UWBP_AbilityUnit_PageList_C) == 0x000628, "Wrong size on UWBP_AbilityUnit_PageList_C");
-static_assert(offsetof(UWBP_AbilityUnit_PageList_C, Img_Btn_Normal) == 0x000618, "Member 'UWBP_AbilityUnit_PageList_C::Img_Btn_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit_PageList_C, Img_Btn_Select) == 0x000620, "Member 'UWBP_AbilityUnit_PageList_C::Img_Btn_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityUnit_PageList_C;
 
 }
 

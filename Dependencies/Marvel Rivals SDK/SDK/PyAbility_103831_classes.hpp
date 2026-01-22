@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "Hero_1038_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_103831.PyAbility_103831
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_103831 : public UAbility_103831
 {
 public:
@@ -36,18 +36,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103831">();
+		STATIC_CLASS_IMPL("PyAbility_103831")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103831")
 	}
 	static class UPyAbility_103831* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103831>();
 	}
 };
-static_assert(alignof(UPyAbility_103831) == 0x000008, "Wrong alignment on UPyAbility_103831");
-static_assert(sizeof(UPyAbility_103831) == 0x002A00, "Wrong size on UPyAbility_103831");
+DUMPER7_ASSERTS_UPyAbility_103831;
 
 // PythonClass PyAbility_103831.PyCue_Buff_10383101
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10383101 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -56,29 +59,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10383101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10383101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10383101")
 	}
 	static class APyCue_Buff_10383101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10383101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10383101) == 0x000010, "Wrong alignment on APyCue_Buff_10383101");
-static_assert(sizeof(APyCue_Buff_10383101) == 0x001640, "Wrong size on APyCue_Buff_10383101");
+DUMPER7_ASSERTS_APyCue_Buff_10383101;
 
 // PythonClass PyAbility_103831.PyCue_Scope_Loop_10383101
-// 0x0030 (0x1110 - 0x10E0)
+// 0x0030 (0x1120 - 0x10F0)
 class APyCue_Scope_Loop_10383101 final : public AMarvelCueNotify_Scope
 {
 public:
-	float                                         DelayTime;                                         // 0x10E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E4[0x4];                                     // 0x10E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         PreFXAsset;                                        // 0x10E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         LoopFXAsset;                                       // 0x10F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         GroundFXAsset;                                     // 0x10F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GroundTraceDepth;                                  // 0x1100(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FXDissolveTime;                                    // 0x1104(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LoopFXScale;                                       // 0x1108(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTime;                                         // 0x10F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_10F4[0x4];                                     // 0x10F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         PreFXAsset;                                        // 0x10F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         LoopFXAsset;                                       // 0x1100(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         GroundFXAsset;                                     // 0x1108(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GroundTraceDepth;                                  // 0x1110(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FXDissolveTime;                                    // 0x1114(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LoopFXScale;                                       // 0x1118(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -89,22 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10383101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10383101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10383101")
 	}
 	static class APyCue_Scope_Loop_10383101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10383101>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10383101) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10383101");
-static_assert(sizeof(APyCue_Scope_Loop_10383101) == 0x001110, "Wrong size on APyCue_Scope_Loop_10383101");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, DelayTime) == 0x0010E0, "Member 'APyCue_Scope_Loop_10383101::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, PreFXAsset) == 0x0010E8, "Member 'APyCue_Scope_Loop_10383101::PreFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, LoopFXAsset) == 0x0010F0, "Member 'APyCue_Scope_Loop_10383101::LoopFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, GroundFXAsset) == 0x0010F8, "Member 'APyCue_Scope_Loop_10383101::GroundFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, GroundTraceDepth) == 0x001100, "Member 'APyCue_Scope_Loop_10383101::GroundTraceDepth' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, FXDissolveTime) == 0x001104, "Member 'APyCue_Scope_Loop_10383101::FXDissolveTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10383101, LoopFXScale) == 0x001108, "Member 'APyCue_Scope_Loop_10383101::LoopFXScale' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10383101;
 
 }
 

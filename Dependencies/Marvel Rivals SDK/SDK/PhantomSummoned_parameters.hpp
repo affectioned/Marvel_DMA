@@ -24,9 +24,7 @@ struct PhantomAbilityInterface_GetSourceAbility final
 public:
 	class UGameplayAbility*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PhantomAbilityInterface_GetSourceAbility) == 0x000008, "Wrong alignment on PhantomAbilityInterface_GetSourceAbility");
-static_assert(sizeof(PhantomAbilityInterface_GetSourceAbility) == 0x000008, "Wrong size on PhantomAbilityInterface_GetSourceAbility");
-static_assert(offsetof(PhantomAbilityInterface_GetSourceAbility, ReturnValue) == 0x000000, "Member 'PhantomAbilityInterface_GetSourceAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PhantomAbilityInterface_GetSourceAbility;
 
 // Function PhantomSummoned.PhantomAbilityInterface.IsPhantomAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PhantomAbilityInterface_IsPhantomAbility final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PhantomAbilityInterface_IsPhantomAbility) == 0x000001, "Wrong alignment on PhantomAbilityInterface_IsPhantomAbility");
-static_assert(sizeof(PhantomAbilityInterface_IsPhantomAbility) == 0x000001, "Wrong size on PhantomAbilityInterface_IsPhantomAbility");
-static_assert(offsetof(PhantomAbilityInterface_IsPhantomAbility, ReturnValue) == 0x000000, "Member 'PhantomAbilityInterface_IsPhantomAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PhantomAbilityInterface_IsPhantomAbility;
 
 // Function PhantomSummoned.PhantomInputSyncAbility.ServerNotifyInputToPhantom
 // 0x000C (0x000C - 0x0000)
@@ -49,11 +45,7 @@ public:
 	int32                                         InInputId;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InAbilityID;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PhantomInputSyncAbility_ServerNotifyInputToPhantom) == 0x000004, "Wrong alignment on PhantomInputSyncAbility_ServerNotifyInputToPhantom");
-static_assert(sizeof(PhantomInputSyncAbility_ServerNotifyInputToPhantom) == 0x00000C, "Wrong size on PhantomInputSyncAbility_ServerNotifyInputToPhantom");
-static_assert(offsetof(PhantomInputSyncAbility_ServerNotifyInputToPhantom, InActionBindingType) == 0x000000, "Member 'PhantomInputSyncAbility_ServerNotifyInputToPhantom::InActionBindingType' has a wrong offset!");
-static_assert(offsetof(PhantomInputSyncAbility_ServerNotifyInputToPhantom, InInputId) == 0x000004, "Member 'PhantomInputSyncAbility_ServerNotifyInputToPhantom::InInputId' has a wrong offset!");
-static_assert(offsetof(PhantomInputSyncAbility_ServerNotifyInputToPhantom, InAbilityID) == 0x000008, "Member 'PhantomInputSyncAbility_ServerNotifyInputToPhantom::InAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PhantomInputSyncAbility_ServerNotifyInputToPhantom;
 
 // Function PhantomSummoned.PhantomSummonedController.OnPhantomSourceActivateAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -62,9 +54,7 @@ struct PhantomSummonedController_OnPhantomSourceActivateAbility final
 public:
 	class UGameplayAbility*                       SourceAbility;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PhantomSummonedController_OnPhantomSourceActivateAbility) == 0x000008, "Wrong alignment on PhantomSummonedController_OnPhantomSourceActivateAbility");
-static_assert(sizeof(PhantomSummonedController_OnPhantomSourceActivateAbility) == 0x000008, "Wrong size on PhantomSummonedController_OnPhantomSourceActivateAbility");
-static_assert(offsetof(PhantomSummonedController_OnPhantomSourceActivateAbility, SourceAbility) == 0x000000, "Member 'PhantomSummonedController_OnPhantomSourceActivateAbility::SourceAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PhantomSummonedController_OnPhantomSourceActivateAbility;
 
 // Function PhantomSummoned.PhantomSummonedController.OnPhantomSourceEndAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -73,9 +63,7 @@ struct PhantomSummonedController_OnPhantomSourceEndAbility final
 public:
 	struct FAbilityEndedData                      AbilityEndData;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PhantomSummonedController_OnPhantomSourceEndAbility) == 0x000008, "Wrong alignment on PhantomSummonedController_OnPhantomSourceEndAbility");
-static_assert(sizeof(PhantomSummonedController_OnPhantomSourceEndAbility) == 0x000010, "Wrong size on PhantomSummonedController_OnPhantomSourceEndAbility");
-static_assert(offsetof(PhantomSummonedController_OnPhantomSourceEndAbility, AbilityEndData) == 0x000000, "Member 'PhantomSummonedController_OnPhantomSourceEndAbility::AbilityEndData' has a wrong offset!");
+DUMPER7_ASSERTS_PhantomSummonedController_OnPhantomSourceEndAbility;
 
 }
 

@@ -23,9 +23,7 @@ struct PyBuffAbility_10130_10297180_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10297180_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_10130_10297180_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_10130_10297180_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_10130_10297180_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_10130_10297180_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_10130_10297180_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10297180_K2_OnEndAbility;
 
 // PythonFunction PyAbility_10130_102971.PyAbility_10130_102971.OnTraceResults
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_10130_102971_OnTraceResults final
 public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_10130_102971_OnTraceResults) == 0x000008, "Wrong alignment on PyAbility_10130_102971_OnTraceResults");
-static_assert(sizeof(PyAbility_10130_102971_OnTraceResults) == 0x000010, "Wrong size on PyAbility_10130_102971_OnTraceResults");
-static_assert(offsetof(PyAbility_10130_102971_OnTraceResults, HitResults) == 0x000000, "Member 'PyAbility_10130_102971_OnTraceResults::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_102971_OnTraceResults;
 
 // PythonFunction PyAbility_10130_102971.PyAbility_10130_102971.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_10130_102971_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_102971_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_10130_102971_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_10130_102971_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_10130_102971_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_10130_102971_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_10130_102971_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_102971_K2_OnEndAbility;
 
 }
 

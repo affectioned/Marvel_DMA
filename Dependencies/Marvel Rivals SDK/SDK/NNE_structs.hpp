@@ -86,10 +86,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Value;                                             // 0x0008(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FNNEAttributeValue) == 0x000008, "Wrong alignment on FNNEAttributeValue");
-static_assert(sizeof(FNNEAttributeValue) == 0x000018, "Wrong size on FNNEAttributeValue");
-static_assert(offsetof(FNNEAttributeValue, Type) == 0x000000, "Member 'FNNEAttributeValue::Type' has a wrong offset!");
-static_assert(offsetof(FNNEAttributeValue, Value) == 0x000008, "Member 'FNNEAttributeValue::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FNNEAttributeValue;
 
 // ScriptStruct NNE.NNEFormatAttributeDesc
 // 0x0028 (0x0028 - 0x0000)
@@ -99,10 +96,7 @@ public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FNNEAttributeValue                     Value;                                             // 0x0010(0x0018)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNNEFormatAttributeDesc) == 0x000008, "Wrong alignment on FNNEFormatAttributeDesc");
-static_assert(sizeof(FNNEFormatAttributeDesc) == 0x000028, "Wrong size on FNNEFormatAttributeDesc");
-static_assert(offsetof(FNNEFormatAttributeDesc, Name) == 0x000000, "Member 'FNNEFormatAttributeDesc::Name' has a wrong offset!");
-static_assert(offsetof(FNNEFormatAttributeDesc, Value) == 0x000010, "Member 'FNNEFormatAttributeDesc::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FNNEFormatAttributeDesc;
 
 // ScriptStruct NNE.NNEFormatOperatorDesc
 // 0x0058 (0x0058 - 0x0000)
@@ -116,13 +110,7 @@ public:
 	TArray<uint32>                                OutTensors;                                        // 0x0038(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FNNEFormatAttributeDesc>        Attributes;                                        // 0x0048(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNNEFormatOperatorDesc) == 0x000008, "Wrong alignment on FNNEFormatOperatorDesc");
-static_assert(sizeof(FNNEFormatOperatorDesc) == 0x000058, "Wrong size on FNNEFormatOperatorDesc");
-static_assert(offsetof(FNNEFormatOperatorDesc, TypeName) == 0x000000, "Member 'FNNEFormatOperatorDesc::TypeName' has a wrong offset!");
-static_assert(offsetof(FNNEFormatOperatorDesc, DomainName) == 0x000010, "Member 'FNNEFormatOperatorDesc::DomainName' has a wrong offset!");
-static_assert(offsetof(FNNEFormatOperatorDesc, InTensors) == 0x000028, "Member 'FNNEFormatOperatorDesc::InTensors' has a wrong offset!");
-static_assert(offsetof(FNNEFormatOperatorDesc, OutTensors) == 0x000038, "Member 'FNNEFormatOperatorDesc::OutTensors' has a wrong offset!");
-static_assert(offsetof(FNNEFormatOperatorDesc, Attributes) == 0x000048, "Member 'FNNEFormatOperatorDesc::Attributes' has a wrong offset!");
+DUMPER7_ASSERTS_FNNEFormatOperatorDesc;
 
 // ScriptStruct NNE.NNEFormatTensorDesc
 // 0x0038 (0x0038 - 0x0000)
@@ -137,14 +125,7 @@ public:
 	uint64                                        DataSize;                                          // 0x0028(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                        DataOffset;                                        // 0x0030(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNNEFormatTensorDesc) == 0x000008, "Wrong alignment on FNNEFormatTensorDesc");
-static_assert(sizeof(FNNEFormatTensorDesc) == 0x000038, "Wrong size on FNNEFormatTensorDesc");
-static_assert(offsetof(FNNEFormatTensorDesc, Name) == 0x000000, "Member 'FNNEFormatTensorDesc::Name' has a wrong offset!");
-static_assert(offsetof(FNNEFormatTensorDesc, Shape) == 0x000010, "Member 'FNNEFormatTensorDesc::Shape' has a wrong offset!");
-static_assert(offsetof(FNNEFormatTensorDesc, Type) == 0x000020, "Member 'FNNEFormatTensorDesc::Type' has a wrong offset!");
-static_assert(offsetof(FNNEFormatTensorDesc, DataType) == 0x000021, "Member 'FNNEFormatTensorDesc::DataType' has a wrong offset!");
-static_assert(offsetof(FNNEFormatTensorDesc, DataSize) == 0x000028, "Member 'FNNEFormatTensorDesc::DataSize' has a wrong offset!");
-static_assert(offsetof(FNNEFormatTensorDesc, DataOffset) == 0x000030, "Member 'FNNEFormatTensorDesc::DataOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FNNEFormatTensorDesc;
 
 // ScriptStruct NNE.NNERuntimeFormat
 // 0x0038 (0x0038 - 0x0000)
@@ -155,10 +136,7 @@ public:
 	TArray<struct FNNEFormatOperatorDesc>         Operators;                                         // 0x0010(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	uint8                                         Pad_20[0x18];                                      // 0x0020(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNNERuntimeFormat) == 0x000008, "Wrong alignment on FNNERuntimeFormat");
-static_assert(sizeof(FNNERuntimeFormat) == 0x000038, "Wrong size on FNNERuntimeFormat");
-static_assert(offsetof(FNNERuntimeFormat, Tensors) == 0x000000, "Member 'FNNERuntimeFormat::Tensors' has a wrong offset!");
-static_assert(offsetof(FNNERuntimeFormat, Operators) == 0x000010, "Member 'FNNERuntimeFormat::Operators' has a wrong offset!");
+DUMPER7_ASSERTS_FNNERuntimeFormat;
 
 }
 

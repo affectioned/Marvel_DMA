@@ -33,23 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_LimitTimeTrainComputer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_LimitTimeTrainComputer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_LimitTimeTrainComputer_C")
 	}
 	static class UWBP_LimitTimeTrainComputer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_LimitTimeTrainComputer_C>();
 	}
 };
-static_assert(alignof(UWBP_LimitTimeTrainComputer_C) == 0x000010, "Wrong alignment on UWBP_LimitTimeTrainComputer_C");
-static_assert(sizeof(UWBP_LimitTimeTrainComputer_C) == 0x0008D0, "Wrong size on UWBP_LimitTimeTrainComputer_C");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Anim_Active) == 0x000888, "Member 'UWBP_LimitTimeTrainComputer_C::Anim_Active' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Img_Icon_Activate_Add) == 0x000890, "Member 'UWBP_LimitTimeTrainComputer_C::Img_Icon_Activate_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Img_Icon_Activate_Bg) == 0x000898, "Member 'UWBP_LimitTimeTrainComputer_C::Img_Icon_Activate_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Img_Icon_Normal_Add) == 0x0008A0, "Member 'UWBP_LimitTimeTrainComputer_C::Img_Icon_Normal_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Img_Icon_Normal_Bg) == 0x0008A8, "Member 'UWBP_LimitTimeTrainComputer_C::Img_Icon_Normal_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Overlay_Icon_Activate) == 0x0008B0, "Member 'UWBP_LimitTimeTrainComputer_C::Overlay_Icon_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Overlay_Icon_Normal) == 0x0008B8, "Member 'UWBP_LimitTimeTrainComputer_C::Overlay_Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_LimitTimeTrainComputer_C, Text_TerminalName) == 0x0008C0, "Member 'UWBP_LimitTimeTrainComputer_C::Text_TerminalName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_LimitTimeTrainComputer_C;
 
 }
 

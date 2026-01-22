@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Plane.BP_Plane_C
-// 0x0000 (0x06F0 - 0x06F0)
+// 0x0000 (0x0700 - 0x0700)
 class ABP_Plane_C final : public AEnvironmentStaticActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Plane_C">();
+		BP_STATIC_CLASS_IMPL("BP_Plane_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Plane_C")
 	}
 	static class ABP_Plane_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Plane_C>();
 	}
 };
-static_assert(alignof(ABP_Plane_C) == 0x000010, "Wrong alignment on ABP_Plane_C");
-static_assert(sizeof(ABP_Plane_C) == 0x0006F0, "Wrong size on ABP_Plane_C");
+DUMPER7_ASSERTS_ABP_Plane_C;
 
 }
 

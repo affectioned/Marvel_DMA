@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyStarlordCharacter.PyStarlordCharacter
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2310 - 0x2310)
 class APyStarlordCharacter : public AStarlordCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyStarlordCharacter">();
+		STATIC_CLASS_IMPL("PyStarlordCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyStarlordCharacter")
 	}
 	static class APyStarlordCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyStarlordCharacter>();
 	}
 };
-static_assert(alignof(APyStarlordCharacter) == 0x000010, "Wrong alignment on APyStarlordCharacter");
-static_assert(sizeof(APyStarlordCharacter) == 0x002200, "Wrong size on APyStarlordCharacter");
+DUMPER7_ASSERTS_APyStarlordCharacter;
 
 }
 

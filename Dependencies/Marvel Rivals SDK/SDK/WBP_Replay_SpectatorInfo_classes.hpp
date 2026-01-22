@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Replay_SpectatorInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Replay_SpectatorInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Replay_SpectatorInfo_C")
 	}
 	static class UWBP_Replay_SpectatorInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Replay_SpectatorInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_Replay_SpectatorInfo_C) == 0x000008, "Wrong alignment on UWBP_Replay_SpectatorInfo_C");
-static_assert(sizeof(UWBP_Replay_SpectatorInfo_C) == 0x0003C8, "Wrong size on UWBP_Replay_SpectatorInfo_C");
-static_assert(offsetof(UWBP_Replay_SpectatorInfo_C, Img_Bg_Spectator) == 0x0003B8, "Member 'UWBP_Replay_SpectatorInfo_C::Img_Bg_Spectator' has a wrong offset!");
-static_assert(offsetof(UWBP_Replay_SpectatorInfo_C, Text_SpectatorCount) == 0x0003C0, "Member 'UWBP_Replay_SpectatorInfo_C::Text_SpectatorCount' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Replay_SpectatorInfo_C;
 
 }
 

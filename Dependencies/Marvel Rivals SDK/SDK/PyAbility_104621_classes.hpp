@@ -20,36 +20,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104621.PyConfig_104621
-// 0x00E0 (0x01F0 - 0x0110)
+// 0x0130 (0x0240 - 0x0110)
 class UPyConfig_104621 final : public UConfig_104621
 {
 public:
 	struct FGameplayTag                           EnergyTag;                                         // 0x0110(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HitEnergyRestore;                                  // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0120(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0120(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104621">();
+		STATIC_CLASS_IMPL("PyConfig_104621")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104621")
 	}
 	static class UPyConfig_104621* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104621>();
 	}
 };
-static_assert(alignof(UPyConfig_104621) == 0x000010, "Wrong alignment on UPyConfig_104621");
-static_assert(sizeof(UPyConfig_104621) == 0x0001F0, "Wrong size on UPyConfig_104621");
-static_assert(offsetof(UPyConfig_104621, EnergyTag) == 0x000110, "Member 'UPyConfig_104621::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104621, HitEnergyRestore) == 0x00011C, "Member 'UPyConfig_104621::HitEnergyRestore' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104621, TagRequirements) == 0x000120, "Member 'UPyConfig_104621::TagRequirements' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104621;
 
 // PythonClass PyAbility_104621.PyAbility_104621
-// 0x0010 (0x2A38 - 0x2A28)
+// 0x0010 (0x2A88 - 0x2A78)
 class UPyAbility_104621 : public UAbility_104621
 {
 public:
-	TMulticastInlineDelegate<void()>              OnAddSkillEnergy;                                  // 0x2A28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAddSkillEnergy;                                  // 0x2A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -70,19 +70,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104621">();
+		STATIC_CLASS_IMPL("PyAbility_104621")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104621")
 	}
 	static class UPyAbility_104621* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104621>();
 	}
 };
-static_assert(alignof(UPyAbility_104621) == 0x000008, "Wrong alignment on UPyAbility_104621");
-static_assert(sizeof(UPyAbility_104621) == 0x002A38, "Wrong size on UPyAbility_104621");
-static_assert(offsetof(UPyAbility_104621, OnAddSkillEnergy) == 0x002A28, "Member 'UPyAbility_104621::OnAddSkillEnergy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104621;
 
 // PythonClass PyAbility_104621.PyUIController_104641
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104641 final : public UUIC_Ability
 {
 public:
@@ -93,15 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104641">();
+		STATIC_CLASS_IMPL("PyUIController_104641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104641")
 	}
 	static class UPyUIController_104641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104641>();
 	}
 };
-static_assert(alignof(UPyUIController_104641) == 0x000008, "Wrong alignment on UPyUIController_104641");
-static_assert(sizeof(UPyUIController_104641) == 0x000F10, "Wrong size on UPyUIController_104641");
+DUMPER7_ASSERTS_UPyUIController_104641;
 
 }
 

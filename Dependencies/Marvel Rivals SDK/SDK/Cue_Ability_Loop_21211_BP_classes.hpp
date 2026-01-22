@@ -19,20 +19,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Ability_Loop_21211_BP.Cue_Ability_Loop_21211_BP_C
-// 0x0190 (0x2220 - 0x2090)
+// 0x0190 (0x2570 - 0x23E0)
 class ACue_Ability_Loop_21211_BP_C final : public AMarvelCueNotify_21211
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2090(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      NS_Firework_05;                                    // 0x2098(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Firework_04;                                    // 0x20A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Firework_03;                                    // 0x20A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Firework_02;                                    // 0x20B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_Firework_Box;                                   // 0x20B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        FireVfxAudioDelayTime;                             // 0x20C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelAbilityAudioPack                SmallFireVfxLoopAudioPack;                         // 0x20C8(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FMarvelAbilityAudioPack                LargeFireVfxLoopAudioPack;                         // 0x2168(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FName                                   RandomSeedVariableName;                            // 0x2208(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x23E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      NS_Firework_05;                                    // 0x23E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Firework_04;                                    // 0x23F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Firework_03;                                    // 0x23F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Firework_02;                                    // 0x2400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_Firework_Box;                                   // 0x2408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        FireVfxAudioDelayTime;                             // 0x2410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelAbilityAudioPack                SmallFireVfxLoopAudioPack;                         // 0x2418(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FMarvelAbilityAudioPack                LargeFireVfxLoopAudioPack;                         // 0x24B8(0x00A0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FName                                   RandomSeedVariableName;                            // 0x2558(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Cue_Ability_Loop_21211_BP(int32 EntryPoint);
@@ -42,25 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Ability_Loop_21211_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Ability_Loop_21211_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_Loop_21211_BP_C")
 	}
 	static class ACue_Ability_Loop_21211_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Ability_Loop_21211_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Ability_Loop_21211_BP_C) == 0x000010, "Wrong alignment on ACue_Ability_Loop_21211_BP_C");
-static_assert(sizeof(ACue_Ability_Loop_21211_BP_C) == 0x002220, "Wrong size on ACue_Ability_Loop_21211_BP_C");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, UberGraphFrame) == 0x002090, "Member 'ACue_Ability_Loop_21211_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, NS_Firework_05) == 0x002098, "Member 'ACue_Ability_Loop_21211_BP_C::NS_Firework_05' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, NS_Firework_04) == 0x0020A0, "Member 'ACue_Ability_Loop_21211_BP_C::NS_Firework_04' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, NS_Firework_03) == 0x0020A8, "Member 'ACue_Ability_Loop_21211_BP_C::NS_Firework_03' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, NS_Firework_02) == 0x0020B0, "Member 'ACue_Ability_Loop_21211_BP_C::NS_Firework_02' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, NS_Firework_Box) == 0x0020B8, "Member 'ACue_Ability_Loop_21211_BP_C::NS_Firework_Box' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, FireVfxAudioDelayTime) == 0x0020C0, "Member 'ACue_Ability_Loop_21211_BP_C::FireVfxAudioDelayTime' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, SmallFireVfxLoopAudioPack) == 0x0020C8, "Member 'ACue_Ability_Loop_21211_BP_C::SmallFireVfxLoopAudioPack' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, LargeFireVfxLoopAudioPack) == 0x002168, "Member 'ACue_Ability_Loop_21211_BP_C::LargeFireVfxLoopAudioPack' has a wrong offset!");
-static_assert(offsetof(ACue_Ability_Loop_21211_BP_C, RandomSeedVariableName) == 0x002208, "Member 'ACue_Ability_Loop_21211_BP_C::RandomSeedVariableName' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Ability_Loop_21211_BP_C;
 
 }
 

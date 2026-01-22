@@ -25,10 +25,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102696_OnBondTagUpdated) == 0x000004, "Wrong alignment on PyAbility_102696_OnBondTagUpdated");
-static_assert(sizeof(PyAbility_102696_OnBondTagUpdated) == 0x000010, "Wrong size on PyAbility_102696_OnBondTagUpdated");
-static_assert(offsetof(PyAbility_102696_OnBondTagUpdated, Tag) == 0x000000, "Member 'PyAbility_102696_OnBondTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_102696_OnBondTagUpdated, Exist) == 0x00000C, "Member 'PyAbility_102696_OnBondTagUpdated::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102696_OnBondTagUpdated;
 
 // PythonFunction PyAbility_102696.PyAbility_102696.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -39,11 +36,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParmeterHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102696_OnTakeDamage) == 0x000008, "Wrong alignment on PyAbility_102696_OnTakeDamage");
-static_assert(sizeof(PyAbility_102696_OnTakeDamage) == 0x000028, "Wrong size on PyAbility_102696_OnTakeDamage");
-static_assert(offsetof(PyAbility_102696_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'PyAbility_102696_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_102696_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'PyAbility_102696_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_102696_OnTakeDamage, ParmeterHandle) == 0x000010, "Member 'PyAbility_102696_OnTakeDamage::ParmeterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102696_OnTakeDamage;
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyGalactaBigBotCharacter.PyGalactaBigBotCharacter
-// 0x0010 (0x21B0 - 0x21A0)
+// 0x0010 (0x22C0 - 0x22B0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyGalactaBigBotCharacter : public AMarvelBaseCharacter
 {
 public:
-	class UAnimationAsset*                        NotMatchAnimation;                                 // 0x21A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        NotMatchAnimation;                                 // 0x22B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -33,7 +33,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGalactaBigBotCharacter">();
+		STATIC_CLASS_IMPL("PyGalactaBigBotCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGalactaBigBotCharacter")
 	}
 	static class APyGalactaBigBotCharacter* GetDefaultObj()
 	{
@@ -41,9 +45,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyGalactaBigBotCharacter) == 0x000010, "Wrong alignment on APyGalactaBigBotCharacter");
-static_assert(sizeof(APyGalactaBigBotCharacter) == 0x0021B0, "Wrong size on APyGalactaBigBotCharacter");
-static_assert(offsetof(APyGalactaBigBotCharacter, NotMatchAnimation) == 0x0021A0, "Member 'APyGalactaBigBotCharacter::NotMatchAnimation' has a wrong offset!");
+DUMPER7_ASSERTS_APyGalactaBigBotCharacter;
 
 }
 

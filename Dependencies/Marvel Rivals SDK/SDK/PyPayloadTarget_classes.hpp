@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadTarget">();
+		STATIC_CLASS_IMPL("PyPayloadTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadTarget")
 	}
 	static class APyPayloadTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPayloadTarget>();
 	}
 };
-static_assert(alignof(APyPayloadTarget) == 0x000010, "Wrong alignment on APyPayloadTarget");
-static_assert(sizeof(APyPayloadTarget) == 0x0006F0, "Wrong size on APyPayloadTarget");
-static_assert(offsetof(APyPayloadTarget, PayloadHalfLength) == 0x0006E0, "Member 'APyPayloadTarget::PayloadHalfLength' has a wrong offset!");
-static_assert(offsetof(APyPayloadTarget, TargetHeight) == 0x0006E4, "Member 'APyPayloadTarget::TargetHeight' has a wrong offset!");
-static_assert(offsetof(APyPayloadTarget, BasicYaw) == 0x0006E8, "Member 'APyPayloadTarget::BasicYaw' has a wrong offset!");
-static_assert(offsetof(APyPayloadTarget, IsVisible) == 0x0006EC, "Member 'APyPayloadTarget::IsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadTarget;
 
 }
 

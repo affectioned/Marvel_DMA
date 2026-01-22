@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HashText_KeyWidgetDecorator_BP_C">();
+		BP_STATIC_CLASS_IMPL("HashText_KeyWidgetDecorator_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashText_KeyWidgetDecorator_BP_C")
 	}
 	static class UHashText_KeyWidgetDecorator_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashText_KeyWidgetDecorator_BP_C>();
 	}
 };
-static_assert(alignof(UHashText_KeyWidgetDecorator_BP_C) == 0x000008, "Wrong alignment on UHashText_KeyWidgetDecorator_BP_C");
-static_assert(sizeof(UHashText_KeyWidgetDecorator_BP_C) == 0x000090, "Wrong size on UHashText_KeyWidgetDecorator_BP_C");
-static_assert(offsetof(UHashText_KeyWidgetDecorator_BP_C, UberGraphFrame) == 0x000088, "Member 'UHashText_KeyWidgetDecorator_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UHashText_KeyWidgetDecorator_BP_C;
 
 }
 

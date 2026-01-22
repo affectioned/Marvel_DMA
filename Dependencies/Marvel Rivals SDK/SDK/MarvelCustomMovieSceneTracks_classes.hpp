@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneBlastMeshSection">();
+		STATIC_CLASS_IMPL("MovieSceneBlastMeshSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneBlastMeshSection")
 	}
 	static class UMovieSceneBlastMeshSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneBlastMeshSection>();
 	}
 };
-static_assert(alignof(UMovieSceneBlastMeshSection) == 0x000008, "Wrong alignment on UMovieSceneBlastMeshSection");
-static_assert(sizeof(UMovieSceneBlastMeshSection) == 0x000748, "Wrong size on UMovieSceneBlastMeshSection");
-static_assert(offsetof(UMovieSceneBlastMeshSection, BlastTriggerKeys) == 0x0000F8, "Member 'UMovieSceneBlastMeshSection::BlastTriggerKeys' has a wrong offset!");
-static_assert(offsetof(UMovieSceneBlastMeshSection, ImpactRadiusKeys) == 0x0001F8, "Member 'UMovieSceneBlastMeshSection::ImpactRadiusKeys' has a wrong offset!");
-static_assert(offsetof(UMovieSceneBlastMeshSection, ImpactImpulseKeys) == 0x000308, "Member 'UMovieSceneBlastMeshSection::ImpactImpulseKeys' has a wrong offset!");
-static_assert(offsetof(UMovieSceneBlastMeshSection, ImpactPointKeys) == 0x000418, "Member 'UMovieSceneBlastMeshSection::ImpactPointKeys' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneBlastMeshSection;
 
 // Class MarvelCustomMovieSceneTracks.MovieSceneBlastMeshTrack
 // 0x0018 (0x00B8 - 0x00A0)
@@ -55,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneBlastMeshTrack">();
+		STATIC_CLASS_IMPL("MovieSceneBlastMeshTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneBlastMeshTrack")
 	}
 	static class UMovieSceneBlastMeshTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneBlastMeshTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneBlastMeshTrack) == 0x000008, "Wrong alignment on UMovieSceneBlastMeshTrack");
-static_assert(sizeof(UMovieSceneBlastMeshTrack) == 0x0000B8, "Wrong size on UMovieSceneBlastMeshTrack");
-static_assert(offsetof(UMovieSceneBlastMeshTrack, Sections) == 0x0000A8, "Member 'UMovieSceneBlastMeshTrack::Sections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneBlastMeshTrack;
 
 // Class MarvelCustomMovieSceneTracks.MovieScenePresetDestructionSection
 // 0x0200 (0x02F8 - 0x00F8)
@@ -77,17 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScenePresetDestructionSection">();
+		STATIC_CLASS_IMPL("MovieScenePresetDestructionSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScenePresetDestructionSection")
 	}
 	static class UMovieScenePresetDestructionSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScenePresetDestructionSection>();
 	}
 };
-static_assert(alignof(UMovieScenePresetDestructionSection) == 0x000008, "Wrong alignment on UMovieScenePresetDestructionSection");
-static_assert(sizeof(UMovieScenePresetDestructionSection) == 0x0002F8, "Wrong size on UMovieScenePresetDestructionSection");
-static_assert(offsetof(UMovieScenePresetDestructionSection, PreDesLevelKeys) == 0x0000F8, "Member 'UMovieScenePresetDestructionSection::PreDesLevelKeys' has a wrong offset!");
-static_assert(offsetof(UMovieScenePresetDestructionSection, CollapseEffectEnableKeys) == 0x0001F8, "Member 'UMovieScenePresetDestructionSection::CollapseEffectEnableKeys' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieScenePresetDestructionSection;
 
 // Class MarvelCustomMovieSceneTracks.MovieScenePresetDestructionTrack
 // 0x0018 (0x00B8 - 0x00A0)
@@ -100,16 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScenePresetDestructionTrack">();
+		STATIC_CLASS_IMPL("MovieScenePresetDestructionTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScenePresetDestructionTrack")
 	}
 	static class UMovieScenePresetDestructionTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScenePresetDestructionTrack>();
 	}
 };
-static_assert(alignof(UMovieScenePresetDestructionTrack) == 0x000008, "Wrong alignment on UMovieScenePresetDestructionTrack");
-static_assert(sizeof(UMovieScenePresetDestructionTrack) == 0x0000B8, "Wrong size on UMovieScenePresetDestructionTrack");
-static_assert(offsetof(UMovieScenePresetDestructionTrack, Sections) == 0x0000A8, "Member 'UMovieScenePresetDestructionTrack::Sections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieScenePresetDestructionTrack;
 
 }
 

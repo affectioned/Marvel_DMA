@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_AllyWithLessEnemy">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_AllyWithLessEnemy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_AllyWithLessEnemy")
 	}
 	static class UPyAISelectTarget_AllyWithLessEnemy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_AllyWithLessEnemy>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_AllyWithLessEnemy) == 0x000008, "Wrong alignment on UPyAISelectTarget_AllyWithLessEnemy");
-static_assert(sizeof(UPyAISelectTarget_AllyWithLessEnemy) == 0x000078, "Wrong size on UPyAISelectTarget_AllyWithLessEnemy");
-static_assert(offsetof(UPyAISelectTarget_AllyWithLessEnemy, CheckEnemyNumRange) == 0x000070, "Member 'UPyAISelectTarget_AllyWithLessEnemy::CheckEnemyNumRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_AllyWithLessEnemy;
 
 }
 

@@ -11,19 +11,19 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "Activity_10130_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_103951.PyBuffAbility_10130_10391020
-// 0x0008 (0x1548 - 0x1540)
+// 0x0008 (0x15C8 - 0x15C0)
 class UPyBuffAbility_10130_10391020 : public UMarvelNotTreatFallAbility
 {
 public:
-	float                                         MaxDamageToPer;                                    // 0x1540(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDamageToPer;                                    // 0x15C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,25 +31,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391020">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391020")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391020")
 	}
 	static class UPyBuffAbility_10130_10391020* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391020>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391020) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391020");
-static_assert(sizeof(UPyBuffAbility_10130_10391020) == 0x001548, "Wrong size on UPyBuffAbility_10130_10391020");
-static_assert(offsetof(UPyBuffAbility_10130_10391020, MaxDamageToPer) == 0x001540, "Member 'UPyBuffAbility_10130_10391020::MaxDamageToPer' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391020;
 
 // PythonClass PyBuffAbility_10130_103951.PyBuffAbility_10130_10391019
-// 0x0018 (0x1A48 - 0x1A30)
+// 0x0018 (0x1A60 - 0x1A48)
 class UPyBuffAbility_10130_10391019 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         DamageToEnergyFactor;                              // 0x1A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDamageToEnergyFactor;                           // 0x1A34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnergyTag;                                         // 0x1A38(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageToEnergyFactor;                              // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDamageToEnergyFactor;                           // 0x1A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x1A50(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -57,18 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391019">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391019")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391019")
 	}
 	static class UPyBuffAbility_10130_10391019* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391019>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391019) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391019");
-static_assert(sizeof(UPyBuffAbility_10130_10391019) == 0x001A48, "Wrong size on UPyBuffAbility_10130_10391019");
-static_assert(offsetof(UPyBuffAbility_10130_10391019, DamageToEnergyFactor) == 0x001A30, "Member 'UPyBuffAbility_10130_10391019::DamageToEnergyFactor' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391019, MaxDamageToEnergyFactor) == 0x001A34, "Member 'UPyBuffAbility_10130_10391019::MaxDamageToEnergyFactor' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391019, EnergyTag) == 0x001A38, "Member 'UPyBuffAbility_10130_10391019::EnergyTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391019;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SeasonStory_PageBtn.PyWidget_Gallery_SeasonStory_PageBtn
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Gallery_SeasonStory_PageBtn final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SeasonStory_PageBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SeasonStory_PageBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SeasonStory_PageBtn")
 	}
 	static class UPyWidget_Gallery_SeasonStory_PageBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SeasonStory_PageBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SeasonStory_PageBtn) == 0x000010, "Wrong alignment on UPyWidget_Gallery_SeasonStory_PageBtn");
-static_assert(sizeof(UPyWidget_Gallery_SeasonStory_PageBtn) == 0x0008C0, "Wrong size on UPyWidget_Gallery_SeasonStory_PageBtn");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SeasonStory_PageBtn;
 
 }
 

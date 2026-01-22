@@ -20,160 +20,18 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateBase
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_VoiceStateBase : public UPyMarvelUserWidget
-{
-public:
-	void Construct();
-	void Destruct();
-	void SetMicrophoneState(int32 MicrophoneState);
-	void SetVoiceState(int32 Voice);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_VoiceStateBase">();
-	}
-	static class UPyWidget_VoiceStateBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_VoiceStateBase>();
-	}
-};
-static_assert(alignof(UPyWidget_VoiceStateBase) == 0x000008, "Wrong alignment on UPyWidget_VoiceStateBase");
-static_assert(sizeof(UPyWidget_VoiceStateBase) == 0x0005C0, "Wrong size on UPyWidget_VoiceStateBase");
-
-// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage
-// 0x0930 (0x0EF0 - 0x05C0)
-class UPyWidget_VoiceStateImage : public UPyWidget_VoiceStateBase
-{
-public:
-	struct FSlateBrush                            MessageBrush_Enable;                               // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MessageBrush_Disable;                              // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MicrophoneBrush_Speaking;                          // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MicrophoneBrush_Enable;                            // 0x0830(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MicrophoneBrush_Disable;                           // 0x0900(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChangerMicBrush_Speaking;                          // 0x09D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChangerMicBrush_Enable;                            // 0x0AA0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChangerMicBrush_Disable;                           // 0x0B70(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            VoiceBrush_Speaking;                               // 0x0C40(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            VoiceBrush_Enable;                                 // 0x0D10(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            VoiceBrush_Disable;                                // 0x0DE0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeamColor;                                         // 0x0EB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0EC0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TestMicEnableColor;                                // 0x0ED0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TestMicDisableColor;                               // 0x0EE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void Destruct();
-	void SetMicrophoneState(int32 MicrophoneState);
-	void SetVoiceState(int32 Voice);
-	void SetIconColor(const struct FLinearColor& Color);
-	void SetMessageState(int32 state);
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_VoiceStateImage">();
-	}
-	static class UPyWidget_VoiceStateImage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_VoiceStateImage>();
-	}
-};
-static_assert(alignof(UPyWidget_VoiceStateImage) == 0x000010, "Wrong alignment on UPyWidget_VoiceStateImage");
-static_assert(sizeof(UPyWidget_VoiceStateImage) == 0x000EF0, "Wrong size on UPyWidget_VoiceStateImage");
-static_assert(offsetof(UPyWidget_VoiceStateImage, MessageBrush_Enable) == 0x0005C0, "Member 'UPyWidget_VoiceStateImage::MessageBrush_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, MessageBrush_Disable) == 0x000690, "Member 'UPyWidget_VoiceStateImage::MessageBrush_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, MicrophoneBrush_Speaking) == 0x000760, "Member 'UPyWidget_VoiceStateImage::MicrophoneBrush_Speaking' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, MicrophoneBrush_Enable) == 0x000830, "Member 'UPyWidget_VoiceStateImage::MicrophoneBrush_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, MicrophoneBrush_Disable) == 0x000900, "Member 'UPyWidget_VoiceStateImage::MicrophoneBrush_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, ChangerMicBrush_Speaking) == 0x0009D0, "Member 'UPyWidget_VoiceStateImage::ChangerMicBrush_Speaking' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, ChangerMicBrush_Enable) == 0x000AA0, "Member 'UPyWidget_VoiceStateImage::ChangerMicBrush_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, ChangerMicBrush_Disable) == 0x000B70, "Member 'UPyWidget_VoiceStateImage::ChangerMicBrush_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, VoiceBrush_Speaking) == 0x000C40, "Member 'UPyWidget_VoiceStateImage::VoiceBrush_Speaking' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, VoiceBrush_Enable) == 0x000D10, "Member 'UPyWidget_VoiceStateImage::VoiceBrush_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, VoiceBrush_Disable) == 0x000DE0, "Member 'UPyWidget_VoiceStateImage::VoiceBrush_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, TeamColor) == 0x000EB0, "Member 'UPyWidget_VoiceStateImage::TeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, EnemyColor) == 0x000EC0, "Member 'UPyWidget_VoiceStateImage::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, TestMicEnableColor) == 0x000ED0, "Member 'UPyWidget_VoiceStateImage::TestMicEnableColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceStateImage, TestMicDisableColor) == 0x000EE0, "Member 'UPyWidget_VoiceStateImage::TestMicDisableColor' has a wrong offset!");
-
-// PythonClass PyWidget_VoiceChatPanel.PyWidget_BattleVoice_PlayerUnit
-// 0x0018 (0x05D8 - 0x05C0)
-class UPyWidget_BattleVoice_PlayerUnit final : public UPyMarvelUserWidget
-{
-public:
-	bool                                          bCustomColorPreview;                               // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          PreviewIsSelf;                                     // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewHeroID;                                     // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   PreviewHeroName;                                   // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_BattleVoice_PlayerUnit">();
-	}
-	static class UPyWidget_BattleVoice_PlayerUnit* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_BattleVoice_PlayerUnit>();
-	}
-};
-static_assert(alignof(UPyWidget_BattleVoice_PlayerUnit) == 0x000008, "Wrong alignment on UPyWidget_BattleVoice_PlayerUnit");
-static_assert(sizeof(UPyWidget_BattleVoice_PlayerUnit) == 0x0005D8, "Wrong size on UPyWidget_BattleVoice_PlayerUnit");
-static_assert(offsetof(UPyWidget_BattleVoice_PlayerUnit, bCustomColorPreview) == 0x0005BA, "Member 'UPyWidget_BattleVoice_PlayerUnit::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleVoice_PlayerUnit, PreviewIsSelf) == 0x0005BB, "Member 'UPyWidget_BattleVoice_PlayerUnit::PreviewIsSelf' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleVoice_PlayerUnit, PreviewHeroID) == 0x0005BC, "Member 'UPyWidget_BattleVoice_PlayerUnit::PreviewHeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleVoice_PlayerUnit, PreviewHeroName) == 0x0005C0, "Member 'UPyWidget_BattleVoice_PlayerUnit::PreviewHeroName' has a wrong offset!");
-
-// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateButton
-// 0x0008 (0x0748 - 0x0740)
-class UPyWidget_VoiceStateButton final : public UPyWidget_CommonButton_WithHoverTips
-{
-public:
-	bool                                          Is_Message;                                        // 0x0740(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_VoiceStateButton">();
-	}
-	static class UPyWidget_VoiceStateButton* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_VoiceStateButton>();
-	}
-};
-static_assert(alignof(UPyWidget_VoiceStateButton) == 0x000008, "Wrong alignment on UPyWidget_VoiceStateButton");
-static_assert(sizeof(UPyWidget_VoiceStateButton) == 0x000748, "Wrong size on UPyWidget_VoiceStateButton");
-static_assert(offsetof(UPyWidget_VoiceStateButton, Is_Message) == 0x000740, "Member 'UPyWidget_VoiceStateButton::Is_Message' has a wrong offset!");
-
 // PythonClass PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlEntry
-// 0x0860 (0x0E20 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_CombatAudioControlEntry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           TeamColor;                                         // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelfNameColor;                                     // 0x05DC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeamNameColor;                                     // 0x05F0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0xC];                                      // 0x0604(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           BtnTeamBgStyle;                                    // 0x0610(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           BtnEnemyBgStyle;                                   // 0x0A10(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgPortraitBgTeam;                                 // 0x0E10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgPortraitBgEnemy;                                // 0x0E18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FLinearColor>                   TeamColors;                                        // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelfNameColor;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeamNameColor;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FButtonStyle>                   TeamBtnBgStyles;                                   // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgPortraitBgTeam;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgPortraitBgEnemy;                                // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -184,30 +42,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CombatAudioControlEntry">();
+		STATIC_CLASS_IMPL("PyWidget_CombatAudioControlEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CombatAudioControlEntry")
 	}
 	static class UPyWidget_CombatAudioControlEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CombatAudioControlEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_CombatAudioControlEntry) == 0x000010, "Wrong alignment on UPyWidget_CombatAudioControlEntry");
-static_assert(sizeof(UPyWidget_CombatAudioControlEntry) == 0x000E20, "Wrong size on UPyWidget_CombatAudioControlEntry");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, TeamColor) == 0x0005BC, "Member 'UPyWidget_CombatAudioControlEntry::TeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, EnemyColor) == 0x0005CC, "Member 'UPyWidget_CombatAudioControlEntry::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, SelfNameColor) == 0x0005DC, "Member 'UPyWidget_CombatAudioControlEntry::SelfNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, TeamNameColor) == 0x0005F0, "Member 'UPyWidget_CombatAudioControlEntry::TeamNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, BtnTeamBgStyle) == 0x000610, "Member 'UPyWidget_CombatAudioControlEntry::BtnTeamBgStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, BtnEnemyBgStyle) == 0x000A10, "Member 'UPyWidget_CombatAudioControlEntry::BtnEnemyBgStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, ImgPortraitBgTeam) == 0x000E10, "Member 'UPyWidget_CombatAudioControlEntry::ImgPortraitBgTeam' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlEntry, ImgPortraitBgEnemy) == 0x000E18, "Member 'UPyWidget_CombatAudioControlEntry::ImgPortraitBgEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CombatAudioControlEntry;
 
 // PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceReportButton
-// 0x0008 (0x0748 - 0x0740)
+// 0x0008 (0x07A0 - 0x0798)
 class UPyWidget_VoiceReportButton final : public UPyWidget_CommonButton_WithHoverTips
 {
 public:
-	class UTexture2D*                             BtnIcon;                                           // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BtnIcon;                                           // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -216,29 +69,160 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_VoiceReportButton">();
+		STATIC_CLASS_IMPL("PyWidget_VoiceReportButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceReportButton")
 	}
 	static class UPyWidget_VoiceReportButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_VoiceReportButton>();
 	}
 };
-static_assert(alignof(UPyWidget_VoiceReportButton) == 0x000008, "Wrong alignment on UPyWidget_VoiceReportButton");
-static_assert(sizeof(UPyWidget_VoiceReportButton) == 0x000748, "Wrong size on UPyWidget_VoiceReportButton");
-static_assert(offsetof(UPyWidget_VoiceReportButton, BtnIcon) == 0x000740, "Member 'UPyWidget_VoiceReportButton::BtnIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_VoiceReportButton;
+
+// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateBase
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_VoiceStateBase : public UPyMarvelUserWidget
+{
+public:
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_VoiceStateBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceStateBase")
+	}
+	static class UPyWidget_VoiceStateBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_VoiceStateBase>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_VoiceStateBase;
+
+// PythonClass PyWidget_VoiceChatPanel.PyWidget_BattleVoice_PlayerUnit
+// 0x0018 (0x05E0 - 0x05C8)
+class UPyWidget_BattleVoice_PlayerUnit final : public UPyMarvelUserWidget
+{
+public:
+	bool                                          bCustomColorPreview;                               // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PreviewIsSelf;                                     // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewHeroID;                                     // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   PreviewHeroName;                                   // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_BattleVoice_PlayerUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleVoice_PlayerUnit")
+	}
+	static class UPyWidget_BattleVoice_PlayerUnit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_BattleVoice_PlayerUnit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_BattleVoice_PlayerUnit;
+
+// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateButton
+// 0x0008 (0x07A0 - 0x0798)
+class UPyWidget_VoiceStateButton final : public UPyWidget_CommonButton_WithHoverTips
+{
+public:
+	bool                                          Is_Message;                                        // 0x0798(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_VoiceStateButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceStateButton")
+	}
+	static class UPyWidget_VoiceStateButton* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_VoiceStateButton>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_VoiceStateButton;
+
+// PythonClass PyWidget_VoiceChatPanel.PyWidget_VoiceStateImage
+// 0x0938 (0x0F00 - 0x05C8)
+class UPyWidget_VoiceStateImage : public UPyWidget_VoiceStateBase
+{
+public:
+	uint8                                         Pad_5C8[0x8];                                      // 0x05C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            MessageBrush_Enable;                               // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MessageBrush_Disable;                              // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MicrophoneBrush_Speaking;                          // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MicrophoneBrush_Enable;                            // 0x0840(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MicrophoneBrush_Disable;                           // 0x0910(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChangerMicBrush_Speaking;                          // 0x09E0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChangerMicBrush_Enable;                            // 0x0AB0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChangerMicBrush_Disable;                           // 0x0B80(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            VoiceBrush_Speaking;                               // 0x0C50(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            VoiceBrush_Enable;                                 // 0x0D20(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            VoiceBrush_Disable;                                // 0x0DF0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamColor;                                         // 0x0EC0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0ED0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TestMicEnableColor;                                // 0x0EE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TestMicDisableColor;                               // 0x0EF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnCascadingVisibleChanged(bool bNewVisible);
+	void SetIconColor(const struct FLinearColor& Color);
+	void SetMessageState(int32 state);
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_VoiceStateImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceStateImage")
+	}
+	static class UPyWidget_VoiceStateImage* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_VoiceStateImage>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_VoiceStateImage;
 
 // PythonClass PyWidget_VoiceChatPanel.PyWidget_CombatAudioControlPanel
-// 0x0140 (0x0700 - 0x05C0)
+// 0x0140 (0x0708 - 0x05C8)
 class UPyWidget_CombatAudioControlPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                VoiceEntryPadding;                                 // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                EntryClass;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProtectTime;                                       // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        PCScrollGuideTipsStyle;                            // 0x05E0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                VoiceEntryPadding;                                 // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                EntryClass;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProtectTime;                                       // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        PCScrollGuideTipsStyle;                            // 0x05E8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -249,19 +233,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CombatAudioControlPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CombatAudioControlPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CombatAudioControlPanel")
 	}
 	static class UPyWidget_CombatAudioControlPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CombatAudioControlPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CombatAudioControlPanel) == 0x000008, "Wrong alignment on UPyWidget_CombatAudioControlPanel");
-static_assert(sizeof(UPyWidget_CombatAudioControlPanel) == 0x000700, "Wrong size on UPyWidget_CombatAudioControlPanel");
-static_assert(offsetof(UPyWidget_CombatAudioControlPanel, VoiceEntryPadding) == 0x0005BC, "Member 'UPyWidget_CombatAudioControlPanel::VoiceEntryPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlPanel, EntryClass) == 0x0005D0, "Member 'UPyWidget_CombatAudioControlPanel::EntryClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlPanel, ProtectTime) == 0x0005D8, "Member 'UPyWidget_CombatAudioControlPanel::ProtectTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CombatAudioControlPanel, PCScrollGuideTipsStyle) == 0x0005E0, "Member 'UPyWidget_CombatAudioControlPanel::PCScrollGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CombatAudioControlPanel;
 
 }
 

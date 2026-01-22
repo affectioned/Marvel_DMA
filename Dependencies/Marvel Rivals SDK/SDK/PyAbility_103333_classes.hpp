@@ -29,24 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103333">();
+		STATIC_CLASS_IMPL("PyConfig_103333")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103333")
 	}
 	static class UPyConfig_103333* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103333>();
 	}
 };
-static_assert(alignof(UPyConfig_103333) == 0x000008, "Wrong alignment on UPyConfig_103333");
-static_assert(sizeof(UPyConfig_103333) == 0x0000A0, "Wrong size on UPyConfig_103333");
-static_assert(offsetof(UPyConfig_103333, ResetToBulletLoadedAtBreak) == 0x000098, "Member 'UPyConfig_103333::ResetToBulletLoadedAtBreak' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103333, AutoPullBullet) == 0x000099, "Member 'UPyConfig_103333::AutoPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103333;
 
 // PythonClass PyAbility_103333.PyAbility_103333
-// 0x0010 (0x3658 - 0x3648)
+// 0x0010 (0x39C8 - 0x39B8)
 class UPyAbility_103333 : public UAbility_103333
 {
 public:
-	struct FGameplayTag                           HitCueTag;                                         // 0x3648(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HitCueTag;                                         // 0x39B8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PlayHitCue(class ACharacter* Target);
@@ -56,24 +57,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103333">();
+		STATIC_CLASS_IMPL("PyAbility_103333")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103333")
 	}
 	static class UPyAbility_103333* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103333>();
 	}
 };
-static_assert(alignof(UPyAbility_103333) == 0x000008, "Wrong alignment on UPyAbility_103333");
-static_assert(sizeof(UPyAbility_103333) == 0x003658, "Wrong size on UPyAbility_103333");
-static_assert(offsetof(UPyAbility_103333, HitCueTag) == 0x003648, "Member 'UPyAbility_103333::HitCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103333;
 
 // PythonClass PyAbility_103333.PyCue_Buff_Loop_10333302
-// 0x0010 (0x1650 - 0x1640)
+// 0x0010 (0x1700 - 0x16F0)
 class APyCue_Buff_Loop_10333302 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         HitNiagara;                                        // 0x1640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         HitNiagara;                                        // 0x16F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -81,16 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10333302">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10333302")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10333302")
 	}
 	static class APyCue_Buff_Loop_10333302* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10333302>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10333302) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10333302");
-static_assert(sizeof(APyCue_Buff_Loop_10333302) == 0x001650, "Wrong size on APyCue_Buff_Loop_10333302");
-static_assert(offsetof(APyCue_Buff_Loop_10333302, HitNiagara) == 0x001640, "Member 'APyCue_Buff_Loop_10333302::HitNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10333302;
 
 }
 

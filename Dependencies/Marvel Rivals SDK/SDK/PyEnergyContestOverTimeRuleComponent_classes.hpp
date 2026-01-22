@@ -23,15 +23,18 @@ class UPyEnergyContestOvertimeConfig final : public UPyControlOvertimeConfig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestOvertimeConfig">();
+		STATIC_CLASS_IMPL("PyEnergyContestOvertimeConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestOvertimeConfig")
 	}
 	static class UPyEnergyContestOvertimeConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyContestOvertimeConfig>();
 	}
 };
-static_assert(alignof(UPyEnergyContestOvertimeConfig) == 0x000008, "Wrong alignment on UPyEnergyContestOvertimeConfig");
-static_assert(sizeof(UPyEnergyContestOvertimeConfig) == 0x000048, "Wrong size on UPyEnergyContestOvertimeConfig");
+DUMPER7_ASSERTS_UPyEnergyContestOvertimeConfig;
 
 // PythonClass PyEnergyContestOverTimeRuleComponent.PyEnergyContestOverTimeRuleComponent
 // 0x0000 (0x0128 - 0x0128)
@@ -43,15 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestOverTimeRuleComponent">();
+		STATIC_CLASS_IMPL("PyEnergyContestOverTimeRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestOverTimeRuleComponent")
 	}
 	static class UPyEnergyContestOverTimeRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyContestOverTimeRuleComponent>();
 	}
 };
-static_assert(alignof(UPyEnergyContestOverTimeRuleComponent) == 0x000008, "Wrong alignment on UPyEnergyContestOverTimeRuleComponent");
-static_assert(sizeof(UPyEnergyContestOverTimeRuleComponent) == 0x000128, "Wrong size on UPyEnergyContestOverTimeRuleComponent");
+DUMPER7_ASSERTS_UPyEnergyContestOverTimeRuleComponent;
 
 }
 

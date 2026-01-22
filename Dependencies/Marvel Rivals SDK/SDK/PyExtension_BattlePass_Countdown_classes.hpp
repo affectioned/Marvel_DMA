@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_BattlePass_Countdown">();
+		STATIC_CLASS_IMPL("PyExtension_BattlePass_Countdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_BattlePass_Countdown")
 	}
 	static class UPyExtension_BattlePass_Countdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_BattlePass_Countdown>();
 	}
 };
-static_assert(alignof(UPyExtension_BattlePass_Countdown) == 0x000008, "Wrong alignment on UPyExtension_BattlePass_Countdown");
-static_assert(sizeof(UPyExtension_BattlePass_Countdown) == 0x000030, "Wrong size on UPyExtension_BattlePass_Countdown");
+DUMPER7_ASSERTS_UPyExtension_BattlePass_Countdown;
 
 }
 

@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassActorPoolableInterface">();
+		STATIC_CLASS_IMPL("MassActorPoolableInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassActorPoolableInterface")
 	}
 	static class IMassActorPoolableInterface* GetDefaultObj()
 	{
@@ -50,54 +54,56 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMassActorPoolableInterface) == 0x000001, "Wrong alignment on IMassActorPoolableInterface");
-static_assert(sizeof(IMassActorPoolableInterface) == 0x000001, "Wrong size on IMassActorPoolableInterface");
+DUMPER7_ASSERTS_IMassActorPoolableInterface;
 
 // Class MassActors.MassActorSpawnerSubsystem
-// 0x00B8 (0x00F0 - 0x0038)
+// 0x00B8 (0x00F8 - 0x0040)
 class UMassActorSpawnerSubsystem : public UWorldSubsystem
 {
 public:
-	TArray<struct FInstancedStruct>               SpawnRequests;                                     // 0x0038(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class AActor*>                         ActorsToDestroy;                                   // 0x0048(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<class AActor*>                         DeactivatedActorsToDestroy;                        // 0x0058(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_68[0x88];                                      // 0x0068(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<struct FInstancedStruct>               SpawnRequests;                                     // 0x0040(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class AActor*>                         ActorsToDestroy;                                   // 0x0050(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class AActor*>                         DeactivatedActorsToDestroy;                        // 0x0060(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_70[0x88];                                      // 0x0070(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassActorSpawnerSubsystem">();
+		STATIC_CLASS_IMPL("MassActorSpawnerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassActorSpawnerSubsystem")
 	}
 	static class UMassActorSpawnerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassActorSpawnerSubsystem>();
 	}
 };
-static_assert(alignof(UMassActorSpawnerSubsystem) == 0x000008, "Wrong alignment on UMassActorSpawnerSubsystem");
-static_assert(sizeof(UMassActorSpawnerSubsystem) == 0x0000F0, "Wrong size on UMassActorSpawnerSubsystem");
-static_assert(offsetof(UMassActorSpawnerSubsystem, SpawnRequests) == 0x000038, "Member 'UMassActorSpawnerSubsystem::SpawnRequests' has a wrong offset!");
-static_assert(offsetof(UMassActorSpawnerSubsystem, ActorsToDestroy) == 0x000048, "Member 'UMassActorSpawnerSubsystem::ActorsToDestroy' has a wrong offset!");
-static_assert(offsetof(UMassActorSpawnerSubsystem, DeactivatedActorsToDestroy) == 0x000058, "Member 'UMassActorSpawnerSubsystem::DeactivatedActorsToDestroy' has a wrong offset!");
+DUMPER7_ASSERTS_UMassActorSpawnerSubsystem;
 
 // Class MassActors.MassActorSubsystem
-// 0x0010 (0x0048 - 0x0038)
+// 0x0010 (0x0050 - 0x0040)
 class UMassActorSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassActorSubsystem">();
+		STATIC_CLASS_IMPL("MassActorSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassActorSubsystem")
 	}
 	static class UMassActorSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassActorSubsystem>();
 	}
 };
-static_assert(alignof(UMassActorSubsystem) == 0x000008, "Wrong alignment on UMassActorSubsystem");
-static_assert(sizeof(UMassActorSubsystem) == 0x000048, "Wrong size on UMassActorSubsystem");
+DUMPER7_ASSERTS_UMassActorSubsystem;
 
 // Class MassActors.MassAgentComponent
 // 0x00E0 (0x01E8 - 0x0108)
@@ -120,50 +126,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentComponent">();
+		STATIC_CLASS_IMPL("MassAgentComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentComponent")
 	}
 	static class UMassAgentComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentComponent>();
 	}
 };
-static_assert(alignof(UMassAgentComponent) == 0x000008, "Wrong alignment on UMassAgentComponent");
-static_assert(sizeof(UMassAgentComponent) == 0x0001E8, "Wrong size on UMassAgentComponent");
-static_assert(offsetof(UMassAgentComponent, EntityConfig) == 0x000188, "Member 'UMassAgentComponent::EntityConfig' has a wrong offset!");
-static_assert(offsetof(UMassAgentComponent, NetID) == 0x0001E4, "Member 'UMassAgentComponent::NetID' has a wrong offset!");
+DUMPER7_ASSERTS_UMassAgentComponent;
 
 // Class MassActors.MassAgentSubsystem
-// 0x0148 (0x0180 - 0x0038)
+// 0x0148 (0x0188 - 0x0040)
 class UMassAgentSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMassSpawnerSubsystem*                  SpawnerSystem;                                     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMassSimulationSubsystem*               SimulationSystem;                                  // 0x0050(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FMassEntityTemplateID, struct FMassAgentInitializationQueue> PendingAgentEntities;   // 0x0058(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TMap<struct FMassEntityTemplateID, struct FMassAgentInitializationQueue> PendingPuppets;         // 0x00A8(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UMassReplicationSubsystem*              ReplicationSubsystem;                              // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FMassNetworkID, class UMassAgentComponent*> ReplicatedAgentComponents;               // 0x0100(0x0050)(ExportObject, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_150[0x30];                                     // 0x0150(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMassSpawnerSubsystem*                  SpawnerSystem;                                     // 0x0050(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMassSimulationSubsystem*               SimulationSystem;                                  // 0x0058(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<struct FMassEntityTemplateID, struct FMassAgentInitializationQueue> PendingAgentEntities;   // 0x0060(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FMassEntityTemplateID, struct FMassAgentInitializationQueue> PendingPuppets;         // 0x00B0(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UMassReplicationSubsystem*              ReplicationSubsystem;                              // 0x0100(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<struct FMassNetworkID, class UMassAgentComponent*> ReplicatedAgentComponents;               // 0x0108(0x0050)(ExportObject, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_158[0x30];                                     // 0x0158(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentSubsystem">();
+		STATIC_CLASS_IMPL("MassAgentSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentSubsystem")
 	}
 	static class UMassAgentSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentSubsystem>();
 	}
 };
-static_assert(alignof(UMassAgentSubsystem) == 0x000008, "Wrong alignment on UMassAgentSubsystem");
-static_assert(sizeof(UMassAgentSubsystem) == 0x000180, "Wrong size on UMassAgentSubsystem");
-static_assert(offsetof(UMassAgentSubsystem, SpawnerSystem) == 0x000048, "Member 'UMassAgentSubsystem::SpawnerSystem' has a wrong offset!");
-static_assert(offsetof(UMassAgentSubsystem, SimulationSystem) == 0x000050, "Member 'UMassAgentSubsystem::SimulationSystem' has a wrong offset!");
-static_assert(offsetof(UMassAgentSubsystem, PendingAgentEntities) == 0x000058, "Member 'UMassAgentSubsystem::PendingAgentEntities' has a wrong offset!");
-static_assert(offsetof(UMassAgentSubsystem, PendingPuppets) == 0x0000A8, "Member 'UMassAgentSubsystem::PendingPuppets' has a wrong offset!");
-static_assert(offsetof(UMassAgentSubsystem, ReplicationSubsystem) == 0x0000F8, "Member 'UMassAgentSubsystem::ReplicationSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassAgentSubsystem, ReplicatedAgentComponents) == 0x000100, "Member 'UMassAgentSubsystem::ReplicatedAgentComponents' has a wrong offset!");
+DUMPER7_ASSERTS_UMassAgentSubsystem;
 
 // Class MassActors.MassAgentSyncTrait
 // 0x0008 (0x0038 - 0x0030)
@@ -176,16 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentSyncTrait">();
+		STATIC_CLASS_IMPL("MassAgentSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentSyncTrait")
 	}
 	static class UMassAgentSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentSyncTrait>();
 	}
 };
-static_assert(alignof(UMassAgentSyncTrait) == 0x000008, "Wrong alignment on UMassAgentSyncTrait");
-static_assert(sizeof(UMassAgentSyncTrait) == 0x000038, "Wrong size on UMassAgentSyncTrait");
-static_assert(offsetof(UMassAgentSyncTrait, SyncDirection) == 0x000030, "Member 'UMassAgentSyncTrait::SyncDirection' has a wrong offset!");
+DUMPER7_ASSERTS_UMassAgentSyncTrait;
 
 // Class MassActors.MassAgentCapsuleCollisionSyncTrait
 // 0x0008 (0x0040 - 0x0038)
@@ -198,16 +204,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentCapsuleCollisionSyncTrait">();
+		STATIC_CLASS_IMPL("MassAgentCapsuleCollisionSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentCapsuleCollisionSyncTrait")
 	}
 	static class UMassAgentCapsuleCollisionSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentCapsuleCollisionSyncTrait>();
 	}
 };
-static_assert(alignof(UMassAgentCapsuleCollisionSyncTrait) == 0x000008, "Wrong alignment on UMassAgentCapsuleCollisionSyncTrait");
-static_assert(sizeof(UMassAgentCapsuleCollisionSyncTrait) == 0x000040, "Wrong size on UMassAgentCapsuleCollisionSyncTrait");
-static_assert(offsetof(UMassAgentCapsuleCollisionSyncTrait, bSyncTransform) == 0x000038, "Member 'UMassAgentCapsuleCollisionSyncTrait::bSyncTransform' has a wrong offset!");
+DUMPER7_ASSERTS_UMassAgentCapsuleCollisionSyncTrait;
 
 // Class MassActors.MassAgentMovementSyncTrait
 // 0x0000 (0x0038 - 0x0038)
@@ -216,15 +224,18 @@ class UMassAgentMovementSyncTrait final : public UMassAgentSyncTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentMovementSyncTrait">();
+		STATIC_CLASS_IMPL("MassAgentMovementSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentMovementSyncTrait")
 	}
 	static class UMassAgentMovementSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentMovementSyncTrait>();
 	}
 };
-static_assert(alignof(UMassAgentMovementSyncTrait) == 0x000008, "Wrong alignment on UMassAgentMovementSyncTrait");
-static_assert(sizeof(UMassAgentMovementSyncTrait) == 0x000038, "Wrong size on UMassAgentMovementSyncTrait");
+DUMPER7_ASSERTS_UMassAgentMovementSyncTrait;
 
 // Class MassActors.MassAgentOrientationSyncTrait
 // 0x0000 (0x0038 - 0x0038)
@@ -233,15 +244,18 @@ class UMassAgentOrientationSyncTrait final : public UMassAgentSyncTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentOrientationSyncTrait">();
+		STATIC_CLASS_IMPL("MassAgentOrientationSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentOrientationSyncTrait")
 	}
 	static class UMassAgentOrientationSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentOrientationSyncTrait>();
 	}
 };
-static_assert(alignof(UMassAgentOrientationSyncTrait) == 0x000008, "Wrong alignment on UMassAgentOrientationSyncTrait");
-static_assert(sizeof(UMassAgentOrientationSyncTrait) == 0x000038, "Wrong size on UMassAgentOrientationSyncTrait");
+DUMPER7_ASSERTS_UMassAgentOrientationSyncTrait;
 
 // Class MassActors.MassAgentFeetLocationSyncTrait
 // 0x0000 (0x0038 - 0x0038)
@@ -250,15 +264,18 @@ class UMassAgentFeetLocationSyncTrait final : public UMassAgentSyncTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAgentFeetLocationSyncTrait">();
+		STATIC_CLASS_IMPL("MassAgentFeetLocationSyncTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAgentFeetLocationSyncTrait")
 	}
 	static class UMassAgentFeetLocationSyncTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAgentFeetLocationSyncTrait>();
 	}
 };
-static_assert(alignof(UMassAgentFeetLocationSyncTrait) == 0x000008, "Wrong alignment on UMassAgentFeetLocationSyncTrait");
-static_assert(sizeof(UMassAgentFeetLocationSyncTrait) == 0x000038, "Wrong size on UMassAgentFeetLocationSyncTrait");
+DUMPER7_ASSERTS_UMassAgentFeetLocationSyncTrait;
 
 // Class MassActors.MassCapsuleTransformToMassTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -270,15 +287,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCapsuleTransformToMassTranslator">();
+		STATIC_CLASS_IMPL("MassCapsuleTransformToMassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCapsuleTransformToMassTranslator")
 	}
 	static class UMassCapsuleTransformToMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCapsuleTransformToMassTranslator>();
 	}
 };
-static_assert(alignof(UMassCapsuleTransformToMassTranslator) == 0x000008, "Wrong alignment on UMassCapsuleTransformToMassTranslator");
-static_assert(sizeof(UMassCapsuleTransformToMassTranslator) == 0x000390, "Wrong size on UMassCapsuleTransformToMassTranslator");
+DUMPER7_ASSERTS_UMassCapsuleTransformToMassTranslator;
 
 // Class MassActors.MassTransformToActorCapsuleTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -290,15 +310,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassTransformToActorCapsuleTranslator">();
+		STATIC_CLASS_IMPL("MassTransformToActorCapsuleTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassTransformToActorCapsuleTranslator")
 	}
 	static class UMassTransformToActorCapsuleTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassTransformToActorCapsuleTranslator>();
 	}
 };
-static_assert(alignof(UMassTransformToActorCapsuleTranslator) == 0x000008, "Wrong alignment on UMassTransformToActorCapsuleTranslator");
-static_assert(sizeof(UMassTransformToActorCapsuleTranslator) == 0x000390, "Wrong size on UMassTransformToActorCapsuleTranslator");
+DUMPER7_ASSERTS_UMassTransformToActorCapsuleTranslator;
 
 // Class MassActors.MassCharacterMovementToMassTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -310,15 +333,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCharacterMovementToMassTranslator">();
+		STATIC_CLASS_IMPL("MassCharacterMovementToMassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCharacterMovementToMassTranslator")
 	}
 	static class UMassCharacterMovementToMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCharacterMovementToMassTranslator>();
 	}
 };
-static_assert(alignof(UMassCharacterMovementToMassTranslator) == 0x000008, "Wrong alignment on UMassCharacterMovementToMassTranslator");
-static_assert(sizeof(UMassCharacterMovementToMassTranslator) == 0x000390, "Wrong size on UMassCharacterMovementToMassTranslator");
+DUMPER7_ASSERTS_UMassCharacterMovementToMassTranslator;
 
 // Class MassActors.MassCharacterMovementToActorTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -330,15 +356,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCharacterMovementToActorTranslator">();
+		STATIC_CLASS_IMPL("MassCharacterMovementToActorTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCharacterMovementToActorTranslator")
 	}
 	static class UMassCharacterMovementToActorTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCharacterMovementToActorTranslator>();
 	}
 };
-static_assert(alignof(UMassCharacterMovementToActorTranslator) == 0x000008, "Wrong alignment on UMassCharacterMovementToActorTranslator");
-static_assert(sizeof(UMassCharacterMovementToActorTranslator) == 0x000390, "Wrong size on UMassCharacterMovementToActorTranslator");
+DUMPER7_ASSERTS_UMassCharacterMovementToActorTranslator;
 
 // Class MassActors.MassCharacterOrientationToMassTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -350,15 +379,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCharacterOrientationToMassTranslator">();
+		STATIC_CLASS_IMPL("MassCharacterOrientationToMassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCharacterOrientationToMassTranslator")
 	}
 	static class UMassCharacterOrientationToMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCharacterOrientationToMassTranslator>();
 	}
 };
-static_assert(alignof(UMassCharacterOrientationToMassTranslator) == 0x000008, "Wrong alignment on UMassCharacterOrientationToMassTranslator");
-static_assert(sizeof(UMassCharacterOrientationToMassTranslator) == 0x000390, "Wrong size on UMassCharacterOrientationToMassTranslator");
+DUMPER7_ASSERTS_UMassCharacterOrientationToMassTranslator;
 
 // Class MassActors.MassCharacterOrientationToActorTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -370,15 +402,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCharacterOrientationToActorTranslator">();
+		STATIC_CLASS_IMPL("MassCharacterOrientationToActorTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCharacterOrientationToActorTranslator")
 	}
 	static class UMassCharacterOrientationToActorTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCharacterOrientationToActorTranslator>();
 	}
 };
-static_assert(alignof(UMassCharacterOrientationToActorTranslator) == 0x000008, "Wrong alignment on UMassCharacterOrientationToActorTranslator");
-static_assert(sizeof(UMassCharacterOrientationToActorTranslator) == 0x000390, "Wrong size on UMassCharacterOrientationToActorTranslator");
+DUMPER7_ASSERTS_UMassCharacterOrientationToActorTranslator;
 
 // Class MassActors.MassSceneComponentLocationToMassTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -390,15 +425,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSceneComponentLocationToMassTranslator">();
+		STATIC_CLASS_IMPL("MassSceneComponentLocationToMassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSceneComponentLocationToMassTranslator")
 	}
 	static class UMassSceneComponentLocationToMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSceneComponentLocationToMassTranslator>();
 	}
 };
-static_assert(alignof(UMassSceneComponentLocationToMassTranslator) == 0x000008, "Wrong alignment on UMassSceneComponentLocationToMassTranslator");
-static_assert(sizeof(UMassSceneComponentLocationToMassTranslator) == 0x000390, "Wrong size on UMassSceneComponentLocationToMassTranslator");
+DUMPER7_ASSERTS_UMassSceneComponentLocationToMassTranslator;
 
 // Class MassActors.MassSceneComponentLocationToActorTranslator
 // 0x02A8 (0x0390 - 0x00E8)
@@ -410,15 +448,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSceneComponentLocationToActorTranslator">();
+		STATIC_CLASS_IMPL("MassSceneComponentLocationToActorTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSceneComponentLocationToActorTranslator")
 	}
 	static class UMassSceneComponentLocationToActorTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSceneComponentLocationToActorTranslator>();
 	}
 };
-static_assert(alignof(UMassSceneComponentLocationToActorTranslator) == 0x000008, "Wrong alignment on UMassSceneComponentLocationToActorTranslator");
-static_assert(sizeof(UMassSceneComponentLocationToActorTranslator) == 0x000390, "Wrong size on UMassSceneComponentLocationToActorTranslator");
+DUMPER7_ASSERTS_UMassSceneComponentLocationToActorTranslator;
 
 // Class MassActors.MassTranslator_BehaviorTree
 // 0x02A8 (0x0390 - 0x00E8)
@@ -430,15 +471,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassTranslator_BehaviorTree">();
+		STATIC_CLASS_IMPL("MassTranslator_BehaviorTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassTranslator_BehaviorTree")
 	}
 	static class UMassTranslator_BehaviorTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassTranslator_BehaviorTree>();
 	}
 };
-static_assert(alignof(UMassTranslator_BehaviorTree) == 0x000008, "Wrong alignment on UMassTranslator_BehaviorTree");
-static_assert(sizeof(UMassTranslator_BehaviorTree) == 0x000390, "Wrong size on UMassTranslator_BehaviorTree");
+DUMPER7_ASSERTS_UMassTranslator_BehaviorTree;
 
 }
 

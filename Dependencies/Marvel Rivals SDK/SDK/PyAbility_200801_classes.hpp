@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200801.PyCue_Ability_Loop_20080101
-// 0x0030 (0x11E0 - 0x11B0)
+// 0x0030 (0x11F0 - 0x11C0)
 class APyCue_Ability_Loop_20080101 final : public AMarvelCueNotify_Ability
 {
 public:
-	class FString                                 FXSocketName;                                      // 0x11B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnterStealthTime;                                  // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C4[0x4];                                     // 0x11C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          StartAudio;                                        // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          LoopAudio;                                         // 0x11D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          StopAudio;                                         // 0x11D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 FXSocketName;                                      // 0x11C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnterStealthTime;                                  // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11D4[0x4];                                     // 0x11D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          StartAudio;                                        // 0x11D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          LoopAudio;                                         // 0x11E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          StopAudio;                                         // 0x11E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveTick(float DeltaSeconds);
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_20080101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_20080101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_20080101")
 	}
 	static class APyCue_Ability_Loop_20080101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_20080101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_20080101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_20080101");
-static_assert(sizeof(APyCue_Ability_Loop_20080101) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_20080101");
-static_assert(offsetof(APyCue_Ability_Loop_20080101, FXSocketName) == 0x0011B0, "Member 'APyCue_Ability_Loop_20080101::FXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_20080101, EnterStealthTime) == 0x0011C0, "Member 'APyCue_Ability_Loop_20080101::EnterStealthTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_20080101, StartAudio) == 0x0011C8, "Member 'APyCue_Ability_Loop_20080101::StartAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_20080101, LoopAudio) == 0x0011D0, "Member 'APyCue_Ability_Loop_20080101::LoopAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_20080101, StopAudio) == 0x0011D8, "Member 'APyCue_Ability_Loop_20080101::StopAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_20080101;
 
 // PythonClass PyAbility_200801.PyConfig_200801
 // 0x0010 (0x00A8 - 0x0098)
@@ -61,25 +59,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_200801">();
+		STATIC_CLASS_IMPL("PyConfig_200801")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_200801")
 	}
 	static class UPyConfig_200801* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_200801>();
 	}
 };
-static_assert(alignof(UPyConfig_200801) == 0x000008, "Wrong alignment on UPyConfig_200801");
-static_assert(sizeof(UPyConfig_200801) == 0x0000A8, "Wrong size on UPyConfig_200801");
-static_assert(offsetof(UPyConfig_200801, TrajectoryPortalBuff) == 0x000098, "Member 'UPyConfig_200801::TrajectoryPortalBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_200801;
 
 // PythonClass PyAbility_200801.PyAbility_200801
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_200801 : public UMarvelGameplayAbility
 {
 public:
-	float                                         TraceProgress;                                     // 0x29F0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F4[0x4];                                     // 0x29F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 TargetTrajectoryPortal;                            // 0x29F8(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TraceProgress;                                     // 0x2A40(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A44[0x4];                                     // 0x2A44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 TargetTrajectoryPortal;                            // 0x2A48(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -93,20 +93,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200801">();
+		STATIC_CLASS_IMPL("PyAbility_200801")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200801")
 	}
 	static class UPyAbility_200801* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200801>();
 	}
 };
-static_assert(alignof(UPyAbility_200801) == 0x000008, "Wrong alignment on UPyAbility_200801");
-static_assert(sizeof(UPyAbility_200801) == 0x002A00, "Wrong size on UPyAbility_200801");
-static_assert(offsetof(UPyAbility_200801, TraceProgress) == 0x0029F0, "Member 'UPyAbility_200801::TraceProgress' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200801, TargetTrajectoryPortal) == 0x0029F8, "Member 'UPyAbility_200801::TargetTrajectoryPortal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200801;
 
 // PythonClass PyAbility_200801.PyAbility_200802
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_200802 final : public UPyAbility_200801
 {
 public:
@@ -117,15 +118,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200802">();
+		STATIC_CLASS_IMPL("PyAbility_200802")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200802")
 	}
 	static class UPyAbility_200802* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200802>();
 	}
 };
-static_assert(alignof(UPyAbility_200802) == 0x000008, "Wrong alignment on UPyAbility_200802");
-static_assert(sizeof(UPyAbility_200802) == 0x002A00, "Wrong size on UPyAbility_200802");
+DUMPER7_ASSERTS_UPyAbility_200802;
 
 }
 

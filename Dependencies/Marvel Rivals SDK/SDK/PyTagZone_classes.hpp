@@ -19,12 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyTagZone.PyTagZone
-// 0x0010 (0x06F0 - 0x06E0)
-class APyTagZone : public AActor
+// 0x0020 (0x0700 - 0x06E0)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyTagZone : public AActor
 {
 public:
 	uint8                                         Pad_6D8[0x8];                                      // 0x06D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGameplayTag>                   TagList;                                           // 0x06E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          IsOnlyServer;                                      // 0x06F0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOnlyClient;                                      // 0x06F1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -34,16 +37,19 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTagZone">();
+		STATIC_CLASS_IMPL("PyTagZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTagZone")
 	}
 	static class APyTagZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTagZone>();
 	}
 };
-static_assert(alignof(APyTagZone) == 0x000010, "Wrong alignment on APyTagZone");
-static_assert(sizeof(APyTagZone) == 0x0006F0, "Wrong size on APyTagZone");
-static_assert(offsetof(APyTagZone, TagList) == 0x0006E0, "Member 'APyTagZone::TagList' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyTagZone;
 
 }
 

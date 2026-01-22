@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerStartBP_C">();
+		BP_STATIC_CLASS_IMPL("PlayerStartBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerStartBP_C")
 	}
 	static class APlayerStartBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerStartBP_C>();
 	}
 };
-static_assert(alignof(APlayerStartBP_C) == 0x000010, "Wrong alignment on APlayerStartBP_C");
-static_assert(sizeof(APlayerStartBP_C) == 0x000730, "Wrong size on APlayerStartBP_C");
+DUMPER7_ASSERTS_APlayerStartBP_C;
 
 }
 

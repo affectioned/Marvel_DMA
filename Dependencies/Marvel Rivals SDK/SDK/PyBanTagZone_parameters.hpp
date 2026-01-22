@@ -23,9 +23,7 @@ struct PyBanTagZone_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBanTagZone_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBanTagZone_ReceiveEndPlay");
-static_assert(sizeof(PyBanTagZone_ReceiveEndPlay) == 0x000001, "Wrong size on PyBanTagZone_ReceiveEndPlay");
-static_assert(offsetof(PyBanTagZone_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBanTagZone_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBanTagZone_ReceiveEndPlay;
 
 }
 

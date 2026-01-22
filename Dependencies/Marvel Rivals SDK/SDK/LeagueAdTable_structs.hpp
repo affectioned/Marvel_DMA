@@ -26,14 +26,7 @@ public:
 	class FText                                   BrandName_16_034669C14D9CC5817A6C3194B06CD6C0;     // 0x0080(0x0018)(Edit, BlueprintVisible)
 	class FText                                   TitleLeagueName_18_D8FA85BD4E12EF664D88FE84F21412D3; // 0x0098(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FLeagueAdTable) == 0x000008, "Wrong alignment on FLeagueAdTable");
-static_assert(sizeof(FLeagueAdTable) == 0x0000B0, "Wrong size on FLeagueAdTable");
-static_assert(offsetof(FLeagueAdTable, Note_21_09E8EEFC43B7DD787B462D946FE69149) == 0x000000, "Member 'FLeagueAdTable::Note_21_09E8EEFC43B7DD787B462D946FE69149' has a wrong offset!");
-static_assert(offsetof(FLeagueAdTable, LeagueId_2_4B66894844306A9ED227ACADA172D5E6) == 0x000010, "Member 'FLeagueAdTable::LeagueId_2_4B66894844306A9ED227ACADA172D5E6' has a wrong offset!");
-static_assert(offsetof(FLeagueAdTable, ImgBg_8_18C6409D41DB015FB30E2790E1DEF25E) == 0x000020, "Member 'FLeagueAdTable::ImgBg_8_18C6409D41DB015FB30E2790E1DEF25E' has a wrong offset!");
-static_assert(offsetof(FLeagueAdTable, ImgLogo_9_46FC578540086951DA16019C68C091E4) == 0x000050, "Member 'FLeagueAdTable::ImgLogo_9_46FC578540086951DA16019C68C091E4' has a wrong offset!");
-static_assert(offsetof(FLeagueAdTable, BrandName_16_034669C14D9CC5817A6C3194B06CD6C0) == 0x000080, "Member 'FLeagueAdTable::BrandName_16_034669C14D9CC5817A6C3194B06CD6C0' has a wrong offset!");
-static_assert(offsetof(FLeagueAdTable, TitleLeagueName_18_D8FA85BD4E12EF664D88FE84F21412D3) == 0x000098, "Member 'FLeagueAdTable::TitleLeagueName_18_D8FA85BD4E12EF664D88FE84F21412D3' has a wrong offset!");
+DUMPER7_ASSERTS_FLeagueAdTable;
 
 }
 

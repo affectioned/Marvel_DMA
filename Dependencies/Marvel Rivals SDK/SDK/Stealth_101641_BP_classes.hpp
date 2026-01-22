@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Stealth_101641_BP.Stealth_101641_BP_C
-// 0x0000 (0x1600 - 0x1600)
+// 0x0000 (0x1618 - 0x1618)
 class UStealth_101641_BP_C final : public UStealth_101641
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Stealth_101641_BP_C">();
+		BP_STATIC_CLASS_IMPL("Stealth_101641_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Stealth_101641_BP_C")
 	}
 	static class UStealth_101641_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStealth_101641_BP_C>();
 	}
 };
-static_assert(alignof(UStealth_101641_BP_C) == 0x000008, "Wrong alignment on UStealth_101641_BP_C");
-static_assert(sizeof(UStealth_101641_BP_C) == 0x001600, "Wrong size on UStealth_101641_BP_C");
+DUMPER7_ASSERTS_UStealth_101641_BP_C;
 
 }
 

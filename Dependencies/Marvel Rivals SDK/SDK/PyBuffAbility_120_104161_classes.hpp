@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104161.PyBuffAbility_120_10416111
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10416111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         NewScopeRadius;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewScopeRadius;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,25 +30,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10416111">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10416111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10416111")
 	}
 	static class UPyBuffAbility_120_10416111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10416111>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10416111) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10416111");
-static_assert(sizeof(UPyBuffAbility_120_10416111) == 0x001378, "Wrong size on UPyBuffAbility_120_10416111");
-static_assert(offsetof(UPyBuffAbility_120_10416111, NewScopeRadius) == 0x001370, "Member 'UPyBuffAbility_120_10416111::NewScopeRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10416111;
 
 // PythonClass PyBuffAbility_120_104161.PyBuffAbility_120_10416112
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_10416112 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         ExtraRatioWithOneVictory;                          // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxVictoryNum;                                     // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CueTag;                                            // 0x1378(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtraRatioWithOneVictory;                          // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxVictoryNum;                                     // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CueTag;                                            // 0x1390(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -58,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10416112">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10416112")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10416112")
 	}
 	static class UPyBuffAbility_120_10416112* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10416112>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10416112) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10416112");
-static_assert(sizeof(UPyBuffAbility_120_10416112) == 0x001388, "Wrong size on UPyBuffAbility_120_10416112");
-static_assert(offsetof(UPyBuffAbility_120_10416112, ExtraRatioWithOneVictory) == 0x001370, "Member 'UPyBuffAbility_120_10416112::ExtraRatioWithOneVictory' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10416112, MaxVictoryNum) == 0x001374, "Member 'UPyBuffAbility_120_10416112::MaxVictoryNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10416112, CueTag) == 0x001378, "Member 'UPyBuffAbility_120_10416112::CueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10416112;
 
 }
 

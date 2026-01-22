@@ -288,6 +288,56 @@ void UPyWidget_SelectHero_HeroListBtn::SetIsPicked(bool IsPicked_0)
 }
 
 
+// PythonFunction PyWidget_SelectHero_HeroListBtn.PyWidget_SelectHero_HeroListBtn.SetIsWin
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsWin_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_SelectHero_HeroListBtn::SetIsWin(bool IsWin_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SelectHero_HeroListBtn", "SetIsWin");
+
+	Params::PyWidget_SelectHero_HeroListBtn_SetIsWin Parms{};
+
+	Parms.IsWin_0 = IsWin_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SelectHero_HeroListBtn.PyWidget_SelectHero_HeroListBtn.SetIsLoss
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsLoss_0                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_SelectHero_HeroListBtn::SetIsLoss(bool IsLoss_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SelectHero_HeroListBtn", "SetIsLoss");
+
+	Params::PyWidget_SelectHero_HeroListBtn_SetIsLoss Parms{};
+
+	Parms.IsLoss_0 = IsLoss_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_SelectHero_HeroListBtn.PyWidget_SelectHero_HeroListBtn.SetCanInteract
 // (Native, Public, BlueprintCallable)
 // Parameters:

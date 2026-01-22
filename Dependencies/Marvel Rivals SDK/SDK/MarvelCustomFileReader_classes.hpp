@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelCustomFileReadingSettings">();
+		STATIC_CLASS_IMPL("MarvelCustomFileReadingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelCustomFileReadingSettings")
 	}
 	static class UMarvelCustomFileReadingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelCustomFileReadingSettings>();
 	}
 };
-static_assert(alignof(UMarvelCustomFileReadingSettings) == 0x000008, "Wrong alignment on UMarvelCustomFileReadingSettings");
-static_assert(sizeof(UMarvelCustomFileReadingSettings) == 0x000040, "Wrong size on UMarvelCustomFileReadingSettings");
-static_assert(offsetof(UMarvelCustomFileReadingSettings, PackageRedirects) == 0x000030, "Member 'UMarvelCustomFileReadingSettings::PackageRedirects' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelCustomFileReadingSettings;
 
 }
 

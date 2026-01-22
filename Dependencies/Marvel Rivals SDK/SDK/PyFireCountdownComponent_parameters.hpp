@@ -23,9 +23,7 @@ struct PyFireCountdownComponent_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFireCountdownComponent_ReceiveTick) == 0x000004, "Wrong alignment on PyFireCountdownComponent_ReceiveTick");
-static_assert(sizeof(PyFireCountdownComponent_ReceiveTick) == 0x000004, "Wrong size on PyFireCountdownComponent_ReceiveTick");
-static_assert(offsetof(PyFireCountdownComponent_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyFireCountdownComponent_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyFireCountdownComponent_ReceiveTick;
 
 // PythonFunction PyFireCountdownComponent.PyFireCountdownComponent.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyFireCountdownComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFireCountdownComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyFireCountdownComponent_ReceiveEndPlay");
-static_assert(sizeof(PyFireCountdownComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyFireCountdownComponent_ReceiveEndPlay");
-static_assert(offsetof(PyFireCountdownComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyFireCountdownComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyFireCountdownComponent_ReceiveEndPlay;
 
 // PythonFunction PyFireCountdownComponent.PyFireCountdownComponent.SrvSetState
 // 0x0018 (0x0018 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	class FString                                 State_0;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         CurTime;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyFireCountdownComponent_SrvSetState) == 0x000008, "Wrong alignment on PyFireCountdownComponent_SrvSetState");
-static_assert(sizeof(PyFireCountdownComponent_SrvSetState) == 0x000018, "Wrong size on PyFireCountdownComponent_SrvSetState");
-static_assert(offsetof(PyFireCountdownComponent_SrvSetState, State_0) == 0x000000, "Member 'PyFireCountdownComponent_SrvSetState::State_0' has a wrong offset!");
-static_assert(offsetof(PyFireCountdownComponent_SrvSetState, CurTime) == 0x000010, "Member 'PyFireCountdownComponent_SrvSetState::CurTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyFireCountdownComponent_SrvSetState;
 
 }
 

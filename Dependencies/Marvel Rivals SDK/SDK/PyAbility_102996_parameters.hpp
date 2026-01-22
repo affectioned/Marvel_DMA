@@ -24,9 +24,7 @@ struct PyForceMoveToAbility_10299601_OnDashFinished final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyForceMoveToAbility_10299601_OnDashFinished) == 0x000001, "Wrong alignment on PyForceMoveToAbility_10299601_OnDashFinished");
-static_assert(sizeof(PyForceMoveToAbility_10299601_OnDashFinished) == 0x000001, "Wrong size on PyForceMoveToAbility_10299601_OnDashFinished");
-static_assert(offsetof(PyForceMoveToAbility_10299601_OnDashFinished, Reason) == 0x000000, "Member 'PyForceMoveToAbility_10299601_OnDashFinished::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyForceMoveToAbility_10299601_OnDashFinished;
 
 // PythonFunction PyAbility_102996.PyAbility_102996.GetTimelineIndexToPlay
 // 0x0004 (0x0004 - 0x0000)
@@ -35,20 +33,16 @@ struct PyAbility_102996_GetTimelineIndexToPlay final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102996_GetTimelineIndexToPlay) == 0x000004, "Wrong alignment on PyAbility_102996_GetTimelineIndexToPlay");
-static_assert(sizeof(PyAbility_102996_GetTimelineIndexToPlay) == 0x000004, "Wrong size on PyAbility_102996_GetTimelineIndexToPlay");
-static_assert(offsetof(PyAbility_102996_GetTimelineIndexToPlay, ReturnValue) == 0x000000, "Member 'PyAbility_102996_GetTimelineIndexToPlay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102996_GetTimelineIndexToPlay;
 
 // PythonFunction PyAbility_102996.PyProjectile_10299601.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10299601_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10299601_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_10299601_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_10299601_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_10299601_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_10299601_K2_OnProcessHit, ImpactResult) == 0x000000, "Member 'PyProjectile_10299601_K2_OnProcessHit::ImpactResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10299601_K2_OnProcessHit;
 
 // PythonFunction PyAbility_102996.PyEffectiveComponent_10299601.K2_OnPreApplyContainer
 // 0x0020 (0x0020 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10299601_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10299601_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10299601_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10299601_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10299601_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10299601_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10299601_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10299601_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10299601_K2_OnPreApplyContainer;
 
 }
 

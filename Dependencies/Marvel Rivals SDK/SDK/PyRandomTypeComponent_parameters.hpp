@@ -23,9 +23,7 @@ struct PyRandomTypeComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRandomTypeComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyRandomTypeComponent_ReceiveEndPlay");
-static_assert(sizeof(PyRandomTypeComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyRandomTypeComponent_ReceiveEndPlay");
-static_assert(offsetof(PyRandomTypeComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyRandomTypeComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyRandomTypeComponent_ReceiveEndPlay;
 
 // PythonFunction PyRandomTypeComponent.PyRandomTypeComponent.OnRandomTypesChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyRandomTypeComponent_OnRandomTypesChanged final
 public:
 	TArray<int32>                                 RandomTypes;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyRandomTypeComponent_OnRandomTypesChanged) == 0x000008, "Wrong alignment on PyRandomTypeComponent_OnRandomTypesChanged");
-static_assert(sizeof(PyRandomTypeComponent_OnRandomTypesChanged) == 0x000010, "Wrong size on PyRandomTypeComponent_OnRandomTypesChanged");
-static_assert(offsetof(PyRandomTypeComponent_OnRandomTypesChanged, RandomTypes) == 0x000000, "Member 'PyRandomTypeComponent_OnRandomTypesChanged::RandomTypes' has a wrong offset!");
+DUMPER7_ASSERTS_PyRandomTypeComponent_OnRandomTypesChanged;
 
 }
 

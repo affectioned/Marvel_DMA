@@ -47,20 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeroVoiceLineUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeroVoiceLineUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeroVoiceLineUnit_C")
 	}
 	static class UWBP_HeroVoiceLineUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeroVoiceLineUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_HeroVoiceLineUnit_C) == 0x000008, "Wrong alignment on UWBP_HeroVoiceLineUnit_C");
-static_assert(sizeof(UWBP_HeroVoiceLineUnit_C) == 0x0003E0, "Wrong size on UWBP_HeroVoiceLineUnit_C");
-static_assert(offsetof(UWBP_HeroVoiceLineUnit_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_HeroVoiceLineUnit_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLineUnit_C, AnimShow) == 0x0003C0, "Member 'UWBP_HeroVoiceLineUnit_C::AnimShow' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLineUnit_C, ActiveName) == 0x0003C8, "Member 'UWBP_HeroVoiceLineUnit_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLineUnit_C, Image_0) == 0x0003D0, "Member 'UWBP_HeroVoiceLineUnit_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroVoiceLineUnit_C, FadeOutTime) == 0x0003D8, "Member 'UWBP_HeroVoiceLineUnit_C::FadeOutTime' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeroVoiceLineUnit_C;
 
 }
 

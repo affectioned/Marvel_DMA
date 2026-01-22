@@ -21,9 +21,7 @@ struct PyAbilityScaleGravity_K2_OnEndAbility final
 public:
 	bool                                          cancelled;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityScaleGravity_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbilityScaleGravity_K2_OnEndAbility");
-static_assert(sizeof(PyAbilityScaleGravity_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbilityScaleGravity_K2_OnEndAbility");
-static_assert(offsetof(PyAbilityScaleGravity_K2_OnEndAbility, cancelled) == 0x000000, "Member 'PyAbilityScaleGravity_K2_OnEndAbility::cancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityScaleGravity_K2_OnEndAbility;
 
 }
 

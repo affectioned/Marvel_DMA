@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_UUCollab_Main.PyWidget_UUCollab_Main
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_UUCollab_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -31,22 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UUCollab_Main">();
+		STATIC_CLASS_IMPL("PyWidget_UUCollab_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UUCollab_Main")
 	}
 	static class UPyWidget_UUCollab_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UUCollab_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_UUCollab_Main) == 0x000008, "Wrong alignment on UPyWidget_UUCollab_Main");
-static_assert(sizeof(UPyWidget_UUCollab_Main) == 0x0005F8, "Wrong size on UPyWidget_UUCollab_Main");
+DUMPER7_ASSERTS_UPyWidget_UUCollab_Main;
 
 // PythonClass PyWidget_UUCollab_Main.PyWidget_UUCollab_Rewards
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UPyWidget_UUCollab_Rewards final : public UMarvelUserWidget
 {
 public:
-	class UWidgetAnimation*                       Anim_Flow;                                         // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Flow;                                         // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,19 +59,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UUCollab_Rewards">();
+		STATIC_CLASS_IMPL("PyWidget_UUCollab_Rewards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UUCollab_Rewards")
 	}
 	static class UPyWidget_UUCollab_Rewards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UUCollab_Rewards>();
 	}
 };
-static_assert(alignof(UPyWidget_UUCollab_Rewards) == 0x000008, "Wrong alignment on UPyWidget_UUCollab_Rewards");
-static_assert(sizeof(UPyWidget_UUCollab_Rewards) == 0x000570, "Wrong size on UPyWidget_UUCollab_Rewards");
-static_assert(offsetof(UPyWidget_UUCollab_Rewards, Anim_Flow) == 0x000568, "Member 'UPyWidget_UUCollab_Rewards::Anim_Flow' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_UUCollab_Rewards;
 
 // PythonClass PyWidget_UUCollab_Main.PyWidget_UUCollab_Banner
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_UUCollab_Banner final : public UPyWidget_HomeEntrance_Activity_Item_Widget_Base
 {
 public:
@@ -77,15 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UUCollab_Banner">();
+		STATIC_CLASS_IMPL("PyWidget_UUCollab_Banner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UUCollab_Banner")
 	}
 	static class UPyWidget_UUCollab_Banner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UUCollab_Banner>();
 	}
 };
-static_assert(alignof(UPyWidget_UUCollab_Banner) == 0x000008, "Wrong alignment on UPyWidget_UUCollab_Banner");
-static_assert(sizeof(UPyWidget_UUCollab_Banner) == 0x0005C0, "Wrong size on UPyWidget_UUCollab_Banner");
+DUMPER7_ASSERTS_UPyWidget_UUCollab_Banner;
 
 }
 

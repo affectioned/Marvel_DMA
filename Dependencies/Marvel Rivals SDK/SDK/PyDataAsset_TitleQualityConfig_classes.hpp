@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyDataAsset_TitleQualityConfig_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -30,18 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTitleQualityColorConfig">();
+		STATIC_CLASS_IMPL("PyTitleQualityColorConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTitleQualityColorConfig")
 	}
 	static class UPyTitleQualityColorConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTitleQualityColorConfig>();
 	}
 };
-static_assert(alignof(UPyTitleQualityColorConfig) == 0x000008, "Wrong alignment on UPyTitleQualityColorConfig");
-static_assert(sizeof(UPyTitleQualityColorConfig) == 0x000098, "Wrong size on UPyTitleQualityColorConfig");
-static_assert(offsetof(UPyTitleQualityColorConfig, TitleColor_Dict) == 0x000038, "Member 'UPyTitleQualityColorConfig::TitleColor_Dict' has a wrong offset!");
-static_assert(offsetof(UPyTitleQualityColorConfig, Title_Deluxe_Mat_Dark) == 0x000088, "Member 'UPyTitleQualityColorConfig::Title_Deluxe_Mat_Dark' has a wrong offset!");
-static_assert(offsetof(UPyTitleQualityColorConfig, Title_Deluxe_Mat_Light) == 0x000090, "Member 'UPyTitleQualityColorConfig::Title_Deluxe_Mat_Light' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTitleQualityColorConfig;
 
 }
 

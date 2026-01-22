@@ -23,9 +23,7 @@ struct PySubVoMgr_Ability_OnVoiceBuffTaken final
 public:
 	struct FHeroVoiceBuffRequest                  Request;                                           // 0x0000(0x00D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySubVoMgr_Ability_OnVoiceBuffTaken) == 0x000008, "Wrong alignment on PySubVoMgr_Ability_OnVoiceBuffTaken");
-static_assert(sizeof(PySubVoMgr_Ability_OnVoiceBuffTaken) == 0x0000D0, "Wrong size on PySubVoMgr_Ability_OnVoiceBuffTaken");
-static_assert(offsetof(PySubVoMgr_Ability_OnVoiceBuffTaken, Request) == 0x000000, "Member 'PySubVoMgr_Ability_OnVoiceBuffTaken::Request' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Ability_OnVoiceBuffTaken;
 
 // PythonFunction PySubVoMgr_Ability.PySubVoMgr_Ability.OnVoiceBuffApply
 // 0x00D0 (0x00D0 - 0x0000)
@@ -34,9 +32,7 @@ struct PySubVoMgr_Ability_OnVoiceBuffApply final
 public:
 	struct FHeroVoiceBuffRequest                  Request;                                           // 0x0000(0x00D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySubVoMgr_Ability_OnVoiceBuffApply) == 0x000008, "Wrong alignment on PySubVoMgr_Ability_OnVoiceBuffApply");
-static_assert(sizeof(PySubVoMgr_Ability_OnVoiceBuffApply) == 0x0000D0, "Wrong size on PySubVoMgr_Ability_OnVoiceBuffApply");
-static_assert(offsetof(PySubVoMgr_Ability_OnVoiceBuffApply, Request) == 0x000000, "Member 'PySubVoMgr_Ability_OnVoiceBuffApply::Request' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Ability_OnVoiceBuffApply;
 
 }
 

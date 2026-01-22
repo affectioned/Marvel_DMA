@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Instant_10185101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10185101_OnExecuteFX");
-static_assert(sizeof(PyCue_Ability_Instant_10185101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Ability_Instant_10185101_OnExecuteFX");
-static_assert(offsetof(PyCue_Ability_Instant_10185101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10185101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10185101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10185101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10185101_OnExecuteFX;
 
 // PythonFunction PyAbility_101851.PyCue_Ability_Instant_10185102.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Instant_10185102_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10185102_OnExecuteFX");
-static_assert(sizeof(PyCue_Ability_Instant_10185102_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Ability_Instant_10185102_OnExecuteFX");
-static_assert(offsetof(PyCue_Ability_Instant_10185102_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10185102_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10185102_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10185102_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10185102_OnExecuteFX;
 
 // PythonFunction PyAbility_101851.PyCue_Scope_Instant_10185101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -50,10 +44,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Instant_10185101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Scope_Instant_10185101_OnExecuteFX");
-static_assert(sizeof(PyCue_Scope_Instant_10185101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Scope_Instant_10185101_OnExecuteFX");
-static_assert(offsetof(PyCue_Scope_Instant_10185101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Instant_10185101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Instant_10185101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Instant_10185101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Instant_10185101_OnExecuteFX;
 
 }
 

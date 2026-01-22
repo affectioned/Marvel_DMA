@@ -25,10 +25,7 @@ public:
 	int32                                         ModeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bNewState;                                         // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104821_OnFireStateAudio) == 0x000004, "Wrong alignment on PyCue_Weapon_Loop_104821_OnFireStateAudio");
-static_assert(sizeof(PyCue_Weapon_Loop_104821_OnFireStateAudio) == 0x000008, "Wrong size on PyCue_Weapon_Loop_104821_OnFireStateAudio");
-static_assert(offsetof(PyCue_Weapon_Loop_104821_OnFireStateAudio, ModeIndex) == 0x000000, "Member 'PyCue_Weapon_Loop_104821_OnFireStateAudio::ModeIndex' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104821_OnFireStateAudio, bNewState) == 0x000004, "Member 'PyCue_Weapon_Loop_104821_OnFireStateAudio::bNewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104821_OnFireStateAudio;
 
 // PythonFunction PyCue_Weapon_Loop_104821.PyCue_Weapon_Loop_104821.OnExecuteAudio
 // 0x0288 (0x0288 - 0x0000)
@@ -39,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FWeaponCueParams                       CueParams;                                         // 0x01D8(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104821_OnExecuteAudio) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_104821_OnExecuteAudio");
-static_assert(sizeof(PyCue_Weapon_Loop_104821_OnExecuteAudio) == 0x000288, "Wrong size on PyCue_Weapon_Loop_104821_OnExecuteAudio");
-static_assert(offsetof(PyCue_Weapon_Loop_104821_OnExecuteAudio, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_104821_OnExecuteAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104821_OnExecuteAudio, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_104821_OnExecuteAudio::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104821_OnExecuteAudio, CueParams) == 0x0001D8, "Member 'PyCue_Weapon_Loop_104821_OnExecuteAudio::CueParams' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104821_OnExecuteAudio;
 
 }
 

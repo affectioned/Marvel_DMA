@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LevelScopeCheckComponentBP.LevelScopeCheckComponentBP_C
-// 0x0000 (0x0D80 - 0x0D80)
+// 0x0000 (0x0DA0 - 0x0DA0)
 class ULevelScopeCheckComponentBP_C final : public ULevelScopeCheckComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelScopeCheckComponentBP_C">();
+		BP_STATIC_CLASS_IMPL("LevelScopeCheckComponentBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelScopeCheckComponentBP_C")
 	}
 	static class ULevelScopeCheckComponentBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelScopeCheckComponentBP_C>();
 	}
 };
-static_assert(alignof(ULevelScopeCheckComponentBP_C) == 0x000010, "Wrong alignment on ULevelScopeCheckComponentBP_C");
-static_assert(sizeof(ULevelScopeCheckComponentBP_C) == 0x000D80, "Wrong size on ULevelScopeCheckComponentBP_C");
+DUMPER7_ASSERTS_ULevelScopeCheckComponentBP_C;
 
 }
 

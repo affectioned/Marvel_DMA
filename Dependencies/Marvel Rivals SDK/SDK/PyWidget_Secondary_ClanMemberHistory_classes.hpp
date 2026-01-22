@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ClanMemberHistory.PyWidget_Secondary_ClanMemberHistory
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ClanMemberHistory final : public UPyMarvelUserWidget
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanMemberHistory">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanMemberHistory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanMemberHistory")
 	}
 	static class UPyWidget_Secondary_ClanMemberHistory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanMemberHistory>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanMemberHistory) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanMemberHistory");
-static_assert(sizeof(UPyWidget_Secondary_ClanMemberHistory) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ClanMemberHistory");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanMemberHistory;
 
 // PythonClass PyWidget_Secondary_ClanMemberHistory.ClanMemberHistoryItem
 // 0x0000 (0x0030 - 0x0030)
@@ -47,18 +50,21 @@ class UClanMemberHistoryItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClanMemberHistoryItem">();
+		STATIC_CLASS_IMPL("ClanMemberHistoryItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClanMemberHistoryItem")
 	}
 	static class UClanMemberHistoryItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClanMemberHistoryItem>();
 	}
 };
-static_assert(alignof(UClanMemberHistoryItem) == 0x000008, "Wrong alignment on UClanMemberHistoryItem");
-static_assert(sizeof(UClanMemberHistoryItem) == 0x000030, "Wrong size on UClanMemberHistoryItem");
+DUMPER7_ASSERTS_UClanMemberHistoryItem;
 
 // PythonClass PyWidget_Secondary_ClanMemberHistory.PyWidget_ClanMemberHistoryEntry
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_ClanMemberHistoryEntry final : public UWidget_ListEntry
 {
 public:
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanMemberHistoryEntry">();
+		STATIC_CLASS_IMPL("PyWidget_ClanMemberHistoryEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanMemberHistoryEntry")
 	}
 	static class UPyWidget_ClanMemberHistoryEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanMemberHistoryEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanMemberHistoryEntry) == 0x000008, "Wrong alignment on UPyWidget_ClanMemberHistoryEntry");
-static_assert(sizeof(UPyWidget_ClanMemberHistoryEntry) == 0x000570, "Wrong size on UPyWidget_ClanMemberHistoryEntry");
+DUMPER7_ASSERTS_UPyWidget_ClanMemberHistoryEntry;
 
 }
 

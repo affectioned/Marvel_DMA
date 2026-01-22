@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoorV2">();
+		STATIC_CLASS_IMPL("PyDoorV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoorV2")
 	}
 	static class APyDoorV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoorV2>();
 	}
 };
-static_assert(alignof(APyDoorV2) == 0x000010, "Wrong alignment on APyDoorV2");
-static_assert(sizeof(APyDoorV2) == 0x000790, "Wrong size on APyDoorV2");
-static_assert(offsetof(APyDoorV2, OpenState) == 0x000780, "Member 'APyDoorV2::OpenState' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoorV2;
 
 }
 

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingPageBase.PyWidget_SettingPageBase
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_SettingPageBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UObject>                    Class_UIController;                                // 0x05C0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, class FText>                      RestoringTips;                                     // 0x05C8(0x0050)(Edit, NativeAccessSpecifierPublic)
-	class UObject*                                UIController;                                      // 0x0618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UObject>                    Class_UIController;                                // 0x05C8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, class FText>                      RestoringTips;                                     // 0x05D0(0x0050)(Edit, NativeAccessSpecifierPublic)
+	class UObject*                                UIController;                                      // 0x0620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingPageBase">();
+		STATIC_CLASS_IMPL("PyWidget_SettingPageBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingPageBase")
 	}
 	static class UPyWidget_SettingPageBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingPageBase>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingPageBase) == 0x000008, "Wrong alignment on UPyWidget_SettingPageBase");
-static_assert(sizeof(UPyWidget_SettingPageBase) == 0x000620, "Wrong size on UPyWidget_SettingPageBase");
-static_assert(offsetof(UPyWidget_SettingPageBase, Class_UIController) == 0x0005C0, "Member 'UPyWidget_SettingPageBase::Class_UIController' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPageBase, RestoringTips) == 0x0005C8, "Member 'UPyWidget_SettingPageBase::RestoringTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPageBase, UIController) == 0x000618, "Member 'UPyWidget_SettingPageBase::UIController' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingPageBase;
 
 }
 

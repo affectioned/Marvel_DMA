@@ -21,9 +21,7 @@ struct PyWidget_Replay_SkillState_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Replay_SkillState_PreConstruct");
-static_assert(sizeof(PyWidget_Replay_SkillState_PreConstruct) == 0x000001, "Wrong size on PyWidget_Replay_SkillState_PreConstruct");
-static_assert(offsetof(PyWidget_Replay_SkillState_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Replay_SkillState_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_PreConstruct;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetVxColor
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Replay_SkillState_SetVxColor final
 public:
 	bool                                          is_blue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetVxColor) == 0x000001, "Wrong alignment on PyWidget_Replay_SkillState_SetVxColor");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetVxColor) == 0x000001, "Wrong size on PyWidget_Replay_SkillState_SetVxColor");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetVxColor, is_blue) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetVxColor::is_blue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetVxColor;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetAbilityIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Replay_SkillState_SetAbilityIcon final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetAbilityIcon) == 0x000004, "Wrong alignment on PyWidget_Replay_SkillState_SetAbilityIcon");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetAbilityIcon) == 0x000004, "Wrong size on PyWidget_Replay_SkillState_SetAbilityIcon");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetAbilityIcon, hero_id) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetAbilityIcon::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetAbilityIcon;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetAbilityIconOutline
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Replay_SkillState_SetAbilityIconOutline final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetAbilityIconOutline) == 0x000004, "Wrong alignment on PyWidget_Replay_SkillState_SetAbilityIconOutline");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetAbilityIconOutline) == 0x000004, "Wrong size on PyWidget_Replay_SkillState_SetAbilityIconOutline");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetAbilityIconOutline, hero_id) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetAbilityIconOutline::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetAbilityIconOutline;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetUltimateAbilityActive
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_Replay_SkillState_SetUltimateAbilityActive final
 public:
 	bool                                          IsActive;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetUltimateAbilityActive) == 0x000001, "Wrong alignment on PyWidget_Replay_SkillState_SetUltimateAbilityActive");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetUltimateAbilityActive) == 0x000001, "Wrong size on PyWidget_Replay_SkillState_SetUltimateAbilityActive");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetUltimateAbilityActive, IsActive) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetUltimateAbilityActive::IsActive' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetUltimateAbilityActive;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetEnergyPercent
 // 0x0004 (0x0004 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_Replay_SkillState_SetEnergyPercent final
 public:
 	float                                         Percent;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetEnergyPercent) == 0x000004, "Wrong alignment on PyWidget_Replay_SkillState_SetEnergyPercent");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetEnergyPercent) == 0x000004, "Wrong size on PyWidget_Replay_SkillState_SetEnergyPercent");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetEnergyPercent, Percent) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetEnergyPercent::Percent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetEnergyPercent;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.SetEnergyFull
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +75,7 @@ struct PyWidget_Replay_SkillState_SetEnergyFull final
 public:
 	bool                                          IsFull;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_SetEnergyFull) == 0x000001, "Wrong alignment on PyWidget_Replay_SkillState_SetEnergyFull");
-static_assert(sizeof(PyWidget_Replay_SkillState_SetEnergyFull) == 0x000001, "Wrong size on PyWidget_Replay_SkillState_SetEnergyFull");
-static_assert(offsetof(PyWidget_Replay_SkillState_SetEnergyFull, IsFull) == 0x000000, "Member 'PyWidget_Replay_SkillState_SetEnergyFull::IsFull' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_SetEnergyFull;
 
 // PythonFunction PyWidget_Replay_SkillState.PyWidget_Replay_SkillState.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -98,9 +84,7 @@ struct PyWidget_Replay_SkillState_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_SkillState_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Replay_SkillState_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Replay_SkillState_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Replay_SkillState_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Replay_SkillState_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Replay_SkillState_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_SkillState_OnAnimationFinished;
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerHonorPanel.PyWidget_CareerHonorPanel
-// 0x0128 (0x0720 - 0x05F8)
+// 0x0128 (0x0728 - 0x0600)
 class UPyWidget_CareerHonorPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                PageBtntem;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ScrollGuideStyle;                                  // 0x0600(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageBtntem;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ScrollGuideStyle;                                  // 0x0608(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHonorPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHonorPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHonorPanel")
 	}
 	static class UPyWidget_CareerHonorPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHonorPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHonorPanel) == 0x000008, "Wrong alignment on UPyWidget_CareerHonorPanel");
-static_assert(sizeof(UPyWidget_CareerHonorPanel) == 0x000720, "Wrong size on UPyWidget_CareerHonorPanel");
-static_assert(offsetof(UPyWidget_CareerHonorPanel, PageBtntem) == 0x0005F8, "Member 'UPyWidget_CareerHonorPanel::PageBtntem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHonorPanel, ScrollGuideStyle) == 0x000600, "Member 'UPyWidget_CareerHonorPanel::ScrollGuideStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHonorPanel;
 
 }
 

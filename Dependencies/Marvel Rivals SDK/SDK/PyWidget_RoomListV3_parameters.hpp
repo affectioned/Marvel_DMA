@@ -25,10 +25,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomListV3_OnReceiveInputAction) == 0x000004, "Wrong alignment on PyWidget_RoomListV3_OnReceiveInputAction");
-static_assert(sizeof(PyWidget_RoomListV3_OnReceiveInputAction) == 0x000010, "Wrong size on PyWidget_RoomListV3_OnReceiveInputAction");
-static_assert(offsetof(PyWidget_RoomListV3_OnReceiveInputAction, ActionName) == 0x000000, "Member 'PyWidget_RoomListV3_OnReceiveInputAction::ActionName' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomListV3_OnReceiveInputAction, EventType) == 0x00000C, "Member 'PyWidget_RoomListV3_OnReceiveInputAction::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomListV3_OnReceiveInputAction;
 
 // PythonFunction PyWidget_RoomListV3.PyWidget_RoomListV3.on_custom_navigation_to_select_room
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomListV3_on_custom_navigation_to_select_room) == 0x000008, "Wrong alignment on PyWidget_RoomListV3_on_custom_navigation_to_select_room");
-static_assert(sizeof(PyWidget_RoomListV3_on_custom_navigation_to_select_room) == 0x000010, "Wrong size on PyWidget_RoomListV3_on_custom_navigation_to_select_room");
-static_assert(offsetof(PyWidget_RoomListV3_on_custom_navigation_to_select_room, NavType) == 0x000000, "Member 'PyWidget_RoomListV3_on_custom_navigation_to_select_room::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomListV3_on_custom_navigation_to_select_room, ReturnValue) == 0x000008, "Member 'PyWidget_RoomListV3_on_custom_navigation_to_select_room::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomListV3_on_custom_navigation_to_select_room;
 
 // PythonFunction PyWidget_RoomListV3.PyWidget_RoomListV3.on_custom_navigation_to_create_btn
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RoomListV3_on_custom_navigation_to_create_btn) == 0x000008, "Wrong alignment on PyWidget_RoomListV3_on_custom_navigation_to_create_btn");
-static_assert(sizeof(PyWidget_RoomListV3_on_custom_navigation_to_create_btn) == 0x000010, "Wrong size on PyWidget_RoomListV3_on_custom_navigation_to_create_btn");
-static_assert(offsetof(PyWidget_RoomListV3_on_custom_navigation_to_create_btn, NavType) == 0x000000, "Member 'PyWidget_RoomListV3_on_custom_navigation_to_create_btn::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_RoomListV3_on_custom_navigation_to_create_btn, ReturnValue) == 0x000008, "Member 'PyWidget_RoomListV3_on_custom_navigation_to_create_btn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RoomListV3_on_custom_navigation_to_create_btn;
 
 }
 

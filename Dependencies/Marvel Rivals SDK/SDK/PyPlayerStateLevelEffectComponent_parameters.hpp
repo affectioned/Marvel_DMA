@@ -10,20 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
+
 
 namespace SDK::Params
 {
-
-// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.OnCharacterRegister
-// 0x0008 (0x0008 - 0x0000)
-struct PyPlayerStateLevelEffectComponent_OnCharacterRegister final
-{
-public:
-	class AActor*                                 Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyPlayerStateLevelEffectComponent_OnCharacterRegister) == 0x000008, "Wrong alignment on PyPlayerStateLevelEffectComponent_OnCharacterRegister");
-static_assert(sizeof(PyPlayerStateLevelEffectComponent_OnCharacterRegister) == 0x000008, "Wrong size on PyPlayerStateLevelEffectComponent_OnCharacterRegister");
-static_assert(offsetof(PyPlayerStateLevelEffectComponent_OnCharacterRegister, Character) == 0x000000, "Member 'PyPlayerStateLevelEffectComponent_OnCharacterRegister::Character' has a wrong offset!");
 
 // PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.OnPlayerPossessCharacter
 // 0x0010 (0x0010 - 0x0000)
@@ -33,10 +24,34 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter) == 0x000008, "Wrong alignment on PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter");
-static_assert(sizeof(PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter) == 0x000010, "Wrong size on PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter");
-static_assert(offsetof(PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter, PlayerState) == 0x000000, "Member 'PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter, Character) == 0x000008, "Member 'PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyPlayerStateLevelEffectComponent_OnPlayerPossessCharacter;
+
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PreReplicatedRemove
+// 0x0030 (0x0030 - 0x0000)
+struct PyPlayerStateLevelEffectComponent_K2_PreReplicatedRemove final
+{
+public:
+	struct FLevelEffectItem                       EffectInfo;                                        // 0x0000(0x0030)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_PyPlayerStateLevelEffectComponent_K2_PreReplicatedRemove;
+
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PostReplicatedAdd
+// 0x0030 (0x0030 - 0x0000)
+struct PyPlayerStateLevelEffectComponent_K2_PostReplicatedAdd final
+{
+public:
+	struct FLevelEffectItem                       EffectInfo;                                        // 0x0000(0x0030)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_PyPlayerStateLevelEffectComponent_K2_PostReplicatedAdd;
+
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PostReplicatedChange
+// 0x0030 (0x0030 - 0x0000)
+struct PyPlayerStateLevelEffectComponent_K2_PostReplicatedChange final
+{
+public:
+	struct FLevelEffectItem                       EffectInfo;                                        // 0x0000(0x0030)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_PyPlayerStateLevelEffectComponent_K2_PostReplicatedChange;
 
 }
 

@@ -40,22 +40,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default_4;                           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList) == 0x000008, "Wrong alignment on WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList");
-static_assert(sizeof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList) == 0x000048, "Wrong size on WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, EntryPoint) == 0x000000, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_bool_Variable) == 0x000004, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_byte_Variable) == 0x000005, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_bool_Variable_1) == 0x000007, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_bool_Variable_2) == 0x000008, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Select_Default) == 0x000010, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_bool_Variable_3) == 0x000018, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Select_Default_1) == 0x000020, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Select_Default_2) == 0x000028, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Event_IsDesignTime) == 0x000029, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Select_Default_3) == 0x000030, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, Temp_bool_Variable_4) == 0x000038, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList, K2Node_Select_Default_4) == 0x000040, "Member 'WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList::K2Node_Select_Default_4' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Com_Platform_HList_C_ExecuteUbergraph_WBP_Com_Platform_HList;
 
 // Function WBP_Com_Platform_HList.WBP_Com_Platform_HList_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +49,7 @@ struct WBP_Com_Platform_HList_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Com_Platform_HList_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Com_Platform_HList_C_PreConstruct");
-static_assert(sizeof(WBP_Com_Platform_HList_C_PreConstruct) == 0x000001, "Wrong size on WBP_Com_Platform_HList_C_PreConstruct");
-static_assert(offsetof(WBP_Com_Platform_HList_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Com_Platform_HList_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Com_Platform_HList_C_PreConstruct;
 
 }
 

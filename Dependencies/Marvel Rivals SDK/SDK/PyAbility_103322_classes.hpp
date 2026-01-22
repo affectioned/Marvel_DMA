@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103322_Base">();
+		STATIC_CLASS_IMPL("PyConfig_103322_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103322_Base")
 	}
 	static class UPyConfig_103322_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103322_Base>();
 	}
 };
-static_assert(alignof(UPyConfig_103322_Base) == 0x000008, "Wrong alignment on UPyConfig_103322_Base");
-static_assert(sizeof(UPyConfig_103322_Base) == 0x000128, "Wrong size on UPyConfig_103322_Base");
-static_assert(offsetof(UPyConfig_103322_Base, bNeedPullBullet) == 0x000120, "Member 'UPyConfig_103322_Base::bNeedPullBullet' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103322_Base, AutoPullBullet) == 0x000121, "Member 'UPyConfig_103322_Base::AutoPullBullet' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103322_Base;
 
 // PythonClass PyAbility_103322.PyConfig_103322
 // 0x0000 (0x0128 - 0x0128)
@@ -46,23 +47,26 @@ class UPyConfig_103322 final : public UPyConfig_103322_Base
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103322">();
+		STATIC_CLASS_IMPL("PyConfig_103322")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103322")
 	}
 	static class UPyConfig_103322* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103322>();
 	}
 };
-static_assert(alignof(UPyConfig_103322) == 0x000008, "Wrong alignment on UPyConfig_103322");
-static_assert(sizeof(UPyConfig_103322) == 0x000128, "Wrong size on UPyConfig_103322");
+DUMPER7_ASSERTS_UPyConfig_103322;
 
 // PythonClass PyAbility_103322.PyAbility_103322_Base
-// 0x0008 (0x2AE0 - 0x2AD8)
+// 0x0008 (0x2B30 - 0x2B28)
 class UPyAbility_103322_Base : public UAbility_106
 {
 public:
-	int32                                         SniperRifleID;                                     // 0x2AD8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LoadBulletAbilityID;                               // 0x2ADC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SniperRifleID;                                     // 0x2B28(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LoadBulletAbilityID;                               // 0x2B2C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -79,34 +83,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103322_Base">();
+		STATIC_CLASS_IMPL("PyAbility_103322_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103322_Base")
 	}
 	static class UPyAbility_103322_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103322_Base>();
 	}
 };
-static_assert(alignof(UPyAbility_103322_Base) == 0x000008, "Wrong alignment on UPyAbility_103322_Base");
-static_assert(sizeof(UPyAbility_103322_Base) == 0x002AE0, "Wrong size on UPyAbility_103322_Base");
-static_assert(offsetof(UPyAbility_103322_Base, SniperRifleID) == 0x002AD8, "Member 'UPyAbility_103322_Base::SniperRifleID' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103322_Base, LoadBulletAbilityID) == 0x002ADC, "Member 'UPyAbility_103322_Base::LoadBulletAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103322_Base;
 
 // PythonClass PyAbility_103322.PyAbility_103322
-// 0x0000 (0x2AE0 - 0x2AE0)
+// 0x0000 (0x2B30 - 0x2B30)
 class UPyAbility_103322 : public UPyAbility_103322_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103322">();
+		STATIC_CLASS_IMPL("PyAbility_103322")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103322")
 	}
 	static class UPyAbility_103322* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103322>();
 	}
 };
-static_assert(alignof(UPyAbility_103322) == 0x000008, "Wrong alignment on UPyAbility_103322");
-static_assert(sizeof(UPyAbility_103322) == 0x002AE0, "Wrong size on UPyAbility_103322");
+DUMPER7_ASSERTS_UPyAbility_103322;
 
 }
 

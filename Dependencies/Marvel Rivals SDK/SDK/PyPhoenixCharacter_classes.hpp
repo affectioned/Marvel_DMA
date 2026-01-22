@@ -17,82 +17,94 @@ namespace SDK
 {
 
 // PythonClass PyPhoenixCharacter.PyPhoenixCharacter
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class APyPhoenixCharacter : public APhoenixCharacter
 {
 public:
-	class UMarveSculptConfigComponent*            NormalSculptConfigComponent;                       // 0x21D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarveSculptConfigComponent*            PhoenixSculptConfigComponent;                      // 0x21D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            NormalSculptConfigComponent;                       // 0x22E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            PhoenixSculptConfigComponent;                      // 0x22E8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhoenixCharacter">();
+		STATIC_CLASS_IMPL("PyPhoenixCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhoenixCharacter")
 	}
 	static class APyPhoenixCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPhoenixCharacter>();
 	}
 };
-static_assert(alignof(APyPhoenixCharacter) == 0x000010, "Wrong alignment on APyPhoenixCharacter");
-static_assert(sizeof(APyPhoenixCharacter) == 0x0021E0, "Wrong size on APyPhoenixCharacter");
-static_assert(offsetof(APyPhoenixCharacter, NormalSculptConfigComponent) == 0x0021D0, "Member 'APyPhoenixCharacter::NormalSculptConfigComponent' has a wrong offset!");
-static_assert(offsetof(APyPhoenixCharacter, PhoenixSculptConfigComponent) == 0x0021D8, "Member 'APyPhoenixCharacter::PhoenixSculptConfigComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyPhoenixCharacter;
 
 // PythonClass PyPhoenixCharacter.PyPhoenixChildActor
-// 0x0000 (0x0E70 - 0x0E70)
+// 0x0000 (0x0E80 - 0x0E80)
 class APyPhoenixChildActor final : public APhoenixChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhoenixChildActor">();
+		STATIC_CLASS_IMPL("PyPhoenixChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhoenixChildActor")
 	}
 	static class APyPhoenixChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPhoenixChildActor>();
 	}
 };
-static_assert(alignof(APyPhoenixChildActor) == 0x000010, "Wrong alignment on APyPhoenixChildActor");
-static_assert(sizeof(APyPhoenixChildActor) == 0x000E70, "Wrong size on APyPhoenixChildActor");
+DUMPER7_ASSERTS_APyPhoenixChildActor;
 
 // PythonClass PyPhoenixCharacter.PyPhoenixPhantom
-// 0x0000 (0x14E0 - 0x14E0)
+// 0x0000 (0x1550 - 0x1550)
 class APyPhoenixPhantom : public APhoenixPhantom
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhoenixPhantom">();
+		STATIC_CLASS_IMPL("PyPhoenixPhantom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhoenixPhantom")
 	}
 	static class APyPhoenixPhantom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPhoenixPhantom>();
 	}
 };
-static_assert(alignof(APyPhoenixPhantom) == 0x000010, "Wrong alignment on APyPhoenixPhantom");
-static_assert(sizeof(APyPhoenixPhantom) == 0x0014E0, "Wrong size on APyPhoenixPhantom");
+DUMPER7_ASSERTS_APyPhoenixPhantom;
 
 // PythonClass PyPhoenixCharacter.PyPhoenixPhantomChildActor
-// 0x0000 (0x1100 - 0x1100)
+// 0x0000 (0x1110 - 0x1110)
 class APyPhoenixPhantomChildActor final : public APhoenixPhantomChildActor
 {
 public:
-	void K2_UpdatePhantomVisibility(bool bVisible, const struct FGameplayTag& InTag);
 	void ReceivePoolBeginPlay();
+	void ReceivePoolEndPlay();
+	void RefreshSkinIDAndSlots();
+	void K2_UpdatePhantomVisibility(bool bVisible, const struct FGameplayTag& InTag);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPhoenixPhantomChildActor">();
+		STATIC_CLASS_IMPL("PyPhoenixPhantomChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPhoenixPhantomChildActor")
 	}
 	static class APyPhoenixPhantomChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPhoenixPhantomChildActor>();
 	}
 };
-static_assert(alignof(APyPhoenixPhantomChildActor) == 0x000010, "Wrong alignment on APyPhoenixPhantomChildActor");
-static_assert(sizeof(APyPhoenixPhantomChildActor) == 0x001100, "Wrong size on APyPhoenixPhantomChildActor");
+DUMPER7_ASSERTS_APyPhoenixPhantomChildActor;
 
 }
 

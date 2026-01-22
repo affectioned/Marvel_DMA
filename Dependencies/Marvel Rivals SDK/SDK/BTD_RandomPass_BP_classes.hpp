@@ -23,15 +23,18 @@ class UBTD_RandomPass_BP_C final : public UBTD_PyRandomPass
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTD_RandomPass_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTD_RandomPass_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_RandomPass_BP_C")
 	}
 	static class UBTD_RandomPass_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_RandomPass_BP_C>();
 	}
 };
-static_assert(alignof(UBTD_RandomPass_BP_C) == 0x000008, "Wrong alignment on UBTD_RandomPass_BP_C");
-static_assert(sizeof(UBTD_RandomPass_BP_C) == 0x0000C0, "Wrong size on UBTD_RandomPass_BP_C");
+DUMPER7_ASSERTS_UBTD_RandomPass_BP_C;
 
 }
 

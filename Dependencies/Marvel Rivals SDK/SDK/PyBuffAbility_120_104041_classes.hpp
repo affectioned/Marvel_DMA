@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104041.PyBuffAbility_120_10404111
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10404111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         AdditionalScopeRadius;                             // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AdditionalScopeRadius;                             // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10404111">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10404111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10404111")
 	}
 	static class UPyBuffAbility_120_10404111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10404111>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10404111) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10404111");
-static_assert(sizeof(UPyBuffAbility_120_10404111) == 0x001378, "Wrong size on UPyBuffAbility_120_10404111");
-static_assert(offsetof(UPyBuffAbility_120_10404111, AdditionalScopeRadius) == 0x001370, "Member 'UPyBuffAbility_120_10404111::AdditionalScopeRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10404111;
 
 }
 

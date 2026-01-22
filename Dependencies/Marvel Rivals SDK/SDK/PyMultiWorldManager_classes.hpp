@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiWorldManager">();
+		STATIC_CLASS_IMPL("PyMultiWorldManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiWorldManager")
 	}
 	static class UPyMultiWorldManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiWorldManager>();
 	}
 };
-static_assert(alignof(UPyMultiWorldManager) == 0x000008, "Wrong alignment on UPyMultiWorldManager");
-static_assert(sizeof(UPyMultiWorldManager) == 0x000158, "Wrong size on UPyMultiWorldManager");
+DUMPER7_ASSERTS_UPyMultiWorldManager;
 
 }
 

@@ -10,49 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "Engine_structs.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_ChatPanelV4.PyWidget_ChatPanelV4
-// 0x0138 (0x0730 - 0x05F8)
+// 0x0140 (0x0740 - 0x0600)
 class UPyWidget_ChatPanelV4 : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                ChannelPointClass;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonChatChangeTabPlay;                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonChatMessagePlay;                     // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonChatOpenPlay;                        // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CommonChatClosePlay;                       // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CloseFlowPanel;                            // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              TipsOffset;                                        // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TipTime;                                           // 0x0638(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_63C[0x4];                                      // 0x063C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                MenuStyle;                                         // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShareStyle;                                        // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ExitChatStyle;                                     // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SendMessageStyle;                                  // 0x0670(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ScrollListStyle;                                   // 0x0680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatToggleAction;                                  // 0x0690(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChannelChangeAction;                               // 0x0698(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatBackAction;                                    // 0x06A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatPrevMsgAction;                                 // 0x06A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatNextMsgAction;                                 // 0x06B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ChatSwitchCatalogAction;                           // 0x06B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ChannelPointClass;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonChatChangeTabPlay;                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonChatMessagePlay;                     // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonChatOpenPlay;                        // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CommonChatClosePlay;                       // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CloseFlowPanel;                            // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              TipsOffset;                                        // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TipTime;                                           // 0x0640(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                MenuStyle;                                         // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShareStyle;                                        // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ExitChatStyle;                                     // 0x0668(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SendMessageStyle;                                  // 0x0678(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ScrollListStyle;                                   // 0x0688(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChatToggleAction;                                  // 0x0698(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChannelSwitchAction;                               // 0x06A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChatBackAction;                                    // 0x06A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChatPrevMsgAction;                                 // 0x06B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ChatNextMsgAction;                                 // 0x06B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              NormalChatMsgSize;                                 // 0x06C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              ShowLeagueTipChatMsgSize;                          // 0x06D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              NormalChatMsgPos;                                  // 0x06E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              ShowLeagueTipChatMsgPos;                           // 0x06F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              ChatCloseLeagueTipPos;                             // 0x0700(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ChatOpenLeagueTipPos;                              // 0x0710(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputMappingContext*                   ChatPanelContext;                                  // 0x0720(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputMappingContext*                   ChatPanelOuterContext;                             // 0x0728(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ChatCloseNoMsgLeagueTipPos;                        // 0x0710(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ChatOpenLeagueTipPos;                              // 0x0720(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputMappingContext*                   ChatPanelContext;                                  // 0x0730(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputMappingContext*                   ChatPanelOuterContext;                             // 0x0738(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,6 +62,7 @@ public:
 	void OnReceiveInputAction(class FName ActionName, const EInputEvent EventType);
 	void Activate(int32 TargetChannel);
 	void Deactivate();
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 	class UWidget* InputText_Up_Navigation(EUINavigation Navigation_0);
 	class UWidget* InputText_Down_Navigation(EUINavigation Navigation_0);
 	class UWidget* ListView_Normal_Down_Navigation(EUINavigation Navigation_0);
@@ -71,42 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatPanelV4">();
+		STATIC_CLASS_IMPL("PyWidget_ChatPanelV4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatPanelV4")
 	}
 	static class UPyWidget_ChatPanelV4* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatPanelV4>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatPanelV4) == 0x000008, "Wrong alignment on UPyWidget_ChatPanelV4");
-static_assert(sizeof(UPyWidget_ChatPanelV4) == 0x000730, "Wrong size on UPyWidget_ChatPanelV4");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChannelPointClass) == 0x0005F8, "Member 'UPyWidget_ChatPanelV4::ChannelPointClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, AkEvent_CommonChatChangeTabPlay) == 0x000600, "Member 'UPyWidget_ChatPanelV4::AkEvent_CommonChatChangeTabPlay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, AkEvent_CommonChatMessagePlay) == 0x000608, "Member 'UPyWidget_ChatPanelV4::AkEvent_CommonChatMessagePlay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, AkEvent_CommonChatOpenPlay) == 0x000610, "Member 'UPyWidget_ChatPanelV4::AkEvent_CommonChatOpenPlay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, AkEvent_CommonChatClosePlay) == 0x000618, "Member 'UPyWidget_ChatPanelV4::AkEvent_CommonChatClosePlay' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, AkEvent_CloseFlowPanel) == 0x000620, "Member 'UPyWidget_ChatPanelV4::AkEvent_CloseFlowPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, TipsOffset) == 0x000628, "Member 'UPyWidget_ChatPanelV4::TipsOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, TipTime) == 0x000638, "Member 'UPyWidget_ChatPanelV4::TipTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, MenuStyle) == 0x000640, "Member 'UPyWidget_ChatPanelV4::MenuStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ShareStyle) == 0x000650, "Member 'UPyWidget_ChatPanelV4::ShareStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ExitChatStyle) == 0x000660, "Member 'UPyWidget_ChatPanelV4::ExitChatStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, SendMessageStyle) == 0x000670, "Member 'UPyWidget_ChatPanelV4::SendMessageStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ScrollListStyle) == 0x000680, "Member 'UPyWidget_ChatPanelV4::ScrollListStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatToggleAction) == 0x000690, "Member 'UPyWidget_ChatPanelV4::ChatToggleAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChannelChangeAction) == 0x000698, "Member 'UPyWidget_ChatPanelV4::ChannelChangeAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatBackAction) == 0x0006A0, "Member 'UPyWidget_ChatPanelV4::ChatBackAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatPrevMsgAction) == 0x0006A8, "Member 'UPyWidget_ChatPanelV4::ChatPrevMsgAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatNextMsgAction) == 0x0006B0, "Member 'UPyWidget_ChatPanelV4::ChatNextMsgAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatSwitchCatalogAction) == 0x0006B8, "Member 'UPyWidget_ChatPanelV4::ChatSwitchCatalogAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, NormalChatMsgSize) == 0x0006C0, "Member 'UPyWidget_ChatPanelV4::NormalChatMsgSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ShowLeagueTipChatMsgSize) == 0x0006D0, "Member 'UPyWidget_ChatPanelV4::ShowLeagueTipChatMsgSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, NormalChatMsgPos) == 0x0006E0, "Member 'UPyWidget_ChatPanelV4::NormalChatMsgPos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ShowLeagueTipChatMsgPos) == 0x0006F0, "Member 'UPyWidget_ChatPanelV4::ShowLeagueTipChatMsgPos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatCloseLeagueTipPos) == 0x000700, "Member 'UPyWidget_ChatPanelV4::ChatCloseLeagueTipPos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatOpenLeagueTipPos) == 0x000710, "Member 'UPyWidget_ChatPanelV4::ChatOpenLeagueTipPos' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatPanelContext) == 0x000720, "Member 'UPyWidget_ChatPanelV4::ChatPanelContext' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPanelV4, ChatPanelOuterContext) == 0x000728, "Member 'UPyWidget_ChatPanelV4::ChatPanelOuterContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatPanelV4;
 
 }
 

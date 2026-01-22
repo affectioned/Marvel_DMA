@@ -18,55 +18,47 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GuidePanel.PyWidget_GuidePanel
-// 0x0290 (0x0850 - 0x05C0)
+// 0x0290 (0x0858 - 0x05C8)
 class UPyWidget_GuidePanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelHorizontalBox*                   HBox;                                              // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_GuidePanel_Button> Class_Button;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelGuideKeyOrderAsset*              KeyOrderAsset;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCommonGuidePanel;                                // 0x05D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        ScrollVertTipStyle;                                // 0x05E0(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ScrollHoriTipStyle;                                // 0x0700(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         Padding_Gamepad;                                   // 0x0820(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Padding_PC_Click;                                  // 0x0824(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Padding_PC_UnClick;                                // 0x0828(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Padding_First;                                     // 0x082C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    TipsWidgets;                                       // 0x0830(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& EventName)> OnTipClicked;                     // 0x0840(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelHorizontalBox*                   HBox;                                              // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_GuidePanel_Button> Class_Button;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelGuideKeyOrderAsset*              KeyOrderAsset;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCommonGuidePanel;                                // 0x05E0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E1[0x7];                                      // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        ScrollVertTipStyle;                                // 0x05E8(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ScrollHoriTipStyle;                                // 0x0708(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         Padding_Gamepad;                                   // 0x0828(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Padding_PC_Click;                                  // 0x082C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Padding_PC_UnClick;                                // 0x0830(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Padding_First;                                     // 0x0834(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    TipsWidgets;                                       // 0x0838(0x0010)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EventName)> OnTipClicked;                     // 0x0848(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
+	bool GetEnableRegisterInputContextBp();
 	void OnTipWidgetClicked(const class FString& event);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GuidePanel">();
+		STATIC_CLASS_IMPL("PyWidget_GuidePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GuidePanel")
 	}
 	static class UPyWidget_GuidePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GuidePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GuidePanel) == 0x000008, "Wrong alignment on UPyWidget_GuidePanel");
-static_assert(sizeof(UPyWidget_GuidePanel) == 0x000850, "Wrong size on UPyWidget_GuidePanel");
-static_assert(offsetof(UPyWidget_GuidePanel, HBox) == 0x0005C0, "Member 'UPyWidget_GuidePanel::HBox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, Class_Button) == 0x0005C8, "Member 'UPyWidget_GuidePanel::Class_Button' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, KeyOrderAsset) == 0x0005D0, "Member 'UPyWidget_GuidePanel::KeyOrderAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, IsCommonGuidePanel) == 0x0005D8, "Member 'UPyWidget_GuidePanel::IsCommonGuidePanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, ScrollVertTipStyle) == 0x0005E0, "Member 'UPyWidget_GuidePanel::ScrollVertTipStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, ScrollHoriTipStyle) == 0x000700, "Member 'UPyWidget_GuidePanel::ScrollHoriTipStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, Padding_Gamepad) == 0x000820, "Member 'UPyWidget_GuidePanel::Padding_Gamepad' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, Padding_PC_Click) == 0x000824, "Member 'UPyWidget_GuidePanel::Padding_PC_Click' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, Padding_PC_UnClick) == 0x000828, "Member 'UPyWidget_GuidePanel::Padding_PC_UnClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, Padding_First) == 0x00082C, "Member 'UPyWidget_GuidePanel::Padding_First' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, TipsWidgets) == 0x000830, "Member 'UPyWidget_GuidePanel::TipsWidgets' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GuidePanel, OnTipClicked) == 0x000840, "Member 'UPyWidget_GuidePanel::OnTipClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GuidePanel;
 
 }
 

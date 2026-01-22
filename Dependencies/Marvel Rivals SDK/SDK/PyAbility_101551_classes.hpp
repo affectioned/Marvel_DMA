@@ -26,19 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101551">();
+		STATIC_CLASS_IMPL("PyConfig_101551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101551")
 	}
 	static class UPyConfig_101551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101551>();
 	}
 };
-static_assert(alignof(UPyConfig_101551) == 0x000008, "Wrong alignment on UPyConfig_101551");
-static_assert(sizeof(UPyConfig_101551) == 0x0000A0, "Wrong size on UPyConfig_101551");
-static_assert(offsetof(UPyConfig_101551, BuffID) == 0x000098, "Member 'UPyConfig_101551::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101551;
 
 // PythonClass PyAbility_101551.PyAbility_101551
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101551 : public UMarvelGameplayAbility
 {
 public:
@@ -53,26 +55,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101551">();
+		STATIC_CLASS_IMPL("PyAbility_101551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101551")
 	}
 	static class UPyAbility_101551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101551>();
 	}
 };
-static_assert(alignof(UPyAbility_101551) == 0x000008, "Wrong alignment on UPyAbility_101551");
-static_assert(sizeof(UPyAbility_101551) == 0x0029F0, "Wrong size on UPyAbility_101551");
+DUMPER7_ASSERTS_UPyAbility_101551;
 
 // PythonClass PyAbility_101551.PyCue_Ability_Loop_10155102
-// 0x0020 (0x11D0 - 0x11B0)
+// 0x0020 (0x11E0 - 0x11C0)
 class APyCue_Ability_Loop_10155102 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         StormAudioId;                                      // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RangeEletricAudioId;                               // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferStormAudioId;                              // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferLittleStormAudioId;                        // 0x11BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransferEletricAudioId;                            // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StormAudioId;                                      // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RangeEletricAudioId;                               // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferStormAudioId;                              // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferLittleStormAudioId;                        // 0x11CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransferEletricAudioId;                            // 0x11D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -81,20 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10155102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10155102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10155102")
 	}
 	static class APyCue_Ability_Loop_10155102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10155102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10155102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10155102");
-static_assert(sizeof(APyCue_Ability_Loop_10155102) == 0x0011D0, "Wrong size on APyCue_Ability_Loop_10155102");
-static_assert(offsetof(APyCue_Ability_Loop_10155102, StormAudioId) == 0x0011B0, "Member 'APyCue_Ability_Loop_10155102::StormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10155102, RangeEletricAudioId) == 0x0011B4, "Member 'APyCue_Ability_Loop_10155102::RangeEletricAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10155102, TransferStormAudioId) == 0x0011B8, "Member 'APyCue_Ability_Loop_10155102::TransferStormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10155102, TransferLittleStormAudioId) == 0x0011BC, "Member 'APyCue_Ability_Loop_10155102::TransferLittleStormAudioId' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10155102, TransferEletricAudioId) == 0x0011C0, "Member 'APyCue_Ability_Loop_10155102::TransferEletricAudioId' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10155102;
 
 }
 

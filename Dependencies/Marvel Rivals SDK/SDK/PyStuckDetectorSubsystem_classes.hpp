@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyStuckDetectorSubsystem.PyStuckDetectorSubsystem
-// 0x0000 (0x0190 - 0x0190)
+// 0x0000 (0x00E0 - 0x00E0)
 class UPyStuckDetectorSubsystem final : public UStuckDetectorSubsystem
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyStuckDetectorSubsystem">();
+		STATIC_CLASS_IMPL("PyStuckDetectorSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyStuckDetectorSubsystem")
 	}
 	static class UPyStuckDetectorSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyStuckDetectorSubsystem>();
 	}
 };
-static_assert(alignof(UPyStuckDetectorSubsystem) == 0x000008, "Wrong alignment on UPyStuckDetectorSubsystem");
-static_assert(sizeof(UPyStuckDetectorSubsystem) == 0x000190, "Wrong size on UPyStuckDetectorSubsystem");
+DUMPER7_ASSERTS_UPyStuckDetectorSubsystem;
 
 }
 

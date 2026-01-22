@@ -39,29 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRangeBuilding001A_Part1_Des_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRangeBuilding001A_Part1_Des_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRangeBuilding001A_Part1_Des_C")
 	}
 	static class ASM_PracticeRangeBuilding001A_Part1_Des_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRangeBuilding001A_Part1_Des_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRangeBuilding001A_Part1_Des_C) == 0x000010, "Wrong alignment on ASM_PracticeRangeBuilding001A_Part1_Des_C");
-static_assert(sizeof(ASM_PracticeRangeBuilding001A_Part1_Des_C) == 0x0007D0, "Wrong size on ASM_PracticeRangeBuilding001A_Part1_Des_C");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bb) == 0x000760, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bb' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Ba) == 0x000768, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Ba' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bb_Decal) == 0x000770, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bb_Decal' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Ba_Decal) == 0x000778, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Ba_Decal' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc2) == 0x000780, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc2' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc4) == 0x000788, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc4' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc5) == 0x000790, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc5' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc6) == 0x000798, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc6' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc3) == 0x0007A0, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc3' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc) == 0x0007A8, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001Bc1) == 0x0007B0, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001Bc1' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, Main_Part) == 0x0007B8, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::Main_Part' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, DecalMesh) == 0x0007C0, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::DecalMesh' has a wrong offset!");
-static_assert(offsetof(ASM_PracticeRangeBuilding001A_Part1_Des_C, SM_PracticeRangeBuilding001A_Part1_Des) == 0x0007C8, "Member 'ASM_PracticeRangeBuilding001A_Part1_Des_C::SM_PracticeRangeBuilding001A_Part1_Des' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRangeBuilding001A_Part1_Des_C;
 
 }
 

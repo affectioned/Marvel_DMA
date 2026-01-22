@@ -55,6 +55,31 @@ void UPyWidget3D_Emoji_Character::Destruct()
 }
 
 
+// PythonFunction PyWidget3D_Emoji_Character.PyWidget3D_Emoji_Character.ShouldBeVisible
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyWidget3D_Emoji_Character::ShouldBeVisible()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget3D_Emoji_Character", "ShouldBeVisible");
+
+	Params::PyWidget3D_Emoji_Character_ShouldBeVisible Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction PyWidget3D_Emoji_Character.PyWidget3D_Emoji_Character.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

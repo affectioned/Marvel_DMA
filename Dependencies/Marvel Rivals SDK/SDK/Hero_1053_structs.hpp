@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 
 
@@ -17,20 +18,39 @@ namespace SDK
 {
 
 // ScriptStruct Hero_1053.EnergyRateInfo_105321
-// 0x03B0 (0x03B0 - 0x0000)
+// 0x04F0 (0x04F0 - 0x0000)
 struct FEnergyRateInfo_105321 final
 {
 public:
 	class FString                                 Desc;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EnergyIncrease;                                    // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       TraceRule;                                         // 0x0018(0x0398)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       TraceRule;                                         // 0x0018(0x04D8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEnergyRateInfo_105321) == 0x000008, "Wrong alignment on FEnergyRateInfo_105321");
-static_assert(sizeof(FEnergyRateInfo_105321) == 0x0003B0, "Wrong size on FEnergyRateInfo_105321");
-static_assert(offsetof(FEnergyRateInfo_105321, Desc) == 0x000000, "Member 'FEnergyRateInfo_105321::Desc' has a wrong offset!");
-static_assert(offsetof(FEnergyRateInfo_105321, EnergyIncrease) == 0x000010, "Member 'FEnergyRateInfo_105321::EnergyIncrease' has a wrong offset!");
-static_assert(offsetof(FEnergyRateInfo_105321, TraceRule) == 0x000018, "Member 'FEnergyRateInfo_105321::TraceRule' has a wrong offset!");
+DUMPER7_ASSERTS_FEnergyRateInfo_105321;
+
+// ScriptStruct Hero_1053.PlaceInfo_105392
+// 0x0080 (0x0080 - 0x0000)
+struct FPlaceInfo_105392 final
+{
+public:
+	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Extends;                                           // 0x0060(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPlaceInfo_105392;
+
+// ScriptStruct Hero_1053.StructCheckPoint
+// 0x0038 (0x0038 - 0x0000)
+struct FStructCheckPoint final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Direction;                                         // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CheckStatus;                                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FStructCheckPoint;
 
 }
 

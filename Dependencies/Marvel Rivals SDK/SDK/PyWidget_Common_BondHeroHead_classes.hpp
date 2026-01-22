@@ -17,16 +17,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_BondHeroHead.PyWidget_Common_BondHeroHead
-// 0x0028 (0x0750 - 0x0728)
+// 0x0040 (0x07C0 - 0x0780)
 class UPyWidget_Common_BondHeroHead : public UPyWidget_Button
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnClicked;                                 // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnHovered;                                 // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsMain;                                            // 0x0738(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_739[0x7];                                      // 0x0739(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelImage*                           Icon_Collaborative;                                // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RequestInputAciton;                                // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnClicked;                                 // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnHovered;                                 // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsMain;                                            // 0x0790(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_791[0x7];                                      // 0x0791(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelImage*                           Icon_Collaborative;                                // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RequestInputAciton;                                // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TankIcon;                                          // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DamageIcon;                                        // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SupportIcon;                                       // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_BondHeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_Common_BondHeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_BondHeroHead")
 	}
 	static class UPyWidget_Common_BondHeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_BondHeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_BondHeroHead) == 0x000008, "Wrong alignment on UPyWidget_Common_BondHeroHead");
-static_assert(sizeof(UPyWidget_Common_BondHeroHead) == 0x000750, "Wrong size on UPyWidget_Common_BondHeroHead");
-static_assert(offsetof(UPyWidget_Common_BondHeroHead, AkEvent_OnClicked) == 0x000728, "Member 'UPyWidget_Common_BondHeroHead::AkEvent_OnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondHeroHead, AkEvent_OnHovered) == 0x000730, "Member 'UPyWidget_Common_BondHeroHead::AkEvent_OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondHeroHead, IsMain) == 0x000738, "Member 'UPyWidget_Common_BondHeroHead::IsMain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondHeroHead, Icon_Collaborative) == 0x000740, "Member 'UPyWidget_Common_BondHeroHead::Icon_Collaborative' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondHeroHead, RequestInputAciton) == 0x000748, "Member 'UPyWidget_Common_BondHeroHead::RequestInputAciton' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_BondHeroHead;
 
 }
 

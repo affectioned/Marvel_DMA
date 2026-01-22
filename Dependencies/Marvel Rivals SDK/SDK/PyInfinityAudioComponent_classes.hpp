@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "PyAudioItemConfig_classes.hpp"
 #include "PyModeAudioComponent_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,26 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelInfinityAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelInfinityAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelInfinityAudioItem")
 	}
 	static class UPyLevelInfinityAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelInfinityAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelInfinityAudioItem) == 0x000008, "Wrong alignment on UPyLevelInfinityAudioItem");
-static_assert(sizeof(UPyLevelInfinityAudioItem) == 0x000188, "Wrong size on UPyLevelInfinityAudioItem");
-static_assert(offsetof(UPyLevelInfinityAudioItem, AfterCaptureCrystal) == 0x0000D8, "Member 'UPyLevelInfinityAudioItem::AfterCaptureCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, OccupyingCrystal) == 0x0000E8, "Member 'UPyLevelInfinityAudioItem::OccupyingCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalPlaced) == 0x0000F8, "Member 'UPyLevelInfinityAudioItem::CrystalPlaced' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalCaptured) == 0x000108, "Member 'UPyLevelInfinityAudioItem::CrystalCaptured' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalDrop) == 0x000118, "Member 'UPyLevelInfinityAudioItem::CrystalDrop' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalReset) == 0x000128, "Member 'UPyLevelInfinityAudioItem::CrystalReset' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalAlmostCharged) == 0x000138, "Member 'UPyLevelInfinityAudioItem::CrystalAlmostCharged' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalAlmostCharged2) == 0x000148, "Member 'UPyLevelInfinityAudioItem::CrystalAlmostCharged2' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalCharging) == 0x000158, "Member 'UPyLevelInfinityAudioItem::CrystalCharging' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalCharging2) == 0x000168, "Member 'UPyLevelInfinityAudioItem::CrystalCharging2' has a wrong offset!");
-static_assert(offsetof(UPyLevelInfinityAudioItem, CrystalCharged) == 0x000178, "Member 'UPyLevelInfinityAudioItem::CrystalCharged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelInfinityAudioItem;
 
 // PythonClass PyInfinityAudioComponent.PyInfinityAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -71,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyInfinityAudioComponent">();
+		STATIC_CLASS_IMPL("PyInfinityAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyInfinityAudioComponent")
 	}
 	static class UPyInfinityAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyInfinityAudioComponent>();
 	}
 };
-static_assert(alignof(UPyInfinityAudioComponent) == 0x000008, "Wrong alignment on UPyInfinityAudioComponent");
-static_assert(sizeof(UPyInfinityAudioComponent) == 0x000120, "Wrong size on UPyInfinityAudioComponent");
+DUMPER7_ASSERTS_UPyInfinityAudioComponent;
 
 }
 

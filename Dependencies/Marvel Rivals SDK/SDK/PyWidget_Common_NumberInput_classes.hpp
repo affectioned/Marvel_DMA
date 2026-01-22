@@ -20,14 +20,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_NumberInput.PyWidget_Common_NumberInput
-// 0x0260 (0x0820 - 0x05C0)
+// 0x0258 (0x0820 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_Common_NumberInput : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   HintText;                                          // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D8[0x8];                                      // 0x05D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   HintText;                                          // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            BtnInputNormalBrush;                               // 0x05E0(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            BtnInputEditingBrush;                              // 0x06B0(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	float                                         InputBoxWidth;                                     // 0x0780(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -75,7 +74,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NumberInput">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NumberInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NumberInput")
 	}
 	static class UPyWidget_Common_NumberInput* GetDefaultObj()
 	{
@@ -83,32 +86,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Common_NumberInput) == 0x000010, "Wrong alignment on UPyWidget_Common_NumberInput");
-static_assert(sizeof(UPyWidget_Common_NumberInput) == 0x000820, "Wrong size on UPyWidget_Common_NumberInput");
-static_assert(offsetof(UPyWidget_Common_NumberInput, HintText) == 0x0005C0, "Member 'UPyWidget_Common_NumberInput::HintText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, BtnInputNormalBrush) == 0x0005E0, "Member 'UPyWidget_Common_NumberInput::BtnInputNormalBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, BtnInputEditingBrush) == 0x0006B0, "Member 'UPyWidget_Common_NumberInput::BtnInputEditingBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, InputBoxWidth) == 0x000780, "Member 'UPyWidget_Common_NumberInput::InputBoxWidth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, IsEmptyTextAllowed) == 0x000784, "Member 'UPyWidget_Common_NumberInput::IsEmptyTextAllowed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, NumberType) == 0x000785, "Member 'UPyWidget_Common_NumberInput::NumberType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, EnableLengthLimit) == 0x000786, "Member 'UPyWidget_Common_NumberInput::EnableLengthLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, LengthLimit) == 0x000788, "Member 'UPyWidget_Common_NumberInput::LengthLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, EnableRangeLimit) == 0x00078C, "Member 'UPyWidget_Common_NumberInput::EnableRangeLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, DefaultValue) == 0x000790, "Member 'UPyWidget_Common_NumberInput::DefaultValue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, LowerLimit) == 0x000794, "Member 'UPyWidget_Common_NumberInput::LowerLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, UpperLimit) == 0x000798, "Member 'UPyWidget_Common_NumberInput::UpperLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, Input_Prompt) == 0x0007A0, "Member 'UPyWidget_Common_NumberInput::Input_Prompt' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, IsTipDownside) == 0x0007A8, "Member 'UPyWidget_Common_NumberInput::IsTipDownside' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, TipTime) == 0x0007AC, "Member 'UPyWidget_Common_NumberInput::TipTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, IsCenterAlign) == 0x0007B0, "Member 'UPyWidget_Common_NumberInput::IsCenterAlign' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, AKEvent_OnValueChanged) == 0x0007B8, "Member 'UPyWidget_Common_NumberInput::AKEvent_OnValueChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, TipsStyle) == 0x0007C0, "Member 'UPyWidget_Common_NumberInput::TipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, Watermark) == 0x0007D0, "Member 'UPyWidget_Common_NumberInput::Watermark' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, Input_Text) == 0x0007D8, "Member 'UPyWidget_Common_NumberInput::Input_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, RichText_Display) == 0x0007E0, "Member 'UPyWidget_Common_NumberInput::RichText_Display' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, OnSubmitText) == 0x0007E8, "Member 'UPyWidget_Common_NumberInput::OnSubmitText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, OnChangeText) == 0x0007F8, "Member 'UPyWidget_Common_NumberInput::OnChangeText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NumberInput, OnChangeDisplayTextVisible) == 0x000808, "Member 'UPyWidget_Common_NumberInput::OnChangeDisplayTextVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NumberInput;
 
 }
 

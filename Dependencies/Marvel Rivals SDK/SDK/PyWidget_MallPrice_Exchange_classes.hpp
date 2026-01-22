@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallPrice_Exchange.PyWidget_MallPrice_Exchange
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_MallPrice_Exchange final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_MallPrice>        PriceWidget;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnConfirmConsume;                                  // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_MallPrice>        PriceWidget;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnConfirmConsume;                                  // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallPrice_Exchange">();
+		STATIC_CLASS_IMPL("PyWidget_MallPrice_Exchange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallPrice_Exchange")
 	}
 	static class UPyWidget_MallPrice_Exchange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallPrice_Exchange>();
 	}
 };
-static_assert(alignof(UPyWidget_MallPrice_Exchange) == 0x000008, "Wrong alignment on UPyWidget_MallPrice_Exchange");
-static_assert(sizeof(UPyWidget_MallPrice_Exchange) == 0x0005D8, "Wrong size on UPyWidget_MallPrice_Exchange");
-static_assert(offsetof(UPyWidget_MallPrice_Exchange, PriceWidget) == 0x0005C0, "Member 'UPyWidget_MallPrice_Exchange::PriceWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallPrice_Exchange, OnConfirmConsume) == 0x0005C8, "Member 'UPyWidget_MallPrice_Exchange::OnConfirmConsume' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallPrice_Exchange;
 
 }
 

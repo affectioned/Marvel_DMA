@@ -43,22 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHiveMonsterDevice">();
+		STATIC_CLASS_IMPL("PyHiveMonsterDevice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHiveMonsterDevice")
 	}
 	static class APyHiveMonsterDevice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHiveMonsterDevice>();
 	}
 };
-static_assert(alignof(APyHiveMonsterDevice) == 0x000010, "Wrong alignment on APyHiveMonsterDevice");
-static_assert(sizeof(APyHiveMonsterDevice) == 0x000720, "Wrong size on APyHiveMonsterDevice");
-static_assert(offsetof(APyHiveMonsterDevice, FocusControl) == 0x0006E0, "Member 'APyHiveMonsterDevice::FocusControl' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, SeqActorLife) == 0x0006E8, "Member 'APyHiveMonsterDevice::SeqActorLife' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, SeqActorFull) == 0x0006F0, "Member 'APyHiveMonsterDevice::SeqActorFull' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, SeqActorEmpty) == 0x0006F8, "Member 'APyHiveMonsterDevice::SeqActorEmpty' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, UpAudio) == 0x000700, "Member 'APyHiveMonsterDevice::UpAudio' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, DownAudio) == 0x000708, "Member 'APyHiveMonsterDevice::DownAudio' has a wrong offset!");
-static_assert(offsetof(APyHiveMonsterDevice, DefaultWaterHeight) == 0x000710, "Member 'APyHiveMonsterDevice::DefaultWaterHeight' has a wrong offset!");
+DUMPER7_ASSERTS_APyHiveMonsterDevice;
 
 }
 

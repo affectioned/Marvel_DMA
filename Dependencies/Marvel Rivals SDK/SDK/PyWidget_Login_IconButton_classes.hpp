@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Login_IconButton.PyWidget_Login_IconButton
-// 0x0000 (0x0768 - 0x0768)
+// 0x0000 (0x07C0 - 0x07C0)
 class UPyWidget_Login_IconButton final : public UPyWidget_CommonButton_Icon
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Login_IconButton">();
+		STATIC_CLASS_IMPL("PyWidget_Login_IconButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Login_IconButton")
 	}
 	static class UPyWidget_Login_IconButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Login_IconButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Login_IconButton) == 0x000008, "Wrong alignment on UPyWidget_Login_IconButton");
-static_assert(sizeof(UPyWidget_Login_IconButton) == 0x000768, "Wrong size on UPyWidget_Login_IconButton");
+DUMPER7_ASSERTS_UPyWidget_Login_IconButton;
 
 }
 

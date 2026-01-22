@@ -44,29 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAINoviceSpawnActor">();
+		STATIC_CLASS_IMPL("PyAINoviceSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAINoviceSpawnActor")
 	}
 	static class APyAINoviceSpawnActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAINoviceSpawnActor>();
 	}
 };
-static_assert(alignof(APyAINoviceSpawnActor) == 0x000010, "Wrong alignment on APyAINoviceSpawnActor");
-static_assert(sizeof(APyAINoviceSpawnActor) == 0x0007A0, "Wrong size on APyAINoviceSpawnActor");
-static_assert(offsetof(APyAINoviceSpawnActor, TrainingAITag) == 0x0006E8, "Member 'APyAINoviceSpawnActor::TrainingAITag' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, AIName) == 0x000750, "Member 'APyAINoviceSpawnActor::AIName' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, HeroID) == 0x000760, "Member 'APyAINoviceSpawnActor::HeroID' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, NeedFly) == 0x000764, "Member 'APyAINoviceSpawnActor::NeedFly' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, StartWayPoint) == 0x000768, "Member 'APyAINoviceSpawnActor::StartWayPoint' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, Camp) == 0x000770, "Member 'APyAINoviceSpawnActor::Camp' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, AIBehaviorTree) == 0x000778, "Member 'APyAINoviceSpawnActor::AIBehaviorTree' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, Difficulty) == 0x000780, "Member 'APyAINoviceSpawnActor::Difficulty' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, ReliveTime) == 0x000784, "Member 'APyAINoviceSpawnActor::ReliveTime' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, CanAttack) == 0x000788, "Member 'APyAINoviceSpawnActor::CanAttack' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, AttackDuration) == 0x00078C, "Member 'APyAINoviceSpawnActor::AttackDuration' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, CooldownDuration) == 0x000790, "Member 'APyAINoviceSpawnActor::CooldownDuration' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, DamageFactor) == 0x000794, "Member 'APyAINoviceSpawnActor::DamageFactor' has a wrong offset!");
-static_assert(offsetof(APyAINoviceSpawnActor, DynamicReborn) == 0x000798, "Member 'APyAINoviceSpawnActor::DynamicReborn' has a wrong offset!");
+DUMPER7_ASSERTS_APyAINoviceSpawnActor;
 
 }
 

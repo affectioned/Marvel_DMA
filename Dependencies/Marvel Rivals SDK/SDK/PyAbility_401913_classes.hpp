@@ -31,23 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_401913">();
+		STATIC_CLASS_IMPL("PyConfig_401913")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_401913")
 	}
 	static class UPyConfig_401913* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_401913>();
 	}
 };
-static_assert(alignof(UPyConfig_401913) == 0x000008, "Wrong alignment on UPyConfig_401913");
-static_assert(sizeof(UPyConfig_401913) == 0x000148, "Wrong size on UPyConfig_401913");
-static_assert(offsetof(UPyConfig_401913, RoundStartGainEnergy) == 0x000098, "Member 'UPyConfig_401913::RoundStartGainEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401913, WinStreakGainEnergy) == 0x0000A0, "Member 'UPyConfig_401913::WinStreakGainEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401913, LoseStreakGainEnergy) == 0x0000F0, "Member 'UPyConfig_401913::LoseStreakGainEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401913, BuffID) == 0x000140, "Member 'UPyConfig_401913::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401913, LimitOnceRelease) == 0x000144, "Member 'UPyConfig_401913::LimitOnceRelease' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_401913;
 
 // PythonClass PyAbility_401913.PyAbility_401913
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_401913 : public UAbility_108
 {
 public:
@@ -60,23 +58,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_401913">();
+		STATIC_CLASS_IMPL("PyAbility_401913")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_401913")
 	}
 	static class UPyAbility_401913* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_401913>();
 	}
 };
-static_assert(alignof(UPyAbility_401913) == 0x000008, "Wrong alignment on UPyAbility_401913");
-static_assert(sizeof(UPyAbility_401913) == 0x0029F8, "Wrong size on UPyAbility_401913");
+DUMPER7_ASSERTS_UPyAbility_401913;
 
 // PythonClass PyAbility_401913.PyBuffAbility_40191301
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_40191301 : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         DamageBuffID;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageInterval;                                    // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageBuffID;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageInterval;                                    // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -86,17 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_40191301">();
+		STATIC_CLASS_IMPL("PyBuffAbility_40191301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_40191301")
 	}
 	static class UPyBuffAbility_40191301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_40191301>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_40191301) == 0x000008, "Wrong alignment on UPyBuffAbility_40191301");
-static_assert(sizeof(UPyBuffAbility_40191301) == 0x001378, "Wrong size on UPyBuffAbility_40191301");
-static_assert(offsetof(UPyBuffAbility_40191301, DamageBuffID) == 0x001370, "Member 'UPyBuffAbility_40191301::DamageBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_40191301, DamageInterval) == 0x001374, "Member 'UPyBuffAbility_40191301::DamageInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_40191301;
 
 }
 

@@ -40,25 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTakeTrainingMoveLocation">();
+		STATIC_CLASS_IMPL("BTT_PyTakeTrainingMoveLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTakeTrainingMoveLocation")
 	}
 	static class UBTT_PyTakeTrainingMoveLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTakeTrainingMoveLocation>();
 	}
 };
-static_assert(alignof(UBTT_PyTakeTrainingMoveLocation) == 0x000008, "Wrong alignment on UBTT_PyTakeTrainingMoveLocation");
-static_assert(sizeof(UBTT_PyTakeTrainingMoveLocation) == 0x000278, "Wrong size on UBTT_PyTakeTrainingMoveLocation");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, IsFlyHero) == 0x0000C0, "Member 'UBTT_PyTakeTrainingMoveLocation::IsFlyHero' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InRightVector) == 0x0000C8, "Member 'UBTT_PyTakeTrainingMoveLocation::InRightVector' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InForwardVector) == 0x0000F8, "Member 'UBTT_PyTakeTrainingMoveLocation::InForwardVector' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InHalfHeight) == 0x000128, "Member 'UBTT_PyTakeTrainingMoveLocation::InHalfHeight' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InHalfWidth) == 0x000158, "Member 'UBTT_PyTakeTrainingMoveLocation::InHalfWidth' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InAreaCenter) == 0x000188, "Member 'UBTT_PyTakeTrainingMoveLocation::InAreaCenter' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InMoveHorizon) == 0x0001B8, "Member 'UBTT_PyTakeTrainingMoveLocation::InMoveHorizon' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InUseSimpleMove) == 0x0001E8, "Member 'UBTT_PyTakeTrainingMoveLocation::InUseSimpleMove' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, InMoveDistanceLimit) == 0x000218, "Member 'UBTT_PyTakeTrainingMoveLocation::InMoveDistanceLimit' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTakeTrainingMoveLocation, OutMoveLocation) == 0x000248, "Member 'UBTT_PyTakeTrainingMoveLocation::OutMoveLocation' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTakeTrainingMoveLocation;
 
 }
 

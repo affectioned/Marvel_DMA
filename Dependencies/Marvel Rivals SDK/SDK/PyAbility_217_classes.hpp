@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_217.PyController_217
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyController_217 final : public UUIC_Ability
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyController_217">();
+		STATIC_CLASS_IMPL("PyController_217")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyController_217")
 	}
 	static class UPyController_217* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyController_217>();
 	}
 };
-static_assert(alignof(UPyController_217) == 0x000008, "Wrong alignment on UPyController_217");
-static_assert(sizeof(UPyController_217) == 0x000F10, "Wrong size on UPyController_217");
+DUMPER7_ASSERTS_UPyController_217;
 
 // PythonClass PyAbility_217.PyCue_Ability_Instant_21701
 // 0x0008 (0x02B8 - 0x02B0)
@@ -52,28 +55,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_21701">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_21701")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_21701")
 	}
 	static class UPyCue_Ability_Instant_21701* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_21701>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_21701) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_21701");
-static_assert(sizeof(UPyCue_Ability_Instant_21701) == 0x0002B8, "Wrong size on UPyCue_Ability_Instant_21701");
-static_assert(offsetof(UPyCue_Ability_Instant_21701, JoinPassBallAudioEvent) == 0x0002B0, "Member 'UPyCue_Ability_Instant_21701::JoinPassBallAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_21701;
 
 // PythonClass PyAbility_217.PyExtraWidget_217
-// 0x0118 (0x0680 - 0x0568)
+// 0x0118 (0x0688 - 0x0570)
 class UPyExtraWidget_217 final : public UMarvelUserWidget
 {
 public:
-	TSubclassOf<class UUserWidget>                KillCam;                                           // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, class UTexture2D*>                IconMap;                                           // 0x0570(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgLinearColor_Normal;                             // 0x05C0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgLinearColor_Disable;                            // 0x05D0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EJoinGroupFailedReason, struct FCueHintData> HintdataMap;                                   // 0x05E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EJoinGroupFailedReason, class UAkAudioEvent*> FailedAudioEventMap;                          // 0x0630(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                KillCam;                                           // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                IconMap;                                           // 0x0578(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgLinearColor_Normal;                             // 0x05C8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgLinearColor_Disable;                            // 0x05D8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EJoinGroupFailedReason, struct FCueHintData> HintdataMap;                                   // 0x05E8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EJoinGroupFailedReason, class UAkAudioEvent*> FailedAudioEventMap;                          // 0x0638(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -83,29 +88,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtraWidget_217">();
+		STATIC_CLASS_IMPL("PyExtraWidget_217")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtraWidget_217")
 	}
 	static class UPyExtraWidget_217* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtraWidget_217>();
 	}
 };
-static_assert(alignof(UPyExtraWidget_217) == 0x000008, "Wrong alignment on UPyExtraWidget_217");
-static_assert(sizeof(UPyExtraWidget_217) == 0x000680, "Wrong size on UPyExtraWidget_217");
-static_assert(offsetof(UPyExtraWidget_217, KillCam) == 0x000568, "Member 'UPyExtraWidget_217::KillCam' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_217, IconMap) == 0x000570, "Member 'UPyExtraWidget_217::IconMap' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_217, ImgLinearColor_Normal) == 0x0005C0, "Member 'UPyExtraWidget_217::ImgLinearColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_217, ImgLinearColor_Disable) == 0x0005D0, "Member 'UPyExtraWidget_217::ImgLinearColor_Disable' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_217, HintdataMap) == 0x0005E0, "Member 'UPyExtraWidget_217::HintdataMap' has a wrong offset!");
-static_assert(offsetof(UPyExtraWidget_217, FailedAudioEventMap) == 0x000630, "Member 'UPyExtraWidget_217::FailedAudioEventMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtraWidget_217;
 
 // PythonClass PyAbility_217.PyWidget_Battle_Expression_Volleyball_Base
-// 0x00D8 (0x0640 - 0x0568)
+// 0x0128 (0x0698 - 0x0570)
 class UPyWidget_Battle_Expression_Volleyball_Base : public UMarvelUserWidget
 {
 public:
-	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0568(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ShowAKEvent;                                       // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x0570(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ShowAKEvent;                                       // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -113,20 +115,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Battle_Expression_Volleyball_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Battle_Expression_Volleyball_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Battle_Expression_Volleyball_Base")
 	}
 	static class UPyWidget_Battle_Expression_Volleyball_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Battle_Expression_Volleyball_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Battle_Expression_Volleyball_Base) == 0x000008, "Wrong alignment on UPyWidget_Battle_Expression_Volleyball_Base");
-static_assert(sizeof(UPyWidget_Battle_Expression_Volleyball_Base) == 0x000640, "Wrong size on UPyWidget_Battle_Expression_Volleyball_Base");
-static_assert(offsetof(UPyWidget_Battle_Expression_Volleyball_Base, TagRequirements) == 0x000568, "Member 'UPyWidget_Battle_Expression_Volleyball_Base::TagRequirements' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Battle_Expression_Volleyball_Base, ShowAKEvent) == 0x000638, "Member 'UPyWidget_Battle_Expression_Volleyball_Base::ShowAKEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Battle_Expression_Volleyball_Base;
 
 // PythonClass PyAbility_217.PyWidget_Battle_Expression_Volleyball
-// 0x0000 (0x0640 - 0x0640)
+// 0x0000 (0x0698 - 0x0698)
 class UPyWidget_Battle_Expression_Volleyball final : public UPyWidget_Battle_Expression_Volleyball_Base
 {
 public:
@@ -135,15 +138,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Battle_Expression_Volleyball">();
+		STATIC_CLASS_IMPL("PyWidget_Battle_Expression_Volleyball")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Battle_Expression_Volleyball")
 	}
 	static class UPyWidget_Battle_Expression_Volleyball* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Battle_Expression_Volleyball>();
 	}
 };
-static_assert(alignof(UPyWidget_Battle_Expression_Volleyball) == 0x000008, "Wrong alignment on UPyWidget_Battle_Expression_Volleyball");
-static_assert(sizeof(UPyWidget_Battle_Expression_Volleyball) == 0x000640, "Wrong size on UPyWidget_Battle_Expression_Volleyball");
+DUMPER7_ASSERTS_UPyWidget_Battle_Expression_Volleyball;
 
 }
 

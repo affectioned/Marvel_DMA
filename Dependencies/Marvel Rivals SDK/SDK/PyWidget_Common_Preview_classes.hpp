@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Preview.PyWidget_Common_Preview
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_Common_Preview final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                ContinueTipsStyle;                                 // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciateTipsStyle;                               // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipTipsStyle;                                     // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ContinueTipsStyle;                                 // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciateTipsStyle;                               // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipTipsStyle;                                     // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnChangeItem;                              // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Preview">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Preview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Preview")
 	}
 	static class UPyWidget_Common_Preview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Preview>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Preview) == 0x000008, "Wrong alignment on UPyWidget_Common_Preview");
-static_assert(sizeof(UPyWidget_Common_Preview) == 0x000630, "Wrong size on UPyWidget_Common_Preview");
-static_assert(offsetof(UPyWidget_Common_Preview, ContinueTipsStyle) == 0x0005F8, "Member 'UPyWidget_Common_Preview::ContinueTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Preview, AppreciateTipsStyle) == 0x000608, "Member 'UPyWidget_Common_Preview::AppreciateTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Preview, SkipTipsStyle) == 0x000618, "Member 'UPyWidget_Common_Preview::SkipTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Preview, AkEvent_OnChangeItem) == 0x000628, "Member 'UPyWidget_Common_Preview::AkEvent_OnChangeItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Preview;
 
 }
 

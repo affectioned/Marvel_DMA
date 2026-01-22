@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_StagePanel.PyWidget_Halloween_StagePanel
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Halloween_StagePanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EmphasizeCount;                                    // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05C0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EmphasizeColor;                                    // 0x05D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EmphasizeCount;                                    // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EmphasizeColor;                                    // 0x05DC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_StagePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_StagePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_StagePanel")
 	}
 	static class UPyWidget_Halloween_StagePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_StagePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_StagePanel) == 0x000008, "Wrong alignment on UPyWidget_Halloween_StagePanel");
-static_assert(sizeof(UPyWidget_Halloween_StagePanel) == 0x0005E8, "Wrong size on UPyWidget_Halloween_StagePanel");
-static_assert(offsetof(UPyWidget_Halloween_StagePanel, EmphasizeCount) == 0x0005BC, "Member 'UPyWidget_Halloween_StagePanel::EmphasizeCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_StagePanel, NormalColor) == 0x0005C0, "Member 'UPyWidget_Halloween_StagePanel::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_StagePanel, EmphasizeColor) == 0x0005D4, "Member 'UPyWidget_Halloween_StagePanel::EmphasizeColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_StagePanel;
 
 }
 

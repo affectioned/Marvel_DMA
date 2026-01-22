@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PrivilegeTips.PyWidget_PrivilegeTips
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_PrivilegeTips final : public UPyWidget_CommonTipsBase
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PrivilegeTips">();
+		STATIC_CLASS_IMPL("PyWidget_PrivilegeTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PrivilegeTips")
 	}
 	static class UPyWidget_PrivilegeTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PrivilegeTips>();
 	}
 };
-static_assert(alignof(UPyWidget_PrivilegeTips) == 0x000008, "Wrong alignment on UPyWidget_PrivilegeTips");
-static_assert(sizeof(UPyWidget_PrivilegeTips) == 0x0005D8, "Wrong size on UPyWidget_PrivilegeTips");
+DUMPER7_ASSERTS_UPyWidget_PrivilegeTips;
 
 }
 

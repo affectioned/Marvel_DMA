@@ -31,16 +31,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              MapBG_42_24235F8644CF1C2F89B829953BD3DA2C;         // 0x0098(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          Delivery_44_7536DA55400BECF5B0DBB3ADA4AE299E;      // 0x00C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FEscortUIAssetInfo) == 0x000008, "Wrong alignment on FEscortUIAssetInfo");
-static_assert(sizeof(FEscortUIAssetInfo) == 0x0000D0, "Wrong size on FEscortUIAssetInfo");
-static_assert(offsetof(FEscortUIAssetInfo, LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8) == 0x000000, "Member 'FEscortUIAssetInfo::LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, LevelName_5_A266601D484A018157B4E9A1EBBE81E4) == 0x000008, "Member 'FEscortUIAssetInfo::LevelName_5_A266601D484A018157B4E9A1EBBE81E4' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, DefendBGColor_18_6CB158344C1B4D84B094EF99124872A1) == 0x000018, "Member 'FEscortUIAssetInfo::DefendBGColor_18_6CB158344C1B4D84B094EF99124872A1' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, AttackBGColor_20_358F8D944B7E7521B30148BEB69701EC) == 0x000028, "Member 'FEscortUIAssetInfo::AttackBGColor_20_358F8D944B7E7521B30148BEB69701EC' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, EscortIndicatorIcon_39_8E380A5141431FB134209CB8ABDCC4BB) == 0x000038, "Member 'FEscortUIAssetInfo::EscortIndicatorIcon_39_8E380A5141431FB134209CB8ABDCC4BB' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, ReplayProcessBarCarIcon_64_601FE6C64CAFAF856B2467BEEF8281C9) == 0x000068, "Member 'FEscortUIAssetInfo::ReplayProcessBarCarIcon_64_601FE6C64CAFAF856B2467BEEF8281C9' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, MapBG_42_24235F8644CF1C2F89B829953BD3DA2C) == 0x000098, "Member 'FEscortUIAssetInfo::MapBG_42_24235F8644CF1C2F89B829953BD3DA2C' has a wrong offset!");
-static_assert(offsetof(FEscortUIAssetInfo, Delivery_44_7536DA55400BECF5B0DBB3ADA4AE299E) == 0x0000C8, "Member 'FEscortUIAssetInfo::Delivery_44_7536DA55400BECF5B0DBB3ADA4AE299E' has a wrong offset!");
+DUMPER7_ASSERTS_FEscortUIAssetInfo;
 
 }
 

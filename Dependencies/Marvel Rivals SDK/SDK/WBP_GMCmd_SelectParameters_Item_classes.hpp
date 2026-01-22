@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GMCmd_SelectParameters_Item.WBP_GMCmd_SelectParameters_Item_C
-// 0x0018 (0x0600 - 0x05E8)
+// 0x0018 (0x0608 - 0x05F0)
 class UWBP_GMCmd_SelectParameters_Item_C final : public UPyWidget_GMCmd_SelectParameters_Item
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Common_Btn_Lv3_C*                  Common_Btn;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Select;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Common_Btn_Lv3_C*                  Common_Btn;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Select;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void BP_OnEntryReleased();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GMCmd_SelectParameters_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GMCmd_SelectParameters_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GMCmd_SelectParameters_Item_C")
 	}
 	static class UWBP_GMCmd_SelectParameters_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GMCmd_SelectParameters_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_GMCmd_SelectParameters_Item_C) == 0x000008, "Wrong alignment on UWBP_GMCmd_SelectParameters_Item_C");
-static_assert(sizeof(UWBP_GMCmd_SelectParameters_Item_C) == 0x000600, "Wrong size on UWBP_GMCmd_SelectParameters_Item_C");
-static_assert(offsetof(UWBP_GMCmd_SelectParameters_Item_C, UberGraphFrame) == 0x0005E8, "Member 'UWBP_GMCmd_SelectParameters_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_SelectParameters_Item_C, Common_Btn) == 0x0005F0, "Member 'UWBP_GMCmd_SelectParameters_Item_C::Common_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_SelectParameters_Item_C, Img_Select) == 0x0005F8, "Member 'UWBP_GMCmd_SelectParameters_Item_C::Img_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GMCmd_SelectParameters_Item_C;
 
 }
 

@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_HeroInfo_Watcher">();
+		STATIC_CLASS_IMPL("PyWC_HeroInfo_Watcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_HeroInfo_Watcher")
 	}
 	static class UPyWC_HeroInfo_Watcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_HeroInfo_Watcher>();
 	}
 };
-static_assert(alignof(UPyWC_HeroInfo_Watcher) == 0x000010, "Wrong alignment on UPyWC_HeroInfo_Watcher");
-static_assert(sizeof(UPyWC_HeroInfo_Watcher) == 0x000AF0, "Wrong size on UPyWC_HeroInfo_Watcher");
-static_assert(offsetof(UPyWC_HeroInfo_Watcher, Offset_Z) == 0x000AE0, "Member 'UPyWC_HeroInfo_Watcher::Offset_Z' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_HeroInfo_Watcher;
 
 }
 

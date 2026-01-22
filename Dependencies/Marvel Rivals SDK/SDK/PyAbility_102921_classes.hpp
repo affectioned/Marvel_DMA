@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102921.PyConfig_102921
-// 0x0118 (0x01B0 - 0x0098)
+// 0x0168 (0x0200 - 0x0098)
 class UPyConfig_102921 final : public UMarvelAbilityConfig
 {
 public:
@@ -36,34 +36,27 @@ public:
 	struct FGameplayTag                           EnergyTag;                                         // 0x00C4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HitEnergyRestore;                                  // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x00D8(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          BindOnDamageMergedEvent;                           // 0x01A8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelGameplayTagRequirements         TagRequirements;                                   // 0x00D8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          BindOnDamageMergedEvent;                           // 0x01F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102921">();
+		STATIC_CLASS_IMPL("PyConfig_102921")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102921")
 	}
 	static class UPyConfig_102921* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102921>();
 	}
 };
-static_assert(alignof(UPyConfig_102921) == 0x000008, "Wrong alignment on UPyConfig_102921");
-static_assert(sizeof(UPyConfig_102921) == 0x0001B0, "Wrong size on UPyConfig_102921");
-static_assert(offsetof(UPyConfig_102921, MaxAccumulateTime) == 0x000098, "Member 'UPyConfig_102921::MaxAccumulateTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, AccumulateCurve) == 0x0000A0, "Member 'UPyConfig_102921::AccumulateCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, ProjectileSizeCurve) == 0x0000A8, "Member 'UPyConfig_102921::ProjectileSizeCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, MatainFullStateTime) == 0x0000B0, "Member 'UPyConfig_102921::MatainFullStateTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, FullAccumuCue) == 0x0000B4, "Member 'UPyConfig_102921::FullAccumuCue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, bEnableHitEnergyRestore) == 0x0000C0, "Member 'UPyConfig_102921::bEnableHitEnergyRestore' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, EnergyTag) == 0x0000C4, "Member 'UPyConfig_102921::EnergyTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, HitEnergyRestore) == 0x0000D0, "Member 'UPyConfig_102921::HitEnergyRestore' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, TagRequirements) == 0x0000D8, "Member 'UPyConfig_102921::TagRequirements' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102921, BindOnDamageMergedEvent) == 0x0001A8, "Member 'UPyConfig_102921::BindOnDamageMergedEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102921;
 
 // PythonClass PyAbility_102921.PyAbility_102921
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_102921 : public UMarvelAbility_LongPressTrigger
 {
 public:
@@ -81,23 +74,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102921">();
+		STATIC_CLASS_IMPL("PyAbility_102921")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102921")
 	}
 	static class UPyAbility_102921* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102921>();
 	}
 };
-static_assert(alignof(UPyAbility_102921) == 0x000008, "Wrong alignment on UPyAbility_102921");
-static_assert(sizeof(UPyAbility_102921) == 0x002A08, "Wrong size on UPyAbility_102921");
+DUMPER7_ASSERTS_UPyAbility_102921;
 
 // PythonClass PyAbility_102921.PyProjectile_10292101
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyProjectile_10292101 : public AProjectile_10292101
 {
 public:
-	float                                         AccumulateTime;                                    // 0x3B90(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AccumulateTime;                                    // 0x3EA0(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -106,7 +102,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10292101">();
+		STATIC_CLASS_IMPL("PyProjectile_10292101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10292101")
 	}
 	static class APyProjectile_10292101* GetDefaultObj()
 	{
@@ -114,12 +114,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyProjectile_10292101) == 0x000010, "Wrong alignment on APyProjectile_10292101");
-static_assert(sizeof(APyProjectile_10292101) == 0x003BA0, "Wrong size on APyProjectile_10292101");
-static_assert(offsetof(APyProjectile_10292101, AccumulateTime) == 0x003B90, "Member 'APyProjectile_10292101::AccumulateTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10292101;
 
 // PythonClass PyAbility_102921.PyUIController_102921
-// 0x0000 (0x0F20 - 0x0F20)
+// 0x0000 (0x1200 - 0x1200)
 class UPyUIController_102921 final : public UUIController_102921
 {
 public:
@@ -131,31 +129,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102921">();
+		STATIC_CLASS_IMPL("PyUIController_102921")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102921")
 	}
 	static class UPyUIController_102921* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102921>();
 	}
 };
-static_assert(alignof(UPyUIController_102921) == 0x000008, "Wrong alignment on UPyUIController_102921");
-static_assert(sizeof(UPyUIController_102921) == 0x000F20, "Wrong size on UPyUIController_102921");
+DUMPER7_ASSERTS_UPyUIController_102921;
 
 // PythonClass PyAbility_102921.PyCue_Ability_Loop_10292101
-// 0x0040 (0x11F0 - 0x11B0)
+// 0x0040 (0x1200 - 0x11C0)
 class APyCue_Ability_Loop_10292101 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         AbilityID;                                         // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedHandleDissolve2WhenMaxAccumulate;              // 0x11B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B5[0x3];                                     // 0x11B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TimerInterval;                                     // 0x11B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BC[0x4];                                     // 0x11BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            DissolveCurve;                                     // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            Dissolve2Curve;                                    // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DissolveLength;                                    // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Dissolve2Length;                                   // 0x11D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ParamName;                                         // 0x11D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedHandleDissolve2WhenMaxAccumulate;              // 0x11C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C5[0x3];                                     // 0x11C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimerInterval;                                     // 0x11C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11CC[0x4];                                     // 0x11CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            DissolveCurve;                                     // 0x11D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            Dissolve2Curve;                                    // 0x11D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DissolveLength;                                    // 0x11E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Dissolve2Length;                                   // 0x11E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ParamName;                                         // 0x11E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -165,40 +166,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10292101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10292101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10292101")
 	}
 	static class APyCue_Ability_Loop_10292101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10292101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10292101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10292101");
-static_assert(sizeof(APyCue_Ability_Loop_10292101) == 0x0011F0, "Wrong size on APyCue_Ability_Loop_10292101");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, AbilityID) == 0x0011B0, "Member 'APyCue_Ability_Loop_10292101::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, NeedHandleDissolve2WhenMaxAccumulate) == 0x0011B4, "Member 'APyCue_Ability_Loop_10292101::NeedHandleDissolve2WhenMaxAccumulate' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, TimerInterval) == 0x0011B8, "Member 'APyCue_Ability_Loop_10292101::TimerInterval' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, DissolveCurve) == 0x0011C0, "Member 'APyCue_Ability_Loop_10292101::DissolveCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, Dissolve2Curve) == 0x0011C8, "Member 'APyCue_Ability_Loop_10292101::Dissolve2Curve' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, DissolveLength) == 0x0011D0, "Member 'APyCue_Ability_Loop_10292101::DissolveLength' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, Dissolve2Length) == 0x0011D4, "Member 'APyCue_Ability_Loop_10292101::Dissolve2Length' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10292101, ParamName) == 0x0011D8, "Member 'APyCue_Ability_Loop_10292101::ParamName' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10292101;
 
 // PythonClass PyAbility_102921.PyCue_Projectile_Loop_10292101
-// 0x0040 (0x1170 - 0x1130)
+// 0x0040 (0x1180 - 0x1140)
 class APyCue_Projectile_Loop_10292101 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveVector*                           ChiBladeFXSizeCurve;                               // 0x1130(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bControlScale;                                     // 0x1138(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bControlLoc;                                       // 0x1139(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_113A[0x2];                                     // 0x113A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TimerInterval;                                     // 0x113C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ScaleCurve;                                        // 0x1140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            LocCurve;                                          // 0x1148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScaleLength;                                       // 0x1150(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LocLength;                                         // 0x1154(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LoopFxRelativeLoc;                                 // 0x1158(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveVector*                           ChiBladeFXSizeCurve;                               // 0x1140(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bControlScale;                                     // 0x1148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bControlLoc;                                       // 0x1149(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_114A[0x2];                                     // 0x114A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimerInterval;                                     // 0x114C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ScaleCurve;                                        // 0x1150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            LocCurve;                                          // 0x1158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScaleLength;                                       // 0x1160(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LocLength;                                         // 0x1164(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LoopFxRelativeLoc;                                 // 0x1168(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -207,24 +203,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10292101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10292101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10292101")
 	}
 	static class APyCue_Projectile_Loop_10292101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10292101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10292101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10292101");
-static_assert(sizeof(APyCue_Projectile_Loop_10292101) == 0x001170, "Wrong size on APyCue_Projectile_Loop_10292101");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, ChiBladeFXSizeCurve) == 0x001130, "Member 'APyCue_Projectile_Loop_10292101::ChiBladeFXSizeCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, bControlScale) == 0x001138, "Member 'APyCue_Projectile_Loop_10292101::bControlScale' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, bControlLoc) == 0x001139, "Member 'APyCue_Projectile_Loop_10292101::bControlLoc' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, TimerInterval) == 0x00113C, "Member 'APyCue_Projectile_Loop_10292101::TimerInterval' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, ScaleCurve) == 0x001140, "Member 'APyCue_Projectile_Loop_10292101::ScaleCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, LocCurve) == 0x001148, "Member 'APyCue_Projectile_Loop_10292101::LocCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, ScaleLength) == 0x001150, "Member 'APyCue_Projectile_Loop_10292101::ScaleLength' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, LocLength) == 0x001154, "Member 'APyCue_Projectile_Loop_10292101::LocLength' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10292101, LoopFxRelativeLoc) == 0x001158, "Member 'APyCue_Projectile_Loop_10292101::LoopFxRelativeLoc' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10292101;
 
 }
 

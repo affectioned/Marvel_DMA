@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOverTimeConfig">();
+		STATIC_CLASS_IMPL("PyOverTimeConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOverTimeConfig")
 	}
 	static class UPyOverTimeConfig* GetDefaultObj()
 	{
@@ -40,13 +44,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyOverTimeConfig) == 0x000008, "Wrong alignment on UPyOverTimeConfig");
-static_assert(sizeof(UPyOverTimeConfig) == 0x000048, "Wrong size on UPyOverTimeConfig");
-static_assert(offsetof(UPyOverTimeConfig, OvertimeLength) == 0x000030, "Member 'UPyOverTimeConfig::OvertimeLength' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeConfig, OvertimeSpeedNoAttack) == 0x000034, "Member 'UPyOverTimeConfig::OvertimeSpeedNoAttack' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeConfig, OvertimeSpeedWithAttack) == 0x000038, "Member 'UPyOverTimeConfig::OvertimeSpeedWithAttack' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeConfig, OverTimeCheck) == 0x00003C, "Member 'UPyOverTimeConfig::OverTimeCheck' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeConfig, MisOperationThreshold) == 0x000040, "Member 'UPyOverTimeConfig::MisOperationThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyOverTimeConfig;
 
 // PythonClass PyOverTimeRuleComponent.PyControlOvertimeConfig
 // 0x0000 (0x0048 - 0x0048)
@@ -58,16 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlOvertimeConfig">();
+		STATIC_CLASS_IMPL("PyControlOvertimeConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlOvertimeConfig")
 	}
 	static class UPyControlOvertimeConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlOvertimeConfig>();
 	}
 };
-static_assert(alignof(UPyControlOvertimeConfig) == 0x000008, "Wrong alignment on UPyControlOvertimeConfig");
-static_assert(sizeof(UPyControlOvertimeConfig) == 0x000048, "Wrong size on UPyControlOvertimeConfig");
-static_assert(offsetof(UPyControlOvertimeConfig, OvertimeProgressBegin) == 0x000044, "Member 'UPyControlOvertimeConfig::OvertimeProgressBegin' has a wrong offset!");
+DUMPER7_ASSERTS_UPyControlOvertimeConfig;
 
 // PythonClass PyOverTimeRuleComponent.PyOverTimeRuleComponent
 // 0x0020 (0x0128 - 0x0108)
@@ -91,23 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOverTimeRuleComponent">();
+		STATIC_CLASS_IMPL("PyOverTimeRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOverTimeRuleComponent")
 	}
 	static class UPyOverTimeRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyOverTimeRuleComponent>();
 	}
 };
-static_assert(alignof(UPyOverTimeRuleComponent) == 0x000008, "Wrong alignment on UPyOverTimeRuleComponent");
-static_assert(sizeof(UPyOverTimeRuleComponent) == 0x000128, "Wrong size on UPyOverTimeRuleComponent");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeState) == 0x000108, "Member 'UPyOverTimeRuleComponent::OvertimeState' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeRemaining) == 0x00010C, "Member 'UPyOverTimeRuleComponent::OvertimeRemaining' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeSpeed) == 0x000110, "Member 'UPyOverTimeRuleComponent::OvertimeSpeed' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeLength) == 0x000114, "Member 'UPyOverTimeRuleComponent::OvertimeLength' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeSpeedNoAttack) == 0x000118, "Member 'UPyOverTimeRuleComponent::OvertimeSpeedNoAttack' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OvertimeSpeedWithAttack) == 0x00011C, "Member 'UPyOverTimeRuleComponent::OvertimeSpeedWithAttack' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, OverTimeCheck) == 0x000120, "Member 'UPyOverTimeRuleComponent::OverTimeCheck' has a wrong offset!");
-static_assert(offsetof(UPyOverTimeRuleComponent, MisOperationThreshold) == 0x000124, "Member 'UPyOverTimeRuleComponent::MisOperationThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyOverTimeRuleComponent;
 
 }
 

@@ -32,24 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102731">();
+		STATIC_CLASS_IMPL("PyConfig_102731")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102731")
 	}
 	static class UPyConfig_102731* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102731>();
 	}
 };
-static_assert(alignof(UPyConfig_102731) == 0x000008, "Wrong alignment on UPyConfig_102731");
-static_assert(sizeof(UPyConfig_102731) == 0x0000B0, "Wrong size on UPyConfig_102731");
-static_assert(offsetof(UPyConfig_102731, UpThrowAngle) == 0x000098, "Member 'UPyConfig_102731::UpThrowAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102731, DownThrowAngle) == 0x00009C, "Member 'UPyConfig_102731::DownThrowAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102731, PitchMinValue) == 0x0000A0, "Member 'UPyConfig_102731::PitchMinValue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102731, PitchMaxValue) == 0x0000A4, "Member 'UPyConfig_102731::PitchMaxValue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102731, SpawnDelay) == 0x0000A8, "Member 'UPyConfig_102731::SpawnDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102731, SpawnNumber) == 0x0000AC, "Member 'UPyConfig_102731::SpawnNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102731;
 
 // PythonClass PyAbility_102731.PyAbility_102731
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102731 : public UMarvelGameplayAbility
 {
 public:
@@ -64,18 +61,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102731">();
+		STATIC_CLASS_IMPL("PyAbility_102731")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102731")
 	}
 	static class UPyAbility_102731* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102731>();
 	}
 };
-static_assert(alignof(UPyAbility_102731) == 0x000008, "Wrong alignment on UPyAbility_102731");
-static_assert(sizeof(UPyAbility_102731) == 0x0029F0, "Wrong size on UPyAbility_102731");
+DUMPER7_ASSERTS_UPyAbility_102731;
 
 // PythonClass PyAbility_102731.PyProjectile_10273101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10273101 : public AProjectile_10273101
 {
 public:
@@ -86,24 +86,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10273101">();
+		STATIC_CLASS_IMPL("PyProjectile_10273101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10273101")
 	}
 	static class APyProjectile_10273101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10273101>();
 	}
 };
-static_assert(alignof(APyProjectile_10273101) == 0x000010, "Wrong alignment on APyProjectile_10273101");
-static_assert(sizeof(APyProjectile_10273101) == 0x003B90, "Wrong size on APyProjectile_10273101");
+DUMPER7_ASSERTS_APyProjectile_10273101;
 
 // PythonClass PyAbility_102731.PyCue_Projectile_HitImpact_10273101
-// 0x0010 (0x05D8 - 0x05C8)
+// 0x0010 (0x05F8 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10273101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	class UFXSystemAsset*                         GroundImpactFXAsset;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GroundImpactMaxHeight;                             // 0x05D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x05D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         GroundImpactFXAsset;                               // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GroundImpactMaxHeight;                             // 0x05F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x05F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnHitNiagaraSpawned(class UNiagaraComponent* InFXComponent, class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -113,18 +116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10273101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10273101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10273101")
 	}
 	static class UPyCue_Projectile_HitImpact_10273101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10273101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10273101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10273101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10273101) == 0x0005D8, "Wrong size on UPyCue_Projectile_HitImpact_10273101");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10273101, GroundImpactFXAsset) == 0x0005C8, "Member 'UPyCue_Projectile_HitImpact_10273101::GroundImpactFXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10273101, GroundImpactMaxHeight) == 0x0005D0, "Member 'UPyCue_Projectile_HitImpact_10273101::GroundImpactMaxHeight' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10273101, ScopeID) == 0x0005D4, "Member 'UPyCue_Projectile_HitImpact_10273101::ScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10273101;
 
 }
 

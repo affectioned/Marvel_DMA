@@ -24,12 +24,7 @@ public:
 	float                                         TimeToLoseOccupy;                                  // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, float>                            OccupyProgressSpeed;                               // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelControlNodes_SetPyControl) == 0x000008, "Wrong alignment on PyLevelControlNodes_SetPyControl");
-static_assert(sizeof(PyLevelControlNodes_SetPyControl) == 0x000060, "Wrong size on PyLevelControlNodes_SetPyControl");
-static_assert(offsetof(PyLevelControlNodes_SetPyControl, control) == 0x000000, "Member 'PyLevelControlNodes_SetPyControl::control' has a wrong offset!");
-static_assert(offsetof(PyLevelControlNodes_SetPyControl, LosingSpeed) == 0x000008, "Member 'PyLevelControlNodes_SetPyControl::LosingSpeed' has a wrong offset!");
-static_assert(offsetof(PyLevelControlNodes_SetPyControl, TimeToLoseOccupy) == 0x00000C, "Member 'PyLevelControlNodes_SetPyControl::TimeToLoseOccupy' has a wrong offset!");
-static_assert(offsetof(PyLevelControlNodes_SetPyControl, OccupyProgressSpeed) == 0x000010, "Member 'PyLevelControlNodes_SetPyControl::OccupyProgressSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelControlNodes_SetPyControl;
 
 }
 

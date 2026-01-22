@@ -17,38 +17,37 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ClanListFiltrate.PyWidget_Secondary_ClanListFiltrate
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Secondary_ClanListFiltrate final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Platform_Pc_Icon;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Platform_Xbox_Icon;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Platform_Ps_Icon;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_ClanArea;                                     // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_TeamStatus;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Platform_Pc_Icon;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Platform_Xbox_Icon;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Platform_Ps_Icon;                                  // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_ClanArea;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_TeamStatus;                                   // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
+	void OnInitialized();
 	void Construct();
 	void Destruct();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanListFiltrate">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanListFiltrate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanListFiltrate")
 	}
 	static class UPyWidget_Secondary_ClanListFiltrate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanListFiltrate>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanListFiltrate) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanListFiltrate");
-static_assert(sizeof(UPyWidget_Secondary_ClanListFiltrate) == 0x0005E8, "Wrong size on UPyWidget_Secondary_ClanListFiltrate");
-static_assert(offsetof(UPyWidget_Secondary_ClanListFiltrate, Platform_Pc_Icon) == 0x0005C0, "Member 'UPyWidget_Secondary_ClanListFiltrate::Platform_Pc_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ClanListFiltrate, Platform_Xbox_Icon) == 0x0005C8, "Member 'UPyWidget_Secondary_ClanListFiltrate::Platform_Xbox_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ClanListFiltrate, Platform_Ps_Icon) == 0x0005D0, "Member 'UPyWidget_Secondary_ClanListFiltrate::Platform_Ps_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ClanListFiltrate, Text_ClanArea) == 0x0005D8, "Member 'UPyWidget_Secondary_ClanListFiltrate::Text_ClanArea' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ClanListFiltrate, Text_TeamStatus) == 0x0005E0, "Member 'UPyWidget_Secondary_ClanListFiltrate::Text_TeamStatus' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanListFiltrate;
 
 }
 

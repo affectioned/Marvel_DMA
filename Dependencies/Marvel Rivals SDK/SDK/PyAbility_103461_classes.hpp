@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103461.PyAbility_103461
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103461 : public UAbility_103461
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103461">();
+		STATIC_CLASS_IMPL("PyAbility_103461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103461")
 	}
 	static class UPyAbility_103461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103461>();
 	}
 };
-static_assert(alignof(UPyAbility_103461) == 0x000008, "Wrong alignment on UPyAbility_103461");
-static_assert(sizeof(UPyAbility_103461) == 0x0029F8, "Wrong size on UPyAbility_103461");
+DUMPER7_ASSERTS_UPyAbility_103461;
 
 // PythonClass PyAbility_103461.PyCue_Scope_Start_10346102
 // 0x0008 (0x0480 - 0x0478)
@@ -53,16 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10346102">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10346102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10346102")
 	}
 	static class UPyCue_Scope_Start_10346102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10346102>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10346102) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10346102");
-static_assert(sizeof(UPyCue_Scope_Start_10346102) == 0x000480, "Wrong size on UPyCue_Scope_Start_10346102");
-static_assert(offsetof(UPyCue_Scope_Start_10346102, GroundHiddenPitchThreshold) == 0x000478, "Member 'UPyCue_Scope_Start_10346102::GroundHiddenPitchThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10346102;
 
 }
 

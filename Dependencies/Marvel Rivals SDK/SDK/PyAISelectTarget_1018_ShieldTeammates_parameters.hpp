@@ -26,12 +26,7 @@ public:
 	struct FAIAbilityUsage                        AbilityUsage;                                      // 0x0068(0x00E8)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0150(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation) == 0x000008, "Wrong alignment on PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation");
-static_assert(sizeof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation) == 0x000158, "Wrong size on PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation");
-static_assert(offsetof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation, AIController) == 0x000000, "Member 'PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation::AIController' has a wrong offset!");
-static_assert(offsetof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation, OutAITarget) == 0x000008, "Member 'PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation::OutAITarget' has a wrong offset!");
-static_assert(offsetof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation, AbilityUsage) == 0x000068, "Member 'PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation, ReturnValue) == 0x000150, "Member 'PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAISelectTarget_1018_ShieldTeammates_SelectTargetOrLocation;
 
 }
 

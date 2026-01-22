@@ -24,10 +24,7 @@ public:
 	struct FActiveGameplayEffectHandle            EffectHandle;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectSpecStackHandle         ExpiredEffectSpecHandle;                           // 0x0008(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyEffectAbility_120_10420112_OnEffectRemoved) == 0x000008, "Wrong alignment on PyEffectAbility_120_10420112_OnEffectRemoved");
-static_assert(sizeof(PyEffectAbility_120_10420112_OnEffectRemoved) == 0x000010, "Wrong size on PyEffectAbility_120_10420112_OnEffectRemoved");
-static_assert(offsetof(PyEffectAbility_120_10420112_OnEffectRemoved, EffectHandle) == 0x000000, "Member 'PyEffectAbility_120_10420112_OnEffectRemoved::EffectHandle' has a wrong offset!");
-static_assert(offsetof(PyEffectAbility_120_10420112_OnEffectRemoved, ExpiredEffectSpecHandle) == 0x000008, "Member 'PyEffectAbility_120_10420112_OnEffectRemoved::ExpiredEffectSpecHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10420112_OnEffectRemoved;
 
 // PythonFunction PyBuffAbility_120_10420111.PyEffectAbility_120_10420112.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyEffectAbility_120_10420112_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10420112_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_120_10420112_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_120_10420112_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_120_10420112_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_120_10420112_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_120_10420112_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10420112_K2_OnEndAbility;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CollideKnockDown_104981_BP.CollideKnockDown_104981_BP_C
-// 0x0000 (0x13A8 - 0x13A8)
+// 0x0000 (0x13C0 - 0x13C0)
 class UCollideKnockDown_104981_BP_C final : public UMarvelGrabbedAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollideKnockDown_104981_BP_C">();
+		BP_STATIC_CLASS_IMPL("CollideKnockDown_104981_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollideKnockDown_104981_BP_C")
 	}
 	static class UCollideKnockDown_104981_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollideKnockDown_104981_BP_C>();
 	}
 };
-static_assert(alignof(UCollideKnockDown_104981_BP_C) == 0x000008, "Wrong alignment on UCollideKnockDown_104981_BP_C");
-static_assert(sizeof(UCollideKnockDown_104981_BP_C) == 0x0013A8, "Wrong size on UCollideKnockDown_104981_BP_C");
+DUMPER7_ASSERTS_UCollideKnockDown_104981_BP_C;
 
 }
 

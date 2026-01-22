@@ -20,29 +20,29 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102361.PyConfig_102361
-// 0x0020 (0x28E0 - 0x28C0)
+// 0x0020 (0x3000 - 0x2FE0)
 class UPyConfig_102361 final : public UConfig_102361
 {
 public:
-	struct FVector                                CapsuleLocationOffset;                             // 0x28C0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LaunchVerticalVelocity;                            // 0x28D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LaunchHorizontalVelocity;                          // 0x28DC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                CapsuleLocationOffset;                             // 0x2FE0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LaunchVerticalVelocity;                            // 0x2FF8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LaunchHorizontalVelocity;                          // 0x2FFC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102361">();
+		STATIC_CLASS_IMPL("PyConfig_102361")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102361")
 	}
 	static class UPyConfig_102361* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102361>();
 	}
 };
-static_assert(alignof(UPyConfig_102361) == 0x000010, "Wrong alignment on UPyConfig_102361");
-static_assert(sizeof(UPyConfig_102361) == 0x0028E0, "Wrong size on UPyConfig_102361");
-static_assert(offsetof(UPyConfig_102361, CapsuleLocationOffset) == 0x0028C0, "Member 'UPyConfig_102361::CapsuleLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102361, LaunchVerticalVelocity) == 0x0028D8, "Member 'UPyConfig_102361::LaunchVerticalVelocity' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102361, LaunchHorizontalVelocity) == 0x0028DC, "Member 'UPyConfig_102361::LaunchHorizontalVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102361;
 
 // PythonClass PyAbility_102361.PyBondEnhanceSourceResolver_102361
 // 0x0000 (0x0030 - 0x0030)
@@ -54,18 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBondEnhanceSourceResolver_102361">();
+		STATIC_CLASS_IMPL("PyBondEnhanceSourceResolver_102361")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBondEnhanceSourceResolver_102361")
 	}
 	static class UPyBondEnhanceSourceResolver_102361* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBondEnhanceSourceResolver_102361>();
 	}
 };
-static_assert(alignof(UPyBondEnhanceSourceResolver_102361) == 0x000008, "Wrong alignment on UPyBondEnhanceSourceResolver_102361");
-static_assert(sizeof(UPyBondEnhanceSourceResolver_102361) == 0x000030, "Wrong size on UPyBondEnhanceSourceResolver_102361");
+DUMPER7_ASSERTS_UPyBondEnhanceSourceResolver_102361;
 
 // PythonClass PyAbility_102361.PyAbility_102361
-// 0x0000 (0x2D38 - 0x2D38)
+// 0x0000 (0x2DA0 - 0x2DA0)
 class UPyAbility_102361 : public UAbility_102361
 {
 public:
@@ -87,23 +90,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102361">();
+		STATIC_CLASS_IMPL("PyAbility_102361")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102361")
 	}
 	static class UPyAbility_102361* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102361>();
 	}
 };
-static_assert(alignof(UPyAbility_102361) == 0x000008, "Wrong alignment on UPyAbility_102361");
-static_assert(sizeof(UPyAbility_102361) == 0x002D38, "Wrong size on UPyAbility_102361");
+DUMPER7_ASSERTS_UPyAbility_102361;
 
 // PythonClass PyAbility_102361.PyUIC_SelectTarget_102361
-// 0x00B0 (0x0208 - 0x0158)
+// 0x00B0 (0x0268 - 0x01B8)
 class UPyUIC_SelectTarget_102361 final : public UUIC_SelectTarget
 {
 public:
-	struct FUIActionData                          FlyToStyle;                                        // 0x0158(0x0058)(Edit, NativeAccessSpecifierPublic)
-	struct FUIActionData                          GetOffStyle;                                       // 0x01B0(0x0058)(Edit, NativeAccessSpecifierPublic)
+	struct FUIActionData                          FlyToStyle;                                        // 0x01B8(0x0058)(Edit, NativeAccessSpecifierPublic)
+	struct FUIActionData                          GetOffStyle;                                       // 0x0210(0x0058)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	TArray<class AActor*> GetTargets();
@@ -113,17 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_102361">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_102361")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_102361")
 	}
 	static class UPyUIC_SelectTarget_102361* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_102361>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_102361) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_102361");
-static_assert(sizeof(UPyUIC_SelectTarget_102361) == 0x000208, "Wrong size on UPyUIC_SelectTarget_102361");
-static_assert(offsetof(UPyUIC_SelectTarget_102361, FlyToStyle) == 0x000158, "Member 'UPyUIC_SelectTarget_102361::FlyToStyle' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_102361, GetOffStyle) == 0x0001B0, "Member 'UPyUIC_SelectTarget_102361::GetOffStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_102361;
 
 }
 

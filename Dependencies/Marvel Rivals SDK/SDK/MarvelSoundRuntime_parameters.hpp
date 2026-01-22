@@ -23,11 +23,7 @@ public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 in_EventName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AudioAutoShowLog_ShowPostEventLog) == 0x000008, "Wrong alignment on AudioAutoShowLog_ShowPostEventLog");
-static_assert(sizeof(AudioAutoShowLog_ShowPostEventLog) == 0x000020, "Wrong size on AudioAutoShowLog_ShowPostEventLog");
-static_assert(offsetof(AudioAutoShowLog_ShowPostEventLog, AkComponent) == 0x000000, "Member 'AudioAutoShowLog_ShowPostEventLog::AkComponent' has a wrong offset!");
-static_assert(offsetof(AudioAutoShowLog_ShowPostEventLog, AkEvent) == 0x000008, "Member 'AudioAutoShowLog_ShowPostEventLog::AkEvent' has a wrong offset!");
-static_assert(offsetof(AudioAutoShowLog_ShowPostEventLog, in_EventName) == 0x000010, "Member 'AudioAutoShowLog_ShowPostEventLog::in_EventName' has a wrong offset!");
+DUMPER7_ASSERTS_AudioAutoShowLog_ShowPostEventLog;
 
 }
 

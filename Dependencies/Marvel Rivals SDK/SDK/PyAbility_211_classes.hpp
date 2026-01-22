@@ -12,13 +12,14 @@
 
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_211.PyAbility_211
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_211 : public UAbility_211
 {
 public:
@@ -30,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_211">();
+		STATIC_CLASS_IMPL("PyAbility_211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_211")
 	}
 	static class UPyAbility_211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_211>();
 	}
 };
-static_assert(alignof(UPyAbility_211) == 0x000008, "Wrong alignment on UPyAbility_211");
-static_assert(sizeof(UPyAbility_211) == 0x002A08, "Wrong size on UPyAbility_211");
+DUMPER7_ASSERTS_UPyAbility_211;
 
 // PythonClass PyAbility_211.PyCue_Ability_Instant_21101
 // 0x0008 (0x02B8 - 0x02B0)
@@ -53,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_21101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_21101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_21101")
 	}
 	static class UPyCue_Ability_Instant_21101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_21101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_21101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_21101");
-static_assert(sizeof(UPyCue_Ability_Instant_21101) == 0x0002B8, "Wrong size on UPyCue_Ability_Instant_21101");
-static_assert(offsetof(UPyCue_Ability_Instant_21101, UISprayFailedAudioEvent) == 0x0002B0, "Member 'UPyCue_Ability_Instant_21101::UISprayFailedAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_21101;
 
 // PythonClass PyAbility_211.PyAbilityExtraStatistics_211
 // 0x0000 (0x0070 - 0x0070)
@@ -77,24 +83,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityExtraStatistics_211">();
+		STATIC_CLASS_IMPL("PyAbilityExtraStatistics_211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityExtraStatistics_211")
 	}
 	static class UPyAbilityExtraStatistics_211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityExtraStatistics_211>();
 	}
 };
-static_assert(alignof(UPyAbilityExtraStatistics_211) == 0x000008, "Wrong alignment on UPyAbilityExtraStatistics_211");
-static_assert(sizeof(UPyAbilityExtraStatistics_211) == 0x000070, "Wrong size on UPyAbilityExtraStatistics_211");
+DUMPER7_ASSERTS_UPyAbilityExtraStatistics_211;
 
 // PythonClass PyAbility_211.PyUIController_211
-// 0x0058 (0x0F68 - 0x0F10)
+// 0x00D0 (0x12C0 - 0x11F0)
 class UPyUIController_211 : public UUIC_Ability
 {
 public:
-	int32                                         MinResponseDistanceSquare;                         // 0x0F10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HoldDuration;                                      // 0x0F14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EMutualEmoteInitializerState, class FText> UnavailableTextDict;                             // 0x0F18(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         MinResponseDistanceSquare;                         // 0x11F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HoldDuration;                                      // 0x11F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CoronaBlockTag;                                    // 0x11F8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1204[0x4];                                     // 0x1204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CoronaBlockTagContainer;                           // 0x1208(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EMutualEmoteInitializerState, class FText> UnavailableTextDict;                             // 0x1270(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -105,18 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_211">();
+		STATIC_CLASS_IMPL("PyUIController_211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_211")
 	}
 	static class UPyUIController_211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_211>();
 	}
 };
-static_assert(alignof(UPyUIController_211) == 0x000008, "Wrong alignment on UPyUIController_211");
-static_assert(sizeof(UPyUIController_211) == 0x000F68, "Wrong size on UPyUIController_211");
-static_assert(offsetof(UPyUIController_211, MinResponseDistanceSquare) == 0x000F10, "Member 'UPyUIController_211::MinResponseDistanceSquare' has a wrong offset!");
-static_assert(offsetof(UPyUIController_211, HoldDuration) == 0x000F14, "Member 'UPyUIController_211::HoldDuration' has a wrong offset!");
-static_assert(offsetof(UPyUIController_211, UnavailableTextDict) == 0x000F18, "Member 'UPyUIController_211::UnavailableTextDict' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_211;
 
 }
 

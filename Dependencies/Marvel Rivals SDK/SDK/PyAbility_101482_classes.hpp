@@ -28,28 +28,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101482">();
+		STATIC_CLASS_IMPL("PyConfig_101482")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101482")
 	}
 	static class UPyConfig_101482* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101482>();
 	}
 };
-static_assert(alignof(UPyConfig_101482) == 0x000008, "Wrong alignment on UPyConfig_101482");
-static_assert(sizeof(UPyConfig_101482) == 0x0000D0, "Wrong size on UPyConfig_101482");
-static_assert(offsetof(UPyConfig_101482, SlowBuffID) == 0x0000C8, "Member 'UPyConfig_101482::SlowBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101482;
 
 // PythonClass PyAbility_101482.PyAbility_101482
-// 0x0030 (0x2B20 - 0x2AF0)
+// 0x0030 (0x2B70 - 0x2B40)
 class UPyAbility_101482 : public UAbility_105
 {
 public:
-	int32                                         GatlingWeaponIndex;                                // 0x2AF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ParentAbilityId;                                   // 0x2AF4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EState_101482                                 AbilityState;                                      // 0x2AF8(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2AF9[0x7];                                     // 0x2AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnBeginGunWarmUp;                                  // 0x2B00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBeginGunCoolDown;                                // 0x2B10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         GatlingWeaponIndex;                                // 0x2B40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ParentAbilityId;                                   // 0x2B44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EState_101482                                 AbilityState;                                      // 0x2B48(0x0001)(BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2B49[0x7];                                     // 0x2B49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnBeginGunWarmUp;                                  // 0x2B50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBeginGunCoolDown;                                // 0x2B60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -67,33 +69,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101482">();
+		STATIC_CLASS_IMPL("PyAbility_101482")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101482")
 	}
 	static class UPyAbility_101482* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101482>();
 	}
 };
-static_assert(alignof(UPyAbility_101482) == 0x000008, "Wrong alignment on UPyAbility_101482");
-static_assert(sizeof(UPyAbility_101482) == 0x002B20, "Wrong size on UPyAbility_101482");
-static_assert(offsetof(UPyAbility_101482, GatlingWeaponIndex) == 0x002AF0, "Member 'UPyAbility_101482::GatlingWeaponIndex' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101482, ParentAbilityId) == 0x002AF4, "Member 'UPyAbility_101482::ParentAbilityId' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101482, AbilityState) == 0x002AF8, "Member 'UPyAbility_101482::AbilityState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101482, OnBeginGunWarmUp) == 0x002B00, "Member 'UPyAbility_101482::OnBeginGunWarmUp' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101482, OnBeginGunCoolDown) == 0x002B10, "Member 'UPyAbility_101482::OnBeginGunCoolDown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101482;
 
 // PythonClass PyAbility_101482.PyCue_Ability_Loop_101482
-// 0x0050 (0x1200 - 0x11B0)
+// 0x0050 (0x1210 - 0x11C0)
 class APyCue_Ability_Loop_101482 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UCurveFloat*                            CurveWarmUp;                                       // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            CurveCoolDown;                                     // 0x11B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxIntensity;                                      // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMaterialQuery                         GunQuery;                                          // 0x11C4(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GunSlot;                                           // 0x11E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WarmUpTime;                                        // 0x11EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CoolDownTime;                                      // 0x11F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            CurveWarmUp;                                       // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            CurveCoolDown;                                     // 0x11C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxIntensity;                                      // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMaterialQuery                         GunQuery;                                          // 0x11D4(0x0024)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GunSlot;                                           // 0x11F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WarmUpTime;                                        // 0x11FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CoolDownTime;                                      // 0x1200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnBegin();
@@ -107,22 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_101482">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_101482")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_101482")
 	}
 	static class APyCue_Ability_Loop_101482* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_101482>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_101482) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_101482");
-static_assert(sizeof(APyCue_Ability_Loop_101482) == 0x001200, "Wrong size on APyCue_Ability_Loop_101482");
-static_assert(offsetof(APyCue_Ability_Loop_101482, CurveWarmUp) == 0x0011B0, "Member 'APyCue_Ability_Loop_101482::CurveWarmUp' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, CurveCoolDown) == 0x0011B8, "Member 'APyCue_Ability_Loop_101482::CurveCoolDown' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, MaxIntensity) == 0x0011C0, "Member 'APyCue_Ability_Loop_101482::MaxIntensity' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, GunQuery) == 0x0011C4, "Member 'APyCue_Ability_Loop_101482::GunQuery' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, GunSlot) == 0x0011E8, "Member 'APyCue_Ability_Loop_101482::GunSlot' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, WarmUpTime) == 0x0011EC, "Member 'APyCue_Ability_Loop_101482::WarmUpTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_101482, CoolDownTime) == 0x0011F0, "Member 'APyCue_Ability_Loop_101482::CoolDownTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_101482;
 
 }
 

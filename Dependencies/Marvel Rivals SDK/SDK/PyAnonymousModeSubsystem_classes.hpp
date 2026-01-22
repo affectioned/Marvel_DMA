@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAnonymousModeSubsystem">();
+		STATIC_CLASS_IMPL("PyAnonymousModeSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAnonymousModeSubsystem")
 	}
 	static class UPyAnonymousModeSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAnonymousModeSubsystem>();
 	}
 };
-static_assert(alignof(UPyAnonymousModeSubsystem) == 0x000008, "Wrong alignment on UPyAnonymousModeSubsystem");
-static_assert(sizeof(UPyAnonymousModeSubsystem) == 0x0000B8, "Wrong size on UPyAnonymousModeSubsystem");
+DUMPER7_ASSERTS_UPyAnonymousModeSubsystem;
 
 }
 

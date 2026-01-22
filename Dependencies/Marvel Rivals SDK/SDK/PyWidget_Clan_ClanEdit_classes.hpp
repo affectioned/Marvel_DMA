@@ -18,29 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_ClanEdit.PyWidget_Clan_IconData
-// 0x0008 (0x0050 - 0x0048)
+// 0x0008 (0x0078 - 0x0070)
 class UPyWidget_Clan_IconData final : public UPyWidget_CommonItem_ItemData
 {
 public:
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         IconID;                                            // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         IconID;                                            // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_IconData">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_IconData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_IconData")
 	}
 	static class UPyWidget_Clan_IconData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_IconData>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_IconData) == 0x000008, "Wrong alignment on UPyWidget_Clan_IconData");
-static_assert(sizeof(UPyWidget_Clan_IconData) == 0x000050, "Wrong size on UPyWidget_Clan_IconData");
-static_assert(offsetof(UPyWidget_Clan_IconData, IconID) == 0x000048, "Member 'UPyWidget_Clan_IconData::IconID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_IconData;
 
 // PythonClass PyWidget_Clan_ClanEdit.PyWidget_Clan_ClanEdit
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Clan_ClanEdit final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -51,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ClanEdit">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ClanEdit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ClanEdit")
 	}
 	static class UPyWidget_Clan_ClanEdit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ClanEdit>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ClanEdit) == 0x000008, "Wrong alignment on UPyWidget_Clan_ClanEdit");
-static_assert(sizeof(UPyWidget_Clan_ClanEdit) == 0x0005F8, "Wrong size on UPyWidget_Clan_ClanEdit");
+DUMPER7_ASSERTS_UPyWidget_Clan_ClanEdit;
 
 }
 

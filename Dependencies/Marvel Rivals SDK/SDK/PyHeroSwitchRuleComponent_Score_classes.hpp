@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroSwitchConfig_Score">();
+		STATIC_CLASS_IMPL("PyHeroSwitchConfig_Score")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroSwitchConfig_Score")
 	}
 	static class UPyHeroSwitchConfig_Score* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroSwitchConfig_Score>();
 	}
 };
-static_assert(alignof(UPyHeroSwitchConfig_Score) == 0x000008, "Wrong alignment on UPyHeroSwitchConfig_Score");
-static_assert(sizeof(UPyHeroSwitchConfig_Score) == 0x000128, "Wrong size on UPyHeroSwitchConfig_Score");
-static_assert(offsetof(UPyHeroSwitchConfig_Score, ScoreHeroMap) == 0x0000D8, "Member 'UPyHeroSwitchConfig_Score::ScoreHeroMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroSwitchConfig_Score;
 
 // PythonClass PyHeroSwitchRuleComponent_Score.PyHeroSwitchRuleComponent_Score
 // 0x0050 (0x01F8 - 0x01A8)
@@ -50,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeroSwitchRuleComponent_Score">();
+		STATIC_CLASS_IMPL("PyHeroSwitchRuleComponent_Score")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeroSwitchRuleComponent_Score")
 	}
 	static class UPyHeroSwitchRuleComponent_Score* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeroSwitchRuleComponent_Score>();
 	}
 };
-static_assert(alignof(UPyHeroSwitchRuleComponent_Score) == 0x000008, "Wrong alignment on UPyHeroSwitchRuleComponent_Score");
-static_assert(sizeof(UPyHeroSwitchRuleComponent_Score) == 0x0001F8, "Wrong size on UPyHeroSwitchRuleComponent_Score");
-static_assert(offsetof(UPyHeroSwitchRuleComponent_Score, ScoreHeroMap) == 0x0001A8, "Member 'UPyHeroSwitchRuleComponent_Score::ScoreHeroMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHeroSwitchRuleComponent_Score;
 
 }
 

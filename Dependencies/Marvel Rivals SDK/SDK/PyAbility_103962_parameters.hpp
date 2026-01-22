@@ -21,9 +21,7 @@ struct PyAbility_103962_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103962_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_103962_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_103962_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_103962_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_103962_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_103962_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103962_K2_OnEndAbility;
 
 // PythonFunction PyAbility_103962.PyAbility_103962.GetAbilityDuration
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_103962_GetAbilityDuration final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103962_GetAbilityDuration) == 0x000004, "Wrong alignment on PyAbility_103962_GetAbilityDuration");
-static_assert(sizeof(PyAbility_103962_GetAbilityDuration) == 0x000004, "Wrong size on PyAbility_103962_GetAbilityDuration");
-static_assert(offsetof(PyAbility_103962_GetAbilityDuration, ReturnValue) == 0x000000, "Member 'PyAbility_103962_GetAbilityDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103962_GetAbilityDuration;
 
 }
 

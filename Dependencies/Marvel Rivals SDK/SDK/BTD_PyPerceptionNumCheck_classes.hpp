@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyPerceptionNumCheck">();
+		STATIC_CLASS_IMPL("BTD_PyPerceptionNumCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyPerceptionNumCheck")
 	}
 	static class UBTD_PyPerceptionNumCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyPerceptionNumCheck>();
 	}
 };
-static_assert(alignof(UBTD_PyPerceptionNumCheck) == 0x000008, "Wrong alignment on UBTD_PyPerceptionNumCheck");
-static_assert(sizeof(UBTD_PyPerceptionNumCheck) == 0x0000E0, "Wrong size on UBTD_PyPerceptionNumCheck");
-static_assert(offsetof(UBTD_PyPerceptionNumCheck, Text) == 0x0000B8, "Member 'UBTD_PyPerceptionNumCheck::Text' has a wrong offset!");
-static_assert(offsetof(UBTD_PyPerceptionNumCheck, ModeType) == 0x0000C8, "Member 'UBTD_PyPerceptionNumCheck::ModeType' has a wrong offset!");
-static_assert(offsetof(UBTD_PyPerceptionNumCheck, NumRange) == 0x0000CC, "Member 'UBTD_PyPerceptionNumCheck::NumRange' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyPerceptionNumCheck;
 
 }
 

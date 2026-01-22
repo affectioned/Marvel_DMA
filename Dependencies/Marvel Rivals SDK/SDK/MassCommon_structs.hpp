@@ -25,9 +25,7 @@ struct FTransformFragment final : public FMassFragment
 public:
 	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FTransformFragment) == 0x000010, "Wrong alignment on FTransformFragment");
-static_assert(sizeof(FTransformFragment) == 0x000060, "Wrong size on FTransformFragment");
-static_assert(offsetof(FTransformFragment, Transform) == 0x000000, "Member 'FTransformFragment::Transform' has a wrong offset!");
+DUMPER7_ASSERTS_FTransformFragment;
 
 // ScriptStruct MassCommon.AgentRadiusFragment
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +34,7 @@ struct FAgentRadiusFragment final : public FMassFragment
 public:
 	float                                         Radius;                                            // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAgentRadiusFragment) == 0x000004, "Wrong alignment on FAgentRadiusFragment");
-static_assert(sizeof(FAgentRadiusFragment) == 0x000004, "Wrong size on FAgentRadiusFragment");
-static_assert(offsetof(FAgentRadiusFragment, Radius) == 0x000000, "Member 'FAgentRadiusFragment::Radius' has a wrong offset!");
+DUMPER7_ASSERTS_FAgentRadiusFragment;
 
 // ScriptStruct MassCommon.ObjectWrapperFragment
 // 0x0000 (0x0000 - 0x0000)
@@ -47,16 +43,14 @@ struct alignas(0x01) FObjectWrapperFragment : public FMassFragment
 {
 };
 #pragma pack(pop)
-static_assert(alignof(FObjectWrapperFragment) == 0x000001, "Wrong alignment on FObjectWrapperFragment");
-static_assert(sizeof(FObjectWrapperFragment) == 0x000001, "Wrong size on FObjectWrapperFragment");
+DUMPER7_ASSERTS_FObjectWrapperFragment;
 
 // ScriptStruct MassCommon.MassNetworkID
 // 0x0000 (0x0004 - 0x0004)
 struct FMassNetworkID final : public FSequentialIDBase
 {
 };
-static_assert(alignof(FMassNetworkID) == 0x000004, "Wrong alignment on FMassNetworkID");
-static_assert(sizeof(FMassNetworkID) == 0x000004, "Wrong size on FMassNetworkID");
+DUMPER7_ASSERTS_FMassNetworkID;
 
 // ScriptStruct MassCommon.MassInt16Real
 // 0x0002 (0x0002 - 0x0000)
@@ -65,9 +59,7 @@ struct FMassInt16Real final
 public:
 	int16                                         Value;                                             // 0x0000(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassInt16Real) == 0x000002, "Wrong alignment on FMassInt16Real");
-static_assert(sizeof(FMassInt16Real) == 0x000002, "Wrong size on FMassInt16Real");
-static_assert(offsetof(FMassInt16Real, Value) == 0x000000, "Member 'FMassInt16Real::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FMassInt16Real;
 
 // ScriptStruct MassCommon.MassInt16Real10
 // 0x0002 (0x0002 - 0x0000)
@@ -76,9 +68,7 @@ struct FMassInt16Real10 final
 public:
 	int16                                         Value;                                             // 0x0000(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassInt16Real10) == 0x000002, "Wrong alignment on FMassInt16Real10");
-static_assert(sizeof(FMassInt16Real10) == 0x000002, "Wrong size on FMassInt16Real10");
-static_assert(offsetof(FMassInt16Real10, Value) == 0x000000, "Member 'FMassInt16Real10::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FMassInt16Real10;
 
 // ScriptStruct MassCommon.MassSnorm8Vector
 // 0x0003 (0x0003 - 0x0000)
@@ -89,11 +79,7 @@ public:
 	int8                                          Y;                                                 // 0x0001(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int8                                          Z;                                                 // 0x0002(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassSnorm8Vector) == 0x000001, "Wrong alignment on FMassSnorm8Vector");
-static_assert(sizeof(FMassSnorm8Vector) == 0x000003, "Wrong size on FMassSnorm8Vector");
-static_assert(offsetof(FMassSnorm8Vector, X) == 0x000000, "Member 'FMassSnorm8Vector::X' has a wrong offset!");
-static_assert(offsetof(FMassSnorm8Vector, Y) == 0x000001, "Member 'FMassSnorm8Vector::Y' has a wrong offset!");
-static_assert(offsetof(FMassSnorm8Vector, Z) == 0x000002, "Member 'FMassSnorm8Vector::Z' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSnorm8Vector;
 
 // ScriptStruct MassCommon.MassSnorm8Vector2D
 // 0x0002 (0x0002 - 0x0000)
@@ -103,10 +89,7 @@ public:
 	int8                                          X;                                                 // 0x0000(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int8                                          Y;                                                 // 0x0001(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassSnorm8Vector2D) == 0x000001, "Wrong alignment on FMassSnorm8Vector2D");
-static_assert(sizeof(FMassSnorm8Vector2D) == 0x000002, "Wrong size on FMassSnorm8Vector2D");
-static_assert(offsetof(FMassSnorm8Vector2D, X) == 0x000000, "Member 'FMassSnorm8Vector2D::X' has a wrong offset!");
-static_assert(offsetof(FMassSnorm8Vector2D, Y) == 0x000001, "Member 'FMassSnorm8Vector2D::Y' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSnorm8Vector2D;
 
 // ScriptStruct MassCommon.MassUnorm8Real
 // 0x0001 (0x0001 - 0x0000)
@@ -115,9 +98,7 @@ struct FMassUnorm8Real final
 public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassUnorm8Real) == 0x000001, "Wrong alignment on FMassUnorm8Real");
-static_assert(sizeof(FMassUnorm8Real) == 0x000001, "Wrong size on FMassUnorm8Real");
-static_assert(offsetof(FMassUnorm8Real, Value) == 0x000000, "Member 'FMassUnorm8Real::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FMassUnorm8Real;
 
 // ScriptStruct MassCommon.MassInt16Vector
 // 0x0006 (0x0006 - 0x0000)
@@ -128,11 +109,7 @@ public:
 	int16                                         Y;                                                 // 0x0002(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int16                                         Z;                                                 // 0x0004(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassInt16Vector) == 0x000002, "Wrong alignment on FMassInt16Vector");
-static_assert(sizeof(FMassInt16Vector) == 0x000006, "Wrong size on FMassInt16Vector");
-static_assert(offsetof(FMassInt16Vector, X) == 0x000000, "Member 'FMassInt16Vector::X' has a wrong offset!");
-static_assert(offsetof(FMassInt16Vector, Y) == 0x000002, "Member 'FMassInt16Vector::Y' has a wrong offset!");
-static_assert(offsetof(FMassInt16Vector, Z) == 0x000004, "Member 'FMassInt16Vector::Z' has a wrong offset!");
+DUMPER7_ASSERTS_FMassInt16Vector;
 
 // ScriptStruct MassCommon.MassInt16Vector2D
 // 0x0004 (0x0004 - 0x0000)
@@ -142,10 +119,7 @@ public:
 	int16                                         X;                                                 // 0x0000(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int16                                         Y;                                                 // 0x0002(0x0002)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassInt16Vector2D) == 0x000002, "Wrong alignment on FMassInt16Vector2D");
-static_assert(sizeof(FMassInt16Vector2D) == 0x000004, "Wrong size on FMassInt16Vector2D");
-static_assert(offsetof(FMassInt16Vector2D, X) == 0x000000, "Member 'FMassInt16Vector2D::X' has a wrong offset!");
-static_assert(offsetof(FMassInt16Vector2D, Y) == 0x000002, "Member 'FMassInt16Vector2D::Y' has a wrong offset!");
+DUMPER7_ASSERTS_FMassInt16Vector2D;
 
 }
 

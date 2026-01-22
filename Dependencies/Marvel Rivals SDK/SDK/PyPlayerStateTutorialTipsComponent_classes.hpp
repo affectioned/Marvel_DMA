@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateTutorialTipsComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateTutorialTipsComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateTutorialTipsComponent")
 	}
 	static class UPyPlayerStateTutorialTipsComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateTutorialTipsComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateTutorialTipsComponent) == 0x000008, "Wrong alignment on UPyPlayerStateTutorialTipsComponent");
-static_assert(sizeof(UPyPlayerStateTutorialTipsComponent) == 0x000128, "Wrong size on UPyPlayerStateTutorialTipsComponent");
-static_assert(offsetof(UPyPlayerStateTutorialTipsComponent, TipsIDInSingleGame) == 0x000108, "Member 'UPyPlayerStateTutorialTipsComponent::TipsIDInSingleGame' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTutorialTipsComponent, TipsCountInSingleGame) == 0x000118, "Member 'UPyPlayerStateTutorialTipsComponent::TipsCountInSingleGame' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateTutorialTipsComponent;
 
 }
 

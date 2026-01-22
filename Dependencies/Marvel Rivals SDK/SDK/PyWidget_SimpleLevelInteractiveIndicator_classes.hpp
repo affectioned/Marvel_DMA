@@ -23,15 +23,18 @@ class UPyWidget_SimpleLevelInteractiveIndicator final : public UMarvel3DWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SimpleLevelInteractiveIndicator">();
+		STATIC_CLASS_IMPL("PyWidget_SimpleLevelInteractiveIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SimpleLevelInteractiveIndicator")
 	}
 	static class UPyWidget_SimpleLevelInteractiveIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SimpleLevelInteractiveIndicator>();
 	}
 };
-static_assert(alignof(UPyWidget_SimpleLevelInteractiveIndicator) == 0x000010, "Wrong alignment on UPyWidget_SimpleLevelInteractiveIndicator");
-static_assert(sizeof(UPyWidget_SimpleLevelInteractiveIndicator) == 0x000870, "Wrong size on UPyWidget_SimpleLevelInteractiveIndicator");
+DUMPER7_ASSERTS_UPyWidget_SimpleLevelInteractiveIndicator;
 
 }
 

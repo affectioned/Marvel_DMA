@@ -148,22 +148,7 @@ public:
 	int32                                         InstanceCount;                                     // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChaosEffectEventData) == 0x000008, "Wrong alignment on FChaosEffectEventData");
-static_assert(sizeof(FChaosEffectEventData) == 0x0000D8, "Wrong size on FChaosEffectEventData");
-static_assert(offsetof(FChaosEffectEventData, LocationDataArray) == 0x000000, "Member 'FChaosEffectEventData::LocationDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, VelocityDataArray) == 0x000010, "Member 'FChaosEffectEventData::VelocityDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, AngularVelocityDataArray) == 0x000020, "Member 'FChaosEffectEventData::AngularVelocityDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, MassDataArray) == 0x000030, "Member 'FChaosEffectEventData::MassDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, IndexDataArray) == 0x000040, "Member 'FChaosEffectEventData::IndexDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, LevelDataArray) == 0x000050, "Member 'FChaosEffectEventData::LevelDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, FXSizeDataArray) == 0x000060, "Member 'FChaosEffectEventData::FXSizeDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomActorPositionDataArray) == 0x000070, "Member 'FChaosEffectEventData::CustomActorPositionDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomFloatDataArray) == 0x000080, "Member 'FChaosEffectEventData::CustomFloatDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomIntDataArray) == 0x000090, "Member 'FChaosEffectEventData::CustomIntDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomBoolDataArray) == 0x0000A0, "Member 'FChaosEffectEventData::CustomBoolDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomVector4DataArray) == 0x0000B0, "Member 'FChaosEffectEventData::CustomVector4DataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, CustomVectorDataArray) == 0x0000C0, "Member 'FChaosEffectEventData::CustomVectorDataArray' has a wrong offset!");
-static_assert(offsetof(FChaosEffectEventData, InstanceCount) == 0x0000D0, "Member 'FChaosEffectEventData::InstanceCount' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosEffectEventData;
 
 // ScriptStruct ChaosNiagara.ChaosDestructionEvent
 // 0x0078 (0x0078 - 0x0000)
@@ -181,17 +166,7 @@ public:
 	int32                                         Type;                                              // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChaosDestructionEvent) == 0x000008, "Wrong alignment on FChaosDestructionEvent");
-static_assert(sizeof(FChaosDestructionEvent) == 0x000078, "Wrong size on FChaosDestructionEvent");
-static_assert(offsetof(FChaosDestructionEvent, Position) == 0x000000, "Member 'FChaosDestructionEvent::Position' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, Normal) == 0x000018, "Member 'FChaosDestructionEvent::Normal' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, Velocity) == 0x000030, "Member 'FChaosDestructionEvent::Velocity' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, AngularVelocity) == 0x000048, "Member 'FChaosDestructionEvent::AngularVelocity' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, ExtentMin) == 0x000060, "Member 'FChaosDestructionEvent::ExtentMin' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, ExtentMax) == 0x000064, "Member 'FChaosDestructionEvent::ExtentMax' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, ParticleID) == 0x000068, "Member 'FChaosDestructionEvent::ParticleID' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, Time) == 0x00006C, "Member 'FChaosDestructionEvent::Time' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent, Type) == 0x000070, "Member 'FChaosDestructionEvent::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosDestructionEvent;
 
 }
 

@@ -43,22 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_IndicatorV2">();
+		STATIC_CLASS_IMPL("PyWidget_Common_IndicatorV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_IndicatorV2")
 	}
 	static class UPyWidget_Common_IndicatorV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_IndicatorV2>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_IndicatorV2) == 0x000010, "Wrong alignment on UPyWidget_Common_IndicatorV2");
-static_assert(sizeof(UPyWidget_Common_IndicatorV2) == 0x0009E0, "Wrong size on UPyWidget_Common_IndicatorV2");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, NullOccupyColor) == 0x000870, "Member 'UPyWidget_Common_IndicatorV2::NullOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, AllyOccupyColor) == 0x000880, "Member 'UPyWidget_Common_IndicatorV2::AllyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, EmenyOccupyColor) == 0x000890, "Member 'UPyWidget_Common_IndicatorV2::EmenyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, BackIconList) == 0x0008A0, "Member 'UPyWidget_Common_IndicatorV2::BackIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, BackFrameList) == 0x0008F0, "Member 'UPyWidget_Common_IndicatorV2::BackFrameList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, FrontLockIconList) == 0x000940, "Member 'UPyWidget_Common_IndicatorV2::FrontLockIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_IndicatorV2, BackLockIconList) == 0x000990, "Member 'UPyWidget_Common_IndicatorV2::BackLockIconList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_IndicatorV2;
 
 }
 

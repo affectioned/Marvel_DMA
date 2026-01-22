@@ -10,39 +10,40 @@
 
 #include "Basic.hpp"
 
+#include "Hero_1045_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1045_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104541.PyConfig_104541
-// 0x0BF0 (0x0C88 - 0x0098)
+// 0x0F10 (0x0FA8 - 0x0098)
 class UPyConfig_104541 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 IsHoldAbilityParam;                                // 0x0C60(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 IsHoldAbilityParam;                                // 0x0F80(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104541">();
+		STATIC_CLASS_IMPL("PyConfig_104541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104541")
 	}
 	static class UPyConfig_104541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104541>();
 	}
 };
-static_assert(alignof(UPyConfig_104541) == 0x000008, "Wrong alignment on UPyConfig_104541");
-static_assert(sizeof(UPyConfig_104541) == 0x000C88, "Wrong size on UPyConfig_104541");
-static_assert(offsetof(UPyConfig_104541, DashInfo) == 0x000098, "Member 'UPyConfig_104541::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104541, IsHoldAbilityParam) == 0x000C60, "Member 'UPyConfig_104541::IsHoldAbilityParam' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104541;
 
 // PythonClass PyAbility_104541.PySummoned_10454101
-// 0x0000 (0x0B50 - 0x0B50)
+// 0x0000 (0x0B70 - 0x0B70)
 class APySummoned_10454101 : public ASummoned_10454101
 {
 public:
@@ -52,22 +53,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10454101">();
+		STATIC_CLASS_IMPL("PySummoned_10454101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10454101")
 	}
 	static class APySummoned_10454101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10454101>();
 	}
 };
-static_assert(alignof(APySummoned_10454101) == 0x000010, "Wrong alignment on APySummoned_10454101");
-static_assert(sizeof(APySummoned_10454101) == 0x000B50, "Wrong size on APySummoned_10454101");
+DUMPER7_ASSERTS_APySummoned_10454101;
 
 // PythonClass PyAbility_104541.PyAbility_104541
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_104541 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnAbilityReadyEndDelegate;                         // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnAbilityReadyEndDelegate;                         // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -79,23 +83,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104541">();
+		STATIC_CLASS_IMPL("PyAbility_104541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104541")
 	}
 	static class UPyAbility_104541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104541>();
 	}
 };
-static_assert(alignof(UPyAbility_104541) == 0x000008, "Wrong alignment on UPyAbility_104541");
-static_assert(sizeof(UPyAbility_104541) == 0x002A00, "Wrong size on UPyAbility_104541");
-static_assert(offsetof(UPyAbility_104541, OnAbilityReadyEndDelegate) == 0x0029F0, "Member 'UPyAbility_104541::OnAbilityReadyEndDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104541;
 
 // PythonClass PyAbility_104541.PyUIController_104541
-// 0x00E8 (0x0FF8 - 0x0F10)
+// 0x00E8 (0x12D8 - 0x11F0)
 class UPyUIController_104541 final : public UUIC_Ability
 {
 public:
-	struct FReticleStyle                          ReticleHideStyle;                                  // 0x0F10(0x00E4)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FReticleStyle                          ReticleHideStyle;                                  // 0x11F0(0x00E4)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -103,16 +109,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104541">();
+		STATIC_CLASS_IMPL("PyUIController_104541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104541")
 	}
 	static class UPyUIController_104541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104541>();
 	}
 };
-static_assert(alignof(UPyUIController_104541) == 0x000008, "Wrong alignment on UPyUIController_104541");
-static_assert(sizeof(UPyUIController_104541) == 0x000FF8, "Wrong size on UPyUIController_104541");
-static_assert(offsetof(UPyUIController_104541, ReticleHideStyle) == 0x000F10, "Member 'UPyUIController_104541::ReticleHideStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_104541;
 
 }
 

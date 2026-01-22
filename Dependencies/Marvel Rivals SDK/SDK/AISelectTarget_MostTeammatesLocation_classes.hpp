@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AISelectTarget_MostTeammatesLocation.AISelectTarget_MostTeammatesLocation_C
-// 0x0000 (0x16F0 - 0x16F0)
+// 0x0000 (0x1A40 - 0x1A40)
 class UAISelectTarget_MostTeammatesLocation_C final : public UPyAISelectTarget_MostTargetsLocation
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_MostTeammatesLocation_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_MostTeammatesLocation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_MostTeammatesLocation_C")
 	}
 	static class UAISelectTarget_MostTeammatesLocation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_MostTeammatesLocation_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_MostTeammatesLocation_C) == 0x000010, "Wrong alignment on UAISelectTarget_MostTeammatesLocation_C");
-static_assert(sizeof(UAISelectTarget_MostTeammatesLocation_C) == 0x0016F0, "Wrong size on UAISelectTarget_MostTeammatesLocation_C");
+DUMPER7_ASSERTS_UAISelectTarget_MostTeammatesLocation_C;
 
 }
 

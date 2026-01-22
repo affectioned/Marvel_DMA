@@ -30,7 +30,6 @@ public:
 	void PostRewindForReplay();
 	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndReason);
-	void OnLevelReset();
 	void SrvSetState(const class FString& state);
 	void OnRep_State();
 	void OnMoveSpeedChanged(float MoveSpeed);
@@ -42,17 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLeopard">();
+		STATIC_CLASS_IMPL("PyLeopard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLeopard")
 	}
 	static class APyLeopard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLeopard>();
 	}
 };
-static_assert(alignof(APyLeopard) == 0x000010, "Wrong alignment on APyLeopard");
-static_assert(sizeof(APyLeopard) == 0x000B20, "Wrong size on APyLeopard");
-static_assert(offsetof(APyLeopard, NPCAudioIDs) == 0x000AB8, "Member 'APyLeopard::NPCAudioIDs' has a wrong offset!");
-static_assert(offsetof(APyLeopard, State) == 0x000B08, "Member 'APyLeopard::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyLeopard;
 
 }
 

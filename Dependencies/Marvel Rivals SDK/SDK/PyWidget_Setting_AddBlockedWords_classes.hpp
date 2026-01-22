@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Setting_AddBlockedWords.PyWidget_Setting_AddBlockedWords
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Setting_AddBlockedWords final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputTips                             WrongTextExist;                                    // 0x05C0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FInputTips                             WrongTextExist;                                    // 0x05C8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Setting_AddBlockedWords">();
+		STATIC_CLASS_IMPL("PyWidget_Setting_AddBlockedWords")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Setting_AddBlockedWords")
 	}
 	static class UPyWidget_Setting_AddBlockedWords* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Setting_AddBlockedWords>();
 	}
 };
-static_assert(alignof(UPyWidget_Setting_AddBlockedWords) == 0x000008, "Wrong alignment on UPyWidget_Setting_AddBlockedWords");
-static_assert(sizeof(UPyWidget_Setting_AddBlockedWords) == 0x0005E0, "Wrong size on UPyWidget_Setting_AddBlockedWords");
-static_assert(offsetof(UPyWidget_Setting_AddBlockedWords, WrongTextExist) == 0x0005C0, "Member 'UPyWidget_Setting_AddBlockedWords::WrongTextExist' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Setting_AddBlockedWords;
 
 }
 

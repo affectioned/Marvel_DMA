@@ -23,15 +23,18 @@ class UPyAISelectTarget_NearestPathPoint : public UPyAISelectTargetLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_NearestPathPoint">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_NearestPathPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_NearestPathPoint")
 	}
 	static class UPyAISelectTarget_NearestPathPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_NearestPathPoint>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_NearestPathPoint) == 0x000008, "Wrong alignment on UPyAISelectTarget_NearestPathPoint");
-static_assert(sizeof(UPyAISelectTarget_NearestPathPoint) == 0x000070, "Wrong size on UPyAISelectTarget_NearestPathPoint");
+DUMPER7_ASSERTS_UPyAISelectTarget_NearestPathPoint;
 
 }
 

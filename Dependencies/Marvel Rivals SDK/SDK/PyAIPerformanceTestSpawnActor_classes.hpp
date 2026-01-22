@@ -48,24 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIPerformanceTestSpawnActor">();
+		STATIC_CLASS_IMPL("PyAIPerformanceTestSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIPerformanceTestSpawnActor")
 	}
 	static class APyAIPerformanceTestSpawnActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAIPerformanceTestSpawnActor>();
 	}
 };
-static_assert(alignof(APyAIPerformanceTestSpawnActor) == 0x000010, "Wrong alignment on APyAIPerformanceTestSpawnActor");
-static_assert(sizeof(APyAIPerformanceTestSpawnActor) == 0x000780, "Wrong size on APyAIPerformanceTestSpawnActor");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, HeroID) == 0x0006E4, "Member 'APyAIPerformanceTestSpawnActor::HeroID' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, EnemyHeroID) == 0x0006E8, "Member 'APyAIPerformanceTestSpawnActor::EnemyHeroID' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, AllyHeroID) == 0x0006EC, "Member 'APyAIPerformanceTestSpawnActor::AllyHeroID' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, BTree) == 0x0006F0, "Member 'APyAIPerformanceTestSpawnActor::BTree' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, UsageTag) == 0x0006F8, "Member 'APyAIPerformanceTestSpawnActor::UsageTag' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, Camp) == 0x000760, "Member 'APyAIPerformanceTestSpawnActor::Camp' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, ReliveTime) == 0x000764, "Member 'APyAIPerformanceTestSpawnActor::ReliveTime' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, StartWayPoint) == 0x000768, "Member 'APyAIPerformanceTestSpawnActor::StartWayPoint' has a wrong offset!");
-static_assert(offsetof(APyAIPerformanceTestSpawnActor, AIPlayerState) == 0x000770, "Member 'APyAIPerformanceTestSpawnActor::AIPlayerState' has a wrong offset!");
+DUMPER7_ASSERTS_APyAIPerformanceTestSpawnActor;
 
 }
 

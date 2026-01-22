@@ -47,23 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ImageMaskCut">();
+		STATIC_CLASS_IMPL("PyWidget_ImageMaskCut")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ImageMaskCut")
 	}
 	static class UPyWidget_ImageMaskCut* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ImageMaskCut>();
 	}
 };
-static_assert(alignof(UPyWidget_ImageMaskCut) == 0x000008, "Wrong alignment on UPyWidget_ImageMaskCut");
-static_assert(sizeof(UPyWidget_ImageMaskCut) == 0x000428, "Wrong size on UPyWidget_ImageMaskCut");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Img_Mask) == 0x0003B8, "Member 'UPyWidget_ImageMaskCut::Img_Mask' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Img_Picture) == 0x0003C0, "Member 'UPyWidget_ImageMaskCut::Img_Picture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Image_Size) == 0x0003C8, "Member 'UPyWidget_ImageMaskCut::Image_Size' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Image_Location) == 0x0003D8, "Member 'UPyWidget_ImageMaskCut::Image_Location' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Image_Map) == 0x0003E8, "Member 'UPyWidget_ImageMaskCut::Image_Map' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, Mask_Map) == 0x0003F8, "Member 'UPyWidget_ImageMaskCut::Mask_Map' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, OnMaskLoadCompleted) == 0x000408, "Member 'UPyWidget_ImageMaskCut::OnMaskLoadCompleted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut, OnPictureLoadCompleted) == 0x000418, "Member 'UPyWidget_ImageMaskCut::OnPictureLoadCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ImageMaskCut;
 
 // PythonClass PyWidget_ImageMaskCut.PyWidget_ImageMaskCut_Gradient
 // 0x0028 (0x0450 - 0x0428)
@@ -82,18 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ImageMaskCut_Gradient">();
+		STATIC_CLASS_IMPL("PyWidget_ImageMaskCut_Gradient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ImageMaskCut_Gradient")
 	}
 	static class UPyWidget_ImageMaskCut_Gradient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ImageMaskCut_Gradient>();
 	}
 };
-static_assert(alignof(UPyWidget_ImageMaskCut_Gradient) == 0x000008, "Wrong alignment on UPyWidget_ImageMaskCut_Gradient");
-static_assert(sizeof(UPyWidget_ImageMaskCut_Gradient) == 0x000450, "Wrong size on UPyWidget_ImageMaskCut_Gradient");
-static_assert(offsetof(UPyWidget_ImageMaskCut_Gradient, Img_Picture_2) == 0x000428, "Member 'UPyWidget_ImageMaskCut_Gradient::Img_Picture_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut_Gradient, Image_Size_2) == 0x000430, "Member 'UPyWidget_ImageMaskCut_Gradient::Image_Size_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ImageMaskCut_Gradient, Image_Location_2) == 0x000440, "Member 'UPyWidget_ImageMaskCut_Gradient::Image_Location_2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ImageMaskCut_Gradient;
 
 }
 

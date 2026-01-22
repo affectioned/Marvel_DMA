@@ -15,7 +15,6 @@
 #include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Hero_1046_classes.hpp"
-#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -47,33 +46,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104661">();
+		STATIC_CLASS_IMPL("PyConfig_104661")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104661")
 	}
 	static class UPyConfig_104661* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104661>();
 	}
 };
-static_assert(alignof(UPyConfig_104661) == 0x000008, "Wrong alignment on UPyConfig_104661");
-static_assert(sizeof(UPyConfig_104661) == 0x000158, "Wrong size on UPyConfig_104661");
-static_assert(offsetof(UPyConfig_104661, TyrantsBuffID) == 0x0000F8, "Member 'UPyConfig_104661::TyrantsBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, PreResurrectionBuffID) == 0x0000FC, "Member 'UPyConfig_104661::PreResurrectionBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectionBuffID) == 0x000100, "Member 'UPyConfig_104661::ResurrectionBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, UIBuffID) == 0x000104, "Member 'UPyConfig_104661::UIBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, SummonedID) == 0x000108, "Member 'UPyConfig_104661::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, SummonedRelativeLocation) == 0x000110, "Member 'UPyConfig_104661::SummonedRelativeLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, Radius) == 0x000128, "Member 'UPyConfig_104661::Radius' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectionPriority) == 0x00012C, "Member 'UPyConfig_104661::ResurrectionPriority' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, IgnorePenetrationTag) == 0x000130, "Member 'UPyConfig_104661::IgnorePenetrationTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectSelfAbilityID) == 0x00013C, "Member 'UPyConfig_104661::ResurrectSelfAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, IsPercentHealth) == 0x000140, "Member 'UPyConfig_104661::IsPercentHealth' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectionHealth) == 0x000144, "Member 'UPyConfig_104661::ResurrectionHealth' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectionHealthRatio) == 0x000148, "Member 'UPyConfig_104661::ResurrectionHealthRatio' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectArmorBuffID) == 0x00014C, "Member 'UPyConfig_104661::ResurrectArmorBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104661, ResurrectArmorRatio) == 0x000150, "Member 'UPyConfig_104661::ResurrectArmorRatio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104661;
 
 // PythonClass PyAbility_104661.PyAbility_104661
-// 0x0000 (0x2BE0 - 0x2BE0)
+// 0x0000 (0x2C30 - 0x2C30)
 class UPyAbility_104661 : public UAbility_104661
 {
 public:
@@ -90,18 +77,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104661">();
+		STATIC_CLASS_IMPL("PyAbility_104661")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104661")
 	}
 	static class UPyAbility_104661* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104661>();
 	}
 };
-static_assert(alignof(UPyAbility_104661) == 0x000010, "Wrong alignment on UPyAbility_104661");
-static_assert(sizeof(UPyAbility_104661) == 0x002BE0, "Wrong size on UPyAbility_104661");
+DUMPER7_ASSERTS_UPyAbility_104661;
 
 // PythonClass PyAbility_104661.PyResurrectionAbility_10466101
-// 0x0000 (0x1428 - 0x1428)
+// 0x0000 (0x1440 - 0x1440)
 class UPyResurrectionAbility_10466101 : public UResurrectionAbility_10466101
 {
 public:
@@ -114,18 +104,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyResurrectionAbility_10466101">();
+		STATIC_CLASS_IMPL("PyResurrectionAbility_10466101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyResurrectionAbility_10466101")
 	}
 	static class UPyResurrectionAbility_10466101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyResurrectionAbility_10466101>();
 	}
 };
-static_assert(alignof(UPyResurrectionAbility_10466101) == 0x000008, "Wrong alignment on UPyResurrectionAbility_10466101");
-static_assert(sizeof(UPyResurrectionAbility_10466101) == 0x001428, "Wrong size on UPyResurrectionAbility_10466101");
+DUMPER7_ASSERTS_UPyResurrectionAbility_10466101;
 
 // PythonClass PyAbility_104661.PyScope_10466102
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10466102 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -136,18 +129,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10466102">();
+		STATIC_CLASS_IMPL("PyScope_10466102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10466102")
 	}
 	static class APyScope_10466102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10466102>();
 	}
 };
-static_assert(alignof(APyScope_10466102) == 0x000010, "Wrong alignment on APyScope_10466102");
-static_assert(sizeof(APyScope_10466102) == 0x001AA0, "Wrong size on APyScope_10466102");
+DUMPER7_ASSERTS_APyScope_10466102;
 
 // PythonClass PyAbility_104661.PyEffectAbility_104661
-// 0x0000 (0x1378 - 0x1378)
+// 0x0000 (0x1390 - 0x1390)
 class UPyEffectAbility_104661 : public UEffectAbility_104661
 {
 public:
@@ -158,60 +154,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_104661">();
+		STATIC_CLASS_IMPL("PyEffectAbility_104661")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_104661")
 	}
 	static class UPyEffectAbility_104661* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_104661>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_104661) == 0x000008, "Wrong alignment on UPyEffectAbility_104661");
-static_assert(sizeof(UPyEffectAbility_104661) == 0x001378, "Wrong size on UPyEffectAbility_104661");
-
-// PythonClass PyAbility_104661.PyUIController_104661_SetHeroPortait
-// 0x0010 (0x0F20 - 0x0F10)
-class UPyUIController_104661_SetHeroPortait final : public UUIC_Ability
-{
-public:
-	TSubclassOf<class UUserWidget>                HeroPortaitClass;                                  // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpdateTime;                                        // 0x0F18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnInit();
-	void OnDestruct();
-	void SetReady(bool bInReady);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_104661_SetHeroPortait">();
-	}
-	static class UPyUIController_104661_SetHeroPortait* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_104661_SetHeroPortait>();
-	}
-};
-static_assert(alignof(UPyUIController_104661_SetHeroPortait) == 0x000008, "Wrong alignment on UPyUIController_104661_SetHeroPortait");
-static_assert(sizeof(UPyUIController_104661_SetHeroPortait) == 0x000F20, "Wrong size on UPyUIController_104661_SetHeroPortait");
-static_assert(offsetof(UPyUIController_104661_SetHeroPortait, HeroPortaitClass) == 0x000F10, "Member 'UPyUIController_104661_SetHeroPortait::HeroPortaitClass' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104661_SetHeroPortait, UpdateTime) == 0x000F18, "Member 'UPyUIController_104661_SetHeroPortait::UpdateTime' has a wrong offset!");
-
-// PythonClass PyAbility_104661.PyWidget_HeroPortrait_104661
-// 0x0000 (0x03B8 - 0x03B8)
-class UPyWidget_HeroPortrait_104661 final : public UUserWidget
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_HeroPortrait_104661">();
-	}
-	static class UPyWidget_HeroPortrait_104661* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_HeroPortrait_104661>();
-	}
-};
-static_assert(alignof(UPyWidget_HeroPortrait_104661) == 0x000008, "Wrong alignment on UPyWidget_HeroPortrait_104661");
-static_assert(sizeof(UPyWidget_HeroPortrait_104661) == 0x0003B8, "Wrong size on UPyWidget_HeroPortrait_104661");
+DUMPER7_ASSERTS_UPyEffectAbility_104661;
 
 }
 

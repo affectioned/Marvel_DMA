@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyCheckHealthPack">();
+		STATIC_CLASS_IMPL("BTS_PyCheckHealthPack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyCheckHealthPack")
 	}
 	static class UBTS_PyCheckHealthPack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyCheckHealthPack>();
 	}
 };
-static_assert(alignof(UBTS_PyCheckHealthPack) == 0x000008, "Wrong alignment on UBTS_PyCheckHealthPack");
-static_assert(sizeof(UBTS_PyCheckHealthPack) == 0x0000E8, "Wrong size on UBTS_PyCheckHealthPack");
-static_assert(offsetof(UBTS_PyCheckHealthPack, CheckDistance) == 0x0000A8, "Member 'UBTS_PyCheckHealthPack::CheckDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckHealthPack, CheckJeffBubbleDistance) == 0x0000AC, "Member 'UBTS_PyCheckHealthPack::CheckJeffBubbleDistance' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckHealthPack, OutHealthPackActor) == 0x0000B0, "Member 'UBTS_PyCheckHealthPack::OutHealthPackActor' has a wrong offset!");
-static_assert(offsetof(UBTS_PyCheckHealthPack, StepLimit) == 0x0000E0, "Member 'UBTS_PyCheckHealthPack::StepLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyCheckHealthPack;
 
 }
 

@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PS4_UISettingEntryGraphicSettingHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("PS4_UISettingEntryGraphicSettingHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PS4_UISettingEntryGraphicSettingHandlerBP_C")
 	}
 	static class UPS4_UISettingEntryGraphicSettingHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPS4_UISettingEntryGraphicSettingHandlerBP_C>();
 	}
 };
-static_assert(alignof(UPS4_UISettingEntryGraphicSettingHandlerBP_C) == 0x000008, "Wrong alignment on UPS4_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(sizeof(UPS4_UISettingEntryGraphicSettingHandlerBP_C) == 0x000050, "Wrong size on UPS4_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(offsetof(UPS4_UISettingEntryGraphicSettingHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UPS4_UISettingEntryGraphicSettingHandlerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPS4_UISettingEntryGraphicSettingHandlerBP_C, PS4Resolution) == 0x000038, "Member 'UPS4_UISettingEntryGraphicSettingHandlerBP_C::PS4Resolution' has a wrong offset!");
-static_assert(offsetof(UPS4_UISettingEntryGraphicSettingHandlerBP_C, PS4Graphic) == 0x000040, "Member 'UPS4_UISettingEntryGraphicSettingHandlerBP_C::PS4Graphic' has a wrong offset!");
+DUMPER7_ASSERTS_UPS4_UISettingEntryGraphicSettingHandlerBP_C;
 
 }
 

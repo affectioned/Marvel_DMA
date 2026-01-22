@@ -21,9 +21,7 @@ struct PyWidget_Clan_ApplyListItem_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Clan_ApplyListItem_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_Clan_ApplyListItem_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_Clan_ApplyListItem_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_Clan_ApplyListItem_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_Clan_ApplyListItem_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_Clan_ApplyListItem_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Clan_ApplyListItem_OnListItemObjectSet;
 
 }
 

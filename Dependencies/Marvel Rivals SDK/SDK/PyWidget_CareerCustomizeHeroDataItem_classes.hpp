@@ -24,15 +24,18 @@ class UPyWidget_CareerCustomizeHeroDataItem_Data : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeHeroDataItem_Data">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeHeroDataItem_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeHeroDataItem_Data")
 	}
 	static class UPyWidget_CareerCustomizeHeroDataItem_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeHeroDataItem_Data>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeHeroDataItem_Data) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeHeroDataItem_Data");
-static_assert(sizeof(UPyWidget_CareerCustomizeHeroDataItem_Data) == 0x000030, "Wrong size on UPyWidget_CareerCustomizeHeroDataItem_Data");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeHeroDataItem_Data;
 
 // PythonClass PyWidget_CareerCustomizeHeroDataItem.PyWidget_CareerCustomizeHeroDataItem_SpecialData
 // 0x0000 (0x0030 - 0x0030)
@@ -41,18 +44,21 @@ class UPyWidget_CareerCustomizeHeroDataItem_SpecialData final : public UPyWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeHeroDataItem_SpecialData">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeHeroDataItem_SpecialData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeHeroDataItem_SpecialData")
 	}
 	static class UPyWidget_CareerCustomizeHeroDataItem_SpecialData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeHeroDataItem_SpecialData>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeHeroDataItem_SpecialData) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeHeroDataItem_SpecialData");
-static_assert(sizeof(UPyWidget_CareerCustomizeHeroDataItem_SpecialData) == 0x000030, "Wrong size on UPyWidget_CareerCustomizeHeroDataItem_SpecialData");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeHeroDataItem_SpecialData;
 
 // PythonClass PyWidget_CareerCustomizeHeroDataItem.PyWidget_CareerCustomizeHeroDataItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_CareerCustomizeHeroDataItem final : public UPyWidget_Button
 {
 public:
@@ -63,15 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeHeroDataItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeHeroDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeHeroDataItem")
 	}
 	static class UPyWidget_CareerCustomizeHeroDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeHeroDataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeHeroDataItem) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeHeroDataItem");
-static_assert(sizeof(UPyWidget_CareerCustomizeHeroDataItem) == 0x000728, "Wrong size on UPyWidget_CareerCustomizeHeroDataItem");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeHeroDataItem;
 
 }
 

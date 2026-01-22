@@ -43,25 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActorEventPoint">();
+		STATIC_CLASS_IMPL("PyActorEventPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActorEventPoint")
 	}
 	static class APyActorEventPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyActorEventPoint>();
 	}
 };
-static_assert(alignof(APyActorEventPoint) == 0x000010, "Wrong alignment on APyActorEventPoint");
-static_assert(sizeof(APyActorEventPoint) == 0x000780, "Wrong size on APyActorEventPoint");
-static_assert(offsetof(APyActorEventPoint, PosProgress) == 0x000730, "Member 'APyActorEventPoint::PosProgress' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, EventName) == 0x000734, "Member 'APyActorEventPoint::EventName' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, bHasArgs) == 0x000740, "Member 'APyActorEventPoint::bHasArgs' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, EventArgs) == 0x000744, "Member 'APyActorEventPoint::EventArgs' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, EventCount) == 0x000748, "Member 'APyActorEventPoint::EventCount' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, bHasListener) == 0x00074C, "Member 'APyActorEventPoint::bHasListener' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, Listener) == 0x000750, "Member 'APyActorEventPoint::Listener' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, bIsPreDes) == 0x000758, "Member 'APyActorEventPoint::bIsPreDes' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, PreDesOldState) == 0x000760, "Member 'APyActorEventPoint::PreDesOldState' has a wrong offset!");
-static_assert(offsetof(APyActorEventPoint, PreDesNewState) == 0x000770, "Member 'APyActorEventPoint::PreDesNewState' has a wrong offset!");
+DUMPER7_ASSERTS_APyActorEventPoint;
 
 }
 

@@ -37,27 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Corona_Wheel_Ownership_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Corona_Wheel_Ownership_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Corona_Wheel_Ownership_C")
 	}
 	static class UWBP_Corona_Wheel_Ownership_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Corona_Wheel_Ownership_C>();
 	}
 };
-static_assert(alignof(UWBP_Corona_Wheel_Ownership_C) == 0x000008, "Wrong alignment on UWBP_Corona_Wheel_Ownership_C");
-static_assert(sizeof(UWBP_Corona_Wheel_Ownership_C) == 0x000418, "Wrong size on UWBP_Corona_Wheel_Ownership_C");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Overlay_Hero) == 0x0003B8, "Member 'UWBP_Corona_Wheel_Ownership_C::Overlay_Hero' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Overlay_Hero_All) == 0x0003C0, "Member 'UWBP_Corona_Wheel_Ownership_C::Overlay_Hero_All' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Overlay_Hero_Single) == 0x0003C8, "Member 'UWBP_Corona_Wheel_Ownership_C::Overlay_Hero_Single' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Overlay_Wheel_Common) == 0x0003D0, "Member 'UWBP_Corona_Wheel_Ownership_C::Overlay_Wheel_Common' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Overlay_Wheel_ExpressionList) == 0x0003D8, "Member 'UWBP_Corona_Wheel_Ownership_C::Overlay_Wheel_ExpressionList' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_HeroName) == 0x0003E0, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_HeroName' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_Tyep) == 0x0003E8, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_Tyep' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_Tyep_All) == 0x0003F0, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_Tyep_All' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_Tyep_ExpressionList) == 0x0003F8, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_Tyep_ExpressionList' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_Tyep_Single) == 0x000400, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_Tyep_Single' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, Text_Tyep_WheelCommon) == 0x000408, "Member 'UWBP_Corona_Wheel_Ownership_C::Text_Tyep_WheelCommon' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_Wheel_Ownership_C, WBP_Common_HeroPortrait) == 0x000410, "Member 'UWBP_Corona_Wheel_Ownership_C::WBP_Common_HeroPortrait' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Corona_Wheel_Ownership_C;
 
 }
 

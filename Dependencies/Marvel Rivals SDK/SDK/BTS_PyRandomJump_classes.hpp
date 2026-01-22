@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyRandomJump_Config">();
+		STATIC_CLASS_IMPL("BTS_PyRandomJump_Config")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyRandomJump_Config")
 	}
 	static class UBTS_PyRandomJump_Config* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyRandomJump_Config>();
 	}
 };
-static_assert(alignof(UBTS_PyRandomJump_Config) == 0x000008, "Wrong alignment on UBTS_PyRandomJump_Config");
-static_assert(sizeof(UBTS_PyRandomJump_Config) == 0x0000E0, "Wrong size on UBTS_PyRandomJump_Config");
-static_assert(offsetof(UBTS_PyRandomJump_Config, OverrideJumpInterval) == 0x0000A8, "Member 'UBTS_PyRandomJump_Config::OverrideJumpInterval' has a wrong offset!");
-static_assert(offsetof(UBTS_PyRandomJump_Config, ChanceToJump) == 0x0000AC, "Member 'UBTS_PyRandomJump_Config::ChanceToJump' has a wrong offset!");
-static_assert(offsetof(UBTS_PyRandomJump_Config, IgnoreRandomJump) == 0x0000B0, "Member 'UBTS_PyRandomJump_Config::IgnoreRandomJump' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyRandomJump_Config;
 
 }
 

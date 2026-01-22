@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckIsInBirthBase">();
+		STATIC_CLASS_IMPL("BTD_PyCheckIsInBirthBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckIsInBirthBase")
 	}
 	static class UBTD_PyCheckIsInBirthBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckIsInBirthBase>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckIsInBirthBase) == 0x000008, "Wrong alignment on UBTD_PyCheckIsInBirthBase");
-static_assert(sizeof(UBTD_PyCheckIsInBirthBase) == 0x0000B8, "Wrong size on UBTD_PyCheckIsInBirthBase");
+DUMPER7_ASSERTS_UBTD_PyCheckIsInBirthBase;
 
 }
 

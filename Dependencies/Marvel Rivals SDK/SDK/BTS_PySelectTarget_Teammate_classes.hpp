@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySelectTarget_Teammate">();
+		STATIC_CLASS_IMPL("BTS_PySelectTarget_Teammate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySelectTarget_Teammate")
 	}
 	static class UBTS_PySelectTarget_Teammate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySelectTarget_Teammate>();
 	}
 };
-static_assert(alignof(UBTS_PySelectTarget_Teammate) == 0x000008, "Wrong alignment on UBTS_PySelectTarget_Teammate");
-static_assert(sizeof(UBTS_PySelectTarget_Teammate) == 0x000138, "Wrong size on UBTS_PySelectTarget_Teammate");
-static_assert(offsetof(UBTS_PySelectTarget_Teammate, TargetFactorConfig_Difficulty) == 0x0000E0, "Member 'UBTS_PySelectTarget_Teammate::TargetFactorConfig_Difficulty' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Teammate, CanSelectSelf) == 0x000130, "Member 'UBTS_PySelectTarget_Teammate::CanSelectSelf' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySelectTarget_Teammate;
 
 }
 

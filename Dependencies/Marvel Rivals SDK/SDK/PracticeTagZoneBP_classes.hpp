@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PracticeTagZoneBP.PracticeTagZoneBP_C
-// 0x0020 (0x0720 - 0x0700)
+// 0x0020 (0x0730 - 0x0710)
 class APracticeTagZoneBP_C final : public APyPracticeTagZone
 {
 public:
-	class UStaticMeshComponent*                   Cube;                                              // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMaterial*                              DisplayMaterial;                                   // 0x0718(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cube;                                              // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMaterial*                              DisplayMaterial;                                   // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PracticeTagZoneBP_C">();
+		BP_STATIC_CLASS_IMPL("PracticeTagZoneBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PracticeTagZoneBP_C")
 	}
 	static class APracticeTagZoneBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APracticeTagZoneBP_C>();
 	}
 };
-static_assert(alignof(APracticeTagZoneBP_C) == 0x000010, "Wrong alignment on APracticeTagZoneBP_C");
-static_assert(sizeof(APracticeTagZoneBP_C) == 0x000720, "Wrong size on APracticeTagZoneBP_C");
-static_assert(offsetof(APracticeTagZoneBP_C, Cube) == 0x000700, "Member 'APracticeTagZoneBP_C::Cube' has a wrong offset!");
-static_assert(offsetof(APracticeTagZoneBP_C, LevelScopeCheckComponentBP) == 0x000708, "Member 'APracticeTagZoneBP_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(APracticeTagZoneBP_C, DefaultSceneRoot) == 0x000710, "Member 'APracticeTagZoneBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APracticeTagZoneBP_C, DisplayMaterial) == 0x000718, "Member 'APracticeTagZoneBP_C::DisplayMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_APracticeTagZoneBP_C;
 
 }
 

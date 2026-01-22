@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_CareerRecordDataItem.PyWidget_Halloween_CareerRecordDataItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Halloween_CareerRecordDataItem final : public UPyWidget_Button
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CareerRecordDataItem">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CareerRecordDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CareerRecordDataItem")
 	}
 	static class UPyWidget_Halloween_CareerRecordDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CareerRecordDataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CareerRecordDataItem) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CareerRecordDataItem");
-static_assert(sizeof(UPyWidget_Halloween_CareerRecordDataItem) == 0x000728, "Wrong size on UPyWidget_Halloween_CareerRecordDataItem");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CareerRecordDataItem;
 
 }
 

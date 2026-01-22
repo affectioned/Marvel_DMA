@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyDefaultUISettingEntryHandler_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingGamepadCommonSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingGamepadCommonSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingGamepadCommonSettingHandler")
 	}
 	static class UUISettingGamepadCommonSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingGamepadCommonSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingGamepadCommonSettingHandler) == 0x000008, "Wrong alignment on UUISettingGamepadCommonSettingHandler");
-static_assert(sizeof(UUISettingGamepadCommonSettingHandler) == 0x000030, "Wrong size on UUISettingGamepadCommonSettingHandler");
+DUMPER7_ASSERTS_UUISettingGamepadCommonSettingHandler;
 
 // PythonClass Gamepad.UISettingGamepadSensitivitySettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -46,19 +49,23 @@ public:
 	TMap<class FString, int32> BP_OnChanged(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& options, float value, const TMap<class FString, int32>& tags);
 	float BP_GetDefaultValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o);
 	float BP_GetRevertValue(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o);
+	bool BP_IsShowStar(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingGamepadSensitivitySettingHandler">();
+		STATIC_CLASS_IMPL("UISettingGamepadSensitivitySettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingGamepadSensitivitySettingHandler")
 	}
 	static class UUISettingGamepadSensitivitySettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingGamepadSensitivitySettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingGamepadSensitivitySettingHandler) == 0x000008, "Wrong alignment on UUISettingGamepadSensitivitySettingHandler");
-static_assert(sizeof(UUISettingGamepadSensitivitySettingHandler) == 0x000030, "Wrong size on UUISettingGamepadSensitivitySettingHandler");
+DUMPER7_ASSERTS_UUISettingGamepadSensitivitySettingHandler;
 
 // PythonClass Gamepad.UISettingGamepadCursorAdsorptionSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -71,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingGamepadCursorAdsorptionSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingGamepadCursorAdsorptionSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingGamepadCursorAdsorptionSettingHandler")
 	}
 	static class UUISettingGamepadCursorAdsorptionSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingGamepadCursorAdsorptionSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingGamepadCursorAdsorptionSettingHandler) == 0x000008, "Wrong alignment on UUISettingGamepadCursorAdsorptionSettingHandler");
-static_assert(sizeof(UUISettingGamepadCursorAdsorptionSettingHandler) == 0x000030, "Wrong size on UUISettingGamepadCursorAdsorptionSettingHandler");
+DUMPER7_ASSERTS_UUISettingGamepadCursorAdsorptionSettingHandler;
 
 }
 

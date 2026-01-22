@@ -17,19 +17,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SystemTipsPanel.PyWidget_SystemTipsPanel
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_SystemTipsPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Max_Width;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Min_Width;                                         // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Speed_Marquee;                                     // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Max_Height;                                        // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Min_Height;                                        // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Display_Time;                                      // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnShowTips;                                // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Max_Width;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Min_Width;                                         // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Speed_Marquee;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Max_Height;                                        // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Min_Height;                                        // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Display_Time;                                      // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnShowTips;                                // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SystemTipsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SystemTipsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SystemTipsPanel")
 	}
 	static class UPyWidget_SystemTipsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SystemTipsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SystemTipsPanel) == 0x000008, "Wrong alignment on UPyWidget_SystemTipsPanel");
-static_assert(sizeof(UPyWidget_SystemTipsPanel) == 0x0005E0, "Wrong size on UPyWidget_SystemTipsPanel");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Max_Width) == 0x0005BC, "Member 'UPyWidget_SystemTipsPanel::Max_Width' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Min_Width) == 0x0005C0, "Member 'UPyWidget_SystemTipsPanel::Min_Width' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Speed_Marquee) == 0x0005C4, "Member 'UPyWidget_SystemTipsPanel::Speed_Marquee' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Max_Height) == 0x0005C8, "Member 'UPyWidget_SystemTipsPanel::Max_Height' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Min_Height) == 0x0005CC, "Member 'UPyWidget_SystemTipsPanel::Min_Height' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, Display_Time) == 0x0005D0, "Member 'UPyWidget_SystemTipsPanel::Display_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SystemTipsPanel, AkEvent_OnShowTips) == 0x0005D8, "Member 'UPyWidget_SystemTipsPanel::AkEvent_OnShowTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SystemTipsPanel;
 
 }
 

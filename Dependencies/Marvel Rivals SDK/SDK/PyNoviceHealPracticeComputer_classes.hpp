@@ -38,24 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceHealPracticeComputer">();
+		STATIC_CLASS_IMPL("PyNoviceHealPracticeComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceHealPracticeComputer")
 	}
 	static class APyNoviceHealPracticeComputer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNoviceHealPracticeComputer>();
 	}
 };
-static_assert(alignof(APyNoviceHealPracticeComputer) == 0x000010, "Wrong alignment on APyNoviceHealPracticeComputer");
-static_assert(sizeof(APyNoviceHealPracticeComputer) == 0x000860, "Wrong size on APyNoviceHealPracticeComputer");
-static_assert(offsetof(APyNoviceHealPracticeComputer, AISpawnActorList) == 0x000790, "Member 'APyNoviceHealPracticeComputer::AISpawnActorList' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, PrepareTime) == 0x0007A0, "Member 'APyNoviceHealPracticeComputer::PrepareTime' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, PracticeTime) == 0x0007A4, "Member 'APyNoviceHealPracticeComputer::PracticeTime' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, FirstPressActionTips) == 0x0007A8, "Member 'APyNoviceHealPracticeComputer::FirstPressActionTips' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, TrainingText) == 0x000800, "Member 'APyNoviceHealPracticeComputer::TrainingText' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, OnPracticeFirstStart) == 0x000818, "Member 'APyNoviceHealPracticeComputer::OnPracticeFirstStart' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, OnPracticeTimeOut) == 0x000828, "Member 'APyNoviceHealPracticeComputer::OnPracticeTimeOut' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, OnPracticeRestart) == 0x000838, "Member 'APyNoviceHealPracticeComputer::OnPracticeRestart' has a wrong offset!");
-static_assert(offsetof(APyNoviceHealPracticeComputer, OnPracticeExit) == 0x000848, "Member 'APyNoviceHealPracticeComputer::OnPracticeExit' has a wrong offset!");
+DUMPER7_ASSERTS_APyNoviceHealPracticeComputer;
 
 }
 

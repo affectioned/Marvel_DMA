@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget3D_Emoji_Character.PyWidget3D_Emoji_Character.ShouldBeVisible
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget3D_Emoji_Character_ShouldBeVisible final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_Emoji_Character_ShouldBeVisible;
+
 // PythonFunction PyWidget3D_Emoji_Character.PyWidget3D_Emoji_Character.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
 struct PyWidget3D_Emoji_Character_MarvelSetVisible final
@@ -21,9 +30,7 @@ struct PyWidget3D_Emoji_Character_MarvelSetVisible final
 public:
 	bool                                          bVisible_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Emoji_Character_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget3D_Emoji_Character_MarvelSetVisible");
-static_assert(sizeof(PyWidget3D_Emoji_Character_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget3D_Emoji_Character_MarvelSetVisible");
-static_assert(offsetof(PyWidget3D_Emoji_Character_MarvelSetVisible, bVisible_0) == 0x000000, "Member 'PyWidget3D_Emoji_Character_MarvelSetVisible::bVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Emoji_Character_MarvelSetVisible;
 
 // PythonFunction PyWidget3D_Emoji_Character.PyWidget3D_Emoji_Character.SetWidgetComponentOwner
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +39,7 @@ struct PyWidget3D_Emoji_Character_SetWidgetComponentOwner final
 public:
 	class UWidgetComponent*                       InWidgetComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Emoji_Character_SetWidgetComponentOwner) == 0x000008, "Wrong alignment on PyWidget3D_Emoji_Character_SetWidgetComponentOwner");
-static_assert(sizeof(PyWidget3D_Emoji_Character_SetWidgetComponentOwner) == 0x000008, "Wrong size on PyWidget3D_Emoji_Character_SetWidgetComponentOwner");
-static_assert(offsetof(PyWidget3D_Emoji_Character_SetWidgetComponentOwner, InWidgetComponent) == 0x000000, "Member 'PyWidget3D_Emoji_Character_SetWidgetComponentOwner::InWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Emoji_Character_SetWidgetComponentOwner;
 
 }
 

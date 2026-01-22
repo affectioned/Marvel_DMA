@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_OtherPropView.PyWidget_BattlePass_OtherPropView
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_BattlePass_OtherPropView final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_OtherPropView">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_OtherPropView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_OtherPropView")
 	}
 	static class UPyWidget_BattlePass_OtherPropView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_OtherPropView>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_OtherPropView) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_OtherPropView");
-static_assert(sizeof(UPyWidget_BattlePass_OtherPropView) == 0x000600, "Wrong size on UPyWidget_BattlePass_OtherPropView");
-static_assert(offsetof(UPyWidget_BattlePass_OtherPropView, CanvasPanel_Main) == 0x0005F8, "Member 'UPyWidget_BattlePass_OtherPropView::CanvasPanel_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_OtherPropView;
 
 }
 

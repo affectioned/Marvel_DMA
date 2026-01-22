@@ -23,15 +23,18 @@ class APracticeRange_Art_C final : public AMarvelLevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PracticeRange_Art_C">();
+		BP_STATIC_CLASS_IMPL("PracticeRange_Art_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PracticeRange_Art_C")
 	}
 	static class APracticeRange_Art_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APracticeRange_Art_C>();
 	}
 };
-static_assert(alignof(APracticeRange_Art_C) == 0x000010, "Wrong alignment on APracticeRange_Art_C");
-static_assert(sizeof(APracticeRange_Art_C) == 0x000740, "Wrong size on APracticeRange_Art_C");
+DUMPER7_ASSERTS_APracticeRange_Art_C;
 
 }
 

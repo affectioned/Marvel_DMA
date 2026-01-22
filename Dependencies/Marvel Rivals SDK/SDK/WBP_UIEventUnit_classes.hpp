@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_UIEventUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_UIEventUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_UIEventUnit_C")
 	}
 	static class UWBP_UIEventUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_UIEventUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_UIEventUnit_C) == 0x000008, "Wrong alignment on UWBP_UIEventUnit_C");
-static_assert(sizeof(UWBP_UIEventUnit_C) == 0x0003F0, "Wrong size on UWBP_UIEventUnit_C");
-static_assert(offsetof(UWBP_UIEventUnit_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_UIEventUnit_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_UIEventUnit_C, AnimShow) == 0x0003C0, "Member 'UWBP_UIEventUnit_C::AnimShow' has a wrong offset!");
-static_assert(offsetof(UWBP_UIEventUnit_C, ActiveName) == 0x0003C8, "Member 'UWBP_UIEventUnit_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(UWBP_UIEventUnit_C, EventName) == 0x0003D0, "Member 'UWBP_UIEventUnit_C::EventName' has a wrong offset!");
-static_assert(offsetof(UWBP_UIEventUnit_C, Ak_Comp) == 0x0003E0, "Member 'UWBP_UIEventUnit_C::Ak_Comp' has a wrong offset!");
-static_assert(offsetof(UWBP_UIEventUnit_C, AkEvent) == 0x0003E8, "Member 'UWBP_UIEventUnit_C::AkEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_UIEventUnit_C;
 
 }
 

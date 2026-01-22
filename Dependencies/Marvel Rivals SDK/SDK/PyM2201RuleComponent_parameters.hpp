@@ -10,9 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+
 
 namespace SDK::Params
 {
+
+// PythonFunction PyM2201RuleComponent.PyM2201RuleComponent.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct PyM2201RuleComponent_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyM2201RuleComponent_ReceiveEndPlay;
 
 // PythonFunction PyM2201RuleComponent.PyM2201RuleComponent.OnCharacterAbilityInitialized
 // 0x0008 (0x0008 - 0x0000)
@@ -21,9 +32,7 @@ struct PyM2201RuleComponent_OnCharacterAbilityInitialized final
 public:
 	class AActor*                                 Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyM2201RuleComponent_OnCharacterAbilityInitialized) == 0x000008, "Wrong alignment on PyM2201RuleComponent_OnCharacterAbilityInitialized");
-static_assert(sizeof(PyM2201RuleComponent_OnCharacterAbilityInitialized) == 0x000008, "Wrong size on PyM2201RuleComponent_OnCharacterAbilityInitialized");
-static_assert(offsetof(PyM2201RuleComponent_OnCharacterAbilityInitialized, Character) == 0x000000, "Member 'PyM2201RuleComponent_OnCharacterAbilityInitialized::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyM2201RuleComponent_OnCharacterAbilityInitialized;
 
 // PythonFunction PyM2201RuleComponent.PyM2201RuleComponent.ClientPlaySignalHeroVoice
 // 0x0018 (0x0018 - 0x0000)
@@ -33,10 +42,7 @@ public:
 	class AActor*                                 char_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<int32>                                 voice_id;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyM2201RuleComponent_ClientPlaySignalHeroVoice) == 0x000008, "Wrong alignment on PyM2201RuleComponent_ClientPlaySignalHeroVoice");
-static_assert(sizeof(PyM2201RuleComponent_ClientPlaySignalHeroVoice) == 0x000018, "Wrong size on PyM2201RuleComponent_ClientPlaySignalHeroVoice");
-static_assert(offsetof(PyM2201RuleComponent_ClientPlaySignalHeroVoice, char_0) == 0x000000, "Member 'PyM2201RuleComponent_ClientPlaySignalHeroVoice::char_0' has a wrong offset!");
-static_assert(offsetof(PyM2201RuleComponent_ClientPlaySignalHeroVoice, voice_id) == 0x000008, "Member 'PyM2201RuleComponent_ClientPlaySignalHeroVoice::voice_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyM2201RuleComponent_ClientPlaySignalHeroVoice;
 
 }
 

@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity124_Icon.PyWidget_Activity124_Icon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity124_Icon : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity124_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_Activity124_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity124_Icon")
 	}
 	static class UPyWidget_Activity124_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity124_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity124_Icon) == 0x000008, "Wrong alignment on UPyWidget_Activity124_Icon");
-static_assert(sizeof(UPyWidget_Activity124_Icon) == 0x0005C0, "Wrong size on UPyWidget_Activity124_Icon");
+DUMPER7_ASSERTS_UPyWidget_Activity124_Icon;
 
 // PythonClass PyWidget_Activity124_Icon.PyWidget_Activity124_Icon_WithNumber
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity124_Icon_WithNumber final : public UPyWidget_Activity124_Icon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity124_Icon_WithNumber">();
+		STATIC_CLASS_IMPL("PyWidget_Activity124_Icon_WithNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity124_Icon_WithNumber")
 	}
 	static class UPyWidget_Activity124_Icon_WithNumber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity124_Icon_WithNumber>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity124_Icon_WithNumber) == 0x000008, "Wrong alignment on UPyWidget_Activity124_Icon_WithNumber");
-static_assert(sizeof(UPyWidget_Activity124_Icon_WithNumber) == 0x0005C0, "Wrong size on UPyWidget_Activity124_Icon_WithNumber");
+DUMPER7_ASSERTS_UPyWidget_Activity124_Icon_WithNumber;
 
 }
 

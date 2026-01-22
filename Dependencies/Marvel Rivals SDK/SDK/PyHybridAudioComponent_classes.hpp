@@ -23,15 +23,18 @@ class UPyHybridAudioComponent final : public UPyEscortAudioComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHybridAudioComponent">();
+		STATIC_CLASS_IMPL("PyHybridAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHybridAudioComponent")
 	}
 	static class UPyHybridAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHybridAudioComponent>();
 	}
 };
-static_assert(alignof(UPyHybridAudioComponent) == 0x000008, "Wrong alignment on UPyHybridAudioComponent");
-static_assert(sizeof(UPyHybridAudioComponent) == 0x000120, "Wrong size on UPyHybridAudioComponent");
+DUMPER7_ASSERTS_UPyHybridAudioComponent;
 
 }
 

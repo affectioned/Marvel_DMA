@@ -69,16 +69,6 @@ enum class EPropertyBagMissingEnum : uint8
 	EPropertyBagMissingEnum_MAX              = 1,
 };
 
-// ScriptStruct StructUtils.SharedStruct
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FSharedStruct final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSharedStruct) == 0x000008, "Wrong alignment on FSharedStruct");
-static_assert(sizeof(FSharedStruct) == 0x000010, "Wrong size on FSharedStruct");
-
 // ScriptStruct StructUtils.InstancedStruct
 // 0x0028 (0x0028 - 0x0000)
 struct alignas(0x08) FInstancedStruct final
@@ -86,8 +76,7 @@ struct alignas(0x08) FInstancedStruct final
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInstancedStruct) == 0x000008, "Wrong alignment on FInstancedStruct");
-static_assert(sizeof(FInstancedStruct) == 0x000028, "Wrong size on FInstancedStruct");
+DUMPER7_ASSERTS_FInstancedStruct;
 
 // ScriptStruct StructUtils.InstancedStructContainer
 // 0x0010 (0x0010 - 0x0000)
@@ -96,8 +85,7 @@ struct alignas(0x08) FInstancedStructContainer final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInstancedStructContainer) == 0x000008, "Wrong alignment on FInstancedStructContainer");
-static_assert(sizeof(FInstancedStructContainer) == 0x000010, "Wrong size on FInstancedStructContainer");
+DUMPER7_ASSERTS_FInstancedStructContainer;
 
 // ScriptStruct StructUtils.PropertyBagContainerTypes
 // 0x0003 (0x0003 - 0x0000)
@@ -106,8 +94,7 @@ struct FPropertyBagContainerTypes final
 public:
 	uint8                                         Pad_0[0x3];                                        // 0x0000(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPropertyBagContainerTypes) == 0x000001, "Wrong alignment on FPropertyBagContainerTypes");
-static_assert(sizeof(FPropertyBagContainerTypes) == 0x000003, "Wrong size on FPropertyBagContainerTypes");
+DUMPER7_ASSERTS_FPropertyBagContainerTypes;
 
 // ScriptStruct StructUtils.PropertyBagPropertyDescMetaData
 // 0x0020 (0x0020 - 0x0000)
@@ -118,10 +105,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Value;                                             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPropertyBagPropertyDescMetaData) == 0x000008, "Wrong alignment on FPropertyBagPropertyDescMetaData");
-static_assert(sizeof(FPropertyBagPropertyDescMetaData) == 0x000020, "Wrong size on FPropertyBagPropertyDescMetaData");
-static_assert(offsetof(FPropertyBagPropertyDescMetaData, Key) == 0x000000, "Member 'FPropertyBagPropertyDescMetaData::Key' has a wrong offset!");
-static_assert(offsetof(FPropertyBagPropertyDescMetaData, Value) == 0x000010, "Member 'FPropertyBagPropertyDescMetaData::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBagPropertyDescMetaData;
 
 // ScriptStruct StructUtils.PropertyBagPropertyDesc
 // 0x0030 (0x0030 - 0x0000)
@@ -135,13 +119,7 @@ public:
 	struct FPropertyBagContainerTypes             ContainerTypes;                                    // 0x0025(0x0003)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPropertyBagPropertyDesc) == 0x000008, "Wrong alignment on FPropertyBagPropertyDesc");
-static_assert(sizeof(FPropertyBagPropertyDesc) == 0x000030, "Wrong size on FPropertyBagPropertyDesc");
-static_assert(offsetof(FPropertyBagPropertyDesc, ValueTypeObject) == 0x000000, "Member 'FPropertyBagPropertyDesc::ValueTypeObject' has a wrong offset!");
-static_assert(offsetof(FPropertyBagPropertyDesc, ID) == 0x000008, "Member 'FPropertyBagPropertyDesc::ID' has a wrong offset!");
-static_assert(offsetof(FPropertyBagPropertyDesc, Name) == 0x000018, "Member 'FPropertyBagPropertyDesc::Name' has a wrong offset!");
-static_assert(offsetof(FPropertyBagPropertyDesc, ValueType) == 0x000024, "Member 'FPropertyBagPropertyDesc::ValueType' has a wrong offset!");
-static_assert(offsetof(FPropertyBagPropertyDesc, ContainerTypes) == 0x000025, "Member 'FPropertyBagPropertyDesc::ContainerTypes' has a wrong offset!");
+DUMPER7_ASSERTS_FPropertyBagPropertyDesc;
 
 // ScriptStruct StructUtils.InstancedPropertyBag
 // 0x0028 (0x0028 - 0x0000)
@@ -150,9 +128,7 @@ struct FInstancedPropertyBag final
 public:
 	struct FInstancedStruct                       Value;                                             // 0x0000(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FInstancedPropertyBag) == 0x000008, "Wrong alignment on FInstancedPropertyBag");
-static_assert(sizeof(FInstancedPropertyBag) == 0x000028, "Wrong size on FInstancedPropertyBag");
-static_assert(offsetof(FInstancedPropertyBag, Value) == 0x000000, "Member 'FInstancedPropertyBag::Value' has a wrong offset!");
+DUMPER7_ASSERTS_FInstancedPropertyBag;
 
 // ScriptStruct StructUtils.PropertyBagMissingStruct
 // 0x0001 (0x0001 - 0x0000)
@@ -161,8 +137,16 @@ struct FPropertyBagMissingStruct final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPropertyBagMissingStruct) == 0x000001, "Wrong alignment on FPropertyBagMissingStruct");
-static_assert(sizeof(FPropertyBagMissingStruct) == 0x000001, "Wrong size on FPropertyBagMissingStruct");
+DUMPER7_ASSERTS_FPropertyBagMissingStruct;
+
+// ScriptStruct StructUtils.SharedStruct
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FSharedStruct final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSharedStruct;
 
 // ScriptStruct StructUtils.ConstSharedStruct
 // 0x0010 (0x0010 - 0x0000)
@@ -171,8 +155,7 @@ struct alignas(0x08) FConstSharedStruct final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FConstSharedStruct) == 0x000008, "Wrong alignment on FConstSharedStruct");
-static_assert(sizeof(FConstSharedStruct) == 0x000010, "Wrong size on FConstSharedStruct");
+DUMPER7_ASSERTS_FConstSharedStruct;
 
 }
 

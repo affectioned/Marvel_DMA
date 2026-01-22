@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "MassNavigation_structs.hpp"
-#include "MassCommon_structs.hpp"
 #include "MassZoneGraphNavigation_structs.hpp"
 #include "ZoneGraph_structs.hpp"
+#include "MassNavigation_structs.hpp"
+#include "MassCommon_structs.hpp"
 
 
 namespace SDK
@@ -34,16 +34,7 @@ public:
 	EMassMovementAction                           Action;                                            // 0x0064(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FReplicatedAgentPathData) == 0x000008, "Wrong alignment on FReplicatedAgentPathData");
-static_assert(sizeof(FReplicatedAgentPathData) == 0x000068, "Wrong size on FReplicatedAgentPathData");
-static_assert(offsetof(FReplicatedAgentPathData, PathRequest) == 0x000000, "Member 'FReplicatedAgentPathData::PathRequest' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, LaneHandle) == 0x000048, "Member 'FReplicatedAgentPathData::LaneHandle' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, ActionServerStartTime) == 0x000050, "Member 'FReplicatedAgentPathData::ActionServerStartTime' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, DistanceAlongLane) == 0x000058, "Member 'FReplicatedAgentPathData::DistanceAlongLane' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, LaneLength) == 0x00005C, "Member 'FReplicatedAgentPathData::LaneLength' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, DesiredSpeed) == 0x000060, "Member 'FReplicatedAgentPathData::DesiredSpeed' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, ActionID) == 0x000062, "Member 'FReplicatedAgentPathData::ActionID' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPathData, Action) == 0x000064, "Member 'FReplicatedAgentPathData::Action' has a wrong offset!");
+DUMPER7_ASSERTS_FReplicatedAgentPathData;
 
 }
 

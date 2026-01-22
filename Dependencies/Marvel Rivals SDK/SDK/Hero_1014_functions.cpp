@@ -492,31 +492,6 @@ void USummonedMovementComponent_10145101::BindClawHitResult(const struct FHitRes
 }
 
 
-// Function Hero_1014.SummonedMovementComponent_10145101.OnClawHitComponentCollisionChanged
-// (Final, Native, Public)
-// Parameters:
-// class UPrimitiveComponent*              InComponent                                            (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USummonedMovementComponent_10145101::OnClawHitComponentCollisionChanged(class UPrimitiveComponent* InComponent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonedMovementComponent_10145101", "OnClawHitComponentCollisionChanged");
-
-	Params::SummonedMovementComponent_10145101_OnClawHitComponentCollisionChanged Parms{};
-
-	Parms.InComponent = InComponent;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1014.SummonedMovementComponent_10145101.OnClawPivotDestructibleFracture
 // (Final, Native, Public, HasDefaults)
 // Parameters:

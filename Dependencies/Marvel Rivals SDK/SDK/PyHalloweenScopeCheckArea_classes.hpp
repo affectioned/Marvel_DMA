@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenScopeCheckArea">();
+		STATIC_CLASS_IMPL("PyHalloweenScopeCheckArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenScopeCheckArea")
 	}
 	static class APyHalloweenScopeCheckArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenScopeCheckArea>();
 	}
 };
-static_assert(alignof(APyHalloweenScopeCheckArea) == 0x000010, "Wrong alignment on APyHalloweenScopeCheckArea");
-static_assert(sizeof(APyHalloweenScopeCheckArea) == 0x0006F0, "Wrong size on APyHalloweenScopeCheckArea");
-static_assert(offsetof(APyHalloweenScopeCheckArea, OnLocalPlayerEnterArea) == 0x0006E0, "Member 'APyHalloweenScopeCheckArea::OnLocalPlayerEnterArea' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenScopeCheckArea;
 
 }
 

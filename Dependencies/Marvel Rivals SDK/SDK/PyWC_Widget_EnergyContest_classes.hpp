@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_EnergyContest">();
+		STATIC_CLASS_IMPL("PyWC_EnergyContest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_EnergyContest")
 	}
 	static class UPyWC_EnergyContest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_EnergyContest>();
 	}
 };
-static_assert(alignof(UPyWC_EnergyContest) == 0x000010, "Wrong alignment on UPyWC_EnergyContest");
-static_assert(sizeof(UPyWC_EnergyContest) == 0x000AF0, "Wrong size on UPyWC_EnergyContest");
-static_assert(offsetof(UPyWC_EnergyContest, AttachDoorDistance) == 0x000AE0, "Member 'UPyWC_EnergyContest::AttachDoorDistance' has a wrong offset!");
-static_assert(offsetof(UPyWC_EnergyContest, UpdateFrequency) == 0x000AE4, "Member 'UPyWC_EnergyContest::UpdateFrequency' has a wrong offset!");
-static_assert(offsetof(UPyWC_EnergyContest, IsAnimationWidget) == 0x000AE8, "Member 'UPyWC_EnergyContest::IsAnimationWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_EnergyContest;
 
 }
 

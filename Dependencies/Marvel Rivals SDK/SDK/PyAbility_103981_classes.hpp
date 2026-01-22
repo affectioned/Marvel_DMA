@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103981.PyCue_Buff_10398101
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10398101 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -26,18 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10398101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10398101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10398101")
 	}
 	static class APyCue_Buff_10398101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10398101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10398101) == 0x000010, "Wrong alignment on APyCue_Buff_10398101");
-static_assert(sizeof(APyCue_Buff_10398101) == 0x001640, "Wrong size on APyCue_Buff_10398101");
+DUMPER7_ASSERTS_APyCue_Buff_10398101;
 
 // PythonClass PyAbility_103981.PyAbility_103981
-// 0x0000 (0x2AD8 - 0x2AD8)
+// 0x0000 (0x2B28 - 0x2B28)
 class UPyAbility_103981 final : public UMarvelAbility_SelectTarget_Bond
 {
 public:
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103981">();
+		STATIC_CLASS_IMPL("PyAbility_103981")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103981")
 	}
 	static class UPyAbility_103981* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103981>();
 	}
 };
-static_assert(alignof(UPyAbility_103981) == 0x000008, "Wrong alignment on UPyAbility_103981");
-static_assert(sizeof(UPyAbility_103981) == 0x002AD8, "Wrong size on UPyAbility_103981");
+DUMPER7_ASSERTS_UPyAbility_103981;
 
 }
 

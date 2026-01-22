@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101482_WhileActive) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101482_WhileActive");
-static_assert(sizeof(PyCue_Weapon_Loop_101482_WhileActive) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_101482_WhileActive");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_101482_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_101482_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_101482_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101482_WhileActive;
 
 // PythonFunction PyCue_Weapon_Loop_101482.PyCue_Weapon_Loop_101482.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -40,11 +36,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101482_OnRemove) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_101482_OnRemove");
-static_assert(sizeof(PyCue_Weapon_Loop_101482_OnRemove) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_101482_OnRemove");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_101482_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_101482_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_101482_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101482_OnRemove;
 
 // PythonFunction PyCue_Weapon_Loop_101482.PyCue_Weapon_Loop_101482.OnWeaponCueFireStateChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -54,10 +46,7 @@ public:
 	int32                                         ModeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          State;                                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged) == 0x000004, "Wrong alignment on PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged");
-static_assert(sizeof(PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged) == 0x000008, "Wrong size on PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged, ModeIndex) == 0x000000, "Member 'PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged::ModeIndex' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged, State) == 0x000004, "Member 'PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged::State' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101482_OnWeaponCueFireStateChanged;
 
 // PythonFunction PyCue_Weapon_Loop_101482.PyCue_Weapon_Loop_101482.OnWeaponCueFired
 // 0x0008 (0x0008 - 0x0000)
@@ -67,10 +56,7 @@ public:
 	int32                                         ModeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueExecuteType                       ExecuteType;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101482_OnWeaponCueFired) == 0x000004, "Wrong alignment on PyCue_Weapon_Loop_101482_OnWeaponCueFired");
-static_assert(sizeof(PyCue_Weapon_Loop_101482_OnWeaponCueFired) == 0x000008, "Wrong size on PyCue_Weapon_Loop_101482_OnWeaponCueFired");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnWeaponCueFired, ModeIndex) == 0x000000, "Member 'PyCue_Weapon_Loop_101482_OnWeaponCueFired::ModeIndex' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_OnWeaponCueFired, ExecuteType) == 0x000004, "Member 'PyCue_Weapon_Loop_101482_OnWeaponCueFired::ExecuteType' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101482_OnWeaponCueFired;
 
 // PythonFunction PyCue_Weapon_Loop_101482.PyCue_Weapon_Loop_101482.SetPlayFireAudio
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +65,7 @@ struct PyCue_Weapon_Loop_101482_SetPlayFireAudio final
 public:
 	bool                                          Play;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_101482_SetPlayFireAudio) == 0x000001, "Wrong alignment on PyCue_Weapon_Loop_101482_SetPlayFireAudio");
-static_assert(sizeof(PyCue_Weapon_Loop_101482_SetPlayFireAudio) == 0x000001, "Wrong size on PyCue_Weapon_Loop_101482_SetPlayFireAudio");
-static_assert(offsetof(PyCue_Weapon_Loop_101482_SetPlayFireAudio, Play) == 0x000000, "Member 'PyCue_Weapon_Loop_101482_SetPlayFireAudio::Play' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_101482_SetPlayFireAudio;
 
 }
 

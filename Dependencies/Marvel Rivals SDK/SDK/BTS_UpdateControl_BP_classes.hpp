@@ -23,15 +23,18 @@ class UBTS_UpdateControl_BP_C final : public UBTS_PyGameMode_Base
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateControl_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateControl_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateControl_BP_C")
 	}
 	static class UBTS_UpdateControl_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateControl_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateControl_BP_C) == 0x000008, "Wrong alignment on UBTS_UpdateControl_BP_C");
-static_assert(sizeof(UBTS_UpdateControl_BP_C) == 0x000198, "Wrong size on UBTS_UpdateControl_BP_C");
+DUMPER7_ASSERTS_UBTS_UpdateControl_BP_C;
 
 }
 

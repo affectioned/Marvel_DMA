@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_10130_10442192_BP.BuffAbility_10130_10442192_BP_C
-// 0x03B0 (0x1DE0 - 0x1A30)
+// 0x04F0 (0x1F38 - 0x1A48)
 class UBuffAbility_10130_10442192_BP_C final : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FMarvelTraceRule                       SceneFilter;                                       // 0x1A30(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         SlowdownScopeID;                                   // 0x1DC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DCC[0x4];                                     // 0x1DCC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        ScopeSpawnInterval;                                // 0x1DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LastSpawnTime;                                     // 0x1DD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelTraceRule                       SceneFilter;                                       // 0x1A48(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         SlowdownScopeID;                                   // 0x1F20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F24[0x4];                                     // 0x1F24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        ScopeSpawnInterval;                                // 0x1F28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LastSpawnTime;                                     // 0x1F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void K2_OnConditionSatisfied(const struct FCardEffectParameter& Parameter);
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_10130_10442192_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_10130_10442192_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10130_10442192_BP_C")
 	}
 	static class UBuffAbility_10130_10442192_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10130_10442192_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_10130_10442192_BP_C) == 0x000008, "Wrong alignment on UBuffAbility_10130_10442192_BP_C");
-static_assert(sizeof(UBuffAbility_10130_10442192_BP_C) == 0x001DE0, "Wrong size on UBuffAbility_10130_10442192_BP_C");
-static_assert(offsetof(UBuffAbility_10130_10442192_BP_C, SceneFilter) == 0x001A30, "Member 'UBuffAbility_10130_10442192_BP_C::SceneFilter' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10442192_BP_C, SlowdownScopeID) == 0x001DC8, "Member 'UBuffAbility_10130_10442192_BP_C::SlowdownScopeID' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10442192_BP_C, ScopeSpawnInterval) == 0x001DD0, "Member 'UBuffAbility_10130_10442192_BP_C::ScopeSpawnInterval' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10442192_BP_C, LastSpawnTime) == 0x001DD8, "Member 'UBuffAbility_10130_10442192_BP_C::LastSpawnTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10130_10442192_BP_C;
 
 }
 

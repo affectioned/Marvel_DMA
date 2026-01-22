@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Hero_1018_classes.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1018_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101871.PySummonedLoopCue_10187101
-// 0x0050 (0x12D0 - 0x1280)
+// 0x0050 (0x1330 - 0x12E0)
 class APySummonedLoopCue_10187101 final : public ACue_Summoner_Loop_10187101
 {
 public:
-	class UMaterialInterface*                     SoulMaterial;                                      // 0x1280(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveVector*                           StartMaterialCurve;                                // 0x1288(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MaterialNameXName;                                 // 0x1290(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MaterialNameYName;                                 // 0x12A0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MaterialNameZName;                                 // 0x12B0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ExtraSoulHero;                                     // 0x12C0(0x0010)(Edit, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     SoulMaterial;                                      // 0x12E0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveVector*                           StartMaterialCurve;                                // 0x12E8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MaterialNameXName;                                 // 0x12F0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MaterialNameYName;                                 // 0x1300(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MaterialNameZName;                                 // 0x1310(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ExtraSoulHero;                                     // 0x1320(0x0010)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -41,21 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedLoopCue_10187101">();
+		STATIC_CLASS_IMPL("PySummonedLoopCue_10187101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedLoopCue_10187101")
 	}
 	static class APySummonedLoopCue_10187101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummonedLoopCue_10187101>();
 	}
 };
-static_assert(alignof(APySummonedLoopCue_10187101) == 0x000010, "Wrong alignment on APySummonedLoopCue_10187101");
-static_assert(sizeof(APySummonedLoopCue_10187101) == 0x0012D0, "Wrong size on APySummonedLoopCue_10187101");
-static_assert(offsetof(APySummonedLoopCue_10187101, SoulMaterial) == 0x001280, "Member 'APySummonedLoopCue_10187101::SoulMaterial' has a wrong offset!");
-static_assert(offsetof(APySummonedLoopCue_10187101, StartMaterialCurve) == 0x001288, "Member 'APySummonedLoopCue_10187101::StartMaterialCurve' has a wrong offset!");
-static_assert(offsetof(APySummonedLoopCue_10187101, MaterialNameXName) == 0x001290, "Member 'APySummonedLoopCue_10187101::MaterialNameXName' has a wrong offset!");
-static_assert(offsetof(APySummonedLoopCue_10187101, MaterialNameYName) == 0x0012A0, "Member 'APySummonedLoopCue_10187101::MaterialNameYName' has a wrong offset!");
-static_assert(offsetof(APySummonedLoopCue_10187101, MaterialNameZName) == 0x0012B0, "Member 'APySummonedLoopCue_10187101::MaterialNameZName' has a wrong offset!");
-static_assert(offsetof(APySummonedLoopCue_10187101, ExtraSoulHero) == 0x0012C0, "Member 'APySummonedLoopCue_10187101::ExtraSoulHero' has a wrong offset!");
+DUMPER7_ASSERTS_APySummonedLoopCue_10187101;
 
 // PythonClass PyAbility_101871.PyConfig_101871
 // 0x01E0 (0x0278 - 0x0098)
@@ -69,20 +66,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101871">();
+		STATIC_CLASS_IMPL("PyConfig_101871")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101871")
 	}
 	static class UPyConfig_101871* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101871>();
 	}
 };
-static_assert(alignof(UPyConfig_101871) == 0x000008, "Wrong alignment on UPyConfig_101871");
-static_assert(sizeof(UPyConfig_101871) == 0x000278, "Wrong size on UPyConfig_101871");
-static_assert(offsetof(UPyConfig_101871, ScreenCueTag) == 0x000098, "Member 'UPyConfig_101871::ScreenCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101871, ScreenCueParameters) == 0x0000A8, "Member 'UPyConfig_101871::ScreenCueParameters' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101871;
 
 // PythonClass PyAbility_101871.PyAbility_101871
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_101871 final : public UAbility_101871
 {
 public:
@@ -91,15 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101871">();
+		STATIC_CLASS_IMPL("PyAbility_101871")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101871")
 	}
 	static class UPyAbility_101871* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101871>();
 	}
 };
-static_assert(alignof(UPyAbility_101871) == 0x000008, "Wrong alignment on UPyAbility_101871");
-static_assert(sizeof(UPyAbility_101871) == 0x002A00, "Wrong size on UPyAbility_101871");
+DUMPER7_ASSERTS_UPyAbility_101871;
 
 // PythonClass PyAbility_101871.PyAbilityInstantCue_10187101
 // 0x0000 (0x03C0 - 0x03C0)
@@ -111,15 +112,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityInstantCue_10187101">();
+		STATIC_CLASS_IMPL("PyAbilityInstantCue_10187101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityInstantCue_10187101")
 	}
 	static class UPyAbilityInstantCue_10187101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityInstantCue_10187101>();
 	}
 };
-static_assert(alignof(UPyAbilityInstantCue_10187101) == 0x000008, "Wrong alignment on UPyAbilityInstantCue_10187101");
-static_assert(sizeof(UPyAbilityInstantCue_10187101) == 0x0003C0, "Wrong size on UPyAbilityInstantCue_10187101");
+DUMPER7_ASSERTS_UPyAbilityInstantCue_10187101;
 
 }
 

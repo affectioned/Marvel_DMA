@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryMinorProtectionHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryMinorProtectionHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryMinorProtectionHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMinorProtectionHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionHandler_BP_GetCurrentValue;
 
 // PythonFunction MinorProtection.UISettingEntryMinorProtectionHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -47,15 +41,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMinorProtectionHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryMinorProtectionHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryMinorProtectionHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryMinorProtectionHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionHandler_BP_OnChanged;
 
 // PythonFunction MinorProtection.UISettingEntryMinorProtectionHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -71,15 +57,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntryMinorProtectionHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntryMinorProtectionHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionHandler_BP_OnBtnClicked;
 
 // PythonFunction MinorProtection.UISettingEntryMinorProtectionHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -92,13 +70,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMinorProtectionHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryMinorProtectionHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryMinorProtectionHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryMinorProtectionHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryMinorProtectionHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryMinorProtectionHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionHandler_BP_OnApply;
 
 // PythonFunction MinorProtection.UISettingEntryMinorProtectionSubHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -111,13 +83,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionSubHandler_BP_GetCurrentValue;
 
 // PythonFunction MinorProtection.UISettingEntryMinorProtectionSubHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -133,15 +99,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryMinorProtectionSubHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryMinorProtectionSubHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryMinorProtectionSubHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryMinorProtectionSubHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryMinorProtectionSubHandler_BP_OnChanged;
 
 // PythonFunction MinorProtection.UISettingEntrySafeguardWebsiteHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -157,15 +115,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySafeguardWebsiteHandler_BP_OnBtnClicked;
 
 }
 

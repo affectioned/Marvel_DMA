@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass Pywidget_Common_Empty.PyWidget_Common_Empty
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Common_Empty : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Tip_Text;                                          // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Tip_Text;                                          // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Empty">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Empty")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Empty")
 	}
 	static class UPyWidget_Common_Empty* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Empty>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Empty) == 0x000008, "Wrong alignment on UPyWidget_Common_Empty");
-static_assert(sizeof(UPyWidget_Common_Empty) == 0x0005D8, "Wrong size on UPyWidget_Common_Empty");
-static_assert(offsetof(UPyWidget_Common_Empty, Tip_Text) == 0x0005C0, "Member 'UPyWidget_Common_Empty::Tip_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Empty;
 
 }
 

@@ -18,8 +18,9 @@ namespace SDK
 {
 
 // PythonClass PyAIBTreeTrainingSpawnActor.PyAIBtreeTestSpawnActor
-// 0x0030 (0x0790 - 0x0760)
-class APyAIBtreeTestSpawnActor : public APyAITrainBaseSpawnActor
+// 0x0040 (0x07A0 - 0x0760)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyAIBtreeTestSpawnActor : public APyAITrainBaseSpawnActor
 {
 public:
 	int32                                         HeroID;                                            // 0x075C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -33,28 +34,24 @@ public:
 	int32                                         SkinID;                                            // 0x0778(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_77C[0x4];                                      // 0x077C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int64>                                 SkinSlots;                                         // 0x0780(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	EHeroRoleType                                 HeroRole;                                          // 0x0790(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIBtreeTestSpawnActor">();
+		STATIC_CLASS_IMPL("PyAIBtreeTestSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIBtreeTestSpawnActor")
 	}
 	static class APyAIBtreeTestSpawnActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAIBtreeTestSpawnActor>();
 	}
 };
-static_assert(alignof(APyAIBtreeTestSpawnActor) == 0x000010, "Wrong alignment on APyAIBtreeTestSpawnActor");
-static_assert(sizeof(APyAIBtreeTestSpawnActor) == 0x000790, "Wrong size on APyAIBtreeTestSpawnActor");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, HeroID) == 0x00075C, "Member 'APyAIBtreeTestSpawnActor::HeroID' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, DifficultyLevel) == 0x000760, "Member 'APyAIBtreeTestSpawnActor::DifficultyLevel' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, Camp) == 0x000764, "Member 'APyAIBtreeTestSpawnActor::Camp' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, bUseSpecificBattleSide) == 0x000768, "Member 'APyAIBtreeTestSpawnActor::bUseSpecificBattleSide' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, BattleSide) == 0x000769, "Member 'APyAIBtreeTestSpawnActor::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, ReliveTime) == 0x00076C, "Member 'APyAIBtreeTestSpawnActor::ReliveTime' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, BTree) == 0x000770, "Member 'APyAIBtreeTestSpawnActor::BTree' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, SkinID) == 0x000778, "Member 'APyAIBtreeTestSpawnActor::SkinID' has a wrong offset!");
-static_assert(offsetof(APyAIBtreeTestSpawnActor, SkinSlots) == 0x000780, "Member 'APyAIBtreeTestSpawnActor::SkinSlots' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyAIBtreeTestSpawnActor;
 
 }
 

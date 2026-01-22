@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass EffectAbility_10334201_BP.EffectAbility_10334201_BP_C
-// 0x0000 (0x1380 - 0x1380)
+// 0x0000 (0x1398 - 0x1398)
 class UEffectAbility_10334201_BP_C final : public UPyEffectAbility_GravityChange_103342
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EffectAbility_10334201_BP_C">();
+		BP_STATIC_CLASS_IMPL("EffectAbility_10334201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectAbility_10334201_BP_C")
 	}
 	static class UEffectAbility_10334201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectAbility_10334201_BP_C>();
 	}
 };
-static_assert(alignof(UEffectAbility_10334201_BP_C) == 0x000008, "Wrong alignment on UEffectAbility_10334201_BP_C");
-static_assert(sizeof(UEffectAbility_10334201_BP_C) == 0x001380, "Wrong size on UEffectAbility_10334201_BP_C");
+DUMPER7_ASSERTS_UEffectAbility_10334201_BP_C;
 
 }
 

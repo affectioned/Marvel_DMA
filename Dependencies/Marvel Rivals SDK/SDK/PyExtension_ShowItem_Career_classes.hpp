@@ -23,15 +23,18 @@ class UPyExtension_ShowItem_Career final : public UPyExtension_ShowItemBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_Career">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_Career")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_Career")
 	}
 	static class UPyExtension_ShowItem_Career* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_Career>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_Career) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_Career");
-static_assert(sizeof(UPyExtension_ShowItem_Career) == 0x000030, "Wrong size on UPyExtension_ShowItem_Career");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_Career;
 
 }
 

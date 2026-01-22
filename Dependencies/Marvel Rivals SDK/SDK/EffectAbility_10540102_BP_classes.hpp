@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass EffectAbility_10540102_BP.EffectAbility_10540102_BP_C
-// 0x0000 (0x1390 - 0x1390)
+// 0x0000 (0x13A8 - 0x13A8)
 class UEffectAbility_10540102_BP_C final : public UMarvelDamageToTreatAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EffectAbility_10540102_BP_C">();
+		BP_STATIC_CLASS_IMPL("EffectAbility_10540102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectAbility_10540102_BP_C")
 	}
 	static class UEffectAbility_10540102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectAbility_10540102_BP_C>();
 	}
 };
-static_assert(alignof(UEffectAbility_10540102_BP_C) == 0x000008, "Wrong alignment on UEffectAbility_10540102_BP_C");
-static_assert(sizeof(UEffectAbility_10540102_BP_C) == 0x001390, "Wrong size on UEffectAbility_10540102_BP_C");
+DUMPER7_ASSERTS_UEffectAbility_10540102_BP_C;
 
 }
 

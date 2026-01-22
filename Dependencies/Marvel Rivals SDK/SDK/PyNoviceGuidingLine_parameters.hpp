@@ -21,9 +21,7 @@ struct PyNoviceGuidingLine_SetMaterial final
 public:
 	class UMaterialInstance*                      material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNoviceGuidingLine_SetMaterial) == 0x000008, "Wrong alignment on PyNoviceGuidingLine_SetMaterial");
-static_assert(sizeof(PyNoviceGuidingLine_SetMaterial) == 0x000008, "Wrong size on PyNoviceGuidingLine_SetMaterial");
-static_assert(offsetof(PyNoviceGuidingLine_SetMaterial, material) == 0x000000, "Member 'PyNoviceGuidingLine_SetMaterial::material' has a wrong offset!");
+DUMPER7_ASSERTS_PyNoviceGuidingLine_SetMaterial;
 
 // PythonFunction PyNoviceGuidingLine.PyNoviceGuidingLine.SetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyNoviceGuidingLine_SetVisible final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNoviceGuidingLine_SetVisible) == 0x000001, "Wrong alignment on PyNoviceGuidingLine_SetVisible");
-static_assert(sizeof(PyNoviceGuidingLine_SetVisible) == 0x000001, "Wrong size on PyNoviceGuidingLine_SetVisible");
-static_assert(offsetof(PyNoviceGuidingLine_SetVisible, visible) == 0x000000, "Member 'PyNoviceGuidingLine_SetVisible::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyNoviceGuidingLine_SetVisible;
 
 }
 

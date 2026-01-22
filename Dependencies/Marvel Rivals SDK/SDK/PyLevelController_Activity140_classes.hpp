@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Activity140">();
+		STATIC_CLASS_IMPL("PyLevelController_Activity140")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Activity140")
 	}
 	static class APyLevelController_Activity140* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Activity140>();
 	}
 };
-static_assert(alignof(APyLevelController_Activity140) == 0x000010, "Wrong alignment on APyLevelController_Activity140");
-static_assert(sizeof(APyLevelController_Activity140) == 0x000790, "Wrong size on APyLevelController_Activity140");
-static_assert(offsetof(APyLevelController_Activity140, LS_Entry) == 0x0006E0, "Member 'APyLevelController_Activity140::LS_Entry' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity140, ShowActor) == 0x000760, "Member 'APyLevelController_Activity140::ShowActor' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity140, OutlineColor) == 0x000768, "Member 'APyLevelController_Activity140::OutlineColor' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity140, OutlineWidth) == 0x000778, "Member 'APyLevelController_Activity140::OutlineWidth' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_Activity140;
 
 }
 

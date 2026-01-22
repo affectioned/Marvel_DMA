@@ -23,15 +23,18 @@ class UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C final : public UPyAI
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C")
 	}
 	static class UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C");
-static_assert(sizeof(UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C) == 0x000048, "Wrong size on UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_ChangeButtonIfNoEnemy_10179402_C;
 
 }
 

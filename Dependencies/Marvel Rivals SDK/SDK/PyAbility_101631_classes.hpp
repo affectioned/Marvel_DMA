@@ -18,46 +18,51 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101631.PyEffectiveComponent_10163101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10163101 final : public UEffectiveComponent_Loki_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10163101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10163101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10163101")
 	}
 	static class UPyEffectiveComponent_10163101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10163101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10163101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10163101");
-static_assert(sizeof(UPyEffectiveComponent_10163101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10163101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10163101;
 
 // PythonClass PyAbility_101631.PyConfig_101631
-// 0x1668 (0x1720 - 0x00B8)
+// 0x19B8 (0x1A70 - 0x00B8)
 class UPyConfig_101631 final : public UConfig_101631
 {
 public:
 	uint8                                         Pad_B8[0x8];                                       // 0x00B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00C0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00C0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101631">();
+		STATIC_CLASS_IMPL("PyConfig_101631")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101631")
 	}
 	static class UPyConfig_101631* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101631>();
 	}
 };
-static_assert(alignof(UPyConfig_101631) == 0x000010, "Wrong alignment on UPyConfig_101631");
-static_assert(sizeof(UPyConfig_101631) == 0x001720, "Wrong size on UPyConfig_101631");
-static_assert(offsetof(UPyConfig_101631, TraceContext) == 0x0000C0, "Member 'UPyConfig_101631::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101631;
 
 // PythonClass PyAbility_101631.PyAbility_101631
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_101631 : public UAbility_101631
 {
 public:
@@ -70,27 +75,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101631">();
+		STATIC_CLASS_IMPL("PyAbility_101631")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101631")
 	}
 	static class UPyAbility_101631* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101631>();
 	}
 };
-static_assert(alignof(UPyAbility_101631) == 0x000008, "Wrong alignment on UPyAbility_101631");
-static_assert(sizeof(UPyAbility_101631) == 0x002A08, "Wrong size on UPyAbility_101631");
+DUMPER7_ASSERTS_UPyAbility_101631;
 
 // PythonClass PyAbility_101631.PyCue_Summoner_Loop_10163101
-// 0x1690 (0x2890 - 0x1200)
+// 0x19E0 (0x2C40 - 0x1260)
 class APyCue_Summoner_Loop_10163101 final : public ACue_Summoner_Loop_10163101
 {
 public:
-	class USkeletalMeshComponent*                 Rune;                                              // 0x1200(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimMontage*                           MyAnimMontage;                                     // 0x1208(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1210(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         AdvanceEndAnimTime;                                // 0x2870(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2874[0x4];                                     // 0x2874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              DeactivateReleaseNiagara;                          // 0x2878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 Rune;                                              // 0x1260(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           MyAnimMontage;                                     // 0x1268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             GroundTraceContext;                                // 0x1270(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         AdvanceEndAnimTime;                                // 0x2C20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C24[0x4];                                     // 0x2C24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              DeactivateReleaseNiagara;                          // 0x2C28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -102,20 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10163101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10163101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10163101")
 	}
 	static class APyCue_Summoner_Loop_10163101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10163101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10163101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10163101");
-static_assert(sizeof(APyCue_Summoner_Loop_10163101) == 0x002890, "Wrong size on APyCue_Summoner_Loop_10163101");
-static_assert(offsetof(APyCue_Summoner_Loop_10163101, Rune) == 0x001200, "Member 'APyCue_Summoner_Loop_10163101::Rune' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10163101, MyAnimMontage) == 0x001208, "Member 'APyCue_Summoner_Loop_10163101::MyAnimMontage' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10163101, GroundTraceContext) == 0x001210, "Member 'APyCue_Summoner_Loop_10163101::GroundTraceContext' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10163101, AdvanceEndAnimTime) == 0x002870, "Member 'APyCue_Summoner_Loop_10163101::AdvanceEndAnimTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10163101, DeactivateReleaseNiagara) == 0x002878, "Member 'APyCue_Summoner_Loop_10163101::DeactivateReleaseNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10163101;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStatisticsUnit">();
+		STATIC_CLASS_IMPL("PyPlayerStatisticsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStatisticsUnit")
 	}
 	static class UPyPlayerStatisticsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStatisticsUnit>();
 	}
 };
-static_assert(alignof(UPyPlayerStatisticsUnit) == 0x000008, "Wrong alignment on UPyPlayerStatisticsUnit");
-static_assert(sizeof(UPyPlayerStatisticsUnit) == 0x000090, "Wrong size on UPyPlayerStatisticsUnit");
+DUMPER7_ASSERTS_UPyPlayerStatisticsUnit;
 
 }
 

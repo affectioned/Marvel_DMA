@@ -21,9 +21,7 @@ struct PyNoviceTargetRange_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNoviceTargetRange_ReceiveTick) == 0x000004, "Wrong alignment on PyNoviceTargetRange_ReceiveTick");
-static_assert(sizeof(PyNoviceTargetRange_ReceiveTick) == 0x000004, "Wrong size on PyNoviceTargetRange_ReceiveTick");
-static_assert(offsetof(PyNoviceTargetRange_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyNoviceTargetRange_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyNoviceTargetRange_ReceiveTick;
 
 }
 

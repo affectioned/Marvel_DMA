@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "InterchangeFactoryNodes_structs.hpp"
 #include "InterchangeCore_classes.hpp"
 #include "CinematicCamera_structs.hpp"
-#include "InterchangeFactoryNodes_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAnimationTrackSetFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeAnimationTrackSetFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAnimationTrackSetFactoryNode")
 	}
 	static class UInterchangeAnimationTrackSetFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAnimationTrackSetFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeAnimationTrackSetFactoryNode) == 0x000008, "Wrong alignment on UInterchangeAnimationTrackSetFactoryNode");
-static_assert(sizeof(UInterchangeAnimationTrackSetFactoryNode) == 0x000178, "Wrong size on UInterchangeAnimationTrackSetFactoryNode");
+DUMPER7_ASSERTS_UInterchangeAnimationTrackSetFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeActorFactoryNode
 // 0x0030 (0x0178 - 0x0148)
@@ -69,15 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeActorFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeActorFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeActorFactoryNode")
 	}
 	static class UInterchangeActorFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeActorFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeActorFactoryNode) == 0x000008, "Wrong alignment on UInterchangeActorFactoryNode");
-static_assert(sizeof(UInterchangeActorFactoryNode) == 0x000178, "Wrong size on UInterchangeActorFactoryNode");
+DUMPER7_ASSERTS_UInterchangeActorFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangePhysicalCameraFactoryNode
 // 0x0040 (0x01B8 - 0x0178)
@@ -100,15 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePhysicalCameraFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangePhysicalCameraFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePhysicalCameraFactoryNode")
 	}
 	static class UInterchangePhysicalCameraFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePhysicalCameraFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangePhysicalCameraFactoryNode) == 0x000008, "Wrong alignment on UInterchangePhysicalCameraFactoryNode");
-static_assert(sizeof(UInterchangePhysicalCameraFactoryNode) == 0x0001B8, "Wrong size on UInterchangePhysicalCameraFactoryNode");
+DUMPER7_ASSERTS_UInterchangePhysicalCameraFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeStandardCameraFactoryNode
 // 0x0060 (0x01D8 - 0x0178)
@@ -135,15 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeStandardCameraFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeStandardCameraFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeStandardCameraFactoryNode")
 	}
 	static class UInterchangeStandardCameraFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeStandardCameraFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeStandardCameraFactoryNode) == 0x000008, "Wrong alignment on UInterchangeStandardCameraFactoryNode");
-static_assert(sizeof(UInterchangeStandardCameraFactoryNode) == 0x0001D8, "Wrong size on UInterchangeStandardCameraFactoryNode");
+DUMPER7_ASSERTS_UInterchangeStandardCameraFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeBaseLightFactoryNode
 // 0x0040 (0x01B8 - 0x0178)
@@ -166,15 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeBaseLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeBaseLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeBaseLightFactoryNode")
 	}
 	static class UInterchangeBaseLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeBaseLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeBaseLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangeBaseLightFactoryNode");
-static_assert(sizeof(UInterchangeBaseLightFactoryNode) == 0x0001B8, "Wrong size on UInterchangeBaseLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangeBaseLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeDirectionalLightFactoryNode
 // 0x0000 (0x01B8 - 0x01B8)
@@ -183,15 +198,18 @@ class UInterchangeDirectionalLightFactoryNode final : public UInterchangeBaseLig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeDirectionalLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeDirectionalLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeDirectionalLightFactoryNode")
 	}
 	static class UInterchangeDirectionalLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeDirectionalLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeDirectionalLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangeDirectionalLightFactoryNode");
-static_assert(sizeof(UInterchangeDirectionalLightFactoryNode) == 0x0001B8, "Wrong size on UInterchangeDirectionalLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangeDirectionalLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeLightFactoryNode
 // 0x0030 (0x01E8 - 0x01B8)
@@ -212,15 +230,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeLightFactoryNode")
 	}
 	static class UInterchangeLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangeLightFactoryNode");
-static_assert(sizeof(UInterchangeLightFactoryNode) == 0x0001E8, "Wrong size on UInterchangeLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangeLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeRectLightFactoryNode
 // 0x0020 (0x0208 - 0x01E8)
@@ -239,15 +260,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeRectLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeRectLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeRectLightFactoryNode")
 	}
 	static class UInterchangeRectLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeRectLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeRectLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangeRectLightFactoryNode");
-static_assert(sizeof(UInterchangeRectLightFactoryNode) == 0x000208, "Wrong size on UInterchangeRectLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangeRectLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangePointLightFactoryNode
 // 0x0020 (0x0208 - 0x01E8)
@@ -266,15 +290,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePointLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangePointLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePointLightFactoryNode")
 	}
 	static class UInterchangePointLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePointLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangePointLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangePointLightFactoryNode");
-static_assert(sizeof(UInterchangePointLightFactoryNode) == 0x000208, "Wrong size on UInterchangePointLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangePointLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSpotLightFactoryNode
 // 0x0020 (0x0228 - 0x0208)
@@ -293,15 +320,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSpotLightFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeSpotLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSpotLightFactoryNode")
 	}
 	static class UInterchangeSpotLightFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSpotLightFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeSpotLightFactoryNode) == 0x000008, "Wrong alignment on UInterchangeSpotLightFactoryNode");
-static_assert(sizeof(UInterchangeSpotLightFactoryNode) == 0x000228, "Wrong size on UInterchangeSpotLightFactoryNode");
+DUMPER7_ASSERTS_UInterchangeSpotLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangePhysicsAssetFactoryNode
 // 0x0030 (0x0178 - 0x0148)
@@ -320,15 +350,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangePhysicsAssetFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangePhysicsAssetFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangePhysicsAssetFactoryNode")
 	}
 	static class UInterchangePhysicsAssetFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangePhysicsAssetFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangePhysicsAssetFactoryNode) == 0x000008, "Wrong alignment on UInterchangePhysicsAssetFactoryNode");
-static_assert(sizeof(UInterchangePhysicsAssetFactoryNode) == 0x000178, "Wrong size on UInterchangePhysicsAssetFactoryNode");
+DUMPER7_ASSERTS_UInterchangePhysicsAssetFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSceneVariantSetsFactoryNode
 // 0x0020 (0x0168 - 0x0148)
@@ -349,15 +382,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSceneVariantSetsFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeSceneVariantSetsFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneVariantSetsFactoryNode")
 	}
 	static class UInterchangeSceneVariantSetsFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSceneVariantSetsFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeSceneVariantSetsFactoryNode) == 0x000008, "Wrong alignment on UInterchangeSceneVariantSetsFactoryNode");
-static_assert(sizeof(UInterchangeSceneVariantSetsFactoryNode) == 0x000168, "Wrong size on UInterchangeSceneVariantSetsFactoryNode");
+DUMPER7_ASSERTS_UInterchangeSceneVariantSetsFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSkeletonFactoryNode
 // 0x0050 (0x0198 - 0x0148)
@@ -380,15 +416,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletonFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeSkeletonFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletonFactoryNode")
 	}
 	static class UInterchangeSkeletonFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletonFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletonFactoryNode) == 0x000008, "Wrong alignment on UInterchangeSkeletonFactoryNode");
-static_assert(sizeof(UInterchangeSkeletonFactoryNode) == 0x000198, "Wrong size on UInterchangeSkeletonFactoryNode");
+DUMPER7_ASSERTS_UInterchangeSkeletonFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTextureFactoryNode
 // 0x0290 (0x03D8 - 0x0148)
@@ -481,15 +520,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTextureFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureFactoryNode")
 	}
 	static class UInterchangeTextureFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTextureFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTextureFactoryNode");
-static_assert(sizeof(UInterchangeTextureFactoryNode) == 0x0003D8, "Wrong size on UInterchangeTextureFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTextureFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTexture2DArrayFactoryNode
 // 0x0030 (0x0408 - 0x03D8)
@@ -508,15 +550,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTexture2DArrayFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTexture2DArrayFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTexture2DArrayFactoryNode")
 	}
 	static class UInterchangeTexture2DArrayFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTexture2DArrayFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTexture2DArrayFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTexture2DArrayFactoryNode");
-static_assert(sizeof(UInterchangeTexture2DArrayFactoryNode) == 0x000408, "Wrong size on UInterchangeTexture2DArrayFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTexture2DArrayFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTexture2DFactoryNode
 // 0x0098 (0x0470 - 0x03D8)
@@ -541,15 +586,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTexture2DFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTexture2DFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTexture2DFactoryNode")
 	}
 	static class UInterchangeTexture2DFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTexture2DFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTexture2DFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTexture2DFactoryNode");
-static_assert(sizeof(UInterchangeTexture2DFactoryNode) == 0x000470, "Wrong size on UInterchangeTexture2DFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTexture2DFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTextureCubeArrayFactoryNode
 // 0x0000 (0x03D8 - 0x03D8)
@@ -558,15 +606,18 @@ class UInterchangeTextureCubeArrayFactoryNode final : public UInterchangeTexture
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureCubeArrayFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTextureCubeArrayFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureCubeArrayFactoryNode")
 	}
 	static class UInterchangeTextureCubeArrayFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureCubeArrayFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTextureCubeArrayFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTextureCubeArrayFactoryNode");
-static_assert(sizeof(UInterchangeTextureCubeArrayFactoryNode) == 0x0003D8, "Wrong size on UInterchangeTextureCubeArrayFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTextureCubeArrayFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTextureCubeFactoryNode
 // 0x0000 (0x03D8 - 0x03D8)
@@ -575,15 +626,18 @@ class UInterchangeTextureCubeFactoryNode final : public UInterchangeTextureFacto
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureCubeFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTextureCubeFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureCubeFactoryNode")
 	}
 	static class UInterchangeTextureCubeFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureCubeFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTextureCubeFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTextureCubeFactoryNode");
-static_assert(sizeof(UInterchangeTextureCubeFactoryNode) == 0x0003D8, "Wrong size on UInterchangeTextureCubeFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTextureCubeFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTextureLightProfileFactoryNode
 // 0x0020 (0x0490 - 0x0470)
@@ -602,15 +656,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeTextureLightProfileFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeTextureLightProfileFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureLightProfileFactoryNode")
 	}
 	static class UInterchangeTextureLightProfileFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeTextureLightProfileFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeTextureLightProfileFactoryNode) == 0x000008, "Wrong alignment on UInterchangeTextureLightProfileFactoryNode");
-static_assert(sizeof(UInterchangeTextureLightProfileFactoryNode) == 0x000490, "Wrong size on UInterchangeTextureLightProfileFactoryNode");
+DUMPER7_ASSERTS_UInterchangeTextureLightProfileFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeVolumeTextureFactoryNode
 // 0x0000 (0x03D8 - 0x03D8)
@@ -619,15 +676,18 @@ class UInterchangeVolumeTextureFactoryNode final : public UInterchangeTextureFac
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeVolumeTextureFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeVolumeTextureFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeVolumeTextureFactoryNode")
 	}
 	static class UInterchangeVolumeTextureFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeVolumeTextureFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeVolumeTextureFactoryNode) == 0x000008, "Wrong alignment on UInterchangeVolumeTextureFactoryNode");
-static_assert(sizeof(UInterchangeVolumeTextureFactoryNode) == 0x0003D8, "Wrong size on UInterchangeVolumeTextureFactoryNode");
+DUMPER7_ASSERTS_UInterchangeVolumeTextureFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeAnimSequenceFactoryNode
 // 0x0340 (0x0488 - 0x0148)
@@ -691,15 +751,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeAnimSequenceFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeAnimSequenceFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeAnimSequenceFactoryNode")
 	}
 	static class UInterchangeAnimSequenceFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeAnimSequenceFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeAnimSequenceFactoryNode) == 0x000008, "Wrong alignment on UInterchangeAnimSequenceFactoryNode");
-static_assert(sizeof(UInterchangeAnimSequenceFactoryNode) == 0x000488, "Wrong size on UInterchangeAnimSequenceFactoryNode");
+DUMPER7_ASSERTS_UInterchangeAnimSequenceFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeCommonPipelineDataFactoryNode
 // 0x0020 (0x0168 - 0x0148)
@@ -718,15 +781,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeCommonPipelineDataFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeCommonPipelineDataFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeCommonPipelineDataFactoryNode")
 	}
 	static class UInterchangeCommonPipelineDataFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeCommonPipelineDataFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeCommonPipelineDataFactoryNode) == 0x000008, "Wrong alignment on UInterchangeCommonPipelineDataFactoryNode");
-static_assert(sizeof(UInterchangeCommonPipelineDataFactoryNode) == 0x000168, "Wrong size on UInterchangeCommonPipelineDataFactoryNode");
+DUMPER7_ASSERTS_UInterchangeCommonPipelineDataFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeBaseMaterialFactoryNode
 // 0x0000 (0x0148 - 0x0148)
@@ -735,15 +801,18 @@ class UInterchangeBaseMaterialFactoryNode : public UInterchangeFactoryBaseNode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeBaseMaterialFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeBaseMaterialFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeBaseMaterialFactoryNode")
 	}
 	static class UInterchangeBaseMaterialFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeBaseMaterialFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeBaseMaterialFactoryNode) == 0x000008, "Wrong alignment on UInterchangeBaseMaterialFactoryNode");
-static_assert(sizeof(UInterchangeBaseMaterialFactoryNode) == 0x000148, "Wrong size on UInterchangeBaseMaterialFactoryNode");
+DUMPER7_ASSERTS_UInterchangeBaseMaterialFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMaterialFactoryNode
 // 0x0070 (0x01B8 - 0x0148)
@@ -827,15 +896,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMaterialFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialFactoryNode")
 	}
 	static class UInterchangeMaterialFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMaterialFactoryNode");
-static_assert(sizeof(UInterchangeMaterialFactoryNode) == 0x0001B8, "Wrong size on UInterchangeMaterialFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMaterialFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMaterialExpressionFactoryNode
 // 0x0010 (0x0158 - 0x0148)
@@ -852,15 +924,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialExpressionFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMaterialExpressionFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialExpressionFactoryNode")
 	}
 	static class UInterchangeMaterialExpressionFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialExpressionFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialExpressionFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMaterialExpressionFactoryNode");
-static_assert(sizeof(UInterchangeMaterialExpressionFactoryNode) == 0x000158, "Wrong size on UInterchangeMaterialExpressionFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMaterialExpressionFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMaterialInstanceFactoryNode
 // 0x0020 (0x0168 - 0x0148)
@@ -879,15 +954,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialInstanceFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMaterialInstanceFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialInstanceFactoryNode")
 	}
 	static class UInterchangeMaterialInstanceFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialInstanceFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialInstanceFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMaterialInstanceFactoryNode");
-static_assert(sizeof(UInterchangeMaterialInstanceFactoryNode) == 0x000168, "Wrong size on UInterchangeMaterialInstanceFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMaterialInstanceFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMaterialFunctionCallExpressionFactoryNode
 // 0x0010 (0x0168 - 0x0158)
@@ -904,15 +982,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialFunctionCallExpressionFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMaterialFunctionCallExpressionFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialFunctionCallExpressionFactoryNode")
 	}
 	static class UInterchangeMaterialFunctionCallExpressionFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialFunctionCallExpressionFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialFunctionCallExpressionFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMaterialFunctionCallExpressionFactoryNode");
-static_assert(sizeof(UInterchangeMaterialFunctionCallExpressionFactoryNode) == 0x000168, "Wrong size on UInterchangeMaterialFunctionCallExpressionFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMaterialFunctionCallExpressionFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMaterialFunctionFactoryNode
 // 0x0000 (0x0148 - 0x0148)
@@ -925,15 +1006,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMaterialFunctionFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMaterialFunctionFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMaterialFunctionFactoryNode")
 	}
 	static class UInterchangeMaterialFunctionFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMaterialFunctionFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMaterialFunctionFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMaterialFunctionFactoryNode");
-static_assert(sizeof(UInterchangeMaterialFunctionFactoryNode) == 0x000148, "Wrong size on UInterchangeMaterialFunctionFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMaterialFunctionFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMeshActorFactoryNode
 // 0x0098 (0x0210 - 0x0178)
@@ -956,15 +1040,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMeshActorFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMeshActorFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMeshActorFactoryNode")
 	}
 	static class UInterchangeMeshActorFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMeshActorFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMeshActorFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMeshActorFactoryNode");
-static_assert(sizeof(UInterchangeMeshActorFactoryNode) == 0x000210, "Wrong size on UInterchangeMeshActorFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMeshActorFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeMeshFactoryNode
 // 0x0170 (0x02B8 - 0x0148)
@@ -1011,15 +1098,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeMeshFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeMeshFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMeshFactoryNode")
 	}
 	static class UInterchangeMeshFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeMeshFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeMeshFactoryNode) == 0x000008, "Wrong alignment on UInterchangeMeshFactoryNode");
-static_assert(sizeof(UInterchangeMeshFactoryNode) == 0x0002B8, "Wrong size on UInterchangeMeshFactoryNode");
+DUMPER7_ASSERTS_UInterchangeMeshFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSceneImportAssetFactoryNode
 // 0x0000 (0x0148 - 0x0148)
@@ -1028,15 +1118,18 @@ class UInterchangeSceneImportAssetFactoryNode final : public UInterchangeFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSceneImportAssetFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeSceneImportAssetFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneImportAssetFactoryNode")
 	}
 	static class UInterchangeSceneImportAssetFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSceneImportAssetFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeSceneImportAssetFactoryNode) == 0x000008, "Wrong alignment on UInterchangeSceneImportAssetFactoryNode");
-static_assert(sizeof(UInterchangeSceneImportAssetFactoryNode) == 0x000148, "Wrong size on UInterchangeSceneImportAssetFactoryNode");
+DUMPER7_ASSERTS_UInterchangeSceneImportAssetFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSkeletalMeshFactoryNode
 // 0x00C8 (0x0380 - 0x02B8)
@@ -1075,15 +1168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletalMeshFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeSkeletalMeshFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletalMeshFactoryNode")
 	}
 	static class UInterchangeSkeletalMeshFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletalMeshFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletalMeshFactoryNode) == 0x000008, "Wrong alignment on UInterchangeSkeletalMeshFactoryNode");
-static_assert(sizeof(UInterchangeSkeletalMeshFactoryNode) == 0x000380, "Wrong size on UInterchangeSkeletalMeshFactoryNode");
+DUMPER7_ASSERTS_UInterchangeSkeletalMeshFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeSkeletalMeshLodDataNode
 // 0x0030 (0x0178 - 0x0148)
@@ -1105,15 +1201,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeSkeletalMeshLodDataNode">();
+		STATIC_CLASS_IMPL("InterchangeSkeletalMeshLodDataNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSkeletalMeshLodDataNode")
 	}
 	static class UInterchangeSkeletalMeshLodDataNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeSkeletalMeshLodDataNode>();
 	}
 };
-static_assert(alignof(UInterchangeSkeletalMeshLodDataNode) == 0x000008, "Wrong alignment on UInterchangeSkeletalMeshLodDataNode");
-static_assert(sizeof(UInterchangeSkeletalMeshLodDataNode) == 0x000178, "Wrong size on UInterchangeSkeletalMeshLodDataNode");
+DUMPER7_ASSERTS_UInterchangeSkeletalMeshLodDataNode;
 
 // Class InterchangeFactoryNodes.InterchangeStaticMeshFactoryNode
 // 0x00E8 (0x03A0 - 0x02B8)
@@ -1159,15 +1258,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeStaticMeshFactoryNode">();
+		STATIC_CLASS_IMPL("InterchangeStaticMeshFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeStaticMeshFactoryNode")
 	}
 	static class UInterchangeStaticMeshFactoryNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeStaticMeshFactoryNode>();
 	}
 };
-static_assert(alignof(UInterchangeStaticMeshFactoryNode) == 0x000008, "Wrong alignment on UInterchangeStaticMeshFactoryNode");
-static_assert(sizeof(UInterchangeStaticMeshFactoryNode) == 0x0003A0, "Wrong size on UInterchangeStaticMeshFactoryNode");
+DUMPER7_ASSERTS_UInterchangeStaticMeshFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeStaticMeshLodDataNode
 // 0x00C0 (0x0208 - 0x0148)
@@ -1211,15 +1313,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InterchangeStaticMeshLodDataNode">();
+		STATIC_CLASS_IMPL("InterchangeStaticMeshLodDataNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeStaticMeshLodDataNode")
 	}
 	static class UInterchangeStaticMeshLodDataNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterchangeStaticMeshLodDataNode>();
 	}
 };
-static_assert(alignof(UInterchangeStaticMeshLodDataNode) == 0x000008, "Wrong alignment on UInterchangeStaticMeshLodDataNode");
-static_assert(sizeof(UInterchangeStaticMeshLodDataNode) == 0x000208, "Wrong size on UInterchangeStaticMeshLodDataNode");
+DUMPER7_ASSERTS_UInterchangeStaticMeshLodDataNode;
 
 }
 

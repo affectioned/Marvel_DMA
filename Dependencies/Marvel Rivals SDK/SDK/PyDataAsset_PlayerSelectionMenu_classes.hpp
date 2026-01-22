@@ -70,59 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_PlayerSelectionMenu">();
+		STATIC_CLASS_IMPL("PyDataAsset_PlayerSelectionMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_PlayerSelectionMenu")
 	}
 	static class UPyDataAsset_PlayerSelectionMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_PlayerSelectionMenu>();
 	}
 };
-static_assert(alignof(UPyDataAsset_PlayerSelectionMenu) == 0x000008, "Wrong alignment on UPyDataAsset_PlayerSelectionMenu");
-static_assert(sizeof(UPyDataAsset_PlayerSelectionMenu) == 0x0002F8, "Wrong size on UPyDataAsset_PlayerSelectionMenu");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanCaptain_Self) == 0x000038, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanCaptain_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanCaptain_Other) == 0x000048, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanCaptain_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanCaptain_Coach) == 0x000058, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanCaptain_Coach' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanCoach_Self) == 0x000068, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanCoach_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanMember_Self) == 0x000078, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanMember_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanMember_CaptainorCoach) == 0x000088, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanMember_CaptainorCoach' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanMember_Other) == 0x000098, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanMember_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanApply) == 0x0000A8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanApply' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_OtherClanMemeber) == 0x0000B8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_OtherClanMemeber' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanEditCaption) == 0x0000C8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanEditCaption' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanEditOtherMember) == 0x0000D8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanEditOtherMember' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanRecommendationCard) == 0x0000E8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanRecommendationCard' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_SquadCaptain_Self) == 0x0000F8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_SquadCaptain_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_SquadCaptain_Other) == 0x000108, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_SquadCaptain_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_SquadMember_Self) == 0x000118, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_SquadMember_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_SquadMember_Other) == 0x000128, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_SquadMember_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_SquadCaptain_Self) == 0x000138, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_SquadCaptain_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_SquadCaptain_Other) == 0x000148, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_SquadCaptain_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_SquadMember_Self) == 0x000158, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_SquadMember_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_SquadMember_Other) == 0x000168, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_SquadMember_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_Friend_Other) == 0x000178, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_Friend_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Game_SquareInteract) == 0x000188, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Game_SquareInteract' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Ranking) == 0x000198, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Ranking' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Halloween_Ranking) == 0x0001A8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Halloween_Ranking' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Settlement) == 0x0001B8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Settlement' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_CareerSettlement) == 0x0001C8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_CareerSettlement' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_LobbyChat) == 0x0001D8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_LobbyChat' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_GameChat) == 0x0001E8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_GameChat' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ChatPrivateOp) == 0x0001F8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ChatPrivateOp' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_ClanChat) == 0x000208, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_ClanChat' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_LeagueChat) == 0x000218, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_LeagueChat' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Friend_Self) == 0x000228, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Friend_Self' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Friend_Other) == 0x000238, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Friend_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Friend_Other_Recent) == 0x000248, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Friend_Other_Recent' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Gather_Friend_Other) == 0x000258, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Gather_Friend_Other' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Friend_Discord_Unbinded) == 0x000268, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Friend_Discord_Unbinded' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Friend_Discord_Binded) == 0x000278, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Friend_Discord_Binded' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Room) == 0x000288, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Room' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_LeagueRoom) == 0x000298, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_LeagueRoom' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Popup) == 0x0002A8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Popup' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Popup_Friend) == 0x0002B8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Popup_Friend' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Recommend_Friend_Popup) == 0x0002C8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Recommend_Friend_Popup' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Setting_AvoidMathing) == 0x0002D8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Setting_AvoidMathing' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_PlayerSelectionMenu, SelectionMenu_Activity147_Invitation) == 0x0002E8, "Member 'UPyDataAsset_PlayerSelectionMenu::SelectionMenu_Activity147_Invitation' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_PlayerSelectionMenu;
 
 }
 

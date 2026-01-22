@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBirthDoor">();
+		STATIC_CLASS_IMPL("PyBirthDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBirthDoor")
 	}
 	static class APyBirthDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBirthDoor>();
 	}
 };
-static_assert(alignof(APyBirthDoor) == 0x000010, "Wrong alignment on APyBirthDoor");
-static_assert(sizeof(APyBirthDoor) == 0x000710, "Wrong size on APyBirthDoor");
-static_assert(offsetof(APyBirthDoor, BirthBase) == 0x0006F0, "Member 'APyBirthDoor::BirthBase' has a wrong offset!");
-static_assert(offsetof(APyBirthDoor, BattleSide) == 0x0006F8, "Member 'APyBirthDoor::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyBirthDoor, RebirthLoopEvent) == 0x000700, "Member 'APyBirthDoor::RebirthLoopEvent' has a wrong offset!");
-static_assert(offsetof(APyBirthDoor, BlockLoopEvent) == 0x000708, "Member 'APyBirthDoor::BlockLoopEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyBirthDoor;
 
 }
 

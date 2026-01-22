@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_DetailsView.PyWidget_League_DetailsView
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_League_DetailsView final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,18 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_DetailsView">();
+		STATIC_CLASS_IMPL("PyWidget_League_DetailsView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_DetailsView")
 	}
 	static class UPyWidget_League_DetailsView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_DetailsView>();
 	}
 };
-static_assert(alignof(UPyWidget_League_DetailsView) == 0x000008, "Wrong alignment on UPyWidget_League_DetailsView");
-static_assert(sizeof(UPyWidget_League_DetailsView) == 0x0005F8, "Wrong size on UPyWidget_League_DetailsView");
+DUMPER7_ASSERTS_UPyWidget_League_DetailsView;
 
 // PythonClass PyWidget_League_DetailsView.PyWidget_League_StagePageNode
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_StagePageNode final : public UPyMarvelUserWidget
 {
 public:
@@ -49,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_StagePageNode">();
+		STATIC_CLASS_IMPL("PyWidget_League_StagePageNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_StagePageNode")
 	}
 	static class UPyWidget_League_StagePageNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_StagePageNode>();
 	}
 };
-static_assert(alignof(UPyWidget_League_StagePageNode) == 0x000008, "Wrong alignment on UPyWidget_League_StagePageNode");
-static_assert(sizeof(UPyWidget_League_StagePageNode) == 0x0005C0, "Wrong size on UPyWidget_League_StagePageNode");
+DUMPER7_ASSERTS_UPyWidget_League_StagePageNode;
 
 }
 

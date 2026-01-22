@@ -18,33 +18,35 @@ namespace SDK
 {
 
 // PythonClass PyWidget_UltimateBar.PyWidget_UltimateBar
-// 0x0020 (0x05B0 - 0x0590)
+// 0x0020 (0x05B8 - 0x0598)
 class UPyWidget_UltimateBar final : public UWidget_UltimateBar
 {
 public:
-	struct FLinearColor                           AllyColor;                                         // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x05A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x05A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
 	void Destruct();
+	void OnVisibleChanged(bool bNewVisible);
 	void SetUltimateEnergyPercent(float percent);
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UltimateBar">();
+		STATIC_CLASS_IMPL("PyWidget_UltimateBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UltimateBar")
 	}
 	static class UPyWidget_UltimateBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UltimateBar>();
 	}
 };
-static_assert(alignof(UPyWidget_UltimateBar) == 0x000008, "Wrong alignment on UPyWidget_UltimateBar");
-static_assert(sizeof(UPyWidget_UltimateBar) == 0x0005B0, "Wrong size on UPyWidget_UltimateBar");
-static_assert(offsetof(UPyWidget_UltimateBar, AllyColor) == 0x000590, "Member 'UPyWidget_UltimateBar::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_UltimateBar, EnemyColor) == 0x0005A0, "Member 'UPyWidget_UltimateBar::EnemyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_UltimateBar;
 
 }
 

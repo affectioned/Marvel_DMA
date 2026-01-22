@@ -24,20 +24,16 @@ struct PyDoctorStrangeCharacter_BindOnLandAudioEvent final
 public:
 	int32                                         AudioID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoctorStrangeCharacter_BindOnLandAudioEvent) == 0x000004, "Wrong alignment on PyDoctorStrangeCharacter_BindOnLandAudioEvent");
-static_assert(sizeof(PyDoctorStrangeCharacter_BindOnLandAudioEvent) == 0x000004, "Wrong size on PyDoctorStrangeCharacter_BindOnLandAudioEvent");
-static_assert(offsetof(PyDoctorStrangeCharacter_BindOnLandAudioEvent, AudioID) == 0x000000, "Member 'PyDoctorStrangeCharacter_BindOnLandAudioEvent::AudioID' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoctorStrangeCharacter_BindOnLandAudioEvent;
 
 // PythonFunction PyDoctorStrangeCharacter.PyDoctorStrangeCharacter.OnLandedCallBack
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyDoctorStrangeCharacter_OnLandedCallBack final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyDoctorStrangeCharacter_OnLandedCallBack) == 0x000008, "Wrong alignment on PyDoctorStrangeCharacter_OnLandedCallBack");
-static_assert(sizeof(PyDoctorStrangeCharacter_OnLandedCallBack) == 0x0001F0, "Wrong size on PyDoctorStrangeCharacter_OnLandedCallBack");
-static_assert(offsetof(PyDoctorStrangeCharacter_OnLandedCallBack, Hit) == 0x000000, "Member 'PyDoctorStrangeCharacter_OnLandedCallBack::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoctorStrangeCharacter_OnLandedCallBack;
 
 // PythonFunction PyDoctorStrangeCharacter.PyDoctorStrangeChildActor.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyDoctorStrangeChildActor_OnGenericGameplayTagUpdate;
 
 }
 

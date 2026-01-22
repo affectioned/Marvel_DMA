@@ -23,15 +23,18 @@ class UAIMoveControl_10477102_C final : public UAIAbilityMoveControlLogic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_10477102_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_10477102_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_10477102_C")
 	}
 	static class UAIMoveControl_10477102_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_10477102_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_10477102_C) == 0x000008, "Wrong alignment on UAIMoveControl_10477102_C");
-static_assert(sizeof(UAIMoveControl_10477102_C) == 0x0000B8, "Wrong size on UAIMoveControl_10477102_C");
+DUMPER7_ASSERTS_UAIMoveControl_10477102_C;
 
 }
 

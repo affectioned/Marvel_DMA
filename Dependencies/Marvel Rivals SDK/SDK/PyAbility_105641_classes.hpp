@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Hero_1056_classes.hpp"
 
@@ -21,73 +21,57 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105641.PyConfig_105641
-// 0x03B0 (0x1BA0 - 0x17F0)
+// 0x0450 (0x1F90 - 0x1B40)
 class UPyConfig_105641 final : public UConfig_105641
 {
 public:
-	int32                                         TraceScopeID;                                      // 0x17F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PinMaxAngle;                                       // 0x17F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         KnockUpBuffID;                                     // 0x17F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PinBuffID;                                         // 0x17FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        PinLocOffsets;                                     // 0x1800(0x0010)(Edit, NativeAccessSpecifierPublic)
-	struct FMarvelApplyPinnedMotionConfig         PinnedConfig;                                      // 0x1810(0x0260)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PinnedTargetTag;                                   // 0x1A70(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PinnedEnemyTag1;                                   // 0x1A7C(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PinnedEnemyTag2;                                   // 0x1A88(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CollideBuffID;                                     // 0x1A94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CollideDamge;                                      // 0x1A98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeInterval;                                      // 0x1A9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableAddCurve;                                    // 0x1AA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AA1[0x3];                                     // 0x1AA1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AddEnergyPerSecond;                                // 0x1AA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            Velocity_Add_Curve;                                // 0x1AA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtraAddEnergyPerGrab;                             // 0x1AB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAmmoClipType                                 EnergyType;                                        // 0x1AB4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAmmoClipType                                 UIEnergyType;                                      // 0x1AB5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AB6[0x2];                                     // 0x1AB6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelGameplayTagRequirements         AddEnergyCondition;                                // 0x1AB8(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          bFasterReduceEnergy;                               // 0x1B88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B89[0x3];                                     // 0x1B89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         GrabingExtraEnergyReduce;                          // 0x1B8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenDebugDraw;                                     // 0x1B90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TraceScopeID;                                      // 0x1B40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PinMaxAngle;                                       // 0x1B44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         KnockUpBuffID;                                     // 0x1B48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PinBuffID;                                         // 0x1B4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        PinLocOffsets;                                     // 0x1B50(0x0010)(Edit, NativeAccessSpecifierPublic)
+	struct FMarvelApplyPinnedMotionConfig         PinnedConfig;                                      // 0x1B60(0x0260)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PinnedTargetTag;                                   // 0x1DC0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PinnedEnemyTag1;                                   // 0x1DCC(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PinnedEnemyTag2;                                   // 0x1DD8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CollideBuffID;                                     // 0x1DE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollideDamge;                                      // 0x1DE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DEC[0x4];                                     // 0x1DEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagQuery                      ShortPinCond;                                      // 0x1DF0(0x0048)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         ShortPinTime;                                      // 0x1E38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeInterval;                                      // 0x1E3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableAddCurve;                                    // 0x1E40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E41[0x3];                                     // 0x1E41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AddEnergyPerSecond;                                // 0x1E44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            Velocity_Add_Curve;                                // 0x1E48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtraAddEnergyPerGrab;                             // 0x1E50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAmmoClipType                                 EnergyType;                                        // 0x1E54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAmmoClipType                                 UIEnergyType;                                      // 0x1E55(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E56[0x2];                                     // 0x1E56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelGameplayTagRequirements         AddEnergyCondition;                                // 0x1E58(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bFasterReduceEnergy;                               // 0x1F78(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F79[0x3];                                     // 0x1F79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         GrabingExtraEnergyReduce;                          // 0x1F7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenDebugDraw;                                     // 0x1F80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105641">();
+		STATIC_CLASS_IMPL("PyConfig_105641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105641")
 	}
 	static class UPyConfig_105641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105641>();
 	}
 };
-static_assert(alignof(UPyConfig_105641) == 0x000010, "Wrong alignment on UPyConfig_105641");
-static_assert(sizeof(UPyConfig_105641) == 0x001BA0, "Wrong size on UPyConfig_105641");
-static_assert(offsetof(UPyConfig_105641, TraceScopeID) == 0x0017F0, "Member 'UPyConfig_105641::TraceScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinMaxAngle) == 0x0017F4, "Member 'UPyConfig_105641::PinMaxAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, KnockUpBuffID) == 0x0017F8, "Member 'UPyConfig_105641::KnockUpBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinBuffID) == 0x0017FC, "Member 'UPyConfig_105641::PinBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinLocOffsets) == 0x001800, "Member 'UPyConfig_105641::PinLocOffsets' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinnedConfig) == 0x001810, "Member 'UPyConfig_105641::PinnedConfig' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinnedTargetTag) == 0x001A70, "Member 'UPyConfig_105641::PinnedTargetTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinnedEnemyTag1) == 0x001A7C, "Member 'UPyConfig_105641::PinnedEnemyTag1' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, PinnedEnemyTag2) == 0x001A88, "Member 'UPyConfig_105641::PinnedEnemyTag2' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, CollideBuffID) == 0x001A94, "Member 'UPyConfig_105641::CollideBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, CollideDamge) == 0x001A98, "Member 'UPyConfig_105641::CollideDamge' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, TimeInterval) == 0x001A9C, "Member 'UPyConfig_105641::TimeInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, EnableAddCurve) == 0x001AA0, "Member 'UPyConfig_105641::EnableAddCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, AddEnergyPerSecond) == 0x001AA4, "Member 'UPyConfig_105641::AddEnergyPerSecond' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, Velocity_Add_Curve) == 0x001AA8, "Member 'UPyConfig_105641::Velocity_Add_Curve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, ExtraAddEnergyPerGrab) == 0x001AB0, "Member 'UPyConfig_105641::ExtraAddEnergyPerGrab' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, EnergyType) == 0x001AB4, "Member 'UPyConfig_105641::EnergyType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, UIEnergyType) == 0x001AB5, "Member 'UPyConfig_105641::UIEnergyType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, AddEnergyCondition) == 0x001AB8, "Member 'UPyConfig_105641::AddEnergyCondition' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, bFasterReduceEnergy) == 0x001B88, "Member 'UPyConfig_105641::bFasterReduceEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, GrabingExtraEnergyReduce) == 0x001B8C, "Member 'UPyConfig_105641::GrabingExtraEnergyReduce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105641, OpenDebugDraw) == 0x001B90, "Member 'UPyConfig_105641::OpenDebugDraw' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105641;
 
 // PythonClass PyAbility_105641.PyAbility_105641
-// 0x0000 (0x2CC8 - 0x2CC8)
+// 0x0000 (0x2D18 - 0x2D18)
 class UPyAbility_105641 : public UAbility_105641
 {
 public:
@@ -114,26 +98,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105641">();
+		STATIC_CLASS_IMPL("PyAbility_105641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105641")
 	}
 	static class UPyAbility_105641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105641>();
 	}
 };
-static_assert(alignof(UPyAbility_105641) == 0x000008, "Wrong alignment on UPyAbility_105641");
-static_assert(sizeof(UPyAbility_105641) == 0x002CC8, "Wrong size on UPyAbility_105641");
+DUMPER7_ASSERTS_UPyAbility_105641;
 
 // PythonClass PyAbility_105641.PyCue_Ability_Loop_10564101
-// 0x0030 (0x11E0 - 0x11B0)
+// 0x0030 (0x11F0 - 0x11C0)
 class APyCue_Ability_Loop_10564101 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FGameplayTag                           PinnedEnemyTag1;                                   // 0x11B0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PinnedEnemyTag2;                                   // 0x11BC(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PinnedEnemyAudio1;                                 // 0x11C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PinnedEnemyAudio2;                                 // 0x11CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULegacyCameraShake>         GrabCameraShake;                                   // 0x11D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PinnedEnemyTag1;                                   // 0x11C0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PinnedEnemyTag2;                                   // 0x11CC(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PinnedEnemyAudio1;                                 // 0x11D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PinnedEnemyAudio2;                                 // 0x11DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULegacyCameraShake>         GrabCameraShake;                                   // 0x11E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -143,29 +130,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10564101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10564101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10564101")
 	}
 	static class APyCue_Ability_Loop_10564101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10564101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10564101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10564101");
-static_assert(sizeof(APyCue_Ability_Loop_10564101) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_10564101");
-static_assert(offsetof(APyCue_Ability_Loop_10564101, PinnedEnemyTag1) == 0x0011B0, "Member 'APyCue_Ability_Loop_10564101::PinnedEnemyTag1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10564101, PinnedEnemyTag2) == 0x0011BC, "Member 'APyCue_Ability_Loop_10564101::PinnedEnemyTag2' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10564101, PinnedEnemyAudio1) == 0x0011C8, "Member 'APyCue_Ability_Loop_10564101::PinnedEnemyAudio1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10564101, PinnedEnemyAudio2) == 0x0011CC, "Member 'APyCue_Ability_Loop_10564101::PinnedEnemyAudio2' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10564101, GrabCameraShake) == 0x0011D0, "Member 'APyCue_Ability_Loop_10564101::GrabCameraShake' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10564101;
 
 // PythonClass PyAbility_105641.PyUIController_105641
-// 0x0070 (0x0F80 - 0x0F10)
+// 0x0070 (0x1260 - 0x11F0)
 class UPyUIController_105641 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTagContainer                  SpeedUpStateTags;                                  // 0x0F10(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         DefaultSmoothSpeed;                                // 0x0F78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NewSmoothSpeed;                                    // 0x0F7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SpeedUpStateTags;                                  // 0x11F0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         DefaultSmoothSpeed;                                // 0x1258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewSmoothSpeed;                                    // 0x125C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -175,21 +160,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_105641">();
+		STATIC_CLASS_IMPL("PyUIController_105641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_105641")
 	}
 	static class UPyUIController_105641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_105641>();
 	}
 };
-static_assert(alignof(UPyUIController_105641) == 0x000008, "Wrong alignment on UPyUIController_105641");
-static_assert(sizeof(UPyUIController_105641) == 0x000F80, "Wrong size on UPyUIController_105641");
-static_assert(offsetof(UPyUIController_105641, SpeedUpStateTags) == 0x000F10, "Member 'UPyUIController_105641::SpeedUpStateTags' has a wrong offset!");
-static_assert(offsetof(UPyUIController_105641, DefaultSmoothSpeed) == 0x000F78, "Member 'UPyUIController_105641::DefaultSmoothSpeed' has a wrong offset!");
-static_assert(offsetof(UPyUIController_105641, NewSmoothSpeed) == 0x000F7C, "Member 'UPyUIController_105641::NewSmoothSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_105641;
 
 // PythonClass PyAbility_105641.PyKnockUpAbility_10564102
-// 0x0000 (0x2038 - 0x2038)
+// 0x0000 (0x2388 - 0x2388)
 class UPyKnockUpAbility_10564102 : public UMarvelKnockUpAbility
 {
 public:
@@ -201,15 +186,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKnockUpAbility_10564102">();
+		STATIC_CLASS_IMPL("PyKnockUpAbility_10564102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKnockUpAbility_10564102")
 	}
 	static class UPyKnockUpAbility_10564102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKnockUpAbility_10564102>();
 	}
 };
-static_assert(alignof(UPyKnockUpAbility_10564102) == 0x000008, "Wrong alignment on UPyKnockUpAbility_10564102");
-static_assert(sizeof(UPyKnockUpAbility_10564102) == 0x002038, "Wrong size on UPyKnockUpAbility_10564102");
+DUMPER7_ASSERTS_UPyKnockUpAbility_10564102;
 
 }
 

@@ -32,37 +32,39 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Common_RollTextItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Common_RollTextItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Common_RollTextItem")
 	}
 	static class UPyWidget_BattlePass_Common_RollTextItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Common_RollTextItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Common_RollTextItem) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Common_RollTextItem");
-static_assert(sizeof(UPyWidget_BattlePass_Common_RollTextItem) == 0x0003C8, "Wrong size on UPyWidget_BattlePass_Common_RollTextItem");
-static_assert(offsetof(UPyWidget_BattlePass_Common_RollTextItem, OnRollAnimFinished) == 0x0003B8, "Member 'UPyWidget_BattlePass_Common_RollTextItem::OnRollAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Common_RollTextItem;
 
 // PythonClass PyWidget_Common_RollText.PyWidget_Common_RollText
-// 0x00D8 (0x0640 - 0x0568)
+// 0x00D8 (0x0648 - 0x0570)
 class UPyWidget_Common_RollText final : public UMarvelUserWidget
 {
 public:
-	struct FSlateColor                            TextColor;                                         // 0x0568(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_57C[0x4];                                      // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         RollFont;                                          // 0x0580(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                FontPadding;                                       // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                CullPadding;                                       // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         PreviewNum;                                        // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                NumItem;                                           // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                LtalicNumItem;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                NewNumItem;                                        // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseLtalicNum;                                     // 0x0628(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseAnimUpdate;                                    // 0x0629(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_62A[0x2];                                      // 0x062A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RollTime;                                          // 0x062C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnRollAnimFinish;                                  // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor;                                         // 0x0570(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_584[0x4];                                      // 0x0584(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         RollFont;                                          // 0x0588(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                FontPadding;                                       // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                CullPadding;                                       // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         PreviewNum;                                        // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                NumItem;                                           // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                LtalicNumItem;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                NewNumItem;                                        // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseLtalicNum;                                     // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseAnimUpdate;                                    // 0x0631(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_632[0x2];                                      // 0x0632(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RollTime;                                          // 0x0634(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnRollAnimFinish;                                  // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -72,27 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_RollText">();
+		STATIC_CLASS_IMPL("PyWidget_Common_RollText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_RollText")
 	}
 	static class UPyWidget_Common_RollText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_RollText>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_RollText) == 0x000008, "Wrong alignment on UPyWidget_Common_RollText");
-static_assert(sizeof(UPyWidget_Common_RollText) == 0x000640, "Wrong size on UPyWidget_Common_RollText");
-static_assert(offsetof(UPyWidget_Common_RollText, TextColor) == 0x000568, "Member 'UPyWidget_Common_RollText::TextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, RollFont) == 0x000580, "Member 'UPyWidget_Common_RollText::RollFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, FontPadding) == 0x0005E8, "Member 'UPyWidget_Common_RollText::FontPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, CullPadding) == 0x0005F8, "Member 'UPyWidget_Common_RollText::CullPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, PreviewNum) == 0x000608, "Member 'UPyWidget_Common_RollText::PreviewNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, NumItem) == 0x000610, "Member 'UPyWidget_Common_RollText::NumItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, LtalicNumItem) == 0x000618, "Member 'UPyWidget_Common_RollText::LtalicNumItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, NewNumItem) == 0x000620, "Member 'UPyWidget_Common_RollText::NewNumItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, bUseLtalicNum) == 0x000628, "Member 'UPyWidget_Common_RollText::bUseLtalicNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, bUseAnimUpdate) == 0x000629, "Member 'UPyWidget_Common_RollText::bUseAnimUpdate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, RollTime) == 0x00062C, "Member 'UPyWidget_Common_RollText::RollTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RollText, OnRollAnimFinish) == 0x000630, "Member 'UPyWidget_Common_RollText::OnRollAnimFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_RollText;
 
 }
 

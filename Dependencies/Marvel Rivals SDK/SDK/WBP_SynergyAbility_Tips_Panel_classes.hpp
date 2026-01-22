@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SynergyAbility_Tips_Panel.WBP_SynergyAbility_Tips_Panel_C
-// 0x0008 (0x0588 - 0x0580)
+// 0x0008 (0x0590 - 0x0588)
 class UWBP_SynergyAbility_Tips_Panel_C final : public UPyWidget_SynergyAbilityTipsPanel
 {
 public:
-	class UCanvasPanel*                           Canvas_Panel;                                      // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Panel;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SynergyAbility_Tips_Panel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SynergyAbility_Tips_Panel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SynergyAbility_Tips_Panel_C")
 	}
 	static class UWBP_SynergyAbility_Tips_Panel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SynergyAbility_Tips_Panel_C>();
 	}
 };
-static_assert(alignof(UWBP_SynergyAbility_Tips_Panel_C) == 0x000008, "Wrong alignment on UWBP_SynergyAbility_Tips_Panel_C");
-static_assert(sizeof(UWBP_SynergyAbility_Tips_Panel_C) == 0x000588, "Wrong size on UWBP_SynergyAbility_Tips_Panel_C");
-static_assert(offsetof(UWBP_SynergyAbility_Tips_Panel_C, Canvas_Panel) == 0x000580, "Member 'UWBP_SynergyAbility_Tips_Panel_C::Canvas_Panel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SynergyAbility_Tips_Panel_C;
 
 }
 

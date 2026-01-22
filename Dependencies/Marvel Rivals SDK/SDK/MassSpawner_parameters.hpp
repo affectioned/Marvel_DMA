@@ -21,9 +21,7 @@ struct MassSpawner_ScaleSpawningCount final
 public:
 	float                                         Scale;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSpawner_ScaleSpawningCount) == 0x000004, "Wrong alignment on MassSpawner_ScaleSpawningCount");
-static_assert(sizeof(MassSpawner_ScaleSpawningCount) == 0x000004, "Wrong size on MassSpawner_ScaleSpawningCount");
-static_assert(offsetof(MassSpawner_ScaleSpawningCount, Scale) == 0x000000, "Member 'MassSpawner_ScaleSpawningCount::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_MassSpawner_ScaleSpawningCount;
 
 // Function MassSpawner.MassSpawner.GetCount
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct MassSpawner_GetCount final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSpawner_GetCount) == 0x000004, "Wrong alignment on MassSpawner_GetCount");
-static_assert(sizeof(MassSpawner_GetCount) == 0x000004, "Wrong size on MassSpawner_GetCount");
-static_assert(offsetof(MassSpawner_GetCount, ReturnValue) == 0x000000, "Member 'MassSpawner_GetCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MassSpawner_GetCount;
 
 // Function MassSpawner.MassSpawner.GetSpawningCountScale
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct MassSpawner_GetSpawningCountScale final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSpawner_GetSpawningCountScale) == 0x000004, "Wrong alignment on MassSpawner_GetSpawningCountScale");
-static_assert(sizeof(MassSpawner_GetSpawningCountScale) == 0x000004, "Wrong size on MassSpawner_GetSpawningCountScale");
-static_assert(offsetof(MassSpawner_GetSpawningCountScale, ReturnValue) == 0x000000, "Member 'MassSpawner_GetSpawningCountScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MassSpawner_GetSpawningCountScale;
 
 }
 

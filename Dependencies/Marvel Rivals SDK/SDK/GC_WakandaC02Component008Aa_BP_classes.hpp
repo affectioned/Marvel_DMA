@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_WakandaC02Component008Aa_BP_C">();
+		BP_STATIC_CLASS_IMPL("GC_WakandaC02Component008Aa_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_WakandaC02Component008Aa_BP_C")
 	}
 	static class AGC_WakandaC02Component008Aa_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_WakandaC02Component008Aa_BP_C>();
 	}
 };
-static_assert(alignof(AGC_WakandaC02Component008Aa_BP_C) == 0x000010, "Wrong alignment on AGC_WakandaC02Component008Aa_BP_C");
-static_assert(sizeof(AGC_WakandaC02Component008Aa_BP_C) == 0x001070, "Wrong size on AGC_WakandaC02Component008Aa_BP_C");
-static_assert(offsetof(AGC_WakandaC02Component008Aa_BP_C, MainMSField) == 0x001060, "Member 'AGC_WakandaC02Component008Aa_BP_C::MainMSField' has a wrong offset!");
+DUMPER7_ASSERTS_AGC_WakandaC02Component008Aa_BP_C;
 
 }
 

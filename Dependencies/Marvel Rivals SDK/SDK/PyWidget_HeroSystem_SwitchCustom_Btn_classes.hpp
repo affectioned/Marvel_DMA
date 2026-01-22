@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_SwitchCustom_Btn.PyWidget_HeroSystem_SwitchCustom_Btn
-// 0x0010 (0x08D0 - 0x08C0)
+// 0x0010 (0x0930 - 0x0920)
 class UPyWidget_HeroSystem_SwitchCustom_Btn final : public UPyWidget_BaseCommonButton
 {
 public:
-	class UTexture2D*                             UnlockIconTexture;                                 // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NormalIconTexture;                                 // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             UnlockIconTexture;                                 // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NormalIconTexture;                                 // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_SwitchCustom_Btn">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_SwitchCustom_Btn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_SwitchCustom_Btn")
 	}
 	static class UPyWidget_HeroSystem_SwitchCustom_Btn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_SwitchCustom_Btn>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_SwitchCustom_Btn) == 0x000010, "Wrong alignment on UPyWidget_HeroSystem_SwitchCustom_Btn");
-static_assert(sizeof(UPyWidget_HeroSystem_SwitchCustom_Btn) == 0x0008D0, "Wrong size on UPyWidget_HeroSystem_SwitchCustom_Btn");
-static_assert(offsetof(UPyWidget_HeroSystem_SwitchCustom_Btn, UnlockIconTexture) == 0x0008B8, "Member 'UPyWidget_HeroSystem_SwitchCustom_Btn::UnlockIconTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SwitchCustom_Btn, NormalIconTexture) == 0x0008C0, "Member 'UPyWidget_HeroSystem_SwitchCustom_Btn::NormalIconTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_SwitchCustom_Btn;
 
 }
 

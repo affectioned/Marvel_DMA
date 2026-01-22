@@ -21,9 +21,7 @@ struct PyAbility_101441_CanActiveCameraInterp final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101441_CanActiveCameraInterp) == 0x000001, "Wrong alignment on PyAbility_101441_CanActiveCameraInterp");
-static_assert(sizeof(PyAbility_101441_CanActiveCameraInterp) == 0x000001, "Wrong size on PyAbility_101441_CanActiveCameraInterp");
-static_assert(offsetof(PyAbility_101441_CanActiveCameraInterp, ReturnValue) == 0x000000, "Member 'PyAbility_101441_CanActiveCameraInterp::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101441_CanActiveCameraInterp;
 
 // PythonFunction PyAbility_101441.PyAbility_101441.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_101441_K2_OnEndAbility final
 public:
 	bool                                          Cancel;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101441_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101441_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101441_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101441_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101441_K2_OnEndAbility, Cancel) == 0x000000, "Member 'PyAbility_101441_K2_OnEndAbility::Cancel' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101441_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101441.PyAbility_101441.GetCurrentTimelineIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_101441_GetCurrentTimelineIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101441_GetCurrentTimelineIndex) == 0x000004, "Wrong alignment on PyAbility_101441_GetCurrentTimelineIndex");
-static_assert(sizeof(PyAbility_101441_GetCurrentTimelineIndex) == 0x000004, "Wrong size on PyAbility_101441_GetCurrentTimelineIndex");
-static_assert(offsetof(PyAbility_101441_GetCurrentTimelineIndex, ReturnValue) == 0x000000, "Member 'PyAbility_101441_GetCurrentTimelineIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101441_GetCurrentTimelineIndex;
 
 // PythonFunction PyAbility_101441.PyAbility_101441.GetCurrentMontageToPlay
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyAbility_101441_GetCurrentMontageToPlay final
 public:
 	class UAnimMontage*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101441_GetCurrentMontageToPlay) == 0x000008, "Wrong alignment on PyAbility_101441_GetCurrentMontageToPlay");
-static_assert(sizeof(PyAbility_101441_GetCurrentMontageToPlay) == 0x000008, "Wrong size on PyAbility_101441_GetCurrentMontageToPlay");
-static_assert(offsetof(PyAbility_101441_GetCurrentMontageToPlay, ReturnValue) == 0x000000, "Member 'PyAbility_101441_GetCurrentMontageToPlay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101441_GetCurrentMontageToPlay;
 
 }
 

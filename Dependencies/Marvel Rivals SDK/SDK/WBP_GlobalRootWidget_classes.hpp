@@ -17,43 +17,36 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GlobalRootWidget.WBP_GlobalRootWidget_C
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UWBP_GlobalRootWidget_C final : public UPyGlobalRootWidget
 {
 public:
-	class ULazyWidget*                            Lazy_Activity151_CrackLoading_VX;                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_AntiCheat;                                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_CrackLoading_VX;                              // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_MatchSuccess_VX;                              // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_Popup_Loading;                                // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_Tips;                                         // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_VoicePanel;                                   // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_92;                                    // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Panel_Transition;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_LoadingPanelContainer_C*           WBP_LoadingPanelContainer;                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_Activity151_CrackLoading_VX;                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_AntiCheat;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_CrackLoading_VX;                              // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_MatchSuccess_VX;                              // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_Popup_Loading;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_Tips;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_VoicePanel;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_92;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Panel_Transition;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_LoadingPanelContainer_C*           WBP_LoadingPanelContainer;                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GlobalRootWidget_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GlobalRootWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GlobalRootWidget_C")
 	}
 	static class UWBP_GlobalRootWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GlobalRootWidget_C>();
 	}
 };
-static_assert(alignof(UWBP_GlobalRootWidget_C) == 0x000008, "Wrong alignment on UWBP_GlobalRootWidget_C");
-static_assert(sizeof(UWBP_GlobalRootWidget_C) == 0x000610, "Wrong size on UWBP_GlobalRootWidget_C");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_Activity151_CrackLoading_VX) == 0x0005C0, "Member 'UWBP_GlobalRootWidget_C::Lazy_Activity151_CrackLoading_VX' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_AntiCheat) == 0x0005C8, "Member 'UWBP_GlobalRootWidget_C::Lazy_AntiCheat' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_CrackLoading_VX) == 0x0005D0, "Member 'UWBP_GlobalRootWidget_C::Lazy_CrackLoading_VX' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_MatchSuccess_VX) == 0x0005D8, "Member 'UWBP_GlobalRootWidget_C::Lazy_MatchSuccess_VX' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_Popup_Loading) == 0x0005E0, "Member 'UWBP_GlobalRootWidget_C::Lazy_Popup_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_Tips) == 0x0005E8, "Member 'UWBP_GlobalRootWidget_C::Lazy_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Lazy_VoicePanel) == 0x0005F0, "Member 'UWBP_GlobalRootWidget_C::Lazy_VoicePanel' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, MarvelImage_92) == 0x0005F8, "Member 'UWBP_GlobalRootWidget_C::MarvelImage_92' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, Panel_Transition) == 0x000600, "Member 'UWBP_GlobalRootWidget_C::Panel_Transition' has a wrong offset!");
-static_assert(offsetof(UWBP_GlobalRootWidget_C, WBP_LoadingPanelContainer) == 0x000608, "Member 'UWBP_GlobalRootWidget_C::WBP_LoadingPanelContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GlobalRootWidget_C;
 
 }
 

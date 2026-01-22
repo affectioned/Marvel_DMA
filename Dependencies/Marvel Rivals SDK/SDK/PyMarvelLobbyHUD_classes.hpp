@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLobbyAudioComponent">();
+		STATIC_CLASS_IMPL("PyLobbyAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLobbyAudioComponent")
 	}
 	static class UPyLobbyAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLobbyAudioComponent>();
 	}
 };
-static_assert(alignof(UPyLobbyAudioComponent) == 0x000008, "Wrong alignment on UPyLobbyAudioComponent");
-static_assert(sizeof(UPyLobbyAudioComponent) == 0x000138, "Wrong size on UPyLobbyAudioComponent");
-static_assert(offsetof(UPyLobbyAudioComponent, MusicItem_Login) == 0x000108, "Member 'UPyLobbyAudioComponent::MusicItem_Login' has a wrong offset!");
-static_assert(offsetof(UPyLobbyAudioComponent, MusicItem_Login2LobbyVideo) == 0x000110, "Member 'UPyLobbyAudioComponent::MusicItem_Login2LobbyVideo' has a wrong offset!");
-static_assert(offsetof(UPyLobbyAudioComponent, MusicItem_Main) == 0x000118, "Member 'UPyLobbyAudioComponent::MusicItem_Main' has a wrong offset!");
-static_assert(offsetof(UPyLobbyAudioComponent, MusicItem_InSquad) == 0x000120, "Member 'UPyLobbyAudioComponent::MusicItem_InSquad' has a wrong offset!");
-static_assert(offsetof(UPyLobbyAudioComponent, MusicItem_Matching) == 0x000128, "Member 'UPyLobbyAudioComponent::MusicItem_Matching' has a wrong offset!");
-static_assert(offsetof(UPyLobbyAudioComponent, AkEvent_BackgroundMain) == 0x000130, "Member 'UPyLobbyAudioComponent::AkEvent_BackgroundMain' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLobbyAudioComponent;
 
 // PythonClass PyMarvelLobbyHUD.PyMarvelLobbyHUD
 // 0x0000 (0x0950 - 0x0950)
@@ -65,7 +62,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelLobbyHUD">();
+		STATIC_CLASS_IMPL("PyMarvelLobbyHUD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelLobbyHUD")
 	}
 	static class APyMarvelLobbyHUD* GetDefaultObj()
 	{
@@ -73,8 +74,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyMarvelLobbyHUD) == 0x000010, "Wrong alignment on APyMarvelLobbyHUD");
-static_assert(sizeof(APyMarvelLobbyHUD) == 0x000950, "Wrong size on APyMarvelLobbyHUD");
+DUMPER7_ASSERTS_APyMarvelLobbyHUD;
 
 }
 

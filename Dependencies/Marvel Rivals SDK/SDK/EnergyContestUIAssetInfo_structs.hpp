@@ -38,24 +38,7 @@ public:
 	class UTexture2D*                             PointPillageIconC_130_43E325724BD9C89651D78A84297EA8D9; // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             ResourceIcon_133_591DFE32442016A0A8232489777C1C74; // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FEnergyContestUIAssetInfo) == 0x000008, "Wrong alignment on FEnergyContestUIAssetInfo");
-static_assert(sizeof(FEnergyContestUIAssetInfo) == 0x0000F0, "Wrong size on FEnergyContestUIAssetInfo");
-static_assert(offsetof(FEnergyContestUIAssetInfo, MapID_45_7B74F18647FCC4B4025B0E85B2878AE8) == 0x000000, "Member 'FEnergyContestUIAssetInfo::MapID_45_7B74F18647FCC4B4025B0E85B2878AE8' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, LevelName_76_A266601D484A018157B4E9A1EBBE81E4) == 0x000008, "Member 'FEnergyContestUIAssetInfo::LevelName_76_A266601D484A018157B4E9A1EBBE81E4' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, Delivery_79_4DBC31CB46877C193B37F1BFBCD318F5) == 0x000020, "Member 'FEnergyContestUIAssetInfo::Delivery_79_4DBC31CB46877C193B37F1BFBCD318F5' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, BaseComment_101_DCB7C3CB4813039E2AAE91BCD8E4B107) == 0x000028, "Member 'FEnergyContestUIAssetInfo::BaseComment_101_DCB7C3CB4813039E2AAE91BCD8E4B107' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, MapBG_89_FC382C4E41255029627A52B886C4F153) == 0x000038, "Member 'FEnergyContestUIAssetInfo::MapBG_89_FC382C4E41255029627A52B886C4F153' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointNameA_110_F599F74F48A96D0FA67CB4AC78715947) == 0x000068, "Member 'FEnergyContestUIAssetInfo::PointNameA_110_F599F74F48A96D0FA67CB4AC78715947' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointNameB_113_8287ACA64268BFD93CC522B7F57EEE57) == 0x000080, "Member 'FEnergyContestUIAssetInfo::PointNameB_113_8287ACA64268BFD93CC522B7F57EEE57' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointNameC_114_441F457E4024B24B754EC8BD11FCE421) == 0x000098, "Member 'FEnergyContestUIAssetInfo::PointNameC_114_441F457E4024B24B754EC8BD11FCE421' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, DisplayDuration_117_35837FC942385E533E1FED964D822FA4) == 0x0000B0, "Member 'FEnergyContestUIAssetInfo::DisplayDuration_117_35837FC942385E533E1FED964D822FA4' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointIconA_120_34AE085645D141E52E2382BB5D7D692F) == 0x0000B8, "Member 'FEnergyContestUIAssetInfo::PointIconA_120_34AE085645D141E52E2382BB5D7D692F' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointIconB_122_10050BF64DDCFD2BFC89DF9FFEC41D14) == 0x0000C0, "Member 'FEnergyContestUIAssetInfo::PointIconB_122_10050BF64DDCFD2BFC89DF9FFEC41D14' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointIconC_124_A33ECFCF498D8A2C780E99BE68DF20D7) == 0x0000C8, "Member 'FEnergyContestUIAssetInfo::PointIconC_124_A33ECFCF498D8A2C780E99BE68DF20D7' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointPillageIconA_126_E2262A934621D62A59CF49A03349F327) == 0x0000D0, "Member 'FEnergyContestUIAssetInfo::PointPillageIconA_126_E2262A934621D62A59CF49A03349F327' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointPillageIconB_128_1A76C2AC4854F12E51F8CDA266324521) == 0x0000D8, "Member 'FEnergyContestUIAssetInfo::PointPillageIconB_128_1A76C2AC4854F12E51F8CDA266324521' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, PointPillageIconC_130_43E325724BD9C89651D78A84297EA8D9) == 0x0000E0, "Member 'FEnergyContestUIAssetInfo::PointPillageIconC_130_43E325724BD9C89651D78A84297EA8D9' has a wrong offset!");
-static_assert(offsetof(FEnergyContestUIAssetInfo, ResourceIcon_133_591DFE32442016A0A8232489777C1C74) == 0x0000E8, "Member 'FEnergyContestUIAssetInfo::ResourceIcon_133_591DFE32442016A0A8232489777C1C74' has a wrong offset!");
+DUMPER7_ASSERTS_FEnergyContestUIAssetInfo;
 
 }
 

@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelPartStatistics">();
+		STATIC_CLASS_IMPL("PyLevelPartStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelPartStatistics")
 	}
 	static class UPyLevelPartStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelPartStatistics>();
 	}
 };
-static_assert(alignof(UPyLevelPartStatistics) == 0x000008, "Wrong alignment on UPyLevelPartStatistics");
-static_assert(sizeof(UPyLevelPartStatistics) == 0x000038, "Wrong size on UPyLevelPartStatistics");
-static_assert(offsetof(UPyLevelPartStatistics, OnwerStatistics) == 0x000030, "Member 'UPyLevelPartStatistics::OnwerStatistics' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelPartStatistics;
 
 }
 

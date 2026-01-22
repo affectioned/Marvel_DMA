@@ -23,15 +23,18 @@ class UPyBenchmarkRuleControlComponent final : public UPyLevelRuleControlCompone
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBenchmarkRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyBenchmarkRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBenchmarkRuleControlComponent")
 	}
 	static class UPyBenchmarkRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBenchmarkRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyBenchmarkRuleControlComponent) == 0x000008, "Wrong alignment on UPyBenchmarkRuleControlComponent");
-static_assert(sizeof(UPyBenchmarkRuleControlComponent) == 0x000208, "Wrong size on UPyBenchmarkRuleControlComponent");
+DUMPER7_ASSERTS_UPyBenchmarkRuleControlComponent;
 
 }
 

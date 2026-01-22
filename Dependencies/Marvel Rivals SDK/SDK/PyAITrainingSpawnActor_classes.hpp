@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "PyAITrainBaseSpawnActor_classes.hpp"
 
 
@@ -46,30 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAITrainingSpawnActor">();
+		STATIC_CLASS_IMPL("PyAITrainingSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAITrainingSpawnActor")
 	}
 	static class APyAITrainingSpawnActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAITrainingSpawnActor>();
 	}
 };
-static_assert(alignof(APyAITrainingSpawnActor) == 0x000010, "Wrong alignment on APyAITrainingSpawnActor");
-static_assert(sizeof(APyAITrainingSpawnActor) == 0x000800, "Wrong size on APyAITrainingSpawnActor");
-static_assert(offsetof(APyAITrainingSpawnActor, HeroID) == 0x00075C, "Member 'APyAITrainingSpawnActor::HeroID' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, NeedFly) == 0x000760, "Member 'APyAITrainingSpawnActor::NeedFly' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, StartWayPoint) == 0x000768, "Member 'APyAITrainingSpawnActor::StartWayPoint' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, Camp) == 0x000770, "Member 'APyAITrainingSpawnActor::Camp' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, ReliveTime) == 0x000774, "Member 'APyAITrainingSpawnActor::ReliveTime' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, CanAttack) == 0x000778, "Member 'APyAITrainingSpawnActor::CanAttack' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, AttackAction) == 0x000779, "Member 'APyAITrainingSpawnActor::AttackAction' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, AttackDuration) == 0x00077C, "Member 'APyAITrainingSpawnActor::AttackDuration' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, CooldownDuration) == 0x000780, "Member 'APyAITrainingSpawnActor::CooldownDuration' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, DamageFactor) == 0x000784, "Member 'APyAITrainingSpawnActor::DamageFactor' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, NeedGoBack) == 0x000788, "Member 'APyAITrainingSpawnActor::NeedGoBack' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, GoBackTriggerTime) == 0x00078C, "Member 'APyAITrainingSpawnActor::GoBackTriggerTime' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, GoBackLimitTime) == 0x000790, "Member 'APyAITrainingSpawnActor::GoBackLimitTime' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, DynamicReborn) == 0x000794, "Member 'APyAITrainingSpawnActor::DynamicReborn' has a wrong offset!");
-static_assert(offsetof(APyAITrainingSpawnActor, AIASCTags) == 0x000798, "Member 'APyAITrainingSpawnActor::AIASCTags' has a wrong offset!");
+DUMPER7_ASSERTS_APyAITrainingSpawnActor;
 
 }
 

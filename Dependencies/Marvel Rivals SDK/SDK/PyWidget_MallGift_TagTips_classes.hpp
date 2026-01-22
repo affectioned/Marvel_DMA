@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallGift_TagTips.PyWidget_MallGift_TagTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_MallGift_TagTips final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_TagTips">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_TagTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_TagTips")
 	}
 	static class UPyWidget_MallGift_TagTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_TagTips>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_TagTips) == 0x000008, "Wrong alignment on UPyWidget_MallGift_TagTips");
-static_assert(sizeof(UPyWidget_MallGift_TagTips) == 0x0005C0, "Wrong size on UPyWidget_MallGift_TagTips");
+DUMPER7_ASSERTS_UPyWidget_MallGift_TagTips;
 
 }
 

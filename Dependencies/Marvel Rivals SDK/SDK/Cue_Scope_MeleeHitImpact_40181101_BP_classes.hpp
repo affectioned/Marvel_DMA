@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Scope_MeleeHitImpact_40181101_BP.Cue_Scope_MeleeHitImpact_40181101_BP_C
-// 0x0000 (0x0878 - 0x0878)
+// 0x0000 (0x08B8 - 0x08B8)
 class UCue_Scope_MeleeHitImpact_40181101_BP_C final : public UMarvelCueNotify_MeleeHitImpact
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Scope_MeleeHitImpact_40181101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Scope_MeleeHitImpact_40181101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Scope_MeleeHitImpact_40181101_BP_C")
 	}
 	static class UCue_Scope_MeleeHitImpact_40181101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_Scope_MeleeHitImpact_40181101_BP_C>();
 	}
 };
-static_assert(alignof(UCue_Scope_MeleeHitImpact_40181101_BP_C) == 0x000008, "Wrong alignment on UCue_Scope_MeleeHitImpact_40181101_BP_C");
-static_assert(sizeof(UCue_Scope_MeleeHitImpact_40181101_BP_C) == 0x000878, "Wrong size on UCue_Scope_MeleeHitImpact_40181101_BP_C");
+DUMPER7_ASSERTS_UCue_Scope_MeleeHitImpact_40181101_BP_C;
 
 }
 

@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_Prompt.WBP_Common_Prompt_C
-// 0x0020 (0x0930 - 0x0910)
+// 0x0020 (0x0940 - 0x0920)
 class UWBP_Common_Prompt_C final : public UPyWidget_Common_Prompt
 {
 public:
-	class UMarvelImage*                           Img_Prompt_Arrow;                                  // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Prompt_bg;                                     // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Prompt;                                    // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_bg;                                        // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Prompt;                                       // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Prompt_Arrow;                                  // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Prompt_bg;                                     // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Prompt;                                    // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_bg;                                        // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Prompt;                                       // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Prompt_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Prompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Prompt_C")
 	}
 	static class UWBP_Common_Prompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Prompt_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Prompt_C) == 0x000010, "Wrong alignment on UWBP_Common_Prompt_C");
-static_assert(sizeof(UWBP_Common_Prompt_C) == 0x000930, "Wrong size on UWBP_Common_Prompt_C");
-static_assert(offsetof(UWBP_Common_Prompt_C, Img_Prompt_Arrow) == 0x000908, "Member 'UWBP_Common_Prompt_C::Img_Prompt_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Prompt_C, Img_Prompt_bg) == 0x000910, "Member 'UWBP_Common_Prompt_C::Img_Prompt_bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Prompt_C, Overlay_Prompt) == 0x000918, "Member 'UWBP_Common_Prompt_C::Overlay_Prompt' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Prompt_C, SizeBox_bg) == 0x000920, "Member 'UWBP_Common_Prompt_C::SizeBox_bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Prompt_C, Text_Prompt) == 0x000928, "Member 'UWBP_Common_Prompt_C::Text_Prompt' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Prompt_C;
 
 }
 

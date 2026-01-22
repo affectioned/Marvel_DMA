@@ -29,21 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104013">();
+		STATIC_CLASS_IMPL("PyConfig_104013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104013")
 	}
 	static class UPyConfig_104013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104013>();
 	}
 };
-static_assert(alignof(UPyConfig_104013) == 0x000008, "Wrong alignment on UPyConfig_104013");
-static_assert(sizeof(UPyConfig_104013) == 0x0000B0, "Wrong size on UPyConfig_104013");
-static_assert(offsetof(UPyConfig_104013, RefreshDelay) == 0x000098, "Member 'UPyConfig_104013::RefreshDelay' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104013, HitCameraShakeClass) == 0x0000A0, "Member 'UPyConfig_104013::HitCameraShakeClass' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104013, ScopeID) == 0x0000A8, "Member 'UPyConfig_104013::ScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104013;
 
 // PythonClass PyAbility_104013.PyAbility_104013
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104013 : public UAbility_108
 {
 public:
@@ -64,18 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104013">();
+		STATIC_CLASS_IMPL("PyAbility_104013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104013")
 	}
 	static class UPyAbility_104013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104013>();
 	}
 };
-static_assert(alignof(UPyAbility_104013) == 0x000008, "Wrong alignment on UPyAbility_104013");
-static_assert(sizeof(UPyAbility_104013) == 0x0029F8, "Wrong size on UPyAbility_104013");
+DUMPER7_ASSERTS_UPyAbility_104013;
 
 // PythonClass PyAbility_104013.PyEffectiveComponent_10401301
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10401301 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -85,15 +88,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10401301">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10401301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10401301")
 	}
 	static class UPyEffectiveComponent_10401301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10401301>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10401301) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10401301");
-static_assert(sizeof(UPyEffectiveComponent_10401301) == 0x001C70, "Wrong size on UPyEffectiveComponent_10401301");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10401301;
 
 // PythonClass PyAbility_104013.PyCue_Ability_Instant_10401301
 // 0x0010 (0x03D0 - 0x03C0)
@@ -109,17 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10401301">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10401301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10401301")
 	}
 	static class UPyCue_Ability_Instant_10401301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10401301>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10401301) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10401301");
-static_assert(sizeof(UPyCue_Ability_Instant_10401301) == 0x0003D0, "Wrong size on UPyCue_Ability_Instant_10401301");
-static_assert(offsetof(UPyCue_Ability_Instant_10401301, AttackFXAsset) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10401301::AttackFXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10401301, bAttachToRoot) == 0x0003C8, "Member 'UPyCue_Ability_Instant_10401301::bAttachToRoot' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10401301;
 
 }
 

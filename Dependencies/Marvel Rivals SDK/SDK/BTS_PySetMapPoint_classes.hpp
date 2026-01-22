@@ -40,26 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySetMapPoint">();
+		STATIC_CLASS_IMPL("BTS_PySetMapPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySetMapPoint")
 	}
 	static class UBTS_PySetMapPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySetMapPoint>();
 	}
 };
-static_assert(alignof(UBTS_PySetMapPoint) == 0x000008, "Wrong alignment on UBTS_PySetMapPoint");
-static_assert(sizeof(UBTS_PySetMapPoint) == 0x000260, "Wrong size on UBTS_PySetMapPoint");
-static_assert(offsetof(UBTS_PySetMapPoint, Frontier) == 0x0000A8, "Member 'UBTS_PySetMapPoint::Frontier' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, EnemyPlayerStart) == 0x0000D8, "Member 'UBTS_PySetMapPoint::EnemyPlayerStart' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, AllyPlayerStart) == 0x000108, "Member 'UBTS_PySetMapPoint::AllyPlayerStart' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, SuppressDist) == 0x000138, "Member 'UBTS_PySetMapPoint::SuppressDist' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, RetreatDist) == 0x00013C, "Member 'UBTS_PySetMapPoint::RetreatDist' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, SuppressPoint) == 0x000140, "Member 'UBTS_PySetMapPoint::SuppressPoint' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, RetreatPoint) == 0x000170, "Member 'UBTS_PySetMapPoint::RetreatPoint' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, InMatchStateInput) == 0x0001A0, "Member 'UBTS_PySetMapPoint::InMatchStateInput' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, OutSuppressArea) == 0x0001D0, "Member 'UBTS_PySetMapPoint::OutSuppressArea' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, OutRetreatArea) == 0x000200, "Member 'UBTS_PySetMapPoint::OutRetreatArea' has a wrong offset!");
-static_assert(offsetof(UBTS_PySetMapPoint, OutHotArea) == 0x000230, "Member 'UBTS_PySetMapPoint::OutHotArea' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySetMapPoint;
 
 }
 

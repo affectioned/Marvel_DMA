@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -49,21 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelBtnInteractive">();
+		STATIC_CLASS_IMPL("PyLevelBtnInteractive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelBtnInteractive")
 	}
 	static class APyLevelBtnInteractive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelBtnInteractive>();
 	}
 };
-static_assert(alignof(APyLevelBtnInteractive) == 0x000010, "Wrong alignment on APyLevelBtnInteractive");
-static_assert(sizeof(APyLevelBtnInteractive) == 0x000760, "Wrong size on APyLevelBtnInteractive");
-static_assert(offsetof(APyLevelBtnInteractive, IsUseDS) == 0x0006E0, "Member 'APyLevelBtnInteractive::IsUseDS' has a wrong offset!");
-static_assert(offsetof(APyLevelBtnInteractive, VoiceAndTime) == 0x0006E8, "Member 'APyLevelBtnInteractive::VoiceAndTime' has a wrong offset!");
-static_assert(offsetof(APyLevelBtnInteractive, IsRandom) == 0x000738, "Member 'APyLevelBtnInteractive::IsRandom' has a wrong offset!");
-static_assert(offsetof(APyLevelBtnInteractive, PlayMode) == 0x000739, "Member 'APyLevelBtnInteractive::PlayMode' has a wrong offset!");
-static_assert(offsetof(APyLevelBtnInteractive, Voices) == 0x000740, "Member 'APyLevelBtnInteractive::Voices' has a wrong offset!");
-static_assert(offsetof(APyLevelBtnInteractive, State) == 0x000750, "Member 'APyLevelBtnInteractive::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelBtnInteractive;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	int32                                         Grade_25_E5C07FE14AEF354E9B73679B2C5C496A;         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level_26_75D3BAC54D560020BCD9369EE66AA23C;         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGradeLevelSetting) == 0x000004, "Wrong alignment on FGradeLevelSetting");
-static_assert(sizeof(FGradeLevelSetting) == 0x000008, "Wrong size on FGradeLevelSetting");
-static_assert(offsetof(FGradeLevelSetting, Grade_25_E5C07FE14AEF354E9B73679B2C5C496A) == 0x000000, "Member 'FGradeLevelSetting::Grade_25_E5C07FE14AEF354E9B73679B2C5C496A' has a wrong offset!");
-static_assert(offsetof(FGradeLevelSetting, Level_26_75D3BAC54D560020BCD9369EE66AA23C) == 0x000004, "Member 'FGradeLevelSetting::Level_26_75D3BAC54D560020BCD9369EE66AA23C' has a wrong offset!");
+DUMPER7_ASSERTS_FGradeLevelSetting;
 
 }
 

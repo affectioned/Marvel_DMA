@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelAnimNodes">();
+		STATIC_CLASS_IMPL("PyLevelAnimNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelAnimNodes")
 	}
 	static class UPyLevelAnimNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelAnimNodes>();
 	}
 };
-static_assert(alignof(UPyLevelAnimNodes) == 0x000008, "Wrong alignment on UPyLevelAnimNodes");
-static_assert(sizeof(UPyLevelAnimNodes) == 0x000030, "Wrong size on UPyLevelAnimNodes");
+DUMPER7_ASSERTS_UPyLevelAnimNodes;
 
 }
 

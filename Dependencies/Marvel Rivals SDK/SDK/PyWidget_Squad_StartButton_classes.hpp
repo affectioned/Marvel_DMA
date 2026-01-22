@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_StartButton.PyWidget_Squad_StartButton
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Squad_StartButton final : public UPyWidget_BaseCommonButton
 {
 public:
-	TSubclassOf<class UUserWidget>                TeamTips;                                          // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                TeamTips;                                          // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_StartButton">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_StartButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_StartButton")
 	}
 	static class UPyWidget_Squad_StartButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_StartButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_StartButton) == 0x000010, "Wrong alignment on UPyWidget_Squad_StartButton");
-static_assert(sizeof(UPyWidget_Squad_StartButton) == 0x0008C0, "Wrong size on UPyWidget_Squad_StartButton");
-static_assert(offsetof(UPyWidget_Squad_StartButton, TeamTips) == 0x0008B8, "Member 'UPyWidget_Squad_StartButton::TeamTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_StartButton;
 
 }
 

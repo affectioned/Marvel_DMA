@@ -27,12 +27,7 @@ public:
 	double                                        Scale_8_A01025254623132D7CADF2A6BA83484A;          // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Angle_13_8C641F694F7265D1BF60CFA84DE6CFAD;         // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FEmojiBannerUnitConfig) == 0x000008, "Wrong alignment on FEmojiBannerUnitConfig");
-static_assert(sizeof(FEmojiBannerUnitConfig) == 0x000030, "Wrong size on FEmojiBannerUnitConfig");
-static_assert(offsetof(FEmojiBannerUnitConfig, EmojiID_7_18FD7CA74DBDDCC909CF6D940D86C9CE) == 0x000000, "Member 'FEmojiBannerUnitConfig::EmojiID_7_18FD7CA74DBDDCC909CF6D940D86C9CE' has a wrong offset!");
-static_assert(offsetof(FEmojiBannerUnitConfig, Padding_10_455E2A0C459BC322FF8695AD171E00AE) == 0x00000C, "Member 'FEmojiBannerUnitConfig::Padding_10_455E2A0C459BC322FF8695AD171E00AE' has a wrong offset!");
-static_assert(offsetof(FEmojiBannerUnitConfig, Scale_8_A01025254623132D7CADF2A6BA83484A) == 0x000020, "Member 'FEmojiBannerUnitConfig::Scale_8_A01025254623132D7CADF2A6BA83484A' has a wrong offset!");
-static_assert(offsetof(FEmojiBannerUnitConfig, Angle_13_8C641F694F7265D1BF60CFA84DE6CFAD) == 0x000028, "Member 'FEmojiBannerUnitConfig::Angle_13_8C641F694F7265D1BF60CFA84DE6CFAD' has a wrong offset!");
+DUMPER7_ASSERTS_FEmojiBannerUnitConfig;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_HeroUsed_Item.PyWidget_Settlement_HeroUsed_Item
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Settlement_HeroUsed_Item final : public UPyWidget_Button
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_HeroUsed_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_HeroUsed_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_HeroUsed_Item")
 	}
 	static class UPyWidget_Settlement_HeroUsed_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_HeroUsed_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_HeroUsed_Item) == 0x000008, "Wrong alignment on UPyWidget_Settlement_HeroUsed_Item");
-static_assert(sizeof(UPyWidget_Settlement_HeroUsed_Item) == 0x000728, "Wrong size on UPyWidget_Settlement_HeroUsed_Item");
+DUMPER7_ASSERTS_UPyWidget_Settlement_HeroUsed_Item;
 
 }
 

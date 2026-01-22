@@ -17,38 +17,40 @@ namespace SDK
 {
 
 // Class MarvelStuckDetector.StuckDetectorSubsystem
-// 0x0158 (0x0190 - 0x0038)
+// 0x00A8 (0x00E0 - 0x0038)
 class UStuckDetectorSubsystem : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_38[0x120];                                     // 0x0038(0x0120)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         MatchState;                                        // 0x0158(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bInReplay;                                         // 0x0159(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A[0x36];                                     // 0x015A(0x0036)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x70];                                      // 0x0038(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         MatchState;                                        // 0x00A8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInReplay;                                         // 0x00A9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AA[0x36];                                      // 0x00AA(0x0036)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearRecords();
 	void EnableStuckRecord();
 	void K2_OnInitialize();
 	void K2_OnPostLoadMap(class UWorld* InWorld);
-	void SendStuckData();
+	void RequestClearRecords();
+	void RequestSendData();
 	void SetDrpfFieldsByString(const class FString& JsonStr);
 	void UpdateFilePickInfo(const class FString& Url, const class FString& Token);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StuckDetectorSubsystem">();
+		STATIC_CLASS_IMPL("StuckDetectorSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StuckDetectorSubsystem")
 	}
 	static class UStuckDetectorSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStuckDetectorSubsystem>();
 	}
 };
-static_assert(alignof(UStuckDetectorSubsystem) == 0x000008, "Wrong alignment on UStuckDetectorSubsystem");
-static_assert(sizeof(UStuckDetectorSubsystem) == 0x000190, "Wrong size on UStuckDetectorSubsystem");
-static_assert(offsetof(UStuckDetectorSubsystem, MatchState) == 0x000158, "Member 'UStuckDetectorSubsystem::MatchState' has a wrong offset!");
-static_assert(offsetof(UStuckDetectorSubsystem, bInReplay) == 0x000159, "Member 'UStuckDetectorSubsystem::bInReplay' has a wrong offset!");
+DUMPER7_ASSERTS_UStuckDetectorSubsystem;
 
 }
 

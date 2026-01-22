@@ -18,33 +18,33 @@ namespace SDK
 {
 
 // PythonClass PyCue_Buff_10122001.PyCue_Buff_10122001
-// 0x01A0 (0x17E0 - 0x1640)
+// 0x01A0 (0x1890 - 0x16F0)
 class APyCue_Buff_10122001 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         BeHitEffectAsset;                                  // 0x1640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BeHitEffectAttachSocketName;                       // 0x1648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                BeHitEffectLocationOffset;                         // 0x1658(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          HitAudio;                                          // 0x1670(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         HeadChangedEffectAsset;                            // 0x1678(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 HeadChangedAttachSocketName;                       // 0x1680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                HeadChangedLocationOffset;                         // 0x1690(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, struct FVector>                   SpecialHeroLocationOffsetMap;                      // 0x16A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         HeadChangedAudioID;                                // 0x16F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16FC[0x4];                                     // 0x16FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         HeadChangedBiggestEffectAsset;                     // 0x1700(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          HeadChangedAudio;                                  // 0x1708(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          HeadChangedBiggestAudio;                           // 0x1710(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          HeadChangedBiggestLoopAudio;                       // 0x1718(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HitEffectDivisor;                                  // 0x1720(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeadChangedpEffectDivisor;                         // 0x1724(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeadChangedBiggestEffectDivisor;                   // 0x1728(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LoopEffectDivisor;                                 // 0x172C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            SpecialHeroInstantEffectDivisorMap;                // 0x1730(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            SpecialHeroLoopEffectDivisorMap;                   // 0x1780(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         HitEffectPlayInterval;                             // 0x17D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeadChangedpEffectPlayInterval;                    // 0x17D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         BeHitEffectAsset;                                  // 0x16F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BeHitEffectAttachSocketName;                       // 0x16F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                BeHitEffectLocationOffset;                         // 0x1708(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          HitAudio;                                          // 0x1720(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         HeadChangedEffectAsset;                            // 0x1728(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 HeadChangedAttachSocketName;                       // 0x1730(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                HeadChangedLocationOffset;                         // 0x1740(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, struct FVector>                   SpecialHeroLocationOffsetMap;                      // 0x1758(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         HeadChangedAudioID;                                // 0x17A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_17AC[0x4];                                     // 0x17AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         HeadChangedBiggestEffectAsset;                     // 0x17B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          HeadChangedAudio;                                  // 0x17B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          HeadChangedBiggestAudio;                           // 0x17C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          HeadChangedBiggestLoopAudio;                       // 0x17C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HitEffectDivisor;                                  // 0x17D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeadChangedpEffectDivisor;                         // 0x17D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeadChangedBiggestEffectDivisor;                   // 0x17D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LoopEffectDivisor;                                 // 0x17DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            SpecialHeroInstantEffectDivisorMap;                // 0x17E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            SpecialHeroLoopEffectDivisorMap;                   // 0x1830(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         HitEffectPlayInterval;                             // 0x1880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeadChangedpEffectPlayInterval;                    // 0x1884(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -58,36 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10122001">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10122001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10122001")
 	}
 	static class APyCue_Buff_10122001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10122001>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10122001) == 0x000010, "Wrong alignment on APyCue_Buff_10122001");
-static_assert(sizeof(APyCue_Buff_10122001) == 0x0017E0, "Wrong size on APyCue_Buff_10122001");
-static_assert(offsetof(APyCue_Buff_10122001, BeHitEffectAsset) == 0x001640, "Member 'APyCue_Buff_10122001::BeHitEffectAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, BeHitEffectAttachSocketName) == 0x001648, "Member 'APyCue_Buff_10122001::BeHitEffectAttachSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, BeHitEffectLocationOffset) == 0x001658, "Member 'APyCue_Buff_10122001::BeHitEffectLocationOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HitAudio) == 0x001670, "Member 'APyCue_Buff_10122001::HitAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedEffectAsset) == 0x001678, "Member 'APyCue_Buff_10122001::HeadChangedEffectAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedAttachSocketName) == 0x001680, "Member 'APyCue_Buff_10122001::HeadChangedAttachSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedLocationOffset) == 0x001690, "Member 'APyCue_Buff_10122001::HeadChangedLocationOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, SpecialHeroLocationOffsetMap) == 0x0016A8, "Member 'APyCue_Buff_10122001::SpecialHeroLocationOffsetMap' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedAudioID) == 0x0016F8, "Member 'APyCue_Buff_10122001::HeadChangedAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedBiggestEffectAsset) == 0x001700, "Member 'APyCue_Buff_10122001::HeadChangedBiggestEffectAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedAudio) == 0x001708, "Member 'APyCue_Buff_10122001::HeadChangedAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedBiggestAudio) == 0x001710, "Member 'APyCue_Buff_10122001::HeadChangedBiggestAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedBiggestLoopAudio) == 0x001718, "Member 'APyCue_Buff_10122001::HeadChangedBiggestLoopAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HitEffectDivisor) == 0x001720, "Member 'APyCue_Buff_10122001::HitEffectDivisor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedpEffectDivisor) == 0x001724, "Member 'APyCue_Buff_10122001::HeadChangedpEffectDivisor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedBiggestEffectDivisor) == 0x001728, "Member 'APyCue_Buff_10122001::HeadChangedBiggestEffectDivisor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, LoopEffectDivisor) == 0x00172C, "Member 'APyCue_Buff_10122001::LoopEffectDivisor' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, SpecialHeroInstantEffectDivisorMap) == 0x001730, "Member 'APyCue_Buff_10122001::SpecialHeroInstantEffectDivisorMap' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, SpecialHeroLoopEffectDivisorMap) == 0x001780, "Member 'APyCue_Buff_10122001::SpecialHeroLoopEffectDivisorMap' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HitEffectPlayInterval) == 0x0017D0, "Member 'APyCue_Buff_10122001::HitEffectPlayInterval' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10122001, HeadChangedpEffectPlayInterval) == 0x0017D4, "Member 'APyCue_Buff_10122001::HeadChangedpEffectPlayInterval' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10122001;
 
 }
 

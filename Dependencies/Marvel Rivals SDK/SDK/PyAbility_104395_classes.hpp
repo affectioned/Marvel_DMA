@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelThrowSummoner_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "PyAbility_102382_classes.hpp"
 #include "GameplayTags_structs.hpp"
 
 
@@ -21,58 +21,49 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104395.PyConfig_104395
-// 0x43C8 (0x4460 - 0x0098)
+// 0x4DB8 (0x4E50 - 0x0098)
 class UPyConfig_104395 final : public UMarvelAbilityConfig
 {
 public:
 	int32                                         SummonedId;                                        // 0x0098(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BuffID;                                            // 0x009C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       TargetTraceParam;                                  // 0x00A0(0x16B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TraceActorCueTag;                                  // 0x1750(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bThrowEquipment;                                   // 0x175C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175D[0x3];                                     // 0x175D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                EquipmentLocation;                                 // 0x1760(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1778[0x8];                                     // 0x1778(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x1780(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         InitialSpeed;                                      // 0x2DE0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EquipmentGravityScale;                             // 0x2DE4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2DE8[0x8];                                     // 0x2DE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             LandTraceContext;                                  // 0x2DF0(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         LandTraceStartHeight;                              // 0x4450(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxLandingGuaranteeTime;                           // 0x4454(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       TargetTraceParam;                                  // 0x00A0(0x1A00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TraceActorCueTag;                                  // 0x1AA0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bThrowEquipment;                                   // 0x1AAC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1AAD[0x3];                                     // 0x1AAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                EquipmentLocation;                                 // 0x1AB0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1AC8[0x8];                                     // 0x1AC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             ThrowTraceContext;                                 // 0x1AD0(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         InitialSpeed;                                      // 0x3480(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EquipmentGravityScale;                             // 0x3484(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3488[0x8];                                     // 0x3488(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             LandTraceContext;                                  // 0x3490(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         LandTraceStartHeight;                              // 0x4E40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxLandingGuaranteeTime;                           // 0x4E44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104395">();
+		STATIC_CLASS_IMPL("PyConfig_104395")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104395")
 	}
 	static class UPyConfig_104395* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104395>();
 	}
 };
-static_assert(alignof(UPyConfig_104395) == 0x000010, "Wrong alignment on UPyConfig_104395");
-static_assert(sizeof(UPyConfig_104395) == 0x004460, "Wrong size on UPyConfig_104395");
-static_assert(offsetof(UPyConfig_104395, SummonedId) == 0x000098, "Member 'UPyConfig_104395::SummonedId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, BuffID) == 0x00009C, "Member 'UPyConfig_104395::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, TargetTraceParam) == 0x0000A0, "Member 'UPyConfig_104395::TargetTraceParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, TraceActorCueTag) == 0x001750, "Member 'UPyConfig_104395::TraceActorCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, bThrowEquipment) == 0x00175C, "Member 'UPyConfig_104395::bThrowEquipment' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, EquipmentLocation) == 0x001760, "Member 'UPyConfig_104395::EquipmentLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, ThrowTraceContext) == 0x001780, "Member 'UPyConfig_104395::ThrowTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, InitialSpeed) == 0x002DE0, "Member 'UPyConfig_104395::InitialSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, EquipmentGravityScale) == 0x002DE4, "Member 'UPyConfig_104395::EquipmentGravityScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, LandTraceContext) == 0x002DF0, "Member 'UPyConfig_104395::LandTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, LandTraceStartHeight) == 0x004450, "Member 'UPyConfig_104395::LandTraceStartHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104395, MaxLandingGuaranteeTime) == 0x004454, "Member 'UPyConfig_104395::MaxLandingGuaranteeTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104395;
 
 // PythonClass PyAbility_104395.PyCue_Ability_Loop_10439501
-// 0x0090 (0x1240 - 0x11B0)
+// 0x0090 (0x1250 - 0x11C0)
 class APyCue_Ability_Loop_10439501 final : public AMarvelCueNotify_Ability
 {
 public:
-	struct FWidgetStyle_BattleTransientTip        TransferSuccessTip;                                // 0x11B0(0x0048)(Edit, NativeAccessSpecifierPublic)
-	struct FWidgetStyle_BattleTransientTip        TransferFailedTip;                                 // 0x11F8(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_BattleTransientTip        TransferSuccessTip;                                // 0x11C0(0x0048)(Edit, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_BattleTransientTip        TransferFailedTip;                                 // 0x1208(0x0048)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -80,24 +71,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10439501">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10439501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10439501")
 	}
 	static class APyCue_Ability_Loop_10439501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10439501>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10439501) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10439501");
-static_assert(sizeof(APyCue_Ability_Loop_10439501) == 0x001240, "Wrong size on APyCue_Ability_Loop_10439501");
-static_assert(offsetof(APyCue_Ability_Loop_10439501, TransferSuccessTip) == 0x0011B0, "Member 'APyCue_Ability_Loop_10439501::TransferSuccessTip' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10439501, TransferFailedTip) == 0x0011F8, "Member 'APyCue_Ability_Loop_10439501::TransferFailedTip' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10439501;
 
 // PythonClass PyAbility_104395.PyAbility_104395
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_104395 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnSummonedRemoved;                                 // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSummonedRemoved;                                 // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -118,21 +110,23 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104395">();
+		STATIC_CLASS_IMPL("PyAbility_104395")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104395")
 	}
 	static class UPyAbility_104395* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104395>();
 	}
 };
-static_assert(alignof(UPyAbility_104395) == 0x000008, "Wrong alignment on UPyAbility_104395");
-static_assert(sizeof(UPyAbility_104395) == 0x002A00, "Wrong size on UPyAbility_104395");
-static_assert(offsetof(UPyAbility_104395, OnSummonedRemoved) == 0x0029F0, "Member 'UPyAbility_104395::OnSummonedRemoved' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104395;
 
 // PythonClass PyAbility_104395.PySummoned_10439501
-// 0x0000 (0x0B80 - 0x0B80)
+// 0x0000 (0x0BA0 - 0x0BA0)
 #pragma pack(push, 0x1)
-class alignas(0x10) APySummoned_10439501 : public APySummoned_102382
+class alignas(0x10) APySummoned_10439501 : public APyMarvelThrowSummoner
 {
 public:
 	void ReceiveBeginPlay();
@@ -145,7 +139,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10439501">();
+		STATIC_CLASS_IMPL("PySummoned_10439501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10439501")
 	}
 	static class APySummoned_10439501* GetDefaultObj()
 	{
@@ -153,11 +151,10 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummoned_10439501) == 0x000010, "Wrong alignment on APySummoned_10439501");
-static_assert(sizeof(APySummoned_10439501) == 0x000B80, "Wrong size on APySummoned_10439501");
+DUMPER7_ASSERTS_APySummoned_10439501;
 
 // PythonClass PyAbility_104395.PyCue_Summoner_Loop_10439501
-// 0x0000 (0x1200 - 0x1200)
+// 0x0000 (0x1260 - 0x1260)
 class APyCue_Summoner_Loop_10439501 final : public AMarvelCueNotify_Summoned
 {
 public:
@@ -168,15 +165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10439501">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10439501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10439501")
 	}
 	static class APyCue_Summoner_Loop_10439501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10439501>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10439501) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10439501");
-static_assert(sizeof(APyCue_Summoner_Loop_10439501) == 0x001200, "Wrong size on APyCue_Summoner_Loop_10439501");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10439501;
 
 }
 

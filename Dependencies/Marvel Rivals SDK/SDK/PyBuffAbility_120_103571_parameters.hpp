@@ -25,25 +25,18 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10357190_OnCharacterDeath) == 0x000008, "Wrong alignment on PyBuffAbility_120_10357190_OnCharacterDeath");
-static_assert(sizeof(PyBuffAbility_120_10357190_OnCharacterDeath) == 0x000028, "Wrong size on PyBuffAbility_120_10357190_OnCharacterDeath");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnCharacterDeath, DamageCauser) == 0x000000, "Member 'PyBuffAbility_120_10357190_OnCharacterDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnCharacterDeath, TargetActor) == 0x000008, "Member 'PyBuffAbility_120_10357190_OnCharacterDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnCharacterDeath, ModifierParameterHandle) == 0x000010, "Member 'PyBuffAbility_120_10357190_OnCharacterDeath::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10357190_OnCharacterDeath;
 
 // PythonFunction PyBuffAbility_120_103571.PyBuffAbility_120_10357190.OnRebornReady
-// 0x0820 (0x0820 - 0x0000)
+// 0x0840 (0x0840 - 0x0000)
 struct PyBuffAbility_120_10357190_OnRebornReady final
 {
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0810)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0830)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_120_10357190_OnRebornReady) == 0x000010, "Wrong alignment on PyBuffAbility_120_10357190_OnRebornReady");
-static_assert(sizeof(PyBuffAbility_120_10357190_OnRebornReady) == 0x000820, "Wrong size on PyBuffAbility_120_10357190_OnRebornReady");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnRebornReady, TargetActor) == 0x000000, "Member 'PyBuffAbility_120_10357190_OnRebornReady::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnRebornReady, Param) == 0x000010, "Member 'PyBuffAbility_120_10357190_OnRebornReady::Param' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10357190_OnRebornReady;
 
 // PythonFunction PyBuffAbility_120_103571.PyBuffAbility_120_10357190.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +45,7 @@ struct PyBuffAbility_120_10357190_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10357190_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10357190_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10357190_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10357190_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10357190_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10357190_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10357190_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_103571.PyBuffAbility_120_10357190.OnOwnerApplyDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -65,11 +56,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10357190_OnOwnerApplyDamage) == 0x000008, "Wrong alignment on PyBuffAbility_120_10357190_OnOwnerApplyDamage");
-static_assert(sizeof(PyBuffAbility_120_10357190_OnOwnerApplyDamage) == 0x000028, "Wrong size on PyBuffAbility_120_10357190_OnOwnerApplyDamage");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnOwnerApplyDamage, Source) == 0x000000, "Member 'PyBuffAbility_120_10357190_OnOwnerApplyDamage::Source' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnOwnerApplyDamage, Target) == 0x000008, "Member 'PyBuffAbility_120_10357190_OnOwnerApplyDamage::Target' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10357190_OnOwnerApplyDamage, ParamHandle) == 0x000010, "Member 'PyBuffAbility_120_10357190_OnOwnerApplyDamage::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10357190_OnOwnerApplyDamage;
 
 }
 

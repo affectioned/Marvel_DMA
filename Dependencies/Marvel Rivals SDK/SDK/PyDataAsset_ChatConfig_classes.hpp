@@ -42,31 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_ChatSystemConfig">();
+		STATIC_CLASS_IMPL("PyDataAsset_ChatSystemConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_ChatSystemConfig")
 	}
 	static class UPyDataAsset_ChatSystemConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_ChatSystemConfig>();
 	}
 };
-static_assert(alignof(UPyDataAsset_ChatSystemConfig) == 0x000008, "Wrong alignment on UPyDataAsset_ChatSystemConfig");
-static_assert(sizeof(UPyDataAsset_ChatSystemConfig) == 0x0000B8, "Wrong size on UPyDataAsset_ChatSystemConfig");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxPrivateHistoryDayCount) == 0x000038, "Member 'UPyDataAsset_ChatSystemConfig::MaxPrivateHistoryDayCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxPrivateHistoryCount) == 0x00003C, "Member 'UPyDataAsset_ChatSystemConfig::MaxPrivateHistoryCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxPrivateTabCount) == 0x000040, "Member 'UPyDataAsset_ChatSystemConfig::MaxPrivateTabCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, PrivateTabSaveTime) == 0x000044, "Member 'UPyDataAsset_ChatSystemConfig::PrivateTabSaveTime' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, PrivateTabAutoSaveTime) == 0x000048, "Member 'UPyDataAsset_ChatSystemConfig::PrivateTabAutoSaveTime' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxClanHistoryDayCount) == 0x00004C, "Member 'UPyDataAsset_ChatSystemConfig::MaxClanHistoryDayCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxClanHistoryCount) == 0x000050, "Member 'UPyDataAsset_ChatSystemConfig::MaxClanHistoryCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MaxClanTabCount) == 0x000054, "Member 'UPyDataAsset_ChatSystemConfig::MaxClanTabCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MajorCityReceiveDistanceLimit) == 0x000058, "Member 'UPyDataAsset_ChatSystemConfig::MajorCityReceiveDistanceLimit' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, MajorCitySendCooldown) == 0x00005C, "Member 'UPyDataAsset_ChatSystemConfig::MajorCitySendCooldown' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, NeedHideChatBlueprints) == 0x000060, "Member 'UPyDataAsset_ChatSystemConfig::NeedHideChatBlueprints' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, FreeChatEmojiList) == 0x000070, "Member 'UPyDataAsset_ChatSystemConfig::FreeChatEmojiList' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, RichTextHashConfig) == 0x000080, "Member 'UPyDataAsset_ChatSystemConfig::RichTextHashConfig' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, CachedPrivateMsgMaxCount) == 0x0000A8, "Member 'UPyDataAsset_ChatSystemConfig::CachedPrivateMsgMaxCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, CachedClanMsgMaxCount) == 0x0000AC, "Member 'UPyDataAsset_ChatSystemConfig::CachedClanMsgMaxCount' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_ChatSystemConfig, CachedComprehensiveMsgMaxCount) == 0x0000B0, "Member 'UPyDataAsset_ChatSystemConfig::CachedComprehensiveMsgMaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_ChatSystemConfig;
 
 }
 

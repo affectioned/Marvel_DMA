@@ -21,9 +21,7 @@ struct PyHybridLevelStatistics_OnObjectiveBegin final
 public:
 	class AActor*                                 obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHybridLevelStatistics_OnObjectiveBegin) == 0x000008, "Wrong alignment on PyHybridLevelStatistics_OnObjectiveBegin");
-static_assert(sizeof(PyHybridLevelStatistics_OnObjectiveBegin) == 0x000008, "Wrong size on PyHybridLevelStatistics_OnObjectiveBegin");
-static_assert(offsetof(PyHybridLevelStatistics_OnObjectiveBegin, obj) == 0x000000, "Member 'PyHybridLevelStatistics_OnObjectiveBegin::obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyHybridLevelStatistics_OnObjectiveBegin;
 
 // PythonFunction PyHybridLevelStatistics.PyHybridLevelStatistics.OnObjectiveEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyHybridLevelStatistics_OnObjectiveEnd final
 public:
 	class AActor*                                 obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHybridLevelStatistics_OnObjectiveEnd) == 0x000008, "Wrong alignment on PyHybridLevelStatistics_OnObjectiveEnd");
-static_assert(sizeof(PyHybridLevelStatistics_OnObjectiveEnd) == 0x000008, "Wrong size on PyHybridLevelStatistics_OnObjectiveEnd");
-static_assert(offsetof(PyHybridLevelStatistics_OnObjectiveEnd, obj) == 0x000000, "Member 'PyHybridLevelStatistics_OnObjectiveEnd::obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyHybridLevelStatistics_OnObjectiveEnd;
 
 }
 

@@ -92,25 +92,6 @@ void UPyWidget_GetPropsPanel::Construct()
 }
 
 
-// PythonFunction PyWidget_GetPropsPanel.PyWidget_GetRewardOnePanel.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GetRewardOnePanel::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GetRewardOnePanel", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_GetPropsPanel.PyWidget_BuyHeroOrSkinPanel.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -130,15 +111,15 @@ void UPyWidget_BuyHeroOrSkinPanel::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_GetPropsPanel.PyWidget_GetSprayPanel.OnInitialized
+// PythonFunction PyWidget_GetPropsPanel.PyWidget_GetRewardOnePanel.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_GetSprayPanel::OnInitialized()
+void UPyWidget_GetRewardOnePanel::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GetSprayPanel", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_GetRewardOnePanel", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

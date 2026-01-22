@@ -23,9 +23,7 @@ struct PyArakkoTreeCar_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyArakkoTreeCar_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyArakkoTreeCar_ReceiveEndPlay");
-static_assert(sizeof(PyArakkoTreeCar_ReceiveEndPlay) == 0x000001, "Wrong size on PyArakkoTreeCar_ReceiveEndPlay");
-static_assert(offsetof(PyArakkoTreeCar_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyArakkoTreeCar_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyArakkoTreeCar_ReceiveEndPlay;
 
 // PythonFunction PyArakkoTreeCar.PyArakkoTreeCar.OnMoveSpeedChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyArakkoTreeCar_OnMoveSpeedChanged final
 public:
 	float                                         MoveSpeed;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyArakkoTreeCar_OnMoveSpeedChanged) == 0x000004, "Wrong alignment on PyArakkoTreeCar_OnMoveSpeedChanged");
-static_assert(sizeof(PyArakkoTreeCar_OnMoveSpeedChanged) == 0x000004, "Wrong size on PyArakkoTreeCar_OnMoveSpeedChanged");
-static_assert(offsetof(PyArakkoTreeCar_OnMoveSpeedChanged, MoveSpeed) == 0x000000, "Member 'PyArakkoTreeCar_OnMoveSpeedChanged::MoveSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_PyArakkoTreeCar_OnMoveSpeedChanged;
 
 // PythonFunction PyArakkoTreeCar.PyArakkoTreeCarElfAnimInstance.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation");
-static_assert(sizeof(PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation) == 0x000004, "Wrong size on PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation");
-static_assert(offsetof(PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+DUMPER7_ASSERTS_PyArakkoTreeCarElfAnimInstance_BlueprintUpdateAnimation;
 
 }
 

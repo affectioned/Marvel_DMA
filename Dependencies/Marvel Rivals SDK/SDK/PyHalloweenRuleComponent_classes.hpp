@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 #include "Activity_10130_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -117,74 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenRuleComponent">();
+		STATIC_CLASS_IMPL("PyHalloweenRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenRuleComponent")
 	}
 	static class UPyHalloweenRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHalloweenRuleComponent>();
 	}
 };
-static_assert(alignof(UPyHalloweenRuleComponent) == 0x000008, "Wrong alignment on UPyHalloweenRuleComponent");
-static_assert(sizeof(UPyHalloweenRuleComponent) == 0x0008F8, "Wrong size on UPyHalloweenRuleComponent");
-static_assert(offsetof(UPyHalloweenRuleComponent, EditorDifficulty) == 0x000108, "Member 'UPyHalloweenRuleComponent::EditorDifficulty' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, Difficulty) == 0x000109, "Member 'UPyHalloweenRuleComponent::Difficulty' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, EnableEditorPlayerCount) == 0x00010A, "Member 'UPyHalloweenRuleComponent::EnableEditorPlayerCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, EditorPlayerCount) == 0x00010C, "Member 'UPyHalloweenRuleComponent::EditorPlayerCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, CardProbability) == 0x000110, "Member 'UPyHalloweenRuleComponent::CardProbability' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, HalloweenState) == 0x000160, "Member 'UPyHalloweenRuleComponent::HalloweenState' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, GameDuration) == 0x000164, "Member 'UPyHalloweenRuleComponent::GameDuration' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, PassDuration) == 0x000168, "Member 'UPyHalloweenRuleComponent::PassDuration' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, GameDurationInterval) == 0x00016C, "Member 'UPyHalloweenRuleComponent::GameDurationInterval' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, WaveIndex) == 0x000170, "Member 'UPyHalloweenRuleComponent::WaveIndex' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, AlivePlayerCount) == 0x000174, "Member 'UPyHalloweenRuleComponent::AlivePlayerCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, RemainingMonster) == 0x000178, "Member 'UPyHalloweenRuleComponent::RemainingMonster' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, CurrentMonsterCount) == 0x00017C, "Member 'UPyHalloweenRuleComponent::CurrentMonsterCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, TotalMonsterCount) == 0x000180, "Member 'UPyHalloweenRuleComponent::TotalMonsterCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, TimeLimitedTimer) == 0x000188, "Member 'UPyHalloweenRuleComponent::TimeLimitedTimer' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, WallhackedWhenMonsterCount) == 0x000200, "Member 'UPyHalloweenRuleComponent::WallhackedWhenMonsterCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MonsterBehaviorTree) == 0x000208, "Member 'UPyHalloweenRuleComponent::MonsterBehaviorTree' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MonsterController) == 0x000258, "Member 'UPyHalloweenRuleComponent::MonsterController' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SquadAIConfig) == 0x000260, "Member 'UPyHalloweenRuleComponent::SquadAIConfig' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, DropsPerFrame) == 0x0002B0, "Member 'UPyHalloweenRuleComponent::DropsPerFrame' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MonsterKillPointConfig) == 0x0002B8, "Member 'UPyHalloweenRuleComponent::MonsterKillPointConfig' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, RewardsConfig) == 0x000308, "Member 'UPyHalloweenRuleComponent::RewardsConfig' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SpawnItemPitch) == 0x000358, "Member 'UPyHalloweenRuleComponent::SpawnItemPitch' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SpawnItemSpeed) == 0x00035C, "Member 'UPyHalloweenRuleComponent::SpawnItemSpeed' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SpawnRandomYaw) == 0x000360, "Member 'UPyHalloweenRuleComponent::SpawnRandomYaw' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SpawnRandomSpeed) == 0x000364, "Member 'UPyHalloweenRuleComponent::SpawnRandomSpeed' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, TeammateGoldFactor) == 0x000368, "Member 'UPyHalloweenRuleComponent::TeammateGoldFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, RoundIndex) == 0x00036C, "Member 'UPyHalloweenRuleComponent::RoundIndex' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, RoundHealthFactor) == 0x000370, "Member 'UPyHalloweenRuleComponent::RoundHealthFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, BoostBuffID) == 0x000374, "Member 'UPyHalloweenRuleComponent::BoostBuffID' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ResistanceBuffID) == 0x000378, "Member 'UPyHalloweenRuleComponent::ResistanceBuffID' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, HeroStartCardEffect) == 0x000380, "Member 'UPyHalloweenRuleComponent::HeroStartCardEffect' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, HealthFactor) == 0x0003D0, "Member 'UPyHalloweenRuleComponent::HealthFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, DamageFactor) == 0x000420, "Member 'UPyHalloweenRuleComponent::DamageFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, GoldFactor) == 0x000470, "Member 'UPyHalloweenRuleComponent::GoldFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, SpawnCountFactor) == 0x0004C0, "Member 'UPyHalloweenRuleComponent::SpawnCountFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, WaveCountFactor) == 0x000510, "Member 'UPyHalloweenRuleComponent::WaveCountFactor' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ScarletWitchBossDifficultyHealthFactorDict) == 0x000560, "Member 'UPyHalloweenRuleComponent::ScarletWitchBossDifficultyHealthFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ScarletWitchBossDifficultyDamageFactorDict) == 0x0005B0, "Member 'UPyHalloweenRuleComponent::ScarletWitchBossDifficultyDamageFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ScarletWitchBossWaveHealthFactorDict) == 0x000600, "Member 'UPyHalloweenRuleComponent::ScarletWitchBossWaveHealthFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ScarletWitchBossWaveDamageFactorDict) == 0x000650, "Member 'UPyHalloweenRuleComponent::ScarletWitchBossWaveDamageFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, NamorBossDifficultyHealthFactorDict) == 0x0006A0, "Member 'UPyHalloweenRuleComponent::NamorBossDifficultyHealthFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, NamorBossDifficultyDamageFactorDict) == 0x0006F0, "Member 'UPyHalloweenRuleComponent::NamorBossDifficultyDamageFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, NamorBossWaveHealthFactorDict) == 0x000740, "Member 'UPyHalloweenRuleComponent::NamorBossWaveHealthFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, NamorBossWaveDamageFactorDict) == 0x000790, "Member 'UPyHalloweenRuleComponent::NamorBossWaveDamageFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, BosssCriticalStrikeFactorDict) == 0x0007E0, "Member 'UPyHalloweenRuleComponent::BosssCriticalStrikeFactorDict' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MonsterDeathNiagara) == 0x0007E8, "Member 'UPyHalloweenRuleComponent::MonsterDeathNiagara' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, AkEvent_Zombie) == 0x0007F0, "Member 'UPyHalloweenRuleComponent::AkEvent_Zombie' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, AliveZombieCount) == 0x000840, "Member 'UPyHalloweenRuleComponent::AliveZombieCount' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, TimeNoDamageLimit) == 0x000844, "Member 'UPyHalloweenRuleComponent::TimeNoDamageLimit' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MaxConcurrentCameraShakes) == 0x000848, "Member 'UPyHalloweenRuleComponent::MaxConcurrentCameraShakes' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, AutoTestWaveDuration) == 0x00084C, "Member 'UPyHalloweenRuleComponent::AutoTestWaveDuration' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, LootManagerClass) == 0x000850, "Member 'UPyHalloweenRuleComponent::LootManagerClass' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, DefeatTime) == 0x000858, "Member 'UPyHalloweenRuleComponent::DefeatTime' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, DefeatTimer) == 0x000860, "Member 'UPyHalloweenRuleComponent::DefeatTimer' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, Protector) == 0x0008D8, "Member 'UPyHalloweenRuleComponent::Protector' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, BossTargets) == 0x0008E0, "Member 'UPyHalloweenRuleComponent::BossTargets' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, MergeZombieDeathEvent) == 0x0008F0, "Member 'UPyHalloweenRuleComponent::MergeZombieDeathEvent' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenRuleComponent, ZombieKilledAudioMergedRadius) == 0x0008F4, "Member 'UPyHalloweenRuleComponent::ZombieKilledAudioMergedRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHalloweenRuleComponent;
 
 // PythonClass PyHalloweenRuleComponent.PyCHalloweenRuleComponent
 // 0x0000 (0x01F0 - 0x01F0)
@@ -198,15 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCHalloweenRuleComponent">();
+		STATIC_CLASS_IMPL("PyCHalloweenRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCHalloweenRuleComponent")
 	}
 	static class UPyCHalloweenRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCHalloweenRuleComponent>();
 	}
 };
-static_assert(alignof(UPyCHalloweenRuleComponent) == 0x000008, "Wrong alignment on UPyCHalloweenRuleComponent");
-static_assert(sizeof(UPyCHalloweenRuleComponent) == 0x0001F0, "Wrong size on UPyCHalloweenRuleComponent");
+DUMPER7_ASSERTS_UPyCHalloweenRuleComponent;
 
 }
 

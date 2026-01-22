@@ -39,29 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_RightClickSelectionUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_RightClickSelectionUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_RightClickSelectionUnit_C")
 	}
 	static class UWBP_Common_RightClickSelectionUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_RightClickSelectionUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_RightClickSelectionUnit_C) == 0x000010, "Wrong alignment on UWBP_Common_RightClickSelectionUnit_C");
-static_assert(sizeof(UWBP_Common_RightClickSelectionUnit_C) == 0x0008B0, "Wrong size on UWBP_Common_RightClickSelectionUnit_C");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Anim_Disable) == 0x000838, "Member 'UWBP_Common_RightClickSelectionUnit_C::Anim_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Anim_Hovered) == 0x000840, "Member 'UWBP_Common_RightClickSelectionUnit_C::Anim_Hovered' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Btn) == 0x000848, "Member 'UWBP_Common_RightClickSelectionUnit_C::Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_Bg_Hover) == 0x000850, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_Bg_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, img_Bg_Normal) == 0x000858, "Member 'UWBP_Common_RightClickSelectionUnit_C::img_Bg_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, img_Bg_Normal_Dark) == 0x000860, "Member 'UWBP_Common_RightClickSelectionUnit_C::img_Bg_Normal_Dark' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_Discord_Icon) == 0x000868, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_Discord_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_Line) == 0x000870, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_Texture) == 0x000878, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_TexturePoint_LeftBottom) == 0x000880, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_TexturePoint_LeftBottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Img_TexturePoint_RightBottom) == 0x000888, "Member 'UWBP_Common_RightClickSelectionUnit_C::Img_TexturePoint_RightBottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Overlay_Btn) == 0x000890, "Member 'UWBP_Common_RightClickSelectionUnit_C::Overlay_Btn' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Overlay_Hover) == 0x000898, "Member 'UWBP_Common_RightClickSelectionUnit_C::Overlay_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionUnit_C, Text_Content) == 0x0008A0, "Member 'UWBP_Common_RightClickSelectionUnit_C::Text_Content' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_RightClickSelectionUnit_C;
 
 }
 

@@ -23,15 +23,18 @@ class UPyExtension_Select final : public UMarvelUserWidgetExtension
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Select">();
+		STATIC_CLASS_IMPL("PyExtension_Select")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Select")
 	}
 	static class UPyExtension_Select* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Select>();
 	}
 };
-static_assert(alignof(UPyExtension_Select) == 0x000008, "Wrong alignment on UPyExtension_Select");
-static_assert(sizeof(UPyExtension_Select) == 0x000030, "Wrong size on UPyExtension_Select");
+DUMPER7_ASSERTS_UPyExtension_Select;
 
 }
 

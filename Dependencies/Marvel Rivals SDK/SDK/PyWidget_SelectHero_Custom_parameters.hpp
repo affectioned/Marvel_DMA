@@ -21,9 +21,7 @@ struct PyWidget_SelectHero_Custom_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SelectHero_Custom_SetItemID) == 0x000004, "Wrong alignment on PyWidget_SelectHero_Custom_SetItemID");
-static_assert(sizeof(PyWidget_SelectHero_Custom_SetItemID) == 0x000004, "Wrong size on PyWidget_SelectHero_Custom_SetItemID");
-static_assert(offsetof(PyWidget_SelectHero_Custom_SetItemID, ItemID_0) == 0x000000, "Member 'PyWidget_SelectHero_Custom_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SelectHero_Custom_SetItemID;
 
 }
 

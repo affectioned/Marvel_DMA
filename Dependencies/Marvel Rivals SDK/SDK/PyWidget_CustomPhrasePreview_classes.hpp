@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomPhrasePreview.PyWidget_CustomPhrasePreview
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0438 - 0x0438)
 class UPyWidget_CustomPhrasePreview : public UMarvelSimpleUserWidget
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomPhrasePreview">();
+		STATIC_CLASS_IMPL("PyWidget_CustomPhrasePreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomPhrasePreview")
 	}
 	static class UPyWidget_CustomPhrasePreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomPhrasePreview>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomPhrasePreview) == 0x000008, "Wrong alignment on UPyWidget_CustomPhrasePreview");
-static_assert(sizeof(UPyWidget_CustomPhrasePreview) == 0x000458, "Wrong size on UPyWidget_CustomPhrasePreview");
+DUMPER7_ASSERTS_UPyWidget_CustomPhrasePreview;
 
 }
 

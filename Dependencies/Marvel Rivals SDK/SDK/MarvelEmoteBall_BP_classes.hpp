@@ -23,15 +23,18 @@ class AMarvelEmoteBall_BP_C final : public AMarvelEmoteBallActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelEmoteBall_BP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelEmoteBall_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelEmoteBall_BP_C")
 	}
 	static class AMarvelEmoteBall_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelEmoteBall_BP_C>();
 	}
 };
-static_assert(alignof(AMarvelEmoteBall_BP_C) == 0x000010, "Wrong alignment on AMarvelEmoteBall_BP_C");
-static_assert(sizeof(AMarvelEmoteBall_BP_C) == 0x000AF0, "Wrong size on AMarvelEmoteBall_BP_C");
+DUMPER7_ASSERTS_AMarvelEmoteBall_BP_C;
 
 }
 

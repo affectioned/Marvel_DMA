@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -70,32 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelWorldSettings">();
+		STATIC_CLASS_IMPL("PyMarvelWorldSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelWorldSettings")
 	}
 	static class APyMarvelWorldSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelWorldSettings>();
 	}
 };
-static_assert(alignof(APyMarvelWorldSettings) == 0x000010, "Wrong alignment on APyMarvelWorldSettings");
-static_assert(sizeof(APyMarvelWorldSettings) == 0x0009F0, "Wrong size on APyMarvelWorldSettings");
-static_assert(offsetof(APyMarvelWorldSettings, PauseSourceType) == 0x000940, "Member 'APyMarvelWorldSettings::PauseSourceType' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, PauseInfo) == 0x000948, "Member 'APyMarvelWorldSettings::PauseInfo' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, CurPauseSecs) == 0x000968, "Member 'APyMarvelWorldSettings::CurPauseSecs' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, PreUnpauseTime) == 0x00096C, "Member 'APyMarvelWorldSettings::PreUnpauseTime' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, StandbyCheckList) == 0x000970, "Member 'APyMarvelWorldSettings::StandbyCheckList' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, StandbyCheckSponsor) == 0x000980, "Member 'APyMarvelWorldSettings::StandbyCheckSponsor' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, StandbyCheckSponsorShowName) == 0x000988, "Member 'APyMarvelWorldSettings::StandbyCheckSponsorShowName' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, StandbyCheckType) == 0x000998, "Member 'APyMarvelWorldSettings::StandbyCheckType' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, LimitPauseSecs) == 0x00099C, "Member 'APyMarvelWorldSettings::LimitPauseSecs' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, HistoryPauseSecs) == 0x0009A0, "Member 'APyMarvelWorldSettings::HistoryPauseSecs' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, OnceLimitPauseSecs) == 0x0009A4, "Member 'APyMarvelWorldSettings::OnceLimitPauseSecs' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, OfflinePauseCount) == 0x0009A8, "Member 'APyMarvelWorldSettings::OfflinePauseCount' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, OfflinePauseCountMax) == 0x0009B8, "Member 'APyMarvelWorldSettings::OfflinePauseCountMax' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, EnableOfflinePause) == 0x0009BC, "Member 'APyMarvelWorldSettings::EnableOfflinePause' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, IgnoreOfflineUIDList) == 0x0009C0, "Member 'APyMarvelWorldSettings::IgnoreOfflineUIDList' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, OfflineUIDList) == 0x0009D0, "Member 'APyMarvelWorldSettings::OfflineUIDList' has a wrong offset!");
-static_assert(offsetof(APyMarvelWorldSettings, OnCharactersLoaded) == 0x0009E0, "Member 'APyMarvelWorldSettings::OnCharactersLoaded' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelWorldSettings;
 
 }
 

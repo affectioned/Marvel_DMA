@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_Activity144_Tips.PyWidget_Squad_Activity144_Tips
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Squad_Activity144_Tips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            RedSlateColor;                                     // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            GreenSlateColor;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         ChangeTipsTime;                                    // 0x05E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChangeShowInfoTime;                                // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RedSlateColor;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GreenSlateColor;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         ChangeTipsTime;                                    // 0x05EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangeShowInfoTime;                                // 0x05F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,19 +37,74 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_Activity144_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_Activity144_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Activity144_Tips")
 	}
 	static class UPyWidget_Squad_Activity144_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_Activity144_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_Activity144_Tips) == 0x000008, "Wrong alignment on UPyWidget_Squad_Activity144_Tips");
-static_assert(sizeof(UPyWidget_Squad_Activity144_Tips) == 0x0005F0, "Wrong size on UPyWidget_Squad_Activity144_Tips");
-static_assert(offsetof(UPyWidget_Squad_Activity144_Tips, RedSlateColor) == 0x0005BC, "Member 'UPyWidget_Squad_Activity144_Tips::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Activity144_Tips, GreenSlateColor) == 0x0005D0, "Member 'UPyWidget_Squad_Activity144_Tips::GreenSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Activity144_Tips, ChangeTipsTime) == 0x0005E4, "Member 'UPyWidget_Squad_Activity144_Tips::ChangeTipsTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Activity144_Tips, ChangeShowInfoTime) == 0x0005E8, "Member 'UPyWidget_Squad_Activity144_Tips::ChangeShowInfoTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_Activity144_Tips;
+
+// PythonClass PyWidget_Squad_Activity144_Tips.PyWidget_Squad_ActivityTips
+// 0x0030 (0x05F8 - 0x05C8)
+class UPyWidget_Squad_ActivityTips : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RedSlateColor;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GreenSlateColor;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         ChangeTipsTime;                                    // 0x05EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChangeShowInfoTime;                                // 0x05F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Squad_ActivityTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_ActivityTips")
+	}
+	static class UPyWidget_Squad_ActivityTips* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Squad_ActivityTips>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Squad_ActivityTips;
+
+// PythonClass PyWidget_Squad_Activity144_Tips.PyWidget_Squad_Activity163_Tips
+// 0x0000 (0x05F8 - 0x05F8)
+class UPyWidget_Squad_Activity163_Tips final : public UPyWidget_Squad_ActivityTips
+{
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Squad_Activity163_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Activity163_Tips")
+	}
+	static class UPyWidget_Squad_Activity163_Tips* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Squad_Activity163_Tips>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Squad_Activity163_Tips;
 
 }
 

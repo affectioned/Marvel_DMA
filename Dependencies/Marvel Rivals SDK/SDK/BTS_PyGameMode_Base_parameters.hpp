@@ -24,10 +24,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyGameMode_Base_ReceiveActivationAI) == 0x000008, "Wrong alignment on BTS_PyGameMode_Base_ReceiveActivationAI");
-static_assert(sizeof(BTS_PyGameMode_Base_ReceiveActivationAI) == 0x000010, "Wrong size on BTS_PyGameMode_Base_ReceiveActivationAI");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveActivationAI, OwnerController) == 0x000000, "Member 'BTS_PyGameMode_Base_ReceiveActivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveActivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PyGameMode_Base_ReceiveActivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyGameMode_Base_ReceiveActivationAI;
 
 // PythonFunction BTS_PyGameMode_Base.BTS_PyGameMode_Base.ReceiveDeactivationAI
 // 0x0010 (0x0010 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyGameMode_Base_ReceiveDeactivationAI) == 0x000008, "Wrong alignment on BTS_PyGameMode_Base_ReceiveDeactivationAI");
-static_assert(sizeof(BTS_PyGameMode_Base_ReceiveDeactivationAI) == 0x000010, "Wrong size on BTS_PyGameMode_Base_ReceiveDeactivationAI");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveDeactivationAI, OwnerController) == 0x000000, "Member 'BTS_PyGameMode_Base_ReceiveDeactivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveDeactivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PyGameMode_Base_ReceiveDeactivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyGameMode_Base_ReceiveDeactivationAI;
 
 // PythonFunction BTS_PyGameMode_Base.BTS_PyGameMode_Base.ReceiveTickAI
 // 0x0018 (0x0018 - 0x0000)
@@ -51,11 +45,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyGameMode_Base_ReceiveTickAI) == 0x000008, "Wrong alignment on BTS_PyGameMode_Base_ReceiveTickAI");
-static_assert(sizeof(BTS_PyGameMode_Base_ReceiveTickAI) == 0x000018, "Wrong size on BTS_PyGameMode_Base_ReceiveTickAI");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveTickAI, OwnerController) == 0x000000, "Member 'BTS_PyGameMode_Base_ReceiveTickAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveTickAI, ControlledPawn) == 0x000008, "Member 'BTS_PyGameMode_Base_ReceiveTickAI::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_ReceiveTickAI, DeltaSeconds) == 0x000010, "Member 'BTS_PyGameMode_Base_ReceiveTickAI::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyGameMode_Base_ReceiveTickAI;
 
 // PythonFunction BTS_PyGameMode_Base.BTS_PyGameMode_Base.OnHeroDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -66,25 +56,18 @@ public:
 	class AActor*                                 in_target_avatar;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               modifier_parameterhandle;                          // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyGameMode_Base_OnHeroDeath) == 0x000008, "Wrong alignment on BTS_PyGameMode_Base_OnHeroDeath");
-static_assert(sizeof(BTS_PyGameMode_Base_OnHeroDeath) == 0x000028, "Wrong size on BTS_PyGameMode_Base_OnHeroDeath");
-static_assert(offsetof(BTS_PyGameMode_Base_OnHeroDeath, in_source_avatar) == 0x000000, "Member 'BTS_PyGameMode_Base_OnHeroDeath::in_source_avatar' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_OnHeroDeath, in_target_avatar) == 0x000008, "Member 'BTS_PyGameMode_Base_OnHeroDeath::in_target_avatar' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_OnHeroDeath, modifier_parameterhandle) == 0x000010, "Member 'BTS_PyGameMode_Base_OnHeroDeath::modifier_parameterhandle' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyGameMode_Base_OnHeroDeath;
 
 // PythonFunction BTS_PyGameMode_Base.BTS_PyGameMode_Base.OnHeroReborn
-// 0x0820 (0x0820 - 0x0000)
+// 0x0840 (0x0840 - 0x0000)
 struct BTS_PyGameMode_Base_OnHeroReborn final
 {
 public:
 	class AActor*                                 target_actor;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCharacterRebornParam                  param;                                             // 0x0010(0x0810)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCharacterRebornParam                  param;                                             // 0x0010(0x0830)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BTS_PyGameMode_Base_OnHeroReborn) == 0x000010, "Wrong alignment on BTS_PyGameMode_Base_OnHeroReborn");
-static_assert(sizeof(BTS_PyGameMode_Base_OnHeroReborn) == 0x000820, "Wrong size on BTS_PyGameMode_Base_OnHeroReborn");
-static_assert(offsetof(BTS_PyGameMode_Base_OnHeroReborn, target_actor) == 0x000000, "Member 'BTS_PyGameMode_Base_OnHeroReborn::target_actor' has a wrong offset!");
-static_assert(offsetof(BTS_PyGameMode_Base_OnHeroReborn, param) == 0x000010, "Member 'BTS_PyGameMode_Base_OnHeroReborn::param' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyGameMode_Base_OnHeroReborn;
 
 }
 

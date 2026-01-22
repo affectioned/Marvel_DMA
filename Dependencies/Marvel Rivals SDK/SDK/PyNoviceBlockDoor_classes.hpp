@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceBlockDoor">();
+		STATIC_CLASS_IMPL("PyNoviceBlockDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceBlockDoor")
 	}
 	static class APyNoviceBlockDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNoviceBlockDoor>();
 	}
 };
-static_assert(alignof(APyNoviceBlockDoor) == 0x000010, "Wrong alignment on APyNoviceBlockDoor");
-static_assert(sizeof(APyNoviceBlockDoor) == 0x0006F0, "Wrong size on APyNoviceBlockDoor");
+DUMPER7_ASSERTS_APyNoviceBlockDoor;
 
 }
 

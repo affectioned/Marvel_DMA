@@ -127,11 +127,7 @@ public:
 	EDirection                                    YAxis;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDirection                                    ZAxis;                                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCoordinateSystem) == 0x000001, "Wrong alignment on FCoordinateSystem");
-static_assert(sizeof(FCoordinateSystem) == 0x000003, "Wrong size on FCoordinateSystem");
-static_assert(offsetof(FCoordinateSystem, XAxis) == 0x000000, "Member 'FCoordinateSystem::XAxis' has a wrong offset!");
-static_assert(offsetof(FCoordinateSystem, YAxis) == 0x000001, "Member 'FCoordinateSystem::YAxis' has a wrong offset!");
-static_assert(offsetof(FCoordinateSystem, ZAxis) == 0x000002, "Member 'FCoordinateSystem::ZAxis' has a wrong offset!");
+DUMPER7_ASSERTS_FCoordinateSystem;
 
 // ScriptStruct RigLogicModule.MeshBlendShapeChannelMapping
 // 0x0008 (0x0008 - 0x0000)
@@ -141,10 +137,7 @@ public:
 	int32                                         MeshIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BlendShapeChannelIndex;                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMeshBlendShapeChannelMapping) == 0x000004, "Wrong alignment on FMeshBlendShapeChannelMapping");
-static_assert(sizeof(FMeshBlendShapeChannelMapping) == 0x000008, "Wrong size on FMeshBlendShapeChannelMapping");
-static_assert(offsetof(FMeshBlendShapeChannelMapping, MeshIndex) == 0x000000, "Member 'FMeshBlendShapeChannelMapping::MeshIndex' has a wrong offset!");
-static_assert(offsetof(FMeshBlendShapeChannelMapping, BlendShapeChannelIndex) == 0x000004, "Member 'FMeshBlendShapeChannelMapping::BlendShapeChannelIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FMeshBlendShapeChannelMapping;
 
 // ScriptStruct RigLogicModule.TextureCoordinate
 // 0x0008 (0x0008 - 0x0000)
@@ -154,10 +147,7 @@ public:
 	float                                         U;                                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         V;                                                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTextureCoordinate) == 0x000004, "Wrong alignment on FTextureCoordinate");
-static_assert(sizeof(FTextureCoordinate) == 0x000008, "Wrong size on FTextureCoordinate");
-static_assert(offsetof(FTextureCoordinate, U) == 0x000000, "Member 'FTextureCoordinate::U' has a wrong offset!");
-static_assert(offsetof(FTextureCoordinate, V) == 0x000004, "Member 'FTextureCoordinate::V' has a wrong offset!");
+DUMPER7_ASSERTS_FTextureCoordinate;
 
 // ScriptStruct RigLogicModule.VertexLayout
 // 0x000C (0x000C - 0x0000)
@@ -168,11 +158,7 @@ public:
 	int32                                         TextureCoordinate;                                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Normal;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVertexLayout) == 0x000004, "Wrong alignment on FVertexLayout");
-static_assert(sizeof(FVertexLayout) == 0x00000C, "Wrong size on FVertexLayout");
-static_assert(offsetof(FVertexLayout, Position) == 0x000000, "Member 'FVertexLayout::Position' has a wrong offset!");
-static_assert(offsetof(FVertexLayout, TextureCoordinate) == 0x000004, "Member 'FVertexLayout::TextureCoordinate' has a wrong offset!");
-static_assert(offsetof(FVertexLayout, Normal) == 0x000008, "Member 'FVertexLayout::Normal' has a wrong offset!");
+DUMPER7_ASSERTS_FVertexLayout;
 
 // ScriptStruct RigLogicModule.AnimNode_RigLogic
 // 0x0050 (0x0078 - 0x0028)
@@ -183,10 +169,7 @@ public:
 	int32                                         LODThreshold;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3C[0x3C];                                      // 0x003C(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimNode_RigLogic) == 0x000008, "Wrong alignment on FAnimNode_RigLogic");
-static_assert(sizeof(FAnimNode_RigLogic) == 0x000078, "Wrong size on FAnimNode_RigLogic");
-static_assert(offsetof(FAnimNode_RigLogic, AnimSequence) == 0x000028, "Member 'FAnimNode_RigLogic::AnimSequence' has a wrong offset!");
-static_assert(offsetof(FAnimNode_RigLogic, LODThreshold) == 0x000038, "Member 'FAnimNode_RigLogic::LODThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimNode_RigLogic;
 
 // ScriptStruct RigLogicModule.RigUnit_RigLogic_IntArray
 // 0x0010 (0x0010 - 0x0000)
@@ -195,9 +178,7 @@ struct FRigUnit_RigLogic_IntArray final
 public:
 	TArray<int32>                                 Values;                                            // 0x0000(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRigUnit_RigLogic_IntArray) == 0x000008, "Wrong alignment on FRigUnit_RigLogic_IntArray");
-static_assert(sizeof(FRigUnit_RigLogic_IntArray) == 0x000010, "Wrong size on FRigUnit_RigLogic_IntArray");
-static_assert(offsetof(FRigUnit_RigLogic_IntArray, Values) == 0x000000, "Member 'FRigUnit_RigLogic_IntArray::Values' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_RigLogic_IntArray;
 
 // ScriptStruct RigLogicModule.RigUnit_RigLogic_Data
 // 0x0098 (0x0098 - 0x0000)
@@ -216,17 +197,7 @@ public:
 	uint32                                        CurrentLOD;                                        // 0x0090(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRigUnit_RigLogic_Data) == 0x000008, "Wrong alignment on FRigUnit_RigLogic_Data");
-static_assert(sizeof(FRigUnit_RigLogic_Data) == 0x000098, "Wrong size on FRigUnit_RigLogic_Data");
-static_assert(offsetof(FRigUnit_RigLogic_Data, SkelMeshComponent) == 0x000000, "Member 'FRigUnit_RigLogic_Data::SkelMeshComponent' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, InputCurveIndices) == 0x000020, "Member 'FRigUnit_RigLogic_Data::InputCurveIndices' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, NeuralNetMaskCurveIndices) == 0x000030, "Member 'FRigUnit_RigLogic_Data::NeuralNetMaskCurveIndices' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, HierarchyBoneIndices) == 0x000040, "Member 'FRigUnit_RigLogic_Data::HierarchyBoneIndices' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, MorphTargetCurveIndices) == 0x000050, "Member 'FRigUnit_RigLogic_Data::MorphTargetCurveIndices' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, BlendShapeIndices) == 0x000060, "Member 'FRigUnit_RigLogic_Data::BlendShapeIndices' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, CurveElementIndicesForAnimMaps) == 0x000070, "Member 'FRigUnit_RigLogic_Data::CurveElementIndicesForAnimMaps' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, RigLogicIndicesForAnimMaps) == 0x000080, "Member 'FRigUnit_RigLogic_Data::RigLogicIndicesForAnimMaps' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic_Data, CurrentLOD) == 0x000090, "Member 'FRigUnit_RigLogic_Data::CurrentLOD' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_RigLogic_Data;
 
 // ScriptStruct RigLogicModule.RigUnit_RigLogic
 // 0x00A0 (0x0210 - 0x0170)
@@ -237,10 +208,7 @@ public:
 	bool                                          bIsInitialized;                                    // 0x0208(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FRigUnit_RigLogic) == 0x000010, "Wrong alignment on FRigUnit_RigLogic");
-static_assert(sizeof(FRigUnit_RigLogic) == 0x000210, "Wrong size on FRigUnit_RigLogic");
-static_assert(offsetof(FRigUnit_RigLogic, Data) == 0x000170, "Member 'FRigUnit_RigLogic::Data' has a wrong offset!");
-static_assert(offsetof(FRigUnit_RigLogic, bIsInitialized) == 0x000208, "Member 'FRigUnit_RigLogic::bIsInitialized' has a wrong offset!");
+DUMPER7_ASSERTS_FRigUnit_RigLogic;
 
 }
 

@@ -17,23 +17,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallGift_Vedio.PyWidget_MallGift_Video
-// 0x0068 (0x0660 - 0x05F8)
+// 0x0068 (0x0668 - 0x0600)
 class UPyWidget_MallGift_Video final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_Send;                                      // 0x05F8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Receive_Pre;                               // 0x0600(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Receive;                                   // 0x0608(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaPlayer*                           VideoPlayer;                                       // 0x0610(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoSendSource;                                   // 0x0618(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoReceiveSource1;                               // 0x0620(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoReceiveSource2;                               // 0x0628(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoSendDiscordSource;                            // 0x0630(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoReceiveDiscordSource1;                        // 0x0638(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaSource*                           VideoReceiveDiscordSource2;                        // 0x0640(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         VideoEnsureTime;                                   // 0x0648(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnVideoEnd;                                        // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Send;                                      // 0x0600(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Receive_Pre;                               // 0x0608(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Receive;                                   // 0x0610(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaPlayer*                           VideoPlayer;                                       // 0x0618(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoSendSource;                                   // 0x0620(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoReceiveSource1;                               // 0x0628(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoReceiveSource2;                               // 0x0630(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoSendDiscordSource;                            // 0x0638(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoReceiveDiscordSource1;                        // 0x0640(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaSource*                           VideoReceiveDiscordSource2;                        // 0x0648(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         VideoEnsureTime;                                   // 0x0650(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_654[0x4];                                      // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnVideoEnd;                                        // 0x0658(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,27 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Video">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Video")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Video")
 	}
 	static class UPyWidget_MallGift_Video* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Video>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Video) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Video");
-static_assert(sizeof(UPyWidget_MallGift_Video) == 0x000660, "Wrong size on UPyWidget_MallGift_Video");
-static_assert(offsetof(UPyWidget_MallGift_Video, AkEvent_Send) == 0x0005F8, "Member 'UPyWidget_MallGift_Video::AkEvent_Send' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, AkEvent_Receive_Pre) == 0x000600, "Member 'UPyWidget_MallGift_Video::AkEvent_Receive_Pre' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, AkEvent_Receive) == 0x000608, "Member 'UPyWidget_MallGift_Video::AkEvent_Receive' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoPlayer) == 0x000610, "Member 'UPyWidget_MallGift_Video::VideoPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoSendSource) == 0x000618, "Member 'UPyWidget_MallGift_Video::VideoSendSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoReceiveSource1) == 0x000620, "Member 'UPyWidget_MallGift_Video::VideoReceiveSource1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoReceiveSource2) == 0x000628, "Member 'UPyWidget_MallGift_Video::VideoReceiveSource2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoSendDiscordSource) == 0x000630, "Member 'UPyWidget_MallGift_Video::VideoSendDiscordSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoReceiveDiscordSource1) == 0x000638, "Member 'UPyWidget_MallGift_Video::VideoReceiveDiscordSource1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoReceiveDiscordSource2) == 0x000640, "Member 'UPyWidget_MallGift_Video::VideoReceiveDiscordSource2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, VideoEnsureTime) == 0x000648, "Member 'UPyWidget_MallGift_Video::VideoEnsureTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Video, OnVideoEnd) == 0x000650, "Member 'UPyWidget_MallGift_Video::OnVideoEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Video;
 
 }
 

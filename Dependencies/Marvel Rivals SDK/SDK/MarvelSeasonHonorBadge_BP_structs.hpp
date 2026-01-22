@@ -27,14 +27,7 @@ public:
 	TSoftClassPtr<class UClass>                   BadgeWidgetBP_53_6C9125F34B226EB52989139BF353C03C; // 0x0078(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   BadgeWidgetSmallBP_54_DD7A0FF640C8D63448C1DAA38D114688; // 0x00A8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelSeasonHonorBadge_BP) == 0x000008, "Wrong alignment on FMarvelSeasonHonorBadge_BP");
-static_assert(sizeof(FMarvelSeasonHonorBadge_BP) == 0x0000D8, "Wrong size on FMarvelSeasonHonorBadge_BP");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, BgIcon_56_633CEDE947C130C73CEC28BBF7259139) == 0x000000, "Member 'FMarvelSeasonHonorBadge_BP::BgIcon_56_633CEDE947C130C73CEC28BBF7259139' has a wrong offset!");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, LogoIcon_55_B36AC6094C4F8BB37FBF4F9F99BE4487) == 0x000030, "Member 'FMarvelSeasonHonorBadge_BP::LogoIcon_55_B36AC6094C4F8BB37FBF4F9F99BE4487' has a wrong offset!");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, Delivery_26_76364A6D44E67D8FE06A63B379B0BBF5) == 0x000060, "Member 'FMarvelSeasonHonorBadge_BP::Delivery_26_76364A6D44E67D8FE06A63B379B0BBF5' has a wrong offset!");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, BaseComment_29_7642F6954F72FAFADBAC6D9EF77A754B) == 0x000068, "Member 'FMarvelSeasonHonorBadge_BP::BaseComment_29_7642F6954F72FAFADBAC6D9EF77A754B' has a wrong offset!");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, BadgeWidgetBP_53_6C9125F34B226EB52989139BF353C03C) == 0x000078, "Member 'FMarvelSeasonHonorBadge_BP::BadgeWidgetBP_53_6C9125F34B226EB52989139BF353C03C' has a wrong offset!");
-static_assert(offsetof(FMarvelSeasonHonorBadge_BP, BadgeWidgetSmallBP_54_DD7A0FF640C8D63448C1DAA38D114688) == 0x0000A8, "Member 'FMarvelSeasonHonorBadge_BP::BadgeWidgetSmallBP_54_DD7A0FF640C8D63448C1DAA38D114688' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelSeasonHonorBadge_BP;
 
 }
 

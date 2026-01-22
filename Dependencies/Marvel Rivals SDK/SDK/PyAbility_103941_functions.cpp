@@ -17,28 +17,127 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_103941.PyCue_Scope_HitImpact_10394101.OnExecuteCameraShake
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.SetAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// class UMarvelGameplayAbility*           Ability_0                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UPyCue_Scope_HitImpact_10394101::OnExecuteCameraShake(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
+void UPyWidget_Extra_ThorCharge::SetAbility(class UMarvelGameplayAbility* Ability_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Scope_HitImpact_10394101", "OnExecuteCameraShake");
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "SetAbility");
 
-	Params::PyCue_Scope_HitImpact_10394101_OnExecuteCameraShake Parms{};
+	Params::PyWidget_Extra_ThorCharge_SetAbility Parms{};
 
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
+	Parms.Ability_0 = Ability_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Extra_ThorCharge::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.Activate
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Extra_ThorCharge::Activate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "Activate");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.Deactivate
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Extra_ThorCharge::Deactivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "Deactivate");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.GetChargePercent
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float UPyWidget_Extra_ThorCharge::GetChargePercent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "GetChargePercent");
+
+	Params::PyWidget_Extra_ThorCharge_GetChargePercent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.BeginMaxCharge
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Extra_ThorCharge::BeginMaxCharge()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "BeginMaxCharge");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -505,6 +604,60 @@ void UPyAbility_103941::NativeOnMontageInterrupted(const class FString& Tag)
 }
 
 
+// PythonFunction PyAbility_103941.PyCue_Ability_Loop_10394103.WhileActiveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Ability_Loop_10394103::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Ability_Loop_10394103", "WhileActiveFX");
+
+	Params::PyCue_Ability_Loop_10394103_WhileActiveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103941.PyCue_Ability_Loop_10394103.OnRemoveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCue_Ability_Loop_10394103::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Ability_Loop_10394103", "OnRemoveFX");
+
+	Params::PyCue_Ability_Loop_10394103_OnRemoveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_103941.PyEffectiveComponent_10394101.K2_Initialize
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -604,173 +757,20 @@ void UPyEffectiveComponent_10394101::OnTraceResult(class UObject* TraceSource, c
 }
 
 
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.SetAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UMarvelGameplayAbility*           Ability_0                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Extra_ThorCharge::SetAbility(class UMarvelGameplayAbility* Ability_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "SetAbility");
-
-	Params::PyWidget_Extra_ThorCharge_SetAbility Parms{};
-
-	Parms.Ability_0 = Ability_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Extra_ThorCharge::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.Activate
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Extra_ThorCharge::Activate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "Activate");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.Deactivate
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Extra_ThorCharge::Deactivate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "Deactivate");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.GetChargePercent
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float UPyWidget_Extra_ThorCharge::GetChargePercent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "GetChargePercent");
-
-	Params::PyWidget_Extra_ThorCharge_GetChargePercent Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_103941.PyWidget_Extra_ThorCharge.BeginMaxCharge
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Extra_ThorCharge::BeginMaxCharge()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Extra_ThorCharge", "BeginMaxCharge");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyCue_Ability_Loop_10394103.WhileActiveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyAbility_103941.PyCue_Scope_HitImpact_10394101.OnExecuteCameraShake
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void APyCue_Ability_Loop_10394103::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+void UPyCue_Scope_HitImpact_10394101::OnExecuteCameraShake(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Ability_Loop_10394103", "WhileActiveFX");
+		Func = Class->GetFunction("PyCue_Scope_HitImpact_10394101", "OnExecuteCameraShake");
 
-	Params::PyCue_Ability_Loop_10394103_WhileActiveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103941.PyCue_Ability_Loop_10394103.OnRemoveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCue_Ability_Loop_10394103::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Ability_Loop_10394103", "OnRemoveFX");
-
-	Params::PyCue_Ability_Loop_10394103_OnRemoveFX Parms{};
+	Params::PyCue_Scope_HitImpact_10394101_OnExecuteCameraShake Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);

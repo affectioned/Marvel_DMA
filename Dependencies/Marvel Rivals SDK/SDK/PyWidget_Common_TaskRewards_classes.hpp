@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_TaskRewards.PyWidget_Mission_Settlement_Item
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Mission_Settlement_Item : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            TextUpColor;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextCompletedColor;                                // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         GlowTime;                                          // 0x05E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxGlowCount;                                      // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            TextUpColor;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextCompletedColor;                                // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         GlowTime;                                          // 0x05EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxGlowCount;                                      // 0x05F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,34 +37,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_Settlement_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_Settlement_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_Settlement_Item")
 	}
 	static class UPyWidget_Mission_Settlement_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_Settlement_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_Settlement_Item) == 0x000008, "Wrong alignment on UPyWidget_Mission_Settlement_Item");
-static_assert(sizeof(UPyWidget_Mission_Settlement_Item) == 0x0005F0, "Wrong size on UPyWidget_Mission_Settlement_Item");
-static_assert(offsetof(UPyWidget_Mission_Settlement_Item, TextUpColor) == 0x0005BC, "Member 'UPyWidget_Mission_Settlement_Item::TextUpColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_Settlement_Item, TextCompletedColor) == 0x0005D0, "Member 'UPyWidget_Mission_Settlement_Item::TextCompletedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_Settlement_Item, GlowTime) == 0x0005E4, "Member 'UPyWidget_Mission_Settlement_Item::GlowTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_Settlement_Item, MaxGlowCount) == 0x0005E8, "Member 'UPyWidget_Mission_Settlement_Item::MaxGlowCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_Settlement_Item;
 
 // PythonClass PyWidget_Common_TaskRewards.PyWidget_Common_TaskRewards
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Common_TaskRewards : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_Mission_Settlement_Item> WrapBoxItem;                                // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_CommonItem>       ScrollBoxItem;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwitchTime;                                        // 0x05D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DisappearTime;                                     // 0x05D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         IntervalTimeWhenSettle;                            // 0x05D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_GetRewards_FadeIn;                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Toggle;                                    // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_Mission_Settlement_Item> WrapBoxItem;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_CommonItem>       ScrollBoxItem;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwitchTime;                                        // 0x05D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DisappearTime;                                     // 0x05DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         IntervalTimeWhenSettle;                            // 0x05E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_GetRewards_FadeIn;                         // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Toggle;                                    // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
@@ -72,22 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_TaskRewards">();
+		STATIC_CLASS_IMPL("PyWidget_Common_TaskRewards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_TaskRewards")
 	}
 	static class UPyWidget_Common_TaskRewards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_TaskRewards>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_TaskRewards) == 0x000008, "Wrong alignment on UPyWidget_Common_TaskRewards");
-static_assert(sizeof(UPyWidget_Common_TaskRewards) == 0x0005F0, "Wrong size on UPyWidget_Common_TaskRewards");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, WrapBoxItem) == 0x0005C0, "Member 'UPyWidget_Common_TaskRewards::WrapBoxItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, ScrollBoxItem) == 0x0005C8, "Member 'UPyWidget_Common_TaskRewards::ScrollBoxItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, SwitchTime) == 0x0005D0, "Member 'UPyWidget_Common_TaskRewards::SwitchTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, DisappearTime) == 0x0005D4, "Member 'UPyWidget_Common_TaskRewards::DisappearTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, IntervalTimeWhenSettle) == 0x0005D8, "Member 'UPyWidget_Common_TaskRewards::IntervalTimeWhenSettle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, AkEvent_GetRewards_FadeIn) == 0x0005E0, "Member 'UPyWidget_Common_TaskRewards::AkEvent_GetRewards_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_TaskRewards, AkEvent_Toggle) == 0x0005E8, "Member 'UPyWidget_Common_TaskRewards::AkEvent_Toggle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_TaskRewards;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWidget_CommonAbilityActionTip_SetHintText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTip_SetHintText) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTip_SetHintText");
-static_assert(sizeof(PyWidget_CommonAbilityActionTip_SetHintText) == 0x000018, "Wrong size on PyWidget_CommonAbilityActionTip_SetHintText");
-static_assert(offsetof(PyWidget_CommonAbilityActionTip_SetHintText, InText) == 0x000000, "Member 'PyWidget_CommonAbilityActionTip_SetHintText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTip_SetHintText;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTip.SetStyle
 // 0x0060 (0x0060 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_CommonAbilityActionTip_SetStyle final
 public:
 	struct FWidget_ActionTip                      style;                                             // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTip_SetStyle) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTip_SetStyle");
-static_assert(sizeof(PyWidget_CommonAbilityActionTip_SetStyle) == 0x000060, "Wrong size on PyWidget_CommonAbilityActionTip_SetStyle");
-static_assert(offsetof(PyWidget_CommonAbilityActionTip_SetStyle, style) == 0x000000, "Member 'PyWidget_CommonAbilityActionTip_SetStyle::style' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTip_SetStyle;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTip.SetAction
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_CommonAbilityActionTip_SetAction final
 public:
 	class FString                                 InActionName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTip_SetAction) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTip_SetAction");
-static_assert(sizeof(PyWidget_CommonAbilityActionTip_SetAction) == 0x000010, "Wrong size on PyWidget_CommonAbilityActionTip_SetAction");
-static_assert(offsetof(PyWidget_CommonAbilityActionTip_SetAction, InActionName) == 0x000000, "Member 'PyWidget_CommonAbilityActionTip_SetAction::InActionName' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTip_SetAction;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips.AddTips
 // 0x0068 (0x0068 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWidget_ActionTip                      Tips;                                              // 0x0008(0x0060)(Parm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTips_AddTips) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTips_AddTips");
-static_assert(sizeof(PyWidget_CommonAbilityActionTips_AddTips) == 0x000068, "Wrong size on PyWidget_CommonAbilityActionTips_AddTips");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_AddTips, InAbilityID) == 0x000000, "Member 'PyWidget_CommonAbilityActionTips_AddTips::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_AddTips, Tips) == 0x000008, "Member 'PyWidget_CommonAbilityActionTips_AddTips::Tips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTips_AddTips;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips.RemoveTips
 // 0x0004 (0x0004 - 0x0000)
@@ -70,9 +61,7 @@ struct PyWidget_CommonAbilityActionTips_RemoveTips final
 public:
 	int32                                         InAbilityID;                                       // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTips_RemoveTips) == 0x000004, "Wrong alignment on PyWidget_CommonAbilityActionTips_RemoveTips");
-static_assert(sizeof(PyWidget_CommonAbilityActionTips_RemoveTips) == 0x000004, "Wrong size on PyWidget_CommonAbilityActionTips_RemoveTips");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_RemoveTips, InAbilityID) == 0x000000, "Member 'PyWidget_CommonAbilityActionTips_RemoveTips::InAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTips_RemoveTips;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips.RemoveOnlyTips
 // 0x0068 (0x0068 - 0x0000)
@@ -83,10 +72,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWidget_ActionTip                      Tips;                                              // 0x0008(0x0060)(Parm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTips_RemoveOnlyTips) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTips_RemoveOnlyTips");
-static_assert(sizeof(PyWidget_CommonAbilityActionTips_RemoveOnlyTips) == 0x000068, "Wrong size on PyWidget_CommonAbilityActionTips_RemoveOnlyTips");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_RemoveOnlyTips, InAbilityID) == 0x000000, "Member 'PyWidget_CommonAbilityActionTips_RemoveOnlyTips::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_RemoveOnlyTips, Tips) == 0x000008, "Member 'PyWidget_CommonAbilityActionTips_RemoveOnlyTips::Tips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTips_RemoveOnlyTips;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips.AddTipsByActionTipsParam
 // 0x0080 (0x0080 - 0x0000)
@@ -97,10 +83,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActionTipsParam                       Tips;                                              // 0x0008(0x0078)(Parm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam");
-static_assert(sizeof(PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam) == 0x000080, "Wrong size on PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam, IndexID) == 0x000000, "Member 'PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam::IndexID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam, Tips) == 0x000008, "Member 'PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam::Tips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTips_AddTipsByActionTipsParam;
 
 // PythonFunction PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips.RemoveOnlyTipsByActionTipsParam
 // 0x0080 (0x0080 - 0x0000)
@@ -111,10 +94,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FActionTipsParam                       Tips;                                              // 0x0008(0x0078)(Parm)
 };
-static_assert(alignof(PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam) == 0x000008, "Wrong alignment on PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam");
-static_assert(sizeof(PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam) == 0x000080, "Wrong size on PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam, IndexID) == 0x000000, "Member 'PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam::IndexID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam, Tips) == 0x000008, "Member 'PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam::Tips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonAbilityActionTips_RemoveOnlyTipsByActionTipsParam;
 
 }
 

@@ -76,10 +76,7 @@ public:
 	float                                         HorizontalOffsetAngle;                             // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         VerticalOffsetAngle;                               // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FShurikenSpawnInfo) == 0x000004, "Wrong alignment on FShurikenSpawnInfo");
-static_assert(sizeof(FShurikenSpawnInfo) == 0x000008, "Wrong size on FShurikenSpawnInfo");
-static_assert(offsetof(FShurikenSpawnInfo, HorizontalOffsetAngle) == 0x000000, "Member 'FShurikenSpawnInfo::HorizontalOffsetAngle' has a wrong offset!");
-static_assert(offsetof(FShurikenSpawnInfo, VerticalOffsetAngle) == 0x000004, "Member 'FShurikenSpawnInfo::VerticalOffsetAngle' has a wrong offset!");
+DUMPER7_ASSERTS_FShurikenSpawnInfo;
 
 // ScriptStruct Hero_1048.ShurikenRecallInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -88,8 +85,7 @@ struct alignas(0x08) FShurikenRecallInfo final
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FShurikenRecallInfo) == 0x000008, "Wrong alignment on FShurikenRecallInfo");
-static_assert(sizeof(FShurikenRecallInfo) == 0x000028, "Wrong size on FShurikenRecallInfo");
+DUMPER7_ASSERTS_FShurikenRecallInfo;
 
 // ScriptStruct Hero_1048.AbilityStage_104861
 // 0x0008 (0x0008 - 0x0000)
@@ -100,10 +96,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurAttackIndex;                                    // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityStage_104861) == 0x000004, "Wrong alignment on FAbilityStage_104861");
-static_assert(sizeof(FAbilityStage_104861) == 0x000008, "Wrong size on FAbilityStage_104861");
-static_assert(offsetof(FAbilityStage_104861, CurState) == 0x000000, "Member 'FAbilityStage_104861::CurState' has a wrong offset!");
-static_assert(offsetof(FAbilityStage_104861, CurAttackIndex) == 0x000004, "Member 'FAbilityStage_104861::CurAttackIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityStage_104861;
 
 // ScriptStruct Hero_1048.TargetInfo_104861
 // 0x0030 (0x0030 - 0x0000)
@@ -118,13 +111,7 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Index;                                             // 0x002C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTargetInfo_104861) == 0x000008, "Wrong alignment on FTargetInfo_104861");
-static_assert(sizeof(FTargetInfo_104861) == 0x000030, "Wrong size on FTargetInfo_104861");
-static_assert(offsetof(FTargetInfo_104861, Target) == 0x000000, "Member 'FTargetInfo_104861::Target' has a wrong offset!");
-static_assert(offsetof(FTargetInfo_104861, bUseFixedLocation) == 0x000008, "Member 'FTargetInfo_104861::bUseFixedLocation' has a wrong offset!");
-static_assert(offsetof(FTargetInfo_104861, FixedLocation) == 0x000010, "Member 'FTargetInfo_104861::FixedLocation' has a wrong offset!");
-static_assert(offsetof(FTargetInfo_104861, bBlockHit) == 0x000028, "Member 'FTargetInfo_104861::bBlockHit' has a wrong offset!");
-static_assert(offsetof(FTargetInfo_104861, Index) == 0x00002C, "Member 'FTargetInfo_104861::Index' has a wrong offset!");
+DUMPER7_ASSERTS_FTargetInfo_104861;
 
 }
 

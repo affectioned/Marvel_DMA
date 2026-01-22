@@ -23,15 +23,18 @@ class UDashOnCharacterHitFilter_103614_C final : public UDashOnCharacterHitFilte
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DashOnCharacterHitFilter_103614_C">();
+		BP_STATIC_CLASS_IMPL("DashOnCharacterHitFilter_103614_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DashOnCharacterHitFilter_103614_C")
 	}
 	static class UDashOnCharacterHitFilter_103614_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDashOnCharacterHitFilter_103614_C>();
 	}
 };
-static_assert(alignof(UDashOnCharacterHitFilter_103614_C) == 0x000008, "Wrong alignment on UDashOnCharacterHitFilter_103614_C");
-static_assert(sizeof(UDashOnCharacterHitFilter_103614_C) == 0x000040, "Wrong size on UDashOnCharacterHitFilter_103614_C");
+DUMPER7_ASSERTS_UDashOnCharacterHitFilter_103614_C;
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AbilityDuration.PyWidget_AbilityDuration_Top
-// 0x0008 (0x1C28 - 0x1C20)
+// 0x0008 (0x1CD0 - 0x1CC8)
 class UPyWidget_AbilityDuration_Top : public UWidget_AbilityDuration
 {
 public:
-	int32                                         UnitAmount;                                        // 0x1C20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UnitAmount;                                        // 0x1CC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityDuration_Top">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityDuration_Top")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityDuration_Top")
 	}
 	static class UPyWidget_AbilityDuration_Top* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityDuration_Top>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityDuration_Top) == 0x000008, "Wrong alignment on UPyWidget_AbilityDuration_Top");
-static_assert(sizeof(UPyWidget_AbilityDuration_Top) == 0x001C28, "Wrong size on UPyWidget_AbilityDuration_Top");
-static_assert(offsetof(UPyWidget_AbilityDuration_Top, UnitAmount) == 0x001C20, "Member 'UPyWidget_AbilityDuration_Top::UnitAmount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityDuration_Top;
 
 }
 

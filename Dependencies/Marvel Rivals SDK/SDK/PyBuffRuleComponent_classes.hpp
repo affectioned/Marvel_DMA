@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffRuleConfig">();
+		STATIC_CLASS_IMPL("PyBuffRuleConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffRuleConfig")
 	}
 	static class UPyBuffRuleConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffRuleConfig>();
 	}
 };
-static_assert(alignof(UPyBuffRuleConfig) == 0x000008, "Wrong alignment on UPyBuffRuleConfig");
-static_assert(sizeof(UPyBuffRuleConfig) == 0x000040, "Wrong size on UPyBuffRuleConfig");
-static_assert(offsetof(UPyBuffRuleConfig, BuffConfs) == 0x000030, "Member 'UPyBuffRuleConfig::BuffConfs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffRuleConfig;
 
 // PythonClass PyBuffRuleComponent.PyBuffRuleComponent
 // 0x0010 (0x0118 - 0x0108)
@@ -52,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffRuleComponent">();
+		STATIC_CLASS_IMPL("PyBuffRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffRuleComponent")
 	}
 	static class UPyBuffRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBuffRuleComponent) == 0x000008, "Wrong alignment on UPyBuffRuleComponent");
-static_assert(sizeof(UPyBuffRuleComponent) == 0x000118, "Wrong size on UPyBuffRuleComponent");
-static_assert(offsetof(UPyBuffRuleComponent, BuffConfs) == 0x000108, "Member 'UPyBuffRuleComponent::BuffConfs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffRuleComponent;
 
 }
 

@@ -23,15 +23,18 @@ class UAITargetContext_EnemiesInView_BP_C final : public UAITargetContext_Enemie
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITargetContext_EnemiesInView_BP_C">();
+		BP_STATIC_CLASS_IMPL("AITargetContext_EnemiesInView_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_EnemiesInView_BP_C")
 	}
 	static class UAITargetContext_EnemiesInView_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITargetContext_EnemiesInView_BP_C>();
 	}
 };
-static_assert(alignof(UAITargetContext_EnemiesInView_BP_C) == 0x000008, "Wrong alignment on UAITargetContext_EnemiesInView_BP_C");
-static_assert(sizeof(UAITargetContext_EnemiesInView_BP_C) == 0x000088, "Wrong size on UAITargetContext_EnemiesInView_BP_C");
+DUMPER7_ASSERTS_UAITargetContext_EnemiesInView_BP_C;
 
 }
 

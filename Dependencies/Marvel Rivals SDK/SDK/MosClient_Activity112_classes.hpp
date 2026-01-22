@@ -23,15 +23,18 @@ class USpring_Activity_Award_Data final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Spring_Activity_Award_Data">();
+		STATIC_CLASS_IMPL("Spring_Activity_Award_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Spring_Activity_Award_Data")
 	}
 	static class USpring_Activity_Award_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpring_Activity_Award_Data>();
 	}
 };
-static_assert(alignof(USpring_Activity_Award_Data) == 0x000008, "Wrong alignment on USpring_Activity_Award_Data");
-static_assert(sizeof(USpring_Activity_Award_Data) == 0x000030, "Wrong size on USpring_Activity_Award_Data");
+DUMPER7_ASSERTS_USpring_Activity_Award_Data;
 
 }
 

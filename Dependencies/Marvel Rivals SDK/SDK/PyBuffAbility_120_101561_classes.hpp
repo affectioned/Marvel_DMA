@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101561.PyBuffAbility_120_10156190
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_10156190 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         AbilityID;                                         // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ListenAbilityTag;                                  // 0x1374(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ApplyBuffInterval;                                 // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ListenAbilityTag;                                  // 0x138C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ApplyBuffInterval;                                 // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -35,27 +35,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10156190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10156190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10156190")
 	}
 	static class UPyBuffAbility_120_10156190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10156190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10156190) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10156190");
-static_assert(sizeof(UPyBuffAbility_120_10156190) == 0x001388, "Wrong size on UPyBuffAbility_120_10156190");
-static_assert(offsetof(UPyBuffAbility_120_10156190, AbilityID) == 0x001370, "Member 'UPyBuffAbility_120_10156190::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10156190, ListenAbilityTag) == 0x001374, "Member 'UPyBuffAbility_120_10156190::ListenAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10156190, BuffID) == 0x001380, "Member 'UPyBuffAbility_120_10156190::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10156190, ApplyBuffInterval) == 0x001384, "Member 'UPyBuffAbility_120_10156190::ApplyBuffInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10156190;
 
 // PythonClass PyBuffAbility_120_101561.PyBuffAbility_120_10156192
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10156192 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         AbilityID;                                         // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtendAbilityDuration;                             // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtendAbilityDuration;                             // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -67,17 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10156192">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10156192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10156192")
 	}
 	static class UPyBuffAbility_120_10156192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10156192>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10156192) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10156192");
-static_assert(sizeof(UPyBuffAbility_120_10156192) == 0x001378, "Wrong size on UPyBuffAbility_120_10156192");
-static_assert(offsetof(UPyBuffAbility_120_10156192, AbilityID) == 0x001370, "Member 'UPyBuffAbility_120_10156192::AbilityID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10156192, ExtendAbilityDuration) == 0x001374, "Member 'UPyBuffAbility_120_10156192::ExtendAbilityDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10156192;
 
 }
 

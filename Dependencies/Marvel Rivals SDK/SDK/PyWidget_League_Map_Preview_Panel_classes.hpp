@@ -18,24 +18,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Map_Preview_Panel.PyWidget_League_Map_Preview_Panel
-// 0x0090 (0x0688 - 0x05F8)
+// 0x0090 (0x0690 - 0x0600)
 class UPyWidget_League_Map_Preview_Panel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                SelectMapColumnClass;                              // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PageMapItemNum;                                    // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x0624(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x0634(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x0644(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x0654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x0664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         HoveredRenderValue;                                // 0x0674(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BG_FadeIn_Delay_Time;                              // 0x0678(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Items_FadeIn_Time;                                 // 0x067C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableWheelChangePage;                             // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SelectMapColumnClass;                              // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PageMapItemNum;                                    // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x064C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x065C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x066C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         HoveredRenderValue;                                // 0x067C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BG_FadeIn_Delay_Time;                              // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Items_FadeIn_Time;                                 // 0x0684(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableWheelChangePage;                             // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,29 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Map_Preview_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_League_Map_Preview_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Map_Preview_Panel")
 	}
 	static class UPyWidget_League_Map_Preview_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Map_Preview_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Map_Preview_Panel) == 0x000008, "Wrong alignment on UPyWidget_League_Map_Preview_Panel");
-static_assert(sizeof(UPyWidget_League_Map_Preview_Panel) == 0x000688, "Wrong size on UPyWidget_League_Map_Preview_Panel");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, MapItem) == 0x0005F8, "Member 'UPyWidget_League_Map_Preview_Panel::MapItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, PageCuttingItem) == 0x000600, "Member 'UPyWidget_League_Map_Preview_Panel::PageCuttingItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, SelectMapColumnClass) == 0x000608, "Member 'UPyWidget_League_Map_Preview_Panel::SelectMapColumnClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, PageMapItemNum) == 0x000610, "Member 'UPyWidget_League_Map_Preview_Panel::PageMapItemNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Normal_Left) == 0x000614, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Normal_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Normal_Mid) == 0x000624, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Normal_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Normal_Right) == 0x000634, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Normal_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Hover_Left) == 0x000644, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Hover_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Hover_Mid) == 0x000654, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Hover_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Mode_Item_Padding_Hover_Right) == 0x000664, "Member 'UPyWidget_League_Map_Preview_Panel::Mode_Item_Padding_Hover_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, HoveredRenderValue) == 0x000674, "Member 'UPyWidget_League_Map_Preview_Panel::HoveredRenderValue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, BG_FadeIn_Delay_Time) == 0x000678, "Member 'UPyWidget_League_Map_Preview_Panel::BG_FadeIn_Delay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, Items_FadeIn_Time) == 0x00067C, "Member 'UPyWidget_League_Map_Preview_Panel::Items_FadeIn_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Map_Preview_Panel, EnableWheelChangePage) == 0x000680, "Member 'UPyWidget_League_Map_Preview_Panel::EnableWheelChangePage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Map_Preview_Panel;
 
 }
 

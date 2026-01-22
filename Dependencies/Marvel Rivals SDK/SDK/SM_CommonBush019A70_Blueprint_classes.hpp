@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_CommonBush019A70_Blueprint.SM_CommonBush019A70_Blueprint_C
-// 0x0030 (0x0720 - 0x06F0)
+// 0x0030 (0x0730 - 0x0700)
 class ASM_CommonBush019A70_Blueprint_C final : public AEnvironmentStaticActor
 {
 public:
-	class UStaticMeshComponent*                   SM_WakandaH01Prop006A3_StaticMeshComponent0;       // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_CommonBush019A72_StaticMeshComponent0;          // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_CommonBush019A68_StaticMeshComponent0;          // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_CommonBush019A70_StaticMeshComponent0;          // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachStaticMesh;                                  // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_WakandaH01Prop006A3_StaticMeshComponent0;       // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_CommonBush019A72_StaticMeshComponent0;          // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_CommonBush019A68_StaticMeshComponent0;          // 0x0710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_CommonBush019A70_StaticMeshComponent0;          // 0x0718(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachStaticMesh;                                  // 0x0720(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_CommonBush019A70_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("SM_CommonBush019A70_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_CommonBush019A70_Blueprint_C")
 	}
 	static class ASM_CommonBush019A70_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_CommonBush019A70_Blueprint_C>();
 	}
 };
-static_assert(alignof(ASM_CommonBush019A70_Blueprint_C) == 0x000010, "Wrong alignment on ASM_CommonBush019A70_Blueprint_C");
-static_assert(sizeof(ASM_CommonBush019A70_Blueprint_C) == 0x000720, "Wrong size on ASM_CommonBush019A70_Blueprint_C");
-static_assert(offsetof(ASM_CommonBush019A70_Blueprint_C, SM_WakandaH01Prop006A3_StaticMeshComponent0) == 0x0006F0, "Member 'ASM_CommonBush019A70_Blueprint_C::SM_WakandaH01Prop006A3_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ASM_CommonBush019A70_Blueprint_C, SM_CommonBush019A72_StaticMeshComponent0) == 0x0006F8, "Member 'ASM_CommonBush019A70_Blueprint_C::SM_CommonBush019A72_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ASM_CommonBush019A70_Blueprint_C, SM_CommonBush019A68_StaticMeshComponent0) == 0x000700, "Member 'ASM_CommonBush019A70_Blueprint_C::SM_CommonBush019A68_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ASM_CommonBush019A70_Blueprint_C, SM_CommonBush019A70_StaticMeshComponent0) == 0x000708, "Member 'ASM_CommonBush019A70_Blueprint_C::SM_CommonBush019A70_StaticMeshComponent0' has a wrong offset!");
-static_assert(offsetof(ASM_CommonBush019A70_Blueprint_C, AttachStaticMesh) == 0x000710, "Member 'ASM_CommonBush019A70_Blueprint_C::AttachStaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_CommonBush019A70_Blueprint_C;
 
 }
 

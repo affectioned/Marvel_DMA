@@ -25,18 +25,21 @@ class UPyWidget_LeagueChat_PlayerNameItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChat_PlayerNameItem">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChat_PlayerNameItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChat_PlayerNameItem")
 	}
 	static class UPyWidget_LeagueChat_PlayerNameItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChat_PlayerNameItem>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChat_PlayerNameItem) == 0x000008, "Wrong alignment on UPyWidget_LeagueChat_PlayerNameItem");
-static_assert(sizeof(UPyWidget_LeagueChat_PlayerNameItem) == 0x000030, "Wrong size on UPyWidget_LeagueChat_PlayerNameItem");
+DUMPER7_ASSERTS_UPyWidget_LeagueChat_PlayerNameItem;
 
 // PythonClass PyWidget_LeagueChat_PlayerList.PyWidget_LeagueChat_PlayerNameEntry
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_LeagueChat_PlayerNameEntry final : public UWidget_ListEntry
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChat_PlayerNameEntry">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChat_PlayerNameEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChat_PlayerNameEntry")
 	}
 	static class UPyWidget_LeagueChat_PlayerNameEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChat_PlayerNameEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChat_PlayerNameEntry) == 0x000008, "Wrong alignment on UPyWidget_LeagueChat_PlayerNameEntry");
-static_assert(sizeof(UPyWidget_LeagueChat_PlayerNameEntry) == 0x000570, "Wrong size on UPyWidget_LeagueChat_PlayerNameEntry");
+DUMPER7_ASSERTS_UPyWidget_LeagueChat_PlayerNameEntry;
 
 // PythonClass PyWidget_LeagueChat_PlayerList.PyWidget_LeagueChat_PlayerList
 // 0x0008 (0x03C0 - 0x03B8)
@@ -66,16 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChat_PlayerList">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChat_PlayerList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChat_PlayerList")
 	}
 	static class UPyWidget_LeagueChat_PlayerList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChat_PlayerList>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChat_PlayerList) == 0x000008, "Wrong alignment on UPyWidget_LeagueChat_PlayerList");
-static_assert(sizeof(UPyWidget_LeagueChat_PlayerList) == 0x0003C0, "Wrong size on UPyWidget_LeagueChat_PlayerList");
-static_assert(offsetof(UPyWidget_LeagueChat_PlayerList, bDisplayOnly) == 0x0003B8, "Member 'UPyWidget_LeagueChat_PlayerList::bDisplayOnly' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChat_PlayerList;
 
 }
 

@@ -24,9 +24,7 @@ struct PyLevelSummoned_20000006_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000006_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelSummoned_20000006_ReceiveTick");
-static_assert(sizeof(PyLevelSummoned_20000006_ReceiveTick) == 0x000004, "Wrong size on PyLevelSummoned_20000006_ReceiveTick");
-static_assert(offsetof(PyLevelSummoned_20000006_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelSummoned_20000006_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000006_ReceiveTick;
 
 // PythonFunction PyLevelSummoned_20000006.PyLevelSummoned_20000006.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000006_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_20000006_OnDeath");
-static_assert(sizeof(PyLevelSummoned_20000006_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_20000006_OnDeath");
-static_assert(offsetof(PyLevelSummoned_20000006_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_20000006_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000006_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_20000006_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20000006_OnDeath, ParameterHandle) == 0x000010, "Member 'PyLevelSummoned_20000006_OnDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000006_OnDeath;
 
 // PythonFunction PyLevelSummoned_20000006.PyLevelSummoned_20000006.K2_SetState
 // 0x0004 (0x0004 - 0x0000)
@@ -50,9 +44,7 @@ struct PyLevelSummoned_20000006_K2_SetState final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20000006_K2_SetState) == 0x000004, "Wrong alignment on PyLevelSummoned_20000006_K2_SetState");
-static_assert(sizeof(PyLevelSummoned_20000006_K2_SetState) == 0x000004, "Wrong size on PyLevelSummoned_20000006_K2_SetState");
-static_assert(offsetof(PyLevelSummoned_20000006_K2_SetState, NewState) == 0x000000, "Member 'PyLevelSummoned_20000006_K2_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20000006_K2_SetState;
 
 // PythonFunction PyLevelSummoned_20000006.PyOverlapHandlerComponent_ManaEgg.ApplyEffectOnActorOverlap
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +53,7 @@ struct PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap) == 0x000008, "Wrong alignment on PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap");
-static_assert(sizeof(PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap) == 0x000008, "Wrong size on PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap");
-static_assert(offsetof(PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap, InActor) == 0x000000, "Member 'PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyOverlapHandlerComponent_ManaEgg_ApplyEffectOnActorOverlap;
 
 // PythonFunction PyLevelSummoned_20000006.BuffCue_20020401.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -73,10 +63,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BuffCue_20020401_WhileActiveFX) == 0x000008, "Wrong alignment on BuffCue_20020401_WhileActiveFX");
-static_assert(sizeof(BuffCue_20020401_WhileActiveFX) == 0x0001D8, "Wrong size on BuffCue_20020401_WhileActiveFX");
-static_assert(offsetof(BuffCue_20020401_WhileActiveFX, MyTarget) == 0x000000, "Member 'BuffCue_20020401_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(BuffCue_20020401_WhileActiveFX, Parameters) == 0x000008, "Member 'BuffCue_20020401_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_BuffCue_20020401_WhileActiveFX;
 
 // PythonFunction PyLevelSummoned_20000006.BuffCue_20020401.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -86,10 +73,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BuffCue_20020401_OnRemoveFX) == 0x000008, "Wrong alignment on BuffCue_20020401_OnRemoveFX");
-static_assert(sizeof(BuffCue_20020401_OnRemoveFX) == 0x0001D8, "Wrong size on BuffCue_20020401_OnRemoveFX");
-static_assert(offsetof(BuffCue_20020401_OnRemoveFX, MyTarget) == 0x000000, "Member 'BuffCue_20020401_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(BuffCue_20020401_OnRemoveFX, Parameters) == 0x000008, "Member 'BuffCue_20020401_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_BuffCue_20020401_OnRemoveFX;
 
 // PythonFunction PyLevelSummoned_20000006.PyCue_Summoner_Loop_20000006.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -99,10 +83,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_20000006_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_20000006_WhileActiveFX");
-static_assert(sizeof(PyCue_Summoner_Loop_20000006_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_20000006_WhileActiveFX");
-static_assert(offsetof(PyCue_Summoner_Loop_20000006_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_20000006_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_20000006_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_20000006_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20000006_WhileActiveFX;
 
 }
 

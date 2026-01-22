@@ -184,6 +184,17 @@ enum class EFrictionCombineMode : uint8
 	EFrictionCombineMode_MAX                 = 4,
 };
 
+// ScriptStruct PhysicsCore.PhysicalMaterialStrength
+// 0x000C (0x000C - 0x0000)
+struct FPhysicalMaterialStrength final
+{
+public:
+	float                                         TensileStrength;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CompressionStrength;                               // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShearStrength;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPhysicalMaterialStrength;
+
 // ScriptStruct PhysicsCore.BodyInstanceCore
 // 0x0018 (0x0018 - 0x0000)
 struct alignas(0x08) FBodyInstanceCore
@@ -200,23 +211,7 @@ public:
 	uint8                                         bUpdateMassWhenScaleChanges : 1;                   // 0x0011(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBodyInstanceCore) == 0x000008, "Wrong alignment on FBodyInstanceCore");
-static_assert(sizeof(FBodyInstanceCore) == 0x000018, "Wrong size on FBodyInstanceCore");
-
-// ScriptStruct PhysicsCore.PhysicalMaterialStrength
-// 0x000C (0x000C - 0x0000)
-struct FPhysicalMaterialStrength final
-{
-public:
-	float                                         TensileStrength;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CompressionStrength;                               // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShearStrength;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPhysicalMaterialStrength) == 0x000004, "Wrong alignment on FPhysicalMaterialStrength");
-static_assert(sizeof(FPhysicalMaterialStrength) == 0x00000C, "Wrong size on FPhysicalMaterialStrength");
-static_assert(offsetof(FPhysicalMaterialStrength, TensileStrength) == 0x000000, "Member 'FPhysicalMaterialStrength::TensileStrength' has a wrong offset!");
-static_assert(offsetof(FPhysicalMaterialStrength, CompressionStrength) == 0x000004, "Member 'FPhysicalMaterialStrength::CompressionStrength' has a wrong offset!");
-static_assert(offsetof(FPhysicalMaterialStrength, ShearStrength) == 0x000008, "Member 'FPhysicalMaterialStrength::ShearStrength' has a wrong offset!");
+DUMPER7_ASSERTS_FBodyInstanceCore;
 
 }
 

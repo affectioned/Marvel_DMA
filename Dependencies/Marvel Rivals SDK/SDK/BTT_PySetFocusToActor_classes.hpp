@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PySetFocusToActor">();
+		STATIC_CLASS_IMPL("BTT_PySetFocusToActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PySetFocusToActor")
 	}
 	static class UBTT_PySetFocusToActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PySetFocusToActor>();
 	}
 };
-static_assert(alignof(UBTT_PySetFocusToActor) == 0x000008, "Wrong alignment on UBTT_PySetFocusToActor");
-static_assert(sizeof(UBTT_PySetFocusToActor) == 0x0000F0, "Wrong size on UBTT_PySetFocusToActor");
-static_assert(offsetof(UBTT_PySetFocusToActor, InFocusTarget) == 0x0000C0, "Member 'UBTT_PySetFocusToActor::InFocusTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PySetFocusToActor;
 
 }
 

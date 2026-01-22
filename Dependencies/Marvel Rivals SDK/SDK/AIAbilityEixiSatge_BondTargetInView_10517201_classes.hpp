@@ -23,15 +23,18 @@ class UAIAbilityEixiSatge_BondTargetInView_10517201_C final : public UAIAbilityE
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityEixiSatge_BondTargetInView_10517201_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityEixiSatge_BondTargetInView_10517201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityEixiSatge_BondTargetInView_10517201_C")
 	}
 	static class UAIAbilityEixiSatge_BondTargetInView_10517201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityEixiSatge_BondTargetInView_10517201_C>();
 	}
 };
-static_assert(alignof(UAIAbilityEixiSatge_BondTargetInView_10517201_C) == 0x000008, "Wrong alignment on UAIAbilityEixiSatge_BondTargetInView_10517201_C");
-static_assert(sizeof(UAIAbilityEixiSatge_BondTargetInView_10517201_C) == 0x0000D0, "Wrong size on UAIAbilityEixiSatge_BondTargetInView_10517201_C");
+DUMPER7_ASSERTS_UAIAbilityEixiSatge_BondTargetInView_10517201_C;
 
 }
 

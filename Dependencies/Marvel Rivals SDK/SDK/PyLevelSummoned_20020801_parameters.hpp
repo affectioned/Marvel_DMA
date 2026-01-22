@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,11 +26,7 @@ public:
 	class AActor*                                 Dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               Parm;                                              // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020801_OnTakeDamage) == 0x000008, "Wrong alignment on PyLevelSummoned_20020801_OnTakeDamage");
-static_assert(sizeof(PyLevelSummoned_20020801_OnTakeDamage) == 0x000028, "Wrong size on PyLevelSummoned_20020801_OnTakeDamage");
-static_assert(offsetof(PyLevelSummoned_20020801_OnTakeDamage, Source) == 0x000000, "Member 'PyLevelSummoned_20020801_OnTakeDamage::Source' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020801_OnTakeDamage, Dest) == 0x000008, "Member 'PyLevelSummoned_20020801_OnTakeDamage::Dest' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020801_OnTakeDamage, Parm) == 0x000010, "Member 'PyLevelSummoned_20020801_OnTakeDamage::Parm' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020801_OnTakeDamage;
 
 // PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -40,11 +37,17 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020801_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_20020801_OnDeath");
-static_assert(sizeof(PyLevelSummoned_20020801_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_20020801_OnDeath");
-static_assert(offsetof(PyLevelSummoned_20020801_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_20020801_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020801_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_20020801_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_20020801_OnDeath, ParameterHandle) == 0x000010, "Member 'PyLevelSummoned_20020801_OnDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020801_OnDeath;
+
+// PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.OnHealthChanged
+// 0x0020 (0x0020 - 0x0000)
+struct PyLevelSummoned_20020801_OnHealthChanged final
+{
+public:
+	class AActor*                                 InSourceAvatar;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyLevelSummoned_20020801_OnHealthChanged;
 
 // PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.K2_SetShieldState
 // 0x0001 (0x0001 - 0x0000)
@@ -53,9 +56,27 @@ struct PyLevelSummoned_20020801_K2_SetShieldState final
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_20020801_K2_SetShieldState) == 0x000001, "Wrong alignment on PyLevelSummoned_20020801_K2_SetShieldState");
-static_assert(sizeof(PyLevelSummoned_20020801_K2_SetShieldState) == 0x000001, "Wrong size on PyLevelSummoned_20020801_K2_SetShieldState");
-static_assert(offsetof(PyLevelSummoned_20020801_K2_SetShieldState, Active) == 0x000000, "Member 'PyLevelSummoned_20020801_K2_SetShieldState::Active' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_20020801_K2_SetShieldState;
+
+// PythonFunction PyLevelSummoned_20020801.PyCue_Summoner_Loop_20020801_BP.WhileActive
+// 0x01E0 (0x01E0 - 0x0000)
+struct PyCue_Summoner_Loop_20020801_BP_WhileActive final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20020801_BP_WhileActive;
+
+// PythonFunction PyLevelSummoned_20020801.PyCue_Summoner_Loop_20020801_BP.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct PyCue_Summoner_Loop_20020801_BP_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_20020801_BP_ReceiveTick;
 
 }
 

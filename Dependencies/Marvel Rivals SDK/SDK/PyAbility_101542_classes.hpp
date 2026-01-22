@@ -28,20 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101542">();
+		STATIC_CLASS_IMPL("PyConfig_101542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101542")
 	}
 	static class UPyConfig_101542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101542>();
 	}
 };
-static_assert(alignof(UPyConfig_101542) == 0x000008, "Wrong alignment on UPyConfig_101542");
-static_assert(sizeof(UPyConfig_101542) == 0x0000C8, "Wrong size on UPyConfig_101542");
-static_assert(offsetof(UPyConfig_101542, ActiveUserSetting) == 0x000098, "Member 'UPyConfig_101542::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101542, ActiveWaitTime) == 0x0000C0, "Member 'UPyConfig_101542::ActiveWaitTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101542;
 
 // PythonClass PyAbility_101542.PyAbility_101542
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101542 : public UMarvelGameplayAbility
 {
 public:
@@ -56,18 +57,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101542">();
+		STATIC_CLASS_IMPL("PyAbility_101542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101542")
 	}
 	static class UPyAbility_101542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101542>();
 	}
 };
-static_assert(alignof(UPyAbility_101542) == 0x000008, "Wrong alignment on UPyAbility_101542");
-static_assert(sizeof(UPyAbility_101542) == 0x0029F0, "Wrong size on UPyAbility_101542");
+DUMPER7_ASSERTS_UPyAbility_101542;
 
 // PythonClass PyAbility_101542.PyUIController_101542
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_101542 final : public UUIC_Ability
 {
 public:
@@ -77,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101542">();
+		STATIC_CLASS_IMPL("PyUIController_101542")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101542")
 	}
 	static class UPyUIController_101542* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101542>();
 	}
 };
-static_assert(alignof(UPyUIController_101542) == 0x000008, "Wrong alignment on UPyUIController_101542");
-static_assert(sizeof(UPyUIController_101542) == 0x000F10, "Wrong size on UPyUIController_101542");
+DUMPER7_ASSERTS_UPyUIController_101542;
 
 }
 

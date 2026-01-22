@@ -25,11 +25,7 @@ public:
 	int32                                         NewStackCount;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PreviousStackCount;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10149008_OnBuffStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_10130_10149008_OnBuffStackChange");
-static_assert(sizeof(PyBuffAbility_10130_10149008_OnBuffStackChange) == 0x000010, "Wrong size on PyBuffAbility_10130_10149008_OnBuffStackChange");
-static_assert(offsetof(PyBuffAbility_10130_10149008_OnBuffStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_10130_10149008_OnBuffStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10149008_OnBuffStackChange, NewStackCount) == 0x000008, "Member 'PyBuffAbility_10130_10149008_OnBuffStackChange::NewStackCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10149008_OnBuffStackChange, PreviousStackCount) == 0x00000C, "Member 'PyBuffAbility_10130_10149008_OnBuffStackChange::PreviousStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10149008_OnBuffStackChange;
 
 }
 

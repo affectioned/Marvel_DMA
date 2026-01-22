@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_GuideTips.WBP_Common_GuideTips_C
-// 0x0010 (0x0A70 - 0x0A60)
+// 0x0010 (0x0AD0 - 0x0AC0)
 class UWBP_Common_GuideTips_C final : public UPyWidget_Common_GuideTips
 {
 public:
-	class UMarvelImage*                           Img_Pc_Line;                                       // 0x0A60(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Pc_Line;                                       // 0x0AC0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_GuideTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_GuideTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_GuideTips_C")
 	}
 	static class UWBP_Common_GuideTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_GuideTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_GuideTips_C) == 0x000010, "Wrong alignment on UWBP_Common_GuideTips_C");
-static_assert(sizeof(UWBP_Common_GuideTips_C) == 0x000A70, "Wrong size on UWBP_Common_GuideTips_C");
-static_assert(offsetof(UWBP_Common_GuideTips_C, Img_Pc_Line) == 0x000A60, "Member 'UWBP_Common_GuideTips_C::Img_Pc_Line' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_GuideTips_C;
 
 }
 

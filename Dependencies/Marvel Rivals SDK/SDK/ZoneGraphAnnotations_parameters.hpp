@@ -27,13 +27,7 @@ public:
 	float                                         Radius;                                            // 0x0028(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Duration;                                          // 0x002C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger) == 0x000008, "Wrong alignment on ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger");
-static_assert(sizeof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger) == 0x000030, "Wrong size on ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger");
-static_assert(offsetof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger, WorldContextObject) == 0x000000, "Member 'ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger, Instigator) == 0x000008, "Member 'ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger::Instigator' has a wrong offset!");
-static_assert(offsetof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger, Position) == 0x000010, "Member 'ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger::Position' has a wrong offset!");
-static_assert(offsetof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger, Radius) == 0x000028, "Member 'ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger::Radius' has a wrong offset!");
-static_assert(offsetof(ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger, Duration) == 0x00002C, "Member 'ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_ZoneGraphDisturbanceAnnotationBPLibrary_TriggerDanger;
 
 }
 

@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMaintainLamp">();
+		STATIC_CLASS_IMPL("PyMaintainLamp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMaintainLamp")
 	}
 	static class APyMaintainLamp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMaintainLamp>();
 	}
 };
-static_assert(alignof(APyMaintainLamp) == 0x000010, "Wrong alignment on APyMaintainLamp");
-static_assert(sizeof(APyMaintainLamp) == 0x0006F0, "Wrong size on APyMaintainLamp");
-static_assert(offsetof(APyMaintainLamp, State) == 0x0006E0, "Member 'APyMaintainLamp::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyMaintainLamp;
 
 }
 

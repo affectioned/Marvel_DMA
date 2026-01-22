@@ -23,15 +23,18 @@ class UAIAbilityActivation_AddFocusControl_Friendship_Captain_C final : public U
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_AddFocusControl_Friendship_Captain_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_AddFocusControl_Friendship_Captain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_AddFocusControl_Friendship_Captain_C")
 	}
 	static class UAIAbilityActivation_AddFocusControl_Friendship_Captain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_AddFocusControl_Friendship_Captain_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_AddFocusControl_Friendship_Captain_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_AddFocusControl_Friendship_Captain_C");
-static_assert(sizeof(UAIAbilityActivation_AddFocusControl_Friendship_Captain_C) == 0x000048, "Wrong size on UAIAbilityActivation_AddFocusControl_Friendship_Captain_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_AddFocusControl_Friendship_Captain_C;
 
 }
 

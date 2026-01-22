@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAncestorMask">();
+		STATIC_CLASS_IMPL("PyAncestorMask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAncestorMask")
 	}
 	static class APyAncestorMask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAncestorMask>();
 	}
 };
-static_assert(alignof(APyAncestorMask) == 0x000010, "Wrong alignment on APyAncestorMask");
-static_assert(sizeof(APyAncestorMask) == 0x000700, "Wrong size on APyAncestorMask");
-static_assert(offsetof(APyAncestorMask, LoopTime) == 0x0006E0, "Member 'APyAncestorMask::LoopTime' has a wrong offset!");
-static_assert(offsetof(APyAncestorMask, FinishTime) == 0x0006E4, "Member 'APyAncestorMask::FinishTime' has a wrong offset!");
-static_assert(offsetof(APyAncestorMask, AudioID) == 0x0006E8, "Member 'APyAncestorMask::AudioID' has a wrong offset!");
-static_assert(offsetof(APyAncestorMask, EventTriggered) == 0x0006F0, "Member 'APyAncestorMask::EventTriggered' has a wrong offset!");
+DUMPER7_ASSERTS_APyAncestorMask;
 
 }
 

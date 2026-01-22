@@ -120,15 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshDescriptionBase">();
+		STATIC_CLASS_IMPL("MeshDescriptionBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshDescriptionBase")
 	}
 	static class UMeshDescriptionBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeshDescriptionBase>();
 	}
 };
-static_assert(alignof(UMeshDescriptionBase) == 0x000008, "Wrong alignment on UMeshDescriptionBase");
-static_assert(sizeof(UMeshDescriptionBase) == 0x0002F8, "Wrong size on UMeshDescriptionBase");
+DUMPER7_ASSERTS_UMeshDescriptionBase;
 
 // Class MeshDescription.MeshDescriptionBaseBulkData
 // 0x0000 (0x0030 - 0x0030)
@@ -137,15 +140,18 @@ class UMeshDescriptionBaseBulkData : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MeshDescriptionBaseBulkData">();
+		STATIC_CLASS_IMPL("MeshDescriptionBaseBulkData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MeshDescriptionBaseBulkData")
 	}
 	static class UMeshDescriptionBaseBulkData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMeshDescriptionBaseBulkData>();
 	}
 };
-static_assert(alignof(UMeshDescriptionBaseBulkData) == 0x000008, "Wrong alignment on UMeshDescriptionBaseBulkData");
-static_assert(sizeof(UMeshDescriptionBaseBulkData) == 0x000030, "Wrong size on UMeshDescriptionBaseBulkData");
+DUMPER7_ASSERTS_UMeshDescriptionBaseBulkData;
 
 }
 

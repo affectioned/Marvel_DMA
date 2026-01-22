@@ -44,21 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelGameMode">();
+		STATIC_CLASS_IMPL("PyMarvelGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelGameMode")
 	}
 	static class APyMarvelGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelGameMode>();
 	}
 };
-static_assert(alignof(APyMarvelGameMode) == 0x000010, "Wrong alignment on APyMarvelGameMode");
-static_assert(sizeof(APyMarvelGameMode) == 0x000910, "Wrong size on APyMarvelGameMode");
-static_assert(offsetof(APyMarvelGameMode, IsTestModeForAI) == 0x0008D0, "Member 'APyMarvelGameMode::IsTestModeForAI' has a wrong offset!");
-static_assert(offsetof(APyMarvelGameMode, OverrideAIDifficultyLevel) == 0x0008D4, "Member 'APyMarvelGameMode::OverrideAIDifficultyLevel' has a wrong offset!");
-static_assert(offsetof(APyMarvelGameMode, MarvelLogoutEvent) == 0x0008D8, "Member 'APyMarvelGameMode::MarvelLogoutEvent' has a wrong offset!");
-static_assert(offsetof(APyMarvelGameMode, MarvelLoginEvent) == 0x0008E8, "Member 'APyMarvelGameMode::MarvelLoginEvent' has a wrong offset!");
-static_assert(offsetof(APyMarvelGameMode, PostProcessLevelSubsystem) == 0x0008F8, "Member 'APyMarvelGameMode::PostProcessLevelSubsystem' has a wrong offset!");
-static_assert(offsetof(APyMarvelGameMode, ConnectComponent) == 0x000908, "Member 'APyMarvelGameMode::ConnectComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelGameMode;
 
 }
 

@@ -20,27 +20,27 @@ namespace SDK
 {
 
 // PythonClass PyLevelSummoned_21300301.PyLevelSummoned_21300301
-// 0x00D0 (0x1510 - 0x1440)
+// 0x00D0 (0x1580 - 0x14B0)
 class APyLevelSummoned_21300301 final : public ASummonedCharacterBase
 {
 public:
-	uint8                                         Pad_1438[0x8];                                     // 0x1438(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   UIName;                                            // 0x1440(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         EffectRefreshSpeed;                                // 0x1458(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WaveIndex;                                         // 0x145C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EHalloweenDifficulty, float>             HealthConfig;                                      // 0x1460(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<float>                                 PlayerNumFactor;                                   // 0x14B0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	EHalloweenObjectState                         State;                                             // 0x14C0(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C1[0x7];                                     // 0x14C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         SuccessNS;                                         // 0x14C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         FailedNS;                                          // 0x14D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          LoopAudio;                                         // 0x14D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          LightLoopAudio;                                    // 0x14E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LightLoopDelay;                                    // 0x14E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LightLoopFirstDelay;                               // 0x14EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          SuccessAudio;                                      // 0x14F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          FailedAudio;                                       // 0x14F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              EventLanded;                                       // 0x1500(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14A8[0x8];                                     // 0x14A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   UIName;                                            // 0x14B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         EffectRefreshSpeed;                                // 0x14C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WaveIndex;                                         // 0x14CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EHalloweenDifficulty, float>             HealthConfig;                                      // 0x14D0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 PlayerNumFactor;                                   // 0x1520(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	EHalloweenObjectState                         State;                                             // 0x1530(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1531[0x7];                                     // 0x1531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         SuccessNS;                                         // 0x1538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         FailedNS;                                          // 0x1540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          LoopAudio;                                         // 0x1548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          LightLoopAudio;                                    // 0x1550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LightLoopDelay;                                    // 0x1558(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LightLoopFirstDelay;                               // 0x155C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          SuccessAudio;                                      // 0x1560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          FailedAudio;                                       // 0x1568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              EventLanded;                                       // 0x1570(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -57,30 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_21300301">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_21300301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_21300301")
 	}
 	static class APyLevelSummoned_21300301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_21300301>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_21300301) == 0x000010, "Wrong alignment on APyLevelSummoned_21300301");
-static_assert(sizeof(APyLevelSummoned_21300301) == 0x001510, "Wrong size on APyLevelSummoned_21300301");
-static_assert(offsetof(APyLevelSummoned_21300301, UIName) == 0x001440, "Member 'APyLevelSummoned_21300301::UIName' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, EffectRefreshSpeed) == 0x001458, "Member 'APyLevelSummoned_21300301::EffectRefreshSpeed' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, WaveIndex) == 0x00145C, "Member 'APyLevelSummoned_21300301::WaveIndex' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, HealthConfig) == 0x001460, "Member 'APyLevelSummoned_21300301::HealthConfig' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, PlayerNumFactor) == 0x0014B0, "Member 'APyLevelSummoned_21300301::PlayerNumFactor' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, State) == 0x0014C0, "Member 'APyLevelSummoned_21300301::State' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, SuccessNS) == 0x0014C8, "Member 'APyLevelSummoned_21300301::SuccessNS' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, FailedNS) == 0x0014D0, "Member 'APyLevelSummoned_21300301::FailedNS' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, LoopAudio) == 0x0014D8, "Member 'APyLevelSummoned_21300301::LoopAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, LightLoopAudio) == 0x0014E0, "Member 'APyLevelSummoned_21300301::LightLoopAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, LightLoopDelay) == 0x0014E8, "Member 'APyLevelSummoned_21300301::LightLoopDelay' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, LightLoopFirstDelay) == 0x0014EC, "Member 'APyLevelSummoned_21300301::LightLoopFirstDelay' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, SuccessAudio) == 0x0014F0, "Member 'APyLevelSummoned_21300301::SuccessAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, FailedAudio) == 0x0014F8, "Member 'APyLevelSummoned_21300301::FailedAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300301, EventLanded) == 0x001500, "Member 'APyLevelSummoned_21300301::EventLanded' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_21300301;
 
 }
 

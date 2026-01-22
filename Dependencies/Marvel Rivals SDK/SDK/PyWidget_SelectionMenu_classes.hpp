@@ -13,23 +13,23 @@
 #include "python_enums_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UMG_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_SelectionMenu.PyWidget_SelectionMenu
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_SelectionMenu : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnShowMenu;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              MenuOffset;                                        // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                SelectionUnitClass;                                // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            Btn_Extended;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnShowMenu;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              MenuOffset;                                        // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SelectionUnitClass;                                // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            Btn_Extended;                                      // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectionMenu">();
+		STATIC_CLASS_IMPL("PyWidget_SelectionMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectionMenu")
 	}
 	static class UPyWidget_SelectionMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectionMenu>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectionMenu) == 0x000008, "Wrong alignment on UPyWidget_SelectionMenu");
-static_assert(sizeof(UPyWidget_SelectionMenu) == 0x000620, "Wrong size on UPyWidget_SelectionMenu");
-static_assert(offsetof(UPyWidget_SelectionMenu, AkEvent_OnShowMenu) == 0x0005F8, "Member 'UPyWidget_SelectionMenu::AkEvent_OnShowMenu' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionMenu, MenuOffset) == 0x000600, "Member 'UPyWidget_SelectionMenu::MenuOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionMenu, SelectionUnitClass) == 0x000610, "Member 'UPyWidget_SelectionMenu::SelectionUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionMenu, Btn_Extended) == 0x000618, "Member 'UPyWidget_SelectionMenu::Btn_Extended' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectionMenu;
 
 // PythonClass PyWidget_SelectionMenu.PyWidget_SelectionUnit
 // 0x0488 (0x0840 - 0x03B8)
@@ -81,7 +80,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectionUnit">();
+		STATIC_CLASS_IMPL("PyWidget_SelectionUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectionUnit")
 	}
 	static class UPyWidget_SelectionUnit* GetDefaultObj()
 	{
@@ -89,21 +92,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_SelectionUnit) == 0x000010, "Wrong alignment on UPyWidget_SelectionUnit");
-static_assert(sizeof(UPyWidget_SelectionUnit) == 0x000840, "Wrong size on UPyWidget_SelectionUnit");
-static_assert(offsetof(UPyWidget_SelectionUnit, NormalTextColor) == 0x0003B8, "Member 'UPyWidget_SelectionUnit::NormalTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, HoveredTextColor) == 0x0003CC, "Member 'UPyWidget_SelectionUnit::HoveredTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, DisabledTextColor) == 0x0003E0, "Member 'UPyWidget_SelectionUnit::DisabledTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, UnderLineTextColor) == 0x0003F4, "Member 'UPyWidget_SelectionUnit::UnderLineTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, NormalTextFont) == 0x000408, "Member 'UPyWidget_SelectionUnit::NormalTextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, HoveredTextFont) == 0x000470, "Member 'UPyWidget_SelectionUnit::HoveredTextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, DisabledTextFont) == 0x0004D8, "Member 'UPyWidget_SelectionUnit::DisabledTextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, UnderLinetextFont) == 0x000540, "Member 'UPyWidget_SelectionUnit::UnderLinetextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, HoveredBackground) == 0x0005B0, "Member 'UPyWidget_SelectionUnit::HoveredBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, PressedBackground) == 0x000680, "Member 'UPyWidget_SelectionUnit::PressedBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, DisableBackground) == 0x000750, "Member 'UPyWidget_SelectionUnit::DisableBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, HoverGuideTips) == 0x000820, "Member 'UPyWidget_SelectionUnit::HoverGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectionUnit, img_Bg_Underline) == 0x000830, "Member 'UPyWidget_SelectionUnit::img_Bg_Underline' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectionUnit;
 
 // PythonClass PyWidget_SelectionMenu.PyWidget_SelectionTitle
 // 0x0008 (0x03C0 - 0x03B8)
@@ -119,16 +108,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectionTitle">();
+		STATIC_CLASS_IMPL("PyWidget_SelectionTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectionTitle")
 	}
 	static class UPyWidget_SelectionTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectionTitle>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectionTitle) == 0x000008, "Wrong alignment on UPyWidget_SelectionTitle");
-static_assert(sizeof(UPyWidget_SelectionTitle) == 0x0003C0, "Wrong size on UPyWidget_SelectionTitle");
-static_assert(offsetof(UPyWidget_SelectionTitle, TitleType) == 0x0003B8, "Member 'UPyWidget_SelectionTitle::TitleType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectionTitle;
 
 }
 

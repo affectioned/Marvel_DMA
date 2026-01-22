@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleResultCommonV3.PyWidget_HeroUsedV3
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_HeroUsedV3 : public UPyWidget_CommonTipsBase
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroUsedV3">();
+		STATIC_CLASS_IMPL("PyWidget_HeroUsedV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroUsedV3")
 	}
 	static class UPyWidget_HeroUsedV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroUsedV3>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroUsedV3) == 0x000008, "Wrong alignment on UPyWidget_HeroUsedV3");
-static_assert(sizeof(UPyWidget_HeroUsedV3) == 0x0005D8, "Wrong size on UPyWidget_HeroUsedV3");
+DUMPER7_ASSERTS_UPyWidget_HeroUsedV3;
 
 // PythonClass PyWidget_BattleResultCommonV3.PyWidget_BattleResultMedalTipsUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattleResultMedalTipsUnit final : public UPyMarvelUserWidget
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleResultMedalTipsUnit">();
+		STATIC_CLASS_IMPL("PyWidget_BattleResultMedalTipsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleResultMedalTipsUnit")
 	}
 	static class UPyWidget_BattleResultMedalTipsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleResultMedalTipsUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleResultMedalTipsUnit) == 0x000008, "Wrong alignment on UPyWidget_BattleResultMedalTipsUnit");
-static_assert(sizeof(UPyWidget_BattleResultMedalTipsUnit) == 0x0005C0, "Wrong size on UPyWidget_BattleResultMedalTipsUnit");
+DUMPER7_ASSERTS_UPyWidget_BattleResultMedalTipsUnit;
 
 }
 

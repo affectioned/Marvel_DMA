@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MildInfo.PyWidget_MildInfo
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_MildInfo : public UMarvelUserWidget
 {
 public:
@@ -33,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MildInfo">();
+		STATIC_CLASS_IMPL("PyWidget_MildInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MildInfo")
 	}
 	static class UPyWidget_MildInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MildInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_MildInfo) == 0x000008, "Wrong alignment on UPyWidget_MildInfo");
-static_assert(sizeof(UPyWidget_MildInfo) == 0x000568, "Wrong size on UPyWidget_MildInfo");
+DUMPER7_ASSERTS_UPyWidget_MildInfo;
 
 }
 

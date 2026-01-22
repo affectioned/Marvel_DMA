@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Hero_1047_structs.hpp"
 #include "Hero_1047_classes.hpp"
-#include "Engine_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "SlateCore_structs.hpp"
@@ -28,53 +28,81 @@ class UPyConfig_104771 : public UConfig_104771
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104771">();
+		STATIC_CLASS_IMPL("PyConfig_104771")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104771")
 	}
 	static class UPyConfig_104771* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104771>();
 	}
 };
-static_assert(alignof(UPyConfig_104771) == 0x000008, "Wrong alignment on UPyConfig_104771");
-static_assert(sizeof(UPyConfig_104771) == 0x000258, "Wrong size on UPyConfig_104771");
+DUMPER7_ASSERTS_UPyConfig_104771;
 
-// PythonClass PyAbility_104771.PyWidget_104771
-// 0x0078 (0x0698 - 0x0620)
-class UPyWidget_104771 final : public UWidget_AbilityStatus_Base
+// PythonClass PyAbility_104771.PyCue_AbilityLoop_10477105
+// 0x0020 (0x11E0 - 0x11C0)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyCue_AbilityLoop_10477105 : public AMarvelCueNotify_Ability
 {
 public:
-	class UPanelWidget*                           PortaitList_Left;                                  // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPanelWidget*                           PortaitList_Right;                                 // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  HeadCountVisibleModeTags;                          // 0x0630(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DivingTag;                                         // 0x11C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BondingTag;                                        // 0x11CC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void OnInitialized();
-	void SetAbility(class UMarvelGameplayAbility* Ability_0);
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnTagUpdate(const struct FGameplayTag& Tag, bool Exist);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_104771">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10477105")
 	}
-	static class UPyWidget_104771* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_104771>();
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10477105")
+	}
+	static class APyCue_AbilityLoop_10477105* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_AbilityLoop_10477105>();
 	}
 };
-static_assert(alignof(UPyWidget_104771) == 0x000008, "Wrong alignment on UPyWidget_104771");
-static_assert(sizeof(UPyWidget_104771) == 0x000698, "Wrong size on UPyWidget_104771");
-static_assert(offsetof(UPyWidget_104771, PortaitList_Left) == 0x000620, "Member 'UPyWidget_104771::PortaitList_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771, PortaitList_Right) == 0x000628, "Member 'UPyWidget_104771::PortaitList_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771, HeadCountVisibleModeTags) == 0x000630, "Member 'UPyWidget_104771::HeadCountVisibleModeTags' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10477105;
+
+// PythonClass PyAbility_104771.PyCue_Scope_HitImpact_10477101
+// 0x0000 (0x05E8 - 0x05E8)
+class UPyCue_Scope_HitImpact_10477101 : public UMarvelCueNotify_HitImpact
+{
+public:
+	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10477101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10477101")
+	}
+	static class UPyCue_Scope_HitImpact_10477101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10477101>();
+	}
+};
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10477101;
 
 // PythonClass PyAbility_104771.PyAbility_104771_New
-// 0x0018 (0x2DA8 - 0x2D90)
+// 0x0018 (0x2DF8 - 0x2DE0)
 class UPyAbility_104771_New : public UAbility_104771
 {
 public:
-	EAbilityCameraState_104771                    AbilityCameraState;                                // 0x2D90(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D91[0x7];                                     // 0x2D91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 DevourEnemyNum)> OnDevourEnemy;                              // 0x2D98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EAbilityCameraState_104771                    AbilityCameraState;                                // 0x2DE0(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2DE1[0x7];                                     // 0x2DE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 DevourEnemyNum)> OnDevourEnemy;                              // 0x2DE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnRep_AbilityCameraState();
@@ -91,9 +119,10 @@ public:
 	void OnUpdateDevouredCharactersData();
 	void OnSpitOutEnemy(float TimeWaited);
 	void OnSpitOutAlly(float TimeWaited);
-	void OnJeffDivingWindowStateChanged(bool IsWindowOpen);
+	void OnJeffDivingUIWindowStateChanged(bool IsWindowOpen);
 	void OnTryGetOnWallBegin(float time);
 	void OnTryGetOnWallCancelled(float time);
+	void OnWallRunningEnd(const struct FWallRunningEndInfo& InWallRunningEndInfo);
 	void OnNetSync(const struct FGameplayAbilityTargetDataHandle& Data);
 	bool TryMakeTriggerContext(struct FGameplayEventData& EventData);
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
@@ -103,21 +132,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104771_New">();
+		STATIC_CLASS_IMPL("PyAbility_104771_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104771_New")
 	}
 	static class UPyAbility_104771_New* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104771_New>();
 	}
 };
-static_assert(alignof(UPyAbility_104771_New) == 0x000008, "Wrong alignment on UPyAbility_104771_New");
-static_assert(sizeof(UPyAbility_104771_New) == 0x002DA8, "Wrong size on UPyAbility_104771_New");
-static_assert(offsetof(UPyAbility_104771_New, AbilityCameraState) == 0x002D90, "Member 'UPyAbility_104771_New::AbilityCameraState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104771_New, OnDevourEnemy) == 0x002D98, "Member 'UPyAbility_104771_New::OnDevourEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104771_New;
 
 // PythonClass PyAbility_104771.PyCue_Buff_10477110
-// 0x0000 (0x1640 - 0x1640)
-class APyCue_Buff_10477110 final : public AMarvelCueNotify_Buff
+// 0x0000 (0x16F0 - 0x16F0)
+class APyCue_Buff_10477110 : public AMarvelCueNotify_Buff
 {
 public:
 	void OnWidgetShowUp(class AMarvelBaseCharacter* TargetCharacter, class UUserWidget* DisplayWidget);
@@ -126,66 +156,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10477110">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10477110")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10477110")
 	}
 	static class APyCue_Buff_10477110* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10477110>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10477110) == 0x000010, "Wrong alignment on APyCue_Buff_10477110");
-static_assert(sizeof(APyCue_Buff_10477110) == 0x001640, "Wrong size on APyCue_Buff_10477110");
-
-// PythonClass PyAbility_104771.PyCue_AbilityLoop_10477105
-// 0x0020 (0x11D0 - 0x11B0)
-class APyCue_AbilityLoop_10477105 final : public AMarvelCueNotify_Ability
-{
-public:
-	struct FGameplayTag                           DivingTag;                                         // 0x11B0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BondingTag;                                        // 0x11BC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnTagUpdate(const struct FGameplayTag& Tag, bool Exist);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10477105">();
-	}
-	static class APyCue_AbilityLoop_10477105* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_AbilityLoop_10477105>();
-	}
-};
-static_assert(alignof(APyCue_AbilityLoop_10477105) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10477105");
-static_assert(sizeof(APyCue_AbilityLoop_10477105) == 0x0011D0, "Wrong size on APyCue_AbilityLoop_10477105");
-static_assert(offsetof(APyCue_AbilityLoop_10477105, DivingTag) == 0x0011B0, "Member 'APyCue_AbilityLoop_10477105::DivingTag' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_10477105, BondingTag) == 0x0011BC, "Member 'APyCue_AbilityLoop_10477105::BondingTag' has a wrong offset!");
-
-// PythonClass PyAbility_104771.PyCue_Scope_HitImpact_10477101
-// 0x0000 (0x05C8 - 0x05C8)
-class UPyCue_Scope_HitImpact_10477101 final : public UMarvelCueNotify_HitImpact
-{
-public:
-	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10477101">();
-	}
-	static class UPyCue_Scope_HitImpact_10477101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10477101>();
-	}
-};
-static_assert(alignof(UPyCue_Scope_HitImpact_10477101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10477101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10477101) == 0x0005C8, "Wrong size on UPyCue_Scope_HitImpact_10477101");
+DUMPER7_ASSERTS_APyCue_Buff_10477110;
 
 // PythonClass PyAbility_104771.PyUIController_104771
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104771 final : public UUIC_Ability
 {
 public:
@@ -197,29 +182,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104771">();
+		STATIC_CLASS_IMPL("PyUIController_104771")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104771")
 	}
 	static class UPyUIController_104771* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104771>();
 	}
 };
-static_assert(alignof(UPyUIController_104771) == 0x000008, "Wrong alignment on UPyUIController_104771");
-static_assert(sizeof(UPyUIController_104771) == 0x000F10, "Wrong size on UPyUIController_104771");
+DUMPER7_ASSERTS_UPyUIController_104771;
+
+// PythonClass PyAbility_104771.PyWidget_104771
+// 0x0078 (0x06A0 - 0x0628)
+class UPyWidget_104771 : public UWidget_AbilityStatus_Base
+{
+public:
+	class UPanelWidget*                           PortaitList_Left;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPanelWidget*                           PortaitList_Right;                                 // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HeadCountVisibleModeTags;                          // 0x0638(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void SetAbility(class UMarvelGameplayAbility* Ability_0);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_104771")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_104771")
+	}
+	static class UPyWidget_104771* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_104771>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_104771;
 
 // PythonClass PyAbility_104771.PyWidget_104771_HeroList
-// 0x00A0 (0x0608 - 0x0568)
+// 0x00A0 (0x0610 - 0x0570)
 class UPyWidget_104771_HeroList final : public UMarvelUserWidget
 {
 public:
-	struct FSlateColor                            AllyBGColor;                                       // 0x0568(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AllyFrameColor;                                    // 0x057C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemyBGColor;                                      // 0x0590(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemyFrameColor;                                   // 0x05A4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AllyBGColorForHeadCount;                           // 0x05B8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AllyColerForHeadCount;                             // 0x05CC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemyBGColorForHeadCount;                          // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EnemyColerForHeadCount;                            // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllyBGColor;                                       // 0x0570(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllyFrameColor;                                    // 0x0584(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemyBGColor;                                      // 0x0598(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemyFrameColor;                                   // 0x05AC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllyBGColorForHeadCount;                           // 0x05C0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllyColerForHeadCount;                             // 0x05D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemyBGColorForHeadCount;                          // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnemyColerForHeadCount;                            // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -227,23 +244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_104771_HeroList">();
+		STATIC_CLASS_IMPL("PyWidget_104771_HeroList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_104771_HeroList")
 	}
 	static class UPyWidget_104771_HeroList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_104771_HeroList>();
 	}
 };
-static_assert(alignof(UPyWidget_104771_HeroList) == 0x000008, "Wrong alignment on UPyWidget_104771_HeroList");
-static_assert(sizeof(UPyWidget_104771_HeroList) == 0x000608, "Wrong size on UPyWidget_104771_HeroList");
-static_assert(offsetof(UPyWidget_104771_HeroList, AllyBGColor) == 0x000568, "Member 'UPyWidget_104771_HeroList::AllyBGColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, AllyFrameColor) == 0x00057C, "Member 'UPyWidget_104771_HeroList::AllyFrameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, EnemyBGColor) == 0x000590, "Member 'UPyWidget_104771_HeroList::EnemyBGColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, EnemyFrameColor) == 0x0005A4, "Member 'UPyWidget_104771_HeroList::EnemyFrameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, AllyBGColorForHeadCount) == 0x0005B8, "Member 'UPyWidget_104771_HeroList::AllyBGColorForHeadCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, AllyColerForHeadCount) == 0x0005CC, "Member 'UPyWidget_104771_HeroList::AllyColerForHeadCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, EnemyBGColorForHeadCount) == 0x0005E0, "Member 'UPyWidget_104771_HeroList::EnemyBGColorForHeadCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_104771_HeroList, EnemyColerForHeadCount) == 0x0005F4, "Member 'UPyWidget_104771_HeroList::EnemyColerForHeadCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_104771_HeroList;
 
 }
 

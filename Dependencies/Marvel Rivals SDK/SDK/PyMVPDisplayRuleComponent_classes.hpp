@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMVPDisplayConfig">();
+		STATIC_CLASS_IMPL("PyMVPDisplayConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMVPDisplayConfig")
 	}
 	static class UPyMVPDisplayConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMVPDisplayConfig>();
 	}
 };
-static_assert(alignof(UPyMVPDisplayConfig) == 0x000008, "Wrong alignment on UPyMVPDisplayConfig");
-static_assert(sizeof(UPyMVPDisplayConfig) == 0x000040, "Wrong size on UPyMVPDisplayConfig");
-static_assert(offsetof(UPyMVPDisplayConfig, MVPIconOverrideList) == 0x000030, "Member 'UPyMVPDisplayConfig::MVPIconOverrideList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMVPDisplayConfig;
 
 // PythonClass PyMVPDisplayRuleComponent.PyMVPDisplayRuleComponent
 // 0x0010 (0x0118 - 0x0108)
@@ -48,16 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMVPDisplayRuleComponent">();
+		STATIC_CLASS_IMPL("PyMVPDisplayRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMVPDisplayRuleComponent")
 	}
 	static class UPyMVPDisplayRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMVPDisplayRuleComponent>();
 	}
 };
-static_assert(alignof(UPyMVPDisplayRuleComponent) == 0x000008, "Wrong alignment on UPyMVPDisplayRuleComponent");
-static_assert(sizeof(UPyMVPDisplayRuleComponent) == 0x000118, "Wrong size on UPyMVPDisplayRuleComponent");
-static_assert(offsetof(UPyMVPDisplayRuleComponent, MVPIconOverrideList) == 0x000108, "Member 'UPyMVPDisplayRuleComponent::MVPIconOverrideList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMVPDisplayRuleComponent;
 
 }
 

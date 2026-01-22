@@ -23,15 +23,18 @@ class UAISelectTarget_LessEnemiesDirection_10455191_C final : public UPyAISelect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_LessEnemiesDirection_10455191_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_LessEnemiesDirection_10455191_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_LessEnemiesDirection_10455191_C")
 	}
 	static class UAISelectTarget_LessEnemiesDirection_10455191_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_LessEnemiesDirection_10455191_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_LessEnemiesDirection_10455191_C) == 0x000008, "Wrong alignment on UAISelectTarget_LessEnemiesDirection_10455191_C");
-static_assert(sizeof(UAISelectTarget_LessEnemiesDirection_10455191_C) == 0x000088, "Wrong size on UAISelectTarget_LessEnemiesDirection_10455191_C");
+DUMPER7_ASSERTS_UAISelectTarget_LessEnemiesDirection_10455191_C;
 
 }
 

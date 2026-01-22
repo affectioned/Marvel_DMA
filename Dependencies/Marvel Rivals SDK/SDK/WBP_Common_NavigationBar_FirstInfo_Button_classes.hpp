@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Common_NavigationBar_Button_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_Common_NavigationBar_Button_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_NavigationBar_FirstInfo_Button.WBP_Common_NavigationBar_FirstInfo_Button_C
-// 0x0040 (0x0800 - 0x07C0)
+// 0x0040 (0x0858 - 0x0818)
 class UWBP_Common_NavigationBar_FirstInfo_Button_C final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x07C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_Folw_Vx;                                       // 0x07C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Overlay_Normal;                                // 0x07D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Press_Vx;                                      // 0x07D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Press_Vx1;                                     // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Name;                                      // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_SecondInfo;                                   // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_Tag;                                          // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0818(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_Folw_Vx;                                       // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Overlay_Normal;                                // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Press_Vx;                                      // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Press_Vx1;                                     // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Name;                                      // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_SecondInfo;                                   // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Tag;                                          // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Common_NavigationBar_FirstInfo_Button(int32 EntryPoint);
@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_NavigationBar_FirstInfo_Button_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_NavigationBar_FirstInfo_Button_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_NavigationBar_FirstInfo_Button_C")
 	}
 	static class UWBP_Common_NavigationBar_FirstInfo_Button_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_NavigationBar_FirstInfo_Button_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_NavigationBar_FirstInfo_Button_C) == 0x000008, "Wrong alignment on UWBP_Common_NavigationBar_FirstInfo_Button_C");
-static_assert(sizeof(UWBP_Common_NavigationBar_FirstInfo_Button_C) == 0x000800, "Wrong size on UWBP_Common_NavigationBar_FirstInfo_Button_C");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, UberGraphFrame) == 0x0007C0, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Img_Folw_Vx) == 0x0007C8, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Img_Folw_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Img_Overlay_Normal) == 0x0007D0, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Img_Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Img_Press_Vx) == 0x0007D8, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Img_Press_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Img_Press_Vx1) == 0x0007E0, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Img_Press_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, SizeBox_Name) == 0x0007E8, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::SizeBox_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Slot_SecondInfo) == 0x0007F0, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Slot_SecondInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_NavigationBar_FirstInfo_Button_C, Slot_Tag) == 0x0007F8, "Member 'UWBP_Common_NavigationBar_FirstInfo_Button_C::Slot_Tag' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_NavigationBar_FirstInfo_Button_C;
 
 }
 

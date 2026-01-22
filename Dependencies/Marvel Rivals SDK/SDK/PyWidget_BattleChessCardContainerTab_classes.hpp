@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleChessCardContainerTab.PyWidget_BattleChessCardContainerTab
-// 0x0008 (0x0730 - 0x0728)
+// 0x0008 (0x0788 - 0x0780)
 class UPyWidget_BattleChessCardContainerTab final : public UPyWidget_Button
 {
 public:
-	bool                                          IsLeftTips;                                        // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLeftTips;                                        // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleChessCardContainerTab">();
+		STATIC_CLASS_IMPL("PyWidget_BattleChessCardContainerTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleChessCardContainerTab")
 	}
 	static class UPyWidget_BattleChessCardContainerTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleChessCardContainerTab>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleChessCardContainerTab) == 0x000008, "Wrong alignment on UPyWidget_BattleChessCardContainerTab");
-static_assert(sizeof(UPyWidget_BattleChessCardContainerTab) == 0x000730, "Wrong size on UPyWidget_BattleChessCardContainerTab");
-static_assert(offsetof(UPyWidget_BattleChessCardContainerTab, IsLeftTips) == 0x000728, "Member 'UPyWidget_BattleChessCardContainerTab::IsLeftTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleChessCardContainerTab;
 
 }
 

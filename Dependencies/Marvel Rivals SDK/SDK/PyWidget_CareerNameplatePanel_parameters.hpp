@@ -21,9 +21,7 @@ struct PyWidget_CareerNameplatePanel_MarvelSetVisible final
 public:
 	bool                                          bIsVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerNameplatePanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CareerNameplatePanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CareerNameplatePanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CareerNameplatePanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CareerNameplatePanel_MarvelSetVisible, bIsVisible) == 0x000000, "Member 'PyWidget_CareerNameplatePanel_MarvelSetVisible::bIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerNameplatePanel_MarvelSetVisible;
 
 }
 

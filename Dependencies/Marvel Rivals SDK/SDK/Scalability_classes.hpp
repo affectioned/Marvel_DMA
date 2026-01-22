@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryViewDistanceQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryViewDistanceQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryViewDistanceQuality")
 	}
 	static class UUISettingEntryViewDistanceQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryViewDistanceQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryViewDistanceQuality) == 0x000008, "Wrong alignment on UUISettingEntryViewDistanceQuality");
-static_assert(sizeof(UUISettingEntryViewDistanceQuality) == 0x000030, "Wrong size on UUISettingEntryViewDistanceQuality");
+DUMPER7_ASSERTS_UUISettingEntryViewDistanceQuality;
 
 // PythonClass Scalability.UISettingEntryScalabilityGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryScalabilityGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryScalabilityGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryScalabilityGenerator")
 	}
 	static class UUISettingEntryScalabilityGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryScalabilityGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryScalabilityGenerator) == 0x000008, "Wrong alignment on UUISettingEntryScalabilityGenerator");
-static_assert(sizeof(UUISettingEntryScalabilityGenerator) == 0x000030, "Wrong size on UUISettingEntryScalabilityGenerator");
+DUMPER7_ASSERTS_UUISettingEntryScalabilityGenerator;
 
 // PythonClass Scalability.UISettingEntryScalabilityHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryScalabilityHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryScalabilityHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryScalabilityHandler")
 	}
 	static class UUISettingEntryScalabilityHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryScalabilityHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryScalabilityHandler) == 0x000008, "Wrong alignment on UUISettingEntryScalabilityHandler");
-static_assert(sizeof(UUISettingEntryScalabilityHandler) == 0x000030, "Wrong size on UUISettingEntryScalabilityHandler");
+DUMPER7_ASSERTS_UUISettingEntryScalabilityHandler;
 
 // PythonClass Scalability.UISettingEntryShadowQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -92,15 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryShadowQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryShadowQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryShadowQuality")
 	}
 	static class UUISettingEntryShadowQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryShadowQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryShadowQuality) == 0x000008, "Wrong alignment on UUISettingEntryShadowQuality");
-static_assert(sizeof(UUISettingEntryShadowQuality) == 0x000030, "Wrong size on UUISettingEntryShadowQuality");
+DUMPER7_ASSERTS_UUISettingEntryShadowQuality;
 
 // PythonClass Scalability.UISettingEntryGlobalIlluminationQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -114,15 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryGlobalIlluminationQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryGlobalIlluminationQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryGlobalIlluminationQuality")
 	}
 	static class UUISettingEntryGlobalIlluminationQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryGlobalIlluminationQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryGlobalIlluminationQuality) == 0x000008, "Wrong alignment on UUISettingEntryGlobalIlluminationQuality");
-static_assert(sizeof(UUISettingEntryGlobalIlluminationQuality) == 0x000030, "Wrong size on UUISettingEntryGlobalIlluminationQuality");
+DUMPER7_ASSERTS_UUISettingEntryGlobalIlluminationQuality;
 
 // PythonClass Scalability.UISettingEntryReflectionQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -136,15 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryReflectionQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryReflectionQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryReflectionQuality")
 	}
 	static class UUISettingEntryReflectionQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryReflectionQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryReflectionQuality) == 0x000008, "Wrong alignment on UUISettingEntryReflectionQuality");
-static_assert(sizeof(UUISettingEntryReflectionQuality) == 0x000030, "Wrong size on UUISettingEntryReflectionQuality");
+DUMPER7_ASSERTS_UUISettingEntryReflectionQuality;
 
 // PythonClass Scalability.UISettingEntryTextureQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -158,15 +176,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryTextureQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryTextureQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryTextureQuality")
 	}
 	static class UUISettingEntryTextureQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryTextureQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryTextureQuality) == 0x000008, "Wrong alignment on UUISettingEntryTextureQuality");
-static_assert(sizeof(UUISettingEntryTextureQuality) == 0x000030, "Wrong size on UUISettingEntryTextureQuality");
+DUMPER7_ASSERTS_UUISettingEntryTextureQuality;
 
 // PythonClass Scalability.UISettingEntryVisualEffectQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -180,15 +201,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVisualEffectQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryVisualEffectQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVisualEffectQuality")
 	}
 	static class UUISettingEntryVisualEffectQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVisualEffectQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryVisualEffectQuality) == 0x000008, "Wrong alignment on UUISettingEntryVisualEffectQuality");
-static_assert(sizeof(UUISettingEntryVisualEffectQuality) == 0x000030, "Wrong size on UUISettingEntryVisualEffectQuality");
+DUMPER7_ASSERTS_UUISettingEntryVisualEffectQuality;
 
 // PythonClass Scalability.UISettingEntryPostProcessingQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -202,15 +226,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryPostProcessingQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryPostProcessingQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryPostProcessingQuality")
 	}
 	static class UUISettingEntryPostProcessingQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryPostProcessingQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryPostProcessingQuality) == 0x000008, "Wrong alignment on UUISettingEntryPostProcessingQuality");
-static_assert(sizeof(UUISettingEntryPostProcessingQuality) == 0x000030, "Wrong size on UUISettingEntryPostProcessingQuality");
+DUMPER7_ASSERTS_UUISettingEntryPostProcessingQuality;
 
 // PythonClass Scalability.UISettingEntryFoliageQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -224,15 +251,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFoliageQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryFoliageQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFoliageQuality")
 	}
 	static class UUISettingEntryFoliageQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFoliageQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryFoliageQuality) == 0x000008, "Wrong alignment on UUISettingEntryFoliageQuality");
-static_assert(sizeof(UUISettingEntryFoliageQuality) == 0x000030, "Wrong size on UUISettingEntryFoliageQuality");
+DUMPER7_ASSERTS_UUISettingEntryFoliageQuality;
 
 // PythonClass Scalability.UISettingEntryShadingQuality
 // 0x0000 (0x0030 - 0x0030)
@@ -246,15 +276,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryShadingQuality">();
+		STATIC_CLASS_IMPL("UISettingEntryShadingQuality")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryShadingQuality")
 	}
 	static class UUISettingEntryShadingQuality* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryShadingQuality>();
 	}
 };
-static_assert(alignof(UUISettingEntryShadingQuality) == 0x000008, "Wrong alignment on UUISettingEntryShadingQuality");
-static_assert(sizeof(UUISettingEntryShadingQuality) == 0x000030, "Wrong size on UUISettingEntryShadingQuality");
+DUMPER7_ASSERTS_UUISettingEntryShadingQuality;
 
 // PythonClass Scalability.UISettingEntryAntiAliasingQualityHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -268,15 +301,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryAntiAliasingQualityHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryAntiAliasingQualityHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryAntiAliasingQualityHandler")
 	}
 	static class UUISettingEntryAntiAliasingQualityHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryAntiAliasingQualityHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryAntiAliasingQualityHandler) == 0x000008, "Wrong alignment on UUISettingEntryAntiAliasingQualityHandler");
-static_assert(sizeof(UUISettingEntryAntiAliasingQualityHandler) == 0x000030, "Wrong size on UUISettingEntryAntiAliasingQualityHandler");
+DUMPER7_ASSERTS_UUISettingEntryAntiAliasingQualityHandler;
 
 }
 

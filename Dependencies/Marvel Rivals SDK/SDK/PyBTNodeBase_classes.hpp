@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTDecorator_PyBase">();
+		STATIC_CLASS_IMPL("BTDecorator_PyBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_PyBase")
 	}
 	static class UBTDecorator_PyBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTDecorator_PyBase>();
 	}
 };
-static_assert(alignof(UBTDecorator_PyBase) == 0x000008, "Wrong alignment on UBTDecorator_PyBase");
-static_assert(sizeof(UBTDecorator_PyBase) == 0x0000B8, "Wrong size on UBTDecorator_PyBase");
+DUMPER7_ASSERTS_UBTDecorator_PyBase;
 
 // PythonClass PyBTNodeBase.BTTask_PyBase
 // 0x0000 (0x00C0 - 0x00C0)
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_PyBase">();
+		STATIC_CLASS_IMPL("BTTask_PyBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_PyBase")
 	}
 	static class UBTTask_PyBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_PyBase>();
 	}
 };
-static_assert(alignof(UBTTask_PyBase) == 0x000008, "Wrong alignment on UBTTask_PyBase");
-static_assert(sizeof(UBTTask_PyBase) == 0x0000C0, "Wrong size on UBTTask_PyBase");
+DUMPER7_ASSERTS_UBTTask_PyBase;
 
 // PythonClass PyBTNodeBase.BTService_PyBase
 // 0x0000 (0x00A8 - 0x00A8)
@@ -71,15 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTService_PyBase">();
+		STATIC_CLASS_IMPL("BTService_PyBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTService_PyBase")
 	}
 	static class UBTService_PyBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTService_PyBase>();
 	}
 };
-static_assert(alignof(UBTService_PyBase) == 0x000008, "Wrong alignment on UBTService_PyBase");
-static_assert(sizeof(UBTService_PyBase) == 0x0000A8, "Wrong size on UBTService_PyBase");
+DUMPER7_ASSERTS_UBTService_PyBase;
 
 }
 

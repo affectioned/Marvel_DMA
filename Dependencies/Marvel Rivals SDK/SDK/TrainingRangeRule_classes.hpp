@@ -23,15 +23,18 @@ class UTrainingRangeRule_C final : public UModularRuleComponent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TrainingRangeRule_C">();
+		BP_STATIC_CLASS_IMPL("TrainingRangeRule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrainingRangeRule_C")
 	}
 	static class UTrainingRangeRule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTrainingRangeRule_C>();
 	}
 };
-static_assert(alignof(UTrainingRangeRule_C) == 0x000008, "Wrong alignment on UTrainingRangeRule_C");
-static_assert(sizeof(UTrainingRangeRule_C) == 0x000110, "Wrong size on UTrainingRangeRule_C");
+DUMPER7_ASSERTS_UTrainingRangeRule_C;
 
 }
 

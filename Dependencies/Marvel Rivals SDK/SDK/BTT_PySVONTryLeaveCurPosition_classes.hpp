@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BTT_PyMoveToBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PySVONTryLeaveCurPosition">();
+		STATIC_CLASS_IMPL("BTT_PySVONTryLeaveCurPosition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PySVONTryLeaveCurPosition")
 	}
 	static class UBTT_PySVONTryLeaveCurPosition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PySVONTryLeaveCurPosition>();
 	}
 };
-static_assert(alignof(UBTT_PySVONTryLeaveCurPosition) == 0x000008, "Wrong alignment on UBTT_PySVONTryLeaveCurPosition");
-static_assert(sizeof(UBTT_PySVONTryLeaveCurPosition) == 0x0000D8, "Wrong size on UBTT_PySVONTryLeaveCurPosition");
-static_assert(offsetof(UBTT_PySVONTryLeaveCurPosition, SphereRadius) == 0x0000CC, "Member 'UBTT_PySVONTryLeaveCurPosition::SphereRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PySVONTryLeaveCurPosition, MaxRandomCnt) == 0x0000D0, "Member 'UBTT_PySVONTryLeaveCurPosition::MaxRandomCnt' has a wrong offset!");
-static_assert(offsetof(UBTT_PySVONTryLeaveCurPosition, TraceTypeQuery) == 0x0000D4, "Member 'UBTT_PySVONTryLeaveCurPosition::TraceTypeQuery' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PySVONTryLeaveCurPosition;
 
 }
 

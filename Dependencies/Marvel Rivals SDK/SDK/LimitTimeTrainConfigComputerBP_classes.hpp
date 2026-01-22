@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LimitTimeTrainConfigComputerBP.LimitTimeTrainConfigComputerBP_C
-// 0x0020 (0x08B0 - 0x0890)
+// 0x0020 (0x0900 - 0x08E0)
 class ALimitTimeTrainConfigComputerBP_C final : public APyLimitTimeTrainConfigComputer
 {
 public:
-	class UPyWC_LevelActor*                       PyWC_LevelActor;                                   // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPyWC_LevelActor*                       PyWC_LevelActor;                                   // 0x08E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LimitTimeTrainConfigComputerBP_C">();
+		BP_STATIC_CLASS_IMPL("LimitTimeTrainConfigComputerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LimitTimeTrainConfigComputerBP_C")
 	}
 	static class ALimitTimeTrainConfigComputerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALimitTimeTrainConfigComputerBP_C>();
 	}
 };
-static_assert(alignof(ALimitTimeTrainConfigComputerBP_C) == 0x000010, "Wrong alignment on ALimitTimeTrainConfigComputerBP_C");
-static_assert(sizeof(ALimitTimeTrainConfigComputerBP_C) == 0x0008B0, "Wrong size on ALimitTimeTrainConfigComputerBP_C");
-static_assert(offsetof(ALimitTimeTrainConfigComputerBP_C, PyWC_LevelActor) == 0x000890, "Member 'ALimitTimeTrainConfigComputerBP_C::PyWC_LevelActor' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainConfigComputerBP_C, LevelScopeCheckComponentBP) == 0x000898, "Member 'ALimitTimeTrainConfigComputerBP_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ALimitTimeTrainConfigComputerBP_C, StaticMesh) == 0x0008A0, "Member 'ALimitTimeTrainConfigComputerBP_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ALimitTimeTrainConfigComputerBP_C;
 
 }
 

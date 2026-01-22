@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_10550601_BP.BuffAbility_10550601_BP_C
-// 0x0000 (0x13F0 - 0x13F0)
+// 0x0000 (0x1408 - 0x1408)
 class UBuffAbility_10550601_BP_C final : public UMarvelBlindAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_10550601_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_10550601_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10550601_BP_C")
 	}
 	static class UBuffAbility_10550601_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10550601_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_10550601_BP_C) == 0x000008, "Wrong alignment on UBuffAbility_10550601_BP_C");
-static_assert(sizeof(UBuffAbility_10550601_BP_C) == 0x0013F0, "Wrong size on UBuffAbility_10550601_BP_C");
+DUMPER7_ASSERTS_UBuffAbility_10550601_BP_C;
 
 }
 

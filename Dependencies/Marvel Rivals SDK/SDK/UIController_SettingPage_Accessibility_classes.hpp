@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_SettingPage_Accessibility">();
+		STATIC_CLASS_IMPL("PyUIController_SettingPage_Accessibility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_SettingPage_Accessibility")
 	}
 	static class UPyUIController_SettingPage_Accessibility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_SettingPage_Accessibility>();
 	}
 };
-static_assert(alignof(UPyUIController_SettingPage_Accessibility) == 0x000008, "Wrong alignment on UPyUIController_SettingPage_Accessibility");
-static_assert(sizeof(UPyUIController_SettingPage_Accessibility) == 0x000060, "Wrong size on UPyUIController_SettingPage_Accessibility");
-static_assert(offsetof(UPyUIController_SettingPage_Accessibility, Text_ColorVisionDeficiencyDesc) == 0x000030, "Member 'UPyUIController_SettingPage_Accessibility::Text_ColorVisionDeficiencyDesc' has a wrong offset!");
-static_assert(offsetof(UPyUIController_SettingPage_Accessibility, Text_FullScreenPreviewActionTip) == 0x000048, "Member 'UPyUIController_SettingPage_Accessibility::Text_FullScreenPreviewActionTip' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_SettingPage_Accessibility;
 
 }
 

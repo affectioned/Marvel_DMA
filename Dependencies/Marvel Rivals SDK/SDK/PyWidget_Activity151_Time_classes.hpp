@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_Time.PyWidget_Activity151_Time
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_Activity151_Time final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         activity_id;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         time_alert_seconds;                                // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            time_alert_color;                                  // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            time_normal_color;                                 // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         activity_id;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         time_alert_seconds;                                // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            time_alert_color;                                  // 0x05CC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            time_normal_color;                                 // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_Time">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_Time")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_Time")
 	}
 	static class UPyWidget_Activity151_Time* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_Time>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_Time) == 0x000008, "Wrong alignment on UPyWidget_Activity151_Time");
-static_assert(sizeof(UPyWidget_Activity151_Time) == 0x0005F0, "Wrong size on UPyWidget_Activity151_Time");
-static_assert(offsetof(UPyWidget_Activity151_Time, activity_id) == 0x0005BC, "Member 'UPyWidget_Activity151_Time::activity_id' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_Time, time_alert_seconds) == 0x0005C0, "Member 'UPyWidget_Activity151_Time::time_alert_seconds' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_Time, time_alert_color) == 0x0005C4, "Member 'UPyWidget_Activity151_Time::time_alert_color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_Time, time_normal_color) == 0x0005D8, "Member 'UPyWidget_Activity151_Time::time_normal_color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_Time;
 
 }
 

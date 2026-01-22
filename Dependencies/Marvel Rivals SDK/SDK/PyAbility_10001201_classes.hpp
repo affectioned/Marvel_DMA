@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10001201.PyCue_Buff_Loop_10001201
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_Loop_10001201 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -27,22 +27,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10001201">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10001201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10001201")
 	}
 	static class APyCue_Buff_Loop_10001201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10001201>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10001201) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10001201");
-static_assert(sizeof(APyCue_Buff_Loop_10001201) == 0x001640, "Wrong size on APyCue_Buff_Loop_10001201");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10001201;
 
 // PythonClass PyAbility_10001201.PyBuffAbility_10001201
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_10001201 : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<int32>                                 GiftedAbilityIDs;                                  // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
+	TArray<int32>                                 GiftedAbilityIDs;                                  // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -55,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10001201">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10001201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10001201")
 	}
 	static class UPyBuffAbility_10001201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10001201>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10001201) == 0x000008, "Wrong alignment on UPyBuffAbility_10001201");
-static_assert(sizeof(UPyBuffAbility_10001201) == 0x001380, "Wrong size on UPyBuffAbility_10001201");
-static_assert(offsetof(UPyBuffAbility_10001201, GiftedAbilityIDs) == 0x001370, "Member 'UPyBuffAbility_10001201::GiftedAbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10001201;
 
 }
 

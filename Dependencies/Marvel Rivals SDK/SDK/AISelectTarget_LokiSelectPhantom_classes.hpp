@@ -23,15 +23,18 @@ class UAISelectTarget_LokiSelectPhantom_C final : public UPyAISelectTarget_LokiS
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_LokiSelectPhantom_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_LokiSelectPhantom_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_LokiSelectPhantom_C")
 	}
 	static class UAISelectTarget_LokiSelectPhantom_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_LokiSelectPhantom_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_LokiSelectPhantom_C) == 0x000008, "Wrong alignment on UAISelectTarget_LokiSelectPhantom_C");
-static_assert(sizeof(UAISelectTarget_LokiSelectPhantom_C) == 0x000078, "Wrong size on UAISelectTarget_LokiSelectPhantom_C");
+DUMPER7_ASSERTS_UAISelectTarget_LokiSelectPhantom_C;
 
 }
 

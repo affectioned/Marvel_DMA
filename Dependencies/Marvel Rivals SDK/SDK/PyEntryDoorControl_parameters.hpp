@@ -23,9 +23,7 @@ struct PyEntryDoorControl_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEntryDoorControl_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyEntryDoorControl_ReceiveEndPlay");
-static_assert(sizeof(PyEntryDoorControl_ReceiveEndPlay) == 0x000001, "Wrong size on PyEntryDoorControl_ReceiveEndPlay");
-static_assert(offsetof(PyEntryDoorControl_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyEntryDoorControl_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyEntryDoorControl_ReceiveEndPlay;
 
 // PythonFunction PyEntryDoorControl.PyEntryDoorControl.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyEntryDoorControl_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEntryDoorControl_SrvSetState) == 0x000008, "Wrong alignment on PyEntryDoorControl_SrvSetState");
-static_assert(sizeof(PyEntryDoorControl_SrvSetState) == 0x000010, "Wrong size on PyEntryDoorControl_SrvSetState");
-static_assert(offsetof(PyEntryDoorControl_SrvSetState, state) == 0x000000, "Member 'PyEntryDoorControl_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyEntryDoorControl_SrvSetState;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_SkillSelect_Item.PyWidget_Halloween_SkillSelect_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Halloween_SkillSelect_Item final : public UPyMarvelUserWidget
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_SkillSelect_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_SkillSelect_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_SkillSelect_Item")
 	}
 	static class UPyWidget_Halloween_SkillSelect_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_SkillSelect_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_SkillSelect_Item) == 0x000008, "Wrong alignment on UPyWidget_Halloween_SkillSelect_Item");
-static_assert(sizeof(UPyWidget_Halloween_SkillSelect_Item) == 0x0005C0, "Wrong size on UPyWidget_Halloween_SkillSelect_Item");
+DUMPER7_ASSERTS_UPyWidget_Halloween_SkillSelect_Item;
 
 // PythonClass PyWidget_Halloween_SkillSelect_Item.PyWidget_Halloween_SkillSelect_ItemV2
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Halloween_SkillSelect_ItemV2 final : public UPyMarvelUserWidget
 {
 public:
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_SkillSelect_ItemV2">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_SkillSelect_ItemV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_SkillSelect_ItemV2")
 	}
 	static class UPyWidget_Halloween_SkillSelect_ItemV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_SkillSelect_ItemV2>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_SkillSelect_ItemV2) == 0x000008, "Wrong alignment on UPyWidget_Halloween_SkillSelect_ItemV2");
-static_assert(sizeof(UPyWidget_Halloween_SkillSelect_ItemV2) == 0x0005C0, "Wrong size on UPyWidget_Halloween_SkillSelect_ItemV2");
+DUMPER7_ASSERTS_UPyWidget_Halloween_SkillSelect_ItemV2;
 
 }
 

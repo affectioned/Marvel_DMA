@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenVisionArea">();
+		STATIC_CLASS_IMPL("PyHalloweenVisionArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenVisionArea")
 	}
 	static class APyHalloweenVisionArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenVisionArea>();
 	}
 };
-static_assert(alignof(APyHalloweenVisionArea) == 0x000010, "Wrong alignment on APyHalloweenVisionArea");
-static_assert(sizeof(APyHalloweenVisionArea) == 0x000700, "Wrong size on APyHalloweenVisionArea");
-static_assert(offsetof(APyHalloweenVisionArea, SpawnPoints) == 0x0006E0, "Member 'APyHalloweenVisionArea::SpawnPoints' has a wrong offset!");
-static_assert(offsetof(APyHalloweenVisionArea, State) == 0x0006F0, "Member 'APyHalloweenVisionArea::State' has a wrong offset!");
-static_assert(offsetof(APyHalloweenVisionArea, IsTrigger) == 0x0006F1, "Member 'APyHalloweenVisionArea::IsTrigger' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenVisionArea;
 
 }
 

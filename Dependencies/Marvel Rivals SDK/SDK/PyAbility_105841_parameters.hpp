@@ -23,9 +23,7 @@ struct PyAbility_105841_OnDashFinished final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105841_OnDashFinished) == 0x000001, "Wrong alignment on PyAbility_105841_OnDashFinished");
-static_assert(sizeof(PyAbility_105841_OnDashFinished) == 0x000001, "Wrong size on PyAbility_105841_OnDashFinished");
-static_assert(offsetof(PyAbility_105841_OnDashFinished, Reason) == 0x000000, "Member 'PyAbility_105841_OnDashFinished::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105841_OnDashFinished;
 
 // PythonFunction PyAbility_105841.PyAbility_105841.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_105841_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105841_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105841_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105841_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105841_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105841_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105841_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105841_K2_OnEndAbility;
 
 }
 

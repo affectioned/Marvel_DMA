@@ -115,11 +115,11 @@ void UPyActionLogRecorder::OnRecordHeroSwitchOut(struct FActionLogHeroUseRecord*
 
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordUnitUseInfo
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPyObjectWrapper*                 AbilityUseInfo                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FUnsafePyObjectWrapper&    AbilityUseInfo                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 
-void UPyActionLogRecorder::OnRecordUnitUseInfo(class UPyObjectWrapper* AbilityUseInfo)
+void UPyActionLogRecorder::OnRecordUnitUseInfo(const struct FUnsafePyObjectWrapper& AbilityUseInfo)
 {
 	static class UFunction* Func = nullptr;
 
@@ -128,7 +128,7 @@ void UPyActionLogRecorder::OnRecordUnitUseInfo(class UPyObjectWrapper* AbilityUs
 
 	Params::PyActionLogRecorder_OnRecordUnitUseInfo Parms{};
 
-	Parms.AbilityUseInfo = AbilityUseInfo;
+	Parms.AbilityUseInfo = std::move(AbilityUseInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -140,11 +140,11 @@ void UPyActionLogRecorder::OnRecordUnitUseInfo(class UPyObjectWrapper* AbilityUs
 
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordAbilityUseInfo
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPyObjectWrapper*                 AbilityUseInfo                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FUnsafePyObjectWrapper&    AbilityUseInfo                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 
-void UPyActionLogRecorder::OnRecordAbilityUseInfo(class UPyObjectWrapper* AbilityUseInfo)
+void UPyActionLogRecorder::OnRecordAbilityUseInfo(const struct FUnsafePyObjectWrapper& AbilityUseInfo)
 {
 	static class UFunction* Func = nullptr;
 
@@ -153,7 +153,7 @@ void UPyActionLogRecorder::OnRecordAbilityUseInfo(class UPyObjectWrapper* Abilit
 
 	Params::PyActionLogRecorder_OnRecordAbilityUseInfo Parms{};
 
-	Parms.AbilityUseInfo = AbilityUseInfo;
+	Parms.AbilityUseInfo = std::move(AbilityUseInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -277,11 +277,11 @@ void UPyActionLogRecorder::OnRecordActorHeal(EActionLogHealType HealType, bool I
 
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordBuffInfoCVer
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPyObjectWrapper*                 Buff                                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FUnsafePyObjectWrapper&    Buff                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 
-void UPyActionLogRecorder::OnRecordBuffInfoCVer(class UPyObjectWrapper* Buff)
+void UPyActionLogRecorder::OnRecordBuffInfoCVer(const struct FUnsafePyObjectWrapper& Buff)
 {
 	static class UFunction* Func = nullptr;
 
@@ -290,7 +290,7 @@ void UPyActionLogRecorder::OnRecordBuffInfoCVer(class UPyObjectWrapper* Buff)
 
 	Params::PyActionLogRecorder_OnRecordBuffInfoCVer Parms{};
 
-	Parms.Buff = Buff;
+	Parms.Buff = std::move(Buff);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -354,11 +354,11 @@ void UPyActionLogRecorder::OnRecordHeroSculptIDChange(struct FActionLogHeroSculp
 
 
 // PythonFunction PyActionLogRecorder.PyActionLogRecorder.OnRecordEnergyChangedCVer
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPyObjectWrapper*                 EnergyChangeRecord                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FUnsafePyObjectWrapper&    EnergyChangeRecord                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 
-void UPyActionLogRecorder::OnRecordEnergyChangedCVer(class UPyObjectWrapper* EnergyChangeRecord)
+void UPyActionLogRecorder::OnRecordEnergyChangedCVer(const struct FUnsafePyObjectWrapper& EnergyChangeRecord)
 {
 	static class UFunction* Func = nullptr;
 
@@ -367,7 +367,7 @@ void UPyActionLogRecorder::OnRecordEnergyChangedCVer(class UPyObjectWrapper* Ene
 
 	Params::PyActionLogRecorder_OnRecordEnergyChangedCVer Parms{};
 
-	Parms.EnergyChangeRecord = EnergyChangeRecord;
+	Parms.EnergyChangeRecord = std::move(EnergyChangeRecord);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

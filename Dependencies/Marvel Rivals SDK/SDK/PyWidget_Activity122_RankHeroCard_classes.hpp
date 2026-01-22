@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_RankHeroCard.PyWidget_Activity122_RankHeroCard
-// 0x0030 (0x0758 - 0x0728)
+// 0x0030 (0x07B0 - 0x0780)
 class UPyWidget_Activity122_RankHeroCard final : public UPyWidget_Button
 {
 public:
-	float                                         AnimDelayTime;                                     // 0x0728(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_InRank;                                      // 0x072C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_NotInRank;                                   // 0x0740(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         AnimDelayTime;                                     // 0x0780(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_InRank;                                      // 0x0784(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_NotInRank;                                   // 0x0798(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RankHeroCard">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RankHeroCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RankHeroCard")
 	}
 	static class UPyWidget_Activity122_RankHeroCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RankHeroCard>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RankHeroCard) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RankHeroCard");
-static_assert(sizeof(UPyWidget_Activity122_RankHeroCard) == 0x000758, "Wrong size on UPyWidget_Activity122_RankHeroCard");
-static_assert(offsetof(UPyWidget_Activity122_RankHeroCard, AnimDelayTime) == 0x000728, "Member 'UPyWidget_Activity122_RankHeroCard::AnimDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_RankHeroCard, Color_InRank) == 0x00072C, "Member 'UPyWidget_Activity122_RankHeroCard::Color_InRank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_RankHeroCard, Color_NotInRank) == 0x000740, "Member 'UPyWidget_Activity122_RankHeroCard::Color_NotInRank' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RankHeroCard;
 
 }
 

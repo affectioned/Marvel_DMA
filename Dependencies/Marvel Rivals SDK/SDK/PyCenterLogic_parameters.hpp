@@ -23,9 +23,7 @@ struct PyCenterLogic_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCenterLogic_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyCenterLogic_ReceiveEndPlay");
-static_assert(sizeof(PyCenterLogic_ReceiveEndPlay) == 0x000001, "Wrong size on PyCenterLogic_ReceiveEndPlay");
-static_assert(offsetof(PyCenterLogic_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyCenterLogic_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCenterLogic_ReceiveEndPlay;
 
 // PythonFunction PyCenterLogic.PyCenterLogic.OnDesMaterialActorHittedProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyCenterLogic_OnDesMaterialActorHittedProgress final
 public:
 	float                                         CurProg;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCenterLogic_OnDesMaterialActorHittedProgress) == 0x000004, "Wrong alignment on PyCenterLogic_OnDesMaterialActorHittedProgress");
-static_assert(sizeof(PyCenterLogic_OnDesMaterialActorHittedProgress) == 0x000004, "Wrong size on PyCenterLogic_OnDesMaterialActorHittedProgress");
-static_assert(offsetof(PyCenterLogic_OnDesMaterialActorHittedProgress, CurProg) == 0x000000, "Member 'PyCenterLogic_OnDesMaterialActorHittedProgress::CurProg' has a wrong offset!");
+DUMPER7_ASSERTS_PyCenterLogic_OnDesMaterialActorHittedProgress;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Common_GalleryCard_OnSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_GalleryCard_OnSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Common_GalleryCard_OnSoftTextureLoad");
-static_assert(sizeof(PyWidget_Common_GalleryCard_OnSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_Common_GalleryCard_OnSoftTextureLoad");
-static_assert(offsetof(PyWidget_Common_GalleryCard_OnSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Common_GalleryCard_OnSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_GalleryCard_OnSoftTextureLoad;
 
 }
 

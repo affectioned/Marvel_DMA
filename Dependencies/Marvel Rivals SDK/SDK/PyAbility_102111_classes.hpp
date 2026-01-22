@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102111.PyUIController_102111
-// 0x0020 (0x0FA0 - 0x0F80)
+// 0x0020 (0x1280 - 0x1260)
 class UPyUIController_102111 final : public UUIController_102111
 {
 public:
-	bool                                          OpenLog;                                           // 0x0F80(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F81[0x3];                                      // 0x0F81(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           ThumpBowStateTag;                                  // 0x0F84(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BurstAbilityTag;                                   // 0x0F90(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenLog;                                           // 0x1260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1261[0x3];                                     // 0x1261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           ThumpBowStateTag;                                  // 0x1264(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BurstAbilityTag;                                   // 0x1270(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102111">();
+		STATIC_CLASS_IMPL("PyUIController_102111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102111")
 	}
 	static class UPyUIController_102111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102111>();
 	}
 };
-static_assert(alignof(UPyUIController_102111) == 0x000008, "Wrong alignment on UPyUIController_102111");
-static_assert(sizeof(UPyUIController_102111) == 0x000FA0, "Wrong size on UPyUIController_102111");
-static_assert(offsetof(UPyUIController_102111, OpenLog) == 0x000F80, "Member 'UPyUIController_102111::OpenLog' has a wrong offset!");
-static_assert(offsetof(UPyUIController_102111, ThumpBowStateTag) == 0x000F84, "Member 'UPyUIController_102111::ThumpBowStateTag' has a wrong offset!");
-static_assert(offsetof(UPyUIController_102111, BurstAbilityTag) == 0x000F90, "Member 'UPyUIController_102111::BurstAbilityTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_102111;
 
 }
 

@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Ability_Loop_40180101_BP.Cue_Ability_Loop_40180101_BP_C
-// 0x0010 (0x1300 - 0x12F0)
+// 0x0010 (0x1310 - 0x1300)
 class ACue_Ability_Loop_40180101_BP_C final : public APyCue_Ability_Loop_40160901
 {
 public:
-	class UNiagaraComponent*                      Jet;                                               // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Jet;                                               // 0x1300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Ability_Loop_40180101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Ability_Loop_40180101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_Loop_40180101_BP_C")
 	}
 	static class ACue_Ability_Loop_40180101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Ability_Loop_40180101_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Ability_Loop_40180101_BP_C) == 0x000010, "Wrong alignment on ACue_Ability_Loop_40180101_BP_C");
-static_assert(sizeof(ACue_Ability_Loop_40180101_BP_C) == 0x001300, "Wrong size on ACue_Ability_Loop_40180101_BP_C");
-static_assert(offsetof(ACue_Ability_Loop_40180101_BP_C, Jet) == 0x0012F0, "Member 'ACue_Ability_Loop_40180101_BP_C::Jet' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Ability_Loop_40180101_BP_C;
 
 }
 

@@ -38,17 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Character_SkelotBound">();
+		STATIC_CLASS_IMPL("Character_SkelotBound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Character_SkelotBound")
 	}
 	static class ACharacter_SkelotBound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACharacter_SkelotBound>();
 	}
 };
-static_assert(alignof(ACharacter_SkelotBound) == 0x000010, "Wrong alignment on ACharacter_SkelotBound");
-static_assert(sizeof(ACharacter_SkelotBound) == 0x000DA0, "Wrong size on ACharacter_SkelotBound");
-static_assert(offsetof(ACharacter_SkelotBound, InstanceIndex) == 0x000D90, "Member 'ACharacter_SkelotBound::InstanceIndex' has a wrong offset!");
-static_assert(offsetof(ACharacter_SkelotBound, SkelotComponent) == 0x000D94, "Member 'ACharacter_SkelotBound::SkelotComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ACharacter_SkelotBound;
 
 // Class Skelot.SkelotComponent
 // 0x0320 (0x0BA0 - 0x0880)
@@ -179,33 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotComponent">();
+		STATIC_CLASS_IMPL("SkelotComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotComponent")
 	}
 	static class USkelotComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotComponent>();
 	}
 };
-static_assert(alignof(USkelotComponent) == 0x000010, "Wrong alignment on USkelotComponent");
-static_assert(sizeof(USkelotComponent) == 0x000BA0, "Wrong size on USkelotComponent");
-static_assert(offsetof(USkelotComponent, AnimCollection) == 0x000878, "Member 'USkelotComponent::AnimCollection' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, Submeshes) == 0x000880, "Member 'USkelotComponent::Submeshes' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, SkeletalMesh) == 0x000890, "Member 'USkelotComponent::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, InstanceMaxDrawDistance) == 0x000898, "Member 'USkelotComponent::InstanceMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, InstanceMinDrawDistance) == 0x00089C, "Member 'USkelotComponent::InstanceMinDrawDistance' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, ComponentBoundExtent) == 0x0008A0, "Member 'USkelotComponent::ComponentBoundExtent' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, LODDistances) == 0x0008AC, "Member 'USkelotComponent::LODDistances' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, LODDistanceScale) == 0x0008C8, "Member 'USkelotComponent::LODDistanceScale' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, NumCustomDataFloats) == 0x0008CC, "Member 'USkelotComponent::NumCustomDataFloats' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, StartShadowLODBias) == 0x0008D0, "Member 'USkelotComponent::StartShadowLODBias' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, ShadowLODBias) == 0x0008D1, "Member 'USkelotComponent::ShadowLODBias' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, MaxMeshPerInstance) == 0x0008D3, "Member 'USkelotComponent::MaxMeshPerInstance' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, InstanceDefaultAttachIndex) == 0x0008D4, "Member 'USkelotComponent::InstanceDefaultAttachIndex' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, AnimationPlayRate) == 0x0008D8, "Member 'USkelotComponent::AnimationPlayRate' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, PerInstanceScriptStruct) == 0x0008E0, "Member 'USkelotComponent::PerInstanceScriptStruct' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, OnAnimationFinishedDelegate) == 0x000AB8, "Member 'USkelotComponent::OnAnimationFinishedDelegate' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, OnAnimationNotifyDelegate) == 0x000AC8, "Member 'USkelotComponent::OnAnimationNotifyDelegate' has a wrong offset!");
-static_assert(offsetof(USkelotComponent, DynamicPoseInstancesTiedToSMC) == 0x000AD8, "Member 'USkelotComponent::DynamicPoseInstancesTiedToSMC' has a wrong offset!");
+DUMPER7_ASSERTS_USkelotComponent;
 
 // Class Skelot.SkelotCharacterSyncComponent
 // 0x0040 (0x0BE0 - 0x0BA0)
@@ -221,16 +207,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotCharacterSyncComponent">();
+		STATIC_CLASS_IMPL("SkelotCharacterSyncComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotCharacterSyncComponent")
 	}
 	static class USkelotCharacterSyncComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotCharacterSyncComponent>();
 	}
 };
-static_assert(alignof(USkelotCharacterSyncComponent) == 0x000010, "Wrong alignment on USkelotCharacterSyncComponent");
-static_assert(sizeof(USkelotCharacterSyncComponent) == 0x000BE0, "Wrong size on USkelotCharacterSyncComponent");
-static_assert(offsetof(USkelotCharacterSyncComponent, MeshTransform) == 0x000BA0, "Member 'USkelotCharacterSyncComponent::MeshTransform' has a wrong offset!");
+DUMPER7_ASSERTS_USkelotCharacterSyncComponent;
 
 // Class Skelot.SkelotCommandlet
 // 0x0000 (0x0088 - 0x0088)
@@ -239,15 +227,18 @@ class USkelotCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotCommandlet">();
+		STATIC_CLASS_IMPL("SkelotCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotCommandlet")
 	}
 	static class USkelotCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotCommandlet>();
 	}
 };
-static_assert(alignof(USkelotCommandlet) == 0x000008, "Wrong alignment on USkelotCommandlet");
-static_assert(sizeof(USkelotCommandlet) == 0x000088, "Wrong size on USkelotCommandlet");
+DUMPER7_ASSERTS_USkelotCommandlet;
 
 // Class Skelot.SkelotDeveloperSettings
 // 0x0008 (0x0050 - 0x0048)
@@ -260,16 +251,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotDeveloperSettings">();
+		STATIC_CLASS_IMPL("SkelotDeveloperSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotDeveloperSettings")
 	}
 	static class USkelotDeveloperSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotDeveloperSettings>();
 	}
 };
-static_assert(alignof(USkelotDeveloperSettings) == 0x000008, "Wrong alignment on USkelotDeveloperSettings");
-static_assert(sizeof(USkelotDeveloperSettings) == 0x000050, "Wrong size on USkelotDeveloperSettings");
-static_assert(offsetof(USkelotDeveloperSettings, MaxTransitionGenerationPerFrame) == 0x000048, "Member 'USkelotDeveloperSettings::MaxTransitionGenerationPerFrame' has a wrong offset!");
+DUMPER7_ASSERTS_USkelotDeveloperSettings;
 
 // Class Skelot.SkelotBPUtility
 // 0x0000 (0x0030 - 0x0030)
@@ -288,15 +281,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotBPUtility">();
+		STATIC_CLASS_IMPL("SkelotBPUtility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotBPUtility")
 	}
 	static class USkelotBPUtility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotBPUtility>();
 	}
 };
-static_assert(alignof(USkelotBPUtility) == 0x000008, "Wrong alignment on USkelotBPUtility");
-static_assert(sizeof(USkelotBPUtility) == 0x000030, "Wrong size on USkelotBPUtility");
+DUMPER7_ASSERTS_USkelotBPUtility;
 
 // Class Skelot.SkelotAnimCollection
 // 0x05D8 (0x0610 - 0x0038)
@@ -351,44 +347,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotAnimCollection">();
+		STATIC_CLASS_IMPL("SkelotAnimCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotAnimCollection")
 	}
 	static class USkelotAnimCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkelotAnimCollection>();
 	}
 };
-static_assert(alignof(USkelotAnimCollection) == 0x000010, "Wrong alignment on USkelotAnimCollection");
-static_assert(sizeof(USkelotAnimCollection) == 0x000610, "Wrong size on USkelotAnimCollection");
-static_assert(offsetof(USkelotAnimCollection, Skeleton) == 0x000038, "Member 'USkelotAnimCollection::Skeleton' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, RefPoseOverrideMesh) == 0x000040, "Member 'USkelotAnimCollection::RefPoseOverrideMesh' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bUseAnimDataConfig) == 0x000048, "Member 'USkelotAnimCollection::bUseAnimDataConfig' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, Sequences) == 0x000050, "Member 'USkelotAnimCollection::Sequences' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, AnimDataConfig) == 0x000060, "Member 'USkelotAnimCollection::AnimDataConfig' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, BonesToCache) == 0x000088, "Member 'USkelotAnimCollection::BonesToCache' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, Meshes) == 0x0000D8, "Member 'USkelotAnimCollection::Meshes' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bRandomlyAttachOneMesh) == 0x0000E8, "Member 'USkelotAnimCollection::bRandomlyAttachOneMesh' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bAttachAllMeshes) == 0x0000E9, "Member 'USkelotAnimCollection::bAttachAllMeshes' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bExtractRootMotion) == 0x0000EA, "Member 'USkelotAnimCollection::bExtractRootMotion' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bCachePhysicsAssetBones) == 0x0000EB, "Member 'USkelotAnimCollection::bCachePhysicsAssetBones' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bHighPrecision) == 0x0000EC, "Member 'USkelotAnimCollection::bHighPrecision' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bDisableRetargeting) == 0x0000ED, "Member 'USkelotAnimCollection::bDisableRetargeting' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bDontGenerateBounds) == 0x0000EE, "Member 'USkelotAnimCollection::bDontGenerateBounds' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, RenderBoneCount) == 0x0000F4, "Member 'USkelotAnimCollection::RenderBoneCount' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, AnimationBoneCount) == 0x0000F8, "Member 'USkelotAnimCollection::AnimationBoneCount' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, TotalFrameCount) == 0x0000FC, "Member 'USkelotAnimCollection::TotalFrameCount' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, FrameCountSequences) == 0x000100, "Member 'USkelotAnimCollection::FrameCountSequences' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, TotalAnimationBufferSize) == 0x000104, "Member 'USkelotAnimCollection::TotalAnimationBufferSize' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, TotalMeshBonesBufferSize) == 0x000108, "Member 'USkelotAnimCollection::TotalMeshBonesBufferSize' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, MaxTransitionPose) == 0x00010C, "Member 'USkelotAnimCollection::MaxTransitionPose' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, MaxDynamicPose) == 0x000110, "Member 'USkelotAnimCollection::MaxDynamicPose' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, WalkAnimMaxSpeed) == 0x000114, "Member 'USkelotAnimCollection::WalkAnimMaxSpeed' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, AnimationPriority) == 0x000118, "Member 'USkelotAnimCollection::AnimationPriority' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, JumpStartToFallingTransitionDuration) == 0x000128, "Member 'USkelotAnimCollection::JumpStartToFallingTransitionDuration' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, bUseTransformOffset) == 0x00012C, "Member 'USkelotAnimCollection::bUseTransformOffset' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, TransformOffset) == 0x000130, "Member 'USkelotAnimCollection::TransformOffset' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, LightingChannels) == 0x000190, "Member 'USkelotAnimCollection::LightingChannels' has a wrong offset!");
-static_assert(offsetof(USkelotAnimCollection, NumTransitionFrameAllocated) == 0x000600, "Member 'USkelotAnimCollection::NumTransitionFrameAllocated' has a wrong offset!");
+DUMPER7_ASSERTS_USkelotAnimCollection;
 
 // Class Skelot.SkelotListenerInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -397,7 +367,11 @@ class ISkelotListenerInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkelotListenerInterface">();
+		STATIC_CLASS_IMPL("SkelotListenerInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkelotListenerInterface")
 	}
 	static class ISkelotListenerInterface* GetDefaultObj()
 	{
@@ -413,8 +387,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(ISkelotListenerInterface) == 0x000001, "Wrong alignment on ISkelotListenerInterface");
-static_assert(sizeof(ISkelotListenerInterface) == 0x000001, "Wrong size on ISkelotListenerInterface");
+DUMPER7_ASSERTS_ISkelotListenerInterface;
 
 }
 

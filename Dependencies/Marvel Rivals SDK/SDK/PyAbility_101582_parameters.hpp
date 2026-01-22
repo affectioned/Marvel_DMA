@@ -23,9 +23,7 @@ struct PyUIController_101582_OnGameplayActorAdded final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101582_OnGameplayActorAdded) == 0x000008, "Wrong alignment on PyUIController_101582_OnGameplayActorAdded");
-static_assert(sizeof(PyUIController_101582_OnGameplayActorAdded) == 0x000008, "Wrong size on PyUIController_101582_OnGameplayActorAdded");
-static_assert(offsetof(PyUIController_101582_OnGameplayActorAdded, InActor) == 0x000000, "Member 'PyUIController_101582_OnGameplayActorAdded::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101582_OnGameplayActorAdded;
 
 // PythonFunction PyAbility_101582.PyUIController_101582.OnEndTask
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyUIController_101582_OnEndTask final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101582_OnEndTask) == 0x000008, "Wrong alignment on PyUIController_101582_OnEndTask");
-static_assert(sizeof(PyUIController_101582_OnEndTask) == 0x000008, "Wrong size on PyUIController_101582_OnEndTask");
-static_assert(offsetof(PyUIController_101582_OnEndTask, InActor) == 0x000000, "Member 'PyUIController_101582_OnEndTask::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101582_OnEndTask;
 
 // PythonFunction PyAbility_101582.PyWidget_101582.SetAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_101582_SetAbility final
 public:
 	class UMarvelGameplayAbility*                 Ability_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_101582_SetAbility) == 0x000008, "Wrong alignment on PyWidget_101582_SetAbility");
-static_assert(sizeof(PyWidget_101582_SetAbility) == 0x000008, "Wrong size on PyWidget_101582_SetAbility");
-static_assert(offsetof(PyWidget_101582_SetAbility, Ability_0) == 0x000000, "Member 'PyWidget_101582_SetAbility::Ability_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_101582_SetAbility;
 
 // PythonFunction PyAbility_101582.PyUIController_104784.OnEndTask
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyUIController_104784_OnEndTask final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_104784_OnEndTask) == 0x000008, "Wrong alignment on PyUIController_104784_OnEndTask");
-static_assert(sizeof(PyUIController_104784_OnEndTask) == 0x000008, "Wrong size on PyUIController_104784_OnEndTask");
-static_assert(offsetof(PyUIController_104784_OnEndTask, InActor) == 0x000000, "Member 'PyUIController_104784_OnEndTask::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_104784_OnEndTask;
 
 // PythonFunction PyAbility_101582.PyCue_Buff_10158203.OnWidgetShowUp
 // 0x0010 (0x0010 - 0x0000)
@@ -68,10 +60,7 @@ public:
 	class AMarvelBaseCharacter*                   TargetCharacter;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            DisplayWidget;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10158203_OnWidgetShowUp) == 0x000008, "Wrong alignment on PyCue_Buff_10158203_OnWidgetShowUp");
-static_assert(sizeof(PyCue_Buff_10158203_OnWidgetShowUp) == 0x000010, "Wrong size on PyCue_Buff_10158203_OnWidgetShowUp");
-static_assert(offsetof(PyCue_Buff_10158203_OnWidgetShowUp, TargetCharacter) == 0x000000, "Member 'PyCue_Buff_10158203_OnWidgetShowUp::TargetCharacter' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10158203_OnWidgetShowUp, DisplayWidget) == 0x000008, "Member 'PyCue_Buff_10158203_OnWidgetShowUp::DisplayWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10158203_OnWidgetShowUp;
 
 // PythonFunction PyAbility_101582.PyCue_Buff_10158203.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -81,10 +70,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_10158203_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Buff_10158203_OnRemoveFX");
-static_assert(sizeof(PyCue_Buff_10158203_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Buff_10158203_OnRemoveFX");
-static_assert(offsetof(PyCue_Buff_10158203_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_10158203_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10158203_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_10158203_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10158203_OnRemoveFX;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_ControlBuffTips_SetText final
 public:
 	class FText                                   text;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_ControlBuffTips_SetText) == 0x000008, "Wrong alignment on PyWidget_ControlBuffTips_SetText");
-static_assert(sizeof(PyWidget_ControlBuffTips_SetText) == 0x000018, "Wrong size on PyWidget_ControlBuffTips_SetText");
-static_assert(offsetof(PyWidget_ControlBuffTips_SetText, text) == 0x000000, "Member 'PyWidget_ControlBuffTips_SetText::text' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ControlBuffTips_SetText;
 
 }
 

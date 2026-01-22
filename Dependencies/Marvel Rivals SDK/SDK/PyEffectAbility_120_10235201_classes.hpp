@@ -31,24 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedModifier_10235201">();
+		STATIC_CLASS_IMPL("PySummonedModifier_10235201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedModifier_10235201")
 	}
 	static class UPySummonedModifier_10235201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedModifier_10235201>();
 	}
 };
-static_assert(alignof(UPySummonedModifier_10235201) == 0x000008, "Wrong alignment on UPySummonedModifier_10235201");
-static_assert(sizeof(UPySummonedModifier_10235201) == 0x000040, "Wrong size on UPySummonedModifier_10235201");
-static_assert(offsetof(UPySummonedModifier_10235201, LifeSpan) == 0x000038, "Member 'UPySummonedModifier_10235201::LifeSpan' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedModifier_10235201;
 
 // PythonClass PyEffectAbility_120_10235201.PyEffectAbility_120_10235201
-// 0x0110 (0x1480 - 0x1370)
+// 0x0160 (0x14E8 - 0x1388)
 class UPyEffectAbility_120_10235201 final : public UMarvelEffectGameplayAbility
 {
 public:
-	class UPySummonedModifier_10235201*           SummonedModifier;                                  // 0x1370(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FScopeBuffSpecModifier                 TreatBuffModifier;                                 // 0x1378(0x0108)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UPySummonedModifier_10235201*           SummonedModifier;                                  // 0x1388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecModifier                 TreatBuffModifier;                                 // 0x1390(0x0158)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -57,17 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10235201">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10235201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10235201")
 	}
 	static class UPyEffectAbility_120_10235201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10235201>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10235201) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10235201");
-static_assert(sizeof(UPyEffectAbility_120_10235201) == 0x001480, "Wrong size on UPyEffectAbility_120_10235201");
-static_assert(offsetof(UPyEffectAbility_120_10235201, SummonedModifier) == 0x001370, "Member 'UPyEffectAbility_120_10235201::SummonedModifier' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10235201, TreatBuffModifier) == 0x001378, "Member 'UPyEffectAbility_120_10235201::TreatBuffModifier' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10235201;
 
 }
 

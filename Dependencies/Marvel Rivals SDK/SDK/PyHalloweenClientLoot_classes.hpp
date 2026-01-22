@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenClientLoot">();
+		STATIC_CLASS_IMPL("PyHalloweenClientLoot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenClientLoot")
 	}
 	static class APyHalloweenClientLoot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenClientLoot>();
 	}
 };
-static_assert(alignof(APyHalloweenClientLoot) == 0x000010, "Wrong alignment on APyHalloweenClientLoot");
-static_assert(sizeof(APyHalloweenClientLoot) == 0x0007B0, "Wrong size on APyHalloweenClientLoot");
-static_assert(offsetof(APyHalloweenClientLoot, LootType) == 0x0006F0, "Member 'APyHalloweenClientLoot::LootType' has a wrong offset!");
-static_assert(offsetof(APyHalloweenClientLoot, LootNiagaraMap) == 0x0006F8, "Member 'APyHalloweenClientLoot::LootNiagaraMap' has a wrong offset!");
-static_assert(offsetof(APyHalloweenClientLoot, LootScaleMap) == 0x000748, "Member 'APyHalloweenClientLoot::LootScaleMap' has a wrong offset!");
-static_assert(offsetof(APyHalloweenClientLoot, LoopAudio) == 0x000798, "Member 'APyHalloweenClientLoot::LoopAudio' has a wrong offset!");
-static_assert(offsetof(APyHalloweenClientLoot, PickUpAudio) == 0x0007A0, "Member 'APyHalloweenClientLoot::PickUpAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenClientLoot;
 
 }
 

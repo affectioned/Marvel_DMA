@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102071.PyCue_Ability_Loop_10207101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10207101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10207101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10207101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10207101")
 	}
 	static class APyCue_Ability_Loop_10207101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10207101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10207101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10207101");
-static_assert(sizeof(APyCue_Ability_Loop_10207101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10207101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10207101;
 
 }
 

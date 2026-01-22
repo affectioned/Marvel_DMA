@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeagueRoomPanel.PyWidget_CustomLeagueRoomPanel
-// 0x0240 (0x0C50 - 0x0A10)
+// 0x0240 (0x0C60 - 0x0A20)
 class UPyWidget_CustomLeagueRoomPanel final : public UPyWidget_RoomPanel_V4
 {
 public:
-	struct FGuideTipsStyle                        DefaultMapGuideTips;                               // 0x0A08(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        CustomMapGuideTips;                                // 0x0B28(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        DefaultMapGuideTips;                               // 0x0A18(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        CustomMapGuideTips;                                // 0x0B38(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeagueRoomPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeagueRoomPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeagueRoomPanel")
 	}
 	static class UPyWidget_CustomLeagueRoomPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeagueRoomPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeagueRoomPanel) == 0x000010, "Wrong alignment on UPyWidget_CustomLeagueRoomPanel");
-static_assert(sizeof(UPyWidget_CustomLeagueRoomPanel) == 0x000C50, "Wrong size on UPyWidget_CustomLeagueRoomPanel");
-static_assert(offsetof(UPyWidget_CustomLeagueRoomPanel, DefaultMapGuideTips) == 0x000A08, "Member 'UPyWidget_CustomLeagueRoomPanel::DefaultMapGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CustomLeagueRoomPanel, CustomMapGuideTips) == 0x000B28, "Member 'UPyWidget_CustomLeagueRoomPanel::CustomMapGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CustomLeagueRoomPanel;
 
 }
 

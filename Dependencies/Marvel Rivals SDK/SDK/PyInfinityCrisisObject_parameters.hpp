@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -27,9 +27,7 @@ struct PyInfinityCrisisObject_OnPlayerEnter final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInfinityCrisisObject_OnPlayerEnter) == 0x000008, "Wrong alignment on PyInfinityCrisisObject_OnPlayerEnter");
-static_assert(sizeof(PyInfinityCrisisObject_OnPlayerEnter) == 0x000008, "Wrong size on PyInfinityCrisisObject_OnPlayerEnter");
-static_assert(offsetof(PyInfinityCrisisObject_OnPlayerEnter, Char) == 0x000000, "Member 'PyInfinityCrisisObject_OnPlayerEnter::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyInfinityCrisisObject_OnPlayerEnter;
 
 // PythonFunction PyInfinityCrisisObject.PyInfinityCrisisObject.OnPlayerExit
 // 0x0008 (0x0008 - 0x0000)
@@ -38,9 +36,7 @@ struct PyInfinityCrisisObject_OnPlayerExit final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInfinityCrisisObject_OnPlayerExit) == 0x000008, "Wrong alignment on PyInfinityCrisisObject_OnPlayerExit");
-static_assert(sizeof(PyInfinityCrisisObject_OnPlayerExit) == 0x000008, "Wrong size on PyInfinityCrisisObject_OnPlayerExit");
-static_assert(offsetof(PyInfinityCrisisObject_OnPlayerExit, Char) == 0x000000, "Member 'PyInfinityCrisisObject_OnPlayerExit::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyInfinityCrisisObject_OnPlayerExit;
 
 // PythonFunction PyInfinityCrisisObject.PyInfinityCrisisObject.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -49,9 +45,7 @@ struct PyInfinityCrisisObject_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInfinityCrisisObject_ReceiveTick) == 0x000004, "Wrong alignment on PyInfinityCrisisObject_ReceiveTick");
-static_assert(sizeof(PyInfinityCrisisObject_ReceiveTick) == 0x000004, "Wrong size on PyInfinityCrisisObject_ReceiveTick");
-static_assert(offsetof(PyInfinityCrisisObject_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyInfinityCrisisObject_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyInfinityCrisisObject_ReceiveTick;
 
 // PythonFunction PyInfinityCrisisObject.PyInfinityCrisisObject.MulticastStopSimulating
 // 0x0018 (0x0018 - 0x0000)
@@ -60,12 +54,10 @@ struct PyInfinityCrisisObject_MulticastStopSimulating final
 public:
 	struct FVector                                EndLocation;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyInfinityCrisisObject_MulticastStopSimulating) == 0x000008, "Wrong alignment on PyInfinityCrisisObject_MulticastStopSimulating");
-static_assert(sizeof(PyInfinityCrisisObject_MulticastStopSimulating) == 0x000018, "Wrong size on PyInfinityCrisisObject_MulticastStopSimulating");
-static_assert(offsetof(PyInfinityCrisisObject_MulticastStopSimulating, EndLocation) == 0x000000, "Member 'PyInfinityCrisisObject_MulticastStopSimulating::EndLocation' has a wrong offset!");
+DUMPER7_ASSERTS_PyInfinityCrisisObject_MulticastStopSimulating;
 
 // PythonFunction PyInfinityCrisisObject.PyInfinityCrisisObject.OnComponentBeginOverlap
-// 0x0210 (0x0210 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct PyInfinityCrisisObject_OnComponentBeginOverlap final
 {
 public:
@@ -75,16 +67,9 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyInfinityCrisisObject_OnComponentBeginOverlap) == 0x000008, "Wrong alignment on PyInfinityCrisisObject_OnComponentBeginOverlap");
-static_assert(sizeof(PyInfinityCrisisObject_OnComponentBeginOverlap) == 0x000210, "Wrong size on PyInfinityCrisisObject_OnComponentBeginOverlap");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, OverlappedComponent) == 0x000000, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, Actor) == 0x000008, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::Actor' has a wrong offset!");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, OtherComp) == 0x000010, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::OtherComp' has a wrong offset!");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, OtherBodyIndex) == 0x000018, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, bFromSweep) == 0x00001C, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::bFromSweep' has a wrong offset!");
-static_assert(offsetof(PyInfinityCrisisObject_OnComponentBeginOverlap, SweepResult) == 0x000020, "Member 'PyInfinityCrisisObject_OnComponentBeginOverlap::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyInfinityCrisisObject_OnComponentBeginOverlap;
 
 // PythonFunction PyInfinityCrisisObject.PyCue_Level_20020001.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -95,11 +80,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020001_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_20020001_WhileActive");
-static_assert(sizeof(PyCue_Level_20020001_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_20020001_WhileActive");
-static_assert(offsetof(PyCue_Level_20020001_WhileActive, TimeCrystal) == 0x000000, "Member 'PyCue_Level_20020001_WhileActive::TimeCrystal' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_20020001_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_20020001_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020001_WhileActive;
 
 // PythonFunction PyInfinityCrisisObject.PyCue_Level_20020001.OnTimeCrystalStateChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -111,12 +92,7 @@ public:
 	EOwnershipType                                OldSie;                                            // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                NewSide;                                           // 0x0003(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020001_OnTimeCrystalStateChanged) == 0x000001, "Wrong alignment on PyCue_Level_20020001_OnTimeCrystalStateChanged");
-static_assert(sizeof(PyCue_Level_20020001_OnTimeCrystalStateChanged) == 0x000004, "Wrong size on PyCue_Level_20020001_OnTimeCrystalStateChanged");
-static_assert(offsetof(PyCue_Level_20020001_OnTimeCrystalStateChanged, OldState) == 0x000000, "Member 'PyCue_Level_20020001_OnTimeCrystalStateChanged::OldState' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_OnTimeCrystalStateChanged, NewState) == 0x000001, "Member 'PyCue_Level_20020001_OnTimeCrystalStateChanged::NewState' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_OnTimeCrystalStateChanged, OldSie) == 0x000002, "Member 'PyCue_Level_20020001_OnTimeCrystalStateChanged::OldSie' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_OnTimeCrystalStateChanged, NewSide) == 0x000003, "Member 'PyCue_Level_20020001_OnTimeCrystalStateChanged::NewSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020001_OnTimeCrystalStateChanged;
 
 // PythonFunction PyInfinityCrisisObject.PyCue_Level_20020001.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -125,9 +101,7 @@ struct PyCue_Level_20020001_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020001_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Level_20020001_ReceiveTick");
-static_assert(sizeof(PyCue_Level_20020001_ReceiveTick) == 0x000004, "Wrong size on PyCue_Level_20020001_ReceiveTick");
-static_assert(offsetof(PyCue_Level_20020001_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Level_20020001_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020001_ReceiveTick;
 
 // PythonFunction PyInfinityCrisisObject.PyCue_Level_20020001.OnAmpProgressDispatcher
 // 0x0008 (0x0008 - 0x0000)
@@ -137,23 +111,17 @@ public:
 	float                                         Progress;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                Side;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020001_OnAmpProgressDispatcher) == 0x000004, "Wrong alignment on PyCue_Level_20020001_OnAmpProgressDispatcher");
-static_assert(sizeof(PyCue_Level_20020001_OnAmpProgressDispatcher) == 0x000008, "Wrong size on PyCue_Level_20020001_OnAmpProgressDispatcher");
-static_assert(offsetof(PyCue_Level_20020001_OnAmpProgressDispatcher, Progress) == 0x000000, "Member 'PyCue_Level_20020001_OnAmpProgressDispatcher::Progress' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_OnAmpProgressDispatcher, Side) == 0x000004, "Member 'PyCue_Level_20020001_OnAmpProgressDispatcher::Side' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020001_OnAmpProgressDispatcher;
 
 // PythonFunction PyInfinityCrisisObject.PyCue_Level_20020001.HandleProjectileBounce
-// 0x0208 (0x0208 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct PyCue_Level_20020001_HandleProjectileBounce final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                ImpactVelocity;                                    // 0x01F0(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                ImpactVelocity;                                    // 0x0208(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020001_HandleProjectileBounce) == 0x000008, "Wrong alignment on PyCue_Level_20020001_HandleProjectileBounce");
-static_assert(sizeof(PyCue_Level_20020001_HandleProjectileBounce) == 0x000208, "Wrong size on PyCue_Level_20020001_HandleProjectileBounce");
-static_assert(offsetof(PyCue_Level_20020001_HandleProjectileBounce, ImpactResult) == 0x000000, "Member 'PyCue_Level_20020001_HandleProjectileBounce::ImpactResult' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020001_HandleProjectileBounce, ImpactVelocity) == 0x0001F0, "Member 'PyCue_Level_20020001_HandleProjectileBounce::ImpactVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020001_HandleProjectileBounce;
 
 }
 

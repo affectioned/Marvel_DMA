@@ -21,9 +21,7 @@ struct PyWidget_GameMallPanel_MarvelSetVisible final
 public:
 	bool                                          bNewVisibility;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GameMallPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_GameMallPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_GameMallPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_GameMallPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_GameMallPanel_MarvelSetVisible, bNewVisibility) == 0x000000, "Member 'PyWidget_GameMallPanel_MarvelSetVisible::bNewVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GameMallPanel_MarvelSetVisible;
 
 }
 

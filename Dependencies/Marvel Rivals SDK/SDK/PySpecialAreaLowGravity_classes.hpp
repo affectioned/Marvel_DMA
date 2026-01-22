@@ -52,24 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaLowGravity">();
+		STATIC_CLASS_IMPL("PySpecialAreaLowGravity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaLowGravity")
 	}
 	static class APySpecialAreaLowGravity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpecialAreaLowGravity>();
 	}
 };
-static_assert(alignof(APySpecialAreaLowGravity) == 0x000010, "Wrong alignment on APySpecialAreaLowGravity");
-static_assert(sizeof(APySpecialAreaLowGravity) == 0x000810, "Wrong size on APySpecialAreaLowGravity");
-static_assert(offsetof(APySpecialAreaLowGravity, LowGravityBuffID) == 0x0007C0, "Member 'APySpecialAreaLowGravity::LowGravityBuffID' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, LifeDuration) == 0x0007C4, "Member 'APySpecialAreaLowGravity::LifeDuration' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, MaxFloatHeight) == 0x0007C8, "Member 'APySpecialAreaLowGravity::MaxFloatHeight' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, FXActors) == 0x0007D0, "Member 'APySpecialAreaLowGravity::FXActors' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, ApperaSpeed) == 0x0007E0, "Member 'APySpecialAreaLowGravity::ApperaSpeed' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, FXState) == 0x0007E8, "Member 'APySpecialAreaLowGravity::FXState' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, SpawnAudioEvent) == 0x0007F8, "Member 'APySpecialAreaLowGravity::SpawnAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, LoopAudioEvent) == 0x000800, "Member 'APySpecialAreaLowGravity::LoopAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaLowGravity, StopAudioEvent) == 0x000808, "Member 'APySpecialAreaLowGravity::StopAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APySpecialAreaLowGravity;
 
 }
 

@@ -30,18 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGoalZone">();
+		STATIC_CLASS_IMPL("PyGoalZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGoalZone")
 	}
 	static class APyGoalZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyGoalZone>();
 	}
 };
-static_assert(alignof(APyGoalZone) == 0x000010, "Wrong alignment on APyGoalZone");
-static_assert(sizeof(APyGoalZone) == 0x000750, "Wrong size on APyGoalZone");
-static_assert(offsetof(APyGoalZone, Score) == 0x000730, "Member 'APyGoalZone::Score' has a wrong offset!");
-static_assert(offsetof(APyGoalZone, BattleSide) == 0x000734, "Member 'APyGoalZone::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyGoalZone, DispatchGoalEvent) == 0x000738, "Member 'APyGoalZone::DispatchGoalEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyGoalZone;
 
 }
 

@@ -20,21 +20,21 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_MainPanel.PyWidget_Halloween_MainPanel
-// 0x0090 (0x0688 - 0x05F8)
+// 0x0090 (0x0690 - 0x0600)
 class UPyWidget_Halloween_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            TextColor_White;                                   // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Yellow;                                  // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuAction;                                    // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenStoreAction;                                   // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          OpenStoreAudio;                                    // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          CloseStoreAudio;                                   // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FWaveTextConfig>                CommonWaveTextConfig;                              // 0x0640(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FWaveTextConfig>                NightmareWaveTextConfig;                           // 0x0650(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnStyle;                                       // 0x0660(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                HoverCardTypeStyle;                                // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          OpenStoreWhenAvailable;                            // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_White;                                   // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Yellow;                                  // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuAction;                                    // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenStoreAction;                                   // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          OpenStoreAudio;                                    // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          CloseStoreAudio;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FWaveTextConfig>                CommonWaveTextConfig;                              // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FWaveTextConfig>                NightmareWaveTextConfig;                           // 0x0658(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnStyle;                                       // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                HoverCardTypeStyle;                                // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          OpenStoreWhenAvailable;                            // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_MainPanel")
 	}
 	static class UPyWidget_Halloween_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Halloween_MainPanel");
-static_assert(sizeof(UPyWidget_Halloween_MainPanel) == 0x000688, "Wrong size on UPyWidget_Halloween_MainPanel");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, TextColor_White) == 0x0005F8, "Member 'UPyWidget_Halloween_MainPanel::TextColor_White' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, TextColor_Yellow) == 0x00060C, "Member 'UPyWidget_Halloween_MainPanel::TextColor_Yellow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, ExitMenuAction) == 0x000620, "Member 'UPyWidget_Halloween_MainPanel::ExitMenuAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, OpenStoreAction) == 0x000628, "Member 'UPyWidget_Halloween_MainPanel::OpenStoreAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, OpenStoreAudio) == 0x000630, "Member 'UPyWidget_Halloween_MainPanel::OpenStoreAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, CloseStoreAudio) == 0x000638, "Member 'UPyWidget_Halloween_MainPanel::CloseStoreAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, CommonWaveTextConfig) == 0x000640, "Member 'UPyWidget_Halloween_MainPanel::CommonWaveTextConfig' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, NightmareWaveTextConfig) == 0x000650, "Member 'UPyWidget_Halloween_MainPanel::NightmareWaveTextConfig' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, ReturnStyle) == 0x000660, "Member 'UPyWidget_Halloween_MainPanel::ReturnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, HoverCardTypeStyle) == 0x000670, "Member 'UPyWidget_Halloween_MainPanel::HoverCardTypeStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_MainPanel, OpenStoreWhenAvailable) == 0x000680, "Member 'UPyWidget_Halloween_MainPanel::OpenStoreWhenAvailable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_MainPanel;
 
 }
 

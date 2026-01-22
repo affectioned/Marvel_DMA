@@ -20,21 +20,24 @@ namespace SDK
 {
 
 // PythonClass Py3DUI_Activity151_ActivityItem.PyWidget_Activity151_3DText
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity151_3DText final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_3DText">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_3DText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_3DText")
 	}
 	static class UPyWidget_Activity151_3DText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_3DText>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_3DText) == 0x000008, "Wrong alignment on UPyWidget_Activity151_3DText");
-static_assert(sizeof(UPyWidget_Activity151_3DText) == 0x0005C0, "Wrong size on UPyWidget_Activity151_3DText");
+DUMPER7_ASSERTS_UPyWidget_Activity151_3DText;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.PyWidget_Activity151_3DButton
 // 0x0030 (0x08A0 - 0x0870)
@@ -53,18 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_3DButton">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_3DButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_3DButton")
 	}
 	static class UPyWidget_Activity151_3DButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_3DButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_3DButton) == 0x000010, "Wrong alignment on UPyWidget_Activity151_3DButton");
-static_assert(sizeof(UPyWidget_Activity151_3DButton) == 0x0008A0, "Wrong size on UPyWidget_Activity151_3DButton");
-static_assert(offsetof(UPyWidget_Activity151_3DButton, OnClicked) == 0x000870, "Member 'UPyWidget_Activity151_3DButton::OnClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DButton, OnHovered) == 0x000880, "Member 'UPyWidget_Activity151_3DButton::OnHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_3DButton, OnUnhovered) == 0x000890, "Member 'UPyWidget_Activity151_3DButton::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_3DButton;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_ActivityItemBase
 // 0x0030 (0x0710 - 0x06E0)
@@ -87,21 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_ActivityItemBase">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_ActivityItemBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_ActivityItemBase")
 	}
 	static class APy3DUI_Activity151_ActivityItemBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_ActivityItemBase>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_ActivityItemBase) == 0x000010, "Wrong alignment on APy3DUI_Activity151_ActivityItemBase");
-static_assert(sizeof(APy3DUI_Activity151_ActivityItemBase) == 0x000710, "Wrong size on APy3DUI_Activity151_ActivityItemBase");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, activity_id) == 0x0006E0, "Member 'APy3DUI_Activity151_ActivityItemBase::activity_id' has a wrong offset!");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, reward_icon) == 0x0006E8, "Member 'APy3DUI_Activity151_ActivityItemBase::reward_icon' has a wrong offset!");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, Scene) == 0x0006F0, "Member 'APy3DUI_Activity151_ActivityItemBase::Scene' has a wrong offset!");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, InteractWidgetComponent) == 0x0006F8, "Member 'APy3DUI_Activity151_ActivityItemBase::InteractWidgetComponent' has a wrong offset!");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, ScreenWidgetComponent) == 0x000700, "Member 'APy3DUI_Activity151_ActivityItemBase::ScreenWidgetComponent' has a wrong offset!");
-static_assert(offsetof(APy3DUI_Activity151_ActivityItemBase, RewardTipsWidgetComponent) == 0x000708, "Member 'APy3DUI_Activity151_ActivityItemBase::RewardTipsWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APy3DUI_Activity151_ActivityItemBase;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_ActivityItem
 // 0x0000 (0x0710 - 0x0710)
@@ -110,15 +110,18 @@ class APy3DUI_Activity151_ActivityItem : public APy3DUI_Activity151_ActivityItem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_ActivityItem">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_ActivityItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_ActivityItem")
 	}
 	static class APy3DUI_Activity151_ActivityItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_ActivityItem>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_ActivityItem) == 0x000010, "Wrong alignment on APy3DUI_Activity151_ActivityItem");
-static_assert(sizeof(APy3DUI_Activity151_ActivityItem) == 0x000710, "Wrong size on APy3DUI_Activity151_ActivityItem");
+DUMPER7_ASSERTS_APy3DUI_Activity151_ActivityItem;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_Activity149
 // 0x0000 (0x0710 - 0x0710)
@@ -130,15 +133,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_Activity149">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_Activity149")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_Activity149")
 	}
 	static class APy3DUI_Activity151_Activity149* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_Activity149>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_Activity149) == 0x000010, "Wrong alignment on APy3DUI_Activity151_Activity149");
-static_assert(sizeof(APy3DUI_Activity151_Activity149) == 0x000710, "Wrong size on APy3DUI_Activity151_Activity149");
+DUMPER7_ASSERTS_APy3DUI_Activity151_Activity149;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_Activity150
 // 0x0000 (0x0710 - 0x0710)
@@ -151,15 +157,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_Activity150">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_Activity150")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_Activity150")
 	}
 	static class APy3DUI_Activity151_Activity150* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_Activity150>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_Activity150) == 0x000010, "Wrong alignment on APy3DUI_Activity151_Activity150");
-static_assert(sizeof(APy3DUI_Activity151_Activity150) == 0x000710, "Wrong size on APy3DUI_Activity151_Activity150");
+DUMPER7_ASSERTS_APy3DUI_Activity151_Activity150;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_Activity147
 // 0x0010 (0x0720 - 0x0710)
@@ -175,16 +184,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_Activity147">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_Activity147")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_Activity147")
 	}
 	static class APy3DUI_Activity151_Activity147* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_Activity147>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_Activity147) == 0x000010, "Wrong alignment on APy3DUI_Activity151_Activity147");
-static_assert(sizeof(APy3DUI_Activity151_Activity147) == 0x000720, "Wrong size on APy3DUI_Activity151_Activity147");
-static_assert(offsetof(APy3DUI_Activity151_Activity147, notice_icon) == 0x000710, "Member 'APy3DUI_Activity151_Activity147::notice_icon' has a wrong offset!");
+DUMPER7_ASSERTS_APy3DUI_Activity151_Activity147;
 
 // PythonClass Py3DUI_Activity151_ActivityItem.Py3DUI_Activity151_M2201Item
 // 0x0000 (0x0710 - 0x0710)
@@ -192,19 +203,23 @@ class APy3DUI_Activity151_M2201Item final : public APy3DUI_Activity151_ActivityI
 {
 public:
 	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_Activity151_M2201Item">();
+		STATIC_CLASS_IMPL("Py3DUI_Activity151_M2201Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_Activity151_M2201Item")
 	}
 	static class APy3DUI_Activity151_M2201Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_Activity151_M2201Item>();
 	}
 };
-static_assert(alignof(APy3DUI_Activity151_M2201Item) == 0x000010, "Wrong alignment on APy3DUI_Activity151_M2201Item");
-static_assert(sizeof(APy3DUI_Activity151_M2201Item) == 0x000710, "Wrong size on APy3DUI_Activity151_M2201Item");
+DUMPER7_ASSERTS_APy3DUI_Activity151_M2201Item;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -19,28 +19,28 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HitIndicator.PyWidget_HitIndicator
-// 0x01B8 (0x0778 - 0x05C0)
+// 0x01B8 (0x0780 - 0x05C8)
 class UPyWidget_HitIndicator : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TotalDamageBrokenTime;                             // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TotalDamageTime;                                   // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, bool>                             LastHitCritical;                                   // 0x05C8(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  SpecialBuffTags;                                   // 0x0618(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  IgnoreSpecialUITags;                               // 0x0680(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  HeadShotPercentReductionTag;                       // 0x06E8(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         HitEffectCooldown;                                 // 0x0750(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHalloweenModeUseHitAudio;                         // 0x0754(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_755[0x3];                                      // 0x0755(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnHeadHit_Reduce;                          // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinRegularHookLengthScale;                         // 0x0760(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxRegularHookLengthScale;                         // 0x0764(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinHeadHookLengthScale;                            // 0x0768(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxHeadHookLengthScale;                            // 0x076C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinBrokenHookLengthScale;                          // 0x0770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxBrokenHookLengthScale;                          // 0x0774(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TotalDamageBrokenTime;                             // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TotalDamageTime;                                   // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, bool>                             LastHitCritical;                                   // 0x05D0(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SpecialBuffTags;                                   // 0x0620(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  IgnoreSpecialUITags;                               // 0x0688(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HeadShotPercentReductionTag;                       // 0x06F0(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         HitEffectCooldown;                                 // 0x0758(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHalloweenModeUseHitAudio;                         // 0x075C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_75D[0x3];                                      // 0x075D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnHeadHit_Reduce;                          // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinRegularHookLengthScale;                         // 0x0768(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxRegularHookLengthScale;                         // 0x076C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinHeadHookLengthScale;                            // 0x0770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxHeadHookLengthScale;                            // 0x0774(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinBrokenHookLengthScale;                          // 0x0778(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxBrokenHookLengthScale;                          // 0x077C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,38 +59,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HitIndicator">();
+		STATIC_CLASS_IMPL("PyWidget_HitIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HitIndicator")
 	}
 	static class UPyWidget_HitIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HitIndicator>();
 	}
 };
-static_assert(alignof(UPyWidget_HitIndicator) == 0x000008, "Wrong alignment on UPyWidget_HitIndicator");
-static_assert(sizeof(UPyWidget_HitIndicator) == 0x000778, "Wrong size on UPyWidget_HitIndicator");
-static_assert(offsetof(UPyWidget_HitIndicator, TotalDamageBrokenTime) == 0x0005BC, "Member 'UPyWidget_HitIndicator::TotalDamageBrokenTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, TotalDamageTime) == 0x0005C0, "Member 'UPyWidget_HitIndicator::TotalDamageTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, LastHitCritical) == 0x0005C8, "Member 'UPyWidget_HitIndicator::LastHitCritical' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, SpecialBuffTags) == 0x000618, "Member 'UPyWidget_HitIndicator::SpecialBuffTags' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, IgnoreSpecialUITags) == 0x000680, "Member 'UPyWidget_HitIndicator::IgnoreSpecialUITags' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, HeadShotPercentReductionTag) == 0x0006E8, "Member 'UPyWidget_HitIndicator::HeadShotPercentReductionTag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, HitEffectCooldown) == 0x000750, "Member 'UPyWidget_HitIndicator::HitEffectCooldown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, bHalloweenModeUseHitAudio) == 0x000754, "Member 'UPyWidget_HitIndicator::bHalloweenModeUseHitAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, AkEvent_OnHeadHit_Reduce) == 0x000758, "Member 'UPyWidget_HitIndicator::AkEvent_OnHeadHit_Reduce' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MinRegularHookLengthScale) == 0x000760, "Member 'UPyWidget_HitIndicator::MinRegularHookLengthScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MaxRegularHookLengthScale) == 0x000764, "Member 'UPyWidget_HitIndicator::MaxRegularHookLengthScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MinHeadHookLengthScale) == 0x000768, "Member 'UPyWidget_HitIndicator::MinHeadHookLengthScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MaxHeadHookLengthScale) == 0x00076C, "Member 'UPyWidget_HitIndicator::MaxHeadHookLengthScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MinBrokenHookLengthScale) == 0x000770, "Member 'UPyWidget_HitIndicator::MinBrokenHookLengthScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HitIndicator, MaxBrokenHookLengthScale) == 0x000774, "Member 'UPyWidget_HitIndicator::MaxBrokenHookLengthScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HitIndicator;
 
 // PythonClass PyWidget_HitIndicator.PyWidget_Healing
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Healing : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         UninterruptibleTime;                               // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         UninterruptibleTime;                               // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
@@ -98,24 +86,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Healing">();
+		STATIC_CLASS_IMPL("PyWidget_Healing")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Healing")
 	}
 	static class UPyWidget_Healing* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Healing>();
 	}
 };
-static_assert(alignof(UPyWidget_Healing) == 0x000008, "Wrong alignment on UPyWidget_Healing");
-static_assert(sizeof(UPyWidget_Healing) == 0x0005C0, "Wrong size on UPyWidget_Healing");
-static_assert(offsetof(UPyWidget_Healing, UninterruptibleTime) == 0x0005BC, "Member 'UPyWidget_Healing::UninterruptibleTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Healing;
 
 // PythonClass PyWidget_HitIndicator.PyWidget_HitFeedBack
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HitFeedBack : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HitAnimSpeed;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HitAnimSpeed;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -123,19 +113,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HitFeedBack">();
+		STATIC_CLASS_IMPL("PyWidget_HitFeedBack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HitFeedBack")
 	}
 	static class UPyWidget_HitFeedBack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HitFeedBack>();
 	}
 };
-static_assert(alignof(UPyWidget_HitFeedBack) == 0x000008, "Wrong alignment on UPyWidget_HitFeedBack");
-static_assert(sizeof(UPyWidget_HitFeedBack) == 0x0005C0, "Wrong size on UPyWidget_HitFeedBack");
-static_assert(offsetof(UPyWidget_HitFeedBack, HitAnimSpeed) == 0x0005BC, "Member 'UPyWidget_HitFeedBack::HitAnimSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HitFeedBack;
 
 // PythonClass PyWidget_HitIndicator.PyWidget_HitSpecialBuff
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0438 - 0x0438)
 class UPyWidget_HitSpecialBuff : public UMarvelSimpleUserWidget
 {
 public:
@@ -144,15 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HitSpecialBuff">();
+		STATIC_CLASS_IMPL("PyWidget_HitSpecialBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HitSpecialBuff")
 	}
 	static class UPyWidget_HitSpecialBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HitSpecialBuff>();
 	}
 };
-static_assert(alignof(UPyWidget_HitSpecialBuff) == 0x000008, "Wrong alignment on UPyWidget_HitSpecialBuff");
-static_assert(sizeof(UPyWidget_HitSpecialBuff) == 0x000458, "Wrong size on UPyWidget_HitSpecialBuff");
+DUMPER7_ASSERTS_UPyWidget_HitSpecialBuff;
 
 }
 

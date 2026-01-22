@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallGift_Pack.PyWidget_MallGift_Btn_Thank
-// 0x0068 (0x0628 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_MallGift_Btn_Thank final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          KeyPromptVisible;                                  // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          HotKey;                                            // 0x05C0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool is_thank)> OnClicked;                                         // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          KeyPromptVisible;                                  // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          HotKey;                                            // 0x05C8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool is_thank)> OnClicked;                                         // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,21 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Btn_Thank">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Btn_Thank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Btn_Thank")
 	}
 	static class UPyWidget_MallGift_Btn_Thank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Btn_Thank>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Btn_Thank) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Btn_Thank");
-static_assert(sizeof(UPyWidget_MallGift_Btn_Thank) == 0x000628, "Wrong size on UPyWidget_MallGift_Btn_Thank");
-static_assert(offsetof(UPyWidget_MallGift_Btn_Thank, KeyPromptVisible) == 0x0005BA, "Member 'UPyWidget_MallGift_Btn_Thank::KeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Btn_Thank, HotKey) == 0x0005C0, "Member 'UPyWidget_MallGift_Btn_Thank::HotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallGift_Btn_Thank, OnClicked) == 0x000618, "Member 'UPyWidget_MallGift_Btn_Thank::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Btn_Thank;
 
 // PythonClass PyWidget_MallGift_Pack.PyWidget_MallGift_Pack
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_MallGift_Pack final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -58,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallGift_Pack">();
+		STATIC_CLASS_IMPL("PyWidget_MallGift_Pack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallGift_Pack")
 	}
 	static class UPyWidget_MallGift_Pack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallGift_Pack>();
 	}
 };
-static_assert(alignof(UPyWidget_MallGift_Pack) == 0x000008, "Wrong alignment on UPyWidget_MallGift_Pack");
-static_assert(sizeof(UPyWidget_MallGift_Pack) == 0x0005F8, "Wrong size on UPyWidget_MallGift_Pack");
+DUMPER7_ASSERTS_UPyWidget_MallGift_Pack;
 
 }
 

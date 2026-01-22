@@ -18,32 +18,35 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102651.PyAbility_102651
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102651 : public UAbility_108
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102651">();
+		STATIC_CLASS_IMPL("PyAbility_102651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102651")
 	}
 	static class UPyAbility_102651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102651>();
 	}
 };
-static_assert(alignof(UPyAbility_102651) == 0x000008, "Wrong alignment on UPyAbility_102651");
-static_assert(sizeof(UPyAbility_102651) == 0x0029F8, "Wrong size on UPyAbility_102651");
+DUMPER7_ASSERTS_UPyAbility_102651;
 
 // PythonClass PyAbility_102651.PyProjectile_10265101
-// 0x1670 (0x5200 - 0x3B90)
+// 0x19C0 (0x5860 - 0x3EA0)
 class APyProjectile_10265101 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ScopeID;                                           // 0x3B90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Offset;                                            // 0x3B94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B98[0x8];                                     // 0x3B98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x3BA0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ScopeID;                                           // 0x3EA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Offset;                                            // 0x3EA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3EA8[0x8];                                     // 0x3EA8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x3EB0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -53,18 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10265101">();
+		STATIC_CLASS_IMPL("PyProjectile_10265101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10265101")
 	}
 	static class APyProjectile_10265101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10265101>();
 	}
 };
-static_assert(alignof(APyProjectile_10265101) == 0x000010, "Wrong alignment on APyProjectile_10265101");
-static_assert(sizeof(APyProjectile_10265101) == 0x005200, "Wrong size on APyProjectile_10265101");
-static_assert(offsetof(APyProjectile_10265101, ScopeID) == 0x003B90, "Member 'APyProjectile_10265101::ScopeID' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10265101, Offset) == 0x003B94, "Member 'APyProjectile_10265101::Offset' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10265101, TraceContext) == 0x003BA0, "Member 'APyProjectile_10265101::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10265101;
 
 // PythonClass PyAbility_102651.PyCue_Scope_Start_10265101
 // 0x0010 (0x03D0 - 0x03C0)
@@ -81,20 +84,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10265101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10265101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10265101")
 	}
 	static class UPyCue_Scope_Start_10265101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10265101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10265101) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10265101");
-static_assert(sizeof(UPyCue_Scope_Start_10265101) == 0x0003D0, "Wrong size on UPyCue_Scope_Start_10265101");
-static_assert(offsetof(UPyCue_Scope_Start_10265101, Scale) == 0x0003C0, "Member 'UPyCue_Scope_Start_10265101::Scale' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10265101, FXSphere) == 0x0003C8, "Member 'UPyCue_Scope_Start_10265101::FXSphere' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10265101;
 
 // PythonClass PyAbility_102651.PyUIController_102651
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_102651 final : public UUIC_Ability
 {
 public:
@@ -103,15 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102651">();
+		STATIC_CLASS_IMPL("PyUIController_102651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102651")
 	}
 	static class UPyUIController_102651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102651>();
 	}
 };
-static_assert(alignof(UPyUIController_102651) == 0x000008, "Wrong alignment on UPyUIController_102651");
-static_assert(sizeof(UPyUIController_102651) == 0x000F10, "Wrong size on UPyUIController_102651");
+DUMPER7_ASSERTS_UPyUIController_102651;
 
 }
 

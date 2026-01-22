@@ -17,6 +17,88 @@
 namespace SDK
 {
 
+// PythonFunction PyAbility_105453.PyAbility_105453.BeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyAbility_105453::BeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_105453", "BeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105453.PyAbility_105453.EndPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyAbility_105453::EndPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_105453", "EndPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105453.PyAbility_105453.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyAbility_105453::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_105453", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105453.PyAbility_105453.K2_OnEndAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyAbility_105453::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_105453", "K2_OnEndAbility");
+
+	Params::PyAbility_105453_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_105453.PyCue_Ability_Loop_10545301.WhileActive
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -94,88 +176,6 @@ void APyCue_Ability_Loop_10545301::OnTagUpdate(const struct FGameplayTag& TagUpd
 
 	Parms.TagUpdated = std::move(TagUpdated);
 	Parms.TagExists = TagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105453.PyAbility_105453.BeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_105453::BeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105453", "BeginPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105453.PyAbility_105453.EndPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_105453::EndPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105453", "EndPlay");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105453.PyAbility_105453.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_105453::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105453", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105453.PyAbility_105453.K2_OnEndAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyAbility_105453::K2_OnEndAbility(bool bWasCancelled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105453", "K2_OnEndAbility");
-
-	Params::PyAbility_105453_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

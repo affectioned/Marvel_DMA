@@ -54,38 +54,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform) == 0x000008, "Wrong alignment on WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform");
-static_assert(sizeof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform) == 0x000048, "Wrong size on WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, EntryPoint) == 0x000000, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable) == 0x000004, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000005, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable) == 0x000006, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_1) == 0x000007, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_2) == 0x000008, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_1) == 0x000009, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_3) == 0x00000A, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_4) == 0x00000B, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_2) == 0x00000C, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_3) == 0x00000D, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_4) == 0x00000E, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_5) == 0x00000F, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_5) == 0x000010, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_6) == 0x000011, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_6) == 0x000012, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default) == 0x000013, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_byte_Variable_7) == 0x000014, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Event_IsDesignTime) == 0x000015, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_1) == 0x000018, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_2) == 0x000020, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_3) == 0x000028, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, Temp_bool_Variable_7) == 0x000030, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_4) == 0x000038, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000040, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_5) == 0x000041, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x000042, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_6) == 0x000043, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x000044, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform, K2Node_Select_Default_7) == 0x000045, "Member 'WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform::K2Node_Select_Default_7' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Com_Platform_C_ExecuteUbergraph_WBP_Com_Platform;
 
 // Function WBP_Com_Platform.WBP_Com_Platform_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -94,9 +63,7 @@ struct WBP_Com_Platform_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Com_Platform_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Com_Platform_C_PreConstruct");
-static_assert(sizeof(WBP_Com_Platform_C_PreConstruct) == 0x000001, "Wrong size on WBP_Com_Platform_C_PreConstruct");
-static_assert(offsetof(WBP_Com_Platform_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Com_Platform_C_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Com_Platform_C_PreConstruct;
 
 }
 

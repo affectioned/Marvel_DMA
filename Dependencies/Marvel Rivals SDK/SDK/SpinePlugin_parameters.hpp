@@ -23,9 +23,7 @@ struct SpineBoneDriverComponent_BeforeUpdateWorldTransform final
 public:
 	class USpineSkeletonComponent*                skeleton;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineBoneDriverComponent_BeforeUpdateWorldTransform) == 0x000008, "Wrong alignment on SpineBoneDriverComponent_BeforeUpdateWorldTransform");
-static_assert(sizeof(SpineBoneDriverComponent_BeforeUpdateWorldTransform) == 0x000008, "Wrong size on SpineBoneDriverComponent_BeforeUpdateWorldTransform");
-static_assert(offsetof(SpineBoneDriverComponent_BeforeUpdateWorldTransform, skeleton) == 0x000000, "Member 'SpineBoneDriverComponent_BeforeUpdateWorldTransform::skeleton' has a wrong offset!");
+DUMPER7_ASSERTS_SpineBoneDriverComponent_BeforeUpdateWorldTransform;
 
 // Function SpinePlugin.TrackEntry.GetAlpha
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct TrackEntry_GetAlpha final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetAlpha) == 0x000004, "Wrong alignment on TrackEntry_GetAlpha");
-static_assert(sizeof(TrackEntry_GetAlpha) == 0x000004, "Wrong size on TrackEntry_GetAlpha");
-static_assert(offsetof(TrackEntry_GetAlpha, ReturnValue) == 0x000000, "Member 'TrackEntry_GetAlpha::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetAlpha;
 
 // Function SpinePlugin.TrackEntry.getAnimationDuration
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct TrackEntry_getAnimationDuration final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_getAnimationDuration) == 0x000004, "Wrong alignment on TrackEntry_getAnimationDuration");
-static_assert(sizeof(TrackEntry_getAnimationDuration) == 0x000004, "Wrong size on TrackEntry_getAnimationDuration");
-static_assert(offsetof(TrackEntry_getAnimationDuration, ReturnValue) == 0x000000, "Member 'TrackEntry_getAnimationDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_getAnimationDuration;
 
 // Function SpinePlugin.TrackEntry.GetAnimationEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct TrackEntry_GetAnimationEnd final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetAnimationEnd) == 0x000004, "Wrong alignment on TrackEntry_GetAnimationEnd");
-static_assert(sizeof(TrackEntry_GetAnimationEnd) == 0x000004, "Wrong size on TrackEntry_GetAnimationEnd");
-static_assert(offsetof(TrackEntry_GetAnimationEnd, ReturnValue) == 0x000000, "Member 'TrackEntry_GetAnimationEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetAnimationEnd;
 
 // Function SpinePlugin.TrackEntry.GetAnimationLast
 // 0x0004 (0x0004 - 0x0000)
@@ -67,9 +59,7 @@ struct TrackEntry_GetAnimationLast final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetAnimationLast) == 0x000004, "Wrong alignment on TrackEntry_GetAnimationLast");
-static_assert(sizeof(TrackEntry_GetAnimationLast) == 0x000004, "Wrong size on TrackEntry_GetAnimationLast");
-static_assert(offsetof(TrackEntry_GetAnimationLast, ReturnValue) == 0x000000, "Member 'TrackEntry_GetAnimationLast::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetAnimationLast;
 
 // Function SpinePlugin.TrackEntry.getAnimationName
 // 0x0010 (0x0010 - 0x0000)
@@ -78,9 +68,7 @@ struct TrackEntry_getAnimationName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_getAnimationName) == 0x000008, "Wrong alignment on TrackEntry_getAnimationName");
-static_assert(sizeof(TrackEntry_getAnimationName) == 0x000010, "Wrong size on TrackEntry_getAnimationName");
-static_assert(offsetof(TrackEntry_getAnimationName, ReturnValue) == 0x000000, "Member 'TrackEntry_getAnimationName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_getAnimationName;
 
 // Function SpinePlugin.TrackEntry.GetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -89,9 +77,7 @@ struct TrackEntry_GetAnimationStart final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetAnimationStart) == 0x000004, "Wrong alignment on TrackEntry_GetAnimationStart");
-static_assert(sizeof(TrackEntry_GetAnimationStart) == 0x000004, "Wrong size on TrackEntry_GetAnimationStart");
-static_assert(offsetof(TrackEntry_GetAnimationStart, ReturnValue) == 0x000000, "Member 'TrackEntry_GetAnimationStart::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetAnimationStart;
 
 // Function SpinePlugin.TrackEntry.GetAttachmentThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -100,9 +86,7 @@ struct TrackEntry_GetAttachmentThreshold final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetAttachmentThreshold) == 0x000004, "Wrong alignment on TrackEntry_GetAttachmentThreshold");
-static_assert(sizeof(TrackEntry_GetAttachmentThreshold) == 0x000004, "Wrong size on TrackEntry_GetAttachmentThreshold");
-static_assert(offsetof(TrackEntry_GetAttachmentThreshold, ReturnValue) == 0x000000, "Member 'TrackEntry_GetAttachmentThreshold::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetAttachmentThreshold;
 
 // Function SpinePlugin.TrackEntry.GetDelay
 // 0x0004 (0x0004 - 0x0000)
@@ -111,9 +95,7 @@ struct TrackEntry_GetDelay final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetDelay) == 0x000004, "Wrong alignment on TrackEntry_GetDelay");
-static_assert(sizeof(TrackEntry_GetDelay) == 0x000004, "Wrong size on TrackEntry_GetDelay");
-static_assert(offsetof(TrackEntry_GetDelay, ReturnValue) == 0x000000, "Member 'TrackEntry_GetDelay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetDelay;
 
 // Function SpinePlugin.TrackEntry.GetDrawOrderThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -122,9 +104,7 @@ struct TrackEntry_GetDrawOrderThreshold final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetDrawOrderThreshold) == 0x000004, "Wrong alignment on TrackEntry_GetDrawOrderThreshold");
-static_assert(sizeof(TrackEntry_GetDrawOrderThreshold) == 0x000004, "Wrong size on TrackEntry_GetDrawOrderThreshold");
-static_assert(offsetof(TrackEntry_GetDrawOrderThreshold, ReturnValue) == 0x000000, "Member 'TrackEntry_GetDrawOrderThreshold::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetDrawOrderThreshold;
 
 // Function SpinePlugin.TrackEntry.GetEventThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -133,9 +113,7 @@ struct TrackEntry_GetEventThreshold final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetEventThreshold) == 0x000004, "Wrong alignment on TrackEntry_GetEventThreshold");
-static_assert(sizeof(TrackEntry_GetEventThreshold) == 0x000004, "Wrong size on TrackEntry_GetEventThreshold");
-static_assert(offsetof(TrackEntry_GetEventThreshold, ReturnValue) == 0x000000, "Member 'TrackEntry_GetEventThreshold::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetEventThreshold;
 
 // Function SpinePlugin.TrackEntry.GetLoop
 // 0x0001 (0x0001 - 0x0000)
@@ -144,9 +122,7 @@ struct TrackEntry_GetLoop final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetLoop) == 0x000001, "Wrong alignment on TrackEntry_GetLoop");
-static_assert(sizeof(TrackEntry_GetLoop) == 0x000001, "Wrong size on TrackEntry_GetLoop");
-static_assert(offsetof(TrackEntry_GetLoop, ReturnValue) == 0x000000, "Member 'TrackEntry_GetLoop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetLoop;
 
 // Function SpinePlugin.TrackEntry.GetMixDuration
 // 0x0004 (0x0004 - 0x0000)
@@ -155,9 +131,7 @@ struct TrackEntry_GetMixDuration final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetMixDuration) == 0x000004, "Wrong alignment on TrackEntry_GetMixDuration");
-static_assert(sizeof(TrackEntry_GetMixDuration) == 0x000004, "Wrong size on TrackEntry_GetMixDuration");
-static_assert(offsetof(TrackEntry_GetMixDuration, ReturnValue) == 0x000000, "Member 'TrackEntry_GetMixDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetMixDuration;
 
 // Function SpinePlugin.TrackEntry.GetMixTime
 // 0x0004 (0x0004 - 0x0000)
@@ -166,9 +140,7 @@ struct TrackEntry_GetMixTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetMixTime) == 0x000004, "Wrong alignment on TrackEntry_GetMixTime");
-static_assert(sizeof(TrackEntry_GetMixTime) == 0x000004, "Wrong size on TrackEntry_GetMixTime");
-static_assert(offsetof(TrackEntry_GetMixTime, ReturnValue) == 0x000000, "Member 'TrackEntry_GetMixTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetMixTime;
 
 // Function SpinePlugin.TrackEntry.GetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -177,9 +149,7 @@ struct TrackEntry_GetTimeScale final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetTimeScale) == 0x000004, "Wrong alignment on TrackEntry_GetTimeScale");
-static_assert(sizeof(TrackEntry_GetTimeScale) == 0x000004, "Wrong size on TrackEntry_GetTimeScale");
-static_assert(offsetof(TrackEntry_GetTimeScale, ReturnValue) == 0x000000, "Member 'TrackEntry_GetTimeScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetTimeScale;
 
 // Function SpinePlugin.TrackEntry.GetTrackEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -188,9 +158,7 @@ struct TrackEntry_GetTrackEnd final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetTrackEnd) == 0x000004, "Wrong alignment on TrackEntry_GetTrackEnd");
-static_assert(sizeof(TrackEntry_GetTrackEnd) == 0x000004, "Wrong size on TrackEntry_GetTrackEnd");
-static_assert(offsetof(TrackEntry_GetTrackEnd, ReturnValue) == 0x000000, "Member 'TrackEntry_GetTrackEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetTrackEnd;
 
 // Function SpinePlugin.TrackEntry.GetTrackIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -199,9 +167,7 @@ struct TrackEntry_GetTrackIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetTrackIndex) == 0x000004, "Wrong alignment on TrackEntry_GetTrackIndex");
-static_assert(sizeof(TrackEntry_GetTrackIndex) == 0x000004, "Wrong size on TrackEntry_GetTrackIndex");
-static_assert(offsetof(TrackEntry_GetTrackIndex, ReturnValue) == 0x000000, "Member 'TrackEntry_GetTrackIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetTrackIndex;
 
 // Function SpinePlugin.TrackEntry.GetTrackTime
 // 0x0004 (0x0004 - 0x0000)
@@ -210,9 +176,7 @@ struct TrackEntry_GetTrackTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_GetTrackTime) == 0x000004, "Wrong alignment on TrackEntry_GetTrackTime");
-static_assert(sizeof(TrackEntry_GetTrackTime) == 0x000004, "Wrong size on TrackEntry_GetTrackTime");
-static_assert(offsetof(TrackEntry_GetTrackTime, ReturnValue) == 0x000000, "Member 'TrackEntry_GetTrackTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_GetTrackTime;
 
 // Function SpinePlugin.TrackEntry.isValidAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -221,9 +185,7 @@ struct TrackEntry_isValidAnimation final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_isValidAnimation) == 0x000004, "Wrong alignment on TrackEntry_isValidAnimation");
-static_assert(sizeof(TrackEntry_isValidAnimation) == 0x000004, "Wrong size on TrackEntry_isValidAnimation");
-static_assert(offsetof(TrackEntry_isValidAnimation, ReturnValue) == 0x000000, "Member 'TrackEntry_isValidAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_isValidAnimation;
 
 // Function SpinePlugin.TrackEntry.SetAlpha
 // 0x0004 (0x0004 - 0x0000)
@@ -232,9 +194,7 @@ struct TrackEntry_SetAlpha final
 public:
 	float                                         alpha;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetAlpha) == 0x000004, "Wrong alignment on TrackEntry_SetAlpha");
-static_assert(sizeof(TrackEntry_SetAlpha) == 0x000004, "Wrong size on TrackEntry_SetAlpha");
-static_assert(offsetof(TrackEntry_SetAlpha, alpha) == 0x000000, "Member 'TrackEntry_SetAlpha::alpha' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetAlpha;
 
 // Function SpinePlugin.TrackEntry.SetAnimationEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -243,9 +203,7 @@ struct TrackEntry_SetAnimationEnd final
 public:
 	float                                         animationEnd;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetAnimationEnd) == 0x000004, "Wrong alignment on TrackEntry_SetAnimationEnd");
-static_assert(sizeof(TrackEntry_SetAnimationEnd) == 0x000004, "Wrong size on TrackEntry_SetAnimationEnd");
-static_assert(offsetof(TrackEntry_SetAnimationEnd, animationEnd) == 0x000000, "Member 'TrackEntry_SetAnimationEnd::animationEnd' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetAnimationEnd;
 
 // Function SpinePlugin.TrackEntry.SetAnimationLast
 // 0x0004 (0x0004 - 0x0000)
@@ -254,9 +212,7 @@ struct TrackEntry_SetAnimationLast final
 public:
 	float                                         animationLast;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetAnimationLast) == 0x000004, "Wrong alignment on TrackEntry_SetAnimationLast");
-static_assert(sizeof(TrackEntry_SetAnimationLast) == 0x000004, "Wrong size on TrackEntry_SetAnimationLast");
-static_assert(offsetof(TrackEntry_SetAnimationLast, animationLast) == 0x000000, "Member 'TrackEntry_SetAnimationLast::animationLast' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetAnimationLast;
 
 // Function SpinePlugin.TrackEntry.SetAnimationStart
 // 0x0004 (0x0004 - 0x0000)
@@ -265,9 +221,7 @@ struct TrackEntry_SetAnimationStart final
 public:
 	float                                         animationStart;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetAnimationStart) == 0x000004, "Wrong alignment on TrackEntry_SetAnimationStart");
-static_assert(sizeof(TrackEntry_SetAnimationStart) == 0x000004, "Wrong size on TrackEntry_SetAnimationStart");
-static_assert(offsetof(TrackEntry_SetAnimationStart, animationStart) == 0x000000, "Member 'TrackEntry_SetAnimationStart::animationStart' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetAnimationStart;
 
 // Function SpinePlugin.TrackEntry.SetAttachmentThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -276,9 +230,7 @@ struct TrackEntry_SetAttachmentThreshold final
 public:
 	float                                         attachmentThreshold;                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetAttachmentThreshold) == 0x000004, "Wrong alignment on TrackEntry_SetAttachmentThreshold");
-static_assert(sizeof(TrackEntry_SetAttachmentThreshold) == 0x000004, "Wrong size on TrackEntry_SetAttachmentThreshold");
-static_assert(offsetof(TrackEntry_SetAttachmentThreshold, attachmentThreshold) == 0x000000, "Member 'TrackEntry_SetAttachmentThreshold::attachmentThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetAttachmentThreshold;
 
 // Function SpinePlugin.TrackEntry.SetDelay
 // 0x0004 (0x0004 - 0x0000)
@@ -287,9 +239,7 @@ struct TrackEntry_SetDelay final
 public:
 	float                                         delay;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetDelay) == 0x000004, "Wrong alignment on TrackEntry_SetDelay");
-static_assert(sizeof(TrackEntry_SetDelay) == 0x000004, "Wrong size on TrackEntry_SetDelay");
-static_assert(offsetof(TrackEntry_SetDelay, delay) == 0x000000, "Member 'TrackEntry_SetDelay::delay' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetDelay;
 
 // Function SpinePlugin.TrackEntry.SetDrawOrderThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -298,9 +248,7 @@ struct TrackEntry_SetDrawOrderThreshold final
 public:
 	float                                         drawOrderThreshold;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetDrawOrderThreshold) == 0x000004, "Wrong alignment on TrackEntry_SetDrawOrderThreshold");
-static_assert(sizeof(TrackEntry_SetDrawOrderThreshold) == 0x000004, "Wrong size on TrackEntry_SetDrawOrderThreshold");
-static_assert(offsetof(TrackEntry_SetDrawOrderThreshold, drawOrderThreshold) == 0x000000, "Member 'TrackEntry_SetDrawOrderThreshold::drawOrderThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetDrawOrderThreshold;
 
 // Function SpinePlugin.TrackEntry.SetEventThreshold
 // 0x0004 (0x0004 - 0x0000)
@@ -309,9 +257,7 @@ struct TrackEntry_SetEventThreshold final
 public:
 	float                                         eventThreshold;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetEventThreshold) == 0x000004, "Wrong alignment on TrackEntry_SetEventThreshold");
-static_assert(sizeof(TrackEntry_SetEventThreshold) == 0x000004, "Wrong size on TrackEntry_SetEventThreshold");
-static_assert(offsetof(TrackEntry_SetEventThreshold, eventThreshold) == 0x000000, "Member 'TrackEntry_SetEventThreshold::eventThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetEventThreshold;
 
 // Function SpinePlugin.TrackEntry.SetLoop
 // 0x0001 (0x0001 - 0x0000)
@@ -320,9 +266,7 @@ struct TrackEntry_SetLoop final
 public:
 	bool                                          loop;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetLoop) == 0x000001, "Wrong alignment on TrackEntry_SetLoop");
-static_assert(sizeof(TrackEntry_SetLoop) == 0x000001, "Wrong size on TrackEntry_SetLoop");
-static_assert(offsetof(TrackEntry_SetLoop, loop) == 0x000000, "Member 'TrackEntry_SetLoop::loop' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetLoop;
 
 // Function SpinePlugin.TrackEntry.SetMixDuration
 // 0x0004 (0x0004 - 0x0000)
@@ -331,9 +275,7 @@ struct TrackEntry_SetMixDuration final
 public:
 	float                                         mixDuration;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetMixDuration) == 0x000004, "Wrong alignment on TrackEntry_SetMixDuration");
-static_assert(sizeof(TrackEntry_SetMixDuration) == 0x000004, "Wrong size on TrackEntry_SetMixDuration");
-static_assert(offsetof(TrackEntry_SetMixDuration, mixDuration) == 0x000000, "Member 'TrackEntry_SetMixDuration::mixDuration' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetMixDuration;
 
 // Function SpinePlugin.TrackEntry.SetMixTime
 // 0x0004 (0x0004 - 0x0000)
@@ -342,9 +284,7 @@ struct TrackEntry_SetMixTime final
 public:
 	float                                         mixTime;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetMixTime) == 0x000004, "Wrong alignment on TrackEntry_SetMixTime");
-static_assert(sizeof(TrackEntry_SetMixTime) == 0x000004, "Wrong size on TrackEntry_SetMixTime");
-static_assert(offsetof(TrackEntry_SetMixTime, mixTime) == 0x000000, "Member 'TrackEntry_SetMixTime::mixTime' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetMixTime;
 
 // Function SpinePlugin.TrackEntry.SetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -353,9 +293,7 @@ struct TrackEntry_SetTimeScale final
 public:
 	float                                         timeScale;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetTimeScale) == 0x000004, "Wrong alignment on TrackEntry_SetTimeScale");
-static_assert(sizeof(TrackEntry_SetTimeScale) == 0x000004, "Wrong size on TrackEntry_SetTimeScale");
-static_assert(offsetof(TrackEntry_SetTimeScale, timeScale) == 0x000000, "Member 'TrackEntry_SetTimeScale::timeScale' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetTimeScale;
 
 // Function SpinePlugin.TrackEntry.SetTrackEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -364,9 +302,7 @@ struct TrackEntry_SetTrackEnd final
 public:
 	float                                         trackEnd;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetTrackEnd) == 0x000004, "Wrong alignment on TrackEntry_SetTrackEnd");
-static_assert(sizeof(TrackEntry_SetTrackEnd) == 0x000004, "Wrong size on TrackEntry_SetTrackEnd");
-static_assert(offsetof(TrackEntry_SetTrackEnd, trackEnd) == 0x000000, "Member 'TrackEntry_SetTrackEnd::trackEnd' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetTrackEnd;
 
 // Function SpinePlugin.TrackEntry.SetTrackTime
 // 0x0004 (0x0004 - 0x0000)
@@ -375,9 +311,7 @@ struct TrackEntry_SetTrackTime final
 public:
 	float                                         trackTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TrackEntry_SetTrackTime) == 0x000004, "Wrong alignment on TrackEntry_SetTrackTime");
-static_assert(sizeof(TrackEntry_SetTrackTime) == 0x000004, "Wrong size on TrackEntry_SetTrackTime");
-static_assert(offsetof(TrackEntry_SetTrackTime, trackTime) == 0x000000, "Member 'TrackEntry_SetTrackTime::trackTime' has a wrong offset!");
+DUMPER7_ASSERTS_TrackEntry_SetTrackTime;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetAnimationDuration
 // 0x0018 (0x0018 - 0x0000)
@@ -388,10 +322,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_GetAnimationDuration) == 0x000008, "Wrong alignment on SpineSkeletonComponent_GetAnimationDuration");
-static_assert(sizeof(SpineSkeletonComponent_GetAnimationDuration) == 0x000018, "Wrong size on SpineSkeletonComponent_GetAnimationDuration");
-static_assert(offsetof(SpineSkeletonComponent_GetAnimationDuration, AnimationName) == 0x000000, "Member 'SpineSkeletonComponent_GetAnimationDuration::AnimationName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_GetAnimationDuration, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_GetAnimationDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetAnimationDuration;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetAnimations
 // 0x0010 (0x0010 - 0x0000)
@@ -400,9 +331,7 @@ struct SpineSkeletonComponent_GetAnimations final
 public:
 	TArray<class FString>                         Animations;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetAnimations) == 0x000008, "Wrong alignment on SpineSkeletonComponent_GetAnimations");
-static_assert(sizeof(SpineSkeletonComponent_GetAnimations) == 0x000010, "Wrong size on SpineSkeletonComponent_GetAnimations");
-static_assert(offsetof(SpineSkeletonComponent_GetAnimations, Animations) == 0x000000, "Member 'SpineSkeletonComponent_GetAnimations::Animations' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetAnimations;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetBones
 // 0x0010 (0x0010 - 0x0000)
@@ -411,9 +340,7 @@ struct SpineSkeletonComponent_GetBones final
 public:
 	TArray<class FString>                         Bones;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetBones) == 0x000008, "Wrong alignment on SpineSkeletonComponent_GetBones");
-static_assert(sizeof(SpineSkeletonComponent_GetBones) == 0x000010, "Wrong size on SpineSkeletonComponent_GetBones");
-static_assert(offsetof(SpineSkeletonComponent_GetBones, Bones) == 0x000000, "Member 'SpineSkeletonComponent_GetBones::Bones' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetBones;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetBoneWorldTransform
 // 0x0070 (0x0070 - 0x0000)
@@ -423,10 +350,7 @@ public:
 	class FString                                 BoneName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetBoneWorldTransform) == 0x000010, "Wrong alignment on SpineSkeletonComponent_GetBoneWorldTransform");
-static_assert(sizeof(SpineSkeletonComponent_GetBoneWorldTransform) == 0x000070, "Wrong size on SpineSkeletonComponent_GetBoneWorldTransform");
-static_assert(offsetof(SpineSkeletonComponent_GetBoneWorldTransform, BoneName) == 0x000000, "Member 'SpineSkeletonComponent_GetBoneWorldTransform::BoneName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_GetBoneWorldTransform, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_GetBoneWorldTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetBoneWorldTransform;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetScaleX
 // 0x0004 (0x0004 - 0x0000)
@@ -435,9 +359,7 @@ struct SpineSkeletonComponent_GetScaleX final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetScaleX) == 0x000004, "Wrong alignment on SpineSkeletonComponent_GetScaleX");
-static_assert(sizeof(SpineSkeletonComponent_GetScaleX) == 0x000004, "Wrong size on SpineSkeletonComponent_GetScaleX");
-static_assert(offsetof(SpineSkeletonComponent_GetScaleX, ReturnValue) == 0x000000, "Member 'SpineSkeletonComponent_GetScaleX::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetScaleX;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetScaleY
 // 0x0004 (0x0004 - 0x0000)
@@ -446,9 +368,7 @@ struct SpineSkeletonComponent_GetScaleY final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetScaleY) == 0x000004, "Wrong alignment on SpineSkeletonComponent_GetScaleY");
-static_assert(sizeof(SpineSkeletonComponent_GetScaleY) == 0x000004, "Wrong size on SpineSkeletonComponent_GetScaleY");
-static_assert(offsetof(SpineSkeletonComponent_GetScaleY, ReturnValue) == 0x000000, "Member 'SpineSkeletonComponent_GetScaleY::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetScaleY;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetSkins
 // 0x0010 (0x0010 - 0x0000)
@@ -457,9 +377,7 @@ struct SpineSkeletonComponent_GetSkins final
 public:
 	TArray<class FString>                         Skins;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetSkins) == 0x000008, "Wrong alignment on SpineSkeletonComponent_GetSkins");
-static_assert(sizeof(SpineSkeletonComponent_GetSkins) == 0x000010, "Wrong size on SpineSkeletonComponent_GetSkins");
-static_assert(offsetof(SpineSkeletonComponent_GetSkins, Skins) == 0x000000, "Member 'SpineSkeletonComponent_GetSkins::Skins' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetSkins;
 
 // Function SpinePlugin.SpineSkeletonComponent.GetSlots
 // 0x0010 (0x0010 - 0x0000)
@@ -468,9 +386,7 @@ struct SpineSkeletonComponent_GetSlots final
 public:
 	TArray<class FString>                         Slots;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_GetSlots) == 0x000008, "Wrong alignment on SpineSkeletonComponent_GetSlots");
-static_assert(sizeof(SpineSkeletonComponent_GetSlots) == 0x000010, "Wrong size on SpineSkeletonComponent_GetSlots");
-static_assert(offsetof(SpineSkeletonComponent_GetSlots, Slots) == 0x000000, "Member 'SpineSkeletonComponent_GetSlots::Slots' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_GetSlots;
 
 // Function SpinePlugin.SpineSkeletonComponent.HasAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -481,10 +397,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_HasAnimation) == 0x000008, "Wrong alignment on SpineSkeletonComponent_HasAnimation");
-static_assert(sizeof(SpineSkeletonComponent_HasAnimation) == 0x000018, "Wrong size on SpineSkeletonComponent_HasAnimation");
-static_assert(offsetof(SpineSkeletonComponent_HasAnimation, AnimationName) == 0x000000, "Member 'SpineSkeletonComponent_HasAnimation::AnimationName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_HasAnimation, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_HasAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_HasAnimation;
 
 // Function SpinePlugin.SpineSkeletonComponent.HasBone
 // 0x0018 (0x0018 - 0x0000)
@@ -495,10 +408,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_HasBone) == 0x000008, "Wrong alignment on SpineSkeletonComponent_HasBone");
-static_assert(sizeof(SpineSkeletonComponent_HasBone) == 0x000018, "Wrong size on SpineSkeletonComponent_HasBone");
-static_assert(offsetof(SpineSkeletonComponent_HasBone, BoneName) == 0x000000, "Member 'SpineSkeletonComponent_HasBone::BoneName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_HasBone, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_HasBone::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_HasBone;
 
 // Function SpinePlugin.SpineSkeletonComponent.HasSkin
 // 0x0018 (0x0018 - 0x0000)
@@ -509,10 +419,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_HasSkin) == 0x000008, "Wrong alignment on SpineSkeletonComponent_HasSkin");
-static_assert(sizeof(SpineSkeletonComponent_HasSkin) == 0x000018, "Wrong size on SpineSkeletonComponent_HasSkin");
-static_assert(offsetof(SpineSkeletonComponent_HasSkin, SkinName) == 0x000000, "Member 'SpineSkeletonComponent_HasSkin::SkinName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_HasSkin, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_HasSkin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_HasSkin;
 
 // Function SpinePlugin.SpineSkeletonComponent.HasSlot
 // 0x0018 (0x0018 - 0x0000)
@@ -523,10 +430,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_HasSlot) == 0x000008, "Wrong alignment on SpineSkeletonComponent_HasSlot");
-static_assert(sizeof(SpineSkeletonComponent_HasSlot) == 0x000018, "Wrong size on SpineSkeletonComponent_HasSlot");
-static_assert(offsetof(SpineSkeletonComponent_HasSlot, SlotName) == 0x000000, "Member 'SpineSkeletonComponent_HasSlot::SlotName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_HasSlot, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_HasSlot::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_HasSlot;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetAttachment
 // 0x0028 (0x0028 - 0x0000)
@@ -538,11 +442,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_SetAttachment) == 0x000008, "Wrong alignment on SpineSkeletonComponent_SetAttachment");
-static_assert(sizeof(SpineSkeletonComponent_SetAttachment) == 0x000028, "Wrong size on SpineSkeletonComponent_SetAttachment");
-static_assert(offsetof(SpineSkeletonComponent_SetAttachment, slotName) == 0x000000, "Member 'SpineSkeletonComponent_SetAttachment::slotName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetAttachment, attachmentName) == 0x000010, "Member 'SpineSkeletonComponent_SetAttachment::attachmentName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetAttachment, ReturnValue) == 0x000020, "Member 'SpineSkeletonComponent_SetAttachment::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetAttachment;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetBoneWorldPosition
 // 0x0028 (0x0028 - 0x0000)
@@ -552,10 +452,7 @@ public:
 	class FString                                 BoneName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                position;                                          // 0x0010(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_SetBoneWorldPosition) == 0x000008, "Wrong alignment on SpineSkeletonComponent_SetBoneWorldPosition");
-static_assert(sizeof(SpineSkeletonComponent_SetBoneWorldPosition) == 0x000028, "Wrong size on SpineSkeletonComponent_SetBoneWorldPosition");
-static_assert(offsetof(SpineSkeletonComponent_SetBoneWorldPosition, BoneName) == 0x000000, "Member 'SpineSkeletonComponent_SetBoneWorldPosition::BoneName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetBoneWorldPosition, position) == 0x000010, "Member 'SpineSkeletonComponent_SetBoneWorldPosition::position' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetBoneWorldPosition;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetScaleX
 // 0x0004 (0x0004 - 0x0000)
@@ -564,9 +461,7 @@ struct SpineSkeletonComponent_SetScaleX final
 public:
 	float                                         scaleX;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_SetScaleX) == 0x000004, "Wrong alignment on SpineSkeletonComponent_SetScaleX");
-static_assert(sizeof(SpineSkeletonComponent_SetScaleX) == 0x000004, "Wrong size on SpineSkeletonComponent_SetScaleX");
-static_assert(offsetof(SpineSkeletonComponent_SetScaleX, scaleX) == 0x000000, "Member 'SpineSkeletonComponent_SetScaleX::scaleX' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetScaleX;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetScaleY
 // 0x0004 (0x0004 - 0x0000)
@@ -575,9 +470,7 @@ struct SpineSkeletonComponent_SetScaleY final
 public:
 	float                                         scaleY;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonComponent_SetScaleY) == 0x000004, "Wrong alignment on SpineSkeletonComponent_SetScaleY");
-static_assert(sizeof(SpineSkeletonComponent_SetScaleY) == 0x000004, "Wrong size on SpineSkeletonComponent_SetScaleY");
-static_assert(offsetof(SpineSkeletonComponent_SetScaleY, scaleY) == 0x000000, "Member 'SpineSkeletonComponent_SetScaleY::scaleY' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetScaleY;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetSkin
 // 0x0018 (0x0018 - 0x0000)
@@ -588,10 +481,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_SetSkin) == 0x000008, "Wrong alignment on SpineSkeletonComponent_SetSkin");
-static_assert(sizeof(SpineSkeletonComponent_SetSkin) == 0x000018, "Wrong size on SpineSkeletonComponent_SetSkin");
-static_assert(offsetof(SpineSkeletonComponent_SetSkin, SkinName) == 0x000000, "Member 'SpineSkeletonComponent_SetSkin::SkinName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetSkin, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_SetSkin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetSkin;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetSkins
 // 0x0018 (0x0018 - 0x0000)
@@ -602,10 +492,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_SetSkins) == 0x000008, "Wrong alignment on SpineSkeletonComponent_SetSkins");
-static_assert(sizeof(SpineSkeletonComponent_SetSkins) == 0x000018, "Wrong size on SpineSkeletonComponent_SetSkins");
-static_assert(offsetof(SpineSkeletonComponent_SetSkins, SkinNames) == 0x000000, "Member 'SpineSkeletonComponent_SetSkins::SkinNames' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetSkins, ReturnValue) == 0x000010, "Member 'SpineSkeletonComponent_SetSkins::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetSkins;
 
 // Function SpinePlugin.SpineSkeletonComponent.SetSlotColor
 // 0x0018 (0x0018 - 0x0000)
@@ -616,10 +503,7 @@ public:
 	struct FColor                                 color;                                             // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonComponent_SetSlotColor) == 0x000008, "Wrong alignment on SpineSkeletonComponent_SetSlotColor");
-static_assert(sizeof(SpineSkeletonComponent_SetSlotColor) == 0x000018, "Wrong size on SpineSkeletonComponent_SetSlotColor");
-static_assert(offsetof(SpineSkeletonComponent_SetSlotColor, SlotName) == 0x000000, "Member 'SpineSkeletonComponent_SetSlotColor::SlotName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonComponent_SetSlotColor, color) == 0x000010, "Member 'SpineSkeletonComponent_SetSlotColor::color' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonComponent_SetSlotColor;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.AddAnimation
 // 0x0028 (0x0028 - 0x0000)
@@ -634,13 +518,7 @@ public:
 	float                                         delay;                                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTrackEntry*                            ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_AddAnimation) == 0x000008, "Wrong alignment on SpineSkeletonAnimationComponent_AddAnimation");
-static_assert(sizeof(SpineSkeletonAnimationComponent_AddAnimation) == 0x000028, "Wrong size on SpineSkeletonAnimationComponent_AddAnimation");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddAnimation, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_AddAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddAnimation, animationName) == 0x000008, "Member 'SpineSkeletonAnimationComponent_AddAnimation::animationName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddAnimation, loop) == 0x000018, "Member 'SpineSkeletonAnimationComponent_AddAnimation::loop' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddAnimation, delay) == 0x00001C, "Member 'SpineSkeletonAnimationComponent_AddAnimation::delay' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddAnimation, ReturnValue) == 0x000020, "Member 'SpineSkeletonAnimationComponent_AddAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_AddAnimation;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.AddEmptyAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -653,12 +531,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_AddEmptyAnimation) == 0x000008, "Wrong alignment on SpineSkeletonAnimationComponent_AddEmptyAnimation");
-static_assert(sizeof(SpineSkeletonAnimationComponent_AddEmptyAnimation) == 0x000018, "Wrong size on SpineSkeletonAnimationComponent_AddEmptyAnimation");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddEmptyAnimation, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_AddEmptyAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddEmptyAnimation, mixDuration) == 0x000004, "Member 'SpineSkeletonAnimationComponent_AddEmptyAnimation::mixDuration' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddEmptyAnimation, delay) == 0x000008, "Member 'SpineSkeletonAnimationComponent_AddEmptyAnimation::delay' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_AddEmptyAnimation, ReturnValue) == 0x000010, "Member 'SpineSkeletonAnimationComponent_AddEmptyAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_AddEmptyAnimation;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.ClearTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -667,9 +540,7 @@ struct SpineSkeletonAnimationComponent_ClearTrack final
 public:
 	int32                                         trackIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_ClearTrack) == 0x000004, "Wrong alignment on SpineSkeletonAnimationComponent_ClearTrack");
-static_assert(sizeof(SpineSkeletonAnimationComponent_ClearTrack) == 0x000004, "Wrong size on SpineSkeletonAnimationComponent_ClearTrack");
-static_assert(offsetof(SpineSkeletonAnimationComponent_ClearTrack, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_ClearTrack::trackIndex' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_ClearTrack;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.GetCurrent
 // 0x0010 (0x0010 - 0x0000)
@@ -680,10 +551,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_GetCurrent) == 0x000008, "Wrong alignment on SpineSkeletonAnimationComponent_GetCurrent");
-static_assert(sizeof(SpineSkeletonAnimationComponent_GetCurrent) == 0x000010, "Wrong size on SpineSkeletonAnimationComponent_GetCurrent");
-static_assert(offsetof(SpineSkeletonAnimationComponent_GetCurrent, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_GetCurrent::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_GetCurrent, ReturnValue) == 0x000008, "Member 'SpineSkeletonAnimationComponent_GetCurrent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_GetCurrent;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.GetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -692,9 +560,7 @@ struct SpineSkeletonAnimationComponent_GetTimeScale final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_GetTimeScale) == 0x000004, "Wrong alignment on SpineSkeletonAnimationComponent_GetTimeScale");
-static_assert(sizeof(SpineSkeletonAnimationComponent_GetTimeScale) == 0x000004, "Wrong size on SpineSkeletonAnimationComponent_GetTimeScale");
-static_assert(offsetof(SpineSkeletonAnimationComponent_GetTimeScale, ReturnValue) == 0x000000, "Member 'SpineSkeletonAnimationComponent_GetTimeScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_GetTimeScale;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetAnimation
 // 0x0028 (0x0028 - 0x0000)
@@ -708,12 +574,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetAnimation) == 0x000008, "Wrong alignment on SpineSkeletonAnimationComponent_SetAnimation");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetAnimation) == 0x000028, "Wrong size on SpineSkeletonAnimationComponent_SetAnimation");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAnimation, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAnimation, animationName) == 0x000008, "Member 'SpineSkeletonAnimationComponent_SetAnimation::animationName' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAnimation, loop) == 0x000018, "Member 'SpineSkeletonAnimationComponent_SetAnimation::loop' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAnimation, ReturnValue) == 0x000020, "Member 'SpineSkeletonAnimationComponent_SetAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetAnimation;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetAnimationStateDelegateEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -722,9 +583,7 @@ struct SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled) == 0x000001, "Wrong alignment on SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled) == 0x000001, "Wrong size on SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled, bEnabled) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetAnimationStateDelegateEnabled;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetAutoPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -733,9 +592,7 @@ struct SpineSkeletonAnimationComponent_SetAutoPlay final
 public:
 	bool                                          bInAutoPlays;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetAutoPlay) == 0x000001, "Wrong alignment on SpineSkeletonAnimationComponent_SetAutoPlay");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetAutoPlay) == 0x000001, "Wrong size on SpineSkeletonAnimationComponent_SetAutoPlay");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetAutoPlay, bInAutoPlays) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetAutoPlay::bInAutoPlays' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetAutoPlay;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetEmptyAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -746,11 +603,7 @@ public:
 	float                                         mixDuration;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTrackEntry*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetEmptyAnimation) == 0x000008, "Wrong alignment on SpineSkeletonAnimationComponent_SetEmptyAnimation");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetEmptyAnimation) == 0x000010, "Wrong size on SpineSkeletonAnimationComponent_SetEmptyAnimation");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetEmptyAnimation, trackIndex) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetEmptyAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetEmptyAnimation, mixDuration) == 0x000004, "Member 'SpineSkeletonAnimationComponent_SetEmptyAnimation::mixDuration' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetEmptyAnimation, ReturnValue) == 0x000008, "Member 'SpineSkeletonAnimationComponent_SetEmptyAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetEmptyAnimation;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetPlaybackTime
 // 0x0008 (0x0008 - 0x0000)
@@ -761,10 +614,7 @@ public:
 	bool                                          bCallDelegates;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetPlaybackTime) == 0x000004, "Wrong alignment on SpineSkeletonAnimationComponent_SetPlaybackTime");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetPlaybackTime) == 0x000008, "Wrong size on SpineSkeletonAnimationComponent_SetPlaybackTime");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetPlaybackTime, InPlaybackTime) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetPlaybackTime::InPlaybackTime' has a wrong offset!");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetPlaybackTime, bCallDelegates) == 0x000004, "Member 'SpineSkeletonAnimationComponent_SetPlaybackTime::bCallDelegates' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetPlaybackTime;
 
 // Function SpinePlugin.SpineSkeletonAnimationComponent.SetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -773,9 +623,19 @@ struct SpineSkeletonAnimationComponent_SetTimeScale final
 public:
 	float                                         timeScale;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineSkeletonAnimationComponent_SetTimeScale) == 0x000004, "Wrong alignment on SpineSkeletonAnimationComponent_SetTimeScale");
-static_assert(sizeof(SpineSkeletonAnimationComponent_SetTimeScale) == 0x000004, "Wrong size on SpineSkeletonAnimationComponent_SetTimeScale");
-static_assert(offsetof(SpineSkeletonAnimationComponent_SetTimeScale, timeScale) == 0x000000, "Member 'SpineSkeletonAnimationComponent_SetTimeScale::timeScale' has a wrong offset!");
+DUMPER7_ASSERTS_SpineSkeletonAnimationComponent_SetTimeScale;
+
+// Function SpinePlugin.SpineWidget.BatchTickSpineWidgets
+// 0x0018 (0x0018 - 0x0000)
+struct SpineWidget_BatchTickSpineWidgets final
+{
+public:
+	TArray<class USpineWidget*>                   InWidgets;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	float                                         DeltaTime;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CallDelegates;                                     // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_SpineWidget_BatchTickSpineWidgets;
 
 // Function SpinePlugin.SpineWidget.AddAnimation
 // 0x0028 (0x0028 - 0x0000)
@@ -790,13 +650,7 @@ public:
 	float                                         delay;                                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTrackEntry*                            ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_AddAnimation) == 0x000008, "Wrong alignment on SpineWidget_AddAnimation");
-static_assert(sizeof(SpineWidget_AddAnimation) == 0x000028, "Wrong size on SpineWidget_AddAnimation");
-static_assert(offsetof(SpineWidget_AddAnimation, trackIndex) == 0x000000, "Member 'SpineWidget_AddAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddAnimation, animationName) == 0x000008, "Member 'SpineWidget_AddAnimation::animationName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddAnimation, loop) == 0x000018, "Member 'SpineWidget_AddAnimation::loop' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddAnimation, delay) == 0x00001C, "Member 'SpineWidget_AddAnimation::delay' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddAnimation, ReturnValue) == 0x000020, "Member 'SpineWidget_AddAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_AddAnimation;
 
 // Function SpinePlugin.SpineWidget.AddEmptyAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -809,12 +663,16 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_AddEmptyAnimation) == 0x000008, "Wrong alignment on SpineWidget_AddEmptyAnimation");
-static_assert(sizeof(SpineWidget_AddEmptyAnimation) == 0x000018, "Wrong size on SpineWidget_AddEmptyAnimation");
-static_assert(offsetof(SpineWidget_AddEmptyAnimation, trackIndex) == 0x000000, "Member 'SpineWidget_AddEmptyAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddEmptyAnimation, mixDuration) == 0x000004, "Member 'SpineWidget_AddEmptyAnimation::mixDuration' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddEmptyAnimation, delay) == 0x000008, "Member 'SpineWidget_AddEmptyAnimation::delay' has a wrong offset!");
-static_assert(offsetof(SpineWidget_AddEmptyAnimation, ReturnValue) == 0x000010, "Member 'SpineWidget_AddEmptyAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_AddEmptyAnimation;
+
+// Function SpinePlugin.SpineWidget.AutoTick
+// 0x0004 (0x0004 - 0x0000)
+struct SpineWidget_AutoTick final
+{
+public:
+	float                                         CurrDetaTime;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SpineWidget_AutoTick;
 
 // Function SpinePlugin.SpineWidget.ClearTrack
 // 0x0004 (0x0004 - 0x0000)
@@ -823,9 +681,7 @@ struct SpineWidget_ClearTrack final
 public:
 	int32                                         trackIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_ClearTrack) == 0x000004, "Wrong alignment on SpineWidget_ClearTrack");
-static_assert(sizeof(SpineWidget_ClearTrack) == 0x000004, "Wrong size on SpineWidget_ClearTrack");
-static_assert(offsetof(SpineWidget_ClearTrack, trackIndex) == 0x000000, "Member 'SpineWidget_ClearTrack::trackIndex' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_ClearTrack;
 
 // Function SpinePlugin.SpineWidget.GetAnimationDuration
 // 0x0018 (0x0018 - 0x0000)
@@ -836,10 +692,7 @@ public:
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_GetAnimationDuration) == 0x000008, "Wrong alignment on SpineWidget_GetAnimationDuration");
-static_assert(sizeof(SpineWidget_GetAnimationDuration) == 0x000018, "Wrong size on SpineWidget_GetAnimationDuration");
-static_assert(offsetof(SpineWidget_GetAnimationDuration, AnimationName) == 0x000000, "Member 'SpineWidget_GetAnimationDuration::AnimationName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_GetAnimationDuration, ReturnValue) == 0x000010, "Member 'SpineWidget_GetAnimationDuration::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetAnimationDuration;
 
 // Function SpinePlugin.SpineWidget.GetAnimations
 // 0x0010 (0x0010 - 0x0000)
@@ -848,9 +701,7 @@ struct SpineWidget_GetAnimations final
 public:
 	TArray<class FString>                         Animations;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetAnimations) == 0x000008, "Wrong alignment on SpineWidget_GetAnimations");
-static_assert(sizeof(SpineWidget_GetAnimations) == 0x000010, "Wrong size on SpineWidget_GetAnimations");
-static_assert(offsetof(SpineWidget_GetAnimations, Animations) == 0x000000, "Member 'SpineWidget_GetAnimations::Animations' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetAnimations;
 
 // Function SpinePlugin.SpineWidget.GetBones
 // 0x0010 (0x0010 - 0x0000)
@@ -859,9 +710,7 @@ struct SpineWidget_GetBones final
 public:
 	TArray<class FString>                         Bones;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetBones) == 0x000008, "Wrong alignment on SpineWidget_GetBones");
-static_assert(sizeof(SpineWidget_GetBones) == 0x000010, "Wrong size on SpineWidget_GetBones");
-static_assert(offsetof(SpineWidget_GetBones, Bones) == 0x000000, "Member 'SpineWidget_GetBones::Bones' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetBones;
 
 // Function SpinePlugin.SpineWidget.GetCurrent
 // 0x0010 (0x0010 - 0x0000)
@@ -872,10 +721,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetCurrent) == 0x000008, "Wrong alignment on SpineWidget_GetCurrent");
-static_assert(sizeof(SpineWidget_GetCurrent) == 0x000010, "Wrong size on SpineWidget_GetCurrent");
-static_assert(offsetof(SpineWidget_GetCurrent, trackIndex) == 0x000000, "Member 'SpineWidget_GetCurrent::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineWidget_GetCurrent, ReturnValue) == 0x000008, "Member 'SpineWidget_GetCurrent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetCurrent;
 
 // Function SpinePlugin.SpineWidget.GetScaleX
 // 0x0004 (0x0004 - 0x0000)
@@ -884,9 +730,7 @@ struct SpineWidget_GetScaleX final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetScaleX) == 0x000004, "Wrong alignment on SpineWidget_GetScaleX");
-static_assert(sizeof(SpineWidget_GetScaleX) == 0x000004, "Wrong size on SpineWidget_GetScaleX");
-static_assert(offsetof(SpineWidget_GetScaleX, ReturnValue) == 0x000000, "Member 'SpineWidget_GetScaleX::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetScaleX;
 
 // Function SpinePlugin.SpineWidget.GetScaleY
 // 0x0004 (0x0004 - 0x0000)
@@ -895,9 +739,7 @@ struct SpineWidget_GetScaleY final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetScaleY) == 0x000004, "Wrong alignment on SpineWidget_GetScaleY");
-static_assert(sizeof(SpineWidget_GetScaleY) == 0x000004, "Wrong size on SpineWidget_GetScaleY");
-static_assert(offsetof(SpineWidget_GetScaleY, ReturnValue) == 0x000000, "Member 'SpineWidget_GetScaleY::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetScaleY;
 
 // Function SpinePlugin.SpineWidget.GetSkins
 // 0x0010 (0x0010 - 0x0000)
@@ -906,9 +748,7 @@ struct SpineWidget_GetSkins final
 public:
 	TArray<class FString>                         Skins;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetSkins) == 0x000008, "Wrong alignment on SpineWidget_GetSkins");
-static_assert(sizeof(SpineWidget_GetSkins) == 0x000010, "Wrong size on SpineWidget_GetSkins");
-static_assert(offsetof(SpineWidget_GetSkins, Skins) == 0x000000, "Member 'SpineWidget_GetSkins::Skins' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetSkins;
 
 // Function SpinePlugin.SpineWidget.GetSlots
 // 0x0010 (0x0010 - 0x0000)
@@ -917,9 +757,7 @@ struct SpineWidget_GetSlots final
 public:
 	TArray<class FString>                         Slots;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetSlots) == 0x000008, "Wrong alignment on SpineWidget_GetSlots");
-static_assert(sizeof(SpineWidget_GetSlots) == 0x000010, "Wrong size on SpineWidget_GetSlots");
-static_assert(offsetof(SpineWidget_GetSlots, Slots) == 0x000000, "Member 'SpineWidget_GetSlots::Slots' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetSlots;
 
 // Function SpinePlugin.SpineWidget.GetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -928,9 +766,7 @@ struct SpineWidget_GetTimeScale final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_GetTimeScale) == 0x000004, "Wrong alignment on SpineWidget_GetTimeScale");
-static_assert(sizeof(SpineWidget_GetTimeScale) == 0x000004, "Wrong size on SpineWidget_GetTimeScale");
-static_assert(offsetof(SpineWidget_GetTimeScale, ReturnValue) == 0x000000, "Member 'SpineWidget_GetTimeScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_GetTimeScale;
 
 // Function SpinePlugin.SpineWidget.HasAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -941,10 +777,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_HasAnimation) == 0x000008, "Wrong alignment on SpineWidget_HasAnimation");
-static_assert(sizeof(SpineWidget_HasAnimation) == 0x000018, "Wrong size on SpineWidget_HasAnimation");
-static_assert(offsetof(SpineWidget_HasAnimation, AnimationName) == 0x000000, "Member 'SpineWidget_HasAnimation::AnimationName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_HasAnimation, ReturnValue) == 0x000010, "Member 'SpineWidget_HasAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_HasAnimation;
 
 // Function SpinePlugin.SpineWidget.HasBone
 // 0x0018 (0x0018 - 0x0000)
@@ -955,10 +788,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_HasBone) == 0x000008, "Wrong alignment on SpineWidget_HasBone");
-static_assert(sizeof(SpineWidget_HasBone) == 0x000018, "Wrong size on SpineWidget_HasBone");
-static_assert(offsetof(SpineWidget_HasBone, BoneName) == 0x000000, "Member 'SpineWidget_HasBone::BoneName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_HasBone, ReturnValue) == 0x000010, "Member 'SpineWidget_HasBone::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_HasBone;
 
 // Function SpinePlugin.SpineWidget.HasSkin
 // 0x0018 (0x0018 - 0x0000)
@@ -969,10 +799,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_HasSkin) == 0x000008, "Wrong alignment on SpineWidget_HasSkin");
-static_assert(sizeof(SpineWidget_HasSkin) == 0x000018, "Wrong size on SpineWidget_HasSkin");
-static_assert(offsetof(SpineWidget_HasSkin, SkinName) == 0x000000, "Member 'SpineWidget_HasSkin::SkinName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_HasSkin, ReturnValue) == 0x000010, "Member 'SpineWidget_HasSkin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_HasSkin;
 
 // Function SpinePlugin.SpineWidget.HasSlot
 // 0x0018 (0x0018 - 0x0000)
@@ -983,10 +810,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_HasSlot) == 0x000008, "Wrong alignment on SpineWidget_HasSlot");
-static_assert(sizeof(SpineWidget_HasSlot) == 0x000018, "Wrong size on SpineWidget_HasSlot");
-static_assert(offsetof(SpineWidget_HasSlot, SlotName) == 0x000000, "Member 'SpineWidget_HasSlot::SlotName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_HasSlot, ReturnValue) == 0x000010, "Member 'SpineWidget_HasSlot::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_HasSlot;
 
 // Function SpinePlugin.SpineWidget.SetAnimation
 // 0x0028 (0x0028 - 0x0000)
@@ -1000,12 +824,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTrackEntry*                            ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetAnimation) == 0x000008, "Wrong alignment on SpineWidget_SetAnimation");
-static_assert(sizeof(SpineWidget_SetAnimation) == 0x000028, "Wrong size on SpineWidget_SetAnimation");
-static_assert(offsetof(SpineWidget_SetAnimation, trackIndex) == 0x000000, "Member 'SpineWidget_SetAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetAnimation, animationName) == 0x000008, "Member 'SpineWidget_SetAnimation::animationName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetAnimation, loop) == 0x000018, "Member 'SpineWidget_SetAnimation::loop' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetAnimation, ReturnValue) == 0x000020, "Member 'SpineWidget_SetAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetAnimation;
 
 // Function SpinePlugin.SpineWidget.SetAnimationStateDelegateEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -1014,9 +833,7 @@ struct SpineWidget_SetAnimationStateDelegateEnabled final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetAnimationStateDelegateEnabled) == 0x000001, "Wrong alignment on SpineWidget_SetAnimationStateDelegateEnabled");
-static_assert(sizeof(SpineWidget_SetAnimationStateDelegateEnabled) == 0x000001, "Wrong size on SpineWidget_SetAnimationStateDelegateEnabled");
-static_assert(offsetof(SpineWidget_SetAnimationStateDelegateEnabled, bEnabled) == 0x000000, "Member 'SpineWidget_SetAnimationStateDelegateEnabled::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetAnimationStateDelegateEnabled;
 
 // Function SpinePlugin.SpineWidget.SetAttachment
 // 0x0028 (0x0028 - 0x0000)
@@ -1028,11 +845,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_SetAttachment) == 0x000008, "Wrong alignment on SpineWidget_SetAttachment");
-static_assert(sizeof(SpineWidget_SetAttachment) == 0x000028, "Wrong size on SpineWidget_SetAttachment");
-static_assert(offsetof(SpineWidget_SetAttachment, slotName) == 0x000000, "Member 'SpineWidget_SetAttachment::slotName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetAttachment, attachmentName) == 0x000010, "Member 'SpineWidget_SetAttachment::attachmentName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetAttachment, ReturnValue) == 0x000020, "Member 'SpineWidget_SetAttachment::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetAttachment;
 
 // Function SpinePlugin.SpineWidget.SetAutoPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -1041,9 +854,16 @@ struct SpineWidget_SetAutoPlay final
 public:
 	bool                                          bInAutoPlays;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetAutoPlay) == 0x000001, "Wrong alignment on SpineWidget_SetAutoPlay");
-static_assert(sizeof(SpineWidget_SetAutoPlay) == 0x000001, "Wrong size on SpineWidget_SetAutoPlay");
-static_assert(offsetof(SpineWidget_SetAutoPlay, bInAutoPlays) == 0x000000, "Member 'SpineWidget_SetAutoPlay::bInAutoPlays' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetAutoPlay;
+
+// Function SpinePlugin.SpineWidget.SetAutoTickDeltaTime
+// 0x0004 (0x0004 - 0x0000)
+struct SpineWidget_SetAutoTickDeltaTime final
+{
+public:
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SpineWidget_SetAutoTickDeltaTime;
 
 // Function SpinePlugin.SpineWidget.SetEmptyAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -1054,11 +874,16 @@ public:
 	float                                         mixDuration;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTrackEntry*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetEmptyAnimation) == 0x000008, "Wrong alignment on SpineWidget_SetEmptyAnimation");
-static_assert(sizeof(SpineWidget_SetEmptyAnimation) == 0x000010, "Wrong size on SpineWidget_SetEmptyAnimation");
-static_assert(offsetof(SpineWidget_SetEmptyAnimation, trackIndex) == 0x000000, "Member 'SpineWidget_SetEmptyAnimation::trackIndex' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetEmptyAnimation, mixDuration) == 0x000004, "Member 'SpineWidget_SetEmptyAnimation::mixDuration' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetEmptyAnimation, ReturnValue) == 0x000008, "Member 'SpineWidget_SetEmptyAnimation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetEmptyAnimation;
+
+// Function SpinePlugin.SpineWidget.SetIsOpenAutoTick
+// 0x0001 (0x0001 - 0x0000)
+struct SpineWidget_SetIsOpenAutoTick final
+{
+public:
+	bool                                          IsOpen;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_SpineWidget_SetIsOpenAutoTick;
 
 // Function SpinePlugin.SpineWidget.SetPlaybackTime
 // 0x0008 (0x0008 - 0x0000)
@@ -1069,10 +894,7 @@ public:
 	bool                                          bCallDelegates;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_SetPlaybackTime) == 0x000004, "Wrong alignment on SpineWidget_SetPlaybackTime");
-static_assert(sizeof(SpineWidget_SetPlaybackTime) == 0x000008, "Wrong size on SpineWidget_SetPlaybackTime");
-static_assert(offsetof(SpineWidget_SetPlaybackTime, InPlaybackTime) == 0x000000, "Member 'SpineWidget_SetPlaybackTime::InPlaybackTime' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetPlaybackTime, bCallDelegates) == 0x000004, "Member 'SpineWidget_SetPlaybackTime::bCallDelegates' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetPlaybackTime;
 
 // Function SpinePlugin.SpineWidget.SetScaleX
 // 0x0004 (0x0004 - 0x0000)
@@ -1081,9 +903,7 @@ struct SpineWidget_SetScaleX final
 public:
 	float                                         scaleX;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetScaleX) == 0x000004, "Wrong alignment on SpineWidget_SetScaleX");
-static_assert(sizeof(SpineWidget_SetScaleX) == 0x000004, "Wrong size on SpineWidget_SetScaleX");
-static_assert(offsetof(SpineWidget_SetScaleX, scaleX) == 0x000000, "Member 'SpineWidget_SetScaleX::scaleX' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetScaleX;
 
 // Function SpinePlugin.SpineWidget.SetScaleY
 // 0x0004 (0x0004 - 0x0000)
@@ -1092,9 +912,7 @@ struct SpineWidget_SetScaleY final
 public:
 	float                                         scaleY;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetScaleY) == 0x000004, "Wrong alignment on SpineWidget_SetScaleY");
-static_assert(sizeof(SpineWidget_SetScaleY) == 0x000004, "Wrong size on SpineWidget_SetScaleY");
-static_assert(offsetof(SpineWidget_SetScaleY, scaleY) == 0x000000, "Member 'SpineWidget_SetScaleY::scaleY' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetScaleY;
 
 // Function SpinePlugin.SpineWidget.SetSkin
 // 0x0018 (0x0018 - 0x0000)
@@ -1105,10 +923,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_SetSkin) == 0x000008, "Wrong alignment on SpineWidget_SetSkin");
-static_assert(sizeof(SpineWidget_SetSkin) == 0x000018, "Wrong size on SpineWidget_SetSkin");
-static_assert(offsetof(SpineWidget_SetSkin, SkinName) == 0x000000, "Member 'SpineWidget_SetSkin::SkinName' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetSkin, ReturnValue) == 0x000010, "Member 'SpineWidget_SetSkin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetSkin;
 
 // Function SpinePlugin.SpineWidget.SetSkins
 // 0x0018 (0x0018 - 0x0000)
@@ -1119,10 +934,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_SetSkins) == 0x000008, "Wrong alignment on SpineWidget_SetSkins");
-static_assert(sizeof(SpineWidget_SetSkins) == 0x000018, "Wrong size on SpineWidget_SetSkins");
-static_assert(offsetof(SpineWidget_SetSkins, SkinNames) == 0x000000, "Member 'SpineWidget_SetSkins::SkinNames' has a wrong offset!");
-static_assert(offsetof(SpineWidget_SetSkins, ReturnValue) == 0x000010, "Member 'SpineWidget_SetSkins::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetSkins;
 
 // Function SpinePlugin.SpineWidget.SetTimeScale
 // 0x0004 (0x0004 - 0x0000)
@@ -1131,9 +943,7 @@ struct SpineWidget_SetTimeScale final
 public:
 	float                                         timeScale;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SpineWidget_SetTimeScale) == 0x000004, "Wrong alignment on SpineWidget_SetTimeScale");
-static_assert(sizeof(SpineWidget_SetTimeScale) == 0x000004, "Wrong size on SpineWidget_SetTimeScale");
-static_assert(offsetof(SpineWidget_SetTimeScale, timeScale) == 0x000000, "Member 'SpineWidget_SetTimeScale::timeScale' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_SetTimeScale;
 
 // Function SpinePlugin.SpineWidget.Tick
 // 0x0008 (0x0008 - 0x0000)
@@ -1144,10 +954,7 @@ public:
 	bool                                          CallDelegates;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SpineWidget_Tick) == 0x000004, "Wrong alignment on SpineWidget_Tick");
-static_assert(sizeof(SpineWidget_Tick) == 0x000008, "Wrong size on SpineWidget_Tick");
-static_assert(offsetof(SpineWidget_Tick, DeltaTime) == 0x000000, "Member 'SpineWidget_Tick::DeltaTime' has a wrong offset!");
-static_assert(offsetof(SpineWidget_Tick, CallDelegates) == 0x000004, "Member 'SpineWidget_Tick::CallDelegates' has a wrong offset!");
+DUMPER7_ASSERTS_SpineWidget_Tick;
 
 }
 

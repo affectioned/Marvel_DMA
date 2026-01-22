@@ -12,37 +12,33 @@
 
 #include "HeroHeadBP_structs.hpp"
 #include "SelectHeroBP_structs.hpp"
+#include "python_enums_structs.hpp"
 #include "HpBarBP_structs.hpp"
+#include "DynamicHeroHeadBP_structs.hpp"
 
 
 namespace SDK
 {
 
 // UserDefinedStruct UIHeroAvatarBP.UIHeroAvatarBP
-// 0x0330 (0x0330 - 0x0000)
+// 0x0490 (0x0490 - 0x0000)
 struct FUIHeroAvatarBP final
 {
 public:
 	int32                                         HeroID_2_45A369B741C4354D689C899E3B33A53B;         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ShapeID_15_9542FF304A928BFCD2E9428AADAF7A52;       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 Name_12_9491E82047D414254661D28E24031149;          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	struct FHeroHeadBP                            HeroHead_5_F7260E6543A748B61E7D108EB3083691;       // 0x0018(0x0208)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FSelectHeroBP                          HeroListCard_23_C65A9E7F48497BB6072F0E90B1D5A4CA;  // 0x0220(0x0088)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FHpBarBP                               HpBar_9_2DB100714918C25A5A1B7D98A66C6466;          // 0x02A8(0x0070)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
-	bool                                          Delivery_18_E02FD7FC415A105F95264F8BEFE99CC4;      // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 BaseComment_20_5F66B30A49E9B192791994A1CA1F2831;   // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FHeroHeadBP                            HeroHead_5_F7260E6543A748B61E7D108EB3083691;       // 0x0018(0x0270)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FSelectHeroBP                          HeroListCard_23_C65A9E7F48497BB6072F0E90B1D5A4CA;  // 0x0288(0x0088)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FHpBarBP                               HpBar_9_2DB100714918C25A5A1B7D98A66C6466;          // 0x0310(0x0070)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
+	bool                                          Delivery_18_E02FD7FC415A105F95264F8BEFE99CC4;      // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 BaseComment_20_5F66B30A49E9B192791994A1CA1F2831;   // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	EHeroAvatarType                               AvatarType_37_3BA538EF41DEE62A25A9A79FA8C1AA28;    // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDynamicHeroHeadBP                     DynamicAvatarInfo_26_5D5D76F245694C8D41697F821EECD138; // 0x03A0(0x00F0)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 };
-static_assert(alignof(FUIHeroAvatarBP) == 0x000008, "Wrong alignment on FUIHeroAvatarBP");
-static_assert(sizeof(FUIHeroAvatarBP) == 0x000330, "Wrong size on FUIHeroAvatarBP");
-static_assert(offsetof(FUIHeroAvatarBP, HeroID_2_45A369B741C4354D689C899E3B33A53B) == 0x000000, "Member 'FUIHeroAvatarBP::HeroID_2_45A369B741C4354D689C899E3B33A53B' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, ShapeID_15_9542FF304A928BFCD2E9428AADAF7A52) == 0x000004, "Member 'FUIHeroAvatarBP::ShapeID_15_9542FF304A928BFCD2E9428AADAF7A52' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, Name_12_9491E82047D414254661D28E24031149) == 0x000008, "Member 'FUIHeroAvatarBP::Name_12_9491E82047D414254661D28E24031149' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, HeroHead_5_F7260E6543A748B61E7D108EB3083691) == 0x000018, "Member 'FUIHeroAvatarBP::HeroHead_5_F7260E6543A748B61E7D108EB3083691' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, HeroListCard_23_C65A9E7F48497BB6072F0E90B1D5A4CA) == 0x000220, "Member 'FUIHeroAvatarBP::HeroListCard_23_C65A9E7F48497BB6072F0E90B1D5A4CA' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, HpBar_9_2DB100714918C25A5A1B7D98A66C6466) == 0x0002A8, "Member 'FUIHeroAvatarBP::HpBar_9_2DB100714918C25A5A1B7D98A66C6466' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, Delivery_18_E02FD7FC415A105F95264F8BEFE99CC4) == 0x000318, "Member 'FUIHeroAvatarBP::Delivery_18_E02FD7FC415A105F95264F8BEFE99CC4' has a wrong offset!");
-static_assert(offsetof(FUIHeroAvatarBP, BaseComment_20_5F66B30A49E9B192791994A1CA1F2831) == 0x000320, "Member 'FUIHeroAvatarBP::BaseComment_20_5F66B30A49E9B192791994A1CA1F2831' has a wrong offset!");
+DUMPER7_ASSERTS_FUIHeroAvatarBP;
 
 }
 

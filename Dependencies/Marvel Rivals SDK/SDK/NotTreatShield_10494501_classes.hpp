@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NotTreatShield_10494501.NotTreatShield_10494501_C
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UNotTreatShield_10494501_C final : public UMarvelNotTreatFallAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NotTreatShield_10494501_C">();
+		BP_STATIC_CLASS_IMPL("NotTreatShield_10494501_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NotTreatShield_10494501_C")
 	}
 	static class UNotTreatShield_10494501_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNotTreatShield_10494501_C>();
 	}
 };
-static_assert(alignof(UNotTreatShield_10494501_C) == 0x000008, "Wrong alignment on UNotTreatShield_10494501_C");
-static_assert(sizeof(UNotTreatShield_10494501_C) == 0x001540, "Wrong size on UNotTreatShield_10494501_C");
+DUMPER7_ASSERTS_UNotTreatShield_10494501_C;
 
 }
 

@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
 #include "Engine_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
+#include "Marvel_classes.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -33,25 +34,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WC_Training_Monitor">();
+		STATIC_CLASS_IMPL("WC_Training_Monitor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_Training_Monitor")
 	}
 	static class UWC_Training_Monitor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_Training_Monitor>();
 	}
 };
-static_assert(alignof(UWC_Training_Monitor) == 0x000010, "Wrong alignment on UWC_Training_Monitor");
-static_assert(sizeof(UWC_Training_Monitor) == 0x000A10, "Wrong size on UWC_Training_Monitor");
-static_assert(offsetof(UWC_Training_Monitor, SwitchAudioEvent) == 0x000A00, "Member 'UWC_Training_Monitor::SwitchAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UWC_Training_Monitor;
 
 // PythonClass PyWidget_Traning_ScoreBoard.PyWidget_Training_Scoreboard
-// 0x0008 (0x05C8 - 0x05C0)
-class UPyWidget_Training_Scoreboard : public UPyMarvelUserWidget
+// 0x0010 (0x0880 - 0x0870)
+#pragma pack(push, 0x1)
+class alignas(0x10) UPyWidget_Training_Scoreboard : public UMarvel3DWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ResetTime;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HideWhenLeave;                                     // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_868[0x8];                                      // 0x0868(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ResetTime;                                         // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HideWhenLeave;                                     // 0x0874(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,27 +66,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Training_Scoreboard">();
+		STATIC_CLASS_IMPL("PyWidget_Training_Scoreboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Training_Scoreboard")
 	}
 	static class UPyWidget_Training_Scoreboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Training_Scoreboard>();
 	}
 };
-static_assert(alignof(UPyWidget_Training_Scoreboard) == 0x000008, "Wrong alignment on UPyWidget_Training_Scoreboard");
-static_assert(sizeof(UPyWidget_Training_Scoreboard) == 0x0005C8, "Wrong size on UPyWidget_Training_Scoreboard");
-static_assert(offsetof(UPyWidget_Training_Scoreboard, ResetTime) == 0x0005BC, "Member 'UPyWidget_Training_Scoreboard::ResetTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Training_Scoreboard, HideWhenLeave) == 0x0005C0, "Member 'UPyWidget_Training_Scoreboard::HideWhenLeave' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_UPyWidget_Training_Scoreboard;
 
 // PythonClass PyWidget_Traning_ScoreBoard.PyWidget_Training_Scoreboard_Unit
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Training_Scoreboard_Unit : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Icon_Index;                                        // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSlateBrush>                    Icon_list;                                         // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Title;                                             // 0x05D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Icon_Index;                                        // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSlateBrush>                    Icon_list;                                         // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Title;                                             // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -92,18 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Training_Scoreboard_Unit">();
+		STATIC_CLASS_IMPL("PyWidget_Training_Scoreboard_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Training_Scoreboard_Unit")
 	}
 	static class UPyWidget_Training_Scoreboard_Unit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Training_Scoreboard_Unit>();
 	}
 };
-static_assert(alignof(UPyWidget_Training_Scoreboard_Unit) == 0x000008, "Wrong alignment on UPyWidget_Training_Scoreboard_Unit");
-static_assert(sizeof(UPyWidget_Training_Scoreboard_Unit) == 0x0005E8, "Wrong size on UPyWidget_Training_Scoreboard_Unit");
-static_assert(offsetof(UPyWidget_Training_Scoreboard_Unit, Icon_Index) == 0x0005BC, "Member 'UPyWidget_Training_Scoreboard_Unit::Icon_Index' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Training_Scoreboard_Unit, Icon_list) == 0x0005C0, "Member 'UPyWidget_Training_Scoreboard_Unit::Icon_list' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Training_Scoreboard_Unit, Title) == 0x0005D0, "Member 'UPyWidget_Training_Scoreboard_Unit::Title' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Training_Scoreboard_Unit;
 
 }
 

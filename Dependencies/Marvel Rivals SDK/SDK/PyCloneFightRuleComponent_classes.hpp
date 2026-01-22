@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCloneFightRuleConfig">();
+		STATIC_CLASS_IMPL("PyCloneFightRuleConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCloneFightRuleConfig")
 	}
 	static class UPyCloneFightRuleConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCloneFightRuleConfig>();
 	}
 };
-static_assert(alignof(UPyCloneFightRuleConfig) == 0x000008, "Wrong alignment on UPyCloneFightRuleConfig");
-static_assert(sizeof(UPyCloneFightRuleConfig) == 0x000038, "Wrong size on UPyCloneFightRuleConfig");
-static_assert(offsetof(UPyCloneFightRuleConfig, bIsPublicSelectableHeros) == 0x000030, "Member 'UPyCloneFightRuleConfig::bIsPublicSelectableHeros' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCloneFightRuleConfig;
 
 // PythonClass PyCloneFightRuleComponent.PyCloneFightRuleComponent
 // 0x0000 (0x0108 - 0x0108)
@@ -45,15 +47,18 @@ class UPyCloneFightRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCloneFightRuleComponent">();
+		STATIC_CLASS_IMPL("PyCloneFightRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCloneFightRuleComponent")
 	}
 	static class UPyCloneFightRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCloneFightRuleComponent>();
 	}
 };
-static_assert(alignof(UPyCloneFightRuleComponent) == 0x000008, "Wrong alignment on UPyCloneFightRuleComponent");
-static_assert(sizeof(UPyCloneFightRuleComponent) == 0x000108, "Wrong size on UPyCloneFightRuleComponent");
+DUMPER7_ASSERTS_UPyCloneFightRuleComponent;
 
 }
 

@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectDifficultyModePopup.PyWidget_SelectDifficultyModePopup
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_SelectDifficultyModePopup final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                CardItem;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageItem;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                CardItem;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageItem;                                          // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectDifficultyModePopup">();
+		STATIC_CLASS_IMPL("PyWidget_SelectDifficultyModePopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectDifficultyModePopup")
 	}
 	static class UPyWidget_SelectDifficultyModePopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectDifficultyModePopup>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectDifficultyModePopup) == 0x000008, "Wrong alignment on UPyWidget_SelectDifficultyModePopup");
-static_assert(sizeof(UPyWidget_SelectDifficultyModePopup) == 0x000618, "Wrong size on UPyWidget_SelectDifficultyModePopup");
-static_assert(offsetof(UPyWidget_SelectDifficultyModePopup, CardItem) == 0x0005F8, "Member 'UPyWidget_SelectDifficultyModePopup::CardItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectDifficultyModePopup, PageItem) == 0x000600, "Member 'UPyWidget_SelectDifficultyModePopup::PageItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectDifficultyModePopup, PageGuideTipsStyle) == 0x000608, "Member 'UPyWidget_SelectDifficultyModePopup::PageGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectDifficultyModePopup;
 
 }
 

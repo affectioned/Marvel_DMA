@@ -91,11 +91,7 @@ public:
 	TArray<class FString>                         Warnings;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Errors;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGLTFExportMessages) == 0x000008, "Wrong alignment on FGLTFExportMessages");
-static_assert(sizeof(FGLTFExportMessages) == 0x000030, "Wrong size on FGLTFExportMessages");
-static_assert(offsetof(FGLTFExportMessages, Suggestions) == 0x000000, "Member 'FGLTFExportMessages::Suggestions' has a wrong offset!");
-static_assert(offsetof(FGLTFExportMessages, Warnings) == 0x000010, "Member 'FGLTFExportMessages::Warnings' has a wrong offset!");
-static_assert(offsetof(FGLTFExportMessages, Errors) == 0x000020, "Member 'FGLTFExportMessages::Errors' has a wrong offset!");
+DUMPER7_ASSERTS_FGLTFExportMessages;
 
 // ScriptStruct GLTFExporter.GLTFOverrideMaterialBakeSettings
 // 0x0006 (0x0006 - 0x0000)
@@ -109,14 +105,7 @@ public:
 	bool                                          bOverrideTiling;                                   // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETextureAddress                               Tiling;                                            // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGLTFOverrideMaterialBakeSettings) == 0x000001, "Wrong alignment on FGLTFOverrideMaterialBakeSettings");
-static_assert(sizeof(FGLTFOverrideMaterialBakeSettings) == 0x000006, "Wrong size on FGLTFOverrideMaterialBakeSettings");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, bOverrideSize) == 0x000000, "Member 'FGLTFOverrideMaterialBakeSettings::bOverrideSize' has a wrong offset!");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, Size) == 0x000001, "Member 'FGLTFOverrideMaterialBakeSettings::Size' has a wrong offset!");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, bOverrideFilter) == 0x000002, "Member 'FGLTFOverrideMaterialBakeSettings::bOverrideFilter' has a wrong offset!");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, Filter) == 0x000003, "Member 'FGLTFOverrideMaterialBakeSettings::Filter' has a wrong offset!");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, bOverrideTiling) == 0x000004, "Member 'FGLTFOverrideMaterialBakeSettings::bOverrideTiling' has a wrong offset!");
-static_assert(offsetof(FGLTFOverrideMaterialBakeSettings, Tiling) == 0x000005, "Member 'FGLTFOverrideMaterialBakeSettings::Tiling' has a wrong offset!");
+DUMPER7_ASSERTS_FGLTFOverrideMaterialBakeSettings;
 
 }
 

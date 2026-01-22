@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
 #include "PyLevelPortalBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -20,52 +20,52 @@ namespace SDK
 
 // PythonClass PyKrakoaPortal.PyKrakoaPortal
 // 0x0130 (0x0A70 - 0x0940)
-#pragma pack(push, 0x1)
-class alignas(0x10) APyKrakoaPortal : public APyLevelPortalBase
+class APyKrakoaPortal : public APyLevelPortalBase
 {
 public:
-	float                                         CDTime;                                            // 0x093C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APyPlayerStart*                         InComingPlace;                                     // 0x0940(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APyLevelPortalBase*                     TargetPortal;                                      // 0x0948(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class APyLevelPortalBase*>             StandinPortals;                                    // 0x0950(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	bool                                          IsOneWayPortal;                                    // 0x0960(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_961[0x7];                                      // 0x0961(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CooldownTips;                                      // 0x0968(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalStartLoop;                             // 0x0980(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Audio_PortalStartLoop_RTPC_Group;                  // 0x0988(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalStartTree;                             // 0x0998(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Audio_PortalStartTree_Progress;                    // 0x09A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9A4[0x4];                                      // 0x09A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Audio_PortalCountDown;                             // 0x09A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Audio_PortalCountDownTimeSeconds;                  // 0x09B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9B4[0x4];                                      // 0x09B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Audio_PortalOpen;                                  // 0x09B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalOpenIdleLoop;                          // 0x09C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Audio_PortalOpenIdleLoop_RTPC_Group;               // 0x09C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalTransportP1;                           // 0x09D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalTransportP2;                           // 0x09E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Audio_PortalTransportP3;                           // 0x09E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PortalState;                                       // 0x09F0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CountingDownToActivateProgress;                    // 0x09F4(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDefaultActivation;                                // 0x09F8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOccupyControlCountdownActivation;                 // 0x09F9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9FA[0x2];                                      // 0x09FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OccupyControlCountdownActivationTimeSeconds;       // 0x09FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APyControl*                             OccupyTargetControl;                               // 0x0A00(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BeSeenThroughTimeSeconds;                          // 0x0A08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SeeThroughBuffId;                                  // 0x0A0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BeSeenThroughBuffId;                               // 0x0A10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TeleportHUDFxBuffId;                               // 0x0A14(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         DefaultLevelSequence;                              // 0x0A18(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         CountingDownToActivateLevelSequence;               // 0x0A20(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         ActivationLevelSequence;                           // 0x0A28(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         TeleportLevelSequence;                             // 0x0A30(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         EnableLevelSequence;                               // 0x0A38(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequence*                         DisableLevelSequence;                              // 0x0A40(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         TransportNS;                                       // 0x0A48(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ColorIndex;                                        // 0x0A50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A54[0x4];                                      // 0x0A54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x0A58(0x0010)(Transient, NativeAccessSpecifierPublic)
+	float                                         CDTime;                                            // 0x0940(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_944[0x4];                                      // 0x0944(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APyPlayerStart*                         InComingPlace;                                     // 0x0948(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APyLevelPortalBase*                     TargetPortal;                                      // 0x0950(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class APyLevelPortalBase*>             StandinPortals;                                    // 0x0958(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	bool                                          IsOneWayPortal;                                    // 0x0968(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_969[0x7];                                      // 0x0969(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CooldownTips;                                      // 0x0970(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalStartLoop;                             // 0x0988(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Audio_PortalStartLoop_RTPC_Group;                  // 0x0990(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalStartTree;                             // 0x09A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Audio_PortalStartTree_Progress;                    // 0x09A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9AC[0x4];                                      // 0x09AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Audio_PortalCountDown;                             // 0x09B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Audio_PortalCountDownTimeSeconds;                  // 0x09B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9BC[0x4];                                      // 0x09BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Audio_PortalOpen;                                  // 0x09C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalOpenIdleLoop;                          // 0x09C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Audio_PortalOpenIdleLoop_RTPC_Group;               // 0x09D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalTransportP1;                           // 0x09E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalTransportP2;                           // 0x09E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Audio_PortalTransportP3;                           // 0x09F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PortalState;                                       // 0x09F8(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CountingDownToActivateProgress;                    // 0x09FC(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDefaultActivation;                                // 0x0A00(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOccupyControlCountdownActivation;                 // 0x0A01(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A02[0x2];                                      // 0x0A02(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OccupyControlCountdownActivationTimeSeconds;       // 0x0A04(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APyControl*                             OccupyTargetControl;                               // 0x0A08(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BeSeenThroughTimeSeconds;                          // 0x0A10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SeeThroughBuffId;                                  // 0x0A14(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BeSeenThroughBuffId;                               // 0x0A18(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TeleportHUDFxBuffId;                               // 0x0A1C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         DefaultLevelSequence;                              // 0x0A20(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         CountingDownToActivateLevelSequence;               // 0x0A28(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         ActivationLevelSequence;                           // 0x0A30(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         TeleportLevelSequence;                             // 0x0A38(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         EnableLevelSequence;                               // 0x0A40(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                         DisableLevelSequence;                              // 0x0A48(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         TransportNS;                                       // 0x0A50(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ColorIndex;                                        // 0x0A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A5C[0x4];                                      // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDeclarationHolder                     ViewTargetWatcher;                                 // 0x0A60(0x0010)(Transient, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -84,53 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKrakoaPortal">();
+		STATIC_CLASS_IMPL("PyKrakoaPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKrakoaPortal")
 	}
 	static class APyKrakoaPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKrakoaPortal>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(APyKrakoaPortal) == 0x000010, "Wrong alignment on APyKrakoaPortal");
-static_assert(sizeof(APyKrakoaPortal) == 0x000A70, "Wrong size on APyKrakoaPortal");
-static_assert(offsetof(APyKrakoaPortal, CDTime) == 0x00093C, "Member 'APyKrakoaPortal::CDTime' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, InComingPlace) == 0x000940, "Member 'APyKrakoaPortal::InComingPlace' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, TargetPortal) == 0x000948, "Member 'APyKrakoaPortal::TargetPortal' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, StandinPortals) == 0x000950, "Member 'APyKrakoaPortal::StandinPortals' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, IsOneWayPortal) == 0x000960, "Member 'APyKrakoaPortal::IsOneWayPortal' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, CooldownTips) == 0x000968, "Member 'APyKrakoaPortal::CooldownTips' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalStartLoop) == 0x000980, "Member 'APyKrakoaPortal::Audio_PortalStartLoop' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalStartLoop_RTPC_Group) == 0x000988, "Member 'APyKrakoaPortal::Audio_PortalStartLoop_RTPC_Group' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalStartTree) == 0x000998, "Member 'APyKrakoaPortal::Audio_PortalStartTree' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalStartTree_Progress) == 0x0009A0, "Member 'APyKrakoaPortal::Audio_PortalStartTree_Progress' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalCountDown) == 0x0009A8, "Member 'APyKrakoaPortal::Audio_PortalCountDown' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalCountDownTimeSeconds) == 0x0009B0, "Member 'APyKrakoaPortal::Audio_PortalCountDownTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalOpen) == 0x0009B8, "Member 'APyKrakoaPortal::Audio_PortalOpen' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalOpenIdleLoop) == 0x0009C0, "Member 'APyKrakoaPortal::Audio_PortalOpenIdleLoop' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalOpenIdleLoop_RTPC_Group) == 0x0009C8, "Member 'APyKrakoaPortal::Audio_PortalOpenIdleLoop_RTPC_Group' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalTransportP1) == 0x0009D8, "Member 'APyKrakoaPortal::Audio_PortalTransportP1' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalTransportP2) == 0x0009E0, "Member 'APyKrakoaPortal::Audio_PortalTransportP2' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, Audio_PortalTransportP3) == 0x0009E8, "Member 'APyKrakoaPortal::Audio_PortalTransportP3' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, PortalState) == 0x0009F0, "Member 'APyKrakoaPortal::PortalState' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, CountingDownToActivateProgress) == 0x0009F4, "Member 'APyKrakoaPortal::CountingDownToActivateProgress' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, bDefaultActivation) == 0x0009F8, "Member 'APyKrakoaPortal::bDefaultActivation' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, bOccupyControlCountdownActivation) == 0x0009F9, "Member 'APyKrakoaPortal::bOccupyControlCountdownActivation' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, OccupyControlCountdownActivationTimeSeconds) == 0x0009FC, "Member 'APyKrakoaPortal::OccupyControlCountdownActivationTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, OccupyTargetControl) == 0x000A00, "Member 'APyKrakoaPortal::OccupyTargetControl' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, BeSeenThroughTimeSeconds) == 0x000A08, "Member 'APyKrakoaPortal::BeSeenThroughTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, SeeThroughBuffId) == 0x000A0C, "Member 'APyKrakoaPortal::SeeThroughBuffId' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, BeSeenThroughBuffId) == 0x000A10, "Member 'APyKrakoaPortal::BeSeenThroughBuffId' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, TeleportHUDFxBuffId) == 0x000A14, "Member 'APyKrakoaPortal::TeleportHUDFxBuffId' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, DefaultLevelSequence) == 0x000A18, "Member 'APyKrakoaPortal::DefaultLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, CountingDownToActivateLevelSequence) == 0x000A20, "Member 'APyKrakoaPortal::CountingDownToActivateLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, ActivationLevelSequence) == 0x000A28, "Member 'APyKrakoaPortal::ActivationLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, TeleportLevelSequence) == 0x000A30, "Member 'APyKrakoaPortal::TeleportLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, EnableLevelSequence) == 0x000A38, "Member 'APyKrakoaPortal::EnableLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, DisableLevelSequence) == 0x000A40, "Member 'APyKrakoaPortal::DisableLevelSequence' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, TransportNS) == 0x000A48, "Member 'APyKrakoaPortal::TransportNS' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, ColorIndex) == 0x000A50, "Member 'APyKrakoaPortal::ColorIndex' has a wrong offset!");
-static_assert(offsetof(APyKrakoaPortal, ViewTargetWatcher) == 0x000A58, "Member 'APyKrakoaPortal::ViewTargetWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyKrakoaPortal;
 
 }
 

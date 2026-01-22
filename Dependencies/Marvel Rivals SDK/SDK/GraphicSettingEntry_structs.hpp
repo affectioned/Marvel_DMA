@@ -53,35 +53,9 @@ public:
 	TSet<class FString>                           ShouldAnyDisableTags_107_5A183AA545CDBFF3EB9DC08FC34B0E7F; // 0x0208(0x0050)(Edit, BlueprintVisible)
 	class UClass*                                 UIController_110_A6D443D944422D1A44E61BA88CA250F0; // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          NeedRestartGame_115_84F180A84FE4FF64F463CE935F3362B4; // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsExperimental_117_2FF6E01740022DAF6D678E98FCBE19CD; // 0x0261(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGraphicSettingEntry) == 0x000008, "Wrong alignment on FGraphicSettingEntry");
-static_assert(sizeof(FGraphicSettingEntry) == 0x000268, "Wrong size on FGraphicSettingEntry");
-static_assert(offsetof(FGraphicSettingEntry, SettingKey_68_0DB8655446533DC0900087968354D48F) == 0x000000, "Member 'FGraphicSettingEntry::SettingKey_68_0DB8655446533DC0900087968354D48F' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, EntryName_42_CA135DB54CD36633CACF8B973F4ADDBE) == 0x000010, "Member 'FGraphicSettingEntry::EntryName_42_CA135DB54CD36633CACF8B973F4ADDBE' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, EntryDesc_43_60298969423A3B4397C8B1AC04465C7A) == 0x000028, "Member 'FGraphicSettingEntry::EntryDesc_43_60298969423A3B4397C8B1AC04465C7A' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, IsTitle_65_14A4E973447E41C3FE162C870957CABE) == 0x000040, "Member 'FGraphicSettingEntry::IsTitle_65_14A4E973447E41C3FE162C870957CABE' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, ShowTitleUnbindTag_73_28CEB4BE44E99C6CDA6411A3295CA74C) == 0x000041, "Member 'FGraphicSettingEntry::ShowTitleUnbindTag_73_28CEB4BE44E99C6CDA6411A3295CA74C' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, Level_33_E7B422DA4CBFDF6B14C5AA9B7A939A16) == 0x000044, "Member 'FGraphicSettingEntry::Level_33_E7B422DA4CBFDF6B14C5AA9B7A939A16' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, OptionType_28_2AED3A00402D76775F5EA2B799D6C948) == 0x000048, "Member 'FGraphicSettingEntry::OptionType_28_2AED3A00402D76775F5EA2B799D6C948' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, InputMappingKey_113_477D96E34449BADFE39493AA3A4FAA5B) == 0x000050, "Member 'FGraphicSettingEntry::InputMappingKey_113_477D96E34449BADFE39493AA3A4FAA5B' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, OptionRange_18_7EF652294079F65CEA4DCD821B1190D8) == 0x000060, "Member 'FGraphicSettingEntry::OptionRange_18_7EF652294079F65CEA4DCD821B1190D8' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, SettingHandlerData_59_80D9E1944CA45D223CD926AA5957E1DE) == 0x000110, "Member 'FGraphicSettingEntry::SettingHandlerData_59_80D9E1944CA45D223CD926AA5957E1DE' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, Tags_40_649A0C54446A36C3EC3DE998F7B47D41) == 0x000168, "Member 'FGraphicSettingEntry::Tags_40_649A0C54446A36C3EC3DE998F7B47D41' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, Hiden_61_AC999F314E553825858D2AB61FB8ED0D) == 0x0001B8, "Member 'FGraphicSettingEntry::Hiden_61_AC999F314E553825858D2AB61FB8ED0D' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, NeedRevertButton_78_3D77793244589A6E88EF329F8EDB7DB5) == 0x0001B9, "Member 'FGraphicSettingEntry::NeedRevertButton_78_3D77793244589A6E88EF329F8EDB7DB5' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, WheelLabelDirection_76_B10463E0485667FCD89D058CF7847CA1) == 0x0001BA, "Member 'FGraphicSettingEntry::WheelLabelDirection_76_B10463E0485667FCD89D058CF7847CA1' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, Replicated_80_8C972D1B4E8BA4BA7C4E5897B017C1A9) == 0x0001BB, "Member 'FGraphicSettingEntry::Replicated_80_8C972D1B4E8BA4BA7C4E5897B017C1A9' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, SGCached_82_76302F1F42F22B5F58AC58B2032307DD) == 0x0001BC, "Member 'FGraphicSettingEntry::SGCached_82_76302F1F42F22B5F58AC58B2032307DD' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, OnlyCaptainSet_84_07416F80440C5E03F0471F88C693FBEF) == 0x0001BD, "Member 'FGraphicSettingEntry::OnlyCaptainSet_84_07416F80440C5E03F0471F88C693FBEF' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, CaptainInfo_87_3F009C54461545ED607214A6A0315D26) == 0x0001C0, "Member 'FGraphicSettingEntry::CaptainInfo_87_3F009C54461545ED607214A6A0315D26' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, Disable_90_D2E094B249360E95D2A07CA81455AD66) == 0x0001D8, "Member 'FGraphicSettingEntry::Disable_90_D2E094B249360E95D2A07CA81455AD66' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, BtnCDTime_94_379EA324483C28810DBEE09A4E25CB3A) == 0x0001E0, "Member 'FGraphicSettingEntry::BtnCDTime_94_379EA324483C28810DBEE09A4E25CB3A' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, bApplyWhenSliding_96_2C6D381E4EB8FB3A4850BF8854FC7723) == 0x0001E8, "Member 'FGraphicSettingEntry::bApplyWhenSliding_96_2C6D381E4EB8FB3A4850BF8854FC7723' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, ExtraWidgets_100_32C6C8D74FF632F50D202DADF83A59FA) == 0x0001F0, "Member 'FGraphicSettingEntry::ExtraWidgets_100_32C6C8D74FF632F50D202DADF83A59FA' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, DirectApply_102_3CA768C04D1B966EFC4DBFA60095E3E9) == 0x000200, "Member 'FGraphicSettingEntry::DirectApply_102_3CA768C04D1B966EFC4DBFA60095E3E9' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, ShouldAnyDisableTags_107_5A183AA545CDBFF3EB9DC08FC34B0E7F) == 0x000208, "Member 'FGraphicSettingEntry::ShouldAnyDisableTags_107_5A183AA545CDBFF3EB9DC08FC34B0E7F' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, UIController_110_A6D443D944422D1A44E61BA88CA250F0) == 0x000258, "Member 'FGraphicSettingEntry::UIController_110_A6D443D944422D1A44E61BA88CA250F0' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntry, NeedRestartGame_115_84F180A84FE4FF64F463CE935F3362B4) == 0x000260, "Member 'FGraphicSettingEntry::NeedRestartGame_115_84F180A84FE4FF64F463CE935F3362B4' has a wrong offset!");
+DUMPER7_ASSERTS_FGraphicSettingEntry;
 
 }
 

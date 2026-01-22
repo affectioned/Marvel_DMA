@@ -67,15 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleStatisticsManager">();
+		STATIC_CLASS_IMPL("PyBattleStatisticsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleStatisticsManager")
 	}
 	static class UPyBattleStatisticsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleStatisticsManager>();
 	}
 };
-static_assert(alignof(UPyBattleStatisticsManager) == 0x000008, "Wrong alignment on UPyBattleStatisticsManager");
-static_assert(sizeof(UPyBattleStatisticsManager) == 0x0003E8, "Wrong size on UPyBattleStatisticsManager");
+DUMPER7_ASSERTS_UPyBattleStatisticsManager;
 
 }
 

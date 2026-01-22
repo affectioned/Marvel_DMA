@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10224101_BP.Summoned_10224101_BP_C
-// 0x0020 (0x0C10 - 0x0BF0)
+// 0x0020 (0x0C30 - 0x0C10)
 class ASummoned_10224101_BP_C final : public APySummoned_102241
 {
 public:
-	class UMarvelHitShape_Box*                    MarvelHitShape_Box;                                // 0x0BE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHitShape_Cylinder*               MarvelHitShape_Cylinder;                           // 0x0BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cylinder1;                                         // 0x0BF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cylinder;                                          // 0x0C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Box*                    MarvelHitShape_Box;                                // 0x0C08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHitShape_Cylinder*               MarvelHitShape_Cylinder;                           // 0x0C10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cylinder1;                                         // 0x0C18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cylinder;                                          // 0x0C20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10224101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10224101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10224101_BP_C")
 	}
 	static class ASummoned_10224101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10224101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10224101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10224101_BP_C");
-static_assert(sizeof(ASummoned_10224101_BP_C) == 0x000C10, "Wrong size on ASummoned_10224101_BP_C");
-static_assert(offsetof(ASummoned_10224101_BP_C, MarvelHitShape_Box) == 0x000BE8, "Member 'ASummoned_10224101_BP_C::MarvelHitShape_Box' has a wrong offset!");
-static_assert(offsetof(ASummoned_10224101_BP_C, MarvelHitShape_Cylinder) == 0x000BF0, "Member 'ASummoned_10224101_BP_C::MarvelHitShape_Cylinder' has a wrong offset!");
-static_assert(offsetof(ASummoned_10224101_BP_C, Cylinder1) == 0x000BF8, "Member 'ASummoned_10224101_BP_C::Cylinder1' has a wrong offset!");
-static_assert(offsetof(ASummoned_10224101_BP_C, Cylinder) == 0x000C00, "Member 'ASummoned_10224101_BP_C::Cylinder' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10224101_BP_C;
 
 }
 

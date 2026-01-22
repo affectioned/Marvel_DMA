@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "PyAITrainBaseSpawnActor_classes.hpp"
 
@@ -18,8 +19,9 @@ namespace SDK
 {
 
 // PythonClass PyAIGunTrainingSpawnActor.PyAIGunTrainingSpawnActor
-// 0x0050 (0x07B0 - 0x0760)
-class APyAIGunTrainingSpawnActor : public APyAITrainBaseSpawnActor
+// 0x0060 (0x07C0 - 0x0760)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyAIGunTrainingSpawnActor : public APyAITrainBaseSpawnActor
 {
 public:
 	int32                                         HeroID;                                            // 0x075C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31,27 +33,24 @@ public:
 	int32                                         DifficultyLevel;                                   // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SkinID;                                            // 0x079C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int64>                                 SkinSlots;                                         // 0x07A0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	EHeroRoleType                                 HeroRole;                                          // 0x07B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIGunTrainingSpawnActor">();
+		STATIC_CLASS_IMPL("PyAIGunTrainingSpawnActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIGunTrainingSpawnActor")
 	}
 	static class APyAIGunTrainingSpawnActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAIGunTrainingSpawnActor>();
 	}
 };
-static_assert(alignof(APyAIGunTrainingSpawnActor) == 0x000010, "Wrong alignment on APyAIGunTrainingSpawnActor");
-static_assert(sizeof(APyAIGunTrainingSpawnActor) == 0x0007B0, "Wrong size on APyAIGunTrainingSpawnActor");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, HeroID) == 0x00075C, "Member 'APyAIGunTrainingSpawnActor::HeroID' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, NeedFly) == 0x000760, "Member 'APyAIGunTrainingSpawnActor::NeedFly' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, Camp) == 0x000764, "Member 'APyAIGunTrainingSpawnActor::Camp' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, MoveRange) == 0x000768, "Member 'APyAIGunTrainingSpawnActor::MoveRange' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, MovementCenter) == 0x000780, "Member 'APyAIGunTrainingSpawnActor::MovementCenter' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, DifficultyLevel) == 0x000798, "Member 'APyAIGunTrainingSpawnActor::DifficultyLevel' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, SkinID) == 0x00079C, "Member 'APyAIGunTrainingSpawnActor::SkinID' has a wrong offset!");
-static_assert(offsetof(APyAIGunTrainingSpawnActor, SkinSlots) == 0x0007A0, "Member 'APyAIGunTrainingSpawnActor::SkinSlots' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyAIGunTrainingSpawnActor;
 
 }
 

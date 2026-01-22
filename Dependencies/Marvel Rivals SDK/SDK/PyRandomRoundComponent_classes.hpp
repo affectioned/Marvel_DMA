@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRandomRoundComponent">();
+		STATIC_CLASS_IMPL("PyRandomRoundComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRandomRoundComponent")
 	}
 	static class UPyRandomRoundComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRandomRoundComponent>();
 	}
 };
-static_assert(alignof(UPyRandomRoundComponent) == 0x000008, "Wrong alignment on UPyRandomRoundComponent");
-static_assert(sizeof(UPyRandomRoundComponent) == 0x000108, "Wrong size on UPyRandomRoundComponent");
+DUMPER7_ASSERTS_UPyRandomRoundComponent;
 
 }
 

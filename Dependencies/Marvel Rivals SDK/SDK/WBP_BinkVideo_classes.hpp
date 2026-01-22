@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BinkVideo.WBP_BinkVideo_C
-// 0x0008 (0x0658 - 0x0650)
+// 0x0008 (0x0660 - 0x0658)
 class UWBP_BinkVideo_C final : public UPyWidget_BinkVideo
 {
 public:
-	class UMarvelImage*                           Img_Video;                                         // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Video;                                         // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BinkVideo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BinkVideo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BinkVideo_C")
 	}
 	static class UWBP_BinkVideo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BinkVideo_C>();
 	}
 };
-static_assert(alignof(UWBP_BinkVideo_C) == 0x000008, "Wrong alignment on UWBP_BinkVideo_C");
-static_assert(sizeof(UWBP_BinkVideo_C) == 0x000658, "Wrong size on UWBP_BinkVideo_C");
-static_assert(offsetof(UWBP_BinkVideo_C, Img_Video) == 0x000650, "Member 'UWBP_BinkVideo_C::Img_Video' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BinkVideo_C;
 
 }
 

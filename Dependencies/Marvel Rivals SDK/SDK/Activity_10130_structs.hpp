@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "MassEntity_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MassReplication_structs.hpp"
 #include "Hero_1014_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "StructUtils_structs.hpp"
-#include "MassReplication_structs.hpp"
 #include "MassCommon_structs.hpp"
 #include "Skelot_structs.hpp"
 
@@ -197,10 +197,7 @@ public:
 	int32                                         ExtractCount;                                      // 0x0050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FImageCardBagConfig) == 0x000008, "Wrong alignment on FImageCardBagConfig");
-static_assert(sizeof(FImageCardBagConfig) == 0x000058, "Wrong size on FImageCardBagConfig");
-static_assert(offsetof(FImageCardBagConfig, CardAndProbability) == 0x000000, "Member 'FImageCardBagConfig::CardAndProbability' has a wrong offset!");
-static_assert(offsetof(FImageCardBagConfig, ExtractCount) == 0x000050, "Member 'FImageCardBagConfig::ExtractCount' has a wrong offset!");
+DUMPER7_ASSERTS_FImageCardBagConfig;
 
 // ScriptStruct Activity_10130.CompensationImageCardBagConfig
 // 0x0008 (0x0060 - 0x0058)
@@ -210,9 +207,7 @@ public:
 	float                                         CompensationFactor;                                // 0x0058(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCompensationImageCardBagConfig) == 0x000008, "Wrong alignment on FCompensationImageCardBagConfig");
-static_assert(sizeof(FCompensationImageCardBagConfig) == 0x000060, "Wrong size on FCompensationImageCardBagConfig");
-static_assert(offsetof(FCompensationImageCardBagConfig, CompensationFactor) == 0x000058, "Member 'FCompensationImageCardBagConfig::CompensationFactor' has a wrong offset!");
+DUMPER7_ASSERTS_FCompensationImageCardBagConfig;
 
 // ScriptStruct Activity_10130.10130_ImageCardTable
 // 0x01D0 (0x01E0 - 0x0010)
@@ -240,24 +235,7 @@ public:
 	int32                                         ReviveCount;                                       // 0x01D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOne0130_ImageCardTable) == 0x000008, "Wrong alignment on FOne0130_ImageCardTable");
-static_assert(sizeof(FOne0130_ImageCardTable) == 0x0001E0, "Wrong size on FOne0130_ImageCardTable");
-static_assert(offsetof(FOne0130_ImageCardTable, CardID) == 0x000010, "Member 'FOne0130_ImageCardTable::CardID' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, CardType) == 0x000014, "Member 'FOne0130_ImageCardTable::CardType' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, Name) == 0x000018, "Member 'FOne0130_ImageCardTable::Name' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, Description) == 0x000030, "Member 'FOne0130_ImageCardTable::Description' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, Quality) == 0x000048, "Member 'FOne0130_ImageCardTable::Quality' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, ExtractProbability) == 0x00004C, "Member 'FOne0130_ImageCardTable::ExtractProbability' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, IsUsable) == 0x000050, "Member 'FOne0130_ImageCardTable::IsUsable' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, AttackCardConf) == 0x000058, "Member 'FOne0130_ImageCardTable::AttackCardConf' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, SurviveCardConf) == 0x0000B8, "Member 'FOne0130_ImageCardTable::SurviveCardConf' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, BDCardConf) == 0x000118, "Member 'FOne0130_ImageCardTable::BDCardConf' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, GradeCardConf) == 0x000170, "Member 'FOne0130_ImageCardTable::GradeCardConf' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, UpgradeCount) == 0x0001C8, "Member 'FOne0130_ImageCardTable::UpgradeCount' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, RechargeInterval) == 0x0001CC, "Member 'FOne0130_ImageCardTable::RechargeInterval' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, RechargeCount) == 0x0001D0, "Member 'FOne0130_ImageCardTable::RechargeCount' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, BottleCount) == 0x0001D4, "Member 'FOne0130_ImageCardTable::BottleCount' has a wrong offset!");
-static_assert(offsetof(FOne0130_ImageCardTable, ReviveCount) == 0x0001D8, "Member 'FOne0130_ImageCardTable::ReviveCount' has a wrong offset!");
+DUMPER7_ASSERTS_FOne0130_ImageCardTable;
 
 // ScriptStruct Activity_10130.10130_WaveRewardTable
 // 0x00B0 (0x00C0 - 0x0010)
@@ -280,19 +258,7 @@ public:
 	int32                                         ImageCardRefreshNum;                               // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOne0130_WaveRewardTable) == 0x000008, "Wrong alignment on FOne0130_WaveRewardTable");
-static_assert(sizeof(FOne0130_WaveRewardTable) == 0x0000C0, "Wrong size on FOne0130_WaveRewardTable");
-static_assert(offsetof(FOne0130_WaveRewardTable, CardID) == 0x000010, "Member 'FOne0130_WaveRewardTable::CardID' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, CardType) == 0x000014, "Member 'FOne0130_WaveRewardTable::CardType' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, Name) == 0x000018, "Member 'FOne0130_WaveRewardTable::Name' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, Description) == 0x000030, "Member 'FOne0130_WaveRewardTable::Description' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, Quality) == 0x000048, "Member 'FOne0130_WaveRewardTable::Quality' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, ExtractProbability) == 0x00004C, "Member 'FOne0130_WaveRewardTable::ExtractProbability' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, IsUsable) == 0x000050, "Member 'FOne0130_WaveRewardTable::IsUsable' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, BDCardConf) == 0x000058, "Member 'FOne0130_WaveRewardTable::BDCardConf' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, GoldNum) == 0x0000B0, "Member 'FOne0130_WaveRewardTable::GoldNum' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, GoldInterval) == 0x0000B4, "Member 'FOne0130_WaveRewardTable::GoldInterval' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveRewardTable, ImageCardRefreshNum) == 0x0000B8, "Member 'FOne0130_WaveRewardTable::ImageCardRefreshNum' has a wrong offset!");
+DUMPER7_ASSERTS_FOne0130_WaveRewardTable;
 
 // ScriptStruct Activity_10130.HalloweenSquadConfig
 // 0x0058 (0x0058 - 0x0000)
@@ -303,10 +269,7 @@ public:
 	float                                         MonsterSupplementRatio;                            // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHalloweenSquadConfig) == 0x000008, "Wrong alignment on FHalloweenSquadConfig");
-static_assert(sizeof(FHalloweenSquadConfig) == 0x000058, "Wrong size on FHalloweenSquadConfig");
-static_assert(offsetof(FHalloweenSquadConfig, Squad) == 0x000000, "Member 'FHalloweenSquadConfig::Squad' has a wrong offset!");
-static_assert(offsetof(FHalloweenSquadConfig, MonsterSupplementRatio) == 0x000050, "Member 'FHalloweenSquadConfig::MonsterSupplementRatio' has a wrong offset!");
+DUMPER7_ASSERTS_FHalloweenSquadConfig;
 
 // ScriptStruct Activity_10130.WaveRewardConf
 // 0x0010 (0x0010 - 0x0000)
@@ -315,9 +278,647 @@ struct FWaveRewardConf final
 public:
 	TArray<int32>                                 RewardIDs;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaveRewardConf) == 0x000008, "Wrong alignment on FWaveRewardConf");
-static_assert(sizeof(FWaveRewardConf) == 0x000010, "Wrong size on FWaveRewardConf");
-static_assert(offsetof(FWaveRewardConf, RewardIDs) == 0x000000, "Member 'FWaveRewardConf::RewardIDs' has a wrong offset!");
+DUMPER7_ASSERTS_FWaveRewardConf;
+
+// ScriptStruct Activity_10130.HalloweenWaveRewardConf
+// 0x0060 (0x0060 - 0x0000)
+struct FHalloweenWaveRewardConf final
+{
+public:
+	struct FWaveRewardConf                        CommonRewards;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, struct FWaveRewardConf>           HeroRewards;                                       // 0x0010(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FHalloweenWaveRewardConf;
+
+// ScriptStruct Activity_10130.WaveTextConfig
+// 0x0060 (0x0060 - 0x0000)
+struct FWaveTextConfig final
+{
+public:
+	class FText                                   PendingText;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   PrepareText;                                       // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   FightingText;                                      // 0x0030(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   TaskFailText;                                      // 0x0048(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FWaveTextConfig;
+
+// ScriptStruct Activity_10130.10130_WaveTable
+// 0x01B0 (0x01C0 - 0x0010)
+struct FOne0130_WaveTable final : public FTableRowBase
+{
+public:
+	EWaveType                                     WaveType;                                          // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESpawnType                                    WaveSpawnType;                                     // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            FightMonsterInfo;                                  // 0x0018(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bIsPreSpawn;                                       // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PreSpawnTime;                                      // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            PreSpawnMonsterInfo;                               // 0x0070(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         PreSpawnRatio;                                     // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bActivePrepare;                                    // 0x00C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PrepareMinDuration;                                // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         IntervalTime;                                      // 0x00CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RewardPoint;                                       // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaveExp;                                           // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecommendPower;                                    // 0x00D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BossID;                                            // 0x00DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 BossIDList;                                        // 0x00E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         MaxCount;                                          // 0x00F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnIntervalTime;                                 // 0x00F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReachAreaTime;                                     // 0x00F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeLimit;                                         // 0x00FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            PenaltyMonsterInfo;                                // 0x0100(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FHalloweenSquadConfig>          SquadConfigs;                                      // 0x0150(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FHalloweenWaveRewardConf               Rewards;                                           // 0x0160(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOne0130_WaveTable;
+
+// ScriptStruct Activity_10130.SummonedExtendedConfig_10146901
+// 0x0010 (0x0020 - 0x0010)
+struct FSummonedExtendedConfig_10146901 final : public FSummonedExtendedConfig_TurretBase
+{
+public:
+	int32                                         EquipID;                                           // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UsingTurretDelay;                                  // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RotateInterpSpeed;                                 // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSummonedExtendedConfig_10146901;
+
+// ScriptStruct Activity_10130.BladeProbabilityData
+// 0x0020 (0x0020 - 0x0000)
+struct FBladeProbabilityData final
+{
+public:
+	int32                                         EffectID;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 Abilities;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         Probability;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBladeProbabilityData;
+
+// ScriptStruct Activity_10130.Ability_10130_104494_TraceInfo
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) FAbility_10130_104494_TraceInfo final
+{
+public:
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAbility_10130_104494_TraceInfo;
+
+// ScriptStruct Activity_10130.Ability_10130_104494_ProjInfo
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FAbility_10130_104494_ProjInfo final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAbility_10130_104494_ProjInfo;
+
+// ScriptStruct Activity_10130.PiecewiseRangeConfig
+// 0x000C (0x000C - 0x0000)
+struct FPiecewiseRangeConfig final
+{
+public:
+	int32                                         PieceStartValue;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RadiusAdditionPerStep;                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseRadius;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPiecewiseRangeConfig;
+
+// ScriptStruct Activity_10130.PiecewiseDamageConfig
+// 0x01D8 (0x01D8 - 0x0000)
+struct FPiecewiseDamageConfig final
+{
+public:
+	int32                                         PieceStartValue;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageAdditionPerStep;                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x01D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPiecewiseDamageConfig;
+
+// ScriptStruct Activity_10130.ScopeExtendedConfig_10130_10472401
+// 0x0020 (0x0028 - 0x0008)
+struct FScopeExtendedConfig_10130_10472401 final : public FScopeExtendedConfigBase
+{
+public:
+	TArray<struct FPiecewiseRangeConfig>          PiecewiseRangeConfigs;                             // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FPiecewiseDamageConfig>         PiecewiseDamageConfigs;                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FScopeExtendedConfig_10130_10472401;
+
+// ScriptStruct Activity_10130.ProjectileExtendedConfig_10130_10472401
+// 0x0010 (0x0018 - 0x0008)
+struct FProjectileExtendedConfig_10130_10472401 final : public FProjectileExtendedConfigBase
+{
+public:
+	TArray<struct FPiecewiseDamageConfig>         PiecewiseDamageConfigs;                            // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FProjectileExtendedConfig_10130_10472401;
+
+// ScriptStruct Activity_10130.SummonedExtendedConfig_10130_10472401
+// 0x0018 (0x0020 - 0x0008)
+struct FSummonedExtendedConfig_10130_10472401 final : public FSummonedExtendedConfigBase
+{
+public:
+	bool                                          bOverrideViewPointPitch;                           // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ViewPointPitchOverride;                            // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ViewPointAddedAngularYaw;                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableAutoRotation;                               // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RotationAngularSpeed;                              // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSummonedExtendedConfig_10130_10472401;
+
+// ScriptStruct Activity_10130.SummonedExtendedConfig_10130_104754
+// 0x0070 (0x0078 - 0x0008)
+struct FSummonedExtendedConfig_10130_104754 final : public FSummonedExtendedConfigBase
+{
+public:
+	struct FGameplayTag                           MagneticBubbleEnableTag;                           // 0x0008(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagneticAttractDetectionRadius;                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagneticMergeDistance;                             // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagneticAttractMoveSpeed;                          // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagneticDetectionInterval;                         // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MagneticMaxMoveTime;                               // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ElasticBubbleEnableTag;                            // 0x0028(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushMoveTime;                               // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushLimitTime;                              // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushBaseSpeed;                              // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushSpeedInheritRatio;                      // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushBrakingDeceleration;                    // 0x0044(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElasticPushMaxAngleLimit;                          // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_NewBlazeScopeID;                             // 0x004C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_BlazeSummonedID;                             // 0x0050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 CardEffectIDs;                                     // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         NewBubbleLifeSpan;                                 // 0x0068(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxSingleDamage;                                   // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinDamageInterval;                                 // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSummonedExtendedConfig_10130_104754;
+
+// ScriptStruct Activity_10130.MagneticBubbleData
+// 0x0014 (0x0014 - 0x0000)
+struct FMagneticBubbleData final
+{
+public:
+	bool                                          bIsBeingAttracted;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TWeakObjectPtr<class ASummoned_10130_104754>  AttractingTarget;                                  // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LastDetectionTime;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MoveStartTime;                                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMagneticBubbleData;
+
+// ScriptStruct Activity_10130.ElasticBubbleData
+// 0x0030 (0x0030 - 0x0000)
+struct FElasticBubbleData final
+{
+public:
+	bool                                          bIsBeingPushed;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PushElapsedTime;                                   // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PushStartSpeed;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PushDirection;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class ACharacter>              PushByCharacter;                                   // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FElasticBubbleData;
+
+// ScriptStruct Activity_10130.SummonedMovementPostPhysicsTickFunction_10130_104754
+// 0x0008 (0x0038 - 0x0030)
+struct FSummonedMovementPostPhysicsTickFunction_10130_104754 final : public FTickFunction
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSummonedMovementPostPhysicsTickFunction_10130_104754;
+
+// ScriptStruct Activity_10130.BossDeathDissolve
+// 0x001C (0x001C - 0x0000)
+struct FBossDeathDissolve final
+{
+public:
+	float                                         DissolveDelay;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DissolveDuration;                                  // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DissolveParameterName;                             // 0x0008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CurrentDissolvePercent;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x4];                                       // 0x0018(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBossDeathDissolve;
+
+// ScriptStruct Activity_10130.NotifyConfig
+// 0x0020 (0x0020 - 0x0000)
+struct FNotifyConfig final
+{
+public:
+	float                                         StartTime;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 NotifyName;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Data;                                              // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FNotifyConfig;
+
+// ScriptStruct Activity_10130.ZombieAbilityAnimConfig
+// 0x0018 (0x0018 - 0x0000)
+struct FZombieAbilityAnimConfig final
+{
+public:
+	EZombieSkelotAnimState                        AnimState;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FNotifyConfig>                  Notifies;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieAbilityAnimConfig;
+
+// ScriptStruct Activity_10130.ZombieAbilityComboConfig
+// 0x0020 (0x0020 - 0x0000)
+struct FZombieAbilityComboConfig final
+{
+public:
+	float                                         ComboTimeout;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieAbilityComboConfig;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FMarvelZombieCustomizationAttribute
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4020
+// 0x01D0 (0x01D8 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4020 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4020;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4021
+// 0x01D0 (0x01D8 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4021 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4021;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4022
+// 0x0570 (0x0578 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4022 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       PassiveBaseDamage;                                 // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       ProjectileBaseDamage;                              // 0x01D8(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       ProjectileExplodeBaseDamage;                       // 0x03A8(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4022;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4023
+// 0x0578 (0x0580 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4023 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	float                                         DamageReductionHealthThreshold;                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageReductionBuffID;                             // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       HeavyAttackBaseDamage;                             // 0x0010(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       DashScopeBaseDamage;                               // 0x01E0(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       StompScopeBaseDamage;                              // 0x03B0(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4023;
+
+// ScriptStruct Activity_10130.ZombieAttributeOverrides
+// 0x0020 (0x0020 - 0x0000)
+struct FZombieAttributeOverrides final
+{
+public:
+	class FString                                 PropertyName;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 ValueOverrides;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieAttributeOverrides;
+
+// ScriptStruct Activity_10130.ZombieDifficultyAttributeOverrides_Difficulty
+// 0x0098 (0x0098 - 0x0000)
+struct FZombieDifficultyAttributeOverrides_Difficulty final
+{
+public:
+	struct FRuntimeFloatCurve                     ValueOverridesCurve;                               // 0x0000(0x0088)(Edit, Config, NativeAccessSpecifierPublic)
+	TArray<float>                                 ValueOverrides;                                    // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieDifficultyAttributeOverrides_Difficulty;
+
+// ScriptStruct Activity_10130.ZombieDifficultyAttributeOverrides
+// 0x0050 (0x0050 - 0x0000)
+struct FZombieDifficultyAttributeOverrides final
+{
+public:
+	TMap<EHalloweenDifficulty, struct FZombieDifficultyAttributeOverrides_Difficulty> DifficultyOverrideValues; // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieDifficultyAttributeOverrides;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4026
+// 0x03A0 (0x03A8 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4026 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       MeleeAttackDamage;                                 // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDamageParameter                       ExplosionDamage;                                   // 0x01D8(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4026;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4027
+// 0x01D0 (0x01D8 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4027 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       VenomDamage;                                       // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4027;
+
+// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4028
+// 0x01D8 (0x01E0 - 0x0008)
+struct FMarvelZombieCustomizationAttribute_4028 final : public FMarvelZombieCustomizationAttribute
+{
+public:
+	struct FDamageParameter                       MeleeAttackDamage;                                 // 0x0008(0x01D0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         MeleeSlowDown;                                     // 0x01D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMarvelZombieCustomizationAttribute_4028;
+
+// ScriptStruct Activity_10130.MarvelZombieBaseAttributeTable
+// 0x0128 (0x0138 - 0x0010)
+struct FMarvelZombieBaseAttributeTable final : public FTableRowBase
+{
+public:
+	int32                                         ZombieId;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 TName;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAttributeSpec                   AttrSpec;                                          // 0x0028(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FInstancedStruct                       CustomizationAttributes;                           // 0x00B0(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FZombieAttributeOverrides>      AttributeOverrides;                                // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FZombieDifficultyAttributeOverrides> DifficultyAttributeOverrides;    // 0x00E8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieBaseAttributeTable;
+
+// ScriptStruct Activity_10130.CardEffectParameter
+// 0x0010 (0x0010 - 0x0000)
+struct FCardEffectParameter final
+{
+public:
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCardEffectParameter;
+
+// ScriptStruct Activity_10130.CardEffectProbabilityInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FCardEffectProbabilityInfo final
+{
+public:
+	bool                                          bUseProbability;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bOnlyUsedInServer;                                 // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStackProbability;                                 // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Probability;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackProbability;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Seed;                                              // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCardEffectProbabilityInfo;
+
+// ScriptStruct Activity_10130.CardEffect_EnergyMod
+// 0x0014 (0x0014 - 0x0000)
+struct FCardEffect_EnergyMod final
+{
+public:
+	EAmmoClipType                                 EnergyType;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCoff;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ModValue;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StackModValueAdd;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ModRatio;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackModRatioAdd;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCardEffect_EnergyMod;
+
+// ScriptStruct Activity_10130.CardEffect_StageBuffInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FCardEffect_StageBuffInfo final
+{
+public:
+	TArray<int32>                                 ApplyBuffs;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 RemoveBuffs;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCardEffect_StageBuffInfo;
+
+// ScriptStruct Activity_10130.CardEffect_StageBuff
+// 0x0050 (0x0050 - 0x0000)
+struct FCardEffect_StageBuff final
+{
+public:
+	TMap<EMarvelAbilityStage, struct FCardEffect_StageBuffInfo> BuffInfos;                           // 0x0000(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCardEffect_StageBuff;
+
+// ScriptStruct Activity_10130.BuffAbility_HealthModifierInfo
+// 0x0008 (0x0008 - 0x0000)
+struct FBuffAbility_HealthModifierInfo final
+{
+public:
+	bool                                          bSetHealth;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPercentageHealth;                                 // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HealthValue;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FBuffAbility_HealthModifierInfo;
+
+// ScriptStruct Activity_10130.BuffAbility_HealthModifierInfo_PvE
+// 0x0020 (0x0020 - 0x0000)
+struct FBuffAbility_HealthModifierInfo_PvE final
+{
+public:
+	bool                                          bRemoveEffect;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelPVE_Modifier                    Modifier;                                          // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FBuffAbility_HealthModifierInfo_PvE;
+
+// ScriptStruct Activity_10130.MarvelAgentRepMovementFragment
+// 0x0060 (0x0060 - 0x0000)
+struct FMarvelAgentRepMovementFragment final : public FMassFragment
+{
+public:
+	bool                                          bDirty;                                            // 0x0000(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bZombieStatusChanged;                              // 0x0001(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LinearVelocity;                                    // 0x0008(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0020(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0038(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         MovementMode;                                      // 0x0050(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bJumping;                                          // 0x0051(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bProxyIsJumpForceApplied;                          // 0x0052(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_53[0x1];                                       // 0x0053(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ReplicatedServerLastTransformUpdateTimeStamp;      // 0x0054(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsInZombiePool;                                   // 0x0058(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMarvelAgentRepMovementFragment;
+
+// ScriptStruct Activity_10130.MarvelAgentUpdateMovementFragment
+// 0x0008 (0x0008 - 0x0000)
+struct FMarvelAgentUpdateMovementFragment final : public FMassFragment
+{
+public:
+	float                                         LastTickGameTimeSeconds;                           // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTickEnable;                                       // 0x0004(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMarvelAgentUpdateMovementFragment;
+
+// ScriptStruct Activity_10130.ReplicatedMarvelAgentRepMovementData
+// 0x0048 (0x0048 - 0x0000)
+struct FReplicatedMarvelAgentRepMovementData final
+{
+public:
+	struct FVector_NetQuantize100                 Position;                                          // 0x0000(0x0018)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Yaw;                                               // 0x0018(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector_NetQuantize                    Velocity;                                          // 0x0020(0x0018)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         MovementMode;                                      // 0x0038(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bJumping;                                          // 0x0039(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bProxyIsJumpForceApplied;                          // 0x003A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ServerLastTransformUpdateTimeStamp;                // 0x003C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInZombiePool;                                     // 0x0040(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FReplicatedMarvelAgentRepMovementData;
+
+// ScriptStruct Activity_10130.ReplicatedMarvelZombieAgent
+// 0x0048 (0x0070 - 0x0028)
+struct FReplicatedMarvelZombieAgent final : public FReplicatedAgentBase
+{
+public:
+	struct FReplicatedMarvelAgentRepMovementData  RepMovement;                                       // 0x0028(0x0048)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FReplicatedMarvelZombieAgent;
+
+// ScriptStruct Activity_10130.MarvelZombieFastArrayItem
+// 0x0070 (0x0090 - 0x0020)
+struct FMarvelZombieFastArrayItem final : public FMassFastArrayItemBase
+{
+public:
+	struct FReplicatedMarvelZombieAgent           Agent;                                             // 0x0020(0x0070)(NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieFastArrayItem;
+
+// ScriptStruct Activity_10130.MassMarvelZombieClientBubbleSerializer
+// 0x0128 (0x0268 - 0x0140)
+struct FMassMarvelZombieClientBubbleSerializer final : public FMassClientBubbleSerializerBase
+{
+public:
+	uint8                                         Pad_140[0x118];                                    // 0x0140(0x0118)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMarvelZombieFastArrayItem>     Zombies;                                           // 0x0258(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FMassMarvelZombieClientBubbleSerializer;
+
+// ScriptStruct Activity_10130.ZombieAbilityAnim
+// 0x0002 (0x0002 - 0x0000)
+struct FZombieAbilityAnim final
+{
+public:
+	EZombieSkelotAnimState                        AnimState;                                         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         AnimVersion;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieAbilityAnim;
+
+// ScriptStruct Activity_10130.ZombieAnimParam
+// 0x0010 (0x0010 - 0x0000)
+struct FZombieAnimParam final
+{
+public:
+	class UAnimSequenceBase*                      AnimSequence;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLoopAnim;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FZombieAnimParam;
+
+// ScriptStruct Activity_10130.MarvelZombieContainer
+// 0x0010 (0x0010 - 0x0000)
+struct FMarvelZombieContainer final
+{
+public:
+	TArray<class AMarvelZombie*>                  Items;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMarvelZombieContainer;
+
+// ScriptStruct Activity_10130.ZombiePoolData
+// 0x0010 (0x0010 - 0x0000)
+struct FZombiePoolData final
+{
+public:
+	class AMarvelZombie*                          ZombieCharacter;                                   // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FZombiePoolData;
+
+// ScriptStruct Activity_10130.ZombieMovementModeFragment
+// 0x0001 (0x0001 - 0x0000)
+struct FZombieMovementModeFragment final : public FMassFragment
+{
+public:
+	EZombieMovementMode                           MovementMode;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieMovementModeFragment;
+
+// ScriptStruct Activity_10130.ZombieAnimFragment
+// 0x00B0 (0x00B0 - 0x0000)
+struct alignas(0x08) FZombieAnimFragment final : public FMassFragment
+{
+public:
+	bool                                          bBeHitting;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EZombieBeHittingState                         BeHittingState;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceReplayHitAnim;                               // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDead;                                             // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDeadF;                                            // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bKnockUp;                                          // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStun;                                             // 0x0006(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EZombieSkelotAnimState                        AbilityAnimType;                                   // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceReplayAbilityAnim;                           // 0x0009(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0xA6];                                       // 0x000A(0x00A6)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FZombieAnimFragment;
+
+// ScriptStruct Activity_10130.ZombieStatusFragment
+// 0x0001 (0x0001 - 0x0000)
+struct FZombieStatusFragment final : public FMassFragment
+{
+public:
+	bool                                          bFrozen;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FZombieStatusFragment;
+
+// ScriptStruct Activity_10130.ZombieChildComponentsFragment
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FZombieChildComponentsFragment final : public FObjectWrapperFragment
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FZombieChildComponentsFragment;
 
 // ScriptStruct Activity_10130.ZombieAnimData
 // 0x01E0 (0x01E8 - 0x0008)
@@ -351,202 +952,7 @@ public:
 	TArray<class UAnimSequenceBase*>              BeHittingInPlace_R;                                // 0x0188(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TSet<EZombieSkelotAnimState>                  MultiAnimTypes;                                    // 0x0198(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData) == 0x000008, "Wrong alignment on FZombieAnimData");
-static_assert(sizeof(FZombieAnimData) == 0x0001E8, "Wrong size on FZombieAnimData");
-static_assert(offsetof(FZombieAnimData, Idle) == 0x000008, "Member 'FZombieAnimData::Idle' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Walk) == 0x000018, "Member 'FZombieAnimData::Walk' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, CombatWalk) == 0x000028, "Member 'FZombieAnimData::CombatWalk' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Run) == 0x000038, "Member 'FZombieAnimData::Run' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Turn) == 0x000048, "Member 'FZombieAnimData::Turn' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Jump) == 0x000058, "Member 'FZombieAnimData::Jump' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, FallStart) == 0x000068, "Member 'FZombieAnimData::FallStart' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Falling) == 0x000078, "Member 'FZombieAnimData::Falling' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, NoFallingLanded) == 0x000088, "Member 'FZombieAnimData::NoFallingLanded' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Landed) == 0x000098, "Member 'FZombieAnimData::Landed' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, LandedGetup) == 0x0000A8, "Member 'FZombieAnimData::LandedGetup' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, KnockUp) == 0x0000B8, "Member 'FZombieAnimData::KnockUp' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Dead_F) == 0x0000C8, "Member 'FZombieAnimData::Dead_F' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Dead_B) == 0x0000D8, "Member 'FZombieAnimData::Dead_B' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, KnockDown) == 0x0000E8, "Member 'FZombieAnimData::KnockDown' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, StandUp) == 0x0000F8, "Member 'FZombieAnimData::StandUp' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, Stun) == 0x000108, "Member 'FZombieAnimData::Stun' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHitting_F) == 0x000118, "Member 'FZombieAnimData::BeHitting_F' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHitting_B) == 0x000128, "Member 'FZombieAnimData::BeHitting_B' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHitting_L) == 0x000138, "Member 'FZombieAnimData::BeHitting_L' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHitting_R) == 0x000148, "Member 'FZombieAnimData::BeHitting_R' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHittingInPlace_F) == 0x000158, "Member 'FZombieAnimData::BeHittingInPlace_F' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHittingInPlace_B) == 0x000168, "Member 'FZombieAnimData::BeHittingInPlace_B' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHittingInPlace_L) == 0x000178, "Member 'FZombieAnimData::BeHittingInPlace_L' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, BeHittingInPlace_R) == 0x000188, "Member 'FZombieAnimData::BeHittingInPlace_R' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData, MultiAnimTypes) == 0x000198, "Member 'FZombieAnimData::MultiAnimTypes' has a wrong offset!");
-
-// ScriptStruct Activity_10130.HalloweenWaveRewardConf
-// 0x0060 (0x0060 - 0x0000)
-struct FHalloweenWaveRewardConf final
-{
-public:
-	struct FWaveRewardConf                        CommonRewards;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, struct FWaveRewardConf>           HeroRewards;                                       // 0x0010(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FHalloweenWaveRewardConf) == 0x000008, "Wrong alignment on FHalloweenWaveRewardConf");
-static_assert(sizeof(FHalloweenWaveRewardConf) == 0x000060, "Wrong size on FHalloweenWaveRewardConf");
-static_assert(offsetof(FHalloweenWaveRewardConf, CommonRewards) == 0x000000, "Member 'FHalloweenWaveRewardConf::CommonRewards' has a wrong offset!");
-static_assert(offsetof(FHalloweenWaveRewardConf, HeroRewards) == 0x000010, "Member 'FHalloweenWaveRewardConf::HeroRewards' has a wrong offset!");
-
-// ScriptStruct Activity_10130.WaveTextConfig
-// 0x0060 (0x0060 - 0x0000)
-struct FWaveTextConfig final
-{
-public:
-	class FText                                   PendingText;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   PrepareText;                                       // 0x0018(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   FightingText;                                      // 0x0030(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   TaskFailText;                                      // 0x0048(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FWaveTextConfig) == 0x000008, "Wrong alignment on FWaveTextConfig");
-static_assert(sizeof(FWaveTextConfig) == 0x000060, "Wrong size on FWaveTextConfig");
-static_assert(offsetof(FWaveTextConfig, PendingText) == 0x000000, "Member 'FWaveTextConfig::PendingText' has a wrong offset!");
-static_assert(offsetof(FWaveTextConfig, PrepareText) == 0x000018, "Member 'FWaveTextConfig::PrepareText' has a wrong offset!");
-static_assert(offsetof(FWaveTextConfig, FightingText) == 0x000030, "Member 'FWaveTextConfig::FightingText' has a wrong offset!");
-static_assert(offsetof(FWaveTextConfig, TaskFailText) == 0x000048, "Member 'FWaveTextConfig::TaskFailText' has a wrong offset!");
-
-// ScriptStruct Activity_10130.10130_WaveTable
-// 0x01B0 (0x01C0 - 0x0010)
-struct FOne0130_WaveTable final : public FTableRowBase
-{
-public:
-	EWaveType                                     WaveType;                                          // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESpawnType                                    WaveSpawnType;                                     // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, int32>                            FightMonsterInfo;                                  // 0x0018(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bIsPreSpawn;                                       // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PreSpawnTime;                                      // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            PreSpawnMonsterInfo;                               // 0x0070(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         PreSpawnRatio;                                     // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bActivePrepare;                                    // 0x00C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PrepareMinDuration;                                // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         IntervalTime;                                      // 0x00CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RewardPoint;                                       // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaveExp;                                           // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecommendPower;                                    // 0x00D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BossID;                                            // 0x00DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 BossIDList;                                        // 0x00E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         MaxCount;                                          // 0x00F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnIntervalTime;                                 // 0x00F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReachAreaTime;                                     // 0x00F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeLimit;                                         // 0x00FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            PenaltyMonsterInfo;                                // 0x0100(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FHalloweenSquadConfig>          SquadConfigs;                                      // 0x0150(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FHalloweenWaveRewardConf               Rewards;                                           // 0x0160(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FOne0130_WaveTable) == 0x000008, "Wrong alignment on FOne0130_WaveTable");
-static_assert(sizeof(FOne0130_WaveTable) == 0x0001C0, "Wrong size on FOne0130_WaveTable");
-static_assert(offsetof(FOne0130_WaveTable, WaveType) == 0x000010, "Member 'FOne0130_WaveTable::WaveType' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, WaveSpawnType) == 0x000011, "Member 'FOne0130_WaveTable::WaveSpawnType' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, FightMonsterInfo) == 0x000018, "Member 'FOne0130_WaveTable::FightMonsterInfo' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, bIsPreSpawn) == 0x000068, "Member 'FOne0130_WaveTable::bIsPreSpawn' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, PreSpawnTime) == 0x00006C, "Member 'FOne0130_WaveTable::PreSpawnTime' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, PreSpawnMonsterInfo) == 0x000070, "Member 'FOne0130_WaveTable::PreSpawnMonsterInfo' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, PreSpawnRatio) == 0x0000C0, "Member 'FOne0130_WaveTable::PreSpawnRatio' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, bActivePrepare) == 0x0000C4, "Member 'FOne0130_WaveTable::bActivePrepare' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, PrepareMinDuration) == 0x0000C8, "Member 'FOne0130_WaveTable::PrepareMinDuration' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, IntervalTime) == 0x0000CC, "Member 'FOne0130_WaveTable::IntervalTime' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, RewardPoint) == 0x0000D0, "Member 'FOne0130_WaveTable::RewardPoint' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, WaveExp) == 0x0000D4, "Member 'FOne0130_WaveTable::WaveExp' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, RecommendPower) == 0x0000D8, "Member 'FOne0130_WaveTable::RecommendPower' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, BossID) == 0x0000DC, "Member 'FOne0130_WaveTable::BossID' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, BossIDList) == 0x0000E0, "Member 'FOne0130_WaveTable::BossIDList' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, MaxCount) == 0x0000F0, "Member 'FOne0130_WaveTable::MaxCount' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, SpawnIntervalTime) == 0x0000F4, "Member 'FOne0130_WaveTable::SpawnIntervalTime' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, ReachAreaTime) == 0x0000F8, "Member 'FOne0130_WaveTable::ReachAreaTime' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, TimeLimit) == 0x0000FC, "Member 'FOne0130_WaveTable::TimeLimit' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, PenaltyMonsterInfo) == 0x000100, "Member 'FOne0130_WaveTable::PenaltyMonsterInfo' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, SquadConfigs) == 0x000150, "Member 'FOne0130_WaveTable::SquadConfigs' has a wrong offset!");
-static_assert(offsetof(FOne0130_WaveTable, Rewards) == 0x000160, "Member 'FOne0130_WaveTable::Rewards' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAnimFragment
-// 0x00B0 (0x00B0 - 0x0000)
-struct alignas(0x08) FZombieAnimFragment final : public FMassFragment
-{
-public:
-	bool                                          bBeHitting;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EZombieBeHittingState                         BeHittingState;                                    // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceReplayHitAnim;                               // 0x0002(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDead;                                             // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDeadF;                                            // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bKnockUp;                                          // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStun;                                             // 0x0006(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	EZombieSkelotAnimState                        AbilityAnimType;                                   // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceReplayAbilityAnim;                           // 0x0009(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0xA6];                                       // 0x000A(0x00A6)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FZombieAnimFragment) == 0x000008, "Wrong alignment on FZombieAnimFragment");
-static_assert(sizeof(FZombieAnimFragment) == 0x0000B0, "Wrong size on FZombieAnimFragment");
-static_assert(offsetof(FZombieAnimFragment, bBeHitting) == 0x000000, "Member 'FZombieAnimFragment::bBeHitting' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, BeHittingState) == 0x000001, "Member 'FZombieAnimFragment::BeHittingState' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bForceReplayHitAnim) == 0x000002, "Member 'FZombieAnimFragment::bForceReplayHitAnim' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bDead) == 0x000003, "Member 'FZombieAnimFragment::bDead' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bDeadF) == 0x000004, "Member 'FZombieAnimFragment::bDeadF' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bKnockUp) == 0x000005, "Member 'FZombieAnimFragment::bKnockUp' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bStun) == 0x000006, "Member 'FZombieAnimFragment::bStun' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, AbilityAnimType) == 0x000008, "Member 'FZombieAnimFragment::AbilityAnimType' has a wrong offset!");
-static_assert(offsetof(FZombieAnimFragment, bForceReplayAbilityAnim) == 0x000009, "Member 'FZombieAnimFragment::bForceReplayAbilityAnim' has a wrong offset!");
-
-// ScriptStruct Activity_10130.SummonedExtendedConfig_10146901
-// 0x0010 (0x0020 - 0x0010)
-struct FSummonedExtendedConfig_10146901 final : public FSummonedExtendedConfig_TurretBase
-{
-public:
-	int32                                         EquipID;                                           // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UsingTurretDelay;                                  // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RotateInterpSpeed;                                 // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSummonedExtendedConfig_10146901) == 0x000008, "Wrong alignment on FSummonedExtendedConfig_10146901");
-static_assert(sizeof(FSummonedExtendedConfig_10146901) == 0x000020, "Wrong size on FSummonedExtendedConfig_10146901");
-static_assert(offsetof(FSummonedExtendedConfig_10146901, EquipID) == 0x000010, "Member 'FSummonedExtendedConfig_10146901::EquipID' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10146901, UsingTurretDelay) == 0x000014, "Member 'FSummonedExtendedConfig_10146901::UsingTurretDelay' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10146901, RotateInterpSpeed) == 0x000018, "Member 'FSummonedExtendedConfig_10146901::RotateInterpSpeed' has a wrong offset!");
-
-// ScriptStruct Activity_10130.BladeProbabilityData
-// 0x0020 (0x0020 - 0x0000)
-struct FBladeProbabilityData final
-{
-public:
-	int32                                         EffectID;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 Abilities;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         Probability;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FBladeProbabilityData) == 0x000008, "Wrong alignment on FBladeProbabilityData");
-static_assert(sizeof(FBladeProbabilityData) == 0x000020, "Wrong size on FBladeProbabilityData");
-static_assert(offsetof(FBladeProbabilityData, EffectID) == 0x000000, "Member 'FBladeProbabilityData::EffectID' has a wrong offset!");
-static_assert(offsetof(FBladeProbabilityData, Abilities) == 0x000008, "Member 'FBladeProbabilityData::Abilities' has a wrong offset!");
-static_assert(offsetof(FBladeProbabilityData, Probability) == 0x000018, "Member 'FBladeProbabilityData::Probability' has a wrong offset!");
-
-// ScriptStruct Activity_10130.Ability_10130_104494_TraceInfo
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FAbility_10130_104494_TraceInfo final
-{
-public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAbility_10130_104494_TraceInfo) == 0x000008, "Wrong alignment on FAbility_10130_104494_TraceInfo");
-static_assert(sizeof(FAbility_10130_104494_TraceInfo) == 0x000030, "Wrong size on FAbility_10130_104494_TraceInfo");
-
-// ScriptStruct Activity_10130.Ability_10130_104494_ProjInfo
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FAbility_10130_104494_ProjInfo final
-{
-public:
-	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAbility_10130_104494_ProjInfo) == 0x000008, "Wrong alignment on FAbility_10130_104494_ProjInfo");
-static_assert(sizeof(FAbility_10130_104494_ProjInfo) == 0x000020, "Wrong size on FAbility_10130_104494_ProjInfo");
+DUMPER7_ASSERTS_FZombieAnimData;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4020
 // 0x0030 (0x0218 - 0x01E8)
@@ -557,517 +963,7 @@ public:
 	TArray<class UAnimSequenceBase*>              Ability2;                                          // 0x01F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UAnimSequenceBase*>              Ability3;                                          // 0x0208(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4020) == 0x000008, "Wrong alignment on FZombieAnimData_4020");
-static_assert(sizeof(FZombieAnimData_4020) == 0x000218, "Wrong size on FZombieAnimData_4020");
-static_assert(offsetof(FZombieAnimData_4020, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4020::Ability1' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4020, Ability2) == 0x0001F8, "Member 'FZombieAnimData_4020::Ability2' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4020, Ability3) == 0x000208, "Member 'FZombieAnimData_4020::Ability3' has a wrong offset!");
-
-// ScriptStruct Activity_10130.PiecewiseRangeConfig
-// 0x000C (0x000C - 0x0000)
-struct FPiecewiseRangeConfig final
-{
-public:
-	int32                                         PieceStartValue;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RadiusAdditionPerStep;                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseRadius;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPiecewiseRangeConfig) == 0x000004, "Wrong alignment on FPiecewiseRangeConfig");
-static_assert(sizeof(FPiecewiseRangeConfig) == 0x00000C, "Wrong size on FPiecewiseRangeConfig");
-static_assert(offsetof(FPiecewiseRangeConfig, PieceStartValue) == 0x000000, "Member 'FPiecewiseRangeConfig::PieceStartValue' has a wrong offset!");
-static_assert(offsetof(FPiecewiseRangeConfig, RadiusAdditionPerStep) == 0x000004, "Member 'FPiecewiseRangeConfig::RadiusAdditionPerStep' has a wrong offset!");
-static_assert(offsetof(FPiecewiseRangeConfig, BaseRadius) == 0x000008, "Member 'FPiecewiseRangeConfig::BaseRadius' has a wrong offset!");
-
-// ScriptStruct Activity_10130.PiecewiseDamageConfig
-// 0x0188 (0x0188 - 0x0000)
-struct FPiecewiseDamageConfig final
-{
-public:
-	int32                                         PieceStartValue;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageAdditionPerStep;                             // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x0180)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPiecewiseDamageConfig) == 0x000008, "Wrong alignment on FPiecewiseDamageConfig");
-static_assert(sizeof(FPiecewiseDamageConfig) == 0x000188, "Wrong size on FPiecewiseDamageConfig");
-static_assert(offsetof(FPiecewiseDamageConfig, PieceStartValue) == 0x000000, "Member 'FPiecewiseDamageConfig::PieceStartValue' has a wrong offset!");
-static_assert(offsetof(FPiecewiseDamageConfig, DamageAdditionPerStep) == 0x000004, "Member 'FPiecewiseDamageConfig::DamageAdditionPerStep' has a wrong offset!");
-static_assert(offsetof(FPiecewiseDamageConfig, BaseDamage) == 0x000008, "Member 'FPiecewiseDamageConfig::BaseDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ScopeExtendedConfig_10130_10472401
-// 0x0020 (0x0028 - 0x0008)
-struct FScopeExtendedConfig_10130_10472401 final : public FScopeExtendedConfigBase
-{
-public:
-	TArray<struct FPiecewiseRangeConfig>          PiecewiseRangeConfigs;                             // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FPiecewiseDamageConfig>         PiecewiseDamageConfigs;                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FScopeExtendedConfig_10130_10472401) == 0x000008, "Wrong alignment on FScopeExtendedConfig_10130_10472401");
-static_assert(sizeof(FScopeExtendedConfig_10130_10472401) == 0x000028, "Wrong size on FScopeExtendedConfig_10130_10472401");
-static_assert(offsetof(FScopeExtendedConfig_10130_10472401, PiecewiseRangeConfigs) == 0x000008, "Member 'FScopeExtendedConfig_10130_10472401::PiecewiseRangeConfigs' has a wrong offset!");
-static_assert(offsetof(FScopeExtendedConfig_10130_10472401, PiecewiseDamageConfigs) == 0x000018, "Member 'FScopeExtendedConfig_10130_10472401::PiecewiseDamageConfigs' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ProjectileExtendedConfig_10130_10472401
-// 0x0010 (0x0018 - 0x0008)
-struct FProjectileExtendedConfig_10130_10472401 final : public FProjectileExtendedConfigBase
-{
-public:
-	TArray<struct FPiecewiseDamageConfig>         PiecewiseDamageConfigs;                            // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FProjectileExtendedConfig_10130_10472401) == 0x000008, "Wrong alignment on FProjectileExtendedConfig_10130_10472401");
-static_assert(sizeof(FProjectileExtendedConfig_10130_10472401) == 0x000018, "Wrong size on FProjectileExtendedConfig_10130_10472401");
-static_assert(offsetof(FProjectileExtendedConfig_10130_10472401, PiecewiseDamageConfigs) == 0x000008, "Member 'FProjectileExtendedConfig_10130_10472401::PiecewiseDamageConfigs' has a wrong offset!");
-
-// ScriptStruct Activity_10130.SummonedExtendedConfig_10130_10472401
-// 0x0018 (0x0020 - 0x0008)
-struct FSummonedExtendedConfig_10130_10472401 final : public FSummonedExtendedConfigBase
-{
-public:
-	bool                                          bOverrideViewPointPitch;                           // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ViewPointPitchOverride;                            // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ViewPointAddedAngularYaw;                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableAutoRotation;                               // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RotationAngularSpeed;                              // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSummonedExtendedConfig_10130_10472401) == 0x000008, "Wrong alignment on FSummonedExtendedConfig_10130_10472401");
-static_assert(sizeof(FSummonedExtendedConfig_10130_10472401) == 0x000020, "Wrong size on FSummonedExtendedConfig_10130_10472401");
-static_assert(offsetof(FSummonedExtendedConfig_10130_10472401, bOverrideViewPointPitch) == 0x000008, "Member 'FSummonedExtendedConfig_10130_10472401::bOverrideViewPointPitch' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_10472401, ViewPointPitchOverride) == 0x00000C, "Member 'FSummonedExtendedConfig_10130_10472401::ViewPointPitchOverride' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_10472401, ViewPointAddedAngularYaw) == 0x000010, "Member 'FSummonedExtendedConfig_10130_10472401::ViewPointAddedAngularYaw' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_10472401, bEnableAutoRotation) == 0x000014, "Member 'FSummonedExtendedConfig_10130_10472401::bEnableAutoRotation' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_10472401, RotationAngularSpeed) == 0x000018, "Member 'FSummonedExtendedConfig_10130_10472401::RotationAngularSpeed' has a wrong offset!");
-
-// ScriptStruct Activity_10130.SummonedExtendedConfig_10130_104754
-// 0x0070 (0x0078 - 0x0008)
-struct FSummonedExtendedConfig_10130_104754 final : public FSummonedExtendedConfigBase
-{
-public:
-	struct FGameplayTag                           MagneticBubbleEnableTag;                           // 0x0008(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagneticAttractDetectionRadius;                    // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagneticMergeDistance;                             // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagneticAttractMoveSpeed;                          // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagneticDetectionInterval;                         // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MagneticMaxMoveTime;                               // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ElasticBubbleEnableTag;                            // 0x0028(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushMoveTime;                               // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushLimitTime;                              // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushBaseSpeed;                              // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushSpeedInheritRatio;                      // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushBrakingDeceleration;                    // 0x0044(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElasticPushMaxAngleLimit;                          // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_NewBlazeScopeID;                             // 0x004C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_BlazeSummonedID;                             // 0x0050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 CardEffectIDs;                                     // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         NewBubbleLifeSpan;                                 // 0x0068(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxSingleDamage;                                   // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinDamageInterval;                                 // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSummonedExtendedConfig_10130_104754) == 0x000008, "Wrong alignment on FSummonedExtendedConfig_10130_104754");
-static_assert(sizeof(FSummonedExtendedConfig_10130_104754) == 0x000078, "Wrong size on FSummonedExtendedConfig_10130_104754");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticBubbleEnableTag) == 0x000008, "Member 'FSummonedExtendedConfig_10130_104754::MagneticBubbleEnableTag' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticAttractDetectionRadius) == 0x000014, "Member 'FSummonedExtendedConfig_10130_104754::MagneticAttractDetectionRadius' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticMergeDistance) == 0x000018, "Member 'FSummonedExtendedConfig_10130_104754::MagneticMergeDistance' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticAttractMoveSpeed) == 0x00001C, "Member 'FSummonedExtendedConfig_10130_104754::MagneticAttractMoveSpeed' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticDetectionInterval) == 0x000020, "Member 'FSummonedExtendedConfig_10130_104754::MagneticDetectionInterval' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MagneticMaxMoveTime) == 0x000024, "Member 'FSummonedExtendedConfig_10130_104754::MagneticMaxMoveTime' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticBubbleEnableTag) == 0x000028, "Member 'FSummonedExtendedConfig_10130_104754::ElasticBubbleEnableTag' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushMoveTime) == 0x000034, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushMoveTime' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushLimitTime) == 0x000038, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushLimitTime' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushBaseSpeed) == 0x00003C, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushBaseSpeed' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushSpeedInheritRatio) == 0x000040, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushSpeedInheritRatio' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushBrakingDeceleration) == 0x000044, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushBrakingDeceleration' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, ElasticPushMaxAngleLimit) == 0x000048, "Member 'FSummonedExtendedConfig_10130_104754::ElasticPushMaxAngleLimit' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, BD1_3_NewBlazeScopeID) == 0x00004C, "Member 'FSummonedExtendedConfig_10130_104754::BD1_3_NewBlazeScopeID' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, BD1_3_BlazeSummonedID) == 0x000050, "Member 'FSummonedExtendedConfig_10130_104754::BD1_3_BlazeSummonedID' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, CardEffectIDs) == 0x000058, "Member 'FSummonedExtendedConfig_10130_104754::CardEffectIDs' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, NewBubbleLifeSpan) == 0x000068, "Member 'FSummonedExtendedConfig_10130_104754::NewBubbleLifeSpan' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MaxSingleDamage) == 0x00006C, "Member 'FSummonedExtendedConfig_10130_104754::MaxSingleDamage' has a wrong offset!");
-static_assert(offsetof(FSummonedExtendedConfig_10130_104754, MinDamageInterval) == 0x000070, "Member 'FSummonedExtendedConfig_10130_104754::MinDamageInterval' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MagneticBubbleData
-// 0x0014 (0x0014 - 0x0000)
-struct FMagneticBubbleData final
-{
-public:
-	bool                                          bIsBeingAttracted;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TWeakObjectPtr<class ASummoned_10130_104754>  AttractingTarget;                                  // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LastDetectionTime;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MoveStartTime;                                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMagneticBubbleData) == 0x000004, "Wrong alignment on FMagneticBubbleData");
-static_assert(sizeof(FMagneticBubbleData) == 0x000014, "Wrong size on FMagneticBubbleData");
-static_assert(offsetof(FMagneticBubbleData, bIsBeingAttracted) == 0x000000, "Member 'FMagneticBubbleData::bIsBeingAttracted' has a wrong offset!");
-static_assert(offsetof(FMagneticBubbleData, AttractingTarget) == 0x000004, "Member 'FMagneticBubbleData::AttractingTarget' has a wrong offset!");
-static_assert(offsetof(FMagneticBubbleData, LastDetectionTime) == 0x00000C, "Member 'FMagneticBubbleData::LastDetectionTime' has a wrong offset!");
-static_assert(offsetof(FMagneticBubbleData, MoveStartTime) == 0x000010, "Member 'FMagneticBubbleData::MoveStartTime' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ElasticBubbleData
-// 0x0030 (0x0030 - 0x0000)
-struct FElasticBubbleData final
-{
-public:
-	bool                                          bIsBeingPushed;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PushElapsedTime;                                   // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PushStartSpeed;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PushDirection;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TWeakObjectPtr<class ACharacter>              PushByCharacter;                                   // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FElasticBubbleData) == 0x000008, "Wrong alignment on FElasticBubbleData");
-static_assert(sizeof(FElasticBubbleData) == 0x000030, "Wrong size on FElasticBubbleData");
-static_assert(offsetof(FElasticBubbleData, bIsBeingPushed) == 0x000000, "Member 'FElasticBubbleData::bIsBeingPushed' has a wrong offset!");
-static_assert(offsetof(FElasticBubbleData, PushElapsedTime) == 0x000004, "Member 'FElasticBubbleData::PushElapsedTime' has a wrong offset!");
-static_assert(offsetof(FElasticBubbleData, PushStartSpeed) == 0x000008, "Member 'FElasticBubbleData::PushStartSpeed' has a wrong offset!");
-static_assert(offsetof(FElasticBubbleData, PushDirection) == 0x000010, "Member 'FElasticBubbleData::PushDirection' has a wrong offset!");
-static_assert(offsetof(FElasticBubbleData, PushByCharacter) == 0x000028, "Member 'FElasticBubbleData::PushByCharacter' has a wrong offset!");
-
-// ScriptStruct Activity_10130.SummonedMovementPostPhysicsTickFunction_10130_104754
-// 0x0008 (0x0038 - 0x0030)
-struct FSummonedMovementPostPhysicsTickFunction_10130_104754 final : public FTickFunction
-{
-public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSummonedMovementPostPhysicsTickFunction_10130_104754) == 0x000008, "Wrong alignment on FSummonedMovementPostPhysicsTickFunction_10130_104754");
-static_assert(sizeof(FSummonedMovementPostPhysicsTickFunction_10130_104754) == 0x000038, "Wrong size on FSummonedMovementPostPhysicsTickFunction_10130_104754");
-
-// ScriptStruct Activity_10130.BossDeathDissolve
-// 0x001C (0x001C - 0x0000)
-struct FBossDeathDissolve final
-{
-public:
-	float                                         DissolveDelay;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DissolveDuration;                                  // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   DissolveParameterName;                             // 0x0008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CurrentDissolvePercent;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18[0x4];                                       // 0x0018(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FBossDeathDissolve) == 0x000004, "Wrong alignment on FBossDeathDissolve");
-static_assert(sizeof(FBossDeathDissolve) == 0x00001C, "Wrong size on FBossDeathDissolve");
-static_assert(offsetof(FBossDeathDissolve, DissolveDelay) == 0x000000, "Member 'FBossDeathDissolve::DissolveDelay' has a wrong offset!");
-static_assert(offsetof(FBossDeathDissolve, DissolveDuration) == 0x000004, "Member 'FBossDeathDissolve::DissolveDuration' has a wrong offset!");
-static_assert(offsetof(FBossDeathDissolve, DissolveParameterName) == 0x000008, "Member 'FBossDeathDissolve::DissolveParameterName' has a wrong offset!");
-static_assert(offsetof(FBossDeathDissolve, CurrentDissolvePercent) == 0x000014, "Member 'FBossDeathDissolve::CurrentDissolvePercent' has a wrong offset!");
-
-// ScriptStruct Activity_10130.NotifyConfig
-// 0x0020 (0x0020 - 0x0000)
-struct FNotifyConfig final
-{
-public:
-	float                                         StartTime;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 NotifyName;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Data;                                              // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNotifyConfig) == 0x000008, "Wrong alignment on FNotifyConfig");
-static_assert(sizeof(FNotifyConfig) == 0x000020, "Wrong size on FNotifyConfig");
-static_assert(offsetof(FNotifyConfig, StartTime) == 0x000000, "Member 'FNotifyConfig::StartTime' has a wrong offset!");
-static_assert(offsetof(FNotifyConfig, NotifyName) == 0x000008, "Member 'FNotifyConfig::NotifyName' has a wrong offset!");
-static_assert(offsetof(FNotifyConfig, Data) == 0x000018, "Member 'FNotifyConfig::Data' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAbilityAnimConfig
-// 0x0018 (0x0018 - 0x0000)
-struct FZombieAbilityAnimConfig final
-{
-public:
-	EZombieSkelotAnimState                        AnimState;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FNotifyConfig>                  Notifies;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieAbilityAnimConfig) == 0x000008, "Wrong alignment on FZombieAbilityAnimConfig");
-static_assert(sizeof(FZombieAbilityAnimConfig) == 0x000018, "Wrong size on FZombieAbilityAnimConfig");
-static_assert(offsetof(FZombieAbilityAnimConfig, AnimState) == 0x000000, "Member 'FZombieAbilityAnimConfig::AnimState' has a wrong offset!");
-static_assert(offsetof(FZombieAbilityAnimConfig, Notifies) == 0x000008, "Member 'FZombieAbilityAnimConfig::Notifies' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAbilityComboConfig
-// 0x0020 (0x0020 - 0x0000)
-struct FZombieAbilityComboConfig final
-{
-public:
-	float                                         ComboTimeout;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FZombieAbilityAnimConfig               AnimConfig;                                        // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieAbilityComboConfig) == 0x000008, "Wrong alignment on FZombieAbilityComboConfig");
-static_assert(sizeof(FZombieAbilityComboConfig) == 0x000020, "Wrong size on FZombieAbilityComboConfig");
-static_assert(offsetof(FZombieAbilityComboConfig, ComboTimeout) == 0x000000, "Member 'FZombieAbilityComboConfig::ComboTimeout' has a wrong offset!");
-static_assert(offsetof(FZombieAbilityComboConfig, AnimConfig) == 0x000008, "Member 'FZombieAbilityComboConfig::AnimConfig' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FMarvelZombieCustomizationAttribute
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute) == 0x000008, "Wrong size on FMarvelZombieCustomizationAttribute");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4020
-// 0x0180 (0x0188 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4020 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4020) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4020");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4020) == 0x000188, "Wrong size on FMarvelZombieCustomizationAttribute_4020");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4020, BaseDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4020::BaseDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4021
-// 0x0180 (0x0188 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4021 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       BaseDamage;                                        // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4021) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4021");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4021) == 0x000188, "Wrong size on FMarvelZombieCustomizationAttribute_4021");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4021, BaseDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4021::BaseDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4022
-// 0x0480 (0x0488 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4022 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       PassiveBaseDamage;                                 // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       ProjectileBaseDamage;                              // 0x0188(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       ProjectileExplodeBaseDamage;                       // 0x0308(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4022) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4022");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4022) == 0x000488, "Wrong size on FMarvelZombieCustomizationAttribute_4022");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4022, PassiveBaseDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4022::PassiveBaseDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4022, ProjectileBaseDamage) == 0x000188, "Member 'FMarvelZombieCustomizationAttribute_4022::ProjectileBaseDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4022, ProjectileExplodeBaseDamage) == 0x000308, "Member 'FMarvelZombieCustomizationAttribute_4022::ProjectileExplodeBaseDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4023
-// 0x0488 (0x0490 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4023 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	float                                         DamageReductionHealthThreshold;                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageReductionBuffID;                             // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       HeavyAttackBaseDamage;                             // 0x0010(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       DashScopeBaseDamage;                               // 0x0190(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       StompScopeBaseDamage;                              // 0x0310(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4023) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4023");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4023) == 0x000490, "Wrong size on FMarvelZombieCustomizationAttribute_4023");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4023, DamageReductionHealthThreshold) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4023::DamageReductionHealthThreshold' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4023, DamageReductionBuffID) == 0x00000C, "Member 'FMarvelZombieCustomizationAttribute_4023::DamageReductionBuffID' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4023, HeavyAttackBaseDamage) == 0x000010, "Member 'FMarvelZombieCustomizationAttribute_4023::HeavyAttackBaseDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4023, DashScopeBaseDamage) == 0x000190, "Member 'FMarvelZombieCustomizationAttribute_4023::DashScopeBaseDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4023, StompScopeBaseDamage) == 0x000310, "Member 'FMarvelZombieCustomizationAttribute_4023::StompScopeBaseDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAttributeOverrides
-// 0x0020 (0x0020 - 0x0000)
-struct FZombieAttributeOverrides final
-{
-public:
-	class FString                                 PropertyName;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                 ValueOverrides;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieAttributeOverrides) == 0x000008, "Wrong alignment on FZombieAttributeOverrides");
-static_assert(sizeof(FZombieAttributeOverrides) == 0x000020, "Wrong size on FZombieAttributeOverrides");
-static_assert(offsetof(FZombieAttributeOverrides, PropertyName) == 0x000000, "Member 'FZombieAttributeOverrides::PropertyName' has a wrong offset!");
-static_assert(offsetof(FZombieAttributeOverrides, ValueOverrides) == 0x000010, "Member 'FZombieAttributeOverrides::ValueOverrides' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieDifficultyAttributeOverrides_Difficulty
-// 0x0098 (0x0098 - 0x0000)
-struct FZombieDifficultyAttributeOverrides_Difficulty final
-{
-public:
-	struct FRuntimeFloatCurve                     ValueOverridesCurve;                               // 0x0000(0x0088)(Edit, Config, NativeAccessSpecifierPublic)
-	TArray<float>                                 ValueOverrides;                                    // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieDifficultyAttributeOverrides_Difficulty) == 0x000008, "Wrong alignment on FZombieDifficultyAttributeOverrides_Difficulty");
-static_assert(sizeof(FZombieDifficultyAttributeOverrides_Difficulty) == 0x000098, "Wrong size on FZombieDifficultyAttributeOverrides_Difficulty");
-static_assert(offsetof(FZombieDifficultyAttributeOverrides_Difficulty, ValueOverridesCurve) == 0x000000, "Member 'FZombieDifficultyAttributeOverrides_Difficulty::ValueOverridesCurve' has a wrong offset!");
-static_assert(offsetof(FZombieDifficultyAttributeOverrides_Difficulty, ValueOverrides) == 0x000088, "Member 'FZombieDifficultyAttributeOverrides_Difficulty::ValueOverrides' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieDifficultyAttributeOverrides
-// 0x0050 (0x0050 - 0x0000)
-struct FZombieDifficultyAttributeOverrides final
-{
-public:
-	TMap<EHalloweenDifficulty, struct FZombieDifficultyAttributeOverrides_Difficulty> DifficultyOverrideValues; // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieDifficultyAttributeOverrides) == 0x000008, "Wrong alignment on FZombieDifficultyAttributeOverrides");
-static_assert(sizeof(FZombieDifficultyAttributeOverrides) == 0x000050, "Wrong size on FZombieDifficultyAttributeOverrides");
-static_assert(offsetof(FZombieDifficultyAttributeOverrides, DifficultyOverrideValues) == 0x000000, "Member 'FZombieDifficultyAttributeOverrides::DifficultyOverrideValues' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4026
-// 0x0300 (0x0308 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4026 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       MeleeAttackDamage;                                 // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FDamageParameter                       ExplosionDamage;                                   // 0x0188(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4026) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4026");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4026) == 0x000308, "Wrong size on FMarvelZombieCustomizationAttribute_4026");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4026, MeleeAttackDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4026::MeleeAttackDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4026, ExplosionDamage) == 0x000188, "Member 'FMarvelZombieCustomizationAttribute_4026::ExplosionDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4027
-// 0x0180 (0x0188 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4027 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       VenomDamage;                                       // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4027) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4027");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4027) == 0x000188, "Wrong size on FMarvelZombieCustomizationAttribute_4027");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4027, VenomDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4027::VenomDamage' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieCustomizationAttribute_4028
-// 0x0188 (0x0190 - 0x0008)
-struct FMarvelZombieCustomizationAttribute_4028 final : public FMarvelZombieCustomizationAttribute
-{
-public:
-	struct FDamageParameter                       MeleeAttackDamage;                                 // 0x0008(0x0180)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         MeleeSlowDown;                                     // 0x0188(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMarvelZombieCustomizationAttribute_4028) == 0x000008, "Wrong alignment on FMarvelZombieCustomizationAttribute_4028");
-static_assert(sizeof(FMarvelZombieCustomizationAttribute_4028) == 0x000190, "Wrong size on FMarvelZombieCustomizationAttribute_4028");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4028, MeleeAttackDamage) == 0x000008, "Member 'FMarvelZombieCustomizationAttribute_4028::MeleeAttackDamage' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieCustomizationAttribute_4028, MeleeSlowDown) == 0x000188, "Member 'FMarvelZombieCustomizationAttribute_4028::MeleeSlowDown' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieBaseAttributeTable
-// 0x0128 (0x0138 - 0x0010)
-struct FMarvelZombieBaseAttributeTable final : public FTableRowBase
-{
-public:
-	int32                                         ZombieId;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 TName;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAttributeSpec                   AttrSpec;                                          // 0x0028(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FInstancedStruct                       CustomizationAttributes;                           // 0x00B0(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FZombieAttributeOverrides>      AttributeOverrides;                                // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FZombieDifficultyAttributeOverrides> DifficultyAttributeOverrides;    // 0x00E8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieBaseAttributeTable) == 0x000008, "Wrong alignment on FMarvelZombieBaseAttributeTable");
-static_assert(sizeof(FMarvelZombieBaseAttributeTable) == 0x000138, "Wrong size on FMarvelZombieBaseAttributeTable");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, ZombieId) == 0x000010, "Member 'FMarvelZombieBaseAttributeTable::ZombieId' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, TName) == 0x000018, "Member 'FMarvelZombieBaseAttributeTable::TName' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, AttrSpec) == 0x000028, "Member 'FMarvelZombieBaseAttributeTable::AttrSpec' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, CustomizationAttributes) == 0x0000B0, "Member 'FMarvelZombieBaseAttributeTable::CustomizationAttributes' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, AttributeOverrides) == 0x0000D8, "Member 'FMarvelZombieBaseAttributeTable::AttributeOverrides' has a wrong offset!");
-static_assert(offsetof(FMarvelZombieBaseAttributeTable, DifficultyAttributeOverrides) == 0x0000E8, "Member 'FMarvelZombieBaseAttributeTable::DifficultyAttributeOverrides' has a wrong offset!");
-
-// ScriptStruct Activity_10130.CardEffectParameter
-// 0x0010 (0x0010 - 0x0000)
-struct FCardEffectParameter final
-{
-public:
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCardEffectParameter) == 0x000008, "Wrong alignment on FCardEffectParameter");
-static_assert(sizeof(FCardEffectParameter) == 0x000010, "Wrong size on FCardEffectParameter");
-static_assert(offsetof(FCardEffectParameter, HitResults) == 0x000000, "Member 'FCardEffectParameter::HitResults' has a wrong offset!");
-
-// ScriptStruct Activity_10130.CardEffectProbabilityInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FCardEffectProbabilityInfo final
-{
-public:
-	bool                                          bUseProbability;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bOnlyUsedInServer;                                 // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStackProbability;                                 // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Probability;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackProbability;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Seed;                                              // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCardEffectProbabilityInfo) == 0x000004, "Wrong alignment on FCardEffectProbabilityInfo");
-static_assert(sizeof(FCardEffectProbabilityInfo) == 0x000010, "Wrong size on FCardEffectProbabilityInfo");
-static_assert(offsetof(FCardEffectProbabilityInfo, bUseProbability) == 0x000000, "Member 'FCardEffectProbabilityInfo::bUseProbability' has a wrong offset!");
-static_assert(offsetof(FCardEffectProbabilityInfo, bOnlyUsedInServer) == 0x000001, "Member 'FCardEffectProbabilityInfo::bOnlyUsedInServer' has a wrong offset!");
-static_assert(offsetof(FCardEffectProbabilityInfo, bStackProbability) == 0x000002, "Member 'FCardEffectProbabilityInfo::bStackProbability' has a wrong offset!");
-static_assert(offsetof(FCardEffectProbabilityInfo, Probability) == 0x000004, "Member 'FCardEffectProbabilityInfo::Probability' has a wrong offset!");
-static_assert(offsetof(FCardEffectProbabilityInfo, StackProbability) == 0x000008, "Member 'FCardEffectProbabilityInfo::StackProbability' has a wrong offset!");
-static_assert(offsetof(FCardEffectProbabilityInfo, Seed) == 0x00000C, "Member 'FCardEffectProbabilityInfo::Seed' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieStatusFragment
-// 0x0001 (0x0001 - 0x0000)
-struct FZombieStatusFragment final : public FMassFragment
-{
-public:
-	bool                                          bFrozen;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieStatusFragment) == 0x000001, "Wrong alignment on FZombieStatusFragment");
-static_assert(sizeof(FZombieStatusFragment) == 0x000001, "Wrong size on FZombieStatusFragment");
-static_assert(offsetof(FZombieStatusFragment, bFrozen) == 0x000000, "Member 'FZombieStatusFragment::bFrozen' has a wrong offset!");
-
-// ScriptStruct Activity_10130.CardEffect_EnergyMod
-// 0x0014 (0x0014 - 0x0000)
-struct FCardEffect_EnergyMod final
-{
-public:
-	EAmmoClipType                                 EnergyType;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCoff;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ModValue;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StackModValueAdd;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ModRatio;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackModRatioAdd;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCardEffect_EnergyMod) == 0x000004, "Wrong alignment on FCardEffect_EnergyMod");
-static_assert(sizeof(FCardEffect_EnergyMod) == 0x000014, "Wrong size on FCardEffect_EnergyMod");
-static_assert(offsetof(FCardEffect_EnergyMod, EnergyType) == 0x000000, "Member 'FCardEffect_EnergyMod::EnergyType' has a wrong offset!");
-static_assert(offsetof(FCardEffect_EnergyMod, bUseCoff) == 0x000001, "Member 'FCardEffect_EnergyMod::bUseCoff' has a wrong offset!");
-static_assert(offsetof(FCardEffect_EnergyMod, ModValue) == 0x000004, "Member 'FCardEffect_EnergyMod::ModValue' has a wrong offset!");
-static_assert(offsetof(FCardEffect_EnergyMod, StackModValueAdd) == 0x000008, "Member 'FCardEffect_EnergyMod::StackModValueAdd' has a wrong offset!");
-static_assert(offsetof(FCardEffect_EnergyMod, ModRatio) == 0x00000C, "Member 'FCardEffect_EnergyMod::ModRatio' has a wrong offset!");
-static_assert(offsetof(FCardEffect_EnergyMod, StackModRatioAdd) == 0x000010, "Member 'FCardEffect_EnergyMod::StackModRatioAdd' has a wrong offset!");
-
-// ScriptStruct Activity_10130.CardEffect_StageBuffInfo
-// 0x0020 (0x0020 - 0x0000)
-struct FCardEffect_StageBuffInfo final
-{
-public:
-	TArray<int32>                                 ApplyBuffs;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<int32>                                 RemoveBuffs;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCardEffect_StageBuffInfo) == 0x000008, "Wrong alignment on FCardEffect_StageBuffInfo");
-static_assert(sizeof(FCardEffect_StageBuffInfo) == 0x000020, "Wrong size on FCardEffect_StageBuffInfo");
-static_assert(offsetof(FCardEffect_StageBuffInfo, ApplyBuffs) == 0x000000, "Member 'FCardEffect_StageBuffInfo::ApplyBuffs' has a wrong offset!");
-static_assert(offsetof(FCardEffect_StageBuffInfo, RemoveBuffs) == 0x000010, "Member 'FCardEffect_StageBuffInfo::RemoveBuffs' has a wrong offset!");
-
-// ScriptStruct Activity_10130.CardEffect_StageBuff
-// 0x0050 (0x0050 - 0x0000)
-struct FCardEffect_StageBuff final
-{
-public:
-	TMap<EMarvelAbilityStage, struct FCardEffect_StageBuffInfo> BuffInfos;                           // 0x0000(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCardEffect_StageBuff) == 0x000008, "Wrong alignment on FCardEffect_StageBuff");
-static_assert(sizeof(FCardEffect_StageBuff) == 0x000050, "Wrong size on FCardEffect_StageBuff");
-static_assert(offsetof(FCardEffect_StageBuff, BuffInfos) == 0x000000, "Member 'FCardEffect_StageBuff::BuffInfos' has a wrong offset!");
-
-// ScriptStruct Activity_10130.BuffAbility_HealthModifierInfo
-// 0x0008 (0x0008 - 0x0000)
-struct FBuffAbility_HealthModifierInfo final
-{
-public:
-	bool                                          bSetHealth;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPercentageHealth;                                 // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HealthValue;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FBuffAbility_HealthModifierInfo) == 0x000004, "Wrong alignment on FBuffAbility_HealthModifierInfo");
-static_assert(sizeof(FBuffAbility_HealthModifierInfo) == 0x000008, "Wrong size on FBuffAbility_HealthModifierInfo");
-static_assert(offsetof(FBuffAbility_HealthModifierInfo, bSetHealth) == 0x000000, "Member 'FBuffAbility_HealthModifierInfo::bSetHealth' has a wrong offset!");
-static_assert(offsetof(FBuffAbility_HealthModifierInfo, bPercentageHealth) == 0x000001, "Member 'FBuffAbility_HealthModifierInfo::bPercentageHealth' has a wrong offset!");
-static_assert(offsetof(FBuffAbility_HealthModifierInfo, HealthValue) == 0x000004, "Member 'FBuffAbility_HealthModifierInfo::HealthValue' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4020;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4021
 // 0x0040 (0x0228 - 0x01E8)
@@ -1079,134 +975,7 @@ public:
 	TArray<class UAnimSequenceBase*>              Ability3;                                          // 0x0208(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UAnimSequenceBase*>              Ability4;                                          // 0x0218(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4021) == 0x000008, "Wrong alignment on FZombieAnimData_4021");
-static_assert(sizeof(FZombieAnimData_4021) == 0x000228, "Wrong size on FZombieAnimData_4021");
-static_assert(offsetof(FZombieAnimData_4021, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4021::Ability1' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4021, Ability2) == 0x0001F8, "Member 'FZombieAnimData_4021::Ability2' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4021, Ability3) == 0x000208, "Member 'FZombieAnimData_4021::Ability3' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4021, Ability4) == 0x000218, "Member 'FZombieAnimData_4021::Ability4' has a wrong offset!");
-
-// ScriptStruct Activity_10130.BuffAbility_HealthModifierInfo_PvE
-// 0x0020 (0x0020 - 0x0000)
-struct FBuffAbility_HealthModifierInfo_PvE final
-{
-public:
-	bool                                          bRemoveEffect;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelPVE_Modifier                    Modifier;                                          // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FBuffAbility_HealthModifierInfo_PvE) == 0x000008, "Wrong alignment on FBuffAbility_HealthModifierInfo_PvE");
-static_assert(sizeof(FBuffAbility_HealthModifierInfo_PvE) == 0x000020, "Wrong size on FBuffAbility_HealthModifierInfo_PvE");
-static_assert(offsetof(FBuffAbility_HealthModifierInfo_PvE, bRemoveEffect) == 0x000000, "Member 'FBuffAbility_HealthModifierInfo_PvE::bRemoveEffect' has a wrong offset!");
-static_assert(offsetof(FBuffAbility_HealthModifierInfo_PvE, Modifier) == 0x000008, "Member 'FBuffAbility_HealthModifierInfo_PvE::Modifier' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelAgentRepMovementFragment
-// 0x0060 (0x0060 - 0x0000)
-struct FMarvelAgentRepMovementFragment final : public FMassFragment
-{
-public:
-	bool                                          bDirty;                                            // 0x0000(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bZombieStatusChanged;                              // 0x0001(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LinearVelocity;                                    // 0x0008(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0020(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0038(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         MovementMode;                                      // 0x0050(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bJumping;                                          // 0x0051(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bProxyIsJumpForceApplied;                          // 0x0052(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_53[0x1];                                       // 0x0053(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ReplicatedServerLastTransformUpdateTimeStamp;      // 0x0054(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsInZombiePool;                                   // 0x0058(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMarvelAgentRepMovementFragment) == 0x000008, "Wrong alignment on FMarvelAgentRepMovementFragment");
-static_assert(sizeof(FMarvelAgentRepMovementFragment) == 0x000060, "Wrong size on FMarvelAgentRepMovementFragment");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, bDirty) == 0x000000, "Member 'FMarvelAgentRepMovementFragment::bDirty' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, bZombieStatusChanged) == 0x000001, "Member 'FMarvelAgentRepMovementFragment::bZombieStatusChanged' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, LinearVelocity) == 0x000008, "Member 'FMarvelAgentRepMovementFragment::LinearVelocity' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, Location) == 0x000020, "Member 'FMarvelAgentRepMovementFragment::Location' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, Rotation) == 0x000038, "Member 'FMarvelAgentRepMovementFragment::Rotation' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, MovementMode) == 0x000050, "Member 'FMarvelAgentRepMovementFragment::MovementMode' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, bJumping) == 0x000051, "Member 'FMarvelAgentRepMovementFragment::bJumping' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, bProxyIsJumpForceApplied) == 0x000052, "Member 'FMarvelAgentRepMovementFragment::bProxyIsJumpForceApplied' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, ReplicatedServerLastTransformUpdateTimeStamp) == 0x000054, "Member 'FMarvelAgentRepMovementFragment::ReplicatedServerLastTransformUpdateTimeStamp' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentRepMovementFragment, bIsInZombiePool) == 0x000058, "Member 'FMarvelAgentRepMovementFragment::bIsInZombiePool' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelAgentUpdateMovementFragment
-// 0x0008 (0x0008 - 0x0000)
-struct FMarvelAgentUpdateMovementFragment final : public FMassFragment
-{
-public:
-	float                                         LastTickGameTimeSeconds;                           // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTickEnable;                                       // 0x0004(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMarvelAgentUpdateMovementFragment) == 0x000004, "Wrong alignment on FMarvelAgentUpdateMovementFragment");
-static_assert(sizeof(FMarvelAgentUpdateMovementFragment) == 0x000008, "Wrong size on FMarvelAgentUpdateMovementFragment");
-static_assert(offsetof(FMarvelAgentUpdateMovementFragment, LastTickGameTimeSeconds) == 0x000000, "Member 'FMarvelAgentUpdateMovementFragment::LastTickGameTimeSeconds' has a wrong offset!");
-static_assert(offsetof(FMarvelAgentUpdateMovementFragment, bTickEnable) == 0x000004, "Member 'FMarvelAgentUpdateMovementFragment::bTickEnable' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ReplicatedMarvelAgentRepMovementData
-// 0x0048 (0x0048 - 0x0000)
-struct FReplicatedMarvelAgentRepMovementData final
-{
-public:
-	struct FVector_NetQuantize100                 Position;                                          // 0x0000(0x0018)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Yaw;                                               // 0x0018(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector_NetQuantize                    Velocity;                                          // 0x0020(0x0018)(Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         MovementMode;                                      // 0x0038(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bJumping;                                          // 0x0039(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bProxyIsJumpForceApplied;                          // 0x003A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ServerLastTransformUpdateTimeStamp;                // 0x003C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bInZombiePool;                                     // 0x0040(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FReplicatedMarvelAgentRepMovementData) == 0x000008, "Wrong alignment on FReplicatedMarvelAgentRepMovementData");
-static_assert(sizeof(FReplicatedMarvelAgentRepMovementData) == 0x000048, "Wrong size on FReplicatedMarvelAgentRepMovementData");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, Position) == 0x000000, "Member 'FReplicatedMarvelAgentRepMovementData::Position' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, Yaw) == 0x000018, "Member 'FReplicatedMarvelAgentRepMovementData::Yaw' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, Velocity) == 0x000020, "Member 'FReplicatedMarvelAgentRepMovementData::Velocity' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, MovementMode) == 0x000038, "Member 'FReplicatedMarvelAgentRepMovementData::MovementMode' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, bJumping) == 0x000039, "Member 'FReplicatedMarvelAgentRepMovementData::bJumping' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, bProxyIsJumpForceApplied) == 0x00003A, "Member 'FReplicatedMarvelAgentRepMovementData::bProxyIsJumpForceApplied' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, ServerLastTransformUpdateTimeStamp) == 0x00003C, "Member 'FReplicatedMarvelAgentRepMovementData::ServerLastTransformUpdateTimeStamp' has a wrong offset!");
-static_assert(offsetof(FReplicatedMarvelAgentRepMovementData, bInZombiePool) == 0x000040, "Member 'FReplicatedMarvelAgentRepMovementData::bInZombiePool' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ReplicatedMarvelZombieAgent
-// 0x0048 (0x0070 - 0x0028)
-struct FReplicatedMarvelZombieAgent final : public FReplicatedAgentBase
-{
-public:
-	struct FReplicatedMarvelAgentRepMovementData  RepMovement;                                       // 0x0028(0x0048)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FReplicatedMarvelZombieAgent) == 0x000008, "Wrong alignment on FReplicatedMarvelZombieAgent");
-static_assert(sizeof(FReplicatedMarvelZombieAgent) == 0x000070, "Wrong size on FReplicatedMarvelZombieAgent");
-static_assert(offsetof(FReplicatedMarvelZombieAgent, RepMovement) == 0x000028, "Member 'FReplicatedMarvelZombieAgent::RepMovement' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieFastArrayItem
-// 0x0070 (0x0090 - 0x0020)
-struct FMarvelZombieFastArrayItem final : public FMassFastArrayItemBase
-{
-public:
-	struct FReplicatedMarvelZombieAgent           Agent;                                             // 0x0020(0x0070)(NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieFastArrayItem) == 0x000008, "Wrong alignment on FMarvelZombieFastArrayItem");
-static_assert(sizeof(FMarvelZombieFastArrayItem) == 0x000090, "Wrong size on FMarvelZombieFastArrayItem");
-static_assert(offsetof(FMarvelZombieFastArrayItem, Agent) == 0x000020, "Member 'FMarvelZombieFastArrayItem::Agent' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MassMarvelZombieClientBubbleSerializer
-// 0x0128 (0x0268 - 0x0140)
-struct FMassMarvelZombieClientBubbleSerializer final : public FMassClientBubbleSerializerBase
-{
-public:
-	uint8                                         Pad_140[0x118];                                    // 0x0140(0x0118)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMarvelZombieFastArrayItem>     Zombies;                                           // 0x0258(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FMassMarvelZombieClientBubbleSerializer) == 0x000008, "Wrong alignment on FMassMarvelZombieClientBubbleSerializer");
-static_assert(sizeof(FMassMarvelZombieClientBubbleSerializer) == 0x000268, "Wrong size on FMassMarvelZombieClientBubbleSerializer");
-static_assert(offsetof(FMassMarvelZombieClientBubbleSerializer, Zombies) == 0x000258, "Member 'FMassMarvelZombieClientBubbleSerializer::Zombies' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4021;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4022
 // 0x0020 (0x0208 - 0x01E8)
@@ -1216,81 +985,7 @@ public:
 	TArray<class UAnimSequenceBase*>              Ability1;                                          // 0x01E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UAnimSequenceBase*>              Ability2;                                          // 0x01F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4022) == 0x000008, "Wrong alignment on FZombieAnimData_4022");
-static_assert(sizeof(FZombieAnimData_4022) == 0x000208, "Wrong size on FZombieAnimData_4022");
-static_assert(offsetof(FZombieAnimData_4022, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4022::Ability1' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4022, Ability2) == 0x0001F8, "Member 'FZombieAnimData_4022::Ability2' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAbilityAnim
-// 0x0002 (0x0002 - 0x0000)
-struct FZombieAbilityAnim final
-{
-public:
-	EZombieSkelotAnimState                        AnimState;                                         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         AnimVersion;                                       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieAbilityAnim) == 0x000001, "Wrong alignment on FZombieAbilityAnim");
-static_assert(sizeof(FZombieAbilityAnim) == 0x000002, "Wrong size on FZombieAbilityAnim");
-static_assert(offsetof(FZombieAbilityAnim, AnimState) == 0x000000, "Member 'FZombieAbilityAnim::AnimState' has a wrong offset!");
-static_assert(offsetof(FZombieAbilityAnim, AnimVersion) == 0x000001, "Member 'FZombieAbilityAnim::AnimVersion' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieAnimParam
-// 0x0010 (0x0010 - 0x0000)
-struct FZombieAnimParam final
-{
-public:
-	class UAnimSequenceBase*                      AnimSequence;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLoopAnim;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FZombieAnimParam) == 0x000008, "Wrong alignment on FZombieAnimParam");
-static_assert(sizeof(FZombieAnimParam) == 0x000010, "Wrong size on FZombieAnimParam");
-static_assert(offsetof(FZombieAnimParam, AnimSequence) == 0x000000, "Member 'FZombieAnimParam::AnimSequence' has a wrong offset!");
-static_assert(offsetof(FZombieAnimParam, bLoopAnim) == 0x000008, "Member 'FZombieAnimParam::bLoopAnim' has a wrong offset!");
-
-// ScriptStruct Activity_10130.MarvelZombieContainer
-// 0x0010 (0x0010 - 0x0000)
-struct FMarvelZombieContainer final
-{
-public:
-	TArray<class AMarvelZombie*>                  Items;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMarvelZombieContainer) == 0x000008, "Wrong alignment on FMarvelZombieContainer");
-static_assert(sizeof(FMarvelZombieContainer) == 0x000010, "Wrong size on FMarvelZombieContainer");
-static_assert(offsetof(FMarvelZombieContainer, Items) == 0x000000, "Member 'FMarvelZombieContainer::Items' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombiePoolData
-// 0x0010 (0x0010 - 0x0000)
-struct FZombiePoolData final
-{
-public:
-	class AMarvelZombie*                          ZombieCharacter;                                   // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FZombiePoolData) == 0x000008, "Wrong alignment on FZombiePoolData");
-static_assert(sizeof(FZombiePoolData) == 0x000010, "Wrong size on FZombiePoolData");
-static_assert(offsetof(FZombiePoolData, ZombieCharacter) == 0x000000, "Member 'FZombiePoolData::ZombieCharacter' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieMovementModeFragment
-// 0x0001 (0x0001 - 0x0000)
-struct FZombieMovementModeFragment final : public FMassFragment
-{
-public:
-	EZombieMovementMode                           MovementMode;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FZombieMovementModeFragment) == 0x000001, "Wrong alignment on FZombieMovementModeFragment");
-static_assert(sizeof(FZombieMovementModeFragment) == 0x000001, "Wrong size on FZombieMovementModeFragment");
-static_assert(offsetof(FZombieMovementModeFragment, MovementMode) == 0x000000, "Member 'FZombieMovementModeFragment::MovementMode' has a wrong offset!");
-
-// ScriptStruct Activity_10130.ZombieChildComponentsFragment
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FZombieChildComponentsFragment final : public FObjectWrapperFragment
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FZombieChildComponentsFragment) == 0x000008, "Wrong alignment on FZombieChildComponentsFragment");
-static_assert(sizeof(FZombieChildComponentsFragment) == 0x000028, "Wrong size on FZombieChildComponentsFragment");
+DUMPER7_ASSERTS_FZombieAnimData_4022;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4023
 // 0x0050 (0x0238 - 0x01E8)
@@ -1303,13 +998,7 @@ public:
 	TArray<class UAnimSequenceBase*>              Ability4;                                          // 0x0218(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UAnimSequenceBase*>              Ability5;                                          // 0x0228(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4023) == 0x000008, "Wrong alignment on FZombieAnimData_4023");
-static_assert(sizeof(FZombieAnimData_4023) == 0x000238, "Wrong size on FZombieAnimData_4023");
-static_assert(offsetof(FZombieAnimData_4023, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4023::Ability1' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4023, Ability2) == 0x0001F8, "Member 'FZombieAnimData_4023::Ability2' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4023, Ability3) == 0x000208, "Member 'FZombieAnimData_4023::Ability3' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4023, Ability4) == 0x000218, "Member 'FZombieAnimData_4023::Ability4' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4023, Ability5) == 0x000228, "Member 'FZombieAnimData_4023::Ability5' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4023;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4026
 // 0x0010 (0x01F8 - 0x01E8)
@@ -1318,9 +1007,7 @@ struct FZombieAnimData_4026 final : public FZombieAnimData
 public:
 	TArray<class UAnimSequenceBase*>              Ability1;                                          // 0x01E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4026) == 0x000008, "Wrong alignment on FZombieAnimData_4026");
-static_assert(sizeof(FZombieAnimData_4026) == 0x0001F8, "Wrong size on FZombieAnimData_4026");
-static_assert(offsetof(FZombieAnimData_4026, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4026::Ability1' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4026;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4027
 // 0x0010 (0x01F8 - 0x01E8)
@@ -1329,9 +1016,7 @@ struct FZombieAnimData_4027 final : public FZombieAnimData
 public:
 	TArray<class UAnimSequenceBase*>              Ability1;                                          // 0x01E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4027) == 0x000008, "Wrong alignment on FZombieAnimData_4027");
-static_assert(sizeof(FZombieAnimData_4027) == 0x0001F8, "Wrong size on FZombieAnimData_4027");
-static_assert(offsetof(FZombieAnimData_4027, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4027::Ability1' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4027;
 
 // ScriptStruct Activity_10130.ZombieAnimData_4028
 // 0x0020 (0x0208 - 0x01E8)
@@ -1341,10 +1026,7 @@ public:
 	TArray<class UAnimSequenceBase*>              Ability1;                                          // 0x01E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UAnimSequenceBase*>              Ability2;                                          // 0x01F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FZombieAnimData_4028) == 0x000008, "Wrong alignment on FZombieAnimData_4028");
-static_assert(sizeof(FZombieAnimData_4028) == 0x000208, "Wrong size on FZombieAnimData_4028");
-static_assert(offsetof(FZombieAnimData_4028, Ability1) == 0x0001E8, "Member 'FZombieAnimData_4028::Ability1' has a wrong offset!");
-static_assert(offsetof(FZombieAnimData_4028, Ability2) == 0x0001F8, "Member 'FZombieAnimData_4028::Ability2' has a wrong offset!");
+DUMPER7_ASSERTS_FZombieAnimData_4028;
 
 // ScriptStruct Activity_10130.CueTransformInfo_AttachToSkelot
 // 0x0010 (0x0018 - 0x0008)
@@ -1354,97 +1036,84 @@ public:
 	class FName                                   SocketName;                                        // 0x0008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCueTransformInfo_AttachToSkelot) == 0x000008, "Wrong alignment on FCueTransformInfo_AttachToSkelot");
-static_assert(sizeof(FCueTransformInfo_AttachToSkelot) == 0x000018, "Wrong size on FCueTransformInfo_AttachToSkelot");
-static_assert(offsetof(FCueTransformInfo_AttachToSkelot, SocketName) == 0x000008, "Member 'FCueTransformInfo_AttachToSkelot::SocketName' has a wrong offset!");
+DUMPER7_ASSERTS_FCueTransformInfo_AttachToSkelot;
 
 // ScriptStruct Activity_10130.MassZombieOrientationCopyToMassTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassZombieOrientationCopyToMassTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassZombieOrientationCopyToMassTag) == 0x000001, "Wrong alignment on FMassZombieOrientationCopyToMassTag");
-static_assert(sizeof(FMassZombieOrientationCopyToMassTag) == 0x000001, "Wrong size on FMassZombieOrientationCopyToMassTag");
+DUMPER7_ASSERTS_FMassZombieOrientationCopyToMassTag;
 
 // ScriptStruct Activity_10130.MarvelZombie4020
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4020 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4020) == 0x000001, "Wrong alignment on FMarvelZombie4020");
-static_assert(sizeof(FMarvelZombie4020) == 0x000001, "Wrong size on FMarvelZombie4020");
+DUMPER7_ASSERTS_FMarvelZombie4020;
 
 // ScriptStruct Activity_10130.MarvelZombie4021
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4021 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4021) == 0x000001, "Wrong alignment on FMarvelZombie4021");
-static_assert(sizeof(FMarvelZombie4021) == 0x000001, "Wrong size on FMarvelZombie4021");
+DUMPER7_ASSERTS_FMarvelZombie4021;
 
 // ScriptStruct Activity_10130.MarvelZombie4022
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4022 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4022) == 0x000001, "Wrong alignment on FMarvelZombie4022");
-static_assert(sizeof(FMarvelZombie4022) == 0x000001, "Wrong size on FMarvelZombie4022");
+DUMPER7_ASSERTS_FMarvelZombie4022;
 
 // ScriptStruct Activity_10130.MarvelZombie4023
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4023 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4023) == 0x000001, "Wrong alignment on FMarvelZombie4023");
-static_assert(sizeof(FMarvelZombie4023) == 0x000001, "Wrong size on FMarvelZombie4023");
+DUMPER7_ASSERTS_FMarvelZombie4023;
 
 // ScriptStruct Activity_10130.MarvelZombie4024
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4024 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4024) == 0x000001, "Wrong alignment on FMarvelZombie4024");
-static_assert(sizeof(FMarvelZombie4024) == 0x000001, "Wrong size on FMarvelZombie4024");
+DUMPER7_ASSERTS_FMarvelZombie4024;
 
 // ScriptStruct Activity_10130.MarvelZombie4025
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4025 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4025) == 0x000001, "Wrong alignment on FMarvelZombie4025");
-static_assert(sizeof(FMarvelZombie4025) == 0x000001, "Wrong size on FMarvelZombie4025");
+DUMPER7_ASSERTS_FMarvelZombie4025;
 
 // ScriptStruct Activity_10130.MarvelZombie4026
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4026 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4026) == 0x000001, "Wrong alignment on FMarvelZombie4026");
-static_assert(sizeof(FMarvelZombie4026) == 0x000001, "Wrong size on FMarvelZombie4026");
+DUMPER7_ASSERTS_FMarvelZombie4026;
 
 // ScriptStruct Activity_10130.MarvelZombie4027
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4027 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4027) == 0x000001, "Wrong alignment on FMarvelZombie4027");
-static_assert(sizeof(FMarvelZombie4027) == 0x000001, "Wrong size on FMarvelZombie4027");
+DUMPER7_ASSERTS_FMarvelZombie4027;
 
 // ScriptStruct Activity_10130.MarvelZombie4028
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4028 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4028) == 0x000001, "Wrong alignment on FMarvelZombie4028");
-static_assert(sizeof(FMarvelZombie4028) == 0x000001, "Wrong size on FMarvelZombie4028");
+DUMPER7_ASSERTS_FMarvelZombie4028;
 
 // ScriptStruct Activity_10130.MarvelZombie4029
 // 0x0000 (0x0001 - 0x0001)
 struct FMarvelZombie4029 final : public FMassTag
 {
 };
-static_assert(alignof(FMarvelZombie4029) == 0x000001, "Wrong alignment on FMarvelZombie4029");
-static_assert(sizeof(FMarvelZombie4029) == 0x000001, "Wrong size on FMarvelZombie4029");
+DUMPER7_ASSERTS_FMarvelZombie4029;
 
 }
 

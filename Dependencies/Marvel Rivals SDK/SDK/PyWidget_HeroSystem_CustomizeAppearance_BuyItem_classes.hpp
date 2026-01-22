@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_CustomizeAppearance_BuyItem.PyWidget_HeroSystem_CustomizeAppearance_BuyItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_HeroSystem_CustomizeAppearance_BuyItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 Index, const class FString& ItemID)> OnItemSelected;         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 Index, const class FString& ItemID)> OnItemSelected;         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_CustomizeAppearance_BuyItem">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_CustomizeAppearance_BuyItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_CustomizeAppearance_BuyItem")
 	}
 	static class UPyWidget_HeroSystem_CustomizeAppearance_BuyItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_CustomizeAppearance_BuyItem>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_CustomizeAppearance_BuyItem) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_CustomizeAppearance_BuyItem");
-static_assert(sizeof(UPyWidget_HeroSystem_CustomizeAppearance_BuyItem) == 0x0005D0, "Wrong size on UPyWidget_HeroSystem_CustomizeAppearance_BuyItem");
-static_assert(offsetof(UPyWidget_HeroSystem_CustomizeAppearance_BuyItem, OnItemSelected) == 0x0005C0, "Member 'UPyWidget_HeroSystem_CustomizeAppearance_BuyItem::OnItemSelected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_CustomizeAppearance_BuyItem;
 
 }
 

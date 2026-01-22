@@ -23,15 +23,18 @@ class UBTT_TryExitInvalidLocation_BP_C final : public UBTT_PyTryExitInvalidLocat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_TryExitInvalidLocation_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_TryExitInvalidLocation_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_TryExitInvalidLocation_BP_C")
 	}
 	static class UBTT_TryExitInvalidLocation_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_TryExitInvalidLocation_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_TryExitInvalidLocation_BP_C) == 0x000008, "Wrong alignment on UBTT_TryExitInvalidLocation_BP_C");
-static_assert(sizeof(UBTT_TryExitInvalidLocation_BP_C) == 0x000128, "Wrong size on UBTT_TryExitInvalidLocation_BP_C");
+DUMPER7_ASSERTS_UBTT_TryExitInvalidLocation_BP_C;
 
 }
 

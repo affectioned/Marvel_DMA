@@ -23,9 +23,7 @@ struct PyWidget_CommonItem_Icon_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_Icon_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CommonItem_Icon_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CommonItem_Icon_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CommonItem_Icon_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CommonItem_Icon_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_CommonItem_Icon_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_Icon_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_CommonItem_Icon.PyWidget_CommonItem_Icon.Tick
 // 0x003C (0x003C - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonItem_Icon_Tick) == 0x000004, "Wrong alignment on PyWidget_CommonItem_Icon_Tick");
-static_assert(sizeof(PyWidget_CommonItem_Icon_Tick) == 0x00003C, "Wrong size on PyWidget_CommonItem_Icon_Tick");
-static_assert(offsetof(PyWidget_CommonItem_Icon_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_CommonItem_Icon_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonItem_Icon_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_CommonItem_Icon_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonItem_Icon_Tick;
 
 }
 

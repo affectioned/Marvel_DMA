@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyleDataBP_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyleDataBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyleDataBP_C")
 	}
 	static class UButtonStyleDataBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyleDataBP_C>();
 	}
 };
-static_assert(alignof(UButtonStyleDataBP_C) == 0x000008, "Wrong alignment on UButtonStyleDataBP_C");
-static_assert(sizeof(UButtonStyleDataBP_C) == 0x000088, "Wrong size on UButtonStyleDataBP_C");
-static_assert(offsetof(UButtonStyleDataBP_C, ButtonStyles) == 0x000038, "Member 'UButtonStyleDataBP_C::ButtonStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UButtonStyleDataBP_C;
 
 }
 

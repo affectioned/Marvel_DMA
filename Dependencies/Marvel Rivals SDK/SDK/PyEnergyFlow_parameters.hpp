@@ -24,9 +24,7 @@ struct PyEnergyFlow_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_ReceiveTick) == 0x000004, "Wrong alignment on PyEnergyFlow_ReceiveTick");
-static_assert(sizeof(PyEnergyFlow_ReceiveTick) == 0x000004, "Wrong size on PyEnergyFlow_ReceiveTick");
-static_assert(offsetof(PyEnergyFlow_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyEnergyFlow_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_ReceiveTick;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyEnergyFlow_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndReason;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyEnergyFlow_ReceiveEndPlay");
-static_assert(sizeof(PyEnergyFlow_ReceiveEndPlay) == 0x000001, "Wrong size on PyEnergyFlow_ReceiveEndPlay");
-static_assert(offsetof(PyEnergyFlow_ReceiveEndPlay, EndReason) == 0x000000, "Member 'PyEnergyFlow_ReceiveEndPlay::EndReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_ReceiveEndPlay;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -46,9 +42,7 @@ struct PyEnergyFlow_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_SrvSetState) == 0x000008, "Wrong alignment on PyEnergyFlow_SrvSetState");
-static_assert(sizeof(PyEnergyFlow_SrvSetState) == 0x000010, "Wrong size on PyEnergyFlow_SrvSetState");
-static_assert(offsetof(PyEnergyFlow_SrvSetState, state) == 0x000000, "Member 'PyEnergyFlow_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_SrvSetState;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.OnPayloadCampChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyEnergyFlow_OnPayloadCampChanged final
 public:
 	ECampState                                    CampState;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_OnPayloadCampChanged) == 0x000001, "Wrong alignment on PyEnergyFlow_OnPayloadCampChanged");
-static_assert(sizeof(PyEnergyFlow_OnPayloadCampChanged) == 0x000001, "Wrong size on PyEnergyFlow_OnPayloadCampChanged");
-static_assert(offsetof(PyEnergyFlow_OnPayloadCampChanged, CampState) == 0x000000, "Member 'PyEnergyFlow_OnPayloadCampChanged::CampState' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_OnPayloadCampChanged;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.OnAreaProgressFinished
 // 0x0004 (0x0004 - 0x0000)
@@ -68,9 +60,7 @@ struct PyEnergyFlow_OnAreaProgressFinished final
 public:
 	float                                         Percent;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_OnAreaProgressFinished) == 0x000004, "Wrong alignment on PyEnergyFlow_OnAreaProgressFinished");
-static_assert(sizeof(PyEnergyFlow_OnAreaProgressFinished) == 0x000004, "Wrong size on PyEnergyFlow_OnAreaProgressFinished");
-static_assert(offsetof(PyEnergyFlow_OnAreaProgressFinished, Percent) == 0x000000, "Member 'PyEnergyFlow_OnAreaProgressFinished::Percent' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_OnAreaProgressFinished;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.OnAreaOnlyAttackerIn
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +69,7 @@ struct PyEnergyFlow_OnAreaOnlyAttackerIn final
 public:
 	int32                                         AttackerCount;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_OnAreaOnlyAttackerIn) == 0x000004, "Wrong alignment on PyEnergyFlow_OnAreaOnlyAttackerIn");
-static_assert(sizeof(PyEnergyFlow_OnAreaOnlyAttackerIn) == 0x000004, "Wrong size on PyEnergyFlow_OnAreaOnlyAttackerIn");
-static_assert(offsetof(PyEnergyFlow_OnAreaOnlyAttackerIn, AttackerCount) == 0x000000, "Member 'PyEnergyFlow_OnAreaOnlyAttackerIn::AttackerCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_OnAreaOnlyAttackerIn;
 
 // PythonFunction PyEnergyFlow.PyEnergyFlow.OnAreaOnlyDefendIn
 // 0x0004 (0x0004 - 0x0000)
@@ -90,9 +78,7 @@ struct PyEnergyFlow_OnAreaOnlyDefendIn final
 public:
 	int32                                         DefenderCount;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyFlow_OnAreaOnlyDefendIn) == 0x000004, "Wrong alignment on PyEnergyFlow_OnAreaOnlyDefendIn");
-static_assert(sizeof(PyEnergyFlow_OnAreaOnlyDefendIn) == 0x000004, "Wrong size on PyEnergyFlow_OnAreaOnlyDefendIn");
-static_assert(offsetof(PyEnergyFlow_OnAreaOnlyDefendIn, DefenderCount) == 0x000000, "Member 'PyEnergyFlow_OnAreaOnlyDefendIn::DefenderCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyFlow_OnAreaOnlyDefendIn;
 
 }
 

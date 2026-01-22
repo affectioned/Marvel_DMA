@@ -25,12 +25,7 @@ public:
 	class UMarvelAbilityTask_ModifyAmmo*          CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP) == 0x000008, "Wrong alignment on Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP");
-static_assert(sizeof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP) == 0x000020, "Wrong size on Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP");
-static_assert(offsetof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP, EntryPoint) == 0x000000, "Member 'Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP, CallFunc_AE_GetCharacterActor_ReturnValue) == 0x000008, "Member 'Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP::CallFunc_AE_GetCharacterActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP, CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue) == 0x000010, "Member 'Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP::CallFunc_ApplyMakeUpToMaxAmmo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_102551_BP_C_ExecuteUbergraph_Ability_102551_BP;
 
 }
 

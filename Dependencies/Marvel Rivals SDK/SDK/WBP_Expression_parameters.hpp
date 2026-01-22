@@ -21,9 +21,7 @@ struct WBP_Expression_C_UpdateRenderTarget final
 public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Expression_C_UpdateRenderTarget) == 0x000008, "Wrong alignment on WBP_Expression_C_UpdateRenderTarget");
-static_assert(sizeof(WBP_Expression_C_UpdateRenderTarget) == 0x000008, "Wrong size on WBP_Expression_C_UpdateRenderTarget");
-static_assert(offsetof(WBP_Expression_C_UpdateRenderTarget, RenderTarget) == 0x000000, "Member 'WBP_Expression_C_UpdateRenderTarget::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Expression_C_UpdateRenderTarget;
 
 // Function WBP_Expression.WBP_Expression_C.ExecuteUbergraph_WBP_Expression
 // 0x0018 (0x0018 - 0x0000)
@@ -36,12 +34,7 @@ public:
 	class UTextureRenderTarget2D*                 K2Node_CustomEvent_RenderTarget;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression) == 0x000008, "Wrong alignment on WBP_Expression_C_ExecuteUbergraph_WBP_Expression");
-static_assert(sizeof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression) == 0x000018, "Wrong size on WBP_Expression_C_ExecuteUbergraph_WBP_Expression");
-static_assert(offsetof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression, EntryPoint) == 0x000000, "Member 'WBP_Expression_C_ExecuteUbergraph_WBP_Expression::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WBP_Expression_C_ExecuteUbergraph_WBP_Expression::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression, K2Node_CustomEvent_RenderTarget) == 0x000008, "Member 'WBP_Expression_C_ExecuteUbergraph_WBP_Expression::K2Node_CustomEvent_RenderTarget' has a wrong offset!");
-static_assert(offsetof(WBP_Expression_C_ExecuteUbergraph_WBP_Expression, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'WBP_Expression_C_ExecuteUbergraph_WBP_Expression::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Expression_C_ExecuteUbergraph_WBP_Expression;
 
 }
 

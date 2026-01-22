@@ -10,38 +10,34 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Marvel_classes.hpp"
+#include "PyChatHBTextDecoratorProxy_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass HashText_ChatMsgWidgetDecorator_BP.HashText_ChatMsgWidgetDecorator_BP_C
-// 0x0008 (0x0090 - 0x0088)
-class UHashText_ChatMsgWidgetDecorator_BP_C final : public UMarvelHashTextWidgetDecoratorProxy
+// 0x0000 (0x0088 - 0x0088)
+class UHashText_ChatMsgWidgetDecorator_BP_C final : public UPyChatHBTextDecoratorProxy
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0088(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-
-public:
 	void 新函数();
-	void SetWidgetData(const class UWidget* Owner, const class UUserWidget* Widget, const TMap<class FString, class FString>& InMetaData);
-	void ExecuteUbergraph_HashText_ChatMsgWidgetDecorator_BP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HashText_ChatMsgWidgetDecorator_BP_C">();
+		BP_STATIC_CLASS_IMPL("HashText_ChatMsgWidgetDecorator_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HashText_ChatMsgWidgetDecorator_BP_C")
 	}
 	static class UHashText_ChatMsgWidgetDecorator_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHashText_ChatMsgWidgetDecorator_BP_C>();
 	}
 };
-static_assert(alignof(UHashText_ChatMsgWidgetDecorator_BP_C) == 0x000008, "Wrong alignment on UHashText_ChatMsgWidgetDecorator_BP_C");
-static_assert(sizeof(UHashText_ChatMsgWidgetDecorator_BP_C) == 0x000090, "Wrong size on UHashText_ChatMsgWidgetDecorator_BP_C");
-static_assert(offsetof(UHashText_ChatMsgWidgetDecorator_BP_C, UberGraphFrame) == 0x000088, "Member 'UHashText_ChatMsgWidgetDecorator_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UHashText_ChatMsgWidgetDecorator_BP_C;
 
 }
 

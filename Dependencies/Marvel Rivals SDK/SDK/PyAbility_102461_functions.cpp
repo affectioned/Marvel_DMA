@@ -17,6 +17,69 @@
 namespace SDK
 {
 
+// PythonFunction PyAbility_102461.PyScope_10246101.K2_OnBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyScope_10246101::K2_OnBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyScope_10246101", "K2_OnBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102461.PyScope_10246101.OnTraceResults
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyScope_10246101::OnTraceResults(const TArray<struct FHitResult>& HitResults)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyScope_10246101", "OnTraceResults");
+
+	Params::PyScope_10246101_OnTraceResults Parms{};
+
+	Parms.HitResults = std::move(HitResults);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102461.PyScope_10246101.K2_OnEndAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyScope_10246101::K2_OnEndAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyScope_10246101", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_102461.PyProjectile_102461.K2_OnBeginAgentTask
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -125,69 +188,6 @@ void APyProjectile_102461::K2_OnProjectileInfoForceChanged_ThreadSafe(const stru
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102461.PyScope_10246101.K2_OnBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyScope_10246101::K2_OnBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyScope_10246101", "K2_OnBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102461.PyScope_10246101.OnTraceResults
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyScope_10246101::OnTraceResults(const TArray<struct FHitResult>& HitResults)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyScope_10246101", "OnTraceResults");
-
-	Params::PyScope_10246101_OnTraceResults Parms{};
-
-	Parms.HitResults = std::move(HitResults);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102461.PyScope_10246101.K2_OnEndAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyScope_10246101::K2_OnEndAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyScope_10246101", "K2_OnEndAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

@@ -52,9 +52,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x50];                                       // 0x0008(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBouncePriorityAttribute_105852) == 0x000008, "Wrong alignment on FBouncePriorityAttribute_105852");
-static_assert(sizeof(FBouncePriorityAttribute_105852) == 0x000058, "Wrong size on FBouncePriorityAttribute_105852");
-static_assert(offsetof(FBouncePriorityAttribute_105852, Target) == 0x000000, "Member 'FBouncePriorityAttribute_105852::Target' has a wrong offset!");
+DUMPER7_ASSERTS_FBouncePriorityAttribute_105852;
 
 // ScriptStruct Hero_1058.PlayerApplyCountData_105853
 // 0x0050 (0x0050 - 0x0000)
@@ -63,9 +61,7 @@ struct FPlayerApplyCountData_105853 final
 public:
 	TMap<TWeakObjectPtr<class AActor>, int32>     PlayerApplyCountData;                              // 0x0000(0x0050)(Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPlayerApplyCountData_105853) == 0x000008, "Wrong alignment on FPlayerApplyCountData_105853");
-static_assert(sizeof(FPlayerApplyCountData_105853) == 0x000050, "Wrong size on FPlayerApplyCountData_105853");
-static_assert(offsetof(FPlayerApplyCountData_105853, PlayerApplyCountData) == 0x000000, "Member 'FPlayerApplyCountData_105853::PlayerApplyCountData' has a wrong offset!");
+DUMPER7_ASSERTS_FPlayerApplyCountData_105853;
 
 }
 

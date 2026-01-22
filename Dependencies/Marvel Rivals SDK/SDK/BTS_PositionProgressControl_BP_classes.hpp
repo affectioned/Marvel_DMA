@@ -23,15 +23,18 @@ class UBTS_PositionProgressControl_BP_C final : public UBTS_PyPositionProgressCo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_PositionProgressControl_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_PositionProgressControl_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PositionProgressControl_BP_C")
 	}
 	static class UBTS_PositionProgressControl_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PositionProgressControl_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_PositionProgressControl_BP_C) == 0x000008, "Wrong alignment on UBTS_PositionProgressControl_BP_C");
-static_assert(sizeof(UBTS_PositionProgressControl_BP_C) == 0x000198, "Wrong size on UBTS_PositionProgressControl_BP_C");
+DUMPER7_ASSERTS_UBTS_PositionProgressControl_BP_C;
 
 }
 

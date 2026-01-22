@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BreakIce_Main.PyWidget_BreakIce_Main
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_BreakIce_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_Main">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_Main")
 	}
 	static class UPyWidget_BreakIce_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_Main) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_Main");
-static_assert(sizeof(UPyWidget_BreakIce_Main) == 0x0005F8, "Wrong size on UPyWidget_BreakIce_Main");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_Main;
 
 }
 

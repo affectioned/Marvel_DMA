@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_401904.PyAbility_401904
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_401904 : public UAbility_108
 {
 public:
@@ -35,23 +35,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_401904">();
+		STATIC_CLASS_IMPL("PyAbility_401904")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_401904")
 	}
 	static class UPyAbility_401904* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_401904>();
 	}
 };
-static_assert(alignof(UPyAbility_401904) == 0x000008, "Wrong alignment on UPyAbility_401904");
-static_assert(sizeof(UPyAbility_401904) == 0x0029F8, "Wrong size on UPyAbility_401904");
+DUMPER7_ASSERTS_UPyAbility_401904;
 
 // PythonClass PyAbility_401904.PyCue_Ability_40190401
-// 0x0020 (0x11D0 - 0x11B0)
+// 0x0020 (0x11E0 - 0x11C0)
 class APyCue_Ability_40190401 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UNiagaraSystem*                         ChessSpawnFX;                                      // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                SpawnFXScale;                                      // 0x11B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         ChessSpawnFX;                                      // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                SpawnFXScale;                                      // 0x11C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -60,17 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_40190401">();
+		STATIC_CLASS_IMPL("PyCue_Ability_40190401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_40190401")
 	}
 	static class APyCue_Ability_40190401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_40190401>();
 	}
 };
-static_assert(alignof(APyCue_Ability_40190401) == 0x000010, "Wrong alignment on APyCue_Ability_40190401");
-static_assert(sizeof(APyCue_Ability_40190401) == 0x0011D0, "Wrong size on APyCue_Ability_40190401");
-static_assert(offsetof(APyCue_Ability_40190401, ChessSpawnFX) == 0x0011B0, "Member 'APyCue_Ability_40190401::ChessSpawnFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_40190401, SpawnFXScale) == 0x0011B8, "Member 'APyCue_Ability_40190401::SpawnFXScale' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_40190401;
 
 }
 

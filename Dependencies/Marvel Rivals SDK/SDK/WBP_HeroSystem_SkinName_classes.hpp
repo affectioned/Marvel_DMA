@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeroSystem_SkinName_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeroSystem_SkinName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeroSystem_SkinName_C")
 	}
 	static class UWBP_HeroSystem_SkinName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeroSystem_SkinName_C>();
 	}
 };
-static_assert(alignof(UWBP_HeroSystem_SkinName_C) == 0x000008, "Wrong alignment on UWBP_HeroSystem_SkinName_C");
-static_assert(sizeof(UWBP_HeroSystem_SkinName_C) == 0x000408, "Wrong size on UWBP_HeroSystem_SkinName_C");
-static_assert(offsetof(UWBP_HeroSystem_SkinName_C, SizeBox_SkinName) == 0x0003E8, "Member 'UWBP_HeroSystem_SkinName_C::SizeBox_SkinName' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroSystem_SkinName_C, Text_FixedLength) == 0x0003F0, "Member 'UWBP_HeroSystem_SkinName_C::Text_FixedLength' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroSystem_SkinName_C, Text_SkinName) == 0x0003F8, "Member 'UWBP_HeroSystem_SkinName_C::Text_SkinName' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroSystem_SkinName_C, Text_SkinNameBg) == 0x000400, "Member 'UWBP_HeroSystem_SkinName_C::Text_SkinNameBg' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeroSystem_SkinName_C;
 
 }
 

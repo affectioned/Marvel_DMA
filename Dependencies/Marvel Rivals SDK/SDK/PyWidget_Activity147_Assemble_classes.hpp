@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_Assemble.PyWidget_Activity147_Assemble
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity147_Assemble final : public UPyMarvelUserWidget
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Assemble">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Assemble")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Assemble")
 	}
 	static class UPyWidget_Activity147_Assemble* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Assemble>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Assemble) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Assemble");
-static_assert(sizeof(UPyWidget_Activity147_Assemble) == 0x0005C0, "Wrong size on UPyWidget_Activity147_Assemble");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Assemble;
 
 // PythonClass PyWidget_Activity147_Assemble.Activity147AssembleObject
 // 0x0000 (0x0030 - 0x0030)
@@ -47,23 +50,26 @@ class UActivity147AssembleObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Activity147AssembleObject">();
+		STATIC_CLASS_IMPL("Activity147AssembleObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Activity147AssembleObject")
 	}
 	static class UActivity147AssembleObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivity147AssembleObject>();
 	}
 };
-static_assert(alignof(UActivity147AssembleObject) == 0x000008, "Wrong alignment on UActivity147AssembleObject");
-static_assert(sizeof(UActivity147AssembleObject) == 0x000030, "Wrong size on UActivity147AssembleObject");
+DUMPER7_ASSERTS_UActivity147AssembleObject;
 
 // PythonClass PyWidget_Activity147_Assemble.PyWidget_Activity147_AssembleEntry
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Activity147_AssembleEntry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                ItemObject;                                        // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                ItemObject;                                        // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,16 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_AssembleEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_AssembleEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_AssembleEntry")
 	}
 	static class UPyWidget_Activity147_AssembleEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_AssembleEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_AssembleEntry) == 0x000008, "Wrong alignment on UPyWidget_Activity147_AssembleEntry");
-static_assert(sizeof(UPyWidget_Activity147_AssembleEntry) == 0x0005C8, "Wrong size on UPyWidget_Activity147_AssembleEntry");
-static_assert(offsetof(UPyWidget_Activity147_AssembleEntry, ItemObject) == 0x0005C0, "Member 'UPyWidget_Activity147_AssembleEntry::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_AssembleEntry;
 
 }
 

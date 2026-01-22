@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityModifier_10234401">();
+		STATIC_CLASS_IMPL("PyAbilityModifier_10234401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityModifier_10234401")
 	}
 	static class UPyAbilityModifier_10234401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityModifier_10234401>();
 	}
 };
-static_assert(alignof(UPyAbilityModifier_10234401) == 0x000008, "Wrong alignment on UPyAbilityModifier_10234401");
-static_assert(sizeof(UPyAbilityModifier_10234401) == 0x000040, "Wrong size on UPyAbilityModifier_10234401");
-static_assert(offsetof(UPyAbilityModifier_10234401, ModifiedAbilityCD) == 0x000038, "Member 'UPyAbilityModifier_10234401::ModifiedAbilityCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbilityModifier_10234401;
 
 // PythonClass PyEffectAbility_120_10234401.PySummonedModifier_10234401
 // 0x0008 (0x0040 - 0x0038)
@@ -55,25 +57,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedModifier_10234401">();
+		STATIC_CLASS_IMPL("PySummonedModifier_10234401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedModifier_10234401")
 	}
 	static class UPySummonedModifier_10234401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedModifier_10234401>();
 	}
 };
-static_assert(alignof(UPySummonedModifier_10234401) == 0x000008, "Wrong alignment on UPySummonedModifier_10234401");
-static_assert(sizeof(UPySummonedModifier_10234401) == 0x000040, "Wrong size on UPySummonedModifier_10234401");
-static_assert(offsetof(UPySummonedModifier_10234401, bCanRespawnOwnerCharacter) == 0x000038, "Member 'UPySummonedModifier_10234401::bCanRespawnOwnerCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedModifier_10234401;
 
 // PythonClass PyEffectAbility_120_10234401.PyEffectAbility_120_10234401
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyEffectAbility_120_10234401 final : public UMarvelEffectGameplayAbility
 {
 public:
-	class UPySummonedModifier_10234401*           RespawnModifier;                                   // 0x1370(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyAbilityModifier_10234401*            AbilityModifier;                                   // 0x1378(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxSummonedNum;                                    // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPySummonedModifier_10234401*           RespawnModifier;                                   // 0x1388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyAbilityModifier_10234401*            AbilityModifier;                                   // 0x1390(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxSummonedNum;                                    // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -82,18 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10234401">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10234401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10234401")
 	}
 	static class UPyEffectAbility_120_10234401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10234401>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10234401) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10234401");
-static_assert(sizeof(UPyEffectAbility_120_10234401) == 0x001388, "Wrong size on UPyEffectAbility_120_10234401");
-static_assert(offsetof(UPyEffectAbility_120_10234401, RespawnModifier) == 0x001370, "Member 'UPyEffectAbility_120_10234401::RespawnModifier' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10234401, AbilityModifier) == 0x001378, "Member 'UPyEffectAbility_120_10234401::AbilityModifier' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10234401, MaxSummonedNum) == 0x001380, "Member 'UPyEffectAbility_120_10234401::MaxSummonedNum' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10234401;
 
 }
 

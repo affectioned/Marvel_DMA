@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Card.PyWidget_Halloween_Card
-// 0x0070 (0x0930 - 0x08C0)
+// 0x0070 (0x0990 - 0x0920)
 class UPyWidget_Halloween_Card final : public UPyWidget_BaseCommonButton
 {
 public:
-	class FText                                   RoundTipsText;                                     // 0x08B8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BuyColor;                                          // 0x08D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SellColor;                                         // 0x08E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BuyIcon;                                           // 0x08F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SellIcon;                                          // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CurrencyEnoughColor;                               // 0x0900(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CurrencyNoEnoughColor;                             // 0x0914(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                StarWidget;                                        // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   RoundTipsText;                                     // 0x0918(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BuyColor;                                          // 0x0930(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SellColor;                                         // 0x0940(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BuyIcon;                                           // 0x0950(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SellIcon;                                          // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CurrencyEnoughColor;                               // 0x0960(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CurrencyNoEnoughColor;                             // 0x0974(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                StarWidget;                                        // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Card">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Card")
 	}
 	static class UPyWidget_Halloween_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Card) == 0x000010, "Wrong alignment on UPyWidget_Halloween_Card");
-static_assert(sizeof(UPyWidget_Halloween_Card) == 0x000930, "Wrong size on UPyWidget_Halloween_Card");
-static_assert(offsetof(UPyWidget_Halloween_Card, RoundTipsText) == 0x0008B8, "Member 'UPyWidget_Halloween_Card::RoundTipsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, BuyColor) == 0x0008D0, "Member 'UPyWidget_Halloween_Card::BuyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, SellColor) == 0x0008E0, "Member 'UPyWidget_Halloween_Card::SellColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, BuyIcon) == 0x0008F0, "Member 'UPyWidget_Halloween_Card::BuyIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, SellIcon) == 0x0008F8, "Member 'UPyWidget_Halloween_Card::SellIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, CurrencyEnoughColor) == 0x000900, "Member 'UPyWidget_Halloween_Card::CurrencyEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, CurrencyNoEnoughColor) == 0x000914, "Member 'UPyWidget_Halloween_Card::CurrencyNoEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Card, StarWidget) == 0x000928, "Member 'UPyWidget_Halloween_Card::StarWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Card;
 
 }
 

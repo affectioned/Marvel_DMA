@@ -1432,66 +1432,6 @@ class UTexture* UCompositingElementInput::GenerateInput()
 }
 
 
-// Function Composure.CompositingElementTransform.ApplyTransform
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-// class UTexture*                         Input                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UComposurePostProcessingPassProxy*PostProcessProxy                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ACameraActor*                     TargetCamera                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UTexture*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UTexture* UCompositingElementTransform::ApplyTransform(class UTexture* Input, class UComposurePostProcessingPassProxy* PostProcessProxy, class ACameraActor* TargetCamera)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CompositingElementTransform", "ApplyTransform");
-
-	Params::CompositingElementTransform_ApplyTransform Parms{};
-
-	Parms.Input = Input;
-	Parms.PostProcessProxy = PostProcessProxy;
-	Parms.TargetCamera = TargetCamera;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Composure.CompositingElementTransform.FindNamedPrePassResult
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// class FName                             PassLookupName                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UTexture*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UTexture* UCompositingElementTransform::FindNamedPrePassResult(class FName PassLookupName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CompositingElementTransform", "FindNamedPrePassResult");
-
-	Params::CompositingElementTransform_FindNamedPrePassResult Parms{};
-
-	Parms.PassLookupName = PassLookupName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function Composure.CompositingInputInterface.GenerateInput
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
@@ -1596,6 +1536,66 @@ void UCompositingElementOutput::RelayOutput(class UTexture* FinalResult, class U
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Composure.CompositingElementTransform.ApplyTransform
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+// class UTexture*                         Input                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UComposurePostProcessingPassProxy*PostProcessProxy                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ACameraActor*                     TargetCamera                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UTexture* UCompositingElementTransform::ApplyTransform(class UTexture* Input, class UComposurePostProcessingPassProxy* PostProcessProxy, class ACameraActor* TargetCamera)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CompositingElementTransform", "ApplyTransform");
+
+	Params::CompositingElementTransform_ApplyTransform Parms{};
+
+	Parms.Input = Input;
+	Parms.PostProcessProxy = PostProcessProxy;
+	Parms.TargetCamera = TargetCamera;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Composure.CompositingElementTransform.FindNamedPrePassResult
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class FName                             PassLookupName                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UTexture* UCompositingElementTransform::FindNamedPrePassResult(class FName PassLookupName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CompositingElementTransform", "FindNamedPrePassResult");
+
+	Params::CompositingElementTransform_FindNamedPrePassResult Parms{};
+
+	Parms.PassLookupName = PassLookupName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 

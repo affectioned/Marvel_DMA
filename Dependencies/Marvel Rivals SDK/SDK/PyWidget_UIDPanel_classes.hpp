@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_UIDPanel.PyWidget_UIDPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_UIDPanel : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UIDPanel">();
+		STATIC_CLASS_IMPL("PyWidget_UIDPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UIDPanel")
 	}
 	static class UPyWidget_UIDPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UIDPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_UIDPanel) == 0x000008, "Wrong alignment on UPyWidget_UIDPanel");
-static_assert(sizeof(UPyWidget_UIDPanel) == 0x0005C0, "Wrong size on UPyWidget_UIDPanel");
+DUMPER7_ASSERTS_UPyWidget_UIDPanel;
 
 }
 

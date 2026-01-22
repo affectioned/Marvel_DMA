@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Room_CountDown.PyWidget_League_Room_CountDown
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_League_Room_CountDown final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            TextColor_Normal;                                  // 0x05BC(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Final;                                   // 0x05D0(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TipsColor_Normal;                                  // 0x05E4(0x0014)(Edit, NativeAccessSpecifierPublic)
-	struct FLinearColor                           IconColor_Normal;                                  // 0x05F8(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           IconColor_Final;                                   // 0x0608(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Need_Animation_Time;                               // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61C[0x4];                                      // 0x061C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             PromptBgMRC;                                       // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PromptBoxMRC;                                      // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PromptBgClash;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             PromptBoxClash;                                    // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            TextColor_Normal;                                  // 0x05C4(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Final;                                   // 0x05D8(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TipsColor_Normal;                                  // 0x05EC(0x0014)(Edit, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IconColor_Normal;                                  // 0x0600(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IconColor_Final;                                   // 0x0610(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Need_Animation_Time;                               // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             PromptBgMRC;                                       // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PromptBoxMRC;                                      // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PromptBgClash;                                     // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             PromptBoxClash;                                    // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,25 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Room_CountDown">();
+		STATIC_CLASS_IMPL("PyWidget_League_Room_CountDown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Room_CountDown")
 	}
 	static class UPyWidget_League_Room_CountDown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Room_CountDown>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Room_CountDown) == 0x000008, "Wrong alignment on UPyWidget_League_Room_CountDown");
-static_assert(sizeof(UPyWidget_League_Room_CountDown) == 0x000640, "Wrong size on UPyWidget_League_Room_CountDown");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, TextColor_Normal) == 0x0005BC, "Member 'UPyWidget_League_Room_CountDown::TextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, TextColor_Final) == 0x0005D0, "Member 'UPyWidget_League_Room_CountDown::TextColor_Final' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, TipsColor_Normal) == 0x0005E4, "Member 'UPyWidget_League_Room_CountDown::TipsColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, IconColor_Normal) == 0x0005F8, "Member 'UPyWidget_League_Room_CountDown::IconColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, IconColor_Final) == 0x000608, "Member 'UPyWidget_League_Room_CountDown::IconColor_Final' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, Need_Animation_Time) == 0x000618, "Member 'UPyWidget_League_Room_CountDown::Need_Animation_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, PromptBgMRC) == 0x000620, "Member 'UPyWidget_League_Room_CountDown::PromptBgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, PromptBoxMRC) == 0x000628, "Member 'UPyWidget_League_Room_CountDown::PromptBoxMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, PromptBgClash) == 0x000630, "Member 'UPyWidget_League_Room_CountDown::PromptBgClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Room_CountDown, PromptBoxClash) == 0x000638, "Member 'UPyWidget_League_Room_CountDown::PromptBoxClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Room_CountDown;
 
 }
 

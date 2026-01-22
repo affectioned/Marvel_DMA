@@ -36,25 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelModeCommonAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelModeCommonAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelModeCommonAudioItem")
 	}
 	static class UPyLevelModeCommonAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelModeCommonAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelModeCommonAudioItem) == 0x000008, "Wrong alignment on UPyLevelModeCommonAudioItem");
-static_assert(sizeof(UPyLevelModeCommonAudioItem) == 0x0000D8, "Wrong size on UPyLevelModeCommonAudioItem");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, SelectStage) == 0x000038, "Member 'UPyLevelModeCommonAudioItem::SelectStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, UISelectStage) == 0x000048, "Member 'UPyLevelModeCommonAudioItem::UISelectStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, PrepareStage) == 0x000058, "Member 'UPyLevelModeCommonAudioItem::PrepareStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, UIPrepareStage) == 0x000068, "Member 'UPyLevelModeCommonAudioItem::UIPrepareStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, RpcFightStart) == 0x000078, "Member 'UPyLevelModeCommonAudioItem::RpcFightStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, FightStage) == 0x000088, "Member 'UPyLevelModeCommonAudioItem::FightStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, UIFightStage) == 0x000098, "Member 'UPyLevelModeCommonAudioItem::UIFightStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, OverTimeStage) == 0x0000A8, "Member 'UPyLevelModeCommonAudioItem::OverTimeStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, GameResult) == 0x0000B8, "Member 'UPyLevelModeCommonAudioItem::GameResult' has a wrong offset!");
-static_assert(offsetof(UPyLevelModeCommonAudioItem, DrawResult) == 0x0000C8, "Member 'UPyLevelModeCommonAudioItem::DrawResult' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelModeCommonAudioItem;
 
 // PythonClass PyAudioItemConfig.PyLevelTDMArcadeAudioItem
 // 0x00D0 (0x01A8 - 0x00D8)
@@ -78,28 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTDMArcadeAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelTDMArcadeAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTDMArcadeAudioItem")
 	}
 	static class UPyLevelTDMArcadeAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTDMArcadeAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelTDMArcadeAudioItem) == 0x000008, "Wrong alignment on UPyLevelTDMArcadeAudioItem");
-static_assert(sizeof(UPyLevelTDMArcadeAudioItem) == 0x0001A8, "Wrong size on UPyLevelTDMArcadeAudioItem");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, PickupEnemyCrystal) == 0x0000D8, "Member 'UPyLevelTDMArcadeAudioItem::PickupEnemyCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, PickupAllyCrystal) == 0x0000E8, "Member 'UPyLevelTDMArcadeAudioItem::PickupAllyCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, MultiKillAudio) == 0x0000F8, "Member 'UPyLevelTDMArcadeAudioItem::MultiKillAudio' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, SuddenlyDeath) == 0x000108, "Member 'UPyLevelTDMArcadeAudioItem::SuddenlyDeath' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, TripleLevel) == 0x000118, "Member 'UPyLevelTDMArcadeAudioItem::TripleLevel' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, TripleLevelKill) == 0x000128, "Member 'UPyLevelTDMArcadeAudioItem::TripleLevelKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, PlayerGetHalfScore) == 0x000138, "Member 'UPyLevelTDMArcadeAudioItem::PlayerGetHalfScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, PlayerGetOneFifthScore) == 0x000148, "Member 'UPyLevelTDMArcadeAudioItem::PlayerGetOneFifthScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, TeamGetHalfScore) == 0x000158, "Member 'UPyLevelTDMArcadeAudioItem::TeamGetHalfScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, PlayerGetMatchPoint) == 0x000168, "Member 'UPyLevelTDMArcadeAudioItem::PlayerGetMatchPoint' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, LastOneTenthStage) == 0x000178, "Member 'UPyLevelTDMArcadeAudioItem::LastOneTenthStage' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, GainAdvantage) == 0x000188, "Member 'UPyLevelTDMArcadeAudioItem::GainAdvantage' has a wrong offset!");
-static_assert(offsetof(UPyLevelTDMArcadeAudioItem, LostAdvantage) == 0x000198, "Member 'UPyLevelTDMArcadeAudioItem::LostAdvantage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelTDMArcadeAudioItem;
 
 // PythonClass PyAudioItemConfig.PyLevelWinterFestivalAudioItem
 // 0x0090 (0x0168 - 0x00D8)
@@ -119,24 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelWinterFestivalAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelWinterFestivalAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelWinterFestivalAudioItem")
 	}
 	static class UPyLevelWinterFestivalAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelWinterFestivalAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelWinterFestivalAudioItem) == 0x000008, "Wrong alignment on UPyLevelWinterFestivalAudioItem");
-static_assert(sizeof(UPyLevelWinterFestivalAudioItem) == 0x000168, "Wrong size on UPyLevelWinterFestivalAudioItem");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, RoundStart) == 0x0000D8, "Member 'UPyLevelWinterFestivalAudioItem::RoundStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, RoundStartAudio) == 0x0000E8, "Member 'UPyLevelWinterFestivalAudioItem::RoundStartAudio' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, Remaining2Mins) == 0x0000F8, "Member 'UPyLevelWinterFestivalAudioItem::Remaining2Mins' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, Remaining30Sec) == 0x000108, "Member 'UPyLevelWinterFestivalAudioItem::Remaining30Sec' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, Remaining30SecAudio) == 0x000118, "Member 'UPyLevelWinterFestivalAudioItem::Remaining30SecAudio' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, Remaining5SecAudio) == 0x000128, "Member 'UPyLevelWinterFestivalAudioItem::Remaining5SecAudio' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, BattleEndAudio) == 0x000138, "Member 'UPyLevelWinterFestivalAudioItem::BattleEndAudio' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, LeadingTheEnemy) == 0x000148, "Member 'UPyLevelWinterFestivalAudioItem::LeadingTheEnemy' has a wrong offset!");
-static_assert(offsetof(UPyLevelWinterFestivalAudioItem, BehideTheEnemy) == 0x000158, "Member 'UPyLevelWinterFestivalAudioItem::BehideTheEnemy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelWinterFestivalAudioItem;
 
 // PythonClass PyAudioItemConfig.PyLevelSpringFestivalAudioItem
 // 0x0120 (0x01F8 - 0x00D8)
@@ -168,35 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSpringFestivalAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelSpringFestivalAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSpringFestivalAudioItem")
 	}
 	static class UPyLevelSpringFestivalAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSpringFestivalAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelSpringFestivalAudioItem) == 0x000008, "Wrong alignment on UPyLevelSpringFestivalAudioItem");
-static_assert(sizeof(UPyLevelSpringFestivalAudioItem) == 0x0001F8, "Wrong size on UPyLevelSpringFestivalAudioItem");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, AllyGoalOne) == 0x0000D8, "Member 'UPyLevelSpringFestivalAudioItem::AllyGoalOne' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, EnemyGoalOne) == 0x0000E8, "Member 'UPyLevelSpringFestivalAudioItem::EnemyGoalOne' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, AllyGoalThree) == 0x0000F8, "Member 'UPyLevelSpringFestivalAudioItem::AllyGoalThree' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, EnemyGoalThree) == 0x000108, "Member 'UPyLevelSpringFestivalAudioItem::EnemyGoalThree' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, Only30SecondsLeft) == 0x000118, "Member 'UPyLevelSpringFestivalAudioItem::Only30SecondsLeft' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, Only10SecondsLeft) == 0x000128, "Member 'UPyLevelSpringFestivalAudioItem::Only10SecondsLeft' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, RoundStart) == 0x000138, "Member 'UPyLevelSpringFestivalAudioItem::RoundStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, AllyNear2Win) == 0x000148, "Member 'UPyLevelSpringFestivalAudioItem::AllyNear2Win' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, EnemyNear2Win) == 0x000158, "Member 'UPyLevelSpringFestivalAudioItem::EnemyNear2Win' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, TimeOut) == 0x000168, "Member 'UPyLevelSpringFestivalAudioItem::TimeOut' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, GameOver) == 0x000178, "Member 'UPyLevelSpringFestivalAudioItem::GameOver' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, SelfGotBall) == 0x000188, "Member 'UPyLevelSpringFestivalAudioItem::SelfGotBall' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, GotLongPass) == 0x000198, "Member 'UPyLevelSpringFestivalAudioItem::GotLongPass' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, AllyHoldOver4SecBeTackled) == 0x0001A8, "Member 'UPyLevelSpringFestivalAudioItem::AllyHoldOver4SecBeTackled' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, EnemyHoldOver4SecBeTackled) == 0x0001B8, "Member 'UPyLevelSpringFestivalAudioItem::EnemyHoldOver4SecBeTackled' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, BackgroudCrowd) == 0x0001C8, "Member 'UPyLevelSpringFestivalAudioItem::BackgroudCrowd' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, CrowdUpdateInterval) == 0x0001D8, "Member 'UPyLevelSpringFestivalAudioItem::CrowdUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, CrowdRTPCKey) == 0x0001E0, "Member 'UPyLevelSpringFestivalAudioItem::CrowdRTPCKey' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, CrowdRTPCMin) == 0x0001F0, "Member 'UPyLevelSpringFestivalAudioItem::CrowdRTPCMin' has a wrong offset!");
-static_assert(offsetof(UPyLevelSpringFestivalAudioItem, CrowdRTPCMax) == 0x0001F4, "Member 'UPyLevelSpringFestivalAudioItem::CrowdRTPCMax' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelSpringFestivalAudioItem;
 
 }
 

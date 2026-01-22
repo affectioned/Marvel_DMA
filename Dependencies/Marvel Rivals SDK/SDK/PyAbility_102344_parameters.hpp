@@ -23,20 +23,16 @@ struct PyEffectiveComponent_10234401_K2_OnPostApplyContainer final
 public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyEffectiveComponent_10234401_K2_OnPostApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10234401_K2_OnPostApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10234401_K2_OnPostApplyContainer) == 0x000010, "Wrong size on PyEffectiveComponent_10234401_K2_OnPostApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10234401_K2_OnPostApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10234401_K2_OnPostApplyContainer::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10234401_K2_OnPostApplyContainer;
 
 // PythonFunction PyAbility_102344.PySummonedComp_10234401.OnProjectileStop
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PySummonedComp_10234401_OnProjectileStop final
 {
 public:
-	struct FHitResult                             hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummonedComp_10234401_OnProjectileStop) == 0x000008, "Wrong alignment on PySummonedComp_10234401_OnProjectileStop");
-static_assert(sizeof(PySummonedComp_10234401_OnProjectileStop) == 0x0001F0, "Wrong size on PySummonedComp_10234401_OnProjectileStop");
-static_assert(offsetof(PySummonedComp_10234401_OnProjectileStop, hit) == 0x000000, "Member 'PySummonedComp_10234401_OnProjectileStop::hit' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_10234401_OnProjectileStop;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetSpiderMoveSpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyConfig_102344_GetSpiderMoveSpeed final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetSpiderMoveSpeed) == 0x000004, "Wrong alignment on PyConfig_102344_GetSpiderMoveSpeed");
-static_assert(sizeof(PyConfig_102344_GetSpiderMoveSpeed) == 0x000004, "Wrong size on PyConfig_102344_GetSpiderMoveSpeed");
-static_assert(offsetof(PyConfig_102344_GetSpiderMoveSpeed, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetSpiderMoveSpeed::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetSpiderMoveSpeed;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetIsRandomProjectile
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyConfig_102344_GetIsRandomProjectile final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetIsRandomProjectile) == 0x000001, "Wrong alignment on PyConfig_102344_GetIsRandomProjectile");
-static_assert(sizeof(PyConfig_102344_GetIsRandomProjectile) == 0x000001, "Wrong size on PyConfig_102344_GetIsRandomProjectile");
-static_assert(offsetof(PyConfig_102344_GetIsRandomProjectile, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetIsRandomProjectile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetIsRandomProjectile;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetSpiderProjectileSpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -67,9 +59,7 @@ struct PyConfig_102344_GetSpiderProjectileSpeed final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetSpiderProjectileSpeed) == 0x000004, "Wrong alignment on PyConfig_102344_GetSpiderProjectileSpeed");
-static_assert(sizeof(PyConfig_102344_GetSpiderProjectileSpeed) == 0x000004, "Wrong size on PyConfig_102344_GetSpiderProjectileSpeed");
-static_assert(offsetof(PyConfig_102344_GetSpiderProjectileSpeed, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetSpiderProjectileSpeed::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetSpiderProjectileSpeed;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetRandomSpiderProjectileSpeedMin
 // 0x0004 (0x0004 - 0x0000)
@@ -78,9 +68,7 @@ struct PyConfig_102344_GetRandomSpiderProjectileSpeedMin final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetRandomSpiderProjectileSpeedMin) == 0x000004, "Wrong alignment on PyConfig_102344_GetRandomSpiderProjectileSpeedMin");
-static_assert(sizeof(PyConfig_102344_GetRandomSpiderProjectileSpeedMin) == 0x000004, "Wrong size on PyConfig_102344_GetRandomSpiderProjectileSpeedMin");
-static_assert(offsetof(PyConfig_102344_GetRandomSpiderProjectileSpeedMin, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetRandomSpiderProjectileSpeedMin::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetRandomSpiderProjectileSpeedMin;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetRandomSpiderProjectileSpeedMax
 // 0x0004 (0x0004 - 0x0000)
@@ -89,9 +77,7 @@ struct PyConfig_102344_GetRandomSpiderProjectileSpeedMax final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetRandomSpiderProjectileSpeedMax) == 0x000004, "Wrong alignment on PyConfig_102344_GetRandomSpiderProjectileSpeedMax");
-static_assert(sizeof(PyConfig_102344_GetRandomSpiderProjectileSpeedMax) == 0x000004, "Wrong size on PyConfig_102344_GetRandomSpiderProjectileSpeedMax");
-static_assert(offsetof(PyConfig_102344_GetRandomSpiderProjectileSpeedMax, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetRandomSpiderProjectileSpeedMax::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetRandomSpiderProjectileSpeedMax;
 
 // PythonFunction PyAbility_102344.PyConfig_102344.GetSpiderProjectileGravityScale
 // 0x0004 (0x0004 - 0x0000)
@@ -100,9 +86,7 @@ struct PyConfig_102344_GetSpiderProjectileGravityScale final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyConfig_102344_GetSpiderProjectileGravityScale) == 0x000004, "Wrong alignment on PyConfig_102344_GetSpiderProjectileGravityScale");
-static_assert(sizeof(PyConfig_102344_GetSpiderProjectileGravityScale) == 0x000004, "Wrong size on PyConfig_102344_GetSpiderProjectileGravityScale");
-static_assert(offsetof(PyConfig_102344_GetSpiderProjectileGravityScale, ReturnValue) == 0x000000, "Member 'PyConfig_102344_GetSpiderProjectileGravityScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyConfig_102344_GetSpiderProjectileGravityScale;
 
 }
 

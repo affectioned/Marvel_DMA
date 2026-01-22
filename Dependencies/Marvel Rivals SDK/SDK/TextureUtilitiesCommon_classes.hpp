@@ -31,20 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TextureImportSettings">();
+		STATIC_CLASS_IMPL("TextureImportSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextureImportSettings")
 	}
 	static class UTextureImportSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextureImportSettings>();
 	}
 };
-static_assert(alignof(UTextureImportSettings) == 0x000008, "Wrong alignment on UTextureImportSettings");
-static_assert(sizeof(UTextureImportSettings) == 0x000050, "Wrong size on UTextureImportSettings");
-static_assert(offsetof(UTextureImportSettings, AutoVTSize) == 0x000048, "Member 'UTextureImportSettings::AutoVTSize' has a wrong offset!");
-static_assert(offsetof(UTextureImportSettings, bEnableNormalizeNormals) == 0x00004C, "Member 'UTextureImportSettings::bEnableNormalizeNormals' has a wrong offset!");
-static_assert(offsetof(UTextureImportSettings, bEnableFastMipFilter) == 0x00004D, "Member 'UTextureImportSettings::bEnableFastMipFilter' has a wrong offset!");
-static_assert(offsetof(UTextureImportSettings, CompressedFormatForFloatTextures) == 0x00004E, "Member 'UTextureImportSettings::CompressedFormatForFloatTextures' has a wrong offset!");
-static_assert(offsetof(UTextureImportSettings, PNGInfill) == 0x00004F, "Member 'UTextureImportSettings::PNGInfill' has a wrong offset!");
+DUMPER7_ASSERTS_UTextureImportSettings;
 
 }
 

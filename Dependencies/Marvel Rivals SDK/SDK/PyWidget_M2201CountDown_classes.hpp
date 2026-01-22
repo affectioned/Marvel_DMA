@@ -27,6 +27,7 @@ public:
 	class FText                                   Text_H;                                            // 0x08A0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	class FText                                   Text_M;                                            // 0x08B8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	class FText                                   Text_S;                                            // 0x08D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Last10Seconds_AudioEvent;                          // 0x08E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201CountDown">();
+		STATIC_CLASS_IMPL("PyWidget_M2201CountDown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201CountDown")
 	}
 	static class UPyWidget_M2201CountDown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201CountDown>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201CountDown) == 0x000010, "Wrong alignment on UPyWidget_M2201CountDown");
-static_assert(sizeof(UPyWidget_M2201CountDown) == 0x0008F0, "Wrong size on UPyWidget_M2201CountDown");
-static_assert(offsetof(UPyWidget_M2201CountDown, Text_Title) == 0x000870, "Member 'UPyWidget_M2201CountDown::Text_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201CountDown, Text_DAY) == 0x000888, "Member 'UPyWidget_M2201CountDown::Text_DAY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201CountDown, Text_H) == 0x0008A0, "Member 'UPyWidget_M2201CountDown::Text_H' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201CountDown, Text_M) == 0x0008B8, "Member 'UPyWidget_M2201CountDown::Text_M' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201CountDown, Text_S) == 0x0008D0, "Member 'UPyWidget_M2201CountDown::Text_S' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_M2201CountDown;
 
 }
 

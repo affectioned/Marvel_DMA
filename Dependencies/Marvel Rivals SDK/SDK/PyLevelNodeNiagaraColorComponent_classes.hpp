@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeNiagaraColorComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeNiagaraColorComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeNiagaraColorComponent")
 	}
 	static class UPyLevelNodeNiagaraColorComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeNiagaraColorComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeNiagaraColorComponent) == 0x000008, "Wrong alignment on UPyLevelNodeNiagaraColorComponent");
-static_assert(sizeof(UPyLevelNodeNiagaraColorComponent) == 0x000158, "Wrong size on UPyLevelNodeNiagaraColorComponent");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, ReplicateState) == 0x000108, "Member 'UPyLevelNodeNiagaraColorComponent::ReplicateState' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, ActorClassPathName) == 0x000110, "Member 'UPyLevelNodeNiagaraColorComponent::ActorClassPathName' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, ParameterName) == 0x000120, "Member 'UPyLevelNodeNiagaraColorComponent::ParameterName' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, StartValue) == 0x000130, "Member 'UPyLevelNodeNiagaraColorComponent::StartValue' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, EndValue) == 0x000140, "Member 'UPyLevelNodeNiagaraColorComponent::EndValue' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, ChangeTime) == 0x000150, "Member 'UPyLevelNodeNiagaraColorComponent::ChangeTime' has a wrong offset!");
-static_assert(offsetof(UPyLevelNodeNiagaraColorComponent, UpdateInterval) == 0x000154, "Member 'UPyLevelNodeNiagaraColorComponent::UpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelNodeNiagaraColorComponent;
 
 }
 

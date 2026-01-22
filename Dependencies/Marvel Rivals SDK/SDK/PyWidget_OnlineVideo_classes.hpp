@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_OnlineVideo.PyWidget_OnlineVideo
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_OnlineVideo : public UPyWidget_ModuleMainPanel
 {
 public:
-	class FString                                 ParentName;                                        // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseAsModuleMainPanel;                              // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsExclusiveInput;                                  // 0x0609(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsFullScreenPanel;                                 // 0x060A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          StopBGMusicOnPlayVideo;                            // 0x060B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AutoReplayTimesOnFailed;                           // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ParentName;                                        // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseAsModuleMainPanel;                              // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsExclusiveInput;                                  // 0x0611(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFullScreenPanel;                                 // 0x0612(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          StopBGMusicOnPlayVideo;                            // 0x0613(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AutoReplayTimesOnFailed;                           // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_OnlineVideo">();
+		STATIC_CLASS_IMPL("PyWidget_OnlineVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_OnlineVideo")
 	}
 	static class UPyWidget_OnlineVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_OnlineVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_OnlineVideo) == 0x000008, "Wrong alignment on UPyWidget_OnlineVideo");
-static_assert(sizeof(UPyWidget_OnlineVideo) == 0x000610, "Wrong size on UPyWidget_OnlineVideo");
-static_assert(offsetof(UPyWidget_OnlineVideo, ParentName) == 0x0005F8, "Member 'UPyWidget_OnlineVideo::ParentName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_OnlineVideo, UseAsModuleMainPanel) == 0x000608, "Member 'UPyWidget_OnlineVideo::UseAsModuleMainPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_OnlineVideo, IsExclusiveInput) == 0x000609, "Member 'UPyWidget_OnlineVideo::IsExclusiveInput' has a wrong offset!");
-static_assert(offsetof(UPyWidget_OnlineVideo, IsFullScreenPanel) == 0x00060A, "Member 'UPyWidget_OnlineVideo::IsFullScreenPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_OnlineVideo, StopBGMusicOnPlayVideo) == 0x00060B, "Member 'UPyWidget_OnlineVideo::StopBGMusicOnPlayVideo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_OnlineVideo, AutoReplayTimesOnFailed) == 0x00060C, "Member 'UPyWidget_OnlineVideo::AutoReplayTimesOnFailed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_OnlineVideo;
 
 }
 

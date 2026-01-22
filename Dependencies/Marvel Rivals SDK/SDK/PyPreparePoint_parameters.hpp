@@ -22,10 +22,7 @@ public:
 	int32                                         HalloweenState;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         WaveIndex_0;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPreparePoint_OnHalloweenStateChanged) == 0x000004, "Wrong alignment on PyPreparePoint_OnHalloweenStateChanged");
-static_assert(sizeof(PyPreparePoint_OnHalloweenStateChanged) == 0x000008, "Wrong size on PyPreparePoint_OnHalloweenStateChanged");
-static_assert(offsetof(PyPreparePoint_OnHalloweenStateChanged, HalloweenState) == 0x000000, "Member 'PyPreparePoint_OnHalloweenStateChanged::HalloweenState' has a wrong offset!");
-static_assert(offsetof(PyPreparePoint_OnHalloweenStateChanged, WaveIndex_0) == 0x000004, "Member 'PyPreparePoint_OnHalloweenStateChanged::WaveIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyPreparePoint_OnHalloweenStateChanged;
 
 // PythonFunction PyPreparePoint.PyPreparePoint.OnPlayerEnetered
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +31,7 @@ struct PyPreparePoint_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPreparePoint_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyPreparePoint_OnPlayerEnetered");
-static_assert(sizeof(PyPreparePoint_OnPlayerEnetered) == 0x000008, "Wrong size on PyPreparePoint_OnPlayerEnetered");
-static_assert(offsetof(PyPreparePoint_OnPlayerEnetered, actor) == 0x000000, "Member 'PyPreparePoint_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyPreparePoint_OnPlayerEnetered;
 
 // PythonFunction PyPreparePoint.PyPreparePoint.SetState
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +40,7 @@ struct PyPreparePoint_SetState final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPreparePoint_SetState) == 0x000004, "Wrong alignment on PyPreparePoint_SetState");
-static_assert(sizeof(PyPreparePoint_SetState) == 0x000004, "Wrong size on PyPreparePoint_SetState");
-static_assert(offsetof(PyPreparePoint_SetState, NewState) == 0x000000, "Member 'PyPreparePoint_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyPreparePoint_SetState;
 
 }
 

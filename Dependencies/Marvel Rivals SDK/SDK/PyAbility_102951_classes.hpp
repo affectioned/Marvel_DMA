@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102951.PyTraceComponent_10295101_Base
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10295101_Base final : public UMarvelAgentTraceComponent
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10295101_Base">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10295101_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10295101_Base")
 	}
 	static class UPyTraceComponent_10295101_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10295101_Base>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10295101_Base) == 0x000010, "Wrong alignment on UPyTraceComponent_10295101_Base");
-static_assert(sizeof(UPyTraceComponent_10295101_Base) == 0x002200, "Wrong size on UPyTraceComponent_10295101_Base");
+DUMPER7_ASSERTS_UPyTraceComponent_10295101_Base;
 
 // PythonClass PyAbility_102951.PyCue_Ability_Instant_10295101
 // 0x0008 (0x03C8 - 0x03C0)
@@ -50,17 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10295101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10295101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10295101")
 	}
 	static class UPyCue_Ability_Instant_10295101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10295101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10295101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10295101");
-static_assert(sizeof(UPyCue_Ability_Instant_10295101) == 0x0003C8, "Wrong size on UPyCue_Ability_Instant_10295101");
-static_assert(offsetof(UPyCue_Ability_Instant_10295101, ScopeID) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10295101::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10295101, DefaultScopeRadius) == 0x0003C4, "Member 'UPyCue_Ability_Instant_10295101::DefaultScopeRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10295101;
 
 }
 

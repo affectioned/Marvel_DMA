@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104892.PyCue_Buff_Loop_10489202
-// 0x0010 (0x1650 - 0x1640)
+// 0x0010 (0x1700 - 0x16F0)
 class APyCue_Buff_Loop_10489202 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           BuffTag;                                           // 0x1640(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           BuffTag;                                           // 0x16F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10489202">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10489202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10489202")
 	}
 	static class APyCue_Buff_Loop_10489202* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10489202>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10489202) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10489202");
-static_assert(sizeof(APyCue_Buff_Loop_10489202) == 0x001650, "Wrong size on APyCue_Buff_Loop_10489202");
-static_assert(offsetof(APyCue_Buff_Loop_10489202, BuffTag) == 0x001640, "Member 'APyCue_Buff_Loop_10489202::BuffTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10489202;
 
 }
 

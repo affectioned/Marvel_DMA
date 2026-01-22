@@ -33,21 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRoundConfig">();
+		STATIC_CLASS_IMPL("PyRoundConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRoundConfig")
 	}
 	static class UPyRoundConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRoundConfig>();
 	}
 };
-static_assert(alignof(UPyRoundConfig) == 0x000008, "Wrong alignment on UPyRoundConfig");
-static_assert(sizeof(UPyRoundConfig) == 0x000090, "Wrong size on UPyRoundConfig");
-static_assert(offsetof(UPyRoundConfig, SelectHeroTime) == 0x000030, "Member 'UPyRoundConfig::SelectHeroTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundConfig, PrePareTime) == 0x000034, "Member 'UPyRoundConfig::PrePareTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundConfig, Countdown) == 0x000038, "Member 'UPyRoundConfig::Countdown' has a wrong offset!");
-static_assert(offsetof(UPyRoundConfig, bCountdownExactly) == 0x000039, "Member 'UPyRoundConfig::bCountdownExactly' has a wrong offset!");
-static_assert(offsetof(UPyRoundConfig, RemainingTime) == 0x00003C, "Member 'UPyRoundConfig::RemainingTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundConfig, PrepareBuffIds) == 0x000040, "Member 'UPyRoundConfig::PrepareBuffIds' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRoundConfig;
 
 // PythonClass PyRoundRuleComponent.PyControlRoundConfig
 // 0x0008 (0x0098 - 0x0090)
@@ -60,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlRoundConfig">();
+		STATIC_CLASS_IMPL("PyControlRoundConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlRoundConfig")
 	}
 	static class UPyControlRoundConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlRoundConfig>();
 	}
 };
-static_assert(alignof(UPyControlRoundConfig) == 0x000008, "Wrong alignment on UPyControlRoundConfig");
-static_assert(sizeof(UPyControlRoundConfig) == 0x000098, "Wrong size on UPyControlRoundConfig");
-static_assert(offsetof(UPyControlRoundConfig, VictoryRaisingSpeed) == 0x000090, "Member 'UPyControlRoundConfig::VictoryRaisingSpeed' has a wrong offset!");
-static_assert(offsetof(UPyControlRoundConfig, VictoryProgressMax) == 0x000094, "Member 'UPyControlRoundConfig::VictoryProgressMax' has a wrong offset!");
+DUMPER7_ASSERTS_UPyControlRoundConfig;
 
 // PythonClass PyRoundRuleComponent.PyRoundRuleComponent
 // 0x0070 (0x0178 - 0x0108)
@@ -95,23 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRoundRuleComponent">();
+		STATIC_CLASS_IMPL("PyRoundRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRoundRuleComponent")
 	}
 	static class UPyRoundRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRoundRuleComponent>();
 	}
 };
-static_assert(alignof(UPyRoundRuleComponent) == 0x000008, "Wrong alignment on UPyRoundRuleComponent");
-static_assert(sizeof(UPyRoundRuleComponent) == 0x000178, "Wrong size on UPyRoundRuleComponent");
-static_assert(offsetof(UPyRoundRuleComponent, SelectHeroTime) == 0x000108, "Member 'UPyRoundRuleComponent::SelectHeroTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, PrePareTime) == 0x00010C, "Member 'UPyRoundRuleComponent::PrePareTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, Countdown) == 0x000110, "Member 'UPyRoundRuleComponent::Countdown' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, bCountdownExactly) == 0x000111, "Member 'UPyRoundRuleComponent::bCountdownExactly' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, RemainingTime) == 0x000114, "Member 'UPyRoundRuleComponent::RemainingTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, PauseRemainingTime) == 0x000118, "Member 'UPyRoundRuleComponent::PauseRemainingTime' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, PrepareBuffIds) == 0x000120, "Member 'UPyRoundRuleComponent::PrepareBuffIds' has a wrong offset!");
-static_assert(offsetof(UPyRoundRuleComponent, VictoryProgressMax) == 0x000170, "Member 'UPyRoundRuleComponent::VictoryProgressMax' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRoundRuleComponent;
 
 }
 

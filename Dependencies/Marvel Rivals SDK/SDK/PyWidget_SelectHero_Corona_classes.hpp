@@ -17,35 +17,35 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_Corona.PyWidget_SelectHero_Corona
-// 0x0088 (0x0648 - 0x05C0)
+// 0x0088 (0x0650 - 0x05C8)
 class UPyWidget_SelectHero_Corona : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnSelectBanPickHero;                               // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	float                                         WheelTopExtraAngle;                                // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WheelBottomExtraAngle;                             // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinVisibleAngle;                                   // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxVisibleAngle;                                   // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinInteractAngle;                                  // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxInteractAngle;                                  // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         QuadrantXOffset;                                   // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CoronaLocateOffsetAngle;                           // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimReboundRotateUpdateTime;                       // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimRerollRotateAngleStep;                         // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimRerollRotateUpdateTime;                        // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReRollTriggerStep;                                 // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimFadeInAngleOffset;                             // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimFadeUpdateTime;                                // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimFirstFadeInSpeed;                              // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimFadeInFirstDelayTime;                          // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimFadeInDelayTime;                               // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AnimExpandSpeed;                                   // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            MouseDragCurve;                                    // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ReboundCurve;                                      // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ReRollCurve;                                       // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FadeInRotateCurve;                                 // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 HeroID)>  OnLocalPreviewBanPickHero;                         // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnSelectBanPickHero;                               // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         WheelTopExtraAngle;                                // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelBottomExtraAngle;                             // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinVisibleAngle;                                   // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxVisibleAngle;                                   // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinInteractAngle;                                  // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxInteractAngle;                                  // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         QuadrantXOffset;                                   // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CoronaLocateOffsetAngle;                           // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimReboundRotateUpdateTime;                       // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimRerollRotateAngleStep;                         // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimRerollRotateUpdateTime;                        // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReRollTriggerStep;                                 // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimFadeInAngleOffset;                             // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimFadeUpdateTime;                                // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimFirstFadeInSpeed;                              // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimFadeInFirstDelayTime;                          // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimFadeInDelayTime;                               // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AnimExpandSpeed;                                   // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            MouseDragCurve;                                    // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ReboundCurve;                                      // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ReRollCurve;                                       // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FadeInRotateCurve;                                 // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 HeroID)>  OnLocalPreviewBanPickHero;                         // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,39 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_Corona">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_Corona")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_Corona")
 	}
 	static class UPyWidget_SelectHero_Corona* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_Corona>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_Corona) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_Corona");
-static_assert(sizeof(UPyWidget_SelectHero_Corona) == 0x000648, "Wrong size on UPyWidget_SelectHero_Corona");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, OnSelectBanPickHero) == 0x0005C0, "Member 'UPyWidget_SelectHero_Corona::OnSelectBanPickHero' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, WheelTopExtraAngle) == 0x0005D0, "Member 'UPyWidget_SelectHero_Corona::WheelTopExtraAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, WheelBottomExtraAngle) == 0x0005D4, "Member 'UPyWidget_SelectHero_Corona::WheelBottomExtraAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, MinVisibleAngle) == 0x0005D8, "Member 'UPyWidget_SelectHero_Corona::MinVisibleAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, MaxVisibleAngle) == 0x0005DC, "Member 'UPyWidget_SelectHero_Corona::MaxVisibleAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, MinInteractAngle) == 0x0005E0, "Member 'UPyWidget_SelectHero_Corona::MinInteractAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, MaxInteractAngle) == 0x0005E4, "Member 'UPyWidget_SelectHero_Corona::MaxInteractAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, QuadrantXOffset) == 0x0005E8, "Member 'UPyWidget_SelectHero_Corona::QuadrantXOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, CoronaLocateOffsetAngle) == 0x0005EC, "Member 'UPyWidget_SelectHero_Corona::CoronaLocateOffsetAngle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimReboundRotateUpdateTime) == 0x0005F0, "Member 'UPyWidget_SelectHero_Corona::AnimReboundRotateUpdateTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimRerollRotateAngleStep) == 0x0005F4, "Member 'UPyWidget_SelectHero_Corona::AnimRerollRotateAngleStep' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimRerollRotateUpdateTime) == 0x0005F8, "Member 'UPyWidget_SelectHero_Corona::AnimRerollRotateUpdateTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, ReRollTriggerStep) == 0x0005FC, "Member 'UPyWidget_SelectHero_Corona::ReRollTriggerStep' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimFadeInAngleOffset) == 0x000600, "Member 'UPyWidget_SelectHero_Corona::AnimFadeInAngleOffset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimFadeUpdateTime) == 0x000604, "Member 'UPyWidget_SelectHero_Corona::AnimFadeUpdateTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimFirstFadeInSpeed) == 0x000608, "Member 'UPyWidget_SelectHero_Corona::AnimFirstFadeInSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimFadeInFirstDelayTime) == 0x00060C, "Member 'UPyWidget_SelectHero_Corona::AnimFadeInFirstDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimFadeInDelayTime) == 0x000610, "Member 'UPyWidget_SelectHero_Corona::AnimFadeInDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, AnimExpandSpeed) == 0x000614, "Member 'UPyWidget_SelectHero_Corona::AnimExpandSpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, MouseDragCurve) == 0x000618, "Member 'UPyWidget_SelectHero_Corona::MouseDragCurve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, ReboundCurve) == 0x000620, "Member 'UPyWidget_SelectHero_Corona::ReboundCurve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, ReRollCurve) == 0x000628, "Member 'UPyWidget_SelectHero_Corona::ReRollCurve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, FadeInRotateCurve) == 0x000630, "Member 'UPyWidget_SelectHero_Corona::FadeInRotateCurve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_Corona, OnLocalPreviewBanPickHero) == 0x000638, "Member 'UPyWidget_SelectHero_Corona::OnLocalPreviewBanPickHero' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_Corona;
 
 }
 

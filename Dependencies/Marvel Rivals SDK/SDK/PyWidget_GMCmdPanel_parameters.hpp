@@ -22,10 +22,7 @@ public:
 	class FString                                 Cmd;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CmdName;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmdPanel_OnCommand) == 0x000008, "Wrong alignment on PyWidget_GMCmdPanel_OnCommand");
-static_assert(sizeof(PyWidget_GMCmdPanel_OnCommand) == 0x000020, "Wrong size on PyWidget_GMCmdPanel_OnCommand");
-static_assert(offsetof(PyWidget_GMCmdPanel_OnCommand, Cmd) == 0x000000, "Member 'PyWidget_GMCmdPanel_OnCommand::Cmd' has a wrong offset!");
-static_assert(offsetof(PyWidget_GMCmdPanel_OnCommand, CmdName) == 0x000010, "Member 'PyWidget_GMCmdPanel_OnCommand::CmdName' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmdPanel_OnCommand;
 
 // PythonFunction PyWidget_GMCmdPanel.PyWidget_GMCmdPanel.OnBroadcastCommand
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +31,7 @@ struct PyWidget_GMCmdPanel_OnBroadcastCommand final
 public:
 	class FString                                 Command;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmdPanel_OnBroadcastCommand) == 0x000008, "Wrong alignment on PyWidget_GMCmdPanel_OnBroadcastCommand");
-static_assert(sizeof(PyWidget_GMCmdPanel_OnBroadcastCommand) == 0x000010, "Wrong size on PyWidget_GMCmdPanel_OnBroadcastCommand");
-static_assert(offsetof(PyWidget_GMCmdPanel_OnBroadcastCommand, Command) == 0x000000, "Member 'PyWidget_GMCmdPanel_OnBroadcastCommand::Command' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmdPanel_OnBroadcastCommand;
 
 }
 

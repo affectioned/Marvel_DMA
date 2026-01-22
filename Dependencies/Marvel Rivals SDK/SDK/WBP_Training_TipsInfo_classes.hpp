@@ -17,31 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_TipsInfo.WBP_Training_TipsInfo_C
-// 0x0020 (0x06E0 - 0x06C0)
+// 0x0028 (0x0700 - 0x06D8)
 class UWBP_Training_TipsInfo_C final : public UPyWidget_TrainTipsInfo
 {
 public:
-	class UMarvelOverlay*                         Overlay_Bg;                                        // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_Reddot;                                       // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Txt_Tips;                                          // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                WBP_Common_KeyWidget;                              // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Bg;                                        // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_KeyWidget;                                 // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Reddot;                                       // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Txt_Tips;                                          // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                WBP_Common_KeyWidget;                              // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_TipsInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_TipsInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_TipsInfo_C")
 	}
 	static class UWBP_Training_TipsInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_TipsInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_TipsInfo_C) == 0x000008, "Wrong alignment on UWBP_Training_TipsInfo_C");
-static_assert(sizeof(UWBP_Training_TipsInfo_C) == 0x0006E0, "Wrong size on UWBP_Training_TipsInfo_C");
-static_assert(offsetof(UWBP_Training_TipsInfo_C, Overlay_Bg) == 0x0006C0, "Member 'UWBP_Training_TipsInfo_C::Overlay_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TipsInfo_C, Slot_Reddot) == 0x0006C8, "Member 'UWBP_Training_TipsInfo_C::Slot_Reddot' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TipsInfo_C, Txt_Tips) == 0x0006D0, "Member 'UWBP_Training_TipsInfo_C::Txt_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TipsInfo_C, WBP_Common_KeyWidget) == 0x0006D8, "Member 'UWBP_Training_TipsInfo_C::WBP_Common_KeyWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_TipsInfo_C;
 
 }
 

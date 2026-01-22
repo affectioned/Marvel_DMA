@@ -22,7 +22,7 @@ class UPySubVoMgr_Functional final : public UPySubVoMgrBase
 {
 public:
 	void OnSystemKillVoEnd();
-	void OnSystemVoiceEnd(const class FString& VoiceTag, const class FString& NextVoiceTag);
+	void OnSystemVoiceEnd(int32 VoiceID, const class FString& VoiceTag, const class FString& NextVoiceTag);
 	void OnAmbientTriggered(class AMarvelAmbientVoiceTrigger* Trigger, const TArray<class AActor*>& Actors);
 	void TryPostKillVo();
 	void OnPlayerKilled(const struct FAttributeModifierParameter& Param);
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgr_Functional">();
+		STATIC_CLASS_IMPL("PySubVoMgr_Functional")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgr_Functional")
 	}
 	static class UPySubVoMgr_Functional* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgr_Functional>();
 	}
 };
-static_assert(alignof(UPySubVoMgr_Functional) == 0x000008, "Wrong alignment on UPySubVoMgr_Functional");
-static_assert(sizeof(UPySubVoMgr_Functional) == 0x000108, "Wrong size on UPySubVoMgr_Functional");
+DUMPER7_ASSERTS_UPySubVoMgr_Functional;
 
 }
 

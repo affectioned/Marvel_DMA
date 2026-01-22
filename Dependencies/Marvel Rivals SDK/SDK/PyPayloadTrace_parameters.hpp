@@ -23,9 +23,7 @@ struct PyPayloadTrace_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayloadTrace_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyPayloadTrace_ReceiveEndPlay");
-static_assert(sizeof(PyPayloadTrace_ReceiveEndPlay) == 0x000001, "Wrong size on PyPayloadTrace_ReceiveEndPlay");
-static_assert(offsetof(PyPayloadTrace_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyPayloadTrace_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayloadTrace_ReceiveEndPlay;
 
 }
 

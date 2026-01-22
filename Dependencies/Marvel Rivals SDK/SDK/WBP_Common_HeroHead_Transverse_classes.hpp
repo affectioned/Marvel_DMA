@@ -17,31 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_HeroHead_Transverse.WBP_Common_HeroHead_Transverse_C
-// 0x0020 (0x0488 - 0x0468)
+// 0x0008 (0x04D8 - 0x04D0)
 class UWBP_Common_HeroHead_Transverse_C final : public UPyWidget_Common_HeroHeadTransverse
 {
 public:
-	class UMaskHeroHeadBP_C*                      EmptyMaskContent;                                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaskHeroHeadBP_C*                      ImgMaskContent;                                    // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     Panel_HeroHead_Mask;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Main;                                      // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     Panel_HeroHead_Mask;                               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_HeroHead_Transverse_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_HeroHead_Transverse_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_HeroHead_Transverse_C")
 	}
 	static class UWBP_Common_HeroHead_Transverse_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_HeroHead_Transverse_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_HeroHead_Transverse_C) == 0x000008, "Wrong alignment on UWBP_Common_HeroHead_Transverse_C");
-static_assert(sizeof(UWBP_Common_HeroHead_Transverse_C) == 0x000488, "Wrong size on UWBP_Common_HeroHead_Transverse_C");
-static_assert(offsetof(UWBP_Common_HeroHead_Transverse_C, EmptyMaskContent) == 0x000468, "Member 'UWBP_Common_HeroHead_Transverse_C::EmptyMaskContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Transverse_C, ImgMaskContent) == 0x000470, "Member 'UWBP_Common_HeroHead_Transverse_C::ImgMaskContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Transverse_C, Panel_HeroHead_Mask) == 0x000478, "Member 'UWBP_Common_HeroHead_Transverse_C::Panel_HeroHead_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_HeroHead_Transverse_C, SizeBox_Main) == 0x000480, "Member 'UWBP_Common_HeroHead_Transverse_C::SizeBox_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_HeroHead_Transverse_C;
 
 }
 

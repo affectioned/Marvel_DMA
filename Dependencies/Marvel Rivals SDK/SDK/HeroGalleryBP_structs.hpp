@@ -13,10 +13,10 @@
 #include "HeroGallery_HeroListBP_structs.hpp"
 #include "HeroGallery_InfoBP_structs.hpp"
 #include "HeroGallery_SkinBP_structs.hpp"
-#include "HeroNameLinesBP_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "HeroGallery_SkillBP_structs.hpp"
 #include "HeroGallery_AchievementBP_structs.hpp"
+#include "HeroNameLinesBP_structs.hpp"
 
 
 namespace SDK
@@ -38,16 +38,7 @@ public:
 	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<ELanguageType, struct FHeroNameLinesBP>  SpecialLineBreak_220_53BB41FC4E04780CF710ABB5065F3EFB; // 0x05C0(0x0050)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FHeroGalleryBP) == 0x000008, "Wrong alignment on FHeroGalleryBP");
-static_assert(sizeof(FHeroGalleryBP) == 0x000610, "Wrong size on FHeroGalleryBP");
-static_assert(offsetof(FHeroGalleryBP, NeedNewline_148_7C940D544BEF50D837FBC78272F729BB) == 0x000000, "Member 'FHeroGalleryBP::NeedNewline_148_7C940D544BEF50D837FBC78272F729BB' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, HeroList_205_352C9DB7439B33EC5B145299415D7760) == 0x000008, "Member 'FHeroGalleryBP::HeroList_205_352C9DB7439B33EC5B145299415D7760' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, Info_193_5F9C802F48AB9CE952D2429F7B5BF535) == 0x000288, "Member 'FHeroGalleryBP::Info_193_5F9C802F48AB9CE952D2429F7B5BF535' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, Skin_197_EB266ABB4FB61FCA6B292EBA8CB0F825) == 0x0004B0, "Member 'FHeroGalleryBP::Skin_197_EB266ABB4FB61FCA6B292EBA8CB0F825' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, Skill_200_E95868EE4CC297EE3FD856BF42387167) == 0x0004E0, "Member 'FHeroGalleryBP::Skill_200_E95868EE4CC297EE3FD856BF42387167' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, Achievement_219_47E6A4864178ADF72A8D8892C6D424C8) == 0x000520, "Member 'FHeroGalleryBP::Achievement_219_47E6A4864178ADF72A8D8892C6D424C8' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, NewlinePos_211_FEBE0E4A457FBA469D4FF5B791B3F99A) == 0x0005B8, "Member 'FHeroGalleryBP::NewlinePos_211_FEBE0E4A457FBA469D4FF5B791B3F99A' has a wrong offset!");
-static_assert(offsetof(FHeroGalleryBP, SpecialLineBreak_220_53BB41FC4E04780CF710ABB5065F3EFB) == 0x0005C0, "Member 'FHeroGalleryBP::SpecialLineBreak_220_53BB41FC4E04780CF710ABB5065F3EFB' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroGalleryBP;
 
 }
 

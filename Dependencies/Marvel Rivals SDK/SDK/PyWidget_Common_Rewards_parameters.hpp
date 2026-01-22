@@ -23,9 +23,7 @@ struct PyWidget_Common_Rewards_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Rewards_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Common_Rewards_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Common_Rewards_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Common_Rewards_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Common_Rewards_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Common_Rewards_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Common_Rewards.PyWidget_Common_Rewards.Tick
 // 0x003C (0x003C - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Rewards_Tick) == 0x000004, "Wrong alignment on PyWidget_Common_Rewards_Tick");
-static_assert(sizeof(PyWidget_Common_Rewards_Tick) == 0x00003C, "Wrong size on PyWidget_Common_Rewards_Tick");
-static_assert(offsetof(PyWidget_Common_Rewards_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Common_Rewards_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Rewards_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Common_Rewards_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_Tick;
 
 // PythonFunction PyWidget_Common_Rewards.PyWidget_Common_Rewards.OnScrollBoxScrolled
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_Common_Rewards_OnScrollBoxScrolled final
 public:
 	float                                         scroll_offset;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Rewards_OnScrollBoxScrolled) == 0x000004, "Wrong alignment on PyWidget_Common_Rewards_OnScrollBoxScrolled");
-static_assert(sizeof(PyWidget_Common_Rewards_OnScrollBoxScrolled) == 0x000004, "Wrong size on PyWidget_Common_Rewards_OnScrollBoxScrolled");
-static_assert(offsetof(PyWidget_Common_Rewards_OnScrollBoxScrolled, scroll_offset) == 0x000000, "Member 'PyWidget_Common_Rewards_OnScrollBoxScrolled::scroll_offset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_OnScrollBoxScrolled;
 
 // PythonFunction PyWidget_Common_Rewards.PyWidget_Common_Rewards.OnMouseEnter
 // 0x00B8 (0x00B8 - 0x0000)
@@ -59,10 +52,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_Rewards_OnMouseEnter) == 0x000008, "Wrong alignment on PyWidget_Common_Rewards_OnMouseEnter");
-static_assert(sizeof(PyWidget_Common_Rewards_OnMouseEnter) == 0x0000B8, "Wrong size on PyWidget_Common_Rewards_OnMouseEnter");
-static_assert(offsetof(PyWidget_Common_Rewards_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PyWidget_Common_Rewards_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Rewards_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PyWidget_Common_Rewards_OnMouseEnter::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_OnMouseEnter;
 
 // PythonFunction PyWidget_Common_Rewards.PyWidget_Common_Rewards.OnMouseLeave
 // 0x0080 (0x0080 - 0x0000)
@@ -71,9 +61,7 @@ struct PyWidget_Common_Rewards_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_Rewards_OnMouseLeave) == 0x000008, "Wrong alignment on PyWidget_Common_Rewards_OnMouseLeave");
-static_assert(sizeof(PyWidget_Common_Rewards_OnMouseLeave) == 0x000080, "Wrong size on PyWidget_Common_Rewards_OnMouseLeave");
-static_assert(offsetof(PyWidget_Common_Rewards_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PyWidget_Common_Rewards_OnMouseLeave::MouseEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_OnMouseLeave;
 
 // PythonFunction PyWidget_Common_Rewards.PyWidget_Common_Rewards.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +70,7 @@ struct PyWidget_Common_Rewards_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Rewards_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Common_Rewards_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Common_Rewards_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Common_Rewards_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Common_Rewards_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Common_Rewards_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Rewards_OnAnimationFinished;
 
 }
 

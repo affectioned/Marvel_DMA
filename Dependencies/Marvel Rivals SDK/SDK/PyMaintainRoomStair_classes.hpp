@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMaintainRoomStair">();
+		STATIC_CLASS_IMPL("PyMaintainRoomStair")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMaintainRoomStair")
 	}
 	static class APyMaintainRoomStair* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMaintainRoomStair>();
 	}
 };
-static_assert(alignof(APyMaintainRoomStair) == 0x000010, "Wrong alignment on APyMaintainRoomStair");
-static_assert(sizeof(APyMaintainRoomStair) == 0x000700, "Wrong size on APyMaintainRoomStair");
-static_assert(offsetof(APyMaintainRoomStair, MoveTime) == 0x0006E0, "Member 'APyMaintainRoomStair::MoveTime' has a wrong offset!");
-static_assert(offsetof(APyMaintainRoomStair, MoveSpeed) == 0x0006E4, "Member 'APyMaintainRoomStair::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyMaintainRoomStair, State) == 0x0006E8, "Member 'APyMaintainRoomStair::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyMaintainRoomStair;
 
 }
 

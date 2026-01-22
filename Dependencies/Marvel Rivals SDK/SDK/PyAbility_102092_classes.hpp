@@ -20,42 +20,38 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102092.PyConfig_10209_Base
-// 0x1858 (0x18F0 - 0x0098)
+// 0x1C08 (0x1CA0 - 0x0098)
 class UPyConfig_10209_Base final : public UMarvelAbilityConfig
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x00A0(0x17C0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         ExplodeScopeID;                                    // 0x1860(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1864[0x4];                                     // 0x1864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 BuffIdList;                                        // 0x1868(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         MaxTargetNum;                                      // 0x1878(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PreMissileCueTag;                                  // 0x187C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EPhysicsWeaponType>                    PhysicsItemTypeList;                               // 0x1888(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMap<EPhysicsWeaponType, float>               HealthReduceValue;                                 // 0x1898(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x00A0(0x1B70)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         ExplodeScopeID;                                    // 0x1C10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C14[0x4];                                     // 0x1C14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 BuffIdList;                                        // 0x1C18(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         MaxTargetNum;                                      // 0x1C28(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PreMissileCueTag;                                  // 0x1C2C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<EPhysicsWeaponType>                    PhysicsItemTypeList;                               // 0x1C38(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<EPhysicsWeaponType, float>               HealthReduceValue;                                 // 0x1C48(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_10209_Base">();
+		STATIC_CLASS_IMPL("PyConfig_10209_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_10209_Base")
 	}
 	static class UPyConfig_10209_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_10209_Base>();
 	}
 };
-static_assert(alignof(UPyConfig_10209_Base) == 0x000010, "Wrong alignment on UPyConfig_10209_Base");
-static_assert(sizeof(UPyConfig_10209_Base) == 0x0018F0, "Wrong size on UPyConfig_10209_Base");
-static_assert(offsetof(UPyConfig_10209_Base, SelectTaskParams) == 0x0000A0, "Member 'UPyConfig_10209_Base::SelectTaskParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, ExplodeScopeID) == 0x001860, "Member 'UPyConfig_10209_Base::ExplodeScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, BuffIdList) == 0x001868, "Member 'UPyConfig_10209_Base::BuffIdList' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, MaxTargetNum) == 0x001878, "Member 'UPyConfig_10209_Base::MaxTargetNum' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, PreMissileCueTag) == 0x00187C, "Member 'UPyConfig_10209_Base::PreMissileCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, PhysicsItemTypeList) == 0x001888, "Member 'UPyConfig_10209_Base::PhysicsItemTypeList' has a wrong offset!");
-static_assert(offsetof(UPyConfig_10209_Base, HealthReduceValue) == 0x001898, "Member 'UPyConfig_10209_Base::HealthReduceValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_10209_Base;
 
 // PythonClass PyAbility_102092.PyAbility_10209_Base
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_10209_Base : public UAbility_108
 {
 public:
@@ -70,18 +66,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10209_Base">();
+		STATIC_CLASS_IMPL("PyAbility_10209_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10209_Base")
 	}
 	static class UPyAbility_10209_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10209_Base>();
 	}
 };
-static_assert(alignof(UPyAbility_10209_Base) == 0x000008, "Wrong alignment on UPyAbility_10209_Base");
-static_assert(sizeof(UPyAbility_10209_Base) == 0x0029F8, "Wrong size on UPyAbility_10209_Base");
+DUMPER7_ASSERTS_UPyAbility_10209_Base;
 
 // PythonClass PyAbility_102092.PyTraceComponent_10209_Base
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10209_Base final : public UMarvelAgentTraceComponent
 {
 public:
@@ -91,27 +90,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10209_Base">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10209_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10209_Base")
 	}
 	static class UPyTraceComponent_10209_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10209_Base>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10209_Base) == 0x000010, "Wrong alignment on UPyTraceComponent_10209_Base");
-static_assert(sizeof(UPyTraceComponent_10209_Base) == 0x002200, "Wrong size on UPyTraceComponent_10209_Base");
+DUMPER7_ASSERTS_UPyTraceComponent_10209_Base;
 
 // PythonClass PyAbility_102092.PyCue_Scope_Loop_10209201
-// 0x0030 (0x1140 - 0x1110)
+// 0x0030 (0x1150 - 0x1120)
 class APyCue_Scope_Loop_10209201 final : public ACue_Scope_Loop_10209201
 {
 public:
-	class USkeletalMeshComponent*                 FlowerMesh;                                        // 0x1110(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDecalComponent*                        RangeDecal;                                        // 0x1118(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNiagaraComponent*                      LoopNiagara;                                       // 0x1120(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        FlowerAppearAnim;                                  // 0x1128(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            RangeDecalCurve;                                   // 0x1130(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsDoFlowerTrace;                                  // 0x1138(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMeshComponent*                 FlowerMesh;                                        // 0x1120(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDecalComponent*                        RangeDecal;                                        // 0x1128(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      LoopNiagara;                                       // 0x1130(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        FlowerAppearAnim;                                  // 0x1138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            RangeDecalCurve;                                   // 0x1140(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDoFlowerTrace;                                  // 0x1148(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -120,28 +122,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10209201">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10209201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10209201")
 	}
 	static class APyCue_Scope_Loop_10209201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10209201>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10209201) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10209201");
-static_assert(sizeof(APyCue_Scope_Loop_10209201) == 0x001140, "Wrong size on APyCue_Scope_Loop_10209201");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, FlowerMesh) == 0x001110, "Member 'APyCue_Scope_Loop_10209201::FlowerMesh' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, RangeDecal) == 0x001118, "Member 'APyCue_Scope_Loop_10209201::RangeDecal' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, LoopNiagara) == 0x001120, "Member 'APyCue_Scope_Loop_10209201::LoopNiagara' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, FlowerAppearAnim) == 0x001128, "Member 'APyCue_Scope_Loop_10209201::FlowerAppearAnim' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, RangeDecalCurve) == 0x001130, "Member 'APyCue_Scope_Loop_10209201::RangeDecalCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10209201, bIsDoFlowerTrace) == 0x001138, "Member 'APyCue_Scope_Loop_10209201::bIsDoFlowerTrace' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10209201;
 
 // PythonClass PyAbility_102092.PyScope_10209_Base
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class APyScope_10209_Base final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	class AActor*                                 SelectItem;                                        // 0x1AA0(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SelectItem;                                        // 0x1B70(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -151,16 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10209_Base">();
+		STATIC_CLASS_IMPL("PyScope_10209_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10209_Base")
 	}
 	static class APyScope_10209_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10209_Base>();
 	}
 };
-static_assert(alignof(APyScope_10209_Base) == 0x000010, "Wrong alignment on APyScope_10209_Base");
-static_assert(sizeof(APyScope_10209_Base) == 0x001AB0, "Wrong size on APyScope_10209_Base");
-static_assert(offsetof(APyScope_10209_Base, SelectItem) == 0x001AA0, "Member 'APyScope_10209_Base::SelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10209_Base;
 
 }
 

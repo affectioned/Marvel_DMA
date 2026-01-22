@@ -57,6 +57,20 @@ void UWBP_ChatOut_ItemText_C::BP_OnItemSelectionChanged(bool bIsSelected)
 }
 
 
+// Function WBP_ChatOut_ItemText.WBP_ChatOut_ItemText_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ChatOut_ItemText_C::BP_OnEntryReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ChatOut_ItemText_C", "BP_OnEntryReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ChatOut_ItemText.WBP_ChatOut_ItemText_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -74,20 +88,6 @@ void UWBP_ChatOut_ItemText_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ChatOut_ItemText.WBP_ChatOut_ItemText_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ChatOut_ItemText_C::BP_OnEntryReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ChatOut_ItemText_C", "BP_OnEntryReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

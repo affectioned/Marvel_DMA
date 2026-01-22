@@ -49,11 +49,7 @@ public:
 	class USkeletalMeshComponent*                 LeftWeaponMesh;                                    // 0x0008(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USkeletalMeshComponent*                 RightWeaponMesh;                                   // 0x0010(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FShadowMesh) == 0x000008, "Wrong alignment on FShadowMesh");
-static_assert(sizeof(FShadowMesh) == 0x000018, "Wrong size on FShadowMesh");
-static_assert(offsetof(FShadowMesh, BodyMesh) == 0x000000, "Member 'FShadowMesh::BodyMesh' has a wrong offset!");
-static_assert(offsetof(FShadowMesh, LeftWeaponMesh) == 0x000008, "Member 'FShadowMesh::LeftWeaponMesh' has a wrong offset!");
-static_assert(offsetof(FShadowMesh, RightWeaponMesh) == 0x000010, "Member 'FShadowMesh::RightWeaponMesh' has a wrong offset!");
+DUMPER7_ASSERTS_FShadowMesh;
 
 // ScriptStruct Hero_1043.MyMaterialParameter
 // 0x0028 (0x0028 - 0x0000)
@@ -66,13 +62,7 @@ public:
 	float                                         ScalarValue;                                       // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            ScalarCurve;                                       // 0x0020(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMyMaterialParameter) == 0x000008, "Wrong alignment on FMyMaterialParameter");
-static_assert(sizeof(FMyMaterialParameter) == 0x000028, "Wrong size on FMyMaterialParameter");
-static_assert(offsetof(FMyMaterialParameter, MaterialID) == 0x000000, "Member 'FMyMaterialParameter::MaterialID' has a wrong offset!");
-static_assert(offsetof(FMyMaterialParameter, MaterialSlotName) == 0x000004, "Member 'FMyMaterialParameter::MaterialSlotName' has a wrong offset!");
-static_assert(offsetof(FMyMaterialParameter, ParameterName) == 0x000010, "Member 'FMyMaterialParameter::ParameterName' has a wrong offset!");
-static_assert(offsetof(FMyMaterialParameter, ScalarValue) == 0x00001C, "Member 'FMyMaterialParameter::ScalarValue' has a wrong offset!");
-static_assert(offsetof(FMyMaterialParameter, ScalarCurve) == 0x000020, "Member 'FMyMaterialParameter::ScalarCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FMyMaterialParameter;
 
 // ScriptStruct Hero_1043.AimSpecialConfig
 // 0x001C (0x001C - 0x0000)
@@ -83,11 +73,7 @@ public:
 	struct FGameplayTag                           SpecialTag;                                        // 0x0004(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SpecialSocketName;                                 // 0x0010(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAimSpecialConfig) == 0x000004, "Wrong alignment on FAimSpecialConfig");
-static_assert(sizeof(FAimSpecialConfig) == 0x00001C, "Wrong size on FAimSpecialConfig");
-static_assert(offsetof(FAimSpecialConfig, SpecialHeroID) == 0x000000, "Member 'FAimSpecialConfig::SpecialHeroID' has a wrong offset!");
-static_assert(offsetof(FAimSpecialConfig, SpecialTag) == 0x000004, "Member 'FAimSpecialConfig::SpecialTag' has a wrong offset!");
-static_assert(offsetof(FAimSpecialConfig, SpecialSocketName) == 0x000010, "Member 'FAimSpecialConfig::SpecialSocketName' has a wrong offset!");
+DUMPER7_ASSERTS_FAimSpecialConfig;
 
 }
 

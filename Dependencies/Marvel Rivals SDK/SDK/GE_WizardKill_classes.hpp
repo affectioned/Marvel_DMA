@@ -23,15 +23,18 @@ class UGE_WizardKill_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_WizardKill_C">();
+		BP_STATIC_CLASS_IMPL("GE_WizardKill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_WizardKill_C")
 	}
 	static class UGE_WizardKill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_WizardKill_C>();
 	}
 };
-static_assert(alignof(UGE_WizardKill_C) == 0x000008, "Wrong alignment on UGE_WizardKill_C");
-static_assert(sizeof(UGE_WizardKill_C) == 0x001418, "Wrong size on UGE_WizardKill_C");
+DUMPER7_ASSERTS_UGE_WizardKill_C;
 
 }
 

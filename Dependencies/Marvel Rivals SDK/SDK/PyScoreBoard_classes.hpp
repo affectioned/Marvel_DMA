@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyScoreBoard.PyScoreBoard
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyScoreBoard : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ProtectTime;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsReplay;                                          // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPersonDeath;                                     // 0x05C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ProtectTime;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsReplay;                                          // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPersonDeath;                                     // 0x05C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,42 +40,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoard">();
+		STATIC_CLASS_IMPL("PyScoreBoard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoard")
 	}
 	static class UPyScoreBoard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoard>();
 	}
 };
-static_assert(alignof(UPyScoreBoard) == 0x000008, "Wrong alignment on UPyScoreBoard");
-static_assert(sizeof(UPyScoreBoard) == 0x0005C8, "Wrong size on UPyScoreBoard");
-static_assert(offsetof(UPyScoreBoard, ProtectTime) == 0x0005BC, "Member 'UPyScoreBoard::ProtectTime' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard, IsReplay) == 0x0005C0, "Member 'UPyScoreBoard::IsReplay' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard, IsPersonDeath) == 0x0005C1, "Member 'UPyScoreBoard::IsPersonDeath' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScoreBoard;
 
 // PythonClass PyScoreBoard.PyScoreBoardUnit
-// 0x0098 (0x0628 - 0x0590)
+// 0x0098 (0x0630 - 0x0598)
 class UPyScoreBoardUnit : public UWidget_ScoreBoardUnit
 {
 public:
-	class UTexture2D*                             Duty_Unknow;                                       // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Duty_Tank;                                         // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Duty_Damage;                                       // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Duty_Support;                                      // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelfNameColor;                                     // 0x05B0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            OtherNameColor;                                    // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          IsReplay;                                          // 0x05D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPersonDeath;                                     // 0x05D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DA[0x2];                                      // 0x05DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            CommonTextColor;                                   // 0x05DC(0x0014)(BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            EmptyTextColor;                                    // 0x05F0(0x0014)(BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview;                               // 0x0604(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview_IsEnemy;                       // 0x0605(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_606[0x2];                                      // 0x0606(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         bCustomColorPreivew_HeroId;                        // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview_IsSelf;                        // 0x060C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60D[0x3];                                      // 0x060D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   bCustomColorPreview_PlayerName;                    // 0x0610(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Duty_Unknow;                                       // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Duty_Tank;                                         // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Duty_Damage;                                       // 0x05A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Duty_Support;                                      // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelfNameColor;                                     // 0x05B8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            OtherNameColor;                                    // 0x05CC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          IsReplay;                                          // 0x05E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPersonDeath;                                     // 0x05E1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E2[0x2];                                      // 0x05E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            CommonTextColor;                                   // 0x05E4(0x0014)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EmptyTextColor;                                    // 0x05F8(0x0014)(BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x060C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview_IsEnemy;                       // 0x060D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60E[0x2];                                      // 0x060E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         bCustomColorPreivew_HeroId;                        // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview_IsSelf;                        // 0x0614(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_615[0x3];                                      // 0x0615(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   bCustomColorPreview_PlayerName;                    // 0x0618(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -86,30 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoardUnit">();
+		STATIC_CLASS_IMPL("PyScoreBoardUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoardUnit")
 	}
 	static class UPyScoreBoardUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoardUnit>();
 	}
 };
-static_assert(alignof(UPyScoreBoardUnit) == 0x000008, "Wrong alignment on UPyScoreBoardUnit");
-static_assert(sizeof(UPyScoreBoardUnit) == 0x000628, "Wrong size on UPyScoreBoardUnit");
-static_assert(offsetof(UPyScoreBoardUnit, Duty_Unknow) == 0x000590, "Member 'UPyScoreBoardUnit::Duty_Unknow' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, Duty_Tank) == 0x000598, "Member 'UPyScoreBoardUnit::Duty_Tank' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, Duty_Damage) == 0x0005A0, "Member 'UPyScoreBoardUnit::Duty_Damage' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, Duty_Support) == 0x0005A8, "Member 'UPyScoreBoardUnit::Duty_Support' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, SelfNameColor) == 0x0005B0, "Member 'UPyScoreBoardUnit::SelfNameColor' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, OtherNameColor) == 0x0005C4, "Member 'UPyScoreBoardUnit::OtherNameColor' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, IsReplay) == 0x0005D8, "Member 'UPyScoreBoardUnit::IsReplay' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, IsPersonDeath) == 0x0005D9, "Member 'UPyScoreBoardUnit::IsPersonDeath' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, CommonTextColor) == 0x0005DC, "Member 'UPyScoreBoardUnit::CommonTextColor' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, EmptyTextColor) == 0x0005F0, "Member 'UPyScoreBoardUnit::EmptyTextColor' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, bCustomColorPreview) == 0x000604, "Member 'UPyScoreBoardUnit::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, bCustomColorPreview_IsEnemy) == 0x000605, "Member 'UPyScoreBoardUnit::bCustomColorPreview_IsEnemy' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, bCustomColorPreivew_HeroId) == 0x000608, "Member 'UPyScoreBoardUnit::bCustomColorPreivew_HeroId' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, bCustomColorPreview_IsSelf) == 0x00060C, "Member 'UPyScoreBoardUnit::bCustomColorPreview_IsSelf' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit, bCustomColorPreview_PlayerName) == 0x000610, "Member 'UPyScoreBoardUnit::bCustomColorPreview_PlayerName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScoreBoardUnit;
 
 }
 

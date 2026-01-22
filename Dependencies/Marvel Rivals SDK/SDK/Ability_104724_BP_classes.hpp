@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_10130_104724_classes.hpp"
+#include "PyAbility_104724_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104724_BP.Ability_104724_BP_C
-// 0x0000 (0x29F8 - 0x29F8)
-class UAbility_104724_BP_C final : public UPyAbility_10130_104724
+// 0x0000 (0x2A60 - 0x2A60)
+class Ability_104724_BP::UAbility_104724_BP_C final : public UPyAbility_104724
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104724_BP_C">();
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass Ability_104724_BP.Ability_104724_BP_C")
 	}
-	static class UAbility_104724_BP_C* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UAbility_104724_BP_C>();
+		STATIC_NAME_IMPL(L"Ability_104724_BP_C")
+	}
+	static class Ability_104724_BP::UAbility_104724_BP_C* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<Ability_104724_BP::UAbility_104724_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104724_BP_C) == 0x000008, "Wrong alignment on UAbility_104724_BP_C");
-static_assert(sizeof(UAbility_104724_BP_C) == 0x0029F8, "Wrong size on UAbility_104724_BP_C");
+DUMPER7_ASSERTS_Ability_104724_BP__UAbility_104724_BP_C;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "PyAudioItemConfig_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -58,45 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestAudioItem">();
+		STATIC_CLASS_IMPL("PyEnergyContestAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestAudioItem")
 	}
 	static class UPyEnergyContestAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEnergyContestAudioItem>();
 	}
 };
-static_assert(alignof(UPyEnergyContestAudioItem) == 0x000008, "Wrong alignment on UPyEnergyContestAudioItem");
-static_assert(sizeof(UPyEnergyContestAudioItem) == 0x000298, "Wrong size on UPyEnergyContestAudioItem");
-static_assert(offsetof(UPyEnergyContestAudioItem, CampLockStage) == 0x0000D8, "Member 'UPyEnergyContestAudioItem::CampLockStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, CampLockFinish) == 0x0000E8, "Member 'UPyEnergyContestAudioItem::CampLockFinish' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, ControlGrowStage) == 0x0000F8, "Member 'UPyEnergyContestAudioItem::ControlGrowStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, ControlBothStage) == 0x000108, "Member 'UPyEnergyContestAudioItem::ControlBothStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, ControlBothStageVoice) == 0x000118, "Member 'UPyEnergyContestAudioItem::ControlBothStageVoice' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, SelfControlEnemyInVoice) == 0x000128, "Member 'UPyEnergyContestAudioItem::SelfControlEnemyInVoice' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, ControlOccupiedOneSide) == 0x000138, "Member 'UPyEnergyContestAudioItem::ControlOccupiedOneSide' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, GettingEnergy) == 0x000148, "Member 'UPyEnergyContestAudioItem::GettingEnergy' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnemyGettingEnergy) == 0x000158, "Member 'UPyEnergyContestAudioItem::EnemyGettingEnergy' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, SelfPillageThresholdScoreReached) == 0x000168, "Member 'UPyEnergyContestAudioItem::SelfPillageThresholdScoreReached' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnemyPillageThresholdScoreReached) == 0x000178, "Member 'UPyEnergyContestAudioItem::EnemyPillageThresholdScoreReached' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnergyStorageRunningOut) == 0x000188, "Member 'UPyEnergyContestAudioItem::EnergyStorageRunningOut' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnergyStorageRunningOutPointOne) == 0x000198, "Member 'UPyEnergyContestAudioItem::EnergyStorageRunningOutPointOne' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, ScoreReachHalf) == 0x0001A8, "Member 'UPyEnergyContestAudioItem::ScoreReachHalf' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnemyScoreReachHalf) == 0x0001B8, "Member 'UPyEnergyContestAudioItem::EnemyScoreReachHalf' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, EnergyStorageGettingDown) == 0x0001C8, "Member 'UPyEnergyContestAudioItem::EnergyStorageGettingDown' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, WillActivateNextEnergyMine) == 0x0001D8, "Member 'UPyEnergyContestAudioItem::WillActivateNextEnergyMine' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, WillActivateNextPillageMine) == 0x0001E8, "Member 'UPyEnergyContestAudioItem::WillActivateNextPillageMine' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, FirstTimeEnterPillageStage) == 0x0001F8, "Member 'UPyEnergyContestAudioItem::FirstTimeEnterPillageStage' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, PillageStageStart) == 0x000208, "Member 'UPyEnergyContestAudioItem::PillageStageStart' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, PillageSpeedUp) == 0x000218, "Member 'UPyEnergyContestAudioItem::PillageSpeedUp' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, PillagingScore) == 0x000228, "Member 'UPyEnergyContestAudioItem::PillagingScore' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, BeingPillagedScore) == 0x000238, "Member 'UPyEnergyContestAudioItem::BeingPillagedScore' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, OneSideGoingToWin) == 0x000248, "Member 'UPyEnergyContestAudioItem::OneSideGoingToWin' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, PillagingScoreLoop) == 0x000258, "Member 'UPyEnergyContestAudioItem::PillagingScoreLoop' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, BeingPillagedScoreLoop) == 0x000268, "Member 'UPyEnergyContestAudioItem::BeingPillagedScoreLoop' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, Music_FinalBattle_RTPC_Overtime_PlusValue) == 0x000278, "Member 'UPyEnergyContestAudioItem::Music_FinalBattle_RTPC_Overtime_PlusValue' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, Music_FinalBattle_RTPC_Score_PlusValue) == 0x000280, "Member 'UPyEnergyContestAudioItem::Music_FinalBattle_RTPC_Score_PlusValue' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, Music_FinalBattle_RTPC_MinValue) == 0x000290, "Member 'UPyEnergyContestAudioItem::Music_FinalBattle_RTPC_MinValue' has a wrong offset!");
-static_assert(offsetof(UPyEnergyContestAudioItem, Music_FinalBattle_RTPC_MaxValue) == 0x000294, "Member 'UPyEnergyContestAudioItem::Music_FinalBattle_RTPC_MaxValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEnergyContestAudioItem;
 
 }
 

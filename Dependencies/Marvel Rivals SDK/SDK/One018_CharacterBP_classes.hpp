@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1018_CharacterBP.1018_CharacterBP_C
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class AOne018_CharacterBP_C final : public APyDoctorStrangeCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1018_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1018_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1018_CharacterBP_C")
 	}
 	static class AOne018_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne018_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne018_CharacterBP_C) == 0x000010, "Wrong alignment on AOne018_CharacterBP_C");
-static_assert(sizeof(AOne018_CharacterBP_C) == 0x002220, "Wrong size on AOne018_CharacterBP_C");
+DUMPER7_ASSERTS_AOne018_CharacterBP_C;
 
 }
 

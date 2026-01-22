@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1015_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1015_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyScope_101541.PyScope_101541_Common
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_101541_Common : public AScope_101541
 {
 public:
@@ -28,86 +28,101 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_101541_Common">();
+		STATIC_CLASS_IMPL("PyScope_101541_Common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_101541_Common")
 	}
 	static class APyScope_101541_Common* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_101541_Common>();
 	}
 };
-static_assert(alignof(APyScope_101541_Common) == 0x000010, "Wrong alignment on APyScope_101541_Common");
-static_assert(sizeof(APyScope_101541_Common) == 0x001AB0, "Wrong size on APyScope_101541_Common");
+DUMPER7_ASSERTS_APyScope_101541_Common;
 
 // PythonClass PyScope_101541.PyScope_10154101
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154101 final : public APyScope_101541_Common
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154101">();
+		STATIC_CLASS_IMPL("PyScope_10154101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154101")
 	}
 	static class APyScope_10154101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154101>();
 	}
 };
-static_assert(alignof(APyScope_10154101) == 0x000010, "Wrong alignment on APyScope_10154101");
-static_assert(sizeof(APyScope_10154101) == 0x001AB0, "Wrong size on APyScope_10154101");
+DUMPER7_ASSERTS_APyScope_10154101;
 
 // PythonClass PyScope_101541.PyScope_10154102
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154102 final : public APyScope_101541_Common
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154102">();
+		STATIC_CLASS_IMPL("PyScope_10154102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154102")
 	}
 	static class APyScope_10154102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154102>();
 	}
 };
-static_assert(alignof(APyScope_10154102) == 0x000010, "Wrong alignment on APyScope_10154102");
-static_assert(sizeof(APyScope_10154102) == 0x001AB0, "Wrong size on APyScope_10154102");
+DUMPER7_ASSERTS_APyScope_10154102;
 
 // PythonClass PyScope_101541.PyScope_10154103
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154103 final : public APyScope_101541_Common
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154103">();
+		STATIC_CLASS_IMPL("PyScope_10154103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154103")
 	}
 	static class APyScope_10154103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154103>();
 	}
 };
-static_assert(alignof(APyScope_10154103) == 0x000010, "Wrong alignment on APyScope_10154103");
-static_assert(sizeof(APyScope_10154103) == 0x001AB0, "Wrong size on APyScope_10154103");
+DUMPER7_ASSERTS_APyScope_10154103;
 
 // PythonClass PyScope_101541.PyScope_10154104
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154104 final : public APyScope_101541_Common
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154104">();
+		STATIC_CLASS_IMPL("PyScope_10154104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154104")
 	}
 	static class APyScope_10154104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154104>();
 	}
 };
-static_assert(alignof(APyScope_10154104) == 0x000010, "Wrong alignment on APyScope_10154104");
-static_assert(sizeof(APyScope_10154104) == 0x001AB0, "Wrong size on APyScope_10154104");
+DUMPER7_ASSERTS_APyScope_10154104;
 
 // PythonClass PyScope_101541.PyScope_10154106
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154106 final : public APyScope_101541_Common
 {
 public:
@@ -117,18 +132,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154106">();
+		STATIC_CLASS_IMPL("PyScope_10154106")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154106")
 	}
 	static class APyScope_10154106* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154106>();
 	}
 };
-static_assert(alignof(APyScope_10154106) == 0x000010, "Wrong alignment on APyScope_10154106");
-static_assert(sizeof(APyScope_10154106) == 0x001AB0, "Wrong size on APyScope_10154106");
+DUMPER7_ASSERTS_APyScope_10154106;
 
 // PythonClass PyScope_101541.PyTraceComponent_10154106
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10154106 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -137,32 +155,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10154106">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10154106")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10154106")
 	}
 	static class UPyTraceComponent_10154106* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10154106>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10154106) == 0x000010, "Wrong alignment on UPyTraceComponent_10154106");
-static_assert(sizeof(UPyTraceComponent_10154106) == 0x002200, "Wrong size on UPyTraceComponent_10154106");
+DUMPER7_ASSERTS_UPyTraceComponent_10154106;
 
 // PythonClass PyScope_101541.PyScope_10154107
-// 0x0000 (0x1AB0 - 0x1AB0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10154107 final : public APyScope_101541_Common
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10154107">();
+		STATIC_CLASS_IMPL("PyScope_10154107")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10154107")
 	}
 	static class APyScope_10154107* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10154107>();
 	}
 };
-static_assert(alignof(APyScope_10154107) == 0x000010, "Wrong alignment on APyScope_10154107");
-static_assert(sizeof(APyScope_10154107) == 0x001AB0, "Wrong size on APyScope_10154107");
+DUMPER7_ASSERTS_APyScope_10154107;
 
 }
 

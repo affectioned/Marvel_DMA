@@ -17,53 +17,41 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Performance_ExpectedImpact.WBP_Performance_ExpectedImpact_C
-// 0x0078 (0x0660 - 0x05E8)
+// 0x0078 (0x0668 - 0x05F0)
 class UWBP_Performance_ExpectedImpact_C final : public UPyWidget_Performance_ExpectedImpact
 {
 public:
-	class UMarvelImage*                           Img_Bg1;                                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg2;                                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line1;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line2;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line3;                                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Colon1;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Colon2;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Colon3;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_CPU;                                          // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_ExpectedImpact;                               // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_GPU;                                          // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Value_CPU;                                    // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Value_GPU;                                    // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Value_VRAM;                                   // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_VRAM;                                         // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg1;                                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg2;                                           // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line1;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line2;                                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line3;                                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Colon1;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Colon2;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Colon3;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_CPU;                                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_ExpectedImpact;                               // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_GPU;                                          // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Value_CPU;                                    // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Value_GPU;                                    // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Value_VRAM;                                   // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_VRAM;                                         // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Performance_ExpectedImpact_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Performance_ExpectedImpact_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Performance_ExpectedImpact_C")
 	}
 	static class UWBP_Performance_ExpectedImpact_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Performance_ExpectedImpact_C>();
 	}
 };
-static_assert(alignof(UWBP_Performance_ExpectedImpact_C) == 0x000008, "Wrong alignment on UWBP_Performance_ExpectedImpact_C");
-static_assert(sizeof(UWBP_Performance_ExpectedImpact_C) == 0x000660, "Wrong size on UWBP_Performance_ExpectedImpact_C");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Img_Bg1) == 0x0005E8, "Member 'UWBP_Performance_ExpectedImpact_C::Img_Bg1' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Img_Bg2) == 0x0005F0, "Member 'UWBP_Performance_ExpectedImpact_C::Img_Bg2' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Img_Line1) == 0x0005F8, "Member 'UWBP_Performance_ExpectedImpact_C::Img_Line1' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Img_Line2) == 0x000600, "Member 'UWBP_Performance_ExpectedImpact_C::Img_Line2' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Img_Line3) == 0x000608, "Member 'UWBP_Performance_ExpectedImpact_C::Img_Line3' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Colon1) == 0x000610, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Colon1' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Colon2) == 0x000618, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Colon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Colon3) == 0x000620, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Colon3' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_CPU) == 0x000628, "Member 'UWBP_Performance_ExpectedImpact_C::Text_CPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_ExpectedImpact) == 0x000630, "Member 'UWBP_Performance_ExpectedImpact_C::Text_ExpectedImpact' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_GPU) == 0x000638, "Member 'UWBP_Performance_ExpectedImpact_C::Text_GPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Value_CPU) == 0x000640, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Value_CPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Value_GPU) == 0x000648, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Value_GPU' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_Value_VRAM) == 0x000650, "Member 'UWBP_Performance_ExpectedImpact_C::Text_Value_VRAM' has a wrong offset!");
-static_assert(offsetof(UWBP_Performance_ExpectedImpact_C, Text_VRAM) == 0x000658, "Member 'UWBP_Performance_ExpectedImpact_C::Text_VRAM' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Performance_ExpectedImpact_C;
 
 }
 

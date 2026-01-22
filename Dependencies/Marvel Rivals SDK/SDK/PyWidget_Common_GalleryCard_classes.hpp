@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_GalleryCard.PyWidget_Common_GalleryCard
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Common_GalleryCard final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTextureRenderTarget2D*>         GalleryCardImageList;                              // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTextureRenderTarget2D*>         GalleryCardImageList;                              // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_GalleryCard">();
+		STATIC_CLASS_IMPL("PyWidget_Common_GalleryCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GalleryCard")
 	}
 	static class UPyWidget_Common_GalleryCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_GalleryCard>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_GalleryCard) == 0x000008, "Wrong alignment on UPyWidget_Common_GalleryCard");
-static_assert(sizeof(UPyWidget_Common_GalleryCard) == 0x0005D0, "Wrong size on UPyWidget_Common_GalleryCard");
-static_assert(offsetof(UPyWidget_Common_GalleryCard, GalleryCardImageList) == 0x0005C0, "Member 'UPyWidget_Common_GalleryCard::GalleryCardImageList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_GalleryCard;
 
 }
 

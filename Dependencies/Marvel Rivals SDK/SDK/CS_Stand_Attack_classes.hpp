@@ -23,15 +23,18 @@ class UCS_Stand_Attack_C final : public UDefaultCameraShakeBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CS_Stand_Attack_C">();
+		BP_STATIC_CLASS_IMPL("CS_Stand_Attack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CS_Stand_Attack_C")
 	}
 	static class UCS_Stand_Attack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCS_Stand_Attack_C>();
 	}
 };
-static_assert(alignof(UCS_Stand_Attack_C) == 0x000010, "Wrong alignment on UCS_Stand_Attack_C");
-static_assert(sizeof(UCS_Stand_Attack_C) == 0x0000E0, "Wrong size on UCS_Stand_Attack_C");
+DUMPER7_ASSERTS_UCS_Stand_Attack_C;
 
 }
 

@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_KillStreakPanel.WBP_KillStreakPanel_C
-// 0x0030 (0x0608 - 0x05D8)
+// 0x0030 (0x0610 - 0x05E0)
 class UWBP_KillStreakPanel_C final : public UPyWidget_KillStreakInfo
 {
 public:
-	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FadeInOut;                                    // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_BattleTex_Glow1;                               // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_BattleTex_Glow2;                               // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_BattleTex_Glow3;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_BattleTex_GlowAdd;                             // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeInOut;                                    // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_BattleTex_Glow1;                               // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_BattleTex_Glow2;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_BattleTex_Glow3;                               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_BattleTex_GlowAdd;                             // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_KillStreakPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_KillStreakPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_KillStreakPanel_C")
 	}
 	static class UWBP_KillStreakPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_KillStreakPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_KillStreakPanel_C) == 0x000008, "Wrong alignment on UWBP_KillStreakPanel_C");
-static_assert(sizeof(UWBP_KillStreakPanel_C) == 0x000608, "Wrong size on UWBP_KillStreakPanel_C");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Anim_Refresh) == 0x0005D8, "Member 'UWBP_KillStreakPanel_C::Anim_Refresh' has a wrong offset!");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Anim_FadeInOut) == 0x0005E0, "Member 'UWBP_KillStreakPanel_C::Anim_FadeInOut' has a wrong offset!");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Img_BattleTex_Glow1) == 0x0005E8, "Member 'UWBP_KillStreakPanel_C::Img_BattleTex_Glow1' has a wrong offset!");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Img_BattleTex_Glow2) == 0x0005F0, "Member 'UWBP_KillStreakPanel_C::Img_BattleTex_Glow2' has a wrong offset!");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Img_BattleTex_Glow3) == 0x0005F8, "Member 'UWBP_KillStreakPanel_C::Img_BattleTex_Glow3' has a wrong offset!");
-static_assert(offsetof(UWBP_KillStreakPanel_C, Img_BattleTex_GlowAdd) == 0x000600, "Member 'UWBP_KillStreakPanel_C::Img_BattleTex_GlowAdd' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_KillStreakPanel_C;
 
 }
 

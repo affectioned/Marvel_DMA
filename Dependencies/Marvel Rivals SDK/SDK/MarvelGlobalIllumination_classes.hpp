@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
@@ -44,23 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelGlobalIllumination_C">();
+		BP_STATIC_CLASS_IMPL("MarvelGlobalIllumination_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGlobalIllumination_C")
 	}
 	static class AMarvelGlobalIllumination_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelGlobalIllumination_C>();
 	}
 };
-static_assert(alignof(AMarvelGlobalIllumination_C) == 0x000010, "Wrong alignment on AMarvelGlobalIllumination_C");
-static_assert(sizeof(AMarvelGlobalIllumination_C) == 0x000740, "Wrong size on AMarvelGlobalIllumination_C");
-static_assert(offsetof(AMarvelGlobalIllumination_C, UberGraphFrame) == 0x0006E0, "Member 'AMarvelGlobalIllumination_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, DefaultSceneRoot) == 0x0006E8, "Member 'AMarvelGlobalIllumination_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, IsHighQuality) == 0x0006F0, "Member 'AMarvelGlobalIllumination_C::IsHighQuality' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, HQArray) == 0x0006F8, "Member 'AMarvelGlobalIllumination_C::HQArray' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, LowArray) == 0x000708, "Member 'AMarvelGlobalIllumination_C::LowArray' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, MarvelGIQuality) == 0x000718, "Member 'AMarvelGlobalIllumination_C::MarvelGIQuality' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, LowQualityPPV) == 0x000728, "Member 'AMarvelGlobalIllumination_C::LowQualityPPV' has a wrong offset!");
-static_assert(offsetof(AMarvelGlobalIllumination_C, QualityLevel) == 0x000738, "Member 'AMarvelGlobalIllumination_C::QualityLevel' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelGlobalIllumination_C;
 
 }
 

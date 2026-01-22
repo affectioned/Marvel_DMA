@@ -66,55 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenAudioItem">();
+		STATIC_CLASS_IMPL("PyHalloweenAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenAudioItem")
 	}
 	static class UPyHalloweenAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHalloweenAudioItem>();
 	}
 };
-static_assert(alignof(UPyHalloweenAudioItem) == 0x000008, "Wrong alignment on UPyHalloweenAudioItem");
-static_assert(sizeof(UPyHalloweenAudioItem) == 0x000358, "Wrong size on UPyHalloweenAudioItem");
-static_assert(offsetof(UPyHalloweenAudioItem, PickupItem) == 0x0000D8, "Member 'UPyHalloweenAudioItem::PickupItem' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, NoramalWaveStart) == 0x0000E8, "Member 'UPyHalloweenAudioItem::NoramalWaveStart' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, BossWaveStart) == 0x0000F8, "Member 'UPyHalloweenAudioItem::BossWaveStart' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, WaveEndAudio) == 0x000108, "Member 'UPyHalloweenAudioItem::WaveEndAudio' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, AliveLoopRTPC) == 0x000118, "Member 'UPyHalloweenAudioItem::AliveLoopRTPC' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, ProtectorLowHP) == 0x000128, "Member 'UPyHalloweenAudioItem::ProtectorLowHP' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, ProtectorLowHP2) == 0x000138, "Member 'UPyHalloweenAudioItem::ProtectorLowHP2' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, HeroDead) == 0x000148, "Member 'UPyHalloweenAudioItem::HeroDead' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, HeroRevive) == 0x000158, "Member 'UPyHalloweenAudioItem::HeroRevive' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, TeleportStart) == 0x000168, "Member 'UPyHalloweenAudioItem::TeleportStart' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, TeleportEnd) == 0x000178, "Member 'UPyHalloweenAudioItem::TeleportEnd' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_1) == 0x000188, "Member 'UPyHalloweenAudioItem::Wave_Prepare_1' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_1_1) == 0x000198, "Member 'UPyHalloweenAudioItem::Wave_Prepare_1_1' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_2) == 0x0001A8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_2' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_3) == 0x0001B8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_3' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_4) == 0x0001C8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_4' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_5) == 0x0001D8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_5' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_6) == 0x0001E8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_6' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_7) == 0x0001F8, "Member 'UPyHalloweenAudioItem::Wave_Prepare_7' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_8) == 0x000208, "Member 'UPyHalloweenAudioItem::Wave_Prepare_8' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_9) == 0x000218, "Member 'UPyHalloweenAudioItem::Wave_Prepare_9' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_Endless_1) == 0x000228, "Member 'UPyHalloweenAudioItem::Wave_Prepare_Endless_1' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_Endless_2) == 0x000238, "Member 'UPyHalloweenAudioItem::Wave_Prepare_Endless_2' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_Endless_3) == 0x000248, "Member 'UPyHalloweenAudioItem::Wave_Prepare_Endless_3' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Prepare_Endless_4) == 0x000258, "Member 'UPyHalloweenAudioItem::Wave_Prepare_Endless_4' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_1) == 0x000268, "Member 'UPyHalloweenAudioItem::Wave_Fight_1' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_2) == 0x000278, "Member 'UPyHalloweenAudioItem::Wave_Fight_2' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_3) == 0x000288, "Member 'UPyHalloweenAudioItem::Wave_Fight_3' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_4) == 0x000298, "Member 'UPyHalloweenAudioItem::Wave_Fight_4' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_5) == 0x0002A8, "Member 'UPyHalloweenAudioItem::Wave_Fight_5' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_6) == 0x0002B8, "Member 'UPyHalloweenAudioItem::Wave_Fight_6' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_7) == 0x0002C8, "Member 'UPyHalloweenAudioItem::Wave_Fight_7' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_8) == 0x0002D8, "Member 'UPyHalloweenAudioItem::Wave_Fight_8' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_9) == 0x0002E8, "Member 'UPyHalloweenAudioItem::Wave_Fight_9' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_Endless_1) == 0x0002F8, "Member 'UPyHalloweenAudioItem::Wave_Fight_Endless_1' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_Endless_2) == 0x000308, "Member 'UPyHalloweenAudioItem::Wave_Fight_Endless_2' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_Endless_3) == 0x000318, "Member 'UPyHalloweenAudioItem::Wave_Fight_Endless_3' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fight_Endless_4) == 0x000328, "Member 'UPyHalloweenAudioItem::Wave_Fight_Endless_4' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fail_Protector) == 0x000338, "Member 'UPyHalloweenAudioItem::Wave_Fail_Protector' has a wrong offset!");
-static_assert(offsetof(UPyHalloweenAudioItem, Wave_Fail_Time) == 0x000348, "Member 'UPyHalloweenAudioItem::Wave_Fail_Time' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHalloweenAudioItem;
 
 }
 

@@ -23,15 +23,18 @@ class UPyPrepareRuleComponent : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPrepareRuleComponent">();
+		STATIC_CLASS_IMPL("PyPrepareRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPrepareRuleComponent")
 	}
 	static class UPyPrepareRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPrepareRuleComponent>();
 	}
 };
-static_assert(alignof(UPyPrepareRuleComponent) == 0x000008, "Wrong alignment on UPyPrepareRuleComponent");
-static_assert(sizeof(UPyPrepareRuleComponent) == 0x000108, "Wrong size on UPyPrepareRuleComponent");
+DUMPER7_ASSERTS_UPyPrepareRuleComponent;
 
 }
 

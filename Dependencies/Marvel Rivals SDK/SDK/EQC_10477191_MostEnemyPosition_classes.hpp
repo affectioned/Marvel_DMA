@@ -23,15 +23,18 @@ class UEQC_10477191_MostEnemyPosition_C final : public UEnvQueryContext_PosOfCov
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_10477191_MostEnemyPosition_C">();
+		BP_STATIC_CLASS_IMPL("EQC_10477191_MostEnemyPosition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_10477191_MostEnemyPosition_C")
 	}
 	static class UEQC_10477191_MostEnemyPosition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_10477191_MostEnemyPosition_C>();
 	}
 };
-static_assert(alignof(UEQC_10477191_MostEnemyPosition_C) == 0x000008, "Wrong alignment on UEQC_10477191_MostEnemyPosition_C");
-static_assert(sizeof(UEQC_10477191_MostEnemyPosition_C) == 0x000040, "Wrong size on UEQC_10477191_MostEnemyPosition_C");
+DUMPER7_ASSERTS_UEQC_10477191_MostEnemyPosition_C;
 
 }
 

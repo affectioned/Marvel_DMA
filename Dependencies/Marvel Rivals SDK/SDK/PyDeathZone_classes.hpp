@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathZone">();
+		STATIC_CLASS_IMPL("PyDeathZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathZone")
 	}
 	static class APyDeathZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDeathZone>();
 	}
 };
-static_assert(alignof(APyDeathZone) == 0x000010, "Wrong alignment on APyDeathZone");
-static_assert(sizeof(APyDeathZone) == 0x0006E0, "Wrong size on APyDeathZone");
+DUMPER7_ASSERTS_APyDeathZone;
 
 // PythonClass PyDeathZone.PyDebugZone
 // 0x0010 (0x06F0 - 0x06E0)
@@ -56,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDebugZone">();
+		STATIC_CLASS_IMPL("PyDebugZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDebugZone")
 	}
 	static class APyDebugZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDebugZone>();
 	}
 };
-static_assert(alignof(APyDebugZone) == 0x000010, "Wrong alignment on APyDebugZone");
-static_assert(sizeof(APyDebugZone) == 0x0006F0, "Wrong size on APyDebugZone");
-static_assert(offsetof(APyDebugZone, DebugMode) == 0x0006E0, "Member 'APyDebugZone::DebugMode' has a wrong offset!");
+DUMPER7_ASSERTS_APyDebugZone;
 
 }
 

@@ -18,17 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWIdget_Leauge_MemberInSufficient.PyWidget_League_MemberInsufficient
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_League_MemberInsufficient final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ImgFrameMRC;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFrameClash;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgRuleMRC;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgRuleClash;                                      // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MRCColor;                                          // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClashColor;                                        // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ImgFrameMRC;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFrameClash;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgRuleMRC;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgRuleClash;                                      // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MRCColor;                                          // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClashColor;                                        // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      WinTextMaterial;                                   // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      LoseTextMaterial;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_MemberInsufficient">();
+		STATIC_CLASS_IMPL("PyWidget_League_MemberInsufficient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_MemberInsufficient")
 	}
 	static class UPyWidget_League_MemberInsufficient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_MemberInsufficient>();
 	}
 };
-static_assert(alignof(UPyWidget_League_MemberInsufficient) == 0x000008, "Wrong alignment on UPyWidget_League_MemberInsufficient");
-static_assert(sizeof(UPyWidget_League_MemberInsufficient) == 0x000608, "Wrong size on UPyWidget_League_MemberInsufficient");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, ImgFrameMRC) == 0x0005C0, "Member 'UPyWidget_League_MemberInsufficient::ImgFrameMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, ImgFrameClash) == 0x0005C8, "Member 'UPyWidget_League_MemberInsufficient::ImgFrameClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, ImgRuleMRC) == 0x0005D0, "Member 'UPyWidget_League_MemberInsufficient::ImgRuleMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, ImgRuleClash) == 0x0005D8, "Member 'UPyWidget_League_MemberInsufficient::ImgRuleClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, MRCColor) == 0x0005E0, "Member 'UPyWidget_League_MemberInsufficient::MRCColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_MemberInsufficient, ClashColor) == 0x0005F4, "Member 'UPyWidget_League_MemberInsufficient::ClashColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_MemberInsufficient;
 
 }
 

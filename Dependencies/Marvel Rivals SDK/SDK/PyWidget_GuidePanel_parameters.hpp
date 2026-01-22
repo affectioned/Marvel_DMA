@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_GuidePanel.PyWidget_GuidePanel.GetEnableRegisterInputContextBp
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_GuidePanel_GetEnableRegisterInputContextBp final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_GuidePanel_GetEnableRegisterInputContextBp;
+
 // PythonFunction PyWidget_GuidePanel.PyWidget_GuidePanel.OnTipWidgetClicked
 // 0x0010 (0x0010 - 0x0000)
 struct PyWidget_GuidePanel_OnTipWidgetClicked final
@@ -21,9 +30,7 @@ struct PyWidget_GuidePanel_OnTipWidgetClicked final
 public:
 	class FString                                 event;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GuidePanel_OnTipWidgetClicked) == 0x000008, "Wrong alignment on PyWidget_GuidePanel_OnTipWidgetClicked");
-static_assert(sizeof(PyWidget_GuidePanel_OnTipWidgetClicked) == 0x000010, "Wrong size on PyWidget_GuidePanel_OnTipWidgetClicked");
-static_assert(offsetof(PyWidget_GuidePanel_OnTipWidgetClicked, event) == 0x000000, "Member 'PyWidget_GuidePanel_OnTipWidgetClicked::event' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GuidePanel_OnTipWidgetClicked;
 
 }
 

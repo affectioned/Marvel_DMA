@@ -166,19 +166,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelCheckPoint">();
+		STATIC_CLASS_IMPL("PyLevelCheckPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelCheckPoint")
 	}
 	static class APyLevelCheckPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelCheckPoint>();
 	}
 };
-static_assert(alignof(APyLevelCheckPoint) == 0x000010, "Wrong alignment on APyLevelCheckPoint");
-static_assert(sizeof(APyLevelCheckPoint) == 0x0006F0, "Wrong size on APyLevelCheckPoint");
-static_assert(offsetof(APyLevelCheckPoint, bInitialActive) == 0x0006E0, "Member 'APyLevelCheckPoint::bInitialActive' has a wrong offset!");
-static_assert(offsetof(APyLevelCheckPoint, CheckPointID) == 0x0006E4, "Member 'APyLevelCheckPoint::CheckPointID' has a wrong offset!");
-static_assert(offsetof(APyLevelCheckPoint, FirstStayTime) == 0x0006E8, "Member 'APyLevelCheckPoint::FirstStayTime' has a wrong offset!");
-static_assert(offsetof(APyLevelCheckPoint, StayTime) == 0x0006EC, "Member 'APyLevelCheckPoint::StayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelCheckPoint;
 
 }
 

@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Chat_Emote_Tab.WBP_Chat_Emote_Tab_C
-// 0x0038 (0x0620 - 0x05E8)
+// 0x0038 (0x0628 - 0x05F0)
 class UWBP_Chat_Emote_Tab_C final : public UPyWidget_ChatEmoteTabItem
 {
 public:
-	class UMarvelButton*                          Btn_Tab;                                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tab_Bg;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tab_Hover;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tab_Select;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Tab_Select;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Tab;                                          // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Tab_Select;                                   // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Tab;                                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tab_Bg;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tab_Hover;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tab_Select;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Tab_Select;                                // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Tab;                                          // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Tab_Select;                                   // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_Emote_Tab_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_Emote_Tab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_Emote_Tab_C")
 	}
 	static class UWBP_Chat_Emote_Tab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_Emote_Tab_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_Emote_Tab_C) == 0x000008, "Wrong alignment on UWBP_Chat_Emote_Tab_C");
-static_assert(sizeof(UWBP_Chat_Emote_Tab_C) == 0x000620, "Wrong size on UWBP_Chat_Emote_Tab_C");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Btn_Tab) == 0x0005E8, "Member 'UWBP_Chat_Emote_Tab_C::Btn_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Img_Tab_Bg) == 0x0005F0, "Member 'UWBP_Chat_Emote_Tab_C::Img_Tab_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Img_Tab_Hover) == 0x0005F8, "Member 'UWBP_Chat_Emote_Tab_C::Img_Tab_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Img_Tab_Select) == 0x000600, "Member 'UWBP_Chat_Emote_Tab_C::Img_Tab_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Overlay_Tab_Select) == 0x000608, "Member 'UWBP_Chat_Emote_Tab_C::Overlay_Tab_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Text_Tab) == 0x000610, "Member 'UWBP_Chat_Emote_Tab_C::Text_Tab' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Emote_Tab_C, Text_Tab_Select) == 0x000618, "Member 'UWBP_Chat_Emote_Tab_C::Text_Tab_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_Emote_Tab_C;
 
 }
 

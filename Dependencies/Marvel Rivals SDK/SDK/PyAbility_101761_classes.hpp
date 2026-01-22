@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101761.PyAbility_101761
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101761 : public UAbility_101761
 {
 public:
@@ -30,22 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101761">();
+		STATIC_CLASS_IMPL("PyAbility_101761")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101761")
 	}
 	static class UPyAbility_101761* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101761>();
 	}
 };
-static_assert(alignof(UPyAbility_101761) == 0x000008, "Wrong alignment on UPyAbility_101761");
-static_assert(sizeof(UPyAbility_101761) == 0x0029F8, "Wrong size on UPyAbility_101761");
+DUMPER7_ASSERTS_UPyAbility_101761;
 
 // PythonClass PyAbility_101761.PyCue_Scope_Loop_10176101
-// 0x0010 (0x1100 - 0x10F0)
+// 0x0010 (0x1110 - 0x1100)
 class APyCue_Scope_Loop_10176101 final : public ACue_Scope_Loop_10176101
 {
 public:
-	float                                         BaseScale;                                         // 0x10F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseScale;                                         // 0x1100(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -55,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10176101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10176101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10176101")
 	}
 	static class APyCue_Scope_Loop_10176101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10176101>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10176101) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10176101");
-static_assert(sizeof(APyCue_Scope_Loop_10176101) == 0x001100, "Wrong size on APyCue_Scope_Loop_10176101");
-static_assert(offsetof(APyCue_Scope_Loop_10176101, BaseScale) == 0x0010F0, "Member 'APyCue_Scope_Loop_10176101::BaseScale' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10176101;
 
 }
 

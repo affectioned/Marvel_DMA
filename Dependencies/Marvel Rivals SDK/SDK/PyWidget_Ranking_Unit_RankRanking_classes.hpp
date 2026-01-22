@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Ranking_Unit_RankRanking.PyWidget_Ranking_Unit_RankRanking
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Ranking_Unit_RankRanking final : public UPyMarvelUserWidget
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Ranking_Unit_RankRanking">();
+		STATIC_CLASS_IMPL("PyWidget_Ranking_Unit_RankRanking")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Ranking_Unit_RankRanking")
 	}
 	static class UPyWidget_Ranking_Unit_RankRanking* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Ranking_Unit_RankRanking>();
 	}
 };
-static_assert(alignof(UPyWidget_Ranking_Unit_RankRanking) == 0x000008, "Wrong alignment on UPyWidget_Ranking_Unit_RankRanking");
-static_assert(sizeof(UPyWidget_Ranking_Unit_RankRanking) == 0x0005C0, "Wrong size on UPyWidget_Ranking_Unit_RankRanking");
+DUMPER7_ASSERTS_UPyWidget_Ranking_Unit_RankRanking;
 
 }
 

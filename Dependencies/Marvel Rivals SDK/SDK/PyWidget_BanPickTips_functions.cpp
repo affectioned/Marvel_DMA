@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "PyWidget_BanPickTips_classes.hpp"
-#include "PyWidget_BanPickTips_parameters.hpp"
 
 
 namespace SDK
@@ -69,88 +68,6 @@ void UPyWidget_BanPickTips::Destruct()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_BanPickTips.PyWidget_BanPickTipsConfirmedUnit.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_BanPickTipsConfirmedUnit::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_BanPickTipsConfirmedUnit", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_BanPickTips.PyWidget_BanPickTipsConfirmedUnit.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_BanPickTipsConfirmedUnit::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_BanPickTipsConfirmedUnit", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_BanPickTips.PyWidget_BanPickTipsConfirmedUnit.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_BanPickTipsConfirmedUnit::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_BanPickTipsConfirmedUnit", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_BanPickTips.PyWidget_BanPickTipsConfirmedUnit.MarvelSetVisible
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visible                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_BanPickTipsConfirmedUnit::MarvelSetVisible(bool Visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_BanPickTipsConfirmedUnit", "MarvelSetVisible");
-
-	Params::PyWidget_BanPickTipsConfirmedUnit_MarvelSetVisible Parms{};
-
-	Parms.Visible = Visible;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

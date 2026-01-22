@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PopupAd_Activity150.PyWidget_PopupAd_Activity150
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PopupAd_Activity150 final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PopupAd_Activity150">();
+		STATIC_CLASS_IMPL("PyWidget_PopupAd_Activity150")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PopupAd_Activity150")
 	}
 	static class UPyWidget_PopupAd_Activity150* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PopupAd_Activity150>();
 	}
 };
-static_assert(alignof(UPyWidget_PopupAd_Activity150) == 0x000008, "Wrong alignment on UPyWidget_PopupAd_Activity150");
-static_assert(sizeof(UPyWidget_PopupAd_Activity150) == 0x0005C0, "Wrong size on UPyWidget_PopupAd_Activity150");
+DUMPER7_ASSERTS_UPyWidget_PopupAd_Activity150;
 
 }
 

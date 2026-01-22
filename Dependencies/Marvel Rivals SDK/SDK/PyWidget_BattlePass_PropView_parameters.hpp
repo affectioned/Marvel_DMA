@@ -23,9 +23,7 @@ struct PyWidget_BattlePass_CuttingItemList_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CuttingItemList_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_BattlePass_CuttingItemList_MarvelSetVisible");
-static_assert(sizeof(PyWidget_BattlePass_CuttingItemList_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_BattlePass_CuttingItemList_MarvelSetVisible");
-static_assert(offsetof(PyWidget_BattlePass_CuttingItemList_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_BattlePass_CuttingItemList_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CuttingItemList_MarvelSetVisible;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PageItem.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PageItem_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PageItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_BattlePass_PageItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PageItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PageItem_SetIsHover");
-static_assert(sizeof(PyWidget_BattlePass_PageItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_BattlePass_PageItem_SetIsHover");
-static_assert(offsetof(PyWidget_BattlePass_PageItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_BattlePass_PageItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PageItem_SetIsHover;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PageItem.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_BattlePass_PageItem_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PageItem_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PageItem_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_BattlePass_PageItem_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_BattlePass_PageItem_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_BattlePass_PageItem_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_BattlePass_PageItem_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PageItem_SetBtnIsPressed;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItem.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_BattlePass_CuttingItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CuttingItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_BattlePass_CuttingItem_PreConstruct");
-static_assert(sizeof(PyWidget_BattlePass_CuttingItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_BattlePass_CuttingItem_PreConstruct");
-static_assert(offsetof(PyWidget_BattlePass_CuttingItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_BattlePass_CuttingItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CuttingItem_PreConstruct;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_BattlePass_CuttingItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CuttingItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_BattlePass_CuttingItem_SetIsHover");
-static_assert(sizeof(PyWidget_BattlePass_CuttingItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_BattlePass_CuttingItem_SetIsHover");
-static_assert(offsetof(PyWidget_BattlePass_CuttingItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_BattlePass_CuttingItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CuttingItem_SetIsHover;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItem.OnImgMaskLoaded
 // 0x0008 (0x0008 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded final
 public:
 	class UObject*                                ImgMask;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded) == 0x000008, "Wrong alignment on PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded");
-static_assert(sizeof(PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded) == 0x000008, "Wrong size on PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded");
-static_assert(offsetof(PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded, ImgMask) == 0x000000, "Member 'PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded::ImgMask' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CuttingItem_OnImgMaskLoaded;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_CuttingItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -100,9 +86,7 @@ struct PyWidget_BattlePass_CuttingItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_CuttingItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BattlePass_CuttingItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BattlePass_CuttingItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BattlePass_CuttingItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BattlePass_CuttingItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BattlePass_CuttingItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_CuttingItem_OnAnimationFinished;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -111,9 +95,7 @@ struct PyWidget_BattlePass_PropView_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PropView_PreConstruct");
-static_assert(sizeof(PyWidget_BattlePass_PropView_PreConstruct) == 0x000001, "Wrong size on PyWidget_BattlePass_PropView_PreConstruct");
-static_assert(offsetof(PyWidget_BattlePass_PropView_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_BattlePass_PropView_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_PreConstruct;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -122,9 +104,7 @@ struct PyWidget_BattlePass_PropView_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PropView_MarvelSetVisible");
-static_assert(sizeof(PyWidget_BattlePass_PropView_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_BattlePass_PropView_MarvelSetVisible");
-static_assert(offsetof(PyWidget_BattlePass_PropView_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_BattlePass_PropView_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_MarvelSetVisible;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -133,9 +113,7 @@ struct PyWidget_BattlePass_PropView_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BattlePass_PropView_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BattlePass_PropView_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavLeft_Confirm_Popup
 // 0x0010 (0x0010 - 0x0000)
@@ -146,10 +124,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavLeft_Confirm_Popup;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavRight_Confirm_Popup
 // 0x0010 (0x0010 - 0x0000)
@@ -160,10 +135,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavRight_Confirm_Popup;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavRight_Btn_GetBattlePass
 // 0x0010 (0x0010 - 0x0000)
@@ -174,10 +146,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavRight_Btn_GetBattlePass_1
 // 0x0010 (0x0010 - 0x0000)
@@ -188,10 +157,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavRight_Btn_GetBattlePass_1;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavRight_WBP_BattlePass_SeeDetailsBtn
 // 0x0010 (0x0010 - 0x0000)
@@ -202,10 +168,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_SeeDetailsBtn;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavRight_WBP_BattlePass_StartBtn_Senior
 // 0x0010 (0x0010 - 0x0000)
@@ -216,10 +179,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavRight_WBP_BattlePass_StartBtn_Senior;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnHome
 // 0x0010 (0x0010 - 0x0000)
@@ -230,10 +190,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnHome) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnHome");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnHome) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnHome");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnHome, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnHome::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnHome, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnHome::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnHome;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnPinTop
 // 0x0010 (0x0010 - 0x0000)
@@ -244,10 +201,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnPinTop) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnPinTop");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnPinTop) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnPinTop");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnPinTop, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnPinTop::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnPinTop, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnPinTop::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnPinTop;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnPre
 // 0x0010 (0x0010 - 0x0000)
@@ -258,10 +212,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnPre) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnPre");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnPre) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnPre");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnPre, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnPre::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnPre, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnPre::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnPre;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnNext
 // 0x0010 (0x0010 - 0x0000)
@@ -272,10 +223,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnNext) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnNext");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnNext) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnNext");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnNext, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnNext::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnNext, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnNext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnNext;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnTips
 // 0x0010 (0x0010 - 0x0000)
@@ -286,10 +234,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnTips) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnTips");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnTips) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnTips");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnTips, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnTips::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnTips, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnTips::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnTips;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnNavBtnRuleDetails
 // 0x0010 (0x0010 - 0x0000)
@@ -300,10 +245,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnNavBtnRuleDetails) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnNavBtnRuleDetails");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnNavBtnRuleDetails) == 0x000010, "Wrong size on PyWidget_BattlePass_PropView_OnNavBtnRuleDetails");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnRuleDetails, Navigation_0) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnNavBtnRuleDetails::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnNavBtnRuleDetails, ReturnValue) == 0x000008, "Member 'PyWidget_BattlePass_PropView_OnNavBtnRuleDetails::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnNavBtnRuleDetails;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnBtnLevelUpNormalSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -312,9 +254,7 @@ struct PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnBtnLevelUpNormalSoftTextureLoad;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnBtnLevelUpHoveredSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -323,9 +263,7 @@ struct PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnBtnLevelUpHoveredSoftTextureLoad;
 
 // PythonFunction PyWidget_BattlePass_PropView.PyWidget_BattlePass_PropView.OnBtnLevelUpPressedSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -334,9 +272,7 @@ struct PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad");
-static_assert(sizeof(PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad");
-static_assert(offsetof(PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_PropView_OnBtnLevelUpPressedSoftTextureLoad;
 
 }
 

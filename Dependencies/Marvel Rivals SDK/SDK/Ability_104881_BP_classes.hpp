@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
+#include "PyAbility_104881_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104881_BP.Ability_104881_BP_C
-// 0x0000 (0x29F0 - 0x29F0)
-class UAbility_104881_BP_C final : public UMarvelGameplayAbility
+// 0x0000 (0x2A48 - 0x2A48)
+class UAbility_104881_BP_C final : public UPyAbility_104881
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104881_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_104881_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104881_BP_C")
 	}
 	static class UAbility_104881_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_104881_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104881_BP_C) == 0x000008, "Wrong alignment on UAbility_104881_BP_C");
-static_assert(sizeof(UAbility_104881_BP_C) == 0x0029F0, "Wrong size on UAbility_104881_BP_C");
+DUMPER7_ASSERTS_UAbility_104881_BP_C;
 
 }
 

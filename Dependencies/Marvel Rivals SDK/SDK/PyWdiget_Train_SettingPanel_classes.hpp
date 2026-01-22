@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWdiget_Train_SettingPanel.PyWidget_Train_SettingPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Train_SettingPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Train_SettingPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Train_SettingPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Train_SettingPanel")
 	}
 	static class UPyWidget_Train_SettingPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Train_SettingPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Train_SettingPanel) == 0x000008, "Wrong alignment on UPyWidget_Train_SettingPanel");
-static_assert(sizeof(UPyWidget_Train_SettingPanel) == 0x000600, "Wrong size on UPyWidget_Train_SettingPanel");
-static_assert(offsetof(UPyWidget_Train_SettingPanel, WBP_Setting_Key_Class) == 0x0005F8, "Member 'UPyWidget_Train_SettingPanel::WBP_Setting_Key_Class' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Train_SettingPanel;
 
 }
 

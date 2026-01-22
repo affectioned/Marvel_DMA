@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SignalHandlerActorBP.SignalHandlerActorBP_C
-// 0x0010 (0x0B60 - 0x0B50)
+// 0x0020 (0x0B80 - 0x0B60)
 class ASignalHandlerActorBP_C final : public APySignalHandlerActor
 {
 public:
-	class UMarvelWidgetComponent*                 SignalWidgetComponent;                             // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Niagara;                                           // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelWidgetComponent*                 SignalWidgetComponent;                             // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Niagara;                                           // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SignalHandlerActorBP_C">();
+		BP_STATIC_CLASS_IMPL("SignalHandlerActorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SignalHandlerActorBP_C")
 	}
 	static class ASignalHandlerActorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASignalHandlerActorBP_C>();
 	}
 };
-static_assert(alignof(ASignalHandlerActorBP_C) == 0x000010, "Wrong alignment on ASignalHandlerActorBP_C");
-static_assert(sizeof(ASignalHandlerActorBP_C) == 0x000B60, "Wrong size on ASignalHandlerActorBP_C");
-static_assert(offsetof(ASignalHandlerActorBP_C, SignalWidgetComponent) == 0x000B48, "Member 'ASignalHandlerActorBP_C::SignalWidgetComponent' has a wrong offset!");
-static_assert(offsetof(ASignalHandlerActorBP_C, Niagara) == 0x000B50, "Member 'ASignalHandlerActorBP_C::Niagara' has a wrong offset!");
-static_assert(offsetof(ASignalHandlerActorBP_C, DefaultSceneRoot) == 0x000B58, "Member 'ASignalHandlerActorBP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ASignalHandlerActorBP_C;
 
 }
 

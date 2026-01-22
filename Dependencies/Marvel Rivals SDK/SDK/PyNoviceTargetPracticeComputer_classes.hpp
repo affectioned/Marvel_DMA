@@ -38,24 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceTargetPracticeComputer">();
+		STATIC_CLASS_IMPL("PyNoviceTargetPracticeComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceTargetPracticeComputer")
 	}
 	static class APyNoviceTargetPracticeComputer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNoviceTargetPracticeComputer>();
 	}
 };
-static_assert(alignof(APyNoviceTargetPracticeComputer) == 0x000010, "Wrong alignment on APyNoviceTargetPracticeComputer");
-static_assert(sizeof(APyNoviceTargetPracticeComputer) == 0x000860, "Wrong size on APyNoviceTargetPracticeComputer");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, AISpawnActorList) == 0x000790, "Member 'APyNoviceTargetPracticeComputer::AISpawnActorList' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, PrepareTime) == 0x0007A0, "Member 'APyNoviceTargetPracticeComputer::PrepareTime' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, PracticeTime) == 0x0007A4, "Member 'APyNoviceTargetPracticeComputer::PracticeTime' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, FirstPressActionTips) == 0x0007A8, "Member 'APyNoviceTargetPracticeComputer::FirstPressActionTips' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, TrainingText) == 0x000800, "Member 'APyNoviceTargetPracticeComputer::TrainingText' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, OnPracticeFirstStart) == 0x000818, "Member 'APyNoviceTargetPracticeComputer::OnPracticeFirstStart' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, OnPracticeTimeOut) == 0x000828, "Member 'APyNoviceTargetPracticeComputer::OnPracticeTimeOut' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, OnPracticeRestart) == 0x000838, "Member 'APyNoviceTargetPracticeComputer::OnPracticeRestart' has a wrong offset!");
-static_assert(offsetof(APyNoviceTargetPracticeComputer, OnPracticeExit) == 0x000848, "Member 'APyNoviceTargetPracticeComputer::OnPracticeExit' has a wrong offset!");
+DUMPER7_ASSERTS_APyNoviceTargetPracticeComputer;
 
 }
 

@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -39,18 +38,15 @@ enum class ESynergyState_105171 : uint8
 };
 
 // ScriptStruct Hero_1051.SinglePointHitResult
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct FSinglePointHitResult final
 {
 public:
-	struct FHitResult                             HitResult;                                         // 0x0000(0x01F0)(BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	int32                                         HorizontalIndex;                                   // 0x01F0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitResult;                                         // 0x0000(0x0208)(BlueprintVisible, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	int32                                         HorizontalIndex;                                   // 0x0208(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSinglePointHitResult) == 0x000008, "Wrong alignment on FSinglePointHitResult");
-static_assert(sizeof(FSinglePointHitResult) == 0x0001F8, "Wrong size on FSinglePointHitResult");
-static_assert(offsetof(FSinglePointHitResult, HitResult) == 0x000000, "Member 'FSinglePointHitResult::HitResult' has a wrong offset!");
-static_assert(offsetof(FSinglePointHitResult, HorizontalIndex) == 0x0001F0, "Member 'FSinglePointHitResult::HorizontalIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FSinglePointHitResult;
 
 // ScriptStruct Hero_1051.SingleRowHitResults
 // 0x0010 (0x0010 - 0x0000)
@@ -59,9 +55,7 @@ struct FSingleRowHitResults final
 public:
 	TArray<struct FSinglePointHitResult>          HitResults;                                        // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSingleRowHitResults) == 0x000008, "Wrong alignment on FSingleRowHitResults");
-static_assert(sizeof(FSingleRowHitResults) == 0x000010, "Wrong size on FSingleRowHitResults");
-static_assert(offsetof(FSingleRowHitResults, HitResults) == 0x000000, "Member 'FSingleRowHitResults::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_FSingleRowHitResults;
 
 // ScriptStruct Hero_1051.StoneRepInfo_105151
 // 0x0070 (0x0070 - 0x0000)
@@ -72,28 +66,19 @@ public:
 	int32                                         StoneRow;                                          // 0x0060(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0xC];                                       // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FStoneRepInfo_105151) == 0x000010, "Wrong alignment on FStoneRepInfo_105151");
-static_assert(sizeof(FStoneRepInfo_105151) == 0x000070, "Wrong size on FStoneRepInfo_105151");
-static_assert(offsetof(FStoneRepInfo_105151, Transform) == 0x000000, "Member 'FStoneRepInfo_105151::Transform' has a wrong offset!");
-static_assert(offsetof(FStoneRepInfo_105151, StoneRow) == 0x000060, "Member 'FStoneRepInfo_105151::StoneRow' has a wrong offset!");
+DUMPER7_ASSERTS_FStoneRepInfo_105151;
 
 // ScriptStruct Hero_1051.ThrowMaterialInfo_105162
-// 0x0068 (0x0068 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FThrowMaterialInfo_105162 final
 {
 public:
-	struct FPortableMaterialSlotName              MaterialSlotName;                                  // 0x0000(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMaterialTag                           MaterialTag;                                       // 0x0048(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      OriginMaterial;                                    // 0x0058(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      ThrowMaterial;                                     // 0x0060(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMaterialTag                           MaterialTag;                                       // 0x0000(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      OriginMaterial;                                    // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      ThrowMaterial;                                     // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FThrowMaterialInfo_105162) == 0x000008, "Wrong alignment on FThrowMaterialInfo_105162");
-static_assert(sizeof(FThrowMaterialInfo_105162) == 0x000068, "Wrong size on FThrowMaterialInfo_105162");
-static_assert(offsetof(FThrowMaterialInfo_105162, MaterialSlotName) == 0x000000, "Member 'FThrowMaterialInfo_105162::MaterialSlotName' has a wrong offset!");
-static_assert(offsetof(FThrowMaterialInfo_105162, MaterialTag) == 0x000048, "Member 'FThrowMaterialInfo_105162::MaterialTag' has a wrong offset!");
-static_assert(offsetof(FThrowMaterialInfo_105162, OriginMaterial) == 0x000058, "Member 'FThrowMaterialInfo_105162::OriginMaterial' has a wrong offset!");
-static_assert(offsetof(FThrowMaterialInfo_105162, ThrowMaterial) == 0x000060, "Member 'FThrowMaterialInfo_105162::ThrowMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_FThrowMaterialInfo_105162;
 
 }
 

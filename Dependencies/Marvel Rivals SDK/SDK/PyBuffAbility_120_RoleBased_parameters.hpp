@@ -22,10 +22,7 @@ public:
 	float                                         InMaxHealth;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelHealthModifierAbility_RoleBased_GetModifierValue) == 0x000004, "Wrong alignment on PyMarvelHealthModifierAbility_RoleBased_GetModifierValue");
-static_assert(sizeof(PyMarvelHealthModifierAbility_RoleBased_GetModifierValue) == 0x000008, "Wrong size on PyMarvelHealthModifierAbility_RoleBased_GetModifierValue");
-static_assert(offsetof(PyMarvelHealthModifierAbility_RoleBased_GetModifierValue, InMaxHealth) == 0x000000, "Member 'PyMarvelHealthModifierAbility_RoleBased_GetModifierValue::InMaxHealth' has a wrong offset!");
-static_assert(offsetof(PyMarvelHealthModifierAbility_RoleBased_GetModifierValue, ReturnValue) == 0x000004, "Member 'PyMarvelHealthModifierAbility_RoleBased_GetModifierValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelHealthModifierAbility_RoleBased_GetModifierValue;
 
 // PythonFunction PyBuffAbility_120_RoleBased.PyMarvelAttributeRegenModifierAbility_RoleBased.GetModifierValue
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue) == 0x000004, "Wrong alignment on PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue");
-static_assert(sizeof(PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue) == 0x000004, "Wrong size on PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue");
-static_assert(offsetof(PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue, ReturnValue) == 0x000000, "Member 'PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelAttributeRegenModifierAbility_RoleBased_GetModifierValue;
 
 }
 

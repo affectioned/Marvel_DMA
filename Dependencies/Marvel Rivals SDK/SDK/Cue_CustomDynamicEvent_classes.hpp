@@ -23,15 +23,18 @@ class UCue_CustomDynamicEvent_C final : public UMarvelCueNotify_CustomDynamicEve
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_CustomDynamicEvent_C">();
+		BP_STATIC_CLASS_IMPL("Cue_CustomDynamicEvent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_CustomDynamicEvent_C")
 	}
 	static class UCue_CustomDynamicEvent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_CustomDynamicEvent_C>();
 	}
 };
-static_assert(alignof(UCue_CustomDynamicEvent_C) == 0x000008, "Wrong alignment on UCue_CustomDynamicEvent_C");
-static_assert(sizeof(UCue_CustomDynamicEvent_C) == 0x0002B0, "Wrong size on UCue_CustomDynamicEvent_C");
+DUMPER7_ASSERTS_UCue_CustomDynamicEvent_C;
 
 }
 

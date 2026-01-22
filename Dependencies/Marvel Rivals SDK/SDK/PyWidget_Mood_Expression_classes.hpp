@@ -28,20 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHashTextWidgetConfig_Mood">();
+		STATIC_CLASS_IMPL("PyHashTextWidgetConfig_Mood")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHashTextWidgetConfig_Mood")
 	}
 	static class UPyHashTextWidgetConfig_Mood* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHashTextWidgetConfig_Mood>();
 	}
 };
-static_assert(alignof(UPyHashTextWidgetConfig_Mood) == 0x000008, "Wrong alignment on UPyHashTextWidgetConfig_Mood");
-static_assert(sizeof(UPyHashTextWidgetConfig_Mood) == 0x000038, "Wrong size on UPyHashTextWidgetConfig_Mood");
-static_assert(offsetof(UPyHashTextWidgetConfig_Mood, WidgetWidth) == 0x000030, "Member 'UPyHashTextWidgetConfig_Mood::WidgetWidth' has a wrong offset!");
-static_assert(offsetof(UPyHashTextWidgetConfig_Mood, IsDynamic) == 0x000034, "Member 'UPyHashTextWidgetConfig_Mood::IsDynamic' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHashTextWidgetConfig_Mood;
 
 // PythonClass PyWidget_Mood_Expression.PyWidget_Mood_Expression
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mood_Expression : public UPyMarvelUserWidget
 {
 public:
@@ -53,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mood_Expression">();
+		STATIC_CLASS_IMPL("PyWidget_Mood_Expression")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_Expression")
 	}
 	static class UPyWidget_Mood_Expression* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mood_Expression>();
 	}
 };
-static_assert(alignof(UPyWidget_Mood_Expression) == 0x000008, "Wrong alignment on UPyWidget_Mood_Expression");
-static_assert(sizeof(UPyWidget_Mood_Expression) == 0x0005C0, "Wrong size on UPyWidget_Mood_Expression");
+DUMPER7_ASSERTS_UPyWidget_Mood_Expression;
 
 }
 

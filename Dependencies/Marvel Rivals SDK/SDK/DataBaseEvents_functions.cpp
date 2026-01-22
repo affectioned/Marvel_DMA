@@ -117,31 +117,6 @@ TArray<struct FDependencyHeroIDSet> UHitEvent::GetEventHeroIDsAny()
 }
 
 
-// PythonFunction DataBaseEvents.FinishEvent.GetEventMapIDsAll
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSet<class FString>                     ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TSet<class FString> UFinishEvent::GetEventMapIDsAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FinishEvent", "GetEventMapIDsAll");
-
-	Params::FinishEvent_GetEventMapIDsAll Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction DataBaseEvents.UnitHitEvent.GetEventHeroIDsAll
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -180,6 +155,31 @@ TArray<struct FDependencyHeroIDSet> UUnitHitEvent::GetEventHeroIDsAny()
 		Func = Class->GetFunction("UnitHitEvent", "GetEventHeroIDsAny");
 
 	Params::UnitHitEvent_GetEventHeroIDsAny Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction DataBaseEvents.FinishEvent.GetEventMapIDsAll
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSet<class FString>                     ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TSet<class FString> UFinishEvent::GetEventMapIDsAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FinishEvent", "GetEventMapIDsAll");
+
+	Params::FinishEvent_GetEventMapIDsAll Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -267,6 +267,31 @@ TArray<struct FDependencyHeroIDSet> UKillEvent::GetEventHeroIDsAny()
 }
 
 
+// PythonFunction DataBaseEvents.OccupyCamp.GetEventMapIDsAll
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSet<class FString>                     ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+TSet<class FString> UOccupyCamp::GetEventMapIDsAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("OccupyCamp", "GetEventMapIDsAll");
+
+	Params::OccupyCamp_GetEventMapIDsAll Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction DataBaseEvents.AssistEvent.GetEventHeroIDsAll
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -330,31 +355,6 @@ TArray<struct FDependencyHeroIDSet> UReviveEvent::GetEventHeroIDsAny()
 		Func = Class->GetFunction("ReviveEvent", "GetEventHeroIDsAny");
 
 	Params::ReviveEvent_GetEventHeroIDsAny Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction DataBaseEvents.OccupyCamp.GetEventMapIDsAll
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSet<class FString>                     ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-TSet<class FString> UOccupyCamp::GetEventMapIDsAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OccupyCamp", "GetEventMapIDsAll");
-
-	Params::OccupyCamp_GetEventMapIDsAll Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

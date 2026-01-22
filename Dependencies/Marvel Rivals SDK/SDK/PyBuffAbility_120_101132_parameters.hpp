@@ -25,11 +25,7 @@ public:
 	int32                                         NewCount;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OldCount;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10113206_OnGameplayEffectStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_120_10113206_OnGameplayEffectStackChange");
-static_assert(sizeof(PyBuffAbility_120_10113206_OnGameplayEffectStackChange) == 0x000010, "Wrong size on PyBuffAbility_120_10113206_OnGameplayEffectStackChange");
-static_assert(offsetof(PyBuffAbility_120_10113206_OnGameplayEffectStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_120_10113206_OnGameplayEffectStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10113206_OnGameplayEffectStackChange, NewCount) == 0x000008, "Member 'PyBuffAbility_120_10113206_OnGameplayEffectStackChange::NewCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10113206_OnGameplayEffectStackChange, OldCount) == 0x00000C, "Member 'PyBuffAbility_120_10113206_OnGameplayEffectStackChange::OldCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10113206_OnGameplayEffectStackChange;
 
 // PythonFunction PyBuffAbility_120_101132.PyBuffAbility_120_10113206.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +34,7 @@ struct PyBuffAbility_120_10113206_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10113206_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_120_10113206_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_120_10113206_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_120_10113206_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_120_10113206_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10113206_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10113206_OnAbilityActivate;
 
 // PythonFunction PyBuffAbility_120_101132.PyBuffAbility_120_10113205.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
@@ -49,9 +43,7 @@ struct PyBuffAbility_120_10113205_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10113205_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_120_10113205_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_120_10113205_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_120_10113205_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_120_10113205_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10113205_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10113205_OnAbilityActivate;
 
 }
 

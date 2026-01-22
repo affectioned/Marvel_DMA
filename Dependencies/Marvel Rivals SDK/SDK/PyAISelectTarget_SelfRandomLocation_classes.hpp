@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_SelfRandomLocation">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_SelfRandomLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_SelfRandomLocation")
 	}
 	static class UPyAISelectTarget_SelfRandomLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_SelfRandomLocation>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_SelfRandomLocation) == 0x000008, "Wrong alignment on UPyAISelectTarget_SelfRandomLocation");
-static_assert(sizeof(UPyAISelectTarget_SelfRandomLocation) == 0x000080, "Wrong size on UPyAISelectTarget_SelfRandomLocation");
-static_assert(offsetof(UPyAISelectTarget_SelfRandomLocation, MinRadius) == 0x000070, "Member 'UPyAISelectTarget_SelfRandomLocation::MinRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_SelfRandomLocation, MaxRadius) == 0x000074, "Member 'UPyAISelectTarget_SelfRandomLocation::MaxRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_SelfRandomLocation, RangeHitDirPass) == 0x000078, "Member 'UPyAISelectTarget_SelfRandomLocation::RangeHitDirPass' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_SelfRandomLocation, CheckTarget) == 0x000079, "Member 'UPyAISelectTarget_SelfRandomLocation::CheckTarget' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_SelfRandomLocation, BlockTarget) == 0x00007A, "Member 'UPyAISelectTarget_SelfRandomLocation::BlockTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_SelfRandomLocation;
 
 }
 

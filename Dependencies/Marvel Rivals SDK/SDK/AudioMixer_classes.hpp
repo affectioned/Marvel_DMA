@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioBusSubsystem">();
+		STATIC_CLASS_IMPL("AudioBusSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioBusSubsystem")
 	}
 	static class UAudioBusSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioBusSubsystem>();
 	}
 };
-static_assert(alignof(UAudioBusSubsystem) == 0x000008, "Wrong alignment on UAudioBusSubsystem");
-static_assert(sizeof(UAudioBusSubsystem) == 0x000098, "Wrong size on UAudioBusSubsystem");
+DUMPER7_ASSERTS_UAudioBusSubsystem;
 
 // Class AudioMixer.AudioDeviceNotificationSubsystem
 // 0x00F8 (0x0130 - 0x0038)
@@ -61,21 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioDeviceNotificationSubsystem">();
+		STATIC_CLASS_IMPL("AudioDeviceNotificationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioDeviceNotificationSubsystem")
 	}
 	static class UAudioDeviceNotificationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioDeviceNotificationSubsystem>();
 	}
 };
-static_assert(alignof(UAudioDeviceNotificationSubsystem) == 0x000008, "Wrong alignment on UAudioDeviceNotificationSubsystem");
-static_assert(sizeof(UAudioDeviceNotificationSubsystem) == 0x000130, "Wrong size on UAudioDeviceNotificationSubsystem");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultCaptureDeviceChanged) == 0x000040, "Member 'UAudioDeviceNotificationSubsystem::DefaultCaptureDeviceChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultRenderDeviceChanged) == 0x000068, "Member 'UAudioDeviceNotificationSubsystem::DefaultRenderDeviceChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceAdded) == 0x000090, "Member 'UAudioDeviceNotificationSubsystem::DeviceAdded' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceRemoved) == 0x0000B8, "Member 'UAudioDeviceNotificationSubsystem::DeviceRemoved' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceStateChanged) == 0x0000E0, "Member 'UAudioDeviceNotificationSubsystem::DeviceStateChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceSwitched) == 0x000108, "Member 'UAudioDeviceNotificationSubsystem::DeviceSwitched' has a wrong offset!");
+DUMPER7_ASSERTS_UAudioDeviceNotificationSubsystem;
 
 // Class AudioMixer.SubmixEffectDynamicsProcessorPreset
 // 0x00E8 (0x0158 - 0x0070)
@@ -94,16 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectDynamicsProcessorPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectDynamicsProcessorPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectDynamicsProcessorPreset")
 	}
 	static class USubmixEffectDynamicsProcessorPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectDynamicsProcessorPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectDynamicsProcessorPreset) == 0x000008, "Wrong alignment on USubmixEffectDynamicsProcessorPreset");
-static_assert(sizeof(USubmixEffectDynamicsProcessorPreset) == 0x000158, "Wrong size on USubmixEffectDynamicsProcessorPreset");
-static_assert(offsetof(USubmixEffectDynamicsProcessorPreset, Settings) == 0x0000F8, "Member 'USubmixEffectDynamicsProcessorPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectDynamicsProcessorPreset;
 
 // Class AudioMixer.AudioMixerBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -152,15 +154,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioMixerBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AudioMixerBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioMixerBlueprintLibrary")
 	}
 	static class UAudioMixerBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioMixerBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAudioMixerBlueprintLibrary) == 0x000008, "Wrong alignment on UAudioMixerBlueprintLibrary");
-static_assert(sizeof(UAudioMixerBlueprintLibrary) == 0x000030, "Wrong size on UAudioMixerBlueprintLibrary");
+DUMPER7_ASSERTS_UAudioMixerBlueprintLibrary;
 
 // Class AudioMixer.SynthSound
 // 0x0020 (0x04B0 - 0x0490)
@@ -173,16 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthSound">();
+		STATIC_CLASS_IMPL("SynthSound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthSound")
 	}
 	static class USynthSound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthSound>();
 	}
 };
-static_assert(alignof(USynthSound) == 0x000008, "Wrong alignment on USynthSound");
-static_assert(sizeof(USynthSound) == 0x0004B0, "Wrong size on USynthSound");
-static_assert(offsetof(USynthSound, OwningSynthComponent) == 0x000490, "Member 'USynthSound::OwningSynthComponent' has a wrong offset!");
+DUMPER7_ASSERTS_USynthSound;
 
 // Class AudioMixer.SynthComponent
 // 0x0660 (0x09A0 - 0x0340)
@@ -245,31 +252,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthComponent">();
+		STATIC_CLASS_IMPL("SynthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthComponent")
 	}
 	static class USynthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthComponent>();
 	}
 };
-static_assert(alignof(USynthComponent) == 0x000010, "Wrong alignment on USynthComponent");
-static_assert(sizeof(USynthComponent) == 0x0009A0, "Wrong size on USynthComponent");
-static_assert(offsetof(USynthComponent, AttenuationSettings) == 0x000340, "Member 'USynthComponent::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AttenuationOverrides) == 0x000348, "Member 'USynthComponent::AttenuationOverrides' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ConcurrencySettings) == 0x000718, "Member 'USynthComponent::ConcurrencySettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ConcurrencySet) == 0x000720, "Member 'USynthComponent::ConcurrencySet' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ModulationRouting) == 0x000770, "Member 'USynthComponent::ModulationRouting' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundClass) == 0x0008D8, "Member 'USynthComponent::SoundClass' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SourceEffectChain) == 0x0008E0, "Member 'USynthComponent::SourceEffectChain' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundSubmix) == 0x0008E8, "Member 'USynthComponent::SoundSubmix' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundSubmixSends) == 0x0008F0, "Member 'USynthComponent::SoundSubmixSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, BusSends) == 0x000900, "Member 'USynthComponent::BusSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, PreEffectBusSends) == 0x000910, "Member 'USynthComponent::PreEffectBusSends' has a wrong offset!");
-static_assert(offsetof(USynthComponent, EnvelopeFollowerAttackTime) == 0x000924, "Member 'USynthComponent::EnvelopeFollowerAttackTime' has a wrong offset!");
-static_assert(offsetof(USynthComponent, EnvelopeFollowerReleaseTime) == 0x000928, "Member 'USynthComponent::EnvelopeFollowerReleaseTime' has a wrong offset!");
-static_assert(offsetof(USynthComponent, OnAudioEnvelopeValue) == 0x000930, "Member 'USynthComponent::OnAudioEnvelopeValue' has a wrong offset!");
-static_assert(offsetof(USynthComponent, Synth) == 0x000960, "Member 'USynthComponent::Synth' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AudioComponent) == 0x000968, "Member 'USynthComponent::AudioComponent' has a wrong offset!");
+DUMPER7_ASSERTS_USynthComponent;
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
 // 0x0048 (0x00B8 - 0x0070)
@@ -285,16 +279,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectSubmixEQPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectSubmixEQPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectSubmixEQPreset")
 	}
 	static class USubmixEffectSubmixEQPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectSubmixEQPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x000008, "Wrong alignment on USubmixEffectSubmixEQPreset");
-static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x0000B8, "Wrong size on USubmixEffectSubmixEQPreset");
-static_assert(offsetof(USubmixEffectSubmixEQPreset, Settings) == 0x0000A8, "Member 'USubmixEffectSubmixEQPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectSubmixEQPreset;
 
 // Class AudioMixer.SubmixEffectReverbPreset
 // 0x00A8 (0x0118 - 0x0070)
@@ -311,16 +307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectReverbPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectReverbPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectReverbPreset")
 	}
 	static class USubmixEffectReverbPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
-static_assert(sizeof(USubmixEffectReverbPreset) == 0x000118, "Wrong size on USubmixEffectReverbPreset");
-static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x0000D8, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_USubmixEffectReverbPreset;
 
 // Class AudioMixer.AudioGenerator
 // 0x0080 (0x00B0 - 0x0030)
@@ -332,15 +330,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioGenerator">();
+		STATIC_CLASS_IMPL("AudioGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioGenerator")
 	}
 	static class UAudioGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioGenerator>();
 	}
 };
-static_assert(alignof(UAudioGenerator) == 0x000008, "Wrong alignment on UAudioGenerator");
-static_assert(sizeof(UAudioGenerator) == 0x0000B0, "Wrong size on UAudioGenerator");
+DUMPER7_ASSERTS_UAudioGenerator;
 
 // Class AudioMixer.QuartzClockHandle
 // 0x01D8 (0x0208 - 0x0030)
@@ -382,22 +383,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QuartzClockHandle">();
+		STATIC_CLASS_IMPL("QuartzClockHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuartzClockHandle")
 	}
 	static class UQuartzClockHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuartzClockHandle>();
 	}
 };
-static_assert(alignof(UQuartzClockHandle) == 0x000008, "Wrong alignment on UQuartzClockHandle");
-static_assert(sizeof(UQuartzClockHandle) == 0x000208, "Wrong size on UQuartzClockHandle");
+DUMPER7_ASSERTS_UQuartzClockHandle;
 
 // Class AudioMixer.QuartzSubsystem
-// 0x0020 (0x0068 - 0x0048)
+// 0x0020 (0x0070 - 0x0050)
 class UQuartzSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	uint8                                         Pad_48[0x20];                                      // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x20];                                      // 0x0050(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UQuartzClockHandle* CreateNewClock(const class UObject* WorldContextObject, class FName ClockName, const struct FQuartzClockSettings& InSettings, bool bOverrideSettingsIfClockExists, bool bUseAudioEngineClockManager);
@@ -423,15 +427,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QuartzSubsystem">();
+		STATIC_CLASS_IMPL("QuartzSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuartzSubsystem")
 	}
 	static class UQuartzSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuartzSubsystem>();
 	}
 };
-static_assert(alignof(UQuartzSubsystem) == 0x000008, "Wrong alignment on UQuartzSubsystem");
-static_assert(sizeof(UQuartzSubsystem) == 0x000068, "Wrong size on UQuartzSubsystem");
+DUMPER7_ASSERTS_UQuartzSubsystem;
 
 }
 

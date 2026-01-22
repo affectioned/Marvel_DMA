@@ -28,21 +28,16 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_200013_SetAbility) == 0x000008, "Wrong alignment on PyUIController_200013_SetAbility");
-static_assert(sizeof(PyUIController_200013_SetAbility) == 0x000010, "Wrong size on PyUIController_200013_SetAbility");
-static_assert(offsetof(PyUIController_200013_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_200013_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_200013_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_200013_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_200013_SetAbility;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.OnLanded
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyAbility_200013_OnLanded final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_200013_OnLanded) == 0x000008, "Wrong alignment on PyAbility_200013_OnLanded");
-static_assert(sizeof(PyAbility_200013_OnLanded) == 0x0001F0, "Wrong size on PyAbility_200013_OnLanded");
-static_assert(offsetof(PyAbility_200013_OnLanded, Hit) == 0x000000, "Member 'PyAbility_200013_OnLanded::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_OnLanded;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -51,9 +46,7 @@ struct PyAbility_200013_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200013_CanActivate) == 0x000001, "Wrong alignment on PyAbility_200013_CanActivate");
-static_assert(sizeof(PyAbility_200013_CanActivate) == 0x000001, "Wrong size on PyAbility_200013_CanActivate");
-static_assert(offsetof(PyAbility_200013_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200013_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_CanActivate;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.TryMakeTriggerContext
 // 0x0298 (0x0298 - 0x0000)
@@ -63,10 +56,7 @@ public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0290(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200013_TryMakeTriggerContext) == 0x000008, "Wrong alignment on PyAbility_200013_TryMakeTriggerContext");
-static_assert(sizeof(PyAbility_200013_TryMakeTriggerContext) == 0x000298, "Wrong size on PyAbility_200013_TryMakeTriggerContext");
-static_assert(offsetof(PyAbility_200013_TryMakeTriggerContext, EventData) == 0x000000, "Member 'PyAbility_200013_TryMakeTriggerContext::EventData' has a wrong offset!");
-static_assert(offsetof(PyAbility_200013_TryMakeTriggerContext, ReturnValue) == 0x000290, "Member 'PyAbility_200013_TryMakeTriggerContext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_TryMakeTriggerContext;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -75,9 +65,7 @@ struct PyAbility_200013_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_200013_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_200013_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_200013_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_200013_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_200013_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_200013_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.OnDashFinish
 // 0x0001 (0x0001 - 0x0000)
@@ -86,9 +74,7 @@ struct PyAbility_200013_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200013_OnDashFinish) == 0x000001, "Wrong alignment on PyAbility_200013_OnDashFinish");
-static_assert(sizeof(PyAbility_200013_OnDashFinish) == 0x000001, "Wrong size on PyAbility_200013_OnDashFinish");
-static_assert(offsetof(PyAbility_200013_OnDashFinish, Reason) == 0x000000, "Member 'PyAbility_200013_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_OnDashFinish;
 
 // PythonFunction PyAbility_200013.PyAbility_200013.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -97,9 +83,7 @@ struct PyAbility_200013_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200013_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_200013_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_200013_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_200013_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_200013_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_200013_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200013_K2_OnEndAbility;
 
 }
 

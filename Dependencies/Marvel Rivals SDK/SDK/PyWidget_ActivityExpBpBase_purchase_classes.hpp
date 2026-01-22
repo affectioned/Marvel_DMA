@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
-#include "SlateCore_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "PyWidget_ActivityExpBpBase_PanelBase_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_ActivityExpBpBase_purchase.PyWidget_ActivityExpBpBase_Purchase_SmallReward
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_Purchase_SmallReward : public UPyMarvelUserWidget
 {
 public:
@@ -30,32 +30,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Purchase_SmallReward">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Purchase_SmallReward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Purchase_SmallReward")
 	}
 	static class UPyWidget_ActivityExpBpBase_Purchase_SmallReward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Purchase_SmallReward>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Purchase_SmallReward) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Purchase_SmallReward");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Purchase_SmallReward) == 0x0005C0, "Wrong size on UPyWidget_ActivityExpBpBase_Purchase_SmallReward");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Purchase_SmallReward;
 
 // PythonClass PyWidget_ActivityExpBpBase_purchase.PyWidget_ActivityExpBpBase_Purchase
-// 0x0110 (0x0710 - 0x0600)
+// 0x0110 (0x0718 - 0x0608)
 class UPyWidget_ActivityExpBpBase_Purchase : public UPyWidget_ActivityExpBpBase_PanelBase
 {
 public:
-	TSubclassOf<class UPyWidget_ActivityExpBpBase_Purchase_SmallReward> SmallReward;                 // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedSlateColor;                                     // 0x0608(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedLinearColor;                                    // 0x061C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x062C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhiteLinearColor;                                  // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ConfirmKeyPromptVisible;                           // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_651[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          ConfirmHotKey;                                     // 0x0658(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          CancelKeyPromptVisible;                            // 0x06B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6B1[0x7];                                      // 0x06B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          CancelHotKey;                                      // 0x06B8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_ActivityExpBpBase_Purchase_SmallReward> SmallReward;                 // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedSlateColor;                                     // 0x0610(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedLinearColor;                                    // 0x0624(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x0634(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhiteLinearColor;                                  // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ConfirmKeyPromptVisible;                           // 0x0658(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_659[0x7];                                      // 0x0659(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          ConfirmHotKey;                                     // 0x0660(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          CancelKeyPromptVisible;                            // 0x06B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6B9[0x7];                                      // 0x06B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          CancelHotKey;                                      // 0x06C0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -67,24 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_Purchase">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_Purchase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_Purchase")
 	}
 	static class UPyWidget_ActivityExpBpBase_Purchase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_Purchase>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_Purchase) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_Purchase");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_Purchase) == 0x000710, "Wrong size on UPyWidget_ActivityExpBpBase_Purchase");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, SmallReward) == 0x000600, "Member 'UPyWidget_ActivityExpBpBase_Purchase::SmallReward' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, RedSlateColor) == 0x000608, "Member 'UPyWidget_ActivityExpBpBase_Purchase::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, RedLinearColor) == 0x00061C, "Member 'UPyWidget_ActivityExpBpBase_Purchase::RedLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, WhiteSlateColor) == 0x00062C, "Member 'UPyWidget_ActivityExpBpBase_Purchase::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, WhiteLinearColor) == 0x000640, "Member 'UPyWidget_ActivityExpBpBase_Purchase::WhiteLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, ConfirmKeyPromptVisible) == 0x000650, "Member 'UPyWidget_ActivityExpBpBase_Purchase::ConfirmKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, ConfirmHotKey) == 0x000658, "Member 'UPyWidget_ActivityExpBpBase_Purchase::ConfirmHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, CancelKeyPromptVisible) == 0x0006B0, "Member 'UPyWidget_ActivityExpBpBase_Purchase::CancelKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ActivityExpBpBase_Purchase, CancelHotKey) == 0x0006B8, "Member 'UPyWidget_ActivityExpBpBase_Purchase::CancelHotKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_Purchase;
 
 }
 

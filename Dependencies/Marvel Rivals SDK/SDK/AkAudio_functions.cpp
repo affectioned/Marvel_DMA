@@ -1347,6 +1347,33 @@ void UAkComponent::SetSwitch(class UAkSwitchValue* SwitchValue, const class FStr
 }
 
 
+// Function AkAudio.AkComponent.UpdateWorldPosition
+// (Final, BlueprintCosmetic, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   InWorldPosition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRotator&                  InWorldRotation                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAkComponent::UpdateWorldPosition(const struct FVector& InWorldPosition, const struct FRotator& InWorldRotation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkComponent", "UpdateWorldPosition");
+
+	Params::AkComponent_UpdateWorldPosition Parms{};
+
+	Parms.InWorldPosition = std::move(InWorldPosition);
+	Parms.InWorldRotation = std::move(InWorldRotation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkComponent.UseEarlyReflections
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -2806,9 +2833,10 @@ void UAkGameplayStatics::PostEventByName(const class FString& EventName, class A
 // Parameters:
 // class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bEnsurePlay                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bForceReplay                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::PostEventGlobal(class UAkAudioEvent* AkEvent, bool bEnsurePlay)
+int32 UAkGameplayStatics::PostEventGlobal(class UAkAudioEvent* AkEvent, bool bEnsurePlay, bool bForceReplay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2819,6 +2847,7 @@ int32 UAkGameplayStatics::PostEventGlobal(class UAkAudioEvent* AkEvent, bool bEn
 
 	Parms.AkEvent = AkEvent;
 	Parms.bEnsurePlay = bEnsurePlay;
+	Parms.bForceReplay = bForceReplay;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

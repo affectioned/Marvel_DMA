@@ -26,11 +26,7 @@ public:
 	struct FMarvelPVE_EffectSpec                  PVE_Effect;                                        // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FMarvelPVE_ActiveEffectHandle          PVE_ActiveEffectHandle;                            // 0x0038(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelPVE_AmmoPerShotCalculation_Execute) == 0x000008, "Wrong alignment on PyMarvelPVE_AmmoPerShotCalculation_Execute");
-static_assert(sizeof(PyMarvelPVE_AmmoPerShotCalculation_Execute) == 0x000048, "Wrong size on PyMarvelPVE_AmmoPerShotCalculation_Execute");
-static_assert(offsetof(PyMarvelPVE_AmmoPerShotCalculation_Execute, Character) == 0x000000, "Member 'PyMarvelPVE_AmmoPerShotCalculation_Execute::Character' has a wrong offset!");
-static_assert(offsetof(PyMarvelPVE_AmmoPerShotCalculation_Execute, PVE_Effect) == 0x000008, "Member 'PyMarvelPVE_AmmoPerShotCalculation_Execute::PVE_Effect' has a wrong offset!");
-static_assert(offsetof(PyMarvelPVE_AmmoPerShotCalculation_Execute, PVE_ActiveEffectHandle) == 0x000038, "Member 'PyMarvelPVE_AmmoPerShotCalculation_Execute::PVE_ActiveEffectHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelPVE_AmmoPerShotCalculation_Execute;
 
 // PythonFunction PyBuffAbility_10130_10141014.PyBuffAbility_10130_10141014.OnBuffStackChange
 // 0x0010 (0x0010 - 0x0000)
@@ -41,11 +37,7 @@ public:
 	int32                                         NewStackCount;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PreviousStackCount;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10141014_OnBuffStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_10130_10141014_OnBuffStackChange");
-static_assert(sizeof(PyBuffAbility_10130_10141014_OnBuffStackChange) == 0x000010, "Wrong size on PyBuffAbility_10130_10141014_OnBuffStackChange");
-static_assert(offsetof(PyBuffAbility_10130_10141014_OnBuffStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_10130_10141014_OnBuffStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10141014_OnBuffStackChange, NewStackCount) == 0x000008, "Member 'PyBuffAbility_10130_10141014_OnBuffStackChange::NewStackCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10130_10141014_OnBuffStackChange, PreviousStackCount) == 0x00000C, "Member 'PyBuffAbility_10130_10141014_OnBuffStackChange::PreviousStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10141014_OnBuffStackChange;
 
 }
 

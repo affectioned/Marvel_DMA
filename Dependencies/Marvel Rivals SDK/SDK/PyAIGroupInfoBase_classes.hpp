@@ -30,7 +30,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAIGroupInfoBase">();
+		STATIC_CLASS_IMPL("PyAIGroupInfoBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAIGroupInfoBase")
 	}
 	static class APyAIGroupInfoBase* GetDefaultObj()
 	{
@@ -38,9 +42,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyAIGroupInfoBase) == 0x000010, "Wrong alignment on APyAIGroupInfoBase");
-static_assert(sizeof(APyAIGroupInfoBase) == 0x000750, "Wrong size on APyAIGroupInfoBase");
-static_assert(offsetof(APyAIGroupInfoBase, BTreeComp) == 0x000740, "Member 'APyAIGroupInfoBase::BTreeComp' has a wrong offset!");
+DUMPER7_ASSERTS_APyAIGroupInfoBase;
 
 }
 

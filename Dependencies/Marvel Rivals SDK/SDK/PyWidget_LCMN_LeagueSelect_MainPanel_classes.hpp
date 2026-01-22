@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LCMN_LeagueSelect_MainPanel.PyWidget_LCMN_LeagueSelect_MainPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_LCMN_LeagueSelect_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             BgMRC;                                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgClash;                                           // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgMRC;                                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgClash;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_LeagueSelect_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_LeagueSelect_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_LeagueSelect_MainPanel")
 	}
 	static class UPyWidget_LCMN_LeagueSelect_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_LeagueSelect_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_LeagueSelect_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_LCMN_LeagueSelect_MainPanel");
-static_assert(sizeof(UPyWidget_LCMN_LeagueSelect_MainPanel) == 0x000608, "Wrong size on UPyWidget_LCMN_LeagueSelect_MainPanel");
-static_assert(offsetof(UPyWidget_LCMN_LeagueSelect_MainPanel, BgMRC) == 0x0005F8, "Member 'UPyWidget_LCMN_LeagueSelect_MainPanel::BgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_LeagueSelect_MainPanel, BgClash) == 0x000600, "Member 'UPyWidget_LCMN_LeagueSelect_MainPanel::BgClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LCMN_LeagueSelect_MainPanel;
 
 }
 

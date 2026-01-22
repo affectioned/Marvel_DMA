@@ -55,10 +55,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                InterfaceObject;                                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNamedInterface) == 0x000008, "Wrong alignment on FNamedInterface");
-static_assert(sizeof(FNamedInterface) == 0x000018, "Wrong size on FNamedInterface");
-static_assert(offsetof(FNamedInterface, InterfaceName) == 0x000000, "Member 'FNamedInterface::InterfaceName' has a wrong offset!");
-static_assert(offsetof(FNamedInterface, InterfaceObject) == 0x000010, "Member 'FNamedInterface::InterfaceObject' has a wrong offset!");
+DUMPER7_ASSERTS_FNamedInterface;
 
 // ScriptStruct OnlineSubsystem.NamedInterfaceDef
 // 0x0020 (0x0020 - 0x0000)
@@ -69,10 +66,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 InterfaceClassName;                                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNamedInterfaceDef) == 0x000008, "Wrong alignment on FNamedInterfaceDef");
-static_assert(sizeof(FNamedInterfaceDef) == 0x000020, "Wrong size on FNamedInterfaceDef");
-static_assert(offsetof(FNamedInterfaceDef, InterfaceName) == 0x000000, "Member 'FNamedInterfaceDef::InterfaceName' has a wrong offset!");
-static_assert(offsetof(FNamedInterfaceDef, InterfaceClassName) == 0x000010, "Member 'FNamedInterfaceDef::InterfaceClassName' has a wrong offset!");
+DUMPER7_ASSERTS_FNamedInterfaceDef;
 
 }
 

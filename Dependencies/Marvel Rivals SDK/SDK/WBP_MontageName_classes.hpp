@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MontageName_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MontageName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MontageName_C")
 	}
 	static class UWBP_MontageName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MontageName_C>();
 	}
 };
-static_assert(alignof(UWBP_MontageName_C) == 0x000008, "Wrong alignment on UWBP_MontageName_C");
-static_assert(sizeof(UWBP_MontageName_C) == 0x000410, "Wrong size on UWBP_MontageName_C");
-static_assert(offsetof(UWBP_MontageName_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_MontageName_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, AnimShow) == 0x0003C0, "Member 'UWBP_MontageName_C::AnimShow' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, EventName) == 0x0003C8, "Member 'UWBP_MontageName_C::EventName' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, MarvelHorizontalBox_125) == 0x0003D0, "Member 'UWBP_MontageName_C::MarvelHorizontalBox_125' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, MontageName) == 0x0003D8, "Member 'UWBP_MontageName_C::MontageName' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, Timer) == 0x0003E8, "Member 'UWBP_MontageName_C::Timer' has a wrong offset!");
-static_assert(offsetof(UWBP_MontageName_C, NameString) == 0x000400, "Member 'UWBP_MontageName_C::NameString' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MontageName_C;
 
 }
 

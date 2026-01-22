@@ -17,6 +17,50 @@
 namespace SDK
 {
 
+// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406112.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_120_10406112::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_120_10406112", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406112.OnAbilityActivate
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyBuffAbility_120_10406112::OnAbilityActivate(int32 AbilityID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_120_10406112", "OnAbilityActivate");
+
+	Params::PyBuffAbility_120_10406112_OnAbilityActivate Parms{};
+
+	Parms.AbilityID = AbilityID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406111.K2_ActivateAbility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -75,50 +119,6 @@ void UPyBuffAbility_120_10406111::OnAbilityMissile()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406112.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_120_10406112::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_120_10406112", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_120_104061.PyBuffAbility_120_10406112.OnAbilityActivate
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   AbilityID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyBuffAbility_120_10406112::OnAbilityActivate(int32 AbilityID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_120_10406112", "OnAbilityActivate");
-
-	Params::PyBuffAbility_120_10406112_OnAbilityActivate Parms{};
-
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

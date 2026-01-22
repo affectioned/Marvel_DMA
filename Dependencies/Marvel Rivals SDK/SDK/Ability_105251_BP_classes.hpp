@@ -18,37 +18,33 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105251_BP.Ability_105251_BP_C
-// 0x0F80 (0x3970 - 0x29F0)
+// 0x13E0 (0x3E20 - 0x2A40)
 class UAbility_105251_BP_C final : public UPyAbility_105251
 {
 public:
-	struct FDashAbilityInfo                       Dash_Info;                                         // 0x29F0(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UCurveFloat*                            DamageCurve;                                       // 0x35B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                         Timeline_Index_0;                                  // 0x35C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         In_Scope_ID;                                       // 0x35C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimTimeline*                          Timeline;                                          // 0x35C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x35D0(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                         KickDash;                                          // 0x3968(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2A40(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UCurveFloat*                            DamageCurve;                                       // 0x3928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         Timeline_Index_0;                                  // 0x3930(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         In_Scope_ID;                                       // 0x3934(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimTimeline*                          Timeline;                                          // 0x3938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3940(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                         KickDash;                                          // 0x3E18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105251_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105251_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105251_BP_C")
 	}
 	static class UAbility_105251_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105251_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105251_BP_C) == 0x000008, "Wrong alignment on UAbility_105251_BP_C");
-static_assert(sizeof(UAbility_105251_BP_C) == 0x003970, "Wrong size on UAbility_105251_BP_C");
-static_assert(offsetof(UAbility_105251_BP_C, Dash_Info) == 0x0029F0, "Member 'UAbility_105251_BP_C::Dash_Info' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, DamageCurve) == 0x0035B8, "Member 'UAbility_105251_BP_C::DamageCurve' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, Timeline_Index_0) == 0x0035C0, "Member 'UAbility_105251_BP_C::Timeline_Index_0' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, In_Scope_ID) == 0x0035C4, "Member 'UAbility_105251_BP_C::In_Scope_ID' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, Timeline) == 0x0035C8, "Member 'UAbility_105251_BP_C::Timeline' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, Trace_Rule) == 0x0035D0, "Member 'UAbility_105251_BP_C::Trace_Rule' has a wrong offset!");
-static_assert(offsetof(UAbility_105251_BP_C, KickDash) == 0x003968, "Member 'UAbility_105251_BP_C::KickDash' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105251_BP_C;
 
 }
 

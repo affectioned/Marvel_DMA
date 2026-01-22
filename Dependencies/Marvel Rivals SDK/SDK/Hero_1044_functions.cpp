@@ -17,19 +17,90 @@
 namespace SDK
 {
 
-// Function Hero_1044.Cue_Ability_Loop_10445102.GetDesiredCameraRotation
-// (Native, Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function Hero_1044.Ability_104441.GetTreatableHpPercent
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FRotator ACue_Ability_Loop_10445102::GetDesiredCameraRotation()
+float UAbility_104441::GetTreatableHpPercent(class AActor* InActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Ability_Loop_10445102", "GetDesiredCameraRotation");
+		Func = StaticClass()->GetFunction("Ability_104441", "GetTreatableHpPercent");
 
-	Params::Cue_Ability_Loop_10445102_GetDesiredCameraRotation Parms{};
+	Params::Ability_104441_GetTreatableHpPercent Parms{};
+
+	Parms.InActor = InActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1044.Ability_104441.OnCustomTakeTreatWithVampire
+// (Final, Native, Protected, HasOutParams, Const)
+// Parameters:
+// const struct FGameplayEffectSpec&       Spec                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float*                                  InOutValue                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAbilitySystemComponent*    SourceASC                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAbilitySystemComponent*    TargetASC                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAbility_104441::OnCustomTakeTreatWithVampire(const struct FGameplayEffectSpec& Spec, float* InOutValue, const class UAbilitySystemComponent* SourceASC, const class UAbilitySystemComponent* TargetASC) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104441", "OnCustomTakeTreatWithVampire");
+
+	Params::Ability_104441_OnCustomTakeTreatWithVampire Parms{};
+
+	Parms.Spec = std::move(Spec);
+	Parms.SourceASC = SourceASC;
+	Parms.TargetASC = TargetASC;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (InOutValue != nullptr)
+		*InOutValue = Parms.InOutValue;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1044.TraceComponent_10445101.IsValidTraceResult
+// (Final, Native, Protected, HasOutParams, HasDefaults)
+// Parameters:
+// const struct FHitResult&                InHit                                                  (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FVector&                   SegStart                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   SegEnd                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UTraceComponent_10445101::IsValidTraceResult(const struct FHitResult& InHit, const struct FVector& SegStart, const struct FVector& SegEnd)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TraceComponent_10445101", "IsValidTraceResult");
+
+	Params::TraceComponent_10445101_IsValidTraceResult Parms{};
+
+	Parms.InHit = std::move(InHit);
+	Parms.SegStart = std::move(SegStart);
+	Parms.SegEnd = std::move(SegEnd);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -39,25 +110,6 @@ struct FRotator ACue_Ability_Loop_10445102::GetDesiredCameraRotation()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1044.Cue_Ability_Loop_10445102.UpdateIndicatorParams
-// (Final, Native, Public, BlueprintCallable)
-
-void ACue_Ability_Loop_10445102::UpdateIndicatorParams()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Ability_Loop_10445102", "UpdateIndicatorParams");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -182,6 +234,107 @@ void UAbility_104451::TrySpawnScope()
 }
 
 
+// Function Hero_1044.Cue_Ability_Loop_10445102.GetDesiredCameraRotation
+// (Native, Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FRotator ACue_Ability_Loop_10445102::GetDesiredCameraRotation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Ability_Loop_10445102", "GetDesiredCameraRotation");
+
+	Params::Cue_Ability_Loop_10445102_GetDesiredCameraRotation Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1044.Cue_Ability_Loop_10445102.UpdateIndicatorParams
+// (Final, Native, Public, BlueprintCallable)
+
+void ACue_Ability_Loop_10445102::UpdateIndicatorParams()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Ability_Loop_10445102", "UpdateIndicatorParams");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1044.EffectAbility_DynamicDamageReduction.IsDamageEffect
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FGameplayEffectSpec&       GameplayEffect                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UEffectAbility_DynamicDamageReduction::IsDamageEffect(const struct FGameplayEffectSpec& GameplayEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("EffectAbility_DynamicDamageReduction", "IsDamageEffect");
+
+	Params::EffectAbility_DynamicDamageReduction_IsDamageEffect Parms{};
+
+	Parms.GameplayEffect = std::move(GameplayEffect);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1044.EffectAbility_DynamicDamageReduction.OnPreGameplayEffectExecuteOnSelf
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// class UAbilitySystemComponent*          SourceASC                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayEffectSpecStackHandle&SpecHandle                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FActiveGameplayEffectHandle&ActiveHandle                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEffectAbility_DynamicDamageReduction::OnPreGameplayEffectExecuteOnSelf(class UAbilitySystemComponent* SourceASC, const struct FGameplayEffectSpecStackHandle& SpecHandle, const struct FActiveGameplayEffectHandle& ActiveHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EffectAbility_DynamicDamageReduction", "OnPreGameplayEffectExecuteOnSelf");
+
+	Params::EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf Parms{};
+
+	Parms.SourceASC = SourceASC;
+	Parms.SpecHandle = std::move(SpecHandle);
+	Parms.ActiveHandle = std::move(ActiveHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1044.BladeCharacter.OnCurrentSculptUpdate
 // (Native, Event, Protected, BlueprintEvent)
 
@@ -235,159 +388,6 @@ void ABladeCharacter::SetCurrentSculpt(EBladeSculpt NewSculpt)
 	Params::BladeCharacter_SetCurrentSculpt Parms{};
 
 	Parms.NewSculpt = NewSculpt;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1044.Ability_104441.GetTreatableHpPercent
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UAbility_104441::GetTreatableHpPercent(class AActor* InActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Ability_104441", "GetTreatableHpPercent");
-
-	Params::Ability_104441_GetTreatableHpPercent Parms{};
-
-	Parms.InActor = InActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1044.Ability_104441.OnCustomTakeTreatWithVampire
-// (Final, Native, Protected, HasOutParams, Const)
-// Parameters:
-// const struct FGameplayEffectSpec&       Spec                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float*                                  InOutValue                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UAbilitySystemComponent*    SourceASC                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UAbilitySystemComponent*    TargetASC                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAbility_104441::OnCustomTakeTreatWithVampire(const struct FGameplayEffectSpec& Spec, float* InOutValue, const class UAbilitySystemComponent* SourceASC, const class UAbilitySystemComponent* TargetASC) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_104441", "OnCustomTakeTreatWithVampire");
-
-	Params::Ability_104441_OnCustomTakeTreatWithVampire Parms{};
-
-	Parms.Spec = std::move(Spec);
-	Parms.SourceASC = SourceASC;
-	Parms.TargetASC = TargetASC;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (InOutValue != nullptr)
-		*InOutValue = Parms.InOutValue;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1044.TraceComponent_10445101.IsValidTraceResult
-// (Final, Native, Protected, HasOutParams, HasDefaults)
-// Parameters:
-// const struct FHitResult&                InHit                                                  (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const struct FVector&                   SegStart                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   SegEnd                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UTraceComponent_10445101::IsValidTraceResult(const struct FHitResult& InHit, const struct FVector& SegStart, const struct FVector& SegEnd)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TraceComponent_10445101", "IsValidTraceResult");
-
-	Params::TraceComponent_10445101_IsValidTraceResult Parms{};
-
-	Parms.InHit = std::move(InHit);
-	Parms.SegStart = std::move(SegStart);
-	Parms.SegEnd = std::move(SegEnd);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1044.EffectAbility_DynamicDamageReduction.IsDamageEffect
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayEffectSpec&       GameplayEffect                                         (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UEffectAbility_DynamicDamageReduction::IsDamageEffect(const struct FGameplayEffectSpec& GameplayEffect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EffectAbility_DynamicDamageReduction", "IsDamageEffect");
-
-	Params::EffectAbility_DynamicDamageReduction_IsDamageEffect Parms{};
-
-	Parms.GameplayEffect = std::move(GameplayEffect);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1044.EffectAbility_DynamicDamageReduction.OnPreGameplayEffectExecuteOnSelf
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// class UAbilitySystemComponent*          SourceASC                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayEffectSpecStackHandle&SpecHandle                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FActiveGameplayEffectHandle&ActiveHandle                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEffectAbility_DynamicDamageReduction::OnPreGameplayEffectExecuteOnSelf(class UAbilitySystemComponent* SourceASC, const struct FGameplayEffectSpecStackHandle& SpecHandle, const struct FActiveGameplayEffectHandle& ActiveHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EffectAbility_DynamicDamageReduction", "OnPreGameplayEffectExecuteOnSelf");
-
-	Params::EffectAbility_DynamicDamageReduction_OnPreGameplayEffectExecuteOnSelf Parms{};
-
-	Parms.SourceASC = SourceASC;
-	Parms.SpecHandle = std::move(SpecHandle);
-	Parms.ActiveHandle = std::move(ActiveHandle);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

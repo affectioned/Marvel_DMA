@@ -18,27 +18,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104993_BP.Ability_104993_BP_C
-// 0x0BD0 (0x38F8 - 0x2D28)
+// 0x0EF0 (0x3C68 - 0x2D78)
 class UAbility_104993_BP_C final : public UPyAbility_104993
 {
 public:
-	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2D28(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AMarvelAbilityTargetActor_Scope*        Scope_Actor;                                       // 0x38F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2D78(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AMarvelAbilityTargetActor_Scope*        Scope_Actor;                                       // 0x3C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104993_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_104993_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104993_BP_C")
 	}
 	static class UAbility_104993_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_104993_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104993_BP_C) == 0x000008, "Wrong alignment on UAbility_104993_BP_C");
-static_assert(sizeof(UAbility_104993_BP_C) == 0x0038F8, "Wrong size on UAbility_104993_BP_C");
-static_assert(offsetof(UAbility_104993_BP_C, Dash_Info) == 0x002D28, "Member 'UAbility_104993_BP_C::Dash_Info' has a wrong offset!");
-static_assert(offsetof(UAbility_104993_BP_C, Scope_Actor) == 0x0038F0, "Member 'UAbility_104993_BP_C::Scope_Actor' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_104993_BP_C;
 
 }
 

@@ -74,6 +74,31 @@ void UPyWidget_GuidePanel::Destruct()
 }
 
 
+// PythonFunction PyWidget_GuidePanel.PyWidget_GuidePanel.GetEnableRegisterInputContextBp
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyWidget_GuidePanel::GetEnableRegisterInputContextBp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_GuidePanel", "GetEnableRegisterInputContextBp");
+
+	Params::PyWidget_GuidePanel_GetEnableRegisterInputContextBp Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction PyWidget_GuidePanel.PyWidget_GuidePanel.OnTipWidgetClicked
 // (Native, Public, BlueprintCallable)
 // Parameters:

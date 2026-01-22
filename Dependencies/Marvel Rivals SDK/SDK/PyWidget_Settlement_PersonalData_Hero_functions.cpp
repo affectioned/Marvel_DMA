@@ -17,6 +17,88 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_Hero_Entry::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_Hero_Entry::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_Hero_Entry::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.SetLoadimgPicture
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          Img_Picture                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Settlement_PersonalData_Hero_Entry::SetLoadimgPicture(class UObject* Img_Picture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "SetLoadimgPicture");
+
+	Params::PyWidget_Settlement_PersonalData_Hero_Entry_SetLoadimgPicture Parms{};
+
+	Parms.Img_Picture = Img_Picture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -99,40 +181,15 @@ void UPyWidget_Settlement_PersonalData_Hero::OnAnimationFinished(const class UWi
 }
 
 
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero.MarvelSetVisible
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visible                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Settlement_PersonalData_Hero::MarvelSetVisible(bool Visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero", "MarvelSetVisible");
-
-	Params::PyWidget_Settlement_PersonalData_Hero_MarvelSetVisible Parms{};
-
-	Parms.Visible = Visible;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.OnInitialized
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Entry.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Settlement_PersonalData_Hero_Entry::OnInitialized()
+void UPyWidget_Settlement_PersonalData_HeroTask_Entry::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Entry", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -143,15 +200,15 @@ void UPyWidget_Settlement_PersonalData_Hero_Entry::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.Construct
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Entry.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Settlement_PersonalData_Hero_Entry::Construct()
+void UPyWidget_Settlement_PersonalData_HeroTask_Entry::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "Construct");
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Entry", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -162,15 +219,15 @@ void UPyWidget_Settlement_PersonalData_Hero_Entry::Construct()
 }
 
 
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.Destruct
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Entry.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Settlement_PersonalData_Hero_Entry::Destruct()
+void UPyWidget_Settlement_PersonalData_HeroTask_Entry::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "Destruct");
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Entry", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -181,51 +238,172 @@ void UPyWidget_Settlement_PersonalData_Hero_Entry::Destruct()
 }
 
 
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.OnAnimationFinished
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Unit.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_Settlement_PersonalData_Hero_Entry::OnAnimationFinished(const class UWidgetAnimation* Animation)
+void UPyWidget_Settlement_PersonalData_HeroTask_Unit::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "OnAnimationFinished");
-
-	Params::PyWidget_Settlement_PersonalData_Hero_Entry_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Unit", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry.SetLoadimgPicture
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          Img_Picture                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Unit.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Settlement_PersonalData_Hero_Entry::SetLoadimgPicture(class UObject* Img_Picture)
+void UPyWidget_Settlement_PersonalData_HeroTask_Unit::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_Hero_Entry", "SetLoadimgPicture");
-
-	Params::PyWidget_Settlement_PersonalData_Hero_Entry_SetLoadimgPicture Parms{};
-
-	Parms.Img_Picture = Img_Picture;
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Unit", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Unit.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_HeroTask_Unit::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Unit", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_TaskTips_Unit.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_TaskTips_Unit::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_TaskTips_Unit", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_TaskTips_Unit.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_TaskTips_Unit::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_TaskTips_Unit", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_TaskTips_Unit.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_PersonalData_TaskTips_Unit::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_PersonalData_TaskTips_Unit", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

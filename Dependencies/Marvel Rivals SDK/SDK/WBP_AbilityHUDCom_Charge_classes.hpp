@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_Charge.WBP_AbilityHUDCom_Charge_C
-// 0x0008 (0x06A8 - 0x06A0)
+// 0x0008 (0x06B0 - 0x06A8)
 class UWBP_AbilityHUDCom_Charge_C final : public UPyWidget_AbilityCharge_V5
 {
 public:
-	class UMarvelOverlay*                         Overlay_Charge;                                    // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Charge;                                    // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_Charge_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_Charge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_Charge_C")
 	}
 	static class UWBP_AbilityHUDCom_Charge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_Charge_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_Charge_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_Charge_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_Charge_C) == 0x0006A8, "Wrong size on UWBP_AbilityHUDCom_Charge_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_Charge_C, Overlay_Charge) == 0x0006A0, "Member 'UWBP_AbilityHUDCom_Charge_C::Overlay_Charge' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_Charge_C;
 
 }
 

@@ -19,47 +19,46 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BanPickInfo.PyWidget_BanPickInfo
-// 0x0120 (0x06E0 - 0x05C0)
-#pragma pack(push, 0x1)
-class alignas(0x10) UPyWidget_BanPickInfo : public UPyMarvelUserWidget
+// 0x0128 (0x06F0 - 0x05C8)
+class UPyWidget_BanPickInfo : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_BanPickInfoUnit>  BanPickBlueUnitClass;                              // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_BanPickInfoUnit>  BanPickRedUnitClass;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsResultMode;                                      // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D1[0xF];                                      // 0x05D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_BanPickInfoUnit>  BanPickBlueUnitClass;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_BanPickInfoUnit>  BanPickRedUnitClass;                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsResultMode;                                      // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsHeroPoolInfo;                                    // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DA[0x6];                                      // 0x05DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            BanPickLine;                                       // 0x05E0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FSlateColor                            CareerBanPickTextColor;                            // 0x06B0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FLinearColor                           CareerBanPickLineColor;                            // 0x06C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OneSideEffectModeVxExtraDelayTime;                 // 0x06D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_BanPick;                                      // 0x06D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Show;                                         // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Hide;                                         // 0x06E8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
 	void OnCascadingVisibleChanged(bool bNewVisible);
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BanPickInfo">();
+		STATIC_CLASS_IMPL("PyWidget_BanPickInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BanPickInfo")
 	}
 	static class UPyWidget_BanPickInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BanPickInfo>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UPyWidget_BanPickInfo) == 0x000010, "Wrong alignment on UPyWidget_BanPickInfo");
-static_assert(sizeof(UPyWidget_BanPickInfo) == 0x0006E0, "Wrong size on UPyWidget_BanPickInfo");
-static_assert(offsetof(UPyWidget_BanPickInfo, BanPickBlueUnitClass) == 0x0005C0, "Member 'UPyWidget_BanPickInfo::BanPickBlueUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, BanPickRedUnitClass) == 0x0005C8, "Member 'UPyWidget_BanPickInfo::BanPickRedUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, IsResultMode) == 0x0005D0, "Member 'UPyWidget_BanPickInfo::IsResultMode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, BanPickLine) == 0x0005E0, "Member 'UPyWidget_BanPickInfo::BanPickLine' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, CareerBanPickTextColor) == 0x0006B0, "Member 'UPyWidget_BanPickInfo::CareerBanPickTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, CareerBanPickLineColor) == 0x0006C4, "Member 'UPyWidget_BanPickInfo::CareerBanPickLineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BanPickInfo, OneSideEffectModeVxExtraDelayTime) == 0x0006D4, "Member 'UPyWidget_BanPickInfo::OneSideEffectModeVxExtraDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BanPickInfo;
 
 }
 

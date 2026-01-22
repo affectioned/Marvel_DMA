@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity120_GalleryCustom final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -34,24 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_GalleryCustom">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_GalleryCustom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_GalleryCustom")
 	}
 	static class UPyWidget_Activity120_GalleryCustom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_GalleryCustom>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_GalleryCustom) == 0x000008, "Wrong alignment on UPyWidget_Activity120_GalleryCustom");
-static_assert(sizeof(UPyWidget_Activity120_GalleryCustom) == 0x0005F8, "Wrong size on UPyWidget_Activity120_GalleryCustom");
+DUMPER7_ASSERTS_UPyWidget_Activity120_GalleryCustom;
 
 // PythonClass PyWidget_Activity120_GalleryCustom.PyWidget_Activity120_GalleryCustom_Item
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity120_GalleryCustom_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             HeroHeadTexture;                                   // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HeroId;                                            // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             HeroHeadTexture;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HeroId;                                            // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,17 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_GalleryCustom_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_GalleryCustom_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_GalleryCustom_Item")
 	}
 	static class UPyWidget_Activity120_GalleryCustom_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_GalleryCustom_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_GalleryCustom_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity120_GalleryCustom_Item");
-static_assert(sizeof(UPyWidget_Activity120_GalleryCustom_Item) == 0x0005D0, "Wrong size on UPyWidget_Activity120_GalleryCustom_Item");
-static_assert(offsetof(UPyWidget_Activity120_GalleryCustom_Item, HeroHeadTexture) == 0x0005C0, "Member 'UPyWidget_Activity120_GalleryCustom_Item::HeroHeadTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_GalleryCustom_Item, HeroId) == 0x0005C8, "Member 'UPyWidget_Activity120_GalleryCustom_Item::HeroId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_GalleryCustom_Item;
 
 }
 

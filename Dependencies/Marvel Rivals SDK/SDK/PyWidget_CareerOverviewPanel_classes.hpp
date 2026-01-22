@@ -20,17 +20,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerOverviewPanel.PyWidget_CareerOverviewPanel
-// 0x0250 (0x0810 - 0x05C0)
+// 0x0250 (0x0818 - 0x05C8)
 class UPyWidget_CareerOverviewPanel final : public UPyWidget_CareerChildPanel
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LineCount;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayInfoRowAnimInterval;                           // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayInfoLineAnimInterval;                          // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        RotateGuideTipsStyle;                              // 0x05C8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        CheckInfoGuideTipsStyle;                           // 0x06E8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             AllSeasonRankInfoBG;                               // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LineCount;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayInfoRowAnimInterval;                           // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayInfoLineAnimInterval;                          // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        RotateGuideTipsStyle;                              // 0x05D0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        CheckInfoGuideTipsStyle;                           // 0x06F0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             AllSeasonRankInfoBG;                               // 0x0810(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,32 +41,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerOverviewPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerOverviewPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerOverviewPanel")
 	}
 	static class UPyWidget_CareerOverviewPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerOverviewPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerOverviewPanel) == 0x000008, "Wrong alignment on UPyWidget_CareerOverviewPanel");
-static_assert(sizeof(UPyWidget_CareerOverviewPanel) == 0x000810, "Wrong size on UPyWidget_CareerOverviewPanel");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, LineCount) == 0x0005BC, "Member 'UPyWidget_CareerOverviewPanel::LineCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, PlayInfoRowAnimInterval) == 0x0005C0, "Member 'UPyWidget_CareerOverviewPanel::PlayInfoRowAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, PlayInfoLineAnimInterval) == 0x0005C4, "Member 'UPyWidget_CareerOverviewPanel::PlayInfoLineAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, RotateGuideTipsStyle) == 0x0005C8, "Member 'UPyWidget_CareerOverviewPanel::RotateGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, CheckInfoGuideTipsStyle) == 0x0006E8, "Member 'UPyWidget_CareerOverviewPanel::CheckInfoGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverviewPanel, AllSeasonRankInfoBG) == 0x000808, "Member 'UPyWidget_CareerOverviewPanel::AllSeasonRankInfoBG' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerOverviewPanel;
 
 // PythonClass PyWidget_CareerOverviewPanel.PyWidget_CareerOverview_DataItem
-// 0x0128 (0x0850 - 0x0728)
+// 0x0130 (0x08B0 - 0x0780)
 class UPyWidget_CareerOverview_DataItem final : public UPyWidget_Button
 {
 public:
-	class FText                                   DataTitle;                                         // 0x0728(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DataNumber;                                        // 0x0740(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   DataUnit;                                          // 0x0758(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Icon;                                              // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          LineVisible;                                       // 0x0840(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   DataTitle;                                         // 0x0780(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DataNumber;                                        // 0x0798(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   DataUnit;                                          // 0x07B0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7C8[0x8];                                      // 0x07C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Icon;                                              // 0x07D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          LineVisible;                                       // 0x08A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -77,20 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerOverview_DataItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerOverview_DataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerOverview_DataItem")
 	}
 	static class UPyWidget_CareerOverview_DataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerOverview_DataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerOverview_DataItem) == 0x000010, "Wrong alignment on UPyWidget_CareerOverview_DataItem");
-static_assert(sizeof(UPyWidget_CareerOverview_DataItem) == 0x000850, "Wrong size on UPyWidget_CareerOverview_DataItem");
-static_assert(offsetof(UPyWidget_CareerOverview_DataItem, DataTitle) == 0x000728, "Member 'UPyWidget_CareerOverview_DataItem::DataTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverview_DataItem, DataNumber) == 0x000740, "Member 'UPyWidget_CareerOverview_DataItem::DataNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverview_DataItem, DataUnit) == 0x000758, "Member 'UPyWidget_CareerOverview_DataItem::DataUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverview_DataItem, Icon) == 0x000770, "Member 'UPyWidget_CareerOverview_DataItem::Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerOverview_DataItem, LineVisible) == 0x000840, "Member 'UPyWidget_CareerOverview_DataItem::LineVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerOverview_DataItem;
 
 }
 

@@ -17,26 +17,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mall_Activity_Common_Entrance final : public UPyMarvelUserWidget
 {
 public:
 	void OnInitialized();
-	void OnCascadingVisibleChanged(bool bIsCascadingVisible);
+	void Construct();
+	void Destruct();
 	class FString GetAutoTestDebugName();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Activity_Common_Entrance">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Activity_Common_Entrance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Activity_Common_Entrance")
 	}
 	static class UPyWidget_Mall_Activity_Common_Entrance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Activity_Common_Entrance>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Activity_Common_Entrance) == 0x000008, "Wrong alignment on UPyWidget_Mall_Activity_Common_Entrance");
-static_assert(sizeof(UPyWidget_Mall_Activity_Common_Entrance) == 0x0005C0, "Wrong size on UPyWidget_Mall_Activity_Common_Entrance");
+DUMPER7_ASSERTS_UPyWidget_Mall_Activity_Common_Entrance;
 
 }
 

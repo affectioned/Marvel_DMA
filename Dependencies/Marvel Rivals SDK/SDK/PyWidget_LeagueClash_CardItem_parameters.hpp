@@ -21,9 +21,7 @@ struct PyWidget_LeagueClash_CardItem_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueClash_CardItem_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_LeagueClash_CardItem_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_LeagueClash_CardItem_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_LeagueClash_CardItem_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_LeagueClash_CardItem_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_LeagueClash_CardItem_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueClash_CardItem_OnListItemObjectSet;
 
 }
 

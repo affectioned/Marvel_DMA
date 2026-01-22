@@ -31,20 +31,6 @@ void ADoor_C::移动到实体门位置()
 }
 
 
-// Function Door.Door_C.OpenDoor
-// (BlueprintCallable, BlueprintEvent)
-
-void ADoor_C::OpenDoor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Door_C", "OpenDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Door.Door_C.ExecuteUbergraph_Door
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -116,6 +102,20 @@ void ADoor_C::CloseDoor()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Door_C", "CloseDoor");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Door.Door_C.OpenDoor
+// (BlueprintCallable, BlueprintEvent)
+
+void ADoor_C::OpenDoor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Door_C", "OpenDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441024.PyBuffAbility_10130_10449491
-// 0x0000 (0x1A30 - 0x1A30)
+// 0x0000 (0x1A48 - 0x1A48)
 class UPyBuffAbility_10130_10449491 : public UBuffAbility_CommonCardEffect
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10449491">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10449491")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10449491")
 	}
 	static class UPyBuffAbility_10130_10449491* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10449491>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10449491) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10449491");
-static_assert(sizeof(UPyBuffAbility_10130_10449491) == 0x001A30, "Wrong size on UPyBuffAbility_10130_10449491");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10449491;
 
 }
 

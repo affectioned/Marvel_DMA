@@ -37,11 +37,7 @@ public:
 	class FText                                   Title;                                             // 0x0008(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FString                                 DefaultPath;                                       // 0x0020(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeFilePickerParameters) == 0x000008, "Wrong alignment on FInterchangeFilePickerParameters");
-static_assert(sizeof(FInterchangeFilePickerParameters) == 0x000030, "Wrong size on FInterchangeFilePickerParameters");
-static_assert(offsetof(FInterchangeFilePickerParameters, bAllowMultipleFiles) == 0x000000, "Member 'FInterchangeFilePickerParameters::bAllowMultipleFiles' has a wrong offset!");
-static_assert(offsetof(FInterchangeFilePickerParameters, Title) == 0x000008, "Member 'FInterchangeFilePickerParameters::Title' has a wrong offset!");
-static_assert(offsetof(FInterchangeFilePickerParameters, DefaultPath) == 0x000020, "Member 'FInterchangeFilePickerParameters::DefaultPath' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeFilePickerParameters;
 
 // ScriptStruct InterchangeEngine.InterchangeStackInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -52,10 +48,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UInterchangePipelineBase*>       Pipelines;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeStackInfo) == 0x000008, "Wrong alignment on FInterchangeStackInfo");
-static_assert(sizeof(FInterchangeStackInfo) == 0x000020, "Wrong size on FInterchangeStackInfo");
-static_assert(offsetof(FInterchangeStackInfo, StackName) == 0x000000, "Member 'FInterchangeStackInfo::StackName' has a wrong offset!");
-static_assert(offsetof(FInterchangeStackInfo, Pipelines) == 0x000010, "Member 'FInterchangeStackInfo::Pipelines' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeStackInfo;
 
 // ScriptStruct InterchangeEngine.InterchangeTranslatorPipelines
 // 0x0040 (0x0040 - 0x0000)
@@ -65,10 +58,7 @@ public:
 	TSoftClassPtr<class UClass>                   Translator;                                        // 0x0000(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                Pipelines;                                         // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeTranslatorPipelines) == 0x000008, "Wrong alignment on FInterchangeTranslatorPipelines");
-static_assert(sizeof(FInterchangeTranslatorPipelines) == 0x000040, "Wrong size on FInterchangeTranslatorPipelines");
-static_assert(offsetof(FInterchangeTranslatorPipelines, Translator) == 0x000000, "Member 'FInterchangeTranslatorPipelines::Translator' has a wrong offset!");
-static_assert(offsetof(FInterchangeTranslatorPipelines, Pipelines) == 0x000030, "Member 'FInterchangeTranslatorPipelines::Pipelines' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeTranslatorPipelines;
 
 // ScriptStruct InterchangeEngine.InterchangePipelineStack
 // 0x0020 (0x0020 - 0x0000)
@@ -78,10 +68,7 @@ public:
 	TArray<struct FSoftObjectPath>                Pipelines;                                         // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FInterchangeTranslatorPipelines> PerTranslatorPipelines;                           // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangePipelineStack) == 0x000008, "Wrong alignment on FInterchangePipelineStack");
-static_assert(sizeof(FInterchangePipelineStack) == 0x000020, "Wrong size on FInterchangePipelineStack");
-static_assert(offsetof(FInterchangePipelineStack, Pipelines) == 0x000000, "Member 'FInterchangePipelineStack::Pipelines' has a wrong offset!");
-static_assert(offsetof(FInterchangePipelineStack, PerTranslatorPipelines) == 0x000010, "Member 'FInterchangePipelineStack::PerTranslatorPipelines' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangePipelineStack;
 
 // ScriptStruct InterchangeEngine.InterchangeImportSettings
 // 0x0098 (0x0098 - 0x0000)
@@ -95,12 +82,7 @@ public:
 	bool                                          bShowPipelineStacksConfigurationDialog;            // 0x0090(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInterchangeImportSettings) == 0x000008, "Wrong alignment on FInterchangeImportSettings");
-static_assert(sizeof(FInterchangeImportSettings) == 0x000098, "Wrong size on FInterchangeImportSettings");
-static_assert(offsetof(FInterchangeImportSettings, PipelineStacks) == 0x000000, "Member 'FInterchangeImportSettings::PipelineStacks' has a wrong offset!");
-static_assert(offsetof(FInterchangeImportSettings, DefaultPipelineStack) == 0x000050, "Member 'FInterchangeImportSettings::DefaultPipelineStack' has a wrong offset!");
-static_assert(offsetof(FInterchangeImportSettings, PipelineConfigurationDialogClass) == 0x000060, "Member 'FInterchangeImportSettings::PipelineConfigurationDialogClass' has a wrong offset!");
-static_assert(offsetof(FInterchangeImportSettings, bShowPipelineStacksConfigurationDialog) == 0x000090, "Member 'FInterchangeImportSettings::bShowPipelineStacksConfigurationDialog' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeImportSettings;
 
 // ScriptStruct InterchangeEngine.InterchangeContentImportSettings
 // 0x00A0 (0x0138 - 0x0098)
@@ -110,10 +92,7 @@ public:
 	TMap<EInterchangeTranslatorAssetType, class FName> DefaultPipelineStackOverride;                 // 0x0098(0x0050)(Edit, NativeAccessSpecifierPublic)
 	TMap<EInterchangeTranslatorAssetType, bool>   ShowPipelineStacksConfigurationDialogOverride;     // 0x00E8(0x0050)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInterchangeContentImportSettings) == 0x000008, "Wrong alignment on FInterchangeContentImportSettings");
-static_assert(sizeof(FInterchangeContentImportSettings) == 0x000138, "Wrong size on FInterchangeContentImportSettings");
-static_assert(offsetof(FInterchangeContentImportSettings, DefaultPipelineStackOverride) == 0x000098, "Member 'FInterchangeContentImportSettings::DefaultPipelineStackOverride' has a wrong offset!");
-static_assert(offsetof(FInterchangeContentImportSettings, ShowPipelineStacksConfigurationDialogOverride) == 0x0000E8, "Member 'FInterchangeContentImportSettings::ShowPipelineStacksConfigurationDialogOverride' has a wrong offset!");
+DUMPER7_ASSERTS_FInterchangeContentImportSettings;
 
 // ScriptStruct InterchangeEngine.PropertyData
 // 0x0018 (0x0018 - 0x0000)
@@ -122,8 +101,7 @@ struct alignas(0x08) FPropertyData final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPropertyData) == 0x000008, "Wrong alignment on FPropertyData");
-static_assert(sizeof(FPropertyData) == 0x000018, "Wrong size on FPropertyData");
+DUMPER7_ASSERTS_FPropertyData;
 
 // ScriptStruct InterchangeEngine.ImportAssetParameters
 // 0x00C0 (0x00C0 - 0x0000)
@@ -145,17 +123,7 @@ public:
 	TDelegate<void(const TArray<class UObject*>& Objects)> OnSceneImportDone;                        // 0x0098(0x0014)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_AC[0x14];                                      // 0x00AC(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FImportAssetParameters) == 0x000008, "Wrong alignment on FImportAssetParameters");
-static_assert(sizeof(FImportAssetParameters) == 0x0000C0, "Wrong size on FImportAssetParameters");
-static_assert(offsetof(FImportAssetParameters, ReimportAsset) == 0x000000, "Member 'FImportAssetParameters::ReimportAsset' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, ReimportSourceIndex) == 0x000008, "Member 'FImportAssetParameters::ReimportSourceIndex' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, bIsAutomated) == 0x00000C, "Member 'FImportAssetParameters::bIsAutomated' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, bFollowRedirectors) == 0x00000D, "Member 'FImportAssetParameters::bFollowRedirectors' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, OverridePipelines) == 0x000010, "Member 'FImportAssetParameters::OverridePipelines' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, OnAssetDone) == 0x000020, "Member 'FImportAssetParameters::OnAssetDone' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, OnAssetsImportDone) == 0x000048, "Member 'FImportAssetParameters::OnAssetsImportDone' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, OnSceneObjectDone) == 0x000070, "Member 'FImportAssetParameters::OnSceneObjectDone' has a wrong offset!");
-static_assert(offsetof(FImportAssetParameters, OnSceneImportDone) == 0x000098, "Member 'FImportAssetParameters::OnSceneImportDone' has a wrong offset!");
+DUMPER7_ASSERTS_FImportAssetParameters;
 
 }
 

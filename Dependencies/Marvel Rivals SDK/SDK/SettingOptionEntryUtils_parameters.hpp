@@ -22,10 +22,7 @@ public:
 	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                         refresh_tags;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh) == 0x000008, "Wrong alignment on PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh");
-static_assert(sizeof(PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh) == 0x000018, "Wrong size on PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh");
-static_assert(offsetof(PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh, obj) == 0x000000, "Member 'PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh::obj' has a wrong offset!");
-static_assert(offsetof(PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh, refresh_tags) == 0x000008, "Member 'PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh::refresh_tags' has a wrong offset!");
+DUMPER7_ASSERTS_PySettingOptionEntryUtilsBluePrintLib_request_tag_refresh;
 
 // PythonFunction SettingOptionEntryUtils.PySettingOptionEntryUtilsBluePrintLib.request_parent_setting_page_refresh
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +31,7 @@ struct PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh
 public:
 	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh) == 0x000008, "Wrong alignment on PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh");
-static_assert(sizeof(PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh) == 0x000008, "Wrong size on PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh");
-static_assert(offsetof(PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh, obj) == 0x000000, "Member 'PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh::obj' has a wrong offset!");
+DUMPER7_ASSERTS_PySettingOptionEntryUtilsBluePrintLib_request_parent_setting_page_refresh;
 
 }
 

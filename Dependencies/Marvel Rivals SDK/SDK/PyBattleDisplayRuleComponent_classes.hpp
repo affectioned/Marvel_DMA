@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "Slate_structs.hpp"
-#include "MarvelLevel_classes.hpp"
 #include "PyRuleComponent_classes.hpp"
 
 
@@ -48,32 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleDisplayConfig">();
+		STATIC_CLASS_IMPL("PyBattleDisplayConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleDisplayConfig")
 	}
 	static class UPyBattleDisplayConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleDisplayConfig>();
 	}
 };
-static_assert(alignof(UPyBattleDisplayConfig) == 0x000008, "Wrong alignment on UPyBattleDisplayConfig");
-static_assert(sizeof(UPyBattleDisplayConfig) == 0x000098, "Wrong size on UPyBattleDisplayConfig");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableGlobalKillReport) == 0x000030, "Member 'UPyBattleDisplayConfig::EnableGlobalKillReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, bOverrideGlobalKillReportOffset) == 0x000031, "Member 'UPyBattleDisplayConfig::bOverrideGlobalKillReportOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, GlobalKillReportOffset) == 0x000034, "Member 'UPyBattleDisplayConfig::GlobalKillReportOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnablePersonalKillReport) == 0x000044, "Member 'UPyBattleDisplayConfig::EnablePersonalKillReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableKillStreakReport) == 0x000045, "Member 'UPyBattleDisplayConfig::EnableKillStreakReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableKillingSpreeReport) == 0x000046, "Member 'UPyBattleDisplayConfig::EnableKillingSpreeReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowChangeHeroTips) == 0x000047, "Member 'UPyBattleDisplayConfig::EnableShowChangeHeroTips' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowSynergyAbilityTips) == 0x000048, "Member 'UPyBattleDisplayConfig::EnableShowSynergyAbilityTips' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowUltimateBar) == 0x000049, "Member 'UPyBattleDisplayConfig::EnableShowUltimateBar' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowDyingScreenFX) == 0x00004A, "Member 'UPyBattleDisplayConfig::EnableShowDyingScreenFX' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowPlayerName) == 0x00004B, "Member 'UPyBattleDisplayConfig::EnableShowPlayerName' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableCreateHPBar) == 0x00004C, "Member 'UPyBattleDisplayConfig::EnableCreateHPBar' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, EnableShowTask) == 0x00004D, "Member 'UPyBattleDisplayConfig::EnableShowTask' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, TaskCenterOffset) == 0x000050, "Member 'UPyBattleDisplayConfig::TaskCenterOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, FPSInfoOffset) == 0x000060, "Member 'UPyBattleDisplayConfig::FPSInfoOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, bOverrideFPSInfoAnchors) == 0x000070, "Member 'UPyBattleDisplayConfig::bOverrideFPSInfoAnchors' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayConfig, FPSInfoAnchors) == 0x000078, "Member 'UPyBattleDisplayConfig::FPSInfoAnchors' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattleDisplayConfig;
 
 // PythonClass PyBattleDisplayRuleComponent.PyBattleDisplayRuleComponent
 // 0x0068 (0x0170 - 0x0108)
@@ -104,32 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleDisplayRuleComponent">();
+		STATIC_CLASS_IMPL("PyBattleDisplayRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleDisplayRuleComponent")
 	}
 	static class UPyBattleDisplayRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleDisplayRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBattleDisplayRuleComponent) == 0x000008, "Wrong alignment on UPyBattleDisplayRuleComponent");
-static_assert(sizeof(UPyBattleDisplayRuleComponent) == 0x000170, "Wrong size on UPyBattleDisplayRuleComponent");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableGlobalKillReport) == 0x000108, "Member 'UPyBattleDisplayRuleComponent::EnableGlobalKillReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, bOverrideGlobalKillReportOffset) == 0x000109, "Member 'UPyBattleDisplayRuleComponent::bOverrideGlobalKillReportOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, GlobalKillReportOffset) == 0x00010C, "Member 'UPyBattleDisplayRuleComponent::GlobalKillReportOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableKillingSpreeReport) == 0x00011C, "Member 'UPyBattleDisplayRuleComponent::EnableKillingSpreeReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnablePersonalKillReport) == 0x00011D, "Member 'UPyBattleDisplayRuleComponent::EnablePersonalKillReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableKillStreakReport) == 0x00011E, "Member 'UPyBattleDisplayRuleComponent::EnableKillStreakReport' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowChangeHeroTips) == 0x00011F, "Member 'UPyBattleDisplayRuleComponent::EnableShowChangeHeroTips' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowSynergyAbilityTips) == 0x000120, "Member 'UPyBattleDisplayRuleComponent::EnableShowSynergyAbilityTips' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowUltimateBar) == 0x000121, "Member 'UPyBattleDisplayRuleComponent::EnableShowUltimateBar' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowDyingScreenFX) == 0x000122, "Member 'UPyBattleDisplayRuleComponent::EnableShowDyingScreenFX' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowPlayerName) == 0x000123, "Member 'UPyBattleDisplayRuleComponent::EnableShowPlayerName' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableCreateHPBar) == 0x000124, "Member 'UPyBattleDisplayRuleComponent::EnableCreateHPBar' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, EnableShowTask) == 0x000125, "Member 'UPyBattleDisplayRuleComponent::EnableShowTask' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, TaskCenterOffset) == 0x000128, "Member 'UPyBattleDisplayRuleComponent::TaskCenterOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, FPSInfoOffset) == 0x000138, "Member 'UPyBattleDisplayRuleComponent::FPSInfoOffset' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, bOverrideFPSInfoAnchors) == 0x000148, "Member 'UPyBattleDisplayRuleComponent::bOverrideFPSInfoAnchors' has a wrong offset!");
-static_assert(offsetof(UPyBattleDisplayRuleComponent, FPSInfoAnchors) == 0x000150, "Member 'UPyBattleDisplayRuleComponent::FPSInfoAnchors' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattleDisplayRuleComponent;
 
 }
 

@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_OverwriteArchive.PyWidget_Secondary_OverwriteArchive
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_OverwriteArchive final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                OverwriteArchiveItemClass;                         // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                OverwriteArchiveItemClass;                         // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_OverwriteArchive">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_OverwriteArchive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_OverwriteArchive")
 	}
 	static class UPyWidget_Secondary_OverwriteArchive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_OverwriteArchive>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_OverwriteArchive) == 0x000008, "Wrong alignment on UPyWidget_Secondary_OverwriteArchive");
-static_assert(sizeof(UPyWidget_Secondary_OverwriteArchive) == 0x0005C8, "Wrong size on UPyWidget_Secondary_OverwriteArchive");
-static_assert(offsetof(UPyWidget_Secondary_OverwriteArchive, OverwriteArchiveItemClass) == 0x0005C0, "Member 'UPyWidget_Secondary_OverwriteArchive::OverwriteArchiveItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_OverwriteArchive;
 
 // PythonClass PyWidget_Secondary_OverwriteArchive.PyWidget_OverwriteArchiveItem
 // 0x0010 (0x03C8 - 0x03B8)
@@ -57,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_OverwriteArchiveItem">();
+		STATIC_CLASS_IMPL("PyWidget_OverwriteArchiveItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_OverwriteArchiveItem")
 	}
 	static class UPyWidget_OverwriteArchiveItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_OverwriteArchiveItem>();
 	}
 };
-static_assert(alignof(UPyWidget_OverwriteArchiveItem) == 0x000008, "Wrong alignment on UPyWidget_OverwriteArchiveItem");
-static_assert(sizeof(UPyWidget_OverwriteArchiveItem) == 0x0003C8, "Wrong size on UPyWidget_OverwriteArchiveItem");
-static_assert(offsetof(UPyWidget_OverwriteArchiveItem, OnClicked) == 0x0003B8, "Member 'UPyWidget_OverwriteArchiveItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_OverwriteArchiveItem;
 
 }
 

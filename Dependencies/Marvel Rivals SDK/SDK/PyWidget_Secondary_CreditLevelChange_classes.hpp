@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_CreditLevelChange.PyWidget_Secondary_CreditLevelChange
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_CreditLevelChange final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_CreditLevelChange">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_CreditLevelChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_CreditLevelChange")
 	}
 	static class UPyWidget_Secondary_CreditLevelChange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_CreditLevelChange>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_CreditLevelChange) == 0x000008, "Wrong alignment on UPyWidget_Secondary_CreditLevelChange");
-static_assert(sizeof(UPyWidget_Secondary_CreditLevelChange) == 0x0005C0, "Wrong size on UPyWidget_Secondary_CreditLevelChange");
+DUMPER7_ASSERTS_UPyWidget_Secondary_CreditLevelChange;
 
 }
 

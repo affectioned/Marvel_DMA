@@ -23,15 +23,18 @@ class UEQC_GetEnemySupportIgnoreTar_C final : public UEnvQueryContext_CharacterG
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_GetEnemySupportIgnoreTar_C">();
+		BP_STATIC_CLASS_IMPL("EQC_GetEnemySupportIgnoreTar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_GetEnemySupportIgnoreTar_C")
 	}
 	static class UEQC_GetEnemySupportIgnoreTar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_GetEnemySupportIgnoreTar_C>();
 	}
 };
-static_assert(alignof(UEQC_GetEnemySupportIgnoreTar_C) == 0x000008, "Wrong alignment on UEQC_GetEnemySupportIgnoreTar_C");
-static_assert(sizeof(UEQC_GetEnemySupportIgnoreTar_C) == 0x000038, "Wrong size on UEQC_GetEnemySupportIgnoreTar_C");
+DUMPER7_ASSERTS_UEQC_GetEnemySupportIgnoreTar_C;
 
 }
 

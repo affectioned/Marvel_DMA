@@ -24,9 +24,7 @@ struct PyCamp_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyCamp_ReceiveEndPlay");
-static_assert(sizeof(PyCamp_ReceiveEndPlay) == 0x000001, "Wrong size on PyCamp_ReceiveEndPlay");
-static_assert(offsetof(PyCamp_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyCamp_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_ReceiveEndPlay;
 
 // PythonFunction PyCamp.PyCamp.S_on_player_enter_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyCamp_S_on_player_enter_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_S_on_player_enter_camp) == 0x000008, "Wrong alignment on PyCamp_S_on_player_enter_camp");
-static_assert(sizeof(PyCamp_S_on_player_enter_camp) == 0x000008, "Wrong size on PyCamp_S_on_player_enter_camp");
-static_assert(offsetof(PyCamp_S_on_player_enter_camp, Char) == 0x000000, "Member 'PyCamp_S_on_player_enter_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_S_on_player_enter_camp;
 
 // PythonFunction PyCamp.PyCamp.S_on_player_exit_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyCamp_S_on_player_exit_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_S_on_player_exit_camp) == 0x000008, "Wrong alignment on PyCamp_S_on_player_exit_camp");
-static_assert(sizeof(PyCamp_S_on_player_exit_camp) == 0x000008, "Wrong size on PyCamp_S_on_player_exit_camp");
-static_assert(offsetof(PyCamp_S_on_player_exit_camp, Char) == 0x000000, "Member 'PyCamp_S_on_player_exit_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_S_on_player_exit_camp;
 
 // PythonFunction PyCamp.PyCamp.GetUpdateDeltaSeconds
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +51,7 @@ struct PyCamp_GetUpdateDeltaSeconds final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_GetUpdateDeltaSeconds) == 0x000004, "Wrong alignment on PyCamp_GetUpdateDeltaSeconds");
-static_assert(sizeof(PyCamp_GetUpdateDeltaSeconds) == 0x000004, "Wrong size on PyCamp_GetUpdateDeltaSeconds");
-static_assert(offsetof(PyCamp_GetUpdateDeltaSeconds, ReturnValue) == 0x000000, "Member 'PyCamp_GetUpdateDeltaSeconds::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_GetUpdateDeltaSeconds;
 
 // PythonFunction PyCamp.PyCamp.C_on_player_enter_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +60,7 @@ struct PyCamp_C_on_player_enter_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_C_on_player_enter_camp) == 0x000008, "Wrong alignment on PyCamp_C_on_player_enter_camp");
-static_assert(sizeof(PyCamp_C_on_player_enter_camp) == 0x000008, "Wrong size on PyCamp_C_on_player_enter_camp");
-static_assert(offsetof(PyCamp_C_on_player_enter_camp, Char) == 0x000000, "Member 'PyCamp_C_on_player_enter_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_C_on_player_enter_camp;
 
 // PythonFunction PyCamp.PyCamp.C_on_player_exit_camp
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +69,7 @@ struct PyCamp_C_on_player_exit_camp final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_C_on_player_exit_camp) == 0x000008, "Wrong alignment on PyCamp_C_on_player_exit_camp");
-static_assert(sizeof(PyCamp_C_on_player_exit_camp) == 0x000008, "Wrong size on PyCamp_C_on_player_exit_camp");
-static_assert(offsetof(PyCamp_C_on_player_exit_camp, Char) == 0x000000, "Member 'PyCamp_C_on_player_exit_camp::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_C_on_player_exit_camp;
 
 // PythonFunction PyCamp.PyCamp.GetBattleSideCount
 // 0x0008 (0x0008 - 0x0000)
@@ -92,10 +80,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_GetBattleSideCount) == 0x000004, "Wrong alignment on PyCamp_GetBattleSideCount");
-static_assert(sizeof(PyCamp_GetBattleSideCount) == 0x000008, "Wrong size on PyCamp_GetBattleSideCount");
-static_assert(offsetof(PyCamp_GetBattleSideCount, battle_side) == 0x000000, "Member 'PyCamp_GetBattleSideCount::battle_side' has a wrong offset!");
-static_assert(offsetof(PyCamp_GetBattleSideCount, ReturnValue) == 0x000004, "Member 'PyCamp_GetBattleSideCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_GetBattleSideCount;
 
 // PythonFunction PyCamp.PyCamp.PyPostEditChangeProperty
 // 0x0018 (0x0018 - 0x0000)
@@ -105,10 +90,7 @@ public:
 	class FName                                   MemberName;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   PropertyName;                                      // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCamp_PyPostEditChangeProperty) == 0x000004, "Wrong alignment on PyCamp_PyPostEditChangeProperty");
-static_assert(sizeof(PyCamp_PyPostEditChangeProperty) == 0x000018, "Wrong size on PyCamp_PyPostEditChangeProperty");
-static_assert(offsetof(PyCamp_PyPostEditChangeProperty, MemberName) == 0x000000, "Member 'PyCamp_PyPostEditChangeProperty::MemberName' has a wrong offset!");
-static_assert(offsetof(PyCamp_PyPostEditChangeProperty, PropertyName) == 0x00000C, "Member 'PyCamp_PyPostEditChangeProperty::PropertyName' has a wrong offset!");
+DUMPER7_ASSERTS_PyCamp_PyPostEditChangeProperty;
 
 }
 

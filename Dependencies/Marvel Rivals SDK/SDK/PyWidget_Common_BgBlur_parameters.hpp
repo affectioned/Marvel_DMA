@@ -23,9 +23,7 @@ struct PyWidget_Common_BgBlur_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_BgBlur_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Common_BgBlur_PreConstruct");
-static_assert(sizeof(PyWidget_Common_BgBlur_PreConstruct) == 0x000001, "Wrong size on PyWidget_Common_BgBlur_PreConstruct");
-static_assert(offsetof(PyWidget_Common_BgBlur_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Common_BgBlur_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_BgBlur_PreConstruct;
 
 // PythonFunction PyWidget_Common_BgBlur.PyWidget_Common_BgBlur.SetTexture
 // 0x00D0 (0x00D0 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Common_BgBlur_SetTexture final
 public:
 	struct FSlateBrush                            Texture_0;                                         // 0x0000(0x00D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_Common_BgBlur_SetTexture) == 0x000010, "Wrong alignment on PyWidget_Common_BgBlur_SetTexture");
-static_assert(sizeof(PyWidget_Common_BgBlur_SetTexture) == 0x0000D0, "Wrong size on PyWidget_Common_BgBlur_SetTexture");
-static_assert(offsetof(PyWidget_Common_BgBlur_SetTexture, Texture_0) == 0x000000, "Member 'PyWidget_Common_BgBlur_SetTexture::Texture_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_BgBlur_SetTexture;
 
 // PythonFunction PyWidget_Common_BgBlur.PyWidget_Common_BgBlur.SetBrushFromTexture
 // 0x0010 (0x0010 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	class UTexture2D*                             Texture_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bMatchSize;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_BgBlur_SetBrushFromTexture) == 0x000008, "Wrong alignment on PyWidget_Common_BgBlur_SetBrushFromTexture");
-static_assert(sizeof(PyWidget_Common_BgBlur_SetBrushFromTexture) == 0x000010, "Wrong size on PyWidget_Common_BgBlur_SetBrushFromTexture");
-static_assert(offsetof(PyWidget_Common_BgBlur_SetBrushFromTexture, Texture_0) == 0x000000, "Member 'PyWidget_Common_BgBlur_SetBrushFromTexture::Texture_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_BgBlur_SetBrushFromTexture, bMatchSize) == 0x000008, "Member 'PyWidget_Common_BgBlur_SetBrushFromTexture::bMatchSize' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_BgBlur_SetBrushFromTexture;
 
 }
 

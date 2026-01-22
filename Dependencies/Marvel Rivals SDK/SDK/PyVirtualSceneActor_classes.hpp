@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyVirtualSceneActor.PyMarvelVirtualSceneActor
-// 0x0000 (0x1DB0 - 0x1DB0)
+// 0x0000 (0x2120 - 0x2120)
 class APyMarvelVirtualSceneActor : public AMarvelVirtualSceneActor
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelVirtualSceneActor">();
+		STATIC_CLASS_IMPL("PyMarvelVirtualSceneActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelVirtualSceneActor")
 	}
 	static class APyMarvelVirtualSceneActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelVirtualSceneActor>();
 	}
 };
-static_assert(alignof(APyMarvelVirtualSceneActor) == 0x000010, "Wrong alignment on APyMarvelVirtualSceneActor");
-static_assert(sizeof(APyMarvelVirtualSceneActor) == 0x001DB0, "Wrong size on APyMarvelVirtualSceneActor");
+DUMPER7_ASSERTS_APyMarvelVirtualSceneActor;
 
 }
 

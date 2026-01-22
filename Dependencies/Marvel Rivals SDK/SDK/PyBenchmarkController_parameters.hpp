@@ -23,9 +23,7 @@ struct PyBenchmarkController_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBenchmarkController_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyBenchmarkController_ReceiveEndPlay");
-static_assert(sizeof(PyBenchmarkController_ReceiveEndPlay) == 0x000001, "Wrong size on PyBenchmarkController_ReceiveEndPlay");
-static_assert(offsetof(PyBenchmarkController_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyBenchmarkController_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyBenchmarkController_ReceiveEndPlay;
 
 // PythonFunction PyBenchmarkController.PyBenchmarkController.MoveSpiderCar
 // 0x0018 (0x0018 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FString                                 part_name;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         progress;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBenchmarkController_MoveSpiderCar) == 0x000008, "Wrong alignment on PyBenchmarkController_MoveSpiderCar");
-static_assert(sizeof(PyBenchmarkController_MoveSpiderCar) == 0x000018, "Wrong size on PyBenchmarkController_MoveSpiderCar");
-static_assert(offsetof(PyBenchmarkController_MoveSpiderCar, part_name) == 0x000000, "Member 'PyBenchmarkController_MoveSpiderCar::part_name' has a wrong offset!");
-static_assert(offsetof(PyBenchmarkController_MoveSpiderCar, progress) == 0x000010, "Member 'PyBenchmarkController_MoveSpiderCar::progress' has a wrong offset!");
+DUMPER7_ASSERTS_PyBenchmarkController_MoveSpiderCar;
 
 // PythonFunction PyBenchmarkController.PyBenchmarkController.SequenceStart
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +42,7 @@ struct PyBenchmarkController_SequenceStart final
 public:
 	int32                                         sequence_index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBenchmarkController_SequenceStart) == 0x000004, "Wrong alignment on PyBenchmarkController_SequenceStart");
-static_assert(sizeof(PyBenchmarkController_SequenceStart) == 0x000004, "Wrong size on PyBenchmarkController_SequenceStart");
-static_assert(offsetof(PyBenchmarkController_SequenceStart, sequence_index) == 0x000000, "Member 'PyBenchmarkController_SequenceStart::sequence_index' has a wrong offset!");
+DUMPER7_ASSERTS_PyBenchmarkController_SequenceStart;
 
 }
 

@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Describe_Curve.WBP_Setting_Describe_Curve_C
-// 0x0020 (0x0708 - 0x06E8)
+// 0x0020 (0x0710 - 0x06F0)
 class UWBP_Setting_Describe_Curve_C final : public UPyWidget_AimCurve
 {
 public:
-	class UMarvelRichTextBlock*                   RichText_Curve_Describe;                           // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Curve_DeadZone_C*          WBP_Setting_Curve_DeadZone;                        // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Curve_DeadZone_PS_C*       WBP_Setting_Curve_DeadZone_PS;                     // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Curve_Panel_C*             WBP_Setting_Curve_Panel;                           // 0x0700(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_Curve_Describe;                           // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Curve_DeadZone_C*          WBP_Setting_Curve_DeadZone;                        // 0x06F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Curve_DeadZone_PS_C*       WBP_Setting_Curve_DeadZone_PS;                     // 0x0700(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Curve_Panel_C*             WBP_Setting_Curve_Panel;                           // 0x0708(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Describe_Curve_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Describe_Curve_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Describe_Curve_C")
 	}
 	static class UWBP_Setting_Describe_Curve_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Describe_Curve_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Describe_Curve_C) == 0x000008, "Wrong alignment on UWBP_Setting_Describe_Curve_C");
-static_assert(sizeof(UWBP_Setting_Describe_Curve_C) == 0x000708, "Wrong size on UWBP_Setting_Describe_Curve_C");
-static_assert(offsetof(UWBP_Setting_Describe_Curve_C, RichText_Curve_Describe) == 0x0006E8, "Member 'UWBP_Setting_Describe_Curve_C::RichText_Curve_Describe' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Curve_C, WBP_Setting_Curve_DeadZone) == 0x0006F0, "Member 'UWBP_Setting_Describe_Curve_C::WBP_Setting_Curve_DeadZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Curve_C, WBP_Setting_Curve_DeadZone_PS) == 0x0006F8, "Member 'UWBP_Setting_Describe_Curve_C::WBP_Setting_Curve_DeadZone_PS' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Curve_C, WBP_Setting_Curve_Panel) == 0x000700, "Member 'UWBP_Setting_Describe_Curve_C::WBP_Setting_Curve_Panel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Describe_Curve_C;
 
 }
 

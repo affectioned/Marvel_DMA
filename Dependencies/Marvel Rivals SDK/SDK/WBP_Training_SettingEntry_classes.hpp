@@ -17,45 +17,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_SettingEntry.WBP_Training_SettingEntry_C
-// 0x0058 (0x0780 - 0x0728)
+// 0x0058 (0x0788 - 0x0730)
 class UWBP_Training_SettingEntry_C final : public UPyWidget_Train_Setting_OptionEntry
 {
 public:
-	class UImage*                                 Bg_Setting_Mask;                                   // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Disable_Focus_Helper;                          // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Main;                                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Captain;                                       // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line;                                          // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star;                                          // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   MarvelOverlay;                                     // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Name;                                         // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Bg_Setting_Mask;                                   // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Disable_Focus_Helper;                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Captain;                                       // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line;                                          // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star;                                          // 0x0758(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   MarvelOverlay;                                     // 0x0760(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0768(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0770(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x0778(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Name;                                         // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_SettingEntry_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_SettingEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_SettingEntry_C")
 	}
 	static class UWBP_Training_SettingEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_SettingEntry_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_SettingEntry_C) == 0x000008, "Wrong alignment on UWBP_Training_SettingEntry_C");
-static_assert(sizeof(UWBP_Training_SettingEntry_C) == 0x000780, "Wrong size on UWBP_Training_SettingEntry_C");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Bg_Setting_Mask) == 0x000728, "Member 'UWBP_Training_SettingEntry_C::Bg_Setting_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Btn_Disable_Focus_Helper) == 0x000730, "Member 'UWBP_Training_SettingEntry_C::Btn_Disable_Focus_Helper' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Btn_Main) == 0x000738, "Member 'UWBP_Training_SettingEntry_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Img_Captain) == 0x000740, "Member 'UWBP_Training_SettingEntry_C::Img_Captain' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Img_Line) == 0x000748, "Member 'UWBP_Training_SettingEntry_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Img_Star) == 0x000750, "Member 'UWBP_Training_SettingEntry_C::Img_Star' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, MarvelOverlay) == 0x000758, "Member 'UWBP_Training_SettingEntry_C::MarvelOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Overlay_Content) == 0x000760, "Member 'UWBP_Training_SettingEntry_C::Overlay_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Overlay_Hover) == 0x000768, "Member 'UWBP_Training_SettingEntry_C::Overlay_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Overlay_Normal) == 0x000770, "Member 'UWBP_Training_SettingEntry_C::Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_SettingEntry_C, Text_Name) == 0x000778, "Member 'UWBP_Training_SettingEntry_C::Text_Name' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_SettingEntry_C;
 
 }
 

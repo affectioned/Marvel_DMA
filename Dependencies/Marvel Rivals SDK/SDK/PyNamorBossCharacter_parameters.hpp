@@ -25,10 +25,7 @@ public:
 	class AActor*                                 SourceAcatar;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNamorBossChildActor_OnAttributeChanged) == 0x000008, "Wrong alignment on PyNamorBossChildActor_OnAttributeChanged");
-static_assert(sizeof(PyNamorBossChildActor_OnAttributeChanged) == 0x000020, "Wrong size on PyNamorBossChildActor_OnAttributeChanged");
-static_assert(offsetof(PyNamorBossChildActor_OnAttributeChanged, SourceAcatar) == 0x000000, "Member 'PyNamorBossChildActor_OnAttributeChanged::SourceAcatar' has a wrong offset!");
-static_assert(offsetof(PyNamorBossChildActor_OnAttributeChanged, ModifierParameterHandle) == 0x000008, "Member 'PyNamorBossChildActor_OnAttributeChanged::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyNamorBossChildActor_OnAttributeChanged;
 
 // PythonFunction PyNamorBossCharacter.PyNamorBossChildActor.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNamorBossChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyNamorBossChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyNamorBossChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyNamorBossChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyNamorBossChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyNamorBossChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyNamorBossChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyNamorBossChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyNamorBossChildActor_OnGenericGameplayTagUpdate;
 
 }
 

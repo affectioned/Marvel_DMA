@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassGameplaySettings">();
+		STATIC_CLASS_IMPL("MassGameplaySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassGameplaySettings")
 	}
 	static class UMassGameplaySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassGameplaySettings>();
 	}
 };
-static_assert(alignof(UMassGameplaySettings) == 0x000008, "Wrong alignment on UMassGameplaySettings");
-static_assert(sizeof(UMassGameplaySettings) == 0x000068, "Wrong size on UMassGameplaySettings");
-static_assert(offsetof(UMassGameplaySettings, bLogSpawnLocations) == 0x000030, "Member 'UMassGameplaySettings::bLogSpawnLocations' has a wrong offset!");
-static_assert(offsetof(UMassGameplaySettings, ClientLODIgnorePlayerViewerClasses) == 0x000038, "Member 'UMassGameplaySettings::ClientLODIgnorePlayerViewerClasses' has a wrong offset!");
-static_assert(offsetof(UMassGameplaySettings, ServerLODIgnorePlayerViewerClasses) == 0x000048, "Member 'UMassGameplaySettings::ServerLODIgnorePlayerViewerClasses' has a wrong offset!");
-static_assert(offsetof(UMassGameplaySettings, PreloadSpawnEntityConfigPaths) == 0x000058, "Member 'UMassGameplaySettings::PreloadSpawnEntityConfigPaths' has a wrong offset!");
+DUMPER7_ASSERTS_UMassGameplaySettings;
 
 }
 

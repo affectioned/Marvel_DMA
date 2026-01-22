@@ -21,9 +21,7 @@ struct PyHalloweenInteractiveDevice_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenInteractiveDevice_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyHalloweenInteractiveDevice_OnPlayerEnetered");
-static_assert(sizeof(PyHalloweenInteractiveDevice_OnPlayerEnetered) == 0x000008, "Wrong size on PyHalloweenInteractiveDevice_OnPlayerEnetered");
-static_assert(offsetof(PyHalloweenInteractiveDevice_OnPlayerEnetered, actor) == 0x000000, "Member 'PyHalloweenInteractiveDevice_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenInteractiveDevice_OnPlayerEnetered;
 
 // PythonFunction PyHalloweenInteractiveDevice.PyHalloweenInteractiveDevice.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyHalloweenInteractiveDevice_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenInteractiveDevice_OnPlayerExited) == 0x000008, "Wrong alignment on PyHalloweenInteractiveDevice_OnPlayerExited");
-static_assert(sizeof(PyHalloweenInteractiveDevice_OnPlayerExited) == 0x000008, "Wrong size on PyHalloweenInteractiveDevice_OnPlayerExited");
-static_assert(offsetof(PyHalloweenInteractiveDevice_OnPlayerExited, actor) == 0x000000, "Member 'PyHalloweenInteractiveDevice_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenInteractiveDevice_OnPlayerExited;
 
 // PythonFunction PyHalloweenInteractiveDevice.PyHalloweenInteractiveDevice.OpenOutline
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyHalloweenInteractiveDevice_OpenOutline final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenInteractiveDevice_OpenOutline) == 0x000008, "Wrong alignment on PyHalloweenInteractiveDevice_OpenOutline");
-static_assert(sizeof(PyHalloweenInteractiveDevice_OpenOutline) == 0x000008, "Wrong size on PyHalloweenInteractiveDevice_OpenOutline");
-static_assert(offsetof(PyHalloweenInteractiveDevice_OpenOutline, actor) == 0x000000, "Member 'PyHalloweenInteractiveDevice_OpenOutline::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenInteractiveDevice_OpenOutline;
 
 // PythonFunction PyHalloweenInteractiveDevice.PyHalloweenInteractiveDevice.CloseOutline
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyHalloweenInteractiveDevice_CloseOutline final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenInteractiveDevice_CloseOutline) == 0x000008, "Wrong alignment on PyHalloweenInteractiveDevice_CloseOutline");
-static_assert(sizeof(PyHalloweenInteractiveDevice_CloseOutline) == 0x000008, "Wrong size on PyHalloweenInteractiveDevice_CloseOutline");
-static_assert(offsetof(PyHalloweenInteractiveDevice_CloseOutline, actor) == 0x000000, "Member 'PyHalloweenInteractiveDevice_CloseOutline::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenInteractiveDevice_CloseOutline;
 
 }
 

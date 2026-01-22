@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101561.PyCue_Ability_Loop_10156102
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10156102 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10156102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10156102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10156102")
 	}
 	static class APyCue_Ability_Loop_10156102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10156102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10156102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10156102");
-static_assert(sizeof(APyCue_Ability_Loop_10156102) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10156102");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10156102;
 
 // PythonClass PyAbility_101561.PyBondEnhanceSourceResolver_101561
 // 0x0000 (0x0030 - 0x0030)
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBondEnhanceSourceResolver_101561">();
+		STATIC_CLASS_IMPL("PyBondEnhanceSourceResolver_101561")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBondEnhanceSourceResolver_101561")
 	}
 	static class UPyBondEnhanceSourceResolver_101561* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBondEnhanceSourceResolver_101561>();
 	}
 };
-static_assert(alignof(UPyBondEnhanceSourceResolver_101561) == 0x000008, "Wrong alignment on UPyBondEnhanceSourceResolver_101561");
-static_assert(sizeof(UPyBondEnhanceSourceResolver_101561) == 0x000030, "Wrong size on UPyBondEnhanceSourceResolver_101561");
+DUMPER7_ASSERTS_UPyBondEnhanceSourceResolver_101561;
 
 }
 

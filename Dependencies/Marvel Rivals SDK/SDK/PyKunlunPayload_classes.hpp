@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKunlunPayload">();
+		STATIC_CLASS_IMPL("PyKunlunPayload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKunlunPayload")
 	}
 	static class APyKunlunPayload* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKunlunPayload>();
 	}
 };
-static_assert(alignof(APyKunlunPayload) == 0x000010, "Wrong alignment on APyKunlunPayload");
-static_assert(sizeof(APyKunlunPayload) == 0x000BB0, "Wrong size on APyKunlunPayload");
-static_assert(offsetof(APyKunlunPayload, KunlunPayloadState) == 0x000B64, "Member 'APyKunlunPayload::KunlunPayloadState' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceCurrentTime) == 0x000B68, "Member 'APyKunlunPayload::SequenceCurrentTime' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, ActivateAnimLength) == 0x000B6C, "Member 'APyKunlunPayload::ActivateAnimLength' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, ReachCheckPointBAnimLength) == 0x000B70, "Member 'APyKunlunPayload::ReachCheckPointBAnimLength' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, ReachCheckPointCAnimLength) == 0x000B74, "Member 'APyKunlunPayload::ReachCheckPointCAnimLength' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceActivate) == 0x000B78, "Member 'APyKunlunPayload::SequenceActivate' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceReachCheckPointB) == 0x000B80, "Member 'APyKunlunPayload::SequenceReachCheckPointB' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceReachCheckPointC) == 0x000B88, "Member 'APyKunlunPayload::SequenceReachCheckPointC' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceInstanceActivate) == 0x000B90, "Member 'APyKunlunPayload::SequenceInstanceActivate' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceInstanceReachCheckPointB) == 0x000B98, "Member 'APyKunlunPayload::SequenceInstanceReachCheckPointB' has a wrong offset!");
-static_assert(offsetof(APyKunlunPayload, SequenceInstanceReachCheckPointC) == 0x000BA0, "Member 'APyKunlunPayload::SequenceInstanceReachCheckPointC' has a wrong offset!");
+DUMPER7_ASSERTS_APyKunlunPayload;
 
 }
 

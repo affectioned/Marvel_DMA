@@ -34,20 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MineControl_C">();
+		BP_STATIC_CLASS_IMPL("MineControl_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MineControl_C")
 	}
 	static class AMineControl_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMineControl_C>();
 	}
 };
-static_assert(alignof(AMineControl_C) == 0x000010, "Wrong alignment on AMineControl_C");
-static_assert(sizeof(AMineControl_C) == 0x000C00, "Wrong size on AMineControl_C");
-static_assert(offsetof(AMineControl_C, StaticMesh) == 0x000BC8, "Member 'AMineControl_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AMineControl_C, LevelScopeCheckComponentBP) == 0x000BD0, "Member 'AMineControl_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(AMineControl_C, MarvelSpline) == 0x000BD8, "Member 'AMineControl_C::MarvelSpline' has a wrong offset!");
-static_assert(offsetof(AMineControl_C, Dynamic) == 0x000BE0, "Member 'AMineControl_C::Dynamic' has a wrong offset!");
-static_assert(offsetof(AMineControl_C, LatticeUV) == 0x000BE8, "Member 'AMineControl_C::LatticeUV' has a wrong offset!");
+DUMPER7_ASSERTS_AMineControl_C;
 
 }
 

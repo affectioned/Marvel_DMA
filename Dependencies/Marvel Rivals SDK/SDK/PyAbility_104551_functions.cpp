@@ -112,6 +112,25 @@ void APySummoned_10455101::K2_OnEndAgentTask()
 }
 
 
+// PythonFunction PyAbility_104551.PySummoned_10455101.Replenish
+// (Native, Public, BlueprintCallable)
+
+void APySummoned_10455101::Replenish()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PySummoned_10455101", "Replenish");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyAbility_104551.PyProjectile_10455101.K2_OnBeginAgentTask
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -233,6 +252,25 @@ void APyProjectile_10455102::K2_OnEndAgentTask()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyProjectile_10455102", "K2_OnEndAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_104551.PyAbility_104551.BeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyAbility_104551::BeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAbility_104551", "BeginPlay");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -442,25 +480,6 @@ void APyCue_Summoner_Loop_10455101::HideChildActor()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyCue_Summoner_Loop_10455101", "HideChildActor");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_104551.PyAbility_104551.BeginPlay
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyAbility_104551::BeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_104551", "BeginPlay");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

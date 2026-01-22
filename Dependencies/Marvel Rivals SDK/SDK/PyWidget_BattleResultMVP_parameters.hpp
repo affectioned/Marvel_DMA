@@ -21,9 +21,7 @@ struct PyWidget_BattleResultMvp_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleResultMvp_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_BattleResultMvp_OnAnimationStarted");
-static_assert(sizeof(PyWidget_BattleResultMvp_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_BattleResultMvp_OnAnimationStarted");
-static_assert(offsetof(PyWidget_BattleResultMvp_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_BattleResultMvp_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleResultMvp_OnAnimationStarted;
 
 // PythonFunction PyWidget_BattleResultMVP.PyWidget_BattleResultMvp.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_BattleResultMvp_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleResultMvp_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BattleResultMvp_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BattleResultMvp_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BattleResultMvp_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BattleResultMvp_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BattleResultMvp_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleResultMvp_OnAnimationFinished;
 
 }
 

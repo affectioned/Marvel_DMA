@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalProgress.PyWidget_Settlement_PersonalProgress
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Settlement_PersonalProgress final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           SubNav_Left_Action;                                // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SubNav_Right_Action;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipAllAnimGuideTipsStyle;                         // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           SubNav_Left_Action;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SubNav_Right_Action;                               // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipAllAnimGuideTipsStyle;                         // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalProgress">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalProgress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalProgress")
 	}
 	static class UPyWidget_Settlement_PersonalProgress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalProgress>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalProgress) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalProgress");
-static_assert(sizeof(UPyWidget_Settlement_PersonalProgress) == 0x0005E0, "Wrong size on UPyWidget_Settlement_PersonalProgress");
-static_assert(offsetof(UPyWidget_Settlement_PersonalProgress, SubNav_Left_Action) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalProgress::SubNav_Left_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalProgress, SubNav_Right_Action) == 0x0005C8, "Member 'UPyWidget_Settlement_PersonalProgress::SubNav_Right_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalProgress, SkipAllAnimGuideTipsStyle) == 0x0005D0, "Member 'UPyWidget_Settlement_PersonalProgress::SkipAllAnimGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalProgress;
 
 }
 

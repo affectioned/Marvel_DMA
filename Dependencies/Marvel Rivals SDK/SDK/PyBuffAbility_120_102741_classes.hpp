@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_102741.PyEffectAbility_120_10274111
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyEffectAbility_120_10274111 : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         CostMaxValue;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CostRegenValue;                                    // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WallMaxNum;                                        // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WallActionDurationTimeForSelf;                     // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WallActionDurationTimeForAlly;                     // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CostMaxValue;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CostRegenValue;                                    // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WallMaxNum;                                        // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WallActionDurationTimeForSelf;                     // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WallActionDurationTimeForAlly;                     // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,7 +35,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10274111">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10274111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10274111")
 	}
 	static class UPyEffectAbility_120_10274111* GetDefaultObj()
 	{
@@ -43,13 +47,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyEffectAbility_120_10274111) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10274111");
-static_assert(sizeof(UPyEffectAbility_120_10274111) == 0x001388, "Wrong size on UPyEffectAbility_120_10274111");
-static_assert(offsetof(UPyEffectAbility_120_10274111, CostMaxValue) == 0x001370, "Member 'UPyEffectAbility_120_10274111::CostMaxValue' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10274111, CostRegenValue) == 0x001374, "Member 'UPyEffectAbility_120_10274111::CostRegenValue' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10274111, WallMaxNum) == 0x001378, "Member 'UPyEffectAbility_120_10274111::WallMaxNum' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10274111, WallActionDurationTimeForSelf) == 0x00137C, "Member 'UPyEffectAbility_120_10274111::WallActionDurationTimeForSelf' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10274111, WallActionDurationTimeForAlly) == 0x001380, "Member 'UPyEffectAbility_120_10274111::WallActionDurationTimeForAlly' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10274111;
 
 }
 

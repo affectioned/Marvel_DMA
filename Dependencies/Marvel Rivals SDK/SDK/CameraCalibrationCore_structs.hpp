@@ -130,22 +130,7 @@ public:
 	float                                         SqueezeY;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LensRotation;                                      // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnamorphicDistortionParameters) == 0x000004, "Wrong alignment on FAnamorphicDistortionParameters");
-static_assert(sizeof(FAnamorphicDistortionParameters) == 0x000038, "Wrong size on FAnamorphicDistortionParameters");
-static_assert(offsetof(FAnamorphicDistortionParameters, PixelAspect) == 0x000000, "Member 'FAnamorphicDistortionParameters::PixelAspect' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CX02) == 0x000004, "Member 'FAnamorphicDistortionParameters::CX02' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CX04) == 0x000008, "Member 'FAnamorphicDistortionParameters::CX04' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CX22) == 0x00000C, "Member 'FAnamorphicDistortionParameters::CX22' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CX24) == 0x000010, "Member 'FAnamorphicDistortionParameters::CX24' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CX44) == 0x000014, "Member 'FAnamorphicDistortionParameters::CX44' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CY02) == 0x000018, "Member 'FAnamorphicDistortionParameters::CY02' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CY04) == 0x00001C, "Member 'FAnamorphicDistortionParameters::CY04' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CY22) == 0x000020, "Member 'FAnamorphicDistortionParameters::CY22' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CY24) == 0x000024, "Member 'FAnamorphicDistortionParameters::CY24' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, CY44) == 0x000028, "Member 'FAnamorphicDistortionParameters::CY44' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, SqueezeX) == 0x00002C, "Member 'FAnamorphicDistortionParameters::SqueezeX' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, SqueezeY) == 0x000030, "Member 'FAnamorphicDistortionParameters::SqueezeY' has a wrong offset!");
-static_assert(offsetof(FAnamorphicDistortionParameters, LensRotation) == 0x000034, "Member 'FAnamorphicDistortionParameters::LensRotation' has a wrong offset!");
+DUMPER7_ASSERTS_FAnamorphicDistortionParameters;
 
 // ScriptStruct CameraCalibrationCore.BaseFocusPoint
 // 0x0008 (0x0008 - 0x0000)
@@ -154,8 +139,7 @@ struct alignas(0x08) FBaseFocusPoint
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBaseFocusPoint) == 0x000008, "Wrong alignment on FBaseFocusPoint");
-static_assert(sizeof(FBaseFocusPoint) == 0x000008, "Wrong size on FBaseFocusPoint");
+DUMPER7_ASSERTS_FBaseFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.BaseLensTable
 // 0x0010 (0x0010 - 0x0000)
@@ -165,9 +149,7 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TWeakObjectPtr<class ULensFile>               LensFile;                                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FBaseLensTable) == 0x000008, "Wrong alignment on FBaseLensTable");
-static_assert(sizeof(FBaseLensTable) == 0x000010, "Wrong size on FBaseLensTable");
-static_assert(offsetof(FBaseLensTable, LensFile) == 0x000008, "Member 'FBaseLensTable::LensFile' has a wrong offset!");
+DUMPER7_ASSERTS_FBaseLensTable;
 
 // ScriptStruct CameraCalibrationCore.CalibratedMapFormat
 // 0x0003 (0x0003 - 0x0000)
@@ -178,11 +160,7 @@ public:
 	ECalibratedMapChannels                        UndistortionChannels;                              // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECalibratedMapChannels                        DistortionChannels;                                // 0x0002(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCalibratedMapFormat) == 0x000001, "Wrong alignment on FCalibratedMapFormat");
-static_assert(sizeof(FCalibratedMapFormat) == 0x000003, "Wrong size on FCalibratedMapFormat");
-static_assert(offsetof(FCalibratedMapFormat, PixelOrigin) == 0x000000, "Member 'FCalibratedMapFormat::PixelOrigin' has a wrong offset!");
-static_assert(offsetof(FCalibratedMapFormat, UndistortionChannels) == 0x000001, "Member 'FCalibratedMapFormat::UndistortionChannels' has a wrong offset!");
-static_assert(offsetof(FCalibratedMapFormat, DistortionChannels) == 0x000002, "Member 'FCalibratedMapFormat::DistortionChannels' has a wrong offset!");
+DUMPER7_ASSERTS_FCalibratedMapFormat;
 
 // ScriptStruct CameraCalibrationCore.LensDataCategoryEditorColor
 // 0x001C (0x001C - 0x0000)
@@ -197,15 +175,7 @@ public:
 	struct FColor                                 STMap;                                             // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 NodalOffset;                                       // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLensDataCategoryEditorColor) == 0x000004, "Wrong alignment on FLensDataCategoryEditorColor");
-static_assert(sizeof(FLensDataCategoryEditorColor) == 0x00001C, "Wrong size on FLensDataCategoryEditorColor");
-static_assert(offsetof(FLensDataCategoryEditorColor, Focus) == 0x000000, "Member 'FLensDataCategoryEditorColor::Focus' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, Iris) == 0x000004, "Member 'FLensDataCategoryEditorColor::Iris' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, Zoom) == 0x000008, "Member 'FLensDataCategoryEditorColor::Zoom' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, Distortion) == 0x00000C, "Member 'FLensDataCategoryEditorColor::Distortion' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, ImageCenter) == 0x000010, "Member 'FLensDataCategoryEditorColor::ImageCenter' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, STMap) == 0x000014, "Member 'FLensDataCategoryEditorColor::STMap' has a wrong offset!");
-static_assert(offsetof(FLensDataCategoryEditorColor, NodalOffset) == 0x000018, "Member 'FLensDataCategoryEditorColor::NodalOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FLensDataCategoryEditorColor;
 
 // ScriptStruct CameraCalibrationCore.DistortionHandlerPicker
 // 0x0028 (0x0028 - 0x0000)
@@ -216,11 +186,7 @@ public:
 	struct FGuid                                  DistortionProducerID;                              // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 HandlerDisplayName;                                // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionHandlerPicker) == 0x000008, "Wrong alignment on FDistortionHandlerPicker");
-static_assert(sizeof(FDistortionHandlerPicker) == 0x000028, "Wrong size on FDistortionHandlerPicker");
-static_assert(offsetof(FDistortionHandlerPicker, TargetCameraComponent) == 0x000000, "Member 'FDistortionHandlerPicker::TargetCameraComponent' has a wrong offset!");
-static_assert(offsetof(FDistortionHandlerPicker, DistortionProducerID) == 0x000008, "Member 'FDistortionHandlerPicker::DistortionProducerID' has a wrong offset!");
-static_assert(offsetof(FDistortionHandlerPicker, HandlerDisplayName) == 0x000018, "Member 'FDistortionHandlerPicker::HandlerDisplayName' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionHandlerPicker;
 
 // ScriptStruct CameraCalibrationCore.DistortionInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -229,9 +195,7 @@ struct FDistortionInfo final
 public:
 	TArray<float>                                 Parameters;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Interp, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionInfo) == 0x000008, "Wrong alignment on FDistortionInfo");
-static_assert(sizeof(FDistortionInfo) == 0x000010, "Wrong size on FDistortionInfo");
-static_assert(offsetof(FDistortionInfo, Parameters) == 0x000000, "Member 'FDistortionInfo::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionInfo;
 
 // ScriptStruct CameraCalibrationCore.DistortionZoomPoint
 // 0x0018 (0x0018 - 0x0000)
@@ -242,10 +206,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDistortionInfo                        DistortionInfo;                                    // 0x0008(0x0010)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionZoomPoint) == 0x000008, "Wrong alignment on FDistortionZoomPoint");
-static_assert(sizeof(FDistortionZoomPoint) == 0x000018, "Wrong size on FDistortionZoomPoint");
-static_assert(offsetof(FDistortionZoomPoint, Zoom) == 0x000000, "Member 'FDistortionZoomPoint::Zoom' has a wrong offset!");
-static_assert(offsetof(FDistortionZoomPoint, DistortionInfo) == 0x000008, "Member 'FDistortionZoomPoint::DistortionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionZoomPoint;
 
 // ScriptStruct CameraCalibrationCore.DistortionFocusPoint
 // 0x0098 (0x00A0 - 0x0008)
@@ -257,11 +218,7 @@ public:
 	struct FRichCurve                             MapBlendingCurve;                                  // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FDistortionZoomPoint>           ZoomPoints;                                        // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionFocusPoint) == 0x000008, "Wrong alignment on FDistortionFocusPoint");
-static_assert(sizeof(FDistortionFocusPoint) == 0x0000A0, "Wrong size on FDistortionFocusPoint");
-static_assert(offsetof(FDistortionFocusPoint, Focus) == 0x000008, "Member 'FDistortionFocusPoint::Focus' has a wrong offset!");
-static_assert(offsetof(FDistortionFocusPoint, MapBlendingCurve) == 0x000010, "Member 'FDistortionFocusPoint::MapBlendingCurve' has a wrong offset!");
-static_assert(offsetof(FDistortionFocusPoint, ZoomPoints) == 0x000090, "Member 'FDistortionFocusPoint::ZoomPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.DistortionTable
 // 0x0010 (0x0020 - 0x0010)
@@ -270,9 +227,7 @@ struct FDistortionTable final : public FBaseLensTable
 public:
 	TArray<struct FDistortionFocusPoint>          FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionTable) == 0x000008, "Wrong alignment on FDistortionTable");
-static_assert(sizeof(FDistortionTable) == 0x000020, "Wrong size on FDistortionTable");
-static_assert(offsetof(FDistortionTable, FocusPoints) == 0x000010, "Member 'FDistortionTable::FocusPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionTable;
 
 // ScriptStruct CameraCalibrationCore.EncodersTable
 // 0x0100 (0x0100 - 0x0000)
@@ -282,10 +237,7 @@ public:
 	struct FRichCurve                             Focus;                                             // 0x0000(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             Iris;                                              // 0x0080(0x0080)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEncodersTable) == 0x000008, "Wrong alignment on FEncodersTable");
-static_assert(sizeof(FEncodersTable) == 0x000100, "Wrong size on FEncodersTable");
-static_assert(offsetof(FEncodersTable, Focus) == 0x000000, "Member 'FEncodersTable::Focus' has a wrong offset!");
-static_assert(offsetof(FEncodersTable, Iris) == 0x000080, "Member 'FEncodersTable::Iris' has a wrong offset!");
+DUMPER7_ASSERTS_FEncodersTable;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -294,9 +246,7 @@ struct FFocalLengthInfo final
 public:
 	struct FVector2D                              FxFy;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFocalLengthInfo) == 0x000008, "Wrong alignment on FFocalLengthInfo");
-static_assert(sizeof(FFocalLengthInfo) == 0x000010, "Wrong size on FFocalLengthInfo");
-static_assert(offsetof(FFocalLengthInfo, FxFy) == 0x000000, "Member 'FFocalLengthInfo::FxFy' has a wrong offset!");
+DUMPER7_ASSERTS_FFocalLengthInfo;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthZoomPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -309,11 +259,7 @@ public:
 	bool                                          bIsCalibrationPoint;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFocalLengthZoomPoint) == 0x000008, "Wrong alignment on FFocalLengthZoomPoint");
-static_assert(sizeof(FFocalLengthZoomPoint) == 0x000020, "Wrong size on FFocalLengthZoomPoint");
-static_assert(offsetof(FFocalLengthZoomPoint, Zoom) == 0x000000, "Member 'FFocalLengthZoomPoint::Zoom' has a wrong offset!");
-static_assert(offsetof(FFocalLengthZoomPoint, FocalLengthInfo) == 0x000008, "Member 'FFocalLengthZoomPoint::FocalLengthInfo' has a wrong offset!");
-static_assert(offsetof(FFocalLengthZoomPoint, bIsCalibrationPoint) == 0x000018, "Member 'FFocalLengthZoomPoint::bIsCalibrationPoint' has a wrong offset!");
+DUMPER7_ASSERTS_FFocalLengthZoomPoint;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthFocusPoint
 // 0x0118 (0x0120 - 0x0008)
@@ -326,12 +272,7 @@ public:
 	struct FRichCurve                             Fy;                                                // 0x0090(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FFocalLengthZoomPoint>          ZoomPoints;                                        // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFocalLengthFocusPoint) == 0x000008, "Wrong alignment on FFocalLengthFocusPoint");
-static_assert(sizeof(FFocalLengthFocusPoint) == 0x000120, "Wrong size on FFocalLengthFocusPoint");
-static_assert(offsetof(FFocalLengthFocusPoint, Focus) == 0x000008, "Member 'FFocalLengthFocusPoint::Focus' has a wrong offset!");
-static_assert(offsetof(FFocalLengthFocusPoint, Fx) == 0x000010, "Member 'FFocalLengthFocusPoint::Fx' has a wrong offset!");
-static_assert(offsetof(FFocalLengthFocusPoint, Fy) == 0x000090, "Member 'FFocalLengthFocusPoint::Fy' has a wrong offset!");
-static_assert(offsetof(FFocalLengthFocusPoint, ZoomPoints) == 0x000110, "Member 'FFocalLengthFocusPoint::ZoomPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FFocalLengthFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthTable
 // 0x0010 (0x0020 - 0x0010)
@@ -340,9 +281,7 @@ struct FFocalLengthTable final : public FBaseLensTable
 public:
 	TArray<struct FFocalLengthFocusPoint>         FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFocalLengthTable) == 0x000008, "Wrong alignment on FFocalLengthTable");
-static_assert(sizeof(FFocalLengthTable) == 0x000020, "Wrong size on FFocalLengthTable");
-static_assert(offsetof(FFocalLengthTable, FocusPoints) == 0x000010, "Member 'FFocalLengthTable::FocusPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FFocalLengthTable;
 
 // ScriptStruct CameraCalibrationCore.ImageCenterFocusPoint
 // 0x0108 (0x0110 - 0x0008)
@@ -354,11 +293,7 @@ public:
 	struct FRichCurve                             Cx;                                                // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             Cy;                                                // 0x0090(0x0080)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FImageCenterFocusPoint) == 0x000008, "Wrong alignment on FImageCenterFocusPoint");
-static_assert(sizeof(FImageCenterFocusPoint) == 0x000110, "Wrong size on FImageCenterFocusPoint");
-static_assert(offsetof(FImageCenterFocusPoint, Focus) == 0x000008, "Member 'FImageCenterFocusPoint::Focus' has a wrong offset!");
-static_assert(offsetof(FImageCenterFocusPoint, Cx) == 0x000010, "Member 'FImageCenterFocusPoint::Cx' has a wrong offset!");
-static_assert(offsetof(FImageCenterFocusPoint, Cy) == 0x000090, "Member 'FImageCenterFocusPoint::Cy' has a wrong offset!");
+DUMPER7_ASSERTS_FImageCenterFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.ImageCenterTable
 // 0x0010 (0x0020 - 0x0010)
@@ -367,9 +302,7 @@ struct FImageCenterTable final : public FBaseLensTable
 public:
 	TArray<struct FImageCenterFocusPoint>         FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FImageCenterTable) == 0x000008, "Wrong alignment on FImageCenterTable");
-static_assert(sizeof(FImageCenterTable) == 0x000020, "Wrong size on FImageCenterTable");
-static_assert(offsetof(FImageCenterTable, FocusPoints) == 0x000010, "Member 'FImageCenterTable::FocusPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FImageCenterTable;
 
 // ScriptStruct CameraCalibrationCore.LensInfo
 // 0x0048 (0x0048 - 0x0000)
@@ -384,14 +317,7 @@ public:
 	float                                         SqueezeFactor;                                     // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLensInfo) == 0x000008, "Wrong alignment on FLensInfo");
-static_assert(sizeof(FLensInfo) == 0x000048, "Wrong size on FLensInfo");
-static_assert(offsetof(FLensInfo, LensModelName) == 0x000000, "Member 'FLensInfo::LensModelName' has a wrong offset!");
-static_assert(offsetof(FLensInfo, LensSerialNumber) == 0x000010, "Member 'FLensInfo::LensSerialNumber' has a wrong offset!");
-static_assert(offsetof(FLensInfo, LensModel) == 0x000020, "Member 'FLensInfo::LensModel' has a wrong offset!");
-static_assert(offsetof(FLensInfo, SensorDimensions) == 0x000028, "Member 'FLensInfo::SensorDimensions' has a wrong offset!");
-static_assert(offsetof(FLensInfo, ImageDimensions) == 0x000038, "Member 'FLensInfo::ImageDimensions' has a wrong offset!");
-static_assert(offsetof(FLensInfo, SqueezeFactor) == 0x000040, "Member 'FLensInfo::SqueezeFactor' has a wrong offset!");
+DUMPER7_ASSERTS_FLensInfo;
 
 // ScriptStruct CameraCalibrationCore.CameraFeedInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -402,10 +328,7 @@ public:
 	float                                         AspectRatio;                                       // 0x0008(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCameraFeedInfo) == 0x000004, "Wrong alignment on FCameraFeedInfo");
-static_assert(sizeof(FCameraFeedInfo) == 0x000010, "Wrong size on FCameraFeedInfo");
-static_assert(offsetof(FCameraFeedInfo, Dimensions) == 0x000000, "Member 'FCameraFeedInfo::Dimensions' has a wrong offset!");
-static_assert(offsetof(FCameraFeedInfo, AspectRatio) == 0x000008, "Member 'FCameraFeedInfo::AspectRatio' has a wrong offset!");
+DUMPER7_ASSERTS_FCameraFeedInfo;
 
 // ScriptStruct CameraCalibrationCore.SimulcamInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -416,11 +339,7 @@ public:
 	float                                         MediaPlateAspectRatio;                             // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CGLayerAspectRatio;                                // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSimulcamInfo) == 0x000004, "Wrong alignment on FSimulcamInfo");
-static_assert(sizeof(FSimulcamInfo) == 0x000010, "Wrong size on FSimulcamInfo");
-static_assert(offsetof(FSimulcamInfo, MediaResolution) == 0x000000, "Member 'FSimulcamInfo::MediaResolution' has a wrong offset!");
-static_assert(offsetof(FSimulcamInfo, MediaPlateAspectRatio) == 0x000008, "Member 'FSimulcamInfo::MediaPlateAspectRatio' has a wrong offset!");
-static_assert(offsetof(FSimulcamInfo, CGLayerAspectRatio) == 0x00000C, "Member 'FSimulcamInfo::CGLayerAspectRatio' has a wrong offset!");
+DUMPER7_ASSERTS_FSimulcamInfo;
 
 // ScriptStruct CameraCalibrationCore.STMapInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -431,10 +350,7 @@ public:
 	struct FCalibratedMapFormat                   MapFormat;                                         // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSTMapInfo) == 0x000008, "Wrong alignment on FSTMapInfo");
-static_assert(sizeof(FSTMapInfo) == 0x000010, "Wrong size on FSTMapInfo");
-static_assert(offsetof(FSTMapInfo, DistortionMap) == 0x000000, "Member 'FSTMapInfo::DistortionMap' has a wrong offset!");
-static_assert(offsetof(FSTMapInfo, MapFormat) == 0x000008, "Member 'FSTMapInfo::MapFormat' has a wrong offset!");
+DUMPER7_ASSERTS_FSTMapInfo;
 
 // ScriptStruct CameraCalibrationCore.ImageCenterInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -443,9 +359,7 @@ struct FImageCenterInfo final
 public:
 	struct FVector2D                              PrincipalPoint;                                    // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FImageCenterInfo) == 0x000008, "Wrong alignment on FImageCenterInfo");
-static_assert(sizeof(FImageCenterInfo) == 0x000010, "Wrong size on FImageCenterInfo");
-static_assert(offsetof(FImageCenterInfo, PrincipalPoint) == 0x000000, "Member 'FImageCenterInfo::PrincipalPoint' has a wrong offset!");
+DUMPER7_ASSERTS_FImageCenterInfo;
 
 // ScriptStruct CameraCalibrationCore.NodalPointOffset
 // 0x0040 (0x0040 - 0x0000)
@@ -456,10 +370,7 @@ public:
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  RotationOffset;                                    // 0x0020(0x0020)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodalPointOffset) == 0x000010, "Wrong alignment on FNodalPointOffset");
-static_assert(sizeof(FNodalPointOffset) == 0x000040, "Wrong size on FNodalPointOffset");
-static_assert(offsetof(FNodalPointOffset, LocationOffset) == 0x000000, "Member 'FNodalPointOffset::LocationOffset' has a wrong offset!");
-static_assert(offsetof(FNodalPointOffset, RotationOffset) == 0x000020, "Member 'FNodalPointOffset::RotationOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FNodalPointOffset;
 
 // ScriptStruct CameraCalibrationCore.DistortionData
 // 0x0018 (0x0018 - 0x0000)
@@ -470,10 +381,7 @@ public:
 	float                                         OverscanFactor;                                    // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDistortionData) == 0x000008, "Wrong alignment on FDistortionData");
-static_assert(sizeof(FDistortionData) == 0x000018, "Wrong size on FDistortionData");
-static_assert(offsetof(FDistortionData, DistortedUVs) == 0x000000, "Member 'FDistortionData::DistortedUVs' has a wrong offset!");
-static_assert(offsetof(FDistortionData, OverscanFactor) == 0x000010, "Member 'FDistortionData::OverscanFactor' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionData;
 
 // ScriptStruct CameraCalibrationCore.DataTablePointInfoBase
 // 0x0008 (0x0008 - 0x0000)
@@ -483,10 +391,7 @@ public:
 	float                                         Focus;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Zoom;                                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDataTablePointInfoBase) == 0x000004, "Wrong alignment on FDataTablePointInfoBase");
-static_assert(sizeof(FDataTablePointInfoBase) == 0x000008, "Wrong size on FDataTablePointInfoBase");
-static_assert(offsetof(FDataTablePointInfoBase, Focus) == 0x000000, "Member 'FDataTablePointInfoBase::Focus' has a wrong offset!");
-static_assert(offsetof(FDataTablePointInfoBase, Zoom) == 0x000004, "Member 'FDataTablePointInfoBase::Zoom' has a wrong offset!");
+DUMPER7_ASSERTS_FDataTablePointInfoBase;
 
 // ScriptStruct CameraCalibrationCore.DistortionPointInfo
 // 0x0010 (0x0018 - 0x0008)
@@ -495,9 +400,7 @@ struct FDistortionPointInfo final : public FDataTablePointInfoBase
 public:
 	struct FDistortionInfo                        DistortionInfo;                                    // 0x0008(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDistortionPointInfo) == 0x000008, "Wrong alignment on FDistortionPointInfo");
-static_assert(sizeof(FDistortionPointInfo) == 0x000018, "Wrong size on FDistortionPointInfo");
-static_assert(offsetof(FDistortionPointInfo, DistortionInfo) == 0x000008, "Member 'FDistortionPointInfo::DistortionInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FDistortionPointInfo;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthPointInfo
 // 0x0010 (0x0018 - 0x0008)
@@ -506,9 +409,7 @@ struct FFocalLengthPointInfo final : public FDataTablePointInfoBase
 public:
 	struct FFocalLengthInfo                       FocalLengthInfo;                                   // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FFocalLengthPointInfo) == 0x000008, "Wrong alignment on FFocalLengthPointInfo");
-static_assert(sizeof(FFocalLengthPointInfo) == 0x000018, "Wrong size on FFocalLengthPointInfo");
-static_assert(offsetof(FFocalLengthPointInfo, FocalLengthInfo) == 0x000008, "Member 'FFocalLengthPointInfo::FocalLengthInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FFocalLengthPointInfo;
 
 // ScriptStruct CameraCalibrationCore.STMapPointInfo
 // 0x0010 (0x0018 - 0x0008)
@@ -517,9 +418,7 @@ struct FSTMapPointInfo final : public FDataTablePointInfoBase
 public:
 	struct FSTMapInfo                             STMapInfo;                                         // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSTMapPointInfo) == 0x000008, "Wrong alignment on FSTMapPointInfo");
-static_assert(sizeof(FSTMapPointInfo) == 0x000018, "Wrong size on FSTMapPointInfo");
-static_assert(offsetof(FSTMapPointInfo, STMapInfo) == 0x000008, "Member 'FSTMapPointInfo::STMapInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FSTMapPointInfo;
 
 // ScriptStruct CameraCalibrationCore.ImageCenterPointInfo
 // 0x0010 (0x0018 - 0x0008)
@@ -528,9 +427,7 @@ struct FImageCenterPointInfo final : public FDataTablePointInfoBase
 public:
 	struct FImageCenterInfo                       ImageCenterInfo;                                   // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FImageCenterPointInfo) == 0x000008, "Wrong alignment on FImageCenterPointInfo");
-static_assert(sizeof(FImageCenterPointInfo) == 0x000018, "Wrong size on FImageCenterPointInfo");
-static_assert(offsetof(FImageCenterPointInfo, ImageCenterInfo) == 0x000008, "Member 'FImageCenterPointInfo::ImageCenterInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FImageCenterPointInfo;
 
 // ScriptStruct CameraCalibrationCore.NodalOffsetPointInfo
 // 0x0048 (0x0050 - 0x0008)
@@ -540,9 +437,7 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNodalPointOffset                      NodalPointOffset;                                  // 0x0010(0x0040)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodalOffsetPointInfo) == 0x000010, "Wrong alignment on FNodalOffsetPointInfo");
-static_assert(sizeof(FNodalOffsetPointInfo) == 0x000050, "Wrong size on FNodalOffsetPointInfo");
-static_assert(offsetof(FNodalOffsetPointInfo, NodalPointOffset) == 0x000010, "Member 'FNodalOffsetPointInfo::NodalPointOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FNodalOffsetPointInfo;
 
 // ScriptStruct CameraCalibrationCore.LensDistortionState
 // 0x0030 (0x0030 - 0x0000)
@@ -553,11 +448,7 @@ public:
 	struct FFocalLengthInfo                       FocalLengthInfo;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FImageCenterInfo                       ImageCenter;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLensDistortionState) == 0x000008, "Wrong alignment on FLensDistortionState");
-static_assert(sizeof(FLensDistortionState) == 0x000030, "Wrong size on FLensDistortionState");
-static_assert(offsetof(FLensDistortionState, DistortionInfo) == 0x000000, "Member 'FLensDistortionState::DistortionInfo' has a wrong offset!");
-static_assert(offsetof(FLensDistortionState, FocalLengthInfo) == 0x000010, "Member 'FLensDistortionState::FocalLengthInfo' has a wrong offset!");
-static_assert(offsetof(FLensDistortionState, ImageCenter) == 0x000020, "Member 'FLensDistortionState::ImageCenter' has a wrong offset!");
+DUMPER7_ASSERTS_FLensDistortionState;
 
 // ScriptStruct CameraCalibrationCore.LensFilePicker
 // 0x0010 (0x0010 - 0x0000)
@@ -568,10 +459,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULensFile*                              LensFile;                                          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLensFilePicker) == 0x000008, "Wrong alignment on FLensFilePicker");
-static_assert(sizeof(FLensFilePicker) == 0x000010, "Wrong size on FLensFilePicker");
-static_assert(offsetof(FLensFilePicker, bUseDefaultLensFile) == 0x000000, "Member 'FLensFilePicker::bUseDefaultLensFile' has a wrong offset!");
-static_assert(offsetof(FLensFilePicker, LensFile) == 0x000008, "Member 'FLensFilePicker::LensFile' has a wrong offset!");
+DUMPER7_ASSERTS_FLensFilePicker;
 
 // ScriptStruct CameraCalibrationCore.LensFileEvaluationInputs
 // 0x001C (0x001C - 0x0000)
@@ -585,13 +473,7 @@ public:
 	bool                                          bIsValid;                                          // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLensFileEvaluationInputs) == 0x000004, "Wrong alignment on FLensFileEvaluationInputs");
-static_assert(sizeof(FLensFileEvaluationInputs) == 0x00001C, "Wrong size on FLensFileEvaluationInputs");
-static_assert(offsetof(FLensFileEvaluationInputs, Focus) == 0x000000, "Member 'FLensFileEvaluationInputs::Focus' has a wrong offset!");
-static_assert(offsetof(FLensFileEvaluationInputs, Iris) == 0x000004, "Member 'FLensFileEvaluationInputs::Iris' has a wrong offset!");
-static_assert(offsetof(FLensFileEvaluationInputs, Zoom) == 0x000008, "Member 'FLensFileEvaluationInputs::Zoom' has a wrong offset!");
-static_assert(offsetof(FLensFileEvaluationInputs, Filmback) == 0x00000C, "Member 'FLensFileEvaluationInputs::Filmback' has a wrong offset!");
-static_assert(offsetof(FLensFileEvaluationInputs, bIsValid) == 0x000018, "Member 'FLensFileEvaluationInputs::bIsValid' has a wrong offset!");
+DUMPER7_ASSERTS_FLensFileEvaluationInputs;
 
 // ScriptStruct CameraCalibrationCore.NodalOffsetFocusPoint
 // 0x0308 (0x0310 - 0x0008)
@@ -603,11 +485,7 @@ public:
 	struct FRichCurve                             LocationOffset[0x3];                               // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             RotationOffset[0x3];                               // 0x0190(0x0080)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodalOffsetFocusPoint) == 0x000008, "Wrong alignment on FNodalOffsetFocusPoint");
-static_assert(sizeof(FNodalOffsetFocusPoint) == 0x000310, "Wrong size on FNodalOffsetFocusPoint");
-static_assert(offsetof(FNodalOffsetFocusPoint, Focus) == 0x000008, "Member 'FNodalOffsetFocusPoint::Focus' has a wrong offset!");
-static_assert(offsetof(FNodalOffsetFocusPoint, LocationOffset) == 0x000010, "Member 'FNodalOffsetFocusPoint::LocationOffset' has a wrong offset!");
-static_assert(offsetof(FNodalOffsetFocusPoint, RotationOffset) == 0x000190, "Member 'FNodalOffsetFocusPoint::RotationOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FNodalOffsetFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.NodalOffsetTable
 // 0x0010 (0x0020 - 0x0010)
@@ -616,9 +494,7 @@ struct FNodalOffsetTable final : public FBaseLensTable
 public:
 	TArray<struct FNodalOffsetFocusPoint>         FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNodalOffsetTable) == 0x000008, "Wrong alignment on FNodalOffsetTable");
-static_assert(sizeof(FNodalOffsetTable) == 0x000020, "Wrong size on FNodalOffsetTable");
-static_assert(offsetof(FNodalOffsetTable, FocusPoints) == 0x000010, "Member 'FNodalOffsetTable::FocusPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FNodalOffsetTable;
 
 // ScriptStruct CameraCalibrationCore.SphericalDistortionParameters
 // 0x0014 (0x0014 - 0x0000)
@@ -631,13 +507,7 @@ public:
 	float                                         P1;                                                // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         P2;                                                // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSphericalDistortionParameters) == 0x000004, "Wrong alignment on FSphericalDistortionParameters");
-static_assert(sizeof(FSphericalDistortionParameters) == 0x000014, "Wrong size on FSphericalDistortionParameters");
-static_assert(offsetof(FSphericalDistortionParameters, K1) == 0x000000, "Member 'FSphericalDistortionParameters::K1' has a wrong offset!");
-static_assert(offsetof(FSphericalDistortionParameters, K2) == 0x000004, "Member 'FSphericalDistortionParameters::K2' has a wrong offset!");
-static_assert(offsetof(FSphericalDistortionParameters, K3) == 0x000008, "Member 'FSphericalDistortionParameters::K3' has a wrong offset!");
-static_assert(offsetof(FSphericalDistortionParameters, P1) == 0x00000C, "Member 'FSphericalDistortionParameters::P1' has a wrong offset!");
-static_assert(offsetof(FSphericalDistortionParameters, P2) == 0x000010, "Member 'FSphericalDistortionParameters::P2' has a wrong offset!");
+DUMPER7_ASSERTS_FSphericalDistortionParameters;
 
 // ScriptStruct CameraCalibrationCore.DerivedDistortionData
 // 0x0030 (0x0030 - 0x0000)
@@ -649,11 +519,7 @@ public:
 	class UTextureRenderTarget2D*                 DistortionDisplacementMap;                         // 0x0020(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDerivedDistortionData) == 0x000008, "Wrong alignment on FDerivedDistortionData");
-static_assert(sizeof(FDerivedDistortionData) == 0x000030, "Wrong size on FDerivedDistortionData");
-static_assert(offsetof(FDerivedDistortionData, DistortionData) == 0x000000, "Member 'FDerivedDistortionData::DistortionData' has a wrong offset!");
-static_assert(offsetof(FDerivedDistortionData, UndistortionDisplacementMap) == 0x000018, "Member 'FDerivedDistortionData::UndistortionDisplacementMap' has a wrong offset!");
-static_assert(offsetof(FDerivedDistortionData, DistortionDisplacementMap) == 0x000020, "Member 'FDerivedDistortionData::DistortionDisplacementMap' has a wrong offset!");
+DUMPER7_ASSERTS_FDerivedDistortionData;
 
 // ScriptStruct CameraCalibrationCore.STMapZoomPoint
 // 0x0050 (0x0050 - 0x0000)
@@ -667,12 +533,7 @@ public:
 	bool                                          bIsCalibrationPoint;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSTMapZoomPoint) == 0x000008, "Wrong alignment on FSTMapZoomPoint");
-static_assert(sizeof(FSTMapZoomPoint) == 0x000050, "Wrong size on FSTMapZoomPoint");
-static_assert(offsetof(FSTMapZoomPoint, Zoom) == 0x000000, "Member 'FSTMapZoomPoint::Zoom' has a wrong offset!");
-static_assert(offsetof(FSTMapZoomPoint, STMapInfo) == 0x000008, "Member 'FSTMapZoomPoint::STMapInfo' has a wrong offset!");
-static_assert(offsetof(FSTMapZoomPoint, DerivedDistortionData) == 0x000018, "Member 'FSTMapZoomPoint::DerivedDistortionData' has a wrong offset!");
-static_assert(offsetof(FSTMapZoomPoint, bIsCalibrationPoint) == 0x000048, "Member 'FSTMapZoomPoint::bIsCalibrationPoint' has a wrong offset!");
+DUMPER7_ASSERTS_FSTMapZoomPoint;
 
 // ScriptStruct CameraCalibrationCore.STMapFocusPoint
 // 0x0098 (0x00A0 - 0x0008)
@@ -684,11 +545,7 @@ public:
 	struct FRichCurve                             MapBlendingCurve;                                  // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FSTMapZoomPoint>                ZoomPoints;                                        // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSTMapFocusPoint) == 0x000008, "Wrong alignment on FSTMapFocusPoint");
-static_assert(sizeof(FSTMapFocusPoint) == 0x0000A0, "Wrong size on FSTMapFocusPoint");
-static_assert(offsetof(FSTMapFocusPoint, Focus) == 0x000008, "Member 'FSTMapFocusPoint::Focus' has a wrong offset!");
-static_assert(offsetof(FSTMapFocusPoint, MapBlendingCurve) == 0x000010, "Member 'FSTMapFocusPoint::MapBlendingCurve' has a wrong offset!");
-static_assert(offsetof(FSTMapFocusPoint, ZoomPoints) == 0x000090, "Member 'FSTMapFocusPoint::ZoomPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FSTMapFocusPoint;
 
 // ScriptStruct CameraCalibrationCore.STMapTable
 // 0x0010 (0x0020 - 0x0010)
@@ -697,9 +554,7 @@ struct FSTMapTable final : public FBaseLensTable
 public:
 	TArray<struct FSTMapFocusPoint>               FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSTMapTable) == 0x000008, "Wrong alignment on FSTMapTable");
-static_assert(sizeof(FSTMapTable) == 0x000020, "Wrong size on FSTMapTable");
-static_assert(offsetof(FSTMapTable, FocusPoints) == 0x000010, "Member 'FSTMapTable::FocusPoints' has a wrong offset!");
+DUMPER7_ASSERTS_FSTMapTable;
 
 }
 

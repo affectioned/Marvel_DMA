@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Train_Setting_OptionEntry.PyWidget_Train_Setting_OptionEntry
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0730 - 0x0730)
 class UPyWidget_Train_Setting_OptionEntry : public UPyWidget_SettingOptionEntry
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Train_Setting_OptionEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Train_Setting_OptionEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Train_Setting_OptionEntry")
 	}
 	static class UPyWidget_Train_Setting_OptionEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Train_Setting_OptionEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Train_Setting_OptionEntry) == 0x000008, "Wrong alignment on UPyWidget_Train_Setting_OptionEntry");
-static_assert(sizeof(UPyWidget_Train_Setting_OptionEntry) == 0x000728, "Wrong size on UPyWidget_Train_Setting_OptionEntry");
+DUMPER7_ASSERTS_UPyWidget_Train_Setting_OptionEntry;
 
 }
 

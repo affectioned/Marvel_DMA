@@ -21,9 +21,7 @@ struct PyWidget_CareerPlayerInfo_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPlayerInfo_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_CareerPlayerInfo_PreConstruct");
-static_assert(sizeof(PyWidget_CareerPlayerInfo_PreConstruct) == 0x000001, "Wrong size on PyWidget_CareerPlayerInfo_PreConstruct");
-static_assert(offsetof(PyWidget_CareerPlayerInfo_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_CareerPlayerInfo_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPlayerInfo_PreConstruct;
 
 // PythonFunction PyWidget_CareerPlayerInfo.PyWidget_CareerPlayerInfo.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPlayerInfo_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_CareerPlayerInfo.PyWidget_CareerPlayerInfo.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_CareerPlayerInfo_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPlayerInfo_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CareerPlayerInfo_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CareerPlayerInfo_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CareerPlayerInfo_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CareerPlayerInfo_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CareerPlayerInfo_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPlayerInfo_OnAnimationFinished;
 
 }
 

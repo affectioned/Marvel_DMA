@@ -37,24 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathMatchFreeConfig">();
+		STATIC_CLASS_IMPL("PyDeathMatchFreeConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathMatchFreeConfig")
 	}
 	static class UPyDeathMatchFreeConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDeathMatchFreeConfig>();
 	}
 };
-static_assert(alignof(UPyDeathMatchFreeConfig) == 0x000008, "Wrong alignment on UPyDeathMatchFreeConfig");
-static_assert(sizeof(UPyDeathMatchFreeConfig) == 0x000080, "Wrong size on UPyDeathMatchFreeConfig");
-static_assert(offsetof(UPyDeathMatchFreeConfig, KillMeScore) == 0x000030, "Member 'UPyDeathMatchFreeConfig::KillMeScore' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, ScoreOnKill) == 0x000034, "Member 'UPyDeathMatchFreeConfig::ScoreOnKill' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, ScoreOnKill2) == 0x000038, "Member 'UPyDeathMatchFreeConfig::ScoreOnKill2' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, ScoreOnKill2Time) == 0x00003C, "Member 'UPyDeathMatchFreeConfig::ScoreOnKill2Time' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, AudioScoreGap) == 0x000040, "Member 'UPyDeathMatchFreeConfig::AudioScoreGap' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, PrepareStageBuffID) == 0x000048, "Member 'UPyDeathMatchFreeConfig::PrepareStageBuffID' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, BattleRespawnBuffID) == 0x000058, "Member 'UPyDeathMatchFreeConfig::BattleRespawnBuffID' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, SuperSkillChargeRate) == 0x000068, "Member 'UPyDeathMatchFreeConfig::SuperSkillChargeRate' has a wrong offset!");
-static_assert(offsetof(UPyDeathMatchFreeConfig, KillOtherBuffID) == 0x000070, "Member 'UPyDeathMatchFreeConfig::KillOtherBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDeathMatchFreeConfig;
 
 // PythonClass PyDeathMatchFreeRuleComponent.PyDeathMatchFreeRuleComponent
 // 0x0000 (0x0160 - 0x0160)
@@ -63,15 +57,18 @@ class UPyDeathMatchFreeRuleComponent final : public UPyDeathMatchRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDeathMatchFreeRuleComponent">();
+		STATIC_CLASS_IMPL("PyDeathMatchFreeRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDeathMatchFreeRuleComponent")
 	}
 	static class UPyDeathMatchFreeRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDeathMatchFreeRuleComponent>();
 	}
 };
-static_assert(alignof(UPyDeathMatchFreeRuleComponent) == 0x000008, "Wrong alignment on UPyDeathMatchFreeRuleComponent");
-static_assert(sizeof(UPyDeathMatchFreeRuleComponent) == 0x000160, "Wrong size on UPyDeathMatchFreeRuleComponent");
+DUMPER7_ASSERTS_UPyDeathMatchFreeRuleComponent;
 
 }
 

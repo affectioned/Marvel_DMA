@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_WeaponStatus.PyWidget_WeaponStatusPanel
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UPyWidget_WeaponStatusPanel : public UMarvelUserWidget
 {
 public:
-	bool                                          bCustomColorPreview;                               // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -36,28 +36,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WeaponStatusPanel">();
+		STATIC_CLASS_IMPL("PyWidget_WeaponStatusPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WeaponStatusPanel")
 	}
 	static class UPyWidget_WeaponStatusPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WeaponStatusPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_WeaponStatusPanel) == 0x000008, "Wrong alignment on UPyWidget_WeaponStatusPanel");
-static_assert(sizeof(UPyWidget_WeaponStatusPanel) == 0x000570, "Wrong size on UPyWidget_WeaponStatusPanel");
-static_assert(offsetof(UPyWidget_WeaponStatusPanel, bCustomColorPreview) == 0x000568, "Member 'UPyWidget_WeaponStatusPanel::bCustomColorPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WeaponStatusPanel;
 
 // PythonClass PyWidget_WeaponStatus.PyWidget_WeaponAmmo
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_WeaponAmmo : public UMarvelUserWidget
 {
 public:
-	bool                                          IsInfinite;                                        // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowAmmo;                                          // 0x0569(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowAmmoMax;                                       // 0x056A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_56B[0x1];                                      // 0x056B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         AmmoMax;                                           // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AmmoCurrent;                                       // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsInfinite;                                        // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowAmmo;                                          // 0x0571(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowAmmoMax;                                       // 0x0572(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_573[0x1];                                      // 0x0573(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         AmmoMax;                                           // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AmmoCurrent;                                       // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -69,31 +71,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WeaponAmmo">();
+		STATIC_CLASS_IMPL("PyWidget_WeaponAmmo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WeaponAmmo")
 	}
 	static class UPyWidget_WeaponAmmo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WeaponAmmo>();
 	}
 };
-static_assert(alignof(UPyWidget_WeaponAmmo) == 0x000008, "Wrong alignment on UPyWidget_WeaponAmmo");
-static_assert(sizeof(UPyWidget_WeaponAmmo) == 0x000578, "Wrong size on UPyWidget_WeaponAmmo");
-static_assert(offsetof(UPyWidget_WeaponAmmo, IsInfinite) == 0x000568, "Member 'UPyWidget_WeaponAmmo::IsInfinite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponAmmo, ShowAmmo) == 0x000569, "Member 'UPyWidget_WeaponAmmo::ShowAmmo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponAmmo, ShowAmmoMax) == 0x00056A, "Member 'UPyWidget_WeaponAmmo::ShowAmmoMax' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponAmmo, AmmoMax) == 0x00056C, "Member 'UPyWidget_WeaponAmmo::AmmoMax' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponAmmo, AmmoCurrent) == 0x000570, "Member 'UPyWidget_WeaponAmmo::AmmoCurrent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WeaponAmmo;
 
 // PythonClass PyWidget_WeaponStatus.PyWidget_WeaponStatus
-// 0x0050 (0x12E8 - 0x1298)
+// 0x0050 (0x15D0 - 0x1580)
 class UPyWidget_WeaponStatus : public UWidget_WeaponStatus
 {
 public:
-	TMulticastInlineDelegate<void(int32 Value)>   AmmoCurChanged;                                    // 0x1298(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Value)>   AmmoMaxChanged;                                    // 0x12A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool Value)>    InfiniteChanged;                                   // 0x12B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnEquipingUpdate;                                  // 0x12C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUsableUpdate;                                    // 0x12D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Value)>   AmmoCurChanged;                                    // 0x1580(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Value)>   AmmoMaxChanged;                                    // 0x1590(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool Value)>    InfiniteChanged;                                   // 0x15A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnEquipingUpdate;                                  // 0x15B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUsableUpdate;                                    // 0x15C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Reset();
@@ -113,28 +113,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WeaponStatus">();
+		STATIC_CLASS_IMPL("PyWidget_WeaponStatus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WeaponStatus")
 	}
 	static class UPyWidget_WeaponStatus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WeaponStatus>();
 	}
 };
-static_assert(alignof(UPyWidget_WeaponStatus) == 0x000008, "Wrong alignment on UPyWidget_WeaponStatus");
-static_assert(sizeof(UPyWidget_WeaponStatus) == 0x0012E8, "Wrong size on UPyWidget_WeaponStatus");
-static_assert(offsetof(UPyWidget_WeaponStatus, AmmoCurChanged) == 0x001298, "Member 'UPyWidget_WeaponStatus::AmmoCurChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponStatus, AmmoMaxChanged) == 0x0012A8, "Member 'UPyWidget_WeaponStatus::AmmoMaxChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponStatus, InfiniteChanged) == 0x0012B8, "Member 'UPyWidget_WeaponStatus::InfiniteChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponStatus, OnEquipingUpdate) == 0x0012C8, "Member 'UPyWidget_WeaponStatus::OnEquipingUpdate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponStatus, OnUsableUpdate) == 0x0012D8, "Member 'UPyWidget_WeaponStatus::OnUsableUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WeaponStatus;
 
 // PythonClass PyWidget_WeaponStatus.PyWidget_WeaponIcon
-// 0x0058 (0x05C0 - 0x0568)
+// 0x0058 (0x05C8 - 0x0570)
 class UPyWidget_WeaponIcon : public UMarvelUserWidget
 {
 public:
-	TMap<int32, float>                            CustomBoxSize;                                     // 0x0568(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         DefaultBoxSize;                                    // 0x05B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            CustomBoxSize;                                     // 0x0570(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         DefaultBoxSize;                                    // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -144,17 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_WeaponIcon">();
+		STATIC_CLASS_IMPL("PyWidget_WeaponIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_WeaponIcon")
 	}
 	static class UPyWidget_WeaponIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_WeaponIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_WeaponIcon) == 0x000008, "Wrong alignment on UPyWidget_WeaponIcon");
-static_assert(sizeof(UPyWidget_WeaponIcon) == 0x0005C0, "Wrong size on UPyWidget_WeaponIcon");
-static_assert(offsetof(UPyWidget_WeaponIcon, CustomBoxSize) == 0x000568, "Member 'UPyWidget_WeaponIcon::CustomBoxSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_WeaponIcon, DefaultBoxSize) == 0x0005B8, "Member 'UPyWidget_WeaponIcon::DefaultBoxSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_WeaponIcon;
 
 }
 

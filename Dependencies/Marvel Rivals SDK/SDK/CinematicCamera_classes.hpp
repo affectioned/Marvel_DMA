@@ -38,24 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraRig_Crane">();
+		STATIC_CLASS_IMPL("CameraRig_Crane")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraRig_Crane")
 	}
 	static class ACameraRig_Crane* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraRig_Crane>();
 	}
 };
-static_assert(alignof(ACameraRig_Crane) == 0x000010, "Wrong alignment on ACameraRig_Crane");
-static_assert(sizeof(ACameraRig_Crane) == 0x000710, "Wrong size on ACameraRig_Crane");
-static_assert(offsetof(ACameraRig_Crane, CranePitch) == 0x0006D8, "Member 'ACameraRig_Crane::CranePitch' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, CraneYaw) == 0x0006DC, "Member 'ACameraRig_Crane::CraneYaw' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, CraneArmLength) == 0x0006E0, "Member 'ACameraRig_Crane::CraneArmLength' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, bLockMountPitch) == 0x0006E4, "Member 'ACameraRig_Crane::bLockMountPitch' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, bLockMountYaw) == 0x0006E5, "Member 'ACameraRig_Crane::bLockMountYaw' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, TransformComponent) == 0x0006E8, "Member 'ACameraRig_Crane::TransformComponent' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, CraneYawControl) == 0x0006F0, "Member 'ACameraRig_Crane::CraneYawControl' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, CranePitchControl) == 0x0006F8, "Member 'ACameraRig_Crane::CranePitchControl' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Crane, CraneCameraMount) == 0x000700, "Member 'ACameraRig_Crane::CraneCameraMount' has a wrong offset!");
+DUMPER7_ASSERTS_ACameraRig_Crane;
 
 // Class CinematicCamera.CameraRig_Rail
 // 0x0020 (0x0700 - 0x06E0)
@@ -76,20 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraRig_Rail">();
+		STATIC_CLASS_IMPL("CameraRig_Rail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraRig_Rail")
 	}
 	static class ACameraRig_Rail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraRig_Rail>();
 	}
 };
-static_assert(alignof(ACameraRig_Rail) == 0x000010, "Wrong alignment on ACameraRig_Rail");
-static_assert(sizeof(ACameraRig_Rail) == 0x000700, "Wrong size on ACameraRig_Rail");
-static_assert(offsetof(ACameraRig_Rail, CurrentPositionOnRail) == 0x0006D8, "Member 'ACameraRig_Rail::CurrentPositionOnRail' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Rail, bLockOrientationToRail) == 0x0006DC, "Member 'ACameraRig_Rail::bLockOrientationToRail' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Rail, TransformComponent) == 0x0006E0, "Member 'ACameraRig_Rail::TransformComponent' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Rail, RailSplineComponent) == 0x0006E8, "Member 'ACameraRig_Rail::RailSplineComponent' has a wrong offset!");
-static_assert(offsetof(ACameraRig_Rail, RailCameraMount) == 0x0006F0, "Member 'ACameraRig_Rail::RailCameraMount' has a wrong offset!");
+DUMPER7_ASSERTS_ACameraRig_Rail;
 
 // Class CinematicCamera.CineCameraActor
 // 0x0080 (0x1100 - 0x1080)
@@ -105,16 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CineCameraActor">();
+		STATIC_CLASS_IMPL("CineCameraActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CineCameraActor")
 	}
 	static class ACineCameraActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACineCameraActor>();
 	}
 };
-static_assert(alignof(ACineCameraActor) == 0x000010, "Wrong alignment on ACineCameraActor");
-static_assert(sizeof(ACineCameraActor) == 0x001100, "Wrong size on ACineCameraActor");
-static_assert(offsetof(ACineCameraActor, LookatTrackingSettings) == 0x001080, "Member 'ACineCameraActor::LookatTrackingSettings' has a wrong offset!");
+DUMPER7_ASSERTS_ACineCameraActor;
 
 // Class CinematicCamera.CineCameraComponent
 // 0x0120 (0x0E80 - 0x0D60)
@@ -168,31 +162,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CineCameraComponent">();
+		STATIC_CLASS_IMPL("CineCameraComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CineCameraComponent")
 	}
 	static class UCineCameraComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCineCameraComponent>();
 	}
 };
-static_assert(alignof(UCineCameraComponent) == 0x000010, "Wrong alignment on UCineCameraComponent");
-static_assert(sizeof(UCineCameraComponent) == 0x000E80, "Wrong size on UCineCameraComponent");
-static_assert(offsetof(UCineCameraComponent, FilmbackSettings) == 0x000D60, "Member 'UCineCameraComponent::FilmbackSettings' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, Filmback) == 0x000D6C, "Member 'UCineCameraComponent::Filmback' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, LensSettings) == 0x000D78, "Member 'UCineCameraComponent::LensSettings' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, FocusSettings) == 0x000D98, "Member 'UCineCameraComponent::FocusSettings' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, CropSettings) == 0x000E00, "Member 'UCineCameraComponent::CropSettings' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, CurrentFocalLength) == 0x000E04, "Member 'UCineCameraComponent::CurrentFocalLength' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, CurrentAperture) == 0x000E08, "Member 'UCineCameraComponent::CurrentAperture' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, CurrentFocusDistance) == 0x000E0C, "Member 'UCineCameraComponent::CurrentFocusDistance' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, CustomNearClippingPlane) == 0x000E14, "Member 'UCineCameraComponent::CustomNearClippingPlane' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, FilmbackPresets) == 0x000E20, "Member 'UCineCameraComponent::FilmbackPresets' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, LensPresets) == 0x000E30, "Member 'UCineCameraComponent::LensPresets' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, DefaultFilmbackPresetName) == 0x000E40, "Member 'UCineCameraComponent::DefaultFilmbackPresetName' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, DefaultFilmbackPreset) == 0x000E50, "Member 'UCineCameraComponent::DefaultFilmbackPreset' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, DefaultLensPresetName) == 0x000E60, "Member 'UCineCameraComponent::DefaultLensPresetName' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, DefaultLensFocalLength) == 0x000E70, "Member 'UCineCameraComponent::DefaultLensFocalLength' has a wrong offset!");
-static_assert(offsetof(UCineCameraComponent, DefaultLensFStop) == 0x000E74, "Member 'UCineCameraComponent::DefaultLensFStop' has a wrong offset!");
+DUMPER7_ASSERTS_UCineCameraComponent;
 
 // Class CinematicCamera.CineCameraSettings
 // 0x0078 (0x00C0 - 0x0048)
@@ -231,23 +212,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CineCameraSettings">();
+		STATIC_CLASS_IMPL("CineCameraSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CineCameraSettings")
 	}
 	static class UCineCameraSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCineCameraSettings>();
 	}
 };
-static_assert(alignof(UCineCameraSettings) == 0x000008, "Wrong alignment on UCineCameraSettings");
-static_assert(sizeof(UCineCameraSettings) == 0x0000C0, "Wrong size on UCineCameraSettings");
-static_assert(offsetof(UCineCameraSettings, DefaultLensPresetName) == 0x000048, "Member 'UCineCameraSettings::DefaultLensPresetName' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, DefaultLensFocalLength) == 0x000058, "Member 'UCineCameraSettings::DefaultLensFocalLength' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, DefaultLensFStop) == 0x00005C, "Member 'UCineCameraSettings::DefaultLensFStop' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, LensPresets) == 0x000060, "Member 'UCineCameraSettings::LensPresets' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, DefaultFilmbackPreset) == 0x000070, "Member 'UCineCameraSettings::DefaultFilmbackPreset' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, FilmbackPresets) == 0x000080, "Member 'UCineCameraSettings::FilmbackPresets' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, DefaultCropPresetName) == 0x000090, "Member 'UCineCameraSettings::DefaultCropPresetName' has a wrong offset!");
-static_assert(offsetof(UCineCameraSettings, CropPresets) == 0x0000A0, "Member 'UCineCameraSettings::CropPresets' has a wrong offset!");
+DUMPER7_ASSERTS_UCineCameraSettings;
 
 }
 

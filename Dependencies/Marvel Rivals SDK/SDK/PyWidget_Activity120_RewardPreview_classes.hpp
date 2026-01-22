@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_RewardPreview.PyWidget_Activity120_RewardPreview
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0040 (0x0640 - 0x0600)
 class UPyWidget_Activity120_RewardPreview final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UPyWidget_CommonItem>       ItemIcon;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                TypeWidget;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_CommonItem>       ItemIcon;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                TypeWidget;                                        // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_RewardPreview">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_RewardPreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_RewardPreview")
 	}
 	static class UPyWidget_Activity120_RewardPreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_RewardPreview>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_RewardPreview) == 0x000008, "Wrong alignment on UPyWidget_Activity120_RewardPreview");
-static_assert(sizeof(UPyWidget_Activity120_RewardPreview) == 0x000638, "Wrong size on UPyWidget_Activity120_RewardPreview");
-static_assert(offsetof(UPyWidget_Activity120_RewardPreview, ItemIcon) == 0x0005F8, "Member 'UPyWidget_Activity120_RewardPreview::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPreview, TypeWidget) == 0x000600, "Member 'UPyWidget_Activity120_RewardPreview::TypeWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPreview, ShowMenuTipsStyle) == 0x000608, "Member 'UPyWidget_Activity120_RewardPreview::ShowMenuTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPreview, ReturnTipsStyle) == 0x000618, "Member 'UPyWidget_Activity120_RewardPreview::ReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPreview, InspectTipsStyle) == 0x000628, "Member 'UPyWidget_Activity120_RewardPreview::InspectTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_RewardPreview;
 
 }
 

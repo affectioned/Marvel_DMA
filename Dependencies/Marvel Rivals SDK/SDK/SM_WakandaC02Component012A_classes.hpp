@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_WakandaC02Component012A.SM_WakandaC02Component012A_C
-// 0x0000 (0x06F0 - 0x06F0)
+// 0x0000 (0x0700 - 0x0700)
 class ASM_WakandaC02Component012A_C final : public AEnvironmentStaticActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_WakandaC02Component012A_C">();
+		BP_STATIC_CLASS_IMPL("SM_WakandaC02Component012A_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_WakandaC02Component012A_C")
 	}
 	static class ASM_WakandaC02Component012A_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_WakandaC02Component012A_C>();
 	}
 };
-static_assert(alignof(ASM_WakandaC02Component012A_C) == 0x000010, "Wrong alignment on ASM_WakandaC02Component012A_C");
-static_assert(sizeof(ASM_WakandaC02Component012A_C) == 0x0006F0, "Wrong size on ASM_WakandaC02Component012A_C");
+DUMPER7_ASSERTS_ASM_WakandaC02Component012A_C;
 
 }
 

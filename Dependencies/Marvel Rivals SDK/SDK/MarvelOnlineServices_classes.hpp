@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelOnlineServicesEventSubsystem">();
+		STATIC_CLASS_IMPL("MarvelOnlineServicesEventSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelOnlineServicesEventSubsystem")
 	}
 	static class UMarvelOnlineServicesEventSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelOnlineServicesEventSubsystem>();
 	}
 };
-static_assert(alignof(UMarvelOnlineServicesEventSubsystem) == 0x000008, "Wrong alignment on UMarvelOnlineServicesEventSubsystem");
-static_assert(sizeof(UMarvelOnlineServicesEventSubsystem) == 0x000080, "Wrong size on UMarvelOnlineServicesEventSubsystem");
-static_assert(offsetof(UMarvelOnlineServicesEventSubsystem, OnLoginStatusChanged) == 0x000038, "Member 'UMarvelOnlineServicesEventSubsystem::OnLoginStatusChanged' has a wrong offset!");
-static_assert(offsetof(UMarvelOnlineServicesEventSubsystem, OnSessionUserInvitedAccepted) == 0x000048, "Member 'UMarvelOnlineServicesEventSubsystem::OnSessionUserInvitedAccepted' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelOnlineServicesEventSubsystem;
 
 // Class MarvelOnlineServices.MarvelOSFunctionLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -62,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelOSFunctionLibrary">();
+		STATIC_CLASS_IMPL("MarvelOSFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelOSFunctionLibrary")
 	}
 	static class UMarvelOSFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelOSFunctionLibrary>();
 	}
 };
-static_assert(alignof(UMarvelOSFunctionLibrary) == 0x000008, "Wrong alignment on UMarvelOSFunctionLibrary");
-static_assert(sizeof(UMarvelOSFunctionLibrary) == 0x000030, "Wrong size on UMarvelOSFunctionLibrary");
+DUMPER7_ASSERTS_UMarvelOSFunctionLibrary;
 
 }
 

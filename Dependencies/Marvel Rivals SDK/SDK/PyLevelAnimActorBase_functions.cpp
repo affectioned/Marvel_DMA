@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "PyLevelAnimActorBase_classes.hpp"
+#include "PyLevelAnimActorBase_parameters.hpp"
 
 
 namespace SDK
@@ -25,6 +26,88 @@ void APyLevelAnimActorBase::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyLevelAnimActorBase", "ReceiveBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelAnimActorBase.PyLevelAnimActorReplicated.ReceiveBeginPlay
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyLevelAnimActorReplicated::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelAnimActorReplicated", "ReceiveBeginPlay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelAnimActorBase.PyLevelAnimActorReplicated.ReceiveTick
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyLevelAnimActorReplicated::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelAnimActorReplicated", "ReceiveTick");
+
+	Params::PyLevelAnimActorReplicated_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelAnimActorBase.PyLevelAnimActorReplicated.OnRep_IsAfterDelay
+// (Native, Public, BlueprintCallable)
+
+void APyLevelAnimActorReplicated::OnRep_IsAfterDelay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelAnimActorReplicated", "OnRep_IsAfterDelay");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelAnimActorBase.PyLevelAnimActorReplicated.OnRep_AnimPosition
+// (Native, Public, BlueprintCallable)
+
+void APyLevelAnimActorReplicated::OnRep_AnimPosition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelAnimActorReplicated", "OnRep_AnimPosition");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

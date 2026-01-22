@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101821.PyCue_Ability_Loop_10182101
-// 0x0010 (0x11E0 - 0x11D0)
+// 0x0010 (0x11F0 - 0x11E0)
 class APyCue_Ability_Loop_10182101 final : public ACue_Ability_Loop_10182101
 {
 public:
-	class UAnimationAsset*                        MyAnimSequence;                                    // 0x11D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TickTime;                                          // 0x11D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GiveUpTickTime;                                    // 0x11DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        MyAnimSequence;                                    // 0x11E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TickTime;                                          // 0x11E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GiveUpTickTime;                                    // 0x11EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10182101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10182101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10182101")
 	}
 	static class APyCue_Ability_Loop_10182101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10182101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10182101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10182101");
-static_assert(sizeof(APyCue_Ability_Loop_10182101) == 0x0011E0, "Wrong size on APyCue_Ability_Loop_10182101");
-static_assert(offsetof(APyCue_Ability_Loop_10182101, MyAnimSequence) == 0x0011D0, "Member 'APyCue_Ability_Loop_10182101::MyAnimSequence' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10182101, TickTime) == 0x0011D8, "Member 'APyCue_Ability_Loop_10182101::TickTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10182101, GiveUpTickTime) == 0x0011DC, "Member 'APyCue_Ability_Loop_10182101::GiveUpTickTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10182101;
 
 }
 

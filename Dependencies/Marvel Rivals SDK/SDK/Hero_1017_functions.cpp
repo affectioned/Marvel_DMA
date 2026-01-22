@@ -94,6 +94,56 @@ void UAbility_101701::UpdateAeroStateByOtherAbility(class UGameplayAbility* Abil
 }
 
 
+// Function Hero_1017.Scope_10176102.GetConfig
+// (Final, Native, Protected)
+// Parameters:
+// class UConfig_101761*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UConfig_101761* AScope_10176102::GetConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Scope_10176102", "GetConfig");
+
+	Params::Scope_10176102_GetConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1017.Scope_10176102.GetCurrentRadius
+// (Final, Native, Protected)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float AScope_10176102::GetCurrentRadius()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Scope_10176102", "GetCurrentRadius");
+
+	Params::Scope_10176102_GetCurrentRadius Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Hero_1017.Projectile_10173101.SpawnFireRegion
 // (Final, Native, Public, HasDefaults)
 // Parameters:
@@ -635,56 +685,6 @@ void ACue_Scope_Loop_10175103::UpdateCue(int32 LevelId, int32 Index_0, const str
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1017.Scope_10176102.GetConfig
-// (Final, Native, Protected)
-// Parameters:
-// class UConfig_101761*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UConfig_101761* AScope_10176102::GetConfig()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Scope_10176102", "GetConfig");
-
-	Params::Scope_10176102_GetConfig Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1017.Scope_10176102.GetCurrentRadius
-// (Final, Native, Protected)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float AScope_10176102::GetCurrentRadius()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Scope_10176102", "GetCurrentRadius");
-
-	Params::Scope_10176102_GetCurrentRadius Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1278,18 +1278,24 @@ void AHumanTorchCharacter::StopSound()
 
 // Function Hero_1017.HumanTorchCharacter.UpdateSound
 // (Final, Native, Public)
+// Parameters:
+// bool                                    bIsBattleState                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void AHumanTorchCharacter::UpdateSound()
+void AHumanTorchCharacter::UpdateSound(bool bIsBattleState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("HumanTorchCharacter", "UpdateSound");
 
+	Params::HumanTorchCharacter_UpdateSound Parms{};
+
+	Parms.bIsBattleState = bIsBattleState;
+
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

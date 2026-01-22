@@ -23,15 +23,18 @@ class UAIAibityExitStage_NearEQSPosition_C final : public UPyAIAbilityExitStage_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAibityExitStage_NearEQSPosition_C">();
+		BP_STATIC_CLASS_IMPL("AIAibityExitStage_NearEQSPosition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAibityExitStage_NearEQSPosition_C")
 	}
 	static class UAIAibityExitStage_NearEQSPosition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAibityExitStage_NearEQSPosition_C>();
 	}
 };
-static_assert(alignof(UAIAibityExitStage_NearEQSPosition_C) == 0x000008, "Wrong alignment on UAIAibityExitStage_NearEQSPosition_C");
-static_assert(sizeof(UAIAibityExitStage_NearEQSPosition_C) == 0x000050, "Wrong size on UAIAibityExitStage_NearEQSPosition_C");
+DUMPER7_ASSERTS_UAIAibityExitStage_NearEQSPosition_C;
 
 }
 

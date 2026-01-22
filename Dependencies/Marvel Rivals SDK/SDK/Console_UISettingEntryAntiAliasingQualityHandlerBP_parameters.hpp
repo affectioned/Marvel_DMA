@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      Options;                                           // 0x0068(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	float                                         Value;                                             // 0x00B8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply) == 0x000008, "Wrong alignment on Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply");
-static_assert(sizeof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply) == 0x0000C0, "Wrong size on Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply, Object) == 0x000000, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply::Object' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply, SettingKey) == 0x000008, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply::SettingKey' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply, Params_0) == 0x000018, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply::Params_0' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply, Options) == 0x000068, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply::Options' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply, Value) == 0x0000B8, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply::Value' has a wrong offset!");
+DUMPER7_ASSERTS_Console_UISettingEntryAntiAliasingQualityHandlerBP_C_BP_OnApply;
 
 // Function Console_UISettingEntryAntiAliasingQualityHandlerBP.Console_UISettingEntryAntiAliasingQualityHandlerBP_C.ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP
 // 0x00D8 (0x00D8 - 0x0000)
@@ -49,17 +43,7 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP) == 0x000008, "Wrong alignment on Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP");
-static_assert(sizeof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP) == 0x0000D8, "Wrong size on Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, EntryPoint) == 0x000000, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, CallFunc_GetGameUserSettings_ReturnValue) == 0x000008, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, K2Node_Event_Object) == 0x000010, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, K2Node_Event_SettingKey) == 0x000018, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::K2Node_Event_SettingKey' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, K2Node_Event_Params) == 0x000028, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::K2Node_Event_Params' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, K2Node_Event_Options) == 0x000078, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::K2Node_Event_Options' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, K2Node_Event_Value) == 0x0000C8, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, CallFunc_FTrunc_ReturnValue) == 0x0000CC, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP, CallFunc_FTrunc_A_ImplicitCast) == 0x0000D0, "Member 'Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_Console_UISettingEntryAntiAliasingQualityHandlerBP_C_ExecuteUbergraph_Console_UISettingEntryAntiAliasingQualityHandlerBP;
 
 }
 

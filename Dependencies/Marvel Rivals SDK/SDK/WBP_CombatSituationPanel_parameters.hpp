@@ -21,9 +21,7 @@ struct WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel fina
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel) == 0x000004, "Wrong alignment on WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel");
-static_assert(sizeof(WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel) == 0x000004, "Wrong size on WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel");
-static_assert(offsetof(WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel, EntryPoint) == 0x000000, "Member 'WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_CombatSituationPanel_C_ExecuteUbergraph_WBP_CombatSituationPanel;
 
 }
 

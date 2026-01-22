@@ -23,15 +23,18 @@ class UPyGISubsystemRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGISubsystemRuleComponent">();
+		STATIC_CLASS_IMPL("PyGISubsystemRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGISubsystemRuleComponent")
 	}
 	static class UPyGISubsystemRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGISubsystemRuleComponent>();
 	}
 };
-static_assert(alignof(UPyGISubsystemRuleComponent) == 0x000008, "Wrong alignment on UPyGISubsystemRuleComponent");
-static_assert(sizeof(UPyGISubsystemRuleComponent) == 0x000108, "Wrong size on UPyGISubsystemRuleComponent");
+DUMPER7_ASSERTS_UPyGISubsystemRuleComponent;
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ShowItemPanelBase.PyWidget_ShowItemPanelBase
-// 0x01F0 (0x07B0 - 0x05C0)
+// 0x01F8 (0x07C0 - 0x05C8)
 class UPyWidget_ShowItemPanelBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FShowItemConfig                        ShowItemPanelConfig;                               // 0x05C0(0x01F0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FShowItemConfig                        ShowItemPanelConfig;                               // 0x05C8(0x01F8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShowItemPanelBase">();
+		STATIC_CLASS_IMPL("PyWidget_ShowItemPanelBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShowItemPanelBase")
 	}
 	static class UPyWidget_ShowItemPanelBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShowItemPanelBase>();
 	}
 };
-static_assert(alignof(UPyWidget_ShowItemPanelBase) == 0x000008, "Wrong alignment on UPyWidget_ShowItemPanelBase");
-static_assert(sizeof(UPyWidget_ShowItemPanelBase) == 0x0007B0, "Wrong size on UPyWidget_ShowItemPanelBase");
-static_assert(offsetof(UPyWidget_ShowItemPanelBase, ShowItemPanelConfig) == 0x0005C0, "Member 'UPyWidget_ShowItemPanelBase::ShowItemPanelConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShowItemPanelBase;
 
 }
 

@@ -19,23 +19,23 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_103312.PyCue_Weapon_Loop_103312
-// 0x00A0 (0x14B0 - 0x1410)
+// 0x00A0 (0x14C0 - 0x1420)
 class APyCue_Weapon_Loop_103312 final : public ACueWeaponLoop_103301
 {
 public:
-	int32                                         MaxStrorageEnergyAudioID;                          // 0x1410(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayEnergyAudioPrecent;                            // 0x1414(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AimBodyFXSocketName;                               // 0x1418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UltimateBodyFXSocketName;                          // 0x1428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AimMuzzleFXSocketName;                             // 0x1438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UltimateMuzzleFXSocketName;                        // 0x1448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReconnaissanceMuzzleFXSocketName;                  // 0x1458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReconnaissanceAimMuzzleFXSocketName;               // 0x1468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UltimateMaterialAttrMin;                           // 0x1478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UltimateMaterialAttrMax;                           // 0x147C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WeaponEvent_103333_Active;                         // 0x1480(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WeaponEvent_103333_Failed;                         // 0x148C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           WeaponEvent_103333_End;                            // 0x1498(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxStrorageEnergyAudioID;                          // 0x1420(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayEnergyAudioPrecent;                            // 0x1424(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AimBodyFXSocketName;                               // 0x1428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UltimateBodyFXSocketName;                          // 0x1438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AimMuzzleFXSocketName;                             // 0x1448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UltimateMuzzleFXSocketName;                        // 0x1458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReconnaissanceMuzzleFXSocketName;                  // 0x1468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReconnaissanceAimMuzzleFXSocketName;               // 0x1478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UltimateMaterialAttrMin;                           // 0x1488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UltimateMaterialAttrMax;                           // 0x148C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           WeaponEvent_103333_Active;                         // 0x1490(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           WeaponEvent_103333_Failed;                         // 0x149C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           WeaponEvent_103333_End;                            // 0x14A8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -54,28 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_103312">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_103312")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_103312")
 	}
 	static class APyCue_Weapon_Loop_103312* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_103312>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_103312) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_103312");
-static_assert(sizeof(APyCue_Weapon_Loop_103312) == 0x0014B0, "Wrong size on APyCue_Weapon_Loop_103312");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, MaxStrorageEnergyAudioID) == 0x001410, "Member 'APyCue_Weapon_Loop_103312::MaxStrorageEnergyAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, PlayEnergyAudioPrecent) == 0x001414, "Member 'APyCue_Weapon_Loop_103312::PlayEnergyAudioPrecent' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, AimBodyFXSocketName) == 0x001418, "Member 'APyCue_Weapon_Loop_103312::AimBodyFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, UltimateBodyFXSocketName) == 0x001428, "Member 'APyCue_Weapon_Loop_103312::UltimateBodyFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, AimMuzzleFXSocketName) == 0x001438, "Member 'APyCue_Weapon_Loop_103312::AimMuzzleFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, UltimateMuzzleFXSocketName) == 0x001448, "Member 'APyCue_Weapon_Loop_103312::UltimateMuzzleFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, ReconnaissanceMuzzleFXSocketName) == 0x001458, "Member 'APyCue_Weapon_Loop_103312::ReconnaissanceMuzzleFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, ReconnaissanceAimMuzzleFXSocketName) == 0x001468, "Member 'APyCue_Weapon_Loop_103312::ReconnaissanceAimMuzzleFXSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, UltimateMaterialAttrMin) == 0x001478, "Member 'APyCue_Weapon_Loop_103312::UltimateMaterialAttrMin' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, UltimateMaterialAttrMax) == 0x00147C, "Member 'APyCue_Weapon_Loop_103312::UltimateMaterialAttrMax' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, WeaponEvent_103333_Active) == 0x001480, "Member 'APyCue_Weapon_Loop_103312::WeaponEvent_103333_Active' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, WeaponEvent_103333_Failed) == 0x00148C, "Member 'APyCue_Weapon_Loop_103312::WeaponEvent_103333_Failed' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103312, WeaponEvent_103333_End) == 0x001498, "Member 'APyCue_Weapon_Loop_103312::WeaponEvent_103333_End' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_103312;
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_105341.PyBuffAbility_120_10534109
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10534109 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         New105344CD;                                       // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         New105343CD;                                       // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         New105344CD;                                       // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         New105343CD;                                       // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10534109">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10534109")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10534109")
 	}
 	static class UPyBuffAbility_120_10534109* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10534109>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10534109) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10534109");
-static_assert(sizeof(UPyBuffAbility_120_10534109) == 0x001378, "Wrong size on UPyBuffAbility_120_10534109");
-static_assert(offsetof(UPyBuffAbility_120_10534109, New105344CD) == 0x001370, "Member 'UPyBuffAbility_120_10534109::New105344CD' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10534109, New105343CD) == 0x001374, "Member 'UPyBuffAbility_120_10534109::New105343CD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10534109;
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerCustomizeDataItem.PyWidget_CareerCustomizeDataItem
-// 0x0008 (0x0730 - 0x0728)
+// 0x0008 (0x0788 - 0x0780)
 class UPyWidget_CareerCustomizeDataItem final : public UPyWidget_Button
 {
 public:
-	bool                                          IsShowHero;                                        // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowHero;                                        // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeDataItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeDataItem")
 	}
 	static class UPyWidget_CareerCustomizeDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeDataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeDataItem) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeDataItem");
-static_assert(sizeof(UPyWidget_CareerCustomizeDataItem) == 0x000730, "Wrong size on UPyWidget_CareerCustomizeDataItem");
-static_assert(offsetof(UPyWidget_CareerCustomizeDataItem, IsShowHero) == 0x000728, "Member 'UPyWidget_CareerCustomizeDataItem::IsShowHero' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeDataItem;
 
 }
 

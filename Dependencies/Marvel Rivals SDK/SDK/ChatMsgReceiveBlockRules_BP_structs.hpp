@@ -23,9 +23,7 @@ struct FChatMsgReceiveBlockRules_BP final
 public:
 	TArray<struct FChatMsgReceiveBlockItem_BP>    Rules_3_9073C6CA404C184DE640CAA250025FDD;          // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FChatMsgReceiveBlockRules_BP) == 0x000008, "Wrong alignment on FChatMsgReceiveBlockRules_BP");
-static_assert(sizeof(FChatMsgReceiveBlockRules_BP) == 0x000010, "Wrong size on FChatMsgReceiveBlockRules_BP");
-static_assert(offsetof(FChatMsgReceiveBlockRules_BP, Rules_3_9073C6CA404C184DE640CAA250025FDD) == 0x000000, "Member 'FChatMsgReceiveBlockRules_BP::Rules_3_9073C6CA404C184DE640CAA250025FDD' has a wrong offset!");
+DUMPER7_ASSERTS_FChatMsgReceiveBlockRules_BP;
 
 }
 

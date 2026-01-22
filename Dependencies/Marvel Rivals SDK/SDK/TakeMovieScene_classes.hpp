@@ -34,21 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneTakeSection">();
+		STATIC_CLASS_IMPL("MovieSceneTakeSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneTakeSection")
 	}
 	static class UMovieSceneTakeSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneTakeSection>();
 	}
 };
-static_assert(alignof(UMovieSceneTakeSection) == 0x000008, "Wrong alignment on UMovieSceneTakeSection");
-static_assert(sizeof(UMovieSceneTakeSection) == 0x000718, "Wrong size on UMovieSceneTakeSection");
-static_assert(offsetof(UMovieSceneTakeSection, HoursCurve) == 0x0000F8, "Member 'UMovieSceneTakeSection::HoursCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSection, MinutesCurve) == 0x0001F8, "Member 'UMovieSceneTakeSection::MinutesCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSection, SecondsCurve) == 0x0002F8, "Member 'UMovieSceneTakeSection::SecondsCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSection, FramesCurve) == 0x0003F8, "Member 'UMovieSceneTakeSection::FramesCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSection, SubFramesCurve) == 0x0004F8, "Member 'UMovieSceneTakeSection::SubFramesCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSection, Slate) == 0x000608, "Member 'UMovieSceneTakeSection::Slate' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneTakeSection;
 
 // Class TakeMovieScene.MovieSceneTakeSettings
 // 0x0060 (0x0090 - 0x0030)
@@ -65,21 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneTakeSettings">();
+		STATIC_CLASS_IMPL("MovieSceneTakeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneTakeSettings")
 	}
 	static class UMovieSceneTakeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneTakeSettings>();
 	}
 };
-static_assert(alignof(UMovieSceneTakeSettings) == 0x000008, "Wrong alignment on UMovieSceneTakeSettings");
-static_assert(sizeof(UMovieSceneTakeSettings) == 0x000090, "Wrong size on UMovieSceneTakeSettings");
-static_assert(offsetof(UMovieSceneTakeSettings, HoursName) == 0x000030, "Member 'UMovieSceneTakeSettings::HoursName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSettings, MinutesName) == 0x000040, "Member 'UMovieSceneTakeSettings::MinutesName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSettings, SecondsName) == 0x000050, "Member 'UMovieSceneTakeSettings::SecondsName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSettings, FramesName) == 0x000060, "Member 'UMovieSceneTakeSettings::FramesName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSettings, SubFramesName) == 0x000070, "Member 'UMovieSceneTakeSettings::SubFramesName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneTakeSettings, SlateName) == 0x000080, "Member 'UMovieSceneTakeSettings::SlateName' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneTakeSettings;
 
 // Class TakeMovieScene.MovieSceneTakeTrack
 // 0x0010 (0x00B0 - 0x00A0)
@@ -91,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneTakeTrack">();
+		STATIC_CLASS_IMPL("MovieSceneTakeTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneTakeTrack")
 	}
 	static class UMovieSceneTakeTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneTakeTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneTakeTrack) == 0x000008, "Wrong alignment on UMovieSceneTakeTrack");
-static_assert(sizeof(UMovieSceneTakeTrack) == 0x0000B0, "Wrong size on UMovieSceneTakeTrack");
-static_assert(offsetof(UMovieSceneTakeTrack, Sections) == 0x0000A0, "Member 'UMovieSceneTakeTrack::Sections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneTakeTrack;
 
 }
 

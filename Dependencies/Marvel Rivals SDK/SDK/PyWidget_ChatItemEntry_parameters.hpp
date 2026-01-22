@@ -21,9 +21,7 @@ struct PyWidget_ChatItemEntry_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatItemEntry_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_ChatItemEntry_PreConstruct");
-static_assert(sizeof(PyWidget_ChatItemEntry_PreConstruct) == 0x000001, "Wrong size on PyWidget_ChatItemEntry_PreConstruct");
-static_assert(offsetof(PyWidget_ChatItemEntry_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_ChatItemEntry_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatItemEntry_PreConstruct;
 
 // PythonFunction PyWidget_ChatItemEntry.PyWidget_ChatItemEntry.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_ChatItemEntry_OnListItemObjectSet final
 public:
 	class UObject*                                _itm;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatItemEntry_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_ChatItemEntry_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_ChatItemEntry_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_ChatItemEntry_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_ChatItemEntry_OnListItemObjectSet, _itm) == 0x000000, "Member 'PyWidget_ChatItemEntry_OnListItemObjectSet::_itm' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatItemEntry_OnListItemObjectSet;
 
 // PythonFunction PyWidget_ChatItemEntry.PyWidget_ChatItemEntry.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_ChatItemEntry_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ChatItemEntry_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_ChatItemEntry_OnAnimationFinished");
-static_assert(sizeof(PyWidget_ChatItemEntry_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_ChatItemEntry_OnAnimationFinished");
-static_assert(offsetof(PyWidget_ChatItemEntry_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_ChatItemEntry_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatItemEntry_OnAnimationFinished;
 
 }
 

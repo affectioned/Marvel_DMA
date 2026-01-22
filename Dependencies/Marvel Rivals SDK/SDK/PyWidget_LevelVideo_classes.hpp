@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LevelVideo.PyWidget_LevelVideoExit
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_LevelVideoExit final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AudioAsset;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AudioAsset;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LevelVideoExit">();
+		STATIC_CLASS_IMPL("PyWidget_LevelVideoExit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LevelVideoExit")
 	}
 	static class UPyWidget_LevelVideoExit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LevelVideoExit>();
 	}
 };
-static_assert(alignof(UPyWidget_LevelVideoExit) == 0x000008, "Wrong alignment on UPyWidget_LevelVideoExit");
-static_assert(sizeof(UPyWidget_LevelVideoExit) == 0x000600, "Wrong size on UPyWidget_LevelVideoExit");
-static_assert(offsetof(UPyWidget_LevelVideoExit, AudioAsset) == 0x0005F8, "Member 'UPyWidget_LevelVideoExit::AudioAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LevelVideoExit;
 
 }
 

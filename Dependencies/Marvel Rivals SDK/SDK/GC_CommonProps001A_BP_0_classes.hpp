@@ -23,15 +23,18 @@ class GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C final : public AChaosCli
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass GC_CommonProps001A_BP.GC_CommonProps001A_BP_C", true, "GC_CommonProps001A_BP_C">();
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass GC_CommonProps001A_BP.GC_CommonProps001A_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_CommonProps001A_BP_C")
 	}
 	static class GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C>();
 	}
 };
-static_assert(alignof(GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C) == 0x000010, "Wrong alignment on GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C");
-static_assert(sizeof(GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C) == 0x001160, "Wrong size on GC_CommonProps001A_BP_0::AGC_CommonProps001A_BP_C");
+DUMPER7_ASSERTS_GC_CommonProps001A_BP_0__AGC_CommonProps001A_BP_C;
 
 }
 

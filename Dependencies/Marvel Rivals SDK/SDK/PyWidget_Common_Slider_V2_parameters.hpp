@@ -24,10 +24,7 @@ public:
 	float                                         MinNum;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxNum;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Slider_V2_UpdateRangeNum) == 0x000004, "Wrong alignment on PyWidget_Common_Slider_V2_UpdateRangeNum");
-static_assert(sizeof(PyWidget_Common_Slider_V2_UpdateRangeNum) == 0x000008, "Wrong size on PyWidget_Common_Slider_V2_UpdateRangeNum");
-static_assert(offsetof(PyWidget_Common_Slider_V2_UpdateRangeNum, MinNum) == 0x000000, "Member 'PyWidget_Common_Slider_V2_UpdateRangeNum::MinNum' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Slider_V2_UpdateRangeNum, MaxNum) == 0x000004, "Member 'PyWidget_Common_Slider_V2_UpdateRangeNum::MaxNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Slider_V2_UpdateRangeNum;
 
 // PythonFunction PyWidget_Common_Slider_V2.PyWidget_Common_Slider_V2.OnReceiveInputAxis
 // 0x0010 (0x0010 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class FName                                   AxisName;                                          // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AxisValue;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Slider_V2_OnReceiveInputAxis) == 0x000004, "Wrong alignment on PyWidget_Common_Slider_V2_OnReceiveInputAxis");
-static_assert(sizeof(PyWidget_Common_Slider_V2_OnReceiveInputAxis) == 0x000010, "Wrong size on PyWidget_Common_Slider_V2_OnReceiveInputAxis");
-static_assert(offsetof(PyWidget_Common_Slider_V2_OnReceiveInputAxis, AxisName) == 0x000000, "Member 'PyWidget_Common_Slider_V2_OnReceiveInputAxis::AxisName' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Slider_V2_OnReceiveInputAxis, AxisValue) == 0x00000C, "Member 'PyWidget_Common_Slider_V2_OnReceiveInputAxis::AxisValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Slider_V2_OnReceiveInputAxis;
 
 // PythonFunction PyWidget_Common_Slider_V2.PyWidget_Common_Slider_V2.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct PyWidget_Common_Slider_V2_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Slider_V2_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_Common_Slider_V2_ShouldEnableInput");
-static_assert(sizeof(PyWidget_Common_Slider_V2_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_Common_Slider_V2_ShouldEnableInput");
-static_assert(offsetof(PyWidget_Common_Slider_V2_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_Common_Slider_V2_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Slider_V2_ShouldEnableInput;
 
 }
 

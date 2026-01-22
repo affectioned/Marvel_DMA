@@ -23,9 +23,7 @@ struct BTS_PyUpdateEscortState_GetPayLoadSpeed final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyUpdateEscortState_GetPayLoadSpeed) == 0x000004, "Wrong alignment on BTS_PyUpdateEscortState_GetPayLoadSpeed");
-static_assert(sizeof(BTS_PyUpdateEscortState_GetPayLoadSpeed) == 0x000004, "Wrong size on BTS_PyUpdateEscortState_GetPayLoadSpeed");
-static_assert(offsetof(BTS_PyUpdateEscortState_GetPayLoadSpeed, ReturnValue) == 0x000000, "Member 'BTS_PyUpdateEscortState_GetPayLoadSpeed::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyUpdateEscortState_GetPayLoadSpeed;
 
 // PythonFunction BTS_PyUpdateEscortState.BTS_PyUpdateEscortState.GetPayLoadProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct BTS_PyUpdateEscortState_GetPayLoadProgress final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyUpdateEscortState_GetPayLoadProgress) == 0x000004, "Wrong alignment on BTS_PyUpdateEscortState_GetPayLoadProgress");
-static_assert(sizeof(BTS_PyUpdateEscortState_GetPayLoadProgress) == 0x000004, "Wrong size on BTS_PyUpdateEscortState_GetPayLoadProgress");
-static_assert(offsetof(BTS_PyUpdateEscortState_GetPayLoadProgress, ReturnValue) == 0x000000, "Member 'BTS_PyUpdateEscortState_GetPayLoadProgress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyUpdateEscortState_GetPayLoadProgress;
 
 // PythonFunction BTS_PyUpdateEscortState.BTS_PyUpdateEscortState.GetPayloadOwnership
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct BTS_PyUpdateEscortState_GetPayloadOwnership final
 public:
 	EOwnershipType                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyUpdateEscortState_GetPayloadOwnership) == 0x000001, "Wrong alignment on BTS_PyUpdateEscortState_GetPayloadOwnership");
-static_assert(sizeof(BTS_PyUpdateEscortState_GetPayloadOwnership) == 0x000001, "Wrong size on BTS_PyUpdateEscortState_GetPayloadOwnership");
-static_assert(offsetof(BTS_PyUpdateEscortState_GetPayloadOwnership, ReturnValue) == 0x000000, "Member 'BTS_PyUpdateEscortState_GetPayloadOwnership::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyUpdateEscortState_GetPayloadOwnership;
 
 }
 

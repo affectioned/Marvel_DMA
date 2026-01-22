@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PopupPanel.PyWidget_PopupPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PopupPanel final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsPopupPanelVisable;                               // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PopupPanelZOrder;                                  // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPopupPanelVisable;                               // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x1];                                      // 0x05C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PopupPanelZOrder;                                  // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PopupPanel">();
+		STATIC_CLASS_IMPL("PyWidget_PopupPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PopupPanel")
 	}
 	static class UPyWidget_PopupPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PopupPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PopupPanel) == 0x000008, "Wrong alignment on UPyWidget_PopupPanel");
-static_assert(sizeof(UPyWidget_PopupPanel) == 0x0005C0, "Wrong size on UPyWidget_PopupPanel");
-static_assert(offsetof(UPyWidget_PopupPanel, IsPopupPanelVisable) == 0x0005BA, "Member 'UPyWidget_PopupPanel::IsPopupPanelVisable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PopupPanel, PopupPanelZOrder) == 0x0005BC, "Member 'UPyWidget_PopupPanel::PopupPanelZOrder' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PopupPanel;
 
 }
 

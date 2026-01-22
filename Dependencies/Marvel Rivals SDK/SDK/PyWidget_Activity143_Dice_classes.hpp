@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity143_Dice.PyWidget_Activity143_Dice
-// 0x0050 (0x0778 - 0x0728)
+// 0x0050 (0x07D0 - 0x0780)
 class UPyWidget_Activity143_Dice final : public UPyWidget_Button
 {
 public:
-	struct FSlateColor                            DiceNumRedLinearColor;                             // 0x0728(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DiceNumCommonLinearColor;                          // 0x073C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DiceTipDisableLinearColor;                         // 0x0750(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DiceTipCommonLinearColor;                          // 0x0764(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DiceNumRedLinearColor;                             // 0x0780(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DiceNumCommonLinearColor;                          // 0x0794(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DiceTipDisableLinearColor;                         // 0x07A8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DiceTipCommonLinearColor;                          // 0x07BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity143_Dice">();
+		STATIC_CLASS_IMPL("PyWidget_Activity143_Dice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity143_Dice")
 	}
 	static class UPyWidget_Activity143_Dice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity143_Dice>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity143_Dice) == 0x000008, "Wrong alignment on UPyWidget_Activity143_Dice");
-static_assert(sizeof(UPyWidget_Activity143_Dice) == 0x000778, "Wrong size on UPyWidget_Activity143_Dice");
-static_assert(offsetof(UPyWidget_Activity143_Dice, DiceNumRedLinearColor) == 0x000728, "Member 'UPyWidget_Activity143_Dice::DiceNumRedLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_Dice, DiceNumCommonLinearColor) == 0x00073C, "Member 'UPyWidget_Activity143_Dice::DiceNumCommonLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_Dice, DiceTipDisableLinearColor) == 0x000750, "Member 'UPyWidget_Activity143_Dice::DiceTipDisableLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity143_Dice, DiceTipCommonLinearColor) == 0x000764, "Member 'UPyWidget_Activity143_Dice::DiceTipCommonLinearColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity143_Dice;
 
 }
 

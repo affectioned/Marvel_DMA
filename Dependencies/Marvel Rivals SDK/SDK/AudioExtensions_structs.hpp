@@ -42,9 +42,7 @@ struct FSoundGeneratorOutput final
 public:
 	class FName                                   Name;                                              // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSoundGeneratorOutput) == 0x000004, "Wrong alignment on FSoundGeneratorOutput");
-static_assert(sizeof(FSoundGeneratorOutput) == 0x00000C, "Wrong size on FSoundGeneratorOutput");
-static_assert(offsetof(FSoundGeneratorOutput, Name) == 0x000000, "Member 'FSoundGeneratorOutput::Name' has a wrong offset!");
+DUMPER7_ASSERTS_FSoundGeneratorOutput;
 
 // ScriptStruct AudioExtensions.AudioParameter
 // 0x00A0 (0x00A0 - 0x0000)
@@ -68,21 +66,7 @@ public:
 	class FName                                   TypeName;                                          // 0x0084(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_90[0x10];                                      // 0x0090(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAudioParameter) == 0x000008, "Wrong alignment on FAudioParameter");
-static_assert(sizeof(FAudioParameter) == 0x0000A0, "Wrong size on FAudioParameter");
-static_assert(offsetof(FAudioParameter, ParamName) == 0x000000, "Member 'FAudioParameter::ParamName' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, FloatParam) == 0x00000C, "Member 'FAudioParameter::FloatParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, BoolParam) == 0x000010, "Member 'FAudioParameter::BoolParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, IntParam) == 0x000014, "Member 'FAudioParameter::IntParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ObjectParam) == 0x000018, "Member 'FAudioParameter::ObjectParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, StringParam) == 0x000020, "Member 'FAudioParameter::StringParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ArrayFloatParam) == 0x000030, "Member 'FAudioParameter::ArrayFloatParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ArrayBoolParam) == 0x000040, "Member 'FAudioParameter::ArrayBoolParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ArrayIntParam) == 0x000050, "Member 'FAudioParameter::ArrayIntParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ArrayObjectParam) == 0x000060, "Member 'FAudioParameter::ArrayObjectParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ArrayStringParam) == 0x000070, "Member 'FAudioParameter::ArrayStringParam' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, ParamType) == 0x000080, "Member 'FAudioParameter::ParamType' has a wrong offset!");
-static_assert(offsetof(FAudioParameter, TypeName) == 0x000084, "Member 'FAudioParameter::TypeName' has a wrong offset!");
+DUMPER7_ASSERTS_FAudioParameter;
 
 }
 

@@ -294,6 +294,50 @@ void UPyShowAnimInstance_LinkedAnim::OnPlayEmoteAnim(const class FString& ItemID
 }
 
 
+// PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPrePlaySkinCustomizationAnim
+// (Native, Public, BlueprintCallable)
+
+void UPyShowAnimInstance_LinkedAnim::OnPrePlaySkinCustomizationAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyShowAnimInstance_LinkedAnim", "OnPrePlaySkinCustomizationAnim");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlaySkinCustomizationAnim
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    ItemID                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyShowAnimInstance_LinkedAnim::OnPlaySkinCustomizationAnim(const class FString& ItemID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyShowAnimInstance_LinkedAnim", "OnPlaySkinCustomizationAnim");
+
+	Params::PyShowAnimInstance_LinkedAnim_OnPlaySkinCustomizationAnim Parms{};
+
+	Parms.ItemID = std::move(ItemID);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.OnPlayMVPAnim
 // (Native, Public, BlueprintCallable)
 
@@ -847,6 +891,44 @@ void UPyShowAnimInstance_LinkedAnim::AnimNotify_Emote_End()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyShowAnimInstance_LinkedAnim", "AnimNotify_Emote_End");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.AnimNotify_SkinCustomization_Play
+// (Native, Public, BlueprintCallable)
+
+void UPyShowAnimInstance_LinkedAnim::AnimNotify_SkinCustomization_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyShowAnimInstance_LinkedAnim", "AnimNotify_SkinCustomization_Play");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim.AnimNotify_SkinCustomization_End
+// (Native, Public, BlueprintCallable)
+
+void UPyShowAnimInstance_LinkedAnim::AnimNotify_SkinCustomization_End()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyShowAnimInstance_LinkedAnim", "AnimNotify_SkinCustomization_End");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

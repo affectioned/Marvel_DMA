@@ -21,9 +21,7 @@ struct WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX final
 public:
 	TArray<class UTexture2D*>                     upgrade_ultimate_img;                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX) == 0x000008, "Wrong alignment on WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX");
-static_assert(sizeof(WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX) == 0x000010, "Wrong size on WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX, upgrade_ultimate_img) == 0x000000, "Member 'WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX::upgrade_ultimate_img' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ability_Ultimate_V7_C_OnUpgradedSkinFX;
 
 // Function WBP_Ability_Ultimate_V7.WBP_Ability_Ultimate_V7_C.ExecuteUbergraph_WBP_Ability_Ultimate_V7
 // 0x0030 (0x0030 - 0x0000)
@@ -37,13 +35,7 @@ public:
 	class UTexture2D*                             CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Array_Get_Item_2;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7) == 0x000008, "Wrong alignment on WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7");
-static_assert(sizeof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7) == 0x000030, "Wrong size on WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7, EntryPoint) == 0x000000, "Member 'WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7, K2Node_Event_upgrade_ultimate_img) == 0x000008, "Member 'WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7::K2Node_Event_upgrade_ultimate_img' has a wrong offset!");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7, CallFunc_Array_Get_Item_2) == 0x000028, "Member 'WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7::CallFunc_Array_Get_Item_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Ability_Ultimate_V7_C_ExecuteUbergraph_WBP_Ability_Ultimate_V7;
 
 }
 

@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Up) == 0x000008, "Wrong alignment on PyWidget_Mission_HellFire_Item_OnNav_Reward1Up");
-static_assert(sizeof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Up) == 0x000010, "Wrong size on PyWidget_Mission_HellFire_Item_OnNav_Reward1Up");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Up, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward1Up::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Up, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward1Up::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Item_OnNav_Reward1Up;
 
 // PythonFunction PyWidget_Mission_HellFire_Item.PyWidget_Mission_HellFire_Item.OnNav_Reward1Down
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Down) == 0x000008, "Wrong alignment on PyWidget_Mission_HellFire_Item_OnNav_Reward1Down");
-static_assert(sizeof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Down) == 0x000010, "Wrong size on PyWidget_Mission_HellFire_Item_OnNav_Reward1Down");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Down, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward1Down::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward1Down, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward1Down::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Item_OnNav_Reward1Down;
 
 // PythonFunction PyWidget_Mission_HellFire_Item.PyWidget_Mission_HellFire_Item.OnNav_Reward2Up
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Up) == 0x000008, "Wrong alignment on PyWidget_Mission_HellFire_Item_OnNav_Reward2Up");
-static_assert(sizeof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Up) == 0x000010, "Wrong size on PyWidget_Mission_HellFire_Item_OnNav_Reward2Up");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Up, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward2Up::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Up, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward2Up::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Item_OnNav_Reward2Up;
 
 // PythonFunction PyWidget_Mission_HellFire_Item.PyWidget_Mission_HellFire_Item.OnNav_Reward2Down
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +58,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Down) == 0x000008, "Wrong alignment on PyWidget_Mission_HellFire_Item_OnNav_Reward2Down");
-static_assert(sizeof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Down) == 0x000010, "Wrong size on PyWidget_Mission_HellFire_Item_OnNav_Reward2Down");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Down, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward2Down::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_Reward2Down, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_HellFire_Item_OnNav_Reward2Down::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Item_OnNav_Reward2Down;
 
 // PythonFunction PyWidget_Mission_HellFire_Item.PyWidget_Mission_HellFire_Item.OnNav_BtnMain
 // 0x0010 (0x0010 - 0x0000)
@@ -81,10 +69,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_HellFire_Item_OnNav_BtnMain) == 0x000008, "Wrong alignment on PyWidget_Mission_HellFire_Item_OnNav_BtnMain");
-static_assert(sizeof(PyWidget_Mission_HellFire_Item_OnNav_BtnMain) == 0x000010, "Wrong size on PyWidget_Mission_HellFire_Item_OnNav_BtnMain");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_BtnMain, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_HellFire_Item_OnNav_BtnMain::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_HellFire_Item_OnNav_BtnMain, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_HellFire_Item_OnNav_BtnMain::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_HellFire_Item_OnNav_BtnMain;
 
 }
 

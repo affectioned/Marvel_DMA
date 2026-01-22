@@ -27,11 +27,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_AcquireItemBP) == 0x000004, "Wrong alignment on DataRegistrySubsystem_AcquireItemBP");
-static_assert(sizeof(DataRegistrySubsystem_AcquireItemBP) == 0x000030, "Wrong size on DataRegistrySubsystem_AcquireItemBP");
-static_assert(offsetof(DataRegistrySubsystem_AcquireItemBP, ItemId) == 0x000000, "Member 'DataRegistrySubsystem_AcquireItemBP::ItemId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_AcquireItemBP, AcquireCallback) == 0x000018, "Member 'DataRegistrySubsystem_AcquireItemBP::AcquireCallback' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_AcquireItemBP, ReturnValue) == 0x00002C, "Member 'DataRegistrySubsystem_AcquireItemBP::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_AcquireItemBP;
 
 // Function DataRegistry.DataRegistrySubsystem.Conv_DataRegistryIdToString
 // 0x0028 (0x0028 - 0x0000)
@@ -41,10 +37,7 @@ public:
 	struct FDataRegistryId                        DataRegistryId;                                    // 0x0000(0x0018)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataRegistrySubsystem_Conv_DataRegistryIdToString) == 0x000008, "Wrong alignment on DataRegistrySubsystem_Conv_DataRegistryIdToString");
-static_assert(sizeof(DataRegistrySubsystem_Conv_DataRegistryIdToString) == 0x000028, "Wrong size on DataRegistrySubsystem_Conv_DataRegistryIdToString");
-static_assert(offsetof(DataRegistrySubsystem_Conv_DataRegistryIdToString, DataRegistryId) == 0x000000, "Member 'DataRegistrySubsystem_Conv_DataRegistryIdToString::DataRegistryId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_Conv_DataRegistryIdToString, ReturnValue) == 0x000018, "Member 'DataRegistrySubsystem_Conv_DataRegistryIdToString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_Conv_DataRegistryIdToString;
 
 // Function DataRegistry.DataRegistrySubsystem.Conv_DataRegistryTypeToString
 // 0x0020 (0x0020 - 0x0000)
@@ -55,10 +48,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataRegistrySubsystem_Conv_DataRegistryTypeToString) == 0x000008, "Wrong alignment on DataRegistrySubsystem_Conv_DataRegistryTypeToString");
-static_assert(sizeof(DataRegistrySubsystem_Conv_DataRegistryTypeToString) == 0x000020, "Wrong size on DataRegistrySubsystem_Conv_DataRegistryTypeToString");
-static_assert(offsetof(DataRegistrySubsystem_Conv_DataRegistryTypeToString, DataRegistryType) == 0x000000, "Member 'DataRegistrySubsystem_Conv_DataRegistryTypeToString::DataRegistryType' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_Conv_DataRegistryTypeToString, ReturnValue) == 0x000010, "Member 'DataRegistrySubsystem_Conv_DataRegistryTypeToString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_Conv_DataRegistryTypeToString;
 
 // Function DataRegistry.DataRegistrySubsystem.EqualEqual_DataRegistryId
 // 0x0034 (0x0034 - 0x0000)
@@ -70,11 +60,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_EqualEqual_DataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EqualEqual_DataRegistryId");
-static_assert(sizeof(DataRegistrySubsystem_EqualEqual_DataRegistryId) == 0x000034, "Wrong size on DataRegistrySubsystem_EqualEqual_DataRegistryId");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryId, A) == 0x000000, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryId::A' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryId, B) == 0x000018, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryId::B' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryId, ReturnValue) == 0x000030, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_EqualEqual_DataRegistryId;
 
 // Function DataRegistry.DataRegistrySubsystem.EqualEqual_DataRegistryType
 // 0x001C (0x001C - 0x0000)
@@ -86,11 +72,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_EqualEqual_DataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EqualEqual_DataRegistryType");
-static_assert(sizeof(DataRegistrySubsystem_EqualEqual_DataRegistryType) == 0x00001C, "Wrong size on DataRegistrySubsystem_EqualEqual_DataRegistryType");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryType, A) == 0x000000, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryType::A' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryType, B) == 0x00000C, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryType::B' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EqualEqual_DataRegistryType, ReturnValue) == 0x000018, "Member 'DataRegistrySubsystem_EqualEqual_DataRegistryType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_EqualEqual_DataRegistryType;
 
 // Function DataRegistry.DataRegistrySubsystem.EvaluateDataRegistryCurve
 // 0x0028 (0x0028 - 0x0000)
@@ -104,13 +86,7 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OutValue;                                          // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataRegistrySubsystem_EvaluateDataRegistryCurve) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EvaluateDataRegistryCurve");
-static_assert(sizeof(DataRegistrySubsystem_EvaluateDataRegistryCurve) == 0x000028, "Wrong size on DataRegistrySubsystem_EvaluateDataRegistryCurve");
-static_assert(offsetof(DataRegistrySubsystem_EvaluateDataRegistryCurve, ItemId) == 0x000000, "Member 'DataRegistrySubsystem_EvaluateDataRegistryCurve::ItemId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EvaluateDataRegistryCurve, InputValue) == 0x000018, "Member 'DataRegistrySubsystem_EvaluateDataRegistryCurve::InputValue' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EvaluateDataRegistryCurve, DefaultValue) == 0x00001C, "Member 'DataRegistrySubsystem_EvaluateDataRegistryCurve::DefaultValue' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EvaluateDataRegistryCurve, OutResult) == 0x000020, "Member 'DataRegistrySubsystem_EvaluateDataRegistryCurve::OutResult' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_EvaluateDataRegistryCurve, OutValue) == 0x000024, "Member 'DataRegistrySubsystem_EvaluateDataRegistryCurve::OutValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_EvaluateDataRegistryCurve;
 
 // Function DataRegistry.DataRegistrySubsystem.FindCachedItemBP
 // 0x0030 (0x0030 - 0x0000)
@@ -122,11 +98,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTableRowBase                          OutItem;                                           // 0x0020(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataRegistrySubsystem_FindCachedItemBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_FindCachedItemBP");
-static_assert(sizeof(DataRegistrySubsystem_FindCachedItemBP) == 0x000030, "Wrong size on DataRegistrySubsystem_FindCachedItemBP");
-static_assert(offsetof(DataRegistrySubsystem_FindCachedItemBP, ItemId) == 0x000000, "Member 'DataRegistrySubsystem_FindCachedItemBP::ItemId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_FindCachedItemBP, OutResult) == 0x000018, "Member 'DataRegistrySubsystem_FindCachedItemBP::OutResult' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_FindCachedItemBP, OutItem) == 0x000020, "Member 'DataRegistrySubsystem_FindCachedItemBP::OutItem' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_FindCachedItemBP;
 
 // Function DataRegistry.DataRegistrySubsystem.GetCachedItemBP
 // 0x0030 (0x0030 - 0x0000)
@@ -138,11 +110,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_GetCachedItemBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_GetCachedItemBP");
-static_assert(sizeof(DataRegistrySubsystem_GetCachedItemBP) == 0x000030, "Wrong size on DataRegistrySubsystem_GetCachedItemBP");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemBP, ItemId) == 0x000000, "Member 'DataRegistrySubsystem_GetCachedItemBP::ItemId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemBP, OutItem) == 0x000018, "Member 'DataRegistrySubsystem_GetCachedItemBP::OutItem' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemBP, ReturnValue) == 0x000028, "Member 'DataRegistrySubsystem_GetCachedItemBP::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_GetCachedItemBP;
 
 // Function DataRegistry.DataRegistrySubsystem.GetCachedItemFromLookupBP
 // 0x0050 (0x0050 - 0x0000)
@@ -155,12 +123,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_GetCachedItemFromLookupBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_GetCachedItemFromLookupBP");
-static_assert(sizeof(DataRegistrySubsystem_GetCachedItemFromLookupBP) == 0x000050, "Wrong size on DataRegistrySubsystem_GetCachedItemFromLookupBP");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemFromLookupBP, ItemId) == 0x000000, "Member 'DataRegistrySubsystem_GetCachedItemFromLookupBP::ItemId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemFromLookupBP, ResolvedLookup) == 0x000018, "Member 'DataRegistrySubsystem_GetCachedItemFromLookupBP::ResolvedLookup' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemFromLookupBP, OutItem) == 0x000038, "Member 'DataRegistrySubsystem_GetCachedItemFromLookupBP::OutItem' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_GetCachedItemFromLookupBP, ReturnValue) == 0x000048, "Member 'DataRegistrySubsystem_GetCachedItemFromLookupBP::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_GetCachedItemFromLookupBP;
 
 // Function DataRegistry.DataRegistrySubsystem.IsValidDataRegistryId
 // 0x001C (0x001C - 0x0000)
@@ -171,10 +134,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_IsValidDataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_IsValidDataRegistryId");
-static_assert(sizeof(DataRegistrySubsystem_IsValidDataRegistryId) == 0x00001C, "Wrong size on DataRegistrySubsystem_IsValidDataRegistryId");
-static_assert(offsetof(DataRegistrySubsystem_IsValidDataRegistryId, DataRegistryId) == 0x000000, "Member 'DataRegistrySubsystem_IsValidDataRegistryId::DataRegistryId' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_IsValidDataRegistryId, ReturnValue) == 0x000018, "Member 'DataRegistrySubsystem_IsValidDataRegistryId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_IsValidDataRegistryId;
 
 // Function DataRegistry.DataRegistrySubsystem.IsValidDataRegistryType
 // 0x0010 (0x0010 - 0x0000)
@@ -185,10 +145,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_IsValidDataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_IsValidDataRegistryType");
-static_assert(sizeof(DataRegistrySubsystem_IsValidDataRegistryType) == 0x000010, "Wrong size on DataRegistrySubsystem_IsValidDataRegistryType");
-static_assert(offsetof(DataRegistrySubsystem_IsValidDataRegistryType, DataRegistryType) == 0x000000, "Member 'DataRegistrySubsystem_IsValidDataRegistryType::DataRegistryType' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_IsValidDataRegistryType, ReturnValue) == 0x00000C, "Member 'DataRegistrySubsystem_IsValidDataRegistryType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_IsValidDataRegistryType;
 
 // Function DataRegistry.DataRegistrySubsystem.NotEqual_DataRegistryId
 // 0x0034 (0x0034 - 0x0000)
@@ -200,11 +157,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_NotEqual_DataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_NotEqual_DataRegistryId");
-static_assert(sizeof(DataRegistrySubsystem_NotEqual_DataRegistryId) == 0x000034, "Wrong size on DataRegistrySubsystem_NotEqual_DataRegistryId");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryId, A) == 0x000000, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryId::A' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryId, B) == 0x000018, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryId::B' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryId, ReturnValue) == 0x000030, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryId::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_NotEqual_DataRegistryId;
 
 // Function DataRegistry.DataRegistrySubsystem.NotEqual_DataRegistryType
 // 0x001C (0x001C - 0x0000)
@@ -216,11 +169,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(DataRegistrySubsystem_NotEqual_DataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_NotEqual_DataRegistryType");
-static_assert(sizeof(DataRegistrySubsystem_NotEqual_DataRegistryType) == 0x00001C, "Wrong size on DataRegistrySubsystem_NotEqual_DataRegistryType");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryType, A) == 0x000000, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryType::A' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryType, B) == 0x00000C, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryType::B' has a wrong offset!");
-static_assert(offsetof(DataRegistrySubsystem_NotEqual_DataRegistryType, ReturnValue) == 0x000018, "Member 'DataRegistrySubsystem_NotEqual_DataRegistryType::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DataRegistrySubsystem_NotEqual_DataRegistryType;
 
 }
 

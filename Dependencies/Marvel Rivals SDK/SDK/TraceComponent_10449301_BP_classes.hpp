@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TraceComponent_10449301_BP.TraceComponent_10449301_BP_C
-// 0x0000 (0x2250 - 0x2250)
+// 0x0000 (0x2650 - 0x2650)
 class UTraceComponent_10449301_BP_C final : public UTraceComponent_100009
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TraceComponent_10449301_BP_C">();
+		BP_STATIC_CLASS_IMPL("TraceComponent_10449301_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TraceComponent_10449301_BP_C")
 	}
 	static class UTraceComponent_10449301_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTraceComponent_10449301_BP_C>();
 	}
 };
-static_assert(alignof(UTraceComponent_10449301_BP_C) == 0x000010, "Wrong alignment on UTraceComponent_10449301_BP_C");
-static_assert(sizeof(UTraceComponent_10449301_BP_C) == 0x002250, "Wrong size on UTraceComponent_10449301_BP_C");
+DUMPER7_ASSERTS_UTraceComponent_10449301_BP_C;
 
 }
 

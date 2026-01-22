@@ -23,15 +23,18 @@ class UAIAbilityExitStaget_SelfHPNearlyFull_C final : public UAIAbilityActivatio
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStaget_SelfHPNearlyFull_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStaget_SelfHPNearlyFull_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStaget_SelfHPNearlyFull_C")
 	}
 	static class UAIAbilityExitStaget_SelfHPNearlyFull_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStaget_SelfHPNearlyFull_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStaget_SelfHPNearlyFull_C) == 0x000008, "Wrong alignment on UAIAbilityExitStaget_SelfHPNearlyFull_C");
-static_assert(sizeof(UAIAbilityExitStaget_SelfHPNearlyFull_C) == 0x000050, "Wrong size on UAIAbilityExitStaget_SelfHPNearlyFull_C");
+DUMPER7_ASSERTS_UAIAbilityExitStaget_SelfHPNearlyFull_C;
 
 }
 

@@ -19,21 +19,24 @@ namespace SDK
 {
 
 // Class OnlineSubsystemEOS.NetDriverEOS
-// 0x0000 (0x0E38 - 0x0E38)
+// 0x0000 (0x0E70 - 0x0E70)
 class UNetDriverEOS final : public UNetDriverEOSBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetDriverEOS">();
+		STATIC_CLASS_IMPL("NetDriverEOS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetDriverEOS")
 	}
 	static class UNetDriverEOS* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetDriverEOS>();
 	}
 };
-static_assert(alignof(UNetDriverEOS) == 0x000008, "Wrong alignment on UNetDriverEOS");
-static_assert(sizeof(UNetDriverEOS) == 0x000E38, "Wrong size on UNetDriverEOS");
+DUMPER7_ASSERTS_UNetDriverEOS;
 
 // Class OnlineSubsystemEOS.EOSArtifactSettings
 // 0x0000 (0x0038 - 0x0038)
@@ -42,15 +45,18 @@ class UEOSArtifactSettings final : public UDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSArtifactSettings">();
+		STATIC_CLASS_IMPL("EOSArtifactSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSArtifactSettings")
 	}
 	static class UEOSArtifactSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSArtifactSettings>();
 	}
 };
-static_assert(alignof(UEOSArtifactSettings) == 0x000008, "Wrong alignment on UEOSArtifactSettings");
-static_assert(sizeof(UEOSArtifactSettings) == 0x000038, "Wrong size on UEOSArtifactSettings");
+DUMPER7_ASSERTS_UEOSArtifactSettings;
 
 // Class OnlineSubsystemEOS.EOSSettings
 // 0x0068 (0x00A8 - 0x0040)
@@ -80,32 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EOSSettings">();
+		STATIC_CLASS_IMPL("EOSSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EOSSettings")
 	}
 	static class UEOSSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEOSSettings>();
 	}
 };
-static_assert(alignof(UEOSSettings) == 0x000008, "Wrong alignment on UEOSSettings");
-static_assert(sizeof(UEOSSettings) == 0x0000A8, "Wrong size on UEOSSettings");
-static_assert(offsetof(UEOSSettings, CacheDir) == 0x000040, "Member 'UEOSSettings::CacheDir' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, DefaultArtifactName) == 0x000050, "Member 'UEOSSettings::DefaultArtifactName' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, TickBudgetInMilliseconds) == 0x000060, "Member 'UEOSSettings::TickBudgetInMilliseconds' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bEnableOverlay) == 0x000064, "Member 'UEOSSettings::bEnableOverlay' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bEnableSocialOverlay) == 0x000065, "Member 'UEOSSettings::bEnableSocialOverlay' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bEnableEditorOverlay) == 0x000066, "Member 'UEOSSettings::bEnableEditorOverlay' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bShouldEnforceBeingLaunchedByEGS) == 0x000067, "Member 'UEOSSettings::bShouldEnforceBeingLaunchedByEGS' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, TitleStorageTags) == 0x000068, "Member 'UEOSSettings::TitleStorageTags' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, TitleStorageReadChunkLength) == 0x000078, "Member 'UEOSSettings::TitleStorageReadChunkLength' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, Artifacts) == 0x000080, "Member 'UEOSSettings::Artifacts' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, AuthScopeFlags) == 0x000090, "Member 'UEOSSettings::AuthScopeFlags' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bUseEAS) == 0x0000A0, "Member 'UEOSSettings::bUseEAS' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bUseEOSConnect) == 0x0000A1, "Member 'UEOSSettings::bUseEOSConnect' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bMirrorStatsToEOS) == 0x0000A2, "Member 'UEOSSettings::bMirrorStatsToEOS' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bMirrorAchievementsToEOS) == 0x0000A3, "Member 'UEOSSettings::bMirrorAchievementsToEOS' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bUseEOSSessions) == 0x0000A4, "Member 'UEOSSettings::bUseEOSSessions' has a wrong offset!");
-static_assert(offsetof(UEOSSettings, bMirrorPresenceToEAS) == 0x0000A5, "Member 'UEOSSettings::bMirrorPresenceToEAS' has a wrong offset!");
+DUMPER7_ASSERTS_UEOSSettings;
 
 }
 

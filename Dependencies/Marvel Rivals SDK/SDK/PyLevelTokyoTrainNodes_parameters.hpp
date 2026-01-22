@@ -33,21 +33,7 @@ public:
 	class ULevelSequence*                         AttackSequence;                                    // 0x0078(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ULevelSequence*                         DefendSequence;                                    // 0x0080(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelTokyoTrainNodes_TokyoTrainInitialize) == 0x000008, "Wrong alignment on PyLevelTokyoTrainNodes_TokyoTrainInitialize");
-static_assert(sizeof(PyLevelTokyoTrainNodes_TokyoTrainInitialize) == 0x000088, "Wrong size on PyLevelTokyoTrainNodes_TokyoTrainInitialize");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, ProcessController) == 0x000000, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackTrainName) == 0x000008, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackTrainName' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackTrainMove) == 0x000018, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackTrainMove' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackTrainStay) == 0x000020, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackTrainStay' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackTowerName) == 0x000028, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackTowerName' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackTower) == 0x000038, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackTower' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendTrainName) == 0x000040, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendTrainName' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendTrainMove) == 0x000050, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendTrainMove' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendTrainStay) == 0x000058, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendTrainStay' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendTowerName) == 0x000060, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendTowerName' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendTower) == 0x000070, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendTower' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, AttackSequence) == 0x000078, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::AttackSequence' has a wrong offset!");
-static_assert(offsetof(PyLevelTokyoTrainNodes_TokyoTrainInitialize, DefendSequence) == 0x000080, "Member 'PyLevelTokyoTrainNodes_TokyoTrainInitialize::DefendSequence' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelTokyoTrainNodes_TokyoTrainInitialize;
 
 }
 

@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMonsterSpawnPoint">();
+		STATIC_CLASS_IMPL("PyMonsterSpawnPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMonsterSpawnPoint")
 	}
 	static class APyMonsterSpawnPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMonsterSpawnPoint>();
 	}
 };
-static_assert(alignof(APyMonsterSpawnPoint) == 0x000010, "Wrong alignment on APyMonsterSpawnPoint");
-static_assert(sizeof(APyMonsterSpawnPoint) == 0x0007A0, "Wrong size on APyMonsterSpawnPoint");
-static_assert(offsetof(APyMonsterSpawnPoint, SpawnPointIndex) == 0x000720, "Member 'APyMonsterSpawnPoint::SpawnPointIndex' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, UseCount) == 0x000724, "Member 'APyMonsterSpawnPoint::UseCount' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, MonsterList) == 0x000728, "Member 'APyMonsterSpawnPoint::MonsterList' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, SpawnConfig) == 0x000738, "Member 'APyMonsterSpawnPoint::SpawnConfig' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, EnableCondition) == 0x000788, "Member 'APyMonsterSpawnPoint::EnableCondition' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, DisableCondition) == 0x00078C, "Member 'APyMonsterSpawnPoint::DisableCondition' has a wrong offset!");
-static_assert(offsetof(APyMonsterSpawnPoint, IsBossSpawnPoint) == 0x000790, "Member 'APyMonsterSpawnPoint::IsBossSpawnPoint' has a wrong offset!");
+DUMPER7_ASSERTS_APyMonsterSpawnPoint;
 
 }
 

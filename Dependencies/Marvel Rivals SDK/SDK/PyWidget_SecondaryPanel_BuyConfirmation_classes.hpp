@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryPanel_BuyConfirmation.PyWidget_SecondaryPanel_BuyConfirmation
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_SecondaryPanel_BuyConfirmation final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            BtnNameNoEnoughColor;                              // 0x05BC(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNameEnoughColor;                                // 0x05D0(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnPriceOldColor;                                  // 0x05E4(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgDeleteColor;                                    // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            BtnNameNoEnoughColor;                              // 0x05C4(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameEnoughColor;                                // 0x05D8(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnPriceOldColor;                                  // 0x05EC(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgDeleteColor;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPanel_BuyConfirmation">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPanel_BuyConfirmation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPanel_BuyConfirmation")
 	}
 	static class UPyWidget_SecondaryPanel_BuyConfirmation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPanel_BuyConfirmation>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPanel_BuyConfirmation) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPanel_BuyConfirmation");
-static_assert(sizeof(UPyWidget_SecondaryPanel_BuyConfirmation) == 0x000610, "Wrong size on UPyWidget_SecondaryPanel_BuyConfirmation");
-static_assert(offsetof(UPyWidget_SecondaryPanel_BuyConfirmation, BtnNameNoEnoughColor) == 0x0005BC, "Member 'UPyWidget_SecondaryPanel_BuyConfirmation::BtnNameNoEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPanel_BuyConfirmation, BtnNameEnoughColor) == 0x0005D0, "Member 'UPyWidget_SecondaryPanel_BuyConfirmation::BtnNameEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPanel_BuyConfirmation, BtnPriceOldColor) == 0x0005E4, "Member 'UPyWidget_SecondaryPanel_BuyConfirmation::BtnPriceOldColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPanel_BuyConfirmation, ImgDeleteColor) == 0x0005F8, "Member 'UPyWidget_SecondaryPanel_BuyConfirmation::ImgDeleteColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SecondaryPanel_BuyConfirmation, Price_Widget) == 0x000608, "Member 'UPyWidget_SecondaryPanel_BuyConfirmation::Price_Widget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPanel_BuyConfirmation;
 
 }
 

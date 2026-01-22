@@ -23,9 +23,7 @@ struct PyWidget_LocalBattleKillPanelUnit_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanelUnit_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_LocalBattleKillPanelUnit_PreConstruct");
-static_assert(sizeof(PyWidget_LocalBattleKillPanelUnit_PreConstruct) == 0x000001, "Wrong size on PyWidget_LocalBattleKillPanelUnit_PreConstruct");
-static_assert(offsetof(PyWidget_LocalBattleKillPanelUnit_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_LocalBattleKillPanelUnit_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanelUnit_PreConstruct;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanelUnit.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged");
-static_assert(sizeof(PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged");
-static_assert(offsetof(PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanelUnit_OnVisibleChanged;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanelUnit.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished");
-static_assert(sizeof(PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished");
-static_assert(offsetof(PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanelUnit_OnAnimationFinished;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanel.OnKillingSpreeCountChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMarvelPlayerState*                     ps;                                                // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged) == 0x000008, "Wrong alignment on PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged");
-static_assert(sizeof(PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged) == 0x000010, "Wrong size on PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged, Count) == 0x000000, "Member 'PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged::Count' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged, ps) == 0x000008, "Member 'PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanel_OnKillingSpreeCountChanged;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanel.OnPickUpKillConfirm
 // 0x0018 (0x0018 - 0x0000)
@@ -73,12 +64,7 @@ public:
 	EBattleSide                                   BattleSide;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsAlly;                                            // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm) == 0x000008, "Wrong alignment on PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm");
-static_assert(sizeof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm) == 0x000018, "Wrong size on PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm, Item) == 0x000000, "Member 'PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm::Item' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm, PlayerState) == 0x000008, "Member 'PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm, BattleSide) == 0x000010, "Member 'PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm::BattleSide' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm, IsAlly) == 0x000011, "Member 'PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm::IsAlly' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanel_OnPickUpKillConfirm;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanel.OnActorDeathDispatcher
 // 0x0030 (0x0030 - 0x0000)
@@ -90,12 +76,7 @@ public:
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher) == 0x000008, "Wrong alignment on PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher");
-static_assert(sizeof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher) == 0x000030, "Wrong size on PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher, Source) == 0x000000, "Member 'PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher::Source' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher, Target) == 0x000008, "Member 'PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher::Target' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher, ModifierHandle) == 0x000010, "Member 'PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher::ModifierHandle' has a wrong offset!");
-static_assert(offsetof(PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher, ExtraData) == 0x000028, "Member 'PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanel_OnActorDeathDispatcher;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillPanelCenter.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -104,9 +85,7 @@ struct PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished");
-static_assert(sizeof(PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished");
-static_assert(offsetof(PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillPanelCenter_OnAnimationFinished;
 
 // PythonFunction PyWidget_LocalBattleKillTest.PyWidget_LocalBattleKillReticleCenter.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -115,9 +94,7 @@ struct PyWidget_LocalBattleKillReticleCenter_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LocalBattleKillReticleCenter_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_LocalBattleKillReticleCenter_PreConstruct");
-static_assert(sizeof(PyWidget_LocalBattleKillReticleCenter_PreConstruct) == 0x000001, "Wrong size on PyWidget_LocalBattleKillReticleCenter_PreConstruct");
-static_assert(offsetof(PyWidget_LocalBattleKillReticleCenter_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_LocalBattleKillReticleCenter_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LocalBattleKillReticleCenter_PreConstruct;
 
 }
 

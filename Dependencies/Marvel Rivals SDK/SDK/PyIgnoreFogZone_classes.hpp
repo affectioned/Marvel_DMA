@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyIgnoreFogZone">();
+		STATIC_CLASS_IMPL("PyIgnoreFogZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyIgnoreFogZone")
 	}
 	static class APyIgnoreFogZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyIgnoreFogZone>();
 	}
 };
-static_assert(alignof(APyIgnoreFogZone) == 0x000010, "Wrong alignment on APyIgnoreFogZone");
-static_assert(sizeof(APyIgnoreFogZone) == 0x0006E0, "Wrong size on APyIgnoreFogZone");
+DUMPER7_ASSERTS_APyIgnoreFogZone;
 
 }
 

@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Com_OnlineSignal.WBP_Com_OnlineSignal_C
-// 0x0028 (0x05F0 - 0x05C8)
+// 0x0028 (0x05F8 - 0x05D0)
 class UWBP_Com_OnlineSignal_C final : public UPyWidget_PingPanel
 {
 public:
-	class UMarvelImage*                           Img_Signal_1;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Signal_2;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Signal_3;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Signal_Bg;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Signal;                                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Signal_1;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Signal_2;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Signal_3;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Signal_Bg;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Signal;                                    // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Com_OnlineSignal_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Com_OnlineSignal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Com_OnlineSignal_C")
 	}
 	static class UWBP_Com_OnlineSignal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Com_OnlineSignal_C>();
 	}
 };
-static_assert(alignof(UWBP_Com_OnlineSignal_C) == 0x000008, "Wrong alignment on UWBP_Com_OnlineSignal_C");
-static_assert(sizeof(UWBP_Com_OnlineSignal_C) == 0x0005F0, "Wrong size on UWBP_Com_OnlineSignal_C");
-static_assert(offsetof(UWBP_Com_OnlineSignal_C, Img_Signal_1) == 0x0005C8, "Member 'UWBP_Com_OnlineSignal_C::Img_Signal_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_OnlineSignal_C, Img_Signal_2) == 0x0005D0, "Member 'UWBP_Com_OnlineSignal_C::Img_Signal_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_OnlineSignal_C, Img_Signal_3) == 0x0005D8, "Member 'UWBP_Com_OnlineSignal_C::Img_Signal_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_OnlineSignal_C, Img_Signal_Bg) == 0x0005E0, "Member 'UWBP_Com_OnlineSignal_C::Img_Signal_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Com_OnlineSignal_C, Overlay_Signal) == 0x0005E8, "Member 'UWBP_Com_OnlineSignal_C::Overlay_Signal' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Com_OnlineSignal_C;
 
 }
 

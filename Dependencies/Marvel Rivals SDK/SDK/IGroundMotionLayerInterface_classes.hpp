@@ -21,10 +21,10 @@ namespace SDK
 class IIGroundMotionLayerInterface_C final
 {
 public:
-	void Turning_Post(const struct FPoseLink& InPose, struct FPoseLink* Turning_Post_0);
 	void JumpStartNew(struct FPoseLink* JumpStartNew_0);
-	void JumpLoopNew(struct FPoseLink* JumpLoopNew_0);
+	void Turning_Post(const struct FPoseLink& InPose, struct FPoseLink* Turning_Post_0);
 	void JumpLandNew(struct FPoseLink* JumpLandNew_0);
+	void JumpLoopNew(struct FPoseLink* JumpLoopNew_0);
 	void Jump(const struct FPoseLink& GroundDetail, struct FPoseLink* Jump_0);
 	void GroundStop(struct FPoseLink* GroundStop_0);
 	void GroundNew(const struct FPoseLink& Idle, const struct FPoseLink& Loop, const struct FPoseLink& Stop, struct FPoseLink* GroundNew_0);
@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IGroundMotionLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("IGroundMotionLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IGroundMotionLayerInterface_C")
 	}
 	static class IIGroundMotionLayerInterface_C* GetDefaultObj()
 	{
@@ -50,8 +54,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IIGroundMotionLayerInterface_C) == 0x000001, "Wrong alignment on IIGroundMotionLayerInterface_C");
-static_assert(sizeof(IIGroundMotionLayerInterface_C) == 0x000001, "Wrong size on IIGroundMotionLayerInterface_C");
+DUMPER7_ASSERTS_IIGroundMotionLayerInterface_C;
 
 }
 

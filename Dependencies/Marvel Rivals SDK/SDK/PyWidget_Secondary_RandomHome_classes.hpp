@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_RandomHome.PyWidget_RandomHome_SelectCard
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_RandomHome_SelectCard final : public UMarvelUserWidget
 {
 public:
-	TMulticastInlineDelegate<void(const class FString& HomeId, bool Checked)> OnHomeCheckChanged;    // 0x0568(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& HomeId, bool Checked)> OnHomeCheckChanged;    // 0x0570(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,24 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RandomHome_SelectCard">();
+		STATIC_CLASS_IMPL("PyWidget_RandomHome_SelectCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RandomHome_SelectCard")
 	}
 	static class UPyWidget_RandomHome_SelectCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RandomHome_SelectCard>();
 	}
 };
-static_assert(alignof(UPyWidget_RandomHome_SelectCard) == 0x000008, "Wrong alignment on UPyWidget_RandomHome_SelectCard");
-static_assert(sizeof(UPyWidget_RandomHome_SelectCard) == 0x000578, "Wrong size on UPyWidget_RandomHome_SelectCard");
-static_assert(offsetof(UPyWidget_RandomHome_SelectCard, OnHomeCheckChanged) == 0x000568, "Member 'UPyWidget_RandomHome_SelectCard::OnHomeCheckChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RandomHome_SelectCard;
 
 // PythonClass PyWidget_Secondary_RandomHome.PyWidget_Secondary_RandomHome
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_RandomHome final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_RandomHome_SelectCard> ListItemWidget;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_RandomHome_SelectCard> ListItemWidget;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_RandomHome">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_RandomHome")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_RandomHome")
 	}
 	static class UPyWidget_Secondary_RandomHome* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_RandomHome>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_RandomHome) == 0x000008, "Wrong alignment on UPyWidget_Secondary_RandomHome");
-static_assert(sizeof(UPyWidget_Secondary_RandomHome) == 0x0005C8, "Wrong size on UPyWidget_Secondary_RandomHome");
-static_assert(offsetof(UPyWidget_Secondary_RandomHome, ListItemWidget) == 0x0005C0, "Member 'UPyWidget_Secondary_RandomHome::ListItemWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_RandomHome;
 
 }
 

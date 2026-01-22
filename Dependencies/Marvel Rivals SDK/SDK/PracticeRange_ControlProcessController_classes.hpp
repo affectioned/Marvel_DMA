@@ -23,15 +23,18 @@ class APracticeRange_ControlProcessController_C final : public APyLevelProcessCo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PracticeRange_ControlProcessController_C">();
+		BP_STATIC_CLASS_IMPL("PracticeRange_ControlProcessController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PracticeRange_ControlProcessController_C")
 	}
 	static class APracticeRange_ControlProcessController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APracticeRange_ControlProcessController_C>();
 	}
 };
-static_assert(alignof(APracticeRange_ControlProcessController_C) == 0x000010, "Wrong alignment on APracticeRange_ControlProcessController_C");
-static_assert(sizeof(APracticeRange_ControlProcessController_C) == 0x000760, "Wrong size on APracticeRange_ControlProcessController_C");
+DUMPER7_ASSERTS_APracticeRange_ControlProcessController_C;
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102194.PyCue_Scope_HitImpact_10219402
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05F0 - 0x05E8)
 class UPyCue_Scope_HitImpact_10219402 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	int32                                         TeammateHitAudio;                                  // 0x05C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EnemyHitAudio;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TeammateHitAudio;                                  // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnemyHitAudio;                                     // 0x05EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	int32 GetAbilityHitAudioIDWithHit(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const struct FHitResult& HitRes) const;
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10219402">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10219402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10219402")
 	}
 	static class UPyCue_Scope_HitImpact_10219402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10219402>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10219402) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10219402");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10219402) == 0x0005D0, "Wrong size on UPyCue_Scope_HitImpact_10219402");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10219402, TeammateHitAudio) == 0x0005C8, "Member 'UPyCue_Scope_HitImpact_10219402::TeammateHitAudio' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10219402, EnemyHitAudio) == 0x0005CC, "Member 'UPyCue_Scope_HitImpact_10219402::EnemyHitAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10219402;
 
 }
 

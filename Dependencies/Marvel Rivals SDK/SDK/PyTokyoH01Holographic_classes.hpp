@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_InteractableActorIndicator">();
+		STATIC_CLASS_IMPL("PyWC_InteractableActorIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_InteractableActorIndicator")
 	}
 	static class UPyWC_InteractableActorIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_InteractableActorIndicator>();
 	}
 };
-static_assert(alignof(UPyWC_InteractableActorIndicator) == 0x000010, "Wrong alignment on UPyWC_InteractableActorIndicator");
-static_assert(sizeof(UPyWC_InteractableActorIndicator) == 0x000B60, "Wrong size on UPyWC_InteractableActorIndicator");
-static_assert(offsetof(UPyWC_InteractableActorIndicator, Text_DisplayName) == 0x000AE0, "Member 'UPyWC_InteractableActorIndicator::Text_DisplayName' has a wrong offset!");
-static_assert(offsetof(UPyWC_InteractableActorIndicator, ActionTips) == 0x000AF8, "Member 'UPyWC_InteractableActorIndicator::ActionTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_InteractableActorIndicator;
 
 // PythonClass PyTokyoH01Holographic.PyTokyoH01HolographicActor
 // 0x0030 (0x0740 - 0x0710)
@@ -64,21 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoH01HolographicActor">();
+		STATIC_CLASS_IMPL("PyTokyoH01HolographicActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoH01HolographicActor")
 	}
 	static class APyTokyoH01HolographicActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTokyoH01HolographicActor>();
 	}
 };
-static_assert(alignof(APyTokyoH01HolographicActor) == 0x000010, "Wrong alignment on APyTokyoH01HolographicActor");
-static_assert(sizeof(APyTokyoH01HolographicActor) == 0x000740, "Wrong size on APyTokyoH01HolographicActor");
-static_assert(offsetof(APyTokyoH01HolographicActor, LoopTime) == 0x000710, "Member 'APyTokyoH01HolographicActor::LoopTime' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01HolographicActor, IntervalTime) == 0x000714, "Member 'APyTokyoH01HolographicActor::IntervalTime' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01HolographicActor, IsActivated) == 0x000718, "Member 'APyTokyoH01HolographicActor::IsActivated' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01HolographicActor, IsCoolingDown) == 0x000719, "Member 'APyTokyoH01HolographicActor::IsCoolingDown' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01HolographicActor, OnActorOverlap) == 0x000720, "Member 'APyTokyoH01HolographicActor::OnActorOverlap' has a wrong offset!");
-static_assert(offsetof(APyTokyoH01HolographicActor, OnCooldownStateChanged) == 0x000730, "Member 'APyTokyoH01HolographicActor::OnCooldownStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyTokyoH01HolographicActor;
 
 }
 

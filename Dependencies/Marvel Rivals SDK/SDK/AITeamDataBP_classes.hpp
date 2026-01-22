@@ -23,15 +23,18 @@ class AAITeamDataBP_C final : public APyAITeamData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITeamDataBP_C">();
+		BP_STATIC_CLASS_IMPL("AITeamDataBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITeamDataBP_C")
 	}
 	static class AAITeamDataBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAITeamDataBP_C>();
 	}
 };
-static_assert(alignof(AAITeamDataBP_C) == 0x000010, "Wrong alignment on AAITeamDataBP_C");
-static_assert(sizeof(AAITeamDataBP_C) == 0x000770, "Wrong size on AAITeamDataBP_C");
+DUMPER7_ASSERTS_AAITeamDataBP_C;
 
 }
 

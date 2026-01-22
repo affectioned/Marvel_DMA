@@ -10,18 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
-#include "Hero_1047_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1047_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104761.PyUIController_104761
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104761 final : public UUIC_Ability
 {
 public:
@@ -32,92 +30,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104761">();
+		STATIC_CLASS_IMPL("PyUIController_104761")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104761")
 	}
 	static class UPyUIController_104761* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104761>();
 	}
 };
-static_assert(alignof(UPyUIController_104761) == 0x000008, "Wrong alignment on UPyUIController_104761");
-static_assert(sizeof(UPyUIController_104761) == 0x000F10, "Wrong size on UPyUIController_104761");
+DUMPER7_ASSERTS_UPyUIController_104761;
 
 // PythonClass PyAbility_104761.PyConfig_104761
-// 0x0100 (0x0208 - 0x0108)
+// 0x0000 (0x0210 - 0x0210)
 class UPyConfig_104761 final : public UConfig_104761
 {
 public:
-	int32                                         DivingBuff;                                        // 0x0108(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AccelerateBuff;                                    // 0x010C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TyrantsBuff;                                       // 0x0110(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageReductionBuff;                               // 0x0114(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CancelLaunchVelocity;                              // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CancelDivingHeight;                                // 0x011C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HoldSpaceToGetOnWall;                              // 0x0120(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStateChangedTaskParam                 DiveActiveUserSetting;                             // 0x0124(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 GetOnWallActiveUserSetting;                        // 0x014C(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  BlockAbilitiesWithTagWhenDiving;                   // 0x0178(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         DivingStepHeight;                                  // 0x01E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 LeftBindInput;                                     // 0x01E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 RightBindInput;                                    // 0x01F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104761">();
+		STATIC_CLASS_IMPL("PyConfig_104761")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104761")
 	}
 	static class UPyConfig_104761* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104761>();
 	}
 };
-static_assert(alignof(UPyConfig_104761) == 0x000008, "Wrong alignment on UPyConfig_104761");
-static_assert(sizeof(UPyConfig_104761) == 0x000208, "Wrong size on UPyConfig_104761");
-static_assert(offsetof(UPyConfig_104761, DivingBuff) == 0x000108, "Member 'UPyConfig_104761::DivingBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, AccelerateBuff) == 0x00010C, "Member 'UPyConfig_104761::AccelerateBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, TyrantsBuff) == 0x000110, "Member 'UPyConfig_104761::TyrantsBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, DamageReductionBuff) == 0x000114, "Member 'UPyConfig_104761::DamageReductionBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, CancelLaunchVelocity) == 0x000118, "Member 'UPyConfig_104761::CancelLaunchVelocity' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, CancelDivingHeight) == 0x00011C, "Member 'UPyConfig_104761::CancelDivingHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, HoldSpaceToGetOnWall) == 0x000120, "Member 'UPyConfig_104761::HoldSpaceToGetOnWall' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, DiveActiveUserSetting) == 0x000124, "Member 'UPyConfig_104761::DiveActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, GetOnWallActiveUserSetting) == 0x00014C, "Member 'UPyConfig_104761::GetOnWallActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, BlockAbilitiesWithTagWhenDiving) == 0x000178, "Member 'UPyConfig_104761::BlockAbilitiesWithTagWhenDiving' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, DivingStepHeight) == 0x0001E0, "Member 'UPyConfig_104761::DivingStepHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, LeftBindInput) == 0x0001E8, "Member 'UPyConfig_104761::LeftBindInput' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104761, RightBindInput) == 0x0001F8, "Member 'UPyConfig_104761::RightBindInput' has a wrong offset!");
-
-// PythonClass PyAbility_104761.PyCue_Ability_Loop_10476101
-// 0x0000 (0x1270 - 0x1270)
-class APyCue_Ability_Loop_10476101 final : public ACue_Ability_Loop_10476101
-{
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnTagUpdate(const struct FGameplayTag& Tag, bool Exist);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10476101">();
-	}
-	static class APyCue_Ability_Loop_10476101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Ability_Loop_10476101>();
-	}
-};
-static_assert(alignof(APyCue_Ability_Loop_10476101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10476101");
-static_assert(sizeof(APyCue_Ability_Loop_10476101) == 0x001270, "Wrong size on APyCue_Ability_Loop_10476101");
+DUMPER7_ASSERTS_UPyConfig_104761;
 
 // PythonClass PyAbility_104761.PyAbility_104761_New
-// 0x0008 (0x2A90 - 0x2A88)
+// 0x0008 (0x2AE0 - 0x2AD8)
 class UPyAbility_104761_New : public UAbility_104761
 {
 public:
-	int32                                         Server_PyAbility_104761_State;                     // 0x2A88(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Server_PyAbility_104761_State;                     // 0x2AD8(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -126,6 +77,8 @@ public:
 	void OnRep_PyAbility_104761_State();
 	bool TryMakeTriggerContext(struct FGameplayEventData& EventData);
 	void K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData);
+	void OnTryGetOnWallBegin(float time);
+	void OnTryGetOnWallCancelled(float time);
 	void OnWallRunningEnd(const struct FWallRunningEndInfo& InWallRunningEndInfo);
 	void OnJeffDivingUIWindowStateChanged(bool IsWindowOpen);
 	void MissileEventNotify();
@@ -138,16 +91,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104761_New">();
+		STATIC_CLASS_IMPL("PyAbility_104761_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104761_New")
 	}
 	static class UPyAbility_104761_New* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104761_New>();
 	}
 };
-static_assert(alignof(UPyAbility_104761_New) == 0x000008, "Wrong alignment on UPyAbility_104761_New");
-static_assert(sizeof(UPyAbility_104761_New) == 0x002A90, "Wrong size on UPyAbility_104761_New");
-static_assert(offsetof(UPyAbility_104761_New, Server_PyAbility_104761_State) == 0x002A88, "Member 'UPyAbility_104761_New::Server_PyAbility_104761_State' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104761_New;
+
+// PythonClass PyAbility_104761.PyCue_Ability_Loop_10476101
+// 0x0000 (0x1280 - 0x1280)
+class APyCue_Ability_Loop_10476101 : public ACue_Ability_Loop_10476101
+{
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnTagUpdate(const struct FGameplayTag& Tag, bool Exist);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10476101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10476101")
+	}
+	static class APyCue_Ability_Loop_10476101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Ability_Loop_10476101>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10476101;
 
 }
 

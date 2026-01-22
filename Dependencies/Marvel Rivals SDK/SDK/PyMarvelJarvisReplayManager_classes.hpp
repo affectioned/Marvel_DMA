@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelJarvisReplayManager">();
+		STATIC_CLASS_IMPL("PyMarvelJarvisReplayManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelJarvisReplayManager")
 	}
 	static class UPyMarvelJarvisReplayManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelJarvisReplayManager>();
 	}
 };
-static_assert(alignof(UPyMarvelJarvisReplayManager) == 0x000008, "Wrong alignment on UPyMarvelJarvisReplayManager");
-static_assert(sizeof(UPyMarvelJarvisReplayManager) == 0x000038, "Wrong size on UPyMarvelJarvisReplayManager");
+DUMPER7_ASSERTS_UPyMarvelJarvisReplayManager;
 
 }
 

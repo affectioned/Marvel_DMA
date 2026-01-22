@@ -25,11 +25,7 @@ public:
 	class AMarvelAIController*                    Controller;                                        // 0x00E8(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIAbilityExitStageLogicBase_CheckLogic) == 0x000008, "Wrong alignment on PyAIAbilityExitStageLogicBase_CheckLogic");
-static_assert(sizeof(PyAIAbilityExitStageLogicBase_CheckLogic) == 0x0000F8, "Wrong size on PyAIAbilityExitStageLogicBase_CheckLogic");
-static_assert(offsetof(PyAIAbilityExitStageLogicBase_CheckLogic, AbilityUsage) == 0x000000, "Member 'PyAIAbilityExitStageLogicBase_CheckLogic::AbilityUsage' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityExitStageLogicBase_CheckLogic, Controller) == 0x0000E8, "Member 'PyAIAbilityExitStageLogicBase_CheckLogic::Controller' has a wrong offset!");
-static_assert(offsetof(PyAIAbilityExitStageLogicBase_CheckLogic, ReturnValue) == 0x0000F0, "Member 'PyAIAbilityExitStageLogicBase_CheckLogic::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIAbilityExitStageLogicBase_CheckLogic;
 
 }
 

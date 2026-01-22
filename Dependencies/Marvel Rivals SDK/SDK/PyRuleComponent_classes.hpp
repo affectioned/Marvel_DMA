@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuleComponent">();
+		STATIC_CLASS_IMPL("PyRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuleComponent")
 	}
 	static class UPyRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRuleComponent>();
 	}
 };
-static_assert(alignof(UPyRuleComponent) == 0x000008, "Wrong alignment on UPyRuleComponent");
-static_assert(sizeof(UPyRuleComponent) == 0x000108, "Wrong size on UPyRuleComponent");
+DUMPER7_ASSERTS_UPyRuleComponent;
 
 }
 

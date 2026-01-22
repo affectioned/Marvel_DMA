@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CommonRewards.PyWidget_CommonRewards
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_CommonRewards final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DefaultDisplayTime;                                // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxSizeOfCountdownBar;                             // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeightOfCountdownBar;                              // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DefaultDisplayTime;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxSizeOfCountdownBar;                             // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeightOfCountdownBar;                              // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonRewards">();
+		STATIC_CLASS_IMPL("PyWidget_CommonRewards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonRewards")
 	}
 	static class UPyWidget_CommonRewards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonRewards>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonRewards) == 0x000008, "Wrong alignment on UPyWidget_CommonRewards");
-static_assert(sizeof(UPyWidget_CommonRewards) == 0x0005C8, "Wrong size on UPyWidget_CommonRewards");
-static_assert(offsetof(UPyWidget_CommonRewards, DefaultDisplayTime) == 0x0005BC, "Member 'UPyWidget_CommonRewards::DefaultDisplayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonRewards, MaxSizeOfCountdownBar) == 0x0005C0, "Member 'UPyWidget_CommonRewards::MaxSizeOfCountdownBar' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonRewards, HeightOfCountdownBar) == 0x0005C4, "Member 'UPyWidget_CommonRewards::HeightOfCountdownBar' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonRewards;
 
 }
 

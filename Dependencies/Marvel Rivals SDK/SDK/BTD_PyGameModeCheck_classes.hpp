@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyGameModeCheck">();
+		STATIC_CLASS_IMPL("BTD_PyGameModeCheck")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyGameModeCheck")
 	}
 	static class UBTD_PyGameModeCheck* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyGameModeCheck>();
 	}
 };
-static_assert(alignof(UBTD_PyGameModeCheck) == 0x000008, "Wrong alignment on UBTD_PyGameModeCheck");
-static_assert(sizeof(UBTD_PyGameModeCheck) == 0x0000C0, "Wrong size on UBTD_PyGameModeCheck");
-static_assert(offsetof(UBTD_PyGameModeCheck, ModeType) == 0x0000B8, "Member 'UBTD_PyGameModeCheck::ModeType' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyGameModeCheck;
 
 }
 

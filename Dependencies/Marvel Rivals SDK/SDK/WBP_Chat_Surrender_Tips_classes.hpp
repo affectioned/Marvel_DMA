@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Chat_Surrender_Tips.WBP_Chat_Surrender_Tips_C
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UWBP_Chat_Surrender_Tips_C final : public UPyWidget_SurrenderTipsMsg
 {
 public:
-	class USizeBox*                               SizeBox_TextWidth;                                 // 0x0568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Txt_Info;                                          // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_TextWidth;                                 // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Txt_Info;                                          // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_Surrender_Tips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_Surrender_Tips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_Surrender_Tips_C")
 	}
 	static class UWBP_Chat_Surrender_Tips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_Surrender_Tips_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_Surrender_Tips_C) == 0x000008, "Wrong alignment on UWBP_Chat_Surrender_Tips_C");
-static_assert(sizeof(UWBP_Chat_Surrender_Tips_C) == 0x000578, "Wrong size on UWBP_Chat_Surrender_Tips_C");
-static_assert(offsetof(UWBP_Chat_Surrender_Tips_C, SizeBox_TextWidth) == 0x000568, "Member 'UWBP_Chat_Surrender_Tips_C::SizeBox_TextWidth' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_Surrender_Tips_C, Txt_Info) == 0x000570, "Member 'UWBP_Chat_Surrender_Tips_C::Txt_Info' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_Surrender_Tips_C;
 
 }
 

@@ -42,21 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCenterLogic">();
+		STATIC_CLASS_IMPL("PyCenterLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCenterLogic")
 	}
 	static class APyCenterLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCenterLogic>();
 	}
 };
-static_assert(alignof(APyCenterLogic) == 0x000010, "Wrong alignment on APyCenterLogic");
-static_assert(sizeof(APyCenterLogic) == 0x000710, "Wrong size on APyCenterLogic");
-static_assert(offsetof(APyCenterLogic, DoorLSAsset) == 0x0006E0, "Member 'APyCenterLogic::DoorLSAsset' has a wrong offset!");
-static_assert(offsetof(APyCenterLogic, StabilizerLSAsset) == 0x0006E8, "Member 'APyCenterLogic::StabilizerLSAsset' has a wrong offset!");
-static_assert(offsetof(APyCenterLogic, StabilizerEffectLSAsset) == 0x0006F0, "Member 'APyCenterLogic::StabilizerEffectLSAsset' has a wrong offset!");
-static_assert(offsetof(APyCenterLogic, Delay) == 0x0006F8, "Member 'APyCenterLogic::Delay' has a wrong offset!");
-static_assert(offsetof(APyCenterLogic, HalfAudioID) == 0x0006FC, "Member 'APyCenterLogic::HalfAudioID' has a wrong offset!");
-static_assert(offsetof(APyCenterLogic, BrokenAudioID) == 0x000700, "Member 'APyCenterLogic::BrokenAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCenterLogic;
 
 }
 

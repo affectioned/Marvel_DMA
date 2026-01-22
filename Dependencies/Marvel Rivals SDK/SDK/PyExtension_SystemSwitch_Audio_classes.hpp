@@ -23,15 +23,18 @@ class UPyExtension_SystemSwitch_Audio final : public UPyExtension_SystemSwitch_U
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_SystemSwitch_Audio">();
+		STATIC_CLASS_IMPL("PyExtension_SystemSwitch_Audio")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_SystemSwitch_Audio")
 	}
 	static class UPyExtension_SystemSwitch_Audio* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_SystemSwitch_Audio>();
 	}
 };
-static_assert(alignof(UPyExtension_SystemSwitch_Audio) == 0x000008, "Wrong alignment on UPyExtension_SystemSwitch_Audio");
-static_assert(sizeof(UPyExtension_SystemSwitch_Audio) == 0x000030, "Wrong size on UPyExtension_SystemSwitch_Audio");
+DUMPER7_ASSERTS_UPyExtension_SystemSwitch_Audio;
 
 }
 

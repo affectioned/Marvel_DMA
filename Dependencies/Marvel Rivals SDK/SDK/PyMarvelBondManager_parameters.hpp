@@ -25,11 +25,7 @@ public:
 	struct FBondInstance                          InBond;                                            // 0x0008(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0130(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_PyCanAddCharacterToBond) == 0x000008, "Wrong alignment on PyMarvelBondManager_PyCanAddCharacterToBond");
-static_assert(sizeof(PyMarvelBondManager_PyCanAddCharacterToBond) == 0x000138, "Wrong size on PyMarvelBondManager_PyCanAddCharacterToBond");
-static_assert(offsetof(PyMarvelBondManager_PyCanAddCharacterToBond, InCharacter) == 0x000000, "Member 'PyMarvelBondManager_PyCanAddCharacterToBond::InCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_PyCanAddCharacterToBond, InBond) == 0x000008, "Member 'PyMarvelBondManager_PyCanAddCharacterToBond::InBond' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_PyCanAddCharacterToBond, ReturnValue) == 0x000130, "Member 'PyMarvelBondManager_PyCanAddCharacterToBond::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_PyCanAddCharacterToBond;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnBondStateChange
 // 0x0138 (0x0138 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	struct FBondInstance                          InBondInstance;                                    // 0x0000(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<class AMarvelBaseCharacter*>           TriggerCharacters;                                 // 0x0128(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnBondStateChange) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnBondStateChange");
-static_assert(sizeof(PyMarvelBondManager_OnBondStateChange) == 0x000138, "Wrong size on PyMarvelBondManager_OnBondStateChange");
-static_assert(offsetof(PyMarvelBondManager_OnBondStateChange, InBondInstance) == 0x000000, "Member 'PyMarvelBondManager_OnBondStateChange::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnBondStateChange, TriggerCharacters) == 0x000128, "Member 'PyMarvelBondManager_OnBondStateChange::TriggerCharacters' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnBondStateChange;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnCharacterBondStateChange
 // 0x0138 (0x0138 - 0x0000)
@@ -53,11 +46,7 @@ public:
 	class AMarvelBaseCharacter*                   Target;                                            // 0x0128(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsActive;                                          // 0x0130(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_OnCharacterBondStateChange) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnCharacterBondStateChange");
-static_assert(sizeof(PyMarvelBondManager_OnCharacterBondStateChange) == 0x000138, "Wrong size on PyMarvelBondManager_OnCharacterBondStateChange");
-static_assert(offsetof(PyMarvelBondManager_OnCharacterBondStateChange, InBondInstance) == 0x000000, "Member 'PyMarvelBondManager_OnCharacterBondStateChange::InBondInstance' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnCharacterBondStateChange, Target) == 0x000128, "Member 'PyMarvelBondManager_OnCharacterBondStateChange::Target' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnCharacterBondStateChange, IsActive) == 0x000130, "Member 'PyMarvelBondManager_OnCharacterBondStateChange::IsActive' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnCharacterBondStateChange;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnBondCharacterAdd
 // 0x0018 (0x0018 - 0x0000)
@@ -67,10 +56,7 @@ public:
 	class AMarvelBaseCharacter*                   TriggerCharacter;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBondInstance>                  RefBondInstances;                                  // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnBondCharacterAdd) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnBondCharacterAdd");
-static_assert(sizeof(PyMarvelBondManager_OnBondCharacterAdd) == 0x000018, "Wrong size on PyMarvelBondManager_OnBondCharacterAdd");
-static_assert(offsetof(PyMarvelBondManager_OnBondCharacterAdd, TriggerCharacter) == 0x000000, "Member 'PyMarvelBondManager_OnBondCharacterAdd::TriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnBondCharacterAdd, RefBondInstances) == 0x000008, "Member 'PyMarvelBondManager_OnBondCharacterAdd::RefBondInstances' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnBondCharacterAdd;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnBondCharacterRemove
 // 0x0018 (0x0018 - 0x0000)
@@ -80,10 +66,7 @@ public:
 	class AMarvelBaseCharacter*                   TriggerCharacter;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FBondInstance>                  RefBondInstances;                                  // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnBondCharacterRemove) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnBondCharacterRemove");
-static_assert(sizeof(PyMarvelBondManager_OnBondCharacterRemove) == 0x000018, "Wrong size on PyMarvelBondManager_OnBondCharacterRemove");
-static_assert(offsetof(PyMarvelBondManager_OnBondCharacterRemove, TriggerCharacter) == 0x000000, "Member 'PyMarvelBondManager_OnBondCharacterRemove::TriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnBondCharacterRemove, RefBondInstances) == 0x000008, "Member 'PyMarvelBondManager_OnBondCharacterRemove::RefBondInstances' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnBondCharacterRemove;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnGlobalCharacterRegister
 // 0x0008 (0x0008 - 0x0000)
@@ -92,9 +75,7 @@ struct PyMarvelBondManager_OnGlobalCharacterRegister final
 public:
 	class AActor*                                 Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_OnGlobalCharacterRegister) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnGlobalCharacterRegister");
-static_assert(sizeof(PyMarvelBondManager_OnGlobalCharacterRegister) == 0x000008, "Wrong size on PyMarvelBondManager_OnGlobalCharacterRegister");
-static_assert(offsetof(PyMarvelBondManager_OnGlobalCharacterRegister, Character) == 0x000000, "Member 'PyMarvelBondManager_OnGlobalCharacterRegister::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnGlobalCharacterRegister;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnGlobalActorReborn
 // 0x0010 (0x0010 - 0x0000)
@@ -104,10 +85,7 @@ public:
 	class AActor*                                 Instigator_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 RebornActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_OnGlobalActorReborn) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnGlobalActorReborn");
-static_assert(sizeof(PyMarvelBondManager_OnGlobalActorReborn) == 0x000010, "Wrong size on PyMarvelBondManager_OnGlobalActorReborn");
-static_assert(offsetof(PyMarvelBondManager_OnGlobalActorReborn, Instigator_0) == 0x000000, "Member 'PyMarvelBondManager_OnGlobalActorReborn::Instigator_0' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnGlobalActorReborn, RebornActor) == 0x000008, "Member 'PyMarvelBondManager_OnGlobalActorReborn::RebornActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnGlobalActorReborn;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnCharacterAttributeInited
 // 0x0008 (0x0008 - 0x0000)
@@ -116,26 +94,19 @@ struct PyMarvelBondManager_OnCharacterAttributeInited final
 public:
 	class AMarvelBaseCharacter*                   character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_OnCharacterAttributeInited) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnCharacterAttributeInited");
-static_assert(sizeof(PyMarvelBondManager_OnCharacterAttributeInited) == 0x000008, "Wrong size on PyMarvelBondManager_OnCharacterAttributeInited");
-static_assert(offsetof(PyMarvelBondManager_OnCharacterAttributeInited, character) == 0x000000, "Member 'PyMarvelBondManager_OnCharacterAttributeInited::character' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnCharacterAttributeInited;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnAssistKillCallback
-// 0x08D8 (0x08D8 - 0x0000)
+// 0x08F0 (0x08F0 - 0x0000)
 struct PyMarvelBondManager_OnAssistKillCallback final
 {
 public:
 	class AMarvelBaseCharacter*                   InTriggerCharacter;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0010(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FBondInstance                          InBondInstance;                                    // 0x07B0(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAttributeModifierParameter            ModifierParameter;                                 // 0x0010(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FBondInstance                          InBondInstance;                                    // 0x07C8(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnAssistKillCallback) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnAssistKillCallback");
-static_assert(sizeof(PyMarvelBondManager_OnAssistKillCallback) == 0x0008D8, "Wrong size on PyMarvelBondManager_OnAssistKillCallback");
-static_assert(offsetof(PyMarvelBondManager_OnAssistKillCallback, InTriggerCharacter) == 0x000000, "Member 'PyMarvelBondManager_OnAssistKillCallback::InTriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnAssistKillCallback, InTarget) == 0x000008, "Member 'PyMarvelBondManager_OnAssistKillCallback::InTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnAssistKillCallback, ModifierParameter) == 0x000010, "Member 'PyMarvelBondManager_OnAssistKillCallback::ModifierParameter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnAssistKillCallback, InBondInstance) == 0x0007B0, "Member 'PyMarvelBondManager_OnAssistKillCallback::InBondInstance' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnAssistKillCallback;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnReceiverTriggeredCallback
 // 0x0140 (0x0140 - 0x0000)
@@ -148,12 +119,7 @@ public:
 	class AMarvelBaseCharacter*                   InTarget;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FBondInstance                          InBondInstance;                                    // 0x0018(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnReceiverTriggeredCallback) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnReceiverTriggeredCallback");
-static_assert(sizeof(PyMarvelBondManager_OnReceiverTriggeredCallback) == 0x000140, "Wrong size on PyMarvelBondManager_OnReceiverTriggeredCallback");
-static_assert(offsetof(PyMarvelBondManager_OnReceiverTriggeredCallback, InTriggerCharacter) == 0x000000, "Member 'PyMarvelBondManager_OnReceiverTriggeredCallback::InTriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnReceiverTriggeredCallback, InTriggerAbilityID) == 0x000008, "Member 'PyMarvelBondManager_OnReceiverTriggeredCallback::InTriggerAbilityID' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnReceiverTriggeredCallback, InTarget) == 0x000010, "Member 'PyMarvelBondManager_OnReceiverTriggeredCallback::InTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnReceiverTriggeredCallback, InBondInstance) == 0x000018, "Member 'PyMarvelBondManager_OnReceiverTriggeredCallback::InBondInstance' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnReceiverTriggeredCallback;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.OnSenderTriggeredCallback
 // 0x0140 (0x0140 - 0x0000)
@@ -166,12 +132,7 @@ public:
 	class AMarvelBaseCharacter*                   InTarget;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FBondInstance                          InBondInstance;                                    // 0x0018(0x0128)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelBondManager_OnSenderTriggeredCallback) == 0x000008, "Wrong alignment on PyMarvelBondManager_OnSenderTriggeredCallback");
-static_assert(sizeof(PyMarvelBondManager_OnSenderTriggeredCallback) == 0x000140, "Wrong size on PyMarvelBondManager_OnSenderTriggeredCallback");
-static_assert(offsetof(PyMarvelBondManager_OnSenderTriggeredCallback, InTriggerCharacter) == 0x000000, "Member 'PyMarvelBondManager_OnSenderTriggeredCallback::InTriggerCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnSenderTriggeredCallback, InTriggerAbilityID) == 0x000008, "Member 'PyMarvelBondManager_OnSenderTriggeredCallback::InTriggerAbilityID' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnSenderTriggeredCallback, InTarget) == 0x000010, "Member 'PyMarvelBondManager_OnSenderTriggeredCallback::InTarget' has a wrong offset!");
-static_assert(offsetof(PyMarvelBondManager_OnSenderTriggeredCallback, InBondInstance) == 0x000018, "Member 'PyMarvelBondManager_OnSenderTriggeredCallback::InBondInstance' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_OnSenderTriggeredCallback;
 
 // PythonFunction PyMarvelBondManager.PyMarvelBondManager.TestBindEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -180,9 +141,7 @@ struct PyMarvelBondManager_TestBindEvent final
 public:
 	class APlayerState*                           InPS;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelBondManager_TestBindEvent) == 0x000008, "Wrong alignment on PyMarvelBondManager_TestBindEvent");
-static_assert(sizeof(PyMarvelBondManager_TestBindEvent) == 0x000008, "Wrong size on PyMarvelBondManager_TestBindEvent");
-static_assert(offsetof(PyMarvelBondManager_TestBindEvent, InPS) == 0x000000, "Member 'PyMarvelBondManager_TestBindEvent::InPS' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelBondManager_TestBindEvent;
 
 }
 

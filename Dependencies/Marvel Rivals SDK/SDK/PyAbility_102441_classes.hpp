@@ -12,8 +12,8 @@
 
 #include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1024_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1024_classes.hpp"
 
 
 namespace SDK
@@ -31,24 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102441">();
+		STATIC_CLASS_IMPL("PyConfig_102441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102441")
 	}
 	static class UPyConfig_102441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102441>();
 	}
 };
-static_assert(alignof(UPyConfig_102441) == 0x000008, "Wrong alignment on UPyConfig_102441");
-static_assert(sizeof(UPyConfig_102441) == 0x000108, "Wrong size on UPyConfig_102441");
-static_assert(offsetof(UPyConfig_102441, ExplosionScopeId) == 0x000098, "Member 'UPyConfig_102441::ExplosionScopeId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102441, IgnoredTags) == 0x0000A0, "Member 'UPyConfig_102441::IgnoredTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102441;
 
 // PythonClass PyAbility_102441.PyCue_Projectile_HitImpact_10244101
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05F0 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10244101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	int32                                         ExecuteAudioID;                                    // 0x05C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExecuteAudioID;                                    // 0x05E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -56,19 +57,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10244101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10244101")
 	}
 	static class UPyCue_Projectile_HitImpact_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10244101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10244101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10244101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10244101) == 0x0005D0, "Wrong size on UPyCue_Projectile_HitImpact_10244101");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10244101, ExecuteAudioID) == 0x0005C8, "Member 'UPyCue_Projectile_HitImpact_10244101::ExecuteAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10244101;
 
 // PythonClass PyAbility_102441.PyEffectiveComponent_10244101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10244101 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -77,35 +80,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10244101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10244101")
 	}
 	static class UPyEffectiveComponent_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10244101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10244101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10244101");
-static_assert(sizeof(UPyEffectiveComponent_10244101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10244101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10244101;
 
 // PythonClass PyAbility_102441.PyAbility_102441
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102441 : public UAbility_108
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102441">();
+		STATIC_CLASS_IMPL("PyAbility_102441")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102441")
 	}
 	static class UPyAbility_102441* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102441>();
 	}
 };
-static_assert(alignof(UPyAbility_102441) == 0x000008, "Wrong alignment on UPyAbility_102441");
-static_assert(sizeof(UPyAbility_102441) == 0x0029F8, "Wrong size on UPyAbility_102441");
+DUMPER7_ASSERTS_UPyAbility_102441;
 
 // PythonClass PyAbility_102441.PyProjectile_10244101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10244101 final : public AProjectile_10244101
 {
 public:
@@ -125,18 +134,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10244101">();
+		STATIC_CLASS_IMPL("PyProjectile_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10244101")
 	}
 	static class APyProjectile_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10244101>();
 	}
 };
-static_assert(alignof(APyProjectile_10244101) == 0x000010, "Wrong alignment on APyProjectile_10244101");
-static_assert(sizeof(APyProjectile_10244101) == 0x003B90, "Wrong size on APyProjectile_10244101");
+DUMPER7_ASSERTS_APyProjectile_10244101;
 
 // PythonClass PyAbility_102441.PyTraceComponent_10244101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10244101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -145,24 +157,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10244101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10244101")
 	}
 	static class UPyTraceComponent_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10244101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10244101) == 0x000010, "Wrong alignment on UPyTraceComponent_10244101");
-static_assert(sizeof(UPyTraceComponent_10244101) == 0x002200, "Wrong size on UPyTraceComponent_10244101");
+DUMPER7_ASSERTS_UPyTraceComponent_10244101;
 
 // PythonClass PyAbility_102441.PyCue_Projectile_Loop_10244101
-// 0x0010 (0x1140 - 0x1130)
+// 0x0010 (0x1150 - 0x1140)
 class APyCue_Projectile_Loop_10244101 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         HitCharacterFXAsset;                               // 0x1130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         HitSceneFXAsset;                                   // 0x1138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         HitCharacterFXAsset;                               // 0x1140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         HitSceneFXAsset;                                   // 0x1148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -171,20 +186,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10244101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10244101")
 	}
 	static class APyCue_Projectile_Loop_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10244101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10244101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10244101");
-static_assert(sizeof(APyCue_Projectile_Loop_10244101) == 0x001140, "Wrong size on APyCue_Projectile_Loop_10244101");
-static_assert(offsetof(APyCue_Projectile_Loop_10244101, HitCharacterFXAsset) == 0x001130, "Member 'APyCue_Projectile_Loop_10244101::HitCharacterFXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10244101, HitSceneFXAsset) == 0x001138, "Member 'APyCue_Projectile_Loop_10244101::HitSceneFXAsset' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10244101;
 
 // PythonClass PyAbility_102441.PyCue_Ability_Loop_10244101
-// 0x0000 (0x11F0 - 0x11F0)
+// 0x0000 (0x1200 - 0x1200)
 class APyCue_Ability_Loop_10244101 final : public ACue_Ability_Loop_10244101
 {
 public:
@@ -199,15 +215,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10244101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10244101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10244101")
 	}
 	static class APyCue_Ability_Loop_10244101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10244101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10244101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10244101");
-static_assert(sizeof(APyCue_Ability_Loop_10244101) == 0x0011F0, "Wrong size on APyCue_Ability_Loop_10244101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10244101;
 
 }
 

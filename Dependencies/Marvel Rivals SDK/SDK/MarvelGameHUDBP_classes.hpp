@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelGameHUDBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelGameHUDBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGameHUDBP_C")
 	}
 	static class AMarvelGameHUDBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelGameHUDBP_C>();
 	}
 };
-static_assert(alignof(AMarvelGameHUDBP_C) == 0x000010, "Wrong alignment on AMarvelGameHUDBP_C");
-static_assert(sizeof(AMarvelGameHUDBP_C) == 0x000970, "Wrong size on AMarvelGameHUDBP_C");
-static_assert(offsetof(AMarvelGameHUDBP_C, UberGraphFrame) == 0x000948, "Member 'AMarvelGameHUDBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelGameHUDBP_C, DefaultSceneRoot) == 0x000950, "Member 'AMarvelGameHUDBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelGameHUDBP_C, Class_RootWidget) == 0x000958, "Member 'AMarvelGameHUDBP_C::Class_RootWidget' has a wrong offset!");
-static_assert(offsetof(AMarvelGameHUDBP_C, Class_BattlePanel) == 0x000960, "Member 'AMarvelGameHUDBP_C::Class_BattlePanel' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelGameHUDBP_C;
 
 }
 

@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_105121.PyBuffAbility_120_10512180
-// 0x0108 (0x1478 - 0x1370)
+// 0x0158 (0x14E0 - 0x1388)
 class UPyBuffAbility_120_10512180 final : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FScopeBuffSpecInfo                     ExtraBuffSpec;                                     // 0x1370(0x0100)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         TriggerProbability;                                // 0x1470(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FScopeBuffSpecInfo                     ExtraBuffSpec;                                     // 0x1388(0x0150)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         TriggerProbability;                                // 0x14D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10512180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10512180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10512180")
 	}
 	static class UPyBuffAbility_120_10512180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10512180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10512180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10512180");
-static_assert(sizeof(UPyBuffAbility_120_10512180) == 0x001478, "Wrong size on UPyBuffAbility_120_10512180");
-static_assert(offsetof(UPyBuffAbility_120_10512180, ExtraBuffSpec) == 0x001370, "Member 'UPyBuffAbility_120_10512180::ExtraBuffSpec' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10512180, TriggerProbability) == 0x001470, "Member 'UPyBuffAbility_120_10512180::TriggerProbability' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10512180;
 
 }
 

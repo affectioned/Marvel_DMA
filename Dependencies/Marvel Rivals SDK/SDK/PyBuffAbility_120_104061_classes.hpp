@@ -16,14 +16,41 @@
 namespace SDK
 {
 
+// PythonClass PyBuffAbility_120_104061.PyBuffAbility_120_10406112
+// 0x0008 (0x1390 - 0x1388)
+class UPyBuffAbility_120_10406112 final : public UMarvelEffectGameplayAbility
+{
+public:
+	float                                         TimeToFallReduce;                                  // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void K2_ActivateAbility();
+	void OnAbilityActivate(int32 AbilityID);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10406112")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10406112")
+	}
+	static class UPyBuffAbility_120_10406112* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyBuffAbility_120_10406112>();
+	}
+};
+DUMPER7_ASSERTS_UPyBuffAbility_120_10406112;
+
 // PythonClass PyBuffAbility_120_104061.PyBuffAbility_120_10406111
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10406111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         MaxJumpTimesAdded;                                 // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldAdded;                                       // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShieldBuffID;                                      // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxJumpTimesAdded;                                 // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldAdded;                                       // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShieldBuffID;                                      // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,43 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10406111">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10406111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10406111")
 	}
 	static class UPyBuffAbility_120_10406111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10406111>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10406111) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10406111");
-static_assert(sizeof(UPyBuffAbility_120_10406111) == 0x001380, "Wrong size on UPyBuffAbility_120_10406111");
-static_assert(offsetof(UPyBuffAbility_120_10406111, MaxJumpTimesAdded) == 0x001370, "Member 'UPyBuffAbility_120_10406111::MaxJumpTimesAdded' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10406111, ShieldAdded) == 0x001374, "Member 'UPyBuffAbility_120_10406111::ShieldAdded' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10406111, ShieldBuffID) == 0x001378, "Member 'UPyBuffAbility_120_10406111::ShieldBuffID' has a wrong offset!");
-
-// PythonClass PyBuffAbility_120_104061.PyBuffAbility_120_10406112
-// 0x0008 (0x1378 - 0x1370)
-class UPyBuffAbility_120_10406112 final : public UMarvelEffectGameplayAbility
-{
-public:
-	float                                         TimeToFallReduce;                                  // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void K2_ActivateAbility();
-	void OnAbilityActivate(int32 AbilityID);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyBuffAbility_120_10406112">();
-	}
-	static class UPyBuffAbility_120_10406112* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyBuffAbility_120_10406112>();
-	}
-};
-static_assert(alignof(UPyBuffAbility_120_10406112) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10406112");
-static_assert(sizeof(UPyBuffAbility_120_10406112) == 0x001378, "Wrong size on UPyBuffAbility_120_10406112");
-static_assert(offsetof(UPyBuffAbility_120_10406112, TimeToFallReduce) == 0x001370, "Member 'UPyBuffAbility_120_10406112::TimeToFallReduce' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10406111;
 
 }
 

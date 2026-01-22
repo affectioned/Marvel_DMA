@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MaskImage_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MaskImage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MaskImage_C")
 	}
 	static class UWBP_MaskImage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MaskImage_C>();
 	}
 };
-static_assert(alignof(UWBP_MaskImage_C) == 0x000010, "Wrong alignment on UWBP_MaskImage_C");
-static_assert(sizeof(UWBP_MaskImage_C) == 0x000710, "Wrong size on UWBP_MaskImage_C");
-static_assert(offsetof(UWBP_MaskImage_C, Image_0) == 0x0006F0, "Member 'UWBP_MaskImage_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UWBP_MaskImage_C, Slot_Image) == 0x0006F8, "Member 'UWBP_MaskImage_C::Slot_Image' has a wrong offset!");
-static_assert(offsetof(UWBP_MaskImage_C, MatAlphaMask) == 0x000700, "Member 'UWBP_MaskImage_C::MatAlphaMask' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MaskImage_C;
 
 }
 

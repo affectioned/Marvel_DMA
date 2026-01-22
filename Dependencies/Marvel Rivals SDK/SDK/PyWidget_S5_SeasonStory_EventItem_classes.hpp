@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S5_SeasonStory_EventItem.PyWidget_S5_SeasonStory_EventItem
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_S5_SeasonStory_EventItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EventId;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsWhile;                                          // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C1[0x3];                                      // 0x05C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            LockedOrCompletedColor;                            // 0x05C4(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05D8(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 EventId, bool IsHovered)> OnEventHovered;                    // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 EventId)> OnEventUnlockAnim;                                 // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EventId;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsWhile;                                          // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C9[0x3];                                      // 0x05C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            LockedOrCompletedColor;                            // 0x05CC(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05E0(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F4[0x4];                                      // 0x05F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 EventId, bool IsHovered)> OnEventHovered;                    // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 EventId)> OnEventUnlockAnim;                                 // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,31 +42,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S5_SeasonStory_EventItem">();
+		STATIC_CLASS_IMPL("PyWidget_S5_SeasonStory_EventItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S5_SeasonStory_EventItem")
 	}
 	static class UPyWidget_S5_SeasonStory_EventItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S5_SeasonStory_EventItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S5_SeasonStory_EventItem) == 0x000008, "Wrong alignment on UPyWidget_S5_SeasonStory_EventItem");
-static_assert(sizeof(UPyWidget_S5_SeasonStory_EventItem) == 0x000620, "Wrong size on UPyWidget_S5_SeasonStory_EventItem");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, EventId) == 0x0005BC, "Member 'UPyWidget_S5_SeasonStory_EventItem::EventId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, bIsWhile) == 0x0005C0, "Member 'UPyWidget_S5_SeasonStory_EventItem::bIsWhile' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, LockedOrCompletedColor) == 0x0005C4, "Member 'UPyWidget_S5_SeasonStory_EventItem::LockedOrCompletedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, NormalColor) == 0x0005D8, "Member 'UPyWidget_S5_SeasonStory_EventItem::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, OnEventClicked) == 0x0005F0, "Member 'UPyWidget_S5_SeasonStory_EventItem::OnEventClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, OnEventHovered) == 0x000600, "Member 'UPyWidget_S5_SeasonStory_EventItem::OnEventHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem, OnEventUnlockAnim) == 0x000610, "Member 'UPyWidget_S5_SeasonStory_EventItem::OnEventUnlockAnim' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S5_SeasonStory_EventItem;
 
 // PythonClass PyWidget_S5_SeasonStory_EventItem.PyWidget_S5_SeasonStory_EventItem_Vx
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_S5_SeasonStory_EventItem_Vx final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EventId;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsWhile;                                          // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EventId;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsWhile;                                          // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -76,17 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S5_SeasonStory_EventItem_Vx">();
+		STATIC_CLASS_IMPL("PyWidget_S5_SeasonStory_EventItem_Vx")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S5_SeasonStory_EventItem_Vx")
 	}
 	static class UPyWidget_S5_SeasonStory_EventItem_Vx* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S5_SeasonStory_EventItem_Vx>();
 	}
 };
-static_assert(alignof(UPyWidget_S5_SeasonStory_EventItem_Vx) == 0x000008, "Wrong alignment on UPyWidget_S5_SeasonStory_EventItem_Vx");
-static_assert(sizeof(UPyWidget_S5_SeasonStory_EventItem_Vx) == 0x0005C8, "Wrong size on UPyWidget_S5_SeasonStory_EventItem_Vx");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem_Vx, EventId) == 0x0005BC, "Member 'UPyWidget_S5_SeasonStory_EventItem_Vx::EventId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S5_SeasonStory_EventItem_Vx, bIsWhile) == 0x0005C0, "Member 'UPyWidget_S5_SeasonStory_EventItem_Vx::bIsWhile' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S5_SeasonStory_EventItem_Vx;
 
 }
 

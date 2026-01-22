@@ -17,20 +17,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_CrackLoading_VX.PyWidget_Activity151_CrackLoading_VX
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_Activity151_CrackLoading_VX final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UBinkMediaPlayer*                       BeforeBirth_Player;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       BeforeBirth_MaskPlayer;                            // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       AfterBirth_Player;                                 // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaPlayer*                       AfterBirth_MaskPlayer;                             // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      Material_BeforeBirth;                              // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      Material_AfterBirth;                               // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnterLoadingTime;                                  // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_CrackLoading;                              // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Image_Video;                                       // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       BeforeBirth_Player;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       BeforeBirth_MaskPlayer;                            // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       AfterBirth_Player;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       AfterBirth_MaskPlayer;                             // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      Material_BeforeBirth;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      Material_AfterBirth;                               // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnterLoadingTime;                                  // 0x0630(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_634[0x4];                                      // 0x0634(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_CrackLoading;                              // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Image_Video;                                       // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_CrackLoading_VX">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_CrackLoading_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_CrackLoading_VX")
 	}
 	static class UPyWidget_Activity151_CrackLoading_VX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_CrackLoading_VX>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_CrackLoading_VX) == 0x000008, "Wrong alignment on UPyWidget_Activity151_CrackLoading_VX");
-static_assert(sizeof(UPyWidget_Activity151_CrackLoading_VX) == 0x000640, "Wrong size on UPyWidget_Activity151_CrackLoading_VX");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, BeforeBirth_Player) == 0x0005F8, "Member 'UPyWidget_Activity151_CrackLoading_VX::BeforeBirth_Player' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, BeforeBirth_MaskPlayer) == 0x000600, "Member 'UPyWidget_Activity151_CrackLoading_VX::BeforeBirth_MaskPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, AfterBirth_Player) == 0x000608, "Member 'UPyWidget_Activity151_CrackLoading_VX::AfterBirth_Player' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, AfterBirth_MaskPlayer) == 0x000610, "Member 'UPyWidget_Activity151_CrackLoading_VX::AfterBirth_MaskPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, Material_BeforeBirth) == 0x000618, "Member 'UPyWidget_Activity151_CrackLoading_VX::Material_BeforeBirth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, Material_AfterBirth) == 0x000620, "Member 'UPyWidget_Activity151_CrackLoading_VX::Material_AfterBirth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, EnterLoadingTime) == 0x000628, "Member 'UPyWidget_Activity151_CrackLoading_VX::EnterLoadingTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, AkEvent_CrackLoading) == 0x000630, "Member 'UPyWidget_Activity151_CrackLoading_VX::AkEvent_CrackLoading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity151_CrackLoading_VX, Image_Video) == 0x000638, "Member 'UPyWidget_Activity151_CrackLoading_VX::Image_Video' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_CrackLoading_VX;
 
 }
 

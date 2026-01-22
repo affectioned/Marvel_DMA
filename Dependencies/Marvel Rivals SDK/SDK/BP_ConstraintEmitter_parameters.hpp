@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_ConstraintEmitter.BP_ConstraintEmitter_C.SetWebRotation
-// 0x0268 (0x0268 - 0x0000)
+// 0x0280 (0x0280 - 0x0000)
 struct BP_ConstraintEmitter_C_SetWebRotation final
 {
 public:
@@ -27,16 +27,9 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0078(0x01F0)(ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0078(0x0208)(ContainsInstancedReference)
 };
-static_assert(alignof(BP_ConstraintEmitter_C_SetWebRotation) == 0x000008, "Wrong alignment on BP_ConstraintEmitter_C_SetWebRotation");
-static_assert(sizeof(BP_ConstraintEmitter_C_SetWebRotation) == 0x000268, "Wrong size on BP_ConstraintEmitter_C_SetWebRotation");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000000, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000018, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_Normal_ReturnValue) == 0x000048, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000060, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_SetWebRotation, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000078, "Member 'BP_ConstraintEmitter_C_SetWebRotation::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ConstraintEmitter_C_SetWebRotation;
 
 // Function BP_ConstraintEmitter.BP_ConstraintEmitter_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +38,7 @@ struct BP_ConstraintEmitter_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ConstraintEmitter_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_ConstraintEmitter_C_ReceiveTick");
-static_assert(sizeof(BP_ConstraintEmitter_C_ReceiveTick) == 0x000004, "Wrong size on BP_ConstraintEmitter_C_ReceiveTick");
-static_assert(offsetof(BP_ConstraintEmitter_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_ConstraintEmitter_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ConstraintEmitter_C_ReceiveTick;
 
 // Function BP_ConstraintEmitter.BP_ConstraintEmitter_C.GetAimRotation
 // 0x0090 (0x0090 - 0x0000)
@@ -61,14 +52,7 @@ public:
 	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ConstraintEmitter_C_GetAimRotation) == 0x000008, "Wrong alignment on BP_ConstraintEmitter_C_GetAimRotation");
-static_assert(sizeof(BP_ConstraintEmitter_C_GetAimRotation) == 0x000090, "Wrong size on BP_ConstraintEmitter_C_GetAimRotation");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, ReturnValue) == 0x000000, "Member 'BP_ConstraintEmitter_C_GetAimRotation::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000018, "Member 'BP_ConstraintEmitter_C_GetAimRotation::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000030, "Member 'BP_ConstraintEmitter_C_GetAimRotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000048, "Member 'BP_ConstraintEmitter_C_GetAimRotation::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, CallFunc_Normal_ReturnValue) == 0x000060, "Member 'BP_ConstraintEmitter_C_GetAimRotation::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimRotation, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000078, "Member 'BP_ConstraintEmitter_C_GetAimRotation::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ConstraintEmitter_C_GetAimRotation;
 
 // Function BP_ConstraintEmitter.BP_ConstraintEmitter_C.GetAimLength
 // 0x0060 (0x0060 - 0x0000)
@@ -82,14 +66,7 @@ public:
 	double                                        CallFunc_VSize_ReturnValue;                        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ConstraintEmitter_C_GetAimLength) == 0x000008, "Wrong alignment on BP_ConstraintEmitter_C_GetAimLength");
-static_assert(sizeof(BP_ConstraintEmitter_C_GetAimLength) == 0x000060, "Wrong size on BP_ConstraintEmitter_C_GetAimLength");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, ReturnValue) == 0x000000, "Member 'BP_ConstraintEmitter_C_GetAimLength::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000008, "Member 'BP_ConstraintEmitter_C_GetAimLength::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'BP_ConstraintEmitter_C_GetAimLength::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000038, "Member 'BP_ConstraintEmitter_C_GetAimLength::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, CallFunc_VSize_ReturnValue) == 0x000050, "Member 'BP_ConstraintEmitter_C_GetAimLength::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_GetAimLength, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000058, "Member 'BP_ConstraintEmitter_C_GetAimLength::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ConstraintEmitter_C_GetAimLength;
 
 // Function BP_ConstraintEmitter.BP_ConstraintEmitter_C.ExecuteUbergraph_BP_ConstraintEmitter
 // 0x0108 (0x0108 - 0x0000)
@@ -126,34 +103,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter) == 0x000008, "Wrong alignment on BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter");
-static_assert(sizeof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter) == 0x000108, "Wrong size on BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, EntryPoint) == 0x000000, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_MakeVector_ReturnValue) == 0x000008, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_MakeVector_ReturnValue_1) == 0x000020, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, K2Node_DynamicCast_AsBP_Physics_Constraint_Limit) == 0x000038, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::K2Node_DynamicCast_AsBP_Physics_Constraint_Limit' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, K2Node_DynamicCast_AsBP_Physics_Constraint_Limit_1) == 0x000048, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::K2Node_DynamicCast_AsBP_Physics_Constraint_Limit_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, K2Node_Event_DeltaSeconds) == 0x000054, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000058, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000060, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000068, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000070, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000078, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000080, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000088, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000A8, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000C0, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_VSize_ReturnValue) == 0x0000D8, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x0000E0, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x0000E8, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1) == 0x0000F0, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_Delay_Duration_ImplicitCast) == 0x0000F8, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0000FC, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000100, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000104, "Member 'BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
+DUMPER7_ASSERTS_BP_ConstraintEmitter_C_ExecuteUbergraph_BP_ConstraintEmitter;
 
 }
 

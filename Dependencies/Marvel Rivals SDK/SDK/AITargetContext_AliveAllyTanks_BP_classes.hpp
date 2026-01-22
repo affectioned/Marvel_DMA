@@ -23,15 +23,18 @@ class UAITargetContext_AliveAllyTanks_BP_C final : public UAITargetContext_Alive
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITargetContext_AliveAllyTanks_BP_C">();
+		BP_STATIC_CLASS_IMPL("AITargetContext_AliveAllyTanks_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_AliveAllyTanks_BP_C")
 	}
 	static class UAITargetContext_AliveAllyTanks_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITargetContext_AliveAllyTanks_BP_C>();
 	}
 };
-static_assert(alignof(UAITargetContext_AliveAllyTanks_BP_C) == 0x000008, "Wrong alignment on UAITargetContext_AliveAllyTanks_BP_C");
-static_assert(sizeof(UAITargetContext_AliveAllyTanks_BP_C) == 0x000040, "Wrong size on UAITargetContext_AliveAllyTanks_BP_C");
+DUMPER7_ASSERTS_UAITargetContext_AliveAllyTanks_BP_C;
 
 }
 

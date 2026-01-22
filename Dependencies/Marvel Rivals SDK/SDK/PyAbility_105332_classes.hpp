@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105332.PyAbility_105332
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105332 : public UMarvelGameplayAbility
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105332">();
+		STATIC_CLASS_IMPL("PyAbility_105332")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105332")
 	}
 	static class UPyAbility_105332* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105332>();
 	}
 };
-static_assert(alignof(UPyAbility_105332) == 0x000008, "Wrong alignment on UPyAbility_105332");
-static_assert(sizeof(UPyAbility_105332) == 0x0029F0, "Wrong size on UPyAbility_105332");
+DUMPER7_ASSERTS_UPyAbility_105332;
 
 }
 

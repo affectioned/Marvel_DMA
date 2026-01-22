@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_102930.PyBuffAbility_10130_10291030
-// 0x0078 (0x1AA8 - 0x1A30)
+// 0x0078 (0x1AC0 - 0x1A48)
 class UPyBuffAbility_10130_10291030 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FGameplayTag                           SculptTag;                                         // 0x1A30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A3C[0x4];                                     // 0x1A3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGameplayTag, int32>              BDLevelTags;                                       // 0x1A40(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         DoomBuff;                                          // 0x1A90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           DoomTag;                                           // 0x1A94(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DoomPvEEffect;                                     // 0x1AA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SculptTag;                                         // 0x1A48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A54[0x4];                                     // 0x1A54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, int32>              BDLevelTags;                                       // 0x1A58(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         DoomBuff;                                          // 0x1AA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DoomTag;                                           // 0x1AAC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DoomPvEEffect;                                     // 0x1AB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10291030">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10291030")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10291030")
 	}
 	static class UPyBuffAbility_10130_10291030* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10291030>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10291030) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10291030");
-static_assert(sizeof(UPyBuffAbility_10130_10291030) == 0x001AA8, "Wrong size on UPyBuffAbility_10130_10291030");
-static_assert(offsetof(UPyBuffAbility_10130_10291030, SculptTag) == 0x001A30, "Member 'UPyBuffAbility_10130_10291030::SculptTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10291030, BDLevelTags) == 0x001A40, "Member 'UPyBuffAbility_10130_10291030::BDLevelTags' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10291030, DoomBuff) == 0x001A90, "Member 'UPyBuffAbility_10130_10291030::DoomBuff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10291030, DoomTag) == 0x001A94, "Member 'UPyBuffAbility_10130_10291030::DoomTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10291030, DoomPvEEffect) == 0x001AA0, "Member 'UPyBuffAbility_10130_10291030::DoomPvEEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10291030;
 
 }
 

@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_HeroName.WBP_Common_HeroName_C
-// 0x0010 (0x0930 - 0x0920)
+// 0x0010 (0x0940 - 0x0930)
 class UWBP_Common_HeroName_C final : public UPyWidget_Common_HeroNameText
 {
 public:
-	class UWBP_Common_HeroName_Text_C*            WBP_Common_HeroName_Text;                          // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroName_Text_C*            WBP_Common_HeroName_Text;                          // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_HeroName_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_HeroName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_HeroName_C")
 	}
 	static class UWBP_Common_HeroName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_HeroName_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_HeroName_C) == 0x000010, "Wrong alignment on UWBP_Common_HeroName_C");
-static_assert(sizeof(UWBP_Common_HeroName_C) == 0x000930, "Wrong size on UWBP_Common_HeroName_C");
-static_assert(offsetof(UWBP_Common_HeroName_C, WBP_Common_HeroName_Text) == 0x000920, "Member 'UWBP_Common_HeroName_C::WBP_Common_HeroName_Text' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_HeroName_C;
 
 }
 

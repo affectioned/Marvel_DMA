@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyWidget_CommonTipsBase_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Common_NameTips.PyWidget_Common_NameTips
-// 0x01B8 (0x0790 - 0x05D8)
+// 0x01B8 (0x0798 - 0x05E0)
 class UPyWidget_Common_NameTips : public UPyWidget_CommonTipsBase
 {
 public:
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          LeftMouseActionData;                               // 0x05D8(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          MiddleMouseActionData;                             // 0x0630(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          RightMouseActionData;                              // 0x0688(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          MouseWheelActionData;                              // 0x06E0(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          ConsoleActionData;                                 // 0x0738(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          LeftMouseActionData;                               // 0x05E0(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          MiddleMouseActionData;                             // 0x0638(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          RightMouseActionData;                              // 0x0690(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          MouseWheelActionData;                              // 0x06E8(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          ConsoleActionData;                                 // 0x0740(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NameTips">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NameTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NameTips")
 	}
 	static class UPyWidget_Common_NameTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NameTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NameTips) == 0x000008, "Wrong alignment on UPyWidget_Common_NameTips");
-static_assert(sizeof(UPyWidget_Common_NameTips) == 0x000790, "Wrong size on UPyWidget_Common_NameTips");
-static_assert(offsetof(UPyWidget_Common_NameTips, LeftMouseActionData) == 0x0005D8, "Member 'UPyWidget_Common_NameTips::LeftMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NameTips, MiddleMouseActionData) == 0x000630, "Member 'UPyWidget_Common_NameTips::MiddleMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NameTips, RightMouseActionData) == 0x000688, "Member 'UPyWidget_Common_NameTips::RightMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NameTips, MouseWheelActionData) == 0x0006E0, "Member 'UPyWidget_Common_NameTips::MouseWheelActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NameTips, ConsoleActionData) == 0x000738, "Member 'UPyWidget_Common_NameTips::ConsoleActionData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NameTips;
 
 }
 

@@ -34,15 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HardwareMonitorBPLibrary">();
+		STATIC_CLASS_IMPL("HardwareMonitorBPLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HardwareMonitorBPLibrary")
 	}
 	static class UHardwareMonitorBPLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHardwareMonitorBPLibrary>();
 	}
 };
-static_assert(alignof(UHardwareMonitorBPLibrary) == 0x000008, "Wrong alignment on UHardwareMonitorBPLibrary");
-static_assert(sizeof(UHardwareMonitorBPLibrary) == 0x000030, "Wrong size on UHardwareMonitorBPLibrary");
+DUMPER7_ASSERTS_UHardwareMonitorBPLibrary;
 
 }
 

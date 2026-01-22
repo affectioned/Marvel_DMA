@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_BattlePass_PropView">();
+		STATIC_CLASS_IMPL("PyLevelController_BattlePass_PropView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_BattlePass_PropView")
 	}
 	static class APyLevelController_BattlePass_PropView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_BattlePass_PropView>();
 	}
 };
-static_assert(alignof(APyLevelController_BattlePass_PropView) == 0x000010, "Wrong alignment on APyLevelController_BattlePass_PropView");
-static_assert(sizeof(APyLevelController_BattlePass_PropView) == 0x000770, "Wrong size on APyLevelController_BattlePass_PropView");
-static_assert(offsetof(APyLevelController_BattlePass_PropView, LS_BattlePass_FadeIn) == 0x0006E0, "Member 'APyLevelController_BattlePass_PropView::LS_BattlePass_FadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass_PropView, OnLSPropViewFadeInFinished) == 0x000760, "Member 'APyLevelController_BattlePass_PropView::OnLSPropViewFadeInFinished' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_BattlePass_PropView;
 
 }
 

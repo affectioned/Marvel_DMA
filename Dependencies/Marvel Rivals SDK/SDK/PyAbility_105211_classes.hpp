@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105211.PyAbility_105211
-// 0x0000 (0x2AB8 - 0x2AB8)
+// 0x0000 (0x2B08 - 0x2B08)
 class UPyAbility_105211 : public UMarvelAbility_DoubleJump
 {
 public:
@@ -35,18 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105211">();
+		STATIC_CLASS_IMPL("PyAbility_105211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105211")
 	}
 	static class UPyAbility_105211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105211>();
 	}
 };
-static_assert(alignof(UPyAbility_105211) == 0x000008, "Wrong alignment on UPyAbility_105211");
-static_assert(sizeof(UPyAbility_105211) == 0x002AB8, "Wrong size on UPyAbility_105211");
+DUMPER7_ASSERTS_UPyAbility_105211;
 
 // PythonClass PyAbility_105211.PyUIController_105211
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_105211 final : public UUIC_Ability
 {
 public:
@@ -55,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_105211">();
+		STATIC_CLASS_IMPL("PyUIController_105211")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_105211")
 	}
 	static class UPyUIController_105211* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_105211>();
 	}
 };
-static_assert(alignof(UPyUIController_105211) == 0x000008, "Wrong alignment on UPyUIController_105211");
-static_assert(sizeof(UPyUIController_105211) == 0x000F10, "Wrong size on UPyUIController_105211");
+DUMPER7_ASSERTS_UPyUIController_105211;
 
 }
 

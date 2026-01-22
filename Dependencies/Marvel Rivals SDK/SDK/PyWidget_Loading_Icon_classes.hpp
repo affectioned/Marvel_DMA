@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_Icon.PyWidget_Loading_Icon
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Loading_Icon : public UMarvelUserWidget
 {
 public:
-	class UMarvelTextBlock*                       Text_Loading_Progress;                             // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Loading;                                      // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Loading_Progress;                             // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Loading;                                      // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_Icon")
 	}
 	static class UPyWidget_Loading_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_Icon) == 0x000008, "Wrong alignment on UPyWidget_Loading_Icon");
-static_assert(sizeof(UPyWidget_Loading_Icon) == 0x000578, "Wrong size on UPyWidget_Loading_Icon");
-static_assert(offsetof(UPyWidget_Loading_Icon, Text_Loading_Progress) == 0x000568, "Member 'UPyWidget_Loading_Icon::Text_Loading_Progress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_Icon, Text_Loading) == 0x000570, "Member 'UPyWidget_Loading_Icon::Text_Loading' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_Icon;
 
 }
 

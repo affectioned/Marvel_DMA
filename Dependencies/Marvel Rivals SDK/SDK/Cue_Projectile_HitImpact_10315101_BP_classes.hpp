@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Projectile_HitImpact_10315101_BP.Cue_Projectile_HitImpact_10315101_BP_C
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UCue_Projectile_HitImpact_10315101_BP_C final : public UMarvelCueNotify_HitImpact
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Projectile_HitImpact_10315101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Projectile_HitImpact_10315101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Projectile_HitImpact_10315101_BP_C")
 	}
 	static class UCue_Projectile_HitImpact_10315101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_Projectile_HitImpact_10315101_BP_C>();
 	}
 };
-static_assert(alignof(UCue_Projectile_HitImpact_10315101_BP_C) == 0x000008, "Wrong alignment on UCue_Projectile_HitImpact_10315101_BP_C");
-static_assert(sizeof(UCue_Projectile_HitImpact_10315101_BP_C) == 0x0005C8, "Wrong size on UCue_Projectile_HitImpact_10315101_BP_C");
+DUMPER7_ASSERTS_UCue_Projectile_HitImpact_10315101_BP_C;
 
 }
 

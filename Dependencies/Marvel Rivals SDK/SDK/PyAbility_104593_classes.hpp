@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104593.PyCue_Summoned_Loop_10459301
-// 0x0000 (0x1210 - 0x1210)
+// 0x0000 (0x1270 - 0x1270)
 class APyCue_Summoned_Loop_10459301 final : public APyCue_Summoner_Loop_10455101
 {
 public:
@@ -29,41 +29,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoned_Loop_10459301">();
+		STATIC_CLASS_IMPL("PyCue_Summoned_Loop_10459301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoned_Loop_10459301")
 	}
 	static class APyCue_Summoned_Loop_10459301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoned_Loop_10459301>();
 	}
 };
-static_assert(alignof(APyCue_Summoned_Loop_10459301) == 0x000010, "Wrong alignment on APyCue_Summoned_Loop_10459301");
-static_assert(sizeof(APyCue_Summoned_Loop_10459301) == 0x001210, "Wrong size on APyCue_Summoned_Loop_10459301");
+DUMPER7_ASSERTS_APyCue_Summoned_Loop_10459301;
 
 // PythonClass PyAbility_104593.PyConfig_104593
-// 0x03A0 (0x1AD0 - 0x1730)
+// 0x04E0 (0x1F60 - 0x1A80)
 class UPyConfig_104593 final : public UPyConfig_104551
 {
 public:
-	struct FMarvelTraceRule                       KillTraceRule;                                     // 0x1728(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         SummonedID;                                        // 0x1AC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       KillTraceRule;                                     // 0x1A78(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         SummonedID;                                        // 0x1F50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104593">();
+		STATIC_CLASS_IMPL("PyConfig_104593")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104593")
 	}
 	static class UPyConfig_104593* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104593>();
 	}
 };
-static_assert(alignof(UPyConfig_104593) == 0x000010, "Wrong alignment on UPyConfig_104593");
-static_assert(sizeof(UPyConfig_104593) == 0x001AD0, "Wrong size on UPyConfig_104593");
-static_assert(offsetof(UPyConfig_104593, KillTraceRule) == 0x001728, "Member 'UPyConfig_104593::KillTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104593, SummonedID) == 0x001AC0, "Member 'UPyConfig_104593::SummonedID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104593;
 
 // PythonClass PyAbility_104593.PyAbility_104593
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104593 : public UMarvelGameplayAbility
 {
 public:
@@ -83,15 +87,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104593">();
+		STATIC_CLASS_IMPL("PyAbility_104593")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104593")
 	}
 	static class UPyAbility_104593* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104593>();
 	}
 };
-static_assert(alignof(UPyAbility_104593) == 0x000008, "Wrong alignment on UPyAbility_104593");
-static_assert(sizeof(UPyAbility_104593) == 0x0029F0, "Wrong size on UPyAbility_104593");
+DUMPER7_ASSERTS_UPyAbility_104593;
 
 }
 

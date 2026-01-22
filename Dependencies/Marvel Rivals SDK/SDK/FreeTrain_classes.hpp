@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFreeTrainHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFreeTrainHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFreeTrainHandler")
 	}
 	static class UUISettingEntryFreeTrainHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFreeTrainHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFreeTrainHandler) == 0x000008, "Wrong alignment on UUISettingEntryFreeTrainHandler");
-static_assert(sizeof(UUISettingEntryFreeTrainHandler) == 0x000030, "Wrong size on UUISettingEntryFreeTrainHandler");
+DUMPER7_ASSERTS_UUISettingEntryFreeTrainHandler;
 
 }
 

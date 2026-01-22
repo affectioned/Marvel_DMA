@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_PlayerButton">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_PlayerButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_PlayerButton")
 	}
 	static class UPyWidget_Replay_PlayerButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_PlayerButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_PlayerButton) == 0x000008, "Wrong alignment on UPyWidget_Replay_PlayerButton");
-static_assert(sizeof(UPyWidget_Replay_PlayerButton) == 0x000400, "Wrong size on UPyWidget_Replay_PlayerButton");
-static_assert(offsetof(UPyWidget_Replay_PlayerButton, AkEvent_OnButtonPressed) == 0x0003D0, "Member 'UPyWidget_Replay_PlayerButton::AkEvent_OnButtonPressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerButton, BlueSideColor) == 0x0003D8, "Member 'UPyWidget_Replay_PlayerButton::BlueSideColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_PlayerButton, RedSideColor) == 0x0003EC, "Member 'UPyWidget_Replay_PlayerButton::RedSideColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_PlayerButton;
 
 }
 

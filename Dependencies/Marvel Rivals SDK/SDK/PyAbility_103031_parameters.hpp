@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10303101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10303101_WhileActiveFX");
-static_assert(sizeof(PyCue_Ability_Loop_10303101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10303101_WhileActiveFX");
-static_assert(offsetof(PyCue_Ability_Loop_10303101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10303101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10303101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10303101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10303101_WhileActiveFX;
 
 }
 

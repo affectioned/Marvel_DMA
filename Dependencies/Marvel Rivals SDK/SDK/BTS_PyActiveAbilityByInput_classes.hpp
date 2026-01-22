@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "PyBTNodeBase_classes.hpp"
 #include "MarvelAI_structs.hpp"
+#include "PyBTNodeBase_classes.hpp"
 
 
 namespace SDK
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyActiveAbilityByInput">();
+		STATIC_CLASS_IMPL("BTS_PyActiveAbilityByInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyActiveAbilityByInput")
 	}
 	static class UBTS_PyActiveAbilityByInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyActiveAbilityByInput>();
 	}
 };
-static_assert(alignof(UBTS_PyActiveAbilityByInput) == 0x000008, "Wrong alignment on UBTS_PyActiveAbilityByInput");
-static_assert(sizeof(UBTS_PyActiveAbilityByInput) == 0x0000C8, "Wrong size on UBTS_PyActiveAbilityByInput");
-static_assert(offsetof(UBTS_PyActiveAbilityByInput, Keys) == 0x0000A8, "Member 'UBTS_PyActiveAbilityByInput::Keys' has a wrong offset!");
-static_assert(offsetof(UBTS_PyActiveAbilityByInput, PressDuration) == 0x0000B8, "Member 'UBTS_PyActiveAbilityByInput::PressDuration' has a wrong offset!");
-static_assert(offsetof(UBTS_PyActiveAbilityByInput, CoolDownDuration) == 0x0000C0, "Member 'UBTS_PyActiveAbilityByInput::CoolDownDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyActiveAbilityByInput;
 
 }
 

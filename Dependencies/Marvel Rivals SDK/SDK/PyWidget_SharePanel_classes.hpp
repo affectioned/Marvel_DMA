@@ -18,13 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SharePanel.PyWidget_SharePanel
-// 0x0030 (0x0640 - 0x0610)
+// 0x0040 (0x0658 - 0x0618)
 class UPyWidget_SharePanel final : public UPyWidget_OnlineVideo
 {
 public:
-	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PlayTipsStyle;                                     // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                StopTipsStyle;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PlayTipsStyle;                                     // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                StopTipsStyle;                                     // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                DownloadStyle;                                     // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SharePanel">();
+		STATIC_CLASS_IMPL("PyWidget_SharePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SharePanel")
 	}
 	static class UPyWidget_SharePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SharePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SharePanel) == 0x000008, "Wrong alignment on UPyWidget_SharePanel");
-static_assert(sizeof(UPyWidget_SharePanel) == 0x000640, "Wrong size on UPyWidget_SharePanel");
-static_assert(offsetof(UPyWidget_SharePanel, ReturnTipsStyle) == 0x000610, "Member 'UPyWidget_SharePanel::ReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SharePanel, PlayTipsStyle) == 0x000620, "Member 'UPyWidget_SharePanel::PlayTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SharePanel, StopTipsStyle) == 0x000630, "Member 'UPyWidget_SharePanel::StopTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SharePanel;
 
 }
 

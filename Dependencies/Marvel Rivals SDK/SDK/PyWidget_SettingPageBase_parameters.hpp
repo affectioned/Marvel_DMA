@@ -21,9 +21,7 @@ struct PyWidget_SettingPageBase_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SettingPageBase_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SettingPageBase_PreConstruct");
-static_assert(sizeof(PyWidget_SettingPageBase_PreConstruct) == 0x000001, "Wrong size on PyWidget_SettingPageBase_PreConstruct");
-static_assert(offsetof(PyWidget_SettingPageBase_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SettingPageBase_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SettingPageBase_PreConstruct;
 
 // PythonFunction PyWidget_SettingPageBase.PyWidget_SettingPageBase.GetRestoringTips
 // 0x0018 (0x0018 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_SettingPageBase_GetRestoringTips final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_SettingPageBase_GetRestoringTips) == 0x000008, "Wrong alignment on PyWidget_SettingPageBase_GetRestoringTips");
-static_assert(sizeof(PyWidget_SettingPageBase_GetRestoringTips) == 0x000018, "Wrong size on PyWidget_SettingPageBase_GetRestoringTips");
-static_assert(offsetof(PyWidget_SettingPageBase_GetRestoringTips, ReturnValue) == 0x000000, "Member 'PyWidget_SettingPageBase_GetRestoringTips::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SettingPageBase_GetRestoringTips;
 
 }
 

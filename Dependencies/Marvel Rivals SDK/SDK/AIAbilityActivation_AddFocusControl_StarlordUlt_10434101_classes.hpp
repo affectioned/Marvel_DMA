@@ -23,15 +23,18 @@ class UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C final : public
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C")
 	}
 	static class UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C");
-static_assert(sizeof(UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C) == 0x000048, "Wrong size on UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_AddFocusControl_StarlordUlt_10434101_C;
 
 }
 

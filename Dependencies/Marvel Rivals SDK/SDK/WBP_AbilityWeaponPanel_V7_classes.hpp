@@ -17,45 +17,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityWeaponPanel_V7.WBP_AbilityWeaponPanel_V7_C
-// 0x0058 (0x0628 - 0x05D0)
+// 0x0058 (0x0630 - 0x05D8)
 class UWBP_AbilityWeaponPanel_V7_C final : public UPyWidget_AbilityWeaponStatusPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_Faction;                                      // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_Ability_Additional;                           // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_Ability_Normal;                               // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Ability_Beginner_Vx;                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Weapon_Beginner_Vx;                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPyBattleScaleBox*                      ScaleBox_HeroHead;                                 // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             Slot_Ultimate;                                     // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_PhysicsSkillStatus_V7_C*   WBP_Ability_PhysicsSkillStatus_V7_4;               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_Ultimate_V7_C*             WBP_Ability_Ultimate_V7;                           // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ability_Weapon_V7_C*               WBP_Weapon;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Faction;                                      // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Ability_Additional;                           // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Ability_Normal;                               // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Ability_Beginner_Vx;                       // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Weapon_Beginner_Vx;                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPyBattleScaleBox*                      ScaleBox_HeroHead;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             Slot_Ultimate;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_PhysicsSkillStatus_V7_C*   WBP_Ability_PhysicsSkillStatus_V7_4;               // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_Ultimate_V7_C*             WBP_Ability_Ultimate_V7;                           // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ability_Weapon_V7_C*               WBP_Weapon;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityWeaponPanel_V7_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityWeaponPanel_V7_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityWeaponPanel_V7_C")
 	}
 	static class UWBP_AbilityWeaponPanel_V7_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityWeaponPanel_V7_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityWeaponPanel_V7_C) == 0x000008, "Wrong alignment on UWBP_AbilityWeaponPanel_V7_C");
-static_assert(sizeof(UWBP_AbilityWeaponPanel_V7_C) == 0x000628, "Wrong size on UWBP_AbilityWeaponPanel_V7_C");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, Anim_Faction) == 0x0005D0, "Member 'UWBP_AbilityWeaponPanel_V7_C::Anim_Faction' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, HBox_Ability_Additional) == 0x0005D8, "Member 'UWBP_AbilityWeaponPanel_V7_C::HBox_Ability_Additional' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, HBox_Ability_Normal) == 0x0005E0, "Member 'UWBP_AbilityWeaponPanel_V7_C::HBox_Ability_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, Img_Line) == 0x0005E8, "Member 'UWBP_AbilityWeaponPanel_V7_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, Overlay_Ability_Beginner_Vx) == 0x0005F0, "Member 'UWBP_AbilityWeaponPanel_V7_C::Overlay_Ability_Beginner_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, Overlay_Weapon_Beginner_Vx) == 0x0005F8, "Member 'UWBP_AbilityWeaponPanel_V7_C::Overlay_Weapon_Beginner_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, ScaleBox_HeroHead) == 0x000600, "Member 'UWBP_AbilityWeaponPanel_V7_C::ScaleBox_HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, Slot_Ultimate) == 0x000608, "Member 'UWBP_AbilityWeaponPanel_V7_C::Slot_Ultimate' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, WBP_Ability_PhysicsSkillStatus_V7_4) == 0x000610, "Member 'UWBP_AbilityWeaponPanel_V7_C::WBP_Ability_PhysicsSkillStatus_V7_4' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, WBP_Ability_Ultimate_V7) == 0x000618, "Member 'UWBP_AbilityWeaponPanel_V7_C::WBP_Ability_Ultimate_V7' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityWeaponPanel_V7_C, WBP_Weapon) == 0x000620, "Member 'UWBP_AbilityWeaponPanel_V7_C::WBP_Weapon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityWeaponPanel_V7_C;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_Activity147_Top_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Mission_Activity147_Top.PyWidget_Mission_Activity147_Top.OnBtnRuleNavLeft
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft) == 0x000008, "Wrong alignment on PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft");
-static_assert(sizeof(PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft) == 0x000010, "Wrong size on PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft");
-static_assert(offsetof(PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft, Navigation_0) == 0x000000, "Member 'PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft, ReturnValue) == 0x000008, "Member 'PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mission_Activity147_Top_OnBtnRuleNavLeft;
 
 }
 

@@ -15,12 +15,14 @@ namespace SDK
 {
 
 // PythonEnum PyWidget_Lobby_NavigationBar_Button.EStoreTagType
-// NumValues: 0x0003
+// NumValues: 0x0005
 enum class EStoreTagType : uint8
 {
 	FreeTag                                  = 1,
 	Activity155Tag                           = 2,
-	EStoreTagType_MAX                        = 3,
+	WinterResale                             = 3,
+	Lottery                                  = 4,
+	EStoreTagType_MAX                        = 5,
 };
 
 }

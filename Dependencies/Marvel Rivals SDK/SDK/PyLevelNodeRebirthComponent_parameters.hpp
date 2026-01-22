@@ -23,9 +23,7 @@ struct PyLevelNodeRebirthComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeRebirthComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelNodeRebirthComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelNodeRebirthComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelNodeRebirthComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelNodeRebirthComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelNodeRebirthComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeRebirthComponent_ReceiveEndPlay;
 
 // PythonFunction PyLevelNodeRebirthComponent.PyLevelNodeRebirthComponent.SetBirthBasePlayerstart
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FString                                 BirthBaseName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 PlayerStartName;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeRebirthComponent_SetBirthBasePlayerstart) == 0x000008, "Wrong alignment on PyLevelNodeRebirthComponent_SetBirthBasePlayerstart");
-static_assert(sizeof(PyLevelNodeRebirthComponent_SetBirthBasePlayerstart) == 0x000020, "Wrong size on PyLevelNodeRebirthComponent_SetBirthBasePlayerstart");
-static_assert(offsetof(PyLevelNodeRebirthComponent_SetBirthBasePlayerstart, BirthBaseName) == 0x000000, "Member 'PyLevelNodeRebirthComponent_SetBirthBasePlayerstart::BirthBaseName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeRebirthComponent_SetBirthBasePlayerstart, PlayerStartName) == 0x000010, "Member 'PyLevelNodeRebirthComponent_SetBirthBasePlayerstart::PlayerStartName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeRebirthComponent_SetBirthBasePlayerstart;
 
 }
 

@@ -10,27 +10,27 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyScoreBoard_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyScoreBoard_Halloween.PyScoreBoard_Halloween
-// 0x0060 (0x0628 - 0x05C8)
+// 0x0060 (0x0630 - 0x05D0)
 class UPyScoreBoard_Halloween final : public UPyScoreBoard
 {
 public:
-	class UAkAudioEvent*                          AkEvent_ClickTab;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           LeftAction;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightAction;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SwitchNavAction;                                   // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightRockerYAction;                                // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputMappingContext*                   ScoreBoardContext;                                 // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnStyle;                                       // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SlideStyle;                                        // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SwitchNavStyle;                                    // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ClickTab;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           LeftAction;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightAction;                                       // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchNavAction;                                   // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightRockerYAction;                                // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputMappingContext*                   ScoreBoardContext;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnStyle;                                       // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SlideStyle;                                        // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SwitchNavStyle;                                    // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,27 +41,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoard_Halloween">();
+		STATIC_CLASS_IMPL("PyScoreBoard_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoard_Halloween")
 	}
 	static class UPyScoreBoard_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoard_Halloween>();
 	}
 };
-static_assert(alignof(UPyScoreBoard_Halloween) == 0x000008, "Wrong alignment on UPyScoreBoard_Halloween");
-static_assert(sizeof(UPyScoreBoard_Halloween) == 0x000628, "Wrong size on UPyScoreBoard_Halloween");
-static_assert(offsetof(UPyScoreBoard_Halloween, AkEvent_ClickTab) == 0x0005C8, "Member 'UPyScoreBoard_Halloween::AkEvent_ClickTab' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, LeftAction) == 0x0005D0, "Member 'UPyScoreBoard_Halloween::LeftAction' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, RightAction) == 0x0005D8, "Member 'UPyScoreBoard_Halloween::RightAction' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, SwitchNavAction) == 0x0005E0, "Member 'UPyScoreBoard_Halloween::SwitchNavAction' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, RightRockerYAction) == 0x0005E8, "Member 'UPyScoreBoard_Halloween::RightRockerYAction' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, ScoreBoardContext) == 0x0005F0, "Member 'UPyScoreBoard_Halloween::ScoreBoardContext' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, ReturnStyle) == 0x0005F8, "Member 'UPyScoreBoard_Halloween::ReturnStyle' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, SlideStyle) == 0x000608, "Member 'UPyScoreBoard_Halloween::SlideStyle' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_Halloween, SwitchNavStyle) == 0x000618, "Member 'UPyScoreBoard_Halloween::SwitchNavStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScoreBoard_Halloween;
 
 // PythonClass PyScoreBoard_Halloween.PyScoreBoardUnit_Halloween
-// 0x0000 (0x0628 - 0x0628)
+// 0x0000 (0x0630 - 0x0630)
 class UPyScoreBoardUnit_Halloween final : public UPyScoreBoardUnit
 {
 public:
@@ -72,15 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoardUnit_Halloween">();
+		STATIC_CLASS_IMPL("PyScoreBoardUnit_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoardUnit_Halloween")
 	}
 	static class UPyScoreBoardUnit_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoardUnit_Halloween>();
 	}
 };
-static_assert(alignof(UPyScoreBoardUnit_Halloween) == 0x000008, "Wrong alignment on UPyScoreBoardUnit_Halloween");
-static_assert(sizeof(UPyScoreBoardUnit_Halloween) == 0x000628, "Wrong size on UPyScoreBoardUnit_Halloween");
+DUMPER7_ASSERTS_UPyScoreBoardUnit_Halloween;
 
 }
 

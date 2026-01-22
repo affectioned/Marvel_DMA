@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103151.PyScope_10315101_Base
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10315101_Base final : public AMarvelAbilityTargetActor_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10315101_Base">();
+		STATIC_CLASS_IMPL("PyScope_10315101_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10315101_Base")
 	}
 	static class APyScope_10315101_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10315101_Base>();
 	}
 };
-static_assert(alignof(APyScope_10315101_Base) == 0x000010, "Wrong alignment on APyScope_10315101_Base");
-static_assert(sizeof(APyScope_10315101_Base) == 0x001AA0, "Wrong size on APyScope_10315101_Base");
+DUMPER7_ASSERTS_APyScope_10315101_Base;
 
 // PythonClass PyAbility_103151.PyAbility_103151
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103151 final : public UAbility_108
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103151">();
+		STATIC_CLASS_IMPL("PyAbility_103151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103151")
 	}
 	static class UPyAbility_103151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103151>();
 	}
 };
-static_assert(alignof(UPyAbility_103151) == 0x000008, "Wrong alignment on UPyAbility_103151");
-static_assert(sizeof(UPyAbility_103151) == 0x0029F8, "Wrong size on UPyAbility_103151");
+DUMPER7_ASSERTS_UPyAbility_103151;
 
 // PythonClass PyAbility_103151.PyConfig_103151
 // 0x0000 (0x0098 - 0x0098)
@@ -57,41 +63,47 @@ class UPyConfig_103151 final : public UMarvelAbilityConfig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103151">();
+		STATIC_CLASS_IMPL("PyConfig_103151")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103151")
 	}
 	static class UPyConfig_103151* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103151>();
 	}
 };
-static_assert(alignof(UPyConfig_103151) == 0x000008, "Wrong alignment on UPyConfig_103151");
-static_assert(sizeof(UPyConfig_103151) == 0x000098, "Wrong size on UPyConfig_103151");
+DUMPER7_ASSERTS_UPyConfig_103151;
 
 // PythonClass PyAbility_103151.PyProjectile_10315101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10315101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10315101">();
+		STATIC_CLASS_IMPL("PyProjectile_10315101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10315101")
 	}
 	static class APyProjectile_10315101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10315101>();
 	}
 };
-static_assert(alignof(APyProjectile_10315101) == 0x000010, "Wrong alignment on APyProjectile_10315101");
-static_assert(sizeof(APyProjectile_10315101) == 0x003B90, "Wrong size on APyProjectile_10315101");
+DUMPER7_ASSERTS_APyProjectile_10315101;
 
 // PythonClass PyAbility_103151.PyBuffAbility_10315103
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_10315103 : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         MainBuffID;                                        // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 DependentBuffID;                                   // 0x1378(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         MainBuffID;                                        // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 DependentBuffID;                                   // 0x1390(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -100,68 +112,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10315103">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10315103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10315103")
 	}
 	static class UPyBuffAbility_10315103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10315103>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10315103) == 0x000008, "Wrong alignment on UPyBuffAbility_10315103");
-static_assert(sizeof(UPyBuffAbility_10315103) == 0x001388, "Wrong size on UPyBuffAbility_10315103");
-static_assert(offsetof(UPyBuffAbility_10315103, MainBuffID) == 0x001370, "Member 'UPyBuffAbility_10315103::MainBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10315103, DependentBuffID) == 0x001378, "Member 'UPyBuffAbility_10315103::DependentBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10315103;
 
 // PythonClass PyAbility_103151.PyScope_10315103
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10315103 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10315103">();
+		STATIC_CLASS_IMPL("PyScope_10315103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10315103")
 	}
 	static class APyScope_10315103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10315103>();
 	}
 };
-static_assert(alignof(APyScope_10315103) == 0x000010, "Wrong alignment on APyScope_10315103");
-static_assert(sizeof(APyScope_10315103) == 0x001AA0, "Wrong size on APyScope_10315103");
+DUMPER7_ASSERTS_APyScope_10315103;
 
 // PythonClass PyAbility_103151.PyCue_Projectile_HitImpact_10315101
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10315101 final : public UMarvelCueNotify_HitImpact
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10315101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10315101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10315101")
 	}
 	static class UPyCue_Projectile_HitImpact_10315101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10315101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10315101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10315101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10315101) == 0x0005C8, "Wrong size on UPyCue_Projectile_HitImpact_10315101");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10315101;
 
 // PythonClass PyAbility_103151.PyCue_Scope_Loop_10315101
-// 0x0000 (0x10E0 - 0x10E0)
+// 0x0000 (0x10F0 - 0x10F0)
 class APyCue_Scope_Loop_10315101 final : public AMarvelCueNotify_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10315101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10315101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10315101")
 	}
 	static class APyCue_Scope_Loop_10315101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10315101>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10315101) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10315101");
-static_assert(sizeof(APyCue_Scope_Loop_10315101) == 0x0010E0, "Wrong size on APyCue_Scope_Loop_10315101");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10315101;
 
 }
 

@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10351101_OnExecuteAudio) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10351101_OnExecuteAudio");
-static_assert(sizeof(PyCue_Scope_HitImpact_10351101_OnExecuteAudio) == 0x0001D8, "Wrong size on PyCue_Scope_HitImpact_10351101_OnExecuteAudio");
-static_assert(offsetof(PyCue_Scope_HitImpact_10351101_OnExecuteAudio, MyTarget) == 0x000000, "Member 'PyCue_Scope_HitImpact_10351101_OnExecuteAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10351101_OnExecuteAudio, Parameters) == 0x000008, "Member 'PyCue_Scope_HitImpact_10351101_OnExecuteAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10351101_OnExecuteAudio;
 
 }
 

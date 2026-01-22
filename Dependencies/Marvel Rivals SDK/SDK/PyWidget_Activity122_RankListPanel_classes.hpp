@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_RankListPanel.PyWidget_Activity122_RankListPanel
-// 0x0010 (0x0618 - 0x0608)
+// 0x0010 (0x0620 - 0x0610)
 class UPyWidget_Activity122_RankListPanel final : public UPyWidget_LobbyPageList
 {
 public:
-	float                                         CardAnimIntervals;                                 // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CardAnimIntervals;                                 // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                HeroList_CardUnit;                                 // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RankListPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RankListPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RankListPanel")
 	}
 	static class UPyWidget_Activity122_RankListPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RankListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RankListPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RankListPanel");
-static_assert(sizeof(UPyWidget_Activity122_RankListPanel) == 0x000618, "Wrong size on UPyWidget_Activity122_RankListPanel");
-static_assert(offsetof(UPyWidget_Activity122_RankListPanel, CardAnimIntervals) == 0x000608, "Member 'UPyWidget_Activity122_RankListPanel::CardAnimIntervals' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_RankListPanel, HeroList_CardUnit) == 0x000610, "Member 'UPyWidget_Activity122_RankListPanel::HeroList_CardUnit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RankListPanel;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SummonedController_10165101_V2_BP.SummonedController_10165101_V2_BP_C
-// 0x0000 (0x1EC0 - 0x1EC0)
+// 0x0000 (0x2210 - 0x2210)
 class ASummonedController_10165101_V2_BP_C final : public ASummonedController_10165101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SummonedController_10165101_V2_BP_C">();
+		BP_STATIC_CLASS_IMPL("SummonedController_10165101_V2_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SummonedController_10165101_V2_BP_C")
 	}
 	static class ASummonedController_10165101_V2_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummonedController_10165101_V2_BP_C>();
 	}
 };
-static_assert(alignof(ASummonedController_10165101_V2_BP_C) == 0x000010, "Wrong alignment on ASummonedController_10165101_V2_BP_C");
-static_assert(sizeof(ASummonedController_10165101_V2_BP_C) == 0x001EC0, "Wrong size on ASummonedController_10165101_V2_BP_C");
+DUMPER7_ASSERTS_ASummonedController_10165101_V2_BP_C;
 
 }
 

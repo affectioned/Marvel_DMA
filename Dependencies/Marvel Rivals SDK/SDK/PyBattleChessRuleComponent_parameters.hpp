@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RoundIndex;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange) == 0x000004, "Wrong alignment on PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange");
-static_assert(sizeof(PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange) == 0x000008, "Wrong size on PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange");
-static_assert(offsetof(PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange, state) == 0x000000, "Member 'PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange::state' has a wrong offset!");
-static_assert(offsetof(PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange, RoundIndex) == 0x000004, "Member 'PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange::RoundIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessRuleComponent_NetMulticast_BattleChessStateChange;
 
 // PythonFunction PyBattleChessRuleComponent.PyBattleChessRuleComponent.NetMulticast_RoundWinner
 // 0x0018 (0x0018 - 0x0000)
@@ -39,11 +36,7 @@ public:
 	class AMarvelPlayerState*                     Loser;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTeamKill;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBattleChessRuleComponent_NetMulticast_RoundWinner) == 0x000008, "Wrong alignment on PyBattleChessRuleComponent_NetMulticast_RoundWinner");
-static_assert(sizeof(PyBattleChessRuleComponent_NetMulticast_RoundWinner) == 0x000018, "Wrong size on PyBattleChessRuleComponent_NetMulticast_RoundWinner");
-static_assert(offsetof(PyBattleChessRuleComponent_NetMulticast_RoundWinner, Winner) == 0x000000, "Member 'PyBattleChessRuleComponent_NetMulticast_RoundWinner::Winner' has a wrong offset!");
-static_assert(offsetof(PyBattleChessRuleComponent_NetMulticast_RoundWinner, Loser) == 0x000008, "Member 'PyBattleChessRuleComponent_NetMulticast_RoundWinner::Loser' has a wrong offset!");
-static_assert(offsetof(PyBattleChessRuleComponent_NetMulticast_RoundWinner, IsTeamKill) == 0x000010, "Member 'PyBattleChessRuleComponent_NetMulticast_RoundWinner::IsTeamKill' has a wrong offset!");
+DUMPER7_ASSERTS_PyBattleChessRuleComponent_NetMulticast_RoundWinner;
 
 }
 

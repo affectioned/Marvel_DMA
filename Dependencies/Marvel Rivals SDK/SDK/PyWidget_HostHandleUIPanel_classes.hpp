@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_HostHandleUIPanel.PyWidget_HostHandleUIPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HostHandleUIPanel final : public UPyMarvelUserWidget
 {
 public:
@@ -30,26 +30,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HostHandleUIPanel">();
+		STATIC_CLASS_IMPL("PyWidget_HostHandleUIPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HostHandleUIPanel")
 	}
 	static class UPyWidget_HostHandleUIPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HostHandleUIPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_HostHandleUIPanel) == 0x000008, "Wrong alignment on UPyWidget_HostHandleUIPanel");
-static_assert(sizeof(UPyWidget_HostHandleUIPanel) == 0x0005C0, "Wrong size on UPyWidget_HostHandleUIPanel");
+DUMPER7_ASSERTS_UPyWidget_HostHandleUIPanel;
 
 // PythonClass PyWidget_HostHandleUIPanel.PyWidget_HandleUIKey
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_HandleUIKey : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   GamepadKey;                                        // 0x05C0(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Img_Normal_Color;                                  // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Img_Selected_Color;                                // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Img_Mask_Color;                                    // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   GamepadKey;                                        // 0x05C8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Img_Normal_Color;                                  // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Img_Selected_Color;                                // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Img_Mask_Color;                                    // 0x0610(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,19 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HandleUIKey">();
+		STATIC_CLASS_IMPL("PyWidget_HandleUIKey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HandleUIKey")
 	}
 	static class UPyWidget_HandleUIKey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HandleUIKey>();
 	}
 };
-static_assert(alignof(UPyWidget_HandleUIKey) == 0x000008, "Wrong alignment on UPyWidget_HandleUIKey");
-static_assert(sizeof(UPyWidget_HandleUIKey) == 0x000620, "Wrong size on UPyWidget_HandleUIKey");
-static_assert(offsetof(UPyWidget_HandleUIKey, GamepadKey) == 0x0005C0, "Member 'UPyWidget_HandleUIKey::GamepadKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HandleUIKey, Img_Normal_Color) == 0x0005E0, "Member 'UPyWidget_HandleUIKey::Img_Normal_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HandleUIKey, Img_Selected_Color) == 0x0005F4, "Member 'UPyWidget_HandleUIKey::Img_Selected_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HandleUIKey, Img_Mask_Color) == 0x000608, "Member 'UPyWidget_HandleUIKey::Img_Mask_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HandleUIKey;
 
 }
 

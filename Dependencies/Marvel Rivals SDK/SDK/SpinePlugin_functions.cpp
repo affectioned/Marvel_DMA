@@ -1759,6 +1759,35 @@ void USpineSkeletonAnimationComponent::SetTimeScale(float timeScale)
 }
 
 
+// Function SpinePlugin.SpineWidget.BatchTickSpineWidgets
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const TArray<class USpineWidget*>&      InWidgets                                              (Parm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    CallDelegates                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USpineWidget::BatchTickSpineWidgets(const TArray<class USpineWidget*>& InWidgets, float DeltaTime, bool CallDelegates)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("SpineWidget", "BatchTickSpineWidgets");
+
+	Params::SpineWidget_BatchTickSpineWidgets Parms{};
+
+	Parms.InWidgets = std::move(InWidgets);
+	Parms.DeltaTime = DeltaTime;
+	Parms.CallDelegates = CallDelegates;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function SpinePlugin.SpineWidget.AddAnimation
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1822,6 +1851,31 @@ class UTrackEntry* USpineWidget::AddEmptyAnimation(int32 trackIndex, float mixDu
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function SpinePlugin.SpineWidget.AutoTick
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   CurrDetaTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USpineWidget::AutoTick(float CurrDetaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SpineWidget", "AutoTick");
+
+	Params::SpineWidget_AutoTick Parms{};
+
+	Parms.CurrDetaTime = CurrDetaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2366,6 +2420,31 @@ void USpineWidget::SetAutoPlay(bool bInAutoPlays)
 }
 
 
+// Function SpinePlugin.SpineWidget.SetAutoTickDeltaTime
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USpineWidget::SetAutoTickDeltaTime(float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SpineWidget", "SetAutoTickDeltaTime");
+
+	Params::SpineWidget_SetAutoTickDeltaTime Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function SpinePlugin.SpineWidget.SetBonesToSetupPose
 // (Final, Native, Public, BlueprintCallable)
 
@@ -2412,6 +2491,31 @@ class UTrackEntry* USpineWidget::SetEmptyAnimation(int32 trackIndex, float mixDu
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function SpinePlugin.SpineWidget.SetIsOpenAutoTick
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    IsOpen                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USpineWidget::SetIsOpenAutoTick(bool IsOpen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SpineWidget", "SetIsOpenAutoTick");
+
+	Params::SpineWidget_SetIsOpenAutoTick Parms{};
+
+	Parms.IsOpen = IsOpen;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

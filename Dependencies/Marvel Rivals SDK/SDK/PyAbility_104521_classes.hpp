@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104521.PyAbility_104521
-// 0x0010 (0x2A10 - 0x2A00)
+// 0x0010 (0x2A60 - 0x2A50)
 class UPyAbility_104521 : public UAbility_104521
 {
 public:
-	TMulticastInlineDelegate<void()>              OnWeaponRecalled;                                  // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnWeaponRecalled;                                  // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104521">();
+		STATIC_CLASS_IMPL("PyAbility_104521")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104521")
 	}
 	static class UPyAbility_104521* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104521>();
 	}
 };
-static_assert(alignof(UPyAbility_104521) == 0x000008, "Wrong alignment on UPyAbility_104521");
-static_assert(sizeof(UPyAbility_104521) == 0x002A10, "Wrong size on UPyAbility_104521");
-static_assert(offsetof(UPyAbility_104521, OnWeaponRecalled) == 0x002A00, "Member 'UPyAbility_104521::OnWeaponRecalled' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104521;
 
 }
 

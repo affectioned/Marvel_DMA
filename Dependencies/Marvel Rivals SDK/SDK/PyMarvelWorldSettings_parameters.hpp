@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct PyMarvelWorldSettings_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelWorldSettings_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMarvelWorldSettings_ReceiveEndPlay");
-static_assert(sizeof(PyMarvelWorldSettings_ReceiveEndPlay) == 0x000001, "Wrong size on PyMarvelWorldSettings_ReceiveEndPlay");
-static_assert(offsetof(PyMarvelWorldSettings_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMarvelWorldSettings_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelWorldSettings_ReceiveEndPlay;
 
 // PythonFunction PyMarvelWorldSettings.PyMarvelWorldSettings.IsCharactersLoaded
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyMarvelWorldSettings_IsCharactersLoaded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelWorldSettings_IsCharactersLoaded) == 0x000001, "Wrong alignment on PyMarvelWorldSettings_IsCharactersLoaded");
-static_assert(sizeof(PyMarvelWorldSettings_IsCharactersLoaded) == 0x000001, "Wrong size on PyMarvelWorldSettings_IsCharactersLoaded");
-static_assert(offsetof(PyMarvelWorldSettings_IsCharactersLoaded, ReturnValue) == 0x000000, "Member 'PyMarvelWorldSettings_IsCharactersLoaded::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelWorldSettings_IsCharactersLoaded;
 
 // PythonFunction PyMarvelWorldSettings.PyMarvelWorldSettings.OnCharacterAssetLoaded
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	const class AMarvelBaseCharacter*             InCharacter;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         ClientAssetLoadingState;                           // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelWorldSettings_OnCharacterAssetLoaded) == 0x000008, "Wrong alignment on PyMarvelWorldSettings_OnCharacterAssetLoaded");
-static_assert(sizeof(PyMarvelWorldSettings_OnCharacterAssetLoaded) == 0x000010, "Wrong size on PyMarvelWorldSettings_OnCharacterAssetLoaded");
-static_assert(offsetof(PyMarvelWorldSettings_OnCharacterAssetLoaded, InCharacter) == 0x000000, "Member 'PyMarvelWorldSettings_OnCharacterAssetLoaded::InCharacter' has a wrong offset!");
-static_assert(offsetof(PyMarvelWorldSettings_OnCharacterAssetLoaded, ClientAssetLoadingState) == 0x000008, "Member 'PyMarvelWorldSettings_OnCharacterAssetLoaded::ClientAssetLoadingState' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelWorldSettings_OnCharacterAssetLoaded;
 
 // PythonFunction PyMarvelWorldSettings.PyMarvelWorldSettings.ControlPauseGame
 // 0x0020 (0x0020 - 0x0000)
@@ -59,9 +52,7 @@ struct PyMarvelWorldSettings_ControlPauseGame final
 public:
 	struct FGamePauseInfo                         PauseInfo_0;                                       // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyMarvelWorldSettings_ControlPauseGame) == 0x000008, "Wrong alignment on PyMarvelWorldSettings_ControlPauseGame");
-static_assert(sizeof(PyMarvelWorldSettings_ControlPauseGame) == 0x000020, "Wrong size on PyMarvelWorldSettings_ControlPauseGame");
-static_assert(offsetof(PyMarvelWorldSettings_ControlPauseGame, PauseInfo_0) == 0x000000, "Member 'PyMarvelWorldSettings_ControlPauseGame::PauseInfo_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelWorldSettings_ControlPauseGame;
 
 }
 

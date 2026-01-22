@@ -23,15 +23,18 @@ class UBTS_ActiveAbilityByInput_BP_C final : public UBTS_PyActiveAbilityByInput
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_ActiveAbilityByInput_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_ActiveAbilityByInput_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_ActiveAbilityByInput_BP_C")
 	}
 	static class UBTS_ActiveAbilityByInput_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_ActiveAbilityByInput_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_ActiveAbilityByInput_BP_C) == 0x000008, "Wrong alignment on UBTS_ActiveAbilityByInput_BP_C");
-static_assert(sizeof(UBTS_ActiveAbilityByInput_BP_C) == 0x0000C8, "Wrong size on UBTS_ActiveAbilityByInput_BP_C");
+DUMPER7_ASSERTS_UBTS_ActiveAbilityByInput_BP_C;
 
 }
 

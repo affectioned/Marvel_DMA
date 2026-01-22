@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 103852_KeepMoveTo_AddMoveInput_BP.103852_KeepMoveTo_AddMoveInput_BP_C
-// 0x0000 (0x13A8 - 0x13A8)
+// 0x0000 (0x13C0 - 0x13C0)
 class UOne03852_KeepMoveTo_AddMoveInput_BP_C final : public UAbility_136_AddMovementInput
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"103852_KeepMoveTo_AddMoveInput_BP_C">();
+		BP_STATIC_CLASS_IMPL("103852_KeepMoveTo_AddMoveInput_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"103852_KeepMoveTo_AddMoveInput_BP_C")
 	}
 	static class UOne03852_KeepMoveTo_AddMoveInput_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOne03852_KeepMoveTo_AddMoveInput_BP_C>();
 	}
 };
-static_assert(alignof(UOne03852_KeepMoveTo_AddMoveInput_BP_C) == 0x000008, "Wrong alignment on UOne03852_KeepMoveTo_AddMoveInput_BP_C");
-static_assert(sizeof(UOne03852_KeepMoveTo_AddMoveInput_BP_C) == 0x0013A8, "Wrong size on UOne03852_KeepMoveTo_AddMoveInput_BP_C");
+DUMPER7_ASSERTS_UOne03852_KeepMoveTo_AddMoveInput_BP_C;
 
 }
 

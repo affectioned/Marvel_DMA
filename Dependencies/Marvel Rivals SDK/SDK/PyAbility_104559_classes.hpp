@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104559">();
+		STATIC_CLASS_IMPL("PyConfig_104559")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104559")
 	}
 	static class UPyConfig_104559* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104559>();
 	}
 };
-static_assert(alignof(UPyConfig_104559) == 0x000008, "Wrong alignment on UPyConfig_104559");
-static_assert(sizeof(UPyConfig_104559) == 0x0000A0, "Wrong size on UPyConfig_104559");
-static_assert(offsetof(UPyConfig_104559, MaxShootAngle) == 0x000098, "Member 'UPyConfig_104559::MaxShootAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104559, ScopeID) == 0x00009C, "Member 'UPyConfig_104559::ScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104559;
 
 // PythonClass PyAbility_104559.PyCue_Scope_End_10455901
 // 0x0008 (0x03C8 - 0x03C0)
@@ -52,19 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_End_10455901">();
+		STATIC_CLASS_IMPL("PyCue_Scope_End_10455901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_End_10455901")
 	}
 	static class UPyCue_Scope_End_10455901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_End_10455901>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_End_10455901) == 0x000008, "Wrong alignment on UPyCue_Scope_End_10455901");
-static_assert(sizeof(UPyCue_Scope_End_10455901) == 0x0003C8, "Wrong size on UPyCue_Scope_End_10455901");
-static_assert(offsetof(UPyCue_Scope_End_10455901, LaserEffect) == 0x0003C0, "Member 'UPyCue_Scope_End_10455901::LaserEffect' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_End_10455901;
 
 // PythonClass PyAbility_104559.PyAbility_104559
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104559 : public UMarvelGameplayAbility
 {
 public:
@@ -78,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104559">();
+		STATIC_CLASS_IMPL("PyAbility_104559")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104559")
 	}
 	static class UPyAbility_104559* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104559>();
 	}
 };
-static_assert(alignof(UPyAbility_104559) == 0x000008, "Wrong alignment on UPyAbility_104559");
-static_assert(sizeof(UPyAbility_104559) == 0x0029F0, "Wrong size on UPyAbility_104559");
+DUMPER7_ASSERTS_UPyAbility_104559;
 
 }
 

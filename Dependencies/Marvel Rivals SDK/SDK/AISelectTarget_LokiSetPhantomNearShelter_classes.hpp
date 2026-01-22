@@ -23,15 +23,18 @@ class UAISelectTarget_LokiSetPhantomNearShelter_C final : public UPyAISelectTarg
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_LokiSetPhantomNearShelter_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_LokiSetPhantomNearShelter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_LokiSetPhantomNearShelter_C")
 	}
 	static class UAISelectTarget_LokiSetPhantomNearShelter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_LokiSetPhantomNearShelter_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_LokiSetPhantomNearShelter_C) == 0x000008, "Wrong alignment on UAISelectTarget_LokiSetPhantomNearShelter_C");
-static_assert(sizeof(UAISelectTarget_LokiSetPhantomNearShelter_C) == 0x000080, "Wrong size on UAISelectTarget_LokiSetPhantomNearShelter_C");
+DUMPER7_ASSERTS_UAISelectTarget_LokiSetPhantomNearShelter_C;
 
 }
 

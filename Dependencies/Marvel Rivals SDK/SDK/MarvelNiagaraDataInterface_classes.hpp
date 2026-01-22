@@ -27,7 +27,11 @@ class IMarvelNiagaraDataInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNiagaraDataInterface">();
+		STATIC_CLASS_IMPL("MarvelNiagaraDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNiagaraDataInterface")
 	}
 	static class IMarvelNiagaraDataInterface* GetDefaultObj()
 	{
@@ -43,8 +47,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IMarvelNiagaraDataInterface) == 0x000001, "Wrong alignment on IMarvelNiagaraDataInterface");
-static_assert(sizeof(IMarvelNiagaraDataInterface) == 0x000001, "Wrong size on IMarvelNiagaraDataInterface");
+DUMPER7_ASSERTS_IMarvelNiagaraDataInterface;
 
 // Class MarvelNiagaraDataInterface.MarvelNiagaraDataInterfaceLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -53,15 +56,18 @@ class UMarvelNiagaraDataInterfaceLibrary final : public UBlueprintFunctionLibrar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelNiagaraDataInterfaceLibrary">();
+		STATIC_CLASS_IMPL("MarvelNiagaraDataInterfaceLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelNiagaraDataInterfaceLibrary")
 	}
 	static class UMarvelNiagaraDataInterfaceLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelNiagaraDataInterfaceLibrary>();
 	}
 };
-static_assert(alignof(UMarvelNiagaraDataInterfaceLibrary) == 0x000008, "Wrong alignment on UMarvelNiagaraDataInterfaceLibrary");
-static_assert(sizeof(UMarvelNiagaraDataInterfaceLibrary) == 0x000030, "Wrong size on UMarvelNiagaraDataInterfaceLibrary");
+DUMPER7_ASSERTS_UMarvelNiagaraDataInterfaceLibrary;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceAbilityAgent
 // 0x0008 (0x0048 - 0x0040)
@@ -73,16 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceAbilityAgent">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceAbilityAgent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceAbilityAgent")
 	}
 	static class UNiagaraDataInterfaceAbilityAgent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceAbilityAgent>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceAbilityAgent) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceAbilityAgent");
-static_assert(sizeof(UNiagaraDataInterfaceAbilityAgent) == 0x000048, "Wrong size on UNiagaraDataInterfaceAbilityAgent");
-static_assert(offsetof(UNiagaraDataInterfaceAbilityAgent, SummonedComponent) == 0x000040, "Member 'UNiagaraDataInterfaceAbilityAgent::SummonedComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceAbilityAgent;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceAbilitySystemCom
 // 0x0010 (0x0050 - 0x0040)
@@ -94,16 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceAbilitySystemCom">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceAbilitySystemCom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceAbilitySystemCom")
 	}
 	static class UNiagaraDataInterfaceAbilitySystemCom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceAbilitySystemCom>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceAbilitySystemCom) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceAbilitySystemCom");
-static_assert(sizeof(UNiagaraDataInterfaceAbilitySystemCom) == 0x000050, "Wrong size on UNiagaraDataInterfaceAbilitySystemCom");
-static_assert(offsetof(UNiagaraDataInterfaceAbilitySystemCom, NDIAttributes) == 0x000040, "Member 'UNiagaraDataInterfaceAbilitySystemCom::NDIAttributes' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceAbilitySystemCom;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceAttribute
 // 0x0008 (0x0048 - 0x0040)
@@ -115,16 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceAttribute">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceAttribute")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceAttribute")
 	}
 	static class UNiagaraDataInterfaceAttribute* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceAttribute>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceAttribute) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceAttribute");
-static_assert(sizeof(UNiagaraDataInterfaceAttribute) == 0x000048, "Wrong size on UNiagaraDataInterfaceAttribute");
-static_assert(offsetof(UNiagaraDataInterfaceAttribute, SourceAttributeSet) == 0x000040, "Member 'UNiagaraDataInterfaceAttribute::SourceAttributeSet' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceAttribute;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceCharacter
 // 0x0000 (0x0040 - 0x0040)
@@ -133,15 +145,18 @@ class UNiagaraDataInterfaceCharacter final : public UNiagaraDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceCharacter">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceCharacter")
 	}
 	static class UNiagaraDataInterfaceCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceCharacter>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceCharacter) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceCharacter");
-static_assert(sizeof(UNiagaraDataInterfaceCharacter) == 0x000040, "Wrong size on UNiagaraDataInterfaceCharacter");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceCharacter;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceGameplayTargetBoxSize
 // 0x0020 (0x0060 - 0x0040)
@@ -155,17 +170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGameplayTargetBoxSize">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGameplayTargetBoxSize")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGameplayTargetBoxSize")
 	}
 	static class UNiagaraDataInterfaceGameplayTargetBoxSize* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGameplayTargetBoxSize>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGameplayTargetBoxSize) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGameplayTargetBoxSize");
-static_assert(sizeof(UNiagaraDataInterfaceGameplayTargetBoxSize) == 0x000060, "Wrong size on UNiagaraDataInterfaceGameplayTargetBoxSize");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetBoxSize, PreviewBoxSize) == 0x000040, "Member 'UNiagaraDataInterfaceGameplayTargetBoxSize::PreviewBoxSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetBoxSize, bDebugShowBox) == 0x000058, "Member 'UNiagaraDataInterfaceGameplayTargetBoxSize::bDebugShowBox' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceGameplayTargetBoxSize;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceGameplayTargetRadius
 // 0x0018 (0x0058 - 0x0040)
@@ -182,19 +198,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGameplayTargetRadius">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGameplayTargetRadius")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGameplayTargetRadius")
 	}
 	static class UNiagaraDataInterfaceGameplayTargetRadius* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGameplayTargetRadius>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGameplayTargetRadius) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGameplayTargetRadius");
-static_assert(sizeof(UNiagaraDataInterfaceGameplayTargetRadius) == 0x000058, "Wrong size on UNiagaraDataInterfaceGameplayTargetRadius");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetRadius, PreviewRadius) == 0x000040, "Member 'UNiagaraDataInterfaceGameplayTargetRadius::PreviewRadius' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetRadius, bDebugShowRadius) == 0x000044, "Member 'UNiagaraDataInterfaceGameplayTargetRadius::bDebugShowRadius' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetRadius, bForceUseRadiusInParam) == 0x000045, "Member 'UNiagaraDataInterfaceGameplayTargetRadius::bForceUseRadiusInParam' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGameplayTargetRadius, CollisionComponentName) == 0x000048, "Member 'UNiagaraDataInterfaceGameplayTargetRadius::CollisionComponentName' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceGameplayTargetRadius;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceRibbonSupportPortal
 // 0x0010 (0x0050 - 0x0040)
@@ -209,15 +224,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceRibbonSupportPortal">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceRibbonSupportPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceRibbonSupportPortal")
 	}
 	static class UNiagaraDataInterfaceRibbonSupportPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceRibbonSupportPortal>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceRibbonSupportPortal) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceRibbonSupportPortal");
-static_assert(sizeof(UNiagaraDataInterfaceRibbonSupportPortal) == 0x000050, "Wrong size on UNiagaraDataInterfaceRibbonSupportPortal");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceRibbonSupportPortal;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceScopeRadius
 // 0x0000 (0x0040 - 0x0040)
@@ -226,15 +244,18 @@ class UNiagaraDataInterfaceScopeRadius final : public UNiagaraDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceScopeRadius">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceScopeRadius")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceScopeRadius")
 	}
 	static class UNiagaraDataInterfaceScopeRadius* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceScopeRadius>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceScopeRadius) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceScopeRadius");
-static_assert(sizeof(UNiagaraDataInterfaceScopeRadius) == 0x000040, "Wrong size on UNiagaraDataInterfaceScopeRadius");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceScopeRadius;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceSummoned
 // 0x0000 (0x0040 - 0x0040)
@@ -243,15 +264,18 @@ class UNiagaraDataInterfaceSummoned final : public UNiagaraDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceSummoned">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceSummoned")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceSummoned")
 	}
 	static class UNiagaraDataInterfaceSummoned* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceSummoned>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceSummoned) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceSummoned");
-static_assert(sizeof(UNiagaraDataInterfaceSummoned) == 0x000040, "Wrong size on UNiagaraDataInterfaceSummoned");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceSummoned;
 
 // Class MarvelNiagaraDataInterface.NiagaraDataInterfaceSummonedSize
 // 0x0000 (0x0040 - 0x0040)
@@ -260,15 +284,18 @@ class UNiagaraDataInterfaceSummonedSize final : public UNiagaraDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceSummonedSize">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceSummonedSize")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceSummonedSize")
 	}
 	static class UNiagaraDataInterfaceSummonedSize* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceSummonedSize>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceSummonedSize) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceSummonedSize");
-static_assert(sizeof(UNiagaraDataInterfaceSummonedSize) == 0x000040, "Wrong size on UNiagaraDataInterfaceSummonedSize");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceSummonedSize;
 
 }
 

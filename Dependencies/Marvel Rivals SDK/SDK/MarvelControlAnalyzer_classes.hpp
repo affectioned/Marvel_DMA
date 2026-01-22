@@ -46,25 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ControlAnalyzerSubsystem">();
+		STATIC_CLASS_IMPL("ControlAnalyzerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlAnalyzerSubsystem")
 	}
 	static class UControlAnalyzerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControlAnalyzerSubsystem>();
 	}
 };
-static_assert(alignof(UControlAnalyzerSubsystem) == 0x000008, "Wrong alignment on UControlAnalyzerSubsystem");
-static_assert(sizeof(UControlAnalyzerSubsystem) == 0x0000E8, "Wrong size on UControlAnalyzerSubsystem");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadLSThreshold) == 0x000038, "Member 'UControlAnalyzerSubsystem::GamepadLSThreshold' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadRSThreshold) == 0x00003C, "Member 'UControlAnalyzerSubsystem::GamepadRSThreshold' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadLTThreshold) == 0x000040, "Member 'UControlAnalyzerSubsystem::GamepadLTThreshold' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadRTThreshold) == 0x000044, "Member 'UControlAnalyzerSubsystem::GamepadRTThreshold' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadLogInterval) == 0x000048, "Member 'UControlAnalyzerSubsystem::GamepadLogInterval' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, ScoreWarningCoolDown) == 0x00004C, "Member 'UControlAnalyzerSubsystem::ScoreWarningCoolDown' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, ScoreInterval) == 0x000050, "Member 'UControlAnalyzerSubsystem::ScoreInterval' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, GamepadLogJson) == 0x000058, "Member 'UControlAnalyzerSubsystem::GamepadLogJson' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, VendorId) == 0x000068, "Member 'UControlAnalyzerSubsystem::VendorId' has a wrong offset!");
-static_assert(offsetof(UControlAnalyzerSubsystem, ProductId) == 0x00006C, "Member 'UControlAnalyzerSubsystem::ProductId' has a wrong offset!");
+DUMPER7_ASSERTS_UControlAnalyzerSubsystem;
 
 }
 

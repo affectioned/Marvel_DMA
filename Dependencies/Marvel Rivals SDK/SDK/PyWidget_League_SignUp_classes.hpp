@@ -12,35 +12,35 @@
 
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "PyWidget_DropDownList_ListView_Item_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyWidget_DropDownList_classes.hpp"
 #include "PyWidget_DropDownList_ListView_classes.hpp"
+#include "PyWidget_DropDownList_ListView_Item_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_League_SignUp.PyWidget_League_SignUp
-// 0x00D0 (0x06C8 - 0x05F8)
+// 0x00D0 (0x06D0 - 0x0600)
 class UPyWidget_League_SignUp final : public UPyWidget_ModuleMainPanel
 {
 public:
-	int32                                         FlagSizeX;                                         // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FlagSizeY;                                         // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefaultClashBackground;                            // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SignedUpBgColorMRC;                                // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SignedUpBgColorClash;                              // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeamBgColorMRC;                                    // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeamBgColorClash;                                  // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RegisteredColorMRC;                                // 0x0648(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RegisteredColorClash;                              // 0x065C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           HeadBgColorMRC;                                    // 0x0670(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           HeadBgColorClash;                                  // 0x0680(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeamTextColorMRC;                                  // 0x0690(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeamTextColorClash;                                // 0x06A4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgMRC;                                             // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgClash;                                           // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FlagSizeX;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FlagSizeY;                                         // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultClashBackground;                            // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SignedUpBgColorMRC;                                // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SignedUpBgColorClash;                              // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamBgColorMRC;                                    // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamBgColorClash;                                  // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RegisteredColorMRC;                                // 0x0650(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RegisteredColorClash;                              // 0x0664(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HeadBgColorMRC;                                    // 0x0678(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HeadBgColorClash;                                  // 0x0688(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeamTextColorMRC;                                  // 0x0698(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeamTextColorClash;                                // 0x06AC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgMRC;                                             // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgClash;                                           // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,33 +52,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_SignUp">();
+		STATIC_CLASS_IMPL("PyWidget_League_SignUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_SignUp")
 	}
 	static class UPyWidget_League_SignUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_SignUp>();
 	}
 };
-static_assert(alignof(UPyWidget_League_SignUp) == 0x000008, "Wrong alignment on UPyWidget_League_SignUp");
-static_assert(sizeof(UPyWidget_League_SignUp) == 0x0006C8, "Wrong size on UPyWidget_League_SignUp");
-static_assert(offsetof(UPyWidget_League_SignUp, FlagSizeX) == 0x0005F8, "Member 'UPyWidget_League_SignUp::FlagSizeX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, FlagSizeY) == 0x0005FC, "Member 'UPyWidget_League_SignUp::FlagSizeY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, DefaultClashBackground) == 0x000600, "Member 'UPyWidget_League_SignUp::DefaultClashBackground' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, SignedUpBgColorMRC) == 0x000608, "Member 'UPyWidget_League_SignUp::SignedUpBgColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, SignedUpBgColorClash) == 0x000618, "Member 'UPyWidget_League_SignUp::SignedUpBgColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, TeamBgColorMRC) == 0x000628, "Member 'UPyWidget_League_SignUp::TeamBgColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, TeamBgColorClash) == 0x000638, "Member 'UPyWidget_League_SignUp::TeamBgColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, RegisteredColorMRC) == 0x000648, "Member 'UPyWidget_League_SignUp::RegisteredColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, RegisteredColorClash) == 0x00065C, "Member 'UPyWidget_League_SignUp::RegisteredColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, HeadBgColorMRC) == 0x000670, "Member 'UPyWidget_League_SignUp::HeadBgColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, HeadBgColorClash) == 0x000680, "Member 'UPyWidget_League_SignUp::HeadBgColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, TeamTextColorMRC) == 0x000690, "Member 'UPyWidget_League_SignUp::TeamTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, TeamTextColorClash) == 0x0006A4, "Member 'UPyWidget_League_SignUp::TeamTextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, BgMRC) == 0x0006B8, "Member 'UPyWidget_League_SignUp::BgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_SignUp, BgClash) == 0x0006C0, "Member 'UPyWidget_League_SignUp::BgClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_SignUp;
 
 // PythonClass PyWidget_League_SignUp.PyWidget_DropDownList_SignUp_ListView
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_DropDownList_SignUp_ListView final : public UPyWidget_DropDownList_ListView
 {
 public:
@@ -89,30 +77,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_SignUp_ListView">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_SignUp_ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_SignUp_ListView")
 	}
 	static class UPyWidget_DropDownList_SignUp_ListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_SignUp_ListView>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_SignUp_ListView) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_SignUp_ListView");
-static_assert(sizeof(UPyWidget_DropDownList_SignUp_ListView) == 0x000608, "Wrong size on UPyWidget_DropDownList_SignUp_ListView");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_SignUp_ListView;
 
 // PythonClass PyWidget_League_SignUp.WBP_DropDownList_League_SignUp
-// 0x0860 (0x1D40 - 0x14E0)
+// 0x0860 (0x1D90 - 0x1530)
 class UWBP_DropDownList_League_SignUp final : public UPyWidget_DropDownList
 {
 public:
-	bool                                          IsTitlePlatformVisible;                            // 0x14D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D9[0x7];                                     // 0x14D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           ButtonStyleMRC;                                    // 0x14E0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           ButtonStyleClash;                                  // 0x18E0(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorMRC;                                      // 0x1CE0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorClash;                                    // 0x1CF4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgColorMRC;                                       // 0x1D08(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgColorClash;                                     // 0x1D18(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleTextColorClashDisable;                        // 0x1D28(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsTitlePlatformVisible;                            // 0x1528(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1529[0x7];                                     // 0x1529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           ButtonStyleMRC;                                    // 0x1530(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           ButtonStyleClash;                                  // 0x1930(0x0400)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorMRC;                                      // 0x1D30(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorClash;                                    // 0x1D44(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgColorMRC;                                       // 0x1D58(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgColorClash;                                     // 0x1D68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleTextColorClashDisable;                        // 0x1D78(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -125,31 +116,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_DropDownList_League_SignUp">();
+		STATIC_CLASS_IMPL("WBP_DropDownList_League_SignUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DropDownList_League_SignUp")
 	}
 	static class UWBP_DropDownList_League_SignUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DropDownList_League_SignUp>();
 	}
 };
-static_assert(alignof(UWBP_DropDownList_League_SignUp) == 0x000010, "Wrong alignment on UWBP_DropDownList_League_SignUp");
-static_assert(sizeof(UWBP_DropDownList_League_SignUp) == 0x001D40, "Wrong size on UWBP_DropDownList_League_SignUp");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, IsTitlePlatformVisible) == 0x0014D8, "Member 'UWBP_DropDownList_League_SignUp::IsTitlePlatformVisible' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, ButtonStyleMRC) == 0x0014E0, "Member 'UWBP_DropDownList_League_SignUp::ButtonStyleMRC' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, ButtonStyleClash) == 0x0018E0, "Member 'UWBP_DropDownList_League_SignUp::ButtonStyleClash' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, TextColorMRC) == 0x001CE0, "Member 'UWBP_DropDownList_League_SignUp::TextColorMRC' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, TextColorClash) == 0x001CF4, "Member 'UWBP_DropDownList_League_SignUp::TextColorClash' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, ImgColorMRC) == 0x001D08, "Member 'UWBP_DropDownList_League_SignUp::ImgColorMRC' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, ImgColorClash) == 0x001D18, "Member 'UWBP_DropDownList_League_SignUp::ImgColorClash' has a wrong offset!");
-static_assert(offsetof(UWBP_DropDownList_League_SignUp, TitleTextColorClashDisable) == 0x001D28, "Member 'UWBP_DropDownList_League_SignUp::TitleTextColorClashDisable' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DropDownList_League_SignUp;
 
 // PythonClass PyWidget_League_SignUp.Pywidget_DropDownList_SignUp_Item
-// 0x0010 (0x0788 - 0x0778)
+// 0x0010 (0x07E0 - 0x07D0)
 class UPywidget_DropDownList_SignUp_Item final : public UPyWidget_DropDownList_ListView_Item
 {
 public:
-	class UTexture2D*                             IconMRC;                                           // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconClash;                                         // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconMRC;                                           // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconClash;                                         // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -159,17 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_DropDownList_SignUp_Item">();
+		STATIC_CLASS_IMPL("Pywidget_DropDownList_SignUp_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_DropDownList_SignUp_Item")
 	}
 	static class UPywidget_DropDownList_SignUp_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPywidget_DropDownList_SignUp_Item>();
 	}
 };
-static_assert(alignof(UPywidget_DropDownList_SignUp_Item) == 0x000008, "Wrong alignment on UPywidget_DropDownList_SignUp_Item");
-static_assert(sizeof(UPywidget_DropDownList_SignUp_Item) == 0x000788, "Wrong size on UPywidget_DropDownList_SignUp_Item");
-static_assert(offsetof(UPywidget_DropDownList_SignUp_Item, IconMRC) == 0x000778, "Member 'UPywidget_DropDownList_SignUp_Item::IconMRC' has a wrong offset!");
-static_assert(offsetof(UPywidget_DropDownList_SignUp_Item, IconClash) == 0x000780, "Member 'UPywidget_DropDownList_SignUp_Item::IconClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPywidget_DropDownList_SignUp_Item;
 
 }
 

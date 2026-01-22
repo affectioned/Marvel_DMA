@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -20,15 +20,16 @@ namespace SDK
 
 // PythonClass PyLevelPortalBase.PyLevelPortalBase
 // 0x0080 (0x0940 - 0x08C0)
-#pragma pack(push, 0x1)
-class alignas(0x10) APyLevelPortalBase : public AMarvelLevelPortalBase
+class APyLevelPortalBase : public AMarvelLevelPortalBase
 {
 public:
 	bool                                          EnablePortalTipsUI;                                // 0x08C0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C1[0x7];                                      // 0x08C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          UpdateTipsWithThisPortal;                          // 0x08C1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8C2[0x6];                                      // 0x08C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   PortalTipsText;                                    // 0x08C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	struct FUIActionData                          PressActionData;                                   // 0x08E0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	int32                                         PortalAbilityID;                                   // 0x0938(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PymThresholdRatio;                                 // 0x093C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -38,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelPortalBase">();
+		STATIC_CLASS_IMPL("PyLevelPortalBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelPortalBase")
 	}
 	static class APyLevelPortalBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelPortalBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(APyLevelPortalBase) == 0x000010, "Wrong alignment on APyLevelPortalBase");
-static_assert(sizeof(APyLevelPortalBase) == 0x000940, "Wrong size on APyLevelPortalBase");
-static_assert(offsetof(APyLevelPortalBase, EnablePortalTipsUI) == 0x0008C0, "Member 'APyLevelPortalBase::EnablePortalTipsUI' has a wrong offset!");
-static_assert(offsetof(APyLevelPortalBase, PortalTipsText) == 0x0008C8, "Member 'APyLevelPortalBase::PortalTipsText' has a wrong offset!");
-static_assert(offsetof(APyLevelPortalBase, PressActionData) == 0x0008E0, "Member 'APyLevelPortalBase::PressActionData' has a wrong offset!");
-static_assert(offsetof(APyLevelPortalBase, PortalAbilityID) == 0x000938, "Member 'APyLevelPortalBase::PortalAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelPortalBase;
 
 }
 

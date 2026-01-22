@@ -34,15 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OSCClient">();
+		STATIC_CLASS_IMPL("OSCClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OSCClient")
 	}
 	static class UOSCClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOSCClient>();
 	}
 };
-static_assert(alignof(UOSCClient) == 0x000008, "Wrong alignment on UOSCClient");
-static_assert(sizeof(UOSCClient) == 0x000038, "Wrong size on UOSCClient");
+DUMPER7_ASSERTS_UOSCClient;
 
 // Class OSC.OSCManager
 // 0x0000 (0x0030 - 0x0030)
@@ -104,15 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OSCManager">();
+		STATIC_CLASS_IMPL("OSCManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OSCManager")
 	}
 	static class UOSCManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOSCManager>();
 	}
 };
-static_assert(alignof(UOSCManager) == 0x000008, "Wrong alignment on UOSCManager");
-static_assert(sizeof(UOSCManager) == 0x000030, "Wrong size on UOSCManager");
+DUMPER7_ASSERTS_UOSCManager;
 
 // Class OSC.OSCServer
 // 0x00C0 (0x00F0 - 0x0030)
@@ -148,17 +154,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OSCServer">();
+		STATIC_CLASS_IMPL("OSCServer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OSCServer")
 	}
 	static class UOSCServer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOSCServer>();
 	}
 };
-static_assert(alignof(UOSCServer) == 0x000010, "Wrong alignment on UOSCServer");
-static_assert(sizeof(UOSCServer) == 0x0000F0, "Wrong size on UOSCServer");
-static_assert(offsetof(UOSCServer, OnOscMessageReceived) == 0x000030, "Member 'UOSCServer::OnOscMessageReceived' has a wrong offset!");
-static_assert(offsetof(UOSCServer, OnOscBundleReceived) == 0x000058, "Member 'UOSCServer::OnOscBundleReceived' has a wrong offset!");
+DUMPER7_ASSERTS_UOSCServer;
 
 }
 

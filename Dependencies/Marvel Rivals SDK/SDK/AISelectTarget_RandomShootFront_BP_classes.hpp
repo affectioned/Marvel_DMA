@@ -23,15 +23,18 @@ class UAISelectTarget_RandomShootFront_BP_C final : public UPyAISelectTarget_Ran
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_RandomShootFront_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_RandomShootFront_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_RandomShootFront_BP_C")
 	}
 	static class UAISelectTarget_RandomShootFront_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_RandomShootFront_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_RandomShootFront_BP_C) == 0x000008, "Wrong alignment on UAISelectTarget_RandomShootFront_BP_C");
-static_assert(sizeof(UAISelectTarget_RandomShootFront_BP_C) == 0x000080, "Wrong size on UAISelectTarget_RandomShootFront_BP_C");
+DUMPER7_ASSERTS_UAISelectTarget_RandomShootFront_BP_C;
 
 }
 

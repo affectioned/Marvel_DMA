@@ -24,9 +24,7 @@ struct PyAbility_102742_OnTargetTaskValidData final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_102742_OnTargetTaskValidData) == 0x000008, "Wrong alignment on PyAbility_102742_OnTargetTaskValidData");
-static_assert(sizeof(PyAbility_102742_OnTargetTaskValidData) == 0x000168, "Wrong size on PyAbility_102742_OnTargetTaskValidData");
-static_assert(offsetof(PyAbility_102742_OnTargetTaskValidData, Data) == 0x000000, "Member 'PyAbility_102742_OnTargetTaskValidData::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102742_OnTargetTaskValidData;
 
 // PythonFunction PyAbility_102742.PyAbility_102742.OnWaitTaskReleaseAction
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_102742_OnWaitTaskReleaseAction final
 public:
 	float                                         TimeWaited;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102742_OnWaitTaskReleaseAction) == 0x000004, "Wrong alignment on PyAbility_102742_OnWaitTaskReleaseAction");
-static_assert(sizeof(PyAbility_102742_OnWaitTaskReleaseAction) == 0x000004, "Wrong size on PyAbility_102742_OnWaitTaskReleaseAction");
-static_assert(offsetof(PyAbility_102742_OnWaitTaskReleaseAction, TimeWaited) == 0x000000, "Member 'PyAbility_102742_OnWaitTaskReleaseAction::TimeWaited' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102742_OnWaitTaskReleaseAction;
 
 // PythonFunction PyAbility_102742.PyUIC_SelectTarget_102742.GetLocationFromActor
 // 0x0020 (0x0020 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIC_SelectTarget_102742_GetLocationFromActor) == 0x000008, "Wrong alignment on PyUIC_SelectTarget_102742_GetLocationFromActor");
-static_assert(sizeof(PyUIC_SelectTarget_102742_GetLocationFromActor) == 0x000020, "Wrong size on PyUIC_SelectTarget_102742_GetLocationFromActor");
-static_assert(offsetof(PyUIC_SelectTarget_102742_GetLocationFromActor, InActor) == 0x000000, "Member 'PyUIC_SelectTarget_102742_GetLocationFromActor::InActor' has a wrong offset!");
-static_assert(offsetof(PyUIC_SelectTarget_102742_GetLocationFromActor, ReturnValue) == 0x000008, "Member 'PyUIC_SelectTarget_102742_GetLocationFromActor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SelectTarget_102742_GetLocationFromActor;
 
 }
 

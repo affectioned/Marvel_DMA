@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101411.PyAbility_101411
-// 0x0000 (0x4110 - 0x4110)
+// 0x0000 (0x44B0 - 0x44B0)
 class UPyAbility_101411 : public UAbility_101411
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101411">();
+		STATIC_CLASS_IMPL("PyAbility_101411")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101411")
 	}
 	static class UPyAbility_101411* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101411>();
 	}
 };
-static_assert(alignof(UPyAbility_101411) == 0x000010, "Wrong alignment on UPyAbility_101411");
-static_assert(sizeof(UPyAbility_101411) == 0x004110, "Wrong size on UPyAbility_101411");
+DUMPER7_ASSERTS_UPyAbility_101411;
 
 // PythonClass PyAbility_101411.PyCue_Buff_Loop_10141101
-// 0x0000 (0x1660 - 0x1660)
+// 0x0000 (0x1710 - 0x1710)
 class APyCue_Buff_Loop_10141101 final : public ACueNotify_10141101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10141101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10141101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10141101")
 	}
 	static class APyCue_Buff_Loop_10141101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10141101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10141101) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10141101");
-static_assert(sizeof(APyCue_Buff_Loop_10141101) == 0x001660, "Wrong size on APyCue_Buff_Loop_10141101");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10141101;
 
 }
 

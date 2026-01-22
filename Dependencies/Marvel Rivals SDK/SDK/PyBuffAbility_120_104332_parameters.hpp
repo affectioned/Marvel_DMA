@@ -25,11 +25,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10433202_OnOwnerApplyDamage) == 0x000008, "Wrong alignment on PyBuffAbility_120_10433202_OnOwnerApplyDamage");
-static_assert(sizeof(PyBuffAbility_120_10433202_OnOwnerApplyDamage) == 0x000028, "Wrong size on PyBuffAbility_120_10433202_OnOwnerApplyDamage");
-static_assert(offsetof(PyBuffAbility_120_10433202_OnOwnerApplyDamage, Source) == 0x000000, "Member 'PyBuffAbility_120_10433202_OnOwnerApplyDamage::Source' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10433202_OnOwnerApplyDamage, Target) == 0x000008, "Member 'PyBuffAbility_120_10433202_OnOwnerApplyDamage::Target' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10433202_OnOwnerApplyDamage, ParamHandle) == 0x000010, "Member 'PyBuffAbility_120_10433202_OnOwnerApplyDamage::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10433202_OnOwnerApplyDamage;
 
 }
 

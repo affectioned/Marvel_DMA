@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_CareerPersonalRecord_BaseItem_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "PyWidget_CareerPersonalRecord_BaseItem_classes.hpp"
 
 
 namespace SDK
@@ -25,25 +25,28 @@ class UPyWidget_CollectReplayItem_Data final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CollectReplayItem_Data">();
+		STATIC_CLASS_IMPL("PyWidget_CollectReplayItem_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CollectReplayItem_Data")
 	}
 	static class UPyWidget_CollectReplayItem_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CollectReplayItem_Data>();
 	}
 };
-static_assert(alignof(UPyWidget_CollectReplayItem_Data) == 0x000008, "Wrong alignment on UPyWidget_CollectReplayItem_Data");
-static_assert(sizeof(UPyWidget_CollectReplayItem_Data) == 0x000030, "Wrong size on UPyWidget_CollectReplayItem_Data");
+DUMPER7_ASSERTS_UPyWidget_CollectReplayItem_Data;
 
 // PythonClass PyWidget_CollectReplayItem.PyWidget_CollectReplayItem
-// 0x0150 (0x0DD0 - 0x0C80)
+// 0x0150 (0x0E20 - 0x0CD0)
 class UPyWidget_CollectReplayItem final : public UPyWidget_CareerPersonalRecord_BaseItem
 {
 public:
-	TArray<class UTexture2D*>                     TopInfoIcons;                                      // 0x0C80(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FText>                           TopInfoTexts;                                      // 0x0C90(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UInputAction*                           PlayDemoAction;                                    // 0x0CA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        PlayDemoStyle;                                     // 0x0CA8(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     TopInfoIcons;                                      // 0x0CD0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FText>                           TopInfoTexts;                                      // 0x0CE0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UInputAction*                           PlayDemoAction;                                    // 0x0CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        PlayDemoStyle;                                     // 0x0CF8(0x0120)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -54,19 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CollectReplayItem">();
+		STATIC_CLASS_IMPL("PyWidget_CollectReplayItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CollectReplayItem")
 	}
 	static class UPyWidget_CollectReplayItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CollectReplayItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CollectReplayItem) == 0x000010, "Wrong alignment on UPyWidget_CollectReplayItem");
-static_assert(sizeof(UPyWidget_CollectReplayItem) == 0x000DD0, "Wrong size on UPyWidget_CollectReplayItem");
-static_assert(offsetof(UPyWidget_CollectReplayItem, TopInfoIcons) == 0x000C80, "Member 'UPyWidget_CollectReplayItem::TopInfoIcons' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CollectReplayItem, TopInfoTexts) == 0x000C90, "Member 'UPyWidget_CollectReplayItem::TopInfoTexts' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CollectReplayItem, PlayDemoAction) == 0x000CA0, "Member 'UPyWidget_CollectReplayItem::PlayDemoAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CollectReplayItem, PlayDemoStyle) == 0x000CA8, "Member 'UPyWidget_CollectReplayItem::PlayDemoStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CollectReplayItem;
 
 }
 

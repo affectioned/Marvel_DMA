@@ -21,9 +21,7 @@ struct PyWidget_ChatMessagePrefix_SetWidgetData final
 public:
 	TMap<class FString, class FString>            InMetaData;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_ChatMessagePrefix_SetWidgetData) == 0x000008, "Wrong alignment on PyWidget_ChatMessagePrefix_SetWidgetData");
-static_assert(sizeof(PyWidget_ChatMessagePrefix_SetWidgetData) == 0x000050, "Wrong size on PyWidget_ChatMessagePrefix_SetWidgetData");
-static_assert(offsetof(PyWidget_ChatMessagePrefix_SetWidgetData, InMetaData) == 0x000000, "Member 'PyWidget_ChatMessagePrefix_SetWidgetData::InMetaData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ChatMessagePrefix_SetWidgetData;
 
 }
 

@@ -27,12 +27,7 @@ public:
 	int32                                         total_score;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         uid;                                               // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpringFestivalRuleComponent_NotifyGoaled) == 0x000004, "Wrong alignment on PySpringFestivalRuleComponent_NotifyGoaled");
-static_assert(sizeof(PySpringFestivalRuleComponent_NotifyGoaled) == 0x000010, "Wrong size on PySpringFestivalRuleComponent_NotifyGoaled");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGoaled, battle_side) == 0x000000, "Member 'PySpringFestivalRuleComponent_NotifyGoaled::battle_side' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGoaled, goaled_score) == 0x000004, "Member 'PySpringFestivalRuleComponent_NotifyGoaled::goaled_score' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGoaled, total_score) == 0x000008, "Member 'PySpringFestivalRuleComponent_NotifyGoaled::total_score' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGoaled, uid) == 0x00000C, "Member 'PySpringFestivalRuleComponent_NotifyGoaled::uid' has a wrong offset!");
+DUMPER7_ASSERTS_PySpringFestivalRuleComponent_NotifyGoaled;
 
 // PythonFunction PySpringFestivalRuleComponent.PySpringFestivalRuleComponent.NotifyGameResult
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +36,7 @@ struct PySpringFestivalRuleComponent_NotifyGameResult final
 public:
 	EBattleSide                                   winner_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpringFestivalRuleComponent_NotifyGameResult) == 0x000001, "Wrong alignment on PySpringFestivalRuleComponent_NotifyGameResult");
-static_assert(sizeof(PySpringFestivalRuleComponent_NotifyGameResult) == 0x000001, "Wrong size on PySpringFestivalRuleComponent_NotifyGameResult");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGameResult, winner_side) == 0x000000, "Member 'PySpringFestivalRuleComponent_NotifyGameResult::winner_side' has a wrong offset!");
+DUMPER7_ASSERTS_PySpringFestivalRuleComponent_NotifyGameResult;
 
 // PythonFunction PySpringFestivalRuleComponent.PySpringFestivalRuleComponent.NotifyTackling
 // 0x0018 (0x0018 - 0x0000)
@@ -55,12 +48,7 @@ public:
 	int32                                         ability_id;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         hold_time;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpringFestivalRuleComponent_NotifyTackling) == 0x000008, "Wrong alignment on PySpringFestivalRuleComponent_NotifyTackling");
-static_assert(sizeof(PySpringFestivalRuleComponent_NotifyTackling) == 0x000018, "Wrong size on PySpringFestivalRuleComponent_NotifyTackling");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyTackling, source) == 0x000000, "Member 'PySpringFestivalRuleComponent_NotifyTackling::source' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyTackling, target) == 0x000008, "Member 'PySpringFestivalRuleComponent_NotifyTackling::target' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyTackling, ability_id) == 0x000010, "Member 'PySpringFestivalRuleComponent_NotifyTackling::ability_id' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyTackling, hold_time) == 0x000014, "Member 'PySpringFestivalRuleComponent_NotifyTackling::hold_time' has a wrong offset!");
+DUMPER7_ASSERTS_PySpringFestivalRuleComponent_NotifyTackling;
 
 // PythonFunction PySpringFestivalRuleComponent.PySpringFestivalRuleComponent.NotifyScoreNearly2Win
 // 0x0008 (0x0008 - 0x0000)
@@ -71,10 +59,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         score;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpringFestivalRuleComponent_NotifyScoreNearly2Win) == 0x000004, "Wrong alignment on PySpringFestivalRuleComponent_NotifyScoreNearly2Win");
-static_assert(sizeof(PySpringFestivalRuleComponent_NotifyScoreNearly2Win) == 0x000008, "Wrong size on PySpringFestivalRuleComponent_NotifyScoreNearly2Win");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyScoreNearly2Win, battle_side) == 0x000000, "Member 'PySpringFestivalRuleComponent_NotifyScoreNearly2Win::battle_side' has a wrong offset!");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyScoreNearly2Win, score) == 0x000004, "Member 'PySpringFestivalRuleComponent_NotifyScoreNearly2Win::score' has a wrong offset!");
+DUMPER7_ASSERTS_PySpringFestivalRuleComponent_NotifyScoreNearly2Win;
 
 // PythonFunction PySpringFestivalRuleComponent.PySpringFestivalRuleComponent.NotifyGotLongPass
 // 0x0001 (0x0001 - 0x0000)
@@ -83,9 +68,7 @@ struct PySpringFestivalRuleComponent_NotifyGotLongPass final
 public:
 	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpringFestivalRuleComponent_NotifyGotLongPass) == 0x000001, "Wrong alignment on PySpringFestivalRuleComponent_NotifyGotLongPass");
-static_assert(sizeof(PySpringFestivalRuleComponent_NotifyGotLongPass) == 0x000001, "Wrong size on PySpringFestivalRuleComponent_NotifyGotLongPass");
-static_assert(offsetof(PySpringFestivalRuleComponent_NotifyGotLongPass, battle_side) == 0x000000, "Member 'PySpringFestivalRuleComponent_NotifyGotLongPass::battle_side' has a wrong offset!");
+DUMPER7_ASSERTS_PySpringFestivalRuleComponent_NotifyGotLongPass;
 
 }
 

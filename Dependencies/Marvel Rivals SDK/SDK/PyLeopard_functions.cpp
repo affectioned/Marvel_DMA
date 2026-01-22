@@ -80,25 +80,6 @@ void APyLeopard::ReceiveEndPlay(EEndPlayReason EndReason)
 }
 
 
-// PythonFunction PyLeopard.PyLeopard.OnLevelReset
-// (Native, Public, BlueprintCallable)
-
-void APyLeopard::OnLevelReset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyLeopard", "OnLevelReset");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyLeopard.PyLeopard.SrvSetState
 // (Native, Public, BlueprintCallable)
 // Parameters:

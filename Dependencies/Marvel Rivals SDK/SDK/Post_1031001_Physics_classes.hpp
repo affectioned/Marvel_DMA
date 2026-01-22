@@ -59,41 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Post_1031001_Physics_C">();
+		BP_STATIC_CLASS_IMPL("Post_1031001_Physics_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Post_1031001_Physics_C")
 	}
 	static class UPost_1031001_Physics_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPost_1031001_Physics_C>();
 	}
 };
-static_assert(alignof(UPost_1031001_Physics_C) == 0x000010, "Wrong alignment on UPost_1031001_Physics_C");
-static_assert(sizeof(UPost_1031001_Physics_C) == 0x00F710, "Wrong size on UPost_1031001_Physics_C");
-static_assert(offsetof(UPost_1031001_Physics_C, UberGraphFrame) == 0x000450, "Member 'UPost_1031001_Physics_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimBlueprintExtension_PropertyAccess) == 0x000458, "Member 'UPost_1031001_Physics_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimBlueprintExtension_Base) == 0x000460, "Member 'UPost_1031001_Physics_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_Root) == 0x000468, "Member 'UPost_1031001_Physics_C::AnimGraphNode_Root' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_LinkedInputPose) == 0x0004A0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_LinkedInputPose' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_17) == 0x000590, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_17' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_16) == 0x0012E0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_16' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_15) == 0x002030, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_15' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_14) == 0x002D80, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_14' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_13) == 0x003AD0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_13' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_12) == 0x004820, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_12' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_11) == 0x005570, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_11' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_10) == 0x0062C0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_10' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_9) == 0x007010, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_9' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_LocalToComponentSpace) == 0x007D60, "Member 'UPost_1031001_Physics_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_ComponentToLocalSpace) == 0x007D98, "Member 'UPost_1031001_Physics_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_LayeredBoneBlend) == 0x007DD0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_8) == 0x007F40, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_8' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_7) == 0x008C90, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_7' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_6) == 0x0099E0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_6' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_5) == 0x00A730, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_5' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_4) == 0x00B480, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_4' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_3) == 0x00C1D0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_3' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_2) == 0x00CF20, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_2' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics_1) == 0x00DC70, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics_1' has a wrong offset!");
-static_assert(offsetof(UPost_1031001_Physics_C, AnimGraphNode_KawaiiPhysics) == 0x00E9C0, "Member 'UPost_1031001_Physics_C::AnimGraphNode_KawaiiPhysics' has a wrong offset!");
+DUMPER7_ASSERTS_UPost_1031001_Physics_C;
 
 }
 

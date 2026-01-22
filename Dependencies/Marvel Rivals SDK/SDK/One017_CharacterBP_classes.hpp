@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1017_CharacterBP.1017_CharacterBP_C
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class AOne017_CharacterBP_C final : public APyHumanTorchCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1017_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1017_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1017_CharacterBP_C")
 	}
 	static class AOne017_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne017_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne017_CharacterBP_C) == 0x000010, "Wrong alignment on AOne017_CharacterBP_C");
-static_assert(sizeof(AOne017_CharacterBP_C) == 0x002220, "Wrong size on AOne017_CharacterBP_C");
+DUMPER7_ASSERTS_AOne017_CharacterBP_C;
 
 }
 

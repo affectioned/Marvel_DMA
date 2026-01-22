@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	class FString                                 ReturnValue;                                       // 0x00B8(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue) == 0x000008, "Wrong alignment on UISettingReticleColorSettingHandler_BP_GetCurrentStrValue");
-static_assert(sizeof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue) == 0x0000C8, "Wrong size on UISettingReticleColorSettingHandler_BP_GetCurrentStrValue");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue, obj) == 0x000000, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentStrValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue, setting_key) == 0x000008, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentStrValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue, params) == 0x000018, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentStrValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue, o) == 0x000068, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentStrValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentStrValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentStrValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleColorSettingHandler_BP_GetCurrentStrValue;
 
 // PythonFunction Reticle.UISettingReticleColorSettingHandler.BP_OnStrValueChanged
 // 0x0168 (0x0168 - 0x0000)
@@ -46,15 +40,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C8(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0118(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged) == 0x000008, "Wrong alignment on UISettingReticleColorSettingHandler_BP_OnStrValueChanged");
-static_assert(sizeof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged) == 0x000168, "Wrong size on UISettingReticleColorSettingHandler_BP_OnStrValueChanged");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, obj) == 0x000000, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, setting_key) == 0x000008, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, params) == 0x000018, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, options) == 0x000068, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, value) == 0x0000B8, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, tags) == 0x0000C8, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnStrValueChanged, ReturnValue) == 0x000118, "Member 'UISettingReticleColorSettingHandler_BP_OnStrValueChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleColorSettingHandler_BP_OnStrValueChanged;
 
 // PythonFunction Reticle.UISettingReticleColorSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -67,13 +53,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleColorSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingReticleColorSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingReticleColorSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingReticleColorSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleColorSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleColorSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingReticleColorSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -89,15 +69,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleColorSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingReticleColorSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingReticleColorSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingReticleColorSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingReticleColorSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleColorSettingHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingReticleColorSettingHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -110,13 +82,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleColorSettingHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingReticleColorSettingHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingReticleColorSettingHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingReticleColorSettingHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingReticleColorSettingHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingReticleColorSettingHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingReticleColorSettingHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingReticleColorSettingHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleColorSettingHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingReticleColorSettingHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleColorSettingHandler_BP_IsShowStar;
 
 // PythonFunction Reticle.UISettingReticleSettingHandler.BP_OnInitialize
 // 0x0018 (0x0018 - 0x0000)
@@ -126,10 +92,7 @@ public:
 	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleSettingHandler_BP_OnInitialize) == 0x000008, "Wrong alignment on UISettingReticleSettingHandler_BP_OnInitialize");
-static_assert(sizeof(UISettingReticleSettingHandler_BP_OnInitialize) == 0x000018, "Wrong size on UISettingReticleSettingHandler_BP_OnInitialize");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnInitialize, obj) == 0x000000, "Member 'UISettingReticleSettingHandler_BP_OnInitialize::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnInitialize, setting_key) == 0x000008, "Member 'UISettingReticleSettingHandler_BP_OnInitialize::setting_key' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleSettingHandler_BP_OnInitialize;
 
 // PythonFunction Reticle.UISettingReticleSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -142,13 +105,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingReticleSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingReticleSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingReticleSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingReticleSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingReticleSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingReticleSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingReticleSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingReticleSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -164,15 +121,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingReticleSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingReticleSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingReticleSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingReticleSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingReticleSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingReticleSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingReticleSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingReticleSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingReticleSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingReticleSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleSettingHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingReticleSettingHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -185,13 +134,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleSettingHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingReticleSettingHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingReticleSettingHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingReticleSettingHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingReticleSettingHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingReticleSettingHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetDefaultValue, params) == 0x000018, "Member 'UISettingReticleSettingHandler_BP_GetDefaultValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingReticleSettingHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleSettingHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleSettingHandler_BP_GetDefaultValue;
 
 // PythonFunction Reticle.UISettingReticleSettingHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -204,13 +147,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleSettingHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingReticleSettingHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingReticleSettingHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingReticleSettingHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingReticleSettingHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingReticleSettingHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingReticleSettingHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingReticleSettingHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleSettingHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingReticleSettingHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleSettingHandler_BP_IsShowStar;
 
 // PythonFunction Reticle.UISettingEntrySaveHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -226,15 +163,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySaveHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntrySaveHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntrySaveHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntrySaveHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, setting_key) == 0x000008, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntrySaveHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySaveHandler_BP_OnBtnClicked;
 
 // PythonFunction Reticle.UISettingEntrySaveHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -250,15 +179,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySaveHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntrySaveHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntrySaveHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntrySaveHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntrySaveHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntrySaveHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntrySaveHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntrySaveHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntrySaveHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntrySaveHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntrySaveHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySaveHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingEntrySaveHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -271,13 +192,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntrySaveHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingEntrySaveHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingEntrySaveHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingEntrySaveHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingEntrySaveHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingEntrySaveHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingEntrySaveHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingEntrySaveHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySaveHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingEntrySaveHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySaveHandler_BP_IsShowStar;
 
 // PythonFunction Reticle.UISettingEntryReticleSaveSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -290,13 +205,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReticleSaveSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingEntryReticleSaveSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -312,15 +221,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryReticleSaveSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryReticleSaveSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReticleSaveSettingHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingEntryReticleSaveSettingHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -336,15 +237,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, key) == 0x000008, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReticleSaveSettingHandler_BP_OnBtnClicked;
 
 // PythonFunction Reticle.UISettingReticleTypeSettingHandler.BP_OnInitialize
 // 0x0018 (0x0018 - 0x0000)
@@ -354,10 +247,7 @@ public:
 	class UObject*                                obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 setting_key;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTypeSettingHandler_BP_OnInitialize) == 0x000008, "Wrong alignment on UISettingReticleTypeSettingHandler_BP_OnInitialize");
-static_assert(sizeof(UISettingReticleTypeSettingHandler_BP_OnInitialize) == 0x000018, "Wrong size on UISettingReticleTypeSettingHandler_BP_OnInitialize");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnInitialize, obj) == 0x000000, "Member 'UISettingReticleTypeSettingHandler_BP_OnInitialize::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnInitialize, setting_key) == 0x000008, "Member 'UISettingReticleTypeSettingHandler_BP_OnInitialize::setting_key' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTypeSettingHandler_BP_OnInitialize;
 
 // PythonFunction Reticle.UISettingReticleTypeSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -370,13 +260,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingReticleTypeSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingReticleTypeSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingReticleTypeSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingReticleTypeSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingReticleTypeSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingReticleTypeSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleTypeSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTypeSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingReticleTypeSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -392,15 +276,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleTypeSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingReticleTypeSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingReticleTypeSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingReticleTypeSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingReticleTypeSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTypeSettingHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingReticleTypeSettingHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -413,13 +289,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTypeSettingHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingReticleTypeSettingHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingReticleTypeSettingHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingReticleTypeSettingHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingReticleTypeSettingHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingReticleTypeSettingHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingReticleTypeSettingHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingReticleTypeSettingHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTypeSettingHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingReticleTypeSettingHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTypeSettingHandler_BP_IsShowStar;
 
 // PythonFunction Reticle.UISettingReticleAnimSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -432,13 +302,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingReticleAnimSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingReticleAnimSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingReticleAnimSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingReticleAnimSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingReticleAnimSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingReticleAnimSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleAnimSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleAnimSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingReticleAnimSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -454,15 +318,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleAnimSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingReticleAnimSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingReticleAnimSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingReticleAnimSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingReticleAnimSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleAnimSettingHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingReticleAnimSettingHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -475,13 +331,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleAnimSettingHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingReticleAnimSettingHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingReticleAnimSettingHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingReticleAnimSettingHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingReticleAnimSettingHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingReticleAnimSettingHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingReticleAnimSettingHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingReticleAnimSettingHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleAnimSettingHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingReticleAnimSettingHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleAnimSettingHandler_BP_IsShowStar;
 
 // PythonFunction Reticle.UISettingReticleTreatHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -494,13 +344,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTreatHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingReticleTreatHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingReticleTreatHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingReticleTreatHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingReticleTreatHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingReticleTreatHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingReticleTreatHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingReticleTreatHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleTreatHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTreatHandler_BP_GetCurrentValue;
 
 // PythonFunction Reticle.UISettingReticleTreatHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -516,15 +360,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingReticleTreatHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingReticleTreatHandler_BP_OnChanged");
-static_assert(sizeof(UISettingReticleTreatHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingReticleTreatHandler_BP_OnChanged");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingReticleTreatHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingReticleTreatHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingReticleTreatHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingReticleTreatHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingReticleTreatHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingReticleTreatHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingReticleTreatHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTreatHandler_BP_OnChanged;
 
 // PythonFunction Reticle.UISettingReticleTreatHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -537,13 +373,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTreatHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingReticleTreatHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingReticleTreatHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingReticleTreatHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingReticleTreatHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingReticleTreatHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetDefaultValue, params) == 0x000018, "Member 'UISettingReticleTreatHandler_BP_GetDefaultValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingReticleTreatHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleTreatHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTreatHandler_BP_GetDefaultValue;
 
 // PythonFunction Reticle.UISettingReticleTreatHandler.BP_GetRevertValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -556,13 +386,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingReticleTreatHandler_BP_GetRevertValue) == 0x000008, "Wrong alignment on UISettingReticleTreatHandler_BP_GetRevertValue");
-static_assert(sizeof(UISettingReticleTreatHandler_BP_GetRevertValue) == 0x0000C0, "Wrong size on UISettingReticleTreatHandler_BP_GetRevertValue");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetRevertValue, obj) == 0x000000, "Member 'UISettingReticleTreatHandler_BP_GetRevertValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetRevertValue, setting_key) == 0x000008, "Member 'UISettingReticleTreatHandler_BP_GetRevertValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetRevertValue, params) == 0x000018, "Member 'UISettingReticleTreatHandler_BP_GetRevertValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetRevertValue, o) == 0x000068, "Member 'UISettingReticleTreatHandler_BP_GetRevertValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingReticleTreatHandler_BP_GetRevertValue, ReturnValue) == 0x0000B8, "Member 'UISettingReticleTreatHandler_BP_GetRevertValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingReticleTreatHandler_BP_GetRevertValue;
 
 // PythonFunction Reticle.UISettingEntryReticleSaveOptionsGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -574,12 +398,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryReticleSaveOptionsGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryReticleSaveOptionsGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryReticleSaveOptionsGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryReticleSaveOptionsGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryReticleSaveOptionsGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReticleSaveOptionsGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryReticleSaveOptionsGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReticleSaveOptionsGenerator_BP_Gen;
 
 }
 

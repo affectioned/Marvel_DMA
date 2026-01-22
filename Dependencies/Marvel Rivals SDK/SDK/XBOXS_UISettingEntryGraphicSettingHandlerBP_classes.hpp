@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XBOXS_UISettingEntryGraphicSettingHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("XBOXS_UISettingEntryGraphicSettingHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XBOXS_UISettingEntryGraphicSettingHandlerBP_C")
 	}
 	static class UXBOXS_UISettingEntryGraphicSettingHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXBOXS_UISettingEntryGraphicSettingHandlerBP_C>();
 	}
 };
-static_assert(alignof(UXBOXS_UISettingEntryGraphicSettingHandlerBP_C) == 0x000008, "Wrong alignment on UXBOXS_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(sizeof(UXBOXS_UISettingEntryGraphicSettingHandlerBP_C) == 0x000050, "Wrong size on UXBOXS_UISettingEntryGraphicSettingHandlerBP_C");
-static_assert(offsetof(UXBOXS_UISettingEntryGraphicSettingHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UXBOXS_UISettingEntryGraphicSettingHandlerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXBOXS_UISettingEntryGraphicSettingHandlerBP_C, XSSResolution) == 0x000038, "Member 'UXBOXS_UISettingEntryGraphicSettingHandlerBP_C::XSSResolution' has a wrong offset!");
-static_assert(offsetof(UXBOXS_UISettingEntryGraphicSettingHandlerBP_C, XSSGraphic) == 0x000040, "Member 'UXBOXS_UISettingEntryGraphicSettingHandlerBP_C::XSSGraphic' has a wrong offset!");
+DUMPER7_ASSERTS_UXBOXS_UISettingEntryGraphicSettingHandlerBP_C;
 
 }
 

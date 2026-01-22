@@ -18,22 +18,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PageView.PyWidget_PageView
-// 0x0050 (0x05B8 - 0x0568)
+// 0x0060 (0x05D0 - 0x0570)
 class UPyWidget_PageView final : public UMarvelUserWidget
 {
 public:
-	class UPanelWidget*                           PageItemPanel;                                     // 0x0568(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPanelWidget*                           PageNodePanel;                                     // 0x0570(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                PrevTurn;                                          // 0x0578(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                NextTurn;                                          // 0x0580(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableDivider;                                     // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxItemPerPage;                                    // 0x058C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESlateVisibility                              PageNodePanelVisibilityWhenNotNeed;                // 0x0590(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESlateVisibility                              PageTurnVisibilityWhenNotNeed;                     // 0x0591(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_592[0x6];                                      // 0x0592(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnSelectedItemChanged;                             // 0x0598(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 old_page, int32 new_page)> OnSelectedPageChanged;            // 0x05A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UPanelWidget*                           PageItemPanel;                                     // 0x0570(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPanelWidget*                           PageNodePanel;                                     // 0x0578(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                PrevTurn;                                          // 0x0580(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                NextTurn;                                          // 0x0588(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableDivider;                                     // 0x0590(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_591[0x3];                                      // 0x0591(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxItemPerPage;                                    // 0x0594(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESlateVisibility                              PageNodePanelVisibilityWhenNotNeed;                // 0x0598(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESlateVisibility                              PageTurnVisibilityWhenNotNeed;                     // 0x0599(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59A[0x6];                                      // 0x059A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnSelectedItemChanged;                             // 0x05A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 old_page, int32 new_page)> OnSelectedPageChanged;            // 0x05B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnItemsUpdated;                                    // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,25 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PageView">();
+		STATIC_CLASS_IMPL("PyWidget_PageView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PageView")
 	}
 	static class UPyWidget_PageView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PageView>();
 	}
 };
-static_assert(alignof(UPyWidget_PageView) == 0x000008, "Wrong alignment on UPyWidget_PageView");
-static_assert(sizeof(UPyWidget_PageView) == 0x0005B8, "Wrong size on UPyWidget_PageView");
-static_assert(offsetof(UPyWidget_PageView, PageItemPanel) == 0x000568, "Member 'UPyWidget_PageView::PageItemPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, PageNodePanel) == 0x000570, "Member 'UPyWidget_PageView::PageNodePanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, PrevTurn) == 0x000578, "Member 'UPyWidget_PageView::PrevTurn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, NextTurn) == 0x000580, "Member 'UPyWidget_PageView::NextTurn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, EnableDivider) == 0x000588, "Member 'UPyWidget_PageView::EnableDivider' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, MaxItemPerPage) == 0x00058C, "Member 'UPyWidget_PageView::MaxItemPerPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, PageNodePanelVisibilityWhenNotNeed) == 0x000590, "Member 'UPyWidget_PageView::PageNodePanelVisibilityWhenNotNeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, PageTurnVisibilityWhenNotNeed) == 0x000591, "Member 'UPyWidget_PageView::PageTurnVisibilityWhenNotNeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, OnSelectedItemChanged) == 0x000598, "Member 'UPyWidget_PageView::OnSelectedItemChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PageView, OnSelectedPageChanged) == 0x0005A8, "Member 'UPyWidget_PageView::OnSelectedPageChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PageView;
 
 }
 

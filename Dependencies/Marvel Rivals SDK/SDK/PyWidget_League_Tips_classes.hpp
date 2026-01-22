@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Tips.PyWidget_League_Tips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_Tips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Show_Time;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Show_Time;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_League_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Tips")
 	}
 	static class UPyWidget_League_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Tips) == 0x000008, "Wrong alignment on UPyWidget_League_Tips");
-static_assert(sizeof(UPyWidget_League_Tips) == 0x0005C0, "Wrong size on UPyWidget_League_Tips");
-static_assert(offsetof(UPyWidget_League_Tips, Show_Time) == 0x0005BC, "Member 'UPyWidget_League_Tips::Show_Time' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Tips;
 
 }
 

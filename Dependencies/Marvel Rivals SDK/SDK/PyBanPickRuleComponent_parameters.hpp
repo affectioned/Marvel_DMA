@@ -23,9 +23,7 @@ struct PyBanPickRuleComponent_OnRep_BanPickState final
 public:
 	EBanPickState                                 LastState;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBanPickRuleComponent_OnRep_BanPickState) == 0x000001, "Wrong alignment on PyBanPickRuleComponent_OnRep_BanPickState");
-static_assert(sizeof(PyBanPickRuleComponent_OnRep_BanPickState) == 0x000001, "Wrong size on PyBanPickRuleComponent_OnRep_BanPickState");
-static_assert(offsetof(PyBanPickRuleComponent_OnRep_BanPickState, LastState) == 0x000000, "Member 'PyBanPickRuleComponent_OnRep_BanPickState::LastState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBanPickRuleComponent_OnRep_BanPickState;
 
 // PythonFunction PyBanPickRuleComponent.PyBanPickRuleComponent.notify_2c_ban_pickstate_time_change
 // 0x0008 (0x0008 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         total_time;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change) == 0x000004, "Wrong alignment on PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change");
-static_assert(sizeof(PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change) == 0x000008, "Wrong size on PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change");
-static_assert(offsetof(PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change, ban_pick_state) == 0x000000, "Member 'PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change::ban_pick_state' has a wrong offset!");
-static_assert(offsetof(PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change, total_time) == 0x000004, "Member 'PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change::total_time' has a wrong offset!");
+DUMPER7_ASSERTS_PyBanPickRuleComponent_notify_2c_ban_pickstate_time_change;
 
 }
 

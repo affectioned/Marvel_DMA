@@ -46,32 +46,7 @@ public:
 	int32                                         CallFunc_GetShadowQuality_ReturnValue;             // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue) == 0x000008, "Wrong alignment on PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue");
-static_assert(sizeof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue) == 0x000110, "Wrong size on PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, Object) == 0x000000, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, SettingKey) == 0x000008, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, Params_0) == 0x000018, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, Options) == 0x000068, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, K2Node_MakeArray_Array) == 0x0000C0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_Array_Identical_ReturnValue) == 0x0000D0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_Array_Identical_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_Array_Identical_ReturnValue_1) == 0x0000D1, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_Array_Identical_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_Array_Identical_ReturnValue_2) == 0x0000D2, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_Array_Identical_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_Array_Identical_ReturnValue_3) == 0x0000D3, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_Array_Identical_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_BooleanOR_ReturnValue) == 0x0000D4, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_BooleanOR_ReturnValue_1) == 0x0000D5, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_BooleanOR_ReturnValue_2) == 0x0000D6, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_Conv_IntToDouble_ReturnValue) == 0x0000D8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetGameUserSettings_ReturnValue) == 0x0000E0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetViewDistanceQuality_ReturnValue) == 0x0000E8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetViewDistanceQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetFoliageQuality_ReturnValue) == 0x0000EC, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetFoliageQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x0000F0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetTextureQuality_ReturnValue) == 0x0000F4, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetTextureQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetPostProcessingQuality_ReturnValue) == 0x0000F8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetPostProcessingQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetReflectionQuality_ReturnValue) == 0x0000FC, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetReflectionQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetGlobalIlluminationQuality_ReturnValue) == 0x000100, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetGlobalIlluminationQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, CallFunc_GetShadowQuality_ReturnValue) == 0x000104, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::CallFunc_GetShadowQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue, K2Node_FunctionResult_ReturnValue_ImplicitCast) == 0x000108, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue::K2Node_FunctionResult_ReturnValue_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryScalabilityHandlerBP_C_BP_GetCurrentValue;
 
 // Function PC_UISettingEntryScalabilityHandlerBP.PC_UISettingEntryScalabilityHandlerBP_C.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -84,13 +59,7 @@ public:
 	TMap<int32, class FText>                      Options;                                           // 0x0068(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	float                                         Value;                                             // 0x00B8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply) == 0x000008, "Wrong alignment on PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply");
-static_assert(sizeof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply) == 0x0000C0, "Wrong size on PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply, Object) == 0x000000, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply, SettingKey) == 0x000008, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply, Params_0) == 0x000018, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply, Options) == 0x000068, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply, Value) == 0x0000B8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryScalabilityHandlerBP_C_BP_OnApply;
 
 // Function PC_UISettingEntryScalabilityHandlerBP.PC_UISettingEntryScalabilityHandlerBP_C.BP_OnChanged
 // 0x01A0 (0x01A0 - 0x0000)
@@ -121,28 +90,7 @@ public:
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged) == 0x000008, "Wrong alignment on PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged");
-static_assert(sizeof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged) == 0x0001A0, "Wrong size on PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, Object) == 0x000000, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, SettingKey) == 0x000008, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, Params_0) == 0x000018, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, Options) == 0x000068, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, Value) == 0x0000B8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::Value' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CurrentTags) == 0x0000C0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CurrentTags' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, ReturnValue) == 0x000110, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_FTrunc_ReturnValue) == 0x000160, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, K2Node_SwitchInteger_CmpSuccess) == 0x000164, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item) == 0x000168, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_1) == 0x00016C, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_2) == 0x000170, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_3) == 0x000174, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_4) == 0x000178, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_5) == 0x00017C, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_6) == 0x000180, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_7) == 0x000184, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_Array_Get_Item_8) == 0x000188, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_GetGameUserSettings_ReturnValue) == 0x000190, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged, CallFunc_FTrunc_A_ImplicitCast) == 0x000198, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryScalabilityHandlerBP_C_BP_OnChanged;
 
 // Function PC_UISettingEntryScalabilityHandlerBP.PC_UISettingEntryScalabilityHandlerBP_C.ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP
 // 0x0108 (0x0108 - 0x0000)
@@ -172,27 +120,7 @@ public:
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP) == 0x000008, "Wrong alignment on PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP");
-static_assert(sizeof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP) == 0x000108, "Wrong size on PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, EntryPoint) == 0x000000, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_Event_Object) == 0x000008, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_Event_SettingKey) == 0x000010, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_Event_SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_Event_Params) == 0x000020, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_Event_Params' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_Event_Options) == 0x000070, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_Event_Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_Event_Value) == 0x0000C0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_FTrunc_ReturnValue) == 0x0000C4, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, K2Node_SwitchInteger_CmpSuccess) == 0x0000C8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_GetGameUserSettings_ReturnValue) == 0x0000D0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_1) == 0x0000DC, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_2) == 0x0000E0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_3) == 0x0000E4, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_4) == 0x0000E8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_5) == 0x0000EC, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_6) == 0x0000F0, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_7) == 0x0000F4, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_Array_Get_Item_8) == 0x0000F8, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_Array_Get_Item_8' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP, CallFunc_FTrunc_A_ImplicitCast) == 0x000100, "Member 'PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryScalabilityHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryScalabilityHandlerBP;
 
 }
 

@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PySelectTarget_Base">();
+		STATIC_CLASS_IMPL("BTS_PySelectTarget_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PySelectTarget_Base")
 	}
 	static class UBTS_PySelectTarget_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PySelectTarget_Base>();
 	}
 };
-static_assert(alignof(UBTS_PySelectTarget_Base) == 0x000008, "Wrong alignment on UBTS_PySelectTarget_Base");
-static_assert(sizeof(UBTS_PySelectTarget_Base) == 0x0000E0, "Wrong size on UBTS_PySelectTarget_Base");
-static_assert(offsetof(UBTS_PySelectTarget_Base, InOutTarget) == 0x0000A8, "Member 'UBTS_PySelectTarget_Base::InOutTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_PySelectTarget_Base, EnableDebug) == 0x0000D8, "Member 'UBTS_PySelectTarget_Base::EnableDebug' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PySelectTarget_Base;
 
 }
 

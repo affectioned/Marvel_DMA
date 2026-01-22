@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ModeTimeStreamRaidPanel.PyWidget_ModeTimeStreamRaidPanel
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_ModeTimeStreamRaidPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           NormalColor;                                       // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           NormalLightColor;                                  // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x05EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           CountDownColor;                                    // 0x05FC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           OvertimeColor;                                     // 0x060C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           NormalColor;                                       // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NormalLightColor;                                  // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x05F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           CountDownColor;                                    // 0x0604(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           OvertimeColor;                                     // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,21 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ModeTimeStreamRaidPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ModeTimeStreamRaidPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ModeTimeStreamRaidPanel")
 	}
 	static class UPyWidget_ModeTimeStreamRaidPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ModeTimeStreamRaidPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ModeTimeStreamRaidPanel) == 0x000008, "Wrong alignment on UPyWidget_ModeTimeStreamRaidPanel");
-static_assert(sizeof(UPyWidget_ModeTimeStreamRaidPanel) == 0x000620, "Wrong size on UPyWidget_ModeTimeStreamRaidPanel");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, NormalColor) == 0x0005BC, "Member 'UPyWidget_ModeTimeStreamRaidPanel::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, NormalLightColor) == 0x0005CC, "Member 'UPyWidget_ModeTimeStreamRaidPanel::NormalLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, AllyColor) == 0x0005DC, "Member 'UPyWidget_ModeTimeStreamRaidPanel::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, EnemyColor) == 0x0005EC, "Member 'UPyWidget_ModeTimeStreamRaidPanel::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, CountDownColor) == 0x0005FC, "Member 'UPyWidget_ModeTimeStreamRaidPanel::CountDownColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ModeTimeStreamRaidPanel, OvertimeColor) == 0x00060C, "Member 'UPyWidget_ModeTimeStreamRaidPanel::OvertimeColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ModeTimeStreamRaidPanel;
 
 }
 

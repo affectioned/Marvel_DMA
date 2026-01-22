@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ExitTransitionContainer.PyWidget_ExitTransitionContainer
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ExitTransitionContainer final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ExitTransitionContainer">();
+		STATIC_CLASS_IMPL("PyWidget_ExitTransitionContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ExitTransitionContainer")
 	}
 	static class UPyWidget_ExitTransitionContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ExitTransitionContainer>();
 	}
 };
-static_assert(alignof(UPyWidget_ExitTransitionContainer) == 0x000008, "Wrong alignment on UPyWidget_ExitTransitionContainer");
-static_assert(sizeof(UPyWidget_ExitTransitionContainer) == 0x0005C0, "Wrong size on UPyWidget_ExitTransitionContainer");
+DUMPER7_ASSERTS_UPyWidget_ExitTransitionContainer;
 
 }
 

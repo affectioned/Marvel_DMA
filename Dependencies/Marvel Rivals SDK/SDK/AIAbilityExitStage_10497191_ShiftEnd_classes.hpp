@@ -23,15 +23,18 @@ class UAIAbilityExitStage_10497191_ShiftEnd_C final : public UAIAbilityExitStage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_10497191_ShiftEnd_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_10497191_ShiftEnd_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_10497191_ShiftEnd_C")
 	}
 	static class UAIAbilityExitStage_10497191_ShiftEnd_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_10497191_ShiftEnd_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_10497191_ShiftEnd_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_10497191_ShiftEnd_C");
-static_assert(sizeof(UAIAbilityExitStage_10497191_ShiftEnd_C) == 0x000050, "Wrong size on UAIAbilityExitStage_10497191_ShiftEnd_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_10497191_ShiftEnd_C;
 
 }
 

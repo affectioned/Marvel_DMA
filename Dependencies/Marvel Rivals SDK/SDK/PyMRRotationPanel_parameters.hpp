@@ -23,9 +23,7 @@ struct PyMRRotationPanel_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRRotationPanel_ReceiveTick) == 0x000004, "Wrong alignment on PyMRRotationPanel_ReceiveTick");
-static_assert(sizeof(PyMRRotationPanel_ReceiveTick) == 0x000004, "Wrong size on PyMRRotationPanel_ReceiveTick");
-static_assert(offsetof(PyMRRotationPanel_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyMRRotationPanel_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRRotationPanel_ReceiveTick;
 
 // PythonFunction PyMRRotationPanel.PyMRRotationPanel.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyMRRotationPanel_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRRotationPanel_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMRRotationPanel_ReceiveEndPlay");
-static_assert(sizeof(PyMRRotationPanel_ReceiveEndPlay) == 0x000001, "Wrong size on PyMRRotationPanel_ReceiveEndPlay");
-static_assert(offsetof(PyMRRotationPanel_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMRRotationPanel_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRRotationPanel_ReceiveEndPlay;
 
 // PythonFunction PyMRRotationPanel.PyMRRotationPanel.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyMRRotationPanel_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRRotationPanel_SrvSetState) == 0x000008, "Wrong alignment on PyMRRotationPanel_SrvSetState");
-static_assert(sizeof(PyMRRotationPanel_SrvSetState) == 0x000010, "Wrong size on PyMRRotationPanel_SrvSetState");
-static_assert(offsetof(PyMRRotationPanel_SrvSetState, state) == 0x000000, "Member 'PyMRRotationPanel_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRRotationPanel_SrvSetState;
 
 }
 

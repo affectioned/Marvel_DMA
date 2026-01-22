@@ -18,27 +18,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105542_BP.Ability_105542_BP_C
-// 0x0F60 (0x3958 - 0x29F8)
+// 0x13C0 (0x3E08 - 0x2A48)
 class UAbility_105542_BP_C final : public UPyAbility_105542
 {
 public:
-	struct FDashAbilityInfo                       Dash_Info;                                         // 0x29F8(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x35C0(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDashAbilityInfo                       Dash_Info;                                         // 0x2A48(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3930(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105542_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105542_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105542_BP_C")
 	}
 	static class UAbility_105542_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105542_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105542_BP_C) == 0x000008, "Wrong alignment on UAbility_105542_BP_C");
-static_assert(sizeof(UAbility_105542_BP_C) == 0x003958, "Wrong size on UAbility_105542_BP_C");
-static_assert(offsetof(UAbility_105542_BP_C, Dash_Info) == 0x0029F8, "Member 'UAbility_105542_BP_C::Dash_Info' has a wrong offset!");
-static_assert(offsetof(UAbility_105542_BP_C, Trace_Rule) == 0x0035C0, "Member 'UAbility_105542_BP_C::Trace_Rule' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105542_BP_C;
 
 }
 

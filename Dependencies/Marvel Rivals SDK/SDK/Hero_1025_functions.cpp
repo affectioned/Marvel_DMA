@@ -514,6 +514,31 @@ void ACue_Scope_Loop_10259101::OnScopeEnd(class AActor* OutScope)
 }
 
 
+// Function Hero_1025.CloakAndDaggerCharacter.ClientSetCharacterType
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// Parameters:
+// EDaggerCharacterType                    InType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACloakAndDaggerCharacter::ClientSetCharacterType(EDaggerCharacterType InType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CloakAndDaggerCharacter", "ClientSetCharacterType");
+
+	Params::CloakAndDaggerCharacter_ClientSetCharacterType Parms{};
+
+	Parms.InType = InType;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1025.CloakAndDaggerCharacter.GetCurrentCharacterType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:

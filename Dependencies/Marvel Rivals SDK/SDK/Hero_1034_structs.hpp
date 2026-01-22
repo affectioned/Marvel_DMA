@@ -25,9 +25,7 @@ struct FIronManPhysicsSummonerInfo final
 public:
 	float                                         CurrentParameterValue;                             // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FIronManPhysicsSummonerInfo) == 0x000004, "Wrong alignment on FIronManPhysicsSummonerInfo");
-static_assert(sizeof(FIronManPhysicsSummonerInfo) == 0x000004, "Wrong size on FIronManPhysicsSummonerInfo");
-static_assert(offsetof(FIronManPhysicsSummonerInfo, CurrentParameterValue) == 0x000000, "Member 'FIronManPhysicsSummonerInfo::CurrentParameterValue' has a wrong offset!");
+DUMPER7_ASSERTS_FIronManPhysicsSummonerInfo;
 
 // ScriptStruct Hero_1034.IronManSpline
 // 0x0078 (0x0078 - 0x0000)
@@ -38,11 +36,7 @@ public:
 	float                                         CurvesTime;                                        // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSplineCurves                          SplineCurves;                                      // 0x0008(0x0070)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FIronManSpline) == 0x000008, "Wrong alignment on FIronManSpline");
-static_assert(sizeof(FIronManSpline) == 0x000078, "Wrong size on FIronManSpline");
-static_assert(offsetof(FIronManSpline, CurvesIndex) == 0x000000, "Member 'FIronManSpline::CurvesIndex' has a wrong offset!");
-static_assert(offsetof(FIronManSpline, CurvesTime) == 0x000004, "Member 'FIronManSpline::CurvesTime' has a wrong offset!");
-static_assert(offsetof(FIronManSpline, SplineCurves) == 0x000008, "Member 'FIronManSpline::SplineCurves' has a wrong offset!");
+DUMPER7_ASSERTS_FIronManSpline;
 
 // ScriptStruct Hero_1034.IronManMissileSpec
 // 0x0040 (0x0040 - 0x0000)
@@ -54,11 +48,7 @@ public:
 	struct FVector                                LaunchDir;                                         // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                TargetOffset;                                      // 0x0028(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FIronManMissileSpec) == 0x000008, "Wrong alignment on FIronManMissileSpec");
-static_assert(sizeof(FIronManMissileSpec) == 0x000040, "Wrong size on FIronManMissileSpec");
-static_assert(offsetof(FIronManMissileSpec, FireSocket) == 0x000000, "Member 'FIronManMissileSpec::FireSocket' has a wrong offset!");
-static_assert(offsetof(FIronManMissileSpec, LaunchDir) == 0x000010, "Member 'FIronManMissileSpec::LaunchDir' has a wrong offset!");
-static_assert(offsetof(FIronManMissileSpec, TargetOffset) == 0x000028, "Member 'FIronManMissileSpec::TargetOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FIronManMissileSpec;
 
 // ScriptStruct Hero_1034.StateBasedTimelineSpec
 // 0x0070 (0x0070 - 0x0000)
@@ -69,10 +59,7 @@ public:
 	int32                                         TimelineIndex;                                     // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FStateBasedTimelineSpec) == 0x000008, "Wrong alignment on FStateBasedTimelineSpec");
-static_assert(sizeof(FStateBasedTimelineSpec) == 0x000070, "Wrong size on FStateBasedTimelineSpec");
-static_assert(offsetof(FStateBasedTimelineSpec, RequiredTags) == 0x000000, "Member 'FStateBasedTimelineSpec::RequiredTags' has a wrong offset!");
-static_assert(offsetof(FStateBasedTimelineSpec, TimelineIndex) == 0x000068, "Member 'FStateBasedTimelineSpec::TimelineIndex' has a wrong offset!");
+DUMPER7_ASSERTS_FStateBasedTimelineSpec;
 
 }
 

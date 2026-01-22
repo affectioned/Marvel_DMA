@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_RoundsScoreBoard.PyWidget_Common_RoundsScoreBoard
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Common_RoundsScoreBoard final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           MySideAttackColor;                                 // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemySideAttackColor;                              // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefenceColor;                                      // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProgressWidthOverride;                             // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DistanceWidthOverride;                             // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           MySideAttackColor;                                 // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemySideAttackColor;                              // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefenceColor;                                      // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProgressWidthOverride;                             // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DistanceWidthOverride;                             // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_RoundsScoreBoard">();
+		STATIC_CLASS_IMPL("PyWidget_Common_RoundsScoreBoard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_RoundsScoreBoard")
 	}
 	static class UPyWidget_Common_RoundsScoreBoard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_RoundsScoreBoard>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_RoundsScoreBoard) == 0x000008, "Wrong alignment on UPyWidget_Common_RoundsScoreBoard");
-static_assert(sizeof(UPyWidget_Common_RoundsScoreBoard) == 0x0005F8, "Wrong size on UPyWidget_Common_RoundsScoreBoard");
-static_assert(offsetof(UPyWidget_Common_RoundsScoreBoard, MySideAttackColor) == 0x0005BC, "Member 'UPyWidget_Common_RoundsScoreBoard::MySideAttackColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RoundsScoreBoard, EnemySideAttackColor) == 0x0005CC, "Member 'UPyWidget_Common_RoundsScoreBoard::EnemySideAttackColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RoundsScoreBoard, DefenceColor) == 0x0005DC, "Member 'UPyWidget_Common_RoundsScoreBoard::DefenceColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RoundsScoreBoard, ProgressWidthOverride) == 0x0005EC, "Member 'UPyWidget_Common_RoundsScoreBoard::ProgressWidthOverride' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_RoundsScoreBoard, DistanceWidthOverride) == 0x0005F0, "Member 'UPyWidget_Common_RoundsScoreBoard::DistanceWidthOverride' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_RoundsScoreBoard;
 
 }
 

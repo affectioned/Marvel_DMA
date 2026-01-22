@@ -34,32 +34,28 @@ enum class EMassLOD : uint8
 struct FMassHighLODTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassHighLODTag) == 0x000001, "Wrong alignment on FMassHighLODTag");
-static_assert(sizeof(FMassHighLODTag) == 0x000001, "Wrong size on FMassHighLODTag");
+DUMPER7_ASSERTS_FMassHighLODTag;
 
 // ScriptStruct MassLOD.MassMediumLODTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassMediumLODTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassMediumLODTag) == 0x000001, "Wrong alignment on FMassMediumLODTag");
-static_assert(sizeof(FMassMediumLODTag) == 0x000001, "Wrong size on FMassMediumLODTag");
+DUMPER7_ASSERTS_FMassMediumLODTag;
 
 // ScriptStruct MassLOD.MassLowLODTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassLowLODTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassLowLODTag) == 0x000001, "Wrong alignment on FMassLowLODTag");
-static_assert(sizeof(FMassLowLODTag) == 0x000001, "Wrong size on FMassLowLODTag");
+DUMPER7_ASSERTS_FMassLowLODTag;
 
 // ScriptStruct MassLOD.MassOffLODTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassOffLODTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassOffLODTag) == 0x000001, "Wrong alignment on FMassOffLODTag");
-static_assert(sizeof(FMassOffLODTag) == 0x000001, "Wrong size on FMassOffLODTag");
+DUMPER7_ASSERTS_FMassOffLODTag;
 
 // ScriptStruct MassLOD.MassViewerInfoFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -68,8 +64,7 @@ struct alignas(0x04) FMassViewerInfoFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassViewerInfoFragment) == 0x000004, "Wrong alignment on FMassViewerInfoFragment");
-static_assert(sizeof(FMassViewerInfoFragment) == 0x000008, "Wrong size on FMassViewerInfoFragment");
+DUMPER7_ASSERTS_FMassViewerInfoFragment;
 
 // ScriptStruct MassLOD.MassVariableTickChunkFragment
 // 0x000F (0x0010 - 0x0001)
@@ -78,40 +73,35 @@ struct alignas(0x04) FMassVariableTickChunkFragment : public FMassChunkFragment
 public:
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassVariableTickChunkFragment) == 0x000004, "Wrong alignment on FMassVariableTickChunkFragment");
-static_assert(sizeof(FMassVariableTickChunkFragment) == 0x000010, "Wrong size on FMassVariableTickChunkFragment");
+DUMPER7_ASSERTS_FMassVariableTickChunkFragment;
 
 // ScriptStruct MassLOD.MassCollectLODViewerInfoTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCollectLODViewerInfoTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCollectLODViewerInfoTag) == 0x000001, "Wrong alignment on FMassCollectLODViewerInfoTag");
-static_assert(sizeof(FMassCollectLODViewerInfoTag) == 0x000001, "Wrong size on FMassCollectLODViewerInfoTag");
+DUMPER7_ASSERTS_FMassCollectLODViewerInfoTag;
 
 // ScriptStruct MassLOD.MassVisibilityCanBeSeenTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassVisibilityCanBeSeenTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassVisibilityCanBeSeenTag) == 0x000001, "Wrong alignment on FMassVisibilityCanBeSeenTag");
-static_assert(sizeof(FMassVisibilityCanBeSeenTag) == 0x000001, "Wrong size on FMassVisibilityCanBeSeenTag");
+DUMPER7_ASSERTS_FMassVisibilityCanBeSeenTag;
 
 // ScriptStruct MassLOD.MassVisibilityCulledByFrustumTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassVisibilityCulledByFrustumTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassVisibilityCulledByFrustumTag) == 0x000001, "Wrong alignment on FMassVisibilityCulledByFrustumTag");
-static_assert(sizeof(FMassVisibilityCulledByFrustumTag) == 0x000001, "Wrong size on FMassVisibilityCulledByFrustumTag");
+DUMPER7_ASSERTS_FMassVisibilityCulledByFrustumTag;
 
 // ScriptStruct MassLOD.MassVisibilityCulledByDistanceTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassVisibilityCulledByDistanceTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassVisibilityCulledByDistanceTag) == 0x000001, "Wrong alignment on FMassVisibilityCulledByDistanceTag");
-static_assert(sizeof(FMassVisibilityCulledByDistanceTag) == 0x000001, "Wrong size on FMassVisibilityCulledByDistanceTag");
+DUMPER7_ASSERTS_FMassVisibilityCulledByDistanceTag;
 
 // ScriptStruct MassLOD.MassVisualizationChunkFragment
 // 0x0007 (0x0008 - 0x0001)
@@ -120,16 +110,14 @@ struct alignas(0x04) FMassVisualizationChunkFragment final : public FMassChunkFr
 public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassVisualizationChunkFragment) == 0x000004, "Wrong alignment on FMassVisualizationChunkFragment");
-static_assert(sizeof(FMassVisualizationChunkFragment) == 0x000008, "Wrong size on FMassVisualizationChunkFragment");
+DUMPER7_ASSERTS_FMassVisualizationChunkFragment;
 
 // ScriptStruct MassLOD.MassViewerHandle
 // 0x0000 (0x0008 - 0x0008)
 struct FMassViewerHandle final : public FIndexedHandleBase
 {
 };
-static_assert(alignof(FMassViewerHandle) == 0x000004, "Wrong alignment on FMassViewerHandle");
-static_assert(sizeof(FMassViewerHandle) == 0x000008, "Wrong size on FMassViewerHandle");
+DUMPER7_ASSERTS_FMassViewerHandle;
 
 // ScriptStruct MassLOD.ViewerInfo
 // 0x0060 (0x0060 - 0x0000)
@@ -139,9 +127,7 @@ public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x58];                                       // 0x0008(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FViewerInfo) == 0x000008, "Wrong alignment on FViewerInfo");
-static_assert(sizeof(FViewerInfo) == 0x000060, "Wrong size on FViewerInfo");
-static_assert(offsetof(FViewerInfo, PlayerController) == 0x000000, "Member 'FViewerInfo::PlayerController' has a wrong offset!");
+DUMPER7_ASSERTS_FViewerInfo;
 
 // ScriptStruct MassLOD.MassSimulationLODFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -150,8 +136,7 @@ struct alignas(0x04) FMassSimulationLODFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationLODFragment) == 0x000004, "Wrong alignment on FMassSimulationLODFragment");
-static_assert(sizeof(FMassSimulationLODFragment) == 0x000008, "Wrong size on FMassSimulationLODFragment");
+DUMPER7_ASSERTS_FMassSimulationLODFragment;
 
 // ScriptStruct MassLOD.MassSimulationVariableTickFragment
 // 0x0010 (0x0010 - 0x0000)
@@ -160,16 +145,14 @@ struct alignas(0x08) FMassSimulationVariableTickFragment final : public FMassFra
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationVariableTickFragment) == 0x000008, "Wrong alignment on FMassSimulationVariableTickFragment");
-static_assert(sizeof(FMassSimulationVariableTickFragment) == 0x000010, "Wrong size on FMassSimulationVariableTickFragment");
+DUMPER7_ASSERTS_FMassSimulationVariableTickFragment;
 
 // ScriptStruct MassLOD.MassSimulationVariableTickChunkFragment
 // 0x0000 (0x0010 - 0x0010)
 struct FMassSimulationVariableTickChunkFragment final : public FMassVariableTickChunkFragment
 {
 };
-static_assert(alignof(FMassSimulationVariableTickChunkFragment) == 0x000004, "Wrong alignment on FMassSimulationVariableTickChunkFragment");
-static_assert(sizeof(FMassSimulationVariableTickChunkFragment) == 0x000010, "Wrong size on FMassSimulationVariableTickChunkFragment");
+DUMPER7_ASSERTS_FMassSimulationVariableTickChunkFragment;
 
 // ScriptStruct MassLOD.MassSimulationLODParameters
 // 0x0028 (0x0028 - 0x0000)
@@ -182,12 +165,7 @@ public:
 	bool                                          bSetLODTags;                                       // 0x0024(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationLODParameters) == 0x000004, "Wrong alignment on FMassSimulationLODParameters");
-static_assert(sizeof(FMassSimulationLODParameters) == 0x000028, "Wrong size on FMassSimulationLODParameters");
-static_assert(offsetof(FMassSimulationLODParameters, LODDistance) == 0x000000, "Member 'FMassSimulationLODParameters::LODDistance' has a wrong offset!");
-static_assert(offsetof(FMassSimulationLODParameters, BufferHysteresisOnDistancePercentage) == 0x000010, "Member 'FMassSimulationLODParameters::BufferHysteresisOnDistancePercentage' has a wrong offset!");
-static_assert(offsetof(FMassSimulationLODParameters, LODMaxCount) == 0x000014, "Member 'FMassSimulationLODParameters::LODMaxCount' has a wrong offset!");
-static_assert(offsetof(FMassSimulationLODParameters, bSetLODTags) == 0x000024, "Member 'FMassSimulationLODParameters::bSetLODTags' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSimulationLODParameters;
 
 // ScriptStruct MassLOD.MassSimulationVariableTickParameters
 // 0x0014 (0x0014 - 0x0000)
@@ -198,10 +176,7 @@ public:
 	bool                                          bSpreadFirstSimulationUpdate;                      // 0x0010(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationVariableTickParameters) == 0x000004, "Wrong alignment on FMassSimulationVariableTickParameters");
-static_assert(sizeof(FMassSimulationVariableTickParameters) == 0x000014, "Wrong size on FMassSimulationVariableTickParameters");
-static_assert(offsetof(FMassSimulationVariableTickParameters, TickRates) == 0x000000, "Member 'FMassSimulationVariableTickParameters::TickRates' has a wrong offset!");
-static_assert(offsetof(FMassSimulationVariableTickParameters, bSpreadFirstSimulationUpdate) == 0x000010, "Member 'FMassSimulationVariableTickParameters::bSpreadFirstSimulationUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSimulationVariableTickParameters;
 
 // ScriptStruct MassLOD.MassSimulationLODSharedFragment
 // 0x2018 (0x2018 - 0x0000)
@@ -210,8 +185,7 @@ struct alignas(0x08) FMassSimulationLODSharedFragment final : public FMassShared
 public:
 	uint8                                         Pad_0[0x2018];                                     // 0x0000(0x2018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationLODSharedFragment) == 0x000008, "Wrong alignment on FMassSimulationLODSharedFragment");
-static_assert(sizeof(FMassSimulationLODSharedFragment) == 0x002018, "Wrong size on FMassSimulationLODSharedFragment");
+DUMPER7_ASSERTS_FMassSimulationLODSharedFragment;
 
 // ScriptStruct MassLOD.MassSimulationVariableTickSharedFragment
 // 0x0028 (0x0028 - 0x0000)
@@ -220,8 +194,7 @@ struct alignas(0x08) FMassSimulationVariableTickSharedFragment final : public FM
 public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSimulationVariableTickSharedFragment) == 0x000008, "Wrong alignment on FMassSimulationVariableTickSharedFragment");
-static_assert(sizeof(FMassSimulationVariableTickSharedFragment) == 0x000028, "Wrong size on FMassSimulationVariableTickSharedFragment");
+DUMPER7_ASSERTS_FMassSimulationVariableTickSharedFragment;
 
 }
 

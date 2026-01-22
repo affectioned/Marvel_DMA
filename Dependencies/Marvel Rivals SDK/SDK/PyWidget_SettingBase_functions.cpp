@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_DrawBtn.OnInitialized
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Setting_DrawBtn::OnInitialized()
+void UPyWidget_SettingDesc::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_DrawBtn", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_SettingDesc", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -36,15 +36,174 @@ void UPyWidget_Setting_DrawBtn::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_SettingBase.PyWidget_Corona_Item.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.PostSetButtonSuccess
+// (Native, Public, BlueprintCallable)
 
-void UPyWidget_Corona_Item::Construct()
+void UPyWidget_SettingDesc::PostSetButtonSuccess()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Corona_Item", "Construct");
+		Func = Class->GetFunction("PyWidget_SettingDesc", "PostSetButtonSuccess");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.PostSetButtonFailed
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_SettingDesc::PostSetButtonFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "PostSetButtonFailed");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetPreBindText
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    text                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyWidget_SettingDesc::SetPreBindText(const class FString& text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetPreBindText");
+
+	Params::PyWidget_SettingDesc_SetPreBindText Parms{};
+
+	Parms.text = std::move(text);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetBindSuccessTips
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    key1                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    key2                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyWidget_SettingDesc::SetBindSuccessTips(int32 type, const class FString& key1, const class FString& key2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetBindSuccessTips");
+
+	Params::PyWidget_SettingDesc_SetBindSuccessTips Parms{};
+
+	Parms.type = type;
+	Parms.key1 = std::move(key1);
+	Parms.key2 = std::move(key2);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetBindConflictTips
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    key1                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    key2                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    key3                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UPyWidget_SettingDesc::SetBindConflictTips(const class FString& key1, const class FString& key2, const class FString& key3)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetBindConflictTips");
+
+	Params::PyWidget_SettingDesc_SetBindConflictTips Parms{};
+
+	Parms.key1 = std::move(key1);
+	Parms.key2 = std::move(key2);
+	Parms.key3 = std::move(key3);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetUndoSuccessTips
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_SettingDesc::SetUndoSuccessTips()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetUndoSuccessTips");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetDiscordUnbindTips
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_SettingDesc::SetDiscordUnbindTips()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetDiscordUnbindTips");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetDiscordU13Tips
+// (Native, Public, BlueprintCallable)
+
+void UPyWidget_SettingDesc::SetDiscordU13Tips()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_SettingDesc", "SetDiscordU13Tips");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -165,6 +324,148 @@ void UPyWidget_Setting_SwitchButton::ShowSwitchBg(int32 is_open)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Setting_Item::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnMouseEnter
+// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPyWidget_Setting_Item::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "OnMouseEnter");
+
+	Params::PyWidget_Setting_Item_OnMouseEnter Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnMouseLeave
+// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPyWidget_Setting_Item::OnMouseLeave(const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "OnMouseLeave");
+
+	Params::PyWidget_Setting_Item_OnMouseLeave Parms{};
+
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.PreConstruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Setting_Item::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "PreConstruct");
+
+	Params::PyWidget_Setting_Item_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Setting_Item::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnPaint
+// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FPaintContext&                   Context                                                (Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UPyWidget_Setting_Item::OnPaint(struct FPaintContext& Context) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Setting_Item", "OnPaint");
+
+	Params::PyWidget_Setting_Item_OnPaint Parms{};
+
+	Parms.Context = std::move(Context);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	Context = std::move(Parms.Context);
 }
 
 
@@ -707,15 +1008,15 @@ void UPyWidget_Setting_Key::SetMultiKeyWidget(const struct FInputChord& key1, co
 }
 
 
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnInitialized
+// PythonFunction PyWidget_SettingBase.PyWidget_Setting_DrawBtn.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Setting_Item::OnInitialized()
+void UPyWidget_Setting_DrawBtn::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "OnInitialized");
+		Func = Class->GetFunction("PyWidget_Setting_DrawBtn", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -726,92 +1027,15 @@ void UPyWidget_Setting_Item::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnMouseEnter
-// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyWidget_Setting_Item::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "OnMouseEnter");
-
-	Params::PyWidget_Setting_Item_OnMouseEnter Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnMouseLeave
-// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyWidget_Setting_Item::OnMouseLeave(const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "OnMouseLeave");
-
-	Params::PyWidget_Setting_Item_OnMouseLeave Parms{};
-
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Setting_Item::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "PreConstruct");
-
-	Params::PyWidget_Setting_Item_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.Construct
+// PythonFunction PyWidget_SettingBase.PyWidget_Corona_Item.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Setting_Item::Construct()
+void UPyWidget_Corona_Item::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "Construct");
+		Func = Class->GetFunction("PyWidget_Corona_Item", "Construct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -819,33 +1043,6 @@ void UPyWidget_Setting_Item::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_Setting_Item.OnPaint
-// (BlueprintCosmetic, Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// struct FPaintContext&                   Context                                                (Parm, OutParm, ReferenceParm, NoDestructor)
-
-void UPyWidget_Setting_Item::OnPaint(struct FPaintContext& Context) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Setting_Item", "OnPaint");
-
-	Params::PyWidget_Setting_Item_OnPaint Parms{};
-
-	Parms.Context = std::move(Context);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	Context = std::move(Parms.Context);
 }
 
 
@@ -873,203 +1070,6 @@ void UPyWidget_Setting_VBox::OnPaint(struct FPaintContext& Context) const
 	Func->FunctionFlags = Flgs;
 
 	Context = std::move(Parms.Context);
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_SettingDesc::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.PostSetButtonSuccess
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_SettingDesc::PostSetButtonSuccess()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "PostSetButtonSuccess");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.PostSetButtonFailed
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_SettingDesc::PostSetButtonFailed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "PostSetButtonFailed");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetPreBindText
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    text                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPyWidget_SettingDesc::SetPreBindText(const class FString& text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetPreBindText");
-
-	Params::PyWidget_SettingDesc_SetPreBindText Parms{};
-
-	Parms.text = std::move(text);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetBindSuccessTips
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    key1                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    key2                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPyWidget_SettingDesc::SetBindSuccessTips(int32 type, const class FString& key1, const class FString& key2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetBindSuccessTips");
-
-	Params::PyWidget_SettingDesc_SetBindSuccessTips Parms{};
-
-	Parms.type = type;
-	Parms.key1 = std::move(key1);
-	Parms.key2 = std::move(key2);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetBindConflictTips
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    key1                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    key2                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    key3                                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPyWidget_SettingDesc::SetBindConflictTips(const class FString& key1, const class FString& key2, const class FString& key3)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetBindConflictTips");
-
-	Params::PyWidget_SettingDesc_SetBindConflictTips Parms{};
-
-	Parms.key1 = std::move(key1);
-	Parms.key2 = std::move(key2);
-	Parms.key3 = std::move(key3);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetUndoSuccessTips
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_SettingDesc::SetUndoSuccessTips()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetUndoSuccessTips");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetDiscordUnbindTips
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_SettingDesc::SetDiscordUnbindTips()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetDiscordUnbindTips");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_SettingBase.PyWidget_SettingDesc.SetDiscordU13Tips
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_SettingDesc::SetDiscordU13Tips()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_SettingDesc", "SetDiscordU13Tips");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
 }
 
 

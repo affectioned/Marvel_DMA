@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_TimeStreamRaidProgress.PyWidget_TimeStreamRaidProgress
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_TimeStreamRaidProgress final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Bg_Forward;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Bg_Stop;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Bg_Backward;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Default_Color;                                     // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Bg_Forward;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Bg_Stop;                                           // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Bg_Backward;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Default_Color;                                     // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_TimeStreamRaidProgress">();
+		STATIC_CLASS_IMPL("PyWidget_TimeStreamRaidProgress")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_TimeStreamRaidProgress")
 	}
 	static class UPyWidget_TimeStreamRaidProgress* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_TimeStreamRaidProgress>();
 	}
 };
-static_assert(alignof(UPyWidget_TimeStreamRaidProgress) == 0x000008, "Wrong alignment on UPyWidget_TimeStreamRaidProgress");
-static_assert(sizeof(UPyWidget_TimeStreamRaidProgress) == 0x0005E8, "Wrong size on UPyWidget_TimeStreamRaidProgress");
-static_assert(offsetof(UPyWidget_TimeStreamRaidProgress, Bg_Forward) == 0x0005C0, "Member 'UPyWidget_TimeStreamRaidProgress::Bg_Forward' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaidProgress, Bg_Stop) == 0x0005C8, "Member 'UPyWidget_TimeStreamRaidProgress::Bg_Stop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaidProgress, Bg_Backward) == 0x0005D0, "Member 'UPyWidget_TimeStreamRaidProgress::Bg_Backward' has a wrong offset!");
-static_assert(offsetof(UPyWidget_TimeStreamRaidProgress, Default_Color) == 0x0005D8, "Member 'UPyWidget_TimeStreamRaidProgress::Default_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_TimeStreamRaidProgress;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryCMPHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryCMPHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryCMPHandler")
 	}
 	static class UUISettingEntryCMPHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryCMPHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryCMPHandler) == 0x000008, "Wrong alignment on UUISettingEntryCMPHandler");
-static_assert(sizeof(UUISettingEntryCMPHandler) == 0x000030, "Wrong size on UUISettingEntryCMPHandler");
+DUMPER7_ASSERTS_UUISettingEntryCMPHandler;
 
 // PythonClass OtherSetting.UISettingEntryAccountDeletionHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryAccountDeletionHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryAccountDeletionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryAccountDeletionHandler")
 	}
 	static class UUISettingEntryAccountDeletionHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryAccountDeletionHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryAccountDeletionHandler) == 0x000008, "Wrong alignment on UUISettingEntryAccountDeletionHandler");
-static_assert(sizeof(UUISettingEntryAccountDeletionHandler) == 0x000030, "Wrong size on UUISettingEntryAccountDeletionHandler");
+DUMPER7_ASSERTS_UUISettingEntryAccountDeletionHandler;
 
 // PythonClass OtherSetting.UISettingEntryPerformanceCollectHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -66,15 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryPerformanceCollectHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryPerformanceCollectHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryPerformanceCollectHandler")
 	}
 	static class UUISettingEntryPerformanceCollectHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryPerformanceCollectHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryPerformanceCollectHandler) == 0x000008, "Wrong alignment on UUISettingEntryPerformanceCollectHandler");
-static_assert(sizeof(UUISettingEntryPerformanceCollectHandler) == 0x000030, "Wrong size on UUISettingEntryPerformanceCollectHandler");
+DUMPER7_ASSERTS_UUISettingEntryPerformanceCollectHandler;
 
 // PythonClass OtherSetting.UISettingEntryPlayerUltimateSkinFxHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -87,15 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryPlayerUltimateSkinFxHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryPlayerUltimateSkinFxHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryPlayerUltimateSkinFxHandler")
 	}
 	static class UUISettingEntryPlayerUltimateSkinFxHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryPlayerUltimateSkinFxHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryPlayerUltimateSkinFxHandler) == 0x000008, "Wrong alignment on UUISettingEntryPlayerUltimateSkinFxHandler");
-static_assert(sizeof(UUISettingEntryPlayerUltimateSkinFxHandler) == 0x000030, "Wrong size on UUISettingEntryPlayerUltimateSkinFxHandler");
+DUMPER7_ASSERTS_UUISettingEntryPlayerUltimateSkinFxHandler;
 
 }
 

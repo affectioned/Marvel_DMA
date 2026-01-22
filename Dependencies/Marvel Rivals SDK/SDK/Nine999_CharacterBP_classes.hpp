@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 9999_CharacterBP.9999_CharacterBP_C
-// 0x0000 (0x21A0 - 0x21A0)
+// 0x0000 (0x22B0 - 0x22B0)
 class ANine999_CharacterBP_C final : public AMarvelBaseCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"9999_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("9999_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"9999_CharacterBP_C")
 	}
 	static class ANine999_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANine999_CharacterBP_C>();
 	}
 };
-static_assert(alignof(ANine999_CharacterBP_C) == 0x000010, "Wrong alignment on ANine999_CharacterBP_C");
-static_assert(sizeof(ANine999_CharacterBP_C) == 0x0021A0, "Wrong size on ANine999_CharacterBP_C");
+DUMPER7_ASSERTS_ANine999_CharacterBP_C;
 
 }
 

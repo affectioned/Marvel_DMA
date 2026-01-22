@@ -19,22 +19,25 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_CommonClanName.PyWidget_CommonClanMiniName
-// 0x00B8 (0x0678 - 0x05C0)
+// 0x00C0 (0x0688 - 0x05C8)
 class UPyWidget_CommonClanMiniName : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ClanIconColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            VerifyColor;                                       // 0x05CC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         ClanMiniNameFont;                                  // 0x05E0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanMiniNamePSFontSize;                            // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanOpacity;                                       // 0x064C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanMainColor;                                     // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanTeamColor;                                     // 0x0654(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_ClashVerify;                                   // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_ClashNormal;                                   // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_MRCVerify;                                     // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_MRCNormal;                                     // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           ClanIconColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            VerifyColor;                                       // 0x05D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ClanMiniNameFont;                                  // 0x05E8(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanMiniNamePSFontSize;                            // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanOpacity;                                       // 0x0654(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanMainColor;                                     // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanTeamColor;                                     // 0x065C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_ClashVerify;                                   // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_ClashNormal;                                   // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_MRCVerify;                                     // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_MRCNormal;                                     // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsMaxWidth;                                        // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_681[0x3];                                      // 0x0681(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxWidth;                                          // 0x0684(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,42 +48,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonClanMiniName">();
+		STATIC_CLASS_IMPL("PyWidget_CommonClanMiniName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonClanMiniName")
 	}
 	static class UPyWidget_CommonClanMiniName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonClanMiniName>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonClanMiniName) == 0x000008, "Wrong alignment on UPyWidget_CommonClanMiniName");
-static_assert(sizeof(UPyWidget_CommonClanMiniName) == 0x000678, "Wrong size on UPyWidget_CommonClanMiniName");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanIconColor) == 0x0005BC, "Member 'UPyWidget_CommonClanMiniName::ClanIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, VerifyColor) == 0x0005CC, "Member 'UPyWidget_CommonClanMiniName::VerifyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanMiniNameFont) == 0x0005E0, "Member 'UPyWidget_CommonClanMiniName::ClanMiniNameFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanMiniNamePSFontSize) == 0x000648, "Member 'UPyWidget_CommonClanMiniName::ClanMiniNamePSFontSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanOpacity) == 0x00064C, "Member 'UPyWidget_CommonClanMiniName::ClanOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanMainColor) == 0x000650, "Member 'UPyWidget_CommonClanMiniName::ClanMainColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, ClanTeamColor) == 0x000654, "Member 'UPyWidget_CommonClanMiniName::ClanTeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, Img_ClashVerify) == 0x000658, "Member 'UPyWidget_CommonClanMiniName::Img_ClashVerify' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, Img_ClashNormal) == 0x000660, "Member 'UPyWidget_CommonClanMiniName::Img_ClashNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, Img_MRCVerify) == 0x000668, "Member 'UPyWidget_CommonClanMiniName::Img_MRCVerify' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanMiniName, Img_MRCNormal) == 0x000670, "Member 'UPyWidget_CommonClanMiniName::Img_MRCNormal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonClanMiniName;
 
 // PythonClass PyWidget_Clan_CommonClanName.PyWidget_CommonClanName
-// 0x00A8 (0x0668 - 0x05C0)
+// 0x00A8 (0x0670 - 0x05C8)
 class UPyWidget_CommonClanName : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ClanNameColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         ClanNameFont;                                      // 0x05D0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanNamePSFontSize;                                // 0x0638(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanOpacity;                                       // 0x063C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanMainColor;                                     // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClanTeamColor;                                     // 0x0644(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ShadowColor;                                       // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ShadowOffset;                                      // 0x0658(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           ClanNameColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         ClanNameFont;                                      // 0x05D8(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanNamePSFontSize;                                // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanOpacity;                                       // 0x0644(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanMainColor;                                     // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClanTeamColor;                                     // 0x064C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ShadowColor;                                       // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ShadowOffset;                                      // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -91,23 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonClanName">();
+		STATIC_CLASS_IMPL("PyWidget_CommonClanName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonClanName")
 	}
 	static class UPyWidget_CommonClanName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonClanName>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonClanName) == 0x000008, "Wrong alignment on UPyWidget_CommonClanName");
-static_assert(sizeof(UPyWidget_CommonClanName) == 0x000668, "Wrong size on UPyWidget_CommonClanName");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanNameColor) == 0x0005BC, "Member 'UPyWidget_CommonClanName::ClanNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanNameFont) == 0x0005D0, "Member 'UPyWidget_CommonClanName::ClanNameFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanNamePSFontSize) == 0x000638, "Member 'UPyWidget_CommonClanName::ClanNamePSFontSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanOpacity) == 0x00063C, "Member 'UPyWidget_CommonClanName::ClanOpacity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanMainColor) == 0x000640, "Member 'UPyWidget_CommonClanName::ClanMainColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ClanTeamColor) == 0x000644, "Member 'UPyWidget_CommonClanName::ClanTeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ShadowColor) == 0x000648, "Member 'UPyWidget_CommonClanName::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonClanName, ShadowOffset) == 0x000658, "Member 'UPyWidget_CommonClanName::ShadowOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonClanName;
 
 }
 

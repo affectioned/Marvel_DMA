@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101751.PyAbility_101751
-// 0x0020 (0x2B08 - 0x2AE8)
+// 0x0020 (0x2B58 - 0x2B38)
 class UPyAbility_101751 : public UAbility_101751
 {
 public:
-	TMulticastInlineDelegate<void(int32 Num)>     OnLackFlame;                                       // 0x2AE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTooHigh;                                         // 0x2AF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Num)>     OnLackFlame;                                       // 0x2B38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTooHigh;                                         // 0x2B48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void HintLackOfFlameDomain(int32 CurNum);
@@ -33,25 +33,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101751">();
+		STATIC_CLASS_IMPL("PyAbility_101751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101751")
 	}
 	static class UPyAbility_101751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101751>();
 	}
 };
-static_assert(alignof(UPyAbility_101751) == 0x000008, "Wrong alignment on UPyAbility_101751");
-static_assert(sizeof(UPyAbility_101751) == 0x002B08, "Wrong size on UPyAbility_101751");
-static_assert(offsetof(UPyAbility_101751, OnLackFlame) == 0x002AE8, "Member 'UPyAbility_101751::OnLackFlame' has a wrong offset!");
-static_assert(offsetof(UPyAbility_101751, OnTooHigh) == 0x002AF8, "Member 'UPyAbility_101751::OnTooHigh' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101751;
 
 // PythonClass PyAbility_101751.PyUIController_101751
-// 0x0130 (0x1040 - 0x0F10)
+// 0x0130 (0x1320 - 0x11F0)
 class UPyUIController_101751 final : public UUIC_Ability
 {
 public:
-	struct FCueHintData                           HintDataLack;                                      // 0x0F10(0x0098)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FCueHintData                           HintDataHigh;                                      // 0x0FA8(0x0098)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FCueHintData                           HintDataLack;                                      // 0x11F0(0x0098)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FCueHintData                           HintDataHigh;                                      // 0x1288(0x0098)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -60,17 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101751">();
+		STATIC_CLASS_IMPL("PyUIController_101751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101751")
 	}
 	static class UPyUIController_101751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101751>();
 	}
 };
-static_assert(alignof(UPyUIController_101751) == 0x000008, "Wrong alignment on UPyUIController_101751");
-static_assert(sizeof(UPyUIController_101751) == 0x001040, "Wrong size on UPyUIController_101751");
-static_assert(offsetof(UPyUIController_101751, HintDataLack) == 0x000F10, "Member 'UPyUIController_101751::HintDataLack' has a wrong offset!");
-static_assert(offsetof(UPyUIController_101751, HintDataHigh) == 0x000FA8, "Member 'UPyUIController_101751::HintDataHigh' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_101751;
 
 }
 

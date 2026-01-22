@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_Secondary_VoteHero.PyWidget_Activity120_Secondary_VoteHero
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_Activity120_Secondary_VoteHero final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class UTexture2D*>                HeroImageDict;                                     // 0x05C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UPyWidgetCommonChooseNumber*            WBP_ChooseNumber;                                  // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, class UTexture2D*>                HeroImageDict;                                     // 0x05C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UPyWidgetCommonChooseNumber*            WBP_ChooseNumber;                                  // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_Secondary_VoteHero">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_Secondary_VoteHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_Secondary_VoteHero")
 	}
 	static class UPyWidget_Activity120_Secondary_VoteHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_Secondary_VoteHero>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_Secondary_VoteHero) == 0x000008, "Wrong alignment on UPyWidget_Activity120_Secondary_VoteHero");
-static_assert(sizeof(UPyWidget_Activity120_Secondary_VoteHero) == 0x000618, "Wrong size on UPyWidget_Activity120_Secondary_VoteHero");
-static_assert(offsetof(UPyWidget_Activity120_Secondary_VoteHero, HeroImageDict) == 0x0005C0, "Member 'UPyWidget_Activity120_Secondary_VoteHero::HeroImageDict' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_Secondary_VoteHero, WBP_ChooseNumber) == 0x000610, "Member 'UPyWidget_Activity120_Secondary_VoteHero::WBP_ChooseNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_Secondary_VoteHero;
 
 }
 

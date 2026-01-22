@@ -33,21 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyThroughWallTraceConfig">();
+		STATIC_CLASS_IMPL("PyThroughWallTraceConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyThroughWallTraceConfig")
 	}
 	static class UPyThroughWallTraceConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyThroughWallTraceConfig>();
 	}
 };
-static_assert(alignof(UPyThroughWallTraceConfig) == 0x000008, "Wrong alignment on UPyThroughWallTraceConfig");
-static_assert(sizeof(UPyThroughWallTraceConfig) == 0x000140, "Wrong size on UPyThroughWallTraceConfig");
-static_assert(offsetof(UPyThroughWallTraceConfig, WallHackByInstigatorTags) == 0x000038, "Member 'UPyThroughWallTraceConfig::WallHackByInstigatorTags' has a wrong offset!");
-static_assert(offsetof(UPyThroughWallTraceConfig, HeroIDs) == 0x0000A0, "Member 'UPyThroughWallTraceConfig::HeroIDs' has a wrong offset!");
-static_assert(offsetof(UPyThroughWallTraceConfig, WallHackAllTag) == 0x0000B0, "Member 'UPyThroughWallTraceConfig::WallHackAllTag' has a wrong offset!");
-static_assert(offsetof(UPyThroughWallTraceConfig, WallHackPairSourceTag) == 0x0000BC, "Member 'UPyThroughWallTraceConfig::WallHackPairSourceTag' has a wrong offset!");
-static_assert(offsetof(UPyThroughWallTraceConfig, WallHackPairTargetTag) == 0x0000C8, "Member 'UPyThroughWallTraceConfig::WallHackPairTargetTag' has a wrong offset!");
-static_assert(offsetof(UPyThroughWallTraceConfig, NotVisibleTag) == 0x0000D8, "Member 'UPyThroughWallTraceConfig::NotVisibleTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyThroughWallTraceConfig;
 
 // PythonClass PySignalTraceConfig.PyTeamSideTraceConfig
 // 0x0008 (0x0040 - 0x0038)
@@ -60,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamSideTraceConfig">();
+		STATIC_CLASS_IMPL("PyTeamSideTraceConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamSideTraceConfig")
 	}
 	static class UPyTeamSideTraceConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamSideTraceConfig>();
 	}
 };
-static_assert(alignof(UPyTeamSideTraceConfig) == 0x000008, "Wrong alignment on UPyTeamSideTraceConfig");
-static_assert(sizeof(UPyTeamSideTraceConfig) == 0x000040, "Wrong size on UPyTeamSideTraceConfig");
-static_assert(offsetof(UPyTeamSideTraceConfig, IsEnemy) == 0x000038, "Member 'UPyTeamSideTraceConfig::IsEnemy' has a wrong offset!");
-static_assert(offsetof(UPyTeamSideTraceConfig, IsAlly) == 0x000039, "Member 'UPyTeamSideTraceConfig::IsAlly' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTeamSideTraceConfig;
 
 }
 

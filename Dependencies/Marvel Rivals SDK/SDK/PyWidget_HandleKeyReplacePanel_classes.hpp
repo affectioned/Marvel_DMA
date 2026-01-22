@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HandleKeyReplacePanel.PyWidget_HandleKeyReplacePanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HandleKeyReplacePanel final : public UPyMarvelUserWidget
 {
 public:
@@ -29,24 +29,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HandleKeyReplacePanel">();
+		STATIC_CLASS_IMPL("PyWidget_HandleKeyReplacePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HandleKeyReplacePanel")
 	}
 	static class UPyWidget_HandleKeyReplacePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HandleKeyReplacePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_HandleKeyReplacePanel) == 0x000008, "Wrong alignment on UPyWidget_HandleKeyReplacePanel");
-static_assert(sizeof(UPyWidget_HandleKeyReplacePanel) == 0x0005C0, "Wrong size on UPyWidget_HandleKeyReplacePanel");
+DUMPER7_ASSERTS_UPyWidget_HandleKeyReplacePanel;
 
 // PythonClass PyWidget_HandleKeyReplacePanel.PyWidget_HandleReplaceKey
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_HandleReplaceKey final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   GamepadKey;                                        // 0x05C0(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture*                               KeyIcon;                                           // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   GamepadKey;                                        // 0x05C8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               KeyIcon;                                           // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -55,17 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HandleReplaceKey">();
+		STATIC_CLASS_IMPL("PyWidget_HandleReplaceKey")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HandleReplaceKey")
 	}
 	static class UPyWidget_HandleReplaceKey* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HandleReplaceKey>();
 	}
 };
-static_assert(alignof(UPyWidget_HandleReplaceKey) == 0x000008, "Wrong alignment on UPyWidget_HandleReplaceKey");
-static_assert(sizeof(UPyWidget_HandleReplaceKey) == 0x0005E8, "Wrong size on UPyWidget_HandleReplaceKey");
-static_assert(offsetof(UPyWidget_HandleReplaceKey, GamepadKey) == 0x0005C0, "Member 'UPyWidget_HandleReplaceKey::GamepadKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HandleReplaceKey, KeyIcon) == 0x0005E0, "Member 'UPyWidget_HandleReplaceKey::KeyIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HandleReplaceKey;
 
 }
 

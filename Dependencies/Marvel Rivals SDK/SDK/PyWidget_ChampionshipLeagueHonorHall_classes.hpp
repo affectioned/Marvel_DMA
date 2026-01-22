@@ -24,24 +24,27 @@ class ULeagueHonorData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LeagueHonorData">();
+		STATIC_CLASS_IMPL("LeagueHonorData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeagueHonorData")
 	}
 	static class ULeagueHonorData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeagueHonorData>();
 	}
 };
-static_assert(alignof(ULeagueHonorData) == 0x000008, "Wrong alignment on ULeagueHonorData");
-static_assert(sizeof(ULeagueHonorData) == 0x000030, "Wrong size on ULeagueHonorData");
+DUMPER7_ASSERTS_ULeagueHonorData;
 
 // PythonClass PyWidget_ChampionshipLeagueHonorHall.PyWidget_ChampionshipLeagueHonorHall
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_ChampionshipLeagueHonorHall final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             ImgNoFilter;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFilter;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_ChampionshipLeagueHonorHallEntry> WidgetClassHonorEntry;             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgNoFilter;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFilter;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_ChampionshipLeagueHonorHallEntry> WidgetClassHonorEntry;             // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,18 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChampionshipLeagueHonorHall">();
+		STATIC_CLASS_IMPL("PyWidget_ChampionshipLeagueHonorHall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChampionshipLeagueHonorHall")
 	}
 	static class UPyWidget_ChampionshipLeagueHonorHall* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChampionshipLeagueHonorHall>();
 	}
 };
-static_assert(alignof(UPyWidget_ChampionshipLeagueHonorHall) == 0x000008, "Wrong alignment on UPyWidget_ChampionshipLeagueHonorHall");
-static_assert(sizeof(UPyWidget_ChampionshipLeagueHonorHall) == 0x000610, "Wrong size on UPyWidget_ChampionshipLeagueHonorHall");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHall, ImgNoFilter) == 0x0005F8, "Member 'UPyWidget_ChampionshipLeagueHonorHall::ImgNoFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHall, ImgFilter) == 0x000600, "Member 'UPyWidget_ChampionshipLeagueHonorHall::ImgFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChampionshipLeagueHonorHall, WidgetClassHonorEntry) == 0x000608, "Member 'UPyWidget_ChampionshipLeagueHonorHall::WidgetClassHonorEntry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChampionshipLeagueHonorHall;
 
 }
 

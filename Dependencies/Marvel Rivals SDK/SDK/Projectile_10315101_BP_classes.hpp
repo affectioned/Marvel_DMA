@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10315101_BP.Projectile_10315101_BP_C
-// 0x03B0 (0x3F40 - 0x3B90)
+// 0x04F0 (0x4390 - 0x3EA0)
 class AProjectile_10315101_BP_C final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3B90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	ETargetActorDestroyReason                     Actor_Destroy_Reason;                              // 0x3B98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B99[0x7];                                     // 0x3B99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3BA0(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x3EA0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	ETargetActorDestroyReason                     Actor_Destroy_Reason;                              // 0x3EA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EA9[0x7];                                     // 0x3EA9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3EB0(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_Projectile_10315101_BP(int32 EntryPoint);
@@ -36,18 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10315101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10315101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10315101_BP_C")
 	}
 	static class AProjectile_10315101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10315101_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10315101_BP_C) == 0x000010, "Wrong alignment on AProjectile_10315101_BP_C");
-static_assert(sizeof(AProjectile_10315101_BP_C) == 0x003F40, "Wrong size on AProjectile_10315101_BP_C");
-static_assert(offsetof(AProjectile_10315101_BP_C, UberGraphFrame) == 0x003B90, "Member 'AProjectile_10315101_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectile_10315101_BP_C, Actor_Destroy_Reason) == 0x003B98, "Member 'AProjectile_10315101_BP_C::Actor_Destroy_Reason' has a wrong offset!");
-static_assert(offsetof(AProjectile_10315101_BP_C, Trace_Rule) == 0x003BA0, "Member 'AProjectile_10315101_BP_C::Trace_Rule' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10315101_BP_C;
 
 }
 

@@ -31,16 +31,7 @@ public:
 	class FText                                   RecentTip_41_E2E166C94C256D54F18CD8BB2E8F0CFB;     // 0x0100(0x0018)(Edit, BlueprintVisible)
 	bool                                          IsCanOperatedConfigToSaved_46_123799E94829909174AC67855A366824; // 0x0118(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHighLightSaveSettingRow_BP) == 0x000008, "Wrong alignment on FHighLightSaveSettingRow_BP");
-static_assert(sizeof(FHighLightSaveSettingRow_BP) == 0x000120, "Wrong size on FHighLightSaveSettingRow_BP");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, ResolutionRatio_27_5F8B6EFD4A4CA6385ECC18A211BBC5A5) == 0x000000, "Member 'FHighLightSaveSettingRow_BP::ResolutionRatio_27_5F8B6EFD4A4CA6385ECC18A211BBC5A5' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, ImageQuality_28_C3C2713E4B77160C6C55AF903C37E894) == 0x000038, "Member 'FHighLightSaveSettingRow_BP::ImageQuality_28_C3C2713E4B77160C6C55AF903C37E894' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, FrameRate_29_BB527295407CB99AADFF8B84DAAE1246) == 0x000070, "Member 'FHighLightSaveSettingRow_BP::FrameRate_29_BB527295407CB99AADFF8B84DAAE1246' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, OverSampling_30_2B687F50491C32B143D8BAB0C3E3EAA6) == 0x0000A8, "Member 'FHighLightSaveSettingRow_BP::OverSampling_30_2B687F50491C32B143D8BAB0C3E3EAA6' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, IsShowName_34_E820096D4B81FDB7C9EF829C28D8F5CE) == 0x0000E0, "Member 'FHighLightSaveSettingRow_BP::IsShowName_34_E820096D4B81FDB7C9EF829C28D8F5CE' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, LocalSaveTip_39_DCF7105E45B6770E9AD7E2AD9CF1CDBD) == 0x0000E8, "Member 'FHighLightSaveSettingRow_BP::LocalSaveTip_39_DCF7105E45B6770E9AD7E2AD9CF1CDBD' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, RecentTip_41_E2E166C94C256D54F18CD8BB2E8F0CFB) == 0x000100, "Member 'FHighLightSaveSettingRow_BP::RecentTip_41_E2E166C94C256D54F18CD8BB2E8F0CFB' has a wrong offset!");
-static_assert(offsetof(FHighLightSaveSettingRow_BP, IsCanOperatedConfigToSaved_46_123799E94829909174AC67855A366824) == 0x000118, "Member 'FHighLightSaveSettingRow_BP::IsCanOperatedConfigToSaved_46_123799E94829909174AC67855A366824' has a wrong offset!");
+DUMPER7_ASSERTS_FHighLightSaveSettingRow_BP;
 
 }
 

@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_ActionTip_V2.WBP_Battle_ActionTip_V2_C
-// 0x0028 (0x0610 - 0x05E8)
+// 0x0028 (0x0618 - 0x05F0)
 class UWBP_Battle_ActionTip_V2_C final : public UPyWidget_ActionTip
 {
 public:
-	class UMarvelImage*                           Img_Frame_Bottom;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame_Top;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Tip;                                       // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_KeyHint;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Beginner_Long_C*                   WBP_Beginner_Long;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame_Bottom;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame_Top;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Tip;                                       // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_KeyHint;                                      // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Beginner_Long_C*                   WBP_Beginner_Long;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_ActionTip_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_ActionTip_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_ActionTip_V2_C")
 	}
 	static class UWBP_Battle_ActionTip_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_ActionTip_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_ActionTip_V2_C) == 0x000008, "Wrong alignment on UWBP_Battle_ActionTip_V2_C");
-static_assert(sizeof(UWBP_Battle_ActionTip_V2_C) == 0x000610, "Wrong size on UWBP_Battle_ActionTip_V2_C");
-static_assert(offsetof(UWBP_Battle_ActionTip_V2_C, Img_Frame_Bottom) == 0x0005E8, "Member 'UWBP_Battle_ActionTip_V2_C::Img_Frame_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_V2_C, Img_Frame_Top) == 0x0005F0, "Member 'UWBP_Battle_ActionTip_V2_C::Img_Frame_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_V2_C, Overlay_Tip) == 0x0005F8, "Member 'UWBP_Battle_ActionTip_V2_C::Overlay_Tip' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_V2_C, Text_KeyHint) == 0x000600, "Member 'UWBP_Battle_ActionTip_V2_C::Text_KeyHint' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_V2_C, WBP_Beginner_Long) == 0x000608, "Member 'UWBP_Battle_ActionTip_V2_C::WBP_Beginner_Long' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_ActionTip_V2_C;
 
 }
 

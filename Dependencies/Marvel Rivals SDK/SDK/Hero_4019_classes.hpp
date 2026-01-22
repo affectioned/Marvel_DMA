@@ -18,26 +18,28 @@ namespace SDK
 {
 
 // Class Hero_4019.Cue_Buff_40190401
-// 0x0020 (0x1660 - 0x1640)
+// 0x0020 (0x1710 - 0x16F0)
 class ACue_Buff_40190401 final : public AMarvelCueNotify_Buff
 {
 public:
-	class UCurveFloat*                            RevivingMaterialCurve;                             // 0x1638(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1640[0x20];                                    // 0x1640(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            RevivingMaterialCurve;                             // 0x16E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16F0[0x20];                                    // 0x16F0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Cue_Buff_40190401">();
+		STATIC_CLASS_IMPL("Cue_Buff_40190401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_40190401")
 	}
 	static class ACue_Buff_40190401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_40190401>();
 	}
 };
-static_assert(alignof(ACue_Buff_40190401) == 0x000010, "Wrong alignment on ACue_Buff_40190401");
-static_assert(sizeof(ACue_Buff_40190401) == 0x001660, "Wrong size on ACue_Buff_40190401");
-static_assert(offsetof(ACue_Buff_40190401, RevivingMaterialCurve) == 0x001638, "Member 'ACue_Buff_40190401::RevivingMaterialCurve' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Buff_40190401;
 
 // Class Hero_4019.UltronBotAnimInstance
 // 0x0000 (0x0A20 - 0x0A20)
@@ -46,24 +48,27 @@ class UUltronBotAnimInstance final : public UMarvelAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UltronBotAnimInstance">();
+		STATIC_CLASS_IMPL("UltronBotAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UltronBotAnimInstance")
 	}
 	static class UUltronBotAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUltronBotAnimInstance>();
 	}
 };
-static_assert(alignof(UUltronBotAnimInstance) == 0x000010, "Wrong alignment on UUltronBotAnimInstance");
-static_assert(sizeof(UUltronBotAnimInstance) == 0x000A20, "Wrong size on UUltronBotAnimInstance");
+DUMPER7_ASSERTS_UUltronBotAnimInstance;
 
 // Class Hero_4019.UltronBotCharacter
-// 0x00E0 (0x2280 - 0x21A0)
+// 0x0130 (0x23E0 - 0x22B0)
 class AUltronBotCharacter : public AMarvelBaseCharacter
 {
 public:
-	struct FMarvelGameplayTagRequirements         DamgeRequire;                                      // 0x21A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UUltronBotMoveLogicBaseComponent*       UltronBotMoveLogic;                                // 0x2270(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2278[0x8];                                     // 0x2278(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMarvelGameplayTagRequirements         DamgeRequire;                                      // 0x22B0(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UUltronBotMoveLogicBaseComponent*       UltronBotMoveLogic;                                // 0x23D0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_23D8[0x8];                                     // 0x23D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnApplyGameplayEffectCallback(class UAbilitySystemComponent* Source, const struct FGameplayEffectSpecStackHandle& SpecHandleApplied, const struct FActiveGameplayEffectHandle& ActiveHandle);
@@ -73,34 +78,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UltronBotCharacter">();
+		STATIC_CLASS_IMPL("UltronBotCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UltronBotCharacter")
 	}
 	static class AUltronBotCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUltronBotCharacter>();
 	}
 };
-static_assert(alignof(AUltronBotCharacter) == 0x000010, "Wrong alignment on AUltronBotCharacter");
-static_assert(sizeof(AUltronBotCharacter) == 0x002280, "Wrong size on AUltronBotCharacter");
-static_assert(offsetof(AUltronBotCharacter, DamgeRequire) == 0x0021A0, "Member 'AUltronBotCharacter::DamgeRequire' has a wrong offset!");
-static_assert(offsetof(AUltronBotCharacter, UltronBotMoveLogic) == 0x002270, "Member 'AUltronBotCharacter::UltronBotMoveLogic' has a wrong offset!");
+DUMPER7_ASSERTS_AUltronBotCharacter;
 
 // Class Hero_4019.UltronBotMoveLogicBaseComponent
-// 0x0000 (0x0400 - 0x0400)
+// 0x0000 (0x0488 - 0x0488)
 class UUltronBotMoveLogicBaseComponent final : public UMarvelMoveLogicBaseComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UltronBotMoveLogicBaseComponent">();
+		STATIC_CLASS_IMPL("UltronBotMoveLogicBaseComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UltronBotMoveLogicBaseComponent")
 	}
 	static class UUltronBotMoveLogicBaseComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUltronBotMoveLogicBaseComponent>();
 	}
 };
-static_assert(alignof(UUltronBotMoveLogicBaseComponent) == 0x000008, "Wrong alignment on UUltronBotMoveLogicBaseComponent");
-static_assert(sizeof(UUltronBotMoveLogicBaseComponent) == 0x000400, "Wrong size on UUltronBotMoveLogicBaseComponent");
+DUMPER7_ASSERTS_UUltronBotMoveLogicBaseComponent;
 
 }
 

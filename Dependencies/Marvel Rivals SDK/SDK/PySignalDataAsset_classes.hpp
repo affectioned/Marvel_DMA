@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PySignalDataAsset.PySignalDataAsset
-// 0x3300 (0x33B0 - 0x00B0)
+// 0x39A0 (0x3A50 - 0x00B0)
 class UPySignalDataAsset final : public USignalDataAsset
 {
 public:
@@ -63,71 +63,31 @@ public:
 	TMap<int32, class FText>                      SpecialTargetChatPrefix;                           // 0x0518(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TSet<int32>                                   DontFindLowSculptAudioHeroList;                    // 0x0568(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5B8[0x8];                                      // 0x05B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x05C0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             ThroughWallTraceContext;                           // 0x1C20(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagQuery                      EnemyCharacterQuery;                               // 0x3280(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagQuery                      EnemySummonedQuery;                                // 0x32C8(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagQuery                      TeammateCharacterQuery;                            // 0x3310(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagQuery                      TeammateSummonedQuery;                             // 0x3358(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UPrimaryDataAsset*                      ThroughWallConfig;                                 // 0x33A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CustomPhraseSceneSignalCommID;                     // 0x33A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CustomPhraseBaseCommID;                            // 0x33AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x05C0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             ThroughWallTraceContext;                           // 0x1F70(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagQuery                      EnemyCharacterQuery;                               // 0x3920(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagQuery                      EnemySummonedQuery;                                // 0x3968(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagQuery                      TeammateCharacterQuery;                            // 0x39B0(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagQuery                      TeammateSummonedQuery;                             // 0x39F8(0x0048)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UPrimaryDataAsset*                      ThroughWallConfig;                                 // 0x3A40(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CustomPhraseSceneSignalCommID;                     // 0x3A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CustomPhraseBaseCommID;                            // 0x3A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySignalDataAsset">();
+		STATIC_CLASS_IMPL("PySignalDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySignalDataAsset")
 	}
 	static class UPySignalDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySignalDataAsset>();
 	}
 };
-static_assert(alignof(UPySignalDataAsset) == 0x000010, "Wrong alignment on UPySignalDataAsset");
-static_assert(sizeof(UPySignalDataAsset) == 0x0033B0, "Wrong size on UPySignalDataAsset");
-static_assert(offsetof(UPySignalDataAsset, EnableSignalSystem) == 0x0000B0, "Member 'UPySignalDataAsset::EnableSignalSystem' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SignalActionName) == 0x0000B8, "Member 'UPySignalDataAsset::SignalActionName' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SignalInCDText) == 0x0000C8, "Member 'UPySignalDataAsset::SignalInCDText' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SignalInCDAudioEvent) == 0x0000E0, "Member 'UPySignalDataAsset::SignalInCDAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ClickPriorities) == 0x0000E8, "Member 'UPySignalDataAsset::ClickPriorities' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, DoubleClickInterval) == 0x000138, "Member 'UPySignalDataAsset::DoubleClickInterval' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, DoubleClickPriorities) == 0x000140, "Member 'UPySignalDataAsset::DoubleClickPriorities' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, HoldDuration) == 0x000190, "Member 'UPySignalDataAsset::HoldDuration' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ShowPanelDistance) == 0x000194, "Member 'UPySignalDataAsset::ShowPanelDistance' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SignalClass) == 0x000198, "Member 'UPySignalDataAsset::SignalClass' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SignalDuration) == 0x0001A0, "Member 'UPySignalDataAsset::SignalDuration' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AllyTags) == 0x0001A8, "Member 'UPySignalDataAsset::AllyTags' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, EnemyTags) == 0x000210, "Member 'UPySignalDataAsset::EnemyTags' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, GameplayActorTags) == 0x000278, "Member 'UPySignalDataAsset::GameplayActorTags' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ResponseTag) == 0x0002E0, "Member 'UPySignalDataAsset::ResponseTag' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, HurtTeammateTag) == 0x0002EC, "Member 'UPySignalDataAsset::HurtTeammateTag' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilitySignalTag) == 0x0002F8, "Member 'UPySignalDataAsset::AbilitySignalTag' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, CDSignalAbilityInputConfig) == 0x000308, "Member 'UPySignalDataAsset::CDSignalAbilityInputConfig' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, CDSignalBlockAbilityInputs) == 0x000358, "Member 'UPySignalDataAsset::CDSignalBlockAbilityInputs' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityInputWhiteList) == 0x000368, "Member 'UPySignalDataAsset::AbilityInputWhiteList' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityStateMsgPrefix) == 0x000378, "Member 'UPySignalDataAsset::AbilityStateMsgPrefix' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityCoolDownChatMsg) == 0x000390, "Member 'UPySignalDataAsset::AbilityCoolDownChatMsg' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityCoolDownChatMsgSuffix) == 0x0003A8, "Member 'UPySignalDataAsset::AbilityCoolDownChatMsgSuffix' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityBlockChatMsg) == 0x0003C0, "Member 'UPySignalDataAsset::AbilityBlockChatMsg' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, AbilityReadyChatMsg) == 0x0003D8, "Member 'UPySignalDataAsset::AbilityReadyChatMsg' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SpecialCheckActiveList) == 0x0003F0, "Member 'UPySignalDataAsset::SpecialCheckActiveList' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SameActivateStatusPairs) == 0x000400, "Member 'UPySignalDataAsset::SameActivateStatusPairs' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, BondAbilityTag_Sender) == 0x000450, "Member 'UPySignalDataAsset::BondAbilityTag_Sender' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, BondAbilityTag_Receiver) == 0x00045C, "Member 'UPySignalDataAsset::BondAbilityTag_Receiver' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, IgnoredBondAbilityTag) == 0x000468, "Member 'UPySignalDataAsset::IgnoredBondAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ActivityIgnoredCommID) == 0x000478, "Member 'UPySignalDataAsset::ActivityIgnoredCommID' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SpecialSummonedChatName) == 0x0004C8, "Member 'UPySignalDataAsset::SpecialSummonedChatName' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, SpecialTargetChatPrefix) == 0x000518, "Member 'UPySignalDataAsset::SpecialTargetChatPrefix' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, DontFindLowSculptAudioHeroList) == 0x000568, "Member 'UPySignalDataAsset::DontFindLowSculptAudioHeroList' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, TraceContext) == 0x0005C0, "Member 'UPySignalDataAsset::TraceContext' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ThroughWallTraceContext) == 0x001C20, "Member 'UPySignalDataAsset::ThroughWallTraceContext' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, EnemyCharacterQuery) == 0x003280, "Member 'UPySignalDataAsset::EnemyCharacterQuery' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, EnemySummonedQuery) == 0x0032C8, "Member 'UPySignalDataAsset::EnemySummonedQuery' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, TeammateCharacterQuery) == 0x003310, "Member 'UPySignalDataAsset::TeammateCharacterQuery' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, TeammateSummonedQuery) == 0x003358, "Member 'UPySignalDataAsset::TeammateSummonedQuery' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, ThroughWallConfig) == 0x0033A0, "Member 'UPySignalDataAsset::ThroughWallConfig' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, CustomPhraseSceneSignalCommID) == 0x0033A8, "Member 'UPySignalDataAsset::CustomPhraseSceneSignalCommID' has a wrong offset!");
-static_assert(offsetof(UPySignalDataAsset, CustomPhraseBaseCommID) == 0x0033AC, "Member 'UPySignalDataAsset::CustomPhraseBaseCommID' has a wrong offset!");
+DUMPER7_ASSERTS_UPySignalDataAsset;
 
 }
 

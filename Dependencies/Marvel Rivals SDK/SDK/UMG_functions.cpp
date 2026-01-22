@@ -1872,6 +1872,31 @@ void UWidgetComponent::SetManuallyRedraw(bool bUseManualRedraw)
 }
 
 
+// Function UMG.WidgetComponent.SetOnlyPrepassWhenRedrawRequested
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UWidgetComponent::SetOnlyPrepassWhenRedrawRequested(bool bInValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WidgetComponent", "SetOnlyPrepassWhenRedrawRequested");
+
+	Params::WidgetComponent_SetOnlyPrepassWhenRedrawRequested Parms{};
+
+	Parms.bInValue = bInValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UMG.WidgetComponent.SetOwnerPlayer
 // (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
@@ -4538,6 +4563,31 @@ void UListView::ScrollIndexIntoView(int32 Index_0)
 }
 
 
+// Function UMG.ListView.SetFocusIntoItemChild
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// const bool                              FocusIntoItemChild                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UListView::SetFocusIntoItemChild(const bool FocusIntoItemChild)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "SetFocusIntoItemChild");
+
+	Params::ListView_SetFocusIntoItemChild Parms{};
+
+	Parms.FocusIntoItemChild = FocusIntoItemChild;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function UMG.ListView.SetScrollBarOpacity
 // (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
@@ -4610,6 +4660,94 @@ void UListView::SetSelectionMode(ESelectionMode SelectionMode_0)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ListView.UpdateItemObject
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          Item                                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::UpdateItemObject(class UObject* Item)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "UpdateItemObject");
+
+	Params::ListView_UpdateItemObject Parms{};
+
+	Parms.Item = Item;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.UpdateItemObjectToIndex
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          NewItem                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ItemIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::UpdateItemObjectToIndex(class UObject* NewItem, int32 ItemIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "UpdateItemObjectToIndex");
+
+	Params::ListView_UpdateItemObjectToIndex Parms{};
+
+	Parms.NewItem = NewItem;
+	Parms.ItemIndex = ItemIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function UMG.ListView.UpdateItemObjectToItem
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          NewItem                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          OldItem                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UListView::UpdateItemObjectToItem(class UObject* NewItem, class UObject* OldItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ListView", "UpdateItemObjectToItem");
+
+	Params::ListView_UpdateItemObjectToItem Parms{};
+
+	Parms.NewItem = NewItem;
+	Parms.OldItem = OldItem;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -15145,6 +15283,31 @@ void UProgressBar::SetProgressBarStyle(const struct FProgressBarStyle& InStyle)
 }
 
 
+// Function UMG.ProgressBar.GetPercent
+// (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UProgressBar::GetPercent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ProgressBar", "GetPercent");
+
+	Params::ProgressBar_GetPercent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function UMG.RetainerBox.GetRenderTarget
 // (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
@@ -16822,6 +16985,31 @@ void UScrollBox::SetConsumeScrollEventWhenScrollBarVisible(bool NeedConsume)
 	Params::ScrollBox_SetConsumeScrollEventWhenScrollBarVisible Parms{};
 
 	Parms.NeedConsume = NeedConsume;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function UMG.ScrollBox.SetFocusIntoItemChild
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
+// Parameters:
+// const bool                              FocusIntoItemChild                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UScrollBox::SetFocusIntoItemChild(const bool FocusIntoItemChild)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ScrollBox", "SetFocusIntoItemChild");
+
+	Params::ScrollBox_SetFocusIntoItemChild Parms{};
+
+	Parms.FocusIntoItemChild = FocusIntoItemChild;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

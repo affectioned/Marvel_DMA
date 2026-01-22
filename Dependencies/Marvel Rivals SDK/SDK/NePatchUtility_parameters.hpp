@@ -27,12 +27,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_AddContainerHeaderData) == 0x000008, "Wrong alignment on NePatchUtility_AddContainerHeaderData");
-static_assert(sizeof(NePatchUtility_AddContainerHeaderData) == 0x000038, "Wrong size on NePatchUtility_AddContainerHeaderData");
-static_assert(offsetof(NePatchUtility_AddContainerHeaderData, UCasFile) == 0x000000, "Member 'NePatchUtility_AddContainerHeaderData::UCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddContainerHeaderData, ContainerEntryChunkID) == 0x000010, "Member 'NePatchUtility_AddContainerHeaderData::ContainerEntryChunkID' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddContainerHeaderData, Data) == 0x000020, "Member 'NePatchUtility_AddContainerHeaderData::Data' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddContainerHeaderData, ReturnValue) == 0x000030, "Member 'NePatchUtility_AddContainerHeaderData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_AddContainerHeaderData;
 
 // Function NePatchUtility.NePatchUtility.AddPakData
 // 0x0038 (0x0038 - 0x0000)
@@ -45,12 +40,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_AddPakData) == 0x000008, "Wrong alignment on NePatchUtility_AddPakData");
-static_assert(sizeof(NePatchUtility_AddPakData) == 0x000038, "Wrong size on NePatchUtility_AddPakData");
-static_assert(offsetof(NePatchUtility_AddPakData, PakFile) == 0x000000, "Member 'NePatchUtility_AddPakData::PakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddPakData, Filename) == 0x000010, "Member 'NePatchUtility_AddPakData::Filename' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddPakData, Data) == 0x000020, "Member 'NePatchUtility_AddPakData::Data' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddPakData, ReturnValue) == 0x000030, "Member 'NePatchUtility_AddPakData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_AddPakData;
 
 // Function NePatchUtility.NePatchUtility.AddShaderCodeData
 // 0x0038 (0x0038 - 0x0000)
@@ -63,12 +53,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_AddShaderCodeData) == 0x000008, "Wrong alignment on NePatchUtility_AddShaderCodeData");
-static_assert(sizeof(NePatchUtility_AddShaderCodeData) == 0x000038, "Wrong size on NePatchUtility_AddShaderCodeData");
-static_assert(offsetof(NePatchUtility_AddShaderCodeData, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_AddShaderCodeData::ShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddShaderCodeData, ShaderHash) == 0x000010, "Member 'NePatchUtility_AddShaderCodeData::ShaderHash' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddShaderCodeData, Data) == 0x000020, "Member 'NePatchUtility_AddShaderCodeData::Data' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddShaderCodeData, ReturnValue) == 0x000030, "Member 'NePatchUtility_AddShaderCodeData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_AddShaderCodeData;
 
 // Function NePatchUtility.NePatchUtility.AddUCasData
 // 0x00D0 (0x00D0 - 0x0000)
@@ -81,12 +66,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x00C8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_AddUCasData) == 0x000008, "Wrong alignment on NePatchUtility_AddUCasData");
-static_assert(sizeof(NePatchUtility_AddUCasData) == 0x0000D0, "Wrong size on NePatchUtility_AddUCasData");
-static_assert(offsetof(NePatchUtility_AddUCasData, UCasFile) == 0x000000, "Member 'NePatchUtility_AddUCasData::UCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasData, Entry) == 0x000010, "Member 'NePatchUtility_AddUCasData::Entry' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasData, Data) == 0x0000B8, "Member 'NePatchUtility_AddUCasData::Data' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasData, ReturnValue) == 0x0000C8, "Member 'NePatchUtility_AddUCasData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_AddUCasData;
 
 // Function NePatchUtility.NePatchUtility.AddUCasDataFromResultUtoc
 // 0x0048 (0x0048 - 0x0000)
@@ -100,13 +80,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_AddUCasDataFromResultUtoc) == 0x000008, "Wrong alignment on NePatchUtility_AddUCasDataFromResultUtoc");
-static_assert(sizeof(NePatchUtility_AddUCasDataFromResultUtoc) == 0x000048, "Wrong size on NePatchUtility_AddUCasDataFromResultUtoc");
-static_assert(offsetof(NePatchUtility_AddUCasDataFromResultUtoc, UCasFile) == 0x000000, "Member 'NePatchUtility_AddUCasDataFromResultUtoc::UCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasDataFromResultUtoc, ResultUtocFileHandle) == 0x000010, "Member 'NePatchUtility_AddUCasDataFromResultUtoc::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasDataFromResultUtoc, ChunkIdStr) == 0x000020, "Member 'NePatchUtility_AddUCasDataFromResultUtoc::ChunkIdStr' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasDataFromResultUtoc, Data) == 0x000030, "Member 'NePatchUtility_AddUCasDataFromResultUtoc::Data' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_AddUCasDataFromResultUtoc, ReturnValue) == 0x000040, "Member 'NePatchUtility_AddUCasDataFromResultUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_AddUCasDataFromResultUtoc;
 
 // Function NePatchUtility.NePatchUtility.ApplyShaderLibrary
 // 0x0028 (0x0028 - 0x0000)
@@ -118,11 +92,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_ApplyShaderLibrary) == 0x000008, "Wrong alignment on NePatchUtility_ApplyShaderLibrary");
-static_assert(sizeof(NePatchUtility_ApplyShaderLibrary) == 0x000028, "Wrong size on NePatchUtility_ApplyShaderLibrary");
-static_assert(offsetof(NePatchUtility_ApplyShaderLibrary, Name_0) == 0x000000, "Member 'NePatchUtility_ApplyShaderLibrary::Name_0' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ApplyShaderLibrary, Directory) == 0x000010, "Member 'NePatchUtility_ApplyShaderLibrary::Directory' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ApplyShaderLibrary, ReturnValue) == 0x000020, "Member 'NePatchUtility_ApplyShaderLibrary::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ApplyShaderLibrary;
 
 // Function NePatchUtility.NePatchUtility.CalcPakDownloadEntries
 // 0x0030 (0x0030 - 0x0000)
@@ -133,11 +103,7 @@ public:
 	struct FNePatchHashFileHandle                 RemoteHashFile;                                    // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CalcPakDownloadEntries) == 0x000008, "Wrong alignment on NePatchUtility_CalcPakDownloadEntries");
-static_assert(sizeof(NePatchUtility_CalcPakDownloadEntries) == 0x000030, "Wrong size on NePatchUtility_CalcPakDownloadEntries");
-static_assert(offsetof(NePatchUtility_CalcPakDownloadEntries, PakFile) == 0x000000, "Member 'NePatchUtility_CalcPakDownloadEntries::PakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CalcPakDownloadEntries, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_CalcPakDownloadEntries::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CalcPakDownloadEntries, ReturnValue) == 0x000020, "Member 'NePatchUtility_CalcPakDownloadEntries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CalcPakDownloadEntries;
 
 // Function NePatchUtility.NePatchUtility.CalcShaderLibraryDownloadEntries
 // 0x0030 (0x0030 - 0x0000)
@@ -148,11 +114,7 @@ public:
 	struct FNePatchShaderHashFileHandle           RemoteHashFile;                                    // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchShaderCodeEntry>        ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CalcShaderLibraryDownloadEntries) == 0x000008, "Wrong alignment on NePatchUtility_CalcShaderLibraryDownloadEntries");
-static_assert(sizeof(NePatchUtility_CalcShaderLibraryDownloadEntries) == 0x000030, "Wrong size on NePatchUtility_CalcShaderLibraryDownloadEntries");
-static_assert(offsetof(NePatchUtility_CalcShaderLibraryDownloadEntries, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_CalcShaderLibraryDownloadEntries::ShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CalcShaderLibraryDownloadEntries, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_CalcShaderLibraryDownloadEntries::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CalcShaderLibraryDownloadEntries, ReturnValue) == 0x000020, "Member 'NePatchUtility_CalcShaderLibraryDownloadEntries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CalcShaderLibraryDownloadEntries;
 
 // Function NePatchUtility.NePatchUtility.CheckEntryDataHash
 // 0x0038 (0x0038 - 0x0000)
@@ -165,12 +127,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CheckEntryDataHash) == 0x000008, "Wrong alignment on NePatchUtility_CheckEntryDataHash");
-static_assert(sizeof(NePatchUtility_CheckEntryDataHash) == 0x000038, "Wrong size on NePatchUtility_CheckEntryDataHash");
-static_assert(offsetof(NePatchUtility_CheckEntryDataHash, ResultUtocFileHandle) == 0x000000, "Member 'NePatchUtility_CheckEntryDataHash::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckEntryDataHash, ChunkIDStr) == 0x000010, "Member 'NePatchUtility_CheckEntryDataHash::ChunkIDStr' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckEntryDataHash, CompressedData) == 0x000020, "Member 'NePatchUtility_CheckEntryDataHash::CompressedData' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckEntryDataHash, ReturnValue) == 0x000030, "Member 'NePatchUtility_CheckEntryDataHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CheckEntryDataHash;
 
 // Function NePatchUtility.NePatchUtility.CheckNeedUpdateWholeFile
 // 0x0028 (0x0028 - 0x0000)
@@ -183,12 +140,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CheckNeedUpdateWholeFile) == 0x000008, "Wrong alignment on NePatchUtility_CheckNeedUpdateWholeFile");
-static_assert(sizeof(NePatchUtility_CheckNeedUpdateWholeFile) == 0x000028, "Wrong size on NePatchUtility_CheckNeedUpdateWholeFile");
-static_assert(offsetof(NePatchUtility_CheckNeedUpdateWholeFile, OldHashFile) == 0x000000, "Member 'NePatchUtility_CheckNeedUpdateWholeFile::OldHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckNeedUpdateWholeFile, NewHashFile) == 0x000010, "Member 'NePatchUtility_CheckNeedUpdateWholeFile::NewHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckNeedUpdateWholeFile, bPrintReason) == 0x000020, "Member 'NePatchUtility_CheckNeedUpdateWholeFile::bPrintReason' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CheckNeedUpdateWholeFile, ReturnValue) == 0x000021, "Member 'NePatchUtility_CheckNeedUpdateWholeFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CheckNeedUpdateWholeFile;
 
 // Function NePatchUtility.NePatchUtility.ClosePak
 // 0x0010 (0x0010 - 0x0000)
@@ -197,9 +149,7 @@ struct NePatchUtility_ClosePak final
 public:
 	struct FNePatchPakFileHandle                  PakFile;                                           // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_ClosePak) == 0x000008, "Wrong alignment on NePatchUtility_ClosePak");
-static_assert(sizeof(NePatchUtility_ClosePak) == 0x000010, "Wrong size on NePatchUtility_ClosePak");
-static_assert(offsetof(NePatchUtility_ClosePak, PakFile) == 0x000000, "Member 'NePatchUtility_ClosePak::PakFile' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ClosePak;
 
 // Function NePatchUtility.NePatchUtility.ClosePakHash
 // 0x0010 (0x0010 - 0x0000)
@@ -208,9 +158,7 @@ struct NePatchUtility_ClosePakHash final
 public:
 	struct FNePatchHashFileHandle                 HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_ClosePakHash) == 0x000008, "Wrong alignment on NePatchUtility_ClosePakHash");
-static_assert(sizeof(NePatchUtility_ClosePakHash) == 0x000010, "Wrong size on NePatchUtility_ClosePakHash");
-static_assert(offsetof(NePatchUtility_ClosePakHash, HashFile) == 0x000000, "Member 'NePatchUtility_ClosePakHash::HashFile' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ClosePakHash;
 
 // Function NePatchUtility.NePatchUtility.CloseShaderHash
 // 0x0010 (0x0010 - 0x0000)
@@ -219,9 +167,7 @@ struct NePatchUtility_CloseShaderHash final
 public:
 	struct FNePatchShaderHashFileHandle           HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CloseShaderHash) == 0x000008, "Wrong alignment on NePatchUtility_CloseShaderHash");
-static_assert(sizeof(NePatchUtility_CloseShaderHash) == 0x000010, "Wrong size on NePatchUtility_CloseShaderHash");
-static_assert(offsetof(NePatchUtility_CloseShaderHash, HashFile) == 0x000000, "Member 'NePatchUtility_CloseShaderHash::HashFile' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CloseShaderHash;
 
 // Function NePatchUtility.NePatchUtility.CloseShaderLibrary
 // 0x0010 (0x0010 - 0x0000)
@@ -230,9 +176,7 @@ struct NePatchUtility_CloseShaderLibrary final
 public:
 	struct FNePatchShaderLibraryFileHandle        ShaderLibrary;                                     // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CloseShaderLibrary) == 0x000008, "Wrong alignment on NePatchUtility_CloseShaderLibrary");
-static_assert(sizeof(NePatchUtility_CloseShaderLibrary) == 0x000010, "Wrong size on NePatchUtility_CloseShaderLibrary");
-static_assert(offsetof(NePatchUtility_CloseShaderLibrary, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_CloseShaderLibrary::ShaderLibrary' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CloseShaderLibrary;
 
 // Function NePatchUtility.NePatchUtility.CloseUCas
 // 0x0010 (0x0010 - 0x0000)
@@ -241,9 +185,7 @@ struct NePatchUtility_CloseUCas final
 public:
 	struct FNePatchUCasFileHandle                 UCasFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CloseUCas) == 0x000008, "Wrong alignment on NePatchUtility_CloseUCas");
-static_assert(sizeof(NePatchUtility_CloseUCas) == 0x000010, "Wrong size on NePatchUtility_CloseUCas");
-static_assert(offsetof(NePatchUtility_CloseUCas, UCasFile) == 0x000000, "Member 'NePatchUtility_CloseUCas::UCasFile' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CloseUCas;
 
 // Function NePatchUtility.NePatchUtility.CloseUtoc
 // 0x0010 (0x0010 - 0x0000)
@@ -252,9 +194,7 @@ struct NePatchUtility_CloseUtoc final
 public:
 	struct FNePatchUtocFileHandle                 TocFile;                                           // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CloseUtoc) == 0x000008, "Wrong alignment on NePatchUtility_CloseUtoc");
-static_assert(sizeof(NePatchUtility_CloseUtoc) == 0x000010, "Wrong size on NePatchUtility_CloseUtoc");
-static_assert(offsetof(NePatchUtility_CloseUtoc, TocFile) == 0x000000, "Member 'NePatchUtility_CloseUtoc::TocFile' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CloseUtoc;
 
 // Function NePatchUtility.NePatchUtility.ComparePakHash
 // 0x0030 (0x0030 - 0x0000)
@@ -265,11 +205,7 @@ public:
 	struct FNePatchHashFileHandle                 NewHashFile;                                       // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_ComparePakHash) == 0x000008, "Wrong alignment on NePatchUtility_ComparePakHash");
-static_assert(sizeof(NePatchUtility_ComparePakHash) == 0x000030, "Wrong size on NePatchUtility_ComparePakHash");
-static_assert(offsetof(NePatchUtility_ComparePakHash, OldHashFile) == 0x000000, "Member 'NePatchUtility_ComparePakHash::OldHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHash, NewHashFile) == 0x000010, "Member 'NePatchUtility_ComparePakHash::NewHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHash, ReturnValue) == 0x000020, "Member 'NePatchUtility_ComparePakHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ComparePakHash;
 
 // Function NePatchUtility.NePatchUtility.ComparePakHashList
 // 0x0030 (0x0030 - 0x0000)
@@ -280,11 +216,7 @@ public:
 	TArray<struct FNePatchHashFileHandle>         RemoteHashFileList;                                // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_ComparePakHashList) == 0x000008, "Wrong alignment on NePatchUtility_ComparePakHashList");
-static_assert(sizeof(NePatchUtility_ComparePakHashList) == 0x000030, "Wrong size on NePatchUtility_ComparePakHashList");
-static_assert(offsetof(NePatchUtility_ComparePakHashList, LocalHashFileList) == 0x000000, "Member 'NePatchUtility_ComparePakHashList::LocalHashFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHashList, RemoteHashFileList) == 0x000010, "Member 'NePatchUtility_ComparePakHashList::RemoteHashFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHashList, ReturnValue) == 0x000020, "Member 'NePatchUtility_ComparePakHashList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ComparePakHashList;
 
 // Function NePatchUtility.NePatchUtility.ComparePakHashToHandle
 // 0x0040 (0x0040 - 0x0000)
@@ -296,12 +228,7 @@ public:
 	struct FNePatchHashFileHandle                 OutHashFileHandle;                                 // 0x0020(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_ComparePakHashToHandle) == 0x000008, "Wrong alignment on NePatchUtility_ComparePakHashToHandle");
-static_assert(sizeof(NePatchUtility_ComparePakHashToHandle) == 0x000040, "Wrong size on NePatchUtility_ComparePakHashToHandle");
-static_assert(offsetof(NePatchUtility_ComparePakHashToHandle, LocalHashFileList) == 0x000000, "Member 'NePatchUtility_ComparePakHashToHandle::LocalHashFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHashToHandle, RemoteHashFileList) == 0x000010, "Member 'NePatchUtility_ComparePakHashToHandle::RemoteHashFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHashToHandle, OutHashFileHandle) == 0x000020, "Member 'NePatchUtility_ComparePakHashToHandle::OutHashFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_ComparePakHashToHandle, ReturnValue) == 0x000030, "Member 'NePatchUtility_ComparePakHashToHandle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_ComparePakHashToHandle;
 
 // Function NePatchUtility.NePatchUtility.CompareUtoc
 // 0x0040 (0x0040 - 0x0000)
@@ -313,12 +240,7 @@ public:
 	struct FNePatchUtocFileHandle                 OutTocResource;                                    // 0x0020(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchUtocEntry>              ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_CompareUtoc) == 0x000008, "Wrong alignment on NePatchUtility_CompareUtoc");
-static_assert(sizeof(NePatchUtility_CompareUtoc) == 0x000040, "Wrong size on NePatchUtility_CompareUtoc");
-static_assert(offsetof(NePatchUtility_CompareUtoc, OldTocFile) == 0x000000, "Member 'NePatchUtility_CompareUtoc::OldTocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtoc, NewTocFile) == 0x000010, "Member 'NePatchUtility_CompareUtoc::NewTocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtoc, OutTocResource) == 0x000020, "Member 'NePatchUtility_CompareUtoc::OutTocResource' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtoc, ReturnValue) == 0x000030, "Member 'NePatchUtility_CompareUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CompareUtoc;
 
 // Function NePatchUtility.NePatchUtility.CompareUtocs
 // 0x0048 (0x0048 - 0x0000)
@@ -332,13 +254,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CompareUtocs) == 0x000008, "Wrong alignment on NePatchUtility_CompareUtocs");
-static_assert(sizeof(NePatchUtility_CompareUtocs) == 0x000048, "Wrong size on NePatchUtility_CompareUtocs");
-static_assert(offsetof(NePatchUtility_CompareUtocs, LocalTocFileList) == 0x000000, "Member 'NePatchUtility_CompareUtocs::LocalTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocs, RemoteTocFileList) == 0x000010, "Member 'NePatchUtility_CompareUtocs::RemoteTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocs, DiffEntries) == 0x000020, "Member 'NePatchUtility_CompareUtocs::DiffEntries' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocs, DifferHeaderEntries) == 0x000030, "Member 'NePatchUtility_CompareUtocs::DifferHeaderEntries' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocs, ReturnValue) == 0x000040, "Member 'NePatchUtility_CompareUtocs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CompareUtocs;
 
 // Function NePatchUtility.NePatchUtility.CompareUtocsToResultUtoc
 // 0x0038 (0x0038 - 0x0000)
@@ -351,12 +267,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CompareUtocsToResultUtoc) == 0x000008, "Wrong alignment on NePatchUtility_CompareUtocsToResultUtoc");
-static_assert(sizeof(NePatchUtility_CompareUtocsToResultUtoc) == 0x000038, "Wrong size on NePatchUtility_CompareUtocsToResultUtoc");
-static_assert(offsetof(NePatchUtility_CompareUtocsToResultUtoc, LocalTocFileList) == 0x000000, "Member 'NePatchUtility_CompareUtocsToResultUtoc::LocalTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocsToResultUtoc, RemoteTocFileList) == 0x000010, "Member 'NePatchUtility_CompareUtocsToResultUtoc::RemoteTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocsToResultUtoc, OutResultUtocFileHandle) == 0x000020, "Member 'NePatchUtility_CompareUtocsToResultUtoc::OutResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CompareUtocsToResultUtoc, ReturnValue) == 0x000030, "Member 'NePatchUtility_CompareUtocsToResultUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CompareUtocsToResultUtoc;
 
 // Function NePatchUtility.NePatchUtility.CopyDataFromOtherPak
 // 0x0038 (0x0038 - 0x0000)
@@ -371,14 +282,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0032(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CopyDataFromOtherPak) == 0x000008, "Wrong alignment on NePatchUtility_CopyDataFromOtherPak");
-static_assert(sizeof(NePatchUtility_CopyDataFromOtherPak) == 0x000038, "Wrong size on NePatchUtility_CopyDataFromOtherPak");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, PakFile) == 0x000000, "Member 'NePatchUtility_CopyDataFromOtherPak::PakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, OtherPakFilename) == 0x000010, "Member 'NePatchUtility_CopyDataFromOtherPak::OtherPakFilename' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, OtherHashFile) == 0x000020, "Member 'NePatchUtility_CopyDataFromOtherPak::OtherHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, bSalvageMode) == 0x000030, "Member 'NePatchUtility_CopyDataFromOtherPak::bSalvageMode' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, bSkipExistingData) == 0x000031, "Member 'NePatchUtility_CopyDataFromOtherPak::bSkipExistingData' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherPak, ReturnValue) == 0x000032, "Member 'NePatchUtility_CopyDataFromOtherPak::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CopyDataFromOtherPak;
 
 // Function NePatchUtility.NePatchUtility.CopyDataFromOtherShaderLibrary
 // 0x0038 (0x0038 - 0x0000)
@@ -393,14 +297,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0032(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CopyDataFromOtherShaderLibrary) == 0x000008, "Wrong alignment on NePatchUtility_CopyDataFromOtherShaderLibrary");
-static_assert(sizeof(NePatchUtility_CopyDataFromOtherShaderLibrary) == 0x000038, "Wrong size on NePatchUtility_CopyDataFromOtherShaderLibrary");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::ShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, OtherShaderLibraryPath) == 0x000010, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::OtherShaderLibraryPath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, OtherHashFile) == 0x000020, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::OtherHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, bSalvageMode) == 0x000030, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::bSalvageMode' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, bSkipExistingData) == 0x000031, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::bSkipExistingData' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyDataFromOtherShaderLibrary, ReturnValue) == 0x000032, "Member 'NePatchUtility_CopyDataFromOtherShaderLibrary::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CopyDataFromOtherShaderLibrary;
 
 // Function NePatchUtility.NePatchUtility.CopyFromOtherUtoc
 // 0x0028 (0x0028 - 0x0000)
@@ -412,11 +309,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CopyFromOtherUtoc) == 0x000008, "Wrong alignment on NePatchUtility_CopyFromOtherUtoc");
-static_assert(sizeof(NePatchUtility_CopyFromOtherUtoc) == 0x000028, "Wrong size on NePatchUtility_CopyFromOtherUtoc");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtoc, OtherUtocFile) == 0x000000, "Member 'NePatchUtility_CopyFromOtherUtoc::OtherUtocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtoc, InOutDiffEntries) == 0x000010, "Member 'NePatchUtility_CopyFromOtherUtoc::InOutDiffEntries' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtoc, ReturnValue) == 0x000020, "Member 'NePatchUtility_CopyFromOtherUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CopyFromOtherUtoc;
 
 // Function NePatchUtility.NePatchUtility.CopyFromOtherUtocToResultUtoc
 // 0x0028 (0x0028 - 0x0000)
@@ -428,11 +321,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CopyFromOtherUtocToResultUtoc) == 0x000008, "Wrong alignment on NePatchUtility_CopyFromOtherUtocToResultUtoc");
-static_assert(sizeof(NePatchUtility_CopyFromOtherUtocToResultUtoc) == 0x000028, "Wrong size on NePatchUtility_CopyFromOtherUtocToResultUtoc");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtocToResultUtoc, OtherUtocFile) == 0x000000, "Member 'NePatchUtility_CopyFromOtherUtocToResultUtoc::OtherUtocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtocToResultUtoc, ResultUtocFileHandle) == 0x000010, "Member 'NePatchUtility_CopyFromOtherUtocToResultUtoc::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyFromOtherUtocToResultUtoc, ReturnValue) == 0x000020, "Member 'NePatchUtility_CopyFromOtherUtocToResultUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CopyFromOtherUtocToResultUtoc;
 
 // Function NePatchUtility.NePatchUtility.CopyHashFiles
 // 0x0038 (0x0038 - 0x0000)
@@ -445,12 +334,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_CopyHashFiles) == 0x000008, "Wrong alignment on NePatchUtility_CopyHashFiles");
-static_assert(sizeof(NePatchUtility_CopyHashFiles) == 0x000038, "Wrong size on NePatchUtility_CopyHashFiles");
-static_assert(offsetof(NePatchUtility_CopyHashFiles, SrcDirectory) == 0x000000, "Member 'NePatchUtility_CopyHashFiles::SrcDirectory' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyHashFiles, DstDirectory) == 0x000010, "Member 'NePatchUtility_CopyHashFiles::DstDirectory' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyHashFiles, Extension) == 0x000020, "Member 'NePatchUtility_CopyHashFiles::Extension' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_CopyHashFiles, ReturnValue) == 0x000030, "Member 'NePatchUtility_CopyHashFiles::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_CopyHashFiles;
 
 // Function NePatchUtility.NePatchUtility.FlushContainerHeaderData
 // 0x0028 (0x0028 - 0x0000)
@@ -462,11 +346,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_FlushContainerHeaderData) == 0x000008, "Wrong alignment on NePatchUtility_FlushContainerHeaderData");
-static_assert(sizeof(NePatchUtility_FlushContainerHeaderData) == 0x000028, "Wrong size on NePatchUtility_FlushContainerHeaderData");
-static_assert(offsetof(NePatchUtility_FlushContainerHeaderData, UCasFile) == 0x000000, "Member 'NePatchUtility_FlushContainerHeaderData::UCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_FlushContainerHeaderData, ResultUtocFileHandle) == 0x000010, "Member 'NePatchUtility_FlushContainerHeaderData::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_FlushContainerHeaderData, ReturnValue) == 0x000020, "Member 'NePatchUtility_FlushContainerHeaderData::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_FlushContainerHeaderData;
 
 // Function NePatchUtility.NePatchUtility.GetHashFilePaths
 // 0x0030 (0x0030 - 0x0000)
@@ -477,11 +357,7 @@ public:
 	class FString                                 Extension;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetHashFilePaths) == 0x000008, "Wrong alignment on NePatchUtility_GetHashFilePaths");
-static_assert(sizeof(NePatchUtility_GetHashFilePaths) == 0x000030, "Wrong size on NePatchUtility_GetHashFilePaths");
-static_assert(offsetof(NePatchUtility_GetHashFilePaths, Directory) == 0x000000, "Member 'NePatchUtility_GetHashFilePaths::Directory' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetHashFilePaths, Extension) == 0x000010, "Member 'NePatchUtility_GetHashFilePaths::Extension' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetHashFilePaths, ReturnValue) == 0x000020, "Member 'NePatchUtility_GetHashFilePaths::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetHashFilePaths;
 
 // Function NePatchUtility.NePatchUtility.GetPakHashCompressionMethods
 // 0x0020 (0x0020 - 0x0000)
@@ -491,10 +367,7 @@ public:
 	struct FNePatchHashFileHandle                 HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<class FName>                           ReturnValue;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetPakHashCompressionMethods) == 0x000008, "Wrong alignment on NePatchUtility_GetPakHashCompressionMethods");
-static_assert(sizeof(NePatchUtility_GetPakHashCompressionMethods) == 0x000020, "Wrong size on NePatchUtility_GetPakHashCompressionMethods");
-static_assert(offsetof(NePatchUtility_GetPakHashCompressionMethods, HashFile) == 0x000000, "Member 'NePatchUtility_GetPakHashCompressionMethods::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashCompressionMethods, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetPakHashCompressionMethods::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakHashCompressionMethods;
 
 // Function NePatchUtility.NePatchUtility.GetPakHashMountPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -504,10 +377,7 @@ public:
 	struct FNePatchHashFileHandle                 HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetPakHashMountPoint) == 0x000008, "Wrong alignment on NePatchUtility_GetPakHashMountPoint");
-static_assert(sizeof(NePatchUtility_GetPakHashMountPoint) == 0x000020, "Wrong size on NePatchUtility_GetPakHashMountPoint");
-static_assert(offsetof(NePatchUtility_GetPakHashMountPoint, HashFile) == 0x000000, "Member 'NePatchUtility_GetPakHashMountPoint::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashMountPoint, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetPakHashMountPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakHashMountPoint;
 
 // Function NePatchUtility.NePatchUtility.GetPakHashPatchEntries
 // 0x0020 (0x0020 - 0x0000)
@@ -517,10 +387,7 @@ public:
 	struct FNePatchHashFileHandle                 HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetPakHashPatchEntries) == 0x000008, "Wrong alignment on NePatchUtility_GetPakHashPatchEntries");
-static_assert(sizeof(NePatchUtility_GetPakHashPatchEntries) == 0x000020, "Wrong size on NePatchUtility_GetPakHashPatchEntries");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntries, HashFile) == 0x000000, "Member 'NePatchUtility_GetPakHashPatchEntries::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntries, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetPakHashPatchEntries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakHashPatchEntries;
 
 // Function NePatchUtility.NePatchUtility.GetPakHashPatchEntry
 // 0x0060 (0x0060 - 0x0000)
@@ -532,11 +399,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNePatchEntry                          ReturnValue;                                       // 0x0018(0x0048)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetPakHashPatchEntry) == 0x000008, "Wrong alignment on NePatchUtility_GetPakHashPatchEntry");
-static_assert(sizeof(NePatchUtility_GetPakHashPatchEntry) == 0x000060, "Wrong size on NePatchUtility_GetPakHashPatchEntry");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntry, HashFile) == 0x000000, "Member 'NePatchUtility_GetPakHashPatchEntry::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntry, EntryIndex) == 0x000010, "Member 'NePatchUtility_GetPakHashPatchEntry::EntryIndex' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntry, ReturnValue) == 0x000018, "Member 'NePatchUtility_GetPakHashPatchEntry::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakHashPatchEntry;
 
 // Function NePatchUtility.NePatchUtility.GetPakHashPatchEntryCount
 // 0x0018 (0x0018 - 0x0000)
@@ -547,10 +410,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_GetPakHashPatchEntryCount) == 0x000008, "Wrong alignment on NePatchUtility_GetPakHashPatchEntryCount");
-static_assert(sizeof(NePatchUtility_GetPakHashPatchEntryCount) == 0x000018, "Wrong size on NePatchUtility_GetPakHashPatchEntryCount");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntryCount, HashFile) == 0x000000, "Member 'NePatchUtility_GetPakHashPatchEntryCount::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakHashPatchEntryCount, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetPakHashPatchEntryCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakHashPatchEntryCount;
 
 // Function NePatchUtility.NePatchUtility.GetPakPatchEntries
 // 0x0020 (0x0020 - 0x0000)
@@ -560,10 +420,7 @@ public:
 	struct FNePatchPakFileHandle                  PakFile;                                           // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  ReturnValue;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetPakPatchEntries) == 0x000008, "Wrong alignment on NePatchUtility_GetPakPatchEntries");
-static_assert(sizeof(NePatchUtility_GetPakPatchEntries) == 0x000020, "Wrong size on NePatchUtility_GetPakPatchEntries");
-static_assert(offsetof(NePatchUtility_GetPakPatchEntries, PakFile) == 0x000000, "Member 'NePatchUtility_GetPakPatchEntries::PakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetPakPatchEntries, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetPakPatchEntries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetPakPatchEntries;
 
 // Function NePatchUtility.NePatchUtility.GetShaderHashLibraryCodeOffset
 // 0x0018 (0x0018 - 0x0000)
@@ -573,10 +430,7 @@ public:
 	struct FNePatchShaderHashFileHandle           HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	int64                                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetShaderHashLibraryCodeOffset) == 0x000008, "Wrong alignment on NePatchUtility_GetShaderHashLibraryCodeOffset");
-static_assert(sizeof(NePatchUtility_GetShaderHashLibraryCodeOffset) == 0x000018, "Wrong size on NePatchUtility_GetShaderHashLibraryCodeOffset");
-static_assert(offsetof(NePatchUtility_GetShaderHashLibraryCodeOffset, HashFile) == 0x000000, "Member 'NePatchUtility_GetShaderHashLibraryCodeOffset::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetShaderHashLibraryCodeOffset, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetShaderHashLibraryCodeOffset::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetShaderHashLibraryCodeOffset;
 
 // Function NePatchUtility.NePatchUtility.GetShaderLibraryLibraryCodeOffset
 // 0x0018 (0x0018 - 0x0000)
@@ -586,10 +440,7 @@ public:
 	struct FNePatchShaderLibraryFileHandle        ShaderLibrary;                                     // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	int64                                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetShaderLibraryLibraryCodeOffset) == 0x000008, "Wrong alignment on NePatchUtility_GetShaderLibraryLibraryCodeOffset");
-static_assert(sizeof(NePatchUtility_GetShaderLibraryLibraryCodeOffset) == 0x000018, "Wrong size on NePatchUtility_GetShaderLibraryLibraryCodeOffset");
-static_assert(offsetof(NePatchUtility_GetShaderLibraryLibraryCodeOffset, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_GetShaderLibraryLibraryCodeOffset::ShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetShaderLibraryLibraryCodeOffset, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetShaderLibraryLibraryCodeOffset::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetShaderLibraryLibraryCodeOffset;
 
 // Function NePatchUtility.NePatchUtility.GetUTocPatchEntries
 // 0x0020 (0x0020 - 0x0000)
@@ -599,10 +450,7 @@ public:
 	struct FNePatchUtocFileHandle                 UtocFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchUtocEntry>              ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetUTocPatchEntries) == 0x000008, "Wrong alignment on NePatchUtility_GetUTocPatchEntries");
-static_assert(sizeof(NePatchUtility_GetUTocPatchEntries) == 0x000020, "Wrong size on NePatchUtility_GetUTocPatchEntries");
-static_assert(offsetof(NePatchUtility_GetUTocPatchEntries, UtocFile) == 0x000000, "Member 'NePatchUtility_GetUTocPatchEntries::UtocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetUTocPatchEntries, ReturnValue) == 0x000010, "Member 'NePatchUtility_GetUTocPatchEntries::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetUTocPatchEntries;
 
 // Function NePatchUtility.NePatchUtility.GetUTocPatchEntry
 // 0x00C8 (0x00C8 - 0x0000)
@@ -613,11 +461,7 @@ public:
 	class FString                                 ChunkIDStr;                                        // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FNePatchUtocEntry                      ReturnValue;                                       // 0x0020(0x00A8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_GetUTocPatchEntry) == 0x000008, "Wrong alignment on NePatchUtility_GetUTocPatchEntry");
-static_assert(sizeof(NePatchUtility_GetUTocPatchEntry) == 0x0000C8, "Wrong size on NePatchUtility_GetUTocPatchEntry");
-static_assert(offsetof(NePatchUtility_GetUTocPatchEntry, UtocFile) == 0x000000, "Member 'NePatchUtility_GetUTocPatchEntry::UtocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetUTocPatchEntry, ChunkIDStr) == 0x000010, "Member 'NePatchUtility_GetUTocPatchEntry::ChunkIDStr' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_GetUTocPatchEntry, ReturnValue) == 0x000020, "Member 'NePatchUtility_GetUTocPatchEntry::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_GetUTocPatchEntry;
 
 // Function NePatchUtility.NePatchUtility.HasActiveWiFiConnection
 // 0x0001 (0x0001 - 0x0000)
@@ -626,9 +470,7 @@ struct NePatchUtility_HasActiveWiFiConnection final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_HasActiveWiFiConnection) == 0x000001, "Wrong alignment on NePatchUtility_HasActiveWiFiConnection");
-static_assert(sizeof(NePatchUtility_HasActiveWiFiConnection) == 0x000001, "Wrong size on NePatchUtility_HasActiveWiFiConnection");
-static_assert(offsetof(NePatchUtility_HasActiveWiFiConnection, ReturnValue) == 0x000000, "Member 'NePatchUtility_HasActiveWiFiConnection::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_HasActiveWiFiConnection;
 
 // Function NePatchUtility.NePatchUtility.MergeAllUCasDataFromFolder
 // 0x0038 (0x0038 - 0x0000)
@@ -641,12 +483,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_MergeAllUCasDataFromFolder) == 0x000008, "Wrong alignment on NePatchUtility_MergeAllUCasDataFromFolder");
-static_assert(sizeof(NePatchUtility_MergeAllUCasDataFromFolder) == 0x000038, "Wrong size on NePatchUtility_MergeAllUCasDataFromFolder");
-static_assert(offsetof(NePatchUtility_MergeAllUCasDataFromFolder, UCasFile) == 0x000000, "Member 'NePatchUtility_MergeAllUCasDataFromFolder::UCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MergeAllUCasDataFromFolder, ResultUtocFileHandle) == 0x000010, "Member 'NePatchUtility_MergeAllUCasDataFromFolder::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MergeAllUCasDataFromFolder, UCasDataFolder) == 0x000020, "Member 'NePatchUtility_MergeAllUCasDataFromFolder::UCasDataFolder' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MergeAllUCasDataFromFolder, ReturnValue) == 0x000030, "Member 'NePatchUtility_MergeAllUCasDataFromFolder::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_MergeAllUCasDataFromFolder;
 
 // Function NePatchUtility.NePatchUtility.MountPak
 // 0x0018 (0x0018 - 0x0000)
@@ -658,11 +495,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_MountPak) == 0x000008, "Wrong alignment on NePatchUtility_MountPak");
-static_assert(sizeof(NePatchUtility_MountPak) == 0x000018, "Wrong size on NePatchUtility_MountPak");
-static_assert(offsetof(NePatchUtility_MountPak, PakFilename) == 0x000000, "Member 'NePatchUtility_MountPak::PakFilename' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MountPak, Order) == 0x000010, "Member 'NePatchUtility_MountPak::Order' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MountPak, ReturnValue) == 0x000014, "Member 'NePatchUtility_MountPak::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_MountPak;
 
 // Function NePatchUtility.NePatchUtility.MountPakWithMountPoint
 // 0x0030 (0x0030 - 0x0000)
@@ -676,12 +509,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_MountPakWithMountPoint) == 0x000008, "Wrong alignment on NePatchUtility_MountPakWithMountPoint");
-static_assert(sizeof(NePatchUtility_MountPakWithMountPoint) == 0x000030, "Wrong size on NePatchUtility_MountPakWithMountPoint");
-static_assert(offsetof(NePatchUtility_MountPakWithMountPoint, PakFilename) == 0x000000, "Member 'NePatchUtility_MountPakWithMountPoint::PakFilename' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MountPakWithMountPoint, PakOrder) == 0x000010, "Member 'NePatchUtility_MountPakWithMountPoint::PakOrder' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MountPakWithMountPoint, MountPoint) == 0x000018, "Member 'NePatchUtility_MountPakWithMountPoint::MountPoint' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_MountPakWithMountPoint, ReturnValue) == 0x000028, "Member 'NePatchUtility_MountPakWithMountPoint::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_MountPakWithMountPoint;
 
 // Function NePatchUtility.NePatchUtility.OpenPakForWrite
 // 0x0038 (0x0038 - 0x0000)
@@ -694,12 +522,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenPakForWrite) == 0x000008, "Wrong alignment on NePatchUtility_OpenPakForWrite");
-static_assert(sizeof(NePatchUtility_OpenPakForWrite) == 0x000038, "Wrong size on NePatchUtility_OpenPakForWrite");
-static_assert(offsetof(NePatchUtility_OpenPakForWrite, PakFilePath) == 0x000000, "Member 'NePatchUtility_OpenPakForWrite::PakFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWrite, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_OpenPakForWrite::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWrite, OutPakFile) == 0x000020, "Member 'NePatchUtility_OpenPakForWrite::OutPakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWrite, ReturnValue) == 0x000030, "Member 'NePatchUtility_OpenPakForWrite::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenPakForWrite;
 
 // Function NePatchUtility.NePatchUtility.OpenPakForWriteWithInitialHash
 // 0x0048 (0x0048 - 0x0000)
@@ -713,13 +536,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenPakForWriteWithInitialHash) == 0x000008, "Wrong alignment on NePatchUtility_OpenPakForWriteWithInitialHash");
-static_assert(sizeof(NePatchUtility_OpenPakForWriteWithInitialHash) == 0x000048, "Wrong size on NePatchUtility_OpenPakForWriteWithInitialHash");
-static_assert(offsetof(NePatchUtility_OpenPakForWriteWithInitialHash, PakFilePath) == 0x000000, "Member 'NePatchUtility_OpenPakForWriteWithInitialHash::PakFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWriteWithInitialHash, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_OpenPakForWriteWithInitialHash::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWriteWithInitialHash, InitialHashFile) == 0x000020, "Member 'NePatchUtility_OpenPakForWriteWithInitialHash::InitialHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWriteWithInitialHash, OutPakFile) == 0x000030, "Member 'NePatchUtility_OpenPakForWriteWithInitialHash::OutPakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakForWriteWithInitialHash, ReturnValue) == 0x000040, "Member 'NePatchUtility_OpenPakForWriteWithInitialHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenPakForWriteWithInitialHash;
 
 // Function NePatchUtility.NePatchUtility.OpenPakHash
 // 0x0028 (0x0028 - 0x0000)
@@ -731,11 +548,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenPakHash) == 0x000008, "Wrong alignment on NePatchUtility_OpenPakHash");
-static_assert(sizeof(NePatchUtility_OpenPakHash) == 0x000028, "Wrong size on NePatchUtility_OpenPakHash");
-static_assert(offsetof(NePatchUtility_OpenPakHash, HashFilePath) == 0x000000, "Member 'NePatchUtility_OpenPakHash::HashFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakHash, OutHashFile) == 0x000010, "Member 'NePatchUtility_OpenPakHash::OutHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenPakHash, ReturnValue) == 0x000020, "Member 'NePatchUtility_OpenPakHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenPakHash;
 
 // Function NePatchUtility.NePatchUtility.OpenShaderHash
 // 0x0028 (0x0028 - 0x0000)
@@ -747,11 +560,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenShaderHash) == 0x000008, "Wrong alignment on NePatchUtility_OpenShaderHash");
-static_assert(sizeof(NePatchUtility_OpenShaderHash) == 0x000028, "Wrong size on NePatchUtility_OpenShaderHash");
-static_assert(offsetof(NePatchUtility_OpenShaderHash, HashFilePath) == 0x000000, "Member 'NePatchUtility_OpenShaderHash::HashFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderHash, OutHashFile) == 0x000010, "Member 'NePatchUtility_OpenShaderHash::OutHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderHash, ReturnValue) == 0x000020, "Member 'NePatchUtility_OpenShaderHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenShaderHash;
 
 // Function NePatchUtility.NePatchUtility.OpenShaderLibraryForWrite
 // 0x0038 (0x0038 - 0x0000)
@@ -764,12 +573,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenShaderLibraryForWrite) == 0x000008, "Wrong alignment on NePatchUtility_OpenShaderLibraryForWrite");
-static_assert(sizeof(NePatchUtility_OpenShaderLibraryForWrite) == 0x000038, "Wrong size on NePatchUtility_OpenShaderLibraryForWrite");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWrite, ShaderLibraryPath) == 0x000000, "Member 'NePatchUtility_OpenShaderLibraryForWrite::ShaderLibraryPath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWrite, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_OpenShaderLibraryForWrite::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWrite, OutShaderLibrary) == 0x000020, "Member 'NePatchUtility_OpenShaderLibraryForWrite::OutShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWrite, ReturnValue) == 0x000030, "Member 'NePatchUtility_OpenShaderLibraryForWrite::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenShaderLibraryForWrite;
 
 // Function NePatchUtility.NePatchUtility.OpenShaderLibraryForWriteWithInitialHash
 // 0x0048 (0x0048 - 0x0000)
@@ -783,13 +587,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash) == 0x000008, "Wrong alignment on NePatchUtility_OpenShaderLibraryForWriteWithInitialHash");
-static_assert(sizeof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash) == 0x000048, "Wrong size on NePatchUtility_OpenShaderLibraryForWriteWithInitialHash");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash, ShaderLibraryPath) == 0x000000, "Member 'NePatchUtility_OpenShaderLibraryForWriteWithInitialHash::ShaderLibraryPath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash, RemoteHashFile) == 0x000010, "Member 'NePatchUtility_OpenShaderLibraryForWriteWithInitialHash::RemoteHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash, InitialHashFile) == 0x000020, "Member 'NePatchUtility_OpenShaderLibraryForWriteWithInitialHash::InitialHashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash, OutShaderLibrary) == 0x000030, "Member 'NePatchUtility_OpenShaderLibraryForWriteWithInitialHash::OutShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenShaderLibraryForWriteWithInitialHash, ReturnValue) == 0x000040, "Member 'NePatchUtility_OpenShaderLibraryForWriteWithInitialHash::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenShaderLibraryForWriteWithInitialHash;
 
 // Function NePatchUtility.NePatchUtility.OpenUcasForWrite
 // 0x0028 (0x0028 - 0x0000)
@@ -801,11 +599,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenUcasForWrite) == 0x000008, "Wrong alignment on NePatchUtility_OpenUcasForWrite");
-static_assert(sizeof(NePatchUtility_OpenUcasForWrite) == 0x000028, "Wrong size on NePatchUtility_OpenUcasForWrite");
-static_assert(offsetof(NePatchUtility_OpenUcasForWrite, UCasFilePath) == 0x000000, "Member 'NePatchUtility_OpenUcasForWrite::UCasFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenUcasForWrite, OutUCasFile) == 0x000010, "Member 'NePatchUtility_OpenUcasForWrite::OutUCasFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenUcasForWrite, ReturnValue) == 0x000020, "Member 'NePatchUtility_OpenUcasForWrite::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenUcasForWrite;
 
 // Function NePatchUtility.NePatchUtility.OpenUtoc
 // 0x0028 (0x0028 - 0x0000)
@@ -817,11 +611,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_OpenUtoc) == 0x000008, "Wrong alignment on NePatchUtility_OpenUtoc");
-static_assert(sizeof(NePatchUtility_OpenUtoc) == 0x000028, "Wrong size on NePatchUtility_OpenUtoc");
-static_assert(offsetof(NePatchUtility_OpenUtoc, TocFilePath) == 0x000000, "Member 'NePatchUtility_OpenUtoc::TocFilePath' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenUtoc, OutTocFile) == 0x000010, "Member 'NePatchUtility_OpenUtoc::OutTocFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_OpenUtoc, ReturnValue) == 0x000020, "Member 'NePatchUtility_OpenUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_OpenUtoc;
 
 // Function NePatchUtility.NePatchUtility.RegisterDecryptKey
 // 0x0018 (0x0018 - 0x0000)
@@ -832,10 +622,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_RegisterDecryptKey) == 0x000008, "Wrong alignment on NePatchUtility_RegisterDecryptKey");
-static_assert(sizeof(NePatchUtility_RegisterDecryptKey) == 0x000018, "Wrong size on NePatchUtility_RegisterDecryptKey");
-static_assert(offsetof(NePatchUtility_RegisterDecryptKey, DecryptionKeyStr) == 0x000000, "Member 'NePatchUtility_RegisterDecryptKey::DecryptionKeyStr' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_RegisterDecryptKey, ReturnValue) == 0x000010, "Member 'NePatchUtility_RegisterDecryptKey::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_RegisterDecryptKey;
 
 // Function NePatchUtility.NePatchUtility.SavePakHashFile
 // 0x0018 (0x0018 - 0x0000)
@@ -846,10 +633,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_SavePakHashFile) == 0x000008, "Wrong alignment on NePatchUtility_SavePakHashFile");
-static_assert(sizeof(NePatchUtility_SavePakHashFile) == 0x000018, "Wrong size on NePatchUtility_SavePakHashFile");
-static_assert(offsetof(NePatchUtility_SavePakHashFile, PakFile) == 0x000000, "Member 'NePatchUtility_SavePakHashFile::PakFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SavePakHashFile, ReturnValue) == 0x000010, "Member 'NePatchUtility_SavePakHashFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_SavePakHashFile;
 
 // Function NePatchUtility.NePatchUtility.SaveShaderLibraryHashFile
 // 0x0018 (0x0018 - 0x0000)
@@ -860,10 +644,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_SaveShaderLibraryHashFile) == 0x000008, "Wrong alignment on NePatchUtility_SaveShaderLibraryHashFile");
-static_assert(sizeof(NePatchUtility_SaveShaderLibraryHashFile) == 0x000018, "Wrong size on NePatchUtility_SaveShaderLibraryHashFile");
-static_assert(offsetof(NePatchUtility_SaveShaderLibraryHashFile, ShaderLibrary) == 0x000000, "Member 'NePatchUtility_SaveShaderLibraryHashFile::ShaderLibrary' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveShaderLibraryHashFile, ReturnValue) == 0x000010, "Member 'NePatchUtility_SaveShaderLibraryHashFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_SaveShaderLibraryHashFile;
 
 // Function NePatchUtility.NePatchUtility.SaveUtocFile
 // 0x0038 (0x0038 - 0x0000)
@@ -876,12 +657,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_SaveUtocFile) == 0x000008, "Wrong alignment on NePatchUtility_SaveUtocFile");
-static_assert(sizeof(NePatchUtility_SaveUtocFile) == 0x000038, "Wrong size on NePatchUtility_SaveUtocFile");
-static_assert(offsetof(NePatchUtility_SaveUtocFile, NewUtocFileName) == 0x000000, "Member 'NePatchUtility_SaveUtocFile::NewUtocFileName' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFile, DiffEntryList) == 0x000010, "Member 'NePatchUtility_SaveUtocFile::DiffEntryList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFile, RemoteTocFileList) == 0x000020, "Member 'NePatchUtility_SaveUtocFile::RemoteTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFile, ReturnValue) == 0x000030, "Member 'NePatchUtility_SaveUtocFile::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_SaveUtocFile;
 
 // Function NePatchUtility.NePatchUtility.SaveUtocFileFromResultUtoc
 // 0x0038 (0x0038 - 0x0000)
@@ -894,12 +670,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_SaveUtocFileFromResultUtoc) == 0x000008, "Wrong alignment on NePatchUtility_SaveUtocFileFromResultUtoc");
-static_assert(sizeof(NePatchUtility_SaveUtocFileFromResultUtoc) == 0x000038, "Wrong size on NePatchUtility_SaveUtocFileFromResultUtoc");
-static_assert(offsetof(NePatchUtility_SaveUtocFileFromResultUtoc, NewUtocFileName) == 0x000000, "Member 'NePatchUtility_SaveUtocFileFromResultUtoc::NewUtocFileName' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFileFromResultUtoc, ResultUtocFileHandle) == 0x000010, "Member 'NePatchUtility_SaveUtocFileFromResultUtoc::ResultUtocFileHandle' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFileFromResultUtoc, RemoteTocFileList) == 0x000020, "Member 'NePatchUtility_SaveUtocFileFromResultUtoc::RemoteTocFileList' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SaveUtocFileFromResultUtoc, ReturnValue) == 0x000030, "Member 'NePatchUtility_SaveUtocFileFromResultUtoc::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_SaveUtocFileFromResultUtoc;
 
 // Function NePatchUtility.NePatchUtility.SetPakHashPatchEntries
 // 0x0020 (0x0020 - 0x0000)
@@ -909,10 +680,7 @@ public:
 	struct FNePatchHashFileHandle                 HashFile;                                          // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FNePatchEntry>                  Entries;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NePatchUtility_SetPakHashPatchEntries) == 0x000008, "Wrong alignment on NePatchUtility_SetPakHashPatchEntries");
-static_assert(sizeof(NePatchUtility_SetPakHashPatchEntries) == 0x000020, "Wrong size on NePatchUtility_SetPakHashPatchEntries");
-static_assert(offsetof(NePatchUtility_SetPakHashPatchEntries, HashFile) == 0x000000, "Member 'NePatchUtility_SetPakHashPatchEntries::HashFile' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_SetPakHashPatchEntries, Entries) == 0x000010, "Member 'NePatchUtility_SetPakHashPatchEntries::Entries' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_SetPakHashPatchEntries;
 
 // Function NePatchUtility.NePatchUtility.UnmountPak
 // 0x0018 (0x0018 - 0x0000)
@@ -923,10 +691,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NePatchUtility_UnmountPak) == 0x000008, "Wrong alignment on NePatchUtility_UnmountPak");
-static_assert(sizeof(NePatchUtility_UnmountPak) == 0x000018, "Wrong size on NePatchUtility_UnmountPak");
-static_assert(offsetof(NePatchUtility_UnmountPak, PakFilename) == 0x000000, "Member 'NePatchUtility_UnmountPak::PakFilename' has a wrong offset!");
-static_assert(offsetof(NePatchUtility_UnmountPak, ReturnValue) == 0x000010, "Member 'NePatchUtility_UnmountPak::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_NePatchUtility_UnmountPak;
 
 }
 

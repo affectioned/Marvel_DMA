@@ -21,9 +21,7 @@ struct PyWidget_Squad_Recruit_Item_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_Recruit_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_Squad_Recruit_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_Squad_Recruit_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_Squad_Recruit_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_Squad_Recruit_Item_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'PyWidget_Squad_Recruit_Item_OnListItemObjectSet::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_Recruit_Item_OnListItemObjectSet;
 
 }
 

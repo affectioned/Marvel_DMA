@@ -25,24 +25,18 @@ struct PyAbility_104552_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104552_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104552_CanActivate");
-static_assert(sizeof(PyAbility_104552_CanActivate) == 0x000001, "Wrong size on PyAbility_104552_CanActivate");
-static_assert(offsetof(PyAbility_104552_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104552_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104552_CanActivate;
 
 // PythonFunction PyAbility_104552.PyAbility_104552.OnAbilityHit
-// 0x0030 (0x0030 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PyAbility_104552_OnAbilityHit final
 {
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104552_OnAbilityHit) == 0x000008, "Wrong alignment on PyAbility_104552_OnAbilityHit");
-static_assert(sizeof(PyAbility_104552_OnAbilityHit) == 0x000030, "Wrong size on PyAbility_104552_OnAbilityHit");
-static_assert(offsetof(PyAbility_104552_OnAbilityHit, Ability) == 0x000000, "Member 'PyAbility_104552_OnAbilityHit::Ability' has a wrong offset!");
-static_assert(offsetof(PyAbility_104552_OnAbilityHit, HitParams) == 0x000008, "Member 'PyAbility_104552_OnAbilityHit::HitParams' has a wrong offset!");
-static_assert(offsetof(PyAbility_104552_OnAbilityHit, HitResults) == 0x000020, "Member 'PyAbility_104552_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104552_OnAbilityHit;
 
 // PythonFunction PyAbility_104552.PyAbility_104552.OnCommandOctopusEnhancedAttack
 // 0x0020 (0x0020 - 0x0000)
@@ -52,10 +46,7 @@ public:
 	class UPrimitiveComponent*                    TargetActorComponent;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                HitPosition;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104552_OnCommandOctopusEnhancedAttack) == 0x000008, "Wrong alignment on PyAbility_104552_OnCommandOctopusEnhancedAttack");
-static_assert(sizeof(PyAbility_104552_OnCommandOctopusEnhancedAttack) == 0x000020, "Wrong size on PyAbility_104552_OnCommandOctopusEnhancedAttack");
-static_assert(offsetof(PyAbility_104552_OnCommandOctopusEnhancedAttack, TargetActorComponent) == 0x000000, "Member 'PyAbility_104552_OnCommandOctopusEnhancedAttack::TargetActorComponent' has a wrong offset!");
-static_assert(offsetof(PyAbility_104552_OnCommandOctopusEnhancedAttack, HitPosition) == 0x000008, "Member 'PyAbility_104552_OnCommandOctopusEnhancedAttack::HitPosition' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104552_OnCommandOctopusEnhancedAttack;
 
 // PythonFunction PyAbility_104552.PyAbility_104552.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +55,7 @@ struct PyAbility_104552_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104552_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104552_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104552_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104552_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104552_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104552_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104552_K2_OnEndAbility;
 
 }
 

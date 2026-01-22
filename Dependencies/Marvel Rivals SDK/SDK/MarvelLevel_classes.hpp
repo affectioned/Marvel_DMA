@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "GameplayAbilities_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "LevelSequence_classes.hpp"
 
 
@@ -33,15 +33,18 @@ class UAnimNotify_LevelAnimSectionEnded final : public UAnimNotify
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotify_LevelAnimSectionEnded">();
+		STATIC_CLASS_IMPL("AnimNotify_LevelAnimSectionEnded")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_LevelAnimSectionEnded")
 	}
 	static class UAnimNotify_LevelAnimSectionEnded* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_LevelAnimSectionEnded>();
 	}
 };
-static_assert(alignof(UAnimNotify_LevelAnimSectionEnded) == 0x000008, "Wrong alignment on UAnimNotify_LevelAnimSectionEnded");
-static_assert(sizeof(UAnimNotify_LevelAnimSectionEnded) == 0x000040, "Wrong size on UAnimNotify_LevelAnimSectionEnded");
+DUMPER7_ASSERTS_UAnimNotify_LevelAnimSectionEnded;
 
 // Class MarvelLevel.DeathZoneActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -50,15 +53,18 @@ class ADeathZoneActor : public AMarvelLevelActorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeathZoneActor">();
+		STATIC_CLASS_IMPL("DeathZoneActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathZoneActor")
 	}
 	static class ADeathZoneActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADeathZoneActor>();
 	}
 };
-static_assert(alignof(ADeathZoneActor) == 0x000010, "Wrong alignment on ADeathZoneActor");
-static_assert(sizeof(ADeathZoneActor) == 0x0006E0, "Wrong size on ADeathZoneActor");
+DUMPER7_ASSERTS_ADeathZoneActor;
 
 // Class MarvelLevel.EnvironmentGlobalActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -70,66 +76,72 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvironmentGlobalActor">();
+		STATIC_CLASS_IMPL("EnvironmentGlobalActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvironmentGlobalActor")
 	}
 	static class AEnvironmentGlobalActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnvironmentGlobalActor>();
 	}
 };
-static_assert(alignof(AEnvironmentGlobalActor) == 0x000010, "Wrong alignment on AEnvironmentGlobalActor");
-static_assert(sizeof(AEnvironmentGlobalActor) == 0x0006E0, "Wrong size on AEnvironmentGlobalActor");
+DUMPER7_ASSERTS_AEnvironmentGlobalActor;
 
 // Class MarvelLevel.EnvironmentStaticActor
-// 0x0010 (0x06F0 - 0x06E0)
+// 0x0020 (0x0700 - 0x06E0)
 class AEnvironmentStaticActor : public AEnvironmentStaticActorBase
 {
 public:
-	class UStaticMeshComponent*                   MeshComponent;                                     // 0x06D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UEnvironmentActorTransitionComponent*   EnvironmentTransition;                             // 0x06E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsTransitionCompRemoved;                          // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6E9[0x7];                                      // 0x06E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   MeshComponent;                                     // 0x06E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnvironmentActorTransitionComponent*   EnvironmentTransition;                             // 0x06E8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsTransitionCompRemoved;                          // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6F1[0xF];                                      // 0x06F1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvironmentStaticActor">();
+		STATIC_CLASS_IMPL("EnvironmentStaticActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvironmentStaticActor")
 	}
 	static class AEnvironmentStaticActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnvironmentStaticActor>();
 	}
 };
-static_assert(alignof(AEnvironmentStaticActor) == 0x000010, "Wrong alignment on AEnvironmentStaticActor");
-static_assert(sizeof(AEnvironmentStaticActor) == 0x0006F0, "Wrong size on AEnvironmentStaticActor");
-static_assert(offsetof(AEnvironmentStaticActor, MeshComponent) == 0x0006D8, "Member 'AEnvironmentStaticActor::MeshComponent' has a wrong offset!");
-static_assert(offsetof(AEnvironmentStaticActor, EnvironmentTransition) == 0x0006E0, "Member 'AEnvironmentStaticActor::EnvironmentTransition' has a wrong offset!");
-static_assert(offsetof(AEnvironmentStaticActor, bIsTransitionCompRemoved) == 0x0006E8, "Member 'AEnvironmentStaticActor::bIsTransitionCompRemoved' has a wrong offset!");
+DUMPER7_ASSERTS_AEnvironmentStaticActor;
 
 // Class MarvelLevel.EnvironmentPCGActor
-// 0x0000 (0x06F0 - 0x06F0)
+// 0x0000 (0x0700 - 0x0700)
 class AEnvironmentPCGActor final : public AEnvironmentStaticActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvironmentPCGActor">();
+		STATIC_CLASS_IMPL("EnvironmentPCGActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvironmentPCGActor")
 	}
 	static class AEnvironmentPCGActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnvironmentPCGActor>();
 	}
 };
-static_assert(alignof(AEnvironmentPCGActor) == 0x000010, "Wrong alignment on AEnvironmentPCGActor");
-static_assert(sizeof(AEnvironmentPCGActor) == 0x0006F0, "Wrong size on AEnvironmentPCGActor");
+DUMPER7_ASSERTS_AEnvironmentPCGActor;
 
 // Class MarvelLevel.FillColorBox
 // 0x0010 (0x06F0 - 0x06E0)
-class AFillColorBox : public AActor
+#pragma pack(push, 0x1)
+class alignas(0x10) AFillColorBox : public AActor
 {
 public:
 	TArray<uint64>                                FillColorStateList;                                // 0x06D8(0x0010)(Net, ZeroConstructor, RepNotify, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_6E8[0x8];                                      // 0x06E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FPaintSceneReconnectRebuildData GeneratePaintSceneRebuildData();
@@ -143,33 +155,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FillColorBox">();
+		STATIC_CLASS_IMPL("FillColorBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FillColorBox")
 	}
 	static class AFillColorBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFillColorBox>();
 	}
 };
-static_assert(alignof(AFillColorBox) == 0x000010, "Wrong alignment on AFillColorBox");
-static_assert(sizeof(AFillColorBox) == 0x0006F0, "Wrong size on AFillColorBox");
-static_assert(offsetof(AFillColorBox, FillColorStateList) == 0x0006D8, "Member 'AFillColorBox::FillColorStateList' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_AFillColorBox;
 
 // Class MarvelLevel.FillColorBoxV2
-// 0x0000 (0x06F0 - 0x06F0)
-class AFillColorBoxV2 final : public AFillColorBox
+// 0x0030 (0x0720 - 0x06F0)
+class AFillColorBoxV2 : public AFillColorBox
 {
+public:
+	int32                                         CXMin;                                             // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CYMin;                                             // 0x06EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CXMax;                                             // 0x06F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CYMax;                                             // 0x06F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CPointInterval;                                    // 0x06F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CXCount;                                           // 0x06FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CYCount;                                           // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_704[0x4];                                      // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         FillColorPointList;                                // 0x0708(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_718[0x8];                                      // 0x0718(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	TArray<int32> GetIndexListInBox(int32 Box_x_min, int32 Box_x_max, int32 Box_y_min, int32 Box_y_max);
+	TArray<int32> GetIndexListInRange(const struct FVector& CenterPos, double Radius);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FillColorBoxV2">();
+		STATIC_CLASS_IMPL("FillColorBoxV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FillColorBoxV2")
 	}
 	static class AFillColorBoxV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFillColorBoxV2>();
 	}
 };
-static_assert(alignof(AFillColorBoxV2) == 0x000010, "Wrong alignment on AFillColorBoxV2");
-static_assert(sizeof(AFillColorBoxV2) == 0x0006F0, "Wrong size on AFillColorBoxV2");
+DUMPER7_ASSERTS_AFillColorBoxV2;
+
+// Class MarvelLevel.LevelPackageRulesFuncLibrary
+// 0x0000 (0x0030 - 0x0030)
+class ULevelPackageRulesFuncLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void UpdatePackageDataTables(const struct FMarvelPackageContext& InPackageContext);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelPackageRulesFuncLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelPackageRulesFuncLibrary")
+	}
+	static class ULevelPackageRulesFuncLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULevelPackageRulesFuncLibrary>();
+	}
+};
+DUMPER7_ASSERTS_ULevelPackageRulesFuncLibrary;
 
 // Class MarvelLevel.FillColorPoint
 // 0x0000 (0x06E0 - 0x06E0)
@@ -181,15 +238,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FillColorPoint">();
+		STATIC_CLASS_IMPL("FillColorPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FillColorPoint")
 	}
 	static class AFillColorPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFillColorPoint>();
 	}
 };
-static_assert(alignof(AFillColorPoint) == 0x000010, "Wrong alignment on AFillColorPoint");
-static_assert(sizeof(AFillColorPoint) == 0x0006E0, "Wrong size on AFillColorPoint");
+DUMPER7_ASSERTS_AFillColorPoint;
 
 // Class MarvelLevel.LevelAnimBaseActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -198,18 +258,102 @@ class ALevelAnimBaseActor : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelAnimBaseActor">();
+		STATIC_CLASS_IMPL("LevelAnimBaseActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelAnimBaseActor")
 	}
 	static class ALevelAnimBaseActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelAnimBaseActor>();
 	}
 };
-static_assert(alignof(ALevelAnimBaseActor) == 0x000010, "Wrong alignment on ALevelAnimBaseActor");
-static_assert(sizeof(ALevelAnimBaseActor) == 0x0006E0, "Wrong size on ALevelAnimBaseActor");
+DUMPER7_ASSERTS_ALevelAnimBaseActor;
+
+// Class MarvelLevel.MarvelLevelSummonedBase
+// 0x0030 (0x0B90 - 0x0B60)
+#pragma pack(push, 0x1)
+class alignas(0x10) AMarvelLevelSummonedBase : public AMarvelSummonerBase
+{
+public:
+	uint8                                         Pad_B60[0x10];                                     // 0x0B60(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTeamComponent*                         TeamComponent;                                     // 0x0B70(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHittable;                                         // 0x0B78(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B79[0x3];                                      // 0x0B79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EReplicationLevel                             ConfigRepLevel;                                    // 0x0B7C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConfigNetFrequency;                                // 0x0B80(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B84[0x4];                                      // 0x0B84(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetHittable(bool Hittable);
+	void SetTriggerRepCheck();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MarvelLevelSummonedBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSummonedBase")
+	}
+	static class AMarvelLevelSummonedBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AMarvelLevelSummonedBase>();
+	}
+};
+#pragma pack(pop)
+DUMPER7_ASSERTS_AMarvelLevelSummonedBase;
+
+// Class MarvelLevel.LevelGravityElevator
+// 0x0200 (0x0D90 - 0x0B90)
+class ALevelGravityElevator final : public AMarvelLevelSummonedBase
+{
+public:
+	int32                                         Priority;                                          // 0x0B88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         GravityElevatorEffectID;                           // 0x0B8C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         GravityDurationTime;                               // 0x0B90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         EndPointKnockUpEffectID;                           // 0x0B94(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinBrakingFriction;                                // 0x0B98(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinBrakingDecelerationFalling;                     // 0x0B9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinBrakingDecelerationFlying;                      // 0x0BA0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BA4[0x4];                                      // 0x0BA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PathConveyedVelocity;                              // 0x0BA8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                PathConveyedEndPoint;                              // 0x0BC0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         GapTime;                                           // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BDC[0x4];                                      // 0x0BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  IgnoreTags;                                        // 0x0BE0(0x0068)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  RequireTags;                                       // 0x0C48(0x0068)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	float                                         TimeInterval;                                      // 0x0CB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_CB4[0x1C];                                     // 0x0CB4(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FActiveGameplayEffectHandle> CharacterEffectDict;                             // 0x0CD0(0x0050)(Protected, NativeAccessSpecifierProtected)
+	TArray<class AMarvelBaseCharacter*>           InsideCharacter;                                   // 0x0D20(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TMap<int32, float>                            EffectTimeDict;                                    // 0x0D30(0x0050)(Protected, NativeAccessSpecifierProtected)
+	class UBoxComponent*                          BoxComponent;                                      // 0x0D80(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D88[0x8];                                      // 0x0D88(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	struct FVector GetPathVelocity(const struct FVector& InVelocity, class UPrimitiveComponent* UpdatedComponent, const struct FVector& InGravity, float DeltaTime, EMovementMode MovementMode) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelGravityElevator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelGravityElevator")
+	}
+	static class ALevelGravityElevator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ALevelGravityElevator>();
+	}
+};
+DUMPER7_ASSERTS_ALevelGravityElevator;
 
 // Class MarvelLevel.LevelAnimMovementComponent
-// 0x0250 (0x03F0 - 0x01A0)
+// 0x0268 (0x0408 - 0x01A0)
 class ULevelAnimMovementComponent final : public UMovementComponent
 {
 public:
@@ -220,44 +364,34 @@ public:
 	uint8                                         Pad_1B2[0x6];                                      // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMarvelLevelAnimBaseActor*              LevelAnimOwner;                                    // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UPrimitiveComponent*                    MovementBase;                                      // 0x01C0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FHitResult                             FloorHitResult;                                    // 0x01C8(0x01F0)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	ELevelAnimMoveMode                            MovementMode;                                      // 0x03B8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         GravityScale;                                      // 0x03BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                GravityDirection;                                  // 0x03C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LocalGravityZ;                                     // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableSlide;                                      // 0x03DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3DD[0x3];                                      // 0x03DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ValidAngle;                                        // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SweepDeltaValue;                                   // 0x03E4(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	ELevelAnimMoveMode                            InitMovementMode;                                  // 0x03E8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             FloorHitResult;                                    // 0x01C8(0x0208)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	ELevelAnimMoveMode                            MovementMode;                                      // 0x03D0(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3D1[0x3];                                      // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         GravityScale;                                      // 0x03D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                GravityDirection;                                  // 0x03D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LocalGravityZ;                                     // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableSlide;                                      // 0x03F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3F5[0x3];                                      // 0x03F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ValidAngle;                                        // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SweepDeltaValue;                                   // 0x03FC(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ELevelAnimMoveMode                            InitMovementMode;                                  // 0x0400(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelAnimMovementComponent">();
+		STATIC_CLASS_IMPL("LevelAnimMovementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelAnimMovementComponent")
 	}
 	static class ULevelAnimMovementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelAnimMovementComponent>();
 	}
 };
-static_assert(alignof(ULevelAnimMovementComponent) == 0x000008, "Wrong alignment on ULevelAnimMovementComponent");
-static_assert(sizeof(ULevelAnimMovementComponent) == 0x0003F0, "Wrong size on ULevelAnimMovementComponent");
-static_assert(offsetof(ULevelAnimMovementComponent, OnMovementBaseChanged) == 0x0001A0, "Member 'ULevelAnimMovementComponent::OnMovementBaseChanged' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, bTickPoseOnDS) == 0x0001B0, "Member 'ULevelAnimMovementComponent::bTickPoseOnDS' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, LevelAnimOwner) == 0x0001B8, "Member 'ULevelAnimMovementComponent::LevelAnimOwner' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, MovementBase) == 0x0001C0, "Member 'ULevelAnimMovementComponent::MovementBase' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, FloorHitResult) == 0x0001C8, "Member 'ULevelAnimMovementComponent::FloorHitResult' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, MovementMode) == 0x0003B8, "Member 'ULevelAnimMovementComponent::MovementMode' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, GravityScale) == 0x0003BC, "Member 'ULevelAnimMovementComponent::GravityScale' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, GravityDirection) == 0x0003C0, "Member 'ULevelAnimMovementComponent::GravityDirection' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, LocalGravityZ) == 0x0003D8, "Member 'ULevelAnimMovementComponent::LocalGravityZ' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, bEnableSlide) == 0x0003DC, "Member 'ULevelAnimMovementComponent::bEnableSlide' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, ValidAngle) == 0x0003E0, "Member 'ULevelAnimMovementComponent::ValidAngle' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, SweepDeltaValue) == 0x0003E4, "Member 'ULevelAnimMovementComponent::SweepDeltaValue' has a wrong offset!");
-static_assert(offsetof(ULevelAnimMovementComponent, InitMovementMode) == 0x0003E8, "Member 'ULevelAnimMovementComponent::InitMovementMode' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelAnimMovementComponent;
 
 // Class MarvelLevel.LevelAudioActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -269,15 +403,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelAudioActor">();
+		STATIC_CLASS_IMPL("LevelAudioActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelAudioActor")
 	}
 	static class ALevelAudioActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelAudioActor>();
 	}
 };
-static_assert(alignof(ALevelAudioActor) == 0x000010, "Wrong alignment on ALevelAudioActor");
-static_assert(sizeof(ALevelAudioActor) == 0x0006E0, "Wrong size on ALevelAudioActor");
+DUMPER7_ASSERTS_ALevelAudioActor;
 
 // Class MarvelLevel.LevelBlockActor
 // 0x0010 (0x06F0 - 0x06E0)
@@ -295,41 +432,65 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelBlockActor">();
+		STATIC_CLASS_IMPL("LevelBlockActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelBlockActor")
 	}
 	static class ALevelBlockActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelBlockActor>();
 	}
 };
-static_assert(alignof(ALevelBlockActor) == 0x000010, "Wrong alignment on ALevelBlockActor");
-static_assert(sizeof(ALevelBlockActor) == 0x0006F0, "Wrong size on ALevelBlockActor");
-static_assert(offsetof(ALevelBlockActor, IgnoreBattleSides) == 0x0006E0, "Member 'ALevelBlockActor::IgnoreBattleSides' has a wrong offset!");
+DUMPER7_ASSERTS_ALevelBlockActor;
 
 // Class MarvelLevel.LevelBlockFlyPersistent
-// 0x0070 (0x13E0 - 0x1370)
+// 0x0070 (0x13F8 - 0x1388)
 class ULevelBlockFlyPersistent final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         FlyModeID;                                         // 0x1370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x6C];                                    // 0x1374(0x006C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         FlyModeID;                                         // 0x1388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x6C];                                    // 0x138C(0x006C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelBlockFlyPersistent">();
+		STATIC_CLASS_IMPL("LevelBlockFlyPersistent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelBlockFlyPersistent")
 	}
 	static class ULevelBlockFlyPersistent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelBlockFlyPersistent>();
 	}
 };
-static_assert(alignof(ULevelBlockFlyPersistent) == 0x000008, "Wrong alignment on ULevelBlockFlyPersistent");
-static_assert(sizeof(ULevelBlockFlyPersistent) == 0x0013E0, "Wrong size on ULevelBlockFlyPersistent");
-static_assert(offsetof(ULevelBlockFlyPersistent, FlyModeID) == 0x001370, "Member 'ULevelBlockFlyPersistent::FlyModeID' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelBlockFlyPersistent;
+
+// Class MarvelLevel.Ability_200401
+// 0x0000 (0x2B60 - 0x2B60)
+class UAbility_200401 : public UMarvelAeroBaseAbility
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("Ability_200401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_200401")
+	}
+	static class UAbility_200401* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAbility_200401>();
+	}
+};
+DUMPER7_ASSERTS_UAbility_200401;
 
 // Class MarvelLevel.LevelCustomEventSubsystem
-// 0x0000 (0x0038 - 0x0038)
+// 0x0000 (0x0040 - 0x0040)
 class ULevelCustomEventSubsystem : public UWorldSubsystem
 {
 public:
@@ -338,15 +499,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelCustomEventSubsystem">();
+		STATIC_CLASS_IMPL("LevelCustomEventSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelCustomEventSubsystem")
 	}
 	static class ULevelCustomEventSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelCustomEventSubsystem>();
 	}
 };
-static_assert(alignof(ULevelCustomEventSubsystem) == 0x000008, "Wrong alignment on ULevelCustomEventSubsystem");
-static_assert(sizeof(ULevelCustomEventSubsystem) == 0x000038, "Wrong size on ULevelCustomEventSubsystem");
+DUMPER7_ASSERTS_ULevelCustomEventSubsystem;
 
 // Class MarvelLevel.LevelFunctionLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -373,6 +537,7 @@ public:
 	static float GetSequenceLength(class ULevelSequence* LevelSequence);
 	static float GetSequencePlayerCurrentTime(class ULevelSequencePlayer* LevelSequencePlayer);
 	static bool IsActorInAABBRange(const struct FTransform& LocalTransform, const struct FVector& BorderHalfSize, class AMarvelBaseCharacter* InActor);
+	static bool IsEditorSimulate(class UObject* WorldContextObject);
 	static bool IsEnableLevelAsyncLoadInQueue();
 	static void LevelSetClientTravel(class UObject* WorldContextObject, const class FString& NextURLString);
 	static TArray<class UObject*> LocateBoundObjects(class ULevelSequence* InLevelSequence, const struct FGuid& InObjectId, class UObject* InContext);
@@ -380,132 +545,43 @@ public:
 	static void ModifyLevelFoliageMaterial();
 	static void SequencePlayerJumpTo(class ULevelSequencePlayer* LevelSequencePlayer, float TargetTime);
 	static void SequencePlayerJumpToSkippingSpawn(class ULevelSequencePlayer* LevelSequencePlayer, float TargetTime);
+	static void WakeUpNiagaraComponentsFromScalability(const TArray<class UNiagaraComponent*>& NiagaraComponents);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelFunctionLibrary">();
+		STATIC_CLASS_IMPL("LevelFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelFunctionLibrary")
 	}
 	static class ULevelFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelFunctionLibrary>();
 	}
 };
-static_assert(alignof(ULevelFunctionLibrary) == 0x000008, "Wrong alignment on ULevelFunctionLibrary");
-static_assert(sizeof(ULevelFunctionLibrary) == 0x000030, "Wrong size on ULevelFunctionLibrary");
-
-// Class MarvelLevel.MarvelLevelSummonedBase
-// 0x0030 (0x0B70 - 0x0B40)
-#pragma pack(push, 0x1)
-class alignas(0x10) AMarvelLevelSummonedBase : public AMarvelSummonerBase
-{
-public:
-	uint8                                         Pad_B40[0x10];                                     // 0x0B40(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTeamComponent*                         TeamComponent;                                     // 0x0B50(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHittable;                                         // 0x0B58(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B59[0x3];                                      // 0x0B59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	EReplicationLevel                             ConfigRepLevel;                                    // 0x0B5C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConfigNetFrequency;                                // 0x0B60(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B64[0x4];                                      // 0x0B64(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void SetHittable(bool Hittable);
-	void SetTriggerRepCheck();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MarvelLevelSummonedBase">();
-	}
-	static class AMarvelLevelSummonedBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMarvelLevelSummonedBase>();
-	}
-};
-#pragma pack(pop)
-static_assert(alignof(AMarvelLevelSummonedBase) == 0x000010, "Wrong alignment on AMarvelLevelSummonedBase");
-static_assert(sizeof(AMarvelLevelSummonedBase) == 0x000B70, "Wrong size on AMarvelLevelSummonedBase");
-static_assert(offsetof(AMarvelLevelSummonedBase, TeamComponent) == 0x000B50, "Member 'AMarvelLevelSummonedBase::TeamComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelSummonedBase, bHittable) == 0x000B58, "Member 'AMarvelLevelSummonedBase::bHittable' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelSummonedBase, ConfigRepLevel) == 0x000B5C, "Member 'AMarvelLevelSummonedBase::ConfigRepLevel' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelSummonedBase, ConfigNetFrequency) == 0x000B60, "Member 'AMarvelLevelSummonedBase::ConfigNetFrequency' has a wrong offset!");
-
-// Class MarvelLevel.LevelGravityElevator
-// 0x0200 (0x0D70 - 0x0B70)
-class ALevelGravityElevator final : public AMarvelLevelSummonedBase
-{
-public:
-	int32                                         Priority;                                          // 0x0B68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         GravityElevatorEffectID;                           // 0x0B6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         GravityDurationTime;                               // 0x0B70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         EndPointKnockUpEffectID;                           // 0x0B74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinBrakingFriction;                                // 0x0B78(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinBrakingDecelerationFalling;                     // 0x0B7C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinBrakingDecelerationFlying;                      // 0x0B80(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B84[0x4];                                      // 0x0B84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PathConveyedVelocity;                              // 0x0B88(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                PathConveyedEndPoint;                              // 0x0BA0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         GapTime;                                           // 0x0BB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_BBC[0x4];                                      // 0x0BBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  IgnoreTags;                                        // 0x0BC0(0x0068)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	struct FGameplayTagContainer                  RequireTags;                                       // 0x0C28(0x0068)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	float                                         TimeInterval;                                      // 0x0C90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C94[0x1C];                                     // 0x0C94(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FActiveGameplayEffectHandle> CharacterEffectDict;                             // 0x0CB0(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TArray<class AMarvelBaseCharacter*>           InsideCharacter;                                   // 0x0D00(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TMap<int32, float>                            EffectTimeDict;                                    // 0x0D10(0x0050)(Protected, NativeAccessSpecifierProtected)
-	class UBoxComponent*                          BoxComponent;                                      // 0x0D60(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D68[0x8];                                      // 0x0D68(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	struct FVector GetPathVelocity(const struct FVector& InVelocity, class UPrimitiveComponent* UpdatedComponent, const struct FVector& InGravity, float DeltaTime, EMovementMode MovementMode) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelGravityElevator">();
-	}
-	static class ALevelGravityElevator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ALevelGravityElevator>();
-	}
-};
-static_assert(alignof(ALevelGravityElevator) == 0x000010, "Wrong alignment on ALevelGravityElevator");
-static_assert(sizeof(ALevelGravityElevator) == 0x000D70, "Wrong size on ALevelGravityElevator");
-static_assert(offsetof(ALevelGravityElevator, Priority) == 0x000B68, "Member 'ALevelGravityElevator::Priority' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, GravityElevatorEffectID) == 0x000B6C, "Member 'ALevelGravityElevator::GravityElevatorEffectID' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, GravityDurationTime) == 0x000B70, "Member 'ALevelGravityElevator::GravityDurationTime' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, EndPointKnockUpEffectID) == 0x000B74, "Member 'ALevelGravityElevator::EndPointKnockUpEffectID' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, MinBrakingFriction) == 0x000B78, "Member 'ALevelGravityElevator::MinBrakingFriction' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, MinBrakingDecelerationFalling) == 0x000B7C, "Member 'ALevelGravityElevator::MinBrakingDecelerationFalling' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, MinBrakingDecelerationFlying) == 0x000B80, "Member 'ALevelGravityElevator::MinBrakingDecelerationFlying' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, PathConveyedVelocity) == 0x000B88, "Member 'ALevelGravityElevator::PathConveyedVelocity' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, PathConveyedEndPoint) == 0x000BA0, "Member 'ALevelGravityElevator::PathConveyedEndPoint' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, GapTime) == 0x000BB8, "Member 'ALevelGravityElevator::GapTime' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, IgnoreTags) == 0x000BC0, "Member 'ALevelGravityElevator::IgnoreTags' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, RequireTags) == 0x000C28, "Member 'ALevelGravityElevator::RequireTags' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, TimeInterval) == 0x000C90, "Member 'ALevelGravityElevator::TimeInterval' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, CharacterEffectDict) == 0x000CB0, "Member 'ALevelGravityElevator::CharacterEffectDict' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, InsideCharacter) == 0x000D00, "Member 'ALevelGravityElevator::InsideCharacter' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, EffectTimeDict) == 0x000D10, "Member 'ALevelGravityElevator::EffectTimeDict' has a wrong offset!");
-static_assert(offsetof(ALevelGravityElevator, BoxComponent) == 0x000D60, "Member 'ALevelGravityElevator::BoxComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelFunctionLibrary;
 
 // Class MarvelLevel.LevelGravityElevatorAbility
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class ULevelGravityElevatorAbility final : public UMarvelEffectGameplayAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelGravityElevatorAbility">();
+		STATIC_CLASS_IMPL("LevelGravityElevatorAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelGravityElevatorAbility")
 	}
 	static class ULevelGravityElevatorAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelGravityElevatorAbility>();
 	}
 };
-static_assert(alignof(ULevelGravityElevatorAbility) == 0x000008, "Wrong alignment on ULevelGravityElevatorAbility");
-static_assert(sizeof(ULevelGravityElevatorAbility) == 0x001370, "Wrong size on ULevelGravityElevatorAbility");
+DUMPER7_ASSERTS_ULevelGravityElevatorAbility;
 
 // Class MarvelLevel.LevelGravityZoneGameplayEffectComponent
 // 0x0048 (0x0078 - 0x0030)
@@ -517,16 +593,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelGravityZoneGameplayEffectComponent">();
+		STATIC_CLASS_IMPL("LevelGravityZoneGameplayEffectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelGravityZoneGameplayEffectComponent")
 	}
 	static class ULevelGravityZoneGameplayEffectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelGravityZoneGameplayEffectComponent>();
 	}
 };
-static_assert(alignof(ULevelGravityZoneGameplayEffectComponent) == 0x000008, "Wrong alignment on ULevelGravityZoneGameplayEffectComponent");
-static_assert(sizeof(ULevelGravityZoneGameplayEffectComponent) == 0x000078, "Wrong size on ULevelGravityZoneGameplayEffectComponent");
-static_assert(offsetof(ULevelGravityZoneGameplayEffectComponent, BeDispelledQuery) == 0x000030, "Member 'ULevelGravityZoneGameplayEffectComponent::BeDispelledQuery' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelGravityZoneGameplayEffectComponent;
 
 // Class MarvelLevel.LevelGravityZoneEffectTemplate
 // 0x0000 (0x1438 - 0x1438)
@@ -538,32 +616,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelGravityZoneEffectTemplate">();
+		STATIC_CLASS_IMPL("LevelGravityZoneEffectTemplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelGravityZoneEffectTemplate")
 	}
 	static class ULevelGravityZoneEffectTemplate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelGravityZoneEffectTemplate>();
 	}
 };
-static_assert(alignof(ULevelGravityZoneEffectTemplate) == 0x000008, "Wrong alignment on ULevelGravityZoneEffectTemplate");
-static_assert(sizeof(ULevelGravityZoneEffectTemplate) == 0x001438, "Wrong size on ULevelGravityZoneEffectTemplate");
-
-// Class MarvelLevel.Ability_200401
-// 0x0000 (0x2B10 - 0x2B10)
-class UAbility_200401 : public UMarvelAeroBaseAbility
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"Ability_200401">();
-	}
-	static class UAbility_200401* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAbility_200401>();
-	}
-};
-static_assert(alignof(UAbility_200401) == 0x000008, "Wrong alignment on UAbility_200401");
-static_assert(sizeof(UAbility_200401) == 0x002B10, "Wrong size on UAbility_200401");
+DUMPER7_ASSERTS_ULevelGravityZoneEffectTemplate;
 
 // Class MarvelLevel.LevelLightControlActor
 // 0x0060 (0x0740 - 0x06E0)
@@ -586,40 +650,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelLightControlActor">();
+		STATIC_CLASS_IMPL("LevelLightControlActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelLightControlActor")
 	}
 	static class ALevelLightControlActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelLightControlActor>();
 	}
 };
-static_assert(alignof(ALevelLightControlActor) == 0x000010, "Wrong alignment on ALevelLightControlActor");
-static_assert(sizeof(ALevelLightControlActor) == 0x000740, "Wrong size on ALevelLightControlActor");
-static_assert(offsetof(ALevelLightControlActor, LightActorTags) == 0x0006D8, "Member 'ALevelLightControlActor::LightActorTags' has a wrong offset!");
-static_assert(offsetof(ALevelLightControlActor, FramingNumber) == 0x0006E8, "Member 'ALevelLightControlActor::FramingNumber' has a wrong offset!");
-static_assert(offsetof(ALevelLightControlActor, FlashRate) == 0x0006EC, "Member 'ALevelLightControlActor::FlashRate' has a wrong offset!");
-static_assert(offsetof(ALevelLightControlActor, MaxIntensityLight) == 0x0006F0, "Member 'ALevelLightControlActor::MaxIntensityLight' has a wrong offset!");
-static_assert(offsetof(ALevelLightControlActor, MinIntensityLight) == 0x0006F4, "Member 'ALevelLightControlActor::MinIntensityLight' has a wrong offset!");
-
-// Class MarvelLevel.LevelPackageRulesFuncLibrary
-// 0x0000 (0x0030 - 0x0030)
-class ULevelPackageRulesFuncLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static void UpdatePackageDataTables();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelPackageRulesFuncLibrary">();
-	}
-	static class ULevelPackageRulesFuncLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelPackageRulesFuncLibrary>();
-	}
-};
-static_assert(alignof(ULevelPackageRulesFuncLibrary) == 0x000008, "Wrong alignment on ULevelPackageRulesFuncLibrary");
-static_assert(sizeof(ULevelPackageRulesFuncLibrary) == 0x000030, "Wrong size on ULevelPackageRulesFuncLibrary");
+DUMPER7_ASSERTS_ALevelLightControlActor;
 
 // Class MarvelLevel.LevelPortal
 // 0x0000 (0x06E0 - 0x06E0)
@@ -628,15 +670,18 @@ class ALevelPortal : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelPortal">();
+		STATIC_CLASS_IMPL("LevelPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelPortal")
 	}
 	static class ALevelPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelPortal>();
 	}
 };
-static_assert(alignof(ALevelPortal) == 0x000010, "Wrong alignment on ALevelPortal");
-static_assert(sizeof(ALevelPortal) == 0x0006E0, "Wrong size on ALevelPortal");
+DUMPER7_ASSERTS_ALevelPortal;
 
 // Class MarvelLevel.LevelStaticMeshActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -648,18 +693,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelStaticMeshActor">();
+		STATIC_CLASS_IMPL("LevelStaticMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelStaticMeshActor")
 	}
 	static class ALevelStaticMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelStaticMeshActor>();
 	}
 };
-static_assert(alignof(ALevelStaticMeshActor) == 0x000010, "Wrong alignment on ALevelStaticMeshActor");
-static_assert(sizeof(ALevelStaticMeshActor) == 0x0006E0, "Wrong size on ALevelStaticMeshActor");
+DUMPER7_ASSERTS_ALevelStaticMeshActor;
 
 // Class MarvelLevel.LevelTransportPipe
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class ALevelTransportPipe final : public AMarvelLevelSummonedBase
 {
 public:
@@ -669,15 +717,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelTransportPipe">();
+		STATIC_CLASS_IMPL("LevelTransportPipe")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelTransportPipe")
 	}
 	static class ALevelTransportPipe* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelTransportPipe>();
 	}
 };
-static_assert(alignof(ALevelTransportPipe) == 0x000010, "Wrong alignment on ALevelTransportPipe");
-static_assert(sizeof(ALevelTransportPipe) == 0x000B70, "Wrong size on ALevelTransportPipe");
+DUMPER7_ASSERTS_ALevelTransportPipe;
 
 // Class MarvelLevel.LevelViewCheckComponent
 // 0x0000 (0x0340 - 0x0340)
@@ -694,17 +745,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelViewCheckComponent">();
+		STATIC_CLASS_IMPL("LevelViewCheckComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelViewCheckComponent")
 	}
 	static class ULevelViewCheckComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelViewCheckComponent>();
 	}
 };
-static_assert(alignof(ULevelViewCheckComponent) == 0x000010, "Wrong alignment on ULevelViewCheckComponent");
-static_assert(sizeof(ULevelViewCheckComponent) == 0x000340, "Wrong size on ULevelViewCheckComponent");
-static_assert(offsetof(ULevelViewCheckComponent, Radius) == 0x000338, "Member 'ULevelViewCheckComponent::Radius' has a wrong offset!");
-static_assert(offsetof(ULevelViewCheckComponent, SkipCheckInBattleState) == 0x00033C, "Member 'ULevelViewCheckComponent::SkipCheckInBattleState' has a wrong offset!");
+DUMPER7_ASSERTS_ULevelViewCheckComponent;
 
 // Class MarvelLevel.MarvelAbilitiesRuleComponent
 // 0x0010 (0x0118 - 0x0108)
@@ -719,15 +771,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAbilitiesRuleComponent">();
+		STATIC_CLASS_IMPL("MarvelAbilitiesRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAbilitiesRuleComponent")
 	}
 	static class UMarvelAbilitiesRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAbilitiesRuleComponent>();
 	}
 };
-static_assert(alignof(UMarvelAbilitiesRuleComponent) == 0x000008, "Wrong alignment on UMarvelAbilitiesRuleComponent");
-static_assert(sizeof(UMarvelAbilitiesRuleComponent) == 0x000118, "Wrong size on UMarvelAbilitiesRuleComponent");
+DUMPER7_ASSERTS_UMarvelAbilitiesRuleComponent;
 
 // Class MarvelLevel.MarvelAudioCondition
 // 0x0000 (0x0030 - 0x0030)
@@ -739,15 +794,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelAudioCondition">();
+		STATIC_CLASS_IMPL("MarvelAudioCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAudioCondition")
 	}
 	static class UMarvelAudioCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelAudioCondition>();
 	}
 };
-static_assert(alignof(UMarvelAudioCondition) == 0x000008, "Wrong alignment on UMarvelAudioCondition");
-static_assert(sizeof(UMarvelAudioCondition) == 0x000030, "Wrong size on UMarvelAudioCondition");
+DUMPER7_ASSERTS_UMarvelAudioCondition;
 
 // Class MarvelLevel.MarvelLevelAnimActionComponent
 // 0x0180 (0x0288 - 0x0108)
@@ -775,20 +833,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelAnimActionComponent">();
+		STATIC_CLASS_IMPL("MarvelLevelAnimActionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelAnimActionComponent")
 	}
 	static class UMarvelLevelAnimActionComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelLevelAnimActionComponent>();
 	}
 };
-static_assert(alignof(UMarvelLevelAnimActionComponent) == 0x000008, "Wrong alignment on UMarvelLevelAnimActionComponent");
-static_assert(sizeof(UMarvelLevelAnimActionComponent) == 0x000288, "Wrong size on UMarvelLevelAnimActionComponent");
-static_assert(offsetof(UMarvelLevelAnimActionComponent, LevelAnimActions) == 0x000108, "Member 'UMarvelLevelAnimActionComponent::LevelAnimActions' has a wrong offset!");
-static_assert(offsetof(UMarvelLevelAnimActionComponent, MeshComponent) == 0x000118, "Member 'UMarvelLevelAnimActionComponent::MeshComponent' has a wrong offset!");
-static_assert(offsetof(UMarvelLevelAnimActionComponent, MovementComponent) == 0x000120, "Member 'UMarvelLevelAnimActionComponent::MovementComponent' has a wrong offset!");
-static_assert(offsetof(UMarvelLevelAnimActionComponent, ReplicatedActionIndex) == 0x000128, "Member 'UMarvelLevelAnimActionComponent::ReplicatedActionIndex' has a wrong offset!");
-static_assert(offsetof(UMarvelLevelAnimActionComponent, WeakLinkingInteractableActors) == 0x000148, "Member 'UMarvelLevelAnimActionComponent::WeakLinkingInteractableActors' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelLevelAnimActionComponent;
 
 // Class MarvelLevel.MarvelLevelAnimActor
 // 0x0030 (0x0710 - 0x06E0)
@@ -808,20 +864,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelAnimActor">();
+		STATIC_CLASS_IMPL("MarvelLevelAnimActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelAnimActor")
 	}
 	static class AMarvelLevelAnimActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelAnimActor>();
 	}
 };
-static_assert(alignof(AMarvelLevelAnimActor) == 0x000010, "Wrong alignment on AMarvelLevelAnimActor");
-static_assert(sizeof(AMarvelLevelAnimActor) == 0x000710, "Wrong size on AMarvelLevelAnimActor");
-static_assert(offsetof(AMarvelLevelAnimActor, CapsuleComponent) == 0x0006E0, "Member 'AMarvelLevelAnimActor::CapsuleComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelAnimActor, MeshComponent) == 0x0006E8, "Member 'AMarvelLevelAnimActor::MeshComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelAnimActor, LevelOptimizationComp) == 0x0006F0, "Member 'AMarvelLevelAnimActor::LevelOptimizationComp' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelAnimActor, ActionComponent) == 0x0006F8, "Member 'AMarvelLevelAnimActor::ActionComponent' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelAnimActor, MovementComponent) == 0x000700, "Member 'AMarvelLevelAnimActor::MovementComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelLevelAnimActor;
 
 // Class MarvelLevel.MarvelLevelAudioItem
 // 0x0000 (0x0038 - 0x0038)
@@ -830,35 +884,41 @@ class UMarvelLevelAudioItem : public UPrimaryDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelAudioItem">();
+		STATIC_CLASS_IMPL("MarvelLevelAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelAudioItem")
 	}
 	static class UMarvelLevelAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelLevelAudioItem>();
 	}
 };
-static_assert(alignof(UMarvelLevelAudioItem) == 0x000008, "Wrong alignment on UMarvelLevelAudioItem");
-static_assert(sizeof(UMarvelLevelAudioItem) == 0x000038, "Wrong size on UMarvelLevelAudioItem");
+DUMPER7_ASSERTS_UMarvelLevelAudioItem;
 
 // Class MarvelLevel.MarvelLevelKnockUpAbility
-// 0x0000 (0x2038 - 0x2038)
+// 0x0000 (0x2388 - 0x2388)
 class UMarvelLevelKnockUpAbility : public UMarvelKnockUpAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelKnockUpAbility">();
+		STATIC_CLASS_IMPL("MarvelLevelKnockUpAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelKnockUpAbility")
 	}
 	static class UMarvelLevelKnockUpAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelLevelKnockUpAbility>();
 	}
 };
-static_assert(alignof(UMarvelLevelKnockUpAbility) == 0x000008, "Wrong alignment on UMarvelLevelKnockUpAbility");
-static_assert(sizeof(UMarvelLevelKnockUpAbility) == 0x002038, "Wrong size on UMarvelLevelKnockUpAbility");
+DUMPER7_ASSERTS_UMarvelLevelKnockUpAbility;
 
 // Class MarvelLevel.MarvelLevelKrakoaPortalAbility
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UMarvelLevelKrakoaPortalAbility : public UMarvelGameplayAbility
 {
 public:
@@ -869,15 +929,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelKrakoaPortalAbility">();
+		STATIC_CLASS_IMPL("MarvelLevelKrakoaPortalAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelKrakoaPortalAbility")
 	}
 	static class UMarvelLevelKrakoaPortalAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelLevelKrakoaPortalAbility>();
 	}
 };
-static_assert(alignof(UMarvelLevelKrakoaPortalAbility) == 0x000008, "Wrong alignment on UMarvelLevelKrakoaPortalAbility");
-static_assert(sizeof(UMarvelLevelKrakoaPortalAbility) == 0x0029F0, "Wrong size on UMarvelLevelKrakoaPortalAbility");
+DUMPER7_ASSERTS_UMarvelLevelKrakoaPortalAbility;
 
 // Class MarvelLevel.MarvelLevelSequenceActorBase
 // 0x0000 (0x0780 - 0x0780)
@@ -894,15 +957,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelSequenceActorBase">();
+		STATIC_CLASS_IMPL("MarvelLevelSequenceActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSequenceActorBase")
 	}
 	static class AMarvelLevelSequenceActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelSequenceActorBase>();
 	}
 };
-static_assert(alignof(AMarvelLevelSequenceActorBase) == 0x000010, "Wrong alignment on AMarvelLevelSequenceActorBase");
-static_assert(sizeof(AMarvelLevelSequenceActorBase) == 0x000780, "Wrong size on AMarvelLevelSequenceActorBase");
+DUMPER7_ASSERTS_AMarvelLevelSequenceActorBase;
 
 // Class MarvelLevel.MarvelLevelPortalBase
 // 0x0140 (0x08C0 - 0x0780)
@@ -925,18 +991,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelPortalBase">();
+		STATIC_CLASS_IMPL("MarvelLevelPortalBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelPortalBase")
 	}
 	static class AMarvelLevelPortalBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelPortalBase>();
 	}
 };
-static_assert(alignof(AMarvelLevelPortalBase) == 0x000010, "Wrong alignment on AMarvelLevelPortalBase");
-static_assert(sizeof(AMarvelLevelPortalBase) == 0x0008C0, "Wrong size on AMarvelLevelPortalBase");
-static_assert(offsetof(AMarvelLevelPortalBase, OnLevelPortalActivationChanged) == 0x000780, "Member 'AMarvelLevelPortalBase::OnLevelPortalActivationChanged' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelPortalBase, bLevelPortalActivated) == 0x000790, "Member 'AMarvelLevelPortalBase::bLevelPortalActivated' has a wrong offset!");
-static_assert(offsetof(AMarvelLevelPortalBase, PlayerUsageRecords) == 0x000798, "Member 'AMarvelLevelPortalBase::PlayerUsageRecords' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelLevelPortalBase;
 
 // Class MarvelLevel.MarvelLevelProcessController
 // 0x0000 (0x06E0 - 0x06E0)
@@ -945,15 +1011,18 @@ class AMarvelLevelProcessController : public AMarvelLevelActorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelProcessController">();
+		STATIC_CLASS_IMPL("MarvelLevelProcessController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelProcessController")
 	}
 	static class AMarvelLevelProcessController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelProcessController>();
 	}
 };
-static_assert(alignof(AMarvelLevelProcessController) == 0x000010, "Wrong alignment on AMarvelLevelProcessController");
-static_assert(sizeof(AMarvelLevelProcessController) == 0x0006E0, "Wrong size on AMarvelLevelProcessController");
+DUMPER7_ASSERTS_AMarvelLevelProcessController;
 
 // Class MarvelLevel.MarvelLevelRuleControlBase
 // 0x00A0 (0x01A8 - 0x0108)
@@ -966,120 +1035,132 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelRuleControlBase">();
+		STATIC_CLASS_IMPL("MarvelLevelRuleControlBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelRuleControlBase")
 	}
 	static class UMarvelLevelRuleControlBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelLevelRuleControlBase>();
 	}
 };
-static_assert(alignof(UMarvelLevelRuleControlBase) == 0x000008, "Wrong alignment on UMarvelLevelRuleControlBase");
-static_assert(sizeof(UMarvelLevelRuleControlBase) == 0x0001A8, "Wrong size on UMarvelLevelRuleControlBase");
-static_assert(offsetof(UMarvelLevelRuleControlBase, LevelNodeDelayTimeMap) == 0x000108, "Member 'UMarvelLevelRuleControlBase::LevelNodeDelayTimeMap' has a wrong offset!");
-static_assert(offsetof(UMarvelLevelRuleControlBase, LevelNodeRepeatTimeMap) == 0x000158, "Member 'UMarvelLevelRuleControlBase::LevelNodeRepeatTimeMap' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelLevelRuleControlBase;
 
 // Class MarvelLevel.MarvelLevelSummoned_StaticMesh
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class AMarvelLevelSummoned_StaticMesh final : public AMarvelLevelSummonedBase
 {
 public:
-	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x0B68(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x0B88(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelSummoned_StaticMesh">();
+		STATIC_CLASS_IMPL("MarvelLevelSummoned_StaticMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSummoned_StaticMesh")
 	}
 	static class AMarvelLevelSummoned_StaticMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelSummoned_StaticMesh>();
 	}
 };
-static_assert(alignof(AMarvelLevelSummoned_StaticMesh) == 0x000010, "Wrong alignment on AMarvelLevelSummoned_StaticMesh");
-static_assert(sizeof(AMarvelLevelSummoned_StaticMesh) == 0x000B70, "Wrong size on AMarvelLevelSummoned_StaticMesh");
-static_assert(offsetof(AMarvelLevelSummoned_StaticMesh, SummonedStaticMesh) == 0x000B68, "Member 'AMarvelLevelSummoned_StaticMesh::SummonedStaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelLevelSummoned_StaticMesh;
 
 // Class MarvelLevel.Cue_Buff_20000001
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class ACue_Buff_20000001 final : public AMarvelCueNotify_Buff
 {
 public:
-	class UAkAudioEvent*                          AudioEvent;                                        // 0x1638(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AudioEvent;                                        // 0x16E8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Cue_Buff_20000001">();
+		STATIC_CLASS_IMPL("Cue_Buff_20000001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_20000001")
 	}
 	static class ACue_Buff_20000001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_20000001>();
 	}
 };
-static_assert(alignof(ACue_Buff_20000001) == 0x000010, "Wrong alignment on ACue_Buff_20000001");
-static_assert(sizeof(ACue_Buff_20000001) == 0x001640, "Wrong size on ACue_Buff_20000001");
-static_assert(offsetof(ACue_Buff_20000001, AudioEvent) == 0x001638, "Member 'ACue_Buff_20000001::AudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Buff_20000001;
 
 // Class MarvelLevel.MarvelLevelSummoned_20000010
-// 0x0010 (0x0B80 - 0x0B70)
+// 0x0010 (0x0BA0 - 0x0B90)
 class AMarvelLevelSummoned_20000010 : public AMarvelLevelSummonedBase
 {
 public:
-	TArray<class AActor*>                         ExOcclusionTargets;                                // 0x0B68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B78[0x8];                                      // 0x0B78(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         ExOcclusionTargets;                                // 0x0B88(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B98[0x8];                                      // 0x0B98(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelSummoned_20000010">();
+		STATIC_CLASS_IMPL("MarvelLevelSummoned_20000010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSummoned_20000010")
 	}
 	static class AMarvelLevelSummoned_20000010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelSummoned_20000010>();
 	}
 };
-static_assert(alignof(AMarvelLevelSummoned_20000010) == 0x000010, "Wrong alignment on AMarvelLevelSummoned_20000010");
-static_assert(sizeof(AMarvelLevelSummoned_20000010) == 0x000B80, "Wrong size on AMarvelLevelSummoned_20000010");
-static_assert(offsetof(AMarvelLevelSummoned_20000010, ExOcclusionTargets) == 0x000B68, "Member 'AMarvelLevelSummoned_20000010::ExOcclusionTargets' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelLevelSummoned_20000010;
 
 // Class MarvelLevel.MarvelLevelSummoned_20050101
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class AMarvelLevelSummoned_20050101 final : public AMarvelLevelSummonedBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelSummoned_20050101">();
+		STATIC_CLASS_IMPL("MarvelLevelSummoned_20050101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSummoned_20050101")
 	}
 	static class AMarvelLevelSummoned_20050101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelSummoned_20050101>();
 	}
 };
-static_assert(alignof(AMarvelLevelSummoned_20050101) == 0x000010, "Wrong alignment on AMarvelLevelSummoned_20050101");
-static_assert(sizeof(AMarvelLevelSummoned_20050101) == 0x000B70, "Wrong size on AMarvelLevelSummoned_20050101");
+DUMPER7_ASSERTS_AMarvelLevelSummoned_20050101;
 
 // Class MarvelLevel.MarvelLevelSummoned_KnockUp
-// 0x0050 (0x0BC0 - 0x0B70)
+// 0x0050 (0x0BE0 - 0x0B90)
 class AMarvelLevelSummoned_KnockUp : public AMarvelLevelSummonedBase
 {
 public:
-	struct FPhysicForceMove                       PhysicKnockUp;                                     // 0x0B68(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BB8[0x8];                                      // 0x0BB8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPhysicForceMove                       PhysicKnockUp;                                     // 0x0B88(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BD8[0x8];                                      // 0x0BD8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelLevelSummoned_KnockUp">();
+		STATIC_CLASS_IMPL("MarvelLevelSummoned_KnockUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelLevelSummoned_KnockUp")
 	}
 	static class AMarvelLevelSummoned_KnockUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelLevelSummoned_KnockUp>();
 	}
 };
-static_assert(alignof(AMarvelLevelSummoned_KnockUp) == 0x000010, "Wrong alignment on AMarvelLevelSummoned_KnockUp");
-static_assert(sizeof(AMarvelLevelSummoned_KnockUp) == 0x000BC0, "Wrong size on AMarvelLevelSummoned_KnockUp");
-static_assert(offsetof(AMarvelLevelSummoned_KnockUp, PhysicKnockUp) == 0x000B68, "Member 'AMarvelLevelSummoned_KnockUp::PhysicKnockUp' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelLevelSummoned_KnockUp;
 
 // Class MarvelLevel.MarvelRuleCondition
 // 0x0000 (0x0030 - 0x0030)
@@ -1091,15 +1172,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelRuleCondition">();
+		STATIC_CLASS_IMPL("MarvelRuleCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelRuleCondition")
 	}
 	static class UMarvelRuleCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelRuleCondition>();
 	}
 };
-static_assert(alignof(UMarvelRuleCondition) == 0x000008, "Wrong alignment on UMarvelRuleCondition");
-static_assert(sizeof(UMarvelRuleCondition) == 0x000030, "Wrong size on UMarvelRuleCondition");
+DUMPER7_ASSERTS_UMarvelRuleCondition;
 
 // Class MarvelLevel.MarvelRuleConfig
 // 0x0000 (0x0030 - 0x0030)
@@ -1112,15 +1196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelRuleConfig">();
+		STATIC_CLASS_IMPL("MarvelRuleConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelRuleConfig")
 	}
 	static class UMarvelRuleConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelRuleConfig>();
 	}
 };
-static_assert(alignof(UMarvelRuleConfig) == 0x000008, "Wrong alignment on UMarvelRuleConfig");
-static_assert(sizeof(UMarvelRuleConfig) == 0x000030, "Wrong size on UMarvelRuleConfig");
+DUMPER7_ASSERTS_UMarvelRuleConfig;
 
 // Class MarvelLevel.MarvelRuleControllerItem
 // 0x0008 (0x0040 - 0x0038)
@@ -1132,16 +1219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelRuleControllerItem">();
+		STATIC_CLASS_IMPL("MarvelRuleControllerItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelRuleControllerItem")
 	}
 	static class UMarvelRuleControllerItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelRuleControllerItem>();
 	}
 };
-static_assert(alignof(UMarvelRuleControllerItem) == 0x000008, "Wrong alignment on UMarvelRuleControllerItem");
-static_assert(sizeof(UMarvelRuleControllerItem) == 0x000040, "Wrong size on UMarvelRuleControllerItem");
-static_assert(offsetof(UMarvelRuleControllerItem, RuleControllerClass) == 0x000038, "Member 'UMarvelRuleControllerItem::RuleControllerClass' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelRuleControllerItem;
 
 // Class MarvelLevel.MarvelRuleItem
 // 0x0028 (0x0060 - 0x0038)
@@ -1155,18 +1244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelRuleItem">();
+		STATIC_CLASS_IMPL("MarvelRuleItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelRuleItem")
 	}
 	static class UMarvelRuleItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelRuleItem>();
 	}
 };
-static_assert(alignof(UMarvelRuleItem) == 0x000008, "Wrong alignment on UMarvelRuleItem");
-static_assert(sizeof(UMarvelRuleItem) == 0x000060, "Wrong size on UMarvelRuleItem");
-static_assert(offsetof(UMarvelRuleItem, RuleList) == 0x000038, "Member 'UMarvelRuleItem::RuleList' has a wrong offset!");
-static_assert(offsetof(UMarvelRuleItem, ActionList) == 0x000048, "Member 'UMarvelRuleItem::ActionList' has a wrong offset!");
-static_assert(offsetof(UMarvelRuleItem, LevelConfig) == 0x000058, "Member 'UMarvelRuleItem::LevelConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelRuleItem;
 
 // Class MarvelLevel.PlayerStateTrainComponent
 // 0x0030 (0x0138 - 0x0108)
@@ -1197,25 +1286,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerStateTrainComponent">();
+		STATIC_CLASS_IMPL("PlayerStateTrainComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerStateTrainComponent")
 	}
 	static class UPlayerStateTrainComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerStateTrainComponent>();
 	}
 };
-static_assert(alignof(UPlayerStateTrainComponent) == 0x000008, "Wrong alignment on UPlayerStateTrainComponent");
-static_assert(sizeof(UPlayerStateTrainComponent) == 0x000138, "Wrong size on UPlayerStateTrainComponent");
-static_assert(offsetof(UPlayerStateTrainComponent, SelfPlayerUID) == 0x000108, "Member 'UPlayerStateTrainComponent::SelfPlayerUID' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, MainAttackHit) == 0x00010C, "Member 'UPlayerStateTrainComponent::MainAttackHit' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, MainAttackMiss) == 0x000110, "Member 'UPlayerStateTrainComponent::MainAttackMiss' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, GenerateIDList) == 0x000118, "Member 'UPlayerStateTrainComponent::GenerateIDList' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, MainAttackCriticalHit) == 0x000128, "Member 'UPlayerStateTrainComponent::MainAttackCriticalHit' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, KillCount) == 0x00012C, "Member 'UPlayerStateTrainComponent::KillCount' has a wrong offset!");
-static_assert(offsetof(UPlayerStateTrainComponent, InstigateDamage) == 0x000130, "Member 'UPlayerStateTrainComponent::InstigateDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPlayerStateTrainComponent;
 
 // Class MarvelLevel.EffectAbility_ScaleGravity
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UEffectAbility_ScaleGravity : public UMarvelEffectGameplayAbility
 {
 public:
@@ -1225,15 +1310,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EffectAbility_ScaleGravity">();
+		STATIC_CLASS_IMPL("EffectAbility_ScaleGravity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EffectAbility_ScaleGravity")
 	}
 	static class UEffectAbility_ScaleGravity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffectAbility_ScaleGravity>();
 	}
 };
-static_assert(alignof(UEffectAbility_ScaleGravity) == 0x000008, "Wrong alignment on UEffectAbility_ScaleGravity");
-static_assert(sizeof(UEffectAbility_ScaleGravity) == 0x001370, "Wrong size on UEffectAbility_ScaleGravity");
+DUMPER7_ASSERTS_UEffectAbility_ScaleGravity;
 
 // Class MarvelLevel.SpringFestivalStatComponent
 // 0x0060 (0x0168 - 0x0108)
@@ -1253,23 +1341,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpringFestivalStatComponent">();
+		STATIC_CLASS_IMPL("SpringFestivalStatComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpringFestivalStatComponent")
 	}
 	static class USpringFestivalStatComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpringFestivalStatComponent>();
 	}
 };
-static_assert(alignof(USpringFestivalStatComponent) == 0x000008, "Wrong alignment on USpringFestivalStatComponent");
-static_assert(sizeof(USpringFestivalStatComponent) == 0x000168, "Wrong size on USpringFestivalStatComponent");
-static_assert(offsetof(USpringFestivalStatComponent, PlayerStats) == 0x000108, "Member 'USpringFestivalStatComponent::PlayerStats' has a wrong offset!");
+DUMPER7_ASSERTS_USpringFestivalStatComponent;
 
 // Class MarvelLevel.Summoned_20020001
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class ASummoned_20020001 : public AMarvelLevelSummonedBase
 {
 public:
-	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x0B68(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   SummonedStaticMesh;                                // 0x0B88(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_SetReplicatingMovement(bool NewReplicate);
@@ -1277,19 +1367,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Summoned_20020001">();
+		STATIC_CLASS_IMPL("Summoned_20020001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_20020001")
 	}
 	static class ASummoned_20020001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_20020001>();
 	}
 };
-static_assert(alignof(ASummoned_20020001) == 0x000010, "Wrong alignment on ASummoned_20020001");
-static_assert(sizeof(ASummoned_20020001) == 0x000B70, "Wrong size on ASummoned_20020001");
-static_assert(offsetof(ASummoned_20020001, SummonedStaticMesh) == 0x000B68, "Member 'ASummoned_20020001::SummonedStaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_20020001;
 
 // Class MarvelLevel.Summoned_21300401
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class ASummoned_21300401 : public AMarvelLevelSummonedBase
 {
 public:
@@ -1299,15 +1391,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Summoned_21300401">();
+		STATIC_CLASS_IMPL("Summoned_21300401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_21300401")
 	}
 	static class ASummoned_21300401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_21300401>();
 	}
 };
-static_assert(alignof(ASummoned_21300401) == 0x000010, "Wrong alignment on ASummoned_21300401");
-static_assert(sizeof(ASummoned_21300401) == 0x000B70, "Wrong size on ASummoned_21300401");
+DUMPER7_ASSERTS_ASummoned_21300401;
 
 }
 

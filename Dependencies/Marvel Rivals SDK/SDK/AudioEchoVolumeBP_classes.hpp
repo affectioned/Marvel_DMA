@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AudioEchoVolumeBP_C">();
+		BP_STATIC_CLASS_IMPL("AudioEchoVolumeBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AudioEchoVolumeBP_C")
 	}
 	static class AAudioEchoVolumeBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAudioEchoVolumeBP_C>();
 	}
 };
-static_assert(alignof(AAudioEchoVolumeBP_C) == 0x000010, "Wrong alignment on AAudioEchoVolumeBP_C");
-static_assert(sizeof(AAudioEchoVolumeBP_C) == 0x000740, "Wrong size on AAudioEchoVolumeBP_C");
-static_assert(offsetof(AAudioEchoVolumeBP_C, Box) == 0x000730, "Member 'AAudioEchoVolumeBP_C::Box' has a wrong offset!");
+DUMPER7_ASSERTS_AAudioEchoVolumeBP_C;
 
 }
 

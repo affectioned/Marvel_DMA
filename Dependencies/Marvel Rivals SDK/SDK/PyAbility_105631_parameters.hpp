@@ -25,9 +25,7 @@ struct PyAbility_105631_OnSpawnSummonedSuccess final
 public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_OnSpawnSummonedSuccess) == 0x000008, "Wrong alignment on PyAbility_105631_OnSpawnSummonedSuccess");
-static_assert(sizeof(PyAbility_105631_OnSpawnSummonedSuccess) == 0x000008, "Wrong size on PyAbility_105631_OnSpawnSummonedSuccess");
-static_assert(offsetof(PyAbility_105631_OnSpawnSummonedSuccess, SpawnActor) == 0x000000, "Member 'PyAbility_105631_OnSpawnSummonedSuccess::SpawnActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_OnSpawnSummonedSuccess;
 
 // PythonFunction PyAbility_105631.PyAbility_105631.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct PyAbility_105631_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105631_CanActivate");
-static_assert(sizeof(PyAbility_105631_CanActivate) == 0x000001, "Wrong size on PyAbility_105631_CanActivate");
-static_assert(offsetof(PyAbility_105631_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105631_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_CanActivate;
 
 // PythonFunction PyAbility_105631.PyAbility_105631.GetTimelineIndexToPlay
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +43,7 @@ struct PyAbility_105631_GetTimelineIndexToPlay final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_GetTimelineIndexToPlay) == 0x000004, "Wrong alignment on PyAbility_105631_GetTimelineIndexToPlay");
-static_assert(sizeof(PyAbility_105631_GetTimelineIndexToPlay) == 0x000004, "Wrong size on PyAbility_105631_GetTimelineIndexToPlay");
-static_assert(offsetof(PyAbility_105631_GetTimelineIndexToPlay, ReturnValue) == 0x000000, "Member 'PyAbility_105631_GetTimelineIndexToPlay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_GetTimelineIndexToPlay;
 
 // PythonFunction PyAbility_105631.PyAbility_105631.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -59,10 +53,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_105631_OnTagUpdate");
-static_assert(sizeof(PyAbility_105631_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_105631_OnTagUpdate");
-static_assert(offsetof(PyAbility_105631_OnTagUpdate, Tag) == 0x000000, "Member 'PyAbility_105631_OnTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_105631_OnTagUpdate, Exist) == 0x00000C, "Member 'PyAbility_105631_OnTagUpdate::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_OnTagUpdate;
 
 // PythonFunction PyAbility_105631.PyAbility_105631.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +62,7 @@ struct PyAbility_105631_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105631_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105631_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105631_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105631_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105631_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105631.PyAbility_105631.OnBarrierActiveChange
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +71,7 @@ struct PyAbility_105631_OnBarrierActiveChange final
 public:
 	bool                                          IsActive;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105631_OnBarrierActiveChange) == 0x000001, "Wrong alignment on PyAbility_105631_OnBarrierActiveChange");
-static_assert(sizeof(PyAbility_105631_OnBarrierActiveChange) == 0x000001, "Wrong size on PyAbility_105631_OnBarrierActiveChange");
-static_assert(offsetof(PyAbility_105631_OnBarrierActiveChange, IsActive) == 0x000000, "Member 'PyAbility_105631_OnBarrierActiveChange::IsActive' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105631_OnBarrierActiveChange;
 
 // PythonFunction PyAbility_105631.PySummonedComp_10563101.K2_OnSummonedTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -95,11 +82,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedComp_10563101_K2_OnSummonedTakeDamage) == 0x000008, "Wrong alignment on PySummonedComp_10563101_K2_OnSummonedTakeDamage");
-static_assert(sizeof(PySummonedComp_10563101_K2_OnSummonedTakeDamage) == 0x000028, "Wrong size on PySummonedComp_10563101_K2_OnSummonedTakeDamage");
-static_assert(offsetof(PySummonedComp_10563101_K2_OnSummonedTakeDamage, InSourceAvatar) == 0x000000, "Member 'PySummonedComp_10563101_K2_OnSummonedTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_10563101_K2_OnSummonedTakeDamage, InTargetAvatar) == 0x000008, "Member 'PySummonedComp_10563101_K2_OnSummonedTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_10563101_K2_OnSummonedTakeDamage, ModifierHandle) == 0x000010, "Member 'PySummonedComp_10563101_K2_OnSummonedTakeDamage::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_10563101_K2_OnSummonedTakeDamage;
 
 // PythonFunction PyAbility_105631.PyCue_Ability_Loop_10563104.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -110,11 +93,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10563104_WhileActive) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10563104_WhileActive");
-static_assert(sizeof(PyCue_Ability_Loop_10563104_WhileActive) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10563104_WhileActive");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10563104_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10563104_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10563104_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10563104_WhileActive;
 
 // PythonFunction PyAbility_105631.PyCue_Ability_Loop_10563104.OnShieldTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -124,10 +103,7 @@ public:
 	struct FGameplayTag                           TagUpdated;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExists;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10563104_OnShieldTagUpdate) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10563104_OnShieldTagUpdate");
-static_assert(sizeof(PyCue_Ability_Loop_10563104_OnShieldTagUpdate) == 0x000010, "Wrong size on PyCue_Ability_Loop_10563104_OnShieldTagUpdate");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_OnShieldTagUpdate, TagUpdated) == 0x000000, "Member 'PyCue_Ability_Loop_10563104_OnShieldTagUpdate::TagUpdated' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_OnShieldTagUpdate, TagExists) == 0x00000C, "Member 'PyCue_Ability_Loop_10563104_OnShieldTagUpdate::TagExists' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10563104_OnShieldTagUpdate;
 
 // PythonFunction PyAbility_105631.PyCue_Ability_Loop_10563104.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -138,11 +114,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10563104_OnRemove) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10563104_OnRemove");
-static_assert(sizeof(PyCue_Ability_Loop_10563104_OnRemove) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10563104_OnRemove");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10563104_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10563104_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10563104_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10563104_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10563104_OnRemove;
 
 }
 

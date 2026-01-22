@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_TipsLimitedInfo_V2.WBP_Training_TipsLimitedInfo_V2_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_Training_TipsLimitedInfo_V2_C final : public UPyWidget_TrainLimitTipsUnit
 {
 public:
-	class USizeBox*                               SizeBox_Info;                                      // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Info;                                         // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Line_1;                                       // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Info;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Info;                                         // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Line_1;                                       // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_TipsLimitedInfo_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_TipsLimitedInfo_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_TipsLimitedInfo_V2_C")
 	}
 	static class UWBP_Training_TipsLimitedInfo_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_TipsLimitedInfo_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_TipsLimitedInfo_V2_C) == 0x000008, "Wrong alignment on UWBP_Training_TipsLimitedInfo_V2_C");
-static_assert(sizeof(UWBP_Training_TipsLimitedInfo_V2_C) == 0x0005D8, "Wrong size on UWBP_Training_TipsLimitedInfo_V2_C");
-static_assert(offsetof(UWBP_Training_TipsLimitedInfo_V2_C, SizeBox_Info) == 0x0005C0, "Member 'UWBP_Training_TipsLimitedInfo_V2_C::SizeBox_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TipsLimitedInfo_V2_C, Text_Info) == 0x0005C8, "Member 'UWBP_Training_TipsLimitedInfo_V2_C::Text_Info' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TipsLimitedInfo_V2_C, Text_Line_1) == 0x0005D0, "Member 'UWBP_Training_TipsLimitedInfo_V2_C::Text_Line_1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_TipsLimitedInfo_V2_C;
 
 }
 

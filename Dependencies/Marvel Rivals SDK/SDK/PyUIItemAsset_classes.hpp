@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIItemAsset">();
+		STATIC_CLASS_IMPL("PyUIItemAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIItemAsset")
 	}
 	static class UPyUIItemAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIItemAsset>();
 	}
 };
-static_assert(alignof(UPyUIItemAsset) == 0x000008, "Wrong alignment on UPyUIItemAsset");
-static_assert(sizeof(UPyUIItemAsset) == 0x000050, "Wrong size on UPyUIItemAsset");
-static_assert(offsetof(UPyUIItemAsset, DeadlineColor) == 0x000038, "Member 'UPyUIItemAsset::DeadlineColor' has a wrong offset!");
-static_assert(offsetof(UPyUIItemAsset, TimeUntilDeadline) == 0x00004C, "Member 'UPyUIItemAsset::TimeUntilDeadline' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIItemAsset;
 
 }
 

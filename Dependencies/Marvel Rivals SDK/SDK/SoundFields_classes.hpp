@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AmbisonicsEncodingSettings">();
+		STATIC_CLASS_IMPL("AmbisonicsEncodingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmbisonicsEncodingSettings")
 	}
 	static class UAmbisonicsEncodingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAmbisonicsEncodingSettings>();
 	}
 };
-static_assert(alignof(UAmbisonicsEncodingSettings) == 0x000008, "Wrong alignment on UAmbisonicsEncodingSettings");
-static_assert(sizeof(UAmbisonicsEncodingSettings) == 0x000038, "Wrong size on UAmbisonicsEncodingSettings");
-static_assert(offsetof(UAmbisonicsEncodingSettings, AmbisonicsOrder) == 0x000030, "Member 'UAmbisonicsEncodingSettings::AmbisonicsOrder' has a wrong offset!");
+DUMPER7_ASSERTS_UAmbisonicsEncodingSettings;
 
 }
 

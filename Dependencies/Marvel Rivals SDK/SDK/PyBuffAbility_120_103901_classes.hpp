@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103901.PyBuffAbility_120_10390105
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyBuffAbility_120_10390105 final : public UMarvelEffectGameplayAbility
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10390105">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10390105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10390105")
 	}
 	static class UPyBuffAbility_120_10390105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10390105>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10390105) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10390105");
-static_assert(sizeof(UPyBuffAbility_120_10390105) == 0x001370, "Wrong size on UPyBuffAbility_120_10390105");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10390105;
 
 }
 

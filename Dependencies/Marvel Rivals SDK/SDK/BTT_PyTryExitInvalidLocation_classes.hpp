@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckShouldTryExit">();
+		STATIC_CLASS_IMPL("BTD_PyCheckShouldTryExit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckShouldTryExit")
 	}
 	static class UBTD_PyCheckShouldTryExit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckShouldTryExit>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckShouldTryExit) == 0x000008, "Wrong alignment on UBTD_PyCheckShouldTryExit");
-static_assert(sizeof(UBTD_PyCheckShouldTryExit) == 0x000120, "Wrong size on UBTD_PyCheckShouldTryExit");
-static_assert(offsetof(UBTD_PyCheckShouldTryExit, EnemyTarget) == 0x0000B8, "Member 'UBTD_PyCheckShouldTryExit::EnemyTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckShouldTryExit, TeammateTarget) == 0x0000E8, "Member 'UBTD_PyCheckShouldTryExit::TeammateTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_PyCheckShouldTryExit, IgnoreDistance) == 0x000118, "Member 'UBTD_PyCheckShouldTryExit::IgnoreDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckShouldTryExit;
 
 // PythonClass BTT_PyTryExitInvalidLocation.BTT_PyTryExitInvalidLocation
 // 0x0068 (0x0128 - 0x00C0)
@@ -64,18 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTryExitInvalidLocation">();
+		STATIC_CLASS_IMPL("BTT_PyTryExitInvalidLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTryExitInvalidLocation")
 	}
 	static class UBTT_PyTryExitInvalidLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTryExitInvalidLocation>();
 	}
 };
-static_assert(alignof(UBTT_PyTryExitInvalidLocation) == 0x000008, "Wrong alignment on UBTT_PyTryExitInvalidLocation");
-static_assert(sizeof(UBTT_PyTryExitInvalidLocation) == 0x000128, "Wrong size on UBTT_PyTryExitInvalidLocation");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocation, MaxExitTime) == 0x0000C0, "Member 'UBTT_PyTryExitInvalidLocation::MaxExitTime' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocation, EnemyTarget) == 0x0000C8, "Member 'UBTT_PyTryExitInvalidLocation::EnemyTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocation, TeammateTarget) == 0x0000F8, "Member 'UBTT_PyTryExitInvalidLocation::TeammateTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTryExitInvalidLocation;
 
 // PythonClass BTT_PyTryExitInvalidLocation.BTT_PyTryExitInvalidLocationMove
 // 0x0080 (0x0150 - 0x00D0)
@@ -103,24 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTryExitInvalidLocationMove">();
+		STATIC_CLASS_IMPL("BTT_PyTryExitInvalidLocationMove")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTryExitInvalidLocationMove")
 	}
 	static class UBTT_PyTryExitInvalidLocationMove* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTryExitInvalidLocationMove>();
 	}
 };
-static_assert(alignof(UBTT_PyTryExitInvalidLocationMove) == 0x000008, "Wrong alignment on UBTT_PyTryExitInvalidLocationMove");
-static_assert(sizeof(UBTT_PyTryExitInvalidLocationMove) == 0x000150, "Wrong size on UBTT_PyTryExitInvalidLocationMove");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, EnemyTarget) == 0x0000D0, "Member 'UBTT_PyTryExitInvalidLocationMove::EnemyTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, TeammateTarget) == 0x000100, "Member 'UBTT_PyTryExitInvalidLocationMove::TeammateTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, ForwardDis) == 0x000130, "Member 'UBTT_PyTryExitInvalidLocationMove::ForwardDis' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, UpDis) == 0x000134, "Member 'UBTT_PyTryExitInvalidLocationMove::UpDis' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, DownDis) == 0x000138, "Member 'UBTT_PyTryExitInvalidLocationMove::DownDis' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, CheckRadius) == 0x00013C, "Member 'UBTT_PyTryExitInvalidLocationMove::CheckRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, MoveForwardDis) == 0x000140, "Member 'UBTT_PyTryExitInvalidLocationMove::MoveForwardDis' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, MoveChangeAngle) == 0x000144, "Member 'UBTT_PyTryExitInvalidLocationMove::MoveChangeAngle' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTryExitInvalidLocationMove, PriorityFourDir) == 0x000148, "Member 'UBTT_PyTryExitInvalidLocationMove::PriorityFourDir' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTryExitInvalidLocationMove;
 
 }
 

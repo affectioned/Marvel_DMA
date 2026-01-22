@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyShowActorControl.PyShowActorControl
-// 0x01E0 (0x08C0 - 0x06E0)
+// 0x01F0 (0x08D0 - 0x06E0)
 class APyShowActorControl final : public AShowActorControl
 {
 public:
@@ -51,9 +51,8 @@ public:
 	EAnimationMode                                AnimationMode;                                     // 0x073D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          LightMaskBoxOn;                                    // 0x073E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsEnabledPhysics;                                  // 0x073F(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAutoPlayHeroVoice;                               // 0x0740(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnabledPostProcess;                              // 0x0741(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_742[0x2];                                      // 0x0742(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          IsEnabledPostProcess;                              // 0x0740(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_741[0x3];                                      // 0x0741(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         UVOffset;                                          // 0x0744(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialParameterCollection*           MPC_Background;                                    // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxAnglePerSecond;                                 // 0x0750(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -85,18 +84,19 @@ public:
 	class UPostProcessComponent*                  PostProcessComponent_Squad;                        // 0x07D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class AActor* ShowBP)> OnLoadShowActorFinish;                      // 0x07E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class AActor* ShowBP)> OnViewShowActorChanged;                     // 0x07F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bVisible)> OnViewShowActorVisibleChanged;                     // 0x0800(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* ShowBP, bool bVisible)> OnViewShowActorVisibleChanged; // 0x0800(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(bool IsSuccess, float Angle)> OnRotationShowActor;                 // 0x0810(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(bool IsToggleHalf)> OnIsHalfChanged;                               // 0x0820(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class UTextureRenderTarget* TextureTarget, const struct FVector2D& ViewportSize)> OnTextureTargetChanged; // 0x0830(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnPlayEmoteAnimFinished;                           // 0x0840(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x0850(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayHoverStandFinished;                          // 0x0860(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnShowActorClicked;                                // 0x0870(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHovered)> OnShowActorHovered;                               // 0x0880(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnLikeSystemFinished;                              // 0x0890(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsToggleHal)> OnShowActorToggleHalf;                          // 0x08A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EShowActorStage ShowActorStage)> OnShowActorStageChanged;          // 0x08B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlaySkinCustomizationAnimFinished;               // 0x0850(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayEmojiAnimFinished;                           // 0x0860(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayHoverStandFinished;                          // 0x0870(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnShowActorClicked;                                // 0x0880(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHovered)> OnShowActorHovered;                               // 0x0890(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnLikeSystemFinished;                              // 0x08A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsToggleHal)> OnShowActorToggleHalf;                          // 0x08B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EShowActorStage ShowActorStage)> OnShowActorStageChanged;          // 0x08C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -110,80 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorControl">();
+		STATIC_CLASS_IMPL("PyShowActorControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorControl")
 	}
 	static class APyShowActorControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyShowActorControl>();
 	}
 };
-static_assert(alignof(APyShowActorControl) == 0x000010, "Wrong alignment on APyShowActorControl");
-static_assert(sizeof(APyShowActorControl) == 0x0008C0, "Wrong size on APyShowActorControl");
-static_assert(offsetof(APyShowActorControl, ShowCameraType) == 0x0006E0, "Member 'APyShowActorControl::ShowCameraType' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsDisableAllCameras) == 0x0006E1, "Member 'APyShowActorControl::IsDisableAllCameras' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, TurnCameraGaze) == 0x0006E2, "Member 'APyShowActorControl::TurnCameraGaze' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, UseCameraBlur) == 0x0006E3, "Member 'APyShowActorControl::UseCameraBlur' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CameraAperture) == 0x0006E4, "Member 'APyShowActorControl::CameraAperture' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CameraFocusSmoothingInterpSpeed) == 0x0006E8, "Member 'APyShowActorControl::CameraFocusSmoothingInterpSpeed' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CameraBlurRelativeOffset) == 0x0006F0, "Member 'APyShowActorControl::CameraBlurRelativeOffset' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_CameraType) == 0x000708, "Member 'APyShowActorControl::SC_CameraType' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_PrimitiveRenderMode) == 0x000709, "Member 'APyShowActorControl::SC_PrimitiveRenderMode' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_RTSizeMultiple) == 0x00070C, "Member 'APyShowActorControl::SC_RTSizeMultiple' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_RtScale) == 0x000710, "Member 'APyShowActorControl::SC_RtScale' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_NeedCalculateViewportOffset) == 0x000720, "Member 'APyShowActorControl::SC_NeedCalculateViewportOffset' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_MaxViewPortSize) == 0x000724, "Member 'APyShowActorControl::SC_MaxViewPortSize' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_FixedSizeAndFov) == 0x000728, "Member 'APyShowActorControl::SC_FixedSizeAndFov' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, VisibleInSceneCaptureOnly) == 0x000729, "Member 'APyShowActorControl::VisibleInSceneCaptureOnly' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsAutoClearRenderTarget) == 0x00072A, "Member 'APyShowActorControl::IsAutoClearRenderTarget' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CachedHeroRT) == 0x000730, "Member 'APyShowActorControl::CachedHeroRT' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, AutoPlayTime) == 0x000738, "Member 'APyShowActorControl::AutoPlayTime' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsAutoPlayPersonality) == 0x00073C, "Member 'APyShowActorControl::IsAutoPlayPersonality' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, AnimationMode) == 0x00073D, "Member 'APyShowActorControl::AnimationMode' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, LightMaskBoxOn) == 0x00073E, "Member 'APyShowActorControl::LightMaskBoxOn' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsEnabledPhysics) == 0x00073F, "Member 'APyShowActorControl::IsEnabledPhysics' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsAutoPlayHeroVoice) == 0x000740, "Member 'APyShowActorControl::IsAutoPlayHeroVoice' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsEnabledPostProcess) == 0x000741, "Member 'APyShowActorControl::IsEnabledPostProcess' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, UVOffset) == 0x000744, "Member 'APyShowActorControl::UVOffset' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, MPC_Background) == 0x000748, "Member 'APyShowActorControl::MPC_Background' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, MaxAnglePerSecond) == 0x000750, "Member 'APyShowActorControl::MaxAnglePerSecond' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, ActorRotationSpeed) == 0x000754, "Member 'APyShowActorControl::ActorRotationSpeed' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, ActorDefaultRotationYaw) == 0x000758, "Member 'APyShowActorControl::ActorDefaultRotationYaw' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsAutoPlaySwitchEffect) == 0x00075C, "Member 'APyShowActorControl::IsAutoPlaySwitchEffect' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsWaitExtraAssetLoaded) == 0x00075D, "Member 'APyShowActorControl::IsWaitExtraAssetLoaded' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsLoadHeroGalleryAsset) == 0x00075E, "Member 'APyShowActorControl::IsLoadHeroGalleryAsset' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, IsEnableMouseEvents) == 0x00075F, "Member 'APyShowActorControl::IsEnableMouseEvents' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, ExtensionID) == 0x000760, "Member 'APyShowActorControl::ExtensionID' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, ShowActorTickGroup) == 0x000764, "Member 'APyShowActorControl::ShowActorTickGroup' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CurActorClass) == 0x000768, "Member 'APyShowActorControl::CurActorClass' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, DefaultShowActorStage) == 0x000770, "Member 'APyShowActorControl::DefaultShowActorStage' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, ShowActorResType) == 0x000771, "Member 'APyShowActorControl::ShowActorResType' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, DefaultScene) == 0x000778, "Member 'APyShowActorControl::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SC_Scene) == 0x000780, "Member 'APyShowActorControl::SC_Scene' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, MainMesh) == 0x000788, "Member 'APyShowActorControl::MainMesh' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, NS_SwitchHero) == 0x000790, "Member 'APyShowActorControl::NS_SwitchHero' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, NS_Like) == 0x000798, "Member 'APyShowActorControl::NS_Like' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CameraScene) == 0x0007A0, "Member 'APyShowActorControl::CameraScene' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CommonCenter_Stand_Camera) == 0x0007A8, "Member 'APyShowActorControl::CommonCenter_Stand_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CommonCenter_Half_Camera) == 0x0007B0, "Member 'APyShowActorControl::CommonCenter_Half_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CommonRight_Stand_Camera) == 0x0007B8, "Member 'APyShowActorControl::CommonRight_Stand_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, CommonRight_Half_Camera) == 0x0007C0, "Member 'APyShowActorControl::CommonRight_Half_Camera' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, SceneCapture2D) == 0x0007C8, "Member 'APyShowActorControl::SceneCapture2D' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, PostProcessComponent) == 0x0007D0, "Member 'APyShowActorControl::PostProcessComponent' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, PostProcessComponent_Squad) == 0x0007D8, "Member 'APyShowActorControl::PostProcessComponent_Squad' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnLoadShowActorFinish) == 0x0007E0, "Member 'APyShowActorControl::OnLoadShowActorFinish' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnViewShowActorChanged) == 0x0007F0, "Member 'APyShowActorControl::OnViewShowActorChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnViewShowActorVisibleChanged) == 0x000800, "Member 'APyShowActorControl::OnViewShowActorVisibleChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnRotationShowActor) == 0x000810, "Member 'APyShowActorControl::OnRotationShowActor' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnIsHalfChanged) == 0x000820, "Member 'APyShowActorControl::OnIsHalfChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnTextureTargetChanged) == 0x000830, "Member 'APyShowActorControl::OnTextureTargetChanged' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnPlayEmoteAnimFinished) == 0x000840, "Member 'APyShowActorControl::OnPlayEmoteAnimFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnPlayEmojiAnimFinished) == 0x000850, "Member 'APyShowActorControl::OnPlayEmojiAnimFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnPlayHoverStandFinished) == 0x000860, "Member 'APyShowActorControl::OnPlayHoverStandFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnShowActorClicked) == 0x000870, "Member 'APyShowActorControl::OnShowActorClicked' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnShowActorHovered) == 0x000880, "Member 'APyShowActorControl::OnShowActorHovered' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnLikeSystemFinished) == 0x000890, "Member 'APyShowActorControl::OnLikeSystemFinished' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnShowActorToggleHalf) == 0x0008A0, "Member 'APyShowActorControl::OnShowActorToggleHalf' has a wrong offset!");
-static_assert(offsetof(APyShowActorControl, OnShowActorStageChanged) == 0x0008B0, "Member 'APyShowActorControl::OnShowActorStageChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyShowActorControl;
 
 }
 

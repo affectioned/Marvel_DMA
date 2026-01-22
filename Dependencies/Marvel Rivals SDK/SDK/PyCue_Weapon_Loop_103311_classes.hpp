@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_103311.PyCue_Weapon_Loop_103311
-// 0x0020 (0x1430 - 0x1410)
+// 0x0020 (0x1440 - 0x1420)
 class APyCue_Weapon_Loop_103311 final : public AMarvelCueNotify_Weapon_Loop
 {
 public:
-	struct FGameplayTag                           HideRightStickTag;                                 // 0x1410(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ShowRightStickTag;                                 // 0x141C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HideRightStickTag;                                 // 0x1420(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ShowRightStickTag;                                 // 0x142C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_HandleWeaponEvent(const struct FWeaponNotifyEvent& Event);
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_103311">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_103311")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_103311")
 	}
 	static class APyCue_Weapon_Loop_103311* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_103311>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_103311) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_103311");
-static_assert(sizeof(APyCue_Weapon_Loop_103311) == 0x001430, "Wrong size on APyCue_Weapon_Loop_103311");
-static_assert(offsetof(APyCue_Weapon_Loop_103311, HideRightStickTag) == 0x001410, "Member 'APyCue_Weapon_Loop_103311::HideRightStickTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_103311, ShowRightStickTag) == 0x00141C, "Member 'APyCue_Weapon_Loop_103311::ShowRightStickTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_103311;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "UMG_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "UMG_classes.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
@@ -26,25 +26,28 @@ class UPyWidget_OnlyShowCorona final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_OnlyShowCorona">();
+		STATIC_CLASS_IMPL("PyWidget_OnlyShowCorona")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_OnlyShowCorona")
 	}
 	static class UPyWidget_OnlyShowCorona* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_OnlyShowCorona>();
 	}
 };
-static_assert(alignof(UPyWidget_OnlyShowCorona) == 0x000008, "Wrong alignment on UPyWidget_OnlyShowCorona");
-static_assert(sizeof(UPyWidget_OnlyShowCorona) == 0x0003B8, "Wrong size on UPyWidget_OnlyShowCorona");
+DUMPER7_ASSERTS_UPyWidget_OnlyShowCorona;
 
 // PythonClass PyWidget_HeroSystem_Corona.PyWidget_HeroSystem_Corona
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_HeroSystem_Corona final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                EquipTipsStyle;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                RemoveTipsStyle;                                   // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SelectTipsStyle;                                   // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_PersonalPanelClick;                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                EquipTipsStyle;                                    // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                RemoveTipsStyle;                                   // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SelectTipsStyle;                                   // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,19 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Corona">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Corona")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Corona")
 	}
 	static class UPyWidget_HeroSystem_Corona* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Corona>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Corona) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Corona");
-static_assert(sizeof(UPyWidget_HeroSystem_Corona) == 0x000630, "Wrong size on UPyWidget_HeroSystem_Corona");
-static_assert(offsetof(UPyWidget_HeroSystem_Corona, AkEvent_PersonalPanelClick) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Corona::AkEvent_PersonalPanelClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Corona, EquipTipsStyle) == 0x000600, "Member 'UPyWidget_HeroSystem_Corona::EquipTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Corona, RemoveTipsStyle) == 0x000610, "Member 'UPyWidget_HeroSystem_Corona::RemoveTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Corona, SelectTipsStyle) == 0x000620, "Member 'UPyWidget_HeroSystem_Corona::SelectTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Corona;
 
 // PythonClass PyWidget_HeroSystem_Corona.PyWidget_CoronaApplyAllHeroSwitch
 // 0x0000 (0x03B8 - 0x03B8)
@@ -83,32 +85,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CoronaApplyAllHeroSwitch">();
+		STATIC_CLASS_IMPL("PyWidget_CoronaApplyAllHeroSwitch")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CoronaApplyAllHeroSwitch")
 	}
 	static class UPyWidget_CoronaApplyAllHeroSwitch* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CoronaApplyAllHeroSwitch>();
 	}
 };
-static_assert(alignof(UPyWidget_CoronaApplyAllHeroSwitch) == 0x000008, "Wrong alignment on UPyWidget_CoronaApplyAllHeroSwitch");
-static_assert(sizeof(UPyWidget_CoronaApplyAllHeroSwitch) == 0x0003B8, "Wrong size on UPyWidget_CoronaApplyAllHeroSwitch");
+DUMPER7_ASSERTS_UPyWidget_CoronaApplyAllHeroSwitch;
 
 // PythonClass PyWidget_HeroSystem_Corona.PyWidget_Seconday_ApplyAllHeroSwitchPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Seconday_ApplyAllHeroSwitchPanel final : public UPyWidget_SecondaryChildBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Seconday_ApplyAllHeroSwitchPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Seconday_ApplyAllHeroSwitchPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Seconday_ApplyAllHeroSwitchPanel")
 	}
 	static class UPyWidget_Seconday_ApplyAllHeroSwitchPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Seconday_ApplyAllHeroSwitchPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Seconday_ApplyAllHeroSwitchPanel) == 0x000008, "Wrong alignment on UPyWidget_Seconday_ApplyAllHeroSwitchPanel");
-static_assert(sizeof(UPyWidget_Seconday_ApplyAllHeroSwitchPanel) == 0x0005C0, "Wrong size on UPyWidget_Seconday_ApplyAllHeroSwitchPanel");
+DUMPER7_ASSERTS_UPyWidget_Seconday_ApplyAllHeroSwitchPanel;
 
 }
 

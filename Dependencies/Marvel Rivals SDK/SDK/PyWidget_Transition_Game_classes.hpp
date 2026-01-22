@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Transition_Game.PyWidget_MatchSuccess_VX
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_MatchSuccess_VX final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_MatchSuccess;                                 // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_MatchSuccess;                                 // 0x0600(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,28 +32,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MatchSuccess_VX">();
+		STATIC_CLASS_IMPL("PyWidget_MatchSuccess_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MatchSuccess_VX")
 	}
 	static class UPyWidget_MatchSuccess_VX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MatchSuccess_VX>();
 	}
 };
-static_assert(alignof(UPyWidget_MatchSuccess_VX) == 0x000008, "Wrong alignment on UPyWidget_MatchSuccess_VX");
-static_assert(sizeof(UPyWidget_MatchSuccess_VX) == 0x000600, "Wrong size on UPyWidget_MatchSuccess_VX");
-static_assert(offsetof(UPyWidget_MatchSuccess_VX, Anim_MatchSuccess) == 0x0005F8, "Member 'UPyWidget_MatchSuccess_VX::Anim_MatchSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MatchSuccess_VX;
 
 // PythonClass PyWidget_Transition_Game.PyWidget_CrackLoading_VX
-// 0x0030 (0x0628 - 0x05F8)
+// 0x0030 (0x0630 - 0x0600)
 class UPyWidget_CrackLoading_VX final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UBinkMediaPlayer*                       LoadingBinkMediaPlayer;                            // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Vx_Crack;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBinkMediaTexture*                      Texture_VideoBinkBg;                               // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      Material_VideoBinkBg;                              // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Bg;                                        // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_CrackLoading;                                 // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       LoadingBinkMediaPlayer;                            // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Vx_Crack;                                      // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaTexture*                      Texture_VideoBinkBg;                               // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      Material_VideoBinkBg;                              // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Bg;                                        // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_CrackLoading;                                 // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -67,24 +69,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CrackLoading_VX">();
+		STATIC_CLASS_IMPL("PyWidget_CrackLoading_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CrackLoading_VX")
 	}
 	static class UPyWidget_CrackLoading_VX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CrackLoading_VX>();
 	}
 };
-static_assert(alignof(UPyWidget_CrackLoading_VX) == 0x000008, "Wrong alignment on UPyWidget_CrackLoading_VX");
-static_assert(sizeof(UPyWidget_CrackLoading_VX) == 0x000628, "Wrong size on UPyWidget_CrackLoading_VX");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, LoadingBinkMediaPlayer) == 0x0005F8, "Member 'UPyWidget_CrackLoading_VX::LoadingBinkMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, Img_Vx_Crack) == 0x000600, "Member 'UPyWidget_CrackLoading_VX::Img_Vx_Crack' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, Texture_VideoBinkBg) == 0x000608, "Member 'UPyWidget_CrackLoading_VX::Texture_VideoBinkBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, Material_VideoBinkBg) == 0x000610, "Member 'UPyWidget_CrackLoading_VX::Material_VideoBinkBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, Texture_Bg) == 0x000618, "Member 'UPyWidget_CrackLoading_VX::Texture_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CrackLoading_VX, Anim_CrackLoading) == 0x000620, "Member 'UPyWidget_CrackLoading_VX::Anim_CrackLoading' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CrackLoading_VX;
 
 // PythonClass PyWidget_Transition_Game.PyWidget_SecondaryPopup_Loading
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_SecondaryPopup_Loading final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -95,15 +94,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryPopup_Loading">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryPopup_Loading")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryPopup_Loading")
 	}
 	static class UPyWidget_SecondaryPopup_Loading* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SecondaryPopup_Loading>();
 	}
 };
-static_assert(alignof(UPyWidget_SecondaryPopup_Loading) == 0x000008, "Wrong alignment on UPyWidget_SecondaryPopup_Loading");
-static_assert(sizeof(UPyWidget_SecondaryPopup_Loading) == 0x0005F8, "Wrong size on UPyWidget_SecondaryPopup_Loading");
+DUMPER7_ASSERTS_UPyWidget_SecondaryPopup_Loading;
 
 }
 

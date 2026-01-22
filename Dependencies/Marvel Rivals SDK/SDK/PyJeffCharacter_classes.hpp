@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1047_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1047_classes.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyJeffCharacter.PyJeffCharacter
-// 0x0000 (0x2300 - 0x2300)
+// 0x0000 (0x2440 - 0x2440)
 class APyJeffCharacter : public AJeffCharacter
 {
 public:
@@ -30,25 +30,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyJeffCharacter">();
+		STATIC_CLASS_IMPL("PyJeffCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyJeffCharacter")
 	}
 	static class APyJeffCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyJeffCharacter>();
 	}
 };
-static_assert(alignof(APyJeffCharacter) == 0x000010, "Wrong alignment on APyJeffCharacter");
-static_assert(sizeof(APyJeffCharacter) == 0x002300, "Wrong size on APyJeffCharacter");
+DUMPER7_ASSERTS_APyJeffCharacter;
 
 // PythonClass PyJeffCharacter.PyJeffChildActor
-// 0x0080 (0x0F50 - 0x0ED0)
-class APyJeffChildActor final : public AJeffChildActor
+// 0x0080 (0x0F30 - 0x0EB0)
+class APyJeffChildActor : public AJeffChildActor
 {
 public:
-	class FName                                   DivingHitShapeTag;                                 // 0x0ED0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   DivingHitTypeTag;                                  // 0x0EDC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EE8[0x8];                                      // 0x0EE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             DivingHitTransform;                                // 0x0EF0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DivingHitShapeTag;                                 // 0x0EB0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   DivingHitTypeTag;                                  // 0x0EBC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EC8[0x8];                                      // 0x0EC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             DivingHitTransform;                                // 0x0ED0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -59,18 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyJeffChildActor">();
+		STATIC_CLASS_IMPL("PyJeffChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyJeffChildActor")
 	}
 	static class APyJeffChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyJeffChildActor>();
 	}
 };
-static_assert(alignof(APyJeffChildActor) == 0x000010, "Wrong alignment on APyJeffChildActor");
-static_assert(sizeof(APyJeffChildActor) == 0x000F50, "Wrong size on APyJeffChildActor");
-static_assert(offsetof(APyJeffChildActor, DivingHitShapeTag) == 0x000ED0, "Member 'APyJeffChildActor::DivingHitShapeTag' has a wrong offset!");
-static_assert(offsetof(APyJeffChildActor, DivingHitTypeTag) == 0x000EDC, "Member 'APyJeffChildActor::DivingHitTypeTag' has a wrong offset!");
-static_assert(offsetof(APyJeffChildActor, DivingHitTransform) == 0x000EF0, "Member 'APyJeffChildActor::DivingHitTransform' has a wrong offset!");
+DUMPER7_ASSERTS_APyJeffChildActor;
 
 }
 

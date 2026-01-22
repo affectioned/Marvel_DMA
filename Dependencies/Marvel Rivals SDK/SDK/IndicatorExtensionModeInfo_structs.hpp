@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "IndicatorExtensionConfigInfo_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
@@ -26,10 +26,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIndicatorExtensionConfigInfo          Config_35_748327114126A6C9A87AC487A6C99E40;        // 0x0010(0x0118)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FIndicatorExtensionModeInfo) == 0x000008, "Wrong alignment on FIndicatorExtensionModeInfo");
-static_assert(sizeof(FIndicatorExtensionModeInfo) == 0x000128, "Wrong size on FIndicatorExtensionModeInfo");
-static_assert(offsetof(FIndicatorExtensionModeInfo, ModeTag_37_80D816354E9745DC13349EA3F4AE9130) == 0x000000, "Member 'FIndicatorExtensionModeInfo::ModeTag_37_80D816354E9745DC13349EA3F4AE9130' has a wrong offset!");
-static_assert(offsetof(FIndicatorExtensionModeInfo, Config_35_748327114126A6C9A87AC487A6C99E40) == 0x000010, "Member 'FIndicatorExtensionModeInfo::Config_35_748327114126A6C9A87AC487A6C99E40' has a wrong offset!");
+DUMPER7_ASSERTS_FIndicatorExtensionModeInfo;
 
 }
 

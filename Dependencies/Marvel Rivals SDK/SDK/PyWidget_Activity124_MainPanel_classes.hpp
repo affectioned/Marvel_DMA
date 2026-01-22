@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity124_MainPanel.PyWidget_Activity124_MainPanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_Activity124_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FMargin                                FirstPadding;                                      // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SecondPadding;                                     // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FirstPadding;                                      // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SecondPadding;                                     // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity124_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity124_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity124_MainPanel")
 	}
 	static class UPyWidget_Activity124_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity124_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity124_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity124_MainPanel");
-static_assert(sizeof(UPyWidget_Activity124_MainPanel) == 0x000618, "Wrong size on UPyWidget_Activity124_MainPanel");
-static_assert(offsetof(UPyWidget_Activity124_MainPanel, FirstPadding) == 0x0005F8, "Member 'UPyWidget_Activity124_MainPanel::FirstPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity124_MainPanel, SecondPadding) == 0x000608, "Member 'UPyWidget_Activity124_MainPanel::SecondPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity124_MainPanel;
 
 }
 

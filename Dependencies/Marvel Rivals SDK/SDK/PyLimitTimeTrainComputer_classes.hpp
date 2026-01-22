@@ -20,61 +20,60 @@ namespace SDK
 {
 
 // PythonClass PyLimitTimeTrainComputer.PyLimitTimeTrainComputer
-// 0x0610 (0x0EA0 - 0x0890)
+// 0x0610 (0x0EF0 - 0x08E0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyLimitTimeTrainComputer : public APyTrainComputer
 {
 public:
-	uint8                                         Pad_884[0x4];                                      // 0x0884(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FReplicateTimer                        TrainingTimer;                                     // 0x0888(0x0078)(Net, NativeAccessSpecifierPublic)
-	struct FReplicateTimer                        InteractiveCDTimer;                                // 0x0900(0x0078)(Net, NativeAccessSpecifierPublic)
-	struct FReplicateTimer                        ConfigCDTimer;                                     // 0x0978(0x0078)(Net, NativeAccessSpecifierPublic)
-	ETrainingState                                TrainingState;                                     // 0x09F0(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9F1[0x7];                                      // 0x09F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         TrainingConfigKey;                                 // 0x09F8(0x0010)(Net, NativeAccessSpecifierPublic)
-	TArray<int32>                                 TrainingConfigValue;                               // 0x0A08(0x0010)(Net, RepNotify, NativeAccessSpecifierPublic)
-	int32                                         TrainingScore;                                     // 0x0A18(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TrainingKillCount;                                 // 0x0A1C(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 SpawnedAIUIDList;                                  // 0x0A20(0x0010)(Net, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ExtraModelConfig;                                  // 0x0A30(0x0010)(Net, NativeAccessSpecifierPublic)
-	TMap<class FString, int32>                    DefaultConfig;                                     // 0x0A40(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class APyAISpawnActor*>> AISpawnActorConfig;                          // 0x0A90(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class APyAISpawnActor*>> AirAISpawnActorConfig;                       // 0x0AE0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         AISpawnLimit;                                      // 0x0B30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AirAISpawnLimit;                                   // 0x0B34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AIRandomSpawnLimit;                                // 0x0B38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AirAIRandomSpawnLimit;                             // 0x0B3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AIRespawnTime;                                     // 0x0B40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B44[0x4];                                      // 0x0B44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 TrainingTimeList;                                  // 0x0B48(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FVector2D>                      AISpawnRangeList;                                  // 0x0B58(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        AIMoveRangeList;                                   // 0x0B68(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class AActor*>>    AIMoveCenterList;                                  // 0x0B78(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        AirAIMoveRangeList;                                // 0x0BC8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class AActor*>>    AirAIMoveCenterList;                               // 0x0BD8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<float>                                 AIMoveSpeedTypeList;                               // 0x0C28(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<float>                                 AIHealthTypeList;                                  // 0x0C38(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, bool>                             AICustomCanFlyList;                                // 0x0C48(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, bool>                             AICustomCanGroundList;                             // 0x0C98(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<int32>                                 AIExtraList;                                       // 0x0CE8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FVector                                AITankMoveRangeOverride;                           // 0x0CF8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableRandomHero;                                  // 0x0D10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D11[0x3];                                      // 0x0D11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         KillScore;                                         // 0x0D14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CriticalKillScore;                                 // 0x0D18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AutoResetTrainTime;                                // 0x0D1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PrepareTime;                                       // 0x0D20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D24[0x4];                                      // 0x0D24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         TrainingAreaScopeList;                             // 0x0D28(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IgnoreKillStreak;                                  // 0x0D38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D39[0x7];                                      // 0x0D39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x0D40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class AActor>                     MusicActorClass;                                   // 0x0D48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            AISpawnType2Quantity;                              // 0x0D50(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            AirAISpawnType2Quantity;                           // 0x0DA0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class APyAISpawnActor*>> TreeDrivedAISpawnActorConfig;                // 0x0DF0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<class FString, TArray<class APyAISpawnActor*>> TreeDrivedAirAISpawnActorConfig;             // 0x0E40(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         HealthRestoreBuff;                                 // 0x0E90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        TrainingTimer;                                     // 0x08D8(0x0078)(Net, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        InteractiveCDTimer;                                // 0x0950(0x0078)(Net, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        ConfigCDTimer;                                     // 0x09C8(0x0078)(Net, NativeAccessSpecifierPublic)
+	ETrainingState                                TrainingState;                                     // 0x0A40(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A41[0x7];                                      // 0x0A41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         TrainingConfigKey;                                 // 0x0A48(0x0010)(Net, NativeAccessSpecifierPublic)
+	TArray<int32>                                 TrainingConfigValue;                               // 0x0A58(0x0010)(Net, RepNotify, NativeAccessSpecifierPublic)
+	int32                                         TrainingScore;                                     // 0x0A68(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TrainingKillCount;                                 // 0x0A6C(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 SpawnedAIUIDList;                                  // 0x0A70(0x0010)(Net, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ExtraModelConfig;                                  // 0x0A80(0x0010)(Net, NativeAccessSpecifierPublic)
+	TMap<class FString, int32>                    DefaultConfig;                                     // 0x0A90(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class APyAISpawnActor*>> AISpawnActorConfig;                          // 0x0AE0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class APyAISpawnActor*>> AirAISpawnActorConfig;                       // 0x0B30(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         AISpawnLimit;                                      // 0x0B80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AirAISpawnLimit;                                   // 0x0B84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AIRandomSpawnLimit;                                // 0x0B88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AirAIRandomSpawnLimit;                             // 0x0B8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AIRespawnTime;                                     // 0x0B90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B94[0x4];                                      // 0x0B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 TrainingTimeList;                                  // 0x0B98(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FVector2D>                      AISpawnRangeList;                                  // 0x0BA8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        AIMoveRangeList;                                   // 0x0BB8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class AActor*>>    AIMoveCenterList;                                  // 0x0BC8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        AirAIMoveRangeList;                                // 0x0C18(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class AActor*>>    AirAIMoveCenterList;                               // 0x0C28(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 AIMoveSpeedTypeList;                               // 0x0C78(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 AIHealthTypeList;                                  // 0x0C88(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, bool>                             AICustomCanFlyList;                                // 0x0C98(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, bool>                             AICustomCanGroundList;                             // 0x0CE8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AIExtraList;                                       // 0x0D38(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FVector                                AITankMoveRangeOverride;                           // 0x0D48(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableRandomHero;                                  // 0x0D60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D61[0x3];                                      // 0x0D61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         KillScore;                                         // 0x0D64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CriticalKillScore;                                 // 0x0D68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AutoResetTrainTime;                                // 0x0D6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PrepareTime;                                       // 0x0D70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D74[0x4];                                      // 0x0D74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         TrainingAreaScopeList;                             // 0x0D78(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IgnoreKillStreak;                                  // 0x0D88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D89[0x7];                                      // 0x0D89(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x0D90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AActor>                     MusicActorClass;                                   // 0x0D98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            AISpawnType2Quantity;                              // 0x0DA0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            AirAISpawnType2Quantity;                           // 0x0DF0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class APyAISpawnActor*>> TreeDrivedAISpawnActorConfig;                // 0x0E40(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TArray<class APyAISpawnActor*>> TreeDrivedAirAISpawnActorConfig;             // 0x0E90(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         HealthRestoreBuff;                                 // 0x0EE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -90,7 +89,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLimitTimeTrainComputer">();
+		STATIC_CLASS_IMPL("PyLimitTimeTrainComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLimitTimeTrainComputer")
 	}
 	static class APyLimitTimeTrainComputer* GetDefaultObj()
 	{
@@ -98,60 +101,14 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyLimitTimeTrainComputer) == 0x000010, "Wrong alignment on APyLimitTimeTrainComputer");
-static_assert(sizeof(APyLimitTimeTrainComputer) == 0x000EA0, "Wrong size on APyLimitTimeTrainComputer");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingTimer) == 0x000888, "Member 'APyLimitTimeTrainComputer::TrainingTimer' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, InteractiveCDTimer) == 0x000900, "Member 'APyLimitTimeTrainComputer::InteractiveCDTimer' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, ConfigCDTimer) == 0x000978, "Member 'APyLimitTimeTrainComputer::ConfigCDTimer' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingState) == 0x0009F0, "Member 'APyLimitTimeTrainComputer::TrainingState' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingConfigKey) == 0x0009F8, "Member 'APyLimitTimeTrainComputer::TrainingConfigKey' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingConfigValue) == 0x000A08, "Member 'APyLimitTimeTrainComputer::TrainingConfigValue' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingScore) == 0x000A18, "Member 'APyLimitTimeTrainComputer::TrainingScore' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingKillCount) == 0x000A1C, "Member 'APyLimitTimeTrainComputer::TrainingKillCount' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, SpawnedAIUIDList) == 0x000A20, "Member 'APyLimitTimeTrainComputer::SpawnedAIUIDList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, ExtraModelConfig) == 0x000A30, "Member 'APyLimitTimeTrainComputer::ExtraModelConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, DefaultConfig) == 0x000A40, "Member 'APyLimitTimeTrainComputer::DefaultConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AISpawnActorConfig) == 0x000A90, "Member 'APyLimitTimeTrainComputer::AISpawnActorConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAISpawnActorConfig) == 0x000AE0, "Member 'APyLimitTimeTrainComputer::AirAISpawnActorConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AISpawnLimit) == 0x000B30, "Member 'APyLimitTimeTrainComputer::AISpawnLimit' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAISpawnLimit) == 0x000B34, "Member 'APyLimitTimeTrainComputer::AirAISpawnLimit' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIRandomSpawnLimit) == 0x000B38, "Member 'APyLimitTimeTrainComputer::AIRandomSpawnLimit' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAIRandomSpawnLimit) == 0x000B3C, "Member 'APyLimitTimeTrainComputer::AirAIRandomSpawnLimit' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIRespawnTime) == 0x000B40, "Member 'APyLimitTimeTrainComputer::AIRespawnTime' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingTimeList) == 0x000B48, "Member 'APyLimitTimeTrainComputer::TrainingTimeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AISpawnRangeList) == 0x000B58, "Member 'APyLimitTimeTrainComputer::AISpawnRangeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIMoveRangeList) == 0x000B68, "Member 'APyLimitTimeTrainComputer::AIMoveRangeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIMoveCenterList) == 0x000B78, "Member 'APyLimitTimeTrainComputer::AIMoveCenterList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAIMoveRangeList) == 0x000BC8, "Member 'APyLimitTimeTrainComputer::AirAIMoveRangeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAIMoveCenterList) == 0x000BD8, "Member 'APyLimitTimeTrainComputer::AirAIMoveCenterList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIMoveSpeedTypeList) == 0x000C28, "Member 'APyLimitTimeTrainComputer::AIMoveSpeedTypeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIHealthTypeList) == 0x000C38, "Member 'APyLimitTimeTrainComputer::AIHealthTypeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AICustomCanFlyList) == 0x000C48, "Member 'APyLimitTimeTrainComputer::AICustomCanFlyList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AICustomCanGroundList) == 0x000C98, "Member 'APyLimitTimeTrainComputer::AICustomCanGroundList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AIExtraList) == 0x000CE8, "Member 'APyLimitTimeTrainComputer::AIExtraList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AITankMoveRangeOverride) == 0x000CF8, "Member 'APyLimitTimeTrainComputer::AITankMoveRangeOverride' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, EnableRandomHero) == 0x000D10, "Member 'APyLimitTimeTrainComputer::EnableRandomHero' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, KillScore) == 0x000D14, "Member 'APyLimitTimeTrainComputer::KillScore' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, CriticalKillScore) == 0x000D18, "Member 'APyLimitTimeTrainComputer::CriticalKillScore' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AutoResetTrainTime) == 0x000D1C, "Member 'APyLimitTimeTrainComputer::AutoResetTrainTime' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, PrepareTime) == 0x000D20, "Member 'APyLimitTimeTrainComputer::PrepareTime' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TrainingAreaScopeList) == 0x000D28, "Member 'APyLimitTimeTrainComputer::TrainingAreaScopeList' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, IgnoreKillStreak) == 0x000D38, "Member 'APyLimitTimeTrainComputer::IgnoreKillStreak' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, InteractiveAudio) == 0x000D40, "Member 'APyLimitTimeTrainComputer::InteractiveAudio' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, MusicActorClass) == 0x000D48, "Member 'APyLimitTimeTrainComputer::MusicActorClass' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AISpawnType2Quantity) == 0x000D50, "Member 'APyLimitTimeTrainComputer::AISpawnType2Quantity' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, AirAISpawnType2Quantity) == 0x000DA0, "Member 'APyLimitTimeTrainComputer::AirAISpawnType2Quantity' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TreeDrivedAISpawnActorConfig) == 0x000DF0, "Member 'APyLimitTimeTrainComputer::TreeDrivedAISpawnActorConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, TreeDrivedAirAISpawnActorConfig) == 0x000E40, "Member 'APyLimitTimeTrainComputer::TreeDrivedAirAISpawnActorConfig' has a wrong offset!");
-static_assert(offsetof(APyLimitTimeTrainComputer, HealthRestoreBuff) == 0x000E90, "Member 'APyLimitTimeTrainComputer::HealthRestoreBuff' has a wrong offset!");
+DUMPER7_ASSERTS_APyLimitTimeTrainComputer;
 
 // PythonClass PyLimitTimeTrainComputer.PyLimitTimeTrainConfigComputer
-// 0x0000 (0x0890 - 0x0890)
+// 0x0000 (0x08E0 - 0x08E0)
 class APyLimitTimeTrainConfigComputer : public APyTrainComputer
 {
 public:
-	uint8                                         Pad_884[0x4];                                      // 0x0884(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x0888(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          InteractiveAudio;                                  // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -159,16 +116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLimitTimeTrainConfigComputer">();
+		STATIC_CLASS_IMPL("PyLimitTimeTrainConfigComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLimitTimeTrainConfigComputer")
 	}
 	static class APyLimitTimeTrainConfigComputer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLimitTimeTrainConfigComputer>();
 	}
 };
-static_assert(alignof(APyLimitTimeTrainConfigComputer) == 0x000010, "Wrong alignment on APyLimitTimeTrainConfigComputer");
-static_assert(sizeof(APyLimitTimeTrainConfigComputer) == 0x000890, "Wrong size on APyLimitTimeTrainConfigComputer");
-static_assert(offsetof(APyLimitTimeTrainConfigComputer, InteractiveAudio) == 0x000888, "Member 'APyLimitTimeTrainConfigComputer::InteractiveAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyLimitTimeTrainConfigComputer;
 
 }
 

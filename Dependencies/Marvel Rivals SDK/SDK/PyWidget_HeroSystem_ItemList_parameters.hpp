@@ -23,9 +23,7 @@ struct PyWidget_HeroSystem_ItemList_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_ItemList_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_ItemList_PreConstruct");
-static_assert(sizeof(PyWidget_HeroSystem_ItemList_PreConstruct) == 0x000001, "Wrong size on PyWidget_HeroSystem_ItemList_PreConstruct");
-static_assert(offsetof(PyWidget_HeroSystem_ItemList_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_HeroSystem_ItemList_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_ItemList_PreConstruct;
 
 // PythonFunction PyWidget_HeroSystem_ItemList.PyWidget_HeroSystem_ItemList.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_HeroSystem_ItemList_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_ItemList_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_ItemList_MarvelSetVisible");
-static_assert(sizeof(PyWidget_HeroSystem_ItemList_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_HeroSystem_ItemList_MarvelSetVisible");
-static_assert(offsetof(PyWidget_HeroSystem_ItemList_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_HeroSystem_ItemList_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_ItemList_MarvelSetVisible;
 
 // PythonFunction PyWidget_HeroSystem_ItemList.PyWidget_HeroSystem_ItemList.OnTileViewNav
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_ItemList_OnTileViewNav) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_ItemList_OnTileViewNav");
-static_assert(sizeof(PyWidget_HeroSystem_ItemList_OnTileViewNav) == 0x000010, "Wrong size on PyWidget_HeroSystem_ItemList_OnTileViewNav");
-static_assert(offsetof(PyWidget_HeroSystem_ItemList_OnTileViewNav, Navigation_0) == 0x000000, "Member 'PyWidget_HeroSystem_ItemList_OnTileViewNav::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_HeroSystem_ItemList_OnTileViewNav, ReturnValue) == 0x000008, "Member 'PyWidget_HeroSystem_ItemList_OnTileViewNav::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_ItemList_OnTileViewNav;
 
 }
 

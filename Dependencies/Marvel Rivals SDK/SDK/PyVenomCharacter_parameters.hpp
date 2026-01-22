@@ -25,10 +25,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyVenomChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyVenomChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyVenomChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyVenomChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyVenomChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyVenomChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyVenomChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyVenomChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyVenomChildActor_OnGenericGameplayTagUpdate;
 
 // PythonFunction PyVenomCharacter.PyVenomCharacter.OnAbilityInit
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +34,7 @@ struct PyVenomCharacter_OnAbilityInit final
 public:
 	int32                                         AbilityId;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyVenomCharacter_OnAbilityInit) == 0x000004, "Wrong alignment on PyVenomCharacter_OnAbilityInit");
-static_assert(sizeof(PyVenomCharacter_OnAbilityInit) == 0x000004, "Wrong size on PyVenomCharacter_OnAbilityInit");
-static_assert(offsetof(PyVenomCharacter_OnAbilityInit, AbilityId) == 0x000000, "Member 'PyVenomCharacter_OnAbilityInit::AbilityId' has a wrong offset!");
+DUMPER7_ASSERTS_PyVenomCharacter_OnAbilityInit;
 
 // PythonFunction PyVenomCharacter.PyVenomCharacter.OnLaunched
 // 0x0020 (0x0020 - 0x0000)
@@ -50,11 +45,7 @@ public:
 	bool                                          bXYOverride;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bZOverride;                                        // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyVenomCharacter_OnLaunched) == 0x000008, "Wrong alignment on PyVenomCharacter_OnLaunched");
-static_assert(sizeof(PyVenomCharacter_OnLaunched) == 0x000020, "Wrong size on PyVenomCharacter_OnLaunched");
-static_assert(offsetof(PyVenomCharacter_OnLaunched, LaunchVelocity) == 0x000000, "Member 'PyVenomCharacter_OnLaunched::LaunchVelocity' has a wrong offset!");
-static_assert(offsetof(PyVenomCharacter_OnLaunched, bXYOverride) == 0x000018, "Member 'PyVenomCharacter_OnLaunched::bXYOverride' has a wrong offset!");
-static_assert(offsetof(PyVenomCharacter_OnLaunched, bZOverride) == 0x000019, "Member 'PyVenomCharacter_OnLaunched::bZOverride' has a wrong offset!");
+DUMPER7_ASSERTS_PyVenomCharacter_OnLaunched;
 
 // PythonFunction PyVenomCharacter.PyVenomCharacter.ReceiveUnpossessed
 // 0x0008 (0x0008 - 0x0000)
@@ -63,9 +54,7 @@ struct PyVenomCharacter_ReceiveUnpossessed final
 public:
 	class AController*                            OldController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyVenomCharacter_ReceiveUnpossessed) == 0x000008, "Wrong alignment on PyVenomCharacter_ReceiveUnpossessed");
-static_assert(sizeof(PyVenomCharacter_ReceiveUnpossessed) == 0x000008, "Wrong size on PyVenomCharacter_ReceiveUnpossessed");
-static_assert(offsetof(PyVenomCharacter_ReceiveUnpossessed, OldController) == 0x000000, "Member 'PyVenomCharacter_ReceiveUnpossessed::OldController' has a wrong offset!");
+DUMPER7_ASSERTS_PyVenomCharacter_ReceiveUnpossessed;
 
 }
 

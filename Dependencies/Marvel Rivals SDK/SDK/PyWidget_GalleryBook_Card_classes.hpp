@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GalleryBook_Card.PyWidget_GalleryBook_Card
-// 0x0038 (0x0760 - 0x0728)
+// 0x0038 (0x07B8 - 0x0780)
 class UPyWidget_GalleryBook_Card final : public UPyWidget_Button
 {
 public:
-	TMulticastInlineDelegate<void(int32 BookIndex, const class FString& BookItemID)> OnGalleryBookClicked; // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 BookIndex, const class FString& BookItemID, bool IsHover)> OnGalleryBookHovered; // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPressed)> OnGalleryBookPressed;                             // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	class UTexture2D*                             EmptyCardTexture;                                  // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BookIndex, const class FString& BookItemID)> OnGalleryBookClicked; // 0x0780(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BookIndex, const class FString& BookItemID, bool IsHover)> OnGalleryBookHovered; // 0x0790(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPressed)> OnGalleryBookPressed;                             // 0x07A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UTexture2D*                             EmptyCardTexture;                                  // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GalleryBook_Card">();
+		STATIC_CLASS_IMPL("PyWidget_GalleryBook_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GalleryBook_Card")
 	}
 	static class UPyWidget_GalleryBook_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GalleryBook_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_GalleryBook_Card) == 0x000008, "Wrong alignment on UPyWidget_GalleryBook_Card");
-static_assert(sizeof(UPyWidget_GalleryBook_Card) == 0x000760, "Wrong size on UPyWidget_GalleryBook_Card");
-static_assert(offsetof(UPyWidget_GalleryBook_Card, OnGalleryBookClicked) == 0x000728, "Member 'UPyWidget_GalleryBook_Card::OnGalleryBookClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_Card, OnGalleryBookHovered) == 0x000738, "Member 'UPyWidget_GalleryBook_Card::OnGalleryBookHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_Card, OnGalleryBookPressed) == 0x000748, "Member 'UPyWidget_GalleryBook_Card::OnGalleryBookPressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_Card, EmptyCardTexture) == 0x000758, "Member 'UPyWidget_GalleryBook_Card::EmptyCardTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GalleryBook_Card;
 
 }
 

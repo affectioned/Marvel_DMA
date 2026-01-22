@@ -19,24 +19,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Input.PyWidget_Common_Input
-// 0x1040 (0x1C00 - 0x0BC0)
+// 0x1040 (0x1C10 - 0x0BD0)
 class UPyWidget_Common_Input : public UPyWidget_Common_Input_Base
 {
 public:
-	const_input::EInputType                       InputType;                                         // 0x0BB8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BB9[0x7];                                      // 0x0BB9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           BeforeEnterButtonStyle;                            // 0x0BC0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           AfterEnterButtonStyle;                             // 0x0FC0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           PasswordShowBtnStyle;                              // 0x13C0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           PasswordHideBtnStyle;                              // 0x17C0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnPromptText_HoverColor;                          // 0x1BC0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnPromptText_UnhoverColor;                        // 0x1BD4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         TextPromptFontSize;                                // 0x1BE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowOperateButton;                               // 0x1BEC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOperateIndependently;                            // 0x1BED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BEE[0x2];                                     // 0x1BEE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_Approve;                                      // 0x1BF0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Diapprove;                                    // 0x1BF8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const_input::EInputType                       InputType;                                         // 0x0BC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BC9[0x7];                                      // 0x0BC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           BeforeEnterButtonStyle;                            // 0x0BD0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           AfterEnterButtonStyle;                             // 0x0FD0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           PasswordShowBtnStyle;                              // 0x13D0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           PasswordHideBtnStyle;                              // 0x17D0(0x0400)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnPromptText_HoverColor;                          // 0x1BD0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnPromptText_UnhoverColor;                        // 0x1BE4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         TextPromptFontSize;                                // 0x1BF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowOperateButton;                               // 0x1BFC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOperateIndependently;                            // 0x1BFD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1BFE[0x2];                                     // 0x1BFE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_Approve;                                      // 0x1C00(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Diapprove;                                    // 0x1C08(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,27 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Input">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Input")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Input")
 	}
 	static class UPyWidget_Common_Input* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Input>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Input) == 0x000010, "Wrong alignment on UPyWidget_Common_Input");
-static_assert(sizeof(UPyWidget_Common_Input) == 0x001C00, "Wrong size on UPyWidget_Common_Input");
-static_assert(offsetof(UPyWidget_Common_Input, InputType) == 0x000BB8, "Member 'UPyWidget_Common_Input::InputType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, BeforeEnterButtonStyle) == 0x000BC0, "Member 'UPyWidget_Common_Input::BeforeEnterButtonStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, AfterEnterButtonStyle) == 0x000FC0, "Member 'UPyWidget_Common_Input::AfterEnterButtonStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, PasswordShowBtnStyle) == 0x0013C0, "Member 'UPyWidget_Common_Input::PasswordShowBtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, PasswordHideBtnStyle) == 0x0017C0, "Member 'UPyWidget_Common_Input::PasswordHideBtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, BtnPromptText_HoverColor) == 0x001BC0, "Member 'UPyWidget_Common_Input::BtnPromptText_HoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, BtnPromptText_UnhoverColor) == 0x001BD4, "Member 'UPyWidget_Common_Input::BtnPromptText_UnhoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, TextPromptFontSize) == 0x001BE8, "Member 'UPyWidget_Common_Input::TextPromptFontSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, IsShowOperateButton) == 0x001BEC, "Member 'UPyWidget_Common_Input::IsShowOperateButton' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, IsOperateIndependently) == 0x001BED, "Member 'UPyWidget_Common_Input::IsOperateIndependently' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, Anim_Approve) == 0x001BF0, "Member 'UPyWidget_Common_Input::Anim_Approve' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Input, Anim_Diapprove) == 0x001BF8, "Member 'UPyWidget_Common_Input::Anim_Diapprove' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Input;
 
 }
 

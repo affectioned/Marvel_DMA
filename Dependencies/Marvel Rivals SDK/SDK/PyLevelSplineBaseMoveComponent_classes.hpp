@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -43,23 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSplineBaseMoveComponent">();
+		STATIC_CLASS_IMPL("PyLevelSplineBaseMoveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSplineBaseMoveComponent")
 	}
 	static class UPyLevelSplineBaseMoveComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSplineBaseMoveComponent>();
 	}
 };
-static_assert(alignof(UPyLevelSplineBaseMoveComponent) == 0x000010, "Wrong alignment on UPyLevelSplineBaseMoveComponent");
-static_assert(sizeof(UPyLevelSplineBaseMoveComponent) == 0x0004B0, "Wrong size on UPyLevelSplineBaseMoveComponent");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, Progress) == 0x000440, "Member 'UPyLevelSplineBaseMoveComponent::Progress' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, Speed) == 0x000448, "Member 'UPyLevelSplineBaseMoveComponent::Speed' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventSpeedChanged) == 0x000450, "Member 'UPyLevelSplineBaseMoveComponent::EventSpeedChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventReachSplineStart) == 0x000460, "Member 'UPyLevelSplineBaseMoveComponent::EventReachSplineStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventReachSplineEnd) == 0x000470, "Member 'UPyLevelSplineBaseMoveComponent::EventReachSplineEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventSwitchSpline) == 0x000480, "Member 'UPyLevelSplineBaseMoveComponent::EventSwitchSpline' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventReachStart) == 0x000490, "Member 'UPyLevelSplineBaseMoveComponent::EventReachStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelSplineBaseMoveComponent, EventReachEnd) == 0x0004A0, "Member 'UPyLevelSplineBaseMoveComponent::EventReachEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelSplineBaseMoveComponent;
 
 }
 

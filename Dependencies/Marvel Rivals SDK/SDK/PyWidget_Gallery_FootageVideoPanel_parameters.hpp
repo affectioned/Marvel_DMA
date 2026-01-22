@@ -23,9 +23,7 @@ struct PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_FootageVideoPanel_OnVisibleChanged;
 
 // PythonFunction PyWidget_Gallery_FootageVideoPanel.PyWidget_Gallery_FootageVideoPanel.Tick
 // 0x003C (0x003C - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_FootageVideoPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_Gallery_FootageVideoPanel_Tick");
-static_assert(sizeof(PyWidget_Gallery_FootageVideoPanel_Tick) == 0x00003C, "Wrong size on PyWidget_Gallery_FootageVideoPanel_Tick");
-static_assert(offsetof(PyWidget_Gallery_FootageVideoPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Gallery_FootageVideoPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Gallery_FootageVideoPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Gallery_FootageVideoPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_FootageVideoPanel_Tick;
 
 }
 

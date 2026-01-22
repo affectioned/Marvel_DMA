@@ -40,20 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorCapture">();
+		STATIC_CLASS_IMPL("PyShowActorCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorCapture")
 	}
 	static class APyShowActorCapture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyShowActorCapture>();
 	}
 };
-static_assert(alignof(APyShowActorCapture) == 0x000010, "Wrong alignment on APyShowActorCapture");
-static_assert(sizeof(APyShowActorCapture) == 0x000720, "Wrong size on APyShowActorCapture");
-static_assert(offsetof(APyShowActorCapture, RenderTarget) == 0x0006E0, "Member 'APyShowActorCapture::RenderTarget' has a wrong offset!");
-static_assert(offsetof(APyShowActorCapture, SceneCaptureSource) == 0x0006E8, "Member 'APyShowActorCapture::SceneCaptureSource' has a wrong offset!");
-static_assert(offsetof(APyShowActorCapture, TargetCameraActprTag) == 0x0006F0, "Member 'APyShowActorCapture::TargetCameraActprTag' has a wrong offset!");
-static_assert(offsetof(APyShowActorCapture, HiddenActorTag) == 0x000700, "Member 'APyShowActorCapture::HiddenActorTag' has a wrong offset!");
-static_assert(offsetof(APyShowActorCapture, VisibleInSceneCaptureOnly) == 0x000710, "Member 'APyShowActorCapture::VisibleInSceneCaptureOnly' has a wrong offset!");
+DUMPER7_ASSERTS_APyShowActorCapture;
 
 }
 

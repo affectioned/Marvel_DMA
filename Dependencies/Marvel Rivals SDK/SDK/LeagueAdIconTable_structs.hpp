@@ -21,9 +21,7 @@ struct FLeagueAdIconTable final
 public:
 	TSoftObjectPtr<class UTexture>                BaseMap_2_AD1684414305E85145DFA3B68FDDB687;        // 0x0000(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FLeagueAdIconTable) == 0x000008, "Wrong alignment on FLeagueAdIconTable");
-static_assert(sizeof(FLeagueAdIconTable) == 0x000030, "Wrong size on FLeagueAdIconTable");
-static_assert(offsetof(FLeagueAdIconTable, BaseMap_2_AD1684414305E85145DFA3B68FDDB687) == 0x000000, "Member 'FLeagueAdIconTable::BaseMap_2_AD1684414305E85145DFA3B68FDDB687' has a wrong offset!");
+DUMPER7_ASSERTS_FLeagueAdIconTable;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Hero_1039_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -19,45 +19,49 @@ namespace SDK
 {
 
 // PythonClass PyThorCharacter.PyThorCharacter
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class APyThorCharacter : public AThorCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyThorCharacter">();
+		STATIC_CLASS_IMPL("PyThorCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyThorCharacter")
 	}
 	static class APyThorCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyThorCharacter>();
 	}
 };
-static_assert(alignof(APyThorCharacter) == 0x000010, "Wrong alignment on APyThorCharacter");
-static_assert(sizeof(APyThorCharacter) == 0x0021B0, "Wrong size on APyThorCharacter");
+DUMPER7_ASSERTS_APyThorCharacter;
 
 // PythonClass PyThorCharacter.PyThorCharacterChildActor
-// 0x0020 (0x0E40 - 0x0E20)
+// 0x0020 (0x0E50 - 0x0E30)
 class APyThorCharacterChildActor final : public AMarvelCharacterChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         DeathHiddenSlotSuffix;                             // 0x0E20(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           DeathCueTag;                                       // 0x0E30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         DeathHiddenSlotSuffix;                             // 0x0E30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DeathCueTag;                                       // 0x0E40(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyThorCharacterChildActor">();
+		STATIC_CLASS_IMPL("PyThorCharacterChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyThorCharacterChildActor")
 	}
 	static class APyThorCharacterChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyThorCharacterChildActor>();
 	}
 };
-static_assert(alignof(APyThorCharacterChildActor) == 0x000010, "Wrong alignment on APyThorCharacterChildActor");
-static_assert(sizeof(APyThorCharacterChildActor) == 0x000E40, "Wrong size on APyThorCharacterChildActor");
-static_assert(offsetof(APyThorCharacterChildActor, DeathHiddenSlotSuffix) == 0x000E20, "Member 'APyThorCharacterChildActor::DeathHiddenSlotSuffix' has a wrong offset!");
-static_assert(offsetof(APyThorCharacterChildActor, DeathCueTag) == 0x000E30, "Member 'APyThorCharacterChildActor::DeathCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyThorCharacterChildActor;
 
 }
 

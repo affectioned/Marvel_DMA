@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10306101_BP.Summoned_10306101_BP_C
-// 0x0010 (0x0D10 - 0x0D00)
+// 0x0010 (0x0D30 - 0x0D20)
 class ASummoned_10306101_BP_C final : public ASummoned_10306101
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0D00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0D20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10306101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10306101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10306101_BP_C")
 	}
 	static class ASummoned_10306101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10306101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10306101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10306101_BP_C");
-static_assert(sizeof(ASummoned_10306101_BP_C) == 0x000D10, "Wrong size on ASummoned_10306101_BP_C");
-static_assert(offsetof(ASummoned_10306101_BP_C, StaticMesh) == 0x000D00, "Member 'ASummoned_10306101_BP_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10306101_BP_C;
 
 }
 

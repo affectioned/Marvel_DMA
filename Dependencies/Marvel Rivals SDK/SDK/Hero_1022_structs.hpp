@@ -22,10 +22,7 @@ public:
 	float                                         MinAmplitude;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxAmplitude;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAmplitudeRange) == 0x000004, "Wrong alignment on FAmplitudeRange");
-static_assert(sizeof(FAmplitudeRange) == 0x000008, "Wrong size on FAmplitudeRange");
-static_assert(offsetof(FAmplitudeRange, MinAmplitude) == 0x000000, "Member 'FAmplitudeRange::MinAmplitude' has a wrong offset!");
-static_assert(offsetof(FAmplitudeRange, MaxAmplitude) == 0x000004, "Member 'FAmplitudeRange::MaxAmplitude' has a wrong offset!");
+DUMPER7_ASSERTS_FAmplitudeRange;
 
 }
 

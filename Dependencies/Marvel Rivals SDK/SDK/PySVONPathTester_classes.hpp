@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySVONPathTester">();
+		STATIC_CLASS_IMPL("PySVONPathTester")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySVONPathTester")
 	}
 	static class APySVONPathTester* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySVONPathTester>();
 	}
 };
-static_assert(alignof(APySVONPathTester) == 0x000010, "Wrong alignment on APySVONPathTester");
-static_assert(sizeof(APySVONPathTester) == 0x0007E0, "Wrong size on APySVONPathTester");
+DUMPER7_ASSERTS_APySVONPathTester;
 
 }
 

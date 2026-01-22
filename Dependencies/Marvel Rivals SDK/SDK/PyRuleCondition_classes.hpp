@@ -23,15 +23,18 @@ class UPyMultiBanPickCondition final : public UMarvelRuleCondition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiBanPickCondition">();
+		STATIC_CLASS_IMPL("PyMultiBanPickCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiBanPickCondition")
 	}
 	static class UPyMultiBanPickCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiBanPickCondition>();
 	}
 };
-static_assert(alignof(UPyMultiBanPickCondition) == 0x000008, "Wrong alignment on UPyMultiBanPickCondition");
-static_assert(sizeof(UPyMultiBanPickCondition) == 0x000030, "Wrong size on UPyMultiBanPickCondition");
+DUMPER7_ASSERTS_UPyMultiBanPickCondition;
 
 // PythonClass PyRuleCondition.PyRuleGamePlayModeCondition
 // 0x0008 (0x0038 - 0x0030)
@@ -43,16 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuleGamePlayModeCondition">();
+		STATIC_CLASS_IMPL("PyRuleGamePlayModeCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuleGamePlayModeCondition")
 	}
 	static class UPyRuleGamePlayModeCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRuleGamePlayModeCondition>();
 	}
 };
-static_assert(alignof(UPyRuleGamePlayModeCondition) == 0x000008, "Wrong alignment on UPyRuleGamePlayModeCondition");
-static_assert(sizeof(UPyRuleGamePlayModeCondition) == 0x000038, "Wrong size on UPyRuleGamePlayModeCondition");
-static_assert(offsetof(UPyRuleGamePlayModeCondition, GamePlayModeID) == 0x000030, "Member 'UPyRuleGamePlayModeCondition::GamePlayModeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRuleGamePlayModeCondition;
 
 // PythonClass PyRuleCondition.PyRuleMapIDCondition
 // 0x0008 (0x0038 - 0x0030)
@@ -64,16 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuleMapIDCondition">();
+		STATIC_CLASS_IMPL("PyRuleMapIDCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuleMapIDCondition")
 	}
 	static class UPyRuleMapIDCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRuleMapIDCondition>();
 	}
 };
-static_assert(alignof(UPyRuleMapIDCondition) == 0x000008, "Wrong alignment on UPyRuleMapIDCondition");
-static_assert(sizeof(UPyRuleMapIDCondition) == 0x000038, "Wrong size on UPyRuleMapIDCondition");
-static_assert(offsetof(UPyRuleMapIDCondition, MapID) == 0x000030, "Member 'UPyRuleMapIDCondition::MapID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRuleMapIDCondition;
 
 // PythonClass PyRuleCondition.PyRuleBanPickMemberTypeCondition
 // 0x0008 (0x0038 - 0x0030)
@@ -85,16 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuleBanPickMemberTypeCondition">();
+		STATIC_CLASS_IMPL("PyRuleBanPickMemberTypeCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuleBanPickMemberTypeCondition")
 	}
 	static class UPyRuleBanPickMemberTypeCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRuleBanPickMemberTypeCondition>();
 	}
 };
-static_assert(alignof(UPyRuleBanPickMemberTypeCondition) == 0x000008, "Wrong alignment on UPyRuleBanPickMemberTypeCondition");
-static_assert(sizeof(UPyRuleBanPickMemberTypeCondition) == 0x000038, "Wrong size on UPyRuleBanPickMemberTypeCondition");
-static_assert(offsetof(UPyRuleBanPickMemberTypeCondition, bCheckBanPickMemberTypeOverride) == 0x000030, "Member 'UPyRuleBanPickMemberTypeCondition::bCheckBanPickMemberTypeOverride' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRuleBanPickMemberTypeCondition;
 
 // PythonClass PyRuleCondition.PyRuleBanPickConfIDCondition
 // 0x0008 (0x0038 - 0x0030)
@@ -106,16 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuleBanPickConfIDCondition">();
+		STATIC_CLASS_IMPL("PyRuleBanPickConfIDCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuleBanPickConfIDCondition")
 	}
 	static class UPyRuleBanPickConfIDCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRuleBanPickConfIDCondition>();
 	}
 };
-static_assert(alignof(UPyRuleBanPickConfIDCondition) == 0x000008, "Wrong alignment on UPyRuleBanPickConfIDCondition");
-static_assert(sizeof(UPyRuleBanPickConfIDCondition) == 0x000038, "Wrong size on UPyRuleBanPickConfIDCondition");
-static_assert(offsetof(UPyRuleBanPickConfIDCondition, bCheckConfID) == 0x000030, "Member 'UPyRuleBanPickConfIDCondition::bCheckConfID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRuleBanPickConfIDCondition;
 
 }
 

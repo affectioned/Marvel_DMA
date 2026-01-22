@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyDefaultUISettingEntryHandler_classes.hpp"
+#include "Marvel_classes.hpp"
 #include "SettingCommonLogic_classes.hpp"
 
 
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSpectatorPresetPointTitle">();
+		STATIC_CLASS_IMPL("UISettingSpectatorPresetPointTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSpectatorPresetPointTitle")
 	}
 	static class UUISettingSpectatorPresetPointTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSpectatorPresetPointTitle>();
 	}
 };
-static_assert(alignof(UUISettingSpectatorPresetPointTitle) == 0x000008, "Wrong alignment on UUISettingSpectatorPresetPointTitle");
-static_assert(sizeof(UUISettingSpectatorPresetPointTitle) == 0x000030, "Wrong size on UUISettingSpectatorPresetPointTitle");
+DUMPER7_ASSERTS_UUISettingSpectatorPresetPointTitle;
 
 // PythonClass Replay.UISettingReplayCameraSpeed
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReplayCameraSpeed">();
+		STATIC_CLASS_IMPL("UISettingReplayCameraSpeed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReplayCameraSpeed")
 	}
 	static class UUISettingReplayCameraSpeed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReplayCameraSpeed>();
 	}
 };
-static_assert(alignof(UUISettingReplayCameraSpeed) == 0x000008, "Wrong alignment on UUISettingReplayCameraSpeed");
-static_assert(sizeof(UUISettingReplayCameraSpeed) == 0x000030, "Wrong size on UUISettingReplayCameraSpeed");
+DUMPER7_ASSERTS_UUISettingReplayCameraSpeed;
 
 // PythonClass Replay.UISettingReplayCameraDamping
 // 0x0000 (0x0030 - 0x0030)
@@ -67,15 +73,18 @@ class UUISettingReplayCameraDamping final : public UUISettingReplayCameraSpeed
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReplayCameraDamping">();
+		STATIC_CLASS_IMPL("UISettingReplayCameraDamping")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReplayCameraDamping")
 	}
 	static class UUISettingReplayCameraDamping* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReplayCameraDamping>();
 	}
 };
-static_assert(alignof(UUISettingReplayCameraDamping) == 0x000008, "Wrong alignment on UUISettingReplayCameraDamping");
-static_assert(sizeof(UUISettingReplayCameraDamping) == 0x000030, "Wrong size on UUISettingReplayCameraDamping");
+DUMPER7_ASSERTS_UUISettingReplayCameraDamping;
 
 // PythonClass Replay.UISettingSpectatorPresetPoint
 // 0x0000 (0x0030 - 0x0030)
@@ -88,15 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSpectatorPresetPoint">();
+		STATIC_CLASS_IMPL("UISettingSpectatorPresetPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSpectatorPresetPoint")
 	}
 	static class UUISettingSpectatorPresetPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSpectatorPresetPoint>();
 	}
 };
-static_assert(alignof(UUISettingSpectatorPresetPoint) == 0x000008, "Wrong alignment on UUISettingSpectatorPresetPoint");
-static_assert(sizeof(UUISettingSpectatorPresetPoint) == 0x000030, "Wrong size on UUISettingSpectatorPresetPoint");
+DUMPER7_ASSERTS_UUISettingSpectatorPresetPoint;
 
 // PythonClass Replay.UISettingReplayLowDelay
 // 0x0000 (0x0030 - 0x0030)
@@ -108,15 +120,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingReplayLowDelay">();
+		STATIC_CLASS_IMPL("UISettingReplayLowDelay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingReplayLowDelay")
 	}
 	static class UUISettingReplayLowDelay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingReplayLowDelay>();
 	}
 };
-static_assert(alignof(UUISettingReplayLowDelay) == 0x000008, "Wrong alignment on UUISettingReplayLowDelay");
-static_assert(sizeof(UUISettingReplayLowDelay) == 0x000030, "Wrong size on UUISettingReplayLowDelay");
+DUMPER7_ASSERTS_UUISettingReplayLowDelay;
 
 // PythonClass Replay.PySettingEntryUICPresetPointTitle
 // 0x0008 (0x0038 - 0x0030)
@@ -133,16 +148,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUICPresetPointTitle">();
+		STATIC_CLASS_IMPL("PySettingEntryUICPresetPointTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUICPresetPointTitle")
 	}
 	static class UPySettingEntryUICPresetPointTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUICPresetPointTitle>();
 	}
 };
-static_assert(alignof(UPySettingEntryUICPresetPointTitle) == 0x000008, "Wrong alignment on UPySettingEntryUICPresetPointTitle");
-static_assert(sizeof(UPySettingEntryUICPresetPointTitle) == 0x000038, "Wrong size on UPySettingEntryUICPresetPointTitle");
-static_assert(offsetof(UPySettingEntryUICPresetPointTitle, MapSelectionWidgetClass) == 0x000030, "Member 'UPySettingEntryUICPresetPointTitle::MapSelectionWidgetClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPySettingEntryUICPresetPointTitle;
 
 // PythonClass Replay.PySettingEntryUICPresetPoint
 // 0x0000 (0x0030 - 0x0030)
@@ -157,15 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryUICPresetPoint">();
+		STATIC_CLASS_IMPL("PySettingEntryUICPresetPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryUICPresetPoint")
 	}
 	static class UPySettingEntryUICPresetPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryUICPresetPoint>();
 	}
 };
-static_assert(alignof(UPySettingEntryUICPresetPoint) == 0x000008, "Wrong alignment on UPySettingEntryUICPresetPoint");
-static_assert(sizeof(UPySettingEntryUICPresetPoint) == 0x000030, "Wrong size on UPySettingEntryUICPresetPoint");
+DUMPER7_ASSERTS_UPySettingEntryUICPresetPoint;
 
 // PythonClass Replay.PySettingEntryAddCustomPresetPoint
 // 0x0000 (0x0030 - 0x0030)
@@ -177,15 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingEntryAddCustomPresetPoint">();
+		STATIC_CLASS_IMPL("PySettingEntryAddCustomPresetPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingEntryAddCustomPresetPoint")
 	}
 	static class UPySettingEntryAddCustomPresetPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingEntryAddCustomPresetPoint>();
 	}
 };
-static_assert(alignof(UPySettingEntryAddCustomPresetPoint) == 0x000008, "Wrong alignment on UPySettingEntryAddCustomPresetPoint");
-static_assert(sizeof(UPySettingEntryAddCustomPresetPoint) == 0x000030, "Wrong size on UPySettingEntryAddCustomPresetPoint");
+DUMPER7_ASSERTS_UPySettingEntryAddCustomPresetPoint;
 
 // PythonClass Replay.UISettingAdjustReplayPanelLayout
 // 0x0000 (0x0030 - 0x0030)
@@ -197,15 +220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingAdjustReplayPanelLayout">();
+		STATIC_CLASS_IMPL("UISettingAdjustReplayPanelLayout")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingAdjustReplayPanelLayout")
 	}
 	static class UUISettingAdjustReplayPanelLayout* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingAdjustReplayPanelLayout>();
 	}
 };
-static_assert(alignof(UUISettingAdjustReplayPanelLayout) == 0x000008, "Wrong alignment on UUISettingAdjustReplayPanelLayout");
-static_assert(sizeof(UUISettingAdjustReplayPanelLayout) == 0x000030, "Wrong size on UUISettingAdjustReplayPanelLayout");
+DUMPER7_ASSERTS_UUISettingAdjustReplayPanelLayout;
 
 }
 

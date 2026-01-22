@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyVirtualActorManager">();
+		STATIC_CLASS_IMPL("PyVirtualActorManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyVirtualActorManager")
 	}
 	static class APyVirtualActorManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyVirtualActorManager>();
 	}
 };
-static_assert(alignof(APyVirtualActorManager) == 0x000010, "Wrong alignment on APyVirtualActorManager");
-static_assert(sizeof(APyVirtualActorManager) == 0x000730, "Wrong size on APyVirtualActorManager");
+DUMPER7_ASSERTS_APyVirtualActorManager;
 
 }
 

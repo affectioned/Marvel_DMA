@@ -30,18 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusSettings">();
+		STATIC_CLASS_IMPL("OptimusSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusSettings")
 	}
 	static class UOptimusSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusSettings>();
 	}
 };
-static_assert(alignof(UOptimusSettings) == 0x000008, "Wrong alignment on UOptimusSettings");
-static_assert(sizeof(UOptimusSettings) == 0x0000B0, "Wrong size on UOptimusSettings");
-static_assert(offsetof(UOptimusSettings, DefaultMode) == 0x000048, "Member 'UOptimusSettings::DefaultMode' has a wrong offset!");
-static_assert(offsetof(UOptimusSettings, DefaultDeformer) == 0x000050, "Member 'UOptimusSettings::DefaultDeformer' has a wrong offset!");
-static_assert(offsetof(UOptimusSettings, DefaultRecomputeTangentDeformer) == 0x000080, "Member 'UOptimusSettings::DefaultRecomputeTangentDeformer' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusSettings;
 
 }
 

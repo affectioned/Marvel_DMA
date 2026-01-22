@@ -21,9 +21,7 @@ struct PyWidget_Secondary_Blacklist_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Blacklist_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Secondary_Blacklist_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Secondary_Blacklist_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Secondary_Blacklist_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Secondary_Blacklist_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Secondary_Blacklist_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Blacklist_OnAnimationFinished;
 
 // PythonFunction PyWidget_Secondary_Blacklist.PyWidget_Blacklist_Item.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Blacklist_Item_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Blacklist_Item_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Blacklist_Item_PreConstruct");
-static_assert(sizeof(PyWidget_Blacklist_Item_PreConstruct) == 0x000001, "Wrong size on PyWidget_Blacklist_Item_PreConstruct");
-static_assert(offsetof(PyWidget_Blacklist_Item_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Blacklist_Item_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Blacklist_Item_PreConstruct;
 
 // PythonFunction PyWidget_Secondary_Blacklist.PyWidget_Blacklist_Item.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Blacklist_Item_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Blacklist_Item_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Blacklist_Item_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Blacklist_Item_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Blacklist_Item_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Blacklist_Item_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Blacklist_Item_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Blacklist_Item_OnAnimationFinished;
 
 }
 

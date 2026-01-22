@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_WinterSoldierGun_01.Weapon_WinterSoldierGun_01_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_WinterSoldierGun_01_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_WinterSoldierGun_01_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_WinterSoldierGun_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_WinterSoldierGun_01_C")
 	}
 	static class AWeapon_WinterSoldierGun_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_WinterSoldierGun_01_C>();
 	}
 };
-static_assert(alignof(AWeapon_WinterSoldierGun_01_C) == 0x000010, "Wrong alignment on AWeapon_WinterSoldierGun_01_C");
-static_assert(sizeof(AWeapon_WinterSoldierGun_01_C) == 0x000CB0, "Wrong size on AWeapon_WinterSoldierGun_01_C");
+DUMPER7_ASSERTS_AWeapon_WinterSoldierGun_01_C;
 
 }
 

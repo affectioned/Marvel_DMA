@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelTokyoTrainNodes">();
+		STATIC_CLASS_IMPL("PyLevelTokyoTrainNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelTokyoTrainNodes")
 	}
 	static class UPyLevelTokyoTrainNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelTokyoTrainNodes>();
 	}
 };
-static_assert(alignof(UPyLevelTokyoTrainNodes) == 0x000008, "Wrong alignment on UPyLevelTokyoTrainNodes");
-static_assert(sizeof(UPyLevelTokyoTrainNodes) == 0x000030, "Wrong size on UPyLevelTokyoTrainNodes");
+DUMPER7_ASSERTS_UPyLevelTokyoTrainNodes;
 
 // PythonClass PyLevelTokyoTrainNodes.PyTokyoTrainManagerComponent
 // 0x0080 (0x0188 - 0x0108)
@@ -58,27 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTokyoTrainManagerComponent">();
+		STATIC_CLASS_IMPL("PyTokyoTrainManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTokyoTrainManagerComponent")
 	}
 	static class UPyTokyoTrainManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTokyoTrainManagerComponent>();
 	}
 };
-static_assert(alignof(UPyTokyoTrainManagerComponent) == 0x000008, "Wrong alignment on UPyTokyoTrainManagerComponent");
-static_assert(sizeof(UPyTokyoTrainManagerComponent) == 0x000188, "Wrong size on UPyTokyoTrainManagerComponent");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackTrainName) == 0x000108, "Member 'UPyTokyoTrainManagerComponent::AttackTrainName' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackTrainMove) == 0x000118, "Member 'UPyTokyoTrainManagerComponent::AttackTrainMove' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackTrainStay) == 0x000120, "Member 'UPyTokyoTrainManagerComponent::AttackTrainStay' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackTowerName) == 0x000128, "Member 'UPyTokyoTrainManagerComponent::AttackTowerName' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackTower) == 0x000138, "Member 'UPyTokyoTrainManagerComponent::AttackTower' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendTrainName) == 0x000140, "Member 'UPyTokyoTrainManagerComponent::DefendTrainName' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendTrainMove) == 0x000150, "Member 'UPyTokyoTrainManagerComponent::DefendTrainMove' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendTrainStay) == 0x000158, "Member 'UPyTokyoTrainManagerComponent::DefendTrainStay' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendTowerName) == 0x000160, "Member 'UPyTokyoTrainManagerComponent::DefendTowerName' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendTower) == 0x000170, "Member 'UPyTokyoTrainManagerComponent::DefendTower' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, AttackSequence) == 0x000178, "Member 'UPyTokyoTrainManagerComponent::AttackSequence' has a wrong offset!");
-static_assert(offsetof(UPyTokyoTrainManagerComponent, DefendSequence) == 0x000180, "Member 'UPyTokyoTrainManagerComponent::DefendSequence' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTokyoTrainManagerComponent;
 
 }
 

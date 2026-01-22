@@ -23,9 +23,7 @@ struct PyWidget_CommonPageCutting_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonPageCutting_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_CommonPageCutting_PreConstruct");
-static_assert(sizeof(PyWidget_CommonPageCutting_PreConstruct) == 0x000001, "Wrong size on PyWidget_CommonPageCutting_PreConstruct");
-static_assert(offsetof(PyWidget_CommonPageCutting_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_CommonPageCutting_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonPageCutting_PreConstruct;
 
 // PythonFunction PyWidget_CommonPageCutting.PyWidget_CommonPageCutting.OnReceiveInputAction
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class FName                                   ActionName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonPageCutting_OnReceiveInputAction) == 0x000004, "Wrong alignment on PyWidget_CommonPageCutting_OnReceiveInputAction");
-static_assert(sizeof(PyWidget_CommonPageCutting_OnReceiveInputAction) == 0x000010, "Wrong size on PyWidget_CommonPageCutting_OnReceiveInputAction");
-static_assert(offsetof(PyWidget_CommonPageCutting_OnReceiveInputAction, ActionName) == 0x000000, "Member 'PyWidget_CommonPageCutting_OnReceiveInputAction::ActionName' has a wrong offset!");
-static_assert(offsetof(PyWidget_CommonPageCutting_OnReceiveInputAction, EventType) == 0x00000C, "Member 'PyWidget_CommonPageCutting_OnReceiveInputAction::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonPageCutting_OnReceiveInputAction;
 
 // PythonFunction PyWidget_CommonPageCutting.PyWidget_CommonPageCutting.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_CommonPageCutting_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonPageCutting_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CommonPageCutting_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CommonPageCutting_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CommonPageCutting_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CommonPageCutting_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_CommonPageCutting_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonPageCutting_MarvelSetVisible;
 
 }
 

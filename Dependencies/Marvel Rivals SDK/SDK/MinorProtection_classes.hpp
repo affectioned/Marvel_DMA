@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMinorProtectionHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMinorProtectionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMinorProtectionHandler")
 	}
 	static class UUISettingEntryMinorProtectionHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMinorProtectionHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMinorProtectionHandler) == 0x000008, "Wrong alignment on UUISettingEntryMinorProtectionHandler");
-static_assert(sizeof(UUISettingEntryMinorProtectionHandler) == 0x000030, "Wrong size on UUISettingEntryMinorProtectionHandler");
+DUMPER7_ASSERTS_UUISettingEntryMinorProtectionHandler;
 
 // PythonClass MinorProtection.UISettingEntryMinorProtectionSubHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMinorProtectionSubHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMinorProtectionSubHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMinorProtectionSubHandler")
 	}
 	static class UUISettingEntryMinorProtectionSubHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMinorProtectionSubHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMinorProtectionSubHandler) == 0x000008, "Wrong alignment on UUISettingEntryMinorProtectionSubHandler");
-static_assert(sizeof(UUISettingEntryMinorProtectionSubHandler) == 0x000030, "Wrong size on UUISettingEntryMinorProtectionSubHandler");
+DUMPER7_ASSERTS_UUISettingEntryMinorProtectionSubHandler;
 
 // PythonClass MinorProtection.UISettingEntrySafeguardWebsiteHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -70,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySafeguardWebsiteHandler">();
+		STATIC_CLASS_IMPL("UISettingEntrySafeguardWebsiteHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySafeguardWebsiteHandler")
 	}
 	static class UUISettingEntrySafeguardWebsiteHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySafeguardWebsiteHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntrySafeguardWebsiteHandler) == 0x000008, "Wrong alignment on UUISettingEntrySafeguardWebsiteHandler");
-static_assert(sizeof(UUISettingEntrySafeguardWebsiteHandler) == 0x000030, "Wrong size on UUISettingEntrySafeguardWebsiteHandler");
+DUMPER7_ASSERTS_UUISettingEntrySafeguardWebsiteHandler;
 
 }
 

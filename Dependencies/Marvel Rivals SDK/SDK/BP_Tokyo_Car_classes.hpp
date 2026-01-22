@@ -29,18 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Tokyo_Car_C">();
+		BP_STATIC_CLASS_IMPL("BP_Tokyo_Car_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Tokyo_Car_C")
 	}
 	static class ABP_Tokyo_Car_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Tokyo_Car_C>();
 	}
 };
-static_assert(alignof(ABP_Tokyo_Car_C) == 0x000010, "Wrong alignment on ABP_Tokyo_Car_C");
-static_assert(sizeof(ABP_Tokyo_Car_C) == 0x000700, "Wrong size on ABP_Tokyo_Car_C");
-static_assert(offsetof(ABP_Tokyo_Car_C, Niagara) == 0x0006E0, "Member 'ABP_Tokyo_Car_C::Niagara' has a wrong offset!");
-static_assert(offsetof(ABP_Tokyo_Car_C, Spline) == 0x0006E8, "Member 'ABP_Tokyo_Car_C::Spline' has a wrong offset!");
-static_assert(offsetof(ABP_Tokyo_Car_C, DefaultSceneRoot) == 0x0006F0, "Member 'ABP_Tokyo_Car_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_Tokyo_Car_C;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Mode_Indicator_Control_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mode_Indicator_Control_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_Mode_Indicator_Control_ShouldBeVisible");
-static_assert(sizeof(PyWidget_Mode_Indicator_Control_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_Mode_Indicator_Control_ShouldBeVisible");
-static_assert(offsetof(PyWidget_Mode_Indicator_Control_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_Mode_Indicator_Control_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mode_Indicator_Control_ShouldBeVisible;
 
 }
 

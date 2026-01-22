@@ -12,51 +12,51 @@
 
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Clan_ClanEntry.PyWidget_Clan_ClanEntry
-// 0x0190 (0x0750 - 0x05C0)
+// 0x0190 (0x0758 - 0x05C8)
 class UPyWidget_Clan_ClanEntry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NormalColor;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedColor;                                     // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescNormalColor;                                   // 0x05E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescSelectedColor;                                 // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BGNormalColor;                                     // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BGSelectedColor;                                   // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PortNormalColor;                                   // 0x0634(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ProtSelectedColor;                                 // 0x0644(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ProtNormalNotFavColor;                             // 0x0654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ProtSelectedNotFavColor;                           // 0x0664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_674[0x4];                                      // 0x0674(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelTextBlock*                       Text_Name;                                         // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_PlayerNum;                                    // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_State;                                        // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Interval;                                      // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_Btn;                                           // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_ClanIcon;                                      // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Requirement;                                  // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgSigningUpMRC;                                   // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgSigningUpClash;                                 // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgSignedUpColorMRC;                               // 0x06C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgSignedUpColorClash;                             // 0x06D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorNormal;                       // 0x06E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorMRC;                          // 0x06FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorClash;                        // 0x0710(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_724[0x4];                                      // 0x0724(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             SignUpIcon;                                        // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SigningUpIconMRC;                                  // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SigningUpIconClash;                                // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SignedUpIconMRC;                                   // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SignedUpIconClash;                                 // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NormalColor;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedColor;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescNormalColor;                                   // 0x05EC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescSelectedColor;                                 // 0x0600(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BGNormalColor;                                     // 0x0614(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BGSelectedColor;                                   // 0x0628(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PortNormalColor;                                   // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ProtSelectedColor;                                 // 0x064C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ProtNormalNotFavColor;                             // 0x065C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ProtSelectedNotFavColor;                           // 0x066C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelTextBlock*                       Text_Name;                                         // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_PlayerNum;                                    // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_State;                                        // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Interval;                                      // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_Btn;                                           // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_ClanIcon;                                      // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Requirement;                                  // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgSigningUpMRC;                                   // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgSigningUpClash;                                 // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgSignedUpColorMRC;                               // 0x06D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgSignedUpColorClash;                             // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorNormal;                       // 0x06F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorMRC;                          // 0x0704(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorClash;                        // 0x0718(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_72C[0x4];                                      // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             SignUpIcon;                                        // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SigningUpIconMRC;                                  // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SigningUpIconClash;                                // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SignedUpIconMRC;                                   // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SignedUpIconClash;                                 // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -64,45 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ClanEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ClanEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ClanEntry")
 	}
 	static class UPyWidget_Clan_ClanEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ClanEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ClanEntry) == 0x000008, "Wrong alignment on UPyWidget_Clan_ClanEntry");
-static_assert(sizeof(UPyWidget_Clan_ClanEntry) == 0x000750, "Wrong size on UPyWidget_Clan_ClanEntry");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, NormalColor) == 0x0005BC, "Member 'UPyWidget_Clan_ClanEntry::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SelectedColor) == 0x0005D0, "Member 'UPyWidget_Clan_ClanEntry::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, DescNormalColor) == 0x0005E4, "Member 'UPyWidget_Clan_ClanEntry::DescNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, DescSelectedColor) == 0x0005F8, "Member 'UPyWidget_Clan_ClanEntry::DescSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, BGNormalColor) == 0x00060C, "Member 'UPyWidget_Clan_ClanEntry::BGNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, BGSelectedColor) == 0x000620, "Member 'UPyWidget_Clan_ClanEntry::BGSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, PortNormalColor) == 0x000634, "Member 'UPyWidget_Clan_ClanEntry::PortNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ProtSelectedColor) == 0x000644, "Member 'UPyWidget_Clan_ClanEntry::ProtSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ProtNormalNotFavColor) == 0x000654, "Member 'UPyWidget_Clan_ClanEntry::ProtNormalNotFavColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ProtSelectedNotFavColor) == 0x000664, "Member 'UPyWidget_Clan_ClanEntry::ProtSelectedNotFavColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Text_Name) == 0x000678, "Member 'UPyWidget_Clan_ClanEntry::Text_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Text_PlayerNum) == 0x000680, "Member 'UPyWidget_Clan_ClanEntry::Text_PlayerNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Text_State) == 0x000688, "Member 'UPyWidget_Clan_ClanEntry::Text_State' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Img_Interval) == 0x000690, "Member 'UPyWidget_Clan_ClanEntry::Img_Interval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, WBP_Btn) == 0x000698, "Member 'UPyWidget_Clan_ClanEntry::WBP_Btn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, WBP_ClanIcon) == 0x0006A0, "Member 'UPyWidget_Clan_ClanEntry::WBP_ClanIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Overlay_Content) == 0x0006A8, "Member 'UPyWidget_Clan_ClanEntry::Overlay_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, Text_Requirement) == 0x0006B0, "Member 'UPyWidget_Clan_ClanEntry::Text_Requirement' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ImgSigningUpMRC) == 0x0006B8, "Member 'UPyWidget_Clan_ClanEntry::ImgSigningUpMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ImgSigningUpClash) == 0x0006C0, "Member 'UPyWidget_Clan_ClanEntry::ImgSigningUpClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ImgSignedUpColorMRC) == 0x0006C8, "Member 'UPyWidget_Clan_ClanEntry::ImgSignedUpColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, ImgSignedUpColorClash) == 0x0006D8, "Member 'UPyWidget_Clan_ClanEntry::ImgSignedUpColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, LeagueRegionTextColorNormal) == 0x0006E8, "Member 'UPyWidget_Clan_ClanEntry::LeagueRegionTextColorNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, LeagueRegionTextColorMRC) == 0x0006FC, "Member 'UPyWidget_Clan_ClanEntry::LeagueRegionTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, LeagueRegionTextColorClash) == 0x000710, "Member 'UPyWidget_Clan_ClanEntry::LeagueRegionTextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SignUpIcon) == 0x000728, "Member 'UPyWidget_Clan_ClanEntry::SignUpIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SigningUpIconMRC) == 0x000730, "Member 'UPyWidget_Clan_ClanEntry::SigningUpIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SigningUpIconClash) == 0x000738, "Member 'UPyWidget_Clan_ClanEntry::SigningUpIconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SignedUpIconMRC) == 0x000740, "Member 'UPyWidget_Clan_ClanEntry::SignedUpIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanEntry, SignedUpIconClash) == 0x000748, "Member 'UPyWidget_Clan_ClanEntry::SignedUpIconClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ClanEntry;
 
 // PythonClass PyWidget_Clan_ClanEntry.PyWidget_Clan_ClanIcon
 // 0x0050 (0x0408 - 0x03B8)
@@ -134,28 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ClanIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ClanIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ClanIcon")
 	}
 	static class UPyWidget_Clan_ClanIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ClanIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ClanIcon) == 0x000008, "Wrong alignment on UPyWidget_Clan_ClanIcon");
-static_assert(sizeof(UPyWidget_Clan_ClanIcon) == 0x000408, "Wrong size on UPyWidget_Clan_ClanIcon");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_BaseMap) == 0x0003B8, "Member 'UPyWidget_Clan_ClanIcon::Img_BaseMap' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_ClanFrame) == 0x0003C0, "Member 'UPyWidget_Clan_ClanIcon::Img_ClanFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, SizeBox_ClanLogo) == 0x0003C8, "Member 'UPyWidget_Clan_ClanIcon::SizeBox_ClanLogo' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, IsShowFrame) == 0x0003D0, "Member 'UPyWidget_Clan_ClanIcon::IsShowFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, LimitShowVerifySmallWidth) == 0x0003D4, "Member 'UPyWidget_Clan_ClanIcon::LimitShowVerifySmallWidth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, LimitShowVerifyLargeWidth) == 0x0003D8, "Member 'UPyWidget_Clan_ClanIcon::LimitShowVerifyLargeWidth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, LimitShowVerifySmallHeight) == 0x0003DC, "Member 'UPyWidget_Clan_ClanIcon::LimitShowVerifySmallHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, LimitShowVerifyLargeHeight) == 0x0003E0, "Member 'UPyWidget_Clan_ClanIcon::LimitShowVerifyLargeHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, IsShowVxFrame) == 0x0003E4, "Member 'UPyWidget_Clan_ClanIcon::IsShowVxFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_ClashVerifySmall) == 0x0003E8, "Member 'UPyWidget_Clan_ClanIcon::Img_ClashVerifySmall' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_ClashVerifyLarge) == 0x0003F0, "Member 'UPyWidget_Clan_ClanIcon::Img_ClashVerifyLarge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_VerifyMRCSmall) == 0x0003F8, "Member 'UPyWidget_Clan_ClanIcon::Img_VerifyMRCSmall' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanIcon, Img_VerifyMRCLarge) == 0x000400, "Member 'UPyWidget_Clan_ClanIcon::Img_VerifyMRCLarge' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ClanIcon;
 
 // PythonClass PyWidget_Clan_ClanEntry.PyWidget_Clan_ClanFlagIcon
 // 0x0008 (0x03C0 - 0x03B8)
@@ -173,16 +136,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ClanFlagIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ClanFlagIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ClanFlagIcon")
 	}
 	static class UPyWidget_Clan_ClanFlagIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ClanFlagIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ClanFlagIcon) == 0x000008, "Wrong alignment on UPyWidget_Clan_ClanFlagIcon");
-static_assert(sizeof(UPyWidget_Clan_ClanFlagIcon) == 0x0003C0, "Wrong size on UPyWidget_Clan_ClanFlagIcon");
-static_assert(offsetof(UPyWidget_Clan_ClanFlagIcon, IsShowVx) == 0x0003B8, "Member 'UPyWidget_Clan_ClanFlagIcon::IsShowVx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ClanFlagIcon;
 
 }
 

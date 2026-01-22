@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_HomeEntrance_Activity_Item_Base_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyWidget_HomeEntrance_Activity_Item_Base_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Activity_Item_150.PyWidget_HomeEntrance_Activity_150
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_150 final : public UPyWidget_HomeEntrance_Activity_Item_Widget_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            RedSlateColor;                                     // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedLinearColor;                                    // 0x05D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x05E0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhiteLinearColor;                                  // 0x05F4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            RedSlateColor;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedLinearColor;                                    // 0x05D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x05E8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhiteLinearColor;                                  // 0x05FC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_150">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_150")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_150")
 	}
 	static class UPyWidget_HomeEntrance_Activity_150* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_150>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_150) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_150");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_150) == 0x000608, "Wrong size on UPyWidget_HomeEntrance_Activity_150");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_150, RedSlateColor) == 0x0005BC, "Member 'UPyWidget_HomeEntrance_Activity_150::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_150, RedLinearColor) == 0x0005D0, "Member 'UPyWidget_HomeEntrance_Activity_150::RedLinearColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_150, WhiteSlateColor) == 0x0005E0, "Member 'UPyWidget_HomeEntrance_Activity_150::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HomeEntrance_Activity_150, WhiteLinearColor) == 0x0005F4, "Member 'UPyWidget_HomeEntrance_Activity_150::WhiteLinearColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_150;
 
 }
 

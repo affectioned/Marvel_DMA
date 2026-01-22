@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperCharacter">();
+		STATIC_CLASS_IMPL("PaperCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperCharacter")
 	}
 	static class APaperCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperCharacter>();
 	}
 };
-static_assert(alignof(APaperCharacter) == 0x000010, "Wrong alignment on APaperCharacter");
-static_assert(sizeof(APaperCharacter) == 0x000DA0, "Wrong size on APaperCharacter");
-static_assert(offsetof(APaperCharacter, Sprite) == 0x000D90, "Member 'APaperCharacter::Sprite' has a wrong offset!");
+DUMPER7_ASSERTS_APaperCharacter;
 
 // Class Paper2D.PaperFlipbook
 // 0x0028 (0x0058 - 0x0030)
@@ -65,19 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperFlipbook">();
+		STATIC_CLASS_IMPL("PaperFlipbook")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperFlipbook")
 	}
 	static class UPaperFlipbook* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperFlipbook>();
 	}
 };
-static_assert(alignof(UPaperFlipbook) == 0x000008, "Wrong alignment on UPaperFlipbook");
-static_assert(sizeof(UPaperFlipbook) == 0x000058, "Wrong size on UPaperFlipbook");
-static_assert(offsetof(UPaperFlipbook, FramesPerSecond) == 0x000030, "Member 'UPaperFlipbook::FramesPerSecond' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbook, KeyFrames) == 0x000038, "Member 'UPaperFlipbook::KeyFrames' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbook, DefaultMaterial) == 0x000048, "Member 'UPaperFlipbook::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbook, CollisionSource) == 0x000050, "Member 'UPaperFlipbook::CollisionSource' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperFlipbook;
 
 // Class Paper2D.PaperFlipbookActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -89,16 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperFlipbookActor">();
+		STATIC_CLASS_IMPL("PaperFlipbookActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperFlipbookActor")
 	}
 	static class APaperFlipbookActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperFlipbookActor>();
 	}
 };
-static_assert(alignof(APaperFlipbookActor) == 0x000010, "Wrong alignment on APaperFlipbookActor");
-static_assert(sizeof(APaperFlipbookActor) == 0x0006E0, "Wrong size on APaperFlipbookActor");
-static_assert(offsetof(APaperFlipbookActor, RenderComponent) == 0x0006D8, "Member 'APaperFlipbookActor::RenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APaperFlipbookActor;
 
 // Class Paper2D.PaperFlipbookComponent
 // 0x0040 (0x08C0 - 0x0880)
@@ -148,23 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperFlipbookComponent">();
+		STATIC_CLASS_IMPL("PaperFlipbookComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperFlipbookComponent")
 	}
 	static class UPaperFlipbookComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperFlipbookComponent>();
 	}
 };
-static_assert(alignof(UPaperFlipbookComponent) == 0x000010, "Wrong alignment on UPaperFlipbookComponent");
-static_assert(sizeof(UPaperFlipbookComponent) == 0x0008C0, "Wrong size on UPaperFlipbookComponent");
-static_assert(offsetof(UPaperFlipbookComponent, SourceFlipbook) == 0x000878, "Member 'UPaperFlipbookComponent::SourceFlipbook' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, Material) == 0x000880, "Member 'UPaperFlipbookComponent::Material' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, PlayRate) == 0x000888, "Member 'UPaperFlipbookComponent::PlayRate' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, AccumulatedTime) == 0x000890, "Member 'UPaperFlipbookComponent::AccumulatedTime' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, CachedFrameIndex) == 0x000894, "Member 'UPaperFlipbookComponent::CachedFrameIndex' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, SpriteColor) == 0x000898, "Member 'UPaperFlipbookComponent::SpriteColor' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, CachedBodySetup) == 0x0008A8, "Member 'UPaperFlipbookComponent::CachedBodySetup' has a wrong offset!");
-static_assert(offsetof(UPaperFlipbookComponent, OnFinishedPlaying) == 0x0008B0, "Member 'UPaperFlipbookComponent::OnFinishedPlaying' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperFlipbookComponent;
 
 // Class Paper2D.PaperGroupedSpriteActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -176,16 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperGroupedSpriteActor">();
+		STATIC_CLASS_IMPL("PaperGroupedSpriteActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperGroupedSpriteActor")
 	}
 	static class APaperGroupedSpriteActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperGroupedSpriteActor>();
 	}
 };
-static_assert(alignof(APaperGroupedSpriteActor) == 0x000010, "Wrong alignment on APaperGroupedSpriteActor");
-static_assert(sizeof(APaperGroupedSpriteActor) == 0x0006E0, "Wrong size on APaperGroupedSpriteActor");
-static_assert(offsetof(APaperGroupedSpriteActor, RenderComponent) == 0x0006D8, "Member 'APaperGroupedSpriteActor::RenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APaperGroupedSpriteActor;
 
 // Class Paper2D.PaperGroupedSpriteComponent
 // 0x0030 (0x08B0 - 0x0880)
@@ -210,17 +210,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperGroupedSpriteComponent">();
+		STATIC_CLASS_IMPL("PaperGroupedSpriteComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperGroupedSpriteComponent")
 	}
 	static class UPaperGroupedSpriteComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperGroupedSpriteComponent>();
 	}
 };
-static_assert(alignof(UPaperGroupedSpriteComponent) == 0x000010, "Wrong alignment on UPaperGroupedSpriteComponent");
-static_assert(sizeof(UPaperGroupedSpriteComponent) == 0x0008B0, "Wrong size on UPaperGroupedSpriteComponent");
-static_assert(offsetof(UPaperGroupedSpriteComponent, InstanceMaterials) == 0x000878, "Member 'UPaperGroupedSpriteComponent::InstanceMaterials' has a wrong offset!");
-static_assert(offsetof(UPaperGroupedSpriteComponent, PerInstanceSpriteData) == 0x000888, "Member 'UPaperGroupedSpriteComponent::PerInstanceSpriteData' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperGroupedSpriteComponent;
 
 // Class Paper2D.PaperRuntimeSettings
 // 0x0008 (0x0038 - 0x0030)
@@ -235,18 +236,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperRuntimeSettings">();
+		STATIC_CLASS_IMPL("PaperRuntimeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperRuntimeSettings")
 	}
 	static class UPaperRuntimeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperRuntimeSettings>();
 	}
 };
-static_assert(alignof(UPaperRuntimeSettings) == 0x000008, "Wrong alignment on UPaperRuntimeSettings");
-static_assert(sizeof(UPaperRuntimeSettings) == 0x000038, "Wrong size on UPaperRuntimeSettings");
-static_assert(offsetof(UPaperRuntimeSettings, bEnableSpriteAtlasGroups) == 0x000030, "Member 'UPaperRuntimeSettings::bEnableSpriteAtlasGroups' has a wrong offset!");
-static_assert(offsetof(UPaperRuntimeSettings, bEnableTerrainSplineEditing) == 0x000031, "Member 'UPaperRuntimeSettings::bEnableTerrainSplineEditing' has a wrong offset!");
-static_assert(offsetof(UPaperRuntimeSettings, bResizeSpriteDataToMatchTextures) == 0x000032, "Member 'UPaperRuntimeSettings::bResizeSpriteDataToMatchTextures' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperRuntimeSettings;
 
 // Class Paper2D.PaperSprite
 // 0x0090 (0x00C0 - 0x0030)
@@ -272,27 +273,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperSprite">();
+		STATIC_CLASS_IMPL("PaperSprite")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperSprite")
 	}
 	static class UPaperSprite* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperSprite>();
 	}
 };
-static_assert(alignof(UPaperSprite) == 0x000008, "Wrong alignment on UPaperSprite");
-static_assert(sizeof(UPaperSprite) == 0x0000C0, "Wrong size on UPaperSprite");
-static_assert(offsetof(UPaperSprite, AdditionalSourceTextures) == 0x000040, "Member 'UPaperSprite::AdditionalSourceTextures' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, BakedSourceUV) == 0x000050, "Member 'UPaperSprite::BakedSourceUV' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, BakedSourceDimension) == 0x000060, "Member 'UPaperSprite::BakedSourceDimension' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, BakedSourceTexture) == 0x000070, "Member 'UPaperSprite::BakedSourceTexture' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, DefaultMaterial) == 0x000078, "Member 'UPaperSprite::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, AlternateMaterial) == 0x000080, "Member 'UPaperSprite::AlternateMaterial' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, Sockets) == 0x000088, "Member 'UPaperSprite::Sockets' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, SpriteCollisionDomain) == 0x000098, "Member 'UPaperSprite::SpriteCollisionDomain' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, PixelsPerUnrealUnit) == 0x00009C, "Member 'UPaperSprite::PixelsPerUnrealUnit' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, BodySetup) == 0x0000A0, "Member 'UPaperSprite::BodySetup' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, AlternateMaterialSplitIndex) == 0x0000A8, "Member 'UPaperSprite::AlternateMaterialSplitIndex' has a wrong offset!");
-static_assert(offsetof(UPaperSprite, BakedRenderData) == 0x0000B0, "Member 'UPaperSprite::BakedRenderData' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperSprite;
 
 // Class Paper2D.PaperSpriteActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -304,16 +296,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperSpriteActor">();
+		STATIC_CLASS_IMPL("PaperSpriteActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperSpriteActor")
 	}
 	static class APaperSpriteActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperSpriteActor>();
 	}
 };
-static_assert(alignof(APaperSpriteActor) == 0x000010, "Wrong alignment on APaperSpriteActor");
-static_assert(sizeof(APaperSpriteActor) == 0x0006E0, "Wrong size on APaperSpriteActor");
-static_assert(offsetof(APaperSpriteActor, RenderComponent) == 0x0006D8, "Member 'APaperSpriteActor::RenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APaperSpriteActor;
 
 // Class Paper2D.PaperSpriteAtlas
 // 0x0000 (0x0030 - 0x0030)
@@ -322,15 +316,18 @@ class UPaperSpriteAtlas final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperSpriteAtlas">();
+		STATIC_CLASS_IMPL("PaperSpriteAtlas")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperSpriteAtlas")
 	}
 	static class UPaperSpriteAtlas* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperSpriteAtlas>();
 	}
 };
-static_assert(alignof(UPaperSpriteAtlas) == 0x000008, "Wrong alignment on UPaperSpriteAtlas");
-static_assert(sizeof(UPaperSpriteAtlas) == 0x000030, "Wrong size on UPaperSpriteAtlas");
+DUMPER7_ASSERTS_UPaperSpriteAtlas;
 
 // Class Paper2D.PaperSpriteBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -342,15 +339,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperSpriteBlueprintLibrary">();
+		STATIC_CLASS_IMPL("PaperSpriteBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperSpriteBlueprintLibrary")
 	}
 	static class UPaperSpriteBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperSpriteBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UPaperSpriteBlueprintLibrary) == 0x000008, "Wrong alignment on UPaperSpriteBlueprintLibrary");
-static_assert(sizeof(UPaperSpriteBlueprintLibrary) == 0x000030, "Wrong size on UPaperSpriteBlueprintLibrary");
+DUMPER7_ASSERTS_UPaperSpriteBlueprintLibrary;
 
 // Class Paper2D.PaperSpriteComponent
 // 0x0020 (0x08A0 - 0x0880)
@@ -370,18 +370,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperSpriteComponent">();
+		STATIC_CLASS_IMPL("PaperSpriteComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperSpriteComponent")
 	}
 	static class UPaperSpriteComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperSpriteComponent>();
 	}
 };
-static_assert(alignof(UPaperSpriteComponent) == 0x000010, "Wrong alignment on UPaperSpriteComponent");
-static_assert(sizeof(UPaperSpriteComponent) == 0x0008A0, "Wrong size on UPaperSpriteComponent");
-static_assert(offsetof(UPaperSpriteComponent, SourceSprite) == 0x000878, "Member 'UPaperSpriteComponent::SourceSprite' has a wrong offset!");
-static_assert(offsetof(UPaperSpriteComponent, MaterialOverride) == 0x000880, "Member 'UPaperSpriteComponent::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(UPaperSpriteComponent, SpriteColor) == 0x000888, "Member 'UPaperSpriteComponent::SpriteColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperSpriteComponent;
 
 // Class Paper2D.PaperTileLayer
 // 0x0070 (0x00A0 - 0x0030)
@@ -409,26 +409,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTileLayer">();
+		STATIC_CLASS_IMPL("PaperTileLayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTileLayer")
 	}
 	static class UPaperTileLayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTileLayer>();
 	}
 };
-static_assert(alignof(UPaperTileLayer) == 0x000008, "Wrong alignment on UPaperTileLayer");
-static_assert(sizeof(UPaperTileLayer) == 0x0000A0, "Wrong size on UPaperTileLayer");
-static_assert(offsetof(UPaperTileLayer, LayerName) == 0x000030, "Member 'UPaperTileLayer::LayerName' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, LayerWidth) == 0x000048, "Member 'UPaperTileLayer::LayerWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, LayerHeight) == 0x00004C, "Member 'UPaperTileLayer::LayerHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, CollisionThicknessOverride) == 0x000054, "Member 'UPaperTileLayer::CollisionThicknessOverride' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, CollisionOffsetOverride) == 0x000058, "Member 'UPaperTileLayer::CollisionOffsetOverride' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, LayerColor) == 0x00005C, "Member 'UPaperTileLayer::LayerColor' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, AllocatedWidth) == 0x00006C, "Member 'UPaperTileLayer::AllocatedWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, AllocatedHeight) == 0x000070, "Member 'UPaperTileLayer::AllocatedHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, AllocatedCells) == 0x000078, "Member 'UPaperTileLayer::AllocatedCells' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, TileSet) == 0x000088, "Member 'UPaperTileLayer::TileSet' has a wrong offset!");
-static_assert(offsetof(UPaperTileLayer, AllocatedGrid) == 0x000090, "Member 'UPaperTileLayer::AllocatedGrid' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTileLayer;
 
 // Class Paper2D.PaperTileMap
 // 0x0088 (0x00B8 - 0x0030)
@@ -459,32 +451,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTileMap">();
+		STATIC_CLASS_IMPL("PaperTileMap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTileMap")
 	}
 	static class UPaperTileMap* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTileMap>();
 	}
 };
-static_assert(alignof(UPaperTileMap) == 0x000008, "Wrong alignment on UPaperTileMap");
-static_assert(sizeof(UPaperTileMap) == 0x0000B8, "Wrong size on UPaperTileMap");
-static_assert(offsetof(UPaperTileMap, MapWidth) == 0x000030, "Member 'UPaperTileMap::MapWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, MapHeight) == 0x000034, "Member 'UPaperTileMap::MapHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, TileWidth) == 0x000038, "Member 'UPaperTileMap::TileWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, TileHeight) == 0x00003C, "Member 'UPaperTileMap::TileHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, PixelsPerUnrealUnit) == 0x000040, "Member 'UPaperTileMap::PixelsPerUnrealUnit' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, SeparationPerTileX) == 0x000044, "Member 'UPaperTileMap::SeparationPerTileX' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, SeparationPerTileY) == 0x000048, "Member 'UPaperTileMap::SeparationPerTileY' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, SeparationPerLayer) == 0x00004C, "Member 'UPaperTileMap::SeparationPerLayer' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, SelectedTileSet) == 0x000050, "Member 'UPaperTileMap::SelectedTileSet' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, Material) == 0x000080, "Member 'UPaperTileMap::Material' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, TileLayers) == 0x000088, "Member 'UPaperTileMap::TileLayers' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, CollisionThickness) == 0x000098, "Member 'UPaperTileMap::CollisionThickness' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, SpriteCollisionDomain) == 0x00009C, "Member 'UPaperTileMap::SpriteCollisionDomain' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, ProjectionMode) == 0x00009D, "Member 'UPaperTileMap::ProjectionMode' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, HexSideLength) == 0x0000A0, "Member 'UPaperTileMap::HexSideLength' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, BodySetup) == 0x0000A8, "Member 'UPaperTileMap::BodySetup' has a wrong offset!");
-static_assert(offsetof(UPaperTileMap, LayerNameIndex) == 0x0000B0, "Member 'UPaperTileMap::LayerNameIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTileMap;
 
 // Class Paper2D.PaperTileMapActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -496,16 +474,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTileMapActor">();
+		STATIC_CLASS_IMPL("PaperTileMapActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTileMapActor")
 	}
 	static class APaperTileMapActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperTileMapActor>();
 	}
 };
-static_assert(alignof(APaperTileMapActor) == 0x000010, "Wrong alignment on APaperTileMapActor");
-static_assert(sizeof(APaperTileMapActor) == 0x0006E0, "Wrong size on APaperTileMapActor");
-static_assert(offsetof(APaperTileMapActor, RenderComponent) == 0x0006D8, "Member 'APaperTileMapActor::RenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APaperTileMapActor;
 
 // Class Paper2D.PaperTileMapComponent
 // 0x0050 (0x08D0 - 0x0880)
@@ -551,26 +531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTileMapComponent">();
+		STATIC_CLASS_IMPL("PaperTileMapComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTileMapComponent")
 	}
 	static class UPaperTileMapComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTileMapComponent>();
 	}
 };
-static_assert(alignof(UPaperTileMapComponent) == 0x000010, "Wrong alignment on UPaperTileMapComponent");
-static_assert(sizeof(UPaperTileMapComponent) == 0x0008D0, "Wrong size on UPaperTileMapComponent");
-static_assert(offsetof(UPaperTileMapComponent, MapWidth) == 0x000878, "Member 'UPaperTileMapComponent::MapWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, MapHeight) == 0x00087C, "Member 'UPaperTileMapComponent::MapHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, TileWidth) == 0x000880, "Member 'UPaperTileMapComponent::TileWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, TileHeight) == 0x000884, "Member 'UPaperTileMapComponent::TileHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, DefaultLayerTileSet) == 0x000888, "Member 'UPaperTileMapComponent::DefaultLayerTileSet' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, Material) == 0x000890, "Member 'UPaperTileMapComponent::Material' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, TileLayers) == 0x000898, "Member 'UPaperTileMapComponent::TileLayers' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, TileMapColor) == 0x0008A8, "Member 'UPaperTileMapComponent::TileMapColor' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, UseSingleLayerIndex) == 0x0008B8, "Member 'UPaperTileMapComponent::UseSingleLayerIndex' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, bUseSingleLayer) == 0x0008BC, "Member 'UPaperTileMapComponent::bUseSingleLayer' has a wrong offset!");
-static_assert(offsetof(UPaperTileMapComponent, TileMap) == 0x0008C0, "Member 'UPaperTileMapComponent::TileMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTileMapComponent;
 
 // Class Paper2D.PaperTileSet
 // 0x0080 (0x00B0 - 0x0030)
@@ -597,31 +569,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTileSet">();
+		STATIC_CLASS_IMPL("PaperTileSet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTileSet")
 	}
 	static class UPaperTileSet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTileSet>();
 	}
 };
-static_assert(alignof(UPaperTileSet) == 0x000008, "Wrong alignment on UPaperTileSet");
-static_assert(sizeof(UPaperTileSet) == 0x0000B0, "Wrong size on UPaperTileSet");
-static_assert(offsetof(UPaperTileSet, TileSize) == 0x000030, "Member 'UPaperTileSet::TileSize' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, TileSheet) == 0x000038, "Member 'UPaperTileSet::TileSheet' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, AdditionalSourceTextures) == 0x000040, "Member 'UPaperTileSet::AdditionalSourceTextures' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, BorderMargin) == 0x000050, "Member 'UPaperTileSet::BorderMargin' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, PerTileSpacing) == 0x000060, "Member 'UPaperTileSet::PerTileSpacing' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, DrawingOffset) == 0x000068, "Member 'UPaperTileSet::DrawingOffset' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, WidthInTiles) == 0x000070, "Member 'UPaperTileSet::WidthInTiles' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, HeightInTiles) == 0x000074, "Member 'UPaperTileSet::HeightInTiles' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, AllocatedWidth) == 0x000078, "Member 'UPaperTileSet::AllocatedWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, AllocatedHeight) == 0x00007C, "Member 'UPaperTileSet::AllocatedHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, PerTileData) == 0x000080, "Member 'UPaperTileSet::PerTileData' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, Terrains) == 0x000090, "Member 'UPaperTileSet::Terrains' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, TileWidth) == 0x0000A0, "Member 'UPaperTileSet::TileWidth' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, TileHeight) == 0x0000A4, "Member 'UPaperTileSet::TileHeight' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, Margin) == 0x0000A8, "Member 'UPaperTileSet::Margin' has a wrong offset!");
-static_assert(offsetof(UPaperTileSet, Spacing) == 0x0000AC, "Member 'UPaperTileSet::Spacing' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTileSet;
 
 // Class Paper2D.MaterialExpressionSpriteTextureSampler
 // 0x0020 (0x02A0 - 0x0280)
@@ -636,18 +595,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaterialExpressionSpriteTextureSampler">();
+		STATIC_CLASS_IMPL("MaterialExpressionSpriteTextureSampler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialExpressionSpriteTextureSampler")
 	}
 	static class UMaterialExpressionSpriteTextureSampler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaterialExpressionSpriteTextureSampler>();
 	}
 };
-static_assert(alignof(UMaterialExpressionSpriteTextureSampler) == 0x000008, "Wrong alignment on UMaterialExpressionSpriteTextureSampler");
-static_assert(sizeof(UMaterialExpressionSpriteTextureSampler) == 0x0002A0, "Wrong size on UMaterialExpressionSpriteTextureSampler");
-static_assert(offsetof(UMaterialExpressionSpriteTextureSampler, bSampleAdditionalTextures) == 0x000280, "Member 'UMaterialExpressionSpriteTextureSampler::bSampleAdditionalTextures' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionSpriteTextureSampler, AdditionalSlotIndex) == 0x000284, "Member 'UMaterialExpressionSpriteTextureSampler::AdditionalSlotIndex' has a wrong offset!");
-static_assert(offsetof(UMaterialExpressionSpriteTextureSampler, SlotDisplayName) == 0x000288, "Member 'UMaterialExpressionSpriteTextureSampler::SlotDisplayName' has a wrong offset!");
+DUMPER7_ASSERTS_UMaterialExpressionSpriteTextureSampler;
 
 // Class Paper2D.PaperTerrainActor
 // 0x0010 (0x06F0 - 0x06E0)
@@ -661,18 +620,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTerrainActor">();
+		STATIC_CLASS_IMPL("PaperTerrainActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTerrainActor")
 	}
 	static class APaperTerrainActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APaperTerrainActor>();
 	}
 };
-static_assert(alignof(APaperTerrainActor) == 0x000010, "Wrong alignment on APaperTerrainActor");
-static_assert(sizeof(APaperTerrainActor) == 0x0006F0, "Wrong size on APaperTerrainActor");
-static_assert(offsetof(APaperTerrainActor, DummyRoot) == 0x0006D8, "Member 'APaperTerrainActor::DummyRoot' has a wrong offset!");
-static_assert(offsetof(APaperTerrainActor, SplineComponent) == 0x0006E0, "Member 'APaperTerrainActor::SplineComponent' has a wrong offset!");
-static_assert(offsetof(APaperTerrainActor, RenderComponent) == 0x0006E8, "Member 'APaperTerrainActor::RenderComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APaperTerrainActor;
 
 // Class Paper2D.PaperTerrainComponent
 // 0x0050 (0x0810 - 0x07C0)
@@ -701,26 +660,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTerrainComponent">();
+		STATIC_CLASS_IMPL("PaperTerrainComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTerrainComponent")
 	}
 	static class UPaperTerrainComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTerrainComponent>();
 	}
 };
-static_assert(alignof(UPaperTerrainComponent) == 0x000010, "Wrong alignment on UPaperTerrainComponent");
-static_assert(sizeof(UPaperTerrainComponent) == 0x000810, "Wrong size on UPaperTerrainComponent");
-static_assert(offsetof(UPaperTerrainComponent, TerrainMaterial) == 0x0007B8, "Member 'UPaperTerrainComponent::TerrainMaterial' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, bClosedSpline) == 0x0007C0, "Member 'UPaperTerrainComponent::bClosedSpline' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, bFilledSpline) == 0x0007C1, "Member 'UPaperTerrainComponent::bFilledSpline' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, AssociatedSpline) == 0x0007C8, "Member 'UPaperTerrainComponent::AssociatedSpline' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, RandomSeed) == 0x0007D0, "Member 'UPaperTerrainComponent::RandomSeed' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, SegmentOverlapAmount) == 0x0007D4, "Member 'UPaperTerrainComponent::SegmentOverlapAmount' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, TerrainColor) == 0x0007D8, "Member 'UPaperTerrainComponent::TerrainColor' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, ReparamStepsPerSegment) == 0x0007E8, "Member 'UPaperTerrainComponent::ReparamStepsPerSegment' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, SpriteCollisionDomain) == 0x0007EC, "Member 'UPaperTerrainComponent::SpriteCollisionDomain' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, CollisionThickness) == 0x0007F0, "Member 'UPaperTerrainComponent::CollisionThickness' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainComponent, CachedBodySetup) == 0x0007F8, "Member 'UPaperTerrainComponent::CachedBodySetup' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTerrainComponent;
 
 // Class Paper2D.PaperTerrainMaterial
 // 0x0018 (0x0050 - 0x0038)
@@ -733,17 +684,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTerrainMaterial">();
+		STATIC_CLASS_IMPL("PaperTerrainMaterial")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTerrainMaterial")
 	}
 	static class UPaperTerrainMaterial* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTerrainMaterial>();
 	}
 };
-static_assert(alignof(UPaperTerrainMaterial) == 0x000008, "Wrong alignment on UPaperTerrainMaterial");
-static_assert(sizeof(UPaperTerrainMaterial) == 0x000050, "Wrong size on UPaperTerrainMaterial");
-static_assert(offsetof(UPaperTerrainMaterial, Rules) == 0x000038, "Member 'UPaperTerrainMaterial::Rules' has a wrong offset!");
-static_assert(offsetof(UPaperTerrainMaterial, InteriorFill) == 0x000048, "Member 'UPaperTerrainMaterial::InteriorFill' has a wrong offset!");
+DUMPER7_ASSERTS_UPaperTerrainMaterial;
 
 // Class Paper2D.PaperTerrainSplineComponent
 // 0x0010 (0x08D0 - 0x08C0)
@@ -755,15 +707,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaperTerrainSplineComponent">();
+		STATIC_CLASS_IMPL("PaperTerrainSplineComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaperTerrainSplineComponent")
 	}
 	static class UPaperTerrainSplineComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaperTerrainSplineComponent>();
 	}
 };
-static_assert(alignof(UPaperTerrainSplineComponent) == 0x000010, "Wrong alignment on UPaperTerrainSplineComponent");
-static_assert(sizeof(UPaperTerrainSplineComponent) == 0x0008D0, "Wrong size on UPaperTerrainSplineComponent");
+DUMPER7_ASSERTS_UPaperTerrainSplineComponent;
 
 // Class Paper2D.TileMapBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -778,15 +733,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TileMapBlueprintLibrary">();
+		STATIC_CLASS_IMPL("TileMapBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TileMapBlueprintLibrary")
 	}
 	static class UTileMapBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTileMapBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UTileMapBlueprintLibrary) == 0x000008, "Wrong alignment on UTileMapBlueprintLibrary");
-static_assert(sizeof(UTileMapBlueprintLibrary) == 0x000030, "Wrong size on UTileMapBlueprintLibrary");
+DUMPER7_ASSERTS_UTileMapBlueprintLibrary;
 
 }
 

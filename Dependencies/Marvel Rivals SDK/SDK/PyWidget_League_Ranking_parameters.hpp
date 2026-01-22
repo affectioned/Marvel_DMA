@@ -23,9 +23,7 @@ struct PyWidget_League_RankingItem_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_RankingItem_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_League_RankingItem_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_League_RankingItem_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_League_RankingItem_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_League_RankingItem_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_League_RankingItem_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_RankingItem_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_League_Ranking.PyWidget_League_RankingItem.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_League_RankingItem_OnListItemObjectSet final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_RankingItem_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_League_RankingItem_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_League_RankingItem_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_League_RankingItem_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_League_RankingItem_OnListItemObjectSet, ItemObject_0) == 0x000000, "Member 'PyWidget_League_RankingItem_OnListItemObjectSet::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_RankingItem_OnListItemObjectSet;
 
 // PythonFunction PyWidget_League_Ranking.PyWidget_League_Ranking.Tick
 // 0x003C (0x003C - 0x0000)
@@ -46,10 +42,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_Ranking_Tick) == 0x000004, "Wrong alignment on PyWidget_League_Ranking_Tick");
-static_assert(sizeof(PyWidget_League_Ranking_Tick) == 0x00003C, "Wrong size on PyWidget_League_Ranking_Tick");
-static_assert(offsetof(PyWidget_League_Ranking_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_League_Ranking_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_League_Ranking_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_League_Ranking_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_Ranking_Tick;
 
 // PythonFunction PyWidget_League_Ranking.PyWidget_League_Ranking.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyWidget_League_Ranking_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_Ranking_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_League_Ranking_MarvelSetVisible");
-static_assert(sizeof(PyWidget_League_Ranking_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_League_Ranking_MarvelSetVisible");
-static_assert(offsetof(PyWidget_League_Ranking_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_League_Ranking_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_Ranking_MarvelSetVisible;
 
 // PythonFunction PyWidget_League_Ranking.PyWidget_League_Ranking.OnStartOBPlayer
 // 0x0010 (0x0010 - 0x0000)
@@ -69,9 +60,7 @@ struct PyWidget_League_Ranking_OnStartOBPlayer final
 public:
 	class FString                                 FacationID;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_League_Ranking_OnStartOBPlayer) == 0x000008, "Wrong alignment on PyWidget_League_Ranking_OnStartOBPlayer");
-static_assert(sizeof(PyWidget_League_Ranking_OnStartOBPlayer) == 0x000010, "Wrong size on PyWidget_League_Ranking_OnStartOBPlayer");
-static_assert(offsetof(PyWidget_League_Ranking_OnStartOBPlayer, FacationID) == 0x000000, "Member 'PyWidget_League_Ranking_OnStartOBPlayer::FacationID' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_League_Ranking_OnStartOBPlayer;
 
 }
 

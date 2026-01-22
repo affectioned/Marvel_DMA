@@ -65,7 +65,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSettingsTask">();
+		STATIC_CLASS_IMPL("PyLevelSettingsTask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSettingsTask")
 	}
 	static class APyLevelSettingsTask* GetDefaultObj()
 	{
@@ -73,10 +77,46 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyLevelSettingsTask) == 0x000010, "Wrong alignment on APyLevelSettingsTask");
-static_assert(sizeof(APyLevelSettingsTask) == 0x0006F0, "Wrong size on APyLevelSettingsTask");
-static_assert(offsetof(APyLevelSettingsTask, bInitialActive) == 0x0006E0, "Member 'APyLevelSettingsTask::bInitialActive' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask, CheckPointID) == 0x0006E4, "Member 'APyLevelSettingsTask::CheckPointID' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSettingsTask;
+
+// PythonClass PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity
+// 0x00F0 (0x07E0 - 0x06F0)
+class APyLevelSettingsTask_Sensitivity final : public APyLevelSettingsTask
+{
+public:
+	class FText                                   Text_Sensitivity_Title;                            // 0x06E8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Horizontal_Sensitivity_Title;                 // 0x0700(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Vertical_Sensitivity_Title;                   // 0x0718(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Sensitivity_Type_Title;                       // 0x0730(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Sensitivity_Next;                             // 0x0748(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Sensitivity_Popup_Title;                      // 0x0760(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   Text_Sensitivity_Popup_Content;                    // 0x0778(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FKey                                   Next_Key;                                          // 0x0790(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Text_Sensitivity_GameMode_Title;                   // 0x07B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<struct FSensitivityConfig>             SensitivityConfigs;                                // 0x07C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void ShowTaskUIInternal();
+	void OnNextClicked();
+	void OnLeftClicked();
+	void OnRightClicked();
+	void Complete();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyLevelSettingsTask_Sensitivity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSettingsTask_Sensitivity")
+	}
+	static class APyLevelSettingsTask_Sensitivity* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyLevelSettingsTask_Sensitivity>();
+	}
+};
+DUMPER7_ASSERTS_APyLevelSettingsTask_Sensitivity;
 
 // PythonClass PyLevelSettingsTask.PyLevelSettingsTask_Shake
 // 0x01B0 (0x08A0 - 0x06F0)
@@ -115,78 +155,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSettingsTask_Shake">();
+		STATIC_CLASS_IMPL("PyLevelSettingsTask_Shake")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSettingsTask_Shake")
 	}
 	static class APyLevelSettingsTask_Shake* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSettingsTask_Shake>();
 	}
 };
-static_assert(alignof(APyLevelSettingsTask_Shake) == 0x000010, "Wrong alignment on APyLevelSettingsTask_Shake");
-static_assert(sizeof(APyLevelSettingsTask_Shake) == 0x0008A0, "Wrong size on APyLevelSettingsTask_Shake");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Title) == 0x0006E8, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Title_Small) == 0x000700, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Title_Small' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_ShakeIntensity_Title) == 0x000718, "Member 'APyLevelSettingsTask_Shake::Text_ShakeIntensity_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_OpenTrigger_Title) == 0x000730, "Member 'APyLevelSettingsTask_Shake::Text_OpenTrigger_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Select) == 0x000748, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Select' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Complete) == 0x000760, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Complete' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Popup_Title) == 0x000778, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Popup_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_Popup_Content) == 0x000790, "Member 'APyLevelSettingsTask_Shake::Text_Shake_Popup_Content' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_TriggerEffect_On) == 0x0007A8, "Member 'APyLevelSettingsTask_Shake::Text_Shake_TriggerEffect_On' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_TriggerEffect_Off) == 0x0007C0, "Member 'APyLevelSettingsTask_Shake::Text_Shake_TriggerEffect_Off' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_GameMode_Title) == 0x0007D8, "Member 'APyLevelSettingsTask_Shake::Text_Shake_GameMode_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Text_Shake_GameMode_Tips) == 0x0007F0, "Member 'APyLevelSettingsTask_Shake::Text_Shake_GameMode_Tips' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, SelectHero_Key) == 0x000808, "Member 'APyLevelSettingsTask_Shake::SelectHero_Key' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Complete_Key) == 0x000828, "Member 'APyLevelSettingsTask_Shake::Complete_Key' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, CanUseAbilityMap) == 0x000848, "Member 'APyLevelSettingsTask_Shake::CanUseAbilityMap' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Default_VibrationIntensity) == 0x000898, "Member 'APyLevelSettingsTask_Shake::Default_VibrationIntensity' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Shake, Default_TriggerEffect) == 0x00089C, "Member 'APyLevelSettingsTask_Shake::Default_TriggerEffect' has a wrong offset!");
-
-// PythonClass PyLevelSettingsTask.PyLevelSettingsTask_Sensitivity
-// 0x00F0 (0x07E0 - 0x06F0)
-class APyLevelSettingsTask_Sensitivity final : public APyLevelSettingsTask
-{
-public:
-	class FText                                   Text_Sensitivity_Title;                            // 0x06E8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Horizontal_Sensitivity_Title;                 // 0x0700(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Vertical_Sensitivity_Title;                   // 0x0718(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Sensitivity_Type_Title;                       // 0x0730(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Sensitivity_Next;                             // 0x0748(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Sensitivity_Popup_Title;                      // 0x0760(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   Text_Sensitivity_Popup_Content;                    // 0x0778(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FKey                                   Next_Key;                                          // 0x0790(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Text_Sensitivity_GameMode_Title;                   // 0x07B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<struct FSensitivityConfig>             SensitivityConfigs;                                // 0x07C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void ShowTaskUIInternal();
-	void OnNextClicked();
-	void OnLeftClicked();
-	void OnRightClicked();
-	void Complete();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyLevelSettingsTask_Sensitivity">();
-	}
-	static class APyLevelSettingsTask_Sensitivity* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyLevelSettingsTask_Sensitivity>();
-	}
-};
-static_assert(alignof(APyLevelSettingsTask_Sensitivity) == 0x000010, "Wrong alignment on APyLevelSettingsTask_Sensitivity");
-static_assert(sizeof(APyLevelSettingsTask_Sensitivity) == 0x0007E0, "Wrong size on APyLevelSettingsTask_Sensitivity");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_Title) == 0x0006E8, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Horizontal_Sensitivity_Title) == 0x000700, "Member 'APyLevelSettingsTask_Sensitivity::Text_Horizontal_Sensitivity_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Vertical_Sensitivity_Title) == 0x000718, "Member 'APyLevelSettingsTask_Sensitivity::Text_Vertical_Sensitivity_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_Type_Title) == 0x000730, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_Type_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_Next) == 0x000748, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_Next' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_Popup_Title) == 0x000760, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_Popup_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_Popup_Content) == 0x000778, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_Popup_Content' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Next_Key) == 0x000790, "Member 'APyLevelSettingsTask_Sensitivity::Next_Key' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, Text_Sensitivity_GameMode_Title) == 0x0007B0, "Member 'APyLevelSettingsTask_Sensitivity::Text_Sensitivity_GameMode_Title' has a wrong offset!");
-static_assert(offsetof(APyLevelSettingsTask_Sensitivity, SensitivityConfigs) == 0x0007C8, "Member 'APyLevelSettingsTask_Sensitivity::SensitivityConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSettingsTask_Shake;
 
 }
 

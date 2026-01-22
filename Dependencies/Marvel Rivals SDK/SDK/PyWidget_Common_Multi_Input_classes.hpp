@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Multi_Input.PyWidget_Common_Multi_Input
-// 0x0010 (0x0BD0 - 0x0BC0)
+// 0x0010 (0x0BE0 - 0x0BD0)
 class UPyWidget_Common_Multi_Input final : public UPyWidget_Common_Input_Base
 {
 public:
-	float                                         WheelScrollMultiplier;                             // 0x0BB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DoubleClickedInterval;                             // 0x0BBC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          JumpToEndWhenFocused;                              // 0x0BC0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLimitLines;                                      // 0x0BC1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BC2[0x2];                                      // 0x0BC2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LinesLimitMax;                                     // 0x0BC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelScrollMultiplier;                             // 0x0BC8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DoubleClickedInterval;                             // 0x0BCC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpToEndWhenFocused;                              // 0x0BD0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLimitLines;                                      // 0x0BD1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BD2[0x2];                                      // 0x0BD2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LinesLimitMax;                                     // 0x0BD4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,20 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Multi_Input">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Multi_Input")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Multi_Input")
 	}
 	static class UPyWidget_Common_Multi_Input* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Multi_Input>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Multi_Input) == 0x000010, "Wrong alignment on UPyWidget_Common_Multi_Input");
-static_assert(sizeof(UPyWidget_Common_Multi_Input) == 0x000BD0, "Wrong size on UPyWidget_Common_Multi_Input");
-static_assert(offsetof(UPyWidget_Common_Multi_Input, WheelScrollMultiplier) == 0x000BB8, "Member 'UPyWidget_Common_Multi_Input::WheelScrollMultiplier' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Multi_Input, DoubleClickedInterval) == 0x000BBC, "Member 'UPyWidget_Common_Multi_Input::DoubleClickedInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Multi_Input, JumpToEndWhenFocused) == 0x000BC0, "Member 'UPyWidget_Common_Multi_Input::JumpToEndWhenFocused' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Multi_Input, IsLimitLines) == 0x000BC1, "Member 'UPyWidget_Common_Multi_Input::IsLimitLines' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Multi_Input, LinesLimitMax) == 0x000BC4, "Member 'UPyWidget_Common_Multi_Input::LinesLimitMax' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Multi_Input;
 
 }
 

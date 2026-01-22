@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_FriendsEntry.PyWidget_FriendsEntry
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_FriendsEntry final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Img_Offline;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Online;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Leave;                                         // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Team;                                          // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Busy;                                          // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Settlement;                                    // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                GuideTips;                                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Img_Offline;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Online;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Leave;                                         // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Team;                                          // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Busy;                                          // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Settlement;                                    // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                GuideTips;                                         // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendsEntry">();
+		STATIC_CLASS_IMPL("PyWidget_FriendsEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendsEntry")
 	}
 	static class UPyWidget_FriendsEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendsEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendsEntry) == 0x000008, "Wrong alignment on UPyWidget_FriendsEntry");
-static_assert(sizeof(UPyWidget_FriendsEntry) == 0x0005F8, "Wrong size on UPyWidget_FriendsEntry");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Offline) == 0x0005C0, "Member 'UPyWidget_FriendsEntry::Img_Offline' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Online) == 0x0005C8, "Member 'UPyWidget_FriendsEntry::Img_Online' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Leave) == 0x0005D0, "Member 'UPyWidget_FriendsEntry::Img_Leave' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Team) == 0x0005D8, "Member 'UPyWidget_FriendsEntry::Img_Team' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Busy) == 0x0005E0, "Member 'UPyWidget_FriendsEntry::Img_Busy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, Img_Settlement) == 0x0005E8, "Member 'UPyWidget_FriendsEntry::Img_Settlement' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsEntry, GuideTips) == 0x0005F0, "Member 'UPyWidget_FriendsEntry::GuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_FriendsEntry;
 
 }
 

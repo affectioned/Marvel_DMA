@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AISelectTarget_SelectGroundPoint.AISelectTarget_SelectGroundPoint_C
-// 0x0000 (0x16D0 - 0x16D0)
+// 0x0000 (0x1A20 - 0x1A20)
 class UAISelectTarget_SelectGroundPoint_C final : public UPyAISelectTarget_SelectGroundPointBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_SelectGroundPoint_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_SelectGroundPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_SelectGroundPoint_C")
 	}
 	static class UAISelectTarget_SelectGroundPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_SelectGroundPoint_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_SelectGroundPoint_C) == 0x000010, "Wrong alignment on UAISelectTarget_SelectGroundPoint_C");
-static_assert(sizeof(UAISelectTarget_SelectGroundPoint_C) == 0x0016D0, "Wrong size on UAISelectTarget_SelectGroundPoint_C");
+DUMPER7_ASSERTS_UAISelectTarget_SelectGroundPoint_C;
 
 }
 

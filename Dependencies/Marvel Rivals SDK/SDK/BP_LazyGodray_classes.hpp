@@ -71,51 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LazyGodray_C">();
+		BP_STATIC_CLASS_IMPL("BP_LazyGodray_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LazyGodray_C")
 	}
 	static class ABP_LazyGodray_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_LazyGodray_C>();
 	}
 };
-static_assert(alignof(ABP_LazyGodray_C) == 0x000010, "Wrong alignment on ABP_LazyGodray_C");
-static_assert(sizeof(ABP_LazyGodray_C) == 0x000800, "Wrong size on ABP_LazyGodray_C");
-static_assert(offsetof(ABP_LazyGodray_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_LazyGodray_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, SpotLight) == 0x0006E8, "Member 'ABP_LazyGodray_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, spotlight_grp) == 0x0006F0, "Member 'ABP_LazyGodray_C::spotlight_grp' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, godray_card_SM) == 0x0006F8, "Member 'ABP_LazyGodray_C::godray_card_SM' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, lazygodray_FX_BP) == 0x000700, "Member 'ABP_LazyGodray_C::lazygodray_FX_BP' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Overall_Diameter_multiplier) == 0x000708, "Member 'ABP_LazyGodray_C::Overall_Diameter_multiplier' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Overall_Length_multiplier) == 0x000710, "Member 'ABP_LazyGodray_C::Overall_Length_multiplier' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Overall_Tint_color) == 0x000718, "Member 'ABP_LazyGodray_C::Overall_Tint_color' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Overall_intensity) == 0x000728, "Member 'ABP_LazyGodray_C::Overall_intensity' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Overall_contrast) == 0x000730, "Member 'ABP_LazyGodray_C::Overall_contrast' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, LightShaft_texture) == 0x000738, "Member 'ABP_LazyGodray_C::LightShaft_texture' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, LightShaft_strength) == 0x000740, "Member 'ABP_LazyGodray_C::LightShaft_strength' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, LightShaft_amount) == 0x000748, "Member 'ABP_LazyGodray_C::LightShaft_amount' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, LightShaft_length) == 0x000750, "Member 'ABP_LazyGodray_C::LightShaft_length' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_depth_fade_distance) == 0x000758, "Member 'ABP_LazyGodray_C::Volumetric_depth_fade_distance' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_fesnel_exponent) == 0x000760, "Member 'ABP_LazyGodray_C::Volumetric_fesnel_exponent' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_camera_fading_starting_distance) == 0x000768, "Member 'ABP_LazyGodray_C::Volumetric_camera_fading_starting_distance' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_camera_fading_transition_range) == 0x000770, "Member 'ABP_LazyGodray_C::Volumetric_camera_fading_transition_range' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_vertical_falloff_midpoint) == 0x000778, "Member 'ABP_LazyGodray_C::Volumetric_vertical_falloff_midpoint' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_vertical_falloff_exponent) == 0x000780, "Member 'ABP_LazyGodray_C::Volumetric_vertical_falloff_exponent' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_vertical_falloff_strength) == 0x000788, "Member 'ABP_LazyGodray_C::Volumetric_vertical_falloff_strength' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_cylindrical_masking_exponent) == 0x000790, "Member 'ABP_LazyGodray_C::Volumetric_cylindrical_masking_exponent' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, use_lightray_convergent) == 0x000798, "Member 'ABP_LazyGodray_C::use_lightray_convergent' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Volumetric_lightray_convergent_rate) == 0x0007A0, "Member 'ABP_LazyGodray_C::Volumetric_lightray_convergent_rate' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, enable_spotlight_component__cannot_be_toggled_during_runtime_if_not_Movable) == 0x0007A8, "Member 'ABP_LazyGodray_C::enable_spotlight_component__cannot_be_toggled_during_runtime_if_not_Movable' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_Mobility) == 0x0007A9, "Member 'ABP_LazyGodray_C::Spotlight_Mobility' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_intensity_in_Lumens) == 0x0007B0, "Member 'ABP_LazyGodray_C::Spotlight_intensity_in_Lumens' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_source_radius) == 0x0007B8, "Member 'ABP_LazyGodray_C::Spotlight_source_radius' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_attenuation_offset) == 0x0007C0, "Member 'ABP_LazyGodray_C::Spotlight_attenuation_offset' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_outer_cone_angle_offset) == 0x0007C8, "Member 'ABP_LazyGodray_C::Spotlight_outer_cone_angle_offset' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Spotlight_inner_cone_angle) == 0x0007D0, "Member 'ABP_LazyGodray_C::Spotlight_inner_cone_angle' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Smoke_intensity) == 0x0007D8, "Member 'ABP_LazyGodray_C::Smoke_intensity' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Smoke_texture) == 0x0007E0, "Member 'ABP_LazyGodray_C::Smoke_texture' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Smoke_texture_scale) == 0x0007E8, "Member 'ABP_LazyGodray_C::Smoke_texture_scale' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Smoke_panning_speedX) == 0x0007F0, "Member 'ABP_LazyGodray_C::Smoke_panning_speedX' has a wrong offset!");
-static_assert(offsetof(ABP_LazyGodray_C, Smoke_panning_speedY) == 0x0007F8, "Member 'ABP_LazyGodray_C::Smoke_panning_speedY' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_LazyGodray_C;
 
 }
 

@@ -23,15 +23,18 @@ class UEQT_KeepDistance_BP_C final : public UEnvQueryTest_KeepDistance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQT_KeepDistance_BP_C">();
+		BP_STATIC_CLASS_IMPL("EQT_KeepDistance_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQT_KeepDistance_BP_C")
 	}
 	static class UEQT_KeepDistance_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQT_KeepDistance_BP_C>();
 	}
 };
-static_assert(alignof(UEQT_KeepDistance_BP_C) == 0x000008, "Wrong alignment on UEQT_KeepDistance_BP_C");
-static_assert(sizeof(UEQT_KeepDistance_BP_C) == 0x000290, "Wrong size on UEQT_KeepDistance_BP_C");
+DUMPER7_ASSERTS_UEQT_KeepDistance_BP_C;
 
 }
 

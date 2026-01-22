@@ -36,6 +36,44 @@ void UPyWidget_M2201MainPanel::OnInitialized()
 }
 
 
+// PythonFunction PyWidget_M2201MainPanel.PyWidget_M2201MainPanel.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_M2201MainPanel::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_M2201MainPanel", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_M2201MainPanel.PyWidget_M2201MainPanel.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_M2201MainPanel::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_M2201MainPanel", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_M2201MainPanel.PyWidget_M2201MainPanel.OnReceiveInputKey
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

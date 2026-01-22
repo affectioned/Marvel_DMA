@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200301.PyAbility_200301
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPyAbility_200301 : public UMarvelLevelKrakoaPortalAbility
 {
 public:
-	class APyLevelPortalBase*                     CurrentPortalBase;                                 // 0x29F0(0x0008)(Net, ZeroConstructor, Transient, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyLevelPortalBase* Last, class APyLevelPortalBase* Current)> CurrentPortalChanged; // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class APyLevelPortalBase*                     CurrentPortalBase;                                 // 0x2A40(0x0008)(Net, ZeroConstructor, Transient, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyLevelPortalBase* Last, class APyLevelPortalBase* Current)> CurrentPortalChanged; // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -39,17 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200301">();
+		STATIC_CLASS_IMPL("PyAbility_200301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200301")
 	}
 	static class UPyAbility_200301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200301>();
 	}
 };
-static_assert(alignof(UPyAbility_200301) == 0x000008, "Wrong alignment on UPyAbility_200301");
-static_assert(sizeof(UPyAbility_200301) == 0x002A08, "Wrong size on UPyAbility_200301");
-static_assert(offsetof(UPyAbility_200301, CurrentPortalBase) == 0x0029F0, "Member 'UPyAbility_200301::CurrentPortalBase' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200301, CurrentPortalChanged) == 0x0029F8, "Member 'UPyAbility_200301::CurrentPortalChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200301;
 
 }
 

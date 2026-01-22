@@ -23,15 +23,18 @@ class UAIMoveControl_MantisUltimate_C final : public UAIAbilityMoveControlLogic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_MantisUltimate_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_MantisUltimate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_MantisUltimate_C")
 	}
 	static class UAIMoveControl_MantisUltimate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_MantisUltimate_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_MantisUltimate_C) == 0x000008, "Wrong alignment on UAIMoveControl_MantisUltimate_C");
-static_assert(sizeof(UAIMoveControl_MantisUltimate_C) == 0x0000B8, "Wrong size on UAIMoveControl_MantisUltimate_C");
+DUMPER7_ASSERTS_UAIMoveControl_MantisUltimate_C;
 
 }
 

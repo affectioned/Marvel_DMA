@@ -21,9 +21,7 @@ struct Ability_105224_BP_C_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_105224_BP_C_CanActivate) == 0x000001, "Wrong alignment on Ability_105224_BP_C_CanActivate");
-static_assert(sizeof(Ability_105224_BP_C_CanActivate) == 0x000001, "Wrong size on Ability_105224_BP_C_CanActivate");
-static_assert(offsetof(Ability_105224_BP_C_CanActivate, ReturnValue) == 0x000000, "Member 'Ability_105224_BP_C_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105224_BP_C_CanActivate;
 
 // Function Ability_105224_BP.Ability_105224_BP_C.ExecuteUbergraph_Ability_105224_BP
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP) == 0x000004, "Wrong alignment on Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP");
-static_assert(sizeof(Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP) == 0x000004, "Wrong size on Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP");
-static_assert(offsetof(Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP, EntryPoint) == 0x000000, "Member 'Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105224_BP_C_ExecuteUbergraph_Ability_105224_BP;
 
 }
 

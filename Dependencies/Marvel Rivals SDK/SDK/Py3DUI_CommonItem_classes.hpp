@@ -47,28 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Py3DUI_CommonItem">();
+		STATIC_CLASS_IMPL("Py3DUI_CommonItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Py3DUI_CommonItem")
 	}
 	static class APy3DUI_CommonItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APy3DUI_CommonItem>();
 	}
 };
-static_assert(alignof(APy3DUI_CommonItem) == 0x000010, "Wrong alignment on APy3DUI_CommonItem");
-static_assert(sizeof(APy3DUI_CommonItem) == 0x000780, "Wrong size on APy3DUI_CommonItem");
-static_assert(offsetof(APy3DUI_CommonItem, MaximumRotationAngle) == 0x0006E0, "Member 'APy3DUI_CommonItem::MaximumRotationAngle' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, RotationInterpSpeed) == 0x0006E4, "Member 'APy3DUI_CommonItem::RotationInterpSpeed' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, MaxAnglePerSecond) == 0x0006E8, "Member 'APy3DUI_CommonItem::MaxAnglePerSecond' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, ActorRotationSpeed) == 0x0006EC, "Member 'APy3DUI_CommonItem::ActorRotationSpeed' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, Curve_InterpSpeed) == 0x0006F0, "Member 'APy3DUI_CommonItem::Curve_InterpSpeed' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, SprayAnimTime) == 0x0006F8, "Member 'APy3DUI_CommonItem::SprayAnimTime' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, MouseSensitivity) == 0x0006FC, "Member 'APy3DUI_CommonItem::MouseSensitivity' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, AkEvent_ShowSpray) == 0x000700, "Member 'APy3DUI_CommonItem::AkEvent_ShowSpray' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, AkEvent_ShowDynamicSpray) == 0x000708, "Member 'APy3DUI_CommonItem::AkEvent_ShowDynamicSpray' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, ItemLightBP) == 0x000710, "Member 'APy3DUI_CommonItem::ItemLightBP' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, ManualFocusDistance) == 0x000760, "Member 'APy3DUI_CommonItem::ManualFocusDistance' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, SpraySequencesAnimCurve) == 0x000768, "Member 'APy3DUI_CommonItem::SpraySequencesAnimCurve' has a wrong offset!");
-static_assert(offsetof(APy3DUI_CommonItem, AkEvent_ExclusiveShowSpray) == 0x000770, "Member 'APy3DUI_CommonItem::AkEvent_ExclusiveShowSpray' has a wrong offset!");
+DUMPER7_ASSERTS_APy3DUI_CommonItem;
 
 }
 

@@ -23,15 +23,18 @@ class UAIAbilityEixiSatge_10418201_C final : public UAIAbilityExitStageLogic_Bin
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityEixiSatge_10418201_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityEixiSatge_10418201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityEixiSatge_10418201_C")
 	}
 	static class UAIAbilityEixiSatge_10418201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityEixiSatge_10418201_C>();
 	}
 };
-static_assert(alignof(UAIAbilityEixiSatge_10418201_C) == 0x000008, "Wrong alignment on UAIAbilityEixiSatge_10418201_C");
-static_assert(sizeof(UAIAbilityEixiSatge_10418201_C) == 0x000050, "Wrong size on UAIAbilityEixiSatge_10418201_C");
+DUMPER7_ASSERTS_UAIAbilityEixiSatge_10418201_C;
 
 }
 

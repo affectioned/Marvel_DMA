@@ -3951,7 +3951,7 @@ void UNiagaraComponent::SetNiagaraVariableVec4(const class FString& InVariableNa
 
 
 // Function Niagara.NiagaraComponent.SetOcclusionQueryMode
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, Native, Public, BlueprintCallable)
 // Parameters:
 // ENiagaraOcclusionQueryMode              Mode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 

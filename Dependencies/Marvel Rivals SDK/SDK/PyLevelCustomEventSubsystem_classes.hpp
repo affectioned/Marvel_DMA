@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyLevelCustomEventSubsystem.PyLevelCustomEventSubsystem
-// 0x0000 (0x0038 - 0x0038)
+// 0x0000 (0x0040 - 0x0040)
 class UPyLevelCustomEventSubsystem : public ULevelCustomEventSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelCustomEventSubsystem">();
+		STATIC_CLASS_IMPL("PyLevelCustomEventSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelCustomEventSubsystem")
 	}
 	static class UPyLevelCustomEventSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelCustomEventSubsystem>();
 	}
 };
-static_assert(alignof(UPyLevelCustomEventSubsystem) == 0x000008, "Wrong alignment on UPyLevelCustomEventSubsystem");
-static_assert(sizeof(UPyLevelCustomEventSubsystem) == 0x000038, "Wrong size on UPyLevelCustomEventSubsystem");
+DUMPER7_ASSERTS_UPyLevelCustomEventSubsystem;
 
 }
 

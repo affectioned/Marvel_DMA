@@ -23,15 +23,18 @@ class UPyWC_DeathMatch_Indicator final : public UMarvelWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_DeathMatch_Indicator">();
+		STATIC_CLASS_IMPL("PyWC_DeathMatch_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_DeathMatch_Indicator")
 	}
 	static class UPyWC_DeathMatch_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_DeathMatch_Indicator>();
 	}
 };
-static_assert(alignof(UPyWC_DeathMatch_Indicator) == 0x000010, "Wrong alignment on UPyWC_DeathMatch_Indicator");
-static_assert(sizeof(UPyWC_DeathMatch_Indicator) == 0x000AE0, "Wrong size on UPyWC_DeathMatch_Indicator");
+DUMPER7_ASSERTS_UPyWC_DeathMatch_Indicator;
 
 }
 

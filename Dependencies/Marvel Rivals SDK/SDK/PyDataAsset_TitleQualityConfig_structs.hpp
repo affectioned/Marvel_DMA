@@ -35,20 +35,7 @@ public:
 	struct FLinearColor                           LightBgFontColor;                                  // 0x0094(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           DarkBgFontColor;                                   // 0x00A4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTitleColorStruct) == 0x000004, "Wrong alignment on FTitleColorStruct");
-static_assert(sizeof(FTitleColorStruct) == 0x0000B4, "Wrong size on FTitleColorStruct");
-static_assert(offsetof(FTitleColorStruct, UseMatColor) == 0x000000, "Member 'FTitleColorStruct::UseMatColor' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LightBgMatColor1) == 0x000004, "Member 'FTitleColorStruct::LightBgMatColor1' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LightBgMatColor2) == 0x000014, "Member 'FTitleColorStruct::LightBgMatColor2' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LightBgMatColor3) == 0x000024, "Member 'FTitleColorStruct::LightBgMatColor3' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, DarkBgMatColor1) == 0x000034, "Member 'FTitleColorStruct::DarkBgMatColor1' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, DarkBgMatColor2) == 0x000044, "Member 'FTitleColorStruct::DarkBgMatColor2' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, DarkBgMatColor3) == 0x000054, "Member 'FTitleColorStruct::DarkBgMatColor3' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LockMatColor1) == 0x000064, "Member 'FTitleColorStruct::LockMatColor1' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LockMatColor2) == 0x000074, "Member 'FTitleColorStruct::LockMatColor2' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LockMatColor3) == 0x000084, "Member 'FTitleColorStruct::LockMatColor3' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, LightBgFontColor) == 0x000094, "Member 'FTitleColorStruct::LightBgFontColor' has a wrong offset!");
-static_assert(offsetof(FTitleColorStruct, DarkBgFontColor) == 0x0000A4, "Member 'FTitleColorStruct::DarkBgFontColor' has a wrong offset!");
+DUMPER7_ASSERTS_FTitleColorStruct;
 
 }
 

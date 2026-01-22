@@ -10,32 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Hero_1035_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_103571.PyScope_10357101
-// 0x0000 (0x1B10 - 0x1B10)
+// 0x0000 (0x1BD0 - 0x1BD0)
 class APyScope_10357101 final : public AScope_10357101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10357101">();
+		STATIC_CLASS_IMPL("PyScope_10357101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10357101")
 	}
 	static class APyScope_10357101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10357101>();
 	}
 };
-static_assert(alignof(APyScope_10357101) == 0x000010, "Wrong alignment on APyScope_10357101");
-static_assert(sizeof(APyScope_10357101) == 0x001B10, "Wrong size on APyScope_10357101");
+DUMPER7_ASSERTS_APyScope_10357101;
 
 // PythonClass PyAbility_103571.PyAbility_103571
-// 0x0000 (0x2A28 - 0x2A28)
+// 0x0000 (0x2A78 - 0x2A78)
 class UPyAbility_103571 : public UAbility_103571
 {
 public:
@@ -61,15 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103571">();
+		STATIC_CLASS_IMPL("PyAbility_103571")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103571")
 	}
 	static class UPyAbility_103571* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103571>();
 	}
 };
-static_assert(alignof(UPyAbility_103571) == 0x000008, "Wrong alignment on UPyAbility_103571");
-static_assert(sizeof(UPyAbility_103571) == 0x002A28, "Wrong size on UPyAbility_103571");
+DUMPER7_ASSERTS_UPyAbility_103571;
 
 }
 

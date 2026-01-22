@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_Control_V2">();
+		STATIC_CLASS_IMPL("PyWC_Control_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_Control_V2")
 	}
 	static class UPyWC_Control_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_Control_V2>();
 	}
 };
-static_assert(alignof(UPyWC_Control_V2) == 0x000010, "Wrong alignment on UPyWC_Control_V2");
-static_assert(sizeof(UPyWC_Control_V2) == 0x000AF0, "Wrong size on UPyWC_Control_V2");
-static_assert(offsetof(UPyWC_Control_V2, ArrowVisibleRange) == 0x000AE0, "Member 'UPyWC_Control_V2::ArrowVisibleRange' has a wrong offset!");
-static_assert(offsetof(UPyWC_Control_V2, SquaredArrowVisibleRange) == 0x000AE4, "Member 'UPyWC_Control_V2::SquaredArrowVisibleRange' has a wrong offset!");
-static_assert(offsetof(UPyWC_Control_V2, DistanceCheckIntervalSecond) == 0x000AE8, "Member 'UPyWC_Control_V2::DistanceCheckIntervalSecond' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_Control_V2;
 
 }
 

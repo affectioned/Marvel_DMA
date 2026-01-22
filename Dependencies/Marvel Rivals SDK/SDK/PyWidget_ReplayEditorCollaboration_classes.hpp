@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ReplayEditorCollaboration.PyWidget_ReplayEditorCollaboration
-// 0x0020 (0x0478 - 0x0458)
+// 0x0020 (0x0458 - 0x0438)
 class UPyWidget_ReplayEditorCollaboration final : public UMarvelSimpleUserWidget
 {
 public:
-	struct FLinearColor                           AllyColor;                                         // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ReplayEditorCollaboration">();
+		STATIC_CLASS_IMPL("PyWidget_ReplayEditorCollaboration")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ReplayEditorCollaboration")
 	}
 	static class UPyWidget_ReplayEditorCollaboration* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ReplayEditorCollaboration>();
 	}
 };
-static_assert(alignof(UPyWidget_ReplayEditorCollaboration) == 0x000008, "Wrong alignment on UPyWidget_ReplayEditorCollaboration");
-static_assert(sizeof(UPyWidget_ReplayEditorCollaboration) == 0x000478, "Wrong size on UPyWidget_ReplayEditorCollaboration");
-static_assert(offsetof(UPyWidget_ReplayEditorCollaboration, AllyColor) == 0x000458, "Member 'UPyWidget_ReplayEditorCollaboration::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ReplayEditorCollaboration, EnemyColor) == 0x000468, "Member 'UPyWidget_ReplayEditorCollaboration::EnemyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ReplayEditorCollaboration;
 
 }
 

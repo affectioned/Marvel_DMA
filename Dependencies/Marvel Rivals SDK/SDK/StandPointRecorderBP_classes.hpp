@@ -23,15 +23,18 @@ class UStandPointRecorderBP_C final : public UStandPointRecorder
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StandPointRecorderBP_C">();
+		BP_STATIC_CLASS_IMPL("StandPointRecorderBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StandPointRecorderBP_C")
 	}
 	static class UStandPointRecorderBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStandPointRecorderBP_C>();
 	}
 };
-static_assert(alignof(UStandPointRecorderBP_C) == 0x000008, "Wrong alignment on UStandPointRecorderBP_C");
-static_assert(sizeof(UStandPointRecorderBP_C) == 0x000080, "Wrong size on UStandPointRecorderBP_C");
+DUMPER7_ASSERTS_UStandPointRecorderBP_C;
 
 }
 

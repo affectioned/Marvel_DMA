@@ -24,9 +24,7 @@ struct PyAbility_102751_CanActivateForSignal final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102751_CanActivateForSignal) == 0x000001, "Wrong alignment on PyAbility_102751_CanActivateForSignal");
-static_assert(sizeof(PyAbility_102751_CanActivateForSignal) == 0x000001, "Wrong size on PyAbility_102751_CanActivateForSignal");
-static_assert(offsetof(PyAbility_102751_CanActivateForSignal, ReturnValue) == 0x000000, "Member 'PyAbility_102751_CanActivateForSignal::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102751_CanActivateForSignal;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_WhileActive) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_10275101_WhileActive");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_WhileActive) == 0x0001E0, "Wrong size on PyCue_Summoner_Loop_10275101_WhileActive");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_10275101_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Summoner_Loop_10275101_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_WhileActive;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.OnWallActivateStateChange_ThreadSafe
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +44,7 @@ struct PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe final
 public:
 	bool                                          bNewState;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe) == 0x000001, "Wrong alignment on PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe) == 0x000001, "Wrong size on PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe, bNewState) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe::bNewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_OnWallActivateStateChange_ThreadSafe;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.OnWallDefenceApply
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +53,7 @@ struct PyCue_Summoner_Loop_10275101_OnWallDefenceApply final
 public:
 	struct FWallDefendNotify                      NewWallDefendNotify;                               // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_OnWallDefenceApply) == 0x000004, "Wrong alignment on PyCue_Summoner_Loop_10275101_OnWallDefenceApply");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_OnWallDefenceApply) == 0x000008, "Wrong size on PyCue_Summoner_Loop_10275101_OnWallDefenceApply");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_OnWallDefenceApply, NewWallDefendNotify) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_OnWallDefenceApply::NewWallDefendNotify' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_OnWallDefenceApply;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.OnWallActivateStateChangeForWidgetUpdate
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +62,7 @@ struct PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate fin
 public:
 	bool                                          bNewState;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate) == 0x000001, "Wrong alignment on PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate) == 0x000001, "Wrong size on PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate, bNewState) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate::bNewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_OnWallActivateStateChangeForWidgetUpdate;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.OnWallDefenceApplyForWidgetUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -83,9 +71,7 @@ struct PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate final
 public:
 	int32                                         LastAttackActorUID;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate) == 0x000004, "Wrong alignment on PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate) == 0x000004, "Wrong size on PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate, LastAttackActorUID) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate::LastAttackActorUID' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_OnWallDefenceApplyForWidgetUpdate;
 
 // PythonFunction PyAbility_102751.PyCue_Summoner_Loop_10275101.GetUIWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -94,9 +80,7 @@ struct PyCue_Summoner_Loop_10275101_GetUIWidget final
 public:
 	class UMarvelUserWidget*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_10275101_GetUIWidget) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_10275101_GetUIWidget");
-static_assert(sizeof(PyCue_Summoner_Loop_10275101_GetUIWidget) == 0x000008, "Wrong size on PyCue_Summoner_Loop_10275101_GetUIWidget");
-static_assert(offsetof(PyCue_Summoner_Loop_10275101_GetUIWidget, ReturnValue) == 0x000000, "Member 'PyCue_Summoner_Loop_10275101_GetUIWidget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_10275101_GetUIWidget;
 
 // PythonFunction PyAbility_102751.PyUIController_102751.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -107,10 +91,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_102751_SetAbility) == 0x000008, "Wrong alignment on PyUIController_102751_SetAbility");
-static_assert(sizeof(PyUIController_102751_SetAbility) == 0x000010, "Wrong size on PyUIController_102751_SetAbility");
-static_assert(offsetof(PyUIController_102751_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_102751_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_102751_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_102751_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_102751_SetAbility;
 
 }
 

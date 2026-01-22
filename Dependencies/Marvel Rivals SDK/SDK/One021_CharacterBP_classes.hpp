@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1021_CharacterBP.1021_CharacterBP_C
-// 0x0010 (0x22E0 - 0x22D0)
+// 0x0010 (0x23F0 - 0x23E0)
 class AOne021_CharacterBP_C final : public APyHawkeyeCharacter
 {
 public:
-	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x22D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalInteractionComponent*          PhysicalInteraction;                               // 0x23E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1021_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1021_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1021_CharacterBP_C")
 	}
 	static class AOne021_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne021_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne021_CharacterBP_C) == 0x000010, "Wrong alignment on AOne021_CharacterBP_C");
-static_assert(sizeof(AOne021_CharacterBP_C) == 0x0022E0, "Wrong size on AOne021_CharacterBP_C");
-static_assert(offsetof(AOne021_CharacterBP_C, PhysicalInteraction) == 0x0022D0, "Member 'AOne021_CharacterBP_C::PhysicalInteraction' has a wrong offset!");
+DUMPER7_ASSERTS_AOne021_CharacterBP_C;
 
 }
 

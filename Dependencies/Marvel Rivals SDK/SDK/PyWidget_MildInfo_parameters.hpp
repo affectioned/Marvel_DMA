@@ -23,9 +23,7 @@ struct PyWidget_MildInfo_AddHintData final
 public:
 	struct FCueHintData                           InHintData;                                        // 0x0000(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_MildInfo_AddHintData) == 0x000008, "Wrong alignment on PyWidget_MildInfo_AddHintData");
-static_assert(sizeof(PyWidget_MildInfo_AddHintData) == 0x000098, "Wrong size on PyWidget_MildInfo_AddHintData");
-static_assert(offsetof(PyWidget_MildInfo_AddHintData, InHintData) == 0x000000, "Member 'PyWidget_MildInfo_AddHintData::InHintData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MildInfo_AddHintData;
 
 // PythonFunction PyWidget_MildInfo.PyWidget_MildInfo.RemoveHintData
 // 0x0098 (0x0098 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_MildInfo_RemoveHintData final
 public:
 	struct FCueHintData                           InHintData;                                        // 0x0000(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_MildInfo_RemoveHintData) == 0x000008, "Wrong alignment on PyWidget_MildInfo_RemoveHintData");
-static_assert(sizeof(PyWidget_MildInfo_RemoveHintData) == 0x000098, "Wrong size on PyWidget_MildInfo_RemoveHintData");
-static_assert(offsetof(PyWidget_MildInfo_RemoveHintData, InHintData) == 0x000000, "Member 'PyWidget_MildInfo_RemoveHintData::InHintData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MildInfo_RemoveHintData;
 
 // PythonFunction PyWidget_MildInfo.PyWidget_MildInfo.SetHintData
 // 0x0098 (0x0098 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_MildInfo_SetHintData final
 public:
 	struct FCueHintData                           InHintData;                                        // 0x0000(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_MildInfo_SetHintData) == 0x000008, "Wrong alignment on PyWidget_MildInfo_SetHintData");
-static_assert(sizeof(PyWidget_MildInfo_SetHintData) == 0x000098, "Wrong size on PyWidget_MildInfo_SetHintData");
-static_assert(offsetof(PyWidget_MildInfo_SetHintData, InHintData) == 0x000000, "Member 'PyWidget_MildInfo_SetHintData::InHintData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MildInfo_SetHintData;
 
 // PythonFunction PyWidget_MildInfo.PyWidget_MildInfo.SetHintText
 // 0x0018 (0x0018 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_MildInfo_SetHintText final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_MildInfo_SetHintText) == 0x000008, "Wrong alignment on PyWidget_MildInfo_SetHintText");
-static_assert(sizeof(PyWidget_MildInfo_SetHintText) == 0x000018, "Wrong size on PyWidget_MildInfo_SetHintText");
-static_assert(offsetof(PyWidget_MildInfo_SetHintText, InText) == 0x000000, "Member 'PyWidget_MildInfo_SetHintText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MildInfo_SetHintText;
 
 // PythonFunction PyWidget_MildInfo.PyWidget_MildInfo.SetHintIcon
 // 0x0030 (0x0030 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_MildInfo_SetHintIcon final
 public:
 	TSoftObjectPtr<class UTexture2D>              InIcon;                                            // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MildInfo_SetHintIcon) == 0x000008, "Wrong alignment on PyWidget_MildInfo_SetHintIcon");
-static_assert(sizeof(PyWidget_MildInfo_SetHintIcon) == 0x000030, "Wrong size on PyWidget_MildInfo_SetHintIcon");
-static_assert(offsetof(PyWidget_MildInfo_SetHintIcon, InIcon) == 0x000000, "Member 'PyWidget_MildInfo_SetHintIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MildInfo_SetHintIcon;
 
 }
 

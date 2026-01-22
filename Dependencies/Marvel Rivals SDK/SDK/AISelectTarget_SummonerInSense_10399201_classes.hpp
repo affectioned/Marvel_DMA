@@ -23,15 +23,18 @@ class UAISelectTarget_SummonerInSense_10399201_C final : public UPyAISelectTarge
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_SummonerInSense_10399201_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_SummonerInSense_10399201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_SummonerInSense_10399201_C")
 	}
 	static class UAISelectTarget_SummonerInSense_10399201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_SummonerInSense_10399201_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_SummonerInSense_10399201_C) == 0x000008, "Wrong alignment on UAISelectTarget_SummonerInSense_10399201_C");
-static_assert(sizeof(UAISelectTarget_SummonerInSense_10399201_C) == 0x000078, "Wrong size on UAISelectTarget_SummonerInSense_10399201_C");
+DUMPER7_ASSERTS_UAISelectTarget_SummonerInSense_10399201_C;
 
 }
 

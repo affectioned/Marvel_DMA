@@ -18,34 +18,34 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ConsoleNoviceSettings.PyWidget_ConsoleNoviceSettings
-// 0x0150 (0x0710 - 0x05C0)
+// 0x0150 (0x0718 - 0x05C8)
 class UPyWidget_ConsoleNoviceSettings final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           Input_Next;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Input_SelectHero;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Input_Up;                                          // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Input_Down;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Input_Left;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Input_Right;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   Up_Key;                                            // 0x05F0(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   Down_Key;                                          // 0x0610(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   Left_Key;                                          // 0x0630(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   Right_Key;                                         // 0x0650(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ItemChanged;                               // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_MultiSelectChanged;                        // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_SwitchOptionsOn;                           // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_SwitchOptionsOff;                          // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_NextBtnClick;                              // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OptionsValueChanged;                       // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnNextClicked;                                     // 0x06A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSelectHeroClicked;                               // 0x06B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnUpClicked;                                       // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDownClicked;                                     // 0x06D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnLeftClicked;                                     // 0x06E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnRightClicked;                                    // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnConfirmClicked;                                  // 0x0700(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           Input_Next;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Input_SelectHero;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Input_Up;                                          // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Input_Down;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Input_Left;                                        // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Input_Right;                                       // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Up_Key;                                            // 0x05F8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Down_Key;                                          // 0x0618(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Left_Key;                                          // 0x0638(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Right_Key;                                         // 0x0658(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ItemChanged;                               // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_MultiSelectChanged;                        // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_SwitchOptionsOn;                           // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_SwitchOptionsOff;                          // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_NextBtnClick;                              // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OptionsValueChanged;                       // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnNextClicked;                                     // 0x06A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSelectHeroClicked;                               // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnUpClicked;                                       // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDownClicked;                                     // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnLeftClicked;                                     // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnRightClicked;                                    // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnConfirmClicked;                                  // 0x0708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -55,38 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ConsoleNoviceSettings">();
+		STATIC_CLASS_IMPL("PyWidget_ConsoleNoviceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ConsoleNoviceSettings")
 	}
 	static class UPyWidget_ConsoleNoviceSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ConsoleNoviceSettings>();
 	}
 };
-static_assert(alignof(UPyWidget_ConsoleNoviceSettings) == 0x000008, "Wrong alignment on UPyWidget_ConsoleNoviceSettings");
-static_assert(sizeof(UPyWidget_ConsoleNoviceSettings) == 0x000710, "Wrong size on UPyWidget_ConsoleNoviceSettings");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_Next) == 0x0005C0, "Member 'UPyWidget_ConsoleNoviceSettings::Input_Next' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_SelectHero) == 0x0005C8, "Member 'UPyWidget_ConsoleNoviceSettings::Input_SelectHero' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_Up) == 0x0005D0, "Member 'UPyWidget_ConsoleNoviceSettings::Input_Up' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_Down) == 0x0005D8, "Member 'UPyWidget_ConsoleNoviceSettings::Input_Down' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_Left) == 0x0005E0, "Member 'UPyWidget_ConsoleNoviceSettings::Input_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Input_Right) == 0x0005E8, "Member 'UPyWidget_ConsoleNoviceSettings::Input_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Up_Key) == 0x0005F0, "Member 'UPyWidget_ConsoleNoviceSettings::Up_Key' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Down_Key) == 0x000610, "Member 'UPyWidget_ConsoleNoviceSettings::Down_Key' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Left_Key) == 0x000630, "Member 'UPyWidget_ConsoleNoviceSettings::Left_Key' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, Right_Key) == 0x000650, "Member 'UPyWidget_ConsoleNoviceSettings::Right_Key' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_ItemChanged) == 0x000670, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_ItemChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_MultiSelectChanged) == 0x000678, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_MultiSelectChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_SwitchOptionsOn) == 0x000680, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_SwitchOptionsOn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_SwitchOptionsOff) == 0x000688, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_SwitchOptionsOff' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_NextBtnClick) == 0x000690, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_NextBtnClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, AkEvent_OptionsValueChanged) == 0x000698, "Member 'UPyWidget_ConsoleNoviceSettings::AkEvent_OptionsValueChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnNextClicked) == 0x0006A0, "Member 'UPyWidget_ConsoleNoviceSettings::OnNextClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnSelectHeroClicked) == 0x0006B0, "Member 'UPyWidget_ConsoleNoviceSettings::OnSelectHeroClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnUpClicked) == 0x0006C0, "Member 'UPyWidget_ConsoleNoviceSettings::OnUpClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnDownClicked) == 0x0006D0, "Member 'UPyWidget_ConsoleNoviceSettings::OnDownClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnLeftClicked) == 0x0006E0, "Member 'UPyWidget_ConsoleNoviceSettings::OnLeftClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnRightClicked) == 0x0006F0, "Member 'UPyWidget_ConsoleNoviceSettings::OnRightClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ConsoleNoviceSettings, OnConfirmClicked) == 0x000700, "Member 'UPyWidget_ConsoleNoviceSettings::OnConfirmClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ConsoleNoviceSettings;
 
 }
 

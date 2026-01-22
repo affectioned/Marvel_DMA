@@ -23,9 +23,7 @@ struct AbilityBlend_C_ExecuteUbergraph_AbilityBlend final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilityBlend_C_ExecuteUbergraph_AbilityBlend) == 0x000004, "Wrong alignment on AbilityBlend_C_ExecuteUbergraph_AbilityBlend");
-static_assert(sizeof(AbilityBlend_C_ExecuteUbergraph_AbilityBlend) == 0x000004, "Wrong size on AbilityBlend_C_ExecuteUbergraph_AbilityBlend");
-static_assert(offsetof(AbilityBlend_C_ExecuteUbergraph_AbilityBlend, EntryPoint) == 0x000000, "Member 'AbilityBlend_C_ExecuteUbergraph_AbilityBlend::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityBlend_C_ExecuteUbergraph_AbilityBlend;
 
 // Function AbilityBlend.AbilityBlend_C.AnimGraph
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(AbilityBlend_C_AnimGraph) == 0x000008, "Wrong alignment on AbilityBlend_C_AnimGraph");
-static_assert(sizeof(AbilityBlend_C_AnimGraph) == 0x000020, "Wrong size on AbilityBlend_C_AnimGraph");
-static_assert(offsetof(AbilityBlend_C_AnimGraph, InPose) == 0x000000, "Member 'AbilityBlend_C_AnimGraph::InPose' has a wrong offset!");
-static_assert(offsetof(AbilityBlend_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'AbilityBlend_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityBlend_C_AnimGraph;
 
 }
 

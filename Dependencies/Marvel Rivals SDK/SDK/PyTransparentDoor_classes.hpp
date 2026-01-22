@@ -39,17 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTransparentDoor">();
+		STATIC_CLASS_IMPL("PyTransparentDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTransparentDoor")
 	}
 	static class APyTransparentDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTransparentDoor>();
 	}
 };
-static_assert(alignof(APyTransparentDoor) == 0x000010, "Wrong alignment on APyTransparentDoor");
-static_assert(sizeof(APyTransparentDoor) == 0x000700, "Wrong size on APyTransparentDoor");
-static_assert(offsetof(APyTransparentDoor, OpenSpeed) == 0x0006E0, "Member 'APyTransparentDoor::OpenSpeed' has a wrong offset!");
-static_assert(offsetof(APyTransparentDoor, State) == 0x0006E8, "Member 'APyTransparentDoor::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyTransparentDoor;
 
 }
 

@@ -24,9 +24,7 @@ struct PyWarmUpTimeCrystal_OnPlayerEnter final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWarmUpTimeCrystal_OnPlayerEnter) == 0x000008, "Wrong alignment on PyWarmUpTimeCrystal_OnPlayerEnter");
-static_assert(sizeof(PyWarmUpTimeCrystal_OnPlayerEnter) == 0x000008, "Wrong size on PyWarmUpTimeCrystal_OnPlayerEnter");
-static_assert(offsetof(PyWarmUpTimeCrystal_OnPlayerEnter, Char) == 0x000000, "Member 'PyWarmUpTimeCrystal_OnPlayerEnter::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyWarmUpTimeCrystal_OnPlayerEnter;
 
 // PythonFunction PyWarmUpTimeCrystal.PyWarmUpTimeCrystal.OnPlayerExit
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWarmUpTimeCrystal_OnPlayerExit final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWarmUpTimeCrystal_OnPlayerExit) == 0x000008, "Wrong alignment on PyWarmUpTimeCrystal_OnPlayerExit");
-static_assert(sizeof(PyWarmUpTimeCrystal_OnPlayerExit) == 0x000008, "Wrong size on PyWarmUpTimeCrystal_OnPlayerExit");
-static_assert(offsetof(PyWarmUpTimeCrystal_OnPlayerExit, Char) == 0x000000, "Member 'PyWarmUpTimeCrystal_OnPlayerExit::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyWarmUpTimeCrystal_OnPlayerExit;
 
 // PythonFunction PyWarmUpTimeCrystal.PyWarmUpTimeCrystal.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -46,9 +42,7 @@ struct PyWarmUpTimeCrystal_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWarmUpTimeCrystal_ReceiveTick) == 0x000004, "Wrong alignment on PyWarmUpTimeCrystal_ReceiveTick");
-static_assert(sizeof(PyWarmUpTimeCrystal_ReceiveTick) == 0x000004, "Wrong size on PyWarmUpTimeCrystal_ReceiveTick");
-static_assert(offsetof(PyWarmUpTimeCrystal_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyWarmUpTimeCrystal_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyWarmUpTimeCrystal_ReceiveTick;
 
 // PythonFunction PyWarmUpTimeCrystal.PyCue_Level_20020002.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -59,11 +53,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020002_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_20020002_WhileActive");
-static_assert(sizeof(PyCue_Level_20020002_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_20020002_WhileActive");
-static_assert(offsetof(PyCue_Level_20020002_WhileActive, TimeCrystal) == 0x000000, "Member 'PyCue_Level_20020002_WhileActive::TimeCrystal' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020002_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_20020002_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020002_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_20020002_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020002_WhileActive;
 
 // PythonFunction PyWarmUpTimeCrystal.PyCue_Level_20020002.OnWarmUpTimeCrystalStateChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -73,10 +63,7 @@ public:
 	EInfinityCrisisState                          OldState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInfinityCrisisState                          NewState;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged) == 0x000001, "Wrong alignment on PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged");
-static_assert(sizeof(PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged) == 0x000002, "Wrong size on PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged");
-static_assert(offsetof(PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged, OldState) == 0x000000, "Member 'PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged::OldState' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged, NewState) == 0x000001, "Member 'PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020002_OnWarmUpTimeCrystalStateChanged;
 
 // PythonFunction PyWarmUpTimeCrystal.PyCue_Level_20020002.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -85,9 +72,7 @@ struct PyCue_Level_20020002_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_20020002_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Level_20020002_ReceiveTick");
-static_assert(sizeof(PyCue_Level_20020002_ReceiveTick) == 0x000004, "Wrong size on PyCue_Level_20020002_ReceiveTick");
-static_assert(offsetof(PyCue_Level_20020002_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Level_20020002_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_20020002_ReceiveTick;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ClanLeagueHistoryPrivacy.PyWidget_Secondary_ClanLeagueHistoryPrivacyItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem final : public UPyMarvelUserWidget
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanLeagueHistoryPrivacyItem">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanLeagueHistoryPrivacyItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanLeagueHistoryPrivacyItem")
 	}
 	static class UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem");
-static_assert(sizeof(UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanLeagueHistoryPrivacyItem;
 
 // PythonClass PyWidget_Secondary_ClanLeagueHistoryPrivacy.PyWidget_Secondary_ClanLeagueHistoryPrivacy
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ClanLeagueHistoryPrivacy final : public UPyMarvelUserWidget
 {
 public:
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanLeagueHistoryPrivacy">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanLeagueHistoryPrivacy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanLeagueHistoryPrivacy")
 	}
 	static class UPyWidget_Secondary_ClanLeagueHistoryPrivacy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanLeagueHistoryPrivacy>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanLeagueHistoryPrivacy) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanLeagueHistoryPrivacy");
-static_assert(sizeof(UPyWidget_Secondary_ClanLeagueHistoryPrivacy) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ClanLeagueHistoryPrivacy");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanLeagueHistoryPrivacy;
 
 }
 

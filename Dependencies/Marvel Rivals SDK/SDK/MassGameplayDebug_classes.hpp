@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AssignDebugVisProcessor">();
+		STATIC_CLASS_IMPL("AssignDebugVisProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AssignDebugVisProcessor")
 	}
 	static class UAssignDebugVisProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAssignDebugVisProcessor>();
 	}
 };
-static_assert(alignof(UAssignDebugVisProcessor) == 0x000008, "Wrong alignment on UAssignDebugVisProcessor");
-static_assert(sizeof(UAssignDebugVisProcessor) == 0x000380, "Wrong size on UAssignDebugVisProcessor");
+DUMPER7_ASSERTS_UAssignDebugVisProcessor;
 
 // Class MassGameplayDebug.DebugVisLocationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DebugVisLocationProcessor">();
+		STATIC_CLASS_IMPL("DebugVisLocationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DebugVisLocationProcessor")
 	}
 	static class UDebugVisLocationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDebugVisLocationProcessor>();
 	}
 };
-static_assert(alignof(UDebugVisLocationProcessor) == 0x000008, "Wrong alignment on UDebugVisLocationProcessor");
-static_assert(sizeof(UDebugVisLocationProcessor) == 0x000370, "Wrong size on UDebugVisLocationProcessor");
+DUMPER7_ASSERTS_UDebugVisLocationProcessor;
 
 // Class MassGameplayDebug.MassProcessor_UpdateDebugVis
 // 0x02A8 (0x0370 - 0x00C8)
@@ -68,40 +74,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassProcessor_UpdateDebugVis">();
+		STATIC_CLASS_IMPL("MassProcessor_UpdateDebugVis")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassProcessor_UpdateDebugVis")
 	}
 	static class UMassProcessor_UpdateDebugVis* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassProcessor_UpdateDebugVis>();
 	}
 };
-static_assert(alignof(UMassProcessor_UpdateDebugVis) == 0x000008, "Wrong alignment on UMassProcessor_UpdateDebugVis");
-static_assert(sizeof(UMassProcessor_UpdateDebugVis) == 0x000370, "Wrong size on UMassProcessor_UpdateDebugVis");
+DUMPER7_ASSERTS_UMassProcessor_UpdateDebugVis;
 
 // Class MassGameplayDebug.MassDebuggerSubsystem
-// 0x0098 (0x00D0 - 0x0038)
+// 0x0098 (0x00D8 - 0x0040)
 class UMassDebuggerSubsystem final : public UWorldSubsystem
 {
 public:
-	uint8                                         Pad_38[0x80];                                      // 0x0038(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMassDebugVisualizationComponent*       VisualizationComponent;                            // 0x00B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AMassDebugVisualizer*                   DebugVisualizer;                                   // 0x00C0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x80];                                      // 0x0040(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMassDebugVisualizationComponent*       VisualizationComponent;                            // 0x00C0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AMassDebugVisualizer*                   DebugVisualizer;                                   // 0x00C8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D0[0x8];                                       // 0x00D0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebuggerSubsystem">();
+		STATIC_CLASS_IMPL("MassDebuggerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebuggerSubsystem")
 	}
 	static class UMassDebuggerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassDebuggerSubsystem>();
 	}
 };
-static_assert(alignof(UMassDebuggerSubsystem) == 0x000008, "Wrong alignment on UMassDebuggerSubsystem");
-static_assert(sizeof(UMassDebuggerSubsystem) == 0x0000D0, "Wrong size on UMassDebuggerSubsystem");
-static_assert(offsetof(UMassDebuggerSubsystem, VisualizationComponent) == 0x0000B8, "Member 'UMassDebuggerSubsystem::VisualizationComponent' has a wrong offset!");
-static_assert(offsetof(UMassDebuggerSubsystem, DebugVisualizer) == 0x0000C0, "Member 'UMassDebuggerSubsystem::DebugVisualizer' has a wrong offset!");
+DUMPER7_ASSERTS_UMassDebuggerSubsystem;
 
 // Class MassGameplayDebug.MassDebugVisualizationComponent
 // 0x0000 (0x0108 - 0x0108)
@@ -110,15 +120,18 @@ class UMassDebugVisualizationComponent final : public UActorComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebugVisualizationComponent">();
+		STATIC_CLASS_IMPL("MassDebugVisualizationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebugVisualizationComponent")
 	}
 	static class UMassDebugVisualizationComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassDebugVisualizationComponent>();
 	}
 };
-static_assert(alignof(UMassDebugVisualizationComponent) == 0x000008, "Wrong alignment on UMassDebugVisualizationComponent");
-static_assert(sizeof(UMassDebugVisualizationComponent) == 0x000108, "Wrong size on UMassDebugVisualizationComponent");
+DUMPER7_ASSERTS_UMassDebugVisualizationComponent;
 
 // Class MassGameplayDebug.MassDebugVisualizationTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -127,15 +140,18 @@ class UMassDebugVisualizationTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebugVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassDebugVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebugVisualizationTrait")
 	}
 	static class UMassDebugVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassDebugVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassDebugVisualizationTrait) == 0x000008, "Wrong alignment on UMassDebugVisualizationTrait");
-static_assert(sizeof(UMassDebugVisualizationTrait) == 0x000030, "Wrong size on UMassDebugVisualizationTrait");
+DUMPER7_ASSERTS_UMassDebugVisualizationTrait;
 
 // Class MassGameplayDebug.MassDebugVisualizer
 // 0x0000 (0x06E0 - 0x06E0)
@@ -144,15 +160,18 @@ class AMassDebugVisualizer final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebugVisualizer">();
+		STATIC_CLASS_IMPL("MassDebugVisualizer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebugVisualizer")
 	}
 	static class AMassDebugVisualizer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassDebugVisualizer>();
 	}
 };
-static_assert(alignof(AMassDebugVisualizer) == 0x000010, "Wrong alignment on AMassDebugVisualizer");
-static_assert(sizeof(AMassDebugVisualizer) == 0x0006E0, "Wrong size on AMassDebugVisualizer");
+DUMPER7_ASSERTS_AMassDebugVisualizer;
 
 }
 

@@ -66,43 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FogSheet_C">();
+		BP_STATIC_CLASS_IMPL("BP_FogSheet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FogSheet_C")
 	}
 	static class ABP_FogSheet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FogSheet_C>();
 	}
 };
-static_assert(alignof(ABP_FogSheet_C) == 0x000010, "Wrong alignment on ABP_FogSheet_C");
-static_assert(sizeof(ABP_FogSheet_C) == 0x0007C0, "Wrong size on ABP_FogSheet_C");
-static_assert(offsetof(ABP_FogSheet_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_FogSheet_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogSheet) == 0x0006E8, "Member 'ABP_FogSheet_C::FogSheet' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogSheetMasterMaterial) == 0x0006F0, "Member 'ABP_FogSheet_C::FogSheetMasterMaterial' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogSheetMID) == 0x0006F8, "Member 'ABP_FogSheet_C::FogSheetMID' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Color) == 0x000700, "Member 'ABP_FogSheet_C::Color' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Brightness) == 0x000710, "Member 'ABP_FogSheet_C::Brightness' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, ParticleSystem) == 0x000718, "Member 'ABP_FogSheet_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Size) == 0x000720, "Member 'ABP_FogSheet_C::Size' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Opacity) == 0x000738, "Member 'ABP_FogSheet_C::Opacity' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, DepthFadeDistance) == 0x000740, "Member 'ABP_FogSheet_C::DepthFadeDistance' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, NoiseProjectionDistance) == 0x000748, "Member 'ABP_FogSheet_C::NoiseProjectionDistance' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, NoiseSize) == 0x000750, "Member 'ABP_FogSheet_C::NoiseSize' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, PanningSpeed) == 0x000758, "Member 'ABP_FogSheet_C::PanningSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FadeDistance) == 0x000760, "Member 'ABP_FogSheet_C::FadeDistance' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, NoiseTex) == 0x000768, "Member 'ABP_FogSheet_C::NoiseTex' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, SpeedXY) == 0x000770, "Member 'ABP_FogSheet_C::SpeedXY' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Translucency_Sort) == 0x000780, "Member 'ABP_FogSheet_C::Translucency_Sort' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, UseInvertMask) == 0x000784, "Member 'ABP_FogSheet_C::UseInvertMask' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, UseRemap) == 0x000788, "Member 'ABP_FogSheet_C::UseRemap' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Remap_Min) == 0x000790, "Member 'ABP_FogSheet_C::Remap_Min' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Remap_Max) == 0x000798, "Member 'ABP_FogSheet_C::Remap_Max' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogSheetMasterMaterial_NoFogInfluence) == 0x0007A0, "Member 'ABP_FogSheet_C::FogSheetMasterMaterial_NoFogInfluence' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, UseUVSample) == 0x0007A8, "Member 'ABP_FogSheet_C::UseUVSample' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, NoInfluenceByFog) == 0x0007A9, "Member 'ABP_FogSheet_C::NoInfluenceByFog' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, Changed) == 0x0007AA, "Member 'ABP_FogSheet_C::Changed' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, BeforeDof) == 0x0007AB, "Member 'ABP_FogSheet_C::BeforeDof' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogSheetMaterialBeforeDof) == 0x0007B0, "Member 'ABP_FogSheet_C::FogSheetMaterialBeforeDof' has a wrong offset!");
-static_assert(offsetof(ABP_FogSheet_C, FogMesh) == 0x0007B8, "Member 'ABP_FogSheet_C::FogMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_FogSheet_C;
 
 }
 

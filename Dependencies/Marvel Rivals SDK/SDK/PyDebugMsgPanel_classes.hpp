@@ -19,32 +19,31 @@ namespace SDK
 {
 
 // PythonClass PyDebugMsgPanel.PyDebugMsgPanel
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyDebugMsgPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FontColor;                                         // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         FontSize;                                          // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FontOutlineColor;                                  // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FontOutlineSize;                                   // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FontColor;                                         // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         FontSize;                                          // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FontOutlineColor;                                  // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FontOutlineSize;                                   // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDebugMsgPanel">();
+		STATIC_CLASS_IMPL("PyDebugMsgPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDebugMsgPanel")
 	}
 	static class UPyDebugMsgPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDebugMsgPanel>();
 	}
 };
-static_assert(alignof(UPyDebugMsgPanel) == 0x000008, "Wrong alignment on UPyDebugMsgPanel");
-static_assert(sizeof(UPyDebugMsgPanel) == 0x0005E8, "Wrong size on UPyDebugMsgPanel");
-static_assert(offsetof(UPyDebugMsgPanel, FontColor) == 0x0005BC, "Member 'UPyDebugMsgPanel::FontColor' has a wrong offset!");
-static_assert(offsetof(UPyDebugMsgPanel, FontSize) == 0x0005D0, "Member 'UPyDebugMsgPanel::FontSize' has a wrong offset!");
-static_assert(offsetof(UPyDebugMsgPanel, FontOutlineColor) == 0x0005D4, "Member 'UPyDebugMsgPanel::FontOutlineColor' has a wrong offset!");
-static_assert(offsetof(UPyDebugMsgPanel, FontOutlineSize) == 0x0005E4, "Member 'UPyDebugMsgPanel::FontOutlineSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDebugMsgPanel;
 
 }
 

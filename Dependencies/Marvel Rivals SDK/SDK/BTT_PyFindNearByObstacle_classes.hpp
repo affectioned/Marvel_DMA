@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindNearByObstacle">();
+		STATIC_CLASS_IMPL("BTT_PyFindNearByObstacle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindNearByObstacle")
 	}
 	static class UBTT_PyFindNearByObstacle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindNearByObstacle>();
 	}
 };
-static_assert(alignof(UBTT_PyFindNearByObstacle) == 0x000008, "Wrong alignment on UBTT_PyFindNearByObstacle");
-static_assert(sizeof(UBTT_PyFindNearByObstacle) == 0x000118, "Wrong size on UBTT_PyFindNearByObstacle");
-static_assert(offsetof(UBTT_PyFindNearByObstacle, TargetCamp) == 0x0000C0, "Member 'UBTT_PyFindNearByObstacle::TargetCamp' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindNearByObstacle, ObstacleSummonerIDs) == 0x0000C8, "Member 'UBTT_PyFindNearByObstacle::ObstacleSummonerIDs' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindNearByObstacle, MaxSearchRange) == 0x0000D8, "Member 'UBTT_PyFindNearByObstacle::MaxSearchRange' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindNearByObstacle, OutObstacleActor) == 0x0000E0, "Member 'UBTT_PyFindNearByObstacle::OutObstacleActor' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindNearByObstacle, EnableDebugDraw) == 0x000110, "Member 'UBTT_PyFindNearByObstacle::EnableDebugDraw' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindNearByObstacle;
 
 }
 

@@ -29,22 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102541">();
+		STATIC_CLASS_IMPL("PyConfig_102541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102541")
 	}
 	static class UPyConfig_102541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102541>();
 	}
 };
-static_assert(alignof(UPyConfig_102541) == 0x000008, "Wrong alignment on UPyConfig_102541");
-static_assert(sizeof(UPyConfig_102541) == 0x0000A8, "Wrong size on UPyConfig_102541");
-static_assert(offsetof(UPyConfig_102541, TreatScopeID) == 0x000098, "Member 'UPyConfig_102541::TreatScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102541, ProjectileID) == 0x00009C, "Member 'UPyConfig_102541::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102541, NumberOfDaggersPerShot) == 0x0000A0, "Member 'UPyConfig_102541::NumberOfDaggersPerShot' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102541, AngleBetweenDaggers) == 0x0000A4, "Member 'UPyConfig_102541::AngleBetweenDaggers' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102541;
 
 // PythonClass PyAbility_102541.PyProjectile_10254101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10254101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -53,18 +52,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10254101">();
+		STATIC_CLASS_IMPL("PyProjectile_10254101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10254101")
 	}
 	static class APyProjectile_10254101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10254101>();
 	}
 };
-static_assert(alignof(APyProjectile_10254101) == 0x000010, "Wrong alignment on APyProjectile_10254101");
-static_assert(sizeof(APyProjectile_10254101) == 0x003B90, "Wrong size on APyProjectile_10254101");
+DUMPER7_ASSERTS_APyProjectile_10254101;
 
 // PythonClass PyAbility_102541.PyAbility_102541
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102541 : public UAbility_108
 {
 public:
@@ -74,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102541">();
+		STATIC_CLASS_IMPL("PyAbility_102541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102541")
 	}
 	static class UPyAbility_102541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102541>();
 	}
 };
-static_assert(alignof(UPyAbility_102541) == 0x000008, "Wrong alignment on UPyAbility_102541");
-static_assert(sizeof(UPyAbility_102541) == 0x0029F8, "Wrong size on UPyAbility_102541");
+DUMPER7_ASSERTS_UPyAbility_102541;
 
 }
 

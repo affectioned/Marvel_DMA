@@ -54,7 +54,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelActorMoveComponent">();
+		STATIC_CLASS_IMPL("PyLevelActorMoveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelActorMoveComponent")
 	}
 	static class UPyLevelActorMoveComponent* GetDefaultObj()
 	{
@@ -62,19 +66,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyLevelActorMoveComponent) == 0x000010, "Wrong alignment on UPyLevelActorMoveComponent");
-static_assert(sizeof(UPyLevelActorMoveComponent) == 0x0004B0, "Wrong size on UPyLevelActorMoveComponent");
-static_assert(offsetof(UPyLevelActorMoveComponent, TraceList) == 0x000440, "Member 'UPyLevelActorMoveComponent::TraceList' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, bUseOwner) == 0x000450, "Member 'UPyLevelActorMoveComponent::bUseOwner' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, FaceToMove) == 0x000451, "Member 'UPyLevelActorMoveComponent::FaceToMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, MoveSpeed) == 0x000454, "Member 'UPyLevelActorMoveComponent::MoveSpeed' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, TraceName) == 0x000458, "Member 'UPyLevelActorMoveComponent::TraceName' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, CurProgress) == 0x000468, "Member 'UPyLevelActorMoveComponent::CurProgress' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, BackwordProgress) == 0x00046C, "Member 'UPyLevelActorMoveComponent::BackwordProgress' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, IsInAutoMove) == 0x000470, "Member 'UPyLevelActorMoveComponent::IsInAutoMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, StartAutoMove) == 0x000478, "Member 'UPyLevelActorMoveComponent::StartAutoMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, StopAutoMove) == 0x000488, "Member 'UPyLevelActorMoveComponent::StopAutoMove' has a wrong offset!");
-static_assert(offsetof(UPyLevelActorMoveComponent, EventMoveSpeedChanged) == 0x000498, "Member 'UPyLevelActorMoveComponent::EventMoveSpeedChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelActorMoveComponent;
 
 }
 

@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "BinkMediaPlayer_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "BinkMediaPlayer_structs.hpp"
 
 
 namespace SDK
@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BinkFunctionLibrary">();
+		STATIC_CLASS_IMPL("BinkFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BinkFunctionLibrary")
 	}
 	static class UBinkFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBinkFunctionLibrary>();
 	}
 };
-static_assert(alignof(UBinkFunctionLibrary) == 0x000008, "Wrong alignment on UBinkFunctionLibrary");
-static_assert(sizeof(UBinkFunctionLibrary) == 0x000030, "Wrong size on UBinkFunctionLibrary");
+DUMPER7_ASSERTS_UBinkFunctionLibrary;
 
 // Class BinkMediaPlayer.BinkMediaPlayer
 // 0x00E8 (0x0118 - 0x0030)
@@ -104,27 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BinkMediaPlayer">();
+		STATIC_CLASS_IMPL("BinkMediaPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BinkMediaPlayer")
 	}
 	static class UBinkMediaPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBinkMediaPlayer>();
 	}
 };
-static_assert(alignof(UBinkMediaPlayer) == 0x000008, "Wrong alignment on UBinkMediaPlayer");
-static_assert(sizeof(UBinkMediaPlayer) == 0x000118, "Wrong size on UBinkMediaPlayer");
-static_assert(offsetof(UBinkMediaPlayer, OnMediaClosed) == 0x000038, "Member 'UBinkMediaPlayer::OnMediaClosed' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, OnMediaOpened) == 0x000048, "Member 'UBinkMediaPlayer::OnMediaOpened' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, OnMediaReachedEnd) == 0x000058, "Member 'UBinkMediaPlayer::OnMediaReachedEnd' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, OnPlaybackSuspended) == 0x000068, "Member 'UBinkMediaPlayer::OnPlaybackSuspended' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkDestinationUpperLeft) == 0x000080, "Member 'UBinkMediaPlayer::BinkDestinationUpperLeft' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkDestinationLowerRight) == 0x000090, "Member 'UBinkMediaPlayer::BinkDestinationLowerRight' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, URL) == 0x0000A0, "Member 'UBinkMediaPlayer::URL' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkBufferMode) == 0x0000B0, "Member 'UBinkMediaPlayer::BinkBufferMode' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkSoundTrack) == 0x0000B1, "Member 'UBinkMediaPlayer::BinkSoundTrack' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkSoundTrackStart) == 0x0000B4, "Member 'UBinkMediaPlayer::BinkSoundTrackStart' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkDrawStyle) == 0x0000B8, "Member 'UBinkMediaPlayer::BinkDrawStyle' has a wrong offset!");
-static_assert(offsetof(UBinkMediaPlayer, BinkLayerDepth) == 0x0000BC, "Member 'UBinkMediaPlayer::BinkLayerDepth' has a wrong offset!");
+DUMPER7_ASSERTS_UBinkMediaPlayer;
 
 // Class BinkMediaPlayer.BinkMediaTexture
 // 0x0030 (0x0220 - 0x01F0)
@@ -150,23 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BinkMediaTexture">();
+		STATIC_CLASS_IMPL("BinkMediaTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BinkMediaTexture")
 	}
 	static class UBinkMediaTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBinkMediaTexture>();
 	}
 };
-static_assert(alignof(UBinkMediaTexture) == 0x000010, "Wrong alignment on UBinkMediaTexture");
-static_assert(sizeof(UBinkMediaTexture) == 0x000220, "Wrong size on UBinkMediaTexture");
-static_assert(offsetof(UBinkMediaTexture, AddressX) == 0x0001E8, "Member 'UBinkMediaTexture::AddressX' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, AddressY) == 0x0001E9, "Member 'UBinkMediaTexture::AddressY' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, MediaPlayer) == 0x0001F0, "Member 'UBinkMediaTexture::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, PixelFormat) == 0x0001F8, "Member 'UBinkMediaTexture::PixelFormat' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, Tonemap) == 0x0001F9, "Member 'UBinkMediaTexture::Tonemap' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, OutputNits) == 0x0001FC, "Member 'UBinkMediaTexture::OutputNits' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, Alpha) == 0x000200, "Member 'UBinkMediaTexture::Alpha' has a wrong offset!");
-static_assert(offsetof(UBinkMediaTexture, DecodeSRGB) == 0x000204, "Member 'UBinkMediaTexture::DecodeSRGB' has a wrong offset!");
+DUMPER7_ASSERTS_UBinkMediaTexture;
 
 // Class BinkMediaPlayer.BinkMoviePlayerSettings
 // 0x0030 (0x0060 - 0x0030)
@@ -185,21 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BinkMoviePlayerSettings">();
+		STATIC_CLASS_IMPL("BinkMoviePlayerSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BinkMoviePlayerSettings")
 	}
 	static class UBinkMoviePlayerSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBinkMoviePlayerSettings>();
 	}
 };
-static_assert(alignof(UBinkMoviePlayerSettings) == 0x000008, "Wrong alignment on UBinkMoviePlayerSettings");
-static_assert(sizeof(UBinkMoviePlayerSettings) == 0x000060, "Wrong size on UBinkMoviePlayerSettings");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkBufferMode) == 0x000030, "Member 'UBinkMoviePlayerSettings::BinkBufferMode' has a wrong offset!");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkSoundTrack) == 0x000031, "Member 'UBinkMoviePlayerSettings::BinkSoundTrack' has a wrong offset!");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkSoundTrackStart) == 0x000034, "Member 'UBinkMoviePlayerSettings::BinkSoundTrackStart' has a wrong offset!");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkDestinationUpperLeft) == 0x000038, "Member 'UBinkMoviePlayerSettings::BinkDestinationUpperLeft' has a wrong offset!");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkDestinationLowerRight) == 0x000048, "Member 'UBinkMoviePlayerSettings::BinkDestinationLowerRight' has a wrong offset!");
-static_assert(offsetof(UBinkMoviePlayerSettings, BinkPixelFormat) == 0x000058, "Member 'UBinkMoviePlayerSettings::BinkPixelFormat' has a wrong offset!");
+DUMPER7_ASSERTS_UBinkMoviePlayerSettings;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_LokiSelectPhantom">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_LokiSelectPhantom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_LokiSelectPhantom")
 	}
 	static class UPyAISelectTarget_LokiSelectPhantom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_LokiSelectPhantom>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_LokiSelectPhantom) == 0x000008, "Wrong alignment on UPyAISelectTarget_LokiSelectPhantom");
-static_assert(sizeof(UPyAISelectTarget_LokiSelectPhantom) == 0x000078, "Wrong size on UPyAISelectTarget_LokiSelectPhantom");
-static_assert(offsetof(UPyAISelectTarget_LokiSelectPhantom, Range) == 0x000070, "Member 'UPyAISelectTarget_LokiSelectPhantom::Range' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_LokiSelectPhantom, NoTargetChance) == 0x000074, "Member 'UPyAISelectTarget_LokiSelectPhantom::NoTargetChance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_LokiSelectPhantom;
 
 }
 

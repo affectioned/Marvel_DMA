@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_102941.PyBuffAbility_120_102941_common
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyBuffAbility_120_102941_common : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FGameplayTag                           NormalStatusTag;                                   // 0x1370(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NormalShiftID;                                     // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuperShiftID;                                      // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           NormalStatusTag;                                   // 0x1388(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NormalShiftID;                                     // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuperShiftID;                                      // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_102941_common">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_102941_common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_102941_common")
 	}
 	static class UPyBuffAbility_120_102941_common* GetDefaultObj()
 	{
@@ -42,19 +46,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyBuffAbility_120_102941_common) == 0x000008, "Wrong alignment on UPyBuffAbility_120_102941_common");
-static_assert(sizeof(UPyBuffAbility_120_102941_common) == 0x001388, "Wrong size on UPyBuffAbility_120_102941_common");
-static_assert(offsetof(UPyBuffAbility_120_102941_common, NormalStatusTag) == 0x001370, "Member 'UPyBuffAbility_120_102941_common::NormalStatusTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_102941_common, NormalShiftID) == 0x00137C, "Member 'UPyBuffAbility_120_102941_common::NormalShiftID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_102941_common, SuperShiftID) == 0x001380, "Member 'UPyBuffAbility_120_102941_common::SuperShiftID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_102941_common;
 
 // PythonClass PyBuffAbility_120_102941.PyBuffAbility_120_10294190
-// 0x0008 (0x1390 - 0x1388)
+// 0x0008 (0x13A8 - 0x13A0)
 class UPyBuffAbility_120_10294190 final : public UPyBuffAbility_120_102941_common
 {
 public:
-	float                                         NormalShiftCDReduction;                            // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SuperShiftIDReduction;                             // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NormalShiftCDReduction;                            // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SuperShiftIDReduction;                             // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -64,32 +64,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10294190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10294190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10294190")
 	}
 	static class UPyBuffAbility_120_10294190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10294190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10294190) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10294190");
-static_assert(sizeof(UPyBuffAbility_120_10294190) == 0x001390, "Wrong size on UPyBuffAbility_120_10294190");
-static_assert(offsetof(UPyBuffAbility_120_10294190, NormalShiftCDReduction) == 0x001384, "Member 'UPyBuffAbility_120_10294190::NormalShiftCDReduction' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294190, SuperShiftIDReduction) == 0x001388, "Member 'UPyBuffAbility_120_10294190::SuperShiftIDReduction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10294190;
 
 // PythonClass PyBuffAbility_120_102941.PyBuffAbility_120_10294191
-// 0x0020 (0x13A8 - 0x1388)
+// 0x0020 (0x13C0 - 0x13A0)
 class UPyBuffAbility_120_10294191 final : public UPyBuffAbility_120_102941_common
 {
 public:
-	int32                                         ScopeID;                                           // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeltaScopeRange;                                   // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SummonedID;                                        // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeltaSummonedTime;                                 // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuperScopeID;                                      // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SuperDeltaScopeRange;                              // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SuperSummonedID;                                   // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SuperDeltaSummonedTime;                            // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsMod;                                             // 0x13A4(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeltaScopeRange;                                   // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SummonedID;                                        // 0x13A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeltaSummonedTime;                                 // 0x13A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuperScopeID;                                      // 0x13AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SuperDeltaScopeRange;                              // 0x13B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SuperSummonedID;                                   // 0x13B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SuperDeltaSummonedTime;                            // 0x13B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsMod;                                             // 0x13BC(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -98,32 +99,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10294191">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10294191")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10294191")
 	}
 	static class UPyBuffAbility_120_10294191* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10294191>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10294191) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10294191");
-static_assert(sizeof(UPyBuffAbility_120_10294191) == 0x0013A8, "Wrong size on UPyBuffAbility_120_10294191");
-static_assert(offsetof(UPyBuffAbility_120_10294191, ScopeID) == 0x001384, "Member 'UPyBuffAbility_120_10294191::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, DeltaScopeRange) == 0x001388, "Member 'UPyBuffAbility_120_10294191::DeltaScopeRange' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, SummonedID) == 0x00138C, "Member 'UPyBuffAbility_120_10294191::SummonedID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, DeltaSummonedTime) == 0x001390, "Member 'UPyBuffAbility_120_10294191::DeltaSummonedTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, SuperScopeID) == 0x001394, "Member 'UPyBuffAbility_120_10294191::SuperScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, SuperDeltaScopeRange) == 0x001398, "Member 'UPyBuffAbility_120_10294191::SuperDeltaScopeRange' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, SuperSummonedID) == 0x00139C, "Member 'UPyBuffAbility_120_10294191::SuperSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, SuperDeltaSummonedTime) == 0x0013A0, "Member 'UPyBuffAbility_120_10294191::SuperDeltaSummonedTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10294191, IsMod) == 0x0013A4, "Member 'UPyBuffAbility_120_10294191::IsMod' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10294191;
 
 // PythonClass PyBuffAbility_120_102941.PyBuffAbility_120_10294192
-// 0x0050 (0x13D8 - 0x1388)
+// 0x0050 (0x13F0 - 0x13A0)
 class UPyBuffAbility_120_10294192 final : public UPyBuffAbility_120_102941_common
 {
 public:
-	uint8                                         Pad_1384[0x4];                                     // 0x1384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, int32>                            Ability_Buff_Map;                                  // 0x1388(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_139C[0x4];                                     // 0x139C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            Ability_Buff_Map;                                  // 0x13A0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -133,16 +128,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10294192">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10294192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10294192")
 	}
 	static class UPyBuffAbility_120_10294192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10294192>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10294192) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10294192");
-static_assert(sizeof(UPyBuffAbility_120_10294192) == 0x0013D8, "Wrong size on UPyBuffAbility_120_10294192");
-static_assert(offsetof(UPyBuffAbility_120_10294192, Ability_Buff_Map) == 0x001388, "Member 'UPyBuffAbility_120_10294192::Ability_Buff_Map' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10294192;
 
 }
 

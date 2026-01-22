@@ -21,9 +21,7 @@ struct PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_AwardPanel_TurnPageLogic_MarvelSetVisible;
 
 // PythonFunction PyWidget_Activity122_AwardPanel.PyWidget_Activity122_AwardPanel_DataProcess.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity122_AwardPanel_DataProcess_MarvelSetVisible;
 
 }
 

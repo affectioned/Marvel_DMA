@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_LineAngle.PyWidget_Common_LineAngle
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Common_LineAngle final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              HoverSize;                                         // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                HoverPadding;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              HoverSize;                                         // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                HoverPadding;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,25 +35,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_LineAngle">();
+		STATIC_CLASS_IMPL("PyWidget_Common_LineAngle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_LineAngle")
 	}
 	static class UPyWidget_Common_LineAngle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_LineAngle>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_LineAngle) == 0x000008, "Wrong alignment on UPyWidget_Common_LineAngle");
-static_assert(sizeof(UPyWidget_Common_LineAngle) == 0x0005E0, "Wrong size on UPyWidget_Common_LineAngle");
-static_assert(offsetof(UPyWidget_Common_LineAngle, HoverSize) == 0x0005C0, "Member 'UPyWidget_Common_LineAngle::HoverSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_LineAngle, HoverPadding) == 0x0005D0, "Member 'UPyWidget_Common_LineAngle::HoverPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_LineAngle;
 
 // PythonClass PyWidget_Common_LineAngle.PyWidget_Common_Line
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Common_Line final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UWidgetAnimation* Animation)> OnAnimFinished;                // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UWidgetAnimation* Animation)> OnAnimFinished;                // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void TriggerAnimationFinished(class UWidgetAnimation* Animation);
@@ -61,16 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Line">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Line")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Line")
 	}
 	static class UPyWidget_Common_Line* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Line>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Line) == 0x000008, "Wrong alignment on UPyWidget_Common_Line");
-static_assert(sizeof(UPyWidget_Common_Line) == 0x0005D0, "Wrong size on UPyWidget_Common_Line");
-static_assert(offsetof(UPyWidget_Common_Line, OnAnimFinished) == 0x0005C0, "Member 'UPyWidget_Common_Line::OnAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Line;
 
 }
 

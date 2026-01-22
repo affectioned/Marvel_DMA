@@ -11,20 +11,20 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UMG_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_RankRule.PyWidget_Rank_SeasonMapPanel
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Rank_SeasonMapPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                MapTypeItem;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                MapTypeItem;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_SeasonMapPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_SeasonMapPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_SeasonMapPanel")
 	}
 	static class UPyWidget_Rank_SeasonMapPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_SeasonMapPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_SeasonMapPanel) == 0x000008, "Wrong alignment on UPyWidget_Rank_SeasonMapPanel");
-static_assert(sizeof(UPyWidget_Rank_SeasonMapPanel) == 0x0005C8, "Wrong size on UPyWidget_Rank_SeasonMapPanel");
-static_assert(offsetof(UPyWidget_Rank_SeasonMapPanel, MapTypeItem) == 0x0005C0, "Member 'UPyWidget_Rank_SeasonMapPanel::MapTypeItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_SeasonMapPanel;
 
 // PythonClass PyWidget_RankRule.PyWidget_RankRule_DisplayRank
 // 0x0018 (0x03D0 - 0x03B8)
@@ -64,25 +66,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankRule_DisplayRank">();
+		STATIC_CLASS_IMPL("PyWidget_RankRule_DisplayRank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankRule_DisplayRank")
 	}
 	static class UPyWidget_RankRule_DisplayRank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankRule_DisplayRank>();
 	}
 };
-static_assert(alignof(UPyWidget_RankRule_DisplayRank) == 0x000008, "Wrong alignment on UPyWidget_RankRule_DisplayRank");
-static_assert(sizeof(UPyWidget_RankRule_DisplayRank) == 0x0003D0, "Wrong size on UPyWidget_RankRule_DisplayRank");
-static_assert(offsetof(UPyWidget_RankRule_DisplayRank, RankID) == 0x0003B8, "Member 'UPyWidget_RankRule_DisplayRank::RankID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankRule_DisplayRank, SizeBox_DanIcon_Tran_Translation) == 0x0003C0, "Member 'UPyWidget_RankRule_DisplayRank::SizeBox_DanIcon_Tran_Translation' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RankRule_DisplayRank;
 
 // PythonClass PyWidget_RankRule.PyWidget_Rank_SeasonMap_Type_Item
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Rank_SeasonMap_Type_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                MapItem;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -92,16 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_SeasonMap_Type_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_SeasonMap_Type_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_SeasonMap_Type_Item")
 	}
 	static class UPyWidget_Rank_SeasonMap_Type_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_SeasonMap_Type_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_SeasonMap_Type_Item) == 0x000008, "Wrong alignment on UPyWidget_Rank_SeasonMap_Type_Item");
-static_assert(sizeof(UPyWidget_Rank_SeasonMap_Type_Item) == 0x0005C8, "Wrong size on UPyWidget_Rank_SeasonMap_Type_Item");
-static_assert(offsetof(UPyWidget_Rank_SeasonMap_Type_Item, MapItem) == 0x0005C0, "Member 'UPyWidget_Rank_SeasonMap_Type_Item::MapItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_SeasonMap_Type_Item;
 
 // PythonClass PyWidget_RankRule.PyWidget_RankRule_RuleInfo
 // 0x0050 (0x0408 - 0x03B8)
@@ -122,28 +127,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankRule_RuleInfo">();
+		STATIC_CLASS_IMPL("PyWidget_RankRule_RuleInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankRule_RuleInfo")
 	}
 	static class UPyWidget_RankRule_RuleInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankRule_RuleInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_RankRule_RuleInfo) == 0x000008, "Wrong alignment on UPyWidget_RankRule_RuleInfo");
-static_assert(sizeof(UPyWidget_RankRule_RuleInfo) == 0x000408, "Wrong size on UPyWidget_RankRule_RuleInfo");
-static_assert(offsetof(UPyWidget_RankRule_RuleInfo, Title) == 0x0003B8, "Member 'UPyWidget_RankRule_RuleInfo::Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankRule_RuleInfo, Desc) == 0x0003D0, "Member 'UPyWidget_RankRule_RuleInfo::Desc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankRule_RuleInfo, Icon) == 0x0003E8, "Member 'UPyWidget_RankRule_RuleInfo::Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankRule_RuleInfo, IsItemType) == 0x0003F0, "Member 'UPyWidget_RankRule_RuleInfo::IsItemType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_RankRule_RuleInfo, Reward) == 0x0003F8, "Member 'UPyWidget_RankRule_RuleInfo::Reward' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RankRule_RuleInfo;
 
 // PythonClass PyWidget_RankRule.PyWidget_RankRulePanel
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_RankRulePanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Class_InactiveWarningToolTip;                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Class_InactiveWarningToolTip;                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -154,19 +157,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankRulePanel">();
+		STATIC_CLASS_IMPL("PyWidget_RankRulePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankRulePanel")
 	}
 	static class UPyWidget_RankRulePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankRulePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_RankRulePanel) == 0x000008, "Wrong alignment on UPyWidget_RankRulePanel");
-static_assert(sizeof(UPyWidget_RankRulePanel) == 0x0005C8, "Wrong size on UPyWidget_RankRulePanel");
-static_assert(offsetof(UPyWidget_RankRulePanel, Class_InactiveWarningToolTip) == 0x0005C0, "Member 'UPyWidget_RankRulePanel::Class_InactiveWarningToolTip' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_RankRulePanel;
 
 // PythonClass PyWidget_RankRule.PyWidget_Rank_SeasonMap_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Rank_SeasonMap_Item final : public UPyMarvelUserWidget
 {
 public:
@@ -177,15 +182,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_SeasonMap_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_SeasonMap_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_SeasonMap_Item")
 	}
 	static class UPyWidget_Rank_SeasonMap_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_SeasonMap_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_SeasonMap_Item) == 0x000008, "Wrong alignment on UPyWidget_Rank_SeasonMap_Item");
-static_assert(sizeof(UPyWidget_Rank_SeasonMap_Item) == 0x0005C0, "Wrong size on UPyWidget_Rank_SeasonMap_Item");
+DUMPER7_ASSERTS_UPyWidget_Rank_SeasonMap_Item;
 
 }
 

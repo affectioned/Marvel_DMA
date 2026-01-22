@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActorComponent_CrystalHoverState">();
+		STATIC_CLASS_IMPL("PyActorComponent_CrystalHoverState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActorComponent_CrystalHoverState")
 	}
 	static class UPyActorComponent_CrystalHoverState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyActorComponent_CrystalHoverState>();
 	}
 };
-static_assert(alignof(UPyActorComponent_CrystalHoverState) == 0x000008, "Wrong alignment on UPyActorComponent_CrystalHoverState");
-static_assert(sizeof(UPyActorComponent_CrystalHoverState) == 0x000108, "Wrong size on UPyActorComponent_CrystalHoverState");
+DUMPER7_ASSERTS_UPyActorComponent_CrystalHoverState;
 
 }
 

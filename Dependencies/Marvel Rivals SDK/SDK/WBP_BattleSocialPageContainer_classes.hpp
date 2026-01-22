@@ -17,25 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleSocialPageContainer.WBP_BattleSocialPageContainer_C
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UWBP_BattleSocialPageContainer_C final : public UPyWidget_BattleSocialPageContainer
 {
 public:
-	class ULazyWidget*                            Lazy_VoicePanel;                                   // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_VoiceMultipleTeamsPanel;                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_VoicePanel;                                   // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleSocialPageContainer_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleSocialPageContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleSocialPageContainer_C")
 	}
 	static class UWBP_BattleSocialPageContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleSocialPageContainer_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleSocialPageContainer_C) == 0x000008, "Wrong alignment on UWBP_BattleSocialPageContainer_C");
-static_assert(sizeof(UWBP_BattleSocialPageContainer_C) == 0x0005C8, "Wrong size on UWBP_BattleSocialPageContainer_C");
-static_assert(offsetof(UWBP_BattleSocialPageContainer_C, Lazy_VoicePanel) == 0x0005C0, "Member 'UWBP_BattleSocialPageContainer_C::Lazy_VoicePanel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BattleSocialPageContainer_C;
 
 }
 

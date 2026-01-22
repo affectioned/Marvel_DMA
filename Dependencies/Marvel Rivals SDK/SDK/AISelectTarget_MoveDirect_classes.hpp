@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_MoveDirect_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_MoveDirect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_MoveDirect_C")
 	}
 	static class UAISelectTarget_MoveDirect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_MoveDirect_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_MoveDirect_C) == 0x000008, "Wrong alignment on UAISelectTarget_MoveDirect_C");
-static_assert(sizeof(UAISelectTarget_MoveDirect_C) == 0x000078, "Wrong size on UAISelectTarget_MoveDirect_C");
-static_assert(offsetof(UAISelectTarget_MoveDirect_C, Distance) == 0x000070, "Member 'UAISelectTarget_MoveDirect_C::Distance' has a wrong offset!");
+DUMPER7_ASSERTS_UAISelectTarget_MoveDirect_C;
 
 }
 

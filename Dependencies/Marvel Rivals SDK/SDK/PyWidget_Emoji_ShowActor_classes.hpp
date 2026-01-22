@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "python_enums_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "python_enums_structs.hpp"
 
 
 namespace SDK
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Emoji_ShowActor">();
+		STATIC_CLASS_IMPL("PyWidget_Emoji_ShowActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Emoji_ShowActor")
 	}
 	static class UPyWidget_Emoji_ShowActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Emoji_ShowActor>();
 	}
 };
-static_assert(alignof(UPyWidget_Emoji_ShowActor) == 0x000010, "Wrong alignment on UPyWidget_Emoji_ShowActor");
-static_assert(sizeof(UPyWidget_Emoji_ShowActor) == 0x0008D0, "Wrong size on UPyWidget_Emoji_ShowActor");
-static_assert(offsetof(UPyWidget_Emoji_ShowActor, EmojiTypeSize) == 0x000870, "Member 'UPyWidget_Emoji_ShowActor::EmojiTypeSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Emoji_ShowActor, OnPlayEmojiAnimFinished) == 0x0008C0, "Member 'UPyWidget_Emoji_ShowActor::OnPlayEmojiAnimFinished' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Emoji_ShowActor;
 
 }
 

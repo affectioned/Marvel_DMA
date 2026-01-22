@@ -41,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGroupMoveActor">();
+		STATIC_CLASS_IMPL("PyGroupMoveActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGroupMoveActor")
 	}
 	static class APyGroupMoveActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyGroupMoveActor>();
 	}
 };
-static_assert(alignof(APyGroupMoveActor) == 0x000010, "Wrong alignment on APyGroupMoveActor");
-static_assert(sizeof(APyGroupMoveActor) == 0x000770, "Wrong size on APyGroupMoveActor");
-static_assert(offsetof(APyGroupMoveActor, DispatcherCountdownStep) == 0x0006F0, "Member 'APyGroupMoveActor::DispatcherCountdownStep' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, DispatcherStartDelayWait) == 0x000700, "Member 'APyGroupMoveActor::DispatcherStartDelayWait' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, SpeedForward) == 0x000710, "Member 'APyGroupMoveActor::SpeedForward' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, SpeedBackToForward) == 0x000720, "Member 'APyGroupMoveActor::SpeedBackToForward' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, SpeedBack) == 0x000730, "Member 'APyGroupMoveActor::SpeedBack' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, bLoop) == 0x000740, "Member 'APyGroupMoveActor::bLoop' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, bUsePenetrationComponent) == 0x000741, "Member 'APyGroupMoveActor::bUsePenetrationComponent' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, MoveFinishTag) == 0x000748, "Member 'APyGroupMoveActor::MoveFinishTag' has a wrong offset!");
-static_assert(offsetof(APyGroupMoveActor, BackFinishTag) == 0x000758, "Member 'APyGroupMoveActor::BackFinishTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyGroupMoveActor;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_101431_WeaponFireTask final
 public:
 	class UMarvelWeaponTask_Firing*               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101431_WeaponFireTask) == 0x000008, "Wrong alignment on PyAbility_101431_WeaponFireTask");
-static_assert(sizeof(PyAbility_101431_WeaponFireTask) == 0x000008, "Wrong size on PyAbility_101431_WeaponFireTask");
-static_assert(offsetof(PyAbility_101431_WeaponFireTask, ReturnValue) == 0x000000, "Member 'PyAbility_101431_WeaponFireTask::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101431_WeaponFireTask;
 
 }
 

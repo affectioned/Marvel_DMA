@@ -27,12 +27,7 @@ public:
 	int32                                         ItemNum;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Multiple;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetItemData) == 0x000008, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetItemData");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetItemData) == 0x000020, "Wrong size on PyWidget_CareerCustomizeItemBase_SetItemData");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetItemData, ItemID) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetItemData::ItemID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetItemData, ItemType) == 0x000010, "Member 'PyWidget_CareerCustomizeItemBase_SetItemData::ItemType' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetItemData, ItemNum) == 0x000014, "Member 'PyWidget_CareerCustomizeItemBase_SetItemData::ItemNum' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetItemData, Multiple) == 0x000018, "Member 'PyWidget_CareerCustomizeItemBase_SetItemData::Multiple' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetItemData;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +36,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsSelected final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsSelected) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsSelected");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsSelected) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsSelected");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsSelected, IsSelected) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsSelected::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsSelected;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsLocked
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +45,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsLocked final
 public:
 	bool                                          IsLocked;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsLocked) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsLocked");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsLocked) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsLocked");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsLocked, IsLocked) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsLocked::IsLocked' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsLocked;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsEquipped
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +54,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsEquipped final
 public:
 	bool                                          IsEquipped;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsEquipped) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsEquipped");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsEquipped) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsEquipped");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsEquipped, IsEquipped) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsEquipped::IsEquipped' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsEquipped;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsShowRed
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +63,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsShowRed final
 public:
 	bool                                          IsShowRed;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsShowRed) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsShowRed");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsShowRed) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsShowRed");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsShowRed, IsShowRed) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsShowRed::IsShowRed' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsShowRed;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsNameVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +72,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsNameVisible final
 public:
 	bool                                          IsNameVisible;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsNameVisible) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsNameVisible");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsNameVisible) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsNameVisible");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsNameVisible, IsNameVisible) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsNameVisible::IsNameVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsNameVisible;
 
 // PythonFunction PyWidget_CareerCustomizePanelBase.PyWidget_CareerCustomizeItemBase.SetIsNewReddotType
 // 0x0001 (0x0001 - 0x0000)
@@ -96,9 +81,7 @@ struct PyWidget_CareerCustomizeItemBase_SetIsNewReddotType final
 public:
 	bool                                          IsNewReddotType;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerCustomizeItemBase_SetIsNewReddotType) == 0x000001, "Wrong alignment on PyWidget_CareerCustomizeItemBase_SetIsNewReddotType");
-static_assert(sizeof(PyWidget_CareerCustomizeItemBase_SetIsNewReddotType) == 0x000001, "Wrong size on PyWidget_CareerCustomizeItemBase_SetIsNewReddotType");
-static_assert(offsetof(PyWidget_CareerCustomizeItemBase_SetIsNewReddotType, IsNewReddotType) == 0x000000, "Member 'PyWidget_CareerCustomizeItemBase_SetIsNewReddotType::IsNewReddotType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerCustomizeItemBase_SetIsNewReddotType;
 
 }
 

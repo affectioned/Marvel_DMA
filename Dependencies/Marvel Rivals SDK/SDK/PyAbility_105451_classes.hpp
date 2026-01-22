@@ -12,8 +12,8 @@
 
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "Hero_1054_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
@@ -30,20 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105451">();
+		STATIC_CLASS_IMPL("PyConfig_105451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105451")
 	}
 	static class UPyConfig_105451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105451>();
 	}
 };
-static_assert(alignof(UPyConfig_105451) == 0x000008, "Wrong alignment on UPyConfig_105451");
-static_assert(sizeof(UPyConfig_105451) == 0x0000F8, "Wrong size on UPyConfig_105451");
-static_assert(offsetof(UPyConfig_105451, ActiveUserSetting) == 0x0000C0, "Member 'UPyConfig_105451::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105451, PursueTagEvent) == 0x0000E8, "Member 'UPyConfig_105451::PursueTagEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105451;
 
 // PythonClass PyAbility_105451.PyAbility_105451
-// 0x0000 (0x2C40 - 0x2C40)
+// 0x0000 (0x2C90 - 0x2C90)
 class UPyAbility_105451 : public UAbility_109
 {
 public:
@@ -59,18 +60,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105451">();
+		STATIC_CLASS_IMPL("PyAbility_105451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105451")
 	}
 	static class UPyAbility_105451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105451>();
 	}
 };
-static_assert(alignof(UPyAbility_105451) == 0x000008, "Wrong alignment on UPyAbility_105451");
-static_assert(sizeof(UPyAbility_105451) == 0x002C40, "Wrong size on UPyAbility_105451");
+DUMPER7_ASSERTS_UPyAbility_105451;
 
 // PythonClass PyAbility_105451.PyCue_Ability_Loop_10545101
-// 0x0000 (0x14B0 - 0x14B0)
+// 0x0000 (0x14C0 - 0x14C0)
 class APyCue_Ability_Loop_10545101 final : public ACue_Ability_Loop_10545101
 {
 public:
@@ -81,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10545101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10545101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10545101")
 	}
 	static class APyCue_Ability_Loop_10545101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10545101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10545101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10545101");
-static_assert(sizeof(APyCue_Ability_Loop_10545101) == 0x0014B0, "Wrong size on APyCue_Ability_Loop_10545101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10545101;
 
 }
 

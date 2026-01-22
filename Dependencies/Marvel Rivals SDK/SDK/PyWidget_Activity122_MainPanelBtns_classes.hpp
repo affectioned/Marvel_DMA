@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainRankBtn
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity122_MainRankBtn final : public UPyWidget_Button
 {
 public:
@@ -28,24 +28,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_MainRankBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_MainRankBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_MainRankBtn")
 	}
 	static class UPyWidget_Activity122_MainRankBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_MainRankBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_MainRankBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity122_MainRankBtn");
-static_assert(sizeof(UPyWidget_Activity122_MainRankBtn) == 0x000728, "Wrong size on UPyWidget_Activity122_MainRankBtn");
+DUMPER7_ASSERTS_UPyWidget_Activity122_MainRankBtn;
 
 // PythonClass PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainRewardBtn
-// 0x0040 (0x0768 - 0x0728)
+// 0x0040 (0x07C0 - 0x0780)
 class UPyWidget_Activity122_MainRewardBtn final : public UPyWidget_Button
 {
 public:
-	struct FSlateColor                            Color_DisableColor;                                // 0x0728(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_TopNormalColor;                              // 0x073C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_BottomNormalColor;                           // 0x0750(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_DisableColor;                                // 0x0780(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_TopNormalColor;                              // 0x0794(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_BottomNormalColor;                           // 0x07A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,27 +59,23 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_MainRewardBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_MainRewardBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_MainRewardBtn")
 	}
 	static class UPyWidget_Activity122_MainRewardBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_MainRewardBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_MainRewardBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity122_MainRewardBtn");
-static_assert(sizeof(UPyWidget_Activity122_MainRewardBtn) == 0x000768, "Wrong size on UPyWidget_Activity122_MainRewardBtn");
-static_assert(offsetof(UPyWidget_Activity122_MainRewardBtn, Color_DisableColor) == 0x000728, "Member 'UPyWidget_Activity122_MainRewardBtn::Color_DisableColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_MainRewardBtn, Color_TopNormalColor) == 0x00073C, "Member 'UPyWidget_Activity122_MainRewardBtn::Color_TopNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_MainRewardBtn, Color_BottomNormalColor) == 0x000750, "Member 'UPyWidget_Activity122_MainRewardBtn::Color_BottomNormalColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_MainRewardBtn;
 
 // PythonClass PyWidget_Activity122_MainPanelBtns.PyWidget_Activity122_MainMatchBtn
-// 0x0020 (0x0748 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity122_MainMatchBtn final : public UPyWidget_Button
 {
-public:
-	TMulticastInlineDelegate<void()>              OnDisableHovered;                                  // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDisableUnhovered;                                // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
 public:
 	void OnInitialized();
 	void Construct();
@@ -87,17 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_MainMatchBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_MainMatchBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_MainMatchBtn")
 	}
 	static class UPyWidget_Activity122_MainMatchBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_MainMatchBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_MainMatchBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity122_MainMatchBtn");
-static_assert(sizeof(UPyWidget_Activity122_MainMatchBtn) == 0x000748, "Wrong size on UPyWidget_Activity122_MainMatchBtn");
-static_assert(offsetof(UPyWidget_Activity122_MainMatchBtn, OnDisableHovered) == 0x000728, "Member 'UPyWidget_Activity122_MainMatchBtn::OnDisableHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity122_MainMatchBtn, OnDisableUnhovered) == 0x000738, "Member 'UPyWidget_Activity122_MainMatchBtn::OnDisableUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity122_MainMatchBtn;
 
 }
 

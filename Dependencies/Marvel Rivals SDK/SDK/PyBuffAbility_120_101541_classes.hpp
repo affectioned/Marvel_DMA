@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101541.PyBuffAbility_120_10154190
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10154190 final : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FGameplayTag                           ListenAbilityTag;                                  // 0x1370(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraScopeID;                                      // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ListenAbilityTag;                                  // 0x1388(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraScopeID;                                      // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10154190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10154190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10154190")
 	}
 	static class UPyBuffAbility_120_10154190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10154190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10154190) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10154190");
-static_assert(sizeof(UPyBuffAbility_120_10154190) == 0x001380, "Wrong size on UPyBuffAbility_120_10154190");
-static_assert(offsetof(UPyBuffAbility_120_10154190, ListenAbilityTag) == 0x001370, "Member 'UPyBuffAbility_120_10154190::ListenAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10154190, ExtraScopeID) == 0x00137C, "Member 'UPyBuffAbility_120_10154190::ExtraScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10154190;
 
 }
 

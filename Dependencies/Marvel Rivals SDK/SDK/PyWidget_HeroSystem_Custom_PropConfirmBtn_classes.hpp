@@ -17,35 +17,35 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Custom_PropConfirmBtn.PyWidget_HeroSystem_Custom_PropConfirmBtn
-// 0x0030 (0x06D0 - 0x06A0)
+// 0x0030 (0x06D8 - 0x06A8)
 class UPyWidget_HeroSystem_Custom_PropConfirmBtn final : public UPyWidget_MallDetail_ConfirmBtn
 {
 public:
-	class UTexture2D*                             Icon_Normal;                                       // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Disabled;                                     // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPriceClicked;                                    // 0x06B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBtnPureClicked;                                  // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Normal;                                       // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Disabled;                                     // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPriceClicked;                                    // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBtnPureClicked;                                  // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Destruct();
+	void trigger_focus_func();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Custom_PropConfirmBtn">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Custom_PropConfirmBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Custom_PropConfirmBtn")
 	}
 	static class UPyWidget_HeroSystem_Custom_PropConfirmBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Custom_PropConfirmBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Custom_PropConfirmBtn) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Custom_PropConfirmBtn");
-static_assert(sizeof(UPyWidget_HeroSystem_Custom_PropConfirmBtn) == 0x0006D0, "Wrong size on UPyWidget_HeroSystem_Custom_PropConfirmBtn");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_PropConfirmBtn, Icon_Normal) == 0x0006A0, "Member 'UPyWidget_HeroSystem_Custom_PropConfirmBtn::Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_PropConfirmBtn, Icon_Disabled) == 0x0006A8, "Member 'UPyWidget_HeroSystem_Custom_PropConfirmBtn::Icon_Disabled' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_PropConfirmBtn, OnPriceClicked) == 0x0006B0, "Member 'UPyWidget_HeroSystem_Custom_PropConfirmBtn::OnPriceClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_PropConfirmBtn, OnBtnPureClicked) == 0x0006C0, "Member 'UPyWidget_HeroSystem_Custom_PropConfirmBtn::OnBtnPureClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Custom_PropConfirmBtn;
 
 }
 

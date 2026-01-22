@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Buff_Dying.Cue_Buff_Dying_C
-// 0x0000 (0x1650 - 0x1650)
+// 0x0000 (0x1700 - 0x1700)
 class ACue_Buff_Dying_C final : public ACue_Buff_Dying
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Buff_Dying_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Buff_Dying_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_Dying_C")
 	}
 	static class ACue_Buff_Dying_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_Dying_C>();
 	}
 };
-static_assert(alignof(ACue_Buff_Dying_C) == 0x000010, "Wrong alignment on ACue_Buff_Dying_C");
-static_assert(sizeof(ACue_Buff_Dying_C) == 0x001650, "Wrong size on ACue_Buff_Dying_C");
+DUMPER7_ASSERTS_ACue_Buff_Dying_C;
 
 }
 

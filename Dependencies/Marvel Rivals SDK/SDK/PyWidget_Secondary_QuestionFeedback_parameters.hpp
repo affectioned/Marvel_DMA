@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox0;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox1
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox1;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox2
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox2;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox3
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +58,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox3;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox4
 // 0x0010 (0x0010 - 0x0000)
@@ -81,10 +69,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox4;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox5
 // 0x0010 (0x0010 - 0x0000)
@@ -95,10 +80,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox5;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox6
 // 0x0010 (0x0010 - 0x0000)
@@ -109,10 +91,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox6;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox7
 // 0x0010 (0x0010 - 0x0000)
@@ -123,10 +102,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox7;
 
 // PythonFunction PyWidget_Secondary_QuestionFeedback.PyWidget_Secondary_QuestionFeedback.NavigateToCheckBox8
 // 0x0010 (0x0010 - 0x0000)
@@ -137,10 +113,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8) == 0x000008, "Wrong alignment on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8");
-static_assert(sizeof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8) == 0x000010, "Wrong size on PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_QuestionFeedback_NavigateToCheckBox8;
 
 }
 

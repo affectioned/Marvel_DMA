@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "GameplayTags_structs.hpp"
+#include "MarvelLevel_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 #include "PyLevel1399_001_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
@@ -41,65 +41,68 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_001_Comp">();
+		STATIC_CLASS_IMPL("PyLevel1399_001_Comp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_001_Comp")
 	}
 	static class UPyLevel1399_001_Comp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevel1399_001_Comp>();
 	}
 };
-static_assert(alignof(UPyLevel1399_001_Comp) == 0x000008, "Wrong alignment on UPyLevel1399_001_Comp");
-static_assert(sizeof(UPyLevel1399_001_Comp) == 0x000130, "Wrong size on UPyLevel1399_001_Comp");
-static_assert(offsetof(UPyLevel1399_001_Comp, ProjectionName) == 0x000108, "Member 'UPyLevel1399_001_Comp::ProjectionName' has a wrong offset!");
-static_assert(offsetof(UPyLevel1399_001_Comp, DestructionState) == 0x000118, "Member 'UPyLevel1399_001_Comp::DestructionState' has a wrong offset!");
-static_assert(offsetof(UPyLevel1399_001_Comp, OnLevel1399_001_Comp_OnRep_DestructionState) == 0x000120, "Member 'UPyLevel1399_001_Comp::OnLevel1399_001_Comp_OnRep_DestructionState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevel1399_001_Comp;
 
 // PythonClass PyLevel1399_001.PyLevel1399_001_Base
-// 0x0000 (0x0B70 - 0x0B70)
+// 0x0000 (0x0B90 - 0x0B90)
 class APyLevel1399_001_Base : public AMarvelLevelSummonedBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_001_Base">();
+		STATIC_CLASS_IMPL("PyLevel1399_001_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_001_Base")
 	}
 	static class APyLevel1399_001_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_001_Base>();
 	}
 };
-static_assert(alignof(APyLevel1399_001_Base) == 0x000010, "Wrong alignment on APyLevel1399_001_Base");
-static_assert(sizeof(APyLevel1399_001_Base) == 0x000B70, "Wrong size on APyLevel1399_001_Base");
+DUMPER7_ASSERTS_APyLevel1399_001_Base;
 
 // PythonClass PyLevel1399_001.PyLevel1399_001
-// 0x0160 (0x0CD0 - 0x0B70)
+// 0x0160 (0x0CF0 - 0x0B90)
 class APyLevel1399_001 final : public APyLevel1399_001_Base
 {
 public:
-	struct FSplineTraceVelocity                   InitMoveSpeed;                                     // 0x0B70(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 ProjectionName;                                    // 0x0B78(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPyLevel1399_001_TraceConfig>   TraceConfigs;                                      // 0x0B88(0x0010)(Edit, NativeAccessSpecifierPublic)
-	struct FVector                                ProjectingLocation;                                // 0x0B98(0x0018)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VFXHealthRatio;                                    // 0x0BB0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VFXHealthRatioParamValueMax;                       // 0x0BB4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VFXHealthRatioParamValueVisibleMin;                // 0x0BB8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VFXHealthRatioDuration;                            // 0x0BBC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         VFXRightOrderState;                                // 0x0BC0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BC4[0x4];                                      // 0x0BC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AudioEventStart;                                   // 0x0BC8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AudioEventEnd;                                     // 0x0BD0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AudioEventRecover;                                 // 0x0BD8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AudioEventVFXRightOrder;                           // 0x0BE0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  InsideGrantedTags;                                 // 0x0BE8(0x0068)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
-	int32                                         ThisCollisionState;                                // 0x0C50(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C54[0x4];                                      // 0x0C54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 SpecialKillSummonedIDs;                            // 0x0C58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_MoveStart;                     // 0x0C68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_FieldTriggered;                // 0x0C78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_MoveEnd;                       // 0x0C88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_OnRep_ProjectingLocation;      // 0x0C98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Area, class AMarvelBaseCharacter* Char)> OnClientPlayerEnterArea; // 0x0CA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Area, class AMarvelBaseCharacter* Char)> OnClientPlayerExitArea; // 0x0CB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FSplineTraceVelocity                   InitMoveSpeed;                                     // 0x0B90(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 ProjectionName;                                    // 0x0B98(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPyLevel1399_001_TraceConfig>   TraceConfigs;                                      // 0x0BA8(0x0010)(Edit, NativeAccessSpecifierPublic)
+	struct FVector                                ProjectingLocation;                                // 0x0BB8(0x0018)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VFXHealthRatio;                                    // 0x0BD0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VFXHealthRatioParamValueMax;                       // 0x0BD4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VFXHealthRatioParamValueVisibleMin;                // 0x0BD8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VFXHealthRatioDuration;                            // 0x0BDC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         VFXRightOrderState;                                // 0x0BE0(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AudioEventStart;                                   // 0x0BE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AudioEventEnd;                                     // 0x0BF0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AudioEventRecover;                                 // 0x0BF8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AudioEventVFXRightOrder;                           // 0x0C00(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  InsideGrantedTags;                                 // 0x0C08(0x0068)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
+	int32                                         ThisCollisionState;                                // 0x0C70(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C74[0x4];                                      // 0x0C74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 SpecialKillSummonedIDs;                            // 0x0C78(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_MoveStart;                     // 0x0C88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_FieldTriggered;                // 0x0C98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_MoveEnd;                       // 0x0CA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Obj)> OnLevel1399_001_OnRep_ProjectingLocation;      // 0x0CB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Area, class AMarvelBaseCharacter* Char)> OnClientPlayerEnterArea; // 0x0CC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Area, class AMarvelBaseCharacter* Char)> OnClientPlayerExitArea; // 0x0CD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -116,37 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_001">();
+		STATIC_CLASS_IMPL("PyLevel1399_001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_001")
 	}
 	static class APyLevel1399_001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_001>();
 	}
 };
-static_assert(alignof(APyLevel1399_001) == 0x000010, "Wrong alignment on APyLevel1399_001");
-static_assert(sizeof(APyLevel1399_001) == 0x000CD0, "Wrong size on APyLevel1399_001");
-static_assert(offsetof(APyLevel1399_001, InitMoveSpeed) == 0x000B70, "Member 'APyLevel1399_001::InitMoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, ProjectionName) == 0x000B78, "Member 'APyLevel1399_001::ProjectionName' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, TraceConfigs) == 0x000B88, "Member 'APyLevel1399_001::TraceConfigs' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, ProjectingLocation) == 0x000B98, "Member 'APyLevel1399_001::ProjectingLocation' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, VFXHealthRatio) == 0x000BB0, "Member 'APyLevel1399_001::VFXHealthRatio' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, VFXHealthRatioParamValueMax) == 0x000BB4, "Member 'APyLevel1399_001::VFXHealthRatioParamValueMax' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, VFXHealthRatioParamValueVisibleMin) == 0x000BB8, "Member 'APyLevel1399_001::VFXHealthRatioParamValueVisibleMin' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, VFXHealthRatioDuration) == 0x000BBC, "Member 'APyLevel1399_001::VFXHealthRatioDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, VFXRightOrderState) == 0x000BC0, "Member 'APyLevel1399_001::VFXRightOrderState' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, AudioEventStart) == 0x000BC8, "Member 'APyLevel1399_001::AudioEventStart' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, AudioEventEnd) == 0x000BD0, "Member 'APyLevel1399_001::AudioEventEnd' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, AudioEventRecover) == 0x000BD8, "Member 'APyLevel1399_001::AudioEventRecover' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, AudioEventVFXRightOrder) == 0x000BE0, "Member 'APyLevel1399_001::AudioEventVFXRightOrder' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, InsideGrantedTags) == 0x000BE8, "Member 'APyLevel1399_001::InsideGrantedTags' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, ThisCollisionState) == 0x000C50, "Member 'APyLevel1399_001::ThisCollisionState' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, SpecialKillSummonedIDs) == 0x000C58, "Member 'APyLevel1399_001::SpecialKillSummonedIDs' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnLevel1399_001_MoveStart) == 0x000C68, "Member 'APyLevel1399_001::OnLevel1399_001_MoveStart' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnLevel1399_001_FieldTriggered) == 0x000C78, "Member 'APyLevel1399_001::OnLevel1399_001_FieldTriggered' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnLevel1399_001_MoveEnd) == 0x000C88, "Member 'APyLevel1399_001::OnLevel1399_001_MoveEnd' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnLevel1399_001_OnRep_ProjectingLocation) == 0x000C98, "Member 'APyLevel1399_001::OnLevel1399_001_OnRep_ProjectingLocation' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnClientPlayerEnterArea) == 0x000CA8, "Member 'APyLevel1399_001::OnClientPlayerEnterArea' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_001, OnClientPlayerExitArea) == 0x000CB8, "Member 'APyLevel1399_001::OnClientPlayerExitArea' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevel1399_001;
 
 }
 

@@ -17,6 +17,16 @@
 namespace SDK
 {
 
+// Enum Hero_1028.EAbilityState_102871
+// NumValues: 0x0004
+enum class EAbilityState_102871 : uint8
+{
+	Input_None                               = 0,
+	Input_Main                               = 1,
+	Input_Extra                              = 2,
+	Input_MAX                                = 3,
+};
+
 // Enum Hero_1028.EState_102881
 // NumValues: 0x0005
 enum class EState_102881 : uint8
@@ -46,11 +56,7 @@ public:
 	class FName                                   MaterialName;                                      // 0x0008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaterialAnimTime;                                  // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAnimConfig_102871) == 0x000008, "Wrong alignment on FMaterialAnimConfig_102871");
-static_assert(sizeof(FMaterialAnimConfig_102871) == 0x000018, "Wrong size on FMaterialAnimConfig_102871");
-static_assert(offsetof(FMaterialAnimConfig_102871, MaterialCurve) == 0x000000, "Member 'FMaterialAnimConfig_102871::MaterialCurve' has a wrong offset!");
-static_assert(offsetof(FMaterialAnimConfig_102871, MaterialName) == 0x000008, "Member 'FMaterialAnimConfig_102871::MaterialName' has a wrong offset!");
-static_assert(offsetof(FMaterialAnimConfig_102871, MaterialAnimTime) == 0x000014, "Member 'FMaterialAnimConfig_102871::MaterialAnimTime' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAnimConfig_102871;
 
 // ScriptStruct Hero_1028.MaterialAnimState_102871
 // 0x0020 (0x0020 - 0x0000)
@@ -60,9 +66,7 @@ public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveFloat*                            CurrentCurve;                                      // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAnimState_102871) == 0x000008, "Wrong alignment on FMaterialAnimState_102871");
-static_assert(sizeof(FMaterialAnimState_102871) == 0x000020, "Wrong size on FMaterialAnimState_102871");
-static_assert(offsetof(FMaterialAnimState_102871, CurrentCurve) == 0x000018, "Member 'FMaterialAnimState_102871::CurrentCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAnimState_102871;
 
 // ScriptStruct Hero_1028.SummonedAnimInfo_10288101
 // 0x0010 (0x0010 - 0x0000)
@@ -74,12 +78,7 @@ public:
 	float                                         Forward;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Right;                                             // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSummonedAnimInfo_10288101) == 0x000004, "Wrong alignment on FSummonedAnimInfo_10288101");
-static_assert(sizeof(FSummonedAnimInfo_10288101) == 0x000010, "Wrong size on FSummonedAnimInfo_10288101");
-static_assert(offsetof(FSummonedAnimInfo_10288101, Pitch) == 0x000000, "Member 'FSummonedAnimInfo_10288101::Pitch' has a wrong offset!");
-static_assert(offsetof(FSummonedAnimInfo_10288101, Yaw) == 0x000004, "Member 'FSummonedAnimInfo_10288101::Yaw' has a wrong offset!");
-static_assert(offsetof(FSummonedAnimInfo_10288101, Forward) == 0x000008, "Member 'FSummonedAnimInfo_10288101::Forward' has a wrong offset!");
-static_assert(offsetof(FSummonedAnimInfo_10288101, Right) == 0x00000C, "Member 'FSummonedAnimInfo_10288101::Right' has a wrong offset!");
+DUMPER7_ASSERTS_FSummonedAnimInfo_10288101;
 
 // ScriptStruct Hero_1028.MaterialAnimConfig_102881
 // 0x0018 (0x0018 - 0x0000)
@@ -90,11 +89,7 @@ public:
 	class FName                                   MaterialName;                                      // 0x0008(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaterialAnimTime;                                  // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAnimConfig_102881) == 0x000008, "Wrong alignment on FMaterialAnimConfig_102881");
-static_assert(sizeof(FMaterialAnimConfig_102881) == 0x000018, "Wrong size on FMaterialAnimConfig_102881");
-static_assert(offsetof(FMaterialAnimConfig_102881, MaterialCurve) == 0x000000, "Member 'FMaterialAnimConfig_102881::MaterialCurve' has a wrong offset!");
-static_assert(offsetof(FMaterialAnimConfig_102881, MaterialName) == 0x000008, "Member 'FMaterialAnimConfig_102881::MaterialName' has a wrong offset!");
-static_assert(offsetof(FMaterialAnimConfig_102881, MaterialAnimTime) == 0x000014, "Member 'FMaterialAnimConfig_102881::MaterialAnimTime' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAnimConfig_102881;
 
 // ScriptStruct Hero_1028.MaterialAnimState_102881
 // 0x0020 (0x0020 - 0x0000)
@@ -104,9 +99,7 @@ public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveFloat*                            CurrentCurve;                                      // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialAnimState_102881) == 0x000008, "Wrong alignment on FMaterialAnimState_102881");
-static_assert(sizeof(FMaterialAnimState_102881) == 0x000020, "Wrong size on FMaterialAnimState_102881");
-static_assert(offsetof(FMaterialAnimState_102881, CurrentCurve) == 0x000018, "Member 'FMaterialAnimState_102881::CurrentCurve' has a wrong offset!");
+DUMPER7_ASSERTS_FMaterialAnimState_102881;
 
 // ScriptStruct Hero_1028.MuzzleFXParameter_102881
 // 0x0028 (0x0028 - 0x0000)
@@ -117,10 +110,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               MuzzleSocketRotator;                               // 0x0010(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMuzzleFXParameter_102881) == 0x000008, "Wrong alignment on FMuzzleFXParameter_102881");
-static_assert(sizeof(FMuzzleFXParameter_102881) == 0x000028, "Wrong size on FMuzzleFXParameter_102881");
-static_assert(offsetof(FMuzzleFXParameter_102881, MuzzleSocketName) == 0x000000, "Member 'FMuzzleFXParameter_102881::MuzzleSocketName' has a wrong offset!");
-static_assert(offsetof(FMuzzleFXParameter_102881, MuzzleSocketRotator) == 0x000010, "Member 'FMuzzleFXParameter_102881::MuzzleSocketRotator' has a wrong offset!");
+DUMPER7_ASSERTS_FMuzzleFXParameter_102881;
 
 // ScriptStruct Hero_1028.UltronAnimInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -134,13 +124,7 @@ public:
 	class UAnimSequence*                          WeaponDisplayAnim;                                 // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          WeaponDisappearAnim;                               // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUltronAnimInfo) == 0x000008, "Wrong alignment on FUltronAnimInfo");
-static_assert(sizeof(FUltronAnimInfo) == 0x000030, "Wrong size on FUltronAnimInfo");
-static_assert(offsetof(FUltronAnimInfo, ControlTag) == 0x000000, "Member 'FUltronAnimInfo::ControlTag' has a wrong offset!");
-static_assert(offsetof(FUltronAnimInfo, HiddenTag) == 0x00000C, "Member 'FUltronAnimInfo::HiddenTag' has a wrong offset!");
-static_assert(offsetof(FUltronAnimInfo, bIsLeftWeapon) == 0x000018, "Member 'FUltronAnimInfo::bIsLeftWeapon' has a wrong offset!");
-static_assert(offsetof(FUltronAnimInfo, WeaponDisplayAnim) == 0x000020, "Member 'FUltronAnimInfo::WeaponDisplayAnim' has a wrong offset!");
-static_assert(offsetof(FUltronAnimInfo, WeaponDisappearAnim) == 0x000028, "Member 'FUltronAnimInfo::WeaponDisappearAnim' has a wrong offset!");
+DUMPER7_ASSERTS_FUltronAnimInfo;
 
 }
 

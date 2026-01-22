@@ -21,9 +21,7 @@ struct PyWidget3D_Ability100015_Waiting_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Ability100015_Waiting_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget3D_Ability100015_Waiting_ShouldBeVisible");
-static_assert(sizeof(PyWidget3D_Ability100015_Waiting_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget3D_Ability100015_Waiting_ShouldBeVisible");
-static_assert(offsetof(PyWidget3D_Ability100015_Waiting_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget3D_Ability100015_Waiting_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Ability100015_Waiting_ShouldBeVisible;
 
 // PythonFunction PyAbility_100015.PyWidget3D_Ability100015_Confirmed.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget3D_Ability100015_Confirmed_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Ability100015_Confirmed_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget3D_Ability100015_Confirmed_ShouldBeVisible");
-static_assert(sizeof(PyWidget3D_Ability100015_Confirmed_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget3D_Ability100015_Confirmed_ShouldBeVisible");
-static_assert(offsetof(PyWidget3D_Ability100015_Confirmed_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget3D_Ability100015_Confirmed_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Ability100015_Confirmed_ShouldBeVisible;
 
 // PythonFunction PyAbility_100015.PyWidget3D_Ability100015_Confirmed.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget3D_Ability100015_Confirmed_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Ability100015_Confirmed_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget3D_Ability100015_Confirmed_OnAnimationFinished");
-static_assert(sizeof(PyWidget3D_Ability100015_Confirmed_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget3D_Ability100015_Confirmed_OnAnimationFinished");
-static_assert(offsetof(PyWidget3D_Ability100015_Confirmed_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget3D_Ability100015_Confirmed_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Ability100015_Confirmed_OnAnimationFinished;
 
 }
 

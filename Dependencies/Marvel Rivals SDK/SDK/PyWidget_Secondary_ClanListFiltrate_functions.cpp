@@ -16,6 +16,25 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_Secondary_ClanListFiltrate.PyWidget_Secondary_ClanListFiltrate.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Secondary_ClanListFiltrate::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Secondary_ClanListFiltrate", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Secondary_ClanListFiltrate.PyWidget_Secondary_ClanListFiltrate.Construct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

@@ -21,9 +21,7 @@ struct PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityEvent_Item_Base_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_ActivityEvent_Main.PyWidget_ActivityEvent_Main.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_ActivityEvent_Main_OnVisibleChanged final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityEvent_Main_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_ActivityEvent_Main_OnVisibleChanged");
-static_assert(sizeof(PyWidget_ActivityEvent_Main_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_ActivityEvent_Main_OnVisibleChanged");
-static_assert(offsetof(PyWidget_ActivityEvent_Main_OnVisibleChanged, Visible) == 0x000000, "Member 'PyWidget_ActivityEvent_Main_OnVisibleChanged::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityEvent_Main_OnVisibleChanged;
 
 // PythonFunction PyWidget_ActivityEvent_Main.PyWidget_ActivityEvent_Main.on_try_scroll_when_next_focusable_child_change
 // 0x000C (0x000C - 0x0000)
@@ -45,11 +41,7 @@ public:
 	int32                                         FocusedChildDirection;                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumItemsLine;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change) == 0x000004, "Wrong alignment on PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change");
-static_assert(sizeof(PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change) == 0x00000C, "Wrong size on PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change");
-static_assert(offsetof(PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change, NumItemsLine) == 0x000008, "Member 'PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change::NumItemsLine' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityEvent_Main_on_try_scroll_when_next_focusable_child_change;
 
 }
 

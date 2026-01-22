@@ -10,43 +10,53 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_M2201MainPanel.PyWidget_M2201MainPanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0068 (0x0668 - 0x0600)
 class UPyWidget_M2201MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           SwitchMouseAction;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           CloseMouseAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SwitchGameMemberAction;                            // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           CancelInteract;                                    // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchMouseAction;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           CloseMouseAction;                                  // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchGameMemberAction;                            // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           CancelInteract;                                    // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           CancelInteractPC;                                  // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchActivity147Action;                           // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroAction;                                  // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           PymEffectAction;                                   // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           PymEffectGamepadHoldAction;                        // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           PymEffectGamepadAction;                            // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchPhotoModePCAction;                           // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchPhotoModeGamepadHoldAction;                  // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwitchPhotoModeGamepadAction;                      // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
+	void Construct();
+	void Destruct();
 	void OnReceiveInputKey(const struct FKey& Key, const EInputEvent EventType);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_M2201MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201MainPanel")
 	}
 	static class UPyWidget_M2201MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201MainPanel) == 0x000008, "Wrong alignment on UPyWidget_M2201MainPanel");
-static_assert(sizeof(UPyWidget_M2201MainPanel) == 0x000618, "Wrong size on UPyWidget_M2201MainPanel");
-static_assert(offsetof(UPyWidget_M2201MainPanel, SwitchMouseAction) == 0x0005F8, "Member 'UPyWidget_M2201MainPanel::SwitchMouseAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201MainPanel, CloseMouseAction) == 0x000600, "Member 'UPyWidget_M2201MainPanel::CloseMouseAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201MainPanel, SwitchGameMemberAction) == 0x000608, "Member 'UPyWidget_M2201MainPanel::SwitchGameMemberAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201MainPanel, CancelInteract) == 0x000610, "Member 'UPyWidget_M2201MainPanel::CancelInteract' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_M2201MainPanel;
 
 }
 

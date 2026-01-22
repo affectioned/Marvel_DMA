@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Multi_Common_ItemTips.WBP_Multi_Common_ItemTips_C
-// 0x0010 (0x05F8 - 0x05E8)
+// 0x0010 (0x0600 - 0x05F0)
 class UWBP_Multi_Common_ItemTips_C final : public UPyWidget_Multi_CommomItemTips
 {
 public:
-	class UMarvelVerticalBox*                     VBox_ItemTips_List;                                // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_ItemTips_C*                 WBP_Common_ItemTips;                               // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_ItemTips_List;                                // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_ItemTips_C*                 WBP_Common_ItemTips;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Multi_Common_ItemTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Multi_Common_ItemTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Multi_Common_ItemTips_C")
 	}
 	static class UWBP_Multi_Common_ItemTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Multi_Common_ItemTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Multi_Common_ItemTips_C) == 0x000008, "Wrong alignment on UWBP_Multi_Common_ItemTips_C");
-static_assert(sizeof(UWBP_Multi_Common_ItemTips_C) == 0x0005F8, "Wrong size on UWBP_Multi_Common_ItemTips_C");
-static_assert(offsetof(UWBP_Multi_Common_ItemTips_C, VBox_ItemTips_List) == 0x0005E8, "Member 'UWBP_Multi_Common_ItemTips_C::VBox_ItemTips_List' has a wrong offset!");
-static_assert(offsetof(UWBP_Multi_Common_ItemTips_C, WBP_Common_ItemTips) == 0x0005F0, "Member 'UWBP_Multi_Common_ItemTips_C::WBP_Common_ItemTips' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Multi_Common_ItemTips_C;
 
 }
 

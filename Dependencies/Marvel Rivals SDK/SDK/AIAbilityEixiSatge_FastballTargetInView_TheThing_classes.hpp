@@ -23,15 +23,18 @@ class UAIAbilityEixiSatge_FastballTargetInView_TheThing_C final : public UAIAbil
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityEixiSatge_FastballTargetInView_TheThing_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityEixiSatge_FastballTargetInView_TheThing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityEixiSatge_FastballTargetInView_TheThing_C")
 	}
 	static class UAIAbilityEixiSatge_FastballTargetInView_TheThing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityEixiSatge_FastballTargetInView_TheThing_C>();
 	}
 };
-static_assert(alignof(UAIAbilityEixiSatge_FastballTargetInView_TheThing_C) == 0x000008, "Wrong alignment on UAIAbilityEixiSatge_FastballTargetInView_TheThing_C");
-static_assert(sizeof(UAIAbilityEixiSatge_FastballTargetInView_TheThing_C) == 0x0000D0, "Wrong size on UAIAbilityEixiSatge_FastballTargetInView_TheThing_C");
+DUMPER7_ASSERTS_UAIAbilityEixiSatge_FastballTargetInView_TheThing_C;
 
 }
 

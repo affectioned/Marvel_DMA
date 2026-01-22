@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PyWidget_AbilityStatus_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_Relation_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_Relation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_Relation_C")
 	}
 	static class UWBP_Ability_Relation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_Relation_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_Relation_C) == 0x000008, "Wrong alignment on UWBP_Ability_Relation_C");
-static_assert(sizeof(UWBP_Ability_Relation_C) == 0x0003D0, "Wrong size on UWBP_Ability_Relation_C");
-static_assert(offsetof(UWBP_Ability_Relation_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Ability_Relation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Relation_C, Image_plus) == 0x0003C0, "Member 'UWBP_Ability_Relation_C::Image_plus' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_Relation_C, Image_reduce) == 0x0003C8, "Member 'UWBP_Ability_Relation_C::Image_reduce' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_Relation_C;
 
 }
 

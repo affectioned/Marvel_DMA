@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Describe_DisplayRatio_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Describe_DisplayRatio_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Describe_DisplayRatio_C")
 	}
 	static class UWBP_Setting_Describe_DisplayRatio_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Describe_DisplayRatio_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Describe_DisplayRatio_C) == 0x000008, "Wrong alignment on UWBP_Setting_Describe_DisplayRatio_C");
-static_assert(sizeof(UWBP_Setting_Describe_DisplayRatio_C) == 0x0004B0, "Wrong size on UWBP_Setting_Describe_DisplayRatio_C");
-static_assert(offsetof(UWBP_Setting_Describe_DisplayRatio_C, Img_Subtitle_Bg) == 0x0004A8, "Member 'UWBP_Setting_Describe_DisplayRatio_C::Img_Subtitle_Bg' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Describe_DisplayRatio_C;
 
 }
 

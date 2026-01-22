@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_201_classes.hpp"
+#include "PyUI_201_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass UIController_201_BP.UIController_201_BP_C
-// 0x0000 (0x1018 - 0x1018)
+// 0x0000 (0x12D0 - 0x12D0)
 class UUIController_201_BP_C final : public UPyUIController_201
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIController_201_BP_C">();
+		BP_STATIC_CLASS_IMPL("UIController_201_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_201_BP_C")
 	}
 	static class UUIController_201_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_201_BP_C>();
 	}
 };
-static_assert(alignof(UUIController_201_BP_C) == 0x000008, "Wrong alignment on UUIController_201_BP_C");
-static_assert(sizeof(UUIController_201_BP_C) == 0x001018, "Wrong size on UUIController_201_BP_C");
+DUMPER7_ASSERTS_UUIController_201_BP_C;
 
 }
 

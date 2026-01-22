@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Halloween_AbilitySign.WBP_Halloween_AbilitySign_C
-// 0x0008 (0x0580 - 0x0578)
+// 0x0008 (0x0588 - 0x0580)
 class UWBP_Halloween_AbilitySign_C final : public UPyWidget_AbilitySign_10130
 {
 public:
-	class UMarvelImage*                           Img_Sign;                                          // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Sign;                                          // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Halloween_AbilitySign_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Halloween_AbilitySign_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Halloween_AbilitySign_C")
 	}
 	static class UWBP_Halloween_AbilitySign_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Halloween_AbilitySign_C>();
 	}
 };
-static_assert(alignof(UWBP_Halloween_AbilitySign_C) == 0x000008, "Wrong alignment on UWBP_Halloween_AbilitySign_C");
-static_assert(sizeof(UWBP_Halloween_AbilitySign_C) == 0x000580, "Wrong size on UWBP_Halloween_AbilitySign_C");
-static_assert(offsetof(UWBP_Halloween_AbilitySign_C, Img_Sign) == 0x000578, "Member 'UWBP_Halloween_AbilitySign_C::Img_Sign' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Halloween_AbilitySign_C;
 
 }
 

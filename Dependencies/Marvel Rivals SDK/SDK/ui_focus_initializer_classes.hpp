@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoucsInitializerExtension">();
+		STATIC_CLASS_IMPL("FoucsInitializerExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoucsInitializerExtension")
 	}
 	static class UFoucsInitializerExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoucsInitializerExtension>();
 	}
 };
-static_assert(alignof(UFoucsInitializerExtension) == 0x000008, "Wrong alignment on UFoucsInitializerExtension");
-static_assert(sizeof(UFoucsInitializerExtension) == 0x000030, "Wrong size on UFoucsInitializerExtension");
+DUMPER7_ASSERTS_UFoucsInitializerExtension;
 
 }
 

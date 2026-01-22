@@ -10,20 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1011_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "PyWidget_AbilityTarget_classes.hpp"
+#include "Hero_1011_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101171.PyCue_Buff_10117101
-// 0x0070 (0x1730 - 0x16C0)
+// 0x0070 (0x17E0 - 0x1770)
 class APyCue_Buff_10117101 final : public ACue_Buff_10117101
 {
 public:
-	struct FGameplayTagContainer                  TagsToCancelLieDownAnim;                           // 0x16C0(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  TagsToCancelLieDownAnim;                           // 0x1770(0x0068)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -38,50 +37,49 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10117101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10117101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10117101")
 	}
 	static class APyCue_Buff_10117101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10117101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10117101) == 0x000010, "Wrong alignment on APyCue_Buff_10117101");
-static_assert(sizeof(APyCue_Buff_10117101) == 0x001730, "Wrong size on APyCue_Buff_10117101");
-static_assert(offsetof(APyCue_Buff_10117101, TagsToCancelLieDownAnim) == 0x0016C0, "Member 'APyCue_Buff_10117101::TagsToCancelLieDownAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10117101;
 
 // PythonClass PyAbility_101171.PyConfig_101171
-// 0x0020 (0x18B0 - 0x1890)
+// 0x0020 (0x1C60 - 0x1C40)
 class UPyConfig_101171 final : public UConfig_101171
 {
 public:
-	float                                         Damage;                                            // 0x1890(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HightOffest;                                       // 0x1894(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SelfBuffID;                                        // 0x1898(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TargetSmashBuffID;                                 // 0x189C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TargetLockBuffID;                                  // 0x18A0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TargetRecoverBuffID;                               // 0x18A4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Damage;                                            // 0x1C40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HightOffest;                                       // 0x1C44(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SelfBuffID;                                        // 0x1C48(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TargetSmashBuffID;                                 // 0x1C4C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TargetLockBuffID;                                  // 0x1C50(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TargetRecoverBuffID;                               // 0x1C54(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101171">();
+		STATIC_CLASS_IMPL("PyConfig_101171")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101171")
 	}
 	static class UPyConfig_101171* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101171>();
 	}
 };
-static_assert(alignof(UPyConfig_101171) == 0x000010, "Wrong alignment on UPyConfig_101171");
-static_assert(sizeof(UPyConfig_101171) == 0x0018B0, "Wrong size on UPyConfig_101171");
-static_assert(offsetof(UPyConfig_101171, Damage) == 0x001890, "Member 'UPyConfig_101171::Damage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101171, HightOffest) == 0x001894, "Member 'UPyConfig_101171::HightOffest' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101171, SelfBuffID) == 0x001898, "Member 'UPyConfig_101171::SelfBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101171, TargetSmashBuffID) == 0x00189C, "Member 'UPyConfig_101171::TargetSmashBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101171, TargetLockBuffID) == 0x0018A0, "Member 'UPyConfig_101171::TargetLockBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101171, TargetRecoverBuffID) == 0x0018A4, "Member 'UPyConfig_101171::TargetRecoverBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101171;
 
 // PythonClass PyAbility_101171.PyAbility_101171
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101171 : public UAbility_101171
 {
 public:
@@ -105,37 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101171">();
+		STATIC_CLASS_IMPL("PyAbility_101171")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101171")
 	}
 	static class UPyAbility_101171* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101171>();
 	}
 };
-static_assert(alignof(UPyAbility_101171) == 0x000008, "Wrong alignment on UPyAbility_101171");
-static_assert(sizeof(UPyAbility_101171) == 0x0029F8, "Wrong size on UPyAbility_101171");
-
-// PythonClass PyAbility_101171.PyWidget_AbilityTarget_101171
-// 0x0000 (0x08A0 - 0x08A0)
-class UPyWidget_AbilityTarget_101171 final : public UPyWidget_AbilityTarget
-{
-public:
-	void Construct();
-	void Destruct();
-	void OnInputTypeChanged();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_AbilityTarget_101171">();
-	}
-	static class UPyWidget_AbilityTarget_101171* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_AbilityTarget_101171>();
-	}
-};
-static_assert(alignof(UPyWidget_AbilityTarget_101171) == 0x000010, "Wrong alignment on UPyWidget_AbilityTarget_101171");
-static_assert(sizeof(UPyWidget_AbilityTarget_101171) == 0x0008A0, "Wrong size on UPyWidget_AbilityTarget_101171");
+DUMPER7_ASSERTS_UPyAbility_101171;
 
 }
 

@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActor_BattlePass_Home_Crystal">();
+		STATIC_CLASS_IMPL("PyActor_BattlePass_Home_Crystal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActor_BattlePass_Home_Crystal")
 	}
 	static class APyActor_BattlePass_Home_Crystal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyActor_BattlePass_Home_Crystal>();
 	}
 };
-static_assert(alignof(APyActor_BattlePass_Home_Crystal) == 0x000010, "Wrong alignment on APyActor_BattlePass_Home_Crystal");
-static_assert(sizeof(APyActor_BattlePass_Home_Crystal) == 0x000750, "Wrong size on APyActor_BattlePass_Home_Crystal");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, MPC_Outline) == 0x0006F0, "Member 'APyActor_BattlePass_Home_Crystal::MPC_Outline' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, OutlineColor_Buy) == 0x0006F8, "Member 'APyActor_BattlePass_Home_Crystal::OutlineColor_Buy' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, OutlineColor_NotBuy) == 0x000708, "Member 'APyActor_BattlePass_Home_Crystal::OutlineColor_NotBuy' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, CrystalCollision) == 0x000718, "Member 'APyActor_BattlePass_Home_Crystal::CrystalCollision' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, OnClickedCrystal) == 0x000720, "Member 'APyActor_BattlePass_Home_Crystal::OnClickedCrystal' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, OnHovered) == 0x000730, "Member 'APyActor_BattlePass_Home_Crystal::OnHovered' has a wrong offset!");
-static_assert(offsetof(APyActor_BattlePass_Home_Crystal, OnUnhovered) == 0x000740, "Member 'APyActor_BattlePass_Home_Crystal::OnUnhovered' has a wrong offset!");
+DUMPER7_ASSERTS_APyActor_BattlePass_Home_Crystal;
 
 }
 

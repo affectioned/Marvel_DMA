@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_NotTreatImmunityBlockFall.Ability_NotTreatImmunityBlockFall_C
-// 0x0000 (0x15A0 - 0x15A0)
+// 0x0000 (0x15B8 - 0x15B8)
 class UAbility_NotTreatImmunityBlockFall_C : public UMarvelNotTreatImmunityBlockFallAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_NotTreatImmunityBlockFall_C">();
+		BP_STATIC_CLASS_IMPL("Ability_NotTreatImmunityBlockFall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_NotTreatImmunityBlockFall_C")
 	}
 	static class UAbility_NotTreatImmunityBlockFall_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_NotTreatImmunityBlockFall_C>();
 	}
 };
-static_assert(alignof(UAbility_NotTreatImmunityBlockFall_C) == 0x000008, "Wrong alignment on UAbility_NotTreatImmunityBlockFall_C");
-static_assert(sizeof(UAbility_NotTreatImmunityBlockFall_C) == 0x0015A0, "Wrong size on UAbility_NotTreatImmunityBlockFall_C");
+DUMPER7_ASSERTS_UAbility_NotTreatImmunityBlockFall_C;
 
 }
 

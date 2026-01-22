@@ -22,10 +22,7 @@ public:
 	int32                                         ItemID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ItemType_0;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetItemID) == 0x000004, "Wrong alignment on PyWidget_ItemBoxV1_SetItemID");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetItemID) == 0x000008, "Wrong size on PyWidget_ItemBoxV1_SetItemID");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItemID, ItemID) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetItemID::ItemID' has a wrong offset!");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItemID, ItemType_0) == 0x000004, "Member 'PyWidget_ItemBoxV1_SetItemID::ItemType_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetItemID;
 
 // PythonFunction PyWidget_ItemBoxV1.PyWidget_ItemBoxV1.SetItemNum
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,7 @@ struct PyWidget_ItemBoxV1_SetItemNum final
 public:
 	int32                                         ItemNum;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetItemNum) == 0x000004, "Wrong alignment on PyWidget_ItemBoxV1_SetItemNum");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetItemNum) == 0x000004, "Wrong size on PyWidget_ItemBoxV1_SetItemNum");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItemNum, ItemNum) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetItemNum::ItemNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetItemNum;
 
 // PythonFunction PyWidget_ItemBoxV1.PyWidget_ItemBoxV1.SetItem
 // 0x000C (0x000C - 0x0000)
@@ -47,11 +42,7 @@ public:
 	int32                                         ItemType_0;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Cnt_0;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetItem) == 0x000004, "Wrong alignment on PyWidget_ItemBoxV1_SetItem");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetItem) == 0x00000C, "Wrong size on PyWidget_ItemBoxV1_SetItem");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItem, ItemId_0) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetItem::ItemId_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItem, ItemType_0) == 0x000004, "Member 'PyWidget_ItemBoxV1_SetItem::ItemType_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItem, Cnt_0) == 0x000008, "Member 'PyWidget_ItemBoxV1_SetItem::Cnt_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetItem;
 
 // PythonFunction PyWidget_ItemBoxV1.PyWidget_ItemBoxV1.SetCntLowerBound
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +51,7 @@ struct PyWidget_ItemBoxV1_SetCntLowerBound final
 public:
 	int32                                         LowerBound_0;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetCntLowerBound) == 0x000004, "Wrong alignment on PyWidget_ItemBoxV1_SetCntLowerBound");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetCntLowerBound) == 0x000004, "Wrong size on PyWidget_ItemBoxV1_SetCntLowerBound");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetCntLowerBound, LowerBound_0) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetCntLowerBound::LowerBound_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetCntLowerBound;
 
 // PythonFunction PyWidget_ItemBoxV1.PyWidget_ItemBoxV1.SetIsNumVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +60,7 @@ struct PyWidget_ItemBoxV1_SetIsNumVisible final
 public:
 	bool                                          IsNumVisible_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetIsNumVisible) == 0x000001, "Wrong alignment on PyWidget_ItemBoxV1_SetIsNumVisible");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetIsNumVisible) == 0x000001, "Wrong size on PyWidget_ItemBoxV1_SetIsNumVisible");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetIsNumVisible, IsNumVisible_0) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetIsNumVisible::IsNumVisible_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetIsNumVisible;
 
 // PythonFunction PyWidget_ItemBoxV1.PyWidget_ItemBoxV1.SetItemSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +69,7 @@ struct PyWidget_ItemBoxV1_SetItemSelected final
 public:
 	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ItemBoxV1_SetItemSelected) == 0x000001, "Wrong alignment on PyWidget_ItemBoxV1_SetItemSelected");
-static_assert(sizeof(PyWidget_ItemBoxV1_SetItemSelected) == 0x000001, "Wrong size on PyWidget_ItemBoxV1_SetItemSelected");
-static_assert(offsetof(PyWidget_ItemBoxV1_SetItemSelected, IsSelected_0) == 0x000000, "Member 'PyWidget_ItemBoxV1_SetItemSelected::IsSelected_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ItemBoxV1_SetItemSelected;
 
 }
 

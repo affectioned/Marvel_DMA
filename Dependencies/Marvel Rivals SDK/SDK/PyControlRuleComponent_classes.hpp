@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyControlRuleComponent">();
+		STATIC_CLASS_IMPL("PyControlRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyControlRuleComponent")
 	}
 	static class UPyControlRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyControlRuleComponent>();
 	}
 };
-static_assert(alignof(UPyControlRuleComponent) == 0x000008, "Wrong alignment on UPyControlRuleComponent");
-static_assert(sizeof(UPyControlRuleComponent) == 0x000118, "Wrong size on UPyControlRuleComponent");
-static_assert(offsetof(UPyControlRuleComponent, ControlClass) == 0x000108, "Member 'UPyControlRuleComponent::ControlClass' has a wrong offset!");
-static_assert(offsetof(UPyControlRuleComponent, Control) == 0x000110, "Member 'UPyControlRuleComponent::Control' has a wrong offset!");
+DUMPER7_ASSERTS_UPyControlRuleComponent;
 
 }
 

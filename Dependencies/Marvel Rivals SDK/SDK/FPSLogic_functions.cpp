@@ -168,106 +168,6 @@ float UUISettingEntryMaxFPSCustomBaseHandler::BP_GetDefaultValue(class UObject* 
 }
 
 
-// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Setter
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UUISettingEntryMaxFPSLobbyCustomHandler::Setter(float value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingEntryMaxFPSLobbyCustomHandler", "Setter");
-
-	Params::UISettingEntryMaxFPSLobbyCustomHandler_Setter Parms{};
-
-	Parms.value = value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Getter
-// (Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float UUISettingEntryMaxFPSLobbyCustomHandler::Getter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingEntryMaxFPSLobbyCustomHandler", "Getter");
-
-	Params::UISettingEntryMaxFPSLobbyCustomHandler_Getter Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Setter
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UUISettingEntryMaxFPSCustomHandler::Setter(float value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingEntryMaxFPSCustomHandler", "Setter");
-
-	Params::UISettingEntryMaxFPSCustomHandler_Setter Parms{};
-
-	Parms.value = value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Getter
-// (Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float UUISettingEntryMaxFPSCustomHandler::Getter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UISettingEntryMaxFPSCustomHandler", "Getter");
-
-	Params::UISettingEntryMaxFPSCustomHandler_Getter Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // PythonFunction FPSLogic.UISettingEntryFPSLimitHandler.BP_OnApply
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -361,6 +261,56 @@ TMap<class FString, int32> UUISettingEntryFPSLimitHandler::BP_OnChanged(class UO
 	Parms.options = std::move(options);
 	Parms.value = value;
 	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Setter
+// (Native, Protected, BlueprintCallable)
+// Parameters:
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUISettingEntryMaxFPSLobbyCustomHandler::Setter(float value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingEntryMaxFPSLobbyCustomHandler", "Setter");
+
+	Params::UISettingEntryMaxFPSLobbyCustomHandler_Setter Parms{};
+
+	Parms.value = value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler.Getter
+// (Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float UUISettingEntryMaxFPSLobbyCustomHandler::Getter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingEntryMaxFPSLobbyCustomHandler", "Getter");
+
+	Params::UISettingEntryMaxFPSLobbyCustomHandler_Getter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -550,6 +500,56 @@ TMap<class FString, int32> UUISettingEntryMaxFPSBaseHandler::BP_OnChanged(class 
 	Parms.options = std::move(options);
 	Parms.value = value;
 	Parms.tags = std::move(tags);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Setter
+// (Native, Protected, BlueprintCallable)
+// Parameters:
+// float                                   value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUISettingEntryMaxFPSCustomHandler::Setter(float value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingEntryMaxFPSCustomHandler", "Setter");
+
+	Params::UISettingEntryMaxFPSCustomHandler_Setter Parms{};
+
+	Parms.value = value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction FPSLogic.UISettingEntryMaxFPSCustomHandler.Getter
+// (Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float UUISettingEntryMaxFPSCustomHandler::Getter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingEntryMaxFPSCustomHandler", "Getter");
+
+	Params::UISettingEntryMaxFPSCustomHandler_Getter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

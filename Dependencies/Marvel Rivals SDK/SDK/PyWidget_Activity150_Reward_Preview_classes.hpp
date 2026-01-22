@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "PyWidget_CommonItem_V2_classes.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
+#include "Marvel_structs.hpp"
 #include "PyWidget_ActivityExpBpBase_PanelBase_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Activity150_Reward_Preview.PyWidget_Activity150_Reward_Preview_Item
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity150_Reward_Preview_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& item_id, EItemType item_type, int32 item_idx, const class FString& row_name)> OnClicked; // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& item_id, EItemType item_type, int32 item_idx, const class FString& row_name)> OnClicked; // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,28 +34,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Reward_Preview_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Reward_Preview_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Reward_Preview_Item")
 	}
 	static class UPyWidget_Activity150_Reward_Preview_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Reward_Preview_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Reward_Preview_Item) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Reward_Preview_Item");
-static_assert(sizeof(UPyWidget_Activity150_Reward_Preview_Item) == 0x0005D0, "Wrong size on UPyWidget_Activity150_Reward_Preview_Item");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Item, OnClicked) == 0x0005C0, "Member 'UPyWidget_Activity150_Reward_Preview_Item::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Reward_Preview_Item;
 
 // PythonClass PyWidget_Activity150_Reward_Preview.PyWidget_Activity150_Reward_Preview_Tab
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Activity150_Reward_Preview_Tab final : public UPyMarvelUserWidget
 {
 public:
-	EActivity150Round                             Round;                                             // 0x05BA(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnText;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedColor;                                     // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05EC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EActivity150Round reward_round)> OnClicked;                        // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	EActivity150Round                             Round;                                             // 0x05C2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnText;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedColor;                                     // 0x05E0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05F4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EActivity150Round reward_round)> OnClicked;                        // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -65,61 +67,56 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Reward_Preview_Tab">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Reward_Preview_Tab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Reward_Preview_Tab")
 	}
 	static class UPyWidget_Activity150_Reward_Preview_Tab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Reward_Preview_Tab>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Reward_Preview_Tab) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Reward_Preview_Tab");
-static_assert(sizeof(UPyWidget_Activity150_Reward_Preview_Tab) == 0x000610, "Wrong size on UPyWidget_Activity150_Reward_Preview_Tab");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Tab, Round) == 0x0005BA, "Member 'UPyWidget_Activity150_Reward_Preview_Tab::Round' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Tab, BtnText) == 0x0005C0, "Member 'UPyWidget_Activity150_Reward_Preview_Tab::BtnText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Tab, SelectedColor) == 0x0005D8, "Member 'UPyWidget_Activity150_Reward_Preview_Tab::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Tab, NormalColor) == 0x0005EC, "Member 'UPyWidget_Activity150_Reward_Preview_Tab::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_Tab, OnClicked) == 0x000600, "Member 'UPyWidget_Activity150_Reward_Preview_Tab::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Reward_Preview_Tab;
 
 // PythonClass PyWidget_Activity150_Reward_Preview.PyWidget_Activity150_Reward_Preview_ItemData
-// 0x0018 (0x0060 - 0x0048)
+// 0x0018 (0x0088 - 0x0070)
 class UPyWidget_Activity150_Reward_Preview_ItemData final : public UPyWidget_CommonItem_ItemData
 {
 public:
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ItemRowName;                                       // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemIdx;                                           // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsMember;                                          // 0x005C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGet;                                             // 0x005D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLock;                                            // 0x005E(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemRowName;                                       // 0x0070(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemIdx;                                           // 0x0080(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsMember;                                          // 0x0084(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGet;                                             // 0x0085(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLock;                                            // 0x0086(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Reward_Preview_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Reward_Preview_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Reward_Preview_ItemData")
 	}
 	static class UPyWidget_Activity150_Reward_Preview_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Reward_Preview_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Reward_Preview_ItemData) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Reward_Preview_ItemData");
-static_assert(sizeof(UPyWidget_Activity150_Reward_Preview_ItemData) == 0x000060, "Wrong size on UPyWidget_Activity150_Reward_Preview_ItemData");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_ItemData, ItemRowName) == 0x000048, "Member 'UPyWidget_Activity150_Reward_Preview_ItemData::ItemRowName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_ItemData, ItemIdx) == 0x000058, "Member 'UPyWidget_Activity150_Reward_Preview_ItemData::ItemIdx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_ItemData, IsMember) == 0x00005C, "Member 'UPyWidget_Activity150_Reward_Preview_ItemData::IsMember' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_ItemData, IsGet) == 0x00005D, "Member 'UPyWidget_Activity150_Reward_Preview_ItemData::IsGet' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_ItemData, IsLock) == 0x00005E, "Member 'UPyWidget_Activity150_Reward_Preview_ItemData::IsLock' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Reward_Preview_ItemData;
 
 // PythonClass PyWidget_Activity150_Reward_Preview.PyWidget_Activity150_Reward_Preview
-// 0x0040 (0x0640 - 0x0600)
+// 0x0040 (0x0648 - 0x0608)
 class UPyWidget_Activity150_Reward_Preview final : public UPyWidget_ActivityExpBpBase_PanelBase
 {
 public:
-	TSubclassOf<class UPyWidget_Activity150_Reward_Preview_Item> ItemClass;                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          Ak_TabSound;                                       // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Activity150_Reward_Preview_Item> ItemClass;                          // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciationTipsStyle;                             // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipStyle;                                         // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuStyle;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          Ak_TabSound;                                       // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -129,20 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Reward_Preview">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Reward_Preview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Reward_Preview")
 	}
 	static class UPyWidget_Activity150_Reward_Preview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Reward_Preview>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Reward_Preview) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Reward_Preview");
-static_assert(sizeof(UPyWidget_Activity150_Reward_Preview) == 0x000640, "Wrong size on UPyWidget_Activity150_Reward_Preview");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview, ItemClass) == 0x000600, "Member 'UPyWidget_Activity150_Reward_Preview::ItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview, AppreciationTipsStyle) == 0x000608, "Member 'UPyWidget_Activity150_Reward_Preview::AppreciationTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview, SkipStyle) == 0x000618, "Member 'UPyWidget_Activity150_Reward_Preview::SkipStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview, ShowMenuStyle) == 0x000628, "Member 'UPyWidget_Activity150_Reward_Preview::ShowMenuStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview, Ak_TabSound) == 0x000638, "Member 'UPyWidget_Activity150_Reward_Preview::Ak_TabSound' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Reward_Preview;
 
 }
 

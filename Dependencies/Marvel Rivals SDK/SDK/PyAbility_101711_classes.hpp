@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101711.PyAbility_101711
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_101711 : public UAbility_108
 {
 public:
@@ -27,22 +27,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101711">();
+		STATIC_CLASS_IMPL("PyAbility_101711")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101711")
 	}
 	static class UPyAbility_101711* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101711>();
 	}
 };
-static_assert(alignof(UPyAbility_101711) == 0x000008, "Wrong alignment on UPyAbility_101711");
-static_assert(sizeof(UPyAbility_101711) == 0x0029F8, "Wrong size on UPyAbility_101711");
+DUMPER7_ASSERTS_UPyAbility_101711;
 
 // PythonClass PyAbility_101711.PyUIController_101711
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_101711 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           HideTag;                                           // 0x0F10(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HideTag;                                           // 0x11F0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -52,19 +55,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101711">();
+		STATIC_CLASS_IMPL("PyUIController_101711")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101711")
 	}
 	static class UPyUIController_101711* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101711>();
 	}
 };
-static_assert(alignof(UPyUIController_101711) == 0x000008, "Wrong alignment on UPyUIController_101711");
-static_assert(sizeof(UPyUIController_101711) == 0x000F20, "Wrong size on UPyUIController_101711");
-static_assert(offsetof(UPyUIController_101711, HideTag) == 0x000F10, "Member 'UPyUIController_101711::HideTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_101711;
 
 // PythonClass PyAbility_101711.PyProjectile_10171102
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10171102 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -73,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10171102">();
+		STATIC_CLASS_IMPL("PyProjectile_10171102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10171102")
 	}
 	static class APyProjectile_10171102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10171102>();
 	}
 };
-static_assert(alignof(APyProjectile_10171102) == 0x000010, "Wrong alignment on APyProjectile_10171102");
-static_assert(sizeof(APyProjectile_10171102) == 0x003B90, "Wrong size on APyProjectile_10171102");
+DUMPER7_ASSERTS_APyProjectile_10171102;
 
 }
 

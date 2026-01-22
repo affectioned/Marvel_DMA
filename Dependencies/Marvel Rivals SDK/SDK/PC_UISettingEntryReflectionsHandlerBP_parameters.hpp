@@ -31,17 +31,7 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue) == 0x000008, "Wrong alignment on PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue");
-static_assert(sizeof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue) == 0x0000E0, "Wrong size on PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, Object) == 0x000000, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, SettingKey) == 0x000008, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, Params_0) == 0x000018, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, Options) == 0x000068, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, CallFunc_GetGameUserSettings_ReturnValue) == 0x0000C0, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, CallFunc_GetReflectionQuality_ReturnValue) == 0x0000C8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::CallFunc_GetReflectionQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, CallFunc_Conv_IntToDouble_ReturnValue) == 0x0000D0, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue, K2Node_FunctionResult_ReturnValue_ImplicitCast) == 0x0000D8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue::K2Node_FunctionResult_ReturnValue_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryReflectionsHandlerBP_C_BP_GetCurrentValue;
 
 // Function PC_UISettingEntryReflectionsHandlerBP.PC_UISettingEntryReflectionsHandlerBP_C.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -54,13 +44,7 @@ public:
 	TMap<int32, class FText>                      Options;                                           // 0x0068(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	float                                         Value;                                             // 0x00B8(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply) == 0x000008, "Wrong alignment on PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply");
-static_assert(sizeof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply) == 0x0000C0, "Wrong size on PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply, Object) == 0x000000, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply, SettingKey) == 0x000008, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply, Params_0) == 0x000018, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply, Options) == 0x000068, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply, Value) == 0x0000B8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryReflectionsHandlerBP_C_BP_OnApply;
 
 // Function PC_UISettingEntryReflectionsHandlerBP.PC_UISettingEntryReflectionsHandlerBP_C.BP_OnChanged
 // 0x0180 (0x0180 - 0x0000)
@@ -84,21 +68,7 @@ public:
 	uint8                                         Pad_173[0x5];                                      // 0x0173(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged) == 0x000008, "Wrong alignment on PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged");
-static_assert(sizeof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged) == 0x000180, "Wrong size on PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, Object) == 0x000000, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, SettingKey) == 0x000008, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, Params_0) == 0x000018, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::Params_0' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, Options) == 0x000068, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, Value) == 0x0000B8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::Value' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CurrentTags) == 0x0000C0, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CurrentTags' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, ReturnValue) == 0x000110, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_FTrunc_ReturnValue) == 0x000160, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_GetGameUserSettings_ReturnValue) == 0x000168, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000170, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000171, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_BooleanOR_ReturnValue) == 0x000172, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged, CallFunc_FTrunc_A_ImplicitCast) == 0x000178, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryReflectionsHandlerBP_C_BP_OnChanged;
 
 // Function PC_UISettingEntryReflectionsHandlerBP.PC_UISettingEntryReflectionsHandlerBP_C.ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP
 // 0x00E0 (0x00E0 - 0x0000)
@@ -120,20 +90,7 @@ public:
 	uint8                                         Pad_D3[0x5];                                       // 0x00D3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP) == 0x000008, "Wrong alignment on PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP");
-static_assert(sizeof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP) == 0x0000E0, "Wrong size on PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, EntryPoint) == 0x000000, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_GetGameUserSettings_ReturnValue) == 0x000008, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, K2Node_Event_Object) == 0x000010, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::K2Node_Event_Object' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, K2Node_Event_SettingKey) == 0x000018, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::K2Node_Event_SettingKey' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, K2Node_Event_Params) == 0x000028, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::K2Node_Event_Params' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, K2Node_Event_Options) == 0x000078, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::K2Node_Event_Options' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, K2Node_Event_Value) == 0x0000C8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_FTrunc_ReturnValue) == 0x0000CC, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000D1, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_BooleanOR_ReturnValue) == 0x0000D2, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP, CallFunc_FTrunc_A_ImplicitCast) == 0x0000D8, "Member 'PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_PC_UISettingEntryReflectionsHandlerBP_C_ExecuteUbergraph_PC_UISettingEntryReflectionsHandlerBP;
 
 }
 

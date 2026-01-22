@@ -34,24 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Corona_SignalSwitch_Tips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Corona_SignalSwitch_Tips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Corona_SignalSwitch_Tips_C")
 	}
 	static class UWBP_Corona_SignalSwitch_Tips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Corona_SignalSwitch_Tips_C>();
 	}
 };
-static_assert(alignof(UWBP_Corona_SignalSwitch_Tips_C) == 0x000008, "Wrong alignment on UWBP_Corona_SignalSwitch_Tips_C");
-static_assert(sizeof(UWBP_Corona_SignalSwitch_Tips_C) == 0x000400, "Wrong size on UWBP_Corona_SignalSwitch_Tips_C");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Anim_Fadeout) == 0x0003B8, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Anim_Fadeout' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Anim_Fadein) == 0x0003C0, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Anim_Fadein' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Overlay_Switch_Left) == 0x0003C8, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Overlay_Switch_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Overlay_Switch_Right) == 0x0003D0, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Overlay_Switch_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Text_Switch_Left) == 0x0003D8, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Text_Switch_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Text_Switch_Right) == 0x0003E0, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Text_Switch_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, Text_Title) == 0x0003E8, "Member 'UWBP_Corona_SignalSwitch_Tips_C::Text_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, WBP_Left_KeyWidget) == 0x0003F0, "Member 'UWBP_Corona_SignalSwitch_Tips_C::WBP_Left_KeyWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_Corona_SignalSwitch_Tips_C, WBP_Right_KeyWidget) == 0x0003F8, "Member 'UWBP_Corona_SignalSwitch_Tips_C::WBP_Right_KeyWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Corona_SignalSwitch_Tips_C;
 
 }
 

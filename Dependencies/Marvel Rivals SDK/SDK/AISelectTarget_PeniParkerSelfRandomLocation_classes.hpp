@@ -23,15 +23,18 @@ class UAISelectTarget_PeniParkerSelfRandomLocation_C final : public UPyAISelectT
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_PeniParkerSelfRandomLocation_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_PeniParkerSelfRandomLocation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_PeniParkerSelfRandomLocation_C")
 	}
 	static class UAISelectTarget_PeniParkerSelfRandomLocation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_PeniParkerSelfRandomLocation_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_PeniParkerSelfRandomLocation_C) == 0x000008, "Wrong alignment on UAISelectTarget_PeniParkerSelfRandomLocation_C");
-static_assert(sizeof(UAISelectTarget_PeniParkerSelfRandomLocation_C) == 0x000080, "Wrong size on UAISelectTarget_PeniParkerSelfRandomLocation_C");
+DUMPER7_ASSERTS_UAISelectTarget_PeniParkerSelfRandomLocation_C;
 
 }
 

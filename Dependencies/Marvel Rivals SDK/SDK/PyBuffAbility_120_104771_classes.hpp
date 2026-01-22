@@ -34,30 +34,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10477130">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10477130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10477130")
 	}
 	static class UPyCue_Ability_Instant_10477130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10477130>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10477130) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10477130");
-static_assert(sizeof(UPyCue_Ability_Instant_10477130) == 0x0003E8, "Wrong size on UPyCue_Ability_Instant_10477130");
-static_assert(offsetof(UPyCue_Ability_Instant_10477130, DrawCard_FxInfo) == 0x0002B0, "Member 'UPyCue_Ability_Instant_10477130::DrawCard_FxInfo' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10477130, DrawCard_UIAudios) == 0x000320, "Member 'UPyCue_Ability_Instant_10477130::DrawCard_UIAudios' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10477130, DrawCard_ColorMarkStart) == 0x000370, "Member 'UPyCue_Ability_Instant_10477130::DrawCard_ColorMarkStart' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10477130, DrawCard_ColorMarkEnd) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10477130::DrawCard_ColorMarkEnd' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10477130, DrawCard_ShowTipText) == 0x0003D0, "Member 'UPyCue_Ability_Instant_10477130::DrawCard_ShowTipText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10477130;
 
 // PythonClass PyBuffAbility_120_104771.PyBuffAbility_120_104771
-// 0x0060 (0x13D0 - 0x1370)
+// 0x0060 (0x13E8 - 0x1388)
 class UPyBuffAbility_120_104771 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TMap<int32, struct FItemQualityProbability>   DevourCountToCardQuality;                          // 0x1370(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         BaseCardCount;                                     // 0x13C0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RareCardCount;                                     // 0x13C4(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LegendCardCount;                                   // 0x13C8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, struct FItemQualityProbability>   DevourCountToCardQuality;                          // 0x1388(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         BaseCardCount;                                     // 0x13D8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RareCardCount;                                     // 0x13DC(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LegendCardCount;                                   // 0x13E0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -70,19 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_104771">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_104771")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_104771")
 	}
 	static class UPyBuffAbility_120_104771* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_104771>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_104771) == 0x000008, "Wrong alignment on UPyBuffAbility_120_104771");
-static_assert(sizeof(UPyBuffAbility_120_104771) == 0x0013D0, "Wrong size on UPyBuffAbility_120_104771");
-static_assert(offsetof(UPyBuffAbility_120_104771, DevourCountToCardQuality) == 0x001370, "Member 'UPyBuffAbility_120_104771::DevourCountToCardQuality' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_104771, BaseCardCount) == 0x0013C0, "Member 'UPyBuffAbility_120_104771::BaseCardCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_104771, RareCardCount) == 0x0013C4, "Member 'UPyBuffAbility_120_104771::RareCardCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_104771, LegendCardCount) == 0x0013C8, "Member 'UPyBuffAbility_120_104771::LegendCardCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_104771;
 
 }
 

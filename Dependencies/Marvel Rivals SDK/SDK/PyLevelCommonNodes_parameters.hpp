@@ -25,10 +25,7 @@ public:
 	class AActor*                                 Instance;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 DoorName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_OpenDoor) == 0x000008, "Wrong alignment on PyLevelCommonNodes_OpenDoor");
-static_assert(sizeof(PyLevelCommonNodes_OpenDoor) == 0x000018, "Wrong size on PyLevelCommonNodes_OpenDoor");
-static_assert(offsetof(PyLevelCommonNodes_OpenDoor, Instance) == 0x000000, "Member 'PyLevelCommonNodes_OpenDoor::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_OpenDoor, DoorName) == 0x000008, "Member 'PyLevelCommonNodes_OpenDoor::DoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_OpenDoor;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.CloseDoor
 // 0x0018 (0x0018 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	class AActor*                                 Instance;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 DoorName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_CloseDoor) == 0x000008, "Wrong alignment on PyLevelCommonNodes_CloseDoor");
-static_assert(sizeof(PyLevelCommonNodes_CloseDoor) == 0x000018, "Wrong size on PyLevelCommonNodes_CloseDoor");
-static_assert(offsetof(PyLevelCommonNodes_CloseDoor, Instance) == 0x000000, "Member 'PyLevelCommonNodes_CloseDoor::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_CloseDoor, DoorName) == 0x000008, "Member 'PyLevelCommonNodes_CloseDoor::DoorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_CloseDoor;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.SetMultiRoundParameters
 // 0x0010 (0x0010 - 0x0000)
@@ -52,11 +46,7 @@ public:
 	int32                                         WinRoundNum;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalRoundNum;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_SetMultiRoundParameters) == 0x000008, "Wrong alignment on PyLevelCommonNodes_SetMultiRoundParameters");
-static_assert(sizeof(PyLevelCommonNodes_SetMultiRoundParameters) == 0x000010, "Wrong size on PyLevelCommonNodes_SetMultiRoundParameters");
-static_assert(offsetof(PyLevelCommonNodes_SetMultiRoundParameters, Instance) == 0x000000, "Member 'PyLevelCommonNodes_SetMultiRoundParameters::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SetMultiRoundParameters, WinRoundNum) == 0x000008, "Member 'PyLevelCommonNodes_SetMultiRoundParameters::WinRoundNum' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SetMultiRoundParameters, TotalRoundNum) == 0x00000C, "Member 'PyLevelCommonNodes_SetMultiRoundParameters::TotalRoundNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_SetMultiRoundParameters;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.SpawnSummonerWhenCharDeath
 // 0x0010 (0x0010 - 0x0000)
@@ -67,11 +57,7 @@ public:
 	int32                                         SummonerId;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ELevelSummonerSide                            BattleSideParamter;                                // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_SpawnSummonerWhenCharDeath) == 0x000008, "Wrong alignment on PyLevelCommonNodes_SpawnSummonerWhenCharDeath");
-static_assert(sizeof(PyLevelCommonNodes_SpawnSummonerWhenCharDeath) == 0x000010, "Wrong size on PyLevelCommonNodes_SpawnSummonerWhenCharDeath");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummonerWhenCharDeath, Instance) == 0x000000, "Member 'PyLevelCommonNodes_SpawnSummonerWhenCharDeath::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummonerWhenCharDeath, SummonerId) == 0x000008, "Member 'PyLevelCommonNodes_SpawnSummonerWhenCharDeath::SummonerId' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummonerWhenCharDeath, BattleSideParamter) == 0x00000C, "Member 'PyLevelCommonNodes_SpawnSummonerWhenCharDeath::BattleSideParamter' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_SpawnSummonerWhenCharDeath;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.ApplyBuffToTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -83,12 +69,7 @@ public:
 	int32                                         BuffId;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DelayTime;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_ApplyBuffToTarget) == 0x000008, "Wrong alignment on PyLevelCommonNodes_ApplyBuffToTarget");
-static_assert(sizeof(PyLevelCommonNodes_ApplyBuffToTarget) == 0x000018, "Wrong size on PyLevelCommonNodes_ApplyBuffToTarget");
-static_assert(offsetof(PyLevelCommonNodes_ApplyBuffToTarget, Instance) == 0x000000, "Member 'PyLevelCommonNodes_ApplyBuffToTarget::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_ApplyBuffToTarget, TargetChar) == 0x000008, "Member 'PyLevelCommonNodes_ApplyBuffToTarget::TargetChar' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_ApplyBuffToTarget, BuffId) == 0x000010, "Member 'PyLevelCommonNodes_ApplyBuffToTarget::BuffId' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_ApplyBuffToTarget, DelayTime) == 0x000014, "Member 'PyLevelCommonNodes_ApplyBuffToTarget::DelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_ApplyBuffToTarget;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.DisableLastSelectHero
 // 0x0010 (0x0010 - 0x0000)
@@ -98,10 +79,7 @@ public:
 	class AActor*                                 Instance;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_DisableLastSelectHero) == 0x000008, "Wrong alignment on PyLevelCommonNodes_DisableLastSelectHero");
-static_assert(sizeof(PyLevelCommonNodes_DisableLastSelectHero) == 0x000010, "Wrong size on PyLevelCommonNodes_DisableLastSelectHero");
-static_assert(offsetof(PyLevelCommonNodes_DisableLastSelectHero, Instance) == 0x000000, "Member 'PyLevelCommonNodes_DisableLastSelectHero::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_DisableLastSelectHero, Character) == 0x000008, "Member 'PyLevelCommonNodes_DisableLastSelectHero::Character' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_DisableLastSelectHero;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.ChangeAttackTime
 // 0x0010 (0x0010 - 0x0000)
@@ -112,11 +90,7 @@ public:
 	float                                         NewTime;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCover;                                           // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_ChangeAttackTime) == 0x000008, "Wrong alignment on PyLevelCommonNodes_ChangeAttackTime");
-static_assert(sizeof(PyLevelCommonNodes_ChangeAttackTime) == 0x000010, "Wrong size on PyLevelCommonNodes_ChangeAttackTime");
-static_assert(offsetof(PyLevelCommonNodes_ChangeAttackTime, Instance) == 0x000000, "Member 'PyLevelCommonNodes_ChangeAttackTime::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_ChangeAttackTime, NewTime) == 0x000008, "Member 'PyLevelCommonNodes_ChangeAttackTime::NewTime' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_ChangeAttackTime, IsCover) == 0x00000C, "Member 'PyLevelCommonNodes_ChangeAttackTime::IsCover' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_ChangeAttackTime;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.StartShrinkCircle
 // 0x0018 (0x0018 - 0x0000)
@@ -126,10 +100,7 @@ public:
 	class AActor*                                 Instance;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 ActorName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_StartShrinkCircle) == 0x000008, "Wrong alignment on PyLevelCommonNodes_StartShrinkCircle");
-static_assert(sizeof(PyLevelCommonNodes_StartShrinkCircle) == 0x000018, "Wrong size on PyLevelCommonNodes_StartShrinkCircle");
-static_assert(offsetof(PyLevelCommonNodes_StartShrinkCircle, Instance) == 0x000000, "Member 'PyLevelCommonNodes_StartShrinkCircle::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_StartShrinkCircle, ActorName) == 0x000008, "Member 'PyLevelCommonNodes_StartShrinkCircle::ActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_StartShrinkCircle;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.SetEditorLevelStreaming
 // 0x0010 (0x0010 - 0x0000)
@@ -139,10 +110,7 @@ public:
 	class ULevelStreaming*                        level_streaming;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          visible;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_SetEditorLevelStreaming) == 0x000008, "Wrong alignment on PyLevelCommonNodes_SetEditorLevelStreaming");
-static_assert(sizeof(PyLevelCommonNodes_SetEditorLevelStreaming) == 0x000010, "Wrong size on PyLevelCommonNodes_SetEditorLevelStreaming");
-static_assert(offsetof(PyLevelCommonNodes_SetEditorLevelStreaming, level_streaming) == 0x000000, "Member 'PyLevelCommonNodes_SetEditorLevelStreaming::level_streaming' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SetEditorLevelStreaming, visible) == 0x000008, "Member 'PyLevelCommonNodes_SetEditorLevelStreaming::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_SetEditorLevelStreaming;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.SpawnSummoner
 // 0x0060 (0x0060 - 0x0000)
@@ -158,15 +126,7 @@ public:
 	struct FRotator                               InitialRototor;                                    // 0x0030(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 	struct FRotator                               GapRotator;                                        // 0x0048(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyLevelCommonNodes_SpawnSummoner) == 0x000008, "Wrong alignment on PyLevelCommonNodes_SpawnSummoner");
-static_assert(sizeof(PyLevelCommonNodes_SpawnSummoner) == 0x000060, "Wrong size on PyLevelCommonNodes_SpawnSummoner");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, Instance) == 0x000000, "Member 'PyLevelCommonNodes_SpawnSummoner::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, Location) == 0x000008, "Member 'PyLevelCommonNodes_SpawnSummoner::Location' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, SummonerID) == 0x000020, "Member 'PyLevelCommonNodes_SpawnSummoner::SummonerID' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, SpawnCount) == 0x000024, "Member 'PyLevelCommonNodes_SpawnSummoner::SpawnCount' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, VelocityScale) == 0x000028, "Member 'PyLevelCommonNodes_SpawnSummoner::VelocityScale' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, InitialRototor) == 0x000030, "Member 'PyLevelCommonNodes_SpawnSummoner::InitialRototor' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_SpawnSummoner, GapRotator) == 0x000048, "Member 'PyLevelCommonNodes_SpawnSummoner::GapRotator' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_SpawnSummoner;
 
 // PythonFunction PyLevelCommonNodes.PyLevelCommonNodes.GetPlayerCount
 // 0x0010 (0x0010 - 0x0000)
@@ -176,10 +136,7 @@ public:
 	class AActor*                                 Instance;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelCommonNodes_GetPlayerCount) == 0x000008, "Wrong alignment on PyLevelCommonNodes_GetPlayerCount");
-static_assert(sizeof(PyLevelCommonNodes_GetPlayerCount) == 0x000010, "Wrong size on PyLevelCommonNodes_GetPlayerCount");
-static_assert(offsetof(PyLevelCommonNodes_GetPlayerCount, Instance) == 0x000000, "Member 'PyLevelCommonNodes_GetPlayerCount::Instance' has a wrong offset!");
-static_assert(offsetof(PyLevelCommonNodes_GetPlayerCount, ReturnValue) == 0x000008, "Member 'PyLevelCommonNodes_GetPlayerCount::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelCommonNodes_GetPlayerCount;
 
 }
 

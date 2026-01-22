@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_AwardInfoCollect.PyWidget_League_AwardInfoCollect
-// 0x0080 (0x0678 - 0x05F8)
+// 0x0080 (0x0680 - 0x0600)
 class UPyWidget_League_AwardInfoCollect final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            TextColorRed;                                      // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorYellow;                                   // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorGreen;                                    // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorWhite;                                    // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   LinkUrl;                                           // 0x0648(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   LinkUrl_CN;                                        // 0x0660(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorRed;                                      // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorYellow;                                   // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorGreen;                                    // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorWhite;                                    // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   LinkUrl;                                           // 0x0650(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   LinkUrl_CN;                                        // 0x0668(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_AwardInfoCollect">();
+		STATIC_CLASS_IMPL("PyWidget_League_AwardInfoCollect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_AwardInfoCollect")
 	}
 	static class UPyWidget_League_AwardInfoCollect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_AwardInfoCollect>();
 	}
 };
-static_assert(alignof(UPyWidget_League_AwardInfoCollect) == 0x000008, "Wrong alignment on UPyWidget_League_AwardInfoCollect");
-static_assert(sizeof(UPyWidget_League_AwardInfoCollect) == 0x000678, "Wrong size on UPyWidget_League_AwardInfoCollect");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, TextColorRed) == 0x0005F8, "Member 'UPyWidget_League_AwardInfoCollect::TextColorRed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, TextColorYellow) == 0x00060C, "Member 'UPyWidget_League_AwardInfoCollect::TextColorYellow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, TextColorGreen) == 0x000620, "Member 'UPyWidget_League_AwardInfoCollect::TextColorGreen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, TextColorWhite) == 0x000634, "Member 'UPyWidget_League_AwardInfoCollect::TextColorWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, LinkUrl) == 0x000648, "Member 'UPyWidget_League_AwardInfoCollect::LinkUrl' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollect, LinkUrl_CN) == 0x000660, "Member 'UPyWidget_League_AwardInfoCollect::LinkUrl_CN' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_AwardInfoCollect;
 
 }
 

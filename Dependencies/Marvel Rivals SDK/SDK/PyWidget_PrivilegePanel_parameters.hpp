@@ -23,9 +23,7 @@ struct PyWidget_PrivilegePanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_PrivilegePanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_PrivilegePanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_PrivilegePanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_PrivilegePanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_PrivilegePanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_PrivilegePanel.PyWidget_PrivilegePanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_PrivilegePanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_PrivilegePanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_PrivilegePanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_PrivilegePanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_PrivilegePanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_PrivilegePanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_PrivilegePanel.PyWidget_PrivilegePanel.on_try_srcoll_when_next_focusable_child_change
 // 0x0010 (0x0010 - 0x0000)
@@ -47,11 +43,7 @@ public:
 	int32                                         FocusedChildDirection;                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UButton*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change) == 0x000008, "Wrong alignment on PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change");
-static_assert(sizeof(PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change) == 0x000010, "Wrong size on PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change");
-static_assert(offsetof(PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change, ReturnValue) == 0x000008, "Member 'PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_on_try_srcoll_when_next_focusable_child_change;
 
 // PythonFunction PyWidget_PrivilegePanel.PyWidget_PrivilegePanel.btn_page_left_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -62,10 +54,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom");
-static_assert(sizeof(PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom");
-static_assert(offsetof(PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_btn_page_left_navigation_rule_custom;
 
 // PythonFunction PyWidget_PrivilegePanel.PyWidget_PrivilegePanel.btn_page_right_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -76,10 +65,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom");
-static_assert(sizeof(PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom");
-static_assert(offsetof(PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_btn_page_right_navigation_rule_custom;
 
 // PythonFunction PyWidget_PrivilegePanel.PyWidget_PrivilegePanel.colleges_btn_navigation_rule_custom
 // 0x0010 (0x0010 - 0x0000)
@@ -90,10 +76,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom) == 0x000008, "Wrong alignment on PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom");
-static_assert(sizeof(PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom) == 0x000010, "Wrong size on PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom");
-static_assert(offsetof(PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom, NavType) == 0x000000, "Member 'PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom, ReturnValue) == 0x000008, "Member 'PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PrivilegePanel_colleges_btn_navigation_rule_custom;
 
 }
 

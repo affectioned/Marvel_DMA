@@ -23,15 +23,18 @@ class AGC_CommonTree006A_BP_C final : public AChaosClientDesActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_CommonTree006A_BP_C">();
+		BP_STATIC_CLASS_IMPL("GC_CommonTree006A_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_CommonTree006A_BP_C")
 	}
 	static class AGC_CommonTree006A_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_CommonTree006A_BP_C>();
 	}
 };
-static_assert(alignof(AGC_CommonTree006A_BP_C) == 0x000010, "Wrong alignment on AGC_CommonTree006A_BP_C");
-static_assert(sizeof(AGC_CommonTree006A_BP_C) == 0x001160, "Wrong size on AGC_CommonTree006A_BP_C");
+DUMPER7_ASSERTS_AGC_CommonTree006A_BP_C;
 
 }
 

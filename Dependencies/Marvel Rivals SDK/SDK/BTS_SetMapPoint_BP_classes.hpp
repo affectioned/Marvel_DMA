@@ -23,15 +23,18 @@ class UBTS_SetMapPoint_BP_C final : public UBTS_PySetMapPoint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_SetMapPoint_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_SetMapPoint_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_SetMapPoint_BP_C")
 	}
 	static class UBTS_SetMapPoint_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_SetMapPoint_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_SetMapPoint_BP_C) == 0x000008, "Wrong alignment on UBTS_SetMapPoint_BP_C");
-static_assert(sizeof(UBTS_SetMapPoint_BP_C) == 0x000260, "Wrong size on UBTS_SetMapPoint_BP_C");
+DUMPER7_ASSERTS_UBTS_SetMapPoint_BP_C;
 
 }
 

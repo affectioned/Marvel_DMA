@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiTeamConfig">();
+		STATIC_CLASS_IMPL("PyMultiTeamConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiTeamConfig")
 	}
 	static class UPyMultiTeamConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiTeamConfig>();
 	}
 };
-static_assert(alignof(UPyMultiTeamConfig) == 0x000008, "Wrong alignment on UPyMultiTeamConfig");
-static_assert(sizeof(UPyMultiTeamConfig) == 0x0000D8, "Wrong size on UPyMultiTeamConfig");
-static_assert(offsetof(UPyMultiTeamConfig, Team2Colors) == 0x000030, "Member 'UPyMultiTeamConfig::Team2Colors' has a wrong offset!");
-static_assert(offsetof(UPyMultiTeamConfig, TeamGroups) == 0x000080, "Member 'UPyMultiTeamConfig::TeamGroups' has a wrong offset!");
-static_assert(offsetof(UPyMultiTeamConfig, MaxNumPerSide) == 0x0000D0, "Member 'UPyMultiTeamConfig::MaxNumPerSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMultiTeamConfig;
 
 // PythonClass PyMultiTeamRuleComponent.PyMultiTeamRuleComponent
 // 0x00A8 (0x01B0 - 0x0108)
@@ -57,18 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiTeamRuleComponent">();
+		STATIC_CLASS_IMPL("PyMultiTeamRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiTeamRuleComponent")
 	}
 	static class UPyMultiTeamRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiTeamRuleComponent>();
 	}
 };
-static_assert(alignof(UPyMultiTeamRuleComponent) == 0x000008, "Wrong alignment on UPyMultiTeamRuleComponent");
-static_assert(sizeof(UPyMultiTeamRuleComponent) == 0x0001B0, "Wrong size on UPyMultiTeamRuleComponent");
-static_assert(offsetof(UPyMultiTeamRuleComponent, Team2Colors) == 0x000108, "Member 'UPyMultiTeamRuleComponent::Team2Colors' has a wrong offset!");
-static_assert(offsetof(UPyMultiTeamRuleComponent, TeamGroups) == 0x000158, "Member 'UPyMultiTeamRuleComponent::TeamGroups' has a wrong offset!");
-static_assert(offsetof(UPyMultiTeamRuleComponent, MaxNumPerSide) == 0x0001A8, "Member 'UPyMultiTeamRuleComponent::MaxNumPerSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMultiTeamRuleComponent;
 
 }
 

@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Describe_CustomPhrase.WBP_Setting_Describe_CustomPhrase_C
-// 0x0018 (0x0470 - 0x0458)
+// 0x0018 (0x0450 - 0x0438)
 class UWBP_Setting_Describe_CustomPhrase_C final : public UPyWidget_CustomPhrasePreview
 {
 public:
-	class UWBP_Out_Chat_Item_Entry_C*             WBP_Out_Chat_Item_Entry;                           // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Signal_C*                          WBP_Signal;                                        // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Signal_C*                          WBP_Signal_Scene;                                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Out_Chat_Item_Entry_C*             WBP_Out_Chat_Item_Entry;                           // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Signal_C*                          WBP_Signal;                                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Signal_C*                          WBP_Signal_Scene;                                  // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Describe_CustomPhrase_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Describe_CustomPhrase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Describe_CustomPhrase_C")
 	}
 	static class UWBP_Setting_Describe_CustomPhrase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Describe_CustomPhrase_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Describe_CustomPhrase_C) == 0x000008, "Wrong alignment on UWBP_Setting_Describe_CustomPhrase_C");
-static_assert(sizeof(UWBP_Setting_Describe_CustomPhrase_C) == 0x000470, "Wrong size on UWBP_Setting_Describe_CustomPhrase_C");
-static_assert(offsetof(UWBP_Setting_Describe_CustomPhrase_C, WBP_Out_Chat_Item_Entry) == 0x000458, "Member 'UWBP_Setting_Describe_CustomPhrase_C::WBP_Out_Chat_Item_Entry' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_CustomPhrase_C, WBP_Signal) == 0x000460, "Member 'UWBP_Setting_Describe_CustomPhrase_C::WBP_Signal' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_CustomPhrase_C, WBP_Signal_Scene) == 0x000468, "Member 'UWBP_Setting_Describe_CustomPhrase_C::WBP_Signal_Scene' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Describe_CustomPhrase_C;
 
 }
 

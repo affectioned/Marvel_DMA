@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,7 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	EInputEvent                                   InEventType;                                       // 0x0020(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Loading_Game_OnReceiveGlobalInputKey) == 0x000008, "Wrong alignment on PyWidget_Loading_Game_OnReceiveGlobalInputKey");
-static_assert(sizeof(PyWidget_Loading_Game_OnReceiveGlobalInputKey) == 0x000028, "Wrong size on PyWidget_Loading_Game_OnReceiveGlobalInputKey");
-static_assert(offsetof(PyWidget_Loading_Game_OnReceiveGlobalInputKey, InKey) == 0x000000, "Member 'PyWidget_Loading_Game_OnReceiveGlobalInputKey::InKey' has a wrong offset!");
-static_assert(offsetof(PyWidget_Loading_Game_OnReceiveGlobalInputKey, InEventType) == 0x000020, "Member 'PyWidget_Loading_Game_OnReceiveGlobalInputKey::InEventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Loading_Game_OnReceiveGlobalInputKey;
 
 // PythonFunction PyWidget_Loading_Game.PyWidget_Loading_SubtitleItem.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_Loading_SubtitleItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Loading_SubtitleItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Loading_SubtitleItem_PreConstruct");
-static_assert(sizeof(PyWidget_Loading_SubtitleItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_Loading_SubtitleItem_PreConstruct");
-static_assert(offsetof(PyWidget_Loading_SubtitleItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Loading_SubtitleItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Loading_SubtitleItem_PreConstruct;
 
 // PythonFunction PyWidget_Loading_Game.PyWidget_Loading_SubtitleItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +43,7 @@ struct PyWidget_Loading_SubtitleItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Loading_SubtitleItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Loading_SubtitleItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Loading_SubtitleItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Loading_SubtitleItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Loading_SubtitleItem_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Loading_SubtitleItem_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Loading_SubtitleItem_OnAnimationFinished;
 
 }
 

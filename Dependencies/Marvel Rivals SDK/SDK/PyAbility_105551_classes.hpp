@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105551.PyAbility_105551
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105551 : public UAbility_108
 {
 public:
@@ -26,22 +26,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105551">();
+		STATIC_CLASS_IMPL("PyAbility_105551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105551")
 	}
 	static class UPyAbility_105551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105551>();
 	}
 };
-static_assert(alignof(UPyAbility_105551) == 0x000008, "Wrong alignment on UPyAbility_105551");
-static_assert(sizeof(UPyAbility_105551) == 0x0029F8, "Wrong size on UPyAbility_105551");
+DUMPER7_ASSERTS_UPyAbility_105551;
 
 // PythonClass PyAbility_105551.PyNotTreatFallAbility_105551
-// 0x0050 (0x1590 - 0x1540)
+// 0x0050 (0x1610 - 0x15C0)
 class UPyNotTreatFallAbility_105551 : public UMarvelNotTreatFallAbility
 {
 public:
-	TMap<int32, float>                            DifferentApplyDamageToPer;                         // 0x1540(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            DifferentApplyDamageToPer;                         // 0x15C0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -52,16 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNotTreatFallAbility_105551">();
+		STATIC_CLASS_IMPL("PyNotTreatFallAbility_105551")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNotTreatFallAbility_105551")
 	}
 	static class UPyNotTreatFallAbility_105551* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNotTreatFallAbility_105551>();
 	}
 };
-static_assert(alignof(UPyNotTreatFallAbility_105551) == 0x000008, "Wrong alignment on UPyNotTreatFallAbility_105551");
-static_assert(sizeof(UPyNotTreatFallAbility_105551) == 0x001590, "Wrong size on UPyNotTreatFallAbility_105551");
-static_assert(offsetof(UPyNotTreatFallAbility_105551, DifferentApplyDamageToPer) == 0x001540, "Member 'UPyNotTreatFallAbility_105551::DifferentApplyDamageToPer' has a wrong offset!");
+DUMPER7_ASSERTS_UPyNotTreatFallAbility_105551;
 
 // PythonClass PyAbility_105551.PyCue_Ability_Instant_10555101
 // 0x0020 (0x03E0 - 0x03C0)
@@ -80,18 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10555101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10555101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10555101")
 	}
 	static class UPyCue_Ability_Instant_10555101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10555101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10555101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10555101");
-static_assert(sizeof(UPyCue_Ability_Instant_10555101) == 0x0003E0, "Wrong size on UPyCue_Ability_Instant_10555101");
-static_assert(offsetof(UPyCue_Ability_Instant_10555101, NS_Release) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10555101::NS_Release' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10555101, AttachedSocketName) == 0x0003C8, "Member 'UPyCue_Ability_Instant_10555101::AttachedSocketName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10555101, DelayDeactivateTime) == 0x0003D8, "Member 'UPyCue_Ability_Instant_10555101::DelayDeactivateTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10555101;
 
 }
 

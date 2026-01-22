@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_102981.PyBuffAbility_10130_10298182
-// 0x0008 (0x1BC0 - 0x1BB8)
+// 0x0008 (0x1BD8 - 0x1BD0)
 class UPyBuffAbility_10130_10298182 : public UBuffAbility_HealthModifier
 {
 public:
-	int32                                         BuffID;                                            // 0x1BB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x1BD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,26 +33,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10298182">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10298182")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10298182")
 	}
 	static class UPyBuffAbility_10130_10298182* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10298182>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10298182) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10298182");
-static_assert(sizeof(UPyBuffAbility_10130_10298182) == 0x001BC0, "Wrong size on UPyBuffAbility_10130_10298182");
-static_assert(offsetof(UPyBuffAbility_10130_10298182, BuffID) == 0x001BB8, "Member 'UPyBuffAbility_10130_10298182::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10298182;
 
 // PythonClass PyBuffAbility_10130_102981.PyCue_Ability_10130_10298101
-// 0x0010 (0x11C0 - 0x11B0)
+// 0x0010 (0x11D0 - 0x11C0)
 class APyCue_Ability_10130_10298101 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         CountDownAudioID;                                  // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CountDownTime;                                     // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CountDownBiasTime;                                 // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AbilityID;                                         // 0x11BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CountDownAudioID;                                  // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CountDownTime;                                     // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CountDownBiasTime;                                 // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x11CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -61,19 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_10130_10298101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_10130_10298101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_10130_10298101")
 	}
 	static class APyCue_Ability_10130_10298101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_10130_10298101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_10130_10298101) == 0x000010, "Wrong alignment on APyCue_Ability_10130_10298101");
-static_assert(sizeof(APyCue_Ability_10130_10298101) == 0x0011C0, "Wrong size on APyCue_Ability_10130_10298101");
-static_assert(offsetof(APyCue_Ability_10130_10298101, CountDownAudioID) == 0x0011B0, "Member 'APyCue_Ability_10130_10298101::CountDownAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_10130_10298101, CountDownTime) == 0x0011B4, "Member 'APyCue_Ability_10130_10298101::CountDownTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_10130_10298101, CountDownBiasTime) == 0x0011B8, "Member 'APyCue_Ability_10130_10298101::CountDownBiasTime' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_10130_10298101, AbilityID) == 0x0011BC, "Member 'APyCue_Ability_10130_10298101::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_10130_10298101;
 
 }
 

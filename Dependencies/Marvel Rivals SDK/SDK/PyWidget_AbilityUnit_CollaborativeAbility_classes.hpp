@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AbilityUnit_CollaborativeAbility.PyWidget_AbilityUnit_CollaborativeAbility
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_AbilityUnit_CollaborativeAbility : public UPyWidget_AbilityIntroUnit
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityUnit_CollaborativeAbility">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityUnit_CollaborativeAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityUnit_CollaborativeAbility")
 	}
 	static class UPyWidget_AbilityUnit_CollaborativeAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityUnit_CollaborativeAbility>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityUnit_CollaborativeAbility) == 0x000008, "Wrong alignment on UPyWidget_AbilityUnit_CollaborativeAbility");
-static_assert(sizeof(UPyWidget_AbilityUnit_CollaborativeAbility) == 0x000600, "Wrong size on UPyWidget_AbilityUnit_CollaborativeAbility");
+DUMPER7_ASSERTS_UPyWidget_AbilityUnit_CollaborativeAbility;
 
 }
 

@@ -12,15 +12,15 @@
 
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "Hero_1043_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104332.PyCue_Buff_10433201
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10433201 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -30,39 +30,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10433201">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10433201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10433201")
 	}
 	static class APyCue_Buff_10433201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10433201>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10433201) == 0x000010, "Wrong alignment on APyCue_Buff_10433201");
-static_assert(sizeof(APyCue_Buff_10433201) == 0x001640, "Wrong size on APyCue_Buff_10433201");
-
-// PythonClass PyAbility_104332.PyTraceComponent_10433201
-// 0x0000 (0x2200 - 0x2200)
-class UPyTraceComponent_10433201 : public UTraceComponent_10433201
-{
-public:
-	void K2_Initialize();
-	void OnTraceCompleted(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyTraceComponent_10433201">();
-	}
-	static class UPyTraceComponent_10433201* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyTraceComponent_10433201>();
-	}
-};
-static_assert(alignof(UPyTraceComponent_10433201) == 0x000010, "Wrong alignment on UPyTraceComponent_10433201");
-static_assert(sizeof(UPyTraceComponent_10433201) == 0x002200, "Wrong size on UPyTraceComponent_10433201");
+DUMPER7_ASSERTS_APyCue_Buff_10433201;
 
 // PythonClass PyAbility_104332.PyAbility_104332
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_104332 : public UAbility_108
 {
 public:
@@ -82,18 +64,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104332">();
+		STATIC_CLASS_IMPL("PyAbility_104332")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104332")
 	}
 	static class UPyAbility_104332* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104332>();
 	}
 };
-static_assert(alignof(UPyAbility_104332) == 0x000008, "Wrong alignment on UPyAbility_104332");
-static_assert(sizeof(UPyAbility_104332) == 0x0029F8, "Wrong size on UPyAbility_104332");
+DUMPER7_ASSERTS_UPyAbility_104332;
 
 // PythonClass PyAbility_104332.PyConfig_104332
-// 0x1698 (0x1730 - 0x0098)
+// 0x19E8 (0x1A80 - 0x0098)
 class UPyConfig_104332 : public UMarvelAbilityConfig
 {
 public:
@@ -102,32 +87,51 @@ public:
 	int32                                         DecelerateBuffId;                                  // 0x00A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinCancelTime;                                     // 0x00A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00B0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         DamageValue;                                       // 0x1710(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1714[0x4];                                     // 0x1714(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            DamageDistanceCurve;                               // 0x1718(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           CueTag;                                            // 0x1720(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x00B0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         DamageValue;                                       // 0x1A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A64[0x4];                                     // 0x1A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            DamageDistanceCurve;                               // 0x1A68(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CueTag;                                            // 0x1A70(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104332">();
+		STATIC_CLASS_IMPL("PyConfig_104332")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104332")
 	}
 	static class UPyConfig_104332* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104332>();
 	}
 };
-static_assert(alignof(UPyConfig_104332) == 0x000010, "Wrong alignment on UPyConfig_104332");
-static_assert(sizeof(UPyConfig_104332) == 0x001730, "Wrong size on UPyConfig_104332");
-static_assert(offsetof(UPyConfig_104332, ScopeID) == 0x000098, "Member 'UPyConfig_104332::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, AttackDuration) == 0x00009C, "Member 'UPyConfig_104332::AttackDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, DecelerateBuffId) == 0x0000A0, "Member 'UPyConfig_104332::DecelerateBuffId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, MinCancelTime) == 0x0000A4, "Member 'UPyConfig_104332::MinCancelTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, TraceContext) == 0x0000B0, "Member 'UPyConfig_104332::TraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, DamageValue) == 0x001710, "Member 'UPyConfig_104332::DamageValue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, DamageDistanceCurve) == 0x001718, "Member 'UPyConfig_104332::DamageDistanceCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104332, CueTag) == 0x001720, "Member 'UPyConfig_104332::CueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104332;
+
+// PythonClass PyAbility_104332.PyTraceComponent_10433201
+// 0x0000 (0x2600 - 0x2600)
+class UPyTraceComponent_10433201 : public UTraceComponent_10433201
+{
+public:
+	void K2_Initialize();
+	void OnTraceCompleted(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyTraceComponent_10433201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10433201")
+	}
+	static class UPyTraceComponent_10433201* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyTraceComponent_10433201>();
+	}
+};
+DUMPER7_ASSERTS_UPyTraceComponent_10433201;
 
 }
 

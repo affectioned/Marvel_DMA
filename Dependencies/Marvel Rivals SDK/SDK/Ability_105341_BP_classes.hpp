@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105341_BP.Ability_105341_BP_C
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UAbility_105341_BP_C final : public UPyAbility_105341
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x29F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         Buff_Timer;                                        // 0x29F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Control_Buff;                                      // 0x29FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAbility_105344_BP_C*                   Ability_105344;                                    // 0x2A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2A40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         Buff_Timer;                                        // 0x2A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Control_Buff;                                      // 0x2A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbility_105344_BP_C*                   Ability_105344;                                    // 0x2A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Ability_105341_BP(int32 EntryPoint);
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105341_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105341_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105341_BP_C")
 	}
 	static class UAbility_105341_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105341_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105341_BP_C) == 0x000008, "Wrong alignment on UAbility_105341_BP_C");
-static_assert(sizeof(UAbility_105341_BP_C) == 0x002A08, "Wrong size on UAbility_105341_BP_C");
-static_assert(offsetof(UAbility_105341_BP_C, UberGraphFrame) == 0x0029F0, "Member 'UAbility_105341_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbility_105341_BP_C, Buff_Timer) == 0x0029F8, "Member 'UAbility_105341_BP_C::Buff_Timer' has a wrong offset!");
-static_assert(offsetof(UAbility_105341_BP_C, Control_Buff) == 0x0029FC, "Member 'UAbility_105341_BP_C::Control_Buff' has a wrong offset!");
-static_assert(offsetof(UAbility_105341_BP_C, Ability_105344) == 0x002A00, "Member 'UAbility_105341_BP_C::Ability_105344' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105341_BP_C;
 
 }
 

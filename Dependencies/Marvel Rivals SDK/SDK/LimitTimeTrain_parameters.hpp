@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryLimitTimeTrainHandler_BP_GetCurrentValue;
 
 // PythonFunction LimitTimeTrain.UISettingEntryLimitTimeTrainHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -44,13 +38,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryLimitTimeTrainHandler_BP_GetDefaultValue;
 
 // PythonFunction LimitTimeTrain.UISettingEntryLimitTimeTrainHandler.BP_IsShowStar
 // 0x00C0 (0x00C0 - 0x0000)
@@ -63,13 +51,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar) == 0x000008, "Wrong alignment on UISettingEntryLimitTimeTrainHandler_BP_IsShowStar");
-static_assert(sizeof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar) == 0x0000C0, "Wrong size on UISettingEntryLimitTimeTrainHandler_BP_IsShowStar");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar, obj) == 0x000000, "Member 'UISettingEntryLimitTimeTrainHandler_BP_IsShowStar::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar, setting_key) == 0x000008, "Member 'UISettingEntryLimitTimeTrainHandler_BP_IsShowStar::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar, params) == 0x000018, "Member 'UISettingEntryLimitTimeTrainHandler_BP_IsShowStar::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar, o) == 0x000068, "Member 'UISettingEntryLimitTimeTrainHandler_BP_IsShowStar::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryLimitTimeTrainHandler_BP_IsShowStar, ReturnValue) == 0x0000B8, "Member 'UISettingEntryLimitTimeTrainHandler_BP_IsShowStar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryLimitTimeTrainHandler_BP_IsShowStar;
 
 }
 

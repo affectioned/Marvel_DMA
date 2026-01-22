@@ -21,9 +21,7 @@ struct PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ClanMemberHistoryEntry_OnListItemObjectSet;
 
 }
 

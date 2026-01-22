@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectHybridModePopup.PyWidget_SelectHybridModePopup
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_SelectHybridModePopup final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                ModeSeletionItem;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageItem;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RuleKeyInputAction;                                // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ModeSeletionItem;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageItem;                                          // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RuleKeyInputAction;                                // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHybridModePopup">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHybridModePopup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHybridModePopup")
 	}
 	static class UPyWidget_SelectHybridModePopup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHybridModePopup>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHybridModePopup) == 0x000008, "Wrong alignment on UPyWidget_SelectHybridModePopup");
-static_assert(sizeof(UPyWidget_SelectHybridModePopup) == 0x000620, "Wrong size on UPyWidget_SelectHybridModePopup");
-static_assert(offsetof(UPyWidget_SelectHybridModePopup, ModeSeletionItem) == 0x0005F8, "Member 'UPyWidget_SelectHybridModePopup::ModeSeletionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHybridModePopup, PageItem) == 0x000600, "Member 'UPyWidget_SelectHybridModePopup::PageItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHybridModePopup, RuleKeyInputAction) == 0x000608, "Member 'UPyWidget_SelectHybridModePopup::RuleKeyInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHybridModePopup, PageGuideTipsStyle) == 0x000610, "Member 'UPyWidget_SelectHybridModePopup::PageGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHybridModePopup;
 
 }
 

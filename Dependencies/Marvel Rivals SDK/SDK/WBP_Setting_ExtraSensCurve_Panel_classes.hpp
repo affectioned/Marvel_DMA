@@ -37,23 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_ExtraSensCurve_Panel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_ExtraSensCurve_Panel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_ExtraSensCurve_Panel_C")
 	}
 	static class UWBP_Setting_ExtraSensCurve_Panel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_ExtraSensCurve_Panel_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_ExtraSensCurve_Panel_C) == 0x000008, "Wrong alignment on UWBP_Setting_ExtraSensCurve_Panel_C");
-static_assert(sizeof(UWBP_Setting_ExtraSensCurve_Panel_C) == 0x0003F8, "Wrong size on UWBP_Setting_ExtraSensCurve_Panel_C");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, AnchorPointWidget) == 0x0003C0, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::AnchorPointWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, AnchorPointWidget_2) == 0x0003C8, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::AnchorPointWidget_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, CanvasPanel_Main) == 0x0003D0, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::CanvasPanel_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, HorizontalCurve) == 0x0003D8, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::HorizontalCurve' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, Img_Axis_X) == 0x0003E0, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::Img_Axis_X' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, Img_Axis_Y) == 0x0003E8, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::Img_Axis_Y' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_ExtraSensCurve_Panel_C, VerticalCurve) == 0x0003F0, "Member 'UWBP_Setting_ExtraSensCurve_Panel_C::VerticalCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_ExtraSensCurve_Panel_C;
 
 }
 

@@ -17,124 +17,92 @@ namespace SDK::Params
 {
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline.InitGameplayAbilities
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_InitGameplayAbilities final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_InitGameplayAbilities) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_InitGameplayAbilities");
-static_assert(sizeof(PyCharacterSpawnPipeline_InitGameplayAbilities) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_InitGameplayAbilities");
-static_assert(offsetof(PyCharacterSpawnPipeline_InitGameplayAbilities, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_InitGameplayAbilities::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_InitGameplayAbilities, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_InitGameplayAbilities::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_InitGameplayAbilities, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_InitGameplayAbilities::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_InitGameplayAbilities;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_LevelCommon.InitGameplayAbilities
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities");
-static_assert(sizeof(PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_LevelCommon_InitGameplayAbilities;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_LevelCommon.PostSpawn
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_LevelCommon_PostSpawn final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_LevelCommon_PostSpawn) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_LevelCommon_PostSpawn");
-static_assert(sizeof(PyCharacterSpawnPipeline_LevelCommon_PostSpawn) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_LevelCommon_PostSpawn");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_PostSpawn, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_LevelCommon_PostSpawn::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_PostSpawn, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_LevelCommon_PostSpawn::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_LevelCommon_PostSpawn, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_LevelCommon_PostSpawn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_LevelCommon_PostSpawn;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_BattleChess.FinishSpawn
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_BattleChess_FinishSpawn final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_BattleChess_FinishSpawn) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_BattleChess_FinishSpawn");
-static_assert(sizeof(PyCharacterSpawnPipeline_BattleChess_FinishSpawn) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_BattleChess_FinishSpawn");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_FinishSpawn, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_BattleChess_FinishSpawn::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_FinishSpawn, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_BattleChess_FinishSpawn::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_FinishSpawn, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_BattleChess_FinishSpawn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_BattleChess_FinishSpawn;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_BattleChess.InitAttributes
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_BattleChess_InitAttributes final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_BattleChess_InitAttributes) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_BattleChess_InitAttributes");
-static_assert(sizeof(PyCharacterSpawnPipeline_BattleChess_InitAttributes) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_BattleChess_InitAttributes");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_InitAttributes, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_BattleChess_InitAttributes::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_InitAttributes, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_BattleChess_InitAttributes::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_InitAttributes, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_BattleChess_InitAttributes::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_BattleChess_InitAttributes;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_BattleChess.PostSpawn
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_BattleChess_PostSpawn final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_BattleChess_PostSpawn) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_BattleChess_PostSpawn");
-static_assert(sizeof(PyCharacterSpawnPipeline_BattleChess_PostSpawn) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_BattleChess_PostSpawn");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_PostSpawn, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_BattleChess_PostSpawn::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_PostSpawn, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_BattleChess_PostSpawn::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_BattleChess_PostSpawn, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_BattleChess_PostSpawn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_BattleChess_PostSpawn;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_Halloween.InitGameplayAbilities
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities");
-static_assert(sizeof(PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_Halloween_InitGameplayAbilities;
 
 // PythonFunction PyLevelSpawnPipeline.PyCharacterSpawnPipeline_Halloween.PostSpawn
-// 0x08A0 (0x08A0 - 0x0000)
+// 0x08C0 (0x08C0 - 0x0000)
 struct PyCharacterSpawnPipeline_Halloween_PostSpawn final
 {
 public:
-	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x0890)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x0890(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0898(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelActorSpawnContext               InSpawnContext;                                    // 0x0000(0x08B0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FMarvelActorSpawnResult                InSpawnResult;                                     // 0x08B0(0x0008)(Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x08B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCharacterSpawnPipeline_Halloween_PostSpawn) == 0x000010, "Wrong alignment on PyCharacterSpawnPipeline_Halloween_PostSpawn");
-static_assert(sizeof(PyCharacterSpawnPipeline_Halloween_PostSpawn) == 0x0008A0, "Wrong size on PyCharacterSpawnPipeline_Halloween_PostSpawn");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_PostSpawn, InSpawnContext) == 0x000000, "Member 'PyCharacterSpawnPipeline_Halloween_PostSpawn::InSpawnContext' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_PostSpawn, InSpawnResult) == 0x000890, "Member 'PyCharacterSpawnPipeline_Halloween_PostSpawn::InSpawnResult' has a wrong offset!");
-static_assert(offsetof(PyCharacterSpawnPipeline_Halloween_PostSpawn, ReturnValue) == 0x000898, "Member 'PyCharacterSpawnPipeline_Halloween_PostSpawn::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCharacterSpawnPipeline_Halloween_PostSpawn;
 
 }
 

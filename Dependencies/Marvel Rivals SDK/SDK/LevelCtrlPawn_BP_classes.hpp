@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LevelCtrlPawn_BP.LevelCtrlPawn_BP_C
-// 0x0010 (0x07D0 - 0x07C0)
+// 0x0010 (0x07F0 - 0x07E0)
 class ALevelCtrlPawn_BP_C final : public APyMarvelLevelCtrlPawn
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x07E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelCtrlPawn_BP_C">();
+		BP_STATIC_CLASS_IMPL("LevelCtrlPawn_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelCtrlPawn_BP_C")
 	}
 	static class ALevelCtrlPawn_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelCtrlPawn_BP_C>();
 	}
 };
-static_assert(alignof(ALevelCtrlPawn_BP_C) == 0x000010, "Wrong alignment on ALevelCtrlPawn_BP_C");
-static_assert(sizeof(ALevelCtrlPawn_BP_C) == 0x0007D0, "Wrong size on ALevelCtrlPawn_BP_C");
-static_assert(offsetof(ALevelCtrlPawn_BP_C, DefaultSceneRoot) == 0x0007C0, "Member 'ALevelCtrlPawn_BP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ALevelCtrlPawn_BP_C;
 
 }
 

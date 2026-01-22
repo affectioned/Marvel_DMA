@@ -22,46 +22,73 @@ namespace SDK
 class UPyWidget_Activity150_Reward_Preview_PanelData final : public UPyWidget_ActivityExpBpBase_PanelData
 {
 public:
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PreviewItemId;                                     // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EActivity150Round                             PreviewRound;                                      // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Reward_Preview_PanelData">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Reward_Preview_PanelData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Reward_Preview_PanelData")
 	}
 	static class UPyWidget_Activity150_Reward_Preview_PanelData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Reward_Preview_PanelData>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Reward_Preview_PanelData) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Reward_Preview_PanelData");
-static_assert(sizeof(UPyWidget_Activity150_Reward_Preview_PanelData) == 0x000050, "Wrong size on UPyWidget_Activity150_Reward_Preview_PanelData");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_PanelData, PreviewItemId) == 0x000038, "Member 'UPyWidget_Activity150_Reward_Preview_PanelData::PreviewItemId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Reward_Preview_PanelData, PreviewRound) == 0x000048, "Member 'UPyWidget_Activity150_Reward_Preview_PanelData::PreviewRound' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Reward_Preview_PanelData;
 
 // PythonClass ui_controller_activity150.PyWidget_Activity150_PropView_Result_PanelData
 // 0x0018 (0x0050 - 0x0038)
 class UPyWidget_Activity150_PropView_Result_PanelData final : public UPyWidget_ActivityExpBpBase_PanelData
 {
 public:
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ResultRowId;                                       // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResultIdx;                                         // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_PropView_Result_PanelData">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_PropView_Result_PanelData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_PropView_Result_PanelData")
 	}
 	static class UPyWidget_Activity150_PropView_Result_PanelData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_PropView_Result_PanelData>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_PropView_Result_PanelData) == 0x000008, "Wrong alignment on UPyWidget_Activity150_PropView_Result_PanelData");
-static_assert(sizeof(UPyWidget_Activity150_PropView_Result_PanelData) == 0x000050, "Wrong size on UPyWidget_Activity150_PropView_Result_PanelData");
-static_assert(offsetof(UPyWidget_Activity150_PropView_Result_PanelData, ResultRowId) == 0x000038, "Member 'UPyWidget_Activity150_PropView_Result_PanelData::ResultRowId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_PropView_Result_PanelData, ResultIdx) == 0x000048, "Member 'UPyWidget_Activity150_PropView_Result_PanelData::ResultIdx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_PropView_Result_PanelData;
+
+// PythonClass ui_controller_activity150.PyWidget_Activity150_Propview_PanelData
+// 0x0000 (0x0038 - 0x0038)
+class UPyWidget_Activity150_Propview_PanelData final : public UPyWidget_ActivityExpBpBase_PanelData
+{
+public:
+	bool                                          IsPlayUnlockMember;                                // 0x0034(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Propview_PanelData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Propview_PanelData")
+	}
+	static class UPyWidget_Activity150_Propview_PanelData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Activity150_Propview_PanelData>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Activity150_Propview_PanelData;
 
 }
 

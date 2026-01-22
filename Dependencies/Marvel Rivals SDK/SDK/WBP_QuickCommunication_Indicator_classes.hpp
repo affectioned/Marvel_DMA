@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_QuickCommunication_Indicator_C">();
+		BP_STATIC_CLASS_IMPL("WBP_QuickCommunication_Indicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_QuickCommunication_Indicator_C")
 	}
 	static class UWBP_QuickCommunication_Indicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_QuickCommunication_Indicator_C>();
 	}
 };
-static_assert(alignof(UWBP_QuickCommunication_Indicator_C) == 0x000010, "Wrong alignment on UWBP_QuickCommunication_Indicator_C");
-static_assert(sizeof(UWBP_QuickCommunication_Indicator_C) == 0x0008A0, "Wrong size on UWBP_QuickCommunication_Indicator_C");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, UberGraphFrame) == 0x000870, "Member 'UWBP_QuickCommunication_Indicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, Img_Bg) == 0x000878, "Member 'UWBP_QuickCommunication_Indicator_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, Img_Communicate_Icon) == 0x000880, "Member 'UWBP_QuickCommunication_Indicator_C::Img_Communicate_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, Img_Edgeglow_Vx_1) == 0x000888, "Member 'UWBP_QuickCommunication_Indicator_C::Img_Edgeglow_Vx_1' has a wrong offset!");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, Img_Frame) == 0x000890, "Member 'UWBP_QuickCommunication_Indicator_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_QuickCommunication_Indicator_C, WBP_Texture) == 0x000898, "Member 'UWBP_QuickCommunication_Indicator_C::WBP_Texture' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_QuickCommunication_Indicator_C;
 
 }
 

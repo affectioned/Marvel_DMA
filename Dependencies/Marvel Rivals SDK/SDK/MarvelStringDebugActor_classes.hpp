@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelStringDebugActor_C">();
+		BP_STATIC_CLASS_IMPL("MarvelStringDebugActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelStringDebugActor_C")
 	}
 	static class AMarvelStringDebugActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelStringDebugActor_C>();
 	}
 };
-static_assert(alignof(AMarvelStringDebugActor_C) == 0x000010, "Wrong alignment on AMarvelStringDebugActor_C");
-static_assert(sizeof(AMarvelStringDebugActor_C) == 0x000700, "Wrong size on AMarvelStringDebugActor_C");
-static_assert(offsetof(AMarvelStringDebugActor_C, UberGraphFrame) == 0x0006E0, "Member 'AMarvelStringDebugActor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelStringDebugActor_C, Widget) == 0x0006E8, "Member 'AMarvelStringDebugActor_C::Widget' has a wrong offset!");
-static_assert(offsetof(AMarvelStringDebugActor_C, DefaultSceneRoot) == 0x0006F0, "Member 'AMarvelStringDebugActor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelStringDebugActor_C, IsFromServer) == 0x0006F8, "Member 'AMarvelStringDebugActor_C::IsFromServer' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelStringDebugActor_C;
 
 }
 

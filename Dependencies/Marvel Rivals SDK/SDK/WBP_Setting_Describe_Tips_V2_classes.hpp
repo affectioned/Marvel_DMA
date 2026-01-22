@@ -35,25 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Describe_Tips_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Describe_Tips_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Describe_Tips_V2_C")
 	}
 	static class UWBP_Setting_Describe_Tips_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Describe_Tips_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Describe_Tips_V2_C) == 0x000010, "Wrong alignment on UWBP_Setting_Describe_Tips_V2_C");
-static_assert(sizeof(UWBP_Setting_Describe_Tips_V2_C) == 0x000C40, "Wrong size on UWBP_Setting_Describe_Tips_V2_C");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Anim_Fail) == 0x000BC0, "Member 'UWBP_Setting_Describe_Tips_V2_C::Anim_Fail' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Anim_Success) == 0x000BC8, "Member 'UWBP_Setting_Describe_Tips_V2_C::Anim_Success' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Bg) == 0x000BD0, "Member 'UWBP_Setting_Describe_Tips_V2_C::Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, ProgressBar_RevokeTime) == 0x000BD8, "Member 'UWBP_Setting_Describe_Tips_V2_C::ProgressBar_RevokeTime' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, RText_Content) == 0x000BE0, "Member 'UWBP_Setting_Describe_Tips_V2_C::RText_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Text_Title) == 0x000BE8, "Member 'UWBP_Setting_Describe_Tips_V2_C::Text_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, WBP_Common_Btn_Lv3) == 0x000BF0, "Member 'UWBP_Setting_Describe_Tips_V2_C::WBP_Common_Btn_Lv3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Bind) == 0x000BF8, "Member 'UWBP_Setting_Describe_Tips_V2_C::Bind' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Bound) == 0x000C10, "Member 'UWBP_Setting_Describe_Tips_V2_C::Bound' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Describe_Tips_V2_C, Clash) == 0x000C28, "Member 'UWBP_Setting_Describe_Tips_V2_C::Clash' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Describe_Tips_V2_C;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWidget3D_RespawnCountdown_PlayerRespawnStart final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_RespawnCountdown_PlayerRespawnStart) == 0x000004, "Wrong alignment on PyWidget3D_RespawnCountdown_PlayerRespawnStart");
-static_assert(sizeof(PyWidget3D_RespawnCountdown_PlayerRespawnStart) == 0x000004, "Wrong size on PyWidget3D_RespawnCountdown_PlayerRespawnStart");
-static_assert(offsetof(PyWidget3D_RespawnCountdown_PlayerRespawnStart, Time) == 0x000000, "Member 'PyWidget3D_RespawnCountdown_PlayerRespawnStart::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_RespawnCountdown_PlayerRespawnStart;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget3D_RespawnCountdown.SetRespawnTime
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget3D_RespawnCountdown_SetRespawnTime final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_RespawnCountdown_SetRespawnTime) == 0x000004, "Wrong alignment on PyWidget3D_RespawnCountdown_SetRespawnTime");
-static_assert(sizeof(PyWidget3D_RespawnCountdown_SetRespawnTime) == 0x000004, "Wrong size on PyWidget3D_RespawnCountdown_SetRespawnTime");
-static_assert(offsetof(PyWidget3D_RespawnCountdown_SetRespawnTime, Time) == 0x000000, "Member 'PyWidget3D_RespawnCountdown_SetRespawnTime::Time' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_RespawnCountdown_SetRespawnTime;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget3D_RespawnCountdown.SetCanBeResurrected
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget3D_RespawnCountdown_SetCanBeResurrected final
 public:
 	bool                                          CanBeResurrected;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_RespawnCountdown_SetCanBeResurrected) == 0x000001, "Wrong alignment on PyWidget3D_RespawnCountdown_SetCanBeResurrected");
-static_assert(sizeof(PyWidget3D_RespawnCountdown_SetCanBeResurrected) == 0x000001, "Wrong size on PyWidget3D_RespawnCountdown_SetCanBeResurrected");
-static_assert(offsetof(PyWidget3D_RespawnCountdown_SetCanBeResurrected, CanBeResurrected) == 0x000000, "Member 'PyWidget3D_RespawnCountdown_SetCanBeResurrected::CanBeResurrected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_RespawnCountdown_SetCanBeResurrected;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget3D_RespawnCountdown.SetProgressBarColor
 // 0x0010 (0x0010 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget3D_RespawnCountdown_SetProgressBarColor final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_RespawnCountdown_SetProgressBarColor) == 0x000004, "Wrong alignment on PyWidget3D_RespawnCountdown_SetProgressBarColor");
-static_assert(sizeof(PyWidget3D_RespawnCountdown_SetProgressBarColor) == 0x000010, "Wrong size on PyWidget3D_RespawnCountdown_SetProgressBarColor");
-static_assert(offsetof(PyWidget3D_RespawnCountdown_SetProgressBarColor, Color) == 0x000000, "Member 'PyWidget3D_RespawnCountdown_SetProgressBarColor::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_RespawnCountdown_SetProgressBarColor;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget3D_RespawnCountdown.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget3D_RespawnCountdown_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_RespawnCountdown_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget3D_RespawnCountdown_ShouldBeVisible");
-static_assert(sizeof(PyWidget3D_RespawnCountdown_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget3D_RespawnCountdown_ShouldBeVisible");
-static_assert(offsetof(PyWidget3D_RespawnCountdown_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget3D_RespawnCountdown_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_RespawnCountdown_ShouldBeVisible;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget_Warning.SetWidgetComponentOwner
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_Warning_SetWidgetComponentOwner final
 public:
 	class UWidgetComponent*                       InWidgetComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Warning_SetWidgetComponentOwner) == 0x000008, "Wrong alignment on PyWidget_Warning_SetWidgetComponentOwner");
-static_assert(sizeof(PyWidget_Warning_SetWidgetComponentOwner) == 0x000008, "Wrong size on PyWidget_Warning_SetWidgetComponentOwner");
-static_assert(offsetof(PyWidget_Warning_SetWidgetComponentOwner, InWidgetComponent) == 0x000000, "Member 'PyWidget_Warning_SetWidgetComponentOwner::InWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Warning_SetWidgetComponentOwner;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget_Warning.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_Warning_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Warning_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Warning_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Warning_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Warning_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Warning_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Warning_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Warning_OnAnimationFinished;
 
 // PythonFunction PyWidget_CharacterDeath.PyWidget_AbilityWarningIndicator.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +86,7 @@ struct PyWidget_AbilityWarningIndicator_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityWarningIndicator_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_AbilityWarningIndicator_ShouldBeVisible");
-static_assert(sizeof(PyWidget_AbilityWarningIndicator_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_AbilityWarningIndicator_ShouldBeVisible");
-static_assert(offsetof(PyWidget_AbilityWarningIndicator_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_AbilityWarningIndicator_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityWarningIndicator_ShouldBeVisible;
 
 }
 

@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChat_TargetTeam">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChat_TargetTeam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChat_TargetTeam")
 	}
 	static class UPyWidget_LeagueChat_TargetTeam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChat_TargetTeam>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChat_TargetTeam) == 0x000010, "Wrong alignment on UPyWidget_LeagueChat_TargetTeam");
-static_assert(sizeof(UPyWidget_LeagueChat_TargetTeam) == 0x000700, "Wrong size on UPyWidget_LeagueChat_TargetTeam");
-static_assert(offsetof(UPyWidget_LeagueChat_TargetTeam, MRC_Bg) == 0x0003C0, "Member 'UPyWidget_LeagueChat_TargetTeam::MRC_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChat_TargetTeam, MRC_PositionBg) == 0x000490, "Member 'UPyWidget_LeagueChat_TargetTeam::MRC_PositionBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChat_TargetTeam, Clash_Bg) == 0x000560, "Member 'UPyWidget_LeagueChat_TargetTeam::Clash_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChat_TargetTeam, Clash_PositionBg) == 0x000630, "Member 'UPyWidget_LeagueChat_TargetTeam::Clash_PositionBg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChat_TargetTeam;
 
 }
 

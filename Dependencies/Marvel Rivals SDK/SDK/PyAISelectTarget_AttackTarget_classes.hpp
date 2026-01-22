@@ -23,15 +23,18 @@ class UPyAISelectTarget_AttackTarget : public UPyAISelectTargetLogicBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_AttackTarget">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_AttackTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_AttackTarget")
 	}
 	static class UPyAISelectTarget_AttackTarget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_AttackTarget>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_AttackTarget) == 0x000008, "Wrong alignment on UPyAISelectTarget_AttackTarget");
-static_assert(sizeof(UPyAISelectTarget_AttackTarget) == 0x000070, "Wrong size on UPyAISelectTarget_AttackTarget");
+DUMPER7_ASSERTS_UPyAISelectTarget_AttackTarget;
 
 }
 

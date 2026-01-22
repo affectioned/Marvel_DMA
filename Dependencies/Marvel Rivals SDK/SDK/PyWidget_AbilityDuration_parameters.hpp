@@ -21,9 +21,7 @@ struct PyWidget_AbilityDuration_Top_SetVisible final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityDuration_Top_SetVisible) == 0x000001, "Wrong alignment on PyWidget_AbilityDuration_Top_SetVisible");
-static_assert(sizeof(PyWidget_AbilityDuration_Top_SetVisible) == 0x000001, "Wrong size on PyWidget_AbilityDuration_Top_SetVisible");
-static_assert(offsetof(PyWidget_AbilityDuration_Top_SetVisible, InVisible) == 0x000000, "Member 'PyWidget_AbilityDuration_Top_SetVisible::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityDuration_Top_SetVisible;
 
 // PythonFunction PyWidget_AbilityDuration.PyWidget_AbilityDuration_Top.SetVisibleImmediately
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_AbilityDuration_Top_SetVisibleImmediately final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityDuration_Top_SetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_AbilityDuration_Top_SetVisibleImmediately");
-static_assert(sizeof(PyWidget_AbilityDuration_Top_SetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_AbilityDuration_Top_SetVisibleImmediately");
-static_assert(offsetof(PyWidget_AbilityDuration_Top_SetVisibleImmediately, InVisible) == 0x000000, "Member 'PyWidget_AbilityDuration_Top_SetVisibleImmediately::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityDuration_Top_SetVisibleImmediately;
 
 // PythonFunction PyWidget_AbilityDuration.PyWidget_AbilityDuration_Top.SetTipText
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_AbilityDuration_Top_SetTipText final
 public:
 	class FString                                 InText;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityDuration_Top_SetTipText) == 0x000008, "Wrong alignment on PyWidget_AbilityDuration_Top_SetTipText");
-static_assert(sizeof(PyWidget_AbilityDuration_Top_SetTipText) == 0x000010, "Wrong size on PyWidget_AbilityDuration_Top_SetTipText");
-static_assert(offsetof(PyWidget_AbilityDuration_Top_SetTipText, InText) == 0x000000, "Member 'PyWidget_AbilityDuration_Top_SetTipText::InText' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityDuration_Top_SetTipText;
 
 // PythonFunction PyWidget_AbilityDuration.PyWidget_AbilityDuration_Top.SetMaxDegree
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_AbilityDuration_Top_SetMaxDegree final
 public:
 	int32                                         InMaxDegree;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityDuration_Top_SetMaxDegree) == 0x000004, "Wrong alignment on PyWidget_AbilityDuration_Top_SetMaxDegree");
-static_assert(sizeof(PyWidget_AbilityDuration_Top_SetMaxDegree) == 0x000004, "Wrong size on PyWidget_AbilityDuration_Top_SetMaxDegree");
-static_assert(offsetof(PyWidget_AbilityDuration_Top_SetMaxDegree, InMaxDegree) == 0x000000, "Member 'PyWidget_AbilityDuration_Top_SetMaxDegree::InMaxDegree' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityDuration_Top_SetMaxDegree;
 
 // PythonFunction PyWidget_AbilityDuration.PyWidget_AbilityDuration_Top.SetSummonHpBarIcon
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_AbilityDuration_Top_SetSummonHpBarIcon final
 public:
 	class UTexture2D*                             InIcon;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityDuration_Top_SetSummonHpBarIcon) == 0x000008, "Wrong alignment on PyWidget_AbilityDuration_Top_SetSummonHpBarIcon");
-static_assert(sizeof(PyWidget_AbilityDuration_Top_SetSummonHpBarIcon) == 0x000008, "Wrong size on PyWidget_AbilityDuration_Top_SetSummonHpBarIcon");
-static_assert(offsetof(PyWidget_AbilityDuration_Top_SetSummonHpBarIcon, InIcon) == 0x000000, "Member 'PyWidget_AbilityDuration_Top_SetSummonHpBarIcon::InIcon' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityDuration_Top_SetSummonHpBarIcon;
 
 }
 

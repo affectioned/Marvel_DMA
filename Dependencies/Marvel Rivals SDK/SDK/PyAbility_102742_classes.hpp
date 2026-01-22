@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102742.PyAbility_102742
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_102742 : public UAbility_102742
 {
 public:
@@ -31,18 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102742">();
+		STATIC_CLASS_IMPL("PyAbility_102742")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102742")
 	}
 	static class UPyAbility_102742* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102742>();
 	}
 };
-static_assert(alignof(UPyAbility_102742) == 0x000008, "Wrong alignment on UPyAbility_102742");
-static_assert(sizeof(UPyAbility_102742) == 0x002A00, "Wrong size on UPyAbility_102742");
+DUMPER7_ASSERTS_UPyAbility_102742;
 
 // PythonClass PyAbility_102742.PyUIC_SelectTarget_102742
-// 0x0000 (0x0158 - 0x0158)
+// 0x0000 (0x01B8 - 0x01B8)
 class UPyUIC_SelectTarget_102742 final : public UUIC_SelectTarget
 {
 public:
@@ -51,15 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_102742">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_102742")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_102742")
 	}
 	static class UPyUIC_SelectTarget_102742* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_102742>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_102742) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_102742");
-static_assert(sizeof(UPyUIC_SelectTarget_102742) == 0x000158, "Wrong size on UPyUIC_SelectTarget_102742");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_102742;
 
 }
 

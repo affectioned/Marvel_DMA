@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUICUnit_SummonNum">();
+		STATIC_CLASS_IMPL("PyUICUnit_SummonNum")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUICUnit_SummonNum")
 	}
 	static class UPyUICUnit_SummonNum* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUICUnit_SummonNum>();
 	}
 };
-static_assert(alignof(UPyUICUnit_SummonNum) == 0x000008, "Wrong alignment on UPyUICUnit_SummonNum");
-static_assert(sizeof(UPyUICUnit_SummonNum) == 0x0000E0, "Wrong size on UPyUICUnit_SummonNum");
-static_assert(offsetof(UPyUICUnit_SummonNum, ViewerSideWatcher) == 0x000040, "Member 'UPyUICUnit_SummonNum::ViewerSideWatcher' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, NumClass_V7) == 0x000050, "Member 'UPyUICUnit_SummonNum::NumClass_V7' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, bHiddenWhenEmpty) == 0x000058, "Member 'UPyUICUnit_SummonNum::bHiddenWhenEmpty' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, WidgetStyleConfig) == 0x000060, "Member 'UPyUICUnit_SummonNum::WidgetStyleConfig' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, HostSummonID) == 0x0000B0, "Member 'UPyUICUnit_SummonNum::HostSummonID' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, SummonIDList) == 0x0000B8, "Member 'UPyUICUnit_SummonNum::SummonIDList' has a wrong offset!");
-static_assert(offsetof(UPyUICUnit_SummonNum, SummonedDesc) == 0x0000C8, "Member 'UPyUICUnit_SummonNum::SummonedDesc' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUICUnit_SummonNum;
 
 }
 

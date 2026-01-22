@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySmoothChargePercentExtension">();
+		STATIC_CLASS_IMPL("PySmoothChargePercentExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySmoothChargePercentExtension")
 	}
 	static class UPySmoothChargePercentExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySmoothChargePercentExtension>();
 	}
 };
-static_assert(alignof(UPySmoothChargePercentExtension) == 0x000008, "Wrong alignment on UPySmoothChargePercentExtension");
-static_assert(sizeof(UPySmoothChargePercentExtension) == 0x000040, "Wrong size on UPySmoothChargePercentExtension");
-static_assert(offsetof(UPySmoothChargePercentExtension, OnSmoothValueUpdated) == 0x000030, "Member 'UPySmoothChargePercentExtension::OnSmoothValueUpdated' has a wrong offset!");
+DUMPER7_ASSERTS_UPySmoothChargePercentExtension;
 
 }
 

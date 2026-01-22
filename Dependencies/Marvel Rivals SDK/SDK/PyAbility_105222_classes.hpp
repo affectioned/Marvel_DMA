@@ -19,41 +19,37 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105222.PyConfig_105222
-// 0x2748 (0x27E0 - 0x0098)
+// 0x2F58 (0x2FF0 - 0x0098)
 class UPyConfig_105222 final : public UMarvelAbilityConfig
 {
 public:
 	TArray<TArray<int32>>                         ScopeID;                                           // 0x0098(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A8(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FMarvelTraceRule                       TraceRule;                                         // 0x0C70(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1008[0x8];                                     // 0x1008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x1010(0x17C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ReduceCDAbilityID;                                 // 0x27D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReduceCDLength;                                    // 0x27D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ComboTimeout;                                      // 0x27D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A8(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       TraceRule;                                         // 0x0F90(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1468[0x8];                                     // 0x1468(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x1470(0x1B70)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ReduceCDAbilityID;                                 // 0x2FE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReduceCDLength;                                    // 0x2FE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ComboTimeout;                                      // 0x2FE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105222">();
+		STATIC_CLASS_IMPL("PyConfig_105222")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105222")
 	}
 	static class UPyConfig_105222* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105222>();
 	}
 };
-static_assert(alignof(UPyConfig_105222) == 0x000010, "Wrong alignment on UPyConfig_105222");
-static_assert(sizeof(UPyConfig_105222) == 0x0027E0, "Wrong size on UPyConfig_105222");
-static_assert(offsetof(UPyConfig_105222, ScopeID) == 0x000098, "Member 'UPyConfig_105222::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, DashInfo) == 0x0000A8, "Member 'UPyConfig_105222::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, TraceRule) == 0x000C70, "Member 'UPyConfig_105222::TraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, SelectTaskParams) == 0x001010, "Member 'UPyConfig_105222::SelectTaskParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, ReduceCDAbilityID) == 0x0027D0, "Member 'UPyConfig_105222::ReduceCDAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, ReduceCDLength) == 0x0027D4, "Member 'UPyConfig_105222::ReduceCDLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105222, ComboTimeout) == 0x0027D8, "Member 'UPyConfig_105222::ComboTimeout' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105222;
 
 // PythonClass PyAbility_105222.PyAbility_105222
-// 0x0000 (0x2A10 - 0x2A10)
+// 0x0000 (0x2A60 - 0x2A60)
 class UPyAbility_105222 : public UPyAbility_105221
 {
 public:
@@ -65,15 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105222">();
+		STATIC_CLASS_IMPL("PyAbility_105222")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105222")
 	}
 	static class UPyAbility_105222* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105222>();
 	}
 };
-static_assert(alignof(UPyAbility_105222) == 0x000008, "Wrong alignment on UPyAbility_105222");
-static_assert(sizeof(UPyAbility_105222) == 0x002A10, "Wrong size on UPyAbility_105222");
+DUMPER7_ASSERTS_UPyAbility_105222;
 
 }
 

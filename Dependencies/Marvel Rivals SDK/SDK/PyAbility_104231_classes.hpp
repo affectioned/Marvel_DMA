@@ -10,13 +10,43 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "Hero_1042_classes.hpp"
 
 
 namespace SDK
 {
+
+// PythonClass PyAbility_104231.PySummonedComp_10423102
+// 0x0020 (0x0E28 - 0x0E08)
+class UPySummonedComp_10423102 : public USummonedComp_10424103
+{
+public:
+	TMulticastInlineDelegate<void()>              GenMeshReformDispatcher;                           // 0x0E08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnLinkStateChanged;                                // 0x0E18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void K2_OnBeginAgentTask();
+	void K2_OnGenMeshReform();
+	void K2_OnGenMeshDestroy();
+	void K2_OnEndAgentTask();
+	float GetWebMaxOffsetDistance();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PySummonedComp_10423102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10423102")
+	}
+	static class UPySummonedComp_10423102* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPySummonedComp_10423102>();
+	}
+};
+DUMPER7_ASSERTS_UPySummonedComp_10423102;
 
 // PythonClass PyAbility_104231.PyConfig_104231
 // 0x0020 (0x00B8 - 0x0098)
@@ -32,52 +62,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104231">();
+		STATIC_CLASS_IMPL("PyConfig_104231")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104231")
 	}
 	static class UPyConfig_104231* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104231>();
 	}
 };
-static_assert(alignof(UPyConfig_104231) == 0x000008, "Wrong alignment on UPyConfig_104231");
-static_assert(sizeof(UPyConfig_104231) == 0x0000B8, "Wrong size on UPyConfig_104231");
-static_assert(offsetof(UPyConfig_104231, SpiderWebSummonedID) == 0x000098, "Member 'UPyConfig_104231::SpiderWebSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104231, SpecialHandlIDs) == 0x0000A0, "Member 'UPyConfig_104231::SpecialHandlIDs' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104231, SlowBuffID) == 0x0000B0, "Member 'UPyConfig_104231::SlowBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104231, RootBuffID) == 0x0000B4, "Member 'UPyConfig_104231::RootBuffID' has a wrong offset!");
-
-// PythonClass PyAbility_104231.PyUIController_104231
-// 0x0060 (0x0F70 - 0x0F10)
-class UPyUIController_104231 final : public UUIC_Ability
-{
-public:
-	TMap<EClientPlayerViewSide, struct FWidgetStyle_HealthBar_BattlePanel> SideConfig;               // 0x0F10(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         MaxNum;                                            // 0x0F60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F64[0x4];                                      // 0x0F64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_SummonedInfoPanel> NumClass;                                         // 0x0F68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_104231">();
-	}
-	static class UPyUIController_104231* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_104231>();
-	}
-};
-static_assert(alignof(UPyUIController_104231) == 0x000008, "Wrong alignment on UPyUIController_104231");
-static_assert(sizeof(UPyUIController_104231) == 0x000F70, "Wrong size on UPyUIController_104231");
-static_assert(offsetof(UPyUIController_104231, SideConfig) == 0x000F10, "Member 'UPyUIController_104231::SideConfig' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104231, MaxNum) == 0x000F60, "Member 'UPyUIController_104231::MaxNum' has a wrong offset!");
-static_assert(offsetof(UPyUIController_104231, NumClass) == 0x000F68, "Member 'UPyUIController_104231::NumClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104231;
 
 // PythonClass PyAbility_104231.PySummonedComp_10423101
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10423101 : public UMarvelSummonedComponent
 {
 public:
@@ -89,54 +88,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10423101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10423101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10423101")
 	}
 	static class UPySummonedComp_10423101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10423101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10423101) == 0x000008, "Wrong alignment on UPySummonedComp_10423101");
-static_assert(sizeof(UPySummonedComp_10423101) == 0x000DB0, "Wrong size on UPySummonedComp_10423101");
-
-// PythonClass PyAbility_104231.PySummonedComp_10423102
-// 0x0020 (0x0DD0 - 0x0DB0)
-class UPySummonedComp_10423102 : public USummonedComp_10424103
-{
-public:
-	TMulticastInlineDelegate<void()>              GenMeshReformDispatcher;                           // 0x0DB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnLinkStateChanged;                                // 0x0DC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void K2_OnBeginAgentTask();
-	void K2_OnGenMeshReform();
-	void K2_OnGenMeshDestroy();
-	void K2_OnEndAgentTask();
-	float GetWebMaxOffsetDistance();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PySummonedComp_10423102">();
-	}
-	static class UPySummonedComp_10423102* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPySummonedComp_10423102>();
-	}
-};
-static_assert(alignof(UPySummonedComp_10423102) == 0x000008, "Wrong alignment on UPySummonedComp_10423102");
-static_assert(sizeof(UPySummonedComp_10423102) == 0x000DD0, "Wrong size on UPySummonedComp_10423102");
-static_assert(offsetof(UPySummonedComp_10423102, GenMeshReformDispatcher) == 0x000DB0, "Member 'UPySummonedComp_10423102::GenMeshReformDispatcher' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10423102, OnLinkStateChanged) == 0x000DC0, "Member 'UPySummonedComp_10423102::OnLinkStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_10423101;
 
 // PythonClass PyAbility_104231.PyAbility_104231
-// 0x0018 (0x2A10 - 0x29F8)
+// 0x0018 (0x2A60 - 0x2A48)
 class UPyAbility_104231 : public UAbility_108
 {
 public:
-	int32                                         CurrentWebNum;                                     // 0x29F8(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29FC[0x4];                                     // 0x29FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 CurrentWebNum)> OnCurrentWebNumUpdate;                       // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         CurrentWebNum;                                     // 0x2A48(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A4C[0x4];                                     // 0x2A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 CurrentWebNum)> OnCurrentWebNumUpdate;                       // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnRep_CurrentWebNum();
@@ -144,20 +116,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104231">();
+		STATIC_CLASS_IMPL("PyAbility_104231")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104231")
 	}
 	static class UPyAbility_104231* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104231>();
 	}
 };
-static_assert(alignof(UPyAbility_104231) == 0x000008, "Wrong alignment on UPyAbility_104231");
-static_assert(sizeof(UPyAbility_104231) == 0x002A10, "Wrong size on UPyAbility_104231");
-static_assert(offsetof(UPyAbility_104231, CurrentWebNum) == 0x0029F8, "Member 'UPyAbility_104231::CurrentWebNum' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104231, OnCurrentWebNumUpdate) == 0x002A00, "Member 'UPyAbility_104231::OnCurrentWebNumUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104231;
 
 // PythonClass PyAbility_104231.PyProjectile_10423101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10423101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -166,15 +139,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10423101">();
+		STATIC_CLASS_IMPL("PyProjectile_10423101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10423101")
 	}
 	static class APyProjectile_10423101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10423101>();
 	}
 };
-static_assert(alignof(APyProjectile_10423101) == 0x000010, "Wrong alignment on APyProjectile_10423101");
-static_assert(sizeof(APyProjectile_10423101) == 0x003B90, "Wrong size on APyProjectile_10423101");
+DUMPER7_ASSERTS_APyProjectile_10423101;
 
 }
 

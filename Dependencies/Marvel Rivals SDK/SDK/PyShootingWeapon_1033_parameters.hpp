@@ -21,9 +21,7 @@ struct PyShootingWeapon_103311_SetHideRightStick final
 public:
 	bool                                          bHide;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShootingWeapon_103311_SetHideRightStick) == 0x000001, "Wrong alignment on PyShootingWeapon_103311_SetHideRightStick");
-static_assert(sizeof(PyShootingWeapon_103311_SetHideRightStick) == 0x000001, "Wrong size on PyShootingWeapon_103311_SetHideRightStick");
-static_assert(offsetof(PyShootingWeapon_103311_SetHideRightStick, bHide) == 0x000000, "Member 'PyShootingWeapon_103311_SetHideRightStick::bHide' has a wrong offset!");
+DUMPER7_ASSERTS_PyShootingWeapon_103311_SetHideRightStick;
 
 }
 

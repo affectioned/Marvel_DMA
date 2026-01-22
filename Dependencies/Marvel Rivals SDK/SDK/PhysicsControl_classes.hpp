@@ -153,25 +153,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhysicsControlComponent">();
+		STATIC_CLASS_IMPL("PhysicsControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhysicsControlComponent")
 	}
 	static class UPhysicsControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhysicsControlComponent>();
 	}
 };
-static_assert(alignof(UPhysicsControlComponent) == 0x000010, "Wrong alignment on UPhysicsControlComponent");
-static_assert(sizeof(UPhysicsControlComponent) == 0x000390, "Wrong size on UPhysicsControlComponent");
-static_assert(offsetof(UPhysicsControlComponent, TeleportDistanceThreshold) == 0x000338, "Member 'UPhysicsControlComponent::TeleportDistanceThreshold' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, TeleportRotationThreshold) == 0x00033C, "Member 'UPhysicsControlComponent::TeleportRotationThreshold' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, bShowDebugVisualization) == 0x000340, "Member 'UPhysicsControlComponent::bShowDebugVisualization' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, VisualizationSizeScale) == 0x000344, "Member 'UPhysicsControlComponent::VisualizationSizeScale' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, bShowDebugControlList) == 0x000348, "Member 'UPhysicsControlComponent::bShowDebugControlList' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, DebugControlDetailFilter) == 0x000350, "Member 'UPhysicsControlComponent::DebugControlDetailFilter' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, bShowDebugBodyModifierList) == 0x000360, "Member 'UPhysicsControlComponent::bShowDebugBodyModifierList' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, DebugBodyModifierDetailFilter) == 0x000368, "Member 'UPhysicsControlComponent::DebugBodyModifierDetailFilter' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, VelocityPredictionTime) == 0x000378, "Member 'UPhysicsControlComponent::VelocityPredictionTime' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlComponent, MaxNumControlsOrModifiersPerName) == 0x00037C, "Member 'UPhysicsControlComponent::MaxNumControlsOrModifiersPerName' has a wrong offset!");
+DUMPER7_ASSERTS_UPhysicsControlComponent;
 
 // Class PhysicsControl.PhysicsControlProfileAsset
 // 0x0040 (0x0070 - 0x0030)
@@ -189,17 +182,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhysicsControlProfileAsset">();
+		STATIC_CLASS_IMPL("PhysicsControlProfileAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhysicsControlProfileAsset")
 	}
 	static class UPhysicsControlProfileAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhysicsControlProfileAsset>();
 	}
 };
-static_assert(alignof(UPhysicsControlProfileAsset) == 0x000008, "Wrong alignment on UPhysicsControlProfileAsset");
-static_assert(sizeof(UPhysicsControlProfileAsset) == 0x000070, "Wrong size on UPhysicsControlProfileAsset");
-static_assert(offsetof(UPhysicsControlProfileAsset, PreviewSkeletalMesh) == 0x000038, "Member 'UPhysicsControlProfileAsset::PreviewSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlProfileAsset, TestValue) == 0x000068, "Member 'UPhysicsControlProfileAsset::TestValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPhysicsControlProfileAsset;
 
 // Class PhysicsControl.PhysicsControlInitializerComponent
 // 0x0170 (0x04B0 - 0x0340)
@@ -218,19 +212,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhysicsControlInitializerComponent">();
+		STATIC_CLASS_IMPL("PhysicsControlInitializerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhysicsControlInitializerComponent")
 	}
 	static class UPhysicsControlInitializerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhysicsControlInitializerComponent>();
 	}
 };
-static_assert(alignof(UPhysicsControlInitializerComponent) == 0x000010, "Wrong alignment on UPhysicsControlInitializerComponent");
-static_assert(sizeof(UPhysicsControlInitializerComponent) == 0x0004B0, "Wrong size on UPhysicsControlInitializerComponent");
-static_assert(offsetof(UPhysicsControlInitializerComponent, InitialCharacterControls) == 0x000338, "Member 'UPhysicsControlInitializerComponent::InitialCharacterControls' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlInitializerComponent, InitialControls) == 0x000400, "Member 'UPhysicsControlInitializerComponent::InitialControls' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlInitializerComponent, InitialBodyModifiers) == 0x000450, "Member 'UPhysicsControlInitializerComponent::InitialBodyModifiers' has a wrong offset!");
-static_assert(offsetof(UPhysicsControlInitializerComponent, bCreateControlsAtBeginPlay) == 0x0004A0, "Member 'UPhysicsControlInitializerComponent::bCreateControlsAtBeginPlay' has a wrong offset!");
+DUMPER7_ASSERTS_UPhysicsControlInitializerComponent;
 
 // Class PhysicsControl.PhysicsControlActor
 // 0x0010 (0x06F0 - 0x06E0)
@@ -244,17 +237,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PhysicsControlActor">();
+		STATIC_CLASS_IMPL("PhysicsControlActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PhysicsControlActor")
 	}
 	static class APhysicsControlActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APhysicsControlActor>();
 	}
 };
-static_assert(alignof(APhysicsControlActor) == 0x000010, "Wrong alignment on APhysicsControlActor");
-static_assert(sizeof(APhysicsControlActor) == 0x0006F0, "Wrong size on APhysicsControlActor");
-static_assert(offsetof(APhysicsControlActor, ControlComponent) == 0x0006D8, "Member 'APhysicsControlActor::ControlComponent' has a wrong offset!");
-static_assert(offsetof(APhysicsControlActor, ControlInitializerComponent) == 0x0006E0, "Member 'APhysicsControlActor::ControlInitializerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APhysicsControlActor;
 
 }
 

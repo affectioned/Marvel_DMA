@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_102041.PyEffectAbility_120_10204111
-// 0x00E8 (0x1458 - 0x1370)
+// 0x00E8 (0x1470 - 0x1388)
 class UPyEffectAbility_120_10204111 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TMap<int32, struct FAbilityActionItem>        BuffModifiersForSelectAbility;                     // 0x1370(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         NaturalAngerAbilityID;                             // 0x13C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13C4[0x4];                                     // 0x13C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAbilityQuoteBuffSpec                  BuffModifiersForNaturalAnger;                      // 0x13C8(0x0040)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            BuffAttributeValueModifiers;                       // 0x1408(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, struct FAbilityActionItem>        BuffModifiersForSelectAbility;                     // 0x1388(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         NaturalAngerAbilityID;                             // 0x13D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13DC[0x4];                                     // 0x13DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAbilityQuoteBuffSpec                  BuffModifiersForNaturalAnger;                      // 0x13E0(0x0040)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            BuffAttributeValueModifiers;                       // 0x1420(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10204111">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10204111")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10204111")
 	}
 	static class UPyEffectAbility_120_10204111* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10204111>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10204111) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10204111");
-static_assert(sizeof(UPyEffectAbility_120_10204111) == 0x001458, "Wrong size on UPyEffectAbility_120_10204111");
-static_assert(offsetof(UPyEffectAbility_120_10204111, BuffModifiersForSelectAbility) == 0x001370, "Member 'UPyEffectAbility_120_10204111::BuffModifiersForSelectAbility' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10204111, NaturalAngerAbilityID) == 0x0013C0, "Member 'UPyEffectAbility_120_10204111::NaturalAngerAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10204111, BuffModifiersForNaturalAnger) == 0x0013C8, "Member 'UPyEffectAbility_120_10204111::BuffModifiersForNaturalAnger' has a wrong offset!");
-static_assert(offsetof(UPyEffectAbility_120_10204111, BuffAttributeValueModifiers) == 0x001408, "Member 'UPyEffectAbility_120_10204111::BuffAttributeValueModifiers' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10204111;
 
 }
 

@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Marvel_classes.hpp"
-#include "EFieldShapeType_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Chaos_structs.hpp"
 #include "EFieldActivationType_structs.hpp"
+#include "EFieldShapeType_structs.hpp"
+#include "Marvel_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "EFieldForceVel_structs.hpp"
 
 
@@ -211,151 +211,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FS_MasterField_C">();
+		BP_STATIC_CLASS_IMPL("FS_MasterField_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FS_MasterField_C")
 	}
 	static class AFS_MasterField_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFS_MasterField_C>();
 	}
 };
-static_assert(alignof(AFS_MasterField_C) == 0x000010, "Wrong alignment on AFS_MasterField_C");
-static_assert(sizeof(AFS_MasterField_C) == 0x000C30, "Wrong size on AFS_MasterField_C");
-static_assert(offsetof(AFS_MasterField_C, UberGraphFrame) == 0x0006F0, "Member 'AFS_MasterField_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldSystemMetaDataFilter) == 0x0006F8, "Member 'AFS_MasterField_C::FieldSystemMetaDataFilter' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldSystemMetaDataProcessingResolution) == 0x000700, "Member 'AFS_MasterField_C::FieldSystemMetaDataProcessingResolution' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_PlanarNormal_Arrow2) == 0x000708, "Member 'AFS_MasterField_C::SM_PlanarNormal_Arrow2' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlaneVolumeFalloffDistance) == 0x000710, "Member 'AFS_MasterField_C::PlaneVolumeFalloffDistance' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlaneVolumeBox) == 0x000718, "Member 'AFS_MasterField_C::PlaneVolumeBox' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlaneVolume) == 0x000720, "Member 'AFS_MasterField_C::PlaneVolume' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_DirectionArrow) == 0x000728, "Member 'AFS_MasterField_C::SM_DirectionArrow' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DirectionalArrowNull) == 0x000730, "Member 'AFS_MasterField_C::DirectionalArrowNull' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SphereVolumeCol) == 0x000738, "Member 'AFS_MasterField_C::SphereVolumeCol' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow) == 0x000740, "Member 'AFS_MasterField_C::SM_RadialArrow' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow4) == 0x000748, "Member 'AFS_MasterField_C::SM_RadialArrow4' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow3) == 0x000750, "Member 'AFS_MasterField_C::SM_RadialArrow3' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow2) == 0x000758, "Member 'AFS_MasterField_C::SM_RadialArrow2' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow1) == 0x000760, "Member 'AFS_MasterField_C::SM_RadialArrow1' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_RadialArrow5) == 0x000768, "Member 'AFS_MasterField_C::SM_RadialArrow5' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_PlanarNormal_Arrow1) == 0x000770, "Member 'AFS_MasterField_C::SM_PlanarNormal_Arrow1' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_DirectionArrow1) == 0x000778, "Member 'AFS_MasterField_C::SM_DirectionArrow1' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SM_DirectionArrow2) == 0x000780, "Member 'AFS_MasterField_C::SM_DirectionArrow2' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NoiseMaxValueText) == 0x000788, "Member 'AFS_MasterField_C::NoiseMaxValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NoiseMinValueText) == 0x000790, "Member 'AFS_MasterField_C::NoiseMinValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TorqueValueText) == 0x000798, "Member 'AFS_MasterField_C::TorqueValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Noise_MinMaxTitle_Text) == 0x0007A0, "Member 'AFS_MasterField_C::Noise_MinMaxTitle_Text' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TorqueTitleText) == 0x0007A8, "Member 'AFS_MasterField_C::TorqueTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DirectionalValueText) == 0x0007B0, "Member 'AFS_MasterField_C::DirectionalValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DirectionalMagTitleText) == 0x0007B8, "Member 'AFS_MasterField_C::DirectionalMagTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, RadialValueText) == 0x0007C0, "Member 'AFS_MasterField_C::RadialValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Radial_Mag_Title_Text) == 0x0007C8, "Member 'AFS_MasterField_C::Radial_Mag_Title_Text' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, StrainValueText) == 0x0007D0, "Member 'AFS_MasterField_C::StrainValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, StrainTitleText) == 0x0007D8, "Member 'AFS_MasterField_C::StrainTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DelayTitleText) == 0x0007E0, "Member 'AFS_MasterField_C::DelayTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ActiveTitleText) == 0x0007E8, "Member 'AFS_MasterField_C::ActiveTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DelayValueText) == 0x0007F0, "Member 'AFS_MasterField_C::DelayValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SphereVolume) == 0x0007F8, "Member 'AFS_MasterField_C::SphereVolume' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ActiveValueText) == 0x000800, "Member 'AFS_MasterField_C::ActiveValueText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldTitleText) == 0x000808, "Member 'AFS_MasterField_C::FieldTitleText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, BoxVolume) == 0x000810, "Member 'AFS_MasterField_C::BoxVolume' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Field_Text) == 0x000818, "Member 'AFS_MasterField_C::Field_Text' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, BoxVolumeCol) == 0x000820, "Member 'AFS_MasterField_C::BoxVolumeCol' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ReturnResultsTerminal) == 0x000828, "Member 'AFS_MasterField_C::ReturnResultsTerminal' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, _________0_16D50500445A80ACC2B8BBA0A5520336) == 0x000830, "Member 'AFS_MasterField_C::_________0_16D50500445A80ACC2B8BBA0A5520336' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, _____Direction_16D50500445A80ACC2B8BBA0A5520336) == 0x000834, "Member 'AFS_MasterField_C::_____Direction_16D50500445A80ACC2B8BBA0A5520336' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, 时间轴) == 0x000838, "Member 'AFS_MasterField_C::时间轴' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Field_Active) == 0x000840, "Member 'AFS_MasterField_C::Field_Active' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, OperatorFIeld_Input) == 0x000848, "Member 'AFS_MasterField_C::OperatorFIeld_Input' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Debug) == 0x000850, "Member 'AFS_MasterField_C::Debug' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ActivationType) == 0x000851, "Member 'AFS_MasterField_C::ActivationType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Field_Falloff_Shape) == 0x000852, "Member 'AFS_MasterField_C::Field_Falloff_Shape' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseTick) == 0x000853, "Member 'AFS_MasterField_C::UseTick' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DelayAmount) == 0x000858, "Member 'AFS_MasterField_C::DelayAmount' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Use_External_Strain) == 0x000860, "Member 'AFS_MasterField_C::Use_External_Strain' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Strain_Magnitude) == 0x000868, "Member 'AFS_MasterField_C::Strain_Magnitude' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, StrainFalloffType) == 0x000870, "Member 'AFS_MasterField_C::StrainFalloffType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, StrainFalloffMinMax) == 0x000878, "Member 'AFS_MasterField_C::StrainFalloffMinMax' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NumStrainHits) == 0x000888, "Member 'AFS_MasterField_C::NumStrainHits' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseRadialVector) == 0x00088C, "Member 'AFS_MasterField_C::UseRadialVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Radial_Magnitude) == 0x000890, "Member 'AFS_MasterField_C::Radial_Magnitude' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseDirectionalVector) == 0x000898, "Member 'AFS_MasterField_C::UseDirectionalVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DirectionalMagnitude) == 0x0008A0, "Member 'AFS_MasterField_C::DirectionalMagnitude' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseTorque) == 0x0008A8, "Member 'AFS_MasterField_C::UseTorque' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TorqueMult) == 0x0008B0, "Member 'AFS_MasterField_C::TorqueMult' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, VelocityFieldFalloffType) == 0x0008B8, "Member 'AFS_MasterField_C::VelocityFieldFalloffType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, VelocityFalloffMinMax) == 0x0008C0, "Member 'AFS_MasterField_C::VelocityFalloffMinMax' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseNoise) == 0x0008D0, "Member 'AFS_MasterField_C::UseNoise' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NoiseMinMax) == 0x0008D8, "Member 'AFS_MasterField_C::NoiseMinMax' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseDecay) == 0x0008E8, "Member 'AFS_MasterField_C::UseDecay' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DecayAmount) == 0x0008F0, "Member 'AFS_MasterField_C::DecayAmount' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DecayFalloffType) == 0x0008F8, "Member 'AFS_MasterField_C::DecayFalloffType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DecayFalloffMinMax) == 0x000900, "Member 'AFS_MasterField_C::DecayFalloffMinMax' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldVolume) == 0x000910, "Member 'AFS_MasterField_C::FieldVolume' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DecayDelay) == 0x000918, "Member 'AFS_MasterField_C::DecayDelay' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, MaxDecayAmount) == 0x000920, "Member 'AFS_MasterField_C::MaxDecayAmount' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, RadialPositionOffset) == 0x000928, "Member 'AFS_MasterField_C::RadialPositionOffset' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, OverideDIrectionalVector) == 0x000940, "Member 'AFS_MasterField_C::OverideDIrectionalVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DIrectionalVectorOveride) == 0x000948, "Member 'AFS_MasterField_C::DIrectionalVectorOveride' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TorqueVectorOveride) == 0x000960, "Member 'AFS_MasterField_C::TorqueVectorOveride' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Velocity_Vector_Switch) == 0x000978, "Member 'AFS_MasterField_C::Velocity_Vector_Switch' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ForceMult) == 0x000980, "Member 'AFS_MasterField_C::ForceMult' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, BoxCullingOnPlanar) == 0x000988, "Member 'AFS_MasterField_C::BoxCullingOnPlanar' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlanarFalloffDistOveride) == 0x000990, "Member 'AFS_MasterField_C::PlanarFalloffDistOveride' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Force_Dynamic_Switch) == 0x000998, "Member 'AFS_MasterField_C::Force_Dynamic_Switch' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ActivateTaggedStaticAndSkeletal) == 0x000999, "Member 'AFS_MasterField_C::ActivateTaggedStaticAndSkeletal' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Chaos_Field_Name) == 0x0009A0, "Member 'AFS_MasterField_C::Chaos_Field_Name' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldColour) == 0x0009B8, "Member 'AFS_MasterField_C::FieldColour' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ShowDebugText) == 0x0009C8, "Member 'AFS_MasterField_C::ShowDebugText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ShowWireFrame) == 0x0009C9, "Member 'AFS_MasterField_C::ShowWireFrame' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ShowSolidShapes) == 0x0009CA, "Member 'AFS_MasterField_C::ShowSolidShapes' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DirectionalDisplayScale) == 0x0009D0, "Member 'AFS_MasterField_C::DirectionalDisplayScale' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, RadialDisplayScale) == 0x0009D8, "Member 'AFS_MasterField_C::RadialDisplayScale' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Text_Vertical_Offset) == 0x0009E0, "Member 'AFS_MasterField_C::Text_Vertical_Offset' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, LinearPhysicsType) == 0x0009E8, "Member 'AFS_MasterField_C::LinearPhysicsType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, AngularPhysicsType) == 0x0009E9, "Member 'AFS_MasterField_C::AngularPhysicsType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldFalloffType) == 0x0009EA, "Member 'AFS_MasterField_C::FieldFalloffType' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Field_Falloff_Noise) == 0x0009EB, "Member 'AFS_MasterField_C::Field_Falloff_Noise' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Field_Falloff_Torque) == 0x0009EC, "Member 'AFS_MasterField_C::Field_Falloff_Torque' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseLifespan) == 0x0009ED, "Member 'AFS_MasterField_C::UseLifespan' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldLifespan) == 0x0009F0, "Member 'AFS_MasterField_C::FieldLifespan' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, UseFramesForTiming) == 0x0009F8, "Member 'AFS_MasterField_C::UseFramesForTiming' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FPS) == 0x000A00, "Member 'AFS_MasterField_C::FPS' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Dynamic_State) == 0x000A08, "Member 'AFS_MasterField_C::Dynamic_State' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlanarFalloffDist) == 0x000A10, "Member 'AFS_MasterField_C::PlanarFalloffDist' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TotalDecay) == 0x000A18, "Member 'AFS_MasterField_C::TotalDecay' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FalloffMinMax) == 0x000A20, "Member 'AFS_MasterField_C::FalloffMinMax' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PlanarFalloffExtentColor) == 0x000A30, "Member 'AFS_MasterField_C::PlanarFalloffExtentColor' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DIrectionalVelocityVector) == 0x000A40, "Member 'AFS_MasterField_C::DIrectionalVelocityVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, upVector) == 0x000A58, "Member 'AFS_MasterField_C::upVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, worldLocation) == 0x000A70, "Member 'AFS_MasterField_C::worldLocation' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, forwardVector) == 0x000A88, "Member 'AFS_MasterField_C::forwardVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, rightVector) == 0x000AA0, "Member 'AFS_MasterField_C::rightVector' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, skel) == 0x000AB8, "Member 'AFS_MasterField_C::skel' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SimmableStaticMeshes) == 0x000AC0, "Member 'AFS_MasterField_C::SimmableStaticMeshes' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SimmableSkelMeshes) == 0x000AD0, "Member 'AFS_MasterField_C::SimmableSkelMeshes' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PulseLevel) == 0x000AE0, "Member 'AFS_MasterField_C::PulseLevel' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TextDisplay) == 0x000AF0, "Member 'AFS_MasterField_C::TextDisplay' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, AllText) == 0x000B00, "Member 'AFS_MasterField_C::AllText' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ArrowColour_Dir) == 0x000B10, "Member 'AFS_MasterField_C::ArrowColour_Dir' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, ArrowColour_Normal) == 0x000B20, "Member 'AFS_MasterField_C::ArrowColour_Normal' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DeactivatedColour) == 0x000B30, "Member 'AFS_MasterField_C::DeactivatedColour' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DeactivatedTextColour) == 0x000B40, "Member 'AFS_MasterField_C::DeactivatedTextColour' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Preview_Material) == 0x000B50, "Member 'AFS_MasterField_C::Preview_Material' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TimeElapsed) == 0x000B58, "Member 'AFS_MasterField_C::TimeElapsed' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NoiseScaleMult) == 0x000B60, "Member 'AFS_MasterField_C::NoiseScaleMult' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NewVar_0) == 0x000B70, "Member 'AFS_MasterField_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, isTriggered) == 0x000BD0, "Member 'AFS_MasterField_C::isTriggered' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, NoiseScaleBase) == 0x000BD8, "Member 'AFS_MasterField_C::NoiseScaleBase' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, DestroyActor) == 0x000BE0, "Member 'AFS_MasterField_C::DestroyActor' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FieldFalloffType_Input) == 0x000BE1, "Member 'AFS_MasterField_C::FieldFalloffType_Input' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, FalloffMinMax_Input) == 0x000BE8, "Member 'AFS_MasterField_C::FalloffMinMax_Input' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Magnitude_Input) == 0x000BF8, "Member 'AFS_MasterField_C::Magnitude_Input' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, Delay) == 0x000C00, "Member 'AFS_MasterField_C::Delay' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, TriggerNextFeild_) == 0x000C04, "Member 'AFS_MasterField_C::TriggerNextFeild_' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SequentialFeildActor) == 0x000C08, "Member 'AFS_MasterField_C::SequentialFeildActor' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SequentialNumber) == 0x000C10, "Member 'AFS_MasterField_C::SequentialNumber' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, SequentialDelayTime) == 0x000C18, "Member 'AFS_MasterField_C::SequentialDelayTime' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, BP_Penetration) == 0x000C20, "Member 'AFS_MasterField_C::BP_Penetration' has a wrong offset!");
-static_assert(offsetof(AFS_MasterField_C, PenetrationID) == 0x000C28, "Member 'AFS_MasterField_C::PenetrationID' has a wrong offset!");
+DUMPER7_ASSERTS_AFS_MasterField_C;
 
 }
 

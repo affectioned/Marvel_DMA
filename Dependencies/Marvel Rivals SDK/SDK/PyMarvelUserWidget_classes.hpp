@@ -21,21 +21,21 @@ namespace SDK
 {
 
 // PythonClass PyMarvelUserWidget.PyMarvelUserWidget
-// 0x0058 (0x05C0 - 0x0568)
+// 0x0058 (0x05C8 - 0x0570)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyMarvelUserWidget : public UMarvelUserWidget
 {
 public:
-	TArray<struct FWidgetUIInputAction>           WidgetUIInputActionList;                           // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnVisible;                                 // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnInvisible;                               // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SwitchPanelState;                                  // 0x0588(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelMusicItem*                       MusicItem_OnTop;                                   // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TransitionTime;                                    // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BlackTime;                                         // 0x05A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SystemUIName;                                      // 0x05A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOverrideDefaultFocus;                            // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableAnimationStateEx;                           // 0x05B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FWidgetUIInputAction>           WidgetUIInputActionList;                           // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnVisible;                                 // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnInvisible;                               // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SwitchPanelState;                                  // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelMusicItem*                       MusicItem_OnTop;                                   // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TransitionTime;                                    // 0x05A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BlackTime;                                         // 0x05AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SystemUIName;                                      // 0x05B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOverrideDefaultFocus;                            // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableAnimationStateEx;                           // 0x05C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static void WhyIsWidgetInvisible(class UWidget* InWidget);
@@ -72,7 +72,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelUserWidget">();
+		STATIC_CLASS_IMPL("PyMarvelUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelUserWidget")
 	}
 	static class UPyMarvelUserWidget* GetDefaultObj()
 	{
@@ -80,18 +84,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyMarvelUserWidget) == 0x000008, "Wrong alignment on UPyMarvelUserWidget");
-static_assert(sizeof(UPyMarvelUserWidget) == 0x0005C0, "Wrong size on UPyMarvelUserWidget");
-static_assert(offsetof(UPyMarvelUserWidget, WidgetUIInputActionList) == 0x000568, "Member 'UPyMarvelUserWidget::WidgetUIInputActionList' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, AkEvent_OnVisible) == 0x000578, "Member 'UPyMarvelUserWidget::AkEvent_OnVisible' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, AkEvent_OnInvisible) == 0x000580, "Member 'UPyMarvelUserWidget::AkEvent_OnInvisible' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, SwitchPanelState) == 0x000588, "Member 'UPyMarvelUserWidget::SwitchPanelState' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, MusicItem_OnTop) == 0x000598, "Member 'UPyMarvelUserWidget::MusicItem_OnTop' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, TransitionTime) == 0x0005A0, "Member 'UPyMarvelUserWidget::TransitionTime' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, BlackTime) == 0x0005A4, "Member 'UPyMarvelUserWidget::BlackTime' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, SystemUIName) == 0x0005A8, "Member 'UPyMarvelUserWidget::SystemUIName' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, IsOverrideDefaultFocus) == 0x0005B8, "Member 'UPyMarvelUserWidget::IsOverrideDefaultFocus' has a wrong offset!");
-static_assert(offsetof(UPyMarvelUserWidget, bEnableAnimationStateEx) == 0x0005B9, "Member 'UPyMarvelUserWidget::bEnableAnimationStateEx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelUserWidget;
 
 }
 

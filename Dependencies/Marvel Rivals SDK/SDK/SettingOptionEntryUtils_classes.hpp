@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySettingOptionEntryUtilsBluePrintLib">();
+		STATIC_CLASS_IMPL("PySettingOptionEntryUtilsBluePrintLib")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySettingOptionEntryUtilsBluePrintLib")
 	}
 	static class UPySettingOptionEntryUtilsBluePrintLib* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySettingOptionEntryUtilsBluePrintLib>();
 	}
 };
-static_assert(alignof(UPySettingOptionEntryUtilsBluePrintLib) == 0x000008, "Wrong alignment on UPySettingOptionEntryUtilsBluePrintLib");
-static_assert(sizeof(UPySettingOptionEntryUtilsBluePrintLib) == 0x000030, "Wrong size on UPySettingOptionEntryUtilsBluePrintLib");
+DUMPER7_ASSERTS_UPySettingOptionEntryUtilsBluePrintLib;
 
 }
 

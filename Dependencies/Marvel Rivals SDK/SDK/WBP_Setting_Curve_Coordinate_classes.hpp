@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Curve_Coordinate_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Curve_Coordinate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Curve_Coordinate_C")
 	}
 	static class UWBP_Setting_Curve_Coordinate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Curve_Coordinate_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Curve_Coordinate_C) == 0x000008, "Wrong alignment on UWBP_Setting_Curve_Coordinate_C");
-static_assert(sizeof(UWBP_Setting_Curve_Coordinate_C) == 0x0003E0, "Wrong size on UWBP_Setting_Curve_Coordinate_C");
-static_assert(offsetof(UWBP_Setting_Curve_Coordinate_C, Img_Arrow_1) == 0x0003B8, "Member 'UWBP_Setting_Curve_Coordinate_C::Img_Arrow_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_Coordinate_C, Img_Arrow_2) == 0x0003C0, "Member 'UWBP_Setting_Curve_Coordinate_C::Img_Arrow_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_Coordinate_C, Img_Enbpoint) == 0x0003C8, "Member 'UWBP_Setting_Curve_Coordinate_C::Img_Enbpoint' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_Coordinate_C, Overlay_Arc_Coordinate) == 0x0003D0, "Member 'UWBP_Setting_Curve_Coordinate_C::Overlay_Arc_Coordinate' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Curve_Coordinate_C, Overlay_Com_Coordinate) == 0x0003D8, "Member 'UWBP_Setting_Curve_Coordinate_C::Overlay_Com_Coordinate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Curve_Coordinate_C;
 
 }
 

@@ -23,9 +23,7 @@ struct PyLevelMontageSyncComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelMontageSyncComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelMontageSyncComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelMontageSyncComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelMontageSyncComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelMontageSyncComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelMontageSyncComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelMontageSyncComponent_ReceiveEndPlay;
 
 }
 

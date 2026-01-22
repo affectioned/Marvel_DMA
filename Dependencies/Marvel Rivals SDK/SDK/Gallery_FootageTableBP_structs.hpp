@@ -10,43 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Gallery_LoadingFootageBP_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Gallery_FootageBP_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Gallery_LoadingFootageBP_structs.hpp"
 
 
 namespace SDK
 {
 
 // UserDefinedStruct Gallery_FootageTableBP.Gallery_FootageTableBP
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FGallery_FootageTableBP final
 {
 public:
 	int32                                         ThemeID_148_FEA1CC1C44C0025259E71DA046F5253C;      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Theme_128_CBFD3E604FFD99B49E7577B45E946F64;        // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   ThemeName_145_7DA99E624C08A690899557B838E1FD33;    // 0x0018(0x0018)(Edit, BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>              ThemeCoverImage_155_691349E34212C5C731FA599E924D5310; // 0x0030(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FVector2D                              CoverImagePos_152_327D4C364DD7DE79C8D38EA41FEEBFA2; // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ThemeBgImagePos_154_29556346419DFCCA1D3D54B23DA498EC; // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FGallery_LoadingFootageBP>      LoadingVideos_132_08A0A6BB44D9DFD6F86D23AAA2F19CA1; // 0x0080(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
-	TArray<struct FGallery_FootageBP>             EntryVideos_135_79DC42D249C5A401F9BFA486A2F95B78;  // 0x0090(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
-	TArray<struct FGallery_FootageBP>             ExitVideos_138_4DD90FAD43AF90B616BFF99D852A980D;   // 0x00A0(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
-	bool                                          Delivery_157_A807DD9146E2C31FEB63079A24C84DE1;     // 0x00B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ThemeName_145_7DA99E624C08A690899557B838E1FD33;    // 0x0008(0x0018)(Edit, BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>              ThemeCoverImage_155_691349E34212C5C731FA599E924D5310; // 0x0020(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FVector2D                              CoverImagePos_152_327D4C364DD7DE79C8D38EA41FEEBFA2; // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ThemeBgImagePos_154_29556346419DFCCA1D3D54B23DA498EC; // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FGallery_LoadingFootageBP>      LoadingVideos_132_08A0A6BB44D9DFD6F86D23AAA2F19CA1; // 0x0070(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
+	TArray<struct FGallery_FootageBP>             EntryVideos_135_79DC42D249C5A401F9BFA486A2F95B78;  // 0x0080(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
+	TArray<struct FGallery_FootageBP>             ExitVideos_138_4DD90FAD43AF90B616BFF99D852A980D;   // 0x0090(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
+	bool                                          Delivery_157_A807DD9146E2C31FEB63079A24C84DE1;     // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGallery_FootageTableBP) == 0x000008, "Wrong alignment on FGallery_FootageTableBP");
-static_assert(sizeof(FGallery_FootageTableBP) == 0x0000B8, "Wrong size on FGallery_FootageTableBP");
-static_assert(offsetof(FGallery_FootageTableBP, ThemeID_148_FEA1CC1C44C0025259E71DA046F5253C) == 0x000000, "Member 'FGallery_FootageTableBP::ThemeID_148_FEA1CC1C44C0025259E71DA046F5253C' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, Theme_128_CBFD3E604FFD99B49E7577B45E946F64) == 0x000008, "Member 'FGallery_FootageTableBP::Theme_128_CBFD3E604FFD99B49E7577B45E946F64' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, ThemeName_145_7DA99E624C08A690899557B838E1FD33) == 0x000018, "Member 'FGallery_FootageTableBP::ThemeName_145_7DA99E624C08A690899557B838E1FD33' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, ThemeCoverImage_155_691349E34212C5C731FA599E924D5310) == 0x000030, "Member 'FGallery_FootageTableBP::ThemeCoverImage_155_691349E34212C5C731FA599E924D5310' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, CoverImagePos_152_327D4C364DD7DE79C8D38EA41FEEBFA2) == 0x000060, "Member 'FGallery_FootageTableBP::CoverImagePos_152_327D4C364DD7DE79C8D38EA41FEEBFA2' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, ThemeBgImagePos_154_29556346419DFCCA1D3D54B23DA498EC) == 0x000070, "Member 'FGallery_FootageTableBP::ThemeBgImagePos_154_29556346419DFCCA1D3D54B23DA498EC' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, LoadingVideos_132_08A0A6BB44D9DFD6F86D23AAA2F19CA1) == 0x000080, "Member 'FGallery_FootageTableBP::LoadingVideos_132_08A0A6BB44D9DFD6F86D23AAA2F19CA1' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, EntryVideos_135_79DC42D249C5A401F9BFA486A2F95B78) == 0x000090, "Member 'FGallery_FootageTableBP::EntryVideos_135_79DC42D249C5A401F9BFA486A2F95B78' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, ExitVideos_138_4DD90FAD43AF90B616BFF99D852A980D) == 0x0000A0, "Member 'FGallery_FootageTableBP::ExitVideos_138_4DD90FAD43AF90B616BFF99D852A980D' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageTableBP, Delivery_157_A807DD9146E2C31FEB63079A24C84DE1) == 0x0000B0, "Member 'FGallery_FootageTableBP::Delivery_157_A807DD9146E2C31FEB63079A24C84DE1' has a wrong offset!");
+DUMPER7_ASSERTS_FGallery_FootageTableBP;
 
 }
 

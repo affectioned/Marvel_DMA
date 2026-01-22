@@ -21,9 +21,7 @@ struct PyTrainingEntryController_PlayLevelSequence final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_PlayLevelSequence) == 0x000004, "Wrong alignment on PyTrainingEntryController_PlayLevelSequence");
-static_assert(sizeof(PyTrainingEntryController_PlayLevelSequence) == 0x000004, "Wrong size on PyTrainingEntryController_PlayLevelSequence");
-static_assert(offsetof(PyTrainingEntryController_PlayLevelSequence, Index_0) == 0x000000, "Member 'PyTrainingEntryController_PlayLevelSequence::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_PlayLevelSequence;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.OnLevelSequenceEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyTrainingEntryController_OnLevelSequenceEnd final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_OnLevelSequenceEnd) == 0x000004, "Wrong alignment on PyTrainingEntryController_OnLevelSequenceEnd");
-static_assert(sizeof(PyTrainingEntryController_OnLevelSequenceEnd) == 0x000004, "Wrong size on PyTrainingEntryController_OnLevelSequenceEnd");
-static_assert(offsetof(PyTrainingEntryController_OnLevelSequenceEnd, Index_0) == 0x000000, "Member 'PyTrainingEntryController_OnLevelSequenceEnd::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_OnLevelSequenceEnd;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.PostVoice
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +39,7 @@ struct PyTrainingEntryController_PostVoice final
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_PostVoice) == 0x000004, "Wrong alignment on PyTrainingEntryController_PostVoice");
-static_assert(sizeof(PyTrainingEntryController_PostVoice) == 0x000004, "Wrong size on PyTrainingEntryController_PostVoice");
-static_assert(offsetof(PyTrainingEntryController_PostVoice, VoiceID) == 0x000000, "Member 'PyTrainingEntryController_PostVoice::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_PostVoice;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.OnVoiceEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyTrainingEntryController_OnVoiceEnd final
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_OnVoiceEnd) == 0x000004, "Wrong alignment on PyTrainingEntryController_OnVoiceEnd");
-static_assert(sizeof(PyTrainingEntryController_OnVoiceEnd) == 0x000004, "Wrong size on PyTrainingEntryController_OnVoiceEnd");
-static_assert(offsetof(PyTrainingEntryController_OnVoiceEnd, VoiceID) == 0x000000, "Member 'PyTrainingEntryController_OnVoiceEnd::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_OnVoiceEnd;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.ShowUITask
 // 0x0018 (0x0018 - 0x0000)
@@ -65,9 +57,7 @@ struct PyTrainingEntryController_ShowUITask final
 public:
 	class FText                                   TaskContent;                                       // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyTrainingEntryController_ShowUITask) == 0x000008, "Wrong alignment on PyTrainingEntryController_ShowUITask");
-static_assert(sizeof(PyTrainingEntryController_ShowUITask) == 0x000018, "Wrong size on PyTrainingEntryController_ShowUITask");
-static_assert(offsetof(PyTrainingEntryController_ShowUITask, TaskContent) == 0x000000, "Member 'PyTrainingEntryController_ShowUITask::TaskContent' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_ShowUITask;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.ListenLevelSequenceAndVoiceEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -77,10 +67,7 @@ public:
 	int32                                         SequenceIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         VoiceID;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd) == 0x000004, "Wrong alignment on PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd");
-static_assert(sizeof(PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd) == 0x000008, "Wrong size on PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd");
-static_assert(offsetof(PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd, SequenceIndex) == 0x000000, "Member 'PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd::SequenceIndex' has a wrong offset!");
-static_assert(offsetof(PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd, VoiceID) == 0x000004, "Member 'PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_ListenLevelSequenceAndVoiceEnd;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.SpawnEnrtyActor
 // 0x0004 (0x0004 - 0x0000)
@@ -89,9 +76,7 @@ struct PyTrainingEntryController_SpawnEnrtyActor final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_SpawnEnrtyActor) == 0x000004, "Wrong alignment on PyTrainingEntryController_SpawnEnrtyActor");
-static_assert(sizeof(PyTrainingEntryController_SpawnEnrtyActor) == 0x000004, "Wrong size on PyTrainingEntryController_SpawnEnrtyActor");
-static_assert(offsetof(PyTrainingEntryController_SpawnEnrtyActor, Index_0) == 0x000000, "Member 'PyTrainingEntryController_SpawnEnrtyActor::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_SpawnEnrtyActor;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.DestroyEnrtyActor
 // 0x0004 (0x0004 - 0x0000)
@@ -100,9 +85,7 @@ struct PyTrainingEntryController_DestroyEnrtyActor final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_DestroyEnrtyActor) == 0x000004, "Wrong alignment on PyTrainingEntryController_DestroyEnrtyActor");
-static_assert(sizeof(PyTrainingEntryController_DestroyEnrtyActor) == 0x000004, "Wrong size on PyTrainingEntryController_DestroyEnrtyActor");
-static_assert(offsetof(PyTrainingEntryController_DestroyEnrtyActor, Index_0) == 0x000000, "Member 'PyTrainingEntryController_DestroyEnrtyActor::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_DestroyEnrtyActor;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.OnVoiceAndLevelSequenceEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -112,10 +95,7 @@ public:
 	int32                                         SequenceIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         VoiceID;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_OnVoiceAndLevelSequenceEnd) == 0x000004, "Wrong alignment on PyTrainingEntryController_OnVoiceAndLevelSequenceEnd");
-static_assert(sizeof(PyTrainingEntryController_OnVoiceAndLevelSequenceEnd) == 0x000008, "Wrong size on PyTrainingEntryController_OnVoiceAndLevelSequenceEnd");
-static_assert(offsetof(PyTrainingEntryController_OnVoiceAndLevelSequenceEnd, SequenceIndex) == 0x000000, "Member 'PyTrainingEntryController_OnVoiceAndLevelSequenceEnd::SequenceIndex' has a wrong offset!");
-static_assert(offsetof(PyTrainingEntryController_OnVoiceAndLevelSequenceEnd, VoiceID) == 0x000004, "Member 'PyTrainingEntryController_OnVoiceAndLevelSequenceEnd::VoiceID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_OnVoiceAndLevelSequenceEnd;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.TriggerChaosDestruction
 // 0x0010 (0x0010 - 0x0000)
@@ -124,9 +104,7 @@ struct PyTrainingEntryController_TriggerChaosDestruction final
 public:
 	class FString                                 ActorName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_TriggerChaosDestruction) == 0x000008, "Wrong alignment on PyTrainingEntryController_TriggerChaosDestruction");
-static_assert(sizeof(PyTrainingEntryController_TriggerChaosDestruction) == 0x000010, "Wrong size on PyTrainingEntryController_TriggerChaosDestruction");
-static_assert(offsetof(PyTrainingEntryController_TriggerChaosDestruction, ActorName) == 0x000000, "Member 'PyTrainingEntryController_TriggerChaosDestruction::ActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_TriggerChaosDestruction;
 
 // PythonFunction PyLevelTrainingEntryController.PyTrainingEntryController.TriggerChaosRecovery
 // 0x0010 (0x0010 - 0x0000)
@@ -135,9 +113,7 @@ struct PyTrainingEntryController_TriggerChaosRecovery final
 public:
 	class FString                                 ActorName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrainingEntryController_TriggerChaosRecovery) == 0x000008, "Wrong alignment on PyTrainingEntryController_TriggerChaosRecovery");
-static_assert(sizeof(PyTrainingEntryController_TriggerChaosRecovery) == 0x000010, "Wrong size on PyTrainingEntryController_TriggerChaosRecovery");
-static_assert(offsetof(PyTrainingEntryController_TriggerChaosRecovery, ActorName) == 0x000000, "Member 'PyTrainingEntryController_TriggerChaosRecovery::ActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrainingEntryController_TriggerChaosRecovery;
 
 }
 

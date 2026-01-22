@@ -23,9 +23,7 @@ struct PyAbility_104492_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104492_CanActivate");
-static_assert(sizeof(PyAbility_104492_CanActivate) == 0x000001, "Wrong size on PyAbility_104492_CanActivate");
-static_assert(offsetof(PyAbility_104492_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104492_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_CanActivate;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.TryMakeTriggerContext
 // 0x0298 (0x0298 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0290(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_TryMakeTriggerContext) == 0x000008, "Wrong alignment on PyAbility_104492_TryMakeTriggerContext");
-static_assert(sizeof(PyAbility_104492_TryMakeTriggerContext) == 0x000298, "Wrong size on PyAbility_104492_TryMakeTriggerContext");
-static_assert(offsetof(PyAbility_104492_TryMakeTriggerContext, EventData) == 0x000000, "Member 'PyAbility_104492_TryMakeTriggerContext::EventData' has a wrong offset!");
-static_assert(offsetof(PyAbility_104492_TryMakeTriggerContext, ReturnValue) == 0x000290, "Member 'PyAbility_104492_TryMakeTriggerContext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_TryMakeTriggerContext;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -47,9 +42,7 @@ struct PyAbility_104492_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104492_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_104492_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_104492_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_104492_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_104492_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_104492_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +51,7 @@ struct PyAbility_104492_NativeOnMontageEvent final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104492_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104492_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104492_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104492_NativeOnMontageEvent, EventTag) == 0x000000, "Member 'PyAbility_104492_NativeOnMontageEvent::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +60,7 @@ struct PyAbility_104492_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104492_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104492_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104492_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104492_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104492_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -80,9 +69,7 @@ struct PyAbility_104492_NativeOnMontageCompleted final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_104492_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_104492_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_104492_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_104492_NativeOnMontageCompleted, EventTag) == 0x000000, "Member 'PyAbility_104492_NativeOnMontageCompleted::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_104492.PyAbility_104492.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -91,9 +78,7 @@ struct PyAbility_104492_NativeOnMontageCancelled final
 public:
 	class FString                                 EventTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104492_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_104492_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_104492_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_104492_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_104492_NativeOnMontageCancelled, EventTag) == 0x000000, "Member 'PyAbility_104492_NativeOnMontageCancelled::EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104492_NativeOnMontageCancelled;
 
 }
 

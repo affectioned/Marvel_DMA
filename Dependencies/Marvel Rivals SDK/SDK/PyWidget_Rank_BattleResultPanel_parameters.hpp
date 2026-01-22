@@ -23,9 +23,7 @@ struct PyWidget_Rank_LiftingDan_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_LiftingDan_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Rank_LiftingDan_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Rank_LiftingDan_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Rank_LiftingDan_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Rank_LiftingDan_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Rank_LiftingDan_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_LiftingDan_OnAnimationFinished;
 
 // PythonFunction PyWidget_Rank_BattleResultPanel.PyWidget_Rank_BattleResultPanel.Tick
 // 0x003C (0x003C - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_BattleResultPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_Rank_BattleResultPanel_Tick");
-static_assert(sizeof(PyWidget_Rank_BattleResultPanel_Tick) == 0x00003C, "Wrong size on PyWidget_Rank_BattleResultPanel_Tick");
-static_assert(offsetof(PyWidget_Rank_BattleResultPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Rank_BattleResultPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Rank_BattleResultPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Rank_BattleResultPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_BattleResultPanel_Tick;
 
 // PythonFunction PyWidget_Rank_BattleResultPanel.PyWidget_Rank_BattleResultPanel.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_Rank_BattleResultPanel_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_BattleResultPanel_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Rank_BattleResultPanel_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Rank_BattleResultPanel_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Rank_BattleResultPanel_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Rank_BattleResultPanel_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Rank_BattleResultPanel_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_BattleResultPanel_OnAnimationStarted;
 
 // PythonFunction PyWidget_Rank_BattleResultPanel.PyWidget_Rank_BattleResultPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +51,7 @@ struct PyWidget_Rank_BattleResultPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_BattleResultPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Rank_BattleResultPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Rank_BattleResultPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Rank_BattleResultPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Rank_BattleResultPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Rank_BattleResultPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_BattleResultPanel_OnAnimationFinished;
 
 }
 

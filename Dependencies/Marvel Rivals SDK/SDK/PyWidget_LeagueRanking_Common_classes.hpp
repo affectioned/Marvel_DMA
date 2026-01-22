@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueRanking_Common.PyWidget_LeagueRanking_PromotionLine
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_LeagueRanking_PromotionLine final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsTopOrBottom;                                     // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTopOrBottom;                                     // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,44 +31,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueRanking_PromotionLine">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueRanking_PromotionLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueRanking_PromotionLine")
 	}
 	static class UPyWidget_LeagueRanking_PromotionLine* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueRanking_PromotionLine>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueRanking_PromotionLine) == 0x000008, "Wrong alignment on UPyWidget_LeagueRanking_PromotionLine");
-static_assert(sizeof(UPyWidget_LeagueRanking_PromotionLine) == 0x0005C0, "Wrong size on UPyWidget_LeagueRanking_PromotionLine");
-static_assert(offsetof(UPyWidget_LeagueRanking_PromotionLine, IsTopOrBottom) == 0x0005BA, "Member 'UPyWidget_LeagueRanking_PromotionLine::IsTopOrBottom' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueRanking_PromotionLine;
 
 // PythonClass PyWidget_LeagueRanking_Common.PyWidget_LeagueRanking_ClanItem
-// 0x0430 (0x09F0 - 0x05C0)
+// 0x0438 (0x0A00 - 0x05C8)
 class UPyWidget_LeagueRanking_ClanItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           OwnClanNameColor;                                  // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            OwnScoreColor;                                     // 0x05CC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           OwnClanMiniColor;                                  // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           OwnClanBtnStyle;                                   // 0x05F0(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           OwnClanNameColor;                                  // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            OwnScoreColor;                                     // 0x05D4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           OwnClanMiniColor;                                  // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F8[0x8];                                      // 0x05F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           OwnClanBtnStyle;                                   // 0x0600(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueRanking_ClanItem">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueRanking_ClanItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueRanking_ClanItem")
 	}
 	static class UPyWidget_LeagueRanking_ClanItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueRanking_ClanItem>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueRanking_ClanItem) == 0x000010, "Wrong alignment on UPyWidget_LeagueRanking_ClanItem");
-static_assert(sizeof(UPyWidget_LeagueRanking_ClanItem) == 0x0009F0, "Wrong size on UPyWidget_LeagueRanking_ClanItem");
-static_assert(offsetof(UPyWidget_LeagueRanking_ClanItem, OwnClanNameColor) == 0x0005BC, "Member 'UPyWidget_LeagueRanking_ClanItem::OwnClanNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRanking_ClanItem, OwnScoreColor) == 0x0005CC, "Member 'UPyWidget_LeagueRanking_ClanItem::OwnScoreColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRanking_ClanItem, OwnClanMiniColor) == 0x0005E0, "Member 'UPyWidget_LeagueRanking_ClanItem::OwnClanMiniColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueRanking_ClanItem, OwnClanBtnStyle) == 0x0005F0, "Member 'UPyWidget_LeagueRanking_ClanItem::OwnClanBtnStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueRanking_ClanItem;
 
 }
 

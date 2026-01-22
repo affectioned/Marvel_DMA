@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequence">();
+		STATIC_CLASS_IMPL("ActorSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequence")
 	}
 	static class UActorSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequence>();
 	}
 };
-static_assert(alignof(UActorSequence) == 0x000008, "Wrong alignment on UActorSequence");
-static_assert(sizeof(UActorSequence) == 0x000098, "Wrong size on UActorSequence");
-static_assert(offsetof(UActorSequence, MovieScene) == 0x000070, "Member 'UActorSequence::MovieScene' has a wrong offset!");
-static_assert(offsetof(UActorSequence, ObjectReferences) == 0x000078, "Member 'UActorSequence::ObjectReferences' has a wrong offset!");
+DUMPER7_ASSERTS_UActorSequence;
 
 // Class ActorSequence.ActorSequenceComponent
 // 0x0030 (0x0138 - 0x0108)
@@ -59,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequenceComponent">();
+		STATIC_CLASS_IMPL("ActorSequenceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequenceComponent")
 	}
 	static class UActorSequenceComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequenceComponent>();
 	}
 };
-static_assert(alignof(UActorSequenceComponent) == 0x000008, "Wrong alignment on UActorSequenceComponent");
-static_assert(sizeof(UActorSequenceComponent) == 0x000138, "Wrong size on UActorSequenceComponent");
-static_assert(offsetof(UActorSequenceComponent, PlaybackSettings) == 0x000108, "Member 'UActorSequenceComponent::PlaybackSettings' has a wrong offset!");
-static_assert(offsetof(UActorSequenceComponent, Sequence) == 0x000128, "Member 'UActorSequenceComponent::Sequence' has a wrong offset!");
-static_assert(offsetof(UActorSequenceComponent, SequencePlayer) == 0x000130, "Member 'UActorSequenceComponent::SequencePlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UActorSequenceComponent;
 
 // Class ActorSequence.ActorSequencePlayer
 // 0x0008 (0x04E8 - 0x04E0)
@@ -82,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequencePlayer">();
+		STATIC_CLASS_IMPL("ActorSequencePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequencePlayer")
 	}
 	static class UActorSequencePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequencePlayer>();
 	}
 };
-static_assert(alignof(UActorSequencePlayer) == 0x000008, "Wrong alignment on UActorSequencePlayer");
-static_assert(sizeof(UActorSequencePlayer) == 0x0004E8, "Wrong size on UActorSequencePlayer");
+DUMPER7_ASSERTS_UActorSequencePlayer;
 
 }
 

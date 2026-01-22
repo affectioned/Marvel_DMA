@@ -33,27 +33,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104402">();
+		STATIC_CLASS_IMPL("PyConfig_104402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104402")
 	}
 	static class UPyConfig_104402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104402>();
 	}
 };
-static_assert(alignof(UPyConfig_104402) == 0x000008, "Wrong alignment on UPyConfig_104402");
-static_assert(sizeof(UPyConfig_104402) == 0x0001E8, "Wrong size on UPyConfig_104402");
-static_assert(offsetof(UPyConfig_104402, SkipTimelineTags) == 0x000098, "Member 'UPyConfig_104402::SkipTimelineTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104402, bOnlySwordOnVampire) == 0x000100, "Member 'UPyConfig_104402::bOnlySwordOnVampire' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104402, WaitBreakToSwitchSword) == 0x000108, "Member 'UPyConfig_104402::WaitBreakToSwitchSword' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104402, WaitBreakToSwitchGun) == 0x000170, "Member 'UPyConfig_104402::WaitBreakToSwitchGun' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104402, AutoEndSwitchGunKeyName) == 0x0001D8, "Member 'UPyConfig_104402::AutoEndSwitchGunKeyName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104402;
 
 // PythonClass PyAbility_104402.PyAbility_104402
-// 0x0008 (0x2A00 - 0x29F8)
+// 0x0008 (0x2A50 - 0x2A48)
 class UPyAbility_104402 : public UAbility_108
 {
 public:
-	int32                                         ShotgunID;                                         // 0x29F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShotgunID;                                         // 0x2A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -73,16 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104402">();
+		STATIC_CLASS_IMPL("PyAbility_104402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104402")
 	}
 	static class UPyAbility_104402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104402>();
 	}
 };
-static_assert(alignof(UPyAbility_104402) == 0x000008, "Wrong alignment on UPyAbility_104402");
-static_assert(sizeof(UPyAbility_104402) == 0x002A00, "Wrong size on UPyAbility_104402");
-static_assert(offsetof(UPyAbility_104402, ShotgunID) == 0x0029F8, "Member 'UPyAbility_104402::ShotgunID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104402;
 
 }
 

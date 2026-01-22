@@ -37,10 +37,7 @@ public:
 	class UNetConnection*                         NetConnection;                                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UReplicationGraphNode_AlwaysRelevant_ForConnection* Node;                                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FConnectionAlwaysRelevantNodePair) == 0x000008, "Wrong alignment on FConnectionAlwaysRelevantNodePair");
-static_assert(sizeof(FConnectionAlwaysRelevantNodePair) == 0x000010, "Wrong size on FConnectionAlwaysRelevantNodePair");
-static_assert(offsetof(FConnectionAlwaysRelevantNodePair, NetConnection) == 0x000000, "Member 'FConnectionAlwaysRelevantNodePair::NetConnection' has a wrong offset!");
-static_assert(offsetof(FConnectionAlwaysRelevantNodePair, Node) == 0x000008, "Member 'FConnectionAlwaysRelevantNodePair::Node' has a wrong offset!");
+DUMPER7_ASSERTS_FConnectionAlwaysRelevantNodePair;
 
 // ScriptStruct ReplicationGraph.AlwaysRelevantActorInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -51,11 +48,7 @@ public:
 	class AActor*                                 LastViewer;                                        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 LastViewTarget;                                    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAlwaysRelevantActorInfo) == 0x000008, "Wrong alignment on FAlwaysRelevantActorInfo");
-static_assert(sizeof(FAlwaysRelevantActorInfo) == 0x000018, "Wrong size on FAlwaysRelevantActorInfo");
-static_assert(offsetof(FAlwaysRelevantActorInfo, Connection) == 0x000000, "Member 'FAlwaysRelevantActorInfo::Connection' has a wrong offset!");
-static_assert(offsetof(FAlwaysRelevantActorInfo, LastViewer) == 0x000008, "Member 'FAlwaysRelevantActorInfo::LastViewer' has a wrong offset!");
-static_assert(offsetof(FAlwaysRelevantActorInfo, LastViewTarget) == 0x000010, "Member 'FAlwaysRelevantActorInfo::LastViewTarget' has a wrong offset!");
+DUMPER7_ASSERTS_FAlwaysRelevantActorInfo;
 
 // ScriptStruct ReplicationGraph.TearOffActorInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -66,9 +59,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTearOffActorInfo) == 0x000008, "Wrong alignment on FTearOffActorInfo");
-static_assert(sizeof(FTearOffActorInfo) == 0x000018, "Wrong size on FTearOffActorInfo");
-static_assert(offsetof(FTearOffActorInfo, Actor) == 0x000008, "Member 'FTearOffActorInfo::Actor' has a wrong offset!");
+DUMPER7_ASSERTS_FTearOffActorInfo;
 
 // ScriptStruct ReplicationGraph.LastLocationGatherInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -79,11 +70,7 @@ public:
 	struct FVector                                LastLocation;                                      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                LastOutOfRangeLocationCheck;                       // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLastLocationGatherInfo) == 0x000008, "Wrong alignment on FLastLocationGatherInfo");
-static_assert(sizeof(FLastLocationGatherInfo) == 0x000038, "Wrong size on FLastLocationGatherInfo");
-static_assert(offsetof(FLastLocationGatherInfo, Connection) == 0x000000, "Member 'FLastLocationGatherInfo::Connection' has a wrong offset!");
-static_assert(offsetof(FLastLocationGatherInfo, LastLocation) == 0x000008, "Member 'FLastLocationGatherInfo::LastLocation' has a wrong offset!");
-static_assert(offsetof(FLastLocationGatherInfo, LastOutOfRangeLocationCheck) == 0x000020, "Member 'FLastLocationGatherInfo::LastOutOfRangeLocationCheck' has a wrong offset!");
+DUMPER7_ASSERTS_FLastLocationGatherInfo;
 
 // ScriptStruct ReplicationGraph.ClassReplicationInfo
 // 0x0080 (0x0080 - 0x0000)
@@ -103,18 +90,7 @@ public:
 	float                                         CullDistanceSquared;                               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_74[0xC];                                       // 0x0074(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FClassReplicationInfo) == 0x000010, "Wrong alignment on FClassReplicationInfo");
-static_assert(sizeof(FClassReplicationInfo) == 0x000080, "Wrong size on FClassReplicationInfo");
-static_assert(offsetof(FClassReplicationInfo, DistancePriorityScale) == 0x000000, "Member 'FClassReplicationInfo::DistancePriorityScale' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, StarvationPriorityScale) == 0x000004, "Member 'FClassReplicationInfo::StarvationPriorityScale' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, AccumulatedNetPriorityBias) == 0x000008, "Member 'FClassReplicationInfo::AccumulatedNetPriorityBias' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, ReplicationPeriodFrame) == 0x00000C, "Member 'FClassReplicationInfo::ReplicationPeriodFrame' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, FastPath_ReplicationPeriodFrame) == 0x00000E, "Member 'FClassReplicationInfo::FastPath_ReplicationPeriodFrame' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, ActorChannelFrameTimeout) == 0x000010, "Member 'FClassReplicationInfo::ActorChannelFrameTimeout' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, IgnoreCullDistance) == 0x000012, "Member 'FClassReplicationInfo::IgnoreCullDistance' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, DormancyInit) == 0x000013, "Member 'FClassReplicationInfo::DormancyInit' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, CullDistance) == 0x00006C, "Member 'FClassReplicationInfo::CullDistance' has a wrong offset!");
-static_assert(offsetof(FClassReplicationInfo, CullDistanceSquared) == 0x000070, "Member 'FClassReplicationInfo::CullDistanceSquared' has a wrong offset!");
+DUMPER7_ASSERTS_FClassReplicationInfo;
 
 }
 

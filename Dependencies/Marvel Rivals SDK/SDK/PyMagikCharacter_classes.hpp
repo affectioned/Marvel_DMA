@@ -18,24 +18,27 @@ namespace SDK
 {
 
 // PythonClass PyMagikCharacter.PyMagikChildActor
-// 0x0000 (0x0E20 - 0x0E20)
+// 0x0000 (0x0E30 - 0x0E30)
 class APyMagikChildActor final : public AMarvelCharacterChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMagikChildActor">();
+		STATIC_CLASS_IMPL("PyMagikChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMagikChildActor")
 	}
 	static class APyMagikChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMagikChildActor>();
 	}
 };
-static_assert(alignof(APyMagikChildActor) == 0x000010, "Wrong alignment on APyMagikChildActor");
-static_assert(sizeof(APyMagikChildActor) == 0x000E20, "Wrong size on APyMagikChildActor");
+DUMPER7_ASSERTS_APyMagikChildActor;
 
 // PythonClass PyMagikCharacter.PyDarkchyldeChildActor
-// 0x0000 (0x0E20 - 0x0E20)
+// 0x0000 (0x0E30 - 0x0E30)
 class APyDarkchyldeChildActor final : public AMarvelCharacterChildActor
 {
 public:
@@ -44,22 +47,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDarkchyldeChildActor">();
+		STATIC_CLASS_IMPL("PyDarkchyldeChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDarkchyldeChildActor")
 	}
 	static class APyDarkchyldeChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDarkchyldeChildActor>();
 	}
 };
-static_assert(alignof(APyDarkchyldeChildActor) == 0x000010, "Wrong alignment on APyDarkchyldeChildActor");
-static_assert(sizeof(APyDarkchyldeChildActor) == 0x000E20, "Wrong size on APyDarkchyldeChildActor");
+DUMPER7_ASSERTS_APyDarkchyldeChildActor;
 
 // PythonClass PyMagikCharacter.PyMagikCharacter
-// 0x0010 (0x21C0 - 0x21B0)
+// 0x0010 (0x22D0 - 0x22C0)
 class APyMagikCharacter : public AMagikCharacter
 {
 public:
-	class UMarveSculptConfigComponent*            SonOfDarknessSculptConfigComponent;                // 0x21B0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarveSculptConfigComponent*            SonOfDarknessSculptConfigComponent;                // 0x22C0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnDeath(class AController* InSource, class AActor* InSourceAvatar, const struct FAttributeModifierHandle& ModifierParameter);
@@ -67,16 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMagikCharacter">();
+		STATIC_CLASS_IMPL("PyMagikCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMagikCharacter")
 	}
 	static class APyMagikCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMagikCharacter>();
 	}
 };
-static_assert(alignof(APyMagikCharacter) == 0x000010, "Wrong alignment on APyMagikCharacter");
-static_assert(sizeof(APyMagikCharacter) == 0x0021C0, "Wrong size on APyMagikCharacter");
-static_assert(offsetof(APyMagikCharacter, SonOfDarknessSculptConfigComponent) == 0x0021B0, "Member 'APyMagikCharacter::SonOfDarknessSculptConfigComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyMagikCharacter;
 
 }
 

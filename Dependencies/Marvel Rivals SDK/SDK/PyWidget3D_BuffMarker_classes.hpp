@@ -33,10 +33,11 @@ public:
 	class UTexture2D*                             Texture_Normal;                                    // 0x0A60(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture2D*                             Texture_Frame;                                     // 0x0A68(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bVisibleForBuffTarget;                             // 0x0A70(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bVisibleForBuffInstigator;                         // 0x0A71(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bVisibleForAllCharacter;                           // 0x0A72(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowCountdown;                                   // 0x0A73(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A74[0x4];                                      // 0x0A74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bVisibleForTargetIsAlly;                           // 0x0A71(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVisibleForBuffInstigator;                         // 0x0A72(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVisibleForAllCharacter;                           // 0x0A73(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowCountdown;                                   // 0x0A74(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A75[0x3];                                      // 0x0A75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 Img_Icon;                                          // 0x0A78(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UImage*                                 Img_Glow;                                          // 0x0A80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -52,7 +53,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_BuffMarker">();
+		STATIC_CLASS_IMPL("PyWidget3D_BuffMarker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_BuffMarker")
 	}
 	static class UPyWidget3D_BuffMarker* GetDefaultObj()
 	{
@@ -60,20 +65,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget3D_BuffMarker) == 0x000010, "Wrong alignment on UPyWidget3D_BuffMarker");
-static_assert(sizeof(UPyWidget3D_BuffMarker) == 0x000A90, "Wrong size on UPyWidget3D_BuffMarker");
-static_assert(offsetof(UPyWidget3D_BuffMarker, ViewTargetWatcher) == 0x000870, "Member 'UPyWidget3D_BuffMarker::ViewTargetWatcher' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, BuffDurationBindHandle) == 0x000880, "Member 'UPyWidget3D_BuffMarker::BuffDurationBindHandle' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Brush_Normal) == 0x0008C0, "Member 'UPyWidget3D_BuffMarker::Brush_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Brush_Frame) == 0x000990, "Member 'UPyWidget3D_BuffMarker::Brush_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Texture_Normal) == 0x000A60, "Member 'UPyWidget3D_BuffMarker::Texture_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Texture_Frame) == 0x000A68, "Member 'UPyWidget3D_BuffMarker::Texture_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, bVisibleForBuffTarget) == 0x000A70, "Member 'UPyWidget3D_BuffMarker::bVisibleForBuffTarget' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, bVisibleForBuffInstigator) == 0x000A71, "Member 'UPyWidget3D_BuffMarker::bVisibleForBuffInstigator' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, bVisibleForAllCharacter) == 0x000A72, "Member 'UPyWidget3D_BuffMarker::bVisibleForAllCharacter' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, IsShowCountdown) == 0x000A73, "Member 'UPyWidget3D_BuffMarker::IsShowCountdown' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Img_Icon) == 0x000A78, "Member 'UPyWidget3D_BuffMarker::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_BuffMarker, Img_Glow) == 0x000A80, "Member 'UPyWidget3D_BuffMarker::Img_Glow' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_BuffMarker;
 
 }
 

@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLobbyUnlockAudio">();
+		STATIC_CLASS_IMPL("PyLobbyUnlockAudio")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLobbyUnlockAudio")
 	}
 	static class APyLobbyUnlockAudio* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLobbyUnlockAudio>();
 	}
 };
-static_assert(alignof(APyLobbyUnlockAudio) == 0x000010, "Wrong alignment on APyLobbyUnlockAudio");
-static_assert(sizeof(APyLobbyUnlockAudio) == 0x0006F0, "Wrong size on APyLobbyUnlockAudio");
-static_assert(offsetof(APyLobbyUnlockAudio, RemainPlayTime) == 0x0006E0, "Member 'APyLobbyUnlockAudio::RemainPlayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLobbyUnlockAudio;
 
 }
 

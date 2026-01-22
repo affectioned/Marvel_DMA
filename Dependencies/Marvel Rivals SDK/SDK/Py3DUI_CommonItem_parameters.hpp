@@ -23,9 +23,7 @@ struct Py3DUI_CommonItem_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Py3DUI_CommonItem_ReceiveEndPlay) == 0x000001, "Wrong alignment on Py3DUI_CommonItem_ReceiveEndPlay");
-static_assert(sizeof(Py3DUI_CommonItem_ReceiveEndPlay) == 0x000001, "Wrong size on Py3DUI_CommonItem_ReceiveEndPlay");
-static_assert(offsetof(Py3DUI_CommonItem_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'Py3DUI_CommonItem_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_Py3DUI_CommonItem_ReceiveEndPlay;
 
 // PythonFunction Py3DUI_CommonItem.Py3DUI_CommonItem.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct Py3DUI_CommonItem_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Py3DUI_CommonItem_ReceiveTick) == 0x000004, "Wrong alignment on Py3DUI_CommonItem_ReceiveTick");
-static_assert(sizeof(Py3DUI_CommonItem_ReceiveTick) == 0x000004, "Wrong size on Py3DUI_CommonItem_ReceiveTick");
-static_assert(offsetof(Py3DUI_CommonItem_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Py3DUI_CommonItem_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_Py3DUI_CommonItem_ReceiveTick;
 
 }
 

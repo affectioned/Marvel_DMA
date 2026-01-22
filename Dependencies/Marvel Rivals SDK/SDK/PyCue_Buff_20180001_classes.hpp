@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyCue_Buff_20180001.PyCue_Buff_20180001
-// 0x0010 (0x1230 - 0x1220)
+// 0x0010 (0x1240 - 0x1230)
 class APyCue_Buff_20180001 final : public AMarvelCueNotify_Loop
 {
 public:
-	uint8                                         Pad_1218[0x8];                                     // 0x1218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Radius;                                            // 0x1220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Radius2;                                           // 0x1224(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1228[0x8];                                     // 0x1228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Radius;                                            // 0x1230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius2;                                           // 0x1234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_20180001">();
+		STATIC_CLASS_IMPL("PyCue_Buff_20180001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_20180001")
 	}
 	static class APyCue_Buff_20180001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_20180001>();
 	}
 };
-static_assert(alignof(APyCue_Buff_20180001) == 0x000010, "Wrong alignment on APyCue_Buff_20180001");
-static_assert(sizeof(APyCue_Buff_20180001) == 0x001230, "Wrong size on APyCue_Buff_20180001");
-static_assert(offsetof(APyCue_Buff_20180001, Radius) == 0x001220, "Member 'APyCue_Buff_20180001::Radius' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_20180001, Radius2) == 0x001224, "Member 'APyCue_Buff_20180001::Radius2' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_20180001;
 
 }
 

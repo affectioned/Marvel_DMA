@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -59,25 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugProcedureAudio_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugProcedureAudio_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugProcedureAudio_C")
 	}
 	static class UWBP_DebugProcedureAudio_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugProcedureAudio_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugProcedureAudio_C) == 0x000008, "Wrong alignment on UWBP_DebugProcedureAudio_C");
-static_assert(sizeof(UWBP_DebugProcedureAudio_C) == 0x000458, "Wrong size on UWBP_DebugProcedureAudio_C");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_DebugProcedureAudio_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, Btn_ProcedureMusic) == 0x0003C0, "Member 'UWBP_DebugProcedureAudio_C::Btn_ProcedureMusic' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, Btn_ProcedureUI) == 0x0003C8, "Member 'UWBP_DebugProcedureAudio_C::Btn_ProcedureUI' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, Btn_ProcedureVoice) == 0x0003D0, "Member 'UWBP_DebugProcedureAudio_C::Btn_ProcedureVoice' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, ProcedureNotifies) == 0x0003D8, "Member 'UWBP_DebugProcedureAudio_C::ProcedureNotifies' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, UnitMargin) == 0x0003E0, "Member 'UWBP_DebugProcedureAudio_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, DataType) == 0x0003F0, "Member 'UWBP_DebugProcedureAudio_C::DataType' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, ModeType) == 0x0003F4, "Member 'UWBP_DebugProcedureAudio_C::ModeType' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, ProcedureLines) == 0x000400, "Member 'UWBP_DebugProcedureAudio_C::ProcedureLines' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugProcedureAudio_C, ProcedureData) == 0x000450, "Member 'UWBP_DebugProcedureAudio_C::ProcedureData' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugProcedureAudio_C;
 
 }
 

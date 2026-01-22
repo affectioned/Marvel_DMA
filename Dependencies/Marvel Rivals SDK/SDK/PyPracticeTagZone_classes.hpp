@@ -17,11 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyPracticeTagZone.PyPracticeTagZone
-// 0x0010 (0x0700 - 0x06F0)
-class APyPracticeTagZone : public APyTagZone
+// 0x0010 (0x0710 - 0x0700)
+#pragma pack(push, 0x1)
+class alignas(0x10) APyPracticeTagZone : public APyTagZone
 {
 public:
-	TArray<class APyTrainComputer*>               Computers;                                         // 0x06F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6F2[0x6];                                      // 0x06F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class APyTrainComputer*>               Computers;                                         // 0x06F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -29,16 +31,19 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPracticeTagZone">();
+		STATIC_CLASS_IMPL("PyPracticeTagZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPracticeTagZone")
 	}
 	static class APyPracticeTagZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPracticeTagZone>();
 	}
 };
-static_assert(alignof(APyPracticeTagZone) == 0x000010, "Wrong alignment on APyPracticeTagZone");
-static_assert(sizeof(APyPracticeTagZone) == 0x000700, "Wrong size on APyPracticeTagZone");
-static_assert(offsetof(APyPracticeTagZone, Computers) == 0x0006F0, "Member 'APyPracticeTagZone::Computers' has a wrong offset!");
+#pragma pack(pop)
+DUMPER7_ASSERTS_APyPracticeTagZone;
 
 }
 

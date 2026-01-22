@@ -41,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyIsVisible">();
+		STATIC_CLASS_IMPL("BTD_PyIsVisible")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyIsVisible")
 	}
 	static class UBTD_PyIsVisible* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyIsVisible>();
 	}
 };
-static_assert(alignof(UBTD_PyIsVisible) == 0x000008, "Wrong alignment on UBTD_PyIsVisible");
-static_assert(sizeof(UBTD_PyIsVisible) == 0x000100, "Wrong size on UBTD_PyIsVisible");
-static_assert(offsetof(UBTD_PyIsVisible, InCheckTarget) == 0x0000B8, "Member 'UBTD_PyIsVisible::InCheckTarget' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, ShouldCheckGunLine) == 0x0000E8, "Member 'UBTD_PyIsVisible::ShouldCheckGunLine' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, OnlyCheckGunLineForRangeHero) == 0x0000E9, "Member 'UBTD_PyIsVisible::OnlyCheckGunLineForRangeHero' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, GunLineRightOffsetRatio) == 0x0000EC, "Member 'UBTD_PyIsVisible::GunLineRightOffsetRatio' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, GunLineUpOffsetRatio) == 0x0000F0, "Member 'UBTD_PyIsVisible::GunLineUpOffsetRatio' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, ShouldCheckByTrace) == 0x0000F4, "Member 'UBTD_PyIsVisible::ShouldCheckByTrace' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, VisionRange) == 0x0000F8, "Member 'UBTD_PyIsVisible::VisionRange' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, UseTargetExtent) == 0x0000FC, "Member 'UBTD_PyIsVisible::UseTargetExtent' has a wrong offset!");
-static_assert(offsetof(UBTD_PyIsVisible, TraceType) == 0x0000FD, "Member 'UBTD_PyIsVisible::TraceType' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyIsVisible;
 
 }
 

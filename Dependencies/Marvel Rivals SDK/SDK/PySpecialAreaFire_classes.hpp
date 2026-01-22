@@ -53,29 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpecialAreaFire">();
+		STATIC_CLASS_IMPL("PySpecialAreaFire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpecialAreaFire")
 	}
 	static class APySpecialAreaFire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySpecialAreaFire>();
 	}
 };
-static_assert(alignof(APySpecialAreaFire) == 0x000010, "Wrong alignment on APySpecialAreaFire");
-static_assert(sizeof(APySpecialAreaFire) == 0x000820, "Wrong size on APySpecialAreaFire");
-static_assert(offsetof(APySpecialAreaFire, ExplodeDelay) == 0x0007C0, "Member 'APySpecialAreaFire::ExplodeDelay' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, ExplodeBuffID) == 0x0007C4, "Member 'APySpecialAreaFire::ExplodeBuffID' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireDelay) == 0x0007C8, "Member 'APySpecialAreaFire::FireDelay' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireDuration) == 0x0007CC, "Member 'APySpecialAreaFire::FireDuration' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireBuffID) == 0x0007D0, "Member 'APySpecialAreaFire::FireBuffID' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, CountDownLS) == 0x0007D8, "Member 'APySpecialAreaFire::CountDownLS' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, CountDownTotalTime) == 0x0007E0, "Member 'APySpecialAreaFire::CountDownTotalTime' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, ExplodeScopeID) == 0x0007E4, "Member 'APySpecialAreaFire::ExplodeScopeID' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireScopeID) == 0x0007E8, "Member 'APySpecialAreaFire::FireScopeID' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, ExplodeAudioEvent) == 0x0007F0, "Member 'APySpecialAreaFire::ExplodeAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireAudioEvent) == 0x0007F8, "Member 'APySpecialAreaFire::FireAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireDisappearAudioEvent) == 0x000800, "Member 'APySpecialAreaFire::FireDisappearAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, CountdownAudioEvent) == 0x000808, "Member 'APySpecialAreaFire::CountdownAudioEvent' has a wrong offset!");
-static_assert(offsetof(APySpecialAreaFire, FireState) == 0x000810, "Member 'APySpecialAreaFire::FireState' has a wrong offset!");
+DUMPER7_ASSERTS_APySpecialAreaFire;
 
 }
 

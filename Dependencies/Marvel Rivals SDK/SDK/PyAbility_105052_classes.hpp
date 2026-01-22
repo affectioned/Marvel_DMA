@@ -27,19 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105052">();
+		STATIC_CLASS_IMPL("PyConfig_105052")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105052")
 	}
 	static class UPyConfig_105052* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105052>();
 	}
 };
-static_assert(alignof(UPyConfig_105052) == 0x000008, "Wrong alignment on UPyConfig_105052");
-static_assert(sizeof(UPyConfig_105052) == 0x000100, "Wrong size on UPyConfig_105052");
-static_assert(offsetof(UPyConfig_105052, SkipTimelineTags) == 0x000098, "Member 'UPyConfig_105052::SkipTimelineTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105052;
 
 // PythonClass PyAbility_105052.PyAbility_105052
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105052 : public UAbility_108
 {
 public:
@@ -51,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105052">();
+		STATIC_CLASS_IMPL("PyAbility_105052")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105052")
 	}
 	static class UPyAbility_105052* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105052>();
 	}
 };
-static_assert(alignof(UPyAbility_105052) == 0x000008, "Wrong alignment on UPyAbility_105052");
-static_assert(sizeof(UPyAbility_105052) == 0x0029F8, "Wrong size on UPyAbility_105052");
+DUMPER7_ASSERTS_UPyAbility_105052;
 
 }
 

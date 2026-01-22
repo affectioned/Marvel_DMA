@@ -97,78 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_MiniKeyBoard_Mouse_Test_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_MiniKeyBoard_Mouse_Test_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_MiniKeyBoard_Mouse_Test_C")
 	}
 	static class UWBP_Setting_MiniKeyBoard_Mouse_Test_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_MiniKeyBoard_Mouse_Test_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C) == 0x000008, "Wrong alignment on UWBP_Setting_MiniKeyBoard_Mouse_Test_C");
-static_assert(sizeof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C) == 0x000560, "Wrong size on UWBP_Setting_MiniKeyBoard_Mouse_Test_C");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Left) == 0x0003C0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Middle) == 0x0003C8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Middle' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Right) == 0x0003D0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Side_Down) == 0x0003D8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Side_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Side_Up) == 0x0003E0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Side_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Wheel_Down) == 0x0003E8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Wheel_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Bg_Wheel_Up) == 0x0003F0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Bg_Wheel_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Left) == 0x0003F8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Right) == 0x000400, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Side_Down) == 0x000408, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Side_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Side_Up) == 0x000410, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Side_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Wheel) == 0x000418, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Wheel_Down) == 0x000420, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Wheel_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Btn_Wheel_Up) == 0x000428, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Btn_Wheel_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Icon_Wheel_Down) == 0x000430, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Icon_Wheel_Down' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Icon_Wheel_Up) == 0x000438, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Icon_Wheel_Up' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Img_Mouse) == 0x000440, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Img_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Img_TextBg) == 0x000448, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Img_TextBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Left) == 0x000450, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Right) == 0x000458, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Wheel) == 0x000460, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Wheel' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, LeftIsCombined) == 0x000468, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::LeftIsCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, LeftIsDisable) == 0x000469, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::LeftIsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, LeftIsConflict) == 0x00046A, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::LeftIsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Combine_False) == 0x000470, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Combine_False' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Combine_True) == 0x000478, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Combine_True' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Combine_Disable) == 0x000480, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Combine_Disable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, RightIsCombined) == 0x000488, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::RightIsCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, RightIsDisable) == 0x000489, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::RightIsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, RightIsConflict) == 0x00048A, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::RightIsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, MiddleIsCombined) == 0x00048B, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::MiddleIsCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, MiddleIsDisable) == 0x00048C, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::MiddleIsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, MiddleIsConflict) == 0x00048D, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::MiddleIsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelDownisCombined) == 0x00048E, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelDownisCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelDownisDisable) == 0x00048F, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelDownisDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelDownisConflict) == 0x000490, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelDownisConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelUpisCombined) == 0x000491, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelUpisCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelUpisDisable) == 0x000492, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelUpisDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, WheelUpisConflict) == 0x000493, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::WheelUpisConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Color_White) == 0x000494, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Color_White' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Color_Black) == 0x0004A8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Color_Black' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text_Color_White_Gary) == 0x0004BC, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text_Color_White_Gary' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Text) == 0x0004D0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Text' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, ThumbIsCombined) == 0x0004D8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::ThumbIsCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, ThumbIsDisable) == 0x0004D9, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::ThumbIsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, ThumbIsConflict) == 0x0004DA, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::ThumbIsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Thumb2IsCombined) == 0x0004DB, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Thumb2IsCombined' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Thumb2IsDisable) == 0x0004DC, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Thumb2IsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, Thumb2IsConflict) == 0x0004DD, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::Thumb2IsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_0) == 0x0004E0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_1) == 0x0004E8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_2) == 0x0004F0, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_3) == 0x0004F8, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_4) == 0x000500, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_5) == 0x000508, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_6) == 0x000510, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_7) == 0x000518, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_7' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_8) == 0x000520, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_8' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, image_9) == 0x000528, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::image_9' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, CombineColor) == 0x000530, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::CombineColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, NormalColor) == 0x000540, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::NormalColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_Mouse_Test_C, ConflictColor) == 0x000550, "Member 'UWBP_Setting_MiniKeyBoard_Mouse_Test_C::ConflictColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_MiniKeyBoard_Mouse_Test_C;
 
 }
 

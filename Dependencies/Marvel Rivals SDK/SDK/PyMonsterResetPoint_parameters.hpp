@@ -21,9 +21,7 @@ struct PyMonsterResetPoint_CanDraw final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMonsterResetPoint_CanDraw) == 0x000001, "Wrong alignment on PyMonsterResetPoint_CanDraw");
-static_assert(sizeof(PyMonsterResetPoint_CanDraw) == 0x000001, "Wrong size on PyMonsterResetPoint_CanDraw");
-static_assert(offsetof(PyMonsterResetPoint_CanDraw, ReturnValue) == 0x000000, "Member 'PyMonsterResetPoint_CanDraw::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyMonsterResetPoint_CanDraw;
 
 }
 

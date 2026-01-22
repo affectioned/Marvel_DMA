@@ -45,29 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecomputeUVsToolProperties">();
+		STATIC_CLASS_IMPL("RecomputeUVsToolProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecomputeUVsToolProperties")
 	}
 	static class URecomputeUVsToolProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URecomputeUVsToolProperties>();
 	}
 };
-static_assert(alignof(URecomputeUVsToolProperties) == 0x000008, "Wrong alignment on URecomputeUVsToolProperties");
-static_assert(sizeof(URecomputeUVsToolProperties) == 0x0000E8, "Wrong size on URecomputeUVsToolProperties");
-static_assert(offsetof(URecomputeUVsToolProperties, bEnablePolygroupSupport) == 0x0000B0, "Member 'URecomputeUVsToolProperties::bEnablePolygroupSupport' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, IslandGeneration) == 0x0000B4, "Member 'URecomputeUVsToolProperties::IslandGeneration' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, UnwrapType) == 0x0000B8, "Member 'URecomputeUVsToolProperties::UnwrapType' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, AutoRotation) == 0x0000BC, "Member 'URecomputeUVsToolProperties::AutoRotation' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, bPreserveIrregularity) == 0x0000C0, "Member 'URecomputeUVsToolProperties::bPreserveIrregularity' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, SmoothingSteps) == 0x0000C4, "Member 'URecomputeUVsToolProperties::SmoothingSteps' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, SmoothingAlpha) == 0x0000C8, "Member 'URecomputeUVsToolProperties::SmoothingAlpha' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, MergingDistortionThreshold) == 0x0000CC, "Member 'URecomputeUVsToolProperties::MergingDistortionThreshold' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, MergingAngleThreshold) == 0x0000D0, "Member 'URecomputeUVsToolProperties::MergingAngleThreshold' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, LayoutType) == 0x0000D4, "Member 'URecomputeUVsToolProperties::LayoutType' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, TextureResolution) == 0x0000D8, "Member 'URecomputeUVsToolProperties::TextureResolution' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, NormalizeScale) == 0x0000DC, "Member 'URecomputeUVsToolProperties::NormalizeScale' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, bEnableUDIMLayout) == 0x0000E0, "Member 'URecomputeUVsToolProperties::bEnableUDIMLayout' has a wrong offset!");
-static_assert(offsetof(URecomputeUVsToolProperties, bUDIMCVAREnabled) == 0x0000E1, "Member 'URecomputeUVsToolProperties::bUDIMCVAREnabled' has a wrong offset!");
+DUMPER7_ASSERTS_URecomputeUVsToolProperties;
 
 // Class ModelingOperators.UVLayoutProperties
 // 0x0028 (0x00D8 - 0x00B0)
@@ -87,22 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UVLayoutProperties">();
+		STATIC_CLASS_IMPL("UVLayoutProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UVLayoutProperties")
 	}
 	static class UUVLayoutProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUVLayoutProperties>();
 	}
 };
-static_assert(alignof(UUVLayoutProperties) == 0x000008, "Wrong alignment on UUVLayoutProperties");
-static_assert(sizeof(UUVLayoutProperties) == 0x0000D8, "Wrong size on UUVLayoutProperties");
-static_assert(offsetof(UUVLayoutProperties, LayoutType) == 0x0000B0, "Member 'UUVLayoutProperties::LayoutType' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, TextureResolution) == 0x0000B4, "Member 'UUVLayoutProperties::TextureResolution' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, Scale) == 0x0000B8, "Member 'UUVLayoutProperties::Scale' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, Translation) == 0x0000C0, "Member 'UUVLayoutProperties::Translation' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, bAllowFlips) == 0x0000D0, "Member 'UUVLayoutProperties::bAllowFlips' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, bEnableUDIMLayout) == 0x0000D1, "Member 'UUVLayoutProperties::bEnableUDIMLayout' has a wrong offset!");
-static_assert(offsetof(UUVLayoutProperties, bUDIMCVAREnabled) == 0x0000D2, "Member 'UUVLayoutProperties::bUDIMCVAREnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UUVLayoutProperties;
 
 // Class ModelingOperators.RecomputeUVsOpFactory
 // 0x0120 (0x0150 - 0x0030)
@@ -116,16 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RecomputeUVsOpFactory">();
+		STATIC_CLASS_IMPL("RecomputeUVsOpFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RecomputeUVsOpFactory")
 	}
 	static class URecomputeUVsOpFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URecomputeUVsOpFactory>();
 	}
 };
-static_assert(alignof(URecomputeUVsOpFactory) == 0x000010, "Wrong alignment on URecomputeUVsOpFactory");
-static_assert(sizeof(URecomputeUVsOpFactory) == 0x000150, "Wrong size on URecomputeUVsOpFactory");
-static_assert(offsetof(URecomputeUVsOpFactory, Settings) == 0x000038, "Member 'URecomputeUVsOpFactory::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_URecomputeUVsOpFactory;
 
 // Class ModelingOperators.UVLayoutOperatorFactory
 // 0x0180 (0x01B0 - 0x0030)
@@ -139,16 +126,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UVLayoutOperatorFactory">();
+		STATIC_CLASS_IMPL("UVLayoutOperatorFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UVLayoutOperatorFactory")
 	}
 	static class UUVLayoutOperatorFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUVLayoutOperatorFactory>();
 	}
 };
-static_assert(alignof(UUVLayoutOperatorFactory) == 0x000010, "Wrong alignment on UUVLayoutOperatorFactory");
-static_assert(sizeof(UUVLayoutOperatorFactory) == 0x0001B0, "Wrong size on UUVLayoutOperatorFactory");
-static_assert(offsetof(UUVLayoutOperatorFactory, Settings) == 0x000038, "Member 'UUVLayoutOperatorFactory::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_UUVLayoutOperatorFactory;
 
 }
 

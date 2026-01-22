@@ -11,13 +11,59 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_Settlement_ActivityTopUnitBase_classes.hpp"
 
 
 namespace SDK
 {
 
+// PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_RollNumTopUnitBase : public UPyWidget_Settlement_ActivityTopUnitBase
+{
+public:
+	void OnInitialized();
+	void Destruct();
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_RollNumTopUnitBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_RollNumTopUnitBase")
+	}
+	static class UPyWidget_Settlement_RollNumTopUnitBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_RollNumTopUnitBase>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_RollNumTopUnitBase;
+
+// PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_BattlepassTopUnit
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_BattlepassTopUnit final : public UPyWidget_Settlement_RollNumTopUnitBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_BattlepassTopUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_BattlepassTopUnit")
+	}
+	static class UPyWidget_Settlement_BattlepassTopUnit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_BattlepassTopUnit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_BattlepassTopUnit;
+
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_ActivityRewardTips final : public UPyMarvelUserWidget
 {
 public:
@@ -30,61 +76,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ActivityRewardTips">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ActivityRewardTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ActivityRewardTips")
 	}
 	static class UPyWidget_Settlement_ActivityRewardTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ActivityRewardTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ActivityRewardTips) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ActivityRewardTips");
-static_assert(sizeof(UPyWidget_Settlement_ActivityRewardTips) == 0x0005C0, "Wrong size on UPyWidget_Settlement_ActivityRewardTips");
-
-// PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityTopUnit
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_ActivityTopUnit : public UPyMarvelUserWidget
-{
-public:
-	void Destruct();
-	void OnTitleMaterialLoad(class UObject* TitleMaterial);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Settlement_ActivityTopUnit">();
-	}
-	static class UPyWidget_Settlement_ActivityTopUnit* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Settlement_ActivityTopUnit>();
-	}
-};
-static_assert(alignof(UPyWidget_Settlement_ActivityTopUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ActivityTopUnit");
-static_assert(sizeof(UPyWidget_Settlement_ActivityTopUnit) == 0x0005C0, "Wrong size on UPyWidget_Settlement_ActivityTopUnit");
-
-// PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_RollNumTopUnitBase : public UPyWidget_Settlement_ActivityTopUnit
-{
-public:
-	void OnInitialized();
-	void Destruct();
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Settlement_RollNumTopUnitBase">();
-	}
-	static class UPyWidget_Settlement_RollNumTopUnitBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Settlement_RollNumTopUnitBase>();
-	}
-};
-static_assert(alignof(UPyWidget_Settlement_RollNumTopUnitBase) == 0x000008, "Wrong alignment on UPyWidget_Settlement_RollNumTopUnitBase");
-static_assert(sizeof(UPyWidget_Settlement_RollNumTopUnitBase) == 0x0005C0, "Wrong size on UPyWidget_Settlement_RollNumTopUnitBase");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ActivityRewardTips;
 
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityTaskUnit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_ActivityTaskUnit final : public UPyMarvelUserWidget
 {
 public:
@@ -94,58 +100,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ActivityTaskUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ActivityTaskUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ActivityTaskUnit")
 	}
 	static class UPyWidget_Settlement_ActivityTaskUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ActivityTaskUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ActivityTaskUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ActivityTaskUnit");
-static_assert(sizeof(UPyWidget_Settlement_ActivityTaskUnit) == 0x0005C0, "Wrong size on UPyWidget_Settlement_ActivityTaskUnit");
-
-// PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_BattlepassTopUnit
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_BattlepassTopUnit final : public UPyWidget_Settlement_RollNumTopUnitBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Settlement_BattlepassTopUnit">();
-	}
-	static class UPyWidget_Settlement_BattlepassTopUnit* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Settlement_BattlepassTopUnit>();
-	}
-};
-static_assert(alignof(UPyWidget_Settlement_BattlepassTopUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_BattlepassTopUnit");
-static_assert(sizeof(UPyWidget_Settlement_BattlepassTopUnit) == 0x0005C0, "Wrong size on UPyWidget_Settlement_BattlepassTopUnit");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ActivityTaskUnit;
 
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_BoxItem
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Settlement_BoxItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_FadeIn;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_FadeIn;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_BoxItem">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_BoxItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_BoxItem")
 	}
 	static class UPyWidget_Settlement_BoxItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_BoxItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_BoxItem) == 0x000008, "Wrong alignment on UPyWidget_Settlement_BoxItem");
-static_assert(sizeof(UPyWidget_Settlement_BoxItem) == 0x0005C8, "Wrong size on UPyWidget_Settlement_BoxItem");
-static_assert(offsetof(UPyWidget_Settlement_BoxItem, AkEvent_FadeIn) == 0x0005C0, "Member 'UPyWidget_Settlement_BoxItem::AkEvent_FadeIn' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_BoxItem;
 
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_CombatChestTopUnit
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_CombatChestTopUnit final : public UPyWidget_Settlement_ActivityTopUnit
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_CombatChestTopUnit final : public UPyWidget_Settlement_ActivityTopUnitBase
 {
 public:
 	void OnInitialized();
@@ -153,19 +147,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_CombatChestTopUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_CombatChestTopUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_CombatChestTopUnit")
 	}
 	static class UPyWidget_Settlement_CombatChestTopUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_CombatChestTopUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_CombatChestTopUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_CombatChestTopUnit");
-static_assert(sizeof(UPyWidget_Settlement_CombatChestTopUnit) == 0x0005C0, "Wrong size on UPyWidget_Settlement_CombatChestTopUnit");
+DUMPER7_ASSERTS_UPyWidget_Settlement_CombatChestTopUnit;
 
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ExtraRewardTopUnit
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_Settlement_ExtraRewardTopUnit final : public UPyWidget_Settlement_ActivityTopUnit
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_ExtraRewardTopUnit final : public UPyWidget_Settlement_ActivityTopUnitBase
 {
 public:
 	void OnInitialized();
@@ -175,24 +172,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ExtraRewardTopUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ExtraRewardTopUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ExtraRewardTopUnit")
 	}
 	static class UPyWidget_Settlement_ExtraRewardTopUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ExtraRewardTopUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ExtraRewardTopUnit) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ExtraRewardTopUnit");
-static_assert(sizeof(UPyWidget_Settlement_ExtraRewardTopUnit) == 0x0005C0, "Wrong size on UPyWidget_Settlement_ExtraRewardTopUnit");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ExtraRewardTopUnit;
 
 // PythonClass PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardCard
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Settlement_ActivityRewardCard final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                BoxItem;                                           // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnProgressAnimFinish;                              // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                BoxItem;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnProgressAnimFinish;                              // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -202,17 +202,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ActivityRewardCard">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ActivityRewardCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ActivityRewardCard")
 	}
 	static class UPyWidget_Settlement_ActivityRewardCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ActivityRewardCard>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ActivityRewardCard) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ActivityRewardCard");
-static_assert(sizeof(UPyWidget_Settlement_ActivityRewardCard) == 0x0005D8, "Wrong size on UPyWidget_Settlement_ActivityRewardCard");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardCard, BoxItem) == 0x0005C0, "Member 'UPyWidget_Settlement_ActivityRewardCard::BoxItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardCard, OnProgressAnimFinish) == 0x0005C8, "Member 'UPyWidget_Settlement_ActivityRewardCard::OnProgressAnimFinish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ActivityRewardCard;
 
 }
 

@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Nameplate_3D_Broken_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Nameplate_3D_Broken_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Nameplate_3D_Broken_C")
 	}
 	static class UWBP_Nameplate_3D_Broken_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Nameplate_3D_Broken_C>();
 	}
 };
-static_assert(alignof(UWBP_Nameplate_3D_Broken_C) == 0x000008, "Wrong alignment on UWBP_Nameplate_3D_Broken_C");
-static_assert(sizeof(UWBP_Nameplate_3D_Broken_C) == 0x0003C0, "Wrong size on UWBP_Nameplate_3D_Broken_C");
-static_assert(offsetof(UWBP_Nameplate_3D_Broken_C, SP_AnimSpine_Broken_Vx) == 0x0003B8, "Member 'UWBP_Nameplate_3D_Broken_C::SP_AnimSpine_Broken_Vx' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Nameplate_3D_Broken_C;
 
 }
 

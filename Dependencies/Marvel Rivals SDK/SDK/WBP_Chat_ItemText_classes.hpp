@@ -42,24 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Chat_ItemText_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Chat_ItemText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Chat_ItemText_C")
 	}
 	static class UWBP_Chat_ItemText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Chat_ItemText_C>();
 	}
 };
-static_assert(alignof(UWBP_Chat_ItemText_C) == 0x000010, "Wrong alignment on UWBP_Chat_ItemText_C");
-static_assert(sizeof(UWBP_Chat_ItemText_C) == 0x0009B0, "Wrong size on UWBP_Chat_ItemText_C");
-static_assert(offsetof(UWBP_Chat_ItemText_C, UberGraphFrame) == 0x000968, "Member 'UWBP_Chat_ItemText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Btn_Base) == 0x000970, "Member 'UWBP_Chat_ItemText_C::Btn_Base' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Img_Day_Line) == 0x000978, "Member 'UWBP_Chat_ItemText_C::Img_Day_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Img_Day_Line_1) == 0x000980, "Member 'UWBP_Chat_ItemText_C::Img_Day_Line_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Img_Input_Ps) == 0x000988, "Member 'UWBP_Chat_ItemText_C::Img_Input_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Panel_Chat_Day) == 0x000990, "Member 'UWBP_Chat_ItemText_C::Panel_Chat_Day' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, RText_Content) == 0x000998, "Member 'UWBP_Chat_ItemText_C::RText_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, SizeBox_TextWidth) == 0x0009A0, "Member 'UWBP_Chat_ItemText_C::SizeBox_TextWidth' has a wrong offset!");
-static_assert(offsetof(UWBP_Chat_ItemText_C, Text_Day) == 0x0009A8, "Member 'UWBP_Chat_ItemText_C::Text_Day' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Chat_ItemText_C;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_AvoidTeam.PyWidget_Squad_AvoidTeam
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Squad_AvoidTeam final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_AvoidTeam">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_AvoidTeam")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_AvoidTeam")
 	}
 	static class UPyWidget_Squad_AvoidTeam* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_AvoidTeam>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_AvoidTeam) == 0x000008, "Wrong alignment on UPyWidget_Squad_AvoidTeam");
-static_assert(sizeof(UPyWidget_Squad_AvoidTeam) == 0x0005C0, "Wrong size on UPyWidget_Squad_AvoidTeam");
+DUMPER7_ASSERTS_UPyWidget_Squad_AvoidTeam;
 
 }
 

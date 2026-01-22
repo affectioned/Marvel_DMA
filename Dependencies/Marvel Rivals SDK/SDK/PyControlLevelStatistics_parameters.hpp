@@ -23,9 +23,7 @@ struct PyControlLevelStatistics_OnRoundEnd final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControlLevelStatistics_OnRoundEnd) == 0x000004, "Wrong alignment on PyControlLevelStatistics_OnRoundEnd");
-static_assert(sizeof(PyControlLevelStatistics_OnRoundEnd) == 0x000004, "Wrong size on PyControlLevelStatistics_OnRoundEnd");
-static_assert(offsetof(PyControlLevelStatistics_OnRoundEnd, ReturnValue) == 0x000000, "Member 'PyControlLevelStatistics_OnRoundEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlLevelStatistics_OnRoundEnd;
 
 // PythonFunction PyControlLevelStatistics.PyControlLevelStatistics.OnControlOwnerChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class AActor*                                 Control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                OwnerSide;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControlLevelStatistics_OnControlOwnerChanged) == 0x000008, "Wrong alignment on PyControlLevelStatistics_OnControlOwnerChanged");
-static_assert(sizeof(PyControlLevelStatistics_OnControlOwnerChanged) == 0x000010, "Wrong size on PyControlLevelStatistics_OnControlOwnerChanged");
-static_assert(offsetof(PyControlLevelStatistics_OnControlOwnerChanged, Control) == 0x000000, "Member 'PyControlLevelStatistics_OnControlOwnerChanged::Control' has a wrong offset!");
-static_assert(offsetof(PyControlLevelStatistics_OnControlOwnerChanged, OwnerSide) == 0x000008, "Member 'PyControlLevelStatistics_OnControlOwnerChanged::OwnerSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlLevelStatistics_OnControlOwnerChanged;
 
 }
 

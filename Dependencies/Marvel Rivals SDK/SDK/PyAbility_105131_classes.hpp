@@ -45,28 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105131">();
+		STATIC_CLASS_IMPL("PyConfig_105131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105131")
 	}
 	static class UPyConfig_105131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105131>();
 	}
 };
-static_assert(alignof(UPyConfig_105131) == 0x000010, "Wrong alignment on UPyConfig_105131");
-static_assert(sizeof(UPyConfig_105131) == 0x000280, "Wrong size on UPyConfig_105131");
-static_assert(offsetof(UPyConfig_105131, LeftBindInput) == 0x0000A8, "Member 'UPyConfig_105131::LeftBindInput' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, RightBindInput) == 0x0000B8, "Member 'UPyConfig_105131::RightBindInput' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, ActiveUserSetting) == 0x0000C8, "Member 'UPyConfig_105131::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, SpeedBuffID) == 0x0000F0, "Member 'UPyConfig_105131::SpeedBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashUpScopeID) == 0x0000F4, "Member 'UPyConfig_105131::DashUpScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, AnimStartTag) == 0x0000F8, "Member 'UPyConfig_105131::AnimStartTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, EndMontageResIndex) == 0x000104, "Member 'UPyConfig_105131::EndMontageResIndex' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashCueTag) == 0x000108, "Member 'UPyConfig_105131::DashCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashEndScopeTag) == 0x000114, "Member 'UPyConfig_105131::DashEndScopeTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashEndScopeID1) == 0x000120, "Member 'UPyConfig_105131::DashEndScopeID1' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashEndScope_SocketInfo1) == 0x000130, "Member 'UPyConfig_105131::DashEndScope_SocketInfo1' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashEndScopeID2) == 0x0001D0, "Member 'UPyConfig_105131::DashEndScopeID2' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105131, DashEndScope_SocketInfo2) == 0x0001E0, "Member 'UPyConfig_105131::DashEndScope_SocketInfo2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105131;
 
 // PythonClass PyAbility_105131.PyAbilityExtraStatistics_105131
 // 0x0000 (0x0070 - 0x0070)
@@ -79,18 +69,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityExtraStatistics_105131">();
+		STATIC_CLASS_IMPL("PyAbilityExtraStatistics_105131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityExtraStatistics_105131")
 	}
 	static class UPyAbilityExtraStatistics_105131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityExtraStatistics_105131>();
 	}
 };
-static_assert(alignof(UPyAbilityExtraStatistics_105131) == 0x000008, "Wrong alignment on UPyAbilityExtraStatistics_105131");
-static_assert(sizeof(UPyAbilityExtraStatistics_105131) == 0x000070, "Wrong size on UPyAbilityExtraStatistics_105131");
+DUMPER7_ASSERTS_UPyAbilityExtraStatistics_105131;
 
 // PythonClass PyAbility_105131.PyAbility_105131
-// 0x0000 (0x2A18 - 0x2A18)
+// 0x0000 (0x2A68 - 0x2A68)
 class UPyAbility_105131 : public UAbility_105131
 {
 public:
@@ -105,32 +98,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105131">();
+		STATIC_CLASS_IMPL("PyAbility_105131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105131")
 	}
 	static class UPyAbility_105131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105131>();
 	}
 };
-static_assert(alignof(UPyAbility_105131) == 0x000008, "Wrong alignment on UPyAbility_105131");
-static_assert(sizeof(UPyAbility_105131) == 0x002A18, "Wrong size on UPyAbility_105131");
+DUMPER7_ASSERTS_UPyAbility_105131;
 
 // PythonClass PyAbility_105131.PyCue_Scope_Loop_10513102
-// 0x0000 (0x10E0 - 0x10E0)
+// 0x0000 (0x10F0 - 0x10F0)
 class APyCue_Scope_Loop_10513102 final : public AMarvelCueNotify_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10513102">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10513102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10513102")
 	}
 	static class APyCue_Scope_Loop_10513102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10513102>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10513102) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10513102");
-static_assert(sizeof(APyCue_Scope_Loop_10513102) == 0x0010E0, "Wrong size on APyCue_Scope_Loop_10513102");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10513102;
 
 // PythonClass PyAbility_105131.PyCue_Ability_Static_10513103
 // 0x0040 (0x02F0 - 0x02B0)
@@ -150,20 +149,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Static_10513103">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Static_10513103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Static_10513103")
 	}
 	static class UPyCue_Ability_Static_10513103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Static_10513103>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Static_10513103) == 0x000008, "Wrong alignment on UPyCue_Ability_Static_10513103");
-static_assert(sizeof(UPyCue_Ability_Static_10513103) == 0x0002F0, "Wrong size on UPyCue_Ability_Static_10513103");
-static_assert(offsetof(UPyCue_Ability_Static_10513103, FXAsset) == 0x0002B0, "Member 'UPyCue_Ability_Static_10513103::FXAsset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Static_10513103, TraceType) == 0x0002B8, "Member 'UPyCue_Ability_Static_10513103::TraceType' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Static_10513103, TraceLength) == 0x0002C8, "Member 'UPyCue_Ability_Static_10513103::TraceLength' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Static_10513103, FXSpawnOffset) == 0x0002D0, "Member 'UPyCue_Ability_Static_10513103::FXSpawnOffset' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Static_10513103, ActiveCameraShake) == 0x0002E8, "Member 'UPyCue_Ability_Static_10513103::ActiveCameraShake' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Static_10513103;
 
 }
 

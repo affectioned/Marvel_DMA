@@ -23,15 +23,18 @@ class UAICondition_SurroundCharacterCheck_BP_C final : public UPyAICondition_Sur
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AICondition_SurroundCharacterCheck_BP_C">();
+		BP_STATIC_CLASS_IMPL("AICondition_SurroundCharacterCheck_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICondition_SurroundCharacterCheck_BP_C")
 	}
 	static class UAICondition_SurroundCharacterCheck_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICondition_SurroundCharacterCheck_BP_C>();
 	}
 };
-static_assert(alignof(UAICondition_SurroundCharacterCheck_BP_C) == 0x000008, "Wrong alignment on UAICondition_SurroundCharacterCheck_BP_C");
-static_assert(sizeof(UAICondition_SurroundCharacterCheck_BP_C) == 0x0000F8, "Wrong size on UAICondition_SurroundCharacterCheck_BP_C");
+DUMPER7_ASSERTS_UAICondition_SurroundCharacterCheck_BP_C;
 
 }
 

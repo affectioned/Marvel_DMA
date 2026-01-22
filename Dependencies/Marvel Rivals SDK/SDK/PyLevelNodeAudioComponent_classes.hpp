@@ -33,15 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeAudioComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeAudioComponent")
 	}
 	static class UPyLevelNodeAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeAudioComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeAudioComponent) == 0x000008, "Wrong alignment on UPyLevelNodeAudioComponent");
-static_assert(sizeof(UPyLevelNodeAudioComponent) == 0x000108, "Wrong size on UPyLevelNodeAudioComponent");
+DUMPER7_ASSERTS_UPyLevelNodeAudioComponent;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityExtraStatistics_102461">();
+		STATIC_CLASS_IMPL("PyAbilityExtraStatistics_102461")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityExtraStatistics_102461")
 	}
 	static class UPyAbilityExtraStatistics_102461* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityExtraStatistics_102461>();
 	}
 };
-static_assert(alignof(UPyAbilityExtraStatistics_102461) == 0x000008, "Wrong alignment on UPyAbilityExtraStatistics_102461");
-static_assert(sizeof(UPyAbilityExtraStatistics_102461) == 0x000070, "Wrong size on UPyAbilityExtraStatistics_102461");
+DUMPER7_ASSERTS_UPyAbilityExtraStatistics_102461;
 
 }
 

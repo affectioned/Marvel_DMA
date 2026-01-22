@@ -17,49 +17,39 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_Summon_V2_HP.WBP_AbilityHUDCom_Summon_V2_HP_C
-// 0x0068 (0x0948 - 0x08E0)
+// 0x0068 (0x0950 - 0x08E8)
 class UWBP_AbilityHUDCom_Summon_V2_HP_C final : public UPyWidget_SummonedHpBar
 {
 public:
-	class UWidgetAnimation*                       Anim_Trigger;                                      // 0x08E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Groot_Approach;                               // 0x08E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Groot_Effect;                                      // 0x08F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_HP;                                            // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Hp_Break;                                      // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_HPBg;                                          // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Summon_Icon;                                   // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Summon_Icon_Effect;                            // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_HPBar_VX;                                  // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Summon_HP;                                    // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Vx_Img_Summon_Glow;                                // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Vx_lmg_Bg;                                         // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Vx_Text_Summon_HP;                                 // 0x0940(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Trigger;                                      // 0x08E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Groot_Approach;                               // 0x08F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Groot_Effect;                                      // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HP;                                            // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Hp_Break;                                      // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HPBg;                                          // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Summon_Icon;                                   // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Summon_Icon_Effect;                            // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_HPBar_VX;                                  // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Summon_HP;                                    // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Vx_Img_Summon_Glow;                                // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Vx_lmg_Bg;                                         // 0x0940(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Vx_Text_Summon_HP;                                 // 0x0948(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_Summon_V2_HP_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_Summon_V2_HP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_Summon_V2_HP_C")
 	}
 	static class UWBP_AbilityHUDCom_Summon_V2_HP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_Summon_V2_HP_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_Summon_V2_HP_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_Summon_V2_HP_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_Summon_V2_HP_C) == 0x000948, "Wrong size on UWBP_AbilityHUDCom_Summon_V2_HP_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Anim_Trigger) == 0x0008E0, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Anim_Trigger' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Anim_Groot_Approach) == 0x0008E8, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Anim_Groot_Approach' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Groot_Effect) == 0x0008F0, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Groot_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Img_HP) == 0x0008F8, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Img_HP' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Img_Hp_Break) == 0x000900, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Img_Hp_Break' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Img_HPBg) == 0x000908, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Img_HPBg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Img_Summon_Icon) == 0x000910, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Img_Summon_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Img_Summon_Icon_Effect) == 0x000918, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Img_Summon_Icon_Effect' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Overlay_HPBar_VX) == 0x000920, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Overlay_HPBar_VX' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Text_Summon_HP) == 0x000928, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Text_Summon_HP' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Vx_Img_Summon_Glow) == 0x000930, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Vx_Img_Summon_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Vx_lmg_Bg) == 0x000938, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Vx_lmg_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_Summon_V2_HP_C, Vx_Text_Summon_HP) == 0x000940, "Member 'UWBP_AbilityHUDCom_Summon_V2_HP_C::Vx_Text_Summon_HP' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_Summon_V2_HP_C;
 
 }
 

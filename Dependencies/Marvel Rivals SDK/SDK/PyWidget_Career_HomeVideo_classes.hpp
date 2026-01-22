@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyWidget_CareerCustomizePanelBase_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Career_HomeVideo.PyWidget_Career_HomeVideo
-// 0x0010 (0x0610 - 0x0600)
+// 0x0010 (0x0618 - 0x0608)
 class UPyWidget_Career_HomeVideo final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
-	TArray<struct FGuideTipsStyle>                AppreciateTips;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciateTips;                                    // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_HomeVideo">();
+		STATIC_CLASS_IMPL("PyWidget_Career_HomeVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_HomeVideo")
 	}
 	static class UPyWidget_Career_HomeVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_HomeVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_HomeVideo) == 0x000008, "Wrong alignment on UPyWidget_Career_HomeVideo");
-static_assert(sizeof(UPyWidget_Career_HomeVideo) == 0x000610, "Wrong size on UPyWidget_Career_HomeVideo");
-static_assert(offsetof(UPyWidget_Career_HomeVideo, AppreciateTips) == 0x000600, "Member 'UPyWidget_Career_HomeVideo::AppreciateTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Career_HomeVideo;
 
 }
 

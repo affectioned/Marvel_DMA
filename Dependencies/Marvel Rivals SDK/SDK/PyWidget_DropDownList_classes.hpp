@@ -19,58 +19,59 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList.PyWidget_DropDownList
-// 0x0DB8 (0x14E0 - 0x0728)
+// 0x0DB0 (0x1530 - 0x0780)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_DropDownList : public UPyWidget_Button
 {
 public:
-	TSubclassOf<class UUserWidget>                ListViewWidget;                                    // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsExpandUp;                                        // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_731[0x7];                                      // 0x0731(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FText>                           ItemTextList;                                      // 0x0738(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     ItemIconList;                                      // 0x0748(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ItemIconWidget;                                    // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HeroIconWidget;                                    // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PlatformIconWidget;                                // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DontSetDefaultItemIDOnUpdateStyle;                 // 0x0770(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_771[0x3];                                      // 0x0771(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Title_Padding;                                     // 0x0774(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_784[0xC];                                      // 0x0784(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           Title_BtnStyle;                                    // 0x0790(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector2D                              Title_BtnSize;                                     // 0x0B90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Title_TexturePadding;                              // 0x0BA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Title_TextColor;                                   // 0x0BB0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BC4[0xC];                                      // 0x0BC4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Arrow_Brush;                                       // 0x0BD0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FMargin                                Arrow_Padding;                                     // 0x0CA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Title_TipsBrush;                                   // 0x0CB0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         Item_FadeInTime;                                   // 0x0D80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Item_Padding;                                      // 0x0D84(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D94[0xC];                                      // 0x0D94(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Item_BGBrush;                                      // 0x0DA0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           Item_BtnStyle;                                     // 0x0E70(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector2D                              Item_BtnSize;                                      // 0x1270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Item_BtnPadding;                                   // 0x1280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Item_TextDefaultColor;                             // 0x1290(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Item_TextSelectedColor;                            // 0x12A4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Item_TextHoveredColor;                             // 0x12B8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12CC[0x4];                                     // 0x12CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Item_TipsBrush;                                    // 0x12D0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Item_CheckBrush;                                   // 0x13A0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FMargin                                Item_ScrollPadding;                                // 0x1470(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          IsExtended;                                        // 0x1480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1481[0x3];                                     // 0x1481(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         DefaultItemID;                                     // 0x1484(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemID;                                            // 0x1488(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MinScrollItemThreshold;                            // 0x148C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IconColorAutoChange;                               // 0x1490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          MonitorScrollBox;                                  // 0x1491(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPreShowTips;                                     // 0x1492(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1493[0x5];                                     // 0x1493(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool IsExtended)> OnExtendChanged;                                 // 0x1498(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemIDChanged;                                   // 0x14A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 HeroID)>  OnHeroIDChanged;                                   // 0x14B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& CustomeTag)> OnCustomeTagChanged;             // 0x14C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ListViewWidget;                                    // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsExpandUp;                                        // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_789[0x7];                                      // 0x0789(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FText>                           ItemTextList;                                      // 0x0790(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     ItemIconList;                                      // 0x07A0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ItemIconWidget;                                    // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroIconWidget;                                    // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PlatformIconWidget;                                // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DontSetDefaultItemIDOnUpdateStyle;                 // 0x07C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNeedFullScreenButton;                            // 0x07C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7CA[0x2];                                      // 0x07CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                Title_Padding;                                     // 0x07CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7DC[0x4];                                      // 0x07DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           Title_BtnStyle;                                    // 0x07E0(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector2D                              Title_BtnSize;                                     // 0x0BE0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Title_TexturePadding;                              // 0x0BF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Title_TextColor;                                   // 0x0C00(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C14[0xC];                                      // 0x0C14(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Arrow_Brush;                                       // 0x0C20(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMargin                                Arrow_Padding;                                     // 0x0CF0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Title_TipsBrush;                                   // 0x0D00(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         Item_FadeInTime;                                   // 0x0DD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Item_Padding;                                      // 0x0DD4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_DE4[0xC];                                      // 0x0DE4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Item_BGBrush;                                      // 0x0DF0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           Item_BtnStyle;                                     // 0x0EC0(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector2D                              Item_BtnSize;                                      // 0x12C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Item_BtnPadding;                                   // 0x12D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Item_TextDefaultColor;                             // 0x12E0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Item_TextSelectedColor;                            // 0x12F4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Item_TextHoveredColor;                             // 0x1308(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_131C[0x4];                                     // 0x131C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Item_TipsBrush;                                    // 0x1320(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Item_CheckBrush;                                   // 0x13F0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMargin                                Item_ScrollPadding;                                // 0x14C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          IsExtended;                                        // 0x14D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14D1[0x3];                                     // 0x14D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         DefaultItemID;                                     // 0x14D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemID;                                            // 0x14D8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinScrollItemThreshold;                            // 0x14DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IconColorAutoChange;                               // 0x14E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          MonitorScrollBox;                                  // 0x14E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPreShowTips;                                     // 0x14E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14E3[0x5];                                     // 0x14E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool IsExtended)> OnExtendChanged;                                 // 0x14E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemIDChanged;                                   // 0x14F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 HeroID)>  OnHeroIDChanged;                                   // 0x1508(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& CustomeTag)> OnCustomeTagChanged;             // 0x1518(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -90,7 +91,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList")
 	}
 	static class UPyWidget_DropDownList* GetDefaultObj()
 	{
@@ -98,47 +103,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_DropDownList) == 0x000010, "Wrong alignment on UPyWidget_DropDownList");
-static_assert(sizeof(UPyWidget_DropDownList) == 0x0014E0, "Wrong size on UPyWidget_DropDownList");
-static_assert(offsetof(UPyWidget_DropDownList, ListViewWidget) == 0x000728, "Member 'UPyWidget_DropDownList::ListViewWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, IsExpandUp) == 0x000730, "Member 'UPyWidget_DropDownList::IsExpandUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, ItemTextList) == 0x000738, "Member 'UPyWidget_DropDownList::ItemTextList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, ItemIconList) == 0x000748, "Member 'UPyWidget_DropDownList::ItemIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, ItemIconWidget) == 0x000758, "Member 'UPyWidget_DropDownList::ItemIconWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, HeroIconWidget) == 0x000760, "Member 'UPyWidget_DropDownList::HeroIconWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, PlatformIconWidget) == 0x000768, "Member 'UPyWidget_DropDownList::PlatformIconWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, DontSetDefaultItemIDOnUpdateStyle) == 0x000770, "Member 'UPyWidget_DropDownList::DontSetDefaultItemIDOnUpdateStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_Padding) == 0x000774, "Member 'UPyWidget_DropDownList::Title_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_BtnStyle) == 0x000790, "Member 'UPyWidget_DropDownList::Title_BtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_BtnSize) == 0x000B90, "Member 'UPyWidget_DropDownList::Title_BtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_TexturePadding) == 0x000BA0, "Member 'UPyWidget_DropDownList::Title_TexturePadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_TextColor) == 0x000BB0, "Member 'UPyWidget_DropDownList::Title_TextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Arrow_Brush) == 0x000BD0, "Member 'UPyWidget_DropDownList::Arrow_Brush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Arrow_Padding) == 0x000CA0, "Member 'UPyWidget_DropDownList::Arrow_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Title_TipsBrush) == 0x000CB0, "Member 'UPyWidget_DropDownList::Title_TipsBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_FadeInTime) == 0x000D80, "Member 'UPyWidget_DropDownList::Item_FadeInTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_Padding) == 0x000D84, "Member 'UPyWidget_DropDownList::Item_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_BGBrush) == 0x000DA0, "Member 'UPyWidget_DropDownList::Item_BGBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_BtnStyle) == 0x000E70, "Member 'UPyWidget_DropDownList::Item_BtnStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_BtnSize) == 0x001270, "Member 'UPyWidget_DropDownList::Item_BtnSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_BtnPadding) == 0x001280, "Member 'UPyWidget_DropDownList::Item_BtnPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_TextDefaultColor) == 0x001290, "Member 'UPyWidget_DropDownList::Item_TextDefaultColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_TextSelectedColor) == 0x0012A4, "Member 'UPyWidget_DropDownList::Item_TextSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_TextHoveredColor) == 0x0012B8, "Member 'UPyWidget_DropDownList::Item_TextHoveredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_TipsBrush) == 0x0012D0, "Member 'UPyWidget_DropDownList::Item_TipsBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_CheckBrush) == 0x0013A0, "Member 'UPyWidget_DropDownList::Item_CheckBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, Item_ScrollPadding) == 0x001470, "Member 'UPyWidget_DropDownList::Item_ScrollPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, IsExtended) == 0x001480, "Member 'UPyWidget_DropDownList::IsExtended' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, DefaultItemID) == 0x001484, "Member 'UPyWidget_DropDownList::DefaultItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, ItemID) == 0x001488, "Member 'UPyWidget_DropDownList::ItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, MinScrollItemThreshold) == 0x00148C, "Member 'UPyWidget_DropDownList::MinScrollItemThreshold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, IconColorAutoChange) == 0x001490, "Member 'UPyWidget_DropDownList::IconColorAutoChange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, MonitorScrollBox) == 0x001491, "Member 'UPyWidget_DropDownList::MonitorScrollBox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, IsPreShowTips) == 0x001492, "Member 'UPyWidget_DropDownList::IsPreShowTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, OnExtendChanged) == 0x001498, "Member 'UPyWidget_DropDownList::OnExtendChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, OnItemIDChanged) == 0x0014A8, "Member 'UPyWidget_DropDownList::OnItemIDChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, OnHeroIDChanged) == 0x0014B8, "Member 'UPyWidget_DropDownList::OnHeroIDChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList, OnCustomeTagChanged) == 0x0014C8, "Member 'UPyWidget_DropDownList::OnCustomeTagChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DropDownList;
 
 }
 

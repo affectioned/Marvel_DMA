@@ -39,7 +39,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyMoveToBase">();
+		STATIC_CLASS_IMPL("BTT_PyMoveToBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyMoveToBase")
 	}
 	static class UBTT_PyMoveToBase* GetDefaultObj()
 	{
@@ -47,12 +51,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UBTT_PyMoveToBase) == 0x000008, "Wrong alignment on UBTT_PyMoveToBase");
-static_assert(sizeof(UBTT_PyMoveToBase) == 0x0000D0, "Wrong size on UBTT_PyMoveToBase");
-static_assert(offsetof(UBTT_PyMoveToBase, RandomRadius) == 0x0000C0, "Member 'UBTT_PyMoveToBase::RandomRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyMoveToBase, AcceptanceRadius) == 0x0000C4, "Member 'UBTT_PyMoveToBase::AcceptanceRadius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyMoveToBase, MoveDirectly) == 0x0000C8, "Member 'UBTT_PyMoveToBase::MoveDirectly' has a wrong offset!");
-static_assert(offsetof(UBTT_PyMoveToBase, CaptainUseTeamFormation) == 0x0000C9, "Member 'UBTT_PyMoveToBase::CaptainUseTeamFormation' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyMoveToBase;
 
 }
 

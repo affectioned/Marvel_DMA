@@ -20,17 +20,17 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102241.PySummoned_102241
-// 0x0040 (0x0BF0 - 0x0BB0)
+// 0x0040 (0x0C10 - 0x0BD0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APySummoned_102241 : public ASummoned_102241
 {
 public:
-	float                                         Damage2ShieldRatio;                                // 0x0BB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoveryTime;                                      // 0x0BB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverySpeed;                                     // 0x0BB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ReflectCueTag;                                     // 0x0BBC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ShieldActiveChanged;                               // 0x0BC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ShieldSleepDelegate;                               // 0x0BD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         Damage2ShieldRatio;                                // 0x0BD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoveryTime;                                      // 0x0BD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverySpeed;                                     // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ReflectCueTag;                                     // 0x0BDC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ShieldActiveChanged;                               // 0x0BE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ShieldSleepDelegate;                               // 0x0BF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnSummonedCompBeginAgentTask();
@@ -45,7 +45,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_102241">();
+		STATIC_CLASS_IMPL("PySummoned_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_102241")
 	}
 	static class APySummoned_102241* GetDefaultObj()
 	{
@@ -53,22 +57,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummoned_102241) == 0x000010, "Wrong alignment on APySummoned_102241");
-static_assert(sizeof(APySummoned_102241) == 0x000BF0, "Wrong size on APySummoned_102241");
-static_assert(offsetof(APySummoned_102241, Damage2ShieldRatio) == 0x000BB0, "Member 'APySummoned_102241::Damage2ShieldRatio' has a wrong offset!");
-static_assert(offsetof(APySummoned_102241, RecoveryTime) == 0x000BB4, "Member 'APySummoned_102241::RecoveryTime' has a wrong offset!");
-static_assert(offsetof(APySummoned_102241, RecoverySpeed) == 0x000BB8, "Member 'APySummoned_102241::RecoverySpeed' has a wrong offset!");
-static_assert(offsetof(APySummoned_102241, ReflectCueTag) == 0x000BBC, "Member 'APySummoned_102241::ReflectCueTag' has a wrong offset!");
-static_assert(offsetof(APySummoned_102241, ShieldActiveChanged) == 0x000BC8, "Member 'APySummoned_102241::ShieldActiveChanged' has a wrong offset!");
-static_assert(offsetof(APySummoned_102241, ShieldSleepDelegate) == 0x000BD8, "Member 'APySummoned_102241::ShieldSleepDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_102241;
 
 // PythonClass PyAbility_102241.PyCue_SummonerLoop_102241
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_SummonerLoop_102241 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            FadeOutCurve;                                      // 0x1200(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            FadeOutCurve;                                      // 0x1260(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -79,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_SummonerLoop_102241">();
+		STATIC_CLASS_IMPL("PyCue_SummonerLoop_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_SummonerLoop_102241")
 	}
 	static class APyCue_SummonerLoop_102241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_SummonerLoop_102241>();
 	}
 };
-static_assert(alignof(APyCue_SummonerLoop_102241) == 0x000010, "Wrong alignment on APyCue_SummonerLoop_102241");
-static_assert(sizeof(APyCue_SummonerLoop_102241) == 0x001210, "Wrong size on APyCue_SummonerLoop_102241");
-static_assert(offsetof(APyCue_SummonerLoop_102241, FadeOutCurve) == 0x001200, "Member 'APyCue_SummonerLoop_102241::FadeOutCurve' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_SummonerLoop_102241;
 
 // PythonClass PyAbility_102241.PyConfig_102241
 // 0x0090 (0x0140 - 0x00B0)
@@ -103,27 +102,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102241">();
+		STATIC_CLASS_IMPL("PyConfig_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102241")
 	}
 	static class UPyConfig_102241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102241>();
 	}
 };
-static_assert(alignof(UPyConfig_102241) == 0x000008, "Wrong alignment on UPyConfig_102241");
-static_assert(sizeof(UPyConfig_102241) == 0x000140, "Wrong size on UPyConfig_102241");
-static_assert(offsetof(UPyConfig_102241, ActiveUserSetting) == 0x0000B0, "Member 'UPyConfig_102241::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102241, IgnoreExtraDamageProIDs) == 0x0000D8, "Member 'UPyConfig_102241::IgnoreExtraDamageProIDs' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102241, ProExtraDamageScopes) == 0x0000E8, "Member 'UPyConfig_102241::ProExtraDamageScopes' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102241, ShieldBreakCD) == 0x000138, "Member 'UPyConfig_102241::ShieldBreakCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102241;
 
 // PythonClass PyAbility_102241.PyUIController_102241
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_102241 final : public UUIC_Ability
 {
 public:
-	class UTexture2D*                             Icon_Normal;                                       // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Enhance;                                      // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Normal;                                       // 0x11F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Enhance;                                      // 0x11F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
@@ -132,25 +130,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102241">();
+		STATIC_CLASS_IMPL("PyUIController_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102241")
 	}
 	static class UPyUIController_102241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102241>();
 	}
 };
-static_assert(alignof(UPyUIController_102241) == 0x000008, "Wrong alignment on UPyUIController_102241");
-static_assert(sizeof(UPyUIController_102241) == 0x000F20, "Wrong size on UPyUIController_102241");
-static_assert(offsetof(UPyUIController_102241, Icon_Normal) == 0x000F10, "Member 'UPyUIController_102241::Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyUIController_102241, Icon_Enhance) == 0x000F18, "Member 'UPyUIController_102241::Icon_Enhance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_102241;
 
 // PythonClass PyAbility_102241.PyAbility_102241
-// 0x0020 (0x2A10 - 0x29F0)
+// 0x0020 (0x2A60 - 0x2A40)
 class UPyAbility_102241 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void(float Value)>   OnNeedAddShield;                                   // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsActive)> ScopeStatusChangeDelegate;                         // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Value)>   OnNeedAddShield;                                   // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsActive)> ScopeStatusChangeDelegate;                         // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -172,20 +171,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102241">();
+		STATIC_CLASS_IMPL("PyAbility_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102241")
 	}
 	static class UPyAbility_102241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102241>();
 	}
 };
-static_assert(alignof(UPyAbility_102241) == 0x000008, "Wrong alignment on UPyAbility_102241");
-static_assert(sizeof(UPyAbility_102241) == 0x002A10, "Wrong size on UPyAbility_102241");
-static_assert(offsetof(UPyAbility_102241, OnNeedAddShield) == 0x0029F0, "Member 'UPyAbility_102241::OnNeedAddShield' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102241, ScopeStatusChangeDelegate) == 0x002A00, "Member 'UPyAbility_102241::ScopeStatusChangeDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102241;
 
 // PythonClass PyAbility_102241.PyTraceComponent_10224101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10224101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -196,18 +196,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10224101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10224101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10224101")
 	}
 	static class UPyTraceComponent_10224101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10224101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10224101) == 0x000010, "Wrong alignment on UPyTraceComponent_10224101");
-static_assert(sizeof(UPyTraceComponent_10224101) == 0x002200, "Wrong size on UPyTraceComponent_10224101");
+DUMPER7_ASSERTS_UPyTraceComponent_10224101;
 
 // PythonClass PyAbility_102241.PyFallability_102241
-// 0x0000 (0x1540 - 0x1540)
+// 0x0000 (0x15C0 - 0x15C0)
 class UPyFallability_102241 : public UMarvelNotTreatFallAbility
 {
 public:
@@ -218,15 +221,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyFallability_102241">();
+		STATIC_CLASS_IMPL("PyFallability_102241")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyFallability_102241")
 	}
 	static class UPyFallability_102241* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyFallability_102241>();
 	}
 };
-static_assert(alignof(UPyFallability_102241) == 0x000008, "Wrong alignment on UPyFallability_102241");
-static_assert(sizeof(UPyFallability_102241) == 0x001540, "Wrong size on UPyFallability_102241");
+DUMPER7_ASSERTS_UPyFallability_102241;
 
 }
 

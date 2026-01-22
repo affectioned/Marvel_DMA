@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_Strike_ArrowCircle.WBP_Battle_Strike_ArrowCircle_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_Battle_Strike_ArrowCircle_C final : public UPyWidget_HurtCenter
 {
 public:
-	class UWidgetAnimation*                       Anim_Pointer;                                      // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_FadeOut_Kill;                                 // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Pointer;                                      // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Refresh;                                      // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeOut_Kill;                                 // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_Strike_ArrowCircle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_Strike_ArrowCircle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_Strike_ArrowCircle_C")
 	}
 	static class UWBP_Battle_Strike_ArrowCircle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_Strike_ArrowCircle_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_Strike_ArrowCircle_C) == 0x000008, "Wrong alignment on UWBP_Battle_Strike_ArrowCircle_C");
-static_assert(sizeof(UWBP_Battle_Strike_ArrowCircle_C) == 0x0005D8, "Wrong size on UWBP_Battle_Strike_ArrowCircle_C");
-static_assert(offsetof(UWBP_Battle_Strike_ArrowCircle_C, Anim_Pointer) == 0x0005C0, "Member 'UWBP_Battle_Strike_ArrowCircle_C::Anim_Pointer' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_Strike_ArrowCircle_C, Anim_Refresh) == 0x0005C8, "Member 'UWBP_Battle_Strike_ArrowCircle_C::Anim_Refresh' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_Strike_ArrowCircle_C, Anim_FadeOut_Kill) == 0x0005D0, "Member 'UWBP_Battle_Strike_ArrowCircle_C::Anim_FadeOut_Kill' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_Strike_ArrowCircle_C;
 
 }
 

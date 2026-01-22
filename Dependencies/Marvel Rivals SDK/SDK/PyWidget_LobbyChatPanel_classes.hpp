@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyChatPanel.PyWidget_LobbyChatPanel
-// 0x0000 (0x0730 - 0x0730)
+// 0x0000 (0x0740 - 0x0740)
 class UPyWidget_LobbyChatPanel final : public UPyWidget_ChatPanelV4
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyChatPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyChatPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyChatPanel")
 	}
 	static class UPyWidget_LobbyChatPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyChatPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyChatPanel) == 0x000008, "Wrong alignment on UPyWidget_LobbyChatPanel");
-static_assert(sizeof(UPyWidget_LobbyChatPanel) == 0x000730, "Wrong size on UPyWidget_LobbyChatPanel");
+DUMPER7_ASSERTS_UPyWidget_LobbyChatPanel;
 
 }
 

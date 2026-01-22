@@ -44,23 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCommonActorCapture">();
+		STATIC_CLASS_IMPL("PyCommonActorCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCommonActorCapture")
 	}
 	static class APyCommonActorCapture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCommonActorCapture>();
 	}
 };
-static_assert(alignof(APyCommonActorCapture) == 0x000010, "Wrong alignment on APyCommonActorCapture");
-static_assert(sizeof(APyCommonActorCapture) == 0x000730, "Wrong size on APyCommonActorCapture");
-static_assert(offsetof(APyCommonActorCapture, DefaultScene) == 0x0006E0, "Member 'APyCommonActorCapture::DefaultScene' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SceneCapture2D) == 0x0006E8, "Member 'APyCommonActorCapture::SceneCapture2D' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_RTSizeMultiple) == 0x0006F0, "Member 'APyCommonActorCapture::SC_RTSizeMultiple' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_RtScale) == 0x0006F8, "Member 'APyCommonActorCapture::SC_RtScale' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_NeedCalculateViewportOffset) == 0x000708, "Member 'APyCommonActorCapture::SC_NeedCalculateViewportOffset' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_MaxViewPortSize) == 0x00070C, "Member 'APyCommonActorCapture::SC_MaxViewPortSize' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_FixedSizeAndFov) == 0x000710, "Member 'APyCommonActorCapture::SC_FixedSizeAndFov' has a wrong offset!");
-static_assert(offsetof(APyCommonActorCapture, SC_RtSize) == 0x000718, "Member 'APyCommonActorCapture::SC_RtSize' has a wrong offset!");
+DUMPER7_ASSERTS_APyCommonActorCapture;
 
 // PythonClass PyCommonActorCapture.PyCommonActorCapture_Replay
 // 0x0000 (0x0730 - 0x0730)
@@ -69,15 +64,18 @@ class APyCommonActorCapture_Replay final : public APyCommonActorCapture
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCommonActorCapture_Replay">();
+		STATIC_CLASS_IMPL("PyCommonActorCapture_Replay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCommonActorCapture_Replay")
 	}
 	static class APyCommonActorCapture_Replay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCommonActorCapture_Replay>();
 	}
 };
-static_assert(alignof(APyCommonActorCapture_Replay) == 0x000010, "Wrong alignment on APyCommonActorCapture_Replay");
-static_assert(sizeof(APyCommonActorCapture_Replay) == 0x000730, "Wrong size on APyCommonActorCapture_Replay");
+DUMPER7_ASSERTS_APyCommonActorCapture_Replay;
 
 }
 

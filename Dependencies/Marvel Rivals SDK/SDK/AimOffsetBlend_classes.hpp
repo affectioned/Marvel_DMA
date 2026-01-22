@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "AimOffsetBlend_structs.hpp"
 #include "AnimationPro_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AimOffsetBlend_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Marvel_classes.hpp"
 
@@ -64,46 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AimOffsetBlend_C">();
+		BP_STATIC_CLASS_IMPL("AimOffsetBlend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AimOffsetBlend_C")
 	}
 	static class UAimOffsetBlend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAimOffsetBlend_C>();
 	}
 };
-static_assert(alignof(UAimOffsetBlend_C) == 0x000010, "Wrong alignment on UAimOffsetBlend_C");
-static_assert(sizeof(UAimOffsetBlend_C) == 0x0017F0, "Wrong size on UAimOffsetBlend_C");
-static_assert(offsetof(UAimOffsetBlend_C, UberGraphFrame) == 0x000710, "Member 'UAimOffsetBlend_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, __AnimBlueprintMutables) == 0x000718, "Member 'UAimOffsetBlend_C::__AnimBlueprintMutables' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimBlueprintExtension_PropertyAccess) == 0x000720, "Member 'UAimOffsetBlend_C::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimBlueprintExtension_Base) == 0x000728, "Member 'UAimOffsetBlend_C::AnimBlueprintExtension_Base' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_6) == 0x000730, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_6' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_BlendListByBool_2) == 0x000778, "Member 'UAimOffsetBlend_C::AnimGraphNode_BlendListByBool_2' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_SaveCachedPose_2) == 0x0007F0, "Member 'UAimOffsetBlend_C::AnimGraphNode_SaveCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_5) == 0x000890, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_5' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, MarvelAnimGraphNode_OutputCompileChooseCS_1) == 0x0008D8, "Member 'UAimOffsetBlend_C::MarvelAnimGraphNode_OutputCompileChooseCS_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, MarvelAnimGraphNode_InputCompileChooseCS_1) == 0x000910, "Member 'UAimOffsetBlend_C::MarvelAnimGraphNode_InputCompileChooseCS_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_4) == 0x000948, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_4' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, MarvelAnimGraphNode_InputCompileChooseCS) == 0x000990, "Member 'UAimOffsetBlend_C::MarvelAnimGraphNode_InputCompileChooseCS' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_3) == 0x0009C8, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_3' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, MarvelAnimGraphNode_OutputCompileChooseCS) == 0x000A10, "Member 'UAimOffsetBlend_C::MarvelAnimGraphNode_OutputCompileChooseCS' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_2) == 0x000A48, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_2' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_LayeredBoneBlend) == 0x000A90, "Member 'UAimOffsetBlend_C::AnimGraphNode_LayeredBoneBlend' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose_1) == 0x000C00, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_BlendListByBool_1) == 0x000C48, "Member 'UAimOffsetBlend_C::AnimGraphNode_BlendListByBool_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_ComponentToLocalSpace_1) == 0x000CC0, "Member 'UAimOffsetBlend_C::AnimGraphNode_ComponentToLocalSpace_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_LocalToComponentSpace_1) == 0x000CF8, "Member 'UAimOffsetBlend_C::AnimGraphNode_LocalToComponentSpace_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_ModifyBone) == 0x000D30, "Member 'UAimOffsetBlend_C::AnimGraphNode_ModifyBone' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, MarvelAnimGraphNode_RotationOffsetBlendSpaceWithBlend) == 0x000FB0, "Member 'UAimOffsetBlend_C::MarvelAnimGraphNode_RotationOffsetBlendSpaceWithBlend' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_BlendListByBool) == 0x001190, "Member 'UAimOffsetBlend_C::AnimGraphNode_BlendListByBool' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_ComponentToLocalSpace) == 0x001208, "Member 'UAimOffsetBlend_C::AnimGraphNode_ComponentToLocalSpace' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_TwoBoneIK) == 0x001240, "Member 'UAimOffsetBlend_C::AnimGraphNode_TwoBoneIK' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_LocalToComponentSpace) == 0x001500, "Member 'UAimOffsetBlend_C::AnimGraphNode_LocalToComponentSpace' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_SaveCachedPose_1) == 0x001538, "Member 'UAimOffsetBlend_C::AnimGraphNode_SaveCachedPose_1' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_SaveCachedPose) == 0x0015D8, "Member 'UAimOffsetBlend_C::AnimGraphNode_SaveCachedPose' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_SubInput) == 0x001678, "Member 'UAimOffsetBlend_C::AnimGraphNode_SubInput' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_UseCachedPose) == 0x001768, "Member 'UAimOffsetBlend_C::AnimGraphNode_UseCachedPose' has a wrong offset!");
-static_assert(offsetof(UAimOffsetBlend_C, AnimGraphNode_Root) == 0x0017B0, "Member 'UAimOffsetBlend_C::AnimGraphNode_Root' has a wrong offset!");
+DUMPER7_ASSERTS_UAimOffsetBlend_C;
 
 }
 

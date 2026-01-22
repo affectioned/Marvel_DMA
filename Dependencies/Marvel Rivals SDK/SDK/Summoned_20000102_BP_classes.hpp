@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_20000102_BP.Summoned_20000102_BP_C
-// 0x0040 (0x0C00 - 0x0BC0)
+// 0x0040 (0x0C20 - 0x0BE0)
 class ASummoned_20000102_BP_C final : public AMarvelLevelSummoned_KnockUp
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0BD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0BD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelBuffHookerBP_C*                   LevelBuffHookerBP;                                 // 0x0BE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMarvelSummonedComponent*               MarvelSummoned;                                    // 0x0BE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cube1;                                             // 0x0BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BE0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNavEffectBoxComponent*                 NavEffectBox;                                      // 0x0BE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelNavModifierComponent*            MarvelNavModifier;                                 // 0x0BF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0BF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelBuffHookerBP_C*                   LevelBuffHookerBP;                                 // 0x0C00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelSummonedComponent*               MarvelSummoned;                                    // 0x0C08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Cube1;                                             // 0x0C10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SetNavEffectBox();
@@ -37,22 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_20000102_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_20000102_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_20000102_BP_C")
 	}
 	static class ASummoned_20000102_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_20000102_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_20000102_BP_C) == 0x000010, "Wrong alignment on ASummoned_20000102_BP_C");
-static_assert(sizeof(ASummoned_20000102_BP_C) == 0x000C00, "Wrong size on ASummoned_20000102_BP_C");
-static_assert(offsetof(ASummoned_20000102_BP_C, UberGraphFrame) == 0x000BC0, "Member 'ASummoned_20000102_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, NavEffectBox) == 0x000BC8, "Member 'ASummoned_20000102_BP_C::NavEffectBox' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, MarvelNavModifier) == 0x000BD0, "Member 'ASummoned_20000102_BP_C::MarvelNavModifier' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, LevelScopeCheckComponentBP) == 0x000BD8, "Member 'ASummoned_20000102_BP_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, LevelBuffHookerBP) == 0x000BE0, "Member 'ASummoned_20000102_BP_C::LevelBuffHookerBP' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, MarvelSummoned) == 0x000BE8, "Member 'ASummoned_20000102_BP_C::MarvelSummoned' has a wrong offset!");
-static_assert(offsetof(ASummoned_20000102_BP_C, Cube1) == 0x000BF0, "Member 'ASummoned_20000102_BP_C::Cube1' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_20000102_BP_C;
 
 }
 

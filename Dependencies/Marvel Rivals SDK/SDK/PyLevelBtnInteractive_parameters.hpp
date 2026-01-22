@@ -23,9 +23,7 @@ struct PyLevelBtnInteractive_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelBtnInteractive_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelBtnInteractive_ReceiveEndPlay");
-static_assert(sizeof(PyLevelBtnInteractive_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelBtnInteractive_ReceiveEndPlay");
-static_assert(offsetof(PyLevelBtnInteractive_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelBtnInteractive_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBtnInteractive_ReceiveEndPlay;
 
 // PythonFunction PyLevelBtnInteractive.PyLevelBtnInteractive.OnPlayerEnetered
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelBtnInteractive_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelBtnInteractive_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyLevelBtnInteractive_OnPlayerEnetered");
-static_assert(sizeof(PyLevelBtnInteractive_OnPlayerEnetered) == 0x000008, "Wrong size on PyLevelBtnInteractive_OnPlayerEnetered");
-static_assert(offsetof(PyLevelBtnInteractive_OnPlayerEnetered, actor) == 0x000000, "Member 'PyLevelBtnInteractive_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBtnInteractive_OnPlayerEnetered;
 
 // PythonFunction PyLevelBtnInteractive.PyLevelBtnInteractive.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyLevelBtnInteractive_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelBtnInteractive_OnPlayerExited) == 0x000008, "Wrong alignment on PyLevelBtnInteractive_OnPlayerExited");
-static_assert(sizeof(PyLevelBtnInteractive_OnPlayerExited) == 0x000008, "Wrong size on PyLevelBtnInteractive_OnPlayerExited");
-static_assert(offsetof(PyLevelBtnInteractive_OnPlayerExited, actor) == 0x000000, "Member 'PyLevelBtnInteractive_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBtnInteractive_OnPlayerExited;
 
 // PythonFunction PyLevelBtnInteractive.PyLevelBtnInteractive.MulticastPlayAudio
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PyLevelBtnInteractive_MulticastPlayAudio final
 public:
 	int32                                         VoiceKey;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelBtnInteractive_MulticastPlayAudio) == 0x000004, "Wrong alignment on PyLevelBtnInteractive_MulticastPlayAudio");
-static_assert(sizeof(PyLevelBtnInteractive_MulticastPlayAudio) == 0x000004, "Wrong size on PyLevelBtnInteractive_MulticastPlayAudio");
-static_assert(offsetof(PyLevelBtnInteractive_MulticastPlayAudio, VoiceKey) == 0x000000, "Member 'PyLevelBtnInteractive_MulticastPlayAudio::VoiceKey' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBtnInteractive_MulticastPlayAudio;
 
 // PythonFunction PyLevelBtnInteractive.PyLevelBtnInteractive.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -67,9 +59,7 @@ struct PyLevelBtnInteractive_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelBtnInteractive_SrvSetState) == 0x000008, "Wrong alignment on PyLevelBtnInteractive_SrvSetState");
-static_assert(sizeof(PyLevelBtnInteractive_SrvSetState) == 0x000010, "Wrong size on PyLevelBtnInteractive_SrvSetState");
-static_assert(offsetof(PyLevelBtnInteractive_SrvSetState, state) == 0x000000, "Member 'PyLevelBtnInteractive_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelBtnInteractive_SrvSetState;
 
 }
 

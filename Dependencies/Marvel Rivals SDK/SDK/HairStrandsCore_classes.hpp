@@ -14,11 +14,11 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ComputeFramework_classes.hpp"
+#include "Niagara_classes.hpp"
+#include "HairStrandsCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "HairStrandsCore_structs.hpp"
 #include "MovieScene_classes.hpp"
-#include "Niagara_classes.hpp"
 
 
 namespace SDK
@@ -31,15 +31,18 @@ class UOptimusGroomDataInterface final : public UOptimusComputeDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomDataInterface">();
+		STATIC_CLASS_IMPL("OptimusGroomDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomDataInterface")
 	}
 	static class UOptimusGroomDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusGroomDataInterface) == 0x000008, "Wrong alignment on UOptimusGroomDataInterface");
-static_assert(sizeof(UOptimusGroomDataInterface) == 0x000030, "Wrong size on UOptimusGroomDataInterface");
+DUMPER7_ASSERTS_UOptimusGroomDataInterface;
 
 // Class HairStrandsCore.OptimusGroomDataProvider
 // 0x0008 (0x0038 - 0x0030)
@@ -51,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomDataProvider">();
+		STATIC_CLASS_IMPL("OptimusGroomDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomDataProvider")
 	}
 	static class UOptimusGroomDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomDataProvider>();
 	}
 };
-static_assert(alignof(UOptimusGroomDataProvider) == 0x000008, "Wrong alignment on UOptimusGroomDataProvider");
-static_assert(sizeof(UOptimusGroomDataProvider) == 0x000038, "Wrong size on UOptimusGroomDataProvider");
-static_assert(offsetof(UOptimusGroomDataProvider, Groom) == 0x000030, "Member 'UOptimusGroomDataProvider::Groom' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusGroomDataProvider;
 
 // Class HairStrandsCore.OptimusGroomExecDataInterface
 // 0x0010 (0x0040 - 0x0030)
@@ -74,16 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomExecDataInterface">();
+		STATIC_CLASS_IMPL("OptimusGroomExecDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomExecDataInterface")
 	}
 	static class UOptimusGroomExecDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomExecDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusGroomExecDataInterface) == 0x000008, "Wrong alignment on UOptimusGroomExecDataInterface");
-static_assert(sizeof(UOptimusGroomExecDataInterface) == 0x000040, "Wrong size on UOptimusGroomExecDataInterface");
-static_assert(offsetof(UOptimusGroomExecDataInterface, Domain) == 0x000038, "Member 'UOptimusGroomExecDataInterface::Domain' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusGroomExecDataInterface;
 
 // Class HairStrandsCore.OptimusGroomExecDataProvider
 // 0x0010 (0x0040 - 0x0030)
@@ -97,17 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomExecDataProvider">();
+		STATIC_CLASS_IMPL("OptimusGroomExecDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomExecDataProvider")
 	}
 	static class UOptimusGroomExecDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomExecDataProvider>();
 	}
 };
-static_assert(alignof(UOptimusGroomExecDataProvider) == 0x000008, "Wrong alignment on UOptimusGroomExecDataProvider");
-static_assert(sizeof(UOptimusGroomExecDataProvider) == 0x000040, "Wrong size on UOptimusGroomExecDataProvider");
-static_assert(offsetof(UOptimusGroomExecDataProvider, GroomComponent) == 0x000030, "Member 'UOptimusGroomExecDataProvider::GroomComponent' has a wrong offset!");
-static_assert(offsetof(UOptimusGroomExecDataProvider, Domain) == 0x000038, "Member 'UOptimusGroomExecDataProvider::Domain' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusGroomExecDataProvider;
 
 // Class HairStrandsCore.OptimusGroomGuideDataInterface
 // 0x0000 (0x0030 - 0x0030)
@@ -116,15 +124,18 @@ class UOptimusGroomGuideDataInterface final : public UOptimusComputeDataInterfac
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomGuideDataInterface">();
+		STATIC_CLASS_IMPL("OptimusGroomGuideDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomGuideDataInterface")
 	}
 	static class UOptimusGroomGuideDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomGuideDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusGroomGuideDataInterface) == 0x000008, "Wrong alignment on UOptimusGroomGuideDataInterface");
-static_assert(sizeof(UOptimusGroomGuideDataInterface) == 0x000030, "Wrong size on UOptimusGroomGuideDataInterface");
+DUMPER7_ASSERTS_UOptimusGroomGuideDataInterface;
 
 // Class HairStrandsCore.OptimusGroomGuideDataProvider
 // 0x0008 (0x0038 - 0x0030)
@@ -136,16 +147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomGuideDataProvider">();
+		STATIC_CLASS_IMPL("OptimusGroomGuideDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomGuideDataProvider")
 	}
 	static class UOptimusGroomGuideDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomGuideDataProvider>();
 	}
 };
-static_assert(alignof(UOptimusGroomGuideDataProvider) == 0x000008, "Wrong alignment on UOptimusGroomGuideDataProvider");
-static_assert(sizeof(UOptimusGroomGuideDataProvider) == 0x000038, "Wrong size on UOptimusGroomGuideDataProvider");
-static_assert(offsetof(UOptimusGroomGuideDataProvider, Groom) == 0x000030, "Member 'UOptimusGroomGuideDataProvider::Groom' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusGroomGuideDataProvider;
 
 // Class HairStrandsCore.OptimusGroomWriteDataInterface
 // 0x0000 (0x0030 - 0x0030)
@@ -154,15 +167,18 @@ class UOptimusGroomWriteDataInterface final : public UOptimusComputeDataInterfac
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomWriteDataInterface">();
+		STATIC_CLASS_IMPL("OptimusGroomWriteDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomWriteDataInterface")
 	}
 	static class UOptimusGroomWriteDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomWriteDataInterface>();
 	}
 };
-static_assert(alignof(UOptimusGroomWriteDataInterface) == 0x000008, "Wrong alignment on UOptimusGroomWriteDataInterface");
-static_assert(sizeof(UOptimusGroomWriteDataInterface) == 0x000030, "Wrong size on UOptimusGroomWriteDataInterface");
+DUMPER7_ASSERTS_UOptimusGroomWriteDataInterface;
 
 // Class HairStrandsCore.OptimusGroomWriteDataProvider
 // 0x0010 (0x0040 - 0x0030)
@@ -175,16 +191,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomWriteDataProvider">();
+		STATIC_CLASS_IMPL("OptimusGroomWriteDataProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomWriteDataProvider")
 	}
 	static class UOptimusGroomWriteDataProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomWriteDataProvider>();
 	}
 };
-static_assert(alignof(UOptimusGroomWriteDataProvider) == 0x000008, "Wrong alignment on UOptimusGroomWriteDataProvider");
-static_assert(sizeof(UOptimusGroomWriteDataProvider) == 0x000040, "Wrong size on UOptimusGroomWriteDataProvider");
-static_assert(offsetof(UOptimusGroomWriteDataProvider, GroomComponent) == 0x000030, "Member 'UOptimusGroomWriteDataProvider::GroomComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UOptimusGroomWriteDataProvider;
 
 // Class HairStrandsCore.OptimusGroomComponentSource
 // 0x0000 (0x0030 - 0x0030)
@@ -193,15 +211,18 @@ class UOptimusGroomComponentSource final : public UOptimusComponentSource
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OptimusGroomComponentSource">();
+		STATIC_CLASS_IMPL("OptimusGroomComponentSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptimusGroomComponentSource")
 	}
 	static class UOptimusGroomComponentSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptimusGroomComponentSource>();
 	}
 };
-static_assert(alignof(UOptimusGroomComponentSource) == 0x000008, "Wrong alignment on UOptimusGroomComponentSource");
-static_assert(sizeof(UOptimusGroomComponentSource) == 0x000030, "Wrong size on UOptimusGroomComponentSource");
+DUMPER7_ASSERTS_UOptimusGroomComponentSource;
 
 // Class HairStrandsCore.GroomCacheImportOptions
 // 0x0070 (0x00A0 - 0x0030)
@@ -213,16 +234,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCacheImportOptions">();
+		STATIC_CLASS_IMPL("GroomCacheImportOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCacheImportOptions")
 	}
 	static class UGroomCacheImportOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCacheImportOptions>();
 	}
 };
-static_assert(alignof(UGroomCacheImportOptions) == 0x000008, "Wrong alignment on UGroomCacheImportOptions");
-static_assert(sizeof(UGroomCacheImportOptions) == 0x0000A0, "Wrong size on UGroomCacheImportOptions");
-static_assert(offsetof(UGroomCacheImportOptions, ImportSettings) == 0x000030, "Member 'UGroomCacheImportOptions::ImportSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCacheImportOptions;
 
 // Class HairStrandsCore.GroomCacheImportData
 // 0x0070 (0x00A0 - 0x0030)
@@ -234,16 +257,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCacheImportData">();
+		STATIC_CLASS_IMPL("GroomCacheImportData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCacheImportData")
 	}
 	static class UGroomCacheImportData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCacheImportData>();
 	}
 };
-static_assert(alignof(UGroomCacheImportData) == 0x000008, "Wrong alignment on UGroomCacheImportData");
-static_assert(sizeof(UGroomCacheImportData) == 0x0000A0, "Wrong size on UGroomCacheImportData");
-static_assert(offsetof(UGroomCacheImportData, Settings) == 0x000030, "Member 'UGroomCacheImportData::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCacheImportData;
 
 // Class HairStrandsCore.GroomActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -255,16 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomActor">();
+		STATIC_CLASS_IMPL("GroomActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomActor")
 	}
 	static class AGroomActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGroomActor>();
 	}
 };
-static_assert(alignof(AGroomActor) == 0x000010, "Wrong alignment on AGroomActor");
-static_assert(sizeof(AGroomActor) == 0x0006E0, "Wrong size on AGroomActor");
-static_assert(offsetof(AGroomActor, GroomComponent) == 0x0006D8, "Member 'AGroomActor::GroomComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AGroomActor;
 
 // Class HairStrandsCore.GroomAsset
 // 0x00E8 (0x0118 - 0x0030)
@@ -324,32 +351,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomAsset">();
+		STATIC_CLASS_IMPL("GroomAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomAsset")
 	}
 	static class UGroomAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomAsset>();
 	}
 };
-static_assert(alignof(UGroomAsset) == 0x000008, "Wrong alignment on UGroomAsset");
-static_assert(sizeof(UGroomAsset) == 0x000118, "Wrong size on UGroomAsset");
-static_assert(offsetof(UGroomAsset, HairGroupsInfo) == 0x000038, "Member 'UGroomAsset::HairGroupsInfo' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsRendering) == 0x000048, "Member 'UGroomAsset::HairGroupsRendering' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsPhysics) == 0x000058, "Member 'UGroomAsset::HairGroupsPhysics' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsInterpolation) == 0x000068, "Member 'UGroomAsset::HairGroupsInterpolation' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsLOD) == 0x000078, "Member 'UGroomAsset::HairGroupsLOD' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsCards) == 0x000088, "Member 'UGroomAsset::HairGroupsCards' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsMeshes) == 0x000098, "Member 'UGroomAsset::HairGroupsMeshes' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairGroupsMaterials) == 0x0000A8, "Member 'UGroomAsset::HairGroupsMaterials' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, EnableGlobalInterpolation) == 0x0000B8, "Member 'UGroomAsset::EnableGlobalInterpolation' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, EnableSimulationCache) == 0x0000B9, "Member 'UGroomAsset::EnableSimulationCache' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, HairInterpolationType) == 0x0000BA, "Member 'UGroomAsset::HairInterpolationType' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, RiggedSkeletalMesh) == 0x0000C0, "Member 'UGroomAsset::RiggedSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, DeformedGroupSections) == 0x0000C8, "Member 'UGroomAsset::DeformedGroupSections' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, MinLOD) == 0x0000D8, "Member 'UGroomAsset::MinLOD' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, DisableBelowMinLodStripping) == 0x0000DC, "Member 'UGroomAsset::DisableBelowMinLodStripping' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, EffectiveLODBias) == 0x0000E0, "Member 'UGroomAsset::EffectiveLODBias' has a wrong offset!");
-static_assert(offsetof(UGroomAsset, AssetUserData) == 0x000100, "Member 'UGroomAsset::AssetUserData' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomAsset;
 
 // Class HairStrandsCore.HairCardGenerationSettings
 // 0x0000 (0x0030 - 0x0030)
@@ -358,15 +371,18 @@ class UHairCardGenerationSettings final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HairCardGenerationSettings">();
+		STATIC_CLASS_IMPL("HairCardGenerationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HairCardGenerationSettings")
 	}
 	static class UHairCardGenerationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHairCardGenerationSettings>();
 	}
 };
-static_assert(alignof(UHairCardGenerationSettings) == 0x000008, "Wrong alignment on UHairCardGenerationSettings");
-static_assert(sizeof(UHairCardGenerationSettings) == 0x000030, "Wrong size on UHairCardGenerationSettings");
+DUMPER7_ASSERTS_UHairCardGenerationSettings;
 
 // Class HairStrandsCore.GroomAssetImportData
 // 0x0008 (0x0038 - 0x0030)
@@ -378,16 +394,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomAssetImportData">();
+		STATIC_CLASS_IMPL("GroomAssetImportData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomAssetImportData")
 	}
 	static class UGroomAssetImportData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomAssetImportData>();
 	}
 };
-static_assert(alignof(UGroomAssetImportData) == 0x000008, "Wrong alignment on UGroomAssetImportData");
-static_assert(sizeof(UGroomAssetImportData) == 0x000038, "Wrong size on UGroomAssetImportData");
-static_assert(offsetof(UGroomAssetImportData, ImportOptions) == 0x000030, "Member 'UGroomAssetImportData::ImportOptions' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomAssetImportData;
 
 // Class HairStrandsCore.GroomBindingAsset
 // 0x0090 (0x00C0 - 0x0030)
@@ -430,24 +448,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomBindingAsset">();
+		STATIC_CLASS_IMPL("GroomBindingAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomBindingAsset")
 	}
 	static class UGroomBindingAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomBindingAsset>();
 	}
 };
-static_assert(alignof(UGroomBindingAsset) == 0x000010, "Wrong alignment on UGroomBindingAsset");
-static_assert(sizeof(UGroomBindingAsset) == 0x0000C0, "Wrong size on UGroomBindingAsset");
-static_assert(offsetof(UGroomBindingAsset, GroomBindingType) == 0x000030, "Member 'UGroomBindingAsset::GroomBindingType' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, Groom) == 0x000038, "Member 'UGroomBindingAsset::Groom' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, SourceSkeletalMesh) == 0x000040, "Member 'UGroomBindingAsset::SourceSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, TargetSkeletalMesh) == 0x000048, "Member 'UGroomBindingAsset::TargetSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, SourceGeometryCache) == 0x000050, "Member 'UGroomBindingAsset::SourceGeometryCache' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, TargetGeometryCache) == 0x000058, "Member 'UGroomBindingAsset::TargetGeometryCache' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, NumInterpolationPoints) == 0x000060, "Member 'UGroomBindingAsset::NumInterpolationPoints' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, MatchingSection) == 0x000064, "Member 'UGroomBindingAsset::MatchingSection' has a wrong offset!");
-static_assert(offsetof(UGroomBindingAsset, GroupInfos) == 0x000068, "Member 'UGroomBindingAsset::GroupInfos' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomBindingAsset;
 
 // Class HairStrandsCore.GroomBindingAssetList
 // 0x0010 (0x0040 - 0x0030)
@@ -459,16 +471,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomBindingAssetList">();
+		STATIC_CLASS_IMPL("GroomBindingAssetList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomBindingAssetList")
 	}
 	static class UGroomBindingAssetList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomBindingAssetList>();
 	}
 };
-static_assert(alignof(UGroomBindingAssetList) == 0x000008, "Wrong alignment on UGroomBindingAssetList");
-static_assert(sizeof(UGroomBindingAssetList) == 0x000040, "Wrong size on UGroomBindingAssetList");
-static_assert(offsetof(UGroomBindingAssetList, Bindings) == 0x000030, "Member 'UGroomBindingAssetList::Bindings' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomBindingAssetList;
 
 // Class HairStrandsCore.GroomBlueprintLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -483,15 +497,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomBlueprintLibrary">();
+		STATIC_CLASS_IMPL("GroomBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomBlueprintLibrary")
 	}
 	static class UGroomBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UGroomBlueprintLibrary) == 0x000008, "Wrong alignment on UGroomBlueprintLibrary");
-static_assert(sizeof(UGroomBlueprintLibrary) == 0x000030, "Wrong size on UGroomBlueprintLibrary");
+DUMPER7_ASSERTS_UGroomBlueprintLibrary;
 
 // Class HairStrandsCore.GroomCache
 // 0x0060 (0x0090 - 0x0030)
@@ -506,17 +523,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCache">();
+		STATIC_CLASS_IMPL("GroomCache")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCache")
 	}
 	static class UGroomCache* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCache>();
 	}
 };
-static_assert(alignof(UGroomCache) == 0x000008, "Wrong alignment on UGroomCache");
-static_assert(sizeof(UGroomCache) == 0x000090, "Wrong size on UGroomCache");
-static_assert(offsetof(UGroomCache, AssetUserData) == 0x000048, "Member 'UGroomCache::AssetUserData' has a wrong offset!");
-static_assert(offsetof(UGroomCache, GroomCacheInfo) == 0x000058, "Member 'UGroomCache::GroomCacheInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCache;
 
 // Class HairStrandsCore.GroomComponent
 // 0x0250 (0x0AD0 - 0x0880)
@@ -568,38 +586,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomComponent">();
+		STATIC_CLASS_IMPL("GroomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomComponent")
 	}
 	static class UGroomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomComponent>();
 	}
 };
-static_assert(alignof(UGroomComponent) == 0x000010, "Wrong alignment on UGroomComponent");
-static_assert(sizeof(UGroomComponent) == 0x000AD0, "Wrong size on UGroomComponent");
-static_assert(offsetof(UGroomComponent, GroomAsset) == 0x000888, "Member 'UGroomComponent::GroomAsset' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, GroomCache) == 0x000890, "Member 'UGroomComponent::GroomCache' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, NiagaraComponents) == 0x000898, "Member 'UGroomComponent::NiagaraComponents' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, SourceSkeletalMesh) == 0x0008A8, "Member 'UGroomComponent::SourceSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, BindingAsset) == 0x0008B0, "Member 'UGroomComponent::BindingAsset' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, PhysicsAsset) == 0x0008B8, "Member 'UGroomComponent::PhysicsAsset' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, SimulationSettings) == 0x0008D0, "Member 'UGroomComponent::SimulationSettings' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, MeshDeformer) == 0x000960, "Member 'UGroomComponent::MeshDeformer' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, MeshDeformerInstance) == 0x000968, "Member 'UGroomComponent::MeshDeformerInstance' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, MeshDeformerInstanceSettings) == 0x000970, "Member 'UGroomComponent::MeshDeformerInstanceSettings' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, Strands_DebugMaterial) == 0x000978, "Member 'UGroomComponent::Strands_DebugMaterial' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, Strands_DefaultMaterial) == 0x000980, "Member 'UGroomComponent::Strands_DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, Cards_DefaultMaterial) == 0x000988, "Member 'UGroomComponent::Cards_DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, Meshes_DefaultMaterial) == 0x000990, "Member 'UGroomComponent::Meshes_DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, AngularSpringsSystem) == 0x000998, "Member 'UGroomComponent::AngularSpringsSystem' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, CosseratRodsSystem) == 0x0009A0, "Member 'UGroomComponent::CosseratRodsSystem' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, AttachmentName) == 0x0009A8, "Member 'UGroomComponent::AttachmentName' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, GroomGroupsDesc) == 0x000A40, "Member 'UGroomComponent::GroomGroupsDesc' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, bUseCards) == 0x000A50, "Member 'UGroomComponent::bUseCards' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, bRunning) == 0x000A51, "Member 'UGroomComponent::bRunning' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, bLooping) == 0x000A52, "Member 'UGroomComponent::bLooping' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, bManualTick) == 0x000A53, "Member 'UGroomComponent::bManualTick' has a wrong offset!");
-static_assert(offsetof(UGroomComponent, ElapsedTime) == 0x000A54, "Member 'UGroomComponent::ElapsedTime' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomComponent;
 
 // Class HairStrandsCore.GroomCreateBindingOptions
 // 0x0038 (0x0068 - 0x0030)
@@ -619,23 +617,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCreateBindingOptions">();
+		STATIC_CLASS_IMPL("GroomCreateBindingOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCreateBindingOptions")
 	}
 	static class UGroomCreateBindingOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCreateBindingOptions>();
 	}
 };
-static_assert(alignof(UGroomCreateBindingOptions) == 0x000008, "Wrong alignment on UGroomCreateBindingOptions");
-static_assert(sizeof(UGroomCreateBindingOptions) == 0x000068, "Wrong size on UGroomCreateBindingOptions");
-static_assert(offsetof(UGroomCreateBindingOptions, GroomAsset) == 0x000030, "Member 'UGroomCreateBindingOptions::GroomAsset' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, GroomBindingType) == 0x000038, "Member 'UGroomCreateBindingOptions::GroomBindingType' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, SourceSkeletalMesh) == 0x000040, "Member 'UGroomCreateBindingOptions::SourceSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, TargetSkeletalMesh) == 0x000048, "Member 'UGroomCreateBindingOptions::TargetSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, SourceGeometryCache) == 0x000050, "Member 'UGroomCreateBindingOptions::SourceGeometryCache' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, TargetGeometryCache) == 0x000058, "Member 'UGroomCreateBindingOptions::TargetGeometryCache' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, NumInterpolationPoints) == 0x000060, "Member 'UGroomCreateBindingOptions::NumInterpolationPoints' has a wrong offset!");
-static_assert(offsetof(UGroomCreateBindingOptions, MatchingSection) == 0x000064, "Member 'UGroomCreateBindingOptions::MatchingSection' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCreateBindingOptions;
 
 // Class HairStrandsCore.GroomCreateFollicleMaskOptions
 // 0x0018 (0x0048 - 0x0030)
@@ -649,18 +642,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCreateFollicleMaskOptions">();
+		STATIC_CLASS_IMPL("GroomCreateFollicleMaskOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCreateFollicleMaskOptions")
 	}
 	static class UGroomCreateFollicleMaskOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCreateFollicleMaskOptions>();
 	}
 };
-static_assert(alignof(UGroomCreateFollicleMaskOptions) == 0x000008, "Wrong alignment on UGroomCreateFollicleMaskOptions");
-static_assert(sizeof(UGroomCreateFollicleMaskOptions) == 0x000048, "Wrong size on UGroomCreateFollicleMaskOptions");
-static_assert(offsetof(UGroomCreateFollicleMaskOptions, Resolution) == 0x000030, "Member 'UGroomCreateFollicleMaskOptions::Resolution' has a wrong offset!");
-static_assert(offsetof(UGroomCreateFollicleMaskOptions, RootRadius) == 0x000034, "Member 'UGroomCreateFollicleMaskOptions::RootRadius' has a wrong offset!");
-static_assert(offsetof(UGroomCreateFollicleMaskOptions, Grooms) == 0x000038, "Member 'UGroomCreateFollicleMaskOptions::Grooms' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCreateFollicleMaskOptions;
 
 // Class HairStrandsCore.GroomCreateStrandsTexturesOptions
 // 0x0040 (0x0070 - 0x0030)
@@ -684,25 +677,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomCreateStrandsTexturesOptions">();
+		STATIC_CLASS_IMPL("GroomCreateStrandsTexturesOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomCreateStrandsTexturesOptions")
 	}
 	static class UGroomCreateStrandsTexturesOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomCreateStrandsTexturesOptions>();
 	}
 };
-static_assert(alignof(UGroomCreateStrandsTexturesOptions) == 0x000008, "Wrong alignment on UGroomCreateStrandsTexturesOptions");
-static_assert(sizeof(UGroomCreateStrandsTexturesOptions) == 0x000070, "Wrong size on UGroomCreateStrandsTexturesOptions");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, Resolution) == 0x000030, "Member 'UGroomCreateStrandsTexturesOptions::Resolution' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, TraceType) == 0x000034, "Member 'UGroomCreateStrandsTexturesOptions::TraceType' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, TraceDistance) == 0x000038, "Member 'UGroomCreateStrandsTexturesOptions::TraceDistance' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, MeshType) == 0x00003C, "Member 'UGroomCreateStrandsTexturesOptions::MeshType' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, StaticMesh) == 0x000040, "Member 'UGroomCreateStrandsTexturesOptions::StaticMesh' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, SkeletalMesh) == 0x000048, "Member 'UGroomCreateStrandsTexturesOptions::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, LODIndex) == 0x000050, "Member 'UGroomCreateStrandsTexturesOptions::LODIndex' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, SectionIndex) == 0x000054, "Member 'UGroomCreateStrandsTexturesOptions::SectionIndex' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, UVChannelIndex) == 0x000058, "Member 'UGroomCreateStrandsTexturesOptions::UVChannelIndex' has a wrong offset!");
-static_assert(offsetof(UGroomCreateStrandsTexturesOptions, GroupIndex) == 0x000060, "Member 'UGroomCreateStrandsTexturesOptions::GroupIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomCreateStrandsTexturesOptions;
 
 // Class HairStrandsCore.GroomImportOptions
 // 0x0040 (0x0070 - 0x0030)
@@ -715,17 +701,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomImportOptions">();
+		STATIC_CLASS_IMPL("GroomImportOptions")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomImportOptions")
 	}
 	static class UGroomImportOptions* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomImportOptions>();
 	}
 };
-static_assert(alignof(UGroomImportOptions) == 0x000008, "Wrong alignment on UGroomImportOptions");
-static_assert(sizeof(UGroomImportOptions) == 0x000070, "Wrong size on UGroomImportOptions");
-static_assert(offsetof(UGroomImportOptions, ConversionSettings) == 0x000030, "Member 'UGroomImportOptions::ConversionSettings' has a wrong offset!");
-static_assert(offsetof(UGroomImportOptions, InterpolationSettings) == 0x000060, "Member 'UGroomImportOptions::InterpolationSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomImportOptions;
 
 // Class HairStrandsCore.GroomHairGroupsPreview
 // 0x0010 (0x0040 - 0x0030)
@@ -737,16 +724,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomHairGroupsPreview">();
+		STATIC_CLASS_IMPL("GroomHairGroupsPreview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomHairGroupsPreview")
 	}
 	static class UGroomHairGroupsPreview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomHairGroupsPreview>();
 	}
 };
-static_assert(alignof(UGroomHairGroupsPreview) == 0x000008, "Wrong alignment on UGroomHairGroupsPreview");
-static_assert(sizeof(UGroomHairGroupsPreview) == 0x000040, "Wrong size on UGroomHairGroupsPreview");
-static_assert(offsetof(UGroomHairGroupsPreview, Groups) == 0x000030, "Member 'UGroomHairGroupsPreview::Groups' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomHairGroupsPreview;
 
 // Class HairStrandsCore.GroomPluginSettings
 // 0x0008 (0x0038 - 0x0030)
@@ -759,16 +748,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GroomPluginSettings">();
+		STATIC_CLASS_IMPL("GroomPluginSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomPluginSettings")
 	}
 	static class UGroomPluginSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGroomPluginSettings>();
 	}
 };
-static_assert(alignof(UGroomPluginSettings) == 0x000008, "Wrong alignment on UGroomPluginSettings");
-static_assert(sizeof(UGroomPluginSettings) == 0x000038, "Wrong size on UGroomPluginSettings");
-static_assert(offsetof(UGroomPluginSettings, GroomCacheLookAheadBuffer) == 0x000030, "Member 'UGroomPluginSettings::GroomCacheLookAheadBuffer' has a wrong offset!");
+DUMPER7_ASSERTS_UGroomPluginSettings;
 
 // Class HairStrandsCore.MovieSceneGroomCacheSection
 // 0x0020 (0x0118 - 0x00F8)
@@ -780,16 +771,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneGroomCacheSection">();
+		STATIC_CLASS_IMPL("MovieSceneGroomCacheSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneGroomCacheSection")
 	}
 	static class UMovieSceneGroomCacheSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneGroomCacheSection>();
 	}
 };
-static_assert(alignof(UMovieSceneGroomCacheSection) == 0x000008, "Wrong alignment on UMovieSceneGroomCacheSection");
-static_assert(sizeof(UMovieSceneGroomCacheSection) == 0x000118, "Wrong size on UMovieSceneGroomCacheSection");
-static_assert(offsetof(UMovieSceneGroomCacheSection, Params_0) == 0x0000F8, "Member 'UMovieSceneGroomCacheSection::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneGroomCacheSection;
 
 // Class HairStrandsCore.MovieSceneGroomCacheTrack
 // 0x0018 (0x00B8 - 0x00A0)
@@ -802,16 +795,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneGroomCacheTrack">();
+		STATIC_CLASS_IMPL("MovieSceneGroomCacheTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneGroomCacheTrack")
 	}
 	static class UMovieSceneGroomCacheTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneGroomCacheTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneGroomCacheTrack) == 0x000008, "Wrong alignment on UMovieSceneGroomCacheTrack");
-static_assert(sizeof(UMovieSceneGroomCacheTrack) == 0x0000B8, "Wrong size on UMovieSceneGroomCacheTrack");
-static_assert(offsetof(UMovieSceneGroomCacheTrack, AnimationSections) == 0x0000A8, "Member 'UMovieSceneGroomCacheTrack::AnimationSections' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneGroomCacheTrack;
 
 // Class HairStrandsCore.NiagaraDataInterfaceHairStrands
 // 0x0020 (0x0060 - 0x0040)
@@ -826,17 +821,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceHairStrands">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceHairStrands")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceHairStrands")
 	}
 	static class UNiagaraDataInterfaceHairStrands* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceHairStrands>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceHairStrands) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceHairStrands");
-static_assert(sizeof(UNiagaraDataInterfaceHairStrands) == 0x000060, "Wrong size on UNiagaraDataInterfaceHairStrands");
-static_assert(offsetof(UNiagaraDataInterfaceHairStrands, DefaultSource) == 0x000048, "Member 'UNiagaraDataInterfaceHairStrands::DefaultSource' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceHairStrands, SourceActor) == 0x000050, "Member 'UNiagaraDataInterfaceHairStrands::SourceActor' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceHairStrands;
 
 // Class HairStrandsCore.NiagaraDataInterfaceVelocityGrid
 // 0x0010 (0x0050 - 0x0040)
@@ -849,16 +845,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceVelocityGrid">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceVelocityGrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceVelocityGrid")
 	}
 	static class UNiagaraDataInterfaceVelocityGrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceVelocityGrid>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceVelocityGrid) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceVelocityGrid");
-static_assert(sizeof(UNiagaraDataInterfaceVelocityGrid) == 0x000050, "Wrong size on UNiagaraDataInterfaceVelocityGrid");
-static_assert(offsetof(UNiagaraDataInterfaceVelocityGrid, GridSize) == 0x000040, "Member 'UNiagaraDataInterfaceVelocityGrid::GridSize' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceVelocityGrid;
 
 // Class HairStrandsCore.NiagaraDataInterfacePressureGrid
 // 0x0000 (0x0050 - 0x0050)
@@ -867,15 +865,18 @@ class UNiagaraDataInterfacePressureGrid final : public UNiagaraDataInterfaceVelo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfacePressureGrid">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfacePressureGrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfacePressureGrid")
 	}
 	static class UNiagaraDataInterfacePressureGrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfacePressureGrid>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfacePressureGrid) == 0x000008, "Wrong alignment on UNiagaraDataInterfacePressureGrid");
-static_assert(sizeof(UNiagaraDataInterfacePressureGrid) == 0x000050, "Wrong size on UNiagaraDataInterfacePressureGrid");
+DUMPER7_ASSERTS_UNiagaraDataInterfacePressureGrid;
 
 }
 

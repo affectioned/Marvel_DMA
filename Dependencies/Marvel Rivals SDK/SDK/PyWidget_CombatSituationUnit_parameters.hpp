@@ -23,9 +23,7 @@ struct PyWidget_CombatSituationPanel_OnCharRegister final
 public:
 	class AActor*                                 Char;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CombatSituationPanel_OnCharRegister) == 0x000008, "Wrong alignment on PyWidget_CombatSituationPanel_OnCharRegister");
-static_assert(sizeof(PyWidget_CombatSituationPanel_OnCharRegister) == 0x000008, "Wrong size on PyWidget_CombatSituationPanel_OnCharRegister");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnCharRegister, Char) == 0x000000, "Member 'PyWidget_CombatSituationPanel_OnCharRegister::Char' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CombatSituationPanel_OnCharRegister;
 
 // PythonFunction PyWidget_CombatSituationUnit.PyWidget_CombatSituationPanel.OnReplayTimelineClickClearChildren
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren final
 public:
 	float                                         InValue;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren) == 0x000004, "Wrong alignment on PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren");
-static_assert(sizeof(PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren) == 0x000004, "Wrong size on PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren, InValue) == 0x000000, "Member 'PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CombatSituationPanel_OnReplayTimelineClickClearChildren;
 
 // PythonFunction PyWidget_CombatSituationUnit.PyWidget_CombatSituationPanel.OnKillEvent
 // 0x0030 (0x0030 - 0x0000)
@@ -48,23 +44,16 @@ public:
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyWidget_CombatSituationPanel_OnKillEvent) == 0x000008, "Wrong alignment on PyWidget_CombatSituationPanel_OnKillEvent");
-static_assert(sizeof(PyWidget_CombatSituationPanel_OnKillEvent) == 0x000030, "Wrong size on PyWidget_CombatSituationPanel_OnKillEvent");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnKillEvent, Source) == 0x000000, "Member 'PyWidget_CombatSituationPanel_OnKillEvent::Source' has a wrong offset!");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnKillEvent, Target) == 0x000008, "Member 'PyWidget_CombatSituationPanel_OnKillEvent::Target' has a wrong offset!");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnKillEvent, ModifierHandle) == 0x000010, "Member 'PyWidget_CombatSituationPanel_OnKillEvent::ModifierHandle' has a wrong offset!");
-static_assert(offsetof(PyWidget_CombatSituationPanel_OnKillEvent, ExtraData) == 0x000028, "Member 'PyWidget_CombatSituationPanel_OnKillEvent::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CombatSituationPanel_OnKillEvent;
 
 // PythonFunction PyWidget_CombatSituationUnit.PyWidget_CombatSituationPanel.ShowUIRebornInfo
-// 0x0810 (0x0810 - 0x0000)
+// 0x0830 (0x0830 - 0x0000)
 struct PyWidget_CombatSituationPanel_ShowUIRebornInfo final
 {
 public:
-	struct FCharacterRebornParam                  RebornParam;                                       // 0x0000(0x0810)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCharacterRebornParam                  RebornParam;                                       // 0x0000(0x0830)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_CombatSituationPanel_ShowUIRebornInfo) == 0x000010, "Wrong alignment on PyWidget_CombatSituationPanel_ShowUIRebornInfo");
-static_assert(sizeof(PyWidget_CombatSituationPanel_ShowUIRebornInfo) == 0x000810, "Wrong size on PyWidget_CombatSituationPanel_ShowUIRebornInfo");
-static_assert(offsetof(PyWidget_CombatSituationPanel_ShowUIRebornInfo, RebornParam) == 0x000000, "Member 'PyWidget_CombatSituationPanel_ShowUIRebornInfo::RebornParam' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CombatSituationPanel_ShowUIRebornInfo;
 
 // PythonFunction PyWidget_CombatSituationUnit.PyWidget_CombatSituationUnit_V3.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -73,9 +62,7 @@ struct PyWidget_CombatSituationUnit_V3_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CombatSituationUnit_V3_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CombatSituationUnit_V3_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CombatSituationUnit_V3_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CombatSituationUnit_V3_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CombatSituationUnit_V3_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CombatSituationUnit_V3_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CombatSituationUnit_V3_OnAnimationFinished;
 
 }
 

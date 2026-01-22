@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1034_CharacterBP.1034_CharacterBP_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class AOne034_CharacterBP_C final : public APyIronManCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1034_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1034_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1034_CharacterBP_C")
 	}
 	static class AOne034_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne034_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne034_CharacterBP_C) == 0x000010, "Wrong alignment on AOne034_CharacterBP_C");
-static_assert(sizeof(AOne034_CharacterBP_C) == 0x0021E0, "Wrong size on AOne034_CharacterBP_C");
+DUMPER7_ASSERTS_AOne034_CharacterBP_C;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHighlightSettings">();
+		STATIC_CLASS_IMPL("PyHighlightSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHighlightSettings")
 	}
 	static class UPyHighlightSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHighlightSettings>();
 	}
 };
-static_assert(alignof(UPyHighlightSettings) == 0x000008, "Wrong alignment on UPyHighlightSettings");
-static_assert(sizeof(UPyHighlightSettings) == 0x000038, "Wrong size on UPyHighlightSettings");
-static_assert(offsetof(UPyHighlightSettings, ClickCount) == 0x000030, "Member 'UPyHighlightSettings::ClickCount' has a wrong offset!");
-static_assert(offsetof(UPyHighlightSettings, NeedPreload) == 0x000034, "Member 'UPyHighlightSettings::NeedPreload' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHighlightSettings;
 
 }
 

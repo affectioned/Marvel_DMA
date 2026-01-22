@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Hero_1051_classes.hpp"
 
 
@@ -20,64 +20,52 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105171.PyConfig_105171
-// 0x19D0 (0x3510 - 0x1B40)
+// 0x1D20 (0x3C60 - 0x1F40)
 class UPyConfig_105171 final : public UConfig_105171
 {
 public:
-	int32                                         MarkRideBuffID;                                    // 0x1B40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           MarkRideTag;                                       // 0x1B44(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRideSameBuffInfo                      SameBuffInfo;                                      // 0x1B50(0x00F0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  TargetDetachTagContainer;                          // 0x1C40(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  SelfDetachTagContainer;                            // 0x1CA8(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ThrowAbilityTag;                                   // 0x1D10(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D1C[0x4];                                     // 0x1D1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  RemoveEffectWithTagsWhileAttach;                   // 0x1D20(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  BlockAbilityTagsWhenRiding;                        // 0x1D88(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           MaskPawnPenetrableTag;                             // 0x1DF0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1DFC[0x4];                                     // 0x1DFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AttachSocketName;                                  // 0x1E00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                CapsuleLocationOffset;                             // 0x1E10(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DetachCameraBlendTime;                             // 0x1E28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E2C[0x4];                                     // 0x1E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  SkipCameraBlendTags;                               // 0x1E30(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E98[0x8];                                     // 0x1E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x1EA0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ConfirmedTag;                                      // 0x3500(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MarkRideBuffID;                                    // 0x1F40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           MarkRideTag;                                       // 0x1F44(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRideSameBuffInfo                      SameBuffInfo;                                      // 0x1F50(0x00F0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  TargetDetachTagContainer;                          // 0x2040(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  SelfDetachTagContainer;                            // 0x20A8(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ThrowAbilityTag;                                   // 0x2110(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211C[0x4];                                     // 0x211C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  RemoveEffectWithTagsWhileAttach;                   // 0x2120(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  BlockAbilityTagsWhenRiding;                        // 0x2188(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           MaskPawnPenetrableTag;                             // 0x21F0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21FC[0x4];                                     // 0x21FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AttachSocketName;                                  // 0x2200(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                CapsuleLocationOffset;                             // 0x2210(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DetachCameraBlendTime;                             // 0x2228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_222C[0x4];                                     // 0x222C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  SkipCameraBlendTags;                               // 0x2230(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2298[0x8];                                     // 0x2298(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x22A0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ConfirmedTag;                                      // 0x3C50(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105171">();
+		STATIC_CLASS_IMPL("PyConfig_105171")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105171")
 	}
 	static class UPyConfig_105171* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105171>();
 	}
 };
-static_assert(alignof(UPyConfig_105171) == 0x000010, "Wrong alignment on UPyConfig_105171");
-static_assert(sizeof(UPyConfig_105171) == 0x003510, "Wrong size on UPyConfig_105171");
-static_assert(offsetof(UPyConfig_105171, MarkRideBuffID) == 0x001B40, "Member 'UPyConfig_105171::MarkRideBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, MarkRideTag) == 0x001B44, "Member 'UPyConfig_105171::MarkRideTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, SameBuffInfo) == 0x001B50, "Member 'UPyConfig_105171::SameBuffInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, TargetDetachTagContainer) == 0x001C40, "Member 'UPyConfig_105171::TargetDetachTagContainer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, SelfDetachTagContainer) == 0x001CA8, "Member 'UPyConfig_105171::SelfDetachTagContainer' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, ThrowAbilityTag) == 0x001D10, "Member 'UPyConfig_105171::ThrowAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, RemoveEffectWithTagsWhileAttach) == 0x001D20, "Member 'UPyConfig_105171::RemoveEffectWithTagsWhileAttach' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, BlockAbilityTagsWhenRiding) == 0x001D88, "Member 'UPyConfig_105171::BlockAbilityTagsWhenRiding' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, MaskPawnPenetrableTag) == 0x001DF0, "Member 'UPyConfig_105171::MaskPawnPenetrableTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, AttachSocketName) == 0x001E00, "Member 'UPyConfig_105171::AttachSocketName' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, CapsuleLocationOffset) == 0x001E10, "Member 'UPyConfig_105171::CapsuleLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, DetachCameraBlendTime) == 0x001E28, "Member 'UPyConfig_105171::DetachCameraBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, SkipCameraBlendTags) == 0x001E30, "Member 'UPyConfig_105171::SkipCameraBlendTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, TraceContext) == 0x001EA0, "Member 'UPyConfig_105171::TraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105171, ConfirmedTag) == 0x003500, "Member 'UPyConfig_105171::ConfirmedTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105171;
 
 // PythonClass PyAbility_105171.PyAbility_105171
-// 0x0008 (0x3278 - 0x3270)
+// 0x0008 (0x3310 - 0x3308)
 class UPyAbility_105171 : public UAbility_105171
 {
 public:
-	class AMarvelBaseCharacter*                   AttachParent;                                      // 0x3270(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelBaseCharacter*                   AttachParent;                                      // 0x3308(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -98,16 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105171">();
+		STATIC_CLASS_IMPL("PyAbility_105171")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105171")
 	}
 	static class UPyAbility_105171* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105171>();
 	}
 };
-static_assert(alignof(UPyAbility_105171) == 0x000008, "Wrong alignment on UPyAbility_105171");
-static_assert(sizeof(UPyAbility_105171) == 0x003278, "Wrong size on UPyAbility_105171");
-static_assert(offsetof(UPyAbility_105171, AttachParent) == 0x003270, "Member 'UPyAbility_105171::AttachParent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105171;
 
 }
 

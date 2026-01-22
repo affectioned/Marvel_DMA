@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104261_BP.Ability_104261_BP_C
-// 0x0010 (0x41B0 - 0x41A0)
+// 0x0010 (0x4550 - 0x4540)
 class UAbility_104261_BP_C final : public UPyAbility_104261
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x41A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x4540(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_Ability_104261_BP(int32 EntryPoint);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_104261_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_104261_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104261_BP_C")
 	}
 	static class UAbility_104261_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_104261_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_104261_BP_C) == 0x000010, "Wrong alignment on UAbility_104261_BP_C");
-static_assert(sizeof(UAbility_104261_BP_C) == 0x0041B0, "Wrong size on UAbility_104261_BP_C");
-static_assert(offsetof(UAbility_104261_BP_C, UberGraphFrame) == 0x0041A0, "Member 'UAbility_104261_BP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_104261_BP_C;
 
 }
 

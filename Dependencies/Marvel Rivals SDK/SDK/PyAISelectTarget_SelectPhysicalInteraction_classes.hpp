@@ -23,15 +23,18 @@ class UPyAISelectTarget_SelectPhysicalInteraction final : public UPyAISelectTarg
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_SelectPhysicalInteraction">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_SelectPhysicalInteraction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_SelectPhysicalInteraction")
 	}
 	static class UPyAISelectTarget_SelectPhysicalInteraction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_SelectPhysicalInteraction>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_SelectPhysicalInteraction) == 0x000008, "Wrong alignment on UPyAISelectTarget_SelectPhysicalInteraction");
-static_assert(sizeof(UPyAISelectTarget_SelectPhysicalInteraction) == 0x000070, "Wrong size on UPyAISelectTarget_SelectPhysicalInteraction");
+DUMPER7_ASSERTS_UPyAISelectTarget_SelectPhysicalInteraction;
 
 }
 

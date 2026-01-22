@@ -28,16 +28,7 @@ public:
 	float                                         ChangeTime;                                        // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UpdateInterval;                                    // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelMaterialNodes_MaterialComponentInitialize) == 0x000008, "Wrong alignment on PyLevelMaterialNodes_MaterialComponentInitialize");
-static_assert(sizeof(PyLevelMaterialNodes_MaterialComponentInitialize) == 0x000040, "Wrong size on PyLevelMaterialNodes_MaterialComponentInitialize");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, ProcessController) == 0x000000, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, Material) == 0x000008, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::Material' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, MeshActorName) == 0x000010, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::MeshActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, ParameterName) == 0x000020, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::ParameterName' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, StartValue) == 0x000030, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::StartValue' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, EndValue) == 0x000034, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::EndValue' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, ChangeTime) == 0x000038, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::ChangeTime' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentInitialize, UpdateInterval) == 0x00003C, "Member 'PyLevelMaterialNodes_MaterialComponentInitialize::UpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelMaterialNodes_MaterialComponentInitialize;
 
 // PythonFunction PyLevelMaterialNodes.PyLevelMaterialNodes.MaterialComponentStart
 // 0x0018 (0x0018 - 0x0000)
@@ -47,10 +38,7 @@ public:
 	class AActor*                                 ProcessController;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 MeshActorName;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelMaterialNodes_MaterialComponentStart) == 0x000008, "Wrong alignment on PyLevelMaterialNodes_MaterialComponentStart");
-static_assert(sizeof(PyLevelMaterialNodes_MaterialComponentStart) == 0x000018, "Wrong size on PyLevelMaterialNodes_MaterialComponentStart");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentStart, ProcessController) == 0x000000, "Member 'PyLevelMaterialNodes_MaterialComponentStart::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MaterialComponentStart, MeshActorName) == 0x000008, "Member 'PyLevelMaterialNodes_MaterialComponentStart::MeshActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelMaterialNodes_MaterialComponentStart;
 
 // PythonFunction PyLevelMaterialNodes.PyLevelMaterialNodes.MultiMaterialComponentInitialize
 // 0x0088 (0x0088 - 0x0000)
@@ -66,16 +54,7 @@ public:
 	float                                         ChangeTime;                                        // 0x0080(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UpdateInterval;                                    // 0x0084(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelMaterialNodes_MultiMaterialComponentInitialize) == 0x000008, "Wrong alignment on PyLevelMaterialNodes_MultiMaterialComponentInitialize");
-static_assert(sizeof(PyLevelMaterialNodes_MultiMaterialComponentInitialize) == 0x000088, "Wrong size on PyLevelMaterialNodes_MultiMaterialComponentInitialize");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, ProcessController) == 0x000000, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::ProcessController' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, Materials) == 0x000008, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::Materials' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, MeshActorName) == 0x000058, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::MeshActorName' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, ParameterName) == 0x000068, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::ParameterName' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, StartValue) == 0x000078, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::StartValue' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, EndValue) == 0x00007C, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::EndValue' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, ChangeTime) == 0x000080, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::ChangeTime' has a wrong offset!");
-static_assert(offsetof(PyLevelMaterialNodes_MultiMaterialComponentInitialize, UpdateInterval) == 0x000084, "Member 'PyLevelMaterialNodes_MultiMaterialComponentInitialize::UpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelMaterialNodes_MultiMaterialComponentInitialize;
 
 }
 

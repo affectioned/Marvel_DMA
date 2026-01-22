@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "PyLevelMontageSyncComponent_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -45,24 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMontageSyncComponent">();
+		STATIC_CLASS_IMPL("PyLevelMontageSyncComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMontageSyncComponent")
 	}
 	static class UPyLevelMontageSyncComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMontageSyncComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMontageSyncComponent) == 0x000008, "Wrong alignment on UPyLevelMontageSyncComponent");
-static_assert(sizeof(UPyLevelMontageSyncComponent) == 0x000160, "Wrong size on UPyLevelMontageSyncComponent");
-static_assert(offsetof(UPyLevelMontageSyncComponent, MontageInfos) == 0x000108, "Member 'UPyLevelMontageSyncComponent::MontageInfos' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, DefaultStartAnimLoop) == 0x000118, "Member 'UPyLevelMontageSyncComponent::DefaultStartAnimLoop' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, DefaultAnimState) == 0x00011C, "Member 'UPyLevelMontageSyncComponent::DefaultAnimState' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, SkelMeshCompName) == 0x000120, "Member 'UPyLevelMontageSyncComponent::SkelMeshCompName' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, AnimInfo) == 0x000130, "Member 'UPyLevelMontageSyncComponent::AnimInfo' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, IntervalSecondsForUpdateMontage) == 0x000138, "Member 'UPyLevelMontageSyncComponent::IntervalSecondsForUpdateMontage' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, PositionSyncTolerance) == 0x00013C, "Member 'UPyLevelMontageSyncComponent::PositionSyncTolerance' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, On_C_Pre_Update_Anim_State) == 0x000140, "Member 'UPyLevelMontageSyncComponent::On_C_Pre_Update_Anim_State' has a wrong offset!");
-static_assert(offsetof(UPyLevelMontageSyncComponent, On_C_Post_Update_Anim_State) == 0x000150, "Member 'UPyLevelMontageSyncComponent::On_C_Post_Update_Anim_State' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMontageSyncComponent;
 
 }
 

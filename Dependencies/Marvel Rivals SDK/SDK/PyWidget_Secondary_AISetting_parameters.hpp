@@ -22,10 +22,7 @@ public:
 	class FText                                   Team_1_Name;                                       // 0x0000(0x0018)(Parm)
 	class FText                                   Team_2_Name;                                       // 0x0018(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_Secondary_AISetting_SetTeamName) == 0x000008, "Wrong alignment on PyWidget_Secondary_AISetting_SetTeamName");
-static_assert(sizeof(PyWidget_Secondary_AISetting_SetTeamName) == 0x000030, "Wrong size on PyWidget_Secondary_AISetting_SetTeamName");
-static_assert(offsetof(PyWidget_Secondary_AISetting_SetTeamName, Team_1_Name) == 0x000000, "Member 'PyWidget_Secondary_AISetting_SetTeamName::Team_1_Name' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_AISetting_SetTeamName, Team_2_Name) == 0x000018, "Member 'PyWidget_Secondary_AISetting_SetTeamName::Team_2_Name' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_AISetting_SetTeamName;
 
 }
 

@@ -22,10 +22,7 @@ public:
 	class UMarvelAbilityTask_SelectTarget*        SelectTargetTask;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_402421_GetSelectTarget) == 0x000008, "Wrong alignment on PyAbility_402421_GetSelectTarget");
-static_assert(sizeof(PyAbility_402421_GetSelectTarget) == 0x000010, "Wrong size on PyAbility_402421_GetSelectTarget");
-static_assert(offsetof(PyAbility_402421_GetSelectTarget, SelectTargetTask) == 0x000000, "Member 'PyAbility_402421_GetSelectTarget::SelectTargetTask' has a wrong offset!");
-static_assert(offsetof(PyAbility_402421_GetSelectTarget, ReturnValue) == 0x000008, "Member 'PyAbility_402421_GetSelectTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_402421_GetSelectTarget;
 
 }
 

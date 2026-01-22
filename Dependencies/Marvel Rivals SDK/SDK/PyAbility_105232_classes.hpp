@@ -20,54 +20,45 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105232.PyConfig_105232
-// 0x61E8 (0x6280 - 0x0098)
+// 0x76A8 (0x7740 - 0x0098)
 class UPyConfig_105232 final : public UMarvelAbilityConfig
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectAndDashInfo                     InInfo;                                            // 0x00A0(0x3A60)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         MaskDistance;                                      // 0x3B00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B04[0x4];                                     // 0x3B04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       BaseDash;                                          // 0x3B08(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x46D0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfoLocation;                                  // 0x5298(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         CSLocationDiffMax;                                 // 0x5E60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FirstScopeID;                                      // 0x5E64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x5E68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E6C[0x4];                                     // 0x5E6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       ScopeTraceRule;                                    // 0x5E70(0x0398)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         EndBuffID;                                         // 0x6208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_620C[0x4];                                     // 0x620C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x6210(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         DelayTimes;                                        // 0x6278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSelectAndDashInfo                     InInfo;                                            // 0x00A0(0x4480)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         MaskDistance;                                      // 0x4520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4524[0x4];                                     // 0x4524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       BaseDash;                                          // 0x4528(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x5410(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfoLocation;                                  // 0x62F8(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         CSLocationDiffMax;                                 // 0x71E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FirstScopeID;                                      // 0x71E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x71E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_71EC[0x4];                                     // 0x71EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       ScopeTraceRule;                                    // 0x71F0(0x04D8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         EndBuffID;                                         // 0x76C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_76CC[0x4];                                     // 0x76CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  BlockDashTag;                                      // 0x76D0(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         DelayTimes;                                        // 0x7738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105232">();
+		STATIC_CLASS_IMPL("PyConfig_105232")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105232")
 	}
 	static class UPyConfig_105232* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105232>();
 	}
 };
-static_assert(alignof(UPyConfig_105232) == 0x000010, "Wrong alignment on UPyConfig_105232");
-static_assert(sizeof(UPyConfig_105232) == 0x006280, "Wrong size on UPyConfig_105232");
-static_assert(offsetof(UPyConfig_105232, InInfo) == 0x0000A0, "Member 'UPyConfig_105232::InInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, MaskDistance) == 0x003B00, "Member 'UPyConfig_105232::MaskDistance' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, BaseDash) == 0x003B08, "Member 'UPyConfig_105232::BaseDash' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, DashInfo) == 0x0046D0, "Member 'UPyConfig_105232::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, DashInfoLocation) == 0x005298, "Member 'UPyConfig_105232::DashInfoLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, CSLocationDiffMax) == 0x005E60, "Member 'UPyConfig_105232::CSLocationDiffMax' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, FirstScopeID) == 0x005E64, "Member 'UPyConfig_105232::FirstScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, ScopeID) == 0x005E68, "Member 'UPyConfig_105232::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, ScopeTraceRule) == 0x005E70, "Member 'UPyConfig_105232::ScopeTraceRule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, EndBuffID) == 0x006208, "Member 'UPyConfig_105232::EndBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, BlockDashTag) == 0x006210, "Member 'UPyConfig_105232::BlockDashTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105232, DelayTimes) == 0x006278, "Member 'UPyConfig_105232::DelayTimes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105232;
 
 // PythonClass PyAbility_105232.PyAbility_105232
-// 0x0000 (0x2A68 - 0x2A68)
+// 0x0000 (0x2AB8 - 0x2AB8)
 class UPyAbility_105232 : public UAbility_105232
 {
 public:
@@ -82,15 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105232">();
+		STATIC_CLASS_IMPL("PyAbility_105232")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105232")
 	}
 	static class UPyAbility_105232* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105232>();
 	}
 };
-static_assert(alignof(UPyAbility_105232) == 0x000008, "Wrong alignment on UPyAbility_105232");
-static_assert(sizeof(UPyAbility_105232) == 0x002A68, "Wrong size on UPyAbility_105232");
+DUMPER7_ASSERTS_UPyAbility_105232;
 
 }
 

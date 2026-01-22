@@ -41,17 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTotemComponent">();
+		STATIC_CLASS_IMPL("PyTotemComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTotemComponent")
 	}
 	static class UPyTotemComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTotemComponent>();
 	}
 };
-static_assert(alignof(UPyTotemComponent) == 0x000008, "Wrong alignment on UPyTotemComponent");
-static_assert(sizeof(UPyTotemComponent) == 0x000120, "Wrong size on UPyTotemComponent");
-static_assert(offsetof(UPyTotemComponent, TotemState) == 0x000108, "Member 'UPyTotemComponent::TotemState' has a wrong offset!");
-static_assert(offsetof(UPyTotemComponent, TotemTime) == 0x000118, "Member 'UPyTotemComponent::TotemTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTotemComponent;
 
 }
 

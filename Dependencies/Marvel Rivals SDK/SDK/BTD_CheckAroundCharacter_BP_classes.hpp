@@ -23,15 +23,18 @@ class UBTD_CheckAroundCharacter_BP_C final : public UBTD_CheckAroundCharacter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTD_CheckAroundCharacter_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTD_CheckAroundCharacter_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckAroundCharacter_BP_C")
 	}
 	static class UBTD_CheckAroundCharacter_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_CheckAroundCharacter_BP_C>();
 	}
 };
-static_assert(alignof(UBTD_CheckAroundCharacter_BP_C) == 0x000008, "Wrong alignment on UBTD_CheckAroundCharacter_BP_C");
-static_assert(sizeof(UBTD_CheckAroundCharacter_BP_C) == 0x000148, "Wrong size on UBTD_CheckAroundCharacter_BP_C");
+DUMPER7_ASSERTS_UBTD_CheckAroundCharacter_BP_C;
 
 }
 

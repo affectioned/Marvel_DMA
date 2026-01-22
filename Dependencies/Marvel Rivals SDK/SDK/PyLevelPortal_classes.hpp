@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelPortal">();
+		STATIC_CLASS_IMPL("PyLevelPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelPortal")
 	}
 	static class APyLevelPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelPortal>();
 	}
 };
-static_assert(alignof(APyLevelPortal) == 0x000010, "Wrong alignment on APyLevelPortal");
-static_assert(sizeof(APyLevelPortal) == 0x000710, "Wrong size on APyLevelPortal");
-static_assert(offsetof(APyLevelPortal, TargetPortal) == 0x0006E0, "Member 'APyLevelPortal::TargetPortal' has a wrong offset!");
-static_assert(offsetof(APyLevelPortal, SelfPlayerStart) == 0x0006E8, "Member 'APyLevelPortal::SelfPlayerStart' has a wrong offset!");
-static_assert(offsetof(APyLevelPortal, InAudio) == 0x0006F0, "Member 'APyLevelPortal::InAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelPortal, OutAudio) == 0x0006F8, "Member 'APyLevelPortal::OutAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelPortal, ScreenFXCueTag) == 0x000700, "Member 'APyLevelPortal::ScreenFXCueTag' has a wrong offset!");
-static_assert(offsetof(APyLevelPortal, ScreenFXTime) == 0x00070C, "Member 'APyLevelPortal::ScreenFXTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelPortal;
 
 }
 

@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_Like_MVPIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_Like_MVPIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_Like_MVPIcon")
 	}
 	static class UPyWidget_Settlement_Like_MVPIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_Like_MVPIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_Like_MVPIcon) == 0x000010, "Wrong alignment on UPyWidget_Settlement_Like_MVPIcon");
-static_assert(sizeof(UPyWidget_Settlement_Like_MVPIcon) == 0x0008A0, "Wrong size on UPyWidget_Settlement_Like_MVPIcon");
-static_assert(offsetof(UPyWidget_Settlement_Like_MVPIcon, ChampionIamge) == 0x000870, "Member 'UPyWidget_Settlement_Like_MVPIcon::ChampionIamge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Like_MVPIcon, RankImage) == 0x000880, "Member 'UPyWidget_Settlement_Like_MVPIcon::RankImage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_Like_MVPIcon, RankImageAnimTime) == 0x000890, "Member 'UPyWidget_Settlement_Like_MVPIcon::RankImageAnimTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_Like_MVPIcon;
 
 }
 

@@ -37,15 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorExtension">();
+		STATIC_CLASS_IMPL("PyShowActorExtension")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorExtension")
 	}
 	static class UPyShowActorExtension* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorExtension>();
 	}
 };
-static_assert(alignof(UPyShowActorExtension) == 0x000008, "Wrong alignment on UPyShowActorExtension");
-static_assert(sizeof(UPyShowActorExtension) == 0x000030, "Wrong size on UPyShowActorExtension");
+DUMPER7_ASSERTS_UPyShowActorExtension;
 
 }
 

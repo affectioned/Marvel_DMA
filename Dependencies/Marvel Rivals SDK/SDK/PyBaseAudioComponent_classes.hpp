@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyResultConditionConfig">();
+		STATIC_CLASS_IMPL("PyResultConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyResultConditionConfig")
 	}
 	static class UPyResultConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyResultConditionConfig>();
 	}
 };
-static_assert(alignof(UPyResultConditionConfig) == 0x000008, "Wrong alignment on UPyResultConditionConfig");
-static_assert(sizeof(UPyResultConditionConfig) == 0x000038, "Wrong size on UPyResultConditionConfig");
-static_assert(offsetof(UPyResultConditionConfig, BattleResult) == 0x000030, "Member 'UPyResultConditionConfig::BattleResult' has a wrong offset!");
+DUMPER7_ASSERTS_UPyResultConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyTeamConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -50,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamConditionConfig">();
+		STATIC_CLASS_IMPL("PyTeamConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamConditionConfig")
 	}
 	static class UPyTeamConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamConditionConfig>();
 	}
 };
-static_assert(alignof(UPyTeamConditionConfig) == 0x000008, "Wrong alignment on UPyTeamConditionConfig");
-static_assert(sizeof(UPyTeamConditionConfig) == 0x000038, "Wrong size on UPyTeamConditionConfig");
-static_assert(offsetof(UPyTeamConditionConfig, TeamSide) == 0x000030, "Member 'UPyTeamConditionConfig::TeamSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTeamConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyRoundConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -71,16 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRoundConditionConfig">();
+		STATIC_CLASS_IMPL("PyRoundConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRoundConditionConfig")
 	}
 	static class UPyRoundConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRoundConditionConfig>();
 	}
 };
-static_assert(alignof(UPyRoundConditionConfig) == 0x000008, "Wrong alignment on UPyRoundConditionConfig");
-static_assert(sizeof(UPyRoundConditionConfig) == 0x000038, "Wrong size on UPyRoundConditionConfig");
-static_assert(offsetof(UPyRoundConditionConfig, RoundIndex) == 0x000030, "Member 'UPyRoundConditionConfig::RoundIndex' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRoundConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyBattleSideConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -92,16 +98,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleSideConditionConfig">();
+		STATIC_CLASS_IMPL("PyBattleSideConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleSideConditionConfig")
 	}
 	static class UPyBattleSideConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleSideConditionConfig>();
 	}
 };
-static_assert(alignof(UPyBattleSideConditionConfig) == 0x000008, "Wrong alignment on UPyBattleSideConditionConfig");
-static_assert(sizeof(UPyBattleSideConditionConfig) == 0x000038, "Wrong size on UPyBattleSideConditionConfig");
-static_assert(offsetof(UPyBattleSideConditionConfig, BattleSide) == 0x000030, "Member 'UPyBattleSideConditionConfig::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattleSideConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyTimeIntervalConditionConfig
 // 0x0010 (0x0040 - 0x0030)
@@ -115,18 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimeIntervalConditionConfig">();
+		STATIC_CLASS_IMPL("PyTimeIntervalConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimeIntervalConditionConfig")
 	}
 	static class UPyTimeIntervalConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTimeIntervalConditionConfig>();
 	}
 };
-static_assert(alignof(UPyTimeIntervalConditionConfig) == 0x000008, "Wrong alignment on UPyTimeIntervalConditionConfig");
-static_assert(sizeof(UPyTimeIntervalConditionConfig) == 0x000040, "Wrong size on UPyTimeIntervalConditionConfig");
-static_assert(offsetof(UPyTimeIntervalConditionConfig, StartTime) == 0x000030, "Member 'UPyTimeIntervalConditionConfig::StartTime' has a wrong offset!");
-static_assert(offsetof(UPyTimeIntervalConditionConfig, EndTime) == 0x000034, "Member 'UPyTimeIntervalConditionConfig::EndTime' has a wrong offset!");
-static_assert(offsetof(UPyTimeIntervalConditionConfig, IntervalTime) == 0x000038, "Member 'UPyTimeIntervalConditionConfig::IntervalTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTimeIntervalConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyTimeStartConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -138,16 +146,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimeStartConditionConfig">();
+		STATIC_CLASS_IMPL("PyTimeStartConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimeStartConditionConfig")
 	}
 	static class UPyTimeStartConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTimeStartConditionConfig>();
 	}
 };
-static_assert(alignof(UPyTimeStartConditionConfig) == 0x000008, "Wrong alignment on UPyTimeStartConditionConfig");
-static_assert(sizeof(UPyTimeStartConditionConfig) == 0x000038, "Wrong size on UPyTimeStartConditionConfig");
-static_assert(offsetof(UPyTimeStartConditionConfig, StartTime) == 0x000030, "Member 'UPyTimeStartConditionConfig::StartTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTimeStartConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyCDConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -159,16 +169,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCDConditionConfig">();
+		STATIC_CLASS_IMPL("PyCDConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCDConditionConfig")
 	}
 	static class UPyCDConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCDConditionConfig>();
 	}
 };
-static_assert(alignof(UPyCDConditionConfig) == 0x000008, "Wrong alignment on UPyCDConditionConfig");
-static_assert(sizeof(UPyCDConditionConfig) == 0x000038, "Wrong size on UPyCDConditionConfig");
-static_assert(offsetof(UPyCDConditionConfig, CDTime) == 0x000030, "Member 'UPyCDConditionConfig::CDTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCDConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyTimeEndConditionConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -180,16 +192,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimeEndConditionConfig">();
+		STATIC_CLASS_IMPL("PyTimeEndConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimeEndConditionConfig")
 	}
 	static class UPyTimeEndConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTimeEndConditionConfig>();
 	}
 };
-static_assert(alignof(UPyTimeEndConditionConfig) == 0x000008, "Wrong alignment on UPyTimeEndConditionConfig");
-static_assert(sizeof(UPyTimeEndConditionConfig) == 0x000038, "Wrong size on UPyTimeEndConditionConfig");
-static_assert(offsetof(UPyTimeEndConditionConfig, EndTime) == 0x000030, "Member 'UPyTimeEndConditionConfig::EndTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTimeEndConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyMapIDConditionConfig
 // 0x0020 (0x0050 - 0x0030)
@@ -202,17 +216,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMapIDConditionConfig">();
+		STATIC_CLASS_IMPL("PyMapIDConditionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMapIDConditionConfig")
 	}
 	static class UPyMapIDConditionConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMapIDConditionConfig>();
 	}
 };
-static_assert(alignof(UPyMapIDConditionConfig) == 0x000008, "Wrong alignment on UPyMapIDConditionConfig");
-static_assert(sizeof(UPyMapIDConditionConfig) == 0x000050, "Wrong size on UPyMapIDConditionConfig");
-static_assert(offsetof(UPyMapIDConditionConfig, BanMapIDList) == 0x000030, "Member 'UPyMapIDConditionConfig::BanMapIDList' has a wrong offset!");
-static_assert(offsetof(UPyMapIDConditionConfig, AllowMapIDList) == 0x000040, "Member 'UPyMapIDConditionConfig::AllowMapIDList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMapIDConditionConfig;
 
 // PythonClass PyBaseAudioComponent.PyBaseAudioComponent
 // 0x0018 (0x0120 - 0x0108)
@@ -230,17 +245,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBaseAudioComponent">();
+		STATIC_CLASS_IMPL("PyBaseAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBaseAudioComponent")
 	}
 	static class UPyBaseAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBaseAudioComponent>();
 	}
 };
-static_assert(alignof(UPyBaseAudioComponent) == 0x000008, "Wrong alignment on UPyBaseAudioComponent");
-static_assert(sizeof(UPyBaseAudioComponent) == 0x000120, "Wrong size on UPyBaseAudioComponent");
-static_assert(offsetof(UPyBaseAudioComponent, NotifyCacheList) == 0x000108, "Member 'UPyBaseAudioComponent::NotifyCacheList' has a wrong offset!");
-static_assert(offsetof(UPyBaseAudioComponent, ConfigCache) == 0x000118, "Member 'UPyBaseAudioComponent::ConfigCache' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBaseAudioComponent;
 
 }
 

@@ -23,15 +23,18 @@ class UBTS_GenerateRandomFlag_BP_C final : public UBTS_PyGenerateRandomFlag
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_GenerateRandomFlag_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_GenerateRandomFlag_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_GenerateRandomFlag_BP_C")
 	}
 	static class UBTS_GenerateRandomFlag_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_GenerateRandomFlag_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_GenerateRandomFlag_BP_C) == 0x000008, "Wrong alignment on UBTS_GenerateRandomFlag_BP_C");
-static_assert(sizeof(UBTS_GenerateRandomFlag_BP_C) == 0x000128, "Wrong size on UBTS_GenerateRandomFlag_BP_C");
+DUMPER7_ASSERTS_UBTS_GenerateRandomFlag_BP_C;
 
 }
 

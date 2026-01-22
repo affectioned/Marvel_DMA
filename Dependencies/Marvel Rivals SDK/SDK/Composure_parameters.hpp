@@ -25,9 +25,7 @@ struct ComposurePipelineBaseActor_EnqueueRendering final
 public:
 	bool                                          bCameraCutThisFrame;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePipelineBaseActor_EnqueueRendering) == 0x000001, "Wrong alignment on ComposurePipelineBaseActor_EnqueueRendering");
-static_assert(sizeof(ComposurePipelineBaseActor_EnqueueRendering) == 0x000001, "Wrong size on ComposurePipelineBaseActor_EnqueueRendering");
-static_assert(offsetof(ComposurePipelineBaseActor_EnqueueRendering, bCameraCutThisFrame) == 0x000000, "Member 'ComposurePipelineBaseActor_EnqueueRendering::bCameraCutThisFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePipelineBaseActor_EnqueueRendering;
 
 // Function Composure.ComposurePipelineBaseActor.SetAutoRun
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct ComposurePipelineBaseActor_SetAutoRun final
 public:
 	bool                                          bNewAutoRunVal;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePipelineBaseActor_SetAutoRun) == 0x000001, "Wrong alignment on ComposurePipelineBaseActor_SetAutoRun");
-static_assert(sizeof(ComposurePipelineBaseActor_SetAutoRun) == 0x000001, "Wrong size on ComposurePipelineBaseActor_SetAutoRun");
-static_assert(offsetof(ComposurePipelineBaseActor_SetAutoRun, bNewAutoRunVal) == 0x000000, "Member 'ComposurePipelineBaseActor_SetAutoRun::bNewAutoRunVal' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePipelineBaseActor_SetAutoRun;
 
 // Function Composure.ComposurePipelineBaseActor.SetAutoRunChildrenAndSelf
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +43,7 @@ struct ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf final
 public:
 	bool                                          bAutoRunChildAndSelf;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf) == 0x000001, "Wrong alignment on ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf");
-static_assert(sizeof(ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf) == 0x000001, "Wrong size on ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf");
-static_assert(offsetof(ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf, bAutoRunChildAndSelf) == 0x000000, "Member 'ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf::bAutoRunChildAndSelf' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePipelineBaseActor_SetAutoRunChildrenAndSelf;
 
 // Function Composure.ComposurePipelineBaseActor.AreChildrenAndSelfAutoRun
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +52,7 @@ struct ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun) == 0x000001, "Wrong alignment on ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun");
-static_assert(sizeof(ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun) == 0x000001, "Wrong size on ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun");
-static_assert(offsetof(ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun, ReturnValue) == 0x000000, "Member 'ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePipelineBaseActor_AreChildrenAndSelfAutoRun;
 
 // Function Composure.ComposurePipelineBaseActor.IsActivelyRunning
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +61,7 @@ struct ComposurePipelineBaseActor_IsActivelyRunning final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePipelineBaseActor_IsActivelyRunning) == 0x000001, "Wrong alignment on ComposurePipelineBaseActor_IsActivelyRunning");
-static_assert(sizeof(ComposurePipelineBaseActor_IsActivelyRunning) == 0x000001, "Wrong size on ComposurePipelineBaseActor_IsActivelyRunning");
-static_assert(offsetof(ComposurePipelineBaseActor_IsActivelyRunning, ReturnValue) == 0x000000, "Member 'ComposurePipelineBaseActor_IsActivelyRunning::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePipelineBaseActor_IsActivelyRunning;
 
 // Function Composure.CompositingElement.AddNewInputPass
 // 0x0020 (0x0020 - 0x0000)
@@ -83,11 +73,7 @@ public:
 	TSubclassOf<class UCompositingElementInput>   InputType;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementInput*               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_AddNewInputPass) == 0x000008, "Wrong alignment on CompositingElement_AddNewInputPass");
-static_assert(sizeof(CompositingElement_AddNewInputPass) == 0x000020, "Wrong size on CompositingElement_AddNewInputPass");
-static_assert(offsetof(CompositingElement_AddNewInputPass, PassName) == 0x000000, "Member 'CompositingElement_AddNewInputPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewInputPass, InputType) == 0x000010, "Member 'CompositingElement_AddNewInputPass::InputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewInputPass, ReturnValue) == 0x000018, "Member 'CompositingElement_AddNewInputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_AddNewInputPass;
 
 // Function Composure.CompositingElement.AddNewOutputPass
 // 0x0020 (0x0020 - 0x0000)
@@ -99,11 +85,7 @@ public:
 	TSubclassOf<class UCompositingElementOutput>  OutputType;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementOutput*              ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_AddNewOutputPass) == 0x000008, "Wrong alignment on CompositingElement_AddNewOutputPass");
-static_assert(sizeof(CompositingElement_AddNewOutputPass) == 0x000020, "Wrong size on CompositingElement_AddNewOutputPass");
-static_assert(offsetof(CompositingElement_AddNewOutputPass, PassName) == 0x000000, "Member 'CompositingElement_AddNewOutputPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewOutputPass, OutputType) == 0x000010, "Member 'CompositingElement_AddNewOutputPass::OutputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewOutputPass, ReturnValue) == 0x000018, "Member 'CompositingElement_AddNewOutputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_AddNewOutputPass;
 
 // Function Composure.CompositingElement.AddNewTransformPass
 // 0x0020 (0x0020 - 0x0000)
@@ -115,11 +97,7 @@ public:
 	TSubclassOf<class UCompositingElementTransform> TransformType;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementTransform*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_AddNewTransformPass) == 0x000008, "Wrong alignment on CompositingElement_AddNewTransformPass");
-static_assert(sizeof(CompositingElement_AddNewTransformPass) == 0x000020, "Wrong size on CompositingElement_AddNewTransformPass");
-static_assert(offsetof(CompositingElement_AddNewTransformPass, PassName) == 0x000000, "Member 'CompositingElement_AddNewTransformPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewTransformPass, TransformType) == 0x000010, "Member 'CompositingElement_AddNewTransformPass::TransformType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_AddNewTransformPass, ReturnValue) == 0x000018, "Member 'CompositingElement_AddNewTransformPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_AddNewTransformPass;
 
 // Function Composure.CompositingElement.CreateNewInputPass
 // 0x0020 (0x0020 - 0x0000)
@@ -131,11 +109,7 @@ public:
 	TSubclassOf<class UCompositingElementInput>   InputType;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementInput*               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_CreateNewInputPass) == 0x000008, "Wrong alignment on CompositingElement_CreateNewInputPass");
-static_assert(sizeof(CompositingElement_CreateNewInputPass) == 0x000020, "Wrong size on CompositingElement_CreateNewInputPass");
-static_assert(offsetof(CompositingElement_CreateNewInputPass, PassName) == 0x000000, "Member 'CompositingElement_CreateNewInputPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewInputPass, InputType) == 0x000010, "Member 'CompositingElement_CreateNewInputPass::InputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewInputPass, ReturnValue) == 0x000018, "Member 'CompositingElement_CreateNewInputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_CreateNewInputPass;
 
 // Function Composure.CompositingElement.CreateNewOutputPass
 // 0x0020 (0x0020 - 0x0000)
@@ -147,11 +121,7 @@ public:
 	TSubclassOf<class UCompositingElementOutput>  OutputType;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementOutput*              ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_CreateNewOutputPass) == 0x000008, "Wrong alignment on CompositingElement_CreateNewOutputPass");
-static_assert(sizeof(CompositingElement_CreateNewOutputPass) == 0x000020, "Wrong size on CompositingElement_CreateNewOutputPass");
-static_assert(offsetof(CompositingElement_CreateNewOutputPass, PassName) == 0x000000, "Member 'CompositingElement_CreateNewOutputPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewOutputPass, OutputType) == 0x000010, "Member 'CompositingElement_CreateNewOutputPass::OutputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewOutputPass, ReturnValue) == 0x000018, "Member 'CompositingElement_CreateNewOutputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_CreateNewOutputPass;
 
 // Function Composure.CompositingElement.CreateNewTransformPass
 // 0x0020 (0x0020 - 0x0000)
@@ -163,11 +133,7 @@ public:
 	TSubclassOf<class UCompositingElementTransform> TransformType;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCompositingElementTransform*           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_CreateNewTransformPass) == 0x000008, "Wrong alignment on CompositingElement_CreateNewTransformPass");
-static_assert(sizeof(CompositingElement_CreateNewTransformPass) == 0x000020, "Wrong size on CompositingElement_CreateNewTransformPass");
-static_assert(offsetof(CompositingElement_CreateNewTransformPass, PassName) == 0x000000, "Member 'CompositingElement_CreateNewTransformPass::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewTransformPass, TransformType) == 0x000010, "Member 'CompositingElement_CreateNewTransformPass::TransformType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_CreateNewTransformPass, ReturnValue) == 0x000018, "Member 'CompositingElement_CreateNewTransformPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_CreateNewTransformPass;
 
 // Function Composure.CompositingElement.DeletePass
 // 0x0010 (0x0010 - 0x0000)
@@ -178,10 +144,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingElement_DeletePass) == 0x000008, "Wrong alignment on CompositingElement_DeletePass");
-static_assert(sizeof(CompositingElement_DeletePass) == 0x000010, "Wrong size on CompositingElement_DeletePass");
-static_assert(offsetof(CompositingElement_DeletePass, PassToDelete) == 0x000000, "Member 'CompositingElement_DeletePass::PassToDelete' has a wrong offset!");
-static_assert(offsetof(CompositingElement_DeletePass, ReturnValue) == 0x000008, "Member 'CompositingElement_DeletePass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_DeletePass;
 
 // Function Composure.CompositingElement.FindInputPass
 // 0x0028 (0x0028 - 0x0000)
@@ -194,12 +157,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCompositingElementInput*               ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_FindInputPass) == 0x000008, "Wrong alignment on CompositingElement_FindInputPass");
-static_assert(sizeof(CompositingElement_FindInputPass) == 0x000028, "Wrong size on CompositingElement_FindInputPass");
-static_assert(offsetof(CompositingElement_FindInputPass, InputType) == 0x000000, "Member 'CompositingElement_FindInputPass::InputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindInputPass, PassResult) == 0x000008, "Member 'CompositingElement_FindInputPass::PassResult' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindInputPass, OptionalPassName) == 0x000010, "Member 'CompositingElement_FindInputPass::OptionalPassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindInputPass, ReturnValue) == 0x000020, "Member 'CompositingElement_FindInputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_FindInputPass;
 
 // Function Composure.CompositingElement.FindNamedRenderResult
 // 0x0018 (0x0018 - 0x0000)
@@ -211,11 +169,7 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_FindNamedRenderResult) == 0x000008, "Wrong alignment on CompositingElement_FindNamedRenderResult");
-static_assert(sizeof(CompositingElement_FindNamedRenderResult) == 0x000018, "Wrong size on CompositingElement_FindNamedRenderResult");
-static_assert(offsetof(CompositingElement_FindNamedRenderResult, PassName) == 0x000000, "Member 'CompositingElement_FindNamedRenderResult::PassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindNamedRenderResult, bSearchSubElements) == 0x00000C, "Member 'CompositingElement_FindNamedRenderResult::bSearchSubElements' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindNamedRenderResult, ReturnValue) == 0x000010, "Member 'CompositingElement_FindNamedRenderResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_FindNamedRenderResult;
 
 // Function Composure.CompositingElement.FindOutputPass
 // 0x0020 (0x0020 - 0x0000)
@@ -227,11 +181,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCompositingElementOutput*              ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_FindOutputPass) == 0x000008, "Wrong alignment on CompositingElement_FindOutputPass");
-static_assert(sizeof(CompositingElement_FindOutputPass) == 0x000020, "Wrong size on CompositingElement_FindOutputPass");
-static_assert(offsetof(CompositingElement_FindOutputPass, OutputType) == 0x000000, "Member 'CompositingElement_FindOutputPass::OutputType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindOutputPass, OptionalPassName) == 0x000008, "Member 'CompositingElement_FindOutputPass::OptionalPassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindOutputPass, ReturnValue) == 0x000018, "Member 'CompositingElement_FindOutputPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_FindOutputPass;
 
 // Function Composure.CompositingElement.FindTransformPass
 // 0x0028 (0x0028 - 0x0000)
@@ -244,12 +194,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCompositingElementTransform*           ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_FindTransformPass) == 0x000008, "Wrong alignment on CompositingElement_FindTransformPass");
-static_assert(sizeof(CompositingElement_FindTransformPass) == 0x000028, "Wrong size on CompositingElement_FindTransformPass");
-static_assert(offsetof(CompositingElement_FindTransformPass, TransformType) == 0x000000, "Member 'CompositingElement_FindTransformPass::TransformType' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindTransformPass, PassResult) == 0x000008, "Member 'CompositingElement_FindTransformPass::PassResult' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindTransformPass, OptionalPassName) == 0x000010, "Member 'CompositingElement_FindTransformPass::OptionalPassName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_FindTransformPass, ReturnValue) == 0x000020, "Member 'CompositingElement_FindTransformPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_FindTransformPass;
 
 // Function Composure.CompositingElement.RegisterPassResult
 // 0x0020 (0x0020 - 0x0000)
@@ -262,11 +207,7 @@ public:
 	bool                                          bSetAsLatestRenderResult;                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingElement_RegisterPassResult) == 0x000008, "Wrong alignment on CompositingElement_RegisterPassResult");
-static_assert(sizeof(CompositingElement_RegisterPassResult) == 0x000020, "Wrong size on CompositingElement_RegisterPassResult");
-static_assert(offsetof(CompositingElement_RegisterPassResult, ReferenceName) == 0x000000, "Member 'CompositingElement_RegisterPassResult::ReferenceName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RegisterPassResult, PassResult) == 0x000010, "Member 'CompositingElement_RegisterPassResult::PassResult' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RegisterPassResult, bSetAsLatestRenderResult) == 0x000018, "Member 'CompositingElement_RegisterPassResult::bSetAsLatestRenderResult' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_RegisterPassResult;
 
 // Function Composure.CompositingElement.ReleaseOwnedTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -277,10 +218,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingElement_ReleaseOwnedTarget) == 0x000008, "Wrong alignment on CompositingElement_ReleaseOwnedTarget");
-static_assert(sizeof(CompositingElement_ReleaseOwnedTarget) == 0x000010, "Wrong size on CompositingElement_ReleaseOwnedTarget");
-static_assert(offsetof(CompositingElement_ReleaseOwnedTarget, OwnedTarget) == 0x000000, "Member 'CompositingElement_ReleaseOwnedTarget::OwnedTarget' has a wrong offset!");
-static_assert(offsetof(CompositingElement_ReleaseOwnedTarget, ReturnValue) == 0x000008, "Member 'CompositingElement_ReleaseOwnedTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_ReleaseOwnedTarget;
 
 // Function Composure.CompositingElement.RenderCompElement
 // 0x0010 (0x0010 - 0x0000)
@@ -291,10 +229,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_RenderCompElement) == 0x000008, "Wrong alignment on CompositingElement_RenderCompElement");
-static_assert(sizeof(CompositingElement_RenderCompElement) == 0x000010, "Wrong size on CompositingElement_RenderCompElement");
-static_assert(offsetof(CompositingElement_RenderCompElement, bCameraCutThisFrame) == 0x000000, "Member 'CompositingElement_RenderCompElement::bCameraCutThisFrame' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompElement, ReturnValue) == 0x000008, "Member 'CompositingElement_RenderCompElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_RenderCompElement;
 
 // Function Composure.CompositingElement.RenderCompositingMaterial
 // 0x01C8 (0x01C8 - 0x0000)
@@ -308,13 +243,7 @@ public:
 	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               ReturnValue;                                       // 0x01C0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_RenderCompositingMaterial) == 0x000008, "Wrong alignment on CompositingElement_RenderCompositingMaterial");
-static_assert(sizeof(CompositingElement_RenderCompositingMaterial) == 0x0001C8, "Wrong size on CompositingElement_RenderCompositingMaterial");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterial, CompMaterial) == 0x000000, "Member 'CompositingElement_RenderCompositingMaterial::CompMaterial' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterial, RenderScale) == 0x0001A8, "Member 'CompositingElement_RenderCompositingMaterial::RenderScale' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterial, ResultLookupName) == 0x0001AC, "Member 'CompositingElement_RenderCompositingMaterial::ResultLookupName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterial, UsageTag) == 0x0001B8, "Member 'CompositingElement_RenderCompositingMaterial::UsageTag' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterial, ReturnValue) == 0x0001C0, "Member 'CompositingElement_RenderCompositingMaterial::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_RenderCompositingMaterial;
 
 // Function Composure.CompositingElement.RenderCompositingMaterialToTarget
 // 0x01C8 (0x01C8 - 0x0000)
@@ -327,12 +256,7 @@ public:
 	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x01C0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_RenderCompositingMaterialToTarget) == 0x000008, "Wrong alignment on CompositingElement_RenderCompositingMaterialToTarget");
-static_assert(sizeof(CompositingElement_RenderCompositingMaterialToTarget) == 0x0001C8, "Wrong size on CompositingElement_RenderCompositingMaterialToTarget");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterialToTarget, CompMaterial) == 0x000000, "Member 'CompositingElement_RenderCompositingMaterialToTarget::CompMaterial' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterialToTarget, RenderTarget) == 0x0001A8, "Member 'CompositingElement_RenderCompositingMaterialToTarget::RenderTarget' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterialToTarget, ResultLookupName) == 0x0001B0, "Member 'CompositingElement_RenderCompositingMaterialToTarget::ResultLookupName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RenderCompositingMaterialToTarget, ReturnValue) == 0x0001C0, "Member 'CompositingElement_RenderCompositingMaterialToTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_RenderCompositingMaterialToTarget;
 
 // Function Composure.CompositingElement.RequestNamedRenderTarget
 // 0x0020 (0x0020 - 0x0000)
@@ -345,12 +269,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_RequestNamedRenderTarget) == 0x000008, "Wrong alignment on CompositingElement_RequestNamedRenderTarget");
-static_assert(sizeof(CompositingElement_RequestNamedRenderTarget) == 0x000020, "Wrong size on CompositingElement_RequestNamedRenderTarget");
-static_assert(offsetof(CompositingElement_RequestNamedRenderTarget, ReferenceName) == 0x000000, "Member 'CompositingElement_RequestNamedRenderTarget::ReferenceName' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RequestNamedRenderTarget, RenderPercentage) == 0x00000C, "Member 'CompositingElement_RequestNamedRenderTarget::RenderPercentage' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RequestNamedRenderTarget, UsageTag) == 0x000010, "Member 'CompositingElement_RequestNamedRenderTarget::UsageTag' has a wrong offset!");
-static_assert(offsetof(CompositingElement_RequestNamedRenderTarget, ReturnValue) == 0x000018, "Member 'CompositingElement_RequestNamedRenderTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_RequestNamedRenderTarget;
 
 // Function Composure.CompositingElement.SetEditorColorPickerDisplayImage
 // 0x0008 (0x0008 - 0x0000)
@@ -359,9 +278,7 @@ struct CompositingElement_SetEditorColorPickerDisplayImage final
 public:
 	class UTexture*                               PickerDisplayImage;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetEditorColorPickerDisplayImage) == 0x000008, "Wrong alignment on CompositingElement_SetEditorColorPickerDisplayImage");
-static_assert(sizeof(CompositingElement_SetEditorColorPickerDisplayImage) == 0x000008, "Wrong size on CompositingElement_SetEditorColorPickerDisplayImage");
-static_assert(offsetof(CompositingElement_SetEditorColorPickerDisplayImage, PickerDisplayImage) == 0x000000, "Member 'CompositingElement_SetEditorColorPickerDisplayImage::PickerDisplayImage' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetEditorColorPickerDisplayImage;
 
 // Function Composure.CompositingElement.SetEditorColorPickingTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -370,9 +287,7 @@ struct CompositingElement_SetEditorColorPickingTarget final
 public:
 	class UTextureRenderTarget2D*                 PickingTarget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetEditorColorPickingTarget) == 0x000008, "Wrong alignment on CompositingElement_SetEditorColorPickingTarget");
-static_assert(sizeof(CompositingElement_SetEditorColorPickingTarget) == 0x000008, "Wrong size on CompositingElement_SetEditorColorPickingTarget");
-static_assert(offsetof(CompositingElement_SetEditorColorPickingTarget, PickingTarget) == 0x000000, "Member 'CompositingElement_SetEditorColorPickingTarget::PickingTarget' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetEditorColorPickingTarget;
 
 // Function Composure.CompositingElement.SetElementName
 // 0x000C (0x000C - 0x0000)
@@ -381,9 +296,7 @@ struct CompositingElement_SetElementName final
 public:
 	class FName                                   NewName;                                           // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetElementName) == 0x000004, "Wrong alignment on CompositingElement_SetElementName");
-static_assert(sizeof(CompositingElement_SetElementName) == 0x00000C, "Wrong size on CompositingElement_SetElementName");
-static_assert(offsetof(CompositingElement_SetElementName, NewName) == 0x000000, "Member 'CompositingElement_SetElementName::NewName' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetElementName;
 
 // Function Composure.CompositingElement.SetOpacity
 // 0x0004 (0x0004 - 0x0000)
@@ -392,9 +305,7 @@ struct CompositingElement_SetOpacity final
 public:
 	float                                         NewOpacity;                                        // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetOpacity) == 0x000004, "Wrong alignment on CompositingElement_SetOpacity");
-static_assert(sizeof(CompositingElement_SetOpacity) == 0x000004, "Wrong size on CompositingElement_SetOpacity");
-static_assert(offsetof(CompositingElement_SetOpacity, NewOpacity) == 0x000000, "Member 'CompositingElement_SetOpacity::NewOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetOpacity;
 
 // Function Composure.CompositingElement.SetRenderResolution
 // 0x0008 (0x0008 - 0x0000)
@@ -403,9 +314,7 @@ struct CompositingElement_SetRenderResolution final
 public:
 	struct FIntPoint                              NewResolution;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetRenderResolution) == 0x000004, "Wrong alignment on CompositingElement_SetRenderResolution");
-static_assert(sizeof(CompositingElement_SetRenderResolution) == 0x000008, "Wrong size on CompositingElement_SetRenderResolution");
-static_assert(offsetof(CompositingElement_SetRenderResolution, NewResolution) == 0x000000, "Member 'CompositingElement_SetRenderResolution::NewResolution' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetRenderResolution;
 
 // Function Composure.CompositingElement.SetTargetCamera
 // 0x0008 (0x0008 - 0x0000)
@@ -414,9 +323,7 @@ struct CompositingElement_SetTargetCamera final
 public:
 	class ACameraActor*                           NewCameraActor;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_SetTargetCamera) == 0x000008, "Wrong alignment on CompositingElement_SetTargetCamera");
-static_assert(sizeof(CompositingElement_SetTargetCamera) == 0x000008, "Wrong size on CompositingElement_SetTargetCamera");
-static_assert(offsetof(CompositingElement_SetTargetCamera, NewCameraActor) == 0x000000, "Member 'CompositingElement_SetTargetCamera::NewCameraActor' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_SetTargetCamera;
 
 // Function Composure.CompositingElement.FindTargetCamera
 // 0x0008 (0x0008 - 0x0000)
@@ -425,9 +332,7 @@ struct CompositingElement_FindTargetCamera final
 public:
 	class ACameraActor*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_FindTargetCamera) == 0x000008, "Wrong alignment on CompositingElement_FindTargetCamera");
-static_assert(sizeof(CompositingElement_FindTargetCamera) == 0x000008, "Wrong size on CompositingElement_FindTargetCamera");
-static_assert(offsetof(CompositingElement_FindTargetCamera, ReturnValue) == 0x000000, "Member 'CompositingElement_FindTargetCamera::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_FindTargetCamera;
 
 // Function Composure.CompositingElement.GetChildElements
 // 0x0010 (0x0010 - 0x0000)
@@ -436,9 +341,7 @@ struct CompositingElement_GetChildElements final
 public:
 	TArray<class ACompositingElement*>            ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetChildElements) == 0x000008, "Wrong alignment on CompositingElement_GetChildElements");
-static_assert(sizeof(CompositingElement_GetChildElements) == 0x000010, "Wrong size on CompositingElement_GetChildElements");
-static_assert(offsetof(CompositingElement_GetChildElements, ReturnValue) == 0x000000, "Member 'CompositingElement_GetChildElements::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetChildElements;
 
 // Function Composure.CompositingElement.GetCompElementName
 // 0x000C (0x000C - 0x0000)
@@ -447,9 +350,7 @@ struct CompositingElement_GetCompElementName final
 public:
 	class FName                                   ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetCompElementName) == 0x000004, "Wrong alignment on CompositingElement_GetCompElementName");
-static_assert(sizeof(CompositingElement_GetCompElementName) == 0x00000C, "Wrong size on CompositingElement_GetCompElementName");
-static_assert(offsetof(CompositingElement_GetCompElementName, ReturnValue) == 0x000000, "Member 'CompositingElement_GetCompElementName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetCompElementName;
 
 // Function Composure.CompositingElement.GetElementParent
 // 0x0008 (0x0008 - 0x0000)
@@ -458,9 +359,7 @@ struct CompositingElement_GetElementParent final
 public:
 	class ACompositingElement*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetElementParent) == 0x000008, "Wrong alignment on CompositingElement_GetElementParent");
-static_assert(sizeof(CompositingElement_GetElementParent) == 0x000008, "Wrong size on CompositingElement_GetElementParent");
-static_assert(offsetof(CompositingElement_GetElementParent, ReturnValue) == 0x000000, "Member 'CompositingElement_GetElementParent::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetElementParent;
 
 // Function Composure.CompositingElement.GetInputsList
 // 0x0010 (0x0010 - 0x0000)
@@ -469,9 +368,7 @@ struct CompositingElement_GetInputsList final
 public:
 	TArray<class UCompositingElementInput*>       ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetInputsList) == 0x000008, "Wrong alignment on CompositingElement_GetInputsList");
-static_assert(sizeof(CompositingElement_GetInputsList) == 0x000010, "Wrong size on CompositingElement_GetInputsList");
-static_assert(offsetof(CompositingElement_GetInputsList, ReturnValue) == 0x000000, "Member 'CompositingElement_GetInputsList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetInputsList;
 
 // Function Composure.CompositingElement.GetLatestRenderResult
 // 0x0008 (0x0008 - 0x0000)
@@ -480,9 +377,7 @@ struct CompositingElement_GetLatestRenderResult final
 public:
 	class UTexture*                               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetLatestRenderResult) == 0x000008, "Wrong alignment on CompositingElement_GetLatestRenderResult");
-static_assert(sizeof(CompositingElement_GetLatestRenderResult) == 0x000008, "Wrong size on CompositingElement_GetLatestRenderResult");
-static_assert(offsetof(CompositingElement_GetLatestRenderResult, ReturnValue) == 0x000000, "Member 'CompositingElement_GetLatestRenderResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetLatestRenderResult;
 
 // Function Composure.CompositingElement.GetOpacity
 // 0x0004 (0x0004 - 0x0000)
@@ -491,9 +386,7 @@ struct CompositingElement_GetOpacity final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetOpacity) == 0x000004, "Wrong alignment on CompositingElement_GetOpacity");
-static_assert(sizeof(CompositingElement_GetOpacity) == 0x000004, "Wrong size on CompositingElement_GetOpacity");
-static_assert(offsetof(CompositingElement_GetOpacity, ReturnValue) == 0x000000, "Member 'CompositingElement_GetOpacity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetOpacity;
 
 // Function Composure.CompositingElement.GetOutputsList
 // 0x0010 (0x0010 - 0x0000)
@@ -502,9 +395,7 @@ struct CompositingElement_GetOutputsList final
 public:
 	TArray<class UCompositingElementOutput*>      ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetOutputsList) == 0x000008, "Wrong alignment on CompositingElement_GetOutputsList");
-static_assert(sizeof(CompositingElement_GetOutputsList) == 0x000010, "Wrong size on CompositingElement_GetOutputsList");
-static_assert(offsetof(CompositingElement_GetOutputsList, ReturnValue) == 0x000000, "Member 'CompositingElement_GetOutputsList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetOutputsList;
 
 // Function Composure.CompositingElement.GetRenderPriority
 // 0x0004 (0x0004 - 0x0000)
@@ -513,9 +404,7 @@ struct CompositingElement_GetRenderPriority final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetRenderPriority) == 0x000004, "Wrong alignment on CompositingElement_GetRenderPriority");
-static_assert(sizeof(CompositingElement_GetRenderPriority) == 0x000004, "Wrong size on CompositingElement_GetRenderPriority");
-static_assert(offsetof(CompositingElement_GetRenderPriority, ReturnValue) == 0x000000, "Member 'CompositingElement_GetRenderPriority::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetRenderPriority;
 
 // Function Composure.CompositingElement.GetRenderResolution
 // 0x0008 (0x0008 - 0x0000)
@@ -524,9 +413,7 @@ struct CompositingElement_GetRenderResolution final
 public:
 	struct FIntPoint                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetRenderResolution) == 0x000004, "Wrong alignment on CompositingElement_GetRenderResolution");
-static_assert(sizeof(CompositingElement_GetRenderResolution) == 0x000008, "Wrong size on CompositingElement_GetRenderResolution");
-static_assert(offsetof(CompositingElement_GetRenderResolution, ReturnValue) == 0x000000, "Member 'CompositingElement_GetRenderResolution::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetRenderResolution;
 
 // Function Composure.CompositingElement.GetTransformsList
 // 0x0010 (0x0010 - 0x0000)
@@ -535,9 +422,7 @@ struct CompositingElement_GetTransformsList final
 public:
 	TArray<class UCompositingElementTransform*>   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_GetTransformsList) == 0x000008, "Wrong alignment on CompositingElement_GetTransformsList");
-static_assert(sizeof(CompositingElement_GetTransformsList) == 0x000010, "Wrong size on CompositingElement_GetTransformsList");
-static_assert(offsetof(CompositingElement_GetTransformsList, ReturnValue) == 0x000000, "Member 'CompositingElement_GetTransformsList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_GetTransformsList;
 
 // Function Composure.CompositingElement.IsSubElement
 // 0x0001 (0x0001 - 0x0000)
@@ -546,9 +431,7 @@ struct CompositingElement_IsSubElement final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElement_IsSubElement) == 0x000001, "Wrong alignment on CompositingElement_IsSubElement");
-static_assert(sizeof(CompositingElement_IsSubElement) == 0x000001, "Wrong size on CompositingElement_IsSubElement");
-static_assert(offsetof(CompositingElement_IsSubElement, ReturnValue) == 0x000000, "Member 'CompositingElement_IsSubElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElement_IsSubElement;
 
 // Function Composure.CompositingPickerAsyncTask.OpenCompositingPicker
 // 0x0038 (0x0038 - 0x0000)
@@ -563,14 +446,7 @@ public:
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCompositingPickerAsyncTask*            ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingPickerAsyncTask_OpenCompositingPicker) == 0x000008, "Wrong alignment on CompositingPickerAsyncTask_OpenCompositingPicker");
-static_assert(sizeof(CompositingPickerAsyncTask_OpenCompositingPicker) == 0x000038, "Wrong size on CompositingPickerAsyncTask_OpenCompositingPicker");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, PickerTarget_0) == 0x000000, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::PickerTarget_0' has a wrong offset!");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, DisplayImage) == 0x000008, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::DisplayImage' has a wrong offset!");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, WindowTitle) == 0x000010, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::WindowTitle' has a wrong offset!");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, bAverageColorOnDrag) == 0x000028, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::bAverageColorOnDrag' has a wrong offset!");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, bUseImplicitGamma) == 0x000029, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::bUseImplicitGamma' has a wrong offset!");
-static_assert(offsetof(CompositingPickerAsyncTask_OpenCompositingPicker, ReturnValue) == 0x000030, "Member 'CompositingPickerAsyncTask_OpenCompositingPicker::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingPickerAsyncTask_OpenCompositingPicker;
 
 // Function Composure.CompositingElementPass.OnFrameBegin
 // 0x0001 (0x0001 - 0x0000)
@@ -579,9 +455,7 @@ struct CompositingElementPass_OnFrameBegin final
 public:
 	bool                                          bCameraCutThisFrame;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementPass_OnFrameBegin) == 0x000001, "Wrong alignment on CompositingElementPass_OnFrameBegin");
-static_assert(sizeof(CompositingElementPass_OnFrameBegin) == 0x000001, "Wrong size on CompositingElementPass_OnFrameBegin");
-static_assert(offsetof(CompositingElementPass_OnFrameBegin, bCameraCutThisFrame) == 0x000000, "Member 'CompositingElementPass_OnFrameBegin::bCameraCutThisFrame' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_OnFrameBegin;
 
 // Function Composure.CompositingElementPass.ReleaseRenderTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -592,10 +466,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingElementPass_ReleaseRenderTarget) == 0x000008, "Wrong alignment on CompositingElementPass_ReleaseRenderTarget");
-static_assert(sizeof(CompositingElementPass_ReleaseRenderTarget) == 0x000010, "Wrong size on CompositingElementPass_ReleaseRenderTarget");
-static_assert(offsetof(CompositingElementPass_ReleaseRenderTarget, AssignedTarget) == 0x000000, "Member 'CompositingElementPass_ReleaseRenderTarget::AssignedTarget' has a wrong offset!");
-static_assert(offsetof(CompositingElementPass_ReleaseRenderTarget, ReturnValue) == 0x000008, "Member 'CompositingElementPass_ReleaseRenderTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_ReleaseRenderTarget;
 
 // Function Composure.CompositingElementPass.RequestNativelyFormattedTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -606,10 +477,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementPass_RequestNativelyFormattedTarget) == 0x000008, "Wrong alignment on CompositingElementPass_RequestNativelyFormattedTarget");
-static_assert(sizeof(CompositingElementPass_RequestNativelyFormattedTarget) == 0x000010, "Wrong size on CompositingElementPass_RequestNativelyFormattedTarget");
-static_assert(offsetof(CompositingElementPass_RequestNativelyFormattedTarget, RenderScale) == 0x000000, "Member 'CompositingElementPass_RequestNativelyFormattedTarget::RenderScale' has a wrong offset!");
-static_assert(offsetof(CompositingElementPass_RequestNativelyFormattedTarget, ReturnValue) == 0x000008, "Member 'CompositingElementPass_RequestNativelyFormattedTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_RequestNativelyFormattedTarget;
 
 // Function Composure.CompositingElementPass.RequestRenderTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -621,11 +489,7 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementPass_RequestRenderTarget) == 0x000008, "Wrong alignment on CompositingElementPass_RequestRenderTarget");
-static_assert(sizeof(CompositingElementPass_RequestRenderTarget) == 0x000018, "Wrong size on CompositingElementPass_RequestRenderTarget");
-static_assert(offsetof(CompositingElementPass_RequestRenderTarget, Dimensions) == 0x000000, "Member 'CompositingElementPass_RequestRenderTarget::Dimensions' has a wrong offset!");
-static_assert(offsetof(CompositingElementPass_RequestRenderTarget, Format) == 0x000008, "Member 'CompositingElementPass_RequestRenderTarget::Format' has a wrong offset!");
-static_assert(offsetof(CompositingElementPass_RequestRenderTarget, ReturnValue) == 0x000010, "Member 'CompositingElementPass_RequestRenderTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_RequestRenderTarget;
 
 // Function Composure.CompositingElementPass.SetPassEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -634,9 +498,7 @@ struct CompositingElementPass_SetPassEnabled final
 public:
 	bool                                          bSetEnabledTo;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementPass_SetPassEnabled) == 0x000001, "Wrong alignment on CompositingElementPass_SetPassEnabled");
-static_assert(sizeof(CompositingElementPass_SetPassEnabled) == 0x000001, "Wrong size on CompositingElementPass_SetPassEnabled");
-static_assert(offsetof(CompositingElementPass_SetPassEnabled, bSetEnabledTo) == 0x000000, "Member 'CompositingElementPass_SetPassEnabled::bSetEnabledTo' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_SetPassEnabled;
 
 // Function Composure.CompositingElementPass.IsPassEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -645,9 +507,7 @@ struct CompositingElementPass_IsPassEnabled final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementPass_IsPassEnabled) == 0x000001, "Wrong alignment on CompositingElementPass_IsPassEnabled");
-static_assert(sizeof(CompositingElementPass_IsPassEnabled) == 0x000001, "Wrong size on CompositingElementPass_IsPassEnabled");
-static_assert(offsetof(CompositingElementPass_IsPassEnabled, ReturnValue) == 0x000000, "Member 'CompositingElementPass_IsPassEnabled::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementPass_IsPassEnabled;
 
 // Function Composure.CompositingElementInput.GenerateInput
 // 0x0008 (0x0008 - 0x0000)
@@ -656,9 +516,47 @@ struct CompositingElementInput_GenerateInput final
 public:
 	class UTexture*                               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementInput_GenerateInput) == 0x000008, "Wrong alignment on CompositingElementInput_GenerateInput");
-static_assert(sizeof(CompositingElementInput_GenerateInput) == 0x000008, "Wrong size on CompositingElementInput_GenerateInput");
-static_assert(offsetof(CompositingElementInput_GenerateInput, ReturnValue) == 0x000000, "Member 'CompositingElementInput_GenerateInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementInput_GenerateInput;
+
+// Function Composure.CompositingInputInterface.GenerateInput
+// 0x0010 (0x0010 - 0x0000)
+struct CompositingInputInterface_GenerateInput final
+{
+public:
+	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CompositingInputInterface_GenerateInput;
+
+// Function Composure.CompositingInputInterface.OnFrameBegin
+// 0x0010 (0x0010 - 0x0000)
+struct CompositingInputInterface_OnFrameBegin final
+{
+public:
+	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCameraCutThisFrame;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_CompositingInputInterface_OnFrameBegin;
+
+// Function Composure.CompositingInputInterface.OnFrameEnd
+// 0x0008 (0x0008 - 0x0000)
+struct CompositingInputInterface_OnFrameEnd final
+{
+public:
+	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CompositingInputInterface_OnFrameEnd;
+
+// Function Composure.CompositingElementOutput.RelayOutput
+// 0x0010 (0x0010 - 0x0000)
+struct CompositingElementOutput_RelayOutput final
+{
+public:
+	class UTexture*                               FinalResult;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UComposurePostProcessingPassProxy*      PostProcessProxy;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CompositingElementOutput_RelayOutput;
 
 // Function Composure.CompositingElementTransform.ApplyTransform
 // 0x0020 (0x0020 - 0x0000)
@@ -670,12 +568,7 @@ public:
 	class ACameraActor*                           TargetCamera;                                      // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture*                               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementTransform_ApplyTransform) == 0x000008, "Wrong alignment on CompositingElementTransform_ApplyTransform");
-static_assert(sizeof(CompositingElementTransform_ApplyTransform) == 0x000020, "Wrong size on CompositingElementTransform_ApplyTransform");
-static_assert(offsetof(CompositingElementTransform_ApplyTransform, Input) == 0x000000, "Member 'CompositingElementTransform_ApplyTransform::Input' has a wrong offset!");
-static_assert(offsetof(CompositingElementTransform_ApplyTransform, PostProcessProxy) == 0x000008, "Member 'CompositingElementTransform_ApplyTransform::PostProcessProxy' has a wrong offset!");
-static_assert(offsetof(CompositingElementTransform_ApplyTransform, TargetCamera) == 0x000010, "Member 'CompositingElementTransform_ApplyTransform::TargetCamera' has a wrong offset!");
-static_assert(offsetof(CompositingElementTransform_ApplyTransform, ReturnValue) == 0x000018, "Member 'CompositingElementTransform_ApplyTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementTransform_ApplyTransform;
 
 // Function Composure.CompositingElementTransform.FindNamedPrePassResult
 // 0x0018 (0x0018 - 0x0000)
@@ -686,61 +579,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementTransform_FindNamedPrePassResult) == 0x000008, "Wrong alignment on CompositingElementTransform_FindNamedPrePassResult");
-static_assert(sizeof(CompositingElementTransform_FindNamedPrePassResult) == 0x000018, "Wrong size on CompositingElementTransform_FindNamedPrePassResult");
-static_assert(offsetof(CompositingElementTransform_FindNamedPrePassResult, PassLookupName) == 0x000000, "Member 'CompositingElementTransform_FindNamedPrePassResult::PassLookupName' has a wrong offset!");
-static_assert(offsetof(CompositingElementTransform_FindNamedPrePassResult, ReturnValue) == 0x000010, "Member 'CompositingElementTransform_FindNamedPrePassResult::ReturnValue' has a wrong offset!");
-
-// Function Composure.CompositingInputInterface.GenerateInput
-// 0x0010 (0x0010 - 0x0000)
-struct CompositingInputInterface_GenerateInput final
-{
-public:
-	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture*                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CompositingInputInterface_GenerateInput) == 0x000008, "Wrong alignment on CompositingInputInterface_GenerateInput");
-static_assert(sizeof(CompositingInputInterface_GenerateInput) == 0x000010, "Wrong size on CompositingInputInterface_GenerateInput");
-static_assert(offsetof(CompositingInputInterface_GenerateInput, Proxy) == 0x000000, "Member 'CompositingInputInterface_GenerateInput::Proxy' has a wrong offset!");
-static_assert(offsetof(CompositingInputInterface_GenerateInput, ReturnValue) == 0x000008, "Member 'CompositingInputInterface_GenerateInput::ReturnValue' has a wrong offset!");
-
-// Function Composure.CompositingInputInterface.OnFrameBegin
-// 0x0010 (0x0010 - 0x0000)
-struct CompositingInputInterface_OnFrameBegin final
-{
-public:
-	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCameraCutThisFrame;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(CompositingInputInterface_OnFrameBegin) == 0x000008, "Wrong alignment on CompositingInputInterface_OnFrameBegin");
-static_assert(sizeof(CompositingInputInterface_OnFrameBegin) == 0x000010, "Wrong size on CompositingInputInterface_OnFrameBegin");
-static_assert(offsetof(CompositingInputInterface_OnFrameBegin, Proxy) == 0x000000, "Member 'CompositingInputInterface_OnFrameBegin::Proxy' has a wrong offset!");
-static_assert(offsetof(CompositingInputInterface_OnFrameBegin, bCameraCutThisFrame) == 0x000008, "Member 'CompositingInputInterface_OnFrameBegin::bCameraCutThisFrame' has a wrong offset!");
-
-// Function Composure.CompositingInputInterface.OnFrameEnd
-// 0x0008 (0x0008 - 0x0000)
-struct CompositingInputInterface_OnFrameEnd final
-{
-public:
-	class UCompositingInputInterfaceProxy*        Proxy;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CompositingInputInterface_OnFrameEnd) == 0x000008, "Wrong alignment on CompositingInputInterface_OnFrameEnd");
-static_assert(sizeof(CompositingInputInterface_OnFrameEnd) == 0x000008, "Wrong size on CompositingInputInterface_OnFrameEnd");
-static_assert(offsetof(CompositingInputInterface_OnFrameEnd, Proxy) == 0x000000, "Member 'CompositingInputInterface_OnFrameEnd::Proxy' has a wrong offset!");
-
-// Function Composure.CompositingElementOutput.RelayOutput
-// 0x0010 (0x0010 - 0x0000)
-struct CompositingElementOutput_RelayOutput final
-{
-public:
-	class UTexture*                               FinalResult;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UComposurePostProcessingPassProxy*      PostProcessProxy;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CompositingElementOutput_RelayOutput) == 0x000008, "Wrong alignment on CompositingElementOutput_RelayOutput");
-static_assert(sizeof(CompositingElementOutput_RelayOutput) == 0x000010, "Wrong size on CompositingElementOutput_RelayOutput");
-static_assert(offsetof(CompositingElementOutput_RelayOutput, FinalResult) == 0x000000, "Member 'CompositingElementOutput_RelayOutput::FinalResult' has a wrong offset!");
-static_assert(offsetof(CompositingElementOutput_RelayOutput, PostProcessProxy) == 0x000008, "Member 'CompositingElementOutput_RelayOutput::PostProcessProxy' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementTransform_FindNamedPrePassResult;
 
 // Function Composure.CompositingElementMaterialPass.ApplyMaterialParams
 // 0x0008 (0x0008 - 0x0000)
@@ -749,9 +588,7 @@ struct CompositingElementMaterialPass_ApplyMaterialParams final
 public:
 	class UMaterialInstanceDynamic*               MID;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementMaterialPass_ApplyMaterialParams) == 0x000008, "Wrong alignment on CompositingElementMaterialPass_ApplyMaterialParams");
-static_assert(sizeof(CompositingElementMaterialPass_ApplyMaterialParams) == 0x000008, "Wrong size on CompositingElementMaterialPass_ApplyMaterialParams");
-static_assert(offsetof(CompositingElementMaterialPass_ApplyMaterialParams, MID) == 0x000000, "Member 'CompositingElementMaterialPass_ApplyMaterialParams::MID' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementMaterialPass_ApplyMaterialParams;
 
 // Function Composure.CompositingElementMaterialPass.SetMaterialInterface
 // 0x0008 (0x0008 - 0x0000)
@@ -760,9 +597,7 @@ struct CompositingElementMaterialPass_SetMaterialInterface final
 public:
 	class UMaterialInterface*                     NewMaterial;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CompositingElementMaterialPass_SetMaterialInterface) == 0x000008, "Wrong alignment on CompositingElementMaterialPass_SetMaterialInterface");
-static_assert(sizeof(CompositingElementMaterialPass_SetMaterialInterface) == 0x000008, "Wrong size on CompositingElementMaterialPass_SetMaterialInterface");
-static_assert(offsetof(CompositingElementMaterialPass_SetMaterialInterface, NewMaterial) == 0x000000, "Member 'CompositingElementMaterialPass_SetMaterialInterface::NewMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementMaterialPass_SetMaterialInterface;
 
 // Function Composure.CompositingElementMaterialPass.SetParameterMapping
 // 0x001C (0x001C - 0x0000)
@@ -774,11 +609,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingElementMaterialPass_SetParameterMapping) == 0x000004, "Wrong alignment on CompositingElementMaterialPass_SetParameterMapping");
-static_assert(sizeof(CompositingElementMaterialPass_SetParameterMapping) == 0x00001C, "Wrong size on CompositingElementMaterialPass_SetParameterMapping");
-static_assert(offsetof(CompositingElementMaterialPass_SetParameterMapping, TextureParamName) == 0x000000, "Member 'CompositingElementMaterialPass_SetParameterMapping::TextureParamName' has a wrong offset!");
-static_assert(offsetof(CompositingElementMaterialPass_SetParameterMapping, ComposureLayerName) == 0x00000C, "Member 'CompositingElementMaterialPass_SetParameterMapping::ComposureLayerName' has a wrong offset!");
-static_assert(offsetof(CompositingElementMaterialPass_SetParameterMapping, ReturnValue) == 0x000018, "Member 'CompositingElementMaterialPass_SetParameterMapping::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingElementMaterialPass_SetParameterMapping;
 
 // Function Composure.ComposureBlueprintLibrary.AttachComposureElement
 // 0x001C (0x001C - 0x0000)
@@ -790,11 +621,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ComposureBlueprintLibrary_AttachComposureElement) == 0x000004, "Wrong alignment on ComposureBlueprintLibrary_AttachComposureElement");
-static_assert(sizeof(ComposureBlueprintLibrary_AttachComposureElement) == 0x00001C, "Wrong size on ComposureBlueprintLibrary_AttachComposureElement");
-static_assert(offsetof(ComposureBlueprintLibrary_AttachComposureElement, ParentName) == 0x000000, "Member 'ComposureBlueprintLibrary_AttachComposureElement::ParentName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_AttachComposureElement, ChildName) == 0x00000C, "Member 'ComposureBlueprintLibrary_AttachComposureElement::ChildName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_AttachComposureElement, ReturnValue) == 0x000018, "Member 'ComposureBlueprintLibrary_AttachComposureElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_AttachComposureElement;
 
 // Function Composure.ComposureBlueprintLibrary.CopyCameraSettingsToSceneCapture
 // 0x0018 (0x0018 - 0x0000)
@@ -806,12 +633,7 @@ public:
 	float                                         OriginalFocalLength;                               // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OverscanFactor;                                    // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture");
-static_assert(sizeof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture) == 0x000018, "Wrong size on ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture");
-static_assert(offsetof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture, SrcCamera) == 0x000000, "Member 'ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture::SrcCamera' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture, DstCaptureComponent) == 0x000008, "Member 'ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture::DstCaptureComponent' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture, OriginalFocalLength) == 0x000010, "Member 'ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture::OriginalFocalLength' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture, OverscanFactor) == 0x000014, "Member 'ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture::OverscanFactor' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_CopyCameraSettingsToSceneCapture;
 
 // Function Composure.ComposureBlueprintLibrary.CreateComposureElement
 // 0x0028 (0x0028 - 0x0000)
@@ -824,12 +646,7 @@ public:
 	class AActor*                                 LevelContext;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ACompositingElement*                    ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_CreateComposureElement) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_CreateComposureElement");
-static_assert(sizeof(ComposureBlueprintLibrary_CreateComposureElement) == 0x000028, "Wrong size on ComposureBlueprintLibrary_CreateComposureElement");
-static_assert(offsetof(ComposureBlueprintLibrary_CreateComposureElement, ElementName) == 0x000000, "Member 'ComposureBlueprintLibrary_CreateComposureElement::ElementName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CreateComposureElement, ClassType) == 0x000010, "Member 'ComposureBlueprintLibrary_CreateComposureElement::ClassType' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CreateComposureElement, LevelContext) == 0x000018, "Member 'ComposureBlueprintLibrary_CreateComposureElement::LevelContext' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CreateComposureElement, ReturnValue) == 0x000020, "Member 'ComposureBlueprintLibrary_CreateComposureElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_CreateComposureElement;
 
 // Function Composure.ComposureBlueprintLibrary.CreatePlayerCompositingTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -839,10 +656,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UComposurePlayerCompositingTarget*      ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_CreatePlayerCompositingTarget) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_CreatePlayerCompositingTarget");
-static_assert(sizeof(ComposureBlueprintLibrary_CreatePlayerCompositingTarget) == 0x000010, "Wrong size on ComposureBlueprintLibrary_CreatePlayerCompositingTarget");
-static_assert(offsetof(ComposureBlueprintLibrary_CreatePlayerCompositingTarget, WorldContextObject) == 0x000000, "Member 'ComposureBlueprintLibrary_CreatePlayerCompositingTarget::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_CreatePlayerCompositingTarget, ReturnValue) == 0x000008, "Member 'ComposureBlueprintLibrary_CreatePlayerCompositingTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_CreatePlayerCompositingTarget;
 
 // Function Composure.ComposureBlueprintLibrary.DeleteComposureElementAndChildren
 // 0x000C (0x000C - 0x0000)
@@ -851,9 +665,7 @@ struct ComposureBlueprintLibrary_DeleteComposureElementAndChildren final
 public:
 	class FName                                   ElementToDelete;                                   // 0x0000(0x000C)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_DeleteComposureElementAndChildren) == 0x000004, "Wrong alignment on ComposureBlueprintLibrary_DeleteComposureElementAndChildren");
-static_assert(sizeof(ComposureBlueprintLibrary_DeleteComposureElementAndChildren) == 0x00000C, "Wrong size on ComposureBlueprintLibrary_DeleteComposureElementAndChildren");
-static_assert(offsetof(ComposureBlueprintLibrary_DeleteComposureElementAndChildren, ElementToDelete) == 0x000000, "Member 'ComposureBlueprintLibrary_DeleteComposureElementAndChildren::ElementToDelete' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_DeleteComposureElementAndChildren;
 
 // Function Composure.ComposureBlueprintLibrary.GetComposureElement
 // 0x0018 (0x0018 - 0x0000)
@@ -864,10 +676,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACompositingElement*                    ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_GetComposureElement) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_GetComposureElement");
-static_assert(sizeof(ComposureBlueprintLibrary_GetComposureElement) == 0x000018, "Wrong size on ComposureBlueprintLibrary_GetComposureElement");
-static_assert(offsetof(ComposureBlueprintLibrary_GetComposureElement, ElementName) == 0x000000, "Member 'ComposureBlueprintLibrary_GetComposureElement::ElementName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetComposureElement, ReturnValue) == 0x000010, "Member 'ComposureBlueprintLibrary_GetComposureElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_GetComposureElement;
 
 // Function Composure.ComposureBlueprintLibrary.GetCroppingUVTransformationMatrixFromPostMoveSettings
 // 0x0130 (0x0130 - 0x0000)
@@ -880,12 +689,7 @@ public:
 	struct FMatrix                                CropingUVTransformationMatrix;                     // 0x0030(0x0080)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMatrix                                UncropingUVTransformationMatrix;                   // 0x00B0(0x0080)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings) == 0x000010, "Wrong alignment on ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings");
-static_assert(sizeof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings) == 0x000130, "Wrong size on ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings");
-static_assert(offsetof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings, PostMoveSettings) == 0x000000, "Member 'ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings::PostMoveSettings' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings, AspectRatio) == 0x000028, "Member 'ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings::AspectRatio' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings, CropingUVTransformationMatrix) == 0x000030, "Member 'ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings::CropingUVTransformationMatrix' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings, UncropingUVTransformationMatrix) == 0x0000B0, "Member 'ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings::UncropingUVTransformationMatrix' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_GetCroppingUVTransformationMatrixFromPostMoveSettings;
 
 // Function Composure.ComposureBlueprintLibrary.GetPlayerDisplayGamma
 // 0x0010 (0x0010 - 0x0000)
@@ -896,10 +700,7 @@ public:
 	float                                         DisplayGamma;                                      // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ComposureBlueprintLibrary_GetPlayerDisplayGamma) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_GetPlayerDisplayGamma");
-static_assert(sizeof(ComposureBlueprintLibrary_GetPlayerDisplayGamma) == 0x000010, "Wrong size on ComposureBlueprintLibrary_GetPlayerDisplayGamma");
-static_assert(offsetof(ComposureBlueprintLibrary_GetPlayerDisplayGamma, PlayerCameraManager) == 0x000000, "Member 'ComposureBlueprintLibrary_GetPlayerDisplayGamma::PlayerCameraManager' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetPlayerDisplayGamma, DisplayGamma) == 0x000008, "Member 'ComposureBlueprintLibrary_GetPlayerDisplayGamma::DisplayGamma' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_GetPlayerDisplayGamma;
 
 // Function Composure.ComposureBlueprintLibrary.GetProjectionMatrixFromPostMoveSettings
 // 0x00B0 (0x00B0 - 0x0000)
@@ -911,12 +712,7 @@ public:
 	float                                         AspectRatio;                                       // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatrix                                ProjectionMatrix;                                  // 0x0030(0x0080)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings) == 0x000010, "Wrong alignment on ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings");
-static_assert(sizeof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings) == 0x0000B0, "Wrong size on ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings");
-static_assert(offsetof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings, PostMoveSettings) == 0x000000, "Member 'ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings::PostMoveSettings' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings, HorizontalFOVAngle) == 0x000028, "Member 'ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings::HorizontalFOVAngle' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings, AspectRatio) == 0x00002C, "Member 'ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings::AspectRatio' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings, ProjectionMatrix) == 0x000030, "Member 'ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings::ProjectionMatrix' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_GetProjectionMatrixFromPostMoveSettings;
 
 // Function Composure.ComposureBlueprintLibrary.GetRedGreenUVFactorsFromChromaticAberration
 // 0x0018 (0x0018 - 0x0000)
@@ -927,10 +723,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              RedGreenUVFactors;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration");
-static_assert(sizeof(ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration) == 0x000018, "Wrong size on ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration");
-static_assert(offsetof(ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration, ChromaticAberrationAmount) == 0x000000, "Member 'ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration::ChromaticAberrationAmount' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration, RedGreenUVFactors) == 0x000008, "Member 'ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration::RedGreenUVFactors' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_GetRedGreenUVFactorsFromChromaticAberration;
 
 // Function Composure.ComposureBlueprintLibrary.InvertUVDisplacementMapEncodingParameters
 // 0x0020 (0x0020 - 0x0000)
@@ -940,10 +733,7 @@ public:
 	struct FVector2D                              In;                                                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              Out;                                               // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters");
-static_assert(sizeof(ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters) == 0x000020, "Wrong size on ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters");
-static_assert(offsetof(ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters, In) == 0x000000, "Member 'ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters::In' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters, Out) == 0x000010, "Member 'ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters::Out' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_InvertUVDisplacementMapEncodingParameters;
 
 // Function Composure.ComposureBlueprintLibrary.IsComposureElementDrawing
 // 0x0010 (0x0010 - 0x0000)
@@ -954,10 +744,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ComposureBlueprintLibrary_IsComposureElementDrawing) == 0x000008, "Wrong alignment on ComposureBlueprintLibrary_IsComposureElementDrawing");
-static_assert(sizeof(ComposureBlueprintLibrary_IsComposureElementDrawing) == 0x000010, "Wrong size on ComposureBlueprintLibrary_IsComposureElementDrawing");
-static_assert(offsetof(ComposureBlueprintLibrary_IsComposureElementDrawing, CompElement) == 0x000000, "Member 'ComposureBlueprintLibrary_IsComposureElementDrawing::CompElement' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_IsComposureElementDrawing, ReturnValue) == 0x000008, "Member 'ComposureBlueprintLibrary_IsComposureElementDrawing::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_IsComposureElementDrawing;
 
 // Function Composure.ComposureBlueprintLibrary.RenameComposureElement
 // 0x001C (0x001C - 0x0000)
@@ -969,11 +756,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ComposureBlueprintLibrary_RenameComposureElement) == 0x000004, "Wrong alignment on ComposureBlueprintLibrary_RenameComposureElement");
-static_assert(sizeof(ComposureBlueprintLibrary_RenameComposureElement) == 0x00001C, "Wrong size on ComposureBlueprintLibrary_RenameComposureElement");
-static_assert(offsetof(ComposureBlueprintLibrary_RenameComposureElement, OriginalElementName) == 0x000000, "Member 'ComposureBlueprintLibrary_RenameComposureElement::OriginalElementName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_RenameComposureElement, NewElementName) == 0x00000C, "Member 'ComposureBlueprintLibrary_RenameComposureElement::NewElementName' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_RenameComposureElement, ReturnValue) == 0x000018, "Member 'ComposureBlueprintLibrary_RenameComposureElement::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_RenameComposureElement;
 
 // Function Composure.ComposureBlueprintLibrary.SetUVMapSettingsToMaterialParameters
 // 0x0130 (0x0130 - 0x0000)
@@ -984,10 +767,7 @@ public:
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0120(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters) == 0x000010, "Wrong alignment on ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters");
-static_assert(sizeof(ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters) == 0x000130, "Wrong size on ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters");
-static_assert(offsetof(ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters, UVMapSettings) == 0x000000, "Member 'ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters::UVMapSettings' has a wrong offset!");
-static_assert(offsetof(ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters, Material) == 0x000120, "Member 'ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters::Material' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureBlueprintLibrary_SetUVMapSettingsToMaterialParameters;
 
 // Function Composure.ComposurePostProcessPass.SetOutputRenderTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -996,9 +776,7 @@ struct ComposurePostProcessPass_SetOutputRenderTarget final
 public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessPass_SetOutputRenderTarget) == 0x000008, "Wrong alignment on ComposurePostProcessPass_SetOutputRenderTarget");
-static_assert(sizeof(ComposurePostProcessPass_SetOutputRenderTarget) == 0x000008, "Wrong size on ComposurePostProcessPass_SetOutputRenderTarget");
-static_assert(offsetof(ComposurePostProcessPass_SetOutputRenderTarget, RenderTarget) == 0x000000, "Member 'ComposurePostProcessPass_SetOutputRenderTarget::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessPass_SetOutputRenderTarget;
 
 // Function Composure.ComposurePostProcessPass.SetSetupMaterial
 // 0x0008 (0x0008 - 0x0000)
@@ -1007,9 +785,7 @@ struct ComposurePostProcessPass_SetSetupMaterial final
 public:
 	class UMaterialInterface*                     Material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessPass_SetSetupMaterial) == 0x000008, "Wrong alignment on ComposurePostProcessPass_SetSetupMaterial");
-static_assert(sizeof(ComposurePostProcessPass_SetSetupMaterial) == 0x000008, "Wrong size on ComposurePostProcessPass_SetSetupMaterial");
-static_assert(offsetof(ComposurePostProcessPass_SetSetupMaterial, Material) == 0x000000, "Member 'ComposurePostProcessPass_SetSetupMaterial::Material' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessPass_SetSetupMaterial;
 
 // Function Composure.ComposurePostProcessPass.GetOutputRenderTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -1018,9 +794,7 @@ struct ComposurePostProcessPass_GetOutputRenderTarget final
 public:
 	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessPass_GetOutputRenderTarget) == 0x000008, "Wrong alignment on ComposurePostProcessPass_GetOutputRenderTarget");
-static_assert(sizeof(ComposurePostProcessPass_GetOutputRenderTarget) == 0x000008, "Wrong size on ComposurePostProcessPass_GetOutputRenderTarget");
-static_assert(offsetof(ComposurePostProcessPass_GetOutputRenderTarget, ReturnValue) == 0x000000, "Member 'ComposurePostProcessPass_GetOutputRenderTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessPass_GetOutputRenderTarget;
 
 // Function Composure.ComposurePostProcessPass.GetSetupMaterial
 // 0x0008 (0x0008 - 0x0000)
@@ -1029,9 +803,7 @@ struct ComposurePostProcessPass_GetSetupMaterial final
 public:
 	class UMaterialInterface*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessPass_GetSetupMaterial) == 0x000008, "Wrong alignment on ComposurePostProcessPass_GetSetupMaterial");
-static_assert(sizeof(ComposurePostProcessPass_GetSetupMaterial) == 0x000008, "Wrong size on ComposurePostProcessPass_GetSetupMaterial");
-static_assert(offsetof(ComposurePostProcessPass_GetSetupMaterial, ReturnValue) == 0x000000, "Member 'ComposurePostProcessPass_GetSetupMaterial::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessPass_GetSetupMaterial;
 
 // Function Composure.ComposureLensBloomPass.SetTonemapperReplacingMaterial
 // 0x0008 (0x0008 - 0x0000)
@@ -1040,9 +812,7 @@ struct ComposureLensBloomPass_SetTonemapperReplacingMaterial final
 public:
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureLensBloomPass_SetTonemapperReplacingMaterial) == 0x000008, "Wrong alignment on ComposureLensBloomPass_SetTonemapperReplacingMaterial");
-static_assert(sizeof(ComposureLensBloomPass_SetTonemapperReplacingMaterial) == 0x000008, "Wrong size on ComposureLensBloomPass_SetTonemapperReplacingMaterial");
-static_assert(offsetof(ComposureLensBloomPass_SetTonemapperReplacingMaterial, Material) == 0x000000, "Member 'ComposureLensBloomPass_SetTonemapperReplacingMaterial::Material' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureLensBloomPass_SetTonemapperReplacingMaterial;
 
 // Function Composure.ComposurePostProcessPassPolicy.SetupPostProcess
 // 0x0010 (0x0010 - 0x0000)
@@ -1052,10 +822,7 @@ public:
 	class USceneCaptureComponent2D*               SceneCapture;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     TonemapperOverride;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessPassPolicy_SetupPostProcess) == 0x000008, "Wrong alignment on ComposurePostProcessPassPolicy_SetupPostProcess");
-static_assert(sizeof(ComposurePostProcessPassPolicy_SetupPostProcess) == 0x000010, "Wrong size on ComposurePostProcessPassPolicy_SetupPostProcess");
-static_assert(offsetof(ComposurePostProcessPassPolicy_SetupPostProcess, SceneCapture) == 0x000000, "Member 'ComposurePostProcessPassPolicy_SetupPostProcess::SceneCapture' has a wrong offset!");
-static_assert(offsetof(ComposurePostProcessPassPolicy_SetupPostProcess, TonemapperOverride) == 0x000008, "Member 'ComposurePostProcessPassPolicy_SetupPostProcess::TonemapperOverride' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessPassPolicy_SetupPostProcess;
 
 // Function Composure.ComposurePlayerCompositingTarget.SetPlayerCameraManager
 // 0x0010 (0x0010 - 0x0000)
@@ -1065,10 +832,7 @@ public:
 	class APlayerCameraManager*                   PlayerCameraManager_0;                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerCameraManager*                   ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePlayerCompositingTarget_SetPlayerCameraManager) == 0x000008, "Wrong alignment on ComposurePlayerCompositingTarget_SetPlayerCameraManager");
-static_assert(sizeof(ComposurePlayerCompositingTarget_SetPlayerCameraManager) == 0x000010, "Wrong size on ComposurePlayerCompositingTarget_SetPlayerCameraManager");
-static_assert(offsetof(ComposurePlayerCompositingTarget_SetPlayerCameraManager, PlayerCameraManager_0) == 0x000000, "Member 'ComposurePlayerCompositingTarget_SetPlayerCameraManager::PlayerCameraManager_0' has a wrong offset!");
-static_assert(offsetof(ComposurePlayerCompositingTarget_SetPlayerCameraManager, ReturnValue) == 0x000008, "Member 'ComposurePlayerCompositingTarget_SetPlayerCameraManager::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePlayerCompositingTarget_SetPlayerCameraManager;
 
 // Function Composure.ComposurePlayerCompositingTarget.SetRenderTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -1077,9 +841,7 @@ struct ComposurePlayerCompositingTarget_SetRenderTarget final
 public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePlayerCompositingTarget_SetRenderTarget) == 0x000008, "Wrong alignment on ComposurePlayerCompositingTarget_SetRenderTarget");
-static_assert(sizeof(ComposurePlayerCompositingTarget_SetRenderTarget) == 0x000008, "Wrong size on ComposurePlayerCompositingTarget_SetRenderTarget");
-static_assert(offsetof(ComposurePlayerCompositingTarget_SetRenderTarget, RenderTarget) == 0x000000, "Member 'ComposurePlayerCompositingTarget_SetRenderTarget::RenderTarget' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePlayerCompositingTarget_SetRenderTarget;
 
 // Function Composure.ComposurePlayerCompositingTarget.GetPlayerCameraManager
 // 0x0008 (0x0008 - 0x0000)
@@ -1088,9 +850,7 @@ struct ComposurePlayerCompositingTarget_GetPlayerCameraManager final
 public:
 	class APlayerCameraManager*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePlayerCompositingTarget_GetPlayerCameraManager) == 0x000008, "Wrong alignment on ComposurePlayerCompositingTarget_GetPlayerCameraManager");
-static_assert(sizeof(ComposurePlayerCompositingTarget_GetPlayerCameraManager) == 0x000008, "Wrong size on ComposurePlayerCompositingTarget_GetPlayerCameraManager");
-static_assert(offsetof(ComposurePlayerCompositingTarget_GetPlayerCameraManager, ReturnValue) == 0x000000, "Member 'ComposurePlayerCompositingTarget_GetPlayerCameraManager::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePlayerCompositingTarget_GetPlayerCameraManager;
 
 // Function Composure.ComposureCompositingTargetComponent.SetDisplayTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -1099,9 +859,7 @@ struct ComposureCompositingTargetComponent_SetDisplayTexture final
 public:
 	class UTexture*                               DisplayTexture_0;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureCompositingTargetComponent_SetDisplayTexture) == 0x000008, "Wrong alignment on ComposureCompositingTargetComponent_SetDisplayTexture");
-static_assert(sizeof(ComposureCompositingTargetComponent_SetDisplayTexture) == 0x000008, "Wrong size on ComposureCompositingTargetComponent_SetDisplayTexture");
-static_assert(offsetof(ComposureCompositingTargetComponent_SetDisplayTexture, DisplayTexture_0) == 0x000000, "Member 'ComposureCompositingTargetComponent_SetDisplayTexture::DisplayTexture_0' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureCompositingTargetComponent_SetDisplayTexture;
 
 // Function Composure.ComposureCompositingTargetComponent.GetDisplayTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -1110,9 +868,7 @@ struct ComposureCompositingTargetComponent_GetDisplayTexture final
 public:
 	class UTexture*                               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposureCompositingTargetComponent_GetDisplayTexture) == 0x000008, "Wrong alignment on ComposureCompositingTargetComponent_GetDisplayTexture");
-static_assert(sizeof(ComposureCompositingTargetComponent_GetDisplayTexture) == 0x000008, "Wrong size on ComposureCompositingTargetComponent_GetDisplayTexture");
-static_assert(offsetof(ComposureCompositingTargetComponent_GetDisplayTexture, ReturnValue) == 0x000000, "Member 'ComposureCompositingTargetComponent_GetDisplayTexture::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_ComposureCompositingTargetComponent_GetDisplayTexture;
 
 // Function Composure.ComposurePostProcessingPassProxy.Execute
 // 0x0010 (0x0010 - 0x0000)
@@ -1122,10 +878,7 @@ public:
 	class UTexture*                               PrePassInput;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UComposurePostProcessPassPolicy*        PostProcessPass;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(ComposurePostProcessingPassProxy_Execute) == 0x000008, "Wrong alignment on ComposurePostProcessingPassProxy_Execute");
-static_assert(sizeof(ComposurePostProcessingPassProxy_Execute) == 0x000010, "Wrong size on ComposurePostProcessingPassProxy_Execute");
-static_assert(offsetof(ComposurePostProcessingPassProxy_Execute, PrePassInput) == 0x000000, "Member 'ComposurePostProcessingPassProxy_Execute::PrePassInput' has a wrong offset!");
-static_assert(offsetof(ComposurePostProcessingPassProxy_Execute, PostProcessPass) == 0x000008, "Member 'ComposurePostProcessingPassProxy_Execute::PostProcessPass' has a wrong offset!");
+DUMPER7_ASSERTS_ComposurePostProcessingPassProxy_Execute;
 
 // Function Composure.CompositingTextureLookupTable.FindNamedPassResult
 // 0x0020 (0x0020 - 0x0000)
@@ -1138,11 +891,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(CompositingTextureLookupTable_FindNamedPassResult) == 0x000008, "Wrong alignment on CompositingTextureLookupTable_FindNamedPassResult");
-static_assert(sizeof(CompositingTextureLookupTable_FindNamedPassResult) == 0x000020, "Wrong size on CompositingTextureLookupTable_FindNamedPassResult");
-static_assert(offsetof(CompositingTextureLookupTable_FindNamedPassResult, LookupName) == 0x000000, "Member 'CompositingTextureLookupTable_FindNamedPassResult::LookupName' has a wrong offset!");
-static_assert(offsetof(CompositingTextureLookupTable_FindNamedPassResult, OutTexture) == 0x000010, "Member 'CompositingTextureLookupTable_FindNamedPassResult::OutTexture' has a wrong offset!");
-static_assert(offsetof(CompositingTextureLookupTable_FindNamedPassResult, ReturnValue) == 0x000018, "Member 'CompositingTextureLookupTable_FindNamedPassResult::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CompositingTextureLookupTable_FindNamedPassResult;
 
 // Function Composure.MovieSceneComposureExportClient.InitializeForExport
 // 0x0008 (0x0008 - 0x0000)
@@ -1151,9 +900,7 @@ struct MovieSceneComposureExportClient_InitializeForExport final
 public:
 	class UMovieSceneComposureExportInitializer*  ExportInitializer;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneComposureExportClient_InitializeForExport) == 0x000008, "Wrong alignment on MovieSceneComposureExportClient_InitializeForExport");
-static_assert(sizeof(MovieSceneComposureExportClient_InitializeForExport) == 0x000008, "Wrong size on MovieSceneComposureExportClient_InitializeForExport");
-static_assert(offsetof(MovieSceneComposureExportClient_InitializeForExport, ExportInitializer) == 0x000000, "Member 'MovieSceneComposureExportClient_InitializeForExport::ExportInitializer' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneComposureExportClient_InitializeForExport;
 
 // Function Composure.MovieSceneComposureExportInitializer.ExportSceneCaptureBuffers
 // 0x0020 (0x0020 - 0x0000)
@@ -1164,11 +911,7 @@ public:
 	class USceneCaptureComponent2D*               SceneCapture;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         BuffersToExport;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers) == 0x000008, "Wrong alignment on MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers");
-static_assert(sizeof(MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers) == 0x000020, "Wrong size on MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers");
-static_assert(offsetof(MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers, CompShotElement) == 0x000000, "Member 'MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers::CompShotElement' has a wrong offset!");
-static_assert(offsetof(MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers, SceneCapture) == 0x000008, "Member 'MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers::SceneCapture' has a wrong offset!");
-static_assert(offsetof(MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers, BuffersToExport) == 0x000010, "Member 'MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers::BuffersToExport' has a wrong offset!");
+DUMPER7_ASSERTS_MovieSceneComposureExportInitializer_ExportSceneCaptureBuffers;
 
 }
 

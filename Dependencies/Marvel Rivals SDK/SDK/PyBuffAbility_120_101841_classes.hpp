@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_101841.PyBuffAbility_120_10184105
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_10184105 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         DamageToCureBuffID;                                // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeroDamageToCureRatio;                             // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HeroDamageThreshold;                               // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShiledDamageToCureRatio;                           // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldDamageThreshold;                             // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageToCureBuffID;                                // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeroDamageToCureRatio;                             // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HeroDamageThreshold;                               // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShiledDamageToCureRatio;                           // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldDamageThreshold;                             // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,28 +37,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10184105">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10184105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10184105")
 	}
 	static class UPyBuffAbility_120_10184105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10184105>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10184105) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10184105");
-static_assert(sizeof(UPyBuffAbility_120_10184105) == 0x001388, "Wrong size on UPyBuffAbility_120_10184105");
-static_assert(offsetof(UPyBuffAbility_120_10184105, DamageToCureBuffID) == 0x001370, "Member 'UPyBuffAbility_120_10184105::DamageToCureBuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10184105, HeroDamageToCureRatio) == 0x001374, "Member 'UPyBuffAbility_120_10184105::HeroDamageToCureRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10184105, HeroDamageThreshold) == 0x001378, "Member 'UPyBuffAbility_120_10184105::HeroDamageThreshold' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10184105, ShiledDamageToCureRatio) == 0x00137C, "Member 'UPyBuffAbility_120_10184105::ShiledDamageToCureRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10184105, ShieldDamageThreshold) == 0x001380, "Member 'UPyBuffAbility_120_10184105::ShieldDamageThreshold' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10184105;
 
 // PythonClass PyBuffAbility_120_101841.PyBuffAbility_120_10184108
-// 0x0008 (0x1380 - 0x1378)
+// 0x0008 (0x1398 - 0x1390)
 class UPyBuffAbility_120_10184108 final : public UBuffAbility_CommonChess
 {
 public:
-	float                                         ShieldSummonerHpAdd;                               // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldSummonerRecoverSpeedAdd;                     // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldSummonerHpAdd;                               // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldSummonerRecoverSpeedAdd;                     // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -69,17 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10184108">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10184108")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10184108")
 	}
 	static class UPyBuffAbility_120_10184108* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10184108>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10184108) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10184108");
-static_assert(sizeof(UPyBuffAbility_120_10184108) == 0x001380, "Wrong size on UPyBuffAbility_120_10184108");
-static_assert(offsetof(UPyBuffAbility_120_10184108, ShieldSummonerHpAdd) == 0x001378, "Member 'UPyBuffAbility_120_10184108::ShieldSummonerHpAdd' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10184108, ShieldSummonerRecoverSpeedAdd) == 0x00137C, "Member 'UPyBuffAbility_120_10184108::ShieldSummonerRecoverSpeedAdd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10184108;
 
 }
 

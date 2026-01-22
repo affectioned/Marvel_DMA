@@ -21,9 +21,7 @@ struct PyWidget_Loading_PageListUnit_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Loading_PageListUnit_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Loading_PageListUnit_SetIsHover");
-static_assert(sizeof(PyWidget_Loading_PageListUnit_SetIsHover) == 0x000001, "Wrong size on PyWidget_Loading_PageListUnit_SetIsHover");
-static_assert(offsetof(PyWidget_Loading_PageListUnit_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Loading_PageListUnit_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Loading_PageListUnit_SetIsHover;
 
 }
 

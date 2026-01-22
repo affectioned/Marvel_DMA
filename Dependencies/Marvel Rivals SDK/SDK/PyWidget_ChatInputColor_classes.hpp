@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ChatInputColor.PyWidget_ChatColorButton
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ChatColorButton : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,24 +30,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatColorButton">();
+		STATIC_CLASS_IMPL("PyWidget_ChatColorButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatColorButton")
 	}
 	static class UPyWidget_ChatColorButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatColorButton>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatColorButton) == 0x000008, "Wrong alignment on UPyWidget_ChatColorButton");
-static_assert(sizeof(UPyWidget_ChatColorButton) == 0x0005D0, "Wrong size on UPyWidget_ChatColorButton");
-static_assert(offsetof(UPyWidget_ChatColorButton, OnClicked) == 0x0005C0, "Member 'UPyWidget_ChatColorButton::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatColorButton;
 
 // PythonClass PyWidget_ChatInputColor.PyWidget_ChatColorPanel
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ChatColorPanel : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& tag_name)> OnSelectColor;                     // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& tag_name)> OnSelectColor;                     // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,24 +58,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatColorPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ChatColorPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatColorPanel")
 	}
 	static class UPyWidget_ChatColorPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatColorPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatColorPanel) == 0x000008, "Wrong alignment on UPyWidget_ChatColorPanel");
-static_assert(sizeof(UPyWidget_ChatColorPanel) == 0x0005D0, "Wrong size on UPyWidget_ChatColorPanel");
-static_assert(offsetof(UPyWidget_ChatColorPanel, OnSelectColor) == 0x0005C0, "Member 'UPyWidget_ChatColorPanel::OnSelectColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatColorPanel;
 
 // PythonClass PyWidget_ChatInputColor.PyWidget_ChatTextColorBtnItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_ChatTextColorBtnItem : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& tag_name)> OnClicked;                         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& tag_name)> OnClicked;                         // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -81,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatTextColorBtnItem">();
+		STATIC_CLASS_IMPL("PyWidget_ChatTextColorBtnItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatTextColorBtnItem")
 	}
 	static class UPyWidget_ChatTextColorBtnItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatTextColorBtnItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatTextColorBtnItem) == 0x000008, "Wrong alignment on UPyWidget_ChatTextColorBtnItem");
-static_assert(sizeof(UPyWidget_ChatTextColorBtnItem) == 0x0005D0, "Wrong size on UPyWidget_ChatTextColorBtnItem");
-static_assert(offsetof(UPyWidget_ChatTextColorBtnItem, OnClicked) == 0x0005C0, "Member 'UPyWidget_ChatTextColorBtnItem::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatTextColorBtnItem;
 
 }
 

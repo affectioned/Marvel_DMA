@@ -43,22 +43,7 @@ public:
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPortalSegments                        K2Node_MakeStruct_PortalSegments;                  // 0x00A8(0x0050)()
 };
-static_assert(alignof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP) == 0x000008, "Wrong alignment on Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP");
-static_assert(sizeof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP) == 0x0000F8, "Wrong size on Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, EntryPoint) == 0x000000, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_OnConfirmTarget_ReturnValue) == 0x000004, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_OnConfirmTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, K2Node_CustomEvent_OnReleaseDelegate__DelegateSignature_Duration) == 0x000008, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::K2Node_CustomEvent_OnReleaseDelegate__DelegateSignature_Duration' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, Temp_real_Variable) == 0x00000C, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_WaitInput_ReturnValue) == 0x000010, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_WaitInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_GetSelectTarget_OutPortalSegment) == 0x000020, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_GetSelectTarget_OutPortalSegment' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_GetSelectTarget_ReturnValue) == 0x000070, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_GetSelectTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_IsValid_ReturnValue_1) == 0x000078, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, K2Node_CreateDelegate_OutputDelegate) == 0x00007C, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, K2Node_Event_bWasCancelled) == 0x000090, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_AsSelectTargetAbility_ReturnValue) == 0x000098, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_AsSelectTargetAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, CallFunc_IsValid_ReturnValue_2) == 0x0000A0, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP, K2Node_MakeStruct_PortalSegments) == 0x0000A8, "Member 'Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP::K2Node_MakeStruct_PortalSegments' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103332_BP_C_ExecuteUbergraph_Ability_103332_BP;
 
 // Function Ability_103332_BP.Ability_103332_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +52,7 @@ struct Ability_103332_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103332_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_103332_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_103332_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_103332_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_103332_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_103332_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103332_BP_C_K2_OnEndAbility;
 
 // Function Ability_103332_BP.Ability_103332_BP_C.OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10
 // 0x0004 (0x0004 - 0x0000)
@@ -78,65 +61,40 @@ struct Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10 final
 public:
 	float                                         OnReleaseDelegate__DelegateSignature_Duration;     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10) == 0x000004, "Wrong alignment on Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10");
-static_assert(sizeof(Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10) == 0x000004, "Wrong size on Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10");
-static_assert(offsetof(Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10, OnReleaseDelegate__DelegateSignature_Duration) == 0x000000, "Member 'Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10::OnReleaseDelegate__DelegateSignature_Duration' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103332_BP_C_OnPress_EC77EA6D45CFD2278882AFBD3C7CFD10;
 
 // Function Ability_103332_BP.Ability_103332_BP_C.目标是否有效
-// 0x02F0 (0x02F0 - 0x0000)
+// 0x0308 (0x0308 - 0x0000)
 struct Ability_103332_BP_C_目标是否有效 final
 {
 public:
-	struct FHitResult                             HitInfo;                                           // 0x0000(0x01F0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-	bool                                          bResult;                                           // 0x01F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F3[0x1];                                      // 0x01F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0200(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0218(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0230(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0248(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0260(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0270(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0278(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0284(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x02D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             HitInfo;                                           // 0x0000(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	bool                                          bResult;                                           // 0x0208(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20B[0x1];                                      // 0x020B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0218(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0230(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0248(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0260(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0288(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0290(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x029C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x02D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_OccDetPoint;               // 0x02E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_103332_BP_C_目标是否有效) == 0x000008, "Wrong alignment on Ability_103332_BP_C_目标是否有效");
-static_assert(sizeof(Ability_103332_BP_C_目标是否有效) == 0x0002F0, "Wrong size on Ability_103332_BP_C_目标是否有效");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, HitInfo) == 0x000000, "Member 'Ability_103332_BP_C_目标是否有效::HitInfo' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, bResult) == 0x0001F0, "Member 'Ability_103332_BP_C_目标是否有效::bResult' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_bBlockingHit) == 0x0001F1, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001F2, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_Time) == 0x0001F4, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_Distance) == 0x0001F8, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_Location) == 0x000200, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_ImpactPoint) == 0x000218, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_Normal) == 0x000230, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_ImpactNormal) == 0x000248, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_PhysMat) == 0x000260, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_HitActor) == 0x000268, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_HitComponent) == 0x000270, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_HitBoneName) == 0x000278, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_BoneName) == 0x000284, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_HitItem) == 0x000290, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_ElementIndex) == 0x000294, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_FaceIndex) == 0x000298, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_TraceStart) == 0x0002A0, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_TraceEnd) == 0x0002B8, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_BreakHitResult_OccDetPoint) == 0x0002D0, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_BreakHitResult_OccDetPoint' has a wrong offset!");
-static_assert(offsetof(Ability_103332_BP_C_目标是否有效, CallFunc_Array_Contains_ReturnValue) == 0x0002E8, "Member 'Ability_103332_BP_C_目标是否有效::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_103332_BP_C_目标是否有效;
 
 }
 

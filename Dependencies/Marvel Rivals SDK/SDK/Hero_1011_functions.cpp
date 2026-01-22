@@ -151,838 +151,6 @@ void ACue_Buff_10117101::LoopCheck()
 }
 
 
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.CheckClimbedWallValid
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHulkBannerMoveLogicBaseComponent::CheckClimbedWallValid()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "CheckClimbedWallValid");
-
-	Params::HulkBannerMoveLogicBaseComponent_CheckClimbedWallValid Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientEnterClimb
-// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Location                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FQuat&                     Rotation                                               (ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ClientEnterClimb(const struct FVector& Location, const struct FQuat& Rotation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientEnterClimb");
-
-	Params::HulkBannerMoveLogicBaseComponent_ClientEnterClimb Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Rotation = std::move(Rotation);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientLeaveClimb
-// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Location                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ClientLeaveClimb(const struct FVector& Location)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientLeaveClimb");
-
-	Params::HulkBannerMoveLogicBaseComponent_ClientLeaveClimb Parms{};
-
-	Parms.Location = std::move(Location);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientOnLanded
-// (Net, NetReliable, Native, Event, NetMulticast, Protected)
-// Parameters:
-// bool                                    bBlock                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsServerShiftJumpCancelled                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ClientOnLanded(bool bBlock, bool IsServerShiftJumpCancelled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientOnLanded");
-
-	Params::HulkBannerMoveLogicBaseComponent_ClientOnLanded Parms{};
-
-	Parms.bBlock = bBlock;
-	Parms.IsServerShiftJumpCancelled = IsServerShiftJumpCancelled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.HandleIgnoreSpringBoard
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bIgnore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::HandleIgnoreSpringBoard(bool bIgnore)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "HandleIgnoreSpringBoard");
-
-	Params::HulkBannerMoveLogicBaseComponent_HandleIgnoreSpringBoard Parms{};
-
-	Parms.bIgnore = bIgnore;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IgnorePawnCollision
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// bool                                    bIgnoreCollision                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::IgnorePawnCollision(bool bIgnoreCollision)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IgnorePawnCollision");
-
-	Params::HulkBannerMoveLogicBaseComponent_IgnorePawnCollision Parms{};
-
-	Parms.bIgnoreCollision = bIgnoreCollision;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsShiftJumping
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHulkBannerMoveLogicBaseComponent::IsShiftJumping()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsShiftJumping");
-
-	Params::HulkBannerMoveLogicBaseComponent_IsShiftJumping Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.MulticastActivateShiftJump
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-// Parameters:
-// float                                   JumpUpSeconds                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   JumpDownSeconds                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   JumpUpHeight                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   JumpDownHeight                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bInOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::MulticastActivateShiftJump(float JumpUpSeconds, float JumpDownSeconds, float JumpUpHeight, float JumpDownHeight, bool bInOnWall)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "MulticastActivateShiftJump");
-
-	Params::HulkBannerMoveLogicBaseComponent_MulticastActivateShiftJump Parms{};
-
-	Parms.JumpUpSeconds = JumpUpSeconds;
-	Parms.JumpDownSeconds = JumpDownSeconds;
-	Parms.JumpUpHeight = JumpUpHeight;
-	Parms.JumpDownHeight = JumpDownHeight;
-	Parms.bInOnWall = bInOnWall;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.MulticastCancelShiftJump
-// (Net, NetReliable, Native, Event, NetMulticast, Public)
-
-void UHulkBannerMoveLogicBaseComponent::MulticastCancelShiftJump()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "MulticastCancelShiftJump");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnFallingBlockedCallback
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::OnFallingBlockedCallback(const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnFallingBlockedCallback");
-
-	Params::HulkBannerMoveLogicBaseComponent_OnFallingBlockedCallback Parms{};
-
-	Parms.Hit = std::move(Hit);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnLandedCallback
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::OnLandedCallback(const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnLandedCallback");
-
-	Params::HulkBannerMoveLogicBaseComponent_OnLandedCallback Parms{};
-
-	Parms.Hit = std::move(Hit);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnRep_InShiftJumpUpState
-// (Final, Native, Protected)
-
-void UHulkBannerMoveLogicBaseComponent::OnRep_InShiftJumpUpState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnRep_InShiftJumpUpState");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnTagUpdated
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::OnTagUpdated(const struct FGameplayTag& TagUpdated, bool TagExists)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnTagUpdated");
-
-	Params::HulkBannerMoveLogicBaseComponent_OnTagUpdated Parms{};
-
-	Parms.TagUpdated = std::move(TagUpdated);
-	Parms.TagExists = TagExists;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.PredictShiftJumpDataWhenPressed
-// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   PredictVelocity                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFromWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FVector>*                 PredictionPath                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// float                                   MaxFallSeconds                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MaxJumpHeightDown                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::PredictShiftJumpDataWhenPressed(const struct FVector& PredictVelocity, bool bFromWall, TArray<struct FVector>* PredictionPath, float MaxFallSeconds, float MaxJumpHeightDown)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "PredictShiftJumpDataWhenPressed");
-
-	Params::HulkBannerMoveLogicBaseComponent_PredictShiftJumpDataWhenPressed Parms{};
-
-	Parms.PredictVelocity = std::move(PredictVelocity);
-	Parms.bFromWall = bFromWall;
-	Parms.MaxFallSeconds = MaxFallSeconds;
-	Parms.MaxJumpHeightDown = MaxJumpHeightDown;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PredictionPath != nullptr)
-		*PredictionPath = std::move(Parms.PredictionPath);
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.PredictShiftJumpVelocity
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// float                                   PredictSpeed                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRemoteRole                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRotator&                  InRotator                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector UHulkBannerMoveLogicBaseComponent::PredictShiftJumpVelocity(float PredictSpeed, bool bRemoteRole, const struct FRotator& InRotator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "PredictShiftJumpVelocity");
-
-	Params::HulkBannerMoveLogicBaseComponent_PredictShiftJumpVelocity Parms{};
-
-	Parms.PredictSpeed = PredictSpeed;
-	Parms.bRemoteRole = bRemoteRole;
-	Parms.InRotator = std::move(InRotator);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ResetCachedMoveParam
-// (Final, Native, Public, BlueprintCallable)
-
-void UHulkBannerMoveLogicBaseComponent::ResetCachedMoveParam()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ResetCachedMoveParam");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ServerSetClimbDirection
-// (Net, Native, Event, Public, NetServer)
-// Parameters:
-// float                                   Yaw                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ServerSetClimbDirection(float Yaw)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ServerSetClimbDirection");
-
-	Params::HulkBannerMoveLogicBaseComponent_ServerSetClimbDirection Parms{};
-
-	Parms.Yaw = Yaw;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ServerSetClimbState
-// (Net, NetReliable, Native, Event, Public, NetServer)
-// Parameters:
-// ECLIMBSTATE                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ServerSetClimbState(ECLIMBSTATE State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ServerSetClimbState");
-
-	Params::HulkBannerMoveLogicBaseComponent_ServerSetClimbState Parms{};
-
-	Parms.State = State;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetClimbParam
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FHulkClimbParam&           InClimbParam                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::SetClimbParam(const struct FHulkClimbParam& InClimbParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetClimbParam");
-
-	Params::HulkBannerMoveLogicBaseComponent_SetClimbParam Parms{};
-
-	Parms.InClimbParam = std::move(InClimbParam);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetGravityScale
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InGravityScale                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::SetGravityScale(float InGravityScale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetGravityScale");
-
-	Params::HulkBannerMoveLogicBaseComponent_SetGravityScale Parms{};
-
-	Parms.InGravityScale = InGravityScale;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetHulkJumpParam
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FHulkJumpParam&            InJumpParam                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::SetHulkJumpParam(const struct FHulkJumpParam& InJumpParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetHulkJumpParam");
-
-	Params::HulkBannerMoveLogicBaseComponent_SetHulkJumpParam Parms{};
-
-	Parms.InJumpParam = std::move(InJumpParam);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJump
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bInOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PawnCollisionIgnoreDuration                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ShiftJump(bool bInOnWall, float PawnCollisionIgnoreDuration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJump");
-
-	Params::HulkBannerMoveLogicBaseComponent_ShiftJump Parms{};
-
-	Parms.bInOnWall = bInOnWall;
-	Parms.PawnCollisionIgnoreDuration = PawnCollisionIgnoreDuration;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJumpLaunchCharacter
-// (Final, Native, Public)
-
-void UHulkBannerMoveLogicBaseComponent::ShiftJumpLaunchCharacter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJumpLaunchCharacter");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJumpWithCustomSpeed
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   InitSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bIsOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PawnCollisionIgnoreDuration                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::ShiftJumpWithCustomSpeed(float InitSpeed, bool bIsOnWall, float PawnCollisionIgnoreDuration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJumpWithCustomSpeed");
-
-	Params::HulkBannerMoveLogicBaseComponent_ShiftJumpWithCustomSpeed Parms{};
-
-	Parms.InitSpeed = InitSpeed;
-	Parms.bIsOnWall = bIsOnWall;
-	Parms.PawnCollisionIgnoreDuration = PawnCollisionIgnoreDuration;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.StopShiftJump
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bCancelNormalJump                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bResetCacheParam                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::StopShiftJump(bool bCancelNormalJump, bool bResetCacheParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "StopShiftJump");
-
-	Params::HulkBannerMoveLogicBaseComponent_StopShiftJump Parms{};
-
-	Parms.bCancelNormalJump = bCancelNormalJump;
-	Parms.bResetCacheParam = bResetCacheParam;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.StopShiftJumpMoving
-// (Final, Native, Public, BlueprintCallable)
-
-void UHulkBannerMoveLogicBaseComponent::StopShiftJumpMoving()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "StopShiftJumpMoving");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.TriggerClimbToShiftTurn
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UMarvelGameplayAbility*           ShiftJumpAbility                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::TriggerClimbToShiftTurn(class UMarvelGameplayAbility* ShiftJumpAbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "TriggerClimbToShiftTurn");
-
-	Params::HulkBannerMoveLogicBaseComponent_TriggerClimbToShiftTurn Parms{};
-
-	Parms.ShiftJumpAbility = ShiftJumpAbility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.TryToClimb
-// (Final, Native, Public, BlueprintCallable)
-
-void UHulkBannerMoveLogicBaseComponent::TryToClimb()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "TryToClimb");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.UpdateClimbCustomMove
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::UpdateClimbCustomMove(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "UpdateClimbCustomMove");
-
-	Params::HulkBannerMoveLogicBaseComponent_UpdateClimbCustomMove Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.UpdateShiftJumpUpState
-// (Final, Native, Public, HasDefaults)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   OldLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   OldVelocity                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerMoveLogicBaseComponent::UpdateShiftJumpUpState(float DeltaSeconds, const struct FVector& OldLocation, const struct FVector& OldVelocity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "UpdateShiftJumpUpState");
-
-	Params::HulkBannerMoveLogicBaseComponent_UpdateShiftJumpUpState Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-	Parms.OldLocation = std::move(OldLocation);
-	Parms.OldVelocity = std::move(OldVelocity);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsClimbing
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHulkBannerMoveLogicBaseComponent::IsClimbing() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsClimbing");
-
-	Params::HulkBannerMoveLogicBaseComponent_IsClimbing Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsClimbingWithAbilityStateCheck
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHulkBannerMoveLogicBaseComponent::IsClimbingWithAbilityStateCheck() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsClimbingWithAbilityStateCheck");
-
-	Params::HulkBannerMoveLogicBaseComponent_IsClimbingWithAbilityStateCheck Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsHanging
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UHulkBannerMoveLogicBaseComponent::IsHanging() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsHanging");
-
-	Params::HulkBannerMoveLogicBaseComponent_IsHanging Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function Hero_1011.Ability_101191.K2_OnShiftJumpLaunched
 // (Native, Event, Public, BlueprintEvent)
 
@@ -1361,146 +529,6 @@ bool UUIController_101191::TryInitChargeParam(bool bIsHulk)
 }
 
 
-// Function Hero_1011.HulkAnimInstance.EnterFury
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bOp                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkAnimInstance::EnterFury(bool bOp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "EnterFury");
-
-	Params::HulkAnimInstance_EnterFury Parms{};
-
-	Parms.bOp = bOp;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkAnimInstance.FClipLowerBodyYawByDirection
-// (Final, Native, Protected)
-
-void UHulkAnimInstance::FClipLowerBodyYawByDirection()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "FClipLowerBodyYawByDirection");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkAnimInstance.FShiftSecondJump
-// (Final, Native, Public, BlueprintCallable)
-
-void UHulkAnimInstance::FShiftSecondJump()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "FShiftSecondJump");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkAnimInstance.GetSynergyRideAnimation
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FAnimUpdateContext&        PoseContext                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UHulkAnimInstance::GetSynergyRideAnimation(const struct FAnimUpdateContext& PoseContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "GetSynergyRideAnimation");
-
-	Params::HulkAnimInstance_GetSynergyRideAnimation Parms{};
-
-	Parms.PoseContext = std::move(PoseContext);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkAnimInstance.GetSynergyRideStartAnimation
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FAnimUpdateContext&        PoseContext                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UHulkAnimInstance::GetSynergyRideStartAnimation(const struct FAnimUpdateContext& PoseContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "GetSynergyRideStartAnimation");
-
-	Params::HulkAnimInstance_GetSynergyRideStartAnimation Parms{};
-
-	Parms.PoseContext = std::move(PoseContext);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkAnimInstance.UpdateSynergyRideStartNode
-// (Final, Native, Protected, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UHulkAnimInstance::UpdateSynergyRideStartNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkAnimInstance", "UpdateSynergyRideStartNode");
-
-	Params::HulkAnimInstance_UpdateSynergyRideStartNode Parms{};
-
-	Parms.Context = std::move(Context);
-	Parms.Node = std::move(Node);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1011.Cue_Ability_Loop_10119103.OnPressRelease
 // (Final, Native, Public)
 // Parameters:
@@ -1844,51 +872,21 @@ void UEpicMomentAction_1011::OnGameplayEffectAppliedToTarget(class UAbilitySyste
 }
 
 
-// Function Hero_1011.TabData_1011.AddTabDataValue
-// (Event, Public, BlueprintEvent)
+// Function Hero_1011.HulkAnimInstance.EnterFury
+// (Final, Native, Public)
 // Parameters:
-// class AActor*                           InSource                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   BuffID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bOp                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UTabData_1011::AddTabDataValue(class AActor* InSource, class AActor* InTarget, int32 BuffID)
+void UHulkAnimInstance::EnterFury(bool bOp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabData_1011", "AddTabDataValue");
+		Func = Class->GetFunction("HulkAnimInstance", "EnterFury");
 
-	Params::TabData_1011_AddTabDataValue Parms{};
+	Params::HulkAnimInstance_EnterFury Parms{};
 
-	Parms.InSource = InSource;
-	Parms.InTarget = InTarget;
-	Parms.BuffID = BuffID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Hero_1011.TabData_1011.OnActorDeath
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// class AActor*                           Killer                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UTabData_1011::OnActorDeath(class AActor* Killer, class AActor* Target, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabData_1011", "OnActorDeath");
-
-	Params::TabData_1011_OnActorDeath Parms{};
-
-	Parms.Killer = Killer;
-	Parms.Target = Target;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-	Parms.ExtraData = std::move(ExtraData);
+	Parms.bOp = bOp;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1899,27 +897,111 @@ void UTabData_1011::OnActorDeath(class AActor* Killer, class AActor* Target, con
 }
 
 
-// Function Hero_1011.TabData_1011.OnBuffApplied
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAbilitySystemComponent*          Source                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAbilitySystemComponent*          Target                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FGameplayEffectSpecStackHandle&EffectSpecStackHandle                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const struct FActiveGameplayEffectHandle&EffectHandle                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function Hero_1011.HulkAnimInstance.FClipLowerBodyYawByDirection
+// (Final, Native, Protected)
 
-void UTabData_1011::OnBuffApplied(class UAbilitySystemComponent* Source, class UAbilitySystemComponent* Target, const struct FGameplayEffectSpecStackHandle& EffectSpecStackHandle, const struct FActiveGameplayEffectHandle& EffectHandle)
+void UHulkAnimInstance::FClipLowerBodyYawByDirection()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TabData_1011", "OnBuffApplied");
+		Func = Class->GetFunction("HulkAnimInstance", "FClipLowerBodyYawByDirection");
 
-	Params::TabData_1011_OnBuffApplied Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.Source = Source;
-	Parms.Target = Target;
-	Parms.EffectSpecStackHandle = std::move(EffectSpecStackHandle);
-	Parms.EffectHandle = std::move(EffectHandle);
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkAnimInstance.FShiftSecondJump
+// (Final, Native, Public, BlueprintCallable)
+
+void UHulkAnimInstance::FShiftSecondJump()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkAnimInstance", "FShiftSecondJump");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkAnimInstance.GetSynergyRideAnimation
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FAnimUpdateContext&        PoseContext                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UHulkAnimInstance::GetSynergyRideAnimation(const struct FAnimUpdateContext& PoseContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkAnimInstance", "GetSynergyRideAnimation");
+
+	Params::HulkAnimInstance_GetSynergyRideAnimation Parms{};
+
+	Parms.PoseContext = std::move(PoseContext);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkAnimInstance.GetSynergyRideStartAnimation
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FAnimUpdateContext&        PoseContext                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UHulkAnimInstance::GetSynergyRideStartAnimation(const struct FAnimUpdateContext& PoseContext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkAnimInstance", "GetSynergyRideStartAnimation");
+
+	Params::HulkAnimInstance_GetSynergyRideStartAnimation Parms{};
+
+	Parms.PoseContext = std::move(PoseContext);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkAnimInstance.UpdateSynergyRideStartNode
+// (Final, Native, Protected, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FAnimUpdateContext&        Context                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAnimNodeReference&        Node                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHulkAnimInstance::UpdateSynergyRideStartNode(const struct FAnimUpdateContext& Context, const struct FAnimNodeReference& Node)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkAnimInstance", "UpdateSynergyRideStartNode");
+
+	Params::HulkAnimInstance_UpdateSynergyRideStartNode Parms{};
+
+	Parms.Context = std::move(Context);
+	Parms.Node = std::move(Node);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1954,32 +1036,6 @@ void UHulkAnimInstance_101197::OnReleantSynergyRideNode(const struct FAnimUpdate
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1011.HulkBannerAnimInstance.DetermineGroundMotionAnim_Implementation
-// (Final, Native, Public, HasOutParams, Const)
-// Parameters:
-// int32*                                  AnimIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UHulkBannerAnimInstance::DetermineGroundMotionAnim_Implementation(int32* AnimIndex) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HulkBannerAnimInstance", "DetermineGroundMotionAnim_Implementation");
-
-	Params::HulkBannerAnimInstance_DetermineGroundMotionAnim_Implementation Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (AnimIndex != nullptr)
-		*AnimIndex = Parms.AnimIndex;
 }
 
 
@@ -2519,6 +1575,899 @@ void ABannerBaseChildActor::SetLoopTimer()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.CheckClimbedWallValid
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHulkBannerMoveLogicBaseComponent::CheckClimbedWallValid()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "CheckClimbedWallValid");
+
+	Params::HulkBannerMoveLogicBaseComponent_CheckClimbedWallValid Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientEnterClimb
+// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Location                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FQuat&                     Rotation                                               (ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ClientEnterClimb(const struct FVector& Location, const struct FQuat& Rotation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientEnterClimb");
+
+	Params::HulkBannerMoveLogicBaseComponent_ClientEnterClimb Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Rotation = std::move(Rotation);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientLeaveClimb
+// (Net, NetReliable, Native, Event, NetMulticast, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Location                                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ClientLeaveClimb(const struct FVector& Location)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientLeaveClimb");
+
+	Params::HulkBannerMoveLogicBaseComponent_ClientLeaveClimb Parms{};
+
+	Parms.Location = std::move(Location);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ClientOnLanded
+// (Net, NetReliable, Native, Event, NetMulticast, Protected)
+// Parameters:
+// bool                                    bBlock                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    IsServerShiftJumpCancelled                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ClientOnLanded(bool bBlock, bool IsServerShiftJumpCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ClientOnLanded");
+
+	Params::HulkBannerMoveLogicBaseComponent_ClientOnLanded Parms{};
+
+	Parms.bBlock = bBlock;
+	Parms.IsServerShiftJumpCancelled = IsServerShiftJumpCancelled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.HandleIgnoreSpringBoard
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bIgnore                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::HandleIgnoreSpringBoard(bool bIgnore)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "HandleIgnoreSpringBoard");
+
+	Params::HulkBannerMoveLogicBaseComponent_HandleIgnoreSpringBoard Parms{};
+
+	Parms.bIgnore = bIgnore;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IgnorePawnCollision
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    bIgnoreCollision                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::IgnorePawnCollision(bool bIgnoreCollision)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IgnorePawnCollision");
+
+	Params::HulkBannerMoveLogicBaseComponent_IgnorePawnCollision Parms{};
+
+	Parms.bIgnoreCollision = bIgnoreCollision;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsShiftJumping
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHulkBannerMoveLogicBaseComponent::IsShiftJumping()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsShiftJumping");
+
+	Params::HulkBannerMoveLogicBaseComponent_IsShiftJumping Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.MulticastActivateShiftJump
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+// Parameters:
+// float                                   JumpUpSeconds                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   JumpDownSeconds                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   JumpUpHeight                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   JumpDownHeight                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::MulticastActivateShiftJump(float JumpUpSeconds, float JumpDownSeconds, float JumpUpHeight, float JumpDownHeight, bool bInOnWall)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "MulticastActivateShiftJump");
+
+	Params::HulkBannerMoveLogicBaseComponent_MulticastActivateShiftJump Parms{};
+
+	Parms.JumpUpSeconds = JumpUpSeconds;
+	Parms.JumpDownSeconds = JumpDownSeconds;
+	Parms.JumpUpHeight = JumpUpHeight;
+	Parms.JumpDownHeight = JumpDownHeight;
+	Parms.bInOnWall = bInOnWall;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.MulticastCancelShiftJump
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+
+void UHulkBannerMoveLogicBaseComponent::MulticastCancelShiftJump()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "MulticastCancelShiftJump");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnFallingBlockedCallback
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::OnFallingBlockedCallback(const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnFallingBlockedCallback");
+
+	Params::HulkBannerMoveLogicBaseComponent_OnFallingBlockedCallback Parms{};
+
+	Parms.Hit = std::move(Hit);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnLandedCallback
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::OnLandedCallback(const struct FHitResult& Hit)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnLandedCallback");
+
+	Params::HulkBannerMoveLogicBaseComponent_OnLandedCallback Parms{};
+
+	Parms.Hit = std::move(Hit);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnRep_InShiftJumpUpState
+// (Final, Native, Protected)
+
+void UHulkBannerMoveLogicBaseComponent::OnRep_InShiftJumpUpState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnRep_InShiftJumpUpState");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.OnTagUpdated
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    TagExists                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::OnTagUpdated(const struct FGameplayTag& TagUpdated, bool TagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "OnTagUpdated");
+
+	Params::HulkBannerMoveLogicBaseComponent_OnTagUpdated Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.TagExists = TagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.PredictShiftJumpDataWhenPressed
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   PredictVelocity                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFromWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>*                 PredictionPath                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// float                                   MaxFallSeconds                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   MaxJumpHeightDown                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::PredictShiftJumpDataWhenPressed(const struct FVector& PredictVelocity, bool bFromWall, TArray<struct FVector>* PredictionPath, float MaxFallSeconds, float MaxJumpHeightDown)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "PredictShiftJumpDataWhenPressed");
+
+	Params::HulkBannerMoveLogicBaseComponent_PredictShiftJumpDataWhenPressed Parms{};
+
+	Parms.PredictVelocity = std::move(PredictVelocity);
+	Parms.bFromWall = bFromWall;
+	Parms.MaxFallSeconds = MaxFallSeconds;
+	Parms.MaxJumpHeightDown = MaxJumpHeightDown;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PredictionPath != nullptr)
+		*PredictionPath = std::move(Parms.PredictionPath);
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.PredictShiftJumpVelocity
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// float                                   PredictSpeed                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRemoteRole                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRotator&                  InRotator                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector UHulkBannerMoveLogicBaseComponent::PredictShiftJumpVelocity(float PredictSpeed, bool bRemoteRole, const struct FRotator& InRotator)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "PredictShiftJumpVelocity");
+
+	Params::HulkBannerMoveLogicBaseComponent_PredictShiftJumpVelocity Parms{};
+
+	Parms.PredictSpeed = PredictSpeed;
+	Parms.bRemoteRole = bRemoteRole;
+	Parms.InRotator = std::move(InRotator);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ResetCachedMoveParam
+// (Final, Native, Public, BlueprintCallable)
+
+void UHulkBannerMoveLogicBaseComponent::ResetCachedMoveParam()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ResetCachedMoveParam");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ServerSetClimbState
+// (Net, NetReliable, Native, Event, Public, NetServer)
+// Parameters:
+// ECLIMBSTATE                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ServerSetClimbState(ECLIMBSTATE State)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ServerSetClimbState");
+
+	Params::HulkBannerMoveLogicBaseComponent_ServerSetClimbState Parms{};
+
+	Parms.State = State;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetClimbParam
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FHulkClimbParam&           InClimbParam                                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::SetClimbParam(const struct FHulkClimbParam& InClimbParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetClimbParam");
+
+	Params::HulkBannerMoveLogicBaseComponent_SetClimbParam Parms{};
+
+	Parms.InClimbParam = std::move(InClimbParam);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetGravityScale
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InGravityScale                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::SetGravityScale(float InGravityScale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetGravityScale");
+
+	Params::HulkBannerMoveLogicBaseComponent_SetGravityScale Parms{};
+
+	Parms.InGravityScale = InGravityScale;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.SetHulkJumpParam
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FHulkJumpParam&            InJumpParam                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::SetHulkJumpParam(const struct FHulkJumpParam& InJumpParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "SetHulkJumpParam");
+
+	Params::HulkBannerMoveLogicBaseComponent_SetHulkJumpParam Parms{};
+
+	Parms.InJumpParam = std::move(InJumpParam);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJump
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PawnCollisionIgnoreDuration                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ShiftJump(bool bInOnWall, float PawnCollisionIgnoreDuration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJump");
+
+	Params::HulkBannerMoveLogicBaseComponent_ShiftJump Parms{};
+
+	Parms.bInOnWall = bInOnWall;
+	Parms.PawnCollisionIgnoreDuration = PawnCollisionIgnoreDuration;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJumpLaunchCharacter
+// (Final, Native, Public)
+
+void UHulkBannerMoveLogicBaseComponent::ShiftJumpLaunchCharacter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJumpLaunchCharacter");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.ShiftJumpWithCustomSpeed
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InitSpeed                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIsOnWall                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PawnCollisionIgnoreDuration                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::ShiftJumpWithCustomSpeed(float InitSpeed, bool bIsOnWall, float PawnCollisionIgnoreDuration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "ShiftJumpWithCustomSpeed");
+
+	Params::HulkBannerMoveLogicBaseComponent_ShiftJumpWithCustomSpeed Parms{};
+
+	Parms.InitSpeed = InitSpeed;
+	Parms.bIsOnWall = bIsOnWall;
+	Parms.PawnCollisionIgnoreDuration = PawnCollisionIgnoreDuration;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.StopShiftJump
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bCancelNormalJump                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bResetCacheParam                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::StopShiftJump(bool bCancelNormalJump, bool bResetCacheParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "StopShiftJump");
+
+	Params::HulkBannerMoveLogicBaseComponent_StopShiftJump Parms{};
+
+	Parms.bCancelNormalJump = bCancelNormalJump;
+	Parms.bResetCacheParam = bResetCacheParam;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.StopShiftJumpMoving
+// (Final, Native, Public, BlueprintCallable)
+
+void UHulkBannerMoveLogicBaseComponent::StopShiftJumpMoving()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "StopShiftJumpMoving");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.TriggerClimbToShiftTurn
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UMarvelGameplayAbility*           ShiftJumpAbility                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::TriggerClimbToShiftTurn(class UMarvelGameplayAbility* ShiftJumpAbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "TriggerClimbToShiftTurn");
+
+	Params::HulkBannerMoveLogicBaseComponent_TriggerClimbToShiftTurn Parms{};
+
+	Parms.ShiftJumpAbility = ShiftJumpAbility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.TryToClimb
+// (Final, Native, Public, BlueprintCallable)
+
+void UHulkBannerMoveLogicBaseComponent::TryToClimb()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "TryToClimb");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.UpdateClimbCustomMove
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   DeltaTime                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::UpdateClimbCustomMove(float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "UpdateClimbCustomMove");
+
+	Params::HulkBannerMoveLogicBaseComponent_UpdateClimbCustomMove Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.UpdateShiftJumpUpState
+// (Final, Native, Public, HasDefaults)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   OldLocation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FVector&                   OldVelocity                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UHulkBannerMoveLogicBaseComponent::UpdateShiftJumpUpState(float DeltaSeconds, const struct FVector& OldLocation, const struct FVector& OldVelocity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "UpdateShiftJumpUpState");
+
+	Params::HulkBannerMoveLogicBaseComponent_UpdateShiftJumpUpState Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.OldLocation = std::move(OldLocation);
+	Parms.OldVelocity = std::move(OldVelocity);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsClimbing
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHulkBannerMoveLogicBaseComponent::IsClimbing() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsClimbing");
+
+	Params::HulkBannerMoveLogicBaseComponent_IsClimbing Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsClimbingWithAbilityStateCheck
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHulkBannerMoveLogicBaseComponent::IsClimbingWithAbilityStateCheck() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsClimbingWithAbilityStateCheck");
+
+	Params::HulkBannerMoveLogicBaseComponent_IsClimbingWithAbilityStateCheck Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.HulkBannerMoveLogicBaseComponent.IsHanging
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UHulkBannerMoveLogicBaseComponent::IsHanging() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HulkBannerMoveLogicBaseComponent", "IsHanging");
+
+	Params::HulkBannerMoveLogicBaseComponent_IsHanging Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1011.TabData_1011.AddTabDataValue
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                           InSource                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   BuffID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTabData_1011::AddTabDataValue(class AActor* InSource, class AActor* InTarget, int32 BuffID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabData_1011", "AddTabDataValue");
+
+	Params::TabData_1011_AddTabDataValue Parms{};
+
+	Parms.InSource = InSource;
+	Parms.InTarget = InTarget;
+	Parms.BuffID = BuffID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Hero_1011.TabData_1011.OnActorDeath
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// class AActor*                           Killer                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGlobalEventExtraData&     ExtraData                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UTabData_1011::OnActorDeath(class AActor* Killer, class AActor* Target, const struct FAttributeModifierHandle& ModifierParameterHandle, const struct FGlobalEventExtraData& ExtraData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabData_1011", "OnActorDeath");
+
+	Params::TabData_1011_OnActorDeath Parms{};
+
+	Parms.Killer = Killer;
+	Parms.Target = Target;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+	Parms.ExtraData = std::move(ExtraData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1011.TabData_1011.OnBuffApplied
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UAbilitySystemComponent*          Source                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAbilitySystemComponent*          Target                                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGameplayEffectSpecStackHandle&EffectSpecStackHandle                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FActiveGameplayEffectHandle&EffectHandle                                           (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTabData_1011::OnBuffApplied(class UAbilitySystemComponent* Source, class UAbilitySystemComponent* Target, const struct FGameplayEffectSpecStackHandle& EffectSpecStackHandle, const struct FActiveGameplayEffectHandle& EffectHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TabData_1011", "OnBuffApplied");
+
+	Params::TabData_1011_OnBuffApplied Parms{};
+
+	Parms.Source = Source;
+	Parms.Target = Target;
+	Parms.EffectSpecStackHandle = std::move(EffectSpecStackHandle);
+	Parms.EffectHandle = std::move(EffectHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

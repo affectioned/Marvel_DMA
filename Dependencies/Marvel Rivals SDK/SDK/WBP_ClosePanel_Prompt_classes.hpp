@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ClosePanel_Prompt.WBP_ClosePanel_Prompt_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_ClosePanel_Prompt_C final : public UPyWidget_ClosePanel_Prompt
 {
 public:
-	class UWBP_Common_KeyWidget_C*                KeyWidget_Right;                                   // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidget_Space;                                   // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Prompt;                                       // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget_Right;                                   // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget_Space;                                   // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Prompt;                                       // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ClosePanel_Prompt_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ClosePanel_Prompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ClosePanel_Prompt_C")
 	}
 	static class UWBP_ClosePanel_Prompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ClosePanel_Prompt_C>();
 	}
 };
-static_assert(alignof(UWBP_ClosePanel_Prompt_C) == 0x000008, "Wrong alignment on UWBP_ClosePanel_Prompt_C");
-static_assert(sizeof(UWBP_ClosePanel_Prompt_C) == 0x0005D8, "Wrong size on UWBP_ClosePanel_Prompt_C");
-static_assert(offsetof(UWBP_ClosePanel_Prompt_C, KeyWidget_Right) == 0x0005C0, "Member 'UWBP_ClosePanel_Prompt_C::KeyWidget_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_ClosePanel_Prompt_C, KeyWidget_Space) == 0x0005C8, "Member 'UWBP_ClosePanel_Prompt_C::KeyWidget_Space' has a wrong offset!");
-static_assert(offsetof(UWBP_ClosePanel_Prompt_C, Text_Prompt) == 0x0005D0, "Member 'UWBP_ClosePanel_Prompt_C::Text_Prompt' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ClosePanel_Prompt_C;
 
 }
 

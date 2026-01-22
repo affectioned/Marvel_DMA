@@ -23,15 +23,18 @@ class UBTS_UpdateSightChess_BP_C final : public UBTS_PyUpdateSightChess
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateSightChess_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateSightChess_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateSightChess_BP_C")
 	}
 	static class UBTS_UpdateSightChess_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateSightChess_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateSightChess_BP_C) == 0x000008, "Wrong alignment on UBTS_UpdateSightChess_BP_C");
-static_assert(sizeof(UBTS_UpdateSightChess_BP_C) == 0x0000B0, "Wrong size on UBTS_UpdateSightChess_BP_C");
+DUMPER7_ASSERTS_UBTS_UpdateSightChess_BP_C;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BreakIce_AwardItem_Base_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_BreakIce_AwardItem.PyWidget_BreakIce_AwardItem_Base.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BreakIce_AwardItem_Base_OnAnimationFinished;
 
 }
 

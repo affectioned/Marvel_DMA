@@ -21,9 +21,7 @@ struct PyAbility_101401_GetCurrentTimelineIndex final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101401_GetCurrentTimelineIndex) == 0x000004, "Wrong alignment on PyAbility_101401_GetCurrentTimelineIndex");
-static_assert(sizeof(PyAbility_101401_GetCurrentTimelineIndex) == 0x000004, "Wrong size on PyAbility_101401_GetCurrentTimelineIndex");
-static_assert(offsetof(PyAbility_101401_GetCurrentTimelineIndex, ReturnValue) == 0x000000, "Member 'PyAbility_101401_GetCurrentTimelineIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101401_GetCurrentTimelineIndex;
 
 }
 

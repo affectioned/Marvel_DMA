@@ -11,44 +11,43 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Hero_1050_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1050_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105021.PyConfig_105021
-// 0x0BE0 (0x0CA0 - 0x00C0)
+// 0x0F00 (0x0FC0 - 0x00C0)
 class UPyConfig_105021 final : public UMarvelAbilityConfig_DoubleJump
 {
 public:
 	struct FGameplayTag                           JumpCueTag;                                        // 0x00C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableDash;                                       // 0x00CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00D0(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         OffBattleBuffID;                                   // 0x0C98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00D0(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         OffBattleBuffID;                                   // 0x0FB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105021">();
+		STATIC_CLASS_IMPL("PyConfig_105021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105021")
 	}
 	static class UPyConfig_105021* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105021>();
 	}
 };
-static_assert(alignof(UPyConfig_105021) == 0x000008, "Wrong alignment on UPyConfig_105021");
-static_assert(sizeof(UPyConfig_105021) == 0x000CA0, "Wrong size on UPyConfig_105021");
-static_assert(offsetof(UPyConfig_105021, JumpCueTag) == 0x0000C0, "Member 'UPyConfig_105021::JumpCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105021, bEnableDash) == 0x0000CC, "Member 'UPyConfig_105021::bEnableDash' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105021, DashInfo) == 0x0000D0, "Member 'UPyConfig_105021::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105021, OffBattleBuffID) == 0x000C98, "Member 'UPyConfig_105021::OffBattleBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105021;
 
 // PythonClass PyAbility_105021.PyAbility_105021
-// 0x0000 (0x2AB8 - 0x2AB8)
+// 0x0000 (0x2B08 - 0x2B08)
 class UPyAbility_105021 : public UAbility_105021
 {
 public:
@@ -61,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105021">();
+		STATIC_CLASS_IMPL("PyAbility_105021")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105021")
 	}
 	static class UPyAbility_105021* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105021>();
 	}
 };
-static_assert(alignof(UPyAbility_105021) == 0x000008, "Wrong alignment on UPyAbility_105021");
-static_assert(sizeof(UPyAbility_105021) == 0x002AB8, "Wrong size on UPyAbility_105021");
+DUMPER7_ASSERTS_UPyAbility_105021;
 
 // PythonClass PyAbility_105021.PyCue_Ability_Instant_10502101
 // 0x0070 (0x0430 - 0x03C0)
@@ -84,16 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10502101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10502101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10502101")
 	}
 	static class UPyCue_Ability_Instant_10502101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10502101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10502101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10502101");
-static_assert(sizeof(UPyCue_Ability_Instant_10502101) == 0x000430, "Wrong size on UPyCue_Ability_Instant_10502101");
-static_assert(offsetof(UPyCue_Ability_Instant_10502101, EnterStealthNiagaraInfo) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10502101::EnterStealthNiagaraInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10502101;
 
 }
 

@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103961.PyBuffAbility_120_10396104
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_120_10396104 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         AddScopeRadius;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeclineTracePeriod;                                // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinTracePeriod;                                    // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StackCount;                                        // 0x137C(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddScopeRadius;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeclineTracePeriod;                                // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinTracePeriod;                                    // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StackCount;                                        // 0x1394(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10396104">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10396104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10396104")
 	}
 	static class UPyBuffAbility_120_10396104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10396104>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10396104) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10396104");
-static_assert(sizeof(UPyBuffAbility_120_10396104) == 0x001380, "Wrong size on UPyBuffAbility_120_10396104");
-static_assert(offsetof(UPyBuffAbility_120_10396104, AddScopeRadius) == 0x001370, "Member 'UPyBuffAbility_120_10396104::AddScopeRadius' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10396104, DeclineTracePeriod) == 0x001374, "Member 'UPyBuffAbility_120_10396104::DeclineTracePeriod' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10396104, MinTracePeriod) == 0x001378, "Member 'UPyBuffAbility_120_10396104::MinTracePeriod' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10396104, StackCount) == 0x00137C, "Member 'UPyBuffAbility_120_10396104::StackCount' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10396104;
 
 }
 

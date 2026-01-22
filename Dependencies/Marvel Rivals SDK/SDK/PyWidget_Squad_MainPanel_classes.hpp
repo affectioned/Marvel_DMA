@@ -12,9 +12,9 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyWidget_LobbyChildPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
+#include "PyWidget_LobbyChildPanel_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -22,24 +22,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_Nameplate
-// 0x0090 (0x0950 - 0x08C0)
+// 0x0090 (0x09B0 - 0x0920)
 class UPyWidget_Squad_Nameplate final : public UPyWidget_BaseCommonButton
 {
 public:
-	class UAkAudioEvent*                          AKEvent_HoverAddPlayer;                            // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_ClickAddFriend;                            // 0x08C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_InvitationSucceeded;                       // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                MenuGuideTips;                                     // 0x08D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Nameplate;                                     // 0x08E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Empty;                                     // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Overlay_Nameplate;                                 // 0x08F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Text_Score;                                        // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                CanvasPanel_Hover;                                 // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Hover_FadeIn;                                 // 0x0908(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PlayerNameColor_Own;                               // 0x0910(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PlayerNameColor_TeamMate;                          // 0x0924(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Halloween_Btn_SquadLevel;                      // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UObject* Widget, bool Hovered)> OnHalloweenInfoHoverdChange; // 0x0940(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_HoverAddPlayer;                            // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_ClickAddFriend;                            // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_InvitationSucceeded;                       // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MenuGuideTips;                                     // 0x0930(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Nameplate;                                     // 0x0940(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Empty;                                     // 0x0948(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Overlay_Nameplate;                                 // 0x0950(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Text_Score;                                        // 0x0958(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                CanvasPanel_Hover;                                 // 0x0960(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Hover_FadeIn;                                 // 0x0968(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PlayerNameColor_Own;                               // 0x0970(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PlayerNameColor_TeamMate;                          // 0x0984(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Halloween_Btn_SquadLevel;                      // 0x0998(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UObject* Widget, bool Hovered)> OnHalloweenInfoHoverdChange; // 0x09A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -49,46 +49,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_Nameplate">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_Nameplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Nameplate")
 	}
 	static class UPyWidget_Squad_Nameplate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_Nameplate>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_Nameplate) == 0x000010, "Wrong alignment on UPyWidget_Squad_Nameplate");
-static_assert(sizeof(UPyWidget_Squad_Nameplate) == 0x000950, "Wrong size on UPyWidget_Squad_Nameplate");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, AKEvent_HoverAddPlayer) == 0x0008B8, "Member 'UPyWidget_Squad_Nameplate::AKEvent_HoverAddPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, AKEvent_ClickAddFriend) == 0x0008C0, "Member 'UPyWidget_Squad_Nameplate::AKEvent_ClickAddFriend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, AkEvent_InvitationSucceeded) == 0x0008C8, "Member 'UPyWidget_Squad_Nameplate::AkEvent_InvitationSucceeded' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, MenuGuideTips) == 0x0008D0, "Member 'UPyWidget_Squad_Nameplate::MenuGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, WBP_Nameplate) == 0x0008E0, "Member 'UPyWidget_Squad_Nameplate::WBP_Nameplate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, Overlay_Empty) == 0x0008E8, "Member 'UPyWidget_Squad_Nameplate::Overlay_Empty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, Overlay_Nameplate) == 0x0008F0, "Member 'UPyWidget_Squad_Nameplate::Overlay_Nameplate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, Text_Score) == 0x0008F8, "Member 'UPyWidget_Squad_Nameplate::Text_Score' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, CanvasPanel_Hover) == 0x000900, "Member 'UPyWidget_Squad_Nameplate::CanvasPanel_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, Anim_Hover_FadeIn) == 0x000908, "Member 'UPyWidget_Squad_Nameplate::Anim_Hover_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, PlayerNameColor_Own) == 0x000910, "Member 'UPyWidget_Squad_Nameplate::PlayerNameColor_Own' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, PlayerNameColor_TeamMate) == 0x000924, "Member 'UPyWidget_Squad_Nameplate::PlayerNameColor_TeamMate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, WBP_Halloween_Btn_SquadLevel) == 0x000938, "Member 'UPyWidget_Squad_Nameplate::WBP_Halloween_Btn_SquadLevel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Nameplate, OnHalloweenInfoHoverdChange) == 0x000940, "Member 'UPyWidget_Squad_Nameplate::OnHalloweenInfoHoverdChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_Nameplate;
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_MainPanel
-// 0x00C0 (0x06B8 - 0x05F8)
+// 0x00C0 (0x06C0 - 0x0600)
 class UPyWidget_Squad_MainPanel final : public UPyWidget_LobbyChildPanel
 {
 public:
-	class UMarvelOverlay*                         Overlay_SquadRecruit;                              // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                StartMatchStyles;                                  // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                MoreModeStyles;                                    // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ViewMoreModeStyles;                                // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CancelMatchStyles;                                 // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                EmoteTip_Styles;                                   // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PlayEntryAnimStyles;                               // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           CoronaPress;                                       // 0x0660(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeammateNumColorDarkColor;                         // 0x0668(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TeammateNumColorLightColor;                        // 0x067C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         HalloweenInfoTips;                                 // 0x0690(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_SquadRecruit;                              // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                StartMatchStyles;                                  // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MoreModeStyles;                                    // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ViewMoreModeStyles;                                // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CancelMatchStyles;                                 // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                EmoteTip_Styles;                                   // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PlayEntryAnimStyles;                               // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           CoronaPress;                                       // 0x0668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeammateNumColorDarkColor;                         // 0x0670(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TeammateNumColorLightColor;                        // 0x0684(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         HalloweenInfoTips;                                 // 0x0698(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -101,29 +90,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_MainPanel")
 	}
 	static class UPyWidget_Squad_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Squad_MainPanel");
-static_assert(sizeof(UPyWidget_Squad_MainPanel) == 0x0006B8, "Wrong size on UPyWidget_Squad_MainPanel");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, Overlay_SquadRecruit) == 0x0005F8, "Member 'UPyWidget_Squad_MainPanel::Overlay_SquadRecruit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, StartMatchStyles) == 0x000600, "Member 'UPyWidget_Squad_MainPanel::StartMatchStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, MoreModeStyles) == 0x000610, "Member 'UPyWidget_Squad_MainPanel::MoreModeStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, ViewMoreModeStyles) == 0x000620, "Member 'UPyWidget_Squad_MainPanel::ViewMoreModeStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, CancelMatchStyles) == 0x000630, "Member 'UPyWidget_Squad_MainPanel::CancelMatchStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, EmoteTip_Styles) == 0x000640, "Member 'UPyWidget_Squad_MainPanel::EmoteTip_Styles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, PlayEntryAnimStyles) == 0x000650, "Member 'UPyWidget_Squad_MainPanel::PlayEntryAnimStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, CoronaPress) == 0x000660, "Member 'UPyWidget_Squad_MainPanel::CoronaPress' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, TeammateNumColorDarkColor) == 0x000668, "Member 'UPyWidget_Squad_MainPanel::TeammateNumColorDarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, TeammateNumColorLightColor) == 0x00067C, "Member 'UPyWidget_Squad_MainPanel::TeammateNumColorLightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_MainPanel, HalloweenInfoTips) == 0x000690, "Member 'UPyWidget_Squad_MainPanel::HalloweenInfoTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_MainPanel;
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_Spread
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Squad_Spread final : public UPyMarvelUserWidget
 {
 public:
@@ -133,46 +114,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_Spread">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_Spread")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Spread")
 	}
 	static class UPyWidget_Squad_Spread* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_Spread>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_Spread) == 0x000008, "Wrong alignment on UPyWidget_Squad_Spread");
-static_assert(sizeof(UPyWidget_Squad_Spread) == 0x0005C0, "Wrong size on UPyWidget_Squad_Spread");
+DUMPER7_ASSERTS_UPyWidget_Squad_Spread;
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_SwitchHeroBtn
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_Squad_SwitchHeroBtn : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Hovered;                                     // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Normal;                                      // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Pressed;                                     // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Hovered;                                     // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Normal;                                      // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Pressed;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_SwitchHeroBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_SwitchHeroBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_SwitchHeroBtn")
 	}
 	static class UPyWidget_Squad_SwitchHeroBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_SwitchHeroBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_SwitchHeroBtn) == 0x000008, "Wrong alignment on UPyWidget_Squad_SwitchHeroBtn");
-static_assert(sizeof(UPyWidget_Squad_SwitchHeroBtn) == 0x000608, "Wrong size on UPyWidget_Squad_SwitchHeroBtn");
-static_assert(offsetof(UPyWidget_Squad_SwitchHeroBtn, Color_Hovered) == 0x0005BC, "Member 'UPyWidget_Squad_SwitchHeroBtn::Color_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_SwitchHeroBtn, Color_Normal) == 0x0005D0, "Member 'UPyWidget_Squad_SwitchHeroBtn::Color_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_SwitchHeroBtn, Color_Pressed) == 0x0005E4, "Member 'UPyWidget_Squad_SwitchHeroBtn::Color_Pressed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_SwitchHeroBtn, OnClicked) == 0x0005F8, "Member 'UPyWidget_Squad_SwitchHeroBtn::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_SwitchHeroBtn;
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_TrainingBtn
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Squad_TrainingBtn final : public UPyMarvelUserWidget
 {
 public:
@@ -181,32 +164,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_TrainingBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_TrainingBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_TrainingBtn")
 	}
 	static class UPyWidget_Squad_TrainingBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_TrainingBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_TrainingBtn) == 0x000008, "Wrong alignment on UPyWidget_Squad_TrainingBtn");
-static_assert(sizeof(UPyWidget_Squad_TrainingBtn) == 0x0005C0, "Wrong size on UPyWidget_Squad_TrainingBtn");
+DUMPER7_ASSERTS_UPyWidget_Squad_TrainingBtn;
 
 // PythonClass PyWidget_Squad_MainPanel.PyWidget_Squad_BeginnerBtn
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Squad_BeginnerBtn final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_BeginnerBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_BeginnerBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_BeginnerBtn")
 	}
 	static class UPyWidget_Squad_BeginnerBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_BeginnerBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_BeginnerBtn) == 0x000008, "Wrong alignment on UPyWidget_Squad_BeginnerBtn");
-static_assert(sizeof(UPyWidget_Squad_BeginnerBtn) == 0x0005C0, "Wrong size on UPyWidget_Squad_BeginnerBtn");
+DUMPER7_ASSERTS_UPyWidget_Squad_BeginnerBtn;
 
 }
 

@@ -23,9 +23,7 @@ struct MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP) == 0x000004, "Wrong alignment on MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP");
-static_assert(sizeof(MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP) == 0x000004, "Wrong size on MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP");
-static_assert(offsetof(MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP, EntryPoint) == 0x000000, "Member 'MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAIControllerBP_C_ExecuteUbergraph_MarvelAIControllerBP;
 
 // Function MarvelAIControllerBP.MarvelAIControllerBP_C.SetAutoRotateEnable
 // 0x0020 (0x0020 - 0x0000)
@@ -38,12 +36,7 @@ public:
 	class AMarvelBaseCharacter*                   K2Node_DynamicCast_AsMarvel_Base_Character;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAIControllerBP_C_SetAutoRotateEnable) == 0x000008, "Wrong alignment on MarvelAIControllerBP_C_SetAutoRotateEnable");
-static_assert(sizeof(MarvelAIControllerBP_C_SetAutoRotateEnable) == 0x000020, "Wrong size on MarvelAIControllerBP_C_SetAutoRotateEnable");
-static_assert(offsetof(MarvelAIControllerBP_C_SetAutoRotateEnable, ShouldEnable) == 0x000000, "Member 'MarvelAIControllerBP_C_SetAutoRotateEnable::ShouldEnable' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetAutoRotateEnable, CallFunc_K2_GetPawn_ReturnValue) == 0x000008, "Member 'MarvelAIControllerBP_C_SetAutoRotateEnable::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetAutoRotateEnable, K2Node_DynamicCast_AsMarvel_Base_Character) == 0x000010, "Member 'MarvelAIControllerBP_C_SetAutoRotateEnable::K2Node_DynamicCast_AsMarvel_Base_Character' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetAutoRotateEnable, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MarvelAIControllerBP_C_SetAutoRotateEnable::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAIControllerBP_C_SetAutoRotateEnable;
 
 // Function MarvelAIControllerBP.MarvelAIControllerBP_C.SetFocusWithOffset
 // 0x00B8 (0x00B8 - 0x0000)
@@ -63,19 +56,7 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelAIControllerBP_C_SetFocusWithOffset) == 0x000008, "Wrong alignment on MarvelAIControllerBP_C_SetFocusWithOffset");
-static_assert(sizeof(MarvelAIControllerBP_C_SetFocusWithOffset) == 0x0000B8, "Wrong size on MarvelAIControllerBP_C_SetFocusWithOffset");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, NewFocus) == 0x000000, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::NewFocus' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, MaxOffset) == 0x000008, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::MaxOffset' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_K2_GetPawn_ReturnValue) == 0x000010, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_RandomFloatInRange_ReturnValue) == 0x000018, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000040, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000058, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_RandomUnitVectorInConeInDegrees_ReturnValue) == 0x000070, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_RandomUnitVectorInConeInDegrees_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000088, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelAIControllerBP_C_SetFocusWithOffset, CallFunc_Add_VectorVector_ReturnValue) == 0x0000A0, "Member 'MarvelAIControllerBP_C_SetFocusWithOffset::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelAIControllerBP_C_SetFocusWithOffset;
 
 }
 

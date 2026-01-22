@@ -34,24 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_HeroSystem_Exclusive_Performance">();
+		STATIC_CLASS_IMPL("PyDataAsset_HeroSystem_Exclusive_Performance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_HeroSystem_Exclusive_Performance")
 	}
 	static class UPyDataAsset_HeroSystem_Exclusive_Performance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_HeroSystem_Exclusive_Performance>();
 	}
 };
-static_assert(alignof(UPyDataAsset_HeroSystem_Exclusive_Performance) == 0x000008, "Wrong alignment on UPyDataAsset_HeroSystem_Exclusive_Performance");
-static_assert(sizeof(UPyDataAsset_HeroSystem_Exclusive_Performance) == 0x0001E8, "Wrong size on UPyDataAsset_HeroSystem_Exclusive_Performance");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Tip_Lock_Level_Picture) == 0x000038, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Tip_Lock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Tip_UnLock_Level_Picture) == 0x000068, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Tip_UnLock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Tip_Acquire_Level_Picture) == 0x000098, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Tip_Acquire_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Effect_Lock_Level_Picture) == 0x0000C8, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Effect_Lock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Effect_UnLock_Level_Picture) == 0x0000F8, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Effect_UnLock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Kill_Effect_Acquire_Level_Picture) == 0x000128, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Kill_Effect_Acquire_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Skill_Show_Lock_Level_Picture) == 0x000158, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Skill_Show_Lock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Skill_Show_UnLock_Level_Picture) == 0x000188, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Skill_Show_UnLock_Level_Picture' has a wrong offset!");
-static_assert(offsetof(UPyDataAsset_HeroSystem_Exclusive_Performance, Skill_Show_Acquire_Level_Picture) == 0x0001B8, "Member 'UPyDataAsset_HeroSystem_Exclusive_Performance::Skill_Show_Acquire_Level_Picture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_HeroSystem_Exclusive_Performance;
 
 }
 

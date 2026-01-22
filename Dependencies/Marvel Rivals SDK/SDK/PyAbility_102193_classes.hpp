@@ -12,14 +12,13 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1031_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_102193.PyAbility_102193
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102193 : public UAbility_108
 {
 public:
@@ -30,39 +29,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102193">();
+		STATIC_CLASS_IMPL("PyAbility_102193")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102193")
 	}
 	static class UPyAbility_102193* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102193>();
 	}
 };
-static_assert(alignof(UPyAbility_102193) == 0x000008, "Wrong alignment on UPyAbility_102193");
-static_assert(sizeof(UPyAbility_102193) == 0x0029F8, "Wrong size on UPyAbility_102193");
+DUMPER7_ASSERTS_UPyAbility_102193;
 
 // PythonClass PyAbility_102193.PyScope_10219301
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10219301 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10219301">();
+		STATIC_CLASS_IMPL("PyScope_10219301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10219301")
 	}
 	static class APyScope_10219301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10219301>();
 	}
 };
-static_assert(alignof(APyScope_10219301) == 0x000010, "Wrong alignment on APyScope_10219301");
-static_assert(sizeof(APyScope_10219301) == 0x001AA0, "Wrong size on APyScope_10219301");
+DUMPER7_ASSERTS_APyScope_10219301;
 
 // PythonClass PyAbility_102193.PyCue_Buff_10219301
-// 0x0010 (0x1A00 - 0x19F0)
-class APyCue_Buff_10219301 final : public ACue_Buff_10315102
+// 0x0010 (0x1AB0 - 0x1AA0)
+class APyCue_Buff_10219301 final : public ACue_Buff_Frozen
 {
 public:
-	struct FLinearColor                           IceColor;                                          // 0x19F0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           IceColor;                                          // 0x1AA0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -70,25 +75,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10219301">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10219301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10219301")
 	}
 	static class APyCue_Buff_10219301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10219301>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10219301) == 0x000010, "Wrong alignment on APyCue_Buff_10219301");
-static_assert(sizeof(APyCue_Buff_10219301) == 0x001A00, "Wrong size on APyCue_Buff_10219301");
-static_assert(offsetof(APyCue_Buff_10219301, IceColor) == 0x0019F0, "Member 'APyCue_Buff_10219301::IceColor' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10219301;
 
 // PythonClass PyAbility_102193.PyCue_Projectile_Loop_10219301
-// 0x0020 (0x1150 - 0x1130)
+// 0x0020 (0x1160 - 0x1140)
 class APyCue_Projectile_Loop_10219301 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraSystem*                         FXSecondStage;                                     // 0x1130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ExecEnterSecondStage;                              // 0x1138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         FXSecondStage;                                     // 0x1140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ExecEnterSecondStage;                              // 0x1148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -98,17 +105,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10219301">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10219301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10219301")
 	}
 	static class APyCue_Projectile_Loop_10219301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10219301>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10219301) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10219301");
-static_assert(sizeof(APyCue_Projectile_Loop_10219301) == 0x001150, "Wrong size on APyCue_Projectile_Loop_10219301");
-static_assert(offsetof(APyCue_Projectile_Loop_10219301, FXSecondStage) == 0x001130, "Member 'APyCue_Projectile_Loop_10219301::FXSecondStage' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10219301, ExecEnterSecondStage) == 0x001138, "Member 'APyCue_Projectile_Loop_10219301::ExecEnterSecondStage' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10219301;
 
 }
 

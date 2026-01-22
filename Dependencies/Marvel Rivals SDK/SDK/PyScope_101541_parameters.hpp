@@ -24,10 +24,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyScope_10154106_TraceResults) == 0x000008, "Wrong alignment on PyScope_10154106_TraceResults");
-static_assert(sizeof(PyScope_10154106_TraceResults) == 0x000018, "Wrong size on PyScope_10154106_TraceResults");
-static_assert(offsetof(PyScope_10154106_TraceResults, TraceSource) == 0x000000, "Member 'PyScope_10154106_TraceResults::TraceSource' has a wrong offset!");
-static_assert(offsetof(PyScope_10154106_TraceResults, HitResults) == 0x000008, "Member 'PyScope_10154106_TraceResults::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyScope_10154106_TraceResults;
 
 }
 

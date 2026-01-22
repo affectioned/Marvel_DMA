@@ -29,27 +29,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_401911">();
+		STATIC_CLASS_IMPL("PyConfig_401911")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_401911")
 	}
 	static class UPyConfig_401911* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_401911>();
 	}
 };
-static_assert(alignof(UPyConfig_401911) == 0x000008, "Wrong alignment on UPyConfig_401911");
-static_assert(sizeof(UPyConfig_401911) == 0x0000A8, "Wrong size on UPyConfig_401911");
-static_assert(offsetof(UPyConfig_401911, ApplyEnemyChess) == 0x000098, "Member 'UPyConfig_401911::ApplyEnemyChess' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401911, BuffID) == 0x00009C, "Member 'UPyConfig_401911::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401911, RoundCD) == 0x0000A0, "Member 'UPyConfig_401911::RoundCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_401911;
 
 // PythonClass PyAbility_401911.PyAbility_401911
-// 0x0018 (0x2A10 - 0x29F8)
+// 0x0018 (0x2A60 - 0x2A48)
 class UPyAbility_401911 : public UAbility_108
 {
 public:
-	int32                                         CD;                                                // 0x29F8(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29FC[0x4];                                     // 0x29FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              CDChanged;                                         // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         CD;                                                // 0x2A48(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A4C[0x4];                                     // 0x2A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              CDChanged;                                         // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -63,17 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_401911">();
+		STATIC_CLASS_IMPL("PyAbility_401911")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_401911")
 	}
 	static class UPyAbility_401911* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_401911>();
 	}
 };
-static_assert(alignof(UPyAbility_401911) == 0x000008, "Wrong alignment on UPyAbility_401911");
-static_assert(sizeof(UPyAbility_401911) == 0x002A10, "Wrong size on UPyAbility_401911");
-static_assert(offsetof(UPyAbility_401911, CD) == 0x0029F8, "Member 'UPyAbility_401911::CD' has a wrong offset!");
-static_assert(offsetof(UPyAbility_401911, CDChanged) == 0x002A00, "Member 'UPyAbility_401911::CDChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_401911;
 
 }
 

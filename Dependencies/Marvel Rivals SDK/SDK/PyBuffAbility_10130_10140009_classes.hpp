@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10140009.PyBuffAbility_10130_10140009
-// 0x0020 (0x1A50 - 0x1A30)
+// 0x0020 (0x1A68 - 0x1A48)
 class UPyBuffAbility_10130_10140009 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         TimeToRecordHit;                                   // 0x1A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HitCount;                                          // 0x1A34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x1A38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseDuration;                                      // 0x1A3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackAddDuration;                                  // 0x1A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCoff;                                          // 0x1A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackAddCoff;                                      // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxCoff;                                           // 0x1A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToRecordHit;                                   // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HitCount;                                          // 0x1A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x1A50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseDuration;                                      // 0x1A54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackAddDuration;                                  // 0x1A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCoff;                                          // 0x1A5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackAddCoff;                                      // 0x1A60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxCoff;                                           // 0x1A64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -37,23 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10140009">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10140009")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10140009")
 	}
 	static class UPyBuffAbility_10130_10140009* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10140009>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10140009) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10140009");
-static_assert(sizeof(UPyBuffAbility_10130_10140009) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10140009");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, TimeToRecordHit) == 0x001A30, "Member 'UPyBuffAbility_10130_10140009::TimeToRecordHit' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, HitCount) == 0x001A34, "Member 'UPyBuffAbility_10130_10140009::HitCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, BuffID) == 0x001A38, "Member 'UPyBuffAbility_10130_10140009::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, BaseDuration) == 0x001A3C, "Member 'UPyBuffAbility_10130_10140009::BaseDuration' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, StackAddDuration) == 0x001A40, "Member 'UPyBuffAbility_10130_10140009::StackAddDuration' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, BaseCoff) == 0x001A44, "Member 'UPyBuffAbility_10130_10140009::BaseCoff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, StackAddCoff) == 0x001A48, "Member 'UPyBuffAbility_10130_10140009::StackAddCoff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10140009, MaxCoff) == 0x001A4C, "Member 'UPyBuffAbility_10130_10140009::MaxCoff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10140009;
 
 }
 

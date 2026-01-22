@@ -22,10 +22,7 @@ public:
 	class FString                                 Name1_9_22BA1CDA4575FBCF76C61CBB7BBAD7E1;          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Name2_10_7312645240EE4B7B2F6B12A930703347;         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroNameLinesBP) == 0x000008, "Wrong alignment on FHeroNameLinesBP");
-static_assert(sizeof(FHeroNameLinesBP) == 0x000020, "Wrong size on FHeroNameLinesBP");
-static_assert(offsetof(FHeroNameLinesBP, Name1_9_22BA1CDA4575FBCF76C61CBB7BBAD7E1) == 0x000000, "Member 'FHeroNameLinesBP::Name1_9_22BA1CDA4575FBCF76C61CBB7BBAD7E1' has a wrong offset!");
-static_assert(offsetof(FHeroNameLinesBP, Name2_10_7312645240EE4B7B2F6B12A930703347) == 0x000010, "Member 'FHeroNameLinesBP::Name2_10_7312645240EE4B7B2F6B12A930703347' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroNameLinesBP;
 
 }
 

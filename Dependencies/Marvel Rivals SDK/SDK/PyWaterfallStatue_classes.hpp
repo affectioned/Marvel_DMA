@@ -38,18 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWaterfallStatue">();
+		STATIC_CLASS_IMPL("PyWaterfallStatue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWaterfallStatue")
 	}
 	static class APyWaterfallStatue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWaterfallStatue>();
 	}
 };
-static_assert(alignof(APyWaterfallStatue) == 0x000010, "Wrong alignment on APyWaterfallStatue");
-static_assert(sizeof(APyWaterfallStatue) == 0x000700, "Wrong size on APyWaterfallStatue");
-static_assert(offsetof(APyWaterfallStatue, OwnerShip) == 0x0006E0, "Member 'APyWaterfallStatue::OwnerShip' has a wrong offset!");
-static_assert(offsetof(APyWaterfallStatue, ControlPoint) == 0x0006E8, "Member 'APyWaterfallStatue::ControlPoint' has a wrong offset!");
-static_assert(offsetof(APyWaterfallStatue, State) == 0x0006F0, "Member 'APyWaterfallStatue::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyWaterfallStatue;
 
 }
 

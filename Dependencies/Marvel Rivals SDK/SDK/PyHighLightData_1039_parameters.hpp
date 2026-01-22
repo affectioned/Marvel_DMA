@@ -25,11 +25,7 @@ public:
 	float                                         CostValue;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           CostTag;                                           // 0x000C(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHighLightData_1039_OnAbilityConsumeCost) == 0x000008, "Wrong alignment on PyHighLightData_1039_OnAbilityConsumeCost");
-static_assert(sizeof(PyHighLightData_1039_OnAbilityConsumeCost) == 0x000018, "Wrong size on PyHighLightData_1039_OnAbilityConsumeCost");
-static_assert(offsetof(PyHighLightData_1039_OnAbilityConsumeCost, Ability) == 0x000000, "Member 'PyHighLightData_1039_OnAbilityConsumeCost::Ability' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1039_OnAbilityConsumeCost, CostValue) == 0x000008, "Member 'PyHighLightData_1039_OnAbilityConsumeCost::CostValue' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1039_OnAbilityConsumeCost, CostTag) == 0x00000C, "Member 'PyHighLightData_1039_OnAbilityConsumeCost::CostTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyHighLightData_1039_OnAbilityConsumeCost;
 
 }
 

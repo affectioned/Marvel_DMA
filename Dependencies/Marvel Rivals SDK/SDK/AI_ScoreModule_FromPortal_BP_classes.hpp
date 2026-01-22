@@ -23,15 +23,18 @@ class UAI_ScoreModule_FromPortal_BP_C final : public UAIScoreModule_FromPortal
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_ScoreModule_FromPortal_BP_C">();
+		BP_STATIC_CLASS_IMPL("AI_ScoreModule_FromPortal_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_ScoreModule_FromPortal_BP_C")
 	}
 	static class UAI_ScoreModule_FromPortal_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_ScoreModule_FromPortal_BP_C>();
 	}
 };
-static_assert(alignof(UAI_ScoreModule_FromPortal_BP_C) == 0x000008, "Wrong alignment on UAI_ScoreModule_FromPortal_BP_C");
-static_assert(sizeof(UAI_ScoreModule_FromPortal_BP_C) == 0x000048, "Wrong size on UAI_ScoreModule_FromPortal_BP_C");
+DUMPER7_ASSERTS_UAI_ScoreModule_FromPortal_BP_C;
 
 }
 

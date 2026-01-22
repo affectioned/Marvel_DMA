@@ -23,15 +23,18 @@ class UAISelectTarget_BuffCharacter_DareDevilF_10550601_C final : public UAISele
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_BuffCharacter_DareDevilF_10550601_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_BuffCharacter_DareDevilF_10550601_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_BuffCharacter_DareDevilF_10550601_C")
 	}
 	static class UAISelectTarget_BuffCharacter_DareDevilF_10550601_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_BuffCharacter_DareDevilF_10550601_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_BuffCharacter_DareDevilF_10550601_C) == 0x000008, "Wrong alignment on UAISelectTarget_BuffCharacter_DareDevilF_10550601_C");
-static_assert(sizeof(UAISelectTarget_BuffCharacter_DareDevilF_10550601_C) == 0x000118, "Wrong size on UAISelectTarget_BuffCharacter_DareDevilF_10550601_C");
+DUMPER7_ASSERTS_UAISelectTarget_BuffCharacter_DareDevilF_10550601_C;
 
 }
 

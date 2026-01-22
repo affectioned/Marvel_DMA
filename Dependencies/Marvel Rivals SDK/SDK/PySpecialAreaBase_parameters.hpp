@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,9 +25,7 @@ struct PySpecialAreaBase_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaBase_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpecialAreaBase_ReceiveEndPlay");
-static_assert(sizeof(PySpecialAreaBase_ReceiveEndPlay) == 0x000001, "Wrong size on PySpecialAreaBase_ReceiveEndPlay");
-static_assert(offsetof(PySpecialAreaBase_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySpecialAreaBase_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaBase_ReceiveEndPlay;
 
 // PythonFunction PySpecialAreaBase.PySpecialAreaBase.OnMonitorTriggeredHandler
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +34,7 @@ struct PySpecialAreaBase_OnMonitorTriggeredHandler final
 public:
 	float                                         Des;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaBase_OnMonitorTriggeredHandler) == 0x000004, "Wrong alignment on PySpecialAreaBase_OnMonitorTriggeredHandler");
-static_assert(sizeof(PySpecialAreaBase_OnMonitorTriggeredHandler) == 0x000004, "Wrong size on PySpecialAreaBase_OnMonitorTriggeredHandler");
-static_assert(offsetof(PySpecialAreaBase_OnMonitorTriggeredHandler, Des) == 0x000000, "Member 'PySpecialAreaBase_OnMonitorTriggeredHandler::Des' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaBase_OnMonitorTriggeredHandler;
 
 // PythonFunction PySpecialAreaBase.PySpecialAreaBase.MulticastTakeEffect
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +43,7 @@ struct PySpecialAreaBase_MulticastTakeEffect final
 public:
 	TArray<struct FVector>                        DesPoints;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySpecialAreaBase_MulticastTakeEffect) == 0x000008, "Wrong alignment on PySpecialAreaBase_MulticastTakeEffect");
-static_assert(sizeof(PySpecialAreaBase_MulticastTakeEffect) == 0x000010, "Wrong size on PySpecialAreaBase_MulticastTakeEffect");
-static_assert(offsetof(PySpecialAreaBase_MulticastTakeEffect, DesPoints) == 0x000000, "Member 'PySpecialAreaBase_MulticastTakeEffect::DesPoints' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaBase_MulticastTakeEffect;
 
 // PythonFunction PySpecialAreaBase.PySpecialAreaBase.SrvSetCanBeTriggered
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +52,7 @@ struct PySpecialAreaBase_SrvSetCanBeTriggered final
 public:
 	bool                                          enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaBase_SrvSetCanBeTriggered) == 0x000001, "Wrong alignment on PySpecialAreaBase_SrvSetCanBeTriggered");
-static_assert(sizeof(PySpecialAreaBase_SrvSetCanBeTriggered) == 0x000001, "Wrong size on PySpecialAreaBase_SrvSetCanBeTriggered");
-static_assert(offsetof(PySpecialAreaBase_SrvSetCanBeTriggered, enable) == 0x000000, "Member 'PySpecialAreaBase_SrvSetCanBeTriggered::enable' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaBase_SrvSetCanBeTriggered;
 
 }
 

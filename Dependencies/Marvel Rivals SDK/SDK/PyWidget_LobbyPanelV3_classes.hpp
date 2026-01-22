@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyPanelV3.PyWidget_LobbyPanelV3
-// 0x0030 (0x0628 - 0x05F8)
+// 0x0030 (0x0630 - 0x0600)
 class UPyWidget_LobbyPanelV3 final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_Menu;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Lobby_Home;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Lobby_Team;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                Lobby_Clan;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Menu;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Lobby_Home;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Lobby_Team;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Lobby_Clan;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                GuideActions;                                      // 0x0620(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyPanelV3">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyPanelV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyPanelV3")
 	}
 	static class UPyWidget_LobbyPanelV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyPanelV3>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyPanelV3) == 0x000008, "Wrong alignment on UPyWidget_LobbyPanelV3");
-static_assert(sizeof(UPyWidget_LobbyPanelV3) == 0x000628, "Wrong size on UPyWidget_LobbyPanelV3");
-static_assert(offsetof(UPyWidget_LobbyPanelV3, AkEvent_Menu) == 0x0005F8, "Member 'UPyWidget_LobbyPanelV3::AkEvent_Menu' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPanelV3, Lobby_Home) == 0x000600, "Member 'UPyWidget_LobbyPanelV3::Lobby_Home' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPanelV3, Lobby_Team) == 0x000608, "Member 'UPyWidget_LobbyPanelV3::Lobby_Team' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPanelV3, Lobby_Clan) == 0x000610, "Member 'UPyWidget_LobbyPanelV3::Lobby_Clan' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyPanelV3, GuideActions) == 0x000618, "Member 'UPyWidget_LobbyPanelV3::GuideActions' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyPanelV3;
 
 }
 

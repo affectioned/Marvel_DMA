@@ -34,27 +34,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10352101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10352101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10352101")
 	}
 	static class UPyCue_Ability_Instant_10352101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10352101>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10352101) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10352101");
-static_assert(sizeof(UPyCue_Ability_Instant_10352101) == 0x0003F0, "Wrong size on UPyCue_Ability_Instant_10352101");
-static_assert(offsetof(UPyCue_Ability_Instant_10352101, NS_SpeedLine) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10352101::NS_SpeedLine' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10352101, TentacleIndex) == 0x0003C8, "Member 'UPyCue_Ability_Instant_10352101::TentacleIndex' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10352101, SocketNames) == 0x0003D0, "Member 'UPyCue_Ability_Instant_10352101::SocketNames' has a wrong offset!");
-static_assert(offsetof(UPyCue_Ability_Instant_10352101, Transforms) == 0x0003E0, "Member 'UPyCue_Ability_Instant_10352101::Transforms' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10352101;
 
 // PythonClass PyAbility_103521.PyCue_HitImpact_10352101
-// 0x0020 (0x05E8 - 0x05C8)
+// 0x0020 (0x0608 - 0x05E8)
 class UPyCue_HitImpact_10352101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	TArray<TSubclassOf<class ULegacyCameraShake>> CameraShakes;                                      // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<TSubclassOf<class ULegacyCameraShake>> SceneCameraShakes;                                 // 0x05D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class ULegacyCameraShake>> CameraShakes;                                      // 0x05E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class ULegacyCameraShake>> SceneCameraShakes;                                 // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -63,17 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_HitImpact_10352101">();
+		STATIC_CLASS_IMPL("PyCue_HitImpact_10352101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_HitImpact_10352101")
 	}
 	static class UPyCue_HitImpact_10352101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_HitImpact_10352101>();
 	}
 };
-static_assert(alignof(UPyCue_HitImpact_10352101) == 0x000008, "Wrong alignment on UPyCue_HitImpact_10352101");
-static_assert(sizeof(UPyCue_HitImpact_10352101) == 0x0005E8, "Wrong size on UPyCue_HitImpact_10352101");
-static_assert(offsetof(UPyCue_HitImpact_10352101, CameraShakes) == 0x0005C8, "Member 'UPyCue_HitImpact_10352101::CameraShakes' has a wrong offset!");
-static_assert(offsetof(UPyCue_HitImpact_10352101, SceneCameraShakes) == 0x0005D8, "Member 'UPyCue_HitImpact_10352101::SceneCameraShakes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_HitImpact_10352101;
 
 }
 

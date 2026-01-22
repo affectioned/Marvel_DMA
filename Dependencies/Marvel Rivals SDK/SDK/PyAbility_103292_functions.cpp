@@ -17,52 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_103292.PyTraceComponent_10329201.K2_Initialize
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyTraceComponent_10329201::K2_Initialize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyTraceComponent_10329201", "K2_Initialize");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_103292.PyTraceComponent_10329201.HandleTrace
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          TraceSource                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyTraceComponent_10329201::HandleTrace(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyTraceComponent_10329201", "HandleTrace");
-
-	Params::PyTraceComponent_10329201_HandleTrace Parms{};
-
-	Parms.TraceSource = TraceSource;
-	Parms.HitResults = std::move(HitResults);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_103292.PyAbility_103292.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -249,6 +203,52 @@ void APyProjectile_10329201::K2_OnForceEndAgentTask()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103292.PyTraceComponent_10329201.K2_Initialize
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyTraceComponent_10329201::K2_Initialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyTraceComponent_10329201", "K2_Initialize");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_103292.PyTraceComponent_10329201.HandleTrace
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          TraceSource                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void UPyTraceComponent_10329201::HandleTrace(class UObject* TraceSource, const TArray<struct FHitResult>& HitResults)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyTraceComponent_10329201", "HandleTrace");
+
+	Params::PyTraceComponent_10329201_HandleTrace Parms{};
+
+	Parms.TraceSource = TraceSource;
+	Parms.HitResults = std::move(HitResults);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

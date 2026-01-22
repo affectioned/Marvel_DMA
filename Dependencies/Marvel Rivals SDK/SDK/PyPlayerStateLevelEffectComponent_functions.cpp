@@ -36,31 +36,6 @@ void UPyPlayerStateLevelEffectComponent::ReceiveInitializeComponent()
 }
 
 
-// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.OnCharacterRegister
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Character                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyPlayerStateLevelEffectComponent::OnCharacterRegister(class AActor* Character)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyPlayerStateLevelEffectComponent", "OnCharacterRegister");
-
-	Params::PyPlayerStateLevelEffectComponent_OnCharacterRegister Parms{};
-
-	Parms.Character = Character;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.OnPlayerPossessCharacter
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -88,22 +63,81 @@ void UPyPlayerStateLevelEffectComponent::OnPlayerPossessCharacter(class AMarvelP
 }
 
 
-// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.OnRep_OwnCardList
-// (Native, Public, BlueprintCallable)
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PreReplicatedRemove
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLevelEffectItem*                EffectInfo                                             (Parm, OutParm, NoDestructor)
 
-void UPyPlayerStateLevelEffectComponent::OnRep_OwnCardList()
+void UPyPlayerStateLevelEffectComponent::K2_PreReplicatedRemove(struct FLevelEffectItem* EffectInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyPlayerStateLevelEffectComponent", "OnRep_OwnCardList");
+		Func = Class->GetFunction("PyPlayerStateLevelEffectComponent", "K2_PreReplicatedRemove");
+
+	Params::PyPlayerStateLevelEffectComponent_K2_PreReplicatedRemove Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	if (EffectInfo != nullptr)
+		*EffectInfo = std::move(Parms.EffectInfo);
+}
+
+
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PostReplicatedAdd
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLevelEffectItem*                EffectInfo                                             (Parm, OutParm, NoDestructor)
+
+void UPyPlayerStateLevelEffectComponent::K2_PostReplicatedAdd(struct FLevelEffectItem* EffectInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerStateLevelEffectComponent", "K2_PostReplicatedAdd");
+
+	Params::PyPlayerStateLevelEffectComponent_K2_PostReplicatedAdd Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (EffectInfo != nullptr)
+		*EffectInfo = std::move(Parms.EffectInfo);
+}
+
+
+// PythonFunction PyPlayerStateLevelEffectComponent.PyPlayerStateLevelEffectComponent.K2_PostReplicatedChange
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FLevelEffectItem*                EffectInfo                                             (Parm, OutParm, NoDestructor)
+
+void UPyPlayerStateLevelEffectComponent::K2_PostReplicatedChange(struct FLevelEffectItem* EffectInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyPlayerStateLevelEffectComponent", "K2_PostReplicatedChange");
+
+	Params::PyPlayerStateLevelEffectComponent_K2_PostReplicatedChange Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (EffectInfo != nullptr)
+		*EffectInfo = std::move(Parms.EffectInfo);
 }
 
 }

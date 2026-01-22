@@ -18,29 +18,31 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104492.PyConfig_104492
-// 0x3A68 (0x3B00 - 0x0098)
+// 0x4488 (0x4520 - 0x0098)
 class UPyConfig_104492 final : public UMarvelAbilityConfig
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectAndDashInfo                     SelectDashParam;                                   // 0x00A0(0x3A60)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSelectAndDashInfo                     SelectDashParam;                                   // 0x00A0(0x4480)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104492">();
+		STATIC_CLASS_IMPL("PyConfig_104492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104492")
 	}
 	static class UPyConfig_104492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104492>();
 	}
 };
-static_assert(alignof(UPyConfig_104492) == 0x000010, "Wrong alignment on UPyConfig_104492");
-static_assert(sizeof(UPyConfig_104492) == 0x003B00, "Wrong size on UPyConfig_104492");
-static_assert(offsetof(UPyConfig_104492, SelectDashParam) == 0x0000A0, "Member 'UPyConfig_104492::SelectDashParam' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104492;
 
 // PythonClass PyAbility_104492.PyAbility_104492
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_104492 : public UMarvelGameplayAbility
 {
 public:
@@ -56,18 +58,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104492">();
+		STATIC_CLASS_IMPL("PyAbility_104492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104492")
 	}
 	static class UPyAbility_104492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104492>();
 	}
 };
-static_assert(alignof(UPyAbility_104492) == 0x000008, "Wrong alignment on UPyAbility_104492");
-static_assert(sizeof(UPyAbility_104492) == 0x0029F0, "Wrong size on UPyAbility_104492");
+DUMPER7_ASSERTS_UPyAbility_104492;
 
 // PythonClass PyAbility_104492.PyUIController_104492
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104492 final : public UUIC_Ability
 {
 public:
@@ -76,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104492">();
+		STATIC_CLASS_IMPL("PyUIController_104492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104492")
 	}
 	static class UPyUIController_104492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104492>();
 	}
 };
-static_assert(alignof(UPyUIController_104492) == 0x000008, "Wrong alignment on UPyUIController_104492");
-static_assert(sizeof(UPyUIController_104492) == 0x000F10, "Wrong size on UPyUIController_104492");
+DUMPER7_ASSERTS_UPyUIController_104492;
 
 }
 

@@ -24,9 +24,7 @@ struct TraceComponent_10515101_DoTrace final
 public:
 	TArray<struct FVector>                        ValidPoints;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TraceComponent_10515101_DoTrace) == 0x000008, "Wrong alignment on TraceComponent_10515101_DoTrace");
-static_assert(sizeof(TraceComponent_10515101_DoTrace) == 0x000010, "Wrong size on TraceComponent_10515101_DoTrace");
-static_assert(offsetof(TraceComponent_10515101_DoTrace, ValidPoints) == 0x000000, "Member 'TraceComponent_10515101_DoTrace::ValidPoints' has a wrong offset!");
+DUMPER7_ASSERTS_TraceComponent_10515101_DoTrace;
 
 // Function Hero_1051.Ability_105151.GetPointRotation
 // 0x00A0 (0x00A0 - 0x0000)
@@ -39,11 +37,7 @@ public:
 	struct FRotator                               ReturnValue;                                       // 0x0080(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_105151_GetPointRotation) == 0x000010, "Wrong alignment on Ability_105151_GetPointRotation");
-static_assert(sizeof(Ability_105151_GetPointRotation) == 0x0000A0, "Wrong size on Ability_105151_GetPointRotation");
-static_assert(offsetof(Ability_105151_GetPointRotation, InNormal) == 0x000000, "Member 'Ability_105151_GetPointRotation::InNormal' has a wrong offset!");
-static_assert(offsetof(Ability_105151_GetPointRotation, StandardTransform) == 0x000020, "Member 'Ability_105151_GetPointRotation::StandardTransform' has a wrong offset!");
-static_assert(offsetof(Ability_105151_GetPointRotation, ReturnValue) == 0x000080, "Member 'Ability_105151_GetPointRotation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105151_GetPointRotation;
 
 // Function Hero_1051.Ability_105162.SwitchTimelineTask
 // 0x000C (0x000C - 0x0000)
@@ -52,9 +46,7 @@ struct Ability_105162_SwitchTimelineTask final
 public:
 	class FName                                   SectionName;                                       // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105162_SwitchTimelineTask) == 0x000004, "Wrong alignment on Ability_105162_SwitchTimelineTask");
-static_assert(sizeof(Ability_105162_SwitchTimelineTask) == 0x00000C, "Wrong size on Ability_105162_SwitchTimelineTask");
-static_assert(offsetof(Ability_105162_SwitchTimelineTask, SectionName) == 0x000000, "Member 'Ability_105162_SwitchTimelineTask::SectionName' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105162_SwitchTimelineTask;
 
 // Function Hero_1051.Ability_105171.MarkOnHumanTorch
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +55,7 @@ struct Ability_105171_MarkOnHumanTorch final
 public:
 	bool                                          bOnTarget;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(Ability_105171_MarkOnHumanTorch) == 0x000001, "Wrong alignment on Ability_105171_MarkOnHumanTorch");
-static_assert(sizeof(Ability_105171_MarkOnHumanTorch) == 0x000001, "Wrong size on Ability_105171_MarkOnHumanTorch");
-static_assert(offsetof(Ability_105171_MarkOnHumanTorch, bOnTarget) == 0x000000, "Member 'Ability_105171_MarkOnHumanTorch::bOnTarget' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105171_MarkOnHumanTorch;
 
 // Function Hero_1051.Ability_105171.MultiSetSpringArmIgnore
 // 0x0010 (0x0010 - 0x0000)
@@ -76,10 +66,7 @@ public:
 	bool                                          bIgnore;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_105171_MultiSetSpringArmIgnore) == 0x000008, "Wrong alignment on Ability_105171_MultiSetSpringArmIgnore");
-static_assert(sizeof(Ability_105171_MultiSetSpringArmIgnore) == 0x000010, "Wrong size on Ability_105171_MultiSetSpringArmIgnore");
-static_assert(offsetof(Ability_105171_MultiSetSpringArmIgnore, TargetCharacter) == 0x000000, "Member 'Ability_105171_MultiSetSpringArmIgnore::TargetCharacter' has a wrong offset!");
-static_assert(offsetof(Ability_105171_MultiSetSpringArmIgnore, bIgnore) == 0x000008, "Member 'Ability_105171_MultiSetSpringArmIgnore::bIgnore' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105171_MultiSetSpringArmIgnore;
 
 // Function Hero_1051.Ability_105172.GetPredictHitLocation
 // 0x0038 (0x0038 - 0x0000)
@@ -91,11 +78,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(Ability_105172_GetPredictHitLocation) == 0x000008, "Wrong alignment on Ability_105172_GetPredictHitLocation");
-static_assert(sizeof(Ability_105172_GetPredictHitLocation) == 0x000038, "Wrong size on Ability_105172_GetPredictHitLocation");
-static_assert(offsetof(Ability_105172_GetPredictHitLocation, InitVelocity) == 0x000000, "Member 'Ability_105172_GetPredictHitLocation::InitVelocity' has a wrong offset!");
-static_assert(offsetof(Ability_105172_GetPredictHitLocation, OutLocation) == 0x000018, "Member 'Ability_105172_GetPredictHitLocation::OutLocation' has a wrong offset!");
-static_assert(offsetof(Ability_105172_GetPredictHitLocation, ReturnValue) == 0x000030, "Member 'Ability_105172_GetPredictHitLocation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105172_GetPredictHitLocation;
 
 // Function Hero_1051.BenjaminGrimAnimInstance.GetSynergyRideAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -104,9 +87,7 @@ struct BenjaminGrimAnimInstance_GetSynergyRideAnimation final
 public:
 	struct FAnimUpdateContext                     PoseContext;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BenjaminGrimAnimInstance_GetSynergyRideAnimation) == 0x000008, "Wrong alignment on BenjaminGrimAnimInstance_GetSynergyRideAnimation");
-static_assert(sizeof(BenjaminGrimAnimInstance_GetSynergyRideAnimation) == 0x000010, "Wrong size on BenjaminGrimAnimInstance_GetSynergyRideAnimation");
-static_assert(offsetof(BenjaminGrimAnimInstance_GetSynergyRideAnimation, PoseContext) == 0x000000, "Member 'BenjaminGrimAnimInstance_GetSynergyRideAnimation::PoseContext' has a wrong offset!");
+DUMPER7_ASSERTS_BenjaminGrimAnimInstance_GetSynergyRideAnimation;
 
 // Function Hero_1051.BenjaminGrimAnimInstance.GetSynergyRideStartAnimation
 // 0x0010 (0x0010 - 0x0000)
@@ -115,9 +96,7 @@ struct BenjaminGrimAnimInstance_GetSynergyRideStartAnimation final
 public:
 	struct FAnimUpdateContext                     PoseContext;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BenjaminGrimAnimInstance_GetSynergyRideStartAnimation) == 0x000008, "Wrong alignment on BenjaminGrimAnimInstance_GetSynergyRideStartAnimation");
-static_assert(sizeof(BenjaminGrimAnimInstance_GetSynergyRideStartAnimation) == 0x000010, "Wrong size on BenjaminGrimAnimInstance_GetSynergyRideStartAnimation");
-static_assert(offsetof(BenjaminGrimAnimInstance_GetSynergyRideStartAnimation, PoseContext) == 0x000000, "Member 'BenjaminGrimAnimInstance_GetSynergyRideStartAnimation::PoseContext' has a wrong offset!");
+DUMPER7_ASSERTS_BenjaminGrimAnimInstance_GetSynergyRideStartAnimation;
 
 // Function Hero_1051.BenjaminGrimAnimInstance.UpdateSynergyRideStartNode
 // 0x0020 (0x0020 - 0x0000)
@@ -127,10 +106,7 @@ public:
 	struct FAnimUpdateContext                     Context;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAnimNodeReference                     Node;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BenjaminGrimAnimInstance_UpdateSynergyRideStartNode) == 0x000008, "Wrong alignment on BenjaminGrimAnimInstance_UpdateSynergyRideStartNode");
-static_assert(sizeof(BenjaminGrimAnimInstance_UpdateSynergyRideStartNode) == 0x000020, "Wrong size on BenjaminGrimAnimInstance_UpdateSynergyRideStartNode");
-static_assert(offsetof(BenjaminGrimAnimInstance_UpdateSynergyRideStartNode, Context) == 0x000000, "Member 'BenjaminGrimAnimInstance_UpdateSynergyRideStartNode::Context' has a wrong offset!");
-static_assert(offsetof(BenjaminGrimAnimInstance_UpdateSynergyRideStartNode, Node) == 0x000010, "Member 'BenjaminGrimAnimInstance_UpdateSynergyRideStartNode::Node' has a wrong offset!");
+DUMPER7_ASSERTS_BenjaminGrimAnimInstance_UpdateSynergyRideStartNode;
 
 // Function Hero_1051.BanjaminAnimInstance_105161.OnGroundDetailPostBecomeRelevant
 // 0x0020 (0x0020 - 0x0000)
@@ -140,10 +116,7 @@ public:
 	struct FAnimUpdateContext                     Context;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAnimNodeReference                     Node;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant) == 0x000008, "Wrong alignment on BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant");
-static_assert(sizeof(BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant) == 0x000020, "Wrong size on BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant");
-static_assert(offsetof(BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant, Context) == 0x000000, "Member 'BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant::Context' has a wrong offset!");
-static_assert(offsetof(BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant, Node) == 0x000010, "Member 'BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant::Node' has a wrong offset!");
+DUMPER7_ASSERTS_BanjaminAnimInstance_105161_OnGroundDetailPostBecomeRelevant;
 
 // Function Hero_1051.BanjaminAnimInstance_105161.OnReleantSynergyRideNode
 // 0x0020 (0x0020 - 0x0000)
@@ -153,10 +126,7 @@ public:
 	struct FAnimUpdateContext                     Context;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAnimNodeReference                     Node;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BanjaminAnimInstance_105161_OnReleantSynergyRideNode) == 0x000008, "Wrong alignment on BanjaminAnimInstance_105161_OnReleantSynergyRideNode");
-static_assert(sizeof(BanjaminAnimInstance_105161_OnReleantSynergyRideNode) == 0x000020, "Wrong size on BanjaminAnimInstance_105161_OnReleantSynergyRideNode");
-static_assert(offsetof(BanjaminAnimInstance_105161_OnReleantSynergyRideNode, Context) == 0x000000, "Member 'BanjaminAnimInstance_105161_OnReleantSynergyRideNode::Context' has a wrong offset!");
-static_assert(offsetof(BanjaminAnimInstance_105161_OnReleantSynergyRideNode, Node) == 0x000010, "Member 'BanjaminAnimInstance_105161_OnReleantSynergyRideNode::Node' has a wrong offset!");
+DUMPER7_ASSERTS_BanjaminAnimInstance_105161_OnReleantSynergyRideNode;
 
 // Function Hero_1051.BenjaminGrimCharacter.SetSynergyExtraCapsuleComponentEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -165,9 +135,7 @@ struct BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled) == 0x000001, "Wrong alignment on BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled");
-static_assert(sizeof(BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled) == 0x000001, "Wrong size on BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled");
-static_assert(offsetof(BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled, bEnabled) == 0x000000, "Member 'BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_BenjaminGrimCharacter_SetSynergyExtraCapsuleComponentEnabled;
 
 }
 

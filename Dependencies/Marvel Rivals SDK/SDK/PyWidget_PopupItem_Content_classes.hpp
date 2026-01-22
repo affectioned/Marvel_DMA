@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PopupItem_Content.PyWidget_PopupItem_Content
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PopupItem_Content final : public UPyMarvelUserWidget
 {
 public:
@@ -29,40 +29,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PopupItem_Content">();
+		STATIC_CLASS_IMPL("PyWidget_PopupItem_Content")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PopupItem_Content")
 	}
 	static class UPyWidget_PopupItem_Content* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PopupItem_Content>();
 	}
 };
-static_assert(alignof(UPyWidget_PopupItem_Content) == 0x000008, "Wrong alignment on UPyWidget_PopupItem_Content");
-static_assert(sizeof(UPyWidget_PopupItem_Content) == 0x0005C0, "Wrong size on UPyWidget_PopupItem_Content");
+DUMPER7_ASSERTS_UPyWidget_PopupItem_Content;
 
 // PythonClass PyWidget_PopupItem_Content.PyWidget_InvitePopup_Press
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_InvitePopup_Press final : public UMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopup_Press">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopup_Press")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopup_Press")
 	}
 	static class UPyWidget_InvitePopup_Press* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopup_Press>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopup_Press) == 0x000008, "Wrong alignment on UPyWidget_InvitePopup_Press");
-static_assert(sizeof(UPyWidget_InvitePopup_Press) == 0x000568, "Wrong size on UPyWidget_InvitePopup_Press");
+DUMPER7_ASSERTS_UPyWidget_InvitePopup_Press;
 
 // PythonClass PyWidget_PopupItem_Content.PyWidget_InvitePopupProg_Single
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_InvitePopupProg_Single final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_CountDown;                                    // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_CountDown;                                    // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -70,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InvitePopupProg_Single">();
+		STATIC_CLASS_IMPL("PyWidget_InvitePopupProg_Single")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InvitePopupProg_Single")
 	}
 	static class UPyWidget_InvitePopupProg_Single* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InvitePopupProg_Single>();
 	}
 };
-static_assert(alignof(UPyWidget_InvitePopupProg_Single) == 0x000008, "Wrong alignment on UPyWidget_InvitePopupProg_Single");
-static_assert(sizeof(UPyWidget_InvitePopupProg_Single) == 0x0005C8, "Wrong size on UPyWidget_InvitePopupProg_Single");
-static_assert(offsetof(UPyWidget_InvitePopupProg_Single, Anim_CountDown) == 0x0005C0, "Member 'UPyWidget_InvitePopupProg_Single::Anim_CountDown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InvitePopupProg_Single;
 
 }
 

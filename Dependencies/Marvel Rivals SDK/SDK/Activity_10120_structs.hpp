@@ -59,14 +59,7 @@ public:
 	int32                                         StackCount;                                        // 0x0028(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0xC];                                       // 0x002C(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAdditionalEffectContext) == 0x000008, "Wrong alignment on FAdditionalEffectContext");
-static_assert(sizeof(FAdditionalEffectContext) == 0x000038, "Wrong size on FAdditionalEffectContext");
-static_assert(offsetof(FAdditionalEffectContext, SourceAbility) == 0x000000, "Member 'FAdditionalEffectContext::SourceAbility' has a wrong offset!");
-static_assert(offsetof(FAdditionalEffectContext, SourceActor) == 0x000008, "Member 'FAdditionalEffectContext::SourceActor' has a wrong offset!");
-static_assert(offsetof(FAdditionalEffectContext, SourceASC) == 0x000010, "Member 'FAdditionalEffectContext::SourceASC' has a wrong offset!");
-static_assert(offsetof(FAdditionalEffectContext, TargetActor) == 0x000018, "Member 'FAdditionalEffectContext::TargetActor' has a wrong offset!");
-static_assert(offsetof(FAdditionalEffectContext, TargetASC) == 0x000020, "Member 'FAdditionalEffectContext::TargetASC' has a wrong offset!");
-static_assert(offsetof(FAdditionalEffectContext, StackCount) == 0x000028, "Member 'FAdditionalEffectContext::StackCount' has a wrong offset!");
+DUMPER7_ASSERTS_FAdditionalEffectContext;
 
 // ScriptStruct Activity_10120.AbilityAdditionalEffect_ApplyBuff
 // 0x000C (0x000C - 0x0000)
@@ -77,11 +70,7 @@ public:
 	float                                         ValueOverride;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DurationOverride;                                  // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityAdditionalEffect_ApplyBuff) == 0x000004, "Wrong alignment on FAbilityAdditionalEffect_ApplyBuff");
-static_assert(sizeof(FAbilityAdditionalEffect_ApplyBuff) == 0x00000C, "Wrong size on FAbilityAdditionalEffect_ApplyBuff");
-static_assert(offsetof(FAbilityAdditionalEffect_ApplyBuff, BuffID) == 0x000000, "Member 'FAbilityAdditionalEffect_ApplyBuff::BuffID' has a wrong offset!");
-static_assert(offsetof(FAbilityAdditionalEffect_ApplyBuff, ValueOverride) == 0x000004, "Member 'FAbilityAdditionalEffect_ApplyBuff::ValueOverride' has a wrong offset!");
-static_assert(offsetof(FAbilityAdditionalEffect_ApplyBuff, DurationOverride) == 0x000008, "Member 'FAbilityAdditionalEffect_ApplyBuff::DurationOverride' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityAdditionalEffect_ApplyBuff;
 
 // ScriptStruct Activity_10120.AbilityAdditionalEffect
 // 0x0018 (0x0018 - 0x0000)
@@ -93,12 +82,7 @@ public:
 	class UAbilityAdditionalTrigger_Base*         AdditionalTrigger;                                 // 0x0008(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAbilityAdditionalEffect_Base*          AdditionalEffect;                                  // 0x0010(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAbilityAdditionalEffect) == 0x000008, "Wrong alignment on FAbilityAdditionalEffect");
-static_assert(sizeof(FAbilityAdditionalEffect) == 0x000018, "Wrong size on FAbilityAdditionalEffect");
-static_assert(offsetof(FAbilityAdditionalEffect, AbilityID) == 0x000000, "Member 'FAbilityAdditionalEffect::AbilityID' has a wrong offset!");
-static_assert(offsetof(FAbilityAdditionalEffect, AdditionalState) == 0x000004, "Member 'FAbilityAdditionalEffect::AdditionalState' has a wrong offset!");
-static_assert(offsetof(FAbilityAdditionalEffect, AdditionalTrigger) == 0x000008, "Member 'FAbilityAdditionalEffect::AdditionalTrigger' has a wrong offset!");
-static_assert(offsetof(FAbilityAdditionalEffect, AdditionalEffect) == 0x000010, "Member 'FAbilityAdditionalEffect::AdditionalEffect' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilityAdditionalEffect;
 
 // ScriptStruct Activity_10120.TargetConditionalApplyEffect
 // 0x0010 (0x0010 - 0x0000)
@@ -108,10 +92,7 @@ public:
 	class UAbilityConditional_Base*               ApplyCondition;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAbilityAdditionalEffect_Base*          AdditionalEffect;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTargetConditionalApplyEffect) == 0x000008, "Wrong alignment on FTargetConditionalApplyEffect");
-static_assert(sizeof(FTargetConditionalApplyEffect) == 0x000010, "Wrong size on FTargetConditionalApplyEffect");
-static_assert(offsetof(FTargetConditionalApplyEffect, ApplyCondition) == 0x000000, "Member 'FTargetConditionalApplyEffect::ApplyCondition' has a wrong offset!");
-static_assert(offsetof(FTargetConditionalApplyEffect, AdditionalEffect) == 0x000008, "Member 'FTargetConditionalApplyEffect::AdditionalEffect' has a wrong offset!");
+DUMPER7_ASSERTS_FTargetConditionalApplyEffect;
 
 }
 

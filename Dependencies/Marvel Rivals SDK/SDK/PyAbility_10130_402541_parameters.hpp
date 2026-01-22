@@ -24,9 +24,7 @@ struct PyEffectAbility_40254101_OnDashFinish final
 public:
 	EDashStopReason                               Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_40254101_OnDashFinish) == 0x000001, "Wrong alignment on PyEffectAbility_40254101_OnDashFinish");
-static_assert(sizeof(PyEffectAbility_40254101_OnDashFinish) == 0x000001, "Wrong size on PyEffectAbility_40254101_OnDashFinish");
-static_assert(offsetof(PyEffectAbility_40254101_OnDashFinish, Reason) == 0x000000, "Member 'PyEffectAbility_40254101_OnDashFinish::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_40254101_OnDashFinish;
 
 // PythonFunction PyAbility_10130_402541.PyEffectAbility_40254101.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyEffectAbility_40254101_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_40254101_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_40254101_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_40254101_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_40254101_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_40254101_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_40254101_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_40254101_K2_OnEndAbility;
 
 // PythonFunction PyAbility_10130_402541.PySummonedComp_40254101.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedComp_40254101_OnTagUpdate) == 0x000004, "Wrong alignment on PySummonedComp_40254101_OnTagUpdate");
-static_assert(sizeof(PySummonedComp_40254101_OnTagUpdate) == 0x000010, "Wrong size on PySummonedComp_40254101_OnTagUpdate");
-static_assert(offsetof(PySummonedComp_40254101_OnTagUpdate, tag) == 0x000000, "Member 'PySummonedComp_40254101_OnTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_40254101_OnTagUpdate, exist) == 0x00000C, "Member 'PySummonedComp_40254101_OnTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_40254101_OnTagUpdate;
 
 // PythonFunction PyAbility_10130_402541.PyAbility_402541.GetSelectTarget
 // 0x0010 (0x0010 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	class UMarvelAbilityTask_SelectTarget*        SelectTargetTask;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_402541_GetSelectTarget) == 0x000008, "Wrong alignment on PyAbility_402541_GetSelectTarget");
-static_assert(sizeof(PyAbility_402541_GetSelectTarget) == 0x000010, "Wrong size on PyAbility_402541_GetSelectTarget");
-static_assert(offsetof(PyAbility_402541_GetSelectTarget, SelectTargetTask) == 0x000000, "Member 'PyAbility_402541_GetSelectTarget::SelectTargetTask' has a wrong offset!");
-static_assert(offsetof(PyAbility_402541_GetSelectTarget, ReturnValue) == 0x000008, "Member 'PyAbility_402541_GetSelectTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_402541_GetSelectTarget;
 
 // PythonFunction PyAbility_10130_402541.PyAbility_402541.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +62,7 @@ struct PyAbility_402541_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_402541_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_402541_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_402541_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_402541_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_402541_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_402541_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_402541_K2_OnEndAbility;
 
 }
 

@@ -23,9 +23,7 @@ struct PyKunlunH01SelectHeroBackground_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKunlunH01SelectHeroBackground_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKunlunH01SelectHeroBackground_ReceiveEndPlay");
-static_assert(sizeof(PyKunlunH01SelectHeroBackground_ReceiveEndPlay) == 0x000001, "Wrong size on PyKunlunH01SelectHeroBackground_ReceiveEndPlay");
-static_assert(offsetof(PyKunlunH01SelectHeroBackground_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKunlunH01SelectHeroBackground_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKunlunH01SelectHeroBackground_ReceiveEndPlay;
 
 }
 

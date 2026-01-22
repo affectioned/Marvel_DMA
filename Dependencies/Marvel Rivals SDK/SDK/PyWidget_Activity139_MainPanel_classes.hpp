@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity139_MainPanel.PyWidget_Activity139_MainPanel
-// 0x0048 (0x0640 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UPyWidget_Activity139_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            TimeRemindColor;                                   // 0x05F8(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeNormalColor;                                   // 0x060C(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgTimeRemindColor;                                // 0x0620(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgTimeNormalColor;                                // 0x0630(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeRemindColor;                                   // 0x0600(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeNormalColor;                                   // 0x0614(0x0014)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgTimeRemindColor;                                // 0x0628(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgTimeNormalColor;                                // 0x0638(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity139_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity139_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity139_MainPanel")
 	}
 	static class UPyWidget_Activity139_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity139_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity139_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity139_MainPanel");
-static_assert(sizeof(UPyWidget_Activity139_MainPanel) == 0x000640, "Wrong size on UPyWidget_Activity139_MainPanel");
-static_assert(offsetof(UPyWidget_Activity139_MainPanel, TimeRemindColor) == 0x0005F8, "Member 'UPyWidget_Activity139_MainPanel::TimeRemindColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity139_MainPanel, TimeNormalColor) == 0x00060C, "Member 'UPyWidget_Activity139_MainPanel::TimeNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity139_MainPanel, ImgTimeRemindColor) == 0x000620, "Member 'UPyWidget_Activity139_MainPanel::ImgTimeRemindColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity139_MainPanel, ImgTimeNormalColor) == 0x000630, "Member 'UPyWidget_Activity139_MainPanel::ImgTimeNormalColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity139_MainPanel;
 
 }
 

@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SummonedWeapon">();
+		STATIC_CLASS_IMPL("PyUIC_SummonedWeapon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SummonedWeapon")
 	}
 	static class UPyUIC_SummonedWeapon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SummonedWeapon>();
 	}
 };
-static_assert(alignof(UPyUIC_SummonedWeapon) == 0x000008, "Wrong alignment on UPyUIC_SummonedWeapon");
-static_assert(sizeof(UPyUIC_SummonedWeapon) == 0x000118, "Wrong size on UPyUIC_SummonedWeapon");
-static_assert(offsetof(UPyUIC_SummonedWeapon, Class_WidgetWeapon) == 0x000108, "Member 'UPyUIC_SummonedWeapon::Class_WidgetWeapon' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SummonedWeapon, Widget_Weapon) == 0x000110, "Member 'UPyUIC_SummonedWeapon::Widget_Weapon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_SummonedWeapon;
 
 }
 

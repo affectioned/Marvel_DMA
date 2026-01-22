@@ -47,7 +47,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoor">();
+		STATIC_CLASS_IMPL("PyDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoor")
 	}
 	static class APyDoor* GetDefaultObj()
 	{
@@ -55,18 +59,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyDoor) == 0x000010, "Wrong alignment on APyDoor");
-static_assert(sizeof(APyDoor) == 0x000780, "Wrong size on APyDoor");
-static_assert(offsetof(APyDoor, OpenState) == 0x000730, "Member 'APyDoor::OpenState' has a wrong offset!");
-static_assert(offsetof(APyDoor, DoorProgress) == 0x000734, "Member 'APyDoor::DoorProgress' has a wrong offset!");
-static_assert(offsetof(APyDoor, AudioEvent) == 0x000738, "Member 'APyDoor::AudioEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, StartOpenDoorEvent) == 0x000740, "Member 'APyDoor::StartOpenDoorEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, EndOpenDoorEvent) == 0x000748, "Member 'APyDoor::EndOpenDoorEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, OpenProcessEvent) == 0x000750, "Member 'APyDoor::OpenProcessEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, StartCloseDoorEvent) == 0x000758, "Member 'APyDoor::StartCloseDoorEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, EndCloseDoorEvent) == 0x000760, "Member 'APyDoor::EndCloseDoorEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, CloseProcessEvent) == 0x000768, "Member 'APyDoor::CloseProcessEvent' has a wrong offset!");
-static_assert(offsetof(APyDoor, AlwaysOpenCollision) == 0x000770, "Member 'APyDoor::AlwaysOpenCollision' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoor;
 
 }
 

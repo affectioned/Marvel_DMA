@@ -18,32 +18,31 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleChessCardCategoryToolTips.PyWidget_BattleChessCardCategoryToolTipsUnit
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_BattleChessCardCategoryToolTipsUnit : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                StarWidget;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WrapTextWidthWithNoHero;                           // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WrapTextWidthWithHero;                             // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   FormatTextTemplate;                                // 0x05D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                StarWidget;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WrapTextWidthWithNoHero;                           // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WrapTextWidthWithHero;                             // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   FormatTextTemplate;                                // 0x05D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleChessCardCategoryToolTipsUnit">();
+		STATIC_CLASS_IMPL("PyWidget_BattleChessCardCategoryToolTipsUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleChessCardCategoryToolTipsUnit")
 	}
 	static class UPyWidget_BattleChessCardCategoryToolTipsUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleChessCardCategoryToolTipsUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleChessCardCategoryToolTipsUnit) == 0x000008, "Wrong alignment on UPyWidget_BattleChessCardCategoryToolTipsUnit");
-static_assert(sizeof(UPyWidget_BattleChessCardCategoryToolTipsUnit) == 0x0005E8, "Wrong size on UPyWidget_BattleChessCardCategoryToolTipsUnit");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTipsUnit, StarWidget) == 0x0005C0, "Member 'UPyWidget_BattleChessCardCategoryToolTipsUnit::StarWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTipsUnit, WrapTextWidthWithNoHero) == 0x0005C8, "Member 'UPyWidget_BattleChessCardCategoryToolTipsUnit::WrapTextWidthWithNoHero' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTipsUnit, WrapTextWidthWithHero) == 0x0005CC, "Member 'UPyWidget_BattleChessCardCategoryToolTipsUnit::WrapTextWidthWithHero' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTipsUnit, FormatTextTemplate) == 0x0005D0, "Member 'UPyWidget_BattleChessCardCategoryToolTipsUnit::FormatTextTemplate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleChessCardCategoryToolTipsUnit;
 
 // PythonClass PyWidget_BattleChessCardCategoryToolTips.PyWidget_BattleChessCardData
 // 0x0000 (0x0030 - 0x0030)
@@ -52,25 +51,28 @@ class UPyWidget_BattleChessCardData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleChessCardData">();
+		STATIC_CLASS_IMPL("PyWidget_BattleChessCardData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleChessCardData")
 	}
 	static class UPyWidget_BattleChessCardData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleChessCardData>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleChessCardData) == 0x000008, "Wrong alignment on UPyWidget_BattleChessCardData");
-static_assert(sizeof(UPyWidget_BattleChessCardData) == 0x000030, "Wrong size on UPyWidget_BattleChessCardData");
+DUMPER7_ASSERTS_UPyWidget_BattleChessCardData;
 
 // PythonClass PyWidget_BattleChessCardCategoryToolTips.PyWidget_BattleChessCardCategoryToolTips
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_BattleChessCardCategoryToolTips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                TipsBonusWidgetCls;                                // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             CommonCardTipsIcon;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             HeroCardTipsIcon;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                TipsBonusWidgetCls;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             CommonCardTipsIcon;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             HeroCardTipsIcon;                                  // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -81,18 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleChessCardCategoryToolTips">();
+		STATIC_CLASS_IMPL("PyWidget_BattleChessCardCategoryToolTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleChessCardCategoryToolTips")
 	}
 	static class UPyWidget_BattleChessCardCategoryToolTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleChessCardCategoryToolTips>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleChessCardCategoryToolTips) == 0x000008, "Wrong alignment on UPyWidget_BattleChessCardCategoryToolTips");
-static_assert(sizeof(UPyWidget_BattleChessCardCategoryToolTips) == 0x0005D8, "Wrong size on UPyWidget_BattleChessCardCategoryToolTips");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTips, TipsBonusWidgetCls) == 0x0005C0, "Member 'UPyWidget_BattleChessCardCategoryToolTips::TipsBonusWidgetCls' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTips, CommonCardTipsIcon) == 0x0005C8, "Member 'UPyWidget_BattleChessCardCategoryToolTips::CommonCardTipsIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattleChessCardCategoryToolTips, HeroCardTipsIcon) == 0x0005D0, "Member 'UPyWidget_BattleChessCardCategoryToolTips::HeroCardTipsIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattleChessCardCategoryToolTips;
 
 }
 

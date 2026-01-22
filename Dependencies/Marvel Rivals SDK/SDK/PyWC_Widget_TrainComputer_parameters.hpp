@@ -21,9 +21,7 @@ struct PyWC_TrainComputer_SetAttachment final
 public:
 	class AActor*                                 AttachedActor;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWC_TrainComputer_SetAttachment) == 0x000008, "Wrong alignment on PyWC_TrainComputer_SetAttachment");
-static_assert(sizeof(PyWC_TrainComputer_SetAttachment) == 0x000008, "Wrong size on PyWC_TrainComputer_SetAttachment");
-static_assert(offsetof(PyWC_TrainComputer_SetAttachment, AttachedActor) == 0x000000, "Member 'PyWC_TrainComputer_SetAttachment::AttachedActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWC_TrainComputer_SetAttachment;
 
 }
 

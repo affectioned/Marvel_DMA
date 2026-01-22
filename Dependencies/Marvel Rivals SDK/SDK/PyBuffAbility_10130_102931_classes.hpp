@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Activity_10130_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_102931.PyBuffAbility_10130_10293180
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_10293180 final : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         ShieldBuff;                                        // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NewShieldBuff;                                     // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShieldBuff;                                        // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewShieldBuff;                                     // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,28 +32,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10293180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10293180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10293180")
 	}
 	static class UPyBuffAbility_10130_10293180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10293180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10293180) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10293180");
-static_assert(sizeof(UPyBuffAbility_10130_10293180) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10293180");
-static_assert(offsetof(UPyBuffAbility_10130_10293180, ShieldBuff) == 0x001A30, "Member 'UPyBuffAbility_10130_10293180::ShieldBuff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10293180, NewShieldBuff) == 0x001A34, "Member 'UPyBuffAbility_10130_10293180::NewShieldBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10293180;
 
 // PythonClass PyBuffAbility_10130_102931.PyBuffAbility_10130_10293170
-// 0x0020 (0x1A50 - 0x1A30)
+// 0x0020 (0x1A68 - 0x1A48)
 class UPyBuffAbility_10130_10293170 : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FGameplayTag                           SculptTag;                                         // 0x1A30(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Buff;                                              // 0x1A3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConvertRatio;                                      // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StackAdd;                                          // 0x1A44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxRatio;                                          // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SculptTag;                                         // 0x1A48(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Buff;                                              // 0x1A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConvertRatio;                                      // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StackAdd;                                          // 0x1A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxRatio;                                          // 0x1A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -63,20 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10293170">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10293170")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10293170")
 	}
 	static class UPyBuffAbility_10130_10293170* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10293170>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10293170) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10293170");
-static_assert(sizeof(UPyBuffAbility_10130_10293170) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10293170");
-static_assert(offsetof(UPyBuffAbility_10130_10293170, SculptTag) == 0x001A30, "Member 'UPyBuffAbility_10130_10293170::SculptTag' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10293170, Buff) == 0x001A3C, "Member 'UPyBuffAbility_10130_10293170::Buff' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10293170, ConvertRatio) == 0x001A40, "Member 'UPyBuffAbility_10130_10293170::ConvertRatio' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10293170, StackAdd) == 0x001A44, "Member 'UPyBuffAbility_10130_10293170::StackAdd' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10293170, MaxRatio) == 0x001A48, "Member 'UPyBuffAbility_10130_10293170::MaxRatio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10293170;
 
 }
 

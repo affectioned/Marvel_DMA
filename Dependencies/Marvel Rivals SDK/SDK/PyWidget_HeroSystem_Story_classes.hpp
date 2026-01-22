@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "UMG_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -21,14 +21,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_HeroSystem_Story final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                HeroGallery_StoryItem;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Line_Space;                                        // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                PageChangeTipsList;                                // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroGallery_StoryItem;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Line_Space;                                        // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                PageChangeTipsList;                                // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,18 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Story">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Story")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Story")
 	}
 	static class UPyWidget_HeroSystem_Story* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Story>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Story) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Story");
-static_assert(sizeof(UPyWidget_HeroSystem_Story) == 0x000618, "Wrong size on UPyWidget_HeroSystem_Story");
-static_assert(offsetof(UPyWidget_HeroSystem_Story, HeroGallery_StoryItem) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Story::HeroGallery_StoryItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Story, Line_Space) == 0x000600, "Member 'UPyWidget_HeroSystem_Story::Line_Space' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Story, PageChangeTipsList) == 0x000608, "Member 'UPyWidget_HeroSystem_Story::PageChangeTipsList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Story;
 
 // PythonClass PyWidget_HeroSystem_Story.PyWidget_StoryUnit
 // 0x0130 (0x04E8 - 0x03B8)
@@ -73,28 +73,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_StoryUnit">();
+		STATIC_CLASS_IMPL("PyWidget_StoryUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_StoryUnit")
 	}
 	static class UPyWidget_StoryUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_StoryUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_StoryUnit) == 0x000008, "Wrong alignment on UPyWidget_StoryUnit");
-static_assert(sizeof(UPyWidget_StoryUnit) == 0x0004E8, "Wrong size on UPyWidget_StoryUnit");
-static_assert(offsetof(UPyWidget_StoryUnit, IsSelected) == 0x0003B8, "Member 'UPyWidget_StoryUnit::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryUnit, IsUnlocked) == 0x0003B9, "Member 'UPyWidget_StoryUnit::IsUnlocked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryUnit, PageChangeTips) == 0x0003C0, "Member 'UPyWidget_StoryUnit::PageChangeTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryUnit, Anim_Flow) == 0x0004E0, "Member 'UPyWidget_StoryUnit::Anim_Flow' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_StoryUnit;
 
 // PythonClass PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story_ReadPanel
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_HeroSystem_Story_ReadPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                HeroGallery_StoryItem;                             // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PageChangeTipsList;                                // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                HeroGallery_StoryItem;                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PageChangeTipsList;                                // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -105,17 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Story_ReadPanel">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Story_ReadPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Story_ReadPanel")
 	}
 	static class UPyWidget_HeroSystem_Story_ReadPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Story_ReadPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Story_ReadPanel) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Story_ReadPanel");
-static_assert(sizeof(UPyWidget_HeroSystem_Story_ReadPanel) == 0x0005D8, "Wrong size on UPyWidget_HeroSystem_Story_ReadPanel");
-static_assert(offsetof(UPyWidget_HeroSystem_Story_ReadPanel, HeroGallery_StoryItem) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Story_ReadPanel::HeroGallery_StoryItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Story_ReadPanel, PageChangeTipsList) == 0x0005C8, "Member 'UPyWidget_HeroSystem_Story_ReadPanel::PageChangeTipsList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Story_ReadPanel;
 
 // PythonClass PyWidget_HeroSystem_Story.PyWidget_StoryReadUnit
 // 0x0298 (0x0650 - 0x03B8)
@@ -142,23 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_StoryReadUnit">();
+		STATIC_CLASS_IMPL("PyWidget_StoryReadUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_StoryReadUnit")
 	}
 	static class UPyWidget_StoryReadUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_StoryReadUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_StoryReadUnit) == 0x000008, "Wrong alignment on UPyWidget_StoryReadUnit");
-static_assert(sizeof(UPyWidget_StoryReadUnit) == 0x000650, "Wrong size on UPyWidget_StoryReadUnit");
-static_assert(offsetof(UPyWidget_StoryReadUnit, IsSelected) == 0x0003B8, "Member 'UPyWidget_StoryReadUnit::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, IsUnlocked) == 0x0003B9, "Member 'UPyWidget_StoryReadUnit::IsUnlocked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, LockedColor) == 0x0003BC, "Member 'UPyWidget_StoryReadUnit::LockedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, UnLockedColor) == 0x0003D0, "Member 'UPyWidget_StoryReadUnit::UnLockedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, LockedTextColor) == 0x0003E4, "Member 'UPyWidget_StoryReadUnit::LockedTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, UnLockedTextColor) == 0x0003F8, "Member 'UPyWidget_StoryReadUnit::UnLockedTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, PageChangeTips) == 0x000410, "Member 'UPyWidget_StoryReadUnit::PageChangeTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_StoryReadUnit, FocusAssitTips) == 0x000530, "Member 'UPyWidget_StoryReadUnit::FocusAssitTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_StoryReadUnit;
 
 }
 

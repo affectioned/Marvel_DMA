@@ -35,23 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OodleNetworkTrainerCommandlet">();
+		STATIC_CLASS_IMPL("OodleNetworkTrainerCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OodleNetworkTrainerCommandlet")
 	}
 	static class UOodleNetworkTrainerCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOodleNetworkTrainerCommandlet>();
 	}
 };
-static_assert(alignof(UOodleNetworkTrainerCommandlet) == 0x000008, "Wrong alignment on UOodleNetworkTrainerCommandlet");
-static_assert(sizeof(UOodleNetworkTrainerCommandlet) == 0x0000A8, "Wrong size on UOodleNetworkTrainerCommandlet");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, bCompressionTest) == 0x000088, "Member 'UOodleNetworkTrainerCommandlet::bCompressionTest' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, bWriteV5Dictionaries) == 0x000089, "Member 'UOodleNetworkTrainerCommandlet::bWriteV5Dictionaries' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, HashTableSize) == 0x00008C, "Member 'UOodleNetworkTrainerCommandlet::HashTableSize' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, DictionarySize) == 0x000090, "Member 'UOodleNetworkTrainerCommandlet::DictionarySize' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, DictionaryTrials) == 0x000094, "Member 'UOodleNetworkTrainerCommandlet::DictionaryTrials' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, TrialRandomness) == 0x000098, "Member 'UOodleNetworkTrainerCommandlet::TrialRandomness' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, TrialGenerations) == 0x00009C, "Member 'UOodleNetworkTrainerCommandlet::TrialGenerations' has a wrong offset!");
-static_assert(offsetof(UOodleNetworkTrainerCommandlet, bNoTrials) == 0x0000A0, "Member 'UOodleNetworkTrainerCommandlet::bNoTrials' has a wrong offset!");
+DUMPER7_ASSERTS_UOodleNetworkTrainerCommandlet;
 
 }
 

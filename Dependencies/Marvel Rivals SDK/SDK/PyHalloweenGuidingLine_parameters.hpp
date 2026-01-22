@@ -23,9 +23,7 @@ struct PyHalloweenGuidingLine_SetState final
 public:
 	EHalloweenObjectState                         NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenGuidingLine_SetState) == 0x000001, "Wrong alignment on PyHalloweenGuidingLine_SetState");
-static_assert(sizeof(PyHalloweenGuidingLine_SetState) == 0x000001, "Wrong size on PyHalloweenGuidingLine_SetState");
-static_assert(offsetof(PyHalloweenGuidingLine_SetState, NewState) == 0x000000, "Member 'PyHalloweenGuidingLine_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenGuidingLine_SetState;
 
 }
 

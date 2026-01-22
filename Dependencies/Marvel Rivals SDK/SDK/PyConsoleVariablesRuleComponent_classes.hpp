@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
 #include "PyRuleComponent_classes.hpp"
 
@@ -30,36 +31,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConsoleVariablesConfig">();
+		STATIC_CLASS_IMPL("PyConsoleVariablesConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConsoleVariablesConfig")
 	}
 	static class UPyConsoleVariablesConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConsoleVariablesConfig>();
 	}
 };
-static_assert(alignof(UPyConsoleVariablesConfig) == 0x000008, "Wrong alignment on UPyConsoleVariablesConfig");
-static_assert(sizeof(UPyConsoleVariablesConfig) == 0x000170, "Wrong size on UPyConsoleVariablesConfig");
-static_assert(offsetof(UPyConsoleVariablesConfig, ServerCVars) == 0x000030, "Member 'UPyConsoleVariablesConfig::ServerCVars' has a wrong offset!");
-static_assert(offsetof(UPyConsoleVariablesConfig, ClientCVars) == 0x000080, "Member 'UPyConsoleVariablesConfig::ClientCVars' has a wrong offset!");
-static_assert(offsetof(UPyConsoleVariablesConfig, Str_ServerCVars) == 0x0000D0, "Member 'UPyConsoleVariablesConfig::Str_ServerCVars' has a wrong offset!");
-static_assert(offsetof(UPyConsoleVariablesConfig, Str_ClientCVars) == 0x000120, "Member 'UPyConsoleVariablesConfig::Str_ClientCVars' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConsoleVariablesConfig;
 
 // PythonClass PyConsoleVariablesRuleComponent.PyConsoleVariablesRuleComponent
-// 0x0000 (0x0108 - 0x0108)
+// 0x0030 (0x0138 - 0x0108)
 class UPyConsoleVariablesRuleComponent final : public UPyRuleComponent
 {
 public:
+	TArray<struct FMarvelLevelConsoleVar>         RepServerFloatVars;                                // 0x0108(0x0010)(Edit, Net, NativeAccessSpecifierPublic)
+	TArray<struct FMarvelLevelConsoleVar>         RepServerStrVars;                                  // 0x0118(0x0010)(Edit, Net, NativeAccessSpecifierPublic)
+	TArray<struct FMarvelLevelConsoleVar>         SyncClientVars;                                    // 0x0128(0x0010)(Edit, Net, RepNotify, NativeAccessSpecifierPublic)
+
+public:
+	void OnRep_SyncClientVars();
+
+public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConsoleVariablesRuleComponent">();
+		STATIC_CLASS_IMPL("PyConsoleVariablesRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConsoleVariablesRuleComponent")
 	}
 	static class UPyConsoleVariablesRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConsoleVariablesRuleComponent>();
 	}
 };
-static_assert(alignof(UPyConsoleVariablesRuleComponent) == 0x000008, "Wrong alignment on UPyConsoleVariablesRuleComponent");
-static_assert(sizeof(UPyConsoleVariablesRuleComponent) == 0x000108, "Wrong size on UPyConsoleVariablesRuleComponent");
+DUMPER7_ASSERTS_UPyConsoleVariablesRuleComponent;
 
 }
 

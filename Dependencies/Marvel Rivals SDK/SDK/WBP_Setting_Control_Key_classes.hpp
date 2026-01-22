@@ -10,66 +10,52 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
 #include "PyWidget_SettingBase_classes.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Control_Key.WBP_Setting_Control_Key_C
-// 0x00A8 (0x0750 - 0x06A8)
+// 0x00A8 (0x0758 - 0x06B0)
 class UWBP_Setting_Control_Key_C final : public UPyWidget_Setting_Key
 {
 public:
-	class UImage*                                 Bg_Setting_Mask;                                   // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn__Setting_Key;                                  // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon;                                              // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon2;                                             // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Add;                                          // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidget;                                         // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidget_More;                                    // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Setting_Key;                               // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_KeyName;                                      // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          Icon_Visible;                                      // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Text_Visible;                                      // 0x06F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6F2[0x6];                                      // 0x06F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             MouseIcon_1;                                       // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Empty;                                             // 0x0700(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UTexture2D*                             MouseIcon_2;                                       // 0x0718(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             MouseIcon_3;                                       // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             MouseIcon_4;                                       // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   UnbindGameKey;                                     // 0x0730(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	class UImage*                                 Bg_Setting_Mask;                                   // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn__Setting_Key;                                  // 0x06B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon;                                              // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon2;                                             // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Add;                                          // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget;                                         // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget_More;                                    // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Setting_Key;                               // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_KeyName;                                      // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          Icon_Visible;                                      // 0x06F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Text_Visible;                                      // 0x06F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6FA[0x6];                                      // 0x06FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             MouseIcon_1;                                       // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Empty;                                             // 0x0708(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UTexture2D*                             MouseIcon_2;                                       // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             MouseIcon_3;                                       // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             MouseIcon_4;                                       // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   UnbindGameKey;                                     // 0x0738(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Control_Key_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Control_Key_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Control_Key_C")
 	}
 	static class UWBP_Setting_Control_Key_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Control_Key_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Control_Key_C) == 0x000008, "Wrong alignment on UWBP_Setting_Control_Key_C");
-static_assert(sizeof(UWBP_Setting_Control_Key_C) == 0x000750, "Wrong size on UWBP_Setting_Control_Key_C");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Bg_Setting_Mask) == 0x0006A8, "Member 'UWBP_Setting_Control_Key_C::Bg_Setting_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Btn__Setting_Key) == 0x0006B0, "Member 'UWBP_Setting_Control_Key_C::Btn__Setting_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Icon) == 0x0006B8, "Member 'UWBP_Setting_Control_Key_C::Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Icon2) == 0x0006C0, "Member 'UWBP_Setting_Control_Key_C::Icon2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Icon_Add) == 0x0006C8, "Member 'UWBP_Setting_Control_Key_C::Icon_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, KeyWidget) == 0x0006D0, "Member 'UWBP_Setting_Control_Key_C::KeyWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, KeyWidget_More) == 0x0006D8, "Member 'UWBP_Setting_Control_Key_C::KeyWidget_More' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Overlay_Setting_Key) == 0x0006E0, "Member 'UWBP_Setting_Control_Key_C::Overlay_Setting_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Text_KeyName) == 0x0006E8, "Member 'UWBP_Setting_Control_Key_C::Text_KeyName' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Icon_Visible) == 0x0006F0, "Member 'UWBP_Setting_Control_Key_C::Icon_Visible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Text_Visible) == 0x0006F1, "Member 'UWBP_Setting_Control_Key_C::Text_Visible' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, MouseIcon_1) == 0x0006F8, "Member 'UWBP_Setting_Control_Key_C::MouseIcon_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, Empty) == 0x000700, "Member 'UWBP_Setting_Control_Key_C::Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, MouseIcon_2) == 0x000718, "Member 'UWBP_Setting_Control_Key_C::MouseIcon_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, MouseIcon_3) == 0x000720, "Member 'UWBP_Setting_Control_Key_C::MouseIcon_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, MouseIcon_4) == 0x000728, "Member 'UWBP_Setting_Control_Key_C::MouseIcon_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_Key_C, UnbindGameKey) == 0x000730, "Member 'UWBP_Setting_Control_Key_C::UnbindGameKey' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Control_Key_C;
 
 }
 

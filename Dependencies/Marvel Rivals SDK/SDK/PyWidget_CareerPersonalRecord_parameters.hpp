@@ -21,9 +21,7 @@ struct PyWidget_CareerPersonalRecord_Item_SetInfoDict final
 public:
 	class UObject*                                info;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPersonalRecord_Item_SetInfoDict) == 0x000008, "Wrong alignment on PyWidget_CareerPersonalRecord_Item_SetInfoDict");
-static_assert(sizeof(PyWidget_CareerPersonalRecord_Item_SetInfoDict) == 0x000008, "Wrong size on PyWidget_CareerPersonalRecord_Item_SetInfoDict");
-static_assert(offsetof(PyWidget_CareerPersonalRecord_Item_SetInfoDict, info) == 0x000000, "Member 'PyWidget_CareerPersonalRecord_Item_SetInfoDict::info' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPersonalRecord_Item_SetInfoDict;
 
 // PythonFunction PyWidget_CareerPersonalRecord.PyWidget_CareerPersonalRecord.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CareerPersonalRecord_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPersonalRecord_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CareerPersonalRecord_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CareerPersonalRecord_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CareerPersonalRecord_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CareerPersonalRecord_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_CareerPersonalRecord_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPersonalRecord_MarvelSetVisible;
 
 }
 

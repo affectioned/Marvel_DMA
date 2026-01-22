@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SurrenderPanel.PyWidget_SurrenderPanel
-// 0x0020 (0x0618 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_SurrenderPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           Btn_ActivePanel_Start_Action;                      // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Btn_ActivePanel_Up_Action;                         // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           Btn_ActivePanel_Hold_Action;                       // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEventSurrenderFailed;                            // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Btn_ActivePanel_Start_Action;                      // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Btn_ActivePanel_Up_Action;                         // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           Btn_ActivePanel_Hold_Action;                       // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEventSurrenderFailed;                            // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SurrenderPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SurrenderPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SurrenderPanel")
 	}
 	static class UPyWidget_SurrenderPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SurrenderPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SurrenderPanel) == 0x000008, "Wrong alignment on UPyWidget_SurrenderPanel");
-static_assert(sizeof(UPyWidget_SurrenderPanel) == 0x000618, "Wrong size on UPyWidget_SurrenderPanel");
-static_assert(offsetof(UPyWidget_SurrenderPanel, Btn_ActivePanel_Start_Action) == 0x0005F8, "Member 'UPyWidget_SurrenderPanel::Btn_ActivePanel_Start_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderPanel, Btn_ActivePanel_Up_Action) == 0x000600, "Member 'UPyWidget_SurrenderPanel::Btn_ActivePanel_Up_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderPanel, Btn_ActivePanel_Hold_Action) == 0x000608, "Member 'UPyWidget_SurrenderPanel::Btn_ActivePanel_Hold_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderPanel, AkEventSurrenderFailed) == 0x000610, "Member 'UPyWidget_SurrenderPanel::AkEventSurrenderFailed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SurrenderPanel;
 
 }
 

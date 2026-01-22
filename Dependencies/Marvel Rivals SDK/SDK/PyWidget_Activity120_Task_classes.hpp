@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_Task.PyWidget_Activity120_TaskEntry
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity120_TaskEntry final : public UPyMarvelUserWidget
 {
 public:
@@ -29,18 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_TaskEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_TaskEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_TaskEntry")
 	}
 	static class UPyWidget_Activity120_TaskEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_TaskEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_TaskEntry) == 0x000008, "Wrong alignment on UPyWidget_Activity120_TaskEntry");
-static_assert(sizeof(UPyWidget_Activity120_TaskEntry) == 0x0005C0, "Wrong size on UPyWidget_Activity120_TaskEntry");
+DUMPER7_ASSERTS_UPyWidget_Activity120_TaskEntry;
 
 // PythonClass PyWidget_Activity120_Task.PyWidget_Activity120_TaskWidget
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity120_TaskWidget final : public UPyMarvelUserWidget
 {
 public:
@@ -51,22 +54,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_TaskWidget">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_TaskWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_TaskWidget")
 	}
 	static class UPyWidget_Activity120_TaskWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_TaskWidget>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_TaskWidget) == 0x000008, "Wrong alignment on UPyWidget_Activity120_TaskWidget");
-static_assert(sizeof(UPyWidget_Activity120_TaskWidget) == 0x0005C0, "Wrong size on UPyWidget_Activity120_TaskWidget");
+DUMPER7_ASSERTS_UPyWidget_Activity120_TaskWidget;
 
 // PythonClass PyWidget_Activity120_Task.PyWidget_Activity120_Task
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Activity120_Task final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UPyWidget_Activity120_TaskWidget> TaskWidget;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Activity120_TaskWidget> TaskWidget;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -77,16 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_Task">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_Task")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_Task")
 	}
 	static class UPyWidget_Activity120_Task* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_Task>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_Task) == 0x000008, "Wrong alignment on UPyWidget_Activity120_Task");
-static_assert(sizeof(UPyWidget_Activity120_Task) == 0x000600, "Wrong size on UPyWidget_Activity120_Task");
-static_assert(offsetof(UPyWidget_Activity120_Task, TaskWidget) == 0x0005F8, "Member 'UPyWidget_Activity120_Task::TaskWidget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_Task;
 
 }
 

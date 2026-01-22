@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// PythonFunction PyWidget_UltimateBar.PyWidget_UltimateBar.OnVisibleChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_UltimateBar_OnVisibleChanged final
+{
+public:
+	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_UltimateBar_OnVisibleChanged;
+
 // PythonFunction PyWidget_UltimateBar.PyWidget_UltimateBar.SetUltimateEnergyPercent
 // 0x0004 (0x0004 - 0x0000)
 struct PyWidget_UltimateBar_SetUltimateEnergyPercent final
@@ -21,9 +30,7 @@ struct PyWidget_UltimateBar_SetUltimateEnergyPercent final
 public:
 	float                                         percent;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_UltimateBar_SetUltimateEnergyPercent) == 0x000004, "Wrong alignment on PyWidget_UltimateBar_SetUltimateEnergyPercent");
-static_assert(sizeof(PyWidget_UltimateBar_SetUltimateEnergyPercent) == 0x000004, "Wrong size on PyWidget_UltimateBar_SetUltimateEnergyPercent");
-static_assert(offsetof(PyWidget_UltimateBar_SetUltimateEnergyPercent, percent) == 0x000000, "Member 'PyWidget_UltimateBar_SetUltimateEnergyPercent::percent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_UltimateBar_SetUltimateEnergyPercent;
 
 // PythonFunction PyWidget_UltimateBar.PyWidget_UltimateBar.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +39,7 @@ struct PyWidget_UltimateBar_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_UltimateBar_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_UltimateBar_OnAnimationFinished");
-static_assert(sizeof(PyWidget_UltimateBar_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_UltimateBar_OnAnimationFinished");
-static_assert(offsetof(PyWidget_UltimateBar_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_UltimateBar_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_UltimateBar_OnAnimationFinished;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_MatchResultDisplay.PyWidget_League_MatchResultDisplay
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_MatchResultDisplay final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_MatchResultDisplay">();
+		STATIC_CLASS_IMPL("PyWidget_League_MatchResultDisplay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_MatchResultDisplay")
 	}
 	static class UPyWidget_League_MatchResultDisplay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_MatchResultDisplay>();
 	}
 };
-static_assert(alignof(UPyWidget_League_MatchResultDisplay) == 0x000008, "Wrong alignment on UPyWidget_League_MatchResultDisplay");
-static_assert(sizeof(UPyWidget_League_MatchResultDisplay) == 0x0005C0, "Wrong size on UPyWidget_League_MatchResultDisplay");
+DUMPER7_ASSERTS_UPyWidget_League_MatchResultDisplay;
 
 }
 

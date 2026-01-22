@@ -23,15 +23,18 @@ class URichEditProxy_Chat_BP_C final : public URichEditableProxy_Chat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichEditProxy_Chat_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichEditProxy_Chat_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichEditProxy_Chat_BP_C")
 	}
 	static class URichEditProxy_Chat_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichEditProxy_Chat_BP_C>();
 	}
 };
-static_assert(alignof(URichEditProxy_Chat_BP_C) == 0x000008, "Wrong alignment on URichEditProxy_Chat_BP_C");
-static_assert(sizeof(URichEditProxy_Chat_BP_C) == 0x000030, "Wrong size on URichEditProxy_Chat_BP_C");
+DUMPER7_ASSERTS_URichEditProxy_Chat_BP_C;
 
 }
 

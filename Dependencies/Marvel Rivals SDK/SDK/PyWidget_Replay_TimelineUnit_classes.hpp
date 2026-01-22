@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_TimelineUnit.PyWidget_Replay_TimelineUnit
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Replay_TimelineUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EReplayEventName, TSoftObjectPtr<class UTexture2D>> TextureMapping;                         // 0x05C0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EReplayEventName, TSoftObjectPtr<class UTexture2D>> TextureMapping;                         // 0x05C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_TimelineUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_TimelineUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_TimelineUnit")
 	}
 	static class UPyWidget_Replay_TimelineUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_TimelineUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_TimelineUnit) == 0x000008, "Wrong alignment on UPyWidget_Replay_TimelineUnit");
-static_assert(sizeof(UPyWidget_Replay_TimelineUnit) == 0x000610, "Wrong size on UPyWidget_Replay_TimelineUnit");
-static_assert(offsetof(UPyWidget_Replay_TimelineUnit, TextureMapping) == 0x0005C0, "Member 'UPyWidget_Replay_TimelineUnit::TextureMapping' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_TimelineUnit;
 
 }
 

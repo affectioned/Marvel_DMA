@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1038_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1038_classes.hpp"
 
 
 namespace SDK
@@ -28,20 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103841">();
+		STATIC_CLASS_IMPL("PyConfig_103841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103841")
 	}
 	static class UPyConfig_103841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103841>();
 	}
 };
-static_assert(alignof(UPyConfig_103841) == 0x000008, "Wrong alignment on UPyConfig_103841");
-static_assert(sizeof(UPyConfig_103841) == 0x000100, "Wrong size on UPyConfig_103841");
-static_assert(offsetof(UPyConfig_103841, MinCancelInterval) == 0x0000F8, "Member 'UPyConfig_103841::MinCancelInterval' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103841, BuffID) == 0x0000FC, "Member 'UPyConfig_103841::BuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103841;
 
 // PythonClass PyAbility_103841.PyAbility_103841
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UPyAbility_103841 : public UMarvelAeroBaseAbility
 {
 public:
@@ -58,18 +59,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103841">();
+		STATIC_CLASS_IMPL("PyAbility_103841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103841")
 	}
 	static class UPyAbility_103841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103841>();
 	}
 };
-static_assert(alignof(UPyAbility_103841) == 0x000008, "Wrong alignment on UPyAbility_103841");
-static_assert(sizeof(UPyAbility_103841) == 0x002B10, "Wrong size on UPyAbility_103841");
+DUMPER7_ASSERTS_UPyAbility_103841;
 
 // PythonClass PyAbility_103841.PyCue_Buff_10384101
-// 0x0000 (0x1690 - 0x1690)
+// 0x0000 (0x1740 - 0x1740)
 class APyCue_Buff_10384101 final : public ACue_Buff_10384101
 {
 public:
@@ -78,15 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10384101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10384101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10384101")
 	}
 	static class APyCue_Buff_10384101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10384101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10384101) == 0x000010, "Wrong alignment on APyCue_Buff_10384101");
-static_assert(sizeof(APyCue_Buff_10384101) == 0x001690, "Wrong size on APyCue_Buff_10384101");
+DUMPER7_ASSERTS_APyCue_Buff_10384101;
 
 }
 

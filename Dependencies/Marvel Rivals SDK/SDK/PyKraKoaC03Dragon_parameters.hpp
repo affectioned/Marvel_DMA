@@ -23,9 +23,7 @@ struct PyKraKoaC03Dragon_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKraKoaC03Dragon_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKraKoaC03Dragon_ReceiveEndPlay");
-static_assert(sizeof(PyKraKoaC03Dragon_ReceiveEndPlay) == 0x000001, "Wrong size on PyKraKoaC03Dragon_ReceiveEndPlay");
-static_assert(offsetof(PyKraKoaC03Dragon_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKraKoaC03Dragon_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKraKoaC03Dragon_ReceiveEndPlay;
 
 // PythonFunction PyKraKoaC03Dragon.PyKrakoaC03DragonSwing.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyKrakoaC03DragonSwing_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKrakoaC03DragonSwing_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKrakoaC03DragonSwing_ReceiveEndPlay");
-static_assert(sizeof(PyKrakoaC03DragonSwing_ReceiveEndPlay) == 0x000001, "Wrong size on PyKrakoaC03DragonSwing_ReceiveEndPlay");
-static_assert(offsetof(PyKrakoaC03DragonSwing_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKrakoaC03DragonSwing_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKrakoaC03DragonSwing_ReceiveEndPlay;
 
 }
 

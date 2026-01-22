@@ -21,7 +21,7 @@ namespace SDK
 class UPyLevelFormalMoveComponent final : public UPyLevelActorMoveComponent
 {
 public:
-	TMulticastInlineDelegate<void()>              AfterUpdateMovement;                               // 0x04A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float DeltaTime)> AfterUpdateMovement;                             // 0x04A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnRep_CurProgress();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelFormalMoveComponent">();
+		STATIC_CLASS_IMPL("PyLevelFormalMoveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelFormalMoveComponent")
 	}
 	static class UPyLevelFormalMoveComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelFormalMoveComponent>();
 	}
 };
-static_assert(alignof(UPyLevelFormalMoveComponent) == 0x000010, "Wrong alignment on UPyLevelFormalMoveComponent");
-static_assert(sizeof(UPyLevelFormalMoveComponent) == 0x0004C0, "Wrong size on UPyLevelFormalMoveComponent");
-static_assert(offsetof(UPyLevelFormalMoveComponent, AfterUpdateMovement) == 0x0004A8, "Member 'UPyLevelFormalMoveComponent::AfterUpdateMovement' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelFormalMoveComponent;
 
 }
 

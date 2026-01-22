@@ -21,9 +21,7 @@ struct PyBuffAbility_10238101_OnGiftedAbilityActivate final
 public:
 	class UGameplayAbility*                       ActivatedAbility;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10238101_OnGiftedAbilityActivate) == 0x000008, "Wrong alignment on PyBuffAbility_10238101_OnGiftedAbilityActivate");
-static_assert(sizeof(PyBuffAbility_10238101_OnGiftedAbilityActivate) == 0x000008, "Wrong size on PyBuffAbility_10238101_OnGiftedAbilityActivate");
-static_assert(offsetof(PyBuffAbility_10238101_OnGiftedAbilityActivate, ActivatedAbility) == 0x000000, "Member 'PyBuffAbility_10238101_OnGiftedAbilityActivate::ActivatedAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10238101_OnGiftedAbilityActivate;
 
 }
 

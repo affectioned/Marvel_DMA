@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200301_UIController.PyUIController_200301
-// 0x0088 (0x0F98 - 0x0F10)
+// 0x0088 (0x1278 - 0x11F0)
 class UPyUIController_200301 : public UUIC_Ability
 {
 public:
-	class FText                                   PortalTipsText;                                    // 0x0F10(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class FText                                   KeyNotBoundTipsText;                               // 0x0F28(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FUIActionData                          PressActionData;                                   // 0x0F40(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   PortalTipsText;                                    // 0x11F0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FText                                   KeyNotBoundTipsText;                               // 0x1208(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FUIActionData                          PressActionData;                                   // 0x1220(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200301">();
+		STATIC_CLASS_IMPL("PyUIController_200301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200301")
 	}
 	static class UPyUIController_200301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200301>();
 	}
 };
-static_assert(alignof(UPyUIController_200301) == 0x000008, "Wrong alignment on UPyUIController_200301");
-static_assert(sizeof(UPyUIController_200301) == 0x000F98, "Wrong size on UPyUIController_200301");
-static_assert(offsetof(UPyUIController_200301, PortalTipsText) == 0x000F10, "Member 'UPyUIController_200301::PortalTipsText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_200301, KeyNotBoundTipsText) == 0x000F28, "Member 'UPyUIController_200301::KeyNotBoundTipsText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_200301, PressActionData) == 0x000F40, "Member 'UPyUIController_200301::PressActionData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_200301;
 
 }
 

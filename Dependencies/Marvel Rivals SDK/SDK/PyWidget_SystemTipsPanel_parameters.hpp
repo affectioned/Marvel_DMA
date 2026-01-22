@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SystemTipsPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_SystemTipsPanel_Tick");
-static_assert(sizeof(PyWidget_SystemTipsPanel_Tick) == 0x00003C, "Wrong size on PyWidget_SystemTipsPanel_Tick");
-static_assert(offsetof(PyWidget_SystemTipsPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_SystemTipsPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_SystemTipsPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_SystemTipsPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SystemTipsPanel_Tick;
 
 // PythonFunction PyWidget_SystemTipsPanel.PyWidget_SystemTipsPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +33,7 @@ struct PyWidget_SystemTipsPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SystemTipsPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_SystemTipsPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_SystemTipsPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_SystemTipsPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_SystemTipsPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_SystemTipsPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SystemTipsPanel_OnAnimationFinished;
 
 }
 

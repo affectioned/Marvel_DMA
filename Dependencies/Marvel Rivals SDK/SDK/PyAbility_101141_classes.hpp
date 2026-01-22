@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101141.PySummonedComp_10114101
-// 0x0000 (0x0E30 - 0x0E30)
+// 0x0000 (0x0E88 - 0x0E88)
 class UPySummonedComp_10114101 final : public UProtectiveSummonedComponent
 {
 public:
@@ -27,24 +27,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10114101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10114101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10114101")
 	}
 	static class UPySummonedComp_10114101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10114101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10114101) == 0x000008, "Wrong alignment on UPySummonedComp_10114101");
-static_assert(sizeof(UPySummonedComp_10114101) == 0x000E30, "Wrong size on UPySummonedComp_10114101");
+DUMPER7_ASSERTS_UPySummonedComp_10114101;
 
 // PythonClass PyAbility_101141.PyCue_Summoner_Loop_10114101
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_Summoner_Loop_10114101 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ShieldHalfBreakAudioID;                            // 0x1200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShieldRadiusFactor;                                // 0x1204(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ShieldHalfBreakAudioID;                            // 0x1260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShieldRadiusFactor;                                // 0x1264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PlayShieldHalfBreakAudio(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle);
@@ -54,17 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10114101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10114101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10114101")
 	}
 	static class APyCue_Summoner_Loop_10114101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10114101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10114101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10114101");
-static_assert(sizeof(APyCue_Summoner_Loop_10114101) == 0x001210, "Wrong size on APyCue_Summoner_Loop_10114101");
-static_assert(offsetof(APyCue_Summoner_Loop_10114101, ShieldHalfBreakAudioID) == 0x001200, "Member 'APyCue_Summoner_Loop_10114101::ShieldHalfBreakAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10114101, ShieldRadiusFactor) == 0x001204, "Member 'APyCue_Summoner_Loop_10114101::ShieldRadiusFactor' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10114101;
 
 }
 

@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryLanguageHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryLanguageHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLanguageHandler")
 	}
 	static class UUISettingEntryLanguageHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryLanguageHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryLanguageHandler) == 0x000008, "Wrong alignment on UUISettingEntryLanguageHandler");
-static_assert(sizeof(UUISettingEntryLanguageHandler) == 0x000030, "Wrong size on UUISettingEntryLanguageHandler");
+DUMPER7_ASSERTS_UUISettingEntryLanguageHandler;
 
 // PythonClass LanguageLogic.UISettingEntryLanguageOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryLanguageOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryLanguageOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryLanguageOptionGenerator")
 	}
 	static class UUISettingEntryLanguageOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryLanguageOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryLanguageOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryLanguageOptionGenerator");
-static_assert(sizeof(UUISettingEntryLanguageOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryLanguageOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryLanguageOptionGenerator;
 
 }
 

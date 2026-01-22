@@ -25,12 +25,7 @@ public:
 	double                                        yCoord_12_362A070E4DA62E16EB5D85B03B069C10;        // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         zOrder_15_DC11D56E477DAF5A5C2C4186157CF3ED;        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FChatConfigRowBP) == 0x000008, "Wrong alignment on FChatConfigRowBP");
-static_assert(sizeof(FChatConfigRowBP) == 0x000020, "Wrong size on FChatConfigRowBP");
-static_assert(offsetof(FChatConfigRowBP, visible_5_7DD5C47341103816866B498A5FB20CE3) == 0x000000, "Member 'FChatConfigRowBP::visible_5_7DD5C47341103816866B498A5FB20CE3' has a wrong offset!");
-static_assert(offsetof(FChatConfigRowBP, xCoord_11_35A0BF704B976D3243A66C9CDF578122) == 0x000008, "Member 'FChatConfigRowBP::xCoord_11_35A0BF704B976D3243A66C9CDF578122' has a wrong offset!");
-static_assert(offsetof(FChatConfigRowBP, yCoord_12_362A070E4DA62E16EB5D85B03B069C10) == 0x000010, "Member 'FChatConfigRowBP::yCoord_12_362A070E4DA62E16EB5D85B03B069C10' has a wrong offset!");
-static_assert(offsetof(FChatConfigRowBP, zOrder_15_DC11D56E477DAF5A5C2C4186157CF3ED) == 0x000018, "Member 'FChatConfigRowBP::zOrder_15_DC11D56E477DAF5A5C2C4186157CF3ED' has a wrong offset!");
+DUMPER7_ASSERTS_FChatConfigRowBP;
 
 }
 

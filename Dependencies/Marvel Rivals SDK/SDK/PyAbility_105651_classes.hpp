@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_105652_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "PyAbility_105652_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105651.PyConfig_105651
-// 0x0D30 (0x0DC8 - 0x0098)
+// 0x1050 (0x10E8 - 0x0098)
 class UPyConfig_105651 final : public UMarvelAbilityConfig
 {
 public:
@@ -31,40 +31,33 @@ public:
 	struct FVector                                DefalutDashDir;                                    // 0x00A0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ElevationAngle;                                    // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00C0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 EndSection;                                        // 0x0C88(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           GroundScopeSpawnTag;                               // 0x0C98(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GroundExploreDist;                                 // 0x0CA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GroundScopeID;                                     // 0x0CA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ManualCD;                                          // 0x0CAC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CAD[0x3];                                      // 0x0CAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagRequirements               ListenAbilityTags;                                 // 0x0CB0(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00C0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 EndSection;                                        // 0x0FA8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           GroundScopeSpawnTag;                               // 0x0FB8(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GroundExploreDist;                                 // 0x0FC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroundScopeID;                                     // 0x0FC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ManualCD;                                          // 0x0FCC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FCD[0x3];                                      // 0x0FCD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagRequirements               ListenAbilityTags;                                 // 0x0FD0(0x0118)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105651">();
+		STATIC_CLASS_IMPL("PyConfig_105651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105651")
 	}
 	static class UPyConfig_105651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105651>();
 	}
 };
-static_assert(alignof(UPyConfig_105651) == 0x000008, "Wrong alignment on UPyConfig_105651");
-static_assert(sizeof(UPyConfig_105651) == 0x000DC8, "Wrong size on UPyConfig_105651");
-static_assert(offsetof(UPyConfig_105651, ToAirState) == 0x000098, "Member 'UPyConfig_105651::ToAirState' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, DefalutDashDir) == 0x0000A0, "Member 'UPyConfig_105651::DefalutDashDir' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, ElevationAngle) == 0x0000B8, "Member 'UPyConfig_105651::ElevationAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, DashInfo) == 0x0000C0, "Member 'UPyConfig_105651::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, EndSection) == 0x000C88, "Member 'UPyConfig_105651::EndSection' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, GroundScopeSpawnTag) == 0x000C98, "Member 'UPyConfig_105651::GroundScopeSpawnTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, GroundExploreDist) == 0x000CA4, "Member 'UPyConfig_105651::GroundExploreDist' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, GroundScopeID) == 0x000CA8, "Member 'UPyConfig_105651::GroundScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, ManualCD) == 0x000CAC, "Member 'UPyConfig_105651::ManualCD' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105651, ListenAbilityTags) == 0x000CB0, "Member 'UPyConfig_105651::ListenAbilityTags' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105651;
 
 // PythonClass PyAbility_105651.PyAbility_105651
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105651 : public UPyAbility_105652
 {
 public:
@@ -81,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105651">();
+		STATIC_CLASS_IMPL("PyAbility_105651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105651")
 	}
 	static class UPyAbility_105651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105651>();
 	}
 };
-static_assert(alignof(UPyAbility_105651) == 0x000008, "Wrong alignment on UPyAbility_105651");
-static_assert(sizeof(UPyAbility_105651) == 0x0029F8, "Wrong size on UPyAbility_105651");
+DUMPER7_ASSERTS_UPyAbility_105651;
 
 }
 

@@ -10,31 +10,26 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
+
 
 namespace SDK
 {
 
 // UserDefinedStruct Gallery_FootageBP.Gallery_FootageBP
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FGallery_FootageBP final
 {
 public:
 	class FString                                 VideoPath_135_79DC42D249C5A401F9BFA486A2F95B78;    // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         ThemeId_139_07585BDA4D51D82C7DCFFF9217DB31D9;      // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CoverImage_147_08A0A6BB44D9DFD6F86D23AAA2F19CA1;   // 0x0018(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class FText                                   VideoName_136_CBFD3E604FFD99B49E7577B45E946F64;    // 0x0048(0x0018)(Edit, BlueprintVisible)
-	TSoftObjectPtr<class UAkAudioEvent>           AudioAsset_142_C32E85664264810778B53F8072EF76D4;   // 0x0060(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	double                                        AudioFadeOutTime_146_AAB53D0045A2C07A87AF768272DD8D5F; // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSeasonSimpleOptions                   SeasonData_152_5299CF194E9992E73A2FBABD3461678B;   // 0x0014(0x000C)(Edit, BlueprintVisible, NoDestructor)
+	TSoftObjectPtr<class UTexture2D>              CoverImage_147_08A0A6BB44D9DFD6F86D23AAA2F19CA1;   // 0x0020(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class FText                                   VideoName_136_CBFD3E604FFD99B49E7577B45E946F64;    // 0x0050(0x0018)(Edit, BlueprintVisible)
+	TSoftObjectPtr<class UAkAudioEvent>           AudioAsset_142_C32E85664264810778B53F8072EF76D4;   // 0x0068(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	double                                        AudioFadeOutTime_146_AAB53D0045A2C07A87AF768272DD8D5F; // 0x0098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGallery_FootageBP) == 0x000008, "Wrong alignment on FGallery_FootageBP");
-static_assert(sizeof(FGallery_FootageBP) == 0x000098, "Wrong size on FGallery_FootageBP");
-static_assert(offsetof(FGallery_FootageBP, VideoPath_135_79DC42D249C5A401F9BFA486A2F95B78) == 0x000000, "Member 'FGallery_FootageBP::VideoPath_135_79DC42D249C5A401F9BFA486A2F95B78' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageBP, ThemeId_139_07585BDA4D51D82C7DCFFF9217DB31D9) == 0x000010, "Member 'FGallery_FootageBP::ThemeId_139_07585BDA4D51D82C7DCFFF9217DB31D9' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageBP, CoverImage_147_08A0A6BB44D9DFD6F86D23AAA2F19CA1) == 0x000018, "Member 'FGallery_FootageBP::CoverImage_147_08A0A6BB44D9DFD6F86D23AAA2F19CA1' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageBP, VideoName_136_CBFD3E604FFD99B49E7577B45E946F64) == 0x000048, "Member 'FGallery_FootageBP::VideoName_136_CBFD3E604FFD99B49E7577B45E946F64' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageBP, AudioAsset_142_C32E85664264810778B53F8072EF76D4) == 0x000060, "Member 'FGallery_FootageBP::AudioAsset_142_C32E85664264810778B53F8072EF76D4' has a wrong offset!");
-static_assert(offsetof(FGallery_FootageBP, AudioFadeOutTime_146_AAB53D0045A2C07A87AF768272DD8D5F) == 0x000090, "Member 'FGallery_FootageBP::AudioFadeOutTime_146_AAB53D0045A2C07A87AF768272DD8D5F' has a wrong offset!");
+DUMPER7_ASSERTS_FGallery_FootageBP;
 
 }
 

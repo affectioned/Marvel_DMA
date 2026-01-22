@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ActivityRuleV2.PyWidget_ActivityRuleV2
-// 0x0008 (0x0600 - 0x05F8)
-class UPyWidget_ActivityRuleV2 final : public UPyWidget_ModuleMainPanel
+// 0x0008 (0x0608 - 0x0600)
+class UPyWidget_ActivityRuleV2 : public UPyWidget_ModuleMainPanel
 {
 public:
-	int32                                         Activity_ID;                                       // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Activity_ID;                                       // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityRuleV2">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityRuleV2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityRuleV2")
 	}
 	static class UPyWidget_ActivityRuleV2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityRuleV2>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityRuleV2) == 0x000008, "Wrong alignment on UPyWidget_ActivityRuleV2");
-static_assert(sizeof(UPyWidget_ActivityRuleV2) == 0x000600, "Wrong size on UPyWidget_ActivityRuleV2");
-static_assert(offsetof(UPyWidget_ActivityRuleV2, Activity_ID) == 0x0005F8, "Member 'UPyWidget_ActivityRuleV2::Activity_ID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ActivityRuleV2;
 
 }
 

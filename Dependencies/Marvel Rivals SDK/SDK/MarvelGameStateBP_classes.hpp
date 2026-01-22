@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelGameStateBP.MarvelGameStateBP_C
-// 0x0010 (0x0F90 - 0x0F80)
+// 0x0010 (0x0FC0 - 0x0FB0)
 class AMarvelGameStateBP_C final : public APyMarvelGameState
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0F80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 LevelCustomEventSubsystem;                         // 0x0F88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0FB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 LevelCustomEventSubsystem;                         // 0x0FB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelGameStateBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelGameStateBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGameStateBP_C")
 	}
 	static class AMarvelGameStateBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelGameStateBP_C>();
 	}
 };
-static_assert(alignof(AMarvelGameStateBP_C) == 0x000010, "Wrong alignment on AMarvelGameStateBP_C");
-static_assert(sizeof(AMarvelGameStateBP_C) == 0x000F90, "Wrong size on AMarvelGameStateBP_C");
-static_assert(offsetof(AMarvelGameStateBP_C, DefaultSceneRoot) == 0x000F80, "Member 'AMarvelGameStateBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelGameStateBP_C, LevelCustomEventSubsystem) == 0x000F88, "Member 'AMarvelGameStateBP_C::LevelCustomEventSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelGameStateBP_C;
 
 }
 

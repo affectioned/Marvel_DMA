@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1054_CharacterBP.1054_CharacterBP_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class AOne054_CharacterBP_C final : public APyPhoenixCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1054_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1054_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1054_CharacterBP_C")
 	}
 	static class AOne054_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne054_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne054_CharacterBP_C) == 0x000010, "Wrong alignment on AOne054_CharacterBP_C");
-static_assert(sizeof(AOne054_CharacterBP_C) == 0x0021E0, "Wrong size on AOne054_CharacterBP_C");
+DUMPER7_ASSERTS_AOne054_CharacterBP_C;
 
 }
 

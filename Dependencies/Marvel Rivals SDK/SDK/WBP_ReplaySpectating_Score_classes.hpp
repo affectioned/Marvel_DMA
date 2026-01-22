@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ReplaySpectating_Score_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ReplaySpectating_Score_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ReplaySpectating_Score_C")
 	}
 	static class UWBP_ReplaySpectating_Score_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ReplaySpectating_Score_C>();
 	}
 };
-static_assert(alignof(UWBP_ReplaySpectating_Score_C) == 0x000008, "Wrong alignment on UWBP_ReplaySpectating_Score_C");
-static_assert(sizeof(UWBP_ReplaySpectating_Score_C) == 0x0003C8, "Wrong size on UWBP_ReplaySpectating_Score_C");
-static_assert(offsetof(UWBP_ReplaySpectating_Score_C, Img_Score) == 0x0003B8, "Member 'UWBP_ReplaySpectating_Score_C::Img_Score' has a wrong offset!");
-static_assert(offsetof(UWBP_ReplaySpectating_Score_C, Overlay_Score) == 0x0003C0, "Member 'UWBP_ReplaySpectating_Score_C::Overlay_Score' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ReplaySpectating_Score_C;
 
 }
 

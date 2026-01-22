@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Countdown.PyWidget_Common_Countdown
-// 0x0030 (0x0598 - 0x0568)
+// 0x0030 (0x05A0 - 0x0570)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_Common_Countdown : public UMarvelUserWidget
 {
 public:
-	struct FSlateColor                            TextColor_White;                                   // 0x0568(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Yellow;                                  // 0x057C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         EmphasizeVxTime;                                   // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_White;                                   // 0x0570(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Yellow;                                  // 0x0584(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         EmphasizeVxTime;                                   // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,7 +35,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Countdown">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Countdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Countdown")
 	}
 	static class UPyWidget_Common_Countdown* GetDefaultObj()
 	{
@@ -43,11 +47,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Common_Countdown) == 0x000008, "Wrong alignment on UPyWidget_Common_Countdown");
-static_assert(sizeof(UPyWidget_Common_Countdown) == 0x000598, "Wrong size on UPyWidget_Common_Countdown");
-static_assert(offsetof(UPyWidget_Common_Countdown, TextColor_White) == 0x000568, "Member 'UPyWidget_Common_Countdown::TextColor_White' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Countdown, TextColor_Yellow) == 0x00057C, "Member 'UPyWidget_Common_Countdown::TextColor_Yellow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Countdown, EmphasizeVxTime) == 0x000590, "Member 'UPyWidget_Common_Countdown::EmphasizeVxTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Countdown;
 
 }
 

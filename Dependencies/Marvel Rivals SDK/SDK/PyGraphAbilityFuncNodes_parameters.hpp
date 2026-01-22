@@ -21,9 +21,7 @@ struct PyGraphAbilityFuncNodes_TestPyNode_All final
 public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGraphAbilityFuncNodes_TestPyNode_All) == 0x000008, "Wrong alignment on PyGraphAbilityFuncNodes_TestPyNode_All");
-static_assert(sizeof(PyGraphAbilityFuncNodes_TestPyNode_All) == 0x000008, "Wrong size on PyGraphAbilityFuncNodes_TestPyNode_All");
-static_assert(offsetof(PyGraphAbilityFuncNodes_TestPyNode_All, SelfObj) == 0x000000, "Member 'PyGraphAbilityFuncNodes_TestPyNode_All::SelfObj' has a wrong offset!");
+DUMPER7_ASSERTS_PyGraphAbilityFuncNodes_TestPyNode_All;
 
 // PythonFunction PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes.ReduceAbilityCoolDown
 // 0x0010 (0x0010 - 0x0000)
@@ -34,11 +32,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ReduceCoolDown;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGraphAbilityFuncNodes_ReduceAbilityCoolDown) == 0x000008, "Wrong alignment on PyGraphAbilityFuncNodes_ReduceAbilityCoolDown");
-static_assert(sizeof(PyGraphAbilityFuncNodes_ReduceAbilityCoolDown) == 0x000010, "Wrong size on PyGraphAbilityFuncNodes_ReduceAbilityCoolDown");
-static_assert(offsetof(PyGraphAbilityFuncNodes_ReduceAbilityCoolDown, SelfObj) == 0x000000, "Member 'PyGraphAbilityFuncNodes_ReduceAbilityCoolDown::SelfObj' has a wrong offset!");
-static_assert(offsetof(PyGraphAbilityFuncNodes_ReduceAbilityCoolDown, AbilityID) == 0x000008, "Member 'PyGraphAbilityFuncNodes_ReduceAbilityCoolDown::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyGraphAbilityFuncNodes_ReduceAbilityCoolDown, ReduceCoolDown) == 0x00000C, "Member 'PyGraphAbilityFuncNodes_ReduceAbilityCoolDown::ReduceCoolDown' has a wrong offset!");
+DUMPER7_ASSERTS_PyGraphAbilityFuncNodes_ReduceAbilityCoolDown;
 
 // PythonFunction PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes_Ability.TestPyNode_Ability
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +41,7 @@ struct PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability final
 public:
 	class UObject*                                SelfAbility;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability) == 0x000008, "Wrong alignment on PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability");
-static_assert(sizeof(PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability) == 0x000008, "Wrong size on PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability");
-static_assert(offsetof(PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability, SelfAbility) == 0x000000, "Member 'PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability::SelfAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyGraphAbilityFuncNodes_Ability_TestPyNode_Ability;
 
 // PythonFunction PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes_AbilityTarget.TestPyNode_AbilityTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +50,7 @@ struct PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget final
 public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget) == 0x000008, "Wrong alignment on PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget");
-static_assert(sizeof(PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget) == 0x000008, "Wrong size on PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget");
-static_assert(offsetof(PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget, SelfObj) == 0x000000, "Member 'PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget::SelfObj' has a wrong offset!");
+DUMPER7_ASSERTS_PyGraphAbilityFuncNodes_AbilityTarget_TestPyNode_AbilityTarget;
 
 // PythonFunction PyGraphAbilityFuncNodes.PyGraphAbilityFuncNodes_AbilityTarget.GetOriginInstigator
 // 0x0010 (0x0010 - 0x0000)
@@ -70,10 +60,7 @@ public:
 	class UObject*                                SelfObj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelBaseCharacter*                   ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator) == 0x000008, "Wrong alignment on PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator");
-static_assert(sizeof(PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator) == 0x000010, "Wrong size on PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator");
-static_assert(offsetof(PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator, SelfObj) == 0x000000, "Member 'PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator::SelfObj' has a wrong offset!");
-static_assert(offsetof(PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator, ReturnValue) == 0x000008, "Member 'PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyGraphAbilityFuncNodes_AbilityTarget_GetOriginInstigator;
 
 }
 

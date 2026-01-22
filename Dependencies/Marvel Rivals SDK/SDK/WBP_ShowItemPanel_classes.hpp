@@ -17,73 +17,51 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ShowItemPanel.WBP_ShowItemPanel_C
-// 0x00C8 (0x0898 - 0x07D0)
+// 0x00C8 (0x08B8 - 0x07F0)
 class UWBP_ShowItemPanel_C final : public UPyWidget_ShowItemPanel
 {
 public:
-	class UWidgetAnimation*                       Anim_ItemData_FadeIn;                              // 0x07D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Appreciate;                                   // 0x07D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Rotation;                                      // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Rotation_Item;                                 // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_Main;                                       // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage;                                       // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_69;                                    // 0x0800(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_AccessoryLine;                             // 0x0808(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ConterHalfLine;                            // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ConterStandLine;                           // 0x0818(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ItemData_Left;                             // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ItemData_Right;                            // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ItemWidgets;                               // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_RightHalfLine;                             // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_RightStandLine;                            // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Rotation;                                  // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Rotation_Item;                             // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ShowItem_2DItemPanel_C*            ShowItem_2DItemPanel;                              // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check;                                        // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_1;                                      // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_2;                                      // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_3;                                      // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_4;                                      // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_5;                                      // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Check_6;                                      // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_ItemData_FadeIn;                              // 0x07F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Appreciate;                                   // 0x07F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Rotation;                                      // 0x0800(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Rotation_Item;                                 // 0x0808(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Main;                                       // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage;                                       // 0x0818(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_69;                                    // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_AccessoryLine;                             // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ConterHalfLine;                            // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ConterStandLine;                           // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ItemData_Left;                             // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ItemData_Right;                            // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ItemWidgets;                               // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_RightHalfLine;                             // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_RightStandLine;                            // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Rotation;                                  // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Rotation_Item;                             // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ShowItem_2DItemPanel_C*            ShowItem_2DItemPanel;                              // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check;                                        // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_1;                                      // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_2;                                      // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_3;                                      // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_4;                                      // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_5;                                      // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Check_6;                                      // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ShowItemPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ShowItemPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ShowItemPanel_C")
 	}
 	static class UWBP_ShowItemPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ShowItemPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_ShowItemPanel_C) == 0x000008, "Wrong alignment on UWBP_ShowItemPanel_C");
-static_assert(sizeof(UWBP_ShowItemPanel_C) == 0x000898, "Wrong size on UWBP_ShowItemPanel_C");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Anim_ItemData_FadeIn) == 0x0007D0, "Member 'UWBP_ShowItemPanel_C::Anim_ItemData_FadeIn' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Anim_Appreciate) == 0x0007D8, "Member 'UWBP_ShowItemPanel_C::Anim_Appreciate' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Btn_Rotation) == 0x0007E0, "Member 'UWBP_ShowItemPanel_C::Btn_Rotation' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Btn_Rotation_Item) == 0x0007E8, "Member 'UWBP_ShowItemPanel_C::Btn_Rotation_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Canvas_Main) == 0x0007F0, "Member 'UWBP_ShowItemPanel_C::Canvas_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, MarvelImage) == 0x0007F8, "Member 'UWBP_ShowItemPanel_C::MarvelImage' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, MarvelImage_69) == 0x000800, "Member 'UWBP_ShowItemPanel_C::MarvelImage_69' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_AccessoryLine) == 0x000808, "Member 'UWBP_ShowItemPanel_C::Overlay_AccessoryLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_ConterHalfLine) == 0x000810, "Member 'UWBP_ShowItemPanel_C::Overlay_ConterHalfLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_ConterStandLine) == 0x000818, "Member 'UWBP_ShowItemPanel_C::Overlay_ConterStandLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_ItemData_Left) == 0x000820, "Member 'UWBP_ShowItemPanel_C::Overlay_ItemData_Left' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_ItemData_Right) == 0x000828, "Member 'UWBP_ShowItemPanel_C::Overlay_ItemData_Right' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_ItemWidgets) == 0x000830, "Member 'UWBP_ShowItemPanel_C::Overlay_ItemWidgets' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_RightHalfLine) == 0x000838, "Member 'UWBP_ShowItemPanel_C::Overlay_RightHalfLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_RightStandLine) == 0x000840, "Member 'UWBP_ShowItemPanel_C::Overlay_RightStandLine' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_Rotation) == 0x000848, "Member 'UWBP_ShowItemPanel_C::Overlay_Rotation' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Overlay_Rotation_Item) == 0x000850, "Member 'UWBP_ShowItemPanel_C::Overlay_Rotation_Item' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, ShowItem_2DItemPanel) == 0x000858, "Member 'UWBP_ShowItemPanel_C::ShowItem_2DItemPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check) == 0x000860, "Member 'UWBP_ShowItemPanel_C::Text_Check' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_1) == 0x000868, "Member 'UWBP_ShowItemPanel_C::Text_Check_1' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_2) == 0x000870, "Member 'UWBP_ShowItemPanel_C::Text_Check_2' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_3) == 0x000878, "Member 'UWBP_ShowItemPanel_C::Text_Check_3' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_4) == 0x000880, "Member 'UWBP_ShowItemPanel_C::Text_Check_4' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_5) == 0x000888, "Member 'UWBP_ShowItemPanel_C::Text_Check_5' has a wrong offset!");
-static_assert(offsetof(UWBP_ShowItemPanel_C, Text_Check_6) == 0x000890, "Member 'UWBP_ShowItemPanel_C::Text_Check_6' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ShowItemPanel_C;
 
 }
 

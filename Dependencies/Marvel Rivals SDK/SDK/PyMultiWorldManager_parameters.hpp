@@ -21,9 +21,7 @@ struct PyMultiWorldManager_ReceiveOnWorldLoaded final
 public:
 	class FName                                   WorldName;                                         // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMultiWorldManager_ReceiveOnWorldLoaded) == 0x000004, "Wrong alignment on PyMultiWorldManager_ReceiveOnWorldLoaded");
-static_assert(sizeof(PyMultiWorldManager_ReceiveOnWorldLoaded) == 0x00000C, "Wrong size on PyMultiWorldManager_ReceiveOnWorldLoaded");
-static_assert(offsetof(PyMultiWorldManager_ReceiveOnWorldLoaded, WorldName) == 0x000000, "Member 'PyMultiWorldManager_ReceiveOnWorldLoaded::WorldName' has a wrong offset!");
+DUMPER7_ASSERTS_PyMultiWorldManager_ReceiveOnWorldLoaded;
 
 // PythonFunction PyMultiWorldManager.PyMultiWorldManager.OnViewingWorldChanged
 // 0x000C (0x000C - 0x0000)
@@ -32,9 +30,7 @@ struct PyMultiWorldManager_OnViewingWorldChanged final
 public:
 	class FName                                   WorldName;                                         // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMultiWorldManager_OnViewingWorldChanged) == 0x000004, "Wrong alignment on PyMultiWorldManager_OnViewingWorldChanged");
-static_assert(sizeof(PyMultiWorldManager_OnViewingWorldChanged) == 0x00000C, "Wrong size on PyMultiWorldManager_OnViewingWorldChanged");
-static_assert(offsetof(PyMultiWorldManager_OnViewingWorldChanged, WorldName) == 0x000000, "Member 'PyMultiWorldManager_OnViewingWorldChanged::WorldName' has a wrong offset!");
+DUMPER7_ASSERTS_PyMultiWorldManager_OnViewingWorldChanged;
 
 }
 

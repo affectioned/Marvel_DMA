@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_LayerWidgetEntry">();
+		STATIC_CLASS_IMPL("PyExtension_LayerWidgetEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_LayerWidgetEntry")
 	}
 	static class UPyExtension_LayerWidgetEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_LayerWidgetEntry>();
 	}
 };
-static_assert(alignof(UPyExtension_LayerWidgetEntry) == 0x000008, "Wrong alignment on UPyExtension_LayerWidgetEntry");
-static_assert(sizeof(UPyExtension_LayerWidgetEntry) == 0x000050, "Wrong size on UPyExtension_LayerWidgetEntry");
-static_assert(offsetof(UPyExtension_LayerWidgetEntry, OnIsValidFullScreenChanged) == 0x000030, "Member 'UPyExtension_LayerWidgetEntry::OnIsValidFullScreenChanged' has a wrong offset!");
-static_assert(offsetof(UPyExtension_LayerWidgetEntry, OnIsValidExclusiveInputChanged) == 0x000040, "Member 'UPyExtension_LayerWidgetEntry::OnIsValidExclusiveInputChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtension_LayerWidgetEntry;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyGlobalRootWidget.PyGlobalRootWidget
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyGlobalRootWidget : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGlobalRootWidget">();
+		STATIC_CLASS_IMPL("PyGlobalRootWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGlobalRootWidget")
 	}
 	static class UPyGlobalRootWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGlobalRootWidget>();
 	}
 };
-static_assert(alignof(UPyGlobalRootWidget) == 0x000008, "Wrong alignment on UPyGlobalRootWidget");
-static_assert(sizeof(UPyGlobalRootWidget) == 0x0005C0, "Wrong size on UPyGlobalRootWidget");
+DUMPER7_ASSERTS_UPyGlobalRootWidget;
 
 }
 

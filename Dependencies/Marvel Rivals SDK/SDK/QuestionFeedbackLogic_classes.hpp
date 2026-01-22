@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingOtherQuestionFeedbackHandler">();
+		STATIC_CLASS_IMPL("UISettingOtherQuestionFeedbackHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingOtherQuestionFeedbackHandler")
 	}
 	static class UUISettingOtherQuestionFeedbackHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingOtherQuestionFeedbackHandler>();
 	}
 };
-static_assert(alignof(UUISettingOtherQuestionFeedbackHandler) == 0x000008, "Wrong alignment on UUISettingOtherQuestionFeedbackHandler");
-static_assert(sizeof(UUISettingOtherQuestionFeedbackHandler) == 0x000030, "Wrong size on UUISettingOtherQuestionFeedbackHandler");
+DUMPER7_ASSERTS_UUISettingOtherQuestionFeedbackHandler;
 
 }
 

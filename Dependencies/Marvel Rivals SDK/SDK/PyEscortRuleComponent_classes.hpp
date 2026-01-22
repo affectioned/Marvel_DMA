@@ -32,19 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortRuleComponent">();
+		STATIC_CLASS_IMPL("PyEscortRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortRuleComponent")
 	}
 	static class UPyEscortRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortRuleComponent>();
 	}
 };
-static_assert(alignof(UPyEscortRuleComponent) == 0x000008, "Wrong alignment on UPyEscortRuleComponent");
-static_assert(sizeof(UPyEscortRuleComponent) == 0x000128, "Wrong size on UPyEscortRuleComponent");
-static_assert(offsetof(UPyEscortRuleComponent, PayloadClass) == 0x000108, "Member 'UPyEscortRuleComponent::PayloadClass' has a wrong offset!");
-static_assert(offsetof(UPyEscortRuleComponent, Payload) == 0x000110, "Member 'UPyEscortRuleComponent::Payload' has a wrong offset!");
-static_assert(offsetof(UPyEscortRuleComponent, PayloadShowBPClass) == 0x000118, "Member 'UPyEscortRuleComponent::PayloadShowBPClass' has a wrong offset!");
-static_assert(offsetof(UPyEscortRuleComponent, PayloadShowBP) == 0x000120, "Member 'UPyEscortRuleComponent::PayloadShowBP' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEscortRuleComponent;
 
 }
 

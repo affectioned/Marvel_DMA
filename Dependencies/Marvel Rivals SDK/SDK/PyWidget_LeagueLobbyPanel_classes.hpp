@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueLobbyPanel.PyWidget_LeagueLobbyPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_LeagueLobbyPanel final : public UPyWidget_LobbyChildPanel
 {
 public:
-	TSubclassOf<class UPyWidget_VideoMRCEntry>    WidgetClassEntryVideo;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_VideoMRCEntry>    WidgetClassEntryVideo;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueLobbyPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueLobbyPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueLobbyPanel")
 	}
 	static class UPyWidget_LeagueLobbyPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueLobbyPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueLobbyPanel) == 0x000008, "Wrong alignment on UPyWidget_LeagueLobbyPanel");
-static_assert(sizeof(UPyWidget_LeagueLobbyPanel) == 0x000600, "Wrong size on UPyWidget_LeagueLobbyPanel");
-static_assert(offsetof(UPyWidget_LeagueLobbyPanel, WidgetClassEntryVideo) == 0x0005F8, "Member 'UPyWidget_LeagueLobbyPanel::WidgetClassEntryVideo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueLobbyPanel;
 
 }
 

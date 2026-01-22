@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_TestOverview.PyWidget_Performance_TestOverview_Occupiess
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Performance_TestOverview_Occupiess final : public UPyMarvelUserWidget
 {
 public:
@@ -28,41 +28,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestOverview_Occupiess">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestOverview_Occupiess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestOverview_Occupiess")
 	}
 	static class UPyWidget_Performance_TestOverview_Occupiess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestOverview_Occupiess>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestOverview_Occupiess) == 0x000008, "Wrong alignment on UPyWidget_Performance_TestOverview_Occupiess");
-static_assert(sizeof(UPyWidget_Performance_TestOverview_Occupiess) == 0x0005C0, "Wrong size on UPyWidget_Performance_TestOverview_Occupiess");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestOverview_Occupiess;
 
 // PythonClass PyWidget_Performance_TestOverview.PyWidget_Performance_TestOverview
-// 0x0360 (0x0920 - 0x05C0)
+// 0x0368 (0x0930 - 0x05C8)
 class UPyWidget_Performance_TestOverview final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Brush_High;                                        // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Brush_Mid;                                         // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Brush_Low;                                         // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_High;                                   // 0x0830(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_Mid;                                    // 0x0844(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_Low;                                    // 0x0858(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Standard_Level_1;                                  // 0x086C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Level_2;                                  // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Level_3;                                  // 0x0874(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Level_4;                                  // 0x0878(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Level_5;                                  // 0x087C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_1;                            // 0x0880(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_2;                            // 0x0898(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_3;                            // 0x08B0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_4;                            // 0x08C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_5;                            // 0x08E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   Txt_Experience_Level_6;                            // 0x08F8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Avg_Fps_Level_1;                                   // 0x0910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Avg_Fps_Level_2;                                   // 0x0914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Brush_High;                                        // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush_Mid;                                         // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush_Low;                                         // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_High;                                   // 0x0840(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_Mid;                                    // 0x0854(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_Low;                                    // 0x0868(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Standard_Level_1;                                  // 0x087C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Level_2;                                  // 0x0880(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Level_3;                                  // 0x0884(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Level_4;                                  // 0x0888(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Level_5;                                  // 0x088C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_1;                            // 0x0890(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_2;                            // 0x08A8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_3;                            // 0x08C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_4;                            // 0x08D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_5;                            // 0x08F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   Txt_Experience_Level_6;                            // 0x0908(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Avg_Fps_Level_1;                                   // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Avg_Fps_Level_2;                                   // 0x0924(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -72,46 +75,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestOverview">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestOverview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestOverview")
 	}
 	static class UPyWidget_Performance_TestOverview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestOverview>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestOverview) == 0x000010, "Wrong alignment on UPyWidget_Performance_TestOverview");
-static_assert(sizeof(UPyWidget_Performance_TestOverview) == 0x000920, "Wrong size on UPyWidget_Performance_TestOverview");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Brush_High) == 0x0005C0, "Member 'UPyWidget_Performance_TestOverview::Brush_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Brush_Mid) == 0x000690, "Member 'UPyWidget_Performance_TestOverview::Brush_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Brush_Low) == 0x000760, "Member 'UPyWidget_Performance_TestOverview::Brush_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Line_Color_High) == 0x000830, "Member 'UPyWidget_Performance_TestOverview::Line_Color_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Line_Color_Mid) == 0x000844, "Member 'UPyWidget_Performance_TestOverview::Line_Color_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Line_Color_Low) == 0x000858, "Member 'UPyWidget_Performance_TestOverview::Line_Color_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Standard_Level_1) == 0x00086C, "Member 'UPyWidget_Performance_TestOverview::Standard_Level_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Standard_Level_2) == 0x000870, "Member 'UPyWidget_Performance_TestOverview::Standard_Level_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Standard_Level_3) == 0x000874, "Member 'UPyWidget_Performance_TestOverview::Standard_Level_3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Standard_Level_4) == 0x000878, "Member 'UPyWidget_Performance_TestOverview::Standard_Level_4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Standard_Level_5) == 0x00087C, "Member 'UPyWidget_Performance_TestOverview::Standard_Level_5' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_1) == 0x000880, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_2) == 0x000898, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_3) == 0x0008B0, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_4) == 0x0008C8, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_4' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_5) == 0x0008E0, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_5' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Txt_Experience_Level_6) == 0x0008F8, "Member 'UPyWidget_Performance_TestOverview::Txt_Experience_Level_6' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Avg_Fps_Level_1) == 0x000910, "Member 'UPyWidget_Performance_TestOverview::Avg_Fps_Level_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview, Avg_Fps_Level_2) == 0x000914, "Member 'UPyWidget_Performance_TestOverview::Avg_Fps_Level_2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestOverview;
 
 // PythonClass PyWidget_Performance_TestOverview.PyWidget_Performance_TestOverview_Note
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Performance_TestOverview_Note final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Line_Color;                                        // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Note_Name;                                         // 0x05D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Vis_Icon;                                          // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             No_Vis_Icon;                                       // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Line_Color;                                        // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Note_Name;                                         // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Vis_Icon;                                          // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             No_Vis_Icon;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -121,32 +108,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestOverview_Note">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestOverview_Note")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestOverview_Note")
 	}
 	static class UPyWidget_Performance_TestOverview_Note* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestOverview_Note>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestOverview_Note) == 0x000008, "Wrong alignment on UPyWidget_Performance_TestOverview_Note");
-static_assert(sizeof(UPyWidget_Performance_TestOverview_Note) == 0x0005F8, "Wrong size on UPyWidget_Performance_TestOverview_Note");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Note, Line_Color) == 0x0005BC, "Member 'UPyWidget_Performance_TestOverview_Note::Line_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Note, Note_Name) == 0x0005D0, "Member 'UPyWidget_Performance_TestOverview_Note::Note_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Note, Vis_Icon) == 0x0005E8, "Member 'UPyWidget_Performance_TestOverview_Note::Vis_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Note, No_Vis_Icon) == 0x0005F0, "Member 'UPyWidget_Performance_TestOverview_Note::No_Vis_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestOverview_Note;
 
 // PythonClass PyWidget_Performance_TestOverview.PyWidget_Performance_TestOverview_Fps
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_Performance_TestOverview_Fps final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Note_Name;                                         // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_High;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_Mid;                                    // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Line_Color_Low;                                    // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Standard_High;                                     // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Mid;                                      // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Note_Name;                                         // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_High;                                   // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_Mid;                                    // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Line_Color_Low;                                    // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Standard_High;                                     // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Mid;                                      // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -157,21 +143,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestOverview_Fps">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestOverview_Fps")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestOverview_Fps")
 	}
 	static class UPyWidget_Performance_TestOverview_Fps* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestOverview_Fps>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestOverview_Fps) == 0x000008, "Wrong alignment on UPyWidget_Performance_TestOverview_Fps");
-static_assert(sizeof(UPyWidget_Performance_TestOverview_Fps) == 0x000620, "Wrong size on UPyWidget_Performance_TestOverview_Fps");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Note_Name) == 0x0005C0, "Member 'UPyWidget_Performance_TestOverview_Fps::Note_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Line_Color_High) == 0x0005D8, "Member 'UPyWidget_Performance_TestOverview_Fps::Line_Color_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Line_Color_Mid) == 0x0005EC, "Member 'UPyWidget_Performance_TestOverview_Fps::Line_Color_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Line_Color_Low) == 0x000600, "Member 'UPyWidget_Performance_TestOverview_Fps::Line_Color_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Standard_High) == 0x000614, "Member 'UPyWidget_Performance_TestOverview_Fps::Standard_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestOverview_Fps, Standard_Mid) == 0x000618, "Member 'UPyWidget_Performance_TestOverview_Fps::Standard_Mid' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestOverview_Fps;
 
 }
 

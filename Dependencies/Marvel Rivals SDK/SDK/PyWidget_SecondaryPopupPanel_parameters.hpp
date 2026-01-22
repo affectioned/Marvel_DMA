@@ -23,9 +23,7 @@ struct PyWidget_SecondaryPopupPanel_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_PreConstruct");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_PreConstruct) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_PreConstruct");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_PreConstruct;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_SecondaryPopupPanel_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_ShouldEnableInput");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_ShouldEnableInput");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_ShouldEnableInput;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetCommonBGType
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_SecondaryPopupPanel_SetCommonBGType final
 public:
 	ECommonBGType                                 CommonBGType_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetCommonBGType) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetCommonBGType");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetCommonBGType) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetCommonBGType");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetCommonBGType, CommonBGType_0) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetCommonBGType::CommonBGType_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetCommonBGType;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetTitleText
 // 0x0018 (0x0018 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_SecondaryPopupPanel_SetTitleText final
 public:
 	class FText                                   TitleText_0;                                       // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetTitleText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetTitleText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetTitleText) == 0x000018, "Wrong size on PyWidget_SecondaryPopupPanel_SetTitleText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetTitleText, TitleText_0) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetTitleText::TitleText_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetTitleText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetTitleTimeCountDown
 // 0x0008 (0x0008 - 0x0000)
@@ -68,10 +60,7 @@ public:
 	int32                                         TimeCountDown;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         WaitTime;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown) == 0x000004, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown) == 0x000008, "Wrong size on PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown, TimeCountDown) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown::TimeCountDown' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown, WaitTime) == 0x000004, "Member 'PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown::WaitTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetTitleTimeCountDown;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetBtnsText
 // 0x0048 (0x0048 - 0x0000)
@@ -82,11 +71,7 @@ public:
 	class FText                                   RightBtnText_0;                                    // 0x0018(0x0018)(Parm)
 	class FText                                   close_btn_text;                                    // 0x0030(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetBtnsText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetBtnsText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetBtnsText) == 0x000048, "Wrong size on PyWidget_SecondaryPopupPanel_SetBtnsText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnsText, LeftBtnText_0) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetBtnsText::LeftBtnText_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnsText, RightBtnText_0) == 0x000018, "Member 'PyWidget_SecondaryPopupPanel_SetBtnsText::RightBtnText_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnsText, close_btn_text) == 0x000030, "Member 'PyWidget_SecondaryPopupPanel_SetBtnsText::close_btn_text' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetBtnsText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftBtnText
 // 0x0018 (0x0018 - 0x0000)
@@ -95,9 +80,7 @@ struct PyWidget_SecondaryPopupPanel_SetLeftBtnText final
 public:
 	class FText                                   LeftBtnText_0;                                     // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftBtnText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftBtnText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftBtnText) == 0x000018, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftBtnText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnText, LeftBtnText_0) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnText::LeftBtnText_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftBtnText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtnText
 // 0x0018 (0x0018 - 0x0000)
@@ -106,9 +89,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtnText final
 public:
 	class FText                                   RightBtnText_0;                                    // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtnText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtnText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtnText) == 0x000018, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtnText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtnText, RightBtnText_0) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtnText::RightBtnText_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtnText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetCloseBtnText
 // 0x0018 (0x0018 - 0x0000)
@@ -117,9 +98,7 @@ struct PyWidget_SecondaryPopupPanel_SetCloseBtnText final
 public:
 	class FText                                   BtnText;                                           // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetCloseBtnText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetCloseBtnText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetCloseBtnText) == 0x000018, "Wrong size on PyWidget_SecondaryPopupPanel_SetCloseBtnText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetCloseBtnText, BtnText) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetCloseBtnText::BtnText' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetCloseBtnText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetBtnAboveTipsText
 // 0x0030 (0x0030 - 0x0000)
@@ -129,10 +108,7 @@ public:
 	class FText                                   LeftTips;                                          // 0x0000(0x0018)(Parm)
 	class FText                                   RightTips;                                         // 0x0018(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText) == 0x000030, "Wrong size on PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText, LeftTips) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText::LeftTips' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText, RightTips) == 0x000018, "Member 'PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText::RightTips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetBtnAboveTipsText;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftBtnEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -141,9 +117,7 @@ struct PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled, Enabled) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftBtnEnabled;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtnEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -152,9 +126,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtnEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtnEnabled) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtnEnabled");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtnEnabled) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtnEnabled");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtnEnabled, Enabled) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtnEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtnEnabled;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetTitleVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -163,9 +135,7 @@ struct PyWidget_SecondaryPopupPanel_SetTitleVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetTitleVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetTitleVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetTitleVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetTitleVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetTitleVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetTitleVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetTitleVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetBtnsVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -174,9 +144,7 @@ struct PyWidget_SecondaryPopupPanel_SetBtnsVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetBtnsVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetBtnsVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetBtnsVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetBtnsVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnsVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetBtnsVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetBtnsVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftBtnVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -185,9 +153,7 @@ struct PyWidget_SecondaryPopupPanel_SetLeftBtnVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftBtnVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftBtnVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftBtnVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftBtnVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftBtnVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftWhiteBtnVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -196,9 +162,7 @@ struct PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftWhiteBtnVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftBtnTipsVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -207,9 +171,7 @@ struct PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftBtnTipsVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtnVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -218,9 +180,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtnVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtnVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtnVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtnVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtnVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtnVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtnVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtnVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtnTipsVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -229,9 +189,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtnTipsVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtn2Visible
 // 0x0001 (0x0001 - 0x0000)
@@ -240,9 +198,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtn2Visible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtn2Visible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtn2Visible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtn2Visible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtn2Visible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtn2Visible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtn2Visible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtn2Visible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetBtnAboveTipsVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -251,9 +207,7 @@ struct PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetBtnAboveTipsVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetRightBtnYellowVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -262,9 +216,7 @@ struct PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetRightBtnYellowVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.SetLeftBtnTwoPrice
 // 0x0030 (0x0030 - 0x0000)
@@ -279,14 +231,7 @@ public:
 	int32                                         price2;                                            // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          is_enough2;                                        // 0x002C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice) == 0x000008, "Wrong alignment on PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice) == 0x000030, "Wrong size on PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, cost_id1) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::cost_id1' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, price1) == 0x000010, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::price1' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, is_enough1) == 0x000014, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::is_enough1' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, cost_id2) == 0x000018, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::cost_id2' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, price2) == 0x000028, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::price2' has a wrong offset!");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice, is_enough2) == 0x00002C, "Member 'PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice::is_enough2' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_SetLeftBtnTwoPrice;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -295,9 +240,7 @@ struct PyWidget_SecondaryPopupPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_SecondaryPopupPanel.PyWidget_SecondaryPopupPanel.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -306,9 +249,7 @@ struct PyWidget_SecondaryPopupPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_SecondaryPopupPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_SecondaryPopupPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_SecondaryPopupPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_SecondaryPopupPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_SecondaryPopupPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_SecondaryPopupPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_SecondaryPopupPanel_OnVisibleChanged;
 
 }
 

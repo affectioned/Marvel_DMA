@@ -27,10 +27,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10416101_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10416101_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10416101_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10416101_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10416101_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10416101_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10416101_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10416101_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10416101_K2_OnPreApplyContainer;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416105.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -41,11 +38,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416105_WhileActive) == 0x000008, "Wrong alignment on PyCue_Buff_10416105_WhileActive");
-static_assert(sizeof(PyCue_Buff_10416105_WhileActive) == 0x0001E0, "Wrong size on PyCue_Buff_10416105_WhileActive");
-static_assert(offsetof(PyCue_Buff_10416105_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416105_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Buff_10416105_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_10416105_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416105_WhileActive;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416105.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -56,11 +49,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416105_OnRemove) == 0x000008, "Wrong alignment on PyCue_Buff_10416105_OnRemove");
-static_assert(sizeof(PyCue_Buff_10416105_OnRemove) == 0x0001E0, "Wrong size on PyCue_Buff_10416105_OnRemove");
-static_assert(offsetof(PyCue_Buff_10416105_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416105_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Buff_10416105_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_10416105_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416105_OnRemove;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416105.OnCharacterDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -71,11 +60,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416105_OnCharacterDeath) == 0x000008, "Wrong alignment on PyCue_Buff_10416105_OnCharacterDeath");
-static_assert(sizeof(PyCue_Buff_10416105_OnCharacterDeath) == 0x000028, "Wrong size on PyCue_Buff_10416105_OnCharacterDeath");
-static_assert(offsetof(PyCue_Buff_10416105_OnCharacterDeath, DamageCauser) == 0x000000, "Member 'PyCue_Buff_10416105_OnCharacterDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_OnCharacterDeath, TargetActor) == 0x000008, "Member 'PyCue_Buff_10416105_OnCharacterDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_OnCharacterDeath, ParamHandle) == 0x000010, "Member 'PyCue_Buff_10416105_OnCharacterDeath::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416105_OnCharacterDeath;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416105.WhileActiveAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -85,10 +70,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_10416105_WhileActiveAudio) == 0x000008, "Wrong alignment on PyCue_Buff_10416105_WhileActiveAudio");
-static_assert(sizeof(PyCue_Buff_10416105_WhileActiveAudio) == 0x0001D8, "Wrong size on PyCue_Buff_10416105_WhileActiveAudio");
-static_assert(offsetof(PyCue_Buff_10416105_WhileActiveAudio, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416105_WhileActiveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_WhileActiveAudio, Parameters) == 0x000008, "Member 'PyCue_Buff_10416105_WhileActiveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416105_WhileActiveAudio;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416105.OnRemoveAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -98,10 +80,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_10416105_OnRemoveAudio) == 0x000008, "Wrong alignment on PyCue_Buff_10416105_OnRemoveAudio");
-static_assert(sizeof(PyCue_Buff_10416105_OnRemoveAudio) == 0x0001D8, "Wrong size on PyCue_Buff_10416105_OnRemoveAudio");
-static_assert(offsetof(PyCue_Buff_10416105_OnRemoveAudio, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416105_OnRemoveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416105_OnRemoveAudio, Parameters) == 0x000008, "Member 'PyCue_Buff_10416105_OnRemoveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416105_OnRemoveAudio;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -110,9 +89,7 @@ struct PyAbility_104161_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_CanActivate) == 0x000001, "Wrong alignment on PyAbility_104161_CanActivate");
-static_assert(sizeof(PyAbility_104161_CanActivate) == 0x000001, "Wrong size on PyAbility_104161_CanActivate");
-static_assert(offsetof(PyAbility_104161_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_104161_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_CanActivate;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -121,9 +98,7 @@ struct PyAbility_104161_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104161_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104161_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104161_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104161_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_104161_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_NativeOnMontageEvent;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.GetJumpInitialDirection
 // 0x0020 (0x0020 - 0x0000)
@@ -134,10 +109,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_GetJumpInitialDirection) == 0x000008, "Wrong alignment on PyAbility_104161_GetJumpInitialDirection");
-static_assert(sizeof(PyAbility_104161_GetJumpInitialDirection) == 0x000020, "Wrong size on PyAbility_104161_GetJumpInitialDirection");
-static_assert(offsetof(PyAbility_104161_GetJumpInitialDirection, bIsUp) == 0x000000, "Member 'PyAbility_104161_GetJumpInitialDirection::bIsUp' has a wrong offset!");
-static_assert(offsetof(PyAbility_104161_GetJumpInitialDirection, ReturnValue) == 0x000008, "Member 'PyAbility_104161_GetJumpInitialDirection::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_GetJumpInitialDirection;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.OnSmashDownSync
 // 0x0168 (0x0168 - 0x0000)
@@ -146,9 +118,7 @@ struct PyAbility_104161_OnSmashDownSync final
 public:
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0000(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104161_OnSmashDownSync) == 0x000008, "Wrong alignment on PyAbility_104161_OnSmashDownSync");
-static_assert(sizeof(PyAbility_104161_OnSmashDownSync) == 0x000168, "Wrong size on PyAbility_104161_OnSmashDownSync");
-static_assert(offsetof(PyAbility_104161_OnSmashDownSync, Data) == 0x000000, "Member 'PyAbility_104161_OnSmashDownSync::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_OnSmashDownSync;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.OnKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -159,11 +129,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_OnKillOther) == 0x000008, "Wrong alignment on PyAbility_104161_OnKillOther");
-static_assert(sizeof(PyAbility_104161_OnKillOther) == 0x000028, "Wrong size on PyAbility_104161_OnKillOther");
-static_assert(offsetof(PyAbility_104161_OnKillOther, InSourceAvatar) == 0x000000, "Member 'PyAbility_104161_OnKillOther::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_104161_OnKillOther, InTargetAvatar) == 0x000008, "Member 'PyAbility_104161_OnKillOther::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(PyAbility_104161_OnKillOther, ParamHandle) == 0x000010, "Member 'PyAbility_104161_OnKillOther::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_OnKillOther;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.OnOwnerCharacterDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -174,22 +140,16 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_OnOwnerCharacterDeath) == 0x000008, "Wrong alignment on PyAbility_104161_OnOwnerCharacterDeath");
-static_assert(sizeof(PyAbility_104161_OnOwnerCharacterDeath) == 0x000028, "Wrong size on PyAbility_104161_OnOwnerCharacterDeath");
-static_assert(offsetof(PyAbility_104161_OnOwnerCharacterDeath, DamageCauser) == 0x000000, "Member 'PyAbility_104161_OnOwnerCharacterDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyAbility_104161_OnOwnerCharacterDeath, TargetActor) == 0x000008, "Member 'PyAbility_104161_OnOwnerCharacterDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_104161_OnOwnerCharacterDeath, ParamHandle) == 0x000010, "Member 'PyAbility_104161_OnOwnerCharacterDeath::ParamHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_OnOwnerCharacterDeath;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.OnLanded
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyAbility_104161_OnLanded final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_104161_OnLanded) == 0x000008, "Wrong alignment on PyAbility_104161_OnLanded");
-static_assert(sizeof(PyAbility_104161_OnLanded) == 0x0001F0, "Wrong size on PyAbility_104161_OnLanded");
-static_assert(offsetof(PyAbility_104161_OnLanded, Hit) == 0x000000, "Member 'PyAbility_104161_OnLanded::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_OnLanded;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -198,9 +158,7 @@ struct PyAbility_104161_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_104161_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_104161_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_104161_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_104161_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_104161_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_K2_OnEndAbility;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.K2_UpdateValidHitForUI
 // 0x0001 (0x0001 - 0x0000)
@@ -209,9 +167,7 @@ struct PyAbility_104161_K2_UpdateValidHitForUI final
 public:
 	bool                                          valid_hit;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_K2_UpdateValidHitForUI) == 0x000001, "Wrong alignment on PyAbility_104161_K2_UpdateValidHitForUI");
-static_assert(sizeof(PyAbility_104161_K2_UpdateValidHitForUI) == 0x000001, "Wrong size on PyAbility_104161_K2_UpdateValidHitForUI");
-static_assert(offsetof(PyAbility_104161_K2_UpdateValidHitForUI, valid_hit) == 0x000000, "Member 'PyAbility_104161_K2_UpdateValidHitForUI::valid_hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_K2_UpdateValidHitForUI;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -220,9 +176,7 @@ struct PyAbility_104161_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_104161_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_104161_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_104161_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_104161_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_104161_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -231,9 +185,7 @@ struct PyAbility_104161_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_104161_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_104161_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_104161_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_104161_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_104161_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -242,9 +194,7 @@ struct PyAbility_104161_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_104161_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_104161_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_104161_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_104161_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_104161_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_NativeOnMontageCancelled;
 
 // PythonFunction PyAbility_104161.PyAbility_104161.NativeOnMontageBlendOut
 // 0x0010 (0x0010 - 0x0000)
@@ -253,9 +203,7 @@ struct PyAbility_104161_NativeOnMontageBlendOut final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104161_NativeOnMontageBlendOut) == 0x000008, "Wrong alignment on PyAbility_104161_NativeOnMontageBlendOut");
-static_assert(sizeof(PyAbility_104161_NativeOnMontageBlendOut) == 0x000010, "Wrong size on PyAbility_104161_NativeOnMontageBlendOut");
-static_assert(offsetof(PyAbility_104161_NativeOnMontageBlendOut, Tag) == 0x000000, "Member 'PyAbility_104161_NativeOnMontageBlendOut::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104161_NativeOnMontageBlendOut;
 
 // PythonFunction PyAbility_104161.PyUIController_104161.UpdateUIActionTips
 // 0x0001 (0x0001 - 0x0000)
@@ -264,9 +212,7 @@ struct PyUIController_104161_UpdateUIActionTips final
 public:
 	bool                                          is_need;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_104161_UpdateUIActionTips) == 0x000001, "Wrong alignment on PyUIController_104161_UpdateUIActionTips");
-static_assert(sizeof(PyUIController_104161_UpdateUIActionTips) == 0x000001, "Wrong size on PyUIController_104161_UpdateUIActionTips");
-static_assert(offsetof(PyUIController_104161_UpdateUIActionTips, is_need) == 0x000000, "Member 'PyUIController_104161_UpdateUIActionTips::is_need' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_104161_UpdateUIActionTips;
 
 // PythonFunction PyAbility_104161.PyCue_Ability_Loop_10416101.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -277,11 +223,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10416101_WhileActive) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10416101_WhileActive");
-static_assert(sizeof(PyCue_Ability_Loop_10416101_WhileActive) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10416101_WhileActive");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10416101_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10416101_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10416101_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10416101_WhileActive;
 
 // PythonFunction PyAbility_104161.PyCue_Ability_Loop_10416101.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -292,11 +234,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10416101_OnRemove) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10416101_OnRemove");
-static_assert(sizeof(PyCue_Ability_Loop_10416101_OnRemove) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10416101_OnRemove");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10416101_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10416101_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10416101_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10416101_OnRemove;
 
 // PythonFunction PyAbility_104161.PyCue_Ability_Loop_10416101.OnMontageNotifyBegin
 // 0x000C (0x000C - 0x0000)
@@ -305,9 +243,7 @@ struct PyCue_Ability_Loop_10416101_OnMontageNotifyBegin final
 public:
 	class FName                                   NotifyName;                                        // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10416101_OnMontageNotifyBegin) == 0x000004, "Wrong alignment on PyCue_Ability_Loop_10416101_OnMontageNotifyBegin");
-static_assert(sizeof(PyCue_Ability_Loop_10416101_OnMontageNotifyBegin) == 0x00000C, "Wrong size on PyCue_Ability_Loop_10416101_OnMontageNotifyBegin");
-static_assert(offsetof(PyCue_Ability_Loop_10416101_OnMontageNotifyBegin, NotifyName) == 0x000000, "Member 'PyCue_Ability_Loop_10416101_OnMontageNotifyBegin::NotifyName' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10416101_OnMontageNotifyBegin;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416201.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -318,11 +254,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416201_WhileActive) == 0x000008, "Wrong alignment on PyCue_Buff_10416201_WhileActive");
-static_assert(sizeof(PyCue_Buff_10416201_WhileActive) == 0x0001E0, "Wrong size on PyCue_Buff_10416201_WhileActive");
-static_assert(offsetof(PyCue_Buff_10416201_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416201_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416201_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Buff_10416201_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416201_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_10416201_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416201_WhileActive;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416201.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -333,11 +265,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416201_OnRemove) == 0x000008, "Wrong alignment on PyCue_Buff_10416201_OnRemove");
-static_assert(sizeof(PyCue_Buff_10416201_OnRemove) == 0x0001E0, "Wrong size on PyCue_Buff_10416201_OnRemove");
-static_assert(offsetof(PyCue_Buff_10416201_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Buff_10416201_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416201_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Buff_10416201_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_10416201_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Buff_10416201_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416201_OnRemove;
 
 // PythonFunction PyAbility_104161.PyCue_Buff_10416201.OnClientViewTargetChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -346,9 +274,7 @@ struct PyCue_Buff_10416201_OnClientViewTargetChanged final
 public:
 	EClientPlayerViewSide                         ViewSide;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_10416201_OnClientViewTargetChanged) == 0x000001, "Wrong alignment on PyCue_Buff_10416201_OnClientViewTargetChanged");
-static_assert(sizeof(PyCue_Buff_10416201_OnClientViewTargetChanged) == 0x000001, "Wrong size on PyCue_Buff_10416201_OnClientViewTargetChanged");
-static_assert(offsetof(PyCue_Buff_10416201_OnClientViewTargetChanged, ViewSide) == 0x000000, "Member 'PyCue_Buff_10416201_OnClientViewTargetChanged::ViewSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_10416201_OnClientViewTargetChanged;
 
 }
 

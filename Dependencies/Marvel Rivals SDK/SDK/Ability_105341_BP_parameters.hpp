@@ -21,9 +21,7 @@ struct Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP) == 0x000004, "Wrong alignment on Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP");
-static_assert(sizeof(Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP) == 0x000004, "Wrong size on Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP");
-static_assert(offsetof(Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP, EntryPoint) == 0x000000, "Member 'Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105341_BP_C_ExecuteUbergraph_Ability_105341_BP;
 
 // Function Ability_105341_BP.Ability_105341_BP_C.GetAbilityAndIsActivated
 // 0x0030 (0x0030 - 0x0000)
@@ -39,14 +37,7 @@ public:
 	class UMarvelGameplayAbility*                 CallFunc_GetGameplayAbility_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_105341_BP_C_GetAbilityAndIsActivated) == 0x000008, "Wrong alignment on Ability_105341_BP_C_GetAbilityAndIsActivated");
-static_assert(sizeof(Ability_105341_BP_C_GetAbilityAndIsActivated) == 0x000030, "Wrong size on Ability_105341_BP_C_GetAbilityAndIsActivated");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, AbilityID) == 0x000000, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::AbilityID' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, AbilityRef) == 0x000008, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::AbilityRef' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, IsActivated_0) == 0x000010, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::IsActivated_0' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, CallFunc_GetAbilityOwnerCharacter_ReturnValue) == 0x000018, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::CallFunc_GetAbilityOwnerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, CallFunc_GetGameplayAbility_ReturnValue) == 0x000020, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::CallFunc_GetGameplayAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_GetAbilityAndIsActivated, CallFunc_IsActivated_ReturnValue) == 0x000028, "Member 'Ability_105341_BP_C_GetAbilityAndIsActivated::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105341_BP_C_GetAbilityAndIsActivated;
 
 // Function Ability_105341_BP.Ability_105341_BP_C.IsAbilityNeedWait
 // 0x0020 (0x0020 - 0x0000)
@@ -63,16 +54,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_105341_BP_C_IsAbilityNeedWait) == 0x000008, "Wrong alignment on Ability_105341_BP_C_IsAbilityNeedWait");
-static_assert(sizeof(Ability_105341_BP_C_IsAbilityNeedWait) == 0x000020, "Wrong size on Ability_105341_BP_C_IsAbilityNeedWait");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, AbilityID) == 0x000000, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::AbilityID' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, ReturnValue) == 0x000004, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_GetAbilityOwnerCharacter_ReturnValue) == 0x000008, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_GetAbilityOwnerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_GetGameplayAbility_ReturnValue) == 0x000010, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_GetGameplayAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_HasExecuteBreak_ReturnValue) == 0x000018, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_HasExecuteBreak_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_IsActivated_ReturnValue) == 0x000019, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_Not_PreBool_ReturnValue) == 0x00001A, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_105341_BP_C_IsAbilityNeedWait, CallFunc_BooleanAND_ReturnValue) == 0x00001B, "Member 'Ability_105341_BP_C_IsAbilityNeedWait::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_105341_BP_C_IsAbilityNeedWait;
 
 }
 

@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryViewDistanceQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryViewDistanceQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryViewDistanceQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryViewDistanceQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryViewDistanceQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryViewDistanceQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryViewDistanceQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryViewDistanceQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryViewDistanceQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryViewDistanceQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryViewDistanceQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -44,13 +38,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryViewDistanceQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryViewDistanceQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryViewDistanceQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryViewDistanceQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryViewDistanceQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryViewDistanceQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryViewDistanceQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryViewDistanceQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryViewDistanceQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -66,15 +54,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryViewDistanceQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryViewDistanceQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryViewDistanceQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryViewDistanceQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryViewDistanceQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryViewDistanceQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryViewDistanceQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryScalabilityGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -86,12 +66,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryScalabilityGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryScalabilityGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryScalabilityGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryScalabilityGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryScalabilityGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryScalabilityGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryScalabilityGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryScalabilityGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryScalabilityGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryScalabilityGenerator_BP_Gen;
 
 // PythonFunction Scalability.UISettingEntryScalabilityHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -104,13 +79,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryScalabilityHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryScalabilityHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryScalabilityHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryScalabilityHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryScalabilityHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryScalabilityHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryScalabilityHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryScalabilityHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryScalabilityHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryScalabilityHandler_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryScalabilityHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -123,13 +92,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryScalabilityHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryScalabilityHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryScalabilityHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryScalabilityHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryScalabilityHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryScalabilityHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryScalabilityHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryScalabilityHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryScalabilityHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryScalabilityHandler_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryScalabilityHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -145,15 +108,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryScalabilityHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryScalabilityHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryScalabilityHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryScalabilityHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryScalabilityHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryScalabilityHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryScalabilityHandler_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryShadowQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -166,13 +121,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryShadowQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryShadowQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryShadowQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryShadowQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryShadowQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryShadowQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryShadowQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryShadowQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryShadowQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadowQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryShadowQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -185,13 +134,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryShadowQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryShadowQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryShadowQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryShadowQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryShadowQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryShadowQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryShadowQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryShadowQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryShadowQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadowQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryShadowQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -207,15 +150,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryShadowQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryShadowQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryShadowQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryShadowQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryShadowQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryShadowQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryShadowQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryShadowQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryShadowQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryShadowQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadowQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryShadowQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadowQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryGlobalIlluminationQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -228,13 +163,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryGlobalIlluminationQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryGlobalIlluminationQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryGlobalIlluminationQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryGlobalIlluminationQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryGlobalIlluminationQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryGlobalIlluminationQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -247,13 +176,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryGlobalIlluminationQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryGlobalIlluminationQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -269,15 +192,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryGlobalIlluminationQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryGlobalIlluminationQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryGlobalIlluminationQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryGlobalIlluminationQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryGlobalIlluminationQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryReflectionQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -290,13 +205,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryReflectionQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryReflectionQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryReflectionQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryReflectionQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryReflectionQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryReflectionQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryReflectionQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryReflectionQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryReflectionQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReflectionQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryReflectionQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -309,13 +218,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryReflectionQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryReflectionQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryReflectionQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryReflectionQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryReflectionQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryReflectionQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryReflectionQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryReflectionQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryReflectionQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReflectionQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryReflectionQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -331,15 +234,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryReflectionQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryReflectionQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryReflectionQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryReflectionQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryReflectionQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryReflectionQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryReflectionQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryTextureQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -352,13 +247,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryTextureQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryTextureQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryTextureQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryTextureQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryTextureQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryTextureQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryTextureQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryTextureQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryTextureQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryTextureQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryTextureQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -371,13 +260,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryTextureQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryTextureQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryTextureQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryTextureQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryTextureQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryTextureQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryTextureQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryTextureQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryTextureQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryTextureQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryTextureQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -393,15 +276,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryTextureQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryTextureQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryTextureQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryTextureQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryTextureQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryTextureQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryTextureQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryTextureQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryTextureQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryTextureQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryTextureQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryTextureQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryTextureQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryVisualEffectQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -414,13 +289,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVisualEffectQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryVisualEffectQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryVisualEffectQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryVisualEffectQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryVisualEffectQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryVisualEffectQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryVisualEffectQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryVisualEffectQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryVisualEffectQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVisualEffectQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryVisualEffectQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -433,13 +302,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVisualEffectQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVisualEffectQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVisualEffectQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVisualEffectQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryVisualEffectQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVisualEffectQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVisualEffectQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVisualEffectQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryVisualEffectQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -455,15 +318,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVisualEffectQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVisualEffectQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVisualEffectQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVisualEffectQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVisualEffectQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVisualEffectQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVisualEffectQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryPostProcessingQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -476,13 +331,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryPostProcessingQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryPostProcessingQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryPostProcessingQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryPostProcessingQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryPostProcessingQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryPostProcessingQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryPostProcessingQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryPostProcessingQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryPostProcessingQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryPostProcessingQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryPostProcessingQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -495,13 +344,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryPostProcessingQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryPostProcessingQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryPostProcessingQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryPostProcessingQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryPostProcessingQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryPostProcessingQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryPostProcessingQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryPostProcessingQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryPostProcessingQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -517,15 +360,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryPostProcessingQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryPostProcessingQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryPostProcessingQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryPostProcessingQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryPostProcessingQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryPostProcessingQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryPostProcessingQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryFoliageQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -538,13 +373,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryFoliageQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryFoliageQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryFoliageQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryFoliageQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryFoliageQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryFoliageQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryFoliageQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryFoliageQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryFoliageQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFoliageQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryFoliageQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -557,13 +386,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryFoliageQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryFoliageQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryFoliageQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryFoliageQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryFoliageQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryFoliageQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryFoliageQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryFoliageQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryFoliageQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFoliageQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryFoliageQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -579,15 +402,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryFoliageQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryFoliageQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryFoliageQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryFoliageQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryFoliageQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryFoliageQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryFoliageQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryShadingQuality.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -600,13 +415,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryShadingQuality_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryShadingQuality_BP_OnApply");
-static_assert(sizeof(UISettingEntryShadingQuality_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryShadingQuality_BP_OnApply");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryShadingQuality_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryShadingQuality_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryShadingQuality_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryShadingQuality_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryShadingQuality_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadingQuality_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryShadingQuality.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -619,13 +428,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryShadingQuality_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryShadingQuality_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryShadingQuality_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryShadingQuality_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryShadingQuality_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryShadingQuality_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryShadingQuality_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryShadingQuality_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryShadingQuality_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadingQuality_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryShadingQuality.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -641,15 +444,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryShadingQuality_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryShadingQuality_BP_OnChanged");
-static_assert(sizeof(UISettingEntryShadingQuality_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryShadingQuality_BP_OnChanged");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryShadingQuality_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryShadingQuality_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryShadingQuality_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryShadingQuality_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryShadingQuality_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryShadingQuality_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryShadingQuality_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryShadingQuality_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryShadingQuality_BP_OnChanged;
 
 // PythonFunction Scalability.UISettingEntryAntiAliasingQualityHandler.BP_OnApply
 // 0x00C0 (0x00C0 - 0x0000)
@@ -662,13 +457,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         value;                                             // 0x00B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply) == 0x000008, "Wrong alignment on UISettingEntryAntiAliasingQualityHandler_BP_OnApply");
-static_assert(sizeof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply) == 0x0000C0, "Wrong size on UISettingEntryAntiAliasingQualityHandler_BP_OnApply");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply, obj) == 0x000000, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnApply::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply, setting_key) == 0x000008, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnApply::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply, p) == 0x000018, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnApply::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply, options) == 0x000068, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnApply::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnApply, value) == 0x0000B8, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnApply::value' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryAntiAliasingQualityHandler_BP_OnApply;
 
 // PythonFunction Scalability.UISettingEntryAntiAliasingQualityHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -681,13 +470,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryAntiAliasingQualityHandler_BP_GetCurrentValue;
 
 // PythonFunction Scalability.UISettingEntryAntiAliasingQualityHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -703,15 +486,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryAntiAliasingQualityHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryAntiAliasingQualityHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryAntiAliasingQualityHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryAntiAliasingQualityHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryAntiAliasingQualityHandler_BP_OnChanged;
 
 }
 

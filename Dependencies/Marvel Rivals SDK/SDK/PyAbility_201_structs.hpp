@@ -16,23 +16,13 @@ namespace SDK
 
 // PythonEnum PyAbility_201.ESignalInputState
 // NumValues: 0x0005
-enum class ESignalInputState : uint8
+enum class PyAbility_201::ESignalInputState : uint8
 {
 	ENone                                    = 0,
 	Press                                    = 1,
 	Release                                  = 2,
 	Cancel                                   = 3,
 	ESignalInputState_MAX                    = 4,
-};
-
-// PythonEnum PyAbility_201.ESignalClickType
-// NumValues: 0x0004
-enum class ESignalClickType : uint8
-{
-	Click                                    = 0,
-	DoubleClick                              = 1,
-	Hold                                     = 2,
-	ESignalClickType_MAX                     = 3,
 };
 
 }

@@ -23,15 +23,18 @@ class UBTD_IsSelfWoodenWall_BP_C final : public UBTD_IsSelfWoodenWall
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTD_IsSelfWoodenWall_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTD_IsSelfWoodenWall_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_IsSelfWoodenWall_BP_C")
 	}
 	static class UBTD_IsSelfWoodenWall_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_IsSelfWoodenWall_BP_C>();
 	}
 };
-static_assert(alignof(UBTD_IsSelfWoodenWall_BP_C) == 0x000008, "Wrong alignment on UBTD_IsSelfWoodenWall_BP_C");
-static_assert(sizeof(UBTD_IsSelfWoodenWall_BP_C) == 0x0000A0, "Wrong size on UBTD_IsSelfWoodenWall_BP_C");
+DUMPER7_ASSERTS_UBTD_IsSelfWoodenWall_BP_C;
 
 }
 

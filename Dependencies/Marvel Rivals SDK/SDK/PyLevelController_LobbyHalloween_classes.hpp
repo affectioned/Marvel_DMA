@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_LobbyHalloween">();
+		STATIC_CLASS_IMPL("PyLevelController_LobbyHalloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_LobbyHalloween")
 	}
 	static class APyLevelController_LobbyHalloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_LobbyHalloween>();
 	}
 };
-static_assert(alignof(APyLevelController_LobbyHalloween) == 0x000010, "Wrong alignment on APyLevelController_LobbyHalloween");
-static_assert(sizeof(APyLevelController_LobbyHalloween) == 0x000760, "Wrong size on APyLevelController_LobbyHalloween");
-static_assert(offsetof(APyLevelController_LobbyHalloween, LS_FadeIn) == 0x0006E0, "Member 'APyLevelController_LobbyHalloween::LS_FadeIn' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_LobbyHalloween;
 
 }
 

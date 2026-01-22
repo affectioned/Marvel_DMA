@@ -16,32 +16,6 @@
 namespace SDK
 {
 
-// PythonClass PyAbility_105453.PyCue_Ability_Loop_10545301
-// 0x0010 (0x11C0 - 0x11B0)
-class APyCue_Ability_Loop_10545301 final : public AMarvelCueNotify_Ability
-{
-public:
-	class UMaterialInterface*                     OverlayMaterial;                                   // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10545301">();
-	}
-	static class APyCue_Ability_Loop_10545301* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Ability_Loop_10545301>();
-	}
-};
-static_assert(alignof(APyCue_Ability_Loop_10545301) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10545301");
-static_assert(sizeof(APyCue_Ability_Loop_10545301) == 0x0011C0, "Wrong size on APyCue_Ability_Loop_10545301");
-static_assert(offsetof(APyCue_Ability_Loop_10545301, OverlayMaterial) == 0x0011B0, "Member 'APyCue_Ability_Loop_10545301::OverlayMaterial' has a wrong offset!");
-
 // PythonClass PyAbility_105453.PyConfig_105453
 // 0x0008 (0x0100 - 0x00F8)
 class UPyConfig_105453 final : public UConfig_AeroBase
@@ -52,19 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105453">();
+		STATIC_CLASS_IMPL("PyConfig_105453")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105453")
 	}
 	static class UPyConfig_105453* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105453>();
 	}
 };
-static_assert(alignof(UPyConfig_105453) == 0x000008, "Wrong alignment on UPyConfig_105453");
-static_assert(sizeof(UPyConfig_105453) == 0x000100, "Wrong size on UPyConfig_105453");
-static_assert(offsetof(UPyConfig_105453, CameraShakeClass) == 0x0000F8, "Member 'UPyConfig_105453::CameraShakeClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105453;
 
 // PythonClass PyAbility_105453.PyAbility_105453
-// 0x0000 (0x2B10 - 0x2B10)
+// 0x0000 (0x2B60 - 0x2B60)
 class UPyAbility_105453 : public UMarvelAeroBaseAbility
 {
 public:
@@ -76,15 +52,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105453">();
+		STATIC_CLASS_IMPL("PyAbility_105453")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105453")
 	}
 	static class UPyAbility_105453* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105453>();
 	}
 };
-static_assert(alignof(UPyAbility_105453) == 0x000008, "Wrong alignment on UPyAbility_105453");
-static_assert(sizeof(UPyAbility_105453) == 0x002B10, "Wrong size on UPyAbility_105453");
+DUMPER7_ASSERTS_UPyAbility_105453;
+
+// PythonClass PyAbility_105453.PyCue_Ability_Loop_10545301
+// 0x0010 (0x11D0 - 0x11C0)
+class APyCue_Ability_Loop_10545301 final : public AMarvelCueNotify_Ability
+{
+public:
+	class UMaterialInterface*                     OverlayMaterial;                                   // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10545301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10545301")
+	}
+	static class APyCue_Ability_Loop_10545301* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Ability_Loop_10545301>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10545301;
 
 }
 

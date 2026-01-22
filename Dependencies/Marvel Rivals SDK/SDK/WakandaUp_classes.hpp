@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryWakandaUpHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryWakandaUpHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryWakandaUpHandler")
 	}
 	static class UUISettingEntryWakandaUpHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryWakandaUpHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryWakandaUpHandler) == 0x000008, "Wrong alignment on UUISettingEntryWakandaUpHandler");
-static_assert(sizeof(UUISettingEntryWakandaUpHandler) == 0x000030, "Wrong size on UUISettingEntryWakandaUpHandler");
+DUMPER7_ASSERTS_UUISettingEntryWakandaUpHandler;
 
 // PythonClass WakandaUp.UISettingEntryWakandaUpConsoleHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -50,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryWakandaUpConsoleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryWakandaUpConsoleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryWakandaUpConsoleHandler")
 	}
 	static class UUISettingEntryWakandaUpConsoleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryWakandaUpConsoleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryWakandaUpConsoleHandler) == 0x000008, "Wrong alignment on UUISettingEntryWakandaUpConsoleHandler");
-static_assert(sizeof(UUISettingEntryWakandaUpConsoleHandler) == 0x000030, "Wrong size on UUISettingEntryWakandaUpConsoleHandler");
+DUMPER7_ASSERTS_UUISettingEntryWakandaUpConsoleHandler;
 
 }
 

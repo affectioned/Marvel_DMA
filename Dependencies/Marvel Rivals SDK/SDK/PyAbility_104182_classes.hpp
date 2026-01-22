@@ -18,28 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104182.PyConfig_104182
-// 0x1660 (0x5410 - 0x3DB0)
+// 0x19B0 (0x61D0 - 0x4820)
 class UPyConfig_104182 final : public UConfig_100021
 {
 public:
-	struct FMarvelAbilityTraceContext             SceneTraceContext;                                 // 0x3DB0(0x1660)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             SceneTraceContext;                                 // 0x4820(0x19B0)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104182">();
+		STATIC_CLASS_IMPL("PyConfig_104182")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104182")
 	}
 	static class UPyConfig_104182* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104182>();
 	}
 };
-static_assert(alignof(UPyConfig_104182) == 0x000010, "Wrong alignment on UPyConfig_104182");
-static_assert(sizeof(UPyConfig_104182) == 0x005410, "Wrong size on UPyConfig_104182");
-static_assert(offsetof(UPyConfig_104182, SceneTraceContext) == 0x003DB0, "Member 'UPyConfig_104182::SceneTraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104182;
 
 // PythonClass PyAbility_104182.PyAbility_104182
-// 0x0000 (0x3388 - 0x3388)
+// 0x0000 (0x3420 - 0x3420)
 class UPyAbility_104182 : public UAbility_100021
 {
 public:
@@ -50,15 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104182">();
+		STATIC_CLASS_IMPL("PyAbility_104182")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104182")
 	}
 	static class UPyAbility_104182* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104182>();
 	}
 };
-static_assert(alignof(UPyAbility_104182) == 0x000008, "Wrong alignment on UPyAbility_104182");
-static_assert(sizeof(UPyAbility_104182) == 0x003388, "Wrong size on UPyAbility_104182");
+DUMPER7_ASSERTS_UPyAbility_104182;
 
 }
 

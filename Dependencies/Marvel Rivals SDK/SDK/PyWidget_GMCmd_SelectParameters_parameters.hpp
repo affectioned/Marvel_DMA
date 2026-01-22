@@ -22,10 +22,7 @@ public:
 	class FString                                 ParametersName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ParametersValue;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_SelectParameters_OnClickedBtn) == 0x000008, "Wrong alignment on PyWidget_GMCmd_SelectParameters_OnClickedBtn");
-static_assert(sizeof(PyWidget_GMCmd_SelectParameters_OnClickedBtn) == 0x000020, "Wrong size on PyWidget_GMCmd_SelectParameters_OnClickedBtn");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_OnClickedBtn, ParametersName) == 0x000000, "Member 'PyWidget_GMCmd_SelectParameters_OnClickedBtn::ParametersName' has a wrong offset!");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_OnClickedBtn, ParametersValue) == 0x000010, "Member 'PyWidget_GMCmd_SelectParameters_OnClickedBtn::ParametersValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_SelectParameters_OnClickedBtn;
 
 // PythonFunction PyWidget_GMCmd_SelectParameters.PyWidget_GMCmd_SelectParameters.OnDoubleClickedBtn
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +32,7 @@ public:
 	class FString                                 ParametersName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ParametersValue;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn) == 0x000008, "Wrong alignment on PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn");
-static_assert(sizeof(PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn) == 0x000020, "Wrong size on PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn, ParametersName) == 0x000000, "Member 'PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn::ParametersName' has a wrong offset!");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn, ParametersValue) == 0x000010, "Member 'PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn::ParametersValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_SelectParameters_OnDoubleClickedBtn;
 
 // PythonFunction PyWidget_GMCmd_SelectParameters.PyWidget_GMCmd_SelectParameters.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +41,7 @@ struct PyWidget_GMCmd_SelectParameters_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_SelectParameters_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_GMCmd_SelectParameters_MarvelSetVisible");
-static_assert(sizeof(PyWidget_GMCmd_SelectParameters_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_GMCmd_SelectParameters_MarvelSetVisible");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_GMCmd_SelectParameters_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_SelectParameters_MarvelSetVisible;
 
 // PythonFunction PyWidget_GMCmd_SelectParameters.PyWidget_GMCmd_SelectParameters_Item.SetParametersData
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +50,7 @@ struct PyWidget_GMCmd_SelectParameters_Item_SetParametersData final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_SelectParameters_Item_SetParametersData) == 0x000008, "Wrong alignment on PyWidget_GMCmd_SelectParameters_Item_SetParametersData");
-static_assert(sizeof(PyWidget_GMCmd_SelectParameters_Item_SetParametersData) == 0x000008, "Wrong size on PyWidget_GMCmd_SelectParameters_Item_SetParametersData");
-static_assert(offsetof(PyWidget_GMCmd_SelectParameters_Item_SetParametersData, ItemObject_0) == 0x000000, "Member 'PyWidget_GMCmd_SelectParameters_Item_SetParametersData::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_SelectParameters_Item_SetParametersData;
 
 }
 

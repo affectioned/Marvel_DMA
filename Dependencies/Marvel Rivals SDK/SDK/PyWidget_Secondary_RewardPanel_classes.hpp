@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_RewardPanel.PyWidget_Secondary_RewardPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Secondary_RewardPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnShowReward;                              // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnShowReward;                              // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_RewardPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_RewardPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_RewardPanel")
 	}
 	static class UPyWidget_Secondary_RewardPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_RewardPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_RewardPanel) == 0x000008, "Wrong alignment on UPyWidget_Secondary_RewardPanel");
-static_assert(sizeof(UPyWidget_Secondary_RewardPanel) == 0x000600, "Wrong size on UPyWidget_Secondary_RewardPanel");
-static_assert(offsetof(UPyWidget_Secondary_RewardPanel, AkEvent_OnShowReward) == 0x0005F8, "Member 'UPyWidget_Secondary_RewardPanel::AkEvent_OnShowReward' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_RewardPanel;
 
 }
 

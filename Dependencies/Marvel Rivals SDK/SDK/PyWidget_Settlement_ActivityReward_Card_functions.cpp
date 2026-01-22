@@ -17,6 +17,69 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_RollNumTopUnitBase::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Settlement_RollNumTopUnitBase::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnAnimationFinished
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Settlement_RollNumTopUnitBase::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "OnAnimationFinished");
+
+	Params::PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityRewardTips.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -120,113 +183,6 @@ void UPyWidget_Settlement_ActivityRewardTips::OnBtnPressedImageSoftTextureLoad(c
 	Params::PyWidget_Settlement_ActivityRewardTips_OnBtnPressedImageSoftTextureLoad Parms{};
 
 	Parms.Texture = Texture;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityTopUnit.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Settlement_ActivityTopUnit::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_ActivityTopUnit", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_ActivityTopUnit.OnTitleMaterialLoad
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          TitleMaterial                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Settlement_ActivityTopUnit::OnTitleMaterialLoad(class UObject* TitleMaterial)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_ActivityTopUnit", "OnTitleMaterialLoad");
-
-	Params::PyWidget_Settlement_ActivityTopUnit_OnTitleMaterialLoad Parms{};
-
-	Parms.TitleMaterial = TitleMaterial;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Settlement_RollNumTopUnitBase::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Settlement_RollNumTopUnitBase::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Settlement_ActivityReward_Card.PyWidget_Settlement_RollNumTopUnitBase.OnAnimationFinished
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Settlement_RollNumTopUnitBase::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Settlement_RollNumTopUnitBase", "OnAnimationFinished");
-
-	Params::PyWidget_Settlement_RollNumTopUnitBase_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

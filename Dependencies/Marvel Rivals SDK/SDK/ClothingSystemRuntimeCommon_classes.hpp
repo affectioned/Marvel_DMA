@@ -26,15 +26,18 @@ class UClothConfigCommon : public UClothConfigBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothConfigCommon">();
+		STATIC_CLASS_IMPL("ClothConfigCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothConfigCommon")
 	}
 	static class UClothConfigCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothConfigCommon>();
 	}
 };
-static_assert(alignof(UClothConfigCommon) == 0x000008, "Wrong alignment on UClothConfigCommon");
-static_assert(sizeof(UClothConfigCommon) == 0x000030, "Wrong size on UClothConfigCommon");
+DUMPER7_ASSERTS_UClothConfigCommon;
 
 // Class ClothingSystemRuntimeCommon.ClothSharedConfigCommon
 // 0x0000 (0x0030 - 0x0030)
@@ -43,15 +46,18 @@ class UClothSharedConfigCommon : public UClothConfigCommon
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothSharedConfigCommon">();
+		STATIC_CLASS_IMPL("ClothSharedConfigCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothSharedConfigCommon")
 	}
 	static class UClothSharedConfigCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothSharedConfigCommon>();
 	}
 };
-static_assert(alignof(UClothSharedConfigCommon) == 0x000008, "Wrong alignment on UClothSharedConfigCommon");
-static_assert(sizeof(UClothSharedConfigCommon) == 0x000030, "Wrong size on UClothSharedConfigCommon");
+DUMPER7_ASSERTS_UClothSharedConfigCommon;
 
 // Class ClothingSystemRuntimeCommon.ClothingAssetCustomData
 // 0x0000 (0x0030 - 0x0030)
@@ -60,15 +66,18 @@ class UClothingAssetCustomData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothingAssetCustomData">();
+		STATIC_CLASS_IMPL("ClothingAssetCustomData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingAssetCustomData")
 	}
 	static class UClothingAssetCustomData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothingAssetCustomData>();
 	}
 };
-static_assert(alignof(UClothingAssetCustomData) == 0x000008, "Wrong alignment on UClothingAssetCustomData");
-static_assert(sizeof(UClothingAssetCustomData) == 0x000030, "Wrong size on UClothingAssetCustomData");
+DUMPER7_ASSERTS_UClothingAssetCustomData;
 
 // Class ClothingSystemRuntimeCommon.ClothingAssetCommon
 // 0x00A8 (0x00F8 - 0x0050)
@@ -88,23 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothingAssetCommon">();
+		STATIC_CLASS_IMPL("ClothingAssetCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingAssetCommon")
 	}
 	static class UClothingAssetCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothingAssetCommon>();
 	}
 };
-static_assert(alignof(UClothingAssetCommon) == 0x000008, "Wrong alignment on UClothingAssetCommon");
-static_assert(sizeof(UClothingAssetCommon) == 0x0000F8, "Wrong size on UClothingAssetCommon");
-static_assert(offsetof(UClothingAssetCommon, PhysicsAsset) == 0x000050, "Member 'UClothingAssetCommon::PhysicsAsset' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, ClothConfigs) == 0x000058, "Member 'UClothingAssetCommon::ClothConfigs' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, LodData) == 0x0000A8, "Member 'UClothingAssetCommon::LodData' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, LodMap) == 0x0000B8, "Member 'UClothingAssetCommon::LodMap' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, UsedBoneNames) == 0x0000C8, "Member 'UClothingAssetCommon::UsedBoneNames' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, UsedBoneIndices) == 0x0000D8, "Member 'UClothingAssetCommon::UsedBoneIndices' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, ReferenceBoneIndex) == 0x0000E8, "Member 'UClothingAssetCommon::ReferenceBoneIndex' has a wrong offset!");
-static_assert(offsetof(UClothingAssetCommon, CustomData) == 0x0000F0, "Member 'UClothingAssetCommon::CustomData' has a wrong offset!");
+DUMPER7_ASSERTS_UClothingAssetCommon;
 
 // Class ClothingSystemRuntimeCommon.ClothLODDataCommon_Legacy
 // 0x01D8 (0x0208 - 0x0030)
@@ -119,18 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothLODDataCommon_Legacy">();
+		STATIC_CLASS_IMPL("ClothLODDataCommon_Legacy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothLODDataCommon_Legacy")
 	}
 	static class UClothLODDataCommon_Legacy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothLODDataCommon_Legacy>();
 	}
 };
-static_assert(alignof(UClothLODDataCommon_Legacy) == 0x000008, "Wrong alignment on UClothLODDataCommon_Legacy");
-static_assert(sizeof(UClothLODDataCommon_Legacy) == 0x000208, "Wrong size on UClothLODDataCommon_Legacy");
-static_assert(offsetof(UClothLODDataCommon_Legacy, PhysicalMeshData) == 0x000030, "Member 'UClothLODDataCommon_Legacy::PhysicalMeshData' has a wrong offset!");
-static_assert(offsetof(UClothLODDataCommon_Legacy, ClothPhysicalMeshData) == 0x000038, "Member 'UClothLODDataCommon_Legacy::ClothPhysicalMeshData' has a wrong offset!");
-static_assert(offsetof(UClothLODDataCommon_Legacy, CollisionData) == 0x0001A8, "Member 'UClothLODDataCommon_Legacy::CollisionData' has a wrong offset!");
+DUMPER7_ASSERTS_UClothLODDataCommon_Legacy;
 
 }
 

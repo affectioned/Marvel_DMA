@@ -36,22 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatFilter">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatFilter")
 	}
 	static class UPyWidget_LeagueChatFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatFilter>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatFilter) == 0x000008, "Wrong alignment on UPyWidget_LeagueChatFilter");
-static_assert(sizeof(UPyWidget_LeagueChatFilter) == 0x000410, "Wrong size on UPyWidget_LeagueChatFilter");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, FilteredIcon) == 0x0003B8, "Member 'UPyWidget_LeagueChatFilter::FilteredIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, NormalIcon) == 0x0003C0, "Member 'UPyWidget_LeagueChatFilter::NormalIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, MRCIconBg) == 0x0003C8, "Member 'UPyWidget_LeagueChatFilter::MRCIconBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, ClashIconBg) == 0x0003D0, "Member 'UPyWidget_LeagueChatFilter::ClashIconBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, MRCIconColor) == 0x0003D8, "Member 'UPyWidget_LeagueChatFilter::MRCIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, ClashIconColor) == 0x0003EC, "Member 'UPyWidget_LeagueChatFilter::ClashIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueChatFilter, OnFilterClicked) == 0x000400, "Member 'UPyWidget_LeagueChatFilter::OnFilterClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatFilter;
 
 }
 

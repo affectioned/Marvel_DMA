@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyOnlineUpdateRuleComponent">();
+		STATIC_CLASS_IMPL("PyOnlineUpdateRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyOnlineUpdateRuleComponent")
 	}
 	static class UPyOnlineUpdateRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyOnlineUpdateRuleComponent>();
 	}
 };
-static_assert(alignof(UPyOnlineUpdateRuleComponent) == 0x000008, "Wrong alignment on UPyOnlineUpdateRuleComponent");
-static_assert(sizeof(UPyOnlineUpdateRuleComponent) == 0x000128, "Wrong size on UPyOnlineUpdateRuleComponent");
-static_assert(offsetof(UPyOnlineUpdateRuleComponent, DsArgsMapKeyList) == 0x000108, "Member 'UPyOnlineUpdateRuleComponent::DsArgsMapKeyList' has a wrong offset!");
-static_assert(offsetof(UPyOnlineUpdateRuleComponent, DsArgsMapValueList) == 0x000118, "Member 'UPyOnlineUpdateRuleComponent::DsArgsMapValueList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyOnlineUpdateRuleComponent;
 
 }
 

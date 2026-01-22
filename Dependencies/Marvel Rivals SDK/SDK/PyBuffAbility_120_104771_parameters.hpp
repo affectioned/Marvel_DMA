@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Instant_10477130_OnExecute) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10477130_OnExecute");
-static_assert(sizeof(PyCue_Ability_Instant_10477130_OnExecute) == 0x0001E0, "Wrong size on PyCue_Ability_Instant_10477130_OnExecute");
-static_assert(offsetof(PyCue_Ability_Instant_10477130_OnExecute, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10477130_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10477130_OnExecute, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10477130_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10477130_OnExecute, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Instant_10477130_OnExecute::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10477130_OnExecute;
 
 // PythonFunction PyBuffAbility_120_104771.PyBuffAbility_120_104771.OnDevourEnemy
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +34,7 @@ struct PyBuffAbility_120_104771_OnDevourEnemy final
 public:
 	int32                                         EnemyNum;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_104771_OnDevourEnemy) == 0x000004, "Wrong alignment on PyBuffAbility_120_104771_OnDevourEnemy");
-static_assert(sizeof(PyBuffAbility_120_104771_OnDevourEnemy) == 0x000004, "Wrong size on PyBuffAbility_120_104771_OnDevourEnemy");
-static_assert(offsetof(PyBuffAbility_120_104771_OnDevourEnemy, EnemyNum) == 0x000000, "Member 'PyBuffAbility_120_104771_OnDevourEnemy::EnemyNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_104771_OnDevourEnemy;
 
 // PythonFunction PyBuffAbility_120_104771.PyBuffAbility_120_104771.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +43,7 @@ struct PyBuffAbility_120_104771_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_104771_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_104771_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_104771_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_104771_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_104771_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_104771_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_104771_K2_OnEndAbility;
 
 }
 

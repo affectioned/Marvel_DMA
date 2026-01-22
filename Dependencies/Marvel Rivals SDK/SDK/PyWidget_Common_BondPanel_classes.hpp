@@ -10,43 +10,45 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Common_Button_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "python_enums_structs.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Common_BondPanel.PyWidget_BondPanel_FilterButton
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_BondPanel_FilterButton : public UPyWidget_BaseCommonButton
 {
 public:
-	class UTexture2D*                             All_Icon;                                          // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             All_Icon;                                          // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BondPanel_FilterButton">();
+		STATIC_CLASS_IMPL("PyWidget_BondPanel_FilterButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BondPanel_FilterButton")
 	}
 	static class UPyWidget_BondPanel_FilterButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BondPanel_FilterButton>();
 	}
 };
-static_assert(alignof(UPyWidget_BondPanel_FilterButton) == 0x000010, "Wrong alignment on UPyWidget_BondPanel_FilterButton");
-static_assert(sizeof(UPyWidget_BondPanel_FilterButton) == 0x0008C0, "Wrong size on UPyWidget_BondPanel_FilterButton");
-static_assert(offsetof(UPyWidget_BondPanel_FilterButton, All_Icon) == 0x0008B8, "Member 'UPyWidget_BondPanel_FilterButton::All_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BondPanel_FilterButton;
 
 // PythonClass PyWidget_Common_BondPanel.PyWidget_Common_BondPanel
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_Common_BondPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                BondUnitClass;                                     // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Txt_HeroNoOpen;                                    // 0x0600(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           EscAction;                                         // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BondUnitClass;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Txt_HeroNoOpen;                                    // 0x0608(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           EscAction;                                         // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -59,18 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_BondPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Common_BondPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_BondPanel")
 	}
 	static class UPyWidget_Common_BondPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_BondPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_BondPanel) == 0x000008, "Wrong alignment on UPyWidget_Common_BondPanel");
-static_assert(sizeof(UPyWidget_Common_BondPanel) == 0x000620, "Wrong size on UPyWidget_Common_BondPanel");
-static_assert(offsetof(UPyWidget_Common_BondPanel, BondUnitClass) == 0x0005F8, "Member 'UPyWidget_Common_BondPanel::BondUnitClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondPanel, Txt_HeroNoOpen) == 0x000600, "Member 'UPyWidget_Common_BondPanel::Txt_HeroNoOpen' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_BondPanel, EscAction) == 0x000618, "Member 'UPyWidget_Common_BondPanel::EscAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_BondPanel;
 
 }
 

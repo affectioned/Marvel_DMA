@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_NoBattlePass">();
+		STATIC_CLASS_IMPL("PopupCondition_NoBattlePass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_NoBattlePass")
 	}
 	static class UPopupCondition_NoBattlePass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_NoBattlePass>();
 	}
 };
-static_assert(alignof(UPopupCondition_NoBattlePass) == 0x000008, "Wrong alignment on UPopupCondition_NoBattlePass");
-static_assert(sizeof(UPopupCondition_NoBattlePass) == 0x000040, "Wrong size on UPopupCondition_NoBattlePass");
-static_assert(offsetof(UPopupCondition_NoBattlePass, BpType) == 0x000030, "Member 'UPopupCondition_NoBattlePass::BpType' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_NoBattlePass;
 
 // PythonClass popup_conditions.PopupCondition_Server
 // 0x0008 (0x0038 - 0x0030)
@@ -48,16 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_Server">();
+		STATIC_CLASS_IMPL("PopupCondition_Server")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_Server")
 	}
 	static class UPopupCondition_Server* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_Server>();
 	}
 };
-static_assert(alignof(UPopupCondition_Server) == 0x000008, "Wrong alignment on UPopupCondition_Server");
-static_assert(sizeof(UPopupCondition_Server) == 0x000038, "Wrong size on UPopupCondition_Server");
-static_assert(offsetof(UPopupCondition_Server, GameID) == 0x000030, "Member 'UPopupCondition_Server::GameID' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_Server;
 
 // PythonClass popup_conditions.PopupCondition_NoClickUI
 // 0x0008 (0x0038 - 0x0030)
@@ -69,16 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_NoClickUI">();
+		STATIC_CLASS_IMPL("PopupCondition_NoClickUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_NoClickUI")
 	}
 	static class UPopupCondition_NoClickUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_NoClickUI>();
 	}
 };
-static_assert(alignof(UPopupCondition_NoClickUI) == 0x000008, "Wrong alignment on UPopupCondition_NoClickUI");
-static_assert(sizeof(UPopupCondition_NoClickUI) == 0x000038, "Wrong size on UPopupCondition_NoClickUI");
-static_assert(offsetof(UPopupCondition_NoClickUI, UI) == 0x000030, "Member 'UPopupCondition_NoClickUI::UI' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_NoClickUI;
 
 // PythonClass popup_conditions.PopupCondition_LoginOS
 // 0x0008 (0x0038 - 0x0030)
@@ -94,20 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_LoginOS">();
+		STATIC_CLASS_IMPL("PopupCondition_LoginOS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_LoginOS")
 	}
 	static class UPopupCondition_LoginOS* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_LoginOS>();
 	}
 };
-static_assert(alignof(UPopupCondition_LoginOS) == 0x000008, "Wrong alignment on UPopupCondition_LoginOS");
-static_assert(sizeof(UPopupCondition_LoginOS) == 0x000038, "Wrong size on UPopupCondition_LoginOS");
-static_assert(offsetof(UPopupCondition_LoginOS, All) == 0x000030, "Member 'UPopupCondition_LoginOS::All' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_LoginOS, PC) == 0x000031, "Member 'UPopupCondition_LoginOS::PC' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_LoginOS, PS5) == 0x000032, "Member 'UPopupCondition_LoginOS::PS5' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_LoginOS, PS4) == 0x000033, "Member 'UPopupCondition_LoginOS::PS4' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_LoginOS, XBOX) == 0x000034, "Member 'UPopupCondition_LoginOS::XBOX' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_LoginOS;
 
 // PythonClass popup_conditions.PopupCondition_ClickUICD
 // 0x0008 (0x0038 - 0x0030)
@@ -121,17 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_ClickUICD">();
+		STATIC_CLASS_IMPL("PopupCondition_ClickUICD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_ClickUICD")
 	}
 	static class UPopupCondition_ClickUICD* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_ClickUICD>();
 	}
 };
-static_assert(alignof(UPopupCondition_ClickUICD) == 0x000008, "Wrong alignment on UPopupCondition_ClickUICD");
-static_assert(sizeof(UPopupCondition_ClickUICD) == 0x000038, "Wrong size on UPopupCondition_ClickUICD");
-static_assert(offsetof(UPopupCondition_ClickUICD, UI) == 0x000030, "Member 'UPopupCondition_ClickUICD::UI' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_ClickUICD, CD) == 0x000034, "Member 'UPopupCondition_ClickUICD::CD' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_ClickUICD;
 
 // PythonClass popup_conditions.PopupCondition_NoItems
 // 0x0050 (0x0080 - 0x0030)
@@ -143,33 +148,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_NoItems">();
+		STATIC_CLASS_IMPL("PopupCondition_NoItems")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_NoItems")
 	}
 	static class UPopupCondition_NoItems* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_NoItems>();
 	}
 };
-static_assert(alignof(UPopupCondition_NoItems) == 0x000008, "Wrong alignment on UPopupCondition_NoItems");
-static_assert(sizeof(UPopupCondition_NoItems) == 0x000080, "Wrong size on UPopupCondition_NoItems");
-static_assert(offsetof(UPopupCondition_NoItems, ItemList) == 0x000030, "Member 'UPopupCondition_NoItems::ItemList' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_NoItems;
 
-// PythonClass popup_conditions.PopupCondition_ServerMaintainOld
-// 0x0000 (0x0030 - 0x0030)
-class UPopupCondition_ServerMaintainOld final : public UPopupConditionBase
+// PythonClass popup_conditions.PopupCondition_NoClickActivity
+// 0x0008 (0x0038 - 0x0030)
+class UPopupCondition_NoClickActivity final : public UPopupConditionBase
 {
+public:
+	int32                                         ActID;                                             // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CD;                                                // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_ServerMaintainOld">();
+		STATIC_CLASS_IMPL("PopupCondition_NoClickActivity")
 	}
-	static class UPopupCondition_ServerMaintainOld* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPopupCondition_ServerMaintainOld>();
+		STATIC_NAME_IMPL(L"PopupCondition_NoClickActivity")
+	}
+	static class UPopupCondition_NoClickActivity* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPopupCondition_NoClickActivity>();
 	}
 };
-static_assert(alignof(UPopupCondition_ServerMaintainOld) == 0x000008, "Wrong alignment on UPopupCondition_ServerMaintainOld");
-static_assert(sizeof(UPopupCondition_ServerMaintainOld) == 0x000030, "Wrong size on UPopupCondition_ServerMaintainOld");
+DUMPER7_ASSERTS_UPopupCondition_NoClickActivity;
 
 // PythonClass popup_conditions.PopupCondition_NoChargePB
 // 0x0000 (0x0030 - 0x0030)
@@ -178,15 +192,38 @@ class UPopupCondition_NoChargePB final : public UPopupConditionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_NoChargePB">();
+		STATIC_CLASS_IMPL("PopupCondition_NoChargePB")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_NoChargePB")
 	}
 	static class UPopupCondition_NoChargePB* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_NoChargePB>();
 	}
 };
-static_assert(alignof(UPopupCondition_NoChargePB) == 0x000008, "Wrong alignment on UPopupCondition_NoChargePB");
-static_assert(sizeof(UPopupCondition_NoChargePB) == 0x000030, "Wrong size on UPopupCondition_NoChargePB");
+DUMPER7_ASSERTS_UPopupCondition_NoChargePB;
+
+// PythonClass popup_conditions.PopupCondition_ServerMaintainOld
+// 0x0000 (0x0030 - 0x0030)
+class UPopupCondition_ServerMaintainOld final : public UPopupConditionBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PopupCondition_ServerMaintainOld")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_ServerMaintainOld")
+	}
+	static class UPopupCondition_ServerMaintainOld* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPopupCondition_ServerMaintainOld>();
+	}
+};
+DUMPER7_ASSERTS_UPopupCondition_ServerMaintainOld;
 
 // PythonClass popup_conditions.PopupCondition_ActivitySee
 // 0x0008 (0x0038 - 0x0030)
@@ -199,17 +236,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PopupCondition_ActivitySee">();
+		STATIC_CLASS_IMPL("PopupCondition_ActivitySee")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCondition_ActivitySee")
 	}
 	static class UPopupCondition_ActivitySee* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCondition_ActivitySee>();
 	}
 };
-static_assert(alignof(UPopupCondition_ActivitySee) == 0x000008, "Wrong alignment on UPopupCondition_ActivitySee");
-static_assert(sizeof(UPopupCondition_ActivitySee) == 0x000038, "Wrong size on UPopupCondition_ActivitySee");
-static_assert(offsetof(UPopupCondition_ActivitySee, ActID) == 0x000030, "Member 'UPopupCondition_ActivitySee::ActID' has a wrong offset!");
-static_assert(offsetof(UPopupCondition_ActivitySee, Status) == 0x000034, "Member 'UPopupCondition_ActivitySee::Status' has a wrong offset!");
+DUMPER7_ASSERTS_UPopupCondition_ActivitySee;
 
 }
 

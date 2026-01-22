@@ -24,10 +24,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10321102_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10321102_OnExecuteFX");
-static_assert(sizeof(PyCue_Scope_Start_10321102_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Scope_Start_10321102_OnExecuteFX");
-static_assert(offsetof(PyCue_Scope_Start_10321102_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Start_10321102_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10321102_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Start_10321102_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10321102_OnExecuteFX;
 
 // PythonFunction PyAbility_103211.PyCue_Projectile_Loop_10321101.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Projectile_Loop_10321101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Projectile_Loop_10321101_WhileActiveFX");
-static_assert(sizeof(PyCue_Projectile_Loop_10321101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Projectile_Loop_10321101_WhileActiveFX");
-static_assert(offsetof(PyCue_Projectile_Loop_10321101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Projectile_Loop_10321101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_10321101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Projectile_Loop_10321101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_Loop_10321101_WhileActiveFX;
 
 }
 

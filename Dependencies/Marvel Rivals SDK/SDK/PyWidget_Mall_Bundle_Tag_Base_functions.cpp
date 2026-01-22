@@ -55,15 +55,15 @@ void UPyWidget_Mall_Bundle_Tag_Base::Destruct()
 }
 
 
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.Construct
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Time_Roll_Text::Construct()
+void UPyWidget_Mall_Bundle_Time_Tag::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "Construct");
+		Func = Class->GetFunction("PyWidget_Mall_Bundle_Time_Tag", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -74,19 +74,19 @@ void UPyWidget_Time_Roll_Text::Construct()
 }
 
 
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.PreConstruct
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.PreConstruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_Time_Roll_Text::PreConstruct(bool IsDesignTime)
+void UPyWidget_Mall_Bundle_Time_Tag::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "PreConstruct");
+		Func = Class->GetFunction("PyWidget_Mall_Bundle_Time_Tag", "PreConstruct");
 
-	Params::PyWidget_Time_Roll_Text_PreConstruct Parms{};
+	Params::PyWidget_Mall_Bundle_Time_Tag_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -99,15 +99,15 @@ void UPyWidget_Time_Roll_Text::PreConstruct(bool IsDesignTime)
 }
 
 
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.Destruct
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Tag_V2.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_Time_Roll_Text::Destruct()
+void UPyWidget_Mall_Bundle_Tag_V2::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "Destruct");
+		Func = Class->GetFunction("PyWidget_Mall_Bundle_Tag_V2", "Destruct");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -181,69 +181,6 @@ void UPyWidget_Mall_Bundle_BG_Tag::PreConstruct(bool IsDesignTime)
 }
 
 
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Mall_Bundle_Time_Tag::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mall_Bundle_Time_Tag", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_Mall_Bundle_Time_Tag::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mall_Bundle_Time_Tag", "PreConstruct");
-
-	Params::PyWidget_Mall_Bundle_Time_Tag_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Tag_V2.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_Mall_Bundle_Tag_V2::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_Mall_Bundle_Tag_V2", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Normal_Tag.Destruct
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -283,6 +220,69 @@ void UPyWidget_Mall_Bundle_Normal_Tag::PreConstruct(bool IsDesignTime)
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Time_Roll_Text::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.PreConstruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Time_Roll_Text::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "PreConstruct");
+
+	Params::PyWidget_Time_Roll_Text_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_Time_Roll_Text::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Time_Roll_Text", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

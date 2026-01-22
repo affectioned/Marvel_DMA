@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "MovieRenderPipelineRenderPasses_structs.hpp"
 #include "MovieRenderPipelineCore_classes.hpp"
+#include "MovieRenderPipelineRenderPasses_structs.hpp"
 #include "ActorLayerUtilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImagePassBase">();
+		STATIC_CLASS_IMPL("MoviePipelineImagePassBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImagePassBase")
 	}
 	static class UMoviePipelineImagePassBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImagePassBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineImagePassBase) == 0x000008, "Wrong alignment on UMoviePipelineImagePassBase");
-static_assert(sizeof(UMoviePipelineImagePassBase) == 0x000180, "Wrong size on UMoviePipelineImagePassBase");
+DUMPER7_ASSERTS_UMoviePipelineImagePassBase;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPassBase
 // 0x00C0 (0x0240 - 0x0180)
@@ -62,25 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPassBase">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPassBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPassBase")
 	}
 	static class UMoviePipelineDeferredPassBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPassBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPassBase) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPassBase");
-static_assert(sizeof(UMoviePipelineDeferredPassBase) == 0x000240, "Wrong size on UMoviePipelineDeferredPassBase");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, bAccumulatorIncludesAlpha) == 0x000180, "Member 'UMoviePipelineDeferredPassBase::bAccumulatorIncludesAlpha' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, bDisableMultisampleEffects) == 0x000181, "Member 'UMoviePipelineDeferredPassBase::bDisableMultisampleEffects' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, bUse32BitPostProcessMaterials) == 0x000182, "Member 'UMoviePipelineDeferredPassBase::bUse32BitPostProcessMaterials' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, AdditionalPostProcessMaterials) == 0x000188, "Member 'UMoviePipelineDeferredPassBase::AdditionalPostProcessMaterials' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, bRenderMainPass) == 0x000198, "Member 'UMoviePipelineDeferredPassBase::bRenderMainPass' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, bAddDefaultLayer) == 0x000199, "Member 'UMoviePipelineDeferredPassBase::bAddDefaultLayer' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, ActorLayers) == 0x0001A0, "Member 'UMoviePipelineDeferredPassBase::ActorLayers' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, DataLayers) == 0x0001C0, "Member 'UMoviePipelineDeferredPassBase::DataLayers' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, ActivePostProcessMaterials) == 0x0001D0, "Member 'UMoviePipelineDeferredPassBase::ActivePostProcessMaterials' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineDeferredPassBase, StencilLayerMaterial) == 0x0001E0, "Member 'UMoviePipelineDeferredPassBase::StencilLayerMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPassBase;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPass_Unlit
 // 0x0000 (0x0240 - 0x0240)
@@ -89,15 +85,18 @@ class UMoviePipelineDeferredPass_Unlit final : public UMoviePipelineDeferredPass
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPass_Unlit">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPass_Unlit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPass_Unlit")
 	}
 	static class UMoviePipelineDeferredPass_Unlit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPass_Unlit>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPass_Unlit) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPass_Unlit");
-static_assert(sizeof(UMoviePipelineDeferredPass_Unlit) == 0x000240, "Wrong size on UMoviePipelineDeferredPass_Unlit");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPass_Unlit;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPass_DetailLighting
 // 0x0000 (0x0240 - 0x0240)
@@ -106,15 +105,18 @@ class UMoviePipelineDeferredPass_DetailLighting final : public UMoviePipelineDef
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPass_DetailLighting">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPass_DetailLighting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPass_DetailLighting")
 	}
 	static class UMoviePipelineDeferredPass_DetailLighting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPass_DetailLighting>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPass_DetailLighting) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPass_DetailLighting");
-static_assert(sizeof(UMoviePipelineDeferredPass_DetailLighting) == 0x000240, "Wrong size on UMoviePipelineDeferredPass_DetailLighting");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPass_DetailLighting;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPass_LightingOnly
 // 0x0000 (0x0240 - 0x0240)
@@ -123,15 +125,18 @@ class UMoviePipelineDeferredPass_LightingOnly final : public UMoviePipelineDefer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPass_LightingOnly">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPass_LightingOnly")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPass_LightingOnly")
 	}
 	static class UMoviePipelineDeferredPass_LightingOnly* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPass_LightingOnly>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPass_LightingOnly) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPass_LightingOnly");
-static_assert(sizeof(UMoviePipelineDeferredPass_LightingOnly) == 0x000240, "Wrong size on UMoviePipelineDeferredPass_LightingOnly");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPass_LightingOnly;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPass_ReflectionsOnly
 // 0x0000 (0x0240 - 0x0240)
@@ -140,15 +145,18 @@ class UMoviePipelineDeferredPass_ReflectionsOnly final : public UMoviePipelineDe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPass_ReflectionsOnly">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPass_ReflectionsOnly")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPass_ReflectionsOnly")
 	}
 	static class UMoviePipelineDeferredPass_ReflectionsOnly* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPass_ReflectionsOnly>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPass_ReflectionsOnly) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPass_ReflectionsOnly");
-static_assert(sizeof(UMoviePipelineDeferredPass_ReflectionsOnly) == 0x000240, "Wrong size on UMoviePipelineDeferredPass_ReflectionsOnly");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPass_ReflectionsOnly;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineDeferredPass_PathTracer
 // 0x0008 (0x0248 - 0x0240)
@@ -161,16 +169,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineDeferredPass_PathTracer">();
+		STATIC_CLASS_IMPL("MoviePipelineDeferredPass_PathTracer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineDeferredPass_PathTracer")
 	}
 	static class UMoviePipelineDeferredPass_PathTracer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineDeferredPass_PathTracer>();
 	}
 };
-static_assert(alignof(UMoviePipelineDeferredPass_PathTracer) == 0x000008, "Wrong alignment on UMoviePipelineDeferredPass_PathTracer");
-static_assert(sizeof(UMoviePipelineDeferredPass_PathTracer) == 0x000248, "Wrong size on UMoviePipelineDeferredPass_PathTracer");
-static_assert(offsetof(UMoviePipelineDeferredPass_PathTracer, bReferenceMotionBlur) == 0x000240, "Member 'UMoviePipelineDeferredPass_PathTracer::bReferenceMotionBlur' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineDeferredPass_PathTracer;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutputBase
 // 0x0020 (0x0070 - 0x0050)
@@ -182,15 +192,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImageSequenceOutputBase">();
+		STATIC_CLASS_IMPL("MoviePipelineImageSequenceOutputBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImageSequenceOutputBase")
 	}
 	static class UMoviePipelineImageSequenceOutputBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImageSequenceOutputBase>();
 	}
 };
-static_assert(alignof(UMoviePipelineImageSequenceOutputBase) == 0x000008, "Wrong alignment on UMoviePipelineImageSequenceOutputBase");
-static_assert(sizeof(UMoviePipelineImageSequenceOutputBase) == 0x000070, "Wrong size on UMoviePipelineImageSequenceOutputBase");
+DUMPER7_ASSERTS_UMoviePipelineImageSequenceOutputBase;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_EXR
 // 0x0008 (0x0078 - 0x0070)
@@ -204,17 +217,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImageSequenceOutput_EXR">();
+		STATIC_CLASS_IMPL("MoviePipelineImageSequenceOutput_EXR")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImageSequenceOutput_EXR")
 	}
 	static class UMoviePipelineImageSequenceOutput_EXR* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImageSequenceOutput_EXR>();
 	}
 };
-static_assert(alignof(UMoviePipelineImageSequenceOutput_EXR) == 0x000008, "Wrong alignment on UMoviePipelineImageSequenceOutput_EXR");
-static_assert(sizeof(UMoviePipelineImageSequenceOutput_EXR) == 0x000078, "Wrong size on UMoviePipelineImageSequenceOutput_EXR");
-static_assert(offsetof(UMoviePipelineImageSequenceOutput_EXR, Compression) == 0x000070, "Member 'UMoviePipelineImageSequenceOutput_EXR::Compression' has a wrong offset!");
-static_assert(offsetof(UMoviePipelineImageSequenceOutput_EXR, bMultilayer) == 0x000071, "Member 'UMoviePipelineImageSequenceOutput_EXR::bMultilayer' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineImageSequenceOutput_EXR;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_BMP
 // 0x0000 (0x0070 - 0x0070)
@@ -223,15 +237,18 @@ class UMoviePipelineImageSequenceOutput_BMP final : public UMoviePipelineImageSe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImageSequenceOutput_BMP">();
+		STATIC_CLASS_IMPL("MoviePipelineImageSequenceOutput_BMP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImageSequenceOutput_BMP")
 	}
 	static class UMoviePipelineImageSequenceOutput_BMP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImageSequenceOutput_BMP>();
 	}
 };
-static_assert(alignof(UMoviePipelineImageSequenceOutput_BMP) == 0x000008, "Wrong alignment on UMoviePipelineImageSequenceOutput_BMP");
-static_assert(sizeof(UMoviePipelineImageSequenceOutput_BMP) == 0x000070, "Wrong size on UMoviePipelineImageSequenceOutput_BMP");
+DUMPER7_ASSERTS_UMoviePipelineImageSequenceOutput_BMP;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_PNG
 // 0x0008 (0x0078 - 0x0070)
@@ -244,16 +261,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImageSequenceOutput_PNG">();
+		STATIC_CLASS_IMPL("MoviePipelineImageSequenceOutput_PNG")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImageSequenceOutput_PNG")
 	}
 	static class UMoviePipelineImageSequenceOutput_PNG* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImageSequenceOutput_PNG>();
 	}
 };
-static_assert(alignof(UMoviePipelineImageSequenceOutput_PNG) == 0x000008, "Wrong alignment on UMoviePipelineImageSequenceOutput_PNG");
-static_assert(sizeof(UMoviePipelineImageSequenceOutput_PNG) == 0x000078, "Wrong size on UMoviePipelineImageSequenceOutput_PNG");
-static_assert(offsetof(UMoviePipelineImageSequenceOutput_PNG, bWriteAlpha) == 0x000070, "Member 'UMoviePipelineImageSequenceOutput_PNG::bWriteAlpha' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineImageSequenceOutput_PNG;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_JPG
 // 0x0000 (0x0070 - 0x0070)
@@ -262,15 +281,18 @@ class UMoviePipelineImageSequenceOutput_JPG final : public UMoviePipelineImageSe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineImageSequenceOutput_JPG">();
+		STATIC_CLASS_IMPL("MoviePipelineImageSequenceOutput_JPG")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineImageSequenceOutput_JPG")
 	}
 	static class UMoviePipelineImageSequenceOutput_JPG* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineImageSequenceOutput_JPG>();
 	}
 };
-static_assert(alignof(UMoviePipelineImageSequenceOutput_JPG) == 0x000008, "Wrong alignment on UMoviePipelineImageSequenceOutput_JPG");
-static_assert(sizeof(UMoviePipelineImageSequenceOutput_JPG) == 0x000070, "Wrong size on UMoviePipelineImageSequenceOutput_JPG");
+DUMPER7_ASSERTS_UMoviePipelineImageSequenceOutput_JPG;
 
 // Class MovieRenderPipelineRenderPasses.MoviePipelineWaveOutput
 // 0x0070 (0x00C0 - 0x0050)
@@ -283,16 +305,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MoviePipelineWaveOutput">();
+		STATIC_CLASS_IMPL("MoviePipelineWaveOutput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineWaveOutput")
 	}
 	static class UMoviePipelineWaveOutput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMoviePipelineWaveOutput>();
 	}
 };
-static_assert(alignof(UMoviePipelineWaveOutput) == 0x000008, "Wrong alignment on UMoviePipelineWaveOutput");
-static_assert(sizeof(UMoviePipelineWaveOutput) == 0x0000C0, "Wrong size on UMoviePipelineWaveOutput");
-static_assert(offsetof(UMoviePipelineWaveOutput, FileNameFormatOverride) == 0x000050, "Member 'UMoviePipelineWaveOutput::FileNameFormatOverride' has a wrong offset!");
+DUMPER7_ASSERTS_UMoviePipelineWaveOutput;
 
 }
 

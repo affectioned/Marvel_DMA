@@ -21,9 +21,7 @@ struct PyWidget_CommonCheckBox_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonCheckBox_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CommonCheckBox_SetIsHover");
-static_assert(sizeof(PyWidget_CommonCheckBox_SetIsHover) == 0x000001, "Wrong size on PyWidget_CommonCheckBox_SetIsHover");
-static_assert(offsetof(PyWidget_CommonCheckBox_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CommonCheckBox_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonCheckBox_SetIsHover;
 
 // PythonFunction PyWidget_CommonCheckBox.PyWidget_CommonCheckBox.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CommonCheckBox_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonCheckBox_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_CommonCheckBox_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_CommonCheckBox_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_CommonCheckBox_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_CommonCheckBox_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_CommonCheckBox_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonCheckBox_SetBtnIsPressed;
 
 }
 

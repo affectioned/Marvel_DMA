@@ -23,15 +23,18 @@ class UWBP_Line_C final : public UWidget_Line
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Line_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Line_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Line_C")
 	}
 	static class UWBP_Line_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Line_C>();
 	}
 };
-static_assert(alignof(UWBP_Line_C) == 0x000008, "Wrong alignment on UWBP_Line_C");
-static_assert(sizeof(UWBP_Line_C) == 0x0003C8, "Wrong size on UWBP_Line_C");
+DUMPER7_ASSERTS_UWBP_Line_C;
 
 }
 

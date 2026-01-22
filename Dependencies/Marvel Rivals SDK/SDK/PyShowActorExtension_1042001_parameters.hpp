@@ -21,9 +21,7 @@ struct PyShowActorExtension_1042001_SetOriginActor final
 public:
 	class AActor*                                 OriginActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1042001_SetOriginActor) == 0x000008, "Wrong alignment on PyShowActorExtension_1042001_SetOriginActor");
-static_assert(sizeof(PyShowActorExtension_1042001_SetOriginActor) == 0x000008, "Wrong size on PyShowActorExtension_1042001_SetOriginActor");
-static_assert(offsetof(PyShowActorExtension_1042001_SetOriginActor, OriginActor) == 0x000000, "Member 'PyShowActorExtension_1042001_SetOriginActor::OriginActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1042001_SetOriginActor;
 
 // PythonFunction PyShowActorExtension_1042001.PyShowActorExtension_1042001.OnIsHalfChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyShowActorExtension_1042001_OnIsHalfChanged final
 public:
 	bool                                          IsToggleHalf;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1042001_OnIsHalfChanged) == 0x000001, "Wrong alignment on PyShowActorExtension_1042001_OnIsHalfChanged");
-static_assert(sizeof(PyShowActorExtension_1042001_OnIsHalfChanged) == 0x000001, "Wrong size on PyShowActorExtension_1042001_OnIsHalfChanged");
-static_assert(offsetof(PyShowActorExtension_1042001_OnIsHalfChanged, IsToggleHalf) == 0x000000, "Member 'PyShowActorExtension_1042001_OnIsHalfChanged::IsToggleHalf' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1042001_OnIsHalfChanged;
 
 }
 

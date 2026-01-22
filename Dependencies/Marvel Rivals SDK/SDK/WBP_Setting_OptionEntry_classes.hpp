@@ -10,41 +10,39 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SettingOptionEntry_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SettingOptionEntry_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_OptionEntry.WBP_Setting_OptionEntry_C
-// 0x0030 (0x0758 - 0x0728)
+// 0x0030 (0x0760 - 0x0730)
 class UWBP_Setting_OptionEntry_C final : public UPyWidget_SettingOptionEntry
 {
 public:
-	class UCanvasPanel*                           CanvasPanel;                                       // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line;                                          // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	double                                        HoveredOpacity;                                    // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        NormalOpacity;                                     // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                ItemPadding;                                       // 0x0748(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UCanvasPanel*                           CanvasPanel;                                       // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line;                                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        HoveredOpacity;                                    // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NormalOpacity;                                     // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                ItemPadding;                                       // 0x0750(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_OptionEntry_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_OptionEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_OptionEntry_C")
 	}
 	static class UWBP_Setting_OptionEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_OptionEntry_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_OptionEntry_C) == 0x000008, "Wrong alignment on UWBP_Setting_OptionEntry_C");
-static_assert(sizeof(UWBP_Setting_OptionEntry_C) == 0x000758, "Wrong size on UWBP_Setting_OptionEntry_C");
-static_assert(offsetof(UWBP_Setting_OptionEntry_C, CanvasPanel) == 0x000728, "Member 'UWBP_Setting_OptionEntry_C::CanvasPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_OptionEntry_C, Img_Line) == 0x000730, "Member 'UWBP_Setting_OptionEntry_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_OptionEntry_C, HoveredOpacity) == 0x000738, "Member 'UWBP_Setting_OptionEntry_C::HoveredOpacity' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_OptionEntry_C, NormalOpacity) == 0x000740, "Member 'UWBP_Setting_OptionEntry_C::NormalOpacity' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_OptionEntry_C, ItemPadding) == 0x000748, "Member 'UWBP_Setting_OptionEntry_C::ItemPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_OptionEntry_C;
 
 }
 

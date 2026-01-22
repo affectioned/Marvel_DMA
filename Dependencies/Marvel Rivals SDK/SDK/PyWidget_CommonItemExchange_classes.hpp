@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CommonItemExchange.PyWidget_CommonItemExchange
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CommonItemExchange final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonItemExchange">();
+		STATIC_CLASS_IMPL("PyWidget_CommonItemExchange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonItemExchange")
 	}
 	static class UPyWidget_CommonItemExchange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonItemExchange>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonItemExchange) == 0x000008, "Wrong alignment on UPyWidget_CommonItemExchange");
-static_assert(sizeof(UPyWidget_CommonItemExchange) == 0x0005C0, "Wrong size on UPyWidget_CommonItemExchange");
+DUMPER7_ASSERTS_UPyWidget_CommonItemExchange;
 
 }
 

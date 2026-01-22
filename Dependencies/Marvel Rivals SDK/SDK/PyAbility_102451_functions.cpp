@@ -17,44 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_102451.PyProjectile_10245101.K2_OnBeginAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyProjectile_10245101::K2_OnBeginAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10245101", "K2_OnBeginAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_102451.PyProjectile_10245101.K2_OnRecycleAgentTask
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void APyProjectile_10245101::K2_OnRecycleAgentTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyProjectile_10245101", "K2_OnRecycleAgentTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_102451.PyAbility_102451.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -461,6 +423,44 @@ void UPyAbility_102451::MulticastHelaTeleport()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyAbility_102451", "MulticastHelaTeleport");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102451.PyProjectile_10245101.K2_OnBeginAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyProjectile_10245101::K2_OnBeginAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10245101", "K2_OnBeginAgentTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_102451.PyProjectile_10245101.K2_OnRecycleAgentTask
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void APyProjectile_10245101::K2_OnRecycleAgentTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyProjectile_10245101", "K2_OnRecycleAgentTask");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

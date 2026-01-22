@@ -18,29 +18,29 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_Title.PyWidget_BattlePass_Title
-// 0x00B8 (0x0678 - 0x05C0)
+// 0x00B8 (0x0680 - 0x05C8)
 class UPyWidget_BattlePass_Title final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftObjectPath                        RuleDetailsIcon;                                   // 0x05C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             AdditionalTipsTextStyleSet;                        // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<TSubclassOf<class URichTextBlockDecorator>> AdditionalTipsDecoratorClasses;               // 0x05F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Title;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Title_1;                                      // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Time;                                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Logo_Buy;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Logo_NoBuy;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Logo_BuyBnus;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelButton*                          Btn_Tips;                                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelButton*                          Btn_RuleDetails;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelButton*                          Btn_Advanced;                                      // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HBox_Time;                                         // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Advanced;                                  // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Title_CN;                                  // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Title_EN;                                  // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Title_OtherLang;                           // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Up;                                           // 0x0670(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoftObjectPath                        RuleDetailsIcon;                                   // 0x05C8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             AdditionalTipsTextStyleSet;                        // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class URichTextBlockDecorator>> AdditionalTipsDecoratorClasses;               // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Title;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Title_1;                                      // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Time;                                         // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Logo_Buy;                                      // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Logo_NoBuy;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Logo_BuyBnus;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelButton*                          Btn_Tips;                                          // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelButton*                          Btn_RuleDetails;                                   // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelButton*                          Btn_Advanced;                                      // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_Time;                                         // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Advanced;                                  // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Title_CN;                                  // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Title_EN;                                  // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Title_OtherLang;                           // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Up;                                           // 0x0678(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,33 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Title">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Title")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Title")
 	}
 	static class UPyWidget_BattlePass_Title* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Title>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Title) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Title");
-static_assert(sizeof(UPyWidget_BattlePass_Title) == 0x000678, "Wrong size on UPyWidget_BattlePass_Title");
-static_assert(offsetof(UPyWidget_BattlePass_Title, RuleDetailsIcon) == 0x0005C0, "Member 'UPyWidget_BattlePass_Title::RuleDetailsIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, AdditionalTipsTextStyleSet) == 0x0005E8, "Member 'UPyWidget_BattlePass_Title::AdditionalTipsTextStyleSet' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, AdditionalTipsDecoratorClasses) == 0x0005F0, "Member 'UPyWidget_BattlePass_Title::AdditionalTipsDecoratorClasses' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Text_Title) == 0x000600, "Member 'UPyWidget_BattlePass_Title::Text_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Text_Title_1) == 0x000608, "Member 'UPyWidget_BattlePass_Title::Text_Title_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Text_Time) == 0x000610, "Member 'UPyWidget_BattlePass_Title::Text_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Img_Logo_Buy) == 0x000618, "Member 'UPyWidget_BattlePass_Title::Img_Logo_Buy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Img_Logo_NoBuy) == 0x000620, "Member 'UPyWidget_BattlePass_Title::Img_Logo_NoBuy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Img_Logo_BuyBnus) == 0x000628, "Member 'UPyWidget_BattlePass_Title::Img_Logo_BuyBnus' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Btn_Tips) == 0x000630, "Member 'UPyWidget_BattlePass_Title::Btn_Tips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Btn_RuleDetails) == 0x000638, "Member 'UPyWidget_BattlePass_Title::Btn_RuleDetails' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Btn_Advanced) == 0x000640, "Member 'UPyWidget_BattlePass_Title::Btn_Advanced' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, HBox_Time) == 0x000648, "Member 'UPyWidget_BattlePass_Title::HBox_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Overlay_Advanced) == 0x000650, "Member 'UPyWidget_BattlePass_Title::Overlay_Advanced' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Overlay_Title_CN) == 0x000658, "Member 'UPyWidget_BattlePass_Title::Overlay_Title_CN' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Overlay_Title_EN) == 0x000660, "Member 'UPyWidget_BattlePass_Title::Overlay_Title_EN' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Overlay_Title_OtherLang) == 0x000668, "Member 'UPyWidget_BattlePass_Title::Overlay_Title_OtherLang' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Title, Anim_Up) == 0x000670, "Member 'UPyWidget_BattlePass_Title::Anim_Up' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Title;
 
 }
 

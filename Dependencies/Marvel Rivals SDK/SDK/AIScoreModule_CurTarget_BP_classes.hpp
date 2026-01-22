@@ -23,15 +23,18 @@ class UAIScoreModule_CurTarget_BP_C final : public UAIScoreModule_CurTarget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIScoreModule_CurTarget_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIScoreModule_CurTarget_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIScoreModule_CurTarget_BP_C")
 	}
 	static class UAIScoreModule_CurTarget_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIScoreModule_CurTarget_BP_C>();
 	}
 };
-static_assert(alignof(UAIScoreModule_CurTarget_BP_C) == 0x000008, "Wrong alignment on UAIScoreModule_CurTarget_BP_C");
-static_assert(sizeof(UAIScoreModule_CurTarget_BP_C) == 0x000058, "Wrong size on UAIScoreModule_CurTarget_BP_C");
+DUMPER7_ASSERTS_UAIScoreModule_CurTarget_BP_C;
 
 }
 

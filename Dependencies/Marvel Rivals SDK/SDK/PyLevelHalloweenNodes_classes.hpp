@@ -65,15 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelHalloweenNodes">();
+		STATIC_CLASS_IMPL("PyLevelHalloweenNodes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelHalloweenNodes")
 	}
 	static class UPyLevelHalloweenNodes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelHalloweenNodes>();
 	}
 };
-static_assert(alignof(UPyLevelHalloweenNodes) == 0x000008, "Wrong alignment on UPyLevelHalloweenNodes");
-static_assert(sizeof(UPyLevelHalloweenNodes) == 0x000030, "Wrong size on UPyLevelHalloweenNodes");
+DUMPER7_ASSERTS_UPyLevelHalloweenNodes;
 
 }
 

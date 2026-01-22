@@ -11,40 +11,44 @@
 #include "Basic.hpp"
 
 #include "PyMarvelUserWidget_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_Item : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsBundle;                                          // 0x05BA(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 Img_Preview;                                       // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsBundle;                                          // 0x05C2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 Img_Preview;                                       // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
+	class UWidget* GetFocusUp(EUINavigation Navigation_0);
+	class UWidget* GetFocusDown(EUINavigation Navigation_0);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Item">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Item")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Item) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Item");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Item) == 0x0005C8, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Item");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Item, IsBundle) == 0x0005BA, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Item::IsBundle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Item, Img_Preview) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Item::Img_Preview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Item;
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Item_V2
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05D0 - 0x05D0)
 class UPyWidget_HeroSystem_Exclusive_Performance_Item_V2 final : public UPyWidget_HeroSystem_Exclusive_Performance_Item
 {
 public:
@@ -54,23 +58,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Item_V2">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Item_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Item_V2")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Item_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Item_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Item_V2) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Item_V2");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Item_V2) == 0x0005C8, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Item_V2");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Item_V2;
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_Item.PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ItemID;                                            // 0x05C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ItemID;                                            // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -78,16 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon) == 0x0005D0, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon");
-static_assert(offsetof(UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon, ItemID) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon::ItemID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Ultimate_Icon;
 
 }
 

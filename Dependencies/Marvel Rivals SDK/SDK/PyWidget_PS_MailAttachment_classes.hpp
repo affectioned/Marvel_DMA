@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PS_MailAttachment.PyWidget_PS_MailAttachment
-// 0x0138 (0x0730 - 0x05F8)
+// 0x0138 (0x0738 - 0x0600)
 class UPyWidget_PS_MailAttachment final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FMargin                                ItemPadding;                                       // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         TimeBetweenInsertion;                              // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x0610(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMargin                                ItemPadding;                                       // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         TimeBetweenInsertion;                              // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        ReturnGuideTips;                                   // 0x0618(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PS_MailAttachment">();
+		STATIC_CLASS_IMPL("PyWidget_PS_MailAttachment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PS_MailAttachment")
 	}
 	static class UPyWidget_PS_MailAttachment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PS_MailAttachment>();
 	}
 };
-static_assert(alignof(UPyWidget_PS_MailAttachment) == 0x000008, "Wrong alignment on UPyWidget_PS_MailAttachment");
-static_assert(sizeof(UPyWidget_PS_MailAttachment) == 0x000730, "Wrong size on UPyWidget_PS_MailAttachment");
-static_assert(offsetof(UPyWidget_PS_MailAttachment, ItemPadding) == 0x0005F8, "Member 'UPyWidget_PS_MailAttachment::ItemPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PS_MailAttachment, TimeBetweenInsertion) == 0x000608, "Member 'UPyWidget_PS_MailAttachment::TimeBetweenInsertion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PS_MailAttachment, ReturnGuideTips) == 0x000610, "Member 'UPyWidget_PS_MailAttachment::ReturnGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PS_MailAttachment;
 
 }
 

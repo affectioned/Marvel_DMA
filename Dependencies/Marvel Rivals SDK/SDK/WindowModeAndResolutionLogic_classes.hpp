@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMonitorSelectionOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryMonitorSelectionOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMonitorSelectionOptionsGenerator")
 	}
 	static class UUISettingEntryMonitorSelectionOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMonitorSelectionOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryMonitorSelectionOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryMonitorSelectionOptionsGenerator");
-static_assert(sizeof(UUISettingEntryMonitorSelectionOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryMonitorSelectionOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryMonitorSelectionOptionsGenerator;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryWindowModeOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryWindowModeOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryWindowModeOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryWindowModeOptionsGenerator")
 	}
 	static class UUISettingEntryWindowModeOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryWindowModeOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryWindowModeOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryWindowModeOptionsGenerator");
-static_assert(sizeof(UUISettingEntryWindowModeOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryWindowModeOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryWindowModeOptionsGenerator;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryMonitorSelection
 // 0x0000 (0x0030 - 0x0030)
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMonitorSelection">();
+		STATIC_CLASS_IMPL("UISettingEntryMonitorSelection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMonitorSelection")
 	}
 	static class UUISettingEntryMonitorSelection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMonitorSelection>();
 	}
 };
-static_assert(alignof(UUISettingEntryMonitorSelection) == 0x000008, "Wrong alignment on UUISettingEntryMonitorSelection");
-static_assert(sizeof(UUISettingEntryMonitorSelection) == 0x000030, "Wrong size on UUISettingEntryMonitorSelection");
+DUMPER7_ASSERTS_UUISettingEntryMonitorSelection;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryWindowModeHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -93,15 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryWindowModeHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryWindowModeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryWindowModeHandler")
 	}
 	static class UUISettingEntryWindowModeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryWindowModeHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryWindowModeHandler) == 0x000008, "Wrong alignment on UUISettingEntryWindowModeHandler");
-static_assert(sizeof(UUISettingEntryWindowModeHandler) == 0x000030, "Wrong size on UUISettingEntryWindowModeHandler");
+DUMPER7_ASSERTS_UUISettingEntryWindowModeHandler;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryResolutionAspectOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -113,15 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryResolutionAspectOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryResolutionAspectOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryResolutionAspectOptionsGenerator")
 	}
 	static class UUISettingEntryResolutionAspectOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryResolutionAspectOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryResolutionAspectOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryResolutionAspectOptionsGenerator");
-static_assert(sizeof(UUISettingEntryResolutionAspectOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryResolutionAspectOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryResolutionAspectOptionsGenerator;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryResolutionAspectHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -134,15 +149,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryResolutionAspectHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryResolutionAspectHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryResolutionAspectHandler")
 	}
 	static class UUISettingEntryResolutionAspectHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryResolutionAspectHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryResolutionAspectHandler) == 0x000008, "Wrong alignment on UUISettingEntryResolutionAspectHandler");
-static_assert(sizeof(UUISettingEntryResolutionAspectHandler) == 0x000030, "Wrong size on UUISettingEntryResolutionAspectHandler");
+DUMPER7_ASSERTS_UUISettingEntryResolutionAspectHandler;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryResolutionHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -155,15 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryResolutionHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryResolutionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryResolutionHandler")
 	}
 	static class UUISettingEntryResolutionHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryResolutionHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryResolutionHandler) == 0x000008, "Wrong alignment on UUISettingEntryResolutionHandler");
-static_assert(sizeof(UUISettingEntryResolutionHandler) == 0x000030, "Wrong size on UUISettingEntryResolutionHandler");
+DUMPER7_ASSERTS_UUISettingEntryResolutionHandler;
 
 // PythonClass WindowModeAndResolutionLogic.UISettingEntryResolutionOptionsGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -175,15 +196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryResolutionOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryResolutionOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryResolutionOptionsGenerator")
 	}
 	static class UUISettingEntryResolutionOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryResolutionOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryResolutionOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntryResolutionOptionsGenerator");
-static_assert(sizeof(UUISettingEntryResolutionOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntryResolutionOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntryResolutionOptionsGenerator;
 
 }
 

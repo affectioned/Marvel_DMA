@@ -17,41 +17,47 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity135_Reward.PyWidget_Activity135_Reward_PageTab
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Activity135_Reward_PageTab final : public UPyWidget_ActivityExpBpBase_Reward_PageTab
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity135_Reward_PageTab">();
+		STATIC_CLASS_IMPL("PyWidget_Activity135_Reward_PageTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity135_Reward_PageTab")
 	}
 	static class UPyWidget_Activity135_Reward_PageTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity135_Reward_PageTab>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity135_Reward_PageTab) == 0x000008, "Wrong alignment on UPyWidget_Activity135_Reward_PageTab");
-static_assert(sizeof(UPyWidget_Activity135_Reward_PageTab) == 0x0005D0, "Wrong size on UPyWidget_Activity135_Reward_PageTab");
+DUMPER7_ASSERTS_UPyWidget_Activity135_Reward_PageTab;
 
 // PythonClass PyWidget_Activity135_Reward.PyWidget_Activity135_Reward_Card
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Activity135_Reward_Card final : public UPyWidget_ActivityExpBpBase_Reward_Card
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity135_Reward_Card">();
+		STATIC_CLASS_IMPL("PyWidget_Activity135_Reward_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity135_Reward_Card")
 	}
 	static class UPyWidget_Activity135_Reward_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity135_Reward_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity135_Reward_Card) == 0x000008, "Wrong alignment on UPyWidget_Activity135_Reward_Card");
-static_assert(sizeof(UPyWidget_Activity135_Reward_Card) == 0x0005D0, "Wrong size on UPyWidget_Activity135_Reward_Card");
+DUMPER7_ASSERTS_UPyWidget_Activity135_Reward_Card;
 
 // PythonClass PyWidget_Activity135_Reward.PyWidget_Activity135_Reward
-// 0x0000 (0x06E0 - 0x06E0)
+// 0x0000 (0x06E8 - 0x06E8)
 class UPyWidget_Activity135_Reward final : public UPyWidget_ActivityExpBpBase_Reward
 {
 public:
@@ -61,15 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity135_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity135_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity135_Reward")
 	}
 	static class UPyWidget_Activity135_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity135_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity135_Reward) == 0x000008, "Wrong alignment on UPyWidget_Activity135_Reward");
-static_assert(sizeof(UPyWidget_Activity135_Reward) == 0x0006E0, "Wrong size on UPyWidget_Activity135_Reward");
+DUMPER7_ASSERTS_UPyWidget_Activity135_Reward;
 
 }
 

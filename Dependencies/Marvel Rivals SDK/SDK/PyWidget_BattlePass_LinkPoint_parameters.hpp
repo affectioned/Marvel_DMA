@@ -21,9 +21,7 @@ struct PyWidget_BattlePass_LinkPoint_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_LinkPoint_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_BattlePass_LinkPoint_MarvelSetVisible");
-static_assert(sizeof(PyWidget_BattlePass_LinkPoint_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_BattlePass_LinkPoint_MarvelSetVisible");
-static_assert(offsetof(PyWidget_BattlePass_LinkPoint_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_BattlePass_LinkPoint_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_LinkPoint_MarvelSetVisible;
 
 // PythonFunction PyWidget_BattlePass_LinkPoint.PyWidget_BattlePass_LinkPoint.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_LinkPoint_OnCascadingVisibleChanged;
 
 }
 

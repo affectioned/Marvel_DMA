@@ -29,14 +29,7 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetAttributeValue_ReturnValue_1;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP) == 0x000008, "Wrong alignment on Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP");
-static_assert(sizeof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP) == 0x000020, "Wrong size on Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, EntryPoint) == 0x000000, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, CallFunc_AE_GetCharacterActor_ReturnValue) == 0x000008, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::CallFunc_AE_GetCharacterActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, CallFunc_GetAttributeValue_bSuccessfullyFoundAttribute) == 0x000010, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::CallFunc_GetAttributeValue_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, CallFunc_GetAttributeValue_ReturnValue) == 0x000014, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::CallFunc_GetAttributeValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, CallFunc_GetAttributeValue_bSuccessfullyFoundAttribute_1) == 0x000018, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::CallFunc_GetAttributeValue_bSuccessfullyFoundAttribute_1' has a wrong offset!");
-static_assert(offsetof(Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP, CallFunc_GetAttributeValue_ReturnValue_1) == 0x00001C, "Member 'Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP::CallFunc_GetAttributeValue_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104782_BP_C_ExecuteUbergraph_Ability_104782_BP;
 
 }
 

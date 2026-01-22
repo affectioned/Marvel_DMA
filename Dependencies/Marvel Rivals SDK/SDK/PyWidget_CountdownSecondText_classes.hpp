@@ -17,32 +17,31 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CountdownSecondText.PyWidget_CountdownSecondText
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_CountdownSecondText final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CountDownVxTime;                                   // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_CountDownVx;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OneSecond;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ZeroSecond;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CountDownVxTime;                                   // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_CountDownVx;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OneSecond;                                 // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ZeroSecond;                                // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CountdownSecondText">();
+		STATIC_CLASS_IMPL("PyWidget_CountdownSecondText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CountdownSecondText")
 	}
 	static class UPyWidget_CountdownSecondText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CountdownSecondText>();
 	}
 };
-static_assert(alignof(UPyWidget_CountdownSecondText) == 0x000008, "Wrong alignment on UPyWidget_CountdownSecondText");
-static_assert(sizeof(UPyWidget_CountdownSecondText) == 0x0005D8, "Wrong size on UPyWidget_CountdownSecondText");
-static_assert(offsetof(UPyWidget_CountdownSecondText, CountDownVxTime) == 0x0005BC, "Member 'UPyWidget_CountdownSecondText::CountDownVxTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CountdownSecondText, AkEvent_CountDownVx) == 0x0005C0, "Member 'UPyWidget_CountdownSecondText::AkEvent_CountDownVx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CountdownSecondText, AkEvent_OneSecond) == 0x0005C8, "Member 'UPyWidget_CountdownSecondText::AkEvent_OneSecond' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CountdownSecondText, AkEvent_ZeroSecond) == 0x0005D0, "Member 'UPyWidget_CountdownSecondText::AkEvent_ZeroSecond' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CountdownSecondText;
 
 }
 

@@ -40,15 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainingStatisticsController">();
+		STATIC_CLASS_IMPL("PyTrainingStatisticsController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainingStatisticsController")
 	}
 	static class UPyTrainingStatisticsController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTrainingStatisticsController>();
 	}
 };
-static_assert(alignof(UPyTrainingStatisticsController) == 0x000008, "Wrong alignment on UPyTrainingStatisticsController");
-static_assert(sizeof(UPyTrainingStatisticsController) == 0x000030, "Wrong size on UPyTrainingStatisticsController");
+DUMPER7_ASSERTS_UPyTrainingStatisticsController;
 
 }
 

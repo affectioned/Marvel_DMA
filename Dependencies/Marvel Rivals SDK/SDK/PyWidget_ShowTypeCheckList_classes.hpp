@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SimpleButton_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "PyWidget_SimpleButton_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_ShowTypeCheckList.PyWidget_CheckBoxList
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_CheckBoxList : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -27,25 +27,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CheckBoxList">();
+		STATIC_CLASS_IMPL("PyWidget_CheckBoxList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CheckBoxList")
 	}
 	static class UPyWidget_CheckBoxList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CheckBoxList>();
 	}
 };
-static_assert(alignof(UPyWidget_CheckBoxList) == 0x000008, "Wrong alignment on UPyWidget_CheckBoxList");
-static_assert(sizeof(UPyWidget_CheckBoxList) == 0x0005F8, "Wrong size on UPyWidget_CheckBoxList");
+DUMPER7_ASSERTS_UPyWidget_CheckBoxList;
 
 // PythonClass PyWidget_ShowTypeCheckList.PyWidget_ShowTypeSettingButton
-// 0x0020 (0x04A8 - 0x0488)
+// 0x0020 (0x0488 - 0x0468)
 class UPyWidget_ShowTypeSettingButton final : public UPyWidget_SimpleButton
 {
 public:
-	class UTexture2D*                             EmojiSettingNormalTexture;                         // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SpraySettingNormalTexture;                         // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             EmojiSettingHoverTexture;                          // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SpraySettingHoverTexture;                          // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             EmojiSettingNormalTexture;                         // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SpraySettingNormalTexture;                         // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             EmojiSettingHoverTexture;                          // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SpraySettingHoverTexture;                          // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -54,22 +57,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShowTypeSettingButton">();
+		STATIC_CLASS_IMPL("PyWidget_ShowTypeSettingButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShowTypeSettingButton")
 	}
 	static class UPyWidget_ShowTypeSettingButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShowTypeSettingButton>();
 	}
 };
-static_assert(alignof(UPyWidget_ShowTypeSettingButton) == 0x000008, "Wrong alignment on UPyWidget_ShowTypeSettingButton");
-static_assert(sizeof(UPyWidget_ShowTypeSettingButton) == 0x0004A8, "Wrong size on UPyWidget_ShowTypeSettingButton");
-static_assert(offsetof(UPyWidget_ShowTypeSettingButton, EmojiSettingNormalTexture) == 0x000488, "Member 'UPyWidget_ShowTypeSettingButton::EmojiSettingNormalTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShowTypeSettingButton, SpraySettingNormalTexture) == 0x000490, "Member 'UPyWidget_ShowTypeSettingButton::SpraySettingNormalTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShowTypeSettingButton, EmojiSettingHoverTexture) == 0x000498, "Member 'UPyWidget_ShowTypeSettingButton::EmojiSettingHoverTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShowTypeSettingButton, SpraySettingHoverTexture) == 0x0004A0, "Member 'UPyWidget_ShowTypeSettingButton::SpraySettingHoverTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShowTypeSettingButton;
 
 // PythonClass PyWidget_ShowTypeCheckList.PyWidget_ShowTypeSettingList
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_ShowTypeSettingList final : public UPyWidget_CheckBoxList
 {
 public:
@@ -80,15 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShowTypeSettingList">();
+		STATIC_CLASS_IMPL("PyWidget_ShowTypeSettingList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShowTypeSettingList")
 	}
 	static class UPyWidget_ShowTypeSettingList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShowTypeSettingList>();
 	}
 };
-static_assert(alignof(UPyWidget_ShowTypeSettingList) == 0x000008, "Wrong alignment on UPyWidget_ShowTypeSettingList");
-static_assert(sizeof(UPyWidget_ShowTypeSettingList) == 0x0005F8, "Wrong size on UPyWidget_ShowTypeSettingList");
+DUMPER7_ASSERTS_UPyWidget_ShowTypeSettingList;
 
 }
 

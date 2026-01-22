@@ -78,6 +78,17 @@ enum class ETransitionCurve : uint8
 	ETransitionCurve_MAX                     = 7,
 };
 
+// ScriptStruct CommonUI.CommonButtonStyleOptionalSlateSound
+// 0x0028 (0x0028 - 0x0000)
+struct FCommonButtonStyleOptionalSlateSound final
+{
+public:
+	bool                                          bHasSound;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateSound                            Sound;                                             // 0x0008(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCommonButtonStyleOptionalSlateSound;
+
 // ScriptStruct CommonUI.CommonNumberFormattingOptions
 // 0x0014 (0x0014 - 0x0000)
 struct FCommonNumberFormattingOptions final
@@ -91,29 +102,7 @@ public:
 	int32                                         MinimumFractionalDigits;                           // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaximumFractionalDigits;                           // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonNumberFormattingOptions) == 0x000004, "Wrong alignment on FCommonNumberFormattingOptions");
-static_assert(sizeof(FCommonNumberFormattingOptions) == 0x000014, "Wrong size on FCommonNumberFormattingOptions");
-static_assert(offsetof(FCommonNumberFormattingOptions, RoundingMode) == 0x000000, "Member 'FCommonNumberFormattingOptions::RoundingMode' has a wrong offset!");
-static_assert(offsetof(FCommonNumberFormattingOptions, UseGrouping) == 0x000001, "Member 'FCommonNumberFormattingOptions::UseGrouping' has a wrong offset!");
-static_assert(offsetof(FCommonNumberFormattingOptions, MinimumIntegralDigits) == 0x000004, "Member 'FCommonNumberFormattingOptions::MinimumIntegralDigits' has a wrong offset!");
-static_assert(offsetof(FCommonNumberFormattingOptions, MaximumIntegralDigits) == 0x000008, "Member 'FCommonNumberFormattingOptions::MaximumIntegralDigits' has a wrong offset!");
-static_assert(offsetof(FCommonNumberFormattingOptions, MinimumFractionalDigits) == 0x00000C, "Member 'FCommonNumberFormattingOptions::MinimumFractionalDigits' has a wrong offset!");
-static_assert(offsetof(FCommonNumberFormattingOptions, MaximumFractionalDigits) == 0x000010, "Member 'FCommonNumberFormattingOptions::MaximumFractionalDigits' has a wrong offset!");
-
-// ScriptStruct CommonUI.RichTextIconData
-// 0x0058 (0x0068 - 0x0010)
-struct FRichTextIconData final : public FTableRowBase
-{
-public:
-	class FText                                   DisplayName;                                       // 0x0010(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UObject>                 ResourceObject;                                    // 0x0028(0x0030)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ImageSize;                                         // 0x0058(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FRichTextIconData) == 0x000008, "Wrong alignment on FRichTextIconData");
-static_assert(sizeof(FRichTextIconData) == 0x000068, "Wrong size on FRichTextIconData");
-static_assert(offsetof(FRichTextIconData, DisplayName) == 0x000010, "Member 'FRichTextIconData::DisplayName' has a wrong offset!");
-static_assert(offsetof(FRichTextIconData, ResourceObject) == 0x000028, "Member 'FRichTextIconData::ResourceObject' has a wrong offset!");
-static_assert(offsetof(FRichTextIconData, ImageSize) == 0x000058, "Member 'FRichTextIconData::ImageSize' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonNumberFormattingOptions;
 
 // ScriptStruct CommonUI.CommonRegisteredTabInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -125,11 +114,14 @@ public:
 	class UCommonButtonBase*                      TabButton;                                         // 0x0008(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                                ContentInstance;                                   // 0x0010(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonRegisteredTabInfo) == 0x000008, "Wrong alignment on FCommonRegisteredTabInfo");
-static_assert(sizeof(FCommonRegisteredTabInfo) == 0x000018, "Wrong size on FCommonRegisteredTabInfo");
-static_assert(offsetof(FCommonRegisteredTabInfo, TabIndex) == 0x000000, "Member 'FCommonRegisteredTabInfo::TabIndex' has a wrong offset!");
-static_assert(offsetof(FCommonRegisteredTabInfo, TabButton) == 0x000008, "Member 'FCommonRegisteredTabInfo::TabButton' has a wrong offset!");
-static_assert(offsetof(FCommonRegisteredTabInfo, ContentInstance) == 0x000010, "Member 'FCommonRegisteredTabInfo::ContentInstance' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonRegisteredTabInfo;
+
+// ScriptStruct CommonUI.UITag
+// 0x0000 (0x000C - 0x000C)
+struct FUITag : public FGameplayTag
+{
+};
+DUMPER7_ASSERTS_FUITag;
 
 // ScriptStruct CommonUI.UIInputConfig
 // 0x0005 (0x0005 - 0x0000)
@@ -142,29 +134,14 @@ public:
 	EMouseCaptureMode                             MouseCaptureMode;                                  // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bHideCursorDuringViewportCapture;                  // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FUIInputConfig) == 0x000001, "Wrong alignment on FUIInputConfig");
-static_assert(sizeof(FUIInputConfig) == 0x000005, "Wrong size on FUIInputConfig");
-static_assert(offsetof(FUIInputConfig, bIgnoreMoveInput) == 0x000000, "Member 'FUIInputConfig::bIgnoreMoveInput' has a wrong offset!");
-static_assert(offsetof(FUIInputConfig, bIgnoreLookInput) == 0x000001, "Member 'FUIInputConfig::bIgnoreLookInput' has a wrong offset!");
-static_assert(offsetof(FUIInputConfig, InputMode) == 0x000002, "Member 'FUIInputConfig::InputMode' has a wrong offset!");
-static_assert(offsetof(FUIInputConfig, MouseCaptureMode) == 0x000003, "Member 'FUIInputConfig::MouseCaptureMode' has a wrong offset!");
-static_assert(offsetof(FUIInputConfig, bHideCursorDuringViewportCapture) == 0x000004, "Member 'FUIInputConfig::bHideCursorDuringViewportCapture' has a wrong offset!");
-
-// ScriptStruct CommonUI.UITag
-// 0x0000 (0x000C - 0x000C)
-struct FUITag : public FGameplayTag
-{
-};
-static_assert(alignof(FUITag) == 0x000004, "Wrong alignment on FUITag");
-static_assert(sizeof(FUITag) == 0x00000C, "Wrong size on FUITag");
+DUMPER7_ASSERTS_FUIInputConfig;
 
 // ScriptStruct CommonUI.UIActionTag
 // 0x0000 (0x000C - 0x000C)
 struct FUIActionTag final : public FUITag
 {
 };
-static_assert(alignof(FUIActionTag) == 0x000004, "Wrong alignment on FUIActionTag");
-static_assert(sizeof(FUIActionTag) == 0x00000C, "Wrong size on FUIActionTag");
+DUMPER7_ASSERTS_FUIActionTag;
 
 // ScriptStruct CommonUI.CommonInputActionHandlerData
 // 0x0028 (0x0028 - 0x0000)
@@ -175,24 +152,18 @@ public:
 	EInputActionState                             State;                                             // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_19[0xF];                                       // 0x0019(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCommonInputActionHandlerData) == 0x000008, "Wrong alignment on FCommonInputActionHandlerData");
-static_assert(sizeof(FCommonInputActionHandlerData) == 0x000028, "Wrong size on FCommonInputActionHandlerData");
-static_assert(offsetof(FCommonInputActionHandlerData, InputActionRow) == 0x000000, "Member 'FCommonInputActionHandlerData::InputActionRow' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionHandlerData, State) == 0x000018, "Member 'FCommonInputActionHandlerData::State' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputActionHandlerData;
 
-// ScriptStruct CommonUI.CommonButtonStyleOptionalSlateSound
-// 0x0028 (0x0028 - 0x0000)
-struct FCommonButtonStyleOptionalSlateSound final
+// ScriptStruct CommonUI.RichTextIconData
+// 0x0058 (0x0068 - 0x0010)
+struct FRichTextIconData final : public FTableRowBase
 {
 public:
-	bool                                          bHasSound;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateSound                            Sound;                                             // 0x0008(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	class FText                                   DisplayName;                                       // 0x0010(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UObject>                 ResourceObject;                                    // 0x0028(0x0030)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ImageSize;                                         // 0x0058(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonButtonStyleOptionalSlateSound) == 0x000008, "Wrong alignment on FCommonButtonStyleOptionalSlateSound");
-static_assert(sizeof(FCommonButtonStyleOptionalSlateSound) == 0x000028, "Wrong size on FCommonButtonStyleOptionalSlateSound");
-static_assert(offsetof(FCommonButtonStyleOptionalSlateSound, bHasSound) == 0x000000, "Member 'FCommonButtonStyleOptionalSlateSound::bHasSound' has a wrong offset!");
-static_assert(offsetof(FCommonButtonStyleOptionalSlateSound, Sound) == 0x000008, "Member 'FCommonButtonStyleOptionalSlateSound::Sound' has a wrong offset!");
+DUMPER7_ASSERTS_FRichTextIconData;
 
 // ScriptStruct CommonUI.CommonInputTypeInfo
 // 0x0100 (0x0100 - 0x0000)
@@ -208,14 +179,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            OverrideBrush;                                     // 0x0030(0x00D0)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputTypeInfo) == 0x000010, "Wrong alignment on FCommonInputTypeInfo");
-static_assert(sizeof(FCommonInputTypeInfo) == 0x000100, "Wrong size on FCommonInputTypeInfo");
-static_assert(offsetof(FCommonInputTypeInfo, Key) == 0x000000, "Member 'FCommonInputTypeInfo::Key' has a wrong offset!");
-static_assert(offsetof(FCommonInputTypeInfo, OverrrideState) == 0x000020, "Member 'FCommonInputTypeInfo::OverrrideState' has a wrong offset!");
-static_assert(offsetof(FCommonInputTypeInfo, bActionRequiresHold) == 0x000021, "Member 'FCommonInputTypeInfo::bActionRequiresHold' has a wrong offset!");
-static_assert(offsetof(FCommonInputTypeInfo, HoldTime) == 0x000024, "Member 'FCommonInputTypeInfo::HoldTime' has a wrong offset!");
-static_assert(offsetof(FCommonInputTypeInfo, HoldRollbackTime) == 0x000028, "Member 'FCommonInputTypeInfo::HoldRollbackTime' has a wrong offset!");
-static_assert(offsetof(FCommonInputTypeInfo, OverrideBrush) == 0x000030, "Member 'FCommonInputTypeInfo::OverrideBrush' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputTypeInfo;
 
 // ScriptStruct CommonUI.CommonInputActionDataBase
 // 0x0390 (0x03A0 - 0x0010)
@@ -231,15 +195,7 @@ public:
 	TMap<class FName, struct FCommonInputTypeInfo> GamepadInputOverrides;                            // 0x0250(0x0050)(Edit, Protected, NativeAccessSpecifierProtected)
 	struct FCommonInputTypeInfo                   TouchInputTypeInfo;                                // 0x02A0(0x0100)(Edit, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FCommonInputActionDataBase) == 0x000010, "Wrong alignment on FCommonInputActionDataBase");
-static_assert(sizeof(FCommonInputActionDataBase) == 0x0003A0, "Wrong size on FCommonInputActionDataBase");
-static_assert(offsetof(FCommonInputActionDataBase, DisplayName) == 0x000010, "Member 'FCommonInputActionDataBase::DisplayName' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, HoldDisplayName) == 0x000028, "Member 'FCommonInputActionDataBase::HoldDisplayName' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, NavBarPriority) == 0x000040, "Member 'FCommonInputActionDataBase::NavBarPriority' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, KeyboardInputTypeInfo) == 0x000050, "Member 'FCommonInputActionDataBase::KeyboardInputTypeInfo' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, DefaultGamepadInputTypeInfo) == 0x000150, "Member 'FCommonInputActionDataBase::DefaultGamepadInputTypeInfo' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, GamepadInputOverrides) == 0x000250, "Member 'FCommonInputActionDataBase::GamepadInputOverrides' has a wrong offset!");
-static_assert(offsetof(FCommonInputActionDataBase, TouchInputTypeInfo) == 0x0002A0, "Member 'FCommonInputActionDataBase::TouchInputTypeInfo' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonInputActionDataBase;
 
 // ScriptStruct CommonUI.UIActionKeyMapping
 // 0x0028 (0x0028 - 0x0000)
@@ -250,11 +206,7 @@ public:
 	float                                         HoldTime;                                          // 0x0020(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HoldRollbackTime;                                  // 0x0024(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUIActionKeyMapping) == 0x000008, "Wrong alignment on FUIActionKeyMapping");
-static_assert(sizeof(FUIActionKeyMapping) == 0x000028, "Wrong size on FUIActionKeyMapping");
-static_assert(offsetof(FUIActionKeyMapping, Key) == 0x000000, "Member 'FUIActionKeyMapping::Key' has a wrong offset!");
-static_assert(offsetof(FUIActionKeyMapping, HoldTime) == 0x000020, "Member 'FUIActionKeyMapping::HoldTime' has a wrong offset!");
-static_assert(offsetof(FUIActionKeyMapping, HoldRollbackTime) == 0x000024, "Member 'FUIActionKeyMapping::HoldRollbackTime' has a wrong offset!");
+DUMPER7_ASSERTS_FUIActionKeyMapping;
 
 // ScriptStruct CommonUI.UIInputAction
 // 0x0038 (0x0038 - 0x0000)
@@ -266,11 +218,7 @@ public:
 	class FText                                   DefaultDisplayName;                                // 0x0010(0x0018)(Edit, Config, NativeAccessSpecifierPublic)
 	TArray<struct FUIActionKeyMapping>            KeyMappings;                                       // 0x0028(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUIInputAction) == 0x000008, "Wrong alignment on FUIInputAction");
-static_assert(sizeof(FUIInputAction) == 0x000038, "Wrong size on FUIInputAction");
-static_assert(offsetof(FUIInputAction, ActionTag) == 0x000000, "Member 'FUIInputAction::ActionTag' has a wrong offset!");
-static_assert(offsetof(FUIInputAction, DefaultDisplayName) == 0x000010, "Member 'FUIInputAction::DefaultDisplayName' has a wrong offset!");
-static_assert(offsetof(FUIInputAction, KeyMappings) == 0x000028, "Member 'FUIInputAction::KeyMappings' has a wrong offset!");
+DUMPER7_ASSERTS_FUIInputAction;
 
 // ScriptStruct CommonUI.CommonAnalogCursorSettings
 // 0x0024 (0x0024 - 0x0000)
@@ -288,17 +236,7 @@ public:
 	float                                         ScrollUpdatePeriod;                                // 0x001C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ScrollMultiplier;                                  // 0x0020(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonAnalogCursorSettings) == 0x000004, "Wrong alignment on FCommonAnalogCursorSettings");
-static_assert(sizeof(FCommonAnalogCursorSettings) == 0x000024, "Wrong size on FCommonAnalogCursorSettings");
-static_assert(offsetof(FCommonAnalogCursorSettings, PreprocessorPriority) == 0x000000, "Member 'FCommonAnalogCursorSettings::PreprocessorPriority' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, bEnableCursorAcceleration) == 0x000004, "Member 'FCommonAnalogCursorSettings::bEnableCursorAcceleration' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, CursorAcceleration) == 0x000008, "Member 'FCommonAnalogCursorSettings::CursorAcceleration' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, CursorMaxSpeed) == 0x00000C, "Member 'FCommonAnalogCursorSettings::CursorMaxSpeed' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, CursorDeadZone) == 0x000010, "Member 'FCommonAnalogCursorSettings::CursorDeadZone' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, HoverSlowdownFactor) == 0x000014, "Member 'FCommonAnalogCursorSettings::HoverSlowdownFactor' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, ScrollDeadZone) == 0x000018, "Member 'FCommonAnalogCursorSettings::ScrollDeadZone' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, ScrollUpdatePeriod) == 0x00001C, "Member 'FCommonAnalogCursorSettings::ScrollUpdatePeriod' has a wrong offset!");
-static_assert(offsetof(FCommonAnalogCursorSettings, ScrollMultiplier) == 0x000020, "Member 'FCommonAnalogCursorSettings::ScrollMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonAnalogCursorSettings;
 
 }
 

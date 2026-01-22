@@ -18,24 +18,23 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerPersonalRecord_BaseItem.PyWidget_CareerPersonalRecord_BaseItem
-// 0x0558 (0x0C80 - 0x0728)
+// 0x0550 (0x0CD0 - 0x0780)
 class UPyWidget_CareerPersonalRecord_BaseItem : public UPyWidget_Button
 {
 public:
-	uint8                                         Pad_728[0x8];                                      // 0x0728(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            TextureWin;                                        // 0x0730(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TextureLose;                                       // 0x0800(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TextureDraw;                                       // 0x08D0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TextureWinHovered;                                 // 0x09A0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TextureLoseHovered;                                // 0x0A70(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TextureDrawHovered;                                // 0x0B40(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnButtonReplayClicked;                     // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnButtonReplayHovered;                     // 0x0C18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Non;                                   // 0x0C20(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Add;                                   // 0x0C34(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Sub;                                   // 0x0C48(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Score_Common;                                // 0x0C5C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     TextureCommon_KDA_List;                            // 0x0C70(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureWin;                                        // 0x0780(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureLose;                                       // 0x0850(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureDraw;                                       // 0x0920(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureWinHovered;                                 // 0x09F0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureLoseHovered;                                // 0x0AC0(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TextureDrawHovered;                                // 0x0B90(0x00D0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnButtonReplayClicked;                     // 0x0C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnButtonReplayHovered;                     // 0x0C68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Non;                                   // 0x0C70(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Add;                                   // 0x0C84(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Sub;                                   // 0x0C98(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Score_Common;                                // 0x0CAC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     TextureCommon_KDA_List;                            // 0x0CC0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,28 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerPersonalRecord_BaseItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerPersonalRecord_BaseItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerPersonalRecord_BaseItem")
 	}
 	static class UPyWidget_CareerPersonalRecord_BaseItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerPersonalRecord_BaseItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerPersonalRecord_BaseItem) == 0x000010, "Wrong alignment on UPyWidget_CareerPersonalRecord_BaseItem");
-static_assert(sizeof(UPyWidget_CareerPersonalRecord_BaseItem) == 0x000C80, "Wrong size on UPyWidget_CareerPersonalRecord_BaseItem");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureWin) == 0x000730, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureWin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureLose) == 0x000800, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureLose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureDraw) == 0x0008D0, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureDraw' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureWinHovered) == 0x0009A0, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureWinHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureLoseHovered) == 0x000A70, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureLoseHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureDrawHovered) == 0x000B40, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureDrawHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, AkEvent_OnButtonReplayClicked) == 0x000C10, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::AkEvent_OnButtonReplayClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, AkEvent_OnButtonReplayHovered) == 0x000C18, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::AkEvent_OnButtonReplayHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, Color_Score_Non) == 0x000C20, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::Color_Score_Non' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, Color_Score_Add) == 0x000C34, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::Color_Score_Add' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, Color_Score_Sub) == 0x000C48, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::Color_Score_Sub' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, Color_Score_Common) == 0x000C5C, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::Color_Score_Common' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord_BaseItem, TextureCommon_KDA_List) == 0x000C70, "Member 'UPyWidget_CareerPersonalRecord_BaseItem::TextureCommon_KDA_List' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerPersonalRecord_BaseItem;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AISelectTarget_GrootSetWoodWall_Distrub.AISelectTarget_GrootSetWoodWall_Distrub_C
-// 0x0000 (0x16E0 - 0x16E0)
+// 0x0000 (0x1A30 - 0x1A30)
 class UAISelectTarget_GrootSetWoodWall_Distrub_C final : public UPyAISelectTarget_GrootSetWoodWall_Distrub
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_GrootSetWoodWall_Distrub_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_GrootSetWoodWall_Distrub_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_GrootSetWoodWall_Distrub_C")
 	}
 	static class UAISelectTarget_GrootSetWoodWall_Distrub_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_GrootSetWoodWall_Distrub_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_GrootSetWoodWall_Distrub_C) == 0x000010, "Wrong alignment on UAISelectTarget_GrootSetWoodWall_Distrub_C");
-static_assert(sizeof(UAISelectTarget_GrootSetWoodWall_Distrub_C) == 0x0016E0, "Wrong size on UAISelectTarget_GrootSetWoodWall_Distrub_C");
+DUMPER7_ASSERTS_UAISelectTarget_GrootSetWoodWall_Distrub_C;
 
 }
 

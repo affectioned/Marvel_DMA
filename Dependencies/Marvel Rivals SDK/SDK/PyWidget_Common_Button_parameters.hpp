@@ -24,9 +24,7 @@ struct PyWidget_BaseCommonButton_OnButtonVisibilityChanged final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BaseCommonButton_OnButtonVisibilityChanged) == 0x000001, "Wrong alignment on PyWidget_BaseCommonButton_OnButtonVisibilityChanged");
-static_assert(sizeof(PyWidget_BaseCommonButton_OnButtonVisibilityChanged) == 0x000001, "Wrong size on PyWidget_BaseCommonButton_OnButtonVisibilityChanged");
-static_assert(offsetof(PyWidget_BaseCommonButton_OnButtonVisibilityChanged, InVisibility) == 0x000000, "Member 'PyWidget_BaseCommonButton_OnButtonVisibilityChanged::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BaseCommonButton_OnButtonVisibilityChanged;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_BaseCommonButton.SetBtnVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_BaseCommonButton_SetBtnVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BaseCommonButton_SetBtnVisible) == 0x000001, "Wrong alignment on PyWidget_BaseCommonButton_SetBtnVisible");
-static_assert(sizeof(PyWidget_BaseCommonButton_SetBtnVisible) == 0x000001, "Wrong size on PyWidget_BaseCommonButton_SetBtnVisible");
-static_assert(offsetof(PyWidget_BaseCommonButton_SetBtnVisible, Visible) == 0x000000, "Member 'PyWidget_BaseCommonButton_SetBtnVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BaseCommonButton_SetBtnVisible;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_BaseCommonButton.SetBtnIsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyWidget_BaseCommonButton_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BaseCommonButton_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_BaseCommonButton_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_BaseCommonButton_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_BaseCommonButton_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_BaseCommonButton_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_BaseCommonButton_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BaseCommonButton_SetBtnIsEnabled;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_BaseCommonButton.SetBtnNameColor
 // 0x0028 (0x0028 - 0x0000)
@@ -58,10 +52,7 @@ public:
 	struct FSlateColor                            color;                                             // 0x0000(0x0014)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FSlateColor                            disable_color;                                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_BaseCommonButton_SetBtnNameColor) == 0x000004, "Wrong alignment on PyWidget_BaseCommonButton_SetBtnNameColor");
-static_assert(sizeof(PyWidget_BaseCommonButton_SetBtnNameColor) == 0x000028, "Wrong size on PyWidget_BaseCommonButton_SetBtnNameColor");
-static_assert(offsetof(PyWidget_BaseCommonButton_SetBtnNameColor, color) == 0x000000, "Member 'PyWidget_BaseCommonButton_SetBtnNameColor::color' has a wrong offset!");
-static_assert(offsetof(PyWidget_BaseCommonButton_SetBtnNameColor, disable_color) == 0x000014, "Member 'PyWidget_BaseCommonButton_SetBtnNameColor::disable_color' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BaseCommonButton_SetBtnNameColor;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_BaseCommonButton.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +61,7 @@ struct PyWidget_BaseCommonButton_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BaseCommonButton_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_BaseCommonButton_OnAnimationFinished");
-static_assert(sizeof(PyWidget_BaseCommonButton_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_BaseCommonButton_OnAnimationFinished");
-static_assert(offsetof(PyWidget_BaseCommonButton_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_BaseCommonButton_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BaseCommonButton_OnAnimationFinished;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Lv0.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +70,7 @@ struct PyWidget_CommonButton_Lv0_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Lv0_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CommonButton_Lv0_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CommonButton_Lv0_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CommonButton_Lv0_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CommonButton_Lv0_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CommonButton_Lv0_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Lv0_OnAnimationFinished;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Lv1_W.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -92,9 +79,7 @@ struct PyWidget_CommonButton_Lv1_W_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Lv1_W_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CommonButton_Lv1_W_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CommonButton_Lv1_W_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CommonButton_Lv1_W_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CommonButton_Lv1_W_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CommonButton_Lv1_W_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Lv1_W_OnAnimationFinished;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Icon.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -103,9 +88,7 @@ struct PyWidget_CommonButton_Icon_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Icon_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_CommonButton_Icon_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_CommonButton_Icon_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_CommonButton_Icon_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_CommonButton_Icon_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_CommonButton_Icon_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Icon_SetBtnIsPressed;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Icon.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -114,9 +97,7 @@ struct PyWidget_CommonButton_Icon_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Icon_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CommonButton_Icon_SetIsHover");
-static_assert(sizeof(PyWidget_CommonButton_Icon_SetIsHover) == 0x000001, "Wrong size on PyWidget_CommonButton_Icon_SetIsHover");
-static_assert(offsetof(PyWidget_CommonButton_Icon_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CommonButton_Icon_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Icon_SetIsHover;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Icon.SetBtnIsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -125,9 +106,7 @@ struct PyWidget_CommonButton_Icon_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Icon_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_CommonButton_Icon_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_CommonButton_Icon_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_CommonButton_Icon_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_CommonButton_Icon_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_CommonButton_Icon_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Icon_SetBtnIsEnabled;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Icon.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -136,9 +115,7 @@ struct PyWidget_CommonButton_Icon_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Icon_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CommonButton_Icon_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CommonButton_Icon_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CommonButton_Icon_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CommonButton_Icon_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_CommonButton_Icon_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Icon_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_Lv3.SetBtnIsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +124,7 @@ struct PyWidget_CommonButton_Lv3_SetBtnIsEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_Lv3_SetBtnIsEnabled) == 0x000001, "Wrong alignment on PyWidget_CommonButton_Lv3_SetBtnIsEnabled");
-static_assert(sizeof(PyWidget_CommonButton_Lv3_SetBtnIsEnabled) == 0x000001, "Wrong size on PyWidget_CommonButton_Lv3_SetBtnIsEnabled");
-static_assert(offsetof(PyWidget_CommonButton_Lv3_SetBtnIsEnabled, Enabled) == 0x000000, "Member 'PyWidget_CommonButton_Lv3_SetBtnIsEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_Lv3_SetBtnIsEnabled;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_WithHoverTips.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -158,9 +133,7 @@ struct PyWidget_CommonButton_WithHoverTips_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_WithHoverTips_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CommonButton_WithHoverTips_SetIsHover");
-static_assert(sizeof(PyWidget_CommonButton_WithHoverTips_SetIsHover) == 0x000001, "Wrong size on PyWidget_CommonButton_WithHoverTips_SetIsHover");
-static_assert(offsetof(PyWidget_CommonButton_WithHoverTips_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CommonButton_WithHoverTips_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_WithHoverTips_SetIsHover;
 
 // PythonFunction PyWidget_Common_Button.PyWidget_CommonButton_WithHoverTips.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -169,9 +142,7 @@ struct PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CommonButton_WithHoverTips_OnCascadingVisibleChanged;
 
 }
 

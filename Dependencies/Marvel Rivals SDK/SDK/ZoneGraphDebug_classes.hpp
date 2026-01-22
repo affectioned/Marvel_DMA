@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneLaneTest">();
+		STATIC_CLASS_IMPL("ZoneLaneTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneLaneTest")
 	}
 	static class UZoneLaneTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneLaneTest>();
 	}
 };
-static_assert(alignof(UZoneLaneTest) == 0x000008, "Wrong alignment on UZoneLaneTest");
-static_assert(sizeof(UZoneLaneTest) == 0x000038, "Wrong size on UZoneLaneTest");
-static_assert(offsetof(UZoneLaneTest, OwnerComponent) == 0x000030, "Member 'UZoneLaneTest::OwnerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneLaneTest;
 
 // Class ZoneGraphDebug.ZoneGraphTestingComponent
 // 0x02D0 (0x0A90 - 0x07C0)
@@ -73,30 +75,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphTestingComponent">();
+		STATIC_CLASS_IMPL("ZoneGraphTestingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphTestingComponent")
 	}
 	static class UZoneGraphTestingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphTestingComponent>();
 	}
 };
-static_assert(alignof(UZoneGraphTestingComponent) == 0x000010, "Wrong alignment on UZoneGraphTestingComponent");
-static_assert(sizeof(UZoneGraphTestingComponent) == 0x000A90, "Wrong size on UZoneGraphTestingComponent");
-static_assert(offsetof(UZoneGraphTestingComponent, ZoneGraph) == 0x0007C8, "Member 'UZoneGraphTestingComponent::ZoneGraph' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, LaneLocation) == 0x0007D0, "Member 'UZoneGraphTestingComponent::LaneLocation' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, NextLaneLocation) == 0x000840, "Member 'UZoneGraphTestingComponent::NextLaneLocation' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, NearestLaneLocation) == 0x0008B0, "Member 'UZoneGraphTestingComponent::NearestLaneLocation' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, SearchExtent) == 0x000920, "Member 'UZoneGraphTestingComponent::SearchExtent' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, AdvanceDistance) == 0x000938, "Member 'UZoneGraphTestingComponent::AdvanceDistance' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, NearestTestOffset) == 0x000940, "Member 'UZoneGraphTestingComponent::NearestTestOffset' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, QueryFilter) == 0x000958, "Member 'UZoneGraphTestingComponent::QueryFilter' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, bDrawLinkedLanes) == 0x000964, "Member 'UZoneGraphTestingComponent::bDrawLinkedLanes' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, bDrawLaneTangentVectors) == 0x000965, "Member 'UZoneGraphTestingComponent::bDrawLaneTangentVectors' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, bDrawLaneSmoothing) == 0x000966, "Member 'UZoneGraphTestingComponent::bDrawLaneSmoothing' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, bDrawBVTreeQuery) == 0x000967, "Member 'UZoneGraphTestingComponent::bDrawBVTreeQuery' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, bDrawLanePath) == 0x000968, "Member 'UZoneGraphTestingComponent::bDrawLanePath' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, OtherActor) == 0x000970, "Member 'UZoneGraphTestingComponent::OtherActor' has a wrong offset!");
-static_assert(offsetof(UZoneGraphTestingComponent, CustomTests) == 0x000A78, "Member 'UZoneGraphTestingComponent::CustomTests' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphTestingComponent;
 
 // Class ZoneGraphDebug.ZoneGraphTestingActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -112,16 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphTestingActor">();
+		STATIC_CLASS_IMPL("ZoneGraphTestingActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphTestingActor")
 	}
 	static class AZoneGraphTestingActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AZoneGraphTestingActor>();
 	}
 };
-static_assert(alignof(AZoneGraphTestingActor) == 0x000010, "Wrong alignment on AZoneGraphTestingActor");
-static_assert(sizeof(AZoneGraphTestingActor) == 0x0006E0, "Wrong size on AZoneGraphTestingActor");
-static_assert(offsetof(AZoneGraphTestingActor, DebugComp) == 0x0006D8, "Member 'AZoneGraphTestingActor::DebugComp' has a wrong offset!");
+DUMPER7_ASSERTS_AZoneGraphTestingActor;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_104531_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104531_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_104531_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_104531_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_104531_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_104531_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_104531_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104531_NativeOnMontageEvent;
 
 }
 

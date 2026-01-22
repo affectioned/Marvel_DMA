@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelThrowSummoner_classes.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1023_classes.hpp"
 
 
 namespace SDK
@@ -28,43 +28,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102382">();
+		STATIC_CLASS_IMPL("PyConfig_102382")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102382")
 	}
 	static class UPyConfig_102382* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102382>();
 	}
 };
-static_assert(alignof(UPyConfig_102382) == 0x000008, "Wrong alignment on UPyConfig_102382");
-static_assert(sizeof(UPyConfig_102382) == 0x0000A0, "Wrong size on UPyConfig_102382");
-static_assert(offsetof(UPyConfig_102382, InitialSpeed) == 0x000098, "Member 'UPyConfig_102382::InitialSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102382, GravityScale) == 0x00009C, "Member 'UPyConfig_102382::GravityScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102382;
 
 // PythonClass PyAbility_102382.PySummoned_102382
-// 0x0020 (0x0B80 - 0x0B60)
+// 0x0000 (0x0BA0 - 0x0BA0)
 #pragma pack(push, 0x1)
-class alignas(0x10) APySummoned_102382 : public ASummoner_102382
+class alignas(0x10) APySummoned_102382 : public APyMarvelThrowSummoner
 {
-public:
-	float                                         InitialSpeed;                                      // 0x0B60(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsLanded;                                         // 0x0B64(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B65[0x3];                                      // 0x0B65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnLand;                                            // 0x0B68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void ReceiveBeginPlay();
-	void ServerReplicateLocationAndVelocity();
-	void HandleStopSimulating();
-	void StopMovement();
-	void MulticastLocationAndVelocity(const struct FVector& CurLocation, const struct FVector& CurVelocity);
-	void MulticastStopSimulating(const struct FVector& EndLocation);
-	void OnRep_IsLanded();
-	void K2_OnSummonedRecycleAgentTask();
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_102382">();
+		STATIC_CLASS_IMPL("PySummoned_102382")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_102382")
 	}
 	static class APySummoned_102382* GetDefaultObj()
 	{
@@ -72,20 +61,16 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APySummoned_102382) == 0x000010, "Wrong alignment on APySummoned_102382");
-static_assert(sizeof(APySummoned_102382) == 0x000B80, "Wrong size on APySummoned_102382");
-static_assert(offsetof(APySummoned_102382, InitialSpeed) == 0x000B60, "Member 'APySummoned_102382::InitialSpeed' has a wrong offset!");
-static_assert(offsetof(APySummoned_102382, bIsLanded) == 0x000B64, "Member 'APySummoned_102382::bIsLanded' has a wrong offset!");
-static_assert(offsetof(APySummoned_102382, OnLand) == 0x000B68, "Member 'APySummoned_102382::OnLand' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_102382;
 
 // PythonClass PyAbility_102382.PyCue_Summoner_Loop_10238201_BP
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_Summoner_Loop_10238201_BP final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimationAsset*                        ExpandAnim;                                        // 0x1200(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        LoopAnim;                                          // 0x1208(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimationAsset*                        ExpandAnim;                                        // 0x1260(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        LoopAnim;                                          // 0x1268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Expand();
@@ -96,17 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10238201_BP">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10238201_BP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10238201_BP")
 	}
 	static class APyCue_Summoner_Loop_10238201_BP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10238201_BP>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10238201_BP) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10238201_BP");
-static_assert(sizeof(APyCue_Summoner_Loop_10238201_BP) == 0x001210, "Wrong size on APyCue_Summoner_Loop_10238201_BP");
-static_assert(offsetof(APyCue_Summoner_Loop_10238201_BP, ExpandAnim) == 0x001200, "Member 'APyCue_Summoner_Loop_10238201_BP::ExpandAnim' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10238201_BP, LoopAnim) == 0x001208, "Member 'APyCue_Summoner_Loop_10238201_BP::LoopAnim' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10238201_BP;
 
 }
 

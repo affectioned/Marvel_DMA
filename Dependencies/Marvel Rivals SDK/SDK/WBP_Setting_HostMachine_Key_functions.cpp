@@ -65,20 +65,6 @@ void UWBP_Setting_HostMachine_Key_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_Setting_HostMachine_Key.WBP_Setting_HostMachine_Key_C.Construct
-// (BlueprintCosmetic, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Setting_HostMachine_Key_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Setting_HostMachine_Key_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Setting_HostMachine_Key.WBP_Setting_HostMachine_Key_C.ExecuteUbergraph_WBP_Setting_HostMachine_Key
 // (Final, UbergraphFunction)
 // Parameters:
@@ -96,6 +82,20 @@ void UWBP_Setting_HostMachine_Key_C::ExecuteUbergraph_WBP_Setting_HostMachine_Ke
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Setting_HostMachine_Key.WBP_Setting_HostMachine_Key_C.Construct
+// (BlueprintCosmetic, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Setting_HostMachine_Key_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Setting_HostMachine_Key_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_Video.PyWidget_Loading_Video
-// 0x0008 (0x0570 - 0x0568)
+// 0x0008 (0x0578 - 0x0570)
 class UPyWidget_Loading_Video final : public UMarvelUserWidget
 {
 public:
-	class UBinkMediaPlayer*                       LoadingBinkMediaPlayer;                            // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBinkMediaPlayer*                       LoadingBinkMediaPlayer;                            // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_Video">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_Video")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_Video")
 	}
 	static class UPyWidget_Loading_Video* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_Video>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_Video) == 0x000008, "Wrong alignment on UPyWidget_Loading_Video");
-static_assert(sizeof(UPyWidget_Loading_Video) == 0x000570, "Wrong size on UPyWidget_Loading_Video");
-static_assert(offsetof(UPyWidget_Loading_Video, LoadingBinkMediaPlayer) == 0x000568, "Member 'UPyWidget_Loading_Video::LoadingBinkMediaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_Video;
 
 }
 

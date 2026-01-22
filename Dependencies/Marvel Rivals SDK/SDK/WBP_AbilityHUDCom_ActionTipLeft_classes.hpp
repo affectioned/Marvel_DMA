@@ -17,27 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_ActionTipLeft.WBP_AbilityHUDCom_ActionTipLeft_C
-// 0x0010 (0x0588 - 0x0578)
+// 0x0008 (0x0590 - 0x0588)
 class UWBP_AbilityHUDCom_ActionTipLeft_C final : public UPyWidget_CommonAbilityActionTip
 {
 public:
-	class UWidgetAnimation*                       Anim_State;                                        // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USpacer*                                Spacer;                                            // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USpacer*                                Spacer;                                            // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_ActionTipLeft_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_ActionTipLeft_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_ActionTipLeft_C")
 	}
 	static class UWBP_AbilityHUDCom_ActionTipLeft_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_ActionTipLeft_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_ActionTipLeft_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_ActionTipLeft_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_ActionTipLeft_C) == 0x000588, "Wrong size on UWBP_AbilityHUDCom_ActionTipLeft_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_ActionTipLeft_C, Anim_State) == 0x000578, "Member 'UWBP_AbilityHUDCom_ActionTipLeft_C::Anim_State' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_ActionTipLeft_C, Spacer) == 0x000580, "Member 'UWBP_AbilityHUDCom_ActionTipLeft_C::Spacer' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_ActionTipLeft_C;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103741.PySummonedComp_10374101
-// 0x0000 (0x0E30 - 0x0E30)
+// 0x0000 (0x0E88 - 0x0E88)
 class UPySummonedComp_10374101 final : public UProtectiveSummonedComponent
 {
 public:
@@ -28,39 +28,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10374101">();
+		STATIC_CLASS_IMPL("PySummonedComp_10374101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10374101")
 	}
 	static class UPySummonedComp_10374101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10374101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10374101) == 0x000008, "Wrong alignment on UPySummonedComp_10374101");
-static_assert(sizeof(UPySummonedComp_10374101) == 0x000E30, "Wrong size on UPySummonedComp_10374101");
+DUMPER7_ASSERTS_UPySummonedComp_10374101;
 
 // PythonClass PyAbility_103741.PyConfig_103741
-// 0x0010 (0x18B0 - 0x18A0)
+// 0x0010 (0x1C60 - 0x1C50)
 class UPyConfig_103741 final : public UConfig_103741
 {
 public:
-	class UCurveFloat*                            SphereScaleCurve;                                  // 0x18A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            SphereScaleCurve;                                  // 0x1C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103741">();
+		STATIC_CLASS_IMPL("PyConfig_103741")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103741")
 	}
 	static class UPyConfig_103741* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103741>();
 	}
 };
-static_assert(alignof(UPyConfig_103741) == 0x000010, "Wrong alignment on UPyConfig_103741");
-static_assert(sizeof(UPyConfig_103741) == 0x0018B0, "Wrong size on UPyConfig_103741");
-static_assert(offsetof(UPyConfig_103741, SphereScaleCurve) == 0x0018A0, "Member 'UPyConfig_103741::SphereScaleCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103741;
 
 // PythonClass PyAbility_103741.PyAbility_103741
-// 0x0000 (0x2A68 - 0x2A68)
+// 0x0000 (0x2AB8 - 0x2AB8)
 class UPyAbility_103741 : public UMarvelAbility_SelectTarget
 {
 public:
@@ -76,23 +81,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103741">();
+		STATIC_CLASS_IMPL("PyAbility_103741")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103741")
 	}
 	static class UPyAbility_103741* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103741>();
 	}
 };
-static_assert(alignof(UPyAbility_103741) == 0x000008, "Wrong alignment on UPyAbility_103741");
-static_assert(sizeof(UPyAbility_103741) == 0x002A68, "Wrong size on UPyAbility_103741");
+DUMPER7_ASSERTS_UPyAbility_103741;
 
 // PythonClass PyAbility_103741.PyCue_Summoner_Loop_10374101
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_Summoner_Loop_10374101 final : public ACueSummonerLoopCue_10374101
 {
 public:
-	class UFXSystemAsset*                         StartFX2;                                          // 0x1200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ShieldHitAudioID;                                  // 0x1208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         StartFX2;                                          // 0x1260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ShieldHitAudioID;                                  // 0x1268(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -107,20 +115,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10374101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10374101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10374101")
 	}
 	static class APyCue_Summoner_Loop_10374101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10374101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10374101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10374101");
-static_assert(sizeof(APyCue_Summoner_Loop_10374101) == 0x001210, "Wrong size on APyCue_Summoner_Loop_10374101");
-static_assert(offsetof(APyCue_Summoner_Loop_10374101, StartFX2) == 0x001200, "Member 'APyCue_Summoner_Loop_10374101::StartFX2' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoner_Loop_10374101, ShieldHitAudioID) == 0x001208, "Member 'APyCue_Summoner_Loop_10374101::ShieldHitAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10374101;
 
 // PythonClass PyAbility_103741.PyAbility_103743
-// 0x0000 (0x2A68 - 0x2A68)
+// 0x0000 (0x2AB8 - 0x2AB8)
 class UPyAbility_103743 : public UPyAbility_103741
 {
 public:
@@ -131,22 +140,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103743">();
+		STATIC_CLASS_IMPL("PyAbility_103743")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103743")
 	}
 	static class UPyAbility_103743* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103743>();
 	}
 };
-static_assert(alignof(UPyAbility_103743) == 0x000008, "Wrong alignment on UPyAbility_103743");
-static_assert(sizeof(UPyAbility_103743) == 0x002A68, "Wrong size on UPyAbility_103743");
+DUMPER7_ASSERTS_UPyAbility_103743;
 
 // PythonClass PyAbility_103741.PySummoned_10374101
-// 0x0010 (0x0C30 - 0x0C20)
+// 0x0010 (0x0C50 - 0x0C40)
 class APySummoned_10374101 : public ASummoned_10374101
 {
 public:
-	TMulticastInlineDelegate<void(float new_scale)> OnSummonedScaleChange;                           // 0x0C20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float new_scale)> OnSummonedScaleChange;                           // 0x0C40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -158,16 +170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10374101">();
+		STATIC_CLASS_IMPL("PySummoned_10374101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10374101")
 	}
 	static class APySummoned_10374101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10374101>();
 	}
 };
-static_assert(alignof(APySummoned_10374101) == 0x000010, "Wrong alignment on APySummoned_10374101");
-static_assert(sizeof(APySummoned_10374101) == 0x000C30, "Wrong size on APySummoned_10374101");
-static_assert(offsetof(APySummoned_10374101, OnSummonedScaleChange) == 0x000C20, "Member 'APySummoned_10374101::OnSummonedScaleChange' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10374101;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_TrainComputer">();
+		STATIC_CLASS_IMPL("PyWC_TrainComputer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_TrainComputer")
 	}
 	static class UPyWC_TrainComputer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_TrainComputer>();
 	}
 };
-static_assert(alignof(UPyWC_TrainComputer) == 0x000010, "Wrong alignment on UPyWC_TrainComputer");
-static_assert(sizeof(UPyWC_TrainComputer) == 0x000AE0, "Wrong size on UPyWC_TrainComputer");
+DUMPER7_ASSERTS_UPyWC_TrainComputer;
 
 }
 

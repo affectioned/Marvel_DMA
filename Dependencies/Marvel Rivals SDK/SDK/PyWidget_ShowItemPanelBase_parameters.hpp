@@ -21,9 +21,7 @@ struct PyWidget_ShowItemPanelBase_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ShowItemPanelBase_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_ShowItemPanelBase_PreConstruct");
-static_assert(sizeof(PyWidget_ShowItemPanelBase_PreConstruct) == 0x000001, "Wrong size on PyWidget_ShowItemPanelBase_PreConstruct");
-static_assert(offsetof(PyWidget_ShowItemPanelBase_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_ShowItemPanelBase_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ShowItemPanelBase_PreConstruct;
 
 }
 

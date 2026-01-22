@@ -23,9 +23,7 @@ struct PyLevelStatisticsController_OnCampPlayerChanged final
 public:
 	class AActor*                                 camp;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelStatisticsController_OnCampPlayerChanged) == 0x000008, "Wrong alignment on PyLevelStatisticsController_OnCampPlayerChanged");
-static_assert(sizeof(PyLevelStatisticsController_OnCampPlayerChanged) == 0x000008, "Wrong size on PyLevelStatisticsController_OnCampPlayerChanged");
-static_assert(offsetof(PyLevelStatisticsController_OnCampPlayerChanged, camp) == 0x000000, "Member 'PyLevelStatisticsController_OnCampPlayerChanged::camp' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelStatisticsController_OnCampPlayerChanged;
 
 // PythonFunction PyLevelStatisticsController.PyLevelStatisticsController.K2_OnPresetDestructionLevel
 // 0x0040 (0x0040 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelStatisticsController_K2_OnPresetDestructionLevel final
 public:
 	struct FPresetDestructionStatistics           Statistics;                                        // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelStatisticsController_K2_OnPresetDestructionLevel) == 0x000008, "Wrong alignment on PyLevelStatisticsController_K2_OnPresetDestructionLevel");
-static_assert(sizeof(PyLevelStatisticsController_K2_OnPresetDestructionLevel) == 0x000040, "Wrong size on PyLevelStatisticsController_K2_OnPresetDestructionLevel");
-static_assert(offsetof(PyLevelStatisticsController_K2_OnPresetDestructionLevel, Statistics) == 0x000000, "Member 'PyLevelStatisticsController_K2_OnPresetDestructionLevel::Statistics' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelStatisticsController_K2_OnPresetDestructionLevel;
 
 }
 

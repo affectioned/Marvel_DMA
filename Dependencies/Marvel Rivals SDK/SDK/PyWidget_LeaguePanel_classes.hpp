@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeaguePanel.PyWidget_LeaguePanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_LeaguePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UTexture2D*                             BgMRC;                                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BgClash;                                           // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgMRC;                                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BgClash;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeaguePanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeaguePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeaguePanel")
 	}
 	static class UPyWidget_LeaguePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeaguePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeaguePanel) == 0x000008, "Wrong alignment on UPyWidget_LeaguePanel");
-static_assert(sizeof(UPyWidget_LeaguePanel) == 0x000608, "Wrong size on UPyWidget_LeaguePanel");
-static_assert(offsetof(UPyWidget_LeaguePanel, BgMRC) == 0x0005F8, "Member 'UPyWidget_LeaguePanel::BgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeaguePanel, BgClash) == 0x000600, "Member 'UPyWidget_LeaguePanel::BgClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeaguePanel;
 
 }
 

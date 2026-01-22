@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PyDoor_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
-#include "PyDoor_classes.hpp"
 
 
 namespace SDK
@@ -35,32 +35,28 @@ public:
 
 public:
 	void 移动到实体门位置();
-	void OpenDoor();
 	void ExecuteUbergraph_Door(int32 EntryPoint);
 	void EUpdatePos();
 	void DoorAnim__UpdateFunc();
 	void DoorAnim__FinishedFunc();
 	void CloseDoor();
+	void OpenDoor();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Door_C">();
+		BP_STATIC_CLASS_IMPL("Door_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Door_C")
 	}
 	static class ADoor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADoor_C>();
 	}
 };
-static_assert(alignof(ADoor_C) == 0x000010, "Wrong alignment on ADoor_C");
-static_assert(sizeof(ADoor_C) == 0x0007B0, "Wrong size on ADoor_C");
-static_assert(offsetof(ADoor_C, UberGraphFrame) == 0x000778, "Member 'ADoor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADoor_C, DoorAnim_DoorProgress_408CB49447CDE91854DDCE91B960BED9) == 0x000780, "Member 'ADoor_C::DoorAnim_DoorProgress_408CB49447CDE91854DDCE91B960BED9' has a wrong offset!");
-static_assert(offsetof(ADoor_C, DoorAnim__Direction_408CB49447CDE91854DDCE91B960BED9) == 0x000784, "Member 'ADoor_C::DoorAnim__Direction_408CB49447CDE91854DDCE91B960BED9' has a wrong offset!");
-static_assert(offsetof(ADoor_C, DoorAnim) == 0x000788, "Member 'ADoor_C::DoorAnim' has a wrong offset!");
-static_assert(offsetof(ADoor_C, DoorAnimData) == 0x000790, "Member 'ADoor_C::DoorAnimData' has a wrong offset!");
-static_assert(offsetof(ADoor_C, AnimSpeed) == 0x0007A0, "Member 'ADoor_C::AnimSpeed' has a wrong offset!");
-static_assert(offsetof(ADoor_C, Delay) == 0x0007A8, "Member 'ADoor_C::Delay' has a wrong offset!");
+DUMPER7_ASSERTS_ADoor_C;
 
 }
 

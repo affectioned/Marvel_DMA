@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNewYorkH01Chain">();
+		STATIC_CLASS_IMPL("PyNewYorkH01Chain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNewYorkH01Chain")
 	}
 	static class APyNewYorkH01Chain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNewYorkH01Chain>();
 	}
 };
-static_assert(alignof(APyNewYorkH01Chain) == 0x000010, "Wrong alignment on APyNewYorkH01Chain");
-static_assert(sizeof(APyNewYorkH01Chain) == 0x000730, "Wrong size on APyNewYorkH01Chain");
-static_assert(offsetof(APyNewYorkH01Chain, ReplicateState) == 0x000710, "Member 'APyNewYorkH01Chain::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyNewYorkH01Chain, TriggerProgress) == 0x000714, "Member 'APyNewYorkH01Chain::TriggerProgress' has a wrong offset!");
-static_assert(offsetof(APyNewYorkH01Chain, AnimIdle) == 0x000718, "Member 'APyNewYorkH01Chain::AnimIdle' has a wrong offset!");
-static_assert(offsetof(APyNewYorkH01Chain, AnimEnd) == 0x000720, "Member 'APyNewYorkH01Chain::AnimEnd' has a wrong offset!");
+DUMPER7_ASSERTS_APyNewYorkH01Chain;
 
 }
 

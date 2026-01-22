@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMRRotationPanel">();
+		STATIC_CLASS_IMPL("PyMRRotationPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMRRotationPanel")
 	}
 	static class APyMRRotationPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMRRotationPanel>();
 	}
 };
-static_assert(alignof(APyMRRotationPanel) == 0x000010, "Wrong alignment on APyMRRotationPanel");
-static_assert(sizeof(APyMRRotationPanel) == 0x000700, "Wrong size on APyMRRotationPanel");
-static_assert(offsetof(APyMRRotationPanel, RotationSpeed) == 0x0006E0, "Member 'APyMRRotationPanel::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(APyMRRotationPanel, RotationClose) == 0x0006E4, "Member 'APyMRRotationPanel::RotationClose' has a wrong offset!");
-static_assert(offsetof(APyMRRotationPanel, CloseAudio) == 0x0006E8, "Member 'APyMRRotationPanel::CloseAudio' has a wrong offset!");
-static_assert(offsetof(APyMRRotationPanel, State) == 0x0006F0, "Member 'APyMRRotationPanel::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyMRRotationPanel;
 
 }
 

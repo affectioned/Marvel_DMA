@@ -33,16 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessSwitchCameraController">();
+		STATIC_CLASS_IMPL("PyBattleChessSwitchCameraController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessSwitchCameraController")
 	}
 	static class APyBattleChessSwitchCameraController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBattleChessSwitchCameraController>();
 	}
 };
-static_assert(alignof(APyBattleChessSwitchCameraController) == 0x000010, "Wrong alignment on APyBattleChessSwitchCameraController");
-static_assert(sizeof(APyBattleChessSwitchCameraController) == 0x0006F0, "Wrong size on APyBattleChessSwitchCameraController");
-static_assert(offsetof(APyBattleChessSwitchCameraController, CameraTargetActor) == 0x0006E0, "Member 'APyBattleChessSwitchCameraController::CameraTargetActor' has a wrong offset!");
+DUMPER7_ASSERTS_APyBattleChessSwitchCameraController;
 
 }
 

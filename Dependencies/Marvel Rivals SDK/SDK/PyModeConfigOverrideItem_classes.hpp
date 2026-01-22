@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyModeConfigOverrideItem">();
+		STATIC_CLASS_IMPL("PyModeConfigOverrideItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyModeConfigOverrideItem")
 	}
 	static class UPyModeConfigOverrideItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyModeConfigOverrideItem>();
 	}
 };
-static_assert(alignof(UPyModeConfigOverrideItem) == 0x000008, "Wrong alignment on UPyModeConfigOverrideItem");
-static_assert(sizeof(UPyModeConfigOverrideItem) == 0x000048, "Wrong size on UPyModeConfigOverrideItem");
-static_assert(offsetof(UPyModeConfigOverrideItem, HeroSelectTime) == 0x000038, "Member 'UPyModeConfigOverrideItem::HeroSelectTime' has a wrong offset!");
-static_assert(offsetof(UPyModeConfigOverrideItem, PrepareTime) == 0x00003C, "Member 'UPyModeConfigOverrideItem::PrepareTime' has a wrong offset!");
-static_assert(offsetof(UPyModeConfigOverrideItem, OnlyOverrideTimeIfLess) == 0x000040, "Member 'UPyModeConfigOverrideItem::OnlyOverrideTimeIfLess' has a wrong offset!");
+DUMPER7_ASSERTS_UPyModeConfigOverrideItem;
 
 }
 

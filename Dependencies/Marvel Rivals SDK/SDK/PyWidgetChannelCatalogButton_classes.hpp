@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidgetChannelCatalogButton.PyWidgetChannelCatalogButton
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidgetChannelCatalogButton : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetChannelCatalogButton">();
+		STATIC_CLASS_IMPL("PyWidgetChannelCatalogButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetChannelCatalogButton")
 	}
 	static class UPyWidgetChannelCatalogButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetChannelCatalogButton>();
 	}
 };
-static_assert(alignof(UPyWidgetChannelCatalogButton) == 0x000008, "Wrong alignment on UPyWidgetChannelCatalogButton");
-static_assert(sizeof(UPyWidgetChannelCatalogButton) == 0x0005C0, "Wrong size on UPyWidgetChannelCatalogButton");
+DUMPER7_ASSERTS_UPyWidgetChannelCatalogButton;
 
 }
 

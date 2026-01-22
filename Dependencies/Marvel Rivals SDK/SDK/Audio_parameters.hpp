@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVolumeHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVolumeHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVolumeHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVolumeHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVolumeHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVolumeHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVolumeHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVolumeHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVolumeHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVolumeHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVolumeHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVolumeHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVolumeHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVolumeHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVolumeHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryInputDeviceOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -43,12 +37,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryInputDeviceOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryInputDeviceOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryInputDeviceOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryInputDeviceOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryInputDeviceOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryInputDeviceOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryInputDeviceOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryInputDeviceOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryInputDeviceOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryInputDeviceOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryInputDeviceHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -61,13 +50,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryInputDeviceHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryInputDeviceHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryInputDeviceHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryInputDeviceHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryInputDeviceHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue, options) == 0x000068, "Member 'UISettingEntryInputDeviceHandler_BP_GetCurrentValue::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryInputDeviceHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryInputDeviceHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryInputDeviceHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -83,15 +66,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryInputDeviceHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryInputDeviceHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryInputDeviceHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryInputDeviceHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryInputDeviceHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryInputDeviceHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryInputDeviceHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -103,12 +78,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryVoiceEnhancementHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -121,13 +91,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceEnhancementHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceEnhancementHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -143,15 +107,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceEnhancementHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceEnhancementHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceEnhancementHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceEnhancementHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceEnhancementHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -164,13 +120,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceEnhancementHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -186,15 +136,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -207,13 +149,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -226,13 +162,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_IsOverrideMinMaxValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -245,13 +175,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_IsOverrideMinMaxValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_GetMinValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -264,13 +188,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMinValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetScaleHandler.BP_GetMaxValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -283,13 +201,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetScaleHandler_BP_GetMaxValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChatOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -301,12 +213,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChatOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryVoiceChatOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryVoiceChatOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryVoiceChatOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryVoiceChatOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryVoiceChatOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChatOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryVoiceChatOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryVoiceChatOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChatOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -318,12 +225,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryChatOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -335,12 +237,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryChatOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryChatOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryChatOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryChatOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryChatOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryChatOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryChatOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryChatOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryChatOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryVoiceChatHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -353,13 +250,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChatHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChatHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChatHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChatHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryVoiceChatHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChatHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChatHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChatHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChatHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -375,15 +266,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChatHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChatHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChatHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChatHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChatHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChatHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChatHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -396,13 +279,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChatHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChatHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChatHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChatHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVoiceChatHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVoiceChatHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChatHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChatHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChatHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -415,13 +292,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -437,15 +308,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetSettingHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerPresetSettingHandler.BP_OnBtnClicked
 // 0x0160 (0x0160 - 0x0000)
@@ -461,15 +324,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked");
-static_assert(sizeof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked) == 0x000160, "Wrong size on UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, key) == 0x000008, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, params) == 0x000018, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, options) == 0x000068, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerPresetSettingHandler_BP_OnBtnClicked;
 
 // PythonFunction Audio.UISettingEntryChatHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -482,13 +337,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryChatHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryChatHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryChatHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryChatHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryChatHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryChatHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryChatHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryChatHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryChatHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryChatHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -504,15 +353,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryChatHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryChatHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryChatHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryChatHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryChatHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryChatHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryChatHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryChatHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryChatHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryChatHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryChatHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryChatHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -525,13 +366,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryChatHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryChatHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryChatHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryChatHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryChatHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryChatHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryChatHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryChatHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryChatHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryChatVolumeHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -547,15 +382,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryChatVolumeHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryChatVolumeHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryChatVolumeHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryChatVolumeHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryChatVolumeHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatVolumeHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryChatVolumeHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -568,13 +395,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryChatVolumeHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryChatVolumeHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryChatVolumeHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryChatVolumeHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryChatVolumeHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryChatVolumeHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryChatVolumeHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryChatVolumeHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryChatVolumeHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryDubbingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -590,15 +411,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryDubbingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryDubbingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryDubbingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryDubbingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryDubbingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryDubbingHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryDubbingHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -611,13 +424,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryDubbingHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryDubbingHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryDubbingHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryDubbingHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryDubbingHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryDubbingHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryDubbingHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryDubbingHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryDubbingHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryDubbingHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryDubbingHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingCombatMixStatusHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -633,15 +440,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingCombatMixStatusHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingCombatMixStatusHandler_BP_OnChanged");
-static_assert(sizeof(UISettingCombatMixStatusHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingCombatMixStatusHandler_BP_OnChanged");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixStatusHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingCombatMixStatusHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingCombatMixStatusHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingCombatMixRtpcHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -657,15 +456,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingCombatMixRtpcHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingCombatMixRtpcHandler_BP_OnChanged");
-static_assert(sizeof(UISettingCombatMixRtpcHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingCombatMixRtpcHandler_BP_OnChanged");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingCombatMixRtpcHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingCombatMixRtpcHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingCombatMixRtpcHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -678,13 +469,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingCombatMixRtpcHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingCombatMixRtpcHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingCombatMixRtpcHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingCombatMixRtpcHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingCombatMixRtpcHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingCombatMixRtpcHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingCombatMixRtpcHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingCombatMixRtpcHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingCombatMixRtpcHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingPlayModeHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -700,15 +485,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingPlayModeHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingPlayModeHandler_BP_OnChanged");
-static_assert(sizeof(UISettingPlayModeHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingPlayModeHandler_BP_OnChanged");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingPlayModeHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingPlayModeHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingPlayModeHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingPlayModeHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingPlayModeHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingPlayModeHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingPlayModeHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingPlayModeHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingPlayModeHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingSoundPlayOutputDevice.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -721,13 +498,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingSoundPlayOutputDevice_BP_GetCurrentValue");
-static_assert(sizeof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingSoundPlayOutputDevice_BP_GetCurrentValue");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingSoundPlayOutputDevice_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingSoundPlayOutputDevice_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingSoundPlayOutputDevice_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingSoundPlayOutputDevice_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingSoundPlayOutputDevice_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingSoundPlayOutputDevice_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingSoundPlayOutputDevice.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -743,15 +514,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingSoundPlayOutputDevice_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingSoundPlayOutputDevice_BP_OnChanged");
-static_assert(sizeof(UISettingSoundPlayOutputDevice_BP_OnChanged) == 0x000160, "Wrong size on UISettingSoundPlayOutputDevice_BP_OnChanged");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, obj) == 0x000000, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, params) == 0x000018, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, options) == 0x000068, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingSoundPlayOutputDevice_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingSoundPlayOutputDevice_BP_OnChanged;
 
 // PythonFunction Audio.UISettingSoundPlayOutputDevice.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -764,13 +527,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingSoundPlayOutputDevice_BP_GetDefaultValue");
-static_assert(sizeof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingSoundPlayOutputDevice_BP_GetDefaultValue");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingSoundPlayOutputDevice_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingSoundPlayOutputDevice_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingSoundPlayOutputDevice_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingSoundPlayOutputDevice_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingSoundPlayOutputDevice_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingSoundPlayOutputDevice_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingSoundPlayOutputDevice_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntrySoundPlayOutputDeviceGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -782,12 +539,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntrySoundPlayOutputDeviceGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryOpenMicChannelOptionGenerator.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -800,13 +552,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryOpenMicChannelOptionGenerator_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryOpenMicChannelOptionGenerator.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -822,15 +568,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged");
-static_assert(sizeof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryOpenMicChannelOptionGenerator_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryOpenPlayChannelOptionGenerator.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -843,13 +581,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryOpenPlayChannelOptionGenerator_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryOpenPlayChannelOptionGenerator.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -865,15 +597,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged");
-static_assert(sizeof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryOpenPlayChannelOptionGenerator_BP_OnChanged;
 
 // PythonFunction Audio.UISettingTestMicHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -886,13 +610,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingTestMicHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingTestMicHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingTestMicHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingTestMicHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingTestMicHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingTestMicHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingTestMicHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingTestMicHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingTestMicHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingTestMicHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingTestMicHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -905,13 +623,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingTestMicHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingTestMicHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingTestMicHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingTestMicHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingTestMicHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingTestMicHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingTestMicHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingTestMicHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingTestMicHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingTestMicHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingTestMicHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -927,15 +639,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingTestMicHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingTestMicHandler_BP_OnChanged");
-static_assert(sizeof(UISettingTestMicHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingTestMicHandler_BP_OnChanged");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingTestMicHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingTestMicHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingTestMicHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingTestMicHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingTestMicHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingTestMicHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingTestMicHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingTestMicHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingTestMicHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -948,13 +652,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -970,15 +668,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneSettingHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneScaleHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -991,13 +681,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneScaleHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneScaleHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1010,13 +694,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneScaleHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerToneScaleHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -1032,15 +710,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerToneScaleHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectOptionGenerator.BP_Gen
 // 0x00B8 (0x00B8 - 0x0000)
@@ -1052,12 +722,7 @@ public:
 	TMap<int32, class FText>                      options;                                           // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<int32, class FText>                      ReturnValue;                                       // 0x0068(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen) == 0x0000B8, "Wrong size on UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen, options) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen, ReturnValue) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectOptionGenerator_BP_Gen;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectSettingHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1070,13 +735,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectSettingHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectSettingHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -1092,15 +751,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectSettingHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_GetCurrentValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1113,13 +764,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue, params) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_GetCurrentValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -1135,15 +780,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_OnChanged;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_GetDefaultValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1156,13 +793,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_GetDefaultValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_IsOverrideMinMaxValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1175,13 +806,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_IsOverrideMinMaxValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_GetMinValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1194,13 +819,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMinValue;
 
 // PythonFunction Audio.UISettingEntryVoiceChangerEffectScaleHandler.BP_GetMaxValue
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1213,13 +832,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue) == 0x000008, "Wrong alignment on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue");
-static_assert(sizeof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue) == 0x0000C0, "Wrong size on UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue, obj) == 0x000000, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue, setting_key) == 0x000008, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue, p) == 0x000018, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue, o) == 0x000068, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryVoiceChangerEffectScaleHandler_BP_GetMaxValue;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103051.PyProjectile_10305101
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10305101 : public AProjectile_10305101
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10305101">();
+		STATIC_CLASS_IMPL("PyProjectile_10305101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10305101")
 	}
 	static class APyProjectile_10305101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10305101>();
 	}
 };
-static_assert(alignof(APyProjectile_10305101) == 0x000010, "Wrong alignment on APyProjectile_10305101");
-static_assert(sizeof(APyProjectile_10305101) == 0x003B90, "Wrong size on APyProjectile_10305101");
+DUMPER7_ASSERTS_APyProjectile_10305101;
 
 }
 

@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HeroDifficulty.WBP_HeroDifficulty_C
-// 0x0038 (0x0608 - 0x05D0)
+// 0x0038 (0x0610 - 0x05D8)
 class UWBP_HeroDifficulty_C final : public UPyWidget_SelectHero_HeroDifficulty
 {
 public:
-	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star_1;                                        // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star_2;                                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star_3;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star_4;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Star_5;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_DIFFICULTY;                                // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Reset;                                        // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star_1;                                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star_2;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star_3;                                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star_4;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Star_5;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_DIFFICULTY;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HeroDifficulty_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HeroDifficulty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HeroDifficulty_C")
 	}
 	static class UWBP_HeroDifficulty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HeroDifficulty_C>();
 	}
 };
-static_assert(alignof(UWBP_HeroDifficulty_C) == 0x000008, "Wrong alignment on UWBP_HeroDifficulty_C");
-static_assert(sizeof(UWBP_HeroDifficulty_C) == 0x000608, "Wrong size on UWBP_HeroDifficulty_C");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Anim_Reset) == 0x0005D0, "Member 'UWBP_HeroDifficulty_C::Anim_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Img_Star_1) == 0x0005D8, "Member 'UWBP_HeroDifficulty_C::Img_Star_1' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Img_Star_2) == 0x0005E0, "Member 'UWBP_HeroDifficulty_C::Img_Star_2' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Img_Star_3) == 0x0005E8, "Member 'UWBP_HeroDifficulty_C::Img_Star_3' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Img_Star_4) == 0x0005F0, "Member 'UWBP_HeroDifficulty_C::Img_Star_4' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, Img_Star_5) == 0x0005F8, "Member 'UWBP_HeroDifficulty_C::Img_Star_5' has a wrong offset!");
-static_assert(offsetof(UWBP_HeroDifficulty_C, SizeBox_DIFFICULTY) == 0x000600, "Member 'UWBP_HeroDifficulty_C::SizeBox_DIFFICULTY' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HeroDifficulty_C;
 
 }
 

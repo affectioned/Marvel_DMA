@@ -25,12 +25,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              MapBG_42_24235F8644CF1C2F89B829953BD3DA2C;         // 0x0018(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          Delivery_44_31C8A52B48DCF0E422568699000D7117;      // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FCommonUIAssetInfo) == 0x000008, "Wrong alignment on FCommonUIAssetInfo");
-static_assert(sizeof(FCommonUIAssetInfo) == 0x000050, "Wrong size on FCommonUIAssetInfo");
-static_assert(offsetof(FCommonUIAssetInfo, LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8) == 0x000000, "Member 'FCommonUIAssetInfo::LevelID_2_7B74F18647FCC4B4025B0E85B2878AE8' has a wrong offset!");
-static_assert(offsetof(FCommonUIAssetInfo, LevelName_5_A266601D484A018157B4E9A1EBBE81E4) == 0x000008, "Member 'FCommonUIAssetInfo::LevelName_5_A266601D484A018157B4E9A1EBBE81E4' has a wrong offset!");
-static_assert(offsetof(FCommonUIAssetInfo, MapBG_42_24235F8644CF1C2F89B829953BD3DA2C) == 0x000018, "Member 'FCommonUIAssetInfo::MapBG_42_24235F8644CF1C2F89B829953BD3DA2C' has a wrong offset!");
-static_assert(offsetof(FCommonUIAssetInfo, Delivery_44_31C8A52B48DCF0E422568699000D7117) == 0x000048, "Member 'FCommonUIAssetInfo::Delivery_44_31C8A52B48DCF0E422568699000D7117' has a wrong offset!");
+DUMPER7_ASSERTS_FCommonUIAssetInfo;
 
 }
 

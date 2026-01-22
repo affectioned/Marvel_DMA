@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ComTips_Bg_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ComTips_Bg_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ComTips_Bg_C")
 	}
 	static class UWBP_ComTips_Bg_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ComTips_Bg_C>();
 	}
 };
-static_assert(alignof(UWBP_ComTips_Bg_C) == 0x000008, "Wrong alignment on UWBP_ComTips_Bg_C");
-static_assert(sizeof(UWBP_ComTips_Bg_C) == 0x0003C8, "Wrong size on UWBP_ComTips_Bg_C");
-static_assert(offsetof(UWBP_ComTips_Bg_C, Img_Tips_Bg) == 0x0003B8, "Member 'UWBP_ComTips_Bg_C::Img_Tips_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_ComTips_Bg_C, Img_Tips_Frame) == 0x0003C0, "Member 'UWBP_ComTips_Bg_C::Img_Tips_Frame' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ComTips_Bg_C;
 
 }
 

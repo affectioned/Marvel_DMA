@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckHeroID">();
+		STATIC_CLASS_IMPL("BTD_PyCheckHeroID")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckHeroID")
 	}
 	static class UBTD_PyCheckHeroID* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckHeroID>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckHeroID) == 0x000008, "Wrong alignment on UBTD_PyCheckHeroID");
-static_assert(sizeof(UBTD_PyCheckHeroID) == 0x0000C0, "Wrong size on UBTD_PyCheckHeroID");
-static_assert(offsetof(UBTD_PyCheckHeroID, HeroID) == 0x0000B8, "Member 'UBTD_PyCheckHeroID::HeroID' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckHeroID;
 
 }
 

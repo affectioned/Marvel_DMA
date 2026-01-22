@@ -25,12 +25,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UButton*                                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change) == 0x000008, "Wrong alignment on Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change");
-static_assert(sizeof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change) == 0x000018, "Wrong size on Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change");
-static_assert(offsetof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change, ChildIndex) == 0x000000, "Member 'Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change::ChildIndex' has a wrong offset!");
-static_assert(offsetof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change, FocusedChildDirection) == 0x000004, "Member 'Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change::FocusedChildDirection' has a wrong offset!");
-static_assert(offsetof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change, NumItemsLine) == 0x000008, "Member 'Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change::NumItemsLine' has a wrong offset!");
-static_assert(offsetof(Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change, ReturnValue) == 0x000010, "Member 'Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Pywidget_Performance_PreviousReports_on_try_srcoll_when_next_focusable_child_change;
 
 }
 

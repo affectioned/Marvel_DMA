@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebugStateTreeProcessor">();
+		STATIC_CLASS_IMPL("MassDebugStateTreeProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebugStateTreeProcessor")
 	}
 	static class UMassDebugStateTreeProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassDebugStateTreeProcessor>();
 	}
 };
-static_assert(alignof(UMassDebugStateTreeProcessor) == 0x000008, "Wrong alignment on UMassDebugStateTreeProcessor");
-static_assert(sizeof(UMassDebugStateTreeProcessor) == 0x000370, "Wrong size on UMassDebugStateTreeProcessor");
+DUMPER7_ASSERTS_UMassDebugStateTreeProcessor;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatChannelTab">();
+		STATIC_CLASS_IMPL("PyWidget_ChatChannelTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatChannelTab")
 	}
 	static class UPyWidget_ChatChannelTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatChannelTab>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatChannelTab) == 0x000008, "Wrong alignment on UPyWidget_ChatChannelTab");
-static_assert(sizeof(UPyWidget_ChatChannelTab) == 0x0003B8, "Wrong size on UPyWidget_ChatChannelTab");
+DUMPER7_ASSERTS_UPyWidget_ChatChannelTab;
 
 }
 

@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateConnectComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateConnectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateConnectComponent")
 	}
 	static class UPyPlayerStateConnectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateConnectComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateConnectComponent) == 0x000008, "Wrong alignment on UPyPlayerStateConnectComponent");
-static_assert(sizeof(UPyPlayerStateConnectComponent) == 0x000140, "Wrong size on UPyPlayerStateConnectComponent");
-static_assert(offsetof(UPyPlayerStateConnectComponent, CommanderUID) == 0x000108, "Member 'UPyPlayerStateConnectComponent::CommanderUID' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateConnectComponent, DelegateCommand) == 0x00010C, "Member 'UPyPlayerStateConnectComponent::DelegateCommand' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateConnectComponent, DelegatorUIDArray) == 0x000110, "Member 'UPyPlayerStateConnectComponent::DelegatorUIDArray' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateConnectComponent, CommanderChanged) == 0x000120, "Member 'UPyPlayerStateConnectComponent::CommanderChanged' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateConnectComponent, DelegatorChanged) == 0x000130, "Member 'UPyPlayerStateConnectComponent::DelegatorChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateConnectComponent;
 
 }
 

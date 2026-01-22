@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_MallChildPanel_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_MallRecharge_Main.PyWidget_MallRecharge_Main
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_MallRecharge_Main final : public UPyWidget_MallChildPanel
 {
 public:
@@ -32,23 +32,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallRecharge_Main">();
+		STATIC_CLASS_IMPL("PyWidget_MallRecharge_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallRecharge_Main")
 	}
 	static class UPyWidget_MallRecharge_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallRecharge_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_MallRecharge_Main) == 0x000008, "Wrong alignment on UPyWidget_MallRecharge_Main");
-static_assert(sizeof(UPyWidget_MallRecharge_Main) == 0x0005F8, "Wrong size on UPyWidget_MallRecharge_Main");
+DUMPER7_ASSERTS_UPyWidget_MallRecharge_Main;
 
 // PythonClass PyWidget_MallRecharge_Main.PyWidget_MallRecharge_New_SmallItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_MallRecharge_New_SmallItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           BtnPressColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           BtnPressColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,24 +59,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallRecharge_New_SmallItem">();
+		STATIC_CLASS_IMPL("PyWidget_MallRecharge_New_SmallItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallRecharge_New_SmallItem")
 	}
 	static class UPyWidget_MallRecharge_New_SmallItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallRecharge_New_SmallItem>();
 	}
 };
-static_assert(alignof(UPyWidget_MallRecharge_New_SmallItem) == 0x000008, "Wrong alignment on UPyWidget_MallRecharge_New_SmallItem");
-static_assert(sizeof(UPyWidget_MallRecharge_New_SmallItem) == 0x0005D0, "Wrong size on UPyWidget_MallRecharge_New_SmallItem");
-static_assert(offsetof(UPyWidget_MallRecharge_New_SmallItem, BtnPressColor) == 0x0005BC, "Member 'UPyWidget_MallRecharge_New_SmallItem::BtnPressColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallRecharge_New_SmallItem;
 
 // PythonClass PyWidget_MallRecharge_Main.PyWidget_MallRecharge_New_BigItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_MallRecharge_New_BigItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           BtnPressColor;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           BtnPressColor;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -81,16 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallRecharge_New_BigItem">();
+		STATIC_CLASS_IMPL("PyWidget_MallRecharge_New_BigItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallRecharge_New_BigItem")
 	}
 	static class UPyWidget_MallRecharge_New_BigItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallRecharge_New_BigItem>();
 	}
 };
-static_assert(alignof(UPyWidget_MallRecharge_New_BigItem) == 0x000008, "Wrong alignment on UPyWidget_MallRecharge_New_BigItem");
-static_assert(sizeof(UPyWidget_MallRecharge_New_BigItem) == 0x0005D0, "Wrong size on UPyWidget_MallRecharge_New_BigItem");
-static_assert(offsetof(UPyWidget_MallRecharge_New_BigItem, BtnPressColor) == 0x0005BC, "Member 'UPyWidget_MallRecharge_New_BigItem::BtnPressColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallRecharge_New_BigItem;
 
 }
 

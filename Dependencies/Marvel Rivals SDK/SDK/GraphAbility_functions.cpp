@@ -802,6 +802,101 @@ void UGATask_PlayTimeline::OnReceiveEvent(const struct FGameplayTag& EventTag, c
 }
 
 
+// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_MultiMode
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   WeaponID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TArray<int32>&                    ShootModes_0                                           (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// int32                                   ShootCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ShootDelay_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReloadAbilityID_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGATask_WeaponFireOnce*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UGATask_WeaponFireOnce* UGATask_WeaponFireOnce::WeaponFireOnce_MultiMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, const TArray<int32>& ShootModes_0, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("GATask_WeaponFireOnce", "WeaponFireOnce_MultiMode");
+
+	Params::GATask_WeaponFireOnce_WeaponFireOnce_MultiMode Parms{};
+
+	Parms.OwningAbility = OwningAbility;
+	Parms.WeaponID_0 = WeaponID_0;
+	Parms.ShootModes_0 = std::move(ShootModes_0);
+	Parms.ShootCount_0 = ShootCount_0;
+	Parms.ShootDelay_0 = ShootDelay_0;
+	Parms.ReloadAbilityID_0 = ReloadAbilityID_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_SingleMode
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   WeaponID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ShootMode                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ShootCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ShootDelay_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReloadAbilityID_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGATask_WeaponFireOnce*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UGATask_WeaponFireOnce* UGATask_WeaponFireOnce::WeaponFireOnce_SingleMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, int32 ShootMode, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("GATask_WeaponFireOnce", "WeaponFireOnce_SingleMode");
+
+	Params::GATask_WeaponFireOnce_WeaponFireOnce_SingleMode Parms{};
+
+	Parms.OwningAbility = OwningAbility;
+	Parms.WeaponID_0 = WeaponID_0;
+	Parms.ShootMode = ShootMode;
+	Parms.ShootCount_0 = ShootCount_0;
+	Parms.ShootDelay_0 = ShootDelay_0;
+	Parms.ReloadAbilityID_0 = ReloadAbilityID_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GraphAbility.GATask_WeaponFireOnce.Shoot
+// (Final, Native, Protected)
+
+void UGATask_WeaponFireOnce::Shoot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GATask_WeaponFireOnce", "Shoot");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function GraphAbility.GATask_ProjectileHoming.SetProjectileHoming
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1100,6 +1195,82 @@ void UGATask_SpawnProjectile::OnSpawnSuccess(class AActor* SpawnActor, const str
 
 	Parms.SpawnActor = SpawnActor;
 	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GraphAbility.GATask_WaitKillEvent.WaitKillEvent
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           SourceCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           TargetCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGATask_WaitKillEvent*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UGATask_WaitKillEvent* UGATask_WaitKillEvent::WaitKillEvent(class UGameplayAbility* OwningAbility, class AActor* SourceCharacter, class AActor* TargetCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("GATask_WaitKillEvent", "WaitKillEvent");
+
+	Params::GATask_WaitKillEvent_WaitKillEvent Parms{};
+
+	Parms.OwningAbility = OwningAbility;
+	Parms.SourceCharacter = SourceCharacter;
+	Parms.TargetCharacter = TargetCharacter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GraphAbility.GATask_WaitKillEvent.EndWaiting
+// (Final, Native, Public, BlueprintCallable)
+
+void UGATask_WaitKillEvent::EndWaiting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GATask_WaitKillEvent", "EndWaiting");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GraphAbility.GATask_WaitKillEvent.OnKillCallback
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FUIKillInfo&               KillInfo                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UGATask_WaitKillEvent::OnKillCallback(const struct FUIKillInfo& KillInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GATask_WaitKillEvent", "OnKillCallback");
+
+	Params::GATask_WaitKillEvent_OnKillCallback Parms{};
+
+	Parms.KillInfo = std::move(KillInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1623,7 +1794,7 @@ class UGATask_WaitAbilityHit* UGATask_WaitAbilityHit::WaitAbilityHit(class UGame
 // (Final, Native, Protected, HasOutParams)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UGATask_WaitAbilityHit::OnAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -1725,6 +1896,88 @@ class UGATask_WaitAttributeChange* UGATask_WaitAttributeChange::WaitAttributeCha
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function GraphAbility.GATask_WaitTargetData.WaitTargetData_PawnPlacement
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FFindGroundParam&          TraceParams_0                                          (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FGameplayTag&              PlacementCueTag_0                                      (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGATask_WaitTargetData*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UGATask_WaitTargetData* UGATask_WaitTargetData::WaitTargetData_PawnPlacement(class UGameplayAbility* OwningAbility, const struct FFindGroundParam& TraceParams_0, const struct FGameplayTag& PlacementCueTag_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("GATask_WaitTargetData", "WaitTargetData_PawnPlacement");
+
+	Params::GATask_WaitTargetData_WaitTargetData_PawnPlacement Parms{};
+
+	Parms.OwningAbility = OwningAbility;
+	Parms.TraceParams_0 = std::move(TraceParams_0);
+	Parms.PlacementCueTag_0 = std::move(PlacementCueTag_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function GraphAbility.GATask_WaitTargetData.OnCancelledCallback
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayAbilityTargetDataHandle&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UGATask_WaitTargetData::OnCancelledCallback(const struct FGameplayAbilityTargetDataHandle& Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GATask_WaitTargetData", "OnCancelledCallback");
+
+	Params::GATask_WaitTargetData_OnCancelledCallback Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GraphAbility.GATask_WaitTargetData.OnValidDataCallback
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayAbilityTargetDataHandle&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UGATask_WaitTargetData::OnValidDataCallback(const struct FGameplayAbilityTargetDataHandle& Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GATask_WaitTargetData", "OnValidDataCallback");
+
+	Params::GATask_WaitTargetData_OnValidDataCallback Parms{};
+
+	Parms.Data = std::move(Data);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2092,82 +2345,6 @@ void UGATask_WaitDamageEvent::OnDamageCallback(class AActor* InSourceAvatar, cla
 }
 
 
-// Function GraphAbility.GATask_WaitKillEvent.WaitKillEvent
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           SourceCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           TargetCharacter                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGATask_WaitKillEvent*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UGATask_WaitKillEvent* UGATask_WaitKillEvent::WaitKillEvent(class UGameplayAbility* OwningAbility, class AActor* SourceCharacter, class AActor* TargetCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GATask_WaitKillEvent", "WaitKillEvent");
-
-	Params::GATask_WaitKillEvent_WaitKillEvent Parms{};
-
-	Parms.OwningAbility = OwningAbility;
-	Parms.SourceCharacter = SourceCharacter;
-	Parms.TargetCharacter = TargetCharacter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function GraphAbility.GATask_WaitKillEvent.EndWaiting
-// (Final, Native, Public, BlueprintCallable)
-
-void UGATask_WaitKillEvent::EndWaiting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GATask_WaitKillEvent", "EndWaiting");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function GraphAbility.GATask_WaitKillEvent.OnKillCallback
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FUIKillInfo&               KillInfo                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UGATask_WaitKillEvent::OnKillCallback(const struct FUIKillInfo& KillInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GATask_WaitKillEvent", "OnKillCallback");
-
-	Params::GATask_WaitKillEvent_OnKillCallback Parms{};
-
-	Parms.KillInfo = std::move(KillInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function GraphAbility.GATask_WaitInput.WaitCancel
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2498,88 +2675,6 @@ void UGATask_WaitSignal::EndWaitingSignal()
 }
 
 
-// Function GraphAbility.GATask_WaitTargetData.WaitTargetData_PawnPlacement
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FFindGroundParam&          TraceParams_0                                          (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// const struct FGameplayTag&              PlacementCueTag_0                                      (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGATask_WaitTargetData*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UGATask_WaitTargetData* UGATask_WaitTargetData::WaitTargetData_PawnPlacement(class UGameplayAbility* OwningAbility, const struct FFindGroundParam& TraceParams_0, const struct FGameplayTag& PlacementCueTag_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GATask_WaitTargetData", "WaitTargetData_PawnPlacement");
-
-	Params::GATask_WaitTargetData_WaitTargetData_PawnPlacement Parms{};
-
-	Parms.OwningAbility = OwningAbility;
-	Parms.TraceParams_0 = std::move(TraceParams_0);
-	Parms.PlacementCueTag_0 = std::move(PlacementCueTag_0);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function GraphAbility.GATask_WaitTargetData.OnCancelledCallback
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayAbilityTargetDataHandle&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UGATask_WaitTargetData::OnCancelledCallback(const struct FGameplayAbilityTargetDataHandle& Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GATask_WaitTargetData", "OnCancelledCallback");
-
-	Params::GATask_WaitTargetData_OnCancelledCallback Parms{};
-
-	Parms.Data = std::move(Data);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function GraphAbility.GATask_WaitTargetData.OnValidDataCallback
-// (Final, Native, Protected, HasOutParams)
-// Parameters:
-// const struct FGameplayAbilityTargetDataHandle&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UGATask_WaitTargetData::OnValidDataCallback(const struct FGameplayAbilityTargetDataHandle& Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GATask_WaitTargetData", "OnValidDataCallback");
-
-	Params::GATask_WaitTargetData_OnValidDataCallback Parms{};
-
-	Parms.Data = std::move(Data);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function GraphAbility.GATask_WaitTime.WaitTimeSeconds
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -2619,101 +2714,6 @@ void UGATask_WaitTime::OnTimeFinish()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("GATask_WaitTime", "OnTimeFinish");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_MultiMode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   WeaponID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<int32>&                    ShootModes_0                                           (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-// int32                                   ShootCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ShootDelay_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReloadAbilityID_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGATask_WeaponFireOnce*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UGATask_WeaponFireOnce* UGATask_WeaponFireOnce::WeaponFireOnce_MultiMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, const TArray<int32>& ShootModes_0, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GATask_WeaponFireOnce", "WeaponFireOnce_MultiMode");
-
-	Params::GATask_WeaponFireOnce_WeaponFireOnce_MultiMode Parms{};
-
-	Parms.OwningAbility = OwningAbility;
-	Parms.WeaponID_0 = WeaponID_0;
-	Parms.ShootModes_0 = std::move(ShootModes_0);
-	Parms.ShootCount_0 = ShootCount_0;
-	Parms.ShootDelay_0 = ShootDelay_0;
-	Parms.ReloadAbilityID_0 = ReloadAbilityID_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function GraphAbility.GATask_WeaponFireOnce.WeaponFireOnce_SingleMode
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UGameplayAbility*                 OwningAbility                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   WeaponID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ShootMode                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ShootCount_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   ShootDelay_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReloadAbilityID_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGATask_WeaponFireOnce*           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UGATask_WeaponFireOnce* UGATask_WeaponFireOnce::WeaponFireOnce_SingleMode(class UGameplayAbility* OwningAbility, int32 WeaponID_0, int32 ShootMode, int32 ShootCount_0, float ShootDelay_0, int32 ReloadAbilityID_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GATask_WeaponFireOnce", "WeaponFireOnce_SingleMode");
-
-	Params::GATask_WeaponFireOnce_WeaponFireOnce_SingleMode Parms{};
-
-	Parms.OwningAbility = OwningAbility;
-	Parms.WeaponID_0 = WeaponID_0;
-	Parms.ShootMode = ShootMode;
-	Parms.ShootCount_0 = ShootCount_0;
-	Parms.ShootDelay_0 = ShootDelay_0;
-	Parms.ReloadAbilityID_0 = ReloadAbilityID_0;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function GraphAbility.GATask_WeaponFireOnce.Shoot
-// (Final, Native, Protected)
-
-void UGATask_WeaponFireOnce::Shoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GATask_WeaponFireOnce", "Shoot");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

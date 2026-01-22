@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1039_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Hero_1039_classes.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_103921.PyBuffAbility_10130_10391033
-// 0x0010 (0x1718 - 0x1708)
+// 0x0010 (0x1870 - 0x1860)
 class UPyBuffAbility_10130_10391033 : public UBuffAbility_10390102
 {
 public:
-	float                                         RecoverValue;                                      // 0x1708(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           EnergyTag;                                         // 0x170C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverValue;                                      // 0x1860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           EnergyTag;                                         // 0x1864(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -34,28 +34,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10391033">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10391033")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10391033")
 	}
 	static class UPyBuffAbility_10130_10391033* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10391033>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10391033) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10391033");
-static_assert(sizeof(UPyBuffAbility_10130_10391033) == 0x001718, "Wrong size on UPyBuffAbility_10130_10391033");
-static_assert(offsetof(UPyBuffAbility_10130_10391033, RecoverValue) == 0x001708, "Member 'UPyBuffAbility_10130_10391033::RecoverValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10391033, EnergyTag) == 0x00170C, "Member 'UPyBuffAbility_10130_10391033::EnergyTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10391033;
 
 // PythonClass PyBuffAbility_10130_103921.PyProjectile_10399013
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_10399013 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinRadius;                                         // 0x3B90(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxRadius;                                         // 0x3B94(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CircleTime;                                        // 0x3B98(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CircleTimeFast;                                    // 0x3B9C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinRadius;                                         // 0x3EA0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxRadius;                                         // 0x3EA4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CircleTime;                                        // 0x3EA8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CircleTimeFast;                                    // 0x3EAC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -64,19 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10399013">();
+		STATIC_CLASS_IMPL("PyProjectile_10399013")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10399013")
 	}
 	static class APyProjectile_10399013* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10399013>();
 	}
 };
-static_assert(alignof(APyProjectile_10399013) == 0x000010, "Wrong alignment on APyProjectile_10399013");
-static_assert(sizeof(APyProjectile_10399013) == 0x003BA0, "Wrong size on APyProjectile_10399013");
-static_assert(offsetof(APyProjectile_10399013, MinRadius) == 0x003B90, "Member 'APyProjectile_10399013::MinRadius' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10399013, MaxRadius) == 0x003B94, "Member 'APyProjectile_10399013::MaxRadius' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10399013, CircleTime) == 0x003B98, "Member 'APyProjectile_10399013::CircleTime' has a wrong offset!");
-static_assert(offsetof(APyProjectile_10399013, CircleTimeFast) == 0x003B9C, "Member 'APyProjectile_10399013::CircleTimeFast' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_10399013;
 
 }
 

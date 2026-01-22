@@ -23,15 +23,18 @@ class UEQT_SurroundedCharacter_BP_C final : public UEnvQueryTest_SurroundedChara
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQT_SurroundedCharacter_BP_C">();
+		BP_STATIC_CLASS_IMPL("EQT_SurroundedCharacter_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQT_SurroundedCharacter_BP_C")
 	}
 	static class UEQT_SurroundedCharacter_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQT_SurroundedCharacter_BP_C>();
 	}
 };
-static_assert(alignof(UEQT_SurroundedCharacter_BP_C) == 0x000008, "Wrong alignment on UEQT_SurroundedCharacter_BP_C");
-static_assert(sizeof(UEQT_SurroundedCharacter_BP_C) == 0x000290, "Wrong size on UEQT_SurroundedCharacter_BP_C");
+DUMPER7_ASSERTS_UEQT_SurroundedCharacter_BP_C;
 
 }
 

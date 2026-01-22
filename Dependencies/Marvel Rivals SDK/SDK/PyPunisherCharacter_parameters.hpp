@@ -24,10 +24,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPunisherChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyPunisherChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyPunisherChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyPunisherChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyPunisherChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyPunisherChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyPunisherChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyPunisherChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyPunisherChildActor_OnGenericGameplayTagUpdate;
 
 // PythonFunction PyPunisherCharacter.PyPunisherCharacter.SetGatlingMaterialVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyPunisherCharacter_SetGatlingMaterialVisible final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPunisherCharacter_SetGatlingMaterialVisible) == 0x000001, "Wrong alignment on PyPunisherCharacter_SetGatlingMaterialVisible");
-static_assert(sizeof(PyPunisherCharacter_SetGatlingMaterialVisible) == 0x000001, "Wrong size on PyPunisherCharacter_SetGatlingMaterialVisible");
-static_assert(offsetof(PyPunisherCharacter_SetGatlingMaterialVisible, bVisible) == 0x000000, "Member 'PyPunisherCharacter_SetGatlingMaterialVisible::bVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyPunisherCharacter_SetGatlingMaterialVisible;
 
 }
 

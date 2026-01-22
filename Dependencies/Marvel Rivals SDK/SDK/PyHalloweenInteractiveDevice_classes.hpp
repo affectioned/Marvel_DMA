@@ -39,19 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenInteractiveDevice">();
+		STATIC_CLASS_IMPL("PyHalloweenInteractiveDevice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenInteractiveDevice")
 	}
 	static class APyHalloweenInteractiveDevice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenInteractiveDevice>();
 	}
 };
-static_assert(alignof(APyHalloweenInteractiveDevice) == 0x000010, "Wrong alignment on APyHalloweenInteractiveDevice");
-static_assert(sizeof(APyHalloweenInteractiveDevice) == 0x000730, "Wrong size on APyHalloweenInteractiveDevice");
-static_assert(offsetof(APyHalloweenInteractiveDevice, TextTips) == 0x0006E0, "Member 'APyHalloweenInteractiveDevice::TextTips' has a wrong offset!");
-static_assert(offsetof(APyHalloweenInteractiveDevice, ActiveTextTips) == 0x0006F8, "Member 'APyHalloweenInteractiveDevice::ActiveTextTips' has a wrong offset!");
-static_assert(offsetof(APyHalloweenInteractiveDevice, InactiveTextTips) == 0x000710, "Member 'APyHalloweenInteractiveDevice::InactiveTextTips' has a wrong offset!");
-static_assert(offsetof(APyHalloweenInteractiveDevice, State) == 0x000728, "Member 'APyHalloweenInteractiveDevice::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenInteractiveDevice;
 
 }
 

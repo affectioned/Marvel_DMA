@@ -21,9 +21,7 @@ struct MassSkelotComponent_GetSkelotCustomStencilEnable final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSkelotComponent_GetSkelotCustomStencilEnable) == 0x000001, "Wrong alignment on MassSkelotComponent_GetSkelotCustomStencilEnable");
-static_assert(sizeof(MassSkelotComponent_GetSkelotCustomStencilEnable) == 0x000001, "Wrong size on MassSkelotComponent_GetSkelotCustomStencilEnable");
-static_assert(offsetof(MassSkelotComponent_GetSkelotCustomStencilEnable, ReturnValue) == 0x000000, "Member 'MassSkelotComponent_GetSkelotCustomStencilEnable::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MassSkelotComponent_GetSkelotCustomStencilEnable;
 
 // Function MassRepresentation.MassSkelotComponent.GetSkelotCustomStencilValue
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct MassSkelotComponent_GetSkelotCustomStencilValue final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSkelotComponent_GetSkelotCustomStencilValue) == 0x000004, "Wrong alignment on MassSkelotComponent_GetSkelotCustomStencilValue");
-static_assert(sizeof(MassSkelotComponent_GetSkelotCustomStencilValue) == 0x000004, "Wrong size on MassSkelotComponent_GetSkelotCustomStencilValue");
-static_assert(offsetof(MassSkelotComponent_GetSkelotCustomStencilValue, ReturnValue) == 0x000000, "Member 'MassSkelotComponent_GetSkelotCustomStencilValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MassSkelotComponent_GetSkelotCustomStencilValue;
 
 // Function MassRepresentation.MassSkelotComponent.SetSkelotCustomStencilEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct MassSkelotComponent_SetSkelotCustomStencilEnable final
 public:
 	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSkelotComponent_SetSkelotCustomStencilEnable) == 0x000001, "Wrong alignment on MassSkelotComponent_SetSkelotCustomStencilEnable");
-static_assert(sizeof(MassSkelotComponent_SetSkelotCustomStencilEnable) == 0x000001, "Wrong size on MassSkelotComponent_SetSkelotCustomStencilEnable");
-static_assert(offsetof(MassSkelotComponent_SetSkelotCustomStencilEnable, bEnable) == 0x000000, "Member 'MassSkelotComponent_SetSkelotCustomStencilEnable::bEnable' has a wrong offset!");
+DUMPER7_ASSERTS_MassSkelotComponent_SetSkelotCustomStencilEnable;
 
 // Function MassRepresentation.MassSkelotComponent.SetSkelotCustomStencilValue
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct MassSkelotComponent_SetSkelotCustomStencilValue final
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MassSkelotComponent_SetSkelotCustomStencilValue) == 0x000004, "Wrong alignment on MassSkelotComponent_SetSkelotCustomStencilValue");
-static_assert(sizeof(MassSkelotComponent_SetSkelotCustomStencilValue) == 0x000004, "Wrong size on MassSkelotComponent_SetSkelotCustomStencilValue");
-static_assert(offsetof(MassSkelotComponent_SetSkelotCustomStencilValue, Value) == 0x000000, "Member 'MassSkelotComponent_SetSkelotCustomStencilValue::Value' has a wrong offset!");
+DUMPER7_ASSERTS_MassSkelotComponent_SetSkelotCustomStencilValue;
 
 }
 

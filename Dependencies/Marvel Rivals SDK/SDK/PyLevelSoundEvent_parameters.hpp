@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // PythonFunction PyLevelSoundEvent.PyLevelSoundEvent.OnBeginOverlap
-// 0x0210 (0x0210 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct PyLevelSoundEvent_OnBeginOverlap final
 {
 public:
@@ -27,16 +27,9 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelSoundEvent_OnBeginOverlap) == 0x000008, "Wrong alignment on PyLevelSoundEvent_OnBeginOverlap");
-static_assert(sizeof(PyLevelSoundEvent_OnBeginOverlap) == 0x000210, "Wrong size on PyLevelSoundEvent_OnBeginOverlap");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, OverlappedComponent) == 0x000000, "Member 'PyLevelSoundEvent_OnBeginOverlap::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, Player) == 0x000008, "Member 'PyLevelSoundEvent_OnBeginOverlap::Player' has a wrong offset!");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, OtherComp) == 0x000010, "Member 'PyLevelSoundEvent_OnBeginOverlap::OtherComp' has a wrong offset!");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, OtherBodyIndex) == 0x000018, "Member 'PyLevelSoundEvent_OnBeginOverlap::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, bFromSweep) == 0x00001C, "Member 'PyLevelSoundEvent_OnBeginOverlap::bFromSweep' has a wrong offset!");
-static_assert(offsetof(PyLevelSoundEvent_OnBeginOverlap, SweepResult) == 0x000020, "Member 'PyLevelSoundEvent_OnBeginOverlap::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSoundEvent_OnBeginOverlap;
 
 // PythonFunction PyLevelSoundEvent.PyLevelSoundEvent_Idle.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +38,7 @@ struct PyLevelSoundEvent_Idle_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSoundEvent_Idle_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelSoundEvent_Idle_ReceiveEndPlay");
-static_assert(sizeof(PyLevelSoundEvent_Idle_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelSoundEvent_Idle_ReceiveEndPlay");
-static_assert(offsetof(PyLevelSoundEvent_Idle_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelSoundEvent_Idle_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSoundEvent_Idle_ReceiveEndPlay;
 
 // PythonFunction PyLevelSoundEvent.PyLevelSoundEvent_Idle.CanPlayAudio
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +47,7 @@ struct PyLevelSoundEvent_Idle_CanPlayAudio final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSoundEvent_Idle_CanPlayAudio) == 0x000001, "Wrong alignment on PyLevelSoundEvent_Idle_CanPlayAudio");
-static_assert(sizeof(PyLevelSoundEvent_Idle_CanPlayAudio) == 0x000001, "Wrong size on PyLevelSoundEvent_Idle_CanPlayAudio");
-static_assert(offsetof(PyLevelSoundEvent_Idle_CanPlayAudio, ReturnValue) == 0x000000, "Member 'PyLevelSoundEvent_Idle_CanPlayAudio::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSoundEvent_Idle_CanPlayAudio;
 
 }
 

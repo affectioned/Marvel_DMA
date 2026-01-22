@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GameModePanel.PyWidget_GameModePanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_GameModePanel : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameModePanel">();
+		STATIC_CLASS_IMPL("PyWidget_GameModePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameModePanel")
 	}
 	static class UPyWidget_GameModePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameModePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GameModePanel) == 0x000008, "Wrong alignment on UPyWidget_GameModePanel");
-static_assert(sizeof(UPyWidget_GameModePanel) == 0x0005C0, "Wrong size on UPyWidget_GameModePanel");
+DUMPER7_ASSERTS_UPyWidget_GameModePanel;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyDefaultUISettingEntryHandler_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "PyDefaultUISettingEntryHandler_classes.hpp"
 
 
 namespace SDK
@@ -31,57 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSCustomBaseHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSCustomBaseHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSCustomBaseHandler")
 	}
 	static class UUISettingEntryMaxFPSCustomBaseHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSCustomBaseHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSCustomBaseHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSCustomBaseHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSCustomBaseHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSCustomBaseHandler");
-
-// PythonClass FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingEntryMaxFPSLobbyCustomHandler final : public UUISettingEntryMaxFPSCustomBaseHandler
-{
-public:
-	void Setter(float value);
-	float Getter();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingEntryMaxFPSLobbyCustomHandler">();
-	}
-	static class UUISettingEntryMaxFPSLobbyCustomHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingEntryMaxFPSLobbyCustomHandler>();
-	}
-};
-static_assert(alignof(UUISettingEntryMaxFPSLobbyCustomHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSLobbyCustomHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSLobbyCustomHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSLobbyCustomHandler");
-
-// PythonClass FPSLogic.UISettingEntryMaxFPSCustomHandler
-// 0x0000 (0x0030 - 0x0030)
-class UUISettingEntryMaxFPSCustomHandler final : public UUISettingEntryMaxFPSCustomBaseHandler
-{
-public:
-	void Setter(float value);
-	float Getter();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"UISettingEntryMaxFPSCustomHandler">();
-	}
-	static class UUISettingEntryMaxFPSCustomHandler* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UUISettingEntryMaxFPSCustomHandler>();
-	}
-};
-static_assert(alignof(UUISettingEntryMaxFPSCustomHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSCustomHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSCustomHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSCustomHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSCustomBaseHandler;
 
 // PythonClass FPSLogic.UISettingEntryFPSLimitHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -95,15 +56,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryFPSLimitHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryFPSLimitHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryFPSLimitHandler")
 	}
 	static class UUISettingEntryFPSLimitHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryFPSLimitHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryFPSLimitHandler) == 0x000008, "Wrong alignment on UUISettingEntryFPSLimitHandler");
-static_assert(sizeof(UUISettingEntryFPSLimitHandler) == 0x000030, "Wrong size on UUISettingEntryFPSLimitHandler");
+DUMPER7_ASSERTS_UUISettingEntryFPSLimitHandler;
+
+// PythonClass FPSLogic.UISettingEntryMaxFPSLobbyCustomHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingEntryMaxFPSLobbyCustomHandler final : public UUISettingEntryMaxFPSCustomBaseHandler
+{
+public:
+	void Setter(float value);
+	float Getter();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSLobbyCustomHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSLobbyCustomHandler")
+	}
+	static class UUISettingEntryMaxFPSLobbyCustomHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingEntryMaxFPSLobbyCustomHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSLobbyCustomHandler;
 
 // PythonClass FPSLogic.UISettingEntryMaxFPSBaseHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -120,15 +108,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSBaseHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSBaseHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSBaseHandler")
 	}
 	static class UUISettingEntryMaxFPSBaseHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSBaseHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSBaseHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSBaseHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSBaseHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSBaseHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSBaseHandler;
+
+// PythonClass FPSLogic.UISettingEntryMaxFPSCustomHandler
+// 0x0000 (0x0030 - 0x0030)
+class UUISettingEntryMaxFPSCustomHandler final : public UUISettingEntryMaxFPSCustomBaseHandler
+{
+public:
+	void Setter(float value);
+	float Getter();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSCustomHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSCustomHandler")
+	}
+	static class UUISettingEntryMaxFPSCustomHandler* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UUISettingEntryMaxFPSCustomHandler>();
+	}
+};
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSCustomHandler;
 
 // PythonClass FPSLogic.UISettingEntryMaxFPSBackgroundHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -141,15 +156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSBackgroundHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSBackgroundHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSBackgroundHandler")
 	}
 	static class UUISettingEntryMaxFPSBackgroundHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSBackgroundHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSBackgroundHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSBackgroundHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSBackgroundHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSBackgroundHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSBackgroundHandler;
 
 // PythonClass FPSLogic.UISettingEntryMaxFPSLobbyHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -162,15 +180,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSLobbyHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSLobbyHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSLobbyHandler")
 	}
 	static class UUISettingEntryMaxFPSLobbyHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSLobbyHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSLobbyHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSLobbyHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSLobbyHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSLobbyHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSLobbyHandler;
 
 // PythonClass FPSLogic.UISettingEntryMaxFPSHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -183,15 +204,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSHandler")
 	}
 	static class UUISettingEntryMaxFPSHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSHandler;
 
 // PythonClass FPSLogic.UISettingEntryMaxFPSBackgroundCustomHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -204,15 +228,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryMaxFPSBackgroundCustomHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryMaxFPSBackgroundCustomHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryMaxFPSBackgroundCustomHandler")
 	}
 	static class UUISettingEntryMaxFPSBackgroundCustomHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryMaxFPSBackgroundCustomHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryMaxFPSBackgroundCustomHandler) == 0x000008, "Wrong alignment on UUISettingEntryMaxFPSBackgroundCustomHandler");
-static_assert(sizeof(UUISettingEntryMaxFPSBackgroundCustomHandler) == 0x000030, "Wrong size on UUISettingEntryMaxFPSBackgroundCustomHandler");
+DUMPER7_ASSERTS_UUISettingEntryMaxFPSBackgroundCustomHandler;
 
 // PythonClass FPSLogic.UISettingEntryShowFPSSwitchHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -225,15 +252,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryShowFPSSwitchHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryShowFPSSwitchHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryShowFPSSwitchHandler")
 	}
 	static class UUISettingEntryShowFPSSwitchHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryShowFPSSwitchHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryShowFPSSwitchHandler) == 0x000008, "Wrong alignment on UUISettingEntryShowFPSSwitchHandler");
-static_assert(sizeof(UUISettingEntryShowFPSSwitchHandler) == 0x000030, "Wrong size on UUISettingEntryShowFPSSwitchHandler");
+DUMPER7_ASSERTS_UUISettingEntryShowFPSSwitchHandler;
 
 }
 

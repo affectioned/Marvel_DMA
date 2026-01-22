@@ -23,15 +23,18 @@ class UPyRematchRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRematchRuleComponent">();
+		STATIC_CLASS_IMPL("PyRematchRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRematchRuleComponent")
 	}
 	static class UPyRematchRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRematchRuleComponent>();
 	}
 };
-static_assert(alignof(UPyRematchRuleComponent) == 0x000008, "Wrong alignment on UPyRematchRuleComponent");
-static_assert(sizeof(UPyRematchRuleComponent) == 0x000108, "Wrong size on UPyRematchRuleComponent");
+DUMPER7_ASSERTS_UPyRematchRuleComponent;
 
 }
 

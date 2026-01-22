@@ -10,13 +10,44 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
-#include "CoreUObject_classes.hpp"
 #include "PyWidget_Settlement_PersonalData_New_classes.hpp"
+#include "CoreUObject_structs.hpp"
+#include "CoreUObject_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
+
+// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry
+// 0x0010 (0x05D8 - 0x05C8)
+class UPyWidget_Settlement_PersonalData_Hero_Entry final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UObject* Widget, bool Hovered)> OnAbstractTaskInfoHoverdChange; // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+	void SetLoadimgPicture(class UObject* Img_Picture);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Hero_Entry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Hero_Entry")
+	}
+	static class UPyWidget_Settlement_PersonalData_Hero_Entry* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Hero_Entry>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Hero_Entry;
 
 // PythonClass PyWidget_Settlement_PersonalData_Hero.HeroSettlementData
 // 0x0000 (0x0030 - 0x0030)
@@ -25,67 +56,148 @@ class UHeroSettlementData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HeroSettlementData">();
+		STATIC_CLASS_IMPL("HeroSettlementData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSettlementData")
 	}
 	static class UHeroSettlementData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSettlementData>();
 	}
 };
-static_assert(alignof(UHeroSettlementData) == 0x000008, "Wrong alignment on UHeroSettlementData");
-static_assert(sizeof(UHeroSettlementData) == 0x000030, "Wrong size on UHeroSettlementData");
+DUMPER7_ASSERTS_UHeroSettlementData;
 
 // PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Hero final : public UPyWidget_Settlement_PersonalData_Base
 {
 public:
-	TArray<class UHeroSettlementData*>            ViewItemList;                                      // 0x05C0(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UHeroSettlementData*>            ViewItemList;                                      // 0x05C8(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         AbstractInfoTips;                                  // 0x05D8(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-	void MarvelSetVisible(bool Visible);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Hero">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Hero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Hero")
 	}
 	static class UPyWidget_Settlement_PersonalData_Hero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Hero>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Hero) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Hero");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Hero) == 0x0005D0, "Wrong size on UPyWidget_Settlement_PersonalData_Hero");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Hero, ViewItemList) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalData_Hero::ViewItemList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Hero;
 
-// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_Hero_Entry
-// 0x0000 (0x0570 - 0x0570)
-class UPyWidget_Settlement_PersonalData_Hero_Entry final : public UWidget_ListEntry
+// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Entry
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_PersonalData_HeroTask_Entry final : public UPyMarvelUserWidget
 {
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
-	void SetLoadimgPicture(class UObject* Img_Picture);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Hero_Entry">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_HeroTask_Entry")
 	}
-	static class UPyWidget_Settlement_PersonalData_Hero_Entry* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Hero_Entry>();
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_HeroTask_Entry")
+	}
+	static class UPyWidget_Settlement_PersonalData_HeroTask_Entry* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_HeroTask_Entry>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Hero_Entry) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Hero_Entry");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Hero_Entry) == 0x000570, "Wrong size on UPyWidget_Settlement_PersonalData_Hero_Entry");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_HeroTask_Entry;
+
+// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Unit
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_PersonalData_HeroTask_Unit final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_HeroTask_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_HeroTask_Unit")
+	}
+	static class UPyWidget_Settlement_PersonalData_HeroTask_Unit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_HeroTask_Unit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_HeroTask_Unit;
+
+// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips")
+	}
+	static class UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_HeroTask_Abstract_Tips;
+
+// PythonClass PyWidget_Settlement_PersonalData_Hero.PyWidget_Settlement_PersonalData_TaskTips_Unit
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_Settlement_PersonalData_TaskTips_Unit final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_TaskTips_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_TaskTips_Unit")
+	}
+	static class UPyWidget_Settlement_PersonalData_TaskTips_Unit* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_TaskTips_Unit>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_TaskTips_Unit;
 
 }
 

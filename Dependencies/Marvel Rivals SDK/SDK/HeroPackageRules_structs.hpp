@@ -17,27 +17,19 @@ namespace SDK
 {
 
 // ScriptStruct HeroPackageRules.MarvelHeroPackageTable
-// 0x0028 (0x0060 - 0x0038)
+// 0x0028 (0x0070 - 0x0048)
 struct FMarvelHeroPackageTable final : public FMarvelPackageTableRowBase
 {
 public:
-	int32                                         HeroID;                                            // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Development_Package;                               // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Test_Package;                                      // 0x003D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Shipping_Package;                                  // 0x003E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ExactlyAssetInPackage;                             // 0x003F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ExactlyDirectories;                                // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ExactlyAssetPaths;                                 // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         HeroID;                                            // 0x0048(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Development_Package;                               // 0x004C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Test_Package;                                      // 0x004D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Shipping_Package;                                  // 0x004E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ExactlyAssetInPackage;                             // 0x004F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ExactlyDirectories;                                // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ExactlyAssetPaths;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMarvelHeroPackageTable) == 0x000008, "Wrong alignment on FMarvelHeroPackageTable");
-static_assert(sizeof(FMarvelHeroPackageTable) == 0x000060, "Wrong size on FMarvelHeroPackageTable");
-static_assert(offsetof(FMarvelHeroPackageTable, HeroID) == 0x000038, "Member 'FMarvelHeroPackageTable::HeroID' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, Development_Package) == 0x00003C, "Member 'FMarvelHeroPackageTable::Development_Package' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, Test_Package) == 0x00003D, "Member 'FMarvelHeroPackageTable::Test_Package' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, Shipping_Package) == 0x00003E, "Member 'FMarvelHeroPackageTable::Shipping_Package' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, ExactlyAssetInPackage) == 0x00003F, "Member 'FMarvelHeroPackageTable::ExactlyAssetInPackage' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, ExactlyDirectories) == 0x000040, "Member 'FMarvelHeroPackageTable::ExactlyDirectories' has a wrong offset!");
-static_assert(offsetof(FMarvelHeroPackageTable, ExactlyAssetPaths) == 0x000050, "Member 'FMarvelHeroPackageTable::ExactlyAssetPaths' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelHeroPackageTable;
 
 }
 

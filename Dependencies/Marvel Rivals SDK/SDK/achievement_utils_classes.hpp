@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAchievementInsideChecker">();
+		STATIC_CLASS_IMPL("PyAchievementInsideChecker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAchievementInsideChecker")
 	}
 	static class APyAchievementInsideChecker* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAchievementInsideChecker>();
 	}
 };
-static_assert(alignof(APyAchievementInsideChecker) == 0x000010, "Wrong alignment on APyAchievementInsideChecker");
-static_assert(sizeof(APyAchievementInsideChecker) == 0x0006F0, "Wrong size on APyAchievementInsideChecker");
-static_assert(offsetof(APyAchievementInsideChecker, BelongAchievementID) == 0x0006E0, "Member 'APyAchievementInsideChecker::BelongAchievementID' has a wrong offset!");
-static_assert(offsetof(APyAchievementInsideChecker, CheckComp) == 0x0006E8, "Member 'APyAchievementInsideChecker::CheckComp' has a wrong offset!");
+DUMPER7_ASSERTS_APyAchievementInsideChecker;
 
 // PythonClass achievement_utils.PyInsideChecker
 // 0x0010 (0x06F0 - 0x06E0)
@@ -52,16 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyInsideChecker">();
+		STATIC_CLASS_IMPL("PyInsideChecker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyInsideChecker")
 	}
 	static class APyInsideChecker* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyInsideChecker>();
 	}
 };
-static_assert(alignof(APyInsideChecker) == 0x000010, "Wrong alignment on APyInsideChecker");
-static_assert(sizeof(APyInsideChecker) == 0x0006F0, "Wrong size on APyInsideChecker");
-static_assert(offsetof(APyInsideChecker, CheckComp) == 0x0006E0, "Member 'APyInsideChecker::CheckComp' has a wrong offset!");
+DUMPER7_ASSERTS_APyInsideChecker;
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Rank_RewardContent.PyWidget_RankContent_Item_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_RankContent_Item_Base : public UPyMarvelUserWidget
 {
@@ -30,7 +30,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankContent_Item_Base">();
+		STATIC_CLASS_IMPL("PyWidget_RankContent_Item_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankContent_Item_Base")
 	}
 	static class UPyWidget_RankContent_Item_Base* GetDefaultObj()
 	{
@@ -38,16 +42,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_RankContent_Item_Base) == 0x000008, "Wrong alignment on UPyWidget_RankContent_Item_Base");
-static_assert(sizeof(UPyWidget_RankContent_Item_Base) == 0x0005C0, "Wrong size on UPyWidget_RankContent_Item_Base");
+DUMPER7_ASSERTS_UPyWidget_RankContent_Item_Base;
 
 // PythonClass PyWidget_Rank_RewardContent.PyWidget_Rank_RewardContent_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Rank_RewardContent_Item final : public UPyWidget_RankContent_Item_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RankID;                                            // 0x05BC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RankID;                                            // 0x05C4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,25 +60,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_RewardContent_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_RewardContent_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_RewardContent_Item")
 	}
 	static class UPyWidget_Rank_RewardContent_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_RewardContent_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_RewardContent_Item) == 0x000008, "Wrong alignment on UPyWidget_Rank_RewardContent_Item");
-static_assert(sizeof(UPyWidget_Rank_RewardContent_Item) == 0x0005C0, "Wrong size on UPyWidget_Rank_RewardContent_Item");
-static_assert(offsetof(UPyWidget_Rank_RewardContent_Item, RankID) == 0x0005BC, "Member 'UPyWidget_Rank_RewardContent_Item::RankID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_RewardContent_Item;
 
 // PythonClass PyWidget_Rank_RewardContent.PyWidget_Rank_RewardContent
-// 0x0030 (0x0628 - 0x05F8)
+// 0x0030 (0x0630 - 0x0600)
 class UPyWidget_Rank_RewardContent final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ShowMenuTipsStyle;                                 // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ReturnTipsStyle;                                   // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                InspectTipsStyle;                                  // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -87,21 +92,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_RewardContent">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_RewardContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_RewardContent")
 	}
 	static class UPyWidget_Rank_RewardContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_RewardContent>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_RewardContent) == 0x000008, "Wrong alignment on UPyWidget_Rank_RewardContent");
-static_assert(sizeof(UPyWidget_Rank_RewardContent) == 0x000628, "Wrong size on UPyWidget_Rank_RewardContent");
-static_assert(offsetof(UPyWidget_Rank_RewardContent, ShowMenuTipsStyle) == 0x0005F8, "Member 'UPyWidget_Rank_RewardContent::ShowMenuTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_RewardContent, ReturnTipsStyle) == 0x000608, "Member 'UPyWidget_Rank_RewardContent::ReturnTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Rank_RewardContent, InspectTipsStyle) == 0x000618, "Member 'UPyWidget_Rank_RewardContent::InspectTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Rank_RewardContent;
 
 // PythonClass PyWidget_Rank_RewardContent.PyWidget_Rank_Reward_Skin_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Rank_Reward_Skin_Item final : public UPyWidget_RankContent_Item_Base
 {
 public:
@@ -112,25 +117,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_Reward_Skin_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_Reward_Skin_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_Reward_Skin_Item")
 	}
 	static class UPyWidget_Rank_Reward_Skin_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_Reward_Skin_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_Reward_Skin_Item) == 0x000008, "Wrong alignment on UPyWidget_Rank_Reward_Skin_Item");
-static_assert(sizeof(UPyWidget_Rank_Reward_Skin_Item) == 0x0005C0, "Wrong size on UPyWidget_Rank_Reward_Skin_Item");
+DUMPER7_ASSERTS_UPyWidget_Rank_Reward_Skin_Item;
 
 // PythonClass PyWidget_Rank_RewardContent.WBP_Rank_RuleContent_Item
-// 0x0038 (0x05F8 - 0x05C0)
+// 0x0038 (0x0600 - 0x05C8)
 class UWBP_Rank_RuleContent_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Title;                                             // 0x05C0(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class FText                                   Desc;                                              // 0x05D8(0x0018)(Edit, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon;                                              // 0x05F0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Title;                                             // 0x05C8(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class FText                                   Desc;                                              // 0x05E0(0x0018)(Edit, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon;                                              // 0x05F8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -138,21 +146,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_Rank_RuleContent_Item">();
+		STATIC_CLASS_IMPL("WBP_Rank_RuleContent_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Rank_RuleContent_Item")
 	}
 	static class UWBP_Rank_RuleContent_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Rank_RuleContent_Item>();
 	}
 };
-static_assert(alignof(UWBP_Rank_RuleContent_Item) == 0x000008, "Wrong alignment on UWBP_Rank_RuleContent_Item");
-static_assert(sizeof(UWBP_Rank_RuleContent_Item) == 0x0005F8, "Wrong size on UWBP_Rank_RuleContent_Item");
-static_assert(offsetof(UWBP_Rank_RuleContent_Item, Title) == 0x0005C0, "Member 'UWBP_Rank_RuleContent_Item::Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Rank_RuleContent_Item, Desc) == 0x0005D8, "Member 'UWBP_Rank_RuleContent_Item::Desc' has a wrong offset!");
-static_assert(offsetof(UWBP_Rank_RuleContent_Item, Icon) == 0x0005F0, "Member 'UWBP_Rank_RuleContent_Item::Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Rank_RuleContent_Item;
 
 // PythonClass PyWidget_Rank_RewardContent.PyWidget_Rank_Reward_Top500_Item
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Rank_Reward_Top500_Item final : public UPyWidget_RankContent_Item_Base
 {
 public:
@@ -163,18 +171,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Rank_Reward_Top500_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Rank_Reward_Top500_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Rank_Reward_Top500_Item")
 	}
 	static class UPyWidget_Rank_Reward_Top500_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Rank_Reward_Top500_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Rank_Reward_Top500_Item) == 0x000008, "Wrong alignment on UPyWidget_Rank_Reward_Top500_Item");
-static_assert(sizeof(UPyWidget_Rank_Reward_Top500_Item) == 0x0005C0, "Wrong size on UPyWidget_Rank_Reward_Top500_Item");
+DUMPER7_ASSERTS_UPyWidget_Rank_Reward_Top500_Item;
 
 // PythonClass PyWidget_Rank_RewardContent.WBP_Rank_RuleContent
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UWBP_Rank_RuleContent final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -183,15 +194,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WBP_Rank_RuleContent">();
+		STATIC_CLASS_IMPL("WBP_Rank_RuleContent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Rank_RuleContent")
 	}
 	static class UWBP_Rank_RuleContent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Rank_RuleContent>();
 	}
 };
-static_assert(alignof(UWBP_Rank_RuleContent) == 0x000008, "Wrong alignment on UWBP_Rank_RuleContent");
-static_assert(sizeof(UWBP_Rank_RuleContent) == 0x0005F8, "Wrong size on UWBP_Rank_RuleContent");
+DUMPER7_ASSERTS_UWBP_Rank_RuleContent;
 
 }
 

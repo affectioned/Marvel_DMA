@@ -64,33 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyFlow">();
+		STATIC_CLASS_IMPL("PyEnergyFlow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyFlow")
 	}
 	static class APyEnergyFlow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEnergyFlow>();
 	}
 };
-static_assert(alignof(APyEnergyFlow) == 0x000010, "Wrong alignment on APyEnergyFlow");
-static_assert(sizeof(APyEnergyFlow) == 0x000740, "Wrong size on APyEnergyFlow");
-static_assert(offsetof(APyEnergyFlow, ObjectiveArea) == 0x0006E0, "Member 'APyEnergyFlow::ObjectiveArea' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, Payload) == 0x0006E8, "Member 'APyEnergyFlow::Payload' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, DecInterval) == 0x0006F0, "Member 'APyEnergyFlow::DecInterval' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, IncInterval) == 0x0006F4, "Member 'APyEnergyFlow::IncInterval' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, MiddleParticularBorn) == 0x0006F8, "Member 'APyEnergyFlow::MiddleParticularBorn' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, HighParticularBorn) == 0x0006FC, "Member 'APyEnergyFlow::HighParticularBorn' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, MiddleParticularScale) == 0x000700, "Member 'APyEnergyFlow::MiddleParticularScale' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, HighParticularScale) == 0x000704, "Member 'APyEnergyFlow::HighParticularScale' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, SlowBeamSpeed) == 0x000708, "Member 'APyEnergyFlow::SlowBeamSpeed' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, HighBeamSpeed) == 0x00070C, "Member 'APyEnergyFlow::HighBeamSpeed' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, MiddleBeamStrength) == 0x000710, "Member 'APyEnergyFlow::MiddleBeamStrength' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, HighBeamStrength) == 0x000714, "Member 'APyEnergyFlow::HighBeamStrength' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, MiddleBeamOpacity) == 0x000718, "Member 'APyEnergyFlow::MiddleBeamOpacity' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, HighBeamOpacity) == 0x00071C, "Member 'APyEnergyFlow::HighBeamOpacity' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, DecSpeed) == 0x000720, "Member 'APyEnergyFlow::DecSpeed' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, DeadSpeed) == 0x000724, "Member 'APyEnergyFlow::DeadSpeed' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, MaintainTime) == 0x000728, "Member 'APyEnergyFlow::MaintainTime' has a wrong offset!");
-static_assert(offsetof(APyEnergyFlow, State) == 0x000730, "Member 'APyEnergyFlow::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyEnergyFlow;
 
 }
 

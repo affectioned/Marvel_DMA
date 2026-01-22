@@ -26,16 +26,16 @@ public:
 	void OnShutDown();
 	void OnRecordActorDeath(struct FActionLogDeathExtraInfo* DeathExtraInfo, struct FActionLogBattleContext* BattleContext, const struct FAttributeModifierHandle& ParameterHandle);
 	void OnRecordHeroSwitchOut(struct FActionLogHeroUseRecord* HeroUseRecord);
-	void OnRecordUnitUseInfo(class UPyObjectWrapper* AbilityUseInfo);
-	void OnRecordAbilityUseInfo(class UPyObjectWrapper* AbilityUseInfo);
+	void OnRecordUnitUseInfo(const struct FUnsafePyObjectWrapper& AbilityUseInfo);
+	void OnRecordAbilityUseInfo(const struct FUnsafePyObjectWrapper& AbilityUseInfo);
 	void OnRecordActorDamages(const struct FActionLogDamageMerge& LogStruct);
 	void OnRecordActorDamage(const struct FActionLogBattleContext& BattleContext, const struct FAttributeModifierHandle& ParameterHandle);
 	void OnRecordActorHeals(EActionLogHealType HealType, const struct FActionLogDamageMerge& LogStruct);
 	void OnRecordActorHeal(EActionLogHealType HealType, bool IsNearDeathHeal, struct FActionLogBattleContext* BattleContext, const struct FAttributeModifierHandle& ParameterHandle);
-	void OnRecordBuffInfoCVer(class UPyObjectWrapper* Buff);
+	void OnRecordBuffInfoCVer(const struct FUnsafePyObjectWrapper& Buff);
 	void OnRecordBuffInfo(struct FActionLogBuffRecord* BuffRecord);
 	void OnRecordHeroSculptIDChange(struct FActionLogHeroSculptIDChangeRecord* ChangeRecord);
-	void OnRecordEnergyChangedCVer(class UPyObjectWrapper* EnergyChangeRecord);
+	void OnRecordEnergyChangedCVer(const struct FUnsafePyObjectWrapper& EnergyChangeRecord);
 	void OnRecordEnergyChanged(struct FActionLogEnergyChangeRecord* EnergyChangeRecord);
 	void OnRecordSummonedInfo(struct FActionLogSummonedRecord* SummonedRecord);
 	void OnRecordCompetitionInfo(struct FActionLogCompetitionRecord* CompetitionRecord);
@@ -58,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActionLogRecorder">();
+		STATIC_CLASS_IMPL("PyActionLogRecorder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActionLogRecorder")
 	}
 	static class UPyActionLogRecorder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyActionLogRecorder>();
 	}
 };
-static_assert(alignof(UPyActionLogRecorder) == 0x000008, "Wrong alignment on UPyActionLogRecorder");
-static_assert(sizeof(UPyActionLogRecorder) == 0x000040, "Wrong size on UPyActionLogRecorder");
+DUMPER7_ASSERTS_UPyActionLogRecorder;
 
 }
 

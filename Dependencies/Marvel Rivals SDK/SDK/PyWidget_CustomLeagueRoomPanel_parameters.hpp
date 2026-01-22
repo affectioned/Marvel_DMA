@@ -21,9 +21,7 @@ struct PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_CustomLeagueRoomPanel.PyWidget_CustomLeagueRoomPanel.SetIsOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CustomLeagueRoomPanel_SetIsOwner final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPanel_SetIsOwner) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPanel_SetIsOwner");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPanel_SetIsOwner) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPanel_SetIsOwner");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPanel_SetIsOwner, IsOwner) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPanel_SetIsOwner::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPanel_SetIsOwner;
 
 // PythonFunction PyWidget_CustomLeagueRoomPanel.PyWidget_CustomLeagueRoomPanel.SetStartType
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_CustomLeagueRoomPanel_SetStartType final
 public:
 	bool                                          IsOwner;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPanel_SetStartType) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPanel_SetStartType");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPanel_SetStartType) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPanel_SetStartType");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPanel_SetStartType, IsOwner) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPanel_SetStartType::IsOwner' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPanel_SetStartType;
 
 }
 

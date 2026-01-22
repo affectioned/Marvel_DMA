@@ -26,8 +26,7 @@ namespace SDK
 struct FMassReplicatedAgentHandle final : public FCompactIndexedHandleBase
 {
 };
-static_assert(alignof(FMassReplicatedAgentHandle) == 0x000002, "Wrong alignment on FMassReplicatedAgentHandle");
-static_assert(sizeof(FMassReplicatedAgentHandle) == 0x000004, "Wrong size on FMassReplicatedAgentHandle");
+DUMPER7_ASSERTS_FMassReplicatedAgentHandle;
 
 // ScriptStruct MassReplication.MassFastArrayItemBase
 // 0x0008 (0x0020 - 0x0018)
@@ -37,9 +36,7 @@ public:
 	struct FMassReplicatedAgentHandle             Handle;                                            // 0x0018(0x0004)(RepSkip, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassFastArrayItemBase) == 0x000008, "Wrong alignment on FMassFastArrayItemBase");
-static_assert(sizeof(FMassFastArrayItemBase) == 0x000020, "Wrong size on FMassFastArrayItemBase");
-static_assert(offsetof(FMassFastArrayItemBase, Handle) == 0x000018, "Member 'FMassFastArrayItemBase::Handle' has a wrong offset!");
+DUMPER7_ASSERTS_FMassFastArrayItemBase;
 
 // ScriptStruct MassReplication.MassClientBubbleSerializerBase
 // 0x0030 (0x0140 - 0x0110)
@@ -52,11 +49,7 @@ public:
 	class UMassReplicationSubsystem*              ReplicationSubsystem;                              // 0x0130(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassClientBubbleSerializerBase) == 0x000008, "Wrong alignment on FMassClientBubbleSerializerBase");
-static_assert(sizeof(FMassClientBubbleSerializerBase) == 0x000140, "Wrong size on FMassClientBubbleSerializerBase");
-static_assert(offsetof(FMassClientBubbleSerializerBase, World) == 0x000110, "Member 'FMassClientBubbleSerializerBase::World' has a wrong offset!");
-static_assert(offsetof(FMassClientBubbleSerializerBase, SpawnerSubsystem) == 0x000118, "Member 'FMassClientBubbleSerializerBase::SpawnerSubsystem' has a wrong offset!");
-static_assert(offsetof(FMassClientBubbleSerializerBase, ReplicationSubsystem) == 0x000130, "Member 'FMassClientBubbleSerializerBase::ReplicationSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_FMassClientBubbleSerializerBase;
 
 // ScriptStruct MassReplication.MassNetworkIDFragment
 // 0x0004 (0x0004 - 0x0000)
@@ -65,8 +58,7 @@ struct alignas(0x04) FMassNetworkIDFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassNetworkIDFragment) == 0x000004, "Wrong alignment on FMassNetworkIDFragment");
-static_assert(sizeof(FMassNetworkIDFragment) == 0x000004, "Wrong size on FMassNetworkIDFragment");
+DUMPER7_ASSERTS_FMassNetworkIDFragment;
 
 // ScriptStruct MassReplication.MassReplicatedAgentFragment
 // 0x0018 (0x0018 - 0x0000)
@@ -75,8 +67,7 @@ struct alignas(0x08) FMassReplicatedAgentFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassReplicatedAgentFragment) == 0x000008, "Wrong alignment on FMassReplicatedAgentFragment");
-static_assert(sizeof(FMassReplicatedAgentFragment) == 0x000018, "Wrong size on FMassReplicatedAgentFragment");
+DUMPER7_ASSERTS_FMassReplicatedAgentFragment;
 
 // ScriptStruct MassReplication.MassReplicationViewerInfoFragment
 // 0x0018 (0x0018 - 0x0000)
@@ -85,8 +76,7 @@ struct alignas(0x08) FMassReplicationViewerInfoFragment final : public FMassFrag
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassReplicationViewerInfoFragment) == 0x000008, "Wrong alignment on FMassReplicationViewerInfoFragment");
-static_assert(sizeof(FMassReplicationViewerInfoFragment) == 0x000018, "Wrong size on FMassReplicationViewerInfoFragment");
+DUMPER7_ASSERTS_FMassReplicationViewerInfoFragment;
 
 // ScriptStruct MassReplication.MassReplicationLODFragment
 // 0x0003 (0x0003 - 0x0000)
@@ -95,8 +85,7 @@ struct FMassReplicationLODFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x3];                                        // 0x0000(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassReplicationLODFragment) == 0x000001, "Wrong alignment on FMassReplicationLODFragment");
-static_assert(sizeof(FMassReplicationLODFragment) == 0x000003, "Wrong size on FMassReplicationLODFragment");
+DUMPER7_ASSERTS_FMassReplicationLODFragment;
 
 // ScriptStruct MassReplication.MassReplicationParameters
 // 0x0058 (0x0058 - 0x0000)
@@ -112,15 +101,7 @@ public:
 	TSubclassOf<class AMassClientBubbleInfoBase>  BubbleInfoClass;                                   // 0x0048(0x0008)(Edit, ZeroConstructor, Config, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UMassReplicatorBase>        ReplicatorClass;                                   // 0x0050(0x0008)(Edit, ZeroConstructor, Config, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassReplicationParameters) == 0x000008, "Wrong alignment on FMassReplicationParameters");
-static_assert(sizeof(FMassReplicationParameters) == 0x000058, "Wrong size on FMassReplicationParameters");
-static_assert(offsetof(FMassReplicationParameters, LODDistance) == 0x000000, "Member 'FMassReplicationParameters::LODDistance' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, BufferHysteresisOnDistancePercentage) == 0x000010, "Member 'FMassReplicationParameters::BufferHysteresisOnDistancePercentage' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, LODMaxCount) == 0x000014, "Member 'FMassReplicationParameters::LODMaxCount' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, LODMaxCountPerViewer) == 0x000024, "Member 'FMassReplicationParameters::LODMaxCountPerViewer' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, UpdateInterval) == 0x000034, "Member 'FMassReplicationParameters::UpdateInterval' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, BubbleInfoClass) == 0x000048, "Member 'FMassReplicationParameters::BubbleInfoClass' has a wrong offset!");
-static_assert(offsetof(FMassReplicationParameters, ReplicatorClass) == 0x000050, "Member 'FMassReplicationParameters::ReplicatorClass' has a wrong offset!");
+DUMPER7_ASSERTS_FMassReplicationParameters;
 
 // ScriptStruct MassReplication.MassReplicationSharedFragment
 // 0x2310 (0x2310 - 0x0000)
@@ -133,10 +114,7 @@ public:
 	class UMassReplicatorBase*                    CachedReplicator;                                  // 0x2300(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2308[0x8];                                     // 0x2308(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassReplicationSharedFragment) == 0x000010, "Wrong alignment on FMassReplicationSharedFragment");
-static_assert(sizeof(FMassReplicationSharedFragment) == 0x002310, "Wrong size on FMassReplicationSharedFragment");
-static_assert(offsetof(FMassReplicationSharedFragment, BubbleInfos) == 0x000020, "Member 'FMassReplicationSharedFragment::BubbleInfos' has a wrong offset!");
-static_assert(offsetof(FMassReplicationSharedFragment, CachedReplicator) == 0x002300, "Member 'FMassReplicationSharedFragment::CachedReplicator' has a wrong offset!");
+DUMPER7_ASSERTS_FMassReplicationSharedFragment;
 
 // ScriptStruct MassReplication.MassReplicationGridCellLocationFragment
 // 0x000C (0x000C - 0x0000)
@@ -145,16 +123,14 @@ struct alignas(0x04) FMassReplicationGridCellLocationFragment final : public FMa
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassReplicationGridCellLocationFragment) == 0x000004, "Wrong alignment on FMassReplicationGridCellLocationFragment");
-static_assert(sizeof(FMassReplicationGridCellLocationFragment) == 0x00000C, "Wrong size on FMassReplicationGridCellLocationFragment");
+DUMPER7_ASSERTS_FMassReplicationGridCellLocationFragment;
 
 // ScriptStruct MassReplication.MassInReplicationGridTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassInReplicationGridTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassInReplicationGridTag) == 0x000001, "Wrong alignment on FMassInReplicationGridTag");
-static_assert(sizeof(FMassInReplicationGridTag) == 0x000001, "Wrong size on FMassInReplicationGridTag");
+DUMPER7_ASSERTS_FMassInReplicationGridTag;
 
 // ScriptStruct MassReplication.MassClientBubbleInfoData
 // 0x0018 (0x0018 - 0x0000)
@@ -164,10 +140,7 @@ public:
 	TArray<class AMassClientBubbleInfoBase*>      Bubbles;                                           // 0x0000(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic)
 	TSubclassOf<class AMassClientBubbleInfoBase>  BubbleClass;                                       // 0x0010(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassClientBubbleInfoData) == 0x000008, "Wrong alignment on FMassClientBubbleInfoData");
-static_assert(sizeof(FMassClientBubbleInfoData) == 0x000018, "Wrong size on FMassClientBubbleInfoData");
-static_assert(offsetof(FMassClientBubbleInfoData, Bubbles) == 0x000000, "Member 'FMassClientBubbleInfoData::Bubbles' has a wrong offset!");
-static_assert(offsetof(FMassClientBubbleInfoData, BubbleClass) == 0x000010, "Member 'FMassClientBubbleInfoData::BubbleClass' has a wrong offset!");
+DUMPER7_ASSERTS_FMassClientBubbleInfoData;
 
 // ScriptStruct MassReplication.ReplicatedAgentPositionYawData
 // 0x0020 (0x0020 - 0x0000)
@@ -178,26 +151,21 @@ public:
 	float                                         Yaw;                                               // 0x0018(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FReplicatedAgentPositionYawData) == 0x000008, "Wrong alignment on FReplicatedAgentPositionYawData");
-static_assert(sizeof(FReplicatedAgentPositionYawData) == 0x000020, "Wrong size on FReplicatedAgentPositionYawData");
-static_assert(offsetof(FReplicatedAgentPositionYawData, Position) == 0x000000, "Member 'FReplicatedAgentPositionYawData::Position' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentPositionYawData, Yaw) == 0x000018, "Member 'FReplicatedAgentPositionYawData::Yaw' has a wrong offset!");
+DUMPER7_ASSERTS_FReplicatedAgentPositionYawData;
 
 // ScriptStruct MassReplication.MassClientHandle
 // 0x0000 (0x0008 - 0x0008)
 struct FMassClientHandle final : public FIndexedHandleBase
 {
 };
-static_assert(alignof(FMassClientHandle) == 0x000004, "Wrong alignment on FMassClientHandle");
-static_assert(sizeof(FMassClientHandle) == 0x000008, "Wrong size on FMassClientHandle");
+DUMPER7_ASSERTS_FMassClientHandle;
 
 // ScriptStruct MassReplication.MassBubbleInfoClassHandle
 // 0x0000 (0x0004 - 0x0004)
 struct FMassBubbleInfoClassHandle final : public FSimpleIndexedHandleBase
 {
 };
-static_assert(alignof(FMassBubbleInfoClassHandle) == 0x000004, "Wrong alignment on FMassBubbleInfoClassHandle");
-static_assert(sizeof(FMassBubbleInfoClassHandle) == 0x000004, "Wrong size on FMassBubbleInfoClassHandle");
+DUMPER7_ASSERTS_FMassBubbleInfoClassHandle;
 
 // ScriptStruct MassReplication.ReplicatedAgentBase
 // 0x0028 (0x0028 - 0x0000)
@@ -208,10 +176,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMassEntityTemplateID                  TemplateID;                                        // 0x0008(0x0020)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FReplicatedAgentBase) == 0x000008, "Wrong alignment on FReplicatedAgentBase");
-static_assert(sizeof(FReplicatedAgentBase) == 0x000028, "Wrong size on FReplicatedAgentBase");
-static_assert(offsetof(FReplicatedAgentBase, NetID) == 0x000000, "Member 'FReplicatedAgentBase::NetID' has a wrong offset!");
-static_assert(offsetof(FReplicatedAgentBase, TemplateID) == 0x000008, "Member 'FReplicatedAgentBase::TemplateID' has a wrong offset!");
+DUMPER7_ASSERTS_FReplicatedAgentBase;
 
 }
 

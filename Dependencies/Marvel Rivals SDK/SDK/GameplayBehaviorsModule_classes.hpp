@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "GameplayBehaviorsModule_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "AIModule_structs.hpp"
 #include "AIModule_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_classes.hpp"
-#include "GameplayBehaviorsModule_structs.hpp"
 
 
 namespace SDK
@@ -33,18 +33,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTDecorator_GameplayTagQuery">();
+		STATIC_CLASS_IMPL("BTDecorator_GameplayTagQuery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTDecorator_GameplayTagQuery")
 	}
 	static class UBTDecorator_GameplayTagQuery* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTDecorator_GameplayTagQuery>();
 	}
 };
-static_assert(alignof(UBTDecorator_GameplayTagQuery) == 0x000008, "Wrong alignment on UBTDecorator_GameplayTagQuery");
-static_assert(sizeof(UBTDecorator_GameplayTagQuery) == 0x0000F8, "Wrong size on UBTDecorator_GameplayTagQuery");
-static_assert(offsetof(UBTDecorator_GameplayTagQuery, ActorForGameplayTagQuery) == 0x000070, "Member 'UBTDecorator_GameplayTagQuery::ActorForGameplayTagQuery' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_GameplayTagQuery, GameplayTagQuery) == 0x0000A0, "Member 'UBTDecorator_GameplayTagQuery::GameplayTagQuery' has a wrong offset!");
-static_assert(offsetof(UBTDecorator_GameplayTagQuery, QueryTags) == 0x0000E8, "Member 'UBTDecorator_GameplayTagQuery::QueryTags' has a wrong offset!");
+DUMPER7_ASSERTS_UBTDecorator_GameplayTagQuery;
+
+// Class GameplayBehaviorsModule.GameplayBehaviorsBlueprintFunctionLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UGameplayBehaviorsBlueprintFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void AddGameplayTagFilterToBlackboardKeySelector(struct FBlackboardKeySelector* InSelector, class UObject* Owner, class FName PropertyName);
+	static struct FGameplayTagContainer GetBlackboardValueAsGameplayTag(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static struct FGameplayTagContainer GetBlackboardValueAsGameplayTagFromBlackboardComp(class UBlackboardComponent* BlackboardComp, const class FName& KeyName);
+	static void SetBlackboardValueAsGameplayTag(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FGameplayTagContainer& Value);
+	static void SetValueAsGameplayTagForBlackboardComp(class UBlackboardComponent* BlackboardComp, const class FName& KeyName, const struct FGameplayTagContainer& GameplayTagValue);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GameplayBehaviorsBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehaviorsBlueprintFunctionLibrary")
+	}
+	static class UGameplayBehaviorsBlueprintFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGameplayBehaviorsBlueprintFunctionLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UGameplayBehaviorsBlueprintFunctionLibrary;
 
 // Class GameplayBehaviorsModule.BTTask_StopGameplayBehavior
 // 0x0008 (0x0080 - 0x0078)
@@ -56,16 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_StopGameplayBehavior">();
+		STATIC_CLASS_IMPL("BTTask_StopGameplayBehavior")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_StopGameplayBehavior")
 	}
 	static class UBTTask_StopGameplayBehavior* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_StopGameplayBehavior>();
 	}
 };
-static_assert(alignof(UBTTask_StopGameplayBehavior) == 0x000008, "Wrong alignment on UBTTask_StopGameplayBehavior");
-static_assert(sizeof(UBTTask_StopGameplayBehavior) == 0x000080, "Wrong size on UBTTask_StopGameplayBehavior");
-static_assert(offsetof(UBTTask_StopGameplayBehavior, BehaviorToStop) == 0x000078, "Member 'UBTTask_StopGameplayBehavior::BehaviorToStop' has a wrong offset!");
+DUMPER7_ASSERTS_UBTTask_StopGameplayBehavior;
 
 // Class GameplayBehaviorsModule.GameplayBehaviorConfig
 // 0x0008 (0x0038 - 0x0030)
@@ -77,16 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehaviorConfig">();
+		STATIC_CLASS_IMPL("GameplayBehaviorConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehaviorConfig")
 	}
 	static class UGameplayBehaviorConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehaviorConfig>();
 	}
 };
-static_assert(alignof(UGameplayBehaviorConfig) == 0x000008, "Wrong alignment on UGameplayBehaviorConfig");
-static_assert(sizeof(UGameplayBehaviorConfig) == 0x000038, "Wrong size on UGameplayBehaviorConfig");
-static_assert(offsetof(UGameplayBehaviorConfig, BehaviorClass) == 0x000030, "Member 'UGameplayBehaviorConfig::BehaviorClass' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehaviorConfig;
 
 // Class GameplayBehaviorsModule.GameplayBehaviorConfig_BehaviorTree
 // 0x0038 (0x0070 - 0x0038)
@@ -100,16 +131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehaviorConfig_BehaviorTree">();
+		STATIC_CLASS_IMPL("GameplayBehaviorConfig_BehaviorTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehaviorConfig_BehaviorTree")
 	}
 	static class UGameplayBehaviorConfig_BehaviorTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehaviorConfig_BehaviorTree>();
 	}
 };
-static_assert(alignof(UGameplayBehaviorConfig_BehaviorTree) == 0x000008, "Wrong alignment on UGameplayBehaviorConfig_BehaviorTree");
-static_assert(sizeof(UGameplayBehaviorConfig_BehaviorTree) == 0x000070, "Wrong size on UGameplayBehaviorConfig_BehaviorTree");
-static_assert(offsetof(UGameplayBehaviorConfig_BehaviorTree, BehaviorTree) == 0x000038, "Member 'UGameplayBehaviorConfig_BehaviorTree::BehaviorTree' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehaviorConfig_BehaviorTree;
 
 // Class GameplayBehaviorsModule.GameplayBehavior
 // 0x0068 (0x0098 - 0x0030)
@@ -140,20 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehavior">();
+		STATIC_CLASS_IMPL("GameplayBehavior")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehavior")
 	}
 	static class UGameplayBehavior* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehavior>();
 	}
 };
-static_assert(alignof(UGameplayBehavior) == 0x000008, "Wrong alignment on UGameplayBehavior");
-static_assert(sizeof(UGameplayBehavior) == 0x000098, "Wrong size on UGameplayBehavior");
-static_assert(offsetof(UGameplayBehavior, ActionTag) == 0x000044, "Member 'UGameplayBehavior::ActionTag' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior, RelevantActors) == 0x000068, "Member 'UGameplayBehavior::RelevantActors' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior, TransientSmartObjectOwner) == 0x000078, "Member 'UGameplayBehavior::TransientSmartObjectOwner' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior, TransientAvatar) == 0x000080, "Member 'UGameplayBehavior::TransientAvatar' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior, ActiveTasks) == 0x000088, "Member 'UGameplayBehavior::ActiveTasks' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehavior;
 
 // Class GameplayBehaviorsModule.GameplayBehavior_BehaviorTree
 // 0x0030 (0x00C8 - 0x0098)
@@ -168,35 +199,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehavior_BehaviorTree">();
+		STATIC_CLASS_IMPL("GameplayBehavior_BehaviorTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehavior_BehaviorTree")
 	}
 	static class UGameplayBehavior_BehaviorTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehavior_BehaviorTree>();
 	}
 };
-static_assert(alignof(UGameplayBehavior_BehaviorTree) == 0x000008, "Wrong alignment on UGameplayBehavior_BehaviorTree");
-static_assert(sizeof(UGameplayBehavior_BehaviorTree) == 0x0000C8, "Wrong size on UGameplayBehavior_BehaviorTree");
-static_assert(offsetof(UGameplayBehavior_BehaviorTree, PreviousBT) == 0x000098, "Member 'UGameplayBehavior_BehaviorTree::PreviousBT' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior_BehaviorTree, AIController) == 0x0000A0, "Member 'UGameplayBehavior_BehaviorTree::AIController' has a wrong offset!");
-static_assert(offsetof(UGameplayBehavior_BehaviorTree, bSingleRun) == 0x0000A8, "Member 'UGameplayBehavior_BehaviorTree::bSingleRun' has a wrong offset!");
-
-// Class GameplayBehaviorsModule.BlackboardKeyType_GameplayTag
-// 0x0000 (0x0038 - 0x0038)
-class UBlackboardKeyType_GameplayTag final : public UBlackboardKeyType
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BlackboardKeyType_GameplayTag">();
-	}
-	static class UBlackboardKeyType_GameplayTag* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBlackboardKeyType_GameplayTag>();
-	}
-};
-static_assert(alignof(UBlackboardKeyType_GameplayTag) == 0x000008, "Wrong alignment on UBlackboardKeyType_GameplayTag");
-static_assert(sizeof(UBlackboardKeyType_GameplayTag) == 0x000038, "Wrong size on UBlackboardKeyType_GameplayTag");
+DUMPER7_ASSERTS_UGameplayBehavior_BehaviorTree;
 
 // Class GameplayBehaviorsModule.GameplayBehaviorConfig_Animation
 // 0x0048 (0x0080 - 0x0038)
@@ -212,63 +226,61 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehaviorConfig_Animation">();
+		STATIC_CLASS_IMPL("GameplayBehaviorConfig_Animation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehaviorConfig_Animation")
 	}
 	static class UGameplayBehaviorConfig_Animation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehaviorConfig_Animation>();
 	}
 };
-static_assert(alignof(UGameplayBehaviorConfig_Animation) == 0x000008, "Wrong alignment on UGameplayBehaviorConfig_Animation");
-static_assert(sizeof(UGameplayBehaviorConfig_Animation) == 0x000080, "Wrong size on UGameplayBehaviorConfig_Animation");
-static_assert(offsetof(UGameplayBehaviorConfig_Animation, AnimMontage) == 0x000038, "Member 'UGameplayBehaviorConfig_Animation::AnimMontage' has a wrong offset!");
-static_assert(offsetof(UGameplayBehaviorConfig_Animation, PlayRate) == 0x000068, "Member 'UGameplayBehaviorConfig_Animation::PlayRate' has a wrong offset!");
-static_assert(offsetof(UGameplayBehaviorConfig_Animation, StartSectionName) == 0x00006C, "Member 'UGameplayBehaviorConfig_Animation::StartSectionName' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehaviorConfig_Animation;
 
-// Class GameplayBehaviorsModule.GameplayBehaviorsBlueprintFunctionLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UGameplayBehaviorsBlueprintFunctionLibrary final : public UBlueprintFunctionLibrary
+// Class GameplayBehaviorsModule.BlackboardKeyType_GameplayTag
+// 0x0000 (0x0038 - 0x0038)
+class UBlackboardKeyType_GameplayTag final : public UBlackboardKeyType
 {
-public:
-	static void AddGameplayTagFilterToBlackboardKeySelector(struct FBlackboardKeySelector* InSelector, class UObject* Owner, class FName PropertyName);
-	static struct FGameplayTagContainer GetBlackboardValueAsGameplayTag(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static struct FGameplayTagContainer GetBlackboardValueAsGameplayTagFromBlackboardComp(class UBlackboardComponent* BlackboardComp, const class FName& KeyName);
-	static void SetBlackboardValueAsGameplayTag(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FGameplayTagContainer& Value);
-	static void SetValueAsGameplayTagForBlackboardComp(class UBlackboardComponent* BlackboardComp, const class FName& KeyName, const struct FGameplayTagContainer& GameplayTagValue);
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehaviorsBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("BlackboardKeyType_GameplayTag")
 	}
-	static class UGameplayBehaviorsBlueprintFunctionLibrary* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UGameplayBehaviorsBlueprintFunctionLibrary>();
+		STATIC_NAME_IMPL(L"BlackboardKeyType_GameplayTag")
+	}
+	static class UBlackboardKeyType_GameplayTag* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardKeyType_GameplayTag>();
 	}
 };
-static_assert(alignof(UGameplayBehaviorsBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on UGameplayBehaviorsBlueprintFunctionLibrary");
-static_assert(sizeof(UGameplayBehaviorsBlueprintFunctionLibrary) == 0x000030, "Wrong size on UGameplayBehaviorsBlueprintFunctionLibrary");
+DUMPER7_ASSERTS_UBlackboardKeyType_GameplayTag;
 
 // Class GameplayBehaviorsModule.GameplayBehaviorSubsystem
-// 0x0050 (0x0088 - 0x0038)
+// 0x0050 (0x0090 - 0x0040)
 class UGameplayBehaviorSubsystem final : public UWorldSubsystem
 {
 public:
-	TMap<class AActor*, struct FAgentGameplayBehaviors> AgentGameplayBehaviors;                      // 0x0038(0x0050)(Protected, NativeAccessSpecifierProtected)
+	TMap<class AActor*, struct FAgentGameplayBehaviors> AgentGameplayBehaviors;                      // 0x0040(0x0050)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehaviorSubsystem">();
+		STATIC_CLASS_IMPL("GameplayBehaviorSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehaviorSubsystem")
 	}
 	static class UGameplayBehaviorSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehaviorSubsystem>();
 	}
 };
-static_assert(alignof(UGameplayBehaviorSubsystem) == 0x000008, "Wrong alignment on UGameplayBehaviorSubsystem");
-static_assert(sizeof(UGameplayBehaviorSubsystem) == 0x000088, "Wrong size on UGameplayBehaviorSubsystem");
-static_assert(offsetof(UGameplayBehaviorSubsystem, AgentGameplayBehaviors) == 0x000038, "Member 'UGameplayBehaviorSubsystem::AgentGameplayBehaviors' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehaviorSubsystem;
 
 // Class GameplayBehaviorsModule.GameplayBehavior_AnimationBased
 // 0x0010 (0x00A8 - 0x0098)
@@ -283,16 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameplayBehavior_AnimationBased">();
+		STATIC_CLASS_IMPL("GameplayBehavior_AnimationBased")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameplayBehavior_AnimationBased")
 	}
 	static class UGameplayBehavior_AnimationBased* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameplayBehavior_AnimationBased>();
 	}
 };
-static_assert(alignof(UGameplayBehavior_AnimationBased) == 0x000008, "Wrong alignment on UGameplayBehavior_AnimationBased");
-static_assert(sizeof(UGameplayBehavior_AnimationBased) == 0x0000A8, "Wrong size on UGameplayBehavior_AnimationBased");
-static_assert(offsetof(UGameplayBehavior_AnimationBased, ActivePlayback) == 0x000098, "Member 'UGameplayBehavior_AnimationBased::ActivePlayback' has a wrong offset!");
+DUMPER7_ASSERTS_UGameplayBehavior_AnimationBased;
 
 }
 

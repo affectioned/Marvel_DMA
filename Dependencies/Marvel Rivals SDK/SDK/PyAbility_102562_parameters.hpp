@@ -27,11 +27,7 @@ public:
 	uint8                                         Pad_1D8[0x8];                                      // 0x01D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x01E0(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Projectile_HitImpact_10256202_ComputeFXTransform) == 0x000010, "Wrong alignment on PyCue_Projectile_HitImpact_10256202_ComputeFXTransform");
-static_assert(sizeof(PyCue_Projectile_HitImpact_10256202_ComputeFXTransform) == 0x000240, "Wrong size on PyCue_Projectile_HitImpact_10256202_ComputeFXTransform");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10256202_ComputeFXTransform, MyTarget) == 0x000000, "Member 'PyCue_Projectile_HitImpact_10256202_ComputeFXTransform::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10256202_ComputeFXTransform, Parameter) == 0x000008, "Member 'PyCue_Projectile_HitImpact_10256202_ComputeFXTransform::Parameter' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10256202_ComputeFXTransform, ReturnValue) == 0x0001E0, "Member 'PyCue_Projectile_HitImpact_10256202_ComputeFXTransform::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_HitImpact_10256202_ComputeFXTransform;
 
 // PythonFunction PyAbility_102562.PyCue_Buff_Loop_10256102.OnActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -41,10 +37,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_Loop_10256102_OnActiveFX) == 0x000008, "Wrong alignment on PyCue_Buff_Loop_10256102_OnActiveFX");
-static_assert(sizeof(PyCue_Buff_Loop_10256102_OnActiveFX) == 0x0001D8, "Wrong size on PyCue_Buff_Loop_10256102_OnActiveFX");
-static_assert(offsetof(PyCue_Buff_Loop_10256102_OnActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_Loop_10256102_OnActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_Loop_10256102_OnActiveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_Loop_10256102_OnActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_Loop_10256102_OnActiveFX;
 
 }
 

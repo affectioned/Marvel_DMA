@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAssaultLevelStatistics">();
+		STATIC_CLASS_IMPL("PyAssaultLevelStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAssaultLevelStatistics")
 	}
 	static class UPyAssaultLevelStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAssaultLevelStatistics>();
 	}
 };
-static_assert(alignof(UPyAssaultLevelStatistics) == 0x000008, "Wrong alignment on UPyAssaultLevelStatistics");
-static_assert(sizeof(UPyAssaultLevelStatistics) == 0x000040, "Wrong size on UPyAssaultLevelStatistics");
-static_assert(offsetof(UPyAssaultLevelStatistics, AssaultPartStatistics) == 0x000038, "Member 'UPyAssaultLevelStatistics::AssaultPartStatistics' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAssaultLevelStatistics;
 
 }
 

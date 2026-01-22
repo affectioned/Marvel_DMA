@@ -21,9 +21,7 @@ struct PyWidget_Activity147_Notification_Tab_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity147_Notification_Tab_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity147_Notification_Tab_PreConstruct");
-static_assert(sizeof(PyWidget_Activity147_Notification_Tab_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity147_Notification_Tab_PreConstruct");
-static_assert(offsetof(PyWidget_Activity147_Notification_Tab_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity147_Notification_Tab_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity147_Notification_Tab_PreConstruct;
 
 }
 

@@ -57,26 +57,21 @@ public:
 	uint8                                         NextExpressionDepth;                               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionBase) == 0x000008, "Wrong alignment on FWorldConditionBase");
-static_assert(sizeof(FWorldConditionBase) == 0x000010, "Wrong size on FWorldConditionBase");
-static_assert(offsetof(FWorldConditionBase, Operator) == 0x00000C, "Member 'FWorldConditionBase::Operator' has a wrong offset!");
-static_assert(offsetof(FWorldConditionBase, NextExpressionDepth) == 0x00000D, "Member 'FWorldConditionBase::NextExpressionDepth' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionBase;
 
 // ScriptStruct WorldConditions.WorldConditionCommonBase
 // 0x0000 (0x0010 - 0x0010)
 struct FWorldConditionCommonBase final : public FWorldConditionBase
 {
 };
-static_assert(alignof(FWorldConditionCommonBase) == 0x000008, "Wrong alignment on FWorldConditionCommonBase");
-static_assert(sizeof(FWorldConditionCommonBase) == 0x000010, "Wrong size on FWorldConditionCommonBase");
+DUMPER7_ASSERTS_FWorldConditionCommonBase;
 
 // ScriptStruct WorldConditions.WorldConditionCommonActorBase
 // 0x0000 (0x0010 - 0x0010)
 struct FWorldConditionCommonActorBase final : public FWorldConditionBase
 {
 };
-static_assert(alignof(FWorldConditionCommonActorBase) == 0x000008, "Wrong alignment on FWorldConditionCommonActorBase");
-static_assert(sizeof(FWorldConditionCommonActorBase) == 0x000010, "Wrong size on FWorldConditionCommonActorBase");
+DUMPER7_ASSERTS_FWorldConditionCommonActorBase;
 
 // ScriptStruct WorldConditions.WorldConditionEditable
 // 0x0001 (0x0001 - 0x0000)
@@ -85,8 +80,7 @@ struct FWorldConditionEditable final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionEditable) == 0x000001, "Wrong alignment on FWorldConditionEditable");
-static_assert(sizeof(FWorldConditionEditable) == 0x000001, "Wrong size on FWorldConditionEditable");
+DUMPER7_ASSERTS_FWorldConditionEditable;
 
 // ScriptStruct WorldConditions.WorldConditionQuerySharedDefinition
 // 0x0028 (0x0028 - 0x0000)
@@ -97,10 +91,7 @@ public:
 	TSubclassOf<class UWorldConditionSchema>      SchemaClass;                                       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_18[0x10];                                      // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionQuerySharedDefinition) == 0x000008, "Wrong alignment on FWorldConditionQuerySharedDefinition");
-static_assert(sizeof(FWorldConditionQuerySharedDefinition) == 0x000028, "Wrong size on FWorldConditionQuerySharedDefinition");
-static_assert(offsetof(FWorldConditionQuerySharedDefinition, Conditions) == 0x000000, "Member 'FWorldConditionQuerySharedDefinition::Conditions' has a wrong offset!");
-static_assert(offsetof(FWorldConditionQuerySharedDefinition, SchemaClass) == 0x000010, "Member 'FWorldConditionQuerySharedDefinition::SchemaClass' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionQuerySharedDefinition;
 
 // ScriptStruct WorldConditions.WorldConditionQueryDefinition
 // 0x0018 (0x0018 - 0x0000)
@@ -110,9 +101,7 @@ public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UWorldConditionSchema>      SchemaClass;                                       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FWorldConditionQueryDefinition) == 0x000008, "Wrong alignment on FWorldConditionQueryDefinition");
-static_assert(sizeof(FWorldConditionQueryDefinition) == 0x000018, "Wrong size on FWorldConditionQueryDefinition");
-static_assert(offsetof(FWorldConditionQueryDefinition, SchemaClass) == 0x000010, "Member 'FWorldConditionQueryDefinition::SchemaClass' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionQueryDefinition;
 
 // ScriptStruct WorldConditions.WorldConditionItem
 // 0x0003 (0x0003 - 0x0000)
@@ -121,8 +110,7 @@ struct FWorldConditionItem final
 public:
 	uint8                                         Pad_0[0x3];                                        // 0x0000(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionItem) == 0x000001, "Wrong alignment on FWorldConditionItem");
-static_assert(sizeof(FWorldConditionItem) == 0x000003, "Wrong size on FWorldConditionItem");
+DUMPER7_ASSERTS_FWorldConditionItem;
 
 // ScriptStruct WorldConditions.WorldConditionStateObject
 // 0x0008 (0x0008 - 0x0000)
@@ -131,9 +119,7 @@ struct FWorldConditionStateObject final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWorldConditionStateObject) == 0x000008, "Wrong alignment on FWorldConditionStateObject");
-static_assert(sizeof(FWorldConditionStateObject) == 0x000008, "Wrong size on FWorldConditionStateObject");
-static_assert(offsetof(FWorldConditionStateObject, Object) == 0x000000, "Member 'FWorldConditionStateObject::Object' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionStateObject;
 
 // ScriptStruct WorldConditions.WorldConditionQueryState
 // 0x0030 (0x0030 - 0x0000)
@@ -143,9 +129,7 @@ public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Owner;                                             // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FWorldConditionQueryState) == 0x000008, "Wrong alignment on FWorldConditionQueryState");
-static_assert(sizeof(FWorldConditionQueryState) == 0x000030, "Wrong size on FWorldConditionQueryState");
-static_assert(offsetof(FWorldConditionQueryState, Owner) == 0x000028, "Member 'FWorldConditionQueryState::Owner' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionQueryState;
 
 // ScriptStruct WorldConditions.WorldConditionQuery
 // 0x0048 (0x0048 - 0x0000)
@@ -155,10 +139,7 @@ public:
 	struct FWorldConditionQueryDefinition         QueryDefinition;                                   // 0x0000(0x0018)(Edit, Protected, NativeAccessSpecifierProtected)
 	struct FWorldConditionQueryState              QueryState;                                        // 0x0018(0x0030)(Transient, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FWorldConditionQuery) == 0x000008, "Wrong alignment on FWorldConditionQuery");
-static_assert(sizeof(FWorldConditionQuery) == 0x000048, "Wrong size on FWorldConditionQuery");
-static_assert(offsetof(FWorldConditionQuery, QueryDefinition) == 0x000000, "Member 'FWorldConditionQuery::QueryDefinition' has a wrong offset!");
-static_assert(offsetof(FWorldConditionQuery, QueryState) == 0x000018, "Member 'FWorldConditionQuery::QueryState' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionQuery;
 
 // ScriptStruct WorldConditions.WorldConditionResult
 // 0x0002 (0x0002 - 0x0000)
@@ -168,10 +149,7 @@ public:
 	EWorldConditionResultValue                    Value;                                             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanBeCached;                                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWorldConditionResult) == 0x000001, "Wrong alignment on FWorldConditionResult");
-static_assert(sizeof(FWorldConditionResult) == 0x000002, "Wrong size on FWorldConditionResult");
-static_assert(offsetof(FWorldConditionResult, Value) == 0x000000, "Member 'FWorldConditionResult::Value' has a wrong offset!");
-static_assert(offsetof(FWorldConditionResult, bCanBeCached) == 0x000001, "Member 'FWorldConditionResult::bCanBeCached' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionResult;
 
 // ScriptStruct WorldConditions.WorldConditionContextDataDesc
 // 0x0018 (0x0018 - 0x0000)
@@ -183,11 +161,7 @@ public:
 	EWorldConditionContextDataType                Type;                                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionContextDataDesc) == 0x000008, "Wrong alignment on FWorldConditionContextDataDesc");
-static_assert(sizeof(FWorldConditionContextDataDesc) == 0x000018, "Wrong size on FWorldConditionContextDataDesc");
-static_assert(offsetof(FWorldConditionContextDataDesc, Struct) == 0x000000, "Member 'FWorldConditionContextDataDesc::Struct' has a wrong offset!");
-static_assert(offsetof(FWorldConditionContextDataDesc, Name) == 0x000008, "Member 'FWorldConditionContextDataDesc::Name' has a wrong offset!");
-static_assert(offsetof(FWorldConditionContextDataDesc, Type) == 0x000014, "Member 'FWorldConditionContextDataDesc::Type' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionContextDataDesc;
 
 // ScriptStruct WorldConditions.WorldConditionContextDataRef
 // 0x0010 (0x0010 - 0x0000)
@@ -198,10 +172,7 @@ public:
 	uint8                                         Index;                                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWorldConditionContextDataRef) == 0x000004, "Wrong alignment on FWorldConditionContextDataRef");
-static_assert(sizeof(FWorldConditionContextDataRef) == 0x000010, "Wrong size on FWorldConditionContextDataRef");
-static_assert(offsetof(FWorldConditionContextDataRef, Name) == 0x000000, "Member 'FWorldConditionContextDataRef::Name' has a wrong offset!");
-static_assert(offsetof(FWorldConditionContextDataRef, Index) == 0x00000C, "Member 'FWorldConditionContextDataRef::Index' has a wrong offset!");
+DUMPER7_ASSERTS_FWorldConditionContextDataRef;
 
 }
 

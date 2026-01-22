@@ -50,34 +50,7 @@ public:
 	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast_1;   // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast_2;   // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo) == 0x000008, "Wrong alignment on WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo");
-static_assert(sizeof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo) == 0x000248, "Wrong size on WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, EntryPoint) == 0x000000, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_CustomEvent_InAk) == 0x000030, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_CustomEvent_InAk' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetListnerDisInfo_Out) == 0x000038, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetListnerDisInfo_Out' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetWorldPlayerListener_ReturnValue) == 0x000060, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetWorldPlayerListener_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetObstructionOcclusion_OccValue) == 0x000068, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetObstructionOcclusion_OccValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetObstructionOcclusion_ObsValue) == 0x00006C, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetObstructionOcclusion_ObsValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_ReturnValue) == 0x000070, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_ReturnValue_1) == 0x000088, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000F0, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeArray_Array) == 0x000140, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeArray_Array_1) == 0x000150, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Format_ReturnValue) == 0x000160, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Format_ReturnValue_1) == 0x000178, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetGlobalAudioData_ReturnValue) == 0x000190, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetGlobalAudioData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_GetRTPC_ReturnValue) == 0x000198, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_GetRTPC_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_ReturnValue_2) == 0x0001A0, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001B8, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, K2Node_MakeArray_Array_2) == 0x000208, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Format_ReturnValue_2) == 0x000218, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_Value_ImplicitCast) == 0x000230, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_Value_ImplicitCast_1) == 0x000238, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo, CallFunc_Conv_DoubleToText_Value_ImplicitCast_2) == 0x000240, "Member 'WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo::CallFunc_Conv_DoubleToText_Value_ImplicitCast_2' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugHeroAudioInfo_C_ExecuteUbergraph_WBP_DebugHeroAudioInfo;
 
 // Function WBP_DebugHeroAudioInfo.WBP_DebugHeroAudioInfo_C.Get_ListenerInfo_Text_0
 // 0x0030 (0x0030 - 0x0000)
@@ -87,10 +60,7 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
 };
-static_assert(alignof(WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0) == 0x000008, "Wrong alignment on WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0");
-static_assert(sizeof(WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0) == 0x000030, "Wrong size on WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0, ReturnValue) == 0x000000, "Member 'WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugHeroAudioInfo_C_Get_ListenerInfo_Text_0;
 
 // Function WBP_DebugHeroAudioInfo.WBP_DebugHeroAudioInfo_C.GetListnerDisInfo
 // 0x00A0 (0x00A0 - 0x0000)
@@ -112,20 +82,7 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo) == 0x000008, "Wrong alignment on WBP_DebugHeroAudioInfo_C_GetListnerDisInfo");
-static_assert(sizeof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo) == 0x0000A0, "Wrong size on WBP_DebugHeroAudioInfo_C_GetListnerDisInfo");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, Out) == 0x000000, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::Out' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_GetWorldPlayerListener_ReturnValue) == 0x000010, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_GetWorldPlayerListener_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_GetLastWwisePosition_Pos) == 0x000018, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_GetLastWwisePosition_Pos' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_GetLastWwisePosition_ReturnValue) == 0x000030, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_GetLastWwisePosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_GetLastWwisePosition_Pos_1) == 0x000038, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_GetLastWwisePosition_Pos_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_GetLastWwisePosition_ReturnValue_1) == 0x000050, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_GetLastWwisePosition_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_BooleanAND_ReturnValue) == 0x000051, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_Vector_Distance_ReturnValue) == 0x000058, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_FFloor64_ReturnValue) == 0x000060, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_FFloor64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_Conv_Int64ToText_ReturnValue) == 0x000068, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_Conv_Int64ToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000080, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_GetListnerDisInfo, CallFunc_Concat_StrStr_ReturnValue) == 0x000090, "Member 'WBP_DebugHeroAudioInfo_C_GetListnerDisInfo::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugHeroAudioInfo_C_GetListnerDisInfo;
 
 // Function WBP_DebugHeroAudioInfo.WBP_DebugHeroAudioInfo_C.Initialize
 // 0x0008 (0x0008 - 0x0000)
@@ -134,9 +91,7 @@ struct WBP_DebugHeroAudioInfo_C_Initialize final
 public:
 	class UAkComponent*                           InAk;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugHeroAudioInfo_C_Initialize) == 0x000008, "Wrong alignment on WBP_DebugHeroAudioInfo_C_Initialize");
-static_assert(sizeof(WBP_DebugHeroAudioInfo_C_Initialize) == 0x000008, "Wrong size on WBP_DebugHeroAudioInfo_C_Initialize");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_Initialize, InAk) == 0x000000, "Member 'WBP_DebugHeroAudioInfo_C_Initialize::InAk' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugHeroAudioInfo_C_Initialize;
 
 // Function WBP_DebugHeroAudioInfo.WBP_DebugHeroAudioInfo_C.TryGetOwnerAk
 // 0x0008 (0x0008 - 0x0000)
@@ -145,9 +100,7 @@ struct WBP_DebugHeroAudioInfo_C_TryGetOwnerAk final
 public:
 	class UAkComponent*                           OutAk;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_DebugHeroAudioInfo_C_TryGetOwnerAk) == 0x000008, "Wrong alignment on WBP_DebugHeroAudioInfo_C_TryGetOwnerAk");
-static_assert(sizeof(WBP_DebugHeroAudioInfo_C_TryGetOwnerAk) == 0x000008, "Wrong size on WBP_DebugHeroAudioInfo_C_TryGetOwnerAk");
-static_assert(offsetof(WBP_DebugHeroAudioInfo_C_TryGetOwnerAk, OutAk) == 0x000000, "Member 'WBP_DebugHeroAudioInfo_C_TryGetOwnerAk::OutAk' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_DebugHeroAudioInfo_C_TryGetOwnerAk;
 
 }
 

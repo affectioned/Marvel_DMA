@@ -21,9 +21,7 @@ struct PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover");
-static_assert(sizeof(PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover");
-static_assert(offsetof(PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_ChangeGalactraSkin_ListItem_SetIsHover;
 
 // PythonFunction PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin_Btn.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover");
-static_assert(sizeof(PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover) == 0x000001, "Wrong size on PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover");
-static_assert(offsetof(PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_ChangeGalactraSkin_Btn_SetIsHover;
 
 // PythonFunction PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin_List.OnItemClicked
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked final
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked) == 0x000008, "Wrong alignment on PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked");
-static_assert(sizeof(PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked) == 0x000010, "Wrong size on PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked");
-static_assert(offsetof(PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked, ItemId) == 0x000000, "Member 'PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked::ItemId' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattlePass_ChangeGalactraSkin_List_OnItemClicked;
 
 }
 

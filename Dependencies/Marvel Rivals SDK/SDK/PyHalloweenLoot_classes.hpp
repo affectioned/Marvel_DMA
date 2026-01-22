@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenLoot">();
+		STATIC_CLASS_IMPL("PyHalloweenLoot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenLoot")
 	}
 	static class APyHalloweenLoot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenLoot>();
 	}
 };
-static_assert(alignof(APyHalloweenLoot) == 0x000010, "Wrong alignment on APyHalloweenLoot");
-static_assert(sizeof(APyHalloweenLoot) == 0x000700, "Wrong size on APyHalloweenLoot");
-static_assert(offsetof(APyHalloweenLoot, InitialVelocity) == 0x0006E0, "Member 'APyHalloweenLoot::InitialVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenLoot;
 
 }
 

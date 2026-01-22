@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "DeclarativeUnreal_structs.hpp"
-#include "MarvelLevel_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "PyBirthDoor_classes.hpp"
+#include "Engine_structs.hpp"
+#include "MarvelLevel_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "DeclarativeUnreal_structs.hpp"
 
 
 namespace SDK
@@ -67,47 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BirthDoor_C">();
+		BP_STATIC_CLASS_IMPL("BirthDoor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BirthDoor_C")
 	}
 	static class ABirthDoor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABirthDoor_C>();
 	}
 };
-static_assert(alignof(ABirthDoor_C) == 0x000010, "Wrong alignment on ABirthDoor_C");
-static_assert(sizeof(ABirthDoor_C) == 0x000840, "Wrong size on ABirthDoor_C");
-static_assert(offsetof(ABirthDoor_C, UberGraphFrame) == 0x000710, "Member 'ABirthDoor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_08) == 0x000718, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_08' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_07) == 0x000720, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_07' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_06) == 0x000728, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_06' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_06) == 0x000730, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_06' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_05) == 0x000738, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_05' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_05) == 0x000740, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_05' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_02) == 0x000748, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_02' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_04) == 0x000750, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_04' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_03) == 0x000758, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_03' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_04) == 0x000760, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_04' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_02) == 0x000768, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_02' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_03) == 0x000770, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_03' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Healing_01) == 0x000778, "Member 'ABirthDoor_C::Sphere_MultiSound_Healing_01' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, MultiSound_Healing) == 0x000780, "Member 'ABirthDoor_C::MultiSound_Healing' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Sphere_MultiSound_Block_01) == 0x000788, "Member 'ABirthDoor_C::Sphere_MultiSound_Block_01' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, MultiSound_Block) == 0x000790, "Member 'ABirthDoor_C::MultiSound_Block' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Pattern) == 0x000798, "Member 'ABirthDoor_C::Pattern' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Around) == 0x0007A0, "Member 'ABirthDoor_C::Around' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, MoveMaskController) == 0x0007A8, "Member 'ABirthDoor_C::MoveMaskController' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, BlockCollision) == 0x0007B0, "Member 'ABirthDoor_C::BlockCollision' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, DefaultSceneRoot) == 0x0007B8, "Member 'ABirthDoor_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, DoorType) == 0x0007C0, "Member 'ABirthDoor_C::DoorType' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, DoorAnimData) == 0x0007C8, "Member 'ABirthDoor_C::DoorAnimData' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, CurePattern) == 0x0007D8, "Member 'ABirthDoor_C::CurePattern' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, BlockPattern) == 0x0007E0, "Member 'ABirthDoor_C::BlockPattern' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, OnPlayerEnterBaseDispatcher) == 0x0007E8, "Member 'ABirthDoor_C::OnPlayerEnterBaseDispatcher' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, OnPlayerExitBaseDispatcher) == 0x0007F8, "Member 'ABirthDoor_C::OnPlayerExitBaseDispatcher' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Holder1) == 0x000808, "Member 'ABirthDoor_C::Holder1' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, Holder2) == 0x000818, "Member 'ABirthDoor_C::Holder2' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, AllyPattern) == 0x000828, "Member 'ABirthDoor_C::AllyPattern' has a wrong offset!");
-static_assert(offsetof(ABirthDoor_C, EnemyPattern) == 0x000830, "Member 'ABirthDoor_C::EnemyPattern' has a wrong offset!");
+DUMPER7_ASSERTS_ABirthDoor_C;
 
 }
 

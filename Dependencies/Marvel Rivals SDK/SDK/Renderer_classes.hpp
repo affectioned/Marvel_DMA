@@ -39,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SparseVolumeTextureViewerComponent">();
+		STATIC_CLASS_IMPL("SparseVolumeTextureViewerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SparseVolumeTextureViewerComponent")
 	}
 	static class USparseVolumeTextureViewerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USparseVolumeTextureViewerComponent>();
 	}
 };
-static_assert(alignof(USparseVolumeTextureViewerComponent) == 0x000010, "Wrong alignment on USparseVolumeTextureViewerComponent");
-static_assert(sizeof(USparseVolumeTextureViewerComponent) == 0x000800, "Wrong size on USparseVolumeTextureViewerComponent");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, SparseVolumeTexturePreview) == 0x0007B8, "Member 'USparseVolumeTextureViewerComponent::SparseVolumeTexturePreview' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, AnimationFrame) == 0x0007C4, "Member 'USparseVolumeTextureViewerComponent::AnimationFrame' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, FrameRate) == 0x0007C8, "Member 'USparseVolumeTextureViewerComponent::FrameRate' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, AnimationTime) == 0x0007CC, "Member 'USparseVolumeTextureViewerComponent::AnimationTime' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, PreviewAttribute) == 0x0007D0, "Member 'USparseVolumeTextureViewerComponent::PreviewAttribute' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, MipLevel) == 0x0007D4, "Member 'USparseVolumeTextureViewerComponent::MipLevel' has a wrong offset!");
-static_assert(offsetof(USparseVolumeTextureViewerComponent, Extinction) == 0x0007D8, "Member 'USparseVolumeTextureViewerComponent::Extinction' has a wrong offset!");
+DUMPER7_ASSERTS_USparseVolumeTextureViewerComponent;
 
 // Class Renderer.SparseVolumeTextureViewer
 // 0x0000 (0x06E0 - 0x06E0)
@@ -66,16 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SparseVolumeTextureViewer">();
+		STATIC_CLASS_IMPL("SparseVolumeTextureViewer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SparseVolumeTextureViewer")
 	}
 	static class ASparseVolumeTextureViewer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASparseVolumeTextureViewer>();
 	}
 };
-static_assert(alignof(ASparseVolumeTextureViewer) == 0x000010, "Wrong alignment on ASparseVolumeTextureViewer");
-static_assert(sizeof(ASparseVolumeTextureViewer) == 0x0006E0, "Wrong size on ASparseVolumeTextureViewer");
-static_assert(offsetof(ASparseVolumeTextureViewer, SparseVolumeTextureViewerComponent) == 0x0006D8, "Member 'ASparseVolumeTextureViewer::SparseVolumeTextureViewerComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ASparseVolumeTextureViewer;
 
 }
 

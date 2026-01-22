@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelGameModeBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelGameModeBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelGameModeBP_C")
 	}
 	static class AMarvelGameModeBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelGameModeBP_C>();
 	}
 };
-static_assert(alignof(AMarvelGameModeBP_C) == 0x000010, "Wrong alignment on AMarvelGameModeBP_C");
-static_assert(sizeof(AMarvelGameModeBP_C) == 0x000990, "Wrong size on AMarvelGameModeBP_C");
-static_assert(offsetof(AMarvelGameModeBP_C, DefaultSceneRoot) == 0x000910, "Member 'AMarvelGameModeBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelGameModeBP_C, AttackerAiIds) == 0x000918, "Member 'AMarvelGameModeBP_C::AttackerAiIds' has a wrong offset!");
-static_assert(offsetof(AMarvelGameModeBP_C, DefenderAiIds) == 0x000928, "Member 'AMarvelGameModeBP_C::DefenderAiIds' has a wrong offset!");
-static_assert(offsetof(AMarvelGameModeBP_C, HeroBTMap) == 0x000938, "Member 'AMarvelGameModeBP_C::HeroBTMap' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelGameModeBP_C;
 
 }
 

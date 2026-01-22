@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_NameplateFrame.PyWidget_NameplateFrame
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_NameplateFrame : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftClassPath                         DynamicVXClass;                                    // 0x05C0(0x0028)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoftClassPath                         DynamicVXClass;                                    // 0x05C8(0x0028)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_NameplateFrame">();
+		STATIC_CLASS_IMPL("PyWidget_NameplateFrame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_NameplateFrame")
 	}
 	static class UPyWidget_NameplateFrame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_NameplateFrame>();
 	}
 };
-static_assert(alignof(UPyWidget_NameplateFrame) == 0x000008, "Wrong alignment on UPyWidget_NameplateFrame");
-static_assert(sizeof(UPyWidget_NameplateFrame) == 0x0005E8, "Wrong size on UPyWidget_NameplateFrame");
-static_assert(offsetof(UPyWidget_NameplateFrame, DynamicVXClass) == 0x0005C0, "Member 'UPyWidget_NameplateFrame::DynamicVXClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_NameplateFrame;
 
 }
 

@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelSequenceActorBP_C">();
+		BP_STATIC_CLASS_IMPL("LevelSequenceActorBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelSequenceActorBP_C")
 	}
 	static class ALevelSequenceActorBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevelSequenceActorBP_C>();
 	}
 };
-static_assert(alignof(ALevelSequenceActorBP_C) == 0x000010, "Wrong alignment on ALevelSequenceActorBP_C");
-static_assert(sizeof(ALevelSequenceActorBP_C) == 0x000790, "Wrong size on ALevelSequenceActorBP_C");
-static_assert(offsetof(ALevelSequenceActorBP_C, DefaultSceneRoot) == 0x000778, "Member 'ALevelSequenceActorBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ALevelSequenceActorBP_C, InitDelay) == 0x000780, "Member 'ALevelSequenceActorBP_C::InitDelay' has a wrong offset!");
+DUMPER7_ASSERTS_ALevelSequenceActorBP_C;
 
 }
 

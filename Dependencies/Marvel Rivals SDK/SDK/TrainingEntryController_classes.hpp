@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TrainingEntryController_C">();
+		BP_STATIC_CLASS_IMPL("TrainingEntryController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrainingEntryController_C")
 	}
 	static class ATrainingEntryController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrainingEntryController_C>();
 	}
 };
-static_assert(alignof(ATrainingEntryController_C) == 0x000010, "Wrong alignment on ATrainingEntryController_C");
-static_assert(sizeof(ATrainingEntryController_C) == 0x0007B0, "Wrong size on ATrainingEntryController_C");
-static_assert(offsetof(ATrainingEntryController_C, UberGraphFrame) == 0x0007A0, "Member 'ATrainingEntryController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrainingEntryController_C, DefaultSceneRoot) == 0x0007A8, "Member 'ATrainingEntryController_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ATrainingEntryController_C;
 
 }
 

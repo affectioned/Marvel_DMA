@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyCue_AbilityLoop_Common.PyCue_AbilityLoop_Common
-// 0x0010 (0x14C0 - 0x14B0)
+// 0x0010 (0x14D0 - 0x14C0)
 class APyCue_AbilityLoop_Common final : public APyCue_AbilityLoop_Cable_Base
 {
 public:
-	class UFXSystemAsset*                         HitFx;                                             // 0x14B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HitAudioID;                                        // 0x14B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         HitFx;                                             // 0x14C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HitAudioID;                                        // 0x14C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ResetDefault();
@@ -38,17 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_Common">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_Common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_Common")
 	}
 	static class APyCue_AbilityLoop_Common* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_Common>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_Common) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_Common");
-static_assert(sizeof(APyCue_AbilityLoop_Common) == 0x0014C0, "Wrong size on APyCue_AbilityLoop_Common");
-static_assert(offsetof(APyCue_AbilityLoop_Common, HitFx) == 0x0014B0, "Member 'APyCue_AbilityLoop_Common::HitFx' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_Common, HitAudioID) == 0x0014B8, "Member 'APyCue_AbilityLoop_Common::HitAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_Common;
 
 }
 

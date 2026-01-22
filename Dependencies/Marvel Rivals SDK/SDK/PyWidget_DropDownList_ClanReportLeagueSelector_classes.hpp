@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList_ClanReportLeagueSelector.Pywidget_ClanReportLeagueSelector_Item
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x07D0 - 0x07D0)
 class UPywidget_ClanReportLeagueSelector_Item final : public UPyWidget_DropDownList_ListView_Item
 {
 public:
@@ -28,35 +28,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_ClanReportLeagueSelector_Item">();
+		STATIC_CLASS_IMPL("Pywidget_ClanReportLeagueSelector_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_ClanReportLeagueSelector_Item")
 	}
 	static class UPywidget_ClanReportLeagueSelector_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPywidget_ClanReportLeagueSelector_Item>();
 	}
 };
-static_assert(alignof(UPywidget_ClanReportLeagueSelector_Item) == 0x000008, "Wrong alignment on UPywidget_ClanReportLeagueSelector_Item");
-static_assert(sizeof(UPywidget_ClanReportLeagueSelector_Item) == 0x000778, "Wrong size on UPywidget_ClanReportLeagueSelector_Item");
+DUMPER7_ASSERTS_UPywidget_ClanReportLeagueSelector_Item;
 
 // PythonClass PyWidget_DropDownList_ClanReportLeagueSelector.PyWidget_ClanReportLeagueSelector_ListView
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_ClanReportLeagueSelector_ListView final : public UPyWidget_DropDownList_ListView
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanReportLeagueSelector_ListView">();
+		STATIC_CLASS_IMPL("PyWidget_ClanReportLeagueSelector_ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanReportLeagueSelector_ListView")
 	}
 	static class UPyWidget_ClanReportLeagueSelector_ListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanReportLeagueSelector_ListView>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanReportLeagueSelector_ListView) == 0x000008, "Wrong alignment on UPyWidget_ClanReportLeagueSelector_ListView");
-static_assert(sizeof(UPyWidget_ClanReportLeagueSelector_ListView) == 0x000608, "Wrong size on UPyWidget_ClanReportLeagueSelector_ListView");
+DUMPER7_ASSERTS_UPyWidget_ClanReportLeagueSelector_ListView;
 
 // PythonClass PyWidget_DropDownList_ClanReportLeagueSelector.PyWidget_DropDownList_ClanReportLeagueSelector
-// 0x0000 (0x14E0 - 0x14E0)
+// 0x0000 (0x1530 - 0x1530)
 class UPyWidget_DropDownList_ClanReportLeagueSelector final : public UPyWidget_DropDownList
 {
 public:
@@ -65,15 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_ClanReportLeagueSelector">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_ClanReportLeagueSelector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_ClanReportLeagueSelector")
 	}
 	static class UPyWidget_DropDownList_ClanReportLeagueSelector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_ClanReportLeagueSelector>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_ClanReportLeagueSelector) == 0x000010, "Wrong alignment on UPyWidget_DropDownList_ClanReportLeagueSelector");
-static_assert(sizeof(UPyWidget_DropDownList_ClanReportLeagueSelector) == 0x0014E0, "Wrong size on UPyWidget_DropDownList_ClanReportLeagueSelector");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_ClanReportLeagueSelector;
 
 }
 

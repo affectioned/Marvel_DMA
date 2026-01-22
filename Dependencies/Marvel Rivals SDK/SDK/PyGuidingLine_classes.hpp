@@ -40,7 +40,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGuidingLine">();
+		STATIC_CLASS_IMPL("PyGuidingLine")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGuidingLine")
 	}
 	static class APyGuidingLine* GetDefaultObj()
 	{
@@ -48,12 +52,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyGuidingLine) == 0x000010, "Wrong alignment on APyGuidingLine");
-static_assert(sizeof(APyGuidingLine) == 0x000700, "Wrong size on APyGuidingLine");
-static_assert(offsetof(APyGuidingLine, MaterialBlue) == 0x0006E0, "Member 'APyGuidingLine::MaterialBlue' has a wrong offset!");
-static_assert(offsetof(APyGuidingLine, MaterialRed) == 0x0006E8, "Member 'APyGuidingLine::MaterialRed' has a wrong offset!");
-static_assert(offsetof(APyGuidingLine, GuidingLineReversed) == 0x0006F0, "Member 'APyGuidingLine::GuidingLineReversed' has a wrong offset!");
-static_assert(offsetof(APyGuidingLine, AlwaysVisible) == 0x0006F1, "Member 'APyGuidingLine::AlwaysVisible' has a wrong offset!");
+DUMPER7_ASSERTS_APyGuidingLine;
 
 }
 

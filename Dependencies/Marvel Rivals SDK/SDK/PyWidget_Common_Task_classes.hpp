@@ -17,19 +17,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_Task.PyWidget_Common_Task
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_Common_Task : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayDisplayTime;                                  // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OptimalDisplayLength;                              // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LimitDisplayLength;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FullDisplayLength;                                 // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview;                               // 0x05CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5CD[0x3];                                      // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CustomColorPreviewText;                            // 0x05D0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   CustomColorPreveiwSubText;                         // 0x05E8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayDisplayTime;                                  // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OptimalDisplayLength;                              // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitDisplayLength;                                // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FullDisplayLength;                                 // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x05D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D5[0x3];                                      // 0x05D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CustomColorPreviewText;                            // 0x05D8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   CustomColorPreveiwSubText;                         // 0x05F0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,33 +40,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Task">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Task")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Task")
 	}
 	static class UPyWidget_Common_Task* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Task>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Task) == 0x000008, "Wrong alignment on UPyWidget_Common_Task");
-static_assert(sizeof(UPyWidget_Common_Task) == 0x000600, "Wrong size on UPyWidget_Common_Task");
-static_assert(offsetof(UPyWidget_Common_Task, DelayDisplayTime) == 0x0005BC, "Member 'UPyWidget_Common_Task::DelayDisplayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, OptimalDisplayLength) == 0x0005C0, "Member 'UPyWidget_Common_Task::OptimalDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, LimitDisplayLength) == 0x0005C4, "Member 'UPyWidget_Common_Task::LimitDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, FullDisplayLength) == 0x0005C8, "Member 'UPyWidget_Common_Task::FullDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, bCustomColorPreview) == 0x0005CC, "Member 'UPyWidget_Common_Task::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, CustomColorPreviewText) == 0x0005D0, "Member 'UPyWidget_Common_Task::CustomColorPreviewText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Task, CustomColorPreveiwSubText) == 0x0005E8, "Member 'UPyWidget_Common_Task::CustomColorPreveiwSubText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Task;
 
 // PythonClass PyWidget_Common_Task.PyWidget_Common_SubTask
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Common_SubTask : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OptimalDisplayLength;                              // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LimitDisplayLength;                                // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FullDisplayLength;                                 // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCustomColorPreview;                               // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OptimalDisplayLength;                              // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LimitDisplayLength;                                // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FullDisplayLength;                                 // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -76,19 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_SubTask">();
+		STATIC_CLASS_IMPL("PyWidget_Common_SubTask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_SubTask")
 	}
 	static class UPyWidget_Common_SubTask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_SubTask>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_SubTask) == 0x000008, "Wrong alignment on UPyWidget_Common_SubTask");
-static_assert(sizeof(UPyWidget_Common_SubTask) == 0x0005D0, "Wrong size on UPyWidget_Common_SubTask");
-static_assert(offsetof(UPyWidget_Common_SubTask, OptimalDisplayLength) == 0x0005BC, "Member 'UPyWidget_Common_SubTask::OptimalDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SubTask, LimitDisplayLength) == 0x0005C0, "Member 'UPyWidget_Common_SubTask::LimitDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SubTask, FullDisplayLength) == 0x0005C4, "Member 'UPyWidget_Common_SubTask::FullDisplayLength' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SubTask, bCustomColorPreview) == 0x0005C8, "Member 'UPyWidget_Common_SubTask::bCustomColorPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_SubTask;
 
 }
 

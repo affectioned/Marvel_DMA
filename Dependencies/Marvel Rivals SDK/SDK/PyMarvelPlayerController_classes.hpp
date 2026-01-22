@@ -20,31 +20,28 @@ namespace SDK
 {
 
 // PythonClass PyMarvelPlayerController.PyMarvelPlayerController
-// 0x0040 (0x1490 - 0x1450)
+// 0x0040 (0x1500 - 0x14C0)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyMarvelPlayerController : public AMarvelPlayerController
 {
 public:
-	uint8                                         Pad_1448[0x8];                                     // 0x1448(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class APyMarvelAIController*                  ClientAIController;                                // 0x1450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputMappingContext*                   AbilityActionMappingContextBP;                     // 0x1458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputMappingContext*                   OneSubmitActionMappingContextBP;                   // 0x1460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& key, const class FString& json_str)> OnClientReceiveJson; // 0x1468(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* npc_actor)> OnLevelNPCVoice;                         // 0x1478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14B8[0x8];                                     // 0x14B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class APyMarvelAIController*                  ClientAIController;                                // 0x14C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputMappingContext*                   AbilityActionMappingContextBP;                     // 0x14C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputMappingContext*                   OneSubmitActionMappingContextBP;                   // 0x14D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& key, const class FString& json_str)> OnClientReceiveJson; // 0x14D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* npc_actor)> OnLevelNPCVoice;                         // 0x14E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
-	void OnCrashKeyPressed(const struct FKey& key);
 	void OnReHandShakeSuccessCallback(const class FString& OldAddress, const class FString& NewAddress);
-	void OnCrashKeyReleased(const struct FKey& key);
-	void OnTriggerCrashKeyPressed(const struct FKey& key);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void C_ChangeHeroInHeroTest();
 	void C_ReportClientInactiveExit();
 	void C_NotifyServerMapLoadFinish();
 	void C_NotifySelectingResourceLoaded();
 	void C_NotifyServerTryEnterSelect();
-	void C_ChangeHero(int32 HeroId, int32 SkinID);
+	void C_ChangeHero(int32 HeroId, int32 SkinID, EHeroRole HeroRole);
 	void C_UploadClientMemoryInfo(float utcTime, int32 memused, int32 memavbl, int32 vmemused, int32 vmemavbl, int32 memgameused, int32 gpumem, int32 gpumemusage, int32 CPUClockSpeed);
 	void C_ChangeSkinStateWithEmote(int32 HeroId, int32 SkinID, EHeroSkinStateType SkinState);
 	void C_NotifySelectedHeroPanelLoaded();
@@ -70,7 +67,7 @@ public:
 	void RequestTrainComputerTrain(int32 train_no, int32 uid);
 	void RequestTrainComputerAssist(int32 train_no, int32 uid);
 	void RequestTrainComputerSpawnTrainHero(int32 train_no, int32 uid, int32 hero_id, int32 shape_id, int32 skin_id);
-	void RequestTrainComputerSpawnCooperateHero(int32 train_no, int32 uid, int32 hero_id, const TArray<int32>& limit_hero_list, bool clear, bool reset);
+	void RequestTrainComputerSpawnCooperateHero(int32 train_no, int32 uid, int32 hero_id, int32 hero_role, const TArray<int32>& limit_hero_list, bool clear, bool reset);
 	void teleport_post_process(class ATrainComputer* train_computer);
 	void teleport_post_process_delay_finished(class ATrainComputer* train_computer);
 	void close_enable_cameralag();
@@ -100,7 +97,7 @@ public:
 	void ClientSetLevelCueRange(float Range, float Range2);
 	void OnGamePauseStateChanged(const bool bIsPause);
 	void C_OnClientCrossConnectOtherDS();
-	void C_OnClientCrossSetData(int32 HeroId, int32 SkinID, const struct FVector& location, const struct FRotator& rotation, const struct FGameplayTag& sculpt_tag);
+	void C_OnClientCrossSetData(int32 HeroId, int32 SkinID, const struct FVector& location, const struct FRotator& rotation, const struct FGameplayTag& sculpt_tag, EHeroRole hero_role);
 	void OnAbilityInitFinished(class AActor* character);
 
 	void SendMessageToChatPanel(const class FString& Name_0, const class FString& Message, int32 MessageSide, int32 TimeStamp, int32 ChannelType, int32 SpecialType) const;
@@ -108,7 +105,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelPlayerController">();
+		STATIC_CLASS_IMPL("PyMarvelPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelPlayerController")
 	}
 	static class APyMarvelPlayerController* GetDefaultObj()
 	{
@@ -116,13 +117,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyMarvelPlayerController) == 0x000010, "Wrong alignment on APyMarvelPlayerController");
-static_assert(sizeof(APyMarvelPlayerController) == 0x001490, "Wrong size on APyMarvelPlayerController");
-static_assert(offsetof(APyMarvelPlayerController, ClientAIController) == 0x001450, "Member 'APyMarvelPlayerController::ClientAIController' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerController, AbilityActionMappingContextBP) == 0x001458, "Member 'APyMarvelPlayerController::AbilityActionMappingContextBP' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerController, OneSubmitActionMappingContextBP) == 0x001460, "Member 'APyMarvelPlayerController::OneSubmitActionMappingContextBP' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerController, OnClientReceiveJson) == 0x001468, "Member 'APyMarvelPlayerController::OnClientReceiveJson' has a wrong offset!");
-static_assert(offsetof(APyMarvelPlayerController, OnLevelNPCVoice) == 0x001478, "Member 'APyMarvelPlayerController::OnLevelNPCVoice' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelPlayerController;
 
 }
 

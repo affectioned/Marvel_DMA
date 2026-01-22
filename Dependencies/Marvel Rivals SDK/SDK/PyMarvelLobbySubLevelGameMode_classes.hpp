@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelLobbySubLevelGameMode">();
+		STATIC_CLASS_IMPL("PyMarvelLobbySubLevelGameMode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelLobbySubLevelGameMode")
 	}
 	static class APyMarvelLobbySubLevelGameMode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelLobbySubLevelGameMode>();
 	}
 };
-static_assert(alignof(APyMarvelLobbySubLevelGameMode) == 0x000010, "Wrong alignment on APyMarvelLobbySubLevelGameMode");
-static_assert(sizeof(APyMarvelLobbySubLevelGameMode) == 0x000780, "Wrong size on APyMarvelLobbySubLevelGameMode");
+DUMPER7_ASSERTS_APyMarvelLobbySubLevelGameMode;
 
 }
 

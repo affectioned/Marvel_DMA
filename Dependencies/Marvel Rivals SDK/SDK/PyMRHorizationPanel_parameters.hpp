@@ -23,9 +23,7 @@ struct PyMRHorizationPanel_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRHorizationPanel_ReceiveTick) == 0x000004, "Wrong alignment on PyMRHorizationPanel_ReceiveTick");
-static_assert(sizeof(PyMRHorizationPanel_ReceiveTick) == 0x000004, "Wrong size on PyMRHorizationPanel_ReceiveTick");
-static_assert(offsetof(PyMRHorizationPanel_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyMRHorizationPanel_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRHorizationPanel_ReceiveTick;
 
 // PythonFunction PyMRHorizationPanel.PyMRHorizationPanel.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyMRHorizationPanel_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRHorizationPanel_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyMRHorizationPanel_ReceiveEndPlay");
-static_assert(sizeof(PyMRHorizationPanel_ReceiveEndPlay) == 0x000001, "Wrong size on PyMRHorizationPanel_ReceiveEndPlay");
-static_assert(offsetof(PyMRHorizationPanel_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyMRHorizationPanel_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRHorizationPanel_ReceiveEndPlay;
 
 // PythonFunction PyMRHorizationPanel.PyMRHorizationPanel.SrvSetState
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyMRHorizationPanel_SrvSetState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMRHorizationPanel_SrvSetState) == 0x000008, "Wrong alignment on PyMRHorizationPanel_SrvSetState");
-static_assert(sizeof(PyMRHorizationPanel_SrvSetState) == 0x000010, "Wrong size on PyMRHorizationPanel_SrvSetState");
-static_assert(offsetof(PyMRHorizationPanel_SrvSetState, state) == 0x000000, "Member 'PyMRHorizationPanel_SrvSetState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyMRHorizationPanel_SrvSetState;
 
 }
 

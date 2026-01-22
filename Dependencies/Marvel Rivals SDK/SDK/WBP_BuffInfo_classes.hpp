@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BuffInfo_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BuffInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BuffInfo_C")
 	}
 	static class UWBP_BuffInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BuffInfo_C>();
 	}
 };
-static_assert(alignof(UWBP_BuffInfo_C) == 0x000008, "Wrong alignment on UWBP_BuffInfo_C");
-static_assert(sizeof(UWBP_BuffInfo_C) == 0x0003D0, "Wrong size on UWBP_BuffInfo_C");
-static_assert(offsetof(UWBP_BuffInfo_C, BuffListBox) == 0x0003C8, "Member 'UWBP_BuffInfo_C::BuffListBox' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BuffInfo_C;
 
 }
 

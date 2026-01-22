@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Activity_10120_structs.hpp"
 #include "Engine_structs.hpp"
@@ -40,19 +40,7 @@ public:
 	struct FActiveGameplayEffectHandle            ReturnValue;                                       // 0x007C(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget) == 0x000008, "Wrong alignment on BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget");
-static_assert(sizeof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget) == 0x000088, "Wrong size on BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, BuffId) == 0x000000, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::BuffId' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, Source) == 0x000008, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::Source' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, Target) == 0x000010, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::Target' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, Causer) == 0x000018, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::Causer' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, Ability) == 0x000020, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::Ability' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, ValueOverride) == 0x000028, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::ValueOverride' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, DurationOverride) == 0x00002C, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::DurationOverride' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, QuoteDepth) == 0x000030, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::QuoteDepth' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, InAbilityContextHandle) == 0x000038, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::InAbilityContextHandle' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, PeriodOverride) == 0x000078, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::PeriodOverride' has a wrong offset!");
-static_assert(offsetof(BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget, ReturnValue) == 0x00007C, "Member 'BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BattleChessFunctionLibrary_ApplyBattleChessBuffSpecToTarget;
 
 // Function Activity_10120.BuffAbility_CommonChess.GetNumOfRoles
 // 0x0010 (0x0010 - 0x0000)
@@ -63,10 +51,7 @@ public:
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BuffAbility_CommonChess_GetNumOfRoles) == 0x000008, "Wrong alignment on BuffAbility_CommonChess_GetNumOfRoles");
-static_assert(sizeof(BuffAbility_CommonChess_GetNumOfRoles) == 0x000010, "Wrong size on BuffAbility_CommonChess_GetNumOfRoles");
-static_assert(offsetof(BuffAbility_CommonChess_GetNumOfRoles, InSource) == 0x000000, "Member 'BuffAbility_CommonChess_GetNumOfRoles::InSource' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_GetNumOfRoles, ReturnValue) == 0x000008, "Member 'BuffAbility_CommonChess_GetNumOfRoles::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_CommonChess_GetNumOfRoles;
 
 // Function Activity_10120.BuffAbility_CommonChess.AddEffectModifierValue
 // 0x0018 (0x0018 - 0x0000)
@@ -77,11 +62,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0008(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InValue;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_CommonChess_AddEffectModifierValue) == 0x000004, "Wrong alignment on BuffAbility_CommonChess_AddEffectModifierValue");
-static_assert(sizeof(BuffAbility_CommonChess_AddEffectModifierValue) == 0x000018, "Wrong size on BuffAbility_CommonChess_AddEffectModifierValue");
-static_assert(offsetof(BuffAbility_CommonChess_AddEffectModifierValue, InHandle) == 0x000000, "Member 'BuffAbility_CommonChess_AddEffectModifierValue::InHandle' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_AddEffectModifierValue, InTag) == 0x000008, "Member 'BuffAbility_CommonChess_AddEffectModifierValue::InTag' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_AddEffectModifierValue, InValue) == 0x000014, "Member 'BuffAbility_CommonChess_AddEffectModifierValue::InValue' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_CommonChess_AddEffectModifierValue;
 
 // Function Activity_10120.BuffAbility_CommonChess.TryApplyDamageToTarget
 // 0x0078 (0x0078 - 0x0000)
@@ -95,13 +76,7 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  DynamicTags;                                       // 0x0010(0x0068)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_CommonChess_TryApplyDamageToTarget) == 0x000008, "Wrong alignment on BuffAbility_CommonChess_TryApplyDamageToTarget");
-static_assert(sizeof(BuffAbility_CommonChess_TryApplyDamageToTarget) == 0x000078, "Wrong size on BuffAbility_CommonChess_TryApplyDamageToTarget");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyDamageToTarget, InTarget) == 0x000000, "Member 'BuffAbility_CommonChess_TryApplyDamageToTarget::InTarget' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyDamageToTarget, Value) == 0x000008, "Member 'BuffAbility_CommonChess_TryApplyDamageToTarget::Value' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyDamageToTarget, bPercent) == 0x00000C, "Member 'BuffAbility_CommonChess_TryApplyDamageToTarget::bPercent' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyDamageToTarget, bIgnoreDamagePercent) == 0x00000D, "Member 'BuffAbility_CommonChess_TryApplyDamageToTarget::bIgnoreDamagePercent' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyDamageToTarget, DynamicTags) == 0x000010, "Member 'BuffAbility_CommonChess_TryApplyDamageToTarget::DynamicTags' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_CommonChess_TryApplyDamageToTarget;
 
 // Function Activity_10120.BuffAbility_CommonChess.TryApplyTreatToTarget
 // 0x0078 (0x0078 - 0x0000)
@@ -115,24 +90,16 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  DynamicTags;                                       // 0x0010(0x0068)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_CommonChess_TryApplyTreatToTarget) == 0x000008, "Wrong alignment on BuffAbility_CommonChess_TryApplyTreatToTarget");
-static_assert(sizeof(BuffAbility_CommonChess_TryApplyTreatToTarget) == 0x000078, "Wrong size on BuffAbility_CommonChess_TryApplyTreatToTarget");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyTreatToTarget, InTarget) == 0x000000, "Member 'BuffAbility_CommonChess_TryApplyTreatToTarget::InTarget' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyTreatToTarget, Value) == 0x000008, "Member 'BuffAbility_CommonChess_TryApplyTreatToTarget::Value' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyTreatToTarget, bPercent) == 0x00000C, "Member 'BuffAbility_CommonChess_TryApplyTreatToTarget::bPercent' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyTreatToTarget, bIgnoreTreatPercent) == 0x00000D, "Member 'BuffAbility_CommonChess_TryApplyTreatToTarget::bIgnoreTreatPercent' has a wrong offset!");
-static_assert(offsetof(BuffAbility_CommonChess_TryApplyTreatToTarget, DynamicTags) == 0x000010, "Member 'BuffAbility_CommonChess_TryApplyTreatToTarget::DynamicTags' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_CommonChess_TryApplyTreatToTarget;
 
 // Function Activity_10120.LevelDamageSourceAbility_LastKill.OnPlayerKilled
-// 0x07A0 (0x07A0 - 0x0000)
+// 0x07B8 (0x07B8 - 0x0000)
 struct LevelDamageSourceAbility_LastKill_OnPlayerKilled final
 {
 public:
-	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelDamageSourceAbility_LastKill_OnPlayerKilled) == 0x000008, "Wrong alignment on LevelDamageSourceAbility_LastKill_OnPlayerKilled");
-static_assert(sizeof(LevelDamageSourceAbility_LastKill_OnPlayerKilled) == 0x0007A0, "Wrong size on LevelDamageSourceAbility_LastKill_OnPlayerKilled");
-static_assert(offsetof(LevelDamageSourceAbility_LastKill_OnPlayerKilled, Param) == 0x000000, "Member 'LevelDamageSourceAbility_LastKill_OnPlayerKilled::Param' has a wrong offset!");
+DUMPER7_ASSERTS_LevelDamageSourceAbility_LastKill_OnPlayerKilled;
 
 // Function Activity_10120.LevelResurrectionAbility.TryResurrectCharacter
 // 0x0010 (0x0010 - 0x0000)
@@ -143,10 +110,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelResurrectionAbility_TryResurrectCharacter) == 0x000008, "Wrong alignment on LevelResurrectionAbility_TryResurrectCharacter");
-static_assert(sizeof(LevelResurrectionAbility_TryResurrectCharacter) == 0x000010, "Wrong size on LevelResurrectionAbility_TryResurrectCharacter");
-static_assert(offsetof(LevelResurrectionAbility_TryResurrectCharacter, InActor) == 0x000000, "Member 'LevelResurrectionAbility_TryResurrectCharacter::InActor' has a wrong offset!");
-static_assert(offsetof(LevelResurrectionAbility_TryResurrectCharacter, ReturnValue) == 0x000008, "Member 'LevelResurrectionAbility_TryResurrectCharacter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelResurrectionAbility_TryResurrectCharacter;
 
 // Function Activity_10120.LevelSustainedDamageAndHealingAbility.GetAllyCharacterList
 // 0x0018 (0x0018 - 0x0000)
@@ -156,10 +120,7 @@ public:
 	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AMarvelBaseCharacter*>           ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSustainedDamageAndHealingAbility_GetAllyCharacterList) == 0x000008, "Wrong alignment on LevelSustainedDamageAndHealingAbility_GetAllyCharacterList");
-static_assert(sizeof(LevelSustainedDamageAndHealingAbility_GetAllyCharacterList) == 0x000018, "Wrong size on LevelSustainedDamageAndHealingAbility_GetAllyCharacterList");
-static_assert(offsetof(LevelSustainedDamageAndHealingAbility_GetAllyCharacterList, OwnerCharacter) == 0x000000, "Member 'LevelSustainedDamageAndHealingAbility_GetAllyCharacterList::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(LevelSustainedDamageAndHealingAbility_GetAllyCharacterList, ReturnValue) == 0x000008, "Member 'LevelSustainedDamageAndHealingAbility_GetAllyCharacterList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelSustainedDamageAndHealingAbility_GetAllyCharacterList;
 
 // Function Activity_10120.LevelSustainedDamageAndHealingAbility.GetEnemyCharacterList
 // 0x0018 (0x0018 - 0x0000)
@@ -169,10 +130,7 @@ public:
 	class AMarvelBaseCharacter*                   OwnerCharacter;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AMarvelBaseCharacter*>           ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList) == 0x000008, "Wrong alignment on LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList");
-static_assert(sizeof(LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList) == 0x000018, "Wrong size on LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList");
-static_assert(offsetof(LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList, OwnerCharacter) == 0x000000, "Member 'LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList, ReturnValue) == 0x000008, "Member 'LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelSustainedDamageAndHealingAbility_GetEnemyCharacterList;
 
 // Function Activity_10120.LevelTeamBuffAbility.OnCharacterPossess
 // 0x0010 (0x0010 - 0x0000)
@@ -182,10 +140,7 @@ public:
 	class AMarvelPlayerState*                     PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AMarvelBaseCharacter*                   Character;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelTeamBuffAbility_OnCharacterPossess) == 0x000008, "Wrong alignment on LevelTeamBuffAbility_OnCharacterPossess");
-static_assert(sizeof(LevelTeamBuffAbility_OnCharacterPossess) == 0x000010, "Wrong size on LevelTeamBuffAbility_OnCharacterPossess");
-static_assert(offsetof(LevelTeamBuffAbility_OnCharacterPossess, PlayerState) == 0x000000, "Member 'LevelTeamBuffAbility_OnCharacterPossess::PlayerState' has a wrong offset!");
-static_assert(offsetof(LevelTeamBuffAbility_OnCharacterPossess, Character) == 0x000008, "Member 'LevelTeamBuffAbility_OnCharacterPossess::Character' has a wrong offset!");
+DUMPER7_ASSERTS_LevelTeamBuffAbility_OnCharacterPossess;
 
 // Function Activity_10120.LevelTeamBuffAbility.OnCharacterReborn
 // 0x0010 (0x0010 - 0x0000)
@@ -195,24 +150,18 @@ public:
 	class AActor*                                 Instigator;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 RebornActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelTeamBuffAbility_OnCharacterReborn) == 0x000008, "Wrong alignment on LevelTeamBuffAbility_OnCharacterReborn");
-static_assert(sizeof(LevelTeamBuffAbility_OnCharacterReborn) == 0x000010, "Wrong size on LevelTeamBuffAbility_OnCharacterReborn");
-static_assert(offsetof(LevelTeamBuffAbility_OnCharacterReborn, Instigator) == 0x000000, "Member 'LevelTeamBuffAbility_OnCharacterReborn::Instigator' has a wrong offset!");
-static_assert(offsetof(LevelTeamBuffAbility_OnCharacterReborn, RebornActor) == 0x000008, "Member 'LevelTeamBuffAbility_OnCharacterReborn::RebornActor' has a wrong offset!");
+DUMPER7_ASSERTS_LevelTeamBuffAbility_OnCharacterReborn;
 
 // Function Activity_10120.LevelTreatOverflowConvAbility.OnBuffRemovedFromTarget
-// 0x0B98 (0x0B98 - 0x0000)
+// 0x0BA0 (0x0BA0 - 0x0000)
 struct LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget final
 {
 public:
-	struct FActiveGameplayEffect                  RemovedEffect;                                     // 0x0000(0x0B90)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          bPrematureRemoval;                                 // 0x0B90(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B91[0x7];                                      // 0x0B91(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FActiveGameplayEffect                  RemovedEffect;                                     // 0x0000(0x0B98)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          bPrematureRemoval;                                 // 0x0B98(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B99[0x7];                                      // 0x0B99(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget) == 0x000008, "Wrong alignment on LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget");
-static_assert(sizeof(LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget) == 0x000B98, "Wrong size on LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget");
-static_assert(offsetof(LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget, RemovedEffect) == 0x000000, "Member 'LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget::RemovedEffect' has a wrong offset!");
-static_assert(offsetof(LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget, bPrematureRemoval) == 0x000B90, "Member 'LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget::bPrematureRemoval' has a wrong offset!");
+DUMPER7_ASSERTS_LevelTreatOverflowConvAbility_OnBuffRemovedFromTarget;
 
 // Function Activity_10120.BuffAbility_DamageToDamage.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -223,22 +172,16 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_DamageToDamage_OnTakeDamage) == 0x000008, "Wrong alignment on BuffAbility_DamageToDamage_OnTakeDamage");
-static_assert(sizeof(BuffAbility_DamageToDamage_OnTakeDamage) == 0x000028, "Wrong size on BuffAbility_DamageToDamage_OnTakeDamage");
-static_assert(offsetof(BuffAbility_DamageToDamage_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'BuffAbility_DamageToDamage_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_DamageToDamage_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'BuffAbility_DamageToDamage_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_DamageToDamage_OnTakeDamage, ModifierParameterHandle) == 0x000010, "Member 'BuffAbility_DamageToDamage_OnTakeDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_DamageToDamage_OnTakeDamage;
 
 // Function Activity_10120.BuffAbility_DamageBoostLastKill.OnPlayerKilled
-// 0x07A0 (0x07A0 - 0x0000)
+// 0x07B8 (0x07B8 - 0x0000)
 struct BuffAbility_DamageBoostLastKill_OnPlayerKilled final
 {
 public:
-	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_DamageBoostLastKill_OnPlayerKilled) == 0x000008, "Wrong alignment on BuffAbility_DamageBoostLastKill_OnPlayerKilled");
-static_assert(sizeof(BuffAbility_DamageBoostLastKill_OnPlayerKilled) == 0x0007A0, "Wrong size on BuffAbility_DamageBoostLastKill_OnPlayerKilled");
-static_assert(offsetof(BuffAbility_DamageBoostLastKill_OnPlayerKilled, Param) == 0x000000, "Member 'BuffAbility_DamageBoostLastKill_OnPlayerKilled::Param' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_DamageBoostLastKill_OnPlayerKilled;
 
 // Function Activity_10120.BuffAbility_TreatToDamage.OnApplyTreat
 // 0x0028 (0x0028 - 0x0000)
@@ -249,11 +192,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_TreatToDamage_OnApplyTreat) == 0x000008, "Wrong alignment on BuffAbility_TreatToDamage_OnApplyTreat");
-static_assert(sizeof(BuffAbility_TreatToDamage_OnApplyTreat) == 0x000028, "Wrong size on BuffAbility_TreatToDamage_OnApplyTreat");
-static_assert(offsetof(BuffAbility_TreatToDamage_OnApplyTreat, InSourceAvatar) == 0x000000, "Member 'BuffAbility_TreatToDamage_OnApplyTreat::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_TreatToDamage_OnApplyTreat, InTargetAvatar) == 0x000008, "Member 'BuffAbility_TreatToDamage_OnApplyTreat::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_TreatToDamage_OnApplyTreat, ModifierParameterHandle) == 0x000010, "Member 'BuffAbility_TreatToDamage_OnApplyTreat::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_TreatToDamage_OnApplyTreat;
 
 // Function Activity_10120.BuffAbility_EnergyReturn.OnAbilityEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -262,9 +201,7 @@ struct BuffAbility_EnergyReturn_OnAbilityEnd final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_EnergyReturn_OnAbilityEnd) == 0x000004, "Wrong alignment on BuffAbility_EnergyReturn_OnAbilityEnd");
-static_assert(sizeof(BuffAbility_EnergyReturn_OnAbilityEnd) == 0x000004, "Wrong size on BuffAbility_EnergyReturn_OnAbilityEnd");
-static_assert(offsetof(BuffAbility_EnergyReturn_OnAbilityEnd, AbilityID) == 0x000000, "Member 'BuffAbility_EnergyReturn_OnAbilityEnd::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_EnergyReturn_OnAbilityEnd;
 
 // Function Activity_10120.BuffAbility_LastKill_AddHealth.OnKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -275,11 +212,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_LastKill_AddHealth_OnKillOther) == 0x000008, "Wrong alignment on BuffAbility_LastKill_AddHealth_OnKillOther");
-static_assert(sizeof(BuffAbility_LastKill_AddHealth_OnKillOther) == 0x000028, "Wrong size on BuffAbility_LastKill_AddHealth_OnKillOther");
-static_assert(offsetof(BuffAbility_LastKill_AddHealth_OnKillOther, InSourceAvatar) == 0x000000, "Member 'BuffAbility_LastKill_AddHealth_OnKillOther::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_LastKill_AddHealth_OnKillOther, InTargetAvatar) == 0x000008, "Member 'BuffAbility_LastKill_AddHealth_OnKillOther::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_LastKill_AddHealth_OnKillOther, ModifierParameterHandle) == 0x000010, "Member 'BuffAbility_LastKill_AddHealth_OnKillOther::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_LastKill_AddHealth_OnKillOther;
 
 // Function Activity_10120.AbilityAdditionalEffect_Base.ApplyEffect
 // 0x0038 (0x0038 - 0x0000)
@@ -288,9 +221,7 @@ struct AbilityAdditionalEffect_Base_ApplyEffect final
 public:
 	struct FAdditionalEffectContext               ApplyContext;                                      // 0x0000(0x0038)(Parm, OutParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AbilityAdditionalEffect_Base_ApplyEffect) == 0x000008, "Wrong alignment on AbilityAdditionalEffect_Base_ApplyEffect");
-static_assert(sizeof(AbilityAdditionalEffect_Base_ApplyEffect) == 0x000038, "Wrong size on AbilityAdditionalEffect_Base_ApplyEffect");
-static_assert(offsetof(AbilityAdditionalEffect_Base_ApplyEffect, ApplyContext) == 0x000000, "Member 'AbilityAdditionalEffect_Base_ApplyEffect::ApplyContext' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityAdditionalEffect_Base_ApplyEffect;
 
 // Function Activity_10120.AbilityAdditionalTrigger_Base.BindOnActiveAbility
 // 0x0008 (0x0008 - 0x0000)
@@ -299,9 +230,7 @@ struct AbilityAdditionalTrigger_Base_BindOnActiveAbility final
 public:
 	class UMarvelEffectGameplayAbility*           Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AbilityAdditionalTrigger_Base_BindOnActiveAbility) == 0x000008, "Wrong alignment on AbilityAdditionalTrigger_Base_BindOnActiveAbility");
-static_assert(sizeof(AbilityAdditionalTrigger_Base_BindOnActiveAbility) == 0x000008, "Wrong size on AbilityAdditionalTrigger_Base_BindOnActiveAbility");
-static_assert(offsetof(AbilityAdditionalTrigger_Base_BindOnActiveAbility, Ability) == 0x000000, "Member 'AbilityAdditionalTrigger_Base_BindOnActiveAbility::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityAdditionalTrigger_Base_BindOnActiveAbility;
 
 // Function Activity_10120.AbilityAdditionalTrigger_Hurt.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -312,11 +241,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AbilityAdditionalTrigger_Hurt_OnTakeDamage) == 0x000008, "Wrong alignment on AbilityAdditionalTrigger_Hurt_OnTakeDamage");
-static_assert(sizeof(AbilityAdditionalTrigger_Hurt_OnTakeDamage) == 0x000028, "Wrong size on AbilityAdditionalTrigger_Hurt_OnTakeDamage");
-static_assert(offsetof(AbilityAdditionalTrigger_Hurt_OnTakeDamage, InSourceAvatar) == 0x000000, "Member 'AbilityAdditionalTrigger_Hurt_OnTakeDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(AbilityAdditionalTrigger_Hurt_OnTakeDamage, InTargetAvatar) == 0x000008, "Member 'AbilityAdditionalTrigger_Hurt_OnTakeDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(AbilityAdditionalTrigger_Hurt_OnTakeDamage, ModifierParameterHandle) == 0x000010, "Member 'AbilityAdditionalTrigger_Hurt_OnTakeDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityAdditionalTrigger_Hurt_OnTakeDamage;
 
 // Function Activity_10120.BuffAbility_AbilityAdditionalEffect.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
@@ -325,9 +250,7 @@ struct BuffAbility_AbilityAdditionalEffect_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_AbilityAdditionalEffect_OnAbilityActivate) == 0x000004, "Wrong alignment on BuffAbility_AbilityAdditionalEffect_OnAbilityActivate");
-static_assert(sizeof(BuffAbility_AbilityAdditionalEffect_OnAbilityActivate) == 0x000004, "Wrong size on BuffAbility_AbilityAdditionalEffect_OnAbilityActivate");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityActivate, AbilityID) == 0x000000, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_AbilityAdditionalEffect_OnAbilityActivate;
 
 // Function Activity_10120.BuffAbility_AbilityAdditionalEffect.OnAbilityDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -338,26 +261,18 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_AbilityAdditionalEffect_OnAbilityDamage) == 0x000008, "Wrong alignment on BuffAbility_AbilityAdditionalEffect_OnAbilityDamage");
-static_assert(sizeof(BuffAbility_AbilityAdditionalEffect_OnAbilityDamage) == 0x000028, "Wrong size on BuffAbility_AbilityAdditionalEffect_OnAbilityDamage");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityDamage, InSourceAvatar) == 0x000000, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityDamage::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityDamage, InTargetAvatar) == 0x000008, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityDamage::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityDamage, ModifierParameterHandle) == 0x000010, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_AbilityAdditionalEffect_OnAbilityDamage;
 
 // Function Activity_10120.BuffAbility_AbilityAdditionalEffect.OnAbilityHit
-// 0x0030 (0x0030 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct BuffAbility_AbilityAdditionalEffect_OnAbilityHit final
 {
 public:
 	class UGameplayAbility*                       HitAbility;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TArray<struct FHitResult>                     HitResults;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityHitParams                HitParams;                                         // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<struct FHitResult>                     HitResults;                                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_AbilityAdditionalEffect_OnAbilityHit) == 0x000008, "Wrong alignment on BuffAbility_AbilityAdditionalEffect_OnAbilityHit");
-static_assert(sizeof(BuffAbility_AbilityAdditionalEffect_OnAbilityHit) == 0x000030, "Wrong size on BuffAbility_AbilityAdditionalEffect_OnAbilityHit");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityHit, HitAbility) == 0x000000, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityHit::HitAbility' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityHit, HitParams) == 0x000008, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityHit::HitParams' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnAbilityHit, HitResults) == 0x000020, "Member 'BuffAbility_AbilityAdditionalEffect_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_AbilityAdditionalEffect_OnAbilityHit;
 
 // Function Activity_10120.BuffAbility_AbilityAdditionalEffect.OnKillOther
 // 0x0028 (0x0028 - 0x0000)
@@ -368,11 +283,7 @@ public:
 	class AActor*                                 InTargetAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_AbilityAdditionalEffect_OnKillOther) == 0x000008, "Wrong alignment on BuffAbility_AbilityAdditionalEffect_OnKillOther");
-static_assert(sizeof(BuffAbility_AbilityAdditionalEffect_OnKillOther) == 0x000028, "Wrong size on BuffAbility_AbilityAdditionalEffect_OnKillOther");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnKillOther, InSourceAvatar) == 0x000000, "Member 'BuffAbility_AbilityAdditionalEffect_OnKillOther::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnKillOther, InTargetAvatar) == 0x000008, "Member 'BuffAbility_AbilityAdditionalEffect_OnKillOther::InTargetAvatar' has a wrong offset!");
-static_assert(offsetof(BuffAbility_AbilityAdditionalEffect_OnKillOther, ModifierParameterHandle) == 0x000010, "Member 'BuffAbility_AbilityAdditionalEffect_OnKillOther::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_AbilityAdditionalEffect_OnKillOther;
 
 // Function Activity_10120.BuffAbility_ChanceCostEnergy.OnAbilityEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -381,9 +292,7 @@ struct BuffAbility_ChanceCostEnergy_OnAbilityEnd final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_ChanceCostEnergy_OnAbilityEnd) == 0x000004, "Wrong alignment on BuffAbility_ChanceCostEnergy_OnAbilityEnd");
-static_assert(sizeof(BuffAbility_ChanceCostEnergy_OnAbilityEnd) == 0x000004, "Wrong size on BuffAbility_ChanceCostEnergy_OnAbilityEnd");
-static_assert(offsetof(BuffAbility_ChanceCostEnergy_OnAbilityEnd, AbilityID) == 0x000000, "Member 'BuffAbility_ChanceCostEnergy_OnAbilityEnd::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_ChanceCostEnergy_OnAbilityEnd;
 
 // Function Activity_10120.BuffAbility_ChanceCostEnergy.OnAttributeInited
 // 0x0008 (0x0008 - 0x0000)
@@ -392,9 +301,7 @@ struct BuffAbility_ChanceCostEnergy_OnAttributeInited final
 public:
 	class AMarvelBaseCharacter*                   InCharacter;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_ChanceCostEnergy_OnAttributeInited) == 0x000008, "Wrong alignment on BuffAbility_ChanceCostEnergy_OnAttributeInited");
-static_assert(sizeof(BuffAbility_ChanceCostEnergy_OnAttributeInited) == 0x000008, "Wrong size on BuffAbility_ChanceCostEnergy_OnAttributeInited");
-static_assert(offsetof(BuffAbility_ChanceCostEnergy_OnAttributeInited, InCharacter) == 0x000000, "Member 'BuffAbility_ChanceCostEnergy_OnAttributeInited::InCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_ChanceCostEnergy_OnAttributeInited;
 
 // Function Activity_10120.AbilityConditional_Base.EndCheckCondition
 // 0x0010 (0x0010 - 0x0000)
@@ -405,10 +312,7 @@ public:
 	int32                                         InIndex;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AbilityConditional_Base_EndCheckCondition) == 0x000008, "Wrong alignment on AbilityConditional_Base_EndCheckCondition");
-static_assert(sizeof(AbilityConditional_Base_EndCheckCondition) == 0x000010, "Wrong size on AbilityConditional_Base_EndCheckCondition");
-static_assert(offsetof(AbilityConditional_Base_EndCheckCondition, AbilitySystemComponent) == 0x000000, "Member 'AbilityConditional_Base_EndCheckCondition::AbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(AbilityConditional_Base_EndCheckCondition, InIndex) == 0x000008, "Member 'AbilityConditional_Base_EndCheckCondition::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityConditional_Base_EndCheckCondition;
 
 // Function Activity_10120.AbilityConditional_Base.StartCheckCondition
 // 0x0010 (0x0010 - 0x0000)
@@ -419,10 +323,7 @@ public:
 	int32                                         InIndex;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AbilityConditional_Base_StartCheckCondition) == 0x000008, "Wrong alignment on AbilityConditional_Base_StartCheckCondition");
-static_assert(sizeof(AbilityConditional_Base_StartCheckCondition) == 0x000010, "Wrong size on AbilityConditional_Base_StartCheckCondition");
-static_assert(offsetof(AbilityConditional_Base_StartCheckCondition, AbilitySystemComponent) == 0x000000, "Member 'AbilityConditional_Base_StartCheckCondition::AbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(AbilityConditional_Base_StartCheckCondition, InIndex) == 0x000008, "Member 'AbilityConditional_Base_StartCheckCondition::InIndex' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityConditional_Base_StartCheckCondition;
 
 // Function Activity_10120.AbilityConditional_CharacterAttributeChange.OnAttributeChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -432,10 +333,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AbilityConditional_CharacterAttributeChange_OnAttributeChanged) == 0x000008, "Wrong alignment on AbilityConditional_CharacterAttributeChange_OnAttributeChanged");
-static_assert(sizeof(AbilityConditional_CharacterAttributeChange_OnAttributeChanged) == 0x000020, "Wrong size on AbilityConditional_CharacterAttributeChange_OnAttributeChanged");
-static_assert(offsetof(AbilityConditional_CharacterAttributeChange_OnAttributeChanged, InSourceAvatar) == 0x000000, "Member 'AbilityConditional_CharacterAttributeChange_OnAttributeChanged::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(AbilityConditional_CharacterAttributeChange_OnAttributeChanged, ModifierParameterHandle) == 0x000008, "Member 'AbilityConditional_CharacterAttributeChange_OnAttributeChanged::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_AbilityConditional_CharacterAttributeChange_OnAttributeChanged;
 
 // Function Activity_10120.BuffAbility_TargetConditionalApplyEffect.OnConditionPass
 // 0x0004 (0x0004 - 0x0000)
@@ -444,9 +342,7 @@ struct BuffAbility_TargetConditionalApplyEffect_OnConditionPass final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BuffAbility_TargetConditionalApplyEffect_OnConditionPass) == 0x000004, "Wrong alignment on BuffAbility_TargetConditionalApplyEffect_OnConditionPass");
-static_assert(sizeof(BuffAbility_TargetConditionalApplyEffect_OnConditionPass) == 0x000004, "Wrong size on BuffAbility_TargetConditionalApplyEffect_OnConditionPass");
-static_assert(offsetof(BuffAbility_TargetConditionalApplyEffect_OnConditionPass, Index_0) == 0x000000, "Member 'BuffAbility_TargetConditionalApplyEffect_OnConditionPass::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_TargetConditionalApplyEffect_OnConditionPass;
 
 // Function Activity_10120.BuffAbility_ValuePercentEnd.OnModifyValue
 // 0x0A10 (0x0A10 - 0x0000)
@@ -461,13 +357,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0A08(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A09[0x7];                                      // 0x0A09(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BuffAbility_ValuePercentEnd_OnModifyValue) == 0x000008, "Wrong alignment on BuffAbility_ValuePercentEnd_OnModifyValue");
-static_assert(sizeof(BuffAbility_ValuePercentEnd_OnModifyValue) == 0x000A10, "Wrong size on BuffAbility_ValuePercentEnd_OnModifyValue");
-static_assert(offsetof(BuffAbility_ValuePercentEnd_OnModifyValue, Spec) == 0x000000, "Member 'BuffAbility_ValuePercentEnd_OnModifyValue::Spec' has a wrong offset!");
-static_assert(offsetof(BuffAbility_ValuePercentEnd_OnModifyValue, InOutValue) == 0x0009F0, "Member 'BuffAbility_ValuePercentEnd_OnModifyValue::InOutValue' has a wrong offset!");
-static_assert(offsetof(BuffAbility_ValuePercentEnd_OnModifyValue, SourceASC) == 0x0009F8, "Member 'BuffAbility_ValuePercentEnd_OnModifyValue::SourceASC' has a wrong offset!");
-static_assert(offsetof(BuffAbility_ValuePercentEnd_OnModifyValue, TargetASC) == 0x000A00, "Member 'BuffAbility_ValuePercentEnd_OnModifyValue::TargetASC' has a wrong offset!");
-static_assert(offsetof(BuffAbility_ValuePercentEnd_OnModifyValue, ReturnValue) == 0x000A08, "Member 'BuffAbility_ValuePercentEnd_OnModifyValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbility_ValuePercentEnd_OnModifyValue;
 
 // Function Activity_10120.MarvelSourceTreatOverflowConvAbility_10120.OnSourceEffectStackCountChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -478,11 +368,7 @@ public:
 	int32                                         NewStackCount;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PreviousStackCount;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged) == 0x000004, "Wrong alignment on MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged");
-static_assert(sizeof(MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged) == 0x000010, "Wrong size on MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged");
-static_assert(offsetof(MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged, EffectHandle) == 0x000000, "Member 'MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged::EffectHandle' has a wrong offset!");
-static_assert(offsetof(MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged, NewStackCount) == 0x000008, "Member 'MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged::NewStackCount' has a wrong offset!");
-static_assert(offsetof(MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged, PreviousStackCount) == 0x00000C, "Member 'MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged::PreviousStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelSourceTreatOverflowConvAbility_10120_OnSourceEffectStackCountChanged;
 
 }
 

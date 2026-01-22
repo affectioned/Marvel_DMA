@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_ChargeSingle_V2.WBP_AbilityHUDCom_ChargeSingle_V2_C
-// 0x0008 (0x0610 - 0x0608)
+// 0x0008 (0x0618 - 0x0610)
 class UWBP_AbilityHUDCom_ChargeSingle_V2_C final : public UPyWidget_CommonChargeSingle_V5
 {
 public:
-	class UWidgetAnimation*                       Anim_FinishCharge;                                 // 0x0608(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FinishCharge;                                 // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_ChargeSingle_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_ChargeSingle_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_ChargeSingle_V2_C")
 	}
 	static class UWBP_AbilityHUDCom_ChargeSingle_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_ChargeSingle_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_ChargeSingle_V2_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_ChargeSingle_V2_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_ChargeSingle_V2_C) == 0x000610, "Wrong size on UWBP_AbilityHUDCom_ChargeSingle_V2_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_ChargeSingle_V2_C, Anim_FinishCharge) == 0x000608, "Member 'UWBP_AbilityHUDCom_ChargeSingle_V2_C::Anim_FinishCharge' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_ChargeSingle_V2_C;
 
 }
 

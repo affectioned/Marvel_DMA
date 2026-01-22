@@ -21,9 +21,7 @@ struct PyBuffAbility_120_10213191_OnSpawnArrow final
 public:
 	float                                         del_rot;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10213191_OnSpawnArrow) == 0x000004, "Wrong alignment on PyBuffAbility_120_10213191_OnSpawnArrow");
-static_assert(sizeof(PyBuffAbility_120_10213191_OnSpawnArrow) == 0x000004, "Wrong size on PyBuffAbility_120_10213191_OnSpawnArrow");
-static_assert(offsetof(PyBuffAbility_120_10213191_OnSpawnArrow, del_rot) == 0x000000, "Member 'PyBuffAbility_120_10213191_OnSpawnArrow::del_rot' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10213191_OnSpawnArrow;
 
 }
 

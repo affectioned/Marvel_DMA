@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerCustomizeFrequentlyHeroItem.PyWidget_CareerCustomizeFrequentlyHeroItem
-// 0x0038 (0x0760 - 0x0728)
+// 0x0038 (0x07B8 - 0x0780)
 class UPyWidget_CareerCustomizeFrequentlyHeroItem final : public UPyWidget_Button
 {
 public:
-	struct FSlateColor                            TextColor_Common;                                  // 0x0728(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Selected;                                // 0x073C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Less_Min_Icon_Common;                      // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Less_Min_Icon_Selected;                    // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Common;                                  // 0x0780(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Selected;                                // 0x0794(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Less_Min_Icon_Common;                      // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Less_Min_Icon_Selected;                    // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,19 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerCustomizeFrequentlyHeroItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerCustomizeFrequentlyHeroItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerCustomizeFrequentlyHeroItem")
 	}
 	static class UPyWidget_CareerCustomizeFrequentlyHeroItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerCustomizeFrequentlyHeroItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerCustomizeFrequentlyHeroItem) == 0x000008, "Wrong alignment on UPyWidget_CareerCustomizeFrequentlyHeroItem");
-static_assert(sizeof(UPyWidget_CareerCustomizeFrequentlyHeroItem) == 0x000760, "Wrong size on UPyWidget_CareerCustomizeFrequentlyHeroItem");
-static_assert(offsetof(UPyWidget_CareerCustomizeFrequentlyHeroItem, TextColor_Common) == 0x000728, "Member 'UPyWidget_CareerCustomizeFrequentlyHeroItem::TextColor_Common' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerCustomizeFrequentlyHeroItem, TextColor_Selected) == 0x00073C, "Member 'UPyWidget_CareerCustomizeFrequentlyHeroItem::TextColor_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerCustomizeFrequentlyHeroItem, Texture_Less_Min_Icon_Common) == 0x000750, "Member 'UPyWidget_CareerCustomizeFrequentlyHeroItem::Texture_Less_Min_Icon_Common' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerCustomizeFrequentlyHeroItem, Texture_Less_Min_Icon_Selected) == 0x000758, "Member 'UPyWidget_CareerCustomizeFrequentlyHeroItem::Texture_Less_Min_Icon_Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerCustomizeFrequentlyHeroItem;
 
 }
 

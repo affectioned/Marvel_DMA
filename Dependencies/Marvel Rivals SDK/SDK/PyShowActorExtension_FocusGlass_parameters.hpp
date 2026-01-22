@@ -21,9 +21,7 @@ struct PyShowActorExtension_FocusGlass_Tick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_FocusGlass_Tick) == 0x000004, "Wrong alignment on PyShowActorExtension_FocusGlass_Tick");
-static_assert(sizeof(PyShowActorExtension_FocusGlass_Tick) == 0x000004, "Wrong size on PyShowActorExtension_FocusGlass_Tick");
-static_assert(offsetof(PyShowActorExtension_FocusGlass_Tick, DeltaSeconds) == 0x000000, "Member 'PyShowActorExtension_FocusGlass_Tick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_FocusGlass_Tick;
 
 }
 

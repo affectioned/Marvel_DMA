@@ -17,17 +17,16 @@ namespace SDK::Params
 {
 
 // PythonFunction PySubVoMgr_Functional.PySubVoMgr_Functional.OnSystemVoiceEnd
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct PySubVoMgr_Functional_OnSystemVoiceEnd final
 {
 public:
-	class FString                                 VoiceTag;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 NextVoiceTag;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 VoiceTag;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 NextVoiceTag;                                      // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySubVoMgr_Functional_OnSystemVoiceEnd) == 0x000008, "Wrong alignment on PySubVoMgr_Functional_OnSystemVoiceEnd");
-static_assert(sizeof(PySubVoMgr_Functional_OnSystemVoiceEnd) == 0x000020, "Wrong size on PySubVoMgr_Functional_OnSystemVoiceEnd");
-static_assert(offsetof(PySubVoMgr_Functional_OnSystemVoiceEnd, VoiceTag) == 0x000000, "Member 'PySubVoMgr_Functional_OnSystemVoiceEnd::VoiceTag' has a wrong offset!");
-static_assert(offsetof(PySubVoMgr_Functional_OnSystemVoiceEnd, NextVoiceTag) == 0x000010, "Member 'PySubVoMgr_Functional_OnSystemVoiceEnd::NextVoiceTag' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Functional_OnSystemVoiceEnd;
 
 // PythonFunction PySubVoMgr_Functional.PySubVoMgr_Functional.OnAmbientTriggered
 // 0x0018 (0x0018 - 0x0000)
@@ -37,21 +36,16 @@ public:
 	class AMarvelAmbientVoiceTrigger*             Trigger;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Actors;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySubVoMgr_Functional_OnAmbientTriggered) == 0x000008, "Wrong alignment on PySubVoMgr_Functional_OnAmbientTriggered");
-static_assert(sizeof(PySubVoMgr_Functional_OnAmbientTriggered) == 0x000018, "Wrong size on PySubVoMgr_Functional_OnAmbientTriggered");
-static_assert(offsetof(PySubVoMgr_Functional_OnAmbientTriggered, Trigger) == 0x000000, "Member 'PySubVoMgr_Functional_OnAmbientTriggered::Trigger' has a wrong offset!");
-static_assert(offsetof(PySubVoMgr_Functional_OnAmbientTriggered, Actors) == 0x000008, "Member 'PySubVoMgr_Functional_OnAmbientTriggered::Actors' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Functional_OnAmbientTriggered;
 
 // PythonFunction PySubVoMgr_Functional.PySubVoMgr_Functional.OnPlayerKilled
-// 0x07A0 (0x07A0 - 0x0000)
+// 0x07B8 (0x07B8 - 0x0000)
 struct PySubVoMgr_Functional_OnPlayerKilled final
 {
 public:
-	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07A0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAttributeModifierParameter            Param;                                             // 0x0000(0x07B8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySubVoMgr_Functional_OnPlayerKilled) == 0x000008, "Wrong alignment on PySubVoMgr_Functional_OnPlayerKilled");
-static_assert(sizeof(PySubVoMgr_Functional_OnPlayerKilled) == 0x0007A0, "Wrong size on PySubVoMgr_Functional_OnPlayerKilled");
-static_assert(offsetof(PySubVoMgr_Functional_OnPlayerKilled, Param) == 0x000000, "Member 'PySubVoMgr_Functional_OnPlayerKilled::Param' has a wrong offset!");
+DUMPER7_ASSERTS_PySubVoMgr_Functional_OnPlayerKilled;
 
 }
 

@@ -46,10 +46,7 @@ public:
 	float                                         TargetWeight;                                      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FHomingTargetInfo) == 0x000008, "Wrong alignment on FHomingTargetInfo");
-static_assert(sizeof(FHomingTargetInfo) == 0x000010, "Wrong size on FHomingTargetInfo");
-static_assert(offsetof(FHomingTargetInfo, HomingTarget) == 0x000000, "Member 'FHomingTargetInfo::HomingTarget' has a wrong offset!");
-static_assert(offsetof(FHomingTargetInfo, TargetWeight) == 0x000008, "Member 'FHomingTargetInfo::TargetWeight' has a wrong offset!");
+DUMPER7_ASSERTS_FHomingTargetInfo;
 
 // ScriptStruct Hero_1030.VirtualProjectile_10302301_Common
 // 0x0030 (0x01D8 - 0x01A8)
@@ -61,10 +58,7 @@ public:
 	uint8                                         Pad_1B4[0x1C];                                     // 0x01B4(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 PendingAbsorbedAnka;                               // 0x01D0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVirtualProjectile_10302301_Common) == 0x000008, "Wrong alignment on FVirtualProjectile_10302301_Common");
-static_assert(sizeof(FVirtualProjectile_10302301_Common) == 0x0001D8, "Wrong size on FVirtualProjectile_10302301_Common");
-static_assert(offsetof(FVirtualProjectile_10302301_Common, LastTarget) == 0x0001AC, "Member 'FVirtualProjectile_10302301_Common::LastTarget' has a wrong offset!");
-static_assert(offsetof(FVirtualProjectile_10302301_Common, PendingAbsorbedAnka) == 0x0001D0, "Member 'FVirtualProjectile_10302301_Common::PendingAbsorbedAnka' has a wrong offset!");
+DUMPER7_ASSERTS_FVirtualProjectile_10302301_Common;
 
 // ScriptStruct Hero_1030.MarvelVirtualProjectileExtendData_10302301_NX
 // 0x000F (0x0010 - 0x0001)
@@ -73,8 +67,7 @@ struct alignas(0x08) FMarvelVirtualProjectileExtendData_10302301_NX final : publ
 public:
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMarvelVirtualProjectileExtendData_10302301_NX) == 0x000008, "Wrong alignment on FMarvelVirtualProjectileExtendData_10302301_NX");
-static_assert(sizeof(FMarvelVirtualProjectileExtendData_10302301_NX) == 0x000010, "Wrong size on FMarvelVirtualProjectileExtendData_10302301_NX");
+DUMPER7_ASSERTS_FMarvelVirtualProjectileExtendData_10302301_NX;
 
 }
 

@@ -21,9 +21,7 @@ struct PyChatEmoteSetGenerator_GetHashTextMoodSet final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyChatEmoteSetGenerator_GetHashTextMoodSet) == 0x000008, "Wrong alignment on PyChatEmoteSetGenerator_GetHashTextMoodSet");
-static_assert(sizeof(PyChatEmoteSetGenerator_GetHashTextMoodSet) == 0x000050, "Wrong size on PyChatEmoteSetGenerator_GetHashTextMoodSet");
-static_assert(offsetof(PyChatEmoteSetGenerator_GetHashTextMoodSet, ReturnValue) == 0x000000, "Member 'PyChatEmoteSetGenerator_GetHashTextMoodSet::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyChatEmoteSetGenerator_GetHashTextMoodSet;
 
 }
 

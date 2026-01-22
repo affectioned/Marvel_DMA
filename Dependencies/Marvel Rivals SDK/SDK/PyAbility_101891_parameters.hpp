@@ -25,11 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10189101_WhileActive) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10189101_WhileActive");
-static_assert(sizeof(PyCue_Ability_Loop_10189101_WhileActive) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10189101_WhileActive");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10189101_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10189101_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10189101_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10189101_WhileActive;
 
 // PythonFunction PyAbility_101891.PyCue_Ability_Loop_10189101.OnRemoveAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Loop_10189101_OnRemoveAudio) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10189101_OnRemoveAudio");
-static_assert(sizeof(PyCue_Ability_Loop_10189101_OnRemoveAudio) == 0x0001D8, "Wrong size on PyCue_Ability_Loop_10189101_OnRemoveAudio");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_OnRemoveAudio, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10189101_OnRemoveAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_OnRemoveAudio, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10189101_OnRemoveAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10189101_OnRemoveAudio;
 
 // PythonFunction PyAbility_101891.PyCue_Ability_Loop_10189101.OnRemove
 // 0x01E0 (0x01E0 - 0x0000)
@@ -53,11 +46,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Ability_Loop_10189101_OnRemove) == 0x000008, "Wrong alignment on PyCue_Ability_Loop_10189101_OnRemove");
-static_assert(sizeof(PyCue_Ability_Loop_10189101_OnRemove) == 0x0001E0, "Wrong size on PyCue_Ability_Loop_10189101_OnRemove");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_OnRemove, MyTarget) == 0x000000, "Member 'PyCue_Ability_Loop_10189101_OnRemove::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_OnRemove, Parameters) == 0x000008, "Member 'PyCue_Ability_Loop_10189101_OnRemove::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Loop_10189101_OnRemove, ReturnValue) == 0x0001D8, "Member 'PyCue_Ability_Loop_10189101_OnRemove::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Loop_10189101_OnRemove;
 
 // PythonFunction PyAbility_101891.PyAbility_101891.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -66,9 +55,7 @@ struct PyAbility_101891_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101891_CanActivate) == 0x000001, "Wrong alignment on PyAbility_101891_CanActivate");
-static_assert(sizeof(PyAbility_101891_CanActivate) == 0x000001, "Wrong size on PyAbility_101891_CanActivate");
-static_assert(offsetof(PyAbility_101891_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_101891_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101891_CanActivate;
 
 // PythonFunction PyAbility_101891.PyAbility_101891.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -77,9 +64,7 @@ struct PyAbility_101891_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101891_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101891_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101891_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101891_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101891_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101891_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101891_K2_OnEndAbility;
 
 }
 

@@ -682,6 +682,35 @@ void APyMarvelGameState::NetMultiCastReceiveMVPChange_2(int32 reduid, int32 blue
 }
 
 
+// PythonFunction PyMarvelGameState.PyMarvelGameState.NetMultiCastReceiveMVPChange_3
+// (Net, Native, NetMulticast, Public, BlueprintCallable)
+// Parameters:
+// int32                                   reduid                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   blueuid                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   yellowuid                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyMarvelGameState::NetMultiCastReceiveMVPChange_3(int32 reduid, int32 blueuid, int32 yellowuid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyMarvelGameState", "NetMultiCastReceiveMVPChange_3");
+
+	Params::PyMarvelGameState_NetMultiCastReceiveMVPChange_3 Parms{};
+
+	Parms.reduid = reduid;
+	Parms.blueuid = blueuid;
+	Parms.yellowuid = yellowuid;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyMarvelGameState.PyMarvelGameState.NetMultiCastReceiveOwnerChoiceEnd
 // (Net, NetReliable, Native, NetMulticast, Public, BlueprintCallable)
 

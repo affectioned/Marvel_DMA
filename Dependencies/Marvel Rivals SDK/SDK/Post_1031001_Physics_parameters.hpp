@@ -23,9 +23,7 @@ struct Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics) == 0x000004, "Wrong alignment on Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics");
-static_assert(sizeof(Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics) == 0x000004, "Wrong size on Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics");
-static_assert(offsetof(Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics, EntryPoint) == 0x000000, "Member 'Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_Post_1031001_Physics_C_ExecuteUbergraph_Post_1031001_Physics;
 
 // Function Post_1031001_Physics.Post_1031001_Physics_C.AnimGraph
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Post_1031001_Physics_C_AnimGraph) == 0x000008, "Wrong alignment on Post_1031001_Physics_C_AnimGraph");
-static_assert(sizeof(Post_1031001_Physics_C_AnimGraph) == 0x000020, "Wrong size on Post_1031001_Physics_C_AnimGraph");
-static_assert(offsetof(Post_1031001_Physics_C_AnimGraph, InPose) == 0x000000, "Member 'Post_1031001_Physics_C_AnimGraph::InPose' has a wrong offset!");
-static_assert(offsetof(Post_1031001_Physics_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'Post_1031001_Physics_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+DUMPER7_ASSERTS_Post_1031001_Physics_C_AnimGraph;
 
 }
 

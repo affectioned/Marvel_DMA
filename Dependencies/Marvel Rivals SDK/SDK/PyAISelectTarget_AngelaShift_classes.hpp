@@ -30,19 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_AngelaShift">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_AngelaShift")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_AngelaShift")
 	}
 	static class UPyAISelectTarget_AngelaShift* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_AngelaShift>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_AngelaShift) == 0x000008, "Wrong alignment on UPyAISelectTarget_AngelaShift");
-static_assert(sizeof(UPyAISelectTarget_AngelaShift) == 0x000080, "Wrong size on UPyAISelectTarget_AngelaShift");
-static_assert(offsetof(UPyAISelectTarget_AngelaShift, BuffID) == 0x000070, "Member 'UPyAISelectTarget_AngelaShift::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_AngelaShift, SecondTargetTeammate) == 0x000074, "Member 'UPyAISelectTarget_AngelaShift::SecondTargetTeammate' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_AngelaShift, MaxAngle) == 0x000078, "Member 'UPyAISelectTarget_AngelaShift::MaxAngle' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_AngelaShift, MaxRadius) == 0x00007C, "Member 'UPyAISelectTarget_AngelaShift::MaxRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_AngelaShift;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallChildPanel.PyWidget_MallChildPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_MallChildPanel : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallChildPanel">();
+		STATIC_CLASS_IMPL("PyWidget_MallChildPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallChildPanel")
 	}
 	static class UPyWidget_MallChildPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallChildPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_MallChildPanel) == 0x000008, "Wrong alignment on UPyWidget_MallChildPanel");
-static_assert(sizeof(UPyWidget_MallChildPanel) == 0x0005F8, "Wrong size on UPyWidget_MallChildPanel");
+DUMPER7_ASSERTS_UPyWidget_MallChildPanel;
 
 }
 

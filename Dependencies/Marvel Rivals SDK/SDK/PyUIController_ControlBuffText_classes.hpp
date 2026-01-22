@@ -34,21 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_ControlBuffText">();
+		STATIC_CLASS_IMPL("PyUIController_ControlBuffText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_ControlBuffText")
 	}
 	static class UPyUIController_ControlBuffText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_ControlBuffText>();
 	}
 };
-static_assert(alignof(UPyUIController_ControlBuffText) == 0x000008, "Wrong alignment on UPyUIController_ControlBuffText");
-static_assert(sizeof(UPyUIController_ControlBuffText) == 0x000130, "Wrong size on UPyUIController_ControlBuffText");
-static_assert(offsetof(UPyUIController_ControlBuffText, ControlBuffWBP) == 0x000108, "Member 'UPyUIController_ControlBuffText::ControlBuffWBP' has a wrong offset!");
-static_assert(offsetof(UPyUIController_ControlBuffText, ShowText) == 0x000110, "Member 'UPyUIController_ControlBuffText::ShowText' has a wrong offset!");
-static_assert(offsetof(UPyUIController_ControlBuffText, Widget) == 0x000128, "Member 'UPyUIController_ControlBuffText::Widget' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_ControlBuffText;
 
 // PythonClass PyUIController_ControlBuffText.PyWidget_ControlBuffTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ControlBuffTips : public UPyMarvelUserWidget
 {
 public:
@@ -58,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ControlBuffTips">();
+		STATIC_CLASS_IMPL("PyWidget_ControlBuffTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ControlBuffTips")
 	}
 	static class UPyWidget_ControlBuffTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ControlBuffTips>();
 	}
 };
-static_assert(alignof(UPyWidget_ControlBuffTips) == 0x000008, "Wrong alignment on UPyWidget_ControlBuffTips");
-static_assert(sizeof(UPyWidget_ControlBuffTips) == 0x0005C0, "Wrong size on UPyWidget_ControlBuffTips");
+DUMPER7_ASSERTS_UPyWidget_ControlBuffTips;
 
 }
 

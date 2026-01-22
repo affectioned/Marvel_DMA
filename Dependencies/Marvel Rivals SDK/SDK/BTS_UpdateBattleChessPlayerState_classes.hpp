@@ -23,15 +23,18 @@ class UBTS_UpdateBattleChessPlayerState_C final : public UBTS_PyUpdateBattleChes
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateBattleChessPlayerState_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateBattleChessPlayerState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateBattleChessPlayerState_C")
 	}
 	static class UBTS_UpdateBattleChessPlayerState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateBattleChessPlayerState_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateBattleChessPlayerState_C) == 0x000008, "Wrong alignment on UBTS_UpdateBattleChessPlayerState_C");
-static_assert(sizeof(UBTS_UpdateBattleChessPlayerState_C) == 0x0000D8, "Wrong size on UBTS_UpdateBattleChessPlayerState_C");
+DUMPER7_ASSERTS_UBTS_UpdateBattleChessPlayerState_C;
 
 }
 

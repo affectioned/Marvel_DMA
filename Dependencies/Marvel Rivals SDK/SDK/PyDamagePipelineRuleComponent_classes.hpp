@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDamagePipelineConfig">();
+		STATIC_CLASS_IMPL("PyDamagePipelineConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDamagePipelineConfig")
 	}
 	static class UPyDamagePipelineConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDamagePipelineConfig>();
 	}
 };
-static_assert(alignof(UPyDamagePipelineConfig) == 0x000008, "Wrong alignment on UPyDamagePipelineConfig");
-static_assert(sizeof(UPyDamagePipelineConfig) == 0x000050, "Wrong size on UPyDamagePipelineConfig");
-static_assert(offsetof(UPyDamagePipelineConfig, DamagePipelineClass) == 0x000030, "Member 'UPyDamagePipelineConfig::DamagePipelineClass' has a wrong offset!");
-static_assert(offsetof(UPyDamagePipelineConfig, DamageLimitConfigs) == 0x000038, "Member 'UPyDamagePipelineConfig::DamageLimitConfigs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDamagePipelineConfig;
 
 // PythonClass PyDamagePipelineRuleComponent.PyDamagePipelineRuleComponent
 // 0x0008 (0x0110 - 0x0108)
@@ -51,16 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDamagePipelineRuleComponent">();
+		STATIC_CLASS_IMPL("PyDamagePipelineRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDamagePipelineRuleComponent")
 	}
 	static class UPyDamagePipelineRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDamagePipelineRuleComponent>();
 	}
 };
-static_assert(alignof(UPyDamagePipelineRuleComponent) == 0x000008, "Wrong alignment on UPyDamagePipelineRuleComponent");
-static_assert(sizeof(UPyDamagePipelineRuleComponent) == 0x000110, "Wrong size on UPyDamagePipelineRuleComponent");
-static_assert(offsetof(UPyDamagePipelineRuleComponent, Config) == 0x000108, "Member 'UPyDamagePipelineRuleComponent::Config' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDamagePipelineRuleComponent;
 
 }
 

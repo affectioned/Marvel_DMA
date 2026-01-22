@@ -23,15 +23,18 @@ class URichTextImageText_BP_C final : public URichTextBlockImageTextDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextImageText_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextImageText_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextImageText_BP_C")
 	}
 	static class URichTextImageText_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextImageText_BP_C>();
 	}
 };
-static_assert(alignof(URichTextImageText_BP_C) == 0x000008, "Wrong alignment on URichTextImageText_BP_C");
-static_assert(sizeof(URichTextImageText_BP_C) == 0x000050, "Wrong size on URichTextImageText_BP_C");
+DUMPER7_ASSERTS_URichTextImageText_BP_C;
 
 }
 

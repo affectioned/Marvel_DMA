@@ -23,11 +23,7 @@ public:
 	const class UUserWidget*                      Widget;                                            // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TMap<class FString, class FString>            InMetaData;                                        // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyHashTextMoodWidgetDecoratorProxy_SetWidgetData) == 0x000008, "Wrong alignment on PyHashTextMoodWidgetDecoratorProxy_SetWidgetData");
-static_assert(sizeof(PyHashTextMoodWidgetDecoratorProxy_SetWidgetData) == 0x000060, "Wrong size on PyHashTextMoodWidgetDecoratorProxy_SetWidgetData");
-static_assert(offsetof(PyHashTextMoodWidgetDecoratorProxy_SetWidgetData, Owner) == 0x000000, "Member 'PyHashTextMoodWidgetDecoratorProxy_SetWidgetData::Owner' has a wrong offset!");
-static_assert(offsetof(PyHashTextMoodWidgetDecoratorProxy_SetWidgetData, Widget) == 0x000008, "Member 'PyHashTextMoodWidgetDecoratorProxy_SetWidgetData::Widget' has a wrong offset!");
-static_assert(offsetof(PyHashTextMoodWidgetDecoratorProxy_SetWidgetData, InMetaData) == 0x000010, "Member 'PyHashTextMoodWidgetDecoratorProxy_SetWidgetData::InMetaData' has a wrong offset!");
+DUMPER7_ASSERTS_PyHashTextMoodWidgetDecoratorProxy_SetWidgetData;
 
 }
 

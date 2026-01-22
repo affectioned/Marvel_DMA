@@ -25,11 +25,7 @@ public:
 	int32                                         NewCount;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OldCount;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10232501_OnGameplayEffectStackChange) == 0x000004, "Wrong alignment on PyEffectAbility_120_10232501_OnGameplayEffectStackChange");
-static_assert(sizeof(PyEffectAbility_120_10232501_OnGameplayEffectStackChange) == 0x000010, "Wrong size on PyEffectAbility_120_10232501_OnGameplayEffectStackChange");
-static_assert(offsetof(PyEffectAbility_120_10232501_OnGameplayEffectStackChange, Handle) == 0x000000, "Member 'PyEffectAbility_120_10232501_OnGameplayEffectStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyEffectAbility_120_10232501_OnGameplayEffectStackChange, NewCount) == 0x000008, "Member 'PyEffectAbility_120_10232501_OnGameplayEffectStackChange::NewCount' has a wrong offset!");
-static_assert(offsetof(PyEffectAbility_120_10232501_OnGameplayEffectStackChange, OldCount) == 0x00000C, "Member 'PyEffectAbility_120_10232501_OnGameplayEffectStackChange::OldCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10232501_OnGameplayEffectStackChange;
 
 // PythonFunction PyEffectAbility_120_10232501.PyEffectAbility_120_10232501.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,7 @@ struct PyEffectAbility_120_10232501_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10232501_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_120_10232501_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_120_10232501_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_120_10232501_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_120_10232501_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_120_10232501_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10232501_K2_OnEndAbility;
 
 }
 

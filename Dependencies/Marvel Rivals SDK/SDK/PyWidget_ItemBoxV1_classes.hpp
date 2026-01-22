@@ -17,18 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ItemBoxV1.PyWidget_ItemBoxV1
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_ItemBoxV1 final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UScriptStruct*                          ItemData;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Cnt;                                               // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemId;                                            // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemType;                                          // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LowerBound;                                        // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelected;                                        // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNumVisible;                                      // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UScriptStruct*                          ItemData;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Cnt;                                               // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemId;                                            // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemType;                                          // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LowerBound;                                        // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelected;                                        // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNumVisible;                                      // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,22 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ItemBoxV1">();
+		STATIC_CLASS_IMPL("PyWidget_ItemBoxV1")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ItemBoxV1")
 	}
 	static class UPyWidget_ItemBoxV1* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ItemBoxV1>();
 	}
 };
-static_assert(alignof(UPyWidget_ItemBoxV1) == 0x000008, "Wrong alignment on UPyWidget_ItemBoxV1");
-static_assert(sizeof(UPyWidget_ItemBoxV1) == 0x0005E0, "Wrong size on UPyWidget_ItemBoxV1");
-static_assert(offsetof(UPyWidget_ItemBoxV1, ItemData) == 0x0005C0, "Member 'UPyWidget_ItemBoxV1::ItemData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, Cnt) == 0x0005C8, "Member 'UPyWidget_ItemBoxV1::Cnt' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, ItemId) == 0x0005CC, "Member 'UPyWidget_ItemBoxV1::ItemId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, ItemType) == 0x0005D0, "Member 'UPyWidget_ItemBoxV1::ItemType' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, LowerBound) == 0x0005D4, "Member 'UPyWidget_ItemBoxV1::LowerBound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, IsSelected) == 0x0005D8, "Member 'UPyWidget_ItemBoxV1::IsSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ItemBoxV1, IsNumVisible) == 0x0005D9, "Member 'UPyWidget_ItemBoxV1::IsNumVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ItemBoxV1;
 
 }
 

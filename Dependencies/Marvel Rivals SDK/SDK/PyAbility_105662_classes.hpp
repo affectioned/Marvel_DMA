@@ -18,47 +18,51 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105662.PyConfig_105662
-// 0x0010 (0x2470 - 0x2460)
+// 0x0010 (0x2B40 - 0x2B30)
 class UPyConfig_105662 final : public UConfig_105662
 {
 public:
-	float                                         GroundExploreDist;                                 // 0x2460(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GroundScopeID;                                     // 0x2464(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GroundExploreDist;                                 // 0x2B30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroundScopeID;                                     // 0x2B34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105662">();
+		STATIC_CLASS_IMPL("PyConfig_105662")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105662")
 	}
 	static class UPyConfig_105662* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105662>();
 	}
 };
-static_assert(alignof(UPyConfig_105662) == 0x000010, "Wrong alignment on UPyConfig_105662");
-static_assert(sizeof(UPyConfig_105662) == 0x002470, "Wrong size on UPyConfig_105662");
-static_assert(offsetof(UPyConfig_105662, GroundExploreDist) == 0x002460, "Member 'UPyConfig_105662::GroundExploreDist' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105662, GroundScopeID) == 0x002464, "Member 'UPyConfig_105662::GroundScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105662;
 
 // PythonClass PyAbility_105662.PyConfig_105663
-// 0x0000 (0x18B0 - 0x18B0)
+// 0x0000 (0x1C60 - 0x1C60)
 class UPyConfig_105663 final : public UMarvelLaunchToCharacterConfig
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105663">();
+		STATIC_CLASS_IMPL("PyConfig_105663")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105663")
 	}
 	static class UPyConfig_105663* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105663>();
 	}
 };
-static_assert(alignof(UPyConfig_105663) == 0x000010, "Wrong alignment on UPyConfig_105663");
-static_assert(sizeof(UPyConfig_105663) == 0x0018B0, "Wrong size on UPyConfig_105663");
+DUMPER7_ASSERTS_UPyConfig_105663;
 
 // PythonClass PyAbility_105662.PyAbility_105662
-// 0x0000 (0x2AF0 - 0x2AF0)
+// 0x0000 (0x2B40 - 0x2B40)
 class UPyAbility_105662 : public UAbility_105662
 {
 public:
@@ -70,18 +74,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105662">();
+		STATIC_CLASS_IMPL("PyAbility_105662")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105662")
 	}
 	static class UPyAbility_105662* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105662>();
 	}
 };
-static_assert(alignof(UPyAbility_105662) == 0x000008, "Wrong alignment on UPyAbility_105662");
-static_assert(sizeof(UPyAbility_105662) == 0x002AF0, "Wrong size on UPyAbility_105662");
+DUMPER7_ASSERTS_UPyAbility_105662;
 
 // PythonClass PyAbility_105662.PyAbility_105663
-// 0x0000 (0x2D40 - 0x2D40)
+// 0x0000 (0x2D90 - 0x2D90)
 class UPyAbility_105663 final : public UMarvelLaunchToCharacterAbility
 {
 public:
@@ -93,15 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105663">();
+		STATIC_CLASS_IMPL("PyAbility_105663")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105663")
 	}
 	static class UPyAbility_105663* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105663>();
 	}
 };
-static_assert(alignof(UPyAbility_105663) == 0x000008, "Wrong alignment on UPyAbility_105663");
-static_assert(sizeof(UPyAbility_105663) == 0x002D40, "Wrong size on UPyAbility_105663");
+DUMPER7_ASSERTS_UPyAbility_105663;
 
 }
 

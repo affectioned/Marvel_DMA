@@ -41,7 +41,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityTarget">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityTarget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityTarget")
 	}
 	static class UPyWidget_AbilityTarget* GetDefaultObj()
 	{
@@ -49,11 +53,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_AbilityTarget) == 0x000010, "Wrong alignment on UPyWidget_AbilityTarget");
-static_assert(sizeof(UPyWidget_AbilityTarget) == 0x0008A0, "Wrong size on UPyWidget_AbilityTarget");
-static_assert(offsetof(UPyWidget_AbilityTarget, Color_Default) == 0x000870, "Member 'UPyWidget_AbilityTarget::Color_Default' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityTarget, Color_Enemy) == 0x000880, "Member 'UPyWidget_AbilityTarget::Color_Enemy' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityTarget, HBox_Key_Mul) == 0x000890, "Member 'UPyWidget_AbilityTarget::HBox_Key_Mul' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityTarget;
 
 }
 

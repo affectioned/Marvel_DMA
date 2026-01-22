@@ -23,11 +23,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyUpdatePrepareRemainTime_ReceiveTickAI) == 0x000008, "Wrong alignment on BTS_PyUpdatePrepareRemainTime_ReceiveTickAI");
-static_assert(sizeof(BTS_PyUpdatePrepareRemainTime_ReceiveTickAI) == 0x000018, "Wrong size on BTS_PyUpdatePrepareRemainTime_ReceiveTickAI");
-static_assert(offsetof(BTS_PyUpdatePrepareRemainTime_ReceiveTickAI, OwnerController) == 0x000000, "Member 'BTS_PyUpdatePrepareRemainTime_ReceiveTickAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyUpdatePrepareRemainTime_ReceiveTickAI, ControlledPawn) == 0x000008, "Member 'BTS_PyUpdatePrepareRemainTime_ReceiveTickAI::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTS_PyUpdatePrepareRemainTime_ReceiveTickAI, DeltaSeconds) == 0x000010, "Member 'BTS_PyUpdatePrepareRemainTime_ReceiveTickAI::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyUpdatePrepareRemainTime_ReceiveTickAI;
 
 }
 

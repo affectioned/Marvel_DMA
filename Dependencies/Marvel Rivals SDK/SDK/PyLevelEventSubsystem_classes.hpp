@@ -10,363 +10,382 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_structs.hpp"
+#include "level_battle_chess_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "python_enums_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "level_battle_chess_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyLevelEventSubsystem.PyLevelEventSubSystem
-// 0x1540 (0x18A0 - 0x0360)
+// 0x1670 (0x19F8 - 0x0388)
 class UPyLevelEventSubSystem : public ULevelEventSubsystem
 {
 public:
-	TMulticastInlineDelegate<void()>              LevelStart;                                        // 0x0360(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AllClientLoadedMap;                                // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> ClientLoadedMap;                  // 0x0380(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 percent)> LevelLoadingPercent;                               // 0x0390(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid)>     PlayerMosHeroInfoUpdate;                           // 0x03A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RoundStart;                                        // 0x03B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RoundEnd;                                          // 0x03C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RequiredMapPreLoaded;                              // 0x03D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ParentDSMapLoaded;                                 // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RequiredReplayMapLoaded;                           // 0x03F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RequiredMapUnLoaded;                               // 0x0400(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SelectHeroLoaded;                                  // 0x0410(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ServerFirstMapLoaded;                              // 0x0420(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PreEventLevelReset;                                // 0x0430(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PostEventLevelReset;                               // 0x0440(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LikeMapLoadedStart;                                // 0x0450(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LikeMapLoaded;                                     // 0x0460(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LikeMapUnLoaded;                                   // 0x0470(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ClientShowMVPPanel;                                // 0x0480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ClientEnterEpicMoment;                             // 0x0490(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SelectHeroEndDispatcher;                           // 0x04A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& WorldName)> SelectHeroWorldLoadedDispatcher;  // 0x04B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ClientFirstShowSelectHeroPanel;                    // 0x04C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool enable)>   ToggleEnableUnloadLevel;                           // 0x04D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnGlobalQualityChanged;                            // 0x04E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class FString>& SublevelPartList)> InitializeSublevelPartList; // 0x04F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& CurrentLevelPartName)> CurrentLevelPartNameChanged; // 0x0500(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PrepareEndDispatcher;                              // 0x0510(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EMatchState MatchState)> BeforeMatchStateChangeDispatcher;         // 0x0520(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              FightStartDispatcher;                              // 0x0530(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RpcFightStartDispatcher;                           // 0x0540(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              ShowTransitionPanel;                               // 0x0550(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              TransitionPanelFadeOut;                            // 0x0560(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              TransitionEndDispatcher;                           // 0x0570(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float RemainingTime)> RemainingTimeDispatcher;                     // 0x0580(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float RemainingTime)> PauseRemainingTimeDispatcher;                // 0x0590(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SetRemainingTimeDispatcher;                        // 0x05A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RegularTimeOutDispatcher;                          // 0x05B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerSpawn;                    // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerWin;                      // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerLost;                     // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayDraw;                                        // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* char, bool in_pass)> OnActorSRoomPassDispatcher;     // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 map_id, EBattleSide battle_side)> RoundWinnerDispatcher;     // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OpenHeroListChange;                                // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OpenSelectHeroListChange;                          // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EMatchState state, float old_time, float new_time, float passed_time)> StateTimeChangeDispatcher; // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SlowMotionEndDispatcher;                           // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGamePauseInfo& info)> OnGamePauseInfoChanged;        // 0x0660(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float time)>    OnGamePauseTimeChanged;                            // 0x0670(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float time)>    OnPreUnpauseTimeChanged;                           // 0x0680(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FPlayerStandbyInfo>& checklist)> OnStandbyChecklistChanged; // 0x0690(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid)>     OnStandbyCheckSponsorChanged;                      // 0x06A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& name)> OnStandbyCheckSponsorShowNameChanged;  // 0x06B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 type)>    OnPauseSourceTypeChanged;                          // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 type)>    OnStandbyCheckTypeChanged;                         // 0x06D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float time)>    OnHistoryPauseSecsChanged;                         // 0x06E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float time)>    OnOnceLimitPauseSecsChanged;                       // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& count)> OnOfflinePauseCountChanged;           // 0x0700(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 count)>   OnOfflinePauseCountMaxChanged;                     // 0x0710(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool enable)>   OnEnableOfflinePauseChanged;                       // 0x0720(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid)>     OnPlayerLogOutPause;                               // 0x0730(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& count)> OnIgnoreOfflineUIDListChanged;        // 0x0740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& offline_list)> OnOfflineUIDListChanged;       // 0x0750(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, EOnlineStatus online_status)> OnPlayerStateOnlineStateChanged; // 0x0760(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 state)>   OnMusicStateChanged;                               // 0x0770(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float total_pause_time)> PauseToContinue;                          // 0x0780(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OvertimeStartDispatcher;                           // 0x0790(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OvertimeEndDispatcher;                             // 0x07A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OvertimeCancelDispatcher;                          // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float OvertimeRemaining, float OvertimeLength, float OvertimeSpeed)> OvertimeUpdateDispatcher; // 0x07C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UISelectTimeChanged;        // 0x07D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UIPrepareTimeChanged;       // 0x07E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UIFightingTimeChanged;      // 0x07F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> DestroyCharacterLogOut;    // 0x0800(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerLogout;            // 0x0810(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerReconnect;         // 0x0820(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool AllowRematch)> AllowRematchChanged;                           // 0x0830(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              InitObjectives;                                    // 0x0840(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveActivateDispatcher;             // 0x0850(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveEndDispatcher;                  // 0x0860(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveEndCallback;                    // 0x0870(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Stage)>   ObjectiveStageDispatcher;                          // 0x0880(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float MaxProgress)> ObjectiveMaxProgressDispatcher;                // 0x0890(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* InteractedActor, class AMarvelPlayerState* ActivatedPlayerState, class UMarvelGameplayAbility* Ability)> LevelAbility221_ServerActivated; // 0x08A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              InitPayload;                                       // 0x08B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PrePayloadRouteEndDispatcher;              // 0x08C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadActivateDispatcher;                 // 0x08D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PrePayloadRouteStartDispatcher;            // 0x08E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadRouteStartDispatcher;               // 0x08F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 RouteIndex)> PayloadRouteChangedDispatcher;                  // 0x0900(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadRouteEndDispatcher;                 // 0x0910(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              EscortRebirthTimeUpdateDispatcher;                 // 0x0920(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 IsVisible)> PayloadDecalVisibleDispatcher;                   // 0x0930(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadEndCallback;                        // 0x0940(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<float>& TraceList)> TraceListChangeDispatcher;        // 0x0950(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float MaxDistance)> PayloadMaxDistanceDispatcher;                  // 0x0960(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RankAttackInfoChange;                              // 0x0970(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              RankDefendInfoChange;                              // 0x0980(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AsgardE01TODStart;                                 // 0x0990(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AsgardE01TODEnd;                                   // 0x09A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTriggeredFireZone;                               // 0x09B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTriggeredFreeFlyZone;                            // 0x09C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTriggeredFogZone;                                // 0x09D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              InitControl;                                       // 0x09E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Control)> ControlUnlockStartDispatcher;              // 0x09F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Control)> ControlFightStartDispatcher;               // 0x0A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide, bool IsFirstChange)> ControlOwnerChangedForRPC; // 0x0A10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Control)> ControlEndCallback;                        // 0x0A20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Robot)> RobotEndDispatcher;                          // 0x0A30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PlayerID, int32 RespawnTime)> DispatcherRespawnStart;        // 0x0A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PlayerID)> DispatcherRespawnBreak;                           // 0x0A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Target)> SepcialForceKillByTerrain;                  // 0x0A60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Target)> DeathZoneKill;                              // 0x0A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PostSwitchBattleSide;                              // 0x0A80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* camp)> CampPlayerChangedDispatcher;                  // 0x0A90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PlayerUID, int64 TeamID)> PlayerMosTeamChange;               // 0x0AA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character)> PreCharacterDestroy;                     // 0x0AB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              DispatcherInitUI;                                  // 0x0AC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float CombineProgress, EOwnershipType OwnerSide)> AmpProgressDispatcher; // 0x0AD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Progress, EOwnershipType OwnerSide, bool IsWarmUpCrystal)> TimeCrystalPickProgressDispatcher; // 0x0AE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Progress, EOwnershipType OwnerSide)> LegalZoneOccupyProgressDispatcher; // 0x0AF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EInfinityCrisisState OldState, EInfinityCrisisState NewState, EOwnershipType OldSide, EOwnershipType NewSide)> TimeCrystalStateChanged; // 0x0B00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EOwnershipType WinnerSide)> AmpFlagEndDispatcher;                  // 0x0B10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 num)>     SyncUnlockTimeChanged;                             // 0x0B20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 num, int32 total)> SyncCatchTimeoutChanged;                  // 0x0B30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character, class AActor* PickingTarget)> OnPickupTimeCrystal; // 0x0B40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character, class AActor* PickingTarget)> OnPickupTimeCrystalInterrupted; // 0x0B50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character, float GatherTotalTime, class AActor* PickingTarget)> OnTryPickupTimeCrystal; // 0x0B60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* LegalZone)> PlaceFlagInLegalZone;                    // 0x0B70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Char)> CapturingFlag;                                // 0x0B80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnFlagStopSimulating;                              // 0x0B90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Target)> AmpFlagTargetActorChanged;                  // 0x0BA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SuddenDeathState)> OnSuddenDeathStateChanged;                // 0x0BB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* camp)> PlayerCountChanged;                           // 0x0BC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EOwnershipType BattleSide)> HydraMoveAchievementEvent;             // 0x0BD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& UIDs)> AE_LostInTheGame;                      // 0x0BE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& Tips)> DispatcherFullScreenMessage;           // 0x0BF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              StartSelectHeroTimer;                              // 0x0C00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ETrainAction action, int32 uid)> TrainStart;                       // 0x0C10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ret, ETrainAction action, int32 uid, bool is_finish)> TrainEnd; // 0x0C20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid)>     ChangeTrainHold;                                   // 0x0C30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ETrainAction action, int32 uid, float delay)> TrainDelayStart;     // 0x0C40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ETrainAction action, int32 uid)> TrainDelayEnd;                    // 0x0C50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> ObtainTrainComputerAuth; // 0x0C60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> LoseTrainComputerAuth; // 0x0C70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> EnterPortalArea; // 0x0C80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> ExitPortalArea; // 0x0C90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* PortalBase, class APyMarvelPlayerState* Ps)> ShowPortalActionTips; // 0x0CA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* PortalBase, class APyMarvelPlayerState* Ps)> HidePortalActionTips; // 0x0CB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, ETrainAreaType area_type)> EnterTrainArea; // 0x0CC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, ETrainAreaType area_type)> ExitTrainArea; // 0x0CD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ETrainCustomOp custom_op)> TrainCustomSetting;                     // 0x0CE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool value, float time)> TrainFriendHarm;                          // 0x0CF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool value)>    TrainFriendHarmFinshed;                            // 0x0D00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool value)>    TrainSkillNoCd;                                    // 0x0D10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              TrainTeleportStart;                                // 0x0D20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              TrainTeleportEnd;                                  // 0x0D30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPlaying)> TrainEntryStateChanged;                           // 0x0D40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FTrainLogContent& info)> TrainStartLog;               // 0x0D50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 TrainState)> LimitTimeTrainStateChanged;                     // 0x0D60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LimitTimeTrainConfigChanged;                       // 0x0D70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LimitTimeTrainInsidePlayerChanged;                 // 0x0D80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LimitTimeTrainInsideScoreChanged;                  // 0x0D90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* train_computer, int32 cooperate_bond_id, int32 hero_id)> TrainCreateCooperate; // 0x0DA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* train_computer, int32 cooperate_bond_id, int32 hero_id)> TrainCancelCooperate; // 0x0DB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class FString>& skin_info)> PracticeRangeAvailableSkinChanged; // 0x0DC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PracticeRangeModelsChanged;                        // 0x0DD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TMap<int32, int32>& used_skin)> PracticeRangeHeroUsedSkinChanged; // 0x0DE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 UID, int32 CheckPointID)> LevelCheckPointActivate;           // 0x0DF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              NoviceTeleportEnd;                                 // 0x0E00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              NoviceFirstSwitchHero;                             // 0x0E10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 Score)> AddPlayerScore;      // 0x0E20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 OldScore, int32 NewScore)> OnChangePlayerScore; // 0x0E30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 score, int32 winner_score)> DeathBattleSituation; // 0x0E40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 Score)> SubPlayerScore;      // 0x0E50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool is_final)> ChangeDeathFinal;                                  // 0x0E60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> FristWinner;                      // 0x0E70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              GainAdvantage;                                     // 0x0E80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              LostAdvantage;                                     // 0x0E90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              PostUpdateScoreList;                               // 0x0EA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Item, class AMarvelPlayerState* PlayerState, EBattleSide battle_side, bool is_ally)> PickUpKillConfirm; // 0x0EB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 Score)> AddTeamScore;               // 0x0EC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 Score)> SubTeamScore;               // 0x0ED0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool InSuddenDeath)> InSuddenDeathDispatcher;                      // 0x0EE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 MultiKill, class AMarvelPlayerState* PlayerState)> OnMultiKillChanged; // 0x0EF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS, int32 TotalScore)> OnTeamDeathMatchScoreChange; // 0x0F00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, int32 HeroID)> SelectBanPickHeroIDChange; // 0x0F10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> BanPickHeroIDChange;       // 0x0F20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBanPickState BanPickState)> BanPickStateChangeDispatcher;         // 0x0F30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FBanPickResultInfo>& BanPickResultList)> BanPickResultListChangeDispatcher; // 0x0F40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 BanPickIndex)> BanPickIndexChangeDispatcher;                 // 0x0F50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide CurBanPickSide)> CurBanPickSideChangeDispatcher;       // 0x0F60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 RedBanPickLeaderID)> RedBanPickLeaderIDChangeDispatcher;     // 0x0F70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 BlueBanPickLeaderID)> BlueBanPickLeaderIDChangeDispatcher;   // 0x0F80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FBanPickResultInfo& BanPickResult)> CurRoundBlueBanPickResultChangeDispatcher; // 0x0F90(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FBanPickResultInfo& BanPickResult)> CurRoundRedBanPickResultChangeDispatcher; // 0x0FA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide CurBanPickSide)> S_BanPickSideChangeDispatcher;        // 0x0FB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide)> BanPickSideConfirmResultDispatcher;       // 0x0FC0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBanPickOperateType OperateType)> BanPickOperateTypeChangeDispatcher; // 0x0FD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool EnableBanPick)> ClientEnableBanPickChangeDispatcher;          // 0x0FE0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPreSelectHeroDisplayStageStart;                  // 0x0FF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBanPickDisplayStageStart;                        // 0x1000(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSelectHeroDisplayStageStart;                     // 0x1010(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBanPickState BanPickState, float TotalTime)> BanPickStateTimeChangeDispatcher; // 0x1020(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnReceivePlayerLaunchSurrender;     // 0x1030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnReceivePlayerSurrender;           // 0x1040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 UID, EBattleSide BattleSide)> OnSurrenderStart;              // 0x1050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide, bool bSurrenderSuccess)> OnSurrenderAnnouncement; // 0x1060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide)> OnSurrenderEarlyEnable;                   // 0x1070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide)> OnSurrenderEnd;                           // 0x1080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& ValidSurrenderPlayers)> OnRedValidSurrenderPlayersChange; // 0x1090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& ValidSurrenderPlayers)> OnBlueValidSurrenderPlayersChange; // 0x10A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ESurrenderState SurrenderState)> OnRedSurrenderStateChange;        // 0x10B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ESurrenderState SurrenderState)> OnBlueSurrenderStateChange;       // 0x10C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FSurrenderResultInfo>& SurrenderResult)> OnRedSurrenderResultChange; // 0x10D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FSurrenderResultInfo>& SurrenderResult)> OnBlueSurrenderResultChange; // 0x10E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bSurrenderPassed)> OnRedSurrenderPassedChange;                // 0x10F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool bSurrenderPassed)> OnBlueSurrenderPassedChange;               // 0x1100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ESurrenderFailedReason SurrenderFailedReason)> OnSurrenderFailed;  // 0x1110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSurrenderSuccess;                                // 0x1120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float VotePassingRate)> OnVotePassingRateChange;                   // 0x1130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGameplayTag& tag, float interval_time)> UIMultiKill; // 0x1140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* killer_pawn)> UITeamKill;                            // 0x1150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EOwnershipTypeUI occupying_side)> UIOccupyingSideChange;           // 0x1160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* camp, EOwnershipType hold_side)> VHolderSideDispatcher; // 0x1170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* control, EBattleSide battle_side)> DispatchVictoryProgressChanged; // 0x1180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SelectHeroEntranceFinish;                          // 0x1190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AudioSiwtchBattleSide;                             // 0x11A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 VoiceID)> OnVoiceEnd;                                        // 0x11B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyCamp* camp, int32 mode_id, EBattleSide battle_side)> OnCampOccupied; // 0x11C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, const TArray<class FString>& tags, int32 mode_id)> OnInteractingWithNPC; // 0x11D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EMarvelVoiceType voice_type, int32 voice_id, class AActor* char, class AActor* to_char, class AMarvelPlayerState* ps)> OnHearingLevelVoice; // 0x11E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 mode_id, EBattleSide battle_side)> OnVictoryInMap;           // 0x11F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side)> TeamKillPlayerDeath;                     // 0x1200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side)> TeamKillTeamWin;                         // 0x1210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 HeroID, int32 RoundIndex)> NotifyClientCloseSelectHero;      // 0x1220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide OldBattleSide, EBattleSide NewBattleSide)> FillColorToPoint; // 0x1230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              CalculateFillColorPercent;                         // 0x1240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float BluePercent, float RedPercent)> FillColorUpdatePercentDispatcher; // 0x1250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<float>& TeamPercentList)> FillColorUpdateTeamPercentDispatcher; // 0x1260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<struct FIntVector2>& RoleList)> WinterFestivalRoleListChange; // 0x1270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid, const class FString& key, float val)> CommonFestivalPlayerStatChanged; // 0x1280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 cur_score)> SpringFestivalScoreChanged; // 0x1290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 goaled_score, int32 total_score, int32 uid)> SpringFestivalGoaled; // 0x12A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* source, class AActor* target, int32 ability_id, float hold_time)> SpringFestivalOnTackling; // 0x12B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 uid, const class FString& key, float val)> SpringFestivalPlayerStatChanged; // 0x12C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SpringFestivalRoundStart;                          // 0x12D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side)> OnBallKeepSideChange;                    // 0x12E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 cur_score, int32 total_score)> SpringFestivalNear2Win; // 0x12F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* char, bool is_forbid)> SpringFestivalForbidKeepBallStateChanged; // 0x1300(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide winner_side)> SpringFestivalMatchEnd;                  // 0x1310(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(ESpringFestivalMatchState spring_festival_match_state)> OnSpringFestivalMatchStateChange; // 0x1320(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SpringFestivalSelfGotBall;                         // 0x1330(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side)> SpringFestivalGotLongPass;               // 0x1340(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              EnergyContestRuleComponentPostReceiveBeginPlay;    // 0x1350(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TMap<EBattleSide, float>& score_board)> EnergyScoreChanged;  // 0x1360(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float RedScore, float BlueScore, float CurStorage)> EnergyScoreBoardChanged; // 0x1370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Score, EBattleSide BattleSide, float Ratio)> EnergyScoreFirstGreaterThanOrEqualsToRatio; // 0x1380(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Mine, float Ratio)> MineEnergyFirstLowerThanRatio;   // 0x1390(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Mine, float Scalar)> MineEnergyFirstLowerThanScalar; // 0x13A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Mine, EOwnershipType OwnerSide)> MineControlOwnerChanged; // 0x13B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float win_score)> EnergyWinScoreChanged;                           // 0x13C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 pillage_stage)> EnergyPillageStageChanged;                   // 0x13D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide battle_side)> EnergyOwnerBattleSideChanged;            // 0x13E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              EnergyContestMinesInited;                          // 0x13F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide win_side)> EnergyContestHasWinner;                     // 0x1400(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* mine)> PreCreateMineProxy;                           // 0x1410(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, EBattleSide BattleSide)> BattleChessPlayerChangeBattleSide; // 0x1420(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> BattleChessConfirmHero;    // 0x1430(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsDrawingCard)> UpdateBattleChessIsDrawingCard;               // 0x1440(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ViewingPlayerState)> OnBattleChessViewingPlayerStateChange; // 0x1450(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* ViewingPlayerState)> OnPostBattleChessViewingPlayerStateChange; // 0x1460(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& PlayerList)> BattleChessPlayerListChanged; // 0x1470(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleChessState BattleChessState)> BattleChessStateChanged;      // 0x1480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsEditMode)> BattleChessEditModeChanged;                      // 0x1490(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleChessState State, int32 RoundIndex)> NetMulticast_BattleChessStateChange; // 0x14A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* OwnPlayer, class AMarvelPlayerState* EnemyPlayer)> OnBattleChessEnemyPlayerChanged; // 0x14B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PlayerUID)> BattleChessPlayerExitFromGame;                   // 0x14C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PlayerUID)> OnChessRanked;                                   // 0x14D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsSwitchHeroRound)> OnIsSwitchHeroRoundChanged;               // 0x14E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class AMarvelBaseCharacter*>& WinnerCharacterList)> BattleChessWinOnHpReduceStart; // 0x14F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Ranking)> BattleChessLocalPlayerRanking;                     // 0x1500(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* Winner, class AMarvelPlayerState* Loser, bool IsTeamKill)> BattleChessRoundWinner; // 0x1510(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessPVEReward;                              // 0x1520(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessPVERewardAutoSelect;                    // 0x1530(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessCategoryLevelUp;                        // 0x1540(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessRefreshGoldenCard;                      // 0x1550(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessMirrorPlayerSourceUpdate;               // 0x1560(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessChangeHeroCardList;                     // 0x1570(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BattleChessConfirmHeroList;                        // 0x1580(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BenchmarkSeqStart;                                 // 0x1590(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              BenchmarkSeqEnd;                                   // 0x15A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class URuleComponent* RuleCom)> RuleComponentReceiveInit;          // 0x15B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float BluePercent, float RedPercent, EBattleSide winner_side)> OnWinterFestivalResult; // 0x15C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 NewState, int32 WaveIndex)> OnHalloweenStateChanged;         // 0x15D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 alive_count)> OnAlivePlayerCountChanged;                     // 0x15E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 wave_count)> OnWaveCountChanged;                             // 0x15F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 total_count)> OnRemainingMonsterChanged;                     // 0x1600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 current_count)> OnCurrentMonsterCountChanged;                // 0x1610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 total_count)> OnTotalMonsterCountChanged;                    // 0x1620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EHalloweenDifficulty difficulty)> OnHalloweenDifficultyChanged;    // 0x1630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float duration)> OnHalloweenGameDurationChanged;                   // 0x1640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 round_index)> OnHalloweenRoundIndexChanged;                  // 0x1650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* Player, class AActor* Actor)> OnHalloweenTeleportToActor; // 0x1660(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index, float PrepareTime)> OnAllPlayerRallyDispatcher;       // 0x1670(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character, int32 PointIndex)> OnReachMissionPointDispatcher; // 0x1680(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* MissionObj, int32 WaveIndex)> OnMissionFailedDispatcher; // 0x1690(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, int32 ItemType)> OnPickUpLootDispatcher; // 0x16A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide winner_side)> OnHalloweenFightEnd;                     // 0x16B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 time)>    OnHalloweenPrepareRemainTimeChanged;               // 0x16C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 WaveIndex, bool is_mission_completed)> OnHalloweenWaveEndDispatcher; // 0x16D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Protector)> OnHalloweenProtectorChanged;             // 0x16E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<class AActor*>& BossTargets)> OnHalloweenBossTargetChanged; // 0x16F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnEnterPreparePoint;                               // 0x1700(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Protector, int32 State, int32 wave_index)> OnHalloweenProtectorStateChanged; // 0x1710(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 UID, const class FString& Type, int32 Value)> OnHalloweenOperatorChanged; // 0x1720(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerUseReviveCoin;     // 0x1730(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerTeleportStart;     // 0x1740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerTeleportEnd;       // 0x1750(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Area)> OnCurrentTeleportAreaChanged;                 // 0x1760(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Tower, int32 NewState)> OnTowerStateChanged;         // 0x1770(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide, float Gold)> OnTeamGoldChanged;            // 0x1780(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide BattleSide, int32 KillCount)> OnTeamKillChanged;       // 0x1790(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool EnableAnnivCountdown)> OnM2201EnableAnnivCountdownChange;     // 0x17A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsCountDownStart)> OnM2201IsCountDownStartChange;             // 0x17B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsCountDownEnd)> OnM2201IsCountDownEndChange;                 // 0x17C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsFireworkEnabled)> OnM2201IsFireworkEnabledChange;           // 0x17D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCrossTravelFinished;                             // 0x17E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnLevelUIDemoInit;                                 // 0x17F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float progress)> OnLevelUIDemoMainProgressChanged;                 // 0x1800(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EBattleSide OwnerSide)> OnLevelUIDemoOwnerSideChanged;             // 0x1810(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              QualitySettingChange;                              // 0x1820(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* SpecialArea)> SpecialAreaTrigger;                    // 0x1830(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* Character)> OnPortalActivate;                        // 0x1840(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& NewAreaTag)> OnLocalAreaChange;               // 0x1850(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* character)> OnActorChangedByTrajectoryPortal;        // 0x1860(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& old)> PartInfoChanged;                        // 0x1870(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* character)> ShowCharacterOverlay;                    // 0x1880(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyMarvelReplayController* Controller)> OnReplayControllerSpawned; // 0x1890(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LevelStart;                                        // 0x0388(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AllClientLoadedMap;                                // 0x0398(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> ClientLoadedMap;                  // 0x03A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 percent)> LevelLoadingPercent;                               // 0x03B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid)>     PlayerMosHeroInfoUpdate;                           // 0x03C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RoundStart;                                        // 0x03D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RoundEnd;                                          // 0x03E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RequiredMapPreLoaded;                              // 0x03F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ParentDSMapLoaded;                                 // 0x0408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RequiredReplayMapLoaded;                           // 0x0418(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RequiredMapUnLoaded;                               // 0x0428(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SelectHeroLoaded;                                  // 0x0438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ServerFirstMapLoaded;                              // 0x0448(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PreEventLevelReset;                                // 0x0458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PostEventLevelReset;                               // 0x0468(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LikeMapLoadedStart;                                // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LikeMapLoaded;                                     // 0x0488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LikeMapUnLoaded;                                   // 0x0498(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ClientShowMVPPanel;                                // 0x04A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ClientEnterEpicMoment;                             // 0x04B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SelectHeroEndDispatcher;                           // 0x04C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& WorldName)> SelectHeroWorldLoadedDispatcher;  // 0x04D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ClientFirstShowSelectHeroPanel;                    // 0x04E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool enable)>   ToggleEnableUnloadLevel;                           // 0x04F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnGlobalQualityChanged;                            // 0x0508(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class FString>& SublevelPartList)> InitializeSublevelPartList; // 0x0518(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& CurrentLevelPartName)> CurrentLevelPartNameChanged; // 0x0528(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PrepareEndDispatcher;                              // 0x0538(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EMatchState MatchState)> BeforeMatchStateChangeDispatcher;         // 0x0548(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              FightStartDispatcher;                              // 0x0558(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RpcFightStartDispatcher;                           // 0x0568(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              ShowTransitionPanel;                               // 0x0578(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              TransitionPanelFadeOut;                            // 0x0588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              TransitionEndDispatcher;                           // 0x0598(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float RemainingTime)> RemainingTimeDispatcher;                     // 0x05A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float RemainingTime)> PauseRemainingTimeDispatcher;                // 0x05B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SetRemainingTimeDispatcher;                        // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RegularTimeOutDispatcher;                          // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerSpawn;                    // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerWin;                      // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> OnPlayerLost;                     // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayDraw;                                        // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* char, bool in_pass)> OnActorSRoomPassDispatcher;     // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 map_id, EBattleSide battle_side)> RoundWinnerDispatcher;     // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OpenHeroListChange;                                // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OpenSelectHeroListChange;                          // 0x0658(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EMatchState state, float old_time, float new_time, float passed_time)> StateTimeChangeDispatcher; // 0x0668(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SlowMotionEndDispatcher;                           // 0x0678(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGamePauseInfo& info)> OnGamePauseInfoChanged;        // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float time)>    OnGamePauseTimeChanged;                            // 0x0698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float time)>    OnPreUnpauseTimeChanged;                           // 0x06A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FPlayerStandbyInfo>& checklist)> OnStandbyChecklistChanged; // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid)>     OnStandbyCheckSponsorChanged;                      // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& name)> OnStandbyCheckSponsorShowNameChanged;  // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 type)>    OnPauseSourceTypeChanged;                          // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 type)>    OnStandbyCheckTypeChanged;                         // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float time)>    OnHistoryPauseSecsChanged;                         // 0x0708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float time)>    OnOnceLimitPauseSecsChanged;                       // 0x0718(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& count)> OnOfflinePauseCountChanged;           // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 count)>   OnOfflinePauseCountMaxChanged;                     // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool enable)>   OnEnableOfflinePauseChanged;                       // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid)>     OnPlayerLogOutPause;                               // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& count)> OnIgnoreOfflineUIDListChanged;        // 0x0768(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& offline_list)> OnOfflineUIDListChanged;       // 0x0778(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, EOnlineStatus online_status)> OnPlayerStateOnlineStateChanged; // 0x0788(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 state)>   OnMusicStateChanged;                               // 0x0798(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float total_pause_time)> PauseToContinue;                          // 0x07A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OvertimeStartDispatcher;                           // 0x07B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OvertimeEndDispatcher;                             // 0x07C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OvertimeCancelDispatcher;                          // 0x07D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float OvertimeRemaining, float OvertimeLength, float OvertimeSpeed)> OvertimeUpdateDispatcher; // 0x07E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UISelectTimeChanged;        // 0x07F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UIPrepareTimeChanged;       // 0x0808(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TotalTime, int32 RemainingTime)> UIFightingTimeChanged;      // 0x0818(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> DestroyCharacterLogOut;    // 0x0828(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerLogout;            // 0x0838(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerReconnect;         // 0x0848(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool AllowRematch)> AllowRematchChanged;                           // 0x0858(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              InitObjectives;                                    // 0x0868(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveActivateDispatcher;             // 0x0878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveEndDispatcher;                  // 0x0888(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Objective)> ObjectiveEndCallback;                    // 0x0898(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Stage)>   ObjectiveStageDispatcher;                          // 0x08A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float MaxProgress)> ObjectiveMaxProgressDispatcher;                // 0x08B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* InteractedActor, class AMarvelPlayerState* ActivatedPlayerState, class UMarvelGameplayAbility* Ability)> LevelAbility221_ServerActivated; // 0x08C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              InitPayload;                                       // 0x08D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PrePayloadRouteEndDispatcher;              // 0x08E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadActivateDispatcher;                 // 0x08F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PrePayloadRouteStartDispatcher;            // 0x0908(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadRouteStartDispatcher;               // 0x0918(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 RouteIndex)> PayloadRouteChangedDispatcher;                  // 0x0928(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadRouteEndDispatcher;                 // 0x0938(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              EscortRebirthTimeUpdateDispatcher;                 // 0x0948(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 IsVisible)> PayloadDecalVisibleDispatcher;                   // 0x0958(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PayloadTypeChanged;                                // 0x0968(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Payload)> PayloadEndCallback;                        // 0x0978(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<float>& TraceList)> TraceListChangeDispatcher;        // 0x0988(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float MaxDistance)> PayloadMaxDistanceDispatcher;                  // 0x0998(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RankAttackInfoChange;                              // 0x09A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              RankDefendInfoChange;                              // 0x09B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AsgardE01TODStart;                                 // 0x09C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AsgardE01TODEnd;                                   // 0x09D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTriggeredFireZone;                               // 0x09E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTriggeredFreeFlyZone;                            // 0x09F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTriggeredFogZone;                                // 0x0A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              InitControl;                                       // 0x0A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Control)> ControlUnlockStartDispatcher;              // 0x0A28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Control)> ControlFightStartDispatcher;               // 0x0A38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide, bool IsFirstChange)> ControlOwnerChangedForRPC; // 0x0A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Control)> ControlEndCallback;                        // 0x0A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Robot)> RobotEndDispatcher;                          // 0x0A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PlayerID, int32 RespawnTime)> DispatcherRespawnStart;        // 0x0A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PlayerID)> DispatcherRespawnBreak;                           // 0x0A88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Target)> SepcialForceKillByTerrain;                  // 0x0A98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Target)> DeathZoneKill;                              // 0x0AA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PostSwitchBattleSide;                              // 0x0AB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* camp)> CampPlayerChangedDispatcher;                  // 0x0AC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PlayerUID, int64 TeamID)> PlayerMosTeamChange;               // 0x0AD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character)> PreCharacterDestroy;                     // 0x0AE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              DispatcherInitUI;                                  // 0x0AF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float CombineProgress, EOwnershipType OwnerSide)> AmpProgressDispatcher; // 0x0B08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Progress, EOwnershipType OwnerSide, bool IsWarmUpCrystal)> TimeCrystalPickProgressDispatcher; // 0x0B18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Progress, EOwnershipType OwnerSide)> LegalZoneOccupyProgressDispatcher; // 0x0B28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EInfinityCrisisState OldState, EInfinityCrisisState NewState, EOwnershipType OldSide, EOwnershipType NewSide)> TimeCrystalStateChanged; // 0x0B38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EOwnershipType WinnerSide)> AmpFlagEndDispatcher;                  // 0x0B48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 num)>     SyncUnlockTimeChanged;                             // 0x0B58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 num, int32 total)> SyncCatchTimeoutChanged;                  // 0x0B68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character, class AActor* PickingTarget)> OnPickupTimeCrystal; // 0x0B78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character, class AActor* PickingTarget)> OnPickupTimeCrystalInterrupted; // 0x0B88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character, float GatherTotalTime, class AActor* PickingTarget)> OnTryPickupTimeCrystal; // 0x0B98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* LegalZone)> PlaceFlagInLegalZone;                    // 0x0BA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Char)> CapturingFlag;                                // 0x0BB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnFlagStopSimulating;                              // 0x0BC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Target)> AmpFlagTargetActorChanged;                  // 0x0BD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SuddenDeathState)> OnSuddenDeathStateChanged;                // 0x0BE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* camp)> PlayerCountChanged;                           // 0x0BF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EOwnershipType BattleSide)> HydraMoveAchievementEvent;             // 0x0C08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character, class AActor* BeAbsorbedCharacter)> AbsorbAbility; // 0x0C18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& UIDs)> AE_LostInTheGame;                      // 0x0C28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& Tips)> DispatcherFullScreenMessage;           // 0x0C38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              StartSelectHeroTimer;                              // 0x0C48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ETrainAction action, int32 uid)> TrainStart;                       // 0x0C58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ret, ETrainAction action, int32 uid, bool is_finish)> TrainEnd; // 0x0C68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid)>     ChangeTrainHold;                                   // 0x0C78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ETrainAction action, int32 uid, float delay)> TrainDelayStart;     // 0x0C88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ETrainAction action, int32 uid)> TrainDelayEnd;                    // 0x0C98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> ObtainTrainComputerAuth; // 0x0CA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> LoseTrainComputerAuth; // 0x0CB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> EnterPortalArea; // 0x0CC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Computer, class APyMarvelPlayerState* Ps)> ExitPortalArea; // 0x0CD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* PortalBase, class APyMarvelPlayerState* Ps)> ShowPortalActionTips; // 0x0CE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* PortalBase, class APyMarvelPlayerState* Ps)> HidePortalActionTips; // 0x0CF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, ETrainAreaType area_type)> EnterTrainArea; // 0x0D08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, ETrainAreaType area_type)> ExitTrainArea; // 0x0D18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ETrainCustomOp custom_op)> TrainCustomSetting;                     // 0x0D28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool value, float time)> TrainFriendHarm;                          // 0x0D38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool value)>    TrainFriendHarmFinshed;                            // 0x0D48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool value)>    TrainSkillNoCd;                                    // 0x0D58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              TrainTeleportStart;                                // 0x0D68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              TrainTeleportEnd;                                  // 0x0D78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPlaying)> TrainEntryStateChanged;                           // 0x0D88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FTrainLogContent& info)> TrainStartLog;               // 0x0D98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TrainState)> LimitTimeTrainStateChanged;                     // 0x0DA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LimitTimeTrainConfigChanged;                       // 0x0DB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LimitTimeTrainInsidePlayerChanged;                 // 0x0DC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LimitTimeTrainInsideScoreChanged;                  // 0x0DD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* train_computer, int32 cooperate_bond_id, int32 hero_id)> TrainCreateCooperate; // 0x0DE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* train_computer, int32 cooperate_bond_id, int32 hero_id)> TrainCancelCooperate; // 0x0DF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class FString>& skin_info)> PracticeRangeAvailableSkinChanged; // 0x0E08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PracticeRangeModelsChanged;                        // 0x0E18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TMap<int32, int32>& used_skin)> PracticeRangeHeroUsedSkinChanged; // 0x0E28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, int32 CheckPointID)> LevelCheckPointActivate;           // 0x0E38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              NoviceTeleportEnd;                                 // 0x0E48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              NoviceFirstSwitchHero;                             // 0x0E58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 Score)> AddPlayerScore;      // 0x0E68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 OldScore, int32 NewScore)> OnChangePlayerScore; // 0x0E78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 score, int32 winner_score)> DeathBattleSituation; // 0x0E88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps, int32 Score)> SubPlayerScore;      // 0x0E98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool is_final)> ChangeDeathFinal;                                  // 0x0EA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelPlayerState* ps)> FristWinner;                      // 0x0EB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              GainAdvantage;                                     // 0x0EC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              LostAdvantage;                                     // 0x0ED8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              PostUpdateScoreList;                               // 0x0EE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Item, class AMarvelPlayerState* PlayerState, EBattleSide battle_side, bool is_ally)> PickUpKillConfirm; // 0x0EF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 Score)> AddTeamScore;               // 0x0F08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 Score)> SubTeamScore;               // 0x0F18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool InSuddenDeath)> InSuddenDeathDispatcher;                      // 0x0F28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 MultiKill, class AMarvelPlayerState* PlayerState)> OnMultiKillChanged; // 0x0F38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS, int32 TotalScore)> OnTeamDeathMatchScoreChange; // 0x0F48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, int32 HeroID)> SelectBanPickHeroIDChange; // 0x0F58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> BanPickHeroIDChange;       // 0x0F68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBanPickState BanPickState)> BanPickStateChangeDispatcher;         // 0x0F78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FBanPickResultInfo>& BanPickResultList)> BanPickResultListChangeDispatcher; // 0x0F88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BanPickIndex)> BanPickIndexChangeDispatcher;                 // 0x0F98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide CurBanPickSide)> CurBanPickSideChangeDispatcher;       // 0x0FA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 RedBanPickLeaderID)> RedBanPickLeaderIDChangeDispatcher;     // 0x0FB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 BlueBanPickLeaderID)> BlueBanPickLeaderIDChangeDispatcher;   // 0x0FC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FBanPickResultInfo& BanPickResult)> CurRoundBlueBanPickResultChangeDispatcher; // 0x0FD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FBanPickResultInfo& BanPickResult)> CurRoundRedBanPickResultChangeDispatcher; // 0x0FE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide CurBanPickSide)> S_BanPickSideChangeDispatcher;        // 0x0FF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide)> BanPickSideConfirmResultDispatcher;       // 0x1008(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBanPickOperateType OperateType)> BanPickOperateTypeChangeDispatcher; // 0x1018(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool EnableBanPick)> ClientEnableBanPickChangeDispatcher;          // 0x1028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPreSelectHeroDisplayStageStart;                  // 0x1038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBanPickDisplayStageStart;                        // 0x1048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSelectHeroDisplayStageStart;                     // 0x1058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBanPickState BanPickState, float TotalTime)> BanPickStateTimeChangeDispatcher; // 0x1068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnReceivePlayerLaunchSurrender;     // 0x1078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PS)> OnReceivePlayerSurrender;           // 0x1088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, EBattleSide BattleSide)> OnSurrenderStart;              // 0x1098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide, bool bSurrenderSuccess)> OnSurrenderAnnouncement; // 0x10A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide)> OnSurrenderEarlyEnable;                   // 0x10B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide)> OnSurrenderEnd;                           // 0x10C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& ValidSurrenderPlayers)> OnRedValidSurrenderPlayersChange; // 0x10D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& ValidSurrenderPlayers)> OnBlueValidSurrenderPlayersChange; // 0x10E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ESurrenderState SurrenderState)> OnRedSurrenderStateChange;        // 0x10F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ESurrenderState SurrenderState)> OnBlueSurrenderStateChange;       // 0x1108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FSurrenderResultInfo>& SurrenderResult)> OnRedSurrenderResultChange; // 0x1118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FSurrenderResultInfo>& SurrenderResult)> OnBlueSurrenderResultChange; // 0x1128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bSurrenderPassed)> OnRedSurrenderPassedChange;                // 0x1138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bSurrenderPassed)> OnBlueSurrenderPassedChange;               // 0x1148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ESurrenderFailedReason SurrenderFailedReason)> OnSurrenderFailed;  // 0x1158(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSurrenderSuccess;                                // 0x1168(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float VotePassingRate)> OnVotePassingRateChange;                   // 0x1178(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGameplayTag& tag, float interval_time)> UIMultiKill; // 0x1188(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* killer_pawn)> UITeamKill;                            // 0x1198(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EOwnershipTypeUI occupying_side)> UIOccupyingSideChange;           // 0x11A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* camp, EOwnershipType hold_side)> VHolderSideDispatcher; // 0x11B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* control, EBattleSide battle_side)> DispatchVictoryProgressChanged; // 0x11C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SelectHeroEntranceFinish;                          // 0x11D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AudioSiwtchBattleSide;                             // 0x11E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 VoiceID)> OnVoiceEnd;                                        // 0x11F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyCamp* camp, int32 mode_id, EBattleSide battle_side)> OnCampOccupied; // 0x1208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ps, const TArray<class FString>& tags, int32 mode_id)> OnInteractingWithNPC; // 0x1218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EMarvelVoiceType voice_type, int32 voice_id, class AActor* char, class AActor* to_char, class AMarvelPlayerState* ps)> OnHearingLevelVoice; // 0x1228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 mode_id, EBattleSide battle_side)> OnVictoryInMap;           // 0x1238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side)> TeamKillPlayerDeath;                     // 0x1248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side)> TeamKillTeamWin;                         // 0x1258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 HeroID, int32 RoundIndex)> NotifyClientCloseSelectHero;      // 0x1268(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide OldBattleSide, EBattleSide NewBattleSide)> FillColorToPoint; // 0x1278(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              CalculateFillColorPercent;                         // 0x1288(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float BluePercent, float RedPercent)> FillColorUpdatePercentDispatcher; // 0x1298(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<float>& TeamPercentList)> FillColorUpdateTeamPercentDispatcher; // 0x12A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<struct FIntVector2>& RoleList)> WinterFestivalRoleListChange; // 0x12B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2202StartTips;                                    // 0x12C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2202ResultAudio1;                                 // 0x12D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2202ResultAudio2;                                 // 0x12E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2202ResultAudio3;                                 // 0x12F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float TotalIncreaseTime)> M2202ResultSnowSplash;                   // 0x1308(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2202ResultSnowStage2;                             // 0x1318(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid, const class FString& key, float val)> CommonFestivalPlayerStatChanged; // 0x1328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 cur_score)> SpringFestivalScoreChanged; // 0x1338(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 goaled_score, int32 total_score, int32 uid)> SpringFestivalGoaled; // 0x1348(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* source, class AActor* target, int32 ability_id, float hold_time)> SpringFestivalOnTackling; // 0x1358(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 uid, const class FString& key, float val)> SpringFestivalPlayerStatChanged; // 0x1368(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SpringFestivalRoundStart;                          // 0x1378(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side)> OnBallKeepSideChange;                    // 0x1388(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side, int32 cur_score, int32 total_score)> SpringFestivalNear2Win; // 0x1398(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* char, bool is_forbid)> SpringFestivalForbidKeepBallStateChanged; // 0x13A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide winner_side)> SpringFestivalMatchEnd;                  // 0x13B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(ESpringFestivalMatchState spring_festival_match_state)> OnSpringFestivalMatchStateChange; // 0x13C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SpringFestivalSelfGotBall;                         // 0x13D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side)> SpringFestivalGotLongPass;               // 0x13E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              EnergyContestRuleComponentPostReceiveBeginPlay;    // 0x13F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TMap<EBattleSide, float>& score_board)> EnergyScoreChanged;  // 0x1408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float RedScore, float BlueScore, float CurStorage)> EnergyScoreBoardChanged; // 0x1418(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Score, EBattleSide BattleSide, float Ratio)> EnergyScoreFirstGreaterThanOrEqualsToRatio; // 0x1428(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Mine, float Ratio)> MineEnergyFirstLowerThanRatio;   // 0x1438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Mine, float Scalar)> MineEnergyFirstLowerThanScalar; // 0x1448(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Mine, EOwnershipType OwnerSide)> MineControlOwnerChanged; // 0x1458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float win_score)> EnergyWinScoreChanged;                           // 0x1468(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 pillage_stage)> EnergyPillageStageChanged;                   // 0x1478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide battle_side)> EnergyOwnerBattleSideChanged;            // 0x1488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              EnergyContestMinesInited;                          // 0x1498(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide win_side)> EnergyContestHasWinner;                     // 0x14A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* mine)> PreCreateMineProxy;                           // 0x14B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, EBattleSide BattleSide)> BattleChessPlayerChangeBattleSide; // 0x14C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> BattleChessConfirmHero;    // 0x14D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsDrawingCard)> UpdateBattleChessIsDrawingCard;               // 0x14E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ViewingPlayerState)> OnBattleChessViewingPlayerStateChange; // 0x14F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* ViewingPlayerState)> OnPostBattleChessViewingPlayerStateChange; // 0x1508(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AMarvelPlayerState*>& PlayerList)> BattleChessPlayerListChanged; // 0x1518(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleChessState BattleChessState)> BattleChessStateChanged;      // 0x1528(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsEditMode)> BattleChessEditModeChanged;                      // 0x1538(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleChessState State, int32 RoundIndex)> NetMulticast_BattleChessStateChange; // 0x1548(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* OwnPlayer, class AMarvelPlayerState* EnemyPlayer)> OnBattleChessEnemyPlayerChanged; // 0x1558(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PlayerUID)> BattleChessPlayerExitFromGame;                   // 0x1568(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PlayerUID)> OnChessRanked;                                   // 0x1578(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsSwitchHeroRound)> OnIsSwitchHeroRoundChanged;               // 0x1588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AMarvelBaseCharacter*>& WinnerCharacterList)> BattleChessWinOnHpReduceStart; // 0x1598(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Ranking)> BattleChessLocalPlayerRanking;                     // 0x15A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* Winner, class AMarvelPlayerState* Loser, bool IsTeamKill)> BattleChessRoundWinner; // 0x15B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessPVEReward;                              // 0x15C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessPVERewardAutoSelect;                    // 0x15D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessCategoryLevelUp;                        // 0x15E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessRefreshGoldenCard;                      // 0x15F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessMirrorPlayerSourceUpdate;               // 0x1608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessChangeHeroCardList;                     // 0x1618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BattleChessConfirmHeroList;                        // 0x1628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BenchmarkSeqStart;                                 // 0x1638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              BenchmarkSeqEnd;                                   // 0x1648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class URuleComponent* RuleCom)> RuleComponentReceiveInit;          // 0x1658(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float BluePercent, float RedPercent, EBattleSide winner_side)> OnWinterFestivalResult; // 0x1668(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 NewState, int32 WaveIndex)> OnHalloweenStateChanged;         // 0x1678(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 alive_count)> OnAlivePlayerCountChanged;                     // 0x1688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 wave_count)> OnWaveCountChanged;                             // 0x1698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 total_count)> OnRemainingMonsterChanged;                     // 0x16A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 current_count)> OnCurrentMonsterCountChanged;                // 0x16B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 total_count)> OnTotalMonsterCountChanged;                    // 0x16C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EHalloweenDifficulty difficulty)> OnHalloweenDifficultyChanged;    // 0x16D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float duration)> OnHalloweenGameDurationChanged;                   // 0x16E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 round_index)> OnHalloweenRoundIndexChanged;                  // 0x16F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* Player, class AActor* Actor)> OnHalloweenTeleportToActor; // 0x1708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index, float PrepareTime)> OnAllPlayerRallyDispatcher;       // 0x1718(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character, int32 PointIndex)> OnReachMissionPointDispatcher; // 0x1728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* MissionObj, int32 WaveIndex)> OnMissionFailedDispatcher; // 0x1738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState, int32 ItemType)> OnPickUpLootDispatcher; // 0x1748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide winner_side)> OnHalloweenFightEnd;                     // 0x1758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 time)>    OnHalloweenPrepareRemainTimeChanged;               // 0x1768(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 WaveIndex, bool is_mission_completed)> OnHalloweenWaveEndDispatcher; // 0x1778(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Protector)> OnHalloweenProtectorChanged;             // 0x1788(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<class AActor*>& BossTargets)> OnHalloweenBossTargetChanged; // 0x1798(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnEnterPreparePoint;                               // 0x17A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Protector, int32 State, int32 wave_index)> OnHalloweenProtectorStateChanged; // 0x17B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, const class FString& Type, int32 Value)> OnHalloweenOperatorChanged; // 0x17C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerUseReviveCoin;     // 0x17D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerTeleportStart;     // 0x17E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AMarvelPlayerState* PlayerState)> OnPlayerTeleportEnd;       // 0x17F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Area)> OnCurrentTeleportAreaChanged;                 // 0x1808(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Area)> OnDangerousJugglingRefresh;                   // 0x1818(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Tower, int32 NewState)> OnTowerStateChanged;         // 0x1828(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide, float Gold)> OnTeamGoldChanged;            // 0x1838(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide BattleSide, int32 KillCount)> OnTeamKillChanged;       // 0x1848(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class URuleComponent* CountdownRuleComponent)> OnM2201CountdownRuleComponentBegunPlay; // 0x1858(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EnabledCountdownName)> OnM2201EnabledCountdownNameChange; // 0x1868(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool EnableAnnivCountdown)> OnM2201EnableAnnivCountdownChange;     // 0x1878(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsCountDownStart)> OnM2201IsCountDownStartChange;             // 0x1888(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsCountDownEnd)> OnM2201IsCountDownEndChange;                 // 0x1898(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsFireworkEnabled)> OnM2201IsFireworkEnabledChange;           // 0x18A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsFireworkLooping)> OnM2201IsFireworkLoopingChange;           // 0x18B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCrossTravelFinished;                             // 0x18C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2201DuelProcessStart;                             // 0x18D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2201DuelProcessEnd;                               // 0x18E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2201DuelFightStart;                               // 0x18F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              M2201DuelFightEnd;                                 // 0x1908(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UActorComponent* MatchComponent)> M2201DuelMatchComponentInit; // 0x1918(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, float PaintPercent)> M2202SinglePaintPercentUpdate;     // 0x1928(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 UID, float PaintPercent)> M2202TeamPaintPercentUpdate;       // 0x1938(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnLevelUIDemoInit;                                 // 0x1948(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float progress)> OnLevelUIDemoMainProgressChanged;                 // 0x1958(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EBattleSide OwnerSide)> OnLevelUIDemoOwnerSideChanged;             // 0x1968(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              QualitySettingChange;                              // 0x1978(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* SpecialArea)> SpecialAreaTrigger;                    // 0x1988(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Character)> OnPortalActivate;                        // 0x1998(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& NewAreaTag)> OnLocalAreaChange;               // 0x19A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* character)> OnActorChangedByTrajectoryPortal;        // 0x19B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& old)> PartInfoChanged;                        // 0x19C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* character)> ShowCharacterOverlay;                    // 0x19D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyMarvelReplayController* Controller)> OnReplayControllerSpawned; // 0x19E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool IsMapLoaded();
@@ -375,358 +394,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelEventSubSystem">();
+		STATIC_CLASS_IMPL("PyLevelEventSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelEventSubSystem")
 	}
 	static class UPyLevelEventSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelEventSubSystem>();
 	}
 };
-static_assert(alignof(UPyLevelEventSubSystem) == 0x000008, "Wrong alignment on UPyLevelEventSubSystem");
-static_assert(sizeof(UPyLevelEventSubSystem) == 0x0018A0, "Wrong size on UPyLevelEventSubSystem");
-static_assert(offsetof(UPyLevelEventSubSystem, LevelStart) == 0x000360, "Member 'UPyLevelEventSubSystem::LevelStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AllClientLoadedMap) == 0x000370, "Member 'UPyLevelEventSubSystem::AllClientLoadedMap' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ClientLoadedMap) == 0x000380, "Member 'UPyLevelEventSubSystem::ClientLoadedMap' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LevelLoadingPercent) == 0x000390, "Member 'UPyLevelEventSubSystem::LevelLoadingPercent' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PlayerMosHeroInfoUpdate) == 0x0003A0, "Member 'UPyLevelEventSubSystem::PlayerMosHeroInfoUpdate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RoundStart) == 0x0003B0, "Member 'UPyLevelEventSubSystem::RoundStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RoundEnd) == 0x0003C0, "Member 'UPyLevelEventSubSystem::RoundEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RequiredMapPreLoaded) == 0x0003D0, "Member 'UPyLevelEventSubSystem::RequiredMapPreLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ParentDSMapLoaded) == 0x0003E0, "Member 'UPyLevelEventSubSystem::ParentDSMapLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RequiredReplayMapLoaded) == 0x0003F0, "Member 'UPyLevelEventSubSystem::RequiredReplayMapLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RequiredMapUnLoaded) == 0x000400, "Member 'UPyLevelEventSubSystem::RequiredMapUnLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SelectHeroLoaded) == 0x000410, "Member 'UPyLevelEventSubSystem::SelectHeroLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ServerFirstMapLoaded) == 0x000420, "Member 'UPyLevelEventSubSystem::ServerFirstMapLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PreEventLevelReset) == 0x000430, "Member 'UPyLevelEventSubSystem::PreEventLevelReset' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PostEventLevelReset) == 0x000440, "Member 'UPyLevelEventSubSystem::PostEventLevelReset' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LikeMapLoadedStart) == 0x000450, "Member 'UPyLevelEventSubSystem::LikeMapLoadedStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LikeMapLoaded) == 0x000460, "Member 'UPyLevelEventSubSystem::LikeMapLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LikeMapUnLoaded) == 0x000470, "Member 'UPyLevelEventSubSystem::LikeMapUnLoaded' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ClientShowMVPPanel) == 0x000480, "Member 'UPyLevelEventSubSystem::ClientShowMVPPanel' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ClientEnterEpicMoment) == 0x000490, "Member 'UPyLevelEventSubSystem::ClientEnterEpicMoment' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SelectHeroEndDispatcher) == 0x0004A0, "Member 'UPyLevelEventSubSystem::SelectHeroEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SelectHeroWorldLoadedDispatcher) == 0x0004B0, "Member 'UPyLevelEventSubSystem::SelectHeroWorldLoadedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ClientFirstShowSelectHeroPanel) == 0x0004C0, "Member 'UPyLevelEventSubSystem::ClientFirstShowSelectHeroPanel' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ToggleEnableUnloadLevel) == 0x0004D0, "Member 'UPyLevelEventSubSystem::ToggleEnableUnloadLevel' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnGlobalQualityChanged) == 0x0004E0, "Member 'UPyLevelEventSubSystem::OnGlobalQualityChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, InitializeSublevelPartList) == 0x0004F0, "Member 'UPyLevelEventSubSystem::InitializeSublevelPartList' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CurrentLevelPartNameChanged) == 0x000500, "Member 'UPyLevelEventSubSystem::CurrentLevelPartNameChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PrepareEndDispatcher) == 0x000510, "Member 'UPyLevelEventSubSystem::PrepareEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BeforeMatchStateChangeDispatcher) == 0x000520, "Member 'UPyLevelEventSubSystem::BeforeMatchStateChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, FightStartDispatcher) == 0x000530, "Member 'UPyLevelEventSubSystem::FightStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RpcFightStartDispatcher) == 0x000540, "Member 'UPyLevelEventSubSystem::RpcFightStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ShowTransitionPanel) == 0x000550, "Member 'UPyLevelEventSubSystem::ShowTransitionPanel' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TransitionPanelFadeOut) == 0x000560, "Member 'UPyLevelEventSubSystem::TransitionPanelFadeOut' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TransitionEndDispatcher) == 0x000570, "Member 'UPyLevelEventSubSystem::TransitionEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RemainingTimeDispatcher) == 0x000580, "Member 'UPyLevelEventSubSystem::RemainingTimeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PauseRemainingTimeDispatcher) == 0x000590, "Member 'UPyLevelEventSubSystem::PauseRemainingTimeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SetRemainingTimeDispatcher) == 0x0005A0, "Member 'UPyLevelEventSubSystem::SetRemainingTimeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RegularTimeOutDispatcher) == 0x0005B0, "Member 'UPyLevelEventSubSystem::RegularTimeOutDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerSpawn) == 0x0005C0, "Member 'UPyLevelEventSubSystem::OnPlayerSpawn' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerWin) == 0x0005D0, "Member 'UPyLevelEventSubSystem::OnPlayerWin' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerLost) == 0x0005E0, "Member 'UPyLevelEventSubSystem::OnPlayerLost' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayDraw) == 0x0005F0, "Member 'UPyLevelEventSubSystem::OnPlayDraw' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnActorSRoomPassDispatcher) == 0x000600, "Member 'UPyLevelEventSubSystem::OnActorSRoomPassDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RoundWinnerDispatcher) == 0x000610, "Member 'UPyLevelEventSubSystem::RoundWinnerDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OpenHeroListChange) == 0x000620, "Member 'UPyLevelEventSubSystem::OpenHeroListChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OpenSelectHeroListChange) == 0x000630, "Member 'UPyLevelEventSubSystem::OpenSelectHeroListChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, StateTimeChangeDispatcher) == 0x000640, "Member 'UPyLevelEventSubSystem::StateTimeChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SlowMotionEndDispatcher) == 0x000650, "Member 'UPyLevelEventSubSystem::SlowMotionEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnGamePauseInfoChanged) == 0x000660, "Member 'UPyLevelEventSubSystem::OnGamePauseInfoChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnGamePauseTimeChanged) == 0x000670, "Member 'UPyLevelEventSubSystem::OnGamePauseTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPreUnpauseTimeChanged) == 0x000680, "Member 'UPyLevelEventSubSystem::OnPreUnpauseTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnStandbyChecklistChanged) == 0x000690, "Member 'UPyLevelEventSubSystem::OnStandbyChecklistChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnStandbyCheckSponsorChanged) == 0x0006A0, "Member 'UPyLevelEventSubSystem::OnStandbyCheckSponsorChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnStandbyCheckSponsorShowNameChanged) == 0x0006B0, "Member 'UPyLevelEventSubSystem::OnStandbyCheckSponsorShowNameChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPauseSourceTypeChanged) == 0x0006C0, "Member 'UPyLevelEventSubSystem::OnPauseSourceTypeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnStandbyCheckTypeChanged) == 0x0006D0, "Member 'UPyLevelEventSubSystem::OnStandbyCheckTypeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHistoryPauseSecsChanged) == 0x0006E0, "Member 'UPyLevelEventSubSystem::OnHistoryPauseSecsChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnOnceLimitPauseSecsChanged) == 0x0006F0, "Member 'UPyLevelEventSubSystem::OnOnceLimitPauseSecsChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnOfflinePauseCountChanged) == 0x000700, "Member 'UPyLevelEventSubSystem::OnOfflinePauseCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnOfflinePauseCountMaxChanged) == 0x000710, "Member 'UPyLevelEventSubSystem::OnOfflinePauseCountMaxChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnEnableOfflinePauseChanged) == 0x000720, "Member 'UPyLevelEventSubSystem::OnEnableOfflinePauseChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerLogOutPause) == 0x000730, "Member 'UPyLevelEventSubSystem::OnPlayerLogOutPause' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnIgnoreOfflineUIDListChanged) == 0x000740, "Member 'UPyLevelEventSubSystem::OnIgnoreOfflineUIDListChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnOfflineUIDListChanged) == 0x000750, "Member 'UPyLevelEventSubSystem::OnOfflineUIDListChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerStateOnlineStateChanged) == 0x000760, "Member 'UPyLevelEventSubSystem::OnPlayerStateOnlineStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnMusicStateChanged) == 0x000770, "Member 'UPyLevelEventSubSystem::OnMusicStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PauseToContinue) == 0x000780, "Member 'UPyLevelEventSubSystem::PauseToContinue' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OvertimeStartDispatcher) == 0x000790, "Member 'UPyLevelEventSubSystem::OvertimeStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OvertimeEndDispatcher) == 0x0007A0, "Member 'UPyLevelEventSubSystem::OvertimeEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OvertimeCancelDispatcher) == 0x0007B0, "Member 'UPyLevelEventSubSystem::OvertimeCancelDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OvertimeUpdateDispatcher) == 0x0007C0, "Member 'UPyLevelEventSubSystem::OvertimeUpdateDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UISelectTimeChanged) == 0x0007D0, "Member 'UPyLevelEventSubSystem::UISelectTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UIPrepareTimeChanged) == 0x0007E0, "Member 'UPyLevelEventSubSystem::UIPrepareTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UIFightingTimeChanged) == 0x0007F0, "Member 'UPyLevelEventSubSystem::UIFightingTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DestroyCharacterLogOut) == 0x000800, "Member 'UPyLevelEventSubSystem::DestroyCharacterLogOut' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerLogout) == 0x000810, "Member 'UPyLevelEventSubSystem::OnPlayerLogout' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerReconnect) == 0x000820, "Member 'UPyLevelEventSubSystem::OnPlayerReconnect' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AllowRematchChanged) == 0x000830, "Member 'UPyLevelEventSubSystem::AllowRematchChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, InitObjectives) == 0x000840, "Member 'UPyLevelEventSubSystem::InitObjectives' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObjectiveActivateDispatcher) == 0x000850, "Member 'UPyLevelEventSubSystem::ObjectiveActivateDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObjectiveEndDispatcher) == 0x000860, "Member 'UPyLevelEventSubSystem::ObjectiveEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObjectiveEndCallback) == 0x000870, "Member 'UPyLevelEventSubSystem::ObjectiveEndCallback' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObjectiveStageDispatcher) == 0x000880, "Member 'UPyLevelEventSubSystem::ObjectiveStageDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObjectiveMaxProgressDispatcher) == 0x000890, "Member 'UPyLevelEventSubSystem::ObjectiveMaxProgressDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LevelAbility221_ServerActivated) == 0x0008A0, "Member 'UPyLevelEventSubSystem::LevelAbility221_ServerActivated' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, InitPayload) == 0x0008B0, "Member 'UPyLevelEventSubSystem::InitPayload' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PrePayloadRouteEndDispatcher) == 0x0008C0, "Member 'UPyLevelEventSubSystem::PrePayloadRouteEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadActivateDispatcher) == 0x0008D0, "Member 'UPyLevelEventSubSystem::PayloadActivateDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PrePayloadRouteStartDispatcher) == 0x0008E0, "Member 'UPyLevelEventSubSystem::PrePayloadRouteStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadRouteStartDispatcher) == 0x0008F0, "Member 'UPyLevelEventSubSystem::PayloadRouteStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadRouteChangedDispatcher) == 0x000900, "Member 'UPyLevelEventSubSystem::PayloadRouteChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadRouteEndDispatcher) == 0x000910, "Member 'UPyLevelEventSubSystem::PayloadRouteEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EscortRebirthTimeUpdateDispatcher) == 0x000920, "Member 'UPyLevelEventSubSystem::EscortRebirthTimeUpdateDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadDecalVisibleDispatcher) == 0x000930, "Member 'UPyLevelEventSubSystem::PayloadDecalVisibleDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadEndCallback) == 0x000940, "Member 'UPyLevelEventSubSystem::PayloadEndCallback' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TraceListChangeDispatcher) == 0x000950, "Member 'UPyLevelEventSubSystem::TraceListChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PayloadMaxDistanceDispatcher) == 0x000960, "Member 'UPyLevelEventSubSystem::PayloadMaxDistanceDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RankAttackInfoChange) == 0x000970, "Member 'UPyLevelEventSubSystem::RankAttackInfoChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RankDefendInfoChange) == 0x000980, "Member 'UPyLevelEventSubSystem::RankDefendInfoChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AsgardE01TODStart) == 0x000990, "Member 'UPyLevelEventSubSystem::AsgardE01TODStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AsgardE01TODEnd) == 0x0009A0, "Member 'UPyLevelEventSubSystem::AsgardE01TODEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTriggeredFireZone) == 0x0009B0, "Member 'UPyLevelEventSubSystem::OnTriggeredFireZone' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTriggeredFreeFlyZone) == 0x0009C0, "Member 'UPyLevelEventSubSystem::OnTriggeredFreeFlyZone' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTriggeredFogZone) == 0x0009D0, "Member 'UPyLevelEventSubSystem::OnTriggeredFogZone' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, InitControl) == 0x0009E0, "Member 'UPyLevelEventSubSystem::InitControl' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ControlUnlockStartDispatcher) == 0x0009F0, "Member 'UPyLevelEventSubSystem::ControlUnlockStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ControlFightStartDispatcher) == 0x000A00, "Member 'UPyLevelEventSubSystem::ControlFightStartDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ControlOwnerChangedForRPC) == 0x000A10, "Member 'UPyLevelEventSubSystem::ControlOwnerChangedForRPC' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ControlEndCallback) == 0x000A20, "Member 'UPyLevelEventSubSystem::ControlEndCallback' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RobotEndDispatcher) == 0x000A30, "Member 'UPyLevelEventSubSystem::RobotEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DispatcherRespawnStart) == 0x000A40, "Member 'UPyLevelEventSubSystem::DispatcherRespawnStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DispatcherRespawnBreak) == 0x000A50, "Member 'UPyLevelEventSubSystem::DispatcherRespawnBreak' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SepcialForceKillByTerrain) == 0x000A60, "Member 'UPyLevelEventSubSystem::SepcialForceKillByTerrain' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DeathZoneKill) == 0x000A70, "Member 'UPyLevelEventSubSystem::DeathZoneKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PostSwitchBattleSide) == 0x000A80, "Member 'UPyLevelEventSubSystem::PostSwitchBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CampPlayerChangedDispatcher) == 0x000A90, "Member 'UPyLevelEventSubSystem::CampPlayerChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PlayerMosTeamChange) == 0x000AA0, "Member 'UPyLevelEventSubSystem::PlayerMosTeamChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PreCharacterDestroy) == 0x000AB0, "Member 'UPyLevelEventSubSystem::PreCharacterDestroy' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DispatcherInitUI) == 0x000AC0, "Member 'UPyLevelEventSubSystem::DispatcherInitUI' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AmpProgressDispatcher) == 0x000AD0, "Member 'UPyLevelEventSubSystem::AmpProgressDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TimeCrystalPickProgressDispatcher) == 0x000AE0, "Member 'UPyLevelEventSubSystem::TimeCrystalPickProgressDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LegalZoneOccupyProgressDispatcher) == 0x000AF0, "Member 'UPyLevelEventSubSystem::LegalZoneOccupyProgressDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TimeCrystalStateChanged) == 0x000B00, "Member 'UPyLevelEventSubSystem::TimeCrystalStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AmpFlagEndDispatcher) == 0x000B10, "Member 'UPyLevelEventSubSystem::AmpFlagEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SyncUnlockTimeChanged) == 0x000B20, "Member 'UPyLevelEventSubSystem::SyncUnlockTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SyncCatchTimeoutChanged) == 0x000B30, "Member 'UPyLevelEventSubSystem::SyncCatchTimeoutChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPickupTimeCrystal) == 0x000B40, "Member 'UPyLevelEventSubSystem::OnPickupTimeCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPickupTimeCrystalInterrupted) == 0x000B50, "Member 'UPyLevelEventSubSystem::OnPickupTimeCrystalInterrupted' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTryPickupTimeCrystal) == 0x000B60, "Member 'UPyLevelEventSubSystem::OnTryPickupTimeCrystal' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PlaceFlagInLegalZone) == 0x000B70, "Member 'UPyLevelEventSubSystem::PlaceFlagInLegalZone' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CapturingFlag) == 0x000B80, "Member 'UPyLevelEventSubSystem::CapturingFlag' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnFlagStopSimulating) == 0x000B90, "Member 'UPyLevelEventSubSystem::OnFlagStopSimulating' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AmpFlagTargetActorChanged) == 0x000BA0, "Member 'UPyLevelEventSubSystem::AmpFlagTargetActorChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSuddenDeathStateChanged) == 0x000BB0, "Member 'UPyLevelEventSubSystem::OnSuddenDeathStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PlayerCountChanged) == 0x000BC0, "Member 'UPyLevelEventSubSystem::PlayerCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, HydraMoveAchievementEvent) == 0x000BD0, "Member 'UPyLevelEventSubSystem::HydraMoveAchievementEvent' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AE_LostInTheGame) == 0x000BE0, "Member 'UPyLevelEventSubSystem::AE_LostInTheGame' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DispatcherFullScreenMessage) == 0x000BF0, "Member 'UPyLevelEventSubSystem::DispatcherFullScreenMessage' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, StartSelectHeroTimer) == 0x000C00, "Member 'UPyLevelEventSubSystem::StartSelectHeroTimer' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainStart) == 0x000C10, "Member 'UPyLevelEventSubSystem::TrainStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainEnd) == 0x000C20, "Member 'UPyLevelEventSubSystem::TrainEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ChangeTrainHold) == 0x000C30, "Member 'UPyLevelEventSubSystem::ChangeTrainHold' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainDelayStart) == 0x000C40, "Member 'UPyLevelEventSubSystem::TrainDelayStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainDelayEnd) == 0x000C50, "Member 'UPyLevelEventSubSystem::TrainDelayEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ObtainTrainComputerAuth) == 0x000C60, "Member 'UPyLevelEventSubSystem::ObtainTrainComputerAuth' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LoseTrainComputerAuth) == 0x000C70, "Member 'UPyLevelEventSubSystem::LoseTrainComputerAuth' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnterPortalArea) == 0x000C80, "Member 'UPyLevelEventSubSystem::EnterPortalArea' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ExitPortalArea) == 0x000C90, "Member 'UPyLevelEventSubSystem::ExitPortalArea' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ShowPortalActionTips) == 0x000CA0, "Member 'UPyLevelEventSubSystem::ShowPortalActionTips' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, HidePortalActionTips) == 0x000CB0, "Member 'UPyLevelEventSubSystem::HidePortalActionTips' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnterTrainArea) == 0x000CC0, "Member 'UPyLevelEventSubSystem::EnterTrainArea' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ExitTrainArea) == 0x000CD0, "Member 'UPyLevelEventSubSystem::ExitTrainArea' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainCustomSetting) == 0x000CE0, "Member 'UPyLevelEventSubSystem::TrainCustomSetting' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainFriendHarm) == 0x000CF0, "Member 'UPyLevelEventSubSystem::TrainFriendHarm' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainFriendHarmFinshed) == 0x000D00, "Member 'UPyLevelEventSubSystem::TrainFriendHarmFinshed' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainSkillNoCd) == 0x000D10, "Member 'UPyLevelEventSubSystem::TrainSkillNoCd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainTeleportStart) == 0x000D20, "Member 'UPyLevelEventSubSystem::TrainTeleportStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainTeleportEnd) == 0x000D30, "Member 'UPyLevelEventSubSystem::TrainTeleportEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainEntryStateChanged) == 0x000D40, "Member 'UPyLevelEventSubSystem::TrainEntryStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainStartLog) == 0x000D50, "Member 'UPyLevelEventSubSystem::TrainStartLog' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LimitTimeTrainStateChanged) == 0x000D60, "Member 'UPyLevelEventSubSystem::LimitTimeTrainStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LimitTimeTrainConfigChanged) == 0x000D70, "Member 'UPyLevelEventSubSystem::LimitTimeTrainConfigChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LimitTimeTrainInsidePlayerChanged) == 0x000D80, "Member 'UPyLevelEventSubSystem::LimitTimeTrainInsidePlayerChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LimitTimeTrainInsideScoreChanged) == 0x000D90, "Member 'UPyLevelEventSubSystem::LimitTimeTrainInsideScoreChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainCreateCooperate) == 0x000DA0, "Member 'UPyLevelEventSubSystem::TrainCreateCooperate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TrainCancelCooperate) == 0x000DB0, "Member 'UPyLevelEventSubSystem::TrainCancelCooperate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PracticeRangeAvailableSkinChanged) == 0x000DC0, "Member 'UPyLevelEventSubSystem::PracticeRangeAvailableSkinChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PracticeRangeModelsChanged) == 0x000DD0, "Member 'UPyLevelEventSubSystem::PracticeRangeModelsChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PracticeRangeHeroUsedSkinChanged) == 0x000DE0, "Member 'UPyLevelEventSubSystem::PracticeRangeHeroUsedSkinChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LevelCheckPointActivate) == 0x000DF0, "Member 'UPyLevelEventSubSystem::LevelCheckPointActivate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, NoviceTeleportEnd) == 0x000E00, "Member 'UPyLevelEventSubSystem::NoviceTeleportEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, NoviceFirstSwitchHero) == 0x000E10, "Member 'UPyLevelEventSubSystem::NoviceFirstSwitchHero' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AddPlayerScore) == 0x000E20, "Member 'UPyLevelEventSubSystem::AddPlayerScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnChangePlayerScore) == 0x000E30, "Member 'UPyLevelEventSubSystem::OnChangePlayerScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DeathBattleSituation) == 0x000E40, "Member 'UPyLevelEventSubSystem::DeathBattleSituation' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SubPlayerScore) == 0x000E50, "Member 'UPyLevelEventSubSystem::SubPlayerScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ChangeDeathFinal) == 0x000E60, "Member 'UPyLevelEventSubSystem::ChangeDeathFinal' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, FristWinner) == 0x000E70, "Member 'UPyLevelEventSubSystem::FristWinner' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, GainAdvantage) == 0x000E80, "Member 'UPyLevelEventSubSystem::GainAdvantage' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, LostAdvantage) == 0x000E90, "Member 'UPyLevelEventSubSystem::LostAdvantage' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PostUpdateScoreList) == 0x000EA0, "Member 'UPyLevelEventSubSystem::PostUpdateScoreList' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PickUpKillConfirm) == 0x000EB0, "Member 'UPyLevelEventSubSystem::PickUpKillConfirm' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AddTeamScore) == 0x000EC0, "Member 'UPyLevelEventSubSystem::AddTeamScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SubTeamScore) == 0x000ED0, "Member 'UPyLevelEventSubSystem::SubTeamScore' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, InSuddenDeathDispatcher) == 0x000EE0, "Member 'UPyLevelEventSubSystem::InSuddenDeathDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnMultiKillChanged) == 0x000EF0, "Member 'UPyLevelEventSubSystem::OnMultiKillChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTeamDeathMatchScoreChange) == 0x000F00, "Member 'UPyLevelEventSubSystem::OnTeamDeathMatchScoreChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SelectBanPickHeroIDChange) == 0x000F10, "Member 'UPyLevelEventSubSystem::SelectBanPickHeroIDChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickHeroIDChange) == 0x000F20, "Member 'UPyLevelEventSubSystem::BanPickHeroIDChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickStateChangeDispatcher) == 0x000F30, "Member 'UPyLevelEventSubSystem::BanPickStateChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickResultListChangeDispatcher) == 0x000F40, "Member 'UPyLevelEventSubSystem::BanPickResultListChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickIndexChangeDispatcher) == 0x000F50, "Member 'UPyLevelEventSubSystem::BanPickIndexChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CurBanPickSideChangeDispatcher) == 0x000F60, "Member 'UPyLevelEventSubSystem::CurBanPickSideChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RedBanPickLeaderIDChangeDispatcher) == 0x000F70, "Member 'UPyLevelEventSubSystem::RedBanPickLeaderIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BlueBanPickLeaderIDChangeDispatcher) == 0x000F80, "Member 'UPyLevelEventSubSystem::BlueBanPickLeaderIDChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CurRoundBlueBanPickResultChangeDispatcher) == 0x000F90, "Member 'UPyLevelEventSubSystem::CurRoundBlueBanPickResultChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CurRoundRedBanPickResultChangeDispatcher) == 0x000FA0, "Member 'UPyLevelEventSubSystem::CurRoundRedBanPickResultChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, S_BanPickSideChangeDispatcher) == 0x000FB0, "Member 'UPyLevelEventSubSystem::S_BanPickSideChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickSideConfirmResultDispatcher) == 0x000FC0, "Member 'UPyLevelEventSubSystem::BanPickSideConfirmResultDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickOperateTypeChangeDispatcher) == 0x000FD0, "Member 'UPyLevelEventSubSystem::BanPickOperateTypeChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ClientEnableBanPickChangeDispatcher) == 0x000FE0, "Member 'UPyLevelEventSubSystem::ClientEnableBanPickChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPreSelectHeroDisplayStageStart) == 0x000FF0, "Member 'UPyLevelEventSubSystem::OnPreSelectHeroDisplayStageStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBanPickDisplayStageStart) == 0x001000, "Member 'UPyLevelEventSubSystem::OnBanPickDisplayStageStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSelectHeroDisplayStageStart) == 0x001010, "Member 'UPyLevelEventSubSystem::OnSelectHeroDisplayStageStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BanPickStateTimeChangeDispatcher) == 0x001020, "Member 'UPyLevelEventSubSystem::BanPickStateTimeChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnReceivePlayerLaunchSurrender) == 0x001030, "Member 'UPyLevelEventSubSystem::OnReceivePlayerLaunchSurrender' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnReceivePlayerSurrender) == 0x001040, "Member 'UPyLevelEventSubSystem::OnReceivePlayerSurrender' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderStart) == 0x001050, "Member 'UPyLevelEventSubSystem::OnSurrenderStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderAnnouncement) == 0x001060, "Member 'UPyLevelEventSubSystem::OnSurrenderAnnouncement' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderEarlyEnable) == 0x001070, "Member 'UPyLevelEventSubSystem::OnSurrenderEarlyEnable' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderEnd) == 0x001080, "Member 'UPyLevelEventSubSystem::OnSurrenderEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnRedValidSurrenderPlayersChange) == 0x001090, "Member 'UPyLevelEventSubSystem::OnRedValidSurrenderPlayersChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBlueValidSurrenderPlayersChange) == 0x0010A0, "Member 'UPyLevelEventSubSystem::OnBlueValidSurrenderPlayersChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnRedSurrenderStateChange) == 0x0010B0, "Member 'UPyLevelEventSubSystem::OnRedSurrenderStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBlueSurrenderStateChange) == 0x0010C0, "Member 'UPyLevelEventSubSystem::OnBlueSurrenderStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnRedSurrenderResultChange) == 0x0010D0, "Member 'UPyLevelEventSubSystem::OnRedSurrenderResultChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBlueSurrenderResultChange) == 0x0010E0, "Member 'UPyLevelEventSubSystem::OnBlueSurrenderResultChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnRedSurrenderPassedChange) == 0x0010F0, "Member 'UPyLevelEventSubSystem::OnRedSurrenderPassedChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBlueSurrenderPassedChange) == 0x001100, "Member 'UPyLevelEventSubSystem::OnBlueSurrenderPassedChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderFailed) == 0x001110, "Member 'UPyLevelEventSubSystem::OnSurrenderFailed' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSurrenderSuccess) == 0x001120, "Member 'UPyLevelEventSubSystem::OnSurrenderSuccess' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnVotePassingRateChange) == 0x001130, "Member 'UPyLevelEventSubSystem::OnVotePassingRateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UIMultiKill) == 0x001140, "Member 'UPyLevelEventSubSystem::UIMultiKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UITeamKill) == 0x001150, "Member 'UPyLevelEventSubSystem::UITeamKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UIOccupyingSideChange) == 0x001160, "Member 'UPyLevelEventSubSystem::UIOccupyingSideChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, VHolderSideDispatcher) == 0x001170, "Member 'UPyLevelEventSubSystem::VHolderSideDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, DispatchVictoryProgressChanged) == 0x001180, "Member 'UPyLevelEventSubSystem::DispatchVictoryProgressChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SelectHeroEntranceFinish) == 0x001190, "Member 'UPyLevelEventSubSystem::SelectHeroEntranceFinish' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, AudioSiwtchBattleSide) == 0x0011A0, "Member 'UPyLevelEventSubSystem::AudioSiwtchBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnVoiceEnd) == 0x0011B0, "Member 'UPyLevelEventSubSystem::OnVoiceEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnCampOccupied) == 0x0011C0, "Member 'UPyLevelEventSubSystem::OnCampOccupied' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnInteractingWithNPC) == 0x0011D0, "Member 'UPyLevelEventSubSystem::OnInteractingWithNPC' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHearingLevelVoice) == 0x0011E0, "Member 'UPyLevelEventSubSystem::OnHearingLevelVoice' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnVictoryInMap) == 0x0011F0, "Member 'UPyLevelEventSubSystem::OnVictoryInMap' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TeamKillPlayerDeath) == 0x001200, "Member 'UPyLevelEventSubSystem::TeamKillPlayerDeath' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, TeamKillTeamWin) == 0x001210, "Member 'UPyLevelEventSubSystem::TeamKillTeamWin' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, NotifyClientCloseSelectHero) == 0x001220, "Member 'UPyLevelEventSubSystem::NotifyClientCloseSelectHero' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, FillColorToPoint) == 0x001230, "Member 'UPyLevelEventSubSystem::FillColorToPoint' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CalculateFillColorPercent) == 0x001240, "Member 'UPyLevelEventSubSystem::CalculateFillColorPercent' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, FillColorUpdatePercentDispatcher) == 0x001250, "Member 'UPyLevelEventSubSystem::FillColorUpdatePercentDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, FillColorUpdateTeamPercentDispatcher) == 0x001260, "Member 'UPyLevelEventSubSystem::FillColorUpdateTeamPercentDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, WinterFestivalRoleListChange) == 0x001270, "Member 'UPyLevelEventSubSystem::WinterFestivalRoleListChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, CommonFestivalPlayerStatChanged) == 0x001280, "Member 'UPyLevelEventSubSystem::CommonFestivalPlayerStatChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalScoreChanged) == 0x001290, "Member 'UPyLevelEventSubSystem::SpringFestivalScoreChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalGoaled) == 0x0012A0, "Member 'UPyLevelEventSubSystem::SpringFestivalGoaled' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalOnTackling) == 0x0012B0, "Member 'UPyLevelEventSubSystem::SpringFestivalOnTackling' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalPlayerStatChanged) == 0x0012C0, "Member 'UPyLevelEventSubSystem::SpringFestivalPlayerStatChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalRoundStart) == 0x0012D0, "Member 'UPyLevelEventSubSystem::SpringFestivalRoundStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBallKeepSideChange) == 0x0012E0, "Member 'UPyLevelEventSubSystem::OnBallKeepSideChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalNear2Win) == 0x0012F0, "Member 'UPyLevelEventSubSystem::SpringFestivalNear2Win' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalForbidKeepBallStateChanged) == 0x001300, "Member 'UPyLevelEventSubSystem::SpringFestivalForbidKeepBallStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalMatchEnd) == 0x001310, "Member 'UPyLevelEventSubSystem::SpringFestivalMatchEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnSpringFestivalMatchStateChange) == 0x001320, "Member 'UPyLevelEventSubSystem::OnSpringFestivalMatchStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalSelfGotBall) == 0x001330, "Member 'UPyLevelEventSubSystem::SpringFestivalSelfGotBall' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpringFestivalGotLongPass) == 0x001340, "Member 'UPyLevelEventSubSystem::SpringFestivalGotLongPass' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyContestRuleComponentPostReceiveBeginPlay) == 0x001350, "Member 'UPyLevelEventSubSystem::EnergyContestRuleComponentPostReceiveBeginPlay' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyScoreChanged) == 0x001360, "Member 'UPyLevelEventSubSystem::EnergyScoreChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyScoreBoardChanged) == 0x001370, "Member 'UPyLevelEventSubSystem::EnergyScoreBoardChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyScoreFirstGreaterThanOrEqualsToRatio) == 0x001380, "Member 'UPyLevelEventSubSystem::EnergyScoreFirstGreaterThanOrEqualsToRatio' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, MineEnergyFirstLowerThanRatio) == 0x001390, "Member 'UPyLevelEventSubSystem::MineEnergyFirstLowerThanRatio' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, MineEnergyFirstLowerThanScalar) == 0x0013A0, "Member 'UPyLevelEventSubSystem::MineEnergyFirstLowerThanScalar' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, MineControlOwnerChanged) == 0x0013B0, "Member 'UPyLevelEventSubSystem::MineControlOwnerChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyWinScoreChanged) == 0x0013C0, "Member 'UPyLevelEventSubSystem::EnergyWinScoreChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyPillageStageChanged) == 0x0013D0, "Member 'UPyLevelEventSubSystem::EnergyPillageStageChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyOwnerBattleSideChanged) == 0x0013E0, "Member 'UPyLevelEventSubSystem::EnergyOwnerBattleSideChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyContestMinesInited) == 0x0013F0, "Member 'UPyLevelEventSubSystem::EnergyContestMinesInited' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, EnergyContestHasWinner) == 0x001400, "Member 'UPyLevelEventSubSystem::EnergyContestHasWinner' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PreCreateMineProxy) == 0x001410, "Member 'UPyLevelEventSubSystem::PreCreateMineProxy' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessPlayerChangeBattleSide) == 0x001420, "Member 'UPyLevelEventSubSystem::BattleChessPlayerChangeBattleSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessConfirmHero) == 0x001430, "Member 'UPyLevelEventSubSystem::BattleChessConfirmHero' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, UpdateBattleChessIsDrawingCard) == 0x001440, "Member 'UPyLevelEventSubSystem::UpdateBattleChessIsDrawingCard' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBattleChessViewingPlayerStateChange) == 0x001450, "Member 'UPyLevelEventSubSystem::OnBattleChessViewingPlayerStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPostBattleChessViewingPlayerStateChange) == 0x001460, "Member 'UPyLevelEventSubSystem::OnPostBattleChessViewingPlayerStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessPlayerListChanged) == 0x001470, "Member 'UPyLevelEventSubSystem::BattleChessPlayerListChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessStateChanged) == 0x001480, "Member 'UPyLevelEventSubSystem::BattleChessStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessEditModeChanged) == 0x001490, "Member 'UPyLevelEventSubSystem::BattleChessEditModeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, NetMulticast_BattleChessStateChange) == 0x0014A0, "Member 'UPyLevelEventSubSystem::NetMulticast_BattleChessStateChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnBattleChessEnemyPlayerChanged) == 0x0014B0, "Member 'UPyLevelEventSubSystem::OnBattleChessEnemyPlayerChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessPlayerExitFromGame) == 0x0014C0, "Member 'UPyLevelEventSubSystem::BattleChessPlayerExitFromGame' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnChessRanked) == 0x0014D0, "Member 'UPyLevelEventSubSystem::OnChessRanked' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnIsSwitchHeroRoundChanged) == 0x0014E0, "Member 'UPyLevelEventSubSystem::OnIsSwitchHeroRoundChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessWinOnHpReduceStart) == 0x0014F0, "Member 'UPyLevelEventSubSystem::BattleChessWinOnHpReduceStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessLocalPlayerRanking) == 0x001500, "Member 'UPyLevelEventSubSystem::BattleChessLocalPlayerRanking' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessRoundWinner) == 0x001510, "Member 'UPyLevelEventSubSystem::BattleChessRoundWinner' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessPVEReward) == 0x001520, "Member 'UPyLevelEventSubSystem::BattleChessPVEReward' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessPVERewardAutoSelect) == 0x001530, "Member 'UPyLevelEventSubSystem::BattleChessPVERewardAutoSelect' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessCategoryLevelUp) == 0x001540, "Member 'UPyLevelEventSubSystem::BattleChessCategoryLevelUp' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessRefreshGoldenCard) == 0x001550, "Member 'UPyLevelEventSubSystem::BattleChessRefreshGoldenCard' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessMirrorPlayerSourceUpdate) == 0x001560, "Member 'UPyLevelEventSubSystem::BattleChessMirrorPlayerSourceUpdate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessChangeHeroCardList) == 0x001570, "Member 'UPyLevelEventSubSystem::BattleChessChangeHeroCardList' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BattleChessConfirmHeroList) == 0x001580, "Member 'UPyLevelEventSubSystem::BattleChessConfirmHeroList' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BenchmarkSeqStart) == 0x001590, "Member 'UPyLevelEventSubSystem::BenchmarkSeqStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, BenchmarkSeqEnd) == 0x0015A0, "Member 'UPyLevelEventSubSystem::BenchmarkSeqEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, RuleComponentReceiveInit) == 0x0015B0, "Member 'UPyLevelEventSubSystem::RuleComponentReceiveInit' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnWinterFestivalResult) == 0x0015C0, "Member 'UPyLevelEventSubSystem::OnWinterFestivalResult' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenStateChanged) == 0x0015D0, "Member 'UPyLevelEventSubSystem::OnHalloweenStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnAlivePlayerCountChanged) == 0x0015E0, "Member 'UPyLevelEventSubSystem::OnAlivePlayerCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnWaveCountChanged) == 0x0015F0, "Member 'UPyLevelEventSubSystem::OnWaveCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnRemainingMonsterChanged) == 0x001600, "Member 'UPyLevelEventSubSystem::OnRemainingMonsterChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnCurrentMonsterCountChanged) == 0x001610, "Member 'UPyLevelEventSubSystem::OnCurrentMonsterCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTotalMonsterCountChanged) == 0x001620, "Member 'UPyLevelEventSubSystem::OnTotalMonsterCountChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenDifficultyChanged) == 0x001630, "Member 'UPyLevelEventSubSystem::OnHalloweenDifficultyChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenGameDurationChanged) == 0x001640, "Member 'UPyLevelEventSubSystem::OnHalloweenGameDurationChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenRoundIndexChanged) == 0x001650, "Member 'UPyLevelEventSubSystem::OnHalloweenRoundIndexChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenTeleportToActor) == 0x001660, "Member 'UPyLevelEventSubSystem::OnHalloweenTeleportToActor' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnAllPlayerRallyDispatcher) == 0x001670, "Member 'UPyLevelEventSubSystem::OnAllPlayerRallyDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnReachMissionPointDispatcher) == 0x001680, "Member 'UPyLevelEventSubSystem::OnReachMissionPointDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnMissionFailedDispatcher) == 0x001690, "Member 'UPyLevelEventSubSystem::OnMissionFailedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPickUpLootDispatcher) == 0x0016A0, "Member 'UPyLevelEventSubSystem::OnPickUpLootDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenFightEnd) == 0x0016B0, "Member 'UPyLevelEventSubSystem::OnHalloweenFightEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenPrepareRemainTimeChanged) == 0x0016C0, "Member 'UPyLevelEventSubSystem::OnHalloweenPrepareRemainTimeChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenWaveEndDispatcher) == 0x0016D0, "Member 'UPyLevelEventSubSystem::OnHalloweenWaveEndDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenProtectorChanged) == 0x0016E0, "Member 'UPyLevelEventSubSystem::OnHalloweenProtectorChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenBossTargetChanged) == 0x0016F0, "Member 'UPyLevelEventSubSystem::OnHalloweenBossTargetChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnEnterPreparePoint) == 0x001700, "Member 'UPyLevelEventSubSystem::OnEnterPreparePoint' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenProtectorStateChanged) == 0x001710, "Member 'UPyLevelEventSubSystem::OnHalloweenProtectorStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnHalloweenOperatorChanged) == 0x001720, "Member 'UPyLevelEventSubSystem::OnHalloweenOperatorChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerUseReviveCoin) == 0x001730, "Member 'UPyLevelEventSubSystem::OnPlayerUseReviveCoin' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerTeleportStart) == 0x001740, "Member 'UPyLevelEventSubSystem::OnPlayerTeleportStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPlayerTeleportEnd) == 0x001750, "Member 'UPyLevelEventSubSystem::OnPlayerTeleportEnd' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnCurrentTeleportAreaChanged) == 0x001760, "Member 'UPyLevelEventSubSystem::OnCurrentTeleportAreaChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTowerStateChanged) == 0x001770, "Member 'UPyLevelEventSubSystem::OnTowerStateChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTeamGoldChanged) == 0x001780, "Member 'UPyLevelEventSubSystem::OnTeamGoldChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnTeamKillChanged) == 0x001790, "Member 'UPyLevelEventSubSystem::OnTeamKillChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnM2201EnableAnnivCountdownChange) == 0x0017A0, "Member 'UPyLevelEventSubSystem::OnM2201EnableAnnivCountdownChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnM2201IsCountDownStartChange) == 0x0017B0, "Member 'UPyLevelEventSubSystem::OnM2201IsCountDownStartChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnM2201IsCountDownEndChange) == 0x0017C0, "Member 'UPyLevelEventSubSystem::OnM2201IsCountDownEndChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnM2201IsFireworkEnabledChange) == 0x0017D0, "Member 'UPyLevelEventSubSystem::OnM2201IsFireworkEnabledChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnCrossTravelFinished) == 0x0017E0, "Member 'UPyLevelEventSubSystem::OnCrossTravelFinished' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnLevelUIDemoInit) == 0x0017F0, "Member 'UPyLevelEventSubSystem::OnLevelUIDemoInit' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnLevelUIDemoMainProgressChanged) == 0x001800, "Member 'UPyLevelEventSubSystem::OnLevelUIDemoMainProgressChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnLevelUIDemoOwnerSideChanged) == 0x001810, "Member 'UPyLevelEventSubSystem::OnLevelUIDemoOwnerSideChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, QualitySettingChange) == 0x001820, "Member 'UPyLevelEventSubSystem::QualitySettingChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, SpecialAreaTrigger) == 0x001830, "Member 'UPyLevelEventSubSystem::SpecialAreaTrigger' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnPortalActivate) == 0x001840, "Member 'UPyLevelEventSubSystem::OnPortalActivate' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnLocalAreaChange) == 0x001850, "Member 'UPyLevelEventSubSystem::OnLocalAreaChange' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnActorChangedByTrajectoryPortal) == 0x001860, "Member 'UPyLevelEventSubSystem::OnActorChangedByTrajectoryPortal' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, PartInfoChanged) == 0x001870, "Member 'UPyLevelEventSubSystem::PartInfoChanged' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, ShowCharacterOverlay) == 0x001880, "Member 'UPyLevelEventSubSystem::ShowCharacterOverlay' has a wrong offset!");
-static_assert(offsetof(UPyLevelEventSubSystem, OnReplayControllerSpawned) == 0x001890, "Member 'UPyLevelEventSubSystem::OnReplayControllerSpawned' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelEventSubSystem;
 
 // PythonClass PyLevelEventSubsystem.PyReplayLevelEventSubSystem
-// 0x0000 (0x18A0 - 0x18A0)
+// 0x0000 (0x19F8 - 0x19F8)
 class UPyReplayLevelEventSubSystem final : public UPyLevelEventSubSystem
 {
 public:
@@ -735,15 +417,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReplayLevelEventSubSystem">();
+		STATIC_CLASS_IMPL("PyReplayLevelEventSubSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReplayLevelEventSubSystem")
 	}
 	static class UPyReplayLevelEventSubSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyReplayLevelEventSubSystem>();
 	}
 };
-static_assert(alignof(UPyReplayLevelEventSubSystem) == 0x000008, "Wrong alignment on UPyReplayLevelEventSubSystem");
-static_assert(sizeof(UPyReplayLevelEventSubSystem) == 0x0018A0, "Wrong size on UPyReplayLevelEventSubSystem");
+DUMPER7_ASSERTS_UPyReplayLevelEventSubSystem;
 
 }
 

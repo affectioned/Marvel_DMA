@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "PBIK_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_classes.hpp"
 #include "IKRig_structs.hpp"
+#include "PBIK_structs.hpp"
 
 
 namespace SDK
@@ -30,7 +30,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKGoalCreatorInterface">();
+		STATIC_CLASS_IMPL("IKGoalCreatorInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKGoalCreatorInterface")
 	}
 	static class IIKGoalCreatorInterface* GetDefaultObj()
 	{
@@ -46,8 +50,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IIKGoalCreatorInterface) == 0x000001, "Wrong alignment on IIKGoalCreatorInterface");
-static_assert(sizeof(IIKGoalCreatorInterface) == 0x000001, "Wrong size on IIKGoalCreatorInterface");
+DUMPER7_ASSERTS_IIKGoalCreatorInterface;
 
 // Class IKRig.IKRigComponent
 // 0x0018 (0x0120 - 0x0108)
@@ -65,40 +68,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigComponent">();
+		STATIC_CLASS_IMPL("IKRigComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigComponent")
 	}
 	static class UIKRigComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigComponent>();
 	}
 };
-static_assert(alignof(UIKRigComponent) == 0x000008, "Wrong alignment on UIKRigComponent");
-static_assert(sizeof(UIKRigComponent) == 0x000120, "Wrong size on UIKRigComponent");
+DUMPER7_ASSERTS_UIKRigComponent;
 
 // Class IKRig.RetargetChainSettings
-// 0x00C8 (0x00F8 - 0x0030)
+// 0x00D8 (0x0108 - 0x0030)
 class URetargetChainSettings final : public UObject
 {
 public:
 	class FName                                   SourceChain;                                       // 0x0030(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   TargetChain;                                       // 0x003C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTargetChainSettings                   Settings;                                          // 0x0048(0x00B0)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FTargetChainSettings                   Settings;                                          // 0x0048(0x00C0)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RetargetChainSettings">();
+		STATIC_CLASS_IMPL("RetargetChainSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RetargetChainSettings")
 	}
 	static class URetargetChainSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URetargetChainSettings>();
 	}
 };
-static_assert(alignof(URetargetChainSettings) == 0x000008, "Wrong alignment on URetargetChainSettings");
-static_assert(sizeof(URetargetChainSettings) == 0x0000F8, "Wrong size on URetargetChainSettings");
-static_assert(offsetof(URetargetChainSettings, SourceChain) == 0x000030, "Member 'URetargetChainSettings::SourceChain' has a wrong offset!");
-static_assert(offsetof(URetargetChainSettings, TargetChain) == 0x00003C, "Member 'URetargetChainSettings::TargetChain' has a wrong offset!");
-static_assert(offsetof(URetargetChainSettings, Settings) == 0x000048, "Member 'URetargetChainSettings::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_URetargetChainSettings;
 
 // Class IKRig.RetargetRootSettings
 // 0x0068 (0x0098 - 0x0030)
@@ -110,16 +116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RetargetRootSettings">();
+		STATIC_CLASS_IMPL("RetargetRootSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RetargetRootSettings")
 	}
 	static class URetargetRootSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URetargetRootSettings>();
 	}
 };
-static_assert(alignof(URetargetRootSettings) == 0x000008, "Wrong alignment on URetargetRootSettings");
-static_assert(sizeof(URetargetRootSettings) == 0x000098, "Wrong size on URetargetRootSettings");
-static_assert(offsetof(URetargetRootSettings, Settings) == 0x000030, "Member 'URetargetRootSettings::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_URetargetRootSettings;
 
 // Class IKRig.IKRetargetGlobalSettings
 // 0x0028 (0x0058 - 0x0030)
@@ -132,38 +140,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRetargetGlobalSettings">();
+		STATIC_CLASS_IMPL("IKRetargetGlobalSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRetargetGlobalSettings")
 	}
 	static class UIKRetargetGlobalSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRetargetGlobalSettings>();
 	}
 };
-static_assert(alignof(UIKRetargetGlobalSettings) == 0x000008, "Wrong alignment on UIKRetargetGlobalSettings");
-static_assert(sizeof(UIKRetargetGlobalSettings) == 0x000058, "Wrong size on UIKRetargetGlobalSettings");
-static_assert(offsetof(UIKRetargetGlobalSettings, Settings) == 0x000030, "Member 'UIKRetargetGlobalSettings::Settings' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRetargetGlobalSettings;
 
 // Class IKRig.IKRetargeter
-// 0x0208 (0x0238 - 0x0030)
+// 0x0210 (0x0240 - 0x0030)
 class UIKRetargeter final : public UObject
 {
 public:
 	TSoftObjectPtr<class UIKRigDefinition>        SourceIKRigAsset;                                  // 0x0030(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UIKRigDefinition>        TargetIKRigAsset;                                  // 0x0060(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<struct FRetargetChainMap>              ChainMapping;                                      // 0x0090(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
-	TArray<class URetargetChainSettings*>         ChainSettings;                                     // 0x00A0(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	class URetargetRootSettings*                  RootSettings;                                      // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UIKRetargetGlobalSettings*              GlobalSettings;                                    // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TMap<class FName, struct FRetargetProfile>    Profiles;                                          // 0x00C0(0x0050)(NativeAccessSpecifierPrivate)
-	class FName                                   CurrentProfile;                                    // 0x0110(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, struct FIKRetargetPose>     SourceRetargetPoses;                               // 0x0120(0x0050)(NativeAccessSpecifierPrivate)
-	TMap<class FName, struct FIKRetargetPose>     TargetRetargetPoses;                               // 0x0170(0x0050)(NativeAccessSpecifierPrivate)
-	class FName                                   CurrentSourceRetargetPose;                         // 0x01C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   CurrentTargetRetargetPose;                         // 0x01CC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TMap<class FName, struct FIKRetargetPose>     RetargetPoses;                                     // 0x01D8(0x0050)(Deprecated, NativeAccessSpecifierPrivate)
-	class FName                                   CurrentRetargetPose;                               // 0x0228(0x000C)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UIKRigDefinition*                       OverrideIKRigAsset;                                // 0x0090(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FRetargetChainMap>              ChainMapping;                                      // 0x0098(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
+	TArray<class URetargetChainSettings*>         ChainSettings;                                     // 0x00A8(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	class URetargetRootSettings*                  RootSettings;                                      // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UIKRetargetGlobalSettings*              GlobalSettings;                                    // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMap<class FName, struct FRetargetProfile>    Profiles;                                          // 0x00C8(0x0050)(NativeAccessSpecifierPrivate)
+	class FName                                   CurrentProfile;                                    // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FIKRetargetPose>     SourceRetargetPoses;                               // 0x0128(0x0050)(NativeAccessSpecifierPrivate)
+	TMap<class FName, struct FIKRetargetPose>     TargetRetargetPoses;                               // 0x0178(0x0050)(NativeAccessSpecifierPrivate)
+	class FName                                   CurrentSourceRetargetPose;                         // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   CurrentTargetRetargetPose;                         // 0x01D4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMap<class FName, struct FIKRetargetPose>     RetargetPoses;                                     // 0x01E0(0x0050)(Deprecated, NativeAccessSpecifierPrivate)
+	class FName                                   CurrentRetargetPose;                               // 0x0230(0x000C)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static struct FTargetChainSettings GetChainSettingsFromRetargetAsset(const class UIKRetargeter* RetargetAsset, const class FName TargetChainName, const class FName OptionalProfileName);
@@ -183,29 +194,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRetargeter">();
+		STATIC_CLASS_IMPL("IKRetargeter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRetargeter")
 	}
 	static class UIKRetargeter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRetargeter>();
 	}
 };
-static_assert(alignof(UIKRetargeter) == 0x000008, "Wrong alignment on UIKRetargeter");
-static_assert(sizeof(UIKRetargeter) == 0x000238, "Wrong size on UIKRetargeter");
-static_assert(offsetof(UIKRetargeter, SourceIKRigAsset) == 0x000030, "Member 'UIKRetargeter::SourceIKRigAsset' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, TargetIKRigAsset) == 0x000060, "Member 'UIKRetargeter::TargetIKRigAsset' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, ChainMapping) == 0x000090, "Member 'UIKRetargeter::ChainMapping' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, ChainSettings) == 0x0000A0, "Member 'UIKRetargeter::ChainSettings' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, RootSettings) == 0x0000B0, "Member 'UIKRetargeter::RootSettings' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, GlobalSettings) == 0x0000B8, "Member 'UIKRetargeter::GlobalSettings' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, Profiles) == 0x0000C0, "Member 'UIKRetargeter::Profiles' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, CurrentProfile) == 0x000110, "Member 'UIKRetargeter::CurrentProfile' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, SourceRetargetPoses) == 0x000120, "Member 'UIKRetargeter::SourceRetargetPoses' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, TargetRetargetPoses) == 0x000170, "Member 'UIKRetargeter::TargetRetargetPoses' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, CurrentSourceRetargetPose) == 0x0001C0, "Member 'UIKRetargeter::CurrentSourceRetargetPose' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, CurrentTargetRetargetPose) == 0x0001CC, "Member 'UIKRetargeter::CurrentTargetRetargetPose' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, RetargetPoses) == 0x0001D8, "Member 'UIKRetargeter::RetargetPoses' has a wrong offset!");
-static_assert(offsetof(UIKRetargeter, CurrentRetargetPose) == 0x000228, "Member 'UIKRetargeter::CurrentRetargetPose' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRetargeter;
 
 // Class IKRig.IKRetargetProcessor
 // 0x0370 (0x03A0 - 0x0030)
@@ -219,16 +219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRetargetProcessor">();
+		STATIC_CLASS_IMPL("IKRetargetProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRetargetProcessor")
 	}
 	static class UIKRetargetProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRetargetProcessor>();
 	}
 };
-static_assert(alignof(UIKRetargetProcessor) == 0x000010, "Wrong alignment on UIKRetargetProcessor");
-static_assert(sizeof(UIKRetargetProcessor) == 0x0003A0, "Wrong size on UIKRetargetProcessor");
-static_assert(offsetof(UIKRetargetProcessor, IKRigProcessor) == 0x000190, "Member 'UIKRetargetProcessor::IKRigProcessor' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRetargetProcessor;
 
 // Class IKRig.IKRigEffectorGoal
 // 0x00E0 (0x0110 - 0x0030)
@@ -245,21 +247,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigEffectorGoal">();
+		STATIC_CLASS_IMPL("IKRigEffectorGoal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigEffectorGoal")
 	}
 	static class UIKRigEffectorGoal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigEffectorGoal>();
 	}
 };
-static_assert(alignof(UIKRigEffectorGoal) == 0x000010, "Wrong alignment on UIKRigEffectorGoal");
-static_assert(sizeof(UIKRigEffectorGoal) == 0x000110, "Wrong size on UIKRigEffectorGoal");
-static_assert(offsetof(UIKRigEffectorGoal, GoalName) == 0x000030, "Member 'UIKRigEffectorGoal::GoalName' has a wrong offset!");
-static_assert(offsetof(UIKRigEffectorGoal, BoneName) == 0x00003C, "Member 'UIKRigEffectorGoal::BoneName' has a wrong offset!");
-static_assert(offsetof(UIKRigEffectorGoal, PositionAlpha) == 0x000048, "Member 'UIKRigEffectorGoal::PositionAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRigEffectorGoal, RotationAlpha) == 0x00004C, "Member 'UIKRigEffectorGoal::RotationAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRigEffectorGoal, CurrentTransform) == 0x000050, "Member 'UIKRigEffectorGoal::CurrentTransform' has a wrong offset!");
-static_assert(offsetof(UIKRigEffectorGoal, InitialTransform) == 0x0000B0, "Member 'UIKRigEffectorGoal::InitialTransform' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRigEffectorGoal;
 
 // Class IKRig.IKRigDefinition
 // 0x00E8 (0x0118 - 0x0030)
@@ -276,20 +275,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigDefinition">();
+		STATIC_CLASS_IMPL("IKRigDefinition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigDefinition")
 	}
 	static class UIKRigDefinition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigDefinition>();
 	}
 };
-static_assert(alignof(UIKRigDefinition) == 0x000008, "Wrong alignment on UIKRigDefinition");
-static_assert(sizeof(UIKRigDefinition) == 0x000118, "Wrong size on UIKRigDefinition");
-static_assert(offsetof(UIKRigDefinition, PreviewSkeletalMesh) == 0x000038, "Member 'UIKRigDefinition::PreviewSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UIKRigDefinition, Skeleton) == 0x000068, "Member 'UIKRigDefinition::Skeleton' has a wrong offset!");
-static_assert(offsetof(UIKRigDefinition, Goals) == 0x0000D8, "Member 'UIKRigDefinition::Goals' has a wrong offset!");
-static_assert(offsetof(UIKRigDefinition, Solvers) == 0x0000E8, "Member 'UIKRigDefinition::Solvers' has a wrong offset!");
-static_assert(offsetof(UIKRigDefinition, RetargetDefinition) == 0x0000F8, "Member 'UIKRigDefinition::RetargetDefinition' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRigDefinition;
 
 // Class IKRig.IKRigProcessor
 // 0x0128 (0x0158 - 0x0030)
@@ -303,16 +300,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigProcessor">();
+		STATIC_CLASS_IMPL("IKRigProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigProcessor")
 	}
 	static class UIKRigProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigProcessor>();
 	}
 };
-static_assert(alignof(UIKRigProcessor) == 0x000008, "Wrong alignment on UIKRigProcessor");
-static_assert(sizeof(UIKRigProcessor) == 0x000158, "Wrong size on UIKRigProcessor");
-static_assert(offsetof(UIKRigProcessor, Solvers) == 0x000070, "Member 'UIKRigProcessor::Solvers' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRigProcessor;
 
 // Class IKRig.IKRigSolver
 // 0x0008 (0x0038 - 0x0030)
@@ -325,16 +324,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigSolver">();
+		STATIC_CLASS_IMPL("IKRigSolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigSolver")
 	}
 	static class UIKRigSolver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigSolver>();
 	}
 };
-static_assert(alignof(UIKRigSolver) == 0x000008, "Wrong alignment on UIKRigSolver");
-static_assert(sizeof(UIKRigSolver) == 0x000038, "Wrong size on UIKRigSolver");
-static_assert(offsetof(UIKRigSolver, bIsEnabled) == 0x000030, "Member 'UIKRigSolver::bIsEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRigSolver;
 
 // Class IKRig.IKRig_BodyMoverEffector
 // 0x0020 (0x0050 - 0x0030)
@@ -349,18 +350,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_BodyMoverEffector">();
+		STATIC_CLASS_IMPL("IKRig_BodyMoverEffector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_BodyMoverEffector")
 	}
 	static class UIKRig_BodyMoverEffector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_BodyMoverEffector>();
 	}
 };
-static_assert(alignof(UIKRig_BodyMoverEffector) == 0x000008, "Wrong alignment on UIKRig_BodyMoverEffector");
-static_assert(sizeof(UIKRig_BodyMoverEffector) == 0x000050, "Wrong size on UIKRig_BodyMoverEffector");
-static_assert(offsetof(UIKRig_BodyMoverEffector, GoalName) == 0x000030, "Member 'UIKRig_BodyMoverEffector::GoalName' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMoverEffector, BoneName) == 0x00003C, "Member 'UIKRig_BodyMoverEffector::BoneName' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMoverEffector, InfluenceMultiplier) == 0x000048, "Member 'UIKRig_BodyMoverEffector::InfluenceMultiplier' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_BodyMoverEffector;
 
 // Class IKRig.IKRig_BodyMover
 // 0x0050 (0x0088 - 0x0038)
@@ -385,28 +386,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_BodyMover">();
+		STATIC_CLASS_IMPL("IKRig_BodyMover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_BodyMover")
 	}
 	static class UIKRig_BodyMover* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_BodyMover>();
 	}
 };
-static_assert(alignof(UIKRig_BodyMover) == 0x000008, "Wrong alignment on UIKRig_BodyMover");
-static_assert(sizeof(UIKRig_BodyMover) == 0x000088, "Wrong size on UIKRig_BodyMover");
-static_assert(offsetof(UIKRig_BodyMover, RootBone) == 0x000038, "Member 'UIKRig_BodyMover::RootBone' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionAlpha) == 0x000044, "Member 'UIKRig_BodyMover::PositionAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionPositiveX) == 0x000048, "Member 'UIKRig_BodyMover::PositionPositiveX' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionNegativeX) == 0x00004C, "Member 'UIKRig_BodyMover::PositionNegativeX' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionPositiveY) == 0x000050, "Member 'UIKRig_BodyMover::PositionPositiveY' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionNegativeY) == 0x000054, "Member 'UIKRig_BodyMover::PositionNegativeY' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionPositiveZ) == 0x000058, "Member 'UIKRig_BodyMover::PositionPositiveZ' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, PositionNegativeZ) == 0x00005C, "Member 'UIKRig_BodyMover::PositionNegativeZ' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, RotationAlpha) == 0x000060, "Member 'UIKRig_BodyMover::RotationAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, RotateXAlpha) == 0x000064, "Member 'UIKRig_BodyMover::RotateXAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, RotateYAlpha) == 0x000068, "Member 'UIKRig_BodyMover::RotateYAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, RotateZAlpha) == 0x00006C, "Member 'UIKRig_BodyMover::RotateZAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_BodyMover, Effectors) == 0x000070, "Member 'UIKRig_BodyMover::Effectors' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_BodyMover;
 
 // Class IKRig.IKRig_LimbEffector
 // 0x0018 (0x0048 - 0x0030)
@@ -419,17 +410,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_LimbEffector">();
+		STATIC_CLASS_IMPL("IKRig_LimbEffector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_LimbEffector")
 	}
 	static class UIKRig_LimbEffector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_LimbEffector>();
 	}
 };
-static_assert(alignof(UIKRig_LimbEffector) == 0x000008, "Wrong alignment on UIKRig_LimbEffector");
-static_assert(sizeof(UIKRig_LimbEffector) == 0x000048, "Wrong size on UIKRig_LimbEffector");
-static_assert(offsetof(UIKRig_LimbEffector, GoalName) == 0x000030, "Member 'UIKRig_LimbEffector::GoalName' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbEffector, BoneName) == 0x00003C, "Member 'UIKRig_LimbEffector::BoneName' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_LimbEffector;
 
 // Class IKRig.IKRig_LimbSolver
 // 0x0060 (0x0098 - 0x0038)
@@ -457,27 +449,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_LimbSolver">();
+		STATIC_CLASS_IMPL("IKRig_LimbSolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_LimbSolver")
 	}
 	static class UIKRig_LimbSolver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_LimbSolver>();
 	}
 };
-static_assert(alignof(UIKRig_LimbSolver) == 0x000008, "Wrong alignment on UIKRig_LimbSolver");
-static_assert(sizeof(UIKRig_LimbSolver) == 0x000098, "Wrong size on UIKRig_LimbSolver");
-static_assert(offsetof(UIKRig_LimbSolver, RootName) == 0x000038, "Member 'UIKRig_LimbSolver::RootName' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, ReachPrecision) == 0x000044, "Member 'UIKRig_LimbSolver::ReachPrecision' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, HingeRotationAxis) == 0x000048, "Member 'UIKRig_LimbSolver::HingeRotationAxis' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, MaxIterations) == 0x00004C, "Member 'UIKRig_LimbSolver::MaxIterations' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, bEnableLimit) == 0x000050, "Member 'UIKRig_LimbSolver::bEnableLimit' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, MinRotationAngle) == 0x000054, "Member 'UIKRig_LimbSolver::MinRotationAngle' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, bAveragePull) == 0x000058, "Member 'UIKRig_LimbSolver::bAveragePull' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, PullDistribution) == 0x00005C, "Member 'UIKRig_LimbSolver::PullDistribution' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, ReachStepAlpha) == 0x000060, "Member 'UIKRig_LimbSolver::ReachStepAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, bEnableTwistCorrection) == 0x000064, "Member 'UIKRig_LimbSolver::bEnableTwistCorrection' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, EndBoneForwardAxis) == 0x000065, "Member 'UIKRig_LimbSolver::EndBoneForwardAxis' has a wrong offset!");
-static_assert(offsetof(UIKRig_LimbSolver, Effector) == 0x000068, "Member 'UIKRig_LimbSolver::Effector' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_LimbSolver;
 
 // Class IKRig.IKRig_FBIKEffector
 // 0x0028 (0x0058 - 0x0030)
@@ -494,21 +477,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_FBIKEffector">();
+		STATIC_CLASS_IMPL("IKRig_FBIKEffector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_FBIKEffector")
 	}
 	static class UIKRig_FBIKEffector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_FBIKEffector>();
 	}
 };
-static_assert(alignof(UIKRig_FBIKEffector) == 0x000008, "Wrong alignment on UIKRig_FBIKEffector");
-static_assert(sizeof(UIKRig_FBIKEffector) == 0x000058, "Wrong size on UIKRig_FBIKEffector");
-static_assert(offsetof(UIKRig_FBIKEffector, GoalName) == 0x000030, "Member 'UIKRig_FBIKEffector::GoalName' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKEffector, BoneName) == 0x00003C, "Member 'UIKRig_FBIKEffector::BoneName' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKEffector, StrengthAlpha) == 0x000048, "Member 'UIKRig_FBIKEffector::StrengthAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKEffector, PullChainAlpha) == 0x00004C, "Member 'UIKRig_FBIKEffector::PullChainAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKEffector, PinRotation) == 0x000050, "Member 'UIKRig_FBIKEffector::PinRotation' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKEffector, IndexInSolver) == 0x000054, "Member 'UIKRig_FBIKEffector::IndexInSolver' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_FBIKEffector;
 
 // Class IKRig.IKRig_FBIKBoneSettings
 // 0x0058 (0x0088 - 0x0030)
@@ -537,29 +517,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_FBIKBoneSettings">();
+		STATIC_CLASS_IMPL("IKRig_FBIKBoneSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_FBIKBoneSettings")
 	}
 	static class UIKRig_FBIKBoneSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_FBIKBoneSettings>();
 	}
 };
-static_assert(alignof(UIKRig_FBIKBoneSettings) == 0x000008, "Wrong alignment on UIKRig_FBIKBoneSettings");
-static_assert(sizeof(UIKRig_FBIKBoneSettings) == 0x000088, "Wrong size on UIKRig_FBIKBoneSettings");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, Bone) == 0x000030, "Member 'UIKRig_FBIKBoneSettings::Bone' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, RotationStiffness) == 0x00003C, "Member 'UIKRig_FBIKBoneSettings::RotationStiffness' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, PositionStiffness) == 0x000040, "Member 'UIKRig_FBIKBoneSettings::PositionStiffness' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, X) == 0x000044, "Member 'UIKRig_FBIKBoneSettings::X' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MinX) == 0x000048, "Member 'UIKRig_FBIKBoneSettings::MinX' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MaxX) == 0x00004C, "Member 'UIKRig_FBIKBoneSettings::MaxX' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, Y) == 0x000050, "Member 'UIKRig_FBIKBoneSettings::Y' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MinY) == 0x000054, "Member 'UIKRig_FBIKBoneSettings::MinY' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MaxY) == 0x000058, "Member 'UIKRig_FBIKBoneSettings::MaxY' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, Z) == 0x00005C, "Member 'UIKRig_FBIKBoneSettings::Z' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MinZ) == 0x000060, "Member 'UIKRig_FBIKBoneSettings::MinZ' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, MaxZ) == 0x000064, "Member 'UIKRig_FBIKBoneSettings::MaxZ' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, bUsePreferredAngles) == 0x000068, "Member 'UIKRig_FBIKBoneSettings::bUsePreferredAngles' has a wrong offset!");
-static_assert(offsetof(UIKRig_FBIKBoneSettings, PreferredAngles) == 0x000070, "Member 'UIKRig_FBIKBoneSettings::PreferredAngles' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_FBIKBoneSettings;
 
 // Class IKRig.IKRigFBIKSolver
 // 0x00D0 (0x0108 - 0x0038)
@@ -585,27 +554,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRigFBIKSolver">();
+		STATIC_CLASS_IMPL("IKRigFBIKSolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRigFBIKSolver")
 	}
 	static class UIKRigFBIKSolver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRigFBIKSolver>();
 	}
 };
-static_assert(alignof(UIKRigFBIKSolver) == 0x000008, "Wrong alignment on UIKRigFBIKSolver");
-static_assert(sizeof(UIKRigFBIKSolver) == 0x000108, "Wrong size on UIKRigFBIKSolver");
-static_assert(offsetof(UIKRigFBIKSolver, RootBone) == 0x000038, "Member 'UIKRigFBIKSolver::RootBone' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, Iterations) == 0x000044, "Member 'UIKRigFBIKSolver::Iterations' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, MassMultiplier) == 0x000048, "Member 'UIKRigFBIKSolver::MassMultiplier' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, bAllowStretch) == 0x00004C, "Member 'UIKRigFBIKSolver::bAllowStretch' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, RootBehavior) == 0x00004D, "Member 'UIKRigFBIKSolver::RootBehavior' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, PrePullRootSettings) == 0x000050, "Member 'UIKRigFBIKSolver::PrePullRootSettings' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, PullChainAlpha) == 0x000070, "Member 'UIKRigFBIKSolver::PullChainAlpha' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, MaxAngle) == 0x000074, "Member 'UIKRigFBIKSolver::MaxAngle' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, OverRelaxation) == 0x000078, "Member 'UIKRigFBIKSolver::OverRelaxation' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, bStartSolveFromInputPose) == 0x00007C, "Member 'UIKRigFBIKSolver::bStartSolveFromInputPose' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, Effectors) == 0x000080, "Member 'UIKRigFBIKSolver::Effectors' has a wrong offset!");
-static_assert(offsetof(UIKRigFBIKSolver, BoneSettings) == 0x000090, "Member 'UIKRigFBIKSolver::BoneSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRigFBIKSolver;
 
 // Class IKRig.IKRig_PoleSolverEffector
 // 0x0020 (0x0050 - 0x0030)
@@ -620,18 +580,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_PoleSolverEffector">();
+		STATIC_CLASS_IMPL("IKRig_PoleSolverEffector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_PoleSolverEffector")
 	}
 	static class UIKRig_PoleSolverEffector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_PoleSolverEffector>();
 	}
 };
-static_assert(alignof(UIKRig_PoleSolverEffector) == 0x000008, "Wrong alignment on UIKRig_PoleSolverEffector");
-static_assert(sizeof(UIKRig_PoleSolverEffector) == 0x000050, "Wrong size on UIKRig_PoleSolverEffector");
-static_assert(offsetof(UIKRig_PoleSolverEffector, GoalName) == 0x000030, "Member 'UIKRig_PoleSolverEffector::GoalName' has a wrong offset!");
-static_assert(offsetof(UIKRig_PoleSolverEffector, BoneName) == 0x00003C, "Member 'UIKRig_PoleSolverEffector::BoneName' has a wrong offset!");
-static_assert(offsetof(UIKRig_PoleSolverEffector, Alpha) == 0x000048, "Member 'UIKRig_PoleSolverEffector::Alpha' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_PoleSolverEffector;
 
 // Class IKRig.IKRig_PoleSolver
 // 0x0040 (0x0078 - 0x0038)
@@ -646,18 +606,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_PoleSolver">();
+		STATIC_CLASS_IMPL("IKRig_PoleSolver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_PoleSolver")
 	}
 	static class UIKRig_PoleSolver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_PoleSolver>();
 	}
 };
-static_assert(alignof(UIKRig_PoleSolver) == 0x000008, "Wrong alignment on UIKRig_PoleSolver");
-static_assert(sizeof(UIKRig_PoleSolver) == 0x000078, "Wrong size on UIKRig_PoleSolver");
-static_assert(offsetof(UIKRig_PoleSolver, RootName) == 0x000038, "Member 'UIKRig_PoleSolver::RootName' has a wrong offset!");
-static_assert(offsetof(UIKRig_PoleSolver, EndName) == 0x000044, "Member 'UIKRig_PoleSolver::EndName' has a wrong offset!");
-static_assert(offsetof(UIKRig_PoleSolver, Effector) == 0x000050, "Member 'UIKRig_PoleSolver::Effector' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_PoleSolver;
 
 // Class IKRig.IKRig_SetTransformEffector
 // 0x0008 (0x0038 - 0x0030)
@@ -672,18 +632,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_SetTransformEffector">();
+		STATIC_CLASS_IMPL("IKRig_SetTransformEffector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_SetTransformEffector")
 	}
 	static class UIKRig_SetTransformEffector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_SetTransformEffector>();
 	}
 };
-static_assert(alignof(UIKRig_SetTransformEffector) == 0x000008, "Wrong alignment on UIKRig_SetTransformEffector");
-static_assert(sizeof(UIKRig_SetTransformEffector) == 0x000038, "Wrong size on UIKRig_SetTransformEffector");
-static_assert(offsetof(UIKRig_SetTransformEffector, bEnablePosition) == 0x000030, "Member 'UIKRig_SetTransformEffector::bEnablePosition' has a wrong offset!");
-static_assert(offsetof(UIKRig_SetTransformEffector, bEnableRotation) == 0x000031, "Member 'UIKRig_SetTransformEffector::bEnableRotation' has a wrong offset!");
-static_assert(offsetof(UIKRig_SetTransformEffector, Alpha) == 0x000034, "Member 'UIKRig_SetTransformEffector::Alpha' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_SetTransformEffector;
 
 // Class IKRig.IKRig_SetTransform
 // 0x0028 (0x0060 - 0x0038)
@@ -698,18 +658,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"IKRig_SetTransform">();
+		STATIC_CLASS_IMPL("IKRig_SetTransform")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IKRig_SetTransform")
 	}
 	static class UIKRig_SetTransform* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIKRig_SetTransform>();
 	}
 };
-static_assert(alignof(UIKRig_SetTransform) == 0x000008, "Wrong alignment on UIKRig_SetTransform");
-static_assert(sizeof(UIKRig_SetTransform) == 0x000060, "Wrong size on UIKRig_SetTransform");
-static_assert(offsetof(UIKRig_SetTransform, Goal) == 0x000038, "Member 'UIKRig_SetTransform::Goal' has a wrong offset!");
-static_assert(offsetof(UIKRig_SetTransform, RootBone) == 0x000044, "Member 'UIKRig_SetTransform::RootBone' has a wrong offset!");
-static_assert(offsetof(UIKRig_SetTransform, Effector) == 0x000050, "Member 'UIKRig_SetTransform::Effector' has a wrong offset!");
+DUMPER7_ASSERTS_UIKRig_SetTransform;
 
 }
 

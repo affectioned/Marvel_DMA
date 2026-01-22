@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass Pywidget_Performance_PreviousReports.Pywidget_Performance_PreviousReports
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPywidget_Performance_PreviousReports final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                ReportItem;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ReportItem;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,34 +34,36 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_Performance_PreviousReports">();
+		STATIC_CLASS_IMPL("Pywidget_Performance_PreviousReports")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_Performance_PreviousReports")
 	}
 	static class UPywidget_Performance_PreviousReports* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPywidget_Performance_PreviousReports>();
 	}
 };
-static_assert(alignof(UPywidget_Performance_PreviousReports) == 0x000008, "Wrong alignment on UPywidget_Performance_PreviousReports");
-static_assert(sizeof(UPywidget_Performance_PreviousReports) == 0x000600, "Wrong size on UPywidget_Performance_PreviousReports");
-static_assert(offsetof(UPywidget_Performance_PreviousReports, ReportItem) == 0x0005F8, "Member 'UPywidget_Performance_PreviousReports::ReportItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPywidget_Performance_PreviousReports;
 
 // PythonClass Pywidget_Performance_PreviousReports.Pywidget_Performance_PreviousReports_Item
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPywidget_Performance_PreviousReports_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Color_Level1;                                      // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Level2;                                      // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Color_Level3;                                      // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Avg_Fps_Level_1;                                   // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Avg_Fps_Level_2;                                   // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Min_Frame_Level_1;                                 // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Min_Frame_Level_2;                                 // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Delay_Level_1;                                     // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Delay_Level_2;                                     // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Loss_Level_1;                                      // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Loss_Level_2;                                      // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Color_Level1;                                      // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Level2;                                      // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Color_Level3;                                      // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Avg_Fps_Level_1;                                   // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Avg_Fps_Level_2;                                   // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Min_Frame_Level_1;                                 // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Min_Frame_Level_2;                                 // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Delay_Level_1;                                     // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Delay_Level_2;                                     // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Loss_Level_1;                                      // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Loss_Level_2;                                      // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -71,26 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_Performance_PreviousReports_Item">();
+		STATIC_CLASS_IMPL("Pywidget_Performance_PreviousReports_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_Performance_PreviousReports_Item")
 	}
 	static class UPywidget_Performance_PreviousReports_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPywidget_Performance_PreviousReports_Item>();
 	}
 };
-static_assert(alignof(UPywidget_Performance_PreviousReports_Item) == 0x000008, "Wrong alignment on UPywidget_Performance_PreviousReports_Item");
-static_assert(sizeof(UPywidget_Performance_PreviousReports_Item) == 0x000618, "Wrong size on UPywidget_Performance_PreviousReports_Item");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Color_Level1) == 0x0005BC, "Member 'UPywidget_Performance_PreviousReports_Item::Color_Level1' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Color_Level2) == 0x0005D0, "Member 'UPywidget_Performance_PreviousReports_Item::Color_Level2' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Color_Level3) == 0x0005E4, "Member 'UPywidget_Performance_PreviousReports_Item::Color_Level3' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Avg_Fps_Level_1) == 0x0005F8, "Member 'UPywidget_Performance_PreviousReports_Item::Avg_Fps_Level_1' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Avg_Fps_Level_2) == 0x0005FC, "Member 'UPywidget_Performance_PreviousReports_Item::Avg_Fps_Level_2' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Min_Frame_Level_1) == 0x000600, "Member 'UPywidget_Performance_PreviousReports_Item::Min_Frame_Level_1' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Min_Frame_Level_2) == 0x000604, "Member 'UPywidget_Performance_PreviousReports_Item::Min_Frame_Level_2' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Delay_Level_1) == 0x000608, "Member 'UPywidget_Performance_PreviousReports_Item::Delay_Level_1' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Delay_Level_2) == 0x00060C, "Member 'UPywidget_Performance_PreviousReports_Item::Delay_Level_2' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Loss_Level_1) == 0x000610, "Member 'UPywidget_Performance_PreviousReports_Item::Loss_Level_1' has a wrong offset!");
-static_assert(offsetof(UPywidget_Performance_PreviousReports_Item, Loss_Level_2) == 0x000614, "Member 'UPywidget_Performance_PreviousReports_Item::Loss_Level_2' has a wrong offset!");
+DUMPER7_ASSERTS_UPywidget_Performance_PreviousReports_Item;
 
 }
 

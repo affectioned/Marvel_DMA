@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyShowAnimInstance_LinkedAnim.PyShowAnimInstance_LinkedAnim
-// 0x0000 (0x0590 - 0x0590)
+// 0x0000 (0x05A0 - 0x05A0)
 class UPyShowAnimInstance_LinkedAnim final : public UPyShowAnimInstanceBase
 {
 public:
@@ -34,6 +34,8 @@ public:
 	void OnPlayTurnAnim();
 	void OnPrePlayEmoteAnim();
 	void OnPlayEmoteAnim(const class FString& ItemID);
+	void OnPrePlaySkinCustomizationAnim();
+	void OnPlaySkinCustomizationAnim(const class FString& ItemID);
 	void OnPlayMVPAnim();
 	void OnPlayLikeAnim();
 	void OnPlayHeroGallerAnim();
@@ -63,6 +65,8 @@ public:
 	void AnimNotify_MVP_End();
 	void AnimNotify_Emote_Play();
 	void AnimNotify_Emote_End();
+	void AnimNotify_SkinCustomization_Play();
+	void AnimNotify_SkinCustomization_End();
 	void AnimNotify_HeroGallery_IdleBegin();
 	void AnimNotify_HeroGallery_IdleEnd();
 	void AnimNotify_HeroGallery_CardPose();
@@ -79,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowAnimInstance_LinkedAnim">();
+		STATIC_CLASS_IMPL("PyShowAnimInstance_LinkedAnim")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowAnimInstance_LinkedAnim")
 	}
 	static class UPyShowAnimInstance_LinkedAnim* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowAnimInstance_LinkedAnim>();
 	}
 };
-static_assert(alignof(UPyShowAnimInstance_LinkedAnim) == 0x000010, "Wrong alignment on UPyShowAnimInstance_LinkedAnim");
-static_assert(sizeof(UPyShowAnimInstance_LinkedAnim) == 0x000590, "Wrong size on UPyShowAnimInstance_LinkedAnim");
+DUMPER7_ASSERTS_UPyShowAnimInstance_LinkedAnim;
 
 }
 

@@ -26,11 +26,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_OnClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_OnClickHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_OnClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkDecorator_OnClickHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_OnClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_OnClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_OnClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkDecorator_OnClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_OnClickHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator.OnRightClickHyperlink
 // 0x0020 (0x0020 - 0x0000)
@@ -42,11 +38,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_OnRightClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_OnRightClickHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_OnRightClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkDecorator_OnRightClickHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_OnRightClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_OnRightClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnRightClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_OnRightClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnRightClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkDecorator_OnRightClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_OnRightClickHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator.OnHoveredHyperlink
 // 0x0018 (0x0018 - 0x0000)
@@ -57,10 +49,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_OnHoveredHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_OnHoveredHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_OnHoveredHyperlink) == 0x000018, "Wrong size on PyHyperlinkDecorator_OnHoveredHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_OnHoveredHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_OnHoveredHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnHoveredHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_OnHoveredHyperlink::Args' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_OnHoveredHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator.OnUnhoveredHyperlink
 // 0x0018 (0x0018 - 0x0000)
@@ -71,10 +60,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_OnUnhoveredHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_OnUnhoveredHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_OnUnhoveredHyperlink) == 0x000018, "Wrong size on PyHyperlinkDecorator_OnUnhoveredHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_OnUnhoveredHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_OnUnhoveredHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_OnUnhoveredHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_OnUnhoveredHyperlink::Args' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_OnUnhoveredHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkImageDecorator.OnClickHyperlink
 // 0x0020 (0x0020 - 0x0000)
@@ -86,11 +72,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkImageDecorator_OnClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkImageDecorator_OnClickHyperlink");
-static_assert(sizeof(PyHyperlinkImageDecorator_OnClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkImageDecorator_OnClickHyperlink");
-static_assert(offsetof(PyHyperlinkImageDecorator_OnClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkImageDecorator_OnClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkImageDecorator_OnClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkImageDecorator_OnClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkImageDecorator_OnClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkImageDecorator_OnClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkImageDecorator_OnClickHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator_HashText.OnClickHyperlink
 // 0x0020 (0x0020 - 0x0000)
@@ -102,11 +84,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_HashText_OnClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_HashText_OnClickHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_HashText_OnClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkDecorator_HashText_OnClickHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_HashText_OnClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_HashText_OnClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkDecorator_HashText_OnClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_HashText_OnClickHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator_HashText.OnRightClickHyperlink
 // 0x0020 (0x0020 - 0x0000)
@@ -118,11 +96,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_HashText_OnRightClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_HashText_OnRightClickHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_HashText_OnRightClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkDecorator_HashText_OnRightClickHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnRightClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_HashText_OnRightClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnRightClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_HashText_OnRightClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnRightClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkDecorator_HashText_OnRightClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_HashText_OnRightClickHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator_HashText.OnHoveredHyperlink
 // 0x0018 (0x0018 - 0x0000)
@@ -133,10 +107,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_HashText_OnHoveredHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_HashText_OnHoveredHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_HashText_OnHoveredHyperlink) == 0x000018, "Wrong size on PyHyperlinkDecorator_HashText_OnHoveredHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnHoveredHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_HashText_OnHoveredHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnHoveredHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_HashText_OnHoveredHyperlink::Args' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_HashText_OnHoveredHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkDecorator_HashText.OnUnhoveredHyperlink
 // 0x0018 (0x0018 - 0x0000)
@@ -147,10 +118,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink");
-static_assert(sizeof(PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink) == 0x000018, "Wrong size on PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink, Args) == 0x000008, "Member 'PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink::Args' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkDecorator_HashText_OnUnhoveredHyperlink;
 
 // PythonFunction PyHyperlinkDecorator.PyHyperlinkImageDecorator_HashText.OnClickHyperlink
 // 0x0020 (0x0020 - 0x0000)
@@ -162,11 +130,7 @@ public:
 	class FString                                 Args;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          UseBrowser;                                        // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHyperlinkImageDecorator_HashText_OnClickHyperlink) == 0x000008, "Wrong alignment on PyHyperlinkImageDecorator_HashText_OnClickHyperlink");
-static_assert(sizeof(PyHyperlinkImageDecorator_HashText_OnClickHyperlink) == 0x000020, "Wrong size on PyHyperlinkImageDecorator_HashText_OnClickHyperlink");
-static_assert(offsetof(PyHyperlinkImageDecorator_HashText_OnClickHyperlink, LinkType) == 0x000000, "Member 'PyHyperlinkImageDecorator_HashText_OnClickHyperlink::LinkType' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkImageDecorator_HashText_OnClickHyperlink, Args) == 0x000008, "Member 'PyHyperlinkImageDecorator_HashText_OnClickHyperlink::Args' has a wrong offset!");
-static_assert(offsetof(PyHyperlinkImageDecorator_HashText_OnClickHyperlink, UseBrowser) == 0x000018, "Member 'PyHyperlinkImageDecorator_HashText_OnClickHyperlink::UseBrowser' has a wrong offset!");
+DUMPER7_ASSERTS_PyHyperlinkImageDecorator_HashText_OnClickHyperlink;
 
 }
 

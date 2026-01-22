@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Task_Center_Base">();
+		STATIC_CLASS_IMPL("PyExtension_Task_Center_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Task_Center_Base")
 	}
 	static class UPyExtension_Task_Center_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Task_Center_Base>();
 	}
 };
-static_assert(alignof(UPyExtension_Task_Center_Base) == 0x000008, "Wrong alignment on UPyExtension_Task_Center_Base");
-static_assert(sizeof(UPyExtension_Task_Center_Base) == 0x000030, "Wrong size on UPyExtension_Task_Center_Base");
+DUMPER7_ASSERTS_UPyExtension_Task_Center_Base;
 
 }
 

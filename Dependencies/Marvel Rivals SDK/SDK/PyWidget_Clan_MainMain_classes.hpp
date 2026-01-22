@@ -17,26 +17,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_MainMain.PyWidget_Clan_MainMain
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Clan_MainMain final : public UPyWidget_ModuleMainPanel
 {
 public:
 	void OnInitialized();
 	void Construct();
+	void MarvelSetVisible(bool Visible);
 	void OnCascadingVisibleChanged(bool bNewVisible);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_MainMain">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_MainMain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_MainMain")
 	}
 	static class UPyWidget_Clan_MainMain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_MainMain>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_MainMain) == 0x000008, "Wrong alignment on UPyWidget_Clan_MainMain");
-static_assert(sizeof(UPyWidget_Clan_MainMain) == 0x0005F8, "Wrong size on UPyWidget_Clan_MainMain");
+DUMPER7_ASSERTS_UPyWidget_Clan_MainMain;
 
 }
 

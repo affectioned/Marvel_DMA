@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DestructionPostProcessActor_C">();
+		BP_STATIC_CLASS_IMPL("BP_DestructionPostProcessActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DestructionPostProcessActor_C")
 	}
 	static class ABP_DestructionPostProcessActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DestructionPostProcessActor_C>();
 	}
 };
-static_assert(alignof(ABP_DestructionPostProcessActor_C) == 0x000010, "Wrong alignment on ABP_DestructionPostProcessActor_C");
-static_assert(sizeof(ABP_DestructionPostProcessActor_C) == 0x000860, "Wrong size on ABP_DestructionPostProcessActor_C");
-static_assert(offsetof(ABP_DestructionPostProcessActor_C, DefaultSceneRoot) == 0x000850, "Member 'ABP_DestructionPostProcessActor_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_DestructionPostProcessActor_C;
 
 }
 

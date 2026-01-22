@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerHighLight_VideoUnit.PyWidget_CareerHighLight_VideoUnit
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_CareerHighLight_VideoUnit final : public UMarvelUserWidget
 {
 public:
-	TArray<struct FGuideTipsStyle>                MenuGuideTipsStyles;                               // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MenuGuideTipsStyles;                               // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHighLight_VideoUnit">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHighLight_VideoUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHighLight_VideoUnit")
 	}
 	static class UPyWidget_CareerHighLight_VideoUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHighLight_VideoUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHighLight_VideoUnit) == 0x000008, "Wrong alignment on UPyWidget_CareerHighLight_VideoUnit");
-static_assert(sizeof(UPyWidget_CareerHighLight_VideoUnit) == 0x000578, "Wrong size on UPyWidget_CareerHighLight_VideoUnit");
-static_assert(offsetof(UPyWidget_CareerHighLight_VideoUnit, MenuGuideTipsStyles) == 0x000568, "Member 'UPyWidget_CareerHighLight_VideoUnit::MenuGuideTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHighLight_VideoUnit;
 
 }
 

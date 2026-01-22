@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_FriendsName">();
+		STATIC_CLASS_IMPL("PyWidget_FriendsName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FriendsName")
 	}
 	static class UPyWidget_FriendsName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_FriendsName>();
 	}
 };
-static_assert(alignof(UPyWidget_FriendsName) == 0x000008, "Wrong alignment on UPyWidget_FriendsName");
-static_assert(sizeof(UPyWidget_FriendsName) == 0x0003E0, "Wrong size on UPyWidget_FriendsName");
-static_assert(offsetof(UPyWidget_FriendsName, DefaultMainNameFontSize) == 0x0003B8, "Member 'UPyWidget_FriendsName::DefaultMainNameFontSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsName, DefaultMainNameColor) == 0x0003BC, "Member 'UPyWidget_FriendsName::DefaultMainNameColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsName, TextAdaptiveHeightLimit) == 0x0003D0, "Member 'UPyWidget_FriendsName::TextAdaptiveHeightLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsName, TextAdaptiveWidthLimit) == 0x0003D4, "Member 'UPyWidget_FriendsName::TextAdaptiveWidthLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_FriendsName, TextAdaptiveMinFontSize) == 0x0003D8, "Member 'UPyWidget_FriendsName::TextAdaptiveMinFontSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_FriendsName;
 
 }
 

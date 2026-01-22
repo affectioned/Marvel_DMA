@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortPartStatistics">();
+		STATIC_CLASS_IMPL("PyEscortPartStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortPartStatistics")
 	}
 	static class UPyEscortPartStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortPartStatistics>();
 	}
 };
-static_assert(alignof(UPyEscortPartStatistics) == 0x000008, "Wrong alignment on UPyEscortPartStatistics");
-static_assert(sizeof(UPyEscortPartStatistics) == 0x000038, "Wrong size on UPyEscortPartStatistics");
+DUMPER7_ASSERTS_UPyEscortPartStatistics;
 
 }
 

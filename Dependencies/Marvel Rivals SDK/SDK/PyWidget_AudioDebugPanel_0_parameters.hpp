@@ -10,31 +10,95 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
+
 
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.GetSoloedString
-// 0x0010 (0x0010 - 0x0000)
-struct PyWidget_AudioDebugPanel_GetSoloedString final
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_AudioEnabled
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_AudioEnabled final
 {
 public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_AudioDebugPanel_GetSoloedString) == 0x000008, "Wrong alignment on PyWidget_AudioDebugPanel_GetSoloedString");
-static_assert(sizeof(PyWidget_AudioDebugPanel_GetSoloedString) == 0x000010, "Wrong size on PyWidget_AudioDebugPanel_GetSoloedString");
-static_assert(offsetof(PyWidget_AudioDebugPanel_GetSoloedString, ReturnValue) == 0x000000, "Member 'PyWidget_AudioDebugPanel_GetSoloedString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_AudioEnabled;
 
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.GetStateString
-// 0x0010 (0x0010 - 0x0000)
-struct PyWidget_AudioDebugPanel_GetStateString final
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Reverb
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_Reverb final
 {
 public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_AudioDebugPanel_GetStateString) == 0x000008, "Wrong alignment on PyWidget_AudioDebugPanel_GetStateString");
-static_assert(sizeof(PyWidget_AudioDebugPanel_GetStateString) == 0x000010, "Wrong size on PyWidget_AudioDebugPanel_GetStateString");
-static_assert(offsetof(PyWidget_AudioDebugPanel_GetStateString, ReturnValue) == 0x000000, "Member 'PyWidget_AudioDebugPanel_GetStateString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_Reverb;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_ThreatValue
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_ThreatValue final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_ThreatValue;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Doppler
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_Doppler final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_Doppler;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Midi
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_Midi final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_Midi;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Spatial
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_Spatial final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_Spatial;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Reflect
+// 0x0018 (0x0018 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetText_Reflect final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetText_Reflect;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.OnAudioTypeEnabledChanged
+// 0x0004 (0x0004 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_OnAudioTypeEnabledChanged final
+{
+public:
+	int32                                         EnableMask;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_OnAudioTypeEnabledChanged;
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetTextOfType
+// 0x0028 (0x0028 - 0x0000)
+struct PyAudioDebugPanel_TriggerDisplay_GetTextOfType final
+{
+public:
+	EMarvelAudioType                              AudioType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Prefix;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAudioDebugPanel_TriggerDisplay_GetTextOfType;
 
 }
 

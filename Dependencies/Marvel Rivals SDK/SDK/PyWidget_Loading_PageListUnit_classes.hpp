@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_PageListUnit.PyWidget_Loading_PageListUnit
-// 0x0018 (0x0740 - 0x0728)
+// 0x0018 (0x0798 - 0x0780)
 class UPyWidget_Loading_PageListUnit final : public UPyWidget_Button
 {
 public:
-	class UMarvelImage*                           Img_Bg_Normal;                                     // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Bg_Selected;                                   // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Normal;                                     // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Bg_Selected;                                   // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,18 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_PageListUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_PageListUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_PageListUnit")
 	}
 	static class UPyWidget_Loading_PageListUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_PageListUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_PageListUnit) == 0x000008, "Wrong alignment on UPyWidget_Loading_PageListUnit");
-static_assert(sizeof(UPyWidget_Loading_PageListUnit) == 0x000740, "Wrong size on UPyWidget_Loading_PageListUnit");
-static_assert(offsetof(UPyWidget_Loading_PageListUnit, Img_Bg_Normal) == 0x000728, "Member 'UPyWidget_Loading_PageListUnit::Img_Bg_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_PageListUnit, Img_Bg_Hover) == 0x000730, "Member 'UPyWidget_Loading_PageListUnit::Img_Bg_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_PageListUnit, Img_Bg_Selected) == 0x000738, "Member 'UPyWidget_Loading_PageListUnit::Img_Bg_Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_PageListUnit;
 
 }
 

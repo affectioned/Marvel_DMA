@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity125_RankListPanel.PyWidget_Activity125_RankListPanel
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0040 (0x0640 - 0x0600)
 class UPyWidget_Activity125_RankListPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            Open_Color;                                        // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Close_Color;                                       // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Intervals;                                         // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                GoToMyActions;                                     // 0x0628(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Open_Color;                                        // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Close_Color;                                       // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Intervals;                                         // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                GoToMyActions;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity125_RankListPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity125_RankListPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity125_RankListPanel")
 	}
 	static class UPyWidget_Activity125_RankListPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity125_RankListPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity125_RankListPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity125_RankListPanel");
-static_assert(sizeof(UPyWidget_Activity125_RankListPanel) == 0x000638, "Wrong size on UPyWidget_Activity125_RankListPanel");
-static_assert(offsetof(UPyWidget_Activity125_RankListPanel, Open_Color) == 0x0005F8, "Member 'UPyWidget_Activity125_RankListPanel::Open_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity125_RankListPanel, Close_Color) == 0x00060C, "Member 'UPyWidget_Activity125_RankListPanel::Close_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity125_RankListPanel, Intervals) == 0x000620, "Member 'UPyWidget_Activity125_RankListPanel::Intervals' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity125_RankListPanel, GoToMyActions) == 0x000628, "Member 'UPyWidget_Activity125_RankListPanel::GoToMyActions' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity125_RankListPanel;
 
 }
 

@@ -70,36 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRuneControl">();
+		STATIC_CLASS_IMPL("PyRuneControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRuneControl")
 	}
 	static class APyRuneControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyRuneControl>();
 	}
 };
-static_assert(alignof(APyRuneControl) == 0x000010, "Wrong alignment on APyRuneControl");
-static_assert(sizeof(APyRuneControl) == 0x000800, "Wrong size on APyRuneControl");
-static_assert(offsetof(APyRuneControl, RuneBlinkColor) == 0x0006E0, "Member 'APyRuneControl::RuneBlinkColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneAttackColor) == 0x0006F0, "Member 'APyRuneControl::RuneAttackColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneDefenseColor) == 0x000700, "Member 'APyRuneControl::RuneDefenseColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneDefaultColor) == 0x000710, "Member 'APyRuneControl::RuneDefaultColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneBlinkCurve) == 0x000720, "Member 'APyRuneControl::RuneBlinkCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneBlinkSaturationCurve) == 0x000728, "Member 'APyRuneControl::RuneBlinkSaturationCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneValueCurve) == 0x000730, "Member 'APyRuneControl::RuneValueCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, RuneSaturationCurve) == 0x000738, "Member 'APyRuneControl::RuneSaturationCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ContrlDefaultColor) == 0x000740, "Member 'APyRuneControl::ContrlDefaultColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ContrlBlinkValueCurve) == 0x000750, "Member 'APyRuneControl::ContrlBlinkValueCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ContrlBlinkSaturationCurve) == 0x000758, "Member 'APyRuneControl::ContrlBlinkSaturationCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ContrlValueCurve) == 0x000760, "Member 'APyRuneControl::ContrlValueCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ContrlSaturationCurve) == 0x000768, "Member 'APyRuneControl::ContrlSaturationCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, DissolveCurve) == 0x000770, "Member 'APyRuneControl::DissolveCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, StrengthCurve) == 0x000778, "Member 'APyRuneControl::StrengthCurve' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ControlLevels) == 0x000780, "Member 'APyRuneControl::ControlLevels' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ProcTime) == 0x0007D0, "Member 'APyRuneControl::ProcTime' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ProcColor) == 0x0007D4, "Member 'APyRuneControl::ProcColor' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, ProcProgress) == 0x0007D8, "Member 'APyRuneControl::ProcProgress' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, StatueColors) == 0x0007E0, "Member 'APyRuneControl::StatueColors' has a wrong offset!");
-static_assert(offsetof(APyRuneControl, StatueState) == 0x0007F0, "Member 'APyRuneControl::StatueState' has a wrong offset!");
+DUMPER7_ASSERTS_APyRuneControl;
 
 }
 

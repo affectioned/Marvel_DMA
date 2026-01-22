@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_103311_BP.Weapon_103311_BP_C
-// 0x0000 (0x0CD0 - 0x0CD0)
+// 0x0000 (0x0CE0 - 0x0CE0)
 class AWeapon_103311_BP_C final : public APyShootingWeapon_103311
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_103311_BP_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_103311_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_103311_BP_C")
 	}
 	static class AWeapon_103311_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_103311_BP_C>();
 	}
 };
-static_assert(alignof(AWeapon_103311_BP_C) == 0x000010, "Wrong alignment on AWeapon_103311_BP_C");
-static_assert(sizeof(AWeapon_103311_BP_C) == 0x000CD0, "Wrong size on AWeapon_103311_BP_C");
+DUMPER7_ASSERTS_AWeapon_103311_BP_C;
 
 }
 

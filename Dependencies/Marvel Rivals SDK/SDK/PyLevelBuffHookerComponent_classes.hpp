@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelBuffHookerComponent">();
+		STATIC_CLASS_IMPL("PyLevelBuffHookerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelBuffHookerComponent")
 	}
 	static class UPyLevelBuffHookerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelBuffHookerComponent>();
 	}
 };
-static_assert(alignof(UPyLevelBuffHookerComponent) == 0x000008, "Wrong alignment on UPyLevelBuffHookerComponent");
-static_assert(sizeof(UPyLevelBuffHookerComponent) == 0x000180, "Wrong size on UPyLevelBuffHookerComponent");
-static_assert(offsetof(UPyLevelBuffHookerComponent, BuffListToAdd) == 0x000108, "Member 'UPyLevelBuffHookerComponent::BuffListToAdd' has a wrong offset!");
-static_assert(offsetof(UPyLevelBuffHookerComponent, BuffTimeListToAdd) == 0x000118, "Member 'UPyLevelBuffHookerComponent::BuffTimeListToAdd' has a wrong offset!");
-static_assert(offsetof(UPyLevelBuffHookerComponent, BuffListToRemove) == 0x000168, "Member 'UPyLevelBuffHookerComponent::BuffListToRemove' has a wrong offset!");
-static_assert(offsetof(UPyLevelBuffHookerComponent, Enabled) == 0x000178, "Member 'UPyLevelBuffHookerComponent::Enabled' has a wrong offset!");
-static_assert(offsetof(UPyLevelBuffHookerComponent, bExecuteOncePerFrame) == 0x000179, "Member 'UPyLevelBuffHookerComponent::bExecuteOncePerFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelBuffHookerComponent;
 
 // PythonClass PyLevelBuffHookerComponent.PyLevelBuffHookerComponent_SB2Flyer
 // 0x0000 (0x0180 - 0x0180)
@@ -62,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelBuffHookerComponent_SB2Flyer">();
+		STATIC_CLASS_IMPL("PyLevelBuffHookerComponent_SB2Flyer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelBuffHookerComponent_SB2Flyer")
 	}
 	static class UPyLevelBuffHookerComponent_SB2Flyer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelBuffHookerComponent_SB2Flyer>();
 	}
 };
-static_assert(alignof(UPyLevelBuffHookerComponent_SB2Flyer) == 0x000008, "Wrong alignment on UPyLevelBuffHookerComponent_SB2Flyer");
-static_assert(sizeof(UPyLevelBuffHookerComponent_SB2Flyer) == 0x000180, "Wrong size on UPyLevelBuffHookerComponent_SB2Flyer");
+DUMPER7_ASSERTS_UPyLevelBuffHookerComponent_SB2Flyer;
 
 }
 

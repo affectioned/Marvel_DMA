@@ -40,18 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAlarmAudio">();
+		STATIC_CLASS_IMPL("PyAlarmAudio")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAlarmAudio")
 	}
 	static class APyAlarmAudio* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAlarmAudio>();
 	}
 };
-static_assert(alignof(APyAlarmAudio) == 0x000010, "Wrong alignment on APyAlarmAudio");
-static_assert(sizeof(APyAlarmAudio) == 0x0006F0, "Wrong size on APyAlarmAudio");
-static_assert(offsetof(APyAlarmAudio, IsAutoPlay) == 0x0006E0, "Member 'APyAlarmAudio::IsAutoPlay' has a wrong offset!");
-static_assert(offsetof(APyAlarmAudio, Countdown) == 0x0006E4, "Member 'APyAlarmAudio::Countdown' has a wrong offset!");
-static_assert(offsetof(APyAlarmAudio, AudioEvent) == 0x0006E8, "Member 'APyAlarmAudio::AudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyAlarmAudio;
 
 }
 

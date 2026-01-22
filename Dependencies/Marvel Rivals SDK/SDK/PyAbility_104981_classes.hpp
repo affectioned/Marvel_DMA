@@ -10,74 +10,63 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1049_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Hero_1049_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104981.PyConfig_104981
-// 0x3208 (0x32A0 - 0x0098)
+// 0x3B98 (0x3C30 - 0x0098)
 class UPyConfig_104981 final : public UMarvelAbilityConfig
 {
 public:
 	float                                         JumpVelocity;                                      // 0x0098(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       RaiseDashInfo;                                     // 0x00A0(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         HoverBuffID;                                       // 0x0C68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C6C[0x4];                                      // 0x0C6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 BuffIDs;                                           // 0x0C70(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       TraceParam;                                        // 0x0C80(0x16B0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           TraceCueTag;                                       // 0x2330(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233C[0x4];                                     // 0x233C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x2340(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         DashScopeID;                                       // 0x2F08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DashDamageScopeID;                                 // 0x2F0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GrabBuffID;                                        // 0x2F10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GrabBuffID_CollideKnockDown;                       // 0x2F14(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           GrabCollideTag;                                    // 0x2F18(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F24[0x4];                                     // 0x2F24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagRequirements               CollideKnockTagRequire;                            // 0x2F28(0x0118)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FMarvelApplyPinnedMotionConfig         PinnedConfig;                                      // 0x3040(0x0260)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       RaiseDashInfo;                                     // 0x00A0(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         HoverBuffID;                                       // 0x0F88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F8C[0x4];                                      // 0x0F8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 BuffIDs;                                           // 0x0F90(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       TraceParam;                                        // 0x0FA0(0x1A00)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           TraceCueTag;                                       // 0x29A0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29AC[0x4];                                     // 0x29AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x29B0(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         DashScopeID;                                       // 0x3898(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DashDamageScopeID;                                 // 0x389C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GrabBuffID;                                        // 0x38A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GrabBuffID_CollideKnockDown;                       // 0x38A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           GrabCollideTag;                                    // 0x38A8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38B4[0x4];                                     // 0x38B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagRequirements               CollideKnockTagRequire;                            // 0x38B8(0x0118)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelApplyPinnedMotionConfig         PinnedConfig;                                      // 0x39D0(0x0260)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104981">();
+		STATIC_CLASS_IMPL("PyConfig_104981")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104981")
 	}
 	static class UPyConfig_104981* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104981>();
 	}
 };
-static_assert(alignof(UPyConfig_104981) == 0x000010, "Wrong alignment on UPyConfig_104981");
-static_assert(sizeof(UPyConfig_104981) == 0x0032A0, "Wrong size on UPyConfig_104981");
-static_assert(offsetof(UPyConfig_104981, JumpVelocity) == 0x000098, "Member 'UPyConfig_104981::JumpVelocity' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, RaiseDashInfo) == 0x0000A0, "Member 'UPyConfig_104981::RaiseDashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, HoverBuffID) == 0x000C68, "Member 'UPyConfig_104981::HoverBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, BuffIDs) == 0x000C70, "Member 'UPyConfig_104981::BuffIDs' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, TraceParam) == 0x000C80, "Member 'UPyConfig_104981::TraceParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, TraceCueTag) == 0x002330, "Member 'UPyConfig_104981::TraceCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, DashInfo) == 0x002340, "Member 'UPyConfig_104981::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, DashScopeID) == 0x002F08, "Member 'UPyConfig_104981::DashScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, DashDamageScopeID) == 0x002F0C, "Member 'UPyConfig_104981::DashDamageScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, GrabBuffID) == 0x002F10, "Member 'UPyConfig_104981::GrabBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, GrabBuffID_CollideKnockDown) == 0x002F14, "Member 'UPyConfig_104981::GrabBuffID_CollideKnockDown' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, GrabCollideTag) == 0x002F18, "Member 'UPyConfig_104981::GrabCollideTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, CollideKnockTagRequire) == 0x002F28, "Member 'UPyConfig_104981::CollideKnockTagRequire' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104981, PinnedConfig) == 0x003040, "Member 'UPyConfig_104981::PinnedConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104981;
 
 // PythonClass PyAbility_104981.PyAbility_104981
-// 0x0020 (0x2A28 - 0x2A08)
+// 0x0020 (0x2A90 - 0x2A70)
 class UPyAbility_104981 : public UAbility_104981
 {
 public:
-	TMulticastInlineDelegate<void()>              OnPawnFloatStart;                                  // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPawnFloatEnd;                                    // 0x2A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPawnFloatStart;                                  // 0x2A70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPawnFloatEnd;                                    // 0x2A80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -97,38 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104981">();
+		STATIC_CLASS_IMPL("PyAbility_104981")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104981")
 	}
 	static class UPyAbility_104981* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104981>();
 	}
 };
-static_assert(alignof(UPyAbility_104981) == 0x000008, "Wrong alignment on UPyAbility_104981");
-static_assert(sizeof(UPyAbility_104981) == 0x002A28, "Wrong size on UPyAbility_104981");
-static_assert(offsetof(UPyAbility_104981, OnPawnFloatStart) == 0x002A08, "Member 'UPyAbility_104981::OnPawnFloatStart' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104981, OnPawnFloatEnd) == 0x002A18, "Member 'UPyAbility_104981::OnPawnFloatEnd' has a wrong offset!");
-
-// PythonClass PyAbility_104981.PyAbility_AirGrab_104981
-// 0x0000 (0x13E0 - 0x13E0)
-class UPyAbility_AirGrab_104981 final : public UAbility_AirGrab
-{
-public:
-	void OnActiveAbility();
-	bool K2_ShouldSkipInstigatorHit(class AActor* SelfActor, const struct FHitResult& InHit);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyAbility_AirGrab_104981">();
-	}
-	static class UPyAbility_AirGrab_104981* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyAbility_AirGrab_104981>();
-	}
-};
-static_assert(alignof(UPyAbility_AirGrab_104981) == 0x000008, "Wrong alignment on UPyAbility_AirGrab_104981");
-static_assert(sizeof(UPyAbility_AirGrab_104981) == 0x0013E0, "Wrong size on UPyAbility_AirGrab_104981");
+DUMPER7_ASSERTS_UPyAbility_104981;
 
 }
 

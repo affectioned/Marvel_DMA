@@ -21,9 +21,7 @@ struct PyLevelNodeEffectComponent_OnViewingTargetChanged final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeEffectComponent_OnViewingTargetChanged) == 0x000008, "Wrong alignment on PyLevelNodeEffectComponent_OnViewingTargetChanged");
-static_assert(sizeof(PyLevelNodeEffectComponent_OnViewingTargetChanged) == 0x000008, "Wrong size on PyLevelNodeEffectComponent_OnViewingTargetChanged");
-static_assert(offsetof(PyLevelNodeEffectComponent_OnViewingTargetChanged, InActor) == 0x000000, "Member 'PyLevelNodeEffectComponent_OnViewingTargetChanged::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeEffectComponent_OnViewingTargetChanged;
 
 // PythonFunction PyLevelNodeEffectComponent.PyLevelNodeEffectComponent.SetViewingCharacter
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyLevelNodeEffectComponent_SetViewingCharacter final
 public:
 	class AMarvelBaseCharacter*                   ViewingCharacter;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeEffectComponent_SetViewingCharacter) == 0x000008, "Wrong alignment on PyLevelNodeEffectComponent_SetViewingCharacter");
-static_assert(sizeof(PyLevelNodeEffectComponent_SetViewingCharacter) == 0x000008, "Wrong size on PyLevelNodeEffectComponent_SetViewingCharacter");
-static_assert(offsetof(PyLevelNodeEffectComponent_SetViewingCharacter, ViewingCharacter) == 0x000000, "Member 'PyLevelNodeEffectComponent_SetViewingCharacter::ViewingCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeEffectComponent_SetViewingCharacter;
 
 }
 

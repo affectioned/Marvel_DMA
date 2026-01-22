@@ -18,37 +18,36 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LMSF_PickMap.PyWidget_LMSF_PickMap
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_LMSF_PickMap final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_CustomLeague_MapCard> MapCardClass;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UStyle_LeagueRoomGroupInfo> GroupColor_PlayerCamp;                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UStyle_LeagueRoomGroupInfo> GroupColor_EnemyCamp;                              // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectionFrameColor_PlayerCamp;                    // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectionFrameColor_EnemyCamp;                     // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_CustomLeague_MapCard> MapCardClass;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UStyle_LeagueRoomGroupInfo> GroupColor_PlayerCamp;                             // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UStyle_LeagueRoomGroupInfo> GroupColor_EnemyCamp;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectionFrameColor_PlayerCamp;                    // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectionFrameColor_EnemyCamp;                     // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LMSF_PickMap">();
+		STATIC_CLASS_IMPL("PyWidget_LMSF_PickMap")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LMSF_PickMap")
 	}
 	static class UPyWidget_LMSF_PickMap* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LMSF_PickMap>();
 	}
 };
-static_assert(alignof(UPyWidget_LMSF_PickMap) == 0x000008, "Wrong alignment on UPyWidget_LMSF_PickMap");
-static_assert(sizeof(UPyWidget_LMSF_PickMap) == 0x000600, "Wrong size on UPyWidget_LMSF_PickMap");
-static_assert(offsetof(UPyWidget_LMSF_PickMap, MapCardClass) == 0x0005C0, "Member 'UPyWidget_LMSF_PickMap::MapCardClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_PickMap, GroupColor_PlayerCamp) == 0x0005C8, "Member 'UPyWidget_LMSF_PickMap::GroupColor_PlayerCamp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_PickMap, GroupColor_EnemyCamp) == 0x0005D0, "Member 'UPyWidget_LMSF_PickMap::GroupColor_EnemyCamp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_PickMap, SelectionFrameColor_PlayerCamp) == 0x0005D8, "Member 'UPyWidget_LMSF_PickMap::SelectionFrameColor_PlayerCamp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_PickMap, SelectionFrameColor_EnemyCamp) == 0x0005EC, "Member 'UPyWidget_LMSF_PickMap::SelectionFrameColor_EnemyCamp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LMSF_PickMap;
 
 }
 

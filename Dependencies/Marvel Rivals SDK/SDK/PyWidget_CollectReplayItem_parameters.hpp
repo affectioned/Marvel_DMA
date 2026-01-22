@@ -21,9 +21,7 @@ struct PyWidget_CollectReplayItem_SetInfoDict final
 public:
 	class UObject*                                info;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CollectReplayItem_SetInfoDict) == 0x000008, "Wrong alignment on PyWidget_CollectReplayItem_SetInfoDict");
-static_assert(sizeof(PyWidget_CollectReplayItem_SetInfoDict) == 0x000008, "Wrong size on PyWidget_CollectReplayItem_SetInfoDict");
-static_assert(offsetof(PyWidget_CollectReplayItem_SetInfoDict, info) == 0x000000, "Member 'PyWidget_CollectReplayItem_SetInfoDict::info' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CollectReplayItem_SetInfoDict;
 
 }
 

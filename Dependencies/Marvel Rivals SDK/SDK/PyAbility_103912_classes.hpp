@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103912.PyAbility_103912
-// 0x0010 (0x2A08 - 0x29F8)
+// 0x0010 (0x2A58 - 0x2A48)
 class UPyAbility_103912 : public UAbility_108
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* Projectile)> OnProjectileSpawned;                    // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Projectile)> OnProjectileSpawned;                    // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -32,26 +32,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103912">();
+		STATIC_CLASS_IMPL("PyAbility_103912")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103912")
 	}
 	static class UPyAbility_103912* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103912>();
 	}
 };
-static_assert(alignof(UPyAbility_103912) == 0x000008, "Wrong alignment on UPyAbility_103912");
-static_assert(sizeof(UPyAbility_103912) == 0x002A08, "Wrong size on UPyAbility_103912");
-static_assert(offsetof(UPyAbility_103912, OnProjectileSpawned) == 0x0029F8, "Member 'UPyAbility_103912::OnProjectileSpawned' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103912;
 
 // PythonClass PyAbility_103912.PyCue_Projectile_Loop_10391201
-// 0x0020 (0x1150 - 0x1130)
+// 0x0020 (0x1160 - 0x1140)
 class APyCue_Projectile_Loop_10391201 final : public AMarvelCueNotify_Projectile
 {
 public:
-	uint8                                         Pad_1128[0x8];                                     // 0x1128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UCurveVector*>                   CurveRotators;                                     // 0x1130(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            CurveRotateSpeed;                                  // 0x1140(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RotateDirection;                                   // 0x1148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1138[0x8];                                     // 0x1138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UCurveVector*>                   CurveRotators;                                     // 0x1140(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            CurveRotateSpeed;                                  // 0x1150(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RotateDirection;                                   // 0x1158(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -61,26 +63,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10391201">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10391201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10391201")
 	}
 	static class APyCue_Projectile_Loop_10391201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10391201>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10391201) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10391201");
-static_assert(sizeof(APyCue_Projectile_Loop_10391201) == 0x001150, "Wrong size on APyCue_Projectile_Loop_10391201");
-static_assert(offsetof(APyCue_Projectile_Loop_10391201, CurveRotators) == 0x001130, "Member 'APyCue_Projectile_Loop_10391201::CurveRotators' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10391201, CurveRotateSpeed) == 0x001140, "Member 'APyCue_Projectile_Loop_10391201::CurveRotateSpeed' has a wrong offset!");
-static_assert(offsetof(APyCue_Projectile_Loop_10391201, RotateDirection) == 0x001148, "Member 'APyCue_Projectile_Loop_10391201::RotateDirection' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10391201;
 
 // PythonClass PyAbility_103912.PyCue_Projectile_HitImpact_10391201
-// 0x0018 (0x05E0 - 0x05C8)
+// 0x0018 (0x0600 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10391201 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	TArray<class UCurveVector*>                   CurveRotators;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         ComboAbilityID;                                    // 0x05D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UCurveVector*>                   CurveRotators;                                     // 0x05E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         ComboAbilityID;                                    // 0x05F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	const struct FRotator ComputeDecalRotation(class AActor* InInstigator, class AActor* InCauser, const struct FHitResult& HitResult) const;
@@ -88,17 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10391201">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10391201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10391201")
 	}
 	static class UPyCue_Projectile_HitImpact_10391201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10391201>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10391201) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10391201");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10391201) == 0x0005E0, "Wrong size on UPyCue_Projectile_HitImpact_10391201");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10391201, CurveRotators) == 0x0005C8, "Member 'UPyCue_Projectile_HitImpact_10391201::CurveRotators' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10391201, ComboAbilityID) == 0x0005D8, "Member 'UPyCue_Projectile_HitImpact_10391201::ComboAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10391201;
 
 }
 

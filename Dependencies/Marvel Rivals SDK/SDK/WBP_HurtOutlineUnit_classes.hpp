@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_HurtOutlineUnit.WBP_HurtOutlineUnit_C
-// 0x0020 (0x0588 - 0x0568)
+// 0x0020 (0x0590 - 0x0570)
 class UWBP_HurtOutlineUnit_C final : public UPyWidget_HurtOutline
 {
 public:
-	class UWidgetAnimation*                       Anim_Schedule;                                     // 0x0568(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Mat_Dying;                                         // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Mat_Dying_Add;                                     // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Mat_Dying_Add1;                                    // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Schedule;                                     // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Mat_Dying;                                         // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Mat_Dying_Add;                                     // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Mat_Dying_Add1;                                    // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_HurtOutlineUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_HurtOutlineUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_HurtOutlineUnit_C")
 	}
 	static class UWBP_HurtOutlineUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_HurtOutlineUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_HurtOutlineUnit_C) == 0x000008, "Wrong alignment on UWBP_HurtOutlineUnit_C");
-static_assert(sizeof(UWBP_HurtOutlineUnit_C) == 0x000588, "Wrong size on UWBP_HurtOutlineUnit_C");
-static_assert(offsetof(UWBP_HurtOutlineUnit_C, Anim_Schedule) == 0x000568, "Member 'UWBP_HurtOutlineUnit_C::Anim_Schedule' has a wrong offset!");
-static_assert(offsetof(UWBP_HurtOutlineUnit_C, Mat_Dying) == 0x000570, "Member 'UWBP_HurtOutlineUnit_C::Mat_Dying' has a wrong offset!");
-static_assert(offsetof(UWBP_HurtOutlineUnit_C, Mat_Dying_Add) == 0x000578, "Member 'UWBP_HurtOutlineUnit_C::Mat_Dying_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_HurtOutlineUnit_C, Mat_Dying_Add1) == 0x000580, "Member 'UWBP_HurtOutlineUnit_C::Mat_Dying_Add1' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_HurtOutlineUnit_C;
 
 }
 

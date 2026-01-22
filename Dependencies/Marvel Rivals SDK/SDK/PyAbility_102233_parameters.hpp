@@ -25,10 +25,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0000(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	int32                                         ReturnValue;                                       // 0x01D0(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10223301_GetComboIndex) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10223301_GetComboIndex");
-static_assert(sizeof(PyCue_Scope_HitImpact_10223301_GetComboIndex) == 0x0001D8, "Wrong size on PyCue_Scope_HitImpact_10223301_GetComboIndex");
-static_assert(offsetof(PyCue_Scope_HitImpact_10223301_GetComboIndex, Parameters) == 0x000000, "Member 'PyCue_Scope_HitImpact_10223301_GetComboIndex::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10223301_GetComboIndex, ReturnValue) == 0x0001D0, "Member 'PyCue_Scope_HitImpact_10223301_GetComboIndex::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10223301_GetComboIndex;
 
 // PythonFunction PyAbility_102233.PyAbility_102233.OnAbilityHit
 // 0x0018 (0x0018 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_102233_OnAbilityHit) == 0x000008, "Wrong alignment on PyAbility_102233_OnAbilityHit");
-static_assert(sizeof(PyAbility_102233_OnAbilityHit) == 0x000018, "Wrong size on PyAbility_102233_OnAbilityHit");
-static_assert(offsetof(PyAbility_102233_OnAbilityHit, Ability) == 0x000000, "Member 'PyAbility_102233_OnAbilityHit::Ability' has a wrong offset!");
-static_assert(offsetof(PyAbility_102233_OnAbilityHit, HitResults) == 0x000008, "Member 'PyAbility_102233_OnAbilityHit::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102233_OnAbilityHit;
 
 // PythonFunction PyAbility_102233.PyAbility_102233.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -50,9 +44,7 @@ struct PyAbility_102233_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102233_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_102233_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_102233_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_102233_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_102233_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_102233_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102233_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_102233.PyAbility_102233.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -61,9 +53,7 @@ struct PyAbility_102233_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102233_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_102233_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_102233_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_102233_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_102233_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_102233_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102233_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_102233.PyAbility_102233.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -72,9 +62,7 @@ struct PyAbility_102233_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102233_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_102233_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_102233_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_102233_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_102233_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_102233_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102233_NativeOnMontageCancelled;
 
 }
 

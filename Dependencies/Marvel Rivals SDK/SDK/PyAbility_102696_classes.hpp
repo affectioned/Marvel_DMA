@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102696.PySummonedComp_10269601
-// 0x0000 (0x0E30 - 0x0E30)
+// 0x0000 (0x0E88 - 0x0E88)
 class UPySummonedComp_10269601 final : public USummonedComp_10269601
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10269601">();
+		STATIC_CLASS_IMPL("PySummonedComp_10269601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10269601")
 	}
 	static class UPySummonedComp_10269601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10269601>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10269601) == 0x000008, "Wrong alignment on UPySummonedComp_10269601");
-static_assert(sizeof(UPySummonedComp_10269601) == 0x000E30, "Wrong size on UPySummonedComp_10269601");
+DUMPER7_ASSERTS_UPySummonedComp_10269601;
 
 // PythonClass PyAbility_102696.PyConfig_102696
 // 0x0010 (0x00A8 - 0x0098)
@@ -49,21 +52,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102696">();
+		STATIC_CLASS_IMPL("PyConfig_102696")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102696")
 	}
 	static class UPyConfig_102696* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102696>();
 	}
 };
-static_assert(alignof(UPyConfig_102696) == 0x000008, "Wrong alignment on UPyConfig_102696");
-static_assert(sizeof(UPyConfig_102696) == 0x0000A8, "Wrong size on UPyConfig_102696");
-static_assert(offsetof(UPyConfig_102696, HealthThreshold) == 0x000098, "Member 'UPyConfig_102696::HealthThreshold' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102696, SummonID) == 0x00009C, "Member 'UPyConfig_102696::SummonID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102696, ShieldBuffID) == 0x0000A0, "Member 'UPyConfig_102696::ShieldBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102696;
 
 // PythonClass PyAbility_102696.PyAbility_102696
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102696 : public UMarvelGameplayAbility
 {
 public:
@@ -75,15 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102696">();
+		STATIC_CLASS_IMPL("PyAbility_102696")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102696")
 	}
 	static class UPyAbility_102696* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102696>();
 	}
 };
-static_assert(alignof(UPyAbility_102696) == 0x000008, "Wrong alignment on UPyAbility_102696");
-static_assert(sizeof(UPyAbility_102696) == 0x0029F0, "Wrong size on UPyAbility_102696");
+DUMPER7_ASSERTS_UPyAbility_102696;
 
 }
 

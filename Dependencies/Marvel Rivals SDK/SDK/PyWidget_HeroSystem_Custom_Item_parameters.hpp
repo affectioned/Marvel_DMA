@@ -21,9 +21,7 @@ struct PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Custom_Item_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_HeroSystem_Custom_Item.PyWidget_HeroSystem_Custom_Item.SetItemObject
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_HeroSystem_Custom_Item_SetItemObject final
 public:
 	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Custom_Item_SetItemObject) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Custom_Item_SetItemObject");
-static_assert(sizeof(PyWidget_HeroSystem_Custom_Item_SetItemObject) == 0x000008, "Wrong size on PyWidget_HeroSystem_Custom_Item_SetItemObject");
-static_assert(offsetof(PyWidget_HeroSystem_Custom_Item_SetItemObject, ItemObject) == 0x000000, "Member 'PyWidget_HeroSystem_Custom_Item_SetItemObject::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Custom_Item_SetItemObject;
 
 }
 

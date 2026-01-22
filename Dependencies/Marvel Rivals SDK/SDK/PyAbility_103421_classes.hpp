@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103421.PyCue_Ability_Loop_10342101
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2F70 - 0x2F60)
 class APyCue_Ability_Loop_10342101 final : public ACue_Ability_Loop_10342101
 {
 public:
-	uint8                                         Pad_29E8[0x8];                                     // 0x29E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         CustomRemoveFX;                                    // 0x29F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2F58[0x8];                                     // 0x2F58(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFXSystemAsset*                         CustomRemoveFX;                                    // 0x2F60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10342101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10342101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10342101")
 	}
 	static class APyCue_Ability_Loop_10342101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10342101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10342101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10342101");
-static_assert(sizeof(APyCue_Ability_Loop_10342101) == 0x002A00, "Wrong size on APyCue_Ability_Loop_10342101");
-static_assert(offsetof(APyCue_Ability_Loop_10342101, CustomRemoveFX) == 0x0029F0, "Member 'APyCue_Ability_Loop_10342101::CustomRemoveFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10342101;
 
 }
 

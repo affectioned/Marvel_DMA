@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeSettings">();
+		STATIC_CLASS_IMPL("StateTreeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeSettings")
 	}
 	static class UStateTreeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeSettings>();
 	}
 };
-static_assert(alignof(UStateTreeSettings) == 0x000008, "Wrong alignment on UStateTreeSettings");
-static_assert(sizeof(UStateTreeSettings) == 0x000050, "Wrong size on UStateTreeSettings");
-static_assert(offsetof(UStateTreeSettings, bAutoStartDebuggerTracesOnNonEditorTargets) == 0x000048, "Member 'UStateTreeSettings::bAutoStartDebuggerTracesOnNonEditorTargets' has a wrong offset!");
+DUMPER7_ASSERTS_UStateTreeSettings;
 
 // Class StateTreeModule.StateTreeNodeBlueprintBase
 // 0x0018 (0x0048 - 0x0030)
@@ -57,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeNodeBlueprintBase">();
+		STATIC_CLASS_IMPL("StateTreeNodeBlueprintBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeNodeBlueprintBase")
 	}
 	static class UStateTreeNodeBlueprintBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeNodeBlueprintBase>();
 	}
 };
-static_assert(alignof(UStateTreeNodeBlueprintBase) == 0x000008, "Wrong alignment on UStateTreeNodeBlueprintBase");
-static_assert(sizeof(UStateTreeNodeBlueprintBase) == 0x000048, "Wrong size on UStateTreeNodeBlueprintBase");
-static_assert(offsetof(UStateTreeNodeBlueprintBase, CachedOwner) == 0x000040, "Member 'UStateTreeNodeBlueprintBase::CachedOwner' has a wrong offset!");
+DUMPER7_ASSERTS_UStateTreeNodeBlueprintBase;
 
 // Class StateTreeModule.StateTreeConditionBlueprintBase
 // 0x0008 (0x0050 - 0x0048)
@@ -81,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeConditionBlueprintBase">();
+		STATIC_CLASS_IMPL("StateTreeConditionBlueprintBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeConditionBlueprintBase")
 	}
 	static class UStateTreeConditionBlueprintBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeConditionBlueprintBase>();
 	}
 };
-static_assert(alignof(UStateTreeConditionBlueprintBase) == 0x000008, "Wrong alignment on UStateTreeConditionBlueprintBase");
-static_assert(sizeof(UStateTreeConditionBlueprintBase) == 0x000050, "Wrong size on UStateTreeConditionBlueprintBase");
+DUMPER7_ASSERTS_UStateTreeConditionBlueprintBase;
 
 // Class StateTreeModule.StateTreeEvaluatorBlueprintBase
 // 0x0008 (0x0050 - 0x0048)
@@ -106,15 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeEvaluatorBlueprintBase">();
+		STATIC_CLASS_IMPL("StateTreeEvaluatorBlueprintBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeEvaluatorBlueprintBase")
 	}
 	static class UStateTreeEvaluatorBlueprintBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeEvaluatorBlueprintBase>();
 	}
 };
-static_assert(alignof(UStateTreeEvaluatorBlueprintBase) == 0x000008, "Wrong alignment on UStateTreeEvaluatorBlueprintBase");
-static_assert(sizeof(UStateTreeEvaluatorBlueprintBase) == 0x000050, "Wrong size on UStateTreeEvaluatorBlueprintBase");
+DUMPER7_ASSERTS_UStateTreeEvaluatorBlueprintBase;
 
 // Class StateTreeModule.StateTreeTaskBlueprintBase
 // 0x0008 (0x0050 - 0x0048)
@@ -141,15 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeTaskBlueprintBase">();
+		STATIC_CLASS_IMPL("StateTreeTaskBlueprintBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeTaskBlueprintBase")
 	}
 	static class UStateTreeTaskBlueprintBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeTaskBlueprintBase>();
 	}
 };
-static_assert(alignof(UStateTreeTaskBlueprintBase) == 0x000008, "Wrong alignment on UStateTreeTaskBlueprintBase");
-static_assert(sizeof(UStateTreeTaskBlueprintBase) == 0x000050, "Wrong size on UStateTreeTaskBlueprintBase");
+DUMPER7_ASSERTS_UStateTreeTaskBlueprintBase;
 
 // Class StateTreeModule.StateTree
 // 0x0198 (0x01D0 - 0x0038)
@@ -187,37 +200,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTree">();
+		STATIC_CLASS_IMPL("StateTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTree")
 	}
 	static class UStateTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTree>();
 	}
 };
-static_assert(alignof(UStateTree) == 0x000008, "Wrong alignment on UStateTree");
-static_assert(sizeof(UStateTree) == 0x0001D0, "Wrong size on UStateTree");
-static_assert(offsetof(UStateTree, LastCompiledEditorDataHash) == 0x000038, "Member 'UStateTree::LastCompiledEditorDataHash' has a wrong offset!");
-static_assert(offsetof(UStateTree, Schema) == 0x000040, "Member 'UStateTree::Schema' has a wrong offset!");
-static_assert(offsetof(UStateTree, States) == 0x000048, "Member 'UStateTree::States' has a wrong offset!");
-static_assert(offsetof(UStateTree, Transitions) == 0x000058, "Member 'UStateTree::Transitions' has a wrong offset!");
-static_assert(offsetof(UStateTree, Nodes) == 0x000068, "Member 'UStateTree::Nodes' has a wrong offset!");
-static_assert(offsetof(UStateTree, DefaultInstanceData) == 0x000078, "Member 'UStateTree::DefaultInstanceData' has a wrong offset!");
-static_assert(offsetof(UStateTree, SharedInstanceData) == 0x0000A0, "Member 'UStateTree::SharedInstanceData' has a wrong offset!");
-static_assert(offsetof(UStateTree, ContextDataDescs) == 0x0000E0, "Member 'UStateTree::ContextDataDescs' has a wrong offset!");
-static_assert(offsetof(UStateTree, PropertyBindings) == 0x0000F0, "Member 'UStateTree::PropertyBindings' has a wrong offset!");
-static_assert(offsetof(UStateTree, IDToStateMappings) == 0x000148, "Member 'UStateTree::IDToStateMappings' has a wrong offset!");
-static_assert(offsetof(UStateTree, IDToNodeMappings) == 0x000158, "Member 'UStateTree::IDToNodeMappings' has a wrong offset!");
-static_assert(offsetof(UStateTree, IDToTransitionMappings) == 0x000168, "Member 'UStateTree::IDToTransitionMappings' has a wrong offset!");
-static_assert(offsetof(UStateTree, Parameters) == 0x000178, "Member 'UStateTree::Parameters' has a wrong offset!");
-static_assert(offsetof(UStateTree, ParametersDataViewIndex) == 0x0001A0, "Member 'UStateTree::ParametersDataViewIndex' has a wrong offset!");
-static_assert(offsetof(UStateTree, EvaluatorsBegin) == 0x0001A2, "Member 'UStateTree::EvaluatorsBegin' has a wrong offset!");
-static_assert(offsetof(UStateTree, EvaluatorsNum) == 0x0001A4, "Member 'UStateTree::EvaluatorsNum' has a wrong offset!");
-static_assert(offsetof(UStateTree, GlobalTasksBegin) == 0x0001A6, "Member 'UStateTree::GlobalTasksBegin' has a wrong offset!");
-static_assert(offsetof(UStateTree, GlobalTasksNum) == 0x0001A8, "Member 'UStateTree::GlobalTasksNum' has a wrong offset!");
-static_assert(offsetof(UStateTree, bHasGlobalTransitionTasks) == 0x0001AA, "Member 'UStateTree::bHasGlobalTransitionTasks' has a wrong offset!");
-static_assert(offsetof(UStateTree, ExternalDataDescs) == 0x0001B0, "Member 'UStateTree::ExternalDataDescs' has a wrong offset!");
-static_assert(offsetof(UStateTree, ExternalDataBaseIndex) == 0x0001C0, "Member 'UStateTree::ExternalDataBaseIndex' has a wrong offset!");
-static_assert(offsetof(UStateTree, NumDataViews) == 0x0001C4, "Member 'UStateTree::NumDataViews' has a wrong offset!");
+DUMPER7_ASSERTS_UStateTree;
 
 // Class StateTreeModule.StateTreeSchema
 // 0x0000 (0x0030 - 0x0030)
@@ -226,15 +220,18 @@ class UStateTreeSchema : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StateTreeSchema">();
+		STATIC_CLASS_IMPL("StateTreeSchema")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StateTreeSchema")
 	}
 	static class UStateTreeSchema* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStateTreeSchema>();
 	}
 };
-static_assert(alignof(UStateTreeSchema) == 0x000008, "Wrong alignment on UStateTreeSchema");
-static_assert(sizeof(UStateTreeSchema) == 0x000030, "Wrong size on UStateTreeSchema");
+DUMPER7_ASSERTS_UStateTreeSchema;
 
 }
 

@@ -23,15 +23,18 @@ class UPyUIC_CombatSituationPanel_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_CombatSituationPanel_10130">();
+		STATIC_CLASS_IMPL("PyUIC_CombatSituationPanel_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_CombatSituationPanel_10130")
 	}
 	static class UPyUIC_CombatSituationPanel_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_CombatSituationPanel_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_CombatSituationPanel_10130) == 0x000008, "Wrong alignment on UPyUIC_CombatSituationPanel_10130");
-static_assert(sizeof(UPyUIC_CombatSituationPanel_10130) == 0x000030, "Wrong size on UPyUIC_CombatSituationPanel_10130");
+DUMPER7_ASSERTS_UPyUIC_CombatSituationPanel_10130;
 
 // PythonClass PyUIC_LocalBattleKillTest_Activity_10130.PyUIC_HeroAccessory_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -40,15 +43,18 @@ class UPyUIC_HeroAccessory_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_HeroAccessory_10130">();
+		STATIC_CLASS_IMPL("PyUIC_HeroAccessory_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_HeroAccessory_10130")
 	}
 	static class UPyUIC_HeroAccessory_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_HeroAccessory_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_HeroAccessory_10130) == 0x000008, "Wrong alignment on UPyUIC_HeroAccessory_10130");
-static_assert(sizeof(UPyUIC_HeroAccessory_10130) == 0x000030, "Wrong size on UPyUIC_HeroAccessory_10130");
+DUMPER7_ASSERTS_UPyUIC_HeroAccessory_10130;
 
 // PythonClass PyUIC_LocalBattleKillTest_Activity_10130.PyUIC_LocalBattleKillPanel_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -57,15 +63,18 @@ class UPyUIC_LocalBattleKillPanel_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_LocalBattleKillPanel_10130">();
+		STATIC_CLASS_IMPL("PyUIC_LocalBattleKillPanel_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_LocalBattleKillPanel_10130")
 	}
 	static class UPyUIC_LocalBattleKillPanel_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_LocalBattleKillPanel_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_LocalBattleKillPanel_10130) == 0x000008, "Wrong alignment on UPyUIC_LocalBattleKillPanel_10130");
-static_assert(sizeof(UPyUIC_LocalBattleKillPanel_10130) == 0x000030, "Wrong size on UPyUIC_LocalBattleKillPanel_10130");
+DUMPER7_ASSERTS_UPyUIC_LocalBattleKillPanel_10130;
 
 // PythonClass PyUIC_LocalBattleKillTest_Activity_10130.PyUIC_LocalBattleKillPanelCenter_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -74,15 +83,18 @@ class UPyUIC_LocalBattleKillPanelCenter_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_LocalBattleKillPanelCenter_10130">();
+		STATIC_CLASS_IMPL("PyUIC_LocalBattleKillPanelCenter_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_LocalBattleKillPanelCenter_10130")
 	}
 	static class UPyUIC_LocalBattleKillPanelCenter_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_LocalBattleKillPanelCenter_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_LocalBattleKillPanelCenter_10130) == 0x000008, "Wrong alignment on UPyUIC_LocalBattleKillPanelCenter_10130");
-static_assert(sizeof(UPyUIC_LocalBattleKillPanelCenter_10130) == 0x000030, "Wrong size on UPyUIC_LocalBattleKillPanelCenter_10130");
+DUMPER7_ASSERTS_UPyUIC_LocalBattleKillPanelCenter_10130;
 
 // PythonClass PyUIC_LocalBattleKillTest_Activity_10130.PyUIC_CombatSituationUnit_V3_10130
 // 0x0000 (0x0030 - 0x0030)
@@ -91,15 +103,18 @@ class UPyUIC_CombatSituationUnit_V3_10130 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_CombatSituationUnit_V3_10130">();
+		STATIC_CLASS_IMPL("PyUIC_CombatSituationUnit_V3_10130")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_CombatSituationUnit_V3_10130")
 	}
 	static class UPyUIC_CombatSituationUnit_V3_10130* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_CombatSituationUnit_V3_10130>();
 	}
 };
-static_assert(alignof(UPyUIC_CombatSituationUnit_V3_10130) == 0x000008, "Wrong alignment on UPyUIC_CombatSituationUnit_V3_10130");
-static_assert(sizeof(UPyUIC_CombatSituationUnit_V3_10130) == 0x000030, "Wrong size on UPyUIC_CombatSituationUnit_V3_10130");
+DUMPER7_ASSERTS_UPyUIC_CombatSituationUnit_V3_10130;
 
 }
 

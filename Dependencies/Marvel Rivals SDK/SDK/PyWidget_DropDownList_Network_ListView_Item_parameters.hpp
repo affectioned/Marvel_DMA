@@ -21,9 +21,7 @@ struct Pywidget_DropDownList_Network_Item_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Pywidget_DropDownList_Network_Item_PreConstruct) == 0x000001, "Wrong alignment on Pywidget_DropDownList_Network_Item_PreConstruct");
-static_assert(sizeof(Pywidget_DropDownList_Network_Item_PreConstruct) == 0x000001, "Wrong size on Pywidget_DropDownList_Network_Item_PreConstruct");
-static_assert(offsetof(Pywidget_DropDownList_Network_Item_PreConstruct, IsDesignTime) == 0x000000, "Member 'Pywidget_DropDownList_Network_Item_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_Pywidget_DropDownList_Network_Item_PreConstruct;
 
 }
 

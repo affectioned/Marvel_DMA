@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyWidget_CommonTipsBase_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_SelectHero_HeroListBtnTips.PyWidget_SelectHero_HeroListBtnTips
-// 0x01B8 (0x0790 - 0x05D8)
+// 0x01B8 (0x0798 - 0x05E0)
 class UPyWidget_SelectHero_HeroListBtnTips : public UPyWidget_CommonTipsBase
 {
 public:
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          LeftMouseActionData;                               // 0x05D8(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          MiddleMouseActionData;                             // 0x0630(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          RightMouseActionData;                              // 0x0688(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          ConsoleActionData1;                                // 0x06E0(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FUIActionData                          ConsoleActionData2;                                // 0x0738(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          LeftMouseActionData;                               // 0x05E0(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          MiddleMouseActionData;                             // 0x0638(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          RightMouseActionData;                              // 0x0690(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          ConsoleActionData1;                                // 0x06E8(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FUIActionData                          ConsoleActionData2;                                // 0x0740(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectHero_HeroListBtnTips">();
+		STATIC_CLASS_IMPL("PyWidget_SelectHero_HeroListBtnTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectHero_HeroListBtnTips")
 	}
 	static class UPyWidget_SelectHero_HeroListBtnTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectHero_HeroListBtnTips>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectHero_HeroListBtnTips) == 0x000008, "Wrong alignment on UPyWidget_SelectHero_HeroListBtnTips");
-static_assert(sizeof(UPyWidget_SelectHero_HeroListBtnTips) == 0x000790, "Wrong size on UPyWidget_SelectHero_HeroListBtnTips");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtnTips, LeftMouseActionData) == 0x0005D8, "Member 'UPyWidget_SelectHero_HeroListBtnTips::LeftMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtnTips, MiddleMouseActionData) == 0x000630, "Member 'UPyWidget_SelectHero_HeroListBtnTips::MiddleMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtnTips, RightMouseActionData) == 0x000688, "Member 'UPyWidget_SelectHero_HeroListBtnTips::RightMouseActionData' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtnTips, ConsoleActionData1) == 0x0006E0, "Member 'UPyWidget_SelectHero_HeroListBtnTips::ConsoleActionData1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectHero_HeroListBtnTips, ConsoleActionData2) == 0x000738, "Member 'UPyWidget_SelectHero_HeroListBtnTips::ConsoleActionData2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectHero_HeroListBtnTips;
 
 }
 

@@ -36,21 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindCircleLandPoint">();
+		STATIC_CLASS_IMPL("BTT_PyFindCircleLandPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindCircleLandPoint")
 	}
 	static class UBTT_PyFindCircleLandPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindCircleLandPoint>();
 	}
 };
-static_assert(alignof(UBTT_PyFindCircleLandPoint) == 0x000008, "Wrong alignment on UBTT_PyFindCircleLandPoint");
-static_assert(sizeof(UBTT_PyFindCircleLandPoint) == 0x000158, "Wrong size on UBTT_PyFindCircleLandPoint");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, InCenterPoint) == 0x0000C0, "Member 'UBTT_PyFindCircleLandPoint::InCenterPoint' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, OutSelectedPoint) == 0x0000F0, "Member 'UBTT_PyFindCircleLandPoint::OutSelectedPoint' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, Radius) == 0x000120, "Member 'UBTT_PyFindCircleLandPoint::Radius' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, PlusAngle) == 0x000124, "Member 'UBTT_PyFindCircleLandPoint::PlusAngle' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, QueryExtent) == 0x000128, "Member 'UBTT_PyFindCircleLandPoint::QueryExtent' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindCircleLandPoint, QueryOffset) == 0x000140, "Member 'UBTT_PyFindCircleLandPoint::QueryOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindCircleLandPoint;
 
 }
 

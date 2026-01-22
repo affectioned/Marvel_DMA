@@ -33,19 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_CombatSituationPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_CombatSituationPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_CombatSituationPanel_C")
 	}
 	static class UWBP_CombatSituationPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_CombatSituationPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_CombatSituationPanel_C) == 0x000008, "Wrong alignment on UWBP_CombatSituationPanel_C");
-static_assert(sizeof(UWBP_CombatSituationPanel_C) == 0x000410, "Wrong size on UWBP_CombatSituationPanel_C");
-static_assert(offsetof(UWBP_CombatSituationPanel_C, UberGraphFrame) == 0x0003F0, "Member 'UWBP_CombatSituationPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CombatSituationPanel_C, Anim_Faction) == 0x0003F8, "Member 'UWBP_CombatSituationPanel_C::Anim_Faction' has a wrong offset!");
-static_assert(offsetof(UWBP_CombatSituationPanel_C, VBox_Content) == 0x000400, "Member 'UWBP_CombatSituationPanel_C::VBox_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_CombatSituationPanel_C, VBox_Content_Killcam) == 0x000408, "Member 'UWBP_CombatSituationPanel_C::VBox_Content_Killcam' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_CombatSituationPanel_C;
 
 }
 

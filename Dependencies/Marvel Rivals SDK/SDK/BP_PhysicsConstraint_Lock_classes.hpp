@@ -23,15 +23,18 @@ class ABP_PhysicsConstraint_Lock_C final : public APhysicsConstraintActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PhysicsConstraint_Lock_C">();
+		BP_STATIC_CLASS_IMPL("BP_PhysicsConstraint_Lock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PhysicsConstraint_Lock_C")
 	}
 	static class ABP_PhysicsConstraint_Lock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PhysicsConstraint_Lock_C>();
 	}
 };
-static_assert(alignof(ABP_PhysicsConstraint_Lock_C) == 0x000010, "Wrong alignment on ABP_PhysicsConstraint_Lock_C");
-static_assert(sizeof(ABP_PhysicsConstraint_Lock_C) == 0x000700, "Wrong size on ABP_PhysicsConstraint_Lock_C");
+DUMPER7_ASSERTS_ABP_PhysicsConstraint_Lock_C;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_ClanList_Recruitment_Btn_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ClanList_Recruitment_Btn_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_ClanList_Recruitment_Btn_PreConstruct");
-static_assert(sizeof(PyWidget_ClanList_Recruitment_Btn_PreConstruct) == 0x000001, "Wrong size on PyWidget_ClanList_Recruitment_Btn_PreConstruct");
-static_assert(offsetof(PyWidget_ClanList_Recruitment_Btn_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_ClanList_Recruitment_Btn_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ClanList_Recruitment_Btn_PreConstruct;
 
 }
 

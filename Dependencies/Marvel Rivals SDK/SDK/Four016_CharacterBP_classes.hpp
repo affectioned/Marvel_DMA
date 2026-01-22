@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 4016_CharacterBP.4016_CharacterBP_C
-// 0x0010 (0x21B0 - 0x21A0)
+// 0x0010 (0x22C0 - 0x22B0)
 class AFour016_CharacterBP_C final : public AMarvelBaseCharacter
 {
 public:
-	class UMarvelMoveLogicBaseComponent*          MoveLogic;                                         // 0x21A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelMoveLogicBaseComponent*          MoveLogic;                                         // 0x22B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"4016_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("4016_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"4016_CharacterBP_C")
 	}
 	static class AFour016_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFour016_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AFour016_CharacterBP_C) == 0x000010, "Wrong alignment on AFour016_CharacterBP_C");
-static_assert(sizeof(AFour016_CharacterBP_C) == 0x0021B0, "Wrong size on AFour016_CharacterBP_C");
-static_assert(offsetof(AFour016_CharacterBP_C, MoveLogic) == 0x0021A0, "Member 'AFour016_CharacterBP_C::MoveLogic' has a wrong offset!");
+DUMPER7_ASSERTS_AFour016_CharacterBP_C;
 
 }
 

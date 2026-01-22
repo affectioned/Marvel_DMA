@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441026.PyBuffAbility_10130_10449493
-// 0x0000 (0x1A30 - 0x1A30)
+// 0x0000 (0x1A48 - 0x1A48)
 class UPyBuffAbility_10130_10449493 : public UBuffAbility_CommonCardEffect
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10449493">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10449493")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10449493")
 	}
 	static class UPyBuffAbility_10130_10449493* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10449493>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10449493) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10449493");
-static_assert(sizeof(UPyBuffAbility_10130_10449493) == 0x001A30, "Wrong size on UPyBuffAbility_10130_10449493");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10449493;
 
 // PythonClass PyBuffAbility_10130_10441026.PyAbility_10130_104495
-// 0x0000 (0x2A60 - 0x2A60)
+// 0x0000 (0x2AB0 - 0x2AB0)
 class UPyAbility_10130_104495 : public UPyAbility_104451
 {
 public:
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104495">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104495")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104495")
 	}
 	static class UPyAbility_10130_104495* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104495>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104495) == 0x000008, "Wrong alignment on UPyAbility_10130_104495");
-static_assert(sizeof(UPyAbility_10130_104495) == 0x002A60, "Wrong size on UPyAbility_10130_104495");
+DUMPER7_ASSERTS_UPyAbility_10130_104495;
 
 }
 

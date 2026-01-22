@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyCopyLocation">();
+		STATIC_CLASS_IMPL("BTT_PyCopyLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyCopyLocation")
 	}
 	static class UBTT_PyCopyLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyCopyLocation>();
 	}
 };
-static_assert(alignof(UBTT_PyCopyLocation) == 0x000008, "Wrong alignment on UBTT_PyCopyLocation");
-static_assert(sizeof(UBTT_PyCopyLocation) == 0x000120, "Wrong size on UBTT_PyCopyLocation");
-static_assert(offsetof(UBTT_PyCopyLocation, InLocation) == 0x0000C0, "Member 'UBTT_PyCopyLocation::InLocation' has a wrong offset!");
-static_assert(offsetof(UBTT_PyCopyLocation, OutLocation) == 0x0000F0, "Member 'UBTT_PyCopyLocation::OutLocation' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyCopyLocation;
 
 }
 

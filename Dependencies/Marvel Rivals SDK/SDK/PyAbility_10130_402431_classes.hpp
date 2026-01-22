@@ -27,24 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_402431">();
+		STATIC_CLASS_IMPL("PyConfig_402431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_402431")
 	}
 	static class UPyConfig_402431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_402431>();
 	}
 };
-static_assert(alignof(UPyConfig_402431) == 0x000008, "Wrong alignment on UPyConfig_402431");
-static_assert(sizeof(UPyConfig_402431) == 0x0000A0, "Wrong size on UPyConfig_402431");
-static_assert(offsetof(UPyConfig_402431, ProjectileManualExplodeInterval) == 0x000098, "Member 'UPyConfig_402431::ProjectileManualExplodeInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_402431;
 
 // PythonClass PyAbility_10130_402431.PyProjectile_40243101
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_40243101 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UProjectileHomingComponent*             ProjectileHoming;                                  // 0x3B90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UProjectileHomingComponent*             ProjectileHoming;                                  // 0x3EA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -52,19 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_40243101">();
+		STATIC_CLASS_IMPL("PyProjectile_40243101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_40243101")
 	}
 	static class APyProjectile_40243101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_40243101>();
 	}
 };
-static_assert(alignof(APyProjectile_40243101) == 0x000010, "Wrong alignment on APyProjectile_40243101");
-static_assert(sizeof(APyProjectile_40243101) == 0x003BA0, "Wrong size on APyProjectile_40243101");
-static_assert(offsetof(APyProjectile_40243101, ProjectileHoming) == 0x003B90, "Member 'APyProjectile_40243101::ProjectileHoming' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_40243101;
 
 // PythonClass PyAbility_10130_402431.PyScope_40243101
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_40243101 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -74,18 +78,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_40243101">();
+		STATIC_CLASS_IMPL("PyScope_40243101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_40243101")
 	}
 	static class APyScope_40243101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_40243101>();
 	}
 };
-static_assert(alignof(APyScope_40243101) == 0x000010, "Wrong alignment on APyScope_40243101");
-static_assert(sizeof(APyScope_40243101) == 0x001AA0, "Wrong size on APyScope_40243101");
+DUMPER7_ASSERTS_APyScope_40243101;
 
 // PythonClass PyAbility_10130_402431.PyAbility_402431
-// 0x0000 (0x2A10 - 0x2A10)
+// 0x0000 (0x2A60 - 0x2A60)
 class UPyAbility_402431 final : public UAbility_402431
 {
 public:
@@ -98,15 +105,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_402431">();
+		STATIC_CLASS_IMPL("PyAbility_402431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_402431")
 	}
 	static class UPyAbility_402431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_402431>();
 	}
 };
-static_assert(alignof(UPyAbility_402431) == 0x000008, "Wrong alignment on UPyAbility_402431");
-static_assert(sizeof(UPyAbility_402431) == 0x002A10, "Wrong size on UPyAbility_402431");
+DUMPER7_ASSERTS_UPyAbility_402431;
 
 }
 

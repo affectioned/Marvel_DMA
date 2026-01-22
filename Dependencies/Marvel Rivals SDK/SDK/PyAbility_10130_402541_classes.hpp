@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_402541.PyEffectAbility_40254101
-// 0x0BC8 (0x1F38 - 0x1370)
+// 0x0EE8 (0x2270 - 0x1388)
 class UPyEffectAbility_40254101 final : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x1370(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x1388(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -34,23 +34,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_40254101">();
+		STATIC_CLASS_IMPL("PyEffectAbility_40254101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_40254101")
 	}
 	static class UPyEffectAbility_40254101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_40254101>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_40254101) == 0x000008, "Wrong alignment on UPyEffectAbility_40254101");
-static_assert(sizeof(UPyEffectAbility_40254101) == 0x001F38, "Wrong size on UPyEffectAbility_40254101");
-static_assert(offsetof(UPyEffectAbility_40254101, DashInfo) == 0x001370, "Member 'UPyEffectAbility_40254101::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_40254101;
 
 // PythonClass PyAbility_10130_402541.PySummonedComp_40254101
-// 0x0068 (0x0E98 - 0x0E30)
+// 0x0068 (0x0EF0 - 0x0E88)
 class UPySummonedComp_40254101 final : public UProtectiveSummonedComponent
 {
 public:
-	struct FGameplayTagContainer                  TagsToDestroySummoned;                             // 0x0E30(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  TagsToDestroySummoned;                             // 0x0E88(0x0068)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -60,41 +62,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_40254101">();
+		STATIC_CLASS_IMPL("PySummonedComp_40254101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_40254101")
 	}
 	static class UPySummonedComp_40254101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_40254101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_40254101) == 0x000008, "Wrong alignment on UPySummonedComp_40254101");
-static_assert(sizeof(UPySummonedComp_40254101) == 0x000E98, "Wrong size on UPySummonedComp_40254101");
-static_assert(offsetof(UPySummonedComp_40254101, TagsToDestroySummoned) == 0x000E30, "Member 'UPySummonedComp_40254101::TagsToDestroySummoned' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_40254101;
 
 // PythonClass PyAbility_10130_402541.PyConfig_402541
-// 0x17C8 (0x1860 - 0x0098)
+// 0x1B78 (0x1C10 - 0x0098)
 class UPyConfig_402541 final : public UMarvelAbilityConfig
 {
 public:
 	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x00A0(0x17C0)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSelectTaskParam                       SelectTaskParams;                                  // 0x00A0(0x1B70)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_402541">();
+		STATIC_CLASS_IMPL("PyConfig_402541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_402541")
 	}
 	static class UPyConfig_402541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_402541>();
 	}
 };
-static_assert(alignof(UPyConfig_402541) == 0x000010, "Wrong alignment on UPyConfig_402541");
-static_assert(sizeof(UPyConfig_402541) == 0x001860, "Wrong size on UPyConfig_402541");
-static_assert(offsetof(UPyConfig_402541, SelectTaskParams) == 0x0000A0, "Member 'UPyConfig_402541::SelectTaskParams' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_402541;
 
 // PythonClass PyAbility_10130_402541.PyAbility_402541
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_402541 final : public UAbility_108
 {
 public:
@@ -107,15 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_402541">();
+		STATIC_CLASS_IMPL("PyAbility_402541")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_402541")
 	}
 	static class UPyAbility_402541* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_402541>();
 	}
 };
-static_assert(alignof(UPyAbility_402541) == 0x000008, "Wrong alignment on UPyAbility_402541");
-static_assert(sizeof(UPyAbility_402541) == 0x0029F8, "Wrong size on UPyAbility_402541");
+DUMPER7_ASSERTS_UPyAbility_402541;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_PresetLensTips.PyWidget_Replay_PresetLensTips
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0438 - 0x0438)
 class UPyWidget_Replay_PresetLensTips final : public UMarvelSimpleUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_PresetLensTips">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_PresetLensTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_PresetLensTips")
 	}
 	static class UPyWidget_Replay_PresetLensTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_PresetLensTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_PresetLensTips) == 0x000008, "Wrong alignment on UPyWidget_Replay_PresetLensTips");
-static_assert(sizeof(UPyWidget_Replay_PresetLensTips) == 0x000458, "Wrong size on UPyWidget_Replay_PresetLensTips");
+DUMPER7_ASSERTS_UPyWidget_Replay_PresetLensTips;
 
 }
 

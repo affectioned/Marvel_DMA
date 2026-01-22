@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_ActionTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_ActionTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_ActionTips_C")
 	}
 	static class UWBP_Training_ActionTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_ActionTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_ActionTips_C) == 0x000008, "Wrong alignment on UWBP_Training_ActionTips_C");
-static_assert(sizeof(UWBP_Training_ActionTips_C) == 0x0003D8, "Wrong size on UWBP_Training_ActionTips_C");
-static_assert(offsetof(UWBP_Training_ActionTips_C, HBox_Unclickable) == 0x0003B8, "Member 'UWBP_Training_ActionTips_C::HBox_Unclickable' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ActionTips_C, SizeBox_Skip) == 0x0003C0, "Member 'UWBP_Training_ActionTips_C::SizeBox_Skip' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ActionTips_C, WBP_Traning_Skip) == 0x0003C8, "Member 'UWBP_Training_ActionTips_C::WBP_Traning_Skip' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_ActionTips_C, WBP_Traning_Skip_GamePad) == 0x0003D0, "Member 'UWBP_Training_ActionTips_C::WBP_Traning_Skip_GamePad' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_ActionTips_C;
 
 }
 

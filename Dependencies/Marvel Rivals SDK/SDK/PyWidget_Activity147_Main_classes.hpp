@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity147_Main.PyWidget_Activity147_HeadIcon
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity147_HeadIcon final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HeadIdx;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HeadIdx;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,25 +34,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_HeadIcon">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_HeadIcon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_HeadIcon")
 	}
 	static class UPyWidget_Activity147_HeadIcon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_HeadIcon>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_HeadIcon) == 0x000008, "Wrong alignment on UPyWidget_Activity147_HeadIcon");
-static_assert(sizeof(UPyWidget_Activity147_HeadIcon) == 0x0005C0, "Wrong size on UPyWidget_Activity147_HeadIcon");
-static_assert(offsetof(UPyWidget_Activity147_HeadIcon, HeadIdx) == 0x0005BC, "Member 'UPyWidget_Activity147_HeadIcon::HeadIdx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_HeadIcon;
 
 // PythonClass PyWidget_Activity147_Main.PyWidget_Activity147_RewardItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity147_RewardItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RewardIdx;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     QualityImg;                                        // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RewardIdx;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     QualityImg;                                        // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,29 +65,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_RewardItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_RewardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_RewardItem")
 	}
 	static class UPyWidget_Activity147_RewardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_RewardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_RewardItem) == 0x000008, "Wrong alignment on UPyWidget_Activity147_RewardItem");
-static_assert(sizeof(UPyWidget_Activity147_RewardItem) == 0x0005D0, "Wrong size on UPyWidget_Activity147_RewardItem");
-static_assert(offsetof(UPyWidget_Activity147_RewardItem, RewardIdx) == 0x0005BC, "Member 'UPyWidget_Activity147_RewardItem::RewardIdx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_RewardItem, QualityImg) == 0x0005C0, "Member 'UPyWidget_Activity147_RewardItem::QualityImg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_RewardItem;
 
 // PythonClass PyWidget_Activity147_Main.PyWidget_Activity147_Main
-// 0x0068 (0x0660 - 0x05F8)
+// 0x0068 (0x0668 - 0x0600)
 class UPyWidget_Activity147_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            RedSlateColor;                                     // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x060C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     ImgBarBg;                                          // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     ImgBar;                                            // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     ImgBubbleNormal;                                   // 0x0640(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     ImgBubblePending;                                  // 0x0650(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedSlateColor;                                     // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x0614(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     ImgBarBg;                                          // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     ImgBar;                                            // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     ImgBubbleNormal;                                   // 0x0648(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     ImgBubblePending;                                  // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -100,21 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_Main")
 	}
 	static class UPyWidget_Activity147_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_Main) == 0x000008, "Wrong alignment on UPyWidget_Activity147_Main");
-static_assert(sizeof(UPyWidget_Activity147_Main) == 0x000660, "Wrong size on UPyWidget_Activity147_Main");
-static_assert(offsetof(UPyWidget_Activity147_Main, RedSlateColor) == 0x0005F8, "Member 'UPyWidget_Activity147_Main::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Main, WhiteSlateColor) == 0x00060C, "Member 'UPyWidget_Activity147_Main::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Main, ImgBarBg) == 0x000620, "Member 'UPyWidget_Activity147_Main::ImgBarBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Main, ImgBar) == 0x000630, "Member 'UPyWidget_Activity147_Main::ImgBar' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Main, ImgBubbleNormal) == 0x000640, "Member 'UPyWidget_Activity147_Main::ImgBubbleNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_Main, ImgBubblePending) == 0x000650, "Member 'UPyWidget_Activity147_Main::ImgBubblePending' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_Main;
 
 }
 

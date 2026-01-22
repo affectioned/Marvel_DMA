@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102371.PyAbility_102371
-// 0x0008 (0x2A50 - 0x2A48)
+// 0x0008 (0x2AA0 - 0x2A98)
 class UPyAbility_102371 : public UAbility_111
 {
 public:
-	int32                                         WeaponIdleState;                                   // 0x2A48(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WeaponIdleState;                                   // 0x2A98(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,33 +33,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102371">();
+		STATIC_CLASS_IMPL("PyAbility_102371")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102371")
 	}
 	static class UPyAbility_102371* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102371>();
 	}
 };
-static_assert(alignof(UPyAbility_102371) == 0x000008, "Wrong alignment on UPyAbility_102371");
-static_assert(sizeof(UPyAbility_102371) == 0x002A50, "Wrong size on UPyAbility_102371");
-static_assert(offsetof(UPyAbility_102371, WeaponIdleState) == 0x002A48, "Member 'UPyAbility_102371::WeaponIdleState' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102371;
 
 // PythonClass PyAbility_102371.PyConfig_102371
-// 0x0000 (0x1820 - 0x1820)
+// 0x0000 (0x1B70 - 0x1B70)
 class UPyConfig_102371 final : public UConfig_111
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102371">();
+		STATIC_CLASS_IMPL("PyConfig_102371")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102371")
 	}
 	static class UPyConfig_102371* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102371>();
 	}
 };
-static_assert(alignof(UPyConfig_102371) == 0x000010, "Wrong alignment on UPyConfig_102371");
-static_assert(sizeof(UPyConfig_102371) == 0x001820, "Wrong size on UPyConfig_102371");
+DUMPER7_ASSERTS_UPyConfig_102371;
 
 }
 

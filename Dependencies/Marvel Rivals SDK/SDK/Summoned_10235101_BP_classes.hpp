@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10235101_BP.Summoned_10235101_BP_C
-// 0x0030 (0x0B70 - 0x0B40)
+// 0x0030 (0x0B90 - 0x0B60)
 class ASummoned_10235101_BP_C final : public AMarvelSummonerBase
 {
 public:
-	class UWC_SummonedSceneIndicator_V4BP_C*      WC_SummonedSceneIndicator_V4BP;                    // 0x0B40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCharacterCollisionComponent*           CharacterCollision1;                               // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCharacterCollisionComponent*           CharacterCollision;                                // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedModifierComponent*             SummonedModifier;                                  // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWC_SummonedSceneIndicator_V4BP_C*      WC_SummonedSceneIndicator_V4BP;                    // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCharacterCollisionComponent*           CharacterCollision1;                               // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCharacterCollisionComponent*           CharacterCollision;                                // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedModifierComponent*             SummonedModifier;                                  // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10235101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10235101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10235101_BP_C")
 	}
 	static class ASummoned_10235101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10235101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10235101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10235101_BP_C");
-static_assert(sizeof(ASummoned_10235101_BP_C) == 0x000B70, "Wrong size on ASummoned_10235101_BP_C");
-static_assert(offsetof(ASummoned_10235101_BP_C, WC_SummonedSceneIndicator_V4BP) == 0x000B40, "Member 'ASummoned_10235101_BP_C::WC_SummonedSceneIndicator_V4BP' has a wrong offset!");
-static_assert(offsetof(ASummoned_10235101_BP_C, CharacterCollision1) == 0x000B48, "Member 'ASummoned_10235101_BP_C::CharacterCollision1' has a wrong offset!");
-static_assert(offsetof(ASummoned_10235101_BP_C, CharacterCollision) == 0x000B50, "Member 'ASummoned_10235101_BP_C::CharacterCollision' has a wrong offset!");
-static_assert(offsetof(ASummoned_10235101_BP_C, SummonedModifier) == 0x000B58, "Member 'ASummoned_10235101_BP_C::SummonedModifier' has a wrong offset!");
-static_assert(offsetof(ASummoned_10235101_BP_C, SummonedMovement) == 0x000B60, "Member 'ASummoned_10235101_BP_C::SummonedMovement' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10235101_BP_C;
 
 }
 

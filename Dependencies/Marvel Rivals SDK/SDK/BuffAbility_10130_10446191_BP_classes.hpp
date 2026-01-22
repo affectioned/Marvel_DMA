@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_10130_10446191_BP.BuffAbility_10130_10446191_BP_C
-// 0x0018 (0x1A48 - 0x1A30)
+// 0x0018 (0x1A60 - 0x1A48)
 class UBuffAbility_10130_10446191_BP_C final : public UBuffAbility_CommonCardEffect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1A30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class AMarvelAbilityTargetActor_Scope*        SpawnedScope;                                      // 0x1A38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                         Scope_Id;                                          // 0x1A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1A48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class AMarvelAbilityTargetActor_Scope*        SpawnedScope;                                      // 0x1A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         Scope_Id;                                          // 0x1A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BuffAbility_10130_10446191_BP(int32 EntryPoint);
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_10130_10446191_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_10130_10446191_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10130_10446191_BP_C")
 	}
 	static class UBuffAbility_10130_10446191_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10130_10446191_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_10130_10446191_BP_C) == 0x000008, "Wrong alignment on UBuffAbility_10130_10446191_BP_C");
-static_assert(sizeof(UBuffAbility_10130_10446191_BP_C) == 0x001A48, "Wrong size on UBuffAbility_10130_10446191_BP_C");
-static_assert(offsetof(UBuffAbility_10130_10446191_BP_C, UberGraphFrame) == 0x001A30, "Member 'UBuffAbility_10130_10446191_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10446191_BP_C, SpawnedScope) == 0x001A38, "Member 'UBuffAbility_10130_10446191_BP_C::SpawnedScope' has a wrong offset!");
-static_assert(offsetof(UBuffAbility_10130_10446191_BP_C, Scope_Id) == 0x001A40, "Member 'UBuffAbility_10130_10446191_BP_C::Scope_Id' has a wrong offset!");
+DUMPER7_ASSERTS_UBuffAbility_10130_10446191_BP_C;
 
 }
 

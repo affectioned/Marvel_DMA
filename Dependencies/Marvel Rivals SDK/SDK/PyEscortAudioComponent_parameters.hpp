@@ -22,10 +22,7 @@ public:
 	class UObject*                                TaskOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int64                                         Magnitude;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint) == 0x000008, "Wrong alignment on PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint");
-static_assert(sizeof(PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint) == 0x000010, "Wrong size on PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint");
-static_assert(offsetof(PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint, TaskOwner) == 0x000000, "Member 'PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint::TaskOwner' has a wrong offset!");
-static_assert(offsetof(PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint, Magnitude) == 0x000008, "Member 'PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_PyEscortAudioComponent_DispatchOnPayloadReachCheckpoint;
 
 }
 

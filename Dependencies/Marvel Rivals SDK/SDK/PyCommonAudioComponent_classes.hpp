@@ -12,8 +12,8 @@
 
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
-#include "PyBaseAudioComponent_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyBaseAudioComponent_classes.hpp"
 
 
 namespace SDK
@@ -57,44 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelCommonAudioItem">();
+		STATIC_CLASS_IMPL("PyLevelCommonAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelCommonAudioItem")
 	}
 	static class UPyLevelCommonAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelCommonAudioItem>();
 	}
 };
-static_assert(alignof(UPyLevelCommonAudioItem) == 0x000008, "Wrong alignment on UPyLevelCommonAudioItem");
-static_assert(sizeof(UPyLevelCommonAudioItem) == 0x000208, "Wrong size on UPyLevelCommonAudioItem");
-static_assert(offsetof(UPyLevelCommonAudioItem, DoubleKill) == 0x000038, "Member 'UPyLevelCommonAudioItem::DoubleKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, TripleKill) == 0x000048, "Member 'UPyLevelCommonAudioItem::TripleKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, QuadraKill) == 0x000058, "Member 'UPyLevelCommonAudioItem::QuadraKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, PentaKill) == 0x000068, "Member 'UPyLevelCommonAudioItem::PentaKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, HexaKill) == 0x000078, "Member 'UPyLevelCommonAudioItem::HexaKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, MoreThanHexaKill) == 0x000088, "Member 'UPyLevelCommonAudioItem::MoreThanHexaKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, TeamKill) == 0x000098, "Member 'UPyLevelCommonAudioItem::TeamKill' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, PreSelectCountDown) == 0x0000A8, "Member 'UPyLevelCommonAudioItem::PreSelectCountDown' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, OurSideBanPickCountDown) == 0x0000B8, "Member 'UPyLevelCommonAudioItem::OurSideBanPickCountDown' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, EnemySideBanPickCountDown) == 0x0000C8, "Member 'UPyLevelCommonAudioItem::EnemySideBanPickCountDown' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, OurSideStartBanPick) == 0x0000D8, "Member 'UPyLevelCommonAudioItem::OurSideStartBanPick' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, EnemySideStartBanPick) == 0x0000E8, "Member 'UPyLevelCommonAudioItem::EnemySideStartBanPick' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, ChangeToOurSide) == 0x0000F8, "Member 'UPyLevelCommonAudioItem::ChangeToOurSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, ChangeToEnemySide) == 0x000108, "Member 'UPyLevelCommonAudioItem::ChangeToEnemySide' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, OurSideBanFinish) == 0x000118, "Member 'UPyLevelCommonAudioItem::OurSideBanFinish' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, EnemySideBanFinish) == 0x000128, "Member 'UPyLevelCommonAudioItem::EnemySideBanFinish' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, SelectHeroStart) == 0x000138, "Member 'UPyLevelCommonAudioItem::SelectHeroStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, PreSelectStateVoice) == 0x000148, "Member 'UPyLevelCommonAudioItem::PreSelectStateVoice' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, BanRoundStartVoice) == 0x000158, "Member 'UPyLevelCommonAudioItem::BanRoundStartVoice' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, PickRoundStartVoice) == 0x000168, "Member 'UPyLevelCommonAudioItem::PickRoundStartVoice' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, RankRoundStart) == 0x000178, "Member 'UPyLevelCommonAudioItem::RankRoundStart' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, RankRoundResult) == 0x000188, "Member 'UPyLevelCommonAudioItem::RankRoundResult' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, RankRoundFinalResult) == 0x000198, "Member 'UPyLevelCommonAudioItem::RankRoundFinalResult' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, RankSwitchSide) == 0x0001A8, "Member 'UPyLevelCommonAudioItem::RankSwitchSide' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, CheckPointComplete) == 0x0001B8, "Member 'UPyLevelCommonAudioItem::CheckPointComplete' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, ArriveTarget) == 0x0001C8, "Member 'UPyLevelCommonAudioItem::ArriveTarget' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, AbilityUnlock) == 0x0001D8, "Member 'UPyLevelCommonAudioItem::AbilityUnlock' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, StartTeleport) == 0x0001E8, "Member 'UPyLevelCommonAudioItem::StartTeleport' has a wrong offset!");
-static_assert(offsetof(UPyLevelCommonAudioItem, EndTeleport) == 0x0001F8, "Member 'UPyLevelCommonAudioItem::EndTeleport' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelCommonAudioItem;
 
 // PythonClass PyCommonAudioComponent.PyCommonAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -116,15 +90,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCommonAudioComponent">();
+		STATIC_CLASS_IMPL("PyCommonAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCommonAudioComponent")
 	}
 	static class UPyCommonAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCommonAudioComponent>();
 	}
 };
-static_assert(alignof(UPyCommonAudioComponent) == 0x000008, "Wrong alignment on UPyCommonAudioComponent");
-static_assert(sizeof(UPyCommonAudioComponent) == 0x000120, "Wrong size on UPyCommonAudioComponent");
+DUMPER7_ASSERTS_UPyCommonAudioComponent;
 
 }
 

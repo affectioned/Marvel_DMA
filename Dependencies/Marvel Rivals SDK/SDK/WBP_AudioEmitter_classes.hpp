@@ -55,28 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AudioEmitter_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AudioEmitter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AudioEmitter_C")
 	}
 	static class UWBP_AudioEmitter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AudioEmitter_C>();
 	}
 };
-static_assert(alignof(UWBP_AudioEmitter_C) == 0x000008, "Wrong alignment on UWBP_AudioEmitter_C");
-static_assert(sizeof(UWBP_AudioEmitter_C) == 0x0004B8, "Wrong size on UWBP_AudioEmitter_C");
-static_assert(offsetof(UWBP_AudioEmitter_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_AudioEmitter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, AkName) == 0x0003C0, "Member 'UWBP_AudioEmitter_C::AkName' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, AkRtpcValues) == 0x0003C8, "Member 'UWBP_AudioEmitter_C::AkRtpcValues' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, AkSwitchValues) == 0x0003D0, "Member 'UWBP_AudioEmitter_C::AkSwitchValues' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, Image_Icon) == 0x0003D8, "Member 'UWBP_AudioEmitter_C::Image_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, PostingEvents) == 0x0003E0, "Member 'UWBP_AudioEmitter_C::PostingEvents' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, ThreatValue) == 0x0003E8, "Member 'UWBP_AudioEmitter_C::ThreatValue' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, UnitMargin) == 0x0003F0, "Member 'UWBP_AudioEmitter_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, PlayingEvents) == 0x000400, "Member 'UWBP_AudioEmitter_C::PlayingEvents' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, AkComp) == 0x000450, "Member 'UWBP_AudioEmitter_C::AkComp' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, PlayingLines) == 0x000458, "Member 'UWBP_AudioEmitter_C::PlayingLines' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, tmpLine) == 0x0004A8, "Member 'UWBP_AudioEmitter_C::tmpLine' has a wrong offset!");
-static_assert(offsetof(UWBP_AudioEmitter_C, CachedAdmin) == 0x0004B0, "Member 'UWBP_AudioEmitter_C::CachedAdmin' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AudioEmitter_C;
 
 }
 

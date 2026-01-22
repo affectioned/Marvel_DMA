@@ -38,22 +38,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              HeroSignImg_244_8864B4DD4E64CBC1EF132CBC94A5A8EA;  // 0x01A8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TMap<ELanguageType, struct FVector2D>         HeroSignPosition_242_5852516542C9B99EFF06368A6E71CB6F; // 0x01D8(0x0050)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FHeroGallery_InfoBP) == 0x000008, "Wrong alignment on FHeroGallery_InfoBP");
-static_assert(sizeof(FHeroGallery_InfoBP) == 0x000228, "Wrong size on FHeroGallery_InfoBP");
-static_assert(offsetof(FHeroGallery_InfoBP, HeroInfoMainColor_196_7005C02242AD22E6B8A04FA96F1E4652) == 0x000000, "Member 'FHeroGallery_InfoBP::HeroInfoMainColor_196_7005C02242AD22E6B8A04FA96F1E4652' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, HeroInfoTextColor_119_6960CBC940D3586F4065F4BC8D6AFE43) == 0x000010, "Member 'FHeroGallery_InfoBP::HeroInfoTextColor_119_6960CBC940D3586F4065F4BC8D6AFE43' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LevelCharacterMI_202_3EB55D3D4DE08C989EB7E8B985A07132) == 0x000020, "Member 'FHeroGallery_InfoBP::LevelCharacterMI_202_3EB55D3D4DE08C989EB7E8B985A07132' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LevelCharacterBGMI_208_C838BB0E4C71B8889FA8458C03247ECC) == 0x000050, "Member 'FHeroGallery_InfoBP::LevelCharacterBGMI_208_C838BB0E4C71B8889FA8458C03247ECC' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LevelColorOffsetMI_204_74EA848642AC0C16A3183C8D36466E1A) == 0x000080, "Member 'FHeroGallery_InfoBP::LevelColorOffsetMI_204_74EA848642AC0C16A3183C8D36466E1A' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LevelCrystalMI_206_A9AF55CE4D55274A849B38860209237B) == 0x0000B0, "Member 'FHeroGallery_InfoBP::LevelCrystalMI_206_A9AF55CE4D55274A849B38860209237B' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LevelBackBGMI_211_B49F33014CD689F0F510FB8CB5B7408A) == 0x0000E0, "Member 'FHeroGallery_InfoBP::LevelBackBGMI_211_B49F33014CD689F0F510FB8CB5B7408A' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, LanguageFontSetting_243_B38D787E43BC1EFFC50FB686251A2D64) == 0x000110, "Member 'FHeroGallery_InfoBP::LanguageFontSetting_243_B38D787E43BC1EFFC50FB686251A2D64' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, NS_GlowColor_216_2ED143C447DDF8D831B4BE9D56778084) == 0x000160, "Member 'FHeroGallery_InfoBP::NS_GlowColor_216_2ED143C447DDF8D831B4BE9D56778084' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, NS_LineColor_218_78171C854856E2073D2CCB82BB92AB72) == 0x000170, "Member 'FHeroGallery_InfoBP::NS_LineColor_218_78171C854856E2073D2CCB82BB92AB72' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, NS_PrimColor_220_4AFFAE9445D4C452CD36D88B2815963C) == 0x000180, "Member 'FHeroGallery_InfoBP::NS_PrimColor_220_4AFFAE9445D4C452CD36D88B2815963C' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, NS_SmokeScale_223_6257D4E54E3E71C641A494A71ABC26CB) == 0x000190, "Member 'FHeroGallery_InfoBP::NS_SmokeScale_223_6257D4E54E3E71C641A494A71ABC26CB' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, HeroSignImg_244_8864B4DD4E64CBC1EF132CBC94A5A8EA) == 0x0001A8, "Member 'FHeroGallery_InfoBP::HeroSignImg_244_8864B4DD4E64CBC1EF132CBC94A5A8EA' has a wrong offset!");
-static_assert(offsetof(FHeroGallery_InfoBP, HeroSignPosition_242_5852516542C9B99EFF06368A6E71CB6F) == 0x0001D8, "Member 'FHeroGallery_InfoBP::HeroSignPosition_242_5852516542C9B99EFF06368A6E71CB6F' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroGallery_InfoBP;
 
 }
 

@@ -27,15 +27,7 @@ public:
 	class FString                                 DeploymentId;                                      // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ClientEncryptionKey;                               // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FArtifactSettings) == 0x000008, "Wrong alignment on FArtifactSettings");
-static_assert(sizeof(FArtifactSettings) == 0x000070, "Wrong size on FArtifactSettings");
-static_assert(offsetof(FArtifactSettings, ArtifactName) == 0x000000, "Member 'FArtifactSettings::ArtifactName' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, ClientId) == 0x000010, "Member 'FArtifactSettings::ClientId' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, ClientSecret) == 0x000020, "Member 'FArtifactSettings::ClientSecret' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, ProductId) == 0x000030, "Member 'FArtifactSettings::ProductId' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, SandboxId) == 0x000040, "Member 'FArtifactSettings::SandboxId' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, DeploymentId) == 0x000050, "Member 'FArtifactSettings::DeploymentId' has a wrong offset!");
-static_assert(offsetof(FArtifactSettings, ClientEncryptionKey) == 0x000060, "Member 'FArtifactSettings::ClientEncryptionKey' has a wrong offset!");
+DUMPER7_ASSERTS_FArtifactSettings;
 
 }
 

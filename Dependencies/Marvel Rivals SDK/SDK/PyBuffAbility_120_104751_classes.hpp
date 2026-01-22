@@ -17,14 +17,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_104751.PyBuffAbility_120_10475180
-// 0x0010 (0x1430 - 0x1420)
+// 0x0010 (0x1448 - 0x1438)
 class UPyBuffAbility_120_10475180 final : public UMarvelCDReductionEffectAbility_V2
 {
 public:
-	float                                         Probability;                                       // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ProjectileID;                                      // 0x1424(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SpawnNum;                                          // 0x1428(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TriggerInterval;                                   // 0x142C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Probability;                                       // 0x1438(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x143C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SpawnNum;                                          // 0x1440(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TriggerInterval;                                   // 0x1444(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10475180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10475180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10475180")
 	}
 	static class UPyBuffAbility_120_10475180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10475180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10475180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10475180");
-static_assert(sizeof(UPyBuffAbility_120_10475180) == 0x001430, "Wrong size on UPyBuffAbility_120_10475180");
-static_assert(offsetof(UPyBuffAbility_120_10475180, Probability) == 0x001420, "Member 'UPyBuffAbility_120_10475180::Probability' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10475180, ProjectileID) == 0x001424, "Member 'UPyBuffAbility_120_10475180::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10475180, SpawnNum) == 0x001428, "Member 'UPyBuffAbility_120_10475180::SpawnNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10475180, TriggerInterval) == 0x00142C, "Member 'UPyBuffAbility_120_10475180::TriggerInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10475180;
 
 }
 

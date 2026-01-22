@@ -37,12 +37,7 @@ public:
 	class FString                                 EffectMissile;                                     // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EffectEnd;                                         // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHeroChromaEffectTable) == 0x000008, "Wrong alignment on FHeroChromaEffectTable");
-static_assert(sizeof(FHeroChromaEffectTable) == 0x000048, "Wrong size on FHeroChromaEffectTable");
-static_assert(offsetof(FHeroChromaEffectTable, AbilityID) == 0x000010, "Member 'FHeroChromaEffectTable::AbilityID' has a wrong offset!");
-static_assert(offsetof(FHeroChromaEffectTable, EffectActivate) == 0x000018, "Member 'FHeroChromaEffectTable::EffectActivate' has a wrong offset!");
-static_assert(offsetof(FHeroChromaEffectTable, EffectMissile) == 0x000028, "Member 'FHeroChromaEffectTable::EffectMissile' has a wrong offset!");
-static_assert(offsetof(FHeroChromaEffectTable, EffectEnd) == 0x000038, "Member 'FHeroChromaEffectTable::EffectEnd' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroChromaEffectTable;
 
 }
 

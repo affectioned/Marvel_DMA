@@ -30,18 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01PhoenixAnimInstance">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01PhoenixAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01PhoenixAnimInstance")
 	}
 	static class UPyKlyntarEC01PhoenixAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKlyntarEC01PhoenixAnimInstance>();
 	}
 };
-static_assert(alignof(UPyKlyntarEC01PhoenixAnimInstance) == 0x000010, "Wrong alignment on UPyKlyntarEC01PhoenixAnimInstance");
-static_assert(sizeof(UPyKlyntarEC01PhoenixAnimInstance) == 0x000460, "Wrong size on UPyKlyntarEC01PhoenixAnimInstance");
-static_assert(offsetof(UPyKlyntarEC01PhoenixAnimInstance, FlyState) == 0x000450, "Member 'UPyKlyntarEC01PhoenixAnimInstance::FlyState' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixAnimInstance, Fly01AnimSpeed) == 0x000454, "Member 'UPyKlyntarEC01PhoenixAnimInstance::Fly01AnimSpeed' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixAnimInstance, Fly02AnimSpeed) == 0x000458, "Member 'UPyKlyntarEC01PhoenixAnimInstance::Fly02AnimSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKlyntarEC01PhoenixAnimInstance;
 
 // PythonClass PyKlyntarEC01PhoenixFlyComponent.PyKlyntarEC01PhoenixFlyComponent
 // 0x0108 (0x0210 - 0x0108)
@@ -63,21 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01PhoenixFlyComponent">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01PhoenixFlyComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01PhoenixFlyComponent")
 	}
 	static class UPyKlyntarEC01PhoenixFlyComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKlyntarEC01PhoenixFlyComponent>();
 	}
 };
-static_assert(alignof(UPyKlyntarEC01PhoenixFlyComponent) == 0x000008, "Wrong alignment on UPyKlyntarEC01PhoenixFlyComponent");
-static_assert(sizeof(UPyKlyntarEC01PhoenixFlyComponent) == 0x000210, "Wrong size on UPyKlyntarEC01PhoenixFlyComponent");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, DefaultMoveSpeed) == 0x000108, "Member 'UPyKlyntarEC01PhoenixFlyComponent::DefaultMoveSpeed' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, DefaultFlayState) == 0x00010C, "Member 'UPyKlyntarEC01PhoenixFlyComponent::DefaultFlayState' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, FlySpeeds) == 0x000110, "Member 'UPyKlyntarEC01PhoenixFlyComponent::FlySpeeds' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, FlyStates) == 0x000160, "Member 'UPyKlyntarEC01PhoenixFlyComponent::FlyStates' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, PostRoarKeys) == 0x0001B0, "Member 'UPyKlyntarEC01PhoenixFlyComponent::PostRoarKeys' has a wrong offset!");
-static_assert(offsetof(UPyKlyntarEC01PhoenixFlyComponent, FireFireBallStates) == 0x0001C0, "Member 'UPyKlyntarEC01PhoenixFlyComponent::FireFireBallStates' has a wrong offset!");
+DUMPER7_ASSERTS_UPyKlyntarEC01PhoenixFlyComponent;
 
 }
 

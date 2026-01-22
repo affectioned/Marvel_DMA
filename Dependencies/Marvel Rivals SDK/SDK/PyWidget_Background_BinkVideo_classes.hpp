@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
 
@@ -18,15 +19,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Background_BinkVideo.PyWidget_Background_BinkVideo
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_Background_BinkVideo final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuideTipsStyle>                GuideTipsStyles;                                   // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          FlashFadeInAkAudioEvent;                           // 0x05D0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          FlashFadeOutAkAudioEvent;                          // 0x05D8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          MarvelLogoAnimAkAudioEvent;                        // 0x05E0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuideTipsStyle>                GuideTipsStyles;                                   // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          FlashFadeInAkAudioEvent;                           // 0x05D8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          FlashFadeOutAkAudioEvent;                          // 0x05E0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          MarvelLogoAnimAkAudioEvent;                        // 0x05E8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LogoPosition_Normal;                               // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LogoPosition_S6;                                   // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              LogoPosition_S6_EN;                                // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -39,19 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Background_BinkVideo">();
+		STATIC_CLASS_IMPL("PyWidget_Background_BinkVideo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Background_BinkVideo")
 	}
 	static class UPyWidget_Background_BinkVideo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Background_BinkVideo>();
 	}
 };
-static_assert(alignof(UPyWidget_Background_BinkVideo) == 0x000008, "Wrong alignment on UPyWidget_Background_BinkVideo");
-static_assert(sizeof(UPyWidget_Background_BinkVideo) == 0x0005E8, "Wrong size on UPyWidget_Background_BinkVideo");
-static_assert(offsetof(UPyWidget_Background_BinkVideo, GuideTipsStyles) == 0x0005C0, "Member 'UPyWidget_Background_BinkVideo::GuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Background_BinkVideo, FlashFadeInAkAudioEvent) == 0x0005D0, "Member 'UPyWidget_Background_BinkVideo::FlashFadeInAkAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Background_BinkVideo, FlashFadeOutAkAudioEvent) == 0x0005D8, "Member 'UPyWidget_Background_BinkVideo::FlashFadeOutAkAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Background_BinkVideo, MarvelLogoAnimAkAudioEvent) == 0x0005E0, "Member 'UPyWidget_Background_BinkVideo::MarvelLogoAnimAkAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Background_BinkVideo;
 
 }
 

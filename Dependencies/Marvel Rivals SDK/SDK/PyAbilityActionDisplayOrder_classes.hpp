@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityActionDisplayOrder">();
+		STATIC_CLASS_IMPL("PyAbilityActionDisplayOrder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityActionDisplayOrder")
 	}
 	static class UPyAbilityActionDisplayOrder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityActionDisplayOrder>();
 	}
 };
-static_assert(alignof(UPyAbilityActionDisplayOrder) == 0x000008, "Wrong alignment on UPyAbilityActionDisplayOrder");
-static_assert(sizeof(UPyAbilityActionDisplayOrder) == 0x000058, "Wrong size on UPyAbilityActionDisplayOrder");
-static_assert(offsetof(UPyAbilityActionDisplayOrder, ActionOrder_MouseAndKeyboard) == 0x000038, "Member 'UPyAbilityActionDisplayOrder::ActionOrder_MouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(UPyAbilityActionDisplayOrder, ActionOrder_Gamepad) == 0x000048, "Member 'UPyAbilityActionDisplayOrder::ActionOrder_Gamepad' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbilityActionDisplayOrder;
 
 }
 

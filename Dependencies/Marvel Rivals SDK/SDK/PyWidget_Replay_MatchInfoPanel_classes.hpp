@@ -40,23 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_MatchInfoPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_MatchInfoPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_MatchInfoPanel")
 	}
 	static class UPyWidget_Replay_MatchInfoPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_MatchInfoPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_MatchInfoPanel) == 0x000008, "Wrong alignment on UPyWidget_Replay_MatchInfoPanel");
-static_assert(sizeof(UPyWidget_Replay_MatchInfoPanel) == 0x000428, "Wrong size on UPyWidget_Replay_MatchInfoPanel");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, TeamColor) == 0x0003B8, "Member 'UPyWidget_Replay_MatchInfoPanel::TeamColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, TeamColor2) == 0x0003CC, "Member 'UPyWidget_Replay_MatchInfoPanel::TeamColor2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, EnemyColor) == 0x0003E0, "Member 'UPyWidget_Replay_MatchInfoPanel::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, EnemyColor2) == 0x0003F4, "Member 'UPyWidget_Replay_MatchInfoPanel::EnemyColor2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, Img_ClashVerify) == 0x000408, "Member 'UPyWidget_Replay_MatchInfoPanel::Img_ClashVerify' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, Img_ClashNormal) == 0x000410, "Member 'UPyWidget_Replay_MatchInfoPanel::Img_ClashNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, Img_MRCVerify) == 0x000418, "Member 'UPyWidget_Replay_MatchInfoPanel::Img_MRCVerify' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Replay_MatchInfoPanel, Img_MRCNormal) == 0x000420, "Member 'UPyWidget_Replay_MatchInfoPanel::Img_MRCNormal' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_MatchInfoPanel;
 
 }
 

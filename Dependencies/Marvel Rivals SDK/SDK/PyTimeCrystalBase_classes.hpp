@@ -10,46 +10,46 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "MarvelLevel_structs.hpp"
 #include "MarvelLevel_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyTimeCrystalBase.PyTimeCrystalBase
-// 0x0160 (0x0CD0 - 0x0B70)
+// 0x0160 (0x0CF0 - 0x0B90)
 class APyTimeCrystalBase : public ASummoned_20020001
 {
 public:
-	EInfinityCrisisState                          OldState;                                          // 0x0B70(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EInfinityCrisisState                          State;                                             // 0x0B71(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B72[0x2];                                      // 0x0B72(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MoveTime;                                          // 0x0B74(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 TargetActor;                                       // 0x0B78(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CarryTime;                                         // 0x0B80(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          PickingUp;                                         // 0x0B84(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B85[0x3];                                      // 0x0B85(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxCarryTime;                                      // 0x0B88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PitchOffset;                                       // 0x0B8C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ThrowOffsetSize;                                   // 0x0B90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B94[0x4];                                      // 0x0B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ScaleGround;                                       // 0x0B98(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ScaleAttach;                                       // 0x0BB0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            MoveCurve;                                         // 0x0BC8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ResetMoveSpeed;                                    // 0x0BD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayPickUpTime;                                   // 0x0BD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  RequireTag;                                        // 0x0BD8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  InvalidTags;                                       // 0x0C40(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FVector                                AttachOffset;                                      // 0x0CA8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECollisionChannel                             AbilityCollisionType;                              // 0x0CC0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECollisionChannel                             ProjectileCollisionType;                           // 0x0CC1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECollisionChannel                             AmmoCollisionType;                                 // 0x0CC2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CC3[0x5];                                      // 0x0CC3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            ThrowVelocityCurve;                                // 0x0CC8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInfinityCrisisState                          OldState;                                          // 0x0B90(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EInfinityCrisisState                          State;                                             // 0x0B91(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B92[0x2];                                      // 0x0B92(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MoveTime;                                          // 0x0B94(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 TargetActor;                                       // 0x0B98(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CarryTime;                                         // 0x0BA0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PickingUp;                                         // 0x0BA4(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BA5[0x3];                                      // 0x0BA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxCarryTime;                                      // 0x0BA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PitchOffset;                                       // 0x0BAC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ThrowOffsetSize;                                   // 0x0BB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BB4[0x4];                                      // 0x0BB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ScaleGround;                                       // 0x0BB8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ScaleAttach;                                       // 0x0BD0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            MoveCurve;                                         // 0x0BE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ResetMoveSpeed;                                    // 0x0BF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayPickUpTime;                                   // 0x0BF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  RequireTag;                                        // 0x0BF8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  InvalidTags;                                       // 0x0C60(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FVector                                AttachOffset;                                      // 0x0CC8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             AbilityCollisionType;                              // 0x0CE0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             ProjectileCollisionType;                           // 0x0CE1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             AmmoCollisionType;                                 // 0x0CE2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CE3[0x5];                                      // 0x0CE3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            ThrowVelocityCurve;                                // 0x0CE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -67,36 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTimeCrystalBase">();
+		STATIC_CLASS_IMPL("PyTimeCrystalBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTimeCrystalBase")
 	}
 	static class APyTimeCrystalBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTimeCrystalBase>();
 	}
 };
-static_assert(alignof(APyTimeCrystalBase) == 0x000010, "Wrong alignment on APyTimeCrystalBase");
-static_assert(sizeof(APyTimeCrystalBase) == 0x000CD0, "Wrong size on APyTimeCrystalBase");
-static_assert(offsetof(APyTimeCrystalBase, OldState) == 0x000B70, "Member 'APyTimeCrystalBase::OldState' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, State) == 0x000B71, "Member 'APyTimeCrystalBase::State' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, MoveTime) == 0x000B74, "Member 'APyTimeCrystalBase::MoveTime' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, TargetActor) == 0x000B78, "Member 'APyTimeCrystalBase::TargetActor' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, CarryTime) == 0x000B80, "Member 'APyTimeCrystalBase::CarryTime' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, PickingUp) == 0x000B84, "Member 'APyTimeCrystalBase::PickingUp' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, MaxCarryTime) == 0x000B88, "Member 'APyTimeCrystalBase::MaxCarryTime' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, PitchOffset) == 0x000B8C, "Member 'APyTimeCrystalBase::PitchOffset' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ThrowOffsetSize) == 0x000B90, "Member 'APyTimeCrystalBase::ThrowOffsetSize' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ScaleGround) == 0x000B98, "Member 'APyTimeCrystalBase::ScaleGround' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ScaleAttach) == 0x000BB0, "Member 'APyTimeCrystalBase::ScaleAttach' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, MoveCurve) == 0x000BC8, "Member 'APyTimeCrystalBase::MoveCurve' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ResetMoveSpeed) == 0x000BD0, "Member 'APyTimeCrystalBase::ResetMoveSpeed' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, DelayPickUpTime) == 0x000BD4, "Member 'APyTimeCrystalBase::DelayPickUpTime' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, RequireTag) == 0x000BD8, "Member 'APyTimeCrystalBase::RequireTag' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, InvalidTags) == 0x000C40, "Member 'APyTimeCrystalBase::InvalidTags' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, AttachOffset) == 0x000CA8, "Member 'APyTimeCrystalBase::AttachOffset' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, AbilityCollisionType) == 0x000CC0, "Member 'APyTimeCrystalBase::AbilityCollisionType' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ProjectileCollisionType) == 0x000CC1, "Member 'APyTimeCrystalBase::ProjectileCollisionType' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, AmmoCollisionType) == 0x000CC2, "Member 'APyTimeCrystalBase::AmmoCollisionType' has a wrong offset!");
-static_assert(offsetof(APyTimeCrystalBase, ThrowVelocityCurve) == 0x000CC8, "Member 'APyTimeCrystalBase::ThrowVelocityCurve' has a wrong offset!");
+DUMPER7_ASSERTS_APyTimeCrystalBase;
 
 }
 

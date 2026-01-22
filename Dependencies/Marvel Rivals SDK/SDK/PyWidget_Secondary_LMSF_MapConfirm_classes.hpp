@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_LMSF_MapConfirm.PyWidget_Secondary_LMSF_MapConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_LMSF_MapConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_LMSF_MapConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_LMSF_MapConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_LMSF_MapConfirm")
 	}
 	static class UPyWidget_Secondary_LMSF_MapConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_LMSF_MapConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_LMSF_MapConfirm) == 0x000008, "Wrong alignment on UPyWidget_Secondary_LMSF_MapConfirm");
-static_assert(sizeof(UPyWidget_Secondary_LMSF_MapConfirm) == 0x0005C0, "Wrong size on UPyWidget_Secondary_LMSF_MapConfirm");
+DUMPER7_ASSERTS_UPyWidget_Secondary_LMSF_MapConfirm;
 
 }
 

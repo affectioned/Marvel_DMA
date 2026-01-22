@@ -23,15 +23,18 @@ class UPyGIHotFixSubsystem final : public UGameInstanceSubsystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGIHotFixSubsystem">();
+		STATIC_CLASS_IMPL("PyGIHotFixSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGIHotFixSubsystem")
 	}
 	static class UPyGIHotFixSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGIHotFixSubsystem>();
 	}
 };
-static_assert(alignof(UPyGIHotFixSubsystem) == 0x000008, "Wrong alignment on UPyGIHotFixSubsystem");
-static_assert(sizeof(UPyGIHotFixSubsystem) == 0x000038, "Wrong size on UPyGIHotFixSubsystem");
+DUMPER7_ASSERTS_UPyGIHotFixSubsystem;
 
 }
 

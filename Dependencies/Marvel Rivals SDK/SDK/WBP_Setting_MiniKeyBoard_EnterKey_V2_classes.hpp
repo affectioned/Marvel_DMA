@@ -10,50 +10,50 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SettingMiniKeyboard_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "PyWidget_SettingMiniKeyboard_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_MiniKeyBoard_EnterKey_V2.WBP_Setting_MiniKeyBoard_EnterKey_V2_C
-// 0x0188 (0x0748 - 0x05C0)
+// 0x0188 (0x0750 - 0x05C8)
 class UWBP_Setting_MiniKeyBoard_EnterKey_V2_C final : public UPyWidget_MiniKey
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Bg_Key;                                            // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Bg_Key_Frame;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Key;                                           // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Key;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Key;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Key;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_KeyName;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             SetIcon;                                           // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Name_0;                                            // 0x0608(0x0018)(Edit, BlueprintVisible)
-	class FString                                 SpecialName;                                       // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FSlateFontInfo                         Font;                                              // 0x0630(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	double                                        Width;                                             // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Height;                                            // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Normal;                                            // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Combine;                                           // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsCombine;                                         // 0x06B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6B9[0x3];                                      // 0x06B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            Text_Color_Combine;                                // 0x06BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Text_Color_Normal;                                 // 0x06D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsDisable;                                         // 0x06E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsConflict;                                        // 0x06E5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6E6[0x2];                                      // 0x06E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Conflict;                                          // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           NormalColor;                                       // 0x06F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CombineColor;                                      // 0x0700(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Image_0;                                           // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ConflictColor;                                     // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CommonFrameColor;                                  // 0x0728(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DisableFrameColor;                                 // 0x0738(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Bg_Key;                                            // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Bg_Key_Frame;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Key;                                           // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Key;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Key;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Key;                                       // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_KeyName;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTexture2D*                             SetIcon;                                           // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Name_0;                                            // 0x0610(0x0018)(Edit, BlueprintVisible)
+	class FString                                 SpecialName;                                       // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FSlateFontInfo                         Font;                                              // 0x0638(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	double                                        Width;                                             // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Height;                                            // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Normal;                                            // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Combine;                                           // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsCombine;                                         // 0x06C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C1[0x3];                                      // 0x06C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            Text_Color_Combine;                                // 0x06C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Text_Color_Normal;                                 // 0x06D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsDisable;                                         // 0x06EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsConflict;                                        // 0x06ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6EE[0x2];                                      // 0x06EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Conflict;                                          // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           NormalColor;                                       // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CombineColor;                                      // 0x0708(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Image_0;                                           // 0x0718(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ConflictColor;                                     // 0x0720(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CommonFrameColor;                                  // 0x0730(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DisableFrameColor;                                 // 0x0740(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void 预览键位文本();
@@ -65,43 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_MiniKeyBoard_EnterKey_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_MiniKeyBoard_EnterKey_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_MiniKeyBoard_EnterKey_V2_C")
 	}
 	static class UWBP_Setting_MiniKeyBoard_EnterKey_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_MiniKeyBoard_EnterKey_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C) == 0x000008, "Wrong alignment on UWBP_Setting_MiniKeyBoard_EnterKey_V2_C");
-static_assert(sizeof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C) == 0x000748, "Wrong size on UWBP_Setting_MiniKeyBoard_EnterKey_V2_C");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, UberGraphFrame) == 0x0005C0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Bg_Key) == 0x0005C8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Bg_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Bg_Key_Frame) == 0x0005D0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Bg_Key_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Btn_Key) == 0x0005D8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Btn_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Icon_Key) == 0x0005E0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Icon_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Overlay_Key) == 0x0005E8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Overlay_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, SizeBox_Key) == 0x0005F0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::SizeBox_Key' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Text_KeyName) == 0x0005F8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Text_KeyName' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, SetIcon) == 0x000600, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::SetIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Name_0) == 0x000608, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, SpecialName) == 0x000620, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::SpecialName' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Font) == 0x000630, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Font' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Width) == 0x000698, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Width' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Height) == 0x0006A0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Height' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Normal) == 0x0006A8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Combine) == 0x0006B0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Combine' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, IsCombine) == 0x0006B8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::IsCombine' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Text_Color_Combine) == 0x0006BC, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Text_Color_Combine' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Text_Color_Normal) == 0x0006D0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Text_Color_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, IsDisable) == 0x0006E4, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::IsDisable' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, IsConflict) == 0x0006E5, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::IsConflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Conflict) == 0x0006E8, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Conflict' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, NormalColor) == 0x0006F0, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::NormalColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, CombineColor) == 0x000700, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::CombineColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, Image_0) == 0x000710, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, ConflictColor) == 0x000718, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::ConflictColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, CommonFrameColor) == 0x000728, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::CommonFrameColor' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_MiniKeyBoard_EnterKey_V2_C, DisableFrameColor) == 0x000738, "Member 'UWBP_Setting_MiniKeyBoard_EnterKey_V2_C::DisableFrameColor' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_MiniKeyBoard_EnterKey_V2_C;
 
 }
 

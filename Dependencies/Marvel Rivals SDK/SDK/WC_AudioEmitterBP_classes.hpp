@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_AudioEmitterBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_AudioEmitterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_AudioEmitterBP_C")
 	}
 	static class UWC_AudioEmitterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_AudioEmitterBP_C>();
 	}
 };
-static_assert(alignof(UWC_AudioEmitterBP_C) == 0x000010, "Wrong alignment on UWC_AudioEmitterBP_C");
-static_assert(sizeof(UWC_AudioEmitterBP_C) == 0x000A10, "Wrong size on UWC_AudioEmitterBP_C");
-static_assert(offsetof(UWC_AudioEmitterBP_C, UberGraphFrame) == 0x000A00, "Member 'UWC_AudioEmitterBP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UWC_AudioEmitterBP_C;
 
 }
 

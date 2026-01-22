@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Test_Text">();
+		STATIC_CLASS_IMPL("PyWidget_Test_Text")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Test_Text")
 	}
 	static class UPyWidget_Test_Text* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Test_Text>();
 	}
 };
-static_assert(alignof(UPyWidget_Test_Text) == 0x000008, "Wrong alignment on UPyWidget_Test_Text");
-static_assert(sizeof(UPyWidget_Test_Text) == 0x0003D0, "Wrong size on UPyWidget_Test_Text");
-static_assert(offsetof(UPyWidget_Test_Text, TestText) == 0x0003B8, "Member 'UPyWidget_Test_Text::TestText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Test_Text;
 
 }
 

@@ -23,15 +23,18 @@ class UAICondition_CheckBlackboardKey_BP_C final : public UPyAICondition_CheckBl
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AICondition_CheckBlackboardKey_BP_C">();
+		BP_STATIC_CLASS_IMPL("AICondition_CheckBlackboardKey_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICondition_CheckBlackboardKey_BP_C")
 	}
 	static class UAICondition_CheckBlackboardKey_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICondition_CheckBlackboardKey_BP_C>();
 	}
 };
-static_assert(alignof(UAICondition_CheckBlackboardKey_BP_C) == 0x000008, "Wrong alignment on UAICondition_CheckBlackboardKey_BP_C");
-static_assert(sizeof(UAICondition_CheckBlackboardKey_BP_C) == 0x000050, "Wrong size on UAICondition_CheckBlackboardKey_BP_C");
+DUMPER7_ASSERTS_UAICondition_CheckBlackboardKey_BP_C;
 
 }
 

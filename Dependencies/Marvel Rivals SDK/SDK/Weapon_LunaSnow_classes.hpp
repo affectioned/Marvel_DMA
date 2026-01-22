@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_LunaSnow.Weapon_LunaSnow_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_LunaSnow_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_LunaSnow_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_LunaSnow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_LunaSnow_C")
 	}
 	static class AWeapon_LunaSnow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_LunaSnow_C>();
 	}
 };
-static_assert(alignof(AWeapon_LunaSnow_C) == 0x000010, "Wrong alignment on AWeapon_LunaSnow_C");
-static_assert(sizeof(AWeapon_LunaSnow_C) == 0x000CB0, "Wrong size on AWeapon_LunaSnow_C");
+DUMPER7_ASSERTS_AWeapon_LunaSnow_C;
 
 }
 

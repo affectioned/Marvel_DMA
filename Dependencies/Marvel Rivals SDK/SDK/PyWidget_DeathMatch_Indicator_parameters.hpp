@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Deathmatch_Indicator_Tick) == 0x000004, "Wrong alignment on PyWidget_Deathmatch_Indicator_Tick");
-static_assert(sizeof(PyWidget_Deathmatch_Indicator_Tick) == 0x00003C, "Wrong size on PyWidget_Deathmatch_Indicator_Tick");
-static_assert(offsetof(PyWidget_Deathmatch_Indicator_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Deathmatch_Indicator_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Deathmatch_Indicator_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Deathmatch_Indicator_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Deathmatch_Indicator_Tick;
 
 // PythonFunction PyWidget_DeathMatch_Indicator.PyWidget_Deathmatch_Indicator.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyWidget_Deathmatch_Indicator_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Deathmatch_Indicator_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_Deathmatch_Indicator_ShouldBeVisible");
-static_assert(sizeof(PyWidget_Deathmatch_Indicator_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_Deathmatch_Indicator_ShouldBeVisible");
-static_assert(offsetof(PyWidget_Deathmatch_Indicator_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_Deathmatch_Indicator_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Deathmatch_Indicator_ShouldBeVisible;
 
 }
 

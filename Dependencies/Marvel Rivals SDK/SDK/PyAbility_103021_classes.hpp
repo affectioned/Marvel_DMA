@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103021.PyCue_Projectile_Loop_10302101
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10302101 final : public AMarvelCueNotify_Projectile
 {
 public:
@@ -26,23 +26,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10302101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10302101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10302101")
 	}
 	static class APyCue_Projectile_Loop_10302101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10302101>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10302101) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10302101");
-static_assert(sizeof(APyCue_Projectile_Loop_10302101) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10302101");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10302101;
 
 // PythonClass PyAbility_103021.PyCue_Projectile_HitImpact_10302101
-// 0x0008 (0x05D0 - 0x05C8)
+// 0x0008 (0x05F0 - 0x05E8)
 class UPyCue_Projectile_HitImpact_10302101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	int32                                         HitNormalAudioID;                                  // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HitAnkaAudioID;                                    // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HitNormalAudioID;                                  // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HitAnkaAudioID;                                    // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -50,17 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_HitImpact_10302101">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_HitImpact_10302101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_HitImpact_10302101")
 	}
 	static class UPyCue_Projectile_HitImpact_10302101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Projectile_HitImpact_10302101>();
 	}
 };
-static_assert(alignof(UPyCue_Projectile_HitImpact_10302101) == 0x000008, "Wrong alignment on UPyCue_Projectile_HitImpact_10302101");
-static_assert(sizeof(UPyCue_Projectile_HitImpact_10302101) == 0x0005D0, "Wrong size on UPyCue_Projectile_HitImpact_10302101");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10302101, HitNormalAudioID) == 0x0005C8, "Member 'UPyCue_Projectile_HitImpact_10302101::HitNormalAudioID' has a wrong offset!");
-static_assert(offsetof(UPyCue_Projectile_HitImpact_10302101, HitAnkaAudioID) == 0x0005CC, "Member 'UPyCue_Projectile_HitImpact_10302101::HitAnkaAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Projectile_HitImpact_10302101;
 
 }
 

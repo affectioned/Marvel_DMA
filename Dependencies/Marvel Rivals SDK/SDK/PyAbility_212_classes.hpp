@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_212.PyAbility_212
-// 0x0000 (0x2C18 - 0x2C18)
+// 0x0000 (0x2C78 - 0x2C78)
 class UPyAbility_212 : public UAbility_212
 {
 public:
@@ -30,6 +30,8 @@ public:
 	float GetCurrentEmoteAnimPosition();
 	float GetCurrentEmoteAnimLength();
 	class UAnimMontage* GetCurrentEmoteAnim();
+	void K2_OnSetEmoteAnimPosition(float NewPosition, const class FString& Reason);
+	void K2_OnSetEmoteAnimPlayRate(float InRate);
 	void OnRep_RepEmoteAnimInfo();
 	void K2_OnEndAbility(bool bWasCancelled);
 	void NativeOnMontageCompleted(const class FString& EventTag);
@@ -42,15 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_212">();
+		STATIC_CLASS_IMPL("PyAbility_212")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_212")
 	}
 	static class UPyAbility_212* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_212>();
 	}
 };
-static_assert(alignof(UPyAbility_212) == 0x000008, "Wrong alignment on UPyAbility_212");
-static_assert(sizeof(UPyAbility_212) == 0x002C18, "Wrong size on UPyAbility_212");
+DUMPER7_ASSERTS_UPyAbility_212;
 
 // PythonClass PyAbility_212.PyAnimNotify_SkinChangeColor
 // 0x0000 (0x0040 - 0x0040)
@@ -62,15 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAnimNotify_SkinChangeColor">();
+		STATIC_CLASS_IMPL("PyAnimNotify_SkinChangeColor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAnimNotify_SkinChangeColor")
 	}
 	static class UPyAnimNotify_SkinChangeColor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAnimNotify_SkinChangeColor>();
 	}
 };
-static_assert(alignof(UPyAnimNotify_SkinChangeColor) == 0x000008, "Wrong alignment on UPyAnimNotify_SkinChangeColor");
-static_assert(sizeof(UPyAnimNotify_SkinChangeColor) == 0x000040, "Wrong size on UPyAnimNotify_SkinChangeColor");
+DUMPER7_ASSERTS_UPyAnimNotify_SkinChangeColor;
 
 }
 

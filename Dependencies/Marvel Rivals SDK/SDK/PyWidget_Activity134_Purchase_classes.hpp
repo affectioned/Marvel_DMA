@@ -17,30 +17,33 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity134_Purchase.PyWidget_Activity134_Purchase_SmallReward
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity134_Purchase_SmallReward final : public UPyWidget_ActivityExpBpBase_Purchase_SmallReward
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity134_Purchase_SmallReward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity134_Purchase_SmallReward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity134_Purchase_SmallReward")
 	}
 	static class UPyWidget_Activity134_Purchase_SmallReward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity134_Purchase_SmallReward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity134_Purchase_SmallReward) == 0x000008, "Wrong alignment on UPyWidget_Activity134_Purchase_SmallReward");
-static_assert(sizeof(UPyWidget_Activity134_Purchase_SmallReward) == 0x0005C0, "Wrong size on UPyWidget_Activity134_Purchase_SmallReward");
+DUMPER7_ASSERTS_UPyWidget_Activity134_Purchase_SmallReward;
 
 // PythonClass PyWidget_Activity134_Purchase.PyWidget_Activity134_Purchase
-// 0x0010 (0x0720 - 0x0710)
+// 0x0010 (0x0728 - 0x0718)
 class UPyWidget_Activity134_Purchase final : public UPyWidget_ActivityExpBpBase_Purchase
 {
 public:
-	int32                                         RewardSize0;                                       // 0x0710(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RewardSize1;                                       // 0x0714(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RewardSize2;                                       // 0x0718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RewardSize0;                                       // 0x0718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RewardSize1;                                       // 0x071C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RewardSize2;                                       // 0x0720(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	class UButton* on_try_scroll_when_next_focusable_child_change(int32 ChildIndex, int32 FocusedChildDirection, int32 NumItemsLine);
@@ -48,18 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity134_Purchase">();
+		STATIC_CLASS_IMPL("PyWidget_Activity134_Purchase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity134_Purchase")
 	}
 	static class UPyWidget_Activity134_Purchase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity134_Purchase>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity134_Purchase) == 0x000008, "Wrong alignment on UPyWidget_Activity134_Purchase");
-static_assert(sizeof(UPyWidget_Activity134_Purchase) == 0x000720, "Wrong size on UPyWidget_Activity134_Purchase");
-static_assert(offsetof(UPyWidget_Activity134_Purchase, RewardSize0) == 0x000710, "Member 'UPyWidget_Activity134_Purchase::RewardSize0' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity134_Purchase, RewardSize1) == 0x000714, "Member 'UPyWidget_Activity134_Purchase::RewardSize1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity134_Purchase, RewardSize2) == 0x000718, "Member 'UPyWidget_Activity134_Purchase::RewardSize2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity134_Purchase;
 
 }
 

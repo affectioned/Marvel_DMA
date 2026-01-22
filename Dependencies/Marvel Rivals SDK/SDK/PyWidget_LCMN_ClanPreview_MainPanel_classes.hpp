@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LCMN_ClanPreview_MainPanel.PyWidget_LCMN_ClanPreview_MainPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_LCMN_ClanPreview_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_ClanPreview_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_ClanPreview_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_ClanPreview_MainPanel")
 	}
 	static class UPyWidget_LCMN_ClanPreview_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_ClanPreview_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_ClanPreview_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_LCMN_ClanPreview_MainPanel");
-static_assert(sizeof(UPyWidget_LCMN_ClanPreview_MainPanel) == 0x0005F8, "Wrong size on UPyWidget_LCMN_ClanPreview_MainPanel");
+DUMPER7_ASSERTS_UPyWidget_LCMN_ClanPreview_MainPanel;
 
 }
 

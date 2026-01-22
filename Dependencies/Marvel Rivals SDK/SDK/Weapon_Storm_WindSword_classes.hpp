@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_Storm_WindSword.Weapon_Storm_WindSword_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class AWeapon_Storm_WindSword_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_Storm_WindSword_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_Storm_WindSword_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_Storm_WindSword_C")
 	}
 	static class AWeapon_Storm_WindSword_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_Storm_WindSword_C>();
 	}
 };
-static_assert(alignof(AWeapon_Storm_WindSword_C) == 0x000010, "Wrong alignment on AWeapon_Storm_WindSword_C");
-static_assert(sizeof(AWeapon_Storm_WindSword_C) == 0x000CB0, "Wrong size on AWeapon_Storm_WindSword_C");
+DUMPER7_ASSERTS_AWeapon_Storm_WindSword_C;
 
 }
 

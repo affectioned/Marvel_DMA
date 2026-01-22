@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WorldConditionSchema">();
+		STATIC_CLASS_IMPL("WorldConditionSchema")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldConditionSchema")
 	}
 	static class UWorldConditionSchema* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWorldConditionSchema>();
 	}
 };
-static_assert(alignof(UWorldConditionSchema) == 0x000008, "Wrong alignment on UWorldConditionSchema");
-static_assert(sizeof(UWorldConditionSchema) == 0x000040, "Wrong size on UWorldConditionSchema");
-static_assert(offsetof(UWorldConditionSchema, ContextDataDescs) == 0x000030, "Member 'UWorldConditionSchema::ContextDataDescs' has a wrong offset!");
+DUMPER7_ASSERTS_UWorldConditionSchema;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1040_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1040_classes.hpp"
 
 
 namespace SDK
@@ -24,18 +24,21 @@ class UPyConfig_104004 final : public UConfig_109
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104004">();
+		STATIC_CLASS_IMPL("PyConfig_104004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104004")
 	}
 	static class UPyConfig_104004* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104004>();
 	}
 };
-static_assert(alignof(UPyConfig_104004) == 0x000008, "Wrong alignment on UPyConfig_104004");
-static_assert(sizeof(UPyConfig_104004) == 0x0000C0, "Wrong size on UPyConfig_104004");
+DUMPER7_ASSERTS_UPyConfig_104004;
 
 // PythonClass PyAbility_104004.PyAbility_104004
-// 0x0000 (0x2C40 - 0x2C40)
+// 0x0000 (0x2C90 - 0x2C90)
 class UPyAbility_104004 : public UAbility_104001_ChangeSculpt
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104004">();
+		STATIC_CLASS_IMPL("PyAbility_104004")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104004")
 	}
 	static class UPyAbility_104004* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104004>();
 	}
 };
-static_assert(alignof(UPyAbility_104004) == 0x000008, "Wrong alignment on UPyAbility_104004");
-static_assert(sizeof(UPyAbility_104004) == 0x002C40, "Wrong size on UPyAbility_104004");
+DUMPER7_ASSERTS_UPyAbility_104004;
 
 }
 

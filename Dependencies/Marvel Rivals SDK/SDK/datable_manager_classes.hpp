@@ -23,15 +23,18 @@ class UDatableManager final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DatableManager">();
+		STATIC_CLASS_IMPL("DatableManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DatableManager")
 	}
 	static class UDatableManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDatableManager>();
 	}
 };
-static_assert(alignof(UDatableManager) == 0x000008, "Wrong alignment on UDatableManager");
-static_assert(sizeof(UDatableManager) == 0x000030, "Wrong size on UDatableManager");
+DUMPER7_ASSERTS_UDatableManager;
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_Main.PyWidget_BattlePass_Main
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_BattlePass_Main final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsBPTop;                                          // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsBPTop;                                          // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_Main">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_Main")
 	}
 	static class UPyWidget_BattlePass_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_Main) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_Main");
-static_assert(sizeof(UPyWidget_BattlePass_Main) == 0x000608, "Wrong size on UPyWidget_BattlePass_Main");
-static_assert(offsetof(UPyWidget_BattlePass_Main, CanvasPanel_Main) == 0x0005F8, "Member 'UPyWidget_BattlePass_Main::CanvasPanel_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_Main, bIsBPTop) == 0x000600, "Member 'UPyWidget_BattlePass_Main::bIsBPTop' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_Main;
 
 }
 

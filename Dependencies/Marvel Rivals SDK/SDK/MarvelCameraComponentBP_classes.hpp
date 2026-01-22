@@ -23,15 +23,18 @@ class UMarvelCameraComponentBP_C final : public UMarvelCameraComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelCameraComponentBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelCameraComponentBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelCameraComponentBP_C")
 	}
 	static class UMarvelCameraComponentBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelCameraComponentBP_C>();
 	}
 };
-static_assert(alignof(UMarvelCameraComponentBP_C) == 0x000010, "Wrong alignment on UMarvelCameraComponentBP_C");
-static_assert(sizeof(UMarvelCameraComponentBP_C) == 0x000D70, "Wrong size on UMarvelCameraComponentBP_C");
+DUMPER7_ASSERTS_UMarvelCameraComponentBP_C;
 
 }
 

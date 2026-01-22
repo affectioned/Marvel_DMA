@@ -24,37 +24,44 @@ class UEntry_LCMN_ClanSelect_DualCard final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Entry_LCMN_ClanSelect_DualCard">();
+		STATIC_CLASS_IMPL("Entry_LCMN_ClanSelect_DualCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Entry_LCMN_ClanSelect_DualCard")
 	}
 	static class UEntry_LCMN_ClanSelect_DualCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEntry_LCMN_ClanSelect_DualCard>();
 	}
 };
-static_assert(alignof(UEntry_LCMN_ClanSelect_DualCard) == 0x000008, "Wrong alignment on UEntry_LCMN_ClanSelect_DualCard");
-static_assert(sizeof(UEntry_LCMN_ClanSelect_DualCard) == 0x000030, "Wrong size on UEntry_LCMN_ClanSelect_DualCard");
+DUMPER7_ASSERTS_UEntry_LCMN_ClanSelect_DualCard;
 
 // PythonClass PyWidget_LCMN_ClanSelect_DualCard.PyWidget_LCMN_ClanSelect_DualCard
-// 0x0000 (0x05F0 - 0x05F0)
+// 0x0000 (0x05F8 - 0x05F8)
 class UPyWidget_LCMN_ClanSelect_DualCard final : public UPyMarvelListEntryWidget
 {
 public:
 	void OnInitialized();
+	void Destruct();
 	void PyOnListItemObjectSet(class UObject* ListItemObject);
 	void PyOnEntryReleased();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_ClanSelect_DualCard">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_ClanSelect_DualCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_ClanSelect_DualCard")
 	}
 	static class UPyWidget_LCMN_ClanSelect_DualCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_ClanSelect_DualCard>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_ClanSelect_DualCard) == 0x000008, "Wrong alignment on UPyWidget_LCMN_ClanSelect_DualCard");
-static_assert(sizeof(UPyWidget_LCMN_ClanSelect_DualCard) == 0x0005F0, "Wrong size on UPyWidget_LCMN_ClanSelect_DualCard");
+DUMPER7_ASSERTS_UPyWidget_LCMN_ClanSelect_DualCard;
 
 }
 

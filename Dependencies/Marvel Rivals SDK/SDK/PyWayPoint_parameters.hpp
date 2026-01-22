@@ -21,9 +21,7 @@ struct PyWayPoint_CheckValid final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWayPoint_CheckValid) == 0x000001, "Wrong alignment on PyWayPoint_CheckValid");
-static_assert(sizeof(PyWayPoint_CheckValid) == 0x000001, "Wrong size on PyWayPoint_CheckValid");
-static_assert(offsetof(PyWayPoint_CheckValid, ReturnValue) == 0x000000, "Member 'PyWayPoint_CheckValid::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWayPoint_CheckValid;
 
 }
 

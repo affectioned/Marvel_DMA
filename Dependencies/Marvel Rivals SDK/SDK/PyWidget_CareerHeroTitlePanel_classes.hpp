@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitlePanel
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_CareerHeroTitlePanel final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
@@ -30,23 +30,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHeroTitlePanel">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHeroTitlePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHeroTitlePanel")
 	}
 	static class UPyWidget_CareerHeroTitlePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHeroTitlePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHeroTitlePanel) == 0x000008, "Wrong alignment on UPyWidget_CareerHeroTitlePanel");
-static_assert(sizeof(UPyWidget_CareerHeroTitlePanel) == 0x000600, "Wrong size on UPyWidget_CareerHeroTitlePanel");
+DUMPER7_ASSERTS_UPyWidget_CareerHeroTitlePanel;
 
 // PythonClass PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleList
-// 0x0018 (0x05E8 - 0x05D0)
+// 0x0018 (0x05F0 - 0x05D8)
 class UPyWidget_CareerHeroTitleList final : public UPyWidget_CareerCustomizeItemList
 {
 public:
-	class UTexture2D*                             All_Icon;                                          // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 HeroID)>  OnHeroChange;                                      // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UTexture2D*                             All_Icon;                                          // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 HeroID)>  OnHeroChange;                                      // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -55,31 +58,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHeroTitleList">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHeroTitleList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHeroTitleList")
 	}
 	static class UPyWidget_CareerHeroTitleList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHeroTitleList>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHeroTitleList) == 0x000008, "Wrong alignment on UPyWidget_CareerHeroTitleList");
-static_assert(sizeof(UPyWidget_CareerHeroTitleList) == 0x0005E8, "Wrong size on UPyWidget_CareerHeroTitleList");
-static_assert(offsetof(UPyWidget_CareerHeroTitleList, All_Icon) == 0x0005D0, "Member 'UPyWidget_CareerHeroTitleList::All_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleList, OnHeroChange) == 0x0005D8, "Member 'UPyWidget_CareerHeroTitleList::OnHeroChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHeroTitleList;
 
 // PythonClass PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem
-// 0x0080 (0x0940 - 0x08C0)
+// 0x0080 (0x09A0 - 0x0920)
 class UPyWidget_CareerHeroTitleItem final : public UPyWidget_CareerCustomizeItemBase
 {
 public:
-	struct FLinearColor                           HeroIconImg_HoverColor;                            // 0x08B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           HeroIconImg_UnhoverColor;                          // 0x08C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ExclusiveBgImg_HoverColor;                         // 0x08D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ExclusiveBgImg_UnhoverColor;                       // 0x08E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ExclusiveBgImg_Lock_HoverColor;                    // 0x08F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ExclusiveBgImg_Lock_UnhoverColor;                  // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Title_Lock_Default_Color;                          // 0x0918(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Title_Default_Color;                               // 0x092C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HeroIconImg_HoverColor;                            // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           HeroIconImg_UnhoverColor;                          // 0x0928(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ExclusiveBgImg_HoverColor;                         // 0x0938(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ExclusiveBgImg_UnhoverColor;                       // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ExclusiveBgImg_Lock_HoverColor;                    // 0x0958(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ExclusiveBgImg_Lock_UnhoverColor;                  // 0x0968(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Title_Lock_Default_Color;                          // 0x0978(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Title_Default_Color;                               // 0x098C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void SetItemData(const class FString& ItemID, EItemType ItemType, int32 ItemNum, int32 Multiple);
@@ -92,23 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHeroTitleItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHeroTitleItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHeroTitleItem")
 	}
 	static class UPyWidget_CareerHeroTitleItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHeroTitleItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHeroTitleItem) == 0x000010, "Wrong alignment on UPyWidget_CareerHeroTitleItem");
-static_assert(sizeof(UPyWidget_CareerHeroTitleItem) == 0x000940, "Wrong size on UPyWidget_CareerHeroTitleItem");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, HeroIconImg_HoverColor) == 0x0008B8, "Member 'UPyWidget_CareerHeroTitleItem::HeroIconImg_HoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, HeroIconImg_UnhoverColor) == 0x0008C8, "Member 'UPyWidget_CareerHeroTitleItem::HeroIconImg_UnhoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, ExclusiveBgImg_HoverColor) == 0x0008D8, "Member 'UPyWidget_CareerHeroTitleItem::ExclusiveBgImg_HoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, ExclusiveBgImg_UnhoverColor) == 0x0008E8, "Member 'UPyWidget_CareerHeroTitleItem::ExclusiveBgImg_UnhoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, ExclusiveBgImg_Lock_HoverColor) == 0x0008F8, "Member 'UPyWidget_CareerHeroTitleItem::ExclusiveBgImg_Lock_HoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, ExclusiveBgImg_Lock_UnhoverColor) == 0x000908, "Member 'UPyWidget_CareerHeroTitleItem::ExclusiveBgImg_Lock_UnhoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, Title_Lock_Default_Color) == 0x000918, "Member 'UPyWidget_CareerHeroTitleItem::Title_Lock_Default_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroTitleItem, Title_Default_Color) == 0x00092C, "Member 'UPyWidget_CareerHeroTitleItem::Title_Default_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHeroTitleItem;
 
 }
 

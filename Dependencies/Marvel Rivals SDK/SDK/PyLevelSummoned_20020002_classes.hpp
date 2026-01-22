@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // PythonClass PyLevelSummoned_20020002.PyLevelSummoned_20020002
-// 0x0040 (0x1480 - 0x1440)
+// 0x0040 (0x14F0 - 0x14B0)
 class APyLevelSummoned_20020002 final : public ASummonedCharacterBase
 {
 public:
-	uint8                                         Pad_1438[0x8];                                     // 0x1438(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ResetInterval;                                     // 0x1440(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1444[0x4];                                     // 0x1444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ResetAudio;                                        // 0x1448(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EffectRefreshSpeed;                                // 0x1450(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RemainDelay;                                       // 0x1454(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 State;                                             // 0x1458(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EffectState;                                       // 0x1468(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14A8[0x8];                                     // 0x14A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ResetInterval;                                     // 0x14B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14B4[0x4];                                     // 0x14B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ResetAudio;                                        // 0x14B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EffectRefreshSpeed;                                // 0x14C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RemainDelay;                                       // 0x14C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 State;                                             // 0x14C8(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EffectState;                                       // 0x14D8(0x0010)(BlueprintVisible, Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -49,21 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_20020002">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_20020002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_20020002")
 	}
 	static class APyLevelSummoned_20020002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_20020002>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_20020002) == 0x000010, "Wrong alignment on APyLevelSummoned_20020002");
-static_assert(sizeof(APyLevelSummoned_20020002) == 0x001480, "Wrong size on APyLevelSummoned_20020002");
-static_assert(offsetof(APyLevelSummoned_20020002, ResetInterval) == 0x001440, "Member 'APyLevelSummoned_20020002::ResetInterval' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020002, ResetAudio) == 0x001448, "Member 'APyLevelSummoned_20020002::ResetAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020002, EffectRefreshSpeed) == 0x001450, "Member 'APyLevelSummoned_20020002::EffectRefreshSpeed' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020002, RemainDelay) == 0x001454, "Member 'APyLevelSummoned_20020002::RemainDelay' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020002, State) == 0x001458, "Member 'APyLevelSummoned_20020002::State' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020002, EffectState) == 0x001468, "Member 'APyLevelSummoned_20020002::EffectState' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_20020002;
 
 }
 

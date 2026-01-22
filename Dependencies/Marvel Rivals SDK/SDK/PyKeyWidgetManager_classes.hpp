@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyKeyWidgetManager.PyKeyWidgetManager
-// 0x0000 (0x0038 - 0x0038)
+// 0x0000 (0x0040 - 0x0040)
 class UPyKeyWidgetManager final : public UMarvelWorldSubsystem
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKeyWidgetManager">();
+		STATIC_CLASS_IMPL("PyKeyWidgetManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKeyWidgetManager")
 	}
 	static class UPyKeyWidgetManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyKeyWidgetManager>();
 	}
 };
-static_assert(alignof(UPyKeyWidgetManager) == 0x000008, "Wrong alignment on UPyKeyWidgetManager");
-static_assert(sizeof(UPyKeyWidgetManager) == 0x000038, "Wrong size on UPyKeyWidgetManager");
+DUMPER7_ASSERTS_UPyKeyWidgetManager;
 
 }
 

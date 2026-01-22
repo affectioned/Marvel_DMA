@@ -32,19 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWayPointManager">();
+		STATIC_CLASS_IMPL("PyWayPointManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWayPointManager")
 	}
 	static class APyWayPointManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyWayPointManager>();
 	}
 };
-static_assert(alignof(APyWayPointManager) == 0x000010, "Wrong alignment on APyWayPointManager");
-static_assert(sizeof(APyWayPointManager) == 0x0007B0, "Wrong size on APyWayPointManager");
-static_assert(offsetof(APyWayPointManager, MaxValidSurvivalTime) == 0x0007A0, "Member 'APyWayPointManager::MaxValidSurvivalTime' has a wrong offset!");
-static_assert(offsetof(APyWayPointManager, MinValidSurvivalTime) == 0x0007A4, "Member 'APyWayPointManager::MinValidSurvivalTime' has a wrong offset!");
-static_assert(offsetof(APyWayPointManager, PredicateSurvivalTime) == 0x0007A8, "Member 'APyWayPointManager::PredicateSurvivalTime' has a wrong offset!");
-static_assert(offsetof(APyWayPointManager, AdditionalSurvivalTime) == 0x0007AC, "Member 'APyWayPointManager::AdditionalSurvivalTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyWayPointManager;
 
 }
 

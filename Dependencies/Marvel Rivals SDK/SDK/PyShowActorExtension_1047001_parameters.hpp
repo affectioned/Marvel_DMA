@@ -23,9 +23,7 @@ struct PyShowActorExtension_1047001_SetShowActorStage final
 public:
 	EShowActorStage                               ShowActorStage;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1047001_SetShowActorStage) == 0x000001, "Wrong alignment on PyShowActorExtension_1047001_SetShowActorStage");
-static_assert(sizeof(PyShowActorExtension_1047001_SetShowActorStage) == 0x000001, "Wrong size on PyShowActorExtension_1047001_SetShowActorStage");
-static_assert(offsetof(PyShowActorExtension_1047001_SetShowActorStage, ShowActorStage) == 0x000000, "Member 'PyShowActorExtension_1047001_SetShowActorStage::ShowActorStage' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1047001_SetShowActorStage;
 
 // PythonFunction PyShowActorExtension_1047001.PyShowActorExtension_1047001.Tick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyShowActorExtension_1047001_Tick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorExtension_1047001_Tick) == 0x000004, "Wrong alignment on PyShowActorExtension_1047001_Tick");
-static_assert(sizeof(PyShowActorExtension_1047001_Tick) == 0x000004, "Wrong size on PyShowActorExtension_1047001_Tick");
-static_assert(offsetof(PyShowActorExtension_1047001_Tick, DeltaSeconds) == 0x000000, "Member 'PyShowActorExtension_1047001_Tick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorExtension_1047001_Tick;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelReplaySubsystem">();
+		STATIC_CLASS_IMPL("PyMarvelReplaySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelReplaySubsystem")
 	}
 	static class UPyMarvelReplaySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelReplaySubsystem>();
 	}
 };
-static_assert(alignof(UPyMarvelReplaySubsystem) == 0x000008, "Wrong alignment on UPyMarvelReplaySubsystem");
-static_assert(sizeof(UPyMarvelReplaySubsystem) == 0x000148, "Wrong size on UPyMarvelReplaySubsystem");
+DUMPER7_ASSERTS_UPyMarvelReplaySubsystem;
 
 }
 

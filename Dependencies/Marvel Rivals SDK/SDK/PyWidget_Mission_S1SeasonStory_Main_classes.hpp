@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_S1SeasonStory_Main.PyWidget_Mission_S1SeasonStory_Main
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Mission_S1SeasonStory_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUserWidget*>                    GroupList;                                         // 0x05C0(0x0010)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UUserWidget*>                    GroupList;                                         // 0x05C8(0x0010)(NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S1SeasonStory_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S1SeasonStory_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S1SeasonStory_Main")
 	}
 	static class UPyWidget_Mission_S1SeasonStory_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S1SeasonStory_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S1SeasonStory_Main) == 0x000008, "Wrong alignment on UPyWidget_Mission_S1SeasonStory_Main");
-static_assert(sizeof(UPyWidget_Mission_S1SeasonStory_Main) == 0x0005D0, "Wrong size on UPyWidget_Mission_S1SeasonStory_Main");
-static_assert(offsetof(UPyWidget_Mission_S1SeasonStory_Main, GroupList) == 0x0005C0, "Member 'UPyWidget_Mission_S1SeasonStory_Main::GroupList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_S1SeasonStory_Main;
 
 }
 

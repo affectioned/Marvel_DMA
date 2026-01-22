@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Window.WBP_Setting_Window_C
-// 0x00F8 (0x04B0 - 0x03B8)
+// 0x0108 (0x04C0 - 0x03B8)
 class UWBP_Setting_Window_C final : public UUserWidget
 {
 public:
@@ -43,16 +43,18 @@ public:
 	class UNamedSlot*                             Slot_SettingContent;                               // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USpacer*                                Spacer_Top;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMarvelTextBlock*                       Text_HeroName;                                     // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Describe_Tips_V2_C*        WBP_DescribeTips_V2;                               // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroHead_Spuare_C*          WBP_HeroHead_Spuare;                               // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Describe_Tips_V2_C*        WBP_NotBind_DescribeTips;                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroHead_Spuare_C*          WBP_Select_HeroHead;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Describe_C*                WBP_Setting_Describe;                              // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DropDownList_Light_C*              WBP_Setting_DropdownList;                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Item_C*                    WBP_Setting_HightLight;                            // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_MiniKeyBoard_New_C*        WBP_Setting_MiniKeyBoard;                          // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_MiniKeyBoard_Mouse_Test_C* WBP_Setting_MiniKeyBoard_Mouse;                    // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTexture2D*                             All_Icon;                                          // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Common_HeroRoleIcon_C*             WBP_Common_HeroRoleIcon;                           // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroRoleIcon_C*             WBP_Common_HeroRoleIcon_1;                         // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Describe_Tips_V2_C*        WBP_DescribeTips_V2;                               // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          WBP_HeroHead_Spuare;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Describe_Tips_V2_C*        WBP_NotBind_DescribeTips;                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          WBP_Select_HeroHead;                               // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Describe_C*                WBP_Setting_Describe;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DropDownList_Light_C*              WBP_Setting_DropdownList;                          // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Item_C*                    WBP_Setting_HightLight;                            // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_MiniKeyBoard_New_C*        WBP_Setting_MiniKeyBoard;                          // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_MiniKeyBoard_Mouse_Test_C* WBP_Setting_MiniKeyBoard_Mouse;                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTexture2D*                             All_Icon;                                          // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -61,46 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Window_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Window_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Window_C")
 	}
 	static class UWBP_Setting_Window_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Window_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Window_C) == 0x000008, "Wrong alignment on UWBP_Setting_Window_C");
-static_assert(sizeof(UWBP_Setting_Window_C) == 0x0004B0, "Wrong size on UWBP_Setting_Window_C");
-static_assert(offsetof(UWBP_Setting_Window_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_Setting_Window_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Anim_Fadein) == 0x0003C0, "Member 'UWBP_Setting_Window_C::Anim_Fadein' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Bg_MiniKeyBoard) == 0x0003C8, "Member 'UWBP_Setting_Window_C::Bg_MiniKeyBoard' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Btn_Reset) == 0x0003D0, "Member 'UWBP_Setting_Window_C::Btn_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Btn_SelectHero) == 0x0003D8, "Member 'UWBP_Setting_Window_C::Btn_SelectHero' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Btn_SwitchHero) == 0x0003E0, "Member 'UWBP_Setting_Window_C::Btn_SwitchHero' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Image_1) == 0x0003E8, "Member 'UWBP_Setting_Window_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Image_Description_Bg) == 0x0003F0, "Member 'UWBP_Setting_Window_C::Image_Description_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Img_Change) == 0x0003F8, "Member 'UWBP_Setting_Window_C::Img_Change' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Img_HeroHeadBg) == 0x000400, "Member 'UWBP_Setting_Window_C::Img_HeroHeadBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Img_line) == 0x000408, "Member 'UWBP_Setting_Window_C::Img_line' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, img_SelectHero_Hover) == 0x000410, "Member 'UWBP_Setting_Window_C::img_SelectHero_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Img_Tips) == 0x000418, "Member 'UWBP_Setting_Window_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Overlay_MiniKeyBoard) == 0x000420, "Member 'UWBP_Setting_Window_C::Overlay_MiniKeyBoard' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Overlay_Reset) == 0x000428, "Member 'UWBP_Setting_Window_C::Overlay_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Overlay_SwitchHero) == 0x000430, "Member 'UWBP_Setting_Window_C::Overlay_SwitchHero' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Panel_Mask) == 0x000438, "Member 'UWBP_Setting_Window_C::Panel_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, ScrollBox_List) == 0x000440, "Member 'UWBP_Setting_Window_C::ScrollBox_List' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Slot_SettingContent) == 0x000448, "Member 'UWBP_Setting_Window_C::Slot_SettingContent' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Spacer_Top) == 0x000450, "Member 'UWBP_Setting_Window_C::Spacer_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, Text_HeroName) == 0x000458, "Member 'UWBP_Setting_Window_C::Text_HeroName' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_DescribeTips_V2) == 0x000460, "Member 'UWBP_Setting_Window_C::WBP_DescribeTips_V2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_HeroHead_Spuare) == 0x000468, "Member 'UWBP_Setting_Window_C::WBP_HeroHead_Spuare' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_NotBind_DescribeTips) == 0x000470, "Member 'UWBP_Setting_Window_C::WBP_NotBind_DescribeTips' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Select_HeroHead) == 0x000478, "Member 'UWBP_Setting_Window_C::WBP_Select_HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Setting_Describe) == 0x000480, "Member 'UWBP_Setting_Window_C::WBP_Setting_Describe' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Setting_DropdownList) == 0x000488, "Member 'UWBP_Setting_Window_C::WBP_Setting_DropdownList' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Setting_HightLight) == 0x000490, "Member 'UWBP_Setting_Window_C::WBP_Setting_HightLight' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Setting_MiniKeyBoard) == 0x000498, "Member 'UWBP_Setting_Window_C::WBP_Setting_MiniKeyBoard' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, WBP_Setting_MiniKeyBoard_Mouse) == 0x0004A0, "Member 'UWBP_Setting_Window_C::WBP_Setting_MiniKeyBoard_Mouse' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Window_C, All_Icon) == 0x0004A8, "Member 'UWBP_Setting_Window_C::All_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Window_C;
 
 }
 

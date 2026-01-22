@@ -23,9 +23,7 @@ struct PyAbility_102121_OnPressOne final
 public:
 	float                                         Useless;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_OnPressOne) == 0x000004, "Wrong alignment on PyAbility_102121_OnPressOne");
-static_assert(sizeof(PyAbility_102121_OnPressOne) == 0x000004, "Wrong size on PyAbility_102121_OnPressOne");
-static_assert(offsetof(PyAbility_102121_OnPressOne, Useless) == 0x000000, "Member 'PyAbility_102121_OnPressOne::Useless' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_OnPressOne;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.OnPressTwo
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_102121_OnPressTwo final
 public:
 	float                                         Useless;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_OnPressTwo) == 0x000004, "Wrong alignment on PyAbility_102121_OnPressTwo");
-static_assert(sizeof(PyAbility_102121_OnPressTwo) == 0x000004, "Wrong size on PyAbility_102121_OnPressTwo");
-static_assert(offsetof(PyAbility_102121_OnPressTwo, Useless) == 0x000000, "Member 'PyAbility_102121_OnPressTwo::Useless' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_OnPressTwo;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.OnScrollMouseWheel
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAbility_102121_OnScrollMouseWheel final
 public:
 	float                                         Useless;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_OnScrollMouseWheel) == 0x000004, "Wrong alignment on PyAbility_102121_OnScrollMouseWheel");
-static_assert(sizeof(PyAbility_102121_OnScrollMouseWheel) == 0x000004, "Wrong size on PyAbility_102121_OnScrollMouseWheel");
-static_assert(offsetof(PyAbility_102121_OnScrollMouseWheel, Useless) == 0x000000, "Member 'PyAbility_102121_OnScrollMouseWheel::Useless' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_OnScrollMouseWheel;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.TryChangeArrow
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAbility_102121_TryChangeArrow final
 public:
 	EHawkeyeArrowType                             target_arrow_type;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_TryChangeArrow) == 0x000001, "Wrong alignment on PyAbility_102121_TryChangeArrow");
-static_assert(sizeof(PyAbility_102121_TryChangeArrow) == 0x000001, "Wrong size on PyAbility_102121_TryChangeArrow");
-static_assert(offsetof(PyAbility_102121_TryChangeArrow, target_arrow_type) == 0x000000, "Member 'PyAbility_102121_TryChangeArrow::target_arrow_type' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_TryChangeArrow;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyAbility_102121_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_CanActivate) == 0x000001, "Wrong alignment on PyAbility_102121_CanActivate");
-static_assert(sizeof(PyAbility_102121_CanActivate) == 0x000001, "Wrong size on PyAbility_102121_CanActivate");
-static_assert(offsetof(PyAbility_102121_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_102121_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_CanActivate;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +68,7 @@ struct PyAbility_102121_K2_OnEndAbility final
 public:
 	bool                                          Cancel;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102121_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102121_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102121_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102121_K2_OnEndAbility, Cancel) == 0x000000, "Member 'PyAbility_102121_K2_OnEndAbility::Cancel' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_K2_OnEndAbility;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -89,9 +77,7 @@ struct PyAbility_102121_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_102121_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_102121_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_102121_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_102121_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_102121_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -100,9 +86,7 @@ struct PyAbility_102121_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_102121_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_102121_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_102121_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_102121_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_102121_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_102121.PyAbility_102121.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -111,9 +95,7 @@ struct PyAbility_102121_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102121_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_102121_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_102121_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_102121_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_102121_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_102121_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102121_NativeOnMontageCancelled;
 
 }
 

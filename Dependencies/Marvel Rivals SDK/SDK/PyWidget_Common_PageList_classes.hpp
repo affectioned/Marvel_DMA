@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_PageList.PyWidget_Common_PageList
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Common_PageList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PreViewPageCoint;                                  // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageItemClass;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                PageItemPadding;                                   // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 PageID)>  OnPageIDChanged;                                   // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PreViewPageCoint;                                  // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageItemClass;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                PageItemPadding;                                   // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 PageID)>  OnPageIDChanged;                                   // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PageList">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PageList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PageList")
 	}
 	static class UPyWidget_Common_PageList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PageList>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PageList) == 0x000008, "Wrong alignment on UPyWidget_Common_PageList");
-static_assert(sizeof(UPyWidget_Common_PageList) == 0x0005E8, "Wrong size on UPyWidget_Common_PageList");
-static_assert(offsetof(UPyWidget_Common_PageList, PreViewPageCoint) == 0x0005BC, "Member 'UPyWidget_Common_PageList::PreViewPageCoint' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PageList, PageItemClass) == 0x0005C0, "Member 'UPyWidget_Common_PageList::PageItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PageList, PageItemPadding) == 0x0005C8, "Member 'UPyWidget_Common_PageList::PageItemPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PageList, OnPageIDChanged) == 0x0005D8, "Member 'UPyWidget_Common_PageList::OnPageIDChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_PageList;
 
 }
 

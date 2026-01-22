@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
+#include "PyBuffAbility_10130_10441026_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_104495_BP.Ability_104495_BP_C
-// 0x0000 (0x29F8 - 0x29F8)
-class Ability_104495_BP::UAbility_104495_BP_C final : public UAbility_108
+// 0x0000 (0x2AB0 - 0x2AB0)
+class Ability_104495_BP::UAbility_104495_BP_C final : public UPyAbility_10130_104495
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass Ability_104495_BP.Ability_104495_BP_C", true, "Ability_104495_BP_C">();
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass Ability_104495_BP.Ability_104495_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_104495_BP_C")
 	}
 	static class Ability_104495_BP::UAbility_104495_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Ability_104495_BP::UAbility_104495_BP_C>();
 	}
 };
-static_assert(alignof(Ability_104495_BP::UAbility_104495_BP_C) == 0x000008, "Wrong alignment on Ability_104495_BP::UAbility_104495_BP_C");
-static_assert(sizeof(Ability_104495_BP::UAbility_104495_BP_C) == 0x0029F8, "Wrong size on Ability_104495_BP::UAbility_104495_BP_C");
+DUMPER7_ASSERTS_Ability_104495_BP__UAbility_104495_BP_C;
 
 }
 

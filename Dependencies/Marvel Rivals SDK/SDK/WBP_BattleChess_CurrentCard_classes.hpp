@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_BattleChessCardCategoryToolTips_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_BattleChessCardCategoryToolTips_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleChess_CurrentCard.WBP_BattleChess_CurrentCard_C
-// 0x0078 (0x0660 - 0x05E8)
+// 0x0078 (0x0668 - 0x05F0)
 class UWBP_BattleChess_CurrentCard_C final : public UPyWidget_BattleChessCardCategoryToolTipsUnit
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelButton*                          Btn_Focus;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_Star;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Icon_Card;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Round;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_CurrentCardBg;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame_HeroHead;                                // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_RoundBg;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_HeroHead;                                  // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   RichText_Bonus;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Round;                                     // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_CardName;                                     // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_RoundNum;                                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BattleChess_StarList_C*            WBP_BattleChess_StarList;                          // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroHead_Spuare_C*          WBP_HeroHead;                                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelButton*                          Btn_Focus;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_Star;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Icon_Card;                                         // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Round;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_CurrentCardBg;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame_HeroHead;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_RoundBg;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_HeroHead;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_Bonus;                                    // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Round;                                     // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_CardName;                                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_RoundNum;                                     // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BattleChess_StarList_C*            WBP_BattleChess_StarList;                          // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          WBP_HeroHead;                                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void OnListItemObjectSet(class UObject* ListItemObject);
@@ -48,30 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleChess_CurrentCard_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleChess_CurrentCard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleChess_CurrentCard_C")
 	}
 	static class UWBP_BattleChess_CurrentCard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleChess_CurrentCard_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleChess_CurrentCard_C) == 0x000008, "Wrong alignment on UWBP_BattleChess_CurrentCard_C");
-static_assert(sizeof(UWBP_BattleChess_CurrentCard_C) == 0x000660, "Wrong size on UWBP_BattleChess_CurrentCard_C");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, UberGraphFrame) == 0x0005E8, "Member 'UWBP_BattleChess_CurrentCard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Btn_Focus) == 0x0005F0, "Member 'UWBP_BattleChess_CurrentCard_C::Btn_Focus' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, HBox_Star) == 0x0005F8, "Member 'UWBP_BattleChess_CurrentCard_C::HBox_Star' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Icon_Card) == 0x000600, "Member 'UWBP_BattleChess_CurrentCard_C::Icon_Card' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Icon_Round) == 0x000608, "Member 'UWBP_BattleChess_CurrentCard_C::Icon_Round' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Img_CurrentCardBg) == 0x000610, "Member 'UWBP_BattleChess_CurrentCard_C::Img_CurrentCardBg' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Img_Frame_HeroHead) == 0x000618, "Member 'UWBP_BattleChess_CurrentCard_C::Img_Frame_HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Img_RoundBg) == 0x000620, "Member 'UWBP_BattleChess_CurrentCard_C::Img_RoundBg' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Overlay_HeroHead) == 0x000628, "Member 'UWBP_BattleChess_CurrentCard_C::Overlay_HeroHead' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, RichText_Bonus) == 0x000630, "Member 'UWBP_BattleChess_CurrentCard_C::RichText_Bonus' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, SizeBox_Round) == 0x000638, "Member 'UWBP_BattleChess_CurrentCard_C::SizeBox_Round' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Text_CardName) == 0x000640, "Member 'UWBP_BattleChess_CurrentCard_C::Text_CardName' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, Text_RoundNum) == 0x000648, "Member 'UWBP_BattleChess_CurrentCard_C::Text_RoundNum' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, WBP_BattleChess_StarList) == 0x000650, "Member 'UWBP_BattleChess_CurrentCard_C::WBP_BattleChess_StarList' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_CurrentCard_C, WBP_HeroHead) == 0x000658, "Member 'UWBP_BattleChess_CurrentCard_C::WBP_HeroHead' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BattleChess_CurrentCard_C;
 
 }
 

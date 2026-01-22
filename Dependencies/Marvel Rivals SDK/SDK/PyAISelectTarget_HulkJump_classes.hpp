@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_HulkJump">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_HulkJump")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_HulkJump")
 	}
 	static class UPyAISelectTarget_HulkJump* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_HulkJump>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_HulkJump) == 0x000008, "Wrong alignment on UPyAISelectTarget_HulkJump");
-static_assert(sizeof(UPyAISelectTarget_HulkJump) == 0x000078, "Wrong size on UPyAISelectTarget_HulkJump");
-static_assert(offsetof(UPyAISelectTarget_HulkJump, RandomRadius) == 0x000070, "Member 'UPyAISelectTarget_HulkJump::RandomRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_HulkJump;
 
 }
 

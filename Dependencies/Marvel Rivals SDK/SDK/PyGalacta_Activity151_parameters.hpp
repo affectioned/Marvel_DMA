@@ -23,9 +23,7 @@ struct PyGalacta_Activity151_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGalacta_Activity151_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyGalacta_Activity151_ReceiveEndPlay");
-static_assert(sizeof(PyGalacta_Activity151_ReceiveEndPlay) == 0x000001, "Wrong size on PyGalacta_Activity151_ReceiveEndPlay");
-static_assert(offsetof(PyGalacta_Activity151_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyGalacta_Activity151_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyGalacta_Activity151_ReceiveEndPlay;
 
 }
 

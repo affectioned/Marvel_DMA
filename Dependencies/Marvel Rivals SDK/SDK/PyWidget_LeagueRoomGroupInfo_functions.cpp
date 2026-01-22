@@ -41,5 +41,24 @@ void UPyWidget_LeagueRoomGroupInfo::PreConstruct(bool IsDesignTime)
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_LeagueRoomGroupInfo.PyWidget_LeagueRoomGroupInfo.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LeagueRoomGroupInfo::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueRoomGroupInfo", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

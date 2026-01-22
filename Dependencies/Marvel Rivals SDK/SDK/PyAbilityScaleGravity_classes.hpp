@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbilityScaleGravity.PyAbilityScaleGravity
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyAbilityScaleGravity final : public UEffectAbility_ScaleGravity
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityScaleGravity">();
+		STATIC_CLASS_IMPL("PyAbilityScaleGravity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityScaleGravity")
 	}
 	static class UPyAbilityScaleGravity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilityScaleGravity>();
 	}
 };
-static_assert(alignof(UPyAbilityScaleGravity) == 0x000008, "Wrong alignment on UPyAbilityScaleGravity");
-static_assert(sizeof(UPyAbilityScaleGravity) == 0x001370, "Wrong size on UPyAbilityScaleGravity");
+DUMPER7_ASSERTS_UPyAbilityScaleGravity;
 
 }
 

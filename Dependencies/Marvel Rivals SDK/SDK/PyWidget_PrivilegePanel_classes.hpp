@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PrivilegePanel.PyWidget_PrivilegePanel
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_PrivilegePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                SkinItem;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageBtntem;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemNumPerPage;                                    // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SkinItem;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageBtntem;                                        // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemNumPerPage;                                    // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,18 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PrivilegePanel">();
+		STATIC_CLASS_IMPL("PyWidget_PrivilegePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PrivilegePanel")
 	}
 	static class UPyWidget_PrivilegePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PrivilegePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PrivilegePanel) == 0x000008, "Wrong alignment on UPyWidget_PrivilegePanel");
-static_assert(sizeof(UPyWidget_PrivilegePanel) == 0x000610, "Wrong size on UPyWidget_PrivilegePanel");
-static_assert(offsetof(UPyWidget_PrivilegePanel, SkinItem) == 0x0005F8, "Member 'UPyWidget_PrivilegePanel::SkinItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegePanel, PageBtntem) == 0x000600, "Member 'UPyWidget_PrivilegePanel::PageBtntem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegePanel, ItemNumPerPage) == 0x000608, "Member 'UPyWidget_PrivilegePanel::ItemNumPerPage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PrivilegePanel;
 
 }
 

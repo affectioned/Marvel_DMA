@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_CommonBush008A.SM_CommonBush008A_C
-// 0x0010 (0x0700 - 0x06F0)
+// 0x0010 (0x0710 - 0x0700)
 class ASM_CommonBush008A_C final : public AEnvironmentFoliageActor_C
 {
 public:
-	class UEnvironmentActorTransitionComponent*   EnvironmentActorTransition;                        // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UEnvironmentActorTransitionComponent*   EnvironmentActorTransition;                        // 0x0700(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_CommonBush008A_C">();
+		BP_STATIC_CLASS_IMPL("SM_CommonBush008A_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_CommonBush008A_C")
 	}
 	static class ASM_CommonBush008A_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_CommonBush008A_C>();
 	}
 };
-static_assert(alignof(ASM_CommonBush008A_C) == 0x000010, "Wrong alignment on ASM_CommonBush008A_C");
-static_assert(sizeof(ASM_CommonBush008A_C) == 0x000700, "Wrong size on ASM_CommonBush008A_C");
-static_assert(offsetof(ASM_CommonBush008A_C, EnvironmentActorTransition) == 0x0006F0, "Member 'ASM_CommonBush008A_C::EnvironmentActorTransition' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_CommonBush008A_C;
 
 }
 

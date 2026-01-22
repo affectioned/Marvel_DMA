@@ -23,11 +23,7 @@ public:
 	float                                         DataCollectStart;                                  // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DataCollectEnd;                                    // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBenchmarkTime) == 0x000004, "Wrong alignment on FBenchmarkTime");
-static_assert(sizeof(FBenchmarkTime) == 0x00000C, "Wrong size on FBenchmarkTime");
-static_assert(offsetof(FBenchmarkTime, Duration) == 0x000000, "Member 'FBenchmarkTime::Duration' has a wrong offset!");
-static_assert(offsetof(FBenchmarkTime, DataCollectStart) == 0x000004, "Member 'FBenchmarkTime::DataCollectStart' has a wrong offset!");
-static_assert(offsetof(FBenchmarkTime, DataCollectEnd) == 0x000008, "Member 'FBenchmarkTime::DataCollectEnd' has a wrong offset!");
+DUMPER7_ASSERTS_FBenchmarkTime;
 
 }
 

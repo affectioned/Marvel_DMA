@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorExtension_FocusGlass">();
+		STATIC_CLASS_IMPL("PyShowActorExtension_FocusGlass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorExtension_FocusGlass")
 	}
 	static class UPyShowActorExtension_FocusGlass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorExtension_FocusGlass>();
 	}
 };
-static_assert(alignof(UPyShowActorExtension_FocusGlass) == 0x000008, "Wrong alignment on UPyShowActorExtension_FocusGlass");
-static_assert(sizeof(UPyShowActorExtension_FocusGlass) == 0x000030, "Wrong size on UPyShowActorExtension_FocusGlass");
+DUMPER7_ASSERTS_UPyShowActorExtension_FocusGlass;
 
 }
 

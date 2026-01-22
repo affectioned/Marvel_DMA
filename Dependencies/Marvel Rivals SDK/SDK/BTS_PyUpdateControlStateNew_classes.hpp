@@ -40,24 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateControlStateNew">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateControlStateNew")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateControlStateNew")
 	}
 	static class UBTS_PyUpdateControlStateNew* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateControlStateNew>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateControlStateNew) == 0x000008, "Wrong alignment on UBTS_PyUpdateControlStateNew");
-static_assert(sizeof(UBTS_PyUpdateControlStateNew) == 0x0002F0, "Wrong size on UBTS_PyUpdateControlStateNew");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, InFrontier) == 0x000140, "Member 'UBTS_PyUpdateControlStateNew::InFrontier' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutAllyScore) == 0x000170, "Member 'UBTS_PyUpdateControlStateNew::OutAllyScore' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutEnemyScore) == 0x0001A0, "Member 'UBTS_PyUpdateControlStateNew::OutEnemyScore' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutOccupyState) == 0x0001D0, "Member 'UBTS_PyUpdateControlStateNew::OutOccupyState' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutGameStage) == 0x000200, "Member 'UBTS_PyUpdateControlStateNew::OutGameStage' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutTotalScore) == 0x000230, "Member 'UBTS_PyUpdateControlStateNew::OutTotalScore' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutProgress) == 0x000260, "Member 'UBTS_PyUpdateControlStateNew::OutProgress' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutAllyCampProgress) == 0x000290, "Member 'UBTS_PyUpdateControlStateNew::OutAllyCampProgress' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateControlStateNew, OutEnemyCampProgress) == 0x0002C0, "Member 'UBTS_PyUpdateControlStateNew::OutEnemyCampProgress' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateControlStateNew;
 
 }
 

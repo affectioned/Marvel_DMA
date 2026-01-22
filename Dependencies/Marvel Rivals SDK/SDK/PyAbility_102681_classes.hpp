@@ -23,18 +23,21 @@ class UPyConfig_102681 final : public UMarvelAbilityConfig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102681">();
+		STATIC_CLASS_IMPL("PyConfig_102681")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102681")
 	}
 	static class UPyConfig_102681* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102681>();
 	}
 };
-static_assert(alignof(UPyConfig_102681) == 0x000008, "Wrong alignment on UPyConfig_102681");
-static_assert(sizeof(UPyConfig_102681) == 0x000098, "Wrong size on UPyConfig_102681");
+DUMPER7_ASSERTS_UPyConfig_102681;
 
 // PythonClass PyAbility_102681.PyAbility_102681
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_102681 : public UAbility_108
 {
 public:
@@ -52,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102681">();
+		STATIC_CLASS_IMPL("PyAbility_102681")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102681")
 	}
 	static class UPyAbility_102681* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102681>();
 	}
 };
-static_assert(alignof(UPyAbility_102681) == 0x000008, "Wrong alignment on UPyAbility_102681");
-static_assert(sizeof(UPyAbility_102681) == 0x0029F8, "Wrong size on UPyAbility_102681");
+DUMPER7_ASSERTS_UPyAbility_102681;
 
 }
 

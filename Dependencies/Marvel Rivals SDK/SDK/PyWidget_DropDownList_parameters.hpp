@@ -23,9 +23,7 @@ struct PyWidget_DropDownList_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_DropDownList_PreConstruct");
-static_assert(sizeof(PyWidget_DropDownList_PreConstruct) == 0x000001, "Wrong size on PyWidget_DropDownList_PreConstruct");
-static_assert(offsetof(PyWidget_DropDownList_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_DropDownList_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_PreConstruct;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_DropDownList_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_DropDownList_ShouldEnableInput");
-static_assert(sizeof(PyWidget_DropDownList_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_DropDownList_ShouldEnableInput");
-static_assert(offsetof(PyWidget_DropDownList_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_DropDownList_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_ShouldEnableInput;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_DropDownList_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_DropDownList_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_DropDownList_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_DropDownList_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_DropDownList_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_DropDownList_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetIsExtend
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_DropDownList_SetIsExtend final
 public:
 	bool                                          IsExtended_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_SetIsExtend) == 0x000001, "Wrong alignment on PyWidget_DropDownList_SetIsExtend");
-static_assert(sizeof(PyWidget_DropDownList_SetIsExtend) == 0x000001, "Wrong size on PyWidget_DropDownList_SetIsExtend");
-static_assert(offsetof(PyWidget_DropDownList_SetIsExtend, IsExtended_0) == 0x000000, "Member 'PyWidget_DropDownList_SetIsExtend::IsExtended_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetIsExtend;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_DropDownList_SetEnabled final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_SetEnabled) == 0x000001, "Wrong alignment on PyWidget_DropDownList_SetEnabled");
-static_assert(sizeof(PyWidget_DropDownList_SetEnabled) == 0x000001, "Wrong size on PyWidget_DropDownList_SetEnabled");
-static_assert(offsetof(PyWidget_DropDownList_SetEnabled, Enabled) == 0x000000, "Member 'PyWidget_DropDownList_SetEnabled::Enabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetEnabled;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.GetItemID
 // 0x0004 (0x0004 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_DropDownList_GetItemID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_GetItemID) == 0x000004, "Wrong alignment on PyWidget_DropDownList_GetItemID");
-static_assert(sizeof(PyWidget_DropDownList_GetItemID) == 0x000004, "Wrong size on PyWidget_DropDownList_GetItemID");
-static_assert(offsetof(PyWidget_DropDownList_GetItemID, ReturnValue) == 0x000000, "Member 'PyWidget_DropDownList_GetItemID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_GetItemID;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetItemID
 // 0x0004 (0x0004 - 0x0000)
@@ -89,9 +77,7 @@ struct PyWidget_DropDownList_SetItemID final
 public:
 	int32                                         ItemID_0;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_DropDownList_SetItemID) == 0x000004, "Wrong alignment on PyWidget_DropDownList_SetItemID");
-static_assert(sizeof(PyWidget_DropDownList_SetItemID) == 0x000004, "Wrong size on PyWidget_DropDownList_SetItemID");
-static_assert(offsetof(PyWidget_DropDownList_SetItemID, ItemID_0) == 0x000000, "Member 'PyWidget_DropDownList_SetItemID::ItemID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetItemID;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetItemTextList
 // 0x0010 (0x0010 - 0x0000)
@@ -100,9 +86,7 @@ struct PyWidget_DropDownList_SetItemTextList final
 public:
 	TArray<class FText>                           ItemTextList_0;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_DropDownList_SetItemTextList) == 0x000008, "Wrong alignment on PyWidget_DropDownList_SetItemTextList");
-static_assert(sizeof(PyWidget_DropDownList_SetItemTextList) == 0x000010, "Wrong size on PyWidget_DropDownList_SetItemTextList");
-static_assert(offsetof(PyWidget_DropDownList_SetItemTextList, ItemTextList_0) == 0x000000, "Member 'PyWidget_DropDownList_SetItemTextList::ItemTextList_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetItemTextList;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetItemIconList
 // 0x0010 (0x0010 - 0x0000)
@@ -111,9 +95,7 @@ struct PyWidget_DropDownList_SetItemIconList final
 public:
 	TArray<class UTexture2D*>                     ItemIconList_0;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_DropDownList_SetItemIconList) == 0x000008, "Wrong alignment on PyWidget_DropDownList_SetItemIconList");
-static_assert(sizeof(PyWidget_DropDownList_SetItemIconList) == 0x000010, "Wrong size on PyWidget_DropDownList_SetItemIconList");
-static_assert(offsetof(PyWidget_DropDownList_SetItemIconList, ItemIconList_0) == 0x000000, "Member 'PyWidget_DropDownList_SetItemIconList::ItemIconList_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetItemIconList;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetItemColorList
 // 0x0010 (0x0010 - 0x0000)
@@ -122,9 +104,7 @@ struct PyWidget_DropDownList_SetItemColorList final
 public:
 	TArray<struct FLinearColor>                   item_color_list;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_DropDownList_SetItemColorList) == 0x000008, "Wrong alignment on PyWidget_DropDownList_SetItemColorList");
-static_assert(sizeof(PyWidget_DropDownList_SetItemColorList) == 0x000010, "Wrong size on PyWidget_DropDownList_SetItemColorList");
-static_assert(offsetof(PyWidget_DropDownList_SetItemColorList, item_color_list) == 0x000000, "Member 'PyWidget_DropDownList_SetItemColorList::item_color_list' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetItemColorList;
 
 // PythonFunction PyWidget_DropDownList.PyWidget_DropDownList.SetItemCustomeTagList
 // 0x0010 (0x0010 - 0x0000)
@@ -133,9 +113,7 @@ struct PyWidget_DropDownList_SetItemCustomeTagList final
 public:
 	TArray<class FString>                         item_custom_tag_list;                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_DropDownList_SetItemCustomeTagList) == 0x000008, "Wrong alignment on PyWidget_DropDownList_SetItemCustomeTagList");
-static_assert(sizeof(PyWidget_DropDownList_SetItemCustomeTagList) == 0x000010, "Wrong size on PyWidget_DropDownList_SetItemCustomeTagList");
-static_assert(offsetof(PyWidget_DropDownList_SetItemCustomeTagList, item_custom_tag_list) == 0x000000, "Member 'PyWidget_DropDownList_SetItemCustomeTagList::item_custom_tag_list' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_DropDownList_SetItemCustomeTagList;
 
 }
 

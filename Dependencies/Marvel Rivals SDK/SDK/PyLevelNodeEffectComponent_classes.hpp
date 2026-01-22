@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeEffectComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeEffectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeEffectComponent")
 	}
 	static class UPyLevelNodeEffectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeEffectComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeEffectComponent) == 0x000008, "Wrong alignment on UPyLevelNodeEffectComponent");
-static_assert(sizeof(UPyLevelNodeEffectComponent) == 0x000110, "Wrong size on UPyLevelNodeEffectComponent");
-static_assert(offsetof(UPyLevelNodeEffectComponent, PostProcessMaterial) == 0x000108, "Member 'UPyLevelNodeEffectComponent::PostProcessMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelNodeEffectComponent;
 
 }
 

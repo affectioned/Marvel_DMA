@@ -23,15 +23,18 @@ class UEffect_1201_C final : public UMarvelGameplayEffectTemplate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Effect_1201_C">();
+		BP_STATIC_CLASS_IMPL("Effect_1201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Effect_1201_C")
 	}
 	static class UEffect_1201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffect_1201_C>();
 	}
 };
-static_assert(alignof(UEffect_1201_C) == 0x000008, "Wrong alignment on UEffect_1201_C");
-static_assert(sizeof(UEffect_1201_C) == 0x001438, "Wrong size on UEffect_1201_C");
+DUMPER7_ASSERTS_UEffect_1201_C;
 
 }
 

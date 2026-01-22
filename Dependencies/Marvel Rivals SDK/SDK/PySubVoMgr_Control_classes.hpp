@@ -23,15 +23,18 @@ class UPySubVoMgr_Control final : public UPySubVoMgrBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySubVoMgr_Control">();
+		STATIC_CLASS_IMPL("PySubVoMgr_Control")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySubVoMgr_Control")
 	}
 	static class UPySubVoMgr_Control* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySubVoMgr_Control>();
 	}
 };
-static_assert(alignof(UPySubVoMgr_Control) == 0x000008, "Wrong alignment on UPySubVoMgr_Control");
-static_assert(sizeof(UPySubVoMgr_Control) == 0x000108, "Wrong size on UPySubVoMgr_Control");
+DUMPER7_ASSERTS_UPySubVoMgr_Control;
 
 }
 

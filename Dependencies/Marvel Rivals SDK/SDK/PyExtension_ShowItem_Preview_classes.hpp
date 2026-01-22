@@ -23,15 +23,18 @@ class UPyExtension_ShowItem_Preview final : public UPyExtension_ShowItemBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_Preview">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_Preview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_Preview")
 	}
 	static class UPyExtension_ShowItem_Preview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_Preview>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_Preview) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_Preview");
-static_assert(sizeof(UPyExtension_ShowItem_Preview) == 0x000030, "Wrong size on UPyExtension_ShowItem_Preview");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_Preview;
 
 }
 

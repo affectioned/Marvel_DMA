@@ -29,12 +29,7 @@ public:
 	class FString                                 SessionID;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMarvelGameplayAbility*                 SourceAbility;                                     // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EpicMomentAction_1020_OnActorAbilityCancel) == 0x000008, "Wrong alignment on EpicMomentAction_1020_OnActorAbilityCancel");
-static_assert(sizeof(EpicMomentAction_1020_OnActorAbilityCancel) == 0x000028, "Wrong size on EpicMomentAction_1020_OnActorAbilityCancel");
-static_assert(offsetof(EpicMomentAction_1020_OnActorAbilityCancel, Source) == 0x000000, "Member 'EpicMomentAction_1020_OnActorAbilityCancel::Source' has a wrong offset!");
-static_assert(offsetof(EpicMomentAction_1020_OnActorAbilityCancel, AbilityID) == 0x000008, "Member 'EpicMomentAction_1020_OnActorAbilityCancel::AbilityID' has a wrong offset!");
-static_assert(offsetof(EpicMomentAction_1020_OnActorAbilityCancel, SessionID) == 0x000010, "Member 'EpicMomentAction_1020_OnActorAbilityCancel::SessionID' has a wrong offset!");
-static_assert(offsetof(EpicMomentAction_1020_OnActorAbilityCancel, SourceAbility) == 0x000020, "Member 'EpicMomentAction_1020_OnActorAbilityCancel::SourceAbility' has a wrong offset!");
+DUMPER7_ASSERTS_EpicMomentAction_1020_OnActorAbilityCancel;
 
 // Function Hero_1020.EpicMomentAction_1020.OnGameplayEffectAppliedToTarget
 // 0x0018 (0x0018 - 0x0000)
@@ -45,11 +40,7 @@ public:
 	struct FGameplayEffectSpecStackHandle         GameplayEffectSpecHandle;                          // 0x0008(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            ActiveGameplayEffectHandle;                        // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EpicMomentAction_1020_OnGameplayEffectAppliedToTarget) == 0x000008, "Wrong alignment on EpicMomentAction_1020_OnGameplayEffectAppliedToTarget");
-static_assert(sizeof(EpicMomentAction_1020_OnGameplayEffectAppliedToTarget) == 0x000018, "Wrong size on EpicMomentAction_1020_OnGameplayEffectAppliedToTarget");
-static_assert(offsetof(EpicMomentAction_1020_OnGameplayEffectAppliedToTarget, ASC) == 0x000000, "Member 'EpicMomentAction_1020_OnGameplayEffectAppliedToTarget::ASC' has a wrong offset!");
-static_assert(offsetof(EpicMomentAction_1020_OnGameplayEffectAppliedToTarget, GameplayEffectSpecHandle) == 0x000008, "Member 'EpicMomentAction_1020_OnGameplayEffectAppliedToTarget::GameplayEffectSpecHandle' has a wrong offset!");
-static_assert(offsetof(EpicMomentAction_1020_OnGameplayEffectAppliedToTarget, ActiveGameplayEffectHandle) == 0x000010, "Member 'EpicMomentAction_1020_OnGameplayEffectAppliedToTarget::ActiveGameplayEffectHandle' has a wrong offset!");
+DUMPER7_ASSERTS_EpicMomentAction_1020_OnGameplayEffectAppliedToTarget;
 
 // Function Hero_1020.MantisCharacter.AssignDeathCueTag
 // 0x000C (0x000C - 0x0000)
@@ -58,9 +49,7 @@ struct MantisCharacter_AssignDeathCueTag final
 public:
 	struct FGameplayTag                           InDeathCue;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MantisCharacter_AssignDeathCueTag) == 0x000004, "Wrong alignment on MantisCharacter_AssignDeathCueTag");
-static_assert(sizeof(MantisCharacter_AssignDeathCueTag) == 0x00000C, "Wrong size on MantisCharacter_AssignDeathCueTag");
-static_assert(offsetof(MantisCharacter_AssignDeathCueTag, InDeathCue) == 0x000000, "Member 'MantisCharacter_AssignDeathCueTag::InDeathCue' has a wrong offset!");
+DUMPER7_ASSERTS_MantisCharacter_AssignDeathCueTag;
 
 // Function Hero_1020.TabData_1020.OnActorTakeHealth
 // 0x0030 (0x0030 - 0x0000)
@@ -73,12 +62,7 @@ public:
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(TabData_1020_OnActorTakeHealth) == 0x000008, "Wrong alignment on TabData_1020_OnActorTakeHealth");
-static_assert(sizeof(TabData_1020_OnActorTakeHealth) == 0x000030, "Wrong size on TabData_1020_OnActorTakeHealth");
-static_assert(offsetof(TabData_1020_OnActorTakeHealth, Instigator) == 0x000000, "Member 'TabData_1020_OnActorTakeHealth::Instigator' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnActorTakeHealth, Target) == 0x000008, "Member 'TabData_1020_OnActorTakeHealth::Target' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnActorTakeHealth, ModifierParameterHandle) == 0x000010, "Member 'TabData_1020_OnActorTakeHealth::ModifierParameterHandle' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnActorTakeHealth, ExtraData) == 0x000028, "Member 'TabData_1020_OnActorTakeHealth::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_TabData_1020_OnActorTakeHealth;
 
 // Function Hero_1020.TabData_1020.OnBuffAddEvent
 // 0x0020 (0x0020 - 0x0000)
@@ -90,12 +74,7 @@ public:
 	struct FGameplayEffectSpecStackHandle         EffectSpecStackHandle;                             // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            EffectHandle;                                      // 0x0018(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(TabData_1020_OnBuffAddEvent) == 0x000008, "Wrong alignment on TabData_1020_OnBuffAddEvent");
-static_assert(sizeof(TabData_1020_OnBuffAddEvent) == 0x000020, "Wrong size on TabData_1020_OnBuffAddEvent");
-static_assert(offsetof(TabData_1020_OnBuffAddEvent, Source) == 0x000000, "Member 'TabData_1020_OnBuffAddEvent::Source' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnBuffAddEvent, Target) == 0x000008, "Member 'TabData_1020_OnBuffAddEvent::Target' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnBuffAddEvent, EffectSpecStackHandle) == 0x000010, "Member 'TabData_1020_OnBuffAddEvent::EffectSpecStackHandle' has a wrong offset!");
-static_assert(offsetof(TabData_1020_OnBuffAddEvent, EffectHandle) == 0x000018, "Member 'TabData_1020_OnBuffAddEvent::EffectHandle' has a wrong offset!");
+DUMPER7_ASSERTS_TabData_1020_OnBuffAddEvent;
 
 }
 

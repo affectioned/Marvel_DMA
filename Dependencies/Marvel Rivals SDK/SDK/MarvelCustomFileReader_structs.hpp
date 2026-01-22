@@ -22,10 +22,7 @@ public:
 	class FString                                 SrcSubPath;                                        // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DstSubPath;                                        // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMarvelFilePathRedirctor) == 0x000008, "Wrong alignment on FMarvelFilePathRedirctor");
-static_assert(sizeof(FMarvelFilePathRedirctor) == 0x000020, "Wrong size on FMarvelFilePathRedirctor");
-static_assert(offsetof(FMarvelFilePathRedirctor, SrcSubPath) == 0x000000, "Member 'FMarvelFilePathRedirctor::SrcSubPath' has a wrong offset!");
-static_assert(offsetof(FMarvelFilePathRedirctor, DstSubPath) == 0x000010, "Member 'FMarvelFilePathRedirctor::DstSubPath' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelFilePathRedirctor;
 
 }
 

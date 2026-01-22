@@ -36,16 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortLevelStatistics">();
+		STATIC_CLASS_IMPL("PyEscortLevelStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortLevelStatistics")
 	}
 	static class UPyEscortLevelStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEscortLevelStatistics>();
 	}
 };
-static_assert(alignof(UPyEscortLevelStatistics) == 0x000008, "Wrong alignment on UPyEscortLevelStatistics");
-static_assert(sizeof(UPyEscortLevelStatistics) == 0x000040, "Wrong size on UPyEscortLevelStatistics");
-static_assert(offsetof(UPyEscortLevelStatistics, EscortPartStatistics) == 0x000038, "Member 'UPyEscortLevelStatistics::EscortPartStatistics' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEscortLevelStatistics;
 
 }
 

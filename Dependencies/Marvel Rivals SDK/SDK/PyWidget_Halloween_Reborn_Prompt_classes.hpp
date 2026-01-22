@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_Reborn_Prompt.PyWidget_Halloween_Reborn_VX
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Halloween_Reborn_VX final : public UPyMarvelUserWidget
 {
 public:
@@ -28,35 +28,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Reborn_VX">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Reborn_VX")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Reborn_VX")
 	}
 	static class UPyWidget_Halloween_Reborn_VX* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Reborn_VX>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Reborn_VX) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Reborn_VX");
-static_assert(sizeof(UPyWidget_Halloween_Reborn_VX) == 0x0005C0, "Wrong size on UPyWidget_Halloween_Reborn_VX");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Reborn_VX;
 
 // PythonClass PyWidget_Halloween_Reborn_Prompt.PyWidget_Halloween_Reborn_Prompt
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0648 - 0x05C8)
 class UPyWidget_Halloween_Reborn_Prompt final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CommonColor;                                       // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefeatColor;                                       // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           ReviveAction;                                      // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GiveUpReviveAction;                                // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   DefeatText;                                        // 0x05F0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NormalBg;                                          // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefeatBg;                                          // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefeatUpFrame;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefeatDownFrame;                                   // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ReviveAudio;                                       // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          GiveUpAudio;                                       // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          HoldAudio;                                         // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CommonColor;                                       // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefeatColor;                                       // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           ReviveAction;                                      // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GiveUpReviveAction;                                // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   DefeatText;                                        // 0x05F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NormalBg;                                          // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefeatBg;                                          // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefeatUpFrame;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefeatDownFrame;                                   // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ReviveAudio;                                       // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          GiveUpAudio;                                       // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          HoldAudio;                                         // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,27 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_Reborn_Prompt">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_Reborn_Prompt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_Reborn_Prompt")
 	}
 	static class UPyWidget_Halloween_Reborn_Prompt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_Reborn_Prompt>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_Reborn_Prompt) == 0x000008, "Wrong alignment on UPyWidget_Halloween_Reborn_Prompt");
-static_assert(sizeof(UPyWidget_Halloween_Reborn_Prompt) == 0x000640, "Wrong size on UPyWidget_Halloween_Reborn_Prompt");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, CommonColor) == 0x0005BC, "Member 'UPyWidget_Halloween_Reborn_Prompt::CommonColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, DefeatColor) == 0x0005CC, "Member 'UPyWidget_Halloween_Reborn_Prompt::DefeatColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, ReviveAction) == 0x0005E0, "Member 'UPyWidget_Halloween_Reborn_Prompt::ReviveAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, GiveUpReviveAction) == 0x0005E8, "Member 'UPyWidget_Halloween_Reborn_Prompt::GiveUpReviveAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, DefeatText) == 0x0005F0, "Member 'UPyWidget_Halloween_Reborn_Prompt::DefeatText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, NormalBg) == 0x000608, "Member 'UPyWidget_Halloween_Reborn_Prompt::NormalBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, DefeatBg) == 0x000610, "Member 'UPyWidget_Halloween_Reborn_Prompt::DefeatBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, DefeatUpFrame) == 0x000618, "Member 'UPyWidget_Halloween_Reborn_Prompt::DefeatUpFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, DefeatDownFrame) == 0x000620, "Member 'UPyWidget_Halloween_Reborn_Prompt::DefeatDownFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, ReviveAudio) == 0x000628, "Member 'UPyWidget_Halloween_Reborn_Prompt::ReviveAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, GiveUpAudio) == 0x000630, "Member 'UPyWidget_Halloween_Reborn_Prompt::GiveUpAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_Reborn_Prompt, HoldAudio) == 0x000638, "Member 'UPyWidget_Halloween_Reborn_Prompt::HoldAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_Reborn_Prompt;
 
 }
 

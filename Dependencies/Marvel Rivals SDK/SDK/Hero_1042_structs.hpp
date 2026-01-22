@@ -78,14 +78,10 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSpiderSpawnInfo) == 0x000008, "Wrong alignment on FSpiderSpawnInfo");
-static_assert(sizeof(FSpiderSpawnInfo) == 0x000028, "Wrong size on FSpiderSpawnInfo");
-static_assert(offsetof(FSpiderSpawnInfo, WebAttached) == 0x000000, "Member 'FSpiderSpawnInfo::WebAttached' has a wrong offset!");
-static_assert(offsetof(FSpiderSpawnInfo, WebNodeIndex) == 0x000008, "Member 'FSpiderSpawnInfo::WebNodeIndex' has a wrong offset!");
-static_assert(offsetof(FSpiderSpawnInfo, Location) == 0x000010, "Member 'FSpiderSpawnInfo::Location' has a wrong offset!");
+DUMPER7_ASSERTS_FSpiderSpawnInfo;
 
 // ScriptStruct Hero_1042.WebScopeDetectInfo
-// 0x1680 (0x1680 - 0x0000)
+// 0x19D0 (0x19D0 - 0x0000)
 struct FWebScopeDetectInfo final
 {
 public:
@@ -93,14 +89,9 @@ public:
 	float                                         DetectAngle;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                           SkeletonsName;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0020(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0020(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWebScopeDetectInfo) == 0x000010, "Wrong alignment on FWebScopeDetectInfo");
-static_assert(sizeof(FWebScopeDetectInfo) == 0x001680, "Wrong size on FWebScopeDetectInfo");
-static_assert(offsetof(FWebScopeDetectInfo, DetectDistance) == 0x000000, "Member 'FWebScopeDetectInfo::DetectDistance' has a wrong offset!");
-static_assert(offsetof(FWebScopeDetectInfo, DetectAngle) == 0x000004, "Member 'FWebScopeDetectInfo::DetectAngle' has a wrong offset!");
-static_assert(offsetof(FWebScopeDetectInfo, SkeletonsName) == 0x000008, "Member 'FWebScopeDetectInfo::SkeletonsName' has a wrong offset!");
-static_assert(offsetof(FWebScopeDetectInfo, TraceContext) == 0x000020, "Member 'FWebScopeDetectInfo::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_FWebScopeDetectInfo;
 
 // ScriptStruct Hero_1042.MatchingTransformItem
 // 0x0070 (0x0070 - 0x0000)
@@ -111,10 +102,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             VertexTransform;                                   // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMatchingTransformItem) == 0x000010, "Wrong alignment on FMatchingTransformItem");
-static_assert(sizeof(FMatchingTransformItem) == 0x000070, "Wrong size on FMatchingTransformItem");
-static_assert(offsetof(FMatchingTransformItem, MatchingIndex) == 0x000000, "Member 'FMatchingTransformItem::MatchingIndex' has a wrong offset!");
-static_assert(offsetof(FMatchingTransformItem, VertexTransform) == 0x000010, "Member 'FMatchingTransformItem::VertexTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FMatchingTransformItem;
 
 // ScriptStruct Hero_1042.MatchingVerticesData
 // 0x00A0 (0x00A0 - 0x0000)
@@ -132,18 +120,7 @@ public:
 	TArray<struct FProcMeshTangent>               Tangents;                                          // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FMatchingTransformItem>         MatchingTransform;                                 // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMatchingVerticesData) == 0x000008, "Wrong alignment on FMatchingVerticesData");
-static_assert(sizeof(FMatchingVerticesData) == 0x0000A0, "Wrong size on FMatchingVerticesData");
-static_assert(offsetof(FMatchingVerticesData, Vertices) == 0x000000, "Member 'FMatchingVerticesData::Vertices' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, Triangles) == 0x000010, "Member 'FMatchingVerticesData::Triangles' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, Normals) == 0x000020, "Member 'FMatchingVerticesData::Normals' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, UVs) == 0x000030, "Member 'FMatchingVerticesData::UVs' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, UVs1) == 0x000040, "Member 'FMatchingVerticesData::UVs1' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, UVs2) == 0x000050, "Member 'FMatchingVerticesData::UVs2' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, UVs3) == 0x000060, "Member 'FMatchingVerticesData::UVs3' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, VertexColors) == 0x000070, "Member 'FMatchingVerticesData::VertexColors' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, Tangents) == 0x000080, "Member 'FMatchingVerticesData::Tangents' has a wrong offset!");
-static_assert(offsetof(FMatchingVerticesData, MatchingTransform) == 0x000090, "Member 'FMatchingVerticesData::MatchingTransform' has a wrong offset!");
+DUMPER7_ASSERTS_FMatchingVerticesData;
 
 // ScriptStruct Hero_1042.ProceduralMeshData
 // 0x0040 (0x0040 - 0x0000)
@@ -152,8 +129,7 @@ struct alignas(0x08) FProceduralMeshData final
 public:
 	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProceduralMeshData) == 0x000008, "Wrong alignment on FProceduralMeshData");
-static_assert(sizeof(FProceduralMeshData) == 0x000040, "Wrong size on FProceduralMeshData");
+DUMPER7_ASSERTS_FProceduralMeshData;
 
 // ScriptStruct Hero_1042.RunMaterial_104271
 // 0x0018 (0x0018 - 0x0000)
@@ -164,10 +140,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveFloat*                            VelocityMaterial;                                  // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FRunMaterial_104271) == 0x000008, "Wrong alignment on FRunMaterial_104271");
-static_assert(sizeof(FRunMaterial_104271) == 0x000018, "Wrong size on FRunMaterial_104271");
-static_assert(offsetof(FRunMaterial_104271, MaterialName) == 0x000000, "Member 'FRunMaterial_104271::MaterialName' has a wrong offset!");
-static_assert(offsetof(FRunMaterial_104271, VelocityMaterial) == 0x000010, "Member 'FRunMaterial_104271::VelocityMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_FRunMaterial_104271;
 
 // ScriptStruct Hero_1042.ShoulderGunAnimData
 // 0x0020 (0x0020 - 0x0000)
@@ -179,12 +152,7 @@ public:
 	class UAnimationAsset*                        EndAimShootAnimation;                              // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimMontage*                           ArmedIdleMontage;                                  // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FShoulderGunAnimData) == 0x000008, "Wrong alignment on FShoulderGunAnimData");
-static_assert(sizeof(FShoulderGunAnimData) == 0x000020, "Wrong size on FShoulderGunAnimData");
-static_assert(offsetof(FShoulderGunAnimData, StartAimShootAnimation) == 0x000000, "Member 'FShoulderGunAnimData::StartAimShootAnimation' has a wrong offset!");
-static_assert(offsetof(FShoulderGunAnimData, LoopAimShootAnimation) == 0x000008, "Member 'FShoulderGunAnimData::LoopAimShootAnimation' has a wrong offset!");
-static_assert(offsetof(FShoulderGunAnimData, EndAimShootAnimation) == 0x000010, "Member 'FShoulderGunAnimData::EndAimShootAnimation' has a wrong offset!");
-static_assert(offsetof(FShoulderGunAnimData, ArmedIdleMontage) == 0x000018, "Member 'FShoulderGunAnimData::ArmedIdleMontage' has a wrong offset!");
+DUMPER7_ASSERTS_FShoulderGunAnimData;
 
 }
 

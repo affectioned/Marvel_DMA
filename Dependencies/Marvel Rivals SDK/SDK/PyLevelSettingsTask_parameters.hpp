@@ -23,9 +23,7 @@ struct PyLevelSettingsTask_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelSettingsTask_ReceiveEndPlay");
-static_assert(sizeof(PyLevelSettingsTask_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelSettingsTask_ReceiveEndPlay");
-static_assert(offsetof(PyLevelSettingsTask_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelSettingsTask_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_ReceiveEndPlay;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.OnHeroSwitched
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelSettingsTask_OnHeroSwitched final
 public:
 	int32                                         hero_id;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_OnHeroSwitched) == 0x000004, "Wrong alignment on PyLevelSettingsTask_OnHeroSwitched");
-static_assert(sizeof(PyLevelSettingsTask_OnHeroSwitched) == 0x000004, "Wrong size on PyLevelSettingsTask_OnHeroSwitched");
-static_assert(offsetof(PyLevelSettingsTask_OnHeroSwitched, hero_id) == 0x000000, "Member 'PyLevelSettingsTask_OnHeroSwitched::hero_id' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_OnHeroSwitched;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.ChangeAbilityCD
 // 0x0008 (0x0008 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CD;                                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_ChangeAbilityCD) == 0x000004, "Wrong alignment on PyLevelSettingsTask_ChangeAbilityCD");
-static_assert(sizeof(PyLevelSettingsTask_ChangeAbilityCD) == 0x000008, "Wrong size on PyLevelSettingsTask_ChangeAbilityCD");
-static_assert(offsetof(PyLevelSettingsTask_ChangeAbilityCD, AbilityID) == 0x000000, "Member 'PyLevelSettingsTask_ChangeAbilityCD::AbilityID' has a wrong offset!");
-static_assert(offsetof(PyLevelSettingsTask_ChangeAbilityCD, CD) == 0x000004, "Member 'PyLevelSettingsTask_ChangeAbilityCD::CD' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_ChangeAbilityCD;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.LimitAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -58,9 +51,7 @@ struct PyLevelSettingsTask_LimitAbility final
 public:
 	TArray<int32>                                 AbilityIDs;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelSettingsTask_LimitAbility) == 0x000008, "Wrong alignment on PyLevelSettingsTask_LimitAbility");
-static_assert(sizeof(PyLevelSettingsTask_LimitAbility) == 0x000010, "Wrong size on PyLevelSettingsTask_LimitAbility");
-static_assert(offsetof(PyLevelSettingsTask_LimitAbility, AbilityIDs) == 0x000000, "Member 'PyLevelSettingsTask_LimitAbility::AbilityIDs' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_LimitAbility;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.ActivateTask
 // 0x0004 (0x0004 - 0x0000)
@@ -69,9 +60,7 @@ struct PyLevelSettingsTask_ActivateTask final
 public:
 	int32                                         NewCheckPointID;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_ActivateTask) == 0x000004, "Wrong alignment on PyLevelSettingsTask_ActivateTask");
-static_assert(sizeof(PyLevelSettingsTask_ActivateTask) == 0x000004, "Wrong size on PyLevelSettingsTask_ActivateTask");
-static_assert(offsetof(PyLevelSettingsTask_ActivateTask, NewCheckPointID) == 0x000000, "Member 'PyLevelSettingsTask_ActivateTask::NewCheckPointID' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_ActivateTask;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.SpawnNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -80,9 +69,7 @@ struct PyLevelSettingsTask_SpawnNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_SpawnNoviceAI) == 0x000008, "Wrong alignment on PyLevelSettingsTask_SpawnNoviceAI");
-static_assert(sizeof(PyLevelSettingsTask_SpawnNoviceAI) == 0x000010, "Wrong size on PyLevelSettingsTask_SpawnNoviceAI");
-static_assert(offsetof(PyLevelSettingsTask_SpawnNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelSettingsTask_SpawnNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_SpawnNoviceAI;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.ClearNoviceAI
 // 0x0010 (0x0010 - 0x0000)
@@ -91,9 +78,7 @@ struct PyLevelSettingsTask_ClearNoviceAI final
 public:
 	class FString                                 NoviceAISpawnActorName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_ClearNoviceAI) == 0x000008, "Wrong alignment on PyLevelSettingsTask_ClearNoviceAI");
-static_assert(sizeof(PyLevelSettingsTask_ClearNoviceAI) == 0x000010, "Wrong size on PyLevelSettingsTask_ClearNoviceAI");
-static_assert(offsetof(PyLevelSettingsTask_ClearNoviceAI, NoviceAISpawnActorName) == 0x000000, "Member 'PyLevelSettingsTask_ClearNoviceAI::NoviceAISpawnActorName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_ClearNoviceAI;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask.GetCurHeroID
 // 0x0004 (0x0004 - 0x0000)
@@ -102,9 +87,7 @@ struct PyLevelSettingsTask_GetCurHeroID final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSettingsTask_GetCurHeroID) == 0x000004, "Wrong alignment on PyLevelSettingsTask_GetCurHeroID");
-static_assert(sizeof(PyLevelSettingsTask_GetCurHeroID) == 0x000004, "Wrong size on PyLevelSettingsTask_GetCurHeroID");
-static_assert(offsetof(PyLevelSettingsTask_GetCurHeroID, ReturnValue) == 0x000000, "Member 'PyLevelSettingsTask_GetCurHeroID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_GetCurHeroID;
 
 // PythonFunction PyLevelSettingsTask.PyLevelSettingsTask_Shake.GetCanUseAbility
 // 0x0018 (0x0018 - 0x0000)
@@ -115,10 +98,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyLevelSettingsTask_Shake_GetCanUseAbility) == 0x000008, "Wrong alignment on PyLevelSettingsTask_Shake_GetCanUseAbility");
-static_assert(sizeof(PyLevelSettingsTask_Shake_GetCanUseAbility) == 0x000018, "Wrong size on PyLevelSettingsTask_Shake_GetCanUseAbility");
-static_assert(offsetof(PyLevelSettingsTask_Shake_GetCanUseAbility, HeroID) == 0x000000, "Member 'PyLevelSettingsTask_Shake_GetCanUseAbility::HeroID' has a wrong offset!");
-static_assert(offsetof(PyLevelSettingsTask_Shake_GetCanUseAbility, ReturnValue) == 0x000008, "Member 'PyLevelSettingsTask_Shake_GetCanUseAbility::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSettingsTask_Shake_GetCanUseAbility;
 
 }
 

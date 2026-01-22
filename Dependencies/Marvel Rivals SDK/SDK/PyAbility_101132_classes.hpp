@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101132.PyAbility_101132
-// 0x0000 (0x2C40 - 0x2C40)
+// 0x0000 (0x2C90 - 0x2C90)
 class UPyAbility_101132 : public UPyAbility_HulkSculpt
 {
 public:
@@ -34,15 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101132">();
+		STATIC_CLASS_IMPL("PyAbility_101132")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101132")
 	}
 	static class UPyAbility_101132* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101132>();
 	}
 };
-static_assert(alignof(UPyAbility_101132) == 0x000008, "Wrong alignment on UPyAbility_101132");
-static_assert(sizeof(UPyAbility_101132) == 0x002C40, "Wrong size on UPyAbility_101132");
+DUMPER7_ASSERTS_UPyAbility_101132;
 
 }
 

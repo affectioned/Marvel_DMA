@@ -24,12 +24,7 @@ public:
 	float                                         TimeToLoseOccupy;                                  // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, float>                            RaisingSpeed;                                      // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelAssualtNodes_SetPyObjective) == 0x000008, "Wrong alignment on PyLevelAssualtNodes_SetPyObjective");
-static_assert(sizeof(PyLevelAssualtNodes_SetPyObjective) == 0x000060, "Wrong size on PyLevelAssualtNodes_SetPyObjective");
-static_assert(offsetof(PyLevelAssualtNodes_SetPyObjective, objective) == 0x000000, "Member 'PyLevelAssualtNodes_SetPyObjective::objective' has a wrong offset!");
-static_assert(offsetof(PyLevelAssualtNodes_SetPyObjective, LosingSpeed) == 0x000008, "Member 'PyLevelAssualtNodes_SetPyObjective::LosingSpeed' has a wrong offset!");
-static_assert(offsetof(PyLevelAssualtNodes_SetPyObjective, TimeToLoseOccupy) == 0x00000C, "Member 'PyLevelAssualtNodes_SetPyObjective::TimeToLoseOccupy' has a wrong offset!");
-static_assert(offsetof(PyLevelAssualtNodes_SetPyObjective, RaisingSpeed) == 0x000010, "Member 'PyLevelAssualtNodes_SetPyObjective::RaisingSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelAssualtNodes_SetPyObjective;
 
 }
 

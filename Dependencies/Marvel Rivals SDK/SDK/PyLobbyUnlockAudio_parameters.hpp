@@ -23,9 +23,7 @@ struct PyLobbyUnlockAudio_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLobbyUnlockAudio_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLobbyUnlockAudio_ReceiveEndPlay");
-static_assert(sizeof(PyLobbyUnlockAudio_ReceiveEndPlay) == 0x000001, "Wrong size on PyLobbyUnlockAudio_ReceiveEndPlay");
-static_assert(offsetof(PyLobbyUnlockAudio_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLobbyUnlockAudio_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLobbyUnlockAudio_ReceiveEndPlay;
 
 // PythonFunction PyLobbyUnlockAudio.PyLobbyUnlockAudio.OnStartUnlockControl
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLobbyUnlockAudio_OnStartUnlockControl final
 public:
 	class AActor*                                 Control;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLobbyUnlockAudio_OnStartUnlockControl) == 0x000008, "Wrong alignment on PyLobbyUnlockAudio_OnStartUnlockControl");
-static_assert(sizeof(PyLobbyUnlockAudio_OnStartUnlockControl) == 0x000008, "Wrong size on PyLobbyUnlockAudio_OnStartUnlockControl");
-static_assert(offsetof(PyLobbyUnlockAudio_OnStartUnlockControl, Control) == 0x000000, "Member 'PyLobbyUnlockAudio_OnStartUnlockControl::Control' has a wrong offset!");
+DUMPER7_ASSERTS_PyLobbyUnlockAudio_OnStartUnlockControl;
 
 }
 

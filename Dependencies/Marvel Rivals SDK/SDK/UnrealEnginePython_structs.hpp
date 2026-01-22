@@ -43,8 +43,7 @@ struct alignas(0x08) FPythonSWidgetWrapper final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPythonSWidgetWrapper) == 0x000008, "Wrong alignment on FPythonSWidgetWrapper");
-static_assert(sizeof(FPythonSWidgetWrapper) == 0x000010, "Wrong size on FPythonSWidgetWrapper");
+DUMPER7_ASSERTS_FPythonSWidgetWrapper;
 
 // ScriptStruct UnrealEnginePython.TestOnlyRefCount
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +52,7 @@ struct FTestOnlyRefCount final
 public:
 	int32                                         OwnedRefs;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTestOnlyRefCount) == 0x000004, "Wrong alignment on FTestOnlyRefCount");
-static_assert(sizeof(FTestOnlyRefCount) == 0x000004, "Wrong size on FTestOnlyRefCount");
-static_assert(offsetof(FTestOnlyRefCount, OwnedRefs) == 0x000000, "Member 'FTestOnlyRefCount::OwnedRefs' has a wrong offset!");
+DUMPER7_ASSERTS_FTestOnlyRefCount;
 
 // ScriptStruct UnrealEnginePython.PythonSmartDelegateHandle
 // 0x0010 (0x0010 - 0x0000)
@@ -64,8 +61,16 @@ struct alignas(0x08) FPythonSmartDelegateHandle final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPythonSmartDelegateHandle) == 0x000008, "Wrong alignment on FPythonSmartDelegateHandle");
-static_assert(sizeof(FPythonSmartDelegateHandle) == 0x000010, "Wrong size on FPythonSmartDelegateHandle");
+DUMPER7_ASSERTS_FPythonSmartDelegateHandle;
+
+// ScriptStruct UnrealEnginePython.SharedPyObjectWrapper
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FSharedPyObjectWrapper final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSharedPyObjectWrapper;
 
 // ScriptStruct UnrealEnginePython.TestInvokeStruct
 // 0x0040 (0x0040 - 0x0000)
@@ -79,12 +84,16 @@ public:
 	struct FIntVector                             IntVectVal;                                        // 0x0030(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTestInvokeStruct) == 0x000008, "Wrong alignment on FTestInvokeStruct");
-static_assert(sizeof(FTestInvokeStruct) == 0x000040, "Wrong size on FTestInvokeStruct");
-static_assert(offsetof(FTestInvokeStruct, Int32Val) == 0x000000, "Member 'FTestInvokeStruct::Int32Val' has a wrong offset!");
-static_assert(offsetof(FTestInvokeStruct, StrVal) == 0x000008, "Member 'FTestInvokeStruct::StrVal' has a wrong offset!");
-static_assert(offsetof(FTestInvokeStruct, VectVal) == 0x000018, "Member 'FTestInvokeStruct::VectVal' has a wrong offset!");
-static_assert(offsetof(FTestInvokeStruct, IntVectVal) == 0x000030, "Member 'FTestInvokeStruct::IntVectVal' has a wrong offset!");
+DUMPER7_ASSERTS_FTestInvokeStruct;
+
+// ScriptStruct UnrealEnginePython.UnsafePyObjectWrapper
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FUnsafePyObjectWrapper final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FUnsafePyObjectWrapper;
 
 }
 

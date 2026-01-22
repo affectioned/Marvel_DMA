@@ -21,9 +21,7 @@ struct PyBuffAbility_120_10523120_OnAbilityEnd final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10523120_OnAbilityEnd) == 0x000004, "Wrong alignment on PyBuffAbility_120_10523120_OnAbilityEnd");
-static_assert(sizeof(PyBuffAbility_120_10523120_OnAbilityEnd) == 0x000004, "Wrong size on PyBuffAbility_120_10523120_OnAbilityEnd");
-static_assert(offsetof(PyBuffAbility_120_10523120_OnAbilityEnd, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10523120_OnAbilityEnd::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10523120_OnAbilityEnd;
 
 // PythonFunction PYBuffAbility_120_10523120.PyBuffAbility_120_10523120.OnAbilityActivate
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyBuffAbility_120_10523120_OnAbilityActivate final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10523120_OnAbilityActivate) == 0x000004, "Wrong alignment on PyBuffAbility_120_10523120_OnAbilityActivate");
-static_assert(sizeof(PyBuffAbility_120_10523120_OnAbilityActivate) == 0x000004, "Wrong size on PyBuffAbility_120_10523120_OnAbilityActivate");
-static_assert(offsetof(PyBuffAbility_120_10523120_OnAbilityActivate, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_10523120_OnAbilityActivate::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10523120_OnAbilityActivate;
 
 }
 

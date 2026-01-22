@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerUsedHeroRecordDetails_HeroDataItem.PyWidget_CareerUsedHeroRecordDetails_HeroDataItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerUsedHeroRecordDetails_HeroDataItem">();
+		STATIC_CLASS_IMPL("PyWidget_CareerUsedHeroRecordDetails_HeroDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerUsedHeroRecordDetails_HeroDataItem")
 	}
 	static class UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem) == 0x000008, "Wrong alignment on UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem");
-static_assert(sizeof(UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem) == 0x0005C0, "Wrong size on UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem");
+DUMPER7_ASSERTS_UPyWidget_CareerUsedHeroRecordDetails_HeroDataItem;
 
 }
 

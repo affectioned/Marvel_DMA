@@ -19,39 +19,42 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GetPropsPanel.PyWidget_GetSurfacePanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_GetSurfacePanel final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GetSurfacePanel">();
+		STATIC_CLASS_IMPL("PyWidget_GetSurfacePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GetSurfacePanel")
 	}
 	static class UPyWidget_GetSurfacePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GetSurfacePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GetSurfacePanel) == 0x000008, "Wrong alignment on UPyWidget_GetSurfacePanel");
-static_assert(sizeof(UPyWidget_GetSurfacePanel) == 0x0005C0, "Wrong size on UPyWidget_GetSurfacePanel");
+DUMPER7_ASSERTS_UPyWidget_GetSurfacePanel;
 
 // PythonClass PyWidget_GetPropsPanel.PyWidget_GetMorePropsPanel
-// 0x0450 (0x0A10 - 0x05C0)
+// 0x0458 (0x0A20 - 0x05C8)
 class UPyWidget_GetMorePropsPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Img_BgQualityWhite;                                // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityBlue;                                 // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityPurple;                               // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityOrange;                               // 0x0830(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityRed;                                  // 0x0900(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         PropsSize;                                         // 0x09D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PressAddTime;                                      // 0x09D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextEmpty;                                    // 0x09D8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                Input_Prompt;                                      // 0x09F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsTipDownside;                                     // 0x0A00(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCenterAlign;                                     // 0x0A01(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Img_BgQualityWhite;                                // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityBlue;                                 // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityPurple;                               // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityOrange;                               // 0x0840(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityRed;                                  // 0x0910(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         PropsSize;                                         // 0x09E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PressAddTime;                                      // 0x09E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextEmpty;                                    // 0x09E8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Input_Prompt;                                      // 0x0A08(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTipDownside;                                     // 0x0A10(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCenterAlign;                                     // 0x0A11(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -60,39 +63,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GetMorePropsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GetMorePropsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GetMorePropsPanel")
 	}
 	static class UPyWidget_GetMorePropsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GetMorePropsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GetMorePropsPanel) == 0x000010, "Wrong alignment on UPyWidget_GetMorePropsPanel");
-static_assert(sizeof(UPyWidget_GetMorePropsPanel) == 0x000A10, "Wrong size on UPyWidget_GetMorePropsPanel");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Img_BgQualityWhite) == 0x0005C0, "Member 'UPyWidget_GetMorePropsPanel::Img_BgQualityWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Img_BgQualityBlue) == 0x000690, "Member 'UPyWidget_GetMorePropsPanel::Img_BgQualityBlue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Img_BgQualityPurple) == 0x000760, "Member 'UPyWidget_GetMorePropsPanel::Img_BgQualityPurple' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Img_BgQualityOrange) == 0x000830, "Member 'UPyWidget_GetMorePropsPanel::Img_BgQualityOrange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Img_BgQualityRed) == 0x000900, "Member 'UPyWidget_GetMorePropsPanel::Img_BgQualityRed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, PropsSize) == 0x0009D0, "Member 'UPyWidget_GetMorePropsPanel::PropsSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, PressAddTime) == 0x0009D4, "Member 'UPyWidget_GetMorePropsPanel::PressAddTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, WrongTextEmpty) == 0x0009D8, "Member 'UPyWidget_GetMorePropsPanel::WrongTextEmpty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, Input_Prompt) == 0x0009F8, "Member 'UPyWidget_GetMorePropsPanel::Input_Prompt' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, IsTipDownside) == 0x000A00, "Member 'UPyWidget_GetMorePropsPanel::IsTipDownside' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetMorePropsPanel, IsCenterAlign) == 0x000A01, "Member 'UPyWidget_GetMorePropsPanel::IsCenterAlign' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GetMorePropsPanel;
 
 // PythonClass PyWidget_GetPropsPanel.PyWidget_GetPropsPanel
-// 0x0420 (0x09E0 - 0x05C0)
+// 0x0428 (0x09F0 - 0x05C8)
 class UPyWidget_GetPropsPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Img_QualityWhite;                                  // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_QualityBlue;                                   // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_QualityPurple;                                 // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_QualityOrange;                                 // 0x0830(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_QualityRed;                                    // 0x0900(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         PropsSize;                                         // 0x09D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Img_QualityWhite;                                  // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_QualityBlue;                                   // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_QualityPurple;                                 // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_QualityOrange;                                 // 0x0840(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_QualityRed;                                    // 0x0910(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         PropsSize;                                         // 0x09E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -101,24 +96,80 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GetPropsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GetPropsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GetPropsPanel")
 	}
 	static class UPyWidget_GetPropsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GetPropsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GetPropsPanel) == 0x000010, "Wrong alignment on UPyWidget_GetPropsPanel");
-static_assert(sizeof(UPyWidget_GetPropsPanel) == 0x0009E0, "Wrong size on UPyWidget_GetPropsPanel");
-static_assert(offsetof(UPyWidget_GetPropsPanel, Img_QualityWhite) == 0x0005C0, "Member 'UPyWidget_GetPropsPanel::Img_QualityWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetPropsPanel, Img_QualityBlue) == 0x000690, "Member 'UPyWidget_GetPropsPanel::Img_QualityBlue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetPropsPanel, Img_QualityPurple) == 0x000760, "Member 'UPyWidget_GetPropsPanel::Img_QualityPurple' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetPropsPanel, Img_QualityOrange) == 0x000830, "Member 'UPyWidget_GetPropsPanel::Img_QualityOrange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetPropsPanel, Img_QualityRed) == 0x000900, "Member 'UPyWidget_GetPropsPanel::Img_QualityRed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GetPropsPanel, PropsSize) == 0x0009D0, "Member 'UPyWidget_GetPropsPanel::PropsSize' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GetPropsPanel;
+
+// PythonClass PyWidget_GetPropsPanel.PyWidget_BuyHeroOrSkinPanel
+// 0x0418 (0x09E0 - 0x05C8)
+class UPyWidget_BuyHeroOrSkinPanel final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            Img_BgQualityWhite;                                // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityBlue;                                 // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityPurple;                               // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityOrange;                               // 0x0840(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Img_BgQualityRed;                                  // 0x0910(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_BuyHeroOrSkinPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BuyHeroOrSkinPanel")
+	}
+	static class UPyWidget_BuyHeroOrSkinPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_BuyHeroOrSkinPanel>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_BuyHeroOrSkinPanel;
+
+// PythonClass PyWidget_GetPropsPanel.PyWidget_BuyHeroAndSkinPanel
+// 0x0418 (0x09E0 - 0x05C8)
+class UPyWidget_BuyHeroAndSkinPanel final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            ItemQualityWhite;                                  // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemQualityBlue;                                   // 0x06A0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemQualityPurple;                                 // 0x0770(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemQualityOrange;                                 // 0x0840(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemQualityRed;                                    // 0x0910(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_BuyHeroAndSkinPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BuyHeroAndSkinPanel")
+	}
+	static class UPyWidget_BuyHeroAndSkinPanel* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_BuyHeroAndSkinPanel>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_BuyHeroAndSkinPanel;
 
 // PythonClass PyWidget_GetPropsPanel.PyWidget_GetRewardOnePanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_GetRewardOnePanel final : public UPyMarvelUserWidget
 {
 public:
@@ -127,98 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GetRewardOnePanel">();
+		STATIC_CLASS_IMPL("PyWidget_GetRewardOnePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GetRewardOnePanel")
 	}
 	static class UPyWidget_GetRewardOnePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GetRewardOnePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GetRewardOnePanel) == 0x000008, "Wrong alignment on UPyWidget_GetRewardOnePanel");
-static_assert(sizeof(UPyWidget_GetRewardOnePanel) == 0x0005C0, "Wrong size on UPyWidget_GetRewardOnePanel");
-
-// PythonClass PyWidget_GetPropsPanel.PyWidget_BuyHeroOrSkinPanel
-// 0x0410 (0x09D0 - 0x05C0)
-class UPyWidget_BuyHeroOrSkinPanel final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Img_BgQualityWhite;                                // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityBlue;                                 // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityPurple;                               // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityOrange;                               // 0x0830(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Img_BgQualityRed;                                  // 0x0900(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_BuyHeroOrSkinPanel">();
-	}
-	static class UPyWidget_BuyHeroOrSkinPanel* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_BuyHeroOrSkinPanel>();
-	}
-};
-static_assert(alignof(UPyWidget_BuyHeroOrSkinPanel) == 0x000010, "Wrong alignment on UPyWidget_BuyHeroOrSkinPanel");
-static_assert(sizeof(UPyWidget_BuyHeroOrSkinPanel) == 0x0009D0, "Wrong size on UPyWidget_BuyHeroOrSkinPanel");
-static_assert(offsetof(UPyWidget_BuyHeroOrSkinPanel, Img_BgQualityWhite) == 0x0005C0, "Member 'UPyWidget_BuyHeroOrSkinPanel::Img_BgQualityWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroOrSkinPanel, Img_BgQualityBlue) == 0x000690, "Member 'UPyWidget_BuyHeroOrSkinPanel::Img_BgQualityBlue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroOrSkinPanel, Img_BgQualityPurple) == 0x000760, "Member 'UPyWidget_BuyHeroOrSkinPanel::Img_BgQualityPurple' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroOrSkinPanel, Img_BgQualityOrange) == 0x000830, "Member 'UPyWidget_BuyHeroOrSkinPanel::Img_BgQualityOrange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroOrSkinPanel, Img_BgQualityRed) == 0x000900, "Member 'UPyWidget_BuyHeroOrSkinPanel::Img_BgQualityRed' has a wrong offset!");
-
-// PythonClass PyWidget_GetPropsPanel.PyWidget_BuyHeroAndSkinPanel
-// 0x0410 (0x09D0 - 0x05C0)
-class UPyWidget_BuyHeroAndSkinPanel final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ItemQualityWhite;                                  // 0x05C0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemQualityBlue;                                   // 0x0690(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemQualityPurple;                                 // 0x0760(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemQualityOrange;                                 // 0x0830(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemQualityRed;                                    // 0x0900(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_BuyHeroAndSkinPanel">();
-	}
-	static class UPyWidget_BuyHeroAndSkinPanel* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_BuyHeroAndSkinPanel>();
-	}
-};
-static_assert(alignof(UPyWidget_BuyHeroAndSkinPanel) == 0x000010, "Wrong alignment on UPyWidget_BuyHeroAndSkinPanel");
-static_assert(sizeof(UPyWidget_BuyHeroAndSkinPanel) == 0x0009D0, "Wrong size on UPyWidget_BuyHeroAndSkinPanel");
-static_assert(offsetof(UPyWidget_BuyHeroAndSkinPanel, ItemQualityWhite) == 0x0005C0, "Member 'UPyWidget_BuyHeroAndSkinPanel::ItemQualityWhite' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroAndSkinPanel, ItemQualityBlue) == 0x000690, "Member 'UPyWidget_BuyHeroAndSkinPanel::ItemQualityBlue' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroAndSkinPanel, ItemQualityPurple) == 0x000760, "Member 'UPyWidget_BuyHeroAndSkinPanel::ItemQualityPurple' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroAndSkinPanel, ItemQualityOrange) == 0x000830, "Member 'UPyWidget_BuyHeroAndSkinPanel::ItemQualityOrange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BuyHeroAndSkinPanel, ItemQualityRed) == 0x000900, "Member 'UPyWidget_BuyHeroAndSkinPanel::ItemQualityRed' has a wrong offset!");
-
-// PythonClass PyWidget_GetPropsPanel.PyWidget_GetSprayPanel
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_GetSprayPanel final : public UPyMarvelUserWidget
-{
-public:
-	void OnInitialized();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_GetSprayPanel">();
-	}
-	static class UPyWidget_GetSprayPanel* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_GetSprayPanel>();
-	}
-};
-static_assert(alignof(UPyWidget_GetSprayPanel) == 0x000008, "Wrong alignment on UPyWidget_GetSprayPanel");
-static_assert(sizeof(UPyWidget_GetSprayPanel) == 0x0005C0, "Wrong size on UPyWidget_GetSprayPanel");
+DUMPER7_ASSERTS_UPyWidget_GetRewardOnePanel;
 
 }
 

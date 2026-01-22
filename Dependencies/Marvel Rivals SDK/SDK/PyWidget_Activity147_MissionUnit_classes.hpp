@@ -29,26 +29,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_MissionItemData">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_MissionItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_MissionItemData")
 	}
 	static class UPyWidget_Activity147_MissionItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_MissionItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_MissionItemData) == 0x000008, "Wrong alignment on UPyWidget_Activity147_MissionItemData");
-static_assert(sizeof(UPyWidget_Activity147_MissionItemData) == 0x000038, "Wrong size on UPyWidget_Activity147_MissionItemData");
-static_assert(offsetof(UPyWidget_Activity147_MissionItemData, MissionID) == 0x000030, "Member 'UPyWidget_Activity147_MissionItemData::MissionID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_MissionItemData, Index_0) == 0x000034, "Member 'UPyWidget_Activity147_MissionItemData::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_MissionItemData;
 
 // PythonClass PyWidget_Activity147_MissionUnit.PyWidget_Activity147_MissionUnit
-// 0x01A0 (0x0760 - 0x05C0)
+// 0x01A8 (0x0770 - 0x05C8)
 class UPyWidget_Activity147_MissionUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            IconBrush;                                         // 0x05C0(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            IconBrush2;                                        // 0x0690(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0xE];                                      // 0x05C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            IconBrush;                                         // 0x05D0(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush2;                                        // 0x06A0(0x00D0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,17 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity147_MissionUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Activity147_MissionUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity147_MissionUnit")
 	}
 	static class UPyWidget_Activity147_MissionUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity147_MissionUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity147_MissionUnit) == 0x000010, "Wrong alignment on UPyWidget_Activity147_MissionUnit");
-static_assert(sizeof(UPyWidget_Activity147_MissionUnit) == 0x000760, "Wrong size on UPyWidget_Activity147_MissionUnit");
-static_assert(offsetof(UPyWidget_Activity147_MissionUnit, IconBrush) == 0x0005C0, "Member 'UPyWidget_Activity147_MissionUnit::IconBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity147_MissionUnit, IconBrush2) == 0x000690, "Member 'UPyWidget_Activity147_MissionUnit::IconBrush2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity147_MissionUnit;
 
 }
 

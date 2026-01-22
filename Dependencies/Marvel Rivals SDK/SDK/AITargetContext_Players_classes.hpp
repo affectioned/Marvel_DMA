@@ -23,15 +23,18 @@ class UAITargetContext_Players_C final : public UAITargetContext_Players
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITargetContext_Players_C">();
+		BP_STATIC_CLASS_IMPL("AITargetContext_Players_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_Players_C")
 	}
 	static class UAITargetContext_Players_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITargetContext_Players_C>();
 	}
 };
-static_assert(alignof(UAITargetContext_Players_C) == 0x000008, "Wrong alignment on UAITargetContext_Players_C");
-static_assert(sizeof(UAITargetContext_Players_C) == 0x000040, "Wrong size on UAITargetContext_Players_C");
+DUMPER7_ASSERTS_UAITargetContext_Players_C;
 
 }
 

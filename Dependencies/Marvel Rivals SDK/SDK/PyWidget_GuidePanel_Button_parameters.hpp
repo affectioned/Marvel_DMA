@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,9 +24,7 @@ struct PyWidget_GuidePanel_Button_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GuidePanel_Button_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_GuidePanel_Button_PreConstruct");
-static_assert(sizeof(PyWidget_GuidePanel_Button_PreConstruct) == 0x000001, "Wrong size on PyWidget_GuidePanel_Button_PreConstruct");
-static_assert(offsetof(PyWidget_GuidePanel_Button_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_GuidePanel_Button_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GuidePanel_Button_PreConstruct;
 
 // PythonFunction PyWidget_GuidePanel_Button.PyWidget_GuidePanel_Button.ShouldEnableInput
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_GuidePanel_Button_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GuidePanel_Button_ShouldEnableInput) == 0x000001, "Wrong alignment on PyWidget_GuidePanel_Button_ShouldEnableInput");
-static_assert(sizeof(PyWidget_GuidePanel_Button_ShouldEnableInput) == 0x000001, "Wrong size on PyWidget_GuidePanel_Button_ShouldEnableInput");
-static_assert(offsetof(PyWidget_GuidePanel_Button_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyWidget_GuidePanel_Button_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GuidePanel_Button_ShouldEnableInput;
 
 // PythonFunction PyWidget_GuidePanel_Button.PyWidget_GuidePanel_Button.OnReceiveInputKey
 // 0x0028 (0x0028 - 0x0000)
@@ -47,10 +43,7 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x0020(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GuidePanel_Button_OnReceiveInputKey) == 0x000008, "Wrong alignment on PyWidget_GuidePanel_Button_OnReceiveInputKey");
-static_assert(sizeof(PyWidget_GuidePanel_Button_OnReceiveInputKey) == 0x000028, "Wrong size on PyWidget_GuidePanel_Button_OnReceiveInputKey");
-static_assert(offsetof(PyWidget_GuidePanel_Button_OnReceiveInputKey, InKey) == 0x000000, "Member 'PyWidget_GuidePanel_Button_OnReceiveInputKey::InKey' has a wrong offset!");
-static_assert(offsetof(PyWidget_GuidePanel_Button_OnReceiveInputKey, EventType) == 0x000020, "Member 'PyWidget_GuidePanel_Button_OnReceiveInputKey::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GuidePanel_Button_OnReceiveInputKey;
 
 // PythonFunction PyWidget_GuidePanel_Button.PyWidget_GuidePanel_Button.OnReceiveGlobalInputKey
 // 0x0028 (0x0028 - 0x0000)
@@ -60,10 +53,7 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	EInputEvent                                   EventType;                                         // 0x0020(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey) == 0x000008, "Wrong alignment on PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey");
-static_assert(sizeof(PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey) == 0x000028, "Wrong size on PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey");
-static_assert(offsetof(PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey, InKey) == 0x000000, "Member 'PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey::InKey' has a wrong offset!");
-static_assert(offsetof(PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey, EventType) == 0x000020, "Member 'PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey::EventType' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GuidePanel_Button_OnReceiveGlobalInputKey;
 
 }
 

@@ -23,15 +23,18 @@ class UBTD_CheckAbilityIsActive_C final : public UBTD_PyCheckAbilityIsActive
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTD_CheckAbilityIsActive_C">();
+		BP_STATIC_CLASS_IMPL("BTD_CheckAbilityIsActive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_CheckAbilityIsActive_C")
 	}
 	static class UBTD_CheckAbilityIsActive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_CheckAbilityIsActive_C>();
 	}
 };
-static_assert(alignof(UBTD_CheckAbilityIsActive_C) == 0x000008, "Wrong alignment on UBTD_CheckAbilityIsActive_C");
-static_assert(sizeof(UBTD_CheckAbilityIsActive_C) == 0x0000C0, "Wrong size on UBTD_CheckAbilityIsActive_C");
+DUMPER7_ASSERTS_UBTD_CheckAbilityIsActive_C;
 
 }
 

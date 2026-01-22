@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102571.PyCue_Scope_Loop_10257102
-// 0x0010 (0x10F0 - 0x10E0)
+// 0x0010 (0x1100 - 0x10F0)
 class APyCue_Scope_Loop_10257102 final : public AMarvelCueNotify_Scope
 {
 public:
-	float                                         NSLoopHeight;                                      // 0x10E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NSLoopHeight;                                      // 0x10F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -39,19 +39,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10257102">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10257102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10257102")
 	}
 	static class APyCue_Scope_Loop_10257102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10257102>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10257102) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10257102");
-static_assert(sizeof(APyCue_Scope_Loop_10257102) == 0x0010F0, "Wrong size on APyCue_Scope_Loop_10257102");
-static_assert(offsetof(APyCue_Scope_Loop_10257102, NSLoopHeight) == 0x0010E0, "Member 'APyCue_Scope_Loop_10257102::NSLoopHeight' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10257102;
 
 // PythonClass PyAbility_102571.PyCue_Scope_Loop_10257101
-// 0x0000 (0x10E0 - 0x10E0)
+// 0x0000 (0x10F0 - 0x10F0)
 class APyCue_Scope_Loop_10257101 final : public AMarvelCueNotify_Scope
 {
 public:
@@ -63,69 +65,66 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10257101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10257101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10257101")
 	}
 	static class APyCue_Scope_Loop_10257101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10257101>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10257101) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10257101");
-static_assert(sizeof(APyCue_Scope_Loop_10257101) == 0x0010E0, "Wrong size on APyCue_Scope_Loop_10257101");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10257101;
 
 // PythonClass PyAbility_102571.PyConfig_102571
-// 0x0C50 (0x0CE8 - 0x0098)
+// 0x0F70 (0x1008 - 0x0098)
 class UPyConfig_102571 final : public UMarvelAbilityConfig
 {
 public:
 	int32                                         FlyCountThreshold;                                 // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DashStepHeight;                                    // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x0C68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UnifyScopeLife;                                    // 0x0C6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C6D[0x3];                                      // 0x0C6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ManagerScopeID;                                    // 0x0C70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C74[0x4];                                      // 0x0C74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  ForbidenEnergyTags;                                // 0x0C78(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         TraceFloorDistance;                                // 0x0CE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxFloorSlope;                                     // 0x0CE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x00A0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x0F88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UnifyScopeLife;                                    // 0x0F8C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F8D[0x3];                                      // 0x0F8D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ManagerScopeID;                                    // 0x0F90(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F94[0x4];                                      // 0x0F94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  ForbidenEnergyTags;                                // 0x0F98(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         TraceFloorDistance;                                // 0x1000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxFloorSlope;                                     // 0x1004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102571">();
+		STATIC_CLASS_IMPL("PyConfig_102571")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102571")
 	}
 	static class UPyConfig_102571* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102571>();
 	}
 };
-static_assert(alignof(UPyConfig_102571) == 0x000008, "Wrong alignment on UPyConfig_102571");
-static_assert(sizeof(UPyConfig_102571) == 0x000CE8, "Wrong size on UPyConfig_102571");
-static_assert(offsetof(UPyConfig_102571, FlyCountThreshold) == 0x000098, "Member 'UPyConfig_102571::FlyCountThreshold' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, DashStepHeight) == 0x00009C, "Member 'UPyConfig_102571::DashStepHeight' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, DashInfo) == 0x0000A0, "Member 'UPyConfig_102571::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, ScopeID) == 0x000C68, "Member 'UPyConfig_102571::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, UnifyScopeLife) == 0x000C6C, "Member 'UPyConfig_102571::UnifyScopeLife' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, ManagerScopeID) == 0x000C70, "Member 'UPyConfig_102571::ManagerScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, ForbidenEnergyTags) == 0x000C78, "Member 'UPyConfig_102571::ForbidenEnergyTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, TraceFloorDistance) == 0x000CE0, "Member 'UPyConfig_102571::TraceFloorDistance' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102571, MaxFloorSlope) == 0x000CE4, "Member 'UPyConfig_102571::MaxFloorSlope' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102571;
 
 // PythonClass PyAbility_102571.PyCue_Ability_Loop_10257101
-// 0x0050 (0x1200 - 0x11B0)
+// 0x0050 (0x1210 - 0x11C0)
 class APyCue_Ability_Loop_10257101 final : public AMarvelCueNotify_Ability
 {
 public:
-	class UAnimMontage*                           ViceMontage;                                       // 0x11B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyMeshOffsetX;                                    // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ScreenEffectTag;                                   // 0x11BC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         FlyTrajectoryEffect;                               // 0x11C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                FlyEffectOffset;                                   // 0x11D0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         FlyStopEffect;                                     // 0x11E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CustomRenderDepth;                                 // 0x11F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11F4[0x4];                                     // 0x11F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 ViceMeshComponent;                                 // 0x11F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           ViceMontage;                                       // 0x11C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyMeshOffsetX;                                    // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ScreenEffectTag;                                   // 0x11CC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         FlyTrajectoryEffect;                               // 0x11D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                FlyEffectOffset;                                   // 0x11E0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         FlyStopEffect;                                     // 0x11F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CustomRenderDepth;                                 // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1204[0x4];                                     // 0x1204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 ViceMeshComponent;                                 // 0x1208(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -139,30 +138,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10257101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10257101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10257101")
 	}
 	static class APyCue_Ability_Loop_10257101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10257101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10257101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10257101");
-static_assert(sizeof(APyCue_Ability_Loop_10257101) == 0x001200, "Wrong size on APyCue_Ability_Loop_10257101");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, ViceMontage) == 0x0011B0, "Member 'APyCue_Ability_Loop_10257101::ViceMontage' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, FlyMeshOffsetX) == 0x0011B8, "Member 'APyCue_Ability_Loop_10257101::FlyMeshOffsetX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, ScreenEffectTag) == 0x0011BC, "Member 'APyCue_Ability_Loop_10257101::ScreenEffectTag' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, FlyTrajectoryEffect) == 0x0011C8, "Member 'APyCue_Ability_Loop_10257101::FlyTrajectoryEffect' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, FlyEffectOffset) == 0x0011D0, "Member 'APyCue_Ability_Loop_10257101::FlyEffectOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, FlyStopEffect) == 0x0011E8, "Member 'APyCue_Ability_Loop_10257101::FlyStopEffect' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, CustomRenderDepth) == 0x0011F0, "Member 'APyCue_Ability_Loop_10257101::CustomRenderDepth' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10257101, ViceMeshComponent) == 0x0011F8, "Member 'APyCue_Ability_Loop_10257101::ViceMeshComponent' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10257101;
 
 // PythonClass PyAbility_102571.PyScope_10257102
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class APyScope_10257102 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* InScope)> EffectScopeChangedDispatcher;              // 0x1AA0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class AActor* InScope)> EffectScopeChangedDispatcher;              // 0x1B70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnEndAgentTask();
@@ -170,27 +165,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10257102">();
+		STATIC_CLASS_IMPL("PyScope_10257102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10257102")
 	}
 	static class APyScope_10257102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10257102>();
 	}
 };
-static_assert(alignof(APyScope_10257102) == 0x000010, "Wrong alignment on APyScope_10257102");
-static_assert(sizeof(APyScope_10257102) == 0x001AB0, "Wrong size on APyScope_10257102");
-static_assert(offsetof(APyScope_10257102, EffectScopeChangedDispatcher) == 0x001AA0, "Member 'APyScope_10257102::EffectScopeChangedDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10257102;
 
 // PythonClass PyAbility_102571.PyScope_10257101
-// 0x0040 (0x1AE0 - 0x1AA0)
+// 0x0040 (0x1BB0 - 0x1B70)
 class APyScope_10257101 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	bool                                          SpreadState;                                       // 0x1AA0(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AA1[0x7];                                     // 0x1AA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        CheckPoints;                                       // 0x1AA8(0x0010)(Net, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              SpreadStoppedDispatcher;                           // 0x1AB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FVector& InLocation)> ScopeFloorLocationDispatcher;   // 0x1AC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          SpreadState;                                       // 0x1B70(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B71[0x7];                                     // 0x1B71(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVector>                        CheckPoints;                                       // 0x1B78(0x0010)(Net, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              SpreadStoppedDispatcher;                           // 0x1B88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FVector& InLocation)> ScopeFloorLocationDispatcher;   // 0x1B98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnInitializeData();
@@ -206,22 +204,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10257101">();
+		STATIC_CLASS_IMPL("PyScope_10257101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10257101")
 	}
 	static class APyScope_10257101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10257101>();
 	}
 };
-static_assert(alignof(APyScope_10257101) == 0x000010, "Wrong alignment on APyScope_10257101");
-static_assert(sizeof(APyScope_10257101) == 0x001AE0, "Wrong size on APyScope_10257101");
-static_assert(offsetof(APyScope_10257101, SpreadState) == 0x001AA0, "Member 'APyScope_10257101::SpreadState' has a wrong offset!");
-static_assert(offsetof(APyScope_10257101, CheckPoints) == 0x001AA8, "Member 'APyScope_10257101::CheckPoints' has a wrong offset!");
-static_assert(offsetof(APyScope_10257101, SpreadStoppedDispatcher) == 0x001AB8, "Member 'APyScope_10257101::SpreadStoppedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyScope_10257101, ScopeFloorLocationDispatcher) == 0x001AC8, "Member 'APyScope_10257101::ScopeFloorLocationDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10257101;
 
 // PythonClass PyAbility_102571.PyTraceComponent_10257101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10257101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -232,28 +229,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10257101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10257101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10257101")
 	}
 	static class UPyTraceComponent_10257101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10257101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10257101) == 0x000010, "Wrong alignment on UPyTraceComponent_10257101");
-static_assert(sizeof(UPyTraceComponent_10257101) == 0x002200, "Wrong size on UPyTraceComponent_10257101");
+DUMPER7_ASSERTS_UPyTraceComponent_10257101;
 
 // PythonClass PyAbility_102571.PyAbility_102571
-// 0x0048 (0x2A38 - 0x29F0)
+// 0x0048 (0x2A88 - 0x2A40)
 class UPyAbility_102571 : public UMarvelGameplayAbility
 {
 public:
-	int32                                         FlyCounter;                                        // 0x29F0(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAbilityState_102571                          AbilityState;                                      // 0x29F4(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29F5[0x3];                                     // 0x29F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool IsLastFly)> FlyStartedDispatcher;                             // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsLastFly)> FlyStopedDispatcher;                              // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              AbilityEndedDispatcher;                            // 0x2A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FVector& InLocation)> FloorLocationDispatcher;        // 0x2A28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         FlyCounter;                                        // 0x2A40(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAbilityState_102571                          AbilityState;                                      // 0x2A44(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A45[0x3];                                     // 0x2A45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool IsLastFly)> FlyStartedDispatcher;                             // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsLastFly)> FlyStopedDispatcher;                              // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              AbilityEndedDispatcher;                            // 0x2A68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FVector& InLocation)> FloorLocationDispatcher;        // 0x2A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -270,21 +270,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102571">();
+		STATIC_CLASS_IMPL("PyAbility_102571")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102571")
 	}
 	static class UPyAbility_102571* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102571>();
 	}
 };
-static_assert(alignof(UPyAbility_102571) == 0x000008, "Wrong alignment on UPyAbility_102571");
-static_assert(sizeof(UPyAbility_102571) == 0x002A38, "Wrong size on UPyAbility_102571");
-static_assert(offsetof(UPyAbility_102571, FlyCounter) == 0x0029F0, "Member 'UPyAbility_102571::FlyCounter' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102571, AbilityState) == 0x0029F4, "Member 'UPyAbility_102571::AbilityState' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102571, FlyStartedDispatcher) == 0x0029F8, "Member 'UPyAbility_102571::FlyStartedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102571, FlyStopedDispatcher) == 0x002A08, "Member 'UPyAbility_102571::FlyStopedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102571, AbilityEndedDispatcher) == 0x002A18, "Member 'UPyAbility_102571::AbilityEndedDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102571, FloorLocationDispatcher) == 0x002A28, "Member 'UPyAbility_102571::FloorLocationDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102571;
 
 }
 

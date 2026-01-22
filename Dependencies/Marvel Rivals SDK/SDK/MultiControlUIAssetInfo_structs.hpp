@@ -33,19 +33,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              ResultIcon_97_5C9C8C2047E7CBC5F762EE95BD09F5EC;    // 0x00E0(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              ResultIconGlow_100_B33072284A9D78A8A31D828A78065E84; // 0x0110(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FMultiControlUIAssetInfo) == 0x000008, "Wrong alignment on FMultiControlUIAssetInfo");
-static_assert(sizeof(FMultiControlUIAssetInfo) == 0x000140, "Wrong size on FMultiControlUIAssetInfo");
-static_assert(offsetof(FMultiControlUIAssetInfo, MapID_45_7B74F18647FCC4B4025B0E85B2878AE8) == 0x000000, "Member 'FMultiControlUIAssetInfo::MapID_45_7B74F18647FCC4B4025B0E85B2878AE8' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, LevelName_76_A266601D484A018157B4E9A1EBBE81E4) == 0x000008, "Member 'FMultiControlUIAssetInfo::LevelName_76_A266601D484A018157B4E9A1EBBE81E4' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, TargetName_73_7CF058EA4F83262035D0D29BD3708DA5) == 0x000020, "Member 'FMultiControlUIAssetInfo::TargetName_73_7CF058EA4F83262035D0D29BD3708DA5' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, RedSideTarget_74_25809DC944D100E18533B5B4CE4AF29D) == 0x000038, "Member 'FMultiControlUIAssetInfo::RedSideTarget_74_25809DC944D100E18533B5B4CE4AF29D' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, BlueSideTarget_75_B153BE7240D3EE6244B4B4A2B22A1E0A) == 0x000050, "Member 'FMultiControlUIAssetInfo::BlueSideTarget_75_B153BE7240D3EE6244B4B4A2B22A1E0A' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, Delivery_79_4DBC31CB46877C193B37F1BFBCD318F5) == 0x000068, "Member 'FMultiControlUIAssetInfo::Delivery_79_4DBC31CB46877C193B37F1BFBCD318F5' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, BaseComment_101_DCB7C3CB4813039E2AAE91BCD8E4B107) == 0x000070, "Member 'FMultiControlUIAssetInfo::BaseComment_101_DCB7C3CB4813039E2AAE91BCD8E4B107' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, MapBG_89_FC382C4E41255029627A52B886C4F153) == 0x000080, "Member 'FMultiControlUIAssetInfo::MapBG_89_FC382C4E41255029627A52B886C4F153' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, ControlIcon_94_973B7FDF485F52082CE742977125E0C8) == 0x0000B0, "Member 'FMultiControlUIAssetInfo::ControlIcon_94_973B7FDF485F52082CE742977125E0C8' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, ResultIcon_97_5C9C8C2047E7CBC5F762EE95BD09F5EC) == 0x0000E0, "Member 'FMultiControlUIAssetInfo::ResultIcon_97_5C9C8C2047E7CBC5F762EE95BD09F5EC' has a wrong offset!");
-static_assert(offsetof(FMultiControlUIAssetInfo, ResultIconGlow_100_B33072284A9D78A8A31D828A78065E84) == 0x000110, "Member 'FMultiControlUIAssetInfo::ResultIconGlow_100_B33072284A9D78A8A31D828A78065E84' has a wrong offset!");
+DUMPER7_ASSERTS_FMultiControlUIAssetInfo;
 
 }
 

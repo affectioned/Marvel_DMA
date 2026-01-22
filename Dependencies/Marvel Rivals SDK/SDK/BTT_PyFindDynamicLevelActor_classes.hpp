@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindDynamicLevelActor">();
+		STATIC_CLASS_IMPL("BTT_PyFindDynamicLevelActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindDynamicLevelActor")
 	}
 	static class UBTT_PyFindDynamicLevelActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindDynamicLevelActor>();
 	}
 };
-static_assert(alignof(UBTT_PyFindDynamicLevelActor) == 0x000008, "Wrong alignment on UBTT_PyFindDynamicLevelActor");
-static_assert(sizeof(UBTT_PyFindDynamicLevelActor) == 0x000160, "Wrong size on UBTT_PyFindDynamicLevelActor");
-static_assert(offsetof(UBTT_PyFindDynamicLevelActor, ActorClass) == 0x000158, "Member 'UBTT_PyFindDynamicLevelActor::ActorClass' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindDynamicLevelActor;
 
 }
 

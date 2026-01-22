@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1040_CharacterBP.1040_CharacterBP_C
-// 0x0000 (0x22E0 - 0x22E0)
+// 0x0000 (0x23F0 - 0x23F0)
 class AOne040_CharacterBP_C final : public APyMisterFantasticCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1040_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1040_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1040_CharacterBP_C")
 	}
 	static class AOne040_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne040_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne040_CharacterBP_C) == 0x000010, "Wrong alignment on AOne040_CharacterBP_C");
-static_assert(sizeof(AOne040_CharacterBP_C) == 0x0022E0, "Wrong size on AOne040_CharacterBP_C");
+DUMPER7_ASSERTS_AOne040_CharacterBP_C;
 
 }
 

@@ -35,19 +35,7 @@ public:
 	struct FDateTime                              ClickableEndTime_48_D1A3BD0445422DA5D7893EB390913B48; // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FDateTime                              ClickableStartTime_47_934F18754E48D31EA25C6CA5F320E1A1; // 0x0098(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FItemUnlockConditionInfo) == 0x000008, "Wrong alignment on FItemUnlockConditionInfo");
-static_assert(sizeof(FItemUnlockConditionInfo) == 0x0000A0, "Wrong size on FItemUnlockConditionInfo");
-static_assert(offsetof(FItemUnlockConditionInfo, ButtonText_63_89CD819E4A536EBD056E40861CA6C58E) == 0x000000, "Member 'FItemUnlockConditionInfo::ButtonText_63_89CD819E4A536EBD056E40861CA6C58E' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, GainedTipsText_68_851D832E45ECEB7437EC4ABBF2CE5CC7) == 0x000018, "Member 'FItemUnlockConditionInfo::GainedTipsText_68_851D832E45ECEB7437EC4ABBF2CE5CC7' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, IsShowButton_58_10FD1EEA4E65DD8FCDFCFC849C6F6841) == 0x000030, "Member 'FItemUnlockConditionInfo::IsShowButton_58_10FD1EEA4E65DD8FCDFCFC849C6F6841' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, ButtonEnable_60_41E56A6C44F4E885223F1B9DE9BDCE66) == 0x000031, "Member 'FItemUnlockConditionInfo::ButtonEnable_60_41E56A6C44F4E885223F1B9DE9BDCE66' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, JumpParam_62_8894BFFB4FF9D64479F81B972D71C350) == 0x000038, "Member 'FItemUnlockConditionInfo::JumpParam_62_8894BFFB4FF9D64479F81B972D71C350' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, Remark_71_A817513E461EE0D88F6ACAB4E54FD11A) == 0x000048, "Member 'FItemUnlockConditionInfo::Remark_71_A817513E461EE0D88F6ACAB4E54FD11A' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, UnlockType_56_588E604445E90108537E8ABF7451E055) == 0x000058, "Member 'FItemUnlockConditionInfo::UnlockType_56_588E604445E90108537E8ABF7451E055' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, Tips_CantGot_53_ECE7A8CC4559A507B0EBCA8F66547F1A) == 0x000060, "Member 'FItemUnlockConditionInfo::Tips_CantGot_53_ECE7A8CC4559A507B0EBCA8F66547F1A' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, Tips_CanGot_51_1F1276624A086DB1177B13BC76CE8303) == 0x000078, "Member 'FItemUnlockConditionInfo::Tips_CanGot_51_1F1276624A086DB1177B13BC76CE8303' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, ClickableEndTime_48_D1A3BD0445422DA5D7893EB390913B48) == 0x000090, "Member 'FItemUnlockConditionInfo::ClickableEndTime_48_D1A3BD0445422DA5D7893EB390913B48' has a wrong offset!");
-static_assert(offsetof(FItemUnlockConditionInfo, ClickableStartTime_47_934F18754E48D31EA25C6CA5F320E1A1) == 0x000098, "Member 'FItemUnlockConditionInfo::ClickableStartTime_47_934F18754E48D31EA25C6CA5F320E1A1' has a wrong offset!");
+DUMPER7_ASSERTS_FItemUnlockConditionInfo;
 
 }
 

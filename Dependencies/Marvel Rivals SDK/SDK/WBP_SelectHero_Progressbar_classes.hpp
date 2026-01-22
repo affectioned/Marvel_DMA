@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_Progressbar.WBP_SelectHero_Progressbar_C
-// 0x0010 (0x0600 - 0x05F0)
+// 0x0010 (0x0608 - 0x05F8)
 class UWBP_SelectHero_Progressbar_C final : public UPyWidget_SelectHero_CountDownProgress
 {
 public:
-	class UWidgetAnimation*                       Anim_Progress;                                     // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_progress;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Progress;                                     // 0x05F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_progress;                                      // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_Progressbar_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_Progressbar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_Progressbar_C")
 	}
 	static class UWBP_SelectHero_Progressbar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_Progressbar_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_Progressbar_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_Progressbar_C");
-static_assert(sizeof(UWBP_SelectHero_Progressbar_C) == 0x000600, "Wrong size on UWBP_SelectHero_Progressbar_C");
-static_assert(offsetof(UWBP_SelectHero_Progressbar_C, Anim_Progress) == 0x0005F0, "Member 'UWBP_SelectHero_Progressbar_C::Anim_Progress' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_Progressbar_C, Img_progress) == 0x0005F8, "Member 'UWBP_SelectHero_Progressbar_C::Img_progress' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_Progressbar_C;
 
 }
 

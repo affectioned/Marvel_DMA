@@ -10,41 +10,43 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Squad_MainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_Squad_MainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_GameHall_MallDetail_PreviewBtn.PyWidget_GameHall_MallDetail_CheckBtn
-// 0x0010 (0x0618 - 0x0608)
+// 0x0010 (0x0620 - 0x0610)
 class UPyWidget_GameHall_MallDetail_CheckBtn final : public UPyWidget_Squad_SwitchHeroBtn
 {
 public:
-	TMulticastInlineDelegate<void(bool IsChecked)> OnCheckStateChanged;                              // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsChecked)> OnCheckStateChanged;                              // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameHall_MallDetail_CheckBtn">();
+		STATIC_CLASS_IMPL("PyWidget_GameHall_MallDetail_CheckBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameHall_MallDetail_CheckBtn")
 	}
 	static class UPyWidget_GameHall_MallDetail_CheckBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameHall_MallDetail_CheckBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_GameHall_MallDetail_CheckBtn) == 0x000008, "Wrong alignment on UPyWidget_GameHall_MallDetail_CheckBtn");
-static_assert(sizeof(UPyWidget_GameHall_MallDetail_CheckBtn) == 0x000618, "Wrong size on UPyWidget_GameHall_MallDetail_CheckBtn");
-static_assert(offsetof(UPyWidget_GameHall_MallDetail_CheckBtn, OnCheckStateChanged) == 0x000608, "Member 'UPyWidget_GameHall_MallDetail_CheckBtn::OnCheckStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GameHall_MallDetail_CheckBtn;
 
 // PythonClass PyWidget_GameHall_MallDetail_PreviewBtn.PyWidget_GameHall_MallDetail_ClickBtn
-// 0x0028 (0x0630 - 0x0608)
+// 0x0028 (0x0638 - 0x0610)
 class UPyWidget_GameHall_MallDetail_ClickBtn final : public UPyWidget_Squad_SwitchHeroBtn
 {
 public:
-	struct FSlateColor                            TextColor_Enable;                                  // 0x0608(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Disable;                                 // 0x061C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Enable;                                  // 0x0610(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Disable;                                 // 0x0624(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -53,17 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameHall_MallDetail_ClickBtn">();
+		STATIC_CLASS_IMPL("PyWidget_GameHall_MallDetail_ClickBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameHall_MallDetail_ClickBtn")
 	}
 	static class UPyWidget_GameHall_MallDetail_ClickBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameHall_MallDetail_ClickBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_GameHall_MallDetail_ClickBtn) == 0x000008, "Wrong alignment on UPyWidget_GameHall_MallDetail_ClickBtn");
-static_assert(sizeof(UPyWidget_GameHall_MallDetail_ClickBtn) == 0x000630, "Wrong size on UPyWidget_GameHall_MallDetail_ClickBtn");
-static_assert(offsetof(UPyWidget_GameHall_MallDetail_ClickBtn, TextColor_Enable) == 0x000608, "Member 'UPyWidget_GameHall_MallDetail_ClickBtn::TextColor_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GameHall_MallDetail_ClickBtn, TextColor_Disable) == 0x00061C, "Member 'UPyWidget_GameHall_MallDetail_ClickBtn::TextColor_Disable' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GameHall_MallDetail_ClickBtn;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelLevelSequenceActorBase">();
+		STATIC_CLASS_IMPL("PyMarvelLevelSequenceActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelLevelSequenceActorBase")
 	}
 	static class APyMarvelLevelSequenceActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelLevelSequenceActorBase>();
 	}
 };
-static_assert(alignof(APyMarvelLevelSequenceActorBase) == 0x000010, "Wrong alignment on APyMarvelLevelSequenceActorBase");
-static_assert(sizeof(APyMarvelLevelSequenceActorBase) == 0x000780, "Wrong size on APyMarvelLevelSequenceActorBase");
+DUMPER7_ASSERTS_APyMarvelLevelSequenceActorBase;
 
 }
 

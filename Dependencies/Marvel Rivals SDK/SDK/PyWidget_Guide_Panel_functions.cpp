@@ -124,6 +124,31 @@ bool UPyWidget_GuideActionTips::ShouldEnableInput()
 }
 
 
+// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionTips.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_GuideActionTips::OnCascadingVisibleChanged(bool visible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_GuideActionTips", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_GuideActionTips_OnCascadingVisibleChanged Parms{};
+
+	Parms.visible = visible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionTips.OnReceiveInputKey
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -168,176 +193,6 @@ void UPyWidget_GuideActionTips::OnReceiveGlobalInputKey(const struct FKey& InKey
 
 	Parms.InKey = std::move(InKey);
 	Parms.EventType = EventType;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionTips_PlatformAdaptation.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_GuideActionTips_PlatformAdaptation::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionTips_PlatformAdaptation", "PreConstruct");
-
-	Params::PyWidget_GuideActionTips_PlatformAdaptation_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionTips_PlatformAdaptation.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GuideActionTips_PlatformAdaptation::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionTips_PlatformAdaptation", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionTips_PlatformAdaptation.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GuideActionTips_PlatformAdaptation::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionTips_PlatformAdaptation", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionPanel.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GuideActionPanel::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionPanel", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionPanel.PreConstruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_GuideActionPanel::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionPanel", "PreConstruct");
-
-	Params::PyWidget_GuideActionPanel_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionPanel.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GuideActionPanel::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionPanel", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionPanel.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_GuideActionPanel::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionPanel", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_Guide_Panel.PyWidget_GuideActionPanel.OnTipWidgetClicked
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    event                                                  (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UPyWidget_GuideActionPanel::OnTipWidgetClicked(const class FString& event)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_GuideActionPanel", "OnTipWidgetClicked");
-
-	Params::PyWidget_GuideActionPanel_OnTipWidgetClicked Parms{};
-
-	Parms.event = std::move(event);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

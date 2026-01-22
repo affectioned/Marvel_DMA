@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Marvel_structs.hpp"
-#include "PyUIController_CharacterAbilities_classes.hpp"
 #include "Hero_1014_classes.hpp"
 #include "GameplayTags_structs.hpp"
 
@@ -20,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyPunisherCharacter.PyPunisherChildActor
-// 0x0010 (0x0E50 - 0x0E40)
+// 0x0010 (0x0E60 - 0x0E50)
 class APyPunisherChildActor final : public APunisherChildActor
 {
 public:
-	TArray<struct FMaterialQuery>                 MaterialQueryList;                                 // 0x0E40(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FMaterialQuery>                 MaterialQueryList;                                 // 0x0E50(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -33,23 +32,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPunisherChildActor">();
+		STATIC_CLASS_IMPL("PyPunisherChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPunisherChildActor")
 	}
 	static class APyPunisherChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPunisherChildActor>();
 	}
 };
-static_assert(alignof(APyPunisherChildActor) == 0x000010, "Wrong alignment on APyPunisherChildActor");
-static_assert(sizeof(APyPunisherChildActor) == 0x000E50, "Wrong size on APyPunisherChildActor");
-static_assert(offsetof(APyPunisherChildActor, MaterialQueryList) == 0x000E40, "Member 'APyPunisherChildActor::MaterialQueryList' has a wrong offset!");
+DUMPER7_ASSERTS_APyPunisherChildActor;
 
 // PythonClass PyPunisherCharacter.PyPunisherCharacter
-// 0x0010 (0x2200 - 0x21F0)
+// 0x0010 (0x2310 - 0x2300)
 class APyPunisherCharacter : public APunisherCharacter
 {
 public:
-	struct FGameplayTag                           ShowGatlingTag;                                    // 0x21F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ShowGatlingTag;                                    // 0x2300(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -59,37 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPunisherCharacter">();
+		STATIC_CLASS_IMPL("PyPunisherCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPunisherCharacter")
 	}
 	static class APyPunisherCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPunisherCharacter>();
 	}
 };
-static_assert(alignof(APyPunisherCharacter) == 0x000010, "Wrong alignment on APyPunisherCharacter");
-static_assert(sizeof(APyPunisherCharacter) == 0x002200, "Wrong size on APyPunisherCharacter");
-static_assert(offsetof(APyPunisherCharacter, ShowGatlingTag) == 0x0021F0, "Member 'APyPunisherCharacter::ShowGatlingTag' has a wrong offset!");
-
-// PythonClass PyPunisherCharacter.PyUIController_PunisherAbilities
-// 0x0000 (0x0040 - 0x0040)
-class UPyUIController_PunisherAbilities final : public UPyUIController_CharacterAbilities
-{
-public:
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_PunisherAbilities">();
-	}
-	static class UPyUIController_PunisherAbilities* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_PunisherAbilities>();
-	}
-};
-static_assert(alignof(UPyUIController_PunisherAbilities) == 0x000008, "Wrong alignment on UPyUIController_PunisherAbilities");
-static_assert(sizeof(UPyUIController_PunisherAbilities) == 0x000040, "Wrong size on UPyUIController_PunisherAbilities");
+DUMPER7_ASSERTS_APyPunisherCharacter;
 
 }
 

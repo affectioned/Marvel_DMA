@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_CareerHeroDataItem.PyWidget_Halloween_CareerHeroDataItem
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Halloween_CareerHeroDataItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   DataText;                                          // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Icon;                                      // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   DataText;                                          // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Icon;                                      // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,20 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CareerHeroDataItem">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CareerHeroDataItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CareerHeroDataItem")
 	}
 	static class UPyWidget_Halloween_CareerHeroDataItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CareerHeroDataItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CareerHeroDataItem) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CareerHeroDataItem");
-static_assert(sizeof(UPyWidget_Halloween_CareerHeroDataItem) == 0x0005E0, "Wrong size on UPyWidget_Halloween_CareerHeroDataItem");
-static_assert(offsetof(UPyWidget_Halloween_CareerHeroDataItem, DataText) == 0x0005C0, "Member 'UPyWidget_Halloween_CareerHeroDataItem::DataText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CareerHeroDataItem, Texture_Icon) == 0x0005D8, "Member 'UPyWidget_Halloween_CareerHeroDataItem::Texture_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CareerHeroDataItem;
 
 // PythonClass PyWidget_Halloween_CareerHeroDataItem.PyWidget_Halloween_CareerHeroHeadItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Halloween_CareerHeroHeadItem final : public UPyWidget_Button
 {
 public:
@@ -59,15 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CareerHeroHeadItem">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CareerHeroHeadItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CareerHeroHeadItem")
 	}
 	static class UPyWidget_Halloween_CareerHeroHeadItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CareerHeroHeadItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CareerHeroHeadItem) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CareerHeroHeadItem");
-static_assert(sizeof(UPyWidget_Halloween_CareerHeroHeadItem) == 0x000728, "Wrong size on UPyWidget_Halloween_CareerHeroHeadItem");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CareerHeroHeadItem;
 
 }
 

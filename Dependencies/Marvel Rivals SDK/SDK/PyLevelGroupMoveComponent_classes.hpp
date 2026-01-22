@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelGroupMoveComponent">();
+		STATIC_CLASS_IMPL("PyLevelGroupMoveComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelGroupMoveComponent")
 	}
 	static class UPyLevelGroupMoveComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelGroupMoveComponent>();
 	}
 };
-static_assert(alignof(UPyLevelGroupMoveComponent) == 0x000010, "Wrong alignment on UPyLevelGroupMoveComponent");
-static_assert(sizeof(UPyLevelGroupMoveComponent) == 0x0004B0, "Wrong size on UPyLevelGroupMoveComponent");
-static_assert(offsetof(UPyLevelGroupMoveComponent, IsRotation) == 0x0004A8, "Member 'UPyLevelGroupMoveComponent::IsRotation' has a wrong offset!");
-static_assert(offsetof(UPyLevelGroupMoveComponent, IsInitRotation) == 0x0004A9, "Member 'UPyLevelGroupMoveComponent::IsInitRotation' has a wrong offset!");
-static_assert(offsetof(UPyLevelGroupMoveComponent, DeltaDegree) == 0x0004AC, "Member 'UPyLevelGroupMoveComponent::DeltaDegree' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelGroupMoveComponent;
 
 }
 

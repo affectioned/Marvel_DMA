@@ -27,12 +27,7 @@ public:
 	int32                                         ItemNum;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Multiple;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetItemData) == 0x000008, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetItemData");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetItemData) == 0x000020, "Wrong size on PyWidget_CareerHeroTitleItem_SetItemData");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetItemData, ItemID) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetItemData::ItemID' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetItemData, ItemType) == 0x000010, "Member 'PyWidget_CareerHeroTitleItem_SetItemData::ItemType' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetItemData, ItemNum) == 0x000014, "Member 'PyWidget_CareerHeroTitleItem_SetItemData::ItemNum' has a wrong offset!");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetItemData, Multiple) == 0x000018, "Member 'PyWidget_CareerHeroTitleItem_SetItemData::Multiple' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetItemData;
 
 // PythonFunction PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem.SetIsSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +36,7 @@ struct PyWidget_CareerHeroTitleItem_SetIsSelected final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetIsSelected) == 0x000001, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetIsSelected");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetIsSelected) == 0x000001, "Wrong size on PyWidget_CareerHeroTitleItem_SetIsSelected");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetIsSelected, IsSelected) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetIsSelected::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetIsSelected;
 
 // PythonFunction PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem.SetIsLocked
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +45,7 @@ struct PyWidget_CareerHeroTitleItem_SetIsLocked final
 public:
 	bool                                          IsLocked;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetIsLocked) == 0x000001, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetIsLocked");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetIsLocked) == 0x000001, "Wrong size on PyWidget_CareerHeroTitleItem_SetIsLocked");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetIsLocked, IsLocked) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetIsLocked::IsLocked' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetIsLocked;
 
 // PythonFunction PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem.SetIsEquipped
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +54,7 @@ struct PyWidget_CareerHeroTitleItem_SetIsEquipped final
 public:
 	bool                                          IsEquipped;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetIsEquipped) == 0x000001, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetIsEquipped");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetIsEquipped) == 0x000001, "Wrong size on PyWidget_CareerHeroTitleItem_SetIsEquipped");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetIsEquipped, IsEquipped) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetIsEquipped::IsEquipped' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetIsEquipped;
 
 // PythonFunction PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +63,7 @@ struct PyWidget_CareerHeroTitleItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetIsHover");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_CareerHeroTitleItem_SetIsHover");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetIsHover;
 
 // PythonFunction PyWidget_CareerHeroTitlePanel.PyWidget_CareerHeroTitleItem.SetIsShowRed
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +72,7 @@ struct PyWidget_CareerHeroTitleItem_SetIsShowRed final
 public:
 	bool                                          IsShowRed;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerHeroTitleItem_SetIsShowRed) == 0x000001, "Wrong alignment on PyWidget_CareerHeroTitleItem_SetIsShowRed");
-static_assert(sizeof(PyWidget_CareerHeroTitleItem_SetIsShowRed) == 0x000001, "Wrong size on PyWidget_CareerHeroTitleItem_SetIsShowRed");
-static_assert(offsetof(PyWidget_CareerHeroTitleItem_SetIsShowRed, IsShowRed) == 0x000000, "Member 'PyWidget_CareerHeroTitleItem_SetIsShowRed::IsShowRed' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerHeroTitleItem_SetIsShowRed;
 
 }
 

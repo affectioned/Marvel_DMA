@@ -195,6 +195,40 @@ float UUISettingGamepadSensitivitySettingHandler::BP_GetRevertValue(class UObjec
 }
 
 
+// PythonFunction Gamepad.UISettingGamepadSensitivitySettingHandler.BP_IsShowStar
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          obj                                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    setting_key                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const TMap<class FString, class FString>&params                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const TMap<int32, class FText>&         o                                                      (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UUISettingGamepadSensitivitySettingHandler::BP_IsShowStar(class UObject* obj, const class FString& setting_key, const TMap<class FString, class FString>& params, const TMap<int32, class FText>& o)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UISettingGamepadSensitivitySettingHandler", "BP_IsShowStar");
+
+	Params::UISettingGamepadSensitivitySettingHandler_BP_IsShowStar Parms{};
+
+	Parms.obj = obj;
+	Parms.setting_key = std::move(setting_key);
+	Parms.params = std::move(params);
+	Parms.o = std::move(o);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // PythonFunction Gamepad.UISettingGamepadCursorAdsorptionSettingHandler.BP_GetDefaultValue
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

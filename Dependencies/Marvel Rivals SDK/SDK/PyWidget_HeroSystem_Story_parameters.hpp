@@ -23,9 +23,7 @@ struct PyWidget_HeroSystem_Story_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Story_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_Story_MarvelSetVisible");
-static_assert(sizeof(PyWidget_HeroSystem_Story_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_HeroSystem_Story_MarvelSetVisible");
-static_assert(offsetof(PyWidget_HeroSystem_Story_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_HeroSystem_Story_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Story_MarvelSetVisible;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_HeroSystem_Story_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Story_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Story_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_HeroSystem_Story_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_HeroSystem_Story_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_HeroSystem_Story_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_HeroSystem_Story_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Story_GetAutoTestDebugName;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_StoryUnit.SetUnlocked
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_StoryUnit_SetUnlocked final
 public:
 	bool                                          IsUnlocked_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_StoryUnit_SetUnlocked) == 0x000001, "Wrong alignment on PyWidget_StoryUnit_SetUnlocked");
-static_assert(sizeof(PyWidget_StoryUnit_SetUnlocked) == 0x000001, "Wrong size on PyWidget_StoryUnit_SetUnlocked");
-static_assert(offsetof(PyWidget_StoryUnit_SetUnlocked, IsUnlocked_0) == 0x000000, "Member 'PyWidget_StoryUnit_SetUnlocked::IsUnlocked_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_StoryUnit_SetUnlocked;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_StoryUnit.SetSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_StoryUnit_SetSelected final
 public:
 	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_StoryUnit_SetSelected) == 0x000001, "Wrong alignment on PyWidget_StoryUnit_SetSelected");
-static_assert(sizeof(PyWidget_StoryUnit_SetSelected) == 0x000001, "Wrong size on PyWidget_StoryUnit_SetSelected");
-static_assert(offsetof(PyWidget_StoryUnit_SetSelected, IsSelected_0) == 0x000000, "Member 'PyWidget_StoryUnit_SetSelected::IsSelected_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_StoryUnit_SetSelected;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story_ReadPanel.Tick
 // 0x003C (0x003C - 0x0000)
@@ -68,10 +60,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Story_ReadPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_HeroSystem_Story_ReadPanel_Tick");
-static_assert(sizeof(PyWidget_HeroSystem_Story_ReadPanel_Tick) == 0x00003C, "Wrong size on PyWidget_HeroSystem_Story_ReadPanel_Tick");
-static_assert(offsetof(PyWidget_HeroSystem_Story_ReadPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_HeroSystem_Story_ReadPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_HeroSystem_Story_ReadPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_HeroSystem_Story_ReadPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Story_ReadPanel_Tick;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story_ReadPanel.SetUnlocked
 // 0x0001 (0x0001 - 0x0000)
@@ -80,9 +69,7 @@ struct PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked final
 public:
 	bool                                          IsUnlocked;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked");
-static_assert(sizeof(PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked) == 0x000001, "Wrong size on PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked");
-static_assert(offsetof(PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked, IsUnlocked) == 0x000000, "Member 'PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked::IsUnlocked' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Story_ReadPanel_SetUnlocked;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_HeroSystem_Story_ReadPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -91,9 +78,7 @@ struct PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Story_ReadPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_StoryReadUnit.SetUnlocked
 // 0x0001 (0x0001 - 0x0000)
@@ -102,9 +87,7 @@ struct PyWidget_StoryReadUnit_SetUnlocked final
 public:
 	bool                                          IsUnlocked_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_StoryReadUnit_SetUnlocked) == 0x000001, "Wrong alignment on PyWidget_StoryReadUnit_SetUnlocked");
-static_assert(sizeof(PyWidget_StoryReadUnit_SetUnlocked) == 0x000001, "Wrong size on PyWidget_StoryReadUnit_SetUnlocked");
-static_assert(offsetof(PyWidget_StoryReadUnit_SetUnlocked, IsUnlocked_0) == 0x000000, "Member 'PyWidget_StoryReadUnit_SetUnlocked::IsUnlocked_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_StoryReadUnit_SetUnlocked;
 
 // PythonFunction PyWidget_HeroSystem_Story.PyWidget_StoryReadUnit.SetSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -113,9 +96,7 @@ struct PyWidget_StoryReadUnit_SetSelected final
 public:
 	bool                                          IsSelected_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_StoryReadUnit_SetSelected) == 0x000001, "Wrong alignment on PyWidget_StoryReadUnit_SetSelected");
-static_assert(sizeof(PyWidget_StoryReadUnit_SetSelected) == 0x000001, "Wrong size on PyWidget_StoryReadUnit_SetSelected");
-static_assert(offsetof(PyWidget_StoryReadUnit_SetSelected, IsSelected_0) == 0x000000, "Member 'PyWidget_StoryReadUnit_SetSelected::IsSelected_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_StoryReadUnit_SetSelected;
 
 }
 

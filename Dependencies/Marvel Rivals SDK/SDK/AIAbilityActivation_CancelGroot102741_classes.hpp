@@ -23,15 +23,18 @@ class UAIAbilityActivation_CancelGroot102741_C final : public UPyAIAbilityActiva
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_CancelGroot102741_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_CancelGroot102741_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_CancelGroot102741_C")
 	}
 	static class UAIAbilityActivation_CancelGroot102741_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_CancelGroot102741_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_CancelGroot102741_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_CancelGroot102741_C");
-static_assert(sizeof(UAIAbilityActivation_CancelGroot102741_C) == 0x000040, "Wrong size on UAIAbilityActivation_CancelGroot102741_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_CancelGroot102741_C;
 
 }
 

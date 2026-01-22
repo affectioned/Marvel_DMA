@@ -21,9 +21,7 @@ struct PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_ObtainedCardContentTips_MarvelSetVisible;
 
 }
 

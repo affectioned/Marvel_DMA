@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_Career_HonorBadge_structs.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_Career_HonorBadge_structs.hpp"
 
 
 namespace SDK
@@ -29,13 +29,7 @@ public:
 	struct FDataTableRowHandle                    Season_24_DC036A0848D80855915FA7B6E673434C;        // 0x0068(0x0018)(Edit, BlueprintVisible, NoDestructor)
 	EHonorBadgeAnimType                           AnimType_53_4E1FAB6648DD4253B2F8638DEDF93139;      // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelHonorBadge_BP) == 0x000008, "Wrong alignment on FMarvelHonorBadge_BP");
-static_assert(sizeof(FMarvelHonorBadge_BP) == 0x000088, "Wrong size on FMarvelHonorBadge_BP");
-static_assert(offsetof(FMarvelHonorBadge_BP, Delivery_31_924A23EB461A1837E88EE68813F40071) == 0x000000, "Member 'FMarvelHonorBadge_BP::Delivery_31_924A23EB461A1837E88EE68813F40071' has a wrong offset!");
-static_assert(offsetof(FMarvelHonorBadge_BP, Icon_54_0DF2BC6D4412D9AEC777DC9D29C33AF3) == 0x000008, "Member 'FMarvelHonorBadge_BP::Icon_54_0DF2BC6D4412D9AEC777DC9D29C33AF3' has a wrong offset!");
-static_assert(offsetof(FMarvelHonorBadge_BP, BigIcon_55_29FEC41648BB4031E08CE882EEF7C31A) == 0x000038, "Member 'FMarvelHonorBadge_BP::BigIcon_55_29FEC41648BB4031E08CE882EEF7C31A' has a wrong offset!");
-static_assert(offsetof(FMarvelHonorBadge_BP, Season_24_DC036A0848D80855915FA7B6E673434C) == 0x000068, "Member 'FMarvelHonorBadge_BP::Season_24_DC036A0848D80855915FA7B6E673434C' has a wrong offset!");
-static_assert(offsetof(FMarvelHonorBadge_BP, AnimType_53_4E1FAB6648DD4253B2F8638DEDF93139) == 0x000080, "Member 'FMarvelHonorBadge_BP::AnimType_53_4E1FAB6648DD4253B2F8638DEDF93139' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelHonorBadge_BP;
 
 }
 

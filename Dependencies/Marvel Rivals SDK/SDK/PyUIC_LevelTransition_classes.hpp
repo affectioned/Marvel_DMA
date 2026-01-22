@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_LevelTransition">();
+		STATIC_CLASS_IMPL("PyUIC_LevelTransition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_LevelTransition")
 	}
 	static class UPyUIC_LevelTransition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_LevelTransition>();
 	}
 };
-static_assert(alignof(UPyUIC_LevelTransition) == 0x000008, "Wrong alignment on UPyUIC_LevelTransition");
-static_assert(sizeof(UPyUIC_LevelTransition) == 0x000030, "Wrong size on UPyUIC_LevelTransition");
+DUMPER7_ASSERTS_UPyUIC_LevelTransition;
 
 }
 

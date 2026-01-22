@@ -28,18 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero_NewYork">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero_NewYork")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero_NewYork")
 	}
 	static class APyLevelController_SelectHero_NewYork* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelectHero_NewYork>();
 	}
 };
-static_assert(alignof(APyLevelController_SelectHero_NewYork) == 0x000010, "Wrong alignment on APyLevelController_SelectHero_NewYork");
-static_assert(sizeof(APyLevelController_SelectHero_NewYork) == 0x000820, "Wrong size on APyLevelController_SelectHero_NewYork");
-static_assert(offsetof(APyLevelController_SelectHero_NewYork, PlayLoopImmediatelyTime) == 0x00080C, "Member 'APyLevelController_SelectHero_NewYork::PlayLoopImmediatelyTime' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_NewYork, LoopStartTime) == 0x000810, "Member 'APyLevelController_SelectHero_NewYork::LoopStartTime' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_NewYork, LoopEndTime) == 0x000814, "Member 'APyLevelController_SelectHero_NewYork::LoopEndTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero_NewYork;
 
 }
 

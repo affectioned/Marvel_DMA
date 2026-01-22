@@ -22,10 +22,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InstanceName_0;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle) == 0x000008, "Wrong alignment on PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle");
-static_assert(sizeof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle) == 0x000018, "Wrong size on PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle, WorldContextObject) == 0x000000, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle, InstanceName_0) == 0x000008, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle::InstanceName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoH01SpiderZero_TokyoH01SpiderZeroRandomIdle;
 
 // PythonFunction PyTokyoH01SpiderZero.PyTokyoH01SpiderZero.TokyoH01SpiderZeroChangeNiagaraLevel
 // 0x0018 (0x0018 - 0x0000)
@@ -35,10 +32,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InstanceName_0;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel) == 0x000008, "Wrong alignment on PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel");
-static_assert(sizeof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel) == 0x000018, "Wrong size on PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel, WorldContextObject) == 0x000000, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel, InstanceName_0) == 0x000008, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel::InstanceName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoH01SpiderZero_TokyoH01SpiderZeroChangeNiagaraLevel;
 
 // PythonFunction PyTokyoH01SpiderZero.PyTokyoH01SpiderZero.TokyoH01SpiderZeroStartFall
 // 0x0018 (0x0018 - 0x0000)
@@ -48,10 +42,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InstanceName_0;                                    // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall) == 0x000008, "Wrong alignment on PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall");
-static_assert(sizeof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall) == 0x000018, "Wrong size on PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall, WorldContextObject) == 0x000000, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall, InstanceName_0) == 0x000008, "Member 'PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall::InstanceName_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyTokyoH01SpiderZero_TokyoH01SpiderZeroStartFall;
 
 }
 

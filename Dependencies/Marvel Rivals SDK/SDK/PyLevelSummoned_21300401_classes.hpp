@@ -19,27 +19,27 @@ namespace SDK
 {
 
 // PythonClass PyLevelSummoned_21300401.PyLevelSummoned_21300401
-// 0x00B0 (0x0C20 - 0x0B70)
+// 0x00B0 (0x0C40 - 0x0B90)
 class APyLevelSummoned_21300401 final : public ASummoned_21300401
 {
 public:
-	int32                                         ShieldState;                                       // 0x0B70(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultActive;                                     // 0x0B74(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B75[0x3];                                      // 0x0B75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxHealth;                                         // 0x0B78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenDamageLimit;                                   // 0x0B7C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B7D[0x3];                                      // 0x0B7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DamageLimit;                                       // 0x0B80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          OpenDamageFixed;                                   // 0x0B84(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B85[0x3];                                      // 0x0B85(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DamageFixed;                                       // 0x0B88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B8C[0x4];                                      // 0x0B8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EHalloweenDifficulty, float>             HealthConfig;                                      // 0x0B90(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<float>                                 PlayerNumFactor;                                   // 0x0BE0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         BrokenNiagaraSystem;                               // 0x0BF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          BrokenAudioEvent;                                  // 0x0BF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShieldState)> DispatchShieldState;                           // 0x0C00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnDeathDispatcher;                                 // 0x0C10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         ShieldState;                                       // 0x0B90(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultActive;                                     // 0x0B94(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B95[0x3];                                      // 0x0B95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxHealth;                                         // 0x0B98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenDamageLimit;                                   // 0x0B9C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B9D[0x3];                                      // 0x0B9D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DamageLimit;                                       // 0x0BA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          OpenDamageFixed;                                   // 0x0BA4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BA5[0x3];                                      // 0x0BA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DamageFixed;                                       // 0x0BA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BAC[0x4];                                      // 0x0BAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EHalloweenDifficulty, float>             HealthConfig;                                      // 0x0BB0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 PlayerNumFactor;                                   // 0x0C00(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         BrokenNiagaraSystem;                               // 0x0C10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          BrokenAudioEvent;                                  // 0x0C18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShieldState)> DispatchShieldState;                           // 0x0C20(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDeathDispatcher;                                 // 0x0C30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -52,28 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_21300401">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_21300401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_21300401")
 	}
 	static class APyLevelSummoned_21300401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_21300401>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_21300401) == 0x000010, "Wrong alignment on APyLevelSummoned_21300401");
-static_assert(sizeof(APyLevelSummoned_21300401) == 0x000C20, "Wrong size on APyLevelSummoned_21300401");
-static_assert(offsetof(APyLevelSummoned_21300401, ShieldState) == 0x000B70, "Member 'APyLevelSummoned_21300401::ShieldState' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, DefaultActive) == 0x000B74, "Member 'APyLevelSummoned_21300401::DefaultActive' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, MaxHealth) == 0x000B78, "Member 'APyLevelSummoned_21300401::MaxHealth' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, OpenDamageLimit) == 0x000B7C, "Member 'APyLevelSummoned_21300401::OpenDamageLimit' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, DamageLimit) == 0x000B80, "Member 'APyLevelSummoned_21300401::DamageLimit' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, OpenDamageFixed) == 0x000B84, "Member 'APyLevelSummoned_21300401::OpenDamageFixed' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, DamageFixed) == 0x000B88, "Member 'APyLevelSummoned_21300401::DamageFixed' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, HealthConfig) == 0x000B90, "Member 'APyLevelSummoned_21300401::HealthConfig' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, PlayerNumFactor) == 0x000BE0, "Member 'APyLevelSummoned_21300401::PlayerNumFactor' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, BrokenNiagaraSystem) == 0x000BF0, "Member 'APyLevelSummoned_21300401::BrokenNiagaraSystem' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, BrokenAudioEvent) == 0x000BF8, "Member 'APyLevelSummoned_21300401::BrokenAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, DispatchShieldState) == 0x000C00, "Member 'APyLevelSummoned_21300401::DispatchShieldState' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_21300401, OnDeathDispatcher) == 0x000C10, "Member 'APyLevelSummoned_21300401::OnDeathDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_21300401;
 
 }
 

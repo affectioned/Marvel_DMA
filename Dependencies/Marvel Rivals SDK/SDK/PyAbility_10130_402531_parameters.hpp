@@ -17,15 +17,13 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_10130_402531.PyProjectile_40253102.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_40253102_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_40253102_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_40253102_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_40253102_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_40253102_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_40253102_K2_OnProcessHit, ImpactResult) == 0x000000, "Member 'PyProjectile_40253102_K2_OnProcessHit::ImpactResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_40253102_K2_OnProcessHit;
 
 // PythonFunction PyAbility_10130_402531.PyAbility_402531.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAbility_402531_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_402531_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_402531_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_402531_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_402531_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_402531_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_402531_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_402531_NativeOnMontageEvent;
 
 }
 

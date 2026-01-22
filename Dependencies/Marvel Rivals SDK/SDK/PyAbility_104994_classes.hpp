@@ -26,19 +26,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104994">();
+		STATIC_CLASS_IMPL("PyConfig_104994")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104994")
 	}
 	static class UPyConfig_104994* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104994>();
 	}
 };
-static_assert(alignof(UPyConfig_104994) == 0x000008, "Wrong alignment on UPyConfig_104994");
-static_assert(sizeof(UPyConfig_104994) == 0x000520, "Wrong size on UPyConfig_104994");
-static_assert(offsetof(UPyConfig_104994, SynergyBurnScopeID) == 0x000518, "Member 'UPyConfig_104994::SynergyBurnScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104994;
 
 // PythonClass PyAbility_104994.PyAbility_104994
-// 0x0000 (0x2D28 - 0x2D28)
+// 0x0000 (0x2D78 - 0x2D78)
 class UPyAbility_104994 : public UPyAbility_104971
 {
 public:
@@ -48,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104994">();
+		STATIC_CLASS_IMPL("PyAbility_104994")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104994")
 	}
 	static class UPyAbility_104994* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104994>();
 	}
 };
-static_assert(alignof(UPyAbility_104994) == 0x000008, "Wrong alignment on UPyAbility_104994");
-static_assert(sizeof(UPyAbility_104994) == 0x002D28, "Wrong size on UPyAbility_104994");
+DUMPER7_ASSERTS_UPyAbility_104994;
 
 }
 

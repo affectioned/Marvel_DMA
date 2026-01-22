@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetExtension_HeadHorizontalWidgetAgent">();
+		STATIC_CLASS_IMPL("PyWidgetExtension_HeadHorizontalWidgetAgent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetExtension_HeadHorizontalWidgetAgent")
 	}
 	static class UPyWidgetExtension_HeadHorizontalWidgetAgent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetExtension_HeadHorizontalWidgetAgent>();
 	}
 };
-static_assert(alignof(UPyWidgetExtension_HeadHorizontalWidgetAgent) == 0x000008, "Wrong alignment on UPyWidgetExtension_HeadHorizontalWidgetAgent");
-static_assert(sizeof(UPyWidgetExtension_HeadHorizontalWidgetAgent) == 0x000030, "Wrong size on UPyWidgetExtension_HeadHorizontalWidgetAgent");
+DUMPER7_ASSERTS_UPyWidgetExtension_HeadHorizontalWidgetAgent;
 
 // PythonClass PyHeadHorizontalWidgets.PyHeadHorizontalWidgetsManager
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +51,18 @@ class UPyHeadHorizontalWidgetsManager final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHeadHorizontalWidgetsManager">();
+		STATIC_CLASS_IMPL("PyHeadHorizontalWidgetsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHeadHorizontalWidgetsManager")
 	}
 	static class UPyHeadHorizontalWidgetsManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHeadHorizontalWidgetsManager>();
 	}
 };
-static_assert(alignof(UPyHeadHorizontalWidgetsManager) == 0x000008, "Wrong alignment on UPyHeadHorizontalWidgetsManager");
-static_assert(sizeof(UPyHeadHorizontalWidgetsManager) == 0x000030, "Wrong size on UPyHeadHorizontalWidgetsManager");
+DUMPER7_ASSERTS_UPyHeadHorizontalWidgetsManager;
 
 }
 

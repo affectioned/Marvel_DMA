@@ -18,25 +18,28 @@ namespace SDK
 {
 
 // PythonClass PyDataAsset_ActivitySettlement.PyDataAsset_ActivitySettlement
-// 0x0050 (0x0088 - 0x0038)
+// 0x00A0 (0x00D8 - 0x0038)
 class UPyDataAsset_ActivitySettlement final : public UPrimaryDataAsset
 {
 public:
 	TMap<int32, struct FSoftObjectPath>           RollNumIconMap;                                    // 0x0038(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<class FString, TSubclassOf<class UUserWidget>> CustomTopWidgetMap;                          // 0x0088(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataAsset_ActivitySettlement">();
+		STATIC_CLASS_IMPL("PyDataAsset_ActivitySettlement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataAsset_ActivitySettlement")
 	}
 	static class UPyDataAsset_ActivitySettlement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataAsset_ActivitySettlement>();
 	}
 };
-static_assert(alignof(UPyDataAsset_ActivitySettlement) == 0x000008, "Wrong alignment on UPyDataAsset_ActivitySettlement");
-static_assert(sizeof(UPyDataAsset_ActivitySettlement) == 0x000088, "Wrong size on UPyDataAsset_ActivitySettlement");
-static_assert(offsetof(UPyDataAsset_ActivitySettlement, RollNumIconMap) == 0x000038, "Member 'UPyDataAsset_ActivitySettlement::RollNumIconMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyDataAsset_ActivitySettlement;
 
 }
 

@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlate">();
+		STATIC_CLASS_IMPL("MediaPlate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaPlate")
 	}
 	static class AMediaPlate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMediaPlate>();
 	}
 };
-static_assert(alignof(AMediaPlate) == 0x000010, "Wrong alignment on AMediaPlate");
-static_assert(sizeof(AMediaPlate) == 0x0006F0, "Wrong size on AMediaPlate");
-static_assert(offsetof(AMediaPlate, MediaPlateComponent) == 0x0006D8, "Member 'AMediaPlate::MediaPlateComponent' has a wrong offset!");
-static_assert(offsetof(AMediaPlate, StaticMeshComponent) == 0x0006E0, "Member 'AMediaPlate::StaticMeshComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AMediaPlate;
 
 // Class MediaPlate.MediaPlateAssetUserData
 // 0x0010 (0x0040 - 0x0030)
@@ -52,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlateAssetUserData">();
+		STATIC_CLASS_IMPL("MediaPlateAssetUserData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaPlateAssetUserData")
 	}
 	static class UMediaPlateAssetUserData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaPlateAssetUserData>();
 	}
 };
-static_assert(alignof(UMediaPlateAssetUserData) == 0x000008, "Wrong alignment on UMediaPlateAssetUserData");
-static_assert(sizeof(UMediaPlateAssetUserData) == 0x000040, "Wrong size on UMediaPlateAssetUserData");
+DUMPER7_ASSERTS_UMediaPlateAssetUserData;
 
 // Class MediaPlate.MediaPlateComponent
 // 0x00C8 (0x01D0 - 0x0108)
@@ -123,37 +127,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlateComponent">();
+		STATIC_CLASS_IMPL("MediaPlateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaPlateComponent")
 	}
 	static class UMediaPlateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaPlateComponent>();
 	}
 };
-static_assert(alignof(UMediaPlateComponent) == 0x000008, "Wrong alignment on UMediaPlateComponent");
-static_assert(sizeof(UMediaPlateComponent) == 0x0001D0, "Wrong size on UMediaPlateComponent");
-static_assert(offsetof(UMediaPlateComponent, bPlayOnOpen) == 0x000110, "Member 'UMediaPlateComponent::bPlayOnOpen' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bAutoPlay) == 0x000111, "Member 'UMediaPlateComponent::bAutoPlay' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bEnableAudio) == 0x000112, "Member 'UMediaPlateComponent::bEnableAudio' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, StartTime) == 0x000114, "Member 'UMediaPlateComponent::StartTime' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, SoundComponent) == 0x000118, "Member 'UMediaPlateComponent::SoundComponent' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, StaticMeshComponent) == 0x000120, "Member 'UMediaPlateComponent::StaticMeshComponent' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, Letterboxes) == 0x000128, "Member 'UMediaPlateComponent::Letterboxes' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MediaPlaylist) == 0x000138, "Member 'UMediaPlateComponent::MediaPlaylist' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, PlaylistIndex) == 0x000140, "Member 'UMediaPlateComponent::PlaylistIndex' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, CacheSettings) == 0x000144, "Member 'UMediaPlateComponent::CacheSettings' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bIsMediaPlatePlaying) == 0x00014C, "Member 'UMediaPlateComponent::bIsMediaPlatePlaying' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bPlayOnlyWhenVisible) == 0x000154, "Member 'UMediaPlateComponent::bPlayOnlyWhenVisible' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bLoop) == 0x000155, "Member 'UMediaPlateComponent::bLoop' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, VisibleMipsTilesCalculations) == 0x000156, "Member 'UMediaPlateComponent::VisibleMipsTilesCalculations' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MipMapBias) == 0x000158, "Member 'UMediaPlateComponent::MipMapBias' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bIsAspectRatioAuto) == 0x00015C, "Member 'UMediaPlateComponent::bIsAspectRatioAuto' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, bEnableMipMapUpscaling) == 0x00015D, "Member 'UMediaPlateComponent::bEnableMipMapUpscaling' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MipLevelToUpscale) == 0x000160, "Member 'UMediaPlateComponent::MipLevelToUpscale' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, LetterboxAspectRatio) == 0x000164, "Member 'UMediaPlateComponent::LetterboxAspectRatio' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MeshRange) == 0x000170, "Member 'UMediaPlateComponent::MeshRange' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MediaTextures) == 0x000180, "Member 'UMediaPlateComponent::MediaTextures' has a wrong offset!");
-static_assert(offsetof(UMediaPlateComponent, MediaPlayer) == 0x000190, "Member 'UMediaPlateComponent::MediaPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_UMediaPlateComponent;
 
 }
 

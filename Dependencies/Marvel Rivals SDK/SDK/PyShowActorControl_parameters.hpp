@@ -25,9 +25,7 @@ struct PyShowActorControl_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorControl_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyShowActorControl_ReceiveEndPlay");
-static_assert(sizeof(PyShowActorControl_ReceiveEndPlay) == 0x000001, "Wrong size on PyShowActorControl_ReceiveEndPlay");
-static_assert(offsetof(PyShowActorControl_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyShowActorControl_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_ReceiveEndPlay;
 
 // PythonFunction PyShowActorControl.PyShowActorControl.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +34,7 @@ struct PyShowActorControl_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorControl_ReceiveTick) == 0x000004, "Wrong alignment on PyShowActorControl_ReceiveTick");
-static_assert(sizeof(PyShowActorControl_ReceiveTick) == 0x000004, "Wrong size on PyShowActorControl_ReceiveTick");
-static_assert(offsetof(PyShowActorControl_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyShowActorControl_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_ReceiveTick;
 
 // PythonFunction PyShowActorControl.PyShowActorControl.ShowHeroActor
 // 0x000C (0x000C - 0x0000)
@@ -49,11 +45,7 @@ public:
 	int32                                         SkinID;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ShapeID;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorControl_ShowHeroActor) == 0x000004, "Wrong alignment on PyShowActorControl_ShowHeroActor");
-static_assert(sizeof(PyShowActorControl_ShowHeroActor) == 0x00000C, "Wrong size on PyShowActorControl_ShowHeroActor");
-static_assert(offsetof(PyShowActorControl_ShowHeroActor, HeroID) == 0x000000, "Member 'PyShowActorControl_ShowHeroActor::HeroID' has a wrong offset!");
-static_assert(offsetof(PyShowActorControl_ShowHeroActor, SkinID) == 0x000004, "Member 'PyShowActorControl_ShowHeroActor::SkinID' has a wrong offset!");
-static_assert(offsetof(PyShowActorControl_ShowHeroActor, ShapeID) == 0x000008, "Member 'PyShowActorControl_ShowHeroActor::ShapeID' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_ShowHeroActor;
 
 // PythonFunction PyShowActorControl.PyShowActorControl.LoadShowActor
 // 0x0010 (0x0010 - 0x0000)
@@ -62,9 +54,7 @@ struct PyShowActorControl_LoadShowActor final
 public:
 	TArray<class UObject*>                        Assets;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyShowActorControl_LoadShowActor) == 0x000008, "Wrong alignment on PyShowActorControl_LoadShowActor");
-static_assert(sizeof(PyShowActorControl_LoadShowActor) == 0x000010, "Wrong size on PyShowActorControl_LoadShowActor");
-static_assert(offsetof(PyShowActorControl_LoadShowActor, Assets) == 0x000000, "Member 'PyShowActorControl_LoadShowActor::Assets' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_LoadShowActor;
 
 // PythonFunction PyShowActorControl.PyShowActorControl.LoadShowActorAssetFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -73,9 +63,7 @@ struct PyShowActorControl_LoadShowActorAssetFinished final
 public:
 	class AActor*                                 ShowActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorControl_LoadShowActorAssetFinished) == 0x000008, "Wrong alignment on PyShowActorControl_LoadShowActorAssetFinished");
-static_assert(sizeof(PyShowActorControl_LoadShowActorAssetFinished) == 0x000008, "Wrong size on PyShowActorControl_LoadShowActorAssetFinished");
-static_assert(offsetof(PyShowActorControl_LoadShowActorAssetFinished, ShowActor) == 0x000000, "Member 'PyShowActorControl_LoadShowActorAssetFinished::ShowActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_LoadShowActorAssetFinished;
 
 // PythonFunction PyShowActorControl.PyShowActorControl.SetIsRotationShowActor
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +72,7 @@ struct PyShowActorControl_SetIsRotationShowActor final
 public:
 	bool                                          IsRotationShowActor;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyShowActorControl_SetIsRotationShowActor) == 0x000001, "Wrong alignment on PyShowActorControl_SetIsRotationShowActor");
-static_assert(sizeof(PyShowActorControl_SetIsRotationShowActor) == 0x000001, "Wrong size on PyShowActorControl_SetIsRotationShowActor");
-static_assert(offsetof(PyShowActorControl_SetIsRotationShowActor, IsRotationShowActor) == 0x000000, "Member 'PyShowActorControl_SetIsRotationShowActor::IsRotationShowActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyShowActorControl_SetIsRotationShowActor;
 
 }
 

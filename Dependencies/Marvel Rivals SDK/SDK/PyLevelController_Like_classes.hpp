@@ -30,6 +30,7 @@ public:
 	TMap<int32, class UObject*>                   ShowActorMVPWidgets;                               // 0x0748(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          HoverAkEvent;                                      // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkAudioEvent*                          ClickAkEvent;                                      // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceConstant*              PostProcessMaterial;                               // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -38,22 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Like">();
+		STATIC_CLASS_IMPL("PyLevelController_Like")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Like")
 	}
 	static class APyLevelController_Like* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Like>();
 	}
 };
-static_assert(alignof(APyLevelController_Like) == 0x000010, "Wrong alignment on APyLevelController_Like");
-static_assert(sizeof(APyLevelController_Like) == 0x0007B0, "Wrong size on APyLevelController_Like");
-static_assert(offsetof(APyLevelController_Like, LikeCmaera) == 0x0006E0, "Member 'APyLevelController_Like::LikeCmaera' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, LikeCmaeraLeft) == 0x0006E8, "Member 'APyLevelController_Like::LikeCmaeraLeft' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, LikeCmaeraRight) == 0x0006F0, "Member 'APyLevelController_Like::LikeCmaeraRight' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, ShowActorLikeWidgets) == 0x0006F8, "Member 'APyLevelController_Like::ShowActorLikeWidgets' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, ShowActorMVPWidgets) == 0x000748, "Member 'APyLevelController_Like::ShowActorMVPWidgets' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, HoverAkEvent) == 0x000798, "Member 'APyLevelController_Like::HoverAkEvent' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Like, ClickAkEvent) == 0x0007A0, "Member 'APyLevelController_Like::ClickAkEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_Like;
 
 }
 

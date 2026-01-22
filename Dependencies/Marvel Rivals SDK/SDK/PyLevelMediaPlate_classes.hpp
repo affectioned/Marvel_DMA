@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "MediaPlate_classes.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMediaPlate">();
+		STATIC_CLASS_IMPL("PyLevelMediaPlate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMediaPlate")
 	}
 	static class APyLevelMediaPlate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelMediaPlate>();
 	}
 };
-static_assert(alignof(APyLevelMediaPlate) == 0x000010, "Wrong alignment on APyLevelMediaPlate");
-static_assert(sizeof(APyLevelMediaPlate) == 0x000710, "Wrong size on APyLevelMediaPlate");
-static_assert(offsetof(APyLevelMediaPlate, GeometryCollectionActorName) == 0x0006F0, "Member 'APyLevelMediaPlate::GeometryCollectionActorName' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlate, BreakIndexList) == 0x000700, "Member 'APyLevelMediaPlate::BreakIndexList' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelMediaPlate;
 
 // PythonClass PyLevelMediaPlate.PyLevelMediaPlateSpawner
 // 0x0030 (0x0710 - 0x06E0)
@@ -69,23 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMediaPlateSpawner">();
+		STATIC_CLASS_IMPL("PyLevelMediaPlateSpawner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMediaPlateSpawner")
 	}
 	static class APyLevelMediaPlateSpawner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelMediaPlateSpawner>();
 	}
 };
-static_assert(alignof(APyLevelMediaPlateSpawner) == 0x000010, "Wrong alignment on APyLevelMediaPlateSpawner");
-static_assert(sizeof(APyLevelMediaPlateSpawner) == 0x000710, "Wrong size on APyLevelMediaPlateSpawner");
-static_assert(offsetof(APyLevelMediaPlateSpawner, MaterialBasic) == 0x0006E0, "Member 'APyLevelMediaPlateSpawner::MaterialBasic' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, MaterialInVideo) == 0x0006E8, "Member 'APyLevelMediaPlateSpawner::MaterialInVideo' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, LevelMediaPlateClass) == 0x0006F0, "Member 'APyLevelMediaPlateSpawner::LevelMediaPlateClass' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, MediaPlayList) == 0x0006F8, "Member 'APyLevelMediaPlateSpawner::MediaPlayList' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, ResolutionX) == 0x000700, "Member 'APyLevelMediaPlateSpawner::ResolutionX' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, ResolutionY) == 0x000704, "Member 'APyLevelMediaPlateSpawner::ResolutionY' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, NumX) == 0x000708, "Member 'APyLevelMediaPlateSpawner::NumX' has a wrong offset!");
-static_assert(offsetof(APyLevelMediaPlateSpawner, NumY) == 0x00070C, "Member 'APyLevelMediaPlateSpawner::NumY' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelMediaPlateSpawner;
 
 }
 

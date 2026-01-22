@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ability_WeaponAmmoUnit.WBP_Ability_WeaponAmmoUnit_C
-// 0x0030 (0x05A8 - 0x0578)
+// 0x0030 (0x05B0 - 0x0580)
 class UWBP_Ability_WeaponAmmoUnit_C final : public UPyWidget_WeaponAmmo
 {
 public:
-	class UMarvelHorizontalBox*                   HBox_AmmoText;                                     // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Infinite;                                  // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Cur;                                          // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Line;                                         // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Max;                                          // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_MaxCopy;                                      // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_AmmoText;                                     // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Infinite;                                  // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Cur;                                          // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Line;                                         // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Max;                                          // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_MaxCopy;                                      // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Ability_WeaponAmmoUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Ability_WeaponAmmoUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Ability_WeaponAmmoUnit_C")
 	}
 	static class UWBP_Ability_WeaponAmmoUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Ability_WeaponAmmoUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_Ability_WeaponAmmoUnit_C) == 0x000008, "Wrong alignment on UWBP_Ability_WeaponAmmoUnit_C");
-static_assert(sizeof(UWBP_Ability_WeaponAmmoUnit_C) == 0x0005A8, "Wrong size on UWBP_Ability_WeaponAmmoUnit_C");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, HBox_AmmoText) == 0x000578, "Member 'UWBP_Ability_WeaponAmmoUnit_C::HBox_AmmoText' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, SizeBox_Infinite) == 0x000580, "Member 'UWBP_Ability_WeaponAmmoUnit_C::SizeBox_Infinite' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, Text_Cur) == 0x000588, "Member 'UWBP_Ability_WeaponAmmoUnit_C::Text_Cur' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, Text_Line) == 0x000590, "Member 'UWBP_Ability_WeaponAmmoUnit_C::Text_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, Text_Max) == 0x000598, "Member 'UWBP_Ability_WeaponAmmoUnit_C::Text_Max' has a wrong offset!");
-static_assert(offsetof(UWBP_Ability_WeaponAmmoUnit_C, Text_MaxCopy) == 0x0005A0, "Member 'UWBP_Ability_WeaponAmmoUnit_C::Text_MaxCopy' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Ability_WeaponAmmoUnit_C;
 
 }
 

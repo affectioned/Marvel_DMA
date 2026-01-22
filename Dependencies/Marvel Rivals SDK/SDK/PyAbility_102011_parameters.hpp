@@ -25,11 +25,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102011_OnMantisApplyDamage) == 0x000008, "Wrong alignment on PyAbility_102011_OnMantisApplyDamage");
-static_assert(sizeof(PyAbility_102011_OnMantisApplyDamage) == 0x000028, "Wrong size on PyAbility_102011_OnMantisApplyDamage");
-static_assert(offsetof(PyAbility_102011_OnMantisApplyDamage, InSource) == 0x000000, "Member 'PyAbility_102011_OnMantisApplyDamage::InSource' has a wrong offset!");
-static_assert(offsetof(PyAbility_102011_OnMantisApplyDamage, InTarget) == 0x000008, "Member 'PyAbility_102011_OnMantisApplyDamage::InTarget' has a wrong offset!");
-static_assert(offsetof(PyAbility_102011_OnMantisApplyDamage, ModifierParameterHandle) == 0x000010, "Member 'PyAbility_102011_OnMantisApplyDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102011_OnMantisApplyDamage;
 
 // PythonFunction PyAbility_102011.PyAbility_102011.HandleAnimSocketInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -40,10 +36,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0010(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_102011_HandleAnimSocketInfo) == 0x000010, "Wrong alignment on PyAbility_102011_HandleAnimSocketInfo");
-static_assert(sizeof(PyAbility_102011_HandleAnimSocketInfo) == 0x0000B0, "Wrong size on PyAbility_102011_HandleAnimSocketInfo");
-static_assert(offsetof(PyAbility_102011_HandleAnimSocketInfo, SocketId) == 0x000000, "Member 'PyAbility_102011_HandleAnimSocketInfo::SocketId' has a wrong offset!");
-static_assert(offsetof(PyAbility_102011_HandleAnimSocketInfo, SocketInfo) == 0x000010, "Member 'PyAbility_102011_HandleAnimSocketInfo::SocketInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102011_HandleAnimSocketInfo;
 
 }
 

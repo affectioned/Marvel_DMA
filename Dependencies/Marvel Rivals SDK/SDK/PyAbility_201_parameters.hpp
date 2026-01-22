@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Marvel_structs.hpp"
 #include "PyAbility_201_structs.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,9 +27,7 @@ struct PyAbility_201_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_201_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_201_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_201_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_201_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_201_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_201_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_201_K2_OnEndAbility;
 
 // PythonFunction PyAbility_201.PyAbility_201.OnClickShortcut
 // 0x0004 (0x0004 - 0x0000)
@@ -38,9 +36,7 @@ struct PyAbility_201_OnClickShortcut final
 public:
 	int32                                         InCommID;                                          // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_201_OnClickShortcut) == 0x000004, "Wrong alignment on PyAbility_201_OnClickShortcut");
-static_assert(sizeof(PyAbility_201_OnClickShortcut) == 0x000004, "Wrong size on PyAbility_201_OnClickShortcut");
-static_assert(offsetof(PyAbility_201_OnClickShortcut, InCommID) == 0x000000, "Member 'PyAbility_201_OnClickShortcut::InCommID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_201_OnClickShortcut;
 
 // PythonFunction PyAbility_201.PyAbility_201.OnReplayStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -49,34 +45,24 @@ struct PyAbility_201_OnReplayStateChanged final
 public:
 	EMarvelReplayState                            ReplayState;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_201_OnReplayStateChanged) == 0x000001, "Wrong alignment on PyAbility_201_OnReplayStateChanged");
-static_assert(sizeof(PyAbility_201_OnReplayStateChanged) == 0x000001, "Wrong size on PyAbility_201_OnReplayStateChanged");
-static_assert(offsetof(PyAbility_201_OnReplayStateChanged, ReplayState) == 0x000000, "Member 'PyAbility_201_OnReplayStateChanged::ReplayState' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_201_OnReplayStateChanged;
 
 // PythonFunction PyAbility_201.PyAbility_201.SetSignalInfo
-// 0x0230 (0x0230 - 0x0000)
+// 0x0248 (0x0248 - 0x0000)
 struct PyAbility_201_SetSignalInfo final
 {
 public:
 	struct FGameplayTag                           InSignalTag;                                       // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             InHitResult;                                       // 0x0010(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	class AActor*                                 InActor;                                           // 0x0200(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHandleCoolingdown;                               // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           InAbilityTag;                                      // 0x020C(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	class FString                                 HandleTypeTag;                                     // 0x0218(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         InCustomPhraseCommID;                              // 0x0228(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             InHitResult;                                       // 0x0010(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	class AActor*                                 InActor;                                           // 0x0218(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHandleCoolingdown;                               // 0x0220(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_221[0x3];                                      // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           InAbilityTag;                                      // 0x0224(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	class FString                                 HandleTypeTag;                                     // 0x0230(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         InCustomPhraseCommID;                              // 0x0240(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_201_SetSignalInfo) == 0x000008, "Wrong alignment on PyAbility_201_SetSignalInfo");
-static_assert(sizeof(PyAbility_201_SetSignalInfo) == 0x000230, "Wrong size on PyAbility_201_SetSignalInfo");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, InSignalTag) == 0x000000, "Member 'PyAbility_201_SetSignalInfo::InSignalTag' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, InHitResult) == 0x000010, "Member 'PyAbility_201_SetSignalInfo::InHitResult' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, InActor) == 0x000200, "Member 'PyAbility_201_SetSignalInfo::InActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, IsHandleCoolingdown) == 0x000208, "Member 'PyAbility_201_SetSignalInfo::IsHandleCoolingdown' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, InAbilityTag) == 0x00020C, "Member 'PyAbility_201_SetSignalInfo::InAbilityTag' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, HandleTypeTag) == 0x000218, "Member 'PyAbility_201_SetSignalInfo::HandleTypeTag' has a wrong offset!");
-static_assert(offsetof(PyAbility_201_SetSignalInfo, InCustomPhraseCommID) == 0x000228, "Member 'PyAbility_201_SetSignalInfo::InCustomPhraseCommID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_201_SetSignalInfo;
 
 // PythonFunction PyAbility_201.PyAbility_201.OnClickGamepadFaceRight
 // 0x0020 (0x0020 - 0x0000)
@@ -85,71 +71,7 @@ struct PyAbility_201_OnClickGamepadFaceRight final
 public:
 	struct FKey                                   key;                                               // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_201_OnClickGamepadFaceRight) == 0x000008, "Wrong alignment on PyAbility_201_OnClickGamepadFaceRight");
-static_assert(sizeof(PyAbility_201_OnClickGamepadFaceRight) == 0x000020, "Wrong size on PyAbility_201_OnClickGamepadFaceRight");
-static_assert(offsetof(PyAbility_201_OnClickGamepadFaceRight, key) == 0x000000, "Member 'PyAbility_201_OnClickGamepadFaceRight::key' has a wrong offset!");
-
-// PythonFunction PyAbility_201.PyUIController_201.SetAbility
-// 0x0010 (0x0010 - 0x0000)
-struct PyUIController_201_SetAbility final
-{
-public:
-	int32                                         InAbilityID;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_201_SetAbility) == 0x000008, "Wrong alignment on PyUIController_201_SetAbility");
-static_assert(sizeof(PyUIController_201_SetAbility) == 0x000010, "Wrong size on PyUIController_201_SetAbility");
-static_assert(offsetof(PyUIController_201_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_201_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_201_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_201_SetAbility::InAbility' has a wrong offset!");
-
-// PythonFunction PyAbility_201.PyUIController_201.OnTagUpdate
-// 0x0010 (0x0010 - 0x0000)
-struct PyUIController_201_OnTagUpdate final
-{
-public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_201_OnTagUpdate) == 0x000004, "Wrong alignment on PyUIController_201_OnTagUpdate");
-static_assert(sizeof(PyUIController_201_OnTagUpdate) == 0x000010, "Wrong size on PyUIController_201_OnTagUpdate");
-static_assert(offsetof(PyUIController_201_OnTagUpdate, Tag) == 0x000000, "Member 'PyUIController_201_OnTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyUIController_201_OnTagUpdate, Exist) == 0x00000C, "Member 'PyUIController_201_OnTagUpdate::Exist' has a wrong offset!");
-
-// PythonFunction PyAbility_201.PyUIController_201.HandleAbilityBlock
-// 0x0001 (0x0001 - 0x0000)
-struct PyUIController_201_HandleAbilityBlock final
-{
-public:
-	bool                                          IsBlocked;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_201_HandleAbilityBlock) == 0x000001, "Wrong alignment on PyUIController_201_HandleAbilityBlock");
-static_assert(sizeof(PyUIController_201_HandleAbilityBlock) == 0x000001, "Wrong size on PyUIController_201_HandleAbilityBlock");
-static_assert(offsetof(PyUIController_201_HandleAbilityBlock, IsBlocked) == 0x000000, "Member 'PyUIController_201_HandleAbilityBlock::IsBlocked' has a wrong offset!");
-
-// PythonFunction PyAbility_201.PyUIController_201.ListenAbilityActivateFailed
-// 0x0001 (0x0001 - 0x0000)
-struct PyUIController_201_ListenAbilityActivateFailed final
-{
-public:
-	bool                                          IsListen;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_201_ListenAbilityActivateFailed) == 0x000001, "Wrong alignment on PyUIController_201_ListenAbilityActivateFailed");
-static_assert(sizeof(PyUIController_201_ListenAbilityActivateFailed) == 0x000001, "Wrong size on PyUIController_201_ListenAbilityActivateFailed");
-static_assert(offsetof(PyUIController_201_ListenAbilityActivateFailed, IsListen) == 0x000000, "Member 'PyUIController_201_ListenAbilityActivateFailed::IsListen' has a wrong offset!");
-
-// PythonFunction PyAbility_201.PyUIController_201.OnAbilityFailed
-// 0x0070 (0x0070 - 0x0000)
-struct PyUIController_201_OnAbilityFailed final
-{
-public:
-	class UMarvelGameplayAbility*                 ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  reason;                                            // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyUIController_201_OnAbilityFailed) == 0x000008, "Wrong alignment on PyUIController_201_OnAbilityFailed");
-static_assert(sizeof(PyUIController_201_OnAbilityFailed) == 0x000070, "Wrong size on PyUIController_201_OnAbilityFailed");
-static_assert(offsetof(PyUIController_201_OnAbilityFailed, ability) == 0x000000, "Member 'PyUIController_201_OnAbilityFailed::ability' has a wrong offset!");
-static_assert(offsetof(PyUIController_201_OnAbilityFailed, reason) == 0x000008, "Member 'PyUIController_201_OnAbilityFailed::reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_201_OnClickGamepadFaceRight;
 
 }
 

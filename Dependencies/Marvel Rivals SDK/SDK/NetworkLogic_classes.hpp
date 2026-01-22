@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyDefaultUISettingEntryHandler_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryShowNetworkStatusHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryShowNetworkStatusHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryShowNetworkStatusHandler")
 	}
 	static class UUISettingEntryShowNetworkStatusHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryShowNetworkStatusHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryShowNetworkStatusHandler) == 0x000008, "Wrong alignment on UUISettingEntryShowNetworkStatusHandler");
-static_assert(sizeof(UUISettingEntryShowNetworkStatusHandler) == 0x000030, "Wrong size on UUISettingEntryShowNetworkStatusHandler");
+DUMPER7_ASSERTS_UUISettingEntryShowNetworkStatusHandler;
 
 // PythonClass NetworkLogic.UISettingOtherNetworkDiagnosisHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingOtherNetworkDiagnosisHandler">();
+		STATIC_CLASS_IMPL("UISettingOtherNetworkDiagnosisHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingOtherNetworkDiagnosisHandler")
 	}
 	static class UUISettingOtherNetworkDiagnosisHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingOtherNetworkDiagnosisHandler>();
 	}
 };
-static_assert(alignof(UUISettingOtherNetworkDiagnosisHandler) == 0x000008, "Wrong alignment on UUISettingOtherNetworkDiagnosisHandler");
-static_assert(sizeof(UUISettingOtherNetworkDiagnosisHandler) == 0x000030, "Wrong size on UUISettingOtherNetworkDiagnosisHandler");
+DUMPER7_ASSERTS_UUISettingOtherNetworkDiagnosisHandler;
 
 }
 

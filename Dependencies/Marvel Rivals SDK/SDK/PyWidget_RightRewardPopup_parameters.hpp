@@ -21,9 +21,7 @@ struct PyWidget_RightRewardPopup_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RightRewardPopup_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_RightRewardPopup_MarvelSetVisible");
-static_assert(sizeof(PyWidget_RightRewardPopup_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_RightRewardPopup_MarvelSetVisible");
-static_assert(offsetof(PyWidget_RightRewardPopup_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_RightRewardPopup_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RightRewardPopup_MarvelSetVisible;
 
 // PythonFunction PyWidget_RightRewardPopup.PyWidget_RightRewardPopup.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_RightRewardPopup_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RightRewardPopup_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_RightRewardPopup_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_RightRewardPopup_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_RightRewardPopup_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_RightRewardPopup_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_RightRewardPopup_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RightRewardPopup_OnCascadingVisibleChanged;
 
 }
 

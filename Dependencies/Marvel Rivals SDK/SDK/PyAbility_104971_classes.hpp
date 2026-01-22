@@ -10,35 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1049_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1049_classes.hpp"
 
 
 namespace SDK
 {
 
-// PythonClass PyAbility_104971.PyCue_Buff_10497104
-// 0x0000 (0x1220 - 0x1220)
-class APyCue_Buff_10497104 final : public AMarvelCueNotify_Loop
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Buff_10497104">();
-	}
-	static class APyCue_Buff_10497104* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Buff_10497104>();
-	}
-};
-static_assert(alignof(APyCue_Buff_10497104) == 0x000010, "Wrong alignment on APyCue_Buff_10497104");
-static_assert(sizeof(APyCue_Buff_10497104) == 0x001220, "Wrong size on APyCue_Buff_10497104");
-
 // PythonClass PyAbility_104971.PyEffectiveComponent_10497101_Base
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10497101_Base final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -47,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10497101_Base">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10497101_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10497101_Base")
 	}
 	static class UPyEffectiveComponent_10497101_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10497101_Base>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10497101_Base) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10497101_Base");
-static_assert(sizeof(UPyEffectiveComponent_10497101_Base) == 0x001C70, "Wrong size on UPyEffectiveComponent_10497101_Base");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10497101_Base;
 
 // PythonClass PyAbility_104971.PyConfig_104971
 // 0x0360 (0x0518 - 0x01B8)
@@ -79,52 +65,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104971">();
+		STATIC_CLASS_IMPL("PyConfig_104971")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104971")
 	}
 	static class UPyConfig_104971* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104971>();
 	}
 };
-static_assert(alignof(UPyConfig_104971) == 0x000008, "Wrong alignment on UPyConfig_104971");
-static_assert(sizeof(UPyConfig_104971) == 0x000518, "Wrong size on UPyConfig_104971");
-static_assert(offsetof(UPyConfig_104971, IsGrabGroundHero) == 0x0001B8, "Member 'UPyConfig_104971::IsGrabGroundHero' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, GrabBuffID) == 0x0001BC, "Member 'UPyConfig_104971::GrabBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, EnterEndWithGrabTags) == 0x0001C0, "Member 'UPyConfig_104971::EnterEndWithGrabTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, GrabBuffID_CollideKonckDown) == 0x000228, "Member 'UPyConfig_104971::GrabBuffID_CollideKonckDown' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, PinnedConfig) == 0x000230, "Member 'UPyConfig_104971::PinnedConfig' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, GrabDamageValue) == 0x000490, "Member 'UPyConfig_104971::GrabDamageValue' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, GrabCollideTag) == 0x000494, "Member 'UPyConfig_104971::GrabCollideTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, CancelAbilityTags) == 0x0004A0, "Member 'UPyConfig_104971::CancelAbilityTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, MaxFlyTime) == 0x000508, "Member 'UPyConfig_104971::MaxFlyTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104971, CameraShakeClass) == 0x000510, "Member 'UPyConfig_104971::CameraShakeClass' has a wrong offset!");
-
-// PythonClass PyAbility_104971.PyAbility_AirGrab_104971
-// 0x0010 (0x1400 - 0x13F0)
-class UPyAbility_AirGrab_104971 final : public UAbility_AirGrab_104971
-{
-public:
-	struct FGameplayTag                           AbilityCueTag;                                     // 0x13F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnActiveAbility();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyAbility_AirGrab_104971">();
-	}
-	static class UPyAbility_AirGrab_104971* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyAbility_AirGrab_104971>();
-	}
-};
-static_assert(alignof(UPyAbility_AirGrab_104971) == 0x000008, "Wrong alignment on UPyAbility_AirGrab_104971");
-static_assert(sizeof(UPyAbility_AirGrab_104971) == 0x001400, "Wrong size on UPyAbility_AirGrab_104971");
-static_assert(offsetof(UPyAbility_AirGrab_104971, AbilityCueTag) == 0x0013F0, "Member 'UPyAbility_AirGrab_104971::AbilityCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104971;
 
 // PythonClass PyAbility_104971.PyAbility_104971
-// 0x0000 (0x2D28 - 0x2D28)
+// 0x0000 (0x2D78 - 0x2D78)
 class UPyAbility_104971 : public UAbility_104971
 {
 public:
@@ -154,15 +109,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104971">();
+		STATIC_CLASS_IMPL("PyAbility_104971")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104971")
 	}
 	static class UPyAbility_104971* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104971>();
 	}
 };
-static_assert(alignof(UPyAbility_104971) == 0x000008, "Wrong alignment on UPyAbility_104971");
-static_assert(sizeof(UPyAbility_104971) == 0x002D28, "Wrong size on UPyAbility_104971");
+DUMPER7_ASSERTS_UPyAbility_104971;
+
+// PythonClass PyAbility_104971.PyCue_Buff_10497104
+// 0x0000 (0x1230 - 0x1230)
+class APyCue_Buff_10497104 final : public AMarvelCueNotify_Loop
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Buff_10497104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10497104")
+	}
+	static class APyCue_Buff_10497104* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Buff_10497104>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Buff_10497104;
 
 }
 

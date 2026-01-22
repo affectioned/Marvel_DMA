@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMapAreaZone">();
+		STATIC_CLASS_IMPL("PyMapAreaZone")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMapAreaZone")
 	}
 	static class APyMapAreaZone* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMapAreaZone>();
 	}
 };
-static_assert(alignof(APyMapAreaZone) == 0x000010, "Wrong alignment on APyMapAreaZone");
-static_assert(sizeof(APyMapAreaZone) == 0x0006F0, "Wrong size on APyMapAreaZone");
-static_assert(offsetof(APyMapAreaZone, AreaIndex) == 0x0006E0, "Member 'APyMapAreaZone::AreaIndex' has a wrong offset!");
+DUMPER7_ASSERTS_APyMapAreaZone;
 
 }
 

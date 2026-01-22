@@ -78,16 +78,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LocationOffset;                                    // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FIronInfo_103701) == 0x000008, "Wrong alignment on FIronInfo_103701");
-static_assert(sizeof(FIronInfo_103701) == 0x000038, "Wrong size on FIronInfo_103701");
-static_assert(offsetof(FIronInfo_103701, StartAngle) == 0x000000, "Member 'FIronInfo_103701::StartAngle' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, AngleOffset) == 0x000004, "Member 'FIronInfo_103701::AngleOffset' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, EllipseRotateAngle) == 0x000008, "Member 'FIronInfo_103701::EllipseRotateAngle' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, LongRadius) == 0x00000C, "Member 'FIronInfo_103701::LongRadius' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, ShortRadius) == 0x000010, "Member 'FIronInfo_103701::ShortRadius' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, bClockwise) == 0x000014, "Member 'FIronInfo_103701::bClockwise' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, RoutineTime) == 0x000018, "Member 'FIronInfo_103701::RoutineTime' has a wrong offset!");
-static_assert(offsetof(FIronInfo_103701, LocationOffset) == 0x000020, "Member 'FIronInfo_103701::LocationOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FIronInfo_103701;
 
 // ScriptStruct Hero_1037.SplineData_103701
 // 0x0048 (0x0048 - 0x0000)
@@ -103,14 +94,7 @@ public:
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ActiveTime;                                        // 0x0044(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSplineData_103701) == 0x000008, "Wrong alignment on FSplineData_103701");
-static_assert(sizeof(FSplineData_103701) == 0x000048, "Wrong size on FSplineData_103701");
-static_assert(offsetof(FSplineData_103701, bActive) == 0x000000, "Member 'FSplineData_103701::bActive' has a wrong offset!");
-static_assert(offsetof(FSplineData_103701, CurrentAngle) == 0x000004, "Member 'FSplineData_103701::CurrentAngle' has a wrong offset!");
-static_assert(offsetof(FSplineData_103701, IronInfo) == 0x000008, "Member 'FSplineData_103701::IronInfo' has a wrong offset!");
-static_assert(offsetof(FSplineData_103701, RecoverType) == 0x000040, "Member 'FSplineData_103701::RecoverType' has a wrong offset!");
-static_assert(offsetof(FSplineData_103701, bIsTracing) == 0x000041, "Member 'FSplineData_103701::bIsTracing' has a wrong offset!");
-static_assert(offsetof(FSplineData_103701, ActiveTime) == 0x000044, "Member 'FSplineData_103701::ActiveTime' has a wrong offset!");
+DUMPER7_ASSERTS_FSplineData_103701;
 
 // ScriptStruct Hero_1037.ManipulationPhysicsSpec
 // 0x0020 (0x0020 - 0x0000)
@@ -123,12 +107,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPhysicalMaterial*                      PhysMaterial;                                      // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FManipulationPhysicsSpec) == 0x000008, "Wrong alignment on FManipulationPhysicsSpec");
-static_assert(sizeof(FManipulationPhysicsSpec) == 0x000020, "Wrong size on FManipulationPhysicsSpec");
-static_assert(offsetof(FManipulationPhysicsSpec, TypeTag) == 0x000000, "Member 'FManipulationPhysicsSpec::TypeTag' has a wrong offset!");
-static_assert(offsetof(FManipulationPhysicsSpec, LinearDamping) == 0x00000C, "Member 'FManipulationPhysicsSpec::LinearDamping' has a wrong offset!");
-static_assert(offsetof(FManipulationPhysicsSpec, AngularDamping) == 0x000010, "Member 'FManipulationPhysicsSpec::AngularDamping' has a wrong offset!");
-static_assert(offsetof(FManipulationPhysicsSpec, PhysMaterial) == 0x000018, "Member 'FManipulationPhysicsSpec::PhysMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_FManipulationPhysicsSpec;
 
 // ScriptStruct Hero_1037.ManipulationActiveSimulation
 // 0x00A8 (0x00A8 - 0x0000)
@@ -159,29 +138,7 @@ public:
 	bool                                          bHoldInstantAmmo;                                  // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FManipulationActiveSimulation) == 0x000008, "Wrong alignment on FManipulationActiveSimulation");
-static_assert(sizeof(FManipulationActiveSimulation) == 0x0000A8, "Wrong size on FManipulationActiveSimulation");
-static_assert(offsetof(FManipulationActiveSimulation, SimCollider) == 0x000000, "Member 'FManipulationActiveSimulation::SimCollider' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, ProjectileActor) == 0x000008, "Member 'FManipulationActiveSimulation::ProjectileActor' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, ProjectileName) == 0x000010, "Member 'FManipulationActiveSimulation::ProjectileName' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, InstantBulletComponent) == 0x000020, "Member 'FManipulationActiveSimulation::InstantBulletComponent' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, InstantBulletAsset) == 0x000028, "Member 'FManipulationActiveSimulation::InstantBulletAsset' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, ProjectileCueActors) == 0x000030, "Member 'FManipulationActiveSimulation::ProjectileCueActors' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, CapturedSceneComponents) == 0x000040, "Member 'FManipulationActiveSimulation::CapturedSceneComponents' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, bIsIsSimulatingPhysics) == 0x000050, "Member 'FManipulationActiveSimulation::bIsIsSimulatingPhysics' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, bIsEnergyFieldActive) == 0x000051, "Member 'FManipulationActiveSimulation::bIsEnergyFieldActive' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, bMagicEntity) == 0x000052, "Member 'FManipulationActiveSimulation::bMagicEntity' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, bMagicEntityBeginDissolve) == 0x000053, "Member 'FManipulationActiveSimulation::bMagicEntityBeginDissolve' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, VisualSizeOverride) == 0x000054, "Member 'FManipulationActiveSimulation::VisualSizeOverride' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, VisualSizeForDefault) == 0x000058, "Member 'FManipulationActiveSimulation::VisualSizeForDefault' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, StopSimulationDelay) == 0x00005C, "Member 'FManipulationActiveSimulation::StopSimulationDelay' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, SimulatePhysicsDelay) == 0x000060, "Member 'FManipulationActiveSimulation::SimulatePhysicsDelay' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, EnergyFieldDeactiveDelay) == 0x000064, "Member 'FManipulationActiveSimulation::EnergyFieldDeactiveDelay' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, BulletTransforms) == 0x000068, "Member 'FManipulationActiveSimulation::BulletTransforms' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, EnergyFieldComponents) == 0x000078, "Member 'FManipulationActiveSimulation::EnergyFieldComponents' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, ManipulateActorType) == 0x000088, "Member 'FManipulationActiveSimulation::ManipulateActorType' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, CachedNiagaraComponents) == 0x000090, "Member 'FManipulationActiveSimulation::CachedNiagaraComponents' has a wrong offset!");
-static_assert(offsetof(FManipulationActiveSimulation, bHoldInstantAmmo) == 0x0000A0, "Member 'FManipulationActiveSimulation::bHoldInstantAmmo' has a wrong offset!");
+DUMPER7_ASSERTS_FManipulationActiveSimulation;
 
 // ScriptStruct Hero_1037.PreAllowcateInfo
 // 0x0078 (0x0078 - 0x0000)
@@ -194,13 +151,7 @@ public:
 	struct FRotator                               Rotation;                                          // 0x0038(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoxTraceShape                         BoxShape;                                          // 0x0050(0x0028)(BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPreAllowcateInfo) == 0x000008, "Wrong alignment on FPreAllowcateInfo");
-static_assert(sizeof(FPreAllowcateInfo) == 0x000078, "Wrong size on FPreAllowcateInfo");
-static_assert(offsetof(FPreAllowcateInfo, PhysicsSummoner) == 0x000000, "Member 'FPreAllowcateInfo::PhysicsSummoner' has a wrong offset!");
-static_assert(offsetof(FPreAllowcateInfo, OriginSpherePosition) == 0x000008, "Member 'FPreAllowcateInfo::OriginSpherePosition' has a wrong offset!");
-static_assert(offsetof(FPreAllowcateInfo, Position) == 0x000020, "Member 'FPreAllowcateInfo::Position' has a wrong offset!");
-static_assert(offsetof(FPreAllowcateInfo, Rotation) == 0x000038, "Member 'FPreAllowcateInfo::Rotation' has a wrong offset!");
-static_assert(offsetof(FPreAllowcateInfo, BoxShape) == 0x000050, "Member 'FPreAllowcateInfo::BoxShape' has a wrong offset!");
+DUMPER7_ASSERTS_FPreAllowcateInfo;
 
 }
 

@@ -21,9 +21,7 @@ struct FHeroGallery_SkinBP final
 public:
 	TSoftObjectPtr<class UTexture2D>              QuipPortrait_195_A81AEF7E4D7FE4BC907AB081A7A2A1E7; // 0x0000(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroGallery_SkinBP) == 0x000008, "Wrong alignment on FHeroGallery_SkinBP");
-static_assert(sizeof(FHeroGallery_SkinBP) == 0x000030, "Wrong size on FHeroGallery_SkinBP");
-static_assert(offsetof(FHeroGallery_SkinBP, QuipPortrait_195_A81AEF7E4D7FE4BC907AB081A7A2A1E7) == 0x000000, "Member 'FHeroGallery_SkinBP::QuipPortrait_195_A81AEF7E4D7FE4BC907AB081A7A2A1E7' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroGallery_SkinBP;
 
 }
 

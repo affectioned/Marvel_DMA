@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueMRC_ParticipationTab.PyWidget_LeagueMRC_ParticipationTab
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_LeagueMRC_ParticipationTab final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TabName;                                           // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorNormal;                                       // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorHover;                                        // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TabName;                                           // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorNormal;                                       // 0x05E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorHover;                                        // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueMRC_ParticipationTab">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRC_ParticipationTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRC_ParticipationTab")
 	}
 	static class UPyWidget_LeagueMRC_ParticipationTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueMRC_ParticipationTab>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueMRC_ParticipationTab) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRC_ParticipationTab");
-static_assert(sizeof(UPyWidget_LeagueMRC_ParticipationTab) == 0x000600, "Wrong size on UPyWidget_LeagueMRC_ParticipationTab");
-static_assert(offsetof(UPyWidget_LeagueMRC_ParticipationTab, TabName) == 0x0005C0, "Member 'UPyWidget_LeagueMRC_ParticipationTab::TabName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_ParticipationTab, ColorNormal) == 0x0005D8, "Member 'UPyWidget_LeagueMRC_ParticipationTab::ColorNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRC_ParticipationTab, ColorHover) == 0x0005EC, "Member 'UPyWidget_LeagueMRC_ParticipationTab::ColorHover' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueMRC_ParticipationTab;
 
 }
 

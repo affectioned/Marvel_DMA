@@ -29,13 +29,7 @@ public:
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0048(0x0080)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x00C8(0x0018)()
 };
-static_assert(alignof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on Post_1031001_Physics::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData) == 0x0000E0, "Wrong size on Post_1031001_Physics::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_67) == 0x000004, "Member 'Post_1031001_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_67' has a wrong offset!");
-static_assert(offsetof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData, __NameProperty_68) == 0x000010, "Member 'Post_1031001_Physics::FAnimBlueprintGeneratedConstantData::__NameProperty_68' has a wrong offset!");
-static_assert(offsetof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData, __StructProperty_69) == 0x000020, "Member 'Post_1031001_Physics::FAnimBlueprintGeneratedConstantData::__StructProperty_69' has a wrong offset!");
-static_assert(offsetof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000048, "Member 'Post_1031001_Physics::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(Post_1031001_Physics::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0000C8, "Member 'Post_1031001_Physics::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+DUMPER7_ASSERTS_Post_1031001_Physics__FAnimBlueprintGeneratedConstantData;
 
 }
 

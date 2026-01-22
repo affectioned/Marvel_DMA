@@ -45,19 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessPlaceController">();
+		STATIC_CLASS_IMPL("PyBattleChessPlaceController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessPlaceController")
 	}
 	static class APyBattleChessPlaceController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBattleChessPlaceController>();
 	}
 };
-static_assert(alignof(APyBattleChessPlaceController) == 0x000010, "Wrong alignment on APyBattleChessPlaceController");
-static_assert(sizeof(APyBattleChessPlaceController) == 0x000720, "Wrong size on APyBattleChessPlaceController");
-static_assert(offsetof(APyBattleChessPlaceController, OwnerPlayerState) == 0x0006E0, "Member 'APyBattleChessPlaceController::OwnerPlayerState' has a wrong offset!");
-static_assert(offsetof(APyBattleChessPlaceController, CharacterStartList) == 0x0006E8, "Member 'APyBattleChessPlaceController::CharacterStartList' has a wrong offset!");
-static_assert(offsetof(APyBattleChessPlaceController, SelectedCharacterStart) == 0x0006F8, "Member 'APyBattleChessPlaceController::SelectedCharacterStart' has a wrong offset!");
-static_assert(offsetof(APyBattleChessPlaceController, OnCharacterPlaced) == 0x000708, "Member 'APyBattleChessPlaceController::OnCharacterPlaced' has a wrong offset!");
+DUMPER7_ASSERTS_APyBattleChessPlaceController;
 
 }
 

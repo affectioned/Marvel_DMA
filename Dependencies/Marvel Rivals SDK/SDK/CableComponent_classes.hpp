@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CableActor">();
+		STATIC_CLASS_IMPL("CableActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CableActor")
 	}
 	static class ACableActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACableActor>();
 	}
 };
-static_assert(alignof(ACableActor) == 0x000010, "Wrong alignment on ACableActor");
-static_assert(sizeof(ACableActor) == 0x0006E0, "Wrong size on ACableActor");
-static_assert(offsetof(ACableActor, CableComponent) == 0x0006D8, "Member 'ACableActor::CableComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ACableActor;
 
 // Class CableComponent.CableComponent
 // 0x0200 (0x0A80 - 0x0880)
@@ -97,40 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CableComponent">();
+		STATIC_CLASS_IMPL("CableComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CableComponent")
 	}
 	static class UCableComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCableComponent>();
 	}
 };
-static_assert(alignof(UCableComponent) == 0x000010, "Wrong alignment on UCableComponent");
-static_assert(sizeof(UCableComponent) == 0x000A80, "Wrong size on UCableComponent");
-static_assert(offsetof(UCableComponent, bAttachStart) == 0x000878, "Member 'UCableComponent::bAttachStart' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bAttachEnd) == 0x000879, "Member 'UCableComponent::bAttachEnd' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndTo) == 0x000880, "Member 'UCableComponent::AttachEndTo' has a wrong offset!");
-static_assert(offsetof(UCableComponent, AttachEndToSocketName) == 0x0008B0, "Member 'UCableComponent::AttachEndToSocketName' has a wrong offset!");
-static_assert(offsetof(UCableComponent, EndLocation) == 0x0008C0, "Member 'UCableComponent::EndLocation' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableLength) == 0x0008D8, "Member 'UCableComponent::CableLength' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSegments) == 0x0008DC, "Member 'UCableComponent::NumSegments' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SubstepTime) == 0x0008E0, "Member 'UCableComponent::SubstepTime' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bPerformSubstepAtLeastOncePerFrame) == 0x0008E4, "Member 'UCableComponent::bPerformSubstepAtLeastOncePerFrame' has a wrong offset!");
-static_assert(offsetof(UCableComponent, SolverIterations) == 0x0008E8, "Member 'UCableComponent::SolverIterations' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableStiffness) == 0x0008EC, "Member 'UCableComponent::bEnableStiffness' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bUseSubstepping) == 0x0008ED, "Member 'UCableComponent::bUseSubstepping' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotVisible) == 0x0008EE, "Member 'UCableComponent::bSkipCableUpdateWhenNotVisible' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bSkipCableUpdateWhenNotOwnerRecentlyRendered) == 0x0008EF, "Member 'UCableComponent::bSkipCableUpdateWhenNotOwnerRecentlyRendered' has a wrong offset!");
-static_assert(offsetof(UCableComponent, bEnableCollision) == 0x0008F0, "Member 'UCableComponent::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CollisionFriction) == 0x0008F4, "Member 'UCableComponent::CollisionFriction' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableForce) == 0x0008F8, "Member 'UCableComponent::CableForce' has a wrong offset!");
-static_assert(offsetof(UCableComponent, Friction) == 0x000910, "Member 'UCableComponent::Friction' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableGravityScale) == 0x000914, "Member 'UCableComponent::CableGravityScale' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CableWidth) == 0x000918, "Member 'UCableComponent::CableWidth' has a wrong offset!");
-static_assert(offsetof(UCableComponent, NumSides) == 0x00091C, "Member 'UCableComponent::NumSides' has a wrong offset!");
-static_assert(offsetof(UCableComponent, TileMaterial) == 0x000920, "Member 'UCableComponent::TileMaterial' has a wrong offset!");
-static_assert(offsetof(UCableComponent, CustomSegmentLengthMap) == 0x000928, "Member 'UCableComponent::CustomSegmentLengthMap' has a wrong offset!");
-static_assert(offsetof(UCableComponent, Particles) == 0x000980, "Member 'UCableComponent::Particles' has a wrong offset!");
-static_assert(offsetof(UCableComponent, RenderPointLocation) == 0x0009B8, "Member 'UCableComponent::RenderPointLocation' has a wrong offset!");
+DUMPER7_ASSERTS_UCableComponent;
 
 // Class CableComponent.RigidCableActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -142,16 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigidCableActor">();
+		STATIC_CLASS_IMPL("RigidCableActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigidCableActor")
 	}
 	static class ARigidCableActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARigidCableActor>();
 	}
 };
-static_assert(alignof(ARigidCableActor) == 0x000010, "Wrong alignment on ARigidCableActor");
-static_assert(sizeof(ARigidCableActor) == 0x0006E0, "Wrong size on ARigidCableActor");
-static_assert(offsetof(ARigidCableActor, RigidCableComponent) == 0x0006D8, "Member 'ARigidCableActor::RigidCableComponent' has a wrong offset!");
+DUMPER7_ASSERTS_ARigidCableActor;
 
 // Class CableComponent.RigidCableComponent
 // 0x0050 (0x0AD0 - 0x0A80)
@@ -168,19 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigidCableComponent">();
+		STATIC_CLASS_IMPL("RigidCableComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigidCableComponent")
 	}
 	static class URigidCableComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URigidCableComponent>();
 	}
 };
-static_assert(alignof(URigidCableComponent) == 0x000010, "Wrong alignment on URigidCableComponent");
-static_assert(sizeof(URigidCableComponent) == 0x000AD0, "Wrong size on URigidCableComponent");
-static_assert(offsetof(URigidCableComponent, bEndSimulate) == 0x000A80, "Member 'URigidCableComponent::bEndSimulate' has a wrong offset!");
-static_assert(offsetof(URigidCableComponent, ParticleMass) == 0x000A84, "Member 'URigidCableComponent::ParticleMass' has a wrong offset!");
-static_assert(offsetof(URigidCableComponent, Gravity) == 0x000A88, "Member 'URigidCableComponent::Gravity' has a wrong offset!");
-static_assert(offsetof(URigidCableComponent, Damp) == 0x000AA0, "Member 'URigidCableComponent::Damp' has a wrong offset!");
+DUMPER7_ASSERTS_URigidCableComponent;
 
 }
 

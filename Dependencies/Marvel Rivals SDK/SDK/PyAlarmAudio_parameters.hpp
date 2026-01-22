@@ -24,9 +24,7 @@ struct PyAlarmAudio_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmAudio_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyAlarmAudio_ReceiveEndPlay");
-static_assert(sizeof(PyAlarmAudio_ReceiveEndPlay) == 0x000001, "Wrong size on PyAlarmAudio_ReceiveEndPlay");
-static_assert(offsetof(PyAlarmAudio_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyAlarmAudio_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmAudio_ReceiveEndPlay;
 
 // PythonFunction PyAlarmAudio.PyAlarmAudio.OnMatchStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAlarmAudio_OnMatchStateChanged final
 public:
 	EMatchState                                   MatchState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmAudio_OnMatchStateChanged) == 0x000001, "Wrong alignment on PyAlarmAudio_OnMatchStateChanged");
-static_assert(sizeof(PyAlarmAudio_OnMatchStateChanged) == 0x000001, "Wrong size on PyAlarmAudio_OnMatchStateChanged");
-static_assert(offsetof(PyAlarmAudio_OnMatchStateChanged, MatchState) == 0x000000, "Member 'PyAlarmAudio_OnMatchStateChanged::MatchState' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmAudio_OnMatchStateChanged;
 
 // PythonFunction PyAlarmAudio.PyAlarmAudio.SrvPlayAudio
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAlarmAudio_SrvPlayAudio final
 public:
 	bool                                          enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmAudio_SrvPlayAudio) == 0x000001, "Wrong alignment on PyAlarmAudio_SrvPlayAudio");
-static_assert(sizeof(PyAlarmAudio_SrvPlayAudio) == 0x000001, "Wrong size on PyAlarmAudio_SrvPlayAudio");
-static_assert(offsetof(PyAlarmAudio_SrvPlayAudio, enable) == 0x000000, "Member 'PyAlarmAudio_SrvPlayAudio::enable' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmAudio_SrvPlayAudio;
 
 // PythonFunction PyAlarmAudio.PyAlarmAudio.MulticastPlayAudio
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAlarmAudio_MulticastPlayAudio final
 public:
 	bool                                          playing;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAlarmAudio_MulticastPlayAudio) == 0x000001, "Wrong alignment on PyAlarmAudio_MulticastPlayAudio");
-static_assert(sizeof(PyAlarmAudio_MulticastPlayAudio) == 0x000001, "Wrong size on PyAlarmAudio_MulticastPlayAudio");
-static_assert(offsetof(PyAlarmAudio_MulticastPlayAudio, playing) == 0x000000, "Member 'PyAlarmAudio_MulticastPlayAudio::playing' has a wrong offset!");
+DUMPER7_ASSERTS_PyAlarmAudio_MulticastPlayAudio;
 
 }
 

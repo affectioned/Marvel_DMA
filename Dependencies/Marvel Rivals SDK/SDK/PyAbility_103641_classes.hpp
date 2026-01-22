@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103641.PyCue_AbilityLoop_103641
-// 0x0050 (0x1580 - 0x1530)
+// 0x0050 (0x1590 - 0x1540)
 class APyCue_AbilityLoop_103641 final : public AMarvelCueNotify_CableSwinging
 {
 public:
-	float                                         TimeToStartUpdateDashTopCurve;                     // 0x1530(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeToStopUpdateDashTopCurve;                      // 0x1534(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayToAddRandomInertia_HighSwing;                 // 0x1538(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RandomInertiaScaleFactor_HighSwing;                // 0x153C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HandReleaseSegmentLength_HighSwing;                // 0x1540(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GenerateAudioID_SimpleSwing;                       // 0x1544(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GenerateAudioID_LoopSwing;                         // 0x1548(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_154C[0x4];                                     // 0x154C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     DecalMaterial;                                     // 0x1550(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                DecalSize;                                         // 0x1558(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecalDuration;                                     // 0x1570(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecalFadeOutDuration;                              // 0x1574(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToStartUpdateDashTopCurve;                     // 0x1540(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeToStopUpdateDashTopCurve;                      // 0x1544(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayToAddRandomInertia_HighSwing;                 // 0x1548(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RandomInertiaScaleFactor_HighSwing;                // 0x154C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HandReleaseSegmentLength_HighSwing;                // 0x1550(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GenerateAudioID_SimpleSwing;                       // 0x1554(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GenerateAudioID_LoopSwing;                         // 0x1558(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_155C[0x4];                                     // 0x155C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     DecalMaterial;                                     // 0x1560(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DecalSize;                                         // 0x1568(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecalDuration;                                     // 0x1580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecalFadeOutDuration;                              // 0x1584(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ResetDefault();
@@ -54,26 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_103641">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_103641")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_103641")
 	}
 	static class APyCue_AbilityLoop_103641* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_103641>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_103641) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_103641");
-static_assert(sizeof(APyCue_AbilityLoop_103641) == 0x001580, "Wrong size on APyCue_AbilityLoop_103641");
-static_assert(offsetof(APyCue_AbilityLoop_103641, TimeToStartUpdateDashTopCurve) == 0x001530, "Member 'APyCue_AbilityLoop_103641::TimeToStartUpdateDashTopCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, TimeToStopUpdateDashTopCurve) == 0x001534, "Member 'APyCue_AbilityLoop_103641::TimeToStopUpdateDashTopCurve' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, DelayToAddRandomInertia_HighSwing) == 0x001538, "Member 'APyCue_AbilityLoop_103641::DelayToAddRandomInertia_HighSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, RandomInertiaScaleFactor_HighSwing) == 0x00153C, "Member 'APyCue_AbilityLoop_103641::RandomInertiaScaleFactor_HighSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, HandReleaseSegmentLength_HighSwing) == 0x001540, "Member 'APyCue_AbilityLoop_103641::HandReleaseSegmentLength_HighSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, GenerateAudioID_SimpleSwing) == 0x001544, "Member 'APyCue_AbilityLoop_103641::GenerateAudioID_SimpleSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, GenerateAudioID_LoopSwing) == 0x001548, "Member 'APyCue_AbilityLoop_103641::GenerateAudioID_LoopSwing' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, DecalMaterial) == 0x001550, "Member 'APyCue_AbilityLoop_103641::DecalMaterial' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, DecalSize) == 0x001558, "Member 'APyCue_AbilityLoop_103641::DecalSize' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, DecalDuration) == 0x001570, "Member 'APyCue_AbilityLoop_103641::DecalDuration' has a wrong offset!");
-static_assert(offsetof(APyCue_AbilityLoop_103641, DecalFadeOutDuration) == 0x001574, "Member 'APyCue_AbilityLoop_103641::DecalFadeOutDuration' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_103641;
 
 }
 

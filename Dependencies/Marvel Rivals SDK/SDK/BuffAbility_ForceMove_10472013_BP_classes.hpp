@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_ForceMove_10472013_BP.BuffAbility_ForceMove_10472013_BP_C
-// 0x0000 (0x35F0 - 0x35F0)
+// 0x0000 (0x3C70 - 0x3C70)
 class UBuffAbility_ForceMove_10472013_BP_C final : public UMarvelMoveToAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_ForceMove_10472013_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_ForceMove_10472013_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_ForceMove_10472013_BP_C")
 	}
 	static class UBuffAbility_ForceMove_10472013_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_ForceMove_10472013_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_ForceMove_10472013_BP_C) == 0x000010, "Wrong alignment on UBuffAbility_ForceMove_10472013_BP_C");
-static_assert(sizeof(UBuffAbility_ForceMove_10472013_BP_C) == 0x0035F0, "Wrong size on UBuffAbility_ForceMove_10472013_BP_C");
+DUMPER7_ASSERTS_UBuffAbility_ForceMove_10472013_BP_C;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSoundPoint">();
+		STATIC_CLASS_IMPL("PyLevelSoundPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSoundPoint")
 	}
 	static class APyLevelSoundPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSoundPoint>();
 	}
 };
-static_assert(alignof(APyLevelSoundPoint) == 0x000010, "Wrong alignment on APyLevelSoundPoint");
-static_assert(sizeof(APyLevelSoundPoint) == 0x000710, "Wrong size on APyLevelSoundPoint");
+DUMPER7_ASSERTS_APyLevelSoundPoint;
 
 }
 

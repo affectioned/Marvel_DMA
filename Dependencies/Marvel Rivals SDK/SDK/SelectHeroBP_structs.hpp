@@ -26,11 +26,7 @@ public:
 	double                                        ShowActorScale_91_8C4D68A443A5032FE42E5B807BB23004; // 0x0068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ShowActorLocation_94_BE5405944625FEDCD86D3AB5E6D52C13; // 0x0070(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FSelectHeroBP) == 0x000008, "Wrong alignment on FSelectHeroBP");
-static_assert(sizeof(FSelectHeroBP) == 0x000088, "Wrong size on FSelectHeroBP");
-static_assert(offsetof(FSelectHeroBP, HeroListCard_82_A19EF36C4442584E9734709D0322A76A) == 0x000000, "Member 'FSelectHeroBP::HeroListCard_82_A19EF36C4442584E9734709D0322A76A' has a wrong offset!");
-static_assert(offsetof(FSelectHeroBP, ShowActorScale_91_8C4D68A443A5032FE42E5B807BB23004) == 0x000068, "Member 'FSelectHeroBP::ShowActorScale_91_8C4D68A443A5032FE42E5B807BB23004' has a wrong offset!");
-static_assert(offsetof(FSelectHeroBP, ShowActorLocation_94_BE5405944625FEDCD86D3AB5E6D52C13) == 0x000070, "Member 'FSelectHeroBP::ShowActorLocation_94_BE5405944625FEDCD86D3AB5E6D52C13' has a wrong offset!");
+DUMPER7_ASSERTS_FSelectHeroBP;
 
 }
 

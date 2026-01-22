@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_ExcusiveVoice.PyWidget_HeroSystem_ExcusiveVoice_SettingBtn
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn final : public UPyMarvelUserWidget
 {
 public:
@@ -29,23 +29,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_ExcusiveVoice_SettingBtn">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_ExcusiveVoice_SettingBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_ExcusiveVoice_SettingBtn")
 	}
 	static class UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn");
-static_assert(sizeof(UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_ExcusiveVoice_SettingBtn;
 
 // PythonClass PyWidget_HeroSystem_ExcusiveVoice.PyWidget_HeroSystem_ExcusiveVoice
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_HeroSystem_ExcusiveVoice final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           GamePad_Esc;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           GamePad_Right;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_Esc;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           GamePad_Right;                                     // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,17 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_ExcusiveVoice">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_ExcusiveVoice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_ExcusiveVoice")
 	}
 	static class UPyWidget_HeroSystem_ExcusiveVoice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_ExcusiveVoice>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_ExcusiveVoice) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_ExcusiveVoice");
-static_assert(sizeof(UPyWidget_HeroSystem_ExcusiveVoice) == 0x000608, "Wrong size on UPyWidget_HeroSystem_ExcusiveVoice");
-static_assert(offsetof(UPyWidget_HeroSystem_ExcusiveVoice, GamePad_Esc) == 0x0005F8, "Member 'UPyWidget_HeroSystem_ExcusiveVoice::GamePad_Esc' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ExcusiveVoice, GamePad_Right) == 0x000600, "Member 'UPyWidget_HeroSystem_ExcusiveVoice::GamePad_Right' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_ExcusiveVoice;
 
 }
 

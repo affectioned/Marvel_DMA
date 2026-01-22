@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_3DHeroPortrait">();
+		STATIC_CLASS_IMPL("PyWidget_Common_3DHeroPortrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_3DHeroPortrait")
 	}
 	static class UPyWidget_Common_3DHeroPortrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_3DHeroPortrait>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_3DHeroPortrait) == 0x000008, "Wrong alignment on UPyWidget_Common_3DHeroPortrait");
-static_assert(sizeof(UPyWidget_Common_3DHeroPortrait) == 0x0003E0, "Wrong size on UPyWidget_Common_3DHeroPortrait");
-static_assert(offsetof(UPyWidget_Common_3DHeroPortrait, HeroCardMask) == 0x0003B8, "Member 'UPyWidget_Common_3DHeroPortrait::HeroCardMask' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_3DHeroPortrait, OnLoadShowActorFinished) == 0x0003C0, "Member 'UPyWidget_Common_3DHeroPortrait::OnLoadShowActorFinished' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_3DHeroPortrait, OnViewShowActorChanged) == 0x0003D0, "Member 'UPyWidget_Common_3DHeroPortrait::OnViewShowActorChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_3DHeroPortrait;
 
 }
 

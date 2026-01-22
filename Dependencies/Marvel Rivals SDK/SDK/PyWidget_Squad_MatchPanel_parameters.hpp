@@ -21,9 +21,7 @@ struct PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately, bTmpVisible) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_Card_MarvelSetVisibleImmediately;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchInfo_Card.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Squad_MatchInfo_Card_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchInfo_Card_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Squad_MatchInfo_Card_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_Card_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_Card_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_Card_MarvelSetVisible;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchInfo_Card.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Squad_MatchInfo_Card_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_Card_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Squad_MatchInfo_Card_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_Card_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Squad_MatchInfo_Card_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_Card_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_Card_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_Card_OnAnimationFinished;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_ModeSelectionBtn.OnSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad");
-static_assert(sizeof(PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad");
-static_assert(offsetof(PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_ModeSelectionBtn_OnSoftTextureLoad;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_ModeSelectionBtn.OnIconTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad) == 0x000008, "Wrong alignment on PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad");
-static_assert(sizeof(PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad) == 0x000008, "Wrong size on PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad");
-static_assert(offsetof(PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad, Texture) == 0x000000, "Member 'PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_ModeSelectionBtn_OnIconTextureLoad;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_Squad_MatchPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Squad_MatchPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Squad_MatchPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Squad_MatchPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Squad_MatchPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Squad_MatchPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchPanel.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -87,9 +75,7 @@ struct PyWidget_Squad_MatchPanel_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchPanel_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Squad_MatchPanel_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Squad_MatchPanel_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Squad_MatchPanel_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Squad_MatchPanel_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Squad_MatchPanel_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchPanel_OnAnimationStarted;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -98,9 +84,7 @@ struct PyWidget_Squad_MatchPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Squad_MatchPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Squad_MatchPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Squad_MatchPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Squad_MatchPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchInfo.MarvelSetVisibleImmediately
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +93,7 @@ struct PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately, bTmpVisible) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_MarvelSetVisibleImmediately;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchInfo.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -120,9 +102,7 @@ struct PyWidget_Squad_MatchInfo_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchInfo_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Squad_MatchInfo_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_MarvelSetVisible;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_MatchInfo.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -131,9 +111,7 @@ struct PyWidget_Squad_MatchInfo_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchInfo_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Squad_MatchInfo_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Squad_MatchInfo_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Squad_MatchInfo_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Squad_MatchInfo_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Squad_MatchInfo_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchInfo_OnAnimationFinished;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_ConsoleCheckBox.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -142,9 +120,7 @@ struct PyWidget_ConsoleCheckBox_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ConsoleCheckBox_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_ConsoleCheckBox_SetIsHover");
-static_assert(sizeof(PyWidget_ConsoleCheckBox_SetIsHover) == 0x000001, "Wrong size on PyWidget_ConsoleCheckBox_SetIsHover");
-static_assert(offsetof(PyWidget_ConsoleCheckBox_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_ConsoleCheckBox_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ConsoleCheckBox_SetIsHover;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_ConsoleCheckBox.SetBtnIsPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -153,9 +129,7 @@ struct PyWidget_ConsoleCheckBox_SetBtnIsPressed final
 public:
 	bool                                          IsBtnPressed_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ConsoleCheckBox_SetBtnIsPressed) == 0x000001, "Wrong alignment on PyWidget_ConsoleCheckBox_SetBtnIsPressed");
-static_assert(sizeof(PyWidget_ConsoleCheckBox_SetBtnIsPressed) == 0x000001, "Wrong size on PyWidget_ConsoleCheckBox_SetBtnIsPressed");
-static_assert(offsetof(PyWidget_ConsoleCheckBox_SetBtnIsPressed, IsBtnPressed_0) == 0x000000, "Member 'PyWidget_ConsoleCheckBox_SetBtnIsPressed::IsBtnPressed_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ConsoleCheckBox_SetBtnIsPressed;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_League_Team.MarvelSetVisibleImmediately
 // 0x0001 (0x0001 - 0x0000)
@@ -164,9 +138,7 @@ struct PyWidget_Squad_League_Team_MarvelSetVisibleImmediately final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_League_Team_MarvelSetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_Squad_League_Team_MarvelSetVisibleImmediately");
-static_assert(sizeof(PyWidget_Squad_League_Team_MarvelSetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_Squad_League_Team_MarvelSetVisibleImmediately");
-static_assert(offsetof(PyWidget_Squad_League_Team_MarvelSetVisibleImmediately, bTmpVisible) == 0x000000, "Member 'PyWidget_Squad_League_Team_MarvelSetVisibleImmediately::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_League_Team_MarvelSetVisibleImmediately;
 
 // PythonFunction PyWidget_Squad_MatchPanel.PyWidget_Squad_League_Team.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -175,9 +147,7 @@ struct PyWidget_Squad_League_Team_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_League_Team_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Squad_League_Team_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Squad_League_Team_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Squad_League_Team_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Squad_League_Team_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Squad_League_Team_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_League_Team_MarvelSetVisible;
 
 }
 

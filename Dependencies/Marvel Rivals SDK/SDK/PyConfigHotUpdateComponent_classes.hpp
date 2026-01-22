@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfigHotUpdateComponent">();
+		STATIC_CLASS_IMPL("PyConfigHotUpdateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfigHotUpdateComponent")
 	}
 	static class UPyConfigHotUpdateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfigHotUpdateComponent>();
 	}
 };
-static_assert(alignof(UPyConfigHotUpdateComponent) == 0x000008, "Wrong alignment on UPyConfigHotUpdateComponent");
-static_assert(sizeof(UPyConfigHotUpdateComponent) == 0x000108, "Wrong size on UPyConfigHotUpdateComponent");
+DUMPER7_ASSERTS_UPyConfigHotUpdateComponent;
 
 }
 

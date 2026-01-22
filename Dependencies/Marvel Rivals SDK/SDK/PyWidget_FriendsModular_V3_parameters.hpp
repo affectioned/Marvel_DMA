@@ -21,9 +21,7 @@ struct PyWidget_FriendsModular_V3_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsModular_V3_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_FriendsModular_V3_PreConstruct");
-static_assert(sizeof(PyWidget_FriendsModular_V3_PreConstruct) == 0x000001, "Wrong size on PyWidget_FriendsModular_V3_PreConstruct");
-static_assert(offsetof(PyWidget_FriendsModular_V3_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_FriendsModular_V3_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsModular_V3_PreConstruct;
 
 // PythonFunction PyWidget_FriendsModular_V3.PyWidget_FriendsModular_V3.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_FriendsModular_V3_OnListItemObjectSet final
 public:
 	class UObject*                                ItemObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsModular_V3_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_FriendsModular_V3_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_FriendsModular_V3_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_FriendsModular_V3_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_FriendsModular_V3_OnListItemObjectSet, ItemObject) == 0x000000, "Member 'PyWidget_FriendsModular_V3_OnListItemObjectSet::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsModular_V3_OnListItemObjectSet;
 
 // PythonFunction PyWidget_FriendsModular_V3.PyWidget_FriendsModular_V3.SetIsDelete
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_FriendsModular_V3_SetIsDelete final
 public:
 	bool                                          IsDelete;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_FriendsModular_V3_SetIsDelete) == 0x000001, "Wrong alignment on PyWidget_FriendsModular_V3_SetIsDelete");
-static_assert(sizeof(PyWidget_FriendsModular_V3_SetIsDelete) == 0x000001, "Wrong size on PyWidget_FriendsModular_V3_SetIsDelete");
-static_assert(offsetof(PyWidget_FriendsModular_V3_SetIsDelete, IsDelete) == 0x000000, "Member 'PyWidget_FriendsModular_V3_SetIsDelete::IsDelete' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_FriendsModular_V3_SetIsDelete;
 
 }
 

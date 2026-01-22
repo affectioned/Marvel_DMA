@@ -21,9 +21,7 @@ struct DeviceFunctionLibrary_GetCpuInfo final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetCpuInfo) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_GetCpuInfo");
-static_assert(sizeof(DeviceFunctionLibrary_GetCpuInfo) == 0x000010, "Wrong size on DeviceFunctionLibrary_GetCpuInfo");
-static_assert(offsetof(DeviceFunctionLibrary_GetCpuInfo, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetCpuInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetCpuInfo;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetGpuInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct DeviceFunctionLibrary_GetGpuInfo final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetGpuInfo) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_GetGpuInfo");
-static_assert(sizeof(DeviceFunctionLibrary_GetGpuInfo) == 0x000010, "Wrong size on DeviceFunctionLibrary_GetGpuInfo");
-static_assert(offsetof(DeviceFunctionLibrary_GetGpuInfo, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetGpuInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetGpuInfo;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetDisplayDevicesInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -43,9 +39,7 @@ struct DeviceFunctionLibrary_GetDisplayDevicesInfo final
 public:
 	TArray<class FString>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetDisplayDevicesInfo) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_GetDisplayDevicesInfo");
-static_assert(sizeof(DeviceFunctionLibrary_GetDisplayDevicesInfo) == 0x000010, "Wrong size on DeviceFunctionLibrary_GetDisplayDevicesInfo");
-static_assert(offsetof(DeviceFunctionLibrary_GetDisplayDevicesInfo, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetDisplayDevicesInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetDisplayDevicesInfo;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.QueryCpuVendor
 // 0x0020 (0x0020 - 0x0000)
@@ -55,10 +49,7 @@ public:
 	class FString                                 cpu_info;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_QueryCpuVendor) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_QueryCpuVendor");
-static_assert(sizeof(DeviceFunctionLibrary_QueryCpuVendor) == 0x000020, "Wrong size on DeviceFunctionLibrary_QueryCpuVendor");
-static_assert(offsetof(DeviceFunctionLibrary_QueryCpuVendor, cpu_info) == 0x000000, "Member 'DeviceFunctionLibrary_QueryCpuVendor::cpu_info' has a wrong offset!");
-static_assert(offsetof(DeviceFunctionLibrary_QueryCpuVendor, ReturnValue) == 0x000010, "Member 'DeviceFunctionLibrary_QueryCpuVendor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_QueryCpuVendor;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.QueryGpuVendor
 // 0x0020 (0x0020 - 0x0000)
@@ -68,10 +59,7 @@ public:
 	class FString                                 gpu_info;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_QueryGpuVendor) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_QueryGpuVendor");
-static_assert(sizeof(DeviceFunctionLibrary_QueryGpuVendor) == 0x000020, "Wrong size on DeviceFunctionLibrary_QueryGpuVendor");
-static_assert(offsetof(DeviceFunctionLibrary_QueryGpuVendor, gpu_info) == 0x000000, "Member 'DeviceFunctionLibrary_QueryGpuVendor::gpu_info' has a wrong offset!");
-static_assert(offsetof(DeviceFunctionLibrary_QueryGpuVendor, ReturnValue) == 0x000010, "Member 'DeviceFunctionLibrary_QueryGpuVendor::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_QueryGpuVendor;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetBenchmarkCpuGrade
 // 0x0004 (0x0004 - 0x0000)
@@ -80,9 +68,7 @@ struct DeviceFunctionLibrary_GetBenchmarkCpuGrade final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetBenchmarkCpuGrade) == 0x000004, "Wrong alignment on DeviceFunctionLibrary_GetBenchmarkCpuGrade");
-static_assert(sizeof(DeviceFunctionLibrary_GetBenchmarkCpuGrade) == 0x000004, "Wrong size on DeviceFunctionLibrary_GetBenchmarkCpuGrade");
-static_assert(offsetof(DeviceFunctionLibrary_GetBenchmarkCpuGrade, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetBenchmarkCpuGrade::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetBenchmarkCpuGrade;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetBenchmarkGpuGrade
 // 0x0004 (0x0004 - 0x0000)
@@ -91,9 +77,7 @@ struct DeviceFunctionLibrary_GetBenchmarkGpuGrade final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetBenchmarkGpuGrade) == 0x000004, "Wrong alignment on DeviceFunctionLibrary_GetBenchmarkGpuGrade");
-static_assert(sizeof(DeviceFunctionLibrary_GetBenchmarkGpuGrade) == 0x000004, "Wrong size on DeviceFunctionLibrary_GetBenchmarkGpuGrade");
-static_assert(offsetof(DeviceFunctionLibrary_GetBenchmarkGpuGrade, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetBenchmarkGpuGrade::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetBenchmarkGpuGrade;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetBenchmarkBestGpuInfo
 // 0x0010 (0x0010 - 0x0000)
@@ -102,9 +86,7 @@ struct DeviceFunctionLibrary_GetBenchmarkBestGpuInfo final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetBenchmarkBestGpuInfo) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_GetBenchmarkBestGpuInfo");
-static_assert(sizeof(DeviceFunctionLibrary_GetBenchmarkBestGpuInfo) == 0x000010, "Wrong size on DeviceFunctionLibrary_GetBenchmarkBestGpuInfo");
-static_assert(offsetof(DeviceFunctionLibrary_GetBenchmarkBestGpuInfo, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetBenchmarkBestGpuInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetBenchmarkBestGpuInfo;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.SetDefaultSettingByCpuGpuInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +95,7 @@ struct DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo final
 public:
 	class UObject*                                wco;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo");
-static_assert(sizeof(DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo) == 0x000008, "Wrong size on DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo");
-static_assert(offsetof(DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo, wco) == 0x000000, "Member 'DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo::wco' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_SetDefaultSettingByCpuGpuInfo;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.BestGraphicsSetting
 // 0x0008 (0x0008 - 0x0000)
@@ -124,9 +104,7 @@ struct DeviceFunctionLibrary_BestGraphicsSetting final
 public:
 	class UObject*                                wco;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DeviceFunctionLibrary_BestGraphicsSetting) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_BestGraphicsSetting");
-static_assert(sizeof(DeviceFunctionLibrary_BestGraphicsSetting) == 0x000008, "Wrong size on DeviceFunctionLibrary_BestGraphicsSetting");
-static_assert(offsetof(DeviceFunctionLibrary_BestGraphicsSetting, wco) == 0x000000, "Member 'DeviceFunctionLibrary_BestGraphicsSetting::wco' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_BestGraphicsSetting;
 
 // PythonFunction device_check_utils.DeviceFunctionLibrary.GetDefaultSettingLevel
 // 0x0010 (0x0010 - 0x0000)
@@ -135,9 +113,7 @@ struct DeviceFunctionLibrary_GetDefaultSettingLevel final
 public:
 	TArray<int32>                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(DeviceFunctionLibrary_GetDefaultSettingLevel) == 0x000008, "Wrong alignment on DeviceFunctionLibrary_GetDefaultSettingLevel");
-static_assert(sizeof(DeviceFunctionLibrary_GetDefaultSettingLevel) == 0x000010, "Wrong size on DeviceFunctionLibrary_GetDefaultSettingLevel");
-static_assert(offsetof(DeviceFunctionLibrary_GetDefaultSettingLevel, ReturnValue) == 0x000000, "Member 'DeviceFunctionLibrary_GetDefaultSettingLevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_DeviceFunctionLibrary_GetDefaultSettingLevel;
 
 }
 

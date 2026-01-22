@@ -17,6 +17,25 @@
 namespace SDK
 {
 
+// PythonFunction PyWidget_LeagueDetails_TabBar.PyWidget_LeagueDetails_Tab.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LeagueDetails_Tab::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueDetails_Tab", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_LeagueDetails_TabBar.PyWidget_LeagueDetails_TabBar.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

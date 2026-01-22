@@ -73,41 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ConstraintEmitter_C">();
+		BP_STATIC_CLASS_IMPL("BP_ConstraintEmitter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ConstraintEmitter_C")
 	}
 	static class ABP_ConstraintEmitter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ConstraintEmitter_C>();
 	}
 };
-static_assert(alignof(ABP_ConstraintEmitter_C) == 0x000010, "Wrong alignment on ABP_ConstraintEmitter_C");
-static_assert(sizeof(ABP_ConstraintEmitter_C) == 0x0007A0, "Wrong size on ABP_ConstraintEmitter_C");
-static_assert(offsetof(ABP_ConstraintEmitter_C, UberGraphFrame) == 0x0006E0, "Member 'ABP_ConstraintEmitter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NS_103614_Hit_01) == 0x0006E8, "Member 'ABP_ConstraintEmitter_C::NS_103614_Hit_01' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NS_104251_Hit_01) == 0x0006F0, "Member 'ABP_ConstraintEmitter_C::NS_104251_Hit_01' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, DestructionConstraint) == 0x0006F8, "Member 'ABP_ConstraintEmitter_C::DestructionConstraint' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, Sphere) == 0x000700, "Member 'ABP_ConstraintEmitter_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, web) == 0x000708, "Member 'ABP_ConstraintEmitter_C::web' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, StaticMesh) == 0x000710, "Member 'ABP_ConstraintEmitter_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, Cue_Cable_BP) == 0x000718, "Member 'ABP_ConstraintEmitter_C::Cue_Cable_BP' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, ____0______0_69E1C79641358D69169565A6005F3FCE) == 0x000720, "Member 'ABP_ConstraintEmitter_C::____0______0_69E1C79641358D69169565A6005F3FCE' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, ____0__Direction_69E1C79641358D69169565A6005F3FCE) == 0x000724, "Member 'ABP_ConstraintEmitter_C::____0__Direction_69E1C79641358D69169565A6005F3FCE' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, 时间轴_0) == 0x000728, "Member 'ABP_ConstraintEmitter_C::时间轴_0' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, _________0_E7885DBC44AA7C3BD160B98F6053B2E3) == 0x000730, "Member 'ABP_ConstraintEmitter_C::_________0_E7885DBC44AA7C3BD160B98F6053B2E3' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, _____Direction_E7885DBC44AA7C3BD160B98F6053B2E3) == 0x000734, "Member 'ABP_ConstraintEmitter_C::_____Direction_E7885DBC44AA7C3BD160B98F6053B2E3' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, 时间轴) == 0x000738, "Member 'ABP_ConstraintEmitter_C::时间轴' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, ____1______0_C2303BF943B30787BFE615953097E48B) == 0x000740, "Member 'ABP_ConstraintEmitter_C::____1______0_C2303BF943B30787BFE615953097E48B' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, ____1__Direction_C2303BF943B30787BFE615953097E48B) == 0x000744, "Member 'ABP_ConstraintEmitter_C::____1__Direction_C2303BF943B30787BFE615953097E48B' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, 时间轴_1) == 0x000748, "Member 'ABP_ConstraintEmitter_C::时间轴_1' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NewVar) == 0x000750, "Member 'ABP_ConstraintEmitter_C::NewVar' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NewVar_0) == 0x000758, "Member 'ABP_ConstraintEmitter_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, Cube) == 0x000760, "Member 'ABP_ConstraintEmitter_C::Cube' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NewVar_1) == 0x000768, "Member 'ABP_ConstraintEmitter_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, Cube_0) == 0x000770, "Member 'ABP_ConstraintEmitter_C::Cube_0' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, WebMat) == 0x000778, "Member 'ABP_ConstraintEmitter_C::WebMat' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, isSetLimit) == 0x000780, "Member 'ABP_ConstraintEmitter_C::isSetLimit' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, Source_Material) == 0x000788, "Member 'ABP_ConstraintEmitter_C::Source_Material' has a wrong offset!");
-static_assert(offsetof(ABP_ConstraintEmitter_C, NewVar_2) == 0x000790, "Member 'ABP_ConstraintEmitter_C::NewVar_2' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_ConstraintEmitter_C;
 
 }
 

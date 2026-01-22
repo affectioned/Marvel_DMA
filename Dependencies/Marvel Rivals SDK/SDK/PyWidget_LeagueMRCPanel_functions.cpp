@@ -77,9 +77,9 @@ void UPyWidget_LeagueMRCPanel::Destruct()
 // PythonFunction PyWidget_LeagueMRCPanel.PyWidget_LeagueMRCPanel.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Visible                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bTmpVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPyWidget_LeagueMRCPanel::MarvelSetVisible(bool Visible)
+void UPyWidget_LeagueMRCPanel::MarvelSetVisible(bool bTmpVisible)
 {
 	static class UFunction* Func = nullptr;
 
@@ -88,7 +88,7 @@ void UPyWidget_LeagueMRCPanel::MarvelSetVisible(bool Visible)
 
 	Params::PyWidget_LeagueMRCPanel_MarvelSetVisible Parms{};
 
-	Parms.Visible = Visible;
+	Parms.bTmpVisible = bTmpVisible;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -24,10 +24,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyTraceComponent_10264101_TracedHitResults) == 0x000008, "Wrong alignment on PyTraceComponent_10264101_TracedHitResults");
-static_assert(sizeof(PyTraceComponent_10264101_TracedHitResults) == 0x000018, "Wrong size on PyTraceComponent_10264101_TracedHitResults");
-static_assert(offsetof(PyTraceComponent_10264101_TracedHitResults, TraceSource) == 0x000000, "Member 'PyTraceComponent_10264101_TracedHitResults::TraceSource' has a wrong offset!");
-static_assert(offsetof(PyTraceComponent_10264101_TracedHitResults, HitResults) == 0x000008, "Member 'PyTraceComponent_10264101_TracedHitResults::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_10264101_TracedHitResults;
 
 // PythonFunction PyAbility_102641.PyTraceComponent_10264101.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyTraceComponent_10264101_ReceiveEndPlay final
 public:
 	EEndPlayReason                                Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTraceComponent_10264101_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyTraceComponent_10264101_ReceiveEndPlay");
-static_assert(sizeof(PyTraceComponent_10264101_ReceiveEndPlay) == 0x000001, "Wrong size on PyTraceComponent_10264101_ReceiveEndPlay");
-static_assert(offsetof(PyTraceComponent_10264101_ReceiveEndPlay, Reason) == 0x000000, "Member 'PyTraceComponent_10264101_ReceiveEndPlay::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_10264101_ReceiveEndPlay;
 
 // PythonFunction PyAbility_102641.PyScope_10264101.TracedHitResults
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +42,7 @@ struct PyScope_10264101_TracedHitResults final
 public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyScope_10264101_TracedHitResults) == 0x000008, "Wrong alignment on PyScope_10264101_TracedHitResults");
-static_assert(sizeof(PyScope_10264101_TracedHitResults) == 0x000010, "Wrong size on PyScope_10264101_TracedHitResults");
-static_assert(offsetof(PyScope_10264101_TracedHitResults, HitResults) == 0x000000, "Member 'PyScope_10264101_TracedHitResults::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyScope_10264101_TracedHitResults;
 
 // PythonFunction PyAbility_102641.PyScope_10264101.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyScope_10264101_ReceiveEndPlay final
 public:
 	EEndPlayReason                                Reason;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScope_10264101_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyScope_10264101_ReceiveEndPlay");
-static_assert(sizeof(PyScope_10264101_ReceiveEndPlay) == 0x000001, "Wrong size on PyScope_10264101_ReceiveEndPlay");
-static_assert(offsetof(PyScope_10264101_ReceiveEndPlay, Reason) == 0x000000, "Member 'PyScope_10264101_ReceiveEndPlay::Reason' has a wrong offset!");
+DUMPER7_ASSERTS_PyScope_10264101_ReceiveEndPlay;
 
 // PythonFunction PyAbility_102641.PyAbility_102641.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +60,7 @@ struct PyAbility_102641_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102641_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_102641_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_102641_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_102641_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_102641_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_102641_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102641_K2_OnEndAbility;
 
 // PythonFunction PyAbility_102641.PyAbility_102641.NativeOnMontageEvent
 // 0x0010 (0x0010 - 0x0000)
@@ -80,9 +69,7 @@ struct PyAbility_102641_NativeOnMontageEvent final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_102641_NativeOnMontageEvent) == 0x000008, "Wrong alignment on PyAbility_102641_NativeOnMontageEvent");
-static_assert(sizeof(PyAbility_102641_NativeOnMontageEvent) == 0x000010, "Wrong size on PyAbility_102641_NativeOnMontageEvent");
-static_assert(offsetof(PyAbility_102641_NativeOnMontageEvent, Tag) == 0x000000, "Member 'PyAbility_102641_NativeOnMontageEvent::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102641_NativeOnMontageEvent;
 
 }
 

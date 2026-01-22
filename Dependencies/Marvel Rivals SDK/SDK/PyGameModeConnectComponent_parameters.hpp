@@ -24,11 +24,7 @@ public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGameModeConnectComponent_AddInactivePlayerState) == 0x000008, "Wrong alignment on PyGameModeConnectComponent_AddInactivePlayerState");
-static_assert(sizeof(PyGameModeConnectComponent_AddInactivePlayerState) == 0x000018, "Wrong size on PyGameModeConnectComponent_AddInactivePlayerState");
-static_assert(offsetof(PyGameModeConnectComponent_AddInactivePlayerState, player_uid) == 0x000000, "Member 'PyGameModeConnectComponent_AddInactivePlayerState::player_uid' has a wrong offset!");
-static_assert(offsetof(PyGameModeConnectComponent_AddInactivePlayerState, ps) == 0x000008, "Member 'PyGameModeConnectComponent_AddInactivePlayerState::ps' has a wrong offset!");
-static_assert(offsetof(PyGameModeConnectComponent_AddInactivePlayerState, ReturnValue) == 0x000010, "Member 'PyGameModeConnectComponent_AddInactivePlayerState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyGameModeConnectComponent_AddInactivePlayerState;
 
 // PythonFunction PyGameModeConnectComponent.PyGameModeConnectComponent.PopInactivePlayerState
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMarvelPlayerState*                     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGameModeConnectComponent_PopInactivePlayerState) == 0x000008, "Wrong alignment on PyGameModeConnectComponent_PopInactivePlayerState");
-static_assert(sizeof(PyGameModeConnectComponent_PopInactivePlayerState) == 0x000010, "Wrong size on PyGameModeConnectComponent_PopInactivePlayerState");
-static_assert(offsetof(PyGameModeConnectComponent_PopInactivePlayerState, player_uid) == 0x000000, "Member 'PyGameModeConnectComponent_PopInactivePlayerState::player_uid' has a wrong offset!");
-static_assert(offsetof(PyGameModeConnectComponent_PopInactivePlayerState, ReturnValue) == 0x000008, "Member 'PyGameModeConnectComponent_PopInactivePlayerState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyGameModeConnectComponent_PopInactivePlayerState;
 
 // PythonFunction PyGameModeConnectComponent.PyGameModeConnectComponent.OnPlayerInactived
 // 0x0008 (0x0008 - 0x0000)
@@ -51,9 +44,7 @@ struct PyGameModeConnectComponent_OnPlayerInactived final
 public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGameModeConnectComponent_OnPlayerInactived) == 0x000008, "Wrong alignment on PyGameModeConnectComponent_OnPlayerInactived");
-static_assert(sizeof(PyGameModeConnectComponent_OnPlayerInactived) == 0x000008, "Wrong size on PyGameModeConnectComponent_OnPlayerInactived");
-static_assert(offsetof(PyGameModeConnectComponent_OnPlayerInactived, ps) == 0x000000, "Member 'PyGameModeConnectComponent_OnPlayerInactived::ps' has a wrong offset!");
+DUMPER7_ASSERTS_PyGameModeConnectComponent_OnPlayerInactived;
 
 }
 

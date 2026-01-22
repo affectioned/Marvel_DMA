@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
@@ -28,16 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Network_Anim">();
+		STATIC_CLASS_IMPL("PyWidget_Network_Anim")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Network_Anim")
 	}
 	static class UPyWidget_Network_Anim* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Network_Anim>();
 	}
 };
-static_assert(alignof(UPyWidget_Network_Anim) == 0x000008, "Wrong alignment on UPyWidget_Network_Anim");
-static_assert(sizeof(UPyWidget_Network_Anim) == 0x0003C0, "Wrong size on UPyWidget_Network_Anim");
-static_assert(offsetof(UPyWidget_Network_Anim, Anim_Loop) == 0x0003B8, "Member 'UPyWidget_Network_Anim::Anim_Loop' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Network_Anim;
 
 // PythonClass PyWidget_Network_Diagnosis.PyWidget_Diagnosis_Link_Line
 // 0x0038 (0x03F8 - 0x03C0)
@@ -58,39 +60,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Diagnosis_Link_Line">();
+		STATIC_CLASS_IMPL("PyWidget_Diagnosis_Link_Line")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Diagnosis_Link_Line")
 	}
 	static class UPyWidget_Diagnosis_Link_Line* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Diagnosis_Link_Line>();
 	}
 };
-static_assert(alignof(UPyWidget_Diagnosis_Link_Line) == 0x000008, "Wrong alignment on UPyWidget_Diagnosis_Link_Line");
-static_assert(sizeof(UPyWidget_Diagnosis_Link_Line) == 0x0003F8, "Wrong size on UPyWidget_Diagnosis_Link_Line");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, HBox_Vacant) == 0x0003C0, "Member 'UPyWidget_Diagnosis_Link_Line::HBox_Vacant' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, HBox_Speed) == 0x0003C8, "Member 'UPyWidget_Diagnosis_Link_Line::HBox_Speed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, Text_Number) == 0x0003D0, "Member 'UPyWidget_Diagnosis_Link_Line::Text_Number' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, Text_Speed) == 0x0003D8, "Member 'UPyWidget_Diagnosis_Link_Line::Text_Speed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, Img_Line) == 0x0003E0, "Member 'UPyWidget_Diagnosis_Link_Line::Img_Line' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, Overlay_Detection) == 0x0003E8, "Member 'UPyWidget_Diagnosis_Link_Line::Overlay_Detection' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Diagnosis_Link_Line, Overlay_Fault) == 0x0003F0, "Member 'UPyWidget_Diagnosis_Link_Line::Overlay_Fault' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Diagnosis_Link_Line;
 
 // PythonClass PyWidget_Network_Diagnosis.PyWidget_Network_Diagnosis
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_Network_Diagnosis final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPyWidget_DropDownList_Network*         WBP_DropDownList_Network;                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HBox_Recommend;                                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Diagnose_Status;                              // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   RichText_Recommend_Tips;                           // 0x05D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   RichText_Network;                                  // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Network_Text_Origin_Color;                         // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Network_Origin_Color;                              // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Network_Great_Color;                               // 0x0610(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Network_Normal_Color;                              // 0x0624(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Network_Bad_Color;                                 // 0x0638(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyWidget_DropDownList_Network*         WBP_DropDownList_Network;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_Recommend;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Diagnose_Status;                              // 0x05D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   RichText_Recommend_Tips;                           // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   RichText_Network;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Network_Text_Origin_Color;                         // 0x05F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Network_Origin_Color;                              // 0x0604(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Network_Great_Color;                               // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Network_Normal_Color;                              // 0x062C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Network_Bad_Color;                                 // 0x0640(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -101,25 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Network_Diagnosis">();
+		STATIC_CLASS_IMPL("PyWidget_Network_Diagnosis")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Network_Diagnosis")
 	}
 	static class UPyWidget_Network_Diagnosis* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Network_Diagnosis>();
 	}
 };
-static_assert(alignof(UPyWidget_Network_Diagnosis) == 0x000008, "Wrong alignment on UPyWidget_Network_Diagnosis");
-static_assert(sizeof(UPyWidget_Network_Diagnosis) == 0x000650, "Wrong size on UPyWidget_Network_Diagnosis");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, WBP_DropDownList_Network) == 0x0005C0, "Member 'UPyWidget_Network_Diagnosis::WBP_DropDownList_Network' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, HBox_Recommend) == 0x0005C8, "Member 'UPyWidget_Network_Diagnosis::HBox_Recommend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Text_Diagnose_Status) == 0x0005D0, "Member 'UPyWidget_Network_Diagnosis::Text_Diagnose_Status' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, RichText_Recommend_Tips) == 0x0005D8, "Member 'UPyWidget_Network_Diagnosis::RichText_Recommend_Tips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, RichText_Network) == 0x0005E0, "Member 'UPyWidget_Network_Diagnosis::RichText_Network' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Network_Text_Origin_Color) == 0x0005E8, "Member 'UPyWidget_Network_Diagnosis::Network_Text_Origin_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Network_Origin_Color) == 0x0005FC, "Member 'UPyWidget_Network_Diagnosis::Network_Origin_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Network_Great_Color) == 0x000610, "Member 'UPyWidget_Network_Diagnosis::Network_Great_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Network_Normal_Color) == 0x000624, "Member 'UPyWidget_Network_Diagnosis::Network_Normal_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Network_Diagnosis, Network_Bad_Color) == 0x000638, "Member 'UPyWidget_Network_Diagnosis::Network_Bad_Color' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Network_Diagnosis;
 
 }
 

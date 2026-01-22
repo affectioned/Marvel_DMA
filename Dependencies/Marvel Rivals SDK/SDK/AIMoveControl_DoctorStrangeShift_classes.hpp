@@ -23,15 +23,18 @@ class UAIMoveControl_DoctorStrangeShift_C final : public UAIAbilityMoveControlLo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIMoveControl_DoctorStrangeShift_C">();
+		BP_STATIC_CLASS_IMPL("AIMoveControl_DoctorStrangeShift_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIMoveControl_DoctorStrangeShift_C")
 	}
 	static class UAIMoveControl_DoctorStrangeShift_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIMoveControl_DoctorStrangeShift_C>();
 	}
 };
-static_assert(alignof(UAIMoveControl_DoctorStrangeShift_C) == 0x000008, "Wrong alignment on UAIMoveControl_DoctorStrangeShift_C");
-static_assert(sizeof(UAIMoveControl_DoctorStrangeShift_C) == 0x0000B8, "Wrong size on UAIMoveControl_DoctorStrangeShift_C");
+DUMPER7_ASSERTS_UAIMoveControl_DoctorStrangeShift_C;
 
 }
 

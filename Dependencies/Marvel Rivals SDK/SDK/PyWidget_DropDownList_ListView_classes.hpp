@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList_ListView.PyWidget_DropDownList_ListView
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_DropDownList_ListView : public UPyWidget_ModuleMainPanel
 {
 public:
-	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemChanged;                                     // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemChanged;                                     // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_ListView">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_ListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_ListView")
 	}
 	static class UPyWidget_DropDownList_ListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_ListView>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_ListView) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_ListView");
-static_assert(sizeof(UPyWidget_DropDownList_ListView) == 0x000608, "Wrong size on UPyWidget_DropDownList_ListView");
-static_assert(offsetof(UPyWidget_DropDownList_ListView, OnItemChanged) == 0x0005F8, "Member 'UPyWidget_DropDownList_ListView::OnItemChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_ListView;
 
 }
 

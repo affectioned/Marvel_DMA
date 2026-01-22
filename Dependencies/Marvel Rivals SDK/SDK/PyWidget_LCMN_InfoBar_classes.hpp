@@ -18,17 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LCMN_InfoBar.PyWidget_LCMN_InfoBar
-// 0x0870 (0x0E30 - 0x05C0)
+// 0x0868 (0x0E30 - 0x05C8)
 class UPyWidget_LCMN_InfoBar final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            ColorMRC;                                          // 0x05BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorClash;                                        // 0x05D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             IconMRC;                                           // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconClash;                                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5F8[0x8];                                      // 0x05F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            ColorMRC;                                          // 0x05C4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorClash;                                        // 0x05D8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             IconMRC;                                           // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconClash;                                         // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FButtonStyle                           TerritoryStyleMRC;                                 // 0x0600(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	struct FButtonStyle                           TerritoryStyleClash;                               // 0x0A00(0x0400)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	bool                                          EnableGroupSearchBox;                              // 0x0E00(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -39,24 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LCMN_InfoBar">();
+		STATIC_CLASS_IMPL("PyWidget_LCMN_InfoBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LCMN_InfoBar")
 	}
 	static class UPyWidget_LCMN_InfoBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LCMN_InfoBar>();
 	}
 };
-static_assert(alignof(UPyWidget_LCMN_InfoBar) == 0x000010, "Wrong alignment on UPyWidget_LCMN_InfoBar");
-static_assert(sizeof(UPyWidget_LCMN_InfoBar) == 0x000E30, "Wrong size on UPyWidget_LCMN_InfoBar");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, ColorMRC) == 0x0005BC, "Member 'UPyWidget_LCMN_InfoBar::ColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, ColorClash) == 0x0005D0, "Member 'UPyWidget_LCMN_InfoBar::ColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, IconMRC) == 0x0005E8, "Member 'UPyWidget_LCMN_InfoBar::IconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, IconClash) == 0x0005F0, "Member 'UPyWidget_LCMN_InfoBar::IconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, TerritoryStyleMRC) == 0x000600, "Member 'UPyWidget_LCMN_InfoBar::TerritoryStyleMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, TerritoryStyleClash) == 0x000A00, "Member 'UPyWidget_LCMN_InfoBar::TerritoryStyleClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, EnableGroupSearchBox) == 0x000E00, "Member 'UPyWidget_LCMN_InfoBar::EnableGroupSearchBox' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, OnMtdNumberSubmitted) == 0x000E08, "Member 'UPyWidget_LCMN_InfoBar::OnMtdNumberSubmitted' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LCMN_InfoBar, OnMtdNumberReset) == 0x000E18, "Member 'UPyWidget_LCMN_InfoBar::OnMtdNumberReset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LCMN_InfoBar;
 
 }
 

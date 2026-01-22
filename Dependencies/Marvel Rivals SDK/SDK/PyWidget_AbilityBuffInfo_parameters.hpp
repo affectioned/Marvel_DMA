@@ -25,10 +25,7 @@ public:
 	struct FWidgetStyle_ReceivedBuff              Style;                                             // 0x0000(0x0020)(Parm, NoDestructor)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ReceivedBuffs_Add) == 0x000008, "Wrong alignment on PyWidget_ReceivedBuffs_Add");
-static_assert(sizeof(PyWidget_ReceivedBuffs_Add) == 0x000028, "Wrong size on PyWidget_ReceivedBuffs_Add");
-static_assert(offsetof(PyWidget_ReceivedBuffs_Add, Style) == 0x000000, "Member 'PyWidget_ReceivedBuffs_Add::Style' has a wrong offset!");
-static_assert(offsetof(PyWidget_ReceivedBuffs_Add, ReturnValue) == 0x000020, "Member 'PyWidget_ReceivedBuffs_Add::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ReceivedBuffs_Add;
 
 // PythonFunction PyWidget_AbilityBuffInfo.PyWidget_ReceivedBuffs.Remove
 // 0x0004 (0x0004 - 0x0000)
@@ -37,9 +34,7 @@ struct PyWidget_ReceivedBuffs_Remove final
 public:
 	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ReceivedBuffs_Remove) == 0x000004, "Wrong alignment on PyWidget_ReceivedBuffs_Remove");
-static_assert(sizeof(PyWidget_ReceivedBuffs_Remove) == 0x000004, "Wrong size on PyWidget_ReceivedBuffs_Remove");
-static_assert(offsetof(PyWidget_ReceivedBuffs_Remove, Handle) == 0x000000, "Member 'PyWidget_ReceivedBuffs_Remove::Handle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ReceivedBuffs_Remove;
 
 // PythonFunction PyWidget_AbilityBuffInfo.PyWidget_ReceivedBuffs.SetBuffIconFlickering
 // 0x0008 (0x0008 - 0x0000)
@@ -49,10 +44,7 @@ public:
 	int32                                         Handle;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFlickering;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ReceivedBuffs_SetBuffIconFlickering) == 0x000004, "Wrong alignment on PyWidget_ReceivedBuffs_SetBuffIconFlickering");
-static_assert(sizeof(PyWidget_ReceivedBuffs_SetBuffIconFlickering) == 0x000008, "Wrong size on PyWidget_ReceivedBuffs_SetBuffIconFlickering");
-static_assert(offsetof(PyWidget_ReceivedBuffs_SetBuffIconFlickering, Handle) == 0x000000, "Member 'PyWidget_ReceivedBuffs_SetBuffIconFlickering::Handle' has a wrong offset!");
-static_assert(offsetof(PyWidget_ReceivedBuffs_SetBuffIconFlickering, bFlickering) == 0x000004, "Member 'PyWidget_ReceivedBuffs_SetBuffIconFlickering::bFlickering' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ReceivedBuffs_SetBuffIconFlickering;
 
 // PythonFunction PyWidget_AbilityBuffInfo.PyBuffPanel_Control.OnTagUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -62,10 +54,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffPanel_Control_OnTagUpdated) == 0x000004, "Wrong alignment on PyBuffPanel_Control_OnTagUpdated");
-static_assert(sizeof(PyBuffPanel_Control_OnTagUpdated) == 0x000010, "Wrong size on PyBuffPanel_Control_OnTagUpdated");
-static_assert(offsetof(PyBuffPanel_Control_OnTagUpdated, Tag) == 0x000000, "Member 'PyBuffPanel_Control_OnTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyBuffPanel_Control_OnTagUpdated, TagExist) == 0x00000C, "Member 'PyBuffPanel_Control_OnTagUpdated::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffPanel_Control_OnTagUpdated;
 
 }
 

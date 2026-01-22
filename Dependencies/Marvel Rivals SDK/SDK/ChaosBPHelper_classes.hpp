@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChaosRuntimeHelperBPLibrary">();
+		STATIC_CLASS_IMPL("ChaosRuntimeHelperBPLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChaosRuntimeHelperBPLibrary")
 	}
 	static class UChaosRuntimeHelperBPLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChaosRuntimeHelperBPLibrary>();
 	}
 };
-static_assert(alignof(UChaosRuntimeHelperBPLibrary) == 0x000008, "Wrong alignment on UChaosRuntimeHelperBPLibrary");
-static_assert(sizeof(UChaosRuntimeHelperBPLibrary) == 0x000030, "Wrong size on UChaosRuntimeHelperBPLibrary");
+DUMPER7_ASSERTS_UChaosRuntimeHelperBPLibrary;
 
 }
 

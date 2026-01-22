@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // PythonEnum Popup_Data.EPopupType
-// NumValues: 0x000E
+// NumValues: 0x000F
 enum class EPopupType : uint8
 {
 	Empty                                    = 0,
@@ -31,7 +31,8 @@ enum class EPopupType : uint8
 	InviteToEnterTimeSquare                  = 10,
 	Reward                                   = 11,
 	Activity147                              = 12,
-	EPopupType_MAX                           = 13,
+	PauseApply                               = 13,
+	EPopupType_MAX                           = 14,
 };
 
 }

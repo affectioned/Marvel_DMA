@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10423101_BP.Summoned_10423101_BP_C
-// 0x0020 (0x0B60 - 0x0B40)
+// 0x0020 (0x0B80 - 0x0B60)
 class ASummoned_10423101_BP_C final : public AMarvelSummonerBase
 {
 public:
-	class UStaticMeshComponent*                   BlockProjectileCollision1;                         // 0x0B40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   BlockProjectileCollision;                          // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ShiledCollision;                                   // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BlockProjectileCollision1;                         // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BlockProjectileCollision;                          // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ShiledCollision;                                   // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10423101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10423101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10423101_BP_C")
 	}
 	static class ASummoned_10423101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10423101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10423101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10423101_BP_C");
-static_assert(sizeof(ASummoned_10423101_BP_C) == 0x000B60, "Wrong size on ASummoned_10423101_BP_C");
-static_assert(offsetof(ASummoned_10423101_BP_C, BlockProjectileCollision1) == 0x000B40, "Member 'ASummoned_10423101_BP_C::BlockProjectileCollision1' has a wrong offset!");
-static_assert(offsetof(ASummoned_10423101_BP_C, BlockProjectileCollision) == 0x000B48, "Member 'ASummoned_10423101_BP_C::BlockProjectileCollision' has a wrong offset!");
-static_assert(offsetof(ASummoned_10423101_BP_C, ShiledCollision) == 0x000B50, "Member 'ASummoned_10423101_BP_C::ShiledCollision' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10423101_BP_C;
 
 }
 

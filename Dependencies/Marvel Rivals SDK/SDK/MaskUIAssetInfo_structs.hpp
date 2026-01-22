@@ -27,13 +27,7 @@ public:
 	struct FVector2D                              Offset_10_AE22973C4793FF991AE055A62AA6AD2B;        // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Scale_15_6647873E40EF32D2895F169C66E0CE28;         // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMaskUIAssetInfo) == 0x000008, "Wrong alignment on FMaskUIAssetInfo");
-static_assert(sizeof(FMaskUIAssetInfo) == 0x000068, "Wrong size on FMaskUIAssetInfo");
-static_assert(offsetof(FMaskUIAssetInfo, Image_2_BDA02B484B8F00FAFED6C0A9E2AF13EF) == 0x000000, "Member 'FMaskUIAssetInfo::Image_2_BDA02B484B8F00FAFED6C0A9E2AF13EF' has a wrong offset!");
-static_assert(offsetof(FMaskUIAssetInfo, Location_5_0D7B3F3E4CF09BEB1C4F7AAD59877E44) == 0x000030, "Member 'FMaskUIAssetInfo::Location_5_0D7B3F3E4CF09BEB1C4F7AAD59877E44' has a wrong offset!");
-static_assert(offsetof(FMaskUIAssetInfo, Size_7_F8DC71724BBDEE9789EB02A04AB52309) == 0x000040, "Member 'FMaskUIAssetInfo::Size_7_F8DC71724BBDEE9789EB02A04AB52309' has a wrong offset!");
-static_assert(offsetof(FMaskUIAssetInfo, Offset_10_AE22973C4793FF991AE055A62AA6AD2B) == 0x000050, "Member 'FMaskUIAssetInfo::Offset_10_AE22973C4793FF991AE055A62AA6AD2B' has a wrong offset!");
-static_assert(offsetof(FMaskUIAssetInfo, Scale_15_6647873E40EF32D2895F169C66E0CE28) == 0x000060, "Member 'FMaskUIAssetInfo::Scale_15_6647873E40EF32D2895F169C66E0CE28' has a wrong offset!");
+DUMPER7_ASSERTS_FMaskUIAssetInfo;
 
 }
 

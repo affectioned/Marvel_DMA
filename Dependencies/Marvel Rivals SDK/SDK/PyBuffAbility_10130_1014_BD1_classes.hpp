@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "Activity_10130_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "Activity_10130_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_1014_BD1.PyBuffAbility_10130_10141022
-// 0x0108 (0x1B38 - 0x1A30)
+// 0x0108 (0x1B50 - 0x1A48)
 class UPyBuffAbility_10130_10141022 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         ListenAbility;                                     // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A34[0x4];                                     // 0x1A34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, float>                            ModeIndexDict;                                     // 0x1A38(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            ModeIndexCostDict;                                 // 0x1A88(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, bool>                             ModeIndexSkipCalTraceDict;                         // 0x1AD8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          AutoAimingDontModFireDir;                          // 0x1B28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B29[0x3];                                     // 0x1B29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           AutoAnimStateTag;                                  // 0x1B2C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ListenAbility;                                     // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A4C[0x4];                                     // 0x1A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, float>                            ModeIndexDict;                                     // 0x1A50(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            ModeIndexCostDict;                                 // 0x1AA0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, bool>                             ModeIndexSkipCalTraceDict;                         // 0x1AF0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          AutoAimingDontModFireDir;                          // 0x1B40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B41[0x3];                                     // 0x1B41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           AutoAnimStateTag;                                  // 0x1B44(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -40,34 +40,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10141022">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10141022")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10141022")
 	}
 	static class UPyBuffAbility_10130_10141022* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10141022>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10141022) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10141022");
-static_assert(sizeof(UPyBuffAbility_10130_10141022) == 0x001B38, "Wrong size on UPyBuffAbility_10130_10141022");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, ListenAbility) == 0x001A30, "Member 'UPyBuffAbility_10130_10141022::ListenAbility' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, ModeIndexDict) == 0x001A38, "Member 'UPyBuffAbility_10130_10141022::ModeIndexDict' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, ModeIndexCostDict) == 0x001A88, "Member 'UPyBuffAbility_10130_10141022::ModeIndexCostDict' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, ModeIndexSkipCalTraceDict) == 0x001AD8, "Member 'UPyBuffAbility_10130_10141022::ModeIndexSkipCalTraceDict' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, AutoAimingDontModFireDir) == 0x001B28, "Member 'UPyBuffAbility_10130_10141022::AutoAimingDontModFireDir' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141022, AutoAnimStateTag) == 0x001B2C, "Member 'UPyBuffAbility_10130_10141022::AutoAnimStateTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10141022;
 
 // PythonClass PyBuffAbility_10130_1014_BD1.PyBuffAbility_10130_10141023
-// 0x0028 (0x1A58 - 0x1A30)
+// 0x0028 (0x1A70 - 0x1A48)
 class UPyBuffAbility_10130_10141023 : public UBuffAbility_CommonCardEffect
 {
 public:
-	int32                                         ListenAbility;                                     // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraAmmoCountHitHead;                             // 0x1A34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraAmmoCount;                                    // 0x1A38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Angle_Offset;                                      // 0x1A3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Angle_Offset_Ver;                                  // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExtraShootModeIndex;                               // 0x1A44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ListenModeIndexesHit;                              // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         ListenAbility;                                     // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraAmmoCountHitHead;                             // 0x1A4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraAmmoCount;                                    // 0x1A50(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Angle_Offset;                                      // 0x1A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Angle_Offset_Ver;                                  // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExtraShootModeIndex;                               // 0x1A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ListenModeIndexesHit;                              // 0x1A60(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -79,22 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10141023">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10141023")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10141023")
 	}
 	static class UPyBuffAbility_10130_10141023* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10141023>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10141023) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10141023");
-static_assert(sizeof(UPyBuffAbility_10130_10141023) == 0x001A58, "Wrong size on UPyBuffAbility_10130_10141023");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, ListenAbility) == 0x001A30, "Member 'UPyBuffAbility_10130_10141023::ListenAbility' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, ExtraAmmoCountHitHead) == 0x001A34, "Member 'UPyBuffAbility_10130_10141023::ExtraAmmoCountHitHead' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, ExtraAmmoCount) == 0x001A38, "Member 'UPyBuffAbility_10130_10141023::ExtraAmmoCount' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, Angle_Offset) == 0x001A3C, "Member 'UPyBuffAbility_10130_10141023::Angle_Offset' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, Angle_Offset_Ver) == 0x001A40, "Member 'UPyBuffAbility_10130_10141023::Angle_Offset_Ver' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, ExtraShootModeIndex) == 0x001A44, "Member 'UPyBuffAbility_10130_10141023::ExtraShootModeIndex' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10141023, ListenModeIndexesHit) == 0x001A48, "Member 'UPyBuffAbility_10130_10141023::ListenModeIndexesHit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10141023;
 
 }
 

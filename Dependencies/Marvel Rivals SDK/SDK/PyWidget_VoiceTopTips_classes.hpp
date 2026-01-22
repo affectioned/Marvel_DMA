@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_VoiceTopTips.PyWidget_VoiceTopTips
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_VoiceTopTips : public UPyMarvelUserWidget
 {
 public:
-	bool                                          bCustomColorPreview;                               // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          PreviewIsSelf;                                     // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewHeroID;                                     // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   PreviewHeroName;                                   // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SquadColor;                                        // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCustomColorPreview;                               // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PreviewIsSelf;                                     // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewHeroID;                                     // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   PreviewHeroName;                                   // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SquadColor;                                        // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,24 +34,23 @@ public:
 	void Construct();
 	void Destruct();
 	void OnCascadingVisibleChanged(bool bNewVisible);
+	void MarkGPM();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_VoiceTopTips">();
+		STATIC_CLASS_IMPL("PyWidget_VoiceTopTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VoiceTopTips")
 	}
 	static class UPyWidget_VoiceTopTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_VoiceTopTips>();
 	}
 };
-static_assert(alignof(UPyWidget_VoiceTopTips) == 0x000008, "Wrong alignment on UPyWidget_VoiceTopTips");
-static_assert(sizeof(UPyWidget_VoiceTopTips) == 0x0005E8, "Wrong size on UPyWidget_VoiceTopTips");
-static_assert(offsetof(UPyWidget_VoiceTopTips, bCustomColorPreview) == 0x0005BA, "Member 'UPyWidget_VoiceTopTips::bCustomColorPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopTips, PreviewIsSelf) == 0x0005BB, "Member 'UPyWidget_VoiceTopTips::PreviewIsSelf' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopTips, PreviewHeroID) == 0x0005BC, "Member 'UPyWidget_VoiceTopTips::PreviewHeroID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopTips, PreviewHeroName) == 0x0005C0, "Member 'UPyWidget_VoiceTopTips::PreviewHeroName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VoiceTopTips, SquadColor) == 0x0005D8, "Member 'UPyWidget_VoiceTopTips::SquadColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_VoiceTopTips;
 
 }
 

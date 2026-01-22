@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_101402.PyCue_Weapon_Loop_101402
-// 0x0010 (0x1420 - 0x1410)
+// 0x0010 (0x1430 - 0x1420)
 class APyCue_Weapon_Loop_101402 final : public AMarvelCueNotify_Weapon_Loop
 {
 public:
-	class UCurveFloat*                            ShowDissolveCurve1;                                // 0x1410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            ShowDissolveCurve2;                                // 0x1418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ShowDissolveCurve1;                                // 0x1420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            ShowDissolveCurve2;                                // 0x1428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_101402">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_101402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_101402")
 	}
 	static class APyCue_Weapon_Loop_101402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_101402>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_101402) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_101402");
-static_assert(sizeof(APyCue_Weapon_Loop_101402) == 0x001420, "Wrong size on APyCue_Weapon_Loop_101402");
-static_assert(offsetof(APyCue_Weapon_Loop_101402, ShowDissolveCurve1) == 0x001410, "Member 'APyCue_Weapon_Loop_101402::ShowDissolveCurve1' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_101402, ShowDissolveCurve2) == 0x001418, "Member 'APyCue_Weapon_Loop_101402::ShowDissolveCurve2' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_101402;
 
 }
 

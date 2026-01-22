@@ -25,12 +25,10 @@ struct PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap) == 0x000008, "Wrong alignment on PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap");
-static_assert(sizeof(PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap) == 0x000008, "Wrong size on PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap");
-static_assert(offsetof(PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap, InActor) == 0x000000, "Member 'PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyOverlapHandlerComponent_Ball_ApplyEffectOnActorOverlap;
 
 // PythonFunction PyAbility_ThrowBall.PySummonedComp_Ball.OnComponentHit
-// 0x0220 (0x0220 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct PySummonedComp_Ball_OnComponentHit final
 {
 public:
@@ -38,185 +36,21 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Impulse;                                           // 0x0018(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Result;                                            // 0x0030(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Result;                                            // 0x0030(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummonedComp_Ball_OnComponentHit) == 0x000008, "Wrong alignment on PySummonedComp_Ball_OnComponentHit");
-static_assert(sizeof(PySummonedComp_Ball_OnComponentHit) == 0x000220, "Wrong size on PySummonedComp_Ball_OnComponentHit");
-static_assert(offsetof(PySummonedComp_Ball_OnComponentHit, Comp) == 0x000000, "Member 'PySummonedComp_Ball_OnComponentHit::Comp' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_OnComponentHit, OtherActor) == 0x000008, "Member 'PySummonedComp_Ball_OnComponentHit::OtherActor' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_OnComponentHit, OtherComp) == 0x000010, "Member 'PySummonedComp_Ball_OnComponentHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_OnComponentHit, Impulse) == 0x000018, "Member 'PySummonedComp_Ball_OnComponentHit::Impulse' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_OnComponentHit, Result) == 0x000030, "Member 'PySummonedComp_Ball_OnComponentHit::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_Ball_OnComponentHit;
 
 // PythonFunction PyAbility_ThrowBall.PySummonedComp_Ball.MulticastOnComponentHit
-// 0x0210 (0x0210 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct PySummonedComp_Ball_MulticastOnComponentHit final
 {
 public:
-	struct FHitResult                             Result;                                            // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          bIsThrowing;                                       // 0x01F0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Impulse;                                           // 0x01F8(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Result;                                            // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          bIsThrowing;                                       // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Impulse;                                           // 0x0210(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummonedComp_Ball_MulticastOnComponentHit) == 0x000008, "Wrong alignment on PySummonedComp_Ball_MulticastOnComponentHit");
-static_assert(sizeof(PySummonedComp_Ball_MulticastOnComponentHit) == 0x000210, "Wrong size on PySummonedComp_Ball_MulticastOnComponentHit");
-static_assert(offsetof(PySummonedComp_Ball_MulticastOnComponentHit, Result) == 0x000000, "Member 'PySummonedComp_Ball_MulticastOnComponentHit::Result' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_MulticastOnComponentHit, bIsThrowing) == 0x0001F0, "Member 'PySummonedComp_Ball_MulticastOnComponentHit::bIsThrowing' has a wrong offset!");
-static_assert(offsetof(PySummonedComp_Ball_MulticastOnComponentHit, Impulse) == 0x0001F8, "Member 'PySummonedComp_Ball_MulticastOnComponentHit::Impulse' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.WhileActiveFX
-// 0x01D8 (0x01D8 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_WhileActiveFX final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Summoned_Loop_Ball_WhileActiveFX");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Summoned_Loop_Ball_WhileActiveFX");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Summoned_Loop_Ball_WhileActiveFX::Parameters' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnRemoveFX
-// 0x01D8 (0x01D8 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_OnRemoveFX final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Summoned_Loop_Ball_OnRemoveFX");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Summoned_Loop_Ball_OnRemoveFX");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Summoned_Loop_Ball_OnRemoveFX::Parameters' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Summoned_Loop_Ball_ReceiveTick");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_ReceiveTick) == 0x000004, "Wrong size on PyCue_Summoned_Loop_Ball_ReceiveTick");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnThrowStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_OnThrowStateChanged final
-{
-public:
-	bool                                          ThrowState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_OnThrowStateChanged) == 0x000001, "Wrong alignment on PyCue_Summoned_Loop_Ball_OnThrowStateChanged");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_OnThrowStateChanged) == 0x000001, "Wrong size on PyCue_Summoned_Loop_Ball_OnThrowStateChanged");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnThrowStateChanged, ThrowState) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_OnThrowStateChanged::ThrowState' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHoldingStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_OnHoldingStateChanged final
-{
-public:
-	bool                                          HoldingState;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_OnHoldingStateChanged) == 0x000001, "Wrong alignment on PyCue_Summoned_Loop_Ball_OnHoldingStateChanged");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_OnHoldingStateChanged) == 0x000001, "Wrong size on PyCue_Summoned_Loop_Ball_OnHoldingStateChanged");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnHoldingStateChanged, HoldingState) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_OnHoldingStateChanged::HoldingState' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHolderChanged
-// 0x0008 (0x0008 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_OnHolderChanged final
-{
-public:
-	class AMarvelBaseCharacter*                   NewHolder;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_OnHolderChanged) == 0x000008, "Wrong alignment on PyCue_Summoned_Loop_Ball_OnHolderChanged");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_OnHolderChanged) == 0x000008, "Wrong size on PyCue_Summoned_Loop_Ball_OnHolderChanged");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnHolderChanged, NewHolder) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_OnHolderChanged::NewHolder' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnCollision
-// 0x0210 (0x0210 - 0x0000)
-struct PyCue_Summoned_Loop_Ball_OnCollision final
-{
-public:
-	struct FHitResult                             InHitResult;                                       // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          bIsThrowing;                                       // 0x01F0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Impulse;                                           // 0x01F8(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyCue_Summoned_Loop_Ball_OnCollision) == 0x000008, "Wrong alignment on PyCue_Summoned_Loop_Ball_OnCollision");
-static_assert(sizeof(PyCue_Summoned_Loop_Ball_OnCollision) == 0x000210, "Wrong size on PyCue_Summoned_Loop_Ball_OnCollision");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnCollision, InHitResult) == 0x000000, "Member 'PyCue_Summoned_Loop_Ball_OnCollision::InHitResult' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnCollision, bIsThrowing) == 0x0001F0, "Member 'PyCue_Summoned_Loop_Ball_OnCollision::bIsThrowing' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoned_Loop_Ball_OnCollision, Impulse) == 0x0001F8, "Member 'PyCue_Summoned_Loop_Ball_OnCollision::Impulse' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageCompleted
-// 0x0010 (0x0010 - 0x0000)
-struct PyAbility_ThrowBall_NativeOnMontageCompleted final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_ThrowBall_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_ThrowBall_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_ThrowBall_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_ThrowBall_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_ThrowBall_NativeOnMontageCompleted::Tag' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageBlendOut
-// 0x0010 (0x0010 - 0x0000)
-struct PyAbility_ThrowBall_NativeOnMontageBlendOut final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_NativeOnMontageBlendOut) == 0x000008, "Wrong alignment on PyAbility_ThrowBall_NativeOnMontageBlendOut");
-static_assert(sizeof(PyAbility_ThrowBall_NativeOnMontageBlendOut) == 0x000010, "Wrong size on PyAbility_ThrowBall_NativeOnMontageBlendOut");
-static_assert(offsetof(PyAbility_ThrowBall_NativeOnMontageBlendOut, Tag) == 0x000000, "Member 'PyAbility_ThrowBall_NativeOnMontageBlendOut::Tag' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageInterrupted
-// 0x0010 (0x0010 - 0x0000)
-struct PyAbility_ThrowBall_NativeOnMontageInterrupted final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_ThrowBall_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_ThrowBall_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_ThrowBall_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_ThrowBall_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_ThrowBall_NativeOnMontageInterrupted::Tag' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageCancelled
-// 0x0010 (0x0010 - 0x0000)
-struct PyAbility_ThrowBall_NativeOnMontageCancelled final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_ThrowBall_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_ThrowBall_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_ThrowBall_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_ThrowBall_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_ThrowBall_NativeOnMontageCancelled::Tag' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.K2_TriggerGameplay
-// 0x0004 (0x0004 - 0x0000)
-struct PyAbility_ThrowBall_K2_TriggerGameplay final
-{
-public:
-	float                                         HoldTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_K2_TriggerGameplay) == 0x000004, "Wrong alignment on PyAbility_ThrowBall_K2_TriggerGameplay");
-static_assert(sizeof(PyAbility_ThrowBall_K2_TriggerGameplay) == 0x000004, "Wrong size on PyAbility_ThrowBall_K2_TriggerGameplay");
-static_assert(offsetof(PyAbility_ThrowBall_K2_TriggerGameplay, HoldTime) == 0x000000, "Member 'PyAbility_ThrowBall_K2_TriggerGameplay::HoldTime' has a wrong offset!");
-
-// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.ServerThrowEndPoint
-// 0x0020 (0x0020 - 0x0000)
-struct PyAbility_ThrowBall_ServerThrowEndPoint final
-{
-public:
-	struct FVector                                TargetPoint;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HoldTime;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyAbility_ThrowBall_ServerThrowEndPoint) == 0x000008, "Wrong alignment on PyAbility_ThrowBall_ServerThrowEndPoint");
-static_assert(sizeof(PyAbility_ThrowBall_ServerThrowEndPoint) == 0x000020, "Wrong size on PyAbility_ThrowBall_ServerThrowEndPoint");
-static_assert(offsetof(PyAbility_ThrowBall_ServerThrowEndPoint, TargetPoint) == 0x000000, "Member 'PyAbility_ThrowBall_ServerThrowEndPoint::TargetPoint' has a wrong offset!");
-static_assert(offsetof(PyAbility_ThrowBall_ServerThrowEndPoint, HoldTime) == 0x000018, "Member 'PyAbility_ThrowBall_ServerThrowEndPoint::HoldTime' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_Ball_MulticastOnComponentHit;
 
 // PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -226,10 +60,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_20050101_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Buff_20050101_WhileActiveFX");
-static_assert(sizeof(PyCue_Buff_20050101_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Buff_20050101_WhileActiveFX");
-static_assert(offsetof(PyCue_Buff_20050101_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_20050101_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_20050101_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_20050101_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_20050101_WhileActiveFX;
 
 // PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -239,10 +70,130 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_20050101_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Buff_20050101_OnRemoveFX");
-static_assert(sizeof(PyCue_Buff_20050101_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Buff_20050101_OnRemoveFX");
-static_assert(offsetof(PyCue_Buff_20050101_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_20050101_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_20050101_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_20050101_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_20050101_OnRemoveFX;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageCompleted
+// 0x0010 (0x0010 - 0x0000)
+struct PyAbility_ThrowBall_NativeOnMontageCompleted final
+{
+public:
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_NativeOnMontageCompleted;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageBlendOut
+// 0x0010 (0x0010 - 0x0000)
+struct PyAbility_ThrowBall_NativeOnMontageBlendOut final
+{
+public:
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_NativeOnMontageBlendOut;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageInterrupted
+// 0x0010 (0x0010 - 0x0000)
+struct PyAbility_ThrowBall_NativeOnMontageInterrupted final
+{
+public:
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_NativeOnMontageInterrupted;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.NativeOnMontageCancelled
+// 0x0010 (0x0010 - 0x0000)
+struct PyAbility_ThrowBall_NativeOnMontageCancelled final
+{
+public:
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_NativeOnMontageCancelled;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.K2_TriggerGameplay
+// 0x0004 (0x0004 - 0x0000)
+struct PyAbility_ThrowBall_K2_TriggerGameplay final
+{
+public:
+	float                                         HoldTime;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_K2_TriggerGameplay;
+
+// PythonFunction PyAbility_ThrowBall.PyAbility_ThrowBall.ServerThrowEndPoint
+// 0x0020 (0x0020 - 0x0000)
+struct PyAbility_ThrowBall_ServerThrowEndPoint final
+{
+public:
+	struct FVector                                TargetPoint;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HoldTime;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyAbility_ThrowBall_ServerThrowEndPoint;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.WhileActiveFX
+// 0x01D8 (0x01D8 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_WhileActiveFX final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_WhileActiveFX;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnRemoveFX
+// 0x01D8 (0x01D8 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_OnRemoveFX final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_OnRemoveFX;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_ReceiveTick;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnThrowStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_OnThrowStateChanged final
+{
+public:
+	bool                                          ThrowState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_OnThrowStateChanged;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHoldingStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_OnHoldingStateChanged final
+{
+public:
+	bool                                          HoldingState;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_OnHoldingStateChanged;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHolderChanged
+// 0x0008 (0x0008 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_OnHolderChanged final
+{
+public:
+	class AMarvelBaseCharacter*                   NewHolder;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_OnHolderChanged;
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnCollision
+// 0x0228 (0x0228 - 0x0000)
+struct PyCue_Summoned_Loop_Ball_OnCollision final
+{
+public:
+	struct FHitResult                             InHitResult;                                       // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          bIsThrowing;                                       // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Impulse;                                           // 0x0210(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyCue_Summoned_Loop_Ball_OnCollision;
 
 // PythonFunction PyAbility_ThrowBall.PyUIController_ThrowBall.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -251,9 +202,7 @@ struct PyUIController_ThrowBall_ReceiveTick final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_ThrowBall_ReceiveTick) == 0x000004, "Wrong alignment on PyUIController_ThrowBall_ReceiveTick");
-static_assert(sizeof(PyUIController_ThrowBall_ReceiveTick) == 0x000004, "Wrong size on PyUIController_ThrowBall_ReceiveTick");
-static_assert(offsetof(PyUIController_ThrowBall_ReceiveTick, DeltaTime) == 0x000000, "Member 'PyUIController_ThrowBall_ReceiveTick::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_ThrowBall_ReceiveTick;
 
 }
 

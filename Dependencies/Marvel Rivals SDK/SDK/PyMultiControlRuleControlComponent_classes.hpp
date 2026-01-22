@@ -23,15 +23,18 @@ class UPyMultiControlRuleControlComponent final : public UPyLevelRuleControlComp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMultiControlRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyMultiControlRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMultiControlRuleControlComponent")
 	}
 	static class UPyMultiControlRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMultiControlRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyMultiControlRuleControlComponent) == 0x000008, "Wrong alignment on UPyMultiControlRuleControlComponent");
-static_assert(sizeof(UPyMultiControlRuleControlComponent) == 0x000208, "Wrong size on UPyMultiControlRuleControlComponent");
+DUMPER7_ASSERTS_UPyMultiControlRuleControlComponent;
 
 }
 

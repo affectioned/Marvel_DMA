@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Buff_Loop_10319504_BP.Cue_Buff_Loop_10319504_BP_C
-// 0x0010 (0x1760 - 0x1750)
+// 0x0010 (0x1810 - 0x1800)
 class ACue_Buff_Loop_10319504_BP_C final : public ACue_Buff_10319502
 {
 public:
-	class UWC_BuffMarkerBP_C*                     WC_BuffMarkerBP;                                   // 0x1750(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWC_BuffMarkerBP_C*                     WC_BuffMarkerBP;                                   // 0x1800(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Buff_Loop_10319504_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Buff_Loop_10319504_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_Loop_10319504_BP_C")
 	}
 	static class ACue_Buff_Loop_10319504_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_Loop_10319504_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Buff_Loop_10319504_BP_C) == 0x000010, "Wrong alignment on ACue_Buff_Loop_10319504_BP_C");
-static_assert(sizeof(ACue_Buff_Loop_10319504_BP_C) == 0x001760, "Wrong size on ACue_Buff_Loop_10319504_BP_C");
-static_assert(offsetof(ACue_Buff_Loop_10319504_BP_C, WC_BuffMarkerBP) == 0x001750, "Member 'ACue_Buff_Loop_10319504_BP_C::WC_BuffMarkerBP' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Buff_Loop_10319504_BP_C;
 
 }
 

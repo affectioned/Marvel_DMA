@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_10376181.PyBuffAbility_120_10376181
-// 0x0020 (0x1390 - 0x1370)
+// 0x0020 (0x13A8 - 0x1388)
 class UPyBuffAbility_120_10376181 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<struct FScopeBuffSpecInfo>             BuffInfos;                                         // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ScopeIDs;                                          // 0x1380(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FScopeBuffSpecInfo>             BuffInfos;                                         // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 ScopeIDs;                                          // 0x1398(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -35,17 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10376181">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10376181")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10376181")
 	}
 	static class UPyBuffAbility_120_10376181* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10376181>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10376181) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10376181");
-static_assert(sizeof(UPyBuffAbility_120_10376181) == 0x001390, "Wrong size on UPyBuffAbility_120_10376181");
-static_assert(offsetof(UPyBuffAbility_120_10376181, BuffInfos) == 0x001370, "Member 'UPyBuffAbility_120_10376181::BuffInfos' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10376181, ScopeIDs) == 0x001380, "Member 'UPyBuffAbility_120_10376181::ScopeIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10376181;
 
 // PythonClass PyBuffAbility_120_10376181.PyCue_Scope_Start_10376104
 // 0x00C0 (0x0538 - 0x0478)
@@ -66,25 +67,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10376104">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10376104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10376104")
 	}
 	static class UPyCue_Scope_Start_10376104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10376104>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10376104) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10376104");
-static_assert(sizeof(UPyCue_Scope_Start_10376104) == 0x000538, "Wrong size on UPyCue_Scope_Start_10376104");
-static_assert(offsetof(UPyCue_Scope_Start_10376104, FXEnergyParamName) == 0x000478, "Member 'UPyCue_Scope_Start_10376104::FXEnergyParamName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10376104, FXEnergeCurve) == 0x000488, "Member 'UPyCue_Scope_Start_10376104::FXEnergeCurve' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10376104, CustomHitSceneNiagara) == 0x000490, "Member 'UPyCue_Scope_Start_10376104::CustomHitSceneNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10376104;
 
 // PythonClass PyBuffAbility_120_10376181.PyScope_10376104
-// 0x0010 (0x1AB0 - 0x1AA0)
+// 0x0010 (0x1B80 - 0x1B70)
 class APyScope_10376104 final : public AMarvelAbilityTargetActor_Scope
 {
 public:
-	class AActor*                                 QuoteProjectile;                                   // 0x1AA0(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B68[0x8];                                     // 0x1B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 QuoteProjectile;                                   // 0x1B70(0x0008)(BlueprintVisible, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Reset();
@@ -92,19 +94,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10376104">();
+		STATIC_CLASS_IMPL("PyScope_10376104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10376104")
 	}
 	static class APyScope_10376104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10376104>();
 	}
 };
-static_assert(alignof(APyScope_10376104) == 0x000010, "Wrong alignment on APyScope_10376104");
-static_assert(sizeof(APyScope_10376104) == 0x001AB0, "Wrong size on APyScope_10376104");
-static_assert(offsetof(APyScope_10376104, QuoteProjectile) == 0x001AA0, "Member 'APyScope_10376104::QuoteProjectile' has a wrong offset!");
+DUMPER7_ASSERTS_APyScope_10376104;
 
 // PythonClass PyBuffAbility_120_10376181.PyEffectiveComponent_10376104
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2050 - 0x2050)
 class UPyEffectiveComponent_10376104 final : public UEffectiveComponent_10376102
 {
 public:
@@ -113,18 +117,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10376104">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10376104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10376104")
 	}
 	static class UPyEffectiveComponent_10376104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10376104>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10376104) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10376104");
-static_assert(sizeof(UPyEffectiveComponent_10376104) == 0x001C70, "Wrong size on UPyEffectiveComponent_10376104");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10376104;
 
 // PythonClass PyBuffAbility_120_10376181.PyTraceComponent_10376104
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10376104 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -133,27 +140,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10376104">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10376104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10376104")
 	}
 	static class UPyTraceComponent_10376104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10376104>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10376104) == 0x000010, "Wrong alignment on UPyTraceComponent_10376104");
-static_assert(sizeof(UPyTraceComponent_10376104) == 0x002200, "Wrong size on UPyTraceComponent_10376104");
+DUMPER7_ASSERTS_UPyTraceComponent_10376104;
 
 // PythonClass PyBuffAbility_120_10376181.PyCue_Scope_HitImpact_10376104
-// 0x0038 (0x0600 - 0x05C8)
+// 0x0038 (0x0620 - 0x05E8)
 class UPyCue_Scope_HitImpact_10376104 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	class FName                                   FXScaleParamName;                                  // 0x05C8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   FXEnergyParamName;                                 // 0x05D4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            FXEnergeCurve;                                     // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            DecalScaleCurve;                                   // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            DecalEnergyCurve;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            DecalStrengthCurve;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FXScaleParamName;                                  // 0x05E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FXEnergyParamName;                                 // 0x05F4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            FXEnergeCurve;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DecalScaleCurve;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DecalEnergyCurve;                                  // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DecalStrengthCurve;                                // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	float GetDecalScale(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -162,21 +172,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10376104">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10376104")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10376104")
 	}
 	static class UPyCue_Scope_HitImpact_10376104* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10376104>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10376104) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10376104");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10376104) == 0x000600, "Wrong size on UPyCue_Scope_HitImpact_10376104");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, FXScaleParamName) == 0x0005C8, "Member 'UPyCue_Scope_HitImpact_10376104::FXScaleParamName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, FXEnergyParamName) == 0x0005D4, "Member 'UPyCue_Scope_HitImpact_10376104::FXEnergyParamName' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, FXEnergeCurve) == 0x0005E0, "Member 'UPyCue_Scope_HitImpact_10376104::FXEnergeCurve' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, DecalScaleCurve) == 0x0005E8, "Member 'UPyCue_Scope_HitImpact_10376104::DecalScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, DecalEnergyCurve) == 0x0005F0, "Member 'UPyCue_Scope_HitImpact_10376104::DecalEnergyCurve' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10376104, DecalStrengthCurve) == 0x0005F8, "Member 'UPyCue_Scope_HitImpact_10376104::DecalStrengthCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10376104;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbilitySystemGlobals.PyAbilitySystemGlobals
-// 0x0000 (0x0878 - 0x0878)
+// 0x0000 (0x0880 - 0x0880)
 class UPyAbilitySystemGlobals final : public UMarvelAbilitySystemGlobals
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilitySystemGlobals">();
+		STATIC_CLASS_IMPL("PyAbilitySystemGlobals")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilitySystemGlobals")
 	}
 	static class UPyAbilitySystemGlobals* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbilitySystemGlobals>();
 	}
 };
-static_assert(alignof(UPyAbilitySystemGlobals) == 0x000008, "Wrong alignment on UPyAbilitySystemGlobals");
-static_assert(sizeof(UPyAbilitySystemGlobals) == 0x000878, "Wrong size on UPyAbilitySystemGlobals");
+DUMPER7_ASSERTS_UPyAbilitySystemGlobals;
 
 }
 

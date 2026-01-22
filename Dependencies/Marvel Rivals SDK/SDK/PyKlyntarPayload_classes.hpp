@@ -39,20 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarPayload">();
+		STATIC_CLASS_IMPL("PyKlyntarPayload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarPayload")
 	}
 	static class APyKlyntarPayload* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarPayload>();
 	}
 };
-static_assert(alignof(APyKlyntarPayload) == 0x000010, "Wrong alignment on APyKlyntarPayload");
-static_assert(sizeof(APyKlyntarPayload) == 0x000BD0, "Wrong size on APyKlyntarPayload");
-static_assert(offsetof(APyKlyntarPayload, VehicleState) == 0x000B64, "Member 'APyKlyntarPayload::VehicleState' has a wrong offset!");
-static_assert(offsetof(APyKlyntarPayload, StateEnterProg) == 0x000B68, "Member 'APyKlyntarPayload::StateEnterProg' has a wrong offset!");
-static_assert(offsetof(APyKlyntarPayload, StateStartedProg) == 0x000B6C, "Member 'APyKlyntarPayload::StateStartedProg' has a wrong offset!");
-static_assert(offsetof(APyKlyntarPayload, FirstTraceName) == 0x000B70, "Member 'APyKlyntarPayload::FirstTraceName' has a wrong offset!");
-static_assert(offsetof(APyKlyntarPayload, AppearOnceVxDict) == 0x000B80, "Member 'APyKlyntarPayload::AppearOnceVxDict' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarPayload;
 
 }
 

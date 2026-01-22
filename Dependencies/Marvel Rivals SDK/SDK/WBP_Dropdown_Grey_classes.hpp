@@ -17,47 +17,38 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Dropdown_Grey.WBP_Dropdown_Grey_C
-// 0x0060 (0x1550 - 0x14F0)
+// 0x0060 (0x15A0 - 0x1540)
 class UWBP_Dropdown_Grey_C final : public UPyWidget_DropDownList_HeroSkin
 {
 public:
-	class UCanvasPanel*                           Canvas_DropDownList;                               // 0x14F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HorBox_Title;                                      // 0x14F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_AddTextture;                                   // 0x1500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Arrow;                                         // 0x1508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_RightTop;                                      // 0x1510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tips;                                          // 0x1518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Icon;                                      // 0x1520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_ListView;                                  // 0x1528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_MainBtn;                                   // 0x1530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     Overlay_Texture;                                   // 0x1538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Icon;                                      // 0x1540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Title;                                        // 0x1548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_DropDownList;                               // 0x1540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HorBox_Title;                                      // 0x1548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_AddTextture;                                   // 0x1550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Arrow;                                         // 0x1558(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_RightTop;                                      // 0x1560(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tips;                                          // 0x1568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Icon;                                      // 0x1570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_ListView;                                  // 0x1578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_MainBtn;                                   // 0x1580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     Overlay_Texture;                                   // 0x1588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Icon;                                      // 0x1590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Title;                                        // 0x1598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Dropdown_Grey_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Dropdown_Grey_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Dropdown_Grey_C")
 	}
 	static class UWBP_Dropdown_Grey_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Dropdown_Grey_C>();
 	}
 };
-static_assert(alignof(UWBP_Dropdown_Grey_C) == 0x000010, "Wrong alignment on UWBP_Dropdown_Grey_C");
-static_assert(sizeof(UWBP_Dropdown_Grey_C) == 0x001550, "Wrong size on UWBP_Dropdown_Grey_C");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Canvas_DropDownList) == 0x0014F0, "Member 'UWBP_Dropdown_Grey_C::Canvas_DropDownList' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, HorBox_Title) == 0x0014F8, "Member 'UWBP_Dropdown_Grey_C::HorBox_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Img_AddTextture) == 0x001500, "Member 'UWBP_Dropdown_Grey_C::Img_AddTextture' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Img_Arrow) == 0x001508, "Member 'UWBP_Dropdown_Grey_C::Img_Arrow' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Img_RightTop) == 0x001510, "Member 'UWBP_Dropdown_Grey_C::Img_RightTop' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Img_Tips) == 0x001518, "Member 'UWBP_Dropdown_Grey_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Overlay_Icon) == 0x001520, "Member 'UWBP_Dropdown_Grey_C::Overlay_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Overlay_ListView) == 0x001528, "Member 'UWBP_Dropdown_Grey_C::Overlay_ListView' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Overlay_MainBtn) == 0x001530, "Member 'UWBP_Dropdown_Grey_C::Overlay_MainBtn' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Overlay_Texture) == 0x001538, "Member 'UWBP_Dropdown_Grey_C::Overlay_Texture' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, SizeBox_Icon) == 0x001540, "Member 'UWBP_Dropdown_Grey_C::SizeBox_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Dropdown_Grey_C, Text_Title) == 0x001548, "Member 'UWBP_Dropdown_Grey_C::Text_Title' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Dropdown_Grey_C;
 
 }
 

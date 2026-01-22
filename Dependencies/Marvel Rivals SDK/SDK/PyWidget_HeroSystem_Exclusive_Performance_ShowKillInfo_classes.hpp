@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo.PyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_ShowKillInfo;
 
 }
 

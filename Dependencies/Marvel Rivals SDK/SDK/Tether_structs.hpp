@@ -59,14 +59,7 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TileUVs;                                           // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBasicMeshGenerationOptions) == 0x000004, "Wrong alignment on FBasicMeshGenerationOptions");
-static_assert(sizeof(FBasicMeshGenerationOptions) == 0x000014, "Wrong size on FBasicMeshGenerationOptions");
-static_assert(offsetof(FBasicMeshGenerationOptions, NumSides) == 0x000000, "Member 'FBasicMeshGenerationOptions::NumSides' has a wrong offset!");
-static_assert(offsetof(FBasicMeshGenerationOptions, bOverrideCableWidth) == 0x000004, "Member 'FBasicMeshGenerationOptions::bOverrideCableWidth' has a wrong offset!");
-static_assert(offsetof(FBasicMeshGenerationOptions, CableMeshWidth) == 0x000008, "Member 'FBasicMeshGenerationOptions::CableMeshWidth' has a wrong offset!");
-static_assert(offsetof(FBasicMeshGenerationOptions, bAutoTile) == 0x00000C, "Member 'FBasicMeshGenerationOptions::bAutoTile' has a wrong offset!");
-static_assert(offsetof(FBasicMeshGenerationOptions, bSnapToNearestFullTile) == 0x00000D, "Member 'FBasicMeshGenerationOptions::bSnapToNearestFullTile' has a wrong offset!");
-static_assert(offsetof(FBasicMeshGenerationOptions, TileUVs) == 0x000010, "Member 'FBasicMeshGenerationOptions::TileUVs' has a wrong offset!");
+DUMPER7_ASSERTS_FBasicMeshGenerationOptions;
 
 // ScriptStruct Tether.BasicMeshProperties
 // 0x001C (0x001C - 0x0000)
@@ -77,11 +70,7 @@ public:
 	float                                         CurveSimplificationMultiplier;                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBasicMeshGenerationOptions            MeshGenerationOptions;                             // 0x0008(0x0014)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBasicMeshProperties) == 0x000004, "Wrong alignment on FBasicMeshProperties");
-static_assert(sizeof(FBasicMeshProperties) == 0x00001C, "Wrong size on FBasicMeshProperties");
-static_assert(offsetof(FBasicMeshProperties, LoopResolution) == 0x000000, "Member 'FBasicMeshProperties::LoopResolution' has a wrong offset!");
-static_assert(offsetof(FBasicMeshProperties, CurveSimplificationMultiplier) == 0x000004, "Member 'FBasicMeshProperties::CurveSimplificationMultiplier' has a wrong offset!");
-static_assert(offsetof(FBasicMeshProperties, MeshGenerationOptions) == 0x000008, "Member 'FBasicMeshProperties::MeshGenerationOptions' has a wrong offset!");
+DUMPER7_ASSERTS_FBasicMeshProperties;
 
 // ScriptStruct Tether.CableMeshGenerationPointInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -95,14 +84,7 @@ public:
 	float                                         SegmentLength;                                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SegmentLineDistance;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCableMeshGenerationPointInfo) == 0x000004, "Wrong alignment on FCableMeshGenerationPointInfo");
-static_assert(sizeof(FCableMeshGenerationPointInfo) == 0x000018, "Wrong size on FCableMeshGenerationPointInfo");
-static_assert(offsetof(FCableMeshGenerationPointInfo, DistanceToNearestContactPoint) == 0x000000, "Member 'FCableMeshGenerationPointInfo::DistanceToNearestContactPoint' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPointInfo, Looseness) == 0x000004, "Member 'FCableMeshGenerationPointInfo::Looseness' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPointInfo, DistanceToSegmentLine) == 0x000008, "Member 'FCableMeshGenerationPointInfo::DistanceToSegmentLine' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPointInfo, SlackRatio) == 0x00000C, "Member 'FCableMeshGenerationPointInfo::SlackRatio' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPointInfo, SegmentLength) == 0x000010, "Member 'FCableMeshGenerationPointInfo::SegmentLength' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPointInfo, SegmentLineDistance) == 0x000014, "Member 'FCableMeshGenerationPointInfo::SegmentLineDistance' has a wrong offset!");
+DUMPER7_ASSERTS_FCableMeshGenerationPointInfo;
 
 // ScriptStruct Tether.CableMeshGenerationPoint
 // 0x0060 (0x0060 - 0x0000)
@@ -115,11 +97,7 @@ public:
 	struct FCableMeshGenerationPointInfo          Info;                                              // 0x0040(0x0018)(NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCableMeshGenerationPoint) == 0x000010, "Wrong alignment on FCableMeshGenerationPoint");
-static_assert(sizeof(FCableMeshGenerationPoint) == 0x000060, "Wrong size on FCableMeshGenerationPoint");
-static_assert(offsetof(FCableMeshGenerationPoint, Location) == 0x000000, "Member 'FCableMeshGenerationPoint::Location' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPoint, Rotation) == 0x000020, "Member 'FCableMeshGenerationPoint::Rotation' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationPoint, Info) == 0x000040, "Member 'FCableMeshGenerationPoint::Info' has a wrong offset!");
+DUMPER7_ASSERTS_FCableMeshGenerationPoint;
 
 // ScriptStruct Tether.CableMeshGenerationCurveDescription
 // 0x0040 (0x0040 - 0x0000)
@@ -130,11 +108,7 @@ public:
 	struct FVector                                StartTangent;                                      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EndTangent;                                        // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCableMeshGenerationCurveDescription) == 0x000008, "Wrong alignment on FCableMeshGenerationCurveDescription");
-static_assert(sizeof(FCableMeshGenerationCurveDescription) == 0x000040, "Wrong size on FCableMeshGenerationCurveDescription");
-static_assert(offsetof(FCableMeshGenerationCurveDescription, Points) == 0x000000, "Member 'FCableMeshGenerationCurveDescription::Points' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationCurveDescription, StartTangent) == 0x000010, "Member 'FCableMeshGenerationCurveDescription::StartTangent' has a wrong offset!");
-static_assert(offsetof(FCableMeshGenerationCurveDescription, EndTangent) == 0x000028, "Member 'FCableMeshGenerationCurveDescription::EndTangent' has a wrong offset!");
+DUMPER7_ASSERTS_FCableMeshGenerationCurveDescription;
 
 // ScriptStruct Tether.SplineSegmentInfo
 // 0x0060 (0x0060 - 0x0000)
@@ -146,12 +120,7 @@ public:
 	struct FVector                                EndLocation;                                       // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EndArriveTangent;                                  // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSplineSegmentInfo) == 0x000008, "Wrong alignment on FSplineSegmentInfo");
-static_assert(sizeof(FSplineSegmentInfo) == 0x000060, "Wrong size on FSplineSegmentInfo");
-static_assert(offsetof(FSplineSegmentInfo, StartLocation) == 0x000000, "Member 'FSplineSegmentInfo::StartLocation' has a wrong offset!");
-static_assert(offsetof(FSplineSegmentInfo, StartLeaveTangent) == 0x000018, "Member 'FSplineSegmentInfo::StartLeaveTangent' has a wrong offset!");
-static_assert(offsetof(FSplineSegmentInfo, EndLocation) == 0x000030, "Member 'FSplineSegmentInfo::EndLocation' has a wrong offset!");
-static_assert(offsetof(FSplineSegmentInfo, EndArriveTangent) == 0x000048, "Member 'FSplineSegmentInfo::EndArriveTangent' has a wrong offset!");
+DUMPER7_ASSERTS_FSplineSegmentInfo;
 
 // ScriptStruct Tether.TetherCableSimulationOptions
 // 0x0034 (0x0034 - 0x0000)
@@ -173,20 +142,7 @@ public:
 	float                                         ParticleDistanceScale;                             // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ConstraintsEaseInTime;                             // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherCableSimulationOptions) == 0x000004, "Wrong alignment on FTetherCableSimulationOptions");
-static_assert(sizeof(FTetherCableSimulationOptions) == 0x000034, "Wrong size on FTetherCableSimulationOptions");
-static_assert(offsetof(FTetherCableSimulationOptions, SimulationDuration) == 0x000000, "Member 'FTetherCableSimulationOptions::SimulationDuration' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, SubstepTime) == 0x000004, "Member 'FTetherCableSimulationOptions::SubstepTime' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, bEnableStiffness) == 0x000008, "Member 'FTetherCableSimulationOptions::bEnableStiffness' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, StiffnessSolverIterations) == 0x00000C, "Member 'FTetherCableSimulationOptions::StiffnessSolverIterations' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, Drag) == 0x000010, "Member 'FTetherCableSimulationOptions::Drag' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, bEnableCollision) == 0x000014, "Member 'FTetherCableSimulationOptions::bEnableCollision' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, bEnableSelfCollision) == 0x000015, "Member 'FTetherCableSimulationOptions::bEnableSelfCollision' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, CollisionProfile) == 0x000018, "Member 'FTetherCableSimulationOptions::CollisionProfile' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, CollisionWidthScale) == 0x000024, "Member 'FTetherCableSimulationOptions::CollisionWidthScale' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, CollisionFriction) == 0x000028, "Member 'FTetherCableSimulationOptions::CollisionFriction' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, ParticleDistanceScale) == 0x00002C, "Member 'FTetherCableSimulationOptions::ParticleDistanceScale' has a wrong offset!");
-static_assert(offsetof(FTetherCableSimulationOptions, ConstraintsEaseInTime) == 0x000030, "Member 'FTetherCableSimulationOptions::ConstraintsEaseInTime' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherCableSimulationOptions;
 
 // ScriptStruct Tether.CustomMeshProperties
 // 0x0040 (0x0040 - 0x0000)
@@ -199,12 +155,7 @@ public:
 	bool                                          bFitToCableWidth;                                  // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCustomMeshProperties) == 0x000008, "Wrong alignment on FCustomMeshProperties");
-static_assert(sizeof(FCustomMeshProperties) == 0x000040, "Wrong size on FCustomMeshProperties");
-static_assert(offsetof(FCustomMeshProperties, SourceMeshReference) == 0x000000, "Member 'FCustomMeshProperties::SourceMeshReference' has a wrong offset!");
-static_assert(offsetof(FCustomMeshProperties, OffsetRotation) == 0x000030, "Member 'FCustomMeshProperties::OffsetRotation' has a wrong offset!");
-static_assert(offsetof(FCustomMeshProperties, NumInstances) == 0x000034, "Member 'FCustomMeshProperties::NumInstances' has a wrong offset!");
-static_assert(offsetof(FCustomMeshProperties, bFitToCableWidth) == 0x000038, "Member 'FCustomMeshProperties::bFitToCableWidth' has a wrong offset!");
+DUMPER7_ASSERTS_FCustomMeshProperties;
 
 // ScriptStruct Tether.TetherCableProperties
 // 0x00A8 (0x00A8 - 0x0000)
@@ -219,14 +170,7 @@ public:
 	struct FCustomMeshProperties                  CustomMeshProperties;                              // 0x0058(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<class UMaterialInterface*>             Materials;                                         // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherCableProperties) == 0x000008, "Wrong alignment on FTetherCableProperties");
-static_assert(sizeof(FTetherCableProperties) == 0x0000A8, "Wrong size on FTetherCableProperties");
-static_assert(offsetof(FTetherCableProperties, CableWidth) == 0x000000, "Member 'FTetherCableProperties::CableWidth' has a wrong offset!");
-static_assert(offsetof(FTetherCableProperties, SimulationOptions) == 0x000004, "Member 'FTetherCableProperties::SimulationOptions' has a wrong offset!");
-static_assert(offsetof(FTetherCableProperties, MeshType) == 0x000038, "Member 'FTetherCableProperties::MeshType' has a wrong offset!");
-static_assert(offsetof(FTetherCableProperties, BasicMeshProperties) == 0x00003C, "Member 'FTetherCableProperties::BasicMeshProperties' has a wrong offset!");
-static_assert(offsetof(FTetherCableProperties, CustomMeshProperties) == 0x000058, "Member 'FTetherCableProperties::CustomMeshProperties' has a wrong offset!");
-static_assert(offsetof(FTetherCableProperties, Materials) == 0x000098, "Member 'FTetherCableProperties::Materials' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherCableProperties;
 
 // ScriptStruct Tether.TetherSegmentSimulationOptions
 // 0x0002 (0x0002 - 0x0000)
@@ -236,10 +180,7 @@ public:
 	bool                                          bFixedAnchorPoint;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseSplineTangents;                                // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherSegmentSimulationOptions) == 0x000001, "Wrong alignment on FTetherSegmentSimulationOptions");
-static_assert(sizeof(FTetherSegmentSimulationOptions) == 0x000002, "Wrong size on FTetherSegmentSimulationOptions");
-static_assert(offsetof(FTetherSegmentSimulationOptions, bFixedAnchorPoint) == 0x000000, "Member 'FTetherSegmentSimulationOptions::bFixedAnchorPoint' has a wrong offset!");
-static_assert(offsetof(FTetherSegmentSimulationOptions, bUseSplineTangents) == 0x000001, "Member 'FTetherSegmentSimulationOptions::bUseSplineTangents' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSegmentSimulationOptions;
 
 // ScriptStruct Tether.TetherSimulationInstanceResources
 // 0x0028 (0x0028 - 0x0000)
@@ -253,11 +194,7 @@ public:
 	class UBodySetup*                             BodySetup;                                         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x10];                                      // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTetherSimulationInstanceResources) == 0x000008, "Wrong alignment on FTetherSimulationInstanceResources");
-static_assert(sizeof(FTetherSimulationInstanceResources) == 0x000028, "Wrong size on FTetherSimulationInstanceResources");
-static_assert(offsetof(FTetherSimulationInstanceResources, bIsInitialized) == 0x000000, "Member 'FTetherSimulationInstanceResources::bIsInitialized' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationInstanceResources, World) == 0x000004, "Member 'FTetherSimulationInstanceResources::World' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationInstanceResources, BodySetup) == 0x000010, "Member 'FTetherSimulationInstanceResources::BodySetup' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSimulationInstanceResources;
 
 // ScriptStruct Tether.TetherSimulationSegmentSeries
 // 0x0008 (0x0008 - 0x0000)
@@ -266,8 +203,7 @@ struct alignas(0x08) FTetherSimulationSegmentSeries
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTetherSimulationSegmentSeries) == 0x000008, "Wrong alignment on FTetherSimulationSegmentSeries");
-static_assert(sizeof(FTetherSimulationSegmentSeries) == 0x000008, "Wrong size on FTetherSimulationSegmentSeries");
+DUMPER7_ASSERTS_FTetherSimulationSegmentSeries;
 
 // ScriptStruct Tether.TetherSimulationParticle
 // 0x0038 (0x0038 - 0x0000)
@@ -280,12 +216,7 @@ public:
 	struct FVector                                Position;                                          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OldPosition;                                       // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherSimulationParticle) == 0x000008, "Wrong alignment on FTetherSimulationParticle");
-static_assert(sizeof(FTetherSimulationParticle) == 0x000038, "Wrong size on FTetherSimulationParticle");
-static_assert(offsetof(FTetherSimulationParticle, ParticleUniqueId) == 0x000000, "Member 'FTetherSimulationParticle::ParticleUniqueId' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParticle, bFree) == 0x000004, "Member 'FTetherSimulationParticle::bFree' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParticle, Position) == 0x000008, "Member 'FTetherSimulationParticle::Position' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParticle, OldPosition) == 0x000020, "Member 'FTetherSimulationParticle::OldPosition' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSimulationParticle;
 
 // ScriptStruct Tether.TetherSimulationSegment
 // 0x0088 (0x0088 - 0x0000)
@@ -302,14 +233,7 @@ public:
 	bool                                          bInvalidated;                                      // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTetherSimulationSegment) == 0x000008, "Wrong alignment on FTetherSimulationSegment");
-static_assert(sizeof(FTetherSimulationSegment) == 0x000088, "Wrong size on FTetherSimulationSegment");
-static_assert(offsetof(FTetherSimulationSegment, SegmentUniqueId) == 0x000000, "Member 'FTetherSimulationSegment::SegmentUniqueId' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationSegment, SplineSegmentInfo) == 0x000008, "Member 'FTetherSimulationSegment::SplineSegmentInfo' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationSegment, Length) == 0x000068, "Member 'FTetherSimulationSegment::Length' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationSegment, Particles) == 0x000070, "Member 'FTetherSimulationSegment::Particles' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationSegment, SimulationTime) == 0x000080, "Member 'FTetherSimulationSegment::SimulationTime' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationSegment, bInvalidated) == 0x000084, "Member 'FTetherSimulationSegment::bInvalidated' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSimulationSegment;
 
 // ScriptStruct Tether.TetherSimulationModel
 // 0x0078 (0x0080 - 0x0008)
@@ -320,10 +244,7 @@ public:
 	struct FTransform                             SimulationBaseWorldTransform;                      // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTetherSimulationSegment>       Segments;                                          // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherSimulationModel) == 0x000010, "Wrong alignment on FTetherSimulationModel");
-static_assert(sizeof(FTetherSimulationModel) == 0x000080, "Wrong size on FTetherSimulationModel");
-static_assert(offsetof(FTetherSimulationModel, SimulationBaseWorldTransform) == 0x000010, "Member 'FTetherSimulationModel::SimulationBaseWorldTransform' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationModel, Segments) == 0x000070, "Member 'FTetherSimulationModel::Segments' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSimulationModel;
 
 // ScriptStruct Tether.TetherSegmentSimulationParams
 // 0x0003 (0x0003 - 0x0000)
@@ -333,13 +254,10 @@ public:
 	bool                                          bShouldSimulateSegment;                            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTetherSegmentSimulationOptions        SimulationOptions;                                 // 0x0001(0x0002)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTetherSegmentSimulationParams) == 0x000001, "Wrong alignment on FTetherSegmentSimulationParams");
-static_assert(sizeof(FTetherSegmentSimulationParams) == 0x000003, "Wrong size on FTetherSegmentSimulationParams");
-static_assert(offsetof(FTetherSegmentSimulationParams, bShouldSimulateSegment) == 0x000000, "Member 'FTetherSegmentSimulationParams::bShouldSimulateSegment' has a wrong offset!");
-static_assert(offsetof(FTetherSegmentSimulationParams, SimulationOptions) == 0x000001, "Member 'FTetherSegmentSimulationParams::SimulationOptions' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSegmentSimulationParams;
 
 // ScriptStruct Tether.TetherSimulationParams
-// 0x01A0 (0x01A0 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct alignas(0x10) FTetherSimulationParams final
 {
 public:
@@ -354,18 +272,9 @@ public:
 	struct FTetherCableSimulationOptions          SimulationOptions;                                 // 0x0040(0x0034)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTetherSegmentSimulationParams> SegmentParams;                                     // 0x0078(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_88[0x118];                                     // 0x0088(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_88[0x128];                                     // 0x0088(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTetherSimulationParams) == 0x000010, "Wrong alignment on FTetherSimulationParams");
-static_assert(sizeof(FTetherSimulationParams) == 0x0001A0, "Wrong size on FTetherSimulationParams");
-static_assert(offsetof(FTetherSimulationParams, World) == 0x000000, "Member 'FTetherSimulationParams::World' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, SimulationName) == 0x000008, "Member 'FTetherSimulationParams::SimulationName' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, TimingMode) == 0x000018, "Member 'FTetherSimulationParams::TimingMode' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, CollisionWidth) == 0x00001C, "Member 'FTetherSimulationParams::CollisionWidth' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, DesiredParticleDistance) == 0x000020, "Member 'FTetherSimulationParams::DesiredParticleDistance' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, CableForce) == 0x000028, "Member 'FTetherSimulationParams::CableForce' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, SimulationOptions) == 0x000040, "Member 'FTetherSimulationParams::SimulationOptions' has a wrong offset!");
-static_assert(offsetof(FTetherSimulationParams, SegmentParams) == 0x000078, "Member 'FTetherSimulationParams::SegmentParams' has a wrong offset!");
+DUMPER7_ASSERTS_FTetherSimulationParams;
 
 // ScriptStruct Tether.TetherProxySimulationSegmentSeries
 // 0x0010 (0x0018 - 0x0008)
@@ -374,8 +283,7 @@ struct FTetherProxySimulationSegmentSeries final : public FTetherSimulationSegme
 public:
 	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTetherProxySimulationSegmentSeries) == 0x000008, "Wrong alignment on FTetherProxySimulationSegmentSeries");
-static_assert(sizeof(FTetherProxySimulationSegmentSeries) == 0x000018, "Wrong size on FTetherProxySimulationSegmentSeries");
+DUMPER7_ASSERTS_FTetherProxySimulationSegmentSeries;
 
 }
 

@@ -23,9 +23,7 @@ struct PyAbility_101467_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101467_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101467_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101467_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101467_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101467_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_101467_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101467_K2_OnEndAbility;
 
 // PythonFunction PyAbility_10130_101467.PyAbility_101467.OnSummonedBegin
 // 0x0060 (0x0060 - 0x0000)
@@ -37,12 +35,7 @@ public:
 	class AActor*                                 Summoned;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FMarvelTargetActorGenerateInfo         GenerateInfo;                                      // 0x0018(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_101467_OnSummonedBegin) == 0x000008, "Wrong alignment on PyAbility_101467_OnSummonedBegin");
-static_assert(sizeof(PyAbility_101467_OnSummonedBegin) == 0x000060, "Wrong size on PyAbility_101467_OnSummonedBegin");
-static_assert(offsetof(PyAbility_101467_OnSummonedBegin, SourceActor) == 0x000000, "Member 'PyAbility_101467_OnSummonedBegin::SourceActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_101467_OnSummonedBegin, SourceAbility) == 0x000008, "Member 'PyAbility_101467_OnSummonedBegin::SourceAbility' has a wrong offset!");
-static_assert(offsetof(PyAbility_101467_OnSummonedBegin, Summoned) == 0x000010, "Member 'PyAbility_101467_OnSummonedBegin::Summoned' has a wrong offset!");
-static_assert(offsetof(PyAbility_101467_OnSummonedBegin, GenerateInfo) == 0x000018, "Member 'PyAbility_101467_OnSummonedBegin::GenerateInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101467_OnSummonedBegin;
 
 }
 

@@ -23,15 +23,18 @@ class UUIC_LevelTransitionBP_C final : public UPyUIC_LevelTransition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIC_LevelTransitionBP_C">();
+		BP_STATIC_CLASS_IMPL("UIC_LevelTransitionBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIC_LevelTransitionBP_C")
 	}
 	static class UUIC_LevelTransitionBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIC_LevelTransitionBP_C>();
 	}
 };
-static_assert(alignof(UUIC_LevelTransitionBP_C) == 0x000008, "Wrong alignment on UUIC_LevelTransitionBP_C");
-static_assert(sizeof(UUIC_LevelTransitionBP_C) == 0x000030, "Wrong size on UUIC_LevelTransitionBP_C");
+DUMPER7_ASSERTS_UUIC_LevelTransitionBP_C;
 
 }
 

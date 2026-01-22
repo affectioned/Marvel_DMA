@@ -17,43 +17,36 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mall_Details_PendantTips.WBP_Mall_Details_PendantTips_C
-// 0x0050 (0x0648 - 0x05F8)
+// 0x0050 (0x0650 - 0x0600)
 class UWBP_Mall_Details_PendantTips_C final : public UPyWidget_Accessory_CompetitivePoint_Info
 {
 public:
-	class UMarvelButton*                          Btn_Price;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Btn_Icon_Dark_C*            Btn_Rule;                                          // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Icon;                                          // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Right_Bg;                                      // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidgetBP_PlayerHead;                            // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_82;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_MaxNum;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Num;                                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Price;                                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Slash;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Price;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Btn_Icon_Dark_C*            Btn_Rule;                                          // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Icon;                                          // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Right_Bg;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidgetBP_PlayerHead;                            // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_82;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_MaxNum;                                       // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Num;                                          // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Price;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Slash;                                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mall_Details_PendantTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mall_Details_PendantTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mall_Details_PendantTips_C")
 	}
 	static class UWBP_Mall_Details_PendantTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mall_Details_PendantTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Mall_Details_PendantTips_C) == 0x000008, "Wrong alignment on UWBP_Mall_Details_PendantTips_C");
-static_assert(sizeof(UWBP_Mall_Details_PendantTips_C) == 0x000648, "Wrong size on UWBP_Mall_Details_PendantTips_C");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Btn_Price) == 0x0005F8, "Member 'UWBP_Mall_Details_PendantTips_C::Btn_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Btn_Rule) == 0x000600, "Member 'UWBP_Mall_Details_PendantTips_C::Btn_Rule' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Img_Icon) == 0x000608, "Member 'UWBP_Mall_Details_PendantTips_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Img_Right_Bg) == 0x000610, "Member 'UWBP_Mall_Details_PendantTips_C::Img_Right_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, KeyWidgetBP_PlayerHead) == 0x000618, "Member 'UWBP_Mall_Details_PendantTips_C::KeyWidgetBP_PlayerHead' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, MarvelImage_82) == 0x000620, "Member 'UWBP_Mall_Details_PendantTips_C::MarvelImage_82' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Text_MaxNum) == 0x000628, "Member 'UWBP_Mall_Details_PendantTips_C::Text_MaxNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Text_Num) == 0x000630, "Member 'UWBP_Mall_Details_PendantTips_C::Text_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Text_Price) == 0x000638, "Member 'UWBP_Mall_Details_PendantTips_C::Text_Price' has a wrong offset!");
-static_assert(offsetof(UWBP_Mall_Details_PendantTips_C, Text_Slash) == 0x000640, "Member 'UWBP_Mall_Details_PendantTips_C::Text_Slash' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mall_Details_PendantTips_C;
 
 }
 

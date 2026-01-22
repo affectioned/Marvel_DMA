@@ -23,15 +23,18 @@ class UBTT_SVONTryLeaveCurPosition_BP_C final : public UBTT_PySVONTryLeaveCurPos
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_SVONTryLeaveCurPosition_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_SVONTryLeaveCurPosition_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_SVONTryLeaveCurPosition_BP_C")
 	}
 	static class UBTT_SVONTryLeaveCurPosition_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_SVONTryLeaveCurPosition_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_SVONTryLeaveCurPosition_BP_C) == 0x000008, "Wrong alignment on UBTT_SVONTryLeaveCurPosition_BP_C");
-static_assert(sizeof(UBTT_SVONTryLeaveCurPosition_BP_C) == 0x0000D8, "Wrong size on UBTT_SVONTryLeaveCurPosition_BP_C");
+DUMPER7_ASSERTS_UBTT_SVONTryLeaveCurPosition_BP_C;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleTipsPanel.WBP_BattleTipsPanel_C
-// 0x0000 (0x05B0 - 0x05B0)
+// 0x0000 (0x05B8 - 0x05B8)
 class UWBP_BattleTipsPanel_C final : public UPyWidget_BattleTipsPanel
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleTipsPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleTipsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleTipsPanel_C")
 	}
 	static class UWBP_BattleTipsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleTipsPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleTipsPanel_C) == 0x000008, "Wrong alignment on UWBP_BattleTipsPanel_C");
-static_assert(sizeof(UWBP_BattleTipsPanel_C) == 0x0005B0, "Wrong size on UWBP_BattleTipsPanel_C");
+DUMPER7_ASSERTS_UWBP_BattleTipsPanel_C;
 
 }
 

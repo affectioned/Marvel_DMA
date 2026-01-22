@@ -21,9 +21,7 @@ struct PyGroupMoveActor_GetRestTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyGroupMoveActor_GetRestTime) == 0x000004, "Wrong alignment on PyGroupMoveActor_GetRestTime");
-static_assert(sizeof(PyGroupMoveActor_GetRestTime) == 0x000004, "Wrong size on PyGroupMoveActor_GetRestTime");
-static_assert(offsetof(PyGroupMoveActor_GetRestTime, ReturnValue) == 0x000000, "Member 'PyGroupMoveActor_GetRestTime::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyGroupMoveActor_GetRestTime;
 
 }
 

@@ -21,9 +21,7 @@ struct BeAfterSpecialBuff_GetConditionHeroIDsAny final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BeAfterSpecialBuff_GetConditionHeroIDsAny) == 0x000008, "Wrong alignment on BeAfterSpecialBuff_GetConditionHeroIDsAny");
-static_assert(sizeof(BeAfterSpecialBuff_GetConditionHeroIDsAny) == 0x000050, "Wrong size on BeAfterSpecialBuff_GetConditionHeroIDsAny");
-static_assert(offsetof(BeAfterSpecialBuff_GetConditionHeroIDsAny, ReturnValue) == 0x000000, "Member 'BeAfterSpecialBuff_GetConditionHeroIDsAny::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BeAfterSpecialBuff_GetConditionHeroIDsAny;
 
 // PythonFunction DataBaseConditions.BeInSpecialBuff.GetConditionHeroIDsAll
 // 0x0050 (0x0050 - 0x0000)
@@ -32,9 +30,7 @@ struct BeInSpecialBuff_GetConditionHeroIDsAll final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BeInSpecialBuff_GetConditionHeroIDsAll) == 0x000008, "Wrong alignment on BeInSpecialBuff_GetConditionHeroIDsAll");
-static_assert(sizeof(BeInSpecialBuff_GetConditionHeroIDsAll) == 0x000050, "Wrong size on BeInSpecialBuff_GetConditionHeroIDsAll");
-static_assert(offsetof(BeInSpecialBuff_GetConditionHeroIDsAll, ReturnValue) == 0x000000, "Member 'BeInSpecialBuff_GetConditionHeroIDsAll::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BeInSpecialBuff_GetConditionHeroIDsAll;
 
 // PythonFunction DataBaseConditions.CheckBeInChange.GetConditionHeroIDsAll
 // 0x0050 (0x0050 - 0x0000)
@@ -43,9 +39,7 @@ struct CheckBeInChange_GetConditionHeroIDsAll final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(CheckBeInChange_GetConditionHeroIDsAll) == 0x000008, "Wrong alignment on CheckBeInChange_GetConditionHeroIDsAll");
-static_assert(sizeof(CheckBeInChange_GetConditionHeroIDsAll) == 0x000050, "Wrong size on CheckBeInChange_GetConditionHeroIDsAll");
-static_assert(offsetof(CheckBeInChange_GetConditionHeroIDsAll, ReturnValue) == 0x000000, "Member 'CheckBeInChange_GetConditionHeroIDsAll::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_CheckBeInChange_GetConditionHeroIDsAll;
 
 // PythonFunction DataBaseConditions.BeWithOtherHero.GetConditionHeroIDsAll
 // 0x0050 (0x0050 - 0x0000)
@@ -54,9 +48,7 @@ struct BeWithOtherHero_GetConditionHeroIDsAll final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BeWithOtherHero_GetConditionHeroIDsAll) == 0x000008, "Wrong alignment on BeWithOtherHero_GetConditionHeroIDsAll");
-static_assert(sizeof(BeWithOtherHero_GetConditionHeroIDsAll) == 0x000050, "Wrong size on BeWithOtherHero_GetConditionHeroIDsAll");
-static_assert(offsetof(BeWithOtherHero_GetConditionHeroIDsAll, ReturnValue) == 0x000000, "Member 'BeWithOtherHero_GetConditionHeroIDsAll::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BeWithOtherHero_GetConditionHeroIDsAll;
 
 // PythonFunction DataBaseConditions.BeWithOtherHero.GetConditionHeroIDsAny
 // 0x0050 (0x0050 - 0x0000)
@@ -65,9 +57,7 @@ struct BeWithOtherHero_GetConditionHeroIDsAny final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BeWithOtherHero_GetConditionHeroIDsAny) == 0x000008, "Wrong alignment on BeWithOtherHero_GetConditionHeroIDsAny");
-static_assert(sizeof(BeWithOtherHero_GetConditionHeroIDsAny) == 0x000050, "Wrong size on BeWithOtherHero_GetConditionHeroIDsAny");
-static_assert(offsetof(BeWithOtherHero_GetConditionHeroIDsAny, ReturnValue) == 0x000000, "Member 'BeWithOtherHero_GetConditionHeroIDsAny::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BeWithOtherHero_GetConditionHeroIDsAny;
 
 // PythonFunction DataBaseConditions.MapCondition.GetConditionMapIDsAll
 // 0x0050 (0x0050 - 0x0000)
@@ -76,9 +66,7 @@ struct MapCondition_GetConditionMapIDsAll final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(MapCondition_GetConditionMapIDsAll) == 0x000008, "Wrong alignment on MapCondition_GetConditionMapIDsAll");
-static_assert(sizeof(MapCondition_GetConditionMapIDsAll) == 0x000050, "Wrong size on MapCondition_GetConditionMapIDsAll");
-static_assert(offsetof(MapCondition_GetConditionMapIDsAll, ReturnValue) == 0x000000, "Member 'MapCondition_GetConditionMapIDsAll::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MapCondition_GetConditionMapIDsAll;
 
 }
 

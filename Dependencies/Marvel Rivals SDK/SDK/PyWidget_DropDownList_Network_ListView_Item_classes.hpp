@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_DropDownList_Network_ListView_Item.Pywidget_DropDownList_Network_Item
-// 0x0058 (0x07D0 - 0x0778)
+// 0x0058 (0x0828 - 0x07D0)
 class UPywidget_DropDownList_Network_Item final : public UPyWidget_DropDownList_ListView_Item
 {
 public:
-	struct FSlateColor                            WeakSignalTextColor;                               // 0x0778(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MediumSignalTextColor;                             // 0x078C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            StrongSignalTextColor;                             // 0x07A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            AllPortTextColor;                                  // 0x07B4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Recommend;                                     // 0x07C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WeakSignalTextColor;                               // 0x07D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MediumSignalTextColor;                             // 0x07E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            StrongSignalTextColor;                             // 0x07F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            AllPortTextColor;                                  // 0x080C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Recommend;                                     // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Pywidget_DropDownList_Network_Item">();
+		STATIC_CLASS_IMPL("Pywidget_DropDownList_Network_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pywidget_DropDownList_Network_Item")
 	}
 	static class UPywidget_DropDownList_Network_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPywidget_DropDownList_Network_Item>();
 	}
 };
-static_assert(alignof(UPywidget_DropDownList_Network_Item) == 0x000008, "Wrong alignment on UPywidget_DropDownList_Network_Item");
-static_assert(sizeof(UPywidget_DropDownList_Network_Item) == 0x0007D0, "Wrong size on UPywidget_DropDownList_Network_Item");
-static_assert(offsetof(UPywidget_DropDownList_Network_Item, WeakSignalTextColor) == 0x000778, "Member 'UPywidget_DropDownList_Network_Item::WeakSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPywidget_DropDownList_Network_Item, MediumSignalTextColor) == 0x00078C, "Member 'UPywidget_DropDownList_Network_Item::MediumSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPywidget_DropDownList_Network_Item, StrongSignalTextColor) == 0x0007A0, "Member 'UPywidget_DropDownList_Network_Item::StrongSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPywidget_DropDownList_Network_Item, AllPortTextColor) == 0x0007B4, "Member 'UPywidget_DropDownList_Network_Item::AllPortTextColor' has a wrong offset!");
-static_assert(offsetof(UPywidget_DropDownList_Network_Item, Img_Recommend) == 0x0007C8, "Member 'UPywidget_DropDownList_Network_Item::Img_Recommend' has a wrong offset!");
+DUMPER7_ASSERTS_UPywidget_DropDownList_Network_Item;
 
 }
 

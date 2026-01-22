@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyGameMode_Base">();
+		STATIC_CLASS_IMPL("BTS_PyGameMode_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyGameMode_Base")
 	}
 	static class UBTS_PyGameMode_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyGameMode_Base>();
 	}
 };
-static_assert(alignof(UBTS_PyGameMode_Base) == 0x000008, "Wrong alignment on UBTS_PyGameMode_Base");
-static_assert(sizeof(UBTS_PyGameMode_Base) == 0x000198, "Wrong size on UBTS_PyGameMode_Base");
-static_assert(offsetof(UBTS_PyGameMode_Base, OutFrontier) == 0x0000A8, "Member 'UBTS_PyGameMode_Base::OutFrontier' has a wrong offset!");
-static_assert(offsetof(UBTS_PyGameMode_Base, OutNextFrontier) == 0x0000D8, "Member 'UBTS_PyGameMode_Base::OutNextFrontier' has a wrong offset!");
-static_assert(offsetof(UBTS_PyGameMode_Base, OutDifficultyMode) == 0x000108, "Member 'UBTS_PyGameMode_Base::OutDifficultyMode' has a wrong offset!");
-static_assert(offsetof(UBTS_PyGameMode_Base, OutDifficultyLevel) == 0x000138, "Member 'UBTS_PyGameMode_Base::OutDifficultyLevel' has a wrong offset!");
-static_assert(offsetof(UBTS_PyGameMode_Base, InOutHasArriveFrontier) == 0x000168, "Member 'UBTS_PyGameMode_Base::InOutHasArriveFrontier' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyGameMode_Base;
 
 }
 

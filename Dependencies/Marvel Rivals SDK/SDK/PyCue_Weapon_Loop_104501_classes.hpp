@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_104501.PyCue_Weapon_Loop_104501
-// 0x0040 (0x1450 - 0x1410)
+// 0x0040 (0x1460 - 0x1420)
 class APyCue_Weapon_Loop_104501 final : public AMarvelCueNotify_Weapon_Loop
 {
 public:
-	int32                                         MaterialIndex;                                     // 0x1410(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1414[0x4];                                     // 0x1414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 MaterialParamName;                                 // 0x1418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              Bind1024;                                          // 0x1428(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              Unbind1024;                                        // 0x1438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         MaterialIndex;                                     // 0x1420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1424[0x4];                                     // 0x1424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 MaterialParamName;                                 // 0x1428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              Bind1024;                                          // 0x1438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              Unbind1024;                                        // 0x1448(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_104501">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_104501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_104501")
 	}
 	static class APyCue_Weapon_Loop_104501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_104501>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_104501) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_104501");
-static_assert(sizeof(APyCue_Weapon_Loop_104501) == 0x001450, "Wrong size on APyCue_Weapon_Loop_104501");
-static_assert(offsetof(APyCue_Weapon_Loop_104501, MaterialIndex) == 0x001410, "Member 'APyCue_Weapon_Loop_104501::MaterialIndex' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104501, MaterialParamName) == 0x001418, "Member 'APyCue_Weapon_Loop_104501::MaterialParamName' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104501, Bind1024) == 0x001428, "Member 'APyCue_Weapon_Loop_104501::Bind1024' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104501, Unbind1024) == 0x001438, "Member 'APyCue_Weapon_Loop_104501::Unbind1024' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_104501;
 
 }
 

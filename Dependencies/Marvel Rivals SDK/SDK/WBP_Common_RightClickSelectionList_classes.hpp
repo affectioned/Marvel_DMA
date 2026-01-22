@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_RightClickSelectionList.WBP_Common_RightClickSelectionList_C
-// 0x0038 (0x0658 - 0x0620)
+// 0x0038 (0x0660 - 0x0628)
 class UWBP_Common_RightClickSelectionList_C final : public UPyWidget_SelectionMenu
 {
 public:
-	class UMarvelButton*                          Btn_Below;                                         // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line2;                                         // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_List_Dark;                                 // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VBox_List;                                         // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VBox_List_Dark;                                    // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_RightClickSelectionTitle_C* WBP_Title_Discord;                                 // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_RightClickSelectionTitle_C* WBP_Title_Platforms;                               // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Below;                                         // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line2;                                         // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_List_Dark;                                 // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_List;                                         // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_List_Dark;                                    // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_RightClickSelectionTitle_C* WBP_Title_Discord;                                 // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_RightClickSelectionTitle_C* WBP_Title_Platforms;                               // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_RightClickSelectionList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_RightClickSelectionList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_RightClickSelectionList_C")
 	}
 	static class UWBP_Common_RightClickSelectionList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_RightClickSelectionList_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_RightClickSelectionList_C) == 0x000008, "Wrong alignment on UWBP_Common_RightClickSelectionList_C");
-static_assert(sizeof(UWBP_Common_RightClickSelectionList_C) == 0x000658, "Wrong size on UWBP_Common_RightClickSelectionList_C");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, Btn_Below) == 0x000620, "Member 'UWBP_Common_RightClickSelectionList_C::Btn_Below' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, Img_Line2) == 0x000628, "Member 'UWBP_Common_RightClickSelectionList_C::Img_Line2' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, Overlay_List_Dark) == 0x000630, "Member 'UWBP_Common_RightClickSelectionList_C::Overlay_List_Dark' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, VBox_List) == 0x000638, "Member 'UWBP_Common_RightClickSelectionList_C::VBox_List' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, VBox_List_Dark) == 0x000640, "Member 'UWBP_Common_RightClickSelectionList_C::VBox_List_Dark' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, WBP_Title_Discord) == 0x000648, "Member 'UWBP_Common_RightClickSelectionList_C::WBP_Title_Discord' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_RightClickSelectionList_C, WBP_Title_Platforms) == 0x000650, "Member 'UWBP_Common_RightClickSelectionList_C::WBP_Title_Platforms' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_RightClickSelectionList_C;
 
 }
 

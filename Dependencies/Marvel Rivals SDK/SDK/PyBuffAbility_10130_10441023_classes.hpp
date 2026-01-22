@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyBuffAbility_10130_10441022_classes.hpp"
 #include "Hero_1044_structs.hpp"
+#include "PyBuffAbility_10130_10441022_classes.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441023.PyBuffAbility_10130_10445190
-// 0x0010 (0x1A50 - 0x1A40)
+// 0x0010 (0x1A68 - 0x1A58)
 class UPyBuffAbility_10130_10445190 : public UPyBuffAbility_10130_10444194
 {
 public:
-	float                                         ChargeDeltaTime;                                   // 0x1A3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChargeDeltaAngle;                                  // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x1A44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ChargeTimeDefault;                                 // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeDeltaTime;                                   // 0x1A54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeDeltaAngle;                                  // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ChargeTimeDefault;                                 // 0x1A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -36,27 +36,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10445190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10445190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10445190")
 	}
 	static class UPyBuffAbility_10130_10445190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10445190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10445190) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10445190");
-static_assert(sizeof(UPyBuffAbility_10130_10445190) == 0x001A50, "Wrong size on UPyBuffAbility_10130_10445190");
-static_assert(offsetof(UPyBuffAbility_10130_10445190, ChargeDeltaTime) == 0x001A3C, "Member 'UPyBuffAbility_10130_10445190::ChargeDeltaTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445190, ChargeDeltaAngle) == 0x001A40, "Member 'UPyBuffAbility_10130_10445190::ChargeDeltaAngle' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445190, ScopeID) == 0x001A44, "Member 'UPyBuffAbility_10130_10445190::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10445190, ChargeTimeDefault) == 0x001A48, "Member 'UPyBuffAbility_10130_10445190::ChargeTimeDefault' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10445190;
 
 // PythonClass PyBuffAbility_10130_10441023.PyCue_Scope_Loop_10130_10445190
-// 0x0020 (0x1100 - 0x10E0)
+// 0x0020 (0x1110 - 0x10F0)
 class APyCue_Scope_Loop_10130_10445190 final : public AMarvelCueNotify_Scope
 {
 public:
-	class FString                                 ShapeParamName;                                    // 0x10E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReleaseAudioID;                                    // 0x10F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ShapeParamName;                                    // 0x10F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReleaseAudioID;                                    // 0x1100(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -65,17 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Loop_10130_10445190">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Loop_10130_10445190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Loop_10130_10445190")
 	}
 	static class APyCue_Scope_Loop_10130_10445190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_Loop_10130_10445190>();
 	}
 };
-static_assert(alignof(APyCue_Scope_Loop_10130_10445190) == 0x000010, "Wrong alignment on APyCue_Scope_Loop_10130_10445190");
-static_assert(sizeof(APyCue_Scope_Loop_10130_10445190) == 0x001100, "Wrong size on APyCue_Scope_Loop_10130_10445190");
-static_assert(offsetof(APyCue_Scope_Loop_10130_10445190, ShapeParamName) == 0x0010E0, "Member 'APyCue_Scope_Loop_10130_10445190::ShapeParamName' has a wrong offset!");
-static_assert(offsetof(APyCue_Scope_Loop_10130_10445190, ReleaseAudioID) == 0x0010F0, "Member 'APyCue_Scope_Loop_10130_10445190::ReleaseAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Scope_Loop_10130_10445190;
 
 }
 

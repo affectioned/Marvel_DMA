@@ -10,41 +10,41 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MarvelLevel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GodRay.BP_GodRay_C
-// 0x00A0 (0x0790 - 0x06F0)
+// 0x00A0 (0x07A0 - 0x0700)
 class ABP_GodRay_C final : public AEnvironmentStaticActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBillboardComponent*                    UISprite;                                          // 0x06F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   GodRayMesh;                                        // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Sun;                                               // 0x0708(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	double                                        Width;                                             // 0x0710(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Length;                                            // 0x0718(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MID;                                               // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0728(0x0010)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Brightness;                                        // 0x0738(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        FadeDistance;                                      // 0x0740(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Animated;                                          // 0x0748(0x0001)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_749[0x3];                                      // 0x0749(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRandomStream                          RandomTime;                                        // 0x074C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor)
-	bool                                          SpotLight;                                         // 0x0754(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseSun;                                            // 0x0755(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Changed;                                           // 0x0756(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_757[0x1];                                      // 0x0757(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ActorScale;                                        // 0x0758(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SetActorScale;                                     // 0x0770(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        BoundScale;                                        // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MaxDistance;                                       // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0700(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBillboardComponent*                    UISprite;                                          // 0x0708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   GodRayMesh;                                        // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Sun;                                               // 0x0718(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	double                                        Width;                                             // 0x0720(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Length;                                            // 0x0728(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID;                                               // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0738(0x0010)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Brightness;                                        // 0x0748(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        FadeDistance;                                      // 0x0750(0x0008)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Animated;                                          // 0x0758(0x0001)(Edit, ConstParm, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_759[0x3];                                      // 0x0759(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRandomStream                          RandomTime;                                        // 0x075C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor)
+	bool                                          SpotLight;                                         // 0x0764(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseSun;                                            // 0x0765(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Changed;                                           // 0x0766(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_767[0x1];                                      // 0x0767(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ActorScale;                                        // 0x0768(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SetActorScale;                                     // 0x0780(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_781[0x7];                                      // 0x0781(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        BoundScale;                                        // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MaxDistance;                                       // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -57,34 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GodRay_C">();
+		BP_STATIC_CLASS_IMPL("BP_GodRay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GodRay_C")
 	}
 	static class ABP_GodRay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_GodRay_C>();
 	}
 };
-static_assert(alignof(ABP_GodRay_C) == 0x000010, "Wrong alignment on ABP_GodRay_C");
-static_assert(sizeof(ABP_GodRay_C) == 0x000790, "Wrong size on ABP_GodRay_C");
-static_assert(offsetof(ABP_GodRay_C, UberGraphFrame) == 0x0006F0, "Member 'ABP_GodRay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, UISprite) == 0x0006F8, "Member 'ABP_GodRay_C::UISprite' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, GodRayMesh) == 0x000700, "Member 'ABP_GodRay_C::GodRayMesh' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Sun) == 0x000708, "Member 'ABP_GodRay_C::Sun' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Width) == 0x000710, "Member 'ABP_GodRay_C::Width' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Length) == 0x000718, "Member 'ABP_GodRay_C::Length' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, MID) == 0x000720, "Member 'ABP_GodRay_C::MID' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Color) == 0x000728, "Member 'ABP_GodRay_C::Color' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Brightness) == 0x000738, "Member 'ABP_GodRay_C::Brightness' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, FadeDistance) == 0x000740, "Member 'ABP_GodRay_C::FadeDistance' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Animated) == 0x000748, "Member 'ABP_GodRay_C::Animated' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, RandomTime) == 0x00074C, "Member 'ABP_GodRay_C::RandomTime' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, SpotLight) == 0x000754, "Member 'ABP_GodRay_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, UseSun) == 0x000755, "Member 'ABP_GodRay_C::UseSun' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, Changed) == 0x000756, "Member 'ABP_GodRay_C::Changed' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, ActorScale) == 0x000758, "Member 'ABP_GodRay_C::ActorScale' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, SetActorScale) == 0x000770, "Member 'ABP_GodRay_C::SetActorScale' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, BoundScale) == 0x000778, "Member 'ABP_GodRay_C::BoundScale' has a wrong offset!");
-static_assert(offsetof(ABP_GodRay_C, MaxDistance) == 0x000780, "Member 'ABP_GodRay_C::MaxDistance' has a wrong offset!");
+DUMPER7_ASSERTS_ABP_GodRay_C;
 
 }
 

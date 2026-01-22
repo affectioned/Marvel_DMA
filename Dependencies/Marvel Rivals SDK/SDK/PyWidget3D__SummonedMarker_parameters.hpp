@@ -23,9 +23,7 @@ struct PyWidget3D_SummonedMarker_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_PreConstruct) == 0x000001, "Wrong alignment on PyWidget3D_SummonedMarker_PreConstruct");
-static_assert(sizeof(PyWidget3D_SummonedMarker_PreConstruct) == 0x000001, "Wrong size on PyWidget3D_SummonedMarker_PreConstruct");
-static_assert(offsetof(PyWidget3D_SummonedMarker_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget3D_SummonedMarker_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_PreConstruct;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.SetViewerSide
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget3D_SummonedMarker_SetViewerSide final
 public:
 	EClientPlayerViewSide                         ViewSide;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_SetViewerSide) == 0x000001, "Wrong alignment on PyWidget3D_SummonedMarker_SetViewerSide");
-static_assert(sizeof(PyWidget3D_SummonedMarker_SetViewerSide) == 0x000001, "Wrong size on PyWidget3D_SummonedMarker_SetViewerSide");
-static_assert(offsetof(PyWidget3D_SummonedMarker_SetViewerSide, ViewSide) == 0x000000, "Member 'PyWidget3D_SummonedMarker_SetViewerSide::ViewSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_SetViewerSide;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget3D_SummonedMarker_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget3D_SummonedMarker_ShouldBeVisible");
-static_assert(sizeof(PyWidget3D_SummonedMarker_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget3D_SummonedMarker_ShouldBeVisible");
-static_assert(offsetof(PyWidget3D_SummonedMarker_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget3D_SummonedMarker_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_ShouldBeVisible;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget3D_SummonedMarker_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget3D_SummonedMarker_OnAnimationStarted");
-static_assert(sizeof(PyWidget3D_SummonedMarker_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget3D_SummonedMarker_OnAnimationStarted");
-static_assert(offsetof(PyWidget3D_SummonedMarker_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget3D_SummonedMarker_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_OnAnimationStarted;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -67,31 +59,25 @@ struct PyWidget3D_SummonedMarker_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget3D_SummonedMarker_OnAnimationFinished");
-static_assert(sizeof(PyWidget3D_SummonedMarker_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget3D_SummonedMarker_OnAnimationFinished");
-static_assert(offsetof(PyWidget3D_SummonedMarker_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget3D_SummonedMarker_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_OnAnimationFinished;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.StartHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWidget3D_SummonedMarker_StartHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_StartHandlerSignal) == 0x000008, "Wrong alignment on PyWidget3D_SummonedMarker_StartHandlerSignal");
-static_assert(sizeof(PyWidget3D_SummonedMarker_StartHandlerSignal) == 0x000218, "Wrong size on PyWidget3D_SummonedMarker_StartHandlerSignal");
-static_assert(offsetof(PyWidget3D_SummonedMarker_StartHandlerSignal, Result) == 0x000000, "Member 'PyWidget3D_SummonedMarker_StartHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_StartHandlerSignal;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.EndHandlerSignal
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyWidget3D_SummonedMarker_EndHandlerSignal final
 {
 public:
-	struct FSignalResult                          Result;                                            // 0x0000(0x0218)(Parm)
+	struct FSignalResult                          Result;                                            // 0x0000(0x0230)(Parm)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_EndHandlerSignal) == 0x000008, "Wrong alignment on PyWidget3D_SummonedMarker_EndHandlerSignal");
-static_assert(sizeof(PyWidget3D_SummonedMarker_EndHandlerSignal) == 0x000218, "Wrong size on PyWidget3D_SummonedMarker_EndHandlerSignal");
-static_assert(offsetof(PyWidget3D_SummonedMarker_EndHandlerSignal, Result) == 0x000000, "Member 'PyWidget3D_SummonedMarker_EndHandlerSignal::Result' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_EndHandlerSignal;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.VisibleInThisViewrSide
 // 0x0002 (0x0002 - 0x0000)
@@ -101,10 +87,7 @@ public:
 	EClientPlayerViewSide                         ViewSide;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_VisibleInThisViewrSide) == 0x000001, "Wrong alignment on PyWidget3D_SummonedMarker_VisibleInThisViewrSide");
-static_assert(sizeof(PyWidget3D_SummonedMarker_VisibleInThisViewrSide) == 0x000002, "Wrong size on PyWidget3D_SummonedMarker_VisibleInThisViewrSide");
-static_assert(offsetof(PyWidget3D_SummonedMarker_VisibleInThisViewrSide, ViewSide) == 0x000000, "Member 'PyWidget3D_SummonedMarker_VisibleInThisViewrSide::ViewSide' has a wrong offset!");
-static_assert(offsetof(PyWidget3D_SummonedMarker_VisibleInThisViewrSide, ReturnValue) == 0x000001, "Member 'PyWidget3D_SummonedMarker_VisibleInThisViewrSide::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_VisibleInThisViewrSide;
 
 // PythonFunction PyWidget3D__SummonedMarker.PyWidget3D_SummonedMarker.IsValidAllyHero
 // 0x0018 (0x0018 - 0x0000)
@@ -116,11 +99,7 @@ public:
 	class AActor*                                 InActor;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_SummonedMarker_IsValidAllyHero) == 0x000008, "Wrong alignment on PyWidget3D_SummonedMarker_IsValidAllyHero");
-static_assert(sizeof(PyWidget3D_SummonedMarker_IsValidAllyHero) == 0x000018, "Wrong size on PyWidget3D_SummonedMarker_IsValidAllyHero");
-static_assert(offsetof(PyWidget3D_SummonedMarker_IsValidAllyHero, ViewSide) == 0x000000, "Member 'PyWidget3D_SummonedMarker_IsValidAllyHero::ViewSide' has a wrong offset!");
-static_assert(offsetof(PyWidget3D_SummonedMarker_IsValidAllyHero, InActor) == 0x000008, "Member 'PyWidget3D_SummonedMarker_IsValidAllyHero::InActor' has a wrong offset!");
-static_assert(offsetof(PyWidget3D_SummonedMarker_IsValidAllyHero, ReturnValue) == 0x000010, "Member 'PyWidget3D_SummonedMarker_IsValidAllyHero::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_SummonedMarker_IsValidAllyHero;
 
 }
 

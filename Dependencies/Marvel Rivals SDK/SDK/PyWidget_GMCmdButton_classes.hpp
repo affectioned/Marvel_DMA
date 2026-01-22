@@ -18,25 +18,25 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GMCmdButton.PyWidget_GMCmdButton
-// 0x00A0 (0x0610 - 0x0570)
+// 0x00A0 (0x0618 - 0x0578)
 class UPyWidget_GMCmdButton : public UWidget_ListEntry
 {
 public:
-	TMulticastInlineDelegate<void(const class FString& Cmd, const class FString& CmdName)> OnCmdClicked; // 0x0570(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UObject* ItemObject)> OnCmdRightClicked;                     // 0x0580(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCmdCollectChanged;                               // 0x0590(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& GroupName, const class FString& CmdName, const class FString& CmdStr)> OnCmdEditor; // 0x05A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                GMCmd_Btn;                                         // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Cmd;                                               // 0x05B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BtnName;                                           // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Description;                                       // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            TipsWidget;                                        // 0x05E8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BtnColor;                                          // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowSelectMenu;                                  // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowSort;                                        // 0x0601(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCollect;                                         // 0x0602(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_603[0x5];                                      // 0x0603(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                ItemObject;                                        // 0x0608(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& Cmd, const class FString& CmdName)> OnCmdClicked; // 0x0578(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UObject* ItemObject)> OnCmdRightClicked;                     // 0x0588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCmdCollectChanged;                               // 0x0598(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& GroupName, const class FString& CmdName, const class FString& CmdStr)> OnCmdEditor; // 0x05A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                GMCmd_Btn;                                         // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Cmd;                                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BtnName;                                           // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Description;                                       // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            TipsWidget;                                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BtnColor;                                          // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowSelectMenu;                                  // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowSort;                                        // 0x0609(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCollect;                                         // 0x060A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60B[0x5];                                      // 0x060B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                ItemObject;                                        // 0x0610(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,29 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmdButton">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmdButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmdButton")
 	}
 	static class UPyWidget_GMCmdButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmdButton>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmdButton) == 0x000008, "Wrong alignment on UPyWidget_GMCmdButton");
-static_assert(sizeof(UPyWidget_GMCmdButton) == 0x000610, "Wrong size on UPyWidget_GMCmdButton");
-static_assert(offsetof(UPyWidget_GMCmdButton, OnCmdClicked) == 0x000570, "Member 'UPyWidget_GMCmdButton::OnCmdClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, OnCmdRightClicked) == 0x000580, "Member 'UPyWidget_GMCmdButton::OnCmdRightClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, OnCmdCollectChanged) == 0x000590, "Member 'UPyWidget_GMCmdButton::OnCmdCollectChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, OnCmdEditor) == 0x0005A0, "Member 'UPyWidget_GMCmdButton::OnCmdEditor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, GMCmd_Btn) == 0x0005B0, "Member 'UPyWidget_GMCmdButton::GMCmd_Btn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, Cmd) == 0x0005B8, "Member 'UPyWidget_GMCmdButton::Cmd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, BtnName) == 0x0005C8, "Member 'UPyWidget_GMCmdButton::BtnName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, Description) == 0x0005D8, "Member 'UPyWidget_GMCmdButton::Description' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, TipsWidget) == 0x0005E8, "Member 'UPyWidget_GMCmdButton::TipsWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, BtnColor) == 0x0005F0, "Member 'UPyWidget_GMCmdButton::BtnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, IsShowSelectMenu) == 0x000600, "Member 'UPyWidget_GMCmdButton::IsShowSelectMenu' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, IsShowSort) == 0x000601, "Member 'UPyWidget_GMCmdButton::IsShowSort' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, IsCollect) == 0x000602, "Member 'UPyWidget_GMCmdButton::IsCollect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdButton, ItemObject) == 0x000608, "Member 'UPyWidget_GMCmdButton::ItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmdButton;
 
 }
 

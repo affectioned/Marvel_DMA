@@ -23,15 +23,18 @@ class UBTS_IsInBattle_BP_C final : public UBTS_IsInBattle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_IsInBattle_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_IsInBattle_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_IsInBattle_BP_C")
 	}
 	static class UBTS_IsInBattle_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_IsInBattle_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_IsInBattle_BP_C) == 0x000008, "Wrong alignment on UBTS_IsInBattle_BP_C");
-static_assert(sizeof(UBTS_IsInBattle_BP_C) == 0x000170, "Wrong size on UBTS_IsInBattle_BP_C");
+DUMPER7_ASSERTS_UBTS_IsInBattle_BP_C;
 
 }
 

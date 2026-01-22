@@ -24,11 +24,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                ResultAsset;                                       // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(DataflowBlueprintLibrary_EvaluateTerminalNodeByName) == 0x000008, "Wrong alignment on DataflowBlueprintLibrary_EvaluateTerminalNodeByName");
-static_assert(sizeof(DataflowBlueprintLibrary_EvaluateTerminalNodeByName) == 0x000020, "Wrong size on DataflowBlueprintLibrary_EvaluateTerminalNodeByName");
-static_assert(offsetof(DataflowBlueprintLibrary_EvaluateTerminalNodeByName, Dataflow) == 0x000000, "Member 'DataflowBlueprintLibrary_EvaluateTerminalNodeByName::Dataflow' has a wrong offset!");
-static_assert(offsetof(DataflowBlueprintLibrary_EvaluateTerminalNodeByName, TerminalNodeName) == 0x000008, "Member 'DataflowBlueprintLibrary_EvaluateTerminalNodeByName::TerminalNodeName' has a wrong offset!");
-static_assert(offsetof(DataflowBlueprintLibrary_EvaluateTerminalNodeByName, ResultAsset) == 0x000018, "Member 'DataflowBlueprintLibrary_EvaluateTerminalNodeByName::ResultAsset' has a wrong offset!");
+DUMPER7_ASSERTS_DataflowBlueprintLibrary_EvaluateTerminalNodeByName;
 
 }
 

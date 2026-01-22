@@ -21,9 +21,7 @@ struct PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap) == 0x000008, "Wrong alignment on PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap");
-static_assert(sizeof(PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap) == 0x000008, "Wrong size on PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap");
-static_assert(offsetof(PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap, InActor) == 0x000000, "Member 'PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelOverlapHandlerComponent_ApplyEffectOnActorOverlap;
 
 }
 

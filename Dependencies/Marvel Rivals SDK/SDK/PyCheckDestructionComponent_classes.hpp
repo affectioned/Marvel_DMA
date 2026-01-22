@@ -33,20 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCheckDestructionComponent">();
+		STATIC_CLASS_IMPL("PyCheckDestructionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCheckDestructionComponent")
 	}
 	static class UPyCheckDestructionComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCheckDestructionComponent>();
 	}
 };
-static_assert(alignof(UPyCheckDestructionComponent) == 0x000008, "Wrong alignment on UPyCheckDestructionComponent");
-static_assert(sizeof(UPyCheckDestructionComponent) == 0x000148, "Wrong size on UPyCheckDestructionComponent");
-static_assert(offsetof(UPyCheckDestructionComponent, IsRelatedToPresetDes) == 0x000108, "Member 'UPyCheckDestructionComponent::IsRelatedToPresetDes' has a wrong offset!");
-static_assert(offsetof(UPyCheckDestructionComponent, PresetDes) == 0x000110, "Member 'UPyCheckDestructionComponent::PresetDes' has a wrong offset!");
-static_assert(offsetof(UPyCheckDestructionComponent, ValidStage) == 0x000140, "Member 'UPyCheckDestructionComponent::ValidStage' has a wrong offset!");
-static_assert(offsetof(UPyCheckDestructionComponent, IsRelatedToBlastMesh) == 0x000141, "Member 'UPyCheckDestructionComponent::IsRelatedToBlastMesh' has a wrong offset!");
-static_assert(offsetof(UPyCheckDestructionComponent, TolerateHeight) == 0x000144, "Member 'UPyCheckDestructionComponent::TolerateHeight' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCheckDestructionComponent;
 
 }
 

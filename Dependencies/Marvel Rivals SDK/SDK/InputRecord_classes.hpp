@@ -50,6 +50,8 @@ public:
 	void Client_ToggleRotationCorrection(bool bInRotationCorrection);
 	void DiscardAILocationCorrection(bool bDiscard);
 	float GetCurrentLockDeltaTime();
+	class FString GetCurrentRecordPath();
+	TArray<class FName> GetIgnoreKeyNames();
 	bool HasFrameCounterData();
 	bool IsUseFrameCounter();
 	void LoadRecord(const class FString& RecordName, EInputRecordPath RecordPath);
@@ -78,6 +80,9 @@ public:
 	void ToggleLoopPlay(bool InLoopPlay);
 	void ToggleRotationCorrection(bool bInCorrection);
 
+	int64 GetCurrentFrameCounter() const;
+	EInputRecordPath GetCurrentRecordPathEnum() const;
+	int64 GetFrameCounter() const;
 	class FString GetRecordFileName() const;
 	float GetRecordMaxTime() const;
 	float GetRecordPlayTime() const;
@@ -101,23 +106,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputRecordComponent">();
+		STATIC_CLASS_IMPL("InputRecordComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputRecordComponent")
 	}
 	static class UInputRecordComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputRecordComponent>();
 	}
 };
-static_assert(alignof(UInputRecordComponent) == 0x000010, "Wrong alignment on UInputRecordComponent");
-static_assert(sizeof(UInputRecordComponent) == 0x0007C0, "Wrong size on UInputRecordComponent");
-static_assert(offsetof(UInputRecordComponent, PlayerController) == 0x0005B0, "Member 'UInputRecordComponent::PlayerController' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OwnerController) == 0x0005B8, "Member 'UInputRecordComponent::OwnerController' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordFinishedPlaying) == 0x000758, "Member 'UInputRecordComponent::OnInputRecordFinishedPlaying' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordStopPlayRecord) == 0x000768, "Member 'UInputRecordComponent::OnInputRecordStopPlayRecord' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordStopRecordDelegate) == 0x000778, "Member 'UInputRecordComponent::OnInputRecordStopRecordDelegate' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordFinishedSavingDelegate) == 0x000788, "Member 'UInputRecordComponent::OnInputRecordFinishedSavingDelegate' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordPlayRecordDelegate) == 0x000798, "Member 'UInputRecordComponent::OnInputRecordPlayRecordDelegate' has a wrong offset!");
-static_assert(offsetof(UInputRecordComponent, OnInputRecordFinishedLoadingDelegate) == 0x0007A8, "Member 'UInputRecordComponent::OnInputRecordFinishedLoadingDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UInputRecordComponent;
 
 // Class InputRecord.InputRecordLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -130,15 +130,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputRecordLibrary">();
+		STATIC_CLASS_IMPL("InputRecordLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputRecordLibrary")
 	}
 	static class UInputRecordLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputRecordLibrary>();
 	}
 };
-static_assert(alignof(UInputRecordLibrary) == 0x000008, "Wrong alignment on UInputRecordLibrary");
-static_assert(sizeof(UInputRecordLibrary) == 0x000030, "Wrong size on UInputRecordLibrary");
+DUMPER7_ASSERTS_UInputRecordLibrary;
 
 // Class InputRecord.InputRecordSubsystem
 // 0x04B8 (0x04F0 - 0x0038)
@@ -165,15 +168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InputRecordSubsystem">();
+		STATIC_CLASS_IMPL("InputRecordSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputRecordSubsystem")
 	}
 	static class UInputRecordSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputRecordSubsystem>();
 	}
 };
-static_assert(alignof(UInputRecordSubsystem) == 0x000008, "Wrong alignment on UInputRecordSubsystem");
-static_assert(sizeof(UInputRecordSubsystem) == 0x0004F0, "Wrong size on UInputRecordSubsystem");
+DUMPER7_ASSERTS_UInputRecordSubsystem;
 
 }
 

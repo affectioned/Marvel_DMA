@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoner_10466101_BP.Summoner_10466101_BP_C
-// 0x0010 (0x0B70 - 0x0B60)
+// 0x0010 (0x0B90 - 0x0B80)
 class ASummoner_10466101_BP_C final : public ASummoned_10466101
 {
 public:
-	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent*             SummonedMovement;                                  // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoner_10466101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoner_10466101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoner_10466101_BP_C")
 	}
 	static class ASummoner_10466101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoner_10466101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoner_10466101_BP_C) == 0x000010, "Wrong alignment on ASummoner_10466101_BP_C");
-static_assert(sizeof(ASummoner_10466101_BP_C) == 0x000B70, "Wrong size on ASummoner_10466101_BP_C");
-static_assert(offsetof(ASummoner_10466101_BP_C, SummonedMovement) == 0x000B60, "Member 'ASummoner_10466101_BP_C::SummonedMovement' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoner_10466101_BP_C;
 
 }
 

@@ -51,33 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PC_UISettingEntryScalabilityHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("PC_UISettingEntryScalabilityHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PC_UISettingEntryScalabilityHandlerBP_C")
 	}
 	static class UPC_UISettingEntryScalabilityHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPC_UISettingEntryScalabilityHandlerBP_C>();
 	}
 };
-static_assert(alignof(UPC_UISettingEntryScalabilityHandlerBP_C) == 0x000008, "Wrong alignment on UPC_UISettingEntryScalabilityHandlerBP_C");
-static_assert(sizeof(UPC_UISettingEntryScalabilityHandlerBP_C) == 0x0000E0, "Wrong size on UPC_UISettingEntryScalabilityHandlerBP_C");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, view_distance_quality) == 0x000038, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::view_distance_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, shadow_quality) == 0x00003C, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::shadow_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, global_illumination_quality) == 0x000040, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::global_illumination_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, reflection_quality) == 0x000044, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::reflection_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, texture_quality) == 0x000048, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::texture_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, visual_effect_quality) == 0x00004C, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::visual_effect_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, post_processing_quality) == 0x000050, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::post_processing_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, foliage_quality) == 0x000054, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::foliage_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, shading_quality) == 0x000058, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::shading_quality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, tag_refresh) == 0x000060, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::tag_refresh' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, SettingQuality) == 0x000070, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::SettingQuality' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, SettingQualityResult) == 0x000080, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::SettingQualityResult' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, low) == 0x000090, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::low' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, mid) == 0x0000A0, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::mid' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, high) == 0x0000B0, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::high' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, epic) == 0x0000C0, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::epic' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryScalabilityHandlerBP_C, tag_refresh_scalability) == 0x0000D0, "Member 'UPC_UISettingEntryScalabilityHandlerBP_C::tag_refresh_scalability' has a wrong offset!");
+DUMPER7_ASSERTS_UPC_UISettingEntryScalabilityHandlerBP_C;
 
 }
 

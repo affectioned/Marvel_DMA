@@ -35,22 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceBlastDynamicFragments">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceBlastDynamicFragments")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceBlastDynamicFragments")
 	}
 	static class UNiagaraDataInterfaceBlastDynamicFragments* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceBlastDynamicFragments>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceBlastDynamicFragments) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceBlastDynamicFragments");
-static_assert(sizeof(UNiagaraDataInterfaceBlastDynamicFragments) == 0x0000E8, "Wrong size on UNiagaraDataInterfaceBlastDynamicFragments");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, CurrentFrameBigChunksState) == 0x000098, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::CurrentFrameBigChunksState' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, CurrentFrameFXChunksParticleData) == 0x0000A8, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::CurrentFrameFXChunksParticleData' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, ScalabilityOverrides) == 0x0000B8, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::ScalabilityOverrides' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, SpawnCountScale) == 0x0000C8, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::SpawnCountScale' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, ReceiveEventNum) == 0x0000CC, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::ReceiveEventNum' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, FXChunksParticlesNum) == 0x0000D0, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::FXChunksParticlesNum' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceBlastDynamicFragments, PerFrameMessages) == 0x0000D8, "Member 'UNiagaraDataInterfaceBlastDynamicFragments::PerFrameMessages' has a wrong offset!");
+DUMPER7_ASSERTS_UNiagaraDataInterfaceBlastDynamicFragments;
 
 }
 

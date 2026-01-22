@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingHpBarVisibleRuleHandler">();
+		STATIC_CLASS_IMPL("UISettingHpBarVisibleRuleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingHpBarVisibleRuleHandler")
 	}
 	static class UUISettingHpBarVisibleRuleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingHpBarVisibleRuleHandler>();
 	}
 };
-static_assert(alignof(UUISettingHpBarVisibleRuleHandler) == 0x000008, "Wrong alignment on UUISettingHpBarVisibleRuleHandler");
-static_assert(sizeof(UUISettingHpBarVisibleRuleHandler) == 0x000030, "Wrong size on UUISettingHpBarVisibleRuleHandler");
+DUMPER7_ASSERTS_UUISettingHpBarVisibleRuleHandler;
 
 }
 

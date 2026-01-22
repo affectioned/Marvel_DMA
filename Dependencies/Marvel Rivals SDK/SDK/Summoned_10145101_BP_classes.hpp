@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10145101_BP.Summoned_10145101_BP_C
-// 0x0010 (0x2310 - 0x2300)
+// 0x0010 (0x2680 - 0x2670)
 class ASummoned_10145101_BP_C final : public APySummoned_10145101
 {
 public:
-	class USummonedMovementComponent_10145101*    SummonedMovement;                                  // 0x2300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USummonedMovementComponent_10145101*    SummonedMovement;                                  // 0x2670(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10145101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10145101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10145101_BP_C")
 	}
 	static class ASummoned_10145101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10145101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10145101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10145101_BP_C");
-static_assert(sizeof(ASummoned_10145101_BP_C) == 0x002310, "Wrong size on ASummoned_10145101_BP_C");
-static_assert(offsetof(ASummoned_10145101_BP_C, SummonedMovement) == 0x002300, "Member 'ASummoned_10145101_BP_C::SummonedMovement' has a wrong offset!");
+DUMPER7_ASSERTS_ASummoned_10145101_BP_C;
 
 }
 

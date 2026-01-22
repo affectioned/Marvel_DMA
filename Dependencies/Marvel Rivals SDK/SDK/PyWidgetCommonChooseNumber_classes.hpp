@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidgetCommonChooseNumber.PyWidgetCommonChooseNumber
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidgetCommonChooseNumber final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          EnableShowBatch;                                   // 0x05BA(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BatchSize;                                         // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LengthLimit;                                       // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DefaultValue;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LowerLimit;                                        // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UpperLimit;                                        // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& TextStr)> OnSubmitText;                       // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& TextStr)> OnChangeText;                       // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          EnableShowBatch;                                   // 0x05C2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x1];                                      // 0x05C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BatchSize;                                         // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LengthLimit;                                       // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DefaultValue;                                      // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LowerLimit;                                        // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UpperLimit;                                        // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& TextStr)> OnSubmitText;                       // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& TextStr)> OnChangeText;                       // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,26 +44,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetCommonChooseNumber">();
+		STATIC_CLASS_IMPL("PyWidgetCommonChooseNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetCommonChooseNumber")
 	}
 	static class UPyWidgetCommonChooseNumber* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetCommonChooseNumber>();
 	}
 };
-static_assert(alignof(UPyWidgetCommonChooseNumber) == 0x000008, "Wrong alignment on UPyWidgetCommonChooseNumber");
-static_assert(sizeof(UPyWidgetCommonChooseNumber) == 0x0005F0, "Wrong size on UPyWidgetCommonChooseNumber");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, EnableShowBatch) == 0x0005BA, "Member 'UPyWidgetCommonChooseNumber::EnableShowBatch' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, BatchSize) == 0x0005BC, "Member 'UPyWidgetCommonChooseNumber::BatchSize' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, LengthLimit) == 0x0005C0, "Member 'UPyWidgetCommonChooseNumber::LengthLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, DefaultValue) == 0x0005C4, "Member 'UPyWidgetCommonChooseNumber::DefaultValue' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, LowerLimit) == 0x0005C8, "Member 'UPyWidgetCommonChooseNumber::LowerLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, UpperLimit) == 0x0005CC, "Member 'UPyWidgetCommonChooseNumber::UpperLimit' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, OnSubmitText) == 0x0005D0, "Member 'UPyWidgetCommonChooseNumber::OnSubmitText' has a wrong offset!");
-static_assert(offsetof(UPyWidgetCommonChooseNumber, OnChangeText) == 0x0005E0, "Member 'UPyWidgetCommonChooseNumber::OnChangeText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetCommonChooseNumber;
 
 // PythonClass PyWidgetCommonChooseNumber.PyWidget_CommonButton_AddNum
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_CommonButton_AddNum final : public UPyWidget_Button
 {
 public:
@@ -74,15 +69,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonButton_AddNum">();
+		STATIC_CLASS_IMPL("PyWidget_CommonButton_AddNum")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonButton_AddNum")
 	}
 	static class UPyWidget_CommonButton_AddNum* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonButton_AddNum>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonButton_AddNum) == 0x000008, "Wrong alignment on UPyWidget_CommonButton_AddNum");
-static_assert(sizeof(UPyWidget_CommonButton_AddNum) == 0x000728, "Wrong size on UPyWidget_CommonButton_AddNum");
+DUMPER7_ASSERTS_UPyWidget_CommonButton_AddNum;
 
 }
 

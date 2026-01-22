@@ -23,9 +23,7 @@ struct PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_Halloween_Difficulty_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Squad_Halloween_Difficulty.PyWidget_Squad_Halloween_Squad_Level.OnButtonVisibilityChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged) == 0x000001, "Wrong alignment on PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged");
-static_assert(sizeof(PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged) == 0x000001, "Wrong size on PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged");
-static_assert(offsetof(PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged, InVisibility) == 0x000000, "Member 'PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged::InVisibility' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_Halloween_Squad_Level_OnButtonVisibilityChanged;
 
 }
 

@@ -45,27 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_BattlePass">();
+		STATIC_CLASS_IMPL("PyLevelController_BattlePass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_BattlePass")
 	}
 	static class APyLevelController_BattlePass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_BattlePass>();
 	}
 };
-static_assert(alignof(APyLevelController_BattlePass) == 0x000010, "Wrong alignment on APyLevelController_BattlePass");
-static_assert(sizeof(APyLevelController_BattlePass) == 0x000960, "Wrong size on APyLevelController_BattlePass");
-static_assert(offsetof(APyLevelController_BattlePass, LS_BattlePass_FadeIn) == 0x0006E0, "Member 'APyLevelController_BattlePass::LS_BattlePass_FadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, LS_BattlePass_CheckDetail) == 0x000760, "Member 'APyLevelController_BattlePass::LS_BattlePass_CheckDetail' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, LS_BattlePass_CrystalBuy) == 0x0007E0, "Member 'APyLevelController_BattlePass::LS_BattlePass_CrystalBuy' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, LS_BattlePass_Settlement) == 0x000860, "Member 'APyLevelController_BattlePass::LS_BattlePass_Settlement' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSFadeInFinshed) == 0x0008E0, "Member 'APyLevelController_BattlePass::OnLSFadeInFinshed' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSCheckDetailFinished) == 0x0008F0, "Member 'APyLevelController_BattlePass::OnLSCheckDetailFinished' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSCrystalBuyFinished) == 0x000900, "Member 'APyLevelController_BattlePass::OnLSCrystalBuyFinished' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSSettlementFinished) == 0x000910, "Member 'APyLevelController_BattlePass::OnLSSettlementFinished' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSFadeInPlay) == 0x000920, "Member 'APyLevelController_BattlePass::OnLSFadeInPlay' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSCheckDetailPlay) == 0x000930, "Member 'APyLevelController_BattlePass::OnLSCheckDetailPlay' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnLSCrystalBuyPlay) == 0x000940, "Member 'APyLevelController_BattlePass::OnLSCrystalBuyPlay' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BattlePass, OnCrystalClicked) == 0x000950, "Member 'APyLevelController_BattlePass::OnCrystalClicked' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_BattlePass;
 
 }
 

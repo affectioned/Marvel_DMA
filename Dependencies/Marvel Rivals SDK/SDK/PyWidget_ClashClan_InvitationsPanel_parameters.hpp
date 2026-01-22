@@ -21,9 +21,7 @@ struct PyWidget_ClashClan_InvitationItem_OnListItemObjectSet final
 public:
 	class UObject*                                item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ClashClan_InvitationItem_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_ClashClan_InvitationItem_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_ClashClan_InvitationItem_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_ClashClan_InvitationItem_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_ClashClan_InvitationItem_OnListItemObjectSet, item) == 0x000000, "Member 'PyWidget_ClashClan_InvitationItem_OnListItemObjectSet::item' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ClashClan_InvitationItem_OnListItemObjectSet;
 
 // PythonFunction PyWidget_ClashClan_InvitationsPanel.PyWidget_ClashClan_InvitationsPanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ClashClan_InvitationsPanel_MarvelSetVisible;
 
 }
 

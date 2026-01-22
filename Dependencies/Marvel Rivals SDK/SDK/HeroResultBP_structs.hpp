@@ -29,14 +29,7 @@ public:
 	double                                        LineColorU_Offset_35_58471F0E4CD6FB2496E968AE168000F9; // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LineColorV_Offset_36_DCB124EF4DBBD5FCEE25869D8E2F5A0C; // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FHeroResultBP) == 0x000008, "Wrong alignment on FHeroResultBP");
-static_assert(sizeof(FHeroResultBP) == 0x000030, "Wrong size on FHeroResultBP");
-static_assert(offsetof(FHeroResultBP, UseFormalMVPAsset_16_B4C0FC694F2D5538B14839BD2DCAA5B3) == 0x000000, "Member 'FHeroResultBP::UseFormalMVPAsset_16_B4C0FC694F2D5538B14839BD2DCAA5B3' has a wrong offset!");
-static_assert(offsetof(FHeroResultBP, bInfoOnLeft_18_B928BC214459333C426653A8CC097E0C) == 0x000001, "Member 'FHeroResultBP::bInfoOnLeft_18_B928BC214459333C426653A8CC097E0C' has a wrong offset!");
-static_assert(offsetof(FHeroResultBP, ShowBgTime_24_4D4CA5044DDFE810EFCD568AD653A9E4) == 0x000008, "Member 'FHeroResultBP::ShowBgTime_24_4D4CA5044DDFE810EFCD568AD653A9E4' has a wrong offset!");
-static_assert(offsetof(FHeroResultBP, HeroMvpColor_27_D21D349D4844089A924E8CAA2EEB86D6) == 0x000010, "Member 'FHeroResultBP::HeroMvpColor_27_D21D349D4844089A924E8CAA2EEB86D6' has a wrong offset!");
-static_assert(offsetof(FHeroResultBP, LineColorU_Offset_35_58471F0E4CD6FB2496E968AE168000F9) == 0x000020, "Member 'FHeroResultBP::LineColorU_Offset_35_58471F0E4CD6FB2496E968AE168000F9' has a wrong offset!");
-static_assert(offsetof(FHeroResultBP, LineColorV_Offset_36_DCB124EF4DBBD5FCEE25869D8E2F5A0C) == 0x000028, "Member 'FHeroResultBP::LineColorV_Offset_36_DCB124EF4DBBD5FCEE25869D8E2F5A0C' has a wrong offset!");
+DUMPER7_ASSERTS_FHeroResultBP;
 
 }
 

@@ -21,9 +21,7 @@ struct PyTabData_1047_OnActivateCount final
 public:
 	class UGameplayAbility*                       Ability;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTabData_1047_OnActivateCount) == 0x000008, "Wrong alignment on PyTabData_1047_OnActivateCount");
-static_assert(sizeof(PyTabData_1047_OnActivateCount) == 0x000008, "Wrong size on PyTabData_1047_OnActivateCount");
-static_assert(offsetof(PyTabData_1047_OnActivateCount, Ability) == 0x000000, "Member 'PyTabData_1047_OnActivateCount::Ability' has a wrong offset!");
+DUMPER7_ASSERTS_PyTabData_1047_OnActivateCount;
 
 // PythonFunction PyTabData_1047.PyTabData_1047.OnEndAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyTabData_1047_OnEndAbility final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTabData_1047_OnEndAbility) == 0x000004, "Wrong alignment on PyTabData_1047_OnEndAbility");
-static_assert(sizeof(PyTabData_1047_OnEndAbility) == 0x000004, "Wrong size on PyTabData_1047_OnEndAbility");
-static_assert(offsetof(PyTabData_1047_OnEndAbility, AbilityID) == 0x000000, "Member 'PyTabData_1047_OnEndAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyTabData_1047_OnEndAbility;
 
 }
 

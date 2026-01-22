@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Train_SettingDescItem.PyWidget_Train_SettingDescItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Train_SettingDescItem : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Train_SettingDescItem">();
+		STATIC_CLASS_IMPL("PyWidget_Train_SettingDescItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Train_SettingDescItem")
 	}
 	static class UPyWidget_Train_SettingDescItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Train_SettingDescItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Train_SettingDescItem) == 0x000008, "Wrong alignment on UPyWidget_Train_SettingDescItem");
-static_assert(sizeof(UPyWidget_Train_SettingDescItem) == 0x0005C0, "Wrong size on UPyWidget_Train_SettingDescItem");
+DUMPER7_ASSERTS_UPyWidget_Train_SettingDescItem;
 
 }
 

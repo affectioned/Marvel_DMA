@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_RulePanel.PyWidget_Activity122_RulePanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity122_RulePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RulePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RulePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RulePanel")
 	}
 	static class UPyWidget_Activity122_RulePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RulePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RulePanel) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RulePanel");
-static_assert(sizeof(UPyWidget_Activity122_RulePanel) == 0x0005F8, "Wrong size on UPyWidget_Activity122_RulePanel");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RulePanel;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "halloween_utils_structs.hpp"
 #include "PyNoviceTargetRange_classes.hpp"
+#include "halloween_utils_structs.hpp"
 
 
 namespace SDK
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenTargetRange">();
+		STATIC_CLASS_IMPL("PyHalloweenTargetRange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenTargetRange")
 	}
 	static class APyHalloweenTargetRange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenTargetRange>();
 	}
 };
-static_assert(alignof(APyHalloweenTargetRange) == 0x000010, "Wrong alignment on APyHalloweenTargetRange");
-static_assert(sizeof(APyHalloweenTargetRange) == 0x0006F0, "Wrong size on APyHalloweenTargetRange");
-static_assert(offsetof(APyHalloweenTargetRange, State) == 0x0006E8, "Member 'APyHalloweenTargetRange::State' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenTargetRange;
 
 }
 

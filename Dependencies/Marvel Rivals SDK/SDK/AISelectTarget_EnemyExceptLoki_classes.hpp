@@ -23,15 +23,18 @@ class UAISelectTarget_EnemyExceptLoki_C final : public UAISelectTarget_BuffedCha
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_EnemyExceptLoki_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_EnemyExceptLoki_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_EnemyExceptLoki_C")
 	}
 	static class UAISelectTarget_EnemyExceptLoki_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_EnemyExceptLoki_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_EnemyExceptLoki_C) == 0x000008, "Wrong alignment on UAISelectTarget_EnemyExceptLoki_C");
-static_assert(sizeof(UAISelectTarget_EnemyExceptLoki_C) == 0x000118, "Wrong size on UAISelectTarget_EnemyExceptLoki_C");
+DUMPER7_ASSERTS_UAISelectTarget_EnemyExceptLoki_C;
 
 }
 

@@ -11,25 +11,28 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyLevelSummoned_20020801.PyLevelSummoned_20020801
-// 0x0030 (0x0BA0 - 0x0B70)
+// 0x0030 (0x0BC0 - 0x0B90)
 class APyLevelSummoned_20020801 final : public AMarvelLevelSummonedBase
 {
 public:
-	uint8                                         Pad_B68[0x8];                                      // 0x0B68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ShieldState;                                       // 0x0B70(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultActive;                                     // 0x0B74(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B75[0x3];                                      // 0x0B75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RespawnTime;                                       // 0x0B78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverTime;                                       // 0x0B7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverRate;                                       // 0x0B80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverHealth;                                     // 0x0B84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShieldState)> DispatchShieldState;                           // 0x0B88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B88[0x8];                                      // 0x0B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ShieldState;                                       // 0x0B90(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultActive;                                     // 0x0B94(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B95[0x3];                                      // 0x0B95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RespawnTime;                                       // 0x0B98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ResetTime;                                         // 0x0B9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverTime;                                       // 0x0BA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverRate;                                       // 0x0BA4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverHealth;                                     // 0x0BA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BAC[0x4];                                      // 0x0BAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 ShieldState)> DispatchShieldState;                           // 0x0BB0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -38,29 +41,50 @@ public:
 	void OnRep_ShieldState();
 	void OnTakeDamage(class AController* Source, class AActor* Dest, const struct FAttributeModifierHandle& Parm);
 	void OnRecoverTimer();
-	void OnRecoverRateTimer1();
+	void OnRecoverRateTimer();
 	void OnDeath(class AController* InSource, class AActor* InSourceAvatar, const struct FAttributeModifierHandle& ParameterHandle);
+	void OnHealthChanged(class AActor* InSourceAvatar, const struct FAttributeModifierHandle& ModifierHandle);
 	void K2_SetShieldState(bool Active);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_20020801">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_20020801")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_20020801")
 	}
 	static class APyLevelSummoned_20020801* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_20020801>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_20020801) == 0x000010, "Wrong alignment on APyLevelSummoned_20020801");
-static_assert(sizeof(APyLevelSummoned_20020801) == 0x000BA0, "Wrong size on APyLevelSummoned_20020801");
-static_assert(offsetof(APyLevelSummoned_20020801, ShieldState) == 0x000B70, "Member 'APyLevelSummoned_20020801::ShieldState' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, DefaultActive) == 0x000B74, "Member 'APyLevelSummoned_20020801::DefaultActive' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, RespawnTime) == 0x000B78, "Member 'APyLevelSummoned_20020801::RespawnTime' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, RecoverTime) == 0x000B7C, "Member 'APyLevelSummoned_20020801::RecoverTime' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, RecoverRate) == 0x000B80, "Member 'APyLevelSummoned_20020801::RecoverRate' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, RecoverHealth) == 0x000B84, "Member 'APyLevelSummoned_20020801::RecoverHealth' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020801, DispatchShieldState) == 0x000B88, "Member 'APyLevelSummoned_20020801::DispatchShieldState' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_20020801;
+
+// PythonClass PyLevelSummoned_20020801.PyCue_Summoner_Loop_20020801_BP
+// 0x0000 (0x1260 - 0x1260)
+class APyCue_Summoner_Loop_20020801_BP final : public AMarvelCueNotify_Summoned
+{
+public:
+	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void ReceiveTick(float DeltaSeconds);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_20020801_BP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_20020801_BP")
+	}
+	static class APyCue_Summoner_Loop_20020801_BP* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Summoner_Loop_20020801_BP>();
+	}
+};
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_20020801_BP;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_GMCmd_HistoryItem_SetItemData final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_HistoryItem_SetItemData) == 0x000008, "Wrong alignment on PyWidget_GMCmd_HistoryItem_SetItemData");
-static_assert(sizeof(PyWidget_GMCmd_HistoryItem_SetItemData) == 0x000008, "Wrong size on PyWidget_GMCmd_HistoryItem_SetItemData");
-static_assert(offsetof(PyWidget_GMCmd_HistoryItem_SetItemData, ListItemObject) == 0x000000, "Member 'PyWidget_GMCmd_HistoryItem_SetItemData::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_HistoryItem_SetItemData;
 
 // PythonFunction PyWidget_GMCmd_HistoryItem.PyWidget_GMCmd_HistoryItem.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_GMCmd_HistoryItem_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GMCmd_HistoryItem_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_GMCmd_HistoryItem_SetIsHover");
-static_assert(sizeof(PyWidget_GMCmd_HistoryItem_SetIsHover) == 0x000001, "Wrong size on PyWidget_GMCmd_HistoryItem_SetIsHover");
-static_assert(offsetof(PyWidget_GMCmd_HistoryItem_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_GMCmd_HistoryItem_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GMCmd_HistoryItem_SetIsHover;
 
 }
 

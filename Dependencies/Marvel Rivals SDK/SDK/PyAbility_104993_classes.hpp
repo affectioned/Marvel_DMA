@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_104971_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "PyAbility_104971_classes.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -32,23 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104993">();
+		STATIC_CLASS_IMPL("PyConfig_104993")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104993")
 	}
 	static class UPyConfig_104993* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104993>();
 	}
 };
-static_assert(alignof(UPyConfig_104993) == 0x000008, "Wrong alignment on UPyConfig_104993");
-static_assert(sizeof(UPyConfig_104993) == 0x000540, "Wrong size on UPyConfig_104993");
-static_assert(offsetof(UPyConfig_104993, StartLaunchTag) == 0x000518, "Member 'UPyConfig_104993::StartLaunchTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104993, LaunchingTag) == 0x000524, "Member 'UPyConfig_104993::LaunchingTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104993, ScopeID) == 0x000530, "Member 'UPyConfig_104993::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104993, KnockUpBuffId) == 0x000534, "Member 'UPyConfig_104993::KnockUpBuffId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104993, EnableGrab) == 0x000538, "Member 'UPyConfig_104993::EnableGrab' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104993;
 
 // PythonClass PyAbility_104993.PyAbility_104993
-// 0x0000 (0x2D28 - 0x2D28)
+// 0x0000 (0x2D78 - 0x2D78)
 class UPyAbility_104993 : public UPyAbility_104971
 {
 public:
@@ -73,15 +71,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104993">();
+		STATIC_CLASS_IMPL("PyAbility_104993")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104993")
 	}
 	static class UPyAbility_104993* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104993>();
 	}
 };
-static_assert(alignof(UPyAbility_104993) == 0x000008, "Wrong alignment on UPyAbility_104993");
-static_assert(sizeof(UPyAbility_104993) == 0x002D28, "Wrong size on UPyAbility_104993");
+DUMPER7_ASSERTS_UPyAbility_104993;
 
 }
 

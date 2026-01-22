@@ -23,15 +23,18 @@ class UAICondition_JeffUltHasDevour_C final : public UPyAICondition_JeffUltHasDe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AICondition_JeffUltHasDevour_C">();
+		BP_STATIC_CLASS_IMPL("AICondition_JeffUltHasDevour_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICondition_JeffUltHasDevour_C")
 	}
 	static class UAICondition_JeffUltHasDevour_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICondition_JeffUltHasDevour_C>();
 	}
 };
-static_assert(alignof(UAICondition_JeffUltHasDevour_C) == 0x000008, "Wrong alignment on UAICondition_JeffUltHasDevour_C");
-static_assert(sizeof(UAICondition_JeffUltHasDevour_C) == 0x000040, "Wrong size on UAICondition_JeffUltHasDevour_C");
+DUMPER7_ASSERTS_UAICondition_JeffUltHasDevour_C;
 
 }
 

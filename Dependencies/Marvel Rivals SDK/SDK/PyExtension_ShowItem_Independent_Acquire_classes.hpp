@@ -23,15 +23,18 @@ class UPyExtension_ShowItem_Independent_Acquire final : public UPyExtension_Show
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ShowItem_Independent_Acquire">();
+		STATIC_CLASS_IMPL("PyExtension_ShowItem_Independent_Acquire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ShowItem_Independent_Acquire")
 	}
 	static class UPyExtension_ShowItem_Independent_Acquire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ShowItem_Independent_Acquire>();
 	}
 };
-static_assert(alignof(UPyExtension_ShowItem_Independent_Acquire) == 0x000008, "Wrong alignment on UPyExtension_ShowItem_Independent_Acquire");
-static_assert(sizeof(UPyExtension_ShowItem_Independent_Acquire) == 0x000030, "Wrong size on UPyExtension_ShowItem_Independent_Acquire");
+DUMPER7_ASSERTS_UPyExtension_ShowItem_Independent_Acquire;
 
 }
 

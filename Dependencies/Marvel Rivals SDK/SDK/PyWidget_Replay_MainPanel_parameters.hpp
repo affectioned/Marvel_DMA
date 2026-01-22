@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_MainPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_Replay_MainPanel_Tick");
-static_assert(sizeof(PyWidget_Replay_MainPanel_Tick) == 0x00003C, "Wrong size on PyWidget_Replay_MainPanel_Tick");
-static_assert(offsetof(PyWidget_Replay_MainPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Replay_MainPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Replay_MainPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Replay_MainPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_MainPanel_Tick;
 
 // PythonFunction PyWidget_Replay_MainPanel.PyWidget_Replay_MainPanel.ShowLoadingPanel
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,16 @@ struct PyWidget_Replay_MainPanel_ShowLoadingPanel final
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Replay_MainPanel_ShowLoadingPanel) == 0x000001, "Wrong alignment on PyWidget_Replay_MainPanel_ShowLoadingPanel");
-static_assert(sizeof(PyWidget_Replay_MainPanel_ShowLoadingPanel) == 0x000001, "Wrong size on PyWidget_Replay_MainPanel_ShowLoadingPanel");
-static_assert(offsetof(PyWidget_Replay_MainPanel_ShowLoadingPanel, Show) == 0x000000, "Member 'PyWidget_Replay_MainPanel_ShowLoadingPanel::Show' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Replay_MainPanel_ShowLoadingPanel;
+
+// PythonFunction PyWidget_Replay_MainPanel.PyWidget_Replay_MainPanel.OnCascadingVisibleChanged
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_Replay_MainPanel_OnCascadingVisibleChanged final
+{
+public:
+	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_Replay_MainPanel_OnCascadingVisibleChanged;
 
 }
 

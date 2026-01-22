@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101151.PyCue_Buff_10115101
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10115101 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10115101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10115101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10115101")
 	}
 	static class APyCue_Buff_10115101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10115101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10115101) == 0x000010, "Wrong alignment on APyCue_Buff_10115101");
-static_assert(sizeof(APyCue_Buff_10115101) == 0x001640, "Wrong size on APyCue_Buff_10115101");
+DUMPER7_ASSERTS_APyCue_Buff_10115101;
 
 }
 

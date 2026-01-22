@@ -26,9 +26,7 @@ struct PyAbility_105172_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_CanActivate) == 0x000001, "Wrong alignment on PyAbility_105172_CanActivate");
-static_assert(sizeof(PyAbility_105172_CanActivate) == 0x000001, "Wrong size on PyAbility_105172_CanActivate");
-static_assert(offsetof(PyAbility_105172_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_105172_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_CanActivate;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.TryMakeTriggerContext
 // 0x0298 (0x0298 - 0x0000)
@@ -38,10 +36,7 @@ public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0290(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_TryMakeTriggerContext) == 0x000008, "Wrong alignment on PyAbility_105172_TryMakeTriggerContext");
-static_assert(sizeof(PyAbility_105172_TryMakeTriggerContext) == 0x000298, "Wrong size on PyAbility_105172_TryMakeTriggerContext");
-static_assert(offsetof(PyAbility_105172_TryMakeTriggerContext, EventData) == 0x000000, "Member 'PyAbility_105172_TryMakeTriggerContext::EventData' has a wrong offset!");
-static_assert(offsetof(PyAbility_105172_TryMakeTriggerContext, ReturnValue) == 0x000290, "Member 'PyAbility_105172_TryMakeTriggerContext::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_TryMakeTriggerContext;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -50,9 +45,7 @@ struct PyAbility_105172_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_105172_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_105172_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_105172_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_105172_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_105172_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_105172_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +54,7 @@ struct PyAbility_105172_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105172_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105172_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105172_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105172_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105172_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.OnMovementModeChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -74,11 +65,7 @@ public:
 	EMovementMode                                 PrevMode;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CustomMode;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_OnMovementModeChanged) == 0x000008, "Wrong alignment on PyAbility_105172_OnMovementModeChanged");
-static_assert(sizeof(PyAbility_105172_OnMovementModeChanged) == 0x000010, "Wrong size on PyAbility_105172_OnMovementModeChanged");
-static_assert(offsetof(PyAbility_105172_OnMovementModeChanged, MyCharacter) == 0x000000, "Member 'PyAbility_105172_OnMovementModeChanged::MyCharacter' has a wrong offset!");
-static_assert(offsetof(PyAbility_105172_OnMovementModeChanged, PrevMode) == 0x000008, "Member 'PyAbility_105172_OnMovementModeChanged::PrevMode' has a wrong offset!");
-static_assert(offsetof(PyAbility_105172_OnMovementModeChanged, CustomMode) == 0x000009, "Member 'PyAbility_105172_OnMovementModeChanged::CustomMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_OnMovementModeChanged;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.MulticastHumanTorchCameraShake
 // 0x0008 (0x0008 - 0x0000)
@@ -87,9 +74,7 @@ struct PyAbility_105172_MulticastHumanTorchCameraShake final
 public:
 	class AMarvelBaseCharacter*                   TargetCharacter;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_MulticastHumanTorchCameraShake) == 0x000008, "Wrong alignment on PyAbility_105172_MulticastHumanTorchCameraShake");
-static_assert(sizeof(PyAbility_105172_MulticastHumanTorchCameraShake) == 0x000008, "Wrong size on PyAbility_105172_MulticastHumanTorchCameraShake");
-static_assert(offsetof(PyAbility_105172_MulticastHumanTorchCameraShake, TargetCharacter) == 0x000000, "Member 'PyAbility_105172_MulticastHumanTorchCameraShake::TargetCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_MulticastHumanTorchCameraShake;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -99,10 +84,7 @@ public:
 	struct FGameplayTag                           tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_OnTagUpdate) == 0x000004, "Wrong alignment on PyAbility_105172_OnTagUpdate");
-static_assert(sizeof(PyAbility_105172_OnTagUpdate) == 0x000010, "Wrong size on PyAbility_105172_OnTagUpdate");
-static_assert(offsetof(PyAbility_105172_OnTagUpdate, tag) == 0x000000, "Member 'PyAbility_105172_OnTagUpdate::tag' has a wrong offset!");
-static_assert(offsetof(PyAbility_105172_OnTagUpdate, exist) == 0x00000C, "Member 'PyAbility_105172_OnTagUpdate::exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_OnTagUpdate;
 
 // PythonFunction PyAbility_105172.PyAbility_105172.ClientTryActivateAbility
 // 0x0018 (0x0018 - 0x0000)
@@ -111,9 +93,7 @@ struct PyAbility_105172_ClientTryActivateAbility final
 public:
 	struct FVector                                InitVelocity;                                      // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105172_ClientTryActivateAbility) == 0x000008, "Wrong alignment on PyAbility_105172_ClientTryActivateAbility");
-static_assert(sizeof(PyAbility_105172_ClientTryActivateAbility) == 0x000018, "Wrong size on PyAbility_105172_ClientTryActivateAbility");
-static_assert(offsetof(PyAbility_105172_ClientTryActivateAbility, InitVelocity) == 0x000000, "Member 'PyAbility_105172_ClientTryActivateAbility::InitVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105172_ClientTryActivateAbility;
 
 }
 

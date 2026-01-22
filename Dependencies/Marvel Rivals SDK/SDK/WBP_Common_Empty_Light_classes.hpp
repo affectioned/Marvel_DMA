@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_Empty_Light.WBP_Common_Empty_Light_C
-// 0x0010 (0x05E8 - 0x05D8)
+// 0x0010 (0x05F0 - 0x05E0)
 class UWBP_Common_Empty_Light_C final : public UPyWidget_Common_Empty
 {
 public:
-	class UMarvelImage*                           Img_Logo;                                          // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Empty;                                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Logo;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Empty;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Empty_Light_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Empty_Light_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Empty_Light_C")
 	}
 	static class UWBP_Common_Empty_Light_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Empty_Light_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Empty_Light_C) == 0x000008, "Wrong alignment on UWBP_Common_Empty_Light_C");
-static_assert(sizeof(UWBP_Common_Empty_Light_C) == 0x0005E8, "Wrong size on UWBP_Common_Empty_Light_C");
-static_assert(offsetof(UWBP_Common_Empty_Light_C, Img_Logo) == 0x0005D8, "Member 'UWBP_Common_Empty_Light_C::Img_Logo' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Empty_Light_C, Text_Empty) == 0x0005E0, "Member 'UWBP_Common_Empty_Light_C::Text_Empty' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Empty_Light_C;
 
 }
 

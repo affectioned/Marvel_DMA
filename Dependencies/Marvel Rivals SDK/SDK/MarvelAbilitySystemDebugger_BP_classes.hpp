@@ -55,23 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelAbilitySystemDebugger_BP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelAbilitySystemDebugger_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelAbilitySystemDebugger_BP_C")
 	}
 	static class AMarvelAbilitySystemDebugger_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelAbilitySystemDebugger_BP_C>();
 	}
 };
-static_assert(alignof(AMarvelAbilitySystemDebugger_BP_C) == 0x000010, "Wrong alignment on AMarvelAbilitySystemDebugger_BP_C");
-static_assert(sizeof(AMarvelAbilitySystemDebugger_BP_C) == 0x000740, "Wrong size on AMarvelAbilitySystemDebugger_BP_C");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, UberGraphFrame) == 0x0006E0, "Member 'AMarvelAbilitySystemDebugger_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, DefaultSceneRoot) == 0x0006E8, "Member 'AMarvelAbilitySystemDebugger_BP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, OwnerCharacter) == 0x0006F0, "Member 'AMarvelAbilitySystemDebugger_BP_C::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, ServerColor) == 0x0006F8, "Member 'AMarvelAbilitySystemDebugger_BP_C::ServerColor' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, ClientColor) == 0x000708, "Member 'AMarvelAbilitySystemDebugger_BP_C::ClientColor' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, StringDebugActorClass) == 0x000718, "Member 'AMarvelAbilitySystemDebugger_BP_C::StringDebugActorClass' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, DebugWidgets) == 0x000720, "Member 'AMarvelAbilitySystemDebugger_BP_C::DebugWidgets' has a wrong offset!");
-static_assert(offsetof(AMarvelAbilitySystemDebugger_BP_C, PendingMoveWidgets) == 0x000730, "Member 'AMarvelAbilitySystemDebugger_BP_C::PendingMoveWidgets' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelAbilitySystemDebugger_BP_C;
 
 }
 

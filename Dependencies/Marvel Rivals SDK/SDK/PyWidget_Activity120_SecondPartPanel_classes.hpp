@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_SecondPartPanel.PyWidget_Activity120_SecondPartPanel
-// 0x0060 (0x0658 - 0x05F8)
+// 0x0060 (0x0660 - 0x0600)
 class UPyWidget_Activity120_SecondPartPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FSlateColor                            RedColor;                                          // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteColor;                                        // 0x060C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      RedMaterial_1;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      RedMaterial_2;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             RedTexture;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      GreenMaterial_1;                                   // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      GreenMaterial_2;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             GreenTexture;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnClickRewardPreview;                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedColor;                                          // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteColor;                                        // 0x0614(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      RedMaterial_1;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      RedMaterial_2;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             RedTexture;                                        // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      GreenMaterial_1;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      GreenMaterial_2;                                   // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             GreenTexture;                                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnClickRewardPreview;                      // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,34 +45,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_SecondPartPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_SecondPartPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_SecondPartPanel")
 	}
 	static class UPyWidget_Activity120_SecondPartPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_SecondPartPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_SecondPartPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity120_SecondPartPanel");
-static_assert(sizeof(UPyWidget_Activity120_SecondPartPanel) == 0x000658, "Wrong size on UPyWidget_Activity120_SecondPartPanel");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, RedColor) == 0x0005F8, "Member 'UPyWidget_Activity120_SecondPartPanel::RedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, WhiteColor) == 0x00060C, "Member 'UPyWidget_Activity120_SecondPartPanel::WhiteColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, RedMaterial_1) == 0x000620, "Member 'UPyWidget_Activity120_SecondPartPanel::RedMaterial_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, RedMaterial_2) == 0x000628, "Member 'UPyWidget_Activity120_SecondPartPanel::RedMaterial_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, RedTexture) == 0x000630, "Member 'UPyWidget_Activity120_SecondPartPanel::RedTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, GreenMaterial_1) == 0x000638, "Member 'UPyWidget_Activity120_SecondPartPanel::GreenMaterial_1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, GreenMaterial_2) == 0x000640, "Member 'UPyWidget_Activity120_SecondPartPanel::GreenMaterial_2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, GreenTexture) == 0x000648, "Member 'UPyWidget_Activity120_SecondPartPanel::GreenTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_SecondPartPanel, AkEvent_OnClickRewardPreview) == 0x000650, "Member 'UPyWidget_Activity120_SecondPartPanel::AkEvent_OnClickRewardPreview' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_SecondPartPanel;
 
 // PythonClass PyWidget_Activity120_SecondPartPanel.PyWidget_Activity120_RewardPanel
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Activity120_RewardPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Color;                                             // 0x05C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DefaultZorder;                                     // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Color;                                             // 0x05C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DefaultZorder;                                     // 0x05CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -82,18 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_RewardPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_RewardPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_RewardPanel")
 	}
 	static class UPyWidget_Activity120_RewardPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_RewardPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_RewardPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity120_RewardPanel");
-static_assert(sizeof(UPyWidget_Activity120_RewardPanel) == 0x0005C8, "Wrong size on UPyWidget_Activity120_RewardPanel");
-static_assert(offsetof(UPyWidget_Activity120_RewardPanel, Index_0) == 0x0005BC, "Member 'UPyWidget_Activity120_RewardPanel::Index_0' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPanel, Color) == 0x0005C0, "Member 'UPyWidget_Activity120_RewardPanel::Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity120_RewardPanel, DefaultZorder) == 0x0005C4, "Member 'UPyWidget_Activity120_RewardPanel::DefaultZorder' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_RewardPanel;
 
 }
 

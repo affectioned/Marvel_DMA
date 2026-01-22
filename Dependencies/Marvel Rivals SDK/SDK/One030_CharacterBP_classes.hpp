@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1030_CharacterBP.1030_CharacterBP_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class AOne030_CharacterBP_C final : public APyMoonKnightCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1030_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1030_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1030_CharacterBP_C")
 	}
 	static class AOne030_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne030_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne030_CharacterBP_C) == 0x000010, "Wrong alignment on AOne030_CharacterBP_C");
-static_assert(sizeof(AOne030_CharacterBP_C) == 0x0021B0, "Wrong size on AOne030_CharacterBP_C");
+DUMPER7_ASSERTS_AOne030_CharacterBP_C;
 
 }
 

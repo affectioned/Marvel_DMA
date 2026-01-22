@@ -23,15 +23,18 @@ class UPyGameModeComponent : public UMarvelGameModeComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGameModeComponent">();
+		STATIC_CLASS_IMPL("PyGameModeComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGameModeComponent")
 	}
 	static class UPyGameModeComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGameModeComponent>();
 	}
 };
-static_assert(alignof(UPyGameModeComponent) == 0x000008, "Wrong alignment on UPyGameModeComponent");
-static_assert(sizeof(UPyGameModeComponent) == 0x000108, "Wrong size on UPyGameModeComponent");
+DUMPER7_ASSERTS_UPyGameModeComponent;
 
 }
 

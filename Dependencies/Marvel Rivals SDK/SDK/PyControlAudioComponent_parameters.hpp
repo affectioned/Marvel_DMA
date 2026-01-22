@@ -23,9 +23,7 @@ struct PyControlAudioComponent_BroadCastControlOccupiedFirst final
 public:
 	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControlAudioComponent_BroadCastControlOccupiedFirst) == 0x000001, "Wrong alignment on PyControlAudioComponent_BroadCastControlOccupiedFirst");
-static_assert(sizeof(PyControlAudioComponent_BroadCastControlOccupiedFirst) == 0x000001, "Wrong size on PyControlAudioComponent_BroadCastControlOccupiedFirst");
-static_assert(offsetof(PyControlAudioComponent_BroadCastControlOccupiedFirst, battle_side) == 0x000000, "Member 'PyControlAudioComponent_BroadCastControlOccupiedFirst::battle_side' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlAudioComponent_BroadCastControlOccupiedFirst;
 
 // PythonFunction PyControlAudioComponent.PyControlAudioComponent.BroadCastControlOccupiedOneSide
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyControlAudioComponent_BroadCastControlOccupiedOneSide final
 public:
 	EBattleSide                                   battle_side;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyControlAudioComponent_BroadCastControlOccupiedOneSide) == 0x000001, "Wrong alignment on PyControlAudioComponent_BroadCastControlOccupiedOneSide");
-static_assert(sizeof(PyControlAudioComponent_BroadCastControlOccupiedOneSide) == 0x000001, "Wrong size on PyControlAudioComponent_BroadCastControlOccupiedOneSide");
-static_assert(offsetof(PyControlAudioComponent_BroadCastControlOccupiedOneSide, battle_side) == 0x000000, "Member 'PyControlAudioComponent_BroadCastControlOccupiedOneSide::battle_side' has a wrong offset!");
+DUMPER7_ASSERTS_PyControlAudioComponent_BroadCastControlOccupiedOneSide;
 
 }
 

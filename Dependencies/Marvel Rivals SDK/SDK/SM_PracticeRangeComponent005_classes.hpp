@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_PracticeRangeComponent005_C">();
+		BP_STATIC_CLASS_IMPL("SM_PracticeRangeComponent005_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_PracticeRangeComponent005_C")
 	}
 	static class ASM_PracticeRangeComponent005_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_PracticeRangeComponent005_C>();
 	}
 };
-static_assert(alignof(ASM_PracticeRangeComponent005_C) == 0x000010, "Wrong alignment on ASM_PracticeRangeComponent005_C");
-static_assert(sizeof(ASM_PracticeRangeComponent005_C) == 0x0006F0, "Wrong size on ASM_PracticeRangeComponent005_C");
-static_assert(offsetof(ASM_PracticeRangeComponent005_C, DefaultSceneRoot) == 0x0006E0, "Member 'ASM_PracticeRangeComponent005_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_ASM_PracticeRangeComponent005_C;
 
 }
 

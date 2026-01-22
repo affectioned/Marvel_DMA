@@ -130,31 +130,6 @@ void UPyAbility_105041::K2_ActivateAbility()
 }
 
 
-// PythonFunction PyAbility_105041.PyAbility_105041.K2_ActivateAbilityFromEvent
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyAbility_105041::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105041", "K2_ActivateAbilityFromEvent");
-
-	Params::PyAbility_105041_K2_ActivateAbilityFromEvent Parms{};
-
-	Parms.EventData = std::move(EventData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105041.PyAbility_105041.OnBarrierDeath
 // (Native, Public, BlueprintCallable)
 
@@ -289,31 +264,6 @@ void UPyAbility_105041::K2_OnEndAbility(bool bWasCancelled)
 	Params::PyAbility_105041_K2_OnEndAbility Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105041.PyAbility_105041.K2_OnClientActivateAbilityRejected
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCurrentActivation                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyAbility_105041::K2_OnClientActivateAbilityRejected(bool bIsCurrentActivation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyAbility_105041", "K2_OnClientActivateAbilityRejected");
-
-	Params::PyAbility_105041_K2_OnClientActivateAbilityRejected Parms{};
-
-	Parms.bIsCurrentActivation = bIsCurrentActivation;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

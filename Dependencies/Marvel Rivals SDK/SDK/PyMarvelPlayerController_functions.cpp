@@ -36,31 +36,6 @@ void APyMarvelPlayerController::ReceiveBeginPlay()
 }
 
 
-// PythonFunction PyMarvelPlayerController.PyMarvelPlayerController.OnCrashKeyPressed
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FKey&                      key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void APyMarvelPlayerController::OnCrashKeyPressed(const struct FKey& key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyMarvelPlayerController", "OnCrashKeyPressed");
-
-	Params::PyMarvelPlayerController_OnCrashKeyPressed Parms{};
-
-	Parms.key = std::move(key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyMarvelPlayerController.PyMarvelPlayerController.OnReHandShakeSuccessCallback
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -78,56 +53,6 @@ void APyMarvelPlayerController::OnReHandShakeSuccessCallback(const class FString
 
 	Parms.OldAddress = std::move(OldAddress);
 	Parms.NewAddress = std::move(NewAddress);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyMarvelPlayerController.PyMarvelPlayerController.OnCrashKeyReleased
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FKey&                      key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void APyMarvelPlayerController::OnCrashKeyReleased(const struct FKey& key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyMarvelPlayerController", "OnCrashKeyReleased");
-
-	Params::PyMarvelPlayerController_OnCrashKeyReleased Parms{};
-
-	Parms.key = std::move(key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyMarvelPlayerController.PyMarvelPlayerController.OnTriggerCrashKeyPressed
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FKey&                      key                                                    (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void APyMarvelPlayerController::OnTriggerCrashKeyPressed(const struct FKey& key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyMarvelPlayerController", "OnTriggerCrashKeyPressed");
-
-	Params::PyMarvelPlayerController_OnTriggerCrashKeyPressed Parms{};
-
-	Parms.key = std::move(key);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -263,8 +188,9 @@ void APyMarvelPlayerController::C_NotifyServerTryEnterSelect()
 // Parameters:
 // int32                                   HeroId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   SkinID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EHeroRole                               HeroRole                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerController::C_ChangeHero(int32 HeroId, int32 SkinID)
+void APyMarvelPlayerController::C_ChangeHero(int32 HeroId, int32 SkinID, EHeroRole HeroRole)
 {
 	static class UFunction* Func = nullptr;
 
@@ -275,6 +201,7 @@ void APyMarvelPlayerController::C_ChangeHero(int32 HeroId, int32 SkinID)
 
 	Parms.HeroId = HeroId;
 	Parms.SkinID = SkinID;
+	Parms.HeroRole = HeroRole;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -926,11 +853,12 @@ void APyMarvelPlayerController::RequestTrainComputerSpawnTrainHero(int32 train_n
 // int32                                   train_no                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   uid                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   hero_id                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   hero_role                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const TArray<int32>&                    limit_hero_list                                        (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                                    clear                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    reset                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerController::RequestTrainComputerSpawnCooperateHero(int32 train_no, int32 uid, int32 hero_id, const TArray<int32>& limit_hero_list, bool clear, bool reset)
+void APyMarvelPlayerController::RequestTrainComputerSpawnCooperateHero(int32 train_no, int32 uid, int32 hero_id, int32 hero_role, const TArray<int32>& limit_hero_list, bool clear, bool reset)
 {
 	static class UFunction* Func = nullptr;
 
@@ -942,6 +870,7 @@ void APyMarvelPlayerController::RequestTrainComputerSpawnCooperateHero(int32 tra
 	Parms.train_no = train_no;
 	Parms.uid = uid;
 	Parms.hero_id = hero_id;
+	Parms.hero_role = hero_role;
 	Parms.limit_hero_list = std::move(limit_hero_list);
 	Parms.clear = clear;
 	Parms.reset = reset;
@@ -1683,8 +1612,9 @@ void APyMarvelPlayerController::C_OnClientCrossConnectOtherDS()
 // const struct FVector&                   location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FRotator&                  rotation                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 // const struct FGameplayTag&              sculpt_tag                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// EHeroRole                               hero_role                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APyMarvelPlayerController::C_OnClientCrossSetData(int32 HeroId, int32 SkinID, const struct FVector& location, const struct FRotator& rotation, const struct FGameplayTag& sculpt_tag)
+void APyMarvelPlayerController::C_OnClientCrossSetData(int32 HeroId, int32 SkinID, const struct FVector& location, const struct FRotator& rotation, const struct FGameplayTag& sculpt_tag, EHeroRole hero_role)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1698,6 +1628,7 @@ void APyMarvelPlayerController::C_OnClientCrossSetData(int32 HeroId, int32 SkinI
 	Parms.location = std::move(location);
 	Parms.rotation = std::move(rotation);
 	Parms.sculpt_tag = std::move(sculpt_tag);
+	Parms.hero_role = hero_role;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

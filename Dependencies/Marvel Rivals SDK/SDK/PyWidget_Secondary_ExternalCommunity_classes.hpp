@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "SlateCore_structs.hpp"
+#include "Marvel_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ExternalCommunity.PyWidget_Discord_VerifyEmail
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_VerifyEmail final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -31,37 +31,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_VerifyEmail">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_VerifyEmail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_VerifyEmail")
 	}
 	static class UPyWidget_Discord_VerifyEmail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_VerifyEmail>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_VerifyEmail) == 0x000008, "Wrong alignment on UPyWidget_Discord_VerifyEmail");
-static_assert(sizeof(UPyWidget_Discord_VerifyEmail) == 0x0005C0, "Wrong size on UPyWidget_Discord_VerifyEmail");
+DUMPER7_ASSERTS_UPyWidget_Discord_VerifyEmail;
 
 // PythonClass PyWidget_Secondary_ExternalCommunity.PyWidget_Secondary_ExternalCommunity
-// 0x0920 (0x0EE0 - 0x05C0)
+// 0x0928 (0x0EF0 - 0x05C8)
 class UPyWidget_Secondary_ExternalCommunity final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           LeftSwitchAction;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightSwitchAction;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DiscordIcon;                                       // 0x05D0(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            FacebookIcon;                                      // 0x06A0(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            GatherIcon;                                        // 0x0770(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            BindingPhoneIcon;                                  // 0x0840(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            PrivilegeIcon;                                     // 0x0910(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OverseaPrivilegeIcon;                              // 0x09E0(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            NGPIcon;                                           // 0x0AB0(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            WeChatIcon;                                        // 0x0B80(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ItemUnit;                                          // 0x0C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FButtonSounds                          SwitchTagSound;                                    // 0x0C58(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OAIcon;                                            // 0x0C70(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            QQGroupIcon;                                       // 0x0D40(0x00D0)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MiniProgramIcon;                                   // 0x0E10(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           LeftSwitchAction;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightSwitchAction;                                 // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5D8[0x8];                                      // 0x05D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            DiscordIcon;                                       // 0x05E0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            FacebookIcon;                                      // 0x06B0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            GatherIcon;                                        // 0x0780(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            BindingPhoneIcon;                                  // 0x0850(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PrivilegeIcon;                                     // 0x0920(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OverseaPrivilegeIcon;                              // 0x09F0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            NGPIcon;                                           // 0x0AC0(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            WeChatIcon;                                        // 0x0B90(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ItemUnit;                                          // 0x0C60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FButtonSounds                          SwitchTagSound;                                    // 0x0C68(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OAIcon;                                            // 0x0C80(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            QQGroupIcon;                                       // 0x0D50(0x00D0)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MiniProgramIcon;                                   // 0x0E20(0x00D0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -72,33 +76,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ExternalCommunity">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ExternalCommunity")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ExternalCommunity")
 	}
 	static class UPyWidget_Secondary_ExternalCommunity* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ExternalCommunity>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ExternalCommunity) == 0x000010, "Wrong alignment on UPyWidget_Secondary_ExternalCommunity");
-static_assert(sizeof(UPyWidget_Secondary_ExternalCommunity) == 0x000EE0, "Wrong size on UPyWidget_Secondary_ExternalCommunity");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, LeftSwitchAction) == 0x0005C0, "Member 'UPyWidget_Secondary_ExternalCommunity::LeftSwitchAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, RightSwitchAction) == 0x0005C8, "Member 'UPyWidget_Secondary_ExternalCommunity::RightSwitchAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, DiscordIcon) == 0x0005D0, "Member 'UPyWidget_Secondary_ExternalCommunity::DiscordIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, FacebookIcon) == 0x0006A0, "Member 'UPyWidget_Secondary_ExternalCommunity::FacebookIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, GatherIcon) == 0x000770, "Member 'UPyWidget_Secondary_ExternalCommunity::GatherIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, BindingPhoneIcon) == 0x000840, "Member 'UPyWidget_Secondary_ExternalCommunity::BindingPhoneIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, PrivilegeIcon) == 0x000910, "Member 'UPyWidget_Secondary_ExternalCommunity::PrivilegeIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, OverseaPrivilegeIcon) == 0x0009E0, "Member 'UPyWidget_Secondary_ExternalCommunity::OverseaPrivilegeIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, NGPIcon) == 0x000AB0, "Member 'UPyWidget_Secondary_ExternalCommunity::NGPIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, WeChatIcon) == 0x000B80, "Member 'UPyWidget_Secondary_ExternalCommunity::WeChatIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, ItemUnit) == 0x000C50, "Member 'UPyWidget_Secondary_ExternalCommunity::ItemUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, SwitchTagSound) == 0x000C58, "Member 'UPyWidget_Secondary_ExternalCommunity::SwitchTagSound' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, OAIcon) == 0x000C70, "Member 'UPyWidget_Secondary_ExternalCommunity::OAIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, QQGroupIcon) == 0x000D40, "Member 'UPyWidget_Secondary_ExternalCommunity::QQGroupIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_ExternalCommunity, MiniProgramIcon) == 0x000E10, "Member 'UPyWidget_Secondary_ExternalCommunity::MiniProgramIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ExternalCommunity;
 
 // PythonClass PyWidget_Secondary_ExternalCommunity.PyWidget_Discord_EnterpriseWeChat
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_EnterpriseWeChat final : public UPyMarvelUserWidget
 {
 public:
@@ -109,18 +101,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_EnterpriseWeChat">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_EnterpriseWeChat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_EnterpriseWeChat")
 	}
 	static class UPyWidget_Discord_EnterpriseWeChat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_EnterpriseWeChat>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_EnterpriseWeChat) == 0x000008, "Wrong alignment on UPyWidget_Discord_EnterpriseWeChat");
-static_assert(sizeof(UPyWidget_Discord_EnterpriseWeChat) == 0x0005C0, "Wrong size on UPyWidget_Discord_EnterpriseWeChat");
+DUMPER7_ASSERTS_UPyWidget_Discord_EnterpriseWeChat;
 
 // PythonClass PyWidget_Secondary_ExternalCommunity.PyWidget_Discord_NgpMember
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_NgpMember final : public UPyMarvelUserWidget
 {
 public:
@@ -131,32 +126,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_NgpMember">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_NgpMember")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_NgpMember")
 	}
 	static class UPyWidget_Discord_NgpMember* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_NgpMember>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_NgpMember) == 0x000008, "Wrong alignment on UPyWidget_Discord_NgpMember");
-static_assert(sizeof(UPyWidget_Discord_NgpMember) == 0x0005C0, "Wrong size on UPyWidget_Discord_NgpMember");
+DUMPER7_ASSERTS_UPyWidget_Discord_NgpMember;
 
 // PythonClass PyWidget_Secondary_ExternalCommunity.PyWidget_Secondary_Discord_Binded_Success
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_Discord_Binded_Success final : public UPyWidget_SecondaryChildBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Discord_Binded_Success">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Discord_Binded_Success")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Discord_Binded_Success")
 	}
 	static class UPyWidget_Secondary_Discord_Binded_Success* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Discord_Binded_Success>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Discord_Binded_Success) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Discord_Binded_Success");
-static_assert(sizeof(UPyWidget_Secondary_Discord_Binded_Success) == 0x0005C0, "Wrong size on UPyWidget_Secondary_Discord_Binded_Success");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Discord_Binded_Success;
 
 }
 

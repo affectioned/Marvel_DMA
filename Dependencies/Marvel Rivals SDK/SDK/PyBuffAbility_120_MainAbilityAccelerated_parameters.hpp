@@ -24,9 +24,7 @@ struct PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnAbilityInitialized
 // 0x0004 (0x0004 - 0x0000)
@@ -35,9 +33,7 @@ struct PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized) == 0x000004, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized) == 0x000004, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized, AbilityID) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnAbilityInitialized;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnAttributeInited
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited final
 public:
 	class AMarvelBaseCharacter*                   Value;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited) == 0x000008, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited) == 0x000008, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited, Value) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited::Value' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnAttributeInited;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnEquipStateChanged
 // 0x02C8 (0x02C8 - 0x0000)
@@ -59,11 +53,7 @@ public:
 	struct FMarvelEquipmentTable                  WeaponInfo;                                        // 0x0008(0x02B8)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          bState;                                            // 0x02C0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged) == 0x000008, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged) == 0x0002C8, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged, Weapon) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged::Weapon' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged, WeaponInfo) == 0x000008, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged::WeaponInfo' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged, bState) == 0x0002C0, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged::bState' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnEquipStateChanged;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnGameplayActorAdded
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +62,7 @@ struct PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded) == 0x000008, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded) == 0x000008, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded, InActor) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorAdded;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnGameplayActorRemoved
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +71,7 @@ struct PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved) == 0x000008, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved) == 0x000008, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved, InActor) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnGameplayActorRemoved;
 
 // PythonFunction PyBuffAbility_120_MainAbilityAccelerated.PyBuffAbility_120_MainAbilityAccelerated.OnGameplayEffectStackChange
 // 0x0010 (0x0010 - 0x0000)
@@ -96,11 +82,7 @@ public:
 	int32                                         NewStackCount;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PreviousStackCount;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange) == 0x000004, "Wrong alignment on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange");
-static_assert(sizeof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange) == 0x000010, "Wrong size on PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange, Handle) == 0x000000, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange::Handle' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange, NewStackCount) == 0x000008, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange::NewStackCount' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange, PreviousStackCount) == 0x00000C, "Member 'PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange::PreviousStackCount' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_MainAbilityAccelerated_OnGameplayEffectStackChange;
 
 }
 

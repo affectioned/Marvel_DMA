@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyBondPanel.PyWidget_LobbyBond_Card
-// 0x0020 (0x08E0 - 0x08C0)
+// 0x0020 (0x0940 - 0x0920)
 class UPyWidget_LobbyBond_Card final : public UPyWidget_BaseCommonButton
 {
 public:
-	class UMarvelTextBlock*                       Text_AbilityName;                                  // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_AbilityIcon_Vx;                                // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Click;                                        // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_AbilityName;                                  // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_AbilityIcon_Vx;                                // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Click;                                        // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,29 +36,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyBond_Card">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyBond_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyBond_Card")
 	}
 	static class UPyWidget_LobbyBond_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyBond_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyBond_Card) == 0x000010, "Wrong alignment on UPyWidget_LobbyBond_Card");
-static_assert(sizeof(UPyWidget_LobbyBond_Card) == 0x0008E0, "Wrong size on UPyWidget_LobbyBond_Card");
-static_assert(offsetof(UPyWidget_LobbyBond_Card, Text_AbilityName) == 0x0008B8, "Member 'UPyWidget_LobbyBond_Card::Text_AbilityName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBond_Card, Img_AbilityIcon) == 0x0008C0, "Member 'UPyWidget_LobbyBond_Card::Img_AbilityIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBond_Card, Img_AbilityIcon_Vx) == 0x0008C8, "Member 'UPyWidget_LobbyBond_Card::Img_AbilityIcon_Vx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBond_Card, Anim_Click) == 0x0008D0, "Member 'UPyWidget_LobbyBond_Card::Anim_Click' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyBond_Card;
 
 // PythonClass PyWidget_LobbyBondPanel.PyWidget_LobbyBondPanel
-// 0x0020 (0x0628 - 0x0608)
+// 0x0020 (0x0630 - 0x0610)
 class UPyWidget_LobbyBondPanel final : public UPyWidget_LobbyPageList
 {
 public:
-	TSubclassOf<class UUserWidget>                HeroBond_CardUnit;                                 // 0x0608(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Show;                                         // 0x0610(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Hover;                                        // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Click;                                        // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroBond_CardUnit;                                 // 0x0610(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Show;                                         // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Hover;                                        // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Click;                                        // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -71,19 +70,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyBondPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyBondPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyBondPanel")
 	}
 	static class UPyWidget_LobbyBondPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyBondPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyBondPanel) == 0x000008, "Wrong alignment on UPyWidget_LobbyBondPanel");
-static_assert(sizeof(UPyWidget_LobbyBondPanel) == 0x000628, "Wrong size on UPyWidget_LobbyBondPanel");
-static_assert(offsetof(UPyWidget_LobbyBondPanel, HeroBond_CardUnit) == 0x000608, "Member 'UPyWidget_LobbyBondPanel::HeroBond_CardUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondPanel, Anim_Show) == 0x000610, "Member 'UPyWidget_LobbyBondPanel::Anim_Show' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondPanel, Anim_Hover) == 0x000618, "Member 'UPyWidget_LobbyBondPanel::Anim_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondPanel, Anim_Click) == 0x000620, "Member 'UPyWidget_LobbyBondPanel::Anim_Click' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyBondPanel;
 
 }
 

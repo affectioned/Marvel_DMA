@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity125_RewardItem.PyWidget_Activity125_RewardItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity125_RewardItem final : public UPyWidget_Button
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity125_RewardItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity125_RewardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity125_RewardItem")
 	}
 	static class UPyWidget_Activity125_RewardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity125_RewardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity125_RewardItem) == 0x000008, "Wrong alignment on UPyWidget_Activity125_RewardItem");
-static_assert(sizeof(UPyWidget_Activity125_RewardItem) == 0x000728, "Wrong size on UPyWidget_Activity125_RewardItem");
+DUMPER7_ASSERTS_UPyWidget_Activity125_RewardItem;
 
 }
 

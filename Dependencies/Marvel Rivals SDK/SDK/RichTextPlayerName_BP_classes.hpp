@@ -23,15 +23,18 @@ class URichTextPlayerName_BP_C final : public UPyHyperlinkDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextPlayerName_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextPlayerName_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextPlayerName_BP_C")
 	}
 	static class URichTextPlayerName_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextPlayerName_BP_C>();
 	}
 };
-static_assert(alignof(URichTextPlayerName_BP_C) == 0x000010, "Wrong alignment on URichTextPlayerName_BP_C");
-static_assert(sizeof(URichTextPlayerName_BP_C) == 0x000F50, "Wrong size on URichTextPlayerName_BP_C");
+DUMPER7_ASSERTS_URichTextPlayerName_BP_C;
 
 }
 

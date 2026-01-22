@@ -21,9 +21,7 @@ struct PyHeroStatisticsUnit_PyOnTakePayloadHeal final
 public:
 	float                                         HealValue;                                         // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHeroStatisticsUnit_PyOnTakePayloadHeal) == 0x000004, "Wrong alignment on PyHeroStatisticsUnit_PyOnTakePayloadHeal");
-static_assert(sizeof(PyHeroStatisticsUnit_PyOnTakePayloadHeal) == 0x000004, "Wrong size on PyHeroStatisticsUnit_PyOnTakePayloadHeal");
-static_assert(offsetof(PyHeroStatisticsUnit_PyOnTakePayloadHeal, HealValue) == 0x000000, "Member 'PyHeroStatisticsUnit_PyOnTakePayloadHeal::HealValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyHeroStatisticsUnit_PyOnTakePayloadHeal;
 
 }
 

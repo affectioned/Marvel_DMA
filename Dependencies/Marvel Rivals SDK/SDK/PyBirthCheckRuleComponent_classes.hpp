@@ -23,15 +23,18 @@ class UPyBirthCheckRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBirthCheckRuleComponent">();
+		STATIC_CLASS_IMPL("PyBirthCheckRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBirthCheckRuleComponent")
 	}
 	static class UPyBirthCheckRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBirthCheckRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBirthCheckRuleComponent) == 0x000008, "Wrong alignment on UPyBirthCheckRuleComponent");
-static_assert(sizeof(UPyBirthCheckRuleComponent) == 0x000108, "Wrong size on UPyBirthCheckRuleComponent");
+DUMPER7_ASSERTS_UPyBirthCheckRuleComponent;
 
 }
 

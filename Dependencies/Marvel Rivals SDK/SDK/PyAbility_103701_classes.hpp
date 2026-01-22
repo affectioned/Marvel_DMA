@@ -11,24 +11,21 @@
 #include "Basic.hpp"
 
 #include "Hero_1037_classes.hpp"
-#include "PyWidget_AbilityCharge_V5_classes.hpp"
-#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "AkAudio_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_103701.PyAbility_103701
-// 0x0038 (0x2AA8 - 0x2A70)
+// 0x0038 (0x2AF8 - 0x2AC0)
 class UPyAbility_103701 : public UAbility_103701
 {
 public:
-	class AActor*                                 ShootingTarget;                                    // 0x2A70(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float Value)>   OnAddIronByValue;                                  // 0x2A78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnShieldSummonHit;                                 // 0x2A88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class AActor* NewTarget)> OnShootingTargetChangeDelegate;          // 0x2A98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class AActor*                                 ShootingTarget;                                    // 0x2AC0(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Value)>   OnAddIronByValue;                                  // 0x2AC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnShieldSummonHit;                                 // 0x2AD8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* NewTarget)> OnShootingTargetChangeDelegate;          // 0x2AE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -43,48 +40,65 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103701">();
+		STATIC_CLASS_IMPL("PyAbility_103701")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103701")
 	}
 	static class UPyAbility_103701* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103701>();
 	}
 };
-static_assert(alignof(UPyAbility_103701) == 0x000008, "Wrong alignment on UPyAbility_103701");
-static_assert(sizeof(UPyAbility_103701) == 0x002AA8, "Wrong size on UPyAbility_103701");
-static_assert(offsetof(UPyAbility_103701, ShootingTarget) == 0x002A70, "Member 'UPyAbility_103701::ShootingTarget' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103701, OnAddIronByValue) == 0x002A78, "Member 'UPyAbility_103701::OnAddIronByValue' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103701, OnShieldSummonHit) == 0x002A88, "Member 'UPyAbility_103701::OnShieldSummonHit' has a wrong offset!");
-static_assert(offsetof(UPyAbility_103701, OnShootingTargetChangeDelegate) == 0x002A98, "Member 'UPyAbility_103701::OnShootingTargetChangeDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_103701;
 
-// PythonClass PyAbility_103701.PyWidget_AbilityChargeSingle_103701
-// 0x0000 (0x05E8 - 0x05E8)
-class UPyWidget_AbilityChargeSingle_103701 final : public UPyWidget_AbilityChargeSingle_v5
+// PythonClass PyAbility_103701.PyCue_Ability_Loop_10370100
+// 0x0070 (0x1230 - 0x11C0)
+class APyCue_Ability_Loop_10370100 final : public AMarvelCueNotify_Ability
 {
 public:
-	void Consume();
-	void Restore();
+	int32                                         IronAudio1;                                        // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IronAudio2;                                        // 0x11C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IronAudio3;                                        // 0x11C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RAudio1;                                           // 0x11CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RAudio2;                                           // 0x11D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RAudio3;                                           // 0x11D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              WeaponFXDisappear;                                 // 0x11D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              WeaponFXAppear;                                    // 0x11E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSynergyActivated;                                // 0x11F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSynergyRemoved;                                  // 0x1208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              StopWeaponFXAppear;                                // 0x1218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
+	void IronCountChanged(int32 IronCount);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
+	void OnTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityChargeSingle_103701">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10370100")
 	}
-	static class UPyWidget_AbilityChargeSingle_103701* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_AbilityChargeSingle_103701>();
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10370100")
+	}
+	static class APyCue_Ability_Loop_10370100* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APyCue_Ability_Loop_10370100>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityChargeSingle_103701) == 0x000008, "Wrong alignment on UPyWidget_AbilityChargeSingle_103701");
-static_assert(sizeof(UPyWidget_AbilityChargeSingle_103701) == 0x0005E8, "Wrong size on UPyWidget_AbilityChargeSingle_103701");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10370100;
 
 // PythonClass PyAbility_103701.PyProjectile_103701
-// 0x0010 (0x3BA0 - 0x3B90)
+// 0x0010 (0x3EB0 - 0x3EA0)
 class APyProjectile_103701 : public AMarvelAbilityTargetActor_Projectile
 {
 public:
-	uint8                                         Pad_3B88[0x8];                                     // 0x3B88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UProjectileHomingComponent*             HomingComp;                                        // 0x3B90(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3E98[0x8];                                     // 0x3E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UProjectileHomingComponent*             HomingComp;                                        // 0x3EA0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAbilityShootingTargetChange(class AActor* NewTarget);
@@ -99,124 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_103701">();
+		STATIC_CLASS_IMPL("PyProjectile_103701")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_103701")
 	}
 	static class APyProjectile_103701* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_103701>();
 	}
 };
-static_assert(alignof(APyProjectile_103701) == 0x000010, "Wrong alignment on APyProjectile_103701");
-static_assert(sizeof(APyProjectile_103701) == 0x003BA0, "Wrong size on APyProjectile_103701");
-static_assert(offsetof(APyProjectile_103701, HomingComp) == 0x003B90, "Member 'APyProjectile_103701::HomingComp' has a wrong offset!");
-
-// PythonClass PyAbility_103701.PyUIController_103701
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_103701 final : public UUIC_Ability
-{
-public:
-	void SetAbility(int32 InAbilityID, class UGameplayAbility* InAbility);
-	void OnDestruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_103701">();
-	}
-	static class UPyUIController_103701* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_103701>();
-	}
-};
-static_assert(alignof(UPyUIController_103701) == 0x000008, "Wrong alignment on UPyUIController_103701");
-static_assert(sizeof(UPyUIController_103701) == 0x000F10, "Wrong size on UPyUIController_103701");
-
-// PythonClass PyAbility_103701.PyCue_Ability_Loop_10370100
-// 0x0070 (0x1220 - 0x11B0)
-class APyCue_Ability_Loop_10370100 final : public AMarvelCueNotify_Ability
-{
-public:
-	int32                                         IronAudio1;                                        // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IronAudio2;                                        // 0x11B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IronAudio3;                                        // 0x11B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RAudio1;                                           // 0x11BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RAudio2;                                           // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RAudio3;                                           // 0x11C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              WeaponFXDisappear;                                 // 0x11C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              WeaponFXAppear;                                    // 0x11D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSynergyActivated;                                // 0x11E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSynergyRemoved;                                  // 0x11F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              StopWeaponFXAppear;                                // 0x1208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void IronCountChanged(int32 IronCount);
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
-	void OnTagUpdate(const struct FGameplayTag& TagUpdated, bool TagExists);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10370100">();
-	}
-	static class APyCue_Ability_Loop_10370100* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APyCue_Ability_Loop_10370100>();
-	}
-};
-static_assert(alignof(APyCue_Ability_Loop_10370100) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10370100");
-static_assert(sizeof(APyCue_Ability_Loop_10370100) == 0x001220, "Wrong size on APyCue_Ability_Loop_10370100");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, IronAudio1) == 0x0011B0, "Member 'APyCue_Ability_Loop_10370100::IronAudio1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, IronAudio2) == 0x0011B4, "Member 'APyCue_Ability_Loop_10370100::IronAudio2' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, IronAudio3) == 0x0011B8, "Member 'APyCue_Ability_Loop_10370100::IronAudio3' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, RAudio1) == 0x0011BC, "Member 'APyCue_Ability_Loop_10370100::RAudio1' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, RAudio2) == 0x0011C0, "Member 'APyCue_Ability_Loop_10370100::RAudio2' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, RAudio3) == 0x0011C4, "Member 'APyCue_Ability_Loop_10370100::RAudio3' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, WeaponFXDisappear) == 0x0011C8, "Member 'APyCue_Ability_Loop_10370100::WeaponFXDisappear' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, WeaponFXAppear) == 0x0011D8, "Member 'APyCue_Ability_Loop_10370100::WeaponFXAppear' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, OnSynergyActivated) == 0x0011E8, "Member 'APyCue_Ability_Loop_10370100::OnSynergyActivated' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, OnSynergyRemoved) == 0x0011F8, "Member 'APyCue_Ability_Loop_10370100::OnSynergyRemoved' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10370100, StopWeaponFXAppear) == 0x001208, "Member 'APyCue_Ability_Loop_10370100::StopWeaponFXAppear' has a wrong offset!");
-
-// PythonClass PyAbility_103701.PyWidget_AbilityCharge_103701
-// 0x0128 (0x0690 - 0x0568)
-class UPyWidget_AbilityCharge_103701 final : public UWidget_AbilityEnergy_Charge
-{
-public:
-	float                                         FadeInInterval;                                    // 0x0568(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWidgetStyle_AbilityCharge             DefaultStyle;                                      // 0x0570(0x0110)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 InCurrentValue)> OnCurSegmentChanged;                        // 0x0680(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-
-public:
-	void OnInitialized();
-	void SetStyle(const struct FWidgetStyle_AbilityCharge& Style);
-	void SetPercent(float InCurrentValue, float InMaxValue);
-	void SetSpeed(float InMaxValue, float InSpeedValue);
-	void UpdatePercentWithDebounce(float InCurrentValue, float InMaxValue);
-	void SetSegmentCur(int32 SegmentCur);
-	void CustomActivate();
-	void CustomDeactivate();
-	void SetVisible(bool InVisible);
-	void SetVisibleImmediately(bool InVisible);
-	void PlayUIAudio(int32 AudioID);
-	void PostUIAudioCallback(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_AbilityCharge_103701">();
-	}
-	static class UPyWidget_AbilityCharge_103701* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_AbilityCharge_103701>();
-	}
-};
-static_assert(alignof(UPyWidget_AbilityCharge_103701) == 0x000008, "Wrong alignment on UPyWidget_AbilityCharge_103701");
-static_assert(sizeof(UPyWidget_AbilityCharge_103701) == 0x000690, "Wrong size on UPyWidget_AbilityCharge_103701");
-static_assert(offsetof(UPyWidget_AbilityCharge_103701, FadeInInterval) == 0x000568, "Member 'UPyWidget_AbilityCharge_103701::FadeInInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_103701, DefaultStyle) == 0x000570, "Member 'UPyWidget_AbilityCharge_103701::DefaultStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_103701, OnCurSegmentChanged) == 0x000680, "Member 'UPyWidget_AbilityCharge_103701::OnCurSegmentChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APyProjectile_103701;
 
 }
 

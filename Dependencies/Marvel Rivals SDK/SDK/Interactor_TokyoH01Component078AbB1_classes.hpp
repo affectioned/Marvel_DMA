@@ -23,15 +23,18 @@ class AInteractor_TokyoH01Component078AbB1_C final : public AMarvelInteractableA
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Interactor_TokyoH01Component078AbB1_C">();
+		BP_STATIC_CLASS_IMPL("Interactor_TokyoH01Component078AbB1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Interactor_TokyoH01Component078AbB1_C")
 	}
 	static class AInteractor_TokyoH01Component078AbB1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInteractor_TokyoH01Component078AbB1_C>();
 	}
 };
-static_assert(alignof(AInteractor_TokyoH01Component078AbB1_C) == 0x000010, "Wrong alignment on AInteractor_TokyoH01Component078AbB1_C");
-static_assert(sizeof(AInteractor_TokyoH01Component078AbB1_C) == 0x000790, "Wrong size on AInteractor_TokyoH01Component078AbB1_C");
+DUMPER7_ASSERTS_AInteractor_TokyoH01Component078AbB1_C;
 
 }
 

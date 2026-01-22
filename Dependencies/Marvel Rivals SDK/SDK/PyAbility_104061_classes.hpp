@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "Hero_1040_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "Hero_1040_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_104061.PyAbility_104061
-// 0x0008 (0x2B28 - 0x2B20)
+// 0x0008 (0x2B78 - 0x2B70)
 class UPyAbility_104061 : public UAbility_104061
 {
 public:
-	int32                                         CurrentHitTimes;                                   // 0x2B20(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurrentHitTimes;                                   // 0x2B70(0x0004)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool CheckIsWalking(float DeltaTime);
@@ -40,19 +40,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104061">();
+		STATIC_CLASS_IMPL("PyAbility_104061")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104061")
 	}
 	static class UPyAbility_104061* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104061>();
 	}
 };
-static_assert(alignof(UPyAbility_104061) == 0x000008, "Wrong alignment on UPyAbility_104061");
-static_assert(sizeof(UPyAbility_104061) == 0x002B28, "Wrong size on UPyAbility_104061");
-static_assert(offsetof(UPyAbility_104061, CurrentHitTimes) == 0x002B20, "Member 'UPyAbility_104061::CurrentHitTimes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104061;
 
 // PythonClass PyAbility_104061.PyTraceComponent_10406101
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2600 - 0x2600)
 class UPyTraceComponent_10406101 final : public UMarvelAgentTraceComponent
 {
 public:
@@ -61,27 +63,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_10406101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_10406101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_10406101")
 	}
 	static class UPyTraceComponent_10406101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_10406101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_10406101) == 0x000010, "Wrong alignment on UPyTraceComponent_10406101");
-static_assert(sizeof(UPyTraceComponent_10406101) == 0x002200, "Wrong size on UPyTraceComponent_10406101");
+DUMPER7_ASSERTS_UPyTraceComponent_10406101;
 
 // PythonClass PyAbility_104061.PyCue_Ability_Instant_10406103
-// 0x0040 (0x11F0 - 0x11B0)
+// 0x0040 (0x1200 - 0x11C0)
 class APyCue_Ability_Instant_10406103 final : public AMarvelCueNotify_Ability
 {
 public:
-	bool                                          bRotateFX;                                         // 0x11B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B1[0x3];                                     // 0x11B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayLengthToExecute;                              // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         FXAsset;                                           // 0x11B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               RelativeRotation;                                  // 0x11C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                RelativeLocation;                                  // 0x11D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRotateFX;                                         // 0x11C0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C1[0x3];                                     // 0x11C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayLengthToExecute;                              // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         FXAsset;                                           // 0x11C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               RelativeRotation;                                  // 0x11D0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                RelativeLocation;                                  // 0x11E8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void DelayExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -90,27 +95,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10406103">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10406103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10406103")
 	}
 	static class APyCue_Ability_Instant_10406103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Instant_10406103>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Instant_10406103) == 0x000010, "Wrong alignment on APyCue_Ability_Instant_10406103");
-static_assert(sizeof(APyCue_Ability_Instant_10406103) == 0x0011F0, "Wrong size on APyCue_Ability_Instant_10406103");
-static_assert(offsetof(APyCue_Ability_Instant_10406103, bRotateFX) == 0x0011B0, "Member 'APyCue_Ability_Instant_10406103::bRotateFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Instant_10406103, DelayLengthToExecute) == 0x0011B4, "Member 'APyCue_Ability_Instant_10406103::DelayLengthToExecute' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Instant_10406103, FXAsset) == 0x0011B8, "Member 'APyCue_Ability_Instant_10406103::FXAsset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Instant_10406103, RelativeRotation) == 0x0011C0, "Member 'APyCue_Ability_Instant_10406103::RelativeRotation' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Instant_10406103, RelativeLocation) == 0x0011D8, "Member 'APyCue_Ability_Instant_10406103::RelativeLocation' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Instant_10406103;
 
 // PythonClass PyAbility_104061.PyCue_Scope_HitImpact_10406101
-// 0x0050 (0x0618 - 0x05C8)
+// 0x0050 (0x0638 - 0x05E8)
 class UPyCue_Scope_HitImpact_10406101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	TMap<int32, int32>                            HitAudioIDsMap;                                    // 0x05C8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            HitAudioIDsMap;                                    // 0x05E8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	int32 GetAbilityHitAudioID(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -118,16 +121,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10406101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10406101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10406101")
 	}
 	static class UPyCue_Scope_HitImpact_10406101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10406101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10406101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10406101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10406101) == 0x000618, "Wrong size on UPyCue_Scope_HitImpact_10406101");
-static_assert(offsetof(UPyCue_Scope_HitImpact_10406101, HitAudioIDsMap) == 0x0005C8, "Member 'UPyCue_Scope_HitImpact_10406101::HitAudioIDsMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10406101;
 
 }
 

@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "Marvel_structs.hpp"
+
 
 namespace SDK::Params
 {
 
 // Function HeroPackageRules.HeroPackageFuncLibrary.UpdatePackageDataTables
-// 0x0004 (0x0004 - 0x0000)
+// 0x0001 (0x0001 - 0x0000)
 struct HeroPackageFuncLibrary_UpdatePackageDataTables final
 {
 public:
-	int32                                         InPackageRulesType;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelPackageContext                  InPackageContext;                                  // 0x0000(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(HeroPackageFuncLibrary_UpdatePackageDataTables) == 0x000004, "Wrong alignment on HeroPackageFuncLibrary_UpdatePackageDataTables");
-static_assert(sizeof(HeroPackageFuncLibrary_UpdatePackageDataTables) == 0x000004, "Wrong size on HeroPackageFuncLibrary_UpdatePackageDataTables");
-static_assert(offsetof(HeroPackageFuncLibrary_UpdatePackageDataTables, InPackageRulesType) == 0x000000, "Member 'HeroPackageFuncLibrary_UpdatePackageDataTables::InPackageRulesType' has a wrong offset!");
+DUMPER7_ASSERTS_HeroPackageFuncLibrary_UpdatePackageDataTables;
 
 }
 

@@ -10,18 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Review_AllTypeItemPanel.PyWidget_Review_AllTypeItemPanel
-// 0x0008 (0x0600 - 0x05F8)
-class UPyWidget_Review_AllTypeItemPanel final : public UPyWidget_ModuleMainPanel
+// 0x0008 (0x05D0 - 0x05C8)
+class UPyWidget_Review_AllTypeItemPanel final : public UPyMarvelUserWidget
 {
 public:
-	TSubclassOf<class UUserWidget>                DetailItemClass;                                   // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                DetailItemClass;                                   // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Review_AllTypeItemPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Review_AllTypeItemPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Review_AllTypeItemPanel")
 	}
 	static class UPyWidget_Review_AllTypeItemPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Review_AllTypeItemPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Review_AllTypeItemPanel) == 0x000008, "Wrong alignment on UPyWidget_Review_AllTypeItemPanel");
-static_assert(sizeof(UPyWidget_Review_AllTypeItemPanel) == 0x000600, "Wrong size on UPyWidget_Review_AllTypeItemPanel");
-static_assert(offsetof(UPyWidget_Review_AllTypeItemPanel, DetailItemClass) == 0x0005F8, "Member 'UPyWidget_Review_AllTypeItemPanel::DetailItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Review_AllTypeItemPanel;
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Hero_1041_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "Hero_1041_classes.hpp"
 
 
 namespace SDK
@@ -28,23 +28,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104101">();
+		STATIC_CLASS_IMPL("PyConfig_104101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104101")
 	}
 	static class UPyConfig_104101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104101>();
 	}
 };
-static_assert(alignof(UPyConfig_104101) == 0x000008, "Wrong alignment on UPyConfig_104101");
-static_assert(sizeof(UPyConfig_104101) == 0x000108, "Wrong size on UPyConfig_104101");
-static_assert(offsetof(UPyConfig_104101, BindAbility) == 0x0000A0, "Member 'UPyConfig_104101::BindAbility' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104101;
 
 // PythonClass PyAbility_104101.PyAbility_104101
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_104101 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnPassiveAmmoAdd;                                  // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPassiveAmmoAdd;                                  // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -55,19 +57,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104101">();
+		STATIC_CLASS_IMPL("PyAbility_104101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104101")
 	}
 	static class UPyAbility_104101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104101>();
 	}
 };
-static_assert(alignof(UPyAbility_104101) == 0x000008, "Wrong alignment on UPyAbility_104101");
-static_assert(sizeof(UPyAbility_104101) == 0x002A00, "Wrong size on UPyAbility_104101");
-static_assert(offsetof(UPyAbility_104101, OnPassiveAmmoAdd) == 0x0029F0, "Member 'UPyAbility_104101::OnPassiveAmmoAdd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104101;
 
 // PythonClass PyAbility_104101.PyUIController_104101
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_104101 final : public UUIC_Ability
 {
 public:
@@ -77,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_104101">();
+		STATIC_CLASS_IMPL("PyUIController_104101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_104101")
 	}
 	static class UPyUIController_104101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_104101>();
 	}
 };
-static_assert(alignof(UPyUIController_104101) == 0x000008, "Wrong alignment on UPyUIController_104101");
-static_assert(sizeof(UPyUIController_104101) == 0x000F10, "Wrong size on UPyUIController_104101");
+DUMPER7_ASSERTS_UPyUIController_104101;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BuffAbility_10444104_TimelinePlayRate_BP.BuffAbility_10444104_TimelinePlayRate_BP_C
-// 0x0000 (0x1410 - 0x1410)
+// 0x0000 (0x1428 - 0x1428)
 class UBuffAbility_10444104_TimelinePlayRate_BP_C final : public UMarvelTimelineAccelerateAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuffAbility_10444104_TimelinePlayRate_BP_C">();
+		BP_STATIC_CLASS_IMPL("BuffAbility_10444104_TimelinePlayRate_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuffAbility_10444104_TimelinePlayRate_BP_C")
 	}
 	static class UBuffAbility_10444104_TimelinePlayRate_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuffAbility_10444104_TimelinePlayRate_BP_C>();
 	}
 };
-static_assert(alignof(UBuffAbility_10444104_TimelinePlayRate_BP_C) == 0x000008, "Wrong alignment on UBuffAbility_10444104_TimelinePlayRate_BP_C");
-static_assert(sizeof(UBuffAbility_10444104_TimelinePlayRate_BP_C) == 0x001410, "Wrong size on UBuffAbility_10444104_TimelinePlayRate_BP_C");
+DUMPER7_ASSERTS_UBuffAbility_10444104_TimelinePlayRate_BP_C;
 
 }
 

@@ -19,20 +19,20 @@ namespace SDK
 {
 
 // PythonClass PyLevelSummoned_20020901.PyLevelSummoned_20020901
-// 0x0090 (0x1040 - 0x0FB0)
+// 0x0090 (0x1070 - 0x0FE0)
 class APyLevelSummoned_20020901 final : public APortalViewActor_Level
 {
 public:
-	class FString                                 TargetLegalZone;                                   // 0x0FB0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ActiveState;                                       // 0x0FC0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DefaultActive;                                     // 0x0FC4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          MainPortal;                                        // 0x0FC5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_FC6[0x2];                                      // 0x0FC6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, class APortalViewActor_Level*> LinkedPortalDict;                             // 0x0FC8(0x0050)(Edit, NativeAccessSpecifierPublic)
-	float                                         PortalCloseDelay;                                  // 0x1018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_101C[0x4];                                     // 0x101C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(int32 NewState)> DispatchActiveStateChanged;                       // 0x1020(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              DispatchOnLinkPortalUpdate;                        // 0x1030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class FString                                 TargetLegalZone;                                   // 0x0FE0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ActiveState;                                       // 0x0FF0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultActive;                                     // 0x0FF4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          MainPortal;                                        // 0x0FF5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FF6[0x2];                                      // 0x0FF6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, class APortalViewActor_Level*> LinkedPortalDict;                             // 0x0FF8(0x0050)(Edit, NativeAccessSpecifierPublic)
+	float                                         PortalCloseDelay;                                  // 0x1048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_104C[0x4];                                     // 0x104C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 NewState)> DispatchActiveStateChanged;                       // 0x1050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              DispatchOnLinkPortalUpdate;                        // 0x1060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -48,26 +48,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSummoned_20020901">();
+		STATIC_CLASS_IMPL("PyLevelSummoned_20020901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSummoned_20020901")
 	}
 	static class APyLevelSummoned_20020901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelSummoned_20020901>();
 	}
 };
-static_assert(alignof(APyLevelSummoned_20020901) == 0x000010, "Wrong alignment on APyLevelSummoned_20020901");
-static_assert(sizeof(APyLevelSummoned_20020901) == 0x001040, "Wrong size on APyLevelSummoned_20020901");
-static_assert(offsetof(APyLevelSummoned_20020901, TargetLegalZone) == 0x000FB0, "Member 'APyLevelSummoned_20020901::TargetLegalZone' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, ActiveState) == 0x000FC0, "Member 'APyLevelSummoned_20020901::ActiveState' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, DefaultActive) == 0x000FC4, "Member 'APyLevelSummoned_20020901::DefaultActive' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, MainPortal) == 0x000FC5, "Member 'APyLevelSummoned_20020901::MainPortal' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, LinkedPortalDict) == 0x000FC8, "Member 'APyLevelSummoned_20020901::LinkedPortalDict' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, PortalCloseDelay) == 0x001018, "Member 'APyLevelSummoned_20020901::PortalCloseDelay' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, DispatchActiveStateChanged) == 0x001020, "Member 'APyLevelSummoned_20020901::DispatchActiveStateChanged' has a wrong offset!");
-static_assert(offsetof(APyLevelSummoned_20020901, DispatchOnLinkPortalUpdate) == 0x001030, "Member 'APyLevelSummoned_20020901::DispatchOnLinkPortalUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelSummoned_20020901;
 
 // PythonClass PyLevelSummoned_20020901.PyCue_Level_20020901
-// 0x0000 (0x1380 - 0x1380)
+// 0x0000 (0x13F0 - 0x13F0)
 class APyCue_Level_20020901 final : public ACue_Summoner_Loop_10186301_Level
 {
 public:
@@ -79,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_20020901">();
+		STATIC_CLASS_IMPL("PyCue_Level_20020901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_20020901")
 	}
 	static class APyCue_Level_20020901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_20020901>();
 	}
 };
-static_assert(alignof(APyCue_Level_20020901) == 0x000010, "Wrong alignment on APyCue_Level_20020901");
-static_assert(sizeof(APyCue_Level_20020901) == 0x001380, "Wrong size on APyCue_Level_20020901");
+DUMPER7_ASSERTS_APyCue_Level_20020901;
 
 }
 

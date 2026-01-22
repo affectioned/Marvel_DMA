@@ -21,9 +21,7 @@ struct PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover final
 public:
 	bool                                          is_hover;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover");
-static_assert(sizeof(PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover) == 0x000001, "Wrong size on PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover");
-static_assert(offsetof(PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover, is_hover) == 0x000000, "Member 'PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover::is_hover' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_SeasonStory_PageBtn_SetIsHover;
 
 }
 

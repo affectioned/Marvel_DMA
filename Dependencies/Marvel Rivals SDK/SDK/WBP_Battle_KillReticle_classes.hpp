@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_KillReticle.WBP_Battle_KillReticle_C
-// 0x0028 (0x0598 - 0x0570)
+// 0x0028 (0x05A0 - 0x0578)
 class UWBP_Battle_KillReticle_C final : public UPyWidget_LocalBattleKillReticleCenter
 {
 public:
-	class UWidgetAnimation*                       Anim_Show;                                         // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Kill;                                       // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Kill1;                                      // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Kill2;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx_Kill3;                                      // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Show;                                         // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Kill;                                       // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Kill1;                                      // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Kill2;                                      // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx_Kill3;                                      // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_KillReticle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_KillReticle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_KillReticle_C")
 	}
 	static class UWBP_Battle_KillReticle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_KillReticle_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_KillReticle_C) == 0x000008, "Wrong alignment on UWBP_Battle_KillReticle_C");
-static_assert(sizeof(UWBP_Battle_KillReticle_C) == 0x000598, "Wrong size on UWBP_Battle_KillReticle_C");
-static_assert(offsetof(UWBP_Battle_KillReticle_C, Anim_Show) == 0x000570, "Member 'UWBP_Battle_KillReticle_C::Anim_Show' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_KillReticle_C, Img_Vx_Kill) == 0x000578, "Member 'UWBP_Battle_KillReticle_C::Img_Vx_Kill' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_KillReticle_C, Img_Vx_Kill1) == 0x000580, "Member 'UWBP_Battle_KillReticle_C::Img_Vx_Kill1' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_KillReticle_C, Img_Vx_Kill2) == 0x000588, "Member 'UWBP_Battle_KillReticle_C::Img_Vx_Kill2' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_KillReticle_C, Img_Vx_Kill3) == 0x000590, "Member 'UWBP_Battle_KillReticle_C::Img_Vx_Kill3' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_KillReticle_C;
 
 }
 

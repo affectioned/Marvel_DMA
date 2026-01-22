@@ -23,15 +23,18 @@ class UPyMosUEClient final : public UMosUEClient
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMosUEClient">();
+		STATIC_CLASS_IMPL("PyMosUEClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMosUEClient")
 	}
 	static class UPyMosUEClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMosUEClient>();
 	}
 };
-static_assert(alignof(UPyMosUEClient) == 0x000010, "Wrong alignment on UPyMosUEClient");
-static_assert(sizeof(UPyMosUEClient) == 0x000160, "Wrong size on UPyMosUEClient");
+DUMPER7_ASSERTS_UPyMosUEClient;
 
 }
 

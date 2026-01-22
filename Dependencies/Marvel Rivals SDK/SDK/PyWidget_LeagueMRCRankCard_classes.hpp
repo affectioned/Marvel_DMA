@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueMRCRankCard.PyWidget_LeagueMRCRankCard
-// 0x0030 (0x05F0 - 0x05C0)
+// 0x0030 (0x05F8 - 0x05C8)
 class UPyWidget_LeagueMRCRankCard final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             ImgChampionBg;                                     // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgRunnerUpBg;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgThirdBg;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgOtherBg;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMaterialInterface*>             ResultTextMaterial;                                // 0x05E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             ImgChampionBg;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgRunnerUpBg;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgThirdBg;                                        // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgOtherBg;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInterface*>             ResultTextMaterial;                                // 0x05E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueMRCRankCard">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueMRCRankCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueMRCRankCard")
 	}
 	static class UPyWidget_LeagueMRCRankCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueMRCRankCard>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueMRCRankCard) == 0x000008, "Wrong alignment on UPyWidget_LeagueMRCRankCard");
-static_assert(sizeof(UPyWidget_LeagueMRCRankCard) == 0x0005F0, "Wrong size on UPyWidget_LeagueMRCRankCard");
-static_assert(offsetof(UPyWidget_LeagueMRCRankCard, ImgChampionBg) == 0x0005C0, "Member 'UPyWidget_LeagueMRCRankCard::ImgChampionBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCRankCard, ImgRunnerUpBg) == 0x0005C8, "Member 'UPyWidget_LeagueMRCRankCard::ImgRunnerUpBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCRankCard, ImgThirdBg) == 0x0005D0, "Member 'UPyWidget_LeagueMRCRankCard::ImgThirdBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCRankCard, ImgOtherBg) == 0x0005D8, "Member 'UPyWidget_LeagueMRCRankCard::ImgOtherBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueMRCRankCard, ResultTextMaterial) == 0x0005E0, "Member 'UPyWidget_LeagueMRCRankCard::ResultTextMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueMRCRankCard;
 
 }
 

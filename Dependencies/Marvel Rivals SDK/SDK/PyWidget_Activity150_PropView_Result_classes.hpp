@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity150_PropView_Result.PyWidget_Activity150_PropView_Result
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_Activity150_PropView_Result final : public UPyWidget_ActivityExpBpBase_PanelBase
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_PropView_Result">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_PropView_Result")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_PropView_Result")
 	}
 	static class UPyWidget_Activity150_PropView_Result* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_PropView_Result>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_PropView_Result) == 0x000008, "Wrong alignment on UPyWidget_Activity150_PropView_Result");
-static_assert(sizeof(UPyWidget_Activity150_PropView_Result) == 0x000600, "Wrong size on UPyWidget_Activity150_PropView_Result");
+DUMPER7_ASSERTS_UPyWidget_Activity150_PropView_Result;
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101431.PyAbility_101431
-// 0x0010 (0x2B00 - 0x2AF0)
+// 0x0010 (0x2B50 - 0x2B40)
 class UPyAbility_101431 : public UAbility_105
 {
 public:
-	TMulticastInlineDelegate<void(class UMarvelWeaponTask_Firing* FireTask)> OnCreateFireTask;       // 0x2AF0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UMarvelWeaponTask_Firing* FireTask)> OnCreateFireTask;       // 0x2B40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	class UMarvelWeaponTask_Firing* WeaponFireTask();
@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101431">();
+		STATIC_CLASS_IMPL("PyAbility_101431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101431")
 	}
 	static class UPyAbility_101431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101431>();
 	}
 };
-static_assert(alignof(UPyAbility_101431) == 0x000008, "Wrong alignment on UPyAbility_101431");
-static_assert(sizeof(UPyAbility_101431) == 0x002B00, "Wrong size on UPyAbility_101431");
-static_assert(offsetof(UPyAbility_101431, OnCreateFireTask) == 0x002AF0, "Member 'UPyAbility_101431::OnCreateFireTask' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101431;
 
 }
 

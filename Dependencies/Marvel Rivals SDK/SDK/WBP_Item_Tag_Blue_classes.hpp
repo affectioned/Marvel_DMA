@@ -33,23 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Item_Tag_Blue_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Item_Tag_Blue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Item_Tag_Blue_C")
 	}
 	static class UWBP_Item_Tag_Blue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Item_Tag_Blue_C>();
 	}
 };
-static_assert(alignof(UWBP_Item_Tag_Blue_C) == 0x000008, "Wrong alignment on UWBP_Item_Tag_Blue_C");
-static_assert(sizeof(UWBP_Item_Tag_Blue_C) == 0x0003F8, "Wrong size on UWBP_Item_Tag_Blue_C");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Img_Discound_Material) == 0x0003B8, "Member 'UWBP_Item_Tag_Blue_C::Img_Discound_Material' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Img_Discound_Tag_Bg) == 0x0003C0, "Member 'UWBP_Item_Tag_Blue_C::Img_Discound_Tag_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Img_Limit_Tag_Bg) == 0x0003C8, "Member 'UWBP_Item_Tag_Blue_C::Img_Limit_Tag_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Img_Limit_Tag_Material) == 0x0003D0, "Member 'UWBP_Item_Tag_Blue_C::Img_Limit_Tag_Material' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Img_Time_Bg) == 0x0003D8, "Member 'UWBP_Item_Tag_Blue_C::Img_Time_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, MarvelHorizontalBox_0) == 0x0003E0, "Member 'UWBP_Item_Tag_Blue_C::MarvelHorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, MarvelImage_438) == 0x0003E8, "Member 'UWBP_Item_Tag_Blue_C::MarvelImage_438' has a wrong offset!");
-static_assert(offsetof(UWBP_Item_Tag_Blue_C, Overlay_Lock_Tag) == 0x0003F0, "Member 'UWBP_Item_Tag_Blue_C::Overlay_Lock_Tag' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Item_Tag_Blue_C;
 
 }
 

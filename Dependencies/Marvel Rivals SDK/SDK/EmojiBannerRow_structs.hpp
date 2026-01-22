@@ -24,10 +24,7 @@ public:
 	TSoftObjectPtr<class UTexture2D>              Background_9_E85CB6E1412474125C030A97037A05F7;     // 0x0000(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TArray<struct FEmojiBannerUnitConfig>         EmojisConfig_4_DC6C93DA4946AEF10F6AF6BBFF28EE61;   // 0x0030(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FEmojiBannerRow) == 0x000008, "Wrong alignment on FEmojiBannerRow");
-static_assert(sizeof(FEmojiBannerRow) == 0x000040, "Wrong size on FEmojiBannerRow");
-static_assert(offsetof(FEmojiBannerRow, Background_9_E85CB6E1412474125C030A97037A05F7) == 0x000000, "Member 'FEmojiBannerRow::Background_9_E85CB6E1412474125C030A97037A05F7' has a wrong offset!");
-static_assert(offsetof(FEmojiBannerRow, EmojisConfig_4_DC6C93DA4946AEF10F6AF6BBFF28EE61) == 0x000030, "Member 'FEmojiBannerRow::EmojisConfig_4_DC6C93DA4946AEF10F6AF6BBFF28EE61' has a wrong offset!");
+DUMPER7_ASSERTS_FEmojiBannerRow;
 
 }
 

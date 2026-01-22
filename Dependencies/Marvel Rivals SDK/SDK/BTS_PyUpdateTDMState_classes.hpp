@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateTDMState">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateTDMState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateTDMState")
 	}
 	static class UBTS_PyUpdateTDMState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateTDMState>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateTDMState) == 0x000008, "Wrong alignment on UBTS_PyUpdateTDMState");
-static_assert(sizeof(UBTS_PyUpdateTDMState) == 0x000170, "Wrong size on UBTS_PyUpdateTDMState");
-static_assert(offsetof(UBTS_PyUpdateTDMState, OutMaxBattleRemainTime) == 0x000140, "Member 'UBTS_PyUpdateTDMState::OutMaxBattleRemainTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateTDMState;
 
 }
 

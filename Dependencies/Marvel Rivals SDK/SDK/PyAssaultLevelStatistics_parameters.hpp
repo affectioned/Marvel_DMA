@@ -21,9 +21,7 @@ struct PyAssaultLevelStatistics_OnObjectiveBegin final
 public:
 	class AActor*                                 obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAssaultLevelStatistics_OnObjectiveBegin) == 0x000008, "Wrong alignment on PyAssaultLevelStatistics_OnObjectiveBegin");
-static_assert(sizeof(PyAssaultLevelStatistics_OnObjectiveBegin) == 0x000008, "Wrong size on PyAssaultLevelStatistics_OnObjectiveBegin");
-static_assert(offsetof(PyAssaultLevelStatistics_OnObjectiveBegin, obj) == 0x000000, "Member 'PyAssaultLevelStatistics_OnObjectiveBegin::obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyAssaultLevelStatistics_OnObjectiveBegin;
 
 // PythonFunction PyAssaultLevelStatistics.PyAssaultLevelStatistics.OnObjectiveEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAssaultLevelStatistics_OnObjectiveEnd final
 public:
 	class AActor*                                 obj;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAssaultLevelStatistics_OnObjectiveEnd) == 0x000008, "Wrong alignment on PyAssaultLevelStatistics_OnObjectiveEnd");
-static_assert(sizeof(PyAssaultLevelStatistics_OnObjectiveEnd) == 0x000008, "Wrong size on PyAssaultLevelStatistics_OnObjectiveEnd");
-static_assert(offsetof(PyAssaultLevelStatistics_OnObjectiveEnd, obj) == 0x000000, "Member 'PyAssaultLevelStatistics_OnObjectiveEnd::obj' has a wrong offset!");
+DUMPER7_ASSERTS_PyAssaultLevelStatistics_OnObjectiveEnd;
 
 }
 

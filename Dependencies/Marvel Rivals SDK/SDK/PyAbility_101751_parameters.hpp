@@ -21,9 +21,7 @@ struct PyAbility_101751_HintLackOfFlameDomain final
 public:
 	int32                                         CurNum;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101751_HintLackOfFlameDomain) == 0x000004, "Wrong alignment on PyAbility_101751_HintLackOfFlameDomain");
-static_assert(sizeof(PyAbility_101751_HintLackOfFlameDomain) == 0x000004, "Wrong size on PyAbility_101751_HintLackOfFlameDomain");
-static_assert(offsetof(PyAbility_101751_HintLackOfFlameDomain, CurNum) == 0x000000, "Member 'PyAbility_101751_HintLackOfFlameDomain::CurNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101751_HintLackOfFlameDomain;
 
 // PythonFunction PyAbility_101751.PyUIController_101751.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -34,10 +32,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_101751_SetAbility) == 0x000008, "Wrong alignment on PyUIController_101751_SetAbility");
-static_assert(sizeof(PyUIController_101751_SetAbility) == 0x000010, "Wrong size on PyUIController_101751_SetAbility");
-static_assert(offsetof(PyUIController_101751_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_101751_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_101751_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_101751_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_101751_SetAbility;
 
 }
 

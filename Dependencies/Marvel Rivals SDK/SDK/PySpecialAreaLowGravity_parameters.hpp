@@ -23,9 +23,7 @@ struct PySpecialAreaLowGravity_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaLowGravity_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySpecialAreaLowGravity_ReceiveEndPlay");
-static_assert(sizeof(PySpecialAreaLowGravity_ReceiveEndPlay) == 0x000001, "Wrong size on PySpecialAreaLowGravity_ReceiveEndPlay");
-static_assert(offsetof(PySpecialAreaLowGravity_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySpecialAreaLowGravity_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaLowGravity_ReceiveEndPlay;
 
 // PythonFunction PySpecialAreaLowGravity.PySpecialAreaLowGravity.OnMonitorTriggeredHandler
 // 0x0004 (0x0004 - 0x0000)
@@ -34,12 +32,10 @@ struct PySpecialAreaLowGravity_OnMonitorTriggeredHandler final
 public:
 	float                                         Degree;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaLowGravity_OnMonitorTriggeredHandler) == 0x000004, "Wrong alignment on PySpecialAreaLowGravity_OnMonitorTriggeredHandler");
-static_assert(sizeof(PySpecialAreaLowGravity_OnMonitorTriggeredHandler) == 0x000004, "Wrong size on PySpecialAreaLowGravity_OnMonitorTriggeredHandler");
-static_assert(offsetof(PySpecialAreaLowGravity_OnMonitorTriggeredHandler, Degree) == 0x000000, "Member 'PySpecialAreaLowGravity_OnMonitorTriggeredHandler::Degree' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaLowGravity_OnMonitorTriggeredHandler;
 
 // PythonFunction PySpecialAreaLowGravity.PySpecialAreaLowGravity.OnScopeCompBeginOverlap
-// 0x0210 (0x0210 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct PySpecialAreaLowGravity_OnScopeCompBeginOverlap final
 {
 public:
@@ -49,16 +45,9 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap) == 0x000008, "Wrong alignment on PySpecialAreaLowGravity_OnScopeCompBeginOverlap");
-static_assert(sizeof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap) == 0x000210, "Wrong size on PySpecialAreaLowGravity_OnScopeCompBeginOverlap");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, OverlappedComponent) == 0x000000, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, Player) == 0x000008, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::Player' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, OtherComp) == 0x000010, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::OtherComp' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, OtherBodyIndex) == 0x000018, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, bFromSweep) == 0x00001C, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::bFromSweep' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompBeginOverlap, SweepResult) == 0x000020, "Member 'PySpecialAreaLowGravity_OnScopeCompBeginOverlap::SweepResult' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaLowGravity_OnScopeCompBeginOverlap;
 
 // PythonFunction PySpecialAreaLowGravity.PySpecialAreaLowGravity.OnScopeCompEndOverlap
 // 0x0020 (0x0020 - 0x0000)
@@ -70,12 +59,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaLowGravity_OnScopeCompEndOverlap) == 0x000008, "Wrong alignment on PySpecialAreaLowGravity_OnScopeCompEndOverlap");
-static_assert(sizeof(PySpecialAreaLowGravity_OnScopeCompEndOverlap) == 0x000020, "Wrong size on PySpecialAreaLowGravity_OnScopeCompEndOverlap");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompEndOverlap, OverlappedComponent) == 0x000000, "Member 'PySpecialAreaLowGravity_OnScopeCompEndOverlap::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompEndOverlap, Player) == 0x000008, "Member 'PySpecialAreaLowGravity_OnScopeCompEndOverlap::Player' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompEndOverlap, OtherComp) == 0x000010, "Member 'PySpecialAreaLowGravity_OnScopeCompEndOverlap::OtherComp' has a wrong offset!");
-static_assert(offsetof(PySpecialAreaLowGravity_OnScopeCompEndOverlap, OtherBodyIndex) == 0x000018, "Member 'PySpecialAreaLowGravity_OnScopeCompEndOverlap::OtherBodyIndex' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaLowGravity_OnScopeCompEndOverlap;
 
 // PythonFunction PySpecialAreaLowGravity.PySpecialAreaLowGravity.SrvSetFXState
 // 0x0010 (0x0010 - 0x0000)
@@ -84,9 +68,7 @@ struct PySpecialAreaLowGravity_SrvSetFXState final
 public:
 	class FString                                 state;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySpecialAreaLowGravity_SrvSetFXState) == 0x000008, "Wrong alignment on PySpecialAreaLowGravity_SrvSetFXState");
-static_assert(sizeof(PySpecialAreaLowGravity_SrvSetFXState) == 0x000010, "Wrong size on PySpecialAreaLowGravity_SrvSetFXState");
-static_assert(offsetof(PySpecialAreaLowGravity_SrvSetFXState, state) == 0x000000, "Member 'PySpecialAreaLowGravity_SrvSetFXState::state' has a wrong offset!");
+DUMPER7_ASSERTS_PySpecialAreaLowGravity_SrvSetFXState;
 
 }
 

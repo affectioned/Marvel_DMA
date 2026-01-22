@@ -21,9 +21,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsAttacker final
 public:
 	bool                                          IsAttacker_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsAttacker) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsAttacker");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsAttacker) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsAttacker");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsAttacker, IsAttacker_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsAttacker::IsAttacker_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsAttacker;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsOwner final
 public:
 	bool                                          IsOwner_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsOwner) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsOwner");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsOwner) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsOwner");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsOwner, IsOwner_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsOwner::IsOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsOwner;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsSelfOwner
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner final
 public:
 	bool                                          IsSelfOwner_0;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner, IsSelfOwner_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner::IsSelfOwner_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsSelfOwner;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsEmpty
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsEmpty final
 public:
 	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsEmpty) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsEmpty");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsEmpty) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsEmpty");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsEmpty, IsEmpty_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsEmpty::IsEmpty_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsEmpty;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsInvitating
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsInvitating final
 public:
 	bool                                          IsInvitating_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsInvitating) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsInvitating");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsInvitating) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsInvitating");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsInvitating, IsInvitating_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsInvitating::IsInvitating_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsInvitating;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsAI
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsAI final
 public:
 	bool                                          IsAI_0;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsAI) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsAI");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsAI) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsAI");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsAI, IsAI_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsAI::IsAI_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsAI;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsGame
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +75,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsGame final
 public:
 	bool                                          IsGame_0;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsGame) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsGame");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsGame) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsGame");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsGame, IsGame_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsGame::IsGame_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsGame;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomPlayer.SetIsLocalPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -98,9 +84,7 @@ struct PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer final
 public:
 	bool                                          IsLocalPlayer_0;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer");
-static_assert(sizeof(PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer");
-static_assert(offsetof(PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer, IsLocalPlayer_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer::IsLocalPlayer_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomPlayer_SetIsLocalPlayer;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomCoach.SetIsEmpty
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +93,7 @@ struct PyWidget_CustomLeagueRoomCoach_SetIsEmpty final
 public:
 	bool                                          IsEmpty_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomCoach_SetIsEmpty) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomCoach_SetIsEmpty");
-static_assert(sizeof(PyWidget_CustomLeagueRoomCoach_SetIsEmpty) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomCoach_SetIsEmpty");
-static_assert(offsetof(PyWidget_CustomLeagueRoomCoach_SetIsEmpty, IsEmpty_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomCoach_SetIsEmpty::IsEmpty_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomCoach_SetIsEmpty;
 
 // PythonFunction PyWidget_CustomLeagueRoomPlayer.PyWidget_CustomLeagueRoomCoach.SetIsAI
 // 0x0001 (0x0001 - 0x0000)
@@ -120,9 +102,7 @@ struct PyWidget_CustomLeagueRoomCoach_SetIsAI final
 public:
 	bool                                          IsAI_0;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomCoach_SetIsAI) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomCoach_SetIsAI");
-static_assert(sizeof(PyWidget_CustomLeagueRoomCoach_SetIsAI) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomCoach_SetIsAI");
-static_assert(offsetof(PyWidget_CustomLeagueRoomCoach_SetIsAI, IsAI_0) == 0x000000, "Member 'PyWidget_CustomLeagueRoomCoach_SetIsAI::IsAI_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomCoach_SetIsAI;
 
 }
 

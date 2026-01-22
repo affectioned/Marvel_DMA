@@ -29,20 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_FlagData">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_FlagData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_FlagData")
 	}
 	static class UPyWidget_Clan_FlagData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_FlagData>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_FlagData) == 0x000008, "Wrong alignment on UPyWidget_Clan_FlagData");
-static_assert(sizeof(UPyWidget_Clan_FlagData) == 0x000038, "Wrong size on UPyWidget_Clan_FlagData");
-static_assert(offsetof(UPyWidget_Clan_FlagData, FlagID) == 0x000030, "Member 'UPyWidget_Clan_FlagData::FlagID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_FlagData, Index_0) == 0x000034, "Member 'UPyWidget_Clan_FlagData::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_FlagData;
 
 // PythonClass PyWidget_Secondary_ClanEditFlag.PyWidget_ClanFlagItem
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_ClanFlagItem final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -53,18 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanFlagItem">();
+		STATIC_CLASS_IMPL("PyWidget_ClanFlagItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanFlagItem")
 	}
 	static class UPyWidget_ClanFlagItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanFlagItem>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanFlagItem) == 0x000010, "Wrong alignment on UPyWidget_ClanFlagItem");
-static_assert(sizeof(UPyWidget_ClanFlagItem) == 0x0008C0, "Wrong size on UPyWidget_ClanFlagItem");
+DUMPER7_ASSERTS_UPyWidget_ClanFlagItem;
 
 // PythonClass PyWidget_Secondary_ClanEditFlag.PyWidget_Secondary_ClanFlagEdit
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ClanFlagEdit final : public UPyMarvelUserWidget
 {
 public:
@@ -75,15 +79,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ClanFlagEdit">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ClanFlagEdit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ClanFlagEdit")
 	}
 	static class UPyWidget_Secondary_ClanFlagEdit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ClanFlagEdit>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ClanFlagEdit) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ClanFlagEdit");
-static_assert(sizeof(UPyWidget_Secondary_ClanFlagEdit) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ClanFlagEdit");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ClanFlagEdit;
 
 }
 

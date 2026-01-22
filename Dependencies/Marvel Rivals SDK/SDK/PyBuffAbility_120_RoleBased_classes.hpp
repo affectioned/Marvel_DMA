@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_RoleBased.PyMarvelHealthModifierAbility_RoleBased
-// 0x0000 (0x1388 - 0x1388)
+// 0x0000 (0x13A0 - 0x13A0)
 class UPyMarvelHealthModifierAbility_RoleBased final : public UMarvelHealthModifierAbility
 {
 public:
@@ -27,18 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelHealthModifierAbility_RoleBased">();
+		STATIC_CLASS_IMPL("PyMarvelHealthModifierAbility_RoleBased")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelHealthModifierAbility_RoleBased")
 	}
 	static class UPyMarvelHealthModifierAbility_RoleBased* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelHealthModifierAbility_RoleBased>();
 	}
 };
-static_assert(alignof(UPyMarvelHealthModifierAbility_RoleBased) == 0x000008, "Wrong alignment on UPyMarvelHealthModifierAbility_RoleBased");
-static_assert(sizeof(UPyMarvelHealthModifierAbility_RoleBased) == 0x001388, "Wrong size on UPyMarvelHealthModifierAbility_RoleBased");
+DUMPER7_ASSERTS_UPyMarvelHealthModifierAbility_RoleBased;
 
 // PythonClass PyBuffAbility_120_RoleBased.PyMarvelAttributeRegenModifierAbility_RoleBased
-// 0x0000 (0x13D0 - 0x13D0)
+// 0x0000 (0x13E8 - 0x13E8)
 class UPyMarvelAttributeRegenModifierAbility_RoleBased final : public UMarvelAttributeRegenModifierAbility
 {
 public:
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelAttributeRegenModifierAbility_RoleBased">();
+		STATIC_CLASS_IMPL("PyMarvelAttributeRegenModifierAbility_RoleBased")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelAttributeRegenModifierAbility_RoleBased")
 	}
 	static class UPyMarvelAttributeRegenModifierAbility_RoleBased* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelAttributeRegenModifierAbility_RoleBased>();
 	}
 };
-static_assert(alignof(UPyMarvelAttributeRegenModifierAbility_RoleBased) == 0x000008, "Wrong alignment on UPyMarvelAttributeRegenModifierAbility_RoleBased");
-static_assert(sizeof(UPyMarvelAttributeRegenModifierAbility_RoleBased) == 0x0013D0, "Wrong size on UPyMarvelAttributeRegenModifierAbility_RoleBased");
+DUMPER7_ASSERTS_UPyMarvelAttributeRegenModifierAbility_RoleBased;
 
 }
 

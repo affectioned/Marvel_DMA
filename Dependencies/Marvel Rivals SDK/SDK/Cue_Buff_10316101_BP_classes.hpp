@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Buff_10316101_BP.Cue_Buff_10316101_BP_C
-// 0x0010 (0x1720 - 0x1710)
+// 0x0010 (0x17D0 - 0x17C0)
 class ACue_Buff_10316101_BP_C final : public APyCue_Buff_10316101
 {
 public:
-	class UMarvelWidgetComponent*                 MarvelWidget;                                      // 0x1708(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWC_BuffMarkerBP_C*                     WC_BuffMarkerBP;                                   // 0x1710(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMarvelWidgetComponent*                 MarvelWidget;                                      // 0x17B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWC_BuffMarkerBP_C*                     WC_BuffMarkerBP;                                   // 0x17C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Buff_10316101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Buff_10316101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_10316101_BP_C")
 	}
 	static class ACue_Buff_10316101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_10316101_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Buff_10316101_BP_C) == 0x000010, "Wrong alignment on ACue_Buff_10316101_BP_C");
-static_assert(sizeof(ACue_Buff_10316101_BP_C) == 0x001720, "Wrong size on ACue_Buff_10316101_BP_C");
-static_assert(offsetof(ACue_Buff_10316101_BP_C, MarvelWidget) == 0x001708, "Member 'ACue_Buff_10316101_BP_C::MarvelWidget' has a wrong offset!");
-static_assert(offsetof(ACue_Buff_10316101_BP_C, WC_BuffMarkerBP) == 0x001710, "Member 'ACue_Buff_10316101_BP_C::WC_BuffMarkerBP' has a wrong offset!");
+DUMPER7_ASSERTS_ACue_Buff_10316101_BP_C;
 
 }
 

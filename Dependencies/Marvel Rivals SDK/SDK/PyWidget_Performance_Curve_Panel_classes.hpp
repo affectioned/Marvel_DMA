@@ -11,26 +11,26 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "PyMarvelUserWidget_classes.hpp"
 #include "UMG_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Performance_Curve_Panel.PyWidget_Performance_Curve_Panel
-// 0x0040 (0x0600 - 0x05C0)
+// 0x0040 (0x0608 - 0x05C8)
 class UPyWidget_Performance_Curve_Panel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         TipsPosDiffX;                                      // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TipsPosDiffY;                                      // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_High;                                   // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_Mid;                                    // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_Low;                                    // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_High;                                     // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Mid;                                      // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TipsPosDiffX;                                      // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TipsPosDiffY;                                      // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_High;                                   // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_Mid;                                    // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_Low;                                    // 0x05EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_High;                                     // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Mid;                                      // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,22 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_Curve_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_Curve_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_Curve_Panel")
 	}
 	static class UPyWidget_Performance_Curve_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_Curve_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_Curve_Panel) == 0x000008, "Wrong alignment on UPyWidget_Performance_Curve_Panel");
-static_assert(sizeof(UPyWidget_Performance_Curve_Panel) == 0x000600, "Wrong size on UPyWidget_Performance_Curve_Panel");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, TipsPosDiffX) == 0x0005BC, "Member 'UPyWidget_Performance_Curve_Panel::TipsPosDiffX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, TipsPosDiffY) == 0x0005C0, "Member 'UPyWidget_Performance_Curve_Panel::TipsPosDiffY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, Line_Color_High) == 0x0005C4, "Member 'UPyWidget_Performance_Curve_Panel::Line_Color_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, Line_Color_Mid) == 0x0005D4, "Member 'UPyWidget_Performance_Curve_Panel::Line_Color_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, Line_Color_Low) == 0x0005E4, "Member 'UPyWidget_Performance_Curve_Panel::Line_Color_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, Standard_High) == 0x0005F4, "Member 'UPyWidget_Performance_Curve_Panel::Standard_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_Curve_Panel, Standard_Mid) == 0x0005F8, "Member 'UPyWidget_Performance_Curve_Panel::Standard_Mid' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_Curve_Panel;
 
 // PythonClass PyWidget_Performance_Curve_Panel.PyWidget_Performance_Curve_FollowTips
 // 0x0000 (0x03B8 - 0x03B8)
@@ -65,15 +61,18 @@ class UPyWidget_Performance_Curve_FollowTips final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_Curve_FollowTips">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_Curve_FollowTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_Curve_FollowTips")
 	}
 	static class UPyWidget_Performance_Curve_FollowTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_Curve_FollowTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_Curve_FollowTips) == 0x000008, "Wrong alignment on UPyWidget_Performance_Curve_FollowTips");
-static_assert(sizeof(UPyWidget_Performance_Curve_FollowTips) == 0x0003B8, "Wrong size on UPyWidget_Performance_Curve_FollowTips");
+DUMPER7_ASSERTS_UPyWidget_Performance_Curve_FollowTips;
 
 }
 

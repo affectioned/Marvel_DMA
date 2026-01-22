@@ -24,9 +24,7 @@ struct PyKeliluna_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKeliluna_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKeliluna_ReceiveEndPlay");
-static_assert(sizeof(PyKeliluna_ReceiveEndPlay) == 0x000001, "Wrong size on PyKeliluna_ReceiveEndPlay");
-static_assert(offsetof(PyKeliluna_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKeliluna_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKeliluna_ReceiveEndPlay;
 
 // PythonFunction PyKeliluna.PyKeliluna.S_payload_reach
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           event_name;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	float                                         event_args;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKeliluna_S_payload_reach) == 0x000004, "Wrong alignment on PyKeliluna_S_payload_reach");
-static_assert(sizeof(PyKeliluna_S_payload_reach) == 0x000010, "Wrong size on PyKeliluna_S_payload_reach");
-static_assert(offsetof(PyKeliluna_S_payload_reach, event_name) == 0x000000, "Member 'PyKeliluna_S_payload_reach::event_name' has a wrong offset!");
-static_assert(offsetof(PyKeliluna_S_payload_reach, event_args) == 0x00000C, "Member 'PyKeliluna_S_payload_reach::event_args' has a wrong offset!");
+DUMPER7_ASSERTS_PyKeliluna_S_payload_reach;
 
 }
 

@@ -17,24 +17,27 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104342.PyCue_Instant_HitImpact_10434201
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0620 - 0x0620)
 class UPyCue_Instant_HitImpact_10434201 final : public UMarvelCueNotify_InstantHitImpact
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Instant_HitImpact_10434201">();
+		STATIC_CLASS_IMPL("PyCue_Instant_HitImpact_10434201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Instant_HitImpact_10434201")
 	}
 	static class UPyCue_Instant_HitImpact_10434201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Instant_HitImpact_10434201>();
 	}
 };
-static_assert(alignof(UPyCue_Instant_HitImpact_10434201) == 0x000008, "Wrong alignment on UPyCue_Instant_HitImpact_10434201");
-static_assert(sizeof(UPyCue_Instant_HitImpact_10434201) == 0x000600, "Wrong size on UPyCue_Instant_HitImpact_10434201");
+DUMPER7_ASSERTS_UPyCue_Instant_HitImpact_10434201;
 
 // PythonClass PyAbility_104342.PyUIC_SelectTarget_104342
-// 0x0000 (0x0158 - 0x0158)
+// 0x0000 (0x01B8 - 0x01B8)
 class UPyUIC_SelectTarget_104342 final : public UUIC_SelectTarget
 {
 public:
@@ -44,15 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_104342">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_104342")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_104342")
 	}
 	static class UPyUIC_SelectTarget_104342* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_104342>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_104342) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_104342");
-static_assert(sizeof(UPyUIC_SelectTarget_104342) == 0x000158, "Wrong size on UPyUIC_SelectTarget_104342");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_104342;
 
 }
 

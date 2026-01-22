@@ -23,9 +23,7 @@ struct PyWidget_AbilityCommon_V5_SetVisibleImmediately final
 public:
 	bool                                          InVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityCommon_V5_SetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_AbilityCommon_V5_SetVisibleImmediately");
-static_assert(sizeof(PyWidget_AbilityCommon_V5_SetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_AbilityCommon_V5_SetVisibleImmediately");
-static_assert(offsetof(PyWidget_AbilityCommon_V5_SetVisibleImmediately, InVisible) == 0x000000, "Member 'PyWidget_AbilityCommon_V5_SetVisibleImmediately::InVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityCommon_V5_SetVisibleImmediately;
 
 // PythonFunction PyWidget_Ability_V5.PyWidget_AbilityCommon_V5.GetWidgetsByStyles_V5
 // 0x0048 (0x0048 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	struct FWidgetStyle_AbilityCommon_V5          InStyle;                                           // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UAbilityCommonExtraWidgets*             ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5) == 0x000008, "Wrong alignment on PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5");
-static_assert(sizeof(PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5) == 0x000048, "Wrong size on PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5");
-static_assert(offsetof(PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5, InStyle) == 0x000000, "Member 'PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5::InStyle' has a wrong offset!");
-static_assert(offsetof(PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5, ReturnValue) == 0x000040, "Member 'PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_AbilityCommon_V5_GetWidgetsByStyles_V5;
 
 }
 

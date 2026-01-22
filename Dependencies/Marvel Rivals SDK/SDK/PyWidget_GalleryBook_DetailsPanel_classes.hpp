@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GalleryBook_DetailsPanel.PyWidget_GalleryBook_DetailsPanel
-// 0x0080 (0x0678 - 0x05F8)
+// 0x0080 (0x0680 - 0x0600)
 class UPyWidget_GalleryBook_DetailsPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                SingleBookClass;                                   // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                AppreciateGuideTips;                               // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ViewMenuTipsStyle;                                 // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ScaleTipsStyle;                                    // 0x0620(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                DragTipsStyle;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SaveCardGuideTips;                                 // 0x0640(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             AnimCoverTexture;                                  // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     AnimTextureList;                                   // 0x0658(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class UTexture2D*                             AnimLeftTexture;                                   // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             AnimRightTexture;                                  // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SingleBookClass;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                AppreciateGuideTips;                               // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ViewMenuTipsStyle;                                 // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ScaleTipsStyle;                                    // 0x0628(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                DragTipsStyle;                                     // 0x0638(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SaveCardGuideTips;                                 // 0x0648(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             AnimCoverTexture;                                  // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     AnimTextureList;                                   // 0x0660(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class UTexture2D*                             AnimLeftTexture;                                   // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             AnimRightTexture;                                  // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -46,25 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GalleryBook_DetailsPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GalleryBook_DetailsPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GalleryBook_DetailsPanel")
 	}
 	static class UPyWidget_GalleryBook_DetailsPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GalleryBook_DetailsPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GalleryBook_DetailsPanel) == 0x000008, "Wrong alignment on UPyWidget_GalleryBook_DetailsPanel");
-static_assert(sizeof(UPyWidget_GalleryBook_DetailsPanel) == 0x000678, "Wrong size on UPyWidget_GalleryBook_DetailsPanel");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, SingleBookClass) == 0x0005F8, "Member 'UPyWidget_GalleryBook_DetailsPanel::SingleBookClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, AppreciateGuideTips) == 0x000600, "Member 'UPyWidget_GalleryBook_DetailsPanel::AppreciateGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, ViewMenuTipsStyle) == 0x000610, "Member 'UPyWidget_GalleryBook_DetailsPanel::ViewMenuTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, ScaleTipsStyle) == 0x000620, "Member 'UPyWidget_GalleryBook_DetailsPanel::ScaleTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, DragTipsStyle) == 0x000630, "Member 'UPyWidget_GalleryBook_DetailsPanel::DragTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, SaveCardGuideTips) == 0x000640, "Member 'UPyWidget_GalleryBook_DetailsPanel::SaveCardGuideTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, AnimCoverTexture) == 0x000650, "Member 'UPyWidget_GalleryBook_DetailsPanel::AnimCoverTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, AnimTextureList) == 0x000658, "Member 'UPyWidget_GalleryBook_DetailsPanel::AnimTextureList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, AnimLeftTexture) == 0x000668, "Member 'UPyWidget_GalleryBook_DetailsPanel::AnimLeftTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GalleryBook_DetailsPanel, AnimRightTexture) == 0x000670, "Member 'UPyWidget_GalleryBook_DetailsPanel::AnimRightTexture' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GalleryBook_DetailsPanel;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Scope_10472005_BP.Scope_10472005_BP_C
-// 0x0000 (0x1B90 - 0x1B90)
+// 0x0000 (0x1C60 - 0x1C60)
 class AScope_10472005_BP_C final : public AScope_10472005
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scope_10472005_BP_C">();
+		BP_STATIC_CLASS_IMPL("Scope_10472005_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scope_10472005_BP_C")
 	}
 	static class AScope_10472005_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AScope_10472005_BP_C>();
 	}
 };
-static_assert(alignof(AScope_10472005_BP_C) == 0x000010, "Wrong alignment on AScope_10472005_BP_C");
-static_assert(sizeof(AScope_10472005_BP_C) == 0x001B90, "Wrong size on AScope_10472005_BP_C");
+DUMPER7_ASSERTS_AScope_10472005_BP_C;
 
 }
 

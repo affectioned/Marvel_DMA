@@ -58,35 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevel1399_002">();
+		STATIC_CLASS_IMPL("PyLevel1399_002")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevel1399_002")
 	}
 	static class APyLevel1399_002* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevel1399_002>();
 	}
 };
-static_assert(alignof(APyLevel1399_002) == 0x000010, "Wrong alignment on APyLevel1399_002");
-static_assert(sizeof(APyLevel1399_002) == 0x000760, "Wrong size on APyLevel1399_002");
-static_assert(offsetof(APyLevel1399_002, TriggerTimeSeconds) == 0x0006E0, "Member 'APyLevel1399_002::TriggerTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, UpMovementDuration) == 0x0006E4, "Member 'APyLevel1399_002::UpMovementDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, UpSwitchWaitTime) == 0x0006E8, "Member 'APyLevel1399_002::UpSwitchWaitTime' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, ShouldContinueToUpWhenPlayersLeave) == 0x0006EC, "Member 'APyLevel1399_002::ShouldContinueToUpWhenPlayersLeave' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, DownAutoTriggerTime) == 0x0006F0, "Member 'APyLevel1399_002::DownAutoTriggerTime' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, DownMovementDuration) == 0x0006F4, "Member 'APyLevel1399_002::DownMovementDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, TracePath) == 0x0006F8, "Member 'APyLevel1399_002::TracePath' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, TracePathA) == 0x000700, "Member 'APyLevel1399_002::TracePathA' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXLevelSequenceActor) == 0x000708, "Member 'APyLevel1399_002::VFXLevelSequenceActor' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXCompsState) == 0x000710, "Member 'APyLevel1399_002::VFXCompsState' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXStopDuration) == 0x000714, "Member 'APyLevel1399_002::VFXStopDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXSwitchingDeactiveDuration) == 0x000718, "Member 'APyLevel1399_002::VFXSwitchingDeactiveDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXSwitchingActiveDuration) == 0x00071C, "Member 'APyLevel1399_002::VFXSwitchingActiveDuration' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXSwitchToActiveDelaySeconds) == 0x000720, "Member 'APyLevel1399_002::VFXSwitchToActiveDelaySeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, VFXSwitchTraceDelaySeconds) == 0x000724, "Member 'APyLevel1399_002::VFXSwitchTraceDelaySeconds' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, AudioEventStart) == 0x000728, "Member 'APyLevel1399_002::AudioEventStart' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, AudioEventEnd) == 0x000730, "Member 'APyLevel1399_002::AudioEventEnd' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, AudioEventVFXLoop) == 0x000738, "Member 'APyLevel1399_002::AudioEventVFXLoop' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, AudioLoopState) == 0x000740, "Member 'APyLevel1399_002::AudioLoopState' has a wrong offset!");
-static_assert(offsetof(APyLevel1399_002, PyLevel1399_002_OnSwitchedToAlternativeTrace) == 0x000748, "Member 'APyLevel1399_002::PyLevel1399_002_OnSwitchedToAlternativeTrace' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevel1399_002;
 
 }
 

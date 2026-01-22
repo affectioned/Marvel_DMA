@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105831_BP.Ability_105831_BP_C
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UAbility_105831_BP_C final : public UPyAbility_105831
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105831_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105831_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105831_BP_C")
 	}
 	static class UAbility_105831_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105831_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105831_BP_C) == 0x000008, "Wrong alignment on UAbility_105831_BP_C");
-static_assert(sizeof(UAbility_105831_BP_C) == 0x0029F8, "Wrong size on UAbility_105831_BP_C");
+DUMPER7_ASSERTS_UAbility_105831_BP_C;
 
 }
 

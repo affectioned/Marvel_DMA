@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITeamManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("AITeamManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITeamManagerBP_C")
 	}
 	static class AAITeamManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAITeamManagerBP_C>();
 	}
 };
-static_assert(alignof(AAITeamManagerBP_C) == 0x000010, "Wrong alignment on AAITeamManagerBP_C");
-static_assert(sizeof(AAITeamManagerBP_C) == 0x000980, "Wrong size on AAITeamManagerBP_C");
-static_assert(offsetof(AAITeamManagerBP_C, DefaultSceneRoot) == 0x000978, "Member 'AAITeamManagerBP_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAITeamManagerBP_C;
 
 }
 

@@ -27,12 +27,7 @@ public:
 	TSoftClassPtr<class UClass>                   IndicatorClass_46_80D816354E9745DC13349EA3F4AE9130; // 0x0018(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TArray<struct FIndicatorExtensionModeInfo>    ModeConfigs_45_2C0054B54AA3DE4EE20EC89CD453A8C4;   // 0x0048(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FIndicatorExtensiomRowInfo) == 0x000008, "Wrong alignment on FIndicatorExtensiomRowInfo");
-static_assert(sizeof(FIndicatorExtensiomRowInfo) == 0x000058, "Wrong size on FIndicatorExtensiomRowInfo");
-static_assert(offsetof(FIndicatorExtensiomRowInfo, Delivery_49_64E9A8AB4A28078BF6E2109DEF098088) == 0x000000, "Member 'FIndicatorExtensiomRowInfo::Delivery_49_64E9A8AB4A28078BF6E2109DEF098088' has a wrong offset!");
-static_assert(offsetof(FIndicatorExtensiomRowInfo, BaseComment_53_EB3E87C04E8175659D07DB97294125CE) == 0x000008, "Member 'FIndicatorExtensiomRowInfo::BaseComment_53_EB3E87C04E8175659D07DB97294125CE' has a wrong offset!");
-static_assert(offsetof(FIndicatorExtensiomRowInfo, IndicatorClass_46_80D816354E9745DC13349EA3F4AE9130) == 0x000018, "Member 'FIndicatorExtensiomRowInfo::IndicatorClass_46_80D816354E9745DC13349EA3F4AE9130' has a wrong offset!");
-static_assert(offsetof(FIndicatorExtensiomRowInfo, ModeConfigs_45_2C0054B54AA3DE4EE20EC89CD453A8C4) == 0x000048, "Member 'FIndicatorExtensiomRowInfo::ModeConfigs_45_2C0054B54AA3DE4EE20EC89CD453A8C4' has a wrong offset!");
+DUMPER7_ASSERTS_FIndicatorExtensiomRowInfo;
 
 }
 

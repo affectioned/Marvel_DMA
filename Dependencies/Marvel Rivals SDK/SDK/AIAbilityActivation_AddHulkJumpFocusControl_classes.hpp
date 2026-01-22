@@ -23,15 +23,18 @@ class UAIAbilityActivation_AddHulkJumpFocusControl_C final : public UPyAIAbility
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_AddHulkJumpFocusControl_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_AddHulkJumpFocusControl_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_AddHulkJumpFocusControl_C")
 	}
 	static class UAIAbilityActivation_AddHulkJumpFocusControl_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_AddHulkJumpFocusControl_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_AddHulkJumpFocusControl_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_AddHulkJumpFocusControl_C");
-static_assert(sizeof(UAIAbilityActivation_AddHulkJumpFocusControl_C) == 0x000048, "Wrong size on UAIAbilityActivation_AddHulkJumpFocusControl_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_AddHulkJumpFocusControl_C;
 
 }
 

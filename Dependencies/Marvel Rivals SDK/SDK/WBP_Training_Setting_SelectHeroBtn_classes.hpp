@@ -17,39 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Training_Setting_SelectHeroBtn.WBP_Training_Setting_SelectHeroBtn_C
-// 0x0040 (0x0638 - 0x05F8)
+// 0x0048 (0x0648 - 0x0600)
 class UWBP_Training_Setting_SelectHeroBtn_C final : public UPyWidget_Train_Setting_SelectHero
 {
 public:
-	class UMarvelImage*                           Img_Change;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_HeroHeadBg;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Tips;                                          // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         MarvelOverlay;                                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_SwitchHero;                                // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Hero_Name;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelButton*                          WBP_Common_Btn_Lv3;                                // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_HeroHead_Spuare_C*          WBP_Common_HeroHead_Spuare;                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Change;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HeroHeadBg;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Tips;                                          // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         MarvelOverlay;                                     // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_SwitchHero;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Hero_Name;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelButton*                          WBP_Common_Btn_Lv3;                                // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroHead_Spuare_C*          WBP_Common_HeroHead_Spuare;                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_HeroRoleIcon_C*             WBP_Common_HeroRoleIcon;                           // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_Setting_SelectHeroBtn_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_Setting_SelectHeroBtn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_Setting_SelectHeroBtn_C")
 	}
 	static class UWBP_Training_Setting_SelectHeroBtn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_Setting_SelectHeroBtn_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_Setting_SelectHeroBtn_C) == 0x000008, "Wrong alignment on UWBP_Training_Setting_SelectHeroBtn_C");
-static_assert(sizeof(UWBP_Training_Setting_SelectHeroBtn_C) == 0x000638, "Wrong size on UWBP_Training_Setting_SelectHeroBtn_C");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, Img_Change) == 0x0005F8, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::Img_Change' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, Img_HeroHeadBg) == 0x000600, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::Img_HeroHeadBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, Img_Tips) == 0x000608, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::Img_Tips' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, MarvelOverlay) == 0x000610, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::MarvelOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, SizeBox_SwitchHero) == 0x000618, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::SizeBox_SwitchHero' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, Text_Hero_Name) == 0x000620, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::Text_Hero_Name' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, WBP_Common_Btn_Lv3) == 0x000628, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::WBP_Common_Btn_Lv3' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_Setting_SelectHeroBtn_C, WBP_Common_HeroHead_Spuare) == 0x000630, "Member 'UWBP_Training_Setting_SelectHeroBtn_C::WBP_Common_HeroHead_Spuare' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_Setting_SelectHeroBtn_C;
 
 }
 

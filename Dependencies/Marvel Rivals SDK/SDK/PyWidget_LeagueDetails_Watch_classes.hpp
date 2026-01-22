@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LeagueDetails_Watch.PyWidget_LeagueDetails_WatchPanel
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_LeagueDetails_WatchPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_LeagueDetails_WatchDual> WidgetClassWatchDual;                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              _focus_to_main;                                    // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_LeagueDetails_WatchDual> WidgetClassWatchDual;                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              _focus_to_main;                                    // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -34,30 +34,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueDetails_WatchPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueDetails_WatchPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueDetails_WatchPanel")
 	}
 	static class UPyWidget_LeagueDetails_WatchPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueDetails_WatchPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueDetails_WatchPanel) == 0x000008, "Wrong alignment on UPyWidget_LeagueDetails_WatchPanel");
-static_assert(sizeof(UPyWidget_LeagueDetails_WatchPanel) == 0x0005D8, "Wrong size on UPyWidget_LeagueDetails_WatchPanel");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchPanel, WidgetClassWatchDual) == 0x0005C0, "Member 'UPyWidget_LeagueDetails_WatchPanel::WidgetClassWatchDual' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchPanel, _focus_to_main) == 0x0005C8, "Member 'UPyWidget_LeagueDetails_WatchPanel::_focus_to_main' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueDetails_WatchPanel;
 
 // PythonClass PyWidget_LeagueDetails_Watch.PyWidget_LeagueDetails_WatchClan
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_LeagueDetails_WatchClan final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            FontColorDefault;                                  // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorMyClan;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorDefaultMini;                              // 0x05E4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            FontColorMyClanMini;                               // 0x05F8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         FontOpacityMyClanMini;                             // 0x060C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FontOpacityDefaultMini;                            // 0x0610(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            FontColorDefault;                                  // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorMyClan;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorDefaultMini;                              // 0x05EC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            FontColorMyClanMini;                               // 0x0600(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         FontOpacityMyClanMini;                             // 0x0614(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FontOpacityDefaultMini;                            // 0x0618(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -66,33 +67,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueDetails_WatchClan">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueDetails_WatchClan")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueDetails_WatchClan")
 	}
 	static class UPyWidget_LeagueDetails_WatchClan* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueDetails_WatchClan>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueDetails_WatchClan) == 0x000008, "Wrong alignment on UPyWidget_LeagueDetails_WatchClan");
-static_assert(sizeof(UPyWidget_LeagueDetails_WatchClan) == 0x000618, "Wrong size on UPyWidget_LeagueDetails_WatchClan");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontColorDefault) == 0x0005BC, "Member 'UPyWidget_LeagueDetails_WatchClan::FontColorDefault' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontColorMyClan) == 0x0005D0, "Member 'UPyWidget_LeagueDetails_WatchClan::FontColorMyClan' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontColorDefaultMini) == 0x0005E4, "Member 'UPyWidget_LeagueDetails_WatchClan::FontColorDefaultMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontColorMyClanMini) == 0x0005F8, "Member 'UPyWidget_LeagueDetails_WatchClan::FontColorMyClanMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontOpacityMyClanMini) == 0x00060C, "Member 'UPyWidget_LeagueDetails_WatchClan::FontOpacityMyClanMini' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchClan, FontOpacityDefaultMini) == 0x000610, "Member 'UPyWidget_LeagueDetails_WatchClan::FontOpacityDefaultMini' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueDetails_WatchClan;
 
 // PythonClass PyWidget_LeagueDetails_Watch.PyWidget_LeagueDetails_WatchDual
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_LeagueDetails_WatchDual final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ColorBgDefault;                                    // 0x05BC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorBgHoveringMRC;                                // 0x05CC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorBgHoveringClash;                              // 0x05DC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleColorMRC;                                     // 0x05EC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TitleColorClash;                                   // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           ColorBgDefault;                                    // 0x05C4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorBgHoveringMRC;                                // 0x05D4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorBgHoveringClash;                              // 0x05E4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleColorMRC;                                     // 0x05F4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TitleColorClash;                                   // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -101,20 +99,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueDetails_WatchDual">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueDetails_WatchDual")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueDetails_WatchDual")
 	}
 	static class UPyWidget_LeagueDetails_WatchDual* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueDetails_WatchDual>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueDetails_WatchDual) == 0x000008, "Wrong alignment on UPyWidget_LeagueDetails_WatchDual");
-static_assert(sizeof(UPyWidget_LeagueDetails_WatchDual) == 0x000618, "Wrong size on UPyWidget_LeagueDetails_WatchDual");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchDual, ColorBgDefault) == 0x0005BC, "Member 'UPyWidget_LeagueDetails_WatchDual::ColorBgDefault' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchDual, ColorBgHoveringMRC) == 0x0005CC, "Member 'UPyWidget_LeagueDetails_WatchDual::ColorBgHoveringMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchDual, ColorBgHoveringClash) == 0x0005DC, "Member 'UPyWidget_LeagueDetails_WatchDual::ColorBgHoveringClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchDual, TitleColorMRC) == 0x0005EC, "Member 'UPyWidget_LeagueDetails_WatchDual::TitleColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LeagueDetails_WatchDual, TitleColorClash) == 0x000600, "Member 'UPyWidget_LeagueDetails_WatchDual::TitleColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueDetails_WatchDual;
 
 }
 

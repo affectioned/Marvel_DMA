@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadShowActorBase">();
+		STATIC_CLASS_IMPL("PyPayloadShowActorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadShowActorBase")
 	}
 	static class APyPayloadShowActorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPayloadShowActorBase>();
 	}
 };
-static_assert(alignof(APyPayloadShowActorBase) == 0x000010, "Wrong alignment on APyPayloadShowActorBase");
-static_assert(sizeof(APyPayloadShowActorBase) == 0x000720, "Wrong size on APyPayloadShowActorBase");
-static_assert(offsetof(APyPayloadShowActorBase, PayloadShowMesh) == 0x000710, "Member 'APyPayloadShowActorBase::PayloadShowMesh' has a wrong offset!");
-static_assert(offsetof(APyPayloadShowActorBase, StartShowDelay) == 0x000718, "Member 'APyPayloadShowActorBase::StartShowDelay' has a wrong offset!");
+DUMPER7_ASSERTS_APyPayloadShowActorBase;
 
 // PythonClass PyPayloadShowActorBase.PyPayloadShowActorEndShowAnimNotify
 // 0x0000 (0x0040 - 0x0040)
@@ -52,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPayloadShowActorEndShowAnimNotify">();
+		STATIC_CLASS_IMPL("PyPayloadShowActorEndShowAnimNotify")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPayloadShowActorEndShowAnimNotify")
 	}
 	static class UPyPayloadShowActorEndShowAnimNotify* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPayloadShowActorEndShowAnimNotify>();
 	}
 };
-static_assert(alignof(UPyPayloadShowActorEndShowAnimNotify) == 0x000008, "Wrong alignment on UPyPayloadShowActorEndShowAnimNotify");
-static_assert(sizeof(UPyPayloadShowActorEndShowAnimNotify) == 0x000040, "Wrong size on UPyPayloadShowActorEndShowAnimNotify");
+DUMPER7_ASSERTS_UPyPayloadShowActorEndShowAnimNotify;
 
 }
 

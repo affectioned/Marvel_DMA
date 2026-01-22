@@ -53,27 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PropertyPathTestObject">();
+		STATIC_CLASS_IMPL("PropertyPathTestObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PropertyPathTestObject")
 	}
 	static class UPropertyPathTestObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPropertyPathTestObject>();
 	}
 };
-static_assert(alignof(UPropertyPathTestObject) == 0x000008, "Wrong alignment on UPropertyPathTestObject");
-static_assert(sizeof(UPropertyPathTestObject) == 0x000158, "Wrong size on UPropertyPathTestObject");
-static_assert(offsetof(UPropertyPathTestObject, Bool) == 0x000030, "Member 'UPropertyPathTestObject::Bool' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumOne) == 0x000031, "Member 'UPropertyPathTestObject::EnumOne' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumTwo) == 0x000032, "Member 'UPropertyPathTestObject::EnumTwo' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumThree) == 0x000033, "Member 'UPropertyPathTestObject::EnumThree' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, EnumFour) == 0x000034, "Member 'UPropertyPathTestObject::EnumFour' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, Integer) == 0x000038, "Member 'UPropertyPathTestObject::Integer' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, String) == 0x000040, "Member 'UPropertyPathTestObject::String' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, Float) == 0x000050, "Member 'UPropertyPathTestObject::Float' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, Struct) == 0x000058, "Member 'UPropertyPathTestObject::Struct' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, StructRef) == 0x0000A8, "Member 'UPropertyPathTestObject::StructRef' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, StructConstRef) == 0x0000F8, "Member 'UPropertyPathTestObject::StructConstRef' has a wrong offset!");
-static_assert(offsetof(UPropertyPathTestObject, InnerObject) == 0x000148, "Member 'UPropertyPathTestObject::InnerObject' has a wrong offset!");
+DUMPER7_ASSERTS_UPropertyPathTestObject;
 
 }
 

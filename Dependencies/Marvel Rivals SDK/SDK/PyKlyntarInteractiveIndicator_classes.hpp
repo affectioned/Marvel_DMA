@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarInteractiveIndicator">();
+		STATIC_CLASS_IMPL("PyKlyntarInteractiveIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarInteractiveIndicator")
 	}
 	static class APyKlyntarInteractiveIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarInteractiveIndicator>();
 	}
 };
-static_assert(alignof(APyKlyntarInteractiveIndicator) == 0x000010, "Wrong alignment on APyKlyntarInteractiveIndicator");
-static_assert(sizeof(APyKlyntarInteractiveIndicator) == 0x000700, "Wrong size on APyKlyntarInteractiveIndicator");
-static_assert(offsetof(APyKlyntarInteractiveIndicator, IndicatorText) == 0x0006E0, "Member 'APyKlyntarInteractiveIndicator::IndicatorText' has a wrong offset!");
-static_assert(offsetof(APyKlyntarInteractiveIndicator, InteractiveDirection) == 0x0006F8, "Member 'APyKlyntarInteractiveIndicator::InteractiveDirection' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarInteractiveIndicator;
 
 }
 

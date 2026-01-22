@@ -25,9 +25,7 @@ struct PyTraceComponent_20020703_OnStateChanged final
 public:
 	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTraceComponent_20020703_OnStateChanged) == 0x000004, "Wrong alignment on PyTraceComponent_20020703_OnStateChanged");
-static_assert(sizeof(PyTraceComponent_20020703_OnStateChanged) == 0x000004, "Wrong size on PyTraceComponent_20020703_OnStateChanged");
-static_assert(offsetof(PyTraceComponent_20020703_OnStateChanged, InState) == 0x000000, "Member 'PyTraceComponent_20020703_OnStateChanged::InState' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_20020703_OnStateChanged;
 
 // PythonFunction PySummoned_LargeTentacle.PySummoned_LargeTentacleArea.SetTentacleAreaActive
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct PySummoned_LargeTentacleArea_SetTentacleAreaActive final
 public:
 	bool                                          InActive;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummoned_LargeTentacleArea_SetTentacleAreaActive) == 0x000001, "Wrong alignment on PySummoned_LargeTentacleArea_SetTentacleAreaActive");
-static_assert(sizeof(PySummoned_LargeTentacleArea_SetTentacleAreaActive) == 0x000001, "Wrong size on PySummoned_LargeTentacleArea_SetTentacleAreaActive");
-static_assert(offsetof(PySummoned_LargeTentacleArea_SetTentacleAreaActive, InActive) == 0x000000, "Member 'PySummoned_LargeTentacleArea_SetTentacleAreaActive::InActive' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_LargeTentacleArea_SetTentacleAreaActive;
 
 // PythonFunction PySummoned_LargeTentacle.PySummoned_LargeTentacleArea.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -47,35 +43,7 @@ struct PySummoned_LargeTentacleArea_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummoned_LargeTentacleArea_ReceiveTick) == 0x000004, "Wrong alignment on PySummoned_LargeTentacleArea_ReceiveTick");
-static_assert(sizeof(PySummoned_LargeTentacleArea_ReceiveTick) == 0x000004, "Wrong size on PySummoned_LargeTentacleArea_ReceiveTick");
-static_assert(offsetof(PySummoned_LargeTentacleArea_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PySummoned_LargeTentacleArea_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.WhileActiveFX
-// 0x01D8 (0x01D8 - 0x0000)
-struct PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX");
-static_assert(sizeof(PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX");
-static_assert(offsetof(PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX::Parameters' has a wrong offset!");
-
-// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.OnRemoveFX
-// 0x01D8 (0x01D8 - 0x0000)
-struct PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX");
-static_assert(sizeof(PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX");
-static_assert(offsetof(PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_LargeTentacleArea_ReceiveTick;
 
 // PythonFunction PySummoned_LargeTentacle.PySummoned_LargeTentacle.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -84,9 +52,7 @@ struct PySummoned_LargeTentacle_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummoned_LargeTentacle_ReceiveTick) == 0x000004, "Wrong alignment on PySummoned_LargeTentacle_ReceiveTick");
-static_assert(sizeof(PySummoned_LargeTentacle_ReceiveTick) == 0x000004, "Wrong size on PySummoned_LargeTentacle_ReceiveTick");
-static_assert(offsetof(PySummoned_LargeTentacle_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PySummoned_LargeTentacle_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_LargeTentacle_ReceiveTick;
 
 // PythonFunction PySummoned_LargeTentacle.PySummoned_LargeTentacle.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -97,11 +63,27 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PySummoned_LargeTentacle_OnDeath) == 0x000008, "Wrong alignment on PySummoned_LargeTentacle_OnDeath");
-static_assert(sizeof(PySummoned_LargeTentacle_OnDeath) == 0x000028, "Wrong size on PySummoned_LargeTentacle_OnDeath");
-static_assert(offsetof(PySummoned_LargeTentacle_OnDeath, InSource) == 0x000000, "Member 'PySummoned_LargeTentacle_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PySummoned_LargeTentacle_OnDeath, InSourceAvatar) == 0x000008, "Member 'PySummoned_LargeTentacle_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PySummoned_LargeTentacle_OnDeath, ParameterHandle) == 0x000010, "Member 'PySummoned_LargeTentacle_OnDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_LargeTentacle_OnDeath;
+
+// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.WhileActiveFX
+// 0x01D8 (0x01D8 - 0x0000)
+struct PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_PyCue_Scope_Loop_TentacleDeathAttack_WhileActiveFX;
+
+// PythonFunction PySummoned_LargeTentacle.PyCue_Scope_Loop_TentacleDeathAttack.OnRemoveFX
+// 0x01D8 (0x01D8 - 0x0000)
+struct PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_PyCue_Scope_Loop_TentacleDeathAttack_OnRemoveFX;
 
 // PythonFunction PySummoned_LargeTentacle.PyCue_Summoner_Loop_LargeTentacle.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -111,10 +93,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX");
-static_assert(sizeof(PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_LargeTentacle_WhileActiveFX;
 
 // PythonFunction PySummoned_LargeTentacle.PyCue_Summoner_Loop_LargeTentacle.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -124,10 +103,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX");
-static_assert(sizeof(PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_LargeTentacle_OnRemoveFX;
 
 // PythonFunction PySummoned_LargeTentacle.PyCue_Summoner_Loop_LargeTentacle.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -136,9 +112,7 @@ struct PyCue_Summoner_Loop_LargeTentacle_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_LargeTentacle_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Summoner_Loop_LargeTentacle_ReceiveTick");
-static_assert(sizeof(PyCue_Summoner_Loop_LargeTentacle_ReceiveTick) == 0x000004, "Wrong size on PyCue_Summoner_Loop_LargeTentacle_ReceiveTick");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Summoner_Loop_LargeTentacle_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_LargeTentacle_ReceiveTick;
 
 // PythonFunction PySummoned_LargeTentacle.PyCue_Summoner_Loop_LargeTentacle.OnPreAttackStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -147,9 +121,7 @@ struct PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged final
 public:
 	bool                                          IsPreAttack;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged) == 0x000001, "Wrong alignment on PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged");
-static_assert(sizeof(PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged) == 0x000001, "Wrong size on PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged, IsPreAttack) == 0x000000, "Member 'PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged::IsPreAttack' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_LargeTentacle_OnPreAttackStateChanged;
 
 // PythonFunction PySummoned_LargeTentacle.PyCue_Summoner_Loop_LargeTentacle.OnStateChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -158,9 +130,7 @@ struct PyCue_Summoner_Loop_LargeTentacle_OnStateChanged final
 public:
 	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_LargeTentacle_OnStateChanged) == 0x000004, "Wrong alignment on PyCue_Summoner_Loop_LargeTentacle_OnStateChanged");
-static_assert(sizeof(PyCue_Summoner_Loop_LargeTentacle_OnStateChanged) == 0x000004, "Wrong size on PyCue_Summoner_Loop_LargeTentacle_OnStateChanged");
-static_assert(offsetof(PyCue_Summoner_Loop_LargeTentacle_OnStateChanged, InState) == 0x000000, "Member 'PyCue_Summoner_Loop_LargeTentacle_OnStateChanged::InState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_LargeTentacle_OnStateChanged;
 
 // PythonFunction PySummoned_LargeTentacle.PyTraceComponent_LargeTentacle_Attack_Base.OnStateChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -169,9 +139,7 @@ struct PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged final
 public:
 	int32                                         InState;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged) == 0x000004, "Wrong alignment on PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged");
-static_assert(sizeof(PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged) == 0x000004, "Wrong size on PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged");
-static_assert(offsetof(PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged, InState) == 0x000000, "Member 'PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged::InState' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_LargeTentacle_Attack_Base_OnStateChanged;
 
 // PythonFunction PySummoned_LargeTentacle.PyKnockUp_LargeTentacle_Attack.CalcKnockUpDir
 // 0x0018 (0x0018 - 0x0000)
@@ -180,9 +148,7 @@ struct PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir final
 public:
 	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir) == 0x000008, "Wrong alignment on PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir");
-static_assert(sizeof(PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir) == 0x000018, "Wrong size on PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir");
-static_assert(offsetof(PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir, ReturnValue) == 0x000000, "Member 'PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyKnockUp_LargeTentacle_Attack_CalcKnockUpDir;
 
 }
 

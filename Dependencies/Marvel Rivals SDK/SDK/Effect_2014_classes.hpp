@@ -23,15 +23,18 @@ class UEffect_2014_C final : public UEffect_1142_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Effect_2014_C">();
+		BP_STATIC_CLASS_IMPL("Effect_2014_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Effect_2014_C")
 	}
 	static class UEffect_2014_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffect_2014_C>();
 	}
 };
-static_assert(alignof(UEffect_2014_C) == 0x000008, "Wrong alignment on UEffect_2014_C");
-static_assert(sizeof(UEffect_2014_C) == 0x001438, "Wrong size on UEffect_2014_C");
+DUMPER7_ASSERTS_UEffect_2014_C;
 
 }
 

@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoorMaterialEffect">();
+		STATIC_CLASS_IMPL("PyDoorMaterialEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoorMaterialEffect")
 	}
 	static class APyDoorMaterialEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoorMaterialEffect>();
 	}
 };
-static_assert(alignof(APyDoorMaterialEffect) == 0x000010, "Wrong alignment on APyDoorMaterialEffect");
-static_assert(sizeof(APyDoorMaterialEffect) == 0x000740, "Wrong size on APyDoorMaterialEffect");
-static_assert(offsetof(APyDoorMaterialEffect, RepCurrentTime) == 0x000730, "Member 'APyDoorMaterialEffect::RepCurrentTime' has a wrong offset!");
-static_assert(offsetof(APyDoorMaterialEffect, CurrentTime) == 0x000734, "Member 'APyDoorMaterialEffect::CurrentTime' has a wrong offset!");
-static_assert(offsetof(APyDoorMaterialEffect, EndTime) == 0x000738, "Member 'APyDoorMaterialEffect::EndTime' has a wrong offset!");
-static_assert(offsetof(APyDoorMaterialEffect, PlayingState) == 0x00073C, "Member 'APyDoorMaterialEffect::PlayingState' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoorMaterialEffect;
 
 }
 

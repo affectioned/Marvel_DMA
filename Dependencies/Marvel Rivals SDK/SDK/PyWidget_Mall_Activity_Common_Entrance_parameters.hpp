@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance.OnCascadingVisibleChanged
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged final
-{
-public:
-	bool                                          bIsCascadingVisible;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged, bIsCascadingVisible) == 0x000000, "Member 'PyWidget_Mall_Activity_Common_Entrance_OnCascadingVisibleChanged::bIsCascadingVisible' has a wrong offset!");
-
 // PythonFunction PyWidget_Mall_Activity_Common_Entrance.PyWidget_Mall_Activity_Common_Entrance.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
 struct PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName final
@@ -32,9 +21,7 @@ struct PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Activity_Common_Entrance_GetAutoTestDebugName;
 
 }
 

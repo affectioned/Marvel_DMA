@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDoorEffect">();
+		STATIC_CLASS_IMPL("PyDoorEffect")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDoorEffect")
 	}
 	static class APyDoorEffect* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyDoorEffect>();
 	}
 };
-static_assert(alignof(APyDoorEffect) == 0x000010, "Wrong alignment on APyDoorEffect");
-static_assert(sizeof(APyDoorEffect) == 0x000740, "Wrong size on APyDoorEffect");
-static_assert(offsetof(APyDoorEffect, DoorEffect) == 0x000730, "Member 'APyDoorEffect::DoorEffect' has a wrong offset!");
-static_assert(offsetof(APyDoorEffect, EffectDestroyTime) == 0x000738, "Member 'APyDoorEffect::EffectDestroyTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyDoorEffect;
 
 }
 

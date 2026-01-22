@@ -19,21 +19,16 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_105343.PyBuffAbility_10534301.OnActorHit
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyBuffAbility_10534301_OnActorHit final
 {
 public:
 	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                NormalImpulse;                                     // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0028(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0028(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_10534301_OnActorHit) == 0x000008, "Wrong alignment on PyBuffAbility_10534301_OnActorHit");
-static_assert(sizeof(PyBuffAbility_10534301_OnActorHit) == 0x000218, "Wrong size on PyBuffAbility_10534301_OnActorHit");
-static_assert(offsetof(PyBuffAbility_10534301_OnActorHit, SelfActor) == 0x000000, "Member 'PyBuffAbility_10534301_OnActorHit::SelfActor' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10534301_OnActorHit, OtherActor) == 0x000008, "Member 'PyBuffAbility_10534301_OnActorHit::OtherActor' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10534301_OnActorHit, NormalImpulse) == 0x000010, "Member 'PyBuffAbility_10534301_OnActorHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_10534301_OnActorHit, Hit) == 0x000028, "Member 'PyBuffAbility_10534301_OnActorHit::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10534301_OnActorHit;
 
 // PythonFunction PyAbility_105343.PyBuffAbility_10534301.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -42,9 +37,7 @@ struct PyBuffAbility_10534301_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10534301_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_10534301_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_10534301_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_10534301_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_10534301_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_10534301_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10534301_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105343.PyCue_Ability_Instant_10534301.OnExecuteAudio
 // 0x01D8 (0x01D8 - 0x0000)
@@ -54,10 +47,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Ability_Instant_10534301_OnExecuteAudio) == 0x000008, "Wrong alignment on PyCue_Ability_Instant_10534301_OnExecuteAudio");
-static_assert(sizeof(PyCue_Ability_Instant_10534301_OnExecuteAudio) == 0x0001D8, "Wrong size on PyCue_Ability_Instant_10534301_OnExecuteAudio");
-static_assert(offsetof(PyCue_Ability_Instant_10534301_OnExecuteAudio, MyTarget) == 0x000000, "Member 'PyCue_Ability_Instant_10534301_OnExecuteAudio::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Ability_Instant_10534301_OnExecuteAudio, Parameters) == 0x000008, "Member 'PyCue_Ability_Instant_10534301_OnExecuteAudio::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Ability_Instant_10534301_OnExecuteAudio;
 
 }
 

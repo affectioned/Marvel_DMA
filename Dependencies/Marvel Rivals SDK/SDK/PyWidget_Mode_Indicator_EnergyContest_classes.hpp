@@ -57,35 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mode_EnergyContest_Indicator">();
+		STATIC_CLASS_IMPL("PyWidget_Mode_EnergyContest_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mode_EnergyContest_Indicator")
 	}
 	static class UPyWidget_Mode_EnergyContest_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mode_EnergyContest_Indicator>();
 	}
 };
-static_assert(alignof(UPyWidget_Mode_EnergyContest_Indicator) == 0x000010, "Wrong alignment on UPyWidget_Mode_EnergyContest_Indicator");
-static_assert(sizeof(UPyWidget_Mode_EnergyContest_Indicator) == 0x000950, "Wrong size on UPyWidget_Mode_EnergyContest_Indicator");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Anim_Unlock) == 0x0008A0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Anim_Unlock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Anim_ShowHighlight) == 0x0008A8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Anim_ShowHighlight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, AkEvent_ShowHightlight) == 0x0008B0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::AkEvent_ShowHightlight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Img_Cycle_Vx) == 0x0008B8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Img_Cycle_Vx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Text_PointName) == 0x0008C0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Text_PointName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, WBP_IconFrame) == 0x0008C8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::WBP_IconFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, WBP_Prog) == 0x0008D0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::WBP_Prog' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Text_Target) == 0x0008D8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Text_Target' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, ScaleBox_IconBg_Lock) == 0x0008E0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::ScaleBox_IconBg_Lock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Overlay_Lock_Resources) == 0x0008E8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Overlay_Lock_Resources' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Overlay_Lock_Plunder) == 0x0008F0, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Overlay_Lock_Plunder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, ScaleBox_IconBg) == 0x0008F8, "Member 'UPyWidget_Mode_EnergyContest_Indicator::ScaleBox_IconBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Overlay_IconBg_Resources) == 0x000900, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Overlay_IconBg_Resources' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Overlay_IconBg_Plunder) == 0x000908, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Overlay_IconBg_Plunder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Img_IconBg_Resources) == 0x000910, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Img_IconBg_Resources' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Img_IconBg_Plunder) == 0x000918, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Img_IconBg_Plunder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Img_IconFrame_Resources) == 0x000920, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Img_IconFrame_Resources' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Img_IconFrame_Plunder) == 0x000928, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Img_IconFrame_Plunder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, Overlay_Disable) == 0x000930, "Member 'UPyWidget_Mode_EnergyContest_Indicator::Overlay_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mode_EnergyContest_Indicator, AnimatedControlPosition) == 0x000938, "Member 'UPyWidget_Mode_EnergyContest_Indicator::AnimatedControlPosition' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mode_EnergyContest_Indicator;
 
 }
 

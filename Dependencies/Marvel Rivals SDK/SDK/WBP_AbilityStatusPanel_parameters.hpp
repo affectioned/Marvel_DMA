@@ -25,11 +25,7 @@ public:
 	class UAbilityCommonExtraWidgets*             ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 	class UAbilityCommonExtraWidgets*             CallFunc_GetWidgetsByStyles_V5_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5) == 0x000008, "Wrong alignment on WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5");
-static_assert(sizeof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5) == 0x000050, "Wrong size on WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5");
-static_assert(offsetof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5, InStyle) == 0x000000, "Member 'WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5::InStyle' has a wrong offset!");
-static_assert(offsetof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5, ReturnValue) == 0x000040, "Member 'WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5, CallFunc_GetWidgetsByStyles_V5_ReturnValue) == 0x000048, "Member 'WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5::CallFunc_GetWidgetsByStyles_V5_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_AbilityStatusPanel_C_GetWidgetsByStyles_V5;
 
 // Function WBP_AbilityStatusPanel.WBP_AbilityStatusPanel_C.GetWidgetsByStyles
 // 0x0038 (0x0038 - 0x0000)
@@ -39,10 +35,7 @@ public:
 	struct FWidgetStyle_AbilityCommon             InStyle;                                           // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UAbilityCommonExtraWidgets*             ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles) == 0x000008, "Wrong alignment on WBP_AbilityStatusPanel_C_GetWidgetsByStyles");
-static_assert(sizeof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles) == 0x000038, "Wrong size on WBP_AbilityStatusPanel_C_GetWidgetsByStyles");
-static_assert(offsetof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles, InStyle) == 0x000000, "Member 'WBP_AbilityStatusPanel_C_GetWidgetsByStyles::InStyle' has a wrong offset!");
-static_assert(offsetof(WBP_AbilityStatusPanel_C_GetWidgetsByStyles, ReturnValue) == 0x000030, "Member 'WBP_AbilityStatusPanel_C_GetWidgetsByStyles::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_AbilityStatusPanel_C_GetWidgetsByStyles;
 
 }
 

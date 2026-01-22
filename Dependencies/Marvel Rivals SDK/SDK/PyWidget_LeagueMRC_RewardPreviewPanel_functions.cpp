@@ -17,63 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueRewardPreviewItem::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueRewardPreviewItem::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueRewardPreviewItem::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardBounds.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -169,6 +112,88 @@ void UPyWidget_LeagueRewardBounds::OnUnhovered()
 }
 
 
+// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.OnInitialized
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LeagueRewardPreviewItem::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "OnInitialized");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.Construct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LeagueRewardPreviewItem::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "Construct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.Destruct
+// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyWidget_LeagueRewardPreviewItem::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "Destruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueRewardPreviewItem.OnListItemObjectSet
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          item_data                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_LeagueRewardPreviewItem::OnListItemObjectSet(class UObject* item_data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_LeagueRewardPreviewItem", "OnListItemObjectSet");
+
+	Params::PyWidget_LeagueRewardPreviewItem_OnListItemObjectSet Parms{};
+
+	Parms.item_data = item_data;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewPanel.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -241,88 +266,6 @@ void UPyWidget_LeagueMRC_RewardPreviewPanel::MarvelSetVisible(bool Visible)
 	Params::PyWidget_LeagueMRC_RewardPreviewPanel_MarvelSetVisible Parms{};
 
 	Parms.Visible = Visible;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit.OnInitialized
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueMRC_RewardPreviewUnit::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueMRC_RewardPreviewUnit", "OnInitialized");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit.Construct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueMRC_RewardPreviewUnit::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueMRC_RewardPreviewUnit", "Construct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit.Destruct
-// (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget_LeagueMRC_RewardPreviewUnit::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueMRC_RewardPreviewUnit", "Destruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_LeagueMRC_RewardPreviewPanel.PyWidget_LeagueMRC_RewardPreviewUnit.OnListItemObjectSet
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          item                                                   (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UPyWidget_LeagueMRC_RewardPreviewUnit::OnListItemObjectSet(class UObject* item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_LeagueMRC_RewardPreviewUnit", "OnListItemObjectSet");
-
-	Params::PyWidget_LeagueMRC_RewardPreviewUnit_OnListItemObjectSet Parms{};
-
-	Parms.item = item;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

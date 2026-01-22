@@ -77,50 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimToTextureDataAsset">();
+		STATIC_CLASS_IMPL("AnimToTextureDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimToTextureDataAsset")
 	}
 	static class UAnimToTextureDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimToTextureDataAsset>();
 	}
 };
-static_assert(alignof(UAnimToTextureDataAsset) == 0x000010, "Wrong alignment on UAnimToTextureDataAsset");
-static_assert(sizeof(UAnimToTextureDataAsset) == 0x0002A0, "Wrong size on UAnimToTextureDataAsset");
-static_assert(offsetof(UAnimToTextureDataAsset, SkeletalMesh) == 0x000038, "Member 'UAnimToTextureDataAsset::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, SkeletalLODIndex) == 0x000068, "Member 'UAnimToTextureDataAsset::SkeletalLODIndex' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, StaticMesh) == 0x000070, "Member 'UAnimToTextureDataAsset::StaticMesh' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, StaticLODIndex) == 0x0000A0, "Member 'UAnimToTextureDataAsset::StaticLODIndex' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, UVChannel) == 0x0000A4, "Member 'UAnimToTextureDataAsset::UVChannel' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, NumDriverTriangles) == 0x0000A8, "Member 'UAnimToTextureDataAsset::NumDriverTriangles' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Sigma) == 0x0000AC, "Member 'UAnimToTextureDataAsset::Sigma' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, MaxHeight) == 0x0000B0, "Member 'UAnimToTextureDataAsset::MaxHeight' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, MaxWidth) == 0x0000B4, "Member 'UAnimToTextureDataAsset::MaxWidth' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, bEnforcePowerOfTwo) == 0x0000B8, "Member 'UAnimToTextureDataAsset::bEnforcePowerOfTwo' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Precision) == 0x0000B9, "Member 'UAnimToTextureDataAsset::Precision' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Mode) == 0x0000BA, "Member 'UAnimToTextureDataAsset::Mode' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexPositionTexture) == 0x0000C0, "Member 'UAnimToTextureDataAsset::VertexPositionTexture' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexNormalTexture) == 0x0000F0, "Member 'UAnimToTextureDataAsset::VertexNormalTexture' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BonePositionTexture) == 0x000120, "Member 'UAnimToTextureDataAsset::BonePositionTexture' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneRotationTexture) == 0x000150, "Member 'UAnimToTextureDataAsset::BoneRotationTexture' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneWeightTexture) == 0x000180, "Member 'UAnimToTextureDataAsset::BoneWeightTexture' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, RootTransform) == 0x0001B0, "Member 'UAnimToTextureDataAsset::RootTransform' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, AttachToSocket) == 0x000210, "Member 'UAnimToTextureDataAsset::AttachToSocket' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, SampleRate) == 0x00021C, "Member 'UAnimToTextureDataAsset::SampleRate' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, AnimSequences) == 0x000220, "Member 'UAnimToTextureDataAsset::AnimSequences' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, bAutoPlay) == 0x000230, "Member 'UAnimToTextureDataAsset::bAutoPlay' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, AnimationIndex) == 0x000234, "Member 'UAnimToTextureDataAsset::AnimationIndex' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Frame) == 0x000238, "Member 'UAnimToTextureDataAsset::Frame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, NumBoneInfluences) == 0x00023C, "Member 'UAnimToTextureDataAsset::NumBoneInfluences' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, NumFrames) == 0x000240, "Member 'UAnimToTextureDataAsset::NumFrames' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, NumBones) == 0x000244, "Member 'UAnimToTextureDataAsset::NumBones' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexRowsPerFrame) == 0x000248, "Member 'UAnimToTextureDataAsset::VertexRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexMinBBox) == 0x00024C, "Member 'UAnimToTextureDataAsset::VertexMinBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, VertexSizeBBox) == 0x000258, "Member 'UAnimToTextureDataAsset::VertexSizeBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneWeightRowsPerFrame) == 0x000264, "Member 'UAnimToTextureDataAsset::BoneWeightRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneRowsPerFrame) == 0x000268, "Member 'UAnimToTextureDataAsset::BoneRowsPerFrame' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneMinBBox) == 0x00026C, "Member 'UAnimToTextureDataAsset::BoneMinBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, BoneSizeBBox) == 0x000278, "Member 'UAnimToTextureDataAsset::BoneSizeBBox' has a wrong offset!");
-static_assert(offsetof(UAnimToTextureDataAsset, Animations) == 0x000288, "Member 'UAnimToTextureDataAsset::Animations' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimToTextureDataAsset;
 
 // Class AnimToTexture.AnimToTextureInstancePlaybackLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -139,15 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimToTextureInstancePlaybackLibrary">();
+		STATIC_CLASS_IMPL("AnimToTextureInstancePlaybackLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimToTextureInstancePlaybackLibrary")
 	}
 	static class UAnimToTextureInstancePlaybackLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimToTextureInstancePlaybackLibrary>();
 	}
 };
-static_assert(alignof(UAnimToTextureInstancePlaybackLibrary) == 0x000008, "Wrong alignment on UAnimToTextureInstancePlaybackLibrary");
-static_assert(sizeof(UAnimToTextureInstancePlaybackLibrary) == 0x000030, "Wrong size on UAnimToTextureInstancePlaybackLibrary");
+DUMPER7_ASSERTS_UAnimToTextureInstancePlaybackLibrary;
 
 }
 

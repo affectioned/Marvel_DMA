@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SeasonPanel.PyWidget_SeasonPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_SeasonPanel final : public UPyWidget_LobbyChildPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SeasonPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SeasonPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SeasonPanel")
 	}
 	static class UPyWidget_SeasonPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SeasonPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SeasonPanel) == 0x000008, "Wrong alignment on UPyWidget_SeasonPanel");
-static_assert(sizeof(UPyWidget_SeasonPanel) == 0x0005F8, "Wrong size on UPyWidget_SeasonPanel");
+DUMPER7_ASSERTS_UPyWidget_SeasonPanel;
 
 }
 

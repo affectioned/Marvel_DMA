@@ -18,58 +18,58 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_NavigationBar.PyWidget_Common_NavigationBar
-// 0x0188 (0x0748 - 0x05C0)
+// 0x0188 (0x0750 - 0x05C8)
 class UPyWidget_Common_NavigationBar : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsOnlyShowTitle;                                   // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOnlyShowRightAreaFocus;                          // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Title;                                             // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsResetNavIndex;                                   // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsResetSubNavIndex;                                // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNeedPsHandle;                                    // 0x05DA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowCurrency;                                    // 0x05DB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowSetting;                                     // 0x05DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowEmail;                                       // 0x05DD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowFriend;                                      // 0x05DE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowPrivilege;                                   // 0x05DF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowLottery;                                     // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsDirectToSetting;                                 // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowBtnAdd;                                      // 0x05E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E3[0x5];                                      // 0x05E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         ResidentCurrencyIDs;                               // 0x05E8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ExtraCurrencyIDs;                                  // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FCommonNavTitle>                NavTextList;                                       // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Menu;                                      // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewIndex;                                      // 0x0620(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_624[0x4];                                      // 0x0624(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UInputAction*                           RightAreaFocusAction;                              // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuAction;                                    // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                RightAreaClass;                                    // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                RightCompetetionAreaClass;                         // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    NavWidgets;                                        // 0x0648(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UCanvasPanel*                           CanvasPanel_Main;                                  // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_NavWidget;                                 // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_NavSubWidget;                              // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Right;                                     // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Top;                                       // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextBlock*                             Text_Title;                                        // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USizeBox*                               FirstLevelTitle;                                   // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCommonKeyWidget*                       KeyWidgetBP_PlayerHead;                            // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HorBox_RightMenu;                                  // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Time;                                         // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Right_Bg;                                      // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_FadeIn_02;                                    // 0x06B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnNavClicked;                                      // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex)> OnSubNavClicked;             // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index, class UUserWidget* NavWidget)> OnNavWidgetCreate;     // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex, class UUserWidget* NavWidget)> OnSubNavWidgetCreate; // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index, class UUserWidget* NavWidget)> OnNavWidgetShow;       // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex, class UUserWidget* NavWidget)> OnSubNavWidgetShow; // 0x0708(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Index)>   OnNavWidgetRemove;                                 // 0x0718(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex)> OnSubNavWidgetRemove;        // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSubNavCreated;                                   // 0x0738(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsOnlyShowTitle;                                   // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOnlyShowRightAreaFocus;                          // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Title;                                             // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsResetNavIndex;                                   // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsResetSubNavIndex;                                // 0x05E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNeedPsHandle;                                    // 0x05E2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowCurrency;                                    // 0x05E3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowSetting;                                     // 0x05E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowEmail;                                       // 0x05E5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowFriend;                                      // 0x05E6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowPrivilege;                                   // 0x05E7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowLottery;                                     // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsDirectToSetting;                                 // 0x05E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowBtnAdd;                                      // 0x05EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EB[0x5];                                      // 0x05EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         ResidentCurrencyIDs;                               // 0x05F0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ExtraCurrencyIDs;                                  // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FCommonNavTitle>                NavTextList;                                       // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Menu;                                      // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewIndex;                                      // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           RightAreaFocusAction;                              // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuAction;                                    // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                RightAreaClass;                                    // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                RightCompetetionAreaClass;                         // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    NavWidgets;                                        // 0x0650(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UCanvasPanel*                           CanvasPanel_Main;                                  // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_NavWidget;                                 // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_NavSubWidget;                              // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Right;                                     // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Top;                                       // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextBlock*                             Text_Title;                                        // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               FirstLevelTitle;                                   // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCommonKeyWidget*                       KeyWidgetBP_PlayerHead;                            // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HorBox_RightMenu;                                  // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Time;                                         // 0x06A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Right_Bg;                                      // 0x06B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_FadeIn_02;                                    // 0x06B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnNavClicked;                                      // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex)> OnSubNavClicked;             // 0x06D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index, class UUserWidget* NavWidget)> OnNavWidgetCreate;     // 0x06E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex, class UUserWidget* NavWidget)> OnSubNavWidgetCreate; // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index, class UUserWidget* NavWidget)> OnNavWidgetShow;       // 0x0700(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex, class UUserWidget* NavWidget)> OnSubNavWidgetShow; // 0x0710(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Index)>   OnNavWidgetRemove;                                 // 0x0720(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ParentIndex, int32 ChildIndex)> OnSubNavWidgetRemove;        // 0x0730(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSubNavCreated;                                   // 0x0740(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -82,60 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationBar">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar")
 	}
 	static class UPyWidget_Common_NavigationBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationBar) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationBar");
-static_assert(sizeof(UPyWidget_Common_NavigationBar) == 0x000748, "Wrong size on UPyWidget_Common_NavigationBar");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsOnlyShowTitle) == 0x0005BA, "Member 'UPyWidget_Common_NavigationBar::IsOnlyShowTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsOnlyShowRightAreaFocus) == 0x0005BB, "Member 'UPyWidget_Common_NavigationBar::IsOnlyShowRightAreaFocus' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Title) == 0x0005C0, "Member 'UPyWidget_Common_NavigationBar::Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsResetNavIndex) == 0x0005D8, "Member 'UPyWidget_Common_NavigationBar::IsResetNavIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsResetSubNavIndex) == 0x0005D9, "Member 'UPyWidget_Common_NavigationBar::IsResetSubNavIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsNeedPsHandle) == 0x0005DA, "Member 'UPyWidget_Common_NavigationBar::IsNeedPsHandle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowCurrency) == 0x0005DB, "Member 'UPyWidget_Common_NavigationBar::IsShowCurrency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowSetting) == 0x0005DC, "Member 'UPyWidget_Common_NavigationBar::IsShowSetting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowEmail) == 0x0005DD, "Member 'UPyWidget_Common_NavigationBar::IsShowEmail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowFriend) == 0x0005DE, "Member 'UPyWidget_Common_NavigationBar::IsShowFriend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowPrivilege) == 0x0005DF, "Member 'UPyWidget_Common_NavigationBar::IsShowPrivilege' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowLottery) == 0x0005E0, "Member 'UPyWidget_Common_NavigationBar::IsShowLottery' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsDirectToSetting) == 0x0005E1, "Member 'UPyWidget_Common_NavigationBar::IsDirectToSetting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, IsShowBtnAdd) == 0x0005E2, "Member 'UPyWidget_Common_NavigationBar::IsShowBtnAdd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, ResidentCurrencyIDs) == 0x0005E8, "Member 'UPyWidget_Common_NavigationBar::ResidentCurrencyIDs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, ExtraCurrencyIDs) == 0x0005F8, "Member 'UPyWidget_Common_NavigationBar::ExtraCurrencyIDs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, NavTextList) == 0x000608, "Member 'UPyWidget_Common_NavigationBar::NavTextList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, AkEvent_Menu) == 0x000618, "Member 'UPyWidget_Common_NavigationBar::AkEvent_Menu' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, PreviewIndex) == 0x000620, "Member 'UPyWidget_Common_NavigationBar::PreviewIndex' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, RightAreaFocusAction) == 0x000628, "Member 'UPyWidget_Common_NavigationBar::RightAreaFocusAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, ExitMenuAction) == 0x000630, "Member 'UPyWidget_Common_NavigationBar::ExitMenuAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, RightAreaClass) == 0x000638, "Member 'UPyWidget_Common_NavigationBar::RightAreaClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, RightCompetetionAreaClass) == 0x000640, "Member 'UPyWidget_Common_NavigationBar::RightCompetetionAreaClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, NavWidgets) == 0x000648, "Member 'UPyWidget_Common_NavigationBar::NavWidgets' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, CanvasPanel_Main) == 0x000658, "Member 'UPyWidget_Common_NavigationBar::CanvasPanel_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Overlay_NavWidget) == 0x000660, "Member 'UPyWidget_Common_NavigationBar::Overlay_NavWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Overlay_NavSubWidget) == 0x000668, "Member 'UPyWidget_Common_NavigationBar::Overlay_NavSubWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Overlay_Right) == 0x000670, "Member 'UPyWidget_Common_NavigationBar::Overlay_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Overlay_Top) == 0x000678, "Member 'UPyWidget_Common_NavigationBar::Overlay_Top' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Text_Title) == 0x000680, "Member 'UPyWidget_Common_NavigationBar::Text_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, FirstLevelTitle) == 0x000688, "Member 'UPyWidget_Common_NavigationBar::FirstLevelTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, KeyWidgetBP_PlayerHead) == 0x000690, "Member 'UPyWidget_Common_NavigationBar::KeyWidgetBP_PlayerHead' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, HorBox_RightMenu) == 0x000698, "Member 'UPyWidget_Common_NavigationBar::HorBox_RightMenu' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Text_Time) == 0x0006A0, "Member 'UPyWidget_Common_NavigationBar::Text_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Img_Right_Bg) == 0x0006A8, "Member 'UPyWidget_Common_NavigationBar::Img_Right_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, Anim_FadeIn_02) == 0x0006B0, "Member 'UPyWidget_Common_NavigationBar::Anim_FadeIn_02' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnNavClicked) == 0x0006B8, "Member 'UPyWidget_Common_NavigationBar::OnNavClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnSubNavClicked) == 0x0006C8, "Member 'UPyWidget_Common_NavigationBar::OnSubNavClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnNavWidgetCreate) == 0x0006D8, "Member 'UPyWidget_Common_NavigationBar::OnNavWidgetCreate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnSubNavWidgetCreate) == 0x0006E8, "Member 'UPyWidget_Common_NavigationBar::OnSubNavWidgetCreate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnNavWidgetShow) == 0x0006F8, "Member 'UPyWidget_Common_NavigationBar::OnNavWidgetShow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnSubNavWidgetShow) == 0x000708, "Member 'UPyWidget_Common_NavigationBar::OnSubNavWidgetShow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnNavWidgetRemove) == 0x000718, "Member 'UPyWidget_Common_NavigationBar::OnNavWidgetRemove' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnSubNavWidgetRemove) == 0x000728, "Member 'UPyWidget_Common_NavigationBar::OnSubNavWidgetRemove' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationBar, OnSubNavCreated) == 0x000738, "Member 'UPyWidget_Common_NavigationBar::OnSubNavCreated' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar;
 
 }
 

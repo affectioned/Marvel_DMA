@@ -17,41 +17,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityUnit2_V4.WBP_AbilityUnit2_V4_C
-// 0x0048 (0x0648 - 0x0600)
+// 0x0048 (0x0650 - 0x0608)
 class UWBP_AbilityUnit2_V4_C final : public UPyWidget_AbilityIntroWeaponUnit
 {
 public:
-	class UMarvelHorizontalBox*                   HBox_PageList;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_GameMode_Mark;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_SkillBg;                                       // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidget;                                         // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_KeyWidget_C*                KeyWidget_1;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Skill;                                     // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_AbilityDesc;                                  // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_AbilityName;                                  // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_PageList;                                     // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_AbilityIcon;                                   // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_GameMode_Mark;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_SkillBg;                                       // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget;                                         // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_KeyWidget_C*                KeyWidget_1;                                       // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Skill;                                     // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_AbilityDesc;                                  // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_AbilityName;                                  // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityUnit2_V4_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityUnit2_V4_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityUnit2_V4_C")
 	}
 	static class UWBP_AbilityUnit2_V4_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityUnit2_V4_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityUnit2_V4_C) == 0x000008, "Wrong alignment on UWBP_AbilityUnit2_V4_C");
-static_assert(sizeof(UWBP_AbilityUnit2_V4_C) == 0x000648, "Wrong size on UWBP_AbilityUnit2_V4_C");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, HBox_PageList) == 0x000600, "Member 'UWBP_AbilityUnit2_V4_C::HBox_PageList' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Img_AbilityIcon) == 0x000608, "Member 'UWBP_AbilityUnit2_V4_C::Img_AbilityIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Img_GameMode_Mark) == 0x000610, "Member 'UWBP_AbilityUnit2_V4_C::Img_GameMode_Mark' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Img_SkillBg) == 0x000618, "Member 'UWBP_AbilityUnit2_V4_C::Img_SkillBg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, KeyWidget) == 0x000620, "Member 'UWBP_AbilityUnit2_V4_C::KeyWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, KeyWidget_1) == 0x000628, "Member 'UWBP_AbilityUnit2_V4_C::KeyWidget_1' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Overlay_Skill) == 0x000630, "Member 'UWBP_AbilityUnit2_V4_C::Overlay_Skill' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Text_AbilityDesc) == 0x000638, "Member 'UWBP_AbilityUnit2_V4_C::Text_AbilityDesc' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityUnit2_V4_C, Text_AbilityName) == 0x000640, "Member 'UWBP_AbilityUnit2_V4_C::Text_AbilityName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityUnit2_V4_C;
 
 }
 

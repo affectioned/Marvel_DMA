@@ -17,16 +17,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_M2201_ActionGuide.PyWidget_M2201_ActionGuide
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_M2201_ActionGuide final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ActionHoldDuration;                                // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   ShowSwitchMouseTipsText;                           // 0x05C0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   ShowSwitchMouseTipsText_PS;                        // 0x05D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   HideSwitchMouseTipsText;                           // 0x05F0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   HideSwitchMouseTipsText_PS;                        // 0x0608(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ActionHoldDuration;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   ShowSwitchMouseTipsText;                           // 0x05C8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   ShowSwitchMouseTipsText_PS;                        // 0x05E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   HideSwitchMouseTipsText;                           // 0x05F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   HideSwitchMouseTipsText_PS;                        // 0x0610(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,20 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_M2201_ActionGuide">();
+		STATIC_CLASS_IMPL("PyWidget_M2201_ActionGuide")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_M2201_ActionGuide")
 	}
 	static class UPyWidget_M2201_ActionGuide* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_M2201_ActionGuide>();
 	}
 };
-static_assert(alignof(UPyWidget_M2201_ActionGuide) == 0x000008, "Wrong alignment on UPyWidget_M2201_ActionGuide");
-static_assert(sizeof(UPyWidget_M2201_ActionGuide) == 0x000620, "Wrong size on UPyWidget_M2201_ActionGuide");
-static_assert(offsetof(UPyWidget_M2201_ActionGuide, ActionHoldDuration) == 0x0005BC, "Member 'UPyWidget_M2201_ActionGuide::ActionHoldDuration' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_ActionGuide, ShowSwitchMouseTipsText) == 0x0005C0, "Member 'UPyWidget_M2201_ActionGuide::ShowSwitchMouseTipsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_ActionGuide, ShowSwitchMouseTipsText_PS) == 0x0005D8, "Member 'UPyWidget_M2201_ActionGuide::ShowSwitchMouseTipsText_PS' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_ActionGuide, HideSwitchMouseTipsText) == 0x0005F0, "Member 'UPyWidget_M2201_ActionGuide::HideSwitchMouseTipsText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_M2201_ActionGuide, HideSwitchMouseTipsText_PS) == 0x000608, "Member 'UPyWidget_M2201_ActionGuide::HideSwitchMouseTipsText_PS' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_M2201_ActionGuide;
 
 }
 

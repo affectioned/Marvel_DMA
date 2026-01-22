@@ -25,10 +25,7 @@ public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MassLODSubsystem_OnPlayerControllerEndPlay) == 0x000008, "Wrong alignment on MassLODSubsystem_OnPlayerControllerEndPlay");
-static_assert(sizeof(MassLODSubsystem_OnPlayerControllerEndPlay) == 0x000010, "Wrong size on MassLODSubsystem_OnPlayerControllerEndPlay");
-static_assert(offsetof(MassLODSubsystem_OnPlayerControllerEndPlay, Actor) == 0x000000, "Member 'MassLODSubsystem_OnPlayerControllerEndPlay::Actor' has a wrong offset!");
-static_assert(offsetof(MassLODSubsystem_OnPlayerControllerEndPlay, EndPlayReason) == 0x000008, "Member 'MassLODSubsystem_OnPlayerControllerEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_MassLODSubsystem_OnPlayerControllerEndPlay;
 
 }
 

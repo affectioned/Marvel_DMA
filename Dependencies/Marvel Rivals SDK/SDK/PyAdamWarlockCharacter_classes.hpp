@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAdamWarlockCharacter.PyWidget_AdamAbilityTips
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_AdamAbilityTips final : public UMarvelUserWidget
 {
 public:
@@ -28,36 +28,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AdamAbilityTips">();
+		STATIC_CLASS_IMPL("PyWidget_AdamAbilityTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AdamAbilityTips")
 	}
 	static class UPyWidget_AdamAbilityTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AdamAbilityTips>();
 	}
 };
-static_assert(alignof(UPyWidget_AdamAbilityTips) == 0x000008, "Wrong alignment on UPyWidget_AdamAbilityTips");
-static_assert(sizeof(UPyWidget_AdamAbilityTips) == 0x000568, "Wrong size on UPyWidget_AdamAbilityTips");
+DUMPER7_ASSERTS_UPyWidget_AdamAbilityTips;
 
 // PythonClass PyAdamWarlockCharacter.PyAdamWarlockCharacter
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class APyAdamWarlockCharacter : public AAdamWarlockCharacter
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* InActor)> OnResurrectCharacter;                      // 0x21D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* InActor)> OnResurrectCharacter;                      // 0x22E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAdamWarlockCharacter">();
+		STATIC_CLASS_IMPL("PyAdamWarlockCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAdamWarlockCharacter")
 	}
 	static class APyAdamWarlockCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAdamWarlockCharacter>();
 	}
 };
-static_assert(alignof(APyAdamWarlockCharacter) == 0x000010, "Wrong alignment on APyAdamWarlockCharacter");
-static_assert(sizeof(APyAdamWarlockCharacter) == 0x0021E0, "Wrong size on APyAdamWarlockCharacter");
-static_assert(offsetof(APyAdamWarlockCharacter, OnResurrectCharacter) == 0x0021D0, "Member 'APyAdamWarlockCharacter::OnResurrectCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_APyAdamWarlockCharacter;
 
 }
 

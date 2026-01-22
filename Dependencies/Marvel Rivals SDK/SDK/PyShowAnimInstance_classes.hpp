@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyShowAnimInstance.PyShowAnimInstance
-// 0x0000 (0x0590 - 0x0590)
+// 0x0000 (0x05A0 - 0x05A0)
 class UPyShowAnimInstance final : public UPyShowAnimInstanceBase
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowAnimInstance">();
+		STATIC_CLASS_IMPL("PyShowAnimInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowAnimInstance")
 	}
 	static class UPyShowAnimInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowAnimInstance>();
 	}
 };
-static_assert(alignof(UPyShowAnimInstance) == 0x000010, "Wrong alignment on UPyShowAnimInstance");
-static_assert(sizeof(UPyShowAnimInstance) == 0x000590, "Wrong size on UPyShowAnimInstance");
+DUMPER7_ASSERTS_UPyShowAnimInstance;
 
 }
 

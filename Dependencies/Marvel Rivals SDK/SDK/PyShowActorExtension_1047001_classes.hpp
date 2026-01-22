@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyShowActorExtension_classes.hpp"
 #include "python_enums_structs.hpp"
+#include "PyShowActorExtension_classes.hpp"
 
 
 namespace SDK
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowActorExtension_1047001">();
+		STATIC_CLASS_IMPL("PyShowActorExtension_1047001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowActorExtension_1047001")
 	}
 	static class UPyShowActorExtension_1047001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowActorExtension_1047001>();
 	}
 };
-static_assert(alignof(UPyShowActorExtension_1047001) == 0x000008, "Wrong alignment on UPyShowActorExtension_1047001");
-static_assert(sizeof(UPyShowActorExtension_1047001) == 0x000030, "Wrong size on UPyShowActorExtension_1047001");
+DUMPER7_ASSERTS_UPyShowActorExtension_1047001;
 
 }
 

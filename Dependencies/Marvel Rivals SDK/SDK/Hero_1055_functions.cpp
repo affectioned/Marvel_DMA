@@ -17,50 +17,6 @@
 namespace SDK
 {
 
-// Function Hero_1055.Ability_105501.BindFollowAccessibilityChanged
-// (Final, Native, Protected)
-// Parameters:
-// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbility_105501::BindFollowAccessibilityChanged(bool bBind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_105501", "BindFollowAccessibilityChanged");
-
-	Params::Ability_105501_BindFollowAccessibilityChanged Parms{};
-
-	Parms.bBind = bBind;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1055.Ability_105501.OnFollowAccessibilityChanged
-// (Final, Native, Protected)
-
-void UAbility_105501::OnFollowAccessibilityChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Ability_105501", "OnFollowAccessibilityChanged");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1055.TraceComponent_10550101.OnPreOutTraceResults
 // (Final, Native, Private, HasOutParams)
 // Parameters:
@@ -183,20 +139,26 @@ void ACueAbility_10550101::OnEffectiveAbilityIDChanged(int32 EffectiveAbilityID)
 }
 
 
-// Function Hero_1055.CueAbility_10550101.OnIsInstigatorOfActiveViewTargetChanged
+// Function Hero_1055.CueAbility_10550101.SetCameraMaterial
 // (Final, Native, Public)
+// Parameters:
+// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ACueAbility_10550101::OnIsInstigatorOfActiveViewTargetChanged()
+void ACueAbility_10550101::SetCameraMaterial(bool bEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CueAbility_10550101", "OnIsInstigatorOfActiveViewTargetChanged");
+		Func = Class->GetFunction("CueAbility_10550101", "SetCameraMaterial");
+
+	Params::CueAbility_10550101_SetCameraMaterial Parms{};
+
+	Parms.bEnable = bEnable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -328,25 +290,6 @@ void ACueBuff_10550102_Base::ClearFadeUpdateTimer()
 }
 
 
-// Function Hero_1055.CueBuff_10550102_Base.ClearUpdateTimer
-// (Final, Native, Protected, BlueprintCallable)
-
-void ACueBuff_10550102_Base::ClearUpdateTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CueBuff_10550102_Base", "ClearUpdateTimer");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1055.CueBuff_10550102_Base.DisableStripeEffect
 // (Final, Native, Protected, BlueprintCallable)
 
@@ -382,6 +325,31 @@ void ACueBuff_10550102_Base::EnableStripeEffect()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.CueBuff_10550102_Base.GetAbilityConfig
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UConfig_105501*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UConfig_105501* ACueBuff_10550102_Base::GetAbilityConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("CueBuff_10550102_Base", "GetAbilityConfig");
+
+	Params::CueBuff_10550102_Base_GetAbilityConfig Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -1729,33 +1697,6 @@ void UDaredevilBlindEffectManagerComponent::OnOwnerIsViewTargetChanged()
 }
 
 
-// Function Hero_1055.DaredevilBlindEffectManagerComponent.RemoveBlindEffect
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   UniqueID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const int32                             AbilityID                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UDaredevilBlindEffectManagerComponent::RemoveBlindEffect(int32 UniqueID, const int32 AbilityID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DaredevilBlindEffectManagerComponent", "RemoveBlindEffect");
-
-	Params::DaredevilBlindEffectManagerComponent_RemoveBlindEffect Parms{};
-
-	Parms.UniqueID = UniqueID;
-	Parms.AbilityID = AbilityID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1055.DaredevilBlindEffectManagerComponent.RemoveCulledSphere
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1786,9 +1727,10 @@ void UDaredevilBlindEffectManagerComponent::RemoveCulledSphere(class UStaticMesh
 // Parameters:
 // int32                                   UniqueID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const int32                             AbilityID                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bIsApply                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   InBlindDistance                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDaredevilBlindEffectManagerComponent::SetBlindEffect(int32 UniqueID, const int32 AbilityID, float InBlindDistance)
+void UDaredevilBlindEffectManagerComponent::SetBlindEffect(int32 UniqueID, const int32 AbilityID, const bool bIsApply, float InBlindDistance)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1799,6 +1741,7 @@ void UDaredevilBlindEffectManagerComponent::SetBlindEffect(int32 UniqueID, const
 
 	Parms.UniqueID = UniqueID;
 	Parms.AbilityID = AbilityID;
+	Parms.bIsApply = bIsApply;
 	Parms.InBlindDistance = InBlindDistance;
 
 	auto Flgs = Func->FunctionFlags;
@@ -1904,15 +1847,40 @@ int32 UDaredevilBlindEffectManagerComponent::GetEffectiveAbilityID() const
 }
 
 
-// Function Hero_1055.DaredevilCharacter.BroadcastFollowsAccessibilityChangedEvent
-// (Final, Native, Public, Const)
+// Function Hero_1055.DaredevilCharacter.BindFollowAccessibilityChanged
+// (Final, Native, Protected)
+// Parameters:
+// bool                                    bIsBind                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ADaredevilCharacter::BroadcastFollowsAccessibilityChangedEvent() const
+void ADaredevilCharacter::BindFollowAccessibilityChanged(bool bIsBind)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DaredevilCharacter", "BroadcastFollowsAccessibilityChangedEvent");
+		Func = Class->GetFunction("DaredevilCharacter", "BindFollowAccessibilityChanged");
+
+	Params::DaredevilCharacter_BindFollowAccessibilityChanged Parms{};
+
+	Parms.bIsBind = bIsBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilCharacter.OnFollowAccessibilityChanged
+// (Final, Native, Protected)
+
+void ADaredevilCharacter::OnFollowAccessibilityChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilCharacter", "OnFollowAccessibilityChanged");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1923,19 +1891,245 @@ void ADaredevilCharacter::BroadcastFollowsAccessibilityChangedEvent() const
 }
 
 
-// Function Hero_1055.DaredevilCharacter.GetPerceiveRadius
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function Hero_1055.DaredevilPerspectiveComponent.ActivateComponent
+// (Final, Native, Public, BlueprintCallable)
 
-float ADaredevilCharacter::GetPerceiveRadius() const
+void UDaredevilPerspectiveComponent::ActivateComponent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DaredevilCharacter", "GetPerceiveRadius");
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "ActivateComponent");
 
-	Params::DaredevilCharacter_GetPerceiveRadius Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.ActivateFocusTargetNow
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                           InTargetActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::ActivateFocusTargetNow(class AActor* InTargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "ActivateFocusTargetNow");
+
+	Params::DaredevilPerspectiveComponent_ActivateFocusTargetNow Parms{};
+
+	Parms.InTargetActor = InTargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.AddDaredevilPerspectiveTagForTarget
+// (Final, Native, Protected)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::AddDaredevilPerspectiveTagForTarget(class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "AddDaredevilPerspectiveTagForTarget");
+
+	Params::DaredevilPerspectiveComponent_AddDaredevilPerspectiveTagForTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.BindFollowAccessibilityChanged
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const bool                              bIsBind                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::BindFollowAccessibilityChanged(const bool bIsBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "BindFollowAccessibilityChanged");
+
+	Params::DaredevilPerspectiveComponent_BindFollowAccessibilityChanged Parms{};
+
+	Parms.bIsBind = bIsBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.BindSeeThroughTagUpdate
+// (Final, Native, Public)
+// Parameters:
+// bool                                    bBind                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::BindSeeThroughTagUpdate(bool bBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "BindSeeThroughTagUpdate");
+
+	Params::DaredevilPerspectiveComponent_BindSeeThroughTagUpdate Parms{};
+
+	Parms.bBind = bBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.BindTrackTargetChanged
+// (Final, Native, Public)
+// Parameters:
+// const bool                              bIsBind                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::BindTrackTargetChanged(const bool bIsBind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "BindTrackTargetChanged");
+
+	Params::DaredevilPerspectiveComponent_BindTrackTargetChanged Parms{};
+
+	Parms.bIsBind = bIsBind;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.DeactivateComponent
+// (Final, Native, Public, BlueprintCallable)
+
+void UDaredevilPerspectiveComponent::DeactivateComponent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "DeactivateComponent");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.DisablePerspective
+// (Final, Native, Public)
+
+void UDaredevilPerspectiveComponent::DisablePerspective()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "DisablePerspective");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.EnablePerspective
+// (Final, Native, Public)
+
+void UDaredevilPerspectiveComponent::EnablePerspective()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "EnablePerspective");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.EnqueueFocusTarget
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                           InTargetActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::EnqueueFocusTarget(class AActor* InTargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "EnqueueFocusTarget");
+
+	Params::DaredevilPerspectiveComponent_EnqueueFocusTarget Parms{};
+
+	Parms.InTargetActor = InTargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.GetPooledEffect
+// (Final, Native, Protected)
+// Parameters:
+// class UPerspectiveEffect*               ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UPerspectiveEffect* UDaredevilPerspectiveComponent::GetPooledEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "GetPooledEffect");
+
+	Params::DaredevilPerspectiveComponent_GetPooledEffect Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1948,19 +2142,660 @@ float ADaredevilCharacter::GetPerceiveRadius() const
 }
 
 
-// Function Hero_1055.DaredevilCharacter.GetVisibleRadius
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function Hero_1055.DaredevilPerspectiveComponent.OnActivateComponent
+// (Event, Public, BlueprintEvent)
 
-float ADaredevilCharacter::GetVisibleRadius() const
+void UDaredevilPerspectiveComponent::OnActivateComponent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DaredevilCharacter", "GetVisibleRadius");
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnActivateComponent");
 
-	Params::DaredevilCharacter_GetVisibleRadius Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnDeactivateComponent
+// (Event, Public, BlueprintEvent)
+
+void UDaredevilPerspectiveComponent::OnDeactivateComponent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnDeactivateComponent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnEffectFadeOutFinished
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UPerspectiveEffect*               InEffect                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::OnEffectFadeOutFinished(class UPerspectiveEffect* InEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnEffectFadeOutFinished");
+
+	Params::DaredevilPerspectiveComponent_OnEffectFadeOutFinished Parms{};
+
+	Parms.InEffect = InEffect;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnFollowAccessibilityChanged
+// (Final, Native, Public, BlueprintCallable)
+
+void UDaredevilPerspectiveComponent::OnFollowAccessibilityChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnFollowAccessibilityChanged");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnIsViewTargetChanged
+// (Final, Native, Protected)
+
+void UDaredevilPerspectiveComponent::OnIsViewTargetChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnIsViewTargetChanged");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnSeeThroughTagChange
+// (Final, Native, Protected, HasOutParams)
+// Parameters:
+// const struct FGameplayTag&              TagUpdated                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bTagExists                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::OnSeeThroughTagChange(const struct FGameplayTag& TagUpdated, bool bTagExists)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnSeeThroughTagChange");
+
+	Params::DaredevilPerspectiveComponent_OnSeeThroughTagChange Parms{};
+
+	Parms.TagUpdated = std::move(TagUpdated);
+	Parms.bTagExists = bTagExists;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.OnTrackTarget
+// (Final, Native, Protected)
+// Parameters:
+// class AActor*                           InTargetActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::OnTrackTarget(class AActor* InTargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "OnTrackTarget");
+
+	Params::DaredevilPerspectiveComponent_OnTrackTarget Parms{};
+
+	Parms.InTargetActor = InTargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.PerformDetection
+// (Native, Event, Public, BlueprintEvent)
+
+void UDaredevilPerspectiveComponent::PerformDetection()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "PerformDetection");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.ProcessPendingFocusQueue
+// (Final, Native, Public)
+
+void UDaredevilPerspectiveComponent::ProcessPendingFocusQueue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "ProcessPendingFocusQueue");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.RemoveDaredevilPerspectiveTagForTarget
+// (Final, Native, Protected)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::RemoveDaredevilPerspectiveTagForTarget(class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "RemoveDaredevilPerspectiveTagForTarget");
+
+	Params::DaredevilPerspectiveComponent_RemoveDaredevilPerspectiveTagForTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.RemovePerspectiveEffect
+// (Final, Native, Public)
+// Parameters:
+// class UPerspectiveEffect*               InEffect                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::RemovePerspectiveEffect(class UPerspectiveEffect* InEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "RemovePerspectiveEffect");
+
+	Params::DaredevilPerspectiveComponent_RemovePerspectiveEffect Parms{};
+
+	Parms.InEffect = InEffect;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.RemoveTargets
+// (Final, Native, Public)
+// Parameters:
+// bool                                    bOnlyEnemy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFadeOut                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::RemoveTargets(bool bOnlyEnemy, bool bFadeOut)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "RemoveTargets");
+
+	Params::DaredevilPerspectiveComponent_RemoveTargets Parms{};
+
+	Parms.bOnlyEnemy = bOnlyEnemy;
+	Parms.bFadeOut = bFadeOut;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.ReturnEffectToPool
+// (Final, Native, Protected)
+// Parameters:
+// class UPerspectiveEffect*               InEffect                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::ReturnEffectToPool(class UPerspectiveEffect* InEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "ReturnEffectToPool");
+
+	Params::DaredevilPerspectiveComponent_ReturnEffectToPool Parms{};
+
+	Parms.InEffect = InEffect;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.SetEnableSplitFrameProcessing
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bEnable                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::SetEnableSplitFrameProcessing(bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "SetEnableSplitFrameProcessing");
+
+	Params::DaredevilPerspectiveComponent_SetEnableSplitFrameProcessing Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.SetTrackedTarget
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           InTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UDaredevilPerspectiveComponent::SetTrackedTarget(class AActor* InTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "SetTrackedTarget");
+
+	Params::DaredevilPerspectiveComponent_SetTrackedTarget Parms{};
+
+	Parms.InTarget = InTarget;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.ShouldPerspectiveTarget
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AActor*                           TargetActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   bIsOutOfRange                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UDaredevilPerspectiveComponent::ShouldPerspectiveTarget(class AActor* TargetActor, bool* bIsOutOfRange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "ShouldPerspectiveTarget");
+
+	Params::DaredevilPerspectiveComponent_ShouldPerspectiveTarget Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (bIsOutOfRange != nullptr)
+		*bIsOutOfRange = Parms.bIsOutOfRange;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.SortPendingFocusQueueByPriority
+// (Final, Native, Protected)
+
+void UDaredevilPerspectiveComponent::SortPendingFocusQueueByPriority()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "SortPendingFocusQueueByPriority");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.DaredevilPerspectiveComponent.UpdatePerspectiveStripeColor
+// (Final, Native, Public, BlueprintCallable)
+
+void UDaredevilPerspectiveComponent::UpdatePerspectiveStripeColor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DaredevilPerspectiveComponent", "UpdatePerspectiveStripeColor");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.ActivateEffect
+// (Final, Native, Public)
+
+void UPerspectiveEffect::ActivateEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "ActivateEffect");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.DeactivateEffect
+// (Final, Native, Public)
+
+void UPerspectiveEffect::DeactivateEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "DeactivateEffect");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.EnableStripeEffect
+// (Final, Native, Public)
+// Parameters:
+// const bool                              bEnable                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::EnableStripeEffect(const bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "EnableStripeEffect");
+
+	Params::PerspectiveEffect_EnableStripeEffect Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.Initialize
+// (Final, Native, Public)
+// Parameters:
+// class AMarvelBaseCharacter*             InSourceCharacter                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetActor                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UDaredevilPerspectiveComponent*   InPerspectiveComponent                                 (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::Initialize(class AMarvelBaseCharacter* InSourceCharacter, class AActor* InTargetActor, class UDaredevilPerspectiveComponent* InPerspectiveComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "Initialize");
+
+	Params::PerspectiveEffect_Initialize Parms{};
+
+	Parms.InSourceCharacter = InSourceCharacter;
+	Parms.InTargetActor = InTargetActor;
+	Parms.InPerspectiveComponent = InPerspectiveComponent;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.OnFadeFinished
+// (Final, Native, Public)
+
+void UPerspectiveEffect::OnFadeFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "OnFadeFinished");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.OnFadeUpdate
+// (Final, Native, Public)
+// Parameters:
+// class FName                             TrackName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             PropertyName                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Output                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::OnFadeUpdate(class FName TrackName, class FName PropertyName, float Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "OnFadeUpdate");
+
+	Params::PerspectiveEffect_OnFadeUpdate Parms{};
+
+	Parms.TrackName = TrackName;
+	Parms.PropertyName = PropertyName;
+	Parms.Output = Output;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.OnTargetDeath
+// (Final, Native, Private, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::OnTargetDeath(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "OnTargetDeath");
+
+	Params::PerspectiveEffect_OnTargetDeath Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.RecycleEffect
+// (Final, Native, Public)
+
+void UPerspectiveEffect::RecycleEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "RecycleEffect");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.SetClipState
+// (Final, Native, Public)
+// Parameters:
+// const bool                              bEnable                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::SetClipState(const bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "SetClipState");
+
+	Params::PerspectiveEffect_SetClipState Parms{};
+
+	Parms.bEnable = bEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.SetCustomStencilEnabled
+// (Final, Native, Public)
+// Parameters:
+// const bool                              bIsEnable                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::SetCustomStencilEnabled(const bool bIsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "SetCustomStencilEnabled");
+
+	Params::PerspectiveEffect_SetCustomStencilEnabled Parms{};
+
+	Parms.bIsEnable = bIsEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.StartFadeOut
+// (Final, Native, Public)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPerspectiveEffect::StartFadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "StartFadeOut");
+
+	Params::PerspectiveEffect_StartFadeOut Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1970,6 +2805,151 @@ float ADaredevilCharacter::GetVisibleRadius() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.StartFadeUpdateTimer
+// (Final, Native, Public)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPerspectiveEffect::StartFadeUpdateTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "StartFadeUpdateTimer");
+
+	Params::PerspectiveEffect_StartFadeUpdateTimer Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.StopFadeUpdateTimer
+// (Final, Native, Public)
+
+void UPerspectiveEffect::StopFadeUpdateTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "StopFadeUpdateTimer");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.UpdateFading
+// (Final, Native, Public)
+
+void UPerspectiveEffect::UpdateFading()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "UpdateFading");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.UpdateOverlaySlotMaterialParameters
+// (Final, Native, Public, BlueprintCallable)
+
+void UPerspectiveEffect::UpdateOverlaySlotMaterialParameters()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "UpdateOverlaySlotMaterialParameters");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.UpdatePerspectiveTags
+// (Final, Native, Public)
+// Parameters:
+// const bool                              bAdd                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPerspectiveEffect::UpdatePerspectiveTags(const bool bAdd)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "UpdatePerspectiveTags");
+
+	Params::PerspectiveEffect_UpdatePerspectiveTags Parms{};
+
+	Parms.bAdd = bAdd;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.UpdateUsePostProcess
+// (Final, Native, Public, BlueprintCallable)
+
+void UPerspectiveEffect::UpdateUsePostProcess()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "UpdateUsePostProcess");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1055.PerspectiveEffect.UpdateIsCustomParam
+// (Final, Native, Public, Const)
+
+void UPerspectiveEffect::UpdateIsCustomParam() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerspectiveEffect", "UpdateIsCustomParam");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 }

@@ -42,20 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySublevelComponent">();
+		STATIC_CLASS_IMPL("PySublevelComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySublevelComponent")
 	}
 	static class UPySublevelComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySublevelComponent>();
 	}
 };
-static_assert(alignof(UPySublevelComponent) == 0x000008, "Wrong alignment on UPySublevelComponent");
-static_assert(sizeof(UPySublevelComponent) == 0x000138, "Wrong size on UPySublevelComponent");
-static_assert(offsetof(UPySublevelComponent, SublevelPartList) == 0x000108, "Member 'UPySublevelComponent::SublevelPartList' has a wrong offset!");
-static_assert(offsetof(UPySublevelComponent, CurrentLevelPartName) == 0x000118, "Member 'UPySublevelComponent::CurrentLevelPartName' has a wrong offset!");
-static_assert(offsetof(UPySublevelComponent, LevelPartRepeat) == 0x000128, "Member 'UPySublevelComponent::LevelPartRepeat' has a wrong offset!");
-static_assert(offsetof(UPySublevelComponent, ServerFirstMapLoaded) == 0x00012C, "Member 'UPySublevelComponent::ServerFirstMapLoaded' has a wrong offset!");
-static_assert(offsetof(UPySublevelComponent, HidenBattleEnvState) == 0x000130, "Member 'UPySublevelComponent::HidenBattleEnvState' has a wrong offset!");
+DUMPER7_ASSERTS_UPySublevelComponent;
 
 }
 

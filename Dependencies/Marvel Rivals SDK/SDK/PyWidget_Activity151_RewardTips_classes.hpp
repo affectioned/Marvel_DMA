@@ -17,14 +17,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity151_RewardTips.PyWidget_Activity151_RewardTips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_Activity151_RewardTips : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_RewardTips">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_RewardTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_RewardTips")
 	}
 	static class UPyWidget_Activity151_RewardTips* GetDefaultObj()
 	{
@@ -32,16 +36,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Activity151_RewardTips) == 0x000008, "Wrong alignment on UPyWidget_Activity151_RewardTips");
-static_assert(sizeof(UPyWidget_Activity151_RewardTips) == 0x0005C0, "Wrong size on UPyWidget_Activity151_RewardTips");
+DUMPER7_ASSERTS_UPyWidget_Activity151_RewardTips;
 
 // PythonClass PyWidget_Activity151_RewardTips.PyWidget_Activity151_RewardTips_Countdown
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity151_RewardTips_Countdown final : public UPyWidget_Activity151_RewardTips
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         warn_hours;                                        // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         warn_hours;                                        // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,16 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity151_RewardTips_Countdown">();
+		STATIC_CLASS_IMPL("PyWidget_Activity151_RewardTips_Countdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity151_RewardTips_Countdown")
 	}
 	static class UPyWidget_Activity151_RewardTips_Countdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity151_RewardTips_Countdown>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity151_RewardTips_Countdown) == 0x000008, "Wrong alignment on UPyWidget_Activity151_RewardTips_Countdown");
-static_assert(sizeof(UPyWidget_Activity151_RewardTips_Countdown) == 0x0005C0, "Wrong size on UPyWidget_Activity151_RewardTips_Countdown");
-static_assert(offsetof(UPyWidget_Activity151_RewardTips_Countdown, warn_hours) == 0x0005BC, "Member 'UPyWidget_Activity151_RewardTips_Countdown::warn_hours' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity151_RewardTips_Countdown;
 
 }
 

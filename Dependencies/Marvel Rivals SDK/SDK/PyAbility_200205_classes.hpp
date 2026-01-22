@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200205.PyAbility_200205
-// 0x0018 (0x2A08 - 0x29F0)
+// 0x0018 (0x2A58 - 0x2A40)
 class UPyAbility_200205 : public UMarvelGameplayAbility
 {
 public:
-	class AActor*                                 ThrowTarget;                                       // 0x29F0(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnThrowTargetChanged;                              // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class AActor*                                 ThrowTarget;                                       // 0x2A40(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnThrowTargetChanged;                              // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -36,24 +36,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200205">();
+		STATIC_CLASS_IMPL("PyAbility_200205")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200205")
 	}
 	static class UPyAbility_200205* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200205>();
 	}
 };
-static_assert(alignof(UPyAbility_200205) == 0x000008, "Wrong alignment on UPyAbility_200205");
-static_assert(sizeof(UPyAbility_200205) == 0x002A08, "Wrong size on UPyAbility_200205");
-static_assert(offsetof(UPyAbility_200205, ThrowTarget) == 0x0029F0, "Member 'UPyAbility_200205::ThrowTarget' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200205, OnThrowTargetChanged) == 0x0029F8, "Member 'UPyAbility_200205::OnThrowTargetChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200205;
 
 // PythonClass PyAbility_200205.PyUIController_200205
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_200205 final : public UUIC_Ability
 {
 public:
-	struct FGameplayTag                           ThrowTag;                                          // 0x0F10(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ThrowTag;                                          // 0x11F0(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -63,16 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200205">();
+		STATIC_CLASS_IMPL("PyUIController_200205")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200205")
 	}
 	static class UPyUIController_200205* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200205>();
 	}
 };
-static_assert(alignof(UPyUIController_200205) == 0x000008, "Wrong alignment on UPyUIController_200205");
-static_assert(sizeof(UPyUIController_200205) == 0x000F20, "Wrong size on UPyUIController_200205");
-static_assert(offsetof(UPyUIController_200205, ThrowTag) == 0x000F10, "Member 'UPyUIController_200205::ThrowTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_200205;
 
 }
 

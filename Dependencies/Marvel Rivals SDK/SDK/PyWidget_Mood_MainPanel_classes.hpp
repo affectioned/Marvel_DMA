@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mood_MainPanel.PyWidget_Mood_MainPanel
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_Mood_MainPanel final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mood_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Mood_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mood_MainPanel")
 	}
 	static class UPyWidget_Mood_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mood_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Mood_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Mood_MainPanel");
-static_assert(sizeof(UPyWidget_Mood_MainPanel) == 0x000600, "Wrong size on UPyWidget_Mood_MainPanel");
+DUMPER7_ASSERTS_UPyWidget_Mood_MainPanel;
 
 }
 

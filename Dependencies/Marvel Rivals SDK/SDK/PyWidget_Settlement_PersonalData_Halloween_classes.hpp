@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData_Halloween.PyWidget_Settlement_PersonalData_Halloween
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Halloween final : public UPyWidget_Settlement_PersonalData_Base
 {
 public:
-	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Close;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpgradeAnimTime;                                   // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelatTime_LevelUp;                                 // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnExpIncreaced;                            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnLevelUp;                                 // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Close;                                     // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpgradeAnimTime;                                   // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelatTime_LevelUp;                                 // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Halloween">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Halloween")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Halloween")
 	}
 	static class UPyWidget_Settlement_PersonalData_Halloween* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Halloween>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Halloween) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Halloween");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Halloween) == 0x0005E0, "Wrong size on UPyWidget_Settlement_PersonalData_Halloween");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Halloween, AkEvent_OnExpIncreaced) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalData_Halloween::AkEvent_OnExpIncreaced' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Halloween, AkEvent_OnLevelUp) == 0x0005C8, "Member 'UPyWidget_Settlement_PersonalData_Halloween::AkEvent_OnLevelUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Halloween, AkEvent_Close) == 0x0005D0, "Member 'UPyWidget_Settlement_PersonalData_Halloween::AkEvent_Close' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Halloween, UpgradeAnimTime) == 0x0005D8, "Member 'UPyWidget_Settlement_PersonalData_Halloween::UpgradeAnimTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_Halloween, DelatTime_LevelUp) == 0x0005DC, "Member 'UPyWidget_Settlement_PersonalData_Halloween::DelatTime_LevelUp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Halloween;
 
 }
 

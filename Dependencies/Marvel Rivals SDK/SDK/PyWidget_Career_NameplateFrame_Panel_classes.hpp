@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Career_NameplateFrame_Panel.PyWidget_Career_NameplateFrame_Panel
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UPyWidget_Career_NameplateFrame_Panel final : public UPyWidget_CareerCustomizePanelBase
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_NameplateFrame_Panel">();
+		STATIC_CLASS_IMPL("PyWidget_Career_NameplateFrame_Panel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_NameplateFrame_Panel")
 	}
 	static class UPyWidget_Career_NameplateFrame_Panel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_NameplateFrame_Panel>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_NameplateFrame_Panel) == 0x000008, "Wrong alignment on UPyWidget_Career_NameplateFrame_Panel");
-static_assert(sizeof(UPyWidget_Career_NameplateFrame_Panel) == 0x000600, "Wrong size on UPyWidget_Career_NameplateFrame_Panel");
+DUMPER7_ASSERTS_UPyWidget_Career_NameplateFrame_Panel;
 
 }
 

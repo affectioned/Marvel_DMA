@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSplineWithEventComponent">();
+		STATIC_CLASS_IMPL("PyLevelSplineWithEventComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSplineWithEventComponent")
 	}
 	static class UPyLevelSplineWithEventComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSplineWithEventComponent>();
 	}
 };
-static_assert(alignof(UPyLevelSplineWithEventComponent) == 0x000010, "Wrong alignment on UPyLevelSplineWithEventComponent");
-static_assert(sizeof(UPyLevelSplineWithEventComponent) == 0x0004B0, "Wrong size on UPyLevelSplineWithEventComponent");
+DUMPER7_ASSERTS_UPyLevelSplineWithEventComponent;
 
 }
 

@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CareerHeroPlayerInfo.PyWidget_CareerHeroPlayerInfo
-// 0x0168 (0x0728 - 0x05C0)
+// 0x0168 (0x0730 - 0x05C8)
 class UPyWidget_CareerHeroPlayerInfo final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          ShowDropDownList;                                  // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NormalColor;                                       // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            HoveredColor;                                      // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgNormalColor;                                    // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgHoveredColor;                                   // 0x05F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuideTipsStyle                        MoodClickGuideTipsStyle;                           // 0x0608(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          ShowDropDownList;                                  // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x1];                                      // 0x05C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NormalColor;                                       // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            HoveredColor;                                      // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgNormalColor;                                    // 0x05EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgHoveredColor;                                   // 0x05FC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuideTipsStyle                        MoodClickGuideTipsStyle;                           // 0x0610(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -43,21 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerHeroPlayerInfo">();
+		STATIC_CLASS_IMPL("PyWidget_CareerHeroPlayerInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerHeroPlayerInfo")
 	}
 	static class UPyWidget_CareerHeroPlayerInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerHeroPlayerInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerHeroPlayerInfo) == 0x000008, "Wrong alignment on UPyWidget_CareerHeroPlayerInfo");
-static_assert(sizeof(UPyWidget_CareerHeroPlayerInfo) == 0x000728, "Wrong size on UPyWidget_CareerHeroPlayerInfo");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, ShowDropDownList) == 0x0005BA, "Member 'UPyWidget_CareerHeroPlayerInfo::ShowDropDownList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, NormalColor) == 0x0005BC, "Member 'UPyWidget_CareerHeroPlayerInfo::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, HoveredColor) == 0x0005D0, "Member 'UPyWidget_CareerHeroPlayerInfo::HoveredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, ImgNormalColor) == 0x0005E4, "Member 'UPyWidget_CareerHeroPlayerInfo::ImgNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, ImgHoveredColor) == 0x0005F4, "Member 'UPyWidget_CareerHeroPlayerInfo::ImgHoveredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerHeroPlayerInfo, MoodClickGuideTipsStyle) == 0x000608, "Member 'UPyWidget_CareerHeroPlayerInfo::MoodClickGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerHeroPlayerInfo;
 
 }
 

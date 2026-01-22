@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Emoji_Model.PyWidget_Emoji_Model
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Emoji_Model final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Emoji_Model">();
+		STATIC_CLASS_IMPL("PyWidget_Emoji_Model")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Emoji_Model")
 	}
 	static class UPyWidget_Emoji_Model* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Emoji_Model>();
 	}
 };
-static_assert(alignof(UPyWidget_Emoji_Model) == 0x000008, "Wrong alignment on UPyWidget_Emoji_Model");
-static_assert(sizeof(UPyWidget_Emoji_Model) == 0x0005C0, "Wrong size on UPyWidget_Emoji_Model");
+DUMPER7_ASSERTS_UPyWidget_Emoji_Model;
 
 }
 

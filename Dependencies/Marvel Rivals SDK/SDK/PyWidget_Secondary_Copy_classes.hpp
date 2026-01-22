@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_Copy.PyWidget_Common_Copy
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Common_Copy final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Copy">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Copy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Copy")
 	}
 	static class UPyWidget_Common_Copy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Copy>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Copy) == 0x000008, "Wrong alignment on UPyWidget_Common_Copy");
-static_assert(sizeof(UPyWidget_Common_Copy) == 0x0005C0, "Wrong size on UPyWidget_Common_Copy");
+DUMPER7_ASSERTS_UPyWidget_Common_Copy;
 
 }
 

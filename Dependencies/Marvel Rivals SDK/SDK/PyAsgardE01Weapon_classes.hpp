@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAsgardE01Weapon">();
+		STATIC_CLASS_IMPL("PyAsgardE01Weapon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAsgardE01Weapon")
 	}
 	static class APyAsgardE01Weapon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAsgardE01Weapon>();
 	}
 };
-static_assert(alignof(APyAsgardE01Weapon) == 0x000010, "Wrong alignment on APyAsgardE01Weapon");
-static_assert(sizeof(APyAsgardE01Weapon) == 0x000720, "Wrong size on APyAsgardE01Weapon");
-static_assert(offsetof(APyAsgardE01Weapon, ReplicateState) == 0x0006E0, "Member 'APyAsgardE01Weapon::ReplicateState' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, PrepareCountDown) == 0x0006E4, "Member 'APyAsgardE01Weapon::PrepareCountDown' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, AnimIdle) == 0x0006E8, "Member 'APyAsgardE01Weapon::AnimIdle' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, AnimFlyToPayload) == 0x0006F0, "Member 'APyAsgardE01Weapon::AnimFlyToPayload' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, TimeFlyToPayload) == 0x0006F8, "Member 'APyAsgardE01Weapon::TimeFlyToPayload' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, WeaponMaterialIndex) == 0x0006FC, "Member 'APyAsgardE01Weapon::WeaponMaterialIndex' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, WeaponMaterial) == 0x000700, "Member 'APyAsgardE01Weapon::WeaponMaterial' has a wrong offset!");
-static_assert(offsetof(APyAsgardE01Weapon, AnimationEnd) == 0x000708, "Member 'APyAsgardE01Weapon::AnimationEnd' has a wrong offset!");
+DUMPER7_ASSERTS_APyAsgardE01Weapon;
 
 }
 

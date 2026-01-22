@@ -21,9 +21,7 @@ struct PyScoreBoard_ShouldEnableInput final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScoreBoard_ShouldEnableInput) == 0x000001, "Wrong alignment on PyScoreBoard_ShouldEnableInput");
-static_assert(sizeof(PyScoreBoard_ShouldEnableInput) == 0x000001, "Wrong size on PyScoreBoard_ShouldEnableInput");
-static_assert(offsetof(PyScoreBoard_ShouldEnableInput, ReturnValue) == 0x000000, "Member 'PyScoreBoard_ShouldEnableInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyScoreBoard_ShouldEnableInput;
 
 // PythonFunction PyScoreBoard.PyScoreBoard.DoPlayerRespawnUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -33,10 +31,7 @@ public:
 	class UObject*                                PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int64                                         Magnitude;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScoreBoard_DoPlayerRespawnUpdate) == 0x000008, "Wrong alignment on PyScoreBoard_DoPlayerRespawnUpdate");
-static_assert(sizeof(PyScoreBoard_DoPlayerRespawnUpdate) == 0x000010, "Wrong size on PyScoreBoard_DoPlayerRespawnUpdate");
-static_assert(offsetof(PyScoreBoard_DoPlayerRespawnUpdate, PlayerState) == 0x000000, "Member 'PyScoreBoard_DoPlayerRespawnUpdate::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyScoreBoard_DoPlayerRespawnUpdate, Magnitude) == 0x000008, "Member 'PyScoreBoard_DoPlayerRespawnUpdate::Magnitude' has a wrong offset!");
+DUMPER7_ASSERTS_PyScoreBoard_DoPlayerRespawnUpdate;
 
 // PythonFunction PyScoreBoard.PyScoreBoardUnit.SetUltimateEnergyPercent
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +40,7 @@ struct PyScoreBoardUnit_SetUltimateEnergyPercent final
 public:
 	float                                         InUltimateEnergyPercent;                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyScoreBoardUnit_SetUltimateEnergyPercent) == 0x000004, "Wrong alignment on PyScoreBoardUnit_SetUltimateEnergyPercent");
-static_assert(sizeof(PyScoreBoardUnit_SetUltimateEnergyPercent) == 0x000004, "Wrong size on PyScoreBoardUnit_SetUltimateEnergyPercent");
-static_assert(offsetof(PyScoreBoardUnit_SetUltimateEnergyPercent, InUltimateEnergyPercent) == 0x000000, "Member 'PyScoreBoardUnit_SetUltimateEnergyPercent::InUltimateEnergyPercent' has a wrong offset!");
+DUMPER7_ASSERTS_PyScoreBoardUnit_SetUltimateEnergyPercent;
 
 }
 

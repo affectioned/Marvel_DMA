@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
-#include "MarvelLevel_structs.hpp"
-#include "Engine_classes.hpp"
 #include "PyAudioItemConfig_classes.hpp"
+#include "Marvel_structs.hpp"
+#include "Engine_classes.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "PyModeAudioComponent_classes.hpp"
 
 
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessAudioProbe">();
+		STATIC_CLASS_IMPL("PyBattleChessAudioProbe")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessAudioProbe")
 	}
 	static class APyBattleChessAudioProbe* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBattleChessAudioProbe>();
 	}
 };
-static_assert(alignof(APyBattleChessAudioProbe) == 0x000010, "Wrong alignment on APyBattleChessAudioProbe");
-static_assert(sizeof(APyBattleChessAudioProbe) == 0x0006F0, "Wrong size on APyBattleChessAudioProbe");
-static_assert(offsetof(APyBattleChessAudioProbe, BattleSide) == 0x0006E0, "Member 'APyBattleChessAudioProbe::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyBattleChessAudioProbe, Index_0) == 0x0006E4, "Member 'APyBattleChessAudioProbe::Index_0' has a wrong offset!");
+DUMPER7_ASSERTS_APyBattleChessAudioProbe;
 
 // PythonClass PyBattleChessAudioComponent.PyBattleChessAudioItem
 // 0x00A8 (0x0180 - 0x00D8)
@@ -71,32 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessAudioItem">();
+		STATIC_CLASS_IMPL("PyBattleChessAudioItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessAudioItem")
 	}
 	static class UPyBattleChessAudioItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleChessAudioItem>();
 	}
 };
-static_assert(alignof(UPyBattleChessAudioItem) == 0x000008, "Wrong alignment on UPyBattleChessAudioItem");
-static_assert(sizeof(UPyBattleChessAudioItem) == 0x000180, "Wrong size on UPyBattleChessAudioItem");
-static_assert(offsetof(UPyBattleChessAudioItem, HeroSelecting) == 0x0000D8, "Member 'UPyBattleChessAudioItem::HeroSelecting' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, EnterFight) == 0x0000E8, "Member 'UPyBattleChessAudioItem::EnterFight' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, Victory) == 0x0000F8, "Member 'UPyBattleChessAudioItem::Victory' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, Defeat) == 0x000108, "Member 'UPyBattleChessAudioItem::Defeat' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_SwitchRound) == 0x000118, "Member 'UPyBattleChessAudioItem::AkEvent_SwitchRound' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_ConfirmHeroList) == 0x000120, "Member 'UPyBattleChessAudioItem::AkEvent_ConfirmHeroList' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_HeroPlace) == 0x000128, "Member 'UPyBattleChessAudioItem::AkEvent_HeroPlace' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_EnterFight) == 0x000130, "Member 'UPyBattleChessAudioItem::AkEvent_EnterFight' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_SpeedUpFight) == 0x000138, "Member 'UPyBattleChessAudioItem::AkEvent_SpeedUpFight' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_RoundWin) == 0x000140, "Member 'UPyBattleChessAudioItem::AkEvent_RoundWin' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_RoundLose) == 0x000148, "Member 'UPyBattleChessAudioItem::AkEvent_RoundLose' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_SwitchHeroRound) == 0x000150, "Member 'UPyBattleChessAudioItem::AkEvent_SwitchHeroRound' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_PVEReward) == 0x000158, "Member 'UPyBattleChessAudioItem::AkEvent_PVEReward' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_PVERewardAutoSelect) == 0x000160, "Member 'UPyBattleChessAudioItem::AkEvent_PVERewardAutoSelect' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_CategoryLevelUp) == 0x000168, "Member 'UPyBattleChessAudioItem::AkEvent_CategoryLevelUp' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_RefreshGoldenCard) == 0x000170, "Member 'UPyBattleChessAudioItem::AkEvent_RefreshGoldenCard' has a wrong offset!");
-static_assert(offsetof(UPyBattleChessAudioItem, AkEvent_BuyHeroCard) == 0x000178, "Member 'UPyBattleChessAudioItem::AkEvent_BuyHeroCard' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattleChessAudioItem;
 
 // PythonClass PyBattleChessAudioComponent.PyBattleChessAudioComponent
 // 0x0000 (0x0120 - 0x0120)
@@ -105,15 +92,18 @@ class UPyBattleChessAudioComponent final : public UPyModeAudioComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessAudioComponent">();
+		STATIC_CLASS_IMPL("PyBattleChessAudioComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessAudioComponent")
 	}
 	static class UPyBattleChessAudioComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleChessAudioComponent>();
 	}
 };
-static_assert(alignof(UPyBattleChessAudioComponent) == 0x000008, "Wrong alignment on UPyBattleChessAudioComponent");
-static_assert(sizeof(UPyBattleChessAudioComponent) == 0x000120, "Wrong size on UPyBattleChessAudioComponent");
+DUMPER7_ASSERTS_UPyBattleChessAudioComponent;
 
 }
 

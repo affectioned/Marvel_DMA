@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyActor">();
+		STATIC_CLASS_IMPL("PyActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyActor")
 	}
 	static class APyActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyActor>();
 	}
 };
-static_assert(alignof(APyActor) == 0x000010, "Wrong alignment on APyActor");
-static_assert(sizeof(APyActor) == 0x000710, "Wrong size on APyActor");
-static_assert(offsetof(APyActor, PythonModule) == 0x0006D8, "Member 'APyActor::PythonModule' has a wrong offset!");
-static_assert(offsetof(APyActor, PythonClass) == 0x0006E8, "Member 'APyActor::PythonClass' has a wrong offset!");
-static_assert(offsetof(APyActor, PythonTickForceDisabled) == 0x0006F8, "Member 'APyActor::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(APyActor, PythonDisableAutoBinding) == 0x0006F9, "Member 'APyActor::PythonDisableAutoBinding' has a wrong offset!");
+DUMPER7_ASSERTS_APyActor;
 
 // Class UnrealEnginePython.PyCharacter
 // 0x0040 (0x0DD0 - 0x0D90)
@@ -79,19 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacter">();
+		STATIC_CLASS_IMPL("PyCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacter")
 	}
 	static class APyCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCharacter>();
 	}
 };
-static_assert(alignof(APyCharacter) == 0x000010, "Wrong alignment on APyCharacter");
-static_assert(sizeof(APyCharacter) == 0x000DD0, "Wrong size on APyCharacter");
-static_assert(offsetof(APyCharacter, PythonModule) == 0x000D90, "Member 'APyCharacter::PythonModule' has a wrong offset!");
-static_assert(offsetof(APyCharacter, PythonClass) == 0x000DA0, "Member 'APyCharacter::PythonClass' has a wrong offset!");
-static_assert(offsetof(APyCharacter, PythonTickForceDisabled) == 0x000DB0, "Member 'APyCharacter::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(APyCharacter, PythonDisableAutoBinding) == 0x000DB1, "Member 'APyCharacter::PythonDisableAutoBinding' has a wrong offset!");
+DUMPER7_ASSERTS_APyCharacter;
 
 // Class UnrealEnginePython.PyCommandlet
 // 0x0000 (0x0088 - 0x0088)
@@ -100,15 +98,18 @@ class UPyCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCommandlet">();
+		STATIC_CLASS_IMPL("PyCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCommandlet")
 	}
 	static class UPyCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCommandlet>();
 	}
 };
-static_assert(alignof(UPyCommandlet) == 0x000008, "Wrong alignment on UPyCommandlet");
-static_assert(sizeof(UPyCommandlet) == 0x000088, "Wrong size on UPyCommandlet");
+DUMPER7_ASSERTS_UPyCommandlet;
 
 // Class UnrealEnginePython.PyConsole
 // 0x0000 (0x0140 - 0x0140)
@@ -117,15 +118,18 @@ class UPyConsole final : public UConsole
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConsole">();
+		STATIC_CLASS_IMPL("PyConsole")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConsole")
 	}
 	static class UPyConsole* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConsole>();
 	}
 };
-static_assert(alignof(UPyConsole) == 0x000008, "Wrong alignment on UPyConsole");
-static_assert(sizeof(UPyConsole) == 0x000140, "Wrong size on UPyConsole");
+DUMPER7_ASSERTS_UPyConsole;
 
 // Class UnrealEnginePython.PyHUD
 // 0x0030 (0x0800 - 0x07D0)
@@ -146,19 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHUD">();
+		STATIC_CLASS_IMPL("PyHUD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHUD")
 	}
 	static class APyHUD* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHUD>();
 	}
 };
-static_assert(alignof(APyHUD) == 0x000010, "Wrong alignment on APyHUD");
-static_assert(sizeof(APyHUD) == 0x000800, "Wrong size on APyHUD");
-static_assert(offsetof(APyHUD, PythonModule) == 0x0007C8, "Member 'APyHUD::PythonModule' has a wrong offset!");
-static_assert(offsetof(APyHUD, PythonClass) == 0x0007D8, "Member 'APyHUD::PythonClass' has a wrong offset!");
-static_assert(offsetof(APyHUD, PythonTickForceDisabled) == 0x0007E8, "Member 'APyHUD::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(APyHUD, PythonDisableAutoBinding) == 0x0007E9, "Member 'APyHUD::PythonDisableAutoBinding' has a wrong offset!");
+DUMPER7_ASSERTS_APyHUD;
 
 // Class UnrealEnginePython.PyNativeWidgetHost
 // 0x0000 (0x01C8 - 0x01C8)
@@ -167,15 +170,18 @@ class UPyNativeWidgetHost final : public UNativeWidgetHost
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNativeWidgetHost">();
+		STATIC_CLASS_IMPL("PyNativeWidgetHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNativeWidgetHost")
 	}
 	static class UPyNativeWidgetHost* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNativeWidgetHost>();
 	}
 };
-static_assert(alignof(UPyNativeWidgetHost) == 0x000008, "Wrong alignment on UPyNativeWidgetHost");
-static_assert(sizeof(UPyNativeWidgetHost) == 0x0001C8, "Wrong size on UPyNativeWidgetHost");
+DUMPER7_ASSERTS_UPyNativeWidgetHost;
 
 // Class UnrealEnginePython.PyPawn
 // 0x0040 (0x07B0 - 0x0770)
@@ -196,19 +202,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPawn">();
+		STATIC_CLASS_IMPL("PyPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPawn")
 	}
 	static class APyPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPawn>();
 	}
 };
-static_assert(alignof(APyPawn) == 0x000010, "Wrong alignment on APyPawn");
-static_assert(sizeof(APyPawn) == 0x0007B0, "Wrong size on APyPawn");
-static_assert(offsetof(APyPawn, PythonModule) == 0x000770, "Member 'APyPawn::PythonModule' has a wrong offset!");
-static_assert(offsetof(APyPawn, PythonClass) == 0x000780, "Member 'APyPawn::PythonClass' has a wrong offset!");
-static_assert(offsetof(APyPawn, PythonTickForceDisabled) == 0x000790, "Member 'APyPawn::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(APyPawn, PythonDisableAutoBinding) == 0x000791, "Member 'APyPawn::PythonDisableAutoBinding' has a wrong offset!");
+DUMPER7_ASSERTS_APyPawn;
 
 // Class UnrealEnginePython.TestOnlyObject
 // 0x0000 (0x0030 - 0x0030)
@@ -230,15 +235,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TestOnlyObject">();
+		STATIC_CLASS_IMPL("TestOnlyObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TestOnlyObject")
 	}
 	static class UTestOnlyObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTestOnlyObject>();
 	}
 };
-static_assert(alignof(UTestOnlyObject) == 0x000008, "Wrong alignment on UTestOnlyObject");
-static_assert(sizeof(UTestOnlyObject) == 0x000030, "Wrong size on UTestOnlyObject");
+DUMPER7_ASSERTS_UTestOnlyObject;
 
 // Class UnrealEnginePython.PythonBlueprintFunctionLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -251,15 +259,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("PythonBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonBlueprintFunctionLibrary")
 	}
 	static class UPythonBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(UPythonBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on UPythonBlueprintFunctionLibrary");
-static_assert(sizeof(UPythonBlueprintFunctionLibrary) == 0x000030, "Wrong size on UPythonBlueprintFunctionLibrary");
+DUMPER7_ASSERTS_UPythonBlueprintFunctionLibrary;
 
 // Class UnrealEnginePython.PythonClass
 // 0x0048 (0x02C0 - 0x0278)
@@ -276,18 +287,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonClass">();
+		STATIC_CLASS_IMPL("PythonClass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonClass")
 	}
 	static class UPythonClass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonClass>();
 	}
 };
-static_assert(alignof(UPythonClass) == 0x000008, "Wrong alignment on UPythonClass");
-static_assert(sizeof(UPythonClass) == 0x0002C0, "Wrong size on UPythonClass");
-static_assert(offsetof(UPythonClass, LegacyClass) == 0x000280, "Member 'UPythonClass::LegacyClass' has a wrong offset!");
-static_assert(offsetof(UPythonClass, AuthoritativeClass) == 0x000288, "Member 'UPythonClass::AuthoritativeClass' has a wrong offset!");
-static_assert(offsetof(UPythonClass, NumReplicatedProperties) == 0x0002B8, "Member 'UPythonClass::NumReplicatedProperties' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonClass;
 
 // Class UnrealEnginePython.PythonComponent
 // 0x0040 (0x0148 - 0x0108)
@@ -322,20 +333,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonComponent">();
+		STATIC_CLASS_IMPL("PythonComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonComponent")
 	}
 	static class UPythonComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonComponent>();
 	}
 };
-static_assert(alignof(UPythonComponent) == 0x000008, "Wrong alignment on UPythonComponent");
-static_assert(sizeof(UPythonComponent) == 0x000148, "Wrong size on UPythonComponent");
-static_assert(offsetof(UPythonComponent, PythonModule) == 0x000108, "Member 'UPythonComponent::PythonModule' has a wrong offset!");
-static_assert(offsetof(UPythonComponent, PythonClass) == 0x000118, "Member 'UPythonComponent::PythonClass' has a wrong offset!");
-static_assert(offsetof(UPythonComponent, PythonTickForceDisabled) == 0x000128, "Member 'UPythonComponent::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(UPythonComponent, PythonDisableAutoBinding) == 0x000129, "Member 'UPythonComponent::PythonDisableAutoBinding' has a wrong offset!");
-static_assert(offsetof(UPythonComponent, PythonTickEnableGenerator) == 0x00012A, "Member 'UPythonComponent::PythonTickEnableGenerator' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonComponent;
 
 // Class UnrealEnginePython.PythonDelegate
 // 0x0028 (0x0058 - 0x0030)
@@ -353,18 +362,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonDelegate">();
+		STATIC_CLASS_IMPL("PythonDelegate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonDelegate")
 	}
 	static class UPythonDelegate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonDelegate>();
 	}
 };
-static_assert(alignof(UPythonDelegate) == 0x000008, "Wrong alignment on UPythonDelegate");
-static_assert(sizeof(UPythonDelegate) == 0x000058, "Wrong size on UPythonDelegate");
-static_assert(offsetof(UPythonDelegate, CalleeObject) == 0x000030, "Member 'UPythonDelegate::CalleeObject' has a wrong offset!");
-static_assert(offsetof(UPythonDelegate, CallerObject) == 0x000038, "Member 'UPythonDelegate::CallerObject' has a wrong offset!");
-static_assert(offsetof(UPythonDelegate, DelegateSignature) == 0x000040, "Member 'UPythonDelegate::DelegateSignature' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonDelegate;
 
 // Class UnrealEnginePython.PythonEnum
 // 0x0008 (0x00D0 - 0x00C8)
@@ -376,15 +385,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonEnum">();
+		STATIC_CLASS_IMPL("PythonEnum")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonEnum")
 	}
 	static class UPythonEnum* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonEnum>();
 	}
 };
-static_assert(alignof(UPythonEnum) == 0x000008, "Wrong alignment on UPythonEnum");
-static_assert(sizeof(UPythonEnum) == 0x0000D0, "Wrong size on UPythonEnum");
+DUMPER7_ASSERTS_UPythonEnum;
 
 // Class UnrealEnginePython.PythonFunction
 // 0x0018 (0x0108 - 0x00F0)
@@ -396,15 +408,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonFunction">();
+		STATIC_CLASS_IMPL("PythonFunction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonFunction")
 	}
 	static class UPythonFunction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonFunction>();
 	}
 };
-static_assert(alignof(UPythonFunction) == 0x000008, "Wrong alignment on UPythonFunction");
-static_assert(sizeof(UPythonFunction) == 0x000108, "Wrong size on UPythonFunction");
+DUMPER7_ASSERTS_UPythonFunction;
 
 // Class UnrealEnginePython.PythonScript
 // 0x0030 (0x0060 - 0x0030)
@@ -421,21 +436,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonScript">();
+		STATIC_CLASS_IMPL("PythonScript")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonScript")
 	}
 	static class UPythonScript* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonScript>();
 	}
 };
-static_assert(alignof(UPythonScript) == 0x000008, "Wrong alignment on UPythonScript");
-static_assert(sizeof(UPythonScript) == 0x000060, "Wrong size on UPythonScript");
-static_assert(offsetof(UPythonScript, ScriptPath) == 0x000030, "Member 'UPythonScript::ScriptPath' has a wrong offset!");
-static_assert(offsetof(UPythonScript, FunctionToCall) == 0x000040, "Member 'UPythonScript::FunctionToCall' has a wrong offset!");
-static_assert(offsetof(UPythonScript, FunctionArgs) == 0x000050, "Member 'UPythonScript::FunctionArgs' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonScript;
 
 // Class UnrealEnginePython.PythonSettings
-// 0x0068 (0x0098 - 0x0030)
+// 0x0078 (0x00A8 - 0x0030)
 class UPythonSettings final : public UObject
 {
 public:
@@ -447,31 +462,26 @@ public:
 	class FString                                 StdLibraryPath;                                    // 0x0058(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         SitePackagePaths;                                  // 0x0068(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TArray<class FString>                         PreImportModules;                                  // 0x0078(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
-	bool                                          bEnableMainGILHold;                                // 0x0088(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        GILCheckerInterval;                                // 0x0090(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ModuleTraceFilterKeywords;                         // 0x0088(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	bool                                          bEnableMainGILHold;                                // 0x0098(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        GILCheckerInterval;                                // 0x00A0(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonSettings">();
+		STATIC_CLASS_IMPL("PythonSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonSettings")
 	}
 	static class UPythonSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonSettings>();
 	}
 };
-static_assert(alignof(UPythonSettings) == 0x000008, "Wrong alignment on UPythonSettings");
-static_assert(sizeof(UPythonSettings) == 0x000098, "Wrong size on UPythonSettings");
-static_assert(offsetof(UPythonSettings, bWritePycFiles) == 0x000030, "Member 'UPythonSettings::bWritePycFiles' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, PySourceMode) == 0x000031, "Member 'UPythonSettings::PySourceMode' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, ScriptPack) == 0x000038, "Member 'UPythonSettings::ScriptPack' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, SourcePath) == 0x000048, "Member 'UPythonSettings::SourcePath' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, StdLibraryPath) == 0x000058, "Member 'UPythonSettings::StdLibraryPath' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, SitePackagePaths) == 0x000068, "Member 'UPythonSettings::SitePackagePaths' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, PreImportModules) == 0x000078, "Member 'UPythonSettings::PreImportModules' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, bEnableMainGILHold) == 0x000088, "Member 'UPythonSettings::bEnableMainGILHold' has a wrong offset!");
-static_assert(offsetof(UPythonSettings, GILCheckerInterval) == 0x000090, "Member 'UPythonSettings::GILCheckerInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonSettings;
 
 // Class UnrealEnginePython.PythonEditorSettings
 // 0x0030 (0x0060 - 0x0030)
@@ -485,18 +495,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonEditorSettings">();
+		STATIC_CLASS_IMPL("PythonEditorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonEditorSettings")
 	}
 	static class UPythonEditorSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonEditorSettings>();
 	}
 };
-static_assert(alignof(UPythonEditorSettings) == 0x000008, "Wrong alignment on UPythonEditorSettings");
-static_assert(sizeof(UPythonEditorSettings) == 0x000060, "Wrong size on UPythonEditorSettings");
-static_assert(offsetof(UPythonEditorSettings, EditorSourcePath) == 0x000030, "Member 'UPythonEditorSettings::EditorSourcePath' has a wrong offset!");
-static_assert(offsetof(UPythonEditorSettings, EditorPreImportModules) == 0x000040, "Member 'UPythonEditorSettings::EditorPreImportModules' has a wrong offset!");
-static_assert(offsetof(UPythonEditorSettings, ExcludedImportModules) == 0x000050, "Member 'UPythonEditorSettings::ExcludedImportModules' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonEditorSettings;
 
 // Class UnrealEnginePython.PythonUserSettings
 // 0x0028 (0x0058 - 0x0030)
@@ -514,21 +524,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonUserSettings">();
+		STATIC_CLASS_IMPL("PythonUserSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonUserSettings")
 	}
 	static class UPythonUserSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonUserSettings>();
 	}
 };
-static_assert(alignof(UPythonUserSettings) == 0x000008, "Wrong alignment on UPythonUserSettings");
-static_assert(sizeof(UPythonUserSettings) == 0x000058, "Wrong size on UPythonUserSettings");
-static_assert(offsetof(UPythonUserSettings, bHotReloadAll) == 0x000030, "Member 'UPythonUserSettings::bHotReloadAll' has a wrong offset!");
-static_assert(offsetof(UPythonUserSettings, EnableExceptionNotification) == 0x000031, "Member 'UPythonUserSettings::EnableExceptionNotification' has a wrong offset!");
-static_assert(offsetof(UPythonUserSettings, bEnalbeNewVersion) == 0x000032, "Member 'UPythonUserSettings::bEnalbeNewVersion' has a wrong offset!");
-static_assert(offsetof(UPythonUserSettings, NotifyExpireDuration) == 0x000034, "Member 'UPythonUserSettings::NotifyExpireDuration' has a wrong offset!");
-static_assert(offsetof(UPythonUserSettings, HyperLinkText) == 0x000038, "Member 'UPythonUserSettings::HyperLinkText' has a wrong offset!");
-static_assert(offsetof(UPythonUserSettings, JumpCodeCommandLinePrefix) == 0x000048, "Member 'UPythonUserSettings::JumpCodeCommandLinePrefix' has a wrong offset!");
+DUMPER7_ASSERTS_UPythonUserSettings;
 
 // Class UnrealEnginePython.PythonStruct
 // 0x0020 (0x0138 - 0x0118)
@@ -540,15 +547,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PythonStruct">();
+		STATIC_CLASS_IMPL("PythonStruct")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PythonStruct")
 	}
 	static class UPythonStruct* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPythonStruct>();
 	}
 };
-static_assert(alignof(UPythonStruct) == 0x000008, "Wrong alignment on UPythonStruct");
-static_assert(sizeof(UPythonStruct) == 0x000138, "Wrong size on UPythonStruct");
+DUMPER7_ASSERTS_UPythonStruct;
 
 // Class UnrealEnginePython.PyUserWidget
 // 0x0040 (0x03F8 - 0x03B8)
@@ -569,20 +579,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUserWidget">();
+		STATIC_CLASS_IMPL("PyUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUserWidget")
 	}
 	static class UPyUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUserWidget>();
 	}
 };
-static_assert(alignof(UPyUserWidget) == 0x000008, "Wrong alignment on UPyUserWidget");
-static_assert(sizeof(UPyUserWidget) == 0x0003F8, "Wrong size on UPyUserWidget");
-static_assert(offsetof(UPyUserWidget, PythonModule) == 0x0003B8, "Member 'UPyUserWidget::PythonModule' has a wrong offset!");
-static_assert(offsetof(UPyUserWidget, PythonClass) == 0x0003C8, "Member 'UPyUserWidget::PythonClass' has a wrong offset!");
-static_assert(offsetof(UPyUserWidget, PythonTickForceDisabled) == 0x0003D8, "Member 'UPyUserWidget::PythonTickForceDisabled' has a wrong offset!");
-static_assert(offsetof(UPyUserWidget, PythonPaintForceDisabled) == 0x0003D9, "Member 'UPyUserWidget::PythonPaintForceDisabled' has a wrong offset!");
-static_assert(offsetof(UPyUserWidget, PyNativeWidgetHost) == 0x0003DC, "Member 'UPyUserWidget::PyNativeWidgetHost' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUserWidget;
 
 // Class UnrealEnginePython.TestInvokeInnerObject
 // 0x0000 (0x0030 - 0x0030)
@@ -591,15 +599,18 @@ class UTestInvokeInnerObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TestInvokeInnerObject">();
+		STATIC_CLASS_IMPL("TestInvokeInnerObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TestInvokeInnerObject")
 	}
 	static class UTestInvokeInnerObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTestInvokeInnerObject>();
 	}
 };
-static_assert(alignof(UTestInvokeInnerObject) == 0x000008, "Wrong alignment on UTestInvokeInnerObject");
-static_assert(sizeof(UTestInvokeInnerObject) == 0x000030, "Wrong size on UTestInvokeInnerObject");
+DUMPER7_ASSERTS_UTestInvokeInnerObject;
 
 // Class UnrealEnginePython.TestInvokeObject
 // 0x0060 (0x0090 - 0x0030)
@@ -628,19 +639,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TestInvokeObject">();
+		STATIC_CLASS_IMPL("TestInvokeObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TestInvokeObject")
 	}
 	static class UTestInvokeObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTestInvokeObject>();
 	}
 };
-static_assert(alignof(UTestInvokeObject) == 0x000008, "Wrong alignment on UTestInvokeObject");
-static_assert(sizeof(UTestInvokeObject) == 0x000090, "Wrong size on UTestInvokeObject");
-static_assert(offsetof(UTestInvokeObject, Int32Val) == 0x000030, "Member 'UTestInvokeObject::Int32Val' has a wrong offset!");
-static_assert(offsetof(UTestInvokeObject, StrVal) == 0x000038, "Member 'UTestInvokeObject::StrVal' has a wrong offset!");
-static_assert(offsetof(UTestInvokeObject, StructValue) == 0x000048, "Member 'UTestInvokeObject::StructValue' has a wrong offset!");
-static_assert(offsetof(UTestInvokeObject, ObjectValue) == 0x000088, "Member 'UTestInvokeObject::ObjectValue' has a wrong offset!");
+DUMPER7_ASSERTS_UTestInvokeObject;
 
 }
 

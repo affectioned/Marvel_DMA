@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104162.PyEffectiveComponent_10416201
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10416201 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -26,22 +26,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10416201">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10416201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10416201")
 	}
 	static class UPyEffectiveComponent_10416201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10416201>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10416201) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10416201");
-static_assert(sizeof(UPyEffectiveComponent_10416201) == 0x001C70, "Wrong size on UPyEffectiveComponent_10416201");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10416201;
 
 // PythonClass PyAbility_104162.PyAbility_104162
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_104162 : public UMarvelGameplayAbility
 {
 public:
-	class AMarvelAbilityTargetActor_Scope*        ScopeActor;                                        // 0x29F0(0x0008)(Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMarvelAbilityTargetActor_Scope*        ScopeActor;                                        // 0x2A40(0x0008)(Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -54,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104162">();
+		STATIC_CLASS_IMPL("PyAbility_104162")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104162")
 	}
 	static class UPyAbility_104162* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104162>();
 	}
 };
-static_assert(alignof(UPyAbility_104162) == 0x000008, "Wrong alignment on UPyAbility_104162");
-static_assert(sizeof(UPyAbility_104162) == 0x0029F8, "Wrong size on UPyAbility_104162");
-static_assert(offsetof(UPyAbility_104162, ScopeActor) == 0x0029F0, "Member 'UPyAbility_104162::ScopeActor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104162;
 
 }
 

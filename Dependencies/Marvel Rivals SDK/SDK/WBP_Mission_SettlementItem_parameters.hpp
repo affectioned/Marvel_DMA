@@ -21,9 +21,7 @@ struct WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem) == 0x000004, "Wrong alignment on WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem");
-static_assert(sizeof(WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem) == 0x000004, "Wrong size on WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem");
-static_assert(offsetof(WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem, EntryPoint) == 0x000000, "Member 'WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Mission_SettlementItem_C_ExecuteUbergraph_WBP_Mission_SettlementItem;
 
 }
 

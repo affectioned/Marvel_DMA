@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104396.PyCue_Buff_Loop_10439601
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_Loop_10439601 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10439601">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10439601")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10439601")
 	}
 	static class APyCue_Buff_Loop_10439601* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10439601>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10439601) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10439601");
-static_assert(sizeof(APyCue_Buff_Loop_10439601) == 0x001640, "Wrong size on APyCue_Buff_Loop_10439601");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10439601;
 
 // PythonClass PyAbility_104396.PyConfig_104396
 // 0x0038 (0x00D0 - 0x0098)
@@ -54,31 +57,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104396">();
+		STATIC_CLASS_IMPL("PyConfig_104396")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104396")
 	}
 	static class UPyConfig_104396* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104396>();
 	}
 };
-static_assert(alignof(UPyConfig_104396) == 0x000008, "Wrong alignment on UPyConfig_104396");
-static_assert(sizeof(UPyConfig_104396) == 0x0000D0, "Wrong size on UPyConfig_104396");
-static_assert(offsetof(UPyConfig_104396, LocationOffset) == 0x000098, "Member 'UPyConfig_104396::LocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, TeleportCastTime) == 0x0000B0, "Member 'UPyConfig_104396::TeleportCastTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, ApplyBuffTime) == 0x0000B4, "Member 'UPyConfig_104396::ApplyBuffTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, TimeBuffID) == 0x0000B8, "Member 'UPyConfig_104396::TimeBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, BuffID) == 0x0000BC, "Member 'UPyConfig_104396::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, PreBuffID) == 0x0000C0, "Member 'UPyConfig_104396::PreBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, SuccessCD) == 0x0000C4, "Member 'UPyConfig_104396::SuccessCD' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104396, FailedCD) == 0x0000C8, "Member 'UPyConfig_104396::FailedCD' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104396;
 
 // PythonClass PyAbility_104396.PyAbility_104396
-// 0x0020 (0x2A10 - 0x29F0)
+// 0x0020 (0x2A60 - 0x2A40)
 class UPyAbility_104396 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void()>              OnTransferSuccess;                                 // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTransferFailed;                                  // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTransferSuccess;                                 // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTransferFailed;                                  // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -95,17 +93,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104396">();
+		STATIC_CLASS_IMPL("PyAbility_104396")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104396")
 	}
 	static class UPyAbility_104396* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104396>();
 	}
 };
-static_assert(alignof(UPyAbility_104396) == 0x000008, "Wrong alignment on UPyAbility_104396");
-static_assert(sizeof(UPyAbility_104396) == 0x002A10, "Wrong size on UPyAbility_104396");
-static_assert(offsetof(UPyAbility_104396, OnTransferSuccess) == 0x0029F0, "Member 'UPyAbility_104396::OnTransferSuccess' has a wrong offset!");
-static_assert(offsetof(UPyAbility_104396, OnTransferFailed) == 0x002A00, "Member 'UPyAbility_104396::OnTransferFailed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104396;
 
 // PythonClass PyAbility_104396.PyCue_Ability_Instant_10439602
 // 0x0008 (0x03C8 - 0x03C0)
@@ -120,16 +119,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_10439602">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_10439602")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_10439602")
 	}
 	static class UPyCue_Ability_Instant_10439602* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_10439602>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_10439602) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_10439602");
-static_assert(sizeof(UPyCue_Ability_Instant_10439602) == 0x0003C8, "Wrong size on UPyCue_Ability_Instant_10439602");
-static_assert(offsetof(UPyCue_Ability_Instant_10439602, TrajectoryLen) == 0x0003C0, "Member 'UPyCue_Ability_Instant_10439602::TrajectoryLen' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_10439602;
 
 }
 

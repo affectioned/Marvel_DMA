@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SeasonStory_DoubelReward_Tips.PyWidget_SeasonStory_DoubelReward_Tips
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SeasonStory_DoubelReward_Tips final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SeasonStory_DoubelReward_Tips">();
+		STATIC_CLASS_IMPL("PyWidget_SeasonStory_DoubelReward_Tips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SeasonStory_DoubelReward_Tips")
 	}
 	static class UPyWidget_SeasonStory_DoubelReward_Tips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SeasonStory_DoubelReward_Tips>();
 	}
 };
-static_assert(alignof(UPyWidget_SeasonStory_DoubelReward_Tips) == 0x000008, "Wrong alignment on UPyWidget_SeasonStory_DoubelReward_Tips");
-static_assert(sizeof(UPyWidget_SeasonStory_DoubelReward_Tips) == 0x0005C0, "Wrong size on UPyWidget_SeasonStory_DoubelReward_Tips");
+DUMPER7_ASSERTS_UPyWidget_SeasonStory_DoubelReward_Tips;
 
 }
 

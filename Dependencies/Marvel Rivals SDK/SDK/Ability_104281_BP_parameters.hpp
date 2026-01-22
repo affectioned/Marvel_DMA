@@ -56,34 +56,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWasCancelled;                        // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP) == 0x000008, "Wrong alignment on Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP");
-static_assert(sizeof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP) == 0x000100, "Wrong size on Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, EntryPoint) == 0x000000, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_MakeArray_Array) == 0x000008, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_WaitTimeSeconds_ReturnValue) == 0x000018, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_WaitTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_PlayTimelineByIndex_ReturnValue) == 0x000020, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_PlayTimelineByIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue_1) == 0x000029, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, Temp_struct_Variable) == 0x00002C, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000038, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_SpawnScope_ReturnValue) == 0x000040, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_SpawnScope_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000048, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue_2) == 0x000054, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000058, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_SpawnScope_ReturnValue_1) == 0x000070, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_SpawnScope_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue_3) == 0x000078, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CreateDelegate_OutputDelegate_1) == 0x00007C, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CreateDelegate_OutputDelegate_2) == 0x000090, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000A4, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CustomEvent_OnReleaseDelegate__DelegateSignature_Duration) == 0x0000B8, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CustomEvent_OnReleaseDelegate__DelegateSignature_Duration' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, Temp_real_Variable) == 0x0000BC, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::Temp_real_Variable' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_WaitInput_ReturnValue) == 0x0000C0, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_WaitInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue_4) == 0x0000C8, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag_1) == 0x0000CC, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CustomEvent_TriggerNotifyTagEventDelegate__DelegateSignature_EventTag_1' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000D8, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_WaitTimeSeconds_ReturnValue_1) == 0x0000F0, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_WaitTimeSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, CallFunc_IsValid_ReturnValue_5) == 0x0000F8, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP, K2Node_Event_bWasCancelled) == 0x0000F9, "Member 'Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104281_BP_C_ExecuteUbergraph_Ability_104281_BP;
 
 // Function Ability_104281_BP.Ability_104281_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +65,7 @@ struct Ability_104281_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104281_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on Ability_104281_BP_C_K2_OnEndAbility");
-static_assert(sizeof(Ability_104281_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on Ability_104281_BP_C_K2_OnEndAbility");
-static_assert(offsetof(Ability_104281_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'Ability_104281_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104281_BP_C_K2_OnEndAbility;
 
 // Function Ability_104281_BP.Ability_104281_BP_C.OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6
 // 0x000C (0x000C - 0x0000)
@@ -103,9 +74,7 @@ struct Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6 
 public:
 	struct FGameplayTag                           TriggerNotifyTagEventDelegate__DelegateSignature_EventTag; // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6) == 0x000004, "Wrong alignment on Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6");
-static_assert(sizeof(Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6) == 0x00000C, "Wrong size on Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6");
-static_assert(offsetof(Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6, TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000000, "Member 'Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6::TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104281_BP_C_OnCompletedDelegate_1357E040468AC8665584388C8A64CBF6;
 
 // Function Ability_104281_BP.Ability_104281_BP_C.OnPress_8BCE5D554FA067EAB002F083B32C3CBF
 // 0x0004 (0x0004 - 0x0000)
@@ -114,9 +83,7 @@ struct Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF final
 public:
 	float                                         OnReleaseDelegate__DelegateSignature_Duration;     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF) == 0x000004, "Wrong alignment on Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF");
-static_assert(sizeof(Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF) == 0x000004, "Wrong size on Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF");
-static_assert(offsetof(Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF, OnReleaseDelegate__DelegateSignature_Duration) == 0x000000, "Member 'Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF::OnReleaseDelegate__DelegateSignature_Duration' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104281_BP_C_OnPress_8BCE5D554FA067EAB002F083B32C3CBF;
 
 // Function Ability_104281_BP.Ability_104281_BP_C.OnTriggerEvent_1357E040468AC8665584388C8A64CBF6
 // 0x000C (0x000C - 0x0000)
@@ -125,9 +92,7 @@ struct Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6 final
 public:
 	struct FGameplayTag                           TriggerNotifyTagEventDelegate__DelegateSignature_EventTag; // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6) == 0x000004, "Wrong alignment on Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6");
-static_assert(sizeof(Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6) == 0x00000C, "Wrong size on Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6");
-static_assert(offsetof(Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6, TriggerNotifyTagEventDelegate__DelegateSignature_EventTag) == 0x000000, "Member 'Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6::TriggerNotifyTagEventDelegate__DelegateSignature_EventTag' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_104281_BP_C_OnTriggerEvent_1357E040468AC8665584388C8A64CBF6;
 
 }
 

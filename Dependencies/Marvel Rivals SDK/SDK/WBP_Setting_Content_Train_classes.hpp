@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Content_Train.WBP_Setting_Content_Train_C
-// 0x0008 (0x0628 - 0x0620)
+// 0x0008 (0x0630 - 0x0628)
 class UWBP_Setting_Content_Train_C final : public UPyWidget_SettingPageBase
 {
 public:
-	class UMarvelVerticalBox*                     VBox_Panel;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_Panel;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Content_Train_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Content_Train_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Content_Train_C")
 	}
 	static class UWBP_Setting_Content_Train_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Content_Train_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Content_Train_C) == 0x000008, "Wrong alignment on UWBP_Setting_Content_Train_C");
-static_assert(sizeof(UWBP_Setting_Content_Train_C) == 0x000628, "Wrong size on UWBP_Setting_Content_Train_C");
-static_assert(offsetof(UWBP_Setting_Content_Train_C, VBox_Panel) == 0x000620, "Member 'UWBP_Setting_Content_Train_C::VBox_Panel' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Content_Train_C;
 
 }
 

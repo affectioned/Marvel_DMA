@@ -25,10 +25,7 @@ public:
 	int32                                         Port;                                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCClient_GetSendIPAddress) == 0x000008, "Wrong alignment on OSCClient_GetSendIPAddress");
-static_assert(sizeof(OSCClient_GetSendIPAddress) == 0x000018, "Wrong size on OSCClient_GetSendIPAddress");
-static_assert(offsetof(OSCClient_GetSendIPAddress, IPAddress) == 0x000000, "Member 'OSCClient_GetSendIPAddress::IPAddress' has a wrong offset!");
-static_assert(offsetof(OSCClient_GetSendIPAddress, Port) == 0x000010, "Member 'OSCClient_GetSendIPAddress::Port' has a wrong offset!");
+DUMPER7_ASSERTS_OSCClient_GetSendIPAddress;
 
 // Function OSC.OSCClient.SendOSCBundle
 // 0x0010 (0x0010 - 0x0000)
@@ -37,9 +34,7 @@ struct OSCClient_SendOSCBundle final
 public:
 	struct FOSCBundle                             Bundle;                                            // 0x0000(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCClient_SendOSCBundle) == 0x000008, "Wrong alignment on OSCClient_SendOSCBundle");
-static_assert(sizeof(OSCClient_SendOSCBundle) == 0x000010, "Wrong size on OSCClient_SendOSCBundle");
-static_assert(offsetof(OSCClient_SendOSCBundle, Bundle) == 0x000000, "Member 'OSCClient_SendOSCBundle::Bundle' has a wrong offset!");
+DUMPER7_ASSERTS_OSCClient_SendOSCBundle;
 
 // Function OSC.OSCClient.SendOSCMessage
 // 0x0010 (0x0010 - 0x0000)
@@ -48,9 +43,7 @@ struct OSCClient_SendOSCMessage final
 public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCClient_SendOSCMessage) == 0x000008, "Wrong alignment on OSCClient_SendOSCMessage");
-static_assert(sizeof(OSCClient_SendOSCMessage) == 0x000010, "Wrong size on OSCClient_SendOSCMessage");
-static_assert(offsetof(OSCClient_SendOSCMessage, Message) == 0x000000, "Member 'OSCClient_SendOSCMessage::Message' has a wrong offset!");
+DUMPER7_ASSERTS_OSCClient_SendOSCMessage;
 
 // Function OSC.OSCClient.SetSendIPAddress
 // 0x0018 (0x0018 - 0x0000)
@@ -62,11 +55,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCClient_SetSendIPAddress) == 0x000008, "Wrong alignment on OSCClient_SetSendIPAddress");
-static_assert(sizeof(OSCClient_SetSendIPAddress) == 0x000018, "Wrong size on OSCClient_SetSendIPAddress");
-static_assert(offsetof(OSCClient_SetSendIPAddress, IPAddress) == 0x000000, "Member 'OSCClient_SetSendIPAddress::IPAddress' has a wrong offset!");
-static_assert(offsetof(OSCClient_SetSendIPAddress, Port) == 0x000010, "Member 'OSCClient_SetSendIPAddress::Port' has a wrong offset!");
-static_assert(offsetof(OSCClient_SetSendIPAddress, ReturnValue) == 0x000014, "Member 'OSCClient_SetSendIPAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCClient_SetSendIPAddress;
 
 // Function OSC.OSCManager.AddAddress
 // 0x0048 (0x0048 - 0x0000)
@@ -77,11 +66,7 @@ public:
 	struct FOSCAddress                            Value;                                             // 0x0010(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddAddress) == 0x000008, "Wrong alignment on OSCManager_AddAddress");
-static_assert(sizeof(OSCManager_AddAddress) == 0x000048, "Wrong size on OSCManager_AddAddress");
-static_assert(offsetof(OSCManager_AddAddress, Message) == 0x000000, "Member 'OSCManager_AddAddress::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddAddress, Value) == 0x000010, "Member 'OSCManager_AddAddress::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddAddress, ReturnValue) == 0x000038, "Member 'OSCManager_AddAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddAddress;
 
 // Function OSC.OSCManager.AddBlob
 // 0x0030 (0x0030 - 0x0000)
@@ -92,11 +77,7 @@ public:
 	TArray<uint8>                                 Value;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddBlob) == 0x000008, "Wrong alignment on OSCManager_AddBlob");
-static_assert(sizeof(OSCManager_AddBlob) == 0x000030, "Wrong size on OSCManager_AddBlob");
-static_assert(offsetof(OSCManager_AddBlob, Message) == 0x000000, "Member 'OSCManager_AddBlob::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBlob, Value) == 0x000010, "Member 'OSCManager_AddBlob::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBlob, ReturnValue) == 0x000020, "Member 'OSCManager_AddBlob::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddBlob;
 
 // Function OSC.OSCManager.AddBool
 // 0x0028 (0x0028 - 0x0000)
@@ -108,11 +89,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOSCMessage                            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddBool) == 0x000008, "Wrong alignment on OSCManager_AddBool");
-static_assert(sizeof(OSCManager_AddBool) == 0x000028, "Wrong size on OSCManager_AddBool");
-static_assert(offsetof(OSCManager_AddBool, Message) == 0x000000, "Member 'OSCManager_AddBool::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBool, Value) == 0x000010, "Member 'OSCManager_AddBool::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBool, ReturnValue) == 0x000018, "Member 'OSCManager_AddBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddBool;
 
 // Function OSC.OSCManager.AddBundleToBundle
 // 0x0030 (0x0030 - 0x0000)
@@ -123,11 +100,7 @@ public:
 	struct FOSCBundle                             OutBundle;                                         // 0x0010(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCBundle                             ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddBundleToBundle) == 0x000008, "Wrong alignment on OSCManager_AddBundleToBundle");
-static_assert(sizeof(OSCManager_AddBundleToBundle) == 0x000030, "Wrong size on OSCManager_AddBundleToBundle");
-static_assert(offsetof(OSCManager_AddBundleToBundle, InBundle) == 0x000000, "Member 'OSCManager_AddBundleToBundle::InBundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBundleToBundle, OutBundle) == 0x000010, "Member 'OSCManager_AddBundleToBundle::OutBundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddBundleToBundle, ReturnValue) == 0x000020, "Member 'OSCManager_AddBundleToBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddBundleToBundle;
 
 // Function OSC.OSCManager.AddFloat
 // 0x0028 (0x0028 - 0x0000)
@@ -139,11 +112,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOSCMessage                            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddFloat) == 0x000008, "Wrong alignment on OSCManager_AddFloat");
-static_assert(sizeof(OSCManager_AddFloat) == 0x000028, "Wrong size on OSCManager_AddFloat");
-static_assert(offsetof(OSCManager_AddFloat, Message) == 0x000000, "Member 'OSCManager_AddFloat::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddFloat, Value) == 0x000010, "Member 'OSCManager_AddFloat::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddFloat, ReturnValue) == 0x000018, "Member 'OSCManager_AddFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddFloat;
 
 // Function OSC.OSCManager.AddInt32
 // 0x0028 (0x0028 - 0x0000)
@@ -155,11 +124,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOSCMessage                            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddInt32) == 0x000008, "Wrong alignment on OSCManager_AddInt32");
-static_assert(sizeof(OSCManager_AddInt32) == 0x000028, "Wrong size on OSCManager_AddInt32");
-static_assert(offsetof(OSCManager_AddInt32, Message) == 0x000000, "Member 'OSCManager_AddInt32::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddInt32, Value) == 0x000010, "Member 'OSCManager_AddInt32::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddInt32, ReturnValue) == 0x000018, "Member 'OSCManager_AddInt32::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddInt32;
 
 // Function OSC.OSCManager.AddInt64
 // 0x0028 (0x0028 - 0x0000)
@@ -170,11 +135,7 @@ public:
 	int64                                         Value;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddInt64) == 0x000008, "Wrong alignment on OSCManager_AddInt64");
-static_assert(sizeof(OSCManager_AddInt64) == 0x000028, "Wrong size on OSCManager_AddInt64");
-static_assert(offsetof(OSCManager_AddInt64, Message) == 0x000000, "Member 'OSCManager_AddInt64::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddInt64, Value) == 0x000010, "Member 'OSCManager_AddInt64::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddInt64, ReturnValue) == 0x000018, "Member 'OSCManager_AddInt64::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddInt64;
 
 // Function OSC.OSCManager.AddMessageToBundle
 // 0x0030 (0x0030 - 0x0000)
@@ -185,11 +146,7 @@ public:
 	struct FOSCBundle                             Bundle;                                            // 0x0010(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCBundle                             ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddMessageToBundle) == 0x000008, "Wrong alignment on OSCManager_AddMessageToBundle");
-static_assert(sizeof(OSCManager_AddMessageToBundle) == 0x000030, "Wrong size on OSCManager_AddMessageToBundle");
-static_assert(offsetof(OSCManager_AddMessageToBundle, Message) == 0x000000, "Member 'OSCManager_AddMessageToBundle::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddMessageToBundle, Bundle) == 0x000010, "Member 'OSCManager_AddMessageToBundle::Bundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddMessageToBundle, ReturnValue) == 0x000020, "Member 'OSCManager_AddMessageToBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddMessageToBundle;
 
 // Function OSC.OSCManager.AddString
 // 0x0030 (0x0030 - 0x0000)
@@ -200,11 +157,7 @@ public:
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_AddString) == 0x000008, "Wrong alignment on OSCManager_AddString");
-static_assert(sizeof(OSCManager_AddString) == 0x000030, "Wrong size on OSCManager_AddString");
-static_assert(offsetof(OSCManager_AddString, Message) == 0x000000, "Member 'OSCManager_AddString::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddString, Value) == 0x000010, "Member 'OSCManager_AddString::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_AddString, ReturnValue) == 0x000020, "Member 'OSCManager_AddString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_AddString;
 
 // Function OSC.OSCManager.ClearBundle
 // 0x0020 (0x0020 - 0x0000)
@@ -214,10 +167,7 @@ public:
 	struct FOSCBundle                             Bundle;                                            // 0x0000(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCBundle                             ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_ClearBundle) == 0x000008, "Wrong alignment on OSCManager_ClearBundle");
-static_assert(sizeof(OSCManager_ClearBundle) == 0x000020, "Wrong size on OSCManager_ClearBundle");
-static_assert(offsetof(OSCManager_ClearBundle, Bundle) == 0x000000, "Member 'OSCManager_ClearBundle::Bundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_ClearBundle, ReturnValue) == 0x000010, "Member 'OSCManager_ClearBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_ClearBundle;
 
 // Function OSC.OSCManager.ClearMessage
 // 0x0020 (0x0020 - 0x0000)
@@ -227,10 +177,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_ClearMessage) == 0x000008, "Wrong alignment on OSCManager_ClearMessage");
-static_assert(sizeof(OSCManager_ClearMessage) == 0x000020, "Wrong size on OSCManager_ClearMessage");
-static_assert(offsetof(OSCManager_ClearMessage, Message) == 0x000000, "Member 'OSCManager_ClearMessage::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_ClearMessage, ReturnValue) == 0x000010, "Member 'OSCManager_ClearMessage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_ClearMessage;
 
 // Function OSC.OSCManager.ClearOSCAddressContainers
 // 0x0050 (0x0050 - 0x0000)
@@ -240,10 +187,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0028(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_ClearOSCAddressContainers) == 0x000008, "Wrong alignment on OSCManager_ClearOSCAddressContainers");
-static_assert(sizeof(OSCManager_ClearOSCAddressContainers) == 0x000050, "Wrong size on OSCManager_ClearOSCAddressContainers");
-static_assert(offsetof(OSCManager_ClearOSCAddressContainers, Address) == 0x000000, "Member 'OSCManager_ClearOSCAddressContainers::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_ClearOSCAddressContainers, ReturnValue) == 0x000028, "Member 'OSCManager_ClearOSCAddressContainers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_ClearOSCAddressContainers;
 
 // Function OSC.OSCManager.ConvertStringToOSCAddress
 // 0x0038 (0x0038 - 0x0000)
@@ -253,10 +197,7 @@ public:
 	class FString                                 String;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0010(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_ConvertStringToOSCAddress) == 0x000008, "Wrong alignment on OSCManager_ConvertStringToOSCAddress");
-static_assert(sizeof(OSCManager_ConvertStringToOSCAddress) == 0x000038, "Wrong size on OSCManager_ConvertStringToOSCAddress");
-static_assert(offsetof(OSCManager_ConvertStringToOSCAddress, String) == 0x000000, "Member 'OSCManager_ConvertStringToOSCAddress::String' has a wrong offset!");
-static_assert(offsetof(OSCManager_ConvertStringToOSCAddress, ReturnValue) == 0x000010, "Member 'OSCManager_ConvertStringToOSCAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_ConvertStringToOSCAddress;
 
 // Function OSC.OSCManager.CreateOSCClient
 // 0x0038 (0x0038 - 0x0000)
@@ -270,13 +211,7 @@ public:
 	class UObject*                                Outer_0;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOSCClient*                             ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_CreateOSCClient) == 0x000008, "Wrong alignment on OSCManager_CreateOSCClient");
-static_assert(sizeof(OSCManager_CreateOSCClient) == 0x000038, "Wrong size on OSCManager_CreateOSCClient");
-static_assert(offsetof(OSCManager_CreateOSCClient, SendIPAddress) == 0x000000, "Member 'OSCManager_CreateOSCClient::SendIPAddress' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCClient, Port) == 0x000010, "Member 'OSCManager_CreateOSCClient::Port' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCClient, ClientName) == 0x000018, "Member 'OSCManager_CreateOSCClient::ClientName' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCClient, Outer_0) == 0x000028, "Member 'OSCManager_CreateOSCClient::Outer_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCClient, ReturnValue) == 0x000030, "Member 'OSCManager_CreateOSCClient::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_CreateOSCClient;
 
 // Function OSC.OSCManager.CreateOSCServer
 // 0x0038 (0x0038 - 0x0000)
@@ -292,15 +227,7 @@ public:
 	class UObject*                                Outer_0;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOSCServer*                             ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_CreateOSCServer) == 0x000008, "Wrong alignment on OSCManager_CreateOSCServer");
-static_assert(sizeof(OSCManager_CreateOSCServer) == 0x000038, "Wrong size on OSCManager_CreateOSCServer");
-static_assert(offsetof(OSCManager_CreateOSCServer, ReceiveIPAddress) == 0x000000, "Member 'OSCManager_CreateOSCServer::ReceiveIPAddress' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, Port) == 0x000010, "Member 'OSCManager_CreateOSCServer::Port' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, bMulticastLoopback) == 0x000014, "Member 'OSCManager_CreateOSCServer::bMulticastLoopback' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, bStartListening) == 0x000015, "Member 'OSCManager_CreateOSCServer::bStartListening' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, ServerName) == 0x000018, "Member 'OSCManager_CreateOSCServer::ServerName' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, Outer_0) == 0x000028, "Member 'OSCManager_CreateOSCServer::Outer_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_CreateOSCServer, ReturnValue) == 0x000030, "Member 'OSCManager_CreateOSCServer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_CreateOSCServer;
 
 // Function OSC.OSCManager.FindObjectAtOSCAddress
 // 0x0030 (0x0030 - 0x0000)
@@ -310,10 +237,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_FindObjectAtOSCAddress) == 0x000008, "Wrong alignment on OSCManager_FindObjectAtOSCAddress");
-static_assert(sizeof(OSCManager_FindObjectAtOSCAddress) == 0x000030, "Wrong size on OSCManager_FindObjectAtOSCAddress");
-static_assert(offsetof(OSCManager_FindObjectAtOSCAddress, Address) == 0x000000, "Member 'OSCManager_FindObjectAtOSCAddress::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_FindObjectAtOSCAddress, ReturnValue) == 0x000028, "Member 'OSCManager_FindObjectAtOSCAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_FindObjectAtOSCAddress;
 
 // Function OSC.OSCManager.GetAddress
 // 0x0048 (0x0048 - 0x0000)
@@ -327,12 +251,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetAddress) == 0x000008, "Wrong alignment on OSCManager_GetAddress");
-static_assert(sizeof(OSCManager_GetAddress) == 0x000048, "Wrong size on OSCManager_GetAddress");
-static_assert(offsetof(OSCManager_GetAddress, Message) == 0x000000, "Member 'OSCManager_GetAddress::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAddress, Index_0) == 0x000010, "Member 'OSCManager_GetAddress::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAddress, Value) == 0x000018, "Member 'OSCManager_GetAddress::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAddress, ReturnValue) == 0x000040, "Member 'OSCManager_GetAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAddress;
 
 // Function OSC.OSCManager.GetAllAddresses
 // 0x0020 (0x0020 - 0x0000)
@@ -342,10 +261,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FOSCAddress>                    Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllAddresses) == 0x000008, "Wrong alignment on OSCManager_GetAllAddresses");
-static_assert(sizeof(OSCManager_GetAllAddresses) == 0x000020, "Wrong size on OSCManager_GetAllAddresses");
-static_assert(offsetof(OSCManager_GetAllAddresses, Message) == 0x000000, "Member 'OSCManager_GetAllAddresses::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllAddresses, Values) == 0x000010, "Member 'OSCManager_GetAllAddresses::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllAddresses;
 
 // Function OSC.OSCManager.GetAllBools
 // 0x0020 (0x0020 - 0x0000)
@@ -355,10 +271,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<bool>                                  Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllBools) == 0x000008, "Wrong alignment on OSCManager_GetAllBools");
-static_assert(sizeof(OSCManager_GetAllBools) == 0x000020, "Wrong size on OSCManager_GetAllBools");
-static_assert(offsetof(OSCManager_GetAllBools, Message) == 0x000000, "Member 'OSCManager_GetAllBools::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllBools, Values) == 0x000010, "Member 'OSCManager_GetAllBools::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllBools;
 
 // Function OSC.OSCManager.GetAllFloats
 // 0x0020 (0x0020 - 0x0000)
@@ -368,10 +281,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<float>                                 Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllFloats) == 0x000008, "Wrong alignment on OSCManager_GetAllFloats");
-static_assert(sizeof(OSCManager_GetAllFloats) == 0x000020, "Wrong size on OSCManager_GetAllFloats");
-static_assert(offsetof(OSCManager_GetAllFloats, Message) == 0x000000, "Member 'OSCManager_GetAllFloats::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllFloats, Values) == 0x000010, "Member 'OSCManager_GetAllFloats::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllFloats;
 
 // Function OSC.OSCManager.GetAllInt32s
 // 0x0020 (0x0020 - 0x0000)
@@ -381,10 +291,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllInt32s) == 0x000008, "Wrong alignment on OSCManager_GetAllInt32s");
-static_assert(sizeof(OSCManager_GetAllInt32s) == 0x000020, "Wrong size on OSCManager_GetAllInt32s");
-static_assert(offsetof(OSCManager_GetAllInt32s, Message) == 0x000000, "Member 'OSCManager_GetAllInt32s::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllInt32s, Values) == 0x000010, "Member 'OSCManager_GetAllInt32s::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllInt32s;
 
 // Function OSC.OSCManager.GetAllInt64s
 // 0x0020 (0x0020 - 0x0000)
@@ -394,10 +301,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<int64>                                 Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllInt64s) == 0x000008, "Wrong alignment on OSCManager_GetAllInt64s");
-static_assert(sizeof(OSCManager_GetAllInt64s) == 0x000020, "Wrong size on OSCManager_GetAllInt64s");
-static_assert(offsetof(OSCManager_GetAllInt64s, Message) == 0x000000, "Member 'OSCManager_GetAllInt64s::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllInt64s, Values) == 0x000010, "Member 'OSCManager_GetAllInt64s::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllInt64s;
 
 // Function OSC.OSCManager.GetAllStrings
 // 0x0020 (0x0020 - 0x0000)
@@ -407,10 +311,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Values;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetAllStrings) == 0x000008, "Wrong alignment on OSCManager_GetAllStrings");
-static_assert(sizeof(OSCManager_GetAllStrings) == 0x000020, "Wrong size on OSCManager_GetAllStrings");
-static_assert(offsetof(OSCManager_GetAllStrings, Message) == 0x000000, "Member 'OSCManager_GetAllStrings::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetAllStrings, Values) == 0x000010, "Member 'OSCManager_GetAllStrings::Values' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetAllStrings;
 
 // Function OSC.OSCManager.GetBlob
 // 0x0030 (0x0030 - 0x0000)
@@ -424,12 +325,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetBlob) == 0x000008, "Wrong alignment on OSCManager_GetBlob");
-static_assert(sizeof(OSCManager_GetBlob) == 0x000030, "Wrong size on OSCManager_GetBlob");
-static_assert(offsetof(OSCManager_GetBlob, Message) == 0x000000, "Member 'OSCManager_GetBlob::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBlob, Index_0) == 0x000010, "Member 'OSCManager_GetBlob::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBlob, Value) == 0x000018, "Member 'OSCManager_GetBlob::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBlob, ReturnValue) == 0x000028, "Member 'OSCManager_GetBlob::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetBlob;
 
 // Function OSC.OSCManager.GetBool
 // 0x0018 (0x0018 - 0x0000)
@@ -442,12 +338,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0015(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetBool) == 0x000008, "Wrong alignment on OSCManager_GetBool");
-static_assert(sizeof(OSCManager_GetBool) == 0x000018, "Wrong size on OSCManager_GetBool");
-static_assert(offsetof(OSCManager_GetBool, Message) == 0x000000, "Member 'OSCManager_GetBool::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBool, Index_0) == 0x000010, "Member 'OSCManager_GetBool::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBool, Value) == 0x000014, "Member 'OSCManager_GetBool::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBool, ReturnValue) == 0x000015, "Member 'OSCManager_GetBool::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetBool;
 
 // Function OSC.OSCManager.GetBundlesFromBundle
 // 0x0020 (0x0020 - 0x0000)
@@ -457,10 +348,7 @@ public:
 	struct FOSCBundle                             Bundle;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FOSCBundle>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetBundlesFromBundle) == 0x000008, "Wrong alignment on OSCManager_GetBundlesFromBundle");
-static_assert(sizeof(OSCManager_GetBundlesFromBundle) == 0x000020, "Wrong size on OSCManager_GetBundlesFromBundle");
-static_assert(offsetof(OSCManager_GetBundlesFromBundle, Bundle) == 0x000000, "Member 'OSCManager_GetBundlesFromBundle::Bundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetBundlesFromBundle, ReturnValue) == 0x000010, "Member 'OSCManager_GetBundlesFromBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetBundlesFromBundle;
 
 // Function OSC.OSCManager.GetFloat
 // 0x0020 (0x0020 - 0x0000)
@@ -473,12 +361,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetFloat) == 0x000008, "Wrong alignment on OSCManager_GetFloat");
-static_assert(sizeof(OSCManager_GetFloat) == 0x000020, "Wrong size on OSCManager_GetFloat");
-static_assert(offsetof(OSCManager_GetFloat, Message) == 0x000000, "Member 'OSCManager_GetFloat::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetFloat, Index_0) == 0x000010, "Member 'OSCManager_GetFloat::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetFloat, Value) == 0x000014, "Member 'OSCManager_GetFloat::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetFloat, ReturnValue) == 0x000018, "Member 'OSCManager_GetFloat::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetFloat;
 
 // Function OSC.OSCManager.GetInt32
 // 0x0020 (0x0020 - 0x0000)
@@ -491,12 +374,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetInt32) == 0x000008, "Wrong alignment on OSCManager_GetInt32");
-static_assert(sizeof(OSCManager_GetInt32) == 0x000020, "Wrong size on OSCManager_GetInt32");
-static_assert(offsetof(OSCManager_GetInt32, Message) == 0x000000, "Member 'OSCManager_GetInt32::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt32, Index_0) == 0x000010, "Member 'OSCManager_GetInt32::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt32, Value) == 0x000014, "Member 'OSCManager_GetInt32::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt32, ReturnValue) == 0x000018, "Member 'OSCManager_GetInt32::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetInt32;
 
 // Function OSC.OSCManager.GetInt64
 // 0x0028 (0x0028 - 0x0000)
@@ -510,12 +388,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetInt64) == 0x000008, "Wrong alignment on OSCManager_GetInt64");
-static_assert(sizeof(OSCManager_GetInt64) == 0x000028, "Wrong size on OSCManager_GetInt64");
-static_assert(offsetof(OSCManager_GetInt64, Message) == 0x000000, "Member 'OSCManager_GetInt64::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt64, Index_0) == 0x000010, "Member 'OSCManager_GetInt64::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt64, Value) == 0x000018, "Member 'OSCManager_GetInt64::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetInt64, ReturnValue) == 0x000020, "Member 'OSCManager_GetInt64::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetInt64;
 
 // Function OSC.OSCManager.GetMessageFromBundle
 // 0x0028 (0x0028 - 0x0000)
@@ -528,12 +401,7 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOSCMessage                            ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetMessageFromBundle) == 0x000008, "Wrong alignment on OSCManager_GetMessageFromBundle");
-static_assert(sizeof(OSCManager_GetMessageFromBundle) == 0x000028, "Wrong size on OSCManager_GetMessageFromBundle");
-static_assert(offsetof(OSCManager_GetMessageFromBundle, Bundle) == 0x000000, "Member 'OSCManager_GetMessageFromBundle::Bundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetMessageFromBundle, Index_0) == 0x000010, "Member 'OSCManager_GetMessageFromBundle::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetMessageFromBundle, bSucceeded) == 0x000014, "Member 'OSCManager_GetMessageFromBundle::bSucceeded' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetMessageFromBundle, ReturnValue) == 0x000018, "Member 'OSCManager_GetMessageFromBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetMessageFromBundle;
 
 // Function OSC.OSCManager.GetMessagesFromBundle
 // 0x0020 (0x0020 - 0x0000)
@@ -543,10 +411,7 @@ public:
 	struct FOSCBundle                             Bundle;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FOSCMessage>                    ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetMessagesFromBundle) == 0x000008, "Wrong alignment on OSCManager_GetMessagesFromBundle");
-static_assert(sizeof(OSCManager_GetMessagesFromBundle) == 0x000020, "Wrong size on OSCManager_GetMessagesFromBundle");
-static_assert(offsetof(OSCManager_GetMessagesFromBundle, Bundle) == 0x000000, "Member 'OSCManager_GetMessagesFromBundle::Bundle' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetMessagesFromBundle, ReturnValue) == 0x000010, "Member 'OSCManager_GetMessagesFromBundle::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetMessagesFromBundle;
 
 // Function OSC.OSCManager.GetOSCAddressContainer
 // 0x0040 (0x0040 - 0x0000)
@@ -558,11 +423,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCAddressContainer) == 0x000008, "Wrong alignment on OSCManager_GetOSCAddressContainer");
-static_assert(sizeof(OSCManager_GetOSCAddressContainer) == 0x000040, "Wrong size on OSCManager_GetOSCAddressContainer");
-static_assert(offsetof(OSCManager_GetOSCAddressContainer, Address) == 0x000000, "Member 'OSCManager_GetOSCAddressContainer::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressContainer, Index_0) == 0x000028, "Member 'OSCManager_GetOSCAddressContainer::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressContainer, ReturnValue) == 0x000030, "Member 'OSCManager_GetOSCAddressContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCAddressContainer;
 
 // Function OSC.OSCManager.GetOSCAddressContainerPath
 // 0x0038 (0x0038 - 0x0000)
@@ -572,10 +433,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCAddressContainerPath) == 0x000008, "Wrong alignment on OSCManager_GetOSCAddressContainerPath");
-static_assert(sizeof(OSCManager_GetOSCAddressContainerPath) == 0x000038, "Wrong size on OSCManager_GetOSCAddressContainerPath");
-static_assert(offsetof(OSCManager_GetOSCAddressContainerPath, Address) == 0x000000, "Member 'OSCManager_GetOSCAddressContainerPath::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressContainerPath, ReturnValue) == 0x000028, "Member 'OSCManager_GetOSCAddressContainerPath::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCAddressContainerPath;
 
 // Function OSC.OSCManager.GetOSCAddressContainers
 // 0x0038 (0x0038 - 0x0000)
@@ -585,10 +443,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCAddressContainers) == 0x000008, "Wrong alignment on OSCManager_GetOSCAddressContainers");
-static_assert(sizeof(OSCManager_GetOSCAddressContainers) == 0x000038, "Wrong size on OSCManager_GetOSCAddressContainers");
-static_assert(offsetof(OSCManager_GetOSCAddressContainers, Address) == 0x000000, "Member 'OSCManager_GetOSCAddressContainers::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressContainers, ReturnValue) == 0x000028, "Member 'OSCManager_GetOSCAddressContainers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCAddressContainers;
 
 // Function OSC.OSCManager.GetOSCAddressFullPath
 // 0x0038 (0x0038 - 0x0000)
@@ -598,10 +453,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCAddressFullPath) == 0x000008, "Wrong alignment on OSCManager_GetOSCAddressFullPath");
-static_assert(sizeof(OSCManager_GetOSCAddressFullPath) == 0x000038, "Wrong size on OSCManager_GetOSCAddressFullPath");
-static_assert(offsetof(OSCManager_GetOSCAddressFullPath, Address) == 0x000000, "Member 'OSCManager_GetOSCAddressFullPath::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressFullPath, ReturnValue) == 0x000028, "Member 'OSCManager_GetOSCAddressFullPath::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCAddressFullPath;
 
 // Function OSC.OSCManager.GetOSCAddressMethod
 // 0x0038 (0x0038 - 0x0000)
@@ -611,10 +463,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCAddressMethod) == 0x000008, "Wrong alignment on OSCManager_GetOSCAddressMethod");
-static_assert(sizeof(OSCManager_GetOSCAddressMethod) == 0x000038, "Wrong size on OSCManager_GetOSCAddressMethod");
-static_assert(offsetof(OSCManager_GetOSCAddressMethod, Address) == 0x000000, "Member 'OSCManager_GetOSCAddressMethod::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCAddressMethod, ReturnValue) == 0x000028, "Member 'OSCManager_GetOSCAddressMethod::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCAddressMethod;
 
 // Function OSC.OSCManager.GetOSCMessageAddress
 // 0x0038 (0x0038 - 0x0000)
@@ -624,10 +473,7 @@ public:
 	struct FOSCMessage                            Message;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0010(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_GetOSCMessageAddress) == 0x000008, "Wrong alignment on OSCManager_GetOSCMessageAddress");
-static_assert(sizeof(OSCManager_GetOSCMessageAddress) == 0x000038, "Wrong size on OSCManager_GetOSCMessageAddress");
-static_assert(offsetof(OSCManager_GetOSCMessageAddress, Message) == 0x000000, "Member 'OSCManager_GetOSCMessageAddress::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetOSCMessageAddress, ReturnValue) == 0x000010, "Member 'OSCManager_GetOSCMessageAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetOSCMessageAddress;
 
 // Function OSC.OSCManager.GetString
 // 0x0030 (0x0030 - 0x0000)
@@ -641,12 +487,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_GetString) == 0x000008, "Wrong alignment on OSCManager_GetString");
-static_assert(sizeof(OSCManager_GetString) == 0x000030, "Wrong size on OSCManager_GetString");
-static_assert(offsetof(OSCManager_GetString, Message) == 0x000000, "Member 'OSCManager_GetString::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetString, Index_0) == 0x000010, "Member 'OSCManager_GetString::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetString, Value) == 0x000018, "Member 'OSCManager_GetString::Value' has a wrong offset!");
-static_assert(offsetof(OSCManager_GetString, ReturnValue) == 0x000028, "Member 'OSCManager_GetString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_GetString;
 
 // Function OSC.OSCManager.ObjectPathFromOSCAddress
 // 0x0038 (0x0038 - 0x0000)
@@ -656,10 +497,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_ObjectPathFromOSCAddress) == 0x000008, "Wrong alignment on OSCManager_ObjectPathFromOSCAddress");
-static_assert(sizeof(OSCManager_ObjectPathFromOSCAddress) == 0x000038, "Wrong size on OSCManager_ObjectPathFromOSCAddress");
-static_assert(offsetof(OSCManager_ObjectPathFromOSCAddress, Address) == 0x000000, "Member 'OSCManager_ObjectPathFromOSCAddress::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_ObjectPathFromOSCAddress, ReturnValue) == 0x000028, "Member 'OSCManager_ObjectPathFromOSCAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_ObjectPathFromOSCAddress;
 
 // Function OSC.OSCManager.OSCAddressFromObjectPath
 // 0x0030 (0x0030 - 0x0000)
@@ -669,10 +507,7 @@ public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressFromObjectPath) == 0x000008, "Wrong alignment on OSCManager_OSCAddressFromObjectPath");
-static_assert(sizeof(OSCManager_OSCAddressFromObjectPath) == 0x000030, "Wrong size on OSCManager_OSCAddressFromObjectPath");
-static_assert(offsetof(OSCManager_OSCAddressFromObjectPath, Object) == 0x000000, "Member 'OSCManager_OSCAddressFromObjectPath::Object' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressFromObjectPath, ReturnValue) == 0x000008, "Member 'OSCManager_OSCAddressFromObjectPath::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressFromObjectPath;
 
 // Function OSC.OSCManager.OSCAddressFromObjectPathString
 // 0x0038 (0x0038 - 0x0000)
@@ -682,10 +517,7 @@ public:
 	class FString                                 PathName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0010(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressFromObjectPathString) == 0x000008, "Wrong alignment on OSCManager_OSCAddressFromObjectPathString");
-static_assert(sizeof(OSCManager_OSCAddressFromObjectPathString) == 0x000038, "Wrong size on OSCManager_OSCAddressFromObjectPathString");
-static_assert(offsetof(OSCManager_OSCAddressFromObjectPathString, PathName) == 0x000000, "Member 'OSCManager_OSCAddressFromObjectPathString::PathName' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressFromObjectPathString, ReturnValue) == 0x000010, "Member 'OSCManager_OSCAddressFromObjectPathString::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressFromObjectPathString;
 
 // Function OSC.OSCManager.OSCAddressIsValidPath
 // 0x0030 (0x0030 - 0x0000)
@@ -696,10 +528,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_OSCAddressIsValidPath) == 0x000008, "Wrong alignment on OSCManager_OSCAddressIsValidPath");
-static_assert(sizeof(OSCManager_OSCAddressIsValidPath) == 0x000030, "Wrong size on OSCManager_OSCAddressIsValidPath");
-static_assert(offsetof(OSCManager_OSCAddressIsValidPath, Address) == 0x000000, "Member 'OSCManager_OSCAddressIsValidPath::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressIsValidPath, ReturnValue) == 0x000028, "Member 'OSCManager_OSCAddressIsValidPath::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressIsValidPath;
 
 // Function OSC.OSCManager.OSCAddressIsValidPattern
 // 0x0030 (0x0030 - 0x0000)
@@ -710,10 +539,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_OSCAddressIsValidPattern) == 0x000008, "Wrong alignment on OSCManager_OSCAddressIsValidPattern");
-static_assert(sizeof(OSCManager_OSCAddressIsValidPattern) == 0x000030, "Wrong size on OSCManager_OSCAddressIsValidPattern");
-static_assert(offsetof(OSCManager_OSCAddressIsValidPattern, Address) == 0x000000, "Member 'OSCManager_OSCAddressIsValidPattern::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressIsValidPattern, ReturnValue) == 0x000028, "Member 'OSCManager_OSCAddressIsValidPattern::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressIsValidPattern;
 
 // Function OSC.OSCManager.OSCAddressPathMatchesPattern
 // 0x0058 (0x0058 - 0x0000)
@@ -725,11 +551,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCManager_OSCAddressPathMatchesPattern) == 0x000008, "Wrong alignment on OSCManager_OSCAddressPathMatchesPattern");
-static_assert(sizeof(OSCManager_OSCAddressPathMatchesPattern) == 0x000058, "Wrong size on OSCManager_OSCAddressPathMatchesPattern");
-static_assert(offsetof(OSCManager_OSCAddressPathMatchesPattern, Pattern) == 0x000000, "Member 'OSCManager_OSCAddressPathMatchesPattern::Pattern' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPathMatchesPattern, Path) == 0x000028, "Member 'OSCManager_OSCAddressPathMatchesPattern::Path' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPathMatchesPattern, ReturnValue) == 0x000050, "Member 'OSCManager_OSCAddressPathMatchesPattern::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressPathMatchesPattern;
 
 // Function OSC.OSCManager.OSCAddressPopContainer
 // 0x0038 (0x0038 - 0x0000)
@@ -739,10 +561,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0000(0x0028)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressPopContainer) == 0x000008, "Wrong alignment on OSCManager_OSCAddressPopContainer");
-static_assert(sizeof(OSCManager_OSCAddressPopContainer) == 0x000038, "Wrong size on OSCManager_OSCAddressPopContainer");
-static_assert(offsetof(OSCManager_OSCAddressPopContainer, Address) == 0x000000, "Member 'OSCManager_OSCAddressPopContainer::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPopContainer, ReturnValue) == 0x000028, "Member 'OSCManager_OSCAddressPopContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressPopContainer;
 
 // Function OSC.OSCManager.OSCAddressPopContainers
 // 0x0040 (0x0040 - 0x0000)
@@ -754,11 +573,7 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressPopContainers) == 0x000008, "Wrong alignment on OSCManager_OSCAddressPopContainers");
-static_assert(sizeof(OSCManager_OSCAddressPopContainers) == 0x000040, "Wrong size on OSCManager_OSCAddressPopContainers");
-static_assert(offsetof(OSCManager_OSCAddressPopContainers, Address) == 0x000000, "Member 'OSCManager_OSCAddressPopContainers::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPopContainers, NumContainers) == 0x000028, "Member 'OSCManager_OSCAddressPopContainers::NumContainers' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPopContainers, ReturnValue) == 0x000030, "Member 'OSCManager_OSCAddressPopContainers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressPopContainers;
 
 // Function OSC.OSCManager.OSCAddressPushContainer
 // 0x0060 (0x0060 - 0x0000)
@@ -769,11 +584,7 @@ public:
 	class FString                                 Container;                                         // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0038(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressPushContainer) == 0x000008, "Wrong alignment on OSCManager_OSCAddressPushContainer");
-static_assert(sizeof(OSCManager_OSCAddressPushContainer) == 0x000060, "Wrong size on OSCManager_OSCAddressPushContainer");
-static_assert(offsetof(OSCManager_OSCAddressPushContainer, Address) == 0x000000, "Member 'OSCManager_OSCAddressPushContainer::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPushContainer, Container) == 0x000028, "Member 'OSCManager_OSCAddressPushContainer::Container' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPushContainer, ReturnValue) == 0x000038, "Member 'OSCManager_OSCAddressPushContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressPushContainer;
 
 // Function OSC.OSCManager.OSCAddressPushContainers
 // 0x0060 (0x0060 - 0x0000)
@@ -784,11 +595,7 @@ public:
 	TArray<class FString>                         Containers;                                        // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0038(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressPushContainers) == 0x000008, "Wrong alignment on OSCManager_OSCAddressPushContainers");
-static_assert(sizeof(OSCManager_OSCAddressPushContainers) == 0x000060, "Wrong size on OSCManager_OSCAddressPushContainers");
-static_assert(offsetof(OSCManager_OSCAddressPushContainers, Address) == 0x000000, "Member 'OSCManager_OSCAddressPushContainers::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPushContainers, Containers) == 0x000028, "Member 'OSCManager_OSCAddressPushContainers::Containers' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressPushContainers, ReturnValue) == 0x000038, "Member 'OSCManager_OSCAddressPushContainers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressPushContainers;
 
 // Function OSC.OSCManager.OSCAddressRemoveContainers
 // 0x0058 (0x0058 - 0x0000)
@@ -800,12 +607,7 @@ public:
 	int32                                         Count;                                             // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0030(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_OSCAddressRemoveContainers) == 0x000008, "Wrong alignment on OSCManager_OSCAddressRemoveContainers");
-static_assert(sizeof(OSCManager_OSCAddressRemoveContainers) == 0x000058, "Wrong size on OSCManager_OSCAddressRemoveContainers");
-static_assert(offsetof(OSCManager_OSCAddressRemoveContainers, Address) == 0x000000, "Member 'OSCManager_OSCAddressRemoveContainers::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressRemoveContainers, Index_0) == 0x000028, "Member 'OSCManager_OSCAddressRemoveContainers::Index_0' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressRemoveContainers, Count) == 0x00002C, "Member 'OSCManager_OSCAddressRemoveContainers::Count' has a wrong offset!");
-static_assert(offsetof(OSCManager_OSCAddressRemoveContainers, ReturnValue) == 0x000030, "Member 'OSCManager_OSCAddressRemoveContainers::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_OSCAddressRemoveContainers;
 
 // Function OSC.OSCManager.SetOSCAddressMethod
 // 0x0060 (0x0060 - 0x0000)
@@ -816,11 +618,7 @@ public:
 	class FString                                 Method;                                            // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCAddress                            ReturnValue;                                       // 0x0038(0x0028)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_SetOSCAddressMethod) == 0x000008, "Wrong alignment on OSCManager_SetOSCAddressMethod");
-static_assert(sizeof(OSCManager_SetOSCAddressMethod) == 0x000060, "Wrong size on OSCManager_SetOSCAddressMethod");
-static_assert(offsetof(OSCManager_SetOSCAddressMethod, Address) == 0x000000, "Member 'OSCManager_SetOSCAddressMethod::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_SetOSCAddressMethod, Method) == 0x000028, "Member 'OSCManager_SetOSCAddressMethod::Method' has a wrong offset!");
-static_assert(offsetof(OSCManager_SetOSCAddressMethod, ReturnValue) == 0x000038, "Member 'OSCManager_SetOSCAddressMethod::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_SetOSCAddressMethod;
 
 // Function OSC.OSCManager.SetOSCMessageAddress
 // 0x0048 (0x0048 - 0x0000)
@@ -831,11 +629,7 @@ public:
 	struct FOSCAddress                            Address;                                           // 0x0010(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FOSCMessage                            ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCManager_SetOSCMessageAddress) == 0x000008, "Wrong alignment on OSCManager_SetOSCMessageAddress");
-static_assert(sizeof(OSCManager_SetOSCMessageAddress) == 0x000048, "Wrong size on OSCManager_SetOSCMessageAddress");
-static_assert(offsetof(OSCManager_SetOSCMessageAddress, Message) == 0x000000, "Member 'OSCManager_SetOSCMessageAddress::Message' has a wrong offset!");
-static_assert(offsetof(OSCManager_SetOSCMessageAddress, Address) == 0x000010, "Member 'OSCManager_SetOSCMessageAddress::Address' has a wrong offset!");
-static_assert(offsetof(OSCManager_SetOSCMessageAddress, ReturnValue) == 0x000038, "Member 'OSCManager_SetOSCMessageAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCManager_SetOSCMessageAddress;
 
 // Function OSC.OSCServer.AddAllowlistedClient
 // 0x0010 (0x0010 - 0x0000)
@@ -844,9 +638,7 @@ struct OSCServer_AddAllowlistedClient final
 public:
 	class FString                                 IPAddress;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_AddAllowlistedClient) == 0x000008, "Wrong alignment on OSCServer_AddAllowlistedClient");
-static_assert(sizeof(OSCServer_AddAllowlistedClient) == 0x000010, "Wrong size on OSCServer_AddAllowlistedClient");
-static_assert(offsetof(OSCServer_AddAllowlistedClient, IPAddress) == 0x000000, "Member 'OSCServer_AddAllowlistedClient::IPAddress' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_AddAllowlistedClient;
 
 // Function OSC.OSCServer.BindEventToOnOSCAddressPatternMatchesPath
 // 0x0040 (0x0040 - 0x0000)
@@ -857,10 +649,7 @@ public:
 	TDelegate<void(const struct FOSCAddress& AddressPattern, const struct FOSCMessage& Message, const class FString& IPAddress, int32 Port)> Event; // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCServer_BindEventToOnOSCAddressPatternMatchesPath) == 0x000008, "Wrong alignment on OSCServer_BindEventToOnOSCAddressPatternMatchesPath");
-static_assert(sizeof(OSCServer_BindEventToOnOSCAddressPatternMatchesPath) == 0x000040, "Wrong size on OSCServer_BindEventToOnOSCAddressPatternMatchesPath");
-static_assert(offsetof(OSCServer_BindEventToOnOSCAddressPatternMatchesPath, OSCAddressPattern) == 0x000000, "Member 'OSCServer_BindEventToOnOSCAddressPatternMatchesPath::OSCAddressPattern' has a wrong offset!");
-static_assert(offsetof(OSCServer_BindEventToOnOSCAddressPatternMatchesPath, Event) == 0x000028, "Member 'OSCServer_BindEventToOnOSCAddressPatternMatchesPath::Event' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_BindEventToOnOSCAddressPatternMatchesPath;
 
 // Function OSC.OSCServer.RemoveAllowlistedClient
 // 0x0010 (0x0010 - 0x0000)
@@ -869,9 +658,7 @@ struct OSCServer_RemoveAllowlistedClient final
 public:
 	class FString                                 IPAddress;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_RemoveAllowlistedClient) == 0x000008, "Wrong alignment on OSCServer_RemoveAllowlistedClient");
-static_assert(sizeof(OSCServer_RemoveAllowlistedClient) == 0x000010, "Wrong size on OSCServer_RemoveAllowlistedClient");
-static_assert(offsetof(OSCServer_RemoveAllowlistedClient, IPAddress) == 0x000000, "Member 'OSCServer_RemoveAllowlistedClient::IPAddress' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_RemoveAllowlistedClient;
 
 // Function OSC.OSCServer.SetAddress
 // 0x0018 (0x0018 - 0x0000)
@@ -883,11 +670,7 @@ public:
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCServer_SetAddress) == 0x000008, "Wrong alignment on OSCServer_SetAddress");
-static_assert(sizeof(OSCServer_SetAddress) == 0x000018, "Wrong size on OSCServer_SetAddress");
-static_assert(offsetof(OSCServer_SetAddress, ReceiveIPAddress) == 0x000000, "Member 'OSCServer_SetAddress::ReceiveIPAddress' has a wrong offset!");
-static_assert(offsetof(OSCServer_SetAddress, Port) == 0x000010, "Member 'OSCServer_SetAddress::Port' has a wrong offset!");
-static_assert(offsetof(OSCServer_SetAddress, ReturnValue) == 0x000014, "Member 'OSCServer_SetAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_SetAddress;
 
 // Function OSC.OSCServer.SetAllowlistClientsEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -896,9 +679,7 @@ struct OSCServer_SetAllowlistClientsEnabled final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_SetAllowlistClientsEnabled) == 0x000001, "Wrong alignment on OSCServer_SetAllowlistClientsEnabled");
-static_assert(sizeof(OSCServer_SetAllowlistClientsEnabled) == 0x000001, "Wrong size on OSCServer_SetAllowlistClientsEnabled");
-static_assert(offsetof(OSCServer_SetAllowlistClientsEnabled, bEnabled) == 0x000000, "Member 'OSCServer_SetAllowlistClientsEnabled::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_SetAllowlistClientsEnabled;
 
 // Function OSC.OSCServer.SetMulticastLoopback
 // 0x0001 (0x0001 - 0x0000)
@@ -907,9 +688,7 @@ struct OSCServer_SetMulticastLoopback final
 public:
 	bool                                          bMulticastLoopback;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_SetMulticastLoopback) == 0x000001, "Wrong alignment on OSCServer_SetMulticastLoopback");
-static_assert(sizeof(OSCServer_SetMulticastLoopback) == 0x000001, "Wrong size on OSCServer_SetMulticastLoopback");
-static_assert(offsetof(OSCServer_SetMulticastLoopback, bMulticastLoopback) == 0x000000, "Member 'OSCServer_SetMulticastLoopback::bMulticastLoopback' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_SetMulticastLoopback;
 
 // Function OSC.OSCServer.UnbindAllEventsFromOnOSCAddressPatternMatchesPath
 // 0x0028 (0x0028 - 0x0000)
@@ -918,9 +697,7 @@ struct OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath final
 public:
 	struct FOSCAddress                            OSCAddressPattern;                                 // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath) == 0x000008, "Wrong alignment on OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath");
-static_assert(sizeof(OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath) == 0x000028, "Wrong size on OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath");
-static_assert(offsetof(OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath, OSCAddressPattern) == 0x000000, "Member 'OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath::OSCAddressPattern' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_UnbindAllEventsFromOnOSCAddressPatternMatchesPath;
 
 // Function OSC.OSCServer.UnbindEventFromOnOSCAddressPatternMatchesPath
 // 0x0040 (0x0040 - 0x0000)
@@ -931,10 +708,7 @@ public:
 	TDelegate<void(const struct FOSCAddress& AddressPattern, const struct FOSCMessage& Message, const class FString& IPAddress, int32 Port)> Event; // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath) == 0x000008, "Wrong alignment on OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath");
-static_assert(sizeof(OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath) == 0x000040, "Wrong size on OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath");
-static_assert(offsetof(OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath, OSCAddressPattern) == 0x000000, "Member 'OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath::OSCAddressPattern' has a wrong offset!");
-static_assert(offsetof(OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath, Event) == 0x000028, "Member 'OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath::Event' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_UnbindEventFromOnOSCAddressPatternMatchesPath;
 
 // Function OSC.OSCServer.GetAllowlistedClients
 // 0x0050 (0x0050 - 0x0000)
@@ -943,9 +717,7 @@ struct OSCServer_GetAllowlistedClients final
 public:
 	TSet<class FString>                           ReturnValue;                                       // 0x0000(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_GetAllowlistedClients) == 0x000008, "Wrong alignment on OSCServer_GetAllowlistedClients");
-static_assert(sizeof(OSCServer_GetAllowlistedClients) == 0x000050, "Wrong size on OSCServer_GetAllowlistedClients");
-static_assert(offsetof(OSCServer_GetAllowlistedClients, ReturnValue) == 0x000000, "Member 'OSCServer_GetAllowlistedClients::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_GetAllowlistedClients;
 
 // Function OSC.OSCServer.GetBoundOSCAddressPatterns
 // 0x0010 (0x0010 - 0x0000)
@@ -954,9 +726,7 @@ struct OSCServer_GetBoundOSCAddressPatterns final
 public:
 	TArray<struct FOSCAddress>                    ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_GetBoundOSCAddressPatterns) == 0x000008, "Wrong alignment on OSCServer_GetBoundOSCAddressPatterns");
-static_assert(sizeof(OSCServer_GetBoundOSCAddressPatterns) == 0x000010, "Wrong size on OSCServer_GetBoundOSCAddressPatterns");
-static_assert(offsetof(OSCServer_GetBoundOSCAddressPatterns, ReturnValue) == 0x000000, "Member 'OSCServer_GetBoundOSCAddressPatterns::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_GetBoundOSCAddressPatterns;
 
 // Function OSC.OSCServer.GetIpAddress
 // 0x0018 (0x0018 - 0x0000)
@@ -967,10 +737,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_GetIpAddress) == 0x000008, "Wrong alignment on OSCServer_GetIpAddress");
-static_assert(sizeof(OSCServer_GetIpAddress) == 0x000018, "Wrong size on OSCServer_GetIpAddress");
-static_assert(offsetof(OSCServer_GetIpAddress, bIncludePort) == 0x000000, "Member 'OSCServer_GetIpAddress::bIncludePort' has a wrong offset!");
-static_assert(offsetof(OSCServer_GetIpAddress, ReturnValue) == 0x000008, "Member 'OSCServer_GetIpAddress::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_GetIpAddress;
 
 // Function OSC.OSCServer.GetMulticastLoopback
 // 0x0001 (0x0001 - 0x0000)
@@ -979,9 +746,7 @@ struct OSCServer_GetMulticastLoopback final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_GetMulticastLoopback) == 0x000001, "Wrong alignment on OSCServer_GetMulticastLoopback");
-static_assert(sizeof(OSCServer_GetMulticastLoopback) == 0x000001, "Wrong size on OSCServer_GetMulticastLoopback");
-static_assert(offsetof(OSCServer_GetMulticastLoopback, ReturnValue) == 0x000000, "Member 'OSCServer_GetMulticastLoopback::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_GetMulticastLoopback;
 
 // Function OSC.OSCServer.GetPort
 // 0x0004 (0x0004 - 0x0000)
@@ -990,9 +755,7 @@ struct OSCServer_GetPort final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_GetPort) == 0x000004, "Wrong alignment on OSCServer_GetPort");
-static_assert(sizeof(OSCServer_GetPort) == 0x000004, "Wrong size on OSCServer_GetPort");
-static_assert(offsetof(OSCServer_GetPort, ReturnValue) == 0x000000, "Member 'OSCServer_GetPort::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_GetPort;
 
 // Function OSC.OSCServer.IsActive
 // 0x0001 (0x0001 - 0x0000)
@@ -1001,9 +764,7 @@ struct OSCServer_IsActive final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(OSCServer_IsActive) == 0x000001, "Wrong alignment on OSCServer_IsActive");
-static_assert(sizeof(OSCServer_IsActive) == 0x000001, "Wrong size on OSCServer_IsActive");
-static_assert(offsetof(OSCServer_IsActive, ReturnValue) == 0x000000, "Member 'OSCServer_IsActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_OSCServer_IsActive;
 
 }
 

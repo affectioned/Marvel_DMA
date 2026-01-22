@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_Fight.PyWidget_League_Fight
-// 0x0068 (0x0628 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_League_Fight final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Defense_Color;                                     // 0x05BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Attack_Color;                                      // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Current_Color;                                     // 0x05DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Empty_Color;                                       // 0x05EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AnimDelayTime;                                     // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLoading;                                         // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_601[0x3];                                      // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           FightLineColorMRC;                                 // 0x0604(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FightLineColorClash;                               // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Defense_Color;                                     // 0x05C4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Attack_Color;                                      // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Current_Color;                                     // 0x05E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Empty_Color;                                       // 0x05F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AnimDelayTime;                                     // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLoading;                                         // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_609[0x3];                                      // 0x0609(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           FightLineColorMRC;                                 // 0x060C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FightLineColorClash;                               // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -39,23 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_Fight">();
+		STATIC_CLASS_IMPL("PyWidget_League_Fight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_Fight")
 	}
 	static class UPyWidget_League_Fight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_Fight>();
 	}
 };
-static_assert(alignof(UPyWidget_League_Fight) == 0x000008, "Wrong alignment on UPyWidget_League_Fight");
-static_assert(sizeof(UPyWidget_League_Fight) == 0x000628, "Wrong size on UPyWidget_League_Fight");
-static_assert(offsetof(UPyWidget_League_Fight, Defense_Color) == 0x0005BC, "Member 'UPyWidget_League_Fight::Defense_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, Attack_Color) == 0x0005CC, "Member 'UPyWidget_League_Fight::Attack_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, Current_Color) == 0x0005DC, "Member 'UPyWidget_League_Fight::Current_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, Empty_Color) == 0x0005EC, "Member 'UPyWidget_League_Fight::Empty_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, AnimDelayTime) == 0x0005FC, "Member 'UPyWidget_League_Fight::AnimDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, IsLoading) == 0x000600, "Member 'UPyWidget_League_Fight::IsLoading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, FightLineColorMRC) == 0x000604, "Member 'UPyWidget_League_Fight::FightLineColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_Fight, FightLineColorClash) == 0x000614, "Member 'UPyWidget_League_Fight::FightLineColorClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_Fight;
 
 }
 

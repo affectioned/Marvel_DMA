@@ -21,9 +21,7 @@ struct PyWidgetListTitleBtn_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidgetListTitleBtn_PreConstruct) == 0x000001, "Wrong alignment on PyWidgetListTitleBtn_PreConstruct");
-static_assert(sizeof(PyWidgetListTitleBtn_PreConstruct) == 0x000001, "Wrong size on PyWidgetListTitleBtn_PreConstruct");
-static_assert(offsetof(PyWidgetListTitleBtn_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidgetListTitleBtn_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidgetListTitleBtn_PreConstruct;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattleChess_Settlement_HeroHead.PyWidget_BattleChess_Settlement_HeroHead
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_BattleChess_Settlement_HeroHead final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattleChess_Settlement_HeroHead">();
+		STATIC_CLASS_IMPL("PyWidget_BattleChess_Settlement_HeroHead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattleChess_Settlement_HeroHead")
 	}
 	static class UPyWidget_BattleChess_Settlement_HeroHead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattleChess_Settlement_HeroHead>();
 	}
 };
-static_assert(alignof(UPyWidget_BattleChess_Settlement_HeroHead) == 0x000008, "Wrong alignment on UPyWidget_BattleChess_Settlement_HeroHead");
-static_assert(sizeof(UPyWidget_BattleChess_Settlement_HeroHead) == 0x0005C0, "Wrong size on UPyWidget_BattleChess_Settlement_HeroHead");
+DUMPER7_ASSERTS_UPyWidget_BattleChess_Settlement_HeroHead;
 
 }
 

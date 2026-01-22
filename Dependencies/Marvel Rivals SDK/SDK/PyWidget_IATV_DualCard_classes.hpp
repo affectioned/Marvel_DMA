@@ -25,38 +25,42 @@ class UEntry_IATV_DualCard final : public UMarvelMVVMListEntryObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Entry_IATV_DualCard">();
+		STATIC_CLASS_IMPL("Entry_IATV_DualCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Entry_IATV_DualCard")
 	}
 	static class UEntry_IATV_DualCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEntry_IATV_DualCard>();
 	}
 };
-static_assert(alignof(UEntry_IATV_DualCard) == 0x000008, "Wrong alignment on UEntry_IATV_DualCard");
-static_assert(sizeof(UEntry_IATV_DualCard) == 0x000030, "Wrong size on UEntry_IATV_DualCard");
+DUMPER7_ASSERTS_UEntry_IATV_DualCard;
 
 // PythonClass PyWidget_IATV_DualCard.PyWidget_IATV_DualCard
-// 0x0028 (0x0618 - 0x05F0)
+// 0x0028 (0x0620 - 0x05F8)
 class UPyWidget_IATV_DualCard final : public UPyMarvelListEntryWidget
 {
 public:
-	struct FSlateColor                            ColorLeading;                                      // 0x05F0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ColorTrailing;                                     // 0x0604(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorLeading;                                      // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ColorTrailing;                                     // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_IATV_DualCard">();
+		STATIC_CLASS_IMPL("PyWidget_IATV_DualCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_IATV_DualCard")
 	}
 	static class UPyWidget_IATV_DualCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_IATV_DualCard>();
 	}
 };
-static_assert(alignof(UPyWidget_IATV_DualCard) == 0x000008, "Wrong alignment on UPyWidget_IATV_DualCard");
-static_assert(sizeof(UPyWidget_IATV_DualCard) == 0x000618, "Wrong size on UPyWidget_IATV_DualCard");
-static_assert(offsetof(UPyWidget_IATV_DualCard, ColorLeading) == 0x0005F0, "Member 'UPyWidget_IATV_DualCard::ColorLeading' has a wrong offset!");
-static_assert(offsetof(UPyWidget_IATV_DualCard, ColorTrailing) == 0x000604, "Member 'UPyWidget_IATV_DualCard::ColorTrailing' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_IATV_DualCard;
 
 }
 

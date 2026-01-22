@@ -24,12 +24,7 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle) == 0x000008, "Wrong alignment on WBP_ShortCut_Info_Button_C_SetButtonDotStyle");
-static_assert(sizeof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle) == 0x000018, "Wrong size on WBP_ShortCut_Info_Button_C_SetButtonDotStyle");
-static_assert(offsetof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle, Image) == 0x000000, "Member 'WBP_ShortCut_Info_Button_C_SetButtonDotStyle::Image' has a wrong offset!");
-static_assert(offsetof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_ShortCut_Info_Button_C_SetButtonDotStyle::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'WBP_ShortCut_Info_Button_C_SetButtonDotStyle::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_ShortCut_Info_Button_C_SetButtonDotStyle, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000014, "Member 'WBP_ShortCut_Info_Button_C_SetButtonDotStyle::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_ShortCut_Info_Button_C_SetButtonDotStyle;
 
 }
 

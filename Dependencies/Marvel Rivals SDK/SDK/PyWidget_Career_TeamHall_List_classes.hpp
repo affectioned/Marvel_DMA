@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyWidget_CareerCustomizePanelBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_List
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x05D8 - 0x05D8)
 class UPyWidget_Career_TeamHall_List final : public UPyWidget_CareerCustomizeItemList
 {
 public:
@@ -27,22 +27,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_TeamHall_List">();
+		STATIC_CLASS_IMPL("PyWidget_Career_TeamHall_List")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_TeamHall_List")
 	}
 	static class UPyWidget_Career_TeamHall_List* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_TeamHall_List>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_TeamHall_List) == 0x000008, "Wrong alignment on UPyWidget_Career_TeamHall_List");
-static_assert(sizeof(UPyWidget_Career_TeamHall_List) == 0x0005D0, "Wrong size on UPyWidget_Career_TeamHall_List");
+DUMPER7_ASSERTS_UPyWidget_Career_TeamHall_List;
 
 // PythonClass PyWidget_Career_TeamHall_List.PyWidget_Career_TeamHall_Item
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_Career_TeamHall_Item final : public UPyWidget_CareerCustomizeItemBase
 {
 public:
-	bool                                          ShowName;                                          // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowName;                                          // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetItemData(const class FString& ItemID, EItemType ItemType, int32 ItemNum, int32 Multiple);
@@ -55,16 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_TeamHall_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Career_TeamHall_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_TeamHall_Item")
 	}
 	static class UPyWidget_Career_TeamHall_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_TeamHall_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_TeamHall_Item) == 0x000010, "Wrong alignment on UPyWidget_Career_TeamHall_Item");
-static_assert(sizeof(UPyWidget_Career_TeamHall_Item) == 0x0008C0, "Wrong size on UPyWidget_Career_TeamHall_Item");
-static_assert(offsetof(UPyWidget_Career_TeamHall_Item, ShowName) == 0x0008B8, "Member 'UPyWidget_Career_TeamHall_Item::ShowName' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Career_TeamHall_Item;
 
 }
 

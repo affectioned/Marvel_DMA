@@ -18,15 +18,13 @@ namespace SDK::Params
 {
 
 // PythonFunction PyAbility_102541.PyProjectile_10254101.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10254101_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10254101_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_10254101_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_10254101_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_10254101_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_10254101_K2_OnProcessHit, ImpactResult) == 0x000000, "Member 'PyProjectile_10254101_K2_OnProcessHit::ImpactResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10254101_K2_OnProcessHit;
 
 // PythonFunction PyAbility_102541.PyAbility_102541.HandleAnimSocketInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -37,10 +35,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0010(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_102541_HandleAnimSocketInfo) == 0x000010, "Wrong alignment on PyAbility_102541_HandleAnimSocketInfo");
-static_assert(sizeof(PyAbility_102541_HandleAnimSocketInfo) == 0x0000B0, "Wrong size on PyAbility_102541_HandleAnimSocketInfo");
-static_assert(offsetof(PyAbility_102541_HandleAnimSocketInfo, SocketId) == 0x000000, "Member 'PyAbility_102541_HandleAnimSocketInfo::SocketId' has a wrong offset!");
-static_assert(offsetof(PyAbility_102541_HandleAnimSocketInfo, SocketInfo) == 0x000010, "Member 'PyAbility_102541_HandleAnimSocketInfo::SocketInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_102541_HandleAnimSocketInfo;
 
 }
 

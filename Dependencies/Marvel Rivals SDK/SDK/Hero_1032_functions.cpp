@@ -278,6 +278,66 @@ void ASummoned_V2_10325101::SquirrelTurnInternal(const struct FHitResult& Hit, c
 }
 
 
+// Function Hero_1032.SquirrelGirlChildActor.DeactivatePhysicalAnimation
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bNeedPhysics                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             InBoneName1                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             InBoneName2                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASquirrelGirlChildActor::DeactivatePhysicalAnimation(bool bNeedPhysics, class FName InBoneName1, class FName InBoneName2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SquirrelGirlChildActor", "DeactivatePhysicalAnimation");
+
+	Params::SquirrelGirlChildActor_DeactivatePhysicalAnimation Parms{};
+
+	Parms.bNeedPhysics = bNeedPhysics;
+	Parms.InBoneName1 = InBoneName1;
+	Parms.InBoneName2 = InBoneName2;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1032.SquirrelGirlChildActor.SetPhysicalAnimation
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FName                             InBoneName1                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InPhysicsBlendWeight1                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             InBoneName2                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PhysicsBlendWeight2_0                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ASquirrelGirlChildActor::SetPhysicalAnimation(class FName InBoneName1, float InPhysicsBlendWeight1, class FName InBoneName2, float PhysicsBlendWeight2_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SquirrelGirlChildActor", "SetPhysicalAnimation");
+
+	Params::SquirrelGirlChildActor_SetPhysicalAnimation Parms{};
+
+	Parms.InBoneName1 = InBoneName1;
+	Parms.InPhysicsBlendWeight1 = InPhysicsBlendWeight1;
+	Parms.InBoneName2 = InBoneName2;
+	Parms.PhysicsBlendWeight2_0 = PhysicsBlendWeight2_0;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1032.Ability_103251.OnWaitTaskCancel_ThreadSafe
 // (Final, Native, Protected)
 // Parameters:
@@ -651,66 +711,6 @@ void ASquirrelGirlCharacter::SetSquirrelGirlJump(bool NewState)
 	Params::SquirrelGirlCharacter_SetSquirrelGirlJump Parms{};
 
 	Parms.NewState = NewState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1032.SquirrelGirlChildActor.DeactivatePhysicalAnimation
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bNeedPhysics                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             InBoneName1                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             InBoneName2                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASquirrelGirlChildActor::DeactivatePhysicalAnimation(bool bNeedPhysics, class FName InBoneName1, class FName InBoneName2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquirrelGirlChildActor", "DeactivatePhysicalAnimation");
-
-	Params::SquirrelGirlChildActor_DeactivatePhysicalAnimation Parms{};
-
-	Parms.bNeedPhysics = bNeedPhysics;
-	Parms.InBoneName1 = InBoneName1;
-	Parms.InBoneName2 = InBoneName2;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1032.SquirrelGirlChildActor.SetPhysicalAnimation
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class FName                             InBoneName1                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   InPhysicsBlendWeight1                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             InBoneName2                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PhysicsBlendWeight2_0                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ASquirrelGirlChildActor::SetPhysicalAnimation(class FName InBoneName1, float InPhysicsBlendWeight1, class FName InBoneName2, float PhysicsBlendWeight2_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquirrelGirlChildActor", "SetPhysicalAnimation");
-
-	Params::SquirrelGirlChildActor_SetPhysicalAnimation Parms{};
-
-	Parms.InBoneName1 = InBoneName1;
-	Parms.InPhysicsBlendWeight1 = InPhysicsBlendWeight1;
-	Parms.InBoneName2 = InBoneName2;
-	Parms.PhysicsBlendWeight2_0 = PhysicsBlendWeight2_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

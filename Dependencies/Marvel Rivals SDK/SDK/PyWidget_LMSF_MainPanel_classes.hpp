@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LMSF_MainPanel.PyWidget_LMSF_MainPanel
-// 0x0060 (0x0658 - 0x05F8)
+// 0x0060 (0x0660 - 0x0600)
 class UPyWidget_LMSF_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FLinearColor                           BgColor2_CustomRoom;                               // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgColor2_MRC;                                      // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgColor2_Clash;                                    // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgColor3_CustomRoom;                               // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgColor3_MRC;                                      // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BgColor3_Clash;                                    // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor2_CustomRoom;                               // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor2_MRC;                                      // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor2_Clash;                                    // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor3_CustomRoom;                               // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor3_MRC;                                      // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BgColor3_Clash;                                    // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LMSF_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LMSF_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LMSF_MainPanel")
 	}
 	static class UPyWidget_LMSF_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LMSF_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LMSF_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_LMSF_MainPanel");
-static_assert(sizeof(UPyWidget_LMSF_MainPanel) == 0x000658, "Wrong size on UPyWidget_LMSF_MainPanel");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor2_CustomRoom) == 0x0005F8, "Member 'UPyWidget_LMSF_MainPanel::BgColor2_CustomRoom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor2_MRC) == 0x000608, "Member 'UPyWidget_LMSF_MainPanel::BgColor2_MRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor2_Clash) == 0x000618, "Member 'UPyWidget_LMSF_MainPanel::BgColor2_Clash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor3_CustomRoom) == 0x000628, "Member 'UPyWidget_LMSF_MainPanel::BgColor3_CustomRoom' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor3_MRC) == 0x000638, "Member 'UPyWidget_LMSF_MainPanel::BgColor3_MRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LMSF_MainPanel, BgColor3_Clash) == 0x000648, "Member 'UPyWidget_LMSF_MainPanel::BgColor3_Clash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LMSF_MainPanel;
 
 }
 

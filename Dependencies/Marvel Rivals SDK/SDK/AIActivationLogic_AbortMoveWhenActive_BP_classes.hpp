@@ -23,15 +23,18 @@ class UAIActivationLogic_AbortMoveWhenActive_BP_C final : public UPyAIAbilityAct
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIActivationLogic_AbortMoveWhenActive_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIActivationLogic_AbortMoveWhenActive_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIActivationLogic_AbortMoveWhenActive_BP_C")
 	}
 	static class UAIActivationLogic_AbortMoveWhenActive_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIActivationLogic_AbortMoveWhenActive_BP_C>();
 	}
 };
-static_assert(alignof(UAIActivationLogic_AbortMoveWhenActive_BP_C) == 0x000008, "Wrong alignment on UAIActivationLogic_AbortMoveWhenActive_BP_C");
-static_assert(sizeof(UAIActivationLogic_AbortMoveWhenActive_BP_C) == 0x000038, "Wrong size on UAIActivationLogic_AbortMoveWhenActive_BP_C");
+DUMPER7_ASSERTS_UAIActivationLogic_AbortMoveWhenActive_BP_C;
 
 }
 

@@ -24,18 +24,21 @@ class UPyWidget_Gather_Friend_ItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gather_Friend_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_Gather_Friend_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gather_Friend_ItemData")
 	}
 	static class UPyWidget_Gather_Friend_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gather_Friend_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_Gather_Friend_ItemData) == 0x000008, "Wrong alignment on UPyWidget_Gather_Friend_ItemData");
-static_assert(sizeof(UPyWidget_Gather_Friend_ItemData) == 0x000030, "Wrong size on UPyWidget_Gather_Friend_ItemData");
+DUMPER7_ASSERTS_UPyWidget_Gather_Friend_ItemData;
 
 // PythonClass PyWidget_GatherFriendsModular_V3.PyWidget_GatherFriendsModular_V3
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_GatherFriendsModular_V3 final : public UWidget_ListEntry
 {
 public:
@@ -48,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GatherFriendsModular_V3">();
+		STATIC_CLASS_IMPL("PyWidget_GatherFriendsModular_V3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GatherFriendsModular_V3")
 	}
 	static class UPyWidget_GatherFriendsModular_V3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GatherFriendsModular_V3>();
 	}
 };
-static_assert(alignof(UPyWidget_GatherFriendsModular_V3) == 0x000008, "Wrong alignment on UPyWidget_GatherFriendsModular_V3");
-static_assert(sizeof(UPyWidget_GatherFriendsModular_V3) == 0x000570, "Wrong size on UPyWidget_GatherFriendsModular_V3");
+DUMPER7_ASSERTS_UPyWidget_GatherFriendsModular_V3;
 
 }
 

@@ -10,9 +10,29 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+
 
 namespace SDK::Params
 {
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.K2_UpdateColor
+// 0x0010 (0x0010 - 0x0000)
+struct PyWidget3D_CharacterInfo_K2_UpdateColor final
+{
+public:
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_K2_UpdateColor;
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetShowUltimateIcon
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget3D_CharacterInfo_SetShowUltimateIcon final
+{
+public:
+	bool                                          bShow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_SetShowUltimateIcon;
 
 // PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetShowBattleChessHeroLevel
 // 0x0001 (0x0001 - 0x0000)
@@ -21,9 +41,16 @@ struct PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel final
 public:
 	bool                                          bShow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel) == 0x000001, "Wrong alignment on PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel");
-static_assert(sizeof(PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel) == 0x000001, "Wrong size on PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel");
-static_assert(offsetof(PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel, bShow) == 0x000000, "Member 'PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel::bShow' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_SetShowBattleChessHeroLevel;
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetUltimateEnergyPercent
+// 0x0004 (0x0004 - 0x0000)
+struct PyWidget3D_CharacterInfo_SetUltimateEnergyPercent final
+{
+public:
+	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_SetUltimateEnergyPercent;
 
 // PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetHeroLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +59,34 @@ struct PyWidget3D_CharacterInfo_SetHeroLevel final
 public:
 	int32                                         InLevel;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_CharacterInfo_SetHeroLevel) == 0x000004, "Wrong alignment on PyWidget3D_CharacterInfo_SetHeroLevel");
-static_assert(sizeof(PyWidget3D_CharacterInfo_SetHeroLevel) == 0x000004, "Wrong size on PyWidget3D_CharacterInfo_SetHeroLevel");
-static_assert(offsetof(PyWidget3D_CharacterInfo_SetHeroLevel, InLevel) == 0x000000, "Member 'PyWidget3D_CharacterInfo_SetHeroLevel::InLevel' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_SetHeroLevel;
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.SetIsAlly
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget3D_CharacterInfo_SetIsAlly final
+{
+public:
+	bool                                          bIsAlly;                                           // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_SetIsAlly;
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.UpdateHpBarSideWidgetsLayout
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget3D_CharacterInfo_UpdateHpBarSideWidgetsLayout final
+{
+public:
+	bool                                          Useless;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_UpdateHpBarSideWidgetsLayout;
+
+// PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.GetShowUltimateIcon
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget3D_CharacterInfo_GetShowUltimateIcon final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_GetShowUltimateIcon;
 
 // PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.GetShowBattleChessHeroLevel
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +95,7 @@ struct PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel) == 0x000001, "Wrong alignment on PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel");
-static_assert(sizeof(PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel) == 0x000001, "Wrong size on PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel");
-static_assert(offsetof(PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel, ReturnValue) == 0x000000, "Member 'PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_GetShowBattleChessHeroLevel;
 
 // PythonFunction PyWidget_CharacterInfo.PyWidget3D_CharacterInfo.GetHeroLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +104,7 @@ struct PyWidget3D_CharacterInfo_GetHeroLevel final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_CharacterInfo_GetHeroLevel) == 0x000004, "Wrong alignment on PyWidget3D_CharacterInfo_GetHeroLevel");
-static_assert(sizeof(PyWidget3D_CharacterInfo_GetHeroLevel) == 0x000004, "Wrong size on PyWidget3D_CharacterInfo_GetHeroLevel");
-static_assert(offsetof(PyWidget3D_CharacterInfo_GetHeroLevel, ReturnValue) == 0x000000, "Member 'PyWidget3D_CharacterInfo_GetHeroLevel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_CharacterInfo_GetHeroLevel;
 
 }
 

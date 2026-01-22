@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyReticleManager">();
+		STATIC_CLASS_IMPL("PyReticleManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyReticleManager")
 	}
 	static class UPyReticleManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyReticleManager>();
 	}
 };
-static_assert(alignof(UPyReticleManager) == 0x000008, "Wrong alignment on UPyReticleManager");
-static_assert(sizeof(UPyReticleManager) == 0x0001B8, "Wrong size on UPyReticleManager");
+DUMPER7_ASSERTS_UPyReticleManager;
 
 // PythonClass PyWidget_CommonReticle.PyWidget_CommonReticle
 // 0x0028 (0x0548 - 0x0520)
@@ -69,21 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonReticle">();
+		STATIC_CLASS_IMPL("PyWidget_CommonReticle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonReticle")
 	}
 	static class UPyWidget_CommonReticle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonReticle>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonReticle) == 0x000008, "Wrong alignment on UPyWidget_CommonReticle");
-static_assert(sizeof(UPyWidget_CommonReticle) == 0x000548, "Wrong size on UPyWidget_CommonReticle");
-static_assert(offsetof(UPyWidget_CommonReticle, Anim_Charge_CircleCross) == 0x000520, "Member 'UPyWidget_CommonReticle::Anim_Charge_CircleCross' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonReticle, Anim_Converge_CircleCross) == 0x000528, "Member 'UPyWidget_CommonReticle::Anim_Converge_CircleCross' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonReticle, Mat_RangeCircle_Diffusion) == 0x000530, "Member 'UPyWidget_CommonReticle::Mat_RangeCircle_Diffusion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonReticle, MaxSpreadPixel) == 0x000538, "Member 'UPyWidget_CommonReticle::MaxSpreadPixel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonReticle, IsCommonReticle) == 0x00053C, "Member 'UPyWidget_CommonReticle::IsCommonReticle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonReticle, ReloadOpacity) == 0x000540, "Member 'UPyWidget_CommonReticle::ReloadOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonReticle;
 
 }
 

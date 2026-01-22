@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GMCmd_HistoryIItem.WBP_GMCmd_HistoryIItem_C
-// 0x0030 (0x0758 - 0x0728)
+// 0x0030 (0x07B0 - 0x0780)
 class UWBP_GMCmd_HistoryIItem_C final : public UPyWidget_GMCmd_HistoryItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0728(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelImage*                           Img_BG;                                            // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Line_C*                            Img_Line;                                          // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Main;                                      // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Main;                                      // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelImage*                           Img_BG;                                            // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Line_C*                            Img_Line;                                          // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Main;                                      // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Main;                                      // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void BP_OnEntryReleased();
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GMCmd_HistoryIItem_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GMCmd_HistoryIItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GMCmd_HistoryIItem_C")
 	}
 	static class UWBP_GMCmd_HistoryIItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GMCmd_HistoryIItem_C>();
 	}
 };
-static_assert(alignof(UWBP_GMCmd_HistoryIItem_C) == 0x000008, "Wrong alignment on UWBP_GMCmd_HistoryIItem_C");
-static_assert(sizeof(UWBP_GMCmd_HistoryIItem_C) == 0x000758, "Wrong size on UWBP_GMCmd_HistoryIItem_C");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, UberGraphFrame) == 0x000728, "Member 'UWBP_GMCmd_HistoryIItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, Img_BG) == 0x000730, "Member 'UWBP_GMCmd_HistoryIItem_C::Img_BG' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, Img_Line) == 0x000738, "Member 'UWBP_GMCmd_HistoryIItem_C::Img_Line' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, Overlay_Content) == 0x000740, "Member 'UWBP_GMCmd_HistoryIItem_C::Overlay_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, Overlay_Main) == 0x000748, "Member 'UWBP_GMCmd_HistoryIItem_C::Overlay_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryIItem_C, SizeBox_Main) == 0x000750, "Member 'UWBP_GMCmd_HistoryIItem_C::SizeBox_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GMCmd_HistoryIItem_C;
 
 }
 

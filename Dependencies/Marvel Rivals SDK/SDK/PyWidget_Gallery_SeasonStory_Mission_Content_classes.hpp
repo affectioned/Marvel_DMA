@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_SeasonStory_Mission_Content.PyWidget_Gallery_SeasonStory_Mission_Content
-// 0x0180 (0x0740 - 0x05C0)
+// 0x0180 (0x0748 - 0x05C8)
 class UPyWidget_Gallery_SeasonStory_Mission_Content final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTextStyle                       BtnNormalFontStyle;                                // 0x05C0(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FMarvelTextStyle                       BtnHoveredFontStyle;                               // 0x0640(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FMarvelTextStyle                       BtnSelectedFontStyle;                              // 0x06C0(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTextStyle                       BtnNormalFontStyle;                                // 0x05C8(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelTextStyle                       BtnHoveredFontStyle;                               // 0x0648(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelTextStyle                       BtnSelectedFontStyle;                              // 0x06C8(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_SeasonStory_Mission_Content">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_SeasonStory_Mission_Content")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_SeasonStory_Mission_Content")
 	}
 	static class UPyWidget_Gallery_SeasonStory_Mission_Content* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_SeasonStory_Mission_Content>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_SeasonStory_Mission_Content) == 0x000008, "Wrong alignment on UPyWidget_Gallery_SeasonStory_Mission_Content");
-static_assert(sizeof(UPyWidget_Gallery_SeasonStory_Mission_Content) == 0x000740, "Wrong size on UPyWidget_Gallery_SeasonStory_Mission_Content");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission_Content, BtnNormalFontStyle) == 0x0005C0, "Member 'UPyWidget_Gallery_SeasonStory_Mission_Content::BtnNormalFontStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission_Content, BtnHoveredFontStyle) == 0x000640, "Member 'UPyWidget_Gallery_SeasonStory_Mission_Content::BtnHoveredFontStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Gallery_SeasonStory_Mission_Content, BtnSelectedFontStyle) == 0x0006C0, "Member 'UPyWidget_Gallery_SeasonStory_Mission_Content::BtnSelectedFontStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Gallery_SeasonStory_Mission_Content;
 
 }
 

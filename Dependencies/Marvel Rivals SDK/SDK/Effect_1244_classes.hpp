@@ -23,15 +23,18 @@ class UEffect_1244_C final : public UMarvelGameplayEffectTemplate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Effect_1244_C">();
+		BP_STATIC_CLASS_IMPL("Effect_1244_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Effect_1244_C")
 	}
 	static class UEffect_1244_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEffect_1244_C>();
 	}
 };
-static_assert(alignof(UEffect_1244_C) == 0x000008, "Wrong alignment on UEffect_1244_C");
-static_assert(sizeof(UEffect_1244_C) == 0x001438, "Wrong size on UEffect_1244_C");
+DUMPER7_ASSERTS_UEffect_1244_C;
 
 }
 

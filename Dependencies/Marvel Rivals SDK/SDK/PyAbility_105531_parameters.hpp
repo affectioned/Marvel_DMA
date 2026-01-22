@@ -28,10 +28,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_105531_SetAbility) == 0x000008, "Wrong alignment on PyUIController_105531_SetAbility");
-static_assert(sizeof(PyUIController_105531_SetAbility) == 0x000010, "Wrong size on PyUIController_105531_SetAbility");
-static_assert(offsetof(PyUIController_105531_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_105531_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_105531_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_105531_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_105531_SetAbility;
 
 // PythonFunction PyAbility_105531.PyAbility_105531.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -40,89 +37,68 @@ struct PyAbility_105531_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105531_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105531_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105531_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105531_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105531_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105531_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105531_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105531.PyReflexReceiverComponent_105531.OnReflectedDelegate
-// 0x0250 (0x0250 - 0x0000)
+// 0x0268 (0x0268 - 0x0000)
 struct PyReflexReceiverComponent_105531_OnReflectedDelegate final
 {
 public:
-	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0220)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                ReflectLocation;                                   // 0x0220(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ReflectDir;                                        // 0x0238(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0238)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                ReflectLocation;                                   // 0x0238(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReflectDir;                                        // 0x0250(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReflexReceiverComponent_105531_OnReflectedDelegate) == 0x000008, "Wrong alignment on PyReflexReceiverComponent_105531_OnReflectedDelegate");
-static_assert(sizeof(PyReflexReceiverComponent_105531_OnReflectedDelegate) == 0x000250, "Wrong size on PyReflexReceiverComponent_105531_OnReflectedDelegate");
-static_assert(offsetof(PyReflexReceiverComponent_105531_OnReflectedDelegate, RecvInfo) == 0x000000, "Member 'PyReflexReceiverComponent_105531_OnReflectedDelegate::RecvInfo' has a wrong offset!");
-static_assert(offsetof(PyReflexReceiverComponent_105531_OnReflectedDelegate, ReflectLocation) == 0x000220, "Member 'PyReflexReceiverComponent_105531_OnReflectedDelegate::ReflectLocation' has a wrong offset!");
-static_assert(offsetof(PyReflexReceiverComponent_105531_OnReflectedDelegate, ReflectDir) == 0x000238, "Member 'PyReflexReceiverComponent_105531_OnReflectedDelegate::ReflectDir' has a wrong offset!");
+DUMPER7_ASSERTS_PyReflexReceiverComponent_105531_OnReflectedDelegate;
 
 // PythonFunction PyAbility_105531.PyReflexReceiverComponent_105531.CanReflect
-// 0x0228 (0x0228 - 0x0000)
+// 0x0240 (0x0240 - 0x0000)
 struct PyReflexReceiverComponent_105531_CanReflect final
 {
 public:
-	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0220)(ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                          ReturnValue;                                       // 0x0220(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0238)(ConstParm, Parm, OutParm, ReferenceParm)
+	bool                                          ReturnValue;                                       // 0x0238(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReflexReceiverComponent_105531_CanReflect) == 0x000008, "Wrong alignment on PyReflexReceiverComponent_105531_CanReflect");
-static_assert(sizeof(PyReflexReceiverComponent_105531_CanReflect) == 0x000228, "Wrong size on PyReflexReceiverComponent_105531_CanReflect");
-static_assert(offsetof(PyReflexReceiverComponent_105531_CanReflect, RecvInfo) == 0x000000, "Member 'PyReflexReceiverComponent_105531_CanReflect::RecvInfo' has a wrong offset!");
-static_assert(offsetof(PyReflexReceiverComponent_105531_CanReflect, ReturnValue) == 0x000220, "Member 'PyReflexReceiverComponent_105531_CanReflect::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyReflexReceiverComponent_105531_CanReflect;
 
 // PythonFunction PyAbility_105531.PyReflexReceiverComponent_105531.CalculateReflectDir
-// 0x0238 (0x0238 - 0x0000)
+// 0x0250 (0x0250 - 0x0000)
 struct PyReflexReceiverComponent_105531_CalculateReflectDir final
 {
 public:
-	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0220)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                ReturnValue;                                       // 0x0220(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMarvelReflexRecvInfo                  RecvInfo;                                          // 0x0000(0x0238)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                ReturnValue;                                       // 0x0238(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyReflexReceiverComponent_105531_CalculateReflectDir) == 0x000008, "Wrong alignment on PyReflexReceiverComponent_105531_CalculateReflectDir");
-static_assert(sizeof(PyReflexReceiverComponent_105531_CalculateReflectDir) == 0x000238, "Wrong size on PyReflexReceiverComponent_105531_CalculateReflectDir");
-static_assert(offsetof(PyReflexReceiverComponent_105531_CalculateReflectDir, RecvInfo) == 0x000000, "Member 'PyReflexReceiverComponent_105531_CalculateReflectDir::RecvInfo' has a wrong offset!");
-static_assert(offsetof(PyReflexReceiverComponent_105531_CalculateReflectDir, ReturnValue) == 0x000220, "Member 'PyReflexReceiverComponent_105531_CalculateReflectDir::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyReflexReceiverComponent_105531_CalculateReflectDir;
 
 // PythonFunction PyAbility_105531.PySummoned_10553101.K2_OnSummonedBeHit
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PySummoned_10553101_K2_OnSummonedBeHit final
 {
 public:
 	const class AActor*                           InActor;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummoned_10553101_K2_OnSummonedBeHit) == 0x000008, "Wrong alignment on PySummoned_10553101_K2_OnSummonedBeHit");
-static_assert(sizeof(PySummoned_10553101_K2_OnSummonedBeHit) == 0x0001F8, "Wrong size on PySummoned_10553101_K2_OnSummonedBeHit");
-static_assert(offsetof(PySummoned_10553101_K2_OnSummonedBeHit, InActor) == 0x000000, "Member 'PySummoned_10553101_K2_OnSummonedBeHit::InActor' has a wrong offset!");
-static_assert(offsetof(PySummoned_10553101_K2_OnSummonedBeHit, InHitResult) == 0x000008, "Member 'PySummoned_10553101_K2_OnSummonedBeHit::InHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_10553101_K2_OnSummonedBeHit;
 
 // PythonFunction PyAbility_105531.PySummoned_10553101.MulticastExecuteBeHitCue
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PySummoned_10553101_MulticastExecuteBeHitCue final
 {
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummoned_10553101_MulticastExecuteBeHitCue) == 0x000008, "Wrong alignment on PySummoned_10553101_MulticastExecuteBeHitCue");
-static_assert(sizeof(PySummoned_10553101_MulticastExecuteBeHitCue) == 0x0001F8, "Wrong size on PySummoned_10553101_MulticastExecuteBeHitCue");
-static_assert(offsetof(PySummoned_10553101_MulticastExecuteBeHitCue, InActor) == 0x000000, "Member 'PySummoned_10553101_MulticastExecuteBeHitCue::InActor' has a wrong offset!");
-static_assert(offsetof(PySummoned_10553101_MulticastExecuteBeHitCue, InHitResult) == 0x000008, "Member 'PySummoned_10553101_MulticastExecuteBeHitCue::InHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_10553101_MulticastExecuteBeHitCue;
 
 // PythonFunction PyAbility_105531.PySummoned_10553101.MulticastExecuteReflexCue
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PySummoned_10553101_MulticastExecuteReflexCue final
 {
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             InHitResult;                                       // 0x0008(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             InHitResult;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummoned_10553101_MulticastExecuteReflexCue) == 0x000008, "Wrong alignment on PySummoned_10553101_MulticastExecuteReflexCue");
-static_assert(sizeof(PySummoned_10553101_MulticastExecuteReflexCue) == 0x0001F8, "Wrong size on PySummoned_10553101_MulticastExecuteReflexCue");
-static_assert(offsetof(PySummoned_10553101_MulticastExecuteReflexCue, InActor) == 0x000000, "Member 'PySummoned_10553101_MulticastExecuteReflexCue::InActor' has a wrong offset!");
-static_assert(offsetof(PySummoned_10553101_MulticastExecuteReflexCue, InHitResult) == 0x000008, "Member 'PySummoned_10553101_MulticastExecuteReflexCue::InHitResult' has a wrong offset!");
+DUMPER7_ASSERTS_PySummoned_10553101_MulticastExecuteReflexCue;
 
 // PythonFunction PyAbility_105531.PySummonedComp_10553101.OnDamageImmunized
 // 0x0068 (0x0068 - 0x0000)
@@ -131,9 +107,7 @@ struct PySummonedComp_10553101_OnDamageImmunized final
 public:
 	struct FGameplayTagContainer                  ImmunitySpecTags;                                  // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PySummonedComp_10553101_OnDamageImmunized) == 0x000008, "Wrong alignment on PySummonedComp_10553101_OnDamageImmunized");
-static_assert(sizeof(PySummonedComp_10553101_OnDamageImmunized) == 0x000068, "Wrong size on PySummonedComp_10553101_OnDamageImmunized");
-static_assert(offsetof(PySummonedComp_10553101_OnDamageImmunized, ImmunitySpecTags) == 0x000000, "Member 'PySummonedComp_10553101_OnDamageImmunized::ImmunitySpecTags' has a wrong offset!");
+DUMPER7_ASSERTS_PySummonedComp_10553101_OnDamageImmunized;
 
 }
 

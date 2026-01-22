@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LeagueChatSendDropdown">();
+		STATIC_CLASS_IMPL("PyWidget_LeagueChatSendDropdown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LeagueChatSendDropdown")
 	}
 	static class UPyWidget_LeagueChatSendDropdown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LeagueChatSendDropdown>();
 	}
 };
-static_assert(alignof(UPyWidget_LeagueChatSendDropdown) == 0x000008, "Wrong alignment on UPyWidget_LeagueChatSendDropdown");
-static_assert(sizeof(UPyWidget_LeagueChatSendDropdown) == 0x0003C0, "Wrong size on UPyWidget_LeagueChatSendDropdown");
-static_assert(offsetof(UPyWidget_LeagueChatSendDropdown, DropDownListClass) == 0x0003B8, "Member 'UPyWidget_LeagueChatSendDropdown::DropDownListClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LeagueChatSendDropdown;
 
 }
 

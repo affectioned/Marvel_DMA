@@ -38,11 +38,7 @@ public:
 	float                                         Scale;                                             // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSimDebugDataRow) == 0x000008, "Wrong alignment on FSimDebugDataRow");
-static_assert(sizeof(FSimDebugDataRow) == 0x000028, "Wrong size on FSimDebugDataRow");
-static_assert(offsetof(FSimDebugDataRow, Mesh) == 0x000010, "Member 'FSimDebugDataRow::Mesh' has a wrong offset!");
-static_assert(offsetof(FSimDebugDataRow, MaterialOverride) == 0x000018, "Member 'FSimDebugDataRow::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(FSimDebugDataRow, Scale) == 0x000020, "Member 'FSimDebugDataRow::Scale' has a wrong offset!");
+DUMPER7_ASSERTS_FSimDebugDataRow;
 
 // ScriptStruct MassGameplayDebug.SimDebugVisFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -51,8 +47,7 @@ struct alignas(0x04) FSimDebugVisFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSimDebugVisFragment) == 0x000004, "Wrong alignment on FSimDebugVisFragment");
-static_assert(sizeof(FSimDebugVisFragment) == 0x000008, "Wrong size on FSimDebugVisFragment");
+DUMPER7_ASSERTS_FSimDebugVisFragment;
 
 // ScriptStruct MassGameplayDebug.DataFragment_DebugVis
 // 0x0001 (0x0001 - 0x0000)
@@ -61,17 +56,14 @@ struct FDataFragment_DebugVis final : public FMassFragment
 public:
 	EMassEntityDebugShape                         Shape;                                             // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDataFragment_DebugVis) == 0x000001, "Wrong alignment on FDataFragment_DebugVis");
-static_assert(sizeof(FDataFragment_DebugVis) == 0x000001, "Wrong size on FDataFragment_DebugVis");
-static_assert(offsetof(FDataFragment_DebugVis, Shape) == 0x000000, "Member 'FDataFragment_DebugVis::Shape' has a wrong offset!");
+DUMPER7_ASSERTS_FDataFragment_DebugVis;
 
 // ScriptStruct MassGameplayDebug.MassDebuggableTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassDebuggableTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassDebuggableTag) == 0x000001, "Wrong alignment on FMassDebuggableTag");
-static_assert(sizeof(FMassDebuggableTag) == 0x000001, "Wrong size on FMassDebuggableTag");
+DUMPER7_ASSERTS_FMassDebuggableTag;
 
 // ScriptStruct MassGameplayDebug.AgentDebugVisualization
 // 0x0020 (0x0030 - 0x0010)
@@ -85,13 +77,7 @@ public:
 	EMassEntityDebugShape                         WireShape;                                         // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAgentDebugVisualization) == 0x000008, "Wrong alignment on FAgentDebugVisualization");
-static_assert(sizeof(FAgentDebugVisualization) == 0x000030, "Wrong size on FAgentDebugVisualization");
-static_assert(offsetof(FAgentDebugVisualization, Mesh) == 0x000010, "Member 'FAgentDebugVisualization::Mesh' has a wrong offset!");
-static_assert(offsetof(FAgentDebugVisualization, MaterialOverride) == 0x000018, "Member 'FAgentDebugVisualization::MaterialOverride' has a wrong offset!");
-static_assert(offsetof(FAgentDebugVisualization, VisualNearCullDistance) == 0x000020, "Member 'FAgentDebugVisualization::VisualNearCullDistance' has a wrong offset!");
-static_assert(offsetof(FAgentDebugVisualization, VisualFarCullDistance) == 0x000024, "Member 'FAgentDebugVisualization::VisualFarCullDistance' has a wrong offset!");
-static_assert(offsetof(FAgentDebugVisualization, WireShape) == 0x000028, "Member 'FAgentDebugVisualization::WireShape' has a wrong offset!");
+DUMPER7_ASSERTS_FAgentDebugVisualization;
 
 }
 

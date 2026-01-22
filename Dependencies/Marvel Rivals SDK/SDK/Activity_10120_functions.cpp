@@ -660,7 +660,7 @@ void UBuffAbility_AbilityAdditionalEffect::OnAbilityDamage(class AActor* InSourc
 // (Final, Native, Public, HasOutParams)
 // Parameters:
 // class UGameplayAbility*                 HitAbility                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
 void UBuffAbility_AbilityAdditionalEffect::OnAbilityHit(class UGameplayAbility* HitAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)

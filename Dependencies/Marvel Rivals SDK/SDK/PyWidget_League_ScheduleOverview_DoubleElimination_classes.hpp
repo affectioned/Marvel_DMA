@@ -16,74 +16,8 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_StartUpRound
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_League_ScheduleOverview_StartUpRound final : public UPyMarvelUserWidget
-{
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_StartUpRound">();
-	}
-	static class UPyWidget_League_ScheduleOverview_StartUpRound* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_StartUpRound>();
-	}
-};
-static_assert(alignof(UPyWidget_League_ScheduleOverview_StartUpRound) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_StartUpRound");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_StartUpRound) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_StartUpRound");
-
-// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_EvenRounds
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_League_ScheduleOverview_EvenRounds final : public UPyMarvelUserWidget
-{
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_EvenRounds">();
-	}
-	static class UPyWidget_League_ScheduleOverview_EvenRounds* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_EvenRounds>();
-	}
-};
-static_assert(alignof(UPyWidget_League_ScheduleOverview_EvenRounds) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_EvenRounds");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_EvenRounds) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_EvenRounds");
-
-// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_League_ScheduleOverview_Final final : public UPyMarvelUserWidget
-{
-public:
-	void OnInitialized();
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_Final">();
-	}
-	static class UPyWidget_League_ScheduleOverview_Final* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_Final>();
-	}
-};
-static_assert(alignof(UPyWidget_League_ScheduleOverview_Final) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_Final");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_Final) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_Final");
-
 // PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound final : public UPyMarvelUserWidget
 {
 public:
@@ -94,19 +28,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound")
 	}
 	static class UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound;
 
-// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber final : public UPyMarvelUserWidget
+// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_StartUpRound
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_League_ScheduleOverview_StartUpRound final : public UPyMarvelUserWidget
 {
 public:
 	void OnInitialized();
@@ -116,18 +53,77 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_StartUpRound")
 	}
-	static class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber>();
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_StartUpRound")
+	}
+	static class UPyWidget_League_ScheduleOverview_StartUpRound* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_StartUpRound>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_StartUpRound;
+
+// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination
+// 0x0018 (0x05E0 - 0x05C8)
+class UPyWidget_League_ScheduleOverview_DoubleElimination final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound> StartNumber; // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_League_ScheduleOverview_Elimination_OddNumber> OddNumber;            // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber> EvenNumber;    // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_DoubleElimination")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_DoubleElimination")
+	}
+	static class UPyWidget_League_ScheduleOverview_DoubleElimination* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_DoubleElimination>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_DoubleElimination;
+
+// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_EvenRounds
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_League_ScheduleOverview_EvenRounds final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_EvenRounds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_EvenRounds")
+	}
+	static class UPyWidget_League_ScheduleOverview_EvenRounds* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_EvenRounds>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_EvenRounds;
 
 // PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_FinalRound
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_League_ScheduleOverview_FinalRound final : public UPyMarvelUserWidget
 {
 public:
@@ -138,26 +134,23 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_FinalRound">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_FinalRound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_FinalRound")
 	}
 	static class UPyWidget_League_ScheduleOverview_FinalRound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_FinalRound>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_FinalRound) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_FinalRound");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_FinalRound) == 0x0005C0, "Wrong size on UPyWidget_League_ScheduleOverview_FinalRound");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_FinalRound;
 
-// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination
-// 0x0018 (0x05D8 - 0x05C0)
-class UPyWidget_League_ScheduleOverview_DoubleElimination final : public UPyMarvelUserWidget
+// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_Final
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_League_ScheduleOverview_Final final : public UPyMarvelUserWidget
 {
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPyWidget_League_ScheduleOverview_DoubleElimination_StartUpRound> StartNumber; // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_League_ScheduleOverview_Elimination_OddNumber> OddNumber;            // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber> EvenNumber;    // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 public:
 	void OnInitialized();
 	void Construct();
@@ -166,18 +159,43 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ScheduleOverview_DoubleElimination">();
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_Final")
 	}
-	static class UPyWidget_League_ScheduleOverview_DoubleElimination* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_DoubleElimination>();
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_Final")
+	}
+	static class UPyWidget_League_ScheduleOverview_Final* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_Final>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ScheduleOverview_DoubleElimination) == 0x000008, "Wrong alignment on UPyWidget_League_ScheduleOverview_DoubleElimination");
-static_assert(sizeof(UPyWidget_League_ScheduleOverview_DoubleElimination) == 0x0005D8, "Wrong size on UPyWidget_League_ScheduleOverview_DoubleElimination");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_DoubleElimination, StartNumber) == 0x0005C0, "Member 'UPyWidget_League_ScheduleOverview_DoubleElimination::StartNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_DoubleElimination, OddNumber) == 0x0005C8, "Member 'UPyWidget_League_ScheduleOverview_DoubleElimination::OddNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ScheduleOverview_DoubleElimination, EvenNumber) == 0x0005D0, "Member 'UPyWidget_League_ScheduleOverview_DoubleElimination::EvenNumber' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_Final;
+
+// PythonClass PyWidget_League_ScheduleOverview_DoubleElimination.PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber final : public UPyMarvelUserWidget
+{
+public:
+	void OnInitialized();
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber")
+	}
+	static class UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_League_ScheduleOverview_DoubleElimination_EvenNumber;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1024_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Hero_1024_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 
@@ -20,28 +20,31 @@ namespace SDK
 {
 
 // PythonClass PyHelaCharacter.PyHelaCharacter
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class APyHelaCharacter : public AHelaCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHelaCharacter">();
+		STATIC_CLASS_IMPL("PyHelaCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHelaCharacter")
 	}
 	static class APyHelaCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHelaCharacter>();
 	}
 };
-static_assert(alignof(APyHelaCharacter) == 0x000010, "Wrong alignment on APyHelaCharacter");
-static_assert(sizeof(APyHelaCharacter) == 0x0021E0, "Wrong size on APyHelaCharacter");
+DUMPER7_ASSERTS_APyHelaCharacter;
 
 // PythonClass PyHelaCharacter.PyHelaChildActor
-// 0x0010 (0x0EA0 - 0x0E90)
+// 0x0010 (0x0EB0 - 0x0EA0)
 class APyHelaChildActor final : public AHelaChildActor
 {
 public:
-	TSubclassOf<class AHelaChildActor>            CrowStormChildActorSelf;                           // 0x0E90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AHelaChildActor>            CrowStormChildActorSelf;                           // 0x0EA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnGenericGameplayTagUpdate(const struct FGameplayTag& InTag, int32 Count);
@@ -49,26 +52,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHelaChildActor">();
+		STATIC_CLASS_IMPL("PyHelaChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHelaChildActor")
 	}
 	static class APyHelaChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHelaChildActor>();
 	}
 };
-static_assert(alignof(APyHelaChildActor) == 0x000010, "Wrong alignment on APyHelaChildActor");
-static_assert(sizeof(APyHelaChildActor) == 0x000EA0, "Wrong size on APyHelaChildActor");
-static_assert(offsetof(APyHelaChildActor, CrowStormChildActorSelf) == 0x000E90, "Member 'APyHelaChildActor::CrowStormChildActorSelf' has a wrong offset!");
+DUMPER7_ASSERTS_APyHelaChildActor;
 
 // PythonClass PyHelaCharacter.PyHelaCrowStormChildActor
-// 0x0020 (0x0E40 - 0x0E20)
+// 0x0020 (0x0E50 - 0x0E30)
 class APyHelaCrowStormChildActor final : public AMarvelCharacterChildActor
 {
 public:
-	uint8                                         Pad_E18[0x8];                                      // 0x0E18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMaterialTag                           CloakMaterialTag;                                  // 0x0E20(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2C[0x4];                                      // 0x0E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMaterialParameterChangeInfo>   MaterialParamArray;                                // 0x0E30(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E28[0x8];                                      // 0x0E28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMaterialTag                           CloakMaterialTag;                                  // 0x0E30(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E3C[0x4];                                      // 0x0E3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMaterialParameterChangeInfo>   MaterialParamArray;                                // 0x0E40(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -78,17 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHelaCrowStormChildActor">();
+		STATIC_CLASS_IMPL("PyHelaCrowStormChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHelaCrowStormChildActor")
 	}
 	static class APyHelaCrowStormChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHelaCrowStormChildActor>();
 	}
 };
-static_assert(alignof(APyHelaCrowStormChildActor) == 0x000010, "Wrong alignment on APyHelaCrowStormChildActor");
-static_assert(sizeof(APyHelaCrowStormChildActor) == 0x000E40, "Wrong size on APyHelaCrowStormChildActor");
-static_assert(offsetof(APyHelaCrowStormChildActor, CloakMaterialTag) == 0x000E20, "Member 'APyHelaCrowStormChildActor::CloakMaterialTag' has a wrong offset!");
-static_assert(offsetof(APyHelaCrowStormChildActor, MaterialParamArray) == 0x000E30, "Member 'APyHelaCrowStormChildActor::MaterialParamArray' has a wrong offset!");
+DUMPER7_ASSERTS_APyHelaCrowStormChildActor;
 
 }
 

@@ -23,11 +23,7 @@ public:
 	class FString                                 BirthBaseName;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 PlayerStartName;                                   // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelRebirthNodes_SetBirthBasePlayerstart) == 0x000008, "Wrong alignment on PyLevelRebirthNodes_SetBirthBasePlayerstart");
-static_assert(sizeof(PyLevelRebirthNodes_SetBirthBasePlayerstart) == 0x000028, "Wrong size on PyLevelRebirthNodes_SetBirthBasePlayerstart");
-static_assert(offsetof(PyLevelRebirthNodes_SetBirthBasePlayerstart, WCO) == 0x000000, "Member 'PyLevelRebirthNodes_SetBirthBasePlayerstart::WCO' has a wrong offset!");
-static_assert(offsetof(PyLevelRebirthNodes_SetBirthBasePlayerstart, BirthBaseName) == 0x000008, "Member 'PyLevelRebirthNodes_SetBirthBasePlayerstart::BirthBaseName' has a wrong offset!");
-static_assert(offsetof(PyLevelRebirthNodes_SetBirthBasePlayerstart, PlayerStartName) == 0x000018, "Member 'PyLevelRebirthNodes_SetBirthBasePlayerstart::PlayerStartName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelRebirthNodes_SetBirthBasePlayerstart;
 
 }
 

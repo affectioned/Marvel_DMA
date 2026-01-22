@@ -14,16 +14,14 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.PreConstruct
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct PyWidget_Time_Roll_Text_PreConstruct final
+struct PyWidget_Mall_Bundle_Time_Tag_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Time_Roll_Text_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Time_Roll_Text_PreConstruct");
-static_assert(sizeof(PyWidget_Time_Roll_Text_PreConstruct) == 0x000001, "Wrong size on PyWidget_Time_Roll_Text_PreConstruct");
-static_assert(offsetof(PyWidget_Time_Roll_Text_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Time_Roll_Text_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_Time_Tag_PreConstruct;
 
 // PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_BG_Tag.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,20 +30,7 @@ struct PyWidget_Mall_Bundle_BG_Tag_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_BG_Tag_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Mall_Bundle_BG_Tag_PreConstruct");
-static_assert(sizeof(PyWidget_Mall_Bundle_BG_Tag_PreConstruct) == 0x000001, "Wrong size on PyWidget_Mall_Bundle_BG_Tag_PreConstruct");
-static_assert(offsetof(PyWidget_Mall_Bundle_BG_Tag_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Mall_Bundle_BG_Tag_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_Mall_Bundle_Time_Tag_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_Mall_Bundle_Time_Tag_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Mall_Bundle_Time_Tag_PreConstruct");
-static_assert(sizeof(PyWidget_Mall_Bundle_Time_Tag_PreConstruct) == 0x000001, "Wrong size on PyWidget_Mall_Bundle_Time_Tag_PreConstruct");
-static_assert(offsetof(PyWidget_Mall_Bundle_Time_Tag_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Mall_Bundle_Time_Tag_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_BG_Tag_PreConstruct;
 
 // PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Normal_Tag.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +39,16 @@ struct PyWidget_Mall_Bundle_Normal_Tag_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Mall_Bundle_Normal_Tag_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Mall_Bundle_Normal_Tag_PreConstruct");
-static_assert(sizeof(PyWidget_Mall_Bundle_Normal_Tag_PreConstruct) == 0x000001, "Wrong size on PyWidget_Mall_Bundle_Normal_Tag_PreConstruct");
-static_assert(offsetof(PyWidget_Mall_Bundle_Normal_Tag_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Mall_Bundle_Normal_Tag_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Mall_Bundle_Normal_Tag_PreConstruct;
+
+// PythonFunction PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_Time_Roll_Text_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_Time_Roll_Text_PreConstruct;
 
 }
 

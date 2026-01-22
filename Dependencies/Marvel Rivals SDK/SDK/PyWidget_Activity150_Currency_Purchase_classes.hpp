@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Activity150_Currency_Purchase.PyWidget_Activity150_Currency_Purchase
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Activity150_Currency_Purchase final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NormalTextQuantity;                                // 0x05BC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MaxTextQuantity;                                   // 0x05D0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NormalTextQuantity;                                // 0x05C4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MaxTextQuantity;                                   // 0x05D8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Currency_Purchase">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Currency_Purchase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Currency_Purchase")
 	}
 	static class UPyWidget_Activity150_Currency_Purchase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Currency_Purchase>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Currency_Purchase) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Currency_Purchase");
-static_assert(sizeof(UPyWidget_Activity150_Currency_Purchase) == 0x0005E8, "Wrong size on UPyWidget_Activity150_Currency_Purchase");
-static_assert(offsetof(UPyWidget_Activity150_Currency_Purchase, NormalTextQuantity) == 0x0005BC, "Member 'UPyWidget_Activity150_Currency_Purchase::NormalTextQuantity' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity150_Currency_Purchase, MaxTextQuantity) == 0x0005D0, "Member 'UPyWidget_Activity150_Currency_Purchase::MaxTextQuantity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Currency_Purchase;
 
 }
 

@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HurtHintPanel.PyWidget_HurtCenterUnit
-// 0x0018 (0x05A0 - 0x0588)
+// 0x0018 (0x05A8 - 0x0590)
 class UPyWidget_HurtCenterUnit final : public UWidget_HurtCenterUnit
 {
 public:
-	float                                         MinNormalCornerWIdth;                              // 0x0588(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxNormalCornerWidth;                              // 0x058C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinSnipeCornerHeight;                              // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxSnipeCornerHeight;                              // 0x0594(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Duration;                                          // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinNormalCornerWIdth;                              // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxNormalCornerWidth;                              // 0x0594(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSnipeCornerHeight;                              // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxSnipeCornerHeight;                              // 0x059C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Duration;                                          // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
@@ -33,23 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HurtCenterUnit">();
+		STATIC_CLASS_IMPL("PyWidget_HurtCenterUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HurtCenterUnit")
 	}
 	static class UPyWidget_HurtCenterUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HurtCenterUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_HurtCenterUnit) == 0x000008, "Wrong alignment on UPyWidget_HurtCenterUnit");
-static_assert(sizeof(UPyWidget_HurtCenterUnit) == 0x0005A0, "Wrong size on UPyWidget_HurtCenterUnit");
-static_assert(offsetof(UPyWidget_HurtCenterUnit, MinNormalCornerWIdth) == 0x000588, "Member 'UPyWidget_HurtCenterUnit::MinNormalCornerWIdth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtCenterUnit, MaxNormalCornerWidth) == 0x00058C, "Member 'UPyWidget_HurtCenterUnit::MaxNormalCornerWidth' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtCenterUnit, MinSnipeCornerHeight) == 0x000590, "Member 'UPyWidget_HurtCenterUnit::MinSnipeCornerHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtCenterUnit, MaxSnipeCornerHeight) == 0x000594, "Member 'UPyWidget_HurtCenterUnit::MaxSnipeCornerHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtCenterUnit, Duration) == 0x000598, "Member 'UPyWidget_HurtCenterUnit::Duration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HurtCenterUnit;
 
 // PythonClass PyWidget_HurtHintPanel.PyWidget_HurtOutline
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_HurtOutline : public UMarvelUserWidget
 {
 public:
@@ -58,24 +56,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HurtOutline">();
+		STATIC_CLASS_IMPL("PyWidget_HurtOutline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HurtOutline")
 	}
 	static class UPyWidget_HurtOutline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HurtOutline>();
 	}
 };
-static_assert(alignof(UPyWidget_HurtOutline) == 0x000008, "Wrong alignment on UPyWidget_HurtOutline");
-static_assert(sizeof(UPyWidget_HurtOutline) == 0x000568, "Wrong size on UPyWidget_HurtOutline");
+DUMPER7_ASSERTS_UPyWidget_HurtOutline;
 
 // PythonClass PyWidget_HurtHintPanel.PyWidget_HurtOutlineUnit
-// 0x0010 (0x05A0 - 0x0590)
+// 0x0010 (0x05A8 - 0x0598)
 class UPyWidget_HurtOutlineUnit final : public UWidget_HurtOutlineUnit
 {
 public:
-	float                                         PlaySpeed;                                         // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_594[0x4];                                      // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            CurveDamage;                                       // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlaySpeed;                                         // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59C[0x4];                                      // 0x059C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            CurveDamage;                                       // 0x05A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -84,24 +85,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HurtOutlineUnit">();
+		STATIC_CLASS_IMPL("PyWidget_HurtOutlineUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HurtOutlineUnit")
 	}
 	static class UPyWidget_HurtOutlineUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HurtOutlineUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_HurtOutlineUnit) == 0x000008, "Wrong alignment on UPyWidget_HurtOutlineUnit");
-static_assert(sizeof(UPyWidget_HurtOutlineUnit) == 0x0005A0, "Wrong size on UPyWidget_HurtOutlineUnit");
-static_assert(offsetof(UPyWidget_HurtOutlineUnit, PlaySpeed) == 0x000590, "Member 'UPyWidget_HurtOutlineUnit::PlaySpeed' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtOutlineUnit, CurveDamage) == 0x000598, "Member 'UPyWidget_HurtOutlineUnit::CurveDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HurtOutlineUnit;
 
 // PythonClass PyWidget_HurtHintPanel.PyWidget_HurtCenter
-// 0x0008 (0x05C0 - 0x05B8)
+// 0x0008 (0x05C8 - 0x05C0)
 class UPyWidget_HurtCenter : public UWidget_HurtCenter
 {
 public:
-	float                                         SpawnInterval;                                     // 0x05B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnInterval;                                     // 0x05C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActorDeathDispatcher(class AActor* Source, class AActor* Target, const struct FAttributeModifierHandle& ModifierHandle, const struct FGlobalEventExtraData& ExtraData);
@@ -110,27 +112,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HurtCenter">();
+		STATIC_CLASS_IMPL("PyWidget_HurtCenter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HurtCenter")
 	}
 	static class UPyWidget_HurtCenter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HurtCenter>();
 	}
 };
-static_assert(alignof(UPyWidget_HurtCenter) == 0x000008, "Wrong alignment on UPyWidget_HurtCenter");
-static_assert(sizeof(UPyWidget_HurtCenter) == 0x0005C0, "Wrong size on UPyWidget_HurtCenter");
-static_assert(offsetof(UPyWidget_HurtCenter, SpawnInterval) == 0x0005B8, "Member 'UPyWidget_HurtCenter::SpawnInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HurtCenter;
 
 // PythonClass PyWidget_HurtHintPanel.PyWidget_HurtHintPanel
-// 0x0020 (0x05C0 - 0x05A0)
+// 0x0020 (0x05C8 - 0x05A8)
 class UPyWidget_HurtHintPanel : public UWidget_HurtHintPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                Class_HurtOutline;                                 // 0x05A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                Class_HurtCenter;                                  // 0x05A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxOutlineHintWidgetNum;                           // 0x05B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxCenterHintWidgetNum;                            // 0x05B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpawnInterval;                                     // 0x05B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_HurtOutline;                                 // 0x05A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_HurtCenter;                                  // 0x05B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxOutlineHintWidgetNum;                           // 0x05B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxCenterHintWidgetNum;                            // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpawnInterval;                                     // 0x05C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -141,20 +145,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HurtHintPanel">();
+		STATIC_CLASS_IMPL("PyWidget_HurtHintPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HurtHintPanel")
 	}
 	static class UPyWidget_HurtHintPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HurtHintPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_HurtHintPanel) == 0x000008, "Wrong alignment on UPyWidget_HurtHintPanel");
-static_assert(sizeof(UPyWidget_HurtHintPanel) == 0x0005C0, "Wrong size on UPyWidget_HurtHintPanel");
-static_assert(offsetof(UPyWidget_HurtHintPanel, Class_HurtOutline) == 0x0005A0, "Member 'UPyWidget_HurtHintPanel::Class_HurtOutline' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtHintPanel, Class_HurtCenter) == 0x0005A8, "Member 'UPyWidget_HurtHintPanel::Class_HurtCenter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtHintPanel, MaxOutlineHintWidgetNum) == 0x0005B0, "Member 'UPyWidget_HurtHintPanel::MaxOutlineHintWidgetNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtHintPanel, MaxCenterHintWidgetNum) == 0x0005B4, "Member 'UPyWidget_HurtHintPanel::MaxCenterHintWidgetNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HurtHintPanel, SpawnInterval) == 0x0005B8, "Member 'UPyWidget_HurtHintPanel::SpawnInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HurtHintPanel;
 
 }
 

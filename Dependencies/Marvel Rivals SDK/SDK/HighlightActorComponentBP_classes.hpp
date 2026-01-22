@@ -23,15 +23,18 @@ class UHighlightActorComponentBP_C final : public UPyHighlightActorsWithinScopeC
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighlightActorComponentBP_C">();
+		BP_STATIC_CLASS_IMPL("HighlightActorComponentBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighlightActorComponentBP_C")
 	}
 	static class UHighlightActorComponentBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighlightActorComponentBP_C>();
 	}
 };
-static_assert(alignof(UHighlightActorComponentBP_C) == 0x000008, "Wrong alignment on UHighlightActorComponentBP_C");
-static_assert(sizeof(UHighlightActorComponentBP_C) == 0x000260, "Wrong size on UHighlightActorComponentBP_C");
+DUMPER7_ASSERTS_UHighlightActorComponentBP_C;
 
 }
 

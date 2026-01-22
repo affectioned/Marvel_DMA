@@ -25,11 +25,7 @@ public:
 	class FString                                 BanType_15_06CFAAD74E63EC2B0C2225811D731776;       // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FReportTitleBP>                 SubTitles_8_C588CE9A47B9EE56FB8724A0AE992551;      // 0x0030(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FMarvelReportTable) == 0x000008, "Wrong alignment on FMarvelReportTable");
-static_assert(sizeof(FMarvelReportTable) == 0x000040, "Wrong size on FMarvelReportTable");
-static_assert(offsetof(FMarvelReportTable, Title_7_F0DB241742D243EC4543B5B29051335D) == 0x000000, "Member 'FMarvelReportTable::Title_7_F0DB241742D243EC4543B5B29051335D' has a wrong offset!");
-static_assert(offsetof(FMarvelReportTable, BanType_15_06CFAAD74E63EC2B0C2225811D731776) == 0x000020, "Member 'FMarvelReportTable::BanType_15_06CFAAD74E63EC2B0C2225811D731776' has a wrong offset!");
-static_assert(offsetof(FMarvelReportTable, SubTitles_8_C588CE9A47B9EE56FB8724A0AE992551) == 0x000030, "Member 'FMarvelReportTable::SubTitles_8_C588CE9A47B9EE56FB8724A0AE992551' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelReportTable;
 
 }
 

@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyBattlePanel.PyWidget_ViewTargetPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ViewTargetPanel : public UPyMarvelUserWidget
 {
 public:
@@ -31,32 +31,35 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ViewTargetPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ViewTargetPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ViewTargetPanel")
 	}
 	static class UPyWidget_ViewTargetPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ViewTargetPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ViewTargetPanel) == 0x000008, "Wrong alignment on UPyWidget_ViewTargetPanel");
-static_assert(sizeof(UPyWidget_ViewTargetPanel) == 0x0005C0, "Wrong size on UPyWidget_ViewTargetPanel");
+DUMPER7_ASSERTS_UPyWidget_ViewTargetPanel;
 
 // PythonClass PyBattlePanel.PyBattlePanel
-// 0x0058 (0x0650 - 0x05F8)
+// 0x0058 (0x0658 - 0x0600)
 class UPyBattlePanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           SelectHeroAction;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SelectHeroUITipsAction;                            // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SelectHeroUITipsActionRealse;                      // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           TrainSettingAction;                                // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuAction;                                    // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuInGameAction;                              // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Start_Action;                 // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Up_Action;                    // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Hold_Action;                  // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ScoreboardClass;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TrainingShowHoldTipsDelayTime;                     // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroAction;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroUITipsAction;                            // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroUITipsActionRealse;                      // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           TrainSettingAction;                                // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuAction;                                    // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuInGameAction;                              // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Start_Action;                 // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Up_Action;                    // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Hold_Action;                  // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ScoreboardClass;                                   // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TrainingShowHoldTipsDelayTime;                     // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -73,26 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattlePanel">();
+		STATIC_CLASS_IMPL("PyBattlePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattlePanel")
 	}
 	static class UPyBattlePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattlePanel>();
 	}
 };
-static_assert(alignof(UPyBattlePanel) == 0x000008, "Wrong alignment on UPyBattlePanel");
-static_assert(sizeof(UPyBattlePanel) == 0x000650, "Wrong size on UPyBattlePanel");
-static_assert(offsetof(UPyBattlePanel, SelectHeroAction) == 0x0005F8, "Member 'UPyBattlePanel::SelectHeroAction' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, SelectHeroUITipsAction) == 0x000600, "Member 'UPyBattlePanel::SelectHeroUITipsAction' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, SelectHeroUITipsActionRealse) == 0x000608, "Member 'UPyBattlePanel::SelectHeroUITipsActionRealse' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, TrainSettingAction) == 0x000610, "Member 'UPyBattlePanel::TrainSettingAction' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ExitMenuAction) == 0x000618, "Member 'UPyBattlePanel::ExitMenuAction' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ExitMenuInGameAction) == 0x000620, "Member 'UPyBattlePanel::ExitMenuInGameAction' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ActiveSurrenderPanel_Start_Action) == 0x000628, "Member 'UPyBattlePanel::ActiveSurrenderPanel_Start_Action' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ActiveSurrenderPanel_Up_Action) == 0x000630, "Member 'UPyBattlePanel::ActiveSurrenderPanel_Up_Action' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ActiveSurrenderPanel_Hold_Action) == 0x000638, "Member 'UPyBattlePanel::ActiveSurrenderPanel_Hold_Action' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, ScoreboardClass) == 0x000640, "Member 'UPyBattlePanel::ScoreboardClass' has a wrong offset!");
-static_assert(offsetof(UPyBattlePanel, TrainingShowHoldTipsDelayTime) == 0x000648, "Member 'UPyBattlePanel::TrainingShowHoldTipsDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBattlePanel;
 
 // PythonClass PyBattlePanel.PyUIGameFunctionLibraray
 // 0x0000 (0x0030 - 0x0030)
@@ -105,15 +100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIGameFunctionLibraray">();
+		STATIC_CLASS_IMPL("PyUIGameFunctionLibraray")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIGameFunctionLibraray")
 	}
 	static class UPyUIGameFunctionLibraray* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIGameFunctionLibraray>();
 	}
 };
-static_assert(alignof(UPyUIGameFunctionLibraray) == 0x000008, "Wrong alignment on UPyUIGameFunctionLibraray");
-static_assert(sizeof(UPyUIGameFunctionLibraray) == 0x000030, "Wrong size on UPyUIGameFunctionLibraray");
+DUMPER7_ASSERTS_UPyUIGameFunctionLibraray;
 
 }
 

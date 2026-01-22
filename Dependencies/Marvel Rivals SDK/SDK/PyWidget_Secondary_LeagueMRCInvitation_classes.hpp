@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_LeagueMRCInvitation.PyWidget_Secondary_LeagueMRCInvitation
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Secondary_LeagueMRCInvitation final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_LeagueMRCInvitation">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_LeagueMRCInvitation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_LeagueMRCInvitation")
 	}
 	static class UPyWidget_Secondary_LeagueMRCInvitation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_LeagueMRCInvitation>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_LeagueMRCInvitation) == 0x000008, "Wrong alignment on UPyWidget_Secondary_LeagueMRCInvitation");
-static_assert(sizeof(UPyWidget_Secondary_LeagueMRCInvitation) == 0x0005F8, "Wrong size on UPyWidget_Secondary_LeagueMRCInvitation");
+DUMPER7_ASSERTS_UPyWidget_Secondary_LeagueMRCInvitation;
 
 }
 

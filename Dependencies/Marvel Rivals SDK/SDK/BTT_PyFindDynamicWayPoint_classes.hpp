@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyFindDynamicWayPoint">();
+		STATIC_CLASS_IMPL("BTT_PyFindDynamicWayPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyFindDynamicWayPoint")
 	}
 	static class UBTT_PyFindDynamicWayPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyFindDynamicWayPoint>();
 	}
 };
-static_assert(alignof(UBTT_PyFindDynamicWayPoint) == 0x000008, "Wrong alignment on UBTT_PyFindDynamicWayPoint");
-static_assert(sizeof(UBTT_PyFindDynamicWayPoint) == 0x000130, "Wrong size on UBTT_PyFindDynamicWayPoint");
-static_assert(offsetof(UBTT_PyFindDynamicWayPoint, SelectAngleSegment) == 0x0000C0, "Member 'UBTT_PyFindDynamicWayPoint::SelectAngleSegment' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindDynamicWayPoint, InTarget) == 0x0000C8, "Member 'UBTT_PyFindDynamicWayPoint::InTarget' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindDynamicWayPoint, OutDynamicWayPointLocation) == 0x0000F8, "Member 'UBTT_PyFindDynamicWayPoint::OutDynamicWayPointLocation' has a wrong offset!");
-static_assert(offsetof(UBTT_PyFindDynamicWayPoint, EnableLog) == 0x000128, "Member 'UBTT_PyFindDynamicWayPoint::EnableLog' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyFindDynamicWayPoint;
 
 }
 

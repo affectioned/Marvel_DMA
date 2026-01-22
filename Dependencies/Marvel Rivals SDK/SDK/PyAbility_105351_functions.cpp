@@ -543,77 +543,6 @@ void UPySummonedComp_10535101::K2_OnSummonedTakeDamage(class AActor* InSourceAva
 }
 
 
-// PythonFunction PyAbility_105351.PyBuffAbility_10535103.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_10535103::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10535103", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105351.PyBuffAbility_10535103.K2_OnEndAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyBuffAbility_10535103::K2_OnEndAbility(bool bWasCancelled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10535103", "K2_OnEndAbility");
-
-	Params::PyBuffAbility_10535103_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105351.PyCueBuff_Loop_10535104.OnActiveFX
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void APyCueBuff_Loop_10535104::OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCueBuff_Loop_10535104", "OnActiveFX");
-
-	Params::PyCueBuff_Loop_10535104_OnActiveFX Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105351.PyCue_Projectile_10535101.WhileActiveFX
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -680,6 +609,77 @@ void APyCue_Projectile_10535101::OnRemoveFX(class AActor* MyTarget, const struct
 		Func = Class->GetFunction("PyCue_Projectile_10535101", "OnRemoveFX");
 
 	Params::PyCue_Projectile_10535101_OnRemoveFX Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105351.PyBuffAbility_10535103.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_10535103::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10535103", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105351.PyBuffAbility_10535103.K2_OnEndAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyBuffAbility_10535103::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10535103", "K2_OnEndAbility");
+
+	Params::PyBuffAbility_10535103_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105351.PyCueBuff_Loop_10535104.OnActiveFX
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+
+void APyCueBuff_Loop_10535104::OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCueBuff_Loop_10535104", "OnActiveFX");
+
+	Params::PyCueBuff_Loop_10535104_OnActiveFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);

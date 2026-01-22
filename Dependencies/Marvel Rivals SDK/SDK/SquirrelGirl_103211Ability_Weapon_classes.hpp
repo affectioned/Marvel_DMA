@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SquirrelGirl_103211Ability_Weapon.SquirrelGirl_103211Ability_Weapon_C
-// 0x0000 (0x0CB0 - 0x0CB0)
+// 0x0000 (0x0CC0 - 0x0CC0)
 class ASquirrelGirl_103211Ability_Weapon_C final : public AShootingWeapon
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquirrelGirl_103211Ability_Weapon_C">();
+		BP_STATIC_CLASS_IMPL("SquirrelGirl_103211Ability_Weapon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquirrelGirl_103211Ability_Weapon_C")
 	}
 	static class ASquirrelGirl_103211Ability_Weapon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASquirrelGirl_103211Ability_Weapon_C>();
 	}
 };
-static_assert(alignof(ASquirrelGirl_103211Ability_Weapon_C) == 0x000010, "Wrong alignment on ASquirrelGirl_103211Ability_Weapon_C");
-static_assert(sizeof(ASquirrelGirl_103211Ability_Weapon_C) == 0x000CB0, "Wrong size on ASquirrelGirl_103211Ability_Weapon_C");
+DUMPER7_ASSERTS_ASquirrelGirl_103211Ability_Weapon_C;
 
 }
 

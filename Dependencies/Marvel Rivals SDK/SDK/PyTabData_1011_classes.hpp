@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTabData_1011">();
+		STATIC_CLASS_IMPL("PyTabData_1011")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTabData_1011")
 	}
 	static class UPyTabData_1011* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTabData_1011>();
 	}
 };
-static_assert(alignof(UPyTabData_1011) == 0x000008, "Wrong alignment on UPyTabData_1011");
-static_assert(sizeof(UPyTabData_1011) == 0x000050, "Wrong size on UPyTabData_1011");
+DUMPER7_ASSERTS_UPyTabData_1011;
 
 }
 

@@ -74,6 +74,31 @@ void UPyWidget_HeroSystem_Costumes::Destruct()
 }
 
 
+// PythonFunction PyWidget_HeroSystem_Costumes.PyWidget_HeroSystem_Costumes.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_HeroSystem_Costumes::OnCascadingVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_HeroSystem_Costumes", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_HeroSystem_Costumes_OnCascadingVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyWidget_HeroSystem_Costumes.PyWidget_HeroSystem_Costumes.MarvelSetVisible
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:

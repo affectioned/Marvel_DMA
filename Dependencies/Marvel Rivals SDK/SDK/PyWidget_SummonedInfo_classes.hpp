@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SummonedInfo.PyWidget_SummonedNum
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SummonedNum final : public UPyMarvelUserWidget
 {
 public:
@@ -33,23 +33,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SummonedNum">();
+		STATIC_CLASS_IMPL("PyWidget_SummonedNum")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SummonedNum")
 	}
 	static class UPyWidget_SummonedNum* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SummonedNum>();
 	}
 };
-static_assert(alignof(UPyWidget_SummonedNum) == 0x000008, "Wrong alignment on UPyWidget_SummonedNum");
-static_assert(sizeof(UPyWidget_SummonedNum) == 0x0005C0, "Wrong size on UPyWidget_SummonedNum");
+DUMPER7_ASSERTS_UPyWidget_SummonedNum;
 
 // PythonClass PyWidget_SummonedInfo.PyWidget_SummonedHpBar
-// 0x0010 (0x08E0 - 0x08D0)
+// 0x0010 (0x08E8 - 0x08D8)
 class UPyWidget_SummonedHpBar : public UPyWidget_HpBar_V3
 {
 public:
-	class UWidgetAnimation*                       Anim_Radius_FadeIn;                                // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Radius_FadeOut;                               // 0x08D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Radius_FadeIn;                                // 0x08D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Radius_FadeOut;                               // 0x08E0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetTotalHpCur(float InTotalHpCur);
@@ -62,30 +65,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SummonedHpBar">();
+		STATIC_CLASS_IMPL("PyWidget_SummonedHpBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SummonedHpBar")
 	}
 	static class UPyWidget_SummonedHpBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SummonedHpBar>();
 	}
 };
-static_assert(alignof(UPyWidget_SummonedHpBar) == 0x000008, "Wrong alignment on UPyWidget_SummonedHpBar");
-static_assert(sizeof(UPyWidget_SummonedHpBar) == 0x0008E0, "Wrong size on UPyWidget_SummonedHpBar");
-static_assert(offsetof(UPyWidget_SummonedHpBar, Anim_Radius_FadeIn) == 0x0008D0, "Member 'UPyWidget_SummonedHpBar::Anim_Radius_FadeIn' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedHpBar, Anim_Radius_FadeOut) == 0x0008D8, "Member 'UPyWidget_SummonedHpBar::Anim_Radius_FadeOut' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SummonedHpBar;
 
 // PythonClass PyWidget_SummonedInfo.PyWidget_SummonedInfo
-// 0x0030 (0x05D0 - 0x05A0)
+// 0x0030 (0x05D8 - 0x05A8)
 class UPyWidget_SummonedInfo final : public UWidget_MainHpBar
 {
 public:
-	int32                                         UnitHP;                                            // 0x05A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5A4[0x4];                                      // 0x05A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 Img_Icon;                                          // 0x05A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Prog;                                          // 0x05B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_ProgBg;                                        // 0x05B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_HP;                                           // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HBox_Num;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UnitHP;                                            // 0x05A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 Img_Icon;                                          // 0x05B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Prog;                                          // 0x05B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_ProgBg;                                        // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_HP;                                           // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_Num;                                          // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetIsHp(bool InIsHP);
@@ -101,29 +105,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SummonedInfo">();
+		STATIC_CLASS_IMPL("PyWidget_SummonedInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SummonedInfo")
 	}
 	static class UPyWidget_SummonedInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SummonedInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_SummonedInfo) == 0x000008, "Wrong alignment on UPyWidget_SummonedInfo");
-static_assert(sizeof(UPyWidget_SummonedInfo) == 0x0005D0, "Wrong size on UPyWidget_SummonedInfo");
-static_assert(offsetof(UPyWidget_SummonedInfo, UnitHP) == 0x0005A0, "Member 'UPyWidget_SummonedInfo::UnitHP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedInfo, Img_Icon) == 0x0005A8, "Member 'UPyWidget_SummonedInfo::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedInfo, Img_Prog) == 0x0005B0, "Member 'UPyWidget_SummonedInfo::Img_Prog' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedInfo, Img_ProgBg) == 0x0005B8, "Member 'UPyWidget_SummonedInfo::Img_ProgBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedInfo, Text_HP) == 0x0005C0, "Member 'UPyWidget_SummonedInfo::Text_HP' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SummonedInfo, HBox_Num) == 0x0005C8, "Member 'UPyWidget_SummonedInfo::HBox_Num' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SummonedInfo;
 
 // PythonClass PyWidget_SummonedInfo.PyWidget_SummonedInfoPanel
-// 0x0008 (0x05C8 - 0x05C0)
-class UPyWidget_SummonedInfoPanel : public UPyMarvelUserWidget
+// 0x0008 (0x05D0 - 0x05C8)
+class UPyWidget_SummonedInfoPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPyWidget_SummonedInfo*                 Widget_SummonedInfo;                               // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyWidget_SummonedInfo*                 Widget_SummonedInfo;                               // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -141,16 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SummonedInfoPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SummonedInfoPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SummonedInfoPanel")
 	}
 	static class UPyWidget_SummonedInfoPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SummonedInfoPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SummonedInfoPanel) == 0x000008, "Wrong alignment on UPyWidget_SummonedInfoPanel");
-static_assert(sizeof(UPyWidget_SummonedInfoPanel) == 0x0005C8, "Wrong size on UPyWidget_SummonedInfoPanel");
-static_assert(offsetof(UPyWidget_SummonedInfoPanel, Widget_SummonedInfo) == 0x0005C0, "Member 'UPyWidget_SummonedInfoPanel::Widget_SummonedInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SummonedInfoPanel;
 
 }
 

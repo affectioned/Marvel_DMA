@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_InactivityPanel.PyWidget_InactivityPanel
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_InactivityPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AKEvent_StartWarning;                              // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_EndWarning;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_StartCountDown;                            // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_EndCountDown;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AKEvent_StartWarning;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_EndWarning;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_StartCountDown;                            // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_EndCountDown;                              // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -33,19 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InactivityPanel">();
+		STATIC_CLASS_IMPL("PyWidget_InactivityPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InactivityPanel")
 	}
 	static class UPyWidget_InactivityPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InactivityPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_InactivityPanel) == 0x000008, "Wrong alignment on UPyWidget_InactivityPanel");
-static_assert(sizeof(UPyWidget_InactivityPanel) == 0x0005E0, "Wrong size on UPyWidget_InactivityPanel");
-static_assert(offsetof(UPyWidget_InactivityPanel, AKEvent_StartWarning) == 0x0005C0, "Member 'UPyWidget_InactivityPanel::AKEvent_StartWarning' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InactivityPanel, AKEvent_EndWarning) == 0x0005C8, "Member 'UPyWidget_InactivityPanel::AKEvent_EndWarning' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InactivityPanel, AKEvent_StartCountDown) == 0x0005D0, "Member 'UPyWidget_InactivityPanel::AKEvent_StartCountDown' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InactivityPanel, AKEvent_EndCountDown) == 0x0005D8, "Member 'UPyWidget_InactivityPanel::AKEvent_EndCountDown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InactivityPanel;
 
 }
 

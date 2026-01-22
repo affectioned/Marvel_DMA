@@ -1331,6 +1331,31 @@ void AScope_Cue_Loop_10158203::OnDevourStateChanged(EDevourState_101582 InState)
 }
 
 
+// Function Hero_1015.Cue_Scope_Loop_10158204.InitSkeletalMeshAsset
+// (Final, Native, Public)
+// Parameters:
+// int32                                   SculptID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_Scope_Loop_10158204::InitSkeletalMeshAsset(int32 SculptID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Scope_Loop_10158204", "InitSkeletalMeshAsset");
+
+	Params::Cue_Scope_Loop_10158204_InitSkeletalMeshAsset Parms{};
+
+	Parms.SculptID = SculptID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1015.SelectRegionCameraActor.OnRep_bIsActive
 // (Final, Native, Public)
 

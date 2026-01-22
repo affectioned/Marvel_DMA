@@ -28,14 +28,7 @@ public:
 	bool                                          VSyncOffRequired;                                  // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HardwareSchedulingRequired;                        // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibrary_BreakStreamlineFeatureRequirements) == 0x000001, "Wrong alignment on StreamlineLibrary_BreakStreamlineFeatureRequirements");
-static_assert(sizeof(StreamlineLibrary_BreakStreamlineFeatureRequirements) == 0x000006, "Wrong size on StreamlineLibrary_BreakStreamlineFeatureRequirements");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, Requirements) == 0x000000, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::Requirements' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, D3D11Supported) == 0x000001, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::D3D11Supported' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, D3D12Supported) == 0x000002, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::D3D12Supported' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, VulkanSupported) == 0x000003, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::VulkanSupported' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, VSyncOffRequired) == 0x000004, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::VSyncOffRequired' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_BreakStreamlineFeatureRequirements, HardwareSchedulingRequired) == 0x000005, "Member 'StreamlineLibrary_BreakStreamlineFeatureRequirements::HardwareSchedulingRequired' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibrary_BreakStreamlineFeatureRequirements;
 
 // Function StreamlineBlueprint.StreamlineLibrary.GetStreamlineFeatureInformation
 // 0x0038 (0x0038 - 0x0000)
@@ -46,10 +39,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStreamlineFeatureRequirements         ReturnValue;                                       // 0x0004(0x0034)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibrary_GetStreamlineFeatureInformation) == 0x000004, "Wrong alignment on StreamlineLibrary_GetStreamlineFeatureInformation");
-static_assert(sizeof(StreamlineLibrary_GetStreamlineFeatureInformation) == 0x000038, "Wrong size on StreamlineLibrary_GetStreamlineFeatureInformation");
-static_assert(offsetof(StreamlineLibrary_GetStreamlineFeatureInformation, Feature) == 0x000000, "Member 'StreamlineLibrary_GetStreamlineFeatureInformation::Feature' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_GetStreamlineFeatureInformation, ReturnValue) == 0x000004, "Member 'StreamlineLibrary_GetStreamlineFeatureInformation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibrary_GetStreamlineFeatureInformation;
 
 // Function StreamlineBlueprint.StreamlineLibrary.IsStreamlineFeatureSupported
 // 0x0002 (0x0002 - 0x0000)
@@ -59,10 +49,7 @@ public:
 	EUStreamlineFeature                           Feature;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibrary_IsStreamlineFeatureSupported) == 0x000001, "Wrong alignment on StreamlineLibrary_IsStreamlineFeatureSupported");
-static_assert(sizeof(StreamlineLibrary_IsStreamlineFeatureSupported) == 0x000002, "Wrong size on StreamlineLibrary_IsStreamlineFeatureSupported");
-static_assert(offsetof(StreamlineLibrary_IsStreamlineFeatureSupported, Feature) == 0x000000, "Member 'StreamlineLibrary_IsStreamlineFeatureSupported::Feature' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_IsStreamlineFeatureSupported, ReturnValue) == 0x000001, "Member 'StreamlineLibrary_IsStreamlineFeatureSupported::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibrary_IsStreamlineFeatureSupported;
 
 // Function StreamlineBlueprint.StreamlineLibrary.QueryStreamlineFeatureSupport
 // 0x0002 (0x0002 - 0x0000)
@@ -72,10 +59,7 @@ public:
 	EUStreamlineFeature                           Feature;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EUStreamlineFeatureSupport                    ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibrary_QueryStreamlineFeatureSupport) == 0x000001, "Wrong alignment on StreamlineLibrary_QueryStreamlineFeatureSupport");
-static_assert(sizeof(StreamlineLibrary_QueryStreamlineFeatureSupport) == 0x000002, "Wrong size on StreamlineLibrary_QueryStreamlineFeatureSupport");
-static_assert(offsetof(StreamlineLibrary_QueryStreamlineFeatureSupport, Feature) == 0x000000, "Member 'StreamlineLibrary_QueryStreamlineFeatureSupport::Feature' has a wrong offset!");
-static_assert(offsetof(StreamlineLibrary_QueryStreamlineFeatureSupport, ReturnValue) == 0x000001, "Member 'StreamlineLibrary_QueryStreamlineFeatureSupport::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibrary_QueryStreamlineFeatureSupport;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetDefaultDLSSGMode
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +68,7 @@ struct StreamlineLibraryDLSSG_GetDefaultDLSSGMode final
 public:
 	EUStreamlineDLSSGMode                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetDefaultDLSSGMode) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_GetDefaultDLSSGMode");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetDefaultDLSSGMode) == 0x000001, "Wrong size on StreamlineLibraryDLSSG_GetDefaultDLSSGMode");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDefaultDLSSGMode, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetDefaultDLSSGMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetDefaultDLSSGMode;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetDLSSGFrameTiming
 // 0x0008 (0x0008 - 0x0000)
@@ -96,10 +78,7 @@ public:
 	float                                         FrameRateInHertz;                                  // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         FramesPresented;                                   // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetDLSSGFrameTiming) == 0x000004, "Wrong alignment on StreamlineLibraryDLSSG_GetDLSSGFrameTiming");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetDLSSGFrameTiming) == 0x000008, "Wrong size on StreamlineLibraryDLSSG_GetDLSSGFrameTiming");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGFrameTiming, FrameRateInHertz) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetDLSSGFrameTiming::FrameRateInHertz' has a wrong offset!");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGFrameTiming, FramesPresented) == 0x000004, "Member 'StreamlineLibraryDLSSG_GetDLSSGFrameTiming::FramesPresented' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetDLSSGFrameTiming;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetDLSSGGeneratedFramesRange
 // 0x0008 (0x0008 - 0x0000)
@@ -109,10 +88,7 @@ public:
 	int32                                         MinNumGeneratedFrames;                             // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxNumGeneratedFrames;                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange) == 0x000004, "Wrong alignment on StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange) == 0x000008, "Wrong size on StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange, MinNumGeneratedFrames) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange::MinNumGeneratedFrames' has a wrong offset!");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange, MaxNumGeneratedFrames) == 0x000004, "Member 'StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange::MaxNumGeneratedFrames' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetDLSSGGeneratedFramesRange;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetDLSSGMode
 // 0x0001 (0x0001 - 0x0000)
@@ -121,9 +97,7 @@ struct StreamlineLibraryDLSSG_GetDLSSGMode final
 public:
 	EUStreamlineDLSSGMode                         ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetDLSSGMode) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_GetDLSSGMode");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetDLSSGMode) == 0x000001, "Wrong size on StreamlineLibraryDLSSG_GetDLSSGMode");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGMode, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetDLSSGMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetDLSSGMode;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetDLSSGNumberOfFramestoGenerate
 // 0x0004 (0x0004 - 0x0000)
@@ -132,9 +106,7 @@ struct StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate) == 0x000004, "Wrong alignment on StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate) == 0x000004, "Wrong size on StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetDLSSGNumberOfFramestoGenerate;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.GetSupportedDLSSGModes
 // 0x0010 (0x0010 - 0x0000)
@@ -143,9 +115,7 @@ struct StreamlineLibraryDLSSG_GetSupportedDLSSGModes final
 public:
 	TArray<EUStreamlineDLSSGMode>                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_GetSupportedDLSSGModes) == 0x000008, "Wrong alignment on StreamlineLibraryDLSSG_GetSupportedDLSSGModes");
-static_assert(sizeof(StreamlineLibraryDLSSG_GetSupportedDLSSGModes) == 0x000010, "Wrong size on StreamlineLibraryDLSSG_GetSupportedDLSSGModes");
-static_assert(offsetof(StreamlineLibraryDLSSG_GetSupportedDLSSGModes, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_GetSupportedDLSSGModes::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_GetSupportedDLSSGModes;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.IsDLSSGModeSupported
 // 0x0002 (0x0002 - 0x0000)
@@ -155,10 +125,7 @@ public:
 	EUStreamlineDLSSGMode                         DLSSGMode;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_IsDLSSGModeSupported) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_IsDLSSGModeSupported");
-static_assert(sizeof(StreamlineLibraryDLSSG_IsDLSSGModeSupported) == 0x000002, "Wrong size on StreamlineLibraryDLSSG_IsDLSSGModeSupported");
-static_assert(offsetof(StreamlineLibraryDLSSG_IsDLSSGModeSupported, DLSSGMode) == 0x000000, "Member 'StreamlineLibraryDLSSG_IsDLSSGModeSupported::DLSSGMode' has a wrong offset!");
-static_assert(offsetof(StreamlineLibraryDLSSG_IsDLSSGModeSupported, ReturnValue) == 0x000001, "Member 'StreamlineLibraryDLSSG_IsDLSSGModeSupported::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_IsDLSSGModeSupported;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.IsDLSSGSupported
 // 0x0001 (0x0001 - 0x0000)
@@ -167,9 +134,7 @@ struct StreamlineLibraryDLSSG_IsDLSSGSupported final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_IsDLSSGSupported) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_IsDLSSGSupported");
-static_assert(sizeof(StreamlineLibraryDLSSG_IsDLSSGSupported) == 0x000001, "Wrong size on StreamlineLibraryDLSSG_IsDLSSGSupported");
-static_assert(offsetof(StreamlineLibraryDLSSG_IsDLSSGSupported, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_IsDLSSGSupported::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_IsDLSSGSupported;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.QueryDLSSGSupport
 // 0x0001 (0x0001 - 0x0000)
@@ -178,9 +143,7 @@ struct StreamlineLibraryDLSSG_QueryDLSSGSupport final
 public:
 	EUStreamlineFeatureSupport                    ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_QueryDLSSGSupport) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_QueryDLSSGSupport");
-static_assert(sizeof(StreamlineLibraryDLSSG_QueryDLSSGSupport) == 0x000001, "Wrong size on StreamlineLibraryDLSSG_QueryDLSSGSupport");
-static_assert(offsetof(StreamlineLibraryDLSSG_QueryDLSSGSupport, ReturnValue) == 0x000000, "Member 'StreamlineLibraryDLSSG_QueryDLSSGSupport::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_QueryDLSSGSupport;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.SetDLSSGMode
 // 0x0001 (0x0001 - 0x0000)
@@ -189,9 +152,7 @@ struct StreamlineLibraryDLSSG_SetDLSSGMode final
 public:
 	EUStreamlineDLSSGMode                         DLSSGMode;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_SetDLSSGMode) == 0x000001, "Wrong alignment on StreamlineLibraryDLSSG_SetDLSSGMode");
-static_assert(sizeof(StreamlineLibraryDLSSG_SetDLSSGMode) == 0x000001, "Wrong size on StreamlineLibraryDLSSG_SetDLSSGMode");
-static_assert(offsetof(StreamlineLibraryDLSSG_SetDLSSGMode, DLSSGMode) == 0x000000, "Member 'StreamlineLibraryDLSSG_SetDLSSGMode::DLSSGMode' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_SetDLSSGMode;
 
 // Function StreamlineBlueprint.StreamlineLibraryDLSSG.SetDLSSGNumberOfFramestoGenerate
 // 0x0004 (0x0004 - 0x0000)
@@ -200,9 +161,7 @@ struct StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate final
 public:
 	int32                                         NumberOfFrames;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate) == 0x000004, "Wrong alignment on StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate");
-static_assert(sizeof(StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate) == 0x000004, "Wrong size on StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate");
-static_assert(offsetof(StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate, NumberOfFrames) == 0x000000, "Member 'StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate::NumberOfFrames' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryDLSSG_SetDLSSGNumberOfFramestoGenerate;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.GetDefaultReflexMode
 // 0x0001 (0x0001 - 0x0000)
@@ -211,9 +170,7 @@ struct StreamlineLibraryReflex_GetDefaultReflexMode final
 public:
 	EUStreamlineReflexMode                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_GetDefaultReflexMode) == 0x000001, "Wrong alignment on StreamlineLibraryReflex_GetDefaultReflexMode");
-static_assert(sizeof(StreamlineLibraryReflex_GetDefaultReflexMode) == 0x000001, "Wrong size on StreamlineLibraryReflex_GetDefaultReflexMode");
-static_assert(offsetof(StreamlineLibraryReflex_GetDefaultReflexMode, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_GetDefaultReflexMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_GetDefaultReflexMode;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.GetGameLatencyInMs
 // 0x0004 (0x0004 - 0x0000)
@@ -222,9 +179,7 @@ struct StreamlineLibraryReflex_GetGameLatencyInMs final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_GetGameLatencyInMs) == 0x000004, "Wrong alignment on StreamlineLibraryReflex_GetGameLatencyInMs");
-static_assert(sizeof(StreamlineLibraryReflex_GetGameLatencyInMs) == 0x000004, "Wrong size on StreamlineLibraryReflex_GetGameLatencyInMs");
-static_assert(offsetof(StreamlineLibraryReflex_GetGameLatencyInMs, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_GetGameLatencyInMs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_GetGameLatencyInMs;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.GetGameToRenderLatencyInMs
 // 0x0004 (0x0004 - 0x0000)
@@ -233,9 +188,7 @@ struct StreamlineLibraryReflex_GetGameToRenderLatencyInMs final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_GetGameToRenderLatencyInMs) == 0x000004, "Wrong alignment on StreamlineLibraryReflex_GetGameToRenderLatencyInMs");
-static_assert(sizeof(StreamlineLibraryReflex_GetGameToRenderLatencyInMs) == 0x000004, "Wrong size on StreamlineLibraryReflex_GetGameToRenderLatencyInMs");
-static_assert(offsetof(StreamlineLibraryReflex_GetGameToRenderLatencyInMs, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_GetGameToRenderLatencyInMs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_GetGameToRenderLatencyInMs;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.GetReflexMode
 // 0x0001 (0x0001 - 0x0000)
@@ -244,9 +197,7 @@ struct StreamlineLibraryReflex_GetReflexMode final
 public:
 	EUStreamlineReflexMode                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_GetReflexMode) == 0x000001, "Wrong alignment on StreamlineLibraryReflex_GetReflexMode");
-static_assert(sizeof(StreamlineLibraryReflex_GetReflexMode) == 0x000001, "Wrong size on StreamlineLibraryReflex_GetReflexMode");
-static_assert(offsetof(StreamlineLibraryReflex_GetReflexMode, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_GetReflexMode::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_GetReflexMode;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.GetRenderLatencyInMs
 // 0x0004 (0x0004 - 0x0000)
@@ -255,9 +206,7 @@ struct StreamlineLibraryReflex_GetRenderLatencyInMs final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_GetRenderLatencyInMs) == 0x000004, "Wrong alignment on StreamlineLibraryReflex_GetRenderLatencyInMs");
-static_assert(sizeof(StreamlineLibraryReflex_GetRenderLatencyInMs) == 0x000004, "Wrong size on StreamlineLibraryReflex_GetRenderLatencyInMs");
-static_assert(offsetof(StreamlineLibraryReflex_GetRenderLatencyInMs, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_GetRenderLatencyInMs::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_GetRenderLatencyInMs;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.IsReflexSupported
 // 0x0001 (0x0001 - 0x0000)
@@ -266,9 +215,7 @@ struct StreamlineLibraryReflex_IsReflexSupported final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_IsReflexSupported) == 0x000001, "Wrong alignment on StreamlineLibraryReflex_IsReflexSupported");
-static_assert(sizeof(StreamlineLibraryReflex_IsReflexSupported) == 0x000001, "Wrong size on StreamlineLibraryReflex_IsReflexSupported");
-static_assert(offsetof(StreamlineLibraryReflex_IsReflexSupported, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_IsReflexSupported::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_IsReflexSupported;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.QueryReflexSupport
 // 0x0001 (0x0001 - 0x0000)
@@ -277,9 +224,7 @@ struct StreamlineLibraryReflex_QueryReflexSupport final
 public:
 	EUStreamlineFeatureSupport                    ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_QueryReflexSupport) == 0x000001, "Wrong alignment on StreamlineLibraryReflex_QueryReflexSupport");
-static_assert(sizeof(StreamlineLibraryReflex_QueryReflexSupport) == 0x000001, "Wrong size on StreamlineLibraryReflex_QueryReflexSupport");
-static_assert(offsetof(StreamlineLibraryReflex_QueryReflexSupport, ReturnValue) == 0x000000, "Member 'StreamlineLibraryReflex_QueryReflexSupport::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_QueryReflexSupport;
 
 // Function StreamlineBlueprint.StreamlineLibraryReflex.SetReflexMode
 // 0x0001 (0x0001 - 0x0000)
@@ -288,9 +233,7 @@ struct StreamlineLibraryReflex_SetReflexMode final
 public:
 	EUStreamlineReflexMode                        Mode;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(StreamlineLibraryReflex_SetReflexMode) == 0x000001, "Wrong alignment on StreamlineLibraryReflex_SetReflexMode");
-static_assert(sizeof(StreamlineLibraryReflex_SetReflexMode) == 0x000001, "Wrong size on StreamlineLibraryReflex_SetReflexMode");
-static_assert(offsetof(StreamlineLibraryReflex_SetReflexMode, Mode) == 0x000000, "Member 'StreamlineLibraryReflex_SetReflexMode::Mode' has a wrong offset!");
+DUMPER7_ASSERTS_StreamlineLibraryReflex_SetReflexMode;
 
 }
 

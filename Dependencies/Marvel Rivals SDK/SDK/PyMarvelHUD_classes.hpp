@@ -33,7 +33,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelHUD">();
+		STATIC_CLASS_IMPL("PyMarvelHUD")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelHUD")
 	}
 	static class APyMarvelHUD* GetDefaultObj()
 	{
@@ -41,9 +45,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyMarvelHUD) == 0x000010, "Wrong alignment on APyMarvelHUD");
-static_assert(sizeof(APyMarvelHUD) == 0x000950, "Wrong size on APyMarvelHUD");
-static_assert(offsetof(APyMarvelHUD, UIActionMappingContextBP) == 0x000940, "Member 'APyMarvelHUD::UIActionMappingContextBP' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelHUD;
 
 }
 

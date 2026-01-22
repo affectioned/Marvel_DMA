@@ -21,9 +21,7 @@ struct PyWidget_HeroSystem_Info_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Info_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_HeroSystem_Info_MarvelSetVisible");
-static_assert(sizeof(PyWidget_HeroSystem_Info_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_HeroSystem_Info_MarvelSetVisible");
-static_assert(offsetof(PyWidget_HeroSystem_Info_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_HeroSystem_Info_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Info_MarvelSetVisible;
 
 // PythonFunction PyWidget_HeroSystem_Info.PyWidget_HeroSystem_Info.GetAutoTestDebugName
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_HeroSystem_Info_GetAutoTestDebugName final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HeroSystem_Info_GetAutoTestDebugName) == 0x000008, "Wrong alignment on PyWidget_HeroSystem_Info_GetAutoTestDebugName");
-static_assert(sizeof(PyWidget_HeroSystem_Info_GetAutoTestDebugName) == 0x000010, "Wrong size on PyWidget_HeroSystem_Info_GetAutoTestDebugName");
-static_assert(offsetof(PyWidget_HeroSystem_Info_GetAutoTestDebugName, ReturnValue) == 0x000000, "Member 'PyWidget_HeroSystem_Info_GetAutoTestDebugName::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HeroSystem_Info_GetAutoTestDebugName;
 
 }
 

@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceTutorialSimpleConfig">();
+		STATIC_CLASS_IMPL("PyNoviceTutorialSimpleConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceTutorialSimpleConfig")
 	}
 	static class UPyNoviceTutorialSimpleConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNoviceTutorialSimpleConfig>();
 	}
 };
-static_assert(alignof(UPyNoviceTutorialSimpleConfig) == 0x000008, "Wrong alignment on UPyNoviceTutorialSimpleConfig");
-static_assert(sizeof(UPyNoviceTutorialSimpleConfig) == 0x000050, "Wrong size on UPyNoviceTutorialSimpleConfig");
-static_assert(offsetof(UPyNoviceTutorialSimpleConfig, GradeLimit) == 0x000038, "Member 'UPyNoviceTutorialSimpleConfig::GradeLimit' has a wrong offset!");
-static_assert(offsetof(UPyNoviceTutorialSimpleConfig, GamePlayModeIDList) == 0x000040, "Member 'UPyNoviceTutorialSimpleConfig::GamePlayModeIDList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyNoviceTutorialSimpleConfig;
 
 }
 

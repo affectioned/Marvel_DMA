@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_RefreshBtn.PyWidget_Halloween_RefreshBtn
-// 0x0020 (0x08E0 - 0x08C0)
+// 0x0020 (0x0940 - 0x0920)
 class UPyWidget_Halloween_RefreshBtn final : public UPyWidget_BaseCommonButton
 {
 public:
-	struct FSlateColor                            EnoughColor;                                       // 0x08B8(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NoEnoughColor;                                     // 0x08CC(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            EnoughColor;                                       // 0x0918(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NoEnoughColor;                                     // 0x092C(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_RefreshBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_RefreshBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_RefreshBtn")
 	}
 	static class UPyWidget_Halloween_RefreshBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_RefreshBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_RefreshBtn) == 0x000010, "Wrong alignment on UPyWidget_Halloween_RefreshBtn");
-static_assert(sizeof(UPyWidget_Halloween_RefreshBtn) == 0x0008E0, "Wrong size on UPyWidget_Halloween_RefreshBtn");
-static_assert(offsetof(UPyWidget_Halloween_RefreshBtn, EnoughColor) == 0x0008B8, "Member 'UPyWidget_Halloween_RefreshBtn::EnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_RefreshBtn, NoEnoughColor) == 0x0008CC, "Member 'UPyWidget_Halloween_RefreshBtn::NoEnoughColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_RefreshBtn;
 
 }
 

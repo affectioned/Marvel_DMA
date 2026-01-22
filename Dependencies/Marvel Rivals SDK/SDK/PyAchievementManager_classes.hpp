@@ -23,15 +23,18 @@ class UPyAchievementManager final : public UAchievementManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAchievementManager">();
+		STATIC_CLASS_IMPL("PyAchievementManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAchievementManager")
 	}
 	static class UPyAchievementManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAchievementManager>();
 	}
 };
-static_assert(alignof(UPyAchievementManager) == 0x000008, "Wrong alignment on UPyAchievementManager");
-static_assert(sizeof(UPyAchievementManager) == 0x0000B0, "Wrong size on UPyAchievementManager");
+DUMPER7_ASSERTS_UPyAchievementManager;
 
 }
 

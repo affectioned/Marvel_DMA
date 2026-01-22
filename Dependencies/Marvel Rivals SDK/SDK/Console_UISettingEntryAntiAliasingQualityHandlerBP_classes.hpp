@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Console_UISettingEntryAntiAliasingQualityHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("Console_UISettingEntryAntiAliasingQualityHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Console_UISettingEntryAntiAliasingQualityHandlerBP_C")
 	}
 	static class UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C>();
 	}
 };
-static_assert(alignof(UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C) == 0x000008, "Wrong alignment on UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C");
-static_assert(sizeof(UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C) == 0x000038, "Wrong size on UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C");
-static_assert(offsetof(UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C::UberGraphFrame' has a wrong offset!");
+DUMPER7_ASSERTS_UConsole_UISettingEntryAntiAliasingQualityHandlerBP_C;
 
 }
 

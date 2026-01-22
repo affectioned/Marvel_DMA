@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Team_ManagementInvitationList.PyWidget_Secondary_Team_ManagementInvitationList
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Secondary_Team_ManagementInvitationList final : public UPyWidget_SecondaryChildBase
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ClickAkEvent;                                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ClickAkEvent;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Team_ManagementInvitationList">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Team_ManagementInvitationList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Team_ManagementInvitationList")
 	}
 	static class UPyWidget_Secondary_Team_ManagementInvitationList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Team_ManagementInvitationList>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Team_ManagementInvitationList) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Team_ManagementInvitationList");
-static_assert(sizeof(UPyWidget_Secondary_Team_ManagementInvitationList) == 0x0005C8, "Wrong size on UPyWidget_Secondary_Team_ManagementInvitationList");
-static_assert(offsetof(UPyWidget_Secondary_Team_ManagementInvitationList, ClickAkEvent) == 0x0005C0, "Member 'UPyWidget_Secondary_Team_ManagementInvitationList::ClickAkEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Team_ManagementInvitationList;
 
 }
 

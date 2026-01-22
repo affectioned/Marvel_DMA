@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_402451.PySummonedComp_40245101
-// 0x0000 (0x0E30 - 0x0E30)
+// 0x0000 (0x0E88 - 0x0E88)
 class UPySummonedComp_40245101 final : public UProtectiveSummonedComponent
 {
 public:
@@ -29,15 +29,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_40245101">();
+		STATIC_CLASS_IMPL("PySummonedComp_40245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_40245101")
 	}
 	static class UPySummonedComp_40245101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_40245101>();
 	}
 };
-static_assert(alignof(UPySummonedComp_40245101) == 0x000008, "Wrong alignment on UPySummonedComp_40245101");
-static_assert(sizeof(UPySummonedComp_40245101) == 0x000E30, "Wrong size on UPySummonedComp_40245101");
+DUMPER7_ASSERTS_UPySummonedComp_40245101;
+
+// PythonClass PyAbility_10130_402451.PyCue_Scope_Start_40245101
+// 0x0028 (0x04A0 - 0x0478)
+class UPyCue_Scope_Start_40245101 final : public UMarvelCueNotify_StaticScope
+{
+public:
+	class UFXSystemAsset*                         ExplodeFxSelf;                                     // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ExplodeFxOther;                                    // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ExpldeFxOffset;                                    // 0x0488(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_40245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_40245101")
+	}
+	static class UPyCue_Scope_Start_40245101* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyCue_Scope_Start_40245101>();
+	}
+};
+DUMPER7_ASSERTS_UPyCue_Scope_Start_40245101;
 
 // PythonClass PyAbility_10130_402451.PyConfig_402451
 // 0x0038 (0x00D0 - 0x0098)
@@ -57,27 +88,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_402451">();
+		STATIC_CLASS_IMPL("PyConfig_402451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_402451")
 	}
 	static class UPyConfig_402451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_402451>();
 	}
 };
-static_assert(alignof(UPyConfig_402451) == 0x000008, "Wrong alignment on UPyConfig_402451");
-static_assert(sizeof(UPyConfig_402451) == 0x0000D0, "Wrong size on UPyConfig_402451");
-static_assert(offsetof(UPyConfig_402451, LocationList) == 0x000098, "Member 'UPyConfig_402451::LocationList' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, ScopeSpawnIntervalCurve) == 0x0000A8, "Member 'UPyConfig_402451::ScopeSpawnIntervalCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, ScopeDamageIncrementCurve) == 0x0000B0, "Member 'UPyConfig_402451::ScopeDamageIncrementCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, IntervalToGenerateControlScope) == 0x0000B8, "Member 'UPyConfig_402451::IntervalToGenerateControlScope' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, ScopeId) == 0x0000BC, "Member 'UPyConfig_402451::ScopeId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, ControlScopeId) == 0x0000C0, "Member 'UPyConfig_402451::ControlScopeId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, DizzyBuffId) == 0x0000C4, "Member 'UPyConfig_402451::DizzyBuffId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, VulnerableBuffId) == 0x0000C8, "Member 'UPyConfig_402451::VulnerableBuffId' has a wrong offset!");
-static_assert(offsetof(UPyConfig_402451, DominantBuffId) == 0x0000CC, "Member 'UPyConfig_402451::DominantBuffId' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_402451;
 
 // PythonClass PyAbility_10130_402451.PyAbility_402451
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_402451 final : public UAbility_402451
 {
 public:
@@ -95,23 +120,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_402451">();
+		STATIC_CLASS_IMPL("PyAbility_402451")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_402451")
 	}
 	static class UPyAbility_402451* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_402451>();
 	}
 };
-static_assert(alignof(UPyAbility_402451) == 0x000008, "Wrong alignment on UPyAbility_402451");
-static_assert(sizeof(UPyAbility_402451) == 0x0029F8, "Wrong size on UPyAbility_402451");
+DUMPER7_ASSERTS_UPyAbility_402451;
 
 // PythonClass PyAbility_10130_402451.PyCue_Scope_HitImpact_40245101
-// 0x0018 (0x05E0 - 0x05C8)
+// 0x0018 (0x0600 - 0x05E8)
 class UPyCue_Scope_HitImpact_40245101 final : public UMarvelCueNotify_HitImpact
 {
 public:
-	class UFXSystemAsset*                         ChainFx;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   FxEndLocParam;                                     // 0x05D0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         ChainFx;                                           // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FxEndLocParam;                                     // 0x05F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
@@ -119,45 +147,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_40245101">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_40245101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_40245101")
 	}
 	static class UPyCue_Scope_HitImpact_40245101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_40245101>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_40245101) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_40245101");
-static_assert(sizeof(UPyCue_Scope_HitImpact_40245101) == 0x0005E0, "Wrong size on UPyCue_Scope_HitImpact_40245101");
-static_assert(offsetof(UPyCue_Scope_HitImpact_40245101, ChainFx) == 0x0005C8, "Member 'UPyCue_Scope_HitImpact_40245101::ChainFx' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_HitImpact_40245101, FxEndLocParam) == 0x0005D0, "Member 'UPyCue_Scope_HitImpact_40245101::FxEndLocParam' has a wrong offset!");
-
-// PythonClass PyAbility_10130_402451.PyCue_Scope_Start_40245101
-// 0x0028 (0x04A0 - 0x0478)
-class UPyCue_Scope_Start_40245101 final : public UMarvelCueNotify_StaticScope
-{
-public:
-	class UFXSystemAsset*                         ExplodeFxSelf;                                     // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         ExplodeFxOther;                                    // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ExpldeFxOffset;                                    // 0x0488(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyCue_Scope_Start_40245101">();
-	}
-	static class UPyCue_Scope_Start_40245101* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyCue_Scope_Start_40245101>();
-	}
-};
-static_assert(alignof(UPyCue_Scope_Start_40245101) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_40245101");
-static_assert(sizeof(UPyCue_Scope_Start_40245101) == 0x0004A0, "Wrong size on UPyCue_Scope_Start_40245101");
-static_assert(offsetof(UPyCue_Scope_Start_40245101, ExplodeFxSelf) == 0x000478, "Member 'UPyCue_Scope_Start_40245101::ExplodeFxSelf' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_40245101, ExplodeFxOther) == 0x000480, "Member 'UPyCue_Scope_Start_40245101::ExplodeFxOther' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_40245101, ExpldeFxOffset) == 0x000488, "Member 'UPyCue_Scope_Start_40245101::ExpldeFxOffset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_40245101;
 
 }
 

@@ -18,28 +18,30 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105841.PyConfig_105841
-// 0x0BC8 (0x0C60 - 0x0098)
+// 0x0EE8 (0x0F80 - 0x0098)
 class UPyConfig_105841 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105841">();
+		STATIC_CLASS_IMPL("PyConfig_105841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105841")
 	}
 	static class UPyConfig_105841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105841>();
 	}
 };
-static_assert(alignof(UPyConfig_105841) == 0x000008, "Wrong alignment on UPyConfig_105841");
-static_assert(sizeof(UPyConfig_105841) == 0x000C60, "Wrong size on UPyConfig_105841");
-static_assert(offsetof(UPyConfig_105841, DashInfo) == 0x000098, "Member 'UPyConfig_105841::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105841;
 
 // PythonClass PyAbility_105841.PyAbility_105841
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105841 : public UAbility_108
 {
 public:
@@ -51,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105841">();
+		STATIC_CLASS_IMPL("PyAbility_105841")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105841")
 	}
 	static class UPyAbility_105841* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105841>();
 	}
 };
-static_assert(alignof(UPyAbility_105841) == 0x000008, "Wrong alignment on UPyAbility_105841");
-static_assert(sizeof(UPyAbility_105841) == 0x0029F8, "Wrong size on UPyAbility_105841");
+DUMPER7_ASSERTS_UPyAbility_105841;
 
 }
 

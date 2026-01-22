@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SecondaryChildBase.PyWidget_SecondaryChildBase
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_SecondaryChildBase : public UPyMarvelUserWidget
 {
@@ -27,7 +27,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SecondaryChildBase">();
+		STATIC_CLASS_IMPL("PyWidget_SecondaryChildBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SecondaryChildBase")
 	}
 	static class UPyWidget_SecondaryChildBase* GetDefaultObj()
 	{
@@ -35,8 +39,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_SecondaryChildBase) == 0x000008, "Wrong alignment on UPyWidget_SecondaryChildBase");
-static_assert(sizeof(UPyWidget_SecondaryChildBase) == 0x0005C0, "Wrong size on UPyWidget_SecondaryChildBase");
+DUMPER7_ASSERTS_UPyWidget_SecondaryChildBase;
 
 }
 

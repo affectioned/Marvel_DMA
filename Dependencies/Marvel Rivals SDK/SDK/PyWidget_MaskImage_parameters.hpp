@@ -21,9 +21,7 @@ struct PyWidget_MaskImage_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MaskImage_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_MaskImage_PreConstruct");
-static_assert(sizeof(PyWidget_MaskImage_PreConstruct) == 0x000001, "Wrong size on PyWidget_MaskImage_PreConstruct");
-static_assert(offsetof(PyWidget_MaskImage_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_MaskImage_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MaskImage_PreConstruct;
 
 // PythonFunction PyWidget_MaskImage.PyWidget_MaskImage.SetTexture
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_MaskImage_SetTexture final
 public:
 	class UTexture2D*                             Texture_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MaskImage_SetTexture) == 0x000008, "Wrong alignment on PyWidget_MaskImage_SetTexture");
-static_assert(sizeof(PyWidget_MaskImage_SetTexture) == 0x000008, "Wrong size on PyWidget_MaskImage_SetTexture");
-static_assert(offsetof(PyWidget_MaskImage_SetTexture, Texture_0) == 0x000000, "Member 'PyWidget_MaskImage_SetTexture::Texture_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MaskImage_SetTexture;
 
 // PythonFunction PyWidget_MaskImage.PyWidget_MaskImage.OnSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_MaskImage_OnSoftTextureLoad final
 public:
 	class UObject*                                Texture_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MaskImage_OnSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_MaskImage_OnSoftTextureLoad");
-static_assert(sizeof(PyWidget_MaskImage_OnSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_MaskImage_OnSoftTextureLoad");
-static_assert(offsetof(PyWidget_MaskImage_OnSoftTextureLoad, Texture_0) == 0x000000, "Member 'PyWidget_MaskImage_OnSoftTextureLoad::Texture_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MaskImage_OnSoftTextureLoad;
 
 }
 

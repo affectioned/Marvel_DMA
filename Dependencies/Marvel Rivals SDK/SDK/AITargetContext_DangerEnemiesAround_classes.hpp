@@ -23,15 +23,18 @@ class UAITargetContext_DangerEnemiesAround_C final : public UAITargetContext_AII
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AITargetContext_DangerEnemiesAround_C">();
+		BP_STATIC_CLASS_IMPL("AITargetContext_DangerEnemiesAround_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITargetContext_DangerEnemiesAround_C")
 	}
 	static class UAITargetContext_DangerEnemiesAround_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITargetContext_DangerEnemiesAround_C>();
 	}
 };
-static_assert(alignof(UAITargetContext_DangerEnemiesAround_C) == 0x000008, "Wrong alignment on UAITargetContext_DangerEnemiesAround_C");
-static_assert(sizeof(UAITargetContext_DangerEnemiesAround_C) == 0x000040, "Wrong size on UAITargetContext_DangerEnemiesAround_C");
+DUMPER7_ASSERTS_UAITargetContext_DangerEnemiesAround_C;
 
 }
 

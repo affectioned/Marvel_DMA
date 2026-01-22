@@ -23,18 +23,21 @@ class UPyConfig_132 : public UWallRunningPassiveAbilityConfig
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_132">();
+		STATIC_CLASS_IMPL("PyConfig_132")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_132")
 	}
 	static class UPyConfig_132* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_132>();
 	}
 };
-static_assert(alignof(UPyConfig_132) == 0x000008, "Wrong alignment on UPyConfig_132");
-static_assert(sizeof(UPyConfig_132) == 0x0000E0, "Wrong size on UPyConfig_132");
+DUMPER7_ASSERTS_UPyConfig_132;
 
 // PythonClass PyAbility_132.PyAbility_132
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_132 : public UWallRunningPassiveAbility
 {
 public:
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_132">();
+		STATIC_CLASS_IMPL("PyAbility_132")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_132")
 	}
 	static class UPyAbility_132* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_132>();
 	}
 };
-static_assert(alignof(UPyAbility_132) == 0x000008, "Wrong alignment on UPyAbility_132");
-static_assert(sizeof(UPyAbility_132) == 0x002A08, "Wrong size on UPyAbility_132");
+DUMPER7_ASSERTS_UPyAbility_132;
 
 }
 

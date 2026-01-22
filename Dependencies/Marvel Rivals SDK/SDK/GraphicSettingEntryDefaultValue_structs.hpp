@@ -34,20 +34,7 @@ public:
 	TArray<double>                                PS4_48_409BC9D8429025D1C6EDF0B1355D4B3A;           // 0x0128(0x0010)(Edit, BlueprintVisible)
 	TArray<double>                                PS4P_52_7E6AF1D44F9801384F4914A014B21C14;          // 0x0138(0x0010)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FGraphicSettingEntryDefaultValue) == 0x000008, "Wrong alignment on FGraphicSettingEntryDefaultValue");
-static_assert(sizeof(FGraphicSettingEntryDefaultValue) == 0x000148, "Wrong size on FGraphicSettingEntryDefaultValue");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, SettingKey_22_0C10AB034AC655E08B829DA9F1BC727D) == 0x000000, "Member 'FGraphicSettingEntryDefaultValue::SettingKey_22_0C10AB034AC655E08B829DA9F1BC727D' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, Generator_23_3FBBE42348C961AC49C1D3B203C7EC6F) == 0x000010, "Member 'FGraphicSettingEntryDefaultValue::Generator_23_3FBBE42348C961AC49C1D3B203C7EC6F' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, Default_18_A47B53DE4CBB6F256D01C7AC1E3188F2) == 0x000018, "Member 'FGraphicSettingEntryDefaultValue::Default_18_A47B53DE4CBB6F256D01C7AC1E3188F2' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PC_44_80159D5B4DB038D4DA5790815D7E04B9) == 0x000028, "Member 'FGraphicSettingEntryDefaultValue::PC_44_80159D5B4DB038D4DA5790815D7E04B9' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PIE_42_37A715E34268E9DB4A00B4844A4A4109) == 0x000080, "Member 'FGraphicSettingEntryDefaultValue::PIE_42_37A715E34268E9DB4A00B4844A4A4109' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PS5_17_4039D00845E8BCB7BB2982AFB149616B) == 0x0000D8, "Member 'FGraphicSettingEntryDefaultValue::PS5_17_4039D00845E8BCB7BB2982AFB149616B' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PS5P_36_9DAAF4E3483E904BD1DD61B66AB4504D) == 0x0000E8, "Member 'FGraphicSettingEntryDefaultValue::PS5P_36_9DAAF4E3483E904BD1DD61B66AB4504D' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, XBOXX_28_380A9FD6406154B73ADBA88FFB8D7B71) == 0x0000F8, "Member 'FGraphicSettingEntryDefaultValue::XBOXX_28_380A9FD6406154B73ADBA88FFB8D7B71' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, XBOXS_33_E02F65284A2B97B453E3E0BD5863808E) == 0x000108, "Member 'FGraphicSettingEntryDefaultValue::XBOXS_33_E02F65284A2B97B453E3E0BD5863808E' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, MAC_38_84212A1546EC2F5402A9359860AF63B4) == 0x000118, "Member 'FGraphicSettingEntryDefaultValue::MAC_38_84212A1546EC2F5402A9359860AF63B4' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PS4_48_409BC9D8429025D1C6EDF0B1355D4B3A) == 0x000128, "Member 'FGraphicSettingEntryDefaultValue::PS4_48_409BC9D8429025D1C6EDF0B1355D4B3A' has a wrong offset!");
-static_assert(offsetof(FGraphicSettingEntryDefaultValue, PS4P_52_7E6AF1D44F9801384F4914A014B21C14) == 0x000138, "Member 'FGraphicSettingEntryDefaultValue::PS4P_52_7E6AF1D44F9801384F4914A014B21C14' has a wrong offset!");
+DUMPER7_ASSERTS_FGraphicSettingEntryDefaultValue;
 
 }
 

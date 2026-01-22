@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "PyDefaultUISettingEntryHandler_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVolumeHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVolumeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVolumeHandler")
 	}
 	static class UUISettingEntryVolumeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVolumeHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVolumeHandler) == 0x000008, "Wrong alignment on UUISettingEntryVolumeHandler");
-static_assert(sizeof(UUISettingEntryVolumeHandler) == 0x000030, "Wrong size on UUISettingEntryVolumeHandler");
+DUMPER7_ASSERTS_UUISettingEntryVolumeHandler;
 
 // PythonClass Audio.UISettingEntryInputDeviceOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryInputDeviceOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryInputDeviceOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryInputDeviceOptionGenerator")
 	}
 	static class UUISettingEntryInputDeviceOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryInputDeviceOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryInputDeviceOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryInputDeviceOptionGenerator");
-static_assert(sizeof(UUISettingEntryInputDeviceOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryInputDeviceOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryInputDeviceOptionGenerator;
 
 // PythonClass Audio.UISettingEntryInputDeviceHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryInputDeviceHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryInputDeviceHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryInputDeviceHandler")
 	}
 	static class UUISettingEntryInputDeviceHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryInputDeviceHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryInputDeviceHandler) == 0x000008, "Wrong alignment on UUISettingEntryInputDeviceHandler");
-static_assert(sizeof(UUISettingEntryInputDeviceHandler) == 0x000030, "Wrong size on UUISettingEntryInputDeviceHandler");
+DUMPER7_ASSERTS_UUISettingEntryInputDeviceHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerToneOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -88,15 +97,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerToneOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerToneOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerToneOptionGenerator")
 	}
 	static class UUISettingEntryVoiceChangerToneOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerToneOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerToneOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerToneOptionGenerator");
-static_assert(sizeof(UUISettingEntryVoiceChangerToneOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerToneOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerToneOptionGenerator;
 
 // PythonClass Audio.UISettingEntryVoiceEnhancementHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -110,15 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceEnhancementHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceEnhancementHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceEnhancementHandler")
 	}
 	static class UUISettingEntryVoiceEnhancementHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceEnhancementHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceEnhancementHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceEnhancementHandler");
-static_assert(sizeof(UUISettingEntryVoiceEnhancementHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceEnhancementHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceEnhancementHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerPresetScaleHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -135,15 +150,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerPresetScaleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerPresetScaleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerPresetScaleHandler")
 	}
 	static class UUISettingEntryVoiceChangerPresetScaleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerPresetScaleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerPresetScaleHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerPresetScaleHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerPresetScaleHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerPresetScaleHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerPresetScaleHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChatOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -155,15 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChatOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChatOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChatOptionGenerator")
 	}
 	static class UUISettingEntryVoiceChatOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChatOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChatOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChatOptionGenerator");
-static_assert(sizeof(UUISettingEntryVoiceChatOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryVoiceChatOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChatOptionGenerator;
 
 // PythonClass Audio.UISettingEntryVoiceChangerPresetOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -175,15 +196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerPresetOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerPresetOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerPresetOptionGenerator")
 	}
 	static class UUISettingEntryVoiceChangerPresetOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerPresetOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerPresetOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerPresetOptionGenerator");
-static_assert(sizeof(UUISettingEntryVoiceChangerPresetOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerPresetOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerPresetOptionGenerator;
 
 // PythonClass Audio.UISettingEntryChatOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -195,15 +219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryChatOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryChatOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryChatOptionGenerator")
 	}
 	static class UUISettingEntryChatOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryChatOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryChatOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryChatOptionGenerator");
-static_assert(sizeof(UUISettingEntryChatOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryChatOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryChatOptionGenerator;
 
 // PythonClass Audio.UISettingEntryVoiceChatHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -217,15 +244,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChatHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChatHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChatHandler")
 	}
 	static class UUISettingEntryVoiceChatHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChatHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChatHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChatHandler");
-static_assert(sizeof(UUISettingEntryVoiceChatHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChatHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChatHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerPresetSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -239,15 +269,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerPresetSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerPresetSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerPresetSettingHandler")
 	}
 	static class UUISettingEntryVoiceChangerPresetSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerPresetSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerPresetSettingHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerPresetSettingHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerPresetSettingHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerPresetSettingHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerPresetSettingHandler;
 
 // PythonClass Audio.UISettingEntryChatHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -261,15 +294,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryChatHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryChatHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryChatHandler")
 	}
 	static class UUISettingEntryChatHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryChatHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryChatHandler) == 0x000008, "Wrong alignment on UUISettingEntryChatHandler");
-static_assert(sizeof(UUISettingEntryChatHandler) == 0x000030, "Wrong size on UUISettingEntryChatHandler");
+DUMPER7_ASSERTS_UUISettingEntryChatHandler;
 
 // PythonClass Audio.UISettingEntryChatVolumeHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -282,15 +318,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryChatVolumeHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryChatVolumeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryChatVolumeHandler")
 	}
 	static class UUISettingEntryChatVolumeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryChatVolumeHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryChatVolumeHandler) == 0x000008, "Wrong alignment on UUISettingEntryChatVolumeHandler");
-static_assert(sizeof(UUISettingEntryChatVolumeHandler) == 0x000030, "Wrong size on UUISettingEntryChatVolumeHandler");
+DUMPER7_ASSERTS_UUISettingEntryChatVolumeHandler;
 
 // PythonClass Audio.UISettingEntryDubbingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -303,15 +342,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryDubbingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryDubbingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryDubbingHandler")
 	}
 	static class UUISettingEntryDubbingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryDubbingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryDubbingHandler) == 0x000008, "Wrong alignment on UUISettingEntryDubbingHandler");
-static_assert(sizeof(UUISettingEntryDubbingHandler) == 0x000030, "Wrong size on UUISettingEntryDubbingHandler");
+DUMPER7_ASSERTS_UUISettingEntryDubbingHandler;
 
 // PythonClass Audio.UISettingCombatMixStatusHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -323,15 +365,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingCombatMixStatusHandler">();
+		STATIC_CLASS_IMPL("UISettingCombatMixStatusHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingCombatMixStatusHandler")
 	}
 	static class UUISettingCombatMixStatusHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingCombatMixStatusHandler>();
 	}
 };
-static_assert(alignof(UUISettingCombatMixStatusHandler) == 0x000008, "Wrong alignment on UUISettingCombatMixStatusHandler");
-static_assert(sizeof(UUISettingCombatMixStatusHandler) == 0x000030, "Wrong size on UUISettingCombatMixStatusHandler");
+DUMPER7_ASSERTS_UUISettingCombatMixStatusHandler;
 
 // PythonClass Audio.UISettingCombatMixRtpcHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -344,15 +389,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingCombatMixRtpcHandler">();
+		STATIC_CLASS_IMPL("UISettingCombatMixRtpcHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingCombatMixRtpcHandler")
 	}
 	static class UUISettingCombatMixRtpcHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingCombatMixRtpcHandler>();
 	}
 };
-static_assert(alignof(UUISettingCombatMixRtpcHandler) == 0x000008, "Wrong alignment on UUISettingCombatMixRtpcHandler");
-static_assert(sizeof(UUISettingCombatMixRtpcHandler) == 0x000030, "Wrong size on UUISettingCombatMixRtpcHandler");
+DUMPER7_ASSERTS_UUISettingCombatMixRtpcHandler;
 
 // PythonClass Audio.UISettingPlayModeHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -364,15 +412,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingPlayModeHandler">();
+		STATIC_CLASS_IMPL("UISettingPlayModeHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingPlayModeHandler")
 	}
 	static class UUISettingPlayModeHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingPlayModeHandler>();
 	}
 };
-static_assert(alignof(UUISettingPlayModeHandler) == 0x000008, "Wrong alignment on UUISettingPlayModeHandler");
-static_assert(sizeof(UUISettingPlayModeHandler) == 0x000030, "Wrong size on UUISettingPlayModeHandler");
+DUMPER7_ASSERTS_UUISettingPlayModeHandler;
 
 // PythonClass Audio.UISettingSoundPlayModeHeadphonesEnhancementHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -381,15 +432,18 @@ class UUISettingSoundPlayModeHeadphonesEnhancementHandler final : public UPyDefa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSoundPlayModeHeadphonesEnhancementHandler">();
+		STATIC_CLASS_IMPL("UISettingSoundPlayModeHeadphonesEnhancementHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSoundPlayModeHeadphonesEnhancementHandler")
 	}
 	static class UUISettingSoundPlayModeHeadphonesEnhancementHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSoundPlayModeHeadphonesEnhancementHandler>();
 	}
 };
-static_assert(alignof(UUISettingSoundPlayModeHeadphonesEnhancementHandler) == 0x000008, "Wrong alignment on UUISettingSoundPlayModeHeadphonesEnhancementHandler");
-static_assert(sizeof(UUISettingSoundPlayModeHeadphonesEnhancementHandler) == 0x000030, "Wrong size on UUISettingSoundPlayModeHeadphonesEnhancementHandler");
+DUMPER7_ASSERTS_UUISettingSoundPlayModeHeadphonesEnhancementHandler;
 
 // PythonClass Audio.UISettingSoundPlayModeBackgroundHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -398,15 +452,18 @@ class UUISettingSoundPlayModeBackgroundHandler final : public UPyDefaultSettingE
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSoundPlayModeBackgroundHandler">();
+		STATIC_CLASS_IMPL("UISettingSoundPlayModeBackgroundHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSoundPlayModeBackgroundHandler")
 	}
 	static class UUISettingSoundPlayModeBackgroundHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSoundPlayModeBackgroundHandler>();
 	}
 };
-static_assert(alignof(UUISettingSoundPlayModeBackgroundHandler) == 0x000008, "Wrong alignment on UUISettingSoundPlayModeBackgroundHandler");
-static_assert(sizeof(UUISettingSoundPlayModeBackgroundHandler) == 0x000030, "Wrong size on UUISettingSoundPlayModeBackgroundHandler");
+DUMPER7_ASSERTS_UUISettingSoundPlayModeBackgroundHandler;
 
 // PythonClass Audio.UISettingSoundPlayOutputDevice
 // 0x0000 (0x0030 - 0x0030)
@@ -420,15 +477,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingSoundPlayOutputDevice">();
+		STATIC_CLASS_IMPL("UISettingSoundPlayOutputDevice")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingSoundPlayOutputDevice")
 	}
 	static class UUISettingSoundPlayOutputDevice* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingSoundPlayOutputDevice>();
 	}
 };
-static_assert(alignof(UUISettingSoundPlayOutputDevice) == 0x000008, "Wrong alignment on UUISettingSoundPlayOutputDevice");
-static_assert(sizeof(UUISettingSoundPlayOutputDevice) == 0x000030, "Wrong size on UUISettingSoundPlayOutputDevice");
+DUMPER7_ASSERTS_UUISettingSoundPlayOutputDevice;
 
 // PythonClass Audio.UISettingEntrySoundPlayOutputDeviceGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -440,15 +500,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySoundPlayOutputDeviceGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntrySoundPlayOutputDeviceGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySoundPlayOutputDeviceGenerator")
 	}
 	static class UUISettingEntrySoundPlayOutputDeviceGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySoundPlayOutputDeviceGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntrySoundPlayOutputDeviceGenerator) == 0x000008, "Wrong alignment on UUISettingEntrySoundPlayOutputDeviceGenerator");
-static_assert(sizeof(UUISettingEntrySoundPlayOutputDeviceGenerator) == 0x000030, "Wrong size on UUISettingEntrySoundPlayOutputDeviceGenerator");
+DUMPER7_ASSERTS_UUISettingEntrySoundPlayOutputDeviceGenerator;
 
 // PythonClass Audio.UISettingEntryOpenMicChannelOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -461,15 +524,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryOpenMicChannelOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryOpenMicChannelOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryOpenMicChannelOptionGenerator")
 	}
 	static class UUISettingEntryOpenMicChannelOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryOpenMicChannelOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryOpenMicChannelOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryOpenMicChannelOptionGenerator");
-static_assert(sizeof(UUISettingEntryOpenMicChannelOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryOpenMicChannelOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryOpenMicChannelOptionGenerator;
 
 // PythonClass Audio.UISettingEntryOpenPlayChannelOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -482,15 +548,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryOpenPlayChannelOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryOpenPlayChannelOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryOpenPlayChannelOptionGenerator")
 	}
 	static class UUISettingEntryOpenPlayChannelOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryOpenPlayChannelOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryOpenPlayChannelOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryOpenPlayChannelOptionGenerator");
-static_assert(sizeof(UUISettingEntryOpenPlayChannelOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryOpenPlayChannelOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryOpenPlayChannelOptionGenerator;
 
 // PythonClass Audio.UISettingTestMicHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -504,15 +573,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingTestMicHandler">();
+		STATIC_CLASS_IMPL("UISettingTestMicHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingTestMicHandler")
 	}
 	static class UUISettingTestMicHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingTestMicHandler>();
 	}
 };
-static_assert(alignof(UUISettingTestMicHandler) == 0x000008, "Wrong alignment on UUISettingTestMicHandler");
-static_assert(sizeof(UUISettingTestMicHandler) == 0x000030, "Wrong size on UUISettingTestMicHandler");
+DUMPER7_ASSERTS_UUISettingTestMicHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerToneSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -525,15 +597,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerToneSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerToneSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerToneSettingHandler")
 	}
 	static class UUISettingEntryVoiceChangerToneSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerToneSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerToneSettingHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerToneSettingHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerToneSettingHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerToneSettingHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerToneSettingHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerToneScaleHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -547,15 +622,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerToneScaleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerToneScaleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerToneScaleHandler")
 	}
 	static class UUISettingEntryVoiceChangerToneScaleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerToneScaleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerToneScaleHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerToneScaleHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerToneScaleHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerToneScaleHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerToneScaleHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerEffectOptionGenerator
 // 0x0000 (0x0030 - 0x0030)
@@ -567,15 +645,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerEffectOptionGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerEffectOptionGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerEffectOptionGenerator")
 	}
 	static class UUISettingEntryVoiceChangerEffectOptionGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerEffectOptionGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerEffectOptionGenerator) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerEffectOptionGenerator");
-static_assert(sizeof(UUISettingEntryVoiceChangerEffectOptionGenerator) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerEffectOptionGenerator");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerEffectOptionGenerator;
 
 // PythonClass Audio.UISettingEntryVoiceChangerEffectSettingHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -588,15 +669,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerEffectSettingHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerEffectSettingHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerEffectSettingHandler")
 	}
 	static class UUISettingEntryVoiceChangerEffectSettingHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerEffectSettingHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerEffectSettingHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerEffectSettingHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerEffectSettingHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerEffectSettingHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerEffectSettingHandler;
 
 // PythonClass Audio.UISettingEntryVoiceChangerEffectScaleHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -613,15 +697,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryVoiceChangerEffectScaleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryVoiceChangerEffectScaleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryVoiceChangerEffectScaleHandler")
 	}
 	static class UUISettingEntryVoiceChangerEffectScaleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryVoiceChangerEffectScaleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryVoiceChangerEffectScaleHandler) == 0x000008, "Wrong alignment on UUISettingEntryVoiceChangerEffectScaleHandler");
-static_assert(sizeof(UUISettingEntryVoiceChangerEffectScaleHandler) == 0x000030, "Wrong size on UUISettingEntryVoiceChangerEffectScaleHandler");
+DUMPER7_ASSERTS_UUISettingEntryVoiceChangerEffectScaleHandler;
 
 }
 

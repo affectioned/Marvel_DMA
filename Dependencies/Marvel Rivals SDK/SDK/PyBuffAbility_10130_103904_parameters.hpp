@@ -21,9 +21,7 @@ struct PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile final
 public:
 	class AActor*                                 Projectile;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile) == 0x000008, "Wrong alignment on PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile");
-static_assert(sizeof(PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile) == 0x000008, "Wrong size on PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile");
-static_assert(offsetof(PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile, Projectile) == 0x000000, "Member 'PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile::Projectile' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_103904_OnTargetAbilitySpawnedProjectile;
 
 }
 

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function 4018000_AnimBP.4018000_AnimBP_C.ExecuteUbergraph_4018000_AnimBP
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UFour018000_AnimBP_C::ExecuteUbergraph_4018000_AnimBP(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("4018000_AnimBP_C", "ExecuteUbergraph_4018000_AnimBP");
+
+	Params::Four018000_AnimBP_C_ExecuteUbergraph_4018000_AnimBP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function 4018000_AnimBP.4018000_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -35,26 +55,6 @@ void UFour018000_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function 4018000_AnimBP.4018000_AnimBP_C.ExecuteUbergraph_4018000_AnimBP
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UFour018000_AnimBP_C::ExecuteUbergraph_4018000_AnimBP(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("4018000_AnimBP_C", "ExecuteUbergraph_4018000_AnimBP");
-
-	Params::Four018000_AnimBP_C_ExecuteUbergraph_4018000_AnimBP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

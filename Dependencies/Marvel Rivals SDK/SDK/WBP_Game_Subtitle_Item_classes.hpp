@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "PyGameSubtitles_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Game_Subtitle_Item.WBP_Game_Subtitle_Item_C
-// 0x0028 (0x0640 - 0x0618)
+// 0x0028 (0x0648 - 0x0620)
 class UWBP_Game_Subtitle_Item_C final : public UPyWidget_GameSubtitleItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0618(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UHorizontalBox*                         HorizontalBox_0;                                   // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Text_Bg;                                       // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   RichText_Speaker;                                  // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_Subtitle;                                  // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0620(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UHorizontalBox*                         HorizontalBox_0;                                   // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Text_Bg;                                       // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_Speaker;                                  // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_Subtitle;                                  // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Game_Subtitle_Item(int32 EntryPoint);
@@ -37,20 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Game_Subtitle_Item_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Game_Subtitle_Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Game_Subtitle_Item_C")
 	}
 	static class UWBP_Game_Subtitle_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Game_Subtitle_Item_C>();
 	}
 };
-static_assert(alignof(UWBP_Game_Subtitle_Item_C) == 0x000008, "Wrong alignment on UWBP_Game_Subtitle_Item_C");
-static_assert(sizeof(UWBP_Game_Subtitle_Item_C) == 0x000640, "Wrong size on UWBP_Game_Subtitle_Item_C");
-static_assert(offsetof(UWBP_Game_Subtitle_Item_C, UberGraphFrame) == 0x000618, "Member 'UWBP_Game_Subtitle_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_Item_C, HorizontalBox_0) == 0x000620, "Member 'UWBP_Game_Subtitle_Item_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_Item_C, Img_Text_Bg) == 0x000628, "Member 'UWBP_Game_Subtitle_Item_C::Img_Text_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_Item_C, RichText_Speaker) == 0x000630, "Member 'UWBP_Game_Subtitle_Item_C::RichText_Speaker' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_Item_C, SizeBox_Subtitle) == 0x000638, "Member 'UWBP_Game_Subtitle_Item_C::SizeBox_Subtitle' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Game_Subtitle_Item_C;
 
 }
 

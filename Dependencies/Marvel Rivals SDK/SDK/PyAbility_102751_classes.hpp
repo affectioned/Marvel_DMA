@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "PyAbility_102741_classes.hpp"
-#include "Hero_1027_classes.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "Hero_1027_classes.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102751.PyAbility_102751
-// 0x0000 (0x2A58 - 0x2A58)
+// 0x0000 (0x2AA8 - 0x2AA8)
 class UPyAbility_102751 : public UPyAbility_102741
 {
 public:
@@ -30,22 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102751">();
+		STATIC_CLASS_IMPL("PyAbility_102751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102751")
 	}
 	static class UPyAbility_102751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102751>();
 	}
 };
-static_assert(alignof(UPyAbility_102751) == 0x000008, "Wrong alignment on UPyAbility_102751");
-static_assert(sizeof(UPyAbility_102751) == 0x002A58, "Wrong size on UPyAbility_102751");
+DUMPER7_ASSERTS_UPyAbility_102751;
 
 // PythonClass PyAbility_102751.PyCue_Summoner_Loop_10275101
-// 0x0010 (0x1550 - 0x1540)
+// 0x0010 (0x15B0 - 0x15A0)
 class APyCue_Summoner_Loop_10275101 final : public ACue_Summoner_Loop_10275101
 {
 public:
-	struct FDeclarationHolder                     ViewerSideWatcher;                                 // 0x1540(0x0010)(NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewerSideWatcher;                                 // 0x15A0(0x0010)(NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveBeginPlay();
@@ -59,19 +62,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10275101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10275101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10275101")
 	}
 	static class APyCue_Summoner_Loop_10275101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10275101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10275101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10275101");
-static_assert(sizeof(APyCue_Summoner_Loop_10275101) == 0x001550, "Wrong size on APyCue_Summoner_Loop_10275101");
-static_assert(offsetof(APyCue_Summoner_Loop_10275101, ViewerSideWatcher) == 0x001540, "Member 'APyCue_Summoner_Loop_10275101::ViewerSideWatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10275101;
 
 // PythonClass PyAbility_102751.PyUIController_102751
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_102751 final : public UUIC_Ability
 {
 public:
@@ -81,15 +86,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_102751">();
+		STATIC_CLASS_IMPL("PyUIController_102751")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_102751")
 	}
 	static class UPyUIController_102751* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_102751>();
 	}
 };
-static_assert(alignof(UPyUIController_102751) == 0x000008, "Wrong alignment on UPyUIController_102751");
-static_assert(sizeof(UPyUIController_102751) == 0x000F10, "Wrong size on UPyUIController_102751");
+DUMPER7_ASSERTS_UPyUIController_102751;
 
 }
 

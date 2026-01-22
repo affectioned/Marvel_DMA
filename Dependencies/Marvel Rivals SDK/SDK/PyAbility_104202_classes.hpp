@@ -35,25 +35,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104202">();
+		STATIC_CLASS_IMPL("PyConfig_104202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104202")
 	}
 	static class UPyConfig_104202* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104202>();
 	}
 };
-static_assert(alignof(UPyConfig_104202) == 0x000008, "Wrong alignment on UPyConfig_104202");
-static_assert(sizeof(UPyConfig_104202) == 0x000138, "Wrong size on UPyConfig_104202");
-static_assert(offsetof(UPyConfig_104202, ClimbMaxTime) == 0x0000E0, "Member 'UPyConfig_104202::ClimbMaxTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, TraceStartOffset) == 0x0000E8, "Member 'UPyConfig_104202::TraceStartOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, YawOffset) == 0x000100, "Member 'UPyConfig_104202::YawOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, WallCheckAngle) == 0x000104, "Member 'UPyConfig_104202::WallCheckAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, CanClimbScopeID) == 0x000108, "Member 'UPyConfig_104202::CanClimbScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, BuffID) == 0x00010C, "Member 'UPyConfig_104202::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104202, InputStateParam) == 0x000110, "Member 'UPyConfig_104202::InputStateParam' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104202;
 
 // PythonClass PyAbility_104202.PyAbility_104202
-// 0x0000 (0x2A08 - 0x2A08)
+// 0x0000 (0x2A58 - 0x2A58)
 class UPyAbility_104202 : public UWallRunningPassiveAbility
 {
 public:
@@ -66,15 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104202">();
+		STATIC_CLASS_IMPL("PyAbility_104202")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104202")
 	}
 	static class UPyAbility_104202* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104202>();
 	}
 };
-static_assert(alignof(UPyAbility_104202) == 0x000008, "Wrong alignment on UPyAbility_104202");
-static_assert(sizeof(UPyAbility_104202) == 0x002A08, "Wrong size on UPyAbility_104202");
+DUMPER7_ASSERTS_UPyAbility_104202;
 
 }
 

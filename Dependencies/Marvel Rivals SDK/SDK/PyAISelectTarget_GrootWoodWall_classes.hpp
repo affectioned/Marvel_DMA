@@ -18,65 +18,71 @@ namespace SDK
 {
 
 // PythonClass PyAISelectTarget_GrootWoodWall.PyAISelectTarget_GrootSetWoodWall_Defend
-// 0x0010 (0x16F0 - 0x16E0)
+// 0x0010 (0x1A40 - 0x1A30)
 class UPyAISelectTarget_GrootSetWoodWall_Defend : public UPyAISelectTarget_SelectGroundPointInRange
 {
 public:
-	float                                         LowHealthPercent;                                  // 0x16E0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeammateRange;                                     // 0x16E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LowHealthPercent;                                  // 0x1A30(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeammateRange;                                     // 0x1A34(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_GrootSetWoodWall_Defend">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_GrootSetWoodWall_Defend")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_GrootSetWoodWall_Defend")
 	}
 	static class UPyAISelectTarget_GrootSetWoodWall_Defend* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_GrootSetWoodWall_Defend>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_GrootSetWoodWall_Defend) == 0x000010, "Wrong alignment on UPyAISelectTarget_GrootSetWoodWall_Defend");
-static_assert(sizeof(UPyAISelectTarget_GrootSetWoodWall_Defend) == 0x0016F0, "Wrong size on UPyAISelectTarget_GrootSetWoodWall_Defend");
-static_assert(offsetof(UPyAISelectTarget_GrootSetWoodWall_Defend, LowHealthPercent) == 0x0016E0, "Member 'UPyAISelectTarget_GrootSetWoodWall_Defend::LowHealthPercent' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_GrootSetWoodWall_Defend, TeammateRange) == 0x0016E4, "Member 'UPyAISelectTarget_GrootSetWoodWall_Defend::TeammateRange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_GrootSetWoodWall_Defend;
 
 // PythonClass PyAISelectTarget_GrootWoodWall.PyAISelectTarget_GrootSetWoodWall_Distrub
-// 0x0000 (0x16E0 - 0x16E0)
+// 0x0000 (0x1A30 - 0x1A30)
 class UPyAISelectTarget_GrootSetWoodWall_Distrub : public UPyAISelectTarget_SelectGroundPointInRange
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_GrootSetWoodWall_Distrub">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_GrootSetWoodWall_Distrub")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_GrootSetWoodWall_Distrub")
 	}
 	static class UPyAISelectTarget_GrootSetWoodWall_Distrub* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_GrootSetWoodWall_Distrub>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_GrootSetWoodWall_Distrub) == 0x000010, "Wrong alignment on UPyAISelectTarget_GrootSetWoodWall_Distrub");
-static_assert(sizeof(UPyAISelectTarget_GrootSetWoodWall_Distrub) == 0x0016E0, "Wrong size on UPyAISelectTarget_GrootSetWoodWall_Distrub");
+DUMPER7_ASSERTS_UPyAISelectTarget_GrootSetWoodWall_Distrub;
 
 // PythonClass PyAISelectTarget_GrootWoodWall.PyAISelectTarget_GrootWoodWall_Test
-// 0x0010 (0x16E0 - 0x16D0)
+// 0x0010 (0x1A30 - 0x1A20)
 class UPyAISelectTarget_GrootWoodWall_Test final : public UPyAISelectTarget_SelectGroundPointBase
 {
 public:
-	float                                         OffsetDist;                                        // 0x16D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OffsetDist;                                        // 0x1A20(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_GrootWoodWall_Test">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_GrootWoodWall_Test")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_GrootWoodWall_Test")
 	}
 	static class UPyAISelectTarget_GrootWoodWall_Test* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_GrootWoodWall_Test>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_GrootWoodWall_Test) == 0x000010, "Wrong alignment on UPyAISelectTarget_GrootWoodWall_Test");
-static_assert(sizeof(UPyAISelectTarget_GrootWoodWall_Test) == 0x0016E0, "Wrong size on UPyAISelectTarget_GrootWoodWall_Test");
-static_assert(offsetof(UPyAISelectTarget_GrootWoodWall_Test, OffsetDist) == 0x0016D0, "Member 'UPyAISelectTarget_GrootWoodWall_Test::OffsetDist' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_GrootWoodWall_Test;
 
 // PythonClass PyAISelectTarget_GrootWoodWall.PyAISelectTarget_DistributeGrootWoodWall
 // 0x0038 (0x00A8 - 0x0070)
@@ -95,22 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_DistributeGrootWoodWall">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_DistributeGrootWoodWall")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_DistributeGrootWoodWall")
 	}
 	static class UPyAISelectTarget_DistributeGrootWoodWall* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_DistributeGrootWoodWall>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_DistributeGrootWoodWall) == 0x000008, "Wrong alignment on UPyAISelectTarget_DistributeGrootWoodWall");
-static_assert(sizeof(UPyAISelectTarget_DistributeGrootWoodWall) == 0x0000A8, "Wrong size on UPyAISelectTarget_DistributeGrootWoodWall");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, SummonedIDs) == 0x000070, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::SummonedIDs' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, DistanceRange) == 0x000080, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::DistanceRange' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, TotalAngle) == 0x000084, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::TotalAngle' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, NumRegions) == 0x000088, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::NumRegions' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, CalculateFinalPosRadius) == 0x000090, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::CalculateFinalPosRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, CalculateFinalPosDownTraceDist) == 0x0000A0, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::CalculateFinalPosDownTraceDist' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_DistributeGrootWoodWall, AngleTolerateValue) == 0x0000A4, "Member 'UPyAISelectTarget_DistributeGrootWoodWall::AngleTolerateValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_DistributeGrootWoodWall;
 
 }
 

@@ -37,27 +37,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105612">();
+		STATIC_CLASS_IMPL("PyConfig_105612")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105612")
 	}
 	static class UPyConfig_105612* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105612>();
 	}
 };
-static_assert(alignof(UPyConfig_105612) == 0x000008, "Wrong alignment on UPyConfig_105612");
-static_assert(sizeof(UPyConfig_105612) == 0x000150, "Wrong size on UPyConfig_105612");
-static_assert(offsetof(UPyConfig_105612, TL_Energy_Match) == 0x000098, "Member 'UPyConfig_105612::TL_Energy_Match' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, MaxEnergyConfig) == 0x0000E8, "Member 'UPyConfig_105612::MaxEnergyConfig' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, AirAttackEnergyType) == 0x000138, "Member 'UPyConfig_105612::AirAttackEnergyType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, DeathClearEnergy) == 0x000139, "Member 'UPyConfig_105612::DeathClearEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, EnergyCostCoff) == 0x00013C, "Member 'UPyConfig_105612::EnergyCostCoff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, EnergyCostCoff_Air) == 0x000140, "Member 'UPyConfig_105612::EnergyCostCoff_Air' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, Energy2DamageCoff) == 0x000144, "Member 'UPyConfig_105612::Energy2DamageCoff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, HitCostEnergy) == 0x000148, "Member 'UPyConfig_105612::HitCostEnergy' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105612, UIEnergyType) == 0x000149, "Member 'UPyConfig_105612::UIEnergyType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105612;
 
 // PythonClass PyAbility_105612.PyAbility_105612
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_105612 : public UPyAbility_105611
 {
 public:
@@ -70,15 +64,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105612">();
+		STATIC_CLASS_IMPL("PyAbility_105612")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105612")
 	}
 	static class UPyAbility_105612* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105612>();
 	}
 };
-static_assert(alignof(UPyAbility_105612) == 0x000008, "Wrong alignment on UPyAbility_105612");
-static_assert(sizeof(UPyAbility_105612) == 0x0029F8, "Wrong size on UPyAbility_105612");
+DUMPER7_ASSERTS_UPyAbility_105612;
 
 }
 

@@ -56,11 +56,7 @@ public:
 	bool                                          bForce;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FThorEnergyConfig) == 0x000004, "Wrong alignment on FThorEnergyConfig");
-static_assert(sizeof(FThorEnergyConfig) == 0x00000C, "Wrong size on FThorEnergyConfig");
-static_assert(offsetof(FThorEnergyConfig, Stage) == 0x000000, "Member 'FThorEnergyConfig::Stage' has a wrong offset!");
-static_assert(offsetof(FThorEnergyConfig, AbilityID) == 0x000004, "Member 'FThorEnergyConfig::AbilityID' has a wrong offset!");
-static_assert(offsetof(FThorEnergyConfig, bForce) == 0x000008, "Member 'FThorEnergyConfig::bForce' has a wrong offset!");
+DUMPER7_ASSERTS_FThorEnergyConfig;
 
 // ScriptStruct Hero_1039.FxConfig_103951
 // 0x0020 (0x0020 - 0x0000)
@@ -71,10 +67,7 @@ public:
 	class FName                                   SocketName;                                        // 0x0010(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFxConfig_103951) == 0x000008, "Wrong alignment on FFxConfig_103951");
-static_assert(sizeof(FFxConfig_103951) == 0x000020, "Wrong size on FFxConfig_103951");
-static_assert(offsetof(FFxConfig_103951, RelativePoints) == 0x000000, "Member 'FFxConfig_103951::RelativePoints' has a wrong offset!");
-static_assert(offsetof(FFxConfig_103951, SocketName) == 0x000010, "Member 'FFxConfig_103951::SocketName' has a wrong offset!");
+DUMPER7_ASSERTS_FFxConfig_103951;
 
 // ScriptStruct Hero_1039.AbilitySection_103961
 // 0x0010 (0x0010 - 0x0000)
@@ -86,11 +79,7 @@ public:
 	EAbilityState_103961                          RemoveStage;                                       // 0x000D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAbilitySection_103961) == 0x000004, "Wrong alignment on FAbilitySection_103961");
-static_assert(sizeof(FAbilitySection_103961) == 0x000010, "Wrong size on FAbilitySection_103961");
-static_assert(offsetof(FAbilitySection_103961, GameplayCueTag) == 0x000000, "Member 'FAbilitySection_103961::GameplayCueTag' has a wrong offset!");
-static_assert(offsetof(FAbilitySection_103961, AddStage) == 0x00000C, "Member 'FAbilitySection_103961::AddStage' has a wrong offset!");
-static_assert(offsetof(FAbilitySection_103961, RemoveStage) == 0x00000D, "Member 'FAbilitySection_103961::RemoveStage' has a wrong offset!");
+DUMPER7_ASSERTS_FAbilitySection_103961;
 
 // ScriptStruct Hero_1039.PreArrivedInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -100,10 +89,7 @@ public:
 	float                                         PreArrivedTime;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PreArrviedDis;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPreArrivedInfo) == 0x000004, "Wrong alignment on FPreArrivedInfo");
-static_assert(sizeof(FPreArrivedInfo) == 0x000008, "Wrong size on FPreArrivedInfo");
-static_assert(offsetof(FPreArrivedInfo, PreArrivedTime) == 0x000000, "Member 'FPreArrivedInfo::PreArrivedTime' has a wrong offset!");
-static_assert(offsetof(FPreArrivedInfo, PreArrviedDis) == 0x000004, "Member 'FPreArrivedInfo::PreArrviedDis' has a wrong offset!");
+DUMPER7_ASSERTS_FPreArrivedInfo;
 
 }
 

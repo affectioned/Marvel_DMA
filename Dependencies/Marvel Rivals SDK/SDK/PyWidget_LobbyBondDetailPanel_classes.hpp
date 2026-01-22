@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LobbyBondDetailPanel.PyWidget_LobbyBondDetailPanel
-// 0x0038 (0x0630 - 0x05F8)
+// 0x0038 (0x0638 - 0x0600)
 class UPyWidget_LobbyBondDetailPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UPyWidget_ImageMaskCut*                 Img_AbilityIcon;                                   // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_ImageMaskCut*                 Img_AbilityIcon_Vx;                                // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_ComboName;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_ComboName_Vx;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   Text_ComboStory;                                   // 0x0618(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_CommonButton_Lv1*             Btn_SkillIntroduce;                                // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelHorizontalBox*                   HBox_HeroList;                                     // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_ImageMaskCut*                 Img_AbilityIcon;                                   // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_ImageMaskCut*                 Img_AbilityIcon_Vx;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_ComboName;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_ComboName_Vx;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   Text_ComboStory;                                   // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonButton_Lv1*             Btn_SkillIntroduce;                                // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelHorizontalBox*                   HBox_HeroList;                                     // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,44 +38,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyBondDetailPanel">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyBondDetailPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyBondDetailPanel")
 	}
 	static class UPyWidget_LobbyBondDetailPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyBondDetailPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyBondDetailPanel) == 0x000008, "Wrong alignment on UPyWidget_LobbyBondDetailPanel");
-static_assert(sizeof(UPyWidget_LobbyBondDetailPanel) == 0x000630, "Wrong size on UPyWidget_LobbyBondDetailPanel");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Img_AbilityIcon) == 0x0005F8, "Member 'UPyWidget_LobbyBondDetailPanel::Img_AbilityIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Img_AbilityIcon_Vx) == 0x000600, "Member 'UPyWidget_LobbyBondDetailPanel::Img_AbilityIcon_Vx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Text_ComboName) == 0x000608, "Member 'UPyWidget_LobbyBondDetailPanel::Text_ComboName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Text_ComboName_Vx) == 0x000610, "Member 'UPyWidget_LobbyBondDetailPanel::Text_ComboName_Vx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Text_ComboStory) == 0x000618, "Member 'UPyWidget_LobbyBondDetailPanel::Text_ComboStory' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, Btn_SkillIntroduce) == 0x000620, "Member 'UPyWidget_LobbyBondDetailPanel::Btn_SkillIntroduce' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyBondDetailPanel, HBox_HeroList) == 0x000628, "Member 'UPyWidget_LobbyBondDetailPanel::HBox_HeroList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyBondDetailPanel;
 
 // PythonClass PyWidget_LobbyBondDetailPanel.PyWidget_Bond_Portrait
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Bond_Portrait final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPyWidget_Common_HeroPortrait*          WBP_HeroPortrait;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyWidget_Common_HeroPortrait*          WBP_HeroPortrait;                                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Bond_Portrait">();
+		STATIC_CLASS_IMPL("PyWidget_Bond_Portrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Bond_Portrait")
 	}
 	static class UPyWidget_Bond_Portrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Bond_Portrait>();
 	}
 };
-static_assert(alignof(UPyWidget_Bond_Portrait) == 0x000008, "Wrong alignment on UPyWidget_Bond_Portrait");
-static_assert(sizeof(UPyWidget_Bond_Portrait) == 0x0005C8, "Wrong size on UPyWidget_Bond_Portrait");
-static_assert(offsetof(UPyWidget_Bond_Portrait, WBP_HeroPortrait) == 0x0005C0, "Member 'UPyWidget_Bond_Portrait::WBP_HeroPortrait' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Bond_Portrait;
 
 }
 

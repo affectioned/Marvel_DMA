@@ -162,10 +162,7 @@ public:
 	int32                                         MinNumTargets;                                     // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ConversionPercent;                                 // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FHealthConversion_101421) == 0x000004, "Wrong alignment on FHealthConversion_101421");
-static_assert(sizeof(FHealthConversion_101421) == 0x000008, "Wrong size on FHealthConversion_101421");
-static_assert(offsetof(FHealthConversion_101421, MinNumTargets) == 0x000000, "Member 'FHealthConversion_101421::MinNumTargets' has a wrong offset!");
-static_assert(offsetof(FHealthConversion_101421, ConversionPercent) == 0x000004, "Member 'FHealthConversion_101421::ConversionPercent' has a wrong offset!");
+DUMPER7_ASSERTS_FHealthConversion_101421;
 
 // ScriptStruct Hero_1014.SummonedExtendedConfig_TurretBase
 // 0x0008 (0x0010 - 0x0008)
@@ -175,9 +172,7 @@ public:
 	int32                                         OverrideFireAudioID;                               // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSummonedExtendedConfig_TurretBase) == 0x000008, "Wrong alignment on FSummonedExtendedConfig_TurretBase");
-static_assert(sizeof(FSummonedExtendedConfig_TurretBase) == 0x000010, "Wrong size on FSummonedExtendedConfig_TurretBase");
-static_assert(offsetof(FSummonedExtendedConfig_TurretBase, OverrideFireAudioID) == 0x000008, "Member 'FSummonedExtendedConfig_TurretBase::OverrideFireAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_FSummonedExtendedConfig_TurretBase;
 
 }
 

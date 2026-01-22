@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWC_DebugInfo">();
+		STATIC_CLASS_IMPL("PyWC_DebugInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWC_DebugInfo")
 	}
 	static class UPyWC_DebugInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWC_DebugInfo>();
 	}
 };
-static_assert(alignof(UPyWC_DebugInfo) == 0x000010, "Wrong alignment on UPyWC_DebugInfo");
-static_assert(sizeof(UPyWC_DebugInfo) == 0x000A10, "Wrong size on UPyWC_DebugInfo");
-static_assert(offsetof(UPyWC_DebugInfo, Offset_Z) == 0x000A00, "Member 'UPyWC_DebugInfo::Offset_Z' has a wrong offset!");
-static_assert(offsetof(UPyWC_DebugInfo, Summoned_Offset_Z) == 0x000A04, "Member 'UPyWC_DebugInfo::Summoned_Offset_Z' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWC_DebugInfo;
 
 // PythonClass PyWidget_DebugInfo.PyWidget_DebugInfo
 // 0x0008 (0x03C0 - 0x03B8)
@@ -49,16 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DebugInfo">();
+		STATIC_CLASS_IMPL("PyWidget_DebugInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DebugInfo")
 	}
 	static class UPyWidget_DebugInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DebugInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_DebugInfo) == 0x000008, "Wrong alignment on UPyWidget_DebugInfo");
-static_assert(sizeof(UPyWidget_DebugInfo) == 0x0003C0, "Wrong size on UPyWidget_DebugInfo");
-static_assert(offsetof(UPyWidget_DebugInfo, Class_TextBlock) == 0x0003B8, "Member 'UPyWidget_DebugInfo::Class_TextBlock' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DebugInfo;
 
 // PythonClass PyWidget_DebugInfo.PyWidget_DebugInfoText
 // 0x0000 (0x03B8 - 0x03B8)
@@ -70,15 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DebugInfoText">();
+		STATIC_CLASS_IMPL("PyWidget_DebugInfoText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DebugInfoText")
 	}
 	static class UPyWidget_DebugInfoText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DebugInfoText>();
 	}
 };
-static_assert(alignof(UPyWidget_DebugInfoText) == 0x000008, "Wrong alignment on UPyWidget_DebugInfoText");
-static_assert(sizeof(UPyWidget_DebugInfoText) == 0x0003B8, "Wrong size on UPyWidget_DebugInfoText");
+DUMPER7_ASSERTS_UPyWidget_DebugInfoText;
 
 }
 

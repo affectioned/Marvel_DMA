@@ -11,17 +11,17 @@
 #include "Basic.hpp"
 
 #include "PyAbility_10130_104754_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "Activity_10130_classes.hpp"
-#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PyProjectile_10475431
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10475431 final : public APyProjectile_10130_10475401
 {
 public:
@@ -31,23 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10475431">();
+		STATIC_CLASS_IMPL("PyProjectile_10475431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10475431")
 	}
 	static class APyProjectile_10475431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10475431>();
 	}
 };
-static_assert(alignof(APyProjectile_10475431) == 0x000010, "Wrong alignment on APyProjectile_10475431");
-static_assert(sizeof(APyProjectile_10475431) == 0x003B90, "Wrong size on APyProjectile_10475431");
+DUMPER7_ASSERTS_APyProjectile_10475431;
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PyCue_SummonerLoop_10475401
-// 0x0010 (0x1210 - 0x1200)
+// 0x0010 (0x1270 - 0x1260)
 class APyCue_SummonerLoop_10475401 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BiggerAudioID;                                     // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BiggerAudioID;                                     // 0x1260(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveAudio(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -57,42 +60,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_SummonerLoop_10475401">();
+		STATIC_CLASS_IMPL("PyCue_SummonerLoop_10475401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_SummonerLoop_10475401")
 	}
 	static class APyCue_SummonerLoop_10475401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_SummonerLoop_10475401>();
 	}
 };
-static_assert(alignof(APyCue_SummonerLoop_10475401) == 0x000010, "Wrong alignment on APyCue_SummonerLoop_10475401");
-static_assert(sizeof(APyCue_SummonerLoop_10475401) == 0x001210, "Wrong size on APyCue_SummonerLoop_10475401");
-static_assert(offsetof(APyCue_SummonerLoop_10475401, BiggerAudioID) == 0x001200, "Member 'APyCue_SummonerLoop_10475401::BiggerAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_SummonerLoop_10475401;
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PySummoned_10130_104754
-// 0x0090 (0x0C60 - 0x0BD0)
+// 0x0090 (0x0C80 - 0x0BF0)
 class APySummoned_10130_104754 : public ASummoned_10130_104754
 {
 public:
-	int32                                         BD1_1_EffectID;                                    // 0x0BD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BD1_1_EffectTag;                                   // 0x0BD4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_1_EffectID;                                    // 0x0BE0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BD2_1_EffectTag;                                   // 0x0BE4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FOverlapHandlerEffect                  BD1_1_OverlapHandleEffect;                         // 0x0BF0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         BD1_2_EffectID;                                    // 0x0C08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BD1_2_EffectTag;                                   // 0x0C0C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_2_DamageScopeID;                               // 0x0C18(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_2_HitScopeID;                                  // 0x0C1C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_EffectID;                                    // 0x0C20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_3_DamageScopeID;                               // 0x0C24(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_8_EffectID;                                    // 0x0C28(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BD2_8_EffectTag;                                   // 0x0C2C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_8_ExtraImprisonCount;                          // 0x0C38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_8_MaxImprisonCount;                            // 0x0C3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_03_EffectID;                                   // 0x0C40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_03_MoveScopeID;                                // 0x0C44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_03_DamageScopeID;                              // 0x0C48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD2_10_EffectID;                                   // 0x0C4C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           BD2_10_EffectTag;                                  // 0x0C50(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_1_EffectID;                                    // 0x0BF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BD1_1_EffectTag;                                   // 0x0BF4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_1_EffectID;                                    // 0x0C00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BD2_1_EffectTag;                                   // 0x0C04(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FOverlapHandlerEffect                  BD1_1_OverlapHandleEffect;                         // 0x0C10(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         BD1_2_EffectID;                                    // 0x0C28(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BD1_2_EffectTag;                                   // 0x0C2C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_2_DamageScopeID;                               // 0x0C38(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_2_HitScopeID;                                  // 0x0C3C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_EffectID;                                    // 0x0C40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_3_DamageScopeID;                               // 0x0C44(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_8_EffectID;                                    // 0x0C48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BD2_8_EffectTag;                                   // 0x0C4C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_8_ExtraImprisonCount;                          // 0x0C58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_8_MaxImprisonCount;                            // 0x0C5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_03_EffectID;                                   // 0x0C60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_03_MoveScopeID;                                // 0x0C64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_03_DamageScopeID;                              // 0x0C68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD2_10_EffectID;                                   // 0x0C6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           BD2_10_EffectTag;                                  // 0x0C70(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnSummonedBeginAgentTask();
@@ -104,43 +109,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10130_104754">();
+		STATIC_CLASS_IMPL("PySummoned_10130_104754")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10130_104754")
 	}
 	static class APySummoned_10130_104754* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10130_104754>();
 	}
 };
-static_assert(alignof(APySummoned_10130_104754) == 0x000010, "Wrong alignment on APySummoned_10130_104754");
-static_assert(sizeof(APySummoned_10130_104754) == 0x000C60, "Wrong size on APySummoned_10130_104754");
-static_assert(offsetof(APySummoned_10130_104754, BD1_1_EffectID) == 0x000BD0, "Member 'APySummoned_10130_104754::BD1_1_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_1_EffectTag) == 0x000BD4, "Member 'APySummoned_10130_104754::BD1_1_EffectTag' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_1_EffectID) == 0x000BE0, "Member 'APySummoned_10130_104754::BD2_1_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_1_EffectTag) == 0x000BE4, "Member 'APySummoned_10130_104754::BD2_1_EffectTag' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_1_OverlapHandleEffect) == 0x000BF0, "Member 'APySummoned_10130_104754::BD1_1_OverlapHandleEffect' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_2_EffectID) == 0x000C08, "Member 'APySummoned_10130_104754::BD1_2_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_2_EffectTag) == 0x000C0C, "Member 'APySummoned_10130_104754::BD1_2_EffectTag' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_2_DamageScopeID) == 0x000C18, "Member 'APySummoned_10130_104754::BD1_2_DamageScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_2_HitScopeID) == 0x000C1C, "Member 'APySummoned_10130_104754::BD1_2_HitScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_3_EffectID) == 0x000C20, "Member 'APySummoned_10130_104754::BD1_3_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD1_3_DamageScopeID) == 0x000C24, "Member 'APySummoned_10130_104754::BD1_3_DamageScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_8_EffectID) == 0x000C28, "Member 'APySummoned_10130_104754::BD2_8_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_8_EffectTag) == 0x000C2C, "Member 'APySummoned_10130_104754::BD2_8_EffectTag' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_8_ExtraImprisonCount) == 0x000C38, "Member 'APySummoned_10130_104754::BD2_8_ExtraImprisonCount' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_8_MaxImprisonCount) == 0x000C3C, "Member 'APySummoned_10130_104754::BD2_8_MaxImprisonCount' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_03_EffectID) == 0x000C40, "Member 'APySummoned_10130_104754::BD2_03_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_03_MoveScopeID) == 0x000C44, "Member 'APySummoned_10130_104754::BD2_03_MoveScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_03_DamageScopeID) == 0x000C48, "Member 'APySummoned_10130_104754::BD2_03_DamageScopeID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_10_EffectID) == 0x000C4C, "Member 'APySummoned_10130_104754::BD2_10_EffectID' has a wrong offset!");
-static_assert(offsetof(APySummoned_10130_104754, BD2_10_EffectTag) == 0x000C50, "Member 'APySummoned_10130_104754::BD2_10_EffectTag' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10130_104754;
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PyEffectiveComponent_10130_10472101
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UPyEffectiveComponent_10130_10472101 final : public UMarvelAgentEffectiveComponent
 {
 public:
-	uint8                                         Pad_1C68[0x8];                                     // 0x1C68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OneTimeDamage;                                     // 0x1C70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OneTimeDamage;                                     // 0x2040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -149,30 +136,32 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10130_10472101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10130_10472101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10130_10472101")
 	}
 	static class UPyEffectiveComponent_10130_10472101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10130_10472101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10130_10472101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10130_10472101");
-static_assert(sizeof(UPyEffectiveComponent_10130_10472101) == 0x001C80, "Wrong size on UPyEffectiveComponent_10130_10472101");
-static_assert(offsetof(UPyEffectiveComponent_10130_10472101, OneTimeDamage) == 0x001C70, "Member 'UPyEffectiveComponent_10130_10472101::OneTimeDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10130_10472101;
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PySummonedComp_10475131
-// 0x0030 (0x0DE0 - 0x0DB0)
+// 0x0030 (0x0E38 - 0x0E08)
 class UPySummonedComp_10475131 : public UMarvelSummonedComponent
 {
 public:
-	float                                         InCreaseScale;                                     // 0x0DB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxInCreaseScale;                                  // 0x0DB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NewScale;                                          // 0x0DB8(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DBC[0x4];                                      // 0x0DBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            HealthRatioToIncreaseScaleCurve;                   // 0x0DC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MinScaleChangeCount;                               // 0x0DC8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DCC[0x4];                                      // 0x0DCC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              SummonedBiggerDelegate;                            // 0x0DD0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         InCreaseScale;                                     // 0x0E08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxInCreaseScale;                                  // 0x0E0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewScale;                                          // 0x0E10(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E14[0x4];                                      // 0x0E14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            HealthRatioToIncreaseScaleCurve;                   // 0x0E18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinScaleChangeCount;                               // 0x0E20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E24[0x4];                                      // 0x0E24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              SummonedBiggerDelegate;                            // 0x0E28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void K2_OnBeginAgentTask();
@@ -184,30 +173,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10475131">();
+		STATIC_CLASS_IMPL("PySummonedComp_10475131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10475131")
 	}
 	static class UPySummonedComp_10475131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10475131>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10475131) == 0x000008, "Wrong alignment on UPySummonedComp_10475131");
-static_assert(sizeof(UPySummonedComp_10475131) == 0x000DE0, "Wrong size on UPySummonedComp_10475131");
-static_assert(offsetof(UPySummonedComp_10475131, InCreaseScale) == 0x000DB0, "Member 'UPySummonedComp_10475131::InCreaseScale' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10475131, MaxInCreaseScale) == 0x000DB4, "Member 'UPySummonedComp_10475131::MaxInCreaseScale' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10475131, NewScale) == 0x000DB8, "Member 'UPySummonedComp_10475131::NewScale' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10475131, HealthRatioToIncreaseScaleCurve) == 0x000DC0, "Member 'UPySummonedComp_10475131::HealthRatioToIncreaseScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10475131, MinScaleChangeCount) == 0x000DC8, "Member 'UPySummonedComp_10475131::MinScaleChangeCount' has a wrong offset!");
-static_assert(offsetof(UPySummonedComp_10475131, SummonedBiggerDelegate) == 0x000DD0, "Member 'UPySummonedComp_10475131::SummonedBiggerDelegate' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedComp_10475131;
 
 // PythonClass PyBuffAbility_10130_1047_10471011_BD.PyEffectiveComponent_10130_10471138
-// 0x0010 (0x1C80 - 0x1C70)
+// 0x0010 (0x2050 - 0x2040)
 class UPyEffectiveComponent_10130_10471138 : public UMarvelAgentEffectiveComponent
 {
 public:
-	uint8                                         Pad_1C68[0x8];                                     // 0x1C68(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            DamageCurve;                                       // 0x1C70(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BD1_2_EffectID;                                    // 0x1C78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            DamageCurve;                                       // 0x2040(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BD1_2_EffectID;                                    // 0x2048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -215,17 +200,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10130_10471138">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10130_10471138")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10130_10471138")
 	}
 	static class UPyEffectiveComponent_10130_10471138* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10130_10471138>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10130_10471138) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10130_10471138");
-static_assert(sizeof(UPyEffectiveComponent_10130_10471138) == 0x001C80, "Wrong size on UPyEffectiveComponent_10130_10471138");
-static_assert(offsetof(UPyEffectiveComponent_10130_10471138, DamageCurve) == 0x001C70, "Member 'UPyEffectiveComponent_10130_10471138::DamageCurve' has a wrong offset!");
-static_assert(offsetof(UPyEffectiveComponent_10130_10471138, BD1_2_EffectID) == 0x001C78, "Member 'UPyEffectiveComponent_10130_10471138::BD1_2_EffectID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10130_10471138;
 
 }
 

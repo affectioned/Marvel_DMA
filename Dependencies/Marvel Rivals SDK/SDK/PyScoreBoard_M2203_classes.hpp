@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_structs.hpp"
 #include "PyScoreBoard_classes.hpp"
+#include "Marvel_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyScoreBoard_M2203.PyScoreBoard_M2203
-// 0x0028 (0x05F0 - 0x05C8)
+// 0x0028 (0x05F8 - 0x05D0)
 class UPyScoreBoard_M2203 final : public UPyScoreBoard
 {
 public:
-	class UInputAction*                           RightRockerYAction;                                // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                RightRockerYStyle;                                 // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          ShowAudioEvent;                                    // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          SwitchAudioEvent;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightRockerYAction;                                // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                RightRockerYStyle;                                 // 0x05D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          ShowAudioEvent;                                    // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          SwitchAudioEvent;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,27 +36,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoard_M2203">();
+		STATIC_CLASS_IMPL("PyScoreBoard_M2203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoard_M2203")
 	}
 	static class UPyScoreBoard_M2203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoard_M2203>();
 	}
 };
-static_assert(alignof(UPyScoreBoard_M2203) == 0x000008, "Wrong alignment on UPyScoreBoard_M2203");
-static_assert(sizeof(UPyScoreBoard_M2203) == 0x0005F0, "Wrong size on UPyScoreBoard_M2203");
-static_assert(offsetof(UPyScoreBoard_M2203, RightRockerYAction) == 0x0005C8, "Member 'UPyScoreBoard_M2203::RightRockerYAction' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_M2203, RightRockerYStyle) == 0x0005D0, "Member 'UPyScoreBoard_M2203::RightRockerYStyle' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_M2203, ShowAudioEvent) == 0x0005E0, "Member 'UPyScoreBoard_M2203::ShowAudioEvent' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoard_M2203, SwitchAudioEvent) == 0x0005E8, "Member 'UPyScoreBoard_M2203::SwitchAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScoreBoard_M2203;
 
 // PythonClass PyScoreBoard_M2203.PyScoreBoardUnit_M2203
-// 0x0010 (0x0638 - 0x0628)
+// 0x0010 (0x0640 - 0x0630)
 class UPyScoreBoardUnit_M2203 final : public UPyScoreBoardUnit
 {
 public:
-	class UTexture2D*                             Top_MySelfBg;                                      // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Bottom_MySelfBg;                                   // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Top_MySelfBg;                                      // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Bottom_MySelfBg;                                   // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,17 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScoreBoardUnit_M2203">();
+		STATIC_CLASS_IMPL("PyScoreBoardUnit_M2203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScoreBoardUnit_M2203")
 	}
 	static class UPyScoreBoardUnit_M2203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyScoreBoardUnit_M2203>();
 	}
 };
-static_assert(alignof(UPyScoreBoardUnit_M2203) == 0x000008, "Wrong alignment on UPyScoreBoardUnit_M2203");
-static_assert(sizeof(UPyScoreBoardUnit_M2203) == 0x000638, "Wrong size on UPyScoreBoardUnit_M2203");
-static_assert(offsetof(UPyScoreBoardUnit_M2203, Top_MySelfBg) == 0x000628, "Member 'UPyScoreBoardUnit_M2203::Top_MySelfBg' has a wrong offset!");
-static_assert(offsetof(UPyScoreBoardUnit_M2203, Bottom_MySelfBg) == 0x000630, "Member 'UPyScoreBoardUnit_M2203::Bottom_MySelfBg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyScoreBoardUnit_M2203;
 
 }
 

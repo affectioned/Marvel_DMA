@@ -21,9 +21,7 @@ struct PyEffectAbility_120_10204111_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEffectAbility_120_10204111_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyEffectAbility_120_10204111_K2_OnEndAbility");
-static_assert(sizeof(PyEffectAbility_120_10204111_K2_OnEndAbility) == 0x000001, "Wrong size on PyEffectAbility_120_10204111_K2_OnEndAbility");
-static_assert(offsetof(PyEffectAbility_120_10204111_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyEffectAbility_120_10204111_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectAbility_120_10204111_K2_OnEndAbility;
 
 }
 

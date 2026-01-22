@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateSightChess">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateSightChess")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateSightChess")
 	}
 	static class UBTS_PyUpdateSightChess* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateSightChess>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateSightChess) == 0x000008, "Wrong alignment on UBTS_PyUpdateSightChess");
-static_assert(sizeof(UBTS_PyUpdateSightChess) == 0x0000B0, "Wrong size on UBTS_PyUpdateSightChess");
-static_assert(offsetof(UBTS_PyUpdateSightChess, DebugMode) == 0x0000A8, "Member 'UBTS_PyUpdateSightChess::DebugMode' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateSightChess;
 
 }
 

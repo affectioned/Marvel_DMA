@@ -196,24 +196,5 @@ void UPyBuffAbility_10556104::K2_OnEndAbility(bool bWasCancelled)
 	Func->FunctionFlags = Flgs;
 }
 
-
-// PythonFunction PyAbility_105561.PyWidget3D_BuffMarker_10556103.OwnerCueActiveChanged
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyWidget3D_BuffMarker_10556103::OwnerCueActiveChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget3D_BuffMarker_10556103", "OwnerCueActiveChanged");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
 }
 

@@ -25,10 +25,7 @@ public:
 	EAbilityActionBindingType                     SyncInputType;                                     // 0x0004(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSyncAbilityConfig) == 0x000004, "Wrong alignment on FSyncAbilityConfig");
-static_assert(sizeof(FSyncAbilityConfig) == 0x000008, "Wrong size on FSyncAbilityConfig");
-static_assert(offsetof(FSyncAbilityConfig, AbilityID) == 0x000000, "Member 'FSyncAbilityConfig::AbilityID' has a wrong offset!");
-static_assert(offsetof(FSyncAbilityConfig, SyncInputType) == 0x000004, "Member 'FSyncAbilityConfig::SyncInputType' has a wrong offset!");
+DUMPER7_ASSERTS_FSyncAbilityConfig;
 
 // ScriptStruct PhantomSummoned.PhantomAbilitySetting
 // 0x0028 (0x0028 - 0x0000)
@@ -43,13 +40,7 @@ public:
 	class UBehaviorTree*                          AutonomousControlBehaviorTree;                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x18];                                      // 0x0010(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPhantomAbilitySetting) == 0x000008, "Wrong alignment on FPhantomAbilitySetting");
-static_assert(sizeof(FPhantomAbilitySetting) == 0x000028, "Wrong size on FPhantomAbilitySetting");
-static_assert(offsetof(FPhantomAbilitySetting, AbilityID) == 0x000000, "Member 'FPhantomAbilitySetting::AbilityID' has a wrong offset!");
-static_assert(offsetof(FPhantomAbilitySetting, bAllowActiveInPhantom) == 0x000004, "Member 'FPhantomAbilitySetting::bAllowActiveInPhantom' has a wrong offset!");
-static_assert(offsetof(FPhantomAbilitySetting, bNeedCheckAndActiveWhenInit) == 0x000005, "Member 'FPhantomAbilitySetting::bNeedCheckAndActiveWhenInit' has a wrong offset!");
-static_assert(offsetof(FPhantomAbilitySetting, bAutonomousControlByAIWhileActive) == 0x000006, "Member 'FPhantomAbilitySetting::bAutonomousControlByAIWhileActive' has a wrong offset!");
-static_assert(offsetof(FPhantomAbilitySetting, AutonomousControlBehaviorTree) == 0x000008, "Member 'FPhantomAbilitySetting::AutonomousControlBehaviorTree' has a wrong offset!");
+DUMPER7_ASSERTS_FPhantomAbilitySetting;
 
 }
 

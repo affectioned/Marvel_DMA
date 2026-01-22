@@ -18,29 +18,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Ability_105101_BP.Ability_105101_BP_C
-// 0x0400 (0x2E00 - 0x2A00)
+// 0x0400 (0x2E50 - 0x2A50)
 class UAbility_105101_BP_C final : public UPyAbility_105101
 {
 public:
-	struct FGameplayTagRequirements               Source_Tag_Requirements;                           // 0x2A00(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayCueParameters                 Gameplay_Cue_Parameters;                           // 0x2B18(0x01D0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FGameplayTagRequirements               Target_Tag_Requirements;                           // 0x2CE8(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagRequirements               Source_Tag_Requirements;                           // 0x2A50(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayCueParameters                 Gameplay_Cue_Parameters;                           // 0x2B68(0x01D0)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FGameplayTagRequirements               Target_Tag_Requirements;                           // 0x2D38(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ability_105101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Ability_105101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ability_105101_BP_C")
 	}
 	static class UAbility_105101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbility_105101_BP_C>();
 	}
 };
-static_assert(alignof(UAbility_105101_BP_C) == 0x000008, "Wrong alignment on UAbility_105101_BP_C");
-static_assert(sizeof(UAbility_105101_BP_C) == 0x002E00, "Wrong size on UAbility_105101_BP_C");
-static_assert(offsetof(UAbility_105101_BP_C, Source_Tag_Requirements) == 0x002A00, "Member 'UAbility_105101_BP_C::Source_Tag_Requirements' has a wrong offset!");
-static_assert(offsetof(UAbility_105101_BP_C, Gameplay_Cue_Parameters) == 0x002B18, "Member 'UAbility_105101_BP_C::Gameplay_Cue_Parameters' has a wrong offset!");
-static_assert(offsetof(UAbility_105101_BP_C, Target_Tag_Requirements) == 0x002CE8, "Member 'UAbility_105101_BP_C::Target_Tag_Requirements' has a wrong offset!");
+DUMPER7_ASSERTS_UAbility_105101_BP_C;
 
 }
 

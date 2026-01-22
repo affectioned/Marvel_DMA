@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingPageLimitTimeTraining.PyWidget_SettingPageLimitTimeTraining
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_SettingPageLimitTimeTraining : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UDataTable*                             PageTable;                                         // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                ApplyGuideTipsStyle;                               // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UDataTable*                             PageTable;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                ApplyGuideTipsStyle;                               // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingPageLimitTimeTraining">();
+		STATIC_CLASS_IMPL("PyWidget_SettingPageLimitTimeTraining")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingPageLimitTimeTraining")
 	}
 	static class UPyWidget_SettingPageLimitTimeTraining* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingPageLimitTimeTraining>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingPageLimitTimeTraining) == 0x000008, "Wrong alignment on UPyWidget_SettingPageLimitTimeTraining");
-static_assert(sizeof(UPyWidget_SettingPageLimitTimeTraining) == 0x000610, "Wrong size on UPyWidget_SettingPageLimitTimeTraining");
-static_assert(offsetof(UPyWidget_SettingPageLimitTimeTraining, PageTable) == 0x0005F8, "Member 'UPyWidget_SettingPageLimitTimeTraining::PageTable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPageLimitTimeTraining, ApplyGuideTipsStyle) == 0x000600, "Member 'UPyWidget_SettingPageLimitTimeTraining::ApplyGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingPageLimitTimeTraining;
 
 }
 

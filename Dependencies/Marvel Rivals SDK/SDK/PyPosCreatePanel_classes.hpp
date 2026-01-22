@@ -41,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPosCreatePanel">();
+		STATIC_CLASS_IMPL("PyPosCreatePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPosCreatePanel")
 	}
 	static class APyPosCreatePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyPosCreatePanel>();
 	}
 };
-static_assert(alignof(APyPosCreatePanel) == 0x000010, "Wrong alignment on APyPosCreatePanel");
-static_assert(sizeof(APyPosCreatePanel) == 0x000740, "Wrong size on APyPosCreatePanel");
-static_assert(offsetof(APyPosCreatePanel, PosPoint) == 0x0006E0, "Member 'APyPosCreatePanel::PosPoint' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, PosPointList) == 0x0006E8, "Member 'APyPosCreatePanel::PosPointList' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, PosRelativeList) == 0x0006F8, "Member 'APyPosCreatePanel::PosRelativeList' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, PosWorldList) == 0x000708, "Member 'APyPosCreatePanel::PosWorldList' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, CenterPos) == 0x000718, "Member 'APyPosCreatePanel::CenterPos' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, WidthSpacing) == 0x000730, "Member 'APyPosCreatePanel::WidthSpacing' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, LengthSpacing) == 0x000734, "Member 'APyPosCreatePanel::LengthSpacing' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, Width) == 0x000738, "Member 'APyPosCreatePanel::Width' has a wrong offset!");
-static_assert(offsetof(APyPosCreatePanel, Length) == 0x00073C, "Member 'APyPosCreatePanel::Length' has a wrong offset!");
+DUMPER7_ASSERTS_APyPosCreatePanel;
 
 }
 

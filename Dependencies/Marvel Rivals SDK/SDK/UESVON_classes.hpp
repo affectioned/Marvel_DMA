@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AITask_SVONMoveTo">();
+		STATIC_CLASS_IMPL("AITask_SVONMoveTo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITask_SVONMoveTo")
 	}
 	static class UAITask_SVONMoveTo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITask_SVONMoveTo>();
 	}
 };
-static_assert(alignof(UAITask_SVONMoveTo) == 0x000008, "Wrong alignment on UAITask_SVONMoveTo");
-static_assert(sizeof(UAITask_SVONMoveTo) == 0x000180, "Wrong size on UAITask_SVONMoveTo");
-static_assert(offsetof(UAITask_SVONMoveTo, OnRequestFailed) == 0x000080, "Member 'UAITask_SVONMoveTo::OnRequestFailed' has a wrong offset!");
-static_assert(offsetof(UAITask_SVONMoveTo, OnMoveFinished) == 0x000098, "Member 'UAITask_SVONMoveTo::OnMoveFinished' has a wrong offset!");
-static_assert(offsetof(UAITask_SVONMoveTo, MoveRequest) == 0x0000A8, "Member 'UAITask_SVONMoveTo::MoveRequest' has a wrong offset!");
-static_assert(offsetof(UAITask_SVONMoveTo, myNavComponent) == 0x000178, "Member 'UAITask_SVONMoveTo::myNavComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UAITask_SVONMoveTo;
 
 // Class UESVON.BTTask_SVONAvoidObstacles
 // 0x0020 (0x0098 - 0x0078)
@@ -66,17 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_SVONAvoidObstacles">();
+		STATIC_CLASS_IMPL("BTTask_SVONAvoidObstacles")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_SVONAvoidObstacles")
 	}
 	static class UBTTask_SVONAvoidObstacles* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_SVONAvoidObstacles>();
 	}
 };
-static_assert(alignof(UBTTask_SVONAvoidObstacles) == 0x000008, "Wrong alignment on UBTTask_SVONAvoidObstacles");
-static_assert(sizeof(UBTTask_SVONAvoidObstacles) == 0x000098, "Wrong size on UBTTask_SVONAvoidObstacles");
-static_assert(offsetof(UBTTask_SVONAvoidObstacles, TraceLength) == 0x000078, "Member 'UBTTask_SVONAvoidObstacles::TraceLength' has a wrong offset!");
-static_assert(offsetof(UBTTask_SVONAvoidObstacles, MoveLength) == 0x00007C, "Member 'UBTTask_SVONAvoidObstacles::MoveLength' has a wrong offset!");
+DUMPER7_ASSERTS_UBTTask_SVONAvoidObstacles;
 
 // Class UESVON.BTTask_SVONMoveTo
 // 0x0018 (0x00C0 - 0x00A8)
@@ -96,18 +96,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_SVONMoveTo">();
+		STATIC_CLASS_IMPL("BTTask_SVONMoveTo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_SVONMoveTo")
 	}
 	static class UBTTask_SVONMoveTo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_SVONMoveTo>();
 	}
 };
-static_assert(alignof(UBTTask_SVONMoveTo) == 0x000008, "Wrong alignment on UBTTask_SVONMoveTo");
-static_assert(sizeof(UBTTask_SVONMoveTo) == 0x0000C0, "Wrong size on UBTTask_SVONMoveTo");
-static_assert(offsetof(UBTTask_SVONMoveTo, AcceptableRadius) == 0x0000A8, "Member 'UBTTask_SVONMoveTo::AcceptableRadius' has a wrong offset!");
-static_assert(offsetof(UBTTask_SVONMoveTo, ObservedBlackboardValueTolerance) == 0x0000AC, "Member 'UBTTask_SVONMoveTo::ObservedBlackboardValueTolerance' has a wrong offset!");
-static_assert(offsetof(UBTTask_SVONMoveTo, bUseAsyncPathfinding) == 0x0000B4, "Member 'UBTTask_SVONMoveTo::bUseAsyncPathfinding' has a wrong offset!");
+DUMPER7_ASSERTS_UBTTask_SVONMoveTo;
 
 // Class UESVON.SVONBoundVolume
 // 0x0000 (0x0710 - 0x0710)
@@ -116,15 +116,18 @@ class ASVONBoundVolume final : public AVolume
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONBoundVolume">();
+		STATIC_CLASS_IMPL("SVONBoundVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONBoundVolume")
 	}
 	static class ASVONBoundVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASVONBoundVolume>();
 	}
 };
-static_assert(alignof(ASVONBoundVolume) == 0x000010, "Wrong alignment on ASVONBoundVolume");
-static_assert(sizeof(ASVONBoundVolume) == 0x000710, "Wrong size on ASVONBoundVolume");
+DUMPER7_ASSERTS_ASVONBoundVolume;
 
 // Class UESVON.SVONIterationEstimator
 // 0x0000 (0x0030 - 0x0030)
@@ -133,15 +136,18 @@ class USVONIterationEstimator : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONIterationEstimator">();
+		STATIC_CLASS_IMPL("SVONIterationEstimator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONIterationEstimator")
 	}
 	static class USVONIterationEstimator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USVONIterationEstimator>();
 	}
 };
-static_assert(alignof(USVONIterationEstimator) == 0x000008, "Wrong alignment on USVONIterationEstimator");
-static_assert(sizeof(USVONIterationEstimator) == 0x000030, "Wrong size on USVONIterationEstimator");
+DUMPER7_ASSERTS_USVONIterationEstimator;
 
 // Class UESVON.SVONFixedIterationEstimator
 // 0x0008 (0x0038 - 0x0030)
@@ -154,16 +160,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONFixedIterationEstimator">();
+		STATIC_CLASS_IMPL("SVONFixedIterationEstimator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONFixedIterationEstimator")
 	}
 	static class USVONFixedIterationEstimator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USVONFixedIterationEstimator>();
 	}
 };
-static_assert(alignof(USVONFixedIterationEstimator) == 0x000008, "Wrong alignment on USVONFixedIterationEstimator");
-static_assert(sizeof(USVONFixedIterationEstimator) == 0x000038, "Wrong size on USVONFixedIterationEstimator");
-static_assert(offsetof(USVONFixedIterationEstimator, FixedIterationTime) == 0x000030, "Member 'USVONFixedIterationEstimator::FixedIterationTime' has a wrong offset!");
+DUMPER7_ASSERTS_USVONFixedIterationEstimator;
 
 // Class UESVON.SVONIterationEstimator_SearchEfficiency
 // 0x0018 (0x0048 - 0x0030)
@@ -180,20 +188,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONIterationEstimator_SearchEfficiency">();
+		STATIC_CLASS_IMPL("SVONIterationEstimator_SearchEfficiency")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONIterationEstimator_SearchEfficiency")
 	}
 	static class USVONIterationEstimator_SearchEfficiency* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USVONIterationEstimator_SearchEfficiency>();
 	}
 };
-static_assert(alignof(USVONIterationEstimator_SearchEfficiency) == 0x000008, "Wrong alignment on USVONIterationEstimator_SearchEfficiency");
-static_assert(sizeof(USVONIterationEstimator_SearchEfficiency) == 0x000048, "Wrong size on USVONIterationEstimator_SearchEfficiency");
-static_assert(offsetof(USVONIterationEstimator_SearchEfficiency, MaxIterationNum) == 0x000030, "Member 'USVONIterationEstimator_SearchEfficiency::MaxIterationNum' has a wrong offset!");
-static_assert(offsetof(USVONIterationEstimator_SearchEfficiency, MinIterationNum) == 0x000034, "Member 'USVONIterationEstimator_SearchEfficiency::MinIterationNum' has a wrong offset!");
-static_assert(offsetof(USVONIterationEstimator_SearchEfficiency, ExtraFactorForEstimateDistance) == 0x000038, "Member 'USVONIterationEstimator_SearchEfficiency::ExtraFactorForEstimateDistance' has a wrong offset!");
-static_assert(offsetof(USVONIterationEstimator_SearchEfficiency, IterationNumFactor) == 0x00003C, "Member 'USVONIterationEstimator_SearchEfficiency::IterationNumFactor' has a wrong offset!");
-static_assert(offsetof(USVONIterationEstimator_SearchEfficiency, ExpectedSearchEfficiency) == 0x000040, "Member 'USVONIterationEstimator_SearchEfficiency::ExpectedSearchEfficiency' has a wrong offset!");
+DUMPER7_ASSERTS_USVONIterationEstimator_SearchEfficiency;
 
 // Class UESVON.SvonNavDataRenderingComponent
 // 0x0040 (0x0800 - 0x07C0)
@@ -214,17 +220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SvonNavDataRenderingComponent">();
+		STATIC_CLASS_IMPL("SvonNavDataRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SvonNavDataRenderingComponent")
 	}
 	static class USvonNavDataRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USvonNavDataRenderingComponent>();
 	}
 };
-static_assert(alignof(USvonNavDataRenderingComponent) == 0x000010, "Wrong alignment on USvonNavDataRenderingComponent");
-static_assert(sizeof(USvonNavDataRenderingComponent) == 0x000800, "Wrong size on USvonNavDataRenderingComponent");
-static_assert(offsetof(USvonNavDataRenderingComponent, DrawFlagName) == 0x0007B8, "Member 'USvonNavDataRenderingComponent::DrawFlagName' has a wrong offset!");
-static_assert(offsetof(USvonNavDataRenderingComponent, DebugMeshMaterialFakeLight) == 0x0007D0, "Member 'USvonNavDataRenderingComponent::DebugMeshMaterialFakeLight' has a wrong offset!");
+DUMPER7_ASSERTS_USvonNavDataRenderingComponent;
 
 // Class UESVON.SVONNavigationComponent
 // 0x00D0 (0x01D8 - 0x0108)
@@ -255,23 +262,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONNavigationComponent">();
+		STATIC_CLASS_IMPL("SVONNavigationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONNavigationComponent")
 	}
 	static class USVONNavigationComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USVONNavigationComponent>();
 	}
 };
-static_assert(alignof(USVONNavigationComponent) == 0x000008, "Wrong alignment on USVONNavigationComponent");
-static_assert(sizeof(USVONNavigationComponent) == 0x0001D8, "Wrong size on USVONNavigationComponent");
-static_assert(offsetof(USVONNavigationComponent, DebugPrintCurrentPosition) == 0x000108, "Member 'USVONNavigationComponent::DebugPrintCurrentPosition' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, DebugPrintMortonCodes) == 0x000109, "Member 'USVONNavigationComponent::DebugPrintMortonCodes' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, DebugDrawRawPath) == 0x00010A, "Member 'USVONNavigationComponent::DebugDrawRawPath' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, DebugDrawFinalPath) == 0x00010B, "Member 'USVONNavigationComponent::DebugDrawFinalPath' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, DebugDrawDuration) == 0x00010C, "Member 'USVONNavigationComponent::DebugDrawDuration' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, PathFinderSettings) == 0x000110, "Member 'USVONNavigationComponent::PathFinderSettings' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, OnSVONMoveRequestFailed) == 0x000158, "Member 'USVONNavigationComponent::OnSVONMoveRequestFailed' has a wrong offset!");
-static_assert(offsetof(USVONNavigationComponent, CurMoveTask) == 0x000190, "Member 'USVONNavigationComponent::CurMoveTask' has a wrong offset!");
+DUMPER7_ASSERTS_USVONNavigationComponent;
 
 // Class UESVON.SVONReachableTestPoint
 // 0x0000 (0x06E0 - 0x06E0)
@@ -285,18 +287,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONReachableTestPoint">();
+		STATIC_CLASS_IMPL("SVONReachableTestPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONReachableTestPoint")
 	}
 	static class ASVONReachableTestPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASVONReachableTestPoint>();
 	}
 };
-static_assert(alignof(ASVONReachableTestPoint) == 0x000010, "Wrong alignment on ASVONReachableTestPoint");
-static_assert(sizeof(ASVONReachableTestPoint) == 0x0006E0, "Wrong size on ASVONReachableTestPoint");
+DUMPER7_ASSERTS_ASVONReachableTestPoint;
 
 // Class UESVON.SVONVolume
-// 0x0630 (0x0D40 - 0x0710)
+// 0x0660 (0x0D70 - 0x0710)
 class ASVONVolume final : public AVolume
 {
 public:
@@ -346,7 +351,7 @@ public:
 	struct FVector                                myOrigin;                                          // 0x0900(0x0018)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                                myExtent;                                          // 0x0918(0x0018)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                                myDebugPosition;                                   // 0x0930(0x0018)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_948[0x3F8];                                    // 0x0948(0x03F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_948[0x428];                                    // 0x0948(0x0428)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DebugNeighbourInDirection();
@@ -372,54 +377,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SVONVolume">();
+		STATIC_CLASS_IMPL("SVONVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SVONVolume")
 	}
 	static class ASVONVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASVONVolume>();
 	}
 };
-static_assert(alignof(ASVONVolume) == 0x000010, "Wrong alignment on ASVONVolume");
-static_assert(sizeof(ASVONVolume) == 0x000D40, "Wrong size on ASVONVolume");
-static_assert(offsetof(ASVONVolume, myDebugDistance) == 0x000710, "Member 'ASVONVolume::myDebugDistance' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myShowVoxels) == 0x000714, "Member 'ASVONVolume::myShowVoxels' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myShowLeafVoxels) == 0x000715, "Member 'ASVONVolume::myShowLeafVoxels' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myDrawSolidLeafNode) == 0x000716, "Member 'ASVONVolume::myDrawSolidLeafNode' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myShowMortonCodes) == 0x000717, "Member 'ASVONVolume::myShowMortonCodes' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myShowNeighbourLinks) == 0x000718, "Member 'ASVONVolume::myShowNeighbourLinks' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myShowParentChildLinks) == 0x000719, "Member 'ASVONVolume::myShowParentChildLinks' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, EnableRebuildDebug) == 0x00071A, "Member 'ASVONVolume::EnableRebuildDebug' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, UseAsyncBuild) == 0x00071B, "Member 'ASVONVolume::UseAsyncBuild' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, RebuildMillisecondDelta) == 0x00071C, "Member 'ASVONVolume::RebuildMillisecondDelta' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bEnableDebugRendering) == 0x000720, "Member 'ASVONVolume::bEnableDebugRendering' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, DebugRenderingSettings) == 0x000728, "Member 'ASVONVolume::DebugRenderingSettings' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myVoxelPower) == 0x000748, "Member 'ASVONVolume::myVoxelPower' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myCollisionChannel) == 0x00074C, "Member 'ASVONVolume::myCollisionChannel' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myClearance) == 0x000750, "Member 'ASVONVolume::myClearance' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myGenerationStrategy) == 0x000754, "Member 'ASVONVolume::myGenerationStrategy' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bUseForNav) == 0x000755, "Member 'ASVONVolume::bUseForNav' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bConcernReachable) == 0x000756, "Member 'ASVONVolume::bConcernReachable' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myNumLayers) == 0x000757, "Member 'ASVONVolume::myNumLayers' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myNumBytes) == 0x000758, "Member 'ASVONVolume::myNumBytes' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myLeafVoxelSize) == 0x00075C, "Member 'ASVONVolume::myLeafVoxelSize' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bOverridePathFindingSetting) == 0x000760, "Member 'ASVONVolume::bOverridePathFindingSetting' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bUseUnitCost) == 0x000761, "Member 'ASVONVolume::bUseUnitCost' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myOffSVOLinkMap) == 0x000768, "Member 'ASVONVolume::myOffSVOLinkMap' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myOffSVOLinkIdMap) == 0x0007B8, "Member 'ASVONVolume::myOffSVOLinkIdMap' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myOffSVOLinkLocationMap) == 0x000808, "Member 'ASVONVolume::myOffSVOLinkLocationMap' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bHasOffSVOLink) == 0x000858, "Member 'ASVONVolume::bHasOffSVOLink' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, NavSysCache) == 0x000860, "Member 'ASVONVolume::NavSysCache' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, DebugLayerIndex) == 0x000868, "Member 'ASVONVolume::DebugLayerIndex' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, DebugNodeIndex) == 0x00086C, "Member 'ASVONVolume::DebugNodeIndex' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, DebugSubNodeIndex) == 0x000870, "Member 'ASVONVolume::DebugSubNodeIndex' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bDebugForceLeafNode) == 0x000871, "Member 'ASVONVolume::bDebugForceLeafNode' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, DebugDirection) == 0x000872, "Member 'ASVONVolume::DebugDirection' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bDebugShowNeighbours) == 0x000873, "Member 'ASVONVolume::bDebugShowNeighbours' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, bAutoFlushWhenDebugLink) == 0x000874, "Member 'ASVONVolume::bAutoFlushWhenDebugLink' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, RenderingComponent) == 0x000878, "Member 'ASVONVolume::RenderingComponent' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myOrigin) == 0x000900, "Member 'ASVONVolume::myOrigin' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myExtent) == 0x000918, "Member 'ASVONVolume::myExtent' has a wrong offset!");
-static_assert(offsetof(ASVONVolume, myDebugPosition) == 0x000930, "Member 'ASVONVolume::myDebugPosition' has a wrong offset!");
+DUMPER7_ASSERTS_ASVONVolume;
 
 }
 

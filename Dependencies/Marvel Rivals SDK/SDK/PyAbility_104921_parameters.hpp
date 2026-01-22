@@ -21,9 +21,7 @@ struct PyWidget_Extra_104921_SetAbility final
 public:
 	class UMarvelGameplayAbility*                 Ability_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Extra_104921_SetAbility) == 0x000008, "Wrong alignment on PyWidget_Extra_104921_SetAbility");
-static_assert(sizeof(PyWidget_Extra_104921_SetAbility) == 0x000008, "Wrong size on PyWidget_Extra_104921_SetAbility");
-static_assert(offsetof(PyWidget_Extra_104921_SetAbility, Ability_0) == 0x000000, "Member 'PyWidget_Extra_104921_SetAbility::Ability_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Extra_104921_SetAbility;
 
 // PythonFunction PyAbility_104921.PyWidget_Extra_104921.SetEnergyCur
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Extra_104921_SetEnergyCur final
 public:
 	float                                         InCur;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Extra_104921_SetEnergyCur) == 0x000004, "Wrong alignment on PyWidget_Extra_104921_SetEnergyCur");
-static_assert(sizeof(PyWidget_Extra_104921_SetEnergyCur) == 0x000004, "Wrong size on PyWidget_Extra_104921_SetEnergyCur");
-static_assert(offsetof(PyWidget_Extra_104921_SetEnergyCur, InCur) == 0x000000, "Member 'PyWidget_Extra_104921_SetEnergyCur::InCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Extra_104921_SetEnergyCur;
 
 // PythonFunction PyAbility_104921.PyWidget_Extra_104921.SetEnergyPercent
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Extra_104921_SetEnergyPercent final
 public:
 	double                                        InPercent;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Extra_104921_SetEnergyPercent) == 0x000008, "Wrong alignment on PyWidget_Extra_104921_SetEnergyPercent");
-static_assert(sizeof(PyWidget_Extra_104921_SetEnergyPercent) == 0x000008, "Wrong size on PyWidget_Extra_104921_SetEnergyPercent");
-static_assert(offsetof(PyWidget_Extra_104921_SetEnergyPercent, InPercent) == 0x000000, "Member 'PyWidget_Extra_104921_SetEnergyPercent::InPercent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Extra_104921_SetEnergyPercent;
 
 }
 

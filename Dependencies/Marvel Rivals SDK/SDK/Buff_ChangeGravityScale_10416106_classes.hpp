@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Buff_ChangeGravityScale_10416106.Buff_ChangeGravityScale_10416106_C
-// 0x0000 (0x13F0 - 0x13F0)
+// 0x0000 (0x1408 - 0x1408)
 class UBuff_ChangeGravityScale_10416106_C final : public UMarvelChangeGravityAbility
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Buff_ChangeGravityScale_10416106_C">();
+		BP_STATIC_CLASS_IMPL("Buff_ChangeGravityScale_10416106_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Buff_ChangeGravityScale_10416106_C")
 	}
 	static class UBuff_ChangeGravityScale_10416106_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuff_ChangeGravityScale_10416106_C>();
 	}
 };
-static_assert(alignof(UBuff_ChangeGravityScale_10416106_C) == 0x000008, "Wrong alignment on UBuff_ChangeGravityScale_10416106_C");
-static_assert(sizeof(UBuff_ChangeGravityScale_10416106_C) == 0x0013F0, "Wrong size on UBuff_ChangeGravityScale_10416106_C");
+DUMPER7_ASSERTS_UBuff_ChangeGravityScale_10416106_C;
 
 }
 

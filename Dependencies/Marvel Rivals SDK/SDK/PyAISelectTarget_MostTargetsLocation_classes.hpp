@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "MarvelAI_structs.hpp"
-#include "PyAISelectTargetLogicBase_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "PyAISelectTargetLogicBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAISelectTarget_MostTargetsLocation.PyAISelectTarget_MostTargetsLocation
-// 0x1680 (0x16F0 - 0x0070)
+// 0x19D0 (0x1A40 - 0x0070)
 class UPyAISelectTarget_MostTargetsLocation : public UPyAISelectTargetLogicBase
 {
 public:
@@ -31,27 +31,23 @@ public:
 	uint8                                         Pad_7B[0x1];                                       // 0x007B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRange_FloatValue                      DistRange;                                         // 0x007C(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_84[0xC];                                       // 0x0084(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0090(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TraceContext;                                      // 0x0090(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAISelectTarget_MostTargetsLocation">();
+		STATIC_CLASS_IMPL("PyAISelectTarget_MostTargetsLocation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAISelectTarget_MostTargetsLocation")
 	}
 	static class UPyAISelectTarget_MostTargetsLocation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAISelectTarget_MostTargetsLocation>();
 	}
 };
-static_assert(alignof(UPyAISelectTarget_MostTargetsLocation) == 0x000010, "Wrong alignment on UPyAISelectTarget_MostTargetsLocation");
-static_assert(sizeof(UPyAISelectTarget_MostTargetsLocation) == 0x0016F0, "Wrong size on UPyAISelectTarget_MostTargetsLocation");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, MaxDistance) == 0x000070, "Member 'UPyAISelectTarget_MostTargetsLocation::MaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, RangeRadius) == 0x000074, "Member 'UPyAISelectTarget_MostTargetsLocation::RangeRadius' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, SelectEnemies) == 0x000078, "Member 'UPyAISelectTarget_MostTargetsLocation::SelectEnemies' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, SelectTeammates) == 0x000079, "Member 'UPyAISelectTarget_MostTargetsLocation::SelectTeammates' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, SelectGround) == 0x00007A, "Member 'UPyAISelectTarget_MostTargetsLocation::SelectGround' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, DistRange) == 0x00007C, "Member 'UPyAISelectTarget_MostTargetsLocation::DistRange' has a wrong offset!");
-static_assert(offsetof(UPyAISelectTarget_MostTargetsLocation, TraceContext) == 0x000090, "Member 'UPyAISelectTarget_MostTargetsLocation::TraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAISelectTarget_MostTargetsLocation;
 
 }
 

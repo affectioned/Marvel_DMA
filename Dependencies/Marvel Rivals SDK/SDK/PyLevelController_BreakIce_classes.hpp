@@ -35,23 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_BreakIce">();
+		STATIC_CLASS_IMPL("PyLevelController_BreakIce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_BreakIce")
 	}
 	static class APyLevelController_BreakIce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_BreakIce>();
 	}
 };
-static_assert(alignof(APyLevelController_BreakIce) == 0x000010, "Wrong alignment on APyLevelController_BreakIce");
-static_assert(sizeof(APyLevelController_BreakIce) == 0x000AE0, "Wrong size on APyLevelController_BreakIce");
-static_assert(offsetof(APyLevelController_BreakIce, LS_HeroSkinFadeIn) == 0x0006E0, "Member 'APyLevelController_BreakIce::LS_HeroSkinFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_CurrencyFadeIn) == 0x000760, "Member 'APyLevelController_BreakIce::LS_CurrencyFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_CurrencyFadeIn_908) == 0x0007E0, "Member 'APyLevelController_BreakIce::LS_CurrencyFadeIn_908' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_NameplateFadeIn) == 0x000860, "Member 'APyLevelController_BreakIce::LS_NameplateFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_HeroSkinLoop) == 0x0008E0, "Member 'APyLevelController_BreakIce::LS_HeroSkinLoop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_CurrencyLoop) == 0x000960, "Member 'APyLevelController_BreakIce::LS_CurrencyLoop' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_CurrencyLoop_908) == 0x0009E0, "Member 'APyLevelController_BreakIce::LS_CurrencyLoop_908' has a wrong offset!");
-static_assert(offsetof(APyLevelController_BreakIce, LS_NameplateLoop) == 0x000A60, "Member 'APyLevelController_BreakIce::LS_NameplateLoop' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_BreakIce;
 
 }
 

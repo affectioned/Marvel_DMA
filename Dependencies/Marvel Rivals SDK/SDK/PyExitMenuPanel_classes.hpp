@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyExitMenuPanel.PyExitMenuPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyExitMenuPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -31,15 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExitMenuPanel">();
+		STATIC_CLASS_IMPL("PyExitMenuPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExitMenuPanel")
 	}
 	static class UPyExitMenuPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExitMenuPanel>();
 	}
 };
-static_assert(alignof(UPyExitMenuPanel) == 0x000008, "Wrong alignment on UPyExitMenuPanel");
-static_assert(sizeof(UPyExitMenuPanel) == 0x0005F8, "Wrong size on UPyExitMenuPanel");
+DUMPER7_ASSERTS_UPyExitMenuPanel;
 
 }
 

@@ -23,9 +23,7 @@ struct PyWidget_Common_Tips_ResetOffset final
 public:
 	struct FVector2D                              NewOffset;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Tips_ResetOffset) == 0x000008, "Wrong alignment on PyWidget_Common_Tips_ResetOffset");
-static_assert(sizeof(PyWidget_Common_Tips_ResetOffset) == 0x000010, "Wrong size on PyWidget_Common_Tips_ResetOffset");
-static_assert(offsetof(PyWidget_Common_Tips_ResetOffset, NewOffset) == 0x000000, "Member 'PyWidget_Common_Tips_ResetOffset::NewOffset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Tips_ResetOffset;
 
 // PythonFunction PyWidget_Common_Tips.PyWidget_Common_Host_Tips.ResetOffset
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +32,7 @@ struct PyWidget_Common_Host_Tips_ResetOffset final
 public:
 	struct FVector2D                              NewOffset;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Host_Tips_ResetOffset) == 0x000008, "Wrong alignment on PyWidget_Common_Host_Tips_ResetOffset");
-static_assert(sizeof(PyWidget_Common_Host_Tips_ResetOffset) == 0x000010, "Wrong size on PyWidget_Common_Host_Tips_ResetOffset");
-static_assert(offsetof(PyWidget_Common_Host_Tips_ResetOffset, NewOffset) == 0x000000, "Member 'PyWidget_Common_Host_Tips_ResetOffset::NewOffset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Host_Tips_ResetOffset;
 
 // PythonFunction PyWidget_Common_Tips.PyWidget_Common_Key_Tips.ResetOffset
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyWidget_Common_Key_Tips_ResetOffset final
 public:
 	struct FVector2D                              NewOffset;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Key_Tips_ResetOffset) == 0x000008, "Wrong alignment on PyWidget_Common_Key_Tips_ResetOffset");
-static_assert(sizeof(PyWidget_Common_Key_Tips_ResetOffset) == 0x000010, "Wrong size on PyWidget_Common_Key_Tips_ResetOffset");
-static_assert(offsetof(PyWidget_Common_Key_Tips_ResetOffset, NewOffset) == 0x000000, "Member 'PyWidget_Common_Key_Tips_ResetOffset::NewOffset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Key_Tips_ResetOffset;
 
 // PythonFunction PyWidget_Common_Tips.PyWidget_Common_Key_Tips.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +50,7 @@ struct PyWidget_Common_Key_Tips_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Key_Tips_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Common_Key_Tips_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Common_Key_Tips_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Common_Key_Tips_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Common_Key_Tips_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Common_Key_Tips_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Key_Tips_MarvelSetVisible;
 
 // PythonFunction PyWidget_Common_Tips.PyWidget_CompensateScore_Tips.ResetOffset
 // 0x0010 (0x0010 - 0x0000)
@@ -67,9 +59,7 @@ struct PyWidget_CompensateScore_Tips_ResetOffset final
 public:
 	struct FVector2D                              NewOffset;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CompensateScore_Tips_ResetOffset) == 0x000008, "Wrong alignment on PyWidget_CompensateScore_Tips_ResetOffset");
-static_assert(sizeof(PyWidget_CompensateScore_Tips_ResetOffset) == 0x000010, "Wrong size on PyWidget_CompensateScore_Tips_ResetOffset");
-static_assert(offsetof(PyWidget_CompensateScore_Tips_ResetOffset, NewOffset) == 0x000000, "Member 'PyWidget_CompensateScore_Tips_ResetOffset::NewOffset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CompensateScore_Tips_ResetOffset;
 
 // PythonFunction PyWidget_Common_Tips.PyWidget_Halloween_talent_Tips.ResetOffset
 // 0x0010 (0x0010 - 0x0000)
@@ -78,9 +68,7 @@ struct PyWidget_Halloween_talent_Tips_ResetOffset final
 public:
 	struct FVector2D                              NewOffset;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_talent_Tips_ResetOffset) == 0x000008, "Wrong alignment on PyWidget_Halloween_talent_Tips_ResetOffset");
-static_assert(sizeof(PyWidget_Halloween_talent_Tips_ResetOffset) == 0x000010, "Wrong size on PyWidget_Halloween_talent_Tips_ResetOffset");
-static_assert(offsetof(PyWidget_Halloween_talent_Tips_ResetOffset, NewOffset) == 0x000000, "Member 'PyWidget_Halloween_talent_Tips_ResetOffset::NewOffset' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_talent_Tips_ResetOffset;
 
 }
 

@@ -18,29 +18,29 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_NavigationRightArea.PyWidget_Common_NavigationRightArea
-// 0x0088 (0x0648 - 0x05C0)
+// 0x0088 (0x0650 - 0x05C8)
 class UPyWidget_Common_NavigationRightArea : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsShowCurrency;                                    // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowSetting;                                     // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowEmail;                                       // 0x05BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowFriend;                                      // 0x05BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowBtnAdd;                                      // 0x05BE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowPrivilege;                                   // 0x05BF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShowLottery;                                     // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C1[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         ResidentCurrencyIDs;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ExtraCurrencyIDs;                                  // 0x05D8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnColor;                                          // 0x05E8(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnHoverColor;                                     // 0x05FC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnPressColor;                                     // 0x0610(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          IsDirectToSetting;                                 // 0x0624(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_625[0x3];                                      // 0x0625(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USizeBox*                               SizeBox_Ps_Setting;                                // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USizeBox*                               SizeBox_Ps_Mail;                                   // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USizeBox*                               SizeBox_Ps_Friend;                                 // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            WBP_Lottery_NavigationBar_Btn;                     // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowCurrency;                                    // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowSetting;                                     // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowEmail;                                       // 0x05C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowFriend;                                      // 0x05C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowBtnAdd;                                      // 0x05C6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowPrivilege;                                   // 0x05C7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShowLottery;                                     // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C9[0x7];                                      // 0x05C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         ResidentCurrencyIDs;                               // 0x05D0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class FString>                         ExtraCurrencyIDs;                                  // 0x05E0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnColor;                                          // 0x05F0(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnHoverColor;                                     // 0x0604(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnPressColor;                                     // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          IsDirectToSetting;                                 // 0x062C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_62D[0x3];                                      // 0x062D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USizeBox*                               SizeBox_Ps_Setting;                                // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Ps_Mail;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USizeBox*                               SizeBox_Ps_Friend;                                 // 0x0640(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            WBP_Lottery_NavigationBar_Btn;                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,35 +51,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationRightArea">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationRightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationRightArea")
 	}
 	static class UPyWidget_Common_NavigationRightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationRightArea>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationRightArea) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationRightArea");
-static_assert(sizeof(UPyWidget_Common_NavigationRightArea) == 0x000648, "Wrong size on UPyWidget_Common_NavigationRightArea");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowCurrency) == 0x0005BA, "Member 'UPyWidget_Common_NavigationRightArea::IsShowCurrency' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowSetting) == 0x0005BB, "Member 'UPyWidget_Common_NavigationRightArea::IsShowSetting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowEmail) == 0x0005BC, "Member 'UPyWidget_Common_NavigationRightArea::IsShowEmail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowFriend) == 0x0005BD, "Member 'UPyWidget_Common_NavigationRightArea::IsShowFriend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowBtnAdd) == 0x0005BE, "Member 'UPyWidget_Common_NavigationRightArea::IsShowBtnAdd' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowPrivilege) == 0x0005BF, "Member 'UPyWidget_Common_NavigationRightArea::IsShowPrivilege' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsShowLottery) == 0x0005C0, "Member 'UPyWidget_Common_NavigationRightArea::IsShowLottery' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, ResidentCurrencyIDs) == 0x0005C8, "Member 'UPyWidget_Common_NavigationRightArea::ResidentCurrencyIDs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, ExtraCurrencyIDs) == 0x0005D8, "Member 'UPyWidget_Common_NavigationRightArea::ExtraCurrencyIDs' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, BtnColor) == 0x0005E8, "Member 'UPyWidget_Common_NavigationRightArea::BtnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, BtnHoverColor) == 0x0005FC, "Member 'UPyWidget_Common_NavigationRightArea::BtnHoverColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, BtnPressColor) == 0x000610, "Member 'UPyWidget_Common_NavigationRightArea::BtnPressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, IsDirectToSetting) == 0x000624, "Member 'UPyWidget_Common_NavigationRightArea::IsDirectToSetting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, SizeBox_Ps_Setting) == 0x000628, "Member 'UPyWidget_Common_NavigationRightArea::SizeBox_Ps_Setting' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, SizeBox_Ps_Mail) == 0x000630, "Member 'UPyWidget_Common_NavigationRightArea::SizeBox_Ps_Mail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, SizeBox_Ps_Friend) == 0x000638, "Member 'UPyWidget_Common_NavigationRightArea::SizeBox_Ps_Friend' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_NavigationRightArea, WBP_Lottery_NavigationBar_Btn) == 0x000640, "Member 'UPyWidget_Common_NavigationRightArea::WBP_Lottery_NavigationBar_Btn' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationRightArea;
 
 // PythonClass PyWidget_Common_NavigationRightArea.PyWidget_Common_NavigationLobbyRightArea
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Common_NavigationLobbyRightArea final : public UPyMarvelUserWidget
 {
 public:
@@ -88,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_NavigationLobbyRightArea">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationLobbyRightArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationLobbyRightArea")
 	}
 	static class UPyWidget_Common_NavigationLobbyRightArea* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_NavigationLobbyRightArea>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_NavigationLobbyRightArea) == 0x000008, "Wrong alignment on UPyWidget_Common_NavigationLobbyRightArea");
-static_assert(sizeof(UPyWidget_Common_NavigationLobbyRightArea) == 0x0005C0, "Wrong size on UPyWidget_Common_NavigationLobbyRightArea");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationLobbyRightArea;
 
 }
 

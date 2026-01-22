@@ -23,15 +23,18 @@ class UCue_Ability_217_Instant_BP_C final : public UPyCue_Ability_Instant_21701
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Ability_217_Instant_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Ability_217_Instant_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Ability_217_Instant_BP_C")
 	}
 	static class UCue_Ability_217_Instant_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_Ability_217_Instant_BP_C>();
 	}
 };
-static_assert(alignof(UCue_Ability_217_Instant_BP_C) == 0x000008, "Wrong alignment on UCue_Ability_217_Instant_BP_C");
-static_assert(sizeof(UCue_Ability_217_Instant_BP_C) == 0x0002B8, "Wrong size on UCue_Ability_217_Instant_BP_C");
+DUMPER7_ASSERTS_UCue_Ability_217_Instant_BP_C;
 
 }
 

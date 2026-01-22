@@ -27,27 +27,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimationBudgetBlueprintLibrary">();
+		STATIC_CLASS_IMPL("AnimationBudgetBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimationBudgetBlueprintLibrary")
 	}
 	static class UAnimationBudgetBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimationBudgetBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAnimationBudgetBlueprintLibrary) == 0x000008, "Wrong alignment on UAnimationBudgetBlueprintLibrary");
-static_assert(sizeof(UAnimationBudgetBlueprintLibrary) == 0x000030, "Wrong size on UAnimationBudgetBlueprintLibrary");
+DUMPER7_ASSERTS_UAnimationBudgetBlueprintLibrary;
 
 // Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
-// 0x0030 (0x18D0 - 0x18A0)
+// 0x0030 (0x18F0 - 0x18C0)
 #pragma pack(push, 0x1)
 class alignas(0x10) USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 {
 public:
-	uint8                                         Pad_18A0[0x20];                                    // 0x18A0(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bAutoRegisterWithBudgetAllocator : 1;              // 0x18C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bAutoCalculateSignificance : 1;                    // 0x18C0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bShouldUseActorRenderedFlag : 1;                   // 0x18C0(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_18C1[0x7];                                     // 0x18C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18C0[0x20];                                    // 0x18C0(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bAutoRegisterWithBudgetAllocator : 1;              // 0x18E0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bAutoCalculateSignificance : 1;                    // 0x18E0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bShouldUseActorRenderedFlag : 1;                   // 0x18E0(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         Pad_18E1[0x7];                                     // 0x18E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);
@@ -55,7 +58,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SkeletalMeshComponentBudgeted">();
+		STATIC_CLASS_IMPL("SkeletalMeshComponentBudgeted")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkeletalMeshComponentBudgeted")
 	}
 	static class USkeletalMeshComponentBudgeted* GetDefaultObj()
 	{
@@ -63,8 +70,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(USkeletalMeshComponentBudgeted) == 0x000010, "Wrong alignment on USkeletalMeshComponentBudgeted");
-static_assert(sizeof(USkeletalMeshComponentBudgeted) == 0x0018D0, "Wrong size on USkeletalMeshComponentBudgeted");
+DUMPER7_ASSERTS_USkeletalMeshComponentBudgeted;
 
 }
 

@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_Kill_Panel.WBP_Battle_Kill_Panel_C
-// 0x0020 (0x0658 - 0x0638)
+// 0x0020 (0x0660 - 0x0640)
 class UWBP_Battle_Kill_Panel_C final : public UPyWidget_LocalBattleKillPanel
 {
 public:
-	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_KillPrompt;                                // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_PickUpPrompt;                              // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelVerticalBox*                     VBox_Prompt;                                       // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Content;                                   // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_KillPrompt;                                // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_PickUpPrompt;                              // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_Prompt;                                       // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_Kill_Panel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_Kill_Panel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_Kill_Panel_C")
 	}
 	static class UWBP_Battle_Kill_Panel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_Kill_Panel_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_Kill_Panel_C) == 0x000008, "Wrong alignment on UWBP_Battle_Kill_Panel_C");
-static_assert(sizeof(UWBP_Battle_Kill_Panel_C) == 0x000658, "Wrong size on UWBP_Battle_Kill_Panel_C");
-static_assert(offsetof(UWBP_Battle_Kill_Panel_C, Overlay_Content) == 0x000638, "Member 'UWBP_Battle_Kill_Panel_C::Overlay_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_Kill_Panel_C, Overlay_KillPrompt) == 0x000640, "Member 'UWBP_Battle_Kill_Panel_C::Overlay_KillPrompt' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_Kill_Panel_C, Overlay_PickUpPrompt) == 0x000648, "Member 'UWBP_Battle_Kill_Panel_C::Overlay_PickUpPrompt' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_Kill_Panel_C, VBox_Prompt) == 0x000650, "Member 'UWBP_Battle_Kill_Panel_C::VBox_Prompt' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_Kill_Panel_C;
 
 }
 

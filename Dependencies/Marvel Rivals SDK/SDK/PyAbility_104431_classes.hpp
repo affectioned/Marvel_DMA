@@ -18,37 +18,37 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104431.PyConfig_104431
-// 0x0BE0 (0x0C78 - 0x0098)
+// 0x0F00 (0x0F98 - 0x0098)
 class UPyConfig_104431 final : public UMarvelAbilityConfig
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0BC8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	int32                                         DashScope;                                         // 0x0C60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C64[0x4];                                      // 0x0C64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 ScopeIDs;                                          // 0x0C68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x0098(0x0EE8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	int32                                         DashScope;                                         // 0x0F80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F84[0x4];                                      // 0x0F84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 ScopeIDs;                                          // 0x0F88(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104431">();
+		STATIC_CLASS_IMPL("PyConfig_104431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104431")
 	}
 	static class UPyConfig_104431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104431>();
 	}
 };
-static_assert(alignof(UPyConfig_104431) == 0x000008, "Wrong alignment on UPyConfig_104431");
-static_assert(sizeof(UPyConfig_104431) == 0x000C78, "Wrong size on UPyConfig_104431");
-static_assert(offsetof(UPyConfig_104431, DashInfo) == 0x000098, "Member 'UPyConfig_104431::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104431, DashScope) == 0x000C60, "Member 'UPyConfig_104431::DashScope' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104431, ScopeIDs) == 0x000C68, "Member 'UPyConfig_104431::ScopeIDs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104431;
 
 // PythonClass PyAbility_104431.PyAbility_104431
-// 0x0010 (0x2A00 - 0x29F0)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_104431 : public UMarvelGameplayAbility
 {
 public:
-	TMulticastInlineDelegate<void(class AActor* Target)> OnDashHit;                                  // 0x29F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class AActor* Target)> OnDashHit;                                  // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -65,19 +65,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104431">();
+		STATIC_CLASS_IMPL("PyAbility_104431")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104431")
 	}
 	static class UPyAbility_104431* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104431>();
 	}
 };
-static_assert(alignof(UPyAbility_104431) == 0x000008, "Wrong alignment on UPyAbility_104431");
-static_assert(sizeof(UPyAbility_104431) == 0x002A00, "Wrong size on UPyAbility_104431");
-static_assert(offsetof(UPyAbility_104431, OnDashHit) == 0x0029F0, "Member 'UPyAbility_104431::OnDashHit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_104431;
 
 // PythonClass PyAbility_104431.PyEffectiveComponent_10443101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10443101 : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -87,15 +89,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10443101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10443101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10443101")
 	}
 	static class UPyEffectiveComponent_10443101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10443101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10443101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10443101");
-static_assert(sizeof(UPyEffectiveComponent_10443101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10443101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10443101;
 
 }
 

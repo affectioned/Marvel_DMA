@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_MVP.PyWidget_HeroSystem_MVP
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_HeroSystem_MVP final : public UPyWidget_HeroSystem_Customize_Unit
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_MVP">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_MVP")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_MVP")
 	}
 	static class UPyWidget_HeroSystem_MVP* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_MVP>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_MVP) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_MVP");
-static_assert(sizeof(UPyWidget_HeroSystem_MVP) == 0x000608, "Wrong size on UPyWidget_HeroSystem_MVP");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_MVP;
 
 }
 

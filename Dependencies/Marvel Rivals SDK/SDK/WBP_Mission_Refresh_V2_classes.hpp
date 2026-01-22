@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mission_Refresh_V2.WBP_Mission_Refresh_V2_C
-// 0x0020 (0x0858 - 0x0838)
+// 0x0020 (0x0860 - 0x0840)
 class UWBP_Mission_Refresh_V2_C final : public UPyWidget_MissionRefreshPanel
 {
 public:
-	class UMarvelTileView*                        Mission_TileView;                                  // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   RichText_Refresh_Times;                            // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Txt_Refresh_Attempts;                              // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_RightTop_Currency_C*        WBP_Common_RightTop_Currency;                      // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTileView*                        Mission_TileView;                                  // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_Refresh_Times;                            // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Txt_Refresh_Attempts;                              // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_RightTop_Currency_C*        WBP_Common_RightTop_Currency;                      // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mission_Refresh_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mission_Refresh_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mission_Refresh_V2_C")
 	}
 	static class UWBP_Mission_Refresh_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mission_Refresh_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_Mission_Refresh_V2_C) == 0x000008, "Wrong alignment on UWBP_Mission_Refresh_V2_C");
-static_assert(sizeof(UWBP_Mission_Refresh_V2_C) == 0x000858, "Wrong size on UWBP_Mission_Refresh_V2_C");
-static_assert(offsetof(UWBP_Mission_Refresh_V2_C, Mission_TileView) == 0x000838, "Member 'UWBP_Mission_Refresh_V2_C::Mission_TileView' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_Refresh_V2_C, RichText_Refresh_Times) == 0x000840, "Member 'UWBP_Mission_Refresh_V2_C::RichText_Refresh_Times' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_Refresh_V2_C, Txt_Refresh_Attempts) == 0x000848, "Member 'UWBP_Mission_Refresh_V2_C::Txt_Refresh_Attempts' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_Refresh_V2_C, WBP_Common_RightTop_Currency) == 0x000850, "Member 'UWBP_Mission_Refresh_V2_C::WBP_Common_RightTop_Currency' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mission_Refresh_V2_C;
 
 }
 

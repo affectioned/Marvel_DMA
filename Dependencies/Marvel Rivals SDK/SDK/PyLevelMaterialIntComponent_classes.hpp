@@ -23,15 +23,18 @@ class UPyLevelMaterialIntComponent final : public UPyLevelMaterialFloatComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialIntComponent">();
+		STATIC_CLASS_IMPL("PyLevelMaterialIntComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialIntComponent")
 	}
 	static class UPyLevelMaterialIntComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMaterialIntComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMaterialIntComponent) == 0x000008, "Wrong alignment on UPyLevelMaterialIntComponent");
-static_assert(sizeof(UPyLevelMaterialIntComponent) == 0x000120, "Wrong size on UPyLevelMaterialIntComponent");
+DUMPER7_ASSERTS_UPyLevelMaterialIntComponent;
 
 }
 

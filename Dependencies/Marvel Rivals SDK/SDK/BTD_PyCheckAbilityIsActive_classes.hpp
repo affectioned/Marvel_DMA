@@ -29,16 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTD_PyCheckAbilityIsActive">();
+		STATIC_CLASS_IMPL("BTD_PyCheckAbilityIsActive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_PyCheckAbilityIsActive")
 	}
 	static class UBTD_PyCheckAbilityIsActive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_PyCheckAbilityIsActive>();
 	}
 };
-static_assert(alignof(UBTD_PyCheckAbilityIsActive) == 0x000008, "Wrong alignment on UBTD_PyCheckAbilityIsActive");
-static_assert(sizeof(UBTD_PyCheckAbilityIsActive) == 0x0000C0, "Wrong size on UBTD_PyCheckAbilityIsActive");
-static_assert(offsetof(UBTD_PyCheckAbilityIsActive, AbilityID) == 0x0000B8, "Member 'UBTD_PyCheckAbilityIsActive::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UBTD_PyCheckAbilityIsActive;
 
 }
 

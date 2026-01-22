@@ -24,9 +24,7 @@ struct PyAbility_101621_PhantomBindOwnerSpawnProjectile final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_PhantomBindOwnerSpawnProjectile) == 0x000001, "Wrong alignment on PyAbility_101621_PhantomBindOwnerSpawnProjectile");
-static_assert(sizeof(PyAbility_101621_PhantomBindOwnerSpawnProjectile) == 0x000001, "Wrong size on PyAbility_101621_PhantomBindOwnerSpawnProjectile");
-static_assert(offsetof(PyAbility_101621_PhantomBindOwnerSpawnProjectile, bEnabled) == 0x000000, "Member 'PyAbility_101621_PhantomBindOwnerSpawnProjectile::bEnabled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_PhantomBindOwnerSpawnProjectile;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.PhantomSpawnProjectile
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyAbility_101621_PhantomSpawnProjectile final
 public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_PhantomSpawnProjectile) == 0x000008, "Wrong alignment on PyAbility_101621_PhantomSpawnProjectile");
-static_assert(sizeof(PyAbility_101621_PhantomSpawnProjectile) == 0x000008, "Wrong size on PyAbility_101621_PhantomSpawnProjectile");
-static_assert(offsetof(PyAbility_101621_PhantomSpawnProjectile, SpawnActor) == 0x000000, "Member 'PyAbility_101621_PhantomSpawnProjectile::SpawnActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_PhantomSpawnProjectile;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.K2_ActivateAbilityFromEvent
 // 0x0290 (0x0290 - 0x0000)
@@ -46,9 +42,7 @@ struct PyAbility_101621_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x0290)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_101621_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on PyAbility_101621_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(PyAbility_101621_K2_ActivateAbilityFromEvent) == 0x000290, "Wrong size on PyAbility_101621_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(PyAbility_101621_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'PyAbility_101621_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_K2_ActivateAbilityFromEvent;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +51,7 @@ struct PyAbility_101621_K2_OnEndAbility final
 public:
 	bool                                          bCancelled;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_101621_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_101621_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_101621_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_101621_K2_OnEndAbility, bCancelled) == 0x000000, "Member 'PyAbility_101621_K2_OnEndAbility::bCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_K2_OnEndAbility;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.HandleAnimSocketInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -70,10 +62,7 @@ public:
 	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0010(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbility_101621_HandleAnimSocketInfo) == 0x000010, "Wrong alignment on PyAbility_101621_HandleAnimSocketInfo");
-static_assert(sizeof(PyAbility_101621_HandleAnimSocketInfo) == 0x0000B0, "Wrong size on PyAbility_101621_HandleAnimSocketInfo");
-static_assert(offsetof(PyAbility_101621_HandleAnimSocketInfo, SocketId) == 0x000000, "Member 'PyAbility_101621_HandleAnimSocketInfo::SocketId' has a wrong offset!");
-static_assert(offsetof(PyAbility_101621_HandleAnimSocketInfo, SocketInfo) == 0x000010, "Member 'PyAbility_101621_HandleAnimSocketInfo::SocketInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_HandleAnimSocketInfo;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.NativeOnMontageCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -82,9 +71,7 @@ struct PyAbility_101621_NativeOnMontageCompleted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_NativeOnMontageCompleted) == 0x000008, "Wrong alignment on PyAbility_101621_NativeOnMontageCompleted");
-static_assert(sizeof(PyAbility_101621_NativeOnMontageCompleted) == 0x000010, "Wrong size on PyAbility_101621_NativeOnMontageCompleted");
-static_assert(offsetof(PyAbility_101621_NativeOnMontageCompleted, Tag) == 0x000000, "Member 'PyAbility_101621_NativeOnMontageCompleted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_NativeOnMontageCompleted;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.NativeOnMontageBlendOut
 // 0x0010 (0x0010 - 0x0000)
@@ -93,9 +80,7 @@ struct PyAbility_101621_NativeOnMontageBlendOut final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_NativeOnMontageBlendOut) == 0x000008, "Wrong alignment on PyAbility_101621_NativeOnMontageBlendOut");
-static_assert(sizeof(PyAbility_101621_NativeOnMontageBlendOut) == 0x000010, "Wrong size on PyAbility_101621_NativeOnMontageBlendOut");
-static_assert(offsetof(PyAbility_101621_NativeOnMontageBlendOut, Tag) == 0x000000, "Member 'PyAbility_101621_NativeOnMontageBlendOut::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_NativeOnMontageBlendOut;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.NativeOnMontageInterrupted
 // 0x0010 (0x0010 - 0x0000)
@@ -104,9 +89,7 @@ struct PyAbility_101621_NativeOnMontageInterrupted final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_NativeOnMontageInterrupted) == 0x000008, "Wrong alignment on PyAbility_101621_NativeOnMontageInterrupted");
-static_assert(sizeof(PyAbility_101621_NativeOnMontageInterrupted) == 0x000010, "Wrong size on PyAbility_101621_NativeOnMontageInterrupted");
-static_assert(offsetof(PyAbility_101621_NativeOnMontageInterrupted, Tag) == 0x000000, "Member 'PyAbility_101621_NativeOnMontageInterrupted::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_NativeOnMontageInterrupted;
 
 // PythonFunction PyAbility_101621.PyAbility_101621.NativeOnMontageCancelled
 // 0x0010 (0x0010 - 0x0000)
@@ -115,9 +98,7 @@ struct PyAbility_101621_NativeOnMontageCancelled final
 public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_101621_NativeOnMontageCancelled) == 0x000008, "Wrong alignment on PyAbility_101621_NativeOnMontageCancelled");
-static_assert(sizeof(PyAbility_101621_NativeOnMontageCancelled) == 0x000010, "Wrong size on PyAbility_101621_NativeOnMontageCancelled");
-static_assert(offsetof(PyAbility_101621_NativeOnMontageCancelled, Tag) == 0x000000, "Member 'PyAbility_101621_NativeOnMontageCancelled::Tag' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_101621_NativeOnMontageCancelled;
 
 }
 

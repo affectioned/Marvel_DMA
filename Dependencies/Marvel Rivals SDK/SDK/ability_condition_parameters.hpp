@@ -24,10 +24,7 @@ public:
 	struct FRequiredAIDataForAutoAbility          AIAutoAbilityContext;                              // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIConditionBase_CouldPass) == 0x000008, "Wrong alignment on PyAIConditionBase_CouldPass");
-static_assert(sizeof(PyAIConditionBase_CouldPass) == 0x000038, "Wrong size on PyAIConditionBase_CouldPass");
-static_assert(offsetof(PyAIConditionBase_CouldPass, AIAutoAbilityContext) == 0x000000, "Member 'PyAIConditionBase_CouldPass::AIAutoAbilityContext' has a wrong offset!");
-static_assert(offsetof(PyAIConditionBase_CouldPass, ReturnValue) == 0x000030, "Member 'PyAIConditionBase_CouldPass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIConditionBase_CouldPass;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Slate_structs.hpp"
 #include "MoviePlayer_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -40,21 +40,7 @@ public:
 	struct FLinearColor                           TipBackgroundColor;                                // 0x0064(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FLoadingScreenDescription) == 0x000008, "Wrong alignment on FLoadingScreenDescription");
-static_assert(sizeof(FLoadingScreenDescription) == 0x000078, "Wrong size on FLoadingScreenDescription");
-static_assert(offsetof(FLoadingScreenDescription, LoadingWidgetClass) == 0x000000, "Member 'FLoadingScreenDescription::LoadingWidgetClass' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, MinimumLoadingScreenDisplayTime) == 0x000008, "Member 'FLoadingScreenDescription::MinimumLoadingScreenDisplayTime' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, bAutoCompleteWhenLoadingCompletes) == 0x00000C, "Member 'FLoadingScreenDescription::bAutoCompleteWhenLoadingCompletes' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, bMoviesAreSkippable) == 0x00000D, "Member 'FLoadingScreenDescription::bMoviesAreSkippable' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, bWaitForManualStop) == 0x00000E, "Member 'FLoadingScreenDescription::bWaitForManualStop' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, PlaybackType) == 0x00000F, "Member 'FLoadingScreenDescription::PlaybackType' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, MoviePaths) == 0x000010, "Member 'FLoadingScreenDescription::MoviePaths' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, bShowUIOverlay) == 0x000020, "Member 'FLoadingScreenDescription::bShowUIOverlay' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, LoadingText) == 0x000028, "Member 'FLoadingScreenDescription::LoadingText' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, Images) == 0x000040, "Member 'FLoadingScreenDescription::Images' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, ImageStretch) == 0x000050, "Member 'FLoadingScreenDescription::ImageStretch' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, BackgroundColor) == 0x000054, "Member 'FLoadingScreenDescription::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(FLoadingScreenDescription, TipBackgroundColor) == 0x000064, "Member 'FLoadingScreenDescription::TipBackgroundColor' has a wrong offset!");
+DUMPER7_ASSERTS_FLoadingScreenDescription;
 
 }
 

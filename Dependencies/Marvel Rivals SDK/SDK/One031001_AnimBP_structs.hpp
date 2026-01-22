@@ -49,31 +49,7 @@ public:
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x00E8(0x0080)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x0168(0x0018)()
 };
-static_assert(alignof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on One031001_AnimBP::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData) == 0x000180, "Wrong size on One031001_AnimBP::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_174) == 0x000004, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_174' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __IntProperty_175) == 0x000010, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__IntProperty_175' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __StructProperty_176) == 0x000014, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__StructProperty_176' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_177) == 0x000040, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_177' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_178) == 0x00004C, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_178' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __IntProperty_179) == 0x000058, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__IntProperty_179' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_180) == 0x00005C, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_180' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __FloatProperty_181) == 0x000068, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__FloatProperty_181' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __BoolProperty_182) == 0x00006C, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__BoolProperty_182' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __FloatProperty_183) == 0x000070, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__FloatProperty_183' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __BoolProperty_184) == 0x000074, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__BoolProperty_184' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __EnumProperty_185) == 0x000075, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__EnumProperty_185' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __ByteProperty_186) == 0x000076, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__ByteProperty_186' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_187) == 0x000078, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_187' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_188) == 0x000084, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_188' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __IntProperty_189) == 0x000090, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__IntProperty_189' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_190) == 0x000094, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_190' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __IntProperty_191) == 0x0000A0, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__IntProperty_191' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __StructProperty_192) == 0x0000A8, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__StructProperty_192' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_193) == 0x0000D0, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_193' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_194) == 0x0000DC, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_194' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x0000E8, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(One031001_AnimBP::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000168, "Member 'One031001_AnimBP::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+DUMPER7_ASSERTS_One031001_AnimBP__FAnimBlueprintGeneratedConstantData;
 
 }
 

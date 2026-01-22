@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Exclusive_Performance_Acquire.PyWidget_HeroSystem_Exclusive_Performance_Acquire
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_HeroSystem_Exclusive_Performance_Acquire final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Exclusive_Performance_Acquire">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Exclusive_Performance_Acquire")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Exclusive_Performance_Acquire")
 	}
 	static class UPyWidget_HeroSystem_Exclusive_Performance_Acquire* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Exclusive_Performance_Acquire>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Exclusive_Performance_Acquire) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Exclusive_Performance_Acquire");
-static_assert(sizeof(UPyWidget_HeroSystem_Exclusive_Performance_Acquire) == 0x0005F8, "Wrong size on UPyWidget_HeroSystem_Exclusive_Performance_Acquire");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Exclusive_Performance_Acquire;
 
 }
 

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_105321.PyBuffAbility_120_10532109
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10532109 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         NewScopeID;                                        // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NewScopeID;                                        // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,23 +30,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10532109">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10532109")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10532109")
 	}
 	static class UPyBuffAbility_120_10532109* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10532109>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10532109) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10532109");
-static_assert(sizeof(UPyBuffAbility_120_10532109) == 0x001378, "Wrong size on UPyBuffAbility_120_10532109");
-static_assert(offsetof(UPyBuffAbility_120_10532109, NewScopeID) == 0x001370, "Member 'UPyBuffAbility_120_10532109::NewScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10532109;
 
 // PythonClass PyBuffAbility_120_105321.PyTraceComponent_120_10532101
-// 0x0010 (0x2210 - 0x2200)
+// 0x0010 (0x2610 - 0x2600)
 class UPyTraceComponent_120_10532101 final : public UMarvelAgentTraceComponent
 {
 public:
-	float                                         AddRadius;                                         // 0x2200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_25F8[0x8];                                     // 0x25F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AddRadius;                                         // 0x2600(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_Initialize();
@@ -57,20 +60,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTraceComponent_120_10532101">();
+		STATIC_CLASS_IMPL("PyTraceComponent_120_10532101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTraceComponent_120_10532101")
 	}
 	static class UPyTraceComponent_120_10532101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTraceComponent_120_10532101>();
 	}
 };
-static_assert(alignof(UPyTraceComponent_120_10532101) == 0x000010, "Wrong alignment on UPyTraceComponent_120_10532101");
-static_assert(sizeof(UPyTraceComponent_120_10532101) == 0x002210, "Wrong size on UPyTraceComponent_120_10532101");
-static_assert(offsetof(UPyTraceComponent_120_10532101, AddRadius) == 0x002200, "Member 'UPyTraceComponent_120_10532101::AddRadius' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTraceComponent_120_10532101;
 
 // PythonClass PyBuffAbility_120_105321.PyCue_Scope_10532109
-// 0x0000 (0x40E0 - 0x40E0)
-class APyCue_Scope_10532109 : public ACue_Scope_Loop_10532109
+// 0x0000 (0x49A0 - 0x49A0)
+class APyCue_Scope_10532109 final : public ACue_Scope_Loop_10532109
 {
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -80,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_10532109">();
+		STATIC_CLASS_IMPL("PyCue_Scope_10532109")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_10532109")
 	}
 	static class APyCue_Scope_10532109* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Scope_10532109>();
 	}
 };
-static_assert(alignof(APyCue_Scope_10532109) == 0x000010, "Wrong alignment on APyCue_Scope_10532109");
-static_assert(sizeof(APyCue_Scope_10532109) == 0x0040E0, "Wrong size on APyCue_Scope_10532109");
+DUMPER7_ASSERTS_APyCue_Scope_10532109;
 
 }
 

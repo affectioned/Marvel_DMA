@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_Hellfire_Top.PyWidget_Mission_HellFire_Top
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_HellFire_Top final : public UPyMarvelUserWidget
 {
 public:
@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_HellFire_Top">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_HellFire_Top")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_HellFire_Top")
 	}
 	static class UPyWidget_Mission_HellFire_Top* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_HellFire_Top>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_HellFire_Top) == 0x000008, "Wrong alignment on UPyWidget_Mission_HellFire_Top");
-static_assert(sizeof(UPyWidget_Mission_HellFire_Top) == 0x0005C0, "Wrong size on UPyWidget_Mission_HellFire_Top");
+DUMPER7_ASSERTS_UPyWidget_Mission_HellFire_Top;
 
 }
 

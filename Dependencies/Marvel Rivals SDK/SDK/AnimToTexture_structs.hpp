@@ -56,13 +56,7 @@ public:
 	int32                                         EndFrame;                                          // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAnimToTextureAnimSequenceInfo) == 0x000008, "Wrong alignment on FAnimToTextureAnimSequenceInfo");
-static_assert(sizeof(FAnimToTextureAnimSequenceInfo) == 0x000020, "Wrong size on FAnimToTextureAnimSequenceInfo");
-static_assert(offsetof(FAnimToTextureAnimSequenceInfo, bEnabled) == 0x000000, "Member 'FAnimToTextureAnimSequenceInfo::bEnabled' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAnimSequenceInfo, AnimSequence) == 0x000008, "Member 'FAnimToTextureAnimSequenceInfo::AnimSequence' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAnimSequenceInfo, bUseCustomRange) == 0x000010, "Member 'FAnimToTextureAnimSequenceInfo::bUseCustomRange' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAnimSequenceInfo, StartFrame) == 0x000014, "Member 'FAnimToTextureAnimSequenceInfo::StartFrame' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAnimSequenceInfo, EndFrame) == 0x000018, "Member 'FAnimToTextureAnimSequenceInfo::EndFrame' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimToTextureAnimSequenceInfo;
 
 // ScriptStruct AnimToTexture.AnimToTextureAnimInfo
 // 0x0008 (0x0008 - 0x0000)
@@ -72,10 +66,7 @@ public:
 	int32                                         StartFrame;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EndFrame;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimToTextureAnimInfo) == 0x000004, "Wrong alignment on FAnimToTextureAnimInfo");
-static_assert(sizeof(FAnimToTextureAnimInfo) == 0x000008, "Wrong size on FAnimToTextureAnimInfo");
-static_assert(offsetof(FAnimToTextureAnimInfo, StartFrame) == 0x000000, "Member 'FAnimToTextureAnimInfo::StartFrame' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAnimInfo, EndFrame) == 0x000004, "Member 'FAnimToTextureAnimInfo::EndFrame' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimToTextureAnimInfo;
 
 // ScriptStruct AnimToTexture.AnimToTextureFrameData
 // 0x0008 (0x0008 - 0x0000)
@@ -85,10 +76,7 @@ public:
 	float                                         Frame;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PrevFrame;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimToTextureFrameData) == 0x000004, "Wrong alignment on FAnimToTextureFrameData");
-static_assert(sizeof(FAnimToTextureFrameData) == 0x000008, "Wrong size on FAnimToTextureFrameData");
-static_assert(offsetof(FAnimToTextureFrameData, Frame) == 0x000000, "Member 'FAnimToTextureFrameData::Frame' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureFrameData, PrevFrame) == 0x000004, "Member 'FAnimToTextureFrameData::PrevFrame' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimToTextureFrameData;
 
 // ScriptStruct AnimToTexture.AnimToTextureAutoPlayData
 // 0x0010 (0x0010 - 0x0000)
@@ -100,12 +88,7 @@ public:
 	float                                         StartFrame;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EndFrame;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnimToTextureAutoPlayData) == 0x000004, "Wrong alignment on FAnimToTextureAutoPlayData");
-static_assert(sizeof(FAnimToTextureAutoPlayData) == 0x000010, "Wrong size on FAnimToTextureAutoPlayData");
-static_assert(offsetof(FAnimToTextureAutoPlayData, TimeOffset) == 0x000000, "Member 'FAnimToTextureAutoPlayData::TimeOffset' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAutoPlayData, PlayRate) == 0x000004, "Member 'FAnimToTextureAutoPlayData::PlayRate' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAutoPlayData, StartFrame) == 0x000008, "Member 'FAnimToTextureAutoPlayData::StartFrame' has a wrong offset!");
-static_assert(offsetof(FAnimToTextureAutoPlayData, EndFrame) == 0x00000C, "Member 'FAnimToTextureAutoPlayData::EndFrame' has a wrong offset!");
+DUMPER7_ASSERTS_FAnimToTextureAutoPlayData;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Loading_Default.PyWidget_Loading_Default
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Loading_Default : public UPyWidget_Loading_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_Default">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_Default")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_Default")
 	}
 	static class UPyWidget_Loading_Default* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_Default>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_Default) == 0x000008, "Wrong alignment on UPyWidget_Loading_Default");
-static_assert(sizeof(UPyWidget_Loading_Default) == 0x0005F8, "Wrong size on UPyWidget_Loading_Default");
+DUMPER7_ASSERTS_UPyWidget_Loading_Default;
 
 }
 

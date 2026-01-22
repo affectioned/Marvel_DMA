@@ -21,9 +21,7 @@ struct PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity155_MainPanel_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Activity155_MainPanel.PyWidget_Activity155_MainItem.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity155_MainItem_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity155_MainItem_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity155_MainItem_PreConstruct");
-static_assert(sizeof(PyWidget_Activity155_MainItem_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity155_MainItem_PreConstruct");
-static_assert(offsetof(PyWidget_Activity155_MainItem_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity155_MainItem_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity155_MainItem_PreConstruct;
 
 }
 

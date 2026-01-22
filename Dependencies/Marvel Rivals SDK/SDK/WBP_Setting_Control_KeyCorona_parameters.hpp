@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,10 +25,7 @@ public:
 	bool                                          InIsEmpty;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFourArea;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Setting_Control_KeyCorona_C_SetIsEmpty) == 0x000001, "Wrong alignment on WBP_Setting_Control_KeyCorona_C_SetIsEmpty");
-static_assert(sizeof(WBP_Setting_Control_KeyCorona_C_SetIsEmpty) == 0x000002, "Wrong size on WBP_Setting_Control_KeyCorona_C_SetIsEmpty");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_SetIsEmpty, InIsEmpty) == 0x000000, "Member 'WBP_Setting_Control_KeyCorona_C_SetIsEmpty::InIsEmpty' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_SetIsEmpty, IsFourArea) == 0x000001, "Member 'WBP_Setting_Control_KeyCorona_C_SetIsEmpty::IsFourArea' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Setting_Control_KeyCorona_C_SetIsEmpty;
 
 // Function WBP_Setting_Control_KeyCorona.WBP_Setting_Control_KeyCorona_C.SetCoronas
 // 0x0018 (0x0018 - 0x0000)
@@ -38,10 +35,7 @@ public:
 	TArray<int32>                                 InCoronas;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          IsFourArea;                                        // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Setting_Control_KeyCorona_C_SetCoronas) == 0x000008, "Wrong alignment on WBP_Setting_Control_KeyCorona_C_SetCoronas");
-static_assert(sizeof(WBP_Setting_Control_KeyCorona_C_SetCoronas) == 0x000018, "Wrong size on WBP_Setting_Control_KeyCorona_C_SetCoronas");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_SetCoronas, InCoronas) == 0x000000, "Member 'WBP_Setting_Control_KeyCorona_C_SetCoronas::InCoronas' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_SetCoronas, IsFourArea) == 0x000010, "Member 'WBP_Setting_Control_KeyCorona_C_SetCoronas::IsFourArea' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Setting_Control_KeyCorona_C_SetCoronas;
 
 // Function WBP_Setting_Control_KeyCorona.WBP_Setting_Control_KeyCorona_C.ExecuteUbergraph_WBP_Setting_Control_KeyCorona
 // 0x0060 (0x0060 - 0x0000)
@@ -70,25 +64,7 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x004C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona) == 0x000008, "Wrong alignment on WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona");
-static_assert(sizeof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona) == 0x000060, "Wrong size on WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, EntryPoint) == 0x000000, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_int_Variable) == 0x000004, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_bool_Variable) == 0x000008, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_struct_Variable) == 0x00000C, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_struct_Variable_1) == 0x00001C, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_bool_Variable_1) == 0x00002C, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_byte_Variable) == 0x00002D, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, Temp_byte_Variable_1) == 0x00002E, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_CustomEvent_InCoronas) == 0x000030, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_CustomEvent_InCoronas' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_CustomEvent_IsFourArea_1) == 0x000040, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_CustomEvent_IsFourArea_1' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, CallFunc_Array_RemoveItem_ReturnValue) == 0x000041, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_CustomEvent_InIsEmpty) == 0x000048, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_CustomEvent_InIsEmpty' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_CustomEvent_IsFourArea) == 0x000049, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_CustomEvent_IsFourArea' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00004A, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_Select_Default) == 0x00004C, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona, K2Node_Select_Default_1) == 0x00005C, "Member 'WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona::K2Node_Select_Default_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Setting_Control_KeyCorona_C_ExecuteUbergraph_WBP_Setting_Control_KeyCorona;
 
 }
 

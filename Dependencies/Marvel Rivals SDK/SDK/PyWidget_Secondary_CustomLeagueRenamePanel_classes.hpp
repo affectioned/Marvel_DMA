@@ -17,21 +17,27 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_CustomLeagueRenamePanel.PyWidget_Secondary_CustomLeagueRenamePanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_CustomLeagueRenamePanel final : public UPyWidget_SecondaryChildBase
 {
 public:
+	void Construct();
+
+public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_CustomLeagueRenamePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_CustomLeagueRenamePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_CustomLeagueRenamePanel")
 	}
 	static class UPyWidget_Secondary_CustomLeagueRenamePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_CustomLeagueRenamePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_CustomLeagueRenamePanel) == 0x000008, "Wrong alignment on UPyWidget_Secondary_CustomLeagueRenamePanel");
-static_assert(sizeof(UPyWidget_Secondary_CustomLeagueRenamePanel) == 0x0005C0, "Wrong size on UPyWidget_Secondary_CustomLeagueRenamePanel");
+DUMPER7_ASSERTS_UPyWidget_Secondary_CustomLeagueRenamePanel;
 
 }
 

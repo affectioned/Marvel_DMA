@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyRuleComponent_classes.hpp"
 #include "python_enums_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "PyRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -68,39 +68,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySpringFestivalRuleComponent">();
+		STATIC_CLASS_IMPL("PySpringFestivalRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySpringFestivalRuleComponent")
 	}
 	static class UPySpringFestivalRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySpringFestivalRuleComponent>();
 	}
 };
-static_assert(alignof(UPySpringFestivalRuleComponent) == 0x000008, "Wrong alignment on UPySpringFestivalRuleComponent");
-static_assert(sizeof(UPySpringFestivalRuleComponent) == 0x000198, "Wrong size on UPySpringFestivalRuleComponent");
-static_assert(offsetof(UPySpringFestivalRuleComponent, ForbidHoldBallBuffID) == 0x000108, "Member 'UPySpringFestivalRuleComponent::ForbidHoldBallBuffID' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, RedScore) == 0x00010C, "Member 'UPySpringFestivalRuleComponent::RedScore' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, BlueScore) == 0x000110, "Member 'UPySpringFestivalRuleComponent::BlueScore' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, KeepBallBattleSide) == 0x000114, "Member 'UPySpringFestivalRuleComponent::KeepBallBattleSide' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, SpringFestivalMatchState) == 0x000115, "Member 'UPySpringFestivalRuleComponent::SpringFestivalMatchState' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, Ball) == 0x000118, "Member 'UPySpringFestivalRuleComponent::Ball' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, WinScore) == 0x000120, "Member 'UPySpringFestivalRuleComponent::WinScore' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, SwitchSideScore) == 0x000124, "Member 'UPySpringFestivalRuleComponent::SwitchSideScore' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, RedTeam) == 0x000128, "Member 'UPySpringFestivalRuleComponent::RedTeam' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, BlueTeam) == 0x000138, "Member 'UPySpringFestivalRuleComponent::BlueTeam' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, StandDownTime) == 0x000148, "Member 'UPySpringFestivalRuleComponent::StandDownTime' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, SwitchTime) == 0x00014C, "Member 'UPySpringFestivalRuleComponent::SwitchTime' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, bGive2LostSide) == 0x000150, "Member 'UPySpringFestivalRuleComponent::bGive2LostSide' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, ShowResultTime) == 0x000154, "Member 'UPySpringFestivalRuleComponent::ShowResultTime' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, RePrepareTime) == 0x000158, "Member 'UPySpringFestivalRuleComponent::RePrepareTime' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, NearWinScore) == 0x00015C, "Member 'UPySpringFestivalRuleComponent::NearWinScore' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, bResetAbility) == 0x000160, "Member 'UPySpringFestivalRuleComponent::bResetAbility' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, StandDownBuffs) == 0x000168, "Member 'UPySpringFestivalRuleComponent::StandDownBuffs' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, A) == 0x000178, "Member 'UPySpringFestivalRuleComponent::A' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, B) == 0x00017C, "Member 'UPySpringFestivalRuleComponent::B' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, C) == 0x000180, "Member 'UPySpringFestivalRuleComponent::C' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, MinValidBallHeight) == 0x000184, "Member 'UPySpringFestivalRuleComponent::MinValidBallHeight' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, MaxValidBallHeight) == 0x000188, "Member 'UPySpringFestivalRuleComponent::MaxValidBallHeight' has a wrong offset!");
-static_assert(offsetof(UPySpringFestivalRuleComponent, BallClass) == 0x000190, "Member 'UPySpringFestivalRuleComponent::BallClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPySpringFestivalRuleComponent;
 
 }
 

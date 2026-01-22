@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHybridLevelStatistics">();
+		STATIC_CLASS_IMPL("PyHybridLevelStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHybridLevelStatistics")
 	}
 	static class UPyHybridLevelStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyHybridLevelStatistics>();
 	}
 };
-static_assert(alignof(UPyHybridLevelStatistics) == 0x000008, "Wrong alignment on UPyHybridLevelStatistics");
-static_assert(sizeof(UPyHybridLevelStatistics) == 0x000048, "Wrong size on UPyHybridLevelStatistics");
-static_assert(offsetof(UPyHybridLevelStatistics, AssaultPartStatistics) == 0x000040, "Member 'UPyHybridLevelStatistics::AssaultPartStatistics' has a wrong offset!");
+DUMPER7_ASSERTS_UPyHybridLevelStatistics;
 
 }
 

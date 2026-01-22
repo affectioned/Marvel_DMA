@@ -21,9 +21,7 @@ struct PyWidget_CustomLeagueSwapCamp_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueSwapCamp_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueSwapCamp_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CustomLeagueSwapCamp_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CustomLeagueSwapCamp_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CustomLeagueSwapCamp_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_CustomLeagueSwapCamp_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueSwapCamp_MarvelSetVisible;
 
 // PythonFunction PyWidget_CustomLeagueSwapCamp.PyWidget_CustomLeagueSwapCamp.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CustomLeagueSwapCamp_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueSwapCamp_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CustomLeagueSwapCamp_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CustomLeagueSwapCamp_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CustomLeagueSwapCamp_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CustomLeagueSwapCamp_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_CustomLeagueSwapCamp_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueSwapCamp_OnAnimationFinished;
 
 // PythonFunction PyWidget_CustomLeagueSwapCamp.PyWidget_CustomLeagueRoomCampIcon.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible final
 public:
 	bool                                          bTmpVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible");
-static_assert(sizeof(PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible");
-static_assert(offsetof(PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible, bTmpVisible) == 0x000000, "Member 'PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible::bTmpVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CustomLeagueRoomCampIcon_MarvelSetVisible;
 
 }
 

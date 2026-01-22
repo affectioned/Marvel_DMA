@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_HeroList.WBP_SelectHero_HeroList_C
-// 0x0030 (0x06F0 - 0x06C0)
+// 0x0030 (0x06F8 - 0x06C8)
 class UWBP_SelectHero_HeroList_C final : public UPyWidget_SelectHero_HeroList
 {
 public:
-	class UMarvelCanvasPanel*                     CanvasPanel_DutyList;                              // 0x06C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelCanvasPanel*                     CanvasPanel_HeroList;                              // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Corona_Bg;                                         // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Corona_Bg_Empty;                                   // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Empty;                                     // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Empty_Dark_C*               WBP_Empty;                                         // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     CanvasPanel_DutyList;                              // 0x06C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     CanvasPanel_HeroList;                              // 0x06D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Corona_Bg;                                         // 0x06D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Corona_Bg_Empty;                                   // 0x06E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Empty;                                     // 0x06E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Empty_Dark_C*               WBP_Empty;                                         // 0x06F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_HeroList_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_HeroList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_HeroList_C")
 	}
 	static class UWBP_SelectHero_HeroList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_HeroList_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_HeroList_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_HeroList_C");
-static_assert(sizeof(UWBP_SelectHero_HeroList_C) == 0x0006F0, "Wrong size on UWBP_SelectHero_HeroList_C");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, CanvasPanel_DutyList) == 0x0006C0, "Member 'UWBP_SelectHero_HeroList_C::CanvasPanel_DutyList' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, CanvasPanel_HeroList) == 0x0006C8, "Member 'UWBP_SelectHero_HeroList_C::CanvasPanel_HeroList' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, Corona_Bg) == 0x0006D0, "Member 'UWBP_SelectHero_HeroList_C::Corona_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, Corona_Bg_Empty) == 0x0006D8, "Member 'UWBP_SelectHero_HeroList_C::Corona_Bg_Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, Overlay_Empty) == 0x0006E0, "Member 'UWBP_SelectHero_HeroList_C::Overlay_Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_HeroList_C, WBP_Empty) == 0x0006E8, "Member 'UWBP_SelectHero_HeroList_C::WBP_Empty' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_HeroList_C;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Reddot">();
+		STATIC_CLASS_IMPL("PyExtension_Reddot")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Reddot")
 	}
 	static class UPyExtension_Reddot* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Reddot>();
 	}
 };
-static_assert(alignof(UPyExtension_Reddot) == 0x000008, "Wrong alignment on UPyExtension_Reddot");
-static_assert(sizeof(UPyExtension_Reddot) == 0x000030, "Wrong size on UPyExtension_Reddot");
+DUMPER7_ASSERTS_UPyExtension_Reddot;
 
 }
 

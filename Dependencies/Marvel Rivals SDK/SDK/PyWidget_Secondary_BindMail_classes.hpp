@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_BindMail.PyWidget_Secondary_BindMail
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_BindMail final : public UPyMarvelUserWidget
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_BindMail">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_BindMail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_BindMail")
 	}
 	static class UPyWidget_Secondary_BindMail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_BindMail>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_BindMail) == 0x000008, "Wrong alignment on UPyWidget_Secondary_BindMail");
-static_assert(sizeof(UPyWidget_Secondary_BindMail) == 0x0005C0, "Wrong size on UPyWidget_Secondary_BindMail");
+DUMPER7_ASSERTS_UPyWidget_Secondary_BindMail;
 
 }
 

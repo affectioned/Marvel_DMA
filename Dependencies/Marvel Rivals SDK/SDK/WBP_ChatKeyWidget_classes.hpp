@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatKeyWidget_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatKeyWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatKeyWidget_C")
 	}
 	static class UWBP_ChatKeyWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatKeyWidget_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatKeyWidget_C) == 0x000008, "Wrong alignment on UWBP_ChatKeyWidget_C");
-static_assert(sizeof(UWBP_ChatKeyWidget_C) == 0x0003C8, "Wrong size on UWBP_ChatKeyWidget_C");
-static_assert(offsetof(UWBP_ChatKeyWidget_C, WBP_Common_KeyWidget) == 0x0003B8, "Member 'UWBP_ChatKeyWidget_C::WBP_Common_KeyWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatKeyWidget_C, WBP_Common_KeyWidget_Gamepad) == 0x0003C0, "Member 'UWBP_ChatKeyWidget_C::WBP_Common_KeyWidget_Gamepad' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatKeyWidget_C;
 
 }
 

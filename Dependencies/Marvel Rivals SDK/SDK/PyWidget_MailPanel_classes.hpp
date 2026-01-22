@@ -19,26 +19,26 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MailPanel.PyWidget_MailPanel
-// 0x05F0 (0x0BE8 - 0x05F8)
+// 0x05F0 (0x0BF0 - 0x0600)
 class UPyWidget_MailPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FMargin                                ItemPadding;                                       // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         TimeBetweenInsertion;                              // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AKEvent_DeleteMail;                                // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_MarkMail;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_UnmarkMail;                                // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_NoMailToDelete;                            // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        PageChangeTips;                                    // 0x0630(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        GetRewardTips;                                     // 0x0750(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        DeleteTips;                                        // 0x0870(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        FavourTips;                                        // 0x0990(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        UnfavourTips;                                      // 0x0AB0(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UInputAction*                           AttachmentFocusAction;                             // 0x0BD0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CountLimitOfHoverTips;                             // 0x0BD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_BDC[0x4];                                      // 0x0BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                MailContentClass;                                  // 0x0BE0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                ItemPadding;                                       // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         TimeBetweenInsertion;                              // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AKEvent_DeleteMail;                                // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_MarkMail;                                  // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_UnmarkMail;                                // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_NoMailToDelete;                            // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        PageChangeTips;                                    // 0x0638(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        GetRewardTips;                                     // 0x0758(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        DeleteTips;                                        // 0x0878(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        FavourTips;                                        // 0x0998(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        UnfavourTips;                                      // 0x0AB8(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UInputAction*                           AttachmentFocusAction;                             // 0x0BD8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CountLimitOfHoverTips;                             // 0x0BE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_BE4[0x4];                                      // 0x0BE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                MailContentClass;                                  // 0x0BE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,29 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MailPanel">();
+		STATIC_CLASS_IMPL("PyWidget_MailPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MailPanel")
 	}
 	static class UPyWidget_MailPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MailPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_MailPanel) == 0x000008, "Wrong alignment on UPyWidget_MailPanel");
-static_assert(sizeof(UPyWidget_MailPanel) == 0x000BE8, "Wrong size on UPyWidget_MailPanel");
-static_assert(offsetof(UPyWidget_MailPanel, ItemPadding) == 0x0005F8, "Member 'UPyWidget_MailPanel::ItemPadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, TimeBetweenInsertion) == 0x000608, "Member 'UPyWidget_MailPanel::TimeBetweenInsertion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, AKEvent_DeleteMail) == 0x000610, "Member 'UPyWidget_MailPanel::AKEvent_DeleteMail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, AKEvent_MarkMail) == 0x000618, "Member 'UPyWidget_MailPanel::AKEvent_MarkMail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, AKEvent_UnmarkMail) == 0x000620, "Member 'UPyWidget_MailPanel::AKEvent_UnmarkMail' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, AKEvent_NoMailToDelete) == 0x000628, "Member 'UPyWidget_MailPanel::AKEvent_NoMailToDelete' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, PageChangeTips) == 0x000630, "Member 'UPyWidget_MailPanel::PageChangeTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, GetRewardTips) == 0x000750, "Member 'UPyWidget_MailPanel::GetRewardTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, DeleteTips) == 0x000870, "Member 'UPyWidget_MailPanel::DeleteTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, FavourTips) == 0x000990, "Member 'UPyWidget_MailPanel::FavourTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, UnfavourTips) == 0x000AB0, "Member 'UPyWidget_MailPanel::UnfavourTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, AttachmentFocusAction) == 0x000BD0, "Member 'UPyWidget_MailPanel::AttachmentFocusAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, CountLimitOfHoverTips) == 0x000BD8, "Member 'UPyWidget_MailPanel::CountLimitOfHoverTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MailPanel, MailContentClass) == 0x000BE0, "Member 'UPyWidget_MailPanel::MailContentClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MailPanel;
 
 }
 

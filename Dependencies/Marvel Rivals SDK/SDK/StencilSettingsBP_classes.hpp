@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass StencilSettingsBP.StencilSettingsBP_C
-// 0x0000 (0x00F8 - 0x00F8)
+// 0x0000 (0x0180 - 0x0180)
 class UStencilSettingsBP_C final : public UStencilSettings
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StencilSettingsBP_C">();
+		BP_STATIC_CLASS_IMPL("StencilSettingsBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StencilSettingsBP_C")
 	}
 	static class UStencilSettingsBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStencilSettingsBP_C>();
 	}
 };
-static_assert(alignof(UStencilSettingsBP_C) == 0x000008, "Wrong alignment on UStencilSettingsBP_C");
-static_assert(sizeof(UStencilSettingsBP_C) == 0x0000F8, "Wrong size on UStencilSettingsBP_C");
+DUMPER7_ASSERTS_UStencilSettingsBP_C;
 
 }
 

@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLikeMapLightController">();
+		STATIC_CLASS_IMPL("PyLikeMapLightController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLikeMapLightController")
 	}
 	static class APyLikeMapLightController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLikeMapLightController>();
 	}
 };
-static_assert(alignof(APyLikeMapLightController) == 0x000010, "Wrong alignment on APyLikeMapLightController");
-static_assert(sizeof(APyLikeMapLightController) == 0x0006F0, "Wrong size on APyLikeMapLightController");
-static_assert(offsetof(APyLikeMapLightController, LightSequencePlayer) == 0x0006E0, "Member 'APyLikeMapLightController::LightSequencePlayer' has a wrong offset!");
+DUMPER7_ASSERTS_APyLikeMapLightController;
 
 }
 

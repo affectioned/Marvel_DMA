@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData_New.PyWidget_Settlement_PersonalData_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Base : public UPyMarvelUserWidget
 {
 public:
@@ -29,34 +29,37 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Base")
 	}
 	static class UPyWidget_Settlement_PersonalData_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Base) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Base");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Base) == 0x0005C0, "Wrong size on UPyWidget_Settlement_PersonalData_Base");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Base;
 
 // PythonClass PyWidget_Settlement_PersonalData_New.PyWidget_Settlement_PersonalData_New
-// 0x0070 (0x0630 - 0x05C0)
+// 0x0070 (0x0638 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_New final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Img_EmotionLine5_Win;                              // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine5_Lose;                             // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine6_Win;                              // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine6_Lose;                             // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine7_Win;                              // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine7_Lose;                             // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine8_Win;                              // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_EmotionLine8_Lose;                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Right_Win;                                     // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_Right_Lose;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyle;                                // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipAnimGuideTipsStyle;                            // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Img_EmotionLine5_Win;                              // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine5_Lose;                             // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine6_Win;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine6_Lose;                             // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine7_Win;                              // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine7_Lose;                             // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine8_Win;                              // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_EmotionLine8_Lose;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Right_Win;                                     // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_Right_Lose;                                    // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipGuideTipsStyle;                                // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipAnimGuideTipsStyle;                            // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -69,27 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_New">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_New")
 	}
 	static class UPyWidget_Settlement_PersonalData_New* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_New>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_New) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_New");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_New) == 0x000630, "Wrong size on UPyWidget_Settlement_PersonalData_New");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine5_Win) == 0x0005C0, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine5_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine5_Lose) == 0x0005C8, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine5_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine6_Win) == 0x0005D0, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine6_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine6_Lose) == 0x0005D8, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine6_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine7_Win) == 0x0005E0, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine7_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine7_Lose) == 0x0005E8, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine7_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine8_Win) == 0x0005F0, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine8_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_EmotionLine8_Lose) == 0x0005F8, "Member 'UPyWidget_Settlement_PersonalData_New::Img_EmotionLine8_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_Right_Win) == 0x000600, "Member 'UPyWidget_Settlement_PersonalData_New::Img_Right_Win' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, Img_Right_Lose) == 0x000608, "Member 'UPyWidget_Settlement_PersonalData_New::Img_Right_Lose' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, SkipGuideTipsStyle) == 0x000610, "Member 'UPyWidget_Settlement_PersonalData_New::SkipGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_PersonalData_New, SkipAnimGuideTipsStyle) == 0x000620, "Member 'UPyWidget_Settlement_PersonalData_New::SkipAnimGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_New;
 
 }
 

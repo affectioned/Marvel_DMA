@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_WaveInfo.PyWidget_Halloween_WaveInfo
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Halloween_WaveInfo final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_WaveInfo">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_WaveInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_WaveInfo")
 	}
 	static class UPyWidget_Halloween_WaveInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_WaveInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_WaveInfo) == 0x000008, "Wrong alignment on UPyWidget_Halloween_WaveInfo");
-static_assert(sizeof(UPyWidget_Halloween_WaveInfo) == 0x0005C0, "Wrong size on UPyWidget_Halloween_WaveInfo");
+DUMPER7_ASSERTS_UPyWidget_Halloween_WaveInfo;
 
 }
 

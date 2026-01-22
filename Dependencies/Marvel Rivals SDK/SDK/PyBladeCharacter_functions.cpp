@@ -34,5 +34,24 @@ void APyBladeCharacter::OnCurrentSculptUpdate()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyBladeCharacter.PyBladeCharacter.ServerNotifySwordStatusError
+// (Net, NetReliable, Native, Public, NetServer, BlueprintCallable)
+
+void APyBladeCharacter::ServerNotifySwordStatusError()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBladeCharacter", "ServerNotifySwordStatusError");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

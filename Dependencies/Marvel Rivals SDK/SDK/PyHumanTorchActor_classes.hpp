@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyHumanTorchActor.PyHumanTorchChildActor
-// 0x0000 (0x11C0 - 0x11C0)
+// 0x0000 (0x11D0 - 0x11D0)
 class APyHumanTorchChildActor final : public AHumanTorchChildActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHumanTorchChildActor">();
+		STATIC_CLASS_IMPL("PyHumanTorchChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHumanTorchChildActor")
 	}
 	static class APyHumanTorchChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHumanTorchChildActor>();
 	}
 };
-static_assert(alignof(APyHumanTorchChildActor) == 0x000010, "Wrong alignment on APyHumanTorchChildActor");
-static_assert(sizeof(APyHumanTorchChildActor) == 0x0011C0, "Wrong size on APyHumanTorchChildActor");
+DUMPER7_ASSERTS_APyHumanTorchChildActor;
 
 // PythonClass PyHumanTorchActor.PyHumanTorchCharacter
-// 0x0000 (0x2220 - 0x2220)
+// 0x0000 (0x2330 - 0x2330)
 class APyHumanTorchCharacter : public AHumanTorchCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHumanTorchCharacter">();
+		STATIC_CLASS_IMPL("PyHumanTorchCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHumanTorchCharacter")
 	}
 	static class APyHumanTorchCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHumanTorchCharacter>();
 	}
 };
-static_assert(alignof(APyHumanTorchCharacter) == 0x000010, "Wrong alignment on APyHumanTorchCharacter");
-static_assert(sizeof(APyHumanTorchCharacter) == 0x002220, "Wrong size on APyHumanTorchCharacter");
+DUMPER7_ASSERTS_APyHumanTorchCharacter;
 
 }
 

@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichTextWidgetConfig_Common">();
+		STATIC_CLASS_IMPL("PyRichTextWidgetConfig_Common")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichTextWidgetConfig_Common")
 	}
 	static class UPyRichTextWidgetConfig_Common* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichTextWidgetConfig_Common>();
 	}
 };
-static_assert(alignof(UPyRichTextWidgetConfig_Common) == 0x000008, "Wrong alignment on UPyRichTextWidgetConfig_Common");
-static_assert(sizeof(UPyRichTextWidgetConfig_Common) == 0x000048, "Wrong size on UPyRichTextWidgetConfig_Common");
-static_assert(offsetof(UPyRichTextWidgetConfig_Common, DecoratorStyleID) == 0x000030, "Member 'UPyRichTextWidgetConfig_Common::DecoratorStyleID' has a wrong offset!");
-static_assert(offsetof(UPyRichTextWidgetConfig_Common, DecoratorStyleConfig) == 0x000040, "Member 'UPyRichTextWidgetConfig_Common::DecoratorStyleConfig' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRichTextWidgetConfig_Common;
 
 // PythonClass PyRichTextCustomWidgetDecorator.PyRichTextCustomWidgetDecorator
 // 0x0000 (0x0060 - 0x0060)
@@ -50,15 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRichTextCustomWidgetDecorator">();
+		STATIC_CLASS_IMPL("PyRichTextCustomWidgetDecorator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRichTextCustomWidgetDecorator")
 	}
 	static class UPyRichTextCustomWidgetDecorator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRichTextCustomWidgetDecorator>();
 	}
 };
-static_assert(alignof(UPyRichTextCustomWidgetDecorator) == 0x000008, "Wrong alignment on UPyRichTextCustomWidgetDecorator");
-static_assert(sizeof(UPyRichTextCustomWidgetDecorator) == 0x000060, "Wrong size on UPyRichTextCustomWidgetDecorator");
+DUMPER7_ASSERTS_UPyRichTextCustomWidgetDecorator;
 
 }
 

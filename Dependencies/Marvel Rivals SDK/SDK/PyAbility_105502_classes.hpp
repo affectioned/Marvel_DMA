@@ -18,36 +18,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105502.PyConfig_105502
-// 0x0060 (0x1970 - 0x1910)
+// 0x0070 (0x1D40 - 0x1CD0)
 class UPyConfig_105502 final : public UConfig_105502
 {
 public:
-	int32                                         EnemyBuff;                                         // 0x1910(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SelfBuff;                                          // 0x1914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ExpediteBuff;                                      // 0x1918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EnemySeeThroughBuff;                               // 0x191C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            RefreshCDInfo;                                     // 0x1920(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         EnemyBuff;                                         // 0x1CD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SelfBuff;                                          // 0x1CD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ExpediteBuff;                                      // 0x1CD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnemySeeThroughBuff;                               // 0x1CDC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EnemySeeThroughBuffOld;                            // 0x1CE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1CE4[0x4];                                     // 0x1CE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, float>                            RefreshCDInfo;                                     // 0x1CE8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105502">();
+		STATIC_CLASS_IMPL("PyConfig_105502")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105502")
 	}
 	static class UPyConfig_105502* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105502>();
 	}
 };
-static_assert(alignof(UPyConfig_105502) == 0x000010, "Wrong alignment on UPyConfig_105502");
-static_assert(sizeof(UPyConfig_105502) == 0x001970, "Wrong size on UPyConfig_105502");
-static_assert(offsetof(UPyConfig_105502, EnemyBuff) == 0x001910, "Member 'UPyConfig_105502::EnemyBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105502, SelfBuff) == 0x001914, "Member 'UPyConfig_105502::SelfBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105502, ExpediteBuff) == 0x001918, "Member 'UPyConfig_105502::ExpediteBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105502, EnemySeeThroughBuff) == 0x00191C, "Member 'UPyConfig_105502::EnemySeeThroughBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105502, RefreshCDInfo) == 0x001920, "Member 'UPyConfig_105502::RefreshCDInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105502;
 
 // PythonClass PyAbility_105502.PyAbility_105502
-// 0x0000 (0x2AE8 - 0x2AE8)
+// 0x0000 (0x2B40 - 0x2B40)
 class UPyAbility_105502 : public UAbility_105502
 {
 public:
@@ -58,18 +58,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105502">();
+		STATIC_CLASS_IMPL("PyAbility_105502")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105502")
 	}
 	static class UPyAbility_105502* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105502>();
 	}
 };
-static_assert(alignof(UPyAbility_105502) == 0x000008, "Wrong alignment on UPyAbility_105502");
-static_assert(sizeof(UPyAbility_105502) == 0x002AE8, "Wrong size on UPyAbility_105502");
+DUMPER7_ASSERTS_UPyAbility_105502;
 
 // PythonClass PyAbility_105502.PyCue_Buff_10550203
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_10550203 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -80,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10550203">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10550203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10550203")
 	}
 	static class APyCue_Buff_10550203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10550203>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10550203) == 0x000010, "Wrong alignment on APyCue_Buff_10550203");
-static_assert(sizeof(APyCue_Buff_10550203) == 0x001640, "Wrong size on APyCue_Buff_10550203");
+DUMPER7_ASSERTS_APyCue_Buff_10550203;
 
 }
 

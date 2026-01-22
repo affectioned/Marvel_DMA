@@ -23,15 +23,18 @@ class UHighLightDataManangerBP_C final : public UHighLightDataMananger
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighLightDataManangerBP_C">();
+		BP_STATIC_CLASS_IMPL("HighLightDataManangerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighLightDataManangerBP_C")
 	}
 	static class UHighLightDataManangerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighLightDataManangerBP_C>();
 	}
 };
-static_assert(alignof(UHighLightDataManangerBP_C) == 0x000008, "Wrong alignment on UHighLightDataManangerBP_C");
-static_assert(sizeof(UHighLightDataManangerBP_C) == 0x000050, "Wrong size on UHighLightDataManangerBP_C");
+DUMPER7_ASSERTS_UHighLightDataManangerBP_C;
 
 }
 

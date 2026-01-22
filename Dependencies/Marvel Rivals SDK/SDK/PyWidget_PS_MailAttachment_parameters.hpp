@@ -23,9 +23,7 @@ struct PyWidget_PS_MailAttachment_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PS_MailAttachment_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_PS_MailAttachment_MarvelSetVisible");
-static_assert(sizeof(PyWidget_PS_MailAttachment_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_PS_MailAttachment_MarvelSetVisible");
-static_assert(offsetof(PyWidget_PS_MailAttachment_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_PS_MailAttachment_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PS_MailAttachment_MarvelSetVisible;
 
 // PythonFunction PyWidget_PS_MailAttachment.PyWidget_PS_MailAttachment.scroll_left_navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PS_MailAttachment_scroll_left_navigation) == 0x000008, "Wrong alignment on PyWidget_PS_MailAttachment_scroll_left_navigation");
-static_assert(sizeof(PyWidget_PS_MailAttachment_scroll_left_navigation) == 0x000010, "Wrong size on PyWidget_PS_MailAttachment_scroll_left_navigation");
-static_assert(offsetof(PyWidget_PS_MailAttachment_scroll_left_navigation, NavType) == 0x000000, "Member 'PyWidget_PS_MailAttachment_scroll_left_navigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_PS_MailAttachment_scroll_left_navigation, ReturnValue) == 0x000008, "Member 'PyWidget_PS_MailAttachment_scroll_left_navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PS_MailAttachment_scroll_left_navigation;
 
 // PythonFunction PyWidget_PS_MailAttachment.PyWidget_PS_MailAttachment.scroll_right_navigation
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_PS_MailAttachment_scroll_right_navigation) == 0x000008, "Wrong alignment on PyWidget_PS_MailAttachment_scroll_right_navigation");
-static_assert(sizeof(PyWidget_PS_MailAttachment_scroll_right_navigation) == 0x000010, "Wrong size on PyWidget_PS_MailAttachment_scroll_right_navigation");
-static_assert(offsetof(PyWidget_PS_MailAttachment_scroll_right_navigation, NavType) == 0x000000, "Member 'PyWidget_PS_MailAttachment_scroll_right_navigation::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_PS_MailAttachment_scroll_right_navigation, ReturnValue) == 0x000008, "Member 'PyWidget_PS_MailAttachment_scroll_right_navigation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_PS_MailAttachment_scroll_right_navigation;
 
 }
 

@@ -21,9 +21,7 @@ struct PyAbility_200205_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200205_CanActivate) == 0x000001, "Wrong alignment on PyAbility_200205_CanActivate");
-static_assert(sizeof(PyAbility_200205_CanActivate) == 0x000001, "Wrong size on PyAbility_200205_CanActivate");
-static_assert(offsetof(PyAbility_200205_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200205_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200205_CanActivate;
 
 // PythonFunction PyAbility_200205.PyAbility_200205.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_200205_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200205_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_200205_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_200205_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_200205_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_200205_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_200205_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200205_K2_OnEndAbility;
 
 // PythonFunction PyAbility_200205.PyAbility_200205.SetThrowTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_200205_SetThrowTarget final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200205_SetThrowTarget) == 0x000008, "Wrong alignment on PyAbility_200205_SetThrowTarget");
-static_assert(sizeof(PyAbility_200205_SetThrowTarget) == 0x000008, "Wrong size on PyAbility_200205_SetThrowTarget");
-static_assert(offsetof(PyAbility_200205_SetThrowTarget, Target) == 0x000000, "Member 'PyAbility_200205_SetThrowTarget::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200205_SetThrowTarget;
 
 }
 

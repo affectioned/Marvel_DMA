@@ -17,25 +17,27 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1050_CharacterBP.1050_CharacterBP_C
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x22F0 - 0x22E0)
 class AOne050_CharacterBP_C final : public APyInvisibleWomanCharacter
 {
 public:
-	class UAbilityModifierComponent*              AbilityModifier;                                   // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAbilityModifierComponent*              AbilityModifier;                                   // 0x22E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1050_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1050_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1050_CharacterBP_C")
 	}
 	static class AOne050_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne050_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne050_CharacterBP_C) == 0x000010, "Wrong alignment on AOne050_CharacterBP_C");
-static_assert(sizeof(AOne050_CharacterBP_C) == 0x0021E0, "Wrong size on AOne050_CharacterBP_C");
-static_assert(offsetof(AOne050_CharacterBP_C, AbilityModifier) == 0x0021D0, "Member 'AOne050_CharacterBP_C::AbilityModifier' has a wrong offset!");
+DUMPER7_ASSERTS_AOne050_CharacterBP_C;
 
 }
 

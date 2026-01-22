@@ -36,21 +36,7 @@ public:
 	struct FVector                                CallFunc_GetValueAsVector_ReturnValue;             // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidAILocation_ReturnValue;            // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation) == 0x000008, "Wrong alignment on EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation");
-static_assert(sizeof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation) == 0x0000D8, "Wrong size on EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, QuerierObject) == 0x000000, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::QuerierObject' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, QuerierActor) == 0x000008, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::QuerierActor' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, ResultingLocation) == 0x000010, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::ResultingLocation' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, MoveDir) == 0x000028, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::MoveDir' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000040, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000058, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_GetActorForwardVector_ReturnValue) == 0x000070, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_Add_VectorVector_ReturnValue) == 0x000088, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_GetBlackboard_ReturnValue) == 0x0000A0, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_GetBlackboard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_MakeLiteralName_ReturnValue) == 0x0000A8, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_IsValid_ReturnValue) == 0x0000B4, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_GetValueAsVector_ReturnValue) == 0x0000B8, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_GetValueAsVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation, CallFunc_IsValidAILocation_ReturnValue) == 0x0000D0, "Member 'EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation::CallFunc_IsValidAILocation_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_EQC_GetMoveLocationAlongDir_C_ProvideSingleLocation;
 
 }
 

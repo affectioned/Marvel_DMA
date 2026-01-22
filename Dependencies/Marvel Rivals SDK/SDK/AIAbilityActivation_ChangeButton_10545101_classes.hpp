@@ -23,15 +23,18 @@ class UAIAbilityActivation_ChangeButton_10545101_C final : public UPyAIAbilityAc
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_ChangeButton_10545101_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_ChangeButton_10545101_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_ChangeButton_10545101_C")
 	}
 	static class UAIAbilityActivation_ChangeButton_10545101_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_ChangeButton_10545101_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_ChangeButton_10545101_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_ChangeButton_10545101_C");
-static_assert(sizeof(UAIAbilityActivation_ChangeButton_10545101_C) == 0x000040, "Wrong size on UAIAbilityActivation_ChangeButton_10545101_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_ChangeButton_10545101_C;
 
 }
 

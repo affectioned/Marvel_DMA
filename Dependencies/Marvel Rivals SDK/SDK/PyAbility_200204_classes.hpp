@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200204.PyAbility_200204
-// 0x0008 (0x29F8 - 0x29F0)
+// 0x0008 (0x2A48 - 0x2A40)
 class UPyAbility_200204 : public UMarvelGameplayAbility
 {
 public:
-	float                                         GatherTime;                                        // 0x29F0(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EOwnershipType                                PickupSide;                                        // 0x29F4(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GatherTime;                                        // 0x2A40(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EOwnershipType                                PickupSide;                                        // 0x2A44(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -38,20 +38,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200204">();
+		STATIC_CLASS_IMPL("PyAbility_200204")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200204")
 	}
 	static class UPyAbility_200204* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200204>();
 	}
 };
-static_assert(alignof(UPyAbility_200204) == 0x000008, "Wrong alignment on UPyAbility_200204");
-static_assert(sizeof(UPyAbility_200204) == 0x0029F8, "Wrong size on UPyAbility_200204");
-static_assert(offsetof(UPyAbility_200204, GatherTime) == 0x0029F0, "Member 'UPyAbility_200204::GatherTime' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200204, PickupSide) == 0x0029F4, "Member 'UPyAbility_200204::PickupSide' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200204;
 
 // PythonClass PyAbility_200204.PyUIController_200204
-// 0x0000 (0x0158 - 0x0158)
+// 0x0000 (0x01B8 - 0x01B8)
 class UPyUIController_200204 final : public UUIC_SelectTarget
 {
 public:
@@ -62,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200204">();
+		STATIC_CLASS_IMPL("PyUIController_200204")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200204")
 	}
 	static class UPyUIController_200204* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200204>();
 	}
 };
-static_assert(alignof(UPyUIController_200204) == 0x000008, "Wrong alignment on UPyUIController_200204");
-static_assert(sizeof(UPyUIController_200204) == 0x000158, "Wrong size on UPyUIController_200204");
+DUMPER7_ASSERTS_UPyUIController_200204;
 
 }
 

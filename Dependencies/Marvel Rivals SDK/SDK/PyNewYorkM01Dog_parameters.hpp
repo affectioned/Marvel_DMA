@@ -23,9 +23,7 @@ struct PyNewYorkM01Dog_OnTalkPrepare final
 public:
 	struct FVector                                TargetLocation;                                    // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNewYorkM01Dog_OnTalkPrepare) == 0x000008, "Wrong alignment on PyNewYorkM01Dog_OnTalkPrepare");
-static_assert(sizeof(PyNewYorkM01Dog_OnTalkPrepare) == 0x000018, "Wrong size on PyNewYorkM01Dog_OnTalkPrepare");
-static_assert(offsetof(PyNewYorkM01Dog_OnTalkPrepare, TargetLocation) == 0x000000, "Member 'PyNewYorkM01Dog_OnTalkPrepare::TargetLocation' has a wrong offset!");
+DUMPER7_ASSERTS_PyNewYorkM01Dog_OnTalkPrepare;
 
 }
 

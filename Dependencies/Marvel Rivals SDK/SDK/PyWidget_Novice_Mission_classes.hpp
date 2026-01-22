@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Novice_Mission.PyWidget_Novice_MissionList
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Novice_MissionList final : public UMarvelUserWidget
 {
 public:
-	class UAkAudioEvent*                          FadeInAudio;                                       // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NewMissionDelayTime;                               // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SubTaskFadeDelay;                                  // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          FadeInAudio;                                       // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewMissionDelayTime;                               // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SubTaskFadeDelay;                                  // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -32,28 +32,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_MissionList">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_MissionList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_MissionList")
 	}
 	static class UPyWidget_Novice_MissionList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_MissionList>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_MissionList) == 0x000008, "Wrong alignment on UPyWidget_Novice_MissionList");
-static_assert(sizeof(UPyWidget_Novice_MissionList) == 0x000578, "Wrong size on UPyWidget_Novice_MissionList");
-static_assert(offsetof(UPyWidget_Novice_MissionList, FadeInAudio) == 0x000568, "Member 'UPyWidget_Novice_MissionList::FadeInAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_MissionList, NewMissionDelayTime) == 0x000570, "Member 'UPyWidget_Novice_MissionList::NewMissionDelayTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_MissionList, SubTaskFadeDelay) == 0x000574, "Member 'UPyWidget_Novice_MissionList::SubTaskFadeDelay' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_MissionList;
 
 // PythonClass PyWidget_Novice_Mission.PyWidget_Novice_MissionDetail
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Novice_MissionDetail : public UMarvelUserWidget
 {
 public:
-	int32                                         RichInlineWeight;                                  // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlineHeight;                                  // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlinePadding;                                 // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinishOpacity;                                     // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineWeight;                                  // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineHeight;                                  // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlinePadding;                                 // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinishOpacity;                                     // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,45 +63,47 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_MissionDetail">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_MissionDetail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_MissionDetail")
 	}
 	static class UPyWidget_Novice_MissionDetail* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_MissionDetail>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_MissionDetail) == 0x000008, "Wrong alignment on UPyWidget_Novice_MissionDetail");
-static_assert(sizeof(UPyWidget_Novice_MissionDetail) == 0x000578, "Wrong size on UPyWidget_Novice_MissionDetail");
-static_assert(offsetof(UPyWidget_Novice_MissionDetail, RichInlineWeight) == 0x000568, "Member 'UPyWidget_Novice_MissionDetail::RichInlineWeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_MissionDetail, RichInlineHeight) == 0x00056C, "Member 'UPyWidget_Novice_MissionDetail::RichInlineHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_MissionDetail, RichInlinePadding) == 0x000570, "Member 'UPyWidget_Novice_MissionDetail::RichInlinePadding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_MissionDetail, FinishOpacity) == 0x000574, "Member 'UPyWidget_Novice_MissionDetail::FinishOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_MissionDetail;
 
 // PythonClass PyWidget_Novice_Mission.PyWidget_Novice_CheckBox
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_Novice_CheckBox final : public UMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_CheckBox">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_CheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_CheckBox")
 	}
 	static class UPyWidget_Novice_CheckBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_CheckBox>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_CheckBox) == 0x000008, "Wrong alignment on UPyWidget_Novice_CheckBox");
-static_assert(sizeof(UPyWidget_Novice_CheckBox) == 0x000568, "Wrong size on UPyWidget_Novice_CheckBox");
+DUMPER7_ASSERTS_UPyWidget_Novice_CheckBox;
 
 // PythonClass PyWidget_Novice_Mission.PyWidget_Novice_TaskTips
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Novice_TaskTips final : public UMarvelUserWidget
 {
 public:
-	int32                                         RichInlineWeight;                                  // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlineHeight;                                  // 0x056C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RichInlinePadding;                                 // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineWeight;                                  // 0x0570(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlineHeight;                                  // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RichInlinePadding;                                 // 0x0578(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -111,18 +113,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Novice_TaskTips">();
+		STATIC_CLASS_IMPL("PyWidget_Novice_TaskTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Novice_TaskTips")
 	}
 	static class UPyWidget_Novice_TaskTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Novice_TaskTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Novice_TaskTips) == 0x000008, "Wrong alignment on UPyWidget_Novice_TaskTips");
-static_assert(sizeof(UPyWidget_Novice_TaskTips) == 0x000578, "Wrong size on UPyWidget_Novice_TaskTips");
-static_assert(offsetof(UPyWidget_Novice_TaskTips, RichInlineWeight) == 0x000568, "Member 'UPyWidget_Novice_TaskTips::RichInlineWeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_TaskTips, RichInlineHeight) == 0x00056C, "Member 'UPyWidget_Novice_TaskTips::RichInlineHeight' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Novice_TaskTips, RichInlinePadding) == 0x000570, "Member 'UPyWidget_Novice_TaskTips::RichInlinePadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Novice_TaskTips;
 
 }
 

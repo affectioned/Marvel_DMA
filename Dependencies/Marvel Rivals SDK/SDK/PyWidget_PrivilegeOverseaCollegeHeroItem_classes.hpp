@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PrivilegeOverseaCollegeHeroItem.PyWidget_PrivilegeOverseaCollegeHeroItem
-// 0x0030 (0x08F0 - 0x08C0)
+// 0x0030 (0x0950 - 0x0920)
 class UPyWidget_PrivilegeOverseaCollegeHeroItem final : public UPyWidget_BaseCommonButton
 {
 public:
-	struct FVector2D                              ItemSize;                                          // 0x08B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector2D>                      PolygonHitTestPoints;                              // 0x08C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          bPolygonHitTestDebugDraw;                          // 0x08D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8D9[0x7];                                      // 0x08D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Test_Texture_PreveiwIcon;                          // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ItemSize;                                          // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector2D>                      PolygonHitTestPoints;                              // 0x0928(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          bPolygonHitTestDebugDraw;                          // 0x0938(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_939[0x7];                                      // 0x0939(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Test_Texture_PreveiwIcon;                          // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,19 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PrivilegeOverseaCollegeHeroItem">();
+		STATIC_CLASS_IMPL("PyWidget_PrivilegeOverseaCollegeHeroItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PrivilegeOverseaCollegeHeroItem")
 	}
 	static class UPyWidget_PrivilegeOverseaCollegeHeroItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PrivilegeOverseaCollegeHeroItem>();
 	}
 };
-static_assert(alignof(UPyWidget_PrivilegeOverseaCollegeHeroItem) == 0x000010, "Wrong alignment on UPyWidget_PrivilegeOverseaCollegeHeroItem");
-static_assert(sizeof(UPyWidget_PrivilegeOverseaCollegeHeroItem) == 0x0008F0, "Wrong size on UPyWidget_PrivilegeOverseaCollegeHeroItem");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaCollegeHeroItem, ItemSize) == 0x0008B8, "Member 'UPyWidget_PrivilegeOverseaCollegeHeroItem::ItemSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaCollegeHeroItem, PolygonHitTestPoints) == 0x0008C8, "Member 'UPyWidget_PrivilegeOverseaCollegeHeroItem::PolygonHitTestPoints' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaCollegeHeroItem, bPolygonHitTestDebugDraw) == 0x0008D8, "Member 'UPyWidget_PrivilegeOverseaCollegeHeroItem::bPolygonHitTestDebugDraw' has a wrong offset!");
-static_assert(offsetof(UPyWidget_PrivilegeOverseaCollegeHeroItem, Test_Texture_PreveiwIcon) == 0x0008E0, "Member 'UPyWidget_PrivilegeOverseaCollegeHeroItem::Test_Texture_PreveiwIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_PrivilegeOverseaCollegeHeroItem;
 
 }
 

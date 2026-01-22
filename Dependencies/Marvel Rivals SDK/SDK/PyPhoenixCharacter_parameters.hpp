@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTag                           InTag;                                             // 0x0004(0x000C)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility) == 0x000004, "Wrong alignment on PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility");
-static_assert(sizeof(PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility) == 0x000010, "Wrong size on PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility");
-static_assert(offsetof(PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility, bVisible) == 0x000000, "Member 'PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility::bVisible' has a wrong offset!");
-static_assert(offsetof(PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility, InTag) == 0x000004, "Member 'PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility::InTag' has a wrong offset!");
+DUMPER7_ASSERTS_PyPhoenixPhantomChildActor_K2_UpdatePhantomVisibility;
 
 }
 

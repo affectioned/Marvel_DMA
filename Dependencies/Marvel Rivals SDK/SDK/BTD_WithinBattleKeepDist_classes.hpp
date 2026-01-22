@@ -23,15 +23,18 @@ class UBTD_WithinBattleKeepDist_C final : public UBTD_PyWithinBattleKeepDist
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTD_WithinBattleKeepDist_C">();
+		BP_STATIC_CLASS_IMPL("BTD_WithinBattleKeepDist_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTD_WithinBattleKeepDist_C")
 	}
 	static class UBTD_WithinBattleKeepDist_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTD_WithinBattleKeepDist_C>();
 	}
 };
-static_assert(alignof(UBTD_WithinBattleKeepDist_C) == 0x000008, "Wrong alignment on UBTD_WithinBattleKeepDist_C");
-static_assert(sizeof(UBTD_WithinBattleKeepDist_C) == 0x000118, "Wrong size on UBTD_WithinBattleKeepDist_C");
+DUMPER7_ASSERTS_UBTD_WithinBattleKeepDist_C;
 
 }
 

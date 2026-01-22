@@ -21,9 +21,7 @@ struct PyMarvelListEntryWidget_PyOnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelListEntryWidget_PyOnListItemObjectSet) == 0x000008, "Wrong alignment on PyMarvelListEntryWidget_PyOnListItemObjectSet");
-static_assert(sizeof(PyMarvelListEntryWidget_PyOnListItemObjectSet) == 0x000008, "Wrong size on PyMarvelListEntryWidget_PyOnListItemObjectSet");
-static_assert(offsetof(PyMarvelListEntryWidget_PyOnListItemObjectSet, ListItemObject) == 0x000000, "Member 'PyMarvelListEntryWidget_PyOnListItemObjectSet::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelListEntryWidget_PyOnListItemObjectSet;
 
 // PythonFunction PyMarvelListEntryWidget.PyMarvelListEntryWidget.PyOnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyMarvelListEntryWidget_PyOnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyMarvelListEntryWidget_PyOnItemSelectionChanged) == 0x000001, "Wrong alignment on PyMarvelListEntryWidget_PyOnItemSelectionChanged");
-static_assert(sizeof(PyMarvelListEntryWidget_PyOnItemSelectionChanged) == 0x000001, "Wrong size on PyMarvelListEntryWidget_PyOnItemSelectionChanged");
-static_assert(offsetof(PyMarvelListEntryWidget_PyOnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'PyMarvelListEntryWidget_PyOnItemSelectionChanged::bIsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyMarvelListEntryWidget_PyOnItemSelectionChanged;
 
 }
 

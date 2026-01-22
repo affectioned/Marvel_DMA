@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "MassEntity_classes.hpp"
-#include "CoreUObject_classes.hpp"
 #include "MassRepresentation_structs.hpp"
 #include "MassSpawner_classes.hpp"
+#include "MassEntity_classes.hpp"
+#include "CoreUObject_classes.hpp"
 #include "Skelot_classes.hpp"
 
 
@@ -22,50 +22,24 @@ namespace SDK
 {
 
 // Class MassRepresentation.MassInstancedStaticMeshComponent
-// 0x0000 (0x0A60 - 0x0A60)
+// 0x0000 (0x0A70 - 0x0A70)
 class UMassInstancedStaticMeshComponent final : public UInstancedStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassInstancedStaticMeshComponent">();
+		STATIC_CLASS_IMPL("MassInstancedStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassInstancedStaticMeshComponent")
 	}
 	static class UMassInstancedStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassInstancedStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UMassInstancedStaticMeshComponent) == 0x000010, "Wrong alignment on UMassInstancedStaticMeshComponent");
-static_assert(sizeof(UMassInstancedStaticMeshComponent) == 0x000A60, "Wrong size on UMassInstancedStaticMeshComponent");
-
-// Class MassRepresentation.MassSkelotComponent
-// 0x0140 (0x0CE0 - 0x0BA0)
-class UMassSkelotComponent final : public USkelotComponent
-{
-public:
-	uint8                                         Pad_BA0[0x138];                                    // 0x0BA0(0x0138)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MovingSmoothFactor;                                // 0x0CD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CDC[0x4];                                      // 0x0CDC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static bool GetSkelotCustomStencilEnable();
-	static int32 GetSkelotCustomStencilValue();
-	static void SetSkelotCustomStencilEnable(bool bEnable);
-	static void SetSkelotCustomStencilValue(int32 Value);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MassSkelotComponent">();
-	}
-	static class UMassSkelotComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMassSkelotComponent>();
-	}
-};
-static_assert(alignof(UMassSkelotComponent) == 0x000010, "Wrong alignment on UMassSkelotComponent");
-static_assert(sizeof(UMassSkelotComponent) == 0x000CE0, "Wrong size on UMassSkelotComponent");
-static_assert(offsetof(UMassSkelotComponent, MovingSmoothFactor) == 0x000CD8, "Member 'UMassSkelotComponent::MovingSmoothFactor' has a wrong offset!");
+DUMPER7_ASSERTS_UMassInstancedStaticMeshComponent;
 
 // Class MassRepresentation.MassVisualizationTrait
 // 0x0130 (0x0160 - 0x0030)
@@ -85,40 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVisualizationTrait")
 	}
 	static class UMassVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassVisualizationTrait) == 0x000010, "Wrong alignment on UMassVisualizationTrait");
-static_assert(sizeof(UMassVisualizationTrait) == 0x000160, "Wrong size on UMassVisualizationTrait");
-static_assert(offsetof(UMassVisualizationTrait, StaticMeshInstanceDesc) == 0x000030, "Member 'UMassVisualizationTrait::StaticMeshInstanceDesc' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, SkelotMeshInstanceConfig) == 0x0000C0, "Member 'UMassVisualizationTrait::SkelotMeshInstanceConfig' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, HighResTemplateActor) == 0x0000C8, "Member 'UMassVisualizationTrait::HighResTemplateActor' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, LowResTemplateActor) == 0x0000D0, "Member 'UMassVisualizationTrait::LowResTemplateActor' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, RepresentationSubsystemClass) == 0x0000D8, "Member 'UMassVisualizationTrait::RepresentationSubsystemClass' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, Params_0) == 0x0000E0, "Member 'UMassVisualizationTrait::Params_0' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, LODParams) == 0x000110, "Member 'UMassVisualizationTrait::LODParams' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationTrait, bAllowServerSideVisualization) == 0x000158, "Member 'UMassVisualizationTrait::bAllowServerSideVisualization' has a wrong offset!");
-
-// Class MassRepresentation.MassRepresentationActorManagement
-// 0x0000 (0x0030 - 0x0030)
-class UMassRepresentationActorManagement : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MassRepresentationActorManagement">();
-	}
-	static class UMassRepresentationActorManagement* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMassRepresentationActorManagement>();
-	}
-};
-static_assert(alignof(UMassRepresentationActorManagement) == 0x000008, "Wrong alignment on UMassRepresentationActorManagement");
-static_assert(sizeof(UMassRepresentationActorManagement) == 0x000030, "Wrong size on UMassRepresentationActorManagement");
+DUMPER7_ASSERTS_UMassVisualizationTrait;
 
 // Class MassRepresentation.MassMovableVisualizationTrait
 // 0x0000 (0x0160 - 0x0160)
@@ -127,15 +79,38 @@ class UMassMovableVisualizationTrait final : public UMassVisualizationTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMovableVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassMovableVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMovableVisualizationTrait")
 	}
 	static class UMassMovableVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassMovableVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassMovableVisualizationTrait) == 0x000010, "Wrong alignment on UMassMovableVisualizationTrait");
-static_assert(sizeof(UMassMovableVisualizationTrait) == 0x000160, "Wrong size on UMassMovableVisualizationTrait");
+DUMPER7_ASSERTS_UMassMovableVisualizationTrait;
+
+// Class MassRepresentation.MassRepresentationActorManagement
+// 0x0000 (0x0030 - 0x0030)
+class UMassRepresentationActorManagement : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MassRepresentationActorManagement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassRepresentationActorManagement")
+	}
+	static class UMassRepresentationActorManagement* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMassRepresentationActorManagement>();
+	}
+};
+DUMPER7_ASSERTS_UMassRepresentationActorManagement;
 
 // Class MassRepresentation.MassRepresentationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -147,15 +122,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassRepresentationProcessor">();
+		STATIC_CLASS_IMPL("MassRepresentationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassRepresentationProcessor")
 	}
 	static class UMassRepresentationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassRepresentationProcessor>();
 	}
 };
-static_assert(alignof(UMassRepresentationProcessor) == 0x000008, "Wrong alignment on UMassRepresentationProcessor");
-static_assert(sizeof(UMassRepresentationProcessor) == 0x000370, "Wrong size on UMassRepresentationProcessor");
+DUMPER7_ASSERTS_UMassRepresentationProcessor;
 
 // Class MassRepresentation.MassVisualizationProcessor
 // 0x0000 (0x0370 - 0x0370)
@@ -164,15 +142,18 @@ class UMassVisualizationProcessor : public UMassRepresentationProcessor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVisualizationProcessor">();
+		STATIC_CLASS_IMPL("MassVisualizationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVisualizationProcessor")
 	}
 	static class UMassVisualizationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassVisualizationProcessor>();
 	}
 };
-static_assert(alignof(UMassVisualizationProcessor) == 0x000008, "Wrong alignment on UMassVisualizationProcessor");
-static_assert(sizeof(UMassVisualizationProcessor) == 0x000370, "Wrong size on UMassVisualizationProcessor");
+DUMPER7_ASSERTS_UMassVisualizationProcessor;
 
 // Class MassRepresentation.MassRepresentationFragmentDestructor
 // 0x02A0 (0x0380 - 0x00E0)
@@ -184,46 +165,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassRepresentationFragmentDestructor">();
+		STATIC_CLASS_IMPL("MassRepresentationFragmentDestructor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassRepresentationFragmentDestructor")
 	}
 	static class UMassRepresentationFragmentDestructor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassRepresentationFragmentDestructor>();
 	}
 };
-static_assert(alignof(UMassRepresentationFragmentDestructor) == 0x000008, "Wrong alignment on UMassRepresentationFragmentDestructor");
-static_assert(sizeof(UMassRepresentationFragmentDestructor) == 0x000380, "Wrong size on UMassRepresentationFragmentDestructor");
+DUMPER7_ASSERTS_UMassRepresentationFragmentDestructor;
 
 // Class MassRepresentation.MassRepresentationSubsystem
-// 0x0098 (0x00D0 - 0x0038)
+// 0x0098 (0x00D8 - 0x0040)
 class UMassRepresentationSubsystem : public UWorldSubsystem
 {
 public:
-	TArray<TSubclassOf<class AActor>>             TemplateActors;                                    // 0x0038(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UMassVisualizationComponent*            VisualizationComponent;                            // 0x0048(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AMassVisualizer*                        Visualizer;                                        // 0x0050(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMassActorSpawnerSubsystem*             ActorSpawnerSubsystem;                             // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_60[0x10];                                      // 0x0060(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWorldPartitionSubsystem*               WorldPartitionSubsystem;                           // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_78[0x58];                                      // 0x0078(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<TSubclassOf<class AActor>>             TemplateActors;                                    // 0x0040(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic)
+	class UMassVisualizationComponent*            VisualizationComponent;                            // 0x0050(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AMassVisualizer*                        Visualizer;                                        // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMassActorSpawnerSubsystem*             ActorSpawnerSubsystem;                             // 0x0060(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_68[0x10];                                      // 0x0068(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWorldPartitionSubsystem*               WorldPartitionSubsystem;                           // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_80[0x58];                                      // 0x0080(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassRepresentationSubsystem">();
+		STATIC_CLASS_IMPL("MassRepresentationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassRepresentationSubsystem")
 	}
 	static class UMassRepresentationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassRepresentationSubsystem>();
 	}
 };
-static_assert(alignof(UMassRepresentationSubsystem) == 0x000008, "Wrong alignment on UMassRepresentationSubsystem");
-static_assert(sizeof(UMassRepresentationSubsystem) == 0x0000D0, "Wrong size on UMassRepresentationSubsystem");
-static_assert(offsetof(UMassRepresentationSubsystem, TemplateActors) == 0x000038, "Member 'UMassRepresentationSubsystem::TemplateActors' has a wrong offset!");
-static_assert(offsetof(UMassRepresentationSubsystem, VisualizationComponent) == 0x000048, "Member 'UMassRepresentationSubsystem::VisualizationComponent' has a wrong offset!");
-static_assert(offsetof(UMassRepresentationSubsystem, Visualizer) == 0x000050, "Member 'UMassRepresentationSubsystem::Visualizer' has a wrong offset!");
-static_assert(offsetof(UMassRepresentationSubsystem, ActorSpawnerSubsystem) == 0x000058, "Member 'UMassRepresentationSubsystem::ActorSpawnerSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassRepresentationSubsystem, WorldPartitionSubsystem) == 0x000070, "Member 'UMassRepresentationSubsystem::WorldPartitionSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassRepresentationSubsystem;
+
+// Class MassRepresentation.MassSkelotComponent
+// 0x0140 (0x0CE0 - 0x0BA0)
+class UMassSkelotComponent final : public USkelotComponent
+{
+public:
+	uint8                                         Pad_BA0[0x138];                                    // 0x0BA0(0x0138)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MovingSmoothFactor;                                // 0x0CD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CDC[0x4];                                      // 0x0CDC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static bool GetSkelotCustomStencilEnable();
+	static int32 GetSkelotCustomStencilValue();
+	static void SetSkelotCustomStencilEnable(bool bEnable);
+	static void SetSkelotCustomStencilValue(int32 Value);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MassSkelotComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSkelotComponent")
+	}
+	static class UMassSkelotComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMassSkelotComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMassSkelotComponent;
 
 // Class MassRepresentation.MassStationaryISMRepresentationFragmentDestructor
 // 0x02A0 (0x0380 - 0x00E0)
@@ -235,15 +248,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStationaryISMRepresentationFragmentDestructor">();
+		STATIC_CLASS_IMPL("MassStationaryISMRepresentationFragmentDestructor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStationaryISMRepresentationFragmentDestructor")
 	}
 	static class UMassStationaryISMRepresentationFragmentDestructor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStationaryISMRepresentationFragmentDestructor>();
 	}
 };
-static_assert(alignof(UMassStationaryISMRepresentationFragmentDestructor) == 0x000008, "Wrong alignment on UMassStationaryISMRepresentationFragmentDestructor");
-static_assert(sizeof(UMassStationaryISMRepresentationFragmentDestructor) == 0x000380, "Wrong size on UMassStationaryISMRepresentationFragmentDestructor");
+DUMPER7_ASSERTS_UMassStationaryISMRepresentationFragmentDestructor;
 
 // Class MassRepresentation.MassStationaryISMSwitcherProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -255,15 +271,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStationaryISMSwitcherProcessor">();
+		STATIC_CLASS_IMPL("MassStationaryISMSwitcherProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStationaryISMSwitcherProcessor")
 	}
 	static class UMassStationaryISMSwitcherProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStationaryISMSwitcherProcessor>();
 	}
 };
-static_assert(alignof(UMassStationaryISMSwitcherProcessor) == 0x000008, "Wrong alignment on UMassStationaryISMSwitcherProcessor");
-static_assert(sizeof(UMassStationaryISMSwitcherProcessor) == 0x000370, "Wrong size on UMassStationaryISMSwitcherProcessor");
+DUMPER7_ASSERTS_UMassStationaryISMSwitcherProcessor;
 
 // Class MassRepresentation.MassStationaryVisualizationTrait
 // 0x0000 (0x0160 - 0x0160)
@@ -272,15 +291,18 @@ class UMassStationaryVisualizationTrait : public UMassVisualizationTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassStationaryVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassStationaryVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassStationaryVisualizationTrait")
 	}
 	static class UMassStationaryVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassStationaryVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassStationaryVisualizationTrait) == 0x000010, "Wrong alignment on UMassStationaryVisualizationTrait");
-static_assert(sizeof(UMassStationaryVisualizationTrait) == 0x000160, "Wrong size on UMassStationaryVisualizationTrait");
+DUMPER7_ASSERTS_UMassStationaryVisualizationTrait;
 
 // Class MassRepresentation.MassUpdateISMProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -292,15 +314,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassUpdateISMProcessor">();
+		STATIC_CLASS_IMPL("MassUpdateISMProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassUpdateISMProcessor")
 	}
 	static class UMassUpdateISMProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassUpdateISMProcessor>();
 	}
 };
-static_assert(alignof(UMassUpdateISMProcessor) == 0x000008, "Wrong alignment on UMassUpdateISMProcessor");
-static_assert(sizeof(UMassUpdateISMProcessor) == 0x000370, "Wrong size on UMassUpdateISMProcessor");
+DUMPER7_ASSERTS_UMassUpdateISMProcessor;
 
 // Class MassRepresentation.MassUpdateSKelotProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -312,15 +337,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassUpdateSKelotProcessor">();
+		STATIC_CLASS_IMPL("MassUpdateSKelotProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassUpdateSKelotProcessor")
 	}
 	static class UMassUpdateSKelotProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassUpdateSKelotProcessor>();
 	}
 };
-static_assert(alignof(UMassUpdateSKelotProcessor) == 0x000008, "Wrong alignment on UMassUpdateSKelotProcessor");
-static_assert(sizeof(UMassUpdateSKelotProcessor) == 0x000370, "Wrong size on UMassUpdateSKelotProcessor");
+DUMPER7_ASSERTS_UMassUpdateSKelotProcessor;
 
 // Class MassRepresentation.MassVisualizationComponent
 // 0x01A8 (0x02B0 - 0x0108)
@@ -334,17 +362,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVisualizationComponent">();
+		STATIC_CLASS_IMPL("MassVisualizationComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVisualizationComponent")
 	}
 	static class UMassVisualizationComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassVisualizationComponent>();
 	}
 };
-static_assert(alignof(UMassVisualizationComponent) == 0x000008, "Wrong alignment on UMassVisualizationComponent");
-static_assert(sizeof(UMassVisualizationComponent) == 0x0002B0, "Wrong size on UMassVisualizationComponent");
-static_assert(offsetof(UMassVisualizationComponent, InstancedStaticMeshInfos) == 0x000108, "Member 'UMassVisualizationComponent::InstancedStaticMeshInfos' has a wrong offset!");
-static_assert(offsetof(UMassVisualizationComponent, SkelotCollectionMap) == 0x000118, "Member 'UMassVisualizationComponent::SkelotCollectionMap' has a wrong offset!");
+DUMPER7_ASSERTS_UMassVisualizationComponent;
 
 // Class MassRepresentation.MassVisualizationLODProcessor
 // 0x0A98 (0x0B60 - 0x00C8)
@@ -357,16 +386,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVisualizationLODProcessor">();
+		STATIC_CLASS_IMPL("MassVisualizationLODProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVisualizationLODProcessor")
 	}
 	static class UMassVisualizationLODProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassVisualizationLODProcessor>();
 	}
 };
-static_assert(alignof(UMassVisualizationLODProcessor) == 0x000010, "Wrong alignment on UMassVisualizationLODProcessor");
-static_assert(sizeof(UMassVisualizationLODProcessor) == 0x000B60, "Wrong size on UMassVisualizationLODProcessor");
-static_assert(offsetof(UMassVisualizationLODProcessor, FilterTag) == 0x000B58, "Member 'UMassVisualizationLODProcessor::FilterTag' has a wrong offset!");
+DUMPER7_ASSERTS_UMassVisualizationLODProcessor;
 
 // Class MassRepresentation.MassVisualizer
 // 0x0000 (0x06E0 - 0x06E0)
@@ -378,16 +409,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVisualizer">();
+		STATIC_CLASS_IMPL("MassVisualizer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVisualizer")
 	}
 	static class AMassVisualizer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassVisualizer>();
 	}
 };
-static_assert(alignof(AMassVisualizer) == 0x000010, "Wrong alignment on AMassVisualizer");
-static_assert(sizeof(AMassVisualizer) == 0x0006E0, "Wrong size on AMassVisualizer");
-static_assert(offsetof(AMassVisualizer, VisComponent) == 0x0006D8, "Member 'AMassVisualizer::VisComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AMassVisualizer;
 
 }
 

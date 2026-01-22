@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyGenerateRandomFlag">();
+		STATIC_CLASS_IMPL("BTS_PyGenerateRandomFlag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyGenerateRandomFlag")
 	}
 	static class UBTS_PyGenerateRandomFlag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyGenerateRandomFlag>();
 	}
 };
-static_assert(alignof(UBTS_PyGenerateRandomFlag) == 0x000008, "Wrong alignment on UBTS_PyGenerateRandomFlag");
-static_assert(sizeof(UBTS_PyGenerateRandomFlag) == 0x000128, "Wrong size on UBTS_PyGenerateRandomFlag");
-static_assert(offsetof(UBTS_PyGenerateRandomFlag, Weights) == 0x0000A8, "Member 'UBTS_PyGenerateRandomFlag::Weights' has a wrong offset!");
-static_assert(offsetof(UBTS_PyGenerateRandomFlag, OutRandomFlag) == 0x0000F8, "Member 'UBTS_PyGenerateRandomFlag::OutRandomFlag' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyGenerateRandomFlag;
 
 }
 

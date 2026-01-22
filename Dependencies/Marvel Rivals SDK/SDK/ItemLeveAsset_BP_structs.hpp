@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              SmallBackground_27_3CCB272A4D4400B45C0F33BEEFDA3DF9; // 0x0008(0x0030)(Edit, BlueprintVisible, SaveGame, HasGetValueTypeHash)
 };
-static_assert(alignof(FItemLeveAsset_BP) == 0x000008, "Wrong alignment on FItemLeveAsset_BP");
-static_assert(sizeof(FItemLeveAsset_BP) == 0x000038, "Wrong size on FItemLeveAsset_BP");
-static_assert(offsetof(FItemLeveAsset_BP, Level_30_73B7CE8F4D7D48618FC11C8BF380D439) == 0x000000, "Member 'FItemLeveAsset_BP::Level_30_73B7CE8F4D7D48618FC11C8BF380D439' has a wrong offset!");
-static_assert(offsetof(FItemLeveAsset_BP, SmallBackground_27_3CCB272A4D4400B45C0F33BEEFDA3DF9) == 0x000008, "Member 'FItemLeveAsset_BP::SmallBackground_27_3CCB272A4D4400B45C0F33BEEFDA3DF9' has a wrong offset!");
+DUMPER7_ASSERTS_FItemLeveAsset_BP;
 
 }
 

@@ -19,31 +19,31 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_ClanList.PyWidget_Clan_ClanList
-// 0x00E0 (0x06A0 - 0x05C0)
+// 0x00E0 (0x06A8 - 0x05C8)
 class UPyWidget_Clan_ClanList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSoftObjectPath>                ImgAdvertisement;                                  // 0x05C0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgNoFilter;                                       // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgFilter;                                         // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgBgMRC;                                          // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgBgClash;                                        // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgRegisteredMRC;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ImgRegisteredClash;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            StatusTextColorMRC;                                // 0x0600(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            StatusTextColorClash;                              // 0x0614(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorNormal;                       // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorMRC;                          // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LeagueRegionTextColorClash;                        // 0x0650(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             SignUpIcon;                                        // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SigningUpIconMRC;                                  // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SigningUpIconClash;                                // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SignedUpIconMRC;                                   // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SignedUpIconClash;                                 // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconRecruitment;                                   // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             IconRecommend;                                     // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSoftObjectPath>                ImgAdvertisement;                                  // 0x05C8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgNoFilter;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgFilter;                                         // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgMRC;                                          // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgBgClash;                                        // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgRegisteredMRC;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ImgRegisteredClash;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            StatusTextColorMRC;                                // 0x0608(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            StatusTextColorClash;                              // 0x061C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorNormal;                       // 0x0630(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorMRC;                          // 0x0644(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LeagueRegionTextColorClash;                        // 0x0658(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             SignUpIcon;                                        // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SigningUpIconMRC;                                  // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SigningUpIconClash;                                // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SignedUpIconMRC;                                   // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SignedUpIconClash;                                 // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconRecruitment;                                   // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             IconRecommend;                                     // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -56,34 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ClanList">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ClanList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ClanList")
 	}
 	static class UPyWidget_Clan_ClanList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ClanList>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ClanList) == 0x000008, "Wrong alignment on UPyWidget_Clan_ClanList");
-static_assert(sizeof(UPyWidget_Clan_ClanList) == 0x0006A0, "Wrong size on UPyWidget_Clan_ClanList");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgAdvertisement) == 0x0005C0, "Member 'UPyWidget_Clan_ClanList::ImgAdvertisement' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgNoFilter) == 0x0005D0, "Member 'UPyWidget_Clan_ClanList::ImgNoFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgFilter) == 0x0005D8, "Member 'UPyWidget_Clan_ClanList::ImgFilter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgBgMRC) == 0x0005E0, "Member 'UPyWidget_Clan_ClanList::ImgBgMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgBgClash) == 0x0005E8, "Member 'UPyWidget_Clan_ClanList::ImgBgClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgRegisteredMRC) == 0x0005F0, "Member 'UPyWidget_Clan_ClanList::ImgRegisteredMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, ImgRegisteredClash) == 0x0005F8, "Member 'UPyWidget_Clan_ClanList::ImgRegisteredClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, StatusTextColorMRC) == 0x000600, "Member 'UPyWidget_Clan_ClanList::StatusTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, StatusTextColorClash) == 0x000614, "Member 'UPyWidget_Clan_ClanList::StatusTextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, LeagueRegionTextColorNormal) == 0x000628, "Member 'UPyWidget_Clan_ClanList::LeagueRegionTextColorNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, LeagueRegionTextColorMRC) == 0x00063C, "Member 'UPyWidget_Clan_ClanList::LeagueRegionTextColorMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, LeagueRegionTextColorClash) == 0x000650, "Member 'UPyWidget_Clan_ClanList::LeagueRegionTextColorClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, SignUpIcon) == 0x000668, "Member 'UPyWidget_Clan_ClanList::SignUpIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, SigningUpIconMRC) == 0x000670, "Member 'UPyWidget_Clan_ClanList::SigningUpIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, SigningUpIconClash) == 0x000678, "Member 'UPyWidget_Clan_ClanList::SigningUpIconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, SignedUpIconMRC) == 0x000680, "Member 'UPyWidget_Clan_ClanList::SignedUpIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, SignedUpIconClash) == 0x000688, "Member 'UPyWidget_Clan_ClanList::SignedUpIconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, IconRecruitment) == 0x000690, "Member 'UPyWidget_Clan_ClanList::IconRecruitment' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Clan_ClanList, IconRecommend) == 0x000698, "Member 'UPyWidget_Clan_ClanList::IconRecommend' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ClanList;
 
 }
 

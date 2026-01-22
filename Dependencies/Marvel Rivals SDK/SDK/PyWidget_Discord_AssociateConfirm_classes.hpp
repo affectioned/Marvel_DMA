@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Discord_AssociateConfirm.PyWidget_Discord_AssociateConfirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Discord_AssociateConfirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Discord_AssociateConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_Discord_AssociateConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Discord_AssociateConfirm")
 	}
 	static class UPyWidget_Discord_AssociateConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Discord_AssociateConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_Discord_AssociateConfirm) == 0x000008, "Wrong alignment on UPyWidget_Discord_AssociateConfirm");
-static_assert(sizeof(UPyWidget_Discord_AssociateConfirm) == 0x0005C0, "Wrong size on UPyWidget_Discord_AssociateConfirm");
+DUMPER7_ASSERTS_UPyWidget_Discord_AssociateConfirm;
 
 }
 

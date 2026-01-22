@@ -23,9 +23,7 @@ struct PyUIHeroFunctionLibrary_OnShowCharacterBG final
 public:
 	class UObject*                                WCO;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIHeroFunctionLibrary_OnShowCharacterBG) == 0x000008, "Wrong alignment on PyUIHeroFunctionLibrary_OnShowCharacterBG");
-static_assert(sizeof(PyUIHeroFunctionLibrary_OnShowCharacterBG) == 0x000008, "Wrong size on PyUIHeroFunctionLibrary_OnShowCharacterBG");
-static_assert(offsetof(PyUIHeroFunctionLibrary_OnShowCharacterBG, WCO) == 0x000000, "Member 'PyUIHeroFunctionLibrary_OnShowCharacterBG::WCO' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIHeroFunctionLibrary_OnShowCharacterBG;
 
 // PythonFunction PyUIHeroFunctionLibrary.PyUIHeroFunctionLibrary.GetHeroSprite
 // 0x0040 (0x0040 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIHeroFunctionLibrary_GetHeroSprite) == 0x000008, "Wrong alignment on PyUIHeroFunctionLibrary_GetHeroSprite");
-static_assert(sizeof(PyUIHeroFunctionLibrary_GetHeroSprite) == 0x000040, "Wrong size on PyUIHeroFunctionLibrary_GetHeroSprite");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetHeroSprite, HeroIdentifier) == 0x000000, "Member 'PyUIHeroFunctionLibrary_GetHeroSprite::HeroIdentifier' has a wrong offset!");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetHeroSprite, ReturnValue) == 0x000010, "Member 'PyUIHeroFunctionLibrary_GetHeroSprite::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIHeroFunctionLibrary_GetHeroSprite;
 
 // PythonFunction PyUIHeroFunctionLibrary.PyUIHeroFunctionLibrary.GetHeroIcon
 // 0x0040 (0x0040 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIHeroFunctionLibrary_GetHeroIcon) == 0x000008, "Wrong alignment on PyUIHeroFunctionLibrary_GetHeroIcon");
-static_assert(sizeof(PyUIHeroFunctionLibrary_GetHeroIcon) == 0x000040, "Wrong size on PyUIHeroFunctionLibrary_GetHeroIcon");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetHeroIcon, HeroIdentifier) == 0x000000, "Member 'PyUIHeroFunctionLibrary_GetHeroIcon::HeroIdentifier' has a wrong offset!");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetHeroIcon, ReturnValue) == 0x000010, "Member 'PyUIHeroFunctionLibrary_GetHeroIcon::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIHeroFunctionLibrary_GetHeroIcon;
 
 // PythonFunction PyUIHeroFunctionLibrary.PyUIHeroFunctionLibrary.GetShowActorClass
 // 0x0040 (0x0040 - 0x0000)
@@ -64,10 +56,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIHeroFunctionLibrary_GetShowActorClass) == 0x000008, "Wrong alignment on PyUIHeroFunctionLibrary_GetShowActorClass");
-static_assert(sizeof(PyUIHeroFunctionLibrary_GetShowActorClass) == 0x000040, "Wrong size on PyUIHeroFunctionLibrary_GetShowActorClass");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetShowActorClass, HeroIdentifier) == 0x000000, "Member 'PyUIHeroFunctionLibrary_GetShowActorClass::HeroIdentifier' has a wrong offset!");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetShowActorClass, ReturnValue) == 0x000010, "Member 'PyUIHeroFunctionLibrary_GetShowActorClass::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIHeroFunctionLibrary_GetShowActorClass;
 
 // PythonFunction PyUIHeroFunctionLibrary.PyUIHeroFunctionLibrary.GetSkinInfo
 // 0x0028 (0x0028 - 0x0000)
@@ -78,10 +67,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyUIHeroFunctionLibrary_GetSkinInfo) == 0x000008, "Wrong alignment on PyUIHeroFunctionLibrary_GetSkinInfo");
-static_assert(sizeof(PyUIHeroFunctionLibrary_GetSkinInfo) == 0x000028, "Wrong size on PyUIHeroFunctionLibrary_GetSkinInfo");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetSkinInfo, HeroIdentifier) == 0x000000, "Member 'PyUIHeroFunctionLibrary_GetSkinInfo::HeroIdentifier' has a wrong offset!");
-static_assert(offsetof(PyUIHeroFunctionLibrary_GetSkinInfo, ReturnValue) == 0x000010, "Member 'PyUIHeroFunctionLibrary_GetSkinInfo::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIHeroFunctionLibrary_GetSkinInfo;
 
 }
 

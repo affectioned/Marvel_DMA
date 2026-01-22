@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.OnInitialized
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.OnInitialized
 // (BlueprintCosmetic, Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UPyWidget_AudioDebugPanel::OnInitialized()
+void UPyAudioDebugPanel_TriggerDisplay::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "OnInitialized");
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "OnInitialized");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -36,76 +36,19 @@ void UPyWidget_AudioDebugPanel::OnInitialized()
 }
 
 
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.MarvelDestruct
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_AudioDebugPanel::MarvelDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "MarvelDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.UpdateSpatialVolumeText
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_AudioDebugPanel::UpdateSpatialVolumeText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "UpdateSpatialVolumeText");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.UpdateDebugInfoText
-// (Native, Public, BlueprintCallable)
-
-void UPyWidget_AudioDebugPanel::UpdateDebugInfoText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "UpdateDebugInfoText");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.GetSoloedString
-// (Native, Public, HasOutParams, BlueprintCallable)
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_AudioEnabled
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FString UPyWidget_AudioDebugPanel::GetSoloedString()
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_AudioEnabled()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "GetSoloedString");
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_AudioEnabled");
 
-	Params::PyWidget_AudioDebugPanel_GetSoloedString Parms{};
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_AudioEnabled Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -118,19 +61,199 @@ class FString UPyWidget_AudioDebugPanel::GetSoloedString()
 }
 
 
-// PythonFunction PyWidget_AudioDebugPanel.PyWidget_AudioDebugPanel.GetStateString
-// (Native, Public, HasOutParams, BlueprintCallable)
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Reverb
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FString UPyWidget_AudioDebugPanel::GetStateString()
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_Reverb()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyWidget_AudioDebugPanel", "GetStateString");
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_Reverb");
 
-	Params::PyWidget_AudioDebugPanel_GetStateString Parms{};
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_Reverb Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_ThreatValue
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_ThreatValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_ThreatValue");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_ThreatValue Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Doppler
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_Doppler()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_Doppler");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_Doppler Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Midi
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_Midi()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_Midi");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_Midi Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Spatial
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_Spatial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_Spatial");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_Spatial Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetText_Reflect
+// (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UPyAudioDebugPanel_TriggerDisplay::GetText_Reflect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetText_Reflect");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetText_Reflect Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.OnAudioTypeEnabledChanged
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// int32                                   EnableMask                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyAudioDebugPanel_TriggerDisplay::OnAudioTypeEnabledChanged(int32 EnableMask)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "OnAudioTypeEnabledChanged");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_OnAudioTypeEnabledChanged Parms{};
+
+	Parms.EnableMask = EnableMask;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyWidget_AudioDebugPanel.PyAudioDebugPanel_TriggerDisplay.GetTextOfType
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// EMarvelAudioType                        AudioType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    Prefix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString UPyAudioDebugPanel_TriggerDisplay::GetTextOfType(EMarvelAudioType AudioType, const class FString& Prefix)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyAudioDebugPanel_TriggerDisplay", "GetTextOfType");
+
+	Params::PyAudioDebugPanel_TriggerDisplay_GetTextOfType Parms{};
+
+	Parms.AudioType = AudioType;
+	Parms.Prefix = std::move(Prefix);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

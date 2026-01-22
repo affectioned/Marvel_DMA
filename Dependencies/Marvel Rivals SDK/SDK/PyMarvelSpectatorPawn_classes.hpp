@@ -35,16 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelSpectatorPawn">();
+		STATIC_CLASS_IMPL("PyMarvelSpectatorPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelSpectatorPawn")
 	}
 	static class APyMarvelSpectatorPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelSpectatorPawn>();
 	}
 };
-static_assert(alignof(APyMarvelSpectatorPawn) == 0x000010, "Wrong alignment on APyMarvelSpectatorPawn");
-static_assert(sizeof(APyMarvelSpectatorPawn) == 0x000AB0, "Wrong size on APyMarvelSpectatorPawn");
-static_assert(offsetof(APyMarvelSpectatorPawn, AkEvent_ResetFreeModeRoll) == 0x000AA0, "Member 'APyMarvelSpectatorPawn::AkEvent_ResetFreeModeRoll' has a wrong offset!");
+DUMPER7_ASSERTS_APyMarvelSpectatorPawn;
 
 }
 

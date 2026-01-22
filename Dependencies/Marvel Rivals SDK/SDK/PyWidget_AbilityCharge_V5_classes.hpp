@@ -20,16 +20,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AbilityCharge_V5.PyWidget_AbilityChargeSingle_v5
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_AbilityChargeSingle_v5 : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidgetAnimation*                       Anim_FullGlow;                                     // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_UseSkill;                                     // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Charge;                                       // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Percent;                                      // 0x05D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpdateInterval;                                    // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidgetAnimation*                       Anim_FullGlow;                                     // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_UseSkill;                                     // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Charge;                                       // 0x05D8(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Percent;                                      // 0x05E0(0x0008)(BlueprintVisible, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpdateInterval;                                    // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -48,30 +48,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityChargeSingle_v5">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityChargeSingle_v5")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityChargeSingle_v5")
 	}
 	static class UPyWidget_AbilityChargeSingle_v5* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityChargeSingle_v5>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityChargeSingle_v5) == 0x000008, "Wrong alignment on UPyWidget_AbilityChargeSingle_v5");
-static_assert(sizeof(UPyWidget_AbilityChargeSingle_v5) == 0x0005E8, "Wrong size on UPyWidget_AbilityChargeSingle_v5");
-static_assert(offsetof(UPyWidget_AbilityChargeSingle_v5, Anim_FullGlow) == 0x0005C0, "Member 'UPyWidget_AbilityChargeSingle_v5::Anim_FullGlow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityChargeSingle_v5, Anim_UseSkill) == 0x0005C8, "Member 'UPyWidget_AbilityChargeSingle_v5::Anim_UseSkill' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityChargeSingle_v5, Anim_Charge) == 0x0005D0, "Member 'UPyWidget_AbilityChargeSingle_v5::Anim_Charge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityChargeSingle_v5, Anim_Percent) == 0x0005D8, "Member 'UPyWidget_AbilityChargeSingle_v5::Anim_Percent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityChargeSingle_v5, UpdateInterval) == 0x0005E0, "Member 'UPyWidget_AbilityChargeSingle_v5::UpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityChargeSingle_v5;
 
 // PythonClass PyWidget_AbilityCharge_V5.PyWidget_CommonChargeSingle_V5
-// 0x0020 (0x0608 - 0x05E8)
+// 0x0020 (0x0610 - 0x05F0)
 class UPyWidget_CommonChargeSingle_V5 : public UPyWidget_AbilityChargeSingle_v5
 {
 public:
-	class UImage*                                 Img_Bg;                                            // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Frame;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Charge;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Glow_Vx;                                       // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Bg;                                            // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Frame;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Charge;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Glow_Vx;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetStyle(const struct FWidgetStyle_AbilityCharge& Style);
@@ -79,32 +77,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonChargeSingle_V5">();
+		STATIC_CLASS_IMPL("PyWidget_CommonChargeSingle_V5")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonChargeSingle_V5")
 	}
 	static class UPyWidget_CommonChargeSingle_V5* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonChargeSingle_V5>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonChargeSingle_V5) == 0x000008, "Wrong alignment on UPyWidget_CommonChargeSingle_V5");
-static_assert(sizeof(UPyWidget_CommonChargeSingle_V5) == 0x000608, "Wrong size on UPyWidget_CommonChargeSingle_V5");
-static_assert(offsetof(UPyWidget_CommonChargeSingle_V5, Img_Bg) == 0x0005E8, "Member 'UPyWidget_CommonChargeSingle_V5::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonChargeSingle_V5, Img_Frame) == 0x0005F0, "Member 'UPyWidget_CommonChargeSingle_V5::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonChargeSingle_V5, Img_Charge) == 0x0005F8, "Member 'UPyWidget_CommonChargeSingle_V5::Img_Charge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonChargeSingle_V5, Img_Glow_Vx) == 0x000600, "Member 'UPyWidget_CommonChargeSingle_V5::Img_Glow_Vx' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonChargeSingle_V5;
 
 // PythonClass PyWidget_AbilityCharge_V5.PyWidget_AbilityCharge_V5
-// 0x0138 (0x06A0 - 0x0568)
+// 0x0138 (0x06A8 - 0x0570)
 class UPyWidget_AbilityCharge_V5 : public UWidget_AbilityEnergy_Charge
 {
 public:
-	TSubclassOf<class UUserWidget>                SegmentClass;                                      // 0x0568(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FWidgetStyle_AbilityCharge             DefaultStyle;                                      // 0x0570(0x0110)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	float                                         FadeInInterval;                                    // 0x0680(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SegmentMax;                                        // 0x0684(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SegmentCur;                                        // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Percent;                                           // 0x068C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 InCurrentValue)> OnCurSegmentChanged;                        // 0x0690(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                SegmentClass;                                      // 0x0570(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FWidgetStyle_AbilityCharge             DefaultStyle;                                      // 0x0578(0x0110)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         FadeInInterval;                                    // 0x0688(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SegmentMax;                                        // 0x068C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SegmentCur;                                        // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Percent;                                           // 0x0694(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 InCurrentValue)> OnCurSegmentChanged;                        // 0x0698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -126,22 +123,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AbilityCharge_V5">();
+		STATIC_CLASS_IMPL("PyWidget_AbilityCharge_V5")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AbilityCharge_V5")
 	}
 	static class UPyWidget_AbilityCharge_V5* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AbilityCharge_V5>();
 	}
 };
-static_assert(alignof(UPyWidget_AbilityCharge_V5) == 0x000008, "Wrong alignment on UPyWidget_AbilityCharge_V5");
-static_assert(sizeof(UPyWidget_AbilityCharge_V5) == 0x0006A0, "Wrong size on UPyWidget_AbilityCharge_V5");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, SegmentClass) == 0x000568, "Member 'UPyWidget_AbilityCharge_V5::SegmentClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, DefaultStyle) == 0x000570, "Member 'UPyWidget_AbilityCharge_V5::DefaultStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, FadeInInterval) == 0x000680, "Member 'UPyWidget_AbilityCharge_V5::FadeInInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, SegmentMax) == 0x000684, "Member 'UPyWidget_AbilityCharge_V5::SegmentMax' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, SegmentCur) == 0x000688, "Member 'UPyWidget_AbilityCharge_V5::SegmentCur' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, Percent) == 0x00068C, "Member 'UPyWidget_AbilityCharge_V5::Percent' has a wrong offset!");
-static_assert(offsetof(UPyWidget_AbilityCharge_V5, OnCurSegmentChanged) == 0x000690, "Member 'UPyWidget_AbilityCharge_V5::OnCurSegmentChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_AbilityCharge_V5;
 
 }
 

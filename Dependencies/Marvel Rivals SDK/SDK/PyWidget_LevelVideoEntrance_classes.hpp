@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_LevelVideoEntrance.PyWidget_LevelVideoEntrance
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_LevelVideoEntrance final : public UPyWidget_ModuleMainPanel
 {
 public:
-	float                                         VideoPlayGuaranteedTime;                           // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          EntranceAudioAsset;                                // 0x0600(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VideoPlayGuaranteedTime;                           // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          EntranceAudioAsset;                                // 0x0608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -37,17 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LevelVideoEntrance">();
+		STATIC_CLASS_IMPL("PyWidget_LevelVideoEntrance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LevelVideoEntrance")
 	}
 	static class UPyWidget_LevelVideoEntrance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LevelVideoEntrance>();
 	}
 };
-static_assert(alignof(UPyWidget_LevelVideoEntrance) == 0x000008, "Wrong alignment on UPyWidget_LevelVideoEntrance");
-static_assert(sizeof(UPyWidget_LevelVideoEntrance) == 0x000608, "Wrong size on UPyWidget_LevelVideoEntrance");
-static_assert(offsetof(UPyWidget_LevelVideoEntrance, VideoPlayGuaranteedTime) == 0x0005F8, "Member 'UPyWidget_LevelVideoEntrance::VideoPlayGuaranteedTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LevelVideoEntrance, EntranceAudioAsset) == 0x000600, "Member 'UPyWidget_LevelVideoEntrance::EntranceAudioAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LevelVideoEntrance;
 
 }
 

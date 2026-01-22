@@ -21,9 +21,7 @@ struct PyAbility_HulkSculpt_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_HulkSculpt_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_HulkSculpt_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_HulkSculpt_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_HulkSculpt_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_HulkSculpt_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_HulkSculpt_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_HulkSculpt_K2_OnEndAbility;
 
 // PythonFunction PyAbility_HulkSculpt.PyAbility_HulkSculpt.OnSculptChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_HulkSculpt_OnSculptChanged final
 public:
 	int32                                         InSculptID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_HulkSculpt_OnSculptChanged) == 0x000004, "Wrong alignment on PyAbility_HulkSculpt_OnSculptChanged");
-static_assert(sizeof(PyAbility_HulkSculpt_OnSculptChanged) == 0x000004, "Wrong size on PyAbility_HulkSculpt_OnSculptChanged");
-static_assert(offsetof(PyAbility_HulkSculpt_OnSculptChanged, InSculptID) == 0x000000, "Member 'PyAbility_HulkSculpt_OnSculptChanged::InSculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_HulkSculpt_OnSculptChanged;
 
 // PythonFunction PyAbility_HulkSculpt.PyAbility_HulkSculpt.OnLevelForceKill
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_HulkSculpt_OnLevelForceKill final
 public:
 	class AActor*                                 kill_target;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_HulkSculpt_OnLevelForceKill) == 0x000008, "Wrong alignment on PyAbility_HulkSculpt_OnLevelForceKill");
-static_assert(sizeof(PyAbility_HulkSculpt_OnLevelForceKill) == 0x000008, "Wrong size on PyAbility_HulkSculpt_OnLevelForceKill");
-static_assert(offsetof(PyAbility_HulkSculpt_OnLevelForceKill, kill_target) == 0x000000, "Member 'PyAbility_HulkSculpt_OnLevelForceKill::kill_target' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_HulkSculpt_OnLevelForceKill;
 
 }
 

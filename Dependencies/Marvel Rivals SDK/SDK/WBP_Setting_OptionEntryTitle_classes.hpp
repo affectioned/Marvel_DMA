@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_OptionEntryTitle.WBP_Setting_OptionEntryTitle_C
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UWBP_Setting_OptionEntryTitle_C final : public UPyWidget_SettingOptionEntryTitle
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_OptionEntryTitle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_OptionEntryTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_OptionEntryTitle_C")
 	}
 	static class UWBP_Setting_OptionEntryTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_OptionEntryTitle_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_OptionEntryTitle_C) == 0x000008, "Wrong alignment on UWBP_Setting_OptionEntryTitle_C");
-static_assert(sizeof(UWBP_Setting_OptionEntryTitle_C) == 0x000600, "Wrong size on UWBP_Setting_OptionEntryTitle_C");
+DUMPER7_ASSERTS_UWBP_Setting_OptionEntryTitle_C;
 
 }
 

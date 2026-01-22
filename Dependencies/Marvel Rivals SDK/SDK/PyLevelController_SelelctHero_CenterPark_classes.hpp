@@ -31,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero_CenterPark">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero_CenterPark")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero_CenterPark")
 	}
 	static class APyLevelController_SelectHero_CenterPark* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelectHero_CenterPark>();
 	}
 };
-static_assert(alignof(APyLevelController_SelectHero_CenterPark) == 0x000010, "Wrong alignment on APyLevelController_SelectHero_CenterPark");
-static_assert(sizeof(APyLevelController_SelectHero_CenterPark) == 0x000820, "Wrong size on APyLevelController_SelectHero_CenterPark");
-static_assert(offsetof(APyLevelController_SelectHero_CenterPark, BlendCamera) == 0x000810, "Member 'APyLevelController_SelectHero_CenterPark::BlendCamera' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_CenterPark, BlendTime) == 0x000818, "Member 'APyLevelController_SelectHero_CenterPark::BlendTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero_CenterPark;
 
 }
 

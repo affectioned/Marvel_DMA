@@ -32,22 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Training_TerminalIndicator_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Training_TerminalIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Training_TerminalIndicator_C")
 	}
 	static class UWBP_Training_TerminalIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Training_TerminalIndicator_C>();
 	}
 };
-static_assert(alignof(UWBP_Training_TerminalIndicator_C) == 0x000010, "Wrong alignment on UWBP_Training_TerminalIndicator_C");
-static_assert(sizeof(UWBP_Training_TerminalIndicator_C) == 0x0008B0, "Wrong size on UWBP_Training_TerminalIndicator_C");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Img_Icon_Activate_Add) == 0x000878, "Member 'UWBP_Training_TerminalIndicator_C::Img_Icon_Activate_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Img_Icon_Activate_Bg) == 0x000880, "Member 'UWBP_Training_TerminalIndicator_C::Img_Icon_Activate_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Img_Icon_Normal_Add) == 0x000888, "Member 'UWBP_Training_TerminalIndicator_C::Img_Icon_Normal_Add' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Img_Icon_Normal_Bg) == 0x000890, "Member 'UWBP_Training_TerminalIndicator_C::Img_Icon_Normal_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Overlay_Icon_Activate) == 0x000898, "Member 'UWBP_Training_TerminalIndicator_C::Overlay_Icon_Activate' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Overlay_Icon_Normal) == 0x0008A0, "Member 'UWBP_Training_TerminalIndicator_C::Overlay_Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_Training_TerminalIndicator_C, Text_TerminalName) == 0x0008A8, "Member 'UWBP_Training_TerminalIndicator_C::Text_TerminalName' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Training_TerminalIndicator_C;
 
 }
 

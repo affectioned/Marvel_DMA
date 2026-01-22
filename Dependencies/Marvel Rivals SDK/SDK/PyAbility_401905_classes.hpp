@@ -29,24 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_401905">();
+		STATIC_CLASS_IMPL("PyConfig_401905")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_401905")
 	}
 	static class UPyConfig_401905* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_401905>();
 	}
 };
-static_assert(alignof(UPyConfig_401905) == 0x000008, "Wrong alignment on UPyConfig_401905");
-static_assert(sizeof(UPyConfig_401905) == 0x0000B0, "Wrong size on UPyConfig_401905");
-static_assert(offsetof(UPyConfig_401905, bDebugMode) == 0x000098, "Member 'UPyConfig_401905::bDebugMode' has a wrong offset!");
-static_assert(offsetof(UPyConfig_401905, DebugCardData) == 0x0000A0, "Member 'UPyConfig_401905::DebugCardData' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_401905;
 
 // PythonClass PyAbility_401905.PyAbility_401905
-// 0x0010 (0x2A08 - 0x29F8)
+// 0x0010 (0x2A58 - 0x2A48)
 class UPyAbility_401905 : public UAbility_108
 {
 public:
-	TMulticastInlineDelegate<void(bool buff, bool debuff)> OnApplyBuff;                              // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool buff, bool debuff)> OnApplyBuff;                              // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -59,26 +60,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_401905">();
+		STATIC_CLASS_IMPL("PyAbility_401905")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_401905")
 	}
 	static class UPyAbility_401905* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_401905>();
 	}
 };
-static_assert(alignof(UPyAbility_401905) == 0x000008, "Wrong alignment on UPyAbility_401905");
-static_assert(sizeof(UPyAbility_401905) == 0x002A08, "Wrong size on UPyAbility_401905");
-static_assert(offsetof(UPyAbility_401905, OnApplyBuff) == 0x0029F8, "Member 'UPyAbility_401905::OnApplyBuff' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_401905;
 
 // PythonClass PyAbility_401905.PyCue_Ability_401905
-// 0x00B0 (0x1260 - 0x11B0)
+// 0x00B0 (0x1270 - 0x11C0)
 class APyCue_Ability_401905 final : public AMarvelCueNotify_Ability
 {
 public:
-	int32                                         AbilityID;                                         // 0x11B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B4[0x4];                                     // 0x11B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EBattleChessBuffEffectType, class UNiagaraSystem*> CardBuffFX;                              // 0x11B8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<EBattleChessBuffEffectType, class UNiagaraSystem*> CardDebuffFX;                            // 0x1208(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         AbilityID;                                         // 0x11C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C4[0x4];                                     // 0x11C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EBattleChessBuffEffectType, class UNiagaraSystem*> CardBuffFX;                              // 0x11C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<EBattleChessBuffEffectType, class UNiagaraSystem*> CardDebuffFX;                            // 0x1218(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -89,18 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_401905">();
+		STATIC_CLASS_IMPL("PyCue_Ability_401905")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_401905")
 	}
 	static class APyCue_Ability_401905* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_401905>();
 	}
 };
-static_assert(alignof(APyCue_Ability_401905) == 0x000010, "Wrong alignment on APyCue_Ability_401905");
-static_assert(sizeof(APyCue_Ability_401905) == 0x001260, "Wrong size on APyCue_Ability_401905");
-static_assert(offsetof(APyCue_Ability_401905, AbilityID) == 0x0011B0, "Member 'APyCue_Ability_401905::AbilityID' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_401905, CardBuffFX) == 0x0011B8, "Member 'APyCue_Ability_401905::CardBuffFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_401905, CardDebuffFX) == 0x001208, "Member 'APyCue_Ability_401905::CardDebuffFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_401905;
 
 }
 

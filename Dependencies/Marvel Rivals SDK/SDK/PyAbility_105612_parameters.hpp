@@ -21,9 +21,7 @@ struct PyAbility_105612_GetTimelineIndexToPlay final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105612_GetTimelineIndexToPlay) == 0x000004, "Wrong alignment on PyAbility_105612_GetTimelineIndexToPlay");
-static_assert(sizeof(PyAbility_105612_GetTimelineIndexToPlay) == 0x000004, "Wrong size on PyAbility_105612_GetTimelineIndexToPlay");
-static_assert(offsetof(PyAbility_105612_GetTimelineIndexToPlay, ReturnValue) == 0x000000, "Member 'PyAbility_105612_GetTimelineIndexToPlay::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105612_GetTimelineIndexToPlay;
 
 // PythonFunction PyAbility_105612.PyAbility_105612.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_105612_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105612_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_105612_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_105612_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_105612_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_105612_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_105612_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105612_K2_OnEndAbility;
 
 // PythonFunction PyAbility_105612.PyAbility_105612.GetCustomHitCS
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyAbility_105612_GetCustomHitCS final
 public:
 	TSubclassOf<class ULegacyCameraShake>         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_105612_GetCustomHitCS) == 0x000008, "Wrong alignment on PyAbility_105612_GetCustomHitCS");
-static_assert(sizeof(PyAbility_105612_GetCustomHitCS) == 0x000008, "Wrong size on PyAbility_105612_GetCustomHitCS");
-static_assert(offsetof(PyAbility_105612_GetCustomHitCS, ReturnValue) == 0x000000, "Member 'PyAbility_105612_GetCustomHitCS::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_105612_GetCustomHitCS;
 
 }
 

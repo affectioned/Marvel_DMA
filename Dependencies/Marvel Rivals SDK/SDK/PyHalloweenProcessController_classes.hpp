@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyLevelProcessController_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "MovieScene_structs.hpp"
+#include "PyLevelProcessController_classes.hpp"
 
 
 namespace SDK
@@ -61,37 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenProcessController">();
+		STATIC_CLASS_IMPL("PyHalloweenProcessController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenProcessController")
 	}
 	static class APyHalloweenProcessController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenProcessController>();
 	}
 };
-static_assert(alignof(APyHalloweenProcessController) == 0x000010, "Wrong alignment on APyHalloweenProcessController");
-static_assert(sizeof(APyHalloweenProcessController) == 0x000920, "Wrong size on APyHalloweenProcessController");
-static_assert(offsetof(APyHalloweenProcessController, LevelDataTableList) == 0x000760, "Member 'APyHalloweenProcessController::LevelDataTableList' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlayerNumbers) == 0x000770, "Member 'APyHalloweenProcessController::PlayerNumbers' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, BossIntroLS) == 0x000778, "Member 'APyHalloweenProcessController::BossIntroLS' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, InTag) == 0x0007C8, "Member 'APyHalloweenProcessController::InTag' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, InTagContainer) == 0x0007D8, "Member 'APyHalloweenProcessController::InTagContainer' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, LS_Mpc) == 0x000840, "Member 'APyHalloweenProcessController::LS_Mpc' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, LS_Kongsu) == 0x000848, "Member 'APyHalloweenProcessController::LS_Kongsu' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaytoParams) == 0x000850, "Member 'APyHalloweenProcessController::PlaytoParams' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaytoParams_0) == 0x000851, "Member 'APyHalloweenProcessController::PlaytoParams_0' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaytoParams_1) == 0x000852, "Member 'APyHalloweenProcessController::PlaytoParams_1' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaybackParams) == 0x000858, "Member 'APyHalloweenProcessController::PlaybackParams' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaybackParams_0) == 0x000880, "Member 'APyHalloweenProcessController::PlaybackParams_0' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, PlaybackParams_1) == 0x0008A8, "Member 'APyHalloweenProcessController::PlaybackParams_1' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, UsedBuffID) == 0x0008D0, "Member 'APyHalloweenProcessController::UsedBuffID' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, BuffItem) == 0x0008E0, "Member 'APyHalloweenProcessController::BuffItem' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, KongsuArea) == 0x0008E8, "Member 'APyHalloweenProcessController::KongsuArea' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, KongsuPoint) == 0x0008F0, "Member 'APyHalloweenProcessController::KongsuPoint' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, WaveTable) == 0x0008F8, "Member 'APyHalloweenProcessController::WaveTable' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, TextConfig) == 0x000900, "Member 'APyHalloweenProcessController::TextConfig' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, OutsideCheckWaveAreaNames) == 0x000908, "Member 'APyHalloweenProcessController::OutsideCheckWaveAreaNames' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, OutsideCheckInterval) == 0x000918, "Member 'APyHalloweenProcessController::OutsideCheckInterval' has a wrong offset!");
-static_assert(offsetof(APyHalloweenProcessController, TeleportDelayTime) == 0x00091C, "Member 'APyHalloweenProcessController::TeleportDelayTime' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenProcessController;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Summoned_10218101_BP.Summoned_10218101_BP_C
-// 0x0000 (0x0EE0 - 0x0EE0)
+// 0x0000 (0x0F00 - 0x0F00)
 class ASummoned_10218101_BP_C final : public ASummoned_102181
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Summoned_10218101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Summoned_10218101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Summoned_10218101_BP_C")
 	}
 	static class ASummoned_10218101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASummoned_10218101_BP_C>();
 	}
 };
-static_assert(alignof(ASummoned_10218101_BP_C) == 0x000010, "Wrong alignment on ASummoned_10218101_BP_C");
-static_assert(sizeof(ASummoned_10218101_BP_C) == 0x000EE0, "Wrong size on ASummoned_10218101_BP_C");
+DUMPER7_ASSERTS_ASummoned_10218101_BP_C;
 
 }
 

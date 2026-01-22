@@ -36,8 +36,7 @@ enum class EMassRepresentationType : uint8
 struct FMassStaticRepresentationTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassStaticRepresentationTag) == 0x000001, "Wrong alignment on FMassStaticRepresentationTag");
-static_assert(sizeof(FMassStaticRepresentationTag) == 0x000001, "Wrong size on FMassStaticRepresentationTag");
+DUMPER7_ASSERTS_FMassStaticRepresentationTag;
 
 // ScriptStruct MassRepresentation.MassRepresentationLODFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -46,8 +45,7 @@ struct alignas(0x04) FMassRepresentationLODFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassRepresentationLODFragment) == 0x000004, "Wrong alignment on FMassRepresentationLODFragment");
-static_assert(sizeof(FMassRepresentationLODFragment) == 0x000008, "Wrong size on FMassRepresentationLODFragment");
+DUMPER7_ASSERTS_FMassRepresentationLODFragment;
 
 // ScriptStruct MassRepresentation.MassRepresentationFragment
 // 0x0090 (0x0090 - 0x0000)
@@ -56,8 +54,7 @@ struct alignas(0x10) FMassRepresentationFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x90];                                       // 0x0000(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassRepresentationFragment) == 0x000010, "Wrong alignment on FMassRepresentationFragment");
-static_assert(sizeof(FMassRepresentationFragment) == 0x000090, "Wrong size on FMassRepresentationFragment");
+DUMPER7_ASSERTS_FMassRepresentationFragment;
 
 // ScriptStruct MassRepresentation.MassRepresentationSubsystemSharedFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -66,9 +63,7 @@ struct FMassRepresentationSubsystemSharedFragment final : public FMassSharedFrag
 public:
 	class UMassRepresentationSubsystem*           RepresentationSubsystem;                           // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassRepresentationSubsystemSharedFragment) == 0x000008, "Wrong alignment on FMassRepresentationSubsystemSharedFragment");
-static_assert(sizeof(FMassRepresentationSubsystemSharedFragment) == 0x000008, "Wrong size on FMassRepresentationSubsystemSharedFragment");
-static_assert(offsetof(FMassRepresentationSubsystemSharedFragment, RepresentationSubsystem) == 0x000000, "Member 'FMassRepresentationSubsystemSharedFragment::RepresentationSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_FMassRepresentationSubsystemSharedFragment;
 
 // ScriptStruct MassRepresentation.MassRepresentationParameters
 // 0x0030 (0x0030 - 0x0000)
@@ -87,17 +82,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMassRepresentationActorManagement*     CachedRepresentationActorManagement;               // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassRepresentationParameters) == 0x000008, "Wrong alignment on FMassRepresentationParameters");
-static_assert(sizeof(FMassRepresentationParameters) == 0x000030, "Wrong size on FMassRepresentationParameters");
-static_assert(offsetof(FMassRepresentationParameters, RepresentationActorManagementClass) == 0x000000, "Member 'FMassRepresentationParameters::RepresentationActorManagementClass' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, LODRepresentation) == 0x000008, "Member 'FMassRepresentationParameters::LODRepresentation' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, bKeepLowResActors) == 0x00000C, "Member 'FMassRepresentationParameters::bKeepLowResActors' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, bKeepActorExtraFrame) == 0x00000D, "Member 'FMassRepresentationParameters::bKeepActorExtraFrame' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, bSpreadFirstVisualizationUpdate) == 0x00000E, "Member 'FMassRepresentationParameters::bSpreadFirstVisualizationUpdate' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, WorldPartitionGridNameContainingCollision) == 0x000010, "Member 'FMassRepresentationParameters::WorldPartitionGridNameContainingCollision' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, NotVisibleUpdateRate) == 0x00001C, "Member 'FMassRepresentationParameters::NotVisibleUpdateRate' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, CachedDefaultRepresentationType) == 0x000020, "Member 'FMassRepresentationParameters::CachedDefaultRepresentationType' has a wrong offset!");
-static_assert(offsetof(FMassRepresentationParameters, CachedRepresentationActorManagement) == 0x000028, "Member 'FMassRepresentationParameters::CachedRepresentationActorManagement' has a wrong offset!");
+DUMPER7_ASSERTS_FMassRepresentationParameters;
 
 // ScriptStruct MassRepresentation.MassVisualizationLODParameters
 // 0x0048 (0x0048 - 0x0000)
@@ -113,15 +98,7 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UScriptStruct*                          FilterTag;                                         // 0x0040(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassVisualizationLODParameters) == 0x000008, "Wrong alignment on FMassVisualizationLODParameters");
-static_assert(sizeof(FMassVisualizationLODParameters) == 0x000048, "Wrong size on FMassVisualizationLODParameters");
-static_assert(offsetof(FMassVisualizationLODParameters, BaseLODDistance) == 0x000000, "Member 'FMassVisualizationLODParameters::BaseLODDistance' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, VisibleLODDistance) == 0x000010, "Member 'FMassVisualizationLODParameters::VisibleLODDistance' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, BufferHysteresisOnDistancePercentage) == 0x000020, "Member 'FMassVisualizationLODParameters::BufferHysteresisOnDistancePercentage' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, LODMaxCount) == 0x000024, "Member 'FMassVisualizationLODParameters::LODMaxCount' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, DistanceToFrustum) == 0x000034, "Member 'FMassVisualizationLODParameters::DistanceToFrustum' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, DistanceToFrustumHysteresis) == 0x000038, "Member 'FMassVisualizationLODParameters::DistanceToFrustumHysteresis' has a wrong offset!");
-static_assert(offsetof(FMassVisualizationLODParameters, FilterTag) == 0x000040, "Member 'FMassVisualizationLODParameters::FilterTag' has a wrong offset!");
+DUMPER7_ASSERTS_FMassVisualizationLODParameters;
 
 // ScriptStruct MassRepresentation.MassVisualizationLODSharedFragment
 // 0x2020 (0x2020 - 0x0000)
@@ -131,9 +108,7 @@ public:
 	uint8                                         Pad_0[0x2018];                                     // 0x0000(0x2018)(Fixing Size After Last Property [ Dumper-7 ])
 	class UScriptStruct*                          FilterTag;                                         // 0x2018(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassVisualizationLODSharedFragment) == 0x000008, "Wrong alignment on FMassVisualizationLODSharedFragment");
-static_assert(sizeof(FMassVisualizationLODSharedFragment) == 0x002020, "Wrong size on FMassVisualizationLODSharedFragment");
-static_assert(offsetof(FMassVisualizationLODSharedFragment, FilterTag) == 0x002018, "Member 'FMassVisualizationLODSharedFragment::FilterTag' has a wrong offset!");
+DUMPER7_ASSERTS_FMassVisualizationLODSharedFragment;
 
 // ScriptStruct MassRepresentation.MassSkelotAnimFragment
 // 0x0020 (0x0020 - 0x0000)
@@ -142,8 +117,7 @@ struct alignas(0x08) FMassSkelotAnimFragment final : public FMassFragment
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSkelotAnimFragment) == 0x000008, "Wrong alignment on FMassSkelotAnimFragment");
-static_assert(sizeof(FMassSkelotAnimFragment) == 0x000020, "Wrong size on FMassSkelotAnimFragment");
+DUMPER7_ASSERTS_FMassSkelotAnimFragment;
 
 // ScriptStruct MassRepresentation.MassStaticMeshInstanceVisualizationMeshDesc
 // 0x0030 (0x0030 - 0x0000)
@@ -158,14 +132,7 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UInstancedStaticMeshComponent> ISMComponentClass;                              // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassStaticMeshInstanceVisualizationMeshDesc) == 0x000008, "Wrong alignment on FMassStaticMeshInstanceVisualizationMeshDesc");
-static_assert(sizeof(FMassStaticMeshInstanceVisualizationMeshDesc) == 0x000030, "Wrong size on FMassStaticMeshInstanceVisualizationMeshDesc");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, Mesh) == 0x000000, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::Mesh' has a wrong offset!");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, MaterialOverrides) == 0x000008, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::MaterialOverrides' has a wrong offset!");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, MinLODSignificance) == 0x000018, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::MinLODSignificance' has a wrong offset!");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, MaxLODSignificance) == 0x00001C, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::MaxLODSignificance' has a wrong offset!");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, bCastShadows) == 0x000020, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::bCastShadows' has a wrong offset!");
-static_assert(offsetof(FMassStaticMeshInstanceVisualizationMeshDesc, ISMComponentClass) == 0x000028, "Member 'FMassStaticMeshInstanceVisualizationMeshDesc::ISMComponentClass' has a wrong offset!");
+DUMPER7_ASSERTS_FMassStaticMeshInstanceVisualizationMeshDesc;
 
 // ScriptStruct MassRepresentation.StaticMeshInstanceVisualizationDesc
 // 0x0080 (0x0090 - 0x0010)
@@ -177,11 +144,7 @@ public:
 	uint8                                         Pad_21[0xF];                                       // 0x0021(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             TransformOffset;                                   // 0x0030(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStaticMeshInstanceVisualizationDesc) == 0x000010, "Wrong alignment on FStaticMeshInstanceVisualizationDesc");
-static_assert(sizeof(FStaticMeshInstanceVisualizationDesc) == 0x000090, "Wrong size on FStaticMeshInstanceVisualizationDesc");
-static_assert(offsetof(FStaticMeshInstanceVisualizationDesc, Meshes) == 0x000010, "Member 'FStaticMeshInstanceVisualizationDesc::Meshes' has a wrong offset!");
-static_assert(offsetof(FStaticMeshInstanceVisualizationDesc, bUseTransformOffset) == 0x000020, "Member 'FStaticMeshInstanceVisualizationDesc::bUseTransformOffset' has a wrong offset!");
-static_assert(offsetof(FStaticMeshInstanceVisualizationDesc, TransformOffset) == 0x000030, "Member 'FStaticMeshInstanceVisualizationDesc::TransformOffset' has a wrong offset!");
+DUMPER7_ASSERTS_FStaticMeshInstanceVisualizationDesc;
 
 // ScriptStruct MassRepresentation.MassLODSignificanceRange
 // 0x0020 (0x0020 - 0x0000)
@@ -192,9 +155,7 @@ public:
 	TArray<uint32>                                StaticMeshRefs;                                    // 0x0008(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassLODSignificanceRange) == 0x000008, "Wrong alignment on FMassLODSignificanceRange");
-static_assert(sizeof(FMassLODSignificanceRange) == 0x000020, "Wrong size on FMassLODSignificanceRange");
-static_assert(offsetof(FMassLODSignificanceRange, StaticMeshRefs) == 0x000008, "Member 'FMassLODSignificanceRange::StaticMeshRefs' has a wrong offset!");
+DUMPER7_ASSERTS_FMassLODSignificanceRange;
 
 // ScriptStruct MassRepresentation.MassInstancedStaticMeshInfo
 // 0x00B0 (0x00B0 - 0x0000)
@@ -205,11 +166,7 @@ public:
 	TArray<class UInstancedStaticMeshComponent*>  InstancedStaticMeshComponents;                     // 0x0090(0x0010)(Edit, ExportObject, ZeroConstructor, EditConst, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<struct FMassLODSignificanceRange>      LODSignificanceRanges;                             // 0x00A0(0x0010)(Edit, ZeroConstructor, EditConst, Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassInstancedStaticMeshInfo) == 0x000010, "Wrong alignment on FMassInstancedStaticMeshInfo");
-static_assert(sizeof(FMassInstancedStaticMeshInfo) == 0x0000B0, "Wrong size on FMassInstancedStaticMeshInfo");
-static_assert(offsetof(FMassInstancedStaticMeshInfo, Desc) == 0x000000, "Member 'FMassInstancedStaticMeshInfo::Desc' has a wrong offset!");
-static_assert(offsetof(FMassInstancedStaticMeshInfo, InstancedStaticMeshComponents) == 0x000090, "Member 'FMassInstancedStaticMeshInfo::InstancedStaticMeshComponents' has a wrong offset!");
-static_assert(offsetof(FMassInstancedStaticMeshInfo, LODSignificanceRanges) == 0x0000A0, "Member 'FMassInstancedStaticMeshInfo::LODSignificanceRanges' has a wrong offset!");
+DUMPER7_ASSERTS_FMassInstancedStaticMeshInfo;
 
 // ScriptStruct MassRepresentation.MassSkelotComponentFragment
 // 0x000C (0x000C - 0x0000)
@@ -218,8 +175,7 @@ struct alignas(0x04) FMassSkelotComponentFragment final : public FObjectWrapperF
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSkelotComponentFragment) == 0x000004, "Wrong alignment on FMassSkelotComponentFragment");
-static_assert(sizeof(FMassSkelotComponentFragment) == 0x00000C, "Wrong size on FMassSkelotComponentFragment");
+DUMPER7_ASSERTS_FMassSkelotComponentFragment;
 
 }
 

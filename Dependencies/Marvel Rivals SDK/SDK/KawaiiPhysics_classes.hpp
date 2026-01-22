@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotifyState_KawaiiPhysicsAddExternalForce">();
+		STATIC_CLASS_IMPL("AnimNotifyState_KawaiiPhysicsAddExternalForce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_KawaiiPhysicsAddExternalForce")
 	}
 	static class UAnimNotifyState_KawaiiPhysicsAddExternalForce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_KawaiiPhysicsAddExternalForce>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_KawaiiPhysicsAddExternalForce) == 0x000008, "Wrong alignment on UAnimNotifyState_KawaiiPhysicsAddExternalForce");
-static_assert(sizeof(UAnimNotifyState_KawaiiPhysicsAddExternalForce) == 0x0000B8, "Wrong size on UAnimNotifyState_KawaiiPhysicsAddExternalForce");
-static_assert(offsetof(UAnimNotifyState_KawaiiPhysicsAddExternalForce, AdditionalExternalForces) == 0x000038, "Member 'UAnimNotifyState_KawaiiPhysicsAddExternalForce::AdditionalExternalForces' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_KawaiiPhysicsAddExternalForce, FilterTags) == 0x000048, "Member 'UAnimNotifyState_KawaiiPhysicsAddExternalForce::FilterTags' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_KawaiiPhysicsAddExternalForce, bFilterExactMatch) == 0x0000B0, "Member 'UAnimNotifyState_KawaiiPhysicsAddExternalForce::bFilterExactMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotifyState_KawaiiPhysicsAddExternalForce;
 
 // Class KawaiiPhysics.AnimNotify_KawaiiPhysicsAddExternalForce
 // 0x0080 (0x00C0 - 0x0040)
@@ -60,18 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimNotify_KawaiiPhysicsAddExternalForce">();
+		STATIC_CLASS_IMPL("AnimNotify_KawaiiPhysicsAddExternalForce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_KawaiiPhysicsAddExternalForce")
 	}
 	static class UAnimNotify_KawaiiPhysicsAddExternalForce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_KawaiiPhysicsAddExternalForce>();
 	}
 };
-static_assert(alignof(UAnimNotify_KawaiiPhysicsAddExternalForce) == 0x000008, "Wrong alignment on UAnimNotify_KawaiiPhysicsAddExternalForce");
-static_assert(sizeof(UAnimNotify_KawaiiPhysicsAddExternalForce) == 0x0000C0, "Wrong size on UAnimNotify_KawaiiPhysicsAddExternalForce");
-static_assert(offsetof(UAnimNotify_KawaiiPhysicsAddExternalForce, AdditionalExternalForces) == 0x000040, "Member 'UAnimNotify_KawaiiPhysicsAddExternalForce::AdditionalExternalForces' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_KawaiiPhysicsAddExternalForce, FilterTags) == 0x000050, "Member 'UAnimNotify_KawaiiPhysicsAddExternalForce::FilterTags' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_KawaiiPhysicsAddExternalForce, bFilterExactMatch) == 0x0000B8, "Member 'UAnimNotify_KawaiiPhysicsAddExternalForce::bFilterExactMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UAnimNotify_KawaiiPhysicsAddExternalForce;
 
 // Class KawaiiPhysics.KawaiiPhysicsBoneConstraintsDataAsset
 // 0x0018 (0x0050 - 0x0038)
@@ -84,16 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsBoneConstraintsDataAsset">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsBoneConstraintsDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsBoneConstraintsDataAsset")
 	}
 	static class UKawaiiPhysicsBoneConstraintsDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsBoneConstraintsDataAsset>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsBoneConstraintsDataAsset) == 0x000008, "Wrong alignment on UKawaiiPhysicsBoneConstraintsDataAsset");
-static_assert(sizeof(UKawaiiPhysicsBoneConstraintsDataAsset) == 0x000050, "Wrong size on UKawaiiPhysicsBoneConstraintsDataAsset");
-static_assert(offsetof(UKawaiiPhysicsBoneConstraintsDataAsset, BoneConstraintsData) == 0x000040, "Member 'UKawaiiPhysicsBoneConstraintsDataAsset::BoneConstraintsData' has a wrong offset!");
+DUMPER7_ASSERTS_UKawaiiPhysicsBoneConstraintsDataAsset;
 
 // Class KawaiiPhysics.KawaiiPhysics_CustomExternalForce
 // 0x0008 (0x0038 - 0x0030)
@@ -112,17 +114,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysics_CustomExternalForce">();
+		STATIC_CLASS_IMPL("KawaiiPhysics_CustomExternalForce")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysics_CustomExternalForce")
 	}
 	static class UKawaiiPhysics_CustomExternalForce* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysics_CustomExternalForce>();
 	}
 };
-static_assert(alignof(UKawaiiPhysics_CustomExternalForce) == 0x000008, "Wrong alignment on UKawaiiPhysics_CustomExternalForce");
-static_assert(sizeof(UKawaiiPhysics_CustomExternalForce) == 0x000038, "Wrong size on UKawaiiPhysics_CustomExternalForce");
-static_assert(offsetof(UKawaiiPhysics_CustomExternalForce, bIsEnabled) == 0x000030, "Member 'UKawaiiPhysics_CustomExternalForce::bIsEnabled' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysics_CustomExternalForce, bDrawDebug) == 0x000031, "Member 'UKawaiiPhysics_CustomExternalForce::bDrawDebug' has a wrong offset!");
+DUMPER7_ASSERTS_UKawaiiPhysics_CustomExternalForce;
 
 // Class KawaiiPhysics.KawaiiPhysicsLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -178,15 +181,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsLibrary">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsLibrary")
 	}
 	static class UKawaiiPhysicsLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsLibrary>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsLibrary) == 0x000008, "Wrong alignment on UKawaiiPhysicsLibrary");
-static_assert(sizeof(UKawaiiPhysicsLibrary) == 0x000030, "Wrong size on UKawaiiPhysicsLibrary");
+DUMPER7_ASSERTS_UKawaiiPhysicsLibrary;
 
 // Class KawaiiPhysics.KawaiiPhysicsLimitsDataAsset
 // 0x0048 (0x0080 - 0x0038)
@@ -202,19 +208,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KawaiiPhysicsLimitsDataAsset">();
+		STATIC_CLASS_IMPL("KawaiiPhysicsLimitsDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KawaiiPhysicsLimitsDataAsset")
 	}
 	static class UKawaiiPhysicsLimitsDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKawaiiPhysicsLimitsDataAsset>();
 	}
 };
-static_assert(alignof(UKawaiiPhysicsLimitsDataAsset) == 0x000008, "Wrong alignment on UKawaiiPhysicsLimitsDataAsset");
-static_assert(sizeof(UKawaiiPhysicsLimitsDataAsset) == 0x000080, "Wrong size on UKawaiiPhysicsLimitsDataAsset");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, SphericalLimits) == 0x000040, "Member 'UKawaiiPhysicsLimitsDataAsset::SphericalLimits' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, CapsuleLimits) == 0x000050, "Member 'UKawaiiPhysicsLimitsDataAsset::CapsuleLimits' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, BoxLimits) == 0x000060, "Member 'UKawaiiPhysicsLimitsDataAsset::BoxLimits' has a wrong offset!");
-static_assert(offsetof(UKawaiiPhysicsLimitsDataAsset, PlanarLimits) == 0x000070, "Member 'UKawaiiPhysicsLimitsDataAsset::PlanarLimits' has a wrong offset!");
+DUMPER7_ASSERTS_UKawaiiPhysicsLimitsDataAsset;
 
 }
 

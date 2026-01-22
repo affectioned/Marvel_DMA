@@ -12,7 +12,7 @@
 
 #include "Marvel_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "PyAbility_103651_classes.hpp"
+#include "PyCue_Buff_WebTying_classes.hpp"
 
 
 namespace SDK
@@ -28,19 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103291">();
+		STATIC_CLASS_IMPL("PyConfig_103291")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103291")
 	}
 	static class UPyConfig_103291* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103291>();
 	}
 };
-static_assert(alignof(UPyConfig_103291) == 0x000008, "Wrong alignment on UPyConfig_103291");
-static_assert(sizeof(UPyConfig_103291) == 0x0000A0, "Wrong size on UPyConfig_103291");
-static_assert(offsetof(UPyConfig_103291, WaitTime) == 0x000098, "Member 'UPyConfig_103291::WaitTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103291;
 
 // PythonClass PyAbility_103291.PyCue_Ability_Loop_10329101
-// 0x0000 (0x11B0 - 0x11B0)
+// 0x0000 (0x11C0 - 0x11C0)
 class APyCue_Ability_Loop_10329101 final : public AMarvelCueNotify_Ability
 {
 public:
@@ -49,18 +51,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10329101">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10329101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10329101")
 	}
 	static class APyCue_Ability_Loop_10329101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10329101>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10329101) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10329101");
-static_assert(sizeof(APyCue_Ability_Loop_10329101) == 0x0011B0, "Wrong size on APyCue_Ability_Loop_10329101");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10329101;
 
 // PythonClass PyAbility_103291.PyAbility_103291
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_103291 : public UMarvelGameplayAbility
 {
 public:
@@ -74,19 +79,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103291">();
+		STATIC_CLASS_IMPL("PyAbility_103291")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103291")
 	}
 	static class UPyAbility_103291* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103291>();
 	}
 };
-static_assert(alignof(UPyAbility_103291) == 0x000008, "Wrong alignment on UPyAbility_103291");
-static_assert(sizeof(UPyAbility_103291) == 0x0029F0, "Wrong size on UPyAbility_103291");
+DUMPER7_ASSERTS_UPyAbility_103291;
 
 // PythonClass PyAbility_103291.PyCue_Buff_10329101
-// 0x0000 (0x3380 - 0x3380)
-class APyCue_Buff_10329101 final : public APyCue_Buff_10365102
+// 0x0000 (0x3910 - 0x3910)
+class APyCue_Buff_10329101 final : public APyCue_Buff_WebTying
 {
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -94,15 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10329101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10329101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10329101")
 	}
 	static class APyCue_Buff_10329101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10329101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10329101) == 0x000010, "Wrong alignment on APyCue_Buff_10329101");
-static_assert(sizeof(APyCue_Buff_10329101) == 0x003380, "Wrong size on APyCue_Buff_10329101");
+DUMPER7_ASSERTS_APyCue_Buff_10329101;
 
 // PythonClass PyAbility_103291.PyCue_Scope_Start_10329102
 // 0x0018 (0x0490 - 0x0478)
@@ -121,19 +132,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_Start_10329102">();
+		STATIC_CLASS_IMPL("PyCue_Scope_Start_10329102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_Start_10329102")
 	}
 	static class UPyCue_Scope_Start_10329102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_Start_10329102>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_Start_10329102) == 0x000008, "Wrong alignment on UPyCue_Scope_Start_10329102");
-static_assert(sizeof(UPyCue_Scope_Start_10329102) == 0x000490, "Wrong size on UPyCue_Scope_Start_10329102");
-static_assert(offsetof(UPyCue_Scope_Start_10329102, Degree) == 0x000478, "Member 'UPyCue_Scope_Start_10329102::Degree' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10329102, CharacterDistance) == 0x00047C, "Member 'UPyCue_Scope_Start_10329102::CharacterDistance' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10329102, WallDistance) == 0x000480, "Member 'UPyCue_Scope_Start_10329102::WallDistance' has a wrong offset!");
-static_assert(offsetof(UPyCue_Scope_Start_10329102, ExplodeNiagara) == 0x000488, "Member 'UPyCue_Scope_Start_10329102::ExplodeNiagara' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Scope_Start_10329102;
 
 }
 

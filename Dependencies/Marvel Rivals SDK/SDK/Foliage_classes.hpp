@@ -32,61 +32,66 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoliageStatistics">();
+		STATIC_CLASS_IMPL("FoliageStatistics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoliageStatistics")
 	}
 	static class UFoliageStatistics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoliageStatistics>();
 	}
 };
-static_assert(alignof(UFoliageStatistics) == 0x000008, "Wrong alignment on UFoliageStatistics");
-static_assert(sizeof(UFoliageStatistics) == 0x000030, "Wrong size on UFoliageStatistics");
+DUMPER7_ASSERTS_UFoliageStatistics;
 
 // Class Foliage.FoliageInstancedStaticMeshComponent
-// 0x0030 (0x0C20 - 0x0BF0)
+// 0x0040 (0x0C40 - 0x0C00)
 class UFoliageInstancedStaticMeshComponent final : public UHierarchicalInstancedStaticMeshComponent
 {
 public:
-	TMulticastInlineDelegate<void(int32 InstanceIndex, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, const struct FVector& ShotFromDirection, const class UDamageType* DamageType, class AActor* DamageCauser)> OnInstanceTakePointDamage; // 0x0BE8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const TArray<int32>& Instances, const TArray<float>& Damages, class AController* InstigatedBy, const struct FVector& Origin, float MaxRadius, const class UDamageType* DamageType, class AActor* DamageCauser)> OnInstanceTakeRadialDamage; // 0x0BF8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	bool                                          bEnableDiscardOnLoad;                              // 0x0C08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C09[0x3];                                      // 0x0C09(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  GenerationGuid;                                    // 0x0C0C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_C1C[0x4];                                      // 0x0C1C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(int32 InstanceIndex, float Damage, class AController* InstigatedBy, const struct FVector& HitLocation, const struct FVector& ShotFromDirection, const class UDamageType* DamageType, class AActor* DamageCauser)> OnInstanceTakePointDamage; // 0x0C00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const TArray<int32>& Instances, const TArray<float>& Damages, class AController* InstigatedBy, const struct FVector& Origin, float MaxRadius, const class UDamageType* DamageType, class AActor* DamageCauser)> OnInstanceTakeRadialDamage; // 0x0C10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	bool                                          bEnableDiscardOnLoad;                              // 0x0C20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C21[0x3];                                      // 0x0C21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  GenerationGuid;                                    // 0x0C24(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_C34[0xC];                                      // 0x0C34(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoliageInstancedStaticMeshComponent">();
+		STATIC_CLASS_IMPL("FoliageInstancedStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoliageInstancedStaticMeshComponent")
 	}
 	static class UFoliageInstancedStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoliageInstancedStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UFoliageInstancedStaticMeshComponent) == 0x000010, "Wrong alignment on UFoliageInstancedStaticMeshComponent");
-static_assert(sizeof(UFoliageInstancedStaticMeshComponent) == 0x000C20, "Wrong size on UFoliageInstancedStaticMeshComponent");
-static_assert(offsetof(UFoliageInstancedStaticMeshComponent, OnInstanceTakePointDamage) == 0x000BE8, "Member 'UFoliageInstancedStaticMeshComponent::OnInstanceTakePointDamage' has a wrong offset!");
-static_assert(offsetof(UFoliageInstancedStaticMeshComponent, OnInstanceTakeRadialDamage) == 0x000BF8, "Member 'UFoliageInstancedStaticMeshComponent::OnInstanceTakeRadialDamage' has a wrong offset!");
-static_assert(offsetof(UFoliageInstancedStaticMeshComponent, bEnableDiscardOnLoad) == 0x000C08, "Member 'UFoliageInstancedStaticMeshComponent::bEnableDiscardOnLoad' has a wrong offset!");
-static_assert(offsetof(UFoliageInstancedStaticMeshComponent, GenerationGuid) == 0x000C0C, "Member 'UFoliageInstancedStaticMeshComponent::GenerationGuid' has a wrong offset!");
+DUMPER7_ASSERTS_UFoliageInstancedStaticMeshComponent;
 
 // Class Foliage.GrassInstancedStaticMeshComponent
-// 0x0000 (0x0BF0 - 0x0BF0)
+// 0x0000 (0x0C00 - 0x0C00)
 class UGrassInstancedStaticMeshComponent final : public UHierarchicalInstancedStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GrassInstancedStaticMeshComponent">();
+		STATIC_CLASS_IMPL("GrassInstancedStaticMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GrassInstancedStaticMeshComponent")
 	}
 	static class UGrassInstancedStaticMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGrassInstancedStaticMeshComponent>();
 	}
 };
-static_assert(alignof(UGrassInstancedStaticMeshComponent) == 0x000010, "Wrong alignment on UGrassInstancedStaticMeshComponent");
-static_assert(sizeof(UGrassInstancedStaticMeshComponent) == 0x000BF0, "Wrong size on UGrassInstancedStaticMeshComponent");
+DUMPER7_ASSERTS_UGrassInstancedStaticMeshComponent;
 
 // Class Foliage.FoliageType
 // 0x04D0 (0x0500 - 0x0030)
@@ -222,75 +227,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoliageType">();
+		STATIC_CLASS_IMPL("FoliageType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoliageType")
 	}
 	static class UFoliageType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoliageType>();
 	}
 };
-static_assert(alignof(UFoliageType) == 0x000008, "Wrong alignment on UFoliageType");
-static_assert(sizeof(UFoliageType) == 0x000500, "Wrong size on UFoliageType");
-static_assert(offsetof(UFoliageType, UpdateGuid) == 0x000030, "Member 'UFoliageType::UpdateGuid' has a wrong offset!");
-static_assert(offsetof(UFoliageType, Density) == 0x000040, "Member 'UFoliageType::Density' has a wrong offset!");
-static_assert(offsetof(UFoliageType, DensityAdjustmentFactor) == 0x000044, "Member 'UFoliageType::DensityAdjustmentFactor' has a wrong offset!");
-static_assert(offsetof(UFoliageType, Radius) == 0x000048, "Member 'UFoliageType::Radius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, bSingleInstanceModeOverrideRadius) == 0x00004C, "Member 'UFoliageType::bSingleInstanceModeOverrideRadius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, SingleInstanceModeRadius) == 0x000050, "Member 'UFoliageType::SingleInstanceModeRadius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, Scaling) == 0x000054, "Member 'UFoliageType::Scaling' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ScaleX) == 0x000058, "Member 'UFoliageType::ScaleX' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ScaleY) == 0x000060, "Member 'UFoliageType::ScaleY' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ScaleZ) == 0x000068, "Member 'UFoliageType::ScaleZ' has a wrong offset!");
-static_assert(offsetof(UFoliageType, VertexColorMaskByChannel) == 0x000070, "Member 'UFoliageType::VertexColorMaskByChannel' has a wrong offset!");
-static_assert(offsetof(UFoliageType, VertexColorMask) == 0x0000A0, "Member 'UFoliageType::VertexColorMask' has a wrong offset!");
-static_assert(offsetof(UFoliageType, VertexColorMaskThreshold) == 0x0000A4, "Member 'UFoliageType::VertexColorMaskThreshold' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ZOffset) == 0x0000AC, "Member 'UFoliageType::ZOffset' has a wrong offset!");
-static_assert(offsetof(UFoliageType, AlignMaxAngle) == 0x0000B8, "Member 'UFoliageType::AlignMaxAngle' has a wrong offset!");
-static_assert(offsetof(UFoliageType, RandomPitchAngle) == 0x0000C0, "Member 'UFoliageType::RandomPitchAngle' has a wrong offset!");
-static_assert(offsetof(UFoliageType, GroundSlopeAngle) == 0x0000C4, "Member 'UFoliageType::GroundSlopeAngle' has a wrong offset!");
-static_assert(offsetof(UFoliageType, Height) == 0x0000CC, "Member 'UFoliageType::Height' has a wrong offset!");
-static_assert(offsetof(UFoliageType, LandscapeLayers) == 0x0000D8, "Member 'UFoliageType::LandscapeLayers' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MinimumLayerWeight) == 0x0000E8, "Member 'UFoliageType::MinimumLayerWeight' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ExclusionLandscapeLayers) == 0x0000F0, "Member 'UFoliageType::ExclusionLandscapeLayers' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MinimumExclusionLayerWeight) == 0x000100, "Member 'UFoliageType::MinimumExclusionLayerWeight' has a wrong offset!");
-static_assert(offsetof(UFoliageType, LandscapeLayer) == 0x000104, "Member 'UFoliageType::LandscapeLayer' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CollisionScale) == 0x000118, "Member 'UFoliageType::CollisionScale' has a wrong offset!");
-static_assert(offsetof(UFoliageType, AverageNormalSampleCount) == 0x000130, "Member 'UFoliageType::AverageNormalSampleCount' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MeshBounds) == 0x000138, "Member 'UFoliageType::MeshBounds' has a wrong offset!");
-static_assert(offsetof(UFoliageType, LowBoundOriginRadius) == 0x000170, "Member 'UFoliageType::LowBoundOriginRadius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, Mobility) == 0x000188, "Member 'UFoliageType::Mobility' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CullDistance) == 0x00018C, "Member 'UFoliageType::CullDistance' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ShadowCacheInvalidationBehavior) == 0x0001A0, "Member 'UFoliageType::ShadowCacheInvalidationBehavior' has a wrong offset!");
-static_assert(offsetof(UFoliageType, OverriddenLightMapRes) == 0x0001A4, "Member 'UFoliageType::OverriddenLightMapRes' has a wrong offset!");
-static_assert(offsetof(UFoliageType, LightmapType) == 0x0001A8, "Member 'UFoliageType::LightmapType' has a wrong offset!");
-static_assert(offsetof(UFoliageType, WorldPositionOffsetDisableDistance) == 0x0001B4, "Member 'UFoliageType::WorldPositionOffsetDisableDistance' has a wrong offset!");
-static_assert(offsetof(UFoliageType, BodyInstance) == 0x0001B8, "Member 'UFoliageType::BodyInstance' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CustomNavigableGeometry) == 0x000378, "Member 'UFoliageType::CustomNavigableGeometry' has a wrong offset!");
-static_assert(offsetof(UFoliageType, LightingChannels) == 0x000379, "Member 'UFoliageType::LightingChannels' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CustomDepthStencilWriteMask) == 0x000380, "Member 'UFoliageType::CustomDepthStencilWriteMask' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CustomDepthStencilValue) == 0x000384, "Member 'UFoliageType::CustomDepthStencilValue' has a wrong offset!");
-static_assert(offsetof(UFoliageType, TranslucencySortPriority) == 0x000388, "Member 'UFoliageType::TranslucencySortPriority' has a wrong offset!");
-static_assert(offsetof(UFoliageType, CollisionRadius) == 0x00038C, "Member 'UFoliageType::CollisionRadius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ShadeRadius) == 0x000390, "Member 'UFoliageType::ShadeRadius' has a wrong offset!");
-static_assert(offsetof(UFoliageType, NumSteps) == 0x000394, "Member 'UFoliageType::NumSteps' has a wrong offset!");
-static_assert(offsetof(UFoliageType, InitialSeedDensity) == 0x000398, "Member 'UFoliageType::InitialSeedDensity' has a wrong offset!");
-static_assert(offsetof(UFoliageType, AverageSpreadDistance) == 0x00039C, "Member 'UFoliageType::AverageSpreadDistance' has a wrong offset!");
-static_assert(offsetof(UFoliageType, SpreadVariance) == 0x0003A0, "Member 'UFoliageType::SpreadVariance' has a wrong offset!");
-static_assert(offsetof(UFoliageType, SeedsPerStep) == 0x0003A4, "Member 'UFoliageType::SeedsPerStep' has a wrong offset!");
-static_assert(offsetof(UFoliageType, DistributionSeed) == 0x0003A8, "Member 'UFoliageType::DistributionSeed' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MaxInitialSeedOffset) == 0x0003AC, "Member 'UFoliageType::MaxInitialSeedOffset' has a wrong offset!");
-static_assert(offsetof(UFoliageType, bCanGrowInShade) == 0x0003B0, "Member 'UFoliageType::bCanGrowInShade' has a wrong offset!");
-static_assert(offsetof(UFoliageType, bSpawnsInShade) == 0x0003B1, "Member 'UFoliageType::bSpawnsInShade' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MaxInitialAge) == 0x0003B4, "Member 'UFoliageType::MaxInitialAge' has a wrong offset!");
-static_assert(offsetof(UFoliageType, MaxAge) == 0x0003B8, "Member 'UFoliageType::MaxAge' has a wrong offset!");
-static_assert(offsetof(UFoliageType, OverlapPriority) == 0x0003BC, "Member 'UFoliageType::OverlapPriority' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ProceduralScale) == 0x0003C0, "Member 'UFoliageType::ProceduralScale' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ScaleCurve) == 0x0003C8, "Member 'UFoliageType::ScaleCurve' has a wrong offset!");
-static_assert(offsetof(UFoliageType, DensityFalloff) == 0x000450, "Member 'UFoliageType::DensityFalloff' has a wrong offset!");
-static_assert(offsetof(UFoliageType, ChangeCount) == 0x0004E0, "Member 'UFoliageType::ChangeCount' has a wrong offset!");
-static_assert(offsetof(UFoliageType, RuntimeVirtualTextures) == 0x0004E8, "Member 'UFoliageType::RuntimeVirtualTextures' has a wrong offset!");
-static_assert(offsetof(UFoliageType, VirtualTextureCullMips) == 0x0004F8, "Member 'UFoliageType::VirtualTextureCullMips' has a wrong offset!");
-static_assert(offsetof(UFoliageType, VirtualTextureRenderPassType) == 0x0004FC, "Member 'UFoliageType::VirtualTextureRenderPassType' has a wrong offset!");
+DUMPER7_ASSERTS_UFoliageType;
 
 // Class Foliage.FoliageType_Actor
 // 0x0018 (0x0518 - 0x0500)
@@ -306,19 +254,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoliageType_Actor">();
+		STATIC_CLASS_IMPL("FoliageType_Actor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoliageType_Actor")
 	}
 	static class UFoliageType_Actor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoliageType_Actor>();
 	}
 };
-static_assert(alignof(UFoliageType_Actor) == 0x000008, "Wrong alignment on UFoliageType_Actor");
-static_assert(sizeof(UFoliageType_Actor) == 0x000518, "Wrong size on UFoliageType_Actor");
-static_assert(offsetof(UFoliageType_Actor, ActorClass) == 0x000500, "Member 'UFoliageType_Actor::ActorClass' has a wrong offset!");
-static_assert(offsetof(UFoliageType_Actor, bShouldAttachToBaseComponent) == 0x000508, "Member 'UFoliageType_Actor::bShouldAttachToBaseComponent' has a wrong offset!");
-static_assert(offsetof(UFoliageType_Actor, bStaticMeshOnly) == 0x000509, "Member 'UFoliageType_Actor::bStaticMeshOnly' has a wrong offset!");
-static_assert(offsetof(UFoliageType_Actor, StaticMeshOnlyComponentClass) == 0x000510, "Member 'UFoliageType_Actor::StaticMeshOnlyComponentClass' has a wrong offset!");
+DUMPER7_ASSERTS_UFoliageType_Actor;
 
 // Class Foliage.FoliageType_InstancedStaticMesh
 // 0x0030 (0x0530 - 0x0500)
@@ -333,19 +280,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FoliageType_InstancedStaticMesh">();
+		STATIC_CLASS_IMPL("FoliageType_InstancedStaticMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FoliageType_InstancedStaticMesh")
 	}
 	static class UFoliageType_InstancedStaticMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFoliageType_InstancedStaticMesh>();
 	}
 };
-static_assert(alignof(UFoliageType_InstancedStaticMesh) == 0x000008, "Wrong alignment on UFoliageType_InstancedStaticMesh");
-static_assert(sizeof(UFoliageType_InstancedStaticMesh) == 0x000530, "Wrong size on UFoliageType_InstancedStaticMesh");
-static_assert(offsetof(UFoliageType_InstancedStaticMesh, Mesh) == 0x000500, "Member 'UFoliageType_InstancedStaticMesh::Mesh' has a wrong offset!");
-static_assert(offsetof(UFoliageType_InstancedStaticMesh, OverrideMaterials) == 0x000508, "Member 'UFoliageType_InstancedStaticMesh::OverrideMaterials' has a wrong offset!");
-static_assert(offsetof(UFoliageType_InstancedStaticMesh, NaniteOverrideMaterials) == 0x000518, "Member 'UFoliageType_InstancedStaticMesh::NaniteOverrideMaterials' has a wrong offset!");
-static_assert(offsetof(UFoliageType_InstancedStaticMesh, ComponentClass) == 0x000528, "Member 'UFoliageType_InstancedStaticMesh::ComponentClass' has a wrong offset!");
+DUMPER7_ASSERTS_UFoliageType_InstancedStaticMesh;
 
 // Class Foliage.InstancedFoliageActor
 // 0x0050 (0x0740 - 0x06F0)
@@ -357,35 +303,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InstancedFoliageActor">();
+		STATIC_CLASS_IMPL("InstancedFoliageActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InstancedFoliageActor")
 	}
 	static class AInstancedFoliageActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInstancedFoliageActor>();
 	}
 };
-static_assert(alignof(AInstancedFoliageActor) == 0x000010, "Wrong alignment on AInstancedFoliageActor");
-static_assert(sizeof(AInstancedFoliageActor) == 0x000740, "Wrong size on AInstancedFoliageActor");
+DUMPER7_ASSERTS_AInstancedFoliageActor;
 
 // Class Foliage.InteractiveFoliageComponent
-// 0x0010 (0x0910 - 0x0900)
+// 0x0000 (0x0920 - 0x0920)
 class UInteractiveFoliageComponent final : public UStaticMeshComponent
 {
 public:
-	uint8                                         Pad_900[0x10];                                     // 0x0900(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractiveFoliageComponent">();
+		STATIC_CLASS_IMPL("InteractiveFoliageComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractiveFoliageComponent")
 	}
 	static class UInteractiveFoliageComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractiveFoliageComponent>();
 	}
 };
-static_assert(alignof(UInteractiveFoliageComponent) == 0x000010, "Wrong alignment on UInteractiveFoliageComponent");
-static_assert(sizeof(UInteractiveFoliageComponent) == 0x000910, "Wrong size on UInteractiveFoliageComponent");
+DUMPER7_ASSERTS_UInteractiveFoliageComponent;
 
 // Class Foliage.InteractiveFoliageActor
 // 0x0090 (0x0780 - 0x06F0)
@@ -414,29 +363,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractiveFoliageActor">();
+		STATIC_CLASS_IMPL("InteractiveFoliageActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractiveFoliageActor")
 	}
 	static class AInteractiveFoliageActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AInteractiveFoliageActor>();
 	}
 };
-static_assert(alignof(AInteractiveFoliageActor) == 0x000010, "Wrong alignment on AInteractiveFoliageActor");
-static_assert(sizeof(AInteractiveFoliageActor) == 0x000780, "Wrong size on AInteractiveFoliageActor");
-static_assert(offsetof(AInteractiveFoliageActor, CapsuleComponent) == 0x0006E8, "Member 'AInteractiveFoliageActor::CapsuleComponent' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, TouchingActorEntryPosition) == 0x0006F0, "Member 'AInteractiveFoliageActor::TouchingActorEntryPosition' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageVelocity) == 0x000708, "Member 'AInteractiveFoliageActor::FoliageVelocity' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageForce) == 0x000720, "Member 'AInteractiveFoliageActor::FoliageForce' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliagePosition) == 0x000738, "Member 'AInteractiveFoliageActor::FoliagePosition' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageDamageImpulseScale) == 0x000750, "Member 'AInteractiveFoliageActor::FoliageDamageImpulseScale' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageTouchImpulseScale) == 0x000754, "Member 'AInteractiveFoliageActor::FoliageTouchImpulseScale' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageStiffness) == 0x000758, "Member 'AInteractiveFoliageActor::FoliageStiffness' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageStiffnessQuadratic) == 0x00075C, "Member 'AInteractiveFoliageActor::FoliageStiffnessQuadratic' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, FoliageDamping) == 0x000760, "Member 'AInteractiveFoliageActor::FoliageDamping' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, MaxDamageImpulse) == 0x000764, "Member 'AInteractiveFoliageActor::MaxDamageImpulse' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, MaxTouchImpulse) == 0x000768, "Member 'AInteractiveFoliageActor::MaxTouchImpulse' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, MaxForce) == 0x00076C, "Member 'AInteractiveFoliageActor::MaxForce' has a wrong offset!");
-static_assert(offsetof(AInteractiveFoliageActor, Mass) == 0x000770, "Member 'AInteractiveFoliageActor::Mass' has a wrong offset!");
+DUMPER7_ASSERTS_AInteractiveFoliageActor;
 
 // Class Foliage.ProceduralFoliageBlockingVolume
 // 0x00A0 (0x07B0 - 0x0710)
@@ -450,17 +388,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralFoliageBlockingVolume">();
+		STATIC_CLASS_IMPL("ProceduralFoliageBlockingVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralFoliageBlockingVolume")
 	}
 	static class AProceduralFoliageBlockingVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProceduralFoliageBlockingVolume>();
 	}
 };
-static_assert(alignof(AProceduralFoliageBlockingVolume) == 0x000010, "Wrong alignment on AProceduralFoliageBlockingVolume");
-static_assert(sizeof(AProceduralFoliageBlockingVolume) == 0x0007B0, "Wrong size on AProceduralFoliageBlockingVolume");
-static_assert(offsetof(AProceduralFoliageBlockingVolume, ProceduralFoliageVolume) == 0x000710, "Member 'AProceduralFoliageBlockingVolume::ProceduralFoliageVolume' has a wrong offset!");
-static_assert(offsetof(AProceduralFoliageBlockingVolume, DensityFalloff) == 0x000718, "Member 'AProceduralFoliageBlockingVolume::DensityFalloff' has a wrong offset!");
+DUMPER7_ASSERTS_AProceduralFoliageBlockingVolume;
 
 // Class Foliage.ProceduralFoliageComponent
 // 0x0028 (0x0130 - 0x0108)
@@ -476,19 +415,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralFoliageComponent">();
+		STATIC_CLASS_IMPL("ProceduralFoliageComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralFoliageComponent")
 	}
 	static class UProceduralFoliageComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProceduralFoliageComponent>();
 	}
 };
-static_assert(alignof(UProceduralFoliageComponent) == 0x000008, "Wrong alignment on UProceduralFoliageComponent");
-static_assert(sizeof(UProceduralFoliageComponent) == 0x000130, "Wrong size on UProceduralFoliageComponent");
-static_assert(offsetof(UProceduralFoliageComponent, FoliageSpawner) == 0x000108, "Member 'UProceduralFoliageComponent::FoliageSpawner' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageComponent, TileOverlap) == 0x000110, "Member 'UProceduralFoliageComponent::TileOverlap' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageComponent, SpawningVolume) == 0x000118, "Member 'UProceduralFoliageComponent::SpawningVolume' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageComponent, ProceduralGuid) == 0x000120, "Member 'UProceduralFoliageComponent::ProceduralGuid' has a wrong offset!");
+DUMPER7_ASSERTS_UProceduralFoliageComponent;
 
 // Class Foliage.ProceduralFoliageSpawner
 // 0x0058 (0x0088 - 0x0030)
@@ -512,22 +450,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralFoliageSpawner">();
+		STATIC_CLASS_IMPL("ProceduralFoliageSpawner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralFoliageSpawner")
 	}
 	static class UProceduralFoliageSpawner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProceduralFoliageSpawner>();
 	}
 };
-static_assert(alignof(UProceduralFoliageSpawner) == 0x000008, "Wrong alignment on UProceduralFoliageSpawner");
-static_assert(sizeof(UProceduralFoliageSpawner) == 0x000088, "Wrong size on UProceduralFoliageSpawner");
-static_assert(offsetof(UProceduralFoliageSpawner, RandomSeed) == 0x000030, "Member 'UProceduralFoliageSpawner::RandomSeed' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, TileSize) == 0x000034, "Member 'UProceduralFoliageSpawner::TileSize' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, NumUniqueTiles) == 0x000038, "Member 'UProceduralFoliageSpawner::NumUniqueTiles' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, MinimumQuadTreeSize) == 0x00003C, "Member 'UProceduralFoliageSpawner::MinimumQuadTreeSize' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, FoliageTypes) == 0x000048, "Member 'UProceduralFoliageSpawner::FoliageTypes' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, bUseOverrideFoliageTerrainMaterials) == 0x000058, "Member 'UProceduralFoliageSpawner::bUseOverrideFoliageTerrainMaterials' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageSpawner, OverrideFoliageTerrainMaterials) == 0x000060, "Member 'UProceduralFoliageSpawner::OverrideFoliageTerrainMaterials' has a wrong offset!");
+DUMPER7_ASSERTS_UProceduralFoliageSpawner;
 
 // Class Foliage.ProceduralFoliageTile
 // 0x0148 (0x0178 - 0x0030)
@@ -542,17 +476,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralFoliageTile">();
+		STATIC_CLASS_IMPL("ProceduralFoliageTile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralFoliageTile")
 	}
 	static class UProceduralFoliageTile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProceduralFoliageTile>();
 	}
 };
-static_assert(alignof(UProceduralFoliageTile) == 0x000008, "Wrong alignment on UProceduralFoliageTile");
-static_assert(sizeof(UProceduralFoliageTile) == 0x000178, "Wrong size on UProceduralFoliageTile");
-static_assert(offsetof(UProceduralFoliageTile, FoliageSpawner) == 0x000030, "Member 'UProceduralFoliageTile::FoliageSpawner' has a wrong offset!");
-static_assert(offsetof(UProceduralFoliageTile, InstancesArray) == 0x0000D8, "Member 'UProceduralFoliageTile::InstancesArray' has a wrong offset!");
+DUMPER7_ASSERTS_UProceduralFoliageTile;
 
 // Class Foliage.ProceduralFoliageVolume
 // 0x0010 (0x0720 - 0x0710)
@@ -565,16 +500,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ProceduralFoliageVolume">();
+		STATIC_CLASS_IMPL("ProceduralFoliageVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProceduralFoliageVolume")
 	}
 	static class AProceduralFoliageVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProceduralFoliageVolume>();
 	}
 };
-static_assert(alignof(AProceduralFoliageVolume) == 0x000010, "Wrong alignment on AProceduralFoliageVolume");
-static_assert(sizeof(AProceduralFoliageVolume) == 0x000720, "Wrong size on AProceduralFoliageVolume");
-static_assert(offsetof(AProceduralFoliageVolume, ProceduralComponent) == 0x000718, "Member 'AProceduralFoliageVolume::ProceduralComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AProceduralFoliageVolume;
 
 }
 

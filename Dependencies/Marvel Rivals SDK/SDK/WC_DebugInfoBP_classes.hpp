@@ -23,15 +23,18 @@ class UWC_DebugInfoBP_C final : public UPyWC_DebugInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_DebugInfoBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_DebugInfoBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_DebugInfoBP_C")
 	}
 	static class UWC_DebugInfoBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_DebugInfoBP_C>();
 	}
 };
-static_assert(alignof(UWC_DebugInfoBP_C) == 0x000010, "Wrong alignment on UWC_DebugInfoBP_C");
-static_assert(sizeof(UWC_DebugInfoBP_C) == 0x000A10, "Wrong size on UWC_DebugInfoBP_C");
+DUMPER7_ASSERTS_UWC_DebugInfoBP_C;
 
 }
 

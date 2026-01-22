@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyMarvelUserSetting.PyMarvelUserSetting
-// 0x0000 (0x0C78 - 0x0C78)
+// 0x0000 (0x0CC8 - 0x0CC8)
 class UPyMarvelUserSetting final : public UMarvelUserSetting
 {
 public:
@@ -35,15 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelUserSetting">();
+		STATIC_CLASS_IMPL("PyMarvelUserSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelUserSetting")
 	}
 	static class UPyMarvelUserSetting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelUserSetting>();
 	}
 };
-static_assert(alignof(UPyMarvelUserSetting) == 0x000008, "Wrong alignment on UPyMarvelUserSetting");
-static_assert(sizeof(UPyMarvelUserSetting) == 0x000C78, "Wrong size on UPyMarvelUserSetting");
+DUMPER7_ASSERTS_UPyMarvelUserSetting;
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyEnergyContestBoostDoor.PyEnergyContestBoostDoor
-// 0x0050 (0x0780 - 0x0730)
+// 0x0070 (0x07A0 - 0x0730)
 class APyEnergyContestBoostDoor final : public AGameplayActorBase
 {
 public:
@@ -33,11 +33,15 @@ public:
 	bool                                          AutoPostMultiPositionSound;                        // 0x0759(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AlwaysHideVFXs;                                    // 0x075A(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBattleSide                                   BattleSide;                                        // 0x075B(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayDeactiveTimeSeconds;                          // 0x075C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BoostBuffId;                                       // 0x0760(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostSpeed;                                        // 0x0764(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BoostDuration;                                     // 0x0768(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   VFXCompTag;                                        // 0x076C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVFXsDiffMatWithRelationship;                      // 0x075C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_75D[0x3];                                      // 0x075D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstance*>              AllyMaterials;                                     // 0x0760(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInstance*>              EnemyMaterials;                                    // 0x0770(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	float                                         DelayDeactiveTimeSeconds;                          // 0x0780(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BoostBuffId;                                       // 0x0784(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostSpeed;                                        // 0x0788(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BoostDuration;                                     // 0x078C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   VFXCompTag;                                        // 0x0790(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void ReceiveInit();
@@ -49,29 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEnergyContestBoostDoor">();
+		STATIC_CLASS_IMPL("PyEnergyContestBoostDoor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEnergyContestBoostDoor")
 	}
 	static class APyEnergyContestBoostDoor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEnergyContestBoostDoor>();
 	}
 };
-static_assert(alignof(APyEnergyContestBoostDoor) == 0x000010, "Wrong alignment on APyEnergyContestBoostDoor");
-static_assert(sizeof(APyEnergyContestBoostDoor) == 0x000780, "Wrong size on APyEnergyContestBoostDoor");
-static_assert(offsetof(APyEnergyContestBoostDoor, BoostDoorState) == 0x000730, "Member 'APyEnergyContestBoostDoor::BoostDoorState' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, ActivedLoopEvent) == 0x000738, "Member 'APyEnergyContestBoostDoor::ActivedLoopEvent' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, PassedEvent_P1) == 0x000740, "Member 'APyEnergyContestBoostDoor::PassedEvent_P1' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, PassedEvent_P2) == 0x000748, "Member 'APyEnergyContestBoostDoor::PassedEvent_P2' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, PassedEvent_P3) == 0x000750, "Member 'APyEnergyContestBoostDoor::PassedEvent_P3' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, AutoActive) == 0x000758, "Member 'APyEnergyContestBoostDoor::AutoActive' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, AutoPostMultiPositionSound) == 0x000759, "Member 'APyEnergyContestBoostDoor::AutoPostMultiPositionSound' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, AlwaysHideVFXs) == 0x00075A, "Member 'APyEnergyContestBoostDoor::AlwaysHideVFXs' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, BattleSide) == 0x00075B, "Member 'APyEnergyContestBoostDoor::BattleSide' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, DelayDeactiveTimeSeconds) == 0x00075C, "Member 'APyEnergyContestBoostDoor::DelayDeactiveTimeSeconds' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, BoostBuffId) == 0x000760, "Member 'APyEnergyContestBoostDoor::BoostBuffId' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, BoostSpeed) == 0x000764, "Member 'APyEnergyContestBoostDoor::BoostSpeed' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, BoostDuration) == 0x000768, "Member 'APyEnergyContestBoostDoor::BoostDuration' has a wrong offset!");
-static_assert(offsetof(APyEnergyContestBoostDoor, VFXCompTag) == 0x00076C, "Member 'APyEnergyContestBoostDoor::VFXCompTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyEnergyContestBoostDoor;
 
 }
 

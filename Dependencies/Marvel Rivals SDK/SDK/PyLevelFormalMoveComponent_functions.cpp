@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "PyLevelFormalMoveComponent_classes.hpp"
+#include "PyLevelFormalMoveComponent_parameters.hpp"
 
 
 namespace SDK

@@ -44,26 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatOut_ItemText_Lv2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatOut_ItemText_Lv2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatOut_ItemText_Lv2_C")
 	}
 	static class UWBP_ChatOut_ItemText_Lv2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatOut_ItemText_Lv2_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatOut_ItemText_Lv2_C) == 0x000010, "Wrong alignment on UWBP_ChatOut_ItemText_Lv2_C");
-static_assert(sizeof(UWBP_ChatOut_ItemText_Lv2_C) == 0x0009C0, "Wrong size on UWBP_ChatOut_ItemText_Lv2_C");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, UberGraphFrame) == 0x000968, "Member 'UWBP_ChatOut_ItemText_Lv2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Anim_FadeIn_Sound) == 0x000970, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Anim_FadeIn_Sound' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Anim_FadeIn_Prompt) == 0x000978, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Anim_FadeIn_Prompt' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Anim_FadeOut_Slowly) == 0x000980, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Anim_FadeOut_Slowly' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, HBText_Content) == 0x000988, "Member 'UWBP_ChatOut_ItemText_Lv2_C::HBText_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Img_Chat_Icon) == 0x000990, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Img_Chat_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Img_Chat_Icon_Vx) == 0x000998, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Img_Chat_Icon_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, Img_Tips_Glow) == 0x0009A0, "Member 'UWBP_ChatOut_ItemText_Lv2_C::Img_Tips_Glow' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, OverlayEffect) == 0x0009A8, "Member 'UWBP_ChatOut_ItemText_Lv2_C::OverlayEffect' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, RText_Content) == 0x0009B0, "Member 'UWBP_ChatOut_ItemText_Lv2_C::RText_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatOut_ItemText_Lv2_C, SizeBox_TextWidth) == 0x0009B8, "Member 'UWBP_ChatOut_ItemText_Lv2_C::SizeBox_TextWidth' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatOut_ItemText_Lv2_C;
 
 }
 

@@ -46,22 +46,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyHalloweenMissionPoint">();
+		STATIC_CLASS_IMPL("PyHalloweenMissionPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyHalloweenMissionPoint")
 	}
 	static class APyHalloweenMissionPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyHalloweenMissionPoint>();
 	}
 };
-static_assert(alignof(APyHalloweenMissionPoint) == 0x000010, "Wrong alignment on APyHalloweenMissionPoint");
-static_assert(sizeof(APyHalloweenMissionPoint) == 0x000720, "Wrong size on APyHalloweenMissionPoint");
-static_assert(offsetof(APyHalloweenMissionPoint, State) == 0x0006E0, "Member 'APyHalloweenMissionPoint::State' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, WaveIndex) == 0x0006E4, "Member 'APyHalloweenMissionPoint::WaveIndex' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, FinishAudioEvent) == 0x0006E8, "Member 'APyHalloweenMissionPoint::FinishAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, ListenWallName) == 0x0006F0, "Member 'APyHalloweenMissionPoint::ListenWallName' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, FadeOutCurve) == 0x000700, "Member 'APyHalloweenMissionPoint::FadeOutCurve' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, InstanceNiagara1) == 0x000708, "Member 'APyHalloweenMissionPoint::InstanceNiagara1' has a wrong offset!");
-static_assert(offsetof(APyHalloweenMissionPoint, InstanceNiagara2) == 0x000710, "Member 'APyHalloweenMissionPoint::InstanceNiagara2' has a wrong offset!");
+DUMPER7_ASSERTS_APyHalloweenMissionPoint;
 
 }
 

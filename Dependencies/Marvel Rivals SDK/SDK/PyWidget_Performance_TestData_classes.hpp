@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Performance_TestData.PyWidget_Performance_TestData
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Performance_TestData final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Class_SystemItem;                                  // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Class_SystemItem;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,29 +33,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestData">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestData")
 	}
 	static class UPyWidget_Performance_TestData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestData>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestData) == 0x000008, "Wrong alignment on UPyWidget_Performance_TestData");
-static_assert(sizeof(UPyWidget_Performance_TestData) == 0x0005C8, "Wrong size on UPyWidget_Performance_TestData");
-static_assert(offsetof(UPyWidget_Performance_TestData, Class_SystemItem) == 0x0005C0, "Member 'UPyWidget_Performance_TestData::Class_SystemItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestData;
 
 // PythonClass PyWidget_Performance_TestData.PyWidget_Performance_TestData_Fraction
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_Performance_TestData_Fraction final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Title_Text;                                        // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_High;                                   // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_Mid;                                    // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Line_Color_Low;                                    // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_High;                                     // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Standard_Mid;                                      // 0x060C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Title_Text;                                        // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_High;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_Mid;                                    // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Line_Color_Low;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_High;                                     // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Standard_Mid;                                      // 0x0614(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -65,21 +67,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Performance_TestData_Fraction">();
+		STATIC_CLASS_IMPL("PyWidget_Performance_TestData_Fraction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Performance_TestData_Fraction")
 	}
 	static class UPyWidget_Performance_TestData_Fraction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Performance_TestData_Fraction>();
 	}
 };
-static_assert(alignof(UPyWidget_Performance_TestData_Fraction) == 0x000008, "Wrong alignment on UPyWidget_Performance_TestData_Fraction");
-static_assert(sizeof(UPyWidget_Performance_TestData_Fraction) == 0x000610, "Wrong size on UPyWidget_Performance_TestData_Fraction");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Title_Text) == 0x0005C0, "Member 'UPyWidget_Performance_TestData_Fraction::Title_Text' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Line_Color_High) == 0x0005D8, "Member 'UPyWidget_Performance_TestData_Fraction::Line_Color_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Line_Color_Mid) == 0x0005E8, "Member 'UPyWidget_Performance_TestData_Fraction::Line_Color_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Line_Color_Low) == 0x0005F8, "Member 'UPyWidget_Performance_TestData_Fraction::Line_Color_Low' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Standard_High) == 0x000608, "Member 'UPyWidget_Performance_TestData_Fraction::Standard_High' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Performance_TestData_Fraction, Standard_Mid) == 0x00060C, "Member 'UPyWidget_Performance_TestData_Fraction::Standard_Mid' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Performance_TestData_Fraction;
 
 }
 

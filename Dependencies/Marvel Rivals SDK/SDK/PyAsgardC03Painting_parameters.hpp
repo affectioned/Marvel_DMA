@@ -23,9 +23,7 @@ struct PyAsgardC03Painting_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAsgardC03Painting_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyAsgardC03Painting_ReceiveEndPlay");
-static_assert(sizeof(PyAsgardC03Painting_ReceiveEndPlay) == 0x000001, "Wrong size on PyAsgardC03Painting_ReceiveEndPlay");
-static_assert(offsetof(PyAsgardC03Painting_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyAsgardC03Painting_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAsgardC03Painting_ReceiveEndPlay;
 
 }
 

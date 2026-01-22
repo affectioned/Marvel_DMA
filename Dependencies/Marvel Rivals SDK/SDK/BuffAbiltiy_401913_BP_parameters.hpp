@@ -22,10 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWasCancelled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP) == 0x000004, "Wrong alignment on BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP");
-static_assert(sizeof(BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP) == 0x000008, "Wrong size on BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP");
-static_assert(offsetof(BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP, EntryPoint) == 0x000000, "Member 'BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP, K2Node_Event_bWasCancelled) == 0x000004, "Member 'BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP::K2Node_Event_bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbiltiy_401913_BP_C_ExecuteUbergraph_BuffAbiltiy_401913_BP;
 
 // Function BuffAbiltiy_401913_BP.BuffAbiltiy_401913_BP_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,7 @@ struct BuffAbiltiy_401913_BP_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuffAbiltiy_401913_BP_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on BuffAbiltiy_401913_BP_C_K2_OnEndAbility");
-static_assert(sizeof(BuffAbiltiy_401913_BP_C_K2_OnEndAbility) == 0x000001, "Wrong size on BuffAbiltiy_401913_BP_C_K2_OnEndAbility");
-static_assert(offsetof(BuffAbiltiy_401913_BP_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'BuffAbiltiy_401913_BP_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_BuffAbiltiy_401913_BP_C_K2_OnEndAbility;
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyAbility_214.PyExtraWidget_214
-// 0x0050 (0x0670 - 0x0620)
+// 0x0050 (0x0678 - 0x0628)
 class UPyExtraWidget_214 : public UWidget_AbilityStatus_Base
 {
 public:
-	TMap<int32, class UTexture2D*>                IconMap;                                           // 0x0620(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, class UTexture2D*>                IconMap;                                           // 0x0628(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtraWidget_214">();
+		STATIC_CLASS_IMPL("PyExtraWidget_214")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtraWidget_214")
 	}
 	static class UPyExtraWidget_214* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtraWidget_214>();
 	}
 };
-static_assert(alignof(UPyExtraWidget_214) == 0x000008, "Wrong alignment on UPyExtraWidget_214");
-static_assert(sizeof(UPyExtraWidget_214) == 0x000670, "Wrong size on UPyExtraWidget_214");
-static_assert(offsetof(UPyExtraWidget_214, IconMap) == 0x000620, "Member 'UPyExtraWidget_214::IconMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtraWidget_214;
 
 // PythonClass PyAbility_214.PyCue_Ability_Instant_21401
 // 0x0008 (0x02B8 - 0x02B0)
@@ -54,16 +56,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Instant_21401">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Instant_21401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Instant_21401")
 	}
 	static class UPyCue_Ability_Instant_21401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Ability_Instant_21401>();
 	}
 };
-static_assert(alignof(UPyCue_Ability_Instant_21401) == 0x000008, "Wrong alignment on UPyCue_Ability_Instant_21401");
-static_assert(sizeof(UPyCue_Ability_Instant_21401) == 0x0002B8, "Wrong size on UPyCue_Ability_Instant_21401");
-static_assert(offsetof(UPyCue_Ability_Instant_21401, JoinAudioEvent) == 0x0002B0, "Member 'UPyCue_Ability_Instant_21401::JoinAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyCue_Ability_Instant_21401;
+
+// PythonClass PyAbility_214.PyAbility_214
+// 0x0000 (0x2B98 - 0x2B98)
+class UPyAbility_214 : public UAbility_214
+{
+public:
+	bool IsValidEmote(int64 emote_id);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyAbility_214")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_214")
+	}
+	static class UPyAbility_214* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyAbility_214>();
+	}
+};
+DUMPER7_ASSERTS_UPyAbility_214;
 
 }
 

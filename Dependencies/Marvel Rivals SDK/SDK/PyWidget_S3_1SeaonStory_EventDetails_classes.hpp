@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_S3_1SeaonStory_EventDetails.PyWidget_S3_1SeasonStory_EventDetails_MissionItem
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_S3_1SeasonStory_EventDetails_MissionItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TaskIdx;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            RedSlateColor;                                     // 0x05C0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            GreenSlateColor;                                   // 0x05D4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TaskIdx;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            RedSlateColor;                                     // 0x05C8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GreenSlateColor;                                   // 0x05DC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,33 +36,33 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_EventDetails_MissionItem">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_EventDetails_MissionItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_EventDetails_MissionItem")
 	}
 	static class UPyWidget_S3_1SeasonStory_EventDetails_MissionItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_EventDetails_MissionItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_EventDetails_MissionItem) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_EventDetails_MissionItem");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_EventDetails_MissionItem) == 0x0005E8, "Wrong size on UPyWidget_S3_1SeasonStory_EventDetails_MissionItem");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_MissionItem, TaskIdx) == 0x0005BC, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_MissionItem::TaskIdx' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_MissionItem, RedSlateColor) == 0x0005C0, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_MissionItem::RedSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_MissionItem, GreenSlateColor) == 0x0005D4, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_MissionItem::GreenSlateColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_EventDetails_MissionItem;
 
 // PythonClass PyWidget_S3_1SeaonStory_EventDetails.PyWidget_S3_1SeasonStory_EventDetails_TabItem
-// 0x0060 (0x0620 - 0x05C0)
+// 0x0060 (0x0628 - 0x05C8)
 class UPyWidget_S3_1SeasonStory_EventDetails_TabItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         EventId;                                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BlueSlateColor;                                    // 0x05C0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            WhiteSlateColor;                                   // 0x05D4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            GraySlateColor;                                    // 0x05E8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             DefaultTexture;                                    // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             SelectTexture;                                     // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         EventId;                                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BlueSlateColor;                                    // 0x05C8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WhiteSlateColor;                                   // 0x05DC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            GraySlateColor;                                    // 0x05F0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             DefaultTexture;                                    // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SelectTexture;                                     // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 EventId)> OnEventClicked;                                    // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -72,29 +72,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_EventDetails_TabItem">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_EventDetails_TabItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_EventDetails_TabItem")
 	}
 	static class UPyWidget_S3_1SeasonStory_EventDetails_TabItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_EventDetails_TabItem>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_EventDetails_TabItem");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem) == 0x000620, "Wrong size on UPyWidget_S3_1SeasonStory_EventDetails_TabItem");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, EventId) == 0x0005BC, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::EventId' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, BlueSlateColor) == 0x0005C0, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::BlueSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, WhiteSlateColor) == 0x0005D4, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::WhiteSlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, GraySlateColor) == 0x0005E8, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::GraySlateColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, DefaultTexture) == 0x000600, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::DefaultTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, SelectTexture) == 0x000608, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::SelectTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails_TabItem, OnEventClicked) == 0x000610, "Member 'UPyWidget_S3_1SeasonStory_EventDetails_TabItem::OnEventClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_EventDetails_TabItem;
 
 // PythonClass PyWidget_S3_1SeaonStory_EventDetails.PyWidget_S3_1SeasonStory_EventDetails
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_S3_1SeasonStory_EventDetails final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UAkAudioEvent*                          SwitchEventAudio;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          SwitchEventAudio;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -108,16 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_S3_1SeasonStory_EventDetails">();
+		STATIC_CLASS_IMPL("PyWidget_S3_1SeasonStory_EventDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_S3_1SeasonStory_EventDetails")
 	}
 	static class UPyWidget_S3_1SeasonStory_EventDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_S3_1SeasonStory_EventDetails>();
 	}
 };
-static_assert(alignof(UPyWidget_S3_1SeasonStory_EventDetails) == 0x000008, "Wrong alignment on UPyWidget_S3_1SeasonStory_EventDetails");
-static_assert(sizeof(UPyWidget_S3_1SeasonStory_EventDetails) == 0x000600, "Wrong size on UPyWidget_S3_1SeasonStory_EventDetails");
-static_assert(offsetof(UPyWidget_S3_1SeasonStory_EventDetails, SwitchEventAudio) == 0x0005F8, "Member 'UPyWidget_S3_1SeasonStory_EventDetails::SwitchEventAudio' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_S3_1SeasonStory_EventDetails;
 
 }
 

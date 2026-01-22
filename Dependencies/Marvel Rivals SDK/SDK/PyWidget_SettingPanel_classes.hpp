@@ -19,34 +19,34 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingPanel.PyWidget_SettingPanel
-// 0x0120 (0x0718 - 0x05F8)
+// 0x0120 (0x0720 - 0x0600)
 class UPyWidget_SettingPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   VoiceTabBtnName;                                   // 0x0600(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector2D                              GameTabMenuBGSize;                                 // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescribeCoronaSelectedColor;                       // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DescribeCoronaNoSelectedColor;                     // 0x063C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_CurrentBattle;                                 // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Graphics;                                      // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Audio;                                         // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_MouseAndKeyboard;                              // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Gamepad;                                       // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Social;                                        // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Other;                                         // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Accessibility;                                 // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetSwitcher*                        WidgetSwitcher_Content;                            // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                WBP_Setting_Window;                                // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           InputAction_OpenAccessibilityPreview;              // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           InputAction_CloseAccessibilityPreview;             // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           InputAction_SwitchAccessibilityPreviewScene;       // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   CheckNotBindTips;                                  // 0x06C0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   CheckNotBindSecondaryTitle;                        // 0x06D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FText                                   CheckNotBindSecondaryCheckBoxText;                 // 0x06F0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UWidget*                                HBox_RestartTheGame;                               // 0x0708(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                HBox_RejoinTheMatch;                               // 0x0710(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   VoiceTabBtnName;                                   // 0x0608(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector2D                              GameTabMenuBGSize;                                 // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescribeCoronaSelectedColor;                       // 0x0630(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DescribeCoronaNoSelectedColor;                     // 0x0644(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_CurrentBattle;                                 // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Graphics;                                      // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Audio;                                         // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_MouseAndKeyboard;                              // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Gamepad;                                       // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Social;                                        // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Other;                                         // 0x0688(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Accessibility;                                 // 0x0690(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetSwitcher*                        WidgetSwitcher_Content;                            // 0x0698(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                WBP_Setting_Window;                                // 0x06A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           InputAction_OpenAccessibilityPreview;              // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           InputAction_CloseAccessibilityPreview;             // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           InputAction_SwitchAccessibilityPreviewScene;       // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                WBP_Setting_Key_Class;                             // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   CheckNotBindTips;                                  // 0x06C8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   CheckNotBindSecondaryTitle;                        // 0x06E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FText                                   CheckNotBindSecondaryCheckBoxText;                 // 0x06F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UWidget*                                HBox_RestartTheGame;                               // 0x0710(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                HBox_RejoinTheMatch;                               // 0x0718(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -58,39 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettingPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingPanel")
 	}
 	static class UPyWidget_SettingPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingPanel) == 0x000008, "Wrong alignment on UPyWidget_SettingPanel");
-static_assert(sizeof(UPyWidget_SettingPanel) == 0x000718, "Wrong size on UPyWidget_SettingPanel");
-static_assert(offsetof(UPyWidget_SettingPanel, KeyAsset) == 0x0005F8, "Member 'UPyWidget_SettingPanel::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, VoiceTabBtnName) == 0x000600, "Member 'UPyWidget_SettingPanel::VoiceTabBtnName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, GameTabMenuBGSize) == 0x000618, "Member 'UPyWidget_SettingPanel::GameTabMenuBGSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, DescribeCoronaSelectedColor) == 0x000628, "Member 'UPyWidget_SettingPanel::DescribeCoronaSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, DescribeCoronaNoSelectedColor) == 0x00063C, "Member 'UPyWidget_SettingPanel::DescribeCoronaNoSelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_CurrentBattle) == 0x000650, "Member 'UPyWidget_SettingPanel::WBP_CurrentBattle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Graphics) == 0x000658, "Member 'UPyWidget_SettingPanel::WBP_Graphics' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Audio) == 0x000660, "Member 'UPyWidget_SettingPanel::WBP_Audio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_MouseAndKeyboard) == 0x000668, "Member 'UPyWidget_SettingPanel::WBP_MouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Gamepad) == 0x000670, "Member 'UPyWidget_SettingPanel::WBP_Gamepad' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Social) == 0x000678, "Member 'UPyWidget_SettingPanel::WBP_Social' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Other) == 0x000680, "Member 'UPyWidget_SettingPanel::WBP_Other' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Accessibility) == 0x000688, "Member 'UPyWidget_SettingPanel::WBP_Accessibility' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WidgetSwitcher_Content) == 0x000690, "Member 'UPyWidget_SettingPanel::WidgetSwitcher_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Setting_Window) == 0x000698, "Member 'UPyWidget_SettingPanel::WBP_Setting_Window' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, InputAction_OpenAccessibilityPreview) == 0x0006A0, "Member 'UPyWidget_SettingPanel::InputAction_OpenAccessibilityPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, InputAction_CloseAccessibilityPreview) == 0x0006A8, "Member 'UPyWidget_SettingPanel::InputAction_CloseAccessibilityPreview' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, InputAction_SwitchAccessibilityPreviewScene) == 0x0006B0, "Member 'UPyWidget_SettingPanel::InputAction_SwitchAccessibilityPreviewScene' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, WBP_Setting_Key_Class) == 0x0006B8, "Member 'UPyWidget_SettingPanel::WBP_Setting_Key_Class' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, CheckNotBindTips) == 0x0006C0, "Member 'UPyWidget_SettingPanel::CheckNotBindTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, CheckNotBindSecondaryTitle) == 0x0006D8, "Member 'UPyWidget_SettingPanel::CheckNotBindSecondaryTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, CheckNotBindSecondaryCheckBoxText) == 0x0006F0, "Member 'UPyWidget_SettingPanel::CheckNotBindSecondaryCheckBoxText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, HBox_RestartTheGame) == 0x000708, "Member 'UPyWidget_SettingPanel::HBox_RestartTheGame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettingPanel, HBox_RejoinTheMatch) == 0x000710, "Member 'UPyWidget_SettingPanel::HBox_RejoinTheMatch' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettingPanel;
 
 }
 

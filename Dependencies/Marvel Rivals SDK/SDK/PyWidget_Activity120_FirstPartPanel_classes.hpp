@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0010 (0x0610 - 0x0600)
 class UPyWidget_Activity120_FirstPartPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<float>                                 ProgressBar_VList;                                 // 0x05F8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<float>                                 ProgressBar_VList;                                 // 0x0600(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_FirstPartPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_FirstPartPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_FirstPartPanel")
 	}
 	static class UPyWidget_Activity120_FirstPartPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_FirstPartPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_FirstPartPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity120_FirstPartPanel");
-static_assert(sizeof(UPyWidget_Activity120_FirstPartPanel) == 0x000608, "Wrong size on UPyWidget_Activity120_FirstPartPanel");
-static_assert(offsetof(UPyWidget_Activity120_FirstPartPanel, ProgressBar_VList) == 0x0005F8, "Member 'UPyWidget_Activity120_FirstPartPanel::ProgressBar_VList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_FirstPartPanel;
 
 // PythonClass PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartMissionItem
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity120_FirstPartMissionItem final : public UPyWidget_Button
 {
 public:
@@ -58,22 +60,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_FirstPartMissionItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_FirstPartMissionItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_FirstPartMissionItem")
 	}
 	static class UPyWidget_Activity120_FirstPartMissionItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_FirstPartMissionItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_FirstPartMissionItem) == 0x000008, "Wrong alignment on UPyWidget_Activity120_FirstPartMissionItem");
-static_assert(sizeof(UPyWidget_Activity120_FirstPartMissionItem) == 0x000728, "Wrong size on UPyWidget_Activity120_FirstPartMissionItem");
+DUMPER7_ASSERTS_UPyWidget_Activity120_FirstPartMissionItem;
 
 // PythonClass PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartCardItem
-// 0x0008 (0x0730 - 0x0728)
+// 0x0008 (0x0788 - 0x0780)
 class UPyWidget_Activity120_FirstPartCardItem final : public UPyWidget_Button
 {
 public:
-	class UTexture2D*                             Texture_Mission_BG;                                // 0x0728(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Mission_BG;                                // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -84,19 +89,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_FirstPartCardItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_FirstPartCardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_FirstPartCardItem")
 	}
 	static class UPyWidget_Activity120_FirstPartCardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_FirstPartCardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_FirstPartCardItem) == 0x000008, "Wrong alignment on UPyWidget_Activity120_FirstPartCardItem");
-static_assert(sizeof(UPyWidget_Activity120_FirstPartCardItem) == 0x000730, "Wrong size on UPyWidget_Activity120_FirstPartCardItem");
-static_assert(offsetof(UPyWidget_Activity120_FirstPartCardItem, Texture_Mission_BG) == 0x000728, "Member 'UPyWidget_Activity120_FirstPartCardItem::Texture_Mission_BG' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity120_FirstPartCardItem;
 
 // PythonClass PyWidget_Activity120_FirstPartPanel.PyWidget_Activity120_FirstPartProgressItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity120_FirstPartProgressItem final : public UPyMarvelUserWidget
 {
 public:
@@ -108,15 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity120_FirstPartProgressItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity120_FirstPartProgressItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity120_FirstPartProgressItem")
 	}
 	static class UPyWidget_Activity120_FirstPartProgressItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity120_FirstPartProgressItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity120_FirstPartProgressItem) == 0x000008, "Wrong alignment on UPyWidget_Activity120_FirstPartProgressItem");
-static_assert(sizeof(UPyWidget_Activity120_FirstPartProgressItem) == 0x0005C0, "Wrong size on UPyWidget_Activity120_FirstPartProgressItem");
+DUMPER7_ASSERTS_UPyWidget_Activity120_FirstPartProgressItem;
 
 }
 

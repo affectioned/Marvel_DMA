@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Game_Subtitle.WBP_Game_Subtitle_C
-// 0x0020 (0x05F8 - 0x05D8)
+// 0x0020 (0x0600 - 0x05E0)
 class UWBP_Game_Subtitle_C final : public UPyWidget_GameSubtitle
 {
 public:
-	class UMarvelVerticalBox*                     VBox_Content;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_2;                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_3;                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_4;                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelVerticalBox*                     VBox_Content;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_2;                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_3;                        // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Game_Subtitle_Item_C*              WBP_Game_Subtitle_Item_C_4;                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Game_Subtitle_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Game_Subtitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Game_Subtitle_C")
 	}
 	static class UWBP_Game_Subtitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Game_Subtitle_C>();
 	}
 };
-static_assert(alignof(UWBP_Game_Subtitle_C) == 0x000008, "Wrong alignment on UWBP_Game_Subtitle_C");
-static_assert(sizeof(UWBP_Game_Subtitle_C) == 0x0005F8, "Wrong size on UWBP_Game_Subtitle_C");
-static_assert(offsetof(UWBP_Game_Subtitle_C, VBox_Content) == 0x0005D8, "Member 'UWBP_Game_Subtitle_C::VBox_Content' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_C, WBP_Game_Subtitle_Item_C_2) == 0x0005E0, "Member 'UWBP_Game_Subtitle_C::WBP_Game_Subtitle_Item_C_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_C, WBP_Game_Subtitle_Item_C_3) == 0x0005E8, "Member 'UWBP_Game_Subtitle_C::WBP_Game_Subtitle_Item_C_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Game_Subtitle_C, WBP_Game_Subtitle_Item_C_4) == 0x0005F0, "Member 'UWBP_Game_Subtitle_C::WBP_Game_Subtitle_Item_C_4' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Game_Subtitle_C;
 
 }
 

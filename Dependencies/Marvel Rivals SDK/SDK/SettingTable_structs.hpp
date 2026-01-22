@@ -21,9 +21,7 @@ struct FSettingTable final
 public:
 	class UDataTable*                             Table_4_DA13AA8A416FB727EFEE66A95B345321;          // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FSettingTable) == 0x000008, "Wrong alignment on FSettingTable");
-static_assert(sizeof(FSettingTable) == 0x000008, "Wrong size on FSettingTable");
-static_assert(offsetof(FSettingTable, Table_4_DA13AA8A416FB727EFEE66A95B345321) == 0x000000, "Member 'FSettingTable::Table_4_DA13AA8A416FB727EFEE66A95B345321' has a wrong offset!");
+DUMPER7_ASSERTS_FSettingTable;
 
 }
 

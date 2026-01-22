@@ -23,15 +23,18 @@ class UPyExtension_Input_LimitLength final : public UMarvelUserWidgetExtension
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Input_LimitLength">();
+		STATIC_CLASS_IMPL("PyExtension_Input_LimitLength")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Input_LimitLength")
 	}
 	static class UPyExtension_Input_LimitLength* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Input_LimitLength>();
 	}
 };
-static_assert(alignof(UPyExtension_Input_LimitLength) == 0x000008, "Wrong alignment on UPyExtension_Input_LimitLength");
-static_assert(sizeof(UPyExtension_Input_LimitLength) == 0x000030, "Wrong size on UPyExtension_Input_LimitLength");
+DUMPER7_ASSERTS_UPyExtension_Input_LimitLength;
 
 }
 

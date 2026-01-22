@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_PageListPanel_Base.PyWidget_Mall_PageListPanel_Base
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Mall_PageListPanel_Base : public UPyWidget_MallChildPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_PageListPanel_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_PageListPanel_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_PageListPanel_Base")
 	}
 	static class UPyWidget_Mall_PageListPanel_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_PageListPanel_Base>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_PageListPanel_Base) == 0x000008, "Wrong alignment on UPyWidget_Mall_PageListPanel_Base");
-static_assert(sizeof(UPyWidget_Mall_PageListPanel_Base) == 0x0005F8, "Wrong size on UPyWidget_Mall_PageListPanel_Base");
+DUMPER7_ASSERTS_UPyWidget_Mall_PageListPanel_Base;
 
 }
 

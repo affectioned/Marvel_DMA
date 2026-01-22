@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_SystemSwitch_Base">();
+		STATIC_CLASS_IMPL("PyExtension_SystemSwitch_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_SystemSwitch_Base")
 	}
 	static class UPyExtension_SystemSwitch_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_SystemSwitch_Base>();
 	}
 };
-static_assert(alignof(UPyExtension_SystemSwitch_Base) == 0x000008, "Wrong alignment on UPyExtension_SystemSwitch_Base");
-static_assert(sizeof(UPyExtension_SystemSwitch_Base) == 0x000030, "Wrong size on UPyExtension_SystemSwitch_Base");
+DUMPER7_ASSERTS_UPyExtension_SystemSwitch_Base;
 
 // PythonClass PyExtension_SystemSwitch.PyExtension_SystemSwitch_Widget
 // 0x0000 (0x0030 - 0x0030)
@@ -44,15 +47,18 @@ class UPyExtension_SystemSwitch_Widget : public UPyExtension_SystemSwitch_Base
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_SystemSwitch_Widget">();
+		STATIC_CLASS_IMPL("PyExtension_SystemSwitch_Widget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_SystemSwitch_Widget")
 	}
 	static class UPyExtension_SystemSwitch_Widget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_SystemSwitch_Widget>();
 	}
 };
-static_assert(alignof(UPyExtension_SystemSwitch_Widget) == 0x000008, "Wrong alignment on UPyExtension_SystemSwitch_Widget");
-static_assert(sizeof(UPyExtension_SystemSwitch_Widget) == 0x000030, "Wrong size on UPyExtension_SystemSwitch_Widget");
+DUMPER7_ASSERTS_UPyExtension_SystemSwitch_Widget;
 
 // PythonClass PyExtension_SystemSwitch.PyExtension_SystemSwitch_UserWidget
 // 0x0000 (0x0030 - 0x0030)
@@ -61,15 +67,18 @@ class UPyExtension_SystemSwitch_UserWidget : public UPyExtension_SystemSwitch_Wi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_SystemSwitch_UserWidget">();
+		STATIC_CLASS_IMPL("PyExtension_SystemSwitch_UserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_SystemSwitch_UserWidget")
 	}
 	static class UPyExtension_SystemSwitch_UserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_SystemSwitch_UserWidget>();
 	}
 };
-static_assert(alignof(UPyExtension_SystemSwitch_UserWidget) == 0x000008, "Wrong alignment on UPyExtension_SystemSwitch_UserWidget");
-static_assert(sizeof(UPyExtension_SystemSwitch_UserWidget) == 0x000030, "Wrong size on UPyExtension_SystemSwitch_UserWidget");
+DUMPER7_ASSERTS_UPyExtension_SystemSwitch_UserWidget;
 
 }
 

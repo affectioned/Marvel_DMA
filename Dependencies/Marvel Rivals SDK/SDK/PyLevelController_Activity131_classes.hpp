@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_Activity131">();
+		STATIC_CLASS_IMPL("PyLevelController_Activity131")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_Activity131")
 	}
 	static class APyLevelController_Activity131* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_Activity131>();
 	}
 };
-static_assert(alignof(APyLevelController_Activity131) == 0x000010, "Wrong alignment on APyLevelController_Activity131");
-static_assert(sizeof(APyLevelController_Activity131) == 0x0007E0, "Wrong size on APyLevelController_Activity131");
-static_assert(offsetof(APyLevelController_Activity131, LS_OrdinaryPropFadeIn) == 0x0006E0, "Member 'APyLevelController_Activity131::LS_OrdinaryPropFadeIn' has a wrong offset!");
-static_assert(offsetof(APyLevelController_Activity131, LS_HeroPropFadeIn) == 0x000760, "Member 'APyLevelController_Activity131::LS_HeroPropFadeIn' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_Activity131;
 
 }
 

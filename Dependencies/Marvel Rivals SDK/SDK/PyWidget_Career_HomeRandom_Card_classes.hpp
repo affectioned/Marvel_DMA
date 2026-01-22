@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Career_HomeRandom_Card">();
+		STATIC_CLASS_IMPL("PyWidget_Career_HomeRandom_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Career_HomeRandom_Card")
 	}
 	static class UPyWidget_Career_HomeRandom_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Career_HomeRandom_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_Career_HomeRandom_Card) == 0x000008, "Wrong alignment on UPyWidget_Career_HomeRandom_Card");
-static_assert(sizeof(UPyWidget_Career_HomeRandom_Card) == 0x0003B8, "Wrong size on UPyWidget_Career_HomeRandom_Card");
+DUMPER7_ASSERTS_UPyWidget_Career_HomeRandom_Card;
 
 }
 

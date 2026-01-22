@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Squad_WarmupGamesBtn.PyWidget_Squad_WarmupGamesBtn
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Squad_WarmupGamesBtn : public UPyMarvelUserWidget
 {
 public:
-	bool                                          NeedHotKey;                                        // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedHotKey;                                        // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_WarmupGamesBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_WarmupGamesBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_WarmupGamesBtn")
 	}
 	static class UPyWidget_Squad_WarmupGamesBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_WarmupGamesBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_WarmupGamesBtn) == 0x000008, "Wrong alignment on UPyWidget_Squad_WarmupGamesBtn");
-static_assert(sizeof(UPyWidget_Squad_WarmupGamesBtn) == 0x0005C0, "Wrong size on UPyWidget_Squad_WarmupGamesBtn");
-static_assert(offsetof(UPyWidget_Squad_WarmupGamesBtn, NeedHotKey) == 0x0005BA, "Member 'UPyWidget_Squad_WarmupGamesBtn::NeedHotKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_WarmupGamesBtn;
 
 }
 

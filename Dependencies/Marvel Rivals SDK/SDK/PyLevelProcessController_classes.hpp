@@ -12,8 +12,8 @@
 
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MarvelLevel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -58,25 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelProcessController">();
+		STATIC_CLASS_IMPL("PyLevelProcessController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelProcessController")
 	}
 	static class APyLevelProcessController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelProcessController>();
 	}
 };
-static_assert(alignof(APyLevelProcessController) == 0x000010, "Wrong alignment on APyLevelProcessController");
-static_assert(sizeof(APyLevelProcessController) == 0x000760, "Wrong size on APyLevelProcessController");
-static_assert(offsetof(APyLevelProcessController, bIsGroupActorsMoving) == 0x0006E0, "Member 'APyLevelProcessController::bIsGroupActorsMoving' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, CurrentPartName) == 0x0006E8, "Member 'APyLevelProcessController::CurrentPartName' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, EnterCameraInterp) == 0x0006F8, "Member 'APyLevelProcessController::EnterCameraInterp' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, EnterEffect) == 0x000700, "Member 'APyLevelProcessController::EnterEffect' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, EnterAudio) == 0x000708, "Member 'APyLevelProcessController::EnterAudio' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, SoftReferencedSelectHeroLevels) == 0x000710, "Member 'APyLevelProcessController::SoftReferencedSelectHeroLevels' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, PrepareStartDispatcher) == 0x000720, "Member 'APyLevelProcessController::PrepareStartDispatcher' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, PrepareEndDispatcher) == 0x000730, "Member 'APyLevelProcessController::PrepareEndDispatcher' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, FightStartDispatcher) == 0x000740, "Member 'APyLevelProcessController::FightStartDispatcher' has a wrong offset!");
-static_assert(offsetof(APyLevelProcessController, FightEndDispatcher) == 0x000750, "Member 'APyLevelProcessController::FightEndDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelProcessController;
 
 }
 

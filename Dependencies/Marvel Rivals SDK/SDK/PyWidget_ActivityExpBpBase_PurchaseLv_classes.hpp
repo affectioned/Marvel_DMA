@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ActivityExpBpBase_PurchaseLv.PyWidget_ActivityExpBpBase_PurchaseLv
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ActivityExpBpBase_PurchaseLv : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -27,36 +27,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ActivityExpBpBase_PurchaseLv">();
+		STATIC_CLASS_IMPL("PyWidget_ActivityExpBpBase_PurchaseLv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ActivityExpBpBase_PurchaseLv")
 	}
 	static class UPyWidget_ActivityExpBpBase_PurchaseLv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ActivityExpBpBase_PurchaseLv>();
 	}
 };
-static_assert(alignof(UPyWidget_ActivityExpBpBase_PurchaseLv) == 0x000008, "Wrong alignment on UPyWidget_ActivityExpBpBase_PurchaseLv");
-static_assert(sizeof(UPyWidget_ActivityExpBpBase_PurchaseLv) == 0x0005C0, "Wrong size on UPyWidget_ActivityExpBpBase_PurchaseLv");
+DUMPER7_ASSERTS_UPyWidget_ActivityExpBpBase_PurchaseLv;
 
 // PythonClass PyWidget_ActivityExpBpBase_PurchaseLv.PyWidget_Common_Activity_ExpBp_PurchaseLv
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Common_Activity_ExpBp_PurchaseLv final : public UPyWidget_ActivityExpBpBase_PurchaseLv
 {
 public:
-	class UDataAssetExpBp*                        DataAsset_ExpBp;                                   // 0x05C0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataAssetExpBp*                        DataAsset_ExpBp;                                   // 0x05C8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Activity_ExpBp_PurchaseLv">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Activity_ExpBp_PurchaseLv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Activity_ExpBp_PurchaseLv")
 	}
 	static class UPyWidget_Common_Activity_ExpBp_PurchaseLv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Activity_ExpBp_PurchaseLv>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Activity_ExpBp_PurchaseLv) == 0x000008, "Wrong alignment on UPyWidget_Common_Activity_ExpBp_PurchaseLv");
-static_assert(sizeof(UPyWidget_Common_Activity_ExpBp_PurchaseLv) == 0x0005C8, "Wrong size on UPyWidget_Common_Activity_ExpBp_PurchaseLv");
-static_assert(offsetof(UPyWidget_Common_Activity_ExpBp_PurchaseLv, DataAsset_ExpBp) == 0x0005C0, "Member 'UPyWidget_Common_Activity_ExpBp_PurchaseLv::DataAsset_ExpBp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Activity_ExpBp_PurchaseLv;
 
 }
 

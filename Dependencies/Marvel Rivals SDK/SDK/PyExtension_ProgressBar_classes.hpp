@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_ProgressBar">();
+		STATIC_CLASS_IMPL("PyExtension_ProgressBar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_ProgressBar")
 	}
 	static class UPyExtension_ProgressBar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_ProgressBar>();
 	}
 };
-static_assert(alignof(UPyExtension_ProgressBar) == 0x000008, "Wrong alignment on UPyExtension_ProgressBar");
-static_assert(sizeof(UPyExtension_ProgressBar) == 0x000030, "Wrong size on UPyExtension_ProgressBar");
+DUMPER7_ASSERTS_UPyExtension_ProgressBar;
 
 }
 

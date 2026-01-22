@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNewYorkH01CathedralBellSounds">();
+		STATIC_CLASS_IMPL("PyNewYorkH01CathedralBellSounds")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNewYorkH01CathedralBellSounds")
 	}
 	static class APyNewYorkH01CathedralBellSounds* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNewYorkH01CathedralBellSounds>();
 	}
 };
-static_assert(alignof(APyNewYorkH01CathedralBellSounds) == 0x000010, "Wrong alignment on APyNewYorkH01CathedralBellSounds");
-static_assert(sizeof(APyNewYorkH01CathedralBellSounds) == 0x000710, "Wrong size on APyNewYorkH01CathedralBellSounds");
-static_assert(offsetof(APyNewYorkH01CathedralBellSounds, Bell_AudioEvent_Phase1) == 0x000700, "Member 'APyNewYorkH01CathedralBellSounds::Bell_AudioEvent_Phase1' has a wrong offset!");
-static_assert(offsetof(APyNewYorkH01CathedralBellSounds, Bell_AudioEvent_Phase2) == 0x000708, "Member 'APyNewYorkH01CathedralBellSounds::Bell_AudioEvent_Phase2' has a wrong offset!");
+DUMPER7_ASSERTS_APyNewYorkH01CathedralBellSounds;
 
 }
 

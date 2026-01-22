@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PyDefaultUISettingEntryHandler_classes.hpp"
 #include "Marvel_classes.hpp"
+#include "PyDefaultUISettingEntryHandler_classes.hpp"
 
 
 namespace SDK
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySubtitleColorOptionsGenerator">();
+		STATIC_CLASS_IMPL("UISettingEntrySubtitleColorOptionsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySubtitleColorOptionsGenerator")
 	}
 	static class UUISettingEntrySubtitleColorOptionsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySubtitleColorOptionsGenerator>();
 	}
 };
-static_assert(alignof(UUISettingEntrySubtitleColorOptionsGenerator) == 0x000008, "Wrong alignment on UUISettingEntrySubtitleColorOptionsGenerator");
-static_assert(sizeof(UUISettingEntrySubtitleColorOptionsGenerator) == 0x000030, "Wrong size on UUISettingEntrySubtitleColorOptionsGenerator");
+DUMPER7_ASSERTS_UUISettingEntrySubtitleColorOptionsGenerator;
 
 // PythonClass Subtitle.UISettingEntrySubtitleHandler
 // 0x0000 (0x0030 - 0x0030)
@@ -47,15 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntrySubtitleHandler">();
+		STATIC_CLASS_IMPL("UISettingEntrySubtitleHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntrySubtitleHandler")
 	}
 	static class UUISettingEntrySubtitleHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntrySubtitleHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntrySubtitleHandler) == 0x000008, "Wrong alignment on UUISettingEntrySubtitleHandler");
-static_assert(sizeof(UUISettingEntrySubtitleHandler) == 0x000030, "Wrong size on UUISettingEntrySubtitleHandler");
+DUMPER7_ASSERTS_UUISettingEntrySubtitleHandler;
 
 }
 

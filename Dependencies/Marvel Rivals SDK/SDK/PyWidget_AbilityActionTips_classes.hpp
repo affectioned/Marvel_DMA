@@ -11,17 +11,20 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTip
-// 0x0000 (0x0578 - 0x0578)
+// 0x0008 (0x0588 - 0x0580)
 class UPyWidget_CommonAbilityActionTip : public UWidget_AbilityActionTip
 {
+public:
+	class UWidgetAnimation*                       Anim_State;                                        // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	void Construct();
 	void SetHintText(const class FText& InText);
@@ -31,26 +34,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonAbilityActionTip">();
+		STATIC_CLASS_IMPL("PyWidget_CommonAbilityActionTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonAbilityActionTip")
 	}
 	static class UPyWidget_CommonAbilityActionTip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonAbilityActionTip>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonAbilityActionTip) == 0x000008, "Wrong alignment on UPyWidget_CommonAbilityActionTip");
-static_assert(sizeof(UPyWidget_CommonAbilityActionTip) == 0x000578, "Wrong size on UPyWidget_CommonAbilityActionTip");
+DUMPER7_ASSERTS_UPyWidget_CommonAbilityActionTip;
 
 // PythonClass PyWidget_AbilityActionTips.PyWidget_CommonAbilityActionTips
-// 0x0040 (0x05B8 - 0x0578)
+// 0x0040 (0x05C0 - 0x0580)
 class UPyWidget_CommonAbilityActionTips : public UWidget_AbilityActionTips
 {
 public:
-	class UMarvelKeyUIAsset*                      UIKeyAsset;                                        // 0x0578(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           Tag_UseOuterLeftActionTip;                         // 0x0580(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           Tag_UseOuterRightActionTip;                        // 0x058C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDeclarationHolder                     ViewingCharacterHolder;                            // 0x0598(0x0010)(NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTipAdded;                                        // 0x05A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarvelKeyUIAsset*                      UIKeyAsset;                                        // 0x0580(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Tag_UseOuterLeftActionTip;                         // 0x0588(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Tag_UseOuterRightActionTip;                        // 0x0594(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDeclarationHolder                     ViewingCharacterHolder;                            // 0x05A0(0x0010)(NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTipAdded;                                        // 0x05B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -66,20 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonAbilityActionTips">();
+		STATIC_CLASS_IMPL("PyWidget_CommonAbilityActionTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonAbilityActionTips")
 	}
 	static class UPyWidget_CommonAbilityActionTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonAbilityActionTips>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonAbilityActionTips) == 0x000008, "Wrong alignment on UPyWidget_CommonAbilityActionTips");
-static_assert(sizeof(UPyWidget_CommonAbilityActionTips) == 0x0005B8, "Wrong size on UPyWidget_CommonAbilityActionTips");
-static_assert(offsetof(UPyWidget_CommonAbilityActionTips, UIKeyAsset) == 0x000578, "Member 'UPyWidget_CommonAbilityActionTips::UIKeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonAbilityActionTips, Tag_UseOuterLeftActionTip) == 0x000580, "Member 'UPyWidget_CommonAbilityActionTips::Tag_UseOuterLeftActionTip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonAbilityActionTips, Tag_UseOuterRightActionTip) == 0x00058C, "Member 'UPyWidget_CommonAbilityActionTips::Tag_UseOuterRightActionTip' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonAbilityActionTips, ViewingCharacterHolder) == 0x000598, "Member 'UPyWidget_CommonAbilityActionTips::ViewingCharacterHolder' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonAbilityActionTips, OnTipAdded) == 0x0005A8, "Member 'UPyWidget_CommonAbilityActionTips::OnTipAdded' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonAbilityActionTips;
 
 }
 

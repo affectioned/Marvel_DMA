@@ -27,12 +27,7 @@ public:
 	struct FLinearColor                           BGColor_17_45407B8B443188E61809FA81D7B7C2F2;       // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           BorderColor_18_F903B1E940FB0C53C38E3B9ED314D46A;   // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelHalloweenCardType) == 0x000008, "Wrong alignment on FMarvelHalloweenCardType");
-static_assert(sizeof(FMarvelHalloweenCardType) == 0x000040, "Wrong size on FMarvelHalloweenCardType");
-static_assert(offsetof(FMarvelHalloweenCardType, ID_16_2506C765442720763CD4F58D9208E390) == 0x000000, "Member 'FMarvelHalloweenCardType::ID_16_2506C765442720763CD4F58D9208E390' has a wrong offset!");
-static_assert(offsetof(FMarvelHalloweenCardType, TypeName_15_08AEB1B1458B086CA5A44BA84F2EBD4D) == 0x000008, "Member 'FMarvelHalloweenCardType::TypeName_15_08AEB1B1458B086CA5A44BA84F2EBD4D' has a wrong offset!");
-static_assert(offsetof(FMarvelHalloweenCardType, BGColor_17_45407B8B443188E61809FA81D7B7C2F2) == 0x000020, "Member 'FMarvelHalloweenCardType::BGColor_17_45407B8B443188E61809FA81D7B7C2F2' has a wrong offset!");
-static_assert(offsetof(FMarvelHalloweenCardType, BorderColor_18_F903B1E940FB0C53C38E3B9ED314D46A) == 0x000030, "Member 'FMarvelHalloweenCardType::BorderColor_18_F903B1E940FB0C53C38E3B9ED314D46A' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelHalloweenCardType;
 
 }
 

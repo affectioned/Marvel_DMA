@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AntiLag2BlueprintLibrary">();
+		STATIC_CLASS_IMPL("AntiLag2BlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AntiLag2BlueprintLibrary")
 	}
 	static class UAntiLag2BlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAntiLag2BlueprintLibrary>();
 	}
 };
-static_assert(alignof(UAntiLag2BlueprintLibrary) == 0x000008, "Wrong alignment on UAntiLag2BlueprintLibrary");
-static_assert(sizeof(UAntiLag2BlueprintLibrary) == 0x000030, "Wrong size on UAntiLag2BlueprintLibrary");
+DUMPER7_ASSERTS_UAntiLag2BlueprintLibrary;
 
 }
 

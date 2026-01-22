@@ -23,15 +23,18 @@ class ACameraActor_101561_BP_C final : public ASelectRegionCameraActor_101561
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraActor_101561_BP_C">();
+		BP_STATIC_CLASS_IMPL("CameraActor_101561_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraActor_101561_BP_C")
 	}
 	static class ACameraActor_101561_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraActor_101561_BP_C>();
 	}
 };
-static_assert(alignof(ACameraActor_101561_BP_C) == 0x000010, "Wrong alignment on ACameraActor_101561_BP_C");
-static_assert(sizeof(ACameraActor_101561_BP_C) == 0x001170, "Wrong size on ACameraActor_101561_BP_C");
+DUMPER7_ASSERTS_ACameraActor_101561_BP_C;
 
 }
 

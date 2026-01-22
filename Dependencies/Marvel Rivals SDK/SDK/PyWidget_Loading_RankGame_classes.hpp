@@ -11,26 +11,31 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "PyWidget_Loading_Game_classes.hpp"
+#include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Loading_RankGame.PyWidget_Loading_RankGame
-// 0x0050 (0x07E0 - 0x0790)
+// 0x0090 (0x0828 - 0x0798)
 class UPyWidget_Loading_RankGame final : public UPyWidget_Loading_Game
 {
 public:
-	int32                                         Show_Clan_Info_Time;                               // 0x0790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   AnonymousModeKey;                                  // 0x0798(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ReplayAnonymousModeInputAction;                    // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconMRC;                                       // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconCertifiedMRC;                              // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconClash;                                     // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             ClanIconCertifiedClash;                            // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Show_Clan_Info_Time;                               // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79C[0x4];                                      // 0x079C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   AnonymousModeKey;                                  // 0x07A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ReplayAnonymousModeInputAction;                    // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconMRC;                                       // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconCertifiedMRC;                              // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconClash;                                     // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             ClanIconCertifiedClash;                            // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Loading_Bg_Lightning_MRC;                    // 0x07E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Loading_Bg_Lightning_Clash;                  // 0x07F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Img_Loading_Bg_MRC;                          // 0x0808(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color_Img_Loading_Bg_Clash;                        // 0x0818(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,22 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Loading_RankGame">();
+		STATIC_CLASS_IMPL("PyWidget_Loading_RankGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Loading_RankGame")
 	}
 	static class UPyWidget_Loading_RankGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Loading_RankGame>();
 	}
 };
-static_assert(alignof(UPyWidget_Loading_RankGame) == 0x000008, "Wrong alignment on UPyWidget_Loading_RankGame");
-static_assert(sizeof(UPyWidget_Loading_RankGame) == 0x0007E0, "Wrong size on UPyWidget_Loading_RankGame");
-static_assert(offsetof(UPyWidget_Loading_RankGame, Show_Clan_Info_Time) == 0x000790, "Member 'UPyWidget_Loading_RankGame::Show_Clan_Info_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, AnonymousModeKey) == 0x000798, "Member 'UPyWidget_Loading_RankGame::AnonymousModeKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, ReplayAnonymousModeInputAction) == 0x0007B8, "Member 'UPyWidget_Loading_RankGame::ReplayAnonymousModeInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, ClanIconMRC) == 0x0007C0, "Member 'UPyWidget_Loading_RankGame::ClanIconMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, ClanIconCertifiedMRC) == 0x0007C8, "Member 'UPyWidget_Loading_RankGame::ClanIconCertifiedMRC' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, ClanIconClash) == 0x0007D0, "Member 'UPyWidget_Loading_RankGame::ClanIconClash' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Loading_RankGame, ClanIconCertifiedClash) == 0x0007D8, "Member 'UPyWidget_Loading_RankGame::ClanIconCertifiedClash' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Loading_RankGame;
 
 }
 

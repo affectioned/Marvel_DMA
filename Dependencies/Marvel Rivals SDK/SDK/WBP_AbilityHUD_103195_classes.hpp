@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "PyAbility_103195_classes.hpp"
+#include "PyUI_103195_classes.hpp"
 
 
 namespace SDK
@@ -30,20 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUD_103195_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUD_103195_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUD_103195_C")
 	}
 	static class UWBP_AbilityHUD_103195_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUD_103195_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUD_103195_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUD_103195_C");
-static_assert(sizeof(UWBP_AbilityHUD_103195_C) == 0x0006C8, "Wrong size on UWBP_AbilityHUD_103195_C");
-static_assert(offsetof(UWBP_AbilityHUD_103195_C, Anim_Reset) == 0x0006A0, "Member 'UWBP_AbilityHUD_103195_C::Anim_Reset' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUD_103195_C, Anim_CountDown) == 0x0006A8, "Member 'UWBP_AbilityHUD_103195_C::Anim_CountDown' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUD_103195_C, Img_Bar) == 0x0006B0, "Member 'UWBP_AbilityHUD_103195_C::Img_Bar' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUD_103195_C, Img_Glow_Vx) == 0x0006B8, "Member 'UWBP_AbilityHUD_103195_C::Img_Glow_Vx' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUD_103195_C, Text_Time) == 0x0006C0, "Member 'UWBP_AbilityHUD_103195_C::Text_Time' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUD_103195_C;
 
 }
 

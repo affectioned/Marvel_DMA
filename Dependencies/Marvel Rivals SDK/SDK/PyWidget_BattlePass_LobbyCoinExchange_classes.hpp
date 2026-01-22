@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_LobbyCoinExchange.PyWidget_BattlePass_LobbyCoinExchange_CheckBox
-// 0x0050 (0x0610 - 0x05C0)
+// 0x0050 (0x0618 - 0x05C8)
 class UPyWidget_BattlePass_LobbyCoinExchange_CheckBox final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelButton*                          Btn_Main;                                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Btn_Normal;                                // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Btn_Hover;                                 // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Btn_Press;                                 // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Btn_Normal_Selected;                           // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Btn_Hover_Selected;                            // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Btn_Press_Selected;                            // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Check;                                        // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool is_checked)> OnCheckedChanged;                                // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelButton*                          Btn_Main;                                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Btn_Normal;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Btn_Hover;                                 // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Btn_Press;                                 // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Btn_Normal_Selected;                           // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Btn_Hover_Selected;                            // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Btn_Press_Selected;                            // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Check;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool is_checked)> OnCheckedChanged;                                // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -40,47 +40,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_LobbyCoinExchange_CheckBox">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_LobbyCoinExchange_CheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_LobbyCoinExchange_CheckBox")
 	}
 	static class UPyWidget_BattlePass_LobbyCoinExchange_CheckBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_LobbyCoinExchange_CheckBox>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_LobbyCoinExchange_CheckBox");
-static_assert(sizeof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox) == 0x000610, "Wrong size on UPyWidget_BattlePass_LobbyCoinExchange_CheckBox");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Btn_Main) == 0x0005C0, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Overlay_Btn_Normal) == 0x0005C8, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Overlay_Btn_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Overlay_Btn_Hover) == 0x0005D0, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Overlay_Btn_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Overlay_Btn_Press) == 0x0005D8, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Overlay_Btn_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Img_Btn_Normal_Selected) == 0x0005E0, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Img_Btn_Normal_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Img_Btn_Hover_Selected) == 0x0005E8, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Img_Btn_Hover_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Img_Btn_Press_Selected) == 0x0005F0, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Img_Btn_Press_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, Text_Check) == 0x0005F8, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::Text_Check' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange_CheckBox, OnCheckedChanged) == 0x000600, "Member 'UPyWidget_BattlePass_LobbyCoinExchange_CheckBox::OnCheckedChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_LobbyCoinExchange_CheckBox;
 
 // PythonClass PyWidget_BattlePass_LobbyCoinExchange.PyWidget_BattlePass_LobbyCoinExchange
-// 0x0090 (0x0680 - 0x05F0)
+// 0x0090 (0x0688 - 0x05F8)
 class UPyWidget_BattlePass_LobbyCoinExchange final : public UPyWidget_SP_BG_CommonButtonAreaBase
 {
 public:
-	class UPyWidget_CommonItem*                   WBP_Item;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidgetCommonChooseNumber*            WBP_ChooseNumber;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_BattlePass_LobbyCoinExchange_CheckBox* WBP_BattlePass_UpdateCheck;               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Str_DisplayCoinNum;                                // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   RichText_Content;                                  // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelRichTextBlock*                   RichText_Title;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Bundle_Title;                                 // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Bundle_Title2;                                // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Enter;                                        // 0x0638(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_Upgrade;                                      // 0x0640(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_UpgradeLoop;                                  // 0x0648(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_NotUpgrade;                                   // 0x0650(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Discount_Number;                              // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Discount_Percentage;                          // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Save_Number;                                  // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Upgrade;                                   // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPyWidget_CommonButton_Icon*            WBP_Btn_PriceDetails;                              // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonItem*                   WBP_Item;                                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidgetCommonChooseNumber*            WBP_ChooseNumber;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_BattlePass_LobbyCoinExchange_CheckBox* WBP_BattlePass_UpdateCheck;               // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Str_DisplayCoinNum;                                // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   RichText_Content;                                  // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelRichTextBlock*                   RichText_Title;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Bundle_Title;                                 // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Bundle_Title2;                                // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Enter;                                        // 0x0640(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_Upgrade;                                      // 0x0648(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_UpgradeLoop;                                  // 0x0650(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_NotUpgrade;                                   // 0x0658(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Discount_Number;                              // 0x0660(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Discount_Percentage;                          // 0x0668(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Save_Number;                                  // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Upgrade;                                   // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPyWidget_CommonButton_Icon*            WBP_Btn_PriceDetails;                              // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -90,32 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_LobbyCoinExchange">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_LobbyCoinExchange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_LobbyCoinExchange")
 	}
 	static class UPyWidget_BattlePass_LobbyCoinExchange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_LobbyCoinExchange>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_LobbyCoinExchange) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_LobbyCoinExchange");
-static_assert(sizeof(UPyWidget_BattlePass_LobbyCoinExchange) == 0x000680, "Wrong size on UPyWidget_BattlePass_LobbyCoinExchange");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, WBP_Item) == 0x0005F0, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::WBP_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, WBP_ChooseNumber) == 0x0005F8, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::WBP_ChooseNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, WBP_BattlePass_UpdateCheck) == 0x000600, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::WBP_BattlePass_UpdateCheck' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Str_DisplayCoinNum) == 0x000608, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Str_DisplayCoinNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, RichText_Content) == 0x000618, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::RichText_Content' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, RichText_Title) == 0x000620, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::RichText_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Text_Bundle_Title) == 0x000628, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Text_Bundle_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Text_Bundle_Title2) == 0x000630, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Text_Bundle_Title2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Anim_Enter) == 0x000638, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Anim_Enter' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Anim_Upgrade) == 0x000640, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Anim_Upgrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Anim_UpgradeLoop) == 0x000648, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Anim_UpgradeLoop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Anim_NotUpgrade) == 0x000650, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Anim_NotUpgrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Text_Discount_Number) == 0x000658, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Text_Discount_Number' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Text_Discount_Percentage) == 0x000660, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Text_Discount_Percentage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Text_Save_Number) == 0x000668, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Text_Save_Number' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, Overlay_Upgrade) == 0x000670, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::Overlay_Upgrade' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_LobbyCoinExchange, WBP_Btn_PriceDetails) == 0x000678, "Member 'UPyWidget_BattlePass_LobbyCoinExchange::WBP_Btn_PriceDetails' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_LobbyCoinExchange;
 
 }
 

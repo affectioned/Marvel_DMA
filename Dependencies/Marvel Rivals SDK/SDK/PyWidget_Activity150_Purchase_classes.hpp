@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity150_Purchase.PyWidget_Activity150_Purchase_Card
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity150_Purchase_Card final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsGetNowVisible;                                   // 0x05BA(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGetNowVisible;                                   // 0x05C2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,19 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Purchase_Card">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Purchase_Card")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Purchase_Card")
 	}
 	static class UPyWidget_Activity150_Purchase_Card* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Purchase_Card>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Purchase_Card) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Purchase_Card");
-static_assert(sizeof(UPyWidget_Activity150_Purchase_Card) == 0x0005C0, "Wrong size on UPyWidget_Activity150_Purchase_Card");
-static_assert(offsetof(UPyWidget_Activity150_Purchase_Card, IsGetNowVisible) == 0x0005BA, "Member 'UPyWidget_Activity150_Purchase_Card::IsGetNowVisible' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Purchase_Card;
 
 // PythonClass PyWidget_Activity150_Purchase.PyWidget_Activity150_Purchase
-// 0x0000 (0x0710 - 0x0710)
+// 0x0000 (0x0718 - 0x0718)
 class UPyWidget_Activity150_Purchase final : public UPyWidget_ActivityExpBpBase_Purchase
 {
 public:
@@ -54,15 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity150_Purchase">();
+		STATIC_CLASS_IMPL("PyWidget_Activity150_Purchase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity150_Purchase")
 	}
 	static class UPyWidget_Activity150_Purchase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity150_Purchase>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity150_Purchase) == 0x000008, "Wrong alignment on UPyWidget_Activity150_Purchase");
-static_assert(sizeof(UPyWidget_Activity150_Purchase) == 0x000710, "Wrong size on UPyWidget_Activity150_Purchase");
+DUMPER7_ASSERTS_UPyWidget_Activity150_Purchase;
 
 }
 

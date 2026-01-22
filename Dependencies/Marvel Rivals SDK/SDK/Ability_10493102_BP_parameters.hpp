@@ -24,11 +24,7 @@ public:
 	class UGATask_SpawnScope*                     CallFunc_SpawnScope_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP) == 0x000008, "Wrong alignment on Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP");
-static_assert(sizeof(Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP) == 0x000018, "Wrong size on Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP");
-static_assert(offsetof(Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP, EntryPoint) == 0x000000, "Member 'Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP, CallFunc_SpawnScope_ReturnValue) == 0x000008, "Member 'Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP::CallFunc_SpawnScope_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Ability_10493102_BP_C_ExecuteUbergraph_Ability_10493102_BP;
 
 }
 

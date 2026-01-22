@@ -40,12 +40,7 @@ public:
 	class UObject*                                ConfigOwner;                                       // 0x0018(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FGuid                                  ConfigGuid;                                        // 0x0020(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassEntityConfig) == 0x000008, "Wrong alignment on FMassEntityConfig");
-static_assert(sizeof(FMassEntityConfig) == 0x000030, "Wrong size on FMassEntityConfig");
-static_assert(offsetof(FMassEntityConfig, Parent) == 0x000000, "Member 'FMassEntityConfig::Parent' has a wrong offset!");
-static_assert(offsetof(FMassEntityConfig, Traits) == 0x000008, "Member 'FMassEntityConfig::Traits' has a wrong offset!");
-static_assert(offsetof(FMassEntityConfig, ConfigOwner) == 0x000018, "Member 'FMassEntityConfig::ConfigOwner' has a wrong offset!");
-static_assert(offsetof(FMassEntityConfig, ConfigGuid) == 0x000020, "Member 'FMassEntityConfig::ConfigGuid' has a wrong offset!");
+DUMPER7_ASSERTS_FMassEntityConfig;
 
 // ScriptStruct MassSpawner.MassEntitySpawnDataGeneratorResult
 // 0x0048 (0x0048 - 0x0000)
@@ -58,13 +53,7 @@ public:
 	int32                                         EntityConfigIndex;                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumEntities;                                       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassEntitySpawnDataGeneratorResult) == 0x000008, "Wrong alignment on FMassEntitySpawnDataGeneratorResult");
-static_assert(sizeof(FMassEntitySpawnDataGeneratorResult) == 0x000048, "Wrong size on FMassEntitySpawnDataGeneratorResult");
-static_assert(offsetof(FMassEntitySpawnDataGeneratorResult, SpawnData) == 0x000000, "Member 'FMassEntitySpawnDataGeneratorResult::SpawnData' has a wrong offset!");
-static_assert(offsetof(FMassEntitySpawnDataGeneratorResult, SpawnDataProcessor) == 0x000028, "Member 'FMassEntitySpawnDataGeneratorResult::SpawnDataProcessor' has a wrong offset!");
-static_assert(offsetof(FMassEntitySpawnDataGeneratorResult, PostSpawnProcessors) == 0x000030, "Member 'FMassEntitySpawnDataGeneratorResult::PostSpawnProcessors' has a wrong offset!");
-static_assert(offsetof(FMassEntitySpawnDataGeneratorResult, EntityConfigIndex) == 0x000040, "Member 'FMassEntitySpawnDataGeneratorResult::EntityConfigIndex' has a wrong offset!");
-static_assert(offsetof(FMassEntitySpawnDataGeneratorResult, NumEntities) == 0x000044, "Member 'FMassEntitySpawnDataGeneratorResult::NumEntities' has a wrong offset!");
+DUMPER7_ASSERTS_FMassEntitySpawnDataGeneratorResult;
 
 // ScriptStruct MassSpawner.MassEntityTemplateID
 // 0x0020 (0x0020 - 0x0000)
@@ -76,11 +65,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	uint64                                        TotalHash;                                         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMassEntityTemplateID) == 0x000008, "Wrong alignment on FMassEntityTemplateID");
-static_assert(sizeof(FMassEntityTemplateID) == 0x000020, "Wrong size on FMassEntityTemplateID");
-static_assert(offsetof(FMassEntityTemplateID, ConfigGuid) == 0x000000, "Member 'FMassEntityTemplateID::ConfigGuid' has a wrong offset!");
-static_assert(offsetof(FMassEntityTemplateID, FlavorHash) == 0x000010, "Member 'FMassEntityTemplateID::FlavorHash' has a wrong offset!");
-static_assert(offsetof(FMassEntityTemplateID, TotalHash) == 0x000018, "Member 'FMassEntityTemplateID::TotalHash' has a wrong offset!");
+DUMPER7_ASSERTS_FMassEntityTemplateID;
 
 // ScriptStruct MassSpawner.MassEntityTemplateData
 // 0x00F8 (0x00F8 - 0x0000)
@@ -89,8 +74,7 @@ struct alignas(0x08) FMassEntityTemplateData final
 public:
 	uint8                                         Pad_0[0xF8];                                       // 0x0000(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassEntityTemplateData) == 0x000008, "Wrong alignment on FMassEntityTemplateData");
-static_assert(sizeof(FMassEntityTemplateData) == 0x0000F8, "Wrong size on FMassEntityTemplateData");
+DUMPER7_ASSERTS_FMassEntityTemplateData;
 
 // ScriptStruct MassSpawner.MassTransformsSpawnData
 // 0x0018 (0x0018 - 0x0000)
@@ -99,8 +83,7 @@ struct alignas(0x08) FMassTransformsSpawnData final
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassTransformsSpawnData) == 0x000008, "Wrong alignment on FMassTransformsSpawnData");
-static_assert(sizeof(FMassTransformsSpawnData) == 0x000018, "Wrong size on FMassTransformsSpawnData");
+DUMPER7_ASSERTS_FMassTransformsSpawnData;
 
 // ScriptStruct MassSpawner.MassSpawnedEntityType
 // 0x0040 (0x0040 - 0x0000)
@@ -112,11 +95,7 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMassEntityConfigAsset*                 EntityConfigPtr;                                   // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassSpawnedEntityType) == 0x000008, "Wrong alignment on FMassSpawnedEntityType");
-static_assert(sizeof(FMassSpawnedEntityType) == 0x000040, "Wrong size on FMassSpawnedEntityType");
-static_assert(offsetof(FMassSpawnedEntityType, EntityConfig) == 0x000000, "Member 'FMassSpawnedEntityType::EntityConfig' has a wrong offset!");
-static_assert(offsetof(FMassSpawnedEntityType, Proportion) == 0x000030, "Member 'FMassSpawnedEntityType::Proportion' has a wrong offset!");
-static_assert(offsetof(FMassSpawnedEntityType, EntityConfigPtr) == 0x000038, "Member 'FMassSpawnedEntityType::EntityConfigPtr' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSpawnedEntityType;
 
 // ScriptStruct MassSpawner.MassSpawnDataGenerator
 // 0x0018 (0x0018 - 0x0000)
@@ -128,11 +107,7 @@ public:
 	float                                         Proportion;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSpawnDataGenerator) == 0x000008, "Wrong alignment on FMassSpawnDataGenerator");
-static_assert(sizeof(FMassSpawnDataGenerator) == 0x000018, "Wrong size on FMassSpawnDataGenerator");
-static_assert(offsetof(FMassSpawnDataGenerator, GeneratorClass) == 0x000000, "Member 'FMassSpawnDataGenerator::GeneratorClass' has a wrong offset!");
-static_assert(offsetof(FMassSpawnDataGenerator, GeneratorInstance) == 0x000008, "Member 'FMassSpawnDataGenerator::GeneratorInstance' has a wrong offset!");
-static_assert(offsetof(FMassSpawnDataGenerator, Proportion) == 0x000010, "Member 'FMassSpawnDataGenerator::Proportion' has a wrong offset!");
+DUMPER7_ASSERTS_FMassSpawnDataGenerator;
 
 // ScriptStruct MassSpawner.ReplicationTemplateIDFragment
 // 0x0020 (0x0020 - 0x0000)
@@ -141,9 +116,7 @@ struct FReplicationTemplateIDFragment final : public FMassFragment
 public:
 	struct FMassEntityTemplateID                  ID;                                                // 0x0000(0x0020)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FReplicationTemplateIDFragment) == 0x000008, "Wrong alignment on FReplicationTemplateIDFragment");
-static_assert(sizeof(FReplicationTemplateIDFragment) == 0x000020, "Wrong size on FReplicationTemplateIDFragment");
-static_assert(offsetof(FReplicationTemplateIDFragment, ID) == 0x000000, "Member 'FReplicationTemplateIDFragment::ID' has a wrong offset!");
+DUMPER7_ASSERTS_FReplicationTemplateIDFragment;
 
 }
 

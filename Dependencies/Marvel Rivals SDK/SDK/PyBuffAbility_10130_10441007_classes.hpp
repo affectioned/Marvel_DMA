@@ -17,15 +17,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441007.PyBuffAbility_10130_10444192
-// 0x0030 (0x1A60 - 0x1A30)
+// 0x0030 (0x1A78 - 0x1A48)
 class UPyBuffAbility_10130_10444192 : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<int32>                                 AvaliableAbilities;                                // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         HealthReduceValue;                                 // 0x1A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A44[0x4];                                     // 0x1A44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 DamageBoostRatioOfStack;                           // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         DamageBoostBuffID;                                 // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                 AvaliableAbilities;                                // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         HealthReduceValue;                                 // 0x1A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A5C[0x4];                                     // 0x1A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 DamageBoostRatioOfStack;                           // 0x1A60(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         DamageBoostBuffID;                                 // 0x1A70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10444192">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10444192")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10444192")
 	}
 	static class UPyBuffAbility_10130_10444192* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10444192>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10444192) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10444192");
-static_assert(sizeof(UPyBuffAbility_10130_10444192) == 0x001A60, "Wrong size on UPyBuffAbility_10130_10444192");
-static_assert(offsetof(UPyBuffAbility_10130_10444192, AvaliableAbilities) == 0x001A30, "Member 'UPyBuffAbility_10130_10444192::AvaliableAbilities' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10444192, HealthReduceValue) == 0x001A40, "Member 'UPyBuffAbility_10130_10444192::HealthReduceValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10444192, DamageBoostRatioOfStack) == 0x001A48, "Member 'UPyBuffAbility_10130_10444192::DamageBoostRatioOfStack' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10444192, DamageBoostBuffID) == 0x001A58, "Member 'UPyBuffAbility_10130_10444192::DamageBoostBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10444192;
 
 }
 

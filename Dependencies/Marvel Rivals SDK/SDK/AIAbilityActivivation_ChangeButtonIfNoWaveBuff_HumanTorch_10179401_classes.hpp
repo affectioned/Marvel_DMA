@@ -23,15 +23,18 @@ class UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C fina
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C")
 	}
 	static class UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C) == 0x000008, "Wrong alignment on UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C");
-static_assert(sizeof(UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C) == 0x000040, "Wrong size on UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C");
+DUMPER7_ASSERTS_UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_HumanTorch_10179401_C;
 
 }
 

@@ -17,118 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.WhileActive
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool APyCue_AbilityLoop_10560201::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "WhileActive");
-
-	Params::PyCue_AbilityLoop_10560201_WhileActive Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnTimelineChanged
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const int32                             NewIndex                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_AbilityLoop_10560201::OnTimelineChanged(const int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnTimelineChanged");
-
-	Params::PyCue_AbilityLoop_10560201_OnTimelineChanged Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnRemove
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool APyCue_AbilityLoop_10560201::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnRemove");
-
-	Params::PyCue_AbilityLoop_10560201_OnRemove Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnReceiveTimelineSectionSwitch
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAnimTimeline*                    Timeline                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    SectionName                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void APyCue_AbilityLoop_10560201::OnReceiveTimelineSectionSwitch(class UAnimTimeline* Timeline, const class FString& SectionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnReceiveTimelineSectionSwitch");
-
-	Params::PyCue_AbilityLoop_10560201_OnReceiveTimelineSectionSwitch Parms{};
-
-	Parms.Timeline = Timeline;
-	Parms.SectionName = std::move(SectionName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105602.PyAbility_105602.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -378,6 +266,118 @@ void UPyAbility_105602::K2_RestoreMeshOffsetImmediately()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.WhileActive
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyCue_AbilityLoop_10560201::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "WhileActive");
+
+	Params::PyCue_AbilityLoop_10560201_WhileActive Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnTimelineChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const int32                             NewIndex                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_AbilityLoop_10560201::OnTimelineChanged(const int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnTimelineChanged");
+
+	Params::PyCue_AbilityLoop_10560201_OnTimelineChanged Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnRemove
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyCue_AbilityLoop_10560201::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnRemove");
+
+	Params::PyCue_AbilityLoop_10560201_OnRemove Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_105602.PyCue_AbilityLoop_10560201.OnReceiveTimelineSectionSwitch
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAnimTimeline*                    Timeline                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    SectionName                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void APyCue_AbilityLoop_10560201::OnReceiveTimelineSectionSwitch(class UAnimTimeline* Timeline, const class FString& SectionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_AbilityLoop_10560201", "OnReceiveTimelineSectionSwitch");
+
+	Params::PyCue_AbilityLoop_10560201_OnReceiveTimelineSectionSwitch Parms{};
+
+	Parms.Timeline = Timeline;
+	Parms.SectionName = std::move(SectionName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

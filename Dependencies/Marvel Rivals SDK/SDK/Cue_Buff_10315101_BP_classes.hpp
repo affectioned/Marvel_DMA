@@ -10,28 +10,31 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1031_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Buff_10315101_BP.Cue_Buff_10315101_BP_C
-// 0x0000 (0x19F0 - 0x19F0)
-class ACue_Buff_10315101_BP_C final : public ACue_Buff_10315102
+// 0x0000 (0x1AA0 - 0x1AA0)
+class ACue_Buff_10315101_BP_C final : public ACue_Buff_Frozen
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Buff_10315101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Buff_10315101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Buff_10315101_BP_C")
 	}
 	static class ACue_Buff_10315101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Buff_10315101_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Buff_10315101_BP_C) == 0x000010, "Wrong alignment on ACue_Buff_10315101_BP_C");
-static_assert(sizeof(ACue_Buff_10315101_BP_C) == 0x0019F0, "Wrong size on ACue_Buff_10315101_BP_C");
+DUMPER7_ASSERTS_ACue_Buff_10315101_BP_C;
 
 }
 

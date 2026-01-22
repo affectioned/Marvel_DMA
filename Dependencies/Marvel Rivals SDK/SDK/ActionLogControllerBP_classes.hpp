@@ -23,15 +23,18 @@ class UActionLogControllerBP_C final : public UPyActionLogController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActionLogControllerBP_C">();
+		BP_STATIC_CLASS_IMPL("ActionLogControllerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActionLogControllerBP_C")
 	}
 	static class UActionLogControllerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActionLogControllerBP_C>();
 	}
 };
-static_assert(alignof(UActionLogControllerBP_C) == 0x000008, "Wrong alignment on UActionLogControllerBP_C");
-static_assert(sizeof(UActionLogControllerBP_C) == 0x0000E0, "Wrong size on UActionLogControllerBP_C");
+DUMPER7_ASSERTS_UActionLogControllerBP_C;
 
 }
 

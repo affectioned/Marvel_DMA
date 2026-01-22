@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyMarvelBondManager.PyMarvelDefaultBondAbility
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyMarvelDefaultBondAbility : public UMarvelGameplayAbility
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelDefaultBondAbility">();
+		STATIC_CLASS_IMPL("PyMarvelDefaultBondAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelDefaultBondAbility")
 	}
 	static class UPyMarvelDefaultBondAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelDefaultBondAbility>();
 	}
 };
-static_assert(alignof(UPyMarvelDefaultBondAbility) == 0x000008, "Wrong alignment on UPyMarvelDefaultBondAbility");
-static_assert(sizeof(UPyMarvelDefaultBondAbility) == 0x0029F0, "Wrong size on UPyMarvelDefaultBondAbility");
+DUMPER7_ASSERTS_UPyMarvelDefaultBondAbility;
 
 // PythonClass PyMarvelBondManager.PyMarvelBondManager
 // 0x0000 (0x0880 - 0x0880)
@@ -59,15 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelBondManager">();
+		STATIC_CLASS_IMPL("PyMarvelBondManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelBondManager")
 	}
 	static class APyMarvelBondManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelBondManager>();
 	}
 };
-static_assert(alignof(APyMarvelBondManager) == 0x000010, "Wrong alignment on APyMarvelBondManager");
-static_assert(sizeof(APyMarvelBondManager) == 0x000880, "Wrong size on APyMarvelBondManager");
+DUMPER7_ASSERTS_APyMarvelBondManager;
 
 }
 

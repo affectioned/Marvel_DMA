@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_200010.PyAbility_200010
-// 0x0020 (0x2A10 - 0x29F0)
+// 0x0020 (0x2A60 - 0x2A40)
 class UPyAbility_200010 : public UMarvelGameplayAbility
 {
 public:
-	class APyLevelPortal*                         CurrentPortal;                                     // 0x29F0(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APyLevelPortalBase*                     CurrentPortalBase;                                 // 0x29F8(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APyLevelPortal* portal)> PortalChangeDispatcher;             // 0x2A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class APyLevelPortal*                         CurrentPortal;                                     // 0x2A40(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APyLevelPortalBase*                     CurrentPortalBase;                                 // 0x2A48(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APyLevelPortal* portal)> PortalChangeDispatcher;             // 0x2A50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -37,21 +37,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_200010">();
+		STATIC_CLASS_IMPL("PyAbility_200010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_200010")
 	}
 	static class UPyAbility_200010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_200010>();
 	}
 };
-static_assert(alignof(UPyAbility_200010) == 0x000008, "Wrong alignment on UPyAbility_200010");
-static_assert(sizeof(UPyAbility_200010) == 0x002A10, "Wrong size on UPyAbility_200010");
-static_assert(offsetof(UPyAbility_200010, CurrentPortal) == 0x0029F0, "Member 'UPyAbility_200010::CurrentPortal' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200010, CurrentPortalBase) == 0x0029F8, "Member 'UPyAbility_200010::CurrentPortalBase' has a wrong offset!");
-static_assert(offsetof(UPyAbility_200010, PortalChangeDispatcher) == 0x002A00, "Member 'UPyAbility_200010::PortalChangeDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_200010;
 
 // PythonClass PyAbility_200010.PyUIController_200010
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_200010 final : public UUIC_Ability
 {
 public:
@@ -61,15 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_200010">();
+		STATIC_CLASS_IMPL("PyUIController_200010")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_200010")
 	}
 	static class UPyUIController_200010* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_200010>();
 	}
 };
-static_assert(alignof(UPyUIController_200010) == 0x000008, "Wrong alignment on UPyUIController_200010");
-static_assert(sizeof(UPyUIController_200010) == 0x000F10, "Wrong size on UPyUIController_200010");
+DUMPER7_ASSERTS_UPyUIController_200010;
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "DeclarativeUnreal_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Marvel_classes.hpp"
 
 
@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_Ability100015_Waiting">();
+		STATIC_CLASS_IMPL("PyWidget3D_Ability100015_Waiting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_Ability100015_Waiting")
 	}
 	static class UPyWidget3D_Ability100015_Waiting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_Ability100015_Waiting>();
 	}
 };
-static_assert(alignof(UPyWidget3D_Ability100015_Waiting) == 0x000010, "Wrong alignment on UPyWidget3D_Ability100015_Waiting");
-static_assert(sizeof(UPyWidget3D_Ability100015_Waiting) == 0x0008D0, "Wrong size on UPyWidget3D_Ability100015_Waiting");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, TextColor_Normal) == 0x000870, "Member 'UPyWidget3D_Ability100015_Waiting::TextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, TextColor_Disable) == 0x000884, "Member 'UPyWidget3D_Ability100015_Waiting::TextColor_Disable' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, TextDistanceFormatter) == 0x000898, "Member 'UPyWidget3D_Ability100015_Waiting::TextDistanceFormatter' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, ShouldUpdateDistanceText) == 0x0008B0, "Member 'UPyWidget3D_Ability100015_Waiting::ShouldUpdateDistanceText' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, ViewTargetHolder) == 0x0008B8, "Member 'UPyWidget3D_Ability100015_Waiting::ViewTargetHolder' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, bCheckOtherWavingAbility) == 0x0008C8, "Member 'UPyWidget3D_Ability100015_Waiting::bCheckOtherWavingAbility' has a wrong offset!");
-static_assert(offsetof(UPyWidget3D_Ability100015_Waiting, OtherWavingAbilityID) == 0x0008CC, "Member 'UPyWidget3D_Ability100015_Waiting::OtherWavingAbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_Ability100015_Waiting;
 
 // PythonClass PyAbility_100015.PyWidget3D_Ability100015_Confirmed
 // 0x0010 (0x0880 - 0x0870)
@@ -76,33 +72,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_Ability100015_Confirmed">();
+		STATIC_CLASS_IMPL("PyWidget3D_Ability100015_Confirmed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_Ability100015_Confirmed")
 	}
 	static class UPyWidget3D_Ability100015_Confirmed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_Ability100015_Confirmed>();
 	}
 };
-static_assert(alignof(UPyWidget3D_Ability100015_Confirmed) == 0x000010, "Wrong alignment on UPyWidget3D_Ability100015_Confirmed");
-static_assert(sizeof(UPyWidget3D_Ability100015_Confirmed) == 0x000880, "Wrong size on UPyWidget3D_Ability100015_Confirmed");
-static_assert(offsetof(UPyWidget3D_Ability100015_Confirmed, ViewTargetHolder) == 0x000870, "Member 'UPyWidget3D_Ability100015_Confirmed::ViewTargetHolder' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_Ability100015_Confirmed;
 
 // PythonClass PyAbility_100015.PyCue_Ability_Loop_10001501
-// 0x0000 (0x0F90 - 0x0F90)
+// 0x0000 (0x0FA0 - 0x0FA0)
 class APyCue_Ability_Loop_10001501 final : public AMarvelCueNotify_Actor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10001501">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10001501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10001501")
 	}
 	static class APyCue_Ability_Loop_10001501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10001501>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10001501) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10001501");
-static_assert(sizeof(APyCue_Ability_Loop_10001501) == 0x000F90, "Wrong size on APyCue_Ability_Loop_10001501");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10001501;
 
 }
 

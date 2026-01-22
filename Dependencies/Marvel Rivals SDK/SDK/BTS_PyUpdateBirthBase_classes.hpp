@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdateBirthBase">();
+		STATIC_CLASS_IMPL("BTS_PyUpdateBirthBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdateBirthBase")
 	}
 	static class UBTS_PyUpdateBirthBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdateBirthBase>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdateBirthBase) == 0x000008, "Wrong alignment on UBTS_PyUpdateBirthBase");
-static_assert(sizeof(UBTS_PyUpdateBirthBase) == 0x000108, "Wrong size on UBTS_PyUpdateBirthBase");
-static_assert(offsetof(UBTS_PyUpdateBirthBase, OutAllyPlayerStart) == 0x0000A8, "Member 'UBTS_PyUpdateBirthBase::OutAllyPlayerStart' has a wrong offset!");
-static_assert(offsetof(UBTS_PyUpdateBirthBase, OutEnemyPlayerStart) == 0x0000D8, "Member 'UBTS_PyUpdateBirthBase::OutEnemyPlayerStart' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdateBirthBase;
 
 }
 

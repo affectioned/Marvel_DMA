@@ -18,25 +18,27 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104821.PyConfig_104821
-// 0x0398 (0x04B8 - 0x0120)
+// 0x04D8 (0x05F8 - 0x0120)
 class UPyConfig_104821 final : public UConfig_106
 {
 public:
-	struct FMarvelTraceRule                       HitResultFilter;                                   // 0x0120(0x0398)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FMarvelTraceRule                       HitResultFilter;                                   // 0x0120(0x04D8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104821">();
+		STATIC_CLASS_IMPL("PyConfig_104821")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104821")
 	}
 	static class UPyConfig_104821* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104821>();
 	}
 };
-static_assert(alignof(UPyConfig_104821) == 0x000008, "Wrong alignment on UPyConfig_104821");
-static_assert(sizeof(UPyConfig_104821) == 0x0004B8, "Wrong size on UPyConfig_104821");
-static_assert(offsetof(UPyConfig_104821, HitResultFilter) == 0x000120, "Member 'UPyConfig_104821::HitResultFilter' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104821;
 
 }
 

@@ -23,9 +23,7 @@ struct PyBuffAbility_120_10376181_OnGameplayActorAdded final
 public:
 	class AActor*                                 GameplayActor;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10376181_OnGameplayActorAdded) == 0x000008, "Wrong alignment on PyBuffAbility_120_10376181_OnGameplayActorAdded");
-static_assert(sizeof(PyBuffAbility_120_10376181_OnGameplayActorAdded) == 0x000008, "Wrong size on PyBuffAbility_120_10376181_OnGameplayActorAdded");
-static_assert(offsetof(PyBuffAbility_120_10376181_OnGameplayActorAdded, GameplayActor) == 0x000000, "Member 'PyBuffAbility_120_10376181_OnGameplayActorAdded::GameplayActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10376181_OnGameplayActorAdded;
 
 // PythonFunction PyBuffAbility_120_10376181.PyBuffAbility_120_10376181.OnProjectileEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyBuffAbility_120_10376181_OnProjectileEnd final
 public:
 	class AActor*                                 Projectile;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10376181_OnProjectileEnd) == 0x000008, "Wrong alignment on PyBuffAbility_120_10376181_OnProjectileEnd");
-static_assert(sizeof(PyBuffAbility_120_10376181_OnProjectileEnd) == 0x000008, "Wrong size on PyBuffAbility_120_10376181_OnProjectileEnd");
-static_assert(offsetof(PyBuffAbility_120_10376181_OnProjectileEnd, Projectile) == 0x000000, "Member 'PyBuffAbility_120_10376181_OnProjectileEnd::Projectile' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10376181_OnProjectileEnd;
 
 // PythonFunction PyBuffAbility_120_10376181.PyBuffAbility_120_10376181.OnScopeSuccess
 // 0x0170 (0x0170 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	class AActor*                                 scope;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyBuffAbility_120_10376181_OnScopeSuccess) == 0x000008, "Wrong alignment on PyBuffAbility_120_10376181_OnScopeSuccess");
-static_assert(sizeof(PyBuffAbility_120_10376181_OnScopeSuccess) == 0x000170, "Wrong size on PyBuffAbility_120_10376181_OnScopeSuccess");
-static_assert(offsetof(PyBuffAbility_120_10376181_OnScopeSuccess, scope) == 0x000000, "Member 'PyBuffAbility_120_10376181_OnScopeSuccess::scope' has a wrong offset!");
-static_assert(offsetof(PyBuffAbility_120_10376181_OnScopeSuccess, data) == 0x000008, "Member 'PyBuffAbility_120_10376181_OnScopeSuccess::data' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10376181_OnScopeSuccess;
 
 // PythonFunction PyBuffAbility_120_10376181.PyCue_Scope_Start_10376104.OnScopeNiagaraSpawned
 // 0x01E0 (0x01E0 - 0x0000)
@@ -60,11 +53,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned");
-static_assert(sizeof(PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned) == 0x0001E0, "Wrong size on PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned, InNiagaraComponent) == 0x000000, "Member 'PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned::InNiagaraComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned, MyTarget) == 0x000008, "Member 'PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned, Parameters) == 0x000010, "Member 'PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10376104_OnScopeNiagaraSpawned;
 
 // PythonFunction PyBuffAbility_120_10376181.PyCue_Scope_Start_10376104.OnHitSceneNiagaraSpawned
 // 0x01E0 (0x01E0 - 0x0000)
@@ -75,11 +64,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned");
-static_assert(sizeof(PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned) == 0x0001E0, "Wrong size on PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned, InNiagaraComponent) == 0x000000, "Member 'PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned::InNiagaraComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned, MyTarget) == 0x000008, "Member 'PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned, Parameters) == 0x000010, "Member 'PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10376104_OnHitSceneNiagaraSpawned;
 
 // PythonFunction PyBuffAbility_120_10376181.PyCue_Scope_Start_10376104.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -89,10 +74,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10376104_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10376104_OnExecuteFX");
-static_assert(sizeof(PyCue_Scope_Start_10376104_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Scope_Start_10376104_OnExecuteFX");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Scope_Start_10376104_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10376104_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Scope_Start_10376104_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10376104_OnExecuteFX;
 
 // PythonFunction PyBuffAbility_120_10376181.PyCue_Scope_HitImpact_10376104.GetDecalScale
 // 0x01E0 (0x01E0 - 0x0000)
@@ -103,11 +85,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x01D8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10376104_GetDecalScale) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10376104_GetDecalScale");
-static_assert(sizeof(PyCue_Scope_HitImpact_10376104_GetDecalScale) == 0x0001E0, "Wrong size on PyCue_Scope_HitImpact_10376104_GetDecalScale");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_GetDecalScale, MyTarget) == 0x000000, "Member 'PyCue_Scope_HitImpact_10376104_GetDecalScale::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_GetDecalScale, Parameters) == 0x000008, "Member 'PyCue_Scope_HitImpact_10376104_GetDecalScale::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_GetDecalScale, ReturnValue) == 0x0001D8, "Member 'PyCue_Scope_HitImpact_10376104_GetDecalScale::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10376104_GetDecalScale;
 
 // PythonFunction PyBuffAbility_120_10376181.PyCue_Scope_HitImpact_10376104.SetDecalMaterialParameter
 // 0x01E0 (0x01E0 - 0x0000)
@@ -118,11 +96,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDecalComponent*                        DecalComp;                                         // 0x01D8(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter");
-static_assert(sizeof(PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter) == 0x0001E0, "Wrong size on PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter, MyTarget) == 0x000000, "Member 'PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter, Parameters) == 0x000008, "Member 'PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter, DecalComp) == 0x0001D8, "Member 'PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter::DecalComp' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10376104_SetDecalMaterialParameter;
 
 }
 

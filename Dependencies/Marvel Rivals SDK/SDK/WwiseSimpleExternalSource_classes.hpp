@@ -30,18 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WwiseExternalSourceSettings">();
+		STATIC_CLASS_IMPL("WwiseExternalSourceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WwiseExternalSourceSettings")
 	}
 	static class UWwiseExternalSourceSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWwiseExternalSourceSettings>();
 	}
 };
-static_assert(alignof(UWwiseExternalSourceSettings) == 0x000008, "Wrong alignment on UWwiseExternalSourceSettings");
-static_assert(sizeof(UWwiseExternalSourceSettings) == 0x0000A8, "Wrong size on UWwiseExternalSourceSettings");
-static_assert(offsetof(UWwiseExternalSourceSettings, MediaInfoTable) == 0x000030, "Member 'UWwiseExternalSourceSettings::MediaInfoTable' has a wrong offset!");
-static_assert(offsetof(UWwiseExternalSourceSettings, ExternalSourceDefaultMedia) == 0x000058, "Member 'UWwiseExternalSourceSettings::ExternalSourceDefaultMedia' has a wrong offset!");
-static_assert(offsetof(UWwiseExternalSourceSettings, ExternalSourceStagingDirectory) == 0x000080, "Member 'UWwiseExternalSourceSettings::ExternalSourceStagingDirectory' has a wrong offset!");
+DUMPER7_ASSERTS_UWwiseExternalSourceSettings;
 
 }
 

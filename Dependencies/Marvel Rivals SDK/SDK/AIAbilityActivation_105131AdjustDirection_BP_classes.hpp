@@ -23,15 +23,18 @@ class UAIAbilityActivation_105131AdjustDirection_BP_C final : public UPyAIAbilit
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_105131AdjustDirection_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_105131AdjustDirection_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_105131AdjustDirection_BP_C")
 	}
 	static class UAIAbilityActivation_105131AdjustDirection_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_105131AdjustDirection_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_105131AdjustDirection_BP_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_105131AdjustDirection_BP_C");
-static_assert(sizeof(UAIAbilityActivation_105131AdjustDirection_BP_C) == 0x000048, "Wrong size on UAIAbilityActivation_105131AdjustDirection_BP_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_105131AdjustDirection_BP_C;
 
 }
 

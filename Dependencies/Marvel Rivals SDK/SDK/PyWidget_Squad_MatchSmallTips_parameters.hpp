@@ -21,9 +21,7 @@ struct PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisible;
 
 // PythonFunction PyWidget_Squad_MatchSmallTips.PyWidget_Squad_MatchSmallTips_Base.MarvelSetVisibleImmediately
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately) == 0x000001, "Wrong alignment on PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately");
-static_assert(sizeof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately) == 0x000001, "Wrong size on PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately");
-static_assert(offsetof(PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately, Visible) == 0x000000, "Member 'PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchSmallTips_Base_MarvelSetVisibleImmediately;
 
 // PythonFunction PyWidget_Squad_MatchSmallTips.PyWidget_Squad_MatchSmallTips_Base.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Squad_MatchSmallTips_Base_OnAnimationFinished;
 
 }
 

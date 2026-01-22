@@ -24,10 +24,7 @@ public:
 	struct FMarvelAbilitySocketInfo               SocketInfo;                                        // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 	int32                                         MergeCnt;                                          // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_CreateProjectileWithInfo) == 0x000010, "Wrong alignment on PyAbility_10130_104494_CreateProjectileWithInfo");
-static_assert(sizeof(PyAbility_10130_104494_CreateProjectileWithInfo) == 0x0000B0, "Wrong size on PyAbility_10130_104494_CreateProjectileWithInfo");
-static_assert(offsetof(PyAbility_10130_104494_CreateProjectileWithInfo, SocketInfo) == 0x000000, "Member 'PyAbility_10130_104494_CreateProjectileWithInfo::SocketInfo' has a wrong offset!");
-static_assert(offsetof(PyAbility_10130_104494_CreateProjectileWithInfo, MergeCnt) == 0x0000A0, "Member 'PyAbility_10130_104494_CreateProjectileWithInfo::MergeCnt' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_CreateProjectileWithInfo;
 
 // PythonFunction PyAbility_10130_104494.PyAbility_10130_104494.SetBD1
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyAbility_10130_104494_SetBD1 final
 public:
 	bool                                          is_bd1;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_SetBD1) == 0x000001, "Wrong alignment on PyAbility_10130_104494_SetBD1");
-static_assert(sizeof(PyAbility_10130_104494_SetBD1) == 0x000001, "Wrong size on PyAbility_10130_104494_SetBD1");
-static_assert(offsetof(PyAbility_10130_104494_SetBD1, is_bd1) == 0x000000, "Member 'PyAbility_10130_104494_SetBD1::is_bd1' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_SetBD1;
 
 // PythonFunction PyAbility_10130_104494.PyAbility_10130_104494.LimitRotateProjNum
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +42,7 @@ struct PyAbility_10130_104494_LimitRotateProjNum final
 public:
 	int32                                         MaxProjNum;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_LimitRotateProjNum) == 0x000004, "Wrong alignment on PyAbility_10130_104494_LimitRotateProjNum");
-static_assert(sizeof(PyAbility_10130_104494_LimitRotateProjNum) == 0x000004, "Wrong size on PyAbility_10130_104494_LimitRotateProjNum");
-static_assert(offsetof(PyAbility_10130_104494_LimitRotateProjNum, MaxProjNum) == 0x000000, "Member 'PyAbility_10130_104494_LimitRotateProjNum::MaxProjNum' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_LimitRotateProjNum;
 
 // PythonFunction PyAbility_10130_104494.PyAbility_10130_104494.SetRotateSpeedBoost
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyAbility_10130_104494_SetRotateSpeedBoost final
 public:
 	bool                                          enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_SetRotateSpeedBoost) == 0x000001, "Wrong alignment on PyAbility_10130_104494_SetRotateSpeedBoost");
-static_assert(sizeof(PyAbility_10130_104494_SetRotateSpeedBoost) == 0x000001, "Wrong size on PyAbility_10130_104494_SetRotateSpeedBoost");
-static_assert(offsetof(PyAbility_10130_104494_SetRotateSpeedBoost, enable) == 0x000000, "Member 'PyAbility_10130_104494_SetRotateSpeedBoost::enable' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_SetRotateSpeedBoost;
 
 // PythonFunction PyAbility_10130_104494.PyAbility_10130_104494.StartMoveOut
 // 0x000C (0x000C - 0x0000)
@@ -71,11 +62,7 @@ public:
 	float                                         IntervalTime;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RepeatTime;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_StartMoveOut) == 0x000004, "Wrong alignment on PyAbility_10130_104494_StartMoveOut");
-static_assert(sizeof(PyAbility_10130_104494_StartMoveOut) == 0x00000C, "Wrong size on PyAbility_10130_104494_StartMoveOut");
-static_assert(offsetof(PyAbility_10130_104494_StartMoveOut, OutwardTime) == 0x000000, "Member 'PyAbility_10130_104494_StartMoveOut::OutwardTime' has a wrong offset!");
-static_assert(offsetof(PyAbility_10130_104494_StartMoveOut, IntervalTime) == 0x000004, "Member 'PyAbility_10130_104494_StartMoveOut::IntervalTime' has a wrong offset!");
-static_assert(offsetof(PyAbility_10130_104494_StartMoveOut, RepeatTime) == 0x000008, "Member 'PyAbility_10130_104494_StartMoveOut::RepeatTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_StartMoveOut;
 
 // PythonFunction PyAbility_10130_104494.PyAbility_10130_104494.RemoveFromArr
 // 0x0008 (0x0008 - 0x0000)
@@ -84,9 +71,7 @@ struct PyAbility_10130_104494_RemoveFromArr final
 public:
 	class AActor*                                 Projectile;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_10130_104494_RemoveFromArr) == 0x000008, "Wrong alignment on PyAbility_10130_104494_RemoveFromArr");
-static_assert(sizeof(PyAbility_10130_104494_RemoveFromArr) == 0x000008, "Wrong size on PyAbility_10130_104494_RemoveFromArr");
-static_assert(offsetof(PyAbility_10130_104494_RemoveFromArr, Projectile) == 0x000000, "Member 'PyAbility_10130_104494_RemoveFromArr::Projectile' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_10130_104494_RemoveFromArr;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PageList_SegmentedToggle.PyWidget_PageList_SegmentedToggle
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PageList_SegmentedToggle : public UPyMarvelUserWidget
 {
 public:
@@ -26,32 +26,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PageList_SegmentedToggle">();
+		STATIC_CLASS_IMPL("PyWidget_PageList_SegmentedToggle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PageList_SegmentedToggle")
 	}
 	static class UPyWidget_PageList_SegmentedToggle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PageList_SegmentedToggle>();
 	}
 };
-static_assert(alignof(UPyWidget_PageList_SegmentedToggle) == 0x000008, "Wrong alignment on UPyWidget_PageList_SegmentedToggle");
-static_assert(sizeof(UPyWidget_PageList_SegmentedToggle) == 0x0005C0, "Wrong size on UPyWidget_PageList_SegmentedToggle");
+DUMPER7_ASSERTS_UPyWidget_PageList_SegmentedToggle;
 
 // PythonClass PyWidget_PageList_SegmentedToggle.PyWidget_PageList_SegmentedToggle_FirstPage
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_PageList_SegmentedToggle_FirstPage final : public UPyWidget_PageList_SegmentedToggle
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PageList_SegmentedToggle_FirstPage">();
+		STATIC_CLASS_IMPL("PyWidget_PageList_SegmentedToggle_FirstPage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PageList_SegmentedToggle_FirstPage")
 	}
 	static class UPyWidget_PageList_SegmentedToggle_FirstPage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PageList_SegmentedToggle_FirstPage>();
 	}
 };
-static_assert(alignof(UPyWidget_PageList_SegmentedToggle_FirstPage) == 0x000008, "Wrong alignment on UPyWidget_PageList_SegmentedToggle_FirstPage");
-static_assert(sizeof(UPyWidget_PageList_SegmentedToggle_FirstPage) == 0x0005C0, "Wrong size on UPyWidget_PageList_SegmentedToggle_FirstPage");
+DUMPER7_ASSERTS_UPyWidget_PageList_SegmentedToggle_FirstPage;
 
 }
 

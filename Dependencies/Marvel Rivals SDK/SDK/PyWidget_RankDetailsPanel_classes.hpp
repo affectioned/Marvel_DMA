@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RankDetailsPanel.PyWidget_RankDetails
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_RankDetails final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_RankDetails">();
+		STATIC_CLASS_IMPL("PyWidget_RankDetails")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_RankDetails")
 	}
 	static class UPyWidget_RankDetails* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_RankDetails>();
 	}
 };
-static_assert(alignof(UPyWidget_RankDetails) == 0x000008, "Wrong alignment on UPyWidget_RankDetails");
-static_assert(sizeof(UPyWidget_RankDetails) == 0x0005F8, "Wrong size on UPyWidget_RankDetails");
+DUMPER7_ASSERTS_UPyWidget_RankDetails;
 
 }
 

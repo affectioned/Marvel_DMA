@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyMarvelReplayController.PyMarvelReplayController
-// 0x0000 (0x1500 - 0x1500)
+// 0x0000 (0x1570 - 0x1570)
 class APyMarvelReplayController : public AMarvelReplaySpectatorController
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelReplayController">();
+		STATIC_CLASS_IMPL("PyMarvelReplayController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelReplayController")
 	}
 	static class APyMarvelReplayController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyMarvelReplayController>();
 	}
 };
-static_assert(alignof(APyMarvelReplayController) == 0x000010, "Wrong alignment on APyMarvelReplayController");
-static_assert(sizeof(APyMarvelReplayController) == 0x001500, "Wrong size on APyMarvelReplayController");
+DUMPER7_ASSERTS_APyMarvelReplayController;
 
 }
 

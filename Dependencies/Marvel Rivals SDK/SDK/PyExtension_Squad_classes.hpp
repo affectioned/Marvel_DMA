@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Squad_Main">();
+		STATIC_CLASS_IMPL("PyExtension_Squad_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Squad_Main")
 	}
 	static class UPyExtension_Squad_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Squad_Main>();
 	}
 };
-static_assert(alignof(UPyExtension_Squad_Main) == 0x000008, "Wrong alignment on UPyExtension_Squad_Main");
-static_assert(sizeof(UPyExtension_Squad_Main) == 0x000040, "Wrong size on UPyExtension_Squad_Main");
-static_assert(offsetof(UPyExtension_Squad_Main, AKEvent_MatchStart) == 0x000030, "Member 'UPyExtension_Squad_Main::AKEvent_MatchStart' has a wrong offset!");
-static_assert(offsetof(UPyExtension_Squad_Main, AKEvent_MatchCancel) == 0x000038, "Member 'UPyExtension_Squad_Main::AKEvent_MatchCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UPyExtension_Squad_Main;
 
 // PythonClass PyExtension_Squad.PyExtension_Squad_Transition
 // 0x0000 (0x0030 - 0x0030)
@@ -56,15 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Squad_Transition">();
+		STATIC_CLASS_IMPL("PyExtension_Squad_Transition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Squad_Transition")
 	}
 	static class UPyExtension_Squad_Transition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Squad_Transition>();
 	}
 };
-static_assert(alignof(UPyExtension_Squad_Transition) == 0x000008, "Wrong alignment on UPyExtension_Squad_Transition");
-static_assert(sizeof(UPyExtension_Squad_Transition) == 0x000030, "Wrong size on UPyExtension_Squad_Transition");
+DUMPER7_ASSERTS_UPyExtension_Squad_Transition;
 
 // PythonClass PyExtension_Squad.PyExtension_Squad_OperationSync
 // 0x0000 (0x0030 - 0x0030)
@@ -79,15 +83,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_Squad_OperationSync">();
+		STATIC_CLASS_IMPL("PyExtension_Squad_OperationSync")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_Squad_OperationSync")
 	}
 	static class UPyExtension_Squad_OperationSync* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_Squad_OperationSync>();
 	}
 };
-static_assert(alignof(UPyExtension_Squad_OperationSync) == 0x000008, "Wrong alignment on UPyExtension_Squad_OperationSync");
-static_assert(sizeof(UPyExtension_Squad_OperationSync) == 0x000030, "Wrong size on UPyExtension_Squad_OperationSync");
+DUMPER7_ASSERTS_UPyExtension_Squad_OperationSync;
 
 }
 

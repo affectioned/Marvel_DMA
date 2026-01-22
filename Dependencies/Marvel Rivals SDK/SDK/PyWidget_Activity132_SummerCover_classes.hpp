@@ -17,38 +17,44 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity132_SummerCover.PyWidget_Activity132_SummerCover_Reward
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity132_SummerCover_Reward final : public UPyWidget_ActivityExpBpBase_Cover_Reward
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity132_SummerCover_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity132_SummerCover_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity132_SummerCover_Reward")
 	}
 	static class UPyWidget_Activity132_SummerCover_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity132_SummerCover_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity132_SummerCover_Reward) == 0x000008, "Wrong alignment on UPyWidget_Activity132_SummerCover_Reward");
-static_assert(sizeof(UPyWidget_Activity132_SummerCover_Reward) == 0x0005C0, "Wrong size on UPyWidget_Activity132_SummerCover_Reward");
+DUMPER7_ASSERTS_UPyWidget_Activity132_SummerCover_Reward;
 
 // PythonClass PyWidget_Activity132_SummerCover.PyWidget_Activity132_SummerCover
-// 0x0000 (0x0648 - 0x0648)
+// 0x0000 (0x0650 - 0x0650)
 class UPyWidget_Activity132_SummerCover final : public UPyWidget_ActivityExpBpBase_Cover
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity132_SummerCover">();
+		STATIC_CLASS_IMPL("PyWidget_Activity132_SummerCover")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity132_SummerCover")
 	}
 	static class UPyWidget_Activity132_SummerCover* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity132_SummerCover>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity132_SummerCover) == 0x000008, "Wrong alignment on UPyWidget_Activity132_SummerCover");
-static_assert(sizeof(UPyWidget_Activity132_SummerCover) == 0x000648, "Wrong size on UPyWidget_Activity132_SummerCover");
+DUMPER7_ASSERTS_UPyWidget_Activity132_SummerCover;
 
 }
 

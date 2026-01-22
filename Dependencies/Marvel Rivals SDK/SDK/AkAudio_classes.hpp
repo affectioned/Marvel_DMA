@@ -49,19 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPortalComponent">();
+		STATIC_CLASS_IMPL("AkPortalComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPortalComponent")
 	}
 	static class UAkPortalComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPortalComponent>();
 	}
 };
-static_assert(alignof(UAkPortalComponent) == 0x000010, "Wrong alignment on UAkPortalComponent");
-static_assert(sizeof(UAkPortalComponent) == 0x000410, "Wrong size on UAkPortalComponent");
-static_assert(offsetof(UAkPortalComponent, bDynamic) == 0x000338, "Member 'UAkPortalComponent::bDynamic' has a wrong offset!");
-static_assert(offsetof(UAkPortalComponent, InitialState) == 0x000339, "Member 'UAkPortalComponent::InitialState' has a wrong offset!");
-static_assert(offsetof(UAkPortalComponent, ObstructionRefreshInterval) == 0x00033C, "Member 'UAkPortalComponent::ObstructionRefreshInterval' has a wrong offset!");
-static_assert(offsetof(UAkPortalComponent, ObstructionCollisionChannel) == 0x000340, "Member 'UAkPortalComponent::ObstructionCollisionChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UAkPortalComponent;
 
 // Class AkAudio.AkAcousticPortal
 // 0x0010 (0x0720 - 0x0710)
@@ -82,18 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAcousticPortal">();
+		STATIC_CLASS_IMPL("AkAcousticPortal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAcousticPortal")
 	}
 	static class AAkAcousticPortal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAkAcousticPortal>();
 	}
 };
-static_assert(alignof(AAkAcousticPortal) == 0x000010, "Wrong alignment on AAkAcousticPortal");
-static_assert(sizeof(AAkAcousticPortal) == 0x000720, "Wrong size on AAkAcousticPortal");
-static_assert(offsetof(AAkAcousticPortal, Portal) == 0x000710, "Member 'AAkAcousticPortal::Portal' has a wrong offset!");
-static_assert(offsetof(AAkAcousticPortal, InitialState) == 0x000718, "Member 'AAkAcousticPortal::InitialState' has a wrong offset!");
-static_assert(offsetof(AAkAcousticPortal, bRequiresStateMigration) == 0x000719, "Member 'AAkAcousticPortal::bRequiresStateMigration' has a wrong offset!");
+DUMPER7_ASSERTS_AAkAcousticPortal;
 
 // Class AkAudio.AkWinGDKInitializationSettings
 // 0x00E0 (0x0110 - 0x0030)
@@ -111,18 +110,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWinGDKInitializationSettings">();
+		STATIC_CLASS_IMPL("AkWinGDKInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWinGDKInitializationSettings")
 	}
 	static class UAkWinGDKInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWinGDKInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkWinGDKInitializationSettings) == 0x000008, "Wrong alignment on UAkWinGDKInitializationSettings");
-static_assert(sizeof(UAkWinGDKInitializationSettings) == 0x000110, "Wrong size on UAkWinGDKInitializationSettings");
-static_assert(offsetof(UAkWinGDKInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkWinGDKInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkWinGDKInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkWinGDKInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkWinGDKInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkWinGDKInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkWinGDKInitializationSettings;
 
 // Class AkAudio.AkAudioType
 // 0x0028 (0x0058 - 0x0030)
@@ -143,17 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAudioType">();
+		STATIC_CLASS_IMPL("AkAudioType")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAudioType")
 	}
 	static class UAkAudioType* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAudioType>();
 	}
 };
-static_assert(alignof(UAkAudioType) == 0x000008, "Wrong alignment on UAkAudioType");
-static_assert(sizeof(UAkAudioType) == 0x000058, "Wrong size on UAkAudioType");
-static_assert(offsetof(UAkAudioType, bAutoLoad) == 0x000030, "Member 'UAkAudioType::bAutoLoad' has a wrong offset!");
-static_assert(offsetof(UAkAudioType, UserData) == 0x000038, "Member 'UAkAudioType::UserData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAudioType;
 
 // Class AkAudio.AkAcousticTexture
 // 0x0010 (0x0068 - 0x0058)
@@ -165,16 +165,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAcousticTexture">();
+		STATIC_CLASS_IMPL("AkAcousticTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAcousticTexture")
 	}
 	static class UAkAcousticTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAcousticTexture>();
 	}
 };
-static_assert(alignof(UAkAcousticTexture) == 0x000008, "Wrong alignment on UAkAcousticTexture");
-static_assert(sizeof(UAkAcousticTexture) == 0x000068, "Wrong size on UAkAcousticTexture");
-static_assert(offsetof(UAkAcousticTexture, AcousticTextureCookedData) == 0x000058, "Member 'UAkAcousticTexture::AcousticTextureCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAcousticTexture;
 
 // Class AkAudio.AkAcousticTextureSetComponent
 // 0x0010 (0x0350 - 0x0340)
@@ -186,15 +188,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAcousticTextureSetComponent">();
+		STATIC_CLASS_IMPL("AkAcousticTextureSetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAcousticTextureSetComponent")
 	}
 	static class UAkAcousticTextureSetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAcousticTextureSetComponent>();
 	}
 };
-static_assert(alignof(UAkAcousticTextureSetComponent) == 0x000010, "Wrong alignment on UAkAcousticTextureSetComponent");
-static_assert(sizeof(UAkAcousticTextureSetComponent) == 0x000350, "Wrong size on UAkAcousticTextureSetComponent");
+DUMPER7_ASSERTS_UAkAcousticTextureSetComponent;
 
 // Class AkAudio.AkAmbientSound
 // 0x0040 (0x0720 - 0x06E0)
@@ -214,19 +219,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAmbientSound">();
+		STATIC_CLASS_IMPL("AkAmbientSound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAmbientSound")
 	}
 	static class AAkAmbientSound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAkAmbientSound>();
 	}
 };
-static_assert(alignof(AAkAmbientSound) == 0x000010, "Wrong alignment on AAkAmbientSound");
-static_assert(sizeof(AAkAmbientSound) == 0x000720, "Wrong size on AAkAmbientSound");
-static_assert(offsetof(AAkAmbientSound, AkAudioEvent) == 0x0006D8, "Member 'AAkAmbientSound::AkAudioEvent' has a wrong offset!");
-static_assert(offsetof(AAkAmbientSound, AkComponent) == 0x0006E0, "Member 'AAkAmbientSound::AkComponent' has a wrong offset!");
-static_assert(offsetof(AAkAmbientSound, StopWhenOwnerIsDestroyed) == 0x0006E8, "Member 'AAkAmbientSound::StopWhenOwnerIsDestroyed' has a wrong offset!");
-static_assert(offsetof(AAkAmbientSound, AutoPost) == 0x0006E9, "Member 'AAkAmbientSound::AutoPost' has a wrong offset!");
+DUMPER7_ASSERTS_AAkAmbientSound;
 
 // Class AkAudio.AkAndroidInitializationSettings
 // 0x00E0 (0x0110 - 0x0030)
@@ -244,18 +248,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAndroidInitializationSettings">();
+		STATIC_CLASS_IMPL("AkAndroidInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAndroidInitializationSettings")
 	}
 	static class UAkAndroidInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAndroidInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkAndroidInitializationSettings) == 0x000008, "Wrong alignment on UAkAndroidInitializationSettings");
-static_assert(sizeof(UAkAndroidInitializationSettings) == 0x000110, "Wrong size on UAkAndroidInitializationSettings");
-static_assert(offsetof(UAkAndroidInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkAndroidInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkAndroidInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkAndroidInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkAndroidInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkAndroidInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAndroidInitializationSettings;
 
 // Class AkAudio.AkPlatformInfo
 // 0x0048 (0x0078 - 0x0030)
@@ -267,15 +271,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPlatformInfo">();
+		STATIC_CLASS_IMPL("AkPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPlatformInfo")
 	}
 	static class UAkPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkPlatformInfo) == 0x000008, "Wrong alignment on UAkPlatformInfo");
-static_assert(sizeof(UAkPlatformInfo) == 0x000078, "Wrong size on UAkPlatformInfo");
+DUMPER7_ASSERTS_UAkPlatformInfo;
 
 // Class AkAudio.AkAndroidPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -284,15 +291,18 @@ class UAkAndroidPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAndroidPlatformInfo">();
+		STATIC_CLASS_IMPL("AkAndroidPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAndroidPlatformInfo")
 	}
 	static class UAkAndroidPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAndroidPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkAndroidPlatformInfo) == 0x000008, "Wrong alignment on UAkAndroidPlatformInfo");
-static_assert(sizeof(UAkAndroidPlatformInfo) == 0x000078, "Wrong size on UAkAndroidPlatformInfo");
+DUMPER7_ASSERTS_UAkAndroidPlatformInfo;
 
 // Class AkAudio.AkAudioBank
 // 0x0008 (0x0060 - 0x0058)
@@ -305,16 +315,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAudioBank">();
+		STATIC_CLASS_IMPL("AkAudioBank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAudioBank")
 	}
 	static class UAkAudioBank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAudioBank>();
 	}
 };
-static_assert(alignof(UAkAudioBank) == 0x000008, "Wrong alignment on UAkAudioBank");
-static_assert(sizeof(UAkAudioBank) == 0x000060, "Wrong size on UAkAudioBank");
-static_assert(offsetof(UAkAudioBank, AutoLoad) == 0x000058, "Member 'UAkAudioBank::AutoLoad' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAudioBank;
 
 // Class AkAudio.AkXSXPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -323,15 +335,18 @@ class UAkXSXPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkXSXPlatformInfo">();
+		STATIC_CLASS_IMPL("AkXSXPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkXSXPlatformInfo")
 	}
 	static class UAkXSXPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkXSXPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkXSXPlatformInfo) == 0x000008, "Wrong alignment on UAkXSXPlatformInfo");
-static_assert(sizeof(UAkXSXPlatformInfo) == 0x000078, "Wrong size on UAkXSXPlatformInfo");
+DUMPER7_ASSERTS_UAkXSXPlatformInfo;
 
 // Class AkAudio.AkAudioDeviceShareSet
 // 0x0010 (0x0068 - 0x0058)
@@ -343,16 +358,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAudioDeviceShareSet">();
+		STATIC_CLASS_IMPL("AkAudioDeviceShareSet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAudioDeviceShareSet")
 	}
 	static class UAkAudioDeviceShareSet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAudioDeviceShareSet>();
 	}
 };
-static_assert(alignof(UAkAudioDeviceShareSet) == 0x000008, "Wrong alignment on UAkAudioDeviceShareSet");
-static_assert(sizeof(UAkAudioDeviceShareSet) == 0x000068, "Wrong size on UAkAudioDeviceShareSet");
-static_assert(offsetof(UAkAudioDeviceShareSet, AudioDeviceShareSetCookedData) == 0x000058, "Member 'UAkAudioDeviceShareSet::AudioDeviceShareSetCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAudioDeviceShareSet;
 
 // Class AkAudio.AkAudioEvent
 // 0x0098 (0x00F0 - 0x0058)
@@ -387,24 +404,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAudioEvent">();
+		STATIC_CLASS_IMPL("AkAudioEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAudioEvent")
 	}
 	static class UAkAudioEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAudioEvent>();
 	}
 };
-static_assert(alignof(UAkAudioEvent) == 0x000008, "Wrong alignment on UAkAudioEvent");
-static_assert(sizeof(UAkAudioEvent) == 0x0000F0, "Wrong size on UAkAudioEvent");
-static_assert(offsetof(UAkAudioEvent, MaxAttenuationRadius) == 0x000058, "Member 'UAkAudioEvent::MaxAttenuationRadius' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, IsInfinite) == 0x00005C, "Member 'UAkAudioEvent::IsInfinite' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, MinimumDuration) == 0x000060, "Member 'UAkAudioEvent::MinimumDuration' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, MaximumDuration) == 0x000064, "Member 'UAkAudioEvent::MaximumDuration' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, MaxAttenuationRadiusP2) == 0x000068, "Member 'UAkAudioEvent::MaxAttenuationRadiusP2' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, MaxAttenuationRadiusP3) == 0x00006C, "Member 'UAkAudioEvent::MaxAttenuationRadiusP3' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, bHasMotionEvent) == 0x000070, "Member 'UAkAudioEvent::bHasMotionEvent' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, EventCookedData) == 0x000078, "Member 'UAkAudioEvent::EventCookedData' has a wrong offset!");
-static_assert(offsetof(UAkAudioEvent, RequiredBank) == 0x0000D8, "Member 'UAkAudioEvent::RequiredBank' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAudioEvent;
 
 // Class AkAudio.AkGameObject
 // 0x0070 (0x03B0 - 0x0340)
@@ -437,24 +448,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkGameObject">();
+		STATIC_CLASS_IMPL("AkGameObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkGameObject")
 	}
 	static class UAkGameObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkGameObject>();
 	}
 };
-static_assert(alignof(UAkGameObject) == 0x000010, "Wrong alignment on UAkGameObject");
-static_assert(sizeof(UAkGameObject) == 0x0003B0, "Wrong size on UAkGameObject");
-static_assert(offsetof(UAkGameObject, bOverrideAttenuationScalingFactor) == 0x000338, "Member 'UAkGameObject::bOverrideAttenuationScalingFactor' has a wrong offset!");
-static_assert(offsetof(UAkGameObject, AttenuationScalingFactor) == 0x00033C, "Member 'UAkGameObject::AttenuationScalingFactor' has a wrong offset!");
-static_assert(offsetof(UAkGameObject, AkAudioEvent) == 0x000340, "Member 'UAkGameObject::AkAudioEvent' has a wrong offset!");
-static_assert(offsetof(UAkGameObject, EventName) == 0x000348, "Member 'UAkGameObject::EventName' has a wrong offset!");
-static_assert(offsetof(UAkGameObject, CachedRtpcValues) == 0x000358, "Member 'UAkGameObject::CachedRtpcValues' has a wrong offset!");
-static_assert(offsetof(UAkGameObject, bAttenuationScalingMigrated) == 0x0003AA, "Member 'UAkGameObject::bAttenuationScalingMigrated' has a wrong offset!");
+DUMPER7_ASSERTS_UAkGameObject;
 
 // Class AkAudio.AkComponent
-// 0x02A0 (0x0650 - 0x03B0)
+// 0x02B0 (0x0660 - 0x03B0)
 class UAkComponent : public UAkGameObject
 {
 public:
@@ -467,26 +475,28 @@ public:
 	TArray<int16>                                 AudioAreaNoList;                                   // 0x03C0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<int16>                                 BanAudioAreaNoList;                                // 0x03D0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	class UStaticMeshComponent*                   BanMeshCom;                                        // 0x03E0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAuxBus*                              EarlyReflectionAuxBus;                             // 0x03E8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 EarlyReflectionAuxBusName;                         // 0x03F0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         EarlyReflectionOrder;                              // 0x0400(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         EarlyReflectionBusSendGain;                        // 0x0404(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         EarlyReflectionMaxPathLength;                      // 0x0408(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         roomReverbAuxBusGain;                              // 0x040C(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         diffractionMaxEdges;                               // 0x0410(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         diffractionMaxPaths;                               // 0x0414(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         diffractionMaxPathLength;                          // 0x0418(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          DrawFirstOrderReflections;                         // 0x041C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DrawSecondOrderReflections;                        // 0x041D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DrawHigherOrderReflections;                        // 0x041E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          DrawDiffraction;                                   // 0x041F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          StopWhenOwnerDestroyed;                            // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_421[0x3];                                      // 0x0421(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OcclusionRefreshInterval;                          // 0x0424(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseReverbVolumes;                                 // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_429[0x167];                                    // 0x0429(0x0167)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, class FString>            AkSwitchValues;                                    // 0x0590(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E0[0x70];                                     // 0x05E0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E8[0x8];                                      // 0x03E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAuxBus*                              EarlyReflectionAuxBus;                             // 0x03F0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 EarlyReflectionAuxBusName;                         // 0x03F8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         EarlyReflectionOrder;                              // 0x0408(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         EarlyReflectionBusSendGain;                        // 0x040C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         EarlyReflectionMaxPathLength;                      // 0x0410(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         roomReverbAuxBusGain;                              // 0x0414(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         diffractionMaxEdges;                               // 0x0418(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         diffractionMaxPaths;                               // 0x041C(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         diffractionMaxPathLength;                          // 0x0420(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          DrawFirstOrderReflections;                         // 0x0424(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DrawSecondOrderReflections;                        // 0x0425(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DrawHigherOrderReflections;                        // 0x0426(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DrawDiffraction;                                   // 0x0427(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          StopWhenOwnerDestroyed;                            // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AlwaysUpdateLocation;                              // 0x0429(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_42A[0x2];                                      // 0x042A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OcclusionRefreshInterval;                          // 0x042C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseReverbVolumes;                                 // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_431[0x16F];                                    // 0x0431(0x016F)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, class FString>            AkSwitchValues;                                    // 0x05A0(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5F0[0x70];                                     // 0x05F0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	ECollisionChannel GetOcclusionCollisionChannel();
@@ -503,6 +513,7 @@ public:
 	void SetOutputBusVolume(float BusVolume);
 	void SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);
 	void SetSwitch(class UAkSwitchValue* SwitchValue, const class FString& SwitchGroup, const class FString& SwitchState);
+	void UpdateWorldPosition(const struct FVector& InWorldPosition, const struct FRotator& InWorldRotation);
 	void UseEarlyReflections(class UAkAuxBus* AuxBus, int32 Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, const class FString& AuxBusName);
 	void UseReverbVolumes(bool inUseReverbVolumes);
 
@@ -512,47 +523,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkComponent">();
+		STATIC_CLASS_IMPL("AkComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkComponent")
 	}
 	static class UAkComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkComponent>();
 	}
 };
-static_assert(alignof(UAkComponent) == 0x000010, "Wrong alignment on UAkComponent");
-static_assert(sizeof(UAkComponent) == 0x000650, "Wrong size on UAkComponent");
-static_assert(offsetof(UAkComponent, OcclusionCollisionChannel) == 0x0003B0, "Member 'UAkComponent::OcclusionCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EnableSpotReflectors) == 0x0003B1, "Member 'UAkComponent::EnableSpotReflectors' has a wrong offset!");
-static_assert(offsetof(UAkComponent, outerRadius) == 0x0003B4, "Member 'UAkComponent::outerRadius' has a wrong offset!");
-static_assert(offsetof(UAkComponent, innerRadius) == 0x0003B8, "Member 'UAkComponent::innerRadius' has a wrong offset!");
-static_assert(offsetof(UAkComponent, AudioAreaNoList) == 0x0003C0, "Member 'UAkComponent::AudioAreaNoList' has a wrong offset!");
-static_assert(offsetof(UAkComponent, BanAudioAreaNoList) == 0x0003D0, "Member 'UAkComponent::BanAudioAreaNoList' has a wrong offset!");
-static_assert(offsetof(UAkComponent, BanMeshCom) == 0x0003E0, "Member 'UAkComponent::BanMeshCom' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EarlyReflectionAuxBus) == 0x0003E8, "Member 'UAkComponent::EarlyReflectionAuxBus' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EarlyReflectionAuxBusName) == 0x0003F0, "Member 'UAkComponent::EarlyReflectionAuxBusName' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EarlyReflectionOrder) == 0x000400, "Member 'UAkComponent::EarlyReflectionOrder' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EarlyReflectionBusSendGain) == 0x000404, "Member 'UAkComponent::EarlyReflectionBusSendGain' has a wrong offset!");
-static_assert(offsetof(UAkComponent, EarlyReflectionMaxPathLength) == 0x000408, "Member 'UAkComponent::EarlyReflectionMaxPathLength' has a wrong offset!");
-static_assert(offsetof(UAkComponent, roomReverbAuxBusGain) == 0x00040C, "Member 'UAkComponent::roomReverbAuxBusGain' has a wrong offset!");
-static_assert(offsetof(UAkComponent, diffractionMaxEdges) == 0x000410, "Member 'UAkComponent::diffractionMaxEdges' has a wrong offset!");
-static_assert(offsetof(UAkComponent, diffractionMaxPaths) == 0x000414, "Member 'UAkComponent::diffractionMaxPaths' has a wrong offset!");
-static_assert(offsetof(UAkComponent, diffractionMaxPathLength) == 0x000418, "Member 'UAkComponent::diffractionMaxPathLength' has a wrong offset!");
-static_assert(offsetof(UAkComponent, DrawFirstOrderReflections) == 0x00041C, "Member 'UAkComponent::DrawFirstOrderReflections' has a wrong offset!");
-static_assert(offsetof(UAkComponent, DrawSecondOrderReflections) == 0x00041D, "Member 'UAkComponent::DrawSecondOrderReflections' has a wrong offset!");
-static_assert(offsetof(UAkComponent, DrawHigherOrderReflections) == 0x00041E, "Member 'UAkComponent::DrawHigherOrderReflections' has a wrong offset!");
-static_assert(offsetof(UAkComponent, DrawDiffraction) == 0x00041F, "Member 'UAkComponent::DrawDiffraction' has a wrong offset!");
-static_assert(offsetof(UAkComponent, StopWhenOwnerDestroyed) == 0x000420, "Member 'UAkComponent::StopWhenOwnerDestroyed' has a wrong offset!");
-static_assert(offsetof(UAkComponent, OcclusionRefreshInterval) == 0x000424, "Member 'UAkComponent::OcclusionRefreshInterval' has a wrong offset!");
-static_assert(offsetof(UAkComponent, bUseReverbVolumes) == 0x000428, "Member 'UAkComponent::bUseReverbVolumes' has a wrong offset!");
-static_assert(offsetof(UAkComponent, AkSwitchValues) == 0x000590, "Member 'UAkComponent::AkSwitchValues' has a wrong offset!");
+DUMPER7_ASSERTS_UAkComponent;
 
 // Class AkAudio.AkAudioInputComponent
-// 0x0030 (0x0680 - 0x0650)
+// 0x0030 (0x0690 - 0x0660)
 #pragma pack(push, 0x1)
 class alignas(0x10) UAkAudioInputComponent : public UAkComponent
 {
 public:
-	uint8                                         Pad_650[0x28];                                     // 0x0650(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_660[0x28];                                     // 0x0660(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 PostAssociatedAudioInputEvent();
@@ -560,7 +550,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAudioInputComponent">();
+		STATIC_CLASS_IMPL("AkAudioInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAudioInputComponent")
 	}
 	static class UAkAudioInputComponent* GetDefaultObj()
 	{
@@ -568,8 +562,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UAkAudioInputComponent) == 0x000010, "Wrong alignment on UAkAudioInputComponent");
-static_assert(sizeof(UAkAudioInputComponent) == 0x000680, "Wrong size on UAkAudioInputComponent");
+DUMPER7_ASSERTS_UAkAudioInputComponent;
 
 // Class AkAudio.AkAuxBus
 // 0x0078 (0x00D0 - 0x0058)
@@ -585,18 +578,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAuxBus">();
+		STATIC_CLASS_IMPL("AkAuxBus")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAuxBus")
 	}
 	static class UAkAuxBus* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAuxBus>();
 	}
 };
-static_assert(alignof(UAkAuxBus) == 0x000008, "Wrong alignment on UAkAuxBus");
-static_assert(sizeof(UAkAuxBus) == 0x0000D0, "Wrong size on UAkAuxBus");
-static_assert(offsetof(UAkAuxBus, MaxAttenuationRadius) == 0x000058, "Member 'UAkAuxBus::MaxAttenuationRadius' has a wrong offset!");
-static_assert(offsetof(UAkAuxBus, AuxBusCookedData) == 0x000060, "Member 'UAkAuxBus::AuxBusCookedData' has a wrong offset!");
-static_assert(offsetof(UAkAuxBus, RequiredBank) == 0x0000C0, "Member 'UAkAuxBus::RequiredBank' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAuxBus;
 
 // Class AkAudio.AkCheckBox
 // 0x0E80 (0x1080 - 0x0200)
@@ -634,25 +627,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkCheckBox">();
+		STATIC_CLASS_IMPL("AkCheckBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkCheckBox")
 	}
 	static class UAkCheckBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkCheckBox>();
 	}
 };
-static_assert(alignof(UAkCheckBox) == 0x000010, "Wrong alignment on UAkCheckBox");
-static_assert(sizeof(UAkCheckBox) == 0x001080, "Wrong size on UAkCheckBox");
-static_assert(offsetof(UAkCheckBox, CheckedState) == 0x0004A0, "Member 'UAkCheckBox::CheckedState' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, CheckedStateDelegate) == 0x0004A4, "Member 'UAkCheckBox::CheckedStateDelegate' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, WidgetStyle) == 0x0004C0, "Member 'UAkCheckBox::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, HorizontalAlignment) == 0x000FA0, "Member 'UAkCheckBox::HorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, IsFocusable) == 0x000FA1, "Member 'UAkCheckBox::IsFocusable' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, ThePropertyToControl) == 0x000FA8, "Member 'UAkCheckBox::ThePropertyToControl' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, ItemToControl) == 0x000FB8, "Member 'UAkCheckBox::ItemToControl' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, AkOnCheckStateChanged) == 0x000FF8, "Member 'UAkCheckBox::AkOnCheckStateChanged' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, OnItemDropped) == 0x001008, "Member 'UAkCheckBox::OnItemDropped' has a wrong offset!");
-static_assert(offsetof(UAkCheckBox, OnPropertyDropped) == 0x001018, "Member 'UAkCheckBox::OnPropertyDropped' has a wrong offset!");
+DUMPER7_ASSERTS_UAkCheckBox;
 
 // Class AkAudio.AkAssetData
 // 0x0028 (0x0058 - 0x0030)
@@ -664,15 +650,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAssetData">();
+		STATIC_CLASS_IMPL("AkAssetData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAssetData")
 	}
 	static class UAkAssetData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAssetData>();
 	}
 };
-static_assert(alignof(UAkAssetData) == 0x000008, "Wrong alignment on UAkAssetData");
-static_assert(sizeof(UAkAssetData) == 0x000058, "Wrong size on UAkAssetData");
+DUMPER7_ASSERTS_UAkAssetData;
 
 // Class AkAudio.AkAssetPlatformData
 // 0x0008 (0x0038 - 0x0030)
@@ -684,16 +673,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkAssetPlatformData">();
+		STATIC_CLASS_IMPL("AkAssetPlatformData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkAssetPlatformData")
 	}
 	static class UAkAssetPlatformData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkAssetPlatformData>();
 	}
 };
-static_assert(alignof(UAkAssetPlatformData) == 0x000008, "Wrong alignment on UAkAssetPlatformData");
-static_assert(sizeof(UAkAssetPlatformData) == 0x000038, "Wrong size on UAkAssetPlatformData");
-static_assert(offsetof(UAkAssetPlatformData, CurrentAssetData) == 0x000030, "Member 'UAkAssetPlatformData::CurrentAssetData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkAssetPlatformData;
 
 // Class AkAudio.AkMediaAssetData
 // 0x0010 (0x0040 - 0x0030)
@@ -705,15 +696,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMediaAssetData">();
+		STATIC_CLASS_IMPL("AkMediaAssetData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMediaAssetData")
 	}
 	static class UAkMediaAssetData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMediaAssetData>();
 	}
 };
-static_assert(alignof(UAkMediaAssetData) == 0x000008, "Wrong alignment on UAkMediaAssetData");
-static_assert(sizeof(UAkMediaAssetData) == 0x000040, "Wrong size on UAkMediaAssetData");
+DUMPER7_ASSERTS_UAkMediaAssetData;
 
 // Class AkAudio.AkMediaAsset
 // 0x0050 (0x0080 - 0x0030)
@@ -725,16 +719,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMediaAsset">();
+		STATIC_CLASS_IMPL("AkMediaAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMediaAsset")
 	}
 	static class UAkMediaAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMediaAsset>();
 	}
 };
-static_assert(alignof(UAkMediaAsset) == 0x000008, "Wrong alignment on UAkMediaAsset");
-static_assert(sizeof(UAkMediaAsset) == 0x000080, "Wrong size on UAkMediaAsset");
-static_assert(offsetof(UAkMediaAsset, MediaAssetDataPerPlatform) == 0x000030, "Member 'UAkMediaAsset::MediaAssetDataPerPlatform' has a wrong offset!");
+DUMPER7_ASSERTS_UAkMediaAsset;
 
 // Class AkAudio.AkLocalizedMediaAsset
 // 0x0000 (0x0080 - 0x0080)
@@ -743,15 +739,18 @@ class UAkLocalizedMediaAsset final : public UAkMediaAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLocalizedMediaAsset">();
+		STATIC_CLASS_IMPL("AkLocalizedMediaAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLocalizedMediaAsset")
 	}
 	static class UAkLocalizedMediaAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLocalizedMediaAsset>();
 	}
 };
-static_assert(alignof(UAkLocalizedMediaAsset) == 0x000008, "Wrong alignment on UAkLocalizedMediaAsset");
-static_assert(sizeof(UAkLocalizedMediaAsset) == 0x000080, "Wrong size on UAkLocalizedMediaAsset");
+DUMPER7_ASSERTS_UAkLocalizedMediaAsset;
 
 // Class AkAudio.AkExternalMediaAsset
 // 0x0000 (0x0080 - 0x0080)
@@ -760,15 +759,18 @@ class UAkExternalMediaAsset final : public UAkMediaAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkExternalMediaAsset">();
+		STATIC_CLASS_IMPL("AkExternalMediaAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkExternalMediaAsset")
 	}
 	static class UAkExternalMediaAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkExternalMediaAsset>();
 	}
 };
-static_assert(alignof(UAkExternalMediaAsset) == 0x000008, "Wrong alignment on UAkExternalMediaAsset");
-static_assert(sizeof(UAkExternalMediaAsset) == 0x000080, "Wrong size on UAkExternalMediaAsset");
+DUMPER7_ASSERTS_UAkExternalMediaAsset;
 
 // Class AkAudio.AkFolder
 // 0x0000 (0x0058 - 0x0058)
@@ -777,15 +779,18 @@ class UAkFolder final : public UAkAudioType
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkFolder">();
+		STATIC_CLASS_IMPL("AkFolder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkFolder")
 	}
 	static class UAkFolder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkFolder>();
 	}
 };
-static_assert(alignof(UAkFolder) == 0x000008, "Wrong alignment on UAkFolder");
-static_assert(sizeof(UAkFolder) == 0x000058, "Wrong size on UAkFolder");
+DUMPER7_ASSERTS_UAkFolder;
 
 // Class AkAudio.DrawPortalComponent
 // 0x0000 (0x07C0 - 0x07C0)
@@ -794,15 +799,18 @@ class UDrawPortalComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DrawPortalComponent">();
+		STATIC_CLASS_IMPL("DrawPortalComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DrawPortalComponent")
 	}
 	static class UDrawPortalComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDrawPortalComponent>();
 	}
 };
-static_assert(alignof(UDrawPortalComponent) == 0x000010, "Wrong alignment on UDrawPortalComponent");
-static_assert(sizeof(UDrawPortalComponent) == 0x0007C0, "Wrong size on UDrawPortalComponent");
+DUMPER7_ASSERTS_UDrawPortalComponent;
 
 // Class AkAudio.DrawRoomComponent
 // 0x0000 (0x07C0 - 0x07C0)
@@ -811,15 +819,18 @@ class UDrawRoomComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DrawRoomComponent">();
+		STATIC_CLASS_IMPL("DrawRoomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DrawRoomComponent")
 	}
 	static class UDrawRoomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDrawRoomComponent>();
 	}
 };
-static_assert(alignof(UDrawRoomComponent) == 0x000010, "Wrong alignment on UDrawRoomComponent");
-static_assert(sizeof(UDrawRoomComponent) == 0x0007C0, "Wrong size on UDrawRoomComponent");
+DUMPER7_ASSERTS_UDrawRoomComponent;
 
 // Class AkAudio.AkEffectShareSet
 // 0x0068 (0x00C0 - 0x0058)
@@ -832,16 +843,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkEffectShareSet">();
+		STATIC_CLASS_IMPL("AkEffectShareSet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkEffectShareSet")
 	}
 	static class UAkEffectShareSet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkEffectShareSet>();
 	}
 };
-static_assert(alignof(UAkEffectShareSet) == 0x000008, "Wrong alignment on UAkEffectShareSet");
-static_assert(sizeof(UAkEffectShareSet) == 0x0000C0, "Wrong size on UAkEffectShareSet");
-static_assert(offsetof(UAkEffectShareSet, ShareSetCookedData) == 0x000058, "Member 'UAkEffectShareSet::ShareSetCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkEffectShareSet;
 
 // Class AkAudio.AkGameplayStatics
 // 0x0000 (0x0030 - 0x0030)
@@ -885,7 +898,7 @@ public:
 	static int32 PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const class FString& EventName, class UObject* WorldContextObject);
 	static void PostEventAtLocationByName(const class FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject);
 	static void PostEventByName(const class FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed);
-	static int32 PostEventGlobal(class UAkAudioEvent* AkEvent, bool bEnsurePlay);
+	static int32 PostEventGlobal(class UAkAudioEvent* AkEvent, bool bEnsurePlay, bool bForceReplay);
 	static void PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, class FName Trigger);
 	static void PostTriggerGlobal(class UAkTrigger* TriggerValue);
 	static bool PrepareLoadEvent(const class FName& EventName);
@@ -941,15 +954,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkGameplayStatics">();
+		STATIC_CLASS_IMPL("AkGameplayStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkGameplayStatics")
 	}
 	static class UAkGameplayStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkGameplayStatics>();
 	}
 };
-static_assert(alignof(UAkGameplayStatics) == 0x000008, "Wrong alignment on UAkGameplayStatics");
-static_assert(sizeof(UAkGameplayStatics) == 0x000030, "Wrong size on UAkGameplayStatics");
+DUMPER7_ASSERTS_UAkGameplayStatics;
 
 // Class AkAudio.AkCallbackInfo
 // 0x0008 (0x0038 - 0x0030)
@@ -961,16 +977,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkCallbackInfo">();
+		STATIC_CLASS_IMPL("AkCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkCallbackInfo")
 	}
 	static class UAkCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkCallbackInfo) == 0x000008, "Wrong alignment on UAkCallbackInfo");
-static_assert(sizeof(UAkCallbackInfo) == 0x000038, "Wrong size on UAkCallbackInfo");
-static_assert(offsetof(UAkCallbackInfo, AkComponent) == 0x000030, "Member 'UAkCallbackInfo::AkComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UAkCallbackInfo;
 
 // Class AkAudio.AkEventCallbackInfo
 // 0x0008 (0x0040 - 0x0038)
@@ -983,17 +1001,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkEventCallbackInfo">();
+		STATIC_CLASS_IMPL("AkEventCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkEventCallbackInfo")
 	}
 	static class UAkEventCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkEventCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkEventCallbackInfo) == 0x000008, "Wrong alignment on UAkEventCallbackInfo");
-static_assert(sizeof(UAkEventCallbackInfo) == 0x000040, "Wrong size on UAkEventCallbackInfo");
-static_assert(offsetof(UAkEventCallbackInfo, PlayingID) == 0x000038, "Member 'UAkEventCallbackInfo::PlayingID' has a wrong offset!");
-static_assert(offsetof(UAkEventCallbackInfo, EventID) == 0x00003C, "Member 'UAkEventCallbackInfo::EventID' has a wrong offset!");
+DUMPER7_ASSERTS_UAkEventCallbackInfo;
 
 // Class AkAudio.AkMIDIEventCallbackInfo
 // 0x0010 (0x0050 - 0x0040)
@@ -1017,15 +1036,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMIDIEventCallbackInfo">();
+		STATIC_CLASS_IMPL("AkMIDIEventCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMIDIEventCallbackInfo")
 	}
 	static class UAkMIDIEventCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMIDIEventCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkMIDIEventCallbackInfo) == 0x000008, "Wrong alignment on UAkMIDIEventCallbackInfo");
-static_assert(sizeof(UAkMIDIEventCallbackInfo) == 0x000050, "Wrong size on UAkMIDIEventCallbackInfo");
+DUMPER7_ASSERTS_UAkMIDIEventCallbackInfo;
 
 // Class AkAudio.AkMarkerCallbackInfo
 // 0x0018 (0x0058 - 0x0040)
@@ -1039,18 +1061,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMarkerCallbackInfo">();
+		STATIC_CLASS_IMPL("AkMarkerCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMarkerCallbackInfo")
 	}
 	static class UAkMarkerCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMarkerCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkMarkerCallbackInfo) == 0x000008, "Wrong alignment on UAkMarkerCallbackInfo");
-static_assert(sizeof(UAkMarkerCallbackInfo) == 0x000058, "Wrong size on UAkMarkerCallbackInfo");
-static_assert(offsetof(UAkMarkerCallbackInfo, Identifier) == 0x000040, "Member 'UAkMarkerCallbackInfo::Identifier' has a wrong offset!");
-static_assert(offsetof(UAkMarkerCallbackInfo, Position) == 0x000044, "Member 'UAkMarkerCallbackInfo::Position' has a wrong offset!");
-static_assert(offsetof(UAkMarkerCallbackInfo, Label) == 0x000048, "Member 'UAkMarkerCallbackInfo::Label' has a wrong offset!");
+DUMPER7_ASSERTS_UAkMarkerCallbackInfo;
 
 // Class AkAudio.AkDurationCallbackInfo
 // 0x0018 (0x0058 - 0x0040)
@@ -1067,20 +1089,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkDurationCallbackInfo">();
+		STATIC_CLASS_IMPL("AkDurationCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkDurationCallbackInfo")
 	}
 	static class UAkDurationCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkDurationCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkDurationCallbackInfo) == 0x000008, "Wrong alignment on UAkDurationCallbackInfo");
-static_assert(sizeof(UAkDurationCallbackInfo) == 0x000058, "Wrong size on UAkDurationCallbackInfo");
-static_assert(offsetof(UAkDurationCallbackInfo, Duration) == 0x000040, "Member 'UAkDurationCallbackInfo::Duration' has a wrong offset!");
-static_assert(offsetof(UAkDurationCallbackInfo, EstimatedDuration) == 0x000044, "Member 'UAkDurationCallbackInfo::EstimatedDuration' has a wrong offset!");
-static_assert(offsetof(UAkDurationCallbackInfo, AudioNodeID) == 0x000048, "Member 'UAkDurationCallbackInfo::AudioNodeID' has a wrong offset!");
-static_assert(offsetof(UAkDurationCallbackInfo, MediaID) == 0x00004C, "Member 'UAkDurationCallbackInfo::MediaID' has a wrong offset!");
-static_assert(offsetof(UAkDurationCallbackInfo, bStreaming) == 0x000050, "Member 'UAkDurationCallbackInfo::bStreaming' has a wrong offset!");
+DUMPER7_ASSERTS_UAkDurationCallbackInfo;
 
 // Class AkAudio.AkMusicSyncCallbackInfo
 // 0x0040 (0x0078 - 0x0038)
@@ -1096,19 +1116,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMusicSyncCallbackInfo">();
+		STATIC_CLASS_IMPL("AkMusicSyncCallbackInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMusicSyncCallbackInfo")
 	}
 	static class UAkMusicSyncCallbackInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMusicSyncCallbackInfo>();
 	}
 };
-static_assert(alignof(UAkMusicSyncCallbackInfo) == 0x000008, "Wrong alignment on UAkMusicSyncCallbackInfo");
-static_assert(sizeof(UAkMusicSyncCallbackInfo) == 0x000078, "Wrong size on UAkMusicSyncCallbackInfo");
-static_assert(offsetof(UAkMusicSyncCallbackInfo, PlayingID) == 0x000038, "Member 'UAkMusicSyncCallbackInfo::PlayingID' has a wrong offset!");
-static_assert(offsetof(UAkMusicSyncCallbackInfo, SegmentInfo) == 0x00003C, "Member 'UAkMusicSyncCallbackInfo::SegmentInfo' has a wrong offset!");
-static_assert(offsetof(UAkMusicSyncCallbackInfo, MusicSyncType) == 0x000060, "Member 'UAkMusicSyncCallbackInfo::MusicSyncType' has a wrong offset!");
-static_assert(offsetof(UAkMusicSyncCallbackInfo, UserCueName) == 0x000068, "Member 'UAkMusicSyncCallbackInfo::UserCueName' has a wrong offset!");
+DUMPER7_ASSERTS_UAkMusicSyncCallbackInfo;
 
 // Class AkAudio.AkGeometryComponent
 // 0x0190 (0x04E0 - 0x0350)
@@ -1140,25 +1159,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkGeometryComponent">();
+		STATIC_CLASS_IMPL("AkGeometryComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkGeometryComponent")
 	}
 	static class UAkGeometryComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkGeometryComponent>();
 	}
 };
-static_assert(alignof(UAkGeometryComponent) == 0x000010, "Wrong alignment on UAkGeometryComponent");
-static_assert(sizeof(UAkGeometryComponent) == 0x0004E0, "Wrong size on UAkGeometryComponent");
-static_assert(offsetof(UAkGeometryComponent, MeshType) == 0x000350, "Member 'UAkGeometryComponent::MeshType' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, LOD) == 0x000354, "Member 'UAkGeometryComponent::LOD' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, WeldingThreshold) == 0x000358, "Member 'UAkGeometryComponent::WeldingThreshold' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, StaticMeshSurfaceOverride) == 0x000360, "Member 'UAkGeometryComponent::StaticMeshSurfaceOverride' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, CollisionMeshSurfaceOverride) == 0x0003B0, "Member 'UAkGeometryComponent::CollisionMeshSurfaceOverride' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, bEnableDiffraction) == 0x0003C8, "Member 'UAkGeometryComponent::bEnableDiffraction' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, bEnableDiffractionOnBoundaryEdges) == 0x0003C9, "Member 'UAkGeometryComponent::bEnableDiffractionOnBoundaryEdges' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, AssociatedRoom) == 0x0003D0, "Member 'UAkGeometryComponent::AssociatedRoom' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, GeometryData) == 0x0003E8, "Member 'UAkGeometryComponent::GeometryData' has a wrong offset!");
-static_assert(offsetof(UAkGeometryComponent, SurfaceAreas) == 0x000438, "Member 'UAkGeometryComponent::SurfaceAreas' has a wrong offset!");
+DUMPER7_ASSERTS_UAkGeometryComponent;
 
 // Class AkAudio.AkGroupValue
 // 0x0028 (0x0080 - 0x0058)
@@ -1172,17 +1184,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkGroupValue">();
+		STATIC_CLASS_IMPL("AkGroupValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkGroupValue")
 	}
 	static class UAkGroupValue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkGroupValue>();
 	}
 };
-static_assert(alignof(UAkGroupValue) == 0x000008, "Wrong alignment on UAkGroupValue");
-static_assert(sizeof(UAkGroupValue) == 0x000080, "Wrong size on UAkGroupValue");
-static_assert(offsetof(UAkGroupValue, GroupValueCookedData) == 0x000058, "Member 'UAkGroupValue::GroupValueCookedData' has a wrong offset!");
-static_assert(offsetof(UAkGroupValue, GroupShortID) == 0x000070, "Member 'UAkGroupValue::GroupShortID' has a wrong offset!");
+DUMPER7_ASSERTS_UAkGroupValue;
 
 // Class AkAudio.AkHololensInitializationSettings
 // 0x00E0 (0x0110 - 0x0030)
@@ -1201,18 +1214,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkHololensInitializationSettings">();
+		STATIC_CLASS_IMPL("AkHololensInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkHololensInitializationSettings")
 	}
 	static class UAkHololensInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkHololensInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkHololensInitializationSettings) == 0x000008, "Wrong alignment on UAkHololensInitializationSettings");
-static_assert(sizeof(UAkHololensInitializationSettings) == 0x000110, "Wrong size on UAkHololensInitializationSettings");
-static_assert(offsetof(UAkHololensInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkHololensInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkHololensInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkHololensInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkHololensInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkHololensInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkHololensInitializationSettings;
 
 // Class AkAudio.AkHololensPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1221,15 +1234,18 @@ class UAkHololensPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkHololensPlatformInfo">();
+		STATIC_CLASS_IMPL("AkHololensPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkHololensPlatformInfo")
 	}
 	static class UAkHololensPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkHololensPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkHololensPlatformInfo) == 0x000008, "Wrong alignment on UAkHololensPlatformInfo");
-static_assert(sizeof(UAkHololensPlatformInfo) == 0x000078, "Wrong size on UAkHololensPlatformInfo");
+DUMPER7_ASSERTS_UAkHololensPlatformInfo;
 
 // Class AkAudio.AkInitBank
 // 0x0060 (0x00B8 - 0x0058)
@@ -1242,16 +1258,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkInitBank">();
+		STATIC_CLASS_IMPL("AkInitBank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkInitBank")
 	}
 	static class UAkInitBank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkInitBank>();
 	}
 };
-static_assert(alignof(UAkInitBank) == 0x000008, "Wrong alignment on UAkInitBank");
-static_assert(sizeof(UAkInitBank) == 0x0000B8, "Wrong size on UAkInitBank");
-static_assert(offsetof(UAkInitBank, InitBankCookedData) == 0x000058, "Member 'UAkInitBank::InitBankCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkInitBank;
 
 // Class AkAudio.AkIOSInitializationSettings
 // 0x00E8 (0x0118 - 0x0030)
@@ -1268,19 +1286,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkIOSInitializationSettings">();
+		STATIC_CLASS_IMPL("AkIOSInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkIOSInitializationSettings")
 	}
 	static class UAkIOSInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkIOSInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkIOSInitializationSettings) == 0x000008, "Wrong alignment on UAkIOSInitializationSettings");
-static_assert(sizeof(UAkIOSInitializationSettings) == 0x000118, "Wrong size on UAkIOSInitializationSettings");
-static_assert(offsetof(UAkIOSInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkIOSInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkIOSInitializationSettings, AudioSession) == 0x0000A8, "Member 'UAkIOSInitializationSettings::AudioSession' has a wrong offset!");
-static_assert(offsetof(UAkIOSInitializationSettings, CommunicationSettings) == 0x0000B8, "Member 'UAkIOSInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkIOSInitializationSettings, AdvancedSettings) == 0x0000D8, "Member 'UAkIOSInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkIOSInitializationSettings;
 
 // Class AkAudio.AkIOSPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1289,15 +1306,18 @@ class UAkIOSPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkIOSPlatformInfo">();
+		STATIC_CLASS_IMPL("AkIOSPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkIOSPlatformInfo")
 	}
 	static class UAkIOSPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkIOSPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkIOSPlatformInfo) == 0x000008, "Wrong alignment on UAkIOSPlatformInfo");
-static_assert(sizeof(UAkIOSPlatformInfo) == 0x000078, "Wrong size on UAkIOSPlatformInfo");
+DUMPER7_ASSERTS_UAkIOSPlatformInfo;
 
 // Class AkAudio.AkItemBoolPropertiesConv
 // 0x0000 (0x0030 - 0x0030)
@@ -1310,15 +1330,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkItemBoolPropertiesConv">();
+		STATIC_CLASS_IMPL("AkItemBoolPropertiesConv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkItemBoolPropertiesConv")
 	}
 	static class UAkItemBoolPropertiesConv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkItemBoolPropertiesConv>();
 	}
 };
-static_assert(alignof(UAkItemBoolPropertiesConv) == 0x000008, "Wrong alignment on UAkItemBoolPropertiesConv");
-static_assert(sizeof(UAkItemBoolPropertiesConv) == 0x000030, "Wrong size on UAkItemBoolPropertiesConv");
+DUMPER7_ASSERTS_UAkItemBoolPropertiesConv;
 
 // Class AkAudio.AkItemBoolProperties
 // 0x0040 (0x01F8 - 0x01B8)
@@ -1338,17 +1361,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkItemBoolProperties">();
+		STATIC_CLASS_IMPL("AkItemBoolProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkItemBoolProperties")
 	}
 	static class UAkItemBoolProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkItemBoolProperties>();
 	}
 };
-static_assert(alignof(UAkItemBoolProperties) == 0x000008, "Wrong alignment on UAkItemBoolProperties");
-static_assert(sizeof(UAkItemBoolProperties) == 0x0001F8, "Wrong size on UAkItemBoolProperties");
-static_assert(offsetof(UAkItemBoolProperties, OnSelectionChanged) == 0x0001B8, "Member 'UAkItemBoolProperties::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UAkItemBoolProperties, OnPropertyDragged) == 0x0001C8, "Member 'UAkItemBoolProperties::OnPropertyDragged' has a wrong offset!");
+DUMPER7_ASSERTS_UAkItemBoolProperties;
 
 // Class AkAudio.AkItemPropertiesConv
 // 0x0000 (0x0030 - 0x0030)
@@ -1361,15 +1385,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkItemPropertiesConv">();
+		STATIC_CLASS_IMPL("AkItemPropertiesConv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkItemPropertiesConv")
 	}
 	static class UAkItemPropertiesConv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkItemPropertiesConv>();
 	}
 };
-static_assert(alignof(UAkItemPropertiesConv) == 0x000008, "Wrong alignment on UAkItemPropertiesConv");
-static_assert(sizeof(UAkItemPropertiesConv) == 0x000030, "Wrong size on UAkItemPropertiesConv");
+DUMPER7_ASSERTS_UAkItemPropertiesConv;
 
 // Class AkAudio.AkItemProperties
 // 0x0040 (0x01F8 - 0x01B8)
@@ -1389,17 +1416,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkItemProperties">();
+		STATIC_CLASS_IMPL("AkItemProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkItemProperties")
 	}
 	static class UAkItemProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkItemProperties>();
 	}
 };
-static_assert(alignof(UAkItemProperties) == 0x000008, "Wrong alignment on UAkItemProperties");
-static_assert(sizeof(UAkItemProperties) == 0x0001F8, "Wrong size on UAkItemProperties");
-static_assert(offsetof(UAkItemProperties, OnSelectionChanged) == 0x0001B8, "Member 'UAkItemProperties::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UAkItemProperties, OnPropertyDragged) == 0x0001C8, "Member 'UAkItemProperties::OnPropertyDragged' has a wrong offset!");
+DUMPER7_ASSERTS_UAkItemProperties;
 
 // Class AkAudio.AkLateReverbComponent
 // 0x0090 (0x03D0 - 0x0340)
@@ -1425,23 +1453,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLateReverbComponent">();
+		STATIC_CLASS_IMPL("AkLateReverbComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLateReverbComponent")
 	}
 	static class UAkLateReverbComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLateReverbComponent>();
 	}
 };
-static_assert(alignof(UAkLateReverbComponent) == 0x000010, "Wrong alignment on UAkLateReverbComponent");
-static_assert(sizeof(UAkLateReverbComponent) == 0x0003D0, "Wrong size on UAkLateReverbComponent");
-static_assert(offsetof(UAkLateReverbComponent, bEnable) == 0x000338, "Member 'UAkLateReverbComponent::bEnable' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, SendLevel) == 0x00033C, "Member 'UAkLateReverbComponent::SendLevel' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, FadeRate) == 0x000340, "Member 'UAkLateReverbComponent::FadeRate' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, Priority) == 0x000344, "Member 'UAkLateReverbComponent::Priority' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, AutoAssignAuxBus) == 0x000348, "Member 'UAkLateReverbComponent::AutoAssignAuxBus' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, AuxBus) == 0x000350, "Member 'UAkLateReverbComponent::AuxBus' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, AuxBusName) == 0x000358, "Member 'UAkLateReverbComponent::AuxBusName' has a wrong offset!");
-static_assert(offsetof(UAkLateReverbComponent, AuxBusManual) == 0x000378, "Member 'UAkLateReverbComponent::AuxBusManual' has a wrong offset!");
+DUMPER7_ASSERTS_UAkLateReverbComponent;
 
 // Class AkAudio.AkLinuxArm64InitializationSettings
 // 0x00D8 (0x0108 - 0x0030)
@@ -1459,18 +1482,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLinuxArm64InitializationSettings">();
+		STATIC_CLASS_IMPL("AkLinuxArm64InitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLinuxArm64InitializationSettings")
 	}
 	static class UAkLinuxArm64InitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLinuxArm64InitializationSettings>();
 	}
 };
-static_assert(alignof(UAkLinuxArm64InitializationSettings) == 0x000008, "Wrong alignment on UAkLinuxArm64InitializationSettings");
-static_assert(sizeof(UAkLinuxArm64InitializationSettings) == 0x000108, "Wrong size on UAkLinuxArm64InitializationSettings");
-static_assert(offsetof(UAkLinuxArm64InitializationSettings, CommonSettings) == 0x000038, "Member 'UAkLinuxArm64InitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkLinuxArm64InitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkLinuxArm64InitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkLinuxArm64InitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkLinuxArm64InitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkLinuxArm64InitializationSettings;
 
 // Class AkAudio.AkLinuxArm64PlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1479,15 +1502,18 @@ class UAkLinuxArm64PlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLinuxArm64PlatformInfo">();
+		STATIC_CLASS_IMPL("AkLinuxArm64PlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLinuxArm64PlatformInfo")
 	}
 	static class UAkLinuxArm64PlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLinuxArm64PlatformInfo>();
 	}
 };
-static_assert(alignof(UAkLinuxArm64PlatformInfo) == 0x000008, "Wrong alignment on UAkLinuxArm64PlatformInfo");
-static_assert(sizeof(UAkLinuxArm64PlatformInfo) == 0x000078, "Wrong size on UAkLinuxArm64PlatformInfo");
+DUMPER7_ASSERTS_UAkLinuxArm64PlatformInfo;
 
 // Class AkAudio.AkLinuxInitializationSettings
 // 0x00D8 (0x0108 - 0x0030)
@@ -1505,18 +1531,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLinuxInitializationSettings">();
+		STATIC_CLASS_IMPL("AkLinuxInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLinuxInitializationSettings")
 	}
 	static class UAkLinuxInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLinuxInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkLinuxInitializationSettings) == 0x000008, "Wrong alignment on UAkLinuxInitializationSettings");
-static_assert(sizeof(UAkLinuxInitializationSettings) == 0x000108, "Wrong size on UAkLinuxInitializationSettings");
-static_assert(offsetof(UAkLinuxInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkLinuxInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkLinuxInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkLinuxInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkLinuxInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkLinuxInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkLinuxInitializationSettings;
 
 // Class AkAudio.AkLinuxPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1525,15 +1551,18 @@ class UAkLinuxPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkLinuxPlatformInfo">();
+		STATIC_CLASS_IMPL("AkLinuxPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkLinuxPlatformInfo")
 	}
 	static class UAkLinuxPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkLinuxPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkLinuxPlatformInfo) == 0x000008, "Wrong alignment on UAkLinuxPlatformInfo");
-static_assert(sizeof(UAkLinuxPlatformInfo) == 0x000078, "Wrong size on UAkLinuxPlatformInfo");
+DUMPER7_ASSERTS_UAkLinuxPlatformInfo;
 
 // Class AkAudio.AkMacInitializationSettings
 // 0x00D8 (0x0108 - 0x0030)
@@ -1551,18 +1580,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMacInitializationSettings">();
+		STATIC_CLASS_IMPL("AkMacInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMacInitializationSettings")
 	}
 	static class UAkMacInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMacInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkMacInitializationSettings) == 0x000008, "Wrong alignment on UAkMacInitializationSettings");
-static_assert(sizeof(UAkMacInitializationSettings) == 0x000108, "Wrong size on UAkMacInitializationSettings");
-static_assert(offsetof(UAkMacInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkMacInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkMacInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkMacInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkMacInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkMacInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkMacInitializationSettings;
 
 // Class AkAudio.AkMacPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1571,15 +1600,18 @@ class UAkMacPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMacPlatformInfo">();
+		STATIC_CLASS_IMPL("AkMacPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMacPlatformInfo")
 	}
 	static class UAkMacPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMacPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkMacPlatformInfo) == 0x000008, "Wrong alignment on UAkMacPlatformInfo");
-static_assert(sizeof(UAkMacPlatformInfo) == 0x000078, "Wrong size on UAkMacPlatformInfo");
+DUMPER7_ASSERTS_UAkMacPlatformInfo;
 
 // Class AkAudio.AkMidiEventLoop
 // 0x0048 (0x0078 - 0x0030)
@@ -1591,15 +1623,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMidiEventLoop">();
+		STATIC_CLASS_IMPL("AkMidiEventLoop")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMidiEventLoop")
 	}
 	static class UAkMidiEventLoop* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMidiEventLoop>();
 	}
 };
-static_assert(alignof(UAkMidiEventLoop) == 0x000008, "Wrong alignment on UAkMidiEventLoop");
-static_assert(sizeof(UAkMidiEventLoop) == 0x000078, "Wrong size on UAkMidiEventLoop");
+DUMPER7_ASSERTS_UAkMidiEventLoop;
 
 // Class AkAudio.AkMidiEventMgr
 // 0x00F8 (0x0128 - 0x0030)
@@ -1612,16 +1647,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMidiEventMgr">();
+		STATIC_CLASS_IMPL("AkMidiEventMgr")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMidiEventMgr")
 	}
 	static class UAkMidiEventMgr* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMidiEventMgr>();
 	}
 };
-static_assert(alignof(UAkMidiEventMgr) == 0x000008, "Wrong alignment on UAkMidiEventMgr");
-static_assert(sizeof(UAkMidiEventMgr) == 0x000128, "Wrong size on UAkMidiEventMgr");
-static_assert(offsetof(UAkMidiEventMgr, MidiEventMap) == 0x000030, "Member 'UAkMidiEventMgr::MidiEventMap' has a wrong offset!");
+DUMPER7_ASSERTS_UAkMidiEventMgr;
 
 // Class AkAudio.MovieSceneAkAudioRTPCSection
 // 0x01D8 (0x02D0 - 0x00F8)
@@ -1637,20 +1674,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAkAudioRTPCSection">();
+		STATIC_CLASS_IMPL("MovieSceneAkAudioRTPCSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAkAudioRTPCSection")
 	}
 	static class UMovieSceneAkAudioRTPCSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAkAudioRTPCSection>();
 	}
 };
-static_assert(alignof(UMovieSceneAkAudioRTPCSection) == 0x000008, "Wrong alignment on UMovieSceneAkAudioRTPCSection");
-static_assert(sizeof(UMovieSceneAkAudioRTPCSection) == 0x0002D0, "Wrong size on UMovieSceneAkAudioRTPCSection");
-static_assert(offsetof(UMovieSceneAkAudioRTPCSection, RTPC) == 0x0000F8, "Member 'UMovieSceneAkAudioRTPCSection::RTPC' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioRTPCSection, Name_0) == 0x000100, "Member 'UMovieSceneAkAudioRTPCSection::Name_0' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioRTPCSection, FloatCurve) == 0x000110, "Member 'UMovieSceneAkAudioRTPCSection::FloatCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioRTPCSection, FloatChannelSerializationHelper) == 0x000190, "Member 'UMovieSceneAkAudioRTPCSection::FloatChannelSerializationHelper' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioRTPCSection, RTPCChannel) == 0x0001C0, "Member 'UMovieSceneAkAudioRTPCSection::RTPCChannel' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneAkAudioRTPCSection;
 
 // Class AkAudio.AkPlatformInitialisationSettingsBase
 // 0x0000 (0x0000 - 0x0000)
@@ -1659,7 +1694,11 @@ class IAkPlatformInitialisationSettingsBase final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPlatformInitialisationSettingsBase">();
+		STATIC_CLASS_IMPL("AkPlatformInitialisationSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPlatformInitialisationSettingsBase")
 	}
 	static class IAkPlatformInitialisationSettingsBase* GetDefaultObj()
 	{
@@ -1675,8 +1714,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IAkPlatformInitialisationSettingsBase) == 0x000001, "Wrong alignment on IAkPlatformInitialisationSettingsBase");
-static_assert(sizeof(IAkPlatformInitialisationSettingsBase) == 0x000001, "Wrong size on IAkPlatformInitialisationSettingsBase");
+DUMPER7_ASSERTS_IAkPlatformInitialisationSettingsBase;
 
 // Class AkAudio.AkPS4InitializationSettings
 // 0x00D8 (0x0108 - 0x0030)
@@ -1694,18 +1732,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPS4InitializationSettings">();
+		STATIC_CLASS_IMPL("AkPS4InitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPS4InitializationSettings")
 	}
 	static class UAkPS4InitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPS4InitializationSettings>();
 	}
 };
-static_assert(alignof(UAkPS4InitializationSettings) == 0x000008, "Wrong alignment on UAkPS4InitializationSettings");
-static_assert(sizeof(UAkPS4InitializationSettings) == 0x000108, "Wrong size on UAkPS4InitializationSettings");
-static_assert(offsetof(UAkPS4InitializationSettings, CommonSettings) == 0x000038, "Member 'UAkPS4InitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkPS4InitializationSettings, CommunicationSettings) == 0x0000A0, "Member 'UAkPS4InitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkPS4InitializationSettings, AdvancedSettings) == 0x0000C0, "Member 'UAkPS4InitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkPS4InitializationSettings;
 
 // Class AkAudio.AkPS4PlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1714,15 +1752,18 @@ class UAkPS4PlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPS4PlatformInfo">();
+		STATIC_CLASS_IMPL("AkPS4PlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPS4PlatformInfo")
 	}
 	static class UAkPS4PlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPS4PlatformInfo>();
 	}
 };
-static_assert(alignof(UAkPS4PlatformInfo) == 0x000008, "Wrong alignment on UAkPS4PlatformInfo");
-static_assert(sizeof(UAkPS4PlatformInfo) == 0x000078, "Wrong size on UAkPS4PlatformInfo");
+DUMPER7_ASSERTS_UAkPS4PlatformInfo;
 
 // Class AkAudio.AkPS5InitializationSettings
 // 0x00E8 (0x0118 - 0x0030)
@@ -1738,18 +1779,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPS5InitializationSettings">();
+		STATIC_CLASS_IMPL("AkPS5InitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPS5InitializationSettings")
 	}
 	static class UAkPS5InitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPS5InitializationSettings>();
 	}
 };
-static_assert(alignof(UAkPS5InitializationSettings) == 0x000008, "Wrong alignment on UAkPS5InitializationSettings");
-static_assert(sizeof(UAkPS5InitializationSettings) == 0x000118, "Wrong size on UAkPS5InitializationSettings");
-static_assert(offsetof(UAkPS5InitializationSettings, CommonSettings) == 0x000038, "Member 'UAkPS5InitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkPS5InitializationSettings, CommunicationSettings) == 0x0000A0, "Member 'UAkPS5InitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkPS5InitializationSettings, AdvancedSettings) == 0x0000C0, "Member 'UAkPS5InitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkPS5InitializationSettings;
 
 // Class AkAudio.AkDPXInitializationSettings
 // 0x0000 (0x0118 - 0x0118)
@@ -1758,15 +1799,18 @@ class UAkDPXInitializationSettings final : public UAkPS5InitializationSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkDPXInitializationSettings">();
+		STATIC_CLASS_IMPL("AkDPXInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkDPXInitializationSettings")
 	}
 	static class UAkDPXInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkDPXInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkDPXInitializationSettings) == 0x000008, "Wrong alignment on UAkDPXInitializationSettings");
-static_assert(sizeof(UAkDPXInitializationSettings) == 0x000118, "Wrong size on UAkDPXInitializationSettings");
+DUMPER7_ASSERTS_UAkDPXInitializationSettings;
 
 // Class AkAudio.AkPS5PlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -1775,15 +1819,18 @@ class UAkPS5PlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkPS5PlatformInfo">();
+		STATIC_CLASS_IMPL("AkPS5PlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkPS5PlatformInfo")
 	}
 	static class UAkPS5PlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkPS5PlatformInfo>();
 	}
 };
-static_assert(alignof(UAkPS5PlatformInfo) == 0x000008, "Wrong alignment on UAkPS5PlatformInfo");
-static_assert(sizeof(UAkPS5PlatformInfo) == 0x000078, "Wrong size on UAkPS5PlatformInfo");
+DUMPER7_ASSERTS_UAkPS5PlatformInfo;
 
 // Class AkAudio.AkReverbVolume
 // 0x0040 (0x0750 - 0x0710)
@@ -1804,22 +1851,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkReverbVolume">();
+		STATIC_CLASS_IMPL("AkReverbVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkReverbVolume")
 	}
 	static class AAkReverbVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAkReverbVolume>();
 	}
 };
-static_assert(alignof(AAkReverbVolume) == 0x000010, "Wrong alignment on AAkReverbVolume");
-static_assert(sizeof(AAkReverbVolume) == 0x000750, "Wrong size on AAkReverbVolume");
-static_assert(offsetof(AAkReverbVolume, bEnabled) == 0x000710, "Member 'AAkReverbVolume::bEnabled' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, AuxBus) == 0x000718, "Member 'AAkReverbVolume::AuxBus' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, AuxBusName) == 0x000720, "Member 'AAkReverbVolume::AuxBusName' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, SendLevel) == 0x000730, "Member 'AAkReverbVolume::SendLevel' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, FadeRate) == 0x000734, "Member 'AAkReverbVolume::FadeRate' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, Priority) == 0x000738, "Member 'AAkReverbVolume::Priority' has a wrong offset!");
-static_assert(offsetof(AAkReverbVolume, LateReverbComponent) == 0x000740, "Member 'AAkReverbVolume::LateReverbComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AAkReverbVolume;
 
 // Class AkAudio.AkRoomComponent
 // 0x0030 (0x03E0 - 0x03B0)
@@ -1846,22 +1889,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkRoomComponent">();
+		STATIC_CLASS_IMPL("AkRoomComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkRoomComponent")
 	}
 	static class UAkRoomComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkRoomComponent>();
 	}
 };
-static_assert(alignof(UAkRoomComponent) == 0x000010, "Wrong alignment on UAkRoomComponent");
-static_assert(sizeof(UAkRoomComponent) == 0x0003E0, "Wrong size on UAkRoomComponent");
-static_assert(offsetof(UAkRoomComponent, bEnable) == 0x0003B0, "Member 'UAkRoomComponent::bEnable' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, bDynamic) == 0x0003B1, "Member 'UAkRoomComponent::bDynamic' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, Priority) == 0x0003B4, "Member 'UAkRoomComponent::Priority' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, WallOcclusion) == 0x0003B8, "Member 'UAkRoomComponent::WallOcclusion' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, AuxSendLevel) == 0x0003BC, "Member 'UAkRoomComponent::AuxSendLevel' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, AutoPost) == 0x0003C0, "Member 'UAkRoomComponent::AutoPost' has a wrong offset!");
-static_assert(offsetof(UAkRoomComponent, GeometryComponent) == 0x0003D0, "Member 'UAkRoomComponent::GeometryComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UAkRoomComponent;
 
 // Class AkAudio.AkRtpc
 // 0x0010 (0x0068 - 0x0058)
@@ -1873,16 +1912,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkRtpc">();
+		STATIC_CLASS_IMPL("AkRtpc")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkRtpc")
 	}
 	static class UAkRtpc* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkRtpc>();
 	}
 };
-static_assert(alignof(UAkRtpc) == 0x000008, "Wrong alignment on UAkRtpc");
-static_assert(sizeof(UAkRtpc) == 0x000068, "Wrong size on UAkRtpc");
-static_assert(offsetof(UAkRtpc, GameParameterCookedData) == 0x000058, "Member 'UAkRtpc::GameParameterCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkRtpc;
 
 // Class AkAudio.AkSettings
 // 0x0358 (0x0388 - 0x0030)
@@ -1941,57 +1982,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSettings">();
+		STATIC_CLASS_IMPL("AkSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSettings")
 	}
 	static class UAkSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSettings>();
 	}
 };
-static_assert(alignof(UAkSettings) == 0x000008, "Wrong alignment on UAkSettings");
-static_assert(sizeof(UAkSettings) == 0x000388, "Wrong size on UAkSettings");
-static_assert(offsetof(UAkSettings, MaxSimultaneousReverbVolumes) == 0x000030, "Member 'UAkSettings::MaxSimultaneousReverbVolumes' has a wrong offset!");
-static_assert(offsetof(UAkSettings, WwiseProjectPath) == 0x000038, "Member 'UAkSettings::WwiseProjectPath' has a wrong offset!");
-static_assert(offsetof(UAkSettings, WwiseSoundDataFolder) == 0x000048, "Member 'UAkSettings::WwiseSoundDataFolder' has a wrong offset!");
-static_assert(offsetof(UAkSettings, RootOutputPath) == 0x000058, "Member 'UAkSettings::RootOutputPath' has a wrong offset!");
-static_assert(offsetof(UAkSettings, GeneratedSoundBanksFolder) == 0x000068, "Member 'UAkSettings::GeneratedSoundBanksFolder' has a wrong offset!");
-static_assert(offsetof(UAkSettings, WwiseStagingDirectory) == 0x000078, "Member 'UAkSettings::WwiseStagingDirectory' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bSoundBanksTransfered) == 0x000088, "Member 'UAkSettings::bSoundBanksTransfered' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bAssetsMigrated) == 0x000089, "Member 'UAkSettings::bAssetsMigrated' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bProjectMigrated) == 0x00008A, "Member 'UAkSettings::bProjectMigrated' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bAutoConnectToWAAPI) == 0x00008B, "Member 'UAkSettings::bAutoConnectToWAAPI' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DefaultOcclusionCollisionChannel) == 0x00008C, "Member 'UAkSettings::DefaultOcclusionCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DefaultFitToGeometryCollisionChannel) == 0x00008D, "Member 'UAkSettings::DefaultFitToGeometryCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UAkSettings, AkGeometryMap) == 0x000090, "Member 'UAkSettings::AkGeometryMap' has a wrong offset!");
-static_assert(offsetof(UAkSettings, GlobalDecayAbsorption) == 0x0000E0, "Member 'UAkSettings::GlobalDecayAbsorption' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DefaultReverbAuxBus) == 0x0000E8, "Member 'UAkSettings::DefaultReverbAuxBus' has a wrong offset!");
-static_assert(offsetof(UAkSettings, EnvironmentDecayAuxBusMap) == 0x000118, "Member 'UAkSettings::EnvironmentDecayAuxBusMap' has a wrong offset!");
-static_assert(offsetof(UAkSettings, HFDampingName) == 0x000168, "Member 'UAkSettings::HFDampingName' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DecayEstimateName) == 0x000178, "Member 'UAkSettings::DecayEstimateName' has a wrong offset!");
-static_assert(offsetof(UAkSettings, TimeToFirstReflectionName) == 0x000188, "Member 'UAkSettings::TimeToFirstReflectionName' has a wrong offset!");
-static_assert(offsetof(UAkSettings, HFDampingRTPC) == 0x000198, "Member 'UAkSettings::HFDampingRTPC' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DecayEstimateRTPC) == 0x0001C8, "Member 'UAkSettings::DecayEstimateRTPC' has a wrong offset!");
-static_assert(offsetof(UAkSettings, TimeToFirstReflectionRTPC) == 0x0001F8, "Member 'UAkSettings::TimeToFirstReflectionRTPC' has a wrong offset!");
-static_assert(offsetof(UAkSettings, AudioInputEvent) == 0x000228, "Member 'UAkSettings::AudioInputEvent' has a wrong offset!");
-static_assert(offsetof(UAkSettings, AcousticTextureParamsMap) == 0x000258, "Member 'UAkSettings::AcousticTextureParamsMap' has a wrong offset!");
-static_assert(offsetof(UAkSettings, SplitSwitchContainerMedia) == 0x0002A8, "Member 'UAkSettings::SplitSwitchContainerMedia' has a wrong offset!");
-static_assert(offsetof(UAkSettings, SplitMediaPerFolder) == 0x0002A9, "Member 'UAkSettings::SplitMediaPerFolder' has a wrong offset!");
-static_assert(offsetof(UAkSettings, UseEventBasedPackaging) == 0x0002AA, "Member 'UAkSettings::UseEventBasedPackaging' has a wrong offset!");
-static_assert(offsetof(UAkSettings, CommandletCommitMessage) == 0x0002B0, "Member 'UAkSettings::CommandletCommitMessage' has a wrong offset!");
-static_assert(offsetof(UAkSettings, UnrealCultureToWwiseCulture) == 0x0002C0, "Member 'UAkSettings::UnrealCultureToWwiseCulture' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DefaultAssetCreationPath) == 0x000310, "Member 'UAkSettings::DefaultAssetCreationPath' has a wrong offset!");
-static_assert(offsetof(UAkSettings, InitBank) == 0x000320, "Member 'UAkSettings::InitBank' has a wrong offset!");
-static_assert(offsetof(UAkSettings, AudioRouting) == 0x000350, "Member 'UAkSettings::AudioRouting' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bWwiseSoundEngineEnabled) == 0x000354, "Member 'UAkSettings::bWwiseSoundEngineEnabled' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bWwiseAudioLinkEnabled) == 0x000355, "Member 'UAkSettings::bWwiseAudioLinkEnabled' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bAkAudioMixerEnabled) == 0x000356, "Member 'UAkSettings::bAkAudioMixerEnabled' has a wrong offset!");
-static_assert(offsetof(UAkSettings, DefaultScalingFactor) == 0x000358, "Member 'UAkSettings::DefaultScalingFactor' has a wrong offset!");
-static_assert(offsetof(UAkSettings, AskedToUseNewAssetManagement) == 0x00035C, "Member 'UAkSettings::AskedToUseNewAssetManagement' has a wrong offset!");
-static_assert(offsetof(UAkSettings, bEnableMultiCoreRendering) == 0x00035D, "Member 'UAkSettings::bEnableMultiCoreRendering' has a wrong offset!");
-static_assert(offsetof(UAkSettings, MigratedEnableMultiCoreRendering) == 0x00035E, "Member 'UAkSettings::MigratedEnableMultiCoreRendering' has a wrong offset!");
-static_assert(offsetof(UAkSettings, FixupRedirectorsDuringMigration) == 0x00035F, "Member 'UAkSettings::FixupRedirectorsDuringMigration' has a wrong offset!");
-static_assert(offsetof(UAkSettings, WwiseWindowsInstallationPath) == 0x000360, "Member 'UAkSettings::WwiseWindowsInstallationPath' has a wrong offset!");
-static_assert(offsetof(UAkSettings, WwiseMacInstallationPath) == 0x000370, "Member 'UAkSettings::WwiseMacInstallationPath' has a wrong offset!");
+DUMPER7_ASSERTS_UAkSettings;
 
 // Class AkAudio.AkSettingsPerUser
 // 0x00B0 (0x00E0 - 0x0030)
@@ -2017,29 +2019,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSettingsPerUser">();
+		STATIC_CLASS_IMPL("AkSettingsPerUser")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSettingsPerUser")
 	}
 	static class UAkSettingsPerUser* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSettingsPerUser>();
 	}
 };
-static_assert(alignof(UAkSettingsPerUser) == 0x000008, "Wrong alignment on UAkSettingsPerUser");
-static_assert(sizeof(UAkSettingsPerUser) == 0x0000E0, "Wrong size on UAkSettingsPerUser");
-static_assert(offsetof(UAkSettingsPerUser, WwiseWindowsInstallationPath) == 0x000030, "Member 'UAkSettingsPerUser::WwiseWindowsInstallationPath' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, WwiseMacInstallationPath) == 0x000040, "Member 'UAkSettingsPerUser::WwiseMacInstallationPath' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, RootOutputPathOverride) == 0x000050, "Member 'UAkSettingsPerUser::RootOutputPathOverride' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, GeneratedSoundBanksFolderOverride) == 0x000060, "Member 'UAkSettingsPerUser::GeneratedSoundBanksFolderOverride' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, WaapiIPAddress) == 0x000070, "Member 'UAkSettingsPerUser::WaapiIPAddress' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, WaapiPort) == 0x000080, "Member 'UAkSettingsPerUser::WaapiPort' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, bAutoConnectToWAAPI) == 0x000084, "Member 'UAkSettingsPerUser::bAutoConnectToWAAPI' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, AutoSyncSelection) == 0x000085, "Member 'UAkSettingsPerUser::AutoSyncSelection' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, WaapiTranslatorTimeout) == 0x000088, "Member 'UAkSettingsPerUser::WaapiTranslatorTimeout' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, SuppressGeneratedSoundBanksPathWarnings) == 0x00008C, "Member 'UAkSettingsPerUser::SuppressGeneratedSoundBanksPathWarnings' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, SoundDataGenerationSkipLanguage) == 0x00008D, "Member 'UAkSettingsPerUser::SoundDataGenerationSkipLanguage' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, AskForWwiseAssetReload) == 0x00008E, "Member 'UAkSettingsPerUser::AskForWwiseAssetReload' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, bCoverUserSettingVolume) == 0x00008F, "Member 'UAkSettingsPerUser::bCoverUserSettingVolume' has a wrong offset!");
-static_assert(offsetof(UAkSettingsPerUser, CustomDefaultVolume) == 0x000090, "Member 'UAkSettingsPerUser::CustomDefaultVolume' has a wrong offset!");
+DUMPER7_ASSERTS_UAkSettingsPerUser;
 
 // Class AkAudio.AkSlider
 // 0x05E8 (0x07A0 - 0x01B8)
@@ -2083,30 +2074,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSlider">();
+		STATIC_CLASS_IMPL("AkSlider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSlider")
 	}
 	static class UAkSlider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSlider>();
 	}
 };
-static_assert(alignof(UAkSlider) == 0x000010, "Wrong alignment on UAkSlider");
-static_assert(sizeof(UAkSlider) == 0x0007A0, "Wrong size on UAkSlider");
-static_assert(offsetof(UAkSlider, Value) == 0x0001B8, "Member 'UAkSlider::Value' has a wrong offset!");
-static_assert(offsetof(UAkSlider, ValueDelegate) == 0x0001BC, "Member 'UAkSlider::ValueDelegate' has a wrong offset!");
-static_assert(offsetof(UAkSlider, WidgetStyle) == 0x0001D0, "Member 'UAkSlider::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(UAkSlider, Orientation) == 0x0006D0, "Member 'UAkSlider::Orientation' has a wrong offset!");
-static_assert(offsetof(UAkSlider, SliderBarColor) == 0x0006D4, "Member 'UAkSlider::SliderBarColor' has a wrong offset!");
-static_assert(offsetof(UAkSlider, SliderHandleColor) == 0x0006E4, "Member 'UAkSlider::SliderHandleColor' has a wrong offset!");
-static_assert(offsetof(UAkSlider, IndentHandle) == 0x0006F4, "Member 'UAkSlider::IndentHandle' has a wrong offset!");
-static_assert(offsetof(UAkSlider, Locked) == 0x0006F5, "Member 'UAkSlider::Locked' has a wrong offset!");
-static_assert(offsetof(UAkSlider, StepSize) == 0x0006F8, "Member 'UAkSlider::StepSize' has a wrong offset!");
-static_assert(offsetof(UAkSlider, IsFocusable) == 0x0006FC, "Member 'UAkSlider::IsFocusable' has a wrong offset!");
-static_assert(offsetof(UAkSlider, ThePropertyToControl) == 0x000700, "Member 'UAkSlider::ThePropertyToControl' has a wrong offset!");
-static_assert(offsetof(UAkSlider, ItemToControl) == 0x000710, "Member 'UAkSlider::ItemToControl' has a wrong offset!");
-static_assert(offsetof(UAkSlider, OnValueChanged) == 0x000750, "Member 'UAkSlider::OnValueChanged' has a wrong offset!");
-static_assert(offsetof(UAkSlider, OnItemDropped) == 0x000760, "Member 'UAkSlider::OnItemDropped' has a wrong offset!");
-static_assert(offsetof(UAkSlider, OnPropertyDropped) == 0x000770, "Member 'UAkSlider::OnPropertyDropped' has a wrong offset!");
+DUMPER7_ASSERTS_UAkSlider;
 
 // Class AkAudio.AkSpatialAudioVolume
 // 0x0020 (0x0730 - 0x0710)
@@ -2121,18 +2100,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSpatialAudioVolume">();
+		STATIC_CLASS_IMPL("AkSpatialAudioVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSpatialAudioVolume")
 	}
 	static class AAkSpatialAudioVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAkSpatialAudioVolume>();
 	}
 };
-static_assert(alignof(AAkSpatialAudioVolume) == 0x000010, "Wrong alignment on AAkSpatialAudioVolume");
-static_assert(sizeof(AAkSpatialAudioVolume) == 0x000730, "Wrong size on AAkSpatialAudioVolume");
-static_assert(offsetof(AAkSpatialAudioVolume, SurfaceReflectorSet) == 0x000710, "Member 'AAkSpatialAudioVolume::SurfaceReflectorSet' has a wrong offset!");
-static_assert(offsetof(AAkSpatialAudioVolume, LateReverb) == 0x000718, "Member 'AAkSpatialAudioVolume::LateReverb' has a wrong offset!");
-static_assert(offsetof(AAkSpatialAudioVolume, Room) == 0x000720, "Member 'AAkSpatialAudioVolume::Room' has a wrong offset!");
+DUMPER7_ASSERTS_AAkSpatialAudioVolume;
 
 // Class AkAudio.AkSpotReflector
 // 0x0030 (0x0710 - 0x06E0)
@@ -2152,23 +2131,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSpotReflector">();
+		STATIC_CLASS_IMPL("AkSpotReflector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSpotReflector")
 	}
 	static class AAkSpotReflector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAkSpotReflector>();
 	}
 };
-static_assert(alignof(AAkSpotReflector) == 0x000010, "Wrong alignment on AAkSpotReflector");
-static_assert(sizeof(AAkSpotReflector) == 0x000710, "Wrong size on AAkSpotReflector");
-static_assert(offsetof(AAkSpotReflector, EarlyReflectionAuxBus) == 0x0006D8, "Member 'AAkSpotReflector::EarlyReflectionAuxBus' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, EarlyReflectionAuxBusName) == 0x0006E0, "Member 'AAkSpotReflector::EarlyReflectionAuxBusName' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, AcousticTexture) == 0x0006F0, "Member 'AAkSpotReflector::AcousticTexture' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, DistanceScalingFactor) == 0x0006F8, "Member 'AAkSpotReflector::DistanceScalingFactor' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, Level) == 0x0006FC, "Member 'AAkSpotReflector::Level' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, SameRoomOnly) == 0x000700, "Member 'AAkSpotReflector::SameRoomOnly' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, EnableRoomOverride) == 0x000701, "Member 'AAkSpotReflector::EnableRoomOverride' has a wrong offset!");
-static_assert(offsetof(AAkSpotReflector, RoomOverride) == 0x000708, "Member 'AAkSpotReflector::RoomOverride' has a wrong offset!");
+DUMPER7_ASSERTS_AAkSpotReflector;
 
 // Class AkAudio.AkStateValue
 // 0x0000 (0x0080 - 0x0080)
@@ -2177,37 +2151,42 @@ class UAkStateValue final : public UAkGroupValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkStateValue">();
+		STATIC_CLASS_IMPL("AkStateValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkStateValue")
 	}
 	static class UAkStateValue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkStateValue>();
 	}
 };
-static_assert(alignof(UAkStateValue) == 0x000008, "Wrong alignment on UAkStateValue");
-static_assert(sizeof(UAkStateValue) == 0x000080, "Wrong size on UAkStateValue");
+DUMPER7_ASSERTS_UAkStateValue;
 
 // Class AkAudio.AkSubmixInputComponent
-// 0x0020 (0x06A0 - 0x0680)
+// 0x0020 (0x06B0 - 0x0690)
 class UAkSubmixInputComponent final : public UAkAudioInputComponent
 {
 public:
-	class USoundSubmix*                           SubmixToRecord;                                    // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_680[0x20];                                     // 0x0680(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USoundSubmix*                           SubmixToRecord;                                    // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_690[0x20];                                     // 0x0690(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSubmixInputComponent">();
+		STATIC_CLASS_IMPL("AkSubmixInputComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSubmixInputComponent")
 	}
 	static class UAkSubmixInputComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSubmixInputComponent>();
 	}
 };
-static_assert(alignof(UAkSubmixInputComponent) == 0x000010, "Wrong alignment on UAkSubmixInputComponent");
-static_assert(sizeof(UAkSubmixInputComponent) == 0x0006A0, "Wrong size on UAkSubmixInputComponent");
-static_assert(offsetof(UAkSubmixInputComponent, SubmixToRecord) == 0x000678, "Member 'UAkSubmixInputComponent::SubmixToRecord' has a wrong offset!");
+DUMPER7_ASSERTS_UAkSubmixInputComponent;
 
 // Class AkAudio.AkSurfaceReflectorSetComponent
 // 0x0030 (0x0380 - 0x0350)
@@ -2232,20 +2211,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSurfaceReflectorSetComponent">();
+		STATIC_CLASS_IMPL("AkSurfaceReflectorSetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSurfaceReflectorSetComponent")
 	}
 	static class UAkSurfaceReflectorSetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSurfaceReflectorSetComponent>();
 	}
 };
-static_assert(alignof(UAkSurfaceReflectorSetComponent) == 0x000010, "Wrong alignment on UAkSurfaceReflectorSetComponent");
-static_assert(sizeof(UAkSurfaceReflectorSetComponent) == 0x000380, "Wrong size on UAkSurfaceReflectorSetComponent");
-static_assert(offsetof(UAkSurfaceReflectorSetComponent, bEnableSurfaceReflectors) == 0x000350, "Member 'UAkSurfaceReflectorSetComponent::bEnableSurfaceReflectors' has a wrong offset!");
-static_assert(offsetof(UAkSurfaceReflectorSetComponent, AcousticPolys) == 0x000358, "Member 'UAkSurfaceReflectorSetComponent::AcousticPolys' has a wrong offset!");
-static_assert(offsetof(UAkSurfaceReflectorSetComponent, bEnableDiffraction) == 0x000368, "Member 'UAkSurfaceReflectorSetComponent::bEnableDiffraction' has a wrong offset!");
-static_assert(offsetof(UAkSurfaceReflectorSetComponent, bEnableDiffractionOnBoundaryEdges) == 0x000369, "Member 'UAkSurfaceReflectorSetComponent::bEnableDiffractionOnBoundaryEdges' has a wrong offset!");
-static_assert(offsetof(UAkSurfaceReflectorSetComponent, AssociatedRoom) == 0x000370, "Member 'UAkSurfaceReflectorSetComponent::AssociatedRoom' has a wrong offset!");
+DUMPER7_ASSERTS_UAkSurfaceReflectorSetComponent;
 
 // Class AkAudio.AkSwitchValue
 // 0x0000 (0x0080 - 0x0080)
@@ -2254,15 +2231,18 @@ class UAkSwitchValue final : public UAkGroupValue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkSwitchValue">();
+		STATIC_CLASS_IMPL("AkSwitchValue")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkSwitchValue")
 	}
 	static class UAkSwitchValue* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkSwitchValue>();
 	}
 };
-static_assert(alignof(UAkSwitchValue) == 0x000008, "Wrong alignment on UAkSwitchValue");
-static_assert(sizeof(UAkSwitchValue) == 0x000080, "Wrong size on UAkSwitchValue");
+DUMPER7_ASSERTS_UAkSwitchValue;
 
 // Class AkAudio.AkTrigger
 // 0x0010 (0x0068 - 0x0058)
@@ -2274,16 +2254,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkTrigger">();
+		STATIC_CLASS_IMPL("AkTrigger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkTrigger")
 	}
 	static class UAkTrigger* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkTrigger>();
 	}
 };
-static_assert(alignof(UAkTrigger) == 0x000008, "Wrong alignment on UAkTrigger");
-static_assert(sizeof(UAkTrigger) == 0x000068, "Wrong size on UAkTrigger");
-static_assert(offsetof(UAkTrigger, TriggerCookedData) == 0x000058, "Member 'UAkTrigger::TriggerCookedData' has a wrong offset!");
+DUMPER7_ASSERTS_UAkTrigger;
 
 // Class AkAudio.AkTVOSInitializationSettings
 // 0x00E8 (0x0118 - 0x0030)
@@ -2300,19 +2282,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkTVOSInitializationSettings">();
+		STATIC_CLASS_IMPL("AkTVOSInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkTVOSInitializationSettings")
 	}
 	static class UAkTVOSInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkTVOSInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkTVOSInitializationSettings) == 0x000008, "Wrong alignment on UAkTVOSInitializationSettings");
-static_assert(sizeof(UAkTVOSInitializationSettings) == 0x000118, "Wrong size on UAkTVOSInitializationSettings");
-static_assert(offsetof(UAkTVOSInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkTVOSInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkTVOSInitializationSettings, AudioSession) == 0x0000A8, "Member 'UAkTVOSInitializationSettings::AudioSession' has a wrong offset!");
-static_assert(offsetof(UAkTVOSInitializationSettings, CommunicationSettings) == 0x0000B8, "Member 'UAkTVOSInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkTVOSInitializationSettings, AdvancedSettings) == 0x0000D8, "Member 'UAkTVOSInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkTVOSInitializationSettings;
 
 // Class AkAudio.AkTVOSPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2321,15 +2302,18 @@ class UAkTVOSPlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkTVOSPlatformInfo">();
+		STATIC_CLASS_IMPL("AkTVOSPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkTVOSPlatformInfo")
 	}
 	static class UAkTVOSPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkTVOSPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkTVOSPlatformInfo) == 0x000008, "Wrong alignment on UAkTVOSPlatformInfo");
-static_assert(sizeof(UAkTVOSPlatformInfo) == 0x000078, "Wrong size on UAkTVOSPlatformInfo");
+DUMPER7_ASSERTS_UAkTVOSPlatformInfo;
 
 // Class AkAudio.AkWaapiCalls
 // 0x0000 (0x0030 - 0x0030)
@@ -2349,15 +2333,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWaapiCalls">();
+		STATIC_CLASS_IMPL("AkWaapiCalls")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWaapiCalls")
 	}
 	static class UAkWaapiCalls* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWaapiCalls>();
 	}
 };
-static_assert(alignof(UAkWaapiCalls) == 0x000008, "Wrong alignment on UAkWaapiCalls");
-static_assert(sizeof(UAkWaapiCalls) == 0x000030, "Wrong size on UAkWaapiCalls");
+DUMPER7_ASSERTS_UAkWaapiCalls;
 
 // Class AkAudio.SAkWaapiFieldNamesConv
 // 0x0000 (0x0030 - 0x0030)
@@ -2370,15 +2357,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SAkWaapiFieldNamesConv">();
+		STATIC_CLASS_IMPL("SAkWaapiFieldNamesConv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SAkWaapiFieldNamesConv")
 	}
 	static class USAkWaapiFieldNamesConv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USAkWaapiFieldNamesConv>();
 	}
 };
-static_assert(alignof(USAkWaapiFieldNamesConv) == 0x000008, "Wrong alignment on USAkWaapiFieldNamesConv");
-static_assert(sizeof(USAkWaapiFieldNamesConv) == 0x000030, "Wrong size on USAkWaapiFieldNamesConv");
+DUMPER7_ASSERTS_USAkWaapiFieldNamesConv;
 
 // Class AkAudio.AkWaapiJsonManager
 // 0x0000 (0x0030 - 0x0030)
@@ -2403,15 +2393,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWaapiJsonManager">();
+		STATIC_CLASS_IMPL("AkWaapiJsonManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWaapiJsonManager")
 	}
 	static class UAkWaapiJsonManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWaapiJsonManager>();
 	}
 };
-static_assert(alignof(UAkWaapiJsonManager) == 0x000008, "Wrong alignment on UAkWaapiJsonManager");
-static_assert(sizeof(UAkWaapiJsonManager) == 0x000030, "Wrong size on UAkWaapiJsonManager");
+DUMPER7_ASSERTS_UAkWaapiJsonManager;
 
 // Class AkAudio.AkWaapiUriConv
 // 0x0000 (0x0030 - 0x0030)
@@ -2424,15 +2417,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWaapiUriConv">();
+		STATIC_CLASS_IMPL("AkWaapiUriConv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWaapiUriConv")
 	}
 	static class UAkWaapiUriConv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWaapiUriConv>();
 	}
 };
-static_assert(alignof(UAkWaapiUriConv) == 0x000008, "Wrong alignment on UAkWaapiUriConv");
-static_assert(sizeof(UAkWaapiUriConv) == 0x000030, "Wrong size on UAkWaapiUriConv");
+DUMPER7_ASSERTS_UAkWaapiUriConv;
 
 // Class AkAudio.AkWindowsInitializationSettings
 // 0x00E0 (0x0110 - 0x0030)
@@ -2450,18 +2446,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWindowsInitializationSettings">();
+		STATIC_CLASS_IMPL("AkWindowsInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWindowsInitializationSettings")
 	}
 	static class UAkWindowsInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWindowsInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkWindowsInitializationSettings) == 0x000008, "Wrong alignment on UAkWindowsInitializationSettings");
-static_assert(sizeof(UAkWindowsInitializationSettings) == 0x000110, "Wrong size on UAkWindowsInitializationSettings");
-static_assert(offsetof(UAkWindowsInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkWindowsInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkWindowsInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkWindowsInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkWindowsInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkWindowsInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkWindowsInitializationSettings;
 
 // Class AkAudio.AkWin32PlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2470,15 +2466,18 @@ class UAkWin32PlatformInfo final : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWin32PlatformInfo">();
+		STATIC_CLASS_IMPL("AkWin32PlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWin32PlatformInfo")
 	}
 	static class UAkWin32PlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWin32PlatformInfo>();
 	}
 };
-static_assert(alignof(UAkWin32PlatformInfo) == 0x000008, "Wrong alignment on UAkWin32PlatformInfo");
-static_assert(sizeof(UAkWin32PlatformInfo) == 0x000078, "Wrong size on UAkWin32PlatformInfo");
+DUMPER7_ASSERTS_UAkWin32PlatformInfo;
 
 // Class AkAudio.AkWin64PlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2487,15 +2486,18 @@ class UAkWin64PlatformInfo : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWin64PlatformInfo">();
+		STATIC_CLASS_IMPL("AkWin64PlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWin64PlatformInfo")
 	}
 	static class UAkWin64PlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWin64PlatformInfo>();
 	}
 };
-static_assert(alignof(UAkWin64PlatformInfo) == 0x000008, "Wrong alignment on UAkWin64PlatformInfo");
-static_assert(sizeof(UAkWin64PlatformInfo) == 0x000078, "Wrong size on UAkWin64PlatformInfo");
+DUMPER7_ASSERTS_UAkWin64PlatformInfo;
 
 // Class AkAudio.AkWindowsPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2504,15 +2506,18 @@ class UAkWindowsPlatformInfo final : public UAkWin64PlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWindowsPlatformInfo">();
+		STATIC_CLASS_IMPL("AkWindowsPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWindowsPlatformInfo")
 	}
 	static class UAkWindowsPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWindowsPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkWindowsPlatformInfo) == 0x000008, "Wrong alignment on UAkWindowsPlatformInfo");
-static_assert(sizeof(UAkWindowsPlatformInfo) == 0x000078, "Wrong size on UAkWindowsPlatformInfo");
+DUMPER7_ASSERTS_UAkWindowsPlatformInfo;
 
 // Class AkAudio.AkWinAnvilInitializationSettings
 // 0x0000 (0x0110 - 0x0110)
@@ -2521,15 +2526,18 @@ class UAkWinAnvilInitializationSettings final : public UAkWinGDKInitializationSe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWinAnvilInitializationSettings">();
+		STATIC_CLASS_IMPL("AkWinAnvilInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWinAnvilInitializationSettings")
 	}
 	static class UAkWinAnvilInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWinAnvilInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkWinAnvilInitializationSettings) == 0x000008, "Wrong alignment on UAkWinAnvilInitializationSettings");
-static_assert(sizeof(UAkWinAnvilInitializationSettings) == 0x000110, "Wrong size on UAkWinAnvilInitializationSettings");
+DUMPER7_ASSERTS_UAkWinAnvilInitializationSettings;
 
 // Class AkAudio.AkWinGDKPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2538,15 +2546,18 @@ class UAkWinGDKPlatformInfo : public UAkPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWinGDKPlatformInfo">();
+		STATIC_CLASS_IMPL("AkWinGDKPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWinGDKPlatformInfo")
 	}
 	static class UAkWinGDKPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWinGDKPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkWinGDKPlatformInfo) == 0x000008, "Wrong alignment on UAkWinGDKPlatformInfo");
-static_assert(sizeof(UAkWinGDKPlatformInfo) == 0x000078, "Wrong size on UAkWinGDKPlatformInfo");
+DUMPER7_ASSERTS_UAkWinGDKPlatformInfo;
 
 // Class AkAudio.AkWinAnvilPlatformInfo
 // 0x0000 (0x0078 - 0x0078)
@@ -2555,15 +2566,18 @@ class UAkWinAnvilPlatformInfo final : public UAkWinGDKPlatformInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWinAnvilPlatformInfo">();
+		STATIC_CLASS_IMPL("AkWinAnvilPlatformInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWinAnvilPlatformInfo")
 	}
 	static class UAkWinAnvilPlatformInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWinAnvilPlatformInfo>();
 	}
 };
-static_assert(alignof(UAkWinAnvilPlatformInfo) == 0x000008, "Wrong alignment on UAkWinAnvilPlatformInfo");
-static_assert(sizeof(UAkWinAnvilPlatformInfo) == 0x000078, "Wrong size on UAkWinAnvilPlatformInfo");
+DUMPER7_ASSERTS_UAkWinAnvilPlatformInfo;
 
 // Class AkAudio.AkWwiseTree
 // 0x0040 (0x01F8 - 0x01B8)
@@ -2583,17 +2597,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWwiseTree">();
+		STATIC_CLASS_IMPL("AkWwiseTree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWwiseTree")
 	}
 	static class UAkWwiseTree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWwiseTree>();
 	}
 };
-static_assert(alignof(UAkWwiseTree) == 0x000008, "Wrong alignment on UAkWwiseTree");
-static_assert(sizeof(UAkWwiseTree) == 0x0001F8, "Wrong size on UAkWwiseTree");
-static_assert(offsetof(UAkWwiseTree, OnSelectionChanged) == 0x0001B8, "Member 'UAkWwiseTree::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UAkWwiseTree, OnItemDragged) == 0x0001C8, "Member 'UAkWwiseTree::OnItemDragged' has a wrong offset!");
+DUMPER7_ASSERTS_UAkWwiseTree;
 
 // Class AkAudio.AkWwiseTreeSelector
 // 0x0060 (0x0218 - 0x01B8)
@@ -2607,17 +2622,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkWwiseTreeSelector">();
+		STATIC_CLASS_IMPL("AkWwiseTreeSelector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkWwiseTreeSelector")
 	}
 	static class UAkWwiseTreeSelector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkWwiseTreeSelector>();
 	}
 };
-static_assert(alignof(UAkWwiseTreeSelector) == 0x000008, "Wrong alignment on UAkWwiseTreeSelector");
-static_assert(sizeof(UAkWwiseTreeSelector) == 0x000218, "Wrong size on UAkWwiseTreeSelector");
-static_assert(offsetof(UAkWwiseTreeSelector, OnSelectionChanged) == 0x0001B8, "Member 'UAkWwiseTreeSelector::OnSelectionChanged' has a wrong offset!");
-static_assert(offsetof(UAkWwiseTreeSelector, OnItemDragged) == 0x0001C8, "Member 'UAkWwiseTreeSelector::OnItemDragged' has a wrong offset!");
+DUMPER7_ASSERTS_UAkWwiseTreeSelector;
 
 // Class AkAudio.AkXSXInitializationSettings
 // 0x00E8 (0x0118 - 0x0030)
@@ -2637,19 +2653,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkXSXInitializationSettings">();
+		STATIC_CLASS_IMPL("AkXSXInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkXSXInitializationSettings")
 	}
 	static class UAkXSXInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkXSXInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkXSXInitializationSettings) == 0x000008, "Wrong alignment on UAkXSXInitializationSettings");
-static_assert(sizeof(UAkXSXInitializationSettings) == 0x000118, "Wrong size on UAkXSXInitializationSettings");
-static_assert(offsetof(UAkXSXInitializationSettings, CommonSettings) == 0x000038, "Member 'UAkXSXInitializationSettings::CommonSettings' has a wrong offset!");
-static_assert(offsetof(UAkXSXInitializationSettings, ApuHeapSettings) == 0x0000A0, "Member 'UAkXSXInitializationSettings::ApuHeapSettings' has a wrong offset!");
-static_assert(offsetof(UAkXSXInitializationSettings, CommunicationSettings) == 0x0000A8, "Member 'UAkXSXInitializationSettings::CommunicationSettings' has a wrong offset!");
-static_assert(offsetof(UAkXSXInitializationSettings, AdvancedSettings) == 0x0000C8, "Member 'UAkXSXInitializationSettings::AdvancedSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UAkXSXInitializationSettings;
 
 // Class AkAudio.AkMPXInitializationSettings
 // 0x0000 (0x0118 - 0x0118)
@@ -2658,15 +2673,18 @@ class UAkMPXInitializationSettings final : public UAkXSXInitializationSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AkMPXInitializationSettings">();
+		STATIC_CLASS_IMPL("AkMPXInitializationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AkMPXInitializationSettings")
 	}
 	static class UAkMPXInitializationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAkMPXInitializationSettings>();
 	}
 };
-static_assert(alignof(UAkMPXInitializationSettings) == 0x000008, "Wrong alignment on UAkMPXInitializationSettings");
-static_assert(sizeof(UAkMPXInitializationSettings) == 0x000118, "Wrong size on UAkMPXInitializationSettings");
+DUMPER7_ASSERTS_UAkMPXInitializationSettings;
 
 // Class AkAudio.MovieSceneAkAudioEventSection
 // 0x0080 (0x0178 - 0x00F8)
@@ -2690,23 +2708,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAkAudioEventSection">();
+		STATIC_CLASS_IMPL("MovieSceneAkAudioEventSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAkAudioEventSection")
 	}
 	static class UMovieSceneAkAudioEventSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAkAudioEventSection>();
 	}
 };
-static_assert(alignof(UMovieSceneAkAudioEventSection) == 0x000008, "Wrong alignment on UMovieSceneAkAudioEventSection");
-static_assert(sizeof(UMovieSceneAkAudioEventSection) == 0x000178, "Wrong size on UMovieSceneAkAudioEventSection");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, Event) == 0x000120, "Member 'UMovieSceneAkAudioEventSection::Event' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, RetriggerEvent) == 0x000128, "Member 'UMovieSceneAkAudioEventSection::RetriggerEvent' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, bGlobalTrigger) == 0x000129, "Member 'UMovieSceneAkAudioEventSection::bGlobalTrigger' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, ScrubTailLengthMs) == 0x00012C, "Member 'UMovieSceneAkAudioEventSection::ScrubTailLengthMs' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, StopAtSectionEnd) == 0x000130, "Member 'UMovieSceneAkAudioEventSection::StopAtSectionEnd' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, EventName) == 0x000138, "Member 'UMovieSceneAkAudioEventSection::EventName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, MaxSourceDuration) == 0x000148, "Member 'UMovieSceneAkAudioEventSection::MaxSourceDuration' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkAudioEventSection, MaxDurationSourceID) == 0x000150, "Member 'UMovieSceneAkAudioEventSection::MaxDurationSourceID' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneAkAudioEventSection;
 
 // Class AkAudio.MovieSceneAkTrack
 // 0x0018 (0x00B8 - 0x00A0)
@@ -2720,17 +2733,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAkTrack">();
+		STATIC_CLASS_IMPL("MovieSceneAkTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAkTrack")
 	}
 	static class UMovieSceneAkTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAkTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneAkTrack) == 0x000008, "Wrong alignment on UMovieSceneAkTrack");
-static_assert(sizeof(UMovieSceneAkTrack) == 0x0000B8, "Wrong size on UMovieSceneAkTrack");
-static_assert(offsetof(UMovieSceneAkTrack, Sections) == 0x0000A0, "Member 'UMovieSceneAkTrack::Sections' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAkTrack, bIsAMasterTrack) == 0x0000B0, "Member 'UMovieSceneAkTrack::bIsAMasterTrack' has a wrong offset!");
+DUMPER7_ASSERTS_UMovieSceneAkTrack;
 
 // Class AkAudio.MovieSceneAkAudioEventTrack
 // 0x0008 (0x00C0 - 0x00B8)
@@ -2742,15 +2756,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAkAudioEventTrack">();
+		STATIC_CLASS_IMPL("MovieSceneAkAudioEventTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAkAudioEventTrack")
 	}
 	static class UMovieSceneAkAudioEventTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAkAudioEventTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneAkAudioEventTrack) == 0x000008, "Wrong alignment on UMovieSceneAkAudioEventTrack");
-static_assert(sizeof(UMovieSceneAkAudioEventTrack) == 0x0000C0, "Wrong size on UMovieSceneAkAudioEventTrack");
+DUMPER7_ASSERTS_UMovieSceneAkAudioEventTrack;
 
 // Class AkAudio.MovieSceneAkAudioRTPCTrack
 // 0x0008 (0x00C0 - 0x00B8)
@@ -2762,15 +2779,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAkAudioRTPCTrack">();
+		STATIC_CLASS_IMPL("MovieSceneAkAudioRTPCTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAkAudioRTPCTrack")
 	}
 	static class UMovieSceneAkAudioRTPCTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAkAudioRTPCTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneAkAudioRTPCTrack) == 0x000008, "Wrong alignment on UMovieSceneAkAudioRTPCTrack");
-static_assert(sizeof(UMovieSceneAkAudioRTPCTrack) == 0x0000C0, "Wrong size on UMovieSceneAkAudioRTPCTrack");
+DUMPER7_ASSERTS_UMovieSceneAkAudioRTPCTrack;
 
 // Class AkAudio.PostEventAsync
 // 0x0070 (0x00A8 - 0x0038)
@@ -2788,16 +2808,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PostEventAsync">();
+		STATIC_CLASS_IMPL("PostEventAsync")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PostEventAsync")
 	}
 	static class UPostEventAsync* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPostEventAsync>();
 	}
 };
-static_assert(alignof(UPostEventAsync) == 0x000008, "Wrong alignment on UPostEventAsync");
-static_assert(sizeof(UPostEventAsync) == 0x0000A8, "Wrong size on UPostEventAsync");
-static_assert(offsetof(UPostEventAsync, Completed) == 0x000038, "Member 'UPostEventAsync::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UPostEventAsync;
 
 // Class AkAudio.PostEventAtLocationAsync
 // 0x0078 (0x00B0 - 0x0038)
@@ -2815,16 +2837,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PostEventAtLocationAsync">();
+		STATIC_CLASS_IMPL("PostEventAtLocationAsync")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PostEventAtLocationAsync")
 	}
 	static class UPostEventAtLocationAsync* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPostEventAtLocationAsync>();
 	}
 };
-static_assert(alignof(UPostEventAtLocationAsync) == 0x000008, "Wrong alignment on UPostEventAtLocationAsync");
-static_assert(sizeof(UPostEventAtLocationAsync) == 0x0000B0, "Wrong size on UPostEventAtLocationAsync");
-static_assert(offsetof(UPostEventAtLocationAsync, Completed) == 0x000038, "Member 'UPostEventAtLocationAsync::Completed' has a wrong offset!");
+DUMPER7_ASSERTS_UPostEventAtLocationAsync;
 
 }
 

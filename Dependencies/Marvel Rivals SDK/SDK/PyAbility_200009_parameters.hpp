@@ -23,9 +23,7 @@ struct PyAbility_200009_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200009_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyAbility_200009_K2_OnEndAbility");
-static_assert(sizeof(PyAbility_200009_K2_OnEndAbility) == 0x000001, "Wrong size on PyAbility_200009_K2_OnEndAbility");
-static_assert(offsetof(PyAbility_200009_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyAbility_200009_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200009_K2_OnEndAbility;
 
 // PythonFunction PyAbility_200009.PyUIController_200009.SetAbility
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayAbility*                       InAbility;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_200009_SetAbility) == 0x000008, "Wrong alignment on PyUIController_200009_SetAbility");
-static_assert(sizeof(PyUIController_200009_SetAbility) == 0x000010, "Wrong size on PyUIController_200009_SetAbility");
-static_assert(offsetof(PyUIController_200009_SetAbility, InAbilityID) == 0x000000, "Member 'PyUIController_200009_SetAbility::InAbilityID' has a wrong offset!");
-static_assert(offsetof(PyUIController_200009_SetAbility, InAbility) == 0x000008, "Member 'PyUIController_200009_SetAbility::InAbility' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_200009_SetAbility;
 
 // PythonFunction PyAbility_200009.PyUIController_200009.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -49,10 +44,7 @@ public:
 	struct FGameplayTag                           TagUpdated;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExists;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyUIController_200009_OnTagUpdate) == 0x000004, "Wrong alignment on PyUIController_200009_OnTagUpdate");
-static_assert(sizeof(PyUIController_200009_OnTagUpdate) == 0x000010, "Wrong size on PyUIController_200009_OnTagUpdate");
-static_assert(offsetof(PyUIController_200009_OnTagUpdate, TagUpdated) == 0x000000, "Member 'PyUIController_200009_OnTagUpdate::TagUpdated' has a wrong offset!");
-static_assert(offsetof(PyUIController_200009_OnTagUpdate, TagExists) == 0x00000C, "Member 'PyUIController_200009_OnTagUpdate::TagExists' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIController_200009_OnTagUpdate;
 
 }
 

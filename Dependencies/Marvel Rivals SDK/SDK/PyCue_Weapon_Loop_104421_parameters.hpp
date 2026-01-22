@@ -24,9 +24,7 @@ struct PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent final
 public:
 	struct FWeaponNotifyEvent                     Event;                                             // 0x0000(0x0018)(Parm, NoDestructor)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent");
-static_assert(sizeof(PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent) == 0x000018, "Wrong size on PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent");
-static_assert(offsetof(PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent, Event) == 0x000000, "Member 'PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent::Event' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104421_K2_HandleWeaponEvent;
 
 // PythonFunction PyCue_Weapon_Loop_104421.PyCue_Weapon_Loop_104421.OnGenericHandleWeaponState
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState) == 0x000004, "Wrong alignment on PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState");
-static_assert(sizeof(PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState) == 0x000010, "Wrong size on PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState");
-static_assert(offsetof(PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState, Tag) == 0x000000, "Member 'PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState::Tag' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState, Count) == 0x00000C, "Member 'PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104421_OnGenericHandleWeaponState;
 
 }
 

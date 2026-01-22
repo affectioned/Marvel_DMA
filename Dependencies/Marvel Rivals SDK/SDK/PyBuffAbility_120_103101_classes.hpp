@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_103101.PyBuffAbility_120_10310105
-// 0x0018 (0x1388 - 0x1370)
+// 0x0018 (0x13A0 - 0x1388)
 class UPyBuffAbility_120_10310105 final : public UMarvelEffectGameplayAbility
 {
 public:
-	TArray<float>                                 TreatRate;                                         // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         SelfTreatBuffID;                                   // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 TreatRate;                                         // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         SelfTreatBuffID;                                   // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,24 +31,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10310105">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10310105")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10310105")
 	}
 	static class UPyBuffAbility_120_10310105* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10310105>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10310105) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10310105");
-static_assert(sizeof(UPyBuffAbility_120_10310105) == 0x001388, "Wrong size on UPyBuffAbility_120_10310105");
-static_assert(offsetof(UPyBuffAbility_120_10310105, TreatRate) == 0x001370, "Member 'UPyBuffAbility_120_10310105::TreatRate' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10310105, SelfTreatBuffID) == 0x001380, "Member 'UPyBuffAbility_120_10310105::SelfTreatBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10310105;
 
 // PythonClass PyBuffAbility_120_103101.PyNotTreatShiled_120_10310507
-// 0x0010 (0x1488 - 0x1478)
+// 0x0010 (0x14A0 - 0x1490)
 class UPyNotTreatShiled_120_10310507 final : public UMarvelTreatOverflowConvAbility
 {
 public:
-	TArray<float>                                 ConvRate;                                          // 0x1478(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 ConvRate;                                          // 0x1490(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	float GetOverflowConvRate();
@@ -56,24 +57,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNotTreatShiled_120_10310507">();
+		STATIC_CLASS_IMPL("PyNotTreatShiled_120_10310507")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNotTreatShiled_120_10310507")
 	}
 	static class UPyNotTreatShiled_120_10310507* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNotTreatShiled_120_10310507>();
 	}
 };
-static_assert(alignof(UPyNotTreatShiled_120_10310507) == 0x000008, "Wrong alignment on UPyNotTreatShiled_120_10310507");
-static_assert(sizeof(UPyNotTreatShiled_120_10310507) == 0x001488, "Wrong size on UPyNotTreatShiled_120_10310507");
-static_assert(offsetof(UPyNotTreatShiled_120_10310507, ConvRate) == 0x001478, "Member 'UPyNotTreatShiled_120_10310507::ConvRate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyNotTreatShiled_120_10310507;
 
 // PythonClass PyBuffAbility_120_103101.PyBuffAbility_120_10310108
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_10310108 final : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         SelfTreatValue;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SelfTreatDuration;                                 // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SelfTreatValue;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SelfTreatDuration;                                 // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -82,17 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10310108">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10310108")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10310108")
 	}
 	static class UPyBuffAbility_120_10310108* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10310108>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10310108) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10310108");
-static_assert(sizeof(UPyBuffAbility_120_10310108) == 0x001378, "Wrong size on UPyBuffAbility_120_10310108");
-static_assert(offsetof(UPyBuffAbility_120_10310108, SelfTreatValue) == 0x001370, "Member 'UPyBuffAbility_120_10310108::SelfTreatValue' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10310108, SelfTreatDuration) == 0x001374, "Member 'UPyBuffAbility_120_10310108::SelfTreatDuration' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10310108;
 
 }
 

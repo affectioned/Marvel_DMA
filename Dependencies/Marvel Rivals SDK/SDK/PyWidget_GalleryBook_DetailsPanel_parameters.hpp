@@ -24,9 +24,7 @@ struct PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_DetailsPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_GalleryBook_DetailsPanel.PyWidget_GalleryBook_DetailsPanel.OnVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +33,7 @@ struct PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged");
-static_assert(sizeof(PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged) == 0x000001, "Wrong size on PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_DetailsPanel_OnVisibleChanged;
 
 // PythonFunction PyWidget_GalleryBook_DetailsPanel.PyWidget_GalleryBook_DetailsPanel.OnSoftTextureLoad
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad final
 public:
 	class UObject*                                Texture;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad");
-static_assert(sizeof(PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad) == 0x000008, "Wrong size on PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad, Texture) == 0x000000, "Member 'PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad::Texture' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_DetailsPanel_OnSoftTextureLoad;
 
 // PythonFunction PyWidget_GalleryBook_DetailsPanel.PyWidget_GalleryBook_DetailsPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +51,7 @@ struct PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_DetailsPanel_OnAnimationFinished;
 
 // PythonFunction PyWidget_GalleryBook_DetailsPanel.PyWidget_GalleryBook_DetailsPanel.OnMouseWheel
 // 0x0178 (0x0178 - 0x0000)
@@ -70,11 +62,7 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_GalleryBook_DetailsPanel_OnMouseWheel) == 0x000008, "Wrong alignment on PyWidget_GalleryBook_DetailsPanel_OnMouseWheel");
-static_assert(sizeof(PyWidget_GalleryBook_DetailsPanel_OnMouseWheel) == 0x000178, "Wrong size on PyWidget_GalleryBook_DetailsPanel_OnMouseWheel");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnMouseWheel, MyGeometry) == 0x000000, "Member 'PyWidget_GalleryBook_DetailsPanel_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnMouseWheel, MouseEvent) == 0x000038, "Member 'PyWidget_GalleryBook_DetailsPanel_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_GalleryBook_DetailsPanel_OnMouseWheel, ReturnValue) == 0x0000B8, "Member 'PyWidget_GalleryBook_DetailsPanel_OnMouseWheel::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_GalleryBook_DetailsPanel_OnMouseWheel;
 
 }
 

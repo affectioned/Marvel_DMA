@@ -23,15 +23,18 @@ class UWBP_Login_AgePrompt_KR_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Login_AgePrompt_KR_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Login_AgePrompt_KR_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Login_AgePrompt_KR_C")
 	}
 	static class UWBP_Login_AgePrompt_KR_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Login_AgePrompt_KR_C>();
 	}
 };
-static_assert(alignof(UWBP_Login_AgePrompt_KR_C) == 0x000008, "Wrong alignment on UWBP_Login_AgePrompt_KR_C");
-static_assert(sizeof(UWBP_Login_AgePrompt_KR_C) == 0x0003B8, "Wrong size on UWBP_Login_AgePrompt_KR_C");
+DUMPER7_ASSERTS_UWBP_Login_AgePrompt_KR_C;
 
 }
 

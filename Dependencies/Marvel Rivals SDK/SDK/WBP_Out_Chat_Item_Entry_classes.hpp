@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Out_Chat_Item_Entry.WBP_Out_Chat_Item_Entry_C
-// 0x0048 (0x0618 - 0x05D0)
+// 0x0048 (0x0620 - 0x05D8)
 class UWBP_Out_Chat_Item_Entry_C final : public UPyWidget_ChatItemEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anim_HashTextFadeOut;                              // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelHashTextBlock*                   ChatHashText;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Input_Ps;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ChatOut_ItemText_C*                ItemText;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ChatOut_ItemText_Lv2_C*            ItemText2;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_HashTextWidth;                             // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_TextWidth;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         WidgetContainer;                                   // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anim_HashTextFadeOut;                              // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelHashTextBlock*                   ChatHashText;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Input_Ps;                                      // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ChatOut_ItemText_C*                ItemText;                                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ChatOut_ItemText_Lv2_C*            ItemText2;                                         // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_HashTextWidth;                             // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_TextWidth;                                 // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         WidgetContainer;                                   // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Out_Chat_Item_Entry(int32 EntryPoint);
@@ -41,24 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Out_Chat_Item_Entry_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Out_Chat_Item_Entry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Out_Chat_Item_Entry_C")
 	}
 	static class UWBP_Out_Chat_Item_Entry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Out_Chat_Item_Entry_C>();
 	}
 };
-static_assert(alignof(UWBP_Out_Chat_Item_Entry_C) == 0x000008, "Wrong alignment on UWBP_Out_Chat_Item_Entry_C");
-static_assert(sizeof(UWBP_Out_Chat_Item_Entry_C) == 0x000618, "Wrong size on UWBP_Out_Chat_Item_Entry_C");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, UberGraphFrame) == 0x0005D0, "Member 'UWBP_Out_Chat_Item_Entry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, Anim_HashTextFadeOut) == 0x0005D8, "Member 'UWBP_Out_Chat_Item_Entry_C::Anim_HashTextFadeOut' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, ChatHashText) == 0x0005E0, "Member 'UWBP_Out_Chat_Item_Entry_C::ChatHashText' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, Img_Input_Ps) == 0x0005E8, "Member 'UWBP_Out_Chat_Item_Entry_C::Img_Input_Ps' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, ItemText) == 0x0005F0, "Member 'UWBP_Out_Chat_Item_Entry_C::ItemText' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, ItemText2) == 0x0005F8, "Member 'UWBP_Out_Chat_Item_Entry_C::ItemText2' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, SizeBox_HashTextWidth) == 0x000600, "Member 'UWBP_Out_Chat_Item_Entry_C::SizeBox_HashTextWidth' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, SizeBox_TextWidth) == 0x000608, "Member 'UWBP_Out_Chat_Item_Entry_C::SizeBox_TextWidth' has a wrong offset!");
-static_assert(offsetof(UWBP_Out_Chat_Item_Entry_C, WidgetContainer) == 0x000610, "Member 'UWBP_Out_Chat_Item_Entry_C::WidgetContainer' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Out_Chat_Item_Entry_C;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingDescribeBright.PyWidget_SettingDescribeBright
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SettingDescribeBright : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingDescribeBright">();
+		STATIC_CLASS_IMPL("PyWidget_SettingDescribeBright")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingDescribeBright")
 	}
 	static class UPyWidget_SettingDescribeBright* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingDescribeBright>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingDescribeBright) == 0x000008, "Wrong alignment on UPyWidget_SettingDescribeBright");
-static_assert(sizeof(UPyWidget_SettingDescribeBright) == 0x0005C0, "Wrong size on UPyWidget_SettingDescribeBright");
+DUMPER7_ASSERTS_UPyWidget_SettingDescribeBright;
 
 }
 

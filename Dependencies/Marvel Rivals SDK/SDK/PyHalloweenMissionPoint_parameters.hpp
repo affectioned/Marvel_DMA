@@ -24,10 +24,7 @@ public:
 	int32                                         HalloweenState;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         WaveIndex_0;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenMissionPoint_OnHalloweenStateChanged) == 0x000004, "Wrong alignment on PyHalloweenMissionPoint_OnHalloweenStateChanged");
-static_assert(sizeof(PyHalloweenMissionPoint_OnHalloweenStateChanged) == 0x000008, "Wrong size on PyHalloweenMissionPoint_OnHalloweenStateChanged");
-static_assert(offsetof(PyHalloweenMissionPoint_OnHalloweenStateChanged, HalloweenState) == 0x000000, "Member 'PyHalloweenMissionPoint_OnHalloweenStateChanged::HalloweenState' has a wrong offset!");
-static_assert(offsetof(PyHalloweenMissionPoint_OnHalloweenStateChanged, WaveIndex_0) == 0x000004, "Member 'PyHalloweenMissionPoint_OnHalloweenStateChanged::WaveIndex_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenMissionPoint_OnHalloweenStateChanged;
 
 // PythonFunction PyHalloweenMissionPoint.PyHalloweenMissionPoint.OnPlayerEnetered
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +33,7 @@ struct PyHalloweenMissionPoint_OnPlayerEnetered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenMissionPoint_OnPlayerEnetered) == 0x000008, "Wrong alignment on PyHalloweenMissionPoint_OnPlayerEnetered");
-static_assert(sizeof(PyHalloweenMissionPoint_OnPlayerEnetered) == 0x000008, "Wrong size on PyHalloweenMissionPoint_OnPlayerEnetered");
-static_assert(offsetof(PyHalloweenMissionPoint_OnPlayerEnetered, actor) == 0x000000, "Member 'PyHalloweenMissionPoint_OnPlayerEnetered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenMissionPoint_OnPlayerEnetered;
 
 // PythonFunction PyHalloweenMissionPoint.PyHalloweenMissionPoint.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyHalloweenMissionPoint_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenMissionPoint_OnPlayerExited) == 0x000008, "Wrong alignment on PyHalloweenMissionPoint_OnPlayerExited");
-static_assert(sizeof(PyHalloweenMissionPoint_OnPlayerExited) == 0x000008, "Wrong size on PyHalloweenMissionPoint_OnPlayerExited");
-static_assert(offsetof(PyHalloweenMissionPoint_OnPlayerExited, actor) == 0x000000, "Member 'PyHalloweenMissionPoint_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenMissionPoint_OnPlayerExited;
 
 // PythonFunction PyHalloweenMissionPoint.PyHalloweenMissionPoint.SetState
 // 0x0001 (0x0001 - 0x0000)
@@ -58,9 +51,7 @@ struct PyHalloweenMissionPoint_SetState final
 public:
 	EHalloweenObjectState                         NewState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenMissionPoint_SetState) == 0x000001, "Wrong alignment on PyHalloweenMissionPoint_SetState");
-static_assert(sizeof(PyHalloweenMissionPoint_SetState) == 0x000001, "Wrong size on PyHalloweenMissionPoint_SetState");
-static_assert(offsetof(PyHalloweenMissionPoint_SetState, NewState) == 0x000000, "Member 'PyHalloweenMissionPoint_SetState::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenMissionPoint_SetState;
 
 // PythonFunction PyHalloweenMissionPoint.PyHalloweenMissionPoint.SetActive
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +60,7 @@ struct PyHalloweenMissionPoint_SetActive final
 public:
 	bool                                          active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHalloweenMissionPoint_SetActive) == 0x000001, "Wrong alignment on PyHalloweenMissionPoint_SetActive");
-static_assert(sizeof(PyHalloweenMissionPoint_SetActive) == 0x000001, "Wrong size on PyHalloweenMissionPoint_SetActive");
-static_assert(offsetof(PyHalloweenMissionPoint_SetActive, active) == 0x000000, "Member 'PyHalloweenMissionPoint_SetActive::active' has a wrong offset!");
+DUMPER7_ASSERTS_PyHalloweenMissionPoint_SetActive;
 
 }
 

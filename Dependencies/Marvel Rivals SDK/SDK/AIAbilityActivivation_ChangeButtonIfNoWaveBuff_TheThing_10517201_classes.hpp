@@ -23,15 +23,18 @@ class UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C final 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C")
 	}
 	static class UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C) == 0x000008, "Wrong alignment on UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C");
-static_assert(sizeof(UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C) == 0x000040, "Wrong size on UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C");
+DUMPER7_ASSERTS_UAIAbilityActivivation_ChangeButtonIfNoWaveBuff_TheThing_10517201_C;
 
 }
 

@@ -17,10 +17,10 @@
 #include "Engine_classes.hpp"
 #include "MassSpawner_classes.hpp"
 #include "MassSignals_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "MassEntity_classes.hpp"
 #include "MassRepresentation_structs.hpp"
 #include "MassRepresentation_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "MassActors_classes.hpp"
 #include "MassLOD_classes.hpp"
 #include "ZoneGraphAnnotations_classes.hpp"
@@ -39,16 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdClientBubbleInfo">();
+		STATIC_CLASS_IMPL("MassCrowdClientBubbleInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdClientBubbleInfo")
 	}
 	static class AMassCrowdClientBubbleInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassCrowdClientBubbleInfo>();
 	}
 };
-static_assert(alignof(AMassCrowdClientBubbleInfo) == 0x000010, "Wrong alignment on AMassCrowdClientBubbleInfo");
-static_assert(sizeof(AMassCrowdClientBubbleInfo) == 0x000980, "Wrong size on AMassCrowdClientBubbleInfo");
-static_assert(offsetof(AMassCrowdClientBubbleInfo, CrowdSerializer) == 0x0006F0, "Member 'AMassCrowdClientBubbleInfo::CrowdSerializer' has a wrong offset!");
+DUMPER7_ASSERTS_AMassCrowdClientBubbleInfo;
 
 // Class MassCrowd.ZoneGraphCloseCrowdLaneTest
 // 0x0080 (0x00B8 - 0x0038)
@@ -64,19 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphCloseCrowdLaneTest">();
+		STATIC_CLASS_IMPL("ZoneGraphCloseCrowdLaneTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphCloseCrowdLaneTest")
 	}
 	static class UZoneGraphCloseCrowdLaneTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphCloseCrowdLaneTest>();
 	}
 };
-static_assert(alignof(UZoneGraphCloseCrowdLaneTest) == 0x000008, "Wrong alignment on UZoneGraphCloseCrowdLaneTest");
-static_assert(sizeof(UZoneGraphCloseCrowdLaneTest) == 0x0000B8, "Wrong size on UZoneGraphCloseCrowdLaneTest");
-static_assert(offsetof(UZoneGraphCloseCrowdLaneTest, LaneLocation) == 0x000038, "Member 'UZoneGraphCloseCrowdLaneTest::LaneLocation' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCloseCrowdLaneTest, CrowdSubsystem) == 0x0000A8, "Member 'UZoneGraphCloseCrowdLaneTest::CrowdSubsystem' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCloseCrowdLaneTest, LaneState) == 0x0000B0, "Member 'UZoneGraphCloseCrowdLaneTest::LaneState' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCloseCrowdLaneTest, PrevLaneState) == 0x0000B1, "Member 'UZoneGraphCloseCrowdLaneTest::PrevLaneState' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphCloseCrowdLaneTest;
 
 // Class MassCrowd.MassCrowdLaneDataRenderingComponent
 // 0x0000 (0x07C0 - 0x07C0)
@@ -85,15 +86,18 @@ class UMassCrowdLaneDataRenderingComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdLaneDataRenderingComponent">();
+		STATIC_CLASS_IMPL("MassCrowdLaneDataRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdLaneDataRenderingComponent")
 	}
 	static class UMassCrowdLaneDataRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdLaneDataRenderingComponent>();
 	}
 };
-static_assert(alignof(UMassCrowdLaneDataRenderingComponent) == 0x000010, "Wrong alignment on UMassCrowdLaneDataRenderingComponent");
-static_assert(sizeof(UMassCrowdLaneDataRenderingComponent) == 0x0007C0, "Wrong size on UMassCrowdLaneDataRenderingComponent");
+DUMPER7_ASSERTS_UMassCrowdLaneDataRenderingComponent;
 
 // Class MassCrowd.MassCrowdMemberTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -102,15 +106,18 @@ class UMassCrowdMemberTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdMemberTrait">();
+		STATIC_CLASS_IMPL("MassCrowdMemberTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdMemberTrait")
 	}
 	static class UMassCrowdMemberTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdMemberTrait>();
 	}
 };
-static_assert(alignof(UMassCrowdMemberTrait) == 0x000008, "Wrong alignment on UMassCrowdMemberTrait");
-static_assert(sizeof(UMassCrowdMemberTrait) == 0x000030, "Wrong size on UMassCrowdMemberTrait");
+DUMPER7_ASSERTS_UMassCrowdMemberTrait;
 
 // Class MassCrowd.MassCrowdLaneTrackingSignalProcessor
 // 0x0000 (0x0430 - 0x0430)
@@ -119,15 +126,18 @@ class UMassCrowdLaneTrackingSignalProcessor final : public UMassSignalProcessorB
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdLaneTrackingSignalProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdLaneTrackingSignalProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdLaneTrackingSignalProcessor")
 	}
 	static class UMassCrowdLaneTrackingSignalProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdLaneTrackingSignalProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdLaneTrackingSignalProcessor) == 0x000008, "Wrong alignment on UMassCrowdLaneTrackingSignalProcessor");
-static_assert(sizeof(UMassCrowdLaneTrackingSignalProcessor) == 0x000430, "Wrong size on UMassCrowdLaneTrackingSignalProcessor");
+DUMPER7_ASSERTS_UMassCrowdLaneTrackingSignalProcessor;
 
 // Class MassCrowd.MassCrowdLaneTrackingDestructor
 // 0x02A0 (0x0380 - 0x00E0)
@@ -139,15 +149,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdLaneTrackingDestructor">();
+		STATIC_CLASS_IMPL("MassCrowdLaneTrackingDestructor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdLaneTrackingDestructor")
 	}
 	static class UMassCrowdLaneTrackingDestructor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdLaneTrackingDestructor>();
 	}
 };
-static_assert(alignof(UMassCrowdLaneTrackingDestructor) == 0x000008, "Wrong alignment on UMassCrowdLaneTrackingDestructor");
-static_assert(sizeof(UMassCrowdLaneTrackingDestructor) == 0x000380, "Wrong size on UMassCrowdLaneTrackingDestructor");
+DUMPER7_ASSERTS_UMassCrowdLaneTrackingDestructor;
 
 // Class MassCrowd.MassCrowdDynamicObstacleProcessor
 // 0x02B8 (0x0380 - 0x00C8)
@@ -161,16 +174,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdDynamicObstacleProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdDynamicObstacleProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdDynamicObstacleProcessor")
 	}
 	static class UMassCrowdDynamicObstacleProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdDynamicObstacleProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdDynamicObstacleProcessor) == 0x000010, "Wrong alignment on UMassCrowdDynamicObstacleProcessor");
-static_assert(sizeof(UMassCrowdDynamicObstacleProcessor) == 0x000380, "Wrong size on UMassCrowdDynamicObstacleProcessor");
-static_assert(offsetof(UMassCrowdDynamicObstacleProcessor, ZoneGraphAnnotationSubsystem) == 0x000370, "Member 'UMassCrowdDynamicObstacleProcessor::ZoneGraphAnnotationSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdDynamicObstacleProcessor;
 
 // Class MassCrowd.MassCrowdDynamicObstacleInitializer
 // 0x02A0 (0x0380 - 0x00E0)
@@ -182,15 +197,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdDynamicObstacleInitializer">();
+		STATIC_CLASS_IMPL("MassCrowdDynamicObstacleInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdDynamicObstacleInitializer")
 	}
 	static class UMassCrowdDynamicObstacleInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdDynamicObstacleInitializer>();
 	}
 };
-static_assert(alignof(UMassCrowdDynamicObstacleInitializer) == 0x000008, "Wrong alignment on UMassCrowdDynamicObstacleInitializer");
-static_assert(sizeof(UMassCrowdDynamicObstacleInitializer) == 0x000380, "Wrong size on UMassCrowdDynamicObstacleInitializer");
+DUMPER7_ASSERTS_UMassCrowdDynamicObstacleInitializer;
 
 // Class MassCrowd.MassCrowdDynamicObstacleDeinitializer
 // 0x02B0 (0x0390 - 0x00E0)
@@ -203,16 +221,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdDynamicObstacleDeinitializer">();
+		STATIC_CLASS_IMPL("MassCrowdDynamicObstacleDeinitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdDynamicObstacleDeinitializer")
 	}
 	static class UMassCrowdDynamicObstacleDeinitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdDynamicObstacleDeinitializer>();
 	}
 };
-static_assert(alignof(UMassCrowdDynamicObstacleDeinitializer) == 0x000010, "Wrong alignment on UMassCrowdDynamicObstacleDeinitializer");
-static_assert(sizeof(UMassCrowdDynamicObstacleDeinitializer) == 0x000390, "Wrong size on UMassCrowdDynamicObstacleDeinitializer");
-static_assert(offsetof(UMassCrowdDynamicObstacleDeinitializer, ZoneGraphAnnotationSubsystem) == 0x0000E0, "Member 'UMassCrowdDynamicObstacleDeinitializer::ZoneGraphAnnotationSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdDynamicObstacleDeinitializer;
 
 // Class MassCrowd.MassCrowdReplicator
 // 0x0000 (0x0030 - 0x0030)
@@ -221,15 +241,18 @@ class UMassCrowdReplicator final : public UMassReplicatorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdReplicator">();
+		STATIC_CLASS_IMPL("MassCrowdReplicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdReplicator")
 	}
 	static class UMassCrowdReplicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdReplicator>();
 	}
 };
-static_assert(alignof(UMassCrowdReplicator) == 0x000008, "Wrong alignment on UMassCrowdReplicator");
-static_assert(sizeof(UMassCrowdReplicator) == 0x000030, "Wrong size on UMassCrowdReplicator");
+DUMPER7_ASSERTS_UMassCrowdReplicator;
 
 // Class MassCrowd.MassCrowdRepresentationActorManagement
 // 0x0000 (0x0030 - 0x0030)
@@ -238,32 +261,38 @@ class UMassCrowdRepresentationActorManagement final : public UMassRepresentation
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdRepresentationActorManagement">();
+		STATIC_CLASS_IMPL("MassCrowdRepresentationActorManagement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdRepresentationActorManagement")
 	}
 	static class UMassCrowdRepresentationActorManagement* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdRepresentationActorManagement>();
 	}
 };
-static_assert(alignof(UMassCrowdRepresentationActorManagement) == 0x000008, "Wrong alignment on UMassCrowdRepresentationActorManagement");
-static_assert(sizeof(UMassCrowdRepresentationActorManagement) == 0x000030, "Wrong size on UMassCrowdRepresentationActorManagement");
+DUMPER7_ASSERTS_UMassCrowdRepresentationActorManagement;
 
 // Class MassCrowd.MassCrowdRepresentationSubsystem
-// 0x0000 (0x00D0 - 0x00D0)
+// 0x0000 (0x00D8 - 0x00D8)
 class UMassCrowdRepresentationSubsystem final : public UMassRepresentationSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdRepresentationSubsystem">();
+		STATIC_CLASS_IMPL("MassCrowdRepresentationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdRepresentationSubsystem")
 	}
 	static class UMassCrowdRepresentationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdRepresentationSubsystem>();
 	}
 };
-static_assert(alignof(UMassCrowdRepresentationSubsystem) == 0x000008, "Wrong alignment on UMassCrowdRepresentationSubsystem");
-static_assert(sizeof(UMassCrowdRepresentationSubsystem) == 0x0000D0, "Wrong size on UMassCrowdRepresentationSubsystem");
+DUMPER7_ASSERTS_UMassCrowdRepresentationSubsystem;
 
 // Class MassCrowd.MassCrowdServerRepresentationLODProcessor
 // 0x22D8 (0x23A0 - 0x00C8)
@@ -278,18 +307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdServerRepresentationLODProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdServerRepresentationLODProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdServerRepresentationLODProcessor")
 	}
 	static class UMassCrowdServerRepresentationLODProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdServerRepresentationLODProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdServerRepresentationLODProcessor) == 0x000008, "Wrong alignment on UMassCrowdServerRepresentationLODProcessor");
-static_assert(sizeof(UMassCrowdServerRepresentationLODProcessor) == 0x0023A0, "Wrong size on UMassCrowdServerRepresentationLODProcessor");
-static_assert(offsetof(UMassCrowdServerRepresentationLODProcessor, LODDistance) == 0x0000C8, "Member 'UMassCrowdServerRepresentationLODProcessor::LODDistance' has a wrong offset!");
-static_assert(offsetof(UMassCrowdServerRepresentationLODProcessor, BufferHysteresisOnDistancePercentage) == 0x0000D8, "Member 'UMassCrowdServerRepresentationLODProcessor::BufferHysteresisOnDistancePercentage' has a wrong offset!");
-static_assert(offsetof(UMassCrowdServerRepresentationLODProcessor, LODMaxCount) == 0x0000DC, "Member 'UMassCrowdServerRepresentationLODProcessor::LODMaxCount' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdServerRepresentationLODProcessor;
 
 // Class MassCrowd.MassCrowdServerRepresentationProcessor
 // 0x0000 (0x0370 - 0x0370)
@@ -298,15 +327,18 @@ class UMassCrowdServerRepresentationProcessor final : public UMassRepresentation
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdServerRepresentationProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdServerRepresentationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdServerRepresentationProcessor")
 	}
 	static class UMassCrowdServerRepresentationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdServerRepresentationProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdServerRepresentationProcessor) == 0x000008, "Wrong alignment on UMassCrowdServerRepresentationProcessor");
-static_assert(sizeof(UMassCrowdServerRepresentationProcessor) == 0x000370, "Wrong size on UMassCrowdServerRepresentationProcessor");
+DUMPER7_ASSERTS_UMassCrowdServerRepresentationProcessor;
 
 // Class MassCrowd.MassCrowdServerRepresentationTrait
 // 0x0038 (0x0068 - 0x0030)
@@ -319,17 +351,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdServerRepresentationTrait">();
+		STATIC_CLASS_IMPL("MassCrowdServerRepresentationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdServerRepresentationTrait")
 	}
 	static class UMassCrowdServerRepresentationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdServerRepresentationTrait>();
 	}
 };
-static_assert(alignof(UMassCrowdServerRepresentationTrait) == 0x000008, "Wrong alignment on UMassCrowdServerRepresentationTrait");
-static_assert(sizeof(UMassCrowdServerRepresentationTrait) == 0x000068, "Wrong size on UMassCrowdServerRepresentationTrait");
-static_assert(offsetof(UMassCrowdServerRepresentationTrait, TemplateActor) == 0x000030, "Member 'UMassCrowdServerRepresentationTrait::TemplateActor' has a wrong offset!");
-static_assert(offsetof(UMassCrowdServerRepresentationTrait, Params_0) == 0x000038, "Member 'UMassCrowdServerRepresentationTrait::Params_0' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdServerRepresentationTrait;
 
 // Class MassCrowd.MassCrowdSettings
 // 0x0050 (0x0080 - 0x0030)
@@ -362,78 +395,64 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdSettings">();
+		STATIC_CLASS_IMPL("MassCrowdSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdSettings")
 	}
 	static class UMassCrowdSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdSettings>();
 	}
 };
-static_assert(alignof(UMassCrowdSettings) == 0x000008, "Wrong alignment on UMassCrowdSettings");
-static_assert(sizeof(UMassCrowdSettings) == 0x000080, "Wrong size on UMassCrowdSettings");
-static_assert(offsetof(UMassCrowdSettings, LaneBaseLineThickness) == 0x000030, "Member 'UMassCrowdSettings::LaneBaseLineThickness' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, LaneRenderZOffset) == 0x000034, "Member 'UMassCrowdSettings::LaneRenderZOffset' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, IntersectionLaneScaleFactor) == 0x000038, "Member 'UMassCrowdSettings::IntersectionLaneScaleFactor' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, LaneDensityScaleFactor) == 0x00003C, "Member 'UMassCrowdSettings::LaneDensityScaleFactor' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, OpenedLaneColor) == 0x000040, "Member 'UMassCrowdSettings::OpenedLaneColor' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, ClosedLaneColor) == 0x000044, "Member 'UMassCrowdSettings::ClosedLaneColor' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, CrowdTag) == 0x000048, "Member 'UMassCrowdSettings::CrowdTag' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, CrossingTag) == 0x000049, "Member 'UMassCrowdSettings::CrossingTag' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, SlotSize) == 0x00004C, "Member 'UMassCrowdSettings::SlotSize' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, SlotOffset) == 0x000050, "Member 'UMassCrowdSettings::SlotOffset' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, bDisplayTrackingData) == 0x000054, "Member 'UMassCrowdSettings::bDisplayTrackingData' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, bDisplayStates) == 0x000055, "Member 'UMassCrowdSettings::bDisplayStates' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, bDisplayDensities) == 0x000056, "Member 'UMassCrowdSettings::bDisplayDensities' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, ObstacleStoppingSpeedTolerance) == 0x000058, "Member 'UMassCrowdSettings::ObstacleStoppingSpeedTolerance' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, ObstacleMovingDistanceTolerance) == 0x00005C, "Member 'UMassCrowdSettings::ObstacleMovingDistanceTolerance' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, ObstacleTimeToStop) == 0x000060, "Member 'UMassCrowdSettings::ObstacleTimeToStop' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, ObstacleEffectRadius) == 0x000064, "Member 'UMassCrowdSettings::ObstacleEffectRadius' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, MoveDistance) == 0x000068, "Member 'UMassCrowdSettings::MoveDistance' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, MoveDistanceRandomDeviation) == 0x00006C, "Member 'UMassCrowdSettings::MoveDistanceRandomDeviation' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSettings, LaneDensities) == 0x000070, "Member 'UMassCrowdSettings::LaneDensities' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdSettings;
 
 // Class MassCrowd.MassCrowdSpawnerSubsystem
-// 0x0000 (0x00F0 - 0x00F0)
+// 0x0000 (0x00F8 - 0x00F8)
 class UMassCrowdSpawnerSubsystem final : public UMassActorSpawnerSubsystem
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdSpawnerSubsystem">();
+		STATIC_CLASS_IMPL("MassCrowdSpawnerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdSpawnerSubsystem")
 	}
 	static class UMassCrowdSpawnerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdSpawnerSubsystem>();
 	}
 };
-static_assert(alignof(UMassCrowdSpawnerSubsystem) == 0x000008, "Wrong alignment on UMassCrowdSpawnerSubsystem");
-static_assert(sizeof(UMassCrowdSpawnerSubsystem) == 0x0000F0, "Wrong size on UMassCrowdSpawnerSubsystem");
+DUMPER7_ASSERTS_UMassCrowdSpawnerSubsystem;
 
 // Class MassCrowd.MassCrowdSubsystem
-// 0x0040 (0x0078 - 0x0038)
+// 0x0040 (0x0080 - 0x0040)
 class UMassCrowdSubsystem final : public UWorldSubsystem
 {
 public:
-	class UZoneGraphSubsystem*                    ZoneGraphSubsystem;                                // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UZoneGraphAnnotationSubsystem*          ZoneGraphAnnotationSubsystem;                      // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMassCrowdSettings*                     MassCrowdSettings;                                 // 0x0048(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_50[0x28];                                      // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UZoneGraphSubsystem*                    ZoneGraphSubsystem;                                // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UZoneGraphAnnotationSubsystem*          ZoneGraphAnnotationSubsystem;                      // 0x0048(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMassCrowdSettings*                     MassCrowdSettings;                                 // 0x0050(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_58[0x28];                                      // 0x0058(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdSubsystem">();
+		STATIC_CLASS_IMPL("MassCrowdSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdSubsystem")
 	}
 	static class UMassCrowdSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdSubsystem>();
 	}
 };
-static_assert(alignof(UMassCrowdSubsystem) == 0x000008, "Wrong alignment on UMassCrowdSubsystem");
-static_assert(sizeof(UMassCrowdSubsystem) == 0x000078, "Wrong size on UMassCrowdSubsystem");
-static_assert(offsetof(UMassCrowdSubsystem, ZoneGraphSubsystem) == 0x000038, "Member 'UMassCrowdSubsystem::ZoneGraphSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSubsystem, ZoneGraphAnnotationSubsystem) == 0x000040, "Member 'UMassCrowdSubsystem::ZoneGraphAnnotationSubsystem' has a wrong offset!");
-static_assert(offsetof(UMassCrowdSubsystem, MassCrowdSettings) == 0x000048, "Member 'UMassCrowdSubsystem::MassCrowdSettings' has a wrong offset!");
+DUMPER7_ASSERTS_UMassCrowdSubsystem;
 
 // Class MassCrowd.MassCrowdVisualizationLODProcessor
 // 0x0000 (0x0B60 - 0x0B60)
@@ -442,15 +461,18 @@ class UMassCrowdVisualizationLODProcessor final : public UMassVisualizationLODPr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdVisualizationLODProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdVisualizationLODProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdVisualizationLODProcessor")
 	}
 	static class UMassCrowdVisualizationLODProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdVisualizationLODProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdVisualizationLODProcessor) == 0x000010, "Wrong alignment on UMassCrowdVisualizationLODProcessor");
-static_assert(sizeof(UMassCrowdVisualizationLODProcessor) == 0x000B60, "Wrong size on UMassCrowdVisualizationLODProcessor");
+DUMPER7_ASSERTS_UMassCrowdVisualizationLODProcessor;
 
 // Class MassCrowd.MassCrowdLODCollectorProcessor
 // 0x0000 (0x0B60 - 0x0B60)
@@ -459,15 +481,18 @@ class UMassCrowdLODCollectorProcessor final : public UMassLODCollectorProcessor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdLODCollectorProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdLODCollectorProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdLODCollectorProcessor")
 	}
 	static class UMassCrowdLODCollectorProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdLODCollectorProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdLODCollectorProcessor) == 0x000008, "Wrong alignment on UMassCrowdLODCollectorProcessor");
-static_assert(sizeof(UMassCrowdLODCollectorProcessor) == 0x000B60, "Wrong size on UMassCrowdLODCollectorProcessor");
+DUMPER7_ASSERTS_UMassCrowdLODCollectorProcessor;
 
 // Class MassCrowd.MassCrowdVisualizationProcessor
 // 0x0000 (0x0370 - 0x0370)
@@ -476,15 +501,18 @@ class UMassCrowdVisualizationProcessor final : public UMassVisualizationProcesso
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdVisualizationProcessor">();
+		STATIC_CLASS_IMPL("MassCrowdVisualizationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdVisualizationProcessor")
 	}
 	static class UMassCrowdVisualizationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdVisualizationProcessor>();
 	}
 };
-static_assert(alignof(UMassCrowdVisualizationProcessor) == 0x000008, "Wrong alignment on UMassCrowdVisualizationProcessor");
-static_assert(sizeof(UMassCrowdVisualizationProcessor) == 0x000370, "Wrong size on UMassCrowdVisualizationProcessor");
+DUMPER7_ASSERTS_UMassCrowdVisualizationProcessor;
 
 // Class MassCrowd.MassDebugCrowdVisualizationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -497,16 +525,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassDebugCrowdVisualizationProcessor">();
+		STATIC_CLASS_IMPL("MassDebugCrowdVisualizationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassDebugCrowdVisualizationProcessor")
 	}
 	static class UMassDebugCrowdVisualizationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassDebugCrowdVisualizationProcessor>();
 	}
 };
-static_assert(alignof(UMassDebugCrowdVisualizationProcessor) == 0x000010, "Wrong alignment on UMassDebugCrowdVisualizationProcessor");
-static_assert(sizeof(UMassDebugCrowdVisualizationProcessor) == 0x000370, "Wrong size on UMassDebugCrowdVisualizationProcessor");
-static_assert(offsetof(UMassDebugCrowdVisualizationProcessor, World) == 0x0000C8, "Member 'UMassDebugCrowdVisualizationProcessor::World' has a wrong offset!");
+DUMPER7_ASSERTS_UMassDebugCrowdVisualizationProcessor;
 
 // Class MassCrowd.MassCrowdVisualizationTrait
 // 0x0000 (0x0160 - 0x0160)
@@ -515,15 +545,18 @@ class UMassCrowdVisualizationTrait final : public UMassVisualizationTrait
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassCrowdVisualizationTrait">();
+		STATIC_CLASS_IMPL("MassCrowdVisualizationTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassCrowdVisualizationTrait")
 	}
 	static class UMassCrowdVisualizationTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassCrowdVisualizationTrait>();
 	}
 };
-static_assert(alignof(UMassCrowdVisualizationTrait) == 0x000010, "Wrong alignment on UMassCrowdVisualizationTrait");
-static_assert(sizeof(UMassCrowdVisualizationTrait) == 0x000160, "Wrong size on UMassCrowdVisualizationTrait");
+DUMPER7_ASSERTS_UMassCrowdVisualizationTrait;
 
 // Class MassCrowd.ZoneGraphCrowdLaneAnnotations
 // 0x0020 (0x0850 - 0x0830)
@@ -540,19 +573,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ZoneGraphCrowdLaneAnnotations">();
+		STATIC_CLASS_IMPL("ZoneGraphCrowdLaneAnnotations")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneGraphCrowdLaneAnnotations")
 	}
 	static class UZoneGraphCrowdLaneAnnotations* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneGraphCrowdLaneAnnotations>();
 	}
 };
-static_assert(alignof(UZoneGraphCrowdLaneAnnotations) == 0x000010, "Wrong alignment on UZoneGraphCrowdLaneAnnotations");
-static_assert(sizeof(UZoneGraphCrowdLaneAnnotations) == 0x000850, "Wrong size on UZoneGraphCrowdLaneAnnotations");
-static_assert(offsetof(UZoneGraphCrowdLaneAnnotations, CloseLaneTag) == 0x000828, "Member 'UZoneGraphCrowdLaneAnnotations::CloseLaneTag' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCrowdLaneAnnotations, WaitingLaneTag) == 0x000829, "Member 'UZoneGraphCrowdLaneAnnotations::WaitingLaneTag' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCrowdLaneAnnotations, bDisplayTags) == 0x00082A, "Member 'UZoneGraphCrowdLaneAnnotations::bDisplayTags' has a wrong offset!");
-static_assert(offsetof(UZoneGraphCrowdLaneAnnotations, CrowdSubsystem) == 0x000840, "Member 'UZoneGraphCrowdLaneAnnotations::CrowdSubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UZoneGraphCrowdLaneAnnotations;
 
 }
 

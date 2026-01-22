@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
 #include "PyWidget_SecondaryChildBase_classes.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_ApplyToJoin.PyWidget_Secondary_ApplyToJoin
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_ApplyToJoin final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -27,23 +27,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_ApplyToJoin">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_ApplyToJoin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_ApplyToJoin")
 	}
 	static class UPyWidget_Secondary_ApplyToJoin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_ApplyToJoin>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_ApplyToJoin) == 0x000008, "Wrong alignment on UPyWidget_Secondary_ApplyToJoin");
-static_assert(sizeof(UPyWidget_Secondary_ApplyToJoin) == 0x0005C0, "Wrong size on UPyWidget_Secondary_ApplyToJoin");
+DUMPER7_ASSERTS_UPyWidget_Secondary_ApplyToJoin;
 
 // PythonClass PyWidget_Secondary_ApplyToJoin.PyWidget_Clan_ProficientHeroBtn
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Clan_ProficientHeroBtn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             TankIcon;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DamageIcon;                                        // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             SupportIcon;                                       // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -53,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ProficientHeroBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ProficientHeroBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ProficientHeroBtn")
 	}
 	static class UPyWidget_Clan_ProficientHeroBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ProficientHeroBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ProficientHeroBtn) == 0x000008, "Wrong alignment on UPyWidget_Clan_ProficientHeroBtn");
-static_assert(sizeof(UPyWidget_Clan_ProficientHeroBtn) == 0x0005D0, "Wrong size on UPyWidget_Clan_ProficientHeroBtn");
-static_assert(offsetof(UPyWidget_Clan_ProficientHeroBtn, OnClicked) == 0x0005C0, "Member 'UPyWidget_Clan_ProficientHeroBtn::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ProficientHeroBtn;
 
 }
 

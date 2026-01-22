@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelSequenceDirector_BattlePass_CrystalBuy">();
+		STATIC_CLASS_IMPL("PyLevelSequenceDirector_BattlePass_CrystalBuy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelSequenceDirector_BattlePass_CrystalBuy")
 	}
 	static class UPyLevelSequenceDirector_BattlePass_CrystalBuy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelSequenceDirector_BattlePass_CrystalBuy>();
 	}
 };
-static_assert(alignof(UPyLevelSequenceDirector_BattlePass_CrystalBuy) == 0x000008, "Wrong alignment on UPyLevelSequenceDirector_BattlePass_CrystalBuy");
-static_assert(sizeof(UPyLevelSequenceDirector_BattlePass_CrystalBuy) == 0x000040, "Wrong size on UPyLevelSequenceDirector_BattlePass_CrystalBuy");
+DUMPER7_ASSERTS_UPyLevelSequenceDirector_BattlePass_CrystalBuy;
 
 }
 

@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "PyMarvelUserWidget_classes.hpp"
-#include "PyWidget_Clan_ApplyList_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "CoreUObject_classes.hpp"
+#include "PyWidget_Clan_ApplyList_structs.hpp"
+#include "PyMarvelUserWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Clan_ApplyList.PyWidget_Clan_ApplyList
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Clan_ApplyList final : public UPyMarvelUserWidget
 {
 public:
-	EClanApplyListType                            ListType;                                          // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EClanApplyListType                            ListType;                                          // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ApplyList">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ApplyList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ApplyList")
 	}
 	static class UPyWidget_Clan_ApplyList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ApplyList>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ApplyList) == 0x000008, "Wrong alignment on UPyWidget_Clan_ApplyList");
-static_assert(sizeof(UPyWidget_Clan_ApplyList) == 0x0005C0, "Wrong size on UPyWidget_Clan_ApplyList");
-static_assert(offsetof(UPyWidget_Clan_ApplyList, ListType) == 0x0005BA, "Member 'UPyWidget_Clan_ApplyList::ListType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Clan_ApplyList;
 
 // PythonClass PyWidget_Clan_ApplyList.Clan_ApplyListItemData
 // 0x0000 (0x0030 - 0x0030)
@@ -52,18 +54,21 @@ class UClan_ApplyListItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Clan_ApplyListItemData">();
+		STATIC_CLASS_IMPL("Clan_ApplyListItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Clan_ApplyListItemData")
 	}
 	static class UClan_ApplyListItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClan_ApplyListItemData>();
 	}
 };
-static_assert(alignof(UClan_ApplyListItemData) == 0x000008, "Wrong alignment on UClan_ApplyListItemData");
-static_assert(sizeof(UClan_ApplyListItemData) == 0x000030, "Wrong size on UClan_ApplyListItemData");
+DUMPER7_ASSERTS_UClan_ApplyListItemData;
 
 // PythonClass PyWidget_Clan_ApplyList.PyWidget_Clan_ApplyListItem
-// 0x0000 (0x0570 - 0x0570)
+// 0x0000 (0x0578 - 0x0578)
 class UPyWidget_Clan_ApplyListItem final : public UWidget_ListEntry
 {
 public:
@@ -75,15 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_ApplyListItem">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_ApplyListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_ApplyListItem")
 	}
 	static class UPyWidget_Clan_ApplyListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_ApplyListItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_ApplyListItem) == 0x000008, "Wrong alignment on UPyWidget_Clan_ApplyListItem");
-static_assert(sizeof(UPyWidget_Clan_ApplyListItem) == 0x000570, "Wrong size on UPyWidget_Clan_ApplyListItem");
+DUMPER7_ASSERTS_UPyWidget_Clan_ApplyListItem;
 
 }
 

@@ -15,30 +15,30 @@
 #include "CoreUObject_classes.hpp"
 #include "PyWidget_DropDownList_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_DropDownList_ListView_Item_classes.hpp"
 #include "PyWidget_Common_Input_classes.hpp"
 #include "PyWidget_DropDownList_ListView_classes.hpp"
-#include "PyWidget_DropDownList_ListView_Item_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_League_AwardInfoCollectItem
-// 0x0098 (0x0658 - 0x05C0)
+// 0x0098 (0x0660 - 0x05C8)
 class UPyWidget_League_AwardInfoCollectItem final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsSingleLine;                                      // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEditable;                                        // 0x05BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsTextInput;                                       // 0x05BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BD[0x3];                                      // 0x05BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Text_Title;                                        // 0x05C0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class FText                                   Text_SubTitle;                                     // 0x05D8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class FText                                   Text_Input;                                        // 0x05F0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class FText                                   Text_InputHint;                                    // 0x0608(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	class FText                                   Text_Tips;                                         // 0x0620(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemIDChanged;                                   // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class FText InputText)> OnTextChanged;                             // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsSingleLine;                                      // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEditable;                                        // 0x05C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTextInput;                                       // 0x05C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C5[0x3];                                      // 0x05C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Text_Title;                                        // 0x05C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class FText                                   Text_SubTitle;                                     // 0x05E0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class FText                                   Text_Input;                                        // 0x05F8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class FText                                   Text_InputHint;                                    // 0x0610(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	class FText                                   Text_Tips;                                         // 0x0628(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemIDChanged;                                   // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class FText InputText)> OnTextChanged;                             // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -47,25 +47,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_AwardInfoCollectItem">();
+		STATIC_CLASS_IMPL("PyWidget_League_AwardInfoCollectItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_AwardInfoCollectItem")
 	}
 	static class UPyWidget_League_AwardInfoCollectItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_AwardInfoCollectItem>();
 	}
 };
-static_assert(alignof(UPyWidget_League_AwardInfoCollectItem) == 0x000008, "Wrong alignment on UPyWidget_League_AwardInfoCollectItem");
-static_assert(sizeof(UPyWidget_League_AwardInfoCollectItem) == 0x000658, "Wrong size on UPyWidget_League_AwardInfoCollectItem");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, IsSingleLine) == 0x0005BA, "Member 'UPyWidget_League_AwardInfoCollectItem::IsSingleLine' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, IsEditable) == 0x0005BB, "Member 'UPyWidget_League_AwardInfoCollectItem::IsEditable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, IsTextInput) == 0x0005BC, "Member 'UPyWidget_League_AwardInfoCollectItem::IsTextInput' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, Text_Title) == 0x0005C0, "Member 'UPyWidget_League_AwardInfoCollectItem::Text_Title' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, Text_SubTitle) == 0x0005D8, "Member 'UPyWidget_League_AwardInfoCollectItem::Text_SubTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, Text_Input) == 0x0005F0, "Member 'UPyWidget_League_AwardInfoCollectItem::Text_Input' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, Text_InputHint) == 0x000608, "Member 'UPyWidget_League_AwardInfoCollectItem::Text_InputHint' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, Text_Tips) == 0x000620, "Member 'UPyWidget_League_AwardInfoCollectItem::Text_Tips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, OnItemIDChanged) == 0x000638, "Member 'UPyWidget_League_AwardInfoCollectItem::OnItemIDChanged' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_AwardInfoCollectItem, OnTextChanged) == 0x000648, "Member 'UPyWidget_League_AwardInfoCollectItem::OnTextChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_AwardInfoCollectItem;
 
 // PythonClass PyWidget_League_AwardInfoItem.League_ReceivedBonus_ItemData
 // 0x0000 (0x0030 - 0x0030)
@@ -74,25 +67,28 @@ class ULeague_ReceivedBonus_ItemData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"League_ReceivedBonus_ItemData">();
+		STATIC_CLASS_IMPL("League_ReceivedBonus_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"League_ReceivedBonus_ItemData")
 	}
 	static class ULeague_ReceivedBonus_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeague_ReceivedBonus_ItemData>();
 	}
 };
-static_assert(alignof(ULeague_ReceivedBonus_ItemData) == 0x000008, "Wrong alignment on ULeague_ReceivedBonus_ItemData");
-static_assert(sizeof(ULeague_ReceivedBonus_ItemData) == 0x000030, "Wrong size on ULeague_ReceivedBonus_ItemData");
+DUMPER7_ASSERTS_ULeague_ReceivedBonus_ItemData;
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_League_ReceivedBonus_Item
-// 0x0020 (0x0590 - 0x0570)
+// 0x0020 (0x0598 - 0x0578)
 class UPyWidget_League_ReceivedBonus_Item final : public UWidget_ListEntry
 {
 public:
-	class UMaterialInterface*                     MaterialChampion;                                  // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialRunnerUp;                                  // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialThird;                                     // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     MaterialOther;                                     // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialChampion;                                  // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialRunnerUp;                                  // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialThird;                                     // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     MaterialOther;                                     // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -103,22 +99,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_ReceivedBonus_Item">();
+		STATIC_CLASS_IMPL("PyWidget_League_ReceivedBonus_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_ReceivedBonus_Item")
 	}
 	static class UPyWidget_League_ReceivedBonus_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_ReceivedBonus_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_League_ReceivedBonus_Item) == 0x000008, "Wrong alignment on UPyWidget_League_ReceivedBonus_Item");
-static_assert(sizeof(UPyWidget_League_ReceivedBonus_Item) == 0x000590, "Wrong size on UPyWidget_League_ReceivedBonus_Item");
-static_assert(offsetof(UPyWidget_League_ReceivedBonus_Item, MaterialChampion) == 0x000570, "Member 'UPyWidget_League_ReceivedBonus_Item::MaterialChampion' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ReceivedBonus_Item, MaterialRunnerUp) == 0x000578, "Member 'UPyWidget_League_ReceivedBonus_Item::MaterialRunnerUp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ReceivedBonus_Item, MaterialThird) == 0x000580, "Member 'UPyWidget_League_ReceivedBonus_Item::MaterialThird' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_ReceivedBonus_Item, MaterialOther) == 0x000588, "Member 'UPyWidget_League_ReceivedBonus_Item::MaterialOther' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_ReceivedBonus_Item;
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_DropDown_Item_LeagueAwardInfo
-// 0x0000 (0x0778 - 0x0778)
+// 0x0000 (0x07D0 - 0x07D0)
 class UPyWidget_DropDown_Item_LeagueAwardInfo final : public UPyWidget_DropDownList_ListView_Item
 {
 public:
@@ -127,28 +122,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDown_Item_LeagueAwardInfo">();
+		STATIC_CLASS_IMPL("PyWidget_DropDown_Item_LeagueAwardInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDown_Item_LeagueAwardInfo")
 	}
 	static class UPyWidget_DropDown_Item_LeagueAwardInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDown_Item_LeagueAwardInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDown_Item_LeagueAwardInfo) == 0x000008, "Wrong alignment on UPyWidget_DropDown_Item_LeagueAwardInfo");
-static_assert(sizeof(UPyWidget_DropDown_Item_LeagueAwardInfo) == 0x000778, "Wrong size on UPyWidget_DropDown_Item_LeagueAwardInfo");
+DUMPER7_ASSERTS_UPyWidget_DropDown_Item_LeagueAwardInfo;
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_CommonInput_LeagueReceive
-// 0x00E0 (0x1CE0 - 0x1C00)
+// 0x00E0 (0x1CF0 - 0x1C10)
 class UPyWidget_CommonInput_LeagueReceive final : public UPyWidget_Common_Input
 {
 public:
-	struct FInputTips                             WrongTextSwiftCode;                                // 0x1C00(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextInvalidSpace;                             // 0x1C20(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextRewardPromise;                            // 0x1C40(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextCNMobileNumber;                           // 0x1C60(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextCNIDCardNumber;                           // 0x1C80(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextOnlyChnAlNumSpace;                        // 0x1CA0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FInputTips                             WrongTextOnlyChnAlSpace;                           // 0x1CC0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextSwiftCode;                                // 0x1C10(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextInvalidSpace;                             // 0x1C30(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextRewardPromise;                            // 0x1C50(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextCNMobileNumber;                           // 0x1C70(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextCNIDCardNumber;                           // 0x1C90(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextOnlyChnAlNumSpace;                        // 0x1CB0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FInputTips                             WrongTextOnlyChnAlSpace;                           // 0x1CD0(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -156,25 +154,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CommonInput_LeagueReceive">();
+		STATIC_CLASS_IMPL("PyWidget_CommonInput_LeagueReceive")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CommonInput_LeagueReceive")
 	}
 	static class UPyWidget_CommonInput_LeagueReceive* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CommonInput_LeagueReceive>();
 	}
 };
-static_assert(alignof(UPyWidget_CommonInput_LeagueReceive) == 0x000010, "Wrong alignment on UPyWidget_CommonInput_LeagueReceive");
-static_assert(sizeof(UPyWidget_CommonInput_LeagueReceive) == 0x001CE0, "Wrong size on UPyWidget_CommonInput_LeagueReceive");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextSwiftCode) == 0x001C00, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextSwiftCode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextInvalidSpace) == 0x001C20, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextInvalidSpace' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextRewardPromise) == 0x001C40, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextRewardPromise' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextCNMobileNumber) == 0x001C60, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextCNMobileNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextCNIDCardNumber) == 0x001C80, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextCNIDCardNumber' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextOnlyChnAlNumSpace) == 0x001CA0, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextOnlyChnAlNumSpace' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CommonInput_LeagueReceive, WrongTextOnlyChnAlSpace) == 0x001CC0, "Member 'UPyWidget_CommonInput_LeagueReceive::WrongTextOnlyChnAlSpace' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CommonInput_LeagueReceive;
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_DropDownList_LeagueAwardInfo
-// 0x0000 (0x14E0 - 0x14E0)
+// 0x0000 (0x1530 - 0x1530)
 class UPyWidget_DropDownList_LeagueAwardInfo final : public UPyWidget_DropDownList
 {
 public:
@@ -183,32 +177,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_LeagueAwardInfo">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_LeagueAwardInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_LeagueAwardInfo")
 	}
 	static class UPyWidget_DropDownList_LeagueAwardInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_LeagueAwardInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_LeagueAwardInfo) == 0x000010, "Wrong alignment on UPyWidget_DropDownList_LeagueAwardInfo");
-static_assert(sizeof(UPyWidget_DropDownList_LeagueAwardInfo) == 0x0014E0, "Wrong size on UPyWidget_DropDownList_LeagueAwardInfo");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_LeagueAwardInfo;
 
 // PythonClass PyWidget_League_AwardInfoItem.PyWidget_DropDownList_ListViewLeagueAwardInfo
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_DropDownList_ListViewLeagueAwardInfo final : public UPyWidget_DropDownList_ListView
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_ListViewLeagueAwardInfo">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_ListViewLeagueAwardInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_ListViewLeagueAwardInfo")
 	}
 	static class UPyWidget_DropDownList_ListViewLeagueAwardInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_ListViewLeagueAwardInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_ListViewLeagueAwardInfo) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_ListViewLeagueAwardInfo");
-static_assert(sizeof(UPyWidget_DropDownList_ListViewLeagueAwardInfo) == 0x000608, "Wrong size on UPyWidget_DropDownList_ListViewLeagueAwardInfo");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_ListViewLeagueAwardInfo;
 
 }
 

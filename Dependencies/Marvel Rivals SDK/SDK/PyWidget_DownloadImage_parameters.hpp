@@ -21,9 +21,7 @@ struct PyRichTextWidgetConfig_DownloadImage_GetWidgetID final
 public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyRichTextWidgetConfig_DownloadImage_GetWidgetID) == 0x000008, "Wrong alignment on PyRichTextWidgetConfig_DownloadImage_GetWidgetID");
-static_assert(sizeof(PyRichTextWidgetConfig_DownloadImage_GetWidgetID) == 0x000010, "Wrong size on PyRichTextWidgetConfig_DownloadImage_GetWidgetID");
-static_assert(offsetof(PyRichTextWidgetConfig_DownloadImage_GetWidgetID, ReturnValue) == 0x000000, "Member 'PyRichTextWidgetConfig_DownloadImage_GetWidgetID::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyRichTextWidgetConfig_DownloadImage_GetWidgetID;
 
 }
 

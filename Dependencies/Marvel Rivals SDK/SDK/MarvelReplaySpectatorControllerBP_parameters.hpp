@@ -21,9 +21,7 @@ struct MarvelReplaySpectatorControllerBP_C_SendCmdToPython final
 public:
 	class FString                                 Command;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelReplaySpectatorControllerBP_C_SendCmdToPython) == 0x000008, "Wrong alignment on MarvelReplaySpectatorControllerBP_C_SendCmdToPython");
-static_assert(sizeof(MarvelReplaySpectatorControllerBP_C_SendCmdToPython) == 0x000010, "Wrong size on MarvelReplaySpectatorControllerBP_C_SendCmdToPython");
-static_assert(offsetof(MarvelReplaySpectatorControllerBP_C_SendCmdToPython, Command) == 0x000000, "Member 'MarvelReplaySpectatorControllerBP_C_SendCmdToPython::Command' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelReplaySpectatorControllerBP_C_SendCmdToPython;
 
 // Function MarvelReplaySpectatorControllerBP.MarvelReplaySpectatorControllerBP_C.ExecuteUbergraph_MarvelReplaySpectatorControllerBP
 // 0x0028 (0x0028 - 0x0000)
@@ -35,11 +33,7 @@ public:
 	class FString                                 K2Node_Event_Command;                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_CallPythonComponentMethodString_ReturnValue; // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP) == 0x000008, "Wrong alignment on MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP");
-static_assert(sizeof(MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP) == 0x000028, "Wrong size on MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP");
-static_assert(offsetof(MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP, EntryPoint) == 0x000000, "Member 'MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP, K2Node_Event_Command) == 0x000008, "Member 'MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP::K2Node_Event_Command' has a wrong offset!");
-static_assert(offsetof(MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP, CallFunc_CallPythonComponentMethodString_ReturnValue) == 0x000018, "Member 'MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP::CallFunc_CallPythonComponentMethodString_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelReplaySpectatorControllerBP_C_ExecuteUbergraph_MarvelReplaySpectatorControllerBP;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget3D_Dying_SetWidgetComponentOwner final
 public:
 	class UWidgetComponent*                       InWidgetComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget3D_Dying_SetWidgetComponentOwner) == 0x000008, "Wrong alignment on PyWidget3D_Dying_SetWidgetComponentOwner");
-static_assert(sizeof(PyWidget3D_Dying_SetWidgetComponentOwner) == 0x000008, "Wrong size on PyWidget3D_Dying_SetWidgetComponentOwner");
-static_assert(offsetof(PyWidget3D_Dying_SetWidgetComponentOwner, InWidgetComponent) == 0x000000, "Member 'PyWidget3D_Dying_SetWidgetComponentOwner::InWidgetComponent' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget3D_Dying_SetWidgetComponentOwner;
 
 }
 

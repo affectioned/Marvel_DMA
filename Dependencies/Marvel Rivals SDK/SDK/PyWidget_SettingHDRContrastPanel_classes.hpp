@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingHDRContrastPanel.PyWidget_SettingHDRContrastPanel
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_SettingHDRContrastPanel final : public UPyWidget_SettingBrightBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingHDRContrastPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettingHDRContrastPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingHDRContrastPanel")
 	}
 	static class UPyWidget_SettingHDRContrastPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingHDRContrastPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingHDRContrastPanel) == 0x000008, "Wrong alignment on UPyWidget_SettingHDRContrastPanel");
-static_assert(sizeof(UPyWidget_SettingHDRContrastPanel) == 0x000608, "Wrong size on UPyWidget_SettingHDRContrastPanel");
+DUMPER7_ASSERTS_UPyWidget_SettingHDRContrastPanel;
 
 }
 

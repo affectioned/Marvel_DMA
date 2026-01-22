@@ -278,10 +278,7 @@ public:
 	struct FVector2D                              InitialValue;                                      // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              CurrentValue;                                      // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGizmoVec2ParameterChange) == 0x000008, "Wrong alignment on FGizmoVec2ParameterChange");
-static_assert(sizeof(FGizmoVec2ParameterChange) == 0x000020, "Wrong size on FGizmoVec2ParameterChange");
-static_assert(offsetof(FGizmoVec2ParameterChange, InitialValue) == 0x000000, "Member 'FGizmoVec2ParameterChange::InitialValue' has a wrong offset!");
-static_assert(offsetof(FGizmoVec2ParameterChange, CurrentValue) == 0x000010, "Member 'FGizmoVec2ParameterChange::CurrentValue' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoVec2ParameterChange;
 
 // ScriptStruct InteractiveToolsFramework.GizmoElementColorAttribute
 // 0x0014 (0x0014 - 0x0000)
@@ -293,11 +290,7 @@ public:
 	bool                                          bOverridesChildState;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGizmoElementColorAttribute) == 0x000004, "Wrong alignment on FGizmoElementColorAttribute");
-static_assert(sizeof(FGizmoElementColorAttribute) == 0x000014, "Wrong size on FGizmoElementColorAttribute");
-static_assert(offsetof(FGizmoElementColorAttribute, Value) == 0x000000, "Member 'FGizmoElementColorAttribute::Value' has a wrong offset!");
-static_assert(offsetof(FGizmoElementColorAttribute, bHasValue) == 0x000010, "Member 'FGizmoElementColorAttribute::bHasValue' has a wrong offset!");
-static_assert(offsetof(FGizmoElementColorAttribute, bOverridesChildState) == 0x000011, "Member 'FGizmoElementColorAttribute::bOverridesChildState' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoElementColorAttribute;
 
 // ScriptStruct InteractiveToolsFramework.GizmoElementMaterialAttribute
 // 0x000C (0x000C - 0x0000)
@@ -308,10 +301,7 @@ public:
 	bool                                          bOverridesChildState;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGizmoElementMaterialAttribute) == 0x000004, "Wrong alignment on FGizmoElementMaterialAttribute");
-static_assert(sizeof(FGizmoElementMaterialAttribute) == 0x00000C, "Wrong size on FGizmoElementMaterialAttribute");
-static_assert(offsetof(FGizmoElementMaterialAttribute, Value) == 0x000000, "Member 'FGizmoElementMaterialAttribute::Value' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMaterialAttribute, bOverridesChildState) == 0x000008, "Member 'FGizmoElementMaterialAttribute::bOverridesChildState' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoElementMaterialAttribute;
 
 // ScriptStruct InteractiveToolsFramework.GizmoElementMeshRenderStateAttributes
 // 0x0060 (0x0060 - 0x0000)
@@ -325,14 +315,7 @@ public:
 	struct FGizmoElementColorAttribute            HoverVertexColor;                                  // 0x0038(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FGizmoElementColorAttribute            InteractVertexColor;                               // 0x004C(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGizmoElementMeshRenderStateAttributes) == 0x000004, "Wrong alignment on FGizmoElementMeshRenderStateAttributes");
-static_assert(sizeof(FGizmoElementMeshRenderStateAttributes) == 0x000060, "Wrong size on FGizmoElementMeshRenderStateAttributes");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, Material) == 0x000000, "Member 'FGizmoElementMeshRenderStateAttributes::Material' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, HoverMaterial) == 0x00000C, "Member 'FGizmoElementMeshRenderStateAttributes::HoverMaterial' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, InteractMaterial) == 0x000018, "Member 'FGizmoElementMeshRenderStateAttributes::InteractMaterial' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, VertexColor) == 0x000024, "Member 'FGizmoElementMeshRenderStateAttributes::VertexColor' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, HoverVertexColor) == 0x000038, "Member 'FGizmoElementMeshRenderStateAttributes::HoverVertexColor' has a wrong offset!");
-static_assert(offsetof(FGizmoElementMeshRenderStateAttributes, InteractVertexColor) == 0x00004C, "Member 'FGizmoElementMeshRenderStateAttributes::InteractVertexColor' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoElementMeshRenderStateAttributes;
 
 // ScriptStruct InteractiveToolsFramework.GizmoElementLineRenderStateAttributes
 // 0x003C (0x003C - 0x0000)
@@ -343,11 +326,7 @@ public:
 	struct FGizmoElementColorAttribute            HoverLineColor;                                    // 0x0014(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FGizmoElementColorAttribute            InteractLineColor;                                 // 0x0028(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGizmoElementLineRenderStateAttributes) == 0x000004, "Wrong alignment on FGizmoElementLineRenderStateAttributes");
-static_assert(sizeof(FGizmoElementLineRenderStateAttributes) == 0x00003C, "Wrong size on FGizmoElementLineRenderStateAttributes");
-static_assert(offsetof(FGizmoElementLineRenderStateAttributes, LineColor) == 0x000000, "Member 'FGizmoElementLineRenderStateAttributes::LineColor' has a wrong offset!");
-static_assert(offsetof(FGizmoElementLineRenderStateAttributes, HoverLineColor) == 0x000014, "Member 'FGizmoElementLineRenderStateAttributes::HoverLineColor' has a wrong offset!");
-static_assert(offsetof(FGizmoElementLineRenderStateAttributes, InteractLineColor) == 0x000028, "Member 'FGizmoElementLineRenderStateAttributes::InteractLineColor' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoElementLineRenderStateAttributes;
 
 // ScriptStruct InteractiveToolsFramework.GizmoFloatParameterChange
 // 0x0008 (0x0008 - 0x0000)
@@ -357,20 +336,16 @@ public:
 	float                                         InitialValue;                                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentValue;                                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGizmoFloatParameterChange) == 0x000004, "Wrong alignment on FGizmoFloatParameterChange");
-static_assert(sizeof(FGizmoFloatParameterChange) == 0x000008, "Wrong size on FGizmoFloatParameterChange");
-static_assert(offsetof(FGizmoFloatParameterChange, InitialValue) == 0x000000, "Member 'FGizmoFloatParameterChange::InitialValue' has a wrong offset!");
-static_assert(offsetof(FGizmoFloatParameterChange, CurrentValue) == 0x000004, "Member 'FGizmoFloatParameterChange::CurrentValue' has a wrong offset!");
+DUMPER7_ASSERTS_FGizmoFloatParameterChange;
 
 // ScriptStruct InteractiveToolsFramework.BrushStampData
-// 0x0230 (0x0230 - 0x0000)
+// 0x0248 (0x0248 - 0x0000)
 struct alignas(0x08) FBrushStampData final
 {
 public:
-	uint8                                         Pad_0[0x230];                                      // 0x0000(0x0230)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x248];                                      // 0x0000(0x0248)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBrushStampData) == 0x000008, "Wrong alignment on FBrushStampData");
-static_assert(sizeof(FBrushStampData) == 0x000230, "Wrong size on FBrushStampData");
+DUMPER7_ASSERTS_FBrushStampData;
 
 // ScriptStruct InteractiveToolsFramework.BehaviorInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -380,9 +355,7 @@ public:
 	class UInputBehavior*                         Behavior;                                          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x18];                                       // 0x0008(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBehaviorInfo) == 0x000008, "Wrong alignment on FBehaviorInfo");
-static_assert(sizeof(FBehaviorInfo) == 0x000020, "Wrong size on FBehaviorInfo");
-static_assert(offsetof(FBehaviorInfo, Behavior) == 0x000000, "Member 'FBehaviorInfo::Behavior' has a wrong offset!");
+DUMPER7_ASSERTS_FBehaviorInfo;
 
 // ScriptStruct InteractiveToolsFramework.InputRayHit
 // 0x0040 (0x0040 - 0x0000)
@@ -399,14 +372,7 @@ public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TWeakObjectPtr<class UObject>                 HitObject;                                         // 0x0038(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInputRayHit) == 0x000008, "Wrong alignment on FInputRayHit");
-static_assert(sizeof(FInputRayHit) == 0x000040, "Wrong size on FInputRayHit");
-static_assert(offsetof(FInputRayHit, bHit) == 0x000000, "Member 'FInputRayHit::bHit' has a wrong offset!");
-static_assert(offsetof(FInputRayHit, HitDepth) == 0x000008, "Member 'FInputRayHit::HitDepth' has a wrong offset!");
-static_assert(offsetof(FInputRayHit, HitNormal) == 0x000010, "Member 'FInputRayHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(FInputRayHit, bHasHitNormal) == 0x000028, "Member 'FInputRayHit::bHasHitNormal' has a wrong offset!");
-static_assert(offsetof(FInputRayHit, HitIdentifier) == 0x00002C, "Member 'FInputRayHit::HitIdentifier' has a wrong offset!");
-static_assert(offsetof(FInputRayHit, HitObject) == 0x000038, "Member 'FInputRayHit::HitObject' has a wrong offset!");
+DUMPER7_ASSERTS_FInputRayHit;
 
 // ScriptStruct InteractiveToolsFramework.InputDeviceRay
 // 0x0048 (0x0048 - 0x0000)
@@ -418,11 +384,7 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              ScreenPosition;                                    // 0x0038(0x0010)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInputDeviceRay) == 0x000008, "Wrong alignment on FInputDeviceRay");
-static_assert(sizeof(FInputDeviceRay) == 0x000048, "Wrong size on FInputDeviceRay");
-static_assert(offsetof(FInputDeviceRay, WorldRay) == 0x000000, "Member 'FInputDeviceRay::WorldRay' has a wrong offset!");
-static_assert(offsetof(FInputDeviceRay, bHas2D) == 0x000030, "Member 'FInputDeviceRay::bHas2D' has a wrong offset!");
-static_assert(offsetof(FInputDeviceRay, ScreenPosition) == 0x000038, "Member 'FInputDeviceRay::ScreenPosition' has a wrong offset!");
+DUMPER7_ASSERTS_FInputDeviceRay;
 
 // ScriptStruct InteractiveToolsFramework.ActiveGizmo
 // 0x0030 (0x0030 - 0x0000)
@@ -432,9 +394,7 @@ public:
 	class UInteractiveGizmo*                      Gizmo;                                             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x28];                                       // 0x0008(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FActiveGizmo) == 0x000008, "Wrong alignment on FActiveGizmo");
-static_assert(sizeof(FActiveGizmo) == 0x000030, "Wrong size on FActiveGizmo");
-static_assert(offsetof(FActiveGizmo, Gizmo) == 0x000000, "Member 'FActiveGizmo::Gizmo' has a wrong offset!");
+DUMPER7_ASSERTS_FActiveGizmo;
 
 }
 

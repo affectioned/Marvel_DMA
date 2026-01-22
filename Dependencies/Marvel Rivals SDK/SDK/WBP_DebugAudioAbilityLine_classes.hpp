@@ -51,29 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_DebugAudioAbilityLine_C">();
+		BP_STATIC_CLASS_IMPL("WBP_DebugAudioAbilityLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_DebugAudioAbilityLine_C")
 	}
 	static class UWBP_DebugAudioAbilityLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_DebugAudioAbilityLine_C>();
 	}
 };
-static_assert(alignof(UWBP_DebugAudioAbilityLine_C) == 0x000008, "Wrong alignment on UWBP_DebugAudioAbilityLine_C");
-static_assert(sizeof(UWBP_DebugAudioAbilityLine_C) == 0x0004C8, "Wrong size on UWBP_DebugAudioAbilityLine_C");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, UberGraphFrame) == 0x0003B8, "Member 'UWBP_DebugAudioAbilityLine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, AnimEnemyCheck) == 0x0003C0, "Member 'UWBP_DebugAudioAbilityLine_C::AnimEnemyCheck' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, AnimTeamCheck) == 0x0003C8, "Member 'UWBP_DebugAudioAbilityLine_C::AnimTeamCheck' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, AnimSelfCheck) == 0x0003D0, "Member 'UWBP_DebugAudioAbilityLine_C::AnimSelfCheck' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, AnimPost) == 0x0003D8, "Member 'UWBP_DebugAudioAbilityLine_C::AnimPost' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, ActiveName) == 0x0003E0, "Member 'UWBP_DebugAudioAbilityLine_C::ActiveName' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, Btn_Solo) == 0x0003E8, "Member 'UWBP_DebugAudioAbilityLine_C::Btn_Solo' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, CheckEnemy) == 0x0003F0, "Member 'UWBP_DebugAudioAbilityLine_C::CheckEnemy' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, CheckSelf) == 0x0003F8, "Member 'UWBP_DebugAudioAbilityLine_C::CheckSelf' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, CheckTeam) == 0x000400, "Member 'UWBP_DebugAudioAbilityLine_C::CheckTeam' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, Img) == 0x000408, "Member 'UWBP_DebugAudioAbilityLine_C::Img' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, UnitMargin) == 0x000410, "Member 'UWBP_DebugAudioAbilityLine_C::UnitMargin' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, Options) == 0x000420, "Member 'UWBP_DebugAudioAbilityLine_C::Options' has a wrong offset!");
-static_assert(offsetof(UWBP_DebugAudioAbilityLine_C, Config) == 0x000428, "Member 'UWBP_DebugAudioAbilityLine_C::Config' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_DebugAudioAbilityLine_C;
 
 }
 

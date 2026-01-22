@@ -17,27 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Rank_DanIcon_Small2.WBP_Rank_DanIcon_Small2_C
-// 0x0010 (0x0628 - 0x0618)
+// 0x0018 (0x0638 - 0x0620)
 class UWBP_Rank_DanIcon_Small2_C final : public UPyWidget_RankIcon_Small2
 {
 public:
-	class UMarvelCanvasPanel*                     Panel_size;                                        // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_0;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Mask_Dark;                                     // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelCanvasPanel*                     Panel_size;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_0;                                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Rank_DanIcon_Small2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Rank_DanIcon_Small2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Rank_DanIcon_Small2_C")
 	}
 	static class UWBP_Rank_DanIcon_Small2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Rank_DanIcon_Small2_C>();
 	}
 };
-static_assert(alignof(UWBP_Rank_DanIcon_Small2_C) == 0x000008, "Wrong alignment on UWBP_Rank_DanIcon_Small2_C");
-static_assert(sizeof(UWBP_Rank_DanIcon_Small2_C) == 0x000628, "Wrong size on UWBP_Rank_DanIcon_Small2_C");
-static_assert(offsetof(UWBP_Rank_DanIcon_Small2_C, Panel_size) == 0x000618, "Member 'UWBP_Rank_DanIcon_Small2_C::Panel_size' has a wrong offset!");
-static_assert(offsetof(UWBP_Rank_DanIcon_Small2_C, ScaleBox_0) == 0x000620, "Member 'UWBP_Rank_DanIcon_Small2_C::ScaleBox_0' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Rank_DanIcon_Small2_C;
 
 }
 

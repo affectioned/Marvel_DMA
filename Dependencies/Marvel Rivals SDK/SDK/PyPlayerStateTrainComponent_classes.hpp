@@ -80,31 +80,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerStateTrainComponent">();
+		STATIC_CLASS_IMPL("PyPlayerStateTrainComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerStateTrainComponent")
 	}
 	static class UPyPlayerStateTrainComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerStateTrainComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerStateTrainComponent) == 0x000008, "Wrong alignment on UPyPlayerStateTrainComponent");
-static_assert(sizeof(UPyPlayerStateTrainComponent) == 0x000288, "Wrong size on UPyPlayerStateTrainComponent");
-static_assert(offsetof(UPyPlayerStateTrainComponent, DelayTimer) == 0x000138, "Member 'UPyPlayerStateTrainComponent::DelayTimer' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainingTimer) == 0x0001B0, "Member 'UPyPlayerStateTrainComponent::TrainingTimer' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, PrepareTrainAction) == 0x000228, "Member 'UPyPlayerStateTrainComponent::PrepareTrainAction' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainAction) == 0x00022C, "Member 'UPyPlayerStateTrainComponent::TrainAction' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainAreaType) == 0x000230, "Member 'UPyPlayerStateTrainComponent::TrainAreaType' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainTraceScore) == 0x000234, "Member 'UPyPlayerStateTrainComponent::TrainTraceScore' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainTimeStamp) == 0x000238, "Member 'UPyPlayerStateTrainComponent::TrainTimeStamp' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TracePointIndex) == 0x00023C, "Member 'UPyPlayerStateTrainComponent::TracePointIndex' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TracePointTotal) == 0x000240, "Member 'UPyPlayerStateTrainComponent::TracePointTotal' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainResultList) == 0x000248, "Member 'UPyPlayerStateTrainComponent::TrainResultList' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainStartTimeStamp) == 0x000258, "Member 'UPyPlayerStateTrainComponent::TrainStartTimeStamp' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainEndTimeStamp) == 0x00025C, "Member 'UPyPlayerStateTrainComponent::TrainEndTimeStamp' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainRet) == 0x000260, "Member 'UPyPlayerStateTrainComponent::TrainRet' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, IsTrainFinish) == 0x000264, "Member 'UPyPlayerStateTrainComponent::IsTrainFinish' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, TrainEnd) == 0x000268, "Member 'UPyPlayerStateTrainComponent::TrainEnd' has a wrong offset!");
-static_assert(offsetof(UPyPlayerStateTrainComponent, DelayQuickTrainEnd) == 0x000278, "Member 'UPyPlayerStateTrainComponent::DelayQuickTrainEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerStateTrainComponent;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "PyWidget_Common_Button_classes.hpp"
-#include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
+#include "PyWidget_Common_Button_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 
@@ -22,21 +22,21 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SelectModeMain.PyWidget_SelectModeItem
-// 0x0080 (0x0940 - 0x08C0)
+// 0x0080 (0x09A0 - 0x0920)
 class UPyWidget_SelectModeItem final : public UPyWidget_BaseCommonButton
 {
 public:
-	bool                                          IsNormal;                                          // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLock;                                            // 0x08B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8BA[0x2];                                      // 0x08BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            LightColor;                                        // 0x08BC(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            DarkColor;                                         // 0x08D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            LineColor;                                         // 0x08E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TipsWarnColor;                                     // 0x08F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TipsCommonColor;                                   // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Tip_Normal_Padding;                                // 0x0918(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Tip_Warn_Padding;                                  // 0x0928(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class UInputAction*                           RuleKeyInputAction;                                // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNormal;                                          // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLock;                                            // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_91A[0x2];                                      // 0x091A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            LightColor;                                        // 0x091C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            DarkColor;                                         // 0x0930(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            LineColor;                                         // 0x0944(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TipsWarnColor;                                     // 0x0958(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TipsCommonColor;                                   // 0x0968(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Tip_Normal_Padding;                                // 0x0978(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Tip_Warn_Padding;                                  // 0x0988(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UInputAction*                           RuleKeyInputAction;                                // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,49 +51,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectModeItem">();
+		STATIC_CLASS_IMPL("PyWidget_SelectModeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectModeItem")
 	}
 	static class UPyWidget_SelectModeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectModeItem>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectModeItem) == 0x000010, "Wrong alignment on UPyWidget_SelectModeItem");
-static_assert(sizeof(UPyWidget_SelectModeItem) == 0x000940, "Wrong size on UPyWidget_SelectModeItem");
-static_assert(offsetof(UPyWidget_SelectModeItem, IsNormal) == 0x0008B8, "Member 'UPyWidget_SelectModeItem::IsNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, IsLock) == 0x0008B9, "Member 'UPyWidget_SelectModeItem::IsLock' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, LightColor) == 0x0008BC, "Member 'UPyWidget_SelectModeItem::LightColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, DarkColor) == 0x0008D0, "Member 'UPyWidget_SelectModeItem::DarkColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, LineColor) == 0x0008E4, "Member 'UPyWidget_SelectModeItem::LineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, TipsWarnColor) == 0x0008F8, "Member 'UPyWidget_SelectModeItem::TipsWarnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, TipsCommonColor) == 0x000908, "Member 'UPyWidget_SelectModeItem::TipsCommonColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, Tip_Normal_Padding) == 0x000918, "Member 'UPyWidget_SelectModeItem::Tip_Normal_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, Tip_Warn_Padding) == 0x000928, "Member 'UPyWidget_SelectModeItem::Tip_Warn_Padding' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeItem, RuleKeyInputAction) == 0x000938, "Member 'UPyWidget_SelectModeItem::RuleKeyInputAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectModeItem;
 
 // PythonClass PyWidget_SelectModeMain.PyWidget_SelectModeMain
-// 0x00B0 (0x06A8 - 0x05F8)
+// 0x00B0 (0x06B0 - 0x0600)
 class UPyWidget_SelectModeMain final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                ModeSeletionItem;                                  // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PageModeItemNum;                                   // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x060C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x064C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x065C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         Items_FadeIn_Time;                                 // 0x066C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BG_FadeIn_Delay_Time;                              // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableWheelChangePage;                             // 0x0674(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_675[0x3];                                      // 0x0675(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnTabUnitClick;                            // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnTabUnitHovered;                          // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnSelectMode;                              // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_OnSelectModeLocked;                        // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UUserWidget*>                    ModeUnitList;                                      // 0x0698(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ModeSeletionItem;                                  // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                PageCuttingItem;                                   // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PageModeItemNum;                                   // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Left;                     // 0x0614(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Mid;                      // 0x0624(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Normal_Right;                    // 0x0634(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Left;                      // 0x0644(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Mid;                       // 0x0654(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Mode_Item_Padding_Hover_Right;                     // 0x0664(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         Items_FadeIn_Time;                                 // 0x0674(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BG_FadeIn_Delay_Time;                              // 0x0678(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableWheelChangePage;                             // 0x067C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_67D[0x3];                                      // 0x067D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnTabUnitClick;                            // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnTabUnitHovered;                          // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnSelectMode;                              // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_OnSelectModeLocked;                        // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UUserWidget*>                    ModeUnitList;                                      // 0x06A0(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -108,35 +101,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectModeMain">();
+		STATIC_CLASS_IMPL("PyWidget_SelectModeMain")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectModeMain")
 	}
 	static class UPyWidget_SelectModeMain* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectModeMain>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectModeMain) == 0x000008, "Wrong alignment on UPyWidget_SelectModeMain");
-static_assert(sizeof(UPyWidget_SelectModeMain) == 0x0006A8, "Wrong size on UPyWidget_SelectModeMain");
-static_assert(offsetof(UPyWidget_SelectModeMain, ModeSeletionItem) == 0x0005F8, "Member 'UPyWidget_SelectModeMain::ModeSeletionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, PageCuttingItem) == 0x000600, "Member 'UPyWidget_SelectModeMain::PageCuttingItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, PageModeItemNum) == 0x000608, "Member 'UPyWidget_SelectModeMain::PageModeItemNum' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Normal_Left) == 0x00060C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Normal_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Normal_Mid) == 0x00061C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Normal_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Normal_Right) == 0x00062C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Normal_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Hover_Left) == 0x00063C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Hover_Left' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Hover_Mid) == 0x00064C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Hover_Mid' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Mode_Item_Padding_Hover_Right) == 0x00065C, "Member 'UPyWidget_SelectModeMain::Mode_Item_Padding_Hover_Right' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, Items_FadeIn_Time) == 0x00066C, "Member 'UPyWidget_SelectModeMain::Items_FadeIn_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, BG_FadeIn_Delay_Time) == 0x000670, "Member 'UPyWidget_SelectModeMain::BG_FadeIn_Delay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, EnableWheelChangePage) == 0x000674, "Member 'UPyWidget_SelectModeMain::EnableWheelChangePage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, AkEvent_OnTabUnitClick) == 0x000678, "Member 'UPyWidget_SelectModeMain::AkEvent_OnTabUnitClick' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, AkEvent_OnTabUnitHovered) == 0x000680, "Member 'UPyWidget_SelectModeMain::AkEvent_OnTabUnitHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, AkEvent_OnSelectMode) == 0x000688, "Member 'UPyWidget_SelectModeMain::AkEvent_OnSelectMode' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, AkEvent_OnSelectModeLocked) == 0x000690, "Member 'UPyWidget_SelectModeMain::AkEvent_OnSelectModeLocked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SelectModeMain, ModeUnitList) == 0x000698, "Member 'UPyWidget_SelectModeMain::ModeUnitList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SelectModeMain;
 
 // PythonClass PyWidget_SelectModeMain.PyWidget_ModeSelection_DeveloperTag
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_ModeSelection_DeveloperTag final : public UPyMarvelUserWidget
 {
 public:
@@ -146,27 +125,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ModeSelection_DeveloperTag">();
+		STATIC_CLASS_IMPL("PyWidget_ModeSelection_DeveloperTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ModeSelection_DeveloperTag")
 	}
 	static class UPyWidget_ModeSelection_DeveloperTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ModeSelection_DeveloperTag>();
 	}
 };
-static_assert(alignof(UPyWidget_ModeSelection_DeveloperTag) == 0x000008, "Wrong alignment on UPyWidget_ModeSelection_DeveloperTag");
-static_assert(sizeof(UPyWidget_ModeSelection_DeveloperTag) == 0x0005C0, "Wrong size on UPyWidget_ModeSelection_DeveloperTag");
+DUMPER7_ASSERTS_UPyWidget_ModeSelection_DeveloperTag;
 
 // PythonClass PyWidget_SelectModeMain.PyWiget_SelectModeAIDiff
-// 0x0050 (0x0930 - 0x08E0)
+// 0x0050 (0x0990 - 0x0940)
 class UPyWiget_SelectModeAIDiff final : public UPyWidget_CommonButton_Lv4
 {
 public:
-	int32                                         AIDiff;                                            // 0x08D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8DC[0x4];                                      // 0x08DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TextTip;                                           // 0x08E0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x08F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedColor;                                     // 0x090C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ai_diff)> AIDiffChange;                                      // 0x0920(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	int32                                         AIDiff;                                            // 0x0938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_93C[0x4];                                      // 0x093C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TextTip;                                           // 0x0940(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x0958(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedColor;                                     // 0x096C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ai_diff)> AIDiffChange;                                      // 0x0980(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void PreConstruct(bool IsDesignTime);
@@ -176,23 +158,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWiget_SelectModeAIDiff">();
+		STATIC_CLASS_IMPL("PyWiget_SelectModeAIDiff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWiget_SelectModeAIDiff")
 	}
 	static class UPyWiget_SelectModeAIDiff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWiget_SelectModeAIDiff>();
 	}
 };
-static_assert(alignof(UPyWiget_SelectModeAIDiff) == 0x000010, "Wrong alignment on UPyWiget_SelectModeAIDiff");
-static_assert(sizeof(UPyWiget_SelectModeAIDiff) == 0x000930, "Wrong size on UPyWiget_SelectModeAIDiff");
-static_assert(offsetof(UPyWiget_SelectModeAIDiff, AIDiff) == 0x0008D8, "Member 'UPyWiget_SelectModeAIDiff::AIDiff' has a wrong offset!");
-static_assert(offsetof(UPyWiget_SelectModeAIDiff, TextTip) == 0x0008E0, "Member 'UPyWiget_SelectModeAIDiff::TextTip' has a wrong offset!");
-static_assert(offsetof(UPyWiget_SelectModeAIDiff, NormalColor) == 0x0008F8, "Member 'UPyWiget_SelectModeAIDiff::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWiget_SelectModeAIDiff, SelectedColor) == 0x00090C, "Member 'UPyWiget_SelectModeAIDiff::SelectedColor' has a wrong offset!");
-static_assert(offsetof(UPyWiget_SelectModeAIDiff, AIDiffChange) == 0x000920, "Member 'UPyWiget_SelectModeAIDiff::AIDiffChange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWiget_SelectModeAIDiff;
 
 // PythonClass PyWidget_SelectModeMain.PyWidget_SelectModePageCuttingButton
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0920 - 0x0920)
 class UPyWidget_SelectModePageCuttingButton final : public UPyWidget_BaseCommonButton
 {
 public:
@@ -202,15 +182,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SelectModePageCuttingButton">();
+		STATIC_CLASS_IMPL("PyWidget_SelectModePageCuttingButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SelectModePageCuttingButton")
 	}
 	static class UPyWidget_SelectModePageCuttingButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SelectModePageCuttingButton>();
 	}
 };
-static_assert(alignof(UPyWidget_SelectModePageCuttingButton) == 0x000010, "Wrong alignment on UPyWidget_SelectModePageCuttingButton");
-static_assert(sizeof(UPyWidget_SelectModePageCuttingButton) == 0x0008C0, "Wrong size on UPyWidget_SelectModePageCuttingButton");
+DUMPER7_ASSERTS_UPyWidget_SelectModePageCuttingButton;
 
 }
 

@@ -20,39 +20,36 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104781.PyConfig_104781
-// 0x0030 (0x28C0 - 0x2890)
+// 0x0030 (0x2FE0 - 0x2FB0)
 class UPyConfig_104781 final : public UConfig_104781
 {
 public:
-	int32                                         FlyBuff;                                           // 0x2890(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         JeffMarkBuff;                                      // 0x2894(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GrootMarkBuff;                                     // 0x2898(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_289C[0x4];                                     // 0x289C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CapsuleLocationOffset;                             // 0x28A0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LaunchVerticalVelocity;                            // 0x28B8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LaunchHorizontalVelocity;                          // 0x28BC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FlyBuff;                                           // 0x2FB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         JeffMarkBuff;                                      // 0x2FB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GrootMarkBuff;                                     // 0x2FB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2FBC[0x4];                                     // 0x2FBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CapsuleLocationOffset;                             // 0x2FC0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LaunchVerticalVelocity;                            // 0x2FD8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LaunchHorizontalVelocity;                          // 0x2FDC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104781">();
+		STATIC_CLASS_IMPL("PyConfig_104781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104781")
 	}
 	static class UPyConfig_104781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104781>();
 	}
 };
-static_assert(alignof(UPyConfig_104781) == 0x000010, "Wrong alignment on UPyConfig_104781");
-static_assert(sizeof(UPyConfig_104781) == 0x0028C0, "Wrong size on UPyConfig_104781");
-static_assert(offsetof(UPyConfig_104781, FlyBuff) == 0x002890, "Member 'UPyConfig_104781::FlyBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104781, JeffMarkBuff) == 0x002894, "Member 'UPyConfig_104781::JeffMarkBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104781, GrootMarkBuff) == 0x002898, "Member 'UPyConfig_104781::GrootMarkBuff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104781, CapsuleLocationOffset) == 0x0028A0, "Member 'UPyConfig_104781::CapsuleLocationOffset' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104781, LaunchVerticalVelocity) == 0x0028B8, "Member 'UPyConfig_104781::LaunchVerticalVelocity' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104781, LaunchHorizontalVelocity) == 0x0028BC, "Member 'UPyConfig_104781::LaunchHorizontalVelocity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104781;
 
 // PythonClass PyAbility_104781.PyAbility_104781
-// 0x0000 (0x2D78 - 0x2D78)
+// 0x0000 (0x2DE0 - 0x2DE0)
 class UPyAbility_104781 : public UAbility_104781
 {
 public:
@@ -76,15 +73,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104781">();
+		STATIC_CLASS_IMPL("PyAbility_104781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104781")
 	}
 	static class UPyAbility_104781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104781>();
 	}
 };
-static_assert(alignof(UPyAbility_104781) == 0x000008, "Wrong alignment on UPyAbility_104781");
-static_assert(sizeof(UPyAbility_104781) == 0x002D78, "Wrong size on UPyAbility_104781");
+DUMPER7_ASSERTS_UPyAbility_104781;
 
 // PythonClass PyAbility_104781.PyBondEnhanceSourceResolver_104781
 // 0x0000 (0x0030 - 0x0030)
@@ -96,23 +96,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBondEnhanceSourceResolver_104781">();
+		STATIC_CLASS_IMPL("PyBondEnhanceSourceResolver_104781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBondEnhanceSourceResolver_104781")
 	}
 	static class UPyBondEnhanceSourceResolver_104781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBondEnhanceSourceResolver_104781>();
 	}
 };
-static_assert(alignof(UPyBondEnhanceSourceResolver_104781) == 0x000008, "Wrong alignment on UPyBondEnhanceSourceResolver_104781");
-static_assert(sizeof(UPyBondEnhanceSourceResolver_104781) == 0x000030, "Wrong size on UPyBondEnhanceSourceResolver_104781");
+DUMPER7_ASSERTS_UPyBondEnhanceSourceResolver_104781;
 
 // PythonClass PyAbility_104781.PyUIC_SelectTarget_104781
-// 0x00B0 (0x0208 - 0x0158)
+// 0x00B0 (0x0268 - 0x01B8)
 class UPyUIC_SelectTarget_104781 final : public UUIC_SelectTarget
 {
 public:
-	struct FUIActionData                          FlyToStyle;                                        // 0x0158(0x0058)(Edit, NativeAccessSpecifierPublic)
-	struct FUIActionData                          GetOffStyle;                                       // 0x01B0(0x0058)(Edit, NativeAccessSpecifierPublic)
+	struct FUIActionData                          FlyToStyle;                                        // 0x01B8(0x0058)(Edit, NativeAccessSpecifierPublic)
+	struct FUIActionData                          GetOffStyle;                                       // 0x0210(0x0058)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	TArray<class AActor*> GetTargets();
@@ -122,17 +125,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIC_SelectTarget_104781">();
+		STATIC_CLASS_IMPL("PyUIC_SelectTarget_104781")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIC_SelectTarget_104781")
 	}
 	static class UPyUIC_SelectTarget_104781* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIC_SelectTarget_104781>();
 	}
 };
-static_assert(alignof(UPyUIC_SelectTarget_104781) == 0x000008, "Wrong alignment on UPyUIC_SelectTarget_104781");
-static_assert(sizeof(UPyUIC_SelectTarget_104781) == 0x000208, "Wrong size on UPyUIC_SelectTarget_104781");
-static_assert(offsetof(UPyUIC_SelectTarget_104781, FlyToStyle) == 0x000158, "Member 'UPyUIC_SelectTarget_104781::FlyToStyle' has a wrong offset!");
-static_assert(offsetof(UPyUIC_SelectTarget_104781, GetOffStyle) == 0x0001B0, "Member 'UPyUIC_SelectTarget_104781::GetOffStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIC_SelectTarget_104781;
 
 }
 

@@ -35,20 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamStateVoteComponent">();
+		STATIC_CLASS_IMPL("PyTeamStateVoteComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamStateVoteComponent")
 	}
 	static class UPyTeamStateVoteComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamStateVoteComponent>();
 	}
 };
-static_assert(alignof(UPyTeamStateVoteComponent) == 0x000008, "Wrong alignment on UPyTeamStateVoteComponent");
-static_assert(sizeof(UPyTeamStateVoteComponent) == 0x000138, "Wrong size on UPyTeamStateVoteComponent");
-static_assert(offsetof(UPyTeamStateVoteComponent, VoteId) == 0x000108, "Member 'UPyTeamStateVoteComponent::VoteId' has a wrong offset!");
-static_assert(offsetof(UPyTeamStateVoteComponent, Timeout) == 0x00010C, "Member 'UPyTeamStateVoteComponent::Timeout' has a wrong offset!");
-static_assert(offsetof(UPyTeamStateVoteComponent, State) == 0x000110, "Member 'UPyTeamStateVoteComponent::State' has a wrong offset!");
-static_assert(offsetof(UPyTeamStateVoteComponent, Selection) == 0x000118, "Member 'UPyTeamStateVoteComponent::Selection' has a wrong offset!");
-static_assert(offsetof(UPyTeamStateVoteComponent, VoteSessionUpdate) == 0x000128, "Member 'UPyTeamStateVoteComponent::VoteSessionUpdate' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTeamStateVoteComponent;
 
 }
 

@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441017.PyBuffAbility_10130_10443290
-// 0x0030 (0x1A60 - 0x1A30)
+// 0x0030 (0x1A78 - 0x1A48)
 class UPyBuffAbility_10130_10443290 : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<float>                                 OutwardTime;                                       // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<float>                                 IntervalTime;                                      // 0x1A40(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<int32>                                 RepeatTime;                                        // 0x1A50(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 OutwardTime;                                       // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 IntervalTime;                                      // 0x1A58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<int32>                                 RepeatTime;                                        // 0x1A68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10443290">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10443290")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10443290")
 	}
 	static class UPyBuffAbility_10130_10443290* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10443290>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10443290) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10443290");
-static_assert(sizeof(UPyBuffAbility_10130_10443290) == 0x001A60, "Wrong size on UPyBuffAbility_10130_10443290");
-static_assert(offsetof(UPyBuffAbility_10130_10443290, OutwardTime) == 0x001A30, "Member 'UPyBuffAbility_10130_10443290::OutwardTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10443290, IntervalTime) == 0x001A40, "Member 'UPyBuffAbility_10130_10443290::IntervalTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10443290, RepeatTime) == 0x001A50, "Member 'UPyBuffAbility_10130_10443290::RepeatTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10443290;
 
 }
 

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "HealthPackType_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "PyHealthPackSpawner_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -56,36 +56,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HealthPackSpawner_C">();
+		BP_STATIC_CLASS_IMPL("HealthPackSpawner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HealthPackSpawner_C")
 	}
 	static class AHealthPackSpawner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHealthPackSpawner_C>();
 	}
 };
-static_assert(alignof(AHealthPackSpawner_C) == 0x000010, "Wrong alignment on AHealthPackSpawner_C");
-static_assert(sizeof(AHealthPackSpawner_C) == 0x0008C0, "Wrong size on AHealthPackSpawner_C");
-static_assert(offsetof(AHealthPackSpawner_C, UberGraphFrame) == 0x0007C0, "Member 'AHealthPackSpawner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, BaseMesh) == 0x0007C8, "Member 'AHealthPackSpawner_C::BaseMesh' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, LoopRangeCheck) == 0x0007D0, "Member 'AHealthPackSpawner_C::LoopRangeCheck' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, StartRangeCheck) == 0x0007D8, "Member 'AHealthPackSpawner_C::StartRangeCheck' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, CollisionBox) == 0x0007E0, "Member 'AHealthPackSpawner_C::CollisionBox' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, BaseNS) == 0x0007E8, "Member 'AHealthPackSpawner_C::BaseNS' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, CylinderNS) == 0x0007F0, "Member 'AHealthPackSpawner_C::CylinderNS' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, WidgetCooling) == 0x0007F8, "Member 'AHealthPackSpawner_C::WidgetCooling' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, DefaultSceneRoot) == 0x000800, "Member 'AHealthPackSpawner_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, ChargeInterval) == 0x000808, "Member 'AHealthPackSpawner_C::ChargeInterval' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, ChargeTimer) == 0x000810, "Member 'AHealthPackSpawner_C::ChargeTimer' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, HealthPackType) == 0x000828, "Member 'AHealthPackSpawner_C::HealthPackType' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, HealingTimer) == 0x000830, "Member 'AHealthPackSpawner_C::HealingTimer' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, MinBuffId) == 0x000848, "Member 'AHealthPackSpawner_C::MinBuffId' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, MaxBuffId) == 0x00084C, "Member 'AHealthPackSpawner_C::MaxBuffId' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, Name_0) == 0x000850, "Member 'AHealthPackSpawner_C::Name_0' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, SmallBagScale) == 0x000860, "Member 'AHealthPackSpawner_C::SmallBagScale' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, BigBagScale) == 0x000878, "Member 'AHealthPackSpawner_C::BigBagScale' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, BackTrackManager_Appear) == 0x000890, "Member 'AHealthPackSpawner_C::BackTrackManager_Appear' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, InitTransform) == 0x000898, "Member 'AHealthPackSpawner_C::InitTransform' has a wrong offset!");
-static_assert(offsetof(AHealthPackSpawner_C, BackTrackManager_Dis) == 0x0008B0, "Member 'AHealthPackSpawner_C::BackTrackManager_Dis' has a wrong offset!");
+DUMPER7_ASSERTS_AHealthPackSpawner_C;
 
 }
 

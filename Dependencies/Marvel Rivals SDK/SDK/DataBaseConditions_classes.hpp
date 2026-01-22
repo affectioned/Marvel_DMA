@@ -26,15 +26,18 @@ class UPyDataBaseConditionObject : public UDataBaseConditionObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyDataBaseConditionObject">();
+		STATIC_CLASS_IMPL("PyDataBaseConditionObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyDataBaseConditionObject")
 	}
 	static class UPyDataBaseConditionObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyDataBaseConditionObject>();
 	}
 };
-static_assert(alignof(UPyDataBaseConditionObject) == 0x000008, "Wrong alignment on UPyDataBaseConditionObject");
-static_assert(sizeof(UPyDataBaseConditionObject) == 0x000030, "Wrong size on UPyDataBaseConditionObject");
+DUMPER7_ASSERTS_UPyDataBaseConditionObject;
 
 // PythonClass DataBaseConditions.FromSpecialProjectile
 // 0x0010 (0x0040 - 0x0030)
@@ -46,16 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FromSpecialProjectile">();
+		STATIC_CLASS_IMPL("FromSpecialProjectile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FromSpecialProjectile")
 	}
 	static class UFromSpecialProjectile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFromSpecialProjectile>();
 	}
 };
-static_assert(alignof(UFromSpecialProjectile) == 0x000008, "Wrong alignment on UFromSpecialProjectile");
-static_assert(sizeof(UFromSpecialProjectile) == 0x000040, "Wrong size on UFromSpecialProjectile");
-static_assert(offsetof(UFromSpecialProjectile, ScopeIds) == 0x000030, "Member 'UFromSpecialProjectile::ScopeIds' has a wrong offset!");
+DUMPER7_ASSERTS_UFromSpecialProjectile;
 
 // PythonClass DataBaseConditions.FromSpecialBuff
 // 0x0010 (0x0040 - 0x0030)
@@ -67,16 +72,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FromSpecialBuff">();
+		STATIC_CLASS_IMPL("FromSpecialBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FromSpecialBuff")
 	}
 	static class UFromSpecialBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFromSpecialBuff>();
 	}
 };
-static_assert(alignof(UFromSpecialBuff) == 0x000008, "Wrong alignment on UFromSpecialBuff");
-static_assert(sizeof(UFromSpecialBuff) == 0x000040, "Wrong size on UFromSpecialBuff");
-static_assert(offsetof(UFromSpecialBuff, BuffIds) == 0x000030, "Member 'UFromSpecialBuff::BuffIds' has a wrong offset!");
+DUMPER7_ASSERTS_UFromSpecialBuff;
 
 // PythonClass DataBaseConditions.AttributeCondition
 // 0x0058 (0x0088 - 0x0030)
@@ -95,22 +102,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AttributeCondition">();
+		STATIC_CLASS_IMPL("AttributeCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AttributeCondition")
 	}
 	static class UAttributeCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAttributeCondition>();
 	}
 };
-static_assert(alignof(UAttributeCondition) == 0x000008, "Wrong alignment on UAttributeCondition");
-static_assert(sizeof(UAttributeCondition) == 0x000088, "Wrong size on UAttributeCondition");
-static_assert(offsetof(UAttributeCondition, LimitTarget) == 0x000030, "Member 'UAttributeCondition::LimitTarget' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, Attribute) == 0x000038, "Member 'UAttributeCondition::Attribute' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, AttributePercent) == 0x000078, "Member 'UAttributeCondition::AttributePercent' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, AttributeValue) == 0x00007C, "Member 'UAttributeCondition::AttributeValue' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, IsGreaterThan) == 0x000080, "Member 'UAttributeCondition::IsGreaterThan' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, IsLessThan) == 0x000081, "Member 'UAttributeCondition::IsLessThan' has a wrong offset!");
-static_assert(offsetof(UAttributeCondition, IsEqual) == 0x000082, "Member 'UAttributeCondition::IsEqual' has a wrong offset!");
+DUMPER7_ASSERTS_UAttributeCondition;
 
 // PythonClass DataBaseConditions.BeAfterSpecialBuff
 // 0x0018 (0x0048 - 0x0030)
@@ -127,18 +130,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BeAfterSpecialBuff">();
+		STATIC_CLASS_IMPL("BeAfterSpecialBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BeAfterSpecialBuff")
 	}
 	static class UBeAfterSpecialBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBeAfterSpecialBuff>();
 	}
 };
-static_assert(alignof(UBeAfterSpecialBuff) == 0x000008, "Wrong alignment on UBeAfterSpecialBuff");
-static_assert(sizeof(UBeAfterSpecialBuff) == 0x000048, "Wrong size on UBeAfterSpecialBuff");
-static_assert(offsetof(UBeAfterSpecialBuff, BuffIds) == 0x000030, "Member 'UBeAfterSpecialBuff::BuffIds' has a wrong offset!");
-static_assert(offsetof(UBeAfterSpecialBuff, LimitTarget) == 0x000040, "Member 'UBeAfterSpecialBuff::LimitTarget' has a wrong offset!");
-static_assert(offsetof(UBeAfterSpecialBuff, LastTime) == 0x000044, "Member 'UBeAfterSpecialBuff::LastTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBeAfterSpecialBuff;
 
 // PythonClass DataBaseConditions.FromSpecialSkill
 // 0x0000 (0x0048 - 0x0048)
@@ -147,15 +150,18 @@ class UFromSpecialSkill final : public UFromSpecialSkillBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FromSpecialSkill">();
+		STATIC_CLASS_IMPL("FromSpecialSkill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FromSpecialSkill")
 	}
 	static class UFromSpecialSkill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFromSpecialSkill>();
 	}
 };
-static_assert(alignof(UFromSpecialSkill) == 0x000008, "Wrong alignment on UFromSpecialSkill");
-static_assert(sizeof(UFromSpecialSkill) == 0x000048, "Wrong size on UFromSpecialSkill");
+DUMPER7_ASSERTS_UFromSpecialSkill;
 
 // PythonClass DataBaseConditions.FromSpecialScope
 // 0x0010 (0x0040 - 0x0030)
@@ -167,16 +173,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FromSpecialScope">();
+		STATIC_CLASS_IMPL("FromSpecialScope")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FromSpecialScope")
 	}
 	static class UFromSpecialScope* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFromSpecialScope>();
 	}
 };
-static_assert(alignof(UFromSpecialScope) == 0x000008, "Wrong alignment on UFromSpecialScope");
-static_assert(sizeof(UFromSpecialScope) == 0x000040, "Wrong size on UFromSpecialScope");
-static_assert(offsetof(UFromSpecialScope, ScopeIds) == 0x000030, "Member 'UFromSpecialScope::ScopeIds' has a wrong offset!");
+DUMPER7_ASSERTS_UFromSpecialScope;
 
 // PythonClass DataBaseConditions.BeInSpecialBuff
 // 0x0000 (0x0038 - 0x0038)
@@ -188,15 +196,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BeInSpecialBuff">();
+		STATIC_CLASS_IMPL("BeInSpecialBuff")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BeInSpecialBuff")
 	}
 	static class UBeInSpecialBuff* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBeInSpecialBuff>();
 	}
 };
-static_assert(alignof(UBeInSpecialBuff) == 0x000008, "Wrong alignment on UBeInSpecialBuff");
-static_assert(sizeof(UBeInSpecialBuff) == 0x000038, "Wrong size on UBeInSpecialBuff");
+DUMPER7_ASSERTS_UBeInSpecialBuff;
 
 // PythonClass DataBaseConditions.CheckBeInChange
 // 0x0010 (0x0040 - 0x0030)
@@ -213,18 +224,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CheckBeInChange">();
+		STATIC_CLASS_IMPL("CheckBeInChange")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckBeInChange")
 	}
 	static class UCheckBeInChange* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCheckBeInChange>();
 	}
 };
-static_assert(alignof(UCheckBeInChange) == 0x000008, "Wrong alignment on UCheckBeInChange");
-static_assert(sizeof(UCheckBeInChange) == 0x000040, "Wrong size on UCheckBeInChange");
-static_assert(offsetof(UCheckBeInChange, HeroID) == 0x000030, "Member 'UCheckBeInChange::HeroID' has a wrong offset!");
-static_assert(offsetof(UCheckBeInChange, ToHeroID) == 0x000034, "Member 'UCheckBeInChange::ToHeroID' has a wrong offset!");
-static_assert(offsetof(UCheckBeInChange, LimitTarget) == 0x000038, "Member 'UCheckBeInChange::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UCheckBeInChange;
 
 // PythonClass DataBaseConditions.BeInSpecialTag
 // 0x0010 (0x0040 - 0x0030)
@@ -237,17 +248,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BeInSpecialTag">();
+		STATIC_CLASS_IMPL("BeInSpecialTag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BeInSpecialTag")
 	}
 	static class UBeInSpecialTag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBeInSpecialTag>();
 	}
 };
-static_assert(alignof(UBeInSpecialTag) == 0x000008, "Wrong alignment on UBeInSpecialTag");
-static_assert(sizeof(UBeInSpecialTag) == 0x000040, "Wrong size on UBeInSpecialTag");
-static_assert(offsetof(UBeInSpecialTag, Tag) == 0x000030, "Member 'UBeInSpecialTag::Tag' has a wrong offset!");
-static_assert(offsetof(UBeInSpecialTag, LimitTarget) == 0x00003C, "Member 'UBeInSpecialTag::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBeInSpecialTag;
 
 // PythonClass DataBaseConditions.BeSpecialSculpt
 // 0x0018 (0x0048 - 0x0030)
@@ -260,17 +272,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BeSpecialSculpt">();
+		STATIC_CLASS_IMPL("BeSpecialSculpt")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BeSpecialSculpt")
 	}
 	static class UBeSpecialSculpt* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBeSpecialSculpt>();
 	}
 };
-static_assert(alignof(UBeSpecialSculpt) == 0x000008, "Wrong alignment on UBeSpecialSculpt");
-static_assert(sizeof(UBeSpecialSculpt) == 0x000048, "Wrong size on UBeSpecialSculpt");
-static_assert(offsetof(UBeSpecialSculpt, SculptIds) == 0x000030, "Member 'UBeSpecialSculpt::SculptIds' has a wrong offset!");
-static_assert(offsetof(UBeSpecialSculpt, LimitTarget) == 0x000040, "Member 'UBeSpecialSculpt::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UBeSpecialSculpt;
 
 // PythonClass DataBaseConditions.InSpecialAbility
 // 0x0010 (0x0040 - 0x0030)
@@ -282,16 +295,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InSpecialAbility">();
+		STATIC_CLASS_IMPL("InSpecialAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InSpecialAbility")
 	}
 	static class UInSpecialAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInSpecialAbility>();
 	}
 };
-static_assert(alignof(UInSpecialAbility) == 0x000008, "Wrong alignment on UInSpecialAbility");
-static_assert(sizeof(UInSpecialAbility) == 0x000040, "Wrong size on UInSpecialAbility");
-static_assert(offsetof(UInSpecialAbility, AbilityIDS) == 0x000030, "Member 'UInSpecialAbility::AbilityIDS' has a wrong offset!");
+DUMPER7_ASSERTS_UInSpecialAbility;
 
 // PythonClass DataBaseConditions.AfterSpecialAbility
 // 0x0018 (0x0048 - 0x0030)
@@ -305,18 +320,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AfterSpecialAbility">();
+		STATIC_CLASS_IMPL("AfterSpecialAbility")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AfterSpecialAbility")
 	}
 	static class UAfterSpecialAbility* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAfterSpecialAbility>();
 	}
 };
-static_assert(alignof(UAfterSpecialAbility) == 0x000008, "Wrong alignment on UAfterSpecialAbility");
-static_assert(sizeof(UAfterSpecialAbility) == 0x000048, "Wrong size on UAfterSpecialAbility");
-static_assert(offsetof(UAfterSpecialAbility, AbilityIDs) == 0x000030, "Member 'UAfterSpecialAbility::AbilityIDs' has a wrong offset!");
-static_assert(offsetof(UAfterSpecialAbility, LastTime) == 0x000040, "Member 'UAfterSpecialAbility::LastTime' has a wrong offset!");
-static_assert(offsetof(UAfterSpecialAbility, IsEnd) == 0x000044, "Member 'UAfterSpecialAbility::IsEnd' has a wrong offset!");
+DUMPER7_ASSERTS_UAfterSpecialAbility;
 
 // PythonClass DataBaseConditions.BeWithOtherHero
 // 0x0008 (0x0038 - 0x0030)
@@ -333,17 +348,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BeWithOtherHero">();
+		STATIC_CLASS_IMPL("BeWithOtherHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BeWithOtherHero")
 	}
 	static class UBeWithOtherHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBeWithOtherHero>();
 	}
 };
-static_assert(alignof(UBeWithOtherHero) == 0x000008, "Wrong alignment on UBeWithOtherHero");
-static_assert(sizeof(UBeWithOtherHero) == 0x000038, "Wrong size on UBeWithOtherHero");
-static_assert(offsetof(UBeWithOtherHero, HeroID) == 0x000030, "Member 'UBeWithOtherHero::HeroID' has a wrong offset!");
-static_assert(offsetof(UBeWithOtherHero, FamilyID) == 0x000034, "Member 'UBeWithOtherHero::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_UBeWithOtherHero;
 
 // PythonClass DataBaseConditions.TargetIsHero
 // 0x0008 (0x0038 - 0x0030)
@@ -355,16 +371,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TargetIsHero">();
+		STATIC_CLASS_IMPL("TargetIsHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TargetIsHero")
 	}
 	static class UTargetIsHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargetIsHero>();
 	}
 };
-static_assert(alignof(UTargetIsHero) == 0x000008, "Wrong alignment on UTargetIsHero");
-static_assert(sizeof(UTargetIsHero) == 0x000038, "Wrong size on UTargetIsHero");
-static_assert(offsetof(UTargetIsHero, FamilyID) == 0x000030, "Member 'UTargetIsHero::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_UTargetIsHero;
+
+// PythonClass DataBaseConditions.InsideArea
+// 0x0018 (0x0048 - 0x0030)
+class UInsideArea final : public UPyDataBaseConditionObject
+{
+public:
+	TArray<class FString>                         Tags;                                              // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         LimitTarget;                                       // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InsideArea")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InsideArea")
+	}
+	static class UInsideArea* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInsideArea>();
+	}
+};
+DUMPER7_ASSERTS_UInsideArea;
 
 // PythonClass DataBaseConditions.SourceIsHero
 // 0x0008 (0x0038 - 0x0030)
@@ -376,16 +418,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceIsHero">();
+		STATIC_CLASS_IMPL("SourceIsHero")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceIsHero")
 	}
 	static class USourceIsHero* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceIsHero>();
 	}
 };
-static_assert(alignof(USourceIsHero) == 0x000008, "Wrong alignment on USourceIsHero");
-static_assert(sizeof(USourceIsHero) == 0x000038, "Wrong size on USourceIsHero");
-static_assert(offsetof(USourceIsHero, FamilyID) == 0x000030, "Member 'USourceIsHero::FamilyID' has a wrong offset!");
+DUMPER7_ASSERTS_USourceIsHero;
+
+// PythonClass DataBaseConditions.IsAITargetCondition
+// 0x0008 (0x0038 - 0x0030)
+class UIsAITargetCondition final : public UPyDataBaseConditionObject
+{
+public:
+	int32                                         LimitTarget;                                       // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("IsAITargetCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IsAITargetCondition")
+	}
+	static class UIsAITargetCondition* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UIsAITargetCondition>();
+	}
+};
+DUMPER7_ASSERTS_UIsAITargetCondition;
 
 // PythonClass DataBaseConditions.SpecialLevelCondition
 // 0x0010 (0x0040 - 0x0030)
@@ -397,16 +464,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SpecialLevelCondition">();
+		STATIC_CLASS_IMPL("SpecialLevelCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpecialLevelCondition")
 	}
 	static class USpecialLevelCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpecialLevelCondition>();
 	}
 };
-static_assert(alignof(USpecialLevelCondition) == 0x000008, "Wrong alignment on USpecialLevelCondition");
-static_assert(sizeof(USpecialLevelCondition) == 0x000040, "Wrong size on USpecialLevelCondition");
-static_assert(offsetof(USpecialLevelCondition, LevelSpecials) == 0x000030, "Member 'USpecialLevelCondition::LevelSpecials' has a wrong offset!");
+DUMPER7_ASSERTS_USpecialLevelCondition;
 
 // PythonClass DataBaseConditions.MapCondition
 // 0x0010 (0x0040 - 0x0030)
@@ -421,16 +490,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MapCondition">();
+		STATIC_CLASS_IMPL("MapCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MapCondition")
 	}
 	static class UMapCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMapCondition>();
 	}
 };
-static_assert(alignof(UMapCondition) == 0x000008, "Wrong alignment on UMapCondition");
-static_assert(sizeof(UMapCondition) == 0x000040, "Wrong size on UMapCondition");
-static_assert(offsetof(UMapCondition, MapID) == 0x000030, "Member 'UMapCondition::MapID' has a wrong offset!");
+DUMPER7_ASSERTS_UMapCondition;
 
 // PythonClass DataBaseConditions.ModeCondition
 // 0x0010 (0x0040 - 0x0030)
@@ -442,37 +513,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModeCondition">();
+		STATIC_CLASS_IMPL("ModeCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModeCondition")
 	}
 	static class UModeCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModeCondition>();
 	}
 };
-static_assert(alignof(UModeCondition) == 0x000008, "Wrong alignment on UModeCondition");
-static_assert(sizeof(UModeCondition) == 0x000040, "Wrong size on UModeCondition");
-static_assert(offsetof(UModeCondition, ModeID) == 0x000030, "Member 'UModeCondition::ModeID' has a wrong offset!");
-
-// PythonClass DataBaseConditions.IsAITargetCondition
-// 0x0008 (0x0038 - 0x0030)
-class UIsAITargetCondition final : public UPyDataBaseConditionObject
-{
-public:
-	int32                                         LimitTarget;                                       // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"IsAITargetCondition">();
-	}
-	static class UIsAITargetCondition* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UIsAITargetCondition>();
-	}
-};
-static_assert(alignof(UIsAITargetCondition) == 0x000008, "Wrong alignment on UIsAITargetCondition");
-static_assert(sizeof(UIsAITargetCondition) == 0x000038, "Wrong size on UIsAITargetCondition");
-static_assert(offsetof(UIsAITargetCondition, LimitTarget) == 0x000030, "Member 'UIsAITargetCondition::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UModeCondition;
 
 // PythonClass DataBaseConditions.SideCondition
 // 0x0018 (0x0048 - 0x0030)
@@ -485,17 +537,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SideCondition">();
+		STATIC_CLASS_IMPL("SideCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SideCondition")
 	}
 	static class USideCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USideCondition>();
 	}
 };
-static_assert(alignof(USideCondition) == 0x000008, "Wrong alignment on USideCondition");
-static_assert(sizeof(USideCondition) == 0x000048, "Wrong size on USideCondition");
-static_assert(offsetof(USideCondition, BattleSides) == 0x000030, "Member 'USideCondition::BattleSides' has a wrong offset!");
-static_assert(offsetof(USideCondition, LimitTarget) == 0x000040, "Member 'USideCondition::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_USideCondition;
 
 // PythonClass DataBaseConditions.DeathIndex
 // 0x0008 (0x0038 - 0x0030)
@@ -508,40 +561,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DeathIndex">();
+		STATIC_CLASS_IMPL("DeathIndex")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathIndex")
 	}
 	static class UDeathIndex* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeathIndex>();
 	}
 };
-static_assert(alignof(UDeathIndex) == 0x000008, "Wrong alignment on UDeathIndex");
-static_assert(sizeof(UDeathIndex) == 0x000038, "Wrong size on UDeathIndex");
-static_assert(offsetof(UDeathIndex, NumFirst) == 0x000030, "Member 'UDeathIndex::NumFirst' has a wrong offset!");
-static_assert(offsetof(UDeathIndex, LimitTarget) == 0x000034, "Member 'UDeathIndex::LimitTarget' has a wrong offset!");
-
-// PythonClass DataBaseConditions.InsideArea
-// 0x0018 (0x0048 - 0x0030)
-class UInsideArea final : public UPyDataBaseConditionObject
-{
-public:
-	TArray<class FString>                         Tags;                                              // 0x0030(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         LimitTarget;                                       // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"InsideArea">();
-	}
-	static class UInsideArea* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInsideArea>();
-	}
-};
-static_assert(alignof(UInsideArea) == 0x000008, "Wrong alignment on UInsideArea");
-static_assert(sizeof(UInsideArea) == 0x000048, "Wrong size on UInsideArea");
-static_assert(offsetof(UInsideArea, Tags) == 0x000030, "Member 'UInsideArea::Tags' has a wrong offset!");
-static_assert(offsetof(UInsideArea, LimitTarget) == 0x000040, "Member 'UInsideArea::LimitTarget' has a wrong offset!");
+DUMPER7_ASSERTS_UDeathIndex;
 
 // PythonClass DataBaseConditions.CustomCondition
 // 0x0010 (0x0040 - 0x0030)
@@ -553,16 +584,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CustomCondition">();
+		STATIC_CLASS_IMPL("CustomCondition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CustomCondition")
 	}
 	static class UCustomCondition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCustomCondition>();
 	}
 };
-static_assert(alignof(UCustomCondition) == 0x000008, "Wrong alignment on UCustomCondition");
-static_assert(sizeof(UCustomCondition) == 0x000040, "Wrong size on UCustomCondition");
-static_assert(offsetof(UCustomCondition, EvalStr) == 0x000030, "Member 'UCustomCondition::EvalStr' has a wrong offset!");
+DUMPER7_ASSERTS_UCustomCondition;
 
 }
 

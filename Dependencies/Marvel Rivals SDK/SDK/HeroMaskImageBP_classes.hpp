@@ -23,15 +23,18 @@ class UHeroMaskImageBP_C final : public UPyHeroMaskImage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroMaskImageBP_C">();
+		BP_STATIC_CLASS_IMPL("HeroMaskImageBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroMaskImageBP_C")
 	}
 	static class UHeroMaskImageBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroMaskImageBP_C>();
 	}
 };
-static_assert(alignof(UHeroMaskImageBP_C) == 0x000010, "Wrong alignment on UHeroMaskImageBP_C");
-static_assert(sizeof(UHeroMaskImageBP_C) == 0x0004B0, "Wrong size on UHeroMaskImageBP_C");
+DUMPER7_ASSERTS_UHeroMaskImageBP_C;
 
 }
 

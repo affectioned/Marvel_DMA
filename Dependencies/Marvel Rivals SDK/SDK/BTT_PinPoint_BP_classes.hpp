@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BTT_PinPoint_BP.BTT_PinPoint_BP_C
-// 0x0000 (0x1790 - 0x1790)
+// 0x0000 (0x1AE0 - 0x1AE0)
 class UBTT_PinPoint_BP_C final : public UBTT_PinPoint
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_PinPoint_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_PinPoint_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PinPoint_BP_C")
 	}
 	static class UBTT_PinPoint_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PinPoint_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_PinPoint_BP_C) == 0x000010, "Wrong alignment on UBTT_PinPoint_BP_C");
-static_assert(sizeof(UBTT_PinPoint_BP_C) == 0x001790, "Wrong size on UBTT_PinPoint_BP_C");
+DUMPER7_ASSERTS_UBTT_PinPoint_BP_C;
 
 }
 

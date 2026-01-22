@@ -18,16 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LevelComputer.LevelComputer_C
-// 0x0020 (0x08B0 - 0x0890)
+// 0x0020 (0x0900 - 0x08E0)
 #pragma pack(push, 0x1)
 class alignas(0x10) ALevelComputer_C : public APyTrainComputer
 {
 public:
-	uint8                                         Pad_884[0x4];                                      // 0x0884(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0888(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWC_TrainingComputerBP_C*               WC_TrainingComputerBP;                             // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWC_TrainingComputerBP_C*               WC_TrainingComputerBP;                             // 0x08E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ULevelScopeCheckComponentBP_C*          LevelScopeCheckComponentBP;                        // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -37,7 +36,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelComputer_C">();
+		BP_STATIC_CLASS_IMPL("LevelComputer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelComputer_C")
 	}
 	static class ALevelComputer_C* GetDefaultObj()
 	{
@@ -45,12 +48,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(ALevelComputer_C) == 0x000010, "Wrong alignment on ALevelComputer_C");
-static_assert(sizeof(ALevelComputer_C) == 0x0008B0, "Wrong size on ALevelComputer_C");
-static_assert(offsetof(ALevelComputer_C, UberGraphFrame) == 0x000888, "Member 'ALevelComputer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALevelComputer_C, WC_TrainingComputerBP) == 0x000890, "Member 'ALevelComputer_C::WC_TrainingComputerBP' has a wrong offset!");
-static_assert(offsetof(ALevelComputer_C, LevelScopeCheckComponentBP) == 0x000898, "Member 'ALevelComputer_C::LevelScopeCheckComponentBP' has a wrong offset!");
-static_assert(offsetof(ALevelComputer_C, StaticMesh) == 0x0008A0, "Member 'ALevelComputer_C::StaticMesh' has a wrong offset!");
+DUMPER7_ASSERTS_ALevelComputer_C;
 
 }
 

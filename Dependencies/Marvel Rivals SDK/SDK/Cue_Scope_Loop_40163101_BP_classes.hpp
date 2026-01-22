@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Scope_Loop_40163101_BP.Cue_Scope_Loop_40163101_BP_C
-// 0x0000 (0x29D0 - 0x29D0)
+// 0x0000 (0x2F40 - 0x2F40)
 class ACue_Scope_Loop_40163101_BP_C final : public AMarvelCueNotify_Laser
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Scope_Loop_40163101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Scope_Loop_40163101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Scope_Loop_40163101_BP_C")
 	}
 	static class ACue_Scope_Loop_40163101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACue_Scope_Loop_40163101_BP_C>();
 	}
 };
-static_assert(alignof(ACue_Scope_Loop_40163101_BP_C) == 0x000010, "Wrong alignment on ACue_Scope_Loop_40163101_BP_C");
-static_assert(sizeof(ACue_Scope_Loop_40163101_BP_C) == 0x0029D0, "Wrong size on ACue_Scope_Loop_40163101_BP_C");
+DUMPER7_ASSERTS_ACue_Scope_Loop_40163101_BP_C;
 
 }
 

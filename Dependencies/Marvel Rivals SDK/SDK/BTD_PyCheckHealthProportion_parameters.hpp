@@ -23,11 +23,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTD_PyCheckHealthProportion_PerformConditionCheckAI) == 0x000008, "Wrong alignment on BTD_PyCheckHealthProportion_PerformConditionCheckAI");
-static_assert(sizeof(BTD_PyCheckHealthProportion_PerformConditionCheckAI) == 0x000018, "Wrong size on BTD_PyCheckHealthProportion_PerformConditionCheckAI");
-static_assert(offsetof(BTD_PyCheckHealthProportion_PerformConditionCheckAI, OwnerController) == 0x000000, "Member 'BTD_PyCheckHealthProportion_PerformConditionCheckAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTD_PyCheckHealthProportion_PerformConditionCheckAI, ControlledPawn) == 0x000008, "Member 'BTD_PyCheckHealthProportion_PerformConditionCheckAI::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTD_PyCheckHealthProportion_PerformConditionCheckAI, ReturnValue) == 0x000010, "Member 'BTD_PyCheckHealthProportion_PerformConditionCheckAI::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_BTD_PyCheckHealthProportion_PerformConditionCheckAI;
 
 }
 

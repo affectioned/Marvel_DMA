@@ -23,9 +23,7 @@ struct PyBuffAbility_10130_10140008_K2_OnEndAbility final
 public:
 	bool                                          bIsCancelled;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10140008_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_10130_10140008_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_10130_10140008_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_10130_10140008_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_10130_10140008_K2_OnEndAbility, bIsCancelled) == 0x000000, "Member 'PyBuffAbility_10130_10140008_K2_OnEndAbility::bIsCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10140008_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_10130_10140008.PyBuffAbility_10130_10140008.OnCreateFireTask
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyBuffAbility_10130_10140008_OnCreateFireTask final
 public:
 	class UMarvelWeaponTask_Firing*               FireTask;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_10130_10140008_OnCreateFireTask) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10140008_OnCreateFireTask");
-static_assert(sizeof(PyBuffAbility_10130_10140008_OnCreateFireTask) == 0x000008, "Wrong size on PyBuffAbility_10130_10140008_OnCreateFireTask");
-static_assert(offsetof(PyBuffAbility_10130_10140008_OnCreateFireTask, FireTask) == 0x000000, "Member 'PyBuffAbility_10130_10140008_OnCreateFireTask::FireTask' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10140008_OnCreateFireTask;
 
 // PythonFunction PyBuffAbility_10130_10140008.PyBuffAbility_10130_10140008.K2_OnConditionSatisfied
 // 0x0010 (0x0010 - 0x0000)
@@ -45,9 +41,7 @@ struct PyBuffAbility_10130_10140008_K2_OnConditionSatisfied final
 public:
 	struct FCardEffectParameter                   Parameter;                                         // 0x0000(0x0010)(Parm)
 };
-static_assert(alignof(PyBuffAbility_10130_10140008_K2_OnConditionSatisfied) == 0x000008, "Wrong alignment on PyBuffAbility_10130_10140008_K2_OnConditionSatisfied");
-static_assert(sizeof(PyBuffAbility_10130_10140008_K2_OnConditionSatisfied) == 0x000010, "Wrong size on PyBuffAbility_10130_10140008_K2_OnConditionSatisfied");
-static_assert(offsetof(PyBuffAbility_10130_10140008_K2_OnConditionSatisfied, Parameter) == 0x000000, "Member 'PyBuffAbility_10130_10140008_K2_OnConditionSatisfied::Parameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_10130_10140008_K2_OnConditionSatisfied;
 
 }
 

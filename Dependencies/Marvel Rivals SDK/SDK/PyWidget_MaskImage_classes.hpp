@@ -18,13 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MaskImage.PyWidget_MaskImage
-// 0x0130 (0x06F0 - 0x05C0)
+// 0x0128 (0x06F0 - 0x05C8)
 class UPyWidget_MaskImage : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Texture;                                           // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C8[0x8];                                      // 0x05C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Texture;                                           // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            Mask;                                              // 0x05D0(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	float                                         Texture_Offset_X;                                  // 0x06A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Texture_Offset_Y;                                  // 0x06A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -54,34 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MaskImage">();
+		STATIC_CLASS_IMPL("PyWidget_MaskImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MaskImage")
 	}
 	static class UPyWidget_MaskImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MaskImage>();
 	}
 };
-static_assert(alignof(UPyWidget_MaskImage) == 0x000010, "Wrong alignment on UPyWidget_MaskImage");
-static_assert(sizeof(UPyWidget_MaskImage) == 0x0006F0, "Wrong size on UPyWidget_MaskImage");
-static_assert(offsetof(UPyWidget_MaskImage, Texture) == 0x0005C0, "Member 'UPyWidget_MaskImage::Texture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Mask) == 0x0005D0, "Member 'UPyWidget_MaskImage::Mask' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Texture_Offset_X) == 0x0006A0, "Member 'UPyWidget_MaskImage::Texture_Offset_X' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Texture_Offset_Y) == 0x0006A4, "Member 'UPyWidget_MaskImage::Texture_Offset_Y' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Mask_Offset_X) == 0x0006A8, "Member 'UPyWidget_MaskImage::Mask_Offset_X' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Mask_Offset_Y) == 0x0006AC, "Member 'UPyWidget_MaskImage::Mask_Offset_Y' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, ImageAngel) == 0x0006B0, "Member 'UPyWidget_MaskImage::ImageAngel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Scale_X) == 0x0006B4, "Member 'UPyWidget_MaskImage::Scale_X' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, Scale_Y) == 0x0006B8, "Member 'UPyWidget_MaskImage::Scale_Y' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, NoisePower) == 0x0006BC, "Member 'UPyWidget_MaskImage::NoisePower' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, NoiseScaleX) == 0x0006C0, "Member 'UPyWidget_MaskImage::NoiseScaleX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, NoiseScaleY) == 0x0006C4, "Member 'UPyWidget_MaskImage::NoiseScaleY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetPowerX) == 0x0006C8, "Member 'UPyWidget_MaskImage::OffsetPowerX' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetPowerY) == 0x0006CC, "Member 'UPyWidget_MaskImage::OffsetPowerY' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetRangeX_G) == 0x0006D0, "Member 'UPyWidget_MaskImage::OffsetRangeX_G' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetRangeX_R) == 0x0006D4, "Member 'UPyWidget_MaskImage::OffsetRangeX_R' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetRangeY_G) == 0x0006D8, "Member 'UPyWidget_MaskImage::OffsetRangeY_G' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OffsetRangeY_R) == 0x0006DC, "Member 'UPyWidget_MaskImage::OffsetRangeY_R' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MaskImage, OnPictureLoadCompleted) == 0x0006E0, "Member 'UPyWidget_MaskImage::OnPictureLoadCompleted' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MaskImage;
 
 }
 

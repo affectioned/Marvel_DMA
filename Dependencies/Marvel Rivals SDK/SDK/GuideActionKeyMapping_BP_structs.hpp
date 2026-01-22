@@ -21,9 +21,7 @@ struct FGuideActionKeyMapping_BP final
 public:
 	class UInputAction*                           action_3_27923CB341FF0A9980B4319F17DCFC7B;         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FGuideActionKeyMapping_BP) == 0x000008, "Wrong alignment on FGuideActionKeyMapping_BP");
-static_assert(sizeof(FGuideActionKeyMapping_BP) == 0x000008, "Wrong size on FGuideActionKeyMapping_BP");
-static_assert(offsetof(FGuideActionKeyMapping_BP, action_3_27923CB341FF0A9980B4319F17DCFC7B) == 0x000000, "Member 'FGuideActionKeyMapping_BP::action_3_27923CB341FF0A9980B4319F17DCFC7B' has a wrong offset!");
+DUMPER7_ASSERTS_FGuideActionKeyMapping_BP;
 
 }
 

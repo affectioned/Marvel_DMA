@@ -30,23 +30,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedModifier_10235301">();
+		STATIC_CLASS_IMPL("PySummonedModifier_10235301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedModifier_10235301")
 	}
 	static class UPySummonedModifier_10235301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedModifier_10235301>();
 	}
 };
-static_assert(alignof(UPySummonedModifier_10235301) == 0x000008, "Wrong alignment on UPySummonedModifier_10235301");
-static_assert(sizeof(UPySummonedModifier_10235301) == 0x000040, "Wrong size on UPySummonedModifier_10235301");
-static_assert(offsetof(UPySummonedModifier_10235301, EndScopeID) == 0x000038, "Member 'UPySummonedModifier_10235301::EndScopeID' has a wrong offset!");
+DUMPER7_ASSERTS_UPySummonedModifier_10235301;
 
 // PythonClass PyEffectAbility_120_10235301.PyEffectAbility_120_10235301
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyEffectAbility_120_10235301 final : public UMarvelEffectGameplayAbility
 {
 public:
-	class UPySummonedModifier_10235301*           ScopeModifier;                                     // 0x1370(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPySummonedModifier_10235301*           ScopeModifier;                                     // 0x1388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -55,16 +57,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectAbility_120_10235301">();
+		STATIC_CLASS_IMPL("PyEffectAbility_120_10235301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectAbility_120_10235301")
 	}
 	static class UPyEffectAbility_120_10235301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectAbility_120_10235301>();
 	}
 };
-static_assert(alignof(UPyEffectAbility_120_10235301) == 0x000008, "Wrong alignment on UPyEffectAbility_120_10235301");
-static_assert(sizeof(UPyEffectAbility_120_10235301) == 0x001378, "Wrong size on UPyEffectAbility_120_10235301");
-static_assert(offsetof(UPyEffectAbility_120_10235301, ScopeModifier) == 0x001370, "Member 'UPyEffectAbility_120_10235301::ScopeModifier' has a wrong offset!");
+DUMPER7_ASSERTS_UPyEffectAbility_120_10235301;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_102233.PyCue_Scope_HitImpact_10223301
-// 0x0000 (0x0878 - 0x0878)
+// 0x0000 (0x08B8 - 0x08B8)
 class UPyCue_Scope_HitImpact_10223301 final : public UMarvelCueNotify_MeleeHitImpact
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10223301">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10223301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10223301")
 	}
 	static class UPyCue_Scope_HitImpact_10223301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10223301>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10223301) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10223301");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10223301) == 0x000878, "Wrong size on UPyCue_Scope_HitImpact_10223301");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10223301;
 
 // PythonClass PyAbility_102233.PyConfig_102233
 // 0x0078 (0x0110 - 0x0098)
@@ -50,22 +53,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102233">();
+		STATIC_CLASS_IMPL("PyConfig_102233")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102233")
 	}
 	static class UPyConfig_102233* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102233>();
 	}
 };
-static_assert(alignof(UPyConfig_102233) == 0x000008, "Wrong alignment on UPyConfig_102233");
-static_assert(sizeof(UPyConfig_102233) == 0x000110, "Wrong size on UPyConfig_102233");
-static_assert(offsetof(UPyConfig_102233, HitCount) == 0x000098, "Member 'UPyConfig_102233::HitCount' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102233, BuffID) == 0x00009C, "Member 'UPyConfig_102233::BuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102233, IgnoreTags) == 0x0000A0, "Member 'UPyConfig_102233::IgnoreTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102233, ComboTimeout) == 0x000108, "Member 'UPyConfig_102233::ComboTimeout' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102233;
 
 // PythonClass PyAbility_102233.PyAbility_102233
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_102233 : public UMarvelGameplayAbility
 {
 public:
@@ -79,15 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102233">();
+		STATIC_CLASS_IMPL("PyAbility_102233")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102233")
 	}
 	static class UPyAbility_102233* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102233>();
 	}
 };
-static_assert(alignof(UPyAbility_102233) == 0x000008, "Wrong alignment on UPyAbility_102233");
-static_assert(sizeof(UPyAbility_102233) == 0x0029F0, "Wrong size on UPyAbility_102233");
+DUMPER7_ASSERTS_UPyAbility_102233;
 
 }
 

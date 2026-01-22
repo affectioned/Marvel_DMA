@@ -55,10 +55,7 @@ public:
 	float                                         Low;                                               // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         High;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChaosClothWeightedValue) == 0x000004, "Wrong alignment on FChaosClothWeightedValue");
-static_assert(sizeof(FChaosClothWeightedValue) == 0x000008, "Wrong size on FChaosClothWeightedValue");
-static_assert(offsetof(FChaosClothWeightedValue, Low) == 0x000000, "Member 'FChaosClothWeightedValue::Low' has a wrong offset!");
-static_assert(offsetof(FChaosClothWeightedValue, High) == 0x000004, "Member 'FChaosClothWeightedValue::High' has a wrong offset!");
+DUMPER7_ASSERTS_FChaosClothWeightedValue;
 
 }
 

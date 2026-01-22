@@ -34,17 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PC_UISettingEntryReflectionsHandlerBP_C">();
+		BP_STATIC_CLASS_IMPL("PC_UISettingEntryReflectionsHandlerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PC_UISettingEntryReflectionsHandlerBP_C")
 	}
 	static class UPC_UISettingEntryReflectionsHandlerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPC_UISettingEntryReflectionsHandlerBP_C>();
 	}
 };
-static_assert(alignof(UPC_UISettingEntryReflectionsHandlerBP_C) == 0x000008, "Wrong alignment on UPC_UISettingEntryReflectionsHandlerBP_C");
-static_assert(sizeof(UPC_UISettingEntryReflectionsHandlerBP_C) == 0x000048, "Wrong size on UPC_UISettingEntryReflectionsHandlerBP_C");
-static_assert(offsetof(UPC_UISettingEntryReflectionsHandlerBP_C, UberGraphFrame) == 0x000030, "Member 'UPC_UISettingEntryReflectionsHandlerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPC_UISettingEntryReflectionsHandlerBP_C, TagRefresh) == 0x000038, "Member 'UPC_UISettingEntryReflectionsHandlerBP_C::TagRefresh' has a wrong offset!");
+DUMPER7_ASSERTS_UPC_UISettingEntryReflectionsHandlerBP_C;
 
 }
 

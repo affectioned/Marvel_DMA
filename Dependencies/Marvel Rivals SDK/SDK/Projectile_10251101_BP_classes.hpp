@@ -18,28 +18,29 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Projectile_10251101_BP.Projectile_10251101_BP_C
-// 0x03A0 (0x42F0 - 0x3F50)
+// 0x04E0 (0x4880 - 0x43A0)
 class AProjectile_10251101_BP_C final : public APyProjectile_10251101
 {
 public:
-	ETargetActorDestroyReason                     Actor_Destroy_Reason;                              // 0x3F48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F49[0x7];                                     // 0x3F49(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x3F50(0x0398)(Edit, BlueprintVisible, DisableEditOnInstance)
+	ETargetActorDestroyReason                     Actor_Destroy_Reason;                              // 0x4398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4399[0x7];                                     // 0x4399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelTraceRule                       Trace_Rule;                                        // 0x43A0(0x04D8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Projectile_10251101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Projectile_10251101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Projectile_10251101_BP_C")
 	}
 	static class AProjectile_10251101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectile_10251101_BP_C>();
 	}
 };
-static_assert(alignof(AProjectile_10251101_BP_C) == 0x000010, "Wrong alignment on AProjectile_10251101_BP_C");
-static_assert(sizeof(AProjectile_10251101_BP_C) == 0x0042F0, "Wrong size on AProjectile_10251101_BP_C");
-static_assert(offsetof(AProjectile_10251101_BP_C, Actor_Destroy_Reason) == 0x003F48, "Member 'AProjectile_10251101_BP_C::Actor_Destroy_Reason' has a wrong offset!");
-static_assert(offsetof(AProjectile_10251101_BP_C, Trace_Rule) == 0x003F50, "Member 'AProjectile_10251101_BP_C::Trace_Rule' has a wrong offset!");
+DUMPER7_ASSERTS_AProjectile_10251101_BP_C;
 
 }
 

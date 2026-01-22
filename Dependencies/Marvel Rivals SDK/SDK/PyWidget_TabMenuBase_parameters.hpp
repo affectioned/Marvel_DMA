@@ -21,9 +21,7 @@ struct PyWidget_TabMenuBase_SetTabID final
 public:
 	int32                                         TabID_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_TabMenuBase_SetTabID) == 0x000004, "Wrong alignment on PyWidget_TabMenuBase_SetTabID");
-static_assert(sizeof(PyWidget_TabMenuBase_SetTabID) == 0x000004, "Wrong size on PyWidget_TabMenuBase_SetTabID");
-static_assert(offsetof(PyWidget_TabMenuBase_SetTabID, TabID_0) == 0x000000, "Member 'PyWidget_TabMenuBase_SetTabID::TabID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_TabMenuBase_SetTabID;
 
 // PythonFunction PyWidget_TabMenuBase.PyWidget_TabMenuBase.AddChild
 // 0x0010 (0x0010 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_TabMenuBase_AddChild final
 public:
 	TArray<class UUserWidget*>                    BtnList;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_TabMenuBase_AddChild) == 0x000008, "Wrong alignment on PyWidget_TabMenuBase_AddChild");
-static_assert(sizeof(PyWidget_TabMenuBase_AddChild) == 0x000010, "Wrong size on PyWidget_TabMenuBase_AddChild");
-static_assert(offsetof(PyWidget_TabMenuBase_AddChild, BtnList) == 0x000000, "Member 'PyWidget_TabMenuBase_AddChild::BtnList' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_TabMenuBase_AddChild;
 
 // PythonFunction PyWidget_TabMenuBase.PyWidget_TabMenuBase.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_TabMenuBase_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_TabMenuBase_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_TabMenuBase_MarvelSetVisible");
-static_assert(sizeof(PyWidget_TabMenuBase_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_TabMenuBase_MarvelSetVisible");
-static_assert(offsetof(PyWidget_TabMenuBase_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_TabMenuBase_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_TabMenuBase_MarvelSetVisible;
 
 }
 

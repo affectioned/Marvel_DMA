@@ -19,21 +19,24 @@ namespace SDK
 {
 
 // Class JarvisReplay.JarvisDemoNetConnection
-// 0x0000 (0x2540 - 0x2540)
+// 0x0000 (0x27F0 - 0x27F0)
 class UJarvisDemoNetConnection final : public UDemoNetConnection
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisDemoNetConnection">();
+		STATIC_CLASS_IMPL("JarvisDemoNetConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisDemoNetConnection")
 	}
 	static class UJarvisDemoNetConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisDemoNetConnection>();
 	}
 };
-static_assert(alignof(UJarvisDemoNetConnection) == 0x000008, "Wrong alignment on UJarvisDemoNetConnection");
-static_assert(sizeof(UJarvisDemoNetConnection) == 0x002540, "Wrong size on UJarvisDemoNetConnection");
+DUMPER7_ASSERTS_UJarvisDemoNetConnection;
 
 // Class JarvisReplay.JarvisReplayCharacter
 // 0x0010 (0x0DA0 - 0x0D90)
@@ -46,16 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayCharacter">();
+		STATIC_CLASS_IMPL("JarvisReplayCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayCharacter")
 	}
 	static class AJarvisReplayCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AJarvisReplayCharacter>();
 	}
 };
-static_assert(alignof(AJarvisReplayCharacter) == 0x000010, "Wrong alignment on AJarvisReplayCharacter");
-static_assert(sizeof(AJarvisReplayCharacter) == 0x000DA0, "Wrong size on AJarvisReplayCharacter");
-static_assert(offsetof(AJarvisReplayCharacter, DefaultMappingContext) == 0x000D90, "Member 'AJarvisReplayCharacter::DefaultMappingContext' has a wrong offset!");
+DUMPER7_ASSERTS_AJarvisReplayCharacter;
 
 // Class JarvisReplay.JarvisReplayCharacterInterface
 // 0x0000 (0x0000 - 0x0000)
@@ -64,7 +69,11 @@ class IJarvisReplayCharacterInterface final
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayCharacterInterface">();
+		STATIC_CLASS_IMPL("JarvisReplayCharacterInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayCharacterInterface")
 	}
 	static class IJarvisReplayCharacterInterface* GetDefaultObj()
 	{
@@ -80,8 +89,7 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
-static_assert(alignof(IJarvisReplayCharacterInterface) == 0x000001, "Wrong alignment on IJarvisReplayCharacterInterface");
-static_assert(sizeof(IJarvisReplayCharacterInterface) == 0x000001, "Wrong size on IJarvisReplayCharacterInterface");
+DUMPER7_ASSERTS_IJarvisReplayCharacterInterface;
 
 // Class JarvisReplay.JarvisReplayComponent
 // 0x0028 (0x0130 - 0x0108)
@@ -98,35 +106,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayComponent">();
+		STATIC_CLASS_IMPL("JarvisReplayComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayComponent")
 	}
 	static class UJarvisReplayComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayComponent>();
 	}
 };
-static_assert(alignof(UJarvisReplayComponent) == 0x000008, "Wrong alignment on UJarvisReplayComponent");
-static_assert(sizeof(UJarvisReplayComponent) == 0x000130, "Wrong size on UJarvisReplayComponent");
+DUMPER7_ASSERTS_UJarvisReplayComponent;
 
 // Class JarvisReplay.JarvisReplayConnection
-// 0x0010 (0x2610 - 0x2600)
+// 0x0010 (0x28C0 - 0x28B0)
 class UJarvisReplayConnection final : public UIpConnection
 {
 public:
-	uint8                                         Pad_2600[0x10];                                    // 0x2600(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28B0[0x10];                                    // 0x28B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayConnection">();
+		STATIC_CLASS_IMPL("JarvisReplayConnection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayConnection")
 	}
 	static class UJarvisReplayConnection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayConnection>();
 	}
 };
-static_assert(alignof(UJarvisReplayConnection) == 0x000008, "Wrong alignment on UJarvisReplayConnection");
-static_assert(sizeof(UJarvisReplayConnection) == 0x002610, "Wrong size on UJarvisReplayConnection");
+DUMPER7_ASSERTS_UJarvisReplayConnection;
 
 // Class JarvisReplay.JarvisReplayGameInstance
 // 0x0000 (0x0408 - 0x0408)
@@ -135,15 +149,18 @@ class UJarvisReplayGameInstance final : public UPlatformGameInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayGameInstance">();
+		STATIC_CLASS_IMPL("JarvisReplayGameInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayGameInstance")
 	}
 	static class UJarvisReplayGameInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayGameInstance>();
 	}
 };
-static_assert(alignof(UJarvisReplayGameInstance) == 0x000008, "Wrong alignment on UJarvisReplayGameInstance");
-static_assert(sizeof(UJarvisReplayGameInstance) == 0x000408, "Wrong size on UJarvisReplayGameInstance");
+DUMPER7_ASSERTS_UJarvisReplayGameInstance;
 
 // Class JarvisReplay.JarvisReplayLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -155,35 +172,41 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayLibrary">();
+		STATIC_CLASS_IMPL("JarvisReplayLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayLibrary")
 	}
 	static class UJarvisReplayLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayLibrary>();
 	}
 };
-static_assert(alignof(UJarvisReplayLibrary) == 0x000008, "Wrong alignment on UJarvisReplayLibrary");
-static_assert(sizeof(UJarvisReplayLibrary) == 0x000030, "Wrong size on UJarvisReplayLibrary");
+DUMPER7_ASSERTS_UJarvisReplayLibrary;
 
 // Class JarvisReplay.JarvisReplayNetDriver
-// 0x0040 (0x0E70 - 0x0E30)
+// 0x0040 (0x0EA8 - 0x0E68)
 class UJarvisReplayNetDriver final : public UIpNetDriver
 {
 public:
-	uint8                                         Pad_E30[0x40];                                     // 0x0E30(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E68[0x40];                                     // 0x0E68(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayNetDriver">();
+		STATIC_CLASS_IMPL("JarvisReplayNetDriver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayNetDriver")
 	}
 	static class UJarvisReplayNetDriver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayNetDriver>();
 	}
 };
-static_assert(alignof(UJarvisReplayNetDriver) == 0x000008, "Wrong alignment on UJarvisReplayNetDriver");
-static_assert(sizeof(UJarvisReplayNetDriver) == 0x000E70, "Wrong size on UJarvisReplayNetDriver");
+DUMPER7_ASSERTS_UJarvisReplayNetDriver;
 
 // Class JarvisReplay.JarvisReplayPlayerController
 // 0x0000 (0x0D40 - 0x0D40)
@@ -192,39 +215,42 @@ class AJarvisReplayPlayerController final : public APlayerController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayPlayerController">();
+		STATIC_CLASS_IMPL("JarvisReplayPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayPlayerController")
 	}
 	static class AJarvisReplayPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AJarvisReplayPlayerController>();
 	}
 };
-static_assert(alignof(AJarvisReplayPlayerController) == 0x000010, "Wrong alignment on AJarvisReplayPlayerController");
-static_assert(sizeof(AJarvisReplayPlayerController) == 0x000D40, "Wrong size on AJarvisReplayPlayerController");
+DUMPER7_ASSERTS_AJarvisReplayPlayerController;
 
 // Class JarvisReplay.JarvisReplayDemoNetDriver
 // 0x0040 (0x1FD0 - 0x1F90)
-#pragma pack(push, 0x1)
-class alignas(0x10) UJarvisReplayDemoNetDriver : public UDemoNetDriver
+class UJarvisReplayDemoNetDriver : public UDemoNetDriver
 {
 public:
-	uint8                                         Pad_1F90[0x30];                                    // 0x1F90(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJarvisReplaySubsystem*                 JarvisReplaySubsystem;                             // 0x1FC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1F90[0x38];                                    // 0x1F90(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	class UJarvisReplaySubsystem*                 JarvisReplaySubsystem;                             // 0x1FC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplayDemoNetDriver">();
+		STATIC_CLASS_IMPL("JarvisReplayDemoNetDriver")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplayDemoNetDriver")
 	}
 	static class UJarvisReplayDemoNetDriver* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplayDemoNetDriver>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UJarvisReplayDemoNetDriver) == 0x000010, "Wrong alignment on UJarvisReplayDemoNetDriver");
-static_assert(sizeof(UJarvisReplayDemoNetDriver) == 0x001FD0, "Wrong size on UJarvisReplayDemoNetDriver");
-static_assert(offsetof(UJarvisReplayDemoNetDriver, JarvisReplaySubsystem) == 0x001FC0, "Member 'UJarvisReplayDemoNetDriver::JarvisReplaySubsystem' has a wrong offset!");
+DUMPER7_ASSERTS_UJarvisReplayDemoNetDriver;
 
 // Class JarvisReplay.JarvisReplaySubsystem
 // 0x00D8 (0x0138 - 0x0060)
@@ -253,15 +279,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JarvisReplaySubsystem">();
+		STATIC_CLASS_IMPL("JarvisReplaySubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JarvisReplaySubsystem")
 	}
 	static class UJarvisReplaySubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJarvisReplaySubsystem>();
 	}
 };
-static_assert(alignof(UJarvisReplaySubsystem) == 0x000008, "Wrong alignment on UJarvisReplaySubsystem");
-static_assert(sizeof(UJarvisReplaySubsystem) == 0x000138, "Wrong size on UJarvisReplaySubsystem");
+DUMPER7_ASSERTS_UJarvisReplaySubsystem;
 
 }
 

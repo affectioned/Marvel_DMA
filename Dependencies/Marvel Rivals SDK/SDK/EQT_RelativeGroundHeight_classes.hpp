@@ -23,15 +23,18 @@ class UEQT_RelativeGroundHeight_C final : public UEnvQueryTest_RelativeGroundHei
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQT_RelativeGroundHeight_C">();
+		BP_STATIC_CLASS_IMPL("EQT_RelativeGroundHeight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQT_RelativeGroundHeight_C")
 	}
 	static class UEQT_RelativeGroundHeight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQT_RelativeGroundHeight_C>();
 	}
 };
-static_assert(alignof(UEQT_RelativeGroundHeight_C) == 0x000008, "Wrong alignment on UEQT_RelativeGroundHeight_C");
-static_assert(sizeof(UEQT_RelativeGroundHeight_C) == 0x0002E0, "Wrong size on UEQT_RelativeGroundHeight_C");
+DUMPER7_ASSERTS_UEQT_RelativeGroundHeight_C;
 
 }
 

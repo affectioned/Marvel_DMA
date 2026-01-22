@@ -90,9 +90,7 @@ public:
 	class FName                                   SocketName;                                        // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCueTransInfo_10333301) == 0x000008, "Wrong alignment on FCueTransInfo_10333301");
-static_assert(sizeof(FCueTransInfo_10333301) == 0x000018, "Wrong size on FCueTransInfo_10333301");
-static_assert(offsetof(FCueTransInfo_10333301, SocketName) == 0x000008, "Member 'FCueTransInfo_10333301::SocketName' has a wrong offset!");
+DUMPER7_ASSERTS_FCueTransInfo_10333301;
 
 // ScriptStruct Hero_1033.AutoSwitchSniper
 // 0x0008 (0x0008 - 0x0000)
@@ -101,9 +99,7 @@ struct FAutoSwitchSniper final
 public:
 	class UMarvelGameplayAbility*                 OwnerAbility;                                      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAutoSwitchSniper) == 0x000008, "Wrong alignment on FAutoSwitchSniper");
-static_assert(sizeof(FAutoSwitchSniper) == 0x000008, "Wrong size on FAutoSwitchSniper");
-static_assert(offsetof(FAutoSwitchSniper, OwnerAbility) == 0x000000, "Member 'FAutoSwitchSniper::OwnerAbility' has a wrong offset!");
+DUMPER7_ASSERTS_FAutoSwitchSniper;
 
 // ScriptStruct Hero_1033.BulletLoadedInfo_1033
 // 0x0010 (0x0010 - 0x0000)
@@ -115,12 +111,7 @@ public:
 	int32                                         LastUsedBullet;                                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LastUsedTime;                                      // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBulletLoadedInfo_1033) == 0x000004, "Wrong alignment on FBulletLoadedInfo_1033");
-static_assert(sizeof(FBulletLoadedInfo_1033) == 0x000010, "Wrong size on FBulletLoadedInfo_1033");
-static_assert(offsetof(FBulletLoadedInfo_1033, NewestBulletID) == 0x000000, "Member 'FBulletLoadedInfo_1033::NewestBulletID' has a wrong offset!");
-static_assert(offsetof(FBulletLoadedInfo_1033, CurLoadedBullet) == 0x000004, "Member 'FBulletLoadedInfo_1033::CurLoadedBullet' has a wrong offset!");
-static_assert(offsetof(FBulletLoadedInfo_1033, LastUsedBullet) == 0x000008, "Member 'FBulletLoadedInfo_1033::LastUsedBullet' has a wrong offset!");
-static_assert(offsetof(FBulletLoadedInfo_1033, LastUsedTime) == 0x00000C, "Member 'FBulletLoadedInfo_1033::LastUsedTime' has a wrong offset!");
+DUMPER7_ASSERTS_FBulletLoadedInfo_1033;
 
 }
 

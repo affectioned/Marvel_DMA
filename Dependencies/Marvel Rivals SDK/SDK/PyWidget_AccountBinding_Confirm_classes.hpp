@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_AccountBinding_Confirm.PyWidget_AccountBinding_Confirm
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_AccountBinding_Confirm final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_AccountBinding_Confirm">();
+		STATIC_CLASS_IMPL("PyWidget_AccountBinding_Confirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_AccountBinding_Confirm")
 	}
 	static class UPyWidget_AccountBinding_Confirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_AccountBinding_Confirm>();
 	}
 };
-static_assert(alignof(UPyWidget_AccountBinding_Confirm) == 0x000008, "Wrong alignment on UPyWidget_AccountBinding_Confirm");
-static_assert(sizeof(UPyWidget_AccountBinding_Confirm) == 0x0005C0, "Wrong size on UPyWidget_AccountBinding_Confirm");
+DUMPER7_ASSERTS_UPyWidget_AccountBinding_Confirm;
 
 }
 

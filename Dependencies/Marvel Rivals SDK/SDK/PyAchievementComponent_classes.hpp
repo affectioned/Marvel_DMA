@@ -23,15 +23,18 @@ class UPyAchievementComponent final : public UAchievementComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAchievementComponent">();
+		STATIC_CLASS_IMPL("PyAchievementComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAchievementComponent")
 	}
 	static class UPyAchievementComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAchievementComponent>();
 	}
 };
-static_assert(alignof(UPyAchievementComponent) == 0x000008, "Wrong alignment on UPyAchievementComponent");
-static_assert(sizeof(UPyAchievementComponent) == 0x000108, "Wrong size on UPyAchievementComponent");
+DUMPER7_ASSERTS_UPyAchievementComponent;
 
 }
 

@@ -21,9 +21,7 @@ struct PyWidget_Common_NavigationBar_Button_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_NavigationBar_Button_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Common_NavigationBar_Button_PreConstruct");
-static_assert(sizeof(PyWidget_Common_NavigationBar_Button_PreConstruct) == 0x000001, "Wrong size on PyWidget_Common_NavigationBar_Button_PreConstruct");
-static_assert(offsetof(PyWidget_Common_NavigationBar_Button_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Common_NavigationBar_Button_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_NavigationBar_Button_PreConstruct;
 
 // PythonFunction PyWidget_Common_NavigationBar_Button.PyWidget_Common_NavigationBar_Button.SetIsHover
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Common_NavigationBar_Button_SetIsHover final
 public:
 	bool                                          IsHover_0;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_NavigationBar_Button_SetIsHover) == 0x000001, "Wrong alignment on PyWidget_Common_NavigationBar_Button_SetIsHover");
-static_assert(sizeof(PyWidget_Common_NavigationBar_Button_SetIsHover) == 0x000001, "Wrong size on PyWidget_Common_NavigationBar_Button_SetIsHover");
-static_assert(offsetof(PyWidget_Common_NavigationBar_Button_SetIsHover, IsHover_0) == 0x000000, "Member 'PyWidget_Common_NavigationBar_Button_SetIsHover::IsHover_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_NavigationBar_Button_SetIsHover;
 
 }
 

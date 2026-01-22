@@ -17,12 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ShowItemPanel.PyWidget_ShowItemPanel
-// 0x0020 (0x07D0 - 0x07B0)
+// 0x0030 (0x07F0 - 0x07C0)
 class UPyWidget_ShowItemPanel : public UPyWidget_ShowItemPanelBase
 {
 public:
-	TMulticastInlineDelegate<void(bool IsAppreciate)> OnIsAppreciateChange;                          // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSkipHoverToggleStand;                            // 0x07C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsAppreciate)> OnIsAppreciateChange;                          // 0x07C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x07D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSkipHoverToggleStand;                            // 0x07E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void MarvelSetVisible(bool Visible);
@@ -30,17 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ShowItemPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ShowItemPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ShowItemPanel")
 	}
 	static class UPyWidget_ShowItemPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ShowItemPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ShowItemPanel) == 0x000008, "Wrong alignment on UPyWidget_ShowItemPanel");
-static_assert(sizeof(UPyWidget_ShowItemPanel) == 0x0007D0, "Wrong size on UPyWidget_ShowItemPanel");
-static_assert(offsetof(UPyWidget_ShowItemPanel, OnIsAppreciateChange) == 0x0007B0, "Member 'UPyWidget_ShowItemPanel::OnIsAppreciateChange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ShowItemPanel, OnSkipHoverToggleStand) == 0x0007C0, "Member 'UPyWidget_ShowItemPanel::OnSkipHoverToggleStand' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ShowItemPanel;
 
 }
 

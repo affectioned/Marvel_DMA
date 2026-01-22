@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_TabUnit.WBP_SelectHero_TabUnit_C
-// 0x0018 (0x07B0 - 0x0798)
+// 0x0018 (0x0808 - 0x07F0)
 class UWBP_SelectHero_TabUnit_C final : public UPyWidget_SelectHero_TabBtn
 {
 public:
-	class UMarvelImage*                           Img_Icon;                                          // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Select;                                        // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScaleBox*                              ScaleBox_Icon;                                     // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Select;                                        // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox_Icon;                                     // 0x0800(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_TabUnit_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_TabUnit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_TabUnit_C")
 	}
 	static class UWBP_SelectHero_TabUnit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_TabUnit_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_TabUnit_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_TabUnit_C");
-static_assert(sizeof(UWBP_SelectHero_TabUnit_C) == 0x0007B0, "Wrong size on UWBP_SelectHero_TabUnit_C");
-static_assert(offsetof(UWBP_SelectHero_TabUnit_C, Img_Icon) == 0x000798, "Member 'UWBP_SelectHero_TabUnit_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_TabUnit_C, Img_Select) == 0x0007A0, "Member 'UWBP_SelectHero_TabUnit_C::Img_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_TabUnit_C, ScaleBox_Icon) == 0x0007A8, "Member 'UWBP_SelectHero_TabUnit_C::ScaleBox_Icon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_TabUnit_C;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_RoomSimpleWidgetV3.PyWidget_SearchGameListTitleV3
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_SearchGameListTitleV3 final : public UPyMarvelUserWidget
 {
 public:
@@ -27,25 +27,28 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SearchGameListTitleV3">();
+		STATIC_CLASS_IMPL("PyWidget_SearchGameListTitleV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SearchGameListTitleV3")
 	}
 	static class UPyWidget_SearchGameListTitleV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SearchGameListTitleV3>();
 	}
 };
-static_assert(alignof(UPyWidget_SearchGameListTitleV3) == 0x000008, "Wrong alignment on UPyWidget_SearchGameListTitleV3");
-static_assert(sizeof(UPyWidget_SearchGameListTitleV3) == 0x0005C0, "Wrong size on UPyWidget_SearchGameListTitleV3");
+DUMPER7_ASSERTS_UPyWidget_SearchGameListTitleV3;
 
 // PythonClass PyWidget_RoomSimpleWidgetV3.PyWidget_InviteTips
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_InviteTips final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          AkEvent_OnShow;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEvent_OnRejectOrCancel;                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCancelExchange;                                  // 0x05D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          AkEvent_OnShow;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_OnRejectOrCancel;                          // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCancelExchange;                                  // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -53,21 +56,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_InviteTips">();
+		STATIC_CLASS_IMPL("PyWidget_InviteTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_InviteTips")
 	}
 	static class UPyWidget_InviteTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_InviteTips>();
 	}
 };
-static_assert(alignof(UPyWidget_InviteTips) == 0x000008, "Wrong alignment on UPyWidget_InviteTips");
-static_assert(sizeof(UPyWidget_InviteTips) == 0x0005E0, "Wrong size on UPyWidget_InviteTips");
-static_assert(offsetof(UPyWidget_InviteTips, AkEvent_OnShow) == 0x0005C0, "Member 'UPyWidget_InviteTips::AkEvent_OnShow' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InviteTips, AKEvent_OnRejectOrCancel) == 0x0005C8, "Member 'UPyWidget_InviteTips::AKEvent_OnRejectOrCancel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_InviteTips, OnCancelExchange) == 0x0005D0, "Member 'UPyWidget_InviteTips::OnCancelExchange' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_InviteTips;
 
 // PythonClass PyWidget_RoomSimpleWidgetV3.PyWidgetNavigationBarRoomID
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidgetNavigationBarRoomID : public UPyMarvelUserWidget
 {
 public:
@@ -77,26 +80,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetNavigationBarRoomID">();
+		STATIC_CLASS_IMPL("PyWidgetNavigationBarRoomID")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetNavigationBarRoomID")
 	}
 	static class UPyWidgetNavigationBarRoomID* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetNavigationBarRoomID>();
 	}
 };
-static_assert(alignof(UPyWidgetNavigationBarRoomID) == 0x000008, "Wrong alignment on UPyWidgetNavigationBarRoomID");
-static_assert(sizeof(UPyWidgetNavigationBarRoomID) == 0x0005C0, "Wrong size on UPyWidgetNavigationBarRoomID");
+DUMPER7_ASSERTS_UPyWidgetNavigationBarRoomID;
 
 // PythonClass PyWidget_RoomSimpleWidgetV3.PyWidgetListTitleBtn
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidgetListTitleBtn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   BtnTitleText;                                      // 0x05C0(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FVector2D                              SpacerLeftSize;                                    // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              SpacerRightSize;                                   // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsAscend, bool IsDefault)> OnClickedSort;                     // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   BtnTitleText;                                      // 0x05C8(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FVector2D                              SpacerLeftSize;                                    // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              SpacerRightSize;                                   // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsAscend, bool IsDefault)> OnClickedSort;                     // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -106,41 +112,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetListTitleBtn">();
+		STATIC_CLASS_IMPL("PyWidgetListTitleBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetListTitleBtn")
 	}
 	static class UPyWidgetListTitleBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetListTitleBtn>();
 	}
 };
-static_assert(alignof(UPyWidgetListTitleBtn) == 0x000008, "Wrong alignment on UPyWidgetListTitleBtn");
-static_assert(sizeof(UPyWidgetListTitleBtn) == 0x000608, "Wrong size on UPyWidgetListTitleBtn");
-static_assert(offsetof(UPyWidgetListTitleBtn, BtnTitleText) == 0x0005C0, "Member 'UPyWidgetListTitleBtn::BtnTitleText' has a wrong offset!");
-static_assert(offsetof(UPyWidgetListTitleBtn, SpacerLeftSize) == 0x0005D8, "Member 'UPyWidgetListTitleBtn::SpacerLeftSize' has a wrong offset!");
-static_assert(offsetof(UPyWidgetListTitleBtn, SpacerRightSize) == 0x0005E8, "Member 'UPyWidgetListTitleBtn::SpacerRightSize' has a wrong offset!");
-static_assert(offsetof(UPyWidgetListTitleBtn, OnClickedSort) == 0x0005F8, "Member 'UPyWidgetListTitleBtn::OnClickedSort' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetListTitleBtn;
 
 // PythonClass PyWidget_RoomSimpleWidgetV3.PyWidgetRoomInfoMapName
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidgetRoomInfoMapName final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LengthLimit;                                       // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LengthLimit;                                       // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidgetRoomInfoMapName">();
+		STATIC_CLASS_IMPL("PyWidgetRoomInfoMapName")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidgetRoomInfoMapName")
 	}
 	static class UPyWidgetRoomInfoMapName* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidgetRoomInfoMapName>();
 	}
 };
-static_assert(alignof(UPyWidgetRoomInfoMapName) == 0x000008, "Wrong alignment on UPyWidgetRoomInfoMapName");
-static_assert(sizeof(UPyWidgetRoomInfoMapName) == 0x0005C0, "Wrong size on UPyWidgetRoomInfoMapName");
-static_assert(offsetof(UPyWidgetRoomInfoMapName, LengthLimit) == 0x0005BC, "Member 'UPyWidgetRoomInfoMapName::LengthLimit' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidgetRoomInfoMapName;
 
 }
 

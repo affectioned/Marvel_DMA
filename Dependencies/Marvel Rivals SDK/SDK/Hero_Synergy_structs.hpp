@@ -39,14 +39,6 @@ enum class ESynergyWavingState : uint8
 	ESynergyWavingState_MAX                  = 5,
 };
 
-// ScriptStruct Hero_Synergy.GameplayCue_NormalTransformInfo_ZAxis
-// 0x0000 (0x0058 - 0x0058)
-struct FGameplayCue_NormalTransformInfo_ZAxis final : public FCueTransformInfo_TargetSpace
-{
-};
-static_assert(alignof(FGameplayCue_NormalTransformInfo_ZAxis) == 0x000008, "Wrong alignment on FGameplayCue_NormalTransformInfo_ZAxis");
-static_assert(sizeof(FGameplayCue_NormalTransformInfo_ZAxis) == 0x000058, "Wrong size on FGameplayCue_NormalTransformInfo_ZAxis");
-
 // ScriptStruct Hero_Synergy.SpitOutArgs
 // 0x0020 (0x0020 - 0x0000)
 struct FSpitOutArgs final
@@ -61,14 +53,21 @@ public:
 	int32                                         WaveSpitOutLimit;                                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSpitOutArgs) == 0x000008, "Wrong alignment on FSpitOutArgs");
-static_assert(sizeof(FSpitOutArgs) == 0x000020, "Wrong size on FSpitOutArgs");
-static_assert(offsetof(FSpitOutArgs, Ability) == 0x000000, "Member 'FSpitOutArgs::Ability' has a wrong offset!");
-static_assert(offsetof(FSpitOutArgs, bSpitOutAll) == 0x000008, "Member 'FSpitOutArgs::bSpitOutAll' has a wrong offset!");
-static_assert(offsetof(FSpitOutArgs, bSpitOutEnemy) == 0x000009, "Member 'FSpitOutArgs::bSpitOutEnemy' has a wrong offset!");
-static_assert(offsetof(FSpitOutArgs, bKnockUp) == 0x00000A, "Member 'FSpitOutArgs::bKnockUp' has a wrong offset!");
-static_assert(offsetof(FSpitOutArgs, Causer) == 0x000010, "Member 'FSpitOutArgs::Causer' has a wrong offset!");
-static_assert(offsetof(FSpitOutArgs, WaveSpitOutLimit) == 0x000018, "Member 'FSpitOutArgs::WaveSpitOutLimit' has a wrong offset!");
+DUMPER7_ASSERTS_FSpitOutArgs;
+
+// ScriptStruct Hero_Synergy.SynergyWavingData
+// 0x0430 (0x0430 - 0x0000)
+struct FSynergyWavingData final
+{
+public:
+	struct FHitResult                             WavingResult_01;                                   // 0x0000(0x0208)(ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FHitResult                             WavingResult_02;                                   // 0x0208(0x0208)(ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bWavingConfirmed_01;                               // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bWavingConfirmed_02;                               // 0x0411(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_412[0x6];                                      // 0x0412(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ConfirmedOriginLocation;                           // 0x0418(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSynergyWavingData;
 
 // ScriptStruct Hero_Synergy.DevouredCharactersData_Base
 // 0x0060 (0x0060 - 0x0000)
@@ -83,13 +82,7 @@ public:
 	uint8                                         NotifyCounter;                                     // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_22[0x3E];                                      // 0x0022(0x003E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDevouredCharactersData_Base) == 0x000008, "Wrong alignment on FDevouredCharactersData_Base");
-static_assert(sizeof(FDevouredCharactersData_Base) == 0x000060, "Wrong size on FDevouredCharactersData_Base");
-static_assert(offsetof(FDevouredCharactersData_Base, DevourCharacters) == 0x000008, "Member 'FDevouredCharactersData_Base::DevourCharacters' has a wrong offset!");
-static_assert(offsetof(FDevouredCharactersData_Base, PredictionSerial) == 0x000018, "Member 'FDevouredCharactersData_Base::PredictionSerial' has a wrong offset!");
-static_assert(offsetof(FDevouredCharactersData_Base, WaveSpitOutLimit) == 0x00001C, "Member 'FDevouredCharactersData_Base::WaveSpitOutLimit' has a wrong offset!");
-static_assert(offsetof(FDevouredCharactersData_Base, DeathCounter) == 0x000020, "Member 'FDevouredCharactersData_Base::DeathCounter' has a wrong offset!");
-static_assert(offsetof(FDevouredCharactersData_Base, NotifyCounter) == 0x000021, "Member 'FDevouredCharactersData_Base::NotifyCounter' has a wrong offset!");
+DUMPER7_ASSERTS_FDevouredCharactersData_Base;
 
 // ScriptStruct Hero_Synergy.BackTrackContext
 // 0x0020 (0x0020 - 0x0000)
@@ -101,39 +94,21 @@ public:
 	bool                                          bKeyPoint;                                         // 0x001C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBackTrackContext) == 0x000008, "Wrong alignment on FBackTrackContext");
-static_assert(sizeof(FBackTrackContext) == 0x000020, "Wrong size on FBackTrackContext");
-static_assert(offsetof(FBackTrackContext, TargetLocation) == 0x000000, "Member 'FBackTrackContext::TargetLocation' has a wrong offset!");
-static_assert(offsetof(FBackTrackContext, RecordTime) == 0x000018, "Member 'FBackTrackContext::RecordTime' has a wrong offset!");
-static_assert(offsetof(FBackTrackContext, bKeyPoint) == 0x00001C, "Member 'FBackTrackContext::bKeyPoint' has a wrong offset!");
-
-// ScriptStruct Hero_Synergy.SynergyWavingData
-// 0x0400 (0x0400 - 0x0000)
-struct FSynergyWavingData final
-{
-public:
-	struct FHitResult                             WavingResult_01;                                   // 0x0000(0x01F0)(ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FHitResult                             WavingResult_02;                                   // 0x01F0(0x01F0)(ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bWavingConfirmed_01;                               // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bWavingConfirmed_02;                               // 0x03E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3E2[0x6];                                      // 0x03E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ConfirmedOriginLocation;                           // 0x03E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSynergyWavingData) == 0x000008, "Wrong alignment on FSynergyWavingData");
-static_assert(sizeof(FSynergyWavingData) == 0x000400, "Wrong size on FSynergyWavingData");
-static_assert(offsetof(FSynergyWavingData, WavingResult_01) == 0x000000, "Member 'FSynergyWavingData::WavingResult_01' has a wrong offset!");
-static_assert(offsetof(FSynergyWavingData, WavingResult_02) == 0x0001F0, "Member 'FSynergyWavingData::WavingResult_02' has a wrong offset!");
-static_assert(offsetof(FSynergyWavingData, bWavingConfirmed_01) == 0x0003E0, "Member 'FSynergyWavingData::bWavingConfirmed_01' has a wrong offset!");
-static_assert(offsetof(FSynergyWavingData, bWavingConfirmed_02) == 0x0003E1, "Member 'FSynergyWavingData::bWavingConfirmed_02' has a wrong offset!");
-static_assert(offsetof(FSynergyWavingData, ConfirmedOriginLocation) == 0x0003E8, "Member 'FSynergyWavingData::ConfirmedOriginLocation' has a wrong offset!");
+DUMPER7_ASSERTS_FBackTrackContext;
 
 // ScriptStruct Hero_Synergy.CueTransformInfo_104182
 // 0x0000 (0x0008 - 0x0008)
 struct FCueTransformInfo_104182 final : public FGameplayCue_TransformInfo_Base
 {
 };
-static_assert(alignof(FCueTransformInfo_104182) == 0x000008, "Wrong alignment on FCueTransformInfo_104182");
-static_assert(sizeof(FCueTransformInfo_104182) == 0x000008, "Wrong size on FCueTransformInfo_104182");
+DUMPER7_ASSERTS_FCueTransformInfo_104182;
+
+// ScriptStruct Hero_Synergy.GameplayCue_NormalTransformInfo_ZAxis
+// 0x0000 (0x0058 - 0x0058)
+struct FGameplayCue_NormalTransformInfo_ZAxis final : public FCueTransformInfo_TargetSpace
+{
+};
+DUMPER7_ASSERTS_FGameplayCue_NormalTransformInfo_ZAxis;
 
 }
 

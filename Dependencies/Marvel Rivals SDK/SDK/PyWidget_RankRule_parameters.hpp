@@ -21,9 +21,7 @@ struct PyWidget_Rank_SeasonMapPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Rank_SeasonMapPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Rank_SeasonMapPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Rank_SeasonMapPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Rank_SeasonMapPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Rank_SeasonMapPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Rank_SeasonMapPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Rank_SeasonMapPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_RankRule.PyWidget_RankRule_DisplayRank.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_RankRule_DisplayRank_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RankRule_DisplayRank_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_RankRule_DisplayRank_PreConstruct");
-static_assert(sizeof(PyWidget_RankRule_DisplayRank_PreConstruct) == 0x000001, "Wrong size on PyWidget_RankRule_DisplayRank_PreConstruct");
-static_assert(offsetof(PyWidget_RankRule_DisplayRank_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_RankRule_DisplayRank_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RankRule_DisplayRank_PreConstruct;
 
 // PythonFunction PyWidget_RankRule.PyWidget_RankRule_RuleInfo.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_RankRule_RuleInfo_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RankRule_RuleInfo_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_RankRule_RuleInfo_PreConstruct");
-static_assert(sizeof(PyWidget_RankRule_RuleInfo_PreConstruct) == 0x000001, "Wrong size on PyWidget_RankRule_RuleInfo_PreConstruct");
-static_assert(offsetof(PyWidget_RankRule_RuleInfo_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_RankRule_RuleInfo_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RankRule_RuleInfo_PreConstruct;
 
 // PythonFunction PyWidget_RankRule.PyWidget_RankRulePanel.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_RankRulePanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_RankRulePanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_RankRulePanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_RankRulePanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_RankRulePanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_RankRulePanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_RankRulePanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_RankRulePanel_MarvelSetVisible;
 
 }
 

@@ -18,44 +18,44 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Nameplate.PyWidget_Nameplate
-// 0x0090 (0x0950 - 0x08C0)
+// 0x0090 (0x09B0 - 0x0920)
 #pragma pack(push, 0x1)
 class alignas(0x10) UPyWidget_Nameplate : public UPyWidget_BaseCommonButton
 {
 public:
-	bool                                          ShowTrainingTips;                                  // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowLoadingPercentage;                             // 0x08B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowCaptainIcon;                                   // 0x08BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowVoiceIcon;                                     // 0x08BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowSignalIcon;                                    // 0x08BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowRankIcon;                                      // 0x08BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowPlatformIcon;                                  // 0x08BE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableSelectState;                                 // 0x08BF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCommonNameplate;                                 // 0x08C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsSelfColor;                                       // 0x08C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowLeagueEmblem;                                  // 0x08C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowHeroTitle;                                     // 0x08C3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowHonorBadge;                                    // 0x08C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowNameplateFrame;                                // 0x08C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ShowMoodExpression;                                // 0x08C6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedDeclareMood;                                   // 0x08C7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          NeedMoodAnimation;                                 // 0x08C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAlwaysShowPlatform;                               // 0x08C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8CA[0x6];                                      // 0x08CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                CreditVXSource;                                    // 0x08D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                DynamicCardVxSource;                               // 0x08D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ThreeDCardVxSourceNormal;                          // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                ThreeDCardVxSourceBroken;                          // 0x08E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClanMiniNameColor_Formal;                          // 0x08F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ClanMiniNameColor_Temporary;                       // 0x0904(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_NameInfo_Bg;                                   // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ClanMiniNameVisibility;                            // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_924[0x4];                                      // 0x0924(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                WBP_Voice_NamePlateIcon;                           // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WomanAnimTimer;                                    // 0x0930(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ValentinesAnimTimer;                               // 0x0934(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Valentines_L;                              // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Valentines_R;                              // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowTrainingTips;                                  // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowLoadingPercentage;                             // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowCaptainIcon;                                   // 0x091A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowVoiceIcon;                                     // 0x091B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowSignalIcon;                                    // 0x091C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowRankIcon;                                      // 0x091D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowPlatformIcon;                                  // 0x091E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableSelectState;                                 // 0x091F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCommonNameplate;                                 // 0x0920(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSelfColor;                                       // 0x0921(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowLeagueEmblem;                                  // 0x0922(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowHeroTitle;                                     // 0x0923(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowHonorBadge;                                    // 0x0924(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowNameplateFrame;                                // 0x0925(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ShowMoodExpression;                                // 0x0926(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedDeclareMood;                                   // 0x0927(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          NeedMoodAnimation;                                 // 0x0928(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAlwaysShowPlatform;                               // 0x0929(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_92A[0x6];                                      // 0x092A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                CreditVXSource;                                    // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                DynamicCardVxSource;                               // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ThreeDCardVxSourceNormal;                          // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                ThreeDCardVxSourceBroken;                          // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClanMiniNameColor_Formal;                          // 0x0950(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ClanMiniNameColor_Temporary;                       // 0x0964(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_NameInfo_Bg;                                   // 0x0978(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ClanMiniNameVisibility;                            // 0x0980(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_984[0x4];                                      // 0x0984(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                WBP_Voice_NamePlateIcon;                           // 0x0988(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WomanAnimTimer;                                    // 0x0990(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ValentinesAnimTimer;                               // 0x0994(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Valentines_L;                              // 0x0998(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Valentines_R;                              // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -68,7 +68,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Nameplate">();
+		STATIC_CLASS_IMPL("PyWidget_Nameplate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Nameplate")
 	}
 	static class UPyWidget_Nameplate* GetDefaultObj()
 	{
@@ -76,39 +80,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Nameplate) == 0x000010, "Wrong alignment on UPyWidget_Nameplate");
-static_assert(sizeof(UPyWidget_Nameplate) == 0x000950, "Wrong size on UPyWidget_Nameplate");
-static_assert(offsetof(UPyWidget_Nameplate, ShowTrainingTips) == 0x0008B8, "Member 'UPyWidget_Nameplate::ShowTrainingTips' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowLoadingPercentage) == 0x0008B9, "Member 'UPyWidget_Nameplate::ShowLoadingPercentage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowCaptainIcon) == 0x0008BA, "Member 'UPyWidget_Nameplate::ShowCaptainIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowVoiceIcon) == 0x0008BB, "Member 'UPyWidget_Nameplate::ShowVoiceIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowSignalIcon) == 0x0008BC, "Member 'UPyWidget_Nameplate::ShowSignalIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowRankIcon) == 0x0008BD, "Member 'UPyWidget_Nameplate::ShowRankIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowPlatformIcon) == 0x0008BE, "Member 'UPyWidget_Nameplate::ShowPlatformIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, EnableSelectState) == 0x0008BF, "Member 'UPyWidget_Nameplate::EnableSelectState' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, IsCommonNameplate) == 0x0008C0, "Member 'UPyWidget_Nameplate::IsCommonNameplate' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, IsSelfColor) == 0x0008C1, "Member 'UPyWidget_Nameplate::IsSelfColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowLeagueEmblem) == 0x0008C2, "Member 'UPyWidget_Nameplate::ShowLeagueEmblem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowHeroTitle) == 0x0008C3, "Member 'UPyWidget_Nameplate::ShowHeroTitle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowHonorBadge) == 0x0008C4, "Member 'UPyWidget_Nameplate::ShowHonorBadge' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowNameplateFrame) == 0x0008C5, "Member 'UPyWidget_Nameplate::ShowNameplateFrame' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ShowMoodExpression) == 0x0008C6, "Member 'UPyWidget_Nameplate::ShowMoodExpression' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, NeedDeclareMood) == 0x0008C7, "Member 'UPyWidget_Nameplate::NeedDeclareMood' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, NeedMoodAnimation) == 0x0008C8, "Member 'UPyWidget_Nameplate::NeedMoodAnimation' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, bAlwaysShowPlatform) == 0x0008C9, "Member 'UPyWidget_Nameplate::bAlwaysShowPlatform' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, CreditVXSource) == 0x0008D0, "Member 'UPyWidget_Nameplate::CreditVXSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, DynamicCardVxSource) == 0x0008D8, "Member 'UPyWidget_Nameplate::DynamicCardVxSource' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ThreeDCardVxSourceNormal) == 0x0008E0, "Member 'UPyWidget_Nameplate::ThreeDCardVxSourceNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ThreeDCardVxSourceBroken) == 0x0008E8, "Member 'UPyWidget_Nameplate::ThreeDCardVxSourceBroken' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ClanMiniNameColor_Formal) == 0x0008F0, "Member 'UPyWidget_Nameplate::ClanMiniNameColor_Formal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ClanMiniNameColor_Temporary) == 0x000904, "Member 'UPyWidget_Nameplate::ClanMiniNameColor_Temporary' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, Img_NameInfo_Bg) == 0x000918, "Member 'UPyWidget_Nameplate::Img_NameInfo_Bg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ClanMiniNameVisibility) == 0x000920, "Member 'UPyWidget_Nameplate::ClanMiniNameVisibility' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, WBP_Voice_NamePlateIcon) == 0x000928, "Member 'UPyWidget_Nameplate::WBP_Voice_NamePlateIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, WomanAnimTimer) == 0x000930, "Member 'UPyWidget_Nameplate::WomanAnimTimer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, ValentinesAnimTimer) == 0x000934, "Member 'UPyWidget_Nameplate::ValentinesAnimTimer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, AkEvent_Valentines_L) == 0x000938, "Member 'UPyWidget_Nameplate::AkEvent_Valentines_L' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Nameplate, AkEvent_Valentines_R) == 0x000940, "Member 'UPyWidget_Nameplate::AkEvent_Valentines_R' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Nameplate;
 
 }
 

@@ -49,30 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAsgardC03Painting">();
+		STATIC_CLASS_IMPL("PyAsgardC03Painting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAsgardC03Painting")
 	}
 	static class APyAsgardC03Painting* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAsgardC03Painting>();
 	}
 };
-static_assert(alignof(APyAsgardC03Painting) == 0x000010, "Wrong alignment on APyAsgardC03Painting");
-static_assert(sizeof(APyAsgardC03Painting) == 0x000770, "Wrong size on APyAsgardC03Painting");
-static_assert(offsetof(APyAsgardC03Painting, PaintingTime) == 0x0006E0, "Member 'APyAsgardC03Painting::PaintingTime' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, ControlOwner) == 0x0006E4, "Member 'APyAsgardC03Painting::ControlOwner' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, PaintingTag) == 0x0006E8, "Member 'APyAsgardC03Painting::PaintingTag' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialFalsePainting) == 0x0006F8, "Member 'APyAsgardC03Painting::MaterialFalsePainting' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialTruePainting) == 0x000700, "Member 'APyAsgardC03Painting::MaterialTruePainting' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, DynamicMaterialFalsePainting) == 0x000708, "Member 'APyAsgardC03Painting::DynamicMaterialFalsePainting' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, DynamicMaterialTruePainting) == 0x000710, "Member 'APyAsgardC03Painting::DynamicMaterialTruePainting' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, AkEvent) == 0x000718, "Member 'APyAsgardC03Painting::AkEvent' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialCurveA) == 0x000720, "Member 'APyAsgardC03Painting::MaterialCurveA' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialCurveB) == 0x000728, "Member 'APyAsgardC03Painting::MaterialCurveB' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialCurveC) == 0x000730, "Member 'APyAsgardC03Painting::MaterialCurveC' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialParameterNameA) == 0x000738, "Member 'APyAsgardC03Painting::MaterialParameterNameA' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialParameterNameB) == 0x000748, "Member 'APyAsgardC03Painting::MaterialParameterNameB' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, MaterialParameterNameC) == 0x000758, "Member 'APyAsgardC03Painting::MaterialParameterNameC' has a wrong offset!");
-static_assert(offsetof(APyAsgardC03Painting, PaintingUpdateInterval) == 0x000768, "Member 'APyAsgardC03Painting::PaintingUpdateInterval' has a wrong offset!");
+DUMPER7_ASSERTS_APyAsgardC03Painting;
 
 }
 

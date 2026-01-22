@@ -25,10 +25,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToPropensity;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToDutyDamage
 // 0x0010 (0x0010 - 0x0000)
@@ -39,10 +36,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToDutyDamage;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToDutySupport
 // 0x0010 (0x0010 - 0x0000)
@@ -53,10 +47,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToDutySupport;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToDutyTank
 // 0x0010 (0x0010 - 0x0000)
@@ -67,10 +58,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToDutyTank;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToDataCenter
 // 0x0010 (0x0010 - 0x0000)
@@ -81,10 +69,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToDataCenter;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToHero1
 // 0x0010 (0x0010 - 0x0000)
@@ -95,10 +80,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero1) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToHero1");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero1) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToHero1");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero1, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero1::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero1, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero1::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToHero1;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToHero2
 // 0x0010 (0x0010 - 0x0000)
@@ -109,10 +91,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero2) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToHero2");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero2) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToHero2");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero2, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero2::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero2, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero2::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToHero2;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToHero3
 // 0x0010 (0x0010 - 0x0000)
@@ -123,10 +102,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero3) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToHero3");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero3) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToHero3");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero3, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero3::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToHero3, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToHero3::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToHero3;
 
 // PythonFunction PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release.NavToMutiInput
 // 0x0010 (0x0010 - 0x0000)
@@ -137,10 +113,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput) == 0x000008, "Wrong alignment on PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput");
-static_assert(sizeof(PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput) == 0x000010, "Wrong size on PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput, Navigation_0) == 0x000000, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput, ReturnValue) == 0x000008, "Member 'PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Secondary_Team_Recommendation_Release_NavToMutiInput;
 
 }
 

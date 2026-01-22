@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SM_CommonBush004A.SM_CommonBush004A_C
-// 0x0000 (0x06F0 - 0x06F0)
+// 0x0000 (0x0700 - 0x0700)
 class ASM_CommonBush004A_C final : public AEnvironmentStaticActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SM_CommonBush004A_C">();
+		BP_STATIC_CLASS_IMPL("SM_CommonBush004A_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SM_CommonBush004A_C")
 	}
 	static class ASM_CommonBush004A_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASM_CommonBush004A_C>();
 	}
 };
-static_assert(alignof(ASM_CommonBush004A_C) == 0x000010, "Wrong alignment on ASM_CommonBush004A_C");
-static_assert(sizeof(ASM_CommonBush004A_C) == 0x0006F0, "Wrong size on ASM_CommonBush004A_C");
+DUMPER7_ASSERTS_ASM_CommonBush004A_C;
 
 }
 

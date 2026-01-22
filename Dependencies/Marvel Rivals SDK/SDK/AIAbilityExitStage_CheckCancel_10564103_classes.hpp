@@ -23,15 +23,18 @@ class UAIAbilityExitStage_CheckCancel_10564103_C final : public UAIAbilityExitSt
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityExitStage_CheckCancel_10564103_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityExitStage_CheckCancel_10564103_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityExitStage_CheckCancel_10564103_C")
 	}
 	static class UAIAbilityExitStage_CheckCancel_10564103_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityExitStage_CheckCancel_10564103_C>();
 	}
 };
-static_assert(alignof(UAIAbilityExitStage_CheckCancel_10564103_C) == 0x000008, "Wrong alignment on UAIAbilityExitStage_CheckCancel_10564103_C");
-static_assert(sizeof(UAIAbilityExitStage_CheckCancel_10564103_C) == 0x000050, "Wrong size on UAIAbilityExitStage_CheckCancel_10564103_C");
+DUMPER7_ASSERTS_UAIAbilityExitStage_CheckCancel_10564103_C;
 
 }
 

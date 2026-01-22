@@ -32,7 +32,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCharacterOverlayManager">();
+		STATIC_CLASS_IMPL("PyCharacterOverlayManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCharacterOverlayManager")
 	}
 	static class APyCharacterOverlayManager* GetDefaultObj()
 	{
@@ -40,10 +44,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyCharacterOverlayManager) == 0x000010, "Wrong alignment on APyCharacterOverlayManager");
-static_assert(sizeof(APyCharacterOverlayManager) == 0x0006F0, "Wrong size on APyCharacterOverlayManager");
-static_assert(offsetof(APyCharacterOverlayManager, OverlayChangeTime) == 0x0006E0, "Member 'APyCharacterOverlayManager::OverlayChangeTime' has a wrong offset!");
-static_assert(offsetof(APyCharacterOverlayManager, IsContainerRespawn) == 0x0006E4, "Member 'APyCharacterOverlayManager::IsContainerRespawn' has a wrong offset!");
+DUMPER7_ASSERTS_APyCharacterOverlayManager;
 
 }
 

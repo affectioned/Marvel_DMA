@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Hero_1018_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Hero_1018_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_101819.PyCue_Ability_Loop_10181901
-// 0x0040 (0x12A0 - 0x1260)
+// 0x0040 (0x12B0 - 0x1270)
 class APyCue_Ability_Loop_10181901 final : public ACue_Ability_Loop_10181901
 {
 public:
-	class USkeletalMesh*                          HandShadowMesh;                                    // 0x1260(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimMontage*                           HandShadowMontage;                                 // 0x1268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HandShadowNum;                                     // 0x1270(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HandShadowTimeInterval;                            // 0x1274(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                HandShadowMeshOffset;                              // 0x1278(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   AttachSocketName;                                  // 0x1290(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkeletalMesh*                          HandShadowMesh;                                    // 0x1270(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           HandShadowMontage;                                 // 0x1278(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HandShadowNum;                                     // 0x1280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HandShadowTimeInterval;                            // 0x1284(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                HandShadowMeshOffset;                              // 0x1288(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   AttachSocketName;                                  // 0x12A0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -37,21 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10181901">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10181901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10181901")
 	}
 	static class APyCue_Ability_Loop_10181901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10181901>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10181901) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10181901");
-static_assert(sizeof(APyCue_Ability_Loop_10181901) == 0x0012A0, "Wrong size on APyCue_Ability_Loop_10181901");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, HandShadowMesh) == 0x001260, "Member 'APyCue_Ability_Loop_10181901::HandShadowMesh' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, HandShadowMontage) == 0x001268, "Member 'APyCue_Ability_Loop_10181901::HandShadowMontage' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, HandShadowNum) == 0x001270, "Member 'APyCue_Ability_Loop_10181901::HandShadowNum' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, HandShadowTimeInterval) == 0x001274, "Member 'APyCue_Ability_Loop_10181901::HandShadowTimeInterval' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, HandShadowMeshOffset) == 0x001278, "Member 'APyCue_Ability_Loop_10181901::HandShadowMeshOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10181901, AttachSocketName) == 0x001290, "Member 'APyCue_Ability_Loop_10181901::AttachSocketName' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10181901;
 
 }
 

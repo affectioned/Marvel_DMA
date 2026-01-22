@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Cue_Instant_HitImpact_10313101_BP.Cue_Instant_HitImpact_10313101_BP_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0628 - 0x0628)
 class UCue_Instant_HitImpact_10313101_BP_C final : public UCue_Instant_HitImpact_10313101
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cue_Instant_HitImpact_10313101_BP_C">();
+		BP_STATIC_CLASS_IMPL("Cue_Instant_HitImpact_10313101_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cue_Instant_HitImpact_10313101_BP_C")
 	}
 	static class UCue_Instant_HitImpact_10313101_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCue_Instant_HitImpact_10313101_BP_C>();
 	}
 };
-static_assert(alignof(UCue_Instant_HitImpact_10313101_BP_C) == 0x000008, "Wrong alignment on UCue_Instant_HitImpact_10313101_BP_C");
-static_assert(sizeof(UCue_Instant_HitImpact_10313101_BP_C) == 0x000608, "Wrong size on UCue_Instant_HitImpact_10313101_BP_C");
+DUMPER7_ASSERTS_UCue_Instant_HitImpact_10313101_BP_C;
 
 }
 

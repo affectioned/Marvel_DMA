@@ -10,60 +10,54 @@
 
 #include "Basic.hpp"
 
+#include "GameplayTags_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_102993.PyConfig_102993
-// 0x2E48 (0x2EE0 - 0x0098)
+// 0x34E8 (0x3580 - 0x0098)
 class UPyConfig_102993 final : public UMarvelAbilityConfig
 {
 public:
 	int32                                         TPEnterSummonedID;                                 // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarvelAbilitySocketInfo               TPEnterSummonedSocketInfo;                         // 0x00A0(0x00A0)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             TPEnterSummonedTraceContext;                       // 0x0140(0x1660)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         TPExitSummonedID;                                  // 0x17A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           PickCueTag;                                        // 0x17A4(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFindGroundParam                       PickGroundParam;                                   // 0x17B0(0x16B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ConfirmCancelBlockTags;                            // 0x2E60(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         TPAbilityID;                                       // 0x2EC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2ECC[0x4];                                     // 0x2ECC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 TPAfterPlaceKey;                                   // 0x2ED0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             TPEnterSummonedTraceContext;                       // 0x0140(0x19B0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         TPExitSummonedID;                                  // 0x1AF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           PickCueTag;                                        // 0x1AF4(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFindGroundParam                       PickGroundParam;                                   // 0x1B00(0x1A00)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ConfirmCancelBlockTags;                            // 0x3500(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         TPAbilityID;                                       // 0x3568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_356C[0x4];                                     // 0x356C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 TPAfterPlaceKey;                                   // 0x3570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102993">();
+		STATIC_CLASS_IMPL("PyConfig_102993")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102993")
 	}
 	static class UPyConfig_102993* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102993>();
 	}
 };
-static_assert(alignof(UPyConfig_102993) == 0x000010, "Wrong alignment on UPyConfig_102993");
-static_assert(sizeof(UPyConfig_102993) == 0x002EE0, "Wrong size on UPyConfig_102993");
-static_assert(offsetof(UPyConfig_102993, TPEnterSummonedID) == 0x000098, "Member 'UPyConfig_102993::TPEnterSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, TPEnterSummonedSocketInfo) == 0x0000A0, "Member 'UPyConfig_102993::TPEnterSummonedSocketInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, TPEnterSummonedTraceContext) == 0x000140, "Member 'UPyConfig_102993::TPEnterSummonedTraceContext' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, TPExitSummonedID) == 0x0017A0, "Member 'UPyConfig_102993::TPExitSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, PickCueTag) == 0x0017A4, "Member 'UPyConfig_102993::PickCueTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, PickGroundParam) == 0x0017B0, "Member 'UPyConfig_102993::PickGroundParam' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, ConfirmCancelBlockTags) == 0x002E60, "Member 'UPyConfig_102993::ConfirmCancelBlockTags' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, TPAbilityID) == 0x002EC8, "Member 'UPyConfig_102993::TPAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_102993, TPAfterPlaceKey) == 0x002ED0, "Member 'UPyConfig_102993::TPAfterPlaceKey' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102993;
 
 // PythonClass PyAbility_102993.PyAbility_102993
-// 0x0020 (0x2A18 - 0x29F8)
+// 0x0020 (0x2A68 - 0x2A48)
 class UPyAbility_102993 final : public UAbility_108
 {
 public:
-	TMulticastInlineDelegate<void()>              OnTPEnterSpawned;                                  // 0x29F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTPEnterDestroy;                                  // 0x2A08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTPEnterSpawned;                                  // 0x2A48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTPEnterDestroy;                                  // 0x2A58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -76,28 +70,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102993">();
+		STATIC_CLASS_IMPL("PyAbility_102993")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102993")
 	}
 	static class UPyAbility_102993* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102993>();
 	}
 };
-static_assert(alignof(UPyAbility_102993) == 0x000008, "Wrong alignment on UPyAbility_102993");
-static_assert(sizeof(UPyAbility_102993) == 0x002A18, "Wrong size on UPyAbility_102993");
-static_assert(offsetof(UPyAbility_102993, OnTPEnterSpawned) == 0x0029F8, "Member 'UPyAbility_102993::OnTPEnterSpawned' has a wrong offset!");
-static_assert(offsetof(UPyAbility_102993, OnTPEnterDestroy) == 0x002A08, "Member 'UPyAbility_102993::OnTPEnterDestroy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_102993;
 
 // PythonClass PyAbility_102993.PySummoned_10299301
-// 0x0030 (0x0B70 - 0x0B40)
+// 0x0030 (0x0B90 - 0x0B60)
 class APySummoned_10299301 : public AMarvelSummonerBase
 {
 public:
-	class AMarvelSummonerBase*                    TargetTP;                                          // 0x0B40(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TPCountAsEntry;                                    // 0x0B48(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TPCountAsExit;                                     // 0x0B4C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool is_connected)> OnTPConnected;                                 // 0x0B50(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool AsEntry)>  OnTPCountChanged;                                  // 0x0B60(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class AMarvelSummonerBase*                    TargetTP;                                          // 0x0B60(0x0008)(BlueprintVisible, Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TPCountAsEntry;                                    // 0x0B68(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TPCountAsExit;                                     // 0x0B6C(0x0004)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool is_connected)> OnTPConnected;                                 // 0x0B70(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool AsEntry)>  OnTPCountChanged;                                  // 0x0B80(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnRep_TargetTP();
@@ -108,23 +103,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10299301">();
+		STATIC_CLASS_IMPL("PySummoned_10299301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10299301")
 	}
 	static class APySummoned_10299301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10299301>();
 	}
 };
-static_assert(alignof(APySummoned_10299301) == 0x000010, "Wrong alignment on APySummoned_10299301");
-static_assert(sizeof(APySummoned_10299301) == 0x000B70, "Wrong size on APySummoned_10299301");
-static_assert(offsetof(APySummoned_10299301, TargetTP) == 0x000B40, "Member 'APySummoned_10299301::TargetTP' has a wrong offset!");
-static_assert(offsetof(APySummoned_10299301, TPCountAsEntry) == 0x000B48, "Member 'APySummoned_10299301::TPCountAsEntry' has a wrong offset!");
-static_assert(offsetof(APySummoned_10299301, TPCountAsExit) == 0x000B4C, "Member 'APySummoned_10299301::TPCountAsExit' has a wrong offset!");
-static_assert(offsetof(APySummoned_10299301, OnTPConnected) == 0x000B50, "Member 'APySummoned_10299301::OnTPConnected' has a wrong offset!");
-static_assert(offsetof(APySummoned_10299301, OnTPCountChanged) == 0x000B60, "Member 'APySummoned_10299301::OnTPCountChanged' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10299301;
 
 // PythonClass PyAbility_102993.PySummonedComp_10299301
-// 0x0000 (0x0DB0 - 0x0DB0)
+// 0x0000 (0x0E08 - 0x0E08)
 class UPySummonedComp_10299301 final : public UMarvelSummonedComponent
 {
 public:
@@ -134,27 +127,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummonedComp_10299301">();
+		STATIC_CLASS_IMPL("PySummonedComp_10299301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummonedComp_10299301")
 	}
 	static class UPySummonedComp_10299301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPySummonedComp_10299301>();
 	}
 };
-static_assert(alignof(UPySummonedComp_10299301) == 0x000008, "Wrong alignment on UPySummonedComp_10299301");
-static_assert(sizeof(UPySummonedComp_10299301) == 0x000DB0, "Wrong size on UPySummonedComp_10299301");
+DUMPER7_ASSERTS_UPySummonedComp_10299301;
 
 // PythonClass PyAbility_102993.PyCue_Summoned_Loop_10299301
-// 0x0030 (0x1230 - 0x1200)
+// 0x0030 (0x1290 - 0x1260)
 class APyCue_Summoned_Loop_10299301 final : public AMarvelCueNotify_Summoned
 {
 public:
-	uint8                                         Pad_11F8[0x8];                                     // 0x11F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         TPEnterAudioID;                                    // 0x1200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TPExitAudioID;                                     // 0x1204(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Self;                                      // 0x1208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Ally;                                      // 0x1210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnTPReady;                                         // 0x1218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1258[0x8];                                     // 0x1258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         TPEnterAudioID;                                    // 0x1260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TPExitAudioID;                                     // 0x1264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Self;                                      // 0x1268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Ally;                                      // 0x1270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnTPReady;                                         // 0x1278(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -167,20 +163,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoned_Loop_10299301">();
+		STATIC_CLASS_IMPL("PyCue_Summoned_Loop_10299301")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoned_Loop_10299301")
 	}
 	static class APyCue_Summoned_Loop_10299301* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoned_Loop_10299301>();
 	}
 };
-static_assert(alignof(APyCue_Summoned_Loop_10299301) == 0x000010, "Wrong alignment on APyCue_Summoned_Loop_10299301");
-static_assert(sizeof(APyCue_Summoned_Loop_10299301) == 0x001230, "Wrong size on APyCue_Summoned_Loop_10299301");
-static_assert(offsetof(APyCue_Summoned_Loop_10299301, TPEnterAudioID) == 0x001200, "Member 'APyCue_Summoned_Loop_10299301::TPEnterAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10299301, TPExitAudioID) == 0x001204, "Member 'APyCue_Summoned_Loop_10299301::TPExitAudioID' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10299301, Texture_Self) == 0x001208, "Member 'APyCue_Summoned_Loop_10299301::Texture_Self' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10299301, Texture_Ally) == 0x001210, "Member 'APyCue_Summoned_Loop_10299301::Texture_Ally' has a wrong offset!");
-static_assert(offsetof(APyCue_Summoned_Loop_10299301, OnTPReady) == 0x001218, "Member 'APyCue_Summoned_Loop_10299301::OnTPReady' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoned_Loop_10299301;
 
 }
 

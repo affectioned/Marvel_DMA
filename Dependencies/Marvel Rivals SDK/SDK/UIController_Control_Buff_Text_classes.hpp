@@ -23,15 +23,18 @@ class UUIController_Control_Buff_Text_C final : public UPyUIController_ControlBu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIController_Control_Buff_Text_C">();
+		BP_STATIC_CLASS_IMPL("UIController_Control_Buff_Text_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_Control_Buff_Text_C")
 	}
 	static class UUIController_Control_Buff_Text_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_Control_Buff_Text_C>();
 	}
 };
-static_assert(alignof(UUIController_Control_Buff_Text_C) == 0x000008, "Wrong alignment on UUIController_Control_Buff_Text_C");
-static_assert(sizeof(UUIController_Control_Buff_Text_C) == 0x000130, "Wrong size on UUIController_Control_Buff_Text_C");
+DUMPER7_ASSERTS_UUIController_Control_Buff_Text_C;
 
 }
 

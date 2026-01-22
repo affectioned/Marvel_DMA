@@ -25,21 +25,16 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_10412101_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_10412101_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_10412101_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_10412101_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_10412101_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_10412101_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_10412101_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_10412101_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_10412101_K2_OnPreApplyContainer;
 
 // PythonFunction PyAbility_104121.PyProjectile_10412101.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10412101_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10412101_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_10412101_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_10412101_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_10412101_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_10412101_K2_OnProcessHit, ImpactResult) == 0x000000, "Member 'PyProjectile_10412101_K2_OnProcessHit::ImpactResult' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10412101_K2_OnProcessHit;
 
 // PythonFunction PyAbility_104121.PyCue_Projectile_HitImpact_10412101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -49,10 +44,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Projectile_HitImpact_10412101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Projectile_HitImpact_10412101_OnExecuteFX");
-static_assert(sizeof(PyCue_Projectile_HitImpact_10412101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Projectile_HitImpact_10412101_OnExecuteFX");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10412101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Projectile_HitImpact_10412101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_HitImpact_10412101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Projectile_HitImpact_10412101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_HitImpact_10412101_OnExecuteFX;
 
 // PythonFunction PyAbility_104121.PyCue_ScopeStart_104121.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -62,10 +54,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_ScopeStart_104121_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_ScopeStart_104121_OnExecuteFX");
-static_assert(sizeof(PyCue_ScopeStart_104121_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_ScopeStart_104121_OnExecuteFX");
-static_assert(offsetof(PyCue_ScopeStart_104121_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_ScopeStart_104121_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_ScopeStart_104121_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_ScopeStart_104121_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_ScopeStart_104121_OnExecuteFX;
 
 // PythonFunction PyAbility_104121.PyCue_Weapon_Loop_104121.OnActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -76,11 +65,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Weapon_Loop_104121_OnActive) == 0x000008, "Wrong alignment on PyCue_Weapon_Loop_104121_OnActive");
-static_assert(sizeof(PyCue_Weapon_Loop_104121_OnActive) == 0x0001E0, "Wrong size on PyCue_Weapon_Loop_104121_OnActive");
-static_assert(offsetof(PyCue_Weapon_Loop_104121_OnActive, MyTarget) == 0x000000, "Member 'PyCue_Weapon_Loop_104121_OnActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104121_OnActive, Parameters) == 0x000008, "Member 'PyCue_Weapon_Loop_104121_OnActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Weapon_Loop_104121_OnActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Weapon_Loop_104121_OnActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Weapon_Loop_104121_OnActive;
 
 // PythonFunction PyAbility_104121.PyCue_ProjectileLoop_104121.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -90,10 +75,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_ProjectileLoop_104121_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_ProjectileLoop_104121_OnExecuteFX");
-static_assert(sizeof(PyCue_ProjectileLoop_104121_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_ProjectileLoop_104121_OnExecuteFX");
-static_assert(offsetof(PyCue_ProjectileLoop_104121_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_ProjectileLoop_104121_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_ProjectileLoop_104121_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_ProjectileLoop_104121_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_ProjectileLoop_104121_OnExecuteFX;
 
 }
 

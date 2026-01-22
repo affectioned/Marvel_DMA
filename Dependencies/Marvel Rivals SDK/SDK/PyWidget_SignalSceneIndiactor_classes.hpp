@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
@@ -20,9 +20,8 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SignalSceneIndiactor.PyWdiget_SignalSceneIndicator
-// 0x0270 (0x0AF0 - 0x0880)
-#pragma pack(push, 0x1)
-class alignas(0x10) UPyWdiget_SignalSceneIndicator : public UWidget_SignalIndicator
+// 0x0280 (0x0B00 - 0x0880)
+class UPyWdiget_SignalSceneIndicator : public UWidget_SignalIndicator
 {
 public:
 	TMap<struct FGameplayTag, struct FSlateBrush> TabPlayerState;                                    // 0x0880(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -31,6 +30,8 @@ public:
 	struct FGameplayTagContainer                  SignalTags_Black;                                  // 0x0A08(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  SignalTags_Blue;                                   // 0x0A70(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<class FString>                         CommonSceneSuffixs;                                // 0x0AD8(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<TSoftObjectPtr<class UTexture2D>>      RoleIcons;                                         // 0x0AE8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           RoleIconImg;                                       // 0x0AF8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -47,22 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWdiget_SignalSceneIndicator">();
+		STATIC_CLASS_IMPL("PyWdiget_SignalSceneIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWdiget_SignalSceneIndicator")
 	}
 	static class UPyWdiget_SignalSceneIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWdiget_SignalSceneIndicator>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UPyWdiget_SignalSceneIndicator) == 0x000010, "Wrong alignment on UPyWdiget_SignalSceneIndicator");
-static_assert(sizeof(UPyWdiget_SignalSceneIndicator) == 0x000AF0, "Wrong size on UPyWdiget_SignalSceneIndicator");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, TabPlayerState) == 0x000880, "Member 'UPyWdiget_SignalSceneIndicator::TabPlayerState' has a wrong offset!");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, TabPlayerDyingState) == 0x0008D0, "Member 'UPyWdiget_SignalSceneIndicator::TabPlayerDyingState' has a wrong offset!");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, SignalTags_Red) == 0x0009A0, "Member 'UPyWdiget_SignalSceneIndicator::SignalTags_Red' has a wrong offset!");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, SignalTags_Black) == 0x000A08, "Member 'UPyWdiget_SignalSceneIndicator::SignalTags_Black' has a wrong offset!");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, SignalTags_Blue) == 0x000A70, "Member 'UPyWdiget_SignalSceneIndicator::SignalTags_Blue' has a wrong offset!");
-static_assert(offsetof(UPyWdiget_SignalSceneIndicator, CommonSceneSuffixs) == 0x000AD8, "Member 'UPyWdiget_SignalSceneIndicator::CommonSceneSuffixs' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWdiget_SignalSceneIndicator;
 
 }
 

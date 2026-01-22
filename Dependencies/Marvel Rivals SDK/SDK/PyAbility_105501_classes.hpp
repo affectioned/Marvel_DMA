@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "Hero_1055_classes.hpp"
 
 
@@ -18,46 +17,49 @@ namespace SDK
 {
 
 // PythonClass PyAbility_105501.PyConfig_105501
-// 0x0010 (0x00A8 - 0x0098)
-class UPyConfig_105501 final : public UMarvelAbilityConfig
+// 0x0010 (0x3530 - 0x3520)
+class UPyConfig_105501 final : public UConfig_105501
 {
 public:
-	int32                                         BlindBuffID;                                       // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ScopeID;                                           // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScopeTraceIntervals;                               // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BlindBuffID;                                       // 0x3520(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x3524(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScopeTraceIntervals;                               // 0x3528(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105501">();
+		STATIC_CLASS_IMPL("PyConfig_105501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105501")
 	}
 	static class UPyConfig_105501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105501>();
 	}
 };
-static_assert(alignof(UPyConfig_105501) == 0x000008, "Wrong alignment on UPyConfig_105501");
-static_assert(sizeof(UPyConfig_105501) == 0x0000A8, "Wrong size on UPyConfig_105501");
-static_assert(offsetof(UPyConfig_105501, BlindBuffID) == 0x000098, "Member 'UPyConfig_105501::BlindBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105501, ScopeID) == 0x00009C, "Member 'UPyConfig_105501::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105501, ScopeTraceIntervals) == 0x0000A0, "Member 'UPyConfig_105501::ScopeTraceIntervals' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105501;
 
 // PythonClass PyAbility_105501.PyCue_Buff_10550102
-// 0x0000 (0x2EC0 - 0x2EC0)
+// 0x0000 (0x32D0 - 0x32D0)
 class APyCue_Buff_10550102 final : public ACueBuff_10550102_Base
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10550102">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10550102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10550102")
 	}
 	static class APyCue_Buff_10550102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10550102>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10550102) == 0x000010, "Wrong alignment on APyCue_Buff_10550102");
-static_assert(sizeof(APyCue_Buff_10550102) == 0x002EC0, "Wrong size on APyCue_Buff_10550102");
+DUMPER7_ASSERTS_APyCue_Buff_10550102;
 
 // PythonClass PyAbility_105501.PyAbilityCue_105501
 // 0x0020 (0x1280 - 0x1260)
@@ -79,26 +81,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbilityCue_105501">();
+		STATIC_CLASS_IMPL("PyAbilityCue_105501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbilityCue_105501")
 	}
 	static class APyAbilityCue_105501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAbilityCue_105501>();
 	}
 };
-static_assert(alignof(APyAbilityCue_105501) == 0x000010, "Wrong alignment on APyAbilityCue_105501");
-static_assert(sizeof(APyAbilityCue_105501) == 0x001280, "Wrong size on APyAbilityCue_105501");
-static_assert(offsetof(APyAbilityCue_105501, ScopeTraceIntervals) == 0x001260, "Member 'APyAbilityCue_105501::ScopeTraceIntervals' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_105501, DetectionFX) == 0x001268, "Member 'APyAbilityCue_105501::DetectionFX' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_105501, DetectionAudioID) == 0x001270, "Member 'APyAbilityCue_105501::DetectionAudioID' has a wrong offset!");
-static_assert(offsetof(APyAbilityCue_105501, AttachName) == 0x001274, "Member 'APyAbilityCue_105501::AttachName' has a wrong offset!");
+DUMPER7_ASSERTS_APyAbilityCue_105501;
 
 // PythonClass PyAbility_105501.PyAbility_105501
-// 0x0010 (0x2A20 - 0x2A10)
+// 0x0010 (0x2A50 - 0x2A40)
 class UPyAbility_105501 : public UAbility_105501
 {
 public:
-	TMulticastInlineDelegate<void()>              OnDetectScopeTraceEvent;                           // 0x2A10(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDetectScopeTraceEvent;                           // 0x2A40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -110,16 +111,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105501">();
+		STATIC_CLASS_IMPL("PyAbility_105501")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105501")
 	}
 	static class UPyAbility_105501* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105501>();
 	}
 };
-static_assert(alignof(UPyAbility_105501) == 0x000008, "Wrong alignment on UPyAbility_105501");
-static_assert(sizeof(UPyAbility_105501) == 0x002A20, "Wrong size on UPyAbility_105501");
-static_assert(offsetof(UPyAbility_105501, OnDetectScopeTraceEvent) == 0x002A10, "Member 'UPyAbility_105501::OnDetectScopeTraceEvent' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_105501;
 
 }
 

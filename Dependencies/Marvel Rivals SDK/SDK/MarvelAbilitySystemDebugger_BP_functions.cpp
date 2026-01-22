@@ -283,7 +283,7 @@ void AMarvelAbilitySystemDebugger_BP_C::OnAbilityActorAdded(class AActor* Gamepl
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UGameplayAbility*                 InAbility                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void AMarvelAbilitySystemDebugger_BP_C::OnAbilityHit(class UGameplayAbility* InAbility, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)

@@ -23,15 +23,18 @@ class UWC_CharacterArrowBP_C final : public UMarvelWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_CharacterArrowBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_CharacterArrowBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_CharacterArrowBP_C")
 	}
 	static class UWC_CharacterArrowBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_CharacterArrowBP_C>();
 	}
 };
-static_assert(alignof(UWC_CharacterArrowBP_C) == 0x000010, "Wrong alignment on UWC_CharacterArrowBP_C");
-static_assert(sizeof(UWC_CharacterArrowBP_C) == 0x000AE0, "Wrong size on UWC_CharacterArrowBP_C");
+DUMPER7_ASSERTS_UWC_CharacterArrowBP_C;
 
 }
 

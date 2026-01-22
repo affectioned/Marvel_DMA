@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_VisibleControl">();
+		STATIC_CLASS_IMPL("PyExtension_VisibleControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_VisibleControl")
 	}
 	static class UPyExtension_VisibleControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_VisibleControl>();
 	}
 };
-static_assert(alignof(UPyExtension_VisibleControl) == 0x000008, "Wrong alignment on UPyExtension_VisibleControl");
-static_assert(sizeof(UPyExtension_VisibleControl) == 0x000030, "Wrong size on UPyExtension_VisibleControl");
+DUMPER7_ASSERTS_UPyExtension_VisibleControl;
 
 }
 

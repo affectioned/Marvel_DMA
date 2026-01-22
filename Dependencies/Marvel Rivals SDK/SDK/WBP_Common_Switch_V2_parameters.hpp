@@ -21,9 +21,7 @@ struct WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2) == 0x000004, "Wrong alignment on WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2");
-static_assert(sizeof(WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2) == 0x000004, "Wrong size on WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2");
-static_assert(offsetof(WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2, EntryPoint) == 0x000000, "Member 'WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2::EntryPoint' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_Common_Switch_V2_C_ExecuteUbergraph_WBP_Common_Switch_V2;
 
 }
 

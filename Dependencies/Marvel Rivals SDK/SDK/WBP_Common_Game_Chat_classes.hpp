@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Common_Game_Chat.WBP_Common_Game_Chat_C
-// 0x0010 (0x05F0 - 0x05E0)
+// 0x0010 (0x05F8 - 0x05E8)
 class UWBP_Common_Game_Chat_C final : public UPyWidget_CommonGameChat
 {
 public:
-	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             ChatPanelSlot;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ChatPanelSlot;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Game_Chat_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Game_Chat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Game_Chat_C")
 	}
 	static class UWBP_Common_Game_Chat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Game_Chat_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Game_Chat_C) == 0x000008, "Wrong alignment on UWBP_Common_Game_Chat_C");
-static_assert(sizeof(UWBP_Common_Game_Chat_C) == 0x0005F0, "Wrong size on UWBP_Common_Game_Chat_C");
-static_assert(offsetof(UWBP_Common_Game_Chat_C, CanvasPanel_0) == 0x0005E0, "Member 'UWBP_Common_Game_Chat_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Game_Chat_C, ChatPanelSlot) == 0x0005E8, "Member 'UWBP_Common_Game_Chat_C::ChatPanelSlot' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Game_Chat_C;
 
 }
 

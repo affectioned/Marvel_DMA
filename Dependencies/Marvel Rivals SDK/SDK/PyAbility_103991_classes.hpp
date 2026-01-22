@@ -29,20 +29,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_103991">();
+		STATIC_CLASS_IMPL("PyConfig_103991")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_103991")
 	}
 	static class UPyConfig_103991* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_103991>();
 	}
 };
-static_assert(alignof(UPyConfig_103991) == 0x000008, "Wrong alignment on UPyConfig_103991");
-static_assert(sizeof(UPyConfig_103991) == 0x0000A0, "Wrong size on UPyConfig_103991");
-static_assert(offsetof(UPyConfig_103991, AddEnergyPerHit) == 0x000098, "Member 'UPyConfig_103991::AddEnergyPerHit' has a wrong offset!");
-static_assert(offsetof(UPyConfig_103991, RecoverEnergyType) == 0x00009C, "Member 'UPyConfig_103991::RecoverEnergyType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_103991;
 
 // PythonClass PyAbility_103991.PyAbility_103991
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103991 : public USynergyAbility_10002603
 {
 public:
@@ -58,18 +59,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103991">();
+		STATIC_CLASS_IMPL("PyAbility_103991")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103991")
 	}
 	static class UPyAbility_103991* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103991>();
 	}
 };
-static_assert(alignof(UPyAbility_103991) == 0x000008, "Wrong alignment on UPyAbility_103991");
-static_assert(sizeof(UPyAbility_103991) == 0x0029F8, "Wrong size on UPyAbility_103991");
+DUMPER7_ASSERTS_UPyAbility_103991;
 
 // PythonClass PyAbility_103991.PyEffectiveComponent_10399101
-// 0x0000 (0x1C70 - 0x1C70)
+// 0x0000 (0x2040 - 0x2040)
 class UPyEffectiveComponent_10399101 final : public UMarvelAgentEffectiveComponent
 {
 public:
@@ -78,15 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEffectiveComponent_10399101">();
+		STATIC_CLASS_IMPL("PyEffectiveComponent_10399101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEffectiveComponent_10399101")
 	}
 	static class UPyEffectiveComponent_10399101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyEffectiveComponent_10399101>();
 	}
 };
-static_assert(alignof(UPyEffectiveComponent_10399101) == 0x000010, "Wrong alignment on UPyEffectiveComponent_10399101");
-static_assert(sizeof(UPyEffectiveComponent_10399101) == 0x001C70, "Wrong size on UPyEffectiveComponent_10399101");
+DUMPER7_ASSERTS_UPyEffectiveComponent_10399101;
 
 }
 

@@ -26,12 +26,7 @@ public:
 	struct FAttributeModifierHandle               ParamHandle;                                       // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyHighLightData_1021_OnActorDeath) == 0x000008, "Wrong alignment on PyHighLightData_1021_OnActorDeath");
-static_assert(sizeof(PyHighLightData_1021_OnActorDeath) == 0x000030, "Wrong size on PyHighLightData_1021_OnActorDeath");
-static_assert(offsetof(PyHighLightData_1021_OnActorDeath, Killer) == 0x000000, "Member 'PyHighLightData_1021_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnActorDeath, Target) == 0x000008, "Member 'PyHighLightData_1021_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnActorDeath, ParamHandle) == 0x000010, "Member 'PyHighLightData_1021_OnActorDeath::ParamHandle' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnActorDeath, ExtraData) == 0x000028, "Member 'PyHighLightData_1021_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyHighLightData_1021_OnActorDeath;
 
 // PythonFunction PyHighLightData_1021.PyHighLightData_1021.OnTargetActorRecycleAgentTask
 // 0x0068 (0x0068 - 0x0000)
@@ -43,12 +38,7 @@ public:
 	struct FMarvelTargetActorGenerateInfo         GenerateInfo;                                      // 0x0010(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEndAgentTaskInfo                      AgentTaskInfo;                                     // 0x0058(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyHighLightData_1021_OnTargetActorRecycleAgentTask) == 0x000008, "Wrong alignment on PyHighLightData_1021_OnTargetActorRecycleAgentTask");
-static_assert(sizeof(PyHighLightData_1021_OnTargetActorRecycleAgentTask) == 0x000068, "Wrong size on PyHighLightData_1021_OnTargetActorRecycleAgentTask");
-static_assert(offsetof(PyHighLightData_1021_OnTargetActorRecycleAgentTask, SourceActor) == 0x000000, "Member 'PyHighLightData_1021_OnTargetActorRecycleAgentTask::SourceActor' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnTargetActorRecycleAgentTask, SourceAbility) == 0x000008, "Member 'PyHighLightData_1021_OnTargetActorRecycleAgentTask::SourceAbility' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnTargetActorRecycleAgentTask, GenerateInfo) == 0x000010, "Member 'PyHighLightData_1021_OnTargetActorRecycleAgentTask::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(PyHighLightData_1021_OnTargetActorRecycleAgentTask, AgentTaskInfo) == 0x000058, "Member 'PyHighLightData_1021_OnTargetActorRecycleAgentTask::AgentTaskInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyHighLightData_1021_OnTargetActorRecycleAgentTask;
 
 }
 

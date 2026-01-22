@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyNotifyEnemyInSight">();
+		STATIC_CLASS_IMPL("BTS_PyNotifyEnemyInSight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyNotifyEnemyInSight")
 	}
 	static class UBTS_PyNotifyEnemyInSight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyNotifyEnemyInSight>();
 	}
 };
-static_assert(alignof(UBTS_PyNotifyEnemyInSight) == 0x000008, "Wrong alignment on UBTS_PyNotifyEnemyInSight");
-static_assert(sizeof(UBTS_PyNotifyEnemyInSight) == 0x0000E8, "Wrong size on UBTS_PyNotifyEnemyInSight");
-static_assert(offsetof(UBTS_PyNotifyEnemyInSight, NotifyRange) == 0x0000A8, "Member 'UBTS_PyNotifyEnemyInSight::NotifyRange' has a wrong offset!");
-static_assert(offsetof(UBTS_PyNotifyEnemyInSight, EnemyTarget) == 0x0000B0, "Member 'UBTS_PyNotifyEnemyInSight::EnemyTarget' has a wrong offset!");
-static_assert(offsetof(UBTS_PyNotifyEnemyInSight, EnableDebug) == 0x0000E0, "Member 'UBTS_PyNotifyEnemyInSight::EnableDebug' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyNotifyEnemyInSight;
 
 }
 

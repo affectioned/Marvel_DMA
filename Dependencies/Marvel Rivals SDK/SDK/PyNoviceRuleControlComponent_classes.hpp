@@ -32,21 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNoviceRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyNoviceRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNoviceRuleControlComponent")
 	}
 	static class UPyNoviceRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyNoviceRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyNoviceRuleControlComponent) == 0x000008, "Wrong alignment on UPyNoviceRuleControlComponent");
-static_assert(sizeof(UPyNoviceRuleControlComponent) == 0x000248, "Wrong size on UPyNoviceRuleControlComponent");
-static_assert(offsetof(UPyNoviceRuleControlComponent, LoadingVoiceID) == 0x000208, "Member 'UPyNoviceRuleControlComponent::LoadingVoiceID' has a wrong offset!");
-static_assert(offsetof(UPyNoviceRuleControlComponent, TuboebmpofIfspOvnMjnju) == 0x00020C, "Member 'UPyNoviceRuleControlComponent::TuboebmpofIfspOvnMjnju' has a wrong offset!");
-static_assert(offsetof(UPyNoviceRuleControlComponent, UvcpfcnqpgRncagtJgtqNkuv) == 0x000210, "Member 'UPyNoviceRuleControlComponent::UvcpfcnqpgRncagtJgtqNkuv' has a wrong offset!");
-static_assert(offsetof(UPyNoviceRuleControlComponent, VwdqgdorqhDLKhurOlvw) == 0x000220, "Member 'UPyNoviceRuleControlComponent::VwdqgdorqhDLKhurOlvw' has a wrong offset!");
-static_assert(offsetof(UPyNoviceRuleControlComponent, WeqiLivsPixmx) == 0x000230, "Member 'UPyNoviceRuleControlComponent::WeqiLivsPixmx' has a wrong offset!");
-static_assert(offsetof(UPyNoviceRuleControlComponent, LfqfhyfGtyQnxy) == 0x000238, "Member 'UPyNoviceRuleControlComponent::LfqfhyfGtyQnxy' has a wrong offset!");
+DUMPER7_ASSERTS_UPyNoviceRuleControlComponent;
 
 }
 

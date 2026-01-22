@@ -48,29 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRankEscortRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyRankEscortRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRankEscortRuleControlComponent")
 	}
 	static class UPyRankEscortRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyRankEscortRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyRankEscortRuleControlComponent) == 0x000008, "Wrong alignment on UPyRankEscortRuleControlComponent");
-static_assert(sizeof(UPyRankEscortRuleControlComponent) == 0x000240, "Wrong size on UPyRankEscortRuleControlComponent");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, AttackTime) == 0x000208, "Member 'UPyRankEscortRuleControlComponent::AttackTime' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, DefendTime) == 0x00020C, "Member 'UPyRankEscortRuleControlComponent::DefendTime' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, AttackScore) == 0x000210, "Member 'UPyRankEscortRuleControlComponent::AttackScore' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, DefendScore) == 0x000214, "Member 'UPyRankEscortRuleControlComponent::DefendScore' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, AttackMaxDistance) == 0x000218, "Member 'UPyRankEscortRuleControlComponent::AttackMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, DefendMaxDistance) == 0x00021C, "Member 'UPyRankEscortRuleControlComponent::DefendMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, LastRoundMaxDistance) == 0x000220, "Member 'UPyRankEscortRuleControlComponent::LastRoundMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundWinnerIsAttacker) == 0x000224, "Member 'UPyRankEscortRuleControlComponent::RoundWinnerIsAttacker' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartAttackScore) == 0x000228, "Member 'UPyRankEscortRuleControlComponent::RoundStartAttackScore' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartAttackTime) == 0x00022C, "Member 'UPyRankEscortRuleControlComponent::RoundStartAttackTime' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartAttackMaxDistance) == 0x000230, "Member 'UPyRankEscortRuleControlComponent::RoundStartAttackMaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartDefendScore) == 0x000234, "Member 'UPyRankEscortRuleControlComponent::RoundStartDefendScore' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartDefendTime) == 0x000238, "Member 'UPyRankEscortRuleControlComponent::RoundStartDefendTime' has a wrong offset!");
-static_assert(offsetof(UPyRankEscortRuleControlComponent, RoundStartDefendMaxDistance) == 0x00023C, "Member 'UPyRankEscortRuleControlComponent::RoundStartDefendMaxDistance' has a wrong offset!");
+DUMPER7_ASSERTS_UPyRankEscortRuleControlComponent;
 
 }
 

@@ -23,9 +23,7 @@ struct PyLevel1399_001_Comp_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_001_Comp_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevel1399_001_Comp_ReceiveEndPlay");
-static_assert(sizeof(PyLevel1399_001_Comp_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevel1399_001_Comp_ReceiveEndPlay");
-static_assert(offsetof(PyLevel1399_001_Comp_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevel1399_001_Comp_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_001_Comp_ReceiveEndPlay;
 
 // PythonFunction PyLevel1399_001.PyLevel1399_001.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevel1399_001_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_001_ReceiveTick) == 0x000004, "Wrong alignment on PyLevel1399_001_ReceiveTick");
-static_assert(sizeof(PyLevel1399_001_ReceiveTick) == 0x000004, "Wrong size on PyLevel1399_001_ReceiveTick");
-static_assert(offsetof(PyLevel1399_001_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevel1399_001_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_001_ReceiveTick;
 
 // PythonFunction PyLevel1399_001.PyLevel1399_001.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +41,7 @@ struct PyLevel1399_001_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_001_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevel1399_001_ReceiveEndPlay");
-static_assert(sizeof(PyLevel1399_001_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevel1399_001_ReceiveEndPlay");
-static_assert(offsetof(PyLevel1399_001_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevel1399_001_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_001_ReceiveEndPlay;
 
 // PythonFunction PyLevel1399_001.PyLevel1399_001.PostAudioEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PyLevel1399_001_PostAudioEvent final
 public:
 	int32                                         sfx_state;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevel1399_001_PostAudioEvent) == 0x000004, "Wrong alignment on PyLevel1399_001_PostAudioEvent");
-static_assert(sizeof(PyLevel1399_001_PostAudioEvent) == 0x000004, "Wrong size on PyLevel1399_001_PostAudioEvent");
-static_assert(offsetof(PyLevel1399_001_PostAudioEvent, sfx_state) == 0x000000, "Member 'PyLevel1399_001_PostAudioEvent::sfx_state' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevel1399_001_PostAudioEvent;
 
 }
 

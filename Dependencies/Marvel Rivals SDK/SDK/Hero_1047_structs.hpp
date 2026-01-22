@@ -99,6 +99,22 @@ enum class EJeffEightDirection : uint8
 	ED_MAX                                   = 8,
 };
 
+// Enum Hero_1047.EJeffEightDirectionV2
+// NumValues: 0x000A
+enum class EJeffEightDirectionV2 : uint8
+{
+	JeffDir_Backward                         = 0,
+	JeffDir_BackwardLeft                     = 1,
+	JeffDir_Left                             = 2,
+	JeffDir_ForwardLeft                      = 3,
+	JeffDir_Forward                          = 4,
+	JeffDir_ForwardRight                     = 5,
+	JeffDir_Right                            = 6,
+	JeffDir_BackwardRight                    = 7,
+	JeffDir_Max                              = 8,
+	JeffDir_MAX                              = 9,
+};
+
 // ScriptStruct Hero_1047.WarningNotify
 // 0x0002 (0x0002 - 0x0000)
 struct FWarningNotify final
@@ -107,53 +123,78 @@ public:
 	uint8                                         bActiveByTimerOrMT : 1;                            // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         NotifyCounter;                                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWarningNotify) == 0x000001, "Wrong alignment on FWarningNotify");
-static_assert(sizeof(FWarningNotify) == 0x000002, "Wrong size on FWarningNotify");
-static_assert(offsetof(FWarningNotify, NotifyCounter) == 0x000001, "Member 'FWarningNotify::NotifyCounter' has a wrong offset!");
+DUMPER7_ASSERTS_FWarningNotify;
+
+// ScriptStruct Hero_1047.DevouredCharactersData
+// 0x0000 (0x0060 - 0x0060)
+struct FDevouredCharactersData final : public FDevouredCharactersData_Base
+{
+};
+DUMPER7_ASSERTS_FDevouredCharactersData;
+
+// ScriptStruct Hero_1047.DebugHapplyDebugSplinePoint
+// 0x00A0 (0x00A0 - 0x0000)
+struct FDebugHapplyDebugSplinePoint final
+{
+public:
+	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ArriveTangent;                                     // 0x0060(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LeaveTangent;                                      // 0x0078(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStart;                                            // 0x0090(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_91[0xF];                                       // 0x0091(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FDebugHapplyDebugSplinePoint;
+
+// ScriptStruct Hero_1047.DebugHapplyDebugSplinePoints
+// 0x0010 (0x0010 - 0x0000)
+struct FDebugHapplyDebugSplinePoints final
+{
+public:
+	TArray<struct FDebugHapplyDebugSplinePoint>   Points;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDebugHapplyDebugSplinePoints;
+
+// ScriptStruct Hero_1047.DebugHapplyDebugSpline
+// 0x0018 (0x0018 - 0x0000)
+struct FDebugHapplyDebugSpline final
+{
+public:
+	TArray<struct FDebugHapplyDebugSplinePoints>  DebugSpline;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	int32                                         Frame;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FDebugHapplyDebugSpline;
 
 // ScriptStruct Hero_1047.SegmentsSpline
-// 0x0038 (0x0038 - 0x0000)
+// 0x0044 (0x0044 - 0x0000)
 struct FSegmentsSpline final
 {
 public:
 	int32                                         SeqPointNum;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SeqTime;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SeqParameter_1;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SeqParameter_2;                                    // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SeqType;                                           // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseSeqMethodV2;                                   // 0x0014(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCubicInterp;                                   // 0x0015(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinSubdivideDist;                                  // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TangleScale;                                       // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          BuffApply;                                         // 0x0020(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BuffApplyDistance;                                 // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuffID;                                            // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuffIDExtraTime;                                   // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TailBaseWidth;                                     // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TailBaseWidthLerpSpeed;                            // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseSeqMethodV2;                                   // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SeqType;                                           // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SeqParameter_1;                                    // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SeqParameter_2;                                    // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCubicInterp;                                   // 0x0018(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinSubdivideDist;                                  // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TangleScale;                                       // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TailBaseWidth;                                     // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TailBaseWidthLerpSpeed;                            // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PawnMuzzleRotationInterpLength;                    // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FirstPointRotationInterpLength;                    // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          BuffApply;                                         // 0x0034(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BuffApplyDistance;                                 // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuffID;                                            // 0x003C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuffIDExtraTime;                                   // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSegmentsSpline) == 0x000004, "Wrong alignment on FSegmentsSpline");
-static_assert(sizeof(FSegmentsSpline) == 0x000038, "Wrong size on FSegmentsSpline");
-static_assert(offsetof(FSegmentsSpline, SeqPointNum) == 0x000000, "Member 'FSegmentsSpline::SeqPointNum' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, SeqTime) == 0x000004, "Member 'FSegmentsSpline::SeqTime' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, SeqParameter_1) == 0x000008, "Member 'FSegmentsSpline::SeqParameter_1' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, SeqParameter_2) == 0x00000C, "Member 'FSegmentsSpline::SeqParameter_2' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, SeqType) == 0x000010, "Member 'FSegmentsSpline::SeqType' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, bUseSeqMethodV2) == 0x000014, "Member 'FSegmentsSpline::bUseSeqMethodV2' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, bUseCubicInterp) == 0x000015, "Member 'FSegmentsSpline::bUseCubicInterp' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, MinSubdivideDist) == 0x000018, "Member 'FSegmentsSpline::MinSubdivideDist' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, TangleScale) == 0x00001C, "Member 'FSegmentsSpline::TangleScale' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, BuffApply) == 0x000020, "Member 'FSegmentsSpline::BuffApply' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, BuffApplyDistance) == 0x000024, "Member 'FSegmentsSpline::BuffApplyDistance' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, BuffID) == 0x000028, "Member 'FSegmentsSpline::BuffID' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, BuffIDExtraTime) == 0x00002C, "Member 'FSegmentsSpline::BuffIDExtraTime' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, TailBaseWidth) == 0x000030, "Member 'FSegmentsSpline::TailBaseWidth' has a wrong offset!");
-static_assert(offsetof(FSegmentsSpline, TailBaseWidthLerpSpeed) == 0x000034, "Member 'FSegmentsSpline::TailBaseWidthLerpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_FSegmentsSpline;
 
 // ScriptStruct Hero_1047.ProjectileExtendedConfig_10471101
-// 0x0070 (0x0078 - 0x0008)
+// 0x0088 (0x0090 - 0x0008)
 struct FProjectileExtendedConfig_10471101 : public FProjectileExtendedConfigBase
 {
 public:
@@ -161,54 +202,25 @@ public:
 	class UCurveFloat*                            ProjectileGravityCurveByTime;                      // 0x0010(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            ProjectileVelocityCurveByTime;                     // 0x0018(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FlowDelayTime;                                     // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxFlowSpeed;                                      // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bConsiderCutCosAngle;                              // 0x0028(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CutAngle;                                          // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSegmentsSpline                        SegmentsSpline;                                    // 0x0030(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         ManagerIndex;                                      // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           AbilityCueTagOverride;                             // 0x006C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InterpPointLifeTime;                               // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinFlowPointDist;                                  // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxFlowSpeed;                                      // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bConsiderCutCosAngle;                              // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CutAngle;                                          // 0x0034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSegmentsSpline                        SegmentsSpline;                                    // 0x0038(0x0044)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ManagerIndex;                                      // 0x007C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           AbilityCueTagOverride;                             // 0x0080(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProjectileExtendedConfig_10471101) == 0x000008, "Wrong alignment on FProjectileExtendedConfig_10471101");
-static_assert(sizeof(FProjectileExtendedConfig_10471101) == 0x000078, "Wrong size on FProjectileExtendedConfig_10471101");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, ProjectileRadiusCurveByTime) == 0x000008, "Member 'FProjectileExtendedConfig_10471101::ProjectileRadiusCurveByTime' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, ProjectileGravityCurveByTime) == 0x000010, "Member 'FProjectileExtendedConfig_10471101::ProjectileGravityCurveByTime' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, ProjectileVelocityCurveByTime) == 0x000018, "Member 'FProjectileExtendedConfig_10471101::ProjectileVelocityCurveByTime' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, FlowDelayTime) == 0x000020, "Member 'FProjectileExtendedConfig_10471101::FlowDelayTime' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, MaxFlowSpeed) == 0x000024, "Member 'FProjectileExtendedConfig_10471101::MaxFlowSpeed' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, bConsiderCutCosAngle) == 0x000028, "Member 'FProjectileExtendedConfig_10471101::bConsiderCutCosAngle' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, CutAngle) == 0x00002C, "Member 'FProjectileExtendedConfig_10471101::CutAngle' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, SegmentsSpline) == 0x000030, "Member 'FProjectileExtendedConfig_10471101::SegmentsSpline' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, ManagerIndex) == 0x000068, "Member 'FProjectileExtendedConfig_10471101::ManagerIndex' has a wrong offset!");
-static_assert(offsetof(FProjectileExtendedConfig_10471101, AbilityCueTagOverride) == 0x00006C, "Member 'FProjectileExtendedConfig_10471101::AbilityCueTagOverride' has a wrong offset!");
+DUMPER7_ASSERTS_FProjectileExtendedConfig_10471101;
 
-// ScriptStruct Hero_1047.VirtualProjectile_10471901
-// 0x0018 (0x01C0 - 0x01A8)
-struct FVirtualProjectile_10471901 final : public FMarvelVirtualProjectile
-{
-public:
-	uint8                                         Pad_1A8[0x18];                                     // 0x01A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FVirtualProjectile_10471901) == 0x000008, "Wrong alignment on FVirtualProjectile_10471901");
-static_assert(sizeof(FVirtualProjectile_10471901) == 0x0001C0, "Wrong size on FVirtualProjectile_10471901");
-
-// ScriptStruct Hero_1047.DevouredCharactersData
-// 0x0000 (0x0060 - 0x0060)
-struct FDevouredCharactersData final : public FDevouredCharactersData_Base
+// ScriptStruct Hero_1047.ProjectileExtendedConfig_10472001
+// 0x0000 (0x0090 - 0x0090)
+struct FProjectileExtendedConfig_10472001 final : public FProjectileExtendedConfig_10471101
 {
 };
-static_assert(alignof(FDevouredCharactersData) == 0x000008, "Wrong alignment on FDevouredCharactersData");
-static_assert(sizeof(FDevouredCharactersData) == 0x000060, "Wrong size on FDevouredCharactersData");
-
-// ScriptStruct Hero_1047.FlowManagerTickFunction
-// 0x0008 (0x0038 - 0x0030)
-struct FFlowManagerTickFunction final : public FTickFunction
-{
-public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFlowManagerTickFunction) == 0x000008, "Wrong alignment on FFlowManagerTickFunction");
-static_assert(sizeof(FFlowManagerTickFunction) == 0x000038, "Wrong size on FFlowManagerTickFunction");
+DUMPER7_ASSERTS_FProjectileExtendedConfig_10472001;
 
 // ScriptStruct Hero_1047.SelectRegionConfig
 // 0x001C (0x001C - 0x0000)
@@ -223,58 +235,7 @@ public:
 	float                                         BrakingDecelerationFlying;                         // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BrakingDecelerationFalling;                        // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSelectRegionConfig) == 0x000004, "Wrong alignment on FSelectRegionConfig");
-static_assert(sizeof(FSelectRegionConfig) == 0x00001C, "Wrong size on FSelectRegionConfig");
-static_assert(offsetof(FSelectRegionConfig, MaxWalkSpeed) == 0x000000, "Member 'FSelectRegionConfig::MaxWalkSpeed' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, MaxAccelerationWalking) == 0x000004, "Member 'FSelectRegionConfig::MaxAccelerationWalking' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, BrakingDecelerationWalking) == 0x000008, "Member 'FSelectRegionConfig::BrakingDecelerationWalking' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, MaxFlySpeed) == 0x00000C, "Member 'FSelectRegionConfig::MaxFlySpeed' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, MaxAccelerationFlying) == 0x000010, "Member 'FSelectRegionConfig::MaxAccelerationFlying' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, BrakingDecelerationFlying) == 0x000014, "Member 'FSelectRegionConfig::BrakingDecelerationFlying' has a wrong offset!");
-static_assert(offsetof(FSelectRegionConfig, BrakingDecelerationFalling) == 0x000018, "Member 'FSelectRegionConfig::BrakingDecelerationFalling' has a wrong offset!");
-
-// ScriptStruct Hero_1047.DebugHapplyDebugSplinePoint
-// 0x00A0 (0x00A0 - 0x0000)
-struct FDebugHapplyDebugSplinePoint final
-{
-public:
-	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ArriveTangent;                                     // 0x0060(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LeaveTangent;                                      // 0x0078(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStart;                                            // 0x0090(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_91[0xF];                                       // 0x0091(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FDebugHapplyDebugSplinePoint) == 0x000010, "Wrong alignment on FDebugHapplyDebugSplinePoint");
-static_assert(sizeof(FDebugHapplyDebugSplinePoint) == 0x0000A0, "Wrong size on FDebugHapplyDebugSplinePoint");
-static_assert(offsetof(FDebugHapplyDebugSplinePoint, Transform) == 0x000000, "Member 'FDebugHapplyDebugSplinePoint::Transform' has a wrong offset!");
-static_assert(offsetof(FDebugHapplyDebugSplinePoint, ArriveTangent) == 0x000060, "Member 'FDebugHapplyDebugSplinePoint::ArriveTangent' has a wrong offset!");
-static_assert(offsetof(FDebugHapplyDebugSplinePoint, LeaveTangent) == 0x000078, "Member 'FDebugHapplyDebugSplinePoint::LeaveTangent' has a wrong offset!");
-static_assert(offsetof(FDebugHapplyDebugSplinePoint, bStart) == 0x000090, "Member 'FDebugHapplyDebugSplinePoint::bStart' has a wrong offset!");
-
-// ScriptStruct Hero_1047.DebugHapplyDebugSplinePoints
-// 0x0010 (0x0010 - 0x0000)
-struct FDebugHapplyDebugSplinePoints final
-{
-public:
-	TArray<struct FDebugHapplyDebugSplinePoint>   Points;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FDebugHapplyDebugSplinePoints) == 0x000008, "Wrong alignment on FDebugHapplyDebugSplinePoints");
-static_assert(sizeof(FDebugHapplyDebugSplinePoints) == 0x000010, "Wrong size on FDebugHapplyDebugSplinePoints");
-static_assert(offsetof(FDebugHapplyDebugSplinePoints, Points) == 0x000000, "Member 'FDebugHapplyDebugSplinePoints::Points' has a wrong offset!");
-
-// ScriptStruct Hero_1047.DebugHapplyDebugSpline
-// 0x0018 (0x0018 - 0x0000)
-struct FDebugHapplyDebugSpline final
-{
-public:
-	TArray<struct FDebugHapplyDebugSplinePoints>  DebugSpline;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	int32                                         Frame;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FDebugHapplyDebugSpline) == 0x000008, "Wrong alignment on FDebugHapplyDebugSpline");
-static_assert(sizeof(FDebugHapplyDebugSpline) == 0x000018, "Wrong size on FDebugHapplyDebugSpline");
-static_assert(offsetof(FDebugHapplyDebugSpline, DebugSpline) == 0x000000, "Member 'FDebugHapplyDebugSpline::DebugSpline' has a wrong offset!");
-static_assert(offsetof(FDebugHapplyDebugSpline, Frame) == 0x000010, "Member 'FDebugHapplyDebugSpline::Frame' has a wrong offset!");
+DUMPER7_ASSERTS_FSelectRegionConfig;
 
 // ScriptStruct Hero_1047.WaterFlowConfig
 // 0x000C (0x000C - 0x0000)
@@ -283,9 +244,7 @@ struct FWaterFlowConfig final
 public:
 	struct FGameplayTag                           AbilityCueTag;                                     // 0x0000(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaterFlowConfig) == 0x000004, "Wrong alignment on FWaterFlowConfig");
-static_assert(sizeof(FWaterFlowConfig) == 0x00000C, "Wrong size on FWaterFlowConfig");
-static_assert(offsetof(FWaterFlowConfig, AbilityCueTag) == 0x000000, "Member 'FWaterFlowConfig::AbilityCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_FWaterFlowConfig;
 
 // ScriptStruct Hero_1047.WaterFlowState
 // 0x001C (0x001C - 0x0000)
@@ -298,12 +257,25 @@ public:
 	int32                                         ModeIndex;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class AShootingWeapon>         WeaponActor;                                       // 0x0014(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaterFlowState) == 0x000004, "Wrong alignment on FWaterFlowState");
-static_assert(sizeof(FWaterFlowState) == 0x00001C, "Wrong size on FWaterFlowState");
-static_assert(offsetof(FWaterFlowState, AbilityCueTag) == 0x000000, "Member 'FWaterFlowState::AbilityCueTag' has a wrong offset!");
-static_assert(offsetof(FWaterFlowState, bIsActive) == 0x00000C, "Member 'FWaterFlowState::bIsActive' has a wrong offset!");
-static_assert(offsetof(FWaterFlowState, ModeIndex) == 0x000010, "Member 'FWaterFlowState::ModeIndex' has a wrong offset!");
-static_assert(offsetof(FWaterFlowState, WeaponActor) == 0x000014, "Member 'FWaterFlowState::WeaponActor' has a wrong offset!");
+DUMPER7_ASSERTS_FWaterFlowState;
+
+// ScriptStruct Hero_1047.FlowManagerTickFunction
+// 0x0008 (0x0038 - 0x0030)
+struct FFlowManagerTickFunction final : public FTickFunction
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FFlowManagerTickFunction;
+
+// ScriptStruct Hero_1047.VirtualProjectile_10471901
+// 0x0018 (0x01C0 - 0x01A8)
+struct FVirtualProjectile_10471901 final : public FMarvelVirtualProjectile
+{
+public:
+	uint8                                         Pad_1A8[0x18];                                     // 0x01A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FVirtualProjectile_10471901;
 
 // ScriptStruct Hero_1047.MarvelVirtualProjectileExtendData_10471901_Spline
 // 0x0017 (0x0018 - 0x0001)
@@ -314,9 +286,7 @@ public:
 	class USplineComponent*                       SplineComponent;                                   // 0x0008(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMarvelVirtualProjectileExtendData_10471901_Spline) == 0x000008, "Wrong alignment on FMarvelVirtualProjectileExtendData_10471901_Spline");
-static_assert(sizeof(FMarvelVirtualProjectileExtendData_10471901_Spline) == 0x000018, "Wrong size on FMarvelVirtualProjectileExtendData_10471901_Spline");
-static_assert(offsetof(FMarvelVirtualProjectileExtendData_10471901_Spline, SplineComponent) == 0x000008, "Member 'FMarvelVirtualProjectileExtendData_10471901_Spline::SplineComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelVirtualProjectileExtendData_10471901_Spline;
 
 // ScriptStruct Hero_1047.MarvelVirtualProjectileExtendData_10471901_NXData
 // 0x0018 (0x0018 - 0x0000)
@@ -327,9 +297,7 @@ public:
 	class UNiagaraComponent*                      NiagaraComponent;                                  // 0x0008(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMarvelVirtualProjectileExtendData_10471901_NXData) == 0x000008, "Wrong alignment on FMarvelVirtualProjectileExtendData_10471901_NXData");
-static_assert(sizeof(FMarvelVirtualProjectileExtendData_10471901_NXData) == 0x000018, "Wrong size on FMarvelVirtualProjectileExtendData_10471901_NXData");
-static_assert(offsetof(FMarvelVirtualProjectileExtendData_10471901_NXData, NiagaraComponent) == 0x000008, "Member 'FMarvelVirtualProjectileExtendData_10471901_NXData::NiagaraComponent' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelVirtualProjectileExtendData_10471901_NXData;
 
 // ScriptStruct Hero_1047.MarvelVirtualProjectileExtendData_10471901_NX
 // 0x0077 (0x0078 - 0x0001)
@@ -341,18 +309,24 @@ public:
 	TMap<int32, struct FMarvelVirtualProjectileExtendData_10471901_NXData> NXDatas;                  // 0x0020(0x0050)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 	uint8                                         Pad_70[0x8];                                       // 0x0070(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMarvelVirtualProjectileExtendData_10471901_NX) == 0x000008, "Wrong alignment on FMarvelVirtualProjectileExtendData_10471901_NX");
-static_assert(sizeof(FMarvelVirtualProjectileExtendData_10471901_NX) == 0x000078, "Wrong size on FMarvelVirtualProjectileExtendData_10471901_NX");
-static_assert(offsetof(FMarvelVirtualProjectileExtendData_10471901_NX, NXData) == 0x000008, "Member 'FMarvelVirtualProjectileExtendData_10471901_NX::NXData' has a wrong offset!");
-static_assert(offsetof(FMarvelVirtualProjectileExtendData_10471901_NX, NXDatas) == 0x000020, "Member 'FMarvelVirtualProjectileExtendData_10471901_NX::NXDatas' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelVirtualProjectileExtendData_10471901_NX;
 
-// ScriptStruct Hero_1047.ProjectileExtendedConfig_10472001
-// 0x0000 (0x0078 - 0x0078)
-struct FProjectileExtendedConfig_10472001 final : public FProjectileExtendedConfig_10471101
+// ScriptStruct Hero_1047.ProjectileExtendedConfig_10475101
+// 0x0018 (0x0020 - 0x0008)
+struct FProjectileExtendedConfig_10475101 final : public FProjectileExtendedConfigBase
 {
+public:
+	float                                         BubbleRadius;                                      // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BubblePlacingSize;                                 // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpawnSummonedEvenIfNoFloor;                       // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpawnSummonedEvenIfNoSpace;                       // 0x0011(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpawnStandbyScopeIfNoSpace;                       // 0x0012(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BubbleSummonedID;                                  // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BubbleStandbyScopeID;                              // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProjectileExtendedConfig_10472001) == 0x000008, "Wrong alignment on FProjectileExtendedConfig_10472001");
-static_assert(sizeof(FProjectileExtendedConfig_10472001) == 0x000078, "Wrong size on FProjectileExtendedConfig_10472001");
+DUMPER7_ASSERTS_FProjectileExtendedConfig_10475101;
 
 // ScriptStruct Hero_1047.JeffGroundMotionTransitionFlags
 // 0x001C (0x001C - 0x0000)
@@ -376,24 +350,7 @@ public:
 	bool                                          JumpLand_BToF_To_Fwd;                              // 0x001A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          JumpLand_FToB_To_Bwd;                              // 0x001B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FJeffGroundMotionTransitionFlags) == 0x000004, "Wrong alignment on FJeffGroundMotionTransitionFlags");
-static_assert(sizeof(FJeffGroundMotionTransitionFlags) == 0x00001C, "Wrong size on FJeffGroundMotionTransitionFlags");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, StateTimeLB) == 0x000000, "Member 'FJeffGroundMotionTransitionFlags::StateTimeLB' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, StateTimeRB) == 0x000004, "Member 'FJeffGroundMotionTransitionFlags::StateTimeRB' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, StateTimeLF) == 0x000008, "Member 'FJeffGroundMotionTransitionFlags::StateTimeLF' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, StateTimeRF) == 0x00000C, "Member 'FJeffGroundMotionTransitionFlags::StateTimeRF' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, LocomotionCycles_bCanEnterBToF) == 0x000010, "Member 'FJeffGroundMotionTransitionFlags::LocomotionCycles_bCanEnterBToF' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, LocomotionCycles_LB_To_LF) == 0x000011, "Member 'FJeffGroundMotionTransitionFlags::LocomotionCycles_LB_To_LF' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, LocomotionCycles_RB_To_RF) == 0x000012, "Member 'FJeffGroundMotionTransitionFlags::LocomotionCycles_RB_To_RF' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, LocomotionCycles_Any_To_LB) == 0x000013, "Member 'FJeffGroundMotionTransitionFlags::LocomotionCycles_Any_To_LB' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, LocomotionCycles_Any_To_RB) == 0x000014, "Member 'FJeffGroundMotionTransitionFlags::LocomotionCycles_Any_To_RB' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpStart_BToF_To_Fwd) == 0x000015, "Member 'FJeffGroundMotionTransitionFlags::JumpStart_BToF_To_Fwd' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpStart_FtoB_To_Bwd) == 0x000016, "Member 'FJeffGroundMotionTransitionFlags::JumpStart_FtoB_To_Bwd' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpLoop_BToF_To_Fwd) == 0x000017, "Member 'FJeffGroundMotionTransitionFlags::JumpLoop_BToF_To_Fwd' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpLoop_FToB_To_Bwd) == 0x000018, "Member 'FJeffGroundMotionTransitionFlags::JumpLoop_FToB_To_Bwd' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpLoop_BToF_To_Idle) == 0x000019, "Member 'FJeffGroundMotionTransitionFlags::JumpLoop_BToF_To_Idle' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpLand_BToF_To_Fwd) == 0x00001A, "Member 'FJeffGroundMotionTransitionFlags::JumpLand_BToF_To_Fwd' has a wrong offset!");
-static_assert(offsetof(FJeffGroundMotionTransitionFlags, JumpLand_FToB_To_Bwd) == 0x00001B, "Member 'FJeffGroundMotionTransitionFlags::JumpLand_FToB_To_Bwd' has a wrong offset!");
+DUMPER7_ASSERTS_FJeffGroundMotionTransitionFlags;
 
 // ScriptStruct Hero_1047.JeffGroundMotionSubAnimInstanceProxy
 // 0x0030 (0x0870 - 0x0840)
@@ -402,8 +359,156 @@ struct FJeffGroundMotionSubAnimInstanceProxy final : public FGroundMotionSubAnim
 public:
 	uint8                                         Pad_838[0x38];                                     // 0x0838(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FJeffGroundMotionSubAnimInstanceProxy) == 0x000010, "Wrong alignment on FJeffGroundMotionSubAnimInstanceProxy");
-static_assert(sizeof(FJeffGroundMotionSubAnimInstanceProxy) == 0x000870, "Wrong size on FJeffGroundMotionSubAnimInstanceProxy");
+DUMPER7_ASSERTS_FJeffGroundMotionSubAnimInstanceProxy;
+
+// ScriptStruct Hero_1047.JeffCharacterAnimInfo
+// 0x0180 (0x0180 - 0x0000)
+struct alignas(0x08) FJeffCharacterAnimInfo final
+{
+public:
+	float                                         YawAimingRotationOffset;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x17C];                                      // 0x0004(0x017C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffCharacterAnimInfo;
+
+// ScriptStruct Hero_1047.JeffGroundMotionAnimNodeInfo
+// 0x02AC (0x02AC - 0x0000)
+struct FJeffGroundMotionAnimNodeInfo final
+{
+public:
+	uint8                                         Pad_0[0x284];                                      // 0x0000(0x0284)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         StateTimeRB;                                       // 0x0284(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeLB;                                       // 0x0288(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeLF;                                       // 0x028C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeRF;                                       // 0x0290(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateWeightJumpLandFwd;                            // 0x0294(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateWeightJumpLandBwd;                            // 0x0298(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29C[0x10];                                     // 0x029C(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffGroundMotionAnimNodeInfo;
+
+// ScriptStruct Hero_1047.JeffGroundMotionSubAnimInstanceV2Proxy
+// 0x0330 (0x0B70 - 0x0840)
+struct FJeffGroundMotionSubAnimInstanceV2Proxy final : public FGroundMotionSubAnimInstanceProxyBase
+{
+public:
+	class UGroundMotionSubAnimInstance*           GroundMotionSubAnimInstance;                       // 0x0838(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_840[0x330];                                    // 0x0840(0x0330)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffGroundMotionSubAnimInstanceV2Proxy;
+
+// ScriptStruct Hero_1047.JeffGroundMotionV2TransitionFlags
+// 0x0027 (0x0027 - 0x0000)
+struct FJeffGroundMotionV2TransitionFlags final
+{
+public:
+	bool                                          Ground_Entry_To_Stop;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Loop_To_Stop;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Stop_To_Loop;                               // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Idle_To_Loop;                               // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Loop_To_Idle;                               // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_JumpFwd;                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_JumpBwd;                        // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_Idle;                           // 0x0007(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Jump_JumpBwd;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Jump_JumpFwd;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_To_Land;                     // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_To_InAir;                    // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_Land_To_Ground;              // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_LandMovement_To_Ground;      // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_Idle_To_Ground;              // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PivotStateMachine_FirstPivot_To_SecondPivot;       // 0x000F(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PivotStateMachine_SecondPivot_To_FirstPivot;       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          GroundDetail_Running_To_Pivoting;                  // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          GroundDetail_Pivoting_To_Running;                  // 0x0012(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Idle_To_Start;                              // 0x0013(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_LF;                      // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_LB;                      // 0x0015(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_RF;                      // 0x0016(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_RB;                      // 0x0017(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_B;                       // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Entry_To_F;                       // 0x0019(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_MoveF;                            // 0x001A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_MoveB;                            // 0x001B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_MoveL;                            // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_MoveR;                            // 0x001D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_RF_TO_RB;                         // 0x001E(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_RB_TO_RF;                         // 0x001F(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_LF_TO_LB;                         // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_LB_TO_LF;                         // 0x0021(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_HipsRight;                        // 0x0022(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_HipsLeft;                         // 0x0023(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_EnterBToF;                        // 0x0024(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Any_To_LB;                        // 0x0025(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionCycles_Any_To_RB;                        // 0x0026(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FJeffGroundMotionV2TransitionFlags;
+
+// ScriptStruct Hero_1047.JeffCharacterAnimInfoV3
+// 0x00F8 (0x00F8 - 0x0000)
+struct alignas(0x08) FJeffCharacterAnimInfoV3 final
+{
+public:
+	float                                         AccelerationDirActorSpace;                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AccTimeAccumulator;                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LandMoveInitBias;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0xEC];                                       // 0x000C(0x00EC)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffCharacterAnimInfoV3;
+
+// ScriptStruct Hero_1047.JeffGroundMotionAnimNodeInfoV3
+// 0x01A8 (0x01A8 - 0x0000)
+struct FJeffGroundMotionAnimNodeInfoV3 final
+{
+public:
+	uint8                                         Pad_0[0x180];                                      // 0x0000(0x0180)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         StateTimeRB;                                       // 0x0180(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeLB;                                       // 0x0184(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeLF;                                       // 0x0188(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateTimeRF;                                       // 0x018C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateWeightJumpLandFwd;                            // 0x0190(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StateWeightJumpLandBwd;                            // 0x0194(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_198[0x10];                                     // 0x0198(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffGroundMotionAnimNodeInfoV3;
+
+// ScriptStruct Hero_1047.JeffGroundMotionSubAnimInstanceV3Proxy
+// 0x0200 (0x0A40 - 0x0840)
+struct FJeffGroundMotionSubAnimInstanceV3Proxy final : public FGroundMotionSubAnimInstanceProxyBase
+{
+public:
+	class UGroundMotionSubAnimInstance*           GroundMotionSubAnimInstance;                       // 0x0838(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_840[0x200];                                    // 0x0840(0x0200)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FJeffGroundMotionSubAnimInstanceV3Proxy;
+
+// ScriptStruct Hero_1047.JeffGroundMotionV3TransitionFlags
+// 0x0014 (0x0014 - 0x0000)
+struct FJeffGroundMotionV3TransitionFlags final
+{
+public:
+	bool                                          Ground_Entry_To_Stop;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Loop_To_Stop;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Stop_To_Loop;                               // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Idle_To_Loop;                               // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Loop_To_Idle;                               // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_JumpFwd;                        // 0x0005(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_JumpBwd;                        // 0x0006(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          JumpStart_Entry_To_Idle;                           // 0x0007(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Jump_JumpBwd;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Jump_JumpFwd;                                      // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_To_Land;                     // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_To_InAir;                    // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_Land_To_Ground;              // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_LandMovement_To_Ground;      // 0x000D(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LocomotionWithNewJump_Idle_To_Ground;              // 0x000E(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PivotStateMachine_FirstPivot_To_SecondPivot;       // 0x000F(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PivotStateMachine_SecondPivot_To_FirstPivot;       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          GroundDetail_Running_To_Pivoting;                  // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          GroundDetail_Pivoting_To_Running;                  // 0x0012(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Ground_Idle_To_Start;                              // 0x0013(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FJeffGroundMotionV3TransitionFlags;
 
 // ScriptStruct Hero_1047.JeffMoveForwardCheckResult
 // 0x0070 (0x0070 - 0x0000)
@@ -414,10 +519,7 @@ public:
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Position;                                          // 0x0010(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FJeffMoveForwardCheckResult) == 0x000010, "Wrong alignment on FJeffMoveForwardCheckResult");
-static_assert(sizeof(FJeffMoveForwardCheckResult) == 0x000070, "Wrong size on FJeffMoveForwardCheckResult");
-static_assert(offsetof(FJeffMoveForwardCheckResult, bSuccess) == 0x000000, "Member 'FJeffMoveForwardCheckResult::bSuccess' has a wrong offset!");
-static_assert(offsetof(FJeffMoveForwardCheckResult, Position) == 0x000010, "Member 'FJeffMoveForwardCheckResult::Position' has a wrong offset!");
+DUMPER7_ASSERTS_FJeffMoveForwardCheckResult;
 
 }
 

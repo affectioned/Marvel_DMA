@@ -20,13 +20,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_MallCoupon_List.PyWidget_MallCoupon_List
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_MallCoupon_List final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UInputAction*                           ESC_Action;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& bundle_id, class UObject* ItemData)> OnSelectCoupon; // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnCloseCouponList;                                 // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UInputAction*                           ESC_Action;                                        // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& bundle_id, class UObject* ItemData)> OnSelectCoupon; // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnCloseCouponList;                                 // 0x0618(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,18 +35,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallCoupon_List">();
+		STATIC_CLASS_IMPL("PyWidget_MallCoupon_List")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallCoupon_List")
 	}
 	static class UPyWidget_MallCoupon_List* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallCoupon_List>();
 	}
 };
-static_assert(alignof(UPyWidget_MallCoupon_List) == 0x000008, "Wrong alignment on UPyWidget_MallCoupon_List");
-static_assert(sizeof(UPyWidget_MallCoupon_List) == 0x000620, "Wrong size on UPyWidget_MallCoupon_List");
-static_assert(offsetof(UPyWidget_MallCoupon_List, ESC_Action) == 0x0005F8, "Member 'UPyWidget_MallCoupon_List::ESC_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_List, OnSelectCoupon) == 0x000600, "Member 'UPyWidget_MallCoupon_List::OnSelectCoupon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_List, OnCloseCouponList) == 0x000610, "Member 'UPyWidget_MallCoupon_List::OnCloseCouponList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallCoupon_List;
 
 // PythonClass PyWidget_MallCoupon_List.MallCouponData
 // 0x0018 (0x0048 - 0x0030)
@@ -61,32 +61,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MallCouponData">();
+		STATIC_CLASS_IMPL("MallCouponData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MallCouponData")
 	}
 	static class UMallCouponData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMallCouponData>();
 	}
 };
-static_assert(alignof(UMallCouponData) == 0x000008, "Wrong alignment on UMallCouponData");
-static_assert(sizeof(UMallCouponData) == 0x000048, "Wrong size on UMallCouponData");
-static_assert(offsetof(UMallCouponData, ItemID) == 0x000030, "Member 'UMallCouponData::ItemID' has a wrong offset!");
-static_assert(offsetof(UMallCouponData, EndTime) == 0x000040, "Member 'UMallCouponData::EndTime' has a wrong offset!");
-static_assert(offsetof(UMallCouponData, IsSelect) == 0x000044, "Member 'UMallCouponData::IsSelect' has a wrong offset!");
-static_assert(offsetof(UMallCouponData, IsBestValue) == 0x000045, "Member 'UMallCouponData::IsBestValue' has a wrong offset!");
+DUMPER7_ASSERTS_UMallCouponData;
 
 // PythonClass PyWidget_MallCoupon_List.PyWidget_MallCoupon_Item
-// 0x0078 (0x05E8 - 0x0570)
+// 0x0078 (0x05F0 - 0x0578)
 class UPyWidget_MallCoupon_Item final : public UWidget_ListEntry
 {
 public:
-	struct FSlateColor                            TextColorSelect;                                   // 0x0570(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColorUnSelect;                                 // 0x0584(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeNormalColor;                                   // 0x0598(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiringColor;                                 // 0x05AC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TimeExpiredColor;                                  // 0x05C0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5D4[0x4];                                      // 0x05D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UObject* ItemData)> OnSelectItem;                            // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorSelect;                                   // 0x0578(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColorUnSelect;                                 // 0x058C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeNormalColor;                                   // 0x05A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiringColor;                                 // 0x05B4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TimeExpiredColor;                                  // 0x05C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5DC[0x4];                                      // 0x05DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UObject* ItemData)> OnSelectItem;                            // 0x05E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -96,21 +95,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_MallCoupon_Item">();
+		STATIC_CLASS_IMPL("PyWidget_MallCoupon_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_MallCoupon_Item")
 	}
 	static class UPyWidget_MallCoupon_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_MallCoupon_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_MallCoupon_Item) == 0x000008, "Wrong alignment on UPyWidget_MallCoupon_Item");
-static_assert(sizeof(UPyWidget_MallCoupon_Item) == 0x0005E8, "Wrong size on UPyWidget_MallCoupon_Item");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, TextColorSelect) == 0x000570, "Member 'UPyWidget_MallCoupon_Item::TextColorSelect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, TextColorUnSelect) == 0x000584, "Member 'UPyWidget_MallCoupon_Item::TextColorUnSelect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, TimeNormalColor) == 0x000598, "Member 'UPyWidget_MallCoupon_Item::TimeNormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, TimeExpiringColor) == 0x0005AC, "Member 'UPyWidget_MallCoupon_Item::TimeExpiringColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, TimeExpiredColor) == 0x0005C0, "Member 'UPyWidget_MallCoupon_Item::TimeExpiredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_MallCoupon_Item, OnSelectItem) == 0x0005D8, "Member 'UPyWidget_MallCoupon_Item::OnSelectItem' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_MallCoupon_Item;
 
 }
 

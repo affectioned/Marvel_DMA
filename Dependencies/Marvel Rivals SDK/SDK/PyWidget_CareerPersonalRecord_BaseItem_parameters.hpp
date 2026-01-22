@@ -21,9 +21,7 @@ struct PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict final
 public:
 	class UObject*                                info;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict) == 0x000008, "Wrong alignment on PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict");
-static_assert(sizeof(PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict) == 0x000008, "Wrong size on PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict");
-static_assert(offsetof(PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict, info) == 0x000000, "Member 'PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict::info' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPersonalRecord_BaseItem_SetInfoDict;
 
 // PythonFunction PyWidget_CareerPersonalRecord_BaseItem.PyWidget_CareerPersonalRecord_BaseItem.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished");
-static_assert(sizeof(PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished");
-static_assert(offsetof(PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished, animation) == 0x000000, "Member 'PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished::animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_CareerPersonalRecord_BaseItem_OnAnimationFinished;
 
 }
 

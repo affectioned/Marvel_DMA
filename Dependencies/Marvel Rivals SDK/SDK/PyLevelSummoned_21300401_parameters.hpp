@@ -30,13 +30,7 @@ public:
 	const class UAbilitySystemComponent*          TargetASC;                                         // 0x0A00(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         ReturnValue;                                       // 0x0A08(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300401_K2_OnModifyDamage) == 0x000008, "Wrong alignment on PyLevelSummoned_21300401_K2_OnModifyDamage");
-static_assert(sizeof(PyLevelSummoned_21300401_K2_OnModifyDamage) == 0x000A10, "Wrong size on PyLevelSummoned_21300401_K2_OnModifyDamage");
-static_assert(offsetof(PyLevelSummoned_21300401_K2_OnModifyDamage, Spec) == 0x000000, "Member 'PyLevelSummoned_21300401_K2_OnModifyDamage::Spec' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_K2_OnModifyDamage, InDamage) == 0x0009F0, "Member 'PyLevelSummoned_21300401_K2_OnModifyDamage::InDamage' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_K2_OnModifyDamage, SourceASC) == 0x0009F8, "Member 'PyLevelSummoned_21300401_K2_OnModifyDamage::SourceASC' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_K2_OnModifyDamage, TargetASC) == 0x000A00, "Member 'PyLevelSummoned_21300401_K2_OnModifyDamage::TargetASC' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_K2_OnModifyDamage, ReturnValue) == 0x000A08, "Member 'PyLevelSummoned_21300401_K2_OnModifyDamage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300401_K2_OnModifyDamage;
 
 // PythonFunction PyLevelSummoned_21300401.PyLevelSummoned_21300401.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -47,11 +41,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300401_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_21300401_OnDeath");
-static_assert(sizeof(PyLevelSummoned_21300401_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_21300401_OnDeath");
-static_assert(offsetof(PyLevelSummoned_21300401_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_21300401_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_21300401_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_21300401_OnDeath, ParameterHandle) == 0x000010, "Member 'PyLevelSummoned_21300401_OnDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300401_OnDeath;
 
 // PythonFunction PyLevelSummoned_21300401.PyLevelSummoned_21300401.SetState
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +50,7 @@ struct PyLevelSummoned_21300401_SetState final
 public:
 	EHalloweenObjectState                         State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_21300401_SetState) == 0x000001, "Wrong alignment on PyLevelSummoned_21300401_SetState");
-static_assert(sizeof(PyLevelSummoned_21300401_SetState) == 0x000001, "Wrong size on PyLevelSummoned_21300401_SetState");
-static_assert(offsetof(PyLevelSummoned_21300401_SetState, State) == 0x000000, "Member 'PyLevelSummoned_21300401_SetState::State' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_21300401_SetState;
 
 }
 

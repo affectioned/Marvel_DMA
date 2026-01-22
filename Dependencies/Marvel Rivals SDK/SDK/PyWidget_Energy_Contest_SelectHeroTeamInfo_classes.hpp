@@ -18,27 +18,27 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Energy_Contest_SelectHeroTeamInfo.PyWidget_EnergyContest_SelectHeroTeamInfo
-// 0x0098 (0x0658 - 0x05C0)
+// 0x0098 (0x0660 - 0x05C8)
 class UPyWidget_EnergyContest_SelectHeroTeamInfo final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Img_A1;                                            // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_A2;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_B1;                                            // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_B2;                                            // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_C1;                                            // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_C2;                                            // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FText>                           CampText;                                          // 0x05F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   CampColor;                                         // 0x0600(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                   CampOutlineColor;                                  // 0x0610(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Point1;                                        // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Point2;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Point3;                                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_FactionBg;                                    // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Faction;                                      // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_MapName1;                                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_MapName2;                                     // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Img_A1;                                            // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_A2;                                            // 0x05D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_B1;                                            // 0x05D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_B2;                                            // 0x05E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_C1;                                            // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_C2;                                            // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FText>                           CampText;                                          // 0x05F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   CampColor;                                         // 0x0608(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                   CampOutlineColor;                                  // 0x0618(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Point1;                                        // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Point2;                                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Point3;                                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_FactionBg;                                    // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Faction;                                      // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_MapName1;                                     // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_MapName2;                                     // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -48,31 +48,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_EnergyContest_SelectHeroTeamInfo">();
+		STATIC_CLASS_IMPL("PyWidget_EnergyContest_SelectHeroTeamInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_EnergyContest_SelectHeroTeamInfo")
 	}
 	static class UPyWidget_EnergyContest_SelectHeroTeamInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_EnergyContest_SelectHeroTeamInfo>();
 	}
 };
-static_assert(alignof(UPyWidget_EnergyContest_SelectHeroTeamInfo) == 0x000008, "Wrong alignment on UPyWidget_EnergyContest_SelectHeroTeamInfo");
-static_assert(sizeof(UPyWidget_EnergyContest_SelectHeroTeamInfo) == 0x000658, "Wrong size on UPyWidget_EnergyContest_SelectHeroTeamInfo");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_A1) == 0x0005C0, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_A1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_A2) == 0x0005C8, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_A2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_B1) == 0x0005D0, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_B1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_B2) == 0x0005D8, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_B2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_C1) == 0x0005E0, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_C1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_C2) == 0x0005E8, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_C2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, CampText) == 0x0005F0, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::CampText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, CampColor) == 0x000600, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::CampColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, CampOutlineColor) == 0x000610, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::CampOutlineColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_Point1) == 0x000620, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_Point1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_Point2) == 0x000628, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_Point2' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Img_Point3) == 0x000630, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Img_Point3' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Text_FactionBg) == 0x000638, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Text_FactionBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Text_Faction) == 0x000640, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Text_Faction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Text_MapName1) == 0x000648, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Text_MapName1' has a wrong offset!");
-static_assert(offsetof(UPyWidget_EnergyContest_SelectHeroTeamInfo, Text_MapName2) == 0x000650, "Member 'UPyWidget_EnergyContest_SelectHeroTeamInfo::Text_MapName2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_EnergyContest_SelectHeroTeamInfo;
 
 }
 

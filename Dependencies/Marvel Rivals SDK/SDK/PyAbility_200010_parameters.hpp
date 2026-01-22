@@ -21,9 +21,7 @@ struct PyAbility_200010_CanPreActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200010_CanPreActivate) == 0x000001, "Wrong alignment on PyAbility_200010_CanPreActivate");
-static_assert(sizeof(PyAbility_200010_CanPreActivate) == 0x000001, "Wrong size on PyAbility_200010_CanPreActivate");
-static_assert(offsetof(PyAbility_200010_CanPreActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200010_CanPreActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200010_CanPreActivate;
 
 // PythonFunction PyAbility_200010.PyAbility_200010.CanActivate
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyAbility_200010_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_200010_CanActivate) == 0x000001, "Wrong alignment on PyAbility_200010_CanActivate");
-static_assert(sizeof(PyAbility_200010_CanActivate) == 0x000001, "Wrong size on PyAbility_200010_CanActivate");
-static_assert(offsetof(PyAbility_200010_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_200010_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_200010_CanActivate;
 
 }
 

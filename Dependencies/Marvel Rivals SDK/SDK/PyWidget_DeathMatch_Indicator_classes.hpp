@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -44,25 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Deathmatch_Indicator">();
+		STATIC_CLASS_IMPL("PyWidget_Deathmatch_Indicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Deathmatch_Indicator")
 	}
 	static class UPyWidget_Deathmatch_Indicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Deathmatch_Indicator>();
 	}
 };
-static_assert(alignof(UPyWidget_Deathmatch_Indicator) == 0x000010, "Wrong alignment on UPyWidget_Deathmatch_Indicator");
-static_assert(sizeof(UPyWidget_Deathmatch_Indicator) == 0x0008B0, "Wrong size on UPyWidget_Deathmatch_Indicator");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, MinScale) == 0x000870, "Member 'UPyWidget_Deathmatch_Indicator::MinScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, MinDistance) == 0x000874, "Member 'UPyWidget_Deathmatch_Indicator::MinDistance' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, MaxScale) == 0x000878, "Member 'UPyWidget_Deathmatch_Indicator::MaxScale' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, MaxDistance) == 0x00087C, "Member 'UPyWidget_Deathmatch_Indicator::MaxDistance' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, AllyOccupyColor) == 0x000880, "Member 'UPyWidget_Deathmatch_Indicator::AllyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, EmenyOccupyColor) == 0x000890, "Member 'UPyWidget_Deathmatch_Indicator::EmenyOccupyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, AllyVisiable) == 0x0008A0, "Member 'UPyWidget_Deathmatch_Indicator::AllyVisiable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, EmenyVisiable) == 0x0008A1, "Member 'UPyWidget_Deathmatch_Indicator::EmenyVisiable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, LocalVisiable) == 0x0008A2, "Member 'UPyWidget_Deathmatch_Indicator::LocalVisiable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Deathmatch_Indicator, Side) == 0x0008A3, "Member 'UPyWidget_Deathmatch_Indicator::Side' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Deathmatch_Indicator;
 
 }
 

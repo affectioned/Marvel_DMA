@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TurnCharacterAndCameraAbility_103631.TurnCharacterAndCameraAbility_103631_C
-// 0x0000 (0x1390 - 0x1390)
+// 0x0000 (0x13A8 - 0x13A8)
 class UTurnCharacterAndCameraAbility_103631_C final : public UMarvelTurnCharacterAndCameraAbility_103631
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TurnCharacterAndCameraAbility_103631_C">();
+		BP_STATIC_CLASS_IMPL("TurnCharacterAndCameraAbility_103631_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurnCharacterAndCameraAbility_103631_C")
 	}
 	static class UTurnCharacterAndCameraAbility_103631_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTurnCharacterAndCameraAbility_103631_C>();
 	}
 };
-static_assert(alignof(UTurnCharacterAndCameraAbility_103631_C) == 0x000008, "Wrong alignment on UTurnCharacterAndCameraAbility_103631_C");
-static_assert(sizeof(UTurnCharacterAndCameraAbility_103631_C) == 0x001390, "Wrong size on UTurnCharacterAndCameraAbility_103631_C");
+DUMPER7_ASSERTS_UTurnCharacterAndCameraAbility_103631_C;
 
 }
 

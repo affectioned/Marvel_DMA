@@ -27,28 +27,19 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation");
-static_assert(sizeof(PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation) == 0x0001E0, "Wrong size on PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation, InFXComponent) == 0x000000, "Member 'PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation::InFXComponent' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation, MyTarget) == 0x000008, "Member 'PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation, Parameters) == 0x000010, "Member 'PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10377301_AdjustNiagaraRotation;
 
 // PythonFunction PyAbility_103773.PyCue_Scope_HitImpact_10377301.ComputeDecalRotation
-// 0x0218 (0x0218 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct PyCue_Scope_HitImpact_10377301_ComputeDecalRotation final
 {
 public:
 	class AActor*                                 InInstigator;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 InCauser;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitResult;                                         // 0x0010(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FRotator                               ReturnValue;                                       // 0x0200(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	struct FHitResult                             HitResult;                                         // 0x0010(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FRotator                               ReturnValue;                                       // 0x0218(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation) == 0x000008, "Wrong alignment on PyCue_Scope_HitImpact_10377301_ComputeDecalRotation");
-static_assert(sizeof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation) == 0x000218, "Wrong size on PyCue_Scope_HitImpact_10377301_ComputeDecalRotation");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation, InInstigator) == 0x000000, "Member 'PyCue_Scope_HitImpact_10377301_ComputeDecalRotation::InInstigator' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation, InCauser) == 0x000008, "Member 'PyCue_Scope_HitImpact_10377301_ComputeDecalRotation::InCauser' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation, HitResult) == 0x000010, "Member 'PyCue_Scope_HitImpact_10377301_ComputeDecalRotation::HitResult' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_HitImpact_10377301_ComputeDecalRotation, ReturnValue) == 0x000200, "Member 'PyCue_Scope_HitImpact_10377301_ComputeDecalRotation::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_HitImpact_10377301_ComputeDecalRotation;
 
 // PythonFunction PyAbility_103773.PyCue_Projectile_Loop_10377301.OnActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -59,11 +50,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Projectile_Loop_10377301_OnActive) == 0x000008, "Wrong alignment on PyCue_Projectile_Loop_10377301_OnActive");
-static_assert(sizeof(PyCue_Projectile_Loop_10377301_OnActive) == 0x0001E0, "Wrong size on PyCue_Projectile_Loop_10377301_OnActive");
-static_assert(offsetof(PyCue_Projectile_Loop_10377301_OnActive, MyTarget) == 0x000000, "Member 'PyCue_Projectile_Loop_10377301_OnActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_10377301_OnActive, Parameters) == 0x000008, "Member 'PyCue_Projectile_Loop_10377301_OnActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Projectile_Loop_10377301_OnActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Projectile_Loop_10377301_OnActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Projectile_Loop_10377301_OnActive;
 
 // PythonFunction PyAbility_103773.PyCue_Scope_Start_10377301.OnExecuteCamera
 // 0x01D8 (0x01D8 - 0x0000)
@@ -73,10 +60,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Scope_Start_10377301_OnExecuteCamera) == 0x000008, "Wrong alignment on PyCue_Scope_Start_10377301_OnExecuteCamera");
-static_assert(sizeof(PyCue_Scope_Start_10377301_OnExecuteCamera) == 0x0001D8, "Wrong size on PyCue_Scope_Start_10377301_OnExecuteCamera");
-static_assert(offsetof(PyCue_Scope_Start_10377301_OnExecuteCamera, MyTarget) == 0x000000, "Member 'PyCue_Scope_Start_10377301_OnExecuteCamera::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Scope_Start_10377301_OnExecuteCamera, Parameters) == 0x000008, "Member 'PyCue_Scope_Start_10377301_OnExecuteCamera::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Scope_Start_10377301_OnExecuteCamera;
 
 }
 

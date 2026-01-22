@@ -29,15 +29,18 @@ class UMassEntityTraitBase : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntityTraitBase">();
+		STATIC_CLASS_IMPL("MassEntityTraitBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntityTraitBase")
 	}
 	static class UMassEntityTraitBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntityTraitBase>();
 	}
 };
-static_assert(alignof(UMassEntityTraitBase) == 0x000008, "Wrong alignment on UMassEntityTraitBase");
-static_assert(sizeof(UMassEntityTraitBase) == 0x000030, "Wrong size on UMassEntityTraitBase");
+DUMPER7_ASSERTS_UMassEntityTraitBase;
 
 // Class MassSpawner.MassAssortedFragmentsTrait
 // 0x0020 (0x0050 - 0x0030)
@@ -50,17 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassAssortedFragmentsTrait">();
+		STATIC_CLASS_IMPL("MassAssortedFragmentsTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassAssortedFragmentsTrait")
 	}
 	static class UMassAssortedFragmentsTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassAssortedFragmentsTrait>();
 	}
 };
-static_assert(alignof(UMassAssortedFragmentsTrait) == 0x000008, "Wrong alignment on UMassAssortedFragmentsTrait");
-static_assert(sizeof(UMassAssortedFragmentsTrait) == 0x000050, "Wrong size on UMassAssortedFragmentsTrait");
-static_assert(offsetof(UMassAssortedFragmentsTrait, Fragments) == 0x000030, "Member 'UMassAssortedFragmentsTrait::Fragments' has a wrong offset!");
-static_assert(offsetof(UMassAssortedFragmentsTrait, Tags) == 0x000040, "Member 'UMassAssortedFragmentsTrait::Tags' has a wrong offset!");
+DUMPER7_ASSERTS_UMassAssortedFragmentsTrait;
 
 // Class MassSpawner.MassEntityConfigAsset
 // 0x0030 (0x0068 - 0x0038)
@@ -72,16 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntityConfigAsset">();
+		STATIC_CLASS_IMPL("MassEntityConfigAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntityConfigAsset")
 	}
 	static class UMassEntityConfigAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntityConfigAsset>();
 	}
 };
-static_assert(alignof(UMassEntityConfigAsset) == 0x000008, "Wrong alignment on UMassEntityConfigAsset");
-static_assert(sizeof(UMassEntityConfigAsset) == 0x000068, "Wrong size on UMassEntityConfigAsset");
-static_assert(offsetof(UMassEntityConfigAsset, Config) == 0x000038, "Member 'UMassEntityConfigAsset::Config' has a wrong offset!");
+DUMPER7_ASSERTS_UMassEntityConfigAsset;
 
 // Class MassSpawner.MassEntitySpawnDataGeneratorBase
 // 0x0008 (0x0038 - 0x0030)
@@ -95,16 +101,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntitySpawnDataGeneratorBase">();
+		STATIC_CLASS_IMPL("MassEntitySpawnDataGeneratorBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntitySpawnDataGeneratorBase")
 	}
 	static class UMassEntitySpawnDataGeneratorBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntitySpawnDataGeneratorBase>();
 	}
 };
-static_assert(alignof(UMassEntitySpawnDataGeneratorBase) == 0x000008, "Wrong alignment on UMassEntitySpawnDataGeneratorBase");
-static_assert(sizeof(UMassEntitySpawnDataGeneratorBase) == 0x000038, "Wrong size on UMassEntitySpawnDataGeneratorBase");
-static_assert(offsetof(UMassEntitySpawnDataGeneratorBase, RandomSelectionSeed) == 0x000030, "Member 'UMassEntitySpawnDataGeneratorBase::RandomSelectionSeed' has a wrong offset!");
+DUMPER7_ASSERTS_UMassEntitySpawnDataGeneratorBase;
 
 // Class MassSpawner.MassEntityEQSSpawnPointsGenerator
 // 0x0050 (0x0088 - 0x0038)
@@ -116,16 +124,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntityEQSSpawnPointsGenerator">();
+		STATIC_CLASS_IMPL("MassEntityEQSSpawnPointsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntityEQSSpawnPointsGenerator")
 	}
 	static class UMassEntityEQSSpawnPointsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntityEQSSpawnPointsGenerator>();
 	}
 };
-static_assert(alignof(UMassEntityEQSSpawnPointsGenerator) == 0x000008, "Wrong alignment on UMassEntityEQSSpawnPointsGenerator");
-static_assert(sizeof(UMassEntityEQSSpawnPointsGenerator) == 0x000088, "Wrong size on UMassEntityEQSSpawnPointsGenerator");
-static_assert(offsetof(UMassEntityEQSSpawnPointsGenerator, EQSRequest) == 0x000038, "Member 'UMassEntityEQSSpawnPointsGenerator::EQSRequest' has a wrong offset!");
+DUMPER7_ASSERTS_UMassEntityEQSSpawnPointsGenerator;
 
 // Class MassSpawner.MassEntityTemplateRegistry
 // 0x0000 (0x0030 - 0x0030)
@@ -134,15 +144,18 @@ class UMassEntityTemplateRegistry final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntityTemplateRegistry">();
+		STATIC_CLASS_IMPL("MassEntityTemplateRegistry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntityTemplateRegistry")
 	}
 	static class UMassEntityTemplateRegistry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntityTemplateRegistry>();
 	}
 };
-static_assert(alignof(UMassEntityTemplateRegistry) == 0x000008, "Wrong alignment on UMassEntityTemplateRegistry");
-static_assert(sizeof(UMassEntityTemplateRegistry) == 0x000030, "Wrong size on UMassEntityTemplateRegistry");
+DUMPER7_ASSERTS_UMassEntityTemplateRegistry;
 
 // Class MassSpawner.MassEntityZoneGraphSpawnPointsGenerator
 // 0x0018 (0x0050 - 0x0038)
@@ -157,18 +170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassEntityZoneGraphSpawnPointsGenerator">();
+		STATIC_CLASS_IMPL("MassEntityZoneGraphSpawnPointsGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassEntityZoneGraphSpawnPointsGenerator")
 	}
 	static class UMassEntityZoneGraphSpawnPointsGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassEntityZoneGraphSpawnPointsGenerator>();
 	}
 };
-static_assert(alignof(UMassEntityZoneGraphSpawnPointsGenerator) == 0x000008, "Wrong alignment on UMassEntityZoneGraphSpawnPointsGenerator");
-static_assert(sizeof(UMassEntityZoneGraphSpawnPointsGenerator) == 0x000050, "Wrong size on UMassEntityZoneGraphSpawnPointsGenerator");
-static_assert(offsetof(UMassEntityZoneGraphSpawnPointsGenerator, TagFilter) == 0x000038, "Member 'UMassEntityZoneGraphSpawnPointsGenerator::TagFilter' has a wrong offset!");
-static_assert(offsetof(UMassEntityZoneGraphSpawnPointsGenerator, MinGap) == 0x000044, "Member 'UMassEntityZoneGraphSpawnPointsGenerator::MinGap' has a wrong offset!");
-static_assert(offsetof(UMassEntityZoneGraphSpawnPointsGenerator, MaxGap) == 0x000048, "Member 'UMassEntityZoneGraphSpawnPointsGenerator::MaxGap' has a wrong offset!");
+DUMPER7_ASSERTS_UMassEntityZoneGraphSpawnPointsGenerator;
 
 // Class MassSpawner.MassSpawner
 // 0x00A0 (0x0780 - 0x06E0)
@@ -201,44 +214,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSpawner">();
+		STATIC_CLASS_IMPL("MassSpawner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSpawner")
 	}
 	static class AMassSpawner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMassSpawner>();
 	}
 };
-static_assert(alignof(AMassSpawner) == 0x000010, "Wrong alignment on AMassSpawner");
-static_assert(sizeof(AMassSpawner) == 0x000780, "Wrong size on AMassSpawner");
-static_assert(offsetof(AMassSpawner, OnSpawningFinishedEvent) == 0x0006D8, "Member 'AMassSpawner::OnSpawningFinishedEvent' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, OnDespawningFinishedEvent) == 0x0006E8, "Member 'AMassSpawner::OnDespawningFinishedEvent' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, Count) == 0x0006F8, "Member 'AMassSpawner::Count' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, EntityTypes) == 0x000700, "Member 'AMassSpawner::EntityTypes' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, SpawnDataGenerators) == 0x000710, "Member 'AMassSpawner::SpawnDataGenerators' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, PostSpawnProcessors) == 0x000728, "Member 'AMassSpawner::PostSpawnProcessors' has a wrong offset!");
-static_assert(offsetof(AMassSpawner, SpawningCountScale) == 0x000738, "Member 'AMassSpawner::SpawningCountScale' has a wrong offset!");
+DUMPER7_ASSERTS_AMassSpawner;
 
 // Class MassSpawner.MassSpawnerSubsystem
-// 0x0088 (0x00C0 - 0x0038)
+// 0x0088 (0x00C8 - 0x0040)
 class UMassSpawnerSubsystem final : public UWorldSubsystem
 {
 public:
-	TArray<class UMassProcessor*>                 SpawnDataInitializers;                             // 0x0038(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_48[0x78];                                      // 0x0048(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class UMassProcessor*>                 SpawnDataInitializers;                             // 0x0040(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x78];                                      // 0x0050(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSpawnerSubsystem">();
+		STATIC_CLASS_IMPL("MassSpawnerSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSpawnerSubsystem")
 	}
 	static class UMassSpawnerSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSpawnerSubsystem>();
 	}
 };
-static_assert(alignof(UMassSpawnerSubsystem) == 0x000008, "Wrong alignment on UMassSpawnerSubsystem");
-static_assert(sizeof(UMassSpawnerSubsystem) == 0x0000C0, "Wrong size on UMassSpawnerSubsystem");
-static_assert(offsetof(UMassSpawnerSubsystem, SpawnDataInitializers) == 0x000038, "Member 'UMassSpawnerSubsystem::SpawnDataInitializers' has a wrong offset!");
+DUMPER7_ASSERTS_UMassSpawnerSubsystem;
 
 // Class MassSpawner.MassSpawnLocationProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -250,15 +261,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSpawnLocationProcessor">();
+		STATIC_CLASS_IMPL("MassSpawnLocationProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSpawnLocationProcessor")
 	}
 	static class UMassSpawnLocationProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSpawnLocationProcessor>();
 	}
 };
-static_assert(alignof(UMassSpawnLocationProcessor) == 0x000008, "Wrong alignment on UMassSpawnLocationProcessor");
-static_assert(sizeof(UMassSpawnLocationProcessor) == 0x000370, "Wrong size on UMassSpawnLocationProcessor");
+DUMPER7_ASSERTS_UMassSpawnLocationProcessor;
 
 // Class MassSpawner.MassTranslator
 // 0x0020 (0x00E8 - 0x00C8)
@@ -270,15 +284,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassTranslator">();
+		STATIC_CLASS_IMPL("MassTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassTranslator")
 	}
 	static class UMassTranslator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassTranslator>();
 	}
 };
-static_assert(alignof(UMassTranslator) == 0x000008, "Wrong alignment on UMassTranslator");
-static_assert(sizeof(UMassTranslator) == 0x0000E8, "Wrong size on UMassTranslator");
+DUMPER7_ASSERTS_UMassTranslator;
 
 }
 

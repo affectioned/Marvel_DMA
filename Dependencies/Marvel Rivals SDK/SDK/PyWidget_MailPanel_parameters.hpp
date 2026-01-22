@@ -23,9 +23,7 @@ struct PyWidget_MailPanel_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_MailPanel_MarvelSetVisible");
-static_assert(sizeof(PyWidget_MailPanel_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_MailPanel_MarvelSetVisible");
-static_assert(offsetof(PyWidget_MailPanel_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_MailPanel_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_MarvelSetVisible;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.navigation_to_first_content
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_navigation_to_first_content) == 0x000008, "Wrong alignment on PyWidget_MailPanel_navigation_to_first_content");
-static_assert(sizeof(PyWidget_MailPanel_navigation_to_first_content) == 0x000010, "Wrong size on PyWidget_MailPanel_navigation_to_first_content");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_first_content, NavType) == 0x000000, "Member 'PyWidget_MailPanel_navigation_to_first_content::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_first_content, ReturnValue) == 0x000008, "Member 'PyWidget_MailPanel_navigation_to_first_content::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_navigation_to_first_content;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.navigation_to_next_content
 // 0x0010 (0x0010 - 0x0000)
@@ -50,10 +45,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_navigation_to_next_content) == 0x000008, "Wrong alignment on PyWidget_MailPanel_navigation_to_next_content");
-static_assert(sizeof(PyWidget_MailPanel_navigation_to_next_content) == 0x000010, "Wrong size on PyWidget_MailPanel_navigation_to_next_content");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_next_content, NavType) == 0x000000, "Member 'PyWidget_MailPanel_navigation_to_next_content::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_next_content, ReturnValue) == 0x000008, "Member 'PyWidget_MailPanel_navigation_to_next_content::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_navigation_to_next_content;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.navigation_to_selected_mail_unit
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +56,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_navigation_to_selected_mail_unit) == 0x000008, "Wrong alignment on PyWidget_MailPanel_navigation_to_selected_mail_unit");
-static_assert(sizeof(PyWidget_MailPanel_navigation_to_selected_mail_unit) == 0x000010, "Wrong size on PyWidget_MailPanel_navigation_to_selected_mail_unit");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_selected_mail_unit, NavType) == 0x000000, "Member 'PyWidget_MailPanel_navigation_to_selected_mail_unit::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_selected_mail_unit, ReturnValue) == 0x000008, "Member 'PyWidget_MailPanel_navigation_to_selected_mail_unit::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_navigation_to_selected_mail_unit;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.navigation_to_content_center
 // 0x0010 (0x0010 - 0x0000)
@@ -78,10 +67,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_navigation_to_content_center) == 0x000008, "Wrong alignment on PyWidget_MailPanel_navigation_to_content_center");
-static_assert(sizeof(PyWidget_MailPanel_navigation_to_content_center) == 0x000010, "Wrong size on PyWidget_MailPanel_navigation_to_content_center");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_content_center, NavType) == 0x000000, "Member 'PyWidget_MailPanel_navigation_to_content_center::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_MailPanel_navigation_to_content_center, ReturnValue) == 0x000008, "Member 'PyWidget_MailPanel_navigation_to_content_center::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_navigation_to_content_center;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.navigation_from_center_to_content
 // 0x0010 (0x0010 - 0x0000)
@@ -92,10 +78,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_navigation_from_center_to_content) == 0x000008, "Wrong alignment on PyWidget_MailPanel_navigation_from_center_to_content");
-static_assert(sizeof(PyWidget_MailPanel_navigation_from_center_to_content) == 0x000010, "Wrong size on PyWidget_MailPanel_navigation_from_center_to_content");
-static_assert(offsetof(PyWidget_MailPanel_navigation_from_center_to_content, NavType) == 0x000000, "Member 'PyWidget_MailPanel_navigation_from_center_to_content::NavType' has a wrong offset!");
-static_assert(offsetof(PyWidget_MailPanel_navigation_from_center_to_content, ReturnValue) == 0x000008, "Member 'PyWidget_MailPanel_navigation_from_center_to_content::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_navigation_from_center_to_content;
 
 // PythonFunction PyWidget_MailPanel.PyWidget_MailPanel.OnListviewEntryGenerated
 // 0x0008 (0x0008 - 0x0000)
@@ -104,9 +87,7 @@ struct PyWidget_MailPanel_OnListviewEntryGenerated final
 public:
 	class UUserWidget*                            EntryWidget;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MailPanel_OnListviewEntryGenerated) == 0x000008, "Wrong alignment on PyWidget_MailPanel_OnListviewEntryGenerated");
-static_assert(sizeof(PyWidget_MailPanel_OnListviewEntryGenerated) == 0x000008, "Wrong size on PyWidget_MailPanel_OnListviewEntryGenerated");
-static_assert(offsetof(PyWidget_MailPanel_OnListviewEntryGenerated, EntryWidget) == 0x000000, "Member 'PyWidget_MailPanel_OnListviewEntryGenerated::EntryWidget' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MailPanel_OnListviewEntryGenerated;
 
 }
 

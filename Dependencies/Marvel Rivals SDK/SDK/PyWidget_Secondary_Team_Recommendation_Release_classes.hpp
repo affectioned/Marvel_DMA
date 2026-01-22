@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "PyWidget_SecondaryChildBase_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "PyWidget_SecondaryChildBase_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_Team_Recommendation_Release.PyWidget_Secondary_Team_Recommendation_Release
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Secondary_Team_Recommendation_Release final : public UPyWidget_SecondaryChildBase
 {
 public:
@@ -36,15 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_Team_Recommendation_Release">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_Team_Recommendation_Release")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_Team_Recommendation_Release")
 	}
 	static class UPyWidget_Secondary_Team_Recommendation_Release* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_Team_Recommendation_Release>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_Team_Recommendation_Release) == 0x000008, "Wrong alignment on UPyWidget_Secondary_Team_Recommendation_Release");
-static_assert(sizeof(UPyWidget_Secondary_Team_Recommendation_Release) == 0x0005C0, "Wrong size on UPyWidget_Secondary_Team_Recommendation_Release");
+DUMPER7_ASSERTS_UPyWidget_Secondary_Team_Recommendation_Release;
 
 }
 

@@ -26,12 +26,7 @@ public:
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyPayloadShowActorEndShowAnimNotify_Received_Notify) == 0x000008, "Wrong alignment on PyPayloadShowActorEndShowAnimNotify_Received_Notify");
-static_assert(sizeof(PyPayloadShowActorEndShowAnimNotify_Received_Notify) == 0x000048, "Wrong size on PyPayloadShowActorEndShowAnimNotify_Received_Notify");
-static_assert(offsetof(PyPayloadShowActorEndShowAnimNotify_Received_Notify, MeshComp) == 0x000000, "Member 'PyPayloadShowActorEndShowAnimNotify_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(PyPayloadShowActorEndShowAnimNotify_Received_Notify, Animation) == 0x000008, "Member 'PyPayloadShowActorEndShowAnimNotify_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(PyPayloadShowActorEndShowAnimNotify_Received_Notify, EventReference) == 0x000010, "Member 'PyPayloadShowActorEndShowAnimNotify_Received_Notify::EventReference' has a wrong offset!");
-static_assert(offsetof(PyPayloadShowActorEndShowAnimNotify_Received_Notify, ReturnValue) == 0x000040, "Member 'PyPayloadShowActorEndShowAnimNotify_Received_Notify::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyPayloadShowActorEndShowAnimNotify_Received_Notify;
 
 }
 

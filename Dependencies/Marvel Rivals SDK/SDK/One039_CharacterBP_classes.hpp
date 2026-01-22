@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1039_CharacterBP.1039_CharacterBP_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x22C0 - 0x22C0)
 class AOne039_CharacterBP_C final : public APyThorCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1039_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1039_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1039_CharacterBP_C")
 	}
 	static class AOne039_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne039_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne039_CharacterBP_C) == 0x000010, "Wrong alignment on AOne039_CharacterBP_C");
-static_assert(sizeof(AOne039_CharacterBP_C) == 0x0021B0, "Wrong size on AOne039_CharacterBP_C");
+DUMPER7_ASSERTS_AOne039_CharacterBP_C;
 
 }
 

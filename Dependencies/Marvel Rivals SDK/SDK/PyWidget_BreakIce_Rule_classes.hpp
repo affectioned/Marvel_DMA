@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BreakIce_Rule.PyWidget_BreakIce_Rule
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_BreakIce_Rule final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BreakIce_Rule">();
+		STATIC_CLASS_IMPL("PyWidget_BreakIce_Rule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BreakIce_Rule")
 	}
 	static class UPyWidget_BreakIce_Rule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BreakIce_Rule>();
 	}
 };
-static_assert(alignof(UPyWidget_BreakIce_Rule) == 0x000008, "Wrong alignment on UPyWidget_BreakIce_Rule");
-static_assert(sizeof(UPyWidget_BreakIce_Rule) == 0x0005F8, "Wrong size on UPyWidget_BreakIce_Rule");
+DUMPER7_ASSERTS_UPyWidget_BreakIce_Rule;
 
 }
 

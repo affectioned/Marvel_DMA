@@ -23,15 +23,18 @@ class UPrototype_CS_StrongAim_Hit_C final : public ULegacyCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Prototype_CS_StrongAim_Hit_C">();
+		BP_STATIC_CLASS_IMPL("Prototype_CS_StrongAim_Hit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Prototype_CS_StrongAim_Hit_C")
 	}
 	static class UPrototype_CS_StrongAim_Hit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrototype_CS_StrongAim_Hit_C>();
 	}
 };
-static_assert(alignof(UPrototype_CS_StrongAim_Hit_C) == 0x000010, "Wrong alignment on UPrototype_CS_StrongAim_Hit_C");
-static_assert(sizeof(UPrototype_CS_StrongAim_Hit_C) == 0x0002B0, "Wrong size on UPrototype_CS_StrongAim_Hit_C");
+DUMPER7_ASSERTS_UPrototype_CS_StrongAim_Hit_C;
 
 }
 

@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Weapon_BlackWidowAutoGun.Weapon_BlackWidowAutoGun_C
-// 0x0000 (0x0CD0 - 0x0CD0)
+// 0x0000 (0x0CE0 - 0x0CE0)
 class AWeapon_BlackWidowAutoGun_C final : public ABlackWidowSniperGun
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Weapon_BlackWidowAutoGun_C">();
+		BP_STATIC_CLASS_IMPL("Weapon_BlackWidowAutoGun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Weapon_BlackWidowAutoGun_C")
 	}
 	static class AWeapon_BlackWidowAutoGun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeapon_BlackWidowAutoGun_C>();
 	}
 };
-static_assert(alignof(AWeapon_BlackWidowAutoGun_C) == 0x000010, "Wrong alignment on AWeapon_BlackWidowAutoGun_C");
-static_assert(sizeof(AWeapon_BlackWidowAutoGun_C) == 0x000CD0, "Wrong size on AWeapon_BlackWidowAutoGun_C");
+DUMPER7_ASSERTS_AWeapon_BlackWidowAutoGun_C;
 
 }
 

@@ -19,31 +19,30 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Ranking_Unit.PyWidget_Ranking_Unit
-// 0x0290 (0x0850 - 0x05C0)
+// 0x0288 (0x0850 - 0x05C8)
 class UPyWidget_Ranking_Unit final : public UPyMarvelUserWidget
 {
 public:
-	bool                                          IsPlayer;                                          // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 PlayerName;                                        // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Rank;                                              // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LimitNum_FirstPage;                                // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LimitNum_Total;                                    // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Content_FirstPage;                  // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Content_MiddlePage;                 // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Content_OtherPage;                  // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Line_FirstPage;                     // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Line_MiddlePage;                    // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_Line_OtherPage;                     // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_PlayerPortrait_FirstPage;           // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_PlayerPortrait_MiddlePage;          // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Height_SizeBox_PlayerPortrait_OtherPage;           // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Common_List_Item_Width;                            // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSlateBrush>                    Img_Special;                                       // 0x0608(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FSlateBrush>                    Img_Hovered;                                       // 0x0618(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FSlateBrush>                    Img_PlatformIconList;                              // 0x0628(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_638[0x8];                                      // 0x0638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          IsPlayer;                                          // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PlayerName;                                        // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Rank;                                              // 0x05D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LimitNum_FirstPage;                                // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LimitNum_Total;                                    // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Content_FirstPage;                  // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Content_MiddlePage;                 // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Content_OtherPage;                  // 0x05EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Line_FirstPage;                     // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Line_MiddlePage;                    // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_Line_OtherPage;                     // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_PlayerPortrait_FirstPage;           // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_PlayerPortrait_MiddlePage;          // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Height_SizeBox_PlayerPortrait_OtherPage;           // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Common_List_Item_Width;                            // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60C[0x4];                                      // 0x060C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSlateBrush>                    Img_Special;                                       // 0x0610(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FSlateBrush>                    Img_Hovered;                                       // 0x0620(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FSlateBrush>                    Img_PlatformIconList;                              // 0x0630(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            Img_InsideList;                                    // 0x0640(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            Img_OutsideList;                                   // 0x0710(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FSlateColor                            Color_MyName;                                      // 0x07E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -66,41 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Ranking_Unit">();
+		STATIC_CLASS_IMPL("PyWidget_Ranking_Unit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Ranking_Unit")
 	}
 	static class UPyWidget_Ranking_Unit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Ranking_Unit>();
 	}
 };
-static_assert(alignof(UPyWidget_Ranking_Unit) == 0x000010, "Wrong alignment on UPyWidget_Ranking_Unit");
-static_assert(sizeof(UPyWidget_Ranking_Unit) == 0x000850, "Wrong size on UPyWidget_Ranking_Unit");
-static_assert(offsetof(UPyWidget_Ranking_Unit, IsPlayer) == 0x0005BA, "Member 'UPyWidget_Ranking_Unit::IsPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, PlayerName) == 0x0005C0, "Member 'UPyWidget_Ranking_Unit::PlayerName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Rank) == 0x0005D0, "Member 'UPyWidget_Ranking_Unit::Rank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, LimitNum_FirstPage) == 0x0005D4, "Member 'UPyWidget_Ranking_Unit::LimitNum_FirstPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, LimitNum_Total) == 0x0005D8, "Member 'UPyWidget_Ranking_Unit::LimitNum_Total' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Content_FirstPage) == 0x0005DC, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Content_FirstPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Content_MiddlePage) == 0x0005E0, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Content_MiddlePage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Content_OtherPage) == 0x0005E4, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Content_OtherPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Line_FirstPage) == 0x0005E8, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Line_FirstPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Line_MiddlePage) == 0x0005EC, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Line_MiddlePage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_Line_OtherPage) == 0x0005F0, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_Line_OtherPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_PlayerPortrait_FirstPage) == 0x0005F4, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_PlayerPortrait_FirstPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_PlayerPortrait_MiddlePage) == 0x0005F8, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_PlayerPortrait_MiddlePage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Height_SizeBox_PlayerPortrait_OtherPage) == 0x0005FC, "Member 'UPyWidget_Ranking_Unit::Height_SizeBox_PlayerPortrait_OtherPage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Common_List_Item_Width) == 0x000600, "Member 'UPyWidget_Ranking_Unit::Common_List_Item_Width' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Img_Special) == 0x000608, "Member 'UPyWidget_Ranking_Unit::Img_Special' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Img_Hovered) == 0x000618, "Member 'UPyWidget_Ranking_Unit::Img_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Img_PlatformIconList) == 0x000628, "Member 'UPyWidget_Ranking_Unit::Img_PlatformIconList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Img_InsideList) == 0x000640, "Member 'UPyWidget_Ranking_Unit::Img_InsideList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Img_OutsideList) == 0x000710, "Member 'UPyWidget_Ranking_Unit::Img_OutsideList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_MyName) == 0x0007E0, "Member 'UPyWidget_Ranking_Unit::Color_MyName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_OtherName) == 0x0007F4, "Member 'UPyWidget_Ranking_Unit::Color_OtherName' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_MyEntry) == 0x000808, "Member 'UPyWidget_Ranking_Unit::Color_MyEntry' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_OtherEntry) == 0x000818, "Member 'UPyWidget_Ranking_Unit::Color_OtherEntry' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_MyEntry_Hovered) == 0x000828, "Member 'UPyWidget_Ranking_Unit::Color_MyEntry_Hovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Ranking_Unit, Color_OtherEntry_Hovered) == 0x000838, "Member 'UPyWidget_Ranking_Unit::Color_OtherEntry_Hovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Ranking_Unit;
 
 }
 

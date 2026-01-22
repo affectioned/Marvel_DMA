@@ -14,18 +14,5 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyMantisCharacter.PyUIController_MantisAbilities.OnBuffedTeammatesUpdate
-// 0x0010 (0x0010 - 0x0000)
-struct PyUIController_MantisAbilities_OnBuffedTeammatesUpdate final
-{
-public:
-	class AMarvelBaseCharacter*                   Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Action;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyUIController_MantisAbilities_OnBuffedTeammatesUpdate) == 0x000008, "Wrong alignment on PyUIController_MantisAbilities_OnBuffedTeammatesUpdate");
-static_assert(sizeof(PyUIController_MantisAbilities_OnBuffedTeammatesUpdate) == 0x000010, "Wrong size on PyUIController_MantisAbilities_OnBuffedTeammatesUpdate");
-static_assert(offsetof(PyUIController_MantisAbilities_OnBuffedTeammatesUpdate, Target) == 0x000000, "Member 'PyUIController_MantisAbilities_OnBuffedTeammatesUpdate::Target' has a wrong offset!");
-static_assert(offsetof(PyUIController_MantisAbilities_OnBuffedTeammatesUpdate, Action) == 0x000008, "Member 'PyUIController_MantisAbilities_OnBuffedTeammatesUpdate::Action' has a wrong offset!");
-
 }
 

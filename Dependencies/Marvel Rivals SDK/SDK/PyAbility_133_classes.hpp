@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_133.PyProjectile_133_Base
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_133_Base : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -33,18 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_133_Base">();
+		STATIC_CLASS_IMPL("PyProjectile_133_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_133_Base")
 	}
 	static class APyProjectile_133_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_133_Base>();
 	}
 };
-static_assert(alignof(APyProjectile_133_Base) == 0x000010, "Wrong alignment on APyProjectile_133_Base");
-static_assert(sizeof(APyProjectile_133_Base) == 0x003B90, "Wrong size on APyProjectile_133_Base");
+DUMPER7_ASSERTS_APyProjectile_133_Base;
 
 // PythonClass PyAbility_133.PyConfig_133
-// 0x52A8 (0x5340 - 0x0098)
+// 0x62A8 (0x6340 - 0x0098)
 class UPyConfig_133 : public UMarvelAbilityConfig
 {
 public:
@@ -66,145 +69,86 @@ public:
 	float                                         DelayTime_BeforeSpecialMove;                       // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DelayTime_AfterSpecialMove;                        // 0x00D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FlightToRunTime;                                   // 0x00DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo_SpecialMove;                              // 0x00E0(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDashAbilityInfo                       DashInfo_SpecialMoveSecond;                        // 0x0CA8(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         MaxHeightAboveGroundToSomersault;                  // 0x1870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ForbidRollWhenOnEdgeOffCliff;                      // 0x1874(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1875[0x3];                                     // 0x1875(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DistanceToEdgeOffCliff;                            // 0x1878(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187C[0x4];                                     // 0x187C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LaunchVelocityWhenOnEdgeOffCliff;                  // 0x1880(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1898[0x8];                                     // 0x1898(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             TraceContextForEdgeOfCliff;                        // 0x18A0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UCurveFloat*                            SwingPointMakeUpCurve;                             // 0x2F00(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwingPointMakeUpFactor;                            // 0x2F08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F0C[0x4];                                     // 0x2F0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x2F10(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         DelayTimeToDash;                                   // 0x3AD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AdjustSwingInitDirectionToCamera;                  // 0x3ADC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3ADD[0x3];                                     // 0x3ADD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxAngleCanAdjust;                                 // 0x3AE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinWallTiltAngleForSingleHandSwing;                // 0x3AE4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProbabilityOfSpinSwing;                            // 0x3AE8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinSwingAngleForSpinSwing;                         // 0x3AEC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExpectSwingAngleForSpinSwing;                      // 0x3AF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ThresholdAngleToStopSwing;                         // 0x3AF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LaunchVelocityOverMaxAngle;                        // 0x3AF8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          LaunchVelocityIsOverride;                          // 0x3B10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3B11[0x3];                                     // 0x3B11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DelayTimeToLaunch;                                 // 0x3B14(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GravityScaleWhenLaunch;                            // 0x3B18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GravityScaleApplyDuration;                         // 0x3B1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ThresholdSpeedToStopSwing;                         // 0x3B20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinSpeedOfSwing;                                   // 0x3B24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  AbilitiesToblockWhenLowSwing;                      // 0x3B28(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  AbilitiesToCancelWhenSwing;                        // 0x3B90(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          EnableDebugDrawCapsule;                            // 0x3BF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3BF9[0x7];                                     // 0x3BF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCameraInterp*                          CameraInterp_Swinging_Down;                        // 0x3C00(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterp_Swinging_Down_RightHand;              // 0x3C08(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DelayTimeToPlaySwingingDownCameraInterp;           // 0x3C10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C14[0x4];                                     // 0x3C14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCameraInterp*                          CameraInterp_Swinging_Up;                          // 0x3C18(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterp_Swinging_Up_RightHand;                // 0x3C20(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinSwingAngleToPlaySwingUpCameraEffect;            // 0x3C28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C2C[0x4];                                     // 0x3C2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class ULegacyCameraShake>         CameraShakeClass_Swinging;                         // 0x3C30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterp_LowSwinging;                          // 0x3C38(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCameraInterp*                          CameraInterp_RopeBreaking;                         // 0x3C40(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CameraInterpDuration_RopeBreaking;                 // 0x3C48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C4C[0x4];                                     // 0x3C4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCameraInterp*                          CameraInterp_RopeBreaking_FOV;                     // 0x3C50(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CameraInterpDuration_RopeBreaking_FOV;             // 0x3C58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C5C[0x4];                                     // 0x3C5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSimpleSwingConfig                     SimpleSwingParams;                                 // 0x3C60(0x16A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x5300(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	class UInputAction*                           SwingAction;                                       // 0x5328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SimpleSwingAction;                                 // 0x5330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ManualSwingAction;                                 // 0x5338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo_SpecialMove;                              // 0x00E0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo_SpecialMoveSecond;                        // 0x0FC8(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         MaxHeightAboveGroundToSomersault;                  // 0x1EB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ForbidRollWhenOnEdgeOffCliff;                      // 0x1EB4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1EB5[0x3];                                     // 0x1EB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DistanceToEdgeOffCliff;                            // 0x1EB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1EBC[0x4];                                     // 0x1EBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LaunchVelocityWhenOnEdgeOffCliff;                  // 0x1EC0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1ED8[0x8];                                     // 0x1ED8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMarvelAbilityTraceContext             TraceContextForEdgeOfCliff;                        // 0x1EE0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UCurveFloat*                            SwingPointMakeUpCurve;                             // 0x3890(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwingPointMakeUpFactor;                            // 0x3898(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_389C[0x4];                                     // 0x389C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x38A0(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToDash;                                   // 0x4788(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AdjustSwingInitDirectionToCamera;                  // 0x478C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_478D[0x3];                                     // 0x478D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxAngleCanAdjust;                                 // 0x4790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinWallTiltAngleForSingleHandSwing;                // 0x4794(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProbabilityOfSpinSwing;                            // 0x4798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSwingAngleForSpinSwing;                         // 0x479C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExpectSwingAngleForSpinSwing;                      // 0x47A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ThresholdAngleToStopSwing;                         // 0x47A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LaunchVelocityOverMaxAngle;                        // 0x47A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          LaunchVelocityIsOverride;                          // 0x47C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_47C1[0x3];                                     // 0x47C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DelayTimeToLaunch;                                 // 0x47C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GravityScaleWhenLaunch;                            // 0x47C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GravityScaleApplyDuration;                         // 0x47CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ThresholdSpeedToStopSwing;                         // 0x47D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSpeedOfSwing;                                   // 0x47D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  AbilitiesToblockWhenLowSwing;                      // 0x47D8(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  AbilitiesToCancelWhenSwing;                        // 0x4840(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          EnableDebugDrawCapsule;                            // 0x48A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48A9[0x7];                                     // 0x48A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCameraInterp*                          CameraInterp_Swinging_Down;                        // 0x48B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterp_Swinging_Down_RightHand;              // 0x48B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DelayTimeToPlaySwingingDownCameraInterp;           // 0x48C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48C4[0x4];                                     // 0x48C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCameraInterp*                          CameraInterp_Swinging_Up;                          // 0x48C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterp_Swinging_Up_RightHand;                // 0x48D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSwingAngleToPlaySwingUpCameraEffect;            // 0x48D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48DC[0x4];                                     // 0x48DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class ULegacyCameraShake>         CameraShakeClass_Swinging;                         // 0x48E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterp_LowSwinging;                          // 0x48E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCameraInterp*                          CameraInterp_RopeBreaking;                         // 0x48F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CameraInterpDuration_RopeBreaking;                 // 0x48F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48FC[0x4];                                     // 0x48FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCameraInterp*                          CameraInterp_RopeBreaking_FOV;                     // 0x4900(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CameraInterpDuration_RopeBreaking_FOV;             // 0x4908(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_490C[0x4];                                     // 0x490C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSimpleSwingConfig                     SimpleSwingParams;                                 // 0x4910(0x19F0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FStateChangedTaskParam                 ActiveUserSetting;                                 // 0x6300(0x0028)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	class UInputAction*                           SwingAction;                                       // 0x6328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SimpleSwingAction;                                 // 0x6330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ManualSwingAction;                                 // 0x6338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_133">();
+		STATIC_CLASS_IMPL("PyConfig_133")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_133")
 	}
 	static class UPyConfig_133* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_133>();
 	}
 };
-static_assert(alignof(UPyConfig_133) == 0x000010, "Wrong alignment on UPyConfig_133");
-static_assert(sizeof(UPyConfig_133) == 0x005340, "Wrong size on UPyConfig_133");
-static_assert(offsetof(UPyConfig_133, PullForceScale) == 0x000098, "Member 'UPyConfig_133::PullForceScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinClampVelocityToAddRopeForce) == 0x00009C, "Member 'UPyConfig_133::MinClampVelocityToAddRopeForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MaxClampVelocityToAddRopeForce) == 0x0000A0, "Member 'UPyConfig_133::MaxClampVelocityToAddRopeForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, bUseFixedRopeLengthToCalPull) == 0x0000A4, "Member 'UPyConfig_133::bUseFixedRopeLengthToCalPull' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, FixedPullRopeLength) == 0x0000A8, "Member 'UPyConfig_133::FixedPullRopeLength' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, RopeLengthToStartReduceForce) == 0x0000AC, "Member 'UPyConfig_133::RopeLengthToStartReduceForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MaxReduceForceScale) == 0x0000B0, "Member 'UPyConfig_133::MaxReduceForceScale' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ReduceForceValueWhenNoStrech) == 0x0000B4, "Member 'UPyConfig_133::ReduceForceValueWhenNoStrech' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinSwingAngleToAddVelocityForce) == 0x0000B8, "Member 'UPyConfig_133::MinSwingAngleToAddVelocityForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MaxSwingAngleToAddVelocityForce) == 0x0000BC, "Member 'UPyConfig_133::MaxSwingAngleToAddVelocityForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ValueOfVelocityForce) == 0x0000C0, "Member 'UPyConfig_133::ValueOfVelocityForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ValueOfCameraForce) == 0x0000C4, "Member 'UPyConfig_133::ValueOfCameraForce' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraForceScaleCurve) == 0x0000C8, "Member 'UPyConfig_133::CameraForceScaleCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, HeightOffset_SpecialMove) == 0x0000D0, "Member 'UPyConfig_133::HeightOffset_SpecialMove' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DelayTime_BeforeSpecialMove) == 0x0000D4, "Member 'UPyConfig_133::DelayTime_BeforeSpecialMove' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DelayTime_AfterSpecialMove) == 0x0000D8, "Member 'UPyConfig_133::DelayTime_AfterSpecialMove' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, FlightToRunTime) == 0x0000DC, "Member 'UPyConfig_133::FlightToRunTime' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DashInfo_SpecialMove) == 0x0000E0, "Member 'UPyConfig_133::DashInfo_SpecialMove' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DashInfo_SpecialMoveSecond) == 0x000CA8, "Member 'UPyConfig_133::DashInfo_SpecialMoveSecond' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MaxHeightAboveGroundToSomersault) == 0x001870, "Member 'UPyConfig_133::MaxHeightAboveGroundToSomersault' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ForbidRollWhenOnEdgeOffCliff) == 0x001874, "Member 'UPyConfig_133::ForbidRollWhenOnEdgeOffCliff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DistanceToEdgeOffCliff) == 0x001878, "Member 'UPyConfig_133::DistanceToEdgeOffCliff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, LaunchVelocityWhenOnEdgeOffCliff) == 0x001880, "Member 'UPyConfig_133::LaunchVelocityWhenOnEdgeOffCliff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, TraceContextForEdgeOfCliff) == 0x0018A0, "Member 'UPyConfig_133::TraceContextForEdgeOfCliff' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, SwingPointMakeUpCurve) == 0x002F00, "Member 'UPyConfig_133::SwingPointMakeUpCurve' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, SwingPointMakeUpFactor) == 0x002F08, "Member 'UPyConfig_133::SwingPointMakeUpFactor' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DashInfo) == 0x002F10, "Member 'UPyConfig_133::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DelayTimeToDash) == 0x003AD8, "Member 'UPyConfig_133::DelayTimeToDash' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, AdjustSwingInitDirectionToCamera) == 0x003ADC, "Member 'UPyConfig_133::AdjustSwingInitDirectionToCamera' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MaxAngleCanAdjust) == 0x003AE0, "Member 'UPyConfig_133::MaxAngleCanAdjust' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinWallTiltAngleForSingleHandSwing) == 0x003AE4, "Member 'UPyConfig_133::MinWallTiltAngleForSingleHandSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ProbabilityOfSpinSwing) == 0x003AE8, "Member 'UPyConfig_133::ProbabilityOfSpinSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinSwingAngleForSpinSwing) == 0x003AEC, "Member 'UPyConfig_133::MinSwingAngleForSpinSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ExpectSwingAngleForSpinSwing) == 0x003AF0, "Member 'UPyConfig_133::ExpectSwingAngleForSpinSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ThresholdAngleToStopSwing) == 0x003AF4, "Member 'UPyConfig_133::ThresholdAngleToStopSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, LaunchVelocityOverMaxAngle) == 0x003AF8, "Member 'UPyConfig_133::LaunchVelocityOverMaxAngle' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, LaunchVelocityIsOverride) == 0x003B10, "Member 'UPyConfig_133::LaunchVelocityIsOverride' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DelayTimeToLaunch) == 0x003B14, "Member 'UPyConfig_133::DelayTimeToLaunch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, GravityScaleWhenLaunch) == 0x003B18, "Member 'UPyConfig_133::GravityScaleWhenLaunch' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, GravityScaleApplyDuration) == 0x003B1C, "Member 'UPyConfig_133::GravityScaleApplyDuration' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ThresholdSpeedToStopSwing) == 0x003B20, "Member 'UPyConfig_133::ThresholdSpeedToStopSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinSpeedOfSwing) == 0x003B24, "Member 'UPyConfig_133::MinSpeedOfSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, AbilitiesToblockWhenLowSwing) == 0x003B28, "Member 'UPyConfig_133::AbilitiesToblockWhenLowSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, AbilitiesToCancelWhenSwing) == 0x003B90, "Member 'UPyConfig_133::AbilitiesToCancelWhenSwing' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, EnableDebugDrawCapsule) == 0x003BF8, "Member 'UPyConfig_133::EnableDebugDrawCapsule' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_Swinging_Down) == 0x003C00, "Member 'UPyConfig_133::CameraInterp_Swinging_Down' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_Swinging_Down_RightHand) == 0x003C08, "Member 'UPyConfig_133::CameraInterp_Swinging_Down_RightHand' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, DelayTimeToPlaySwingingDownCameraInterp) == 0x003C10, "Member 'UPyConfig_133::DelayTimeToPlaySwingingDownCameraInterp' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_Swinging_Up) == 0x003C18, "Member 'UPyConfig_133::CameraInterp_Swinging_Up' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_Swinging_Up_RightHand) == 0x003C20, "Member 'UPyConfig_133::CameraInterp_Swinging_Up_RightHand' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, MinSwingAngleToPlaySwingUpCameraEffect) == 0x003C28, "Member 'UPyConfig_133::MinSwingAngleToPlaySwingUpCameraEffect' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraShakeClass_Swinging) == 0x003C30, "Member 'UPyConfig_133::CameraShakeClass_Swinging' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_LowSwinging) == 0x003C38, "Member 'UPyConfig_133::CameraInterp_LowSwinging' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_RopeBreaking) == 0x003C40, "Member 'UPyConfig_133::CameraInterp_RopeBreaking' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterpDuration_RopeBreaking) == 0x003C48, "Member 'UPyConfig_133::CameraInterpDuration_RopeBreaking' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterp_RopeBreaking_FOV) == 0x003C50, "Member 'UPyConfig_133::CameraInterp_RopeBreaking_FOV' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, CameraInterpDuration_RopeBreaking_FOV) == 0x003C58, "Member 'UPyConfig_133::CameraInterpDuration_RopeBreaking_FOV' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, SimpleSwingParams) == 0x003C60, "Member 'UPyConfig_133::SimpleSwingParams' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ActiveUserSetting) == 0x005300, "Member 'UPyConfig_133::ActiveUserSetting' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, SwingAction) == 0x005328, "Member 'UPyConfig_133::SwingAction' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, SimpleSwingAction) == 0x005330, "Member 'UPyConfig_133::SimpleSwingAction' has a wrong offset!");
-static_assert(offsetof(UPyConfig_133, ManualSwingAction) == 0x005338, "Member 'UPyConfig_133::ManualSwingAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_133;
 
 // PythonClass PyAbility_133.PyAbility_133
-// 0x0020 (0x2BD8 - 0x2BB8)
+// 0x0020 (0x2C28 - 0x2C08)
 class UPyAbility_133 : public UAbility_133
 {
 public:
-	TMulticastInlineDelegate<void(const struct FHitResult& InHitResult)> Delegate_ProjetileHitDispatcher; // 0x2BB8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              Delegate_ProjetileFlyOverMaxDistanceDispatcher;    // 0x2BC8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FHitResult& InHitResult)> Delegate_ProjetileHitDispatcher; // 0x2C08(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              Delegate_ProjetileFlyOverMaxDistanceDispatcher;    // 0x2C18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -234,17 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_133">();
+		STATIC_CLASS_IMPL("PyAbility_133")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_133")
 	}
 	static class UPyAbility_133* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_133>();
 	}
 };
-static_assert(alignof(UPyAbility_133) == 0x000008, "Wrong alignment on UPyAbility_133");
-static_assert(sizeof(UPyAbility_133) == 0x002BD8, "Wrong size on UPyAbility_133");
-static_assert(offsetof(UPyAbility_133, Delegate_ProjetileHitDispatcher) == 0x002BB8, "Member 'UPyAbility_133::Delegate_ProjetileHitDispatcher' has a wrong offset!");
-static_assert(offsetof(UPyAbility_133, Delegate_ProjetileFlyOverMaxDistanceDispatcher) == 0x002BC8, "Member 'UPyAbility_133::Delegate_ProjetileFlyOverMaxDistanceDispatcher' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_133;
 
 }
 

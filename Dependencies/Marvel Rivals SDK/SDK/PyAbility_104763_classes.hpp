@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104763.PyAbility_104763_New
-// 0x0000 (0x2A78 - 0x2A78)
+// 0x0000 (0x2B58 - 0x2B58)
 class UPyAbility_104763_New : public UAbility_104763_New
 {
 public:
@@ -29,19 +29,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104763_New">();
+		STATIC_CLASS_IMPL("PyAbility_104763_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104763_New")
 	}
 	static class UPyAbility_104763_New* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104763_New>();
 	}
 };
-static_assert(alignof(UPyAbility_104763_New) == 0x000008, "Wrong alignment on UPyAbility_104763_New");
-static_assert(sizeof(UPyAbility_104763_New) == 0x002A78, "Wrong size on UPyAbility_104763_New");
+DUMPER7_ASSERTS_UPyAbility_104763_New;
 
 // PythonClass PyAbility_104763.PyCue_AbilityLoop_10476300
-// 0x0000 (0x11B0 - 0x11B0)
-class APyCue_AbilityLoop_10476300 final : public AMarvelCueNotify_Ability
+// 0x0000 (0x11C0 - 0x11C0)
+class APyCue_AbilityLoop_10476300 : public AMarvelCueNotify_Ability
 {
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -50,43 +53,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_AbilityLoop_10476300">();
+		STATIC_CLASS_IMPL("PyCue_AbilityLoop_10476300")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_AbilityLoop_10476300")
 	}
 	static class APyCue_AbilityLoop_10476300* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_AbilityLoop_10476300>();
 	}
 };
-static_assert(alignof(APyCue_AbilityLoop_10476300) == 0x000010, "Wrong alignment on APyCue_AbilityLoop_10476300");
-static_assert(sizeof(APyCue_AbilityLoop_10476300) == 0x0011B0, "Wrong size on APyCue_AbilityLoop_10476300");
+DUMPER7_ASSERTS_APyCue_AbilityLoop_10476300;
 
 // PythonClass PyAbility_104763.PyConfig_104763_New
-// 0x0028 (0x0140 - 0x0118)
+// 0x0028 (0x1040 - 0x1018)
 class UPyConfig_104763_New final : public UConfig_104763_New
 {
 public:
-	struct FVector                                SpringArmRelativeLocation;                         // 0x0118(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableEnableCameraLag;                             // 0x0130(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CameraLagSpeed;                                    // 0x0134(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CameraLagSpeedInterpSpeed;                         // 0x0138(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                SpringArmRelativeLocation;                         // 0x1018(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableEnableCameraLag;                             // 0x1030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1031[0x3];                                     // 0x1031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CameraLagSpeed;                                    // 0x1034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CameraLagSpeedInterpSpeed;                         // 0x1038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104763_New">();
+		STATIC_CLASS_IMPL("PyConfig_104763_New")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104763_New")
 	}
 	static class UPyConfig_104763_New* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104763_New>();
 	}
 };
-static_assert(alignof(UPyConfig_104763_New) == 0x000008, "Wrong alignment on UPyConfig_104763_New");
-static_assert(sizeof(UPyConfig_104763_New) == 0x000140, "Wrong size on UPyConfig_104763_New");
-static_assert(offsetof(UPyConfig_104763_New, SpringArmRelativeLocation) == 0x000118, "Member 'UPyConfig_104763_New::SpringArmRelativeLocation' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104763_New, EnableEnableCameraLag) == 0x000130, "Member 'UPyConfig_104763_New::EnableEnableCameraLag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104763_New, CameraLagSpeed) == 0x000134, "Member 'UPyConfig_104763_New::CameraLagSpeed' has a wrong offset!");
-static_assert(offsetof(UPyConfig_104763_New, CameraLagSpeedInterpSpeed) == 0x000138, "Member 'UPyConfig_104763_New::CameraLagSpeedInterpSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_104763_New;
 
 }
 

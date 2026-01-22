@@ -29,19 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Common_Btn_RightDown_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Common_Btn_RightDown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Common_Btn_RightDown_C")
 	}
 	static class UWBP_Common_Btn_RightDown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Common_Btn_RightDown_C>();
 	}
 };
-static_assert(alignof(UWBP_Common_Btn_RightDown_C) == 0x000008, "Wrong alignment on UWBP_Common_Btn_RightDown_C");
-static_assert(sizeof(UWBP_Common_Btn_RightDown_C) == 0x0003D8, "Wrong size on UWBP_Common_Btn_RightDown_C");
-static_assert(offsetof(UWBP_Common_Btn_RightDown_C, Img_Ps_KeyProg_Bg) == 0x0003B8, "Member 'UWBP_Common_Btn_RightDown_C::Img_Ps_KeyProg_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_RightDown_C, Prog_Ps_KeyProg) == 0x0003C0, "Member 'UWBP_Common_Btn_RightDown_C::Prog_Ps_KeyProg' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_RightDown_C, Text_Key_Function) == 0x0003C8, "Member 'UWBP_Common_Btn_RightDown_C::Text_Key_Function' has a wrong offset!");
-static_assert(offsetof(UWBP_Common_Btn_RightDown_C, WBP_ShortCut_Info_Button) == 0x0003D0, "Member 'UWBP_Common_Btn_RightDown_C::WBP_ShortCut_Info_Button' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Common_Btn_RightDown_C;
 
 }
 

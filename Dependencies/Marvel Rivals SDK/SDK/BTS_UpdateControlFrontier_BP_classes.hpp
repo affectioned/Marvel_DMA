@@ -23,15 +23,18 @@ class UBTS_UpdateControlFrontier_BP_C final : public UBTS_PyUpdateControlFrontie
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTS_UpdateControlFrontier_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTS_UpdateControlFrontier_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_UpdateControlFrontier_BP_C")
 	}
 	static class UBTS_UpdateControlFrontier_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_UpdateControlFrontier_BP_C>();
 	}
 };
-static_assert(alignof(UBTS_UpdateControlFrontier_BP_C) == 0x000008, "Wrong alignment on UBTS_UpdateControlFrontier_BP_C");
-static_assert(sizeof(UBTS_UpdateControlFrontier_BP_C) == 0x000108, "Wrong size on UBTS_UpdateControlFrontier_BP_C");
+DUMPER7_ASSERTS_UBTS_UpdateControlFrontier_BP_C;
 
 }
 

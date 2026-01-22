@@ -17,29 +17,28 @@
 namespace SDK
 {
 
-// PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Play
-// 0x0000 (0x07C0 - 0x07C0)
-class UPyWidget_Lobby_NavigationBar_Button_Play final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
+// PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Common_NavigationBar_Store_SecondButton
+// 0x0000 (0x0818 - 0x0818)
+class UPyWidget_Common_NavigationBar_Store_SecondButton : public UPyWidget_Common_NavigationBar_Button
 {
-public:
-	void Construct();
-	void Destruct();
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar_Button_Play">();
+		STATIC_CLASS_IMPL("PyWidget_Common_NavigationBar_Store_SecondButton")
 	}
-	static class UPyWidget_Lobby_NavigationBar_Button_Play* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Play>();
+		STATIC_NAME_IMPL(L"PyWidget_Common_NavigationBar_Store_SecondButton")
+	}
+	static class UPyWidget_Common_NavigationBar_Store_SecondButton* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Common_NavigationBar_Store_SecondButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_NavigationBar_Button_Play) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar_Button_Play");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar_Button_Play) == 0x0007C0, "Wrong size on UPyWidget_Lobby_NavigationBar_Button_Play");
+DUMPER7_ASSERTS_UPyWidget_Common_NavigationBar_Store_SecondButton;
 
 // PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Home
-// 0x0000 (0x07C0 - 0x07C0)
+// 0x0000 (0x0818 - 0x0818)
 class UPyWidget_Lobby_NavigationBar_Button_Home final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
 {
 public:
@@ -49,47 +48,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar_Button_Home">();
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar_Button_Home")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar_Button_Home")
 	}
 	static class UPyWidget_Lobby_NavigationBar_Button_Home* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Home>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_NavigationBar_Button_Home) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar_Button_Home");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar_Button_Home) == 0x0007C0, "Wrong size on UPyWidget_Lobby_NavigationBar_Button_Home");
-
-// PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Event
-// 0x0068 (0x0828 - 0x07C0)
-class UPyWidget_Lobby_NavigationBar_Button_Event final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
-{
-public:
-	struct FGameplayTagContainer                  Activity151Tag;                                    // 0x07C0(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar_Button_Event">();
-	}
-	static class UPyWidget_Lobby_NavigationBar_Button_Event* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Event>();
-	}
-};
-static_assert(alignof(UPyWidget_Lobby_NavigationBar_Button_Event) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar_Button_Event");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar_Button_Event) == 0x000828, "Wrong size on UPyWidget_Lobby_NavigationBar_Button_Event");
-static_assert(offsetof(UPyWidget_Lobby_NavigationBar_Button_Event, Activity151Tag) == 0x0007C0, "Member 'UPyWidget_Lobby_NavigationBar_Button_Event::Activity151Tag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar_Button_Home;
 
 // PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Store
-// 0x0008 (0x07C8 - 0x07C0)
+// 0x0008 (0x0820 - 0x0818)
 class UPyWidget_Lobby_NavigationBar_Button_Store final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
 {
 public:
-	TSubclassOf<class UUserWidget>                FreeTag;                                           // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                FreeTag;                                           // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -98,16 +75,69 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Lobby_NavigationBar_Button_Store">();
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar_Button_Store")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar_Button_Store")
 	}
 	static class UPyWidget_Lobby_NavigationBar_Button_Store* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Store>();
 	}
 };
-static_assert(alignof(UPyWidget_Lobby_NavigationBar_Button_Store) == 0x000008, "Wrong alignment on UPyWidget_Lobby_NavigationBar_Button_Store");
-static_assert(sizeof(UPyWidget_Lobby_NavigationBar_Button_Store) == 0x0007C8, "Wrong size on UPyWidget_Lobby_NavigationBar_Button_Store");
-static_assert(offsetof(UPyWidget_Lobby_NavigationBar_Button_Store, FreeTag) == 0x0007C0, "Member 'UPyWidget_Lobby_NavigationBar_Button_Store::FreeTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar_Button_Store;
+
+// PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Play
+// 0x0000 (0x0818 - 0x0818)
+class UPyWidget_Lobby_NavigationBar_Button_Play final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
+{
+public:
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar_Button_Play")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar_Button_Play")
+	}
+	static class UPyWidget_Lobby_NavigationBar_Button_Play* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Play>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar_Button_Play;
+
+// PythonClass PyWidget_Lobby_NavigationBar_Button.PyWidget_Lobby_NavigationBar_Button_Event
+// 0x0068 (0x0880 - 0x0818)
+class UPyWidget_Lobby_NavigationBar_Button_Event final : public UPyWidget_Common_NavigationBar_FirstInfo_Button
+{
+public:
+	struct FGameplayTagContainer                  Activity151Tag;                                    // 0x0818(0x0068)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+
+public:
+	void Construct();
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Lobby_NavigationBar_Button_Event")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Lobby_NavigationBar_Button_Event")
+	}
+	static class UPyWidget_Lobby_NavigationBar_Button_Event* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Lobby_NavigationBar_Button_Event>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Lobby_NavigationBar_Button_Event;
 
 }
 

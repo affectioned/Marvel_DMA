@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "PyWidget_CareerPersonalRecord_BaseItem_classes.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "PyWidget_CareerChildPanel_classes.hpp"
-#include "PyWidget_CareerPersonalRecord_BaseItem_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_CareerPersonalRecord.PyWidget_CareerPersonalRecord_Item
-// 0x0000 (0x0C80 - 0x0C80)
+// 0x0000 (0x0CD0 - 0x0CD0)
 class UPyWidget_CareerPersonalRecord_Item final : public UPyWidget_CareerPersonalRecord_BaseItem
 {
 public:
@@ -32,27 +32,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerPersonalRecord_Item">();
+		STATIC_CLASS_IMPL("PyWidget_CareerPersonalRecord_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerPersonalRecord_Item")
 	}
 	static class UPyWidget_CareerPersonalRecord_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerPersonalRecord_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerPersonalRecord_Item) == 0x000010, "Wrong alignment on UPyWidget_CareerPersonalRecord_Item");
-static_assert(sizeof(UPyWidget_CareerPersonalRecord_Item) == 0x000C80, "Wrong size on UPyWidget_CareerPersonalRecord_Item");
+DUMPER7_ASSERTS_UPyWidget_CareerPersonalRecord_Item;
 
 // PythonClass PyWidget_CareerPersonalRecord.PyWidget_CareerPersonalRecord
-// 0x0480 (0x0A40 - 0x05C0)
+// 0x0480 (0x0A48 - 0x05C8)
 class UPyWidget_CareerPersonalRecord final : public UPyWidget_CareerChildPanel
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FadeInAnimInterval;                                // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ScrollListGuideTipsStyle;                          // 0x05C0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        ShowDetailGuideTipsStyle;                          // 0x06E0(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        PlayBackGuideTipsStyle;                            // 0x0800(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGuideTipsStyle                        MoodClickGuideTipsStyle;                           // 0x0920(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FadeInAnimInterval;                                // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ScrollListGuideTipsStyle;                          // 0x05C8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        ShowDetailGuideTipsStyle;                          // 0x06E8(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        PlayBackGuideTipsStyle;                            // 0x0808(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGuideTipsStyle                        MoodClickGuideTipsStyle;                           // 0x0928(0x0120)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -63,20 +66,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerPersonalRecord">();
+		STATIC_CLASS_IMPL("PyWidget_CareerPersonalRecord")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerPersonalRecord")
 	}
 	static class UPyWidget_CareerPersonalRecord* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerPersonalRecord>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerPersonalRecord) == 0x000008, "Wrong alignment on UPyWidget_CareerPersonalRecord");
-static_assert(sizeof(UPyWidget_CareerPersonalRecord) == 0x000A40, "Wrong size on UPyWidget_CareerPersonalRecord");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord, FadeInAnimInterval) == 0x0005BC, "Member 'UPyWidget_CareerPersonalRecord::FadeInAnimInterval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord, ScrollListGuideTipsStyle) == 0x0005C0, "Member 'UPyWidget_CareerPersonalRecord::ScrollListGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord, ShowDetailGuideTipsStyle) == 0x0006E0, "Member 'UPyWidget_CareerPersonalRecord::ShowDetailGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord, PlayBackGuideTipsStyle) == 0x000800, "Member 'UPyWidget_CareerPersonalRecord::PlayBackGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_CareerPersonalRecord, MoodClickGuideTipsStyle) == 0x000920, "Member 'UPyWidget_CareerPersonalRecord::MoodClickGuideTipsStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_CareerPersonalRecord;
 
 // PythonClass PyWidget_CareerPersonalRecord.PyWidget_CareerPersonalRecordItem_Data
 // 0x0000 (0x0030 - 0x0030)
@@ -85,15 +86,18 @@ class UPyWidget_CareerPersonalRecordItem_Data final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CareerPersonalRecordItem_Data">();
+		STATIC_CLASS_IMPL("PyWidget_CareerPersonalRecordItem_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CareerPersonalRecordItem_Data")
 	}
 	static class UPyWidget_CareerPersonalRecordItem_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CareerPersonalRecordItem_Data>();
 	}
 };
-static_assert(alignof(UPyWidget_CareerPersonalRecordItem_Data) == 0x000008, "Wrong alignment on UPyWidget_CareerPersonalRecordItem_Data");
-static_assert(sizeof(UPyWidget_CareerPersonalRecordItem_Data) == 0x000030, "Wrong size on UPyWidget_CareerPersonalRecordItem_Data");
+DUMPER7_ASSERTS_UPyWidget_CareerPersonalRecordItem_Data;
 
 }
 

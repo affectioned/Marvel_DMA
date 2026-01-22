@@ -23,15 +23,18 @@ class UAIAbilityActivation_CheckCancelLokiPhantom_C final : public UPyAIAbilityA
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_CheckCancelLokiPhantom_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_CheckCancelLokiPhantom_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_CheckCancelLokiPhantom_C")
 	}
 	static class UAIAbilityActivation_CheckCancelLokiPhantom_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_CheckCancelLokiPhantom_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_CheckCancelLokiPhantom_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_CheckCancelLokiPhantom_C");
-static_assert(sizeof(UAIAbilityActivation_CheckCancelLokiPhantom_C) == 0x000040, "Wrong size on UAIAbilityActivation_CheckCancelLokiPhantom_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_CheckCancelLokiPhantom_C;
 
 }
 

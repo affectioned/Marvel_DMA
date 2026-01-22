@@ -26,16 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatChannel_Test_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatChannel_Test_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatChannel_Test_C")
 	}
 	static class UWBP_ChatChannel_Test_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatChannel_Test_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatChannel_Test_C) == 0x000008, "Wrong alignment on UWBP_ChatChannel_Test_C");
-static_assert(sizeof(UWBP_ChatChannel_Test_C) == 0x0003C0, "Wrong size on UWBP_ChatChannel_Test_C");
-static_assert(offsetof(UWBP_ChatChannel_Test_C, MarvelImage_100) == 0x0003B8, "Member 'UWBP_ChatChannel_Test_C::MarvelImage_100' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatChannel_Test_C;
 
 }
 

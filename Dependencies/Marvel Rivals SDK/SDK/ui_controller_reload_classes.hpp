@@ -30,15 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UIController_Reload">();
+		STATIC_CLASS_IMPL("UIController_Reload")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIController_Reload")
 	}
 	static class UUIController_Reload* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIController_Reload>();
 	}
 };
-static_assert(alignof(UUIController_Reload) == 0x000008, "Wrong alignment on UUIController_Reload");
-static_assert(sizeof(UUIController_Reload) == 0x000030, "Wrong size on UUIController_Reload");
+DUMPER7_ASSERTS_UUIController_Reload;
 
 }
 

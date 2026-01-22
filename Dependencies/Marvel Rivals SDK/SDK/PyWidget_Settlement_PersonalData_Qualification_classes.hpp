@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_PersonalData_Qualification.PyWidget_Settlement_PersonalData_Qualification
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Settlement_PersonalData_Qualification final : public UPyWidget_Settlement_PersonalData_Base
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_PersonalData_Qualification">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_PersonalData_Qualification")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_PersonalData_Qualification")
 	}
 	static class UPyWidget_Settlement_PersonalData_Qualification* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_PersonalData_Qualification>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_PersonalData_Qualification) == 0x000008, "Wrong alignment on UPyWidget_Settlement_PersonalData_Qualification");
-static_assert(sizeof(UPyWidget_Settlement_PersonalData_Qualification) == 0x0005C0, "Wrong size on UPyWidget_Settlement_PersonalData_Qualification");
+DUMPER7_ASSERTS_UPyWidget_Settlement_PersonalData_Qualification;
 
 }
 

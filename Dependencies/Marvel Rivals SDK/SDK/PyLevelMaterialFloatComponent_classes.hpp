@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialFloatComponent">();
+		STATIC_CLASS_IMPL("PyLevelMaterialFloatComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialFloatComponent")
 	}
 	static class UPyLevelMaterialFloatComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMaterialFloatComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMaterialFloatComponent) == 0x000008, "Wrong alignment on UPyLevelMaterialFloatComponent");
-static_assert(sizeof(UPyLevelMaterialFloatComponent) == 0x000120, "Wrong size on UPyLevelMaterialFloatComponent");
-static_assert(offsetof(UPyLevelMaterialFloatComponent, ParameterValue) == 0x00011C, "Member 'UPyLevelMaterialFloatComponent::ParameterValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMaterialFloatComponent;
 
 }
 

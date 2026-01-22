@@ -17,27 +17,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectHero_PreSelection.WBP_SelectHero_PreSelection_C
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UWBP_SelectHero_PreSelection_C final : public UPyWidget_BanPickPreSelectUnit
 {
 public:
-	class UMarvelOverlay*                         Overlay_Self;                                      // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_TeamMate;                                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Self;                                      // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_TeamMate;                                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_SelectHero_PreSelection_C">();
+		BP_STATIC_CLASS_IMPL("WBP_SelectHero_PreSelection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_SelectHero_PreSelection_C")
 	}
 	static class UWBP_SelectHero_PreSelection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_SelectHero_PreSelection_C>();
 	}
 };
-static_assert(alignof(UWBP_SelectHero_PreSelection_C) == 0x000008, "Wrong alignment on UWBP_SelectHero_PreSelection_C");
-static_assert(sizeof(UWBP_SelectHero_PreSelection_C) == 0x0005D0, "Wrong size on UWBP_SelectHero_PreSelection_C");
-static_assert(offsetof(UWBP_SelectHero_PreSelection_C, Overlay_Self) == 0x0005C0, "Member 'UWBP_SelectHero_PreSelection_C::Overlay_Self' has a wrong offset!");
-static_assert(offsetof(UWBP_SelectHero_PreSelection_C, Overlay_TeamMate) == 0x0005C8, "Member 'UWBP_SelectHero_PreSelection_C::Overlay_TeamMate' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_SelectHero_PreSelection_C;
 
 }
 

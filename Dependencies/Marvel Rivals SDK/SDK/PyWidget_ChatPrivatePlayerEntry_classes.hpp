@@ -25,23 +25,26 @@ class UChatPlayerListItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ChatPlayerListItem">();
+		STATIC_CLASS_IMPL("ChatPlayerListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatPlayerListItem")
 	}
 	static class UChatPlayerListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatPlayerListItem>();
 	}
 };
-static_assert(alignof(UChatPlayerListItem) == 0x000008, "Wrong alignment on UChatPlayerListItem");
-static_assert(sizeof(UChatPlayerListItem) == 0x000030, "Wrong size on UChatPlayerListItem");
+DUMPER7_ASSERTS_UChatPlayerListItem;
 
 // PythonClass PyWidget_ChatPrivatePlayerEntry.PyWidget_ChatPrivatePlayerEntry
-// 0x00A0 (0x0610 - 0x0570)
+// 0x00A0 (0x0618 - 0x0578)
 class UPyWidget_ChatPrivatePlayerEntry : public UWidget_ListEntry
 {
 public:
-	TMap<int32, struct FSlateBrush>               MRCIconBrush;                                      // 0x0570(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TMap<int32, struct FSlateBrush>               ClashIconBrush;                                    // 0x05C0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, struct FSlateBrush>               MRCIconBrush;                                      // 0x0578(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TMap<int32, struct FSlateBrush>               ClashIconBrush;                                    // 0x05C8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -51,17 +54,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChatPrivatePlayerEntry">();
+		STATIC_CLASS_IMPL("PyWidget_ChatPrivatePlayerEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChatPrivatePlayerEntry")
 	}
 	static class UPyWidget_ChatPrivatePlayerEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChatPrivatePlayerEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_ChatPrivatePlayerEntry) == 0x000008, "Wrong alignment on UPyWidget_ChatPrivatePlayerEntry");
-static_assert(sizeof(UPyWidget_ChatPrivatePlayerEntry) == 0x000610, "Wrong size on UPyWidget_ChatPrivatePlayerEntry");
-static_assert(offsetof(UPyWidget_ChatPrivatePlayerEntry, MRCIconBrush) == 0x000570, "Member 'UPyWidget_ChatPrivatePlayerEntry::MRCIconBrush' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ChatPrivatePlayerEntry, ClashIconBrush) == 0x0005C0, "Member 'UPyWidget_ChatPrivatePlayerEntry::ClashIconBrush' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ChatPrivatePlayerEntry;
 
 }
 

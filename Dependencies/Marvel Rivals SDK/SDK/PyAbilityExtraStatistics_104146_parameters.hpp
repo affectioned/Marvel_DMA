@@ -24,10 +24,7 @@ public:
 	struct FActionLogBattleContext                BattleContext;                                     // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0068(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityExtraStatistics_104146_OnAbilityHit) == 0x000008, "Wrong alignment on PyAbilityExtraStatistics_104146_OnAbilityHit");
-static_assert(sizeof(PyAbilityExtraStatistics_104146_OnAbilityHit) == 0x000080, "Wrong size on PyAbilityExtraStatistics_104146_OnAbilityHit");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnAbilityHit, BattleContext) == 0x000000, "Member 'PyAbilityExtraStatistics_104146_OnAbilityHit::BattleContext' has a wrong offset!");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnAbilityHit, ParameterHandle) == 0x000068, "Member 'PyAbilityExtraStatistics_104146_OnAbilityHit::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityExtraStatistics_104146_OnAbilityHit;
 
 // PythonFunction PyAbilityExtraStatistics_104146.PyAbilityExtraStatistics_104146.OnCharacterDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -38,11 +35,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbilityExtraStatistics_104146_OnCharacterDeath) == 0x000008, "Wrong alignment on PyAbilityExtraStatistics_104146_OnCharacterDeath");
-static_assert(sizeof(PyAbilityExtraStatistics_104146_OnCharacterDeath) == 0x000028, "Wrong size on PyAbilityExtraStatistics_104146_OnCharacterDeath");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnCharacterDeath, DamageCauser) == 0x000000, "Member 'PyAbilityExtraStatistics_104146_OnCharacterDeath::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnCharacterDeath, TargetActor) == 0x000008, "Member 'PyAbilityExtraStatistics_104146_OnCharacterDeath::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnCharacterDeath, ParameterHandle) == 0x000010, "Member 'PyAbilityExtraStatistics_104146_OnCharacterDeath::ParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityExtraStatistics_104146_OnCharacterDeath;
 
 // PythonFunction PyAbilityExtraStatistics_104146.PyAbilityExtraStatistics_104146.OnAbilityEndAgentTask
 // 0x0060 (0x0060 - 0x0000)
@@ -53,11 +46,7 @@ public:
 	struct FMarvelTargetActorGenerateInfo         GenerateInfo;                                      // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEndAgentTaskInfo                      EndInfo;                                           // 0x0050(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask) == 0x000008, "Wrong alignment on PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask");
-static_assert(sizeof(PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask) == 0x000060, "Wrong size on PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask, Instigator) == 0x000000, "Member 'PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask::Instigator' has a wrong offset!");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask, GenerateInfo) == 0x000008, "Member 'PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask::GenerateInfo' has a wrong offset!");
-static_assert(offsetof(PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask, EndInfo) == 0x000050, "Member 'PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask::EndInfo' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbilityExtraStatistics_104146_OnAbilityEndAgentTask;
 
 }
 

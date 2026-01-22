@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_104441.PyCue_Ability_Loop_10130_10444102
-// 0x0040 (0x0FD0 - 0x0F90)
+// 0x0040 (0x0FE0 - 0x0FA0)
 class APyCue_Ability_Loop_10130_10444102 final : public AMarvelCueNotify_Actor
 {
 public:
-	uint8                                         Pad_F88[0x8];                                      // 0x0F88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bNoEffectOnMergedDamageEvent;                      // 0x0F90(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F91[0x7];                                      // 0x0F91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFXSystemAsset*                         LifeStealFX;                                       // 0x0F98(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLifeStealFXCombine;                               // 0x0FA0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F98[0x8];                                      // 0x0F98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bNoEffectOnMergedDamageEvent;                      // 0x0FA0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_FA1[0x7];                                      // 0x0FA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LifeStealOffset;                                   // 0x0FA8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   BladeSocketName;                                   // 0x0FC0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LifeStealAudioID;                                  // 0x0FCC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         LifeStealFX;                                       // 0x0FA8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLifeStealFXCombine;                               // 0x0FB0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_FB1[0x7];                                      // 0x0FB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                LifeStealOffset;                                   // 0x0FB8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BladeSocketName;                                   // 0x0FD0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LifeStealAudioID;                                  // 0x0FDC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -40,21 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10130_10444102">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10130_10444102")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10130_10444102")
 	}
 	static class APyCue_Ability_Loop_10130_10444102* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10130_10444102>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10130_10444102) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10130_10444102");
-static_assert(sizeof(APyCue_Ability_Loop_10130_10444102) == 0x000FD0, "Wrong size on APyCue_Ability_Loop_10130_10444102");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, bNoEffectOnMergedDamageEvent) == 0x000F90, "Member 'APyCue_Ability_Loop_10130_10444102::bNoEffectOnMergedDamageEvent' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, LifeStealFX) == 0x000F98, "Member 'APyCue_Ability_Loop_10130_10444102::LifeStealFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, bLifeStealFXCombine) == 0x000FA0, "Member 'APyCue_Ability_Loop_10130_10444102::bLifeStealFXCombine' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, LifeStealOffset) == 0x000FA8, "Member 'APyCue_Ability_Loop_10130_10444102::LifeStealOffset' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, BladeSocketName) == 0x000FC0, "Member 'APyCue_Ability_Loop_10130_10444102::BladeSocketName' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10130_10444102, LifeStealAudioID) == 0x000FCC, "Member 'APyCue_Ability_Loop_10130_10444102::LifeStealAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10130_10444102;
 
 }
 

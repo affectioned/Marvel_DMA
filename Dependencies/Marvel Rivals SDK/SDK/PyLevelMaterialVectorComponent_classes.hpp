@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialVectorComponent">();
+		STATIC_CLASS_IMPL("PyLevelMaterialVectorComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialVectorComponent")
 	}
 	static class UPyLevelMaterialVectorComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMaterialVectorComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMaterialVectorComponent) == 0x000008, "Wrong alignment on UPyLevelMaterialVectorComponent");
-static_assert(sizeof(UPyLevelMaterialVectorComponent) == 0x000138, "Wrong size on UPyLevelMaterialVectorComponent");
-static_assert(offsetof(UPyLevelMaterialVectorComponent, ParameterValue) == 0x000120, "Member 'UPyLevelMaterialVectorComponent::ParameterValue' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMaterialVectorComponent;
 
 }
 

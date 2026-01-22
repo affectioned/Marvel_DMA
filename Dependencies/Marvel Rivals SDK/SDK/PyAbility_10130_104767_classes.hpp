@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_104767.PyAbility_10130_104767
-// 0x0000 (0x2AA0 - 0x2AA0)
+// 0x0000 (0x2AF0 - 0x2AF0)
 class UPyAbility_10130_104767 : public UMarvelAbility_AbilityJump
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_10130_104767">();
+		STATIC_CLASS_IMPL("PyAbility_10130_104767")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_10130_104767")
 	}
 	static class UPyAbility_10130_104767* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_10130_104767>();
 	}
 };
-static_assert(alignof(UPyAbility_10130_104767) == 0x000008, "Wrong alignment on UPyAbility_10130_104767");
-static_assert(sizeof(UPyAbility_10130_104767) == 0x002AA0, "Wrong size on UPyAbility_10130_104767");
+DUMPER7_ASSERTS_UPyAbility_10130_104767;
 
 }
 

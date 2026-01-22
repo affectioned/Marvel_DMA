@@ -17,88 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_SelectTarget_105871::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_SelectTarget_105871::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.ShouldTrace
-// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UPyUIController_SelectTarget_105871::ShouldTrace()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "ShouldTrace");
-
-	Params::PyUIController_SelectTarget_105871_ShouldTrace Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnAbilityHideExtraWidget
-// (Native, Public, BlueprintCallable)
-
-void UPyUIController_SelectTarget_105871::OnAbilityHideExtraWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnAbilityHideExtraWidget");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105871.PyAbility_105871.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -307,79 +225,6 @@ void APyProjectile_10587101::K2_OnEndAgentTask()
 }
 
 
-// PythonFunction PyAbility_105871.PyBuffAbility_10587101.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_10587101::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10587101", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105871.PyBuffAbility_10587101.K2_OnEndAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPyBuffAbility_10587101::K2_OnEndAbility(bool bWasCancelled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10587101", "K2_OnEndAbility");
-
-	Params::PyBuffAbility_10587101_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105871.PyBuffAbility_10587101.OnApplyDamage
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UPyBuffAbility_10587101::OnApplyDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10587101", "OnApplyDamage");
-
-	Params::PyBuffAbility_10587101_OnApplyDamage Parms{};
-
-	Parms.InSourceAvatar = InSourceAvatar;
-	Parms.InTargetAvatar = InTargetAvatar;
-	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105871.PyBuffAbility_10587105.K2_ActivateAbility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -499,6 +344,106 @@ void UPyBuffAbility_10587105::MulticastPlayAudio(const TArray<class AMarvelBaseC
 }
 
 
+// PythonFunction PyAbility_105871.PyBuffAbility_10587101.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_10587101::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10587101", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyBuffAbility_10587101.K2_OnEndAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyBuffAbility_10587101::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10587101", "K2_OnEndAbility");
+
+	Params::PyBuffAbility_10587101_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyBuffAbility_10587101.OnApplyDamage
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InTargetAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FAttributeModifierHandle&  ModifierParameterHandle                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UPyBuffAbility_10587101::OnApplyDamage(class AActor* InSourceAvatar, class AActor* InTargetAvatar, const struct FAttributeModifierHandle& ModifierParameterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10587101", "OnApplyDamage");
+
+	Params::PyBuffAbility_10587101_OnApplyDamage Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.InTargetAvatar = InTargetAvatar;
+	Parms.ModifierParameterHandle = std::move(ModifierParameterHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyEffectiveComponent_10587102.K2_ModifyCueParametersBeforeExecution
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGameplayCueParameters&          InOutCueParameters                                     (Parm, OutParm, ReferenceParm)
+
+void UPyEffectiveComponent_10587102::K2_ModifyCueParametersBeforeExecution(struct FGameplayCueParameters& InOutCueParameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyEffectiveComponent_10587102", "K2_ModifyCueParametersBeforeExecution");
+
+	Params::PyEffectiveComponent_10587102_K2_ModifyCueParametersBeforeExecution Parms{};
+
+	Parms.InOutCueParameters = std::move(InOutCueParameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	InOutCueParameters = std::move(Parms.InOutCueParameters);
+}
+
+
 // PythonFunction PyAbility_105871.PyUIController_105871.SetAbility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -554,6 +499,88 @@ void UPyUIController_105871::OnAbilityHideExtraWidget()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyUIController_105871", "OnAbilityHideExtraWidget");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnInit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_SelectTarget_105871::OnInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnInit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnDestruct
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyUIController_SelectTarget_105871::OnDestruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnDestruct");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.ShouldTrace
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UPyUIController_SelectTarget_105871::ShouldTrace()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "ShouldTrace");
+
+	Params::PyUIController_SelectTarget_105871_ShouldTrace Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyAbility_105871.PyUIController_SelectTarget_105871.OnAbilityHideExtraWidget
+// (Native, Public, BlueprintCallable)
+
+void UPyUIController_SelectTarget_105871::OnAbilityHideExtraWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyUIController_SelectTarget_105871", "OnAbilityHideExtraWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

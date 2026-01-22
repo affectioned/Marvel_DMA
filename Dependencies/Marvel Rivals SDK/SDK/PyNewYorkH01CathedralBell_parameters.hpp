@@ -23,9 +23,7 @@ struct PyNewYorkH01CathedralBellSounds_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNewYorkH01CathedralBellSounds_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyNewYorkH01CathedralBellSounds_ReceiveEndPlay");
-static_assert(sizeof(PyNewYorkH01CathedralBellSounds_ReceiveEndPlay) == 0x000001, "Wrong size on PyNewYorkH01CathedralBellSounds_ReceiveEndPlay");
-static_assert(offsetof(PyNewYorkH01CathedralBellSounds_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyNewYorkH01CathedralBellSounds_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyNewYorkH01CathedralBellSounds_ReceiveEndPlay;
 
 // PythonFunction PyNewYorkH01CathedralBell.PyNewYorkH01CathedralBellSounds.PostBellSoundEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyNewYorkH01CathedralBellSounds_PostBellSoundEvent final
 public:
 	int32                                         phase;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNewYorkH01CathedralBellSounds_PostBellSoundEvent) == 0x000004, "Wrong alignment on PyNewYorkH01CathedralBellSounds_PostBellSoundEvent");
-static_assert(sizeof(PyNewYorkH01CathedralBellSounds_PostBellSoundEvent) == 0x000004, "Wrong size on PyNewYorkH01CathedralBellSounds_PostBellSoundEvent");
-static_assert(offsetof(PyNewYorkH01CathedralBellSounds_PostBellSoundEvent, phase) == 0x000000, "Member 'PyNewYorkH01CathedralBellSounds_PostBellSoundEvent::phase' has a wrong offset!");
+DUMPER7_ASSERTS_PyNewYorkH01CathedralBellSounds_PostBellSoundEvent;
 
 }
 

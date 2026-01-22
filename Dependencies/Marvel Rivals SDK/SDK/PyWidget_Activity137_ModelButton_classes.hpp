@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity137_ModelButton">();
+		STATIC_CLASS_IMPL("PyWidget_Activity137_ModelButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity137_ModelButton")
 	}
 	static class UPyWidget_Activity137_ModelButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity137_ModelButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity137_ModelButton) == 0x000010, "Wrong alignment on UPyWidget_Activity137_ModelButton");
-static_assert(sizeof(UPyWidget_Activity137_ModelButton) == 0x000870, "Wrong size on UPyWidget_Activity137_ModelButton");
+DUMPER7_ASSERTS_UPyWidget_Activity137_ModelButton;
 
 }
 

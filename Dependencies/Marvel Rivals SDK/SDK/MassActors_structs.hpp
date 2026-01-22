@@ -51,8 +51,7 @@ enum class EAgentComponentState : uint8
 struct FMassActorSpawnRequestHandle final : public FIndexedHandleBase
 {
 };
-static_assert(alignof(FMassActorSpawnRequestHandle) == 0x000004, "Wrong alignment on FMassActorSpawnRequestHandle");
-static_assert(sizeof(FMassActorSpawnRequestHandle) == 0x000008, "Wrong size on FMassActorSpawnRequestHandle");
+DUMPER7_ASSERTS_FMassActorSpawnRequestHandle;
 
 // ScriptStruct MassActors.MassActorSpawnRequest
 // 0x00C0 (0x00C0 - 0x0000)
@@ -65,10 +64,7 @@ public:
 	class AActor*                                 SpawnedActor;                                      // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A8[0x18];                                      // 0x00A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassActorSpawnRequest) == 0x000010, "Wrong alignment on FMassActorSpawnRequest");
-static_assert(sizeof(FMassActorSpawnRequest) == 0x0000C0, "Wrong size on FMassActorSpawnRequest");
-static_assert(offsetof(FMassActorSpawnRequest, Template) == 0x000008, "Member 'FMassActorSpawnRequest::Template' has a wrong offset!");
-static_assert(offsetof(FMassActorSpawnRequest, SpawnedActor) == 0x0000A0, "Member 'FMassActorSpawnRequest::SpawnedActor' has a wrong offset!");
+DUMPER7_ASSERTS_FMassActorSpawnRequest;
 
 // ScriptStruct MassActors.MassActorFragment
 // 0x000C (0x000C - 0x0000)
@@ -78,9 +74,7 @@ public:
 	TWeakObjectPtr<class AActor>                  Actor;                                             // 0x0000(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_8[0x4];                                        // 0x0008(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassActorFragment) == 0x000004, "Wrong alignment on FMassActorFragment");
-static_assert(sizeof(FMassActorFragment) == 0x00000C, "Wrong size on FMassActorFragment");
-static_assert(offsetof(FMassActorFragment, Actor) == 0x000000, "Member 'FMassActorFragment::Actor' has a wrong offset!");
+DUMPER7_ASSERTS_FMassActorFragment;
 
 // ScriptStruct MassActors.MassAgentInitializationQueue
 // 0x0010 (0x0010 - 0x0000)
@@ -89,9 +83,7 @@ struct FMassAgentInitializationQueue final
 public:
 	TArray<class UMassAgentComponent*>            AgentComponents;                                   // 0x0000(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassAgentInitializationQueue) == 0x000008, "Wrong alignment on FMassAgentInitializationQueue");
-static_assert(sizeof(FMassAgentInitializationQueue) == 0x000010, "Wrong size on FMassAgentInitializationQueue");
-static_assert(offsetof(FMassAgentInitializationQueue, AgentComponents) == 0x000000, "Member 'FMassAgentInitializationQueue::AgentComponents' has a wrong offset!");
+DUMPER7_ASSERTS_FMassAgentInitializationQueue;
 
 // ScriptStruct MassActors.CapsuleComponentWrapperFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -100,24 +92,21 @@ struct alignas(0x04) FCapsuleComponentWrapperFragment final : public FObjectWrap
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCapsuleComponentWrapperFragment) == 0x000004, "Wrong alignment on FCapsuleComponentWrapperFragment");
-static_assert(sizeof(FCapsuleComponentWrapperFragment) == 0x000008, "Wrong size on FCapsuleComponentWrapperFragment");
+DUMPER7_ASSERTS_FCapsuleComponentWrapperFragment;
 
 // ScriptStruct MassActors.MassCapsuleTransformCopyToMassTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCapsuleTransformCopyToMassTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCapsuleTransformCopyToMassTag) == 0x000001, "Wrong alignment on FMassCapsuleTransformCopyToMassTag");
-static_assert(sizeof(FMassCapsuleTransformCopyToMassTag) == 0x000001, "Wrong size on FMassCapsuleTransformCopyToMassTag");
+DUMPER7_ASSERTS_FMassCapsuleTransformCopyToMassTag;
 
 // ScriptStruct MassActors.MassCapsuleTransformCopyToActorTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCapsuleTransformCopyToActorTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCapsuleTransformCopyToActorTag) == 0x000001, "Wrong alignment on FMassCapsuleTransformCopyToActorTag");
-static_assert(sizeof(FMassCapsuleTransformCopyToActorTag) == 0x000001, "Wrong size on FMassCapsuleTransformCopyToActorTag");
+DUMPER7_ASSERTS_FMassCapsuleTransformCopyToActorTag;
 
 // ScriptStruct MassActors.CharacterMovementComponentWrapperFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -126,40 +115,35 @@ struct alignas(0x04) FCharacterMovementComponentWrapperFragment final : public F
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCharacterMovementComponentWrapperFragment) == 0x000004, "Wrong alignment on FCharacterMovementComponentWrapperFragment");
-static_assert(sizeof(FCharacterMovementComponentWrapperFragment) == 0x000008, "Wrong size on FCharacterMovementComponentWrapperFragment");
+DUMPER7_ASSERTS_FCharacterMovementComponentWrapperFragment;
 
 // ScriptStruct MassActors.MassCharacterMovementCopyToMassTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCharacterMovementCopyToMassTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCharacterMovementCopyToMassTag) == 0x000001, "Wrong alignment on FMassCharacterMovementCopyToMassTag");
-static_assert(sizeof(FMassCharacterMovementCopyToMassTag) == 0x000001, "Wrong size on FMassCharacterMovementCopyToMassTag");
+DUMPER7_ASSERTS_FMassCharacterMovementCopyToMassTag;
 
 // ScriptStruct MassActors.MassCharacterMovementCopyToActorTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCharacterMovementCopyToActorTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCharacterMovementCopyToActorTag) == 0x000001, "Wrong alignment on FMassCharacterMovementCopyToActorTag");
-static_assert(sizeof(FMassCharacterMovementCopyToActorTag) == 0x000001, "Wrong size on FMassCharacterMovementCopyToActorTag");
+DUMPER7_ASSERTS_FMassCharacterMovementCopyToActorTag;
 
 // ScriptStruct MassActors.MassCharacterOrientationCopyToMassTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCharacterOrientationCopyToMassTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCharacterOrientationCopyToMassTag) == 0x000001, "Wrong alignment on FMassCharacterOrientationCopyToMassTag");
-static_assert(sizeof(FMassCharacterOrientationCopyToMassTag) == 0x000001, "Wrong size on FMassCharacterOrientationCopyToMassTag");
+DUMPER7_ASSERTS_FMassCharacterOrientationCopyToMassTag;
 
 // ScriptStruct MassActors.MassCharacterOrientationCopyToActorTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassCharacterOrientationCopyToActorTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassCharacterOrientationCopyToActorTag) == 0x000001, "Wrong alignment on FMassCharacterOrientationCopyToActorTag");
-static_assert(sizeof(FMassCharacterOrientationCopyToActorTag) == 0x000001, "Wrong size on FMassCharacterOrientationCopyToActorTag");
+DUMPER7_ASSERTS_FMassCharacterOrientationCopyToActorTag;
 
 // ScriptStruct MassActors.MassSceneComponentWrapperFragment
 // 0x0008 (0x0008 - 0x0000)
@@ -168,24 +152,21 @@ struct alignas(0x04) FMassSceneComponentWrapperFragment final : public FObjectWr
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSceneComponentWrapperFragment) == 0x000004, "Wrong alignment on FMassSceneComponentWrapperFragment");
-static_assert(sizeof(FMassSceneComponentWrapperFragment) == 0x000008, "Wrong size on FMassSceneComponentWrapperFragment");
+DUMPER7_ASSERTS_FMassSceneComponentWrapperFragment;
 
 // ScriptStruct MassActors.MassSceneComponentLocationCopyToMassTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassSceneComponentLocationCopyToMassTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassSceneComponentLocationCopyToMassTag) == 0x000001, "Wrong alignment on FMassSceneComponentLocationCopyToMassTag");
-static_assert(sizeof(FMassSceneComponentLocationCopyToMassTag) == 0x000001, "Wrong size on FMassSceneComponentLocationCopyToMassTag");
+DUMPER7_ASSERTS_FMassSceneComponentLocationCopyToMassTag;
 
 // ScriptStruct MassActors.MassSceneComponentLocationCopyToActorTag
 // 0x0000 (0x0001 - 0x0001)
 struct FMassSceneComponentLocationCopyToActorTag final : public FMassTag
 {
 };
-static_assert(alignof(FMassSceneComponentLocationCopyToActorTag) == 0x000001, "Wrong alignment on FMassSceneComponentLocationCopyToActorTag");
-static_assert(sizeof(FMassSceneComponentLocationCopyToActorTag) == 0x000001, "Wrong size on FMassSceneComponentLocationCopyToActorTag");
+DUMPER7_ASSERTS_FMassSceneComponentLocationCopyToActorTag;
 
 // ScriptStruct MassActors.DataFragment_BehaviorTreeComponentWrapper
 // 0x0008 (0x0008 - 0x0000)
@@ -194,8 +175,7 @@ struct alignas(0x04) FDataFragment_BehaviorTreeComponentWrapper final : public F
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDataFragment_BehaviorTreeComponentWrapper) == 0x000004, "Wrong alignment on FDataFragment_BehaviorTreeComponentWrapper");
-static_assert(sizeof(FDataFragment_BehaviorTreeComponentWrapper) == 0x000008, "Wrong size on FDataFragment_BehaviorTreeComponentWrapper");
+DUMPER7_ASSERTS_FDataFragment_BehaviorTreeComponentWrapper;
 
 }
 

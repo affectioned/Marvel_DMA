@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1035_CharacterBP.1035_CharacterBP_C
-// 0x0000 (0x2230 - 0x2230)
+// 0x0000 (0x2340 - 0x2340)
 class AOne035_CharacterBP_C final : public APyVenomCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1035_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1035_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1035_CharacterBP_C")
 	}
 	static class AOne035_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne035_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne035_CharacterBP_C) == 0x000010, "Wrong alignment on AOne035_CharacterBP_C");
-static_assert(sizeof(AOne035_CharacterBP_C) == 0x002230, "Wrong size on AOne035_CharacterBP_C");
+DUMPER7_ASSERTS_AOne035_CharacterBP_C;
 
 }
 

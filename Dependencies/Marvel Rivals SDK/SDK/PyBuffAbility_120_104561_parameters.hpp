@@ -23,9 +23,7 @@ struct PyBuffAbility_120_10456191_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBuffAbility_120_10456191_K2_OnEndAbility) == 0x000001, "Wrong alignment on PyBuffAbility_120_10456191_K2_OnEndAbility");
-static_assert(sizeof(PyBuffAbility_120_10456191_K2_OnEndAbility) == 0x000001, "Wrong size on PyBuffAbility_120_10456191_K2_OnEndAbility");
-static_assert(offsetof(PyBuffAbility_120_10456191_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'PyBuffAbility_120_10456191_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+DUMPER7_ASSERTS_PyBuffAbility_120_10456191_K2_OnEndAbility;
 
 // PythonFunction PyBuffAbility_120_104561.PyEffectiveComponent_120_10456191.K2_OnPreApplyContainer
 // 0x0020 (0x0020 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	TArray<struct FHitResult>                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer) == 0x000008, "Wrong alignment on PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer");
-static_assert(sizeof(PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer) == 0x000020, "Wrong size on PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer");
-static_assert(offsetof(PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer, HitResults) == 0x000000, "Member 'PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer::HitResults' has a wrong offset!");
-static_assert(offsetof(PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer, ReturnValue) == 0x000010, "Member 'PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEffectiveComponent_120_10456191_K2_OnPreApplyContainer;
 
 }
 

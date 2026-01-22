@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTS_PyUpdatePrepareRemainTime">();
+		STATIC_CLASS_IMPL("BTS_PyUpdatePrepareRemainTime")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTS_PyUpdatePrepareRemainTime")
 	}
 	static class UBTS_PyUpdatePrepareRemainTime* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTS_PyUpdatePrepareRemainTime>();
 	}
 };
-static_assert(alignof(UBTS_PyUpdatePrepareRemainTime) == 0x000008, "Wrong alignment on UBTS_PyUpdatePrepareRemainTime");
-static_assert(sizeof(UBTS_PyUpdatePrepareRemainTime) == 0x0000D8, "Wrong size on UBTS_PyUpdatePrepareRemainTime");
-static_assert(offsetof(UBTS_PyUpdatePrepareRemainTime, OutRemainTime) == 0x0000A8, "Member 'UBTS_PyUpdatePrepareRemainTime::OutRemainTime' has a wrong offset!");
+DUMPER7_ASSERTS_UBTS_PyUpdatePrepareRemainTime;
 
 }
 

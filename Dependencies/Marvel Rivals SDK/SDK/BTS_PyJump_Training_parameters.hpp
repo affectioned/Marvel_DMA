@@ -22,10 +22,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyJump_Training_ReceiveActivationAI) == 0x000008, "Wrong alignment on BTS_PyJump_Training_ReceiveActivationAI");
-static_assert(sizeof(BTS_PyJump_Training_ReceiveActivationAI) == 0x000010, "Wrong size on BTS_PyJump_Training_ReceiveActivationAI");
-static_assert(offsetof(BTS_PyJump_Training_ReceiveActivationAI, OwnerController) == 0x000000, "Member 'BTS_PyJump_Training_ReceiveActivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyJump_Training_ReceiveActivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PyJump_Training_ReceiveActivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyJump_Training_ReceiveActivationAI;
 
 // PythonFunction BTS_PyJump_Training.BTS_PyJump_Training.ReceiveTickAI
 // 0x0018 (0x0018 - 0x0000)
@@ -36,11 +33,7 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyJump_Training_ReceiveTickAI) == 0x000008, "Wrong alignment on BTS_PyJump_Training_ReceiveTickAI");
-static_assert(sizeof(BTS_PyJump_Training_ReceiveTickAI) == 0x000018, "Wrong size on BTS_PyJump_Training_ReceiveTickAI");
-static_assert(offsetof(BTS_PyJump_Training_ReceiveTickAI, OwnerController) == 0x000000, "Member 'BTS_PyJump_Training_ReceiveTickAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyJump_Training_ReceiveTickAI, ControlledPawn) == 0x000008, "Member 'BTS_PyJump_Training_ReceiveTickAI::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTS_PyJump_Training_ReceiveTickAI, DeltaSeconds) == 0x000010, "Member 'BTS_PyJump_Training_ReceiveTickAI::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyJump_Training_ReceiveTickAI;
 
 }
 

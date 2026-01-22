@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MarvelReplaySpectatorControllerBP.MarvelReplaySpectatorControllerBP_C
-// 0x0010 (0x1510 - 0x1500)
+// 0x0010 (0x1580 - 0x1570)
 class AMarvelReplaySpectatorControllerBP_C final : public APyMarvelReplayController
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1500(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPythonComponent*                       Wizcmd;                                            // 0x1508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1570(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPythonComponent*                       Wizcmd;                                            // 0x1578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SendCmdToPython(const class FString& Command);
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelReplaySpectatorControllerBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelReplaySpectatorControllerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelReplaySpectatorControllerBP_C")
 	}
 	static class AMarvelReplaySpectatorControllerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMarvelReplaySpectatorControllerBP_C>();
 	}
 };
-static_assert(alignof(AMarvelReplaySpectatorControllerBP_C) == 0x000010, "Wrong alignment on AMarvelReplaySpectatorControllerBP_C");
-static_assert(sizeof(AMarvelReplaySpectatorControllerBP_C) == 0x001510, "Wrong size on AMarvelReplaySpectatorControllerBP_C");
-static_assert(offsetof(AMarvelReplaySpectatorControllerBP_C, UberGraphFrame) == 0x001500, "Member 'AMarvelReplaySpectatorControllerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMarvelReplaySpectatorControllerBP_C, Wizcmd) == 0x001508, "Member 'AMarvelReplaySpectatorControllerBP_C::Wizcmd' has a wrong offset!");
+DUMPER7_ASSERTS_AMarvelReplaySpectatorControllerBP_C;
 
 }
 

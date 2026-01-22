@@ -36,25 +36,6 @@ void UPyBuffAbility_120_10267191::K2_ActivateAbility()
 }
 
 
-// PythonFunction PyBuffAbility_120_102671.PyBuffAbility_120_10267194.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_120_10267194::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_120_10267194", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyBuffAbility_120_102671.PyBuffAbility_120_10267193.BeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -269,6 +250,25 @@ void APyCue_Scope_Loop_10267193::DetachMesh()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyCue_Scope_Loop_10267193", "DetachMesh");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_120_102671.PyBuffAbility_120_10267194.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_120_10267194::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_120_10267194", "K2_ActivateAbility");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

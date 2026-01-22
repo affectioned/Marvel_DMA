@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettingBrightPanel.PyWidget_SettingBrightPanel
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0610 - 0x0610)
 class UPyWidget_SettingBrightPanel final : public UPyWidget_SettingBrightBase
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettingBrightPanel">();
+		STATIC_CLASS_IMPL("PyWidget_SettingBrightPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettingBrightPanel")
 	}
 	static class UPyWidget_SettingBrightPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettingBrightPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_SettingBrightPanel) == 0x000008, "Wrong alignment on UPyWidget_SettingBrightPanel");
-static_assert(sizeof(UPyWidget_SettingBrightPanel) == 0x000608, "Wrong size on UPyWidget_SettingBrightPanel");
+DUMPER7_ASSERTS_UPyWidget_SettingBrightPanel;
 
 }
 

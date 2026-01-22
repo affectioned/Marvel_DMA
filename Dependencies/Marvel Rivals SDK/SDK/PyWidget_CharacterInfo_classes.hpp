@@ -17,35 +17,48 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CharacterInfo.PyWidget3D_CharacterInfo
-// 0x0010 (0x1B20 - 0x1B10)
+// 0x0030 (0x23E0 - 0x23B0)
 class UPyWidget3D_CharacterInfo : public UWidget_CharacterInfo
 {
 public:
-	TArray<TSubclassOf<class UUserWidget>>        HpBarWidgetsPtr;                                   // 0x1B10(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class UUserWidget>>        HpBarWidgetsPtr;                                   // 0x23B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class ULazyWidget*                            Lazy_UltimateIcon;                                 // 0x23C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVisibleUltimatePercent;                           // 0x23C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_23C9[0x7];                                     // 0x23C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPyWidget_Common_HeroRoleIcon*          WBP_Common_HeroRoleIcon;                           // 0x23D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULazyWidget*                            Lazy_UltimateIcon_1057;                            // 0x23D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
 	void Construct();
 	void Destruct();
+	void K2_UpdateColor(const struct FLinearColor& Color);
+	void SetShowUltimateIcon(bool bShow);
 	void SetShowBattleChessHeroLevel(bool bShow);
+	void SetUltimateEnergyPercent(float InPercentage);
 	void SetHeroLevel(int32 InLevel);
+	void SetIsAlly(const bool bIsAlly);
+	void UpdateHpBarSideWidgetsLayout(bool Useless);
 
+	bool GetShowUltimateIcon() const;
 	bool GetShowBattleChessHeroLevel() const;
 	int32 GetHeroLevel() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget3D_CharacterInfo">();
+		STATIC_CLASS_IMPL("PyWidget3D_CharacterInfo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget3D_CharacterInfo")
 	}
 	static class UPyWidget3D_CharacterInfo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget3D_CharacterInfo>();
 	}
 };
-static_assert(alignof(UPyWidget3D_CharacterInfo) == 0x000010, "Wrong alignment on UPyWidget3D_CharacterInfo");
-static_assert(sizeof(UPyWidget3D_CharacterInfo) == 0x001B20, "Wrong size on UPyWidget3D_CharacterInfo");
-static_assert(offsetof(UPyWidget3D_CharacterInfo, HpBarWidgetsPtr) == 0x001B10, "Member 'UPyWidget3D_CharacterInfo::HpBarWidgetsPtr' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget3D_CharacterInfo;
 
 }
 

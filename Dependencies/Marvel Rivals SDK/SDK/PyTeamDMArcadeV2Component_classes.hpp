@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyTeamDeathMatchRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "PyTeamDeathMatchRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -45,26 +45,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTeamDMArcadeV2Component">();
+		STATIC_CLASS_IMPL("PyTeamDMArcadeV2Component")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTeamDMArcadeV2Component")
 	}
 	static class UPyTeamDMArcadeV2Component* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTeamDMArcadeV2Component>();
 	}
 };
-static_assert(alignof(UPyTeamDMArcadeV2Component) == 0x000008, "Wrong alignment on UPyTeamDMArcadeV2Component");
-static_assert(sizeof(UPyTeamDMArcadeV2Component) == 0x000198, "Wrong size on UPyTeamDMArcadeV2Component");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, ConfirmSummonedScore) == 0x000130, "Member 'UPyTeamDMArcadeV2Component::ConfirmSummonedScore' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, RebirthBuffId) == 0x000138, "Member 'UPyTeamDMArcadeV2Component::RebirthBuffId' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, BuffIds) == 0x000148, "Member 'UPyTeamDMArcadeV2Component::BuffIds' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, MultiKillConfig) == 0x000158, "Member 'UPyTeamDMArcadeV2Component::MultiKillConfig' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, IndicatorClass) == 0x000168, "Member 'UPyTeamDMArcadeV2Component::IndicatorClass' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, FinishKillAudio) == 0x000170, "Member 'UPyTeamDMArcadeV2Component::FinishKillAudio' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, LevelDeathCue) == 0x000178, "Member 'UPyTeamDMArcadeV2Component::LevelDeathCue' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, SpawnItemPitch) == 0x000184, "Member 'UPyTeamDMArcadeV2Component::SpawnItemPitch' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, SpawnItemSpeed) == 0x000188, "Member 'UPyTeamDMArcadeV2Component::SpawnItemSpeed' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, SpawnRandomYaw) == 0x00018C, "Member 'UPyTeamDMArcadeV2Component::SpawnRandomYaw' has a wrong offset!");
-static_assert(offsetof(UPyTeamDMArcadeV2Component, SpawnRandomSpeed) == 0x000190, "Member 'UPyTeamDMArcadeV2Component::SpawnRandomSpeed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTeamDMArcadeV2Component;
 
 }
 

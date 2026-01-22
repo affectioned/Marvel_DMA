@@ -42,6 +42,25 @@ int32 UPyMarvelGameInstance::GetClientPort()
 }
 
 
+// PythonFunction PyMarvelGameInstance.PyMarvelGameInstance.ReceiveOnDSExit
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyMarvelGameInstance::ReceiveOnDSExit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyMarvelGameInstance", "ReceiveOnDSExit");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyMarvelGameInstance.PyMarvelGameInstance.ReceiveInit
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -182,6 +201,31 @@ void UPyMarvelGameInstance::OnWindowStyleChanged(const int64 style_old, const in
 }
 
 
+// PythonFunction PyMarvelGameInstance.PyMarvelGameInstance.OnShowFloatingGamepadTextInput
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const int32                             input_mode                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyMarvelGameInstance::OnShowFloatingGamepadTextInput(const int32 input_mode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyMarvelGameInstance", "OnShowFloatingGamepadTextInput");
+
+	Params::PyMarvelGameInstance_OnShowFloatingGamepadTextInput Parms{};
+
+	Parms.input_mode = input_mode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyMarvelGameInstance.PyMarvelGameInstance.OnAcceptedConnection
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -241,12 +285,12 @@ void UPyMarvelGameInstance::OnUEConnectionTimeOut(const int64 connectionId, cons
 // PythonFunction PyMarvelGameInstance.PyMarvelGameInstance.OnUEConnectionFastTimeOut
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const int64                             connectionId                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNetConnection*                   connection                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const int32                             state                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bUseIpv6Flag                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const class FString&                    msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UPyMarvelGameInstance::OnUEConnectionFastTimeOut(const int64 connectionId, const int32 state, bool bUseIpv6Flag, const class FString& msg)
+void UPyMarvelGameInstance::OnUEConnectionFastTimeOut(class UNetConnection* connection, const int32 state, bool bUseIpv6Flag, const class FString& msg)
 {
 	static class UFunction* Func = nullptr;
 
@@ -255,7 +299,7 @@ void UPyMarvelGameInstance::OnUEConnectionFastTimeOut(const int64 connectionId, 
 
 	Params::PyMarvelGameInstance_OnUEConnectionFastTimeOut Parms{};
 
-	Parms.connectionId = connectionId;
+	Parms.connection = connection;
 	Parms.state = state;
 	Parms.bUseIpv6Flag = bUseIpv6Flag;
 	Parms.msg = std::move(msg);

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBK2Checker">();
+		STATIC_CLASS_IMPL("PyBK2Checker")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBK2Checker")
 	}
 	static class UPyBK2Checker* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBK2Checker>();
 	}
 };
-static_assert(alignof(UPyBK2Checker) == 0x000008, "Wrong alignment on UPyBK2Checker");
-static_assert(sizeof(UPyBK2Checker) == 0x000030, "Wrong size on UPyBK2Checker");
+DUMPER7_ASSERTS_UPyBK2Checker;
 
 }
 

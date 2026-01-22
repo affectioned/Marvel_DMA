@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowBlueprintLibrary">();
+		STATIC_CLASS_IMPL("DataflowBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowBlueprintLibrary")
 	}
 	static class UDataflowBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UDataflowBlueprintLibrary) == 0x000008, "Wrong alignment on UDataflowBlueprintLibrary");
-static_assert(sizeof(UDataflowBlueprintLibrary) == 0x000030, "Wrong size on UDataflowBlueprintLibrary");
+DUMPER7_ASSERTS_UDataflowBlueprintLibrary;
 
 // Class DataflowEngine.DataflowEdNode
 // 0x0028 (0x00C8 - 0x00A0)
@@ -48,16 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataflowEdNode">();
+		STATIC_CLASS_IMPL("DataflowEdNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataflowEdNode")
 	}
 	static class UDataflowEdNode* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflowEdNode>();
 	}
 };
-static_assert(alignof(UDataflowEdNode) == 0x000008, "Wrong alignment on UDataflowEdNode");
-static_assert(sizeof(UDataflowEdNode) == 0x0000C8, "Wrong size on UDataflowEdNode");
-static_assert(offsetof(UDataflowEdNode, bRenderInAssetEditor) == 0x0000C0, "Member 'UDataflowEdNode::bRenderInAssetEditor' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflowEdNode;
 
 // Class DataflowEngine.Dataflow
 // 0x0048 (0x00B0 - 0x0068)
@@ -73,18 +78,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Dataflow">();
+		STATIC_CLASS_IMPL("Dataflow")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Dataflow")
 	}
 	static class UDataflow* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataflow>();
 	}
 };
-static_assert(alignof(UDataflow) == 0x000008, "Wrong alignment on UDataflow");
-static_assert(sizeof(UDataflow) == 0x0000B0, "Wrong size on UDataflow");
-static_assert(offsetof(UDataflow, bActive) == 0x000090, "Member 'UDataflow::bActive' has a wrong offset!");
-static_assert(offsetof(UDataflow, Targets) == 0x000098, "Member 'UDataflow::Targets' has a wrong offset!");
-static_assert(offsetof(UDataflow, Material) == 0x0000A8, "Member 'UDataflow::Material' has a wrong offset!");
+DUMPER7_ASSERTS_UDataflow;
 
 }
 

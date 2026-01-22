@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Engine_classes.hpp"
 #include "CameraCalibrationCore_structs.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "CinematicCamera_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "ProceduralMeshComponent_classes.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -53,26 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LensDistortionModelHandlerBase">();
+		STATIC_CLASS_IMPL("LensDistortionModelHandlerBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LensDistortionModelHandlerBase")
 	}
 	static class ULensDistortionModelHandlerBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULensDistortionModelHandlerBase>();
 	}
 };
-static_assert(alignof(ULensDistortionModelHandlerBase) == 0x000008, "Wrong alignment on ULensDistortionModelHandlerBase");
-static_assert(sizeof(ULensDistortionModelHandlerBase) == 0x0000D0, "Wrong size on ULensDistortionModelHandlerBase");
-static_assert(offsetof(ULensDistortionModelHandlerBase, LensModelClass) == 0x000030, "Member 'ULensDistortionModelHandlerBase::LensModelClass' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, DistortionPostProcessMID) == 0x000038, "Member 'ULensDistortionModelHandlerBase::DistortionPostProcessMID' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, CurrentState) == 0x000040, "Member 'ULensDistortionModelHandlerBase::CurrentState' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, CameraFilmback) == 0x000070, "Member 'ULensDistortionModelHandlerBase::CameraFilmback' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, DisplayName) == 0x000080, "Member 'ULensDistortionModelHandlerBase::DisplayName' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, OverscanFactor) == 0x000090, "Member 'ULensDistortionModelHandlerBase::OverscanFactor' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, UndistortionDisplacementMapMID) == 0x000098, "Member 'ULensDistortionModelHandlerBase::UndistortionDisplacementMapMID' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, DistortionDisplacementMapMID) == 0x0000A0, "Member 'ULensDistortionModelHandlerBase::DistortionDisplacementMapMID' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, UndistortionDisplacementMapRT) == 0x0000A8, "Member 'ULensDistortionModelHandlerBase::UndistortionDisplacementMapRT' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, DistortionDisplacementMapRT) == 0x0000B0, "Member 'ULensDistortionModelHandlerBase::DistortionDisplacementMapRT' has a wrong offset!");
-static_assert(offsetof(ULensDistortionModelHandlerBase, DistortionProducerID) == 0x0000B8, "Member 'ULensDistortionModelHandlerBase::DistortionProducerID' has a wrong offset!");
+DUMPER7_ASSERTS_ULensDistortionModelHandlerBase;
 
 // Class CameraCalibrationCore.AnamorphicLensDistortionModelHandler
 // 0x0038 (0x0108 - 0x00D0)
@@ -84,15 +76,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnamorphicLensDistortionModelHandler">();
+		STATIC_CLASS_IMPL("AnamorphicLensDistortionModelHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnamorphicLensDistortionModelHandler")
 	}
 	static class UAnamorphicLensDistortionModelHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnamorphicLensDistortionModelHandler>();
 	}
 };
-static_assert(alignof(UAnamorphicLensDistortionModelHandler) == 0x000008, "Wrong alignment on UAnamorphicLensDistortionModelHandler");
-static_assert(sizeof(UAnamorphicLensDistortionModelHandler) == 0x000108, "Wrong size on UAnamorphicLensDistortionModelHandler");
+DUMPER7_ASSERTS_UAnamorphicLensDistortionModelHandler;
 
 // Class CameraCalibrationCore.LensModel
 // 0x0000 (0x0030 - 0x0030)
@@ -101,15 +96,18 @@ class ULensModel : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LensModel">();
+		STATIC_CLASS_IMPL("LensModel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LensModel")
 	}
 	static class ULensModel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULensModel>();
 	}
 };
-static_assert(alignof(ULensModel) == 0x000008, "Wrong alignment on ULensModel");
-static_assert(sizeof(ULensModel) == 0x000030, "Wrong size on ULensModel");
+DUMPER7_ASSERTS_ULensModel;
 
 // Class CameraCalibrationCore.AnamorphicLensModel
 // 0x0000 (0x0030 - 0x0030)
@@ -118,15 +116,18 @@ class UAnamorphicLensModel final : public ULensModel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnamorphicLensModel">();
+		STATIC_CLASS_IMPL("AnamorphicLensModel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnamorphicLensModel")
 	}
 	static class UAnamorphicLensModel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnamorphicLensModel>();
 	}
 };
-static_assert(alignof(UAnamorphicLensModel) == 0x000008, "Wrong alignment on UAnamorphicLensModel");
-static_assert(sizeof(UAnamorphicLensModel) == 0x000030, "Wrong size on UAnamorphicLensModel");
+DUMPER7_ASSERTS_UAnamorphicLensModel;
 
 // Class CameraCalibrationCore.CalibrationPointComponent
 // 0x0060 (0x0960 - 0x0900)
@@ -150,19 +151,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CalibrationPointComponent">();
+		STATIC_CLASS_IMPL("CalibrationPointComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CalibrationPointComponent")
 	}
 	static class UCalibrationPointComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCalibrationPointComponent>();
 	}
 };
-static_assert(alignof(UCalibrationPointComponent) == 0x000010, "Wrong alignment on UCalibrationPointComponent");
-static_assert(sizeof(UCalibrationPointComponent) == 0x000960, "Wrong size on UCalibrationPointComponent");
-static_assert(offsetof(UCalibrationPointComponent, SubPoints) == 0x000900, "Member 'UCalibrationPointComponent::SubPoints' has a wrong offset!");
-static_assert(offsetof(UCalibrationPointComponent, bVisualizePointsInEditor) == 0x000950, "Member 'UCalibrationPointComponent::bVisualizePointsInEditor' has a wrong offset!");
-static_assert(offsetof(UCalibrationPointComponent, PointVisualizationScale) == 0x000954, "Member 'UCalibrationPointComponent::PointVisualizationScale' has a wrong offset!");
-static_assert(offsetof(UCalibrationPointComponent, VisualizationShape) == 0x000958, "Member 'UCalibrationPointComponent::VisualizationShape' has a wrong offset!");
+DUMPER7_ASSERTS_UCalibrationPointComponent;
 
 // Class CameraCalibrationCore.CameraCalibrationCheckerboard
 // 0x0050 (0x0730 - 0x06E0)
@@ -189,28 +189,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraCalibrationCheckerboard">();
+		STATIC_CLASS_IMPL("CameraCalibrationCheckerboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraCalibrationCheckerboard")
 	}
 	static class ACameraCalibrationCheckerboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraCalibrationCheckerboard>();
 	}
 };
-static_assert(alignof(ACameraCalibrationCheckerboard) == 0x000010, "Wrong alignment on ACameraCalibrationCheckerboard");
-static_assert(sizeof(ACameraCalibrationCheckerboard) == 0x000730, "Wrong size on ACameraCalibrationCheckerboard");
-static_assert(offsetof(ACameraCalibrationCheckerboard, Root) == 0x0006D8, "Member 'ACameraCalibrationCheckerboard::Root' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, TopLeft) == 0x0006E0, "Member 'ACameraCalibrationCheckerboard::TopLeft' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, TopRight) == 0x0006E8, "Member 'ACameraCalibrationCheckerboard::TopRight' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, BottomLeft) == 0x0006F0, "Member 'ACameraCalibrationCheckerboard::BottomLeft' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, BottomRight) == 0x0006F8, "Member 'ACameraCalibrationCheckerboard::BottomRight' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, Center) == 0x000700, "Member 'ACameraCalibrationCheckerboard::Center' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, NumCornerRows) == 0x000708, "Member 'ACameraCalibrationCheckerboard::NumCornerRows' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, NumCornerCols) == 0x00070C, "Member 'ACameraCalibrationCheckerboard::NumCornerCols' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, SquareSideLength) == 0x000710, "Member 'ACameraCalibrationCheckerboard::SquareSideLength' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, Thickness) == 0x000714, "Member 'ACameraCalibrationCheckerboard::Thickness' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, CubeMesh) == 0x000718, "Member 'ACameraCalibrationCheckerboard::CubeMesh' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, OddCubeMaterial) == 0x000720, "Member 'ACameraCalibrationCheckerboard::OddCubeMaterial' has a wrong offset!");
-static_assert(offsetof(ACameraCalibrationCheckerboard, EvenCubeMaterial) == 0x000728, "Member 'ACameraCalibrationCheckerboard::EvenCubeMaterial' has a wrong offset!");
+DUMPER7_ASSERTS_ACameraCalibrationCheckerboard;
 
 // Class CameraCalibrationCore.CameraCalibrationSettings
 // 0x0140 (0x0188 - 0x0048)
@@ -230,22 +220,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraCalibrationSettings">();
+		STATIC_CLASS_IMPL("CameraCalibrationSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraCalibrationSettings")
 	}
 	static class UCameraCalibrationSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraCalibrationSettings>();
 	}
 };
-static_assert(alignof(UCameraCalibrationSettings) == 0x000008, "Wrong alignment on UCameraCalibrationSettings");
-static_assert(sizeof(UCameraCalibrationSettings) == 0x000188, "Wrong size on UCameraCalibrationSettings");
-static_assert(offsetof(UCameraCalibrationSettings, StartupLensFile) == 0x000048, "Member 'UCameraCalibrationSettings::StartupLensFile' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, DisplacementMapResolution) == 0x000078, "Member 'UCameraCalibrationSettings::DisplacementMapResolution' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, CalibrationInputTolerance) == 0x000080, "Member 'UCameraCalibrationSettings::CalibrationInputTolerance' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, DefaultUndistortionDisplacementMaterials) == 0x000088, "Member 'UCameraCalibrationSettings::DefaultUndistortionDisplacementMaterials' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, DefaultDistortionDisplacementMaterials) == 0x0000D8, "Member 'UCameraCalibrationSettings::DefaultDistortionDisplacementMaterials' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, DefaultDistortionMaterials) == 0x000128, "Member 'UCameraCalibrationSettings::DefaultDistortionMaterials' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSettings, bEnableCalibrationDatasetImportExport) == 0x000178, "Member 'UCameraCalibrationSettings::bEnableCalibrationDatasetImportExport' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraCalibrationSettings;
 
 // Class CameraCalibrationCore.CameraCalibrationEditorSettings
 // 0x0000 (0x0048 - 0x0048)
@@ -254,15 +240,18 @@ class UCameraCalibrationEditorSettings final : public UDeveloperSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraCalibrationEditorSettings">();
+		STATIC_CLASS_IMPL("CameraCalibrationEditorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraCalibrationEditorSettings")
 	}
 	static class UCameraCalibrationEditorSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraCalibrationEditorSettings>();
 	}
 };
-static_assert(alignof(UCameraCalibrationEditorSettings) == 0x000008, "Wrong alignment on UCameraCalibrationEditorSettings");
-static_assert(sizeof(UCameraCalibrationEditorSettings) == 0x000048, "Wrong size on UCameraCalibrationEditorSettings");
+DUMPER7_ASSERTS_UCameraCalibrationEditorSettings;
 
 // Class CameraCalibrationCore.CameraCalibrationStep
 // 0x0000 (0x0030 - 0x0030)
@@ -271,15 +260,18 @@ class UCameraCalibrationStep final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraCalibrationStep">();
+		STATIC_CLASS_IMPL("CameraCalibrationStep")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraCalibrationStep")
 	}
 	static class UCameraCalibrationStep* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraCalibrationStep>();
 	}
 };
-static_assert(alignof(UCameraCalibrationStep) == 0x000008, "Wrong alignment on UCameraCalibrationStep");
-static_assert(sizeof(UCameraCalibrationStep) == 0x000030, "Wrong size on UCameraCalibrationStep");
+DUMPER7_ASSERTS_UCameraCalibrationStep;
 
 // Class CameraCalibrationCore.CameraCalibrationSubsystem
 // 0x01F0 (0x0228 - 0x0038)
@@ -315,20 +307,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraCalibrationSubsystem">();
+		STATIC_CLASS_IMPL("CameraCalibrationSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraCalibrationSubsystem")
 	}
 	static class UCameraCalibrationSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraCalibrationSubsystem>();
 	}
 };
-static_assert(alignof(UCameraCalibrationSubsystem) == 0x000008, "Wrong alignment on UCameraCalibrationSubsystem");
-static_assert(sizeof(UCameraCalibrationSubsystem) == 0x000228, "Wrong size on UCameraCalibrationSubsystem");
-static_assert(offsetof(UCameraCalibrationSubsystem, DefaultLensFile) == 0x000038, "Member 'UCameraCalibrationSubsystem::DefaultLensFile' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSubsystem, LensModelMap) == 0x000040, "Member 'UCameraCalibrationSubsystem::LensModelMap' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSubsystem, CameraNodalOffsetAlgosMap) == 0x000090, "Member 'UCameraCalibrationSubsystem::CameraNodalOffsetAlgosMap' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSubsystem, CameraImageCenterAlgosMap) == 0x0000E0, "Member 'UCameraCalibrationSubsystem::CameraImageCenterAlgosMap' has a wrong offset!");
-static_assert(offsetof(UCameraCalibrationSubsystem, CameraCalibrationStepsMap) == 0x000130, "Member 'UCameraCalibrationSubsystem::CameraCalibrationStepsMap' has a wrong offset!");
+DUMPER7_ASSERTS_UCameraCalibrationSubsystem;
 
 // Class CameraCalibrationCore.CameraImageCenterAlgo
 // 0x0008 (0x0038 - 0x0030)
@@ -340,15 +330,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraImageCenterAlgo">();
+		STATIC_CLASS_IMPL("CameraImageCenterAlgo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraImageCenterAlgo")
 	}
 	static class UCameraImageCenterAlgo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraImageCenterAlgo>();
 	}
 };
-static_assert(alignof(UCameraImageCenterAlgo) == 0x000008, "Wrong alignment on UCameraImageCenterAlgo");
-static_assert(sizeof(UCameraImageCenterAlgo) == 0x000038, "Wrong size on UCameraImageCenterAlgo");
+DUMPER7_ASSERTS_UCameraImageCenterAlgo;
 
 // Class CameraCalibrationCore.CameraLensDistortionAlgo
 // 0x0000 (0x0030 - 0x0030)
@@ -357,15 +350,18 @@ class UCameraLensDistortionAlgo final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraLensDistortionAlgo">();
+		STATIC_CLASS_IMPL("CameraLensDistortionAlgo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraLensDistortionAlgo")
 	}
 	static class UCameraLensDistortionAlgo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraLensDistortionAlgo>();
 	}
 };
-static_assert(alignof(UCameraLensDistortionAlgo) == 0x000008, "Wrong alignment on UCameraLensDistortionAlgo");
-static_assert(sizeof(UCameraLensDistortionAlgo) == 0x000030, "Wrong size on UCameraLensDistortionAlgo");
+DUMPER7_ASSERTS_UCameraLensDistortionAlgo;
 
 // Class CameraCalibrationCore.CameraNodalOffsetAlgo
 // 0x0000 (0x0030 - 0x0030)
@@ -374,15 +370,18 @@ class UCameraNodalOffsetAlgo final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CameraNodalOffsetAlgo">();
+		STATIC_CLASS_IMPL("CameraNodalOffsetAlgo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraNodalOffsetAlgo")
 	}
 	static class UCameraNodalOffsetAlgo* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraNodalOffsetAlgo>();
 	}
 };
-static_assert(alignof(UCameraNodalOffsetAlgo) == 0x000008, "Wrong alignment on UCameraNodalOffsetAlgo");
-static_assert(sizeof(UCameraNodalOffsetAlgo) == 0x000030, "Wrong size on UCameraNodalOffsetAlgo");
+DUMPER7_ASSERTS_UCameraNodalOffsetAlgo;
 
 // Class CameraCalibrationCore.LensComponent
 // 0x01E8 (0x02F0 - 0x0108)
@@ -452,36 +451,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LensComponent">();
+		STATIC_CLASS_IMPL("LensComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LensComponent")
 	}
 	static class ULensComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULensComponent>();
 	}
 };
-static_assert(alignof(ULensComponent) == 0x000010, "Wrong alignment on ULensComponent");
-static_assert(sizeof(ULensComponent) == 0x0002F0, "Wrong size on ULensComponent");
-static_assert(offsetof(ULensComponent, LensFilePicker) == 0x000108, "Member 'ULensComponent::LensFilePicker' has a wrong offset!");
-static_assert(offsetof(ULensComponent, EvaluationMode) == 0x000118, "Member 'ULensComponent::EvaluationMode' has a wrong offset!");
-static_assert(offsetof(ULensComponent, TargetCameraComponent) == 0x000120, "Member 'ULensComponent::TargetCameraComponent' has a wrong offset!");
-static_assert(offsetof(ULensComponent, EvalInputs) == 0x000150, "Member 'ULensComponent::EvalInputs' has a wrong offset!");
-static_assert(offsetof(ULensComponent, DistortionStateSource) == 0x00016C, "Member 'ULensComponent::DistortionStateSource' has a wrong offset!");
-static_assert(offsetof(ULensComponent, bApplyDistortion) == 0x00016D, "Member 'ULensComponent::bApplyDistortion' has a wrong offset!");
-static_assert(offsetof(ULensComponent, LensModel) == 0x000170, "Member 'ULensComponent::LensModel' has a wrong offset!");
-static_assert(offsetof(ULensComponent, DistortionState) == 0x000178, "Member 'ULensComponent::DistortionState' has a wrong offset!");
-static_assert(offsetof(ULensComponent, bScaleOverscan) == 0x0001A8, "Member 'ULensComponent::bScaleOverscan' has a wrong offset!");
-static_assert(offsetof(ULensComponent, OverscanMultiplier) == 0x0001AC, "Member 'ULensComponent::OverscanMultiplier' has a wrong offset!");
-static_assert(offsetof(ULensComponent, FilmbackOverride) == 0x0001B0, "Member 'ULensComponent::FilmbackOverride' has a wrong offset!");
-static_assert(offsetof(ULensComponent, CroppedFilmback) == 0x0001B4, "Member 'ULensComponent::CroppedFilmback' has a wrong offset!");
-static_assert(offsetof(ULensComponent, bApplyNodalOffsetOnTick) == 0x0001C0, "Member 'ULensComponent::bApplyNodalOffsetOnTick' has a wrong offset!");
-static_assert(offsetof(ULensComponent, OriginalTrackedComponentTransform) == 0x0001D0, "Member 'ULensComponent::OriginalTrackedComponentTransform' has a wrong offset!");
-static_assert(offsetof(ULensComponent, bIsDistortionSetup) == 0x000230, "Member 'ULensComponent::bIsDistortionSetup' has a wrong offset!");
-static_assert(offsetof(ULensComponent, OriginalFocalLength) == 0x000234, "Member 'ULensComponent::OriginalFocalLength' has a wrong offset!");
-static_assert(offsetof(ULensComponent, LastDistortionMID) == 0x000238, "Member 'ULensComponent::LastDistortionMID' has a wrong offset!");
-static_assert(offsetof(ULensComponent, LastCameraComponent) == 0x000240, "Member 'ULensComponent::LastCameraComponent' has a wrong offset!");
-static_assert(offsetof(ULensComponent, LensDistortionHandlerMap) == 0x000248, "Member 'ULensComponent::LensDistortionHandlerMap' has a wrong offset!");
-static_assert(offsetof(ULensComponent, TrackedComponent) == 0x000298, "Member 'ULensComponent::TrackedComponent' has a wrong offset!");
-static_assert(offsetof(ULensComponent, TrackedComponentName) == 0x0002A0, "Member 'ULensComponent::TrackedComponentName' has a wrong offset!");
+DUMPER7_ASSERTS_ULensComponent;
 
 // Class CameraCalibrationCore.LensFile
 // 0x0290 (0x02C0 - 0x0030)
@@ -540,26 +521,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LensFile">();
+		STATIC_CLASS_IMPL("LensFile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LensFile")
 	}
 	static class ULensFile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULensFile>();
 	}
 };
-static_assert(alignof(ULensFile) == 0x000008, "Wrong alignment on ULensFile");
-static_assert(sizeof(ULensFile) == 0x0002C0, "Wrong size on ULensFile");
-static_assert(offsetof(ULensFile, LensInfo) == 0x000038, "Member 'ULensFile::LensInfo' has a wrong offset!");
-static_assert(offsetof(ULensFile, DataMode) == 0x000080, "Member 'ULensFile::DataMode' has a wrong offset!");
-static_assert(offsetof(ULensFile, UserMetadata) == 0x000088, "Member 'ULensFile::UserMetadata' has a wrong offset!");
-static_assert(offsetof(ULensFile, EncodersTable) == 0x0000D8, "Member 'ULensFile::EncodersTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, DistortionTable) == 0x0001D8, "Member 'ULensFile::DistortionTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, FocalLengthTable) == 0x0001F8, "Member 'ULensFile::FocalLengthTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, ImageCenterTable) == 0x000218, "Member 'ULensFile::ImageCenterTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, NodalOffsetTable) == 0x000238, "Member 'ULensFile::NodalOffsetTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, STMapTable) == 0x000258, "Member 'ULensFile::STMapTable' has a wrong offset!");
-static_assert(offsetof(ULensFile, UndistortionDisplacementMapHolders) == 0x000288, "Member 'ULensFile::UndistortionDisplacementMapHolders' has a wrong offset!");
-static_assert(offsetof(ULensFile, DistortionDisplacementMapHolders) == 0x000298, "Member 'ULensFile::DistortionDisplacementMapHolders' has a wrong offset!");
+DUMPER7_ASSERTS_ULensFile;
 
 // Class CameraCalibrationCore.SphericalLensDistortionModelHandler
 // 0x0018 (0x00E8 - 0x00D0)
@@ -571,15 +544,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SphericalLensDistortionModelHandler">();
+		STATIC_CLASS_IMPL("SphericalLensDistortionModelHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SphericalLensDistortionModelHandler")
 	}
 	static class USphericalLensDistortionModelHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USphericalLensDistortionModelHandler>();
 	}
 };
-static_assert(alignof(USphericalLensDistortionModelHandler) == 0x000008, "Wrong alignment on USphericalLensDistortionModelHandler");
-static_assert(sizeof(USphericalLensDistortionModelHandler) == 0x0000E8, "Wrong size on USphericalLensDistortionModelHandler");
+DUMPER7_ASSERTS_USphericalLensDistortionModelHandler;
 
 // Class CameraCalibrationCore.SphericalLensModel
 // 0x0000 (0x0030 - 0x0030)
@@ -588,15 +564,18 @@ class USphericalLensModel final : public ULensModel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SphericalLensModel">();
+		STATIC_CLASS_IMPL("SphericalLensModel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SphericalLensModel")
 	}
 	static class USphericalLensModel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USphericalLensModel>();
 	}
 };
-static_assert(alignof(USphericalLensModel) == 0x000008, "Wrong alignment on USphericalLensModel");
-static_assert(sizeof(USphericalLensModel) == 0x000030, "Wrong size on USphericalLensModel");
+DUMPER7_ASSERTS_USphericalLensModel;
 
 }
 

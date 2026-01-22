@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "MarvelLevel_structs.hpp"
 
 
 namespace SDK
@@ -37,18 +37,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelMaterialManagerComponent">();
+		STATIC_CLASS_IMPL("PyLevelMaterialManagerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelMaterialManagerComponent")
 	}
 	static class UPyLevelMaterialManagerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelMaterialManagerComponent>();
 	}
 };
-static_assert(alignof(UPyLevelMaterialManagerComponent) == 0x000008, "Wrong alignment on UPyLevelMaterialManagerComponent");
-static_assert(sizeof(UPyLevelMaterialManagerComponent) == 0x000138, "Wrong size on UPyLevelMaterialManagerComponent");
-static_assert(offsetof(UPyLevelMaterialManagerComponent, LevelMaterialFloatConfigList) == 0x000108, "Member 'UPyLevelMaterialManagerComponent::LevelMaterialFloatConfigList' has a wrong offset!");
-static_assert(offsetof(UPyLevelMaterialManagerComponent, LevelMaterialVectorConfigList) == 0x000118, "Member 'UPyLevelMaterialManagerComponent::LevelMaterialVectorConfigList' has a wrong offset!");
-static_assert(offsetof(UPyLevelMaterialManagerComponent, LevelMaterialLinearColorConfigList) == 0x000128, "Member 'UPyLevelMaterialManagerComponent::LevelMaterialLinearColorConfigList' has a wrong offset!");
+DUMPER7_ASSERTS_UPyLevelMaterialManagerComponent;
 
 }
 

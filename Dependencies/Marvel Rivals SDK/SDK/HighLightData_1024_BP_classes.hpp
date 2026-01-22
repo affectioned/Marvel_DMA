@@ -23,15 +23,18 @@ class UHighLightData_1024_BP_C final : public UPyHighLightData_1024
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HighLightData_1024_BP_C">();
+		BP_STATIC_CLASS_IMPL("HighLightData_1024_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HighLightData_1024_BP_C")
 	}
 	static class UHighLightData_1024_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHighLightData_1024_BP_C>();
 	}
 };
-static_assert(alignof(UHighLightData_1024_BP_C) == 0x000008, "Wrong alignment on UHighLightData_1024_BP_C");
-static_assert(sizeof(UHighLightData_1024_BP_C) == 0x000050, "Wrong size on UHighLightData_1024_BP_C");
+DUMPER7_ASSERTS_UHighLightData_1024_BP_C;
 
 }
 

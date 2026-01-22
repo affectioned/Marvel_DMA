@@ -141,15 +141,15 @@ void APyLevelSummoned_20020801::OnRecoverTimer()
 }
 
 
-// PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.OnRecoverRateTimer1
+// PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.OnRecoverRateTimer
 // (Native, Public, BlueprintCallable)
 
-void APyLevelSummoned_20020801::OnRecoverRateTimer1()
+void APyLevelSummoned_20020801::OnRecoverRateTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyLevelSummoned_20020801", "OnRecoverRateTimer1");
+		Func = Class->GetFunction("PyLevelSummoned_20020801", "OnRecoverRateTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -189,6 +189,33 @@ void APyLevelSummoned_20020801::OnDeath(class AController* InSource, class AActo
 }
 
 
+// PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.OnHealthChanged
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AActor*                           InSourceAvatar                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FAttributeModifierHandle&  ModifierHandle                                         (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void APyLevelSummoned_20020801::OnHealthChanged(class AActor* InSourceAvatar, const struct FAttributeModifierHandle& ModifierHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyLevelSummoned_20020801", "OnHealthChanged");
+
+	Params::PyLevelSummoned_20020801_OnHealthChanged Parms{};
+
+	Parms.InSourceAvatar = InSourceAvatar;
+	Parms.ModifierHandle = std::move(ModifierHandle);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // PythonFunction PyLevelSummoned_20020801.PyLevelSummoned_20020801.K2_SetShieldState
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -204,6 +231,61 @@ void APyLevelSummoned_20020801::K2_SetShieldState(bool Active)
 	Params::PyLevelSummoned_20020801_K2_SetShieldState Parms{};
 
 	Parms.Active = Active;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyLevelSummoned_20020801.PyCue_Summoner_Loop_20020801_BP.WhileActive
+// (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool APyCue_Summoner_Loop_20020801_BP::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoner_Loop_20020801_BP", "WhileActive");
+
+	Params::PyCue_Summoner_Loop_20020801_BP_WhileActive Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// PythonFunction PyLevelSummoned_20020801.PyCue_Summoner_Loop_20020801_BP.ReceiveTick
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoner_Loop_20020801_BP::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoner_Loop_20020801_BP", "ReceiveTick");
+
+	Params::PyCue_Summoner_Loop_20020801_BP_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

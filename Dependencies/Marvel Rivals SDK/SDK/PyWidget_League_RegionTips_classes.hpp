@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_League_RegionTips.PyWidget_League_RegionTips
-// 0x00F8 (0x06D0 - 0x05D8)
+// 0x00F8 (0x06D8 - 0x05E0)
 class UPyWidget_League_RegionTips : public UPyWidget_CommonTipsBase
 {
 public:
-	struct FSlateColor                            TextColor_Normal;                                  // 0x05D4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor_Selected;                                // 0x05E8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5FC[0x4];                                      // 0x05FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         TextFont_Normal;                                   // 0x0600(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         TextFont_Selected;                                 // 0x0668(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Normal;                                  // 0x05DC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor_Selected;                                // 0x05F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         TextFont_Normal;                                   // 0x0608(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         TextFont_Selected;                                 // 0x0670(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,19 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_League_RegionTips">();
+		STATIC_CLASS_IMPL("PyWidget_League_RegionTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_League_RegionTips")
 	}
 	static class UPyWidget_League_RegionTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_League_RegionTips>();
 	}
 };
-static_assert(alignof(UPyWidget_League_RegionTips) == 0x000008, "Wrong alignment on UPyWidget_League_RegionTips");
-static_assert(sizeof(UPyWidget_League_RegionTips) == 0x0006D0, "Wrong size on UPyWidget_League_RegionTips");
-static_assert(offsetof(UPyWidget_League_RegionTips, TextColor_Normal) == 0x0005D4, "Member 'UPyWidget_League_RegionTips::TextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RegionTips, TextColor_Selected) == 0x0005E8, "Member 'UPyWidget_League_RegionTips::TextColor_Selected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RegionTips, TextFont_Normal) == 0x000600, "Member 'UPyWidget_League_RegionTips::TextFont_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_League_RegionTips, TextFont_Selected) == 0x000668, "Member 'UPyWidget_League_RegionTips::TextFont_Selected' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_League_RegionTips;
 
 }
 

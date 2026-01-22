@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_PlayerCount.PyWidget_Common_PlayerCountUnit
-// 0x0020 (0x0588 - 0x0568)
+// 0x0020 (0x0590 - 0x0570)
 class UPyWidget_Common_PlayerCountUnit final : public UMarvelUserWidget
 {
 public:
-	struct FLinearColor                           AllyColor;                                         // 0x0568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0578(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0580(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,20 +34,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PlayerCountUnit">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PlayerCountUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PlayerCountUnit")
 	}
 	static class UPyWidget_Common_PlayerCountUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PlayerCountUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PlayerCountUnit) == 0x000008, "Wrong alignment on UPyWidget_Common_PlayerCountUnit");
-static_assert(sizeof(UPyWidget_Common_PlayerCountUnit) == 0x000588, "Wrong size on UPyWidget_Common_PlayerCountUnit");
-static_assert(offsetof(UPyWidget_Common_PlayerCountUnit, AllyColor) == 0x000568, "Member 'UPyWidget_Common_PlayerCountUnit::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PlayerCountUnit, EnemyColor) == 0x000578, "Member 'UPyWidget_Common_PlayerCountUnit::EnemyColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_PlayerCountUnit;
 
 // PythonClass PyWidget_Common_PlayerCount.PyWidget_Common_PlayerCount
-// 0x0000 (0x0568 - 0x0568)
+// 0x0000 (0x0570 - 0x0570)
 class UPyWidget_Common_PlayerCount final : public UMarvelUserWidget
 {
 public:
@@ -60,15 +61,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PlayerCount">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PlayerCount")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PlayerCount")
 	}
 	static class UPyWidget_Common_PlayerCount* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PlayerCount>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PlayerCount) == 0x000008, "Wrong alignment on UPyWidget_Common_PlayerCount");
-static_assert(sizeof(UPyWidget_Common_PlayerCount) == 0x000568, "Wrong size on UPyWidget_Common_PlayerCount");
+DUMPER7_ASSERTS_UPyWidget_Common_PlayerCount;
 
 }
 

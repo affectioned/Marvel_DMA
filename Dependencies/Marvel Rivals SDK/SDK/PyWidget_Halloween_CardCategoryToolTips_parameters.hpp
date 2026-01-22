@@ -26,11 +26,7 @@ public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0038(0x0008)(Parm, NoDestructor)
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00C0)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived) == 0x000008, "Wrong alignment on PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived");
-static_assert(sizeof(PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived) == 0x000100, "Wrong size on PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived");
-static_assert(offsetof(PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived, MyGeometry) == 0x000000, "Member 'PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived, ReturnValue) == 0x000040, "Member 'PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_CardCategoryToolTipsCardUnit_OnFocusReceived;
 
 // PythonFunction PyWidget_Halloween_CardCategoryToolTips.PyWidget_Halloween_CardCategoryToolTips.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +35,7 @@ struct PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Halloween_CardCategoryToolTips_MarvelSetVisible;
 
 }
 

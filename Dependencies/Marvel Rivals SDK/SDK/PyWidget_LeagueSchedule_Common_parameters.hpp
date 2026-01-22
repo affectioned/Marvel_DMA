@@ -21,9 +21,7 @@ struct PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet");
-static_assert(sizeof(PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet");
-static_assert(offsetof(PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet, ItemObject_0) == 0x000000, "Member 'PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Clan_InterfaceOnListItemObjectSet;
 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Clan.InterfaceOnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged) == 0x000001, "Wrong alignment on PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged");
-static_assert(sizeof(PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged) == 0x000001, "Wrong size on PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged");
-static_assert(offsetof(PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged, IsSelected) == 0x000000, "Member 'PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Clan_InterfaceOnItemSelectionChanged;
 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Cup.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_LeagueSchedule_Cup_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_Cup_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_LeagueSchedule_Cup_PreConstruct");
-static_assert(sizeof(PyWidget_LeagueSchedule_Cup_PreConstruct) == 0x000001, "Wrong size on PyWidget_LeagueSchedule_Cup_PreConstruct");
-static_assert(offsetof(PyWidget_LeagueSchedule_Cup_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_LeagueSchedule_Cup_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Cup_PreConstruct;
 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.InterfaceOnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet final
 public:
 	class UObject*                                ItemObject_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet");
-static_assert(sizeof(PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet");
-static_assert(offsetof(PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet, ItemObject_0) == 0x000000, "Member 'PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet::ItemObject_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Dual_InterfaceOnListItemObjectSet;
 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_Dual.InterfaceOnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +57,7 @@ struct PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged final
 public:
 	bool                                          IsSelected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged) == 0x000001, "Wrong alignment on PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged");
-static_assert(sizeof(PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged) == 0x000001, "Wrong size on PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged");
-static_assert(offsetof(PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged, IsSelected) == 0x000000, "Member 'PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged::IsSelected' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_Dual_InterfaceOnItemSelectionChanged;
 
 // PythonFunction PyWidget_LeagueSchedule_Common.PyWidget_LeagueSchedule_ContentBase.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +66,7 @@ struct PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible");
-static_assert(sizeof(PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible");
-static_assert(offsetof(PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_LeagueSchedule_ContentBase_MarvelSetVisible;
 
 }
 

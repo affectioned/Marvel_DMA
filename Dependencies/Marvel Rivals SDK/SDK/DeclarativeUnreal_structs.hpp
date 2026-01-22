@@ -23,8 +23,7 @@ struct FTimerTickFunction final : public FTickFunction
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTimerTickFunction) == 0x000008, "Wrong alignment on FTimerTickFunction");
-static_assert(sizeof(FTimerTickFunction) == 0x000038, "Wrong size on FTimerTickFunction");
+DUMPER7_ASSERTS_FTimerTickFunction;
 
 // ScriptStruct DeclarativeUnreal.DeclarationHolder
 // 0x0010 (0x0010 - 0x0000)
@@ -33,8 +32,7 @@ struct alignas(0x08) FDeclarationHolder final
 public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDeclarationHolder) == 0x000008, "Wrong alignment on FDeclarationHolder");
-static_assert(sizeof(FDeclarationHolder) == 0x000010, "Wrong size on FDeclarationHolder");
+DUMPER7_ASSERTS_FDeclarationHolder;
 
 // ScriptStruct DeclarativeUnreal.ReactiveTimer
 // 0x1438 (0x1438 - 0x0000)
@@ -44,9 +42,7 @@ public:
 	class UObject*                                Owner;                                             // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8[0x1430];                                     // 0x0008(0x1430)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FReactiveTimer) == 0x000008, "Wrong alignment on FReactiveTimer");
-static_assert(sizeof(FReactiveTimer) == 0x001438, "Wrong size on FReactiveTimer");
-static_assert(offsetof(FReactiveTimer, Owner) == 0x000000, "Member 'FReactiveTimer::Owner' has a wrong offset!");
+DUMPER7_ASSERTS_FReactiveTimer;
 
 }
 

@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UISettingEntryChildProtectionHandler">();
+		STATIC_CLASS_IMPL("UISettingEntryChildProtectionHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UISettingEntryChildProtectionHandler")
 	}
 	static class UUISettingEntryChildProtectionHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUISettingEntryChildProtectionHandler>();
 	}
 };
-static_assert(alignof(UUISettingEntryChildProtectionHandler) == 0x000008, "Wrong alignment on UUISettingEntryChildProtectionHandler");
-static_assert(sizeof(UUISettingEntryChildProtectionHandler) == 0x000030, "Wrong size on UUISettingEntryChildProtectionHandler");
+DUMPER7_ASSERTS_UUISettingEntryChildProtectionHandler;
 
 }
 

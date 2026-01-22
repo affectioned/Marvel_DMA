@@ -21,9 +21,7 @@ struct PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct");
-static_assert(sizeof(PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct) == 0x000001, "Wrong size on PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct");
-static_assert(offsetof(PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityExpBpBase_Reward_Card_PreConstruct;
 
 // PythonFunction PyWidget_ActivityExpBpBase_reward.PyWidget_ActivityExpBpBase_Reward.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible");
-static_assert(sizeof(PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible");
-static_assert(offsetof(PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityExpBpBase_Reward_MarvelSetVisible;
 
 // PythonFunction PyWidget_ActivityExpBpBase_reward.PyWidget_ActivityExpBpBase_Reward.OnCascadingVisibleChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ActivityExpBpBase_Reward_OnCascadingVisibleChanged;
 
 }
 

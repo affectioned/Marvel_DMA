@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441003.PyBuffAbility_10130_10444190
-// 0x0010 (0x1A40 - 0x1A30)
+// 0x0010 (0x1A58 - 0x1A48)
 class UPyBuffAbility_10130_10444190 : public UBuffAbility_CommonCardEffect
 {
 public:
-	TArray<float>                                 AttrGainedPerDamage;                               // 0x1A30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 AttrGainedPerDamage;                               // 0x1A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -30,16 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10444190">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10444190")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10444190")
 	}
 	static class UPyBuffAbility_10130_10444190* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10444190>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10444190) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10444190");
-static_assert(sizeof(UPyBuffAbility_10130_10444190) == 0x001A40, "Wrong size on UPyBuffAbility_10130_10444190");
-static_assert(offsetof(UPyBuffAbility_10130_10444190, AttrGainedPerDamage) == 0x001A30, "Member 'UPyBuffAbility_10130_10444190::AttrGainedPerDamage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10444190;
 
 }
 

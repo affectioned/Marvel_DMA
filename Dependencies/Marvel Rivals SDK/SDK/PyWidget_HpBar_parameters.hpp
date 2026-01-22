@@ -19,53 +19,24 @@
 namespace SDK::Params
 {
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetActor
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_ScreenFXManager_SetTargetActor final
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.MarvelSetVisible
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_ScreenFXHealing_MarvelSetVisible final
 {
 public:
-	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ScreenFXManager_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_ScreenFXManager_SetTargetActor");
-static_assert(sizeof(PyWidget_ScreenFXManager_SetTargetActor) == 0x000008, "Wrong size on PyWidget_ScreenFXManager_SetTargetActor");
-static_assert(offsetof(PyWidget_ScreenFXManager_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_ScreenFXManager_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ScreenFXHealing_MarvelSetVisible;
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetTreatPercentageCur
-// 0x0004 (0x0004 - 0x0000)
-struct PyWidget_ScreenFXManager_SetTargetTreatPercentageCur final
-{
-public:
-	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_ScreenFXManager_SetTargetTreatPercentageCur) == 0x000004, "Wrong alignment on PyWidget_ScreenFXManager_SetTargetTreatPercentageCur");
-static_assert(sizeof(PyWidget_ScreenFXManager_SetTargetTreatPercentageCur) == 0x000004, "Wrong size on PyWidget_ScreenFXManager_SetTargetTreatPercentageCur");
-static_assert(offsetof(PyWidget_ScreenFXManager_SetTargetTreatPercentageCur, InPercentage) == 0x000000, "Member 'PyWidget_ScreenFXManager_SetTargetTreatPercentageCur::InPercentage' has a wrong offset!");
-
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.ShouldShowBuff
-// 0x0018 (0x0018 - 0x0000)
-struct PyWidget_ScreenFXManager_ShouldShowBuff final
-{
-public:
-	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_ScreenFXManager_ShouldShowBuff) == 0x000008, "Wrong alignment on PyWidget_ScreenFXManager_ShouldShowBuff");
-static_assert(sizeof(PyWidget_ScreenFXManager_ShouldShowBuff) == 0x000018, "Wrong size on PyWidget_ScreenFXManager_ShouldShowBuff");
-static_assert(offsetof(PyWidget_ScreenFXManager_ShouldShowBuff, Tag) == 0x000000, "Member 'PyWidget_ScreenFXManager_ShouldShowBuff::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_ScreenFXManager_ShouldShowBuff, ReturnValue) == 0x000010, "Member 'PyWidget_ScreenFXManager_ShouldShowBuff::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnTagUpdated
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnTagUpdated
 // 0x0010 (0x0010 - 0x0000)
-struct PyWidget_ScreenFXManager_OnTagUpdated final
+struct PyWidget_ScreenFXHealing_OnTagUpdated final
 {
 public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ScreenFXManager_OnTagUpdated) == 0x000004, "Wrong alignment on PyWidget_ScreenFXManager_OnTagUpdated");
-static_assert(sizeof(PyWidget_ScreenFXManager_OnTagUpdated) == 0x000010, "Wrong size on PyWidget_ScreenFXManager_OnTagUpdated");
-static_assert(offsetof(PyWidget_ScreenFXManager_OnTagUpdated, Tag) == 0x000000, "Member 'PyWidget_ScreenFXManager_OnTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_ScreenFXManager_OnTagUpdated, TagExist) == 0x00000C, "Member 'PyWidget_ScreenFXManager_OnTagUpdated::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ScreenFXHealing_OnTagUpdated;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetTargetActor
 // 0x0008 (0x0008 - 0x0000)
@@ -74,9 +45,7 @@ struct PyWidget_HpBar_V3_SetTargetActor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_HpBar_V3_SetTargetActor");
-static_assert(sizeof(PyWidget_HpBar_V3_SetTargetActor) == 0x000008, "Wrong size on PyWidget_HpBar_V3_SetTargetActor");
-static_assert(offsetof(PyWidget_HpBar_V3_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_HpBar_V3_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetTargetActor;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.OnTargetTakeTreat
 // 0x0028 (0x0028 - 0x0000)
@@ -87,11 +56,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierHandle;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_OnTargetTakeTreat) == 0x000008, "Wrong alignment on PyWidget_HpBar_V3_OnTargetTakeTreat");
-static_assert(sizeof(PyWidget_HpBar_V3_OnTargetTakeTreat) == 0x000028, "Wrong size on PyWidget_HpBar_V3_OnTargetTakeTreat");
-static_assert(offsetof(PyWidget_HpBar_V3_OnTargetTakeTreat, Source) == 0x000000, "Member 'PyWidget_HpBar_V3_OnTargetTakeTreat::Source' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_OnTargetTakeTreat, Target) == 0x000008, "Member 'PyWidget_HpBar_V3_OnTargetTakeTreat::Target' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_OnTargetTakeTreat, ModifierHandle) == 0x000010, "Member 'PyWidget_HpBar_V3_OnTargetTakeTreat::ModifierHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_OnTargetTakeTreat;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetIsFullHp
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +65,7 @@ struct PyWidget_HpBar_V3_SetIsFullHp final
 public:
 	bool                                          bInFullHp;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetIsFullHp) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_SetIsFullHp");
-static_assert(sizeof(PyWidget_HpBar_V3_SetIsFullHp) == 0x000001, "Wrong size on PyWidget_HpBar_V3_SetIsFullHp");
-static_assert(offsetof(PyWidget_HpBar_V3_SetIsFullHp, bInFullHp) == 0x000000, "Member 'PyWidget_HpBar_V3_SetIsFullHp::bInFullHp' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetIsFullHp;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetHpColor
 // 0x0010 (0x0010 - 0x0000)
@@ -111,9 +74,7 @@ struct PyWidget_HpBar_V3_SetHpColor final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetHpColor) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetHpColor");
-static_assert(sizeof(PyWidget_HpBar_V3_SetHpColor) == 0x000010, "Wrong size on PyWidget_HpBar_V3_SetHpColor");
-static_assert(offsetof(PyWidget_HpBar_V3_SetHpColor, Color) == 0x000000, "Member 'PyWidget_HpBar_V3_SetHpColor::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetHpColor;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetShieldColor
 // 0x0010 (0x0010 - 0x0000)
@@ -122,9 +83,7 @@ struct PyWidget_HpBar_V3_SetShieldColor final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetShieldColor) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetShieldColor");
-static_assert(sizeof(PyWidget_HpBar_V3_SetShieldColor) == 0x000010, "Wrong size on PyWidget_HpBar_V3_SetShieldColor");
-static_assert(offsetof(PyWidget_HpBar_V3_SetShieldColor, Color) == 0x000000, "Member 'PyWidget_HpBar_V3_SetShieldColor::Color' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetShieldColor;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetHpDeductColor
 // 0x0010 (0x0010 - 0x0000)
@@ -133,9 +92,7 @@ struct PyWidget_HpBar_V3_SetHpDeductColor final
 public:
 	struct FLinearColor                           DeductColor;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetHpDeductColor) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetHpDeductColor");
-static_assert(sizeof(PyWidget_HpBar_V3_SetHpDeductColor) == 0x000010, "Wrong size on PyWidget_HpBar_V3_SetHpDeductColor");
-static_assert(offsetof(PyWidget_HpBar_V3_SetHpDeductColor, DeductColor) == 0x000000, "Member 'PyWidget_HpBar_V3_SetHpDeductColor::DeductColor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetHpDeductColor;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetParentBg
 // 0x0003 (0x0003 - 0x0000)
@@ -146,11 +103,7 @@ public:
 	bool                                          IsReplay;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTeammate;                                        // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetParentBg) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_SetParentBg");
-static_assert(sizeof(PyWidget_HpBar_V3_SetParentBg) == 0x000003, "Wrong size on PyWidget_HpBar_V3_SetParentBg");
-static_assert(offsetof(PyWidget_HpBar_V3_SetParentBg, IsCharacter) == 0x000000, "Member 'PyWidget_HpBar_V3_SetParentBg::IsCharacter' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_SetParentBg, IsReplay) == 0x000001, "Member 'PyWidget_HpBar_V3_SetParentBg::IsReplay' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_SetParentBg, IsTeammate) == 0x000002, "Member 'PyWidget_HpBar_V3_SetParentBg::IsTeammate' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetParentBg;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetTargetTreatPercentageCur
 // 0x0004 (0x0004 - 0x0000)
@@ -159,9 +112,7 @@ struct PyWidget_HpBar_V3_SetTargetTreatPercentageCur final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetTargetTreatPercentageCur) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetTargetTreatPercentageCur");
-static_assert(sizeof(PyWidget_HpBar_V3_SetTargetTreatPercentageCur) == 0x000004, "Wrong size on PyWidget_HpBar_V3_SetTargetTreatPercentageCur");
-static_assert(offsetof(PyWidget_HpBar_V3_SetTargetTreatPercentageCur, InPercentage) == 0x000000, "Member 'PyWidget_HpBar_V3_SetTargetTreatPercentageCur::InPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetTargetTreatPercentageCur;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.ShouldShowBuff
 // 0x0018 (0x0018 - 0x0000)
@@ -171,10 +122,7 @@ public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_ShouldShowBuff) == 0x000008, "Wrong alignment on PyWidget_HpBar_V3_ShouldShowBuff");
-static_assert(sizeof(PyWidget_HpBar_V3_ShouldShowBuff) == 0x000018, "Wrong size on PyWidget_HpBar_V3_ShouldShowBuff");
-static_assert(offsetof(PyWidget_HpBar_V3_ShouldShowBuff, Tag) == 0x000000, "Member 'PyWidget_HpBar_V3_ShouldShowBuff::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_ShouldShowBuff, ReturnValue) == 0x000010, "Member 'PyWidget_HpBar_V3_ShouldShowBuff::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_ShouldShowBuff;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.OnTagUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -184,10 +132,7 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_OnTagUpdated) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_OnTagUpdated");
-static_assert(sizeof(PyWidget_HpBar_V3_OnTagUpdated) == 0x000010, "Wrong size on PyWidget_HpBar_V3_OnTagUpdated");
-static_assert(offsetof(PyWidget_HpBar_V3_OnTagUpdated, Tag) == 0x000000, "Member 'PyWidget_HpBar_V3_OnTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_HpBar_V3_OnTagUpdated, TagExist) == 0x00000C, "Member 'PyWidget_HpBar_V3_OnTagUpdated::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_OnTagUpdated;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetAllExistingTags
 // 0x0010 (0x0010 - 0x0000)
@@ -196,9 +141,7 @@ struct PyWidget_HpBar_V3_SetAllExistingTags final
 public:
 	TArray<struct FGameplayTag>                   InTags;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetAllExistingTags) == 0x000008, "Wrong alignment on PyWidget_HpBar_V3_SetAllExistingTags");
-static_assert(sizeof(PyWidget_HpBar_V3_SetAllExistingTags) == 0x000010, "Wrong size on PyWidget_HpBar_V3_SetAllExistingTags");
-static_assert(offsetof(PyWidget_HpBar_V3_SetAllExistingTags, InTags) == 0x000000, "Member 'PyWidget_HpBar_V3_SetAllExistingTags::InTags' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetAllExistingTags;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetIsUnderTreatment
 // 0x0001 (0x0001 - 0x0000)
@@ -207,9 +150,7 @@ struct PyWidget_HpBar_V3_SetIsUnderTreatment final
 public:
 	bool                                          in_under_treatment;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetIsUnderTreatment) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_SetIsUnderTreatment");
-static_assert(sizeof(PyWidget_HpBar_V3_SetIsUnderTreatment) == 0x000001, "Wrong size on PyWidget_HpBar_V3_SetIsUnderTreatment");
-static_assert(offsetof(PyWidget_HpBar_V3_SetIsUnderTreatment, in_under_treatment) == 0x000000, "Member 'PyWidget_HpBar_V3_SetIsUnderTreatment::in_under_treatment' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetIsUnderTreatment;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetTargetTreatPercentage
 // 0x0004 (0x0004 - 0x0000)
@@ -218,9 +159,7 @@ struct PyWidget_HpBar_V3_SetTargetTreatPercentage final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetTargetTreatPercentage) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetTargetTreatPercentage");
-static_assert(sizeof(PyWidget_HpBar_V3_SetTargetTreatPercentage) == 0x000004, "Wrong size on PyWidget_HpBar_V3_SetTargetTreatPercentage");
-static_assert(offsetof(PyWidget_HpBar_V3_SetTargetTreatPercentage, InPercentage) == 0x000000, "Member 'PyWidget_HpBar_V3_SetTargetTreatPercentage::InPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetTargetTreatPercentage;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetShowUltimateBar
 // 0x0001 (0x0001 - 0x0000)
@@ -229,9 +168,7 @@ struct PyWidget_HpBar_V3_SetShowUltimateBar final
 public:
 	bool                                          bShow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetShowUltimateBar) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_SetShowUltimateBar");
-static_assert(sizeof(PyWidget_HpBar_V3_SetShowUltimateBar) == 0x000001, "Wrong size on PyWidget_HpBar_V3_SetShowUltimateBar");
-static_assert(offsetof(PyWidget_HpBar_V3_SetShowUltimateBar, bShow) == 0x000000, "Member 'PyWidget_HpBar_V3_SetShowUltimateBar::bShow' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetShowUltimateBar;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetUltimateEnergyPercent
 // 0x0004 (0x0004 - 0x0000)
@@ -240,9 +177,7 @@ struct PyWidget_HpBar_V3_SetUltimateEnergyPercent final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetUltimateEnergyPercent) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_SetUltimateEnergyPercent");
-static_assert(sizeof(PyWidget_HpBar_V3_SetUltimateEnergyPercent) == 0x000004, "Wrong size on PyWidget_HpBar_V3_SetUltimateEnergyPercent");
-static_assert(offsetof(PyWidget_HpBar_V3_SetUltimateEnergyPercent, InPercentage) == 0x000000, "Member 'PyWidget_HpBar_V3_SetUltimateEnergyPercent::InPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetUltimateEnergyPercent;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -251,9 +186,16 @@ struct PyWidget_HpBar_V3_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_HpBar_V3_OnAnimationFinished");
-static_assert(sizeof(PyWidget_HpBar_V3_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_HpBar_V3_OnAnimationFinished");
-static_assert(offsetof(PyWidget_HpBar_V3_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_HpBar_V3_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_OnAnimationFinished;
+
+// PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetShowUltimateIcon
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_HpBar_V3_SetShowUltimateIcon final
+{
+public:
+	bool                                          bShow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetShowUltimateIcon;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.SetIsAlly
 // 0x0001 (0x0001 - 0x0000)
@@ -262,9 +204,7 @@ struct PyWidget_HpBar_V3_SetIsAlly final
 public:
 	bool                                          bIsAlly;                                           // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_SetIsAlly) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_SetIsAlly");
-static_assert(sizeof(PyWidget_HpBar_V3_SetIsAlly) == 0x000001, "Wrong size on PyWidget_HpBar_V3_SetIsAlly");
-static_assert(offsetof(PyWidget_HpBar_V3_SetIsAlly, bIsAlly) == 0x000000, "Member 'PyWidget_HpBar_V3_SetIsAlly::bIsAlly' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_SetIsAlly;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.GetIsUnderTreatment
 // 0x0001 (0x0001 - 0x0000)
@@ -273,9 +213,7 @@ struct PyWidget_HpBar_V3_GetIsUnderTreatment final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_GetIsUnderTreatment) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_GetIsUnderTreatment");
-static_assert(sizeof(PyWidget_HpBar_V3_GetIsUnderTreatment) == 0x000001, "Wrong size on PyWidget_HpBar_V3_GetIsUnderTreatment");
-static_assert(offsetof(PyWidget_HpBar_V3_GetIsUnderTreatment, ReturnValue) == 0x000000, "Member 'PyWidget_HpBar_V3_GetIsUnderTreatment::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_GetIsUnderTreatment;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.GetTargetTreatPercentage
 // 0x0004 (0x0004 - 0x0000)
@@ -284,9 +222,7 @@ struct PyWidget_HpBar_V3_GetTargetTreatPercentage final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_GetTargetTreatPercentage) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_GetTargetTreatPercentage");
-static_assert(sizeof(PyWidget_HpBar_V3_GetTargetTreatPercentage) == 0x000004, "Wrong size on PyWidget_HpBar_V3_GetTargetTreatPercentage");
-static_assert(offsetof(PyWidget_HpBar_V3_GetTargetTreatPercentage, ReturnValue) == 0x000000, "Member 'PyWidget_HpBar_V3_GetTargetTreatPercentage::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_GetTargetTreatPercentage;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.GetShowUltimateBar
 // 0x0001 (0x0001 - 0x0000)
@@ -295,9 +231,7 @@ struct PyWidget_HpBar_V3_GetShowUltimateBar final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_GetShowUltimateBar) == 0x000001, "Wrong alignment on PyWidget_HpBar_V3_GetShowUltimateBar");
-static_assert(sizeof(PyWidget_HpBar_V3_GetShowUltimateBar) == 0x000001, "Wrong size on PyWidget_HpBar_V3_GetShowUltimateBar");
-static_assert(offsetof(PyWidget_HpBar_V3_GetShowUltimateBar, ReturnValue) == 0x000000, "Member 'PyWidget_HpBar_V3_GetShowUltimateBar::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_GetShowUltimateBar;
 
 // PythonFunction PyWidget_HpBar.PyWidget_HpBar_V3.GetUltimateEnergyPercent
 // 0x0004 (0x0004 - 0x0000)
@@ -306,42 +240,7 @@ struct PyWidget_HpBar_V3_GetUltimateEnergyPercent final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_HpBar_V3_GetUltimateEnergyPercent) == 0x000004, "Wrong alignment on PyWidget_HpBar_V3_GetUltimateEnergyPercent");
-static_assert(sizeof(PyWidget_HpBar_V3_GetUltimateEnergyPercent) == 0x000004, "Wrong size on PyWidget_HpBar_V3_GetUltimateEnergyPercent");
-static_assert(offsetof(PyWidget_HpBar_V3_GetUltimateEnergyPercent, ReturnValue) == 0x000000, "Member 'PyWidget_HpBar_V3_GetUltimateEnergyPercent::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.ShouldBeVisible
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_DyingScreenFX_ShouldBeVisible final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_DyingScreenFX_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_DyingScreenFX_ShouldBeVisible");
-static_assert(sizeof(PyWidget_DyingScreenFX_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_DyingScreenFX_ShouldBeVisible");
-static_assert(offsetof(PyWidget_DyingScreenFX_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_DyingScreenFX_ShouldBeVisible::ReturnValue' has a wrong offset!");
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetTargetCharacter
-// 0x0008 (0x0008 - 0x0000)
-struct PyWidget_DyingScreenFX_SetTargetCharacter final
-{
-public:
-	class AMarvelBaseCharacter*                   InCharacter;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_DyingScreenFX_SetTargetCharacter) == 0x000008, "Wrong alignment on PyWidget_DyingScreenFX_SetTargetCharacter");
-static_assert(sizeof(PyWidget_DyingScreenFX_SetTargetCharacter) == 0x000008, "Wrong size on PyWidget_DyingScreenFX_SetTargetCharacter");
-static_assert(offsetof(PyWidget_DyingScreenFX_SetTargetCharacter, InCharacter) == 0x000000, "Member 'PyWidget_DyingScreenFX_SetTargetCharacter::InCharacter' has a wrong offset!");
-
-// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetDying
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_DyingScreenFX_SetDying final
-{
-public:
-	bool                                          InDying;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PyWidget_DyingScreenFX_SetDying) == 0x000001, "Wrong alignment on PyWidget_DyingScreenFX_SetDying");
-static_assert(sizeof(PyWidget_DyingScreenFX_SetDying) == 0x000001, "Wrong size on PyWidget_DyingScreenFX_SetDying");
-static_assert(offsetof(PyWidget_DyingScreenFX_SetDying, InDying) == 0x000000, "Member 'PyWidget_DyingScreenFX_SetDying::InDying' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_HpBar_V3_GetUltimateEnergyPercent;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -350,9 +249,7 @@ struct PyWidget_BattleHpBar_V3_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_BattleHpBar_V3_PreConstruct");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_PreConstruct) == 0x000001, "Wrong size on PyWidget_BattleHpBar_V3_PreConstruct");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_PreConstruct;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -361,9 +258,7 @@ struct PyWidget_BattleHpBar_V3_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_ShouldBeVisible) == 0x000001, "Wrong alignment on PyWidget_BattleHpBar_V3_ShouldBeVisible");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_ShouldBeVisible) == 0x000001, "Wrong size on PyWidget_BattleHpBar_V3_ShouldBeVisible");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_ShouldBeVisible;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.SetTargetActor
 // 0x0008 (0x0008 - 0x0000)
@@ -372,9 +267,7 @@ struct PyWidget_BattleHpBar_V3_SetTargetActor final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_SetTargetActor) == 0x000008, "Wrong alignment on PyWidget_BattleHpBar_V3_SetTargetActor");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_SetTargetActor) == 0x000008, "Wrong size on PyWidget_BattleHpBar_V3_SetTargetActor");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_SetTargetActor, InActor) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_SetTargetActor::InActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_SetTargetActor;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.OnMovementModeChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -385,11 +278,7 @@ public:
 	EMovementMode                                 PreMode;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         PreviousCustomMove;                                // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_OnMovementModeChanged) == 0x000008, "Wrong alignment on PyWidget_BattleHpBar_V3_OnMovementModeChanged");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_OnMovementModeChanged) == 0x000010, "Wrong size on PyWidget_BattleHpBar_V3_OnMovementModeChanged");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnMovementModeChanged, Char) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_OnMovementModeChanged::Char' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnMovementModeChanged, PreMode) == 0x000008, "Member 'PyWidget_BattleHpBar_V3_OnMovementModeChanged::PreMode' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnMovementModeChanged, PreviousCustomMove) == 0x000009, "Member 'PyWidget_BattleHpBar_V3_OnMovementModeChanged::PreviousCustomMove' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_OnMovementModeChanged;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.OnTakeDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -400,11 +289,7 @@ public:
 	class AActor*                                 Dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               Parm;                                              // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_OnTakeDamage) == 0x000008, "Wrong alignment on PyWidget_BattleHpBar_V3_OnTakeDamage");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_OnTakeDamage) == 0x000028, "Wrong size on PyWidget_BattleHpBar_V3_OnTakeDamage");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnTakeDamage, Source) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_OnTakeDamage::Source' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnTakeDamage, Dest) == 0x000008, "Member 'PyWidget_BattleHpBar_V3_OnTakeDamage::Dest' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnTakeDamage, Parm) == 0x000010, "Member 'PyWidget_BattleHpBar_V3_OnTakeDamage::Parm' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_OnTakeDamage;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.OnSpecialVXPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -413,9 +298,7 @@ struct PyWidget_BattleHpBar_V3_OnSpecialVXPlay final
 public:
 	EMarvelAbilityUIHudAnim                       ShakeMode;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_OnSpecialVXPlay) == 0x000001, "Wrong alignment on PyWidget_BattleHpBar_V3_OnSpecialVXPlay");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_OnSpecialVXPlay) == 0x000001, "Wrong size on PyWidget_BattleHpBar_V3_OnSpecialVXPlay");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnSpecialVXPlay, ShakeMode) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_OnSpecialVXPlay::ShakeMode' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_OnSpecialVXPlay;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.SetTotalHpMax
 // 0x0004 (0x0004 - 0x0000)
@@ -424,9 +307,7 @@ struct PyWidget_BattleHpBar_V3_SetTotalHpMax final
 public:
 	float                                         InTotalHpMax;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_SetTotalHpMax) == 0x000004, "Wrong alignment on PyWidget_BattleHpBar_V3_SetTotalHpMax");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_SetTotalHpMax) == 0x000004, "Wrong size on PyWidget_BattleHpBar_V3_SetTotalHpMax");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_SetTotalHpMax, InTotalHpMax) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_SetTotalHpMax::InTotalHpMax' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_SetTotalHpMax;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.SetTotalHpCur
 // 0x0004 (0x0004 - 0x0000)
@@ -435,9 +316,7 @@ struct PyWidget_BattleHpBar_V3_SetTotalHpCur final
 public:
 	float                                         InTotalHpCur;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_SetTotalHpCur) == 0x000004, "Wrong alignment on PyWidget_BattleHpBar_V3_SetTotalHpCur");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_SetTotalHpCur) == 0x000004, "Wrong size on PyWidget_BattleHpBar_V3_SetTotalHpCur");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_SetTotalHpCur, InTotalHpCur) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_SetTotalHpCur::InTotalHpCur' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_SetTotalHpCur;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.SetTargetTreatPercentageCur
 // 0x0004 (0x0004 - 0x0000)
@@ -446,9 +325,7 @@ struct PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur) == 0x000004, "Wrong alignment on PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur) == 0x000004, "Wrong size on PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur, InPercentage) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur::InPercentage' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_SetTargetTreatPercentageCur;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.ShouldShowBuff
 // 0x0018 (0x0018 - 0x0000)
@@ -458,10 +335,7 @@ public:
 	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_ShouldShowBuff) == 0x000008, "Wrong alignment on PyWidget_BattleHpBar_V3_ShouldShowBuff");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_ShouldShowBuff) == 0x000018, "Wrong size on PyWidget_BattleHpBar_V3_ShouldShowBuff");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_ShouldShowBuff, Tag) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_ShouldShowBuff::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_ShouldShowBuff, ReturnValue) == 0x000010, "Member 'PyWidget_BattleHpBar_V3_ShouldShowBuff::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_ShouldShowBuff;
 
 // PythonFunction PyWidget_HpBar.PyWidget_BattleHpBar_V3.OnTagUpdated
 // 0x0010 (0x0010 - 0x0000)
@@ -471,34 +345,72 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_BattleHpBar_V3_OnTagUpdated) == 0x000004, "Wrong alignment on PyWidget_BattleHpBar_V3_OnTagUpdated");
-static_assert(sizeof(PyWidget_BattleHpBar_V3_OnTagUpdated) == 0x000010, "Wrong size on PyWidget_BattleHpBar_V3_OnTagUpdated");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnTagUpdated, Tag) == 0x000000, "Member 'PyWidget_BattleHpBar_V3_OnTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_BattleHpBar_V3_OnTagUpdated, TagExist) == 0x00000C, "Member 'PyWidget_BattleHpBar_V3_OnTagUpdated::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_BattleHpBar_V3_OnTagUpdated;
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.MarvelSetVisible
-// 0x0001 (0x0001 - 0x0000)
-struct PyWidget_ScreenFXHealing_MarvelSetVisible final
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetActor
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_ScreenFXManager_SetTargetActor final
 {
 public:
-	bool                                          bIsVisible;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ScreenFXHealing_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_ScreenFXHealing_MarvelSetVisible");
-static_assert(sizeof(PyWidget_ScreenFXHealing_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_ScreenFXHealing_MarvelSetVisible");
-static_assert(offsetof(PyWidget_ScreenFXHealing_MarvelSetVisible, bIsVisible) == 0x000000, "Member 'PyWidget_ScreenFXHealing_MarvelSetVisible::bIsVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ScreenFXManager_SetTargetActor;
 
-// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXHealing.OnTagUpdated
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.SetTargetTreatPercentageCur
+// 0x0004 (0x0004 - 0x0000)
+struct PyWidget_ScreenFXManager_SetTargetTreatPercentageCur final
+{
+public:
+	float                                         InPercentage;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_ScreenFXManager_SetTargetTreatPercentageCur;
+
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.ShouldShowBuff
+// 0x0018 (0x0018 - 0x0000)
+struct PyWidget_ScreenFXManager_ShouldShowBuff final
+{
+public:
+	class FString                                 Tag;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_ScreenFXManager_ShouldShowBuff;
+
+// PythonFunction PyWidget_HpBar.PyWidget_ScreenFXManager.OnTagUpdated
 // 0x0010 (0x0010 - 0x0000)
-struct PyWidget_ScreenFXHealing_OnTagUpdated final
+struct PyWidget_ScreenFXManager_OnTagUpdated final
 {
 public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          TagExist;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_ScreenFXHealing_OnTagUpdated) == 0x000004, "Wrong alignment on PyWidget_ScreenFXHealing_OnTagUpdated");
-static_assert(sizeof(PyWidget_ScreenFXHealing_OnTagUpdated) == 0x000010, "Wrong size on PyWidget_ScreenFXHealing_OnTagUpdated");
-static_assert(offsetof(PyWidget_ScreenFXHealing_OnTagUpdated, Tag) == 0x000000, "Member 'PyWidget_ScreenFXHealing_OnTagUpdated::Tag' has a wrong offset!");
-static_assert(offsetof(PyWidget_ScreenFXHealing_OnTagUpdated, TagExist) == 0x00000C, "Member 'PyWidget_ScreenFXHealing_OnTagUpdated::TagExist' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_ScreenFXManager_OnTagUpdated;
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.ShouldBeVisible
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_DyingScreenFX_ShouldBeVisible final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_DyingScreenFX_ShouldBeVisible;
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetTargetCharacter
+// 0x0008 (0x0008 - 0x0000)
+struct PyWidget_DyingScreenFX_SetTargetCharacter final
+{
+public:
+	class AMarvelBaseCharacter*                   InCharacter;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_DyingScreenFX_SetTargetCharacter;
+
+// PythonFunction PyWidget_HpBar.PyWidget_DyingScreenFX.SetDying
+// 0x0001 (0x0001 - 0x0000)
+struct PyWidget_DyingScreenFX_SetDying final
+{
+public:
+	bool                                          InDying;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PyWidget_DyingScreenFX_SetDying;
 
 }
 

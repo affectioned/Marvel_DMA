@@ -27,19 +27,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_102252">();
+		STATIC_CLASS_IMPL("PyConfig_102252")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_102252")
 	}
 	static class UPyConfig_102252* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_102252>();
 	}
 };
-static_assert(alignof(UPyConfig_102252) == 0x000008, "Wrong alignment on UPyConfig_102252");
-static_assert(sizeof(UPyConfig_102252) == 0x0000B8, "Wrong size on UPyConfig_102252");
-static_assert(offsetof(UPyConfig_102252, SpJumpCueTag) == 0x0000A8, "Member 'UPyConfig_102252::SpJumpCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_102252;
 
 // PythonClass PyAbility_102252.PyAbility_102252
-// 0x0000 (0x2A38 - 0x2A38)
+// 0x0000 (0x2A88 - 0x2A88)
 class UPyAbility_102252 : public UMarvelAbility_HighJump
 {
 public:
@@ -51,15 +53,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_102252">();
+		STATIC_CLASS_IMPL("PyAbility_102252")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_102252")
 	}
 	static class UPyAbility_102252* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_102252>();
 	}
 };
-static_assert(alignof(UPyAbility_102252) == 0x000008, "Wrong alignment on UPyAbility_102252");
-static_assert(sizeof(UPyAbility_102252) == 0x002A38, "Wrong size on UPyAbility_102252");
+DUMPER7_ASSERTS_UPyAbility_102252;
 
 }
 

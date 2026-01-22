@@ -26,14 +26,7 @@ public:
 	class FText                                   TypeDesc_13_DBC332B245EBC0123606DCBA55AA06A1;      // 0x0038(0x0018)(Edit, BlueprintVisible)
 	class FText                                   SettleTitle_16_F93977664049B29B5B63519DCEEBDB69;   // 0x0050(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FSeasonTask_BP) == 0x000008, "Wrong alignment on FSeasonTask_BP");
-static_assert(sizeof(FSeasonTask_BP) == 0x000068, "Wrong size on FSeasonTask_BP");
-static_assert(offsetof(FSeasonTask_BP, Desc_8_096C6172471CEAA7194EAD9BA3FAAA43) == 0x000000, "Member 'FSeasonTask_BP::Desc_8_096C6172471CEAA7194EAD9BA3FAAA43' has a wrong offset!");
-static_assert(offsetof(FSeasonTask_BP, TaskID_3_B9DE79AF413DD7AA5FFBA392C8794A9A) == 0x000010, "Member 'FSeasonTask_BP::TaskID_3_B9DE79AF413DD7AA5FFBA392C8794A9A' has a wrong offset!");
-static_assert(offsetof(FSeasonTask_BP, HalfTaskID_20_2CE35B3F457EBB6199CE62B93BF98AE6) == 0x000020, "Member 'FSeasonTask_BP::HalfTaskID_20_2CE35B3F457EBB6199CE62B93BF98AE6' has a wrong offset!");
-static_assert(offsetof(FSeasonTask_BP, TypeIcon_10_210A82DA4BE6F25AF27E81A5685D6623) == 0x000030, "Member 'FSeasonTask_BP::TypeIcon_10_210A82DA4BE6F25AF27E81A5685D6623' has a wrong offset!");
-static_assert(offsetof(FSeasonTask_BP, TypeDesc_13_DBC332B245EBC0123606DCBA55AA06A1) == 0x000038, "Member 'FSeasonTask_BP::TypeDesc_13_DBC332B245EBC0123606DCBA55AA06A1' has a wrong offset!");
-static_assert(offsetof(FSeasonTask_BP, SettleTitle_16_F93977664049B29B5B63519DCEEBDB69) == 0x000050, "Member 'FSeasonTask_BP::SettleTitle_16_F93977664049B29B5B63519DCEEBDB69' has a wrong offset!");
+DUMPER7_ASSERTS_FSeasonTask_BP;
 
 }
 

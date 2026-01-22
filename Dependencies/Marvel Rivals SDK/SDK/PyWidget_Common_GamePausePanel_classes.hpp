@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_GamePausePanel.PyWidget_Common_GamePausePanel
-// 0x0078 (0x0670 - 0x05F8)
+// 0x0078 (0x0678 - 0x0600)
 class UPyWidget_Common_GamePausePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	struct FLinearColor                           SelfColor;                                         // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AllyColor;                                         // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SelectHeroAction;                                  // 0x0628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SelectHeroUITipsAction;                            // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           SelectHeroUITipsActionRealse;                      // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           TrainSettingAction;                                // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuAction;                                    // 0x0648(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ExitMenuInGameAction;                              // 0x0650(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Start_Action;                 // 0x0658(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Up_Action;                    // 0x0660(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ActiveSurrenderPanel_Hold_Action;                  // 0x0668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SelfColor;                                         // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AllyColor;                                         // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroAction;                                  // 0x0630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroUITipsAction;                            // 0x0638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           SelectHeroUITipsActionRealse;                      // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           TrainSettingAction;                                // 0x0648(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuAction;                                    // 0x0650(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ExitMenuInGameAction;                              // 0x0658(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Start_Action;                 // 0x0660(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Up_Action;                    // 0x0668(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ActiveSurrenderPanel_Hold_Action;                  // 0x0670(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -45,38 +45,29 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_GamePausePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Common_GamePausePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_GamePausePanel")
 	}
 	static class UPyWidget_Common_GamePausePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_GamePausePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_GamePausePanel) == 0x000008, "Wrong alignment on UPyWidget_Common_GamePausePanel");
-static_assert(sizeof(UPyWidget_Common_GamePausePanel) == 0x000670, "Wrong size on UPyWidget_Common_GamePausePanel");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, SelfColor) == 0x0005F8, "Member 'UPyWidget_Common_GamePausePanel::SelfColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, AllyColor) == 0x000608, "Member 'UPyWidget_Common_GamePausePanel::AllyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, EnemyColor) == 0x000618, "Member 'UPyWidget_Common_GamePausePanel::EnemyColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, SelectHeroAction) == 0x000628, "Member 'UPyWidget_Common_GamePausePanel::SelectHeroAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, SelectHeroUITipsAction) == 0x000630, "Member 'UPyWidget_Common_GamePausePanel::SelectHeroUITipsAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, SelectHeroUITipsActionRealse) == 0x000638, "Member 'UPyWidget_Common_GamePausePanel::SelectHeroUITipsActionRealse' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, TrainSettingAction) == 0x000640, "Member 'UPyWidget_Common_GamePausePanel::TrainSettingAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, ExitMenuAction) == 0x000648, "Member 'UPyWidget_Common_GamePausePanel::ExitMenuAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, ExitMenuInGameAction) == 0x000650, "Member 'UPyWidget_Common_GamePausePanel::ExitMenuInGameAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, ActiveSurrenderPanel_Start_Action) == 0x000658, "Member 'UPyWidget_Common_GamePausePanel::ActiveSurrenderPanel_Start_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, ActiveSurrenderPanel_Up_Action) == 0x000660, "Member 'UPyWidget_Common_GamePausePanel::ActiveSurrenderPanel_Up_Action' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_GamePausePanel, ActiveSurrenderPanel_Hold_Action) == 0x000668, "Member 'UPyWidget_Common_GamePausePanel::ActiveSurrenderPanel_Hold_Action' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_GamePausePanel;
 
 // PythonClass PyWidget_Common_GamePausePanel.PyWidget_GamePausePanel_MainTip
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UPyWidget_GamePausePanel_MainTip final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PauseLimitEmphasizeTime;                           // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          EmphasizeAudio;                                    // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OncePauseEmphasizeTime;                            // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EmphasizeColor;                                    // 0x05CC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PauseLimitEmphasizeTime;                           // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          EmphasizeAudio;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OncePauseEmphasizeTime;                            // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EmphasizeColor;                                    // 0x05D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -85,28 +76,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GamePausePanel_MainTip">();
+		STATIC_CLASS_IMPL("PyWidget_GamePausePanel_MainTip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GamePausePanel_MainTip")
 	}
 	static class UPyWidget_GamePausePanel_MainTip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GamePausePanel_MainTip>();
 	}
 };
-static_assert(alignof(UPyWidget_GamePausePanel_MainTip) == 0x000008, "Wrong alignment on UPyWidget_GamePausePanel_MainTip");
-static_assert(sizeof(UPyWidget_GamePausePanel_MainTip) == 0x0005E0, "Wrong size on UPyWidget_GamePausePanel_MainTip");
-static_assert(offsetof(UPyWidget_GamePausePanel_MainTip, PauseLimitEmphasizeTime) == 0x0005BC, "Member 'UPyWidget_GamePausePanel_MainTip::PauseLimitEmphasizeTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GamePausePanel_MainTip, EmphasizeAudio) == 0x0005C0, "Member 'UPyWidget_GamePausePanel_MainTip::EmphasizeAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GamePausePanel_MainTip, OncePauseEmphasizeTime) == 0x0005C8, "Member 'UPyWidget_GamePausePanel_MainTip::OncePauseEmphasizeTime' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GamePausePanel_MainTip, EmphasizeColor) == 0x0005CC, "Member 'UPyWidget_GamePausePanel_MainTip::EmphasizeColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GamePausePanel_MainTip;
 
 // PythonClass PyWidget_Common_GamePausePanel.PyWidget_GamePausePanel_StandbyCheckItem
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_GamePausePanel_StandbyCheckItem final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ConfirmAudio;                                      // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OfflineOpacity;                                    // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ConfirmAudio;                                      // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OfflineOpacity;                                    // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -114,17 +104,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GamePausePanel_StandbyCheckItem">();
+		STATIC_CLASS_IMPL("PyWidget_GamePausePanel_StandbyCheckItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GamePausePanel_StandbyCheckItem")
 	}
 	static class UPyWidget_GamePausePanel_StandbyCheckItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GamePausePanel_StandbyCheckItem>();
 	}
 };
-static_assert(alignof(UPyWidget_GamePausePanel_StandbyCheckItem) == 0x000008, "Wrong alignment on UPyWidget_GamePausePanel_StandbyCheckItem");
-static_assert(sizeof(UPyWidget_GamePausePanel_StandbyCheckItem) == 0x0005D0, "Wrong size on UPyWidget_GamePausePanel_StandbyCheckItem");
-static_assert(offsetof(UPyWidget_GamePausePanel_StandbyCheckItem, ConfirmAudio) == 0x0005C0, "Member 'UPyWidget_GamePausePanel_StandbyCheckItem::ConfirmAudio' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GamePausePanel_StandbyCheckItem, OfflineOpacity) == 0x0005C8, "Member 'UPyWidget_GamePausePanel_StandbyCheckItem::OfflineOpacity' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GamePausePanel_StandbyCheckItem;
 
 }
 

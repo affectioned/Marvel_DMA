@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Beginner_Long.WBP_Beginner_Long_C
-// 0x0028 (0x05A0 - 0x0578)
+// 0x0028 (0x05A8 - 0x0580)
 class UWBP_Beginner_Long_C final : public UPyWidget_Novice_AbilityHint_VX
 {
 public:
-	class UMarvelImage*                           Img_Vx1;                                           // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx2;                                           // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx3;                                           // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx4;                                           // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Vx5;                                           // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx1;                                           // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx2;                                           // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx3;                                           // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx4;                                           // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Vx5;                                           // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Beginner_Long_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Beginner_Long_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Beginner_Long_C")
 	}
 	static class UWBP_Beginner_Long_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Beginner_Long_C>();
 	}
 };
-static_assert(alignof(UWBP_Beginner_Long_C) == 0x000008, "Wrong alignment on UWBP_Beginner_Long_C");
-static_assert(sizeof(UWBP_Beginner_Long_C) == 0x0005A0, "Wrong size on UWBP_Beginner_Long_C");
-static_assert(offsetof(UWBP_Beginner_Long_C, Img_Vx1) == 0x000578, "Member 'UWBP_Beginner_Long_C::Img_Vx1' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_Long_C, Img_Vx2) == 0x000580, "Member 'UWBP_Beginner_Long_C::Img_Vx2' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_Long_C, Img_Vx3) == 0x000588, "Member 'UWBP_Beginner_Long_C::Img_Vx3' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_Long_C, Img_Vx4) == 0x000590, "Member 'UWBP_Beginner_Long_C::Img_Vx4' has a wrong offset!");
-static_assert(offsetof(UWBP_Beginner_Long_C, Img_Vx5) == 0x000598, "Member 'UWBP_Beginner_Long_C::Img_Vx5' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Beginner_Long_C;
 
 }
 

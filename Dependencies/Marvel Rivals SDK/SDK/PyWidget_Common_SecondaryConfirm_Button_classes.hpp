@@ -15,21 +15,22 @@
 #include "CoreUObject_structs.hpp"
 #include "PyWidget_Common_Button_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
+#include "PyWidget_ModuleMainPanel_classes.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyWidget_Common_SecondaryConfirm_Button.PyWidget_Common_Confirm_Button
-// 0x0050 (0x0910 - 0x08C0)
+// 0x0050 (0x0970 - 0x0920)
 class UPyWidget_Common_Confirm_Button final : public UPyWidget_CommonButton_Lv1
 {
 public:
-	struct FSlateColor                            BtnNameNoEnoughColor;                              // 0x08B8(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnNameEnoughColor;                                // 0x08CC(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BtnPriceOldColor;                                  // 0x08E8(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ImgDeleteColor;                                    // 0x08FC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameNoEnoughColor;                              // 0x0918(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnNameEnoughColor;                                // 0x092C(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_MallPrice>        Price_Widget;                                      // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BtnPriceOldColor;                                  // 0x0948(0x0014)(Edit, BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ImgDeleteColor;                                    // 0x095C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void SetBtnIsEnabled(bool Enabled);
@@ -37,36 +38,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_Confirm_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Common_Confirm_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_Confirm_Button")
 	}
 	static class UPyWidget_Common_Confirm_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_Confirm_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_Confirm_Button) == 0x000010, "Wrong alignment on UPyWidget_Common_Confirm_Button");
-static_assert(sizeof(UPyWidget_Common_Confirm_Button) == 0x000910, "Wrong size on UPyWidget_Common_Confirm_Button");
-static_assert(offsetof(UPyWidget_Common_Confirm_Button, BtnNameNoEnoughColor) == 0x0008B8, "Member 'UPyWidget_Common_Confirm_Button::BtnNameNoEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Confirm_Button, BtnNameEnoughColor) == 0x0008CC, "Member 'UPyWidget_Common_Confirm_Button::BtnNameEnoughColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Confirm_Button, Price_Widget) == 0x0008E0, "Member 'UPyWidget_Common_Confirm_Button::Price_Widget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Confirm_Button, BtnPriceOldColor) == 0x0008E8, "Member 'UPyWidget_Common_Confirm_Button::BtnPriceOldColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_Confirm_Button, ImgDeleteColor) == 0x0008FC, "Member 'UPyWidget_Common_Confirm_Button::ImgDeleteColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_Confirm_Button;
 
 // PythonClass PyWidget_Common_SecondaryConfirm_Button.PyWidget_Common_SecondaryConfirm_Button
-// 0x00E0 (0x06A0 - 0x05C0)
+// 0x00E0 (0x06A8 - 0x05C8)
 class UPyWidget_Common_SecondaryConfirm_Button : public UPyMarvelUserWidget
 {
 public:
-	bool                                          ConfirmKeyPromptVisible;                           // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          ConfirmHotKey;                                     // 0x05C0(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          CancelKeyPromptVisible;                            // 0x0618(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_619[0x7];                                      // 0x0619(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUIActionData                          CancelHotKey;                                      // 0x0620(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Need_Quick_Exchange;                               // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_679[0x7];                                      // 0x0679(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnClickConfirm;                                    // 0x0680(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClickCancel;                                     // 0x0690(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          ConfirmKeyPromptVisible;                           // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          ConfirmHotKey;                                     // 0x05C8(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          CancelKeyPromptVisible;                            // 0x0620(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_621[0x7];                                      // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUIActionData                          CancelHotKey;                                      // 0x0628(0x0058)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Need_Quick_Exchange;                               // 0x0680(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_681[0x7];                                      // 0x0681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnClickConfirm;                                    // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClickCancel;                                     // 0x0698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -76,35 +75,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_SecondaryConfirm_Button">();
+		STATIC_CLASS_IMPL("PyWidget_Common_SecondaryConfirm_Button")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_SecondaryConfirm_Button")
 	}
 	static class UPyWidget_Common_SecondaryConfirm_Button* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_SecondaryConfirm_Button>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_SecondaryConfirm_Button) == 0x000008, "Wrong alignment on UPyWidget_Common_SecondaryConfirm_Button");
-static_assert(sizeof(UPyWidget_Common_SecondaryConfirm_Button) == 0x0006A0, "Wrong size on UPyWidget_Common_SecondaryConfirm_Button");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, ConfirmKeyPromptVisible) == 0x0005BA, "Member 'UPyWidget_Common_SecondaryConfirm_Button::ConfirmKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, ConfirmHotKey) == 0x0005C0, "Member 'UPyWidget_Common_SecondaryConfirm_Button::ConfirmHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, CancelKeyPromptVisible) == 0x000618, "Member 'UPyWidget_Common_SecondaryConfirm_Button::CancelKeyPromptVisible' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, CancelHotKey) == 0x000620, "Member 'UPyWidget_Common_SecondaryConfirm_Button::CancelHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, Need_Quick_Exchange) == 0x000678, "Member 'UPyWidget_Common_SecondaryConfirm_Button::Need_Quick_Exchange' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, OnClickConfirm) == 0x000680, "Member 'UPyWidget_Common_SecondaryConfirm_Button::OnClickConfirm' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SecondaryConfirm_Button, OnClickCancel) == 0x000690, "Member 'UPyWidget_Common_SecondaryConfirm_Button::OnClickCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_SecondaryConfirm_Button;
 
 // PythonClass PyWidget_Common_SecondaryConfirm_Button.PyWidget_Common_PropConfirmBtn
-// 0x0048 (0x06E8 - 0x06A0)
+// 0x0048 (0x06F0 - 0x06A8)
 class UPyWidget_Common_PropConfirmBtn : public UPyWidget_Common_SecondaryConfirm_Button
 {
 public:
-	class UTexture2D*                             Icon_Normal;                                       // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Icon_Disabled;                                     // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Opacity_Disabled;                                  // 0x06B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Opacity_Enable;                                    // 0x06B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBuyClicked;                                      // 0x06B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBuyConfirm;                                      // 0x06C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBuyCancel;                                       // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Normal;                                       // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Icon_Disabled;                                     // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Opacity_Disabled;                                  // 0x06B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Opacity_Enable;                                    // 0x06BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBuyClicked;                                      // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBuyConfirm;                                      // 0x06D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBuyCancel;                                       // 0x06E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -113,29 +108,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PropConfirmBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PropConfirmBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PropConfirmBtn")
 	}
 	static class UPyWidget_Common_PropConfirmBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PropConfirmBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PropConfirmBtn) == 0x000008, "Wrong alignment on UPyWidget_Common_PropConfirmBtn");
-static_assert(sizeof(UPyWidget_Common_PropConfirmBtn) == 0x0006E8, "Wrong size on UPyWidget_Common_PropConfirmBtn");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, Icon_Normal) == 0x0006A0, "Member 'UPyWidget_Common_PropConfirmBtn::Icon_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, Icon_Disabled) == 0x0006A8, "Member 'UPyWidget_Common_PropConfirmBtn::Icon_Disabled' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, Opacity_Disabled) == 0x0006B0, "Member 'UPyWidget_Common_PropConfirmBtn::Opacity_Disabled' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, Opacity_Enable) == 0x0006B4, "Member 'UPyWidget_Common_PropConfirmBtn::Opacity_Enable' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, OnBuyClicked) == 0x0006B8, "Member 'UPyWidget_Common_PropConfirmBtn::OnBuyClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, OnBuyConfirm) == 0x0006C8, "Member 'UPyWidget_Common_PropConfirmBtn::OnBuyConfirm' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_PropConfirmBtn, OnBuyCancel) == 0x0006D8, "Member 'UPyWidget_Common_PropConfirmBtn::OnBuyCancel' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_PropConfirmBtn;
 
 // PythonClass PyWidget_Common_SecondaryConfirm_Button.PyWidget_Common_PropConfirm
-// 0x0010 (0x06F8 - 0x06E8)
+// 0x0010 (0x0700 - 0x06F0)
 class UPyWidget_Common_PropConfirm final : public UPyWidget_Common_PropConfirmBtn
 {
 public:
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -143,16 +134,44 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_PropConfirm">();
+		STATIC_CLASS_IMPL("PyWidget_Common_PropConfirm")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_PropConfirm")
 	}
 	static class UPyWidget_Common_PropConfirm* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_PropConfirm>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_PropConfirm) == 0x000008, "Wrong alignment on UPyWidget_Common_PropConfirm");
-static_assert(sizeof(UPyWidget_Common_PropConfirm) == 0x0006F8, "Wrong size on UPyWidget_Common_PropConfirm");
-static_assert(offsetof(UPyWidget_Common_PropConfirm, OnClicked) == 0x0006E8, "Member 'UPyWidget_Common_PropConfirm::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_PropConfirm;
+
+// PythonClass PyWidget_Common_SecondaryConfirm_Button.PyWidget_FullScreen_Popup_ConfirmBtn
+// 0x0010 (0x0610 - 0x0600)
+class UPyWidget_FullScreen_Popup_ConfirmBtn final : public UPyWidget_ModuleMainPanel
+{
+public:
+	struct FVector2D                              InternalOffset;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void OnInitialized();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_FullScreen_Popup_ConfirmBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_FullScreen_Popup_ConfirmBtn")
+	}
+	static class UPyWidget_FullScreen_Popup_ConfirmBtn* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_FullScreen_Popup_ConfirmBtn>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_FullScreen_Popup_ConfirmBtn;
 
 }
 

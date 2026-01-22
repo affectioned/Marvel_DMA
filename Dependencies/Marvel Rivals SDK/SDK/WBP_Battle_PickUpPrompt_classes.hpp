@@ -17,39 +17,34 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_PickUpPrompt.WBP_Battle_PickUpPrompt_C
-// 0x0040 (0x0658 - 0x0618)
+// 0x0040 (0x0660 - 0x0620)
 class UWBP_Battle_PickUpPrompt_C final : public UPyWidget_LocalBattleKillPanelCenter
 {
 public:
-	class UWidgetAnimation*                       Anim_FadeIn_Kill;                                  // 0x0618(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Countdown;                                    // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Icon;                                          // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_IconGlow;                                      // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_TextBg;                                        // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_KillNum;                                   // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_KillNum1;                                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_KillPrompt;                                   // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_FadeIn_Kill;                                  // 0x0620(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Countdown;                                    // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Icon;                                          // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_IconGlow;                                      // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_TextBg;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_KillNum;                                   // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_KillNum1;                                     // 0x0650(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_KillPrompt;                                   // 0x0658(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_PickUpPrompt_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_PickUpPrompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_PickUpPrompt_C")
 	}
 	static class UWBP_Battle_PickUpPrompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_PickUpPrompt_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_PickUpPrompt_C) == 0x000008, "Wrong alignment on UWBP_Battle_PickUpPrompt_C");
-static_assert(sizeof(UWBP_Battle_PickUpPrompt_C) == 0x000658, "Wrong size on UWBP_Battle_PickUpPrompt_C");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Anim_FadeIn_Kill) == 0x000618, "Member 'UWBP_Battle_PickUpPrompt_C::Anim_FadeIn_Kill' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Anim_Countdown) == 0x000620, "Member 'UWBP_Battle_PickUpPrompt_C::Anim_Countdown' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Img_Icon) == 0x000628, "Member 'UWBP_Battle_PickUpPrompt_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Img_IconGlow) == 0x000630, "Member 'UWBP_Battle_PickUpPrompt_C::Img_IconGlow' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Img_TextBg) == 0x000638, "Member 'UWBP_Battle_PickUpPrompt_C::Img_TextBg' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Overlay_KillNum) == 0x000640, "Member 'UWBP_Battle_PickUpPrompt_C::Overlay_KillNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Text_KillNum1) == 0x000648, "Member 'UWBP_Battle_PickUpPrompt_C::Text_KillNum1' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_PickUpPrompt_C, Text_KillPrompt) == 0x000650, "Member 'UWBP_Battle_PickUpPrompt_C::Text_KillPrompt' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_PickUpPrompt_C;
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_SeasonStory_Rule.PyWidget_Common_SeasonStory_Rule
-// 0x0010 (0x0608 - 0x05F8)
-class UPyWidget_Common_SeasonStory_Rule final : public UPyWidget_ModuleMainPanel
+// 0x0010 (0x0610 - 0x0600)
+class UPyWidget_Common_SeasonStory_Rule : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                Class_SectionItem;                                 // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Activity_ID;                                       // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                Class_SectionItem;                                 // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Activity_ID;                                       // 0x0608(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_SeasonStory_Rule">();
+		STATIC_CLASS_IMPL("PyWidget_Common_SeasonStory_Rule")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_SeasonStory_Rule")
 	}
 	static class UPyWidget_Common_SeasonStory_Rule* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_SeasonStory_Rule>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_SeasonStory_Rule) == 0x000008, "Wrong alignment on UPyWidget_Common_SeasonStory_Rule");
-static_assert(sizeof(UPyWidget_Common_SeasonStory_Rule) == 0x000608, "Wrong size on UPyWidget_Common_SeasonStory_Rule");
-static_assert(offsetof(UPyWidget_Common_SeasonStory_Rule, Class_SectionItem) == 0x0005F8, "Member 'UPyWidget_Common_SeasonStory_Rule::Class_SectionItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SeasonStory_Rule, Activity_ID) == 0x000600, "Member 'UPyWidget_Common_SeasonStory_Rule::Activity_ID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_SeasonStory_Rule;
 
 }
 

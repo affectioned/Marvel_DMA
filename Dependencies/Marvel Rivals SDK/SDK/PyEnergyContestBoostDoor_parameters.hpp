@@ -23,9 +23,7 @@ struct PyEnergyContestBoostDoor_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestBoostDoor_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyEnergyContestBoostDoor_ReceiveEndPlay");
-static_assert(sizeof(PyEnergyContestBoostDoor_ReceiveEndPlay) == 0x000001, "Wrong size on PyEnergyContestBoostDoor_ReceiveEndPlay");
-static_assert(offsetof(PyEnergyContestBoostDoor_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyEnergyContestBoostDoor_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestBoostDoor_ReceiveEndPlay;
 
 // PythonFunction PyEnergyContestBoostDoor.PyEnergyContestBoostDoor.PostPassedEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyEnergyContestBoostDoor_PostPassedEvent final
 public:
 	class AActor*                                 PassedActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEnergyContestBoostDoor_PostPassedEvent) == 0x000008, "Wrong alignment on PyEnergyContestBoostDoor_PostPassedEvent");
-static_assert(sizeof(PyEnergyContestBoostDoor_PostPassedEvent) == 0x000008, "Wrong size on PyEnergyContestBoostDoor_PostPassedEvent");
-static_assert(offsetof(PyEnergyContestBoostDoor_PostPassedEvent, PassedActor) == 0x000000, "Member 'PyEnergyContestBoostDoor_PostPassedEvent::PassedActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyEnergyContestBoostDoor_PostPassedEvent;
 
 }
 

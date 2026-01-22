@@ -24,9 +24,7 @@ struct PyAncestorMask_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAncestorMask_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyAncestorMask_ReceiveEndPlay");
-static_assert(sizeof(PyAncestorMask_ReceiveEndPlay) == 0x000001, "Wrong size on PyAncestorMask_ReceiveEndPlay");
-static_assert(offsetof(PyAncestorMask_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyAncestorMask_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyAncestorMask_ReceiveEndPlay;
 
 // PythonFunction PyAncestorMask.PyAncestorMask.S_payload_reach
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	struct FGameplayTag                           event_tag;                                         // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	float                                         event_args;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAncestorMask_S_payload_reach) == 0x000004, "Wrong alignment on PyAncestorMask_S_payload_reach");
-static_assert(sizeof(PyAncestorMask_S_payload_reach) == 0x000010, "Wrong size on PyAncestorMask_S_payload_reach");
-static_assert(offsetof(PyAncestorMask_S_payload_reach, event_tag) == 0x000000, "Member 'PyAncestorMask_S_payload_reach::event_tag' has a wrong offset!");
-static_assert(offsetof(PyAncestorMask_S_payload_reach, event_args) == 0x00000C, "Member 'PyAncestorMask_S_payload_reach::event_args' has a wrong offset!");
+DUMPER7_ASSERTS_PyAncestorMask_S_payload_reach;
 
 }
 

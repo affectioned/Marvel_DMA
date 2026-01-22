@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103429.PyCue_Ability_Loop_10342901
-// 0x0020 (0x2A80 - 0x2A60)
+// 0x0020 (0x2FF0 - 0x2FD0)
 class APyCue_Ability_Loop_10342901 final : public ACue_Ability_Loop_10342901
 {
 public:
-	class UFXSystemAsset*                         MainEndFX;                                         // 0x2A60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         JunctionRemoveFX;                                  // 0x2A68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFXSystemAsset*                         SmallLaserRemoveFX;                                // 0x2A70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         MainEndFX;                                         // 0x2FD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         JunctionRemoveFX;                                  // 0x2FD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFXSystemAsset*                         SmallLaserRemoveFX;                                // 0x2FE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnExecuteFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -31,18 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Ability_Loop_10342901">();
+		STATIC_CLASS_IMPL("PyCue_Ability_Loop_10342901")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Ability_Loop_10342901")
 	}
 	static class APyCue_Ability_Loop_10342901* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Ability_Loop_10342901>();
 	}
 };
-static_assert(alignof(APyCue_Ability_Loop_10342901) == 0x000010, "Wrong alignment on APyCue_Ability_Loop_10342901");
-static_assert(sizeof(APyCue_Ability_Loop_10342901) == 0x002A80, "Wrong size on APyCue_Ability_Loop_10342901");
-static_assert(offsetof(APyCue_Ability_Loop_10342901, MainEndFX) == 0x002A60, "Member 'APyCue_Ability_Loop_10342901::MainEndFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10342901, JunctionRemoveFX) == 0x002A68, "Member 'APyCue_Ability_Loop_10342901::JunctionRemoveFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Ability_Loop_10342901, SmallLaserRemoveFX) == 0x002A70, "Member 'APyCue_Ability_Loop_10342901::SmallLaserRemoveFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Ability_Loop_10342901;
 
 }
 

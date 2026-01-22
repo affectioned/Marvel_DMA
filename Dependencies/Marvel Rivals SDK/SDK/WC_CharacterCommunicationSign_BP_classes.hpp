@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "DeclarativeUnreal_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -55,26 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_CharacterCommunicationSign_BP_C">();
+		BP_STATIC_CLASS_IMPL("WC_CharacterCommunicationSign_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_CharacterCommunicationSign_BP_C")
 	}
 	static class UWC_CharacterCommunicationSign_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_CharacterCommunicationSign_BP_C>();
 	}
 };
-static_assert(alignof(UWC_CharacterCommunicationSign_BP_C) == 0x000010, "Wrong alignment on UWC_CharacterCommunicationSign_BP_C");
-static_assert(sizeof(UWC_CharacterCommunicationSign_BP_C) == 0x000D80, "Wrong size on UWC_CharacterCommunicationSign_BP_C");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, UberGraphFrame) == 0x000AE0, "Member 'UWC_CharacterCommunicationSign_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, ViewerSideHolder) == 0x000AE8, "Member 'UWC_CharacterCommunicationSign_BP_C::ViewerSideHolder' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, Texture) == 0x000AF8, "Member 'UWC_CharacterCommunicationSign_BP_C::Texture' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, OffScreenInvisibleWidgetStyle) == 0x000B28, "Member 'UWC_CharacterCommunicationSign_BP_C::OffScreenInvisibleWidgetStyle' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, OffScreenVisibleWidgetStyle) == 0x000BB0, "Member 'UWC_CharacterCommunicationSign_BP_C::OffScreenVisibleWidgetStyle' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, CommRow) == 0x000C38, "Member 'UWC_CharacterCommunicationSign_BP_C::CommRow' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, Visible) == 0x000D40, "Member 'UWC_CharacterCommunicationSign_BP_C::Visible' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, ShowTimer) == 0x000D48, "Member 'UWC_CharacterCommunicationSign_BP_C::ShowTimer' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, CurCommID) == 0x000D60, "Member 'UWC_CharacterCommunicationSign_BP_C::CurCommID' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, RemainTime) == 0x000D68, "Member 'UWC_CharacterCommunicationSign_BP_C::RemainTime' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterCommunicationSign_BP_C, CurrentViewSide) == 0x000D70, "Member 'UWC_CharacterCommunicationSign_BP_C::CurrentViewSide' has a wrong offset!");
+DUMPER7_ASSERTS_UWC_CharacterCommunicationSign_BP_C;
 
 }
 

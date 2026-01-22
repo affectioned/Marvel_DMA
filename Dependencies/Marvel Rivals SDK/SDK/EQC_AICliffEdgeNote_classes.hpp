@@ -23,15 +23,18 @@ class UEQC_AICliffEdgeNote_C final : public UEnvQueryContext_AICliffEdgeNote
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQC_AICliffEdgeNote_C">();
+		BP_STATIC_CLASS_IMPL("EQC_AICliffEdgeNote_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQC_AICliffEdgeNote_C")
 	}
 	static class UEQC_AICliffEdgeNote_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQC_AICliffEdgeNote_C>();
 	}
 };
-static_assert(alignof(UEQC_AICliffEdgeNote_C) == 0x000008, "Wrong alignment on UEQC_AICliffEdgeNote_C");
-static_assert(sizeof(UEQC_AICliffEdgeNote_C) == 0x000038, "Wrong size on UEQC_AICliffEdgeNote_C");
+DUMPER7_ASSERTS_UEQC_AICliffEdgeNote_C;
 
 }
 

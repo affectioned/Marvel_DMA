@@ -27,17 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_CharacterInfoBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_CharacterInfoBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_CharacterInfoBP_C")
 	}
 	static class UWC_CharacterInfoBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_CharacterInfoBP_C>();
 	}
 };
-static_assert(alignof(UWC_CharacterInfoBP_C) == 0x000010, "Wrong alignment on UWC_CharacterInfoBP_C");
-static_assert(sizeof(UWC_CharacterInfoBP_C) == 0x000AF0, "Wrong size on UWC_CharacterInfoBP_C");
-static_assert(offsetof(UWC_CharacterInfoBP_C, EnemyNameInvisibleRange) == 0x000AE0, "Member 'UWC_CharacterInfoBP_C::EnemyNameInvisibleRange' has a wrong offset!");
-static_assert(offsetof(UWC_CharacterInfoBP_C, EnemyNameVisibleRange) == 0x000AE8, "Member 'UWC_CharacterInfoBP_C::EnemyNameVisibleRange' has a wrong offset!");
+DUMPER7_ASSERTS_UWC_CharacterInfoBP_C;
 
 }
 

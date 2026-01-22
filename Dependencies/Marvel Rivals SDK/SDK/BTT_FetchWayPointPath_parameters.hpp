@@ -36,19 +36,7 @@ public:
 	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWayPointPath                          CallFunc_FetchWayPointPath_OutWayPointPath;        // 0x0048(0x0048)()
 };
-static_assert(alignof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath) == 0x000008, "Wrong alignment on BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath");
-static_assert(sizeof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath) == 0x000090, "Wrong size on BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, EntryPoint) == 0x000000, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_Event_OwnerController) == 0x000008, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_Event_OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_Event_ControlledPawn) == 0x000010, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_Event_ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_DynamicCast_AsMarvel_AIController_BP) == 0x000018, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_DynamicCast_AsMarvel_AIController_BP' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, CallFunc_GetAIInfo_ReturnValue) == 0x000028, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::CallFunc_GetAIInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, CallFunc_GetBlackboardValueAsActor_ReturnValue) == 0x000030, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::CallFunc_GetBlackboardValueAsActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_DynamicCast_AsStart_Way_Point) == 0x000038, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_DynamicCast_AsStart_Way_Point' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath, CallFunc_FetchWayPointPath_OutWayPointPath) == 0x000048, "Member 'BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath::CallFunc_FetchWayPointPath_OutWayPointPath' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_FetchWayPointPath_C_ExecuteUbergraph_BTT_FetchWayPointPath;
 
 // Function BTT_FetchWayPointPath.BTT_FetchWayPointPath_C.ReceiveExecuteAI
 // 0x0010 (0x0010 - 0x0000)
@@ -58,10 +46,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTT_FetchWayPointPath_C_ReceiveExecuteAI) == 0x000008, "Wrong alignment on BTT_FetchWayPointPath_C_ReceiveExecuteAI");
-static_assert(sizeof(BTT_FetchWayPointPath_C_ReceiveExecuteAI) == 0x000010, "Wrong size on BTT_FetchWayPointPath_C_ReceiveExecuteAI");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ReceiveExecuteAI, OwnerController) == 0x000000, "Member 'BTT_FetchWayPointPath_C_ReceiveExecuteAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTT_FetchWayPointPath_C_ReceiveExecuteAI, ControlledPawn) == 0x000008, "Member 'BTT_FetchWayPointPath_C_ReceiveExecuteAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTT_FetchWayPointPath_C_ReceiveExecuteAI;
 
 }
 

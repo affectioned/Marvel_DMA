@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_ItemList.PyWidget_HeroSystem_ItemList
-// 0x0048 (0x0608 - 0x05C0)
+// 0x0048 (0x0610 - 0x05C8)
 class UPyWidget_HeroSystem_ItemList final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                HeroSystem_ItemUnit;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FixColumnCount;                                    // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ItemCount;                                         // 0x05CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ListItemSize;                                      // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewItemCount;                                  // 0x05E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& ItemID)> OnItemSelected;                      // 0x05E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHover, const class FString& ItemID)> OnItemHovered;         // 0x05F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                HeroSystem_ItemUnit;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FixColumnCount;                                    // 0x05D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ItemCount;                                         // 0x05D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ListItemSize;                                      // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewItemCount;                                  // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5EC[0x4];                                      // 0x05EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& ItemID)> OnItemSelected;                      // 0x05F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHover, const class FString& ItemID)> OnItemHovered;         // 0x0600(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -44,22 +44,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_ItemList">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_ItemList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_ItemList")
 	}
 	static class UPyWidget_HeroSystem_ItemList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_ItemList>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_ItemList) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_ItemList");
-static_assert(sizeof(UPyWidget_HeroSystem_ItemList) == 0x000608, "Wrong size on UPyWidget_HeroSystem_ItemList");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, HeroSystem_ItemUnit) == 0x0005C0, "Member 'UPyWidget_HeroSystem_ItemList::HeroSystem_ItemUnit' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, FixColumnCount) == 0x0005C8, "Member 'UPyWidget_HeroSystem_ItemList::FixColumnCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, ItemCount) == 0x0005CC, "Member 'UPyWidget_HeroSystem_ItemList::ItemCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, ListItemSize) == 0x0005D0, "Member 'UPyWidget_HeroSystem_ItemList::ListItemSize' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, PreviewItemCount) == 0x0005E0, "Member 'UPyWidget_HeroSystem_ItemList::PreviewItemCount' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, OnItemSelected) == 0x0005E8, "Member 'UPyWidget_HeroSystem_ItemList::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_ItemList, OnItemHovered) == 0x0005F8, "Member 'UPyWidget_HeroSystem_ItemList::OnItemHovered' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_ItemList;
 
 }
 

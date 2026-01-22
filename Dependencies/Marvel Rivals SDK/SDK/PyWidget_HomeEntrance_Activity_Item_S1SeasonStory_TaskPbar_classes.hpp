@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar.PyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar">();
+		STATIC_CLASS_IMPL("PyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar")
 	}
 	static class UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar>();
 	}
 };
-static_assert(alignof(UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar) == 0x000008, "Wrong alignment on UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar");
-static_assert(sizeof(UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar) == 0x0005C0, "Wrong size on UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar");
+DUMPER7_ASSERTS_UPyWidget_HomeEntrance_Activity_Item_S1SeasonStory_TaskPbar;
 
 }
 

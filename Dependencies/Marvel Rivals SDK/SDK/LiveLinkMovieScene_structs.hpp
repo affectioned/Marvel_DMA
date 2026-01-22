@@ -31,14 +31,7 @@ public:
 	TArray<struct FMovieSceneBoolChannel>         BoolChannel;                                       // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FMovieSceneByteChannel>         ByteChannel;                                       // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLiveLinkPropertyData) == 0x000008, "Wrong alignment on FLiveLinkPropertyData");
-static_assert(sizeof(FLiveLinkPropertyData) == 0x000060, "Wrong size on FLiveLinkPropertyData");
-static_assert(offsetof(FLiveLinkPropertyData, PropertyName) == 0x000000, "Member 'FLiveLinkPropertyData::PropertyName' has a wrong offset!");
-static_assert(offsetof(FLiveLinkPropertyData, FloatChannel) == 0x000010, "Member 'FLiveLinkPropertyData::FloatChannel' has a wrong offset!");
-static_assert(offsetof(FLiveLinkPropertyData, StringChannel) == 0x000020, "Member 'FLiveLinkPropertyData::StringChannel' has a wrong offset!");
-static_assert(offsetof(FLiveLinkPropertyData, IntegerChannel) == 0x000030, "Member 'FLiveLinkPropertyData::IntegerChannel' has a wrong offset!");
-static_assert(offsetof(FLiveLinkPropertyData, BoolChannel) == 0x000040, "Member 'FLiveLinkPropertyData::BoolChannel' has a wrong offset!");
-static_assert(offsetof(FLiveLinkPropertyData, ByteChannel) == 0x000050, "Member 'FLiveLinkPropertyData::ByteChannel' has a wrong offset!");
+DUMPER7_ASSERTS_FLiveLinkPropertyData;
 
 // ScriptStruct LiveLinkMovieScene.LiveLinkSubSectionData
 // 0x0010 (0x0010 - 0x0000)
@@ -47,9 +40,7 @@ struct FLiveLinkSubSectionData final
 public:
 	TArray<struct FLiveLinkPropertyData>          Properties;                                        // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLiveLinkSubSectionData) == 0x000008, "Wrong alignment on FLiveLinkSubSectionData");
-static_assert(sizeof(FLiveLinkSubSectionData) == 0x000010, "Wrong size on FLiveLinkSubSectionData");
-static_assert(offsetof(FLiveLinkSubSectionData, Properties) == 0x000000, "Member 'FLiveLinkSubSectionData::Properties' has a wrong offset!");
+DUMPER7_ASSERTS_FLiveLinkSubSectionData;
 
 // ScriptStruct LiveLinkMovieScene.MovieSceneLiveLinkSectionTemplate
 // 0x0088 (0x00C8 - 0x0040)
@@ -61,11 +52,7 @@ public:
 	TArray<struct FLiveLinkSubSectionData>        SubSectionsData;                                   // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A0[0x28];                                      // 0x00A0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneLiveLinkSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneLiveLinkSectionTemplate");
-static_assert(sizeof(FMovieSceneLiveLinkSectionTemplate) == 0x0000C8, "Wrong size on FMovieSceneLiveLinkSectionTemplate");
-static_assert(offsetof(FMovieSceneLiveLinkSectionTemplate, SubjectPreset) == 0x000040, "Member 'FMovieSceneLiveLinkSectionTemplate::SubjectPreset' has a wrong offset!");
-static_assert(offsetof(FMovieSceneLiveLinkSectionTemplate, ChannelMask) == 0x000080, "Member 'FMovieSceneLiveLinkSectionTemplate::ChannelMask' has a wrong offset!");
-static_assert(offsetof(FMovieSceneLiveLinkSectionTemplate, SubSectionsData) == 0x000090, "Member 'FMovieSceneLiveLinkSectionTemplate::SubSectionsData' has a wrong offset!");
+DUMPER7_ASSERTS_FMovieSceneLiveLinkSectionTemplate;
 
 }
 

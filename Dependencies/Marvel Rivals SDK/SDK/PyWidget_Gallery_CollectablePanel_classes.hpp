@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Gallery_CollectablePanel.PyWidget_Gallery_CollectablePanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Gallery_CollectablePanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Gallery_CollectablePanel">();
+		STATIC_CLASS_IMPL("PyWidget_Gallery_CollectablePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Gallery_CollectablePanel")
 	}
 	static class UPyWidget_Gallery_CollectablePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Gallery_CollectablePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Gallery_CollectablePanel) == 0x000008, "Wrong alignment on UPyWidget_Gallery_CollectablePanel");
-static_assert(sizeof(UPyWidget_Gallery_CollectablePanel) == 0x0005F8, "Wrong size on UPyWidget_Gallery_CollectablePanel");
+DUMPER7_ASSERTS_UPyWidget_Gallery_CollectablePanel;
 
 }
 

@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyExtension_KeyWidgetReplayLockUI">();
+		STATIC_CLASS_IMPL("PyExtension_KeyWidgetReplayLockUI")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyExtension_KeyWidgetReplayLockUI")
 	}
 	static class UPyExtension_KeyWidgetReplayLockUI* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyExtension_KeyWidgetReplayLockUI>();
 	}
 };
-static_assert(alignof(UPyExtension_KeyWidgetReplayLockUI) == 0x000008, "Wrong alignment on UPyExtension_KeyWidgetReplayLockUI");
-static_assert(sizeof(UPyExtension_KeyWidgetReplayLockUI) == 0x000030, "Wrong size on UPyExtension_KeyWidgetReplayLockUI");
+DUMPER7_ASSERTS_UPyExtension_KeyWidgetReplayLockUI;
 
 }
 

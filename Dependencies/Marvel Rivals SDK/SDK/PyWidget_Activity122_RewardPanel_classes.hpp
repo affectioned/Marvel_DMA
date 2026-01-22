@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_RewardPanel.PyWidget_Activity122_RewardPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Activity122_RewardPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -33,49 +33,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RewardPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RewardPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RewardPanel")
 	}
 	static class UPyWidget_Activity122_RewardPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RewardPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RewardPanel) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RewardPanel");
-static_assert(sizeof(UPyWidget_Activity122_RewardPanel) == 0x0005F8, "Wrong size on UPyWidget_Activity122_RewardPanel");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RewardPanel;
 
 // PythonClass PyWidget_Activity122_RewardPanel.PyWidget_Activity122_RewardPreviewList
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity122_RewardPreviewList final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RewardPreviewList">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RewardPreviewList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RewardPreviewList")
 	}
 	static class UPyWidget_Activity122_RewardPreviewList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RewardPreviewList>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RewardPreviewList) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RewardPreviewList");
-static_assert(sizeof(UPyWidget_Activity122_RewardPreviewList) == 0x0005C0, "Wrong size on UPyWidget_Activity122_RewardPreviewList");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RewardPreviewList;
 
 // PythonClass PyWidget_Activity122_RewardPanel.PyWidget_Activity122_RewardPreviewEntry
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity122_RewardPreviewEntry final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_RewardPreviewEntry">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_RewardPreviewEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_RewardPreviewEntry")
 	}
 	static class UPyWidget_Activity122_RewardPreviewEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_RewardPreviewEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_RewardPreviewEntry) == 0x000008, "Wrong alignment on UPyWidget_Activity122_RewardPreviewEntry");
-static_assert(sizeof(UPyWidget_Activity122_RewardPreviewEntry) == 0x0005C0, "Wrong size on UPyWidget_Activity122_RewardPreviewEntry");
+DUMPER7_ASSERTS_UPyWidget_Activity122_RewardPreviewEntry;
 
 }
 

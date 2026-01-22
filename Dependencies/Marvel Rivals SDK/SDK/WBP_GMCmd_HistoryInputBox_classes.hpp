@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GMCmd_HistoryInputBox.WBP_GMCmd_HistoryInputBox_C
-// 0x0028 (0x0618 - 0x05F0)
+// 0x0028 (0x0620 - 0x05F8)
 class UWBP_GMCmd_HistoryInputBox_C final : public UPyWidget_GMCmd_HistoryInputBox
 {
 public:
-	class UWBP_Common_FullScreenButton_C*         Common_FullScreenButton;                           // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Input_C*                    Confirm_Editable;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelListView*                        ListView_CmdList;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           MarvelImage_152;                                   // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_LiseView;                                  // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_FullScreenButton_C*         Common_FullScreenButton;                           // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Input_C*                    Confirm_Editable;                                  // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelListView*                        ListView_CmdList;                                  // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           MarvelImage_152;                                   // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_LiseView;                                  // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_GMCmd_HistoryInputBox_C">();
+		BP_STATIC_CLASS_IMPL("WBP_GMCmd_HistoryInputBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_GMCmd_HistoryInputBox_C")
 	}
 	static class UWBP_GMCmd_HistoryInputBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_GMCmd_HistoryInputBox_C>();
 	}
 };
-static_assert(alignof(UWBP_GMCmd_HistoryInputBox_C) == 0x000008, "Wrong alignment on UWBP_GMCmd_HistoryInputBox_C");
-static_assert(sizeof(UWBP_GMCmd_HistoryInputBox_C) == 0x000618, "Wrong size on UWBP_GMCmd_HistoryInputBox_C");
-static_assert(offsetof(UWBP_GMCmd_HistoryInputBox_C, Common_FullScreenButton) == 0x0005F0, "Member 'UWBP_GMCmd_HistoryInputBox_C::Common_FullScreenButton' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryInputBox_C, Confirm_Editable) == 0x0005F8, "Member 'UWBP_GMCmd_HistoryInputBox_C::Confirm_Editable' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryInputBox_C, ListView_CmdList) == 0x000600, "Member 'UWBP_GMCmd_HistoryInputBox_C::ListView_CmdList' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryInputBox_C, MarvelImage_152) == 0x000608, "Member 'UWBP_GMCmd_HistoryInputBox_C::MarvelImage_152' has a wrong offset!");
-static_assert(offsetof(UWBP_GMCmd_HistoryInputBox_C, Overlay_LiseView) == 0x000610, "Member 'UWBP_GMCmd_HistoryInputBox_C::Overlay_LiseView' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_GMCmd_HistoryInputBox_C;
 
 }
 

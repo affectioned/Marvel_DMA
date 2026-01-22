@@ -62,40 +62,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelFog">();
+		STATIC_CLASS_IMPL("PyLevelFog")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelFog")
 	}
 	static class APyLevelFog* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelFog>();
 	}
 };
-static_assert(alignof(APyLevelFog) == 0x000010, "Wrong alignment on APyLevelFog");
-static_assert(sizeof(APyLevelFog) == 0x000780, "Wrong size on APyLevelFog");
-static_assert(offsetof(APyLevelFog, FoggyProgress) == 0x0006E0, "Member 'APyLevelFog::FoggyProgress' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, State) == 0x0006E4, "Member 'APyLevelFog::State' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DefaultActive) == 0x0006E8, "Member 'APyLevelFog::DefaultActive' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, BlindBuffID) == 0x0006EC, "Member 'APyLevelFog::BlindBuffID' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, HiddenBuffID) == 0x0006F0, "Member 'APyLevelFog::HiddenBuffID' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, FadeInTime) == 0x0006F4, "Member 'APyLevelFog::FadeInTime' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, FadeOutTime) == 0x0006F8, "Member 'APyLevelFog::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DelayTime) == 0x0006FC, "Member 'APyLevelFog::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DurationTime) == 0x000700, "Member 'APyLevelFog::DurationTime' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, AtlasMeshList) == 0x000708, "Member 'APyLevelFog::AtlasMeshList' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, CueTag) == 0x000718, "Member 'APyLevelFog::CueTag' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, RadiusMax) == 0x000724, "Member 'APyLevelFog::RadiusMax' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, RadiusMin) == 0x000728, "Member 'APyLevelFog::RadiusMin' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, CameraLengthMax) == 0x00072C, "Member 'APyLevelFog::CameraLengthMax' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, CameraLengthMin) == 0x000730, "Member 'APyLevelFog::CameraLengthMin' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DecalRaius) == 0x000734, "Member 'APyLevelFog::DecalRaius' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, FogTransMaterial) == 0x000738, "Member 'APyLevelFog::FogTransMaterial' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DecalChannelMaterial_0) == 0x000740, "Member 'APyLevelFog::DecalChannelMaterial_0' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, DecalChannelMaterial_1) == 0x000748, "Member 'APyLevelFog::DecalChannelMaterial_1' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, FogStateChangedDispatcher) == 0x000750, "Member 'APyLevelFog::FogStateChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, OnStopTakeEffect) == 0x000760, "Member 'APyLevelFog::OnStopTakeEffect' has a wrong offset!");
-static_assert(offsetof(APyLevelFog, ClientToggleBlindBuff) == 0x000770, "Member 'APyLevelFog::ClientToggleBlindBuff' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelFog;
 
 // PythonClass PyLevelFog.PyCue_Summoner_Loop_20020902
-// 0x0000 (0x1830 - 0x1830)
+// 0x0000 (0x18E0 - 0x18E0)
 class APyCue_Summoner_Loop_20020902 final : public ACueNotify_Stealth
 {
 public:
@@ -104,15 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_20020902">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_20020902")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_20020902")
 	}
 	static class APyCue_Summoner_Loop_20020902* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_20020902>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_20020902) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_20020902");
-static_assert(sizeof(APyCue_Summoner_Loop_20020902) == 0x001830, "Wrong size on APyCue_Summoner_Loop_20020902");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_20020902;
 
 }
 

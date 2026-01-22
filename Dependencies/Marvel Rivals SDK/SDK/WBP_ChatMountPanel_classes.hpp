@@ -17,29 +17,29 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ChatMountPanel.WBP_ChatMountPanel_C
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UWBP_ChatMountPanel_C final : public UPyWidget_ChatMountPanel
 {
 public:
-	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_GameChat;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ULazyWidget*                            Lazy_LobbyChat;                                    // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_GameChat;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ULazyWidget*                            Lazy_LobbyChat;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_ChatMountPanel_C">();
+		BP_STATIC_CLASS_IMPL("WBP_ChatMountPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_ChatMountPanel_C")
 	}
 	static class UWBP_ChatMountPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_ChatMountPanel_C>();
 	}
 };
-static_assert(alignof(UWBP_ChatMountPanel_C) == 0x000008, "Wrong alignment on UWBP_ChatMountPanel_C");
-static_assert(sizeof(UWBP_ChatMountPanel_C) == 0x0005D8, "Wrong size on UWBP_ChatMountPanel_C");
-static_assert(offsetof(UWBP_ChatMountPanel_C, CanvasPanel_0) == 0x0005C0, "Member 'UWBP_ChatMountPanel_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMountPanel_C, Lazy_GameChat) == 0x0005C8, "Member 'UWBP_ChatMountPanel_C::Lazy_GameChat' has a wrong offset!");
-static_assert(offsetof(UWBP_ChatMountPanel_C, Lazy_LobbyChat) == 0x0005D0, "Member 'UWBP_ChatMountPanel_C::Lazy_LobbyChat' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_ChatMountPanel_C;
 
 }
 

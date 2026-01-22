@@ -27,12 +27,7 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWidgetStyle_3DWidget                  Widget3DStyle_15_F26F2E4C409F463DEBF2E593292064A4; // 0x0008(0x0078)(Edit, BlueprintVisible, NoDestructor)
 };
-static_assert(alignof(FWidgetStyle_SummonedMarkerPerSideBP) == 0x000008, "Wrong alignment on FWidgetStyle_SummonedMarkerPerSideBP");
-static_assert(sizeof(FWidgetStyle_SummonedMarkerPerSideBP) == 0x000080, "Wrong size on FWidgetStyle_SummonedMarkerPerSideBP");
-static_assert(offsetof(FWidgetStyle_SummonedMarkerPerSideBP, bVisibleByDefault_16_BCAA608B40D5EC93FAA660A5AD109319) == 0x000000, "Member 'FWidgetStyle_SummonedMarkerPerSideBP::bVisibleByDefault_16_BCAA608B40D5EC93FAA660A5AD109319' has a wrong offset!");
-static_assert(offsetof(FWidgetStyle_SummonedMarkerPerSideBP, bPlayAnim_Activate_18_9792AF7A4CFBFC4056A6CB99B52B0832) == 0x000001, "Member 'FWidgetStyle_SummonedMarkerPerSideBP::bPlayAnim_Activate_18_9792AF7A4CFBFC4056A6CB99B52B0832' has a wrong offset!");
-static_assert(offsetof(FWidgetStyle_SummonedMarkerPerSideBP, bPlayAnim_Destroy_20_C458A3BF43EF81647DD3B997A93C6647) == 0x000002, "Member 'FWidgetStyle_SummonedMarkerPerSideBP::bPlayAnim_Destroy_20_C458A3BF43EF81647DD3B997A93C6647' has a wrong offset!");
-static_assert(offsetof(FWidgetStyle_SummonedMarkerPerSideBP, Widget3DStyle_15_F26F2E4C409F463DEBF2E593292064A4) == 0x000008, "Member 'FWidgetStyle_SummonedMarkerPerSideBP::Widget3DStyle_15_F26F2E4C409F463DEBF2E593292064A4' has a wrong offset!");
+DUMPER7_ASSERTS_FWidgetStyle_SummonedMarkerPerSideBP;
 
 }
 

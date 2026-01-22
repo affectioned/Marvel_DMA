@@ -23,15 +23,18 @@ class UAbilityUIActiveCondition_103091 final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AbilityUIActiveCondition_103091">();
+		STATIC_CLASS_IMPL("AbilityUIActiveCondition_103091")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityUIActiveCondition_103091")
 	}
 	static class UAbilityUIActiveCondition_103091* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityUIActiveCondition_103091>();
 	}
 };
-static_assert(alignof(UAbilityUIActiveCondition_103091) == 0x000008, "Wrong alignment on UAbilityUIActiveCondition_103091");
-static_assert(sizeof(UAbilityUIActiveCondition_103091) == 0x000030, "Wrong size on UAbilityUIActiveCondition_103091");
+DUMPER7_ASSERTS_UAbilityUIActiveCondition_103091;
 
 }
 

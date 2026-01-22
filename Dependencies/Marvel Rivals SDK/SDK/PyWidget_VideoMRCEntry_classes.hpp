@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyWidget_VideoMRCEntry.PyWidget_VideoMRCEntry
-// 0x0028 (0x0620 - 0x05F8)
+// 0x0028 (0x0628 - 0x0600)
 class UPyWidget_VideoMRCEntry final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                VideoGuideTipsStyles;                              // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UMediaPlayer*                           LeagueMediaPlayer;                                 // 0x0608(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMediaPlaylist*                         LeagueMediaPlaylist;                               // 0x0610(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_Entry;                                     // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                VideoGuideTipsStyles;                              // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UMediaPlayer*                           LeagueMediaPlayer;                                 // 0x0610(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaPlaylist*                         LeagueMediaPlaylist;                               // 0x0618(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_Entry;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,19 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_VideoMRCEntry">();
+		STATIC_CLASS_IMPL("PyWidget_VideoMRCEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_VideoMRCEntry")
 	}
 	static class UPyWidget_VideoMRCEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_VideoMRCEntry>();
 	}
 };
-static_assert(alignof(UPyWidget_VideoMRCEntry) == 0x000008, "Wrong alignment on UPyWidget_VideoMRCEntry");
-static_assert(sizeof(UPyWidget_VideoMRCEntry) == 0x000620, "Wrong size on UPyWidget_VideoMRCEntry");
-static_assert(offsetof(UPyWidget_VideoMRCEntry, VideoGuideTipsStyles) == 0x0005F8, "Member 'UPyWidget_VideoMRCEntry::VideoGuideTipsStyles' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VideoMRCEntry, LeagueMediaPlayer) == 0x000608, "Member 'UPyWidget_VideoMRCEntry::LeagueMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VideoMRCEntry, LeagueMediaPlaylist) == 0x000610, "Member 'UPyWidget_VideoMRCEntry::LeagueMediaPlaylist' has a wrong offset!");
-static_assert(offsetof(UPyWidget_VideoMRCEntry, AkEvent_Entry) == 0x000618, "Member 'UPyWidget_VideoMRCEntry::AkEvent_Entry' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_VideoMRCEntry;
 
 }
 

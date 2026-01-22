@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyNamorCharacter.PyNamorCharacter
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x22F0 - 0x22F0)
 class APyNamorCharacter : public ANamorCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyNamorCharacter">();
+		STATIC_CLASS_IMPL("PyNamorCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyNamorCharacter")
 	}
 	static class APyNamorCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyNamorCharacter>();
 	}
 };
-static_assert(alignof(APyNamorCharacter) == 0x000010, "Wrong alignment on APyNamorCharacter");
-static_assert(sizeof(APyNamorCharacter) == 0x0021E0, "Wrong size on APyNamorCharacter");
+DUMPER7_ASSERTS_APyNamorCharacter;
 
 }
 

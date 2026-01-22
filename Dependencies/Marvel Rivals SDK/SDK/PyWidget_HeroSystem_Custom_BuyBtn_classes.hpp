@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Custom_BuyBtn.PyWidget_HeroSystem_Custom_BuyBtn
-// 0x0018 (0x0700 - 0x06E8)
+// 0x0018 (0x0708 - 0x06F0)
 class UPyWidget_HeroSystem_Custom_BuyBtn final : public UPyWidget_Common_PropConfirmBtn
 {
 public:
-	class UInputAction*                           ESCInput;                                          // 0x06E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBtnPureClicked;                                  // 0x06F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UInputAction*                           ESCInput;                                          // 0x06F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBtnPureClicked;                                  // 0x06F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -30,17 +30,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Custom_BuyBtn">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Custom_BuyBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Custom_BuyBtn")
 	}
 	static class UPyWidget_HeroSystem_Custom_BuyBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Custom_BuyBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Custom_BuyBtn) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Custom_BuyBtn");
-static_assert(sizeof(UPyWidget_HeroSystem_Custom_BuyBtn) == 0x000700, "Wrong size on UPyWidget_HeroSystem_Custom_BuyBtn");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_BuyBtn, ESCInput) == 0x0006E8, "Member 'UPyWidget_HeroSystem_Custom_BuyBtn::ESCInput' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Custom_BuyBtn, OnBtnPureClicked) == 0x0006F0, "Member 'UPyWidget_HeroSystem_Custom_BuyBtn::OnBtnPureClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Custom_BuyBtn;
 
 }
 

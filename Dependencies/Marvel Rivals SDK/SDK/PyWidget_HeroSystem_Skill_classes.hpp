@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "UMG_classes.hpp"
 #include "PyWidget_ModuleMainPanel_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 #include "PyMarvelUserWidget_classes.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_HeroSystem_Skill_Base : public UPyMarvelUserWidget
 {
@@ -31,7 +31,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skill_Base">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skill_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skill_Base")
 	}
 	static class UPyWidget_HeroSystem_Skill_Base* GetDefaultObj()
 	{
@@ -39,30 +43,52 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_HeroSystem_Skill_Base) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skill_Base");
-static_assert(sizeof(UPyWidget_HeroSystem_Skill_Base) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Skill_Base");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skill_Base;
+
+// PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill_ListItem_Combo
+// 0x0000 (0x05C8 - 0x05C8)
+class UPyWidget_HeroSystem_Skill_ListItem_Combo final : public UPyWidget_HeroSystem_Skill_Base
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skill_ListItem_Combo")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skill_ListItem_Combo")
+	}
+	static class UPyWidget_HeroSystem_Skill_ListItem_Combo* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skill_ListItem_Combo>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skill_ListItem_Combo;
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill
-// 0x00D8 (0x06D0 - 0x05F8)
+// 0x00F8 (0x06F8 - 0x0600)
 class UPyWidget_HeroSystem_Skill final : public UPyWidget_ModuleMainPanel
 {
 public:
-	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   WeaponText;                                        // 0x0600(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   BondText;                                          // 0x0618(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   SkillText;                                         // 0x0630(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   PassiveText;                                       // 0x0648(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FText                                   ComboText;                                         // 0x0660(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      MI_Ultimate_Effect;                                // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NetSpeedThreshold;                                 // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DefaultDownloadTestUrl;                            // 0x0688(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HeroSkillItemClass;                                // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HeroSkillTitleClass;                               // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                HeroSkillItemComboClass;                           // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           WarmUpHotKey;                                      // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AKEventStartTrain;                                 // 0x06B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 shape_id)> OnSwitchShape;                                    // 0x06C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   WeaponText;                                        // 0x0608(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   BondText;                                          // 0x0620(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   SkillText;                                         // 0x0638(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   PassiveText;                                       // 0x0650(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FText                                   ComboText;                                         // 0x0668(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      MI_Ultimate_Effect;                                // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NetSpeedThreshold;                                 // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DefaultDownloadTestUrl;                            // 0x0690(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroSkillItemClass;                                // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroSkillTitleClass;                               // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                HeroSkillItemComboClass;                           // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           WarmUpHotKey;                                      // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RoleLeftHotKey;                                    // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RoleRightHotKey;                                   // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEventStartTrain;                                 // 0x06D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 shape_id)> OnSwitchShape;                                    // 0x06D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 role)>    OnSwitchRole;                                      // 0x06E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -74,33 +100,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skill">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skill")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skill")
 	}
 	static class UPyWidget_HeroSystem_Skill* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skill>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Skill) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skill");
-static_assert(sizeof(UPyWidget_HeroSystem_Skill) == 0x0006D0, "Wrong size on UPyWidget_HeroSystem_Skill");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, KeyAsset) == 0x0005F8, "Member 'UPyWidget_HeroSystem_Skill::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, WeaponText) == 0x000600, "Member 'UPyWidget_HeroSystem_Skill::WeaponText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, BondText) == 0x000618, "Member 'UPyWidget_HeroSystem_Skill::BondText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, SkillText) == 0x000630, "Member 'UPyWidget_HeroSystem_Skill::SkillText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, PassiveText) == 0x000648, "Member 'UPyWidget_HeroSystem_Skill::PassiveText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, ComboText) == 0x000660, "Member 'UPyWidget_HeroSystem_Skill::ComboText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, MI_Ultimate_Effect) == 0x000678, "Member 'UPyWidget_HeroSystem_Skill::MI_Ultimate_Effect' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, NetSpeedThreshold) == 0x000680, "Member 'UPyWidget_HeroSystem_Skill::NetSpeedThreshold' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, DefaultDownloadTestUrl) == 0x000688, "Member 'UPyWidget_HeroSystem_Skill::DefaultDownloadTestUrl' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, HeroSkillItemClass) == 0x000698, "Member 'UPyWidget_HeroSystem_Skill::HeroSkillItemClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, HeroSkillTitleClass) == 0x0006A0, "Member 'UPyWidget_HeroSystem_Skill::HeroSkillTitleClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, HeroSkillItemComboClass) == 0x0006A8, "Member 'UPyWidget_HeroSystem_Skill::HeroSkillItemComboClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, WarmUpHotKey) == 0x0006B0, "Member 'UPyWidget_HeroSystem_Skill::WarmUpHotKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, AKEventStartTrain) == 0x0006B8, "Member 'UPyWidget_HeroSystem_Skill::AKEventStartTrain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill, OnSwitchShape) == 0x0006C0, "Member 'UPyWidget_HeroSystem_Skill::OnSwitchShape' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skill;
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Hero_ShapeItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_HeroSystem_Hero_ShapeItem final : public UPyMarvelUserWidget
 {
 public:
@@ -109,38 +123,42 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Hero_ShapeItem">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Hero_ShapeItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Hero_ShapeItem")
 	}
 	static class UPyWidget_HeroSystem_Hero_ShapeItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Hero_ShapeItem>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Hero_ShapeItem) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Hero_ShapeItem");
-static_assert(sizeof(UPyWidget_HeroSystem_Hero_ShapeItem) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Hero_ShapeItem");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Hero_ShapeItem;
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill_ListItem
-// 0x00E0 (0x06A0 - 0x05C0)
+// 0x0130 (0x06F8 - 0x05C8)
 class UPyWidget_HeroSystem_Skill_ListItem final : public UPyWidget_HeroSystem_Skill_Base
 {
 public:
-	bool                                          IsSkill;                                           // 0x05BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5BB[0x5];                                      // 0x05BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            UltimateSkillColor;                                // 0x05C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalSkillColor;                                  // 0x05DC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedUltimateSkillColor;                        // 0x05F0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedNormalSkillColor;                          // 0x0604(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalHeadColor;                                   // 0x0618(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            SelectedHeadColor;                                 // 0x062C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FLinearColor                           NormalImageColor;                                  // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SelectedImageColor;                                // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           NormalBgColor;                                     // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           SelectedBgColor;                                   // 0x0670(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TextureNormal;                                     // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TexturePassive;                                    // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             TextureBond;                                       // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_PageListUnit>     PageListUnitClass;                                 // 0x0698(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSkill;                                           // 0x05C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C3[0x5];                                      // 0x05C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelKeyUIAsset*                      KeyAsset;                                          // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            UltimateSkillColor;                                // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalSkillColor;                                  // 0x05E4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedUltimateSkillColor;                        // 0x05F8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedNormalSkillColor;                          // 0x060C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalHeadColor;                                   // 0x0620(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            SelectedHeadColor;                                 // 0x0634(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NormalImageColor;                                  // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SelectedImageColor;                                // 0x0658(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NormalBgColor;                                     // 0x0668(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           SelectedBgColor;                                   // 0x0678(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TextureNormal;                                     // 0x0688(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TexturePassive;                                    // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             TextureBond;                                       // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FVector2D>         SkillNamePosition;                                 // 0x06A0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_PageListUnit>     PageListUnitClass;                                 // 0x06F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -149,48 +167,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skill_ListItem">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skill_ListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skill_ListItem")
 	}
 	static class UPyWidget_HeroSystem_Skill_ListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skill_ListItem>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Skill_ListItem) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skill_ListItem");
-static_assert(sizeof(UPyWidget_HeroSystem_Skill_ListItem) == 0x0006A0, "Wrong size on UPyWidget_HeroSystem_Skill_ListItem");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, IsSkill) == 0x0005BA, "Member 'UPyWidget_HeroSystem_Skill_ListItem::IsSkill' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, KeyAsset) == 0x0005C0, "Member 'UPyWidget_HeroSystem_Skill_ListItem::KeyAsset' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, UltimateSkillColor) == 0x0005C8, "Member 'UPyWidget_HeroSystem_Skill_ListItem::UltimateSkillColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, NormalSkillColor) == 0x0005DC, "Member 'UPyWidget_HeroSystem_Skill_ListItem::NormalSkillColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, SelectedUltimateSkillColor) == 0x0005F0, "Member 'UPyWidget_HeroSystem_Skill_ListItem::SelectedUltimateSkillColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, SelectedNormalSkillColor) == 0x000604, "Member 'UPyWidget_HeroSystem_Skill_ListItem::SelectedNormalSkillColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, NormalHeadColor) == 0x000618, "Member 'UPyWidget_HeroSystem_Skill_ListItem::NormalHeadColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, SelectedHeadColor) == 0x00062C, "Member 'UPyWidget_HeroSystem_Skill_ListItem::SelectedHeadColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, NormalImageColor) == 0x000640, "Member 'UPyWidget_HeroSystem_Skill_ListItem::NormalImageColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, SelectedImageColor) == 0x000650, "Member 'UPyWidget_HeroSystem_Skill_ListItem::SelectedImageColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, NormalBgColor) == 0x000660, "Member 'UPyWidget_HeroSystem_Skill_ListItem::NormalBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, SelectedBgColor) == 0x000670, "Member 'UPyWidget_HeroSystem_Skill_ListItem::SelectedBgColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, TextureNormal) == 0x000680, "Member 'UPyWidget_HeroSystem_Skill_ListItem::TextureNormal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, TexturePassive) == 0x000688, "Member 'UPyWidget_HeroSystem_Skill_ListItem::TexturePassive' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, TextureBond) == 0x000690, "Member 'UPyWidget_HeroSystem_Skill_ListItem::TextureBond' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_Skill_ListItem, PageListUnitClass) == 0x000698, "Member 'UPyWidget_HeroSystem_Skill_ListItem::PageListUnitClass' has a wrong offset!");
-
-// PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill_ListItem_Combo
-// 0x0000 (0x05C0 - 0x05C0)
-class UPyWidget_HeroSystem_Skill_ListItem_Combo final : public UPyWidget_HeroSystem_Skill_Base
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skill_ListItem_Combo">();
-	}
-	static class UPyWidget_HeroSystem_Skill_ListItem_Combo* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skill_ListItem_Combo>();
-	}
-};
-static_assert(alignof(UPyWidget_HeroSystem_Skill_ListItem_Combo) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skill_ListItem_Combo");
-static_assert(sizeof(UPyWidget_HeroSystem_Skill_ListItem_Combo) == 0x0005C0, "Wrong size on UPyWidget_HeroSystem_Skill_ListItem_Combo");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skill_ListItem;
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_Skill_ListTitle
 // 0x0000 (0x03B8 - 0x03B8)
@@ -199,15 +187,18 @@ class UPyWidget_HeroSystem_Skill_ListTitle final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_Skill_ListTitle">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_Skill_ListTitle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_Skill_ListTitle")
 	}
 	static class UPyWidget_HeroSystem_Skill_ListTitle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_Skill_ListTitle>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_Skill_ListTitle) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_Skill_ListTitle");
-static_assert(sizeof(UPyWidget_HeroSystem_Skill_ListTitle) == 0x0003B8, "Wrong size on UPyWidget_HeroSystem_Skill_ListTitle");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_Skill_ListTitle;
 
 // PythonClass PyWidget_HeroSystem_Skill.PyWidget_HeroSystem_SkillBanner
 // 0x0028 (0x03E0 - 0x03B8)
@@ -226,20 +217,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroSystem_SkillBanner">();
+		STATIC_CLASS_IMPL("PyWidget_HeroSystem_SkillBanner")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroSystem_SkillBanner")
 	}
 	static class UPyWidget_HeroSystem_SkillBanner* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroSystem_SkillBanner>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroSystem_SkillBanner) == 0x000008, "Wrong alignment on UPyWidget_HeroSystem_SkillBanner");
-static_assert(sizeof(UPyWidget_HeroSystem_SkillBanner) == 0x0003E0, "Wrong size on UPyWidget_HeroSystem_SkillBanner");
-static_assert(offsetof(UPyWidget_HeroSystem_SkillBanner, Icon_Tank) == 0x0003B8, "Member 'UPyWidget_HeroSystem_SkillBanner::Icon_Tank' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkillBanner, Icon_Damage) == 0x0003C0, "Member 'UPyWidget_HeroSystem_SkillBanner::Icon_Damage' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkillBanner, Icon_Support) == 0x0003C8, "Member 'UPyWidget_HeroSystem_SkillBanner::Icon_Support' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkillBanner, StarEmpty) == 0x0003D0, "Member 'UPyWidget_HeroSystem_SkillBanner::StarEmpty' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroSystem_SkillBanner, StarFull) == 0x0003D8, "Member 'UPyWidget_HeroSystem_SkillBanner::StarFull' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroSystem_SkillBanner;
 
 }
 

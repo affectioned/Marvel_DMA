@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CustomLeague_MapCard.PyWidget_CustomLeague_MapCard
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CustomLeague_MapCard final : public UPyMarvelUserWidget
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CustomLeague_MapCard">();
+		STATIC_CLASS_IMPL("PyWidget_CustomLeague_MapCard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CustomLeague_MapCard")
 	}
 	static class UPyWidget_CustomLeague_MapCard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CustomLeague_MapCard>();
 	}
 };
-static_assert(alignof(UPyWidget_CustomLeague_MapCard) == 0x000008, "Wrong alignment on UPyWidget_CustomLeague_MapCard");
-static_assert(sizeof(UPyWidget_CustomLeague_MapCard) == 0x0005C0, "Wrong size on UPyWidget_CustomLeague_MapCard");
+DUMPER7_ASSERTS_UPyWidget_CustomLeague_MapCard;
 
 }
 

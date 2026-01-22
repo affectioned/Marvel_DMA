@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SettlementDataListPanel_M2203.PyWidget_SettlementDataListPanel_M2203
-// 0x0030 (0x0618 - 0x05E8)
+// 0x0030 (0x0620 - 0x05F0)
 class UPyWidget_SettlementDataListPanel_M2203 final : public UPyWidget_SettlementDataListPanel
 {
 public:
-	class UAkAudioEvent*                          AkEvent_ClickTab;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           LeftAction;                                        // 0x05F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           RightAction;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           ScrollAction;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PositionSelfStyle;                                 // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ClickTab;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           LeftAction;                                        // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           RightAction;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           ScrollAction;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PositionSelfStyle;                                 // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,20 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SettlementDataListPanel_M2203">();
+		STATIC_CLASS_IMPL("PyWidget_SettlementDataListPanel_M2203")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SettlementDataListPanel_M2203")
 	}
 	static class UPyWidget_SettlementDataListPanel_M2203* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SettlementDataListPanel_M2203>();
 	}
 };
-static_assert(alignof(UPyWidget_SettlementDataListPanel_M2203) == 0x000008, "Wrong alignment on UPyWidget_SettlementDataListPanel_M2203");
-static_assert(sizeof(UPyWidget_SettlementDataListPanel_M2203) == 0x000618, "Wrong size on UPyWidget_SettlementDataListPanel_M2203");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel_M2203, AkEvent_ClickTab) == 0x0005E8, "Member 'UPyWidget_SettlementDataListPanel_M2203::AkEvent_ClickTab' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel_M2203, LeftAction) == 0x0005F0, "Member 'UPyWidget_SettlementDataListPanel_M2203::LeftAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel_M2203, RightAction) == 0x0005F8, "Member 'UPyWidget_SettlementDataListPanel_M2203::RightAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel_M2203, ScrollAction) == 0x000600, "Member 'UPyWidget_SettlementDataListPanel_M2203::ScrollAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SettlementDataListPanel_M2203, PositionSelfStyle) == 0x000608, "Member 'UPyWidget_SettlementDataListPanel_M2203::PositionSelfStyle' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SettlementDataListPanel_M2203;
 
 }
 

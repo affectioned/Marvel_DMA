@@ -29,13 +29,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_AssaultHint) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_AssaultHint");
-static_assert(sizeof(LevelBPFunctionLibrary_C_AssaultHint) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_AssaultHint");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultHint, UINAME) == 0x000000, "Member 'LevelBPFunctionLibrary_C_AssaultHint::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultHint, RedSideHit) == 0x000010, "Member 'LevelBPFunctionLibrary_C_AssaultHint::RedSideHit' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultHint, BlueSideHit) == 0x000020, "Member 'LevelBPFunctionLibrary_C_AssaultHint::BlueSideHit' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultHint, __WorldContext) == 0x000030, "Member 'LevelBPFunctionLibrary_C_AssaultHint::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultHint, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000038, "Member 'LevelBPFunctionLibrary_C_AssaultHint::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_AssaultHint;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.AssaultObjectiveClose
 // 0x0030 (0x0030 - 0x0000)
@@ -47,12 +41,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_AssaultObjectiveClose) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_AssaultObjectiveClose");
-static_assert(sizeof(LevelBPFunctionLibrary_C_AssaultObjectiveClose) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_AssaultObjectiveClose");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveClose, CampName) == 0x000000, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveClose::CampName' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveClose, UINAME) == 0x000010, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveClose::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveClose, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveClose::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveClose, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000028, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveClose::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_AssaultObjectiveClose;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.AssaultObjectiveUnlock
 // 0x0030 (0x0030 - 0x0000)
@@ -64,12 +53,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_AssaultObjectiveUnlock");
-static_assert(sizeof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_AssaultObjectiveUnlock");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock, CampName) == 0x000000, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveUnlock::CampName' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock, UINAME) == 0x000010, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveUnlock::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveUnlock::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_AssaultObjectiveUnlock, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000028, "Member 'LevelBPFunctionLibrary_C_AssaultObjectiveUnlock::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_AssaultObjectiveUnlock;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.ChangeControlColor
 // 0x0028 (0x0028 - 0x0000)
@@ -82,12 +66,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_ChangeControlColor) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_ChangeControlColor");
-static_assert(sizeof(LevelBPFunctionLibrary_C_ChangeControlColor) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_ChangeControlColor");
-static_assert(offsetof(LevelBPFunctionLibrary_C_ChangeControlColor, UINAME) == 0x000000, "Member 'LevelBPFunctionLibrary_C_ChangeControlColor::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_ChangeControlColor, OwnerSide) == 0x000010, "Member 'LevelBPFunctionLibrary_C_ChangeControlColor::OwnerSide' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_ChangeControlColor, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_ChangeControlColor::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_ChangeControlColor, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_ChangeControlColor::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_ChangeControlColor;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetHeroComponent
 // 0x0020 (0x0020 - 0x0000)
@@ -99,12 +78,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyHeroComponent*                       CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetHeroComponent) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetHeroComponent");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetHeroComponent) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_GetHeroComponent");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetHeroComponent, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetHeroComponent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetHeroComponent, HeroComponent) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetHeroComponent::HeroComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetHeroComponent, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetHeroComponent::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetHeroComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetHeroComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetHeroComponent;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetMarvelGameState
 // 0x0028 (0x0028 - 0x0000)
@@ -117,13 +91,7 @@ public:
 	class AMarvelGameStateBP_C*                   K2Node_DynamicCast_AsMarvel_Game_State_BP;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetMarvelGameState) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetMarvelGameState");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetMarvelGameState) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_GetMarvelGameState");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelGameState, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetMarvelGameState::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelGameState, MarvelGameStateBP) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetMarvelGameState::MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelGameState, CallFunc_GetGameState_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetMarvelGameState::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelGameState, K2Node_DynamicCast_AsMarvel_Game_State_BP) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetMarvelGameState::K2Node_DynamicCast_AsMarvel_Game_State_BP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelGameState, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'LevelBPFunctionLibrary_C_GetMarvelGameState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetMarvelGameState;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetMarvelPlayerStateByUID
 // 0x0040 (0x0040 - 0x0000)
@@ -141,16 +109,7 @@ public:
 	class AMarvelPlayerStateBP_C*                 K2Node_DynamicCast_AsMarvel_Player_State_BP;       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, NewParam) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::NewParam' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, CallFunc_Map_Find_Value) == 0x000020, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, CallFunc_Map_Find_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, K2Node_DynamicCast_AsMarvel_Player_State_BP) == 0x000030, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::K2Node_DynamicCast_AsMarvel_Player_State_BP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetMarvelPlayerStateByUID;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetMarvelPlayerStateList
 // 0x0068 (0x0068 - 0x0000)
@@ -175,21 +134,7 @@ public:
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetMarvelPlayerStateList");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList) == 0x000068, "Wrong size on LevelBPFunctionLibrary_C_GetMarvelPlayerStateList");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, MarvelPlayerStateList) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::MarvelPlayerStateList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, MPSList) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::MPSList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, Temp_int_Array_Index_Variable) == 0x000028, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000038, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_Array_Get_Item) == 0x000048, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, K2Node_DynamicCast_AsMarvel_Player_State_BP) == 0x000058, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::K2Node_DynamicCast_AsMarvel_Player_State_BP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetMarvelPlayerStateList, CallFunc_Array_Add_ReturnValue) == 0x000064, "Member 'LevelBPFunctionLibrary_C_GetMarvelPlayerStateList::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetMarvelPlayerStateList;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetModularRuleComponent
 // 0x0020 (0x0020 - 0x0000)
@@ -201,12 +146,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetModularRuleComponent) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetModularRuleComponent");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetModularRuleComponent) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_GetModularRuleComponent");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleComponent, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetModularRuleComponent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleComponent, ModularRuleComponent) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetModularRuleComponent::ModularRuleComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleComponent, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetModularRuleComponent::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetModularRuleComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetModularRuleComponent;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetModularRuleControlComponent
 // 0x0020 (0x0020 - 0x0000)
@@ -218,12 +158,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleControlComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetModularRuleControlComponent");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_GetModularRuleControlComponent");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetModularRuleControlComponent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent, ModularRuleComponent) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetModularRuleControlComponent::ModularRuleComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetModularRuleControlComponent::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModularRuleControlComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetModularRuleControlComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetModularRuleControlComponent;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.GetModuleUIComponent
 // 0x0020 (0x0020 - 0x0000)
@@ -235,12 +170,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_GetModuleUIComponent) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_GetModuleUIComponent");
-static_assert(sizeof(LevelBPFunctionLibrary_C_GetModuleUIComponent) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_GetModuleUIComponent");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModuleUIComponent, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_GetModuleUIComponent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModuleUIComponent, ModuleUIComponent) == 0x000008, "Member 'LevelBPFunctionLibrary_C_GetModuleUIComponent::ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModuleUIComponent, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000010, "Member 'LevelBPFunctionLibrary_C_GetModuleUIComponent::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_GetModuleUIComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_GetModuleUIComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_GetModuleUIComponent;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.SetRoute
 // 0x0030 (0x0030 - 0x0000)
@@ -252,12 +182,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                 CallFunc_SetRoute_RouteLength_ImplicitCast;        // 0x0020(0x0010)(ConstParm, ReferenceParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_SetRoute) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_SetRoute");
-static_assert(sizeof(LevelBPFunctionLibrary_C_SetRoute) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_SetRoute");
-static_assert(offsetof(LevelBPFunctionLibrary_C_SetRoute, RouteLength) == 0x000000, "Member 'LevelBPFunctionLibrary_C_SetRoute::RouteLength' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_SetRoute, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_SetRoute::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_SetRoute, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000018, "Member 'LevelBPFunctionLibrary_C_SetRoute::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_SetRoute, CallFunc_SetRoute_RouteLength_ImplicitCast) == 0x000020, "Member 'LevelBPFunctionLibrary_C_SetRoute::CallFunc_SetRoute_RouteLength_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_SetRoute;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.UpdateAssaultBarProcess
 // 0x0050 (0x0050 - 0x0000)
@@ -273,15 +198,7 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 CallFunc_UpdateAssaultBarProcess_OccupyProgressStage_ImplicitCast; // 0x0040(0x0010)(ConstParm, ReferenceParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_UpdateAssaultBarProcess");
-static_assert(sizeof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess) == 0x000050, "Wrong size on LevelBPFunctionLibrary_C_UpdateAssaultBarProcess");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, CurrentProgress) == 0x000000, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::CurrentProgress' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, OccupyProgressStage) == 0x000008, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::OccupyProgressStage' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, UINAME) == 0x000018, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, __WorldContext) == 0x000028, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000030, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, CallFunc_UpdateAssaultBarProcess_CurrentProgress_ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::CallFunc_UpdateAssaultBarProcess_CurrentProgress_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultBarProcess, CallFunc_UpdateAssaultBarProcess_OccupyProgressStage_ImplicitCast) == 0x000040, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultBarProcess::CallFunc_UpdateAssaultBarProcess_OccupyProgressStage_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_UpdateAssaultBarProcess;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.UpdateAssaultPieOccupy
 // 0x0048 (0x0048 - 0x0000)
@@ -297,16 +214,7 @@ public:
 	float                                         CallFunc_UpdateAssaultPieOccupy_CurrentProgress_ImplicitCast; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_UpdateAssaultPieOccupy_TotalProgress_ImplicitCast; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy");
-static_assert(sizeof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy) == 0x000048, "Wrong size on LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, CurrentProgress) == 0x000000, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::CurrentProgress' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, TotalProgress) == 0x000008, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::TotalProgress' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, CampName) == 0x000010, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::CampName' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, UINAME) == 0x000020, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, __WorldContext) == 0x000030, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000038, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, CallFunc_UpdateAssaultPieOccupy_CurrentProgress_ImplicitCast) == 0x000040, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::CallFunc_UpdateAssaultPieOccupy_CurrentProgress_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy, CallFunc_UpdateAssaultPieOccupy_TotalProgress_ImplicitCast) == 0x000044, "Member 'LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy::CallFunc_UpdateAssaultPieOccupy_TotalProgress_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_UpdateAssaultPieOccupy;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.UpdateVictoryProgressText
 // 0x0030 (0x0030 - 0x0000)
@@ -319,13 +227,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_UpdateVictoryProgressText_percent_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_UpdateVictoryProgressText");
-static_assert(sizeof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_UpdateVictoryProgressText");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText, Percent) == 0x000000, "Member 'LevelBPFunctionLibrary_C_UpdateVictoryProgressText::Percent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText, UINAME) == 0x000008, "Member 'LevelBPFunctionLibrary_C_UpdateVictoryProgressText::UINAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_UpdateVictoryProgressText::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_UpdateVictoryProgressText::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_UpdateVictoryProgressText, CallFunc_UpdateVictoryProgressText_percent_ImplicitCast) == 0x000028, "Member 'LevelBPFunctionLibrary_C_UpdateVictoryProgressText::CallFunc_UpdateVictoryProgressText_percent_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_UpdateVictoryProgressText;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.修改条带颜色
 // 0x0028 (0x0028 - 0x0000)
@@ -336,11 +238,7 @@ public:
 	struct FVector                                Color;                                             // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_修改条带颜色) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_修改条带颜色");
-static_assert(sizeof(LevelBPFunctionLibrary_C_修改条带颜色) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_修改条带颜色");
-static_assert(offsetof(LevelBPFunctionLibrary_C_修改条带颜色, MarvelSpline) == 0x000000, "Member 'LevelBPFunctionLibrary_C_修改条带颜色::MarvelSpline' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_修改条带颜色, Color) == 0x000008, "Member 'LevelBPFunctionLibrary_C_修改条带颜色::Color' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_修改条带颜色, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_修改条带颜色::__WorldContext' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_修改条带颜色;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.切换上个重生室
 // 0x0018 (0x0018 - 0x0000)
@@ -351,11 +249,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyRebirthRuleComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_切换上个重生室) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_切换上个重生室");
-static_assert(sizeof(LevelBPFunctionLibrary_C_切换上个重生室) == 0x000018, "Wrong size on LevelBPFunctionLibrary_C_切换上个重生室");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换上个重生室, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_切换上个重生室::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换上个重生室, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000008, "Member 'LevelBPFunctionLibrary_C_切换上个重生室::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换上个重生室, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_切换上个重生室::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_切换上个重生室;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.切换下个重生室
 // 0x0018 (0x0018 - 0x0000)
@@ -366,11 +260,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyRebirthRuleComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_切换下个重生室) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_切换下个重生室");
-static_assert(sizeof(LevelBPFunctionLibrary_C_切换下个重生室) == 0x000018, "Wrong size on LevelBPFunctionLibrary_C_切换下个重生室");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换下个重生室, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_切换下个重生室::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换下个重生室, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000008, "Member 'LevelBPFunctionLibrary_C_切换下个重生室::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_切换下个重生室, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_切换下个重生室::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_切换下个重生室;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.占点结束
 // 0x0030 (0x0030 - 0x0000)
@@ -383,13 +273,7 @@ public:
 	class APyControl*                             K2Node_DynamicCast_As____;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_占点结束) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_占点结束");
-static_assert(sizeof(LevelBPFunctionLibrary_C_占点结束) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_占点结束");
-static_assert(offsetof(LevelBPFunctionLibrary_C_占点结束, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_占点结束::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_占点结束, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_占点结束::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_占点结束, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_占点结束::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_占点结束, K2Node_DynamicCast_As____) == 0x000020, "Member 'LevelBPFunctionLibrary_C_占点结束::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_占点结束, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_占点结束::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_占点结束;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.对指定角色施加BUFF
 // 0x0030 (0x0030 - 0x0000)
@@ -403,13 +287,7 @@ public:
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_对指定角色施加BUFF) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_对指定角色施加BUFF");
-static_assert(sizeof(LevelBPFunctionLibrary_C_对指定角色施加BUFF) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_对指定角色施加BUFF");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色施加BUFF, BuffID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_对指定角色施加BUFF::BuffID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色施加BUFF, ActorList) == 0x000008, "Member 'LevelBPFunctionLibrary_C_对指定角色施加BUFF::ActorList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色施加BUFF, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_对指定角色施加BUFF::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色施加BUFF, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_对指定角色施加BUFF::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色施加BUFF, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_对指定角色施加BUFF::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_对指定角色施加BUFF;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.对指定角色移除BUFF
 // 0x0030 (0x0030 - 0x0000)
@@ -423,13 +301,7 @@ public:
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_对指定角色移除BUFF) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_对指定角色移除BUFF");
-static_assert(sizeof(LevelBPFunctionLibrary_C_对指定角色移除BUFF) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_对指定角色移除BUFF");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色移除BUFF, BuffID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_对指定角色移除BUFF::BuffID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色移除BUFF, ActorList) == 0x000008, "Member 'LevelBPFunctionLibrary_C_对指定角色移除BUFF::ActorList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色移除BUFF, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_对指定角色移除BUFF::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色移除BUFF, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_对指定角色移除BUFF::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_对指定角色移除BUFF, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_对指定角色移除BUFF::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_对指定角色移除BUFF;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.广播关卡机关触发
 // 0x0030 (0x0030 - 0x0000)
@@ -442,13 +314,7 @@ public:
 	class FString                                 CallFunc_GetInstanceName_ReturnValue;              // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPyLevelEventSubSystem*                 CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_广播关卡机关触发) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_广播关卡机关触发");
-static_assert(sizeof(LevelBPFunctionLibrary_C_广播关卡机关触发) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_广播关卡机关触发");
-static_assert(offsetof(LevelBPFunctionLibrary_C_广播关卡机关触发, Trigger) == 0x000000, "Member 'LevelBPFunctionLibrary_C_广播关卡机关触发::Trigger' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_广播关卡机关触发, Target) == 0x000008, "Member 'LevelBPFunctionLibrary_C_广播关卡机关触发::Target' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_广播关卡机关触发, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_广播关卡机关触发::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_广播关卡机关触发, CallFunc_GetInstanceName_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_广播关卡机关触发::CallFunc_GetInstanceName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_广播关卡机关触发, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_广播关卡机关触发::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_广播关卡机关触发;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.开关克拉克门
 // 0x0038 (0x0038 - 0x0000)
@@ -463,14 +329,7 @@ public:
 	class APyKrakoaPortal*                        K2Node_DynamicCast_AsPy_Krakoa_Portal;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_开关克拉克门) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_开关克拉克门");
-static_assert(sizeof(LevelBPFunctionLibrary_C_开关克拉克门) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_开关克拉克门");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, 开关) == 0x000010, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::开关' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, K2Node_DynamicCast_AsPy_Krakoa_Portal) == 0x000028, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::K2Node_DynamicCast_AsPy_Krakoa_Portal' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_开关克拉克门, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_开关克拉克门::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_开关克拉克门;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.快速充能玩家大招
 // 0x0020 (0x0020 - 0x0000)
@@ -482,12 +341,7 @@ public:
 	class UObject*                                NewLocalVar_0;                                     // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_快速充能玩家大招) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_快速充能玩家大招");
-static_assert(sizeof(LevelBPFunctionLibrary_C_快速充能玩家大招) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_快速充能玩家大招");
-static_assert(offsetof(LevelBPFunctionLibrary_C_快速充能玩家大招, Character) == 0x000000, "Member 'LevelBPFunctionLibrary_C_快速充能玩家大招::Character' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_快速充能玩家大招, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_快速充能玩家大招::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_快速充能玩家大招, NewLocalVar_0) == 0x000010, "Member 'LevelBPFunctionLibrary_C_快速充能玩家大招::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_快速充能玩家大招, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000018, "Member 'LevelBPFunctionLibrary_C_快速充能玩家大招::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_快速充能玩家大招;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.播放环境音效(实例组件)
 // 0x0060 (0x0060 - 0x0000)
@@ -500,13 +354,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc______Result;                              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_播放环境音效_实例组件_");
-static_assert(sizeof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_) == 0x000060, "Wrong size on LevelBPFunctionLibrary_C_播放环境音效_实例组件_");
-static_assert(offsetof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_播放环境音效_实例组件_::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_, 组件名) == 0x000010, "Member 'LevelBPFunctionLibrary_C_播放环境音效_实例组件_::组件名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_, AudioEvent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_播放环境音效_实例组件_::AudioEvent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_, __WorldContext) == 0x000050, "Member 'LevelBPFunctionLibrary_C_播放环境音效_实例组件_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_播放环境音效_实例组件_, CallFunc______Result) == 0x000058, "Member 'LevelBPFunctionLibrary_C_播放环境音效_实例组件_::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_播放环境音效_实例组件_;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.改变据点状态 UI
 // 0x0028 (0x0028 - 0x0000)
@@ -519,12 +367,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_改变据点状态_UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_改变据点状态_UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_改变据点状态_UI) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_改变据点状态_UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_改变据点状态_UI, Index_0) == 0x000000, "Member 'LevelBPFunctionLibrary_C_改变据点状态_UI::Index_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_改变据点状态_UI, UI_NAME) == 0x000008, "Member 'LevelBPFunctionLibrary_C_改变据点状态_UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_改变据点状态_UI, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_改变据点状态_UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_改变据点状态_UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_改变据点状态_UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_改变据点状态_UI;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.攻防点结束
 // 0x0038 (0x0038 - 0x0000)
@@ -539,14 +382,7 @@ public:
 	class APyObjective*                           K2Node_DynamicCast_As____;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_攻防点结束) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_攻防点结束");
-static_assert(sizeof(LevelBPFunctionLibrary_C_攻防点结束) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_攻防点结束");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_攻防点结束::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, 胜利方) == 0x000010, "Member 'LevelBPFunctionLibrary_C_攻防点结束::胜利方' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_攻防点结束::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_攻防点结束::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_攻防点结束::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_攻防点结束, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_攻防点结束::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_攻防点结束;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.是否进攻方(客户端)
 // 0x0028 (0x0028 - 0x0000)
@@ -561,14 +397,7 @@ public:
 	EBattleSide                                   CallFunc_GetBattleSide_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_是否进攻方_客户端_) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_是否进攻方_客户端_");
-static_assert(sizeof(LevelBPFunctionLibrary_C_是否进攻方_客户端_) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_是否进攻方_客户端_");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, NewParam) == 0x000008, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::NewParam' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, CallFunc_GetPlayerState_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::CallFunc_GetPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, CallFunc_GetPawn_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::CallFunc_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, CallFunc_GetBattleSide_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::CallFunc_GetBattleSide_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_是否进攻方_客户端_, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'LevelBPFunctionLibrary_C_是否进攻方_客户端_::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_是否进攻方_客户端_;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.显示 UI
 // 0x0040 (0x0040 - 0x0000)
@@ -585,16 +414,7 @@ public:
 	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_ShowUI_DurationTime_ImplicitCast;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_显示_UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_显示_UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_显示_UI) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_显示_UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, UI_NAME) == 0x000000, "Member 'LevelBPFunctionLibrary_C_显示_UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, Duration_Time) == 0x000010, "Member 'LevelBPFunctionLibrary_C_显示_UI::Duration_Time' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, Player_UID) == 0x000018, "Member 'LevelBPFunctionLibrary_C_显示_UI::Player_UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_显示_UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_显示_UI::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000030, "Member 'LevelBPFunctionLibrary_C_显示_UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, CallFunc_Conv_Int64ToInt_ReturnValue) == 0x000038, "Member 'LevelBPFunctionLibrary_C_显示_UI::CallFunc_Conv_Int64ToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示_UI, CallFunc_ShowUI_DurationTime_ImplicitCast) == 0x00003C, "Member 'LevelBPFunctionLibrary_C_显示_UI::CallFunc_ShowUI_DurationTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_显示_UI;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.隐藏浮标
 // 0x0028 (0x0028 - 0x0000)
@@ -607,12 +427,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_隐藏浮标) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_隐藏浮标");
-static_assert(sizeof(LevelBPFunctionLibrary_C_隐藏浮标) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_隐藏浮标");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏浮标, ActorName) == 0x000000, "Member 'LevelBPFunctionLibrary_C_隐藏浮标::ActorName' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏浮标, Hidden) == 0x000010, "Member 'LevelBPFunctionLibrary_C_隐藏浮标::Hidden' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏浮标, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_隐藏浮标::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏浮标, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_隐藏浮标::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_隐藏浮标;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.显示通用文本UI
 // 0x0040 (0x0040 - 0x0000)
@@ -626,14 +441,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_ShowCommonText_DurationTime_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_显示通用文本UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_显示通用文本UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_显示通用文本UI) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_显示通用文本UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, Input) == 0x000000, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::Input' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, UI_NAME) == 0x000010, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, DurationTime) == 0x000020, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::DurationTime' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, __WorldContext) == 0x000028, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000030, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_显示通用文本UI, CallFunc_ShowCommonText_DurationTime_ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_显示通用文本UI::CallFunc_ShowCommonText_DurationTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_显示通用文本UI;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.更新进度条 UI
 // 0x0030 (0x0030 - 0x0000)
@@ -646,13 +454,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_UpdateBarUI_Percent_ImplicitCast;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_更新进度条_UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_更新进度条_UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_更新进度条_UI) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_更新进度条_UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新进度条_UI, Percent) == 0x000000, "Member 'LevelBPFunctionLibrary_C_更新进度条_UI::Percent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新进度条_UI, UI_NAME) == 0x000008, "Member 'LevelBPFunctionLibrary_C_更新进度条_UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新进度条_UI, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_更新进度条_UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新进度条_UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_更新进度条_UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新进度条_UI, CallFunc_UpdateBarUI_Percent_ImplicitCast) == 0x000028, "Member 'LevelBPFunctionLibrary_C_更新进度条_UI::CallFunc_UpdateBarUI_Percent_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_更新进度条_UI;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.更新饼状UI
 // 0x0030 (0x0030 - 0x0000)
@@ -665,13 +467,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_UpdatePieUI_Percent_ImplicitCast;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_更新饼状UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_更新饼状UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_更新饼状UI) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_更新饼状UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新饼状UI, Percent) == 0x000000, "Member 'LevelBPFunctionLibrary_C_更新饼状UI::Percent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新饼状UI, UI_NAME) == 0x000008, "Member 'LevelBPFunctionLibrary_C_更新饼状UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新饼状UI, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_更新饼状UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新饼状UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_更新饼状UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_更新饼状UI, CallFunc_UpdatePieUI_Percent_ImplicitCast) == 0x000028, "Member 'LevelBPFunctionLibrary_C_更新饼状UI::CallFunc_UpdatePieUI_Percent_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_更新饼状UI;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.最近是否有攻击方在车边
 // 0x0020 (0x0020 - 0x0000)
@@ -684,12 +480,7 @@ public:
 	class APyPayload*                             CallFunc______Payload;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAttackInsideRecently_ReturnValue;       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_最近是否有攻击方在车边");
-static_assert(sizeof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_最近是否有攻击方在车边");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_最近是否有攻击方在车边::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边, 存在) == 0x000008, "Member 'LevelBPFunctionLibrary_C_最近是否有攻击方在车边::存在' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边, CallFunc______Payload) == 0x000010, "Member 'LevelBPFunctionLibrary_C_最近是否有攻击方在车边::CallFunc______Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有攻击方在车边, CallFunc_IsAttackInsideRecently_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_最近是否有攻击方在车边::CallFunc_IsAttackInsideRecently_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_最近是否有攻击方在车边;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.最近是否有防守方在车边
 // 0x0020 (0x0020 - 0x0000)
@@ -702,12 +493,7 @@ public:
 	class APyPayload*                             CallFunc______Payload;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDefendInsideRecently_ReturnValue;       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_最近是否有防守方在车边) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_最近是否有防守方在车边");
-static_assert(sizeof(LevelBPFunctionLibrary_C_最近是否有防守方在车边) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_最近是否有防守方在车边");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有防守方在车边, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_最近是否有防守方在车边::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有防守方在车边, 存在) == 0x000008, "Member 'LevelBPFunctionLibrary_C_最近是否有防守方在车边::存在' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有防守方在车边, CallFunc______Payload) == 0x000010, "Member 'LevelBPFunctionLibrary_C_最近是否有防守方在车边::CallFunc______Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_最近是否有防守方在车边, CallFunc_IsDefendInsideRecently_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_最近是否有防守方在车边::CallFunc_IsDefendInsideRecently_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_最近是否有防守方在车边;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.根据人数设置占点占领速度
 // 0x0030 (0x0030 - 0x0000)
@@ -720,13 +506,7 @@ public:
 	class APyControl*                             K2Node_DynamicCast_As____;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_根据人数设置占点占领速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_根据人数设置占点占领速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度, K2Node_DynamicCast_As____) == 0x000020, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_根据人数设置占点占领速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.根据人数设置占点占领速度_MineControl
 // 0x0030 (0x0030 - 0x0000)
@@ -739,13 +519,7 @@ public:
 	class AMineControl_C*                         K2Node_DynamicCast_AsMine_Control;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl");
-static_assert(sizeof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl, K2Node_DynamicCast_AsMine_Control) == 0x000020, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl::K2Node_DynamicCast_AsMine_Control' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_根据人数设置占点占领速度_MineControl;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.根据攻方人数设置攻防点速度
 // 0x0030 (0x0030 - 0x0000)
@@ -758,13 +532,7 @@ public:
 	class APyObjective*                           K2Node_DynamicCast_As____;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度, K2Node_DynamicCast_As____) == 0x000020, "Member 'LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_根据攻方人数设置攻防点速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.模块化创建 AI玩家
 // 0x00B0 (0x00B0 - 0x0000)
@@ -789,23 +557,7 @@ public:
 	class AActor*                                 CallFunc_CreateAIHero_ReturnValue;                 // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_CreateAIHero_ReliveTime_ImplicitCast;     // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_模块化创建_AI玩家) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_模块化创建_AI玩家");
-static_assert(sizeof(LevelBPFunctionLibrary_C_模块化创建_AI玩家) == 0x0000B0, "Wrong size on LevelBPFunctionLibrary_C_模块化创建_AI玩家");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, HeroId) == 0x000000, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::HeroId' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, BattleSide) == 0x000004, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::BattleSide' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, Position) == 0x000008, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::Position' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, Rotation) == 0x000020, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::Rotation' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, Name_0) == 0x000038, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::Name_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, TreePath) == 0x000048, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::TreePath' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, RelivePosition) == 0x000058, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::RelivePosition' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, ReliveTime) == 0x000070, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::ReliveTime' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, IsScore) == 0x000078, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::IsScore' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, __WorldContext) == 0x000080, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, actor) == 0x000088, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::actor' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, NewLocalVar_0) == 0x000090, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, CallFunc_GetHeroComponent_HeroComponent) == 0x000098, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::CallFunc_GetHeroComponent_HeroComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, CallFunc_CreateAIHero_ReturnValue) == 0x0000A0, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::CallFunc_CreateAIHero_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化创建_AI玩家, CallFunc_CreateAIHero_ReliveTime_ImplicitCast) == 0x0000A8, "Member 'LevelBPFunctionLibrary_C_模块化创建_AI玩家::CallFunc_CreateAIHero_ReliveTime_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_模块化创建_AI玩家;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.模块化选择英雄界面
 // 0x0030 (0x0030 - 0x0000)
@@ -820,14 +572,7 @@ public:
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_模块化选择英雄界面) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_模块化选择英雄界面");
-static_assert(sizeof(LevelBPFunctionLibrary_C_模块化选择英雄界面) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_模块化选择英雄界面");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, NewLocalVar_0) == 0x000010, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000020, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_模块化选择英雄界面, CallFunc_Conv_Int64ToInt_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_模块化选择英雄界面::CallFunc_Conv_Int64ToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_模块化选择英雄界面;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.消除玩家所有技能 CD一次
 // 0x0020 (0x0020 - 0x0000)
@@ -839,12 +584,7 @@ public:
 	class UObject*                                NewLocalVar_0;                                     // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次");
-static_assert(sizeof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次");
-static_assert(offsetof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次, Character) == 0x000000, "Member 'LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次::Character' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次, NewLocalVar_0) == 0x000010, "Member 'LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000018, "Member 'LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_消除玩家所有技能_CD一次;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.激活控制组件
 // 0x0040 (0x0040 - 0x0000)
@@ -859,15 +599,7 @@ public:
 	class APyControl*                             K2Node_DynamicCast_As____;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_激活控制组件) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_激活控制组件");
-static_assert(sizeof(LevelBPFunctionLibrary_C_激活控制组件) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_激活控制组件");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_激活控制组件::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_激活控制组件::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000018, "Member 'LevelBPFunctionLibrary_C_激活控制组件::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_激活控制组件::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, CallFunc_GetComponentByClass_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_激活控制组件::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, K2Node_DynamicCast_As____) == 0x000030, "Member 'LevelBPFunctionLibrary_C_激活控制组件::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活控制组件, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LevelBPFunctionLibrary_C_激活控制组件::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_激活控制组件;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.激活推车组件
 // 0x0018 (0x0018 - 0x0000)
@@ -878,11 +610,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UEscortRuleComponent_C*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_激活推车组件) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_激活推车组件");
-static_assert(sizeof(LevelBPFunctionLibrary_C_激活推车组件) == 0x000018, "Wrong size on LevelBPFunctionLibrary_C_激活推车组件");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活推车组件, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_激活推车组件::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活推车组件, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000008, "Member 'LevelBPFunctionLibrary_C_激活推车组件::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活推车组件, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_激活推车组件::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_激活推车组件;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.激活攻防组件
 // 0x0040 (0x0040 - 0x0000)
@@ -898,15 +626,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyAssaultRuleComponent*                CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_激活攻防组件) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_激活攻防组件");
-static_assert(sizeof(LevelBPFunctionLibrary_C_激活攻防组件) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_激活攻防组件");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, K2Node_DynamicCast_As____) == 0x000020, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000030, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_激活攻防组件, CallFunc_GetComponentByClass_ReturnValue) == 0x000038, "Member 'LevelBPFunctionLibrary_C_激活攻防组件::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_激活攻防组件;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取全部玩家
 // 0x0040 (0x0040 - 0x0000)
@@ -921,14 +641,7 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 CallFunc_GetAllPlayer_ReturnValue;                 // 0x0030(0x0010)(ReferenceParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取全部玩家) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取全部玩家");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取全部玩家) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取全部玩家");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, OutputList) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::OutputList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, CallFunc___________Component) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::CallFunc___________Component' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, K2Node_DynamicCast_AsPy_Modular_Rule_Component) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::K2Node_DynamicCast_AsPy_Modular_Rule_Component' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取全部玩家, CallFunc_GetAllPlayer_ReturnValue) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取全部玩家::CallFunc_GetAllPlayer_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取全部玩家;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取关卡定时器剩余时间
 // 0x0030 (0x0030 - 0x0000)
@@ -942,13 +655,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_FunctionResult______ImplicitCast;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取关卡定时器剩余时间");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_获取关卡定时器剩余时间");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间, 定时器名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器剩余时间::定时器名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器剩余时间::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间, 剩余时间) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器剩余时间::剩余时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间, CallFunc_GetTimerRemainingTime_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器剩余时间::CallFunc_GetTimerRemainingTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器剩余时间, K2Node_FunctionResult______ImplicitCast) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器剩余时间::K2Node_FunctionResult______ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取关卡定时器剩余时间;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取关卡定时器过去时间
 // 0x0030 (0x0030 - 0x0000)
@@ -962,13 +669,7 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_FunctionResult______ImplicitCast;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取关卡定时器过去时间");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_获取关卡定时器过去时间");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间, 定时器名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器过去时间::定时器名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器过去时间::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间, 过去时间) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器过去时间::过去时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间, CallFunc_GetTimerElapsedTime_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器过去时间::CallFunc_GetTimerElapsedTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取关卡定时器过去时间, K2Node_FunctionResult______ImplicitCast) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取关卡定时器过去时间::K2Node_FunctionResult______ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取关卡定时器过去时间;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取加时状态
 // 0x0028 (0x0028 - 0x0000)
@@ -982,13 +683,7 @@ public:
 	class UPyOverTimeRuleComponent*               K2Node_DynamicCast_AsPy_Over_Time_Rule_Component;  // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取加时状态) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取加时状态");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取加时状态) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_获取加时状态");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取加时状态, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取加时状态::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取加时状态, 加时状态) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取加时状态::加时状态' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取加时状态, CallFunc___________Component) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取加时状态::CallFunc___________Component' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取加时状态, K2Node_DynamicCast_AsPy_Over_Time_Rule_Component) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取加时状态::K2Node_DynamicCast_AsPy_Over_Time_Rule_Component' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取加时状态, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取加时状态::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取加时状态;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取占点人数
 // 0x0040 (0x0040 - 0x0000)
@@ -1007,16 +702,7 @@ public:
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetBattleSideCount_ReturnValue;           // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取占点人数) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取占点人数");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取占点人数) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取占点人数");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取占点人数::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, 阵营) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取占点人数::阵营' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取占点人数::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, 人数) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取占点人数::人数' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, CallFunc______Result) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取占点人数::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, K2Node_DynamicCast_As____) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取占点人数::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取占点人数::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点人数, CallFunc_GetBattleSideCount_ReturnValue) == 0x00003C, "Member 'LevelBPFunctionLibrary_C_获取占点人数::CallFunc_GetBattleSideCount_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取占点人数;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取占点占领进度
 // 0x0040 (0x0040 - 0x0000)
@@ -1033,16 +719,7 @@ public:
 	float                                         CallFunc_GetOccupyProgress_ReturnValue;            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_FunctionResult____ImplicitCast;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取占点占领进度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取占点占领进度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取占点占领进度) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取占点占领进度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, 进度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::进度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, CallFunc_GetOccupyProgress_ReturnValue) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::CallFunc_GetOccupyProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领进度, K2Node_FunctionResult____ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取占点占领进度::K2Node_FunctionResult____ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取占点占领进度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取占点占领阵营
 // 0x0038 (0x0038 - 0x0000)
@@ -1058,15 +735,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                CallFunc_GetOwnerSide_ReturnValue;                 // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取占点占领阵营) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取占点占领阵营");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取占点占领阵营) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_获取占点占领阵营");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, 当前阵营) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::当前阵营' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点占领阵营, CallFunc_GetOwnerSide_ReturnValue) == 0x000031, "Member 'LevelBPFunctionLibrary_C_获取占点占领阵营::CallFunc_GetOwnerSide_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取占点占领阵营;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取占点胜利进度
 // 0x0040 (0x0040 - 0x0000)
@@ -1083,16 +752,7 @@ public:
 	float                                         CallFunc_GetVictoryProgress_ReturnValue;           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_FunctionResult____ImplicitCast;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取占点胜利进度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取占点胜利进度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取占点胜利进度) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取占点胜利进度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, 进度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::进度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, CallFunc_GetVictoryProgress_ReturnValue) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::CallFunc_GetVictoryProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取占点胜利进度, K2Node_FunctionResult____ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取占点胜利进度::K2Node_FunctionResult____ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取占点胜利进度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取实例
 // 0x0038 (0x0038 - 0x0000)
@@ -1106,14 +766,7 @@ public:
 	class UPySublevelComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetLevelInstanceActor_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取实例) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取实例");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取实例) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_获取实例");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取实例::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取实例::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取实例::Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取实例::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, CallFunc_GetComponentByClass_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取实例::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取实例, CallFunc_GetLevelInstanceActor_ReturnValue) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取实例::CallFunc_GetLevelInstanceActor_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取实例;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取当前游戏阶段
 // 0x0020 (0x0020 - 0x0000)
@@ -1126,12 +779,7 @@ public:
 	class ULevelSubsystem*                        CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EMatchState                                   CallFunc_GetMatchState_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取当前游戏阶段) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取当前游戏阶段");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取当前游戏阶段) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_获取当前游戏阶段");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取当前游戏阶段, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取当前游戏阶段::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取当前游戏阶段, MatchState) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取当前游戏阶段::MatchState' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取当前游戏阶段, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取当前游戏阶段::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取当前游戏阶段, CallFunc_GetMatchState_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取当前游戏阶段::CallFunc_GetMatchState_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取当前游戏阶段;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取指定存活状态玩家
 // 0x0078 (0x0078 - 0x0000)
@@ -1160,24 +808,7 @@ public:
 	uint8                                         Pad_73[0x1];                                       // 0x0073(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取指定存活状态玩家) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取指定存活状态玩家");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取指定存活状态玩家) == 0x000078, "Wrong size on LevelBPFunctionLibrary_C_获取指定存活状态玩家");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, PlayerLivingState) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::PlayerLivingState' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, PlayerUIDList) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::PlayerUIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, UIDList) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::UIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, Temp_int_Array_Index_Variable) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList) == 0x000040, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_Array_Get_Item) == 0x000058, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_GetMarvelBaseCharacter_ReturnValue) == 0x000068, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_GetMarvelBaseCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000072, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定存活状态玩家, CallFunc_Array_Add_ReturnValue) == 0x000074, "Member 'LevelBPFunctionLibrary_C_获取指定存活状态玩家::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取指定存活状态玩家;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取指定阵营玩家
 // 0x0070 (0x0070 - 0x0000)
@@ -1202,21 +833,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取指定阵营玩家) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取指定阵营玩家");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取指定阵营玩家) == 0x000070, "Wrong size on LevelBPFunctionLibrary_C_获取指定阵营玩家");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, BattleSide) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::BattleSide' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, PlayerUIDList) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::PlayerUIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, UIDList) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::UIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, Temp_int_Array_Index_Variable) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList) == 0x000040, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_Array_Get_Item) == 0x000058, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_Array_Add_ReturnValue) == 0x000064, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取指定阵营玩家, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000068, "Member 'LevelBPFunctionLibrary_C_获取指定阵营玩家::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取指定阵营玩家;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取推车
 // 0x0030 (0x0030 - 0x0000)
@@ -1230,14 +847,7 @@ public:
 	class APyPayload*                             K2Node_DynamicCast_As____;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取推车) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取推车");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取推车) == 0x000030, "Wrong size on LevelBPFunctionLibrary_C_获取推车");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取推车::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, Payload) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取推车::Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取推车::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, CallFunc_GetPayload_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取推车::CallFunc_GetPayload_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, K2Node_DynamicCast_As____) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取推车::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取推车, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取推车::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取推车;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取攻防点
 // 0x0038 (0x0038 - 0x0000)
@@ -1251,14 +861,7 @@ public:
 	class APyObjective*                           K2Node_DynamicCast_As____;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取攻防点) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取攻防点");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取攻防点) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_获取攻防点");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取攻防点::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取攻防点::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, Objective) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取攻防点::Objective' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取攻防点::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取攻防点::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取攻防点::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取攻防点;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取攻防点速度
 // 0x0040 (0x0040 - 0x0000)
@@ -1275,16 +878,7 @@ public:
 	float                                         CallFunc_GetProgressSpeed_ReturnValue;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_FunctionResult____ImplicitCast;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取攻防点速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取攻防点速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取攻防点速度) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取攻防点速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, 速度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, CallFunc_GetProgressSpeed_ReturnValue) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::CallFunc_GetProgressSpeed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取攻防点速度, K2Node_FunctionResult____ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取攻防点速度::K2Node_FunctionResult____ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取攻防点速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取玩家存活状态
 // 0x0028 (0x0028 - 0x0000)
@@ -1300,14 +894,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取玩家存活状态) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取玩家存活状态");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取玩家存活状态) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_获取玩家存活状态");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, PlayerLivingState) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::PlayerLivingState' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, CallFunc_GetMarvelPlayerStateByUID_NewParam) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::CallFunc_GetMarvelPlayerStateByUID_NewParam' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家存活状态, CallFunc_IsValid_ReturnValue_1) == 0x000021, "Member 'LevelBPFunctionLibrary_C_获取玩家存活状态::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取玩家存活状态;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取玩家战斗信息
 // 0x0068 (0x0068 - 0x0000)
@@ -1331,23 +918,7 @@ public:
 	double                                        K2Node_FunctionResult_____ImplicitCast_1;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_FunctionResult_____ImplicitCast_2;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取玩家战斗信息) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取玩家战斗信息");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取玩家战斗信息) == 0x000068, "Wrong size on LevelBPFunctionLibrary_C_获取玩家战斗信息");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 击杀次数) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::击杀次数' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 连杀) == 0x000014, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::连杀' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 助攻次数) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::助攻次数' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 死亡次数) == 0x00001C, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::死亡次数' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 主武器命中率) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::主武器命中率' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 总伤害) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::总伤害' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 总治疗) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::总治疗' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, 总承伤) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::总承伤' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, CallFunc_GetMarvelPlayerStateByUID_NewParam) == 0x000040, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::CallFunc_GetMarvelPlayerStateByUID_NewParam' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, K2Node_FunctionResult________ImplicitCast) == 0x000048, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::K2Node_FunctionResult________ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, K2Node_FunctionResult_____ImplicitCast) == 0x000050, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::K2Node_FunctionResult_____ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, K2Node_FunctionResult_____ImplicitCast_1) == 0x000058, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::K2Node_FunctionResult_____ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家战斗信息, K2Node_FunctionResult_____ImplicitCast_2) == 0x000060, "Member 'LevelBPFunctionLibrary_C_获取玩家战斗信息::K2Node_FunctionResult_____ImplicitCast_2' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取玩家战斗信息;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取玩家所选择英雄
 // 0x0020 (0x0020 - 0x0000)
@@ -1361,12 +932,7 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMarvelPlayerStateBP_C*                 CallFunc_GetMarvelPlayerStateByUID_NewParam;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取玩家所选择英雄) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取玩家所选择英雄");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取玩家所选择英雄) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_获取玩家所选择英雄");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家所选择英雄, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取玩家所选择英雄::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家所选择英雄, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取玩家所选择英雄::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家所选择英雄, HeroID) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取玩家所选择英雄::HeroID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家所选择英雄, CallFunc_GetMarvelPlayerStateByUID_NewParam) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取玩家所选择英雄::CallFunc_GetMarvelPlayerStateByUID_NewParam' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取玩家所选择英雄;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取玩家阵营
 // 0x0020 (0x0020 - 0x0000)
@@ -1380,12 +946,7 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMarvelPlayerStateBP_C*                 CallFunc_GetMarvelPlayerStateByUID_NewParam;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取玩家阵营) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取玩家阵营");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取玩家阵营) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_获取玩家阵营");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家阵营, UID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取玩家阵营::UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家阵营, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取玩家阵营::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家阵营, BattleSide) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取玩家阵营::BattleSide' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取玩家阵营, CallFunc_GetMarvelPlayerStateByUID_NewParam) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取玩家阵营::CallFunc_GetMarvelPlayerStateByUID_NewParam' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取玩家阵营;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取移动Actor倒数剩余时间
 // 0x0040 (0x0040 - 0x0000)
@@ -1402,16 +963,7 @@ public:
 	float                                         CallFunc_GetRestTime_ReturnValue;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_FunctionResult____ImplicitCast;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, 进度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::进度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, K2Node_DynamicCast_AsPy_Group_Move_Actor) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::K2Node_DynamicCast_AsPy_Group_Move_Actor' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, CallFunc_GetRestTime_ReturnValue) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::CallFunc_GetRestTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间, K2Node_FunctionResult____ImplicitCast) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间::K2Node_FunctionResult____ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取移动Actor倒数剩余时间;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取规则组件（旧）
 // 0x0028 (0x0028 - 0x0000)
@@ -1424,13 +976,7 @@ public:
 	class AMarvelGameStateBP_C*                   CallFunc_GetMarvelGameState_MarvelGameStateBP;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UActorComponent*                        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取规则组件_旧_) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取规则组件_旧_");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取规则组件_旧_) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_获取规则组件_旧_");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取规则组件_旧_, Class_0) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取规则组件_旧_::Class_0' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取规则组件_旧_, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取规则组件_旧_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取规则组件_旧_, Component) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取规则组件_旧_::Component' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取规则组件_旧_, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取规则组件_旧_::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取规则组件_旧_, CallFunc_GetComponentByClass_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取规则组件_旧_::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取规则组件_旧_;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取路线
 // 0x0038 (0x0038 - 0x0000)
@@ -1444,14 +990,7 @@ public:
 	class APyPayloadTrace*                        K2Node_DynamicCast_AsPy_Payload_Trace;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取路线) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取路线");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取路线) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_获取路线");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取路线::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取路线::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, PayloadTrace) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取路线::PayloadTrace' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取路线::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, K2Node_DynamicCast_AsPy_Payload_Trace) == 0x000028, "Member 'LevelBPFunctionLibrary_C_获取路线::K2Node_DynamicCast_AsPy_Payload_Trace' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取路线, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取路线::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取路线;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取载具占领方
 // 0x0020 (0x0020 - 0x0000)
@@ -1464,12 +1003,7 @@ public:
 	class APyPayload*                             CallFunc______Payload;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOwnershipType                                CallFunc_GetOwnerSide_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取载具占领方) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取载具占领方");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取载具占领方) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_获取载具占领方");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取载具占领方, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取载具占领方::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取载具占领方, OwnerSide) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取载具占领方::OwnerSide' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取载具占领方, CallFunc______Payload) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取载具占领方::CallFunc______Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取载具占领方, CallFunc_GetOwnerSide_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_获取载具占领方::CallFunc_GetOwnerSide_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取载具占领方;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.获取选择指定英雄玩家
 // 0x0078 (0x0078 - 0x0000)
@@ -1495,22 +1029,7 @@ public:
 	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_获取选择指定英雄玩家");
-static_assert(sizeof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家) == 0x000078, "Wrong size on LevelBPFunctionLibrary_C_获取选择指定英雄玩家");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, HeroID) == 0x000000, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::HeroID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, PlayerUIDList) == 0x000010, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::PlayerUIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, UIDList) == 0x000020, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::UIDList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, Temp_int_Array_Index_Variable) == 0x000030, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList) == 0x000040, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_GetMarvelPlayerStateList_MarvelPlayerStateList' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Array_Get_Item) == 0x000058, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000061, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000068, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_获取选择指定英雄玩家, CallFunc_Array_Add_ReturnValue) == 0x000070, "Member 'LevelBPFunctionLibrary_C_获取选择指定英雄玩家::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_获取选择指定英雄玩家;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.蜘蛛零下落
 // 0x0020 (0x0020 - 0x0000)
@@ -1521,11 +1040,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc______Result;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_蜘蛛零下落) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_蜘蛛零下落");
-static_assert(sizeof(LevelBPFunctionLibrary_C_蜘蛛零下落) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_蜘蛛零下落");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零下落, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_蜘蛛零下落::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零下落, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_蜘蛛零下落::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零下落, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_蜘蛛零下落::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_蜘蛛零下落;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.蜘蛛零禁锢弱化
 // 0x0020 (0x0020 - 0x0000)
@@ -1536,11 +1051,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc______Result;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化");
-static_assert(sizeof(LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_蜘蛛零禁锢弱化;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.蜘蛛零随机idle动画
 // 0x0020 (0x0020 - 0x0000)
@@ -1551,11 +1062,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc______Result;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_蜘蛛零随机idle动画) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_蜘蛛零随机idle动画");
-static_assert(sizeof(LevelBPFunctionLibrary_C_蜘蛛零随机idle动画) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_蜘蛛零随机idle动画");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零随机idle动画, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_蜘蛛零随机idle动画::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零随机idle动画, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_蜘蛛零随机idle动画::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_蜘蛛零随机idle动画, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_蜘蛛零随机idle动画::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_蜘蛛零随机idle动画;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.视频面板播放
 // 0x0020 (0x0020 - 0x0000)
@@ -1566,11 +1073,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc______Result;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_视频面板播放) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_视频面板播放");
-static_assert(sizeof(LevelBPFunctionLibrary_C_视频面板播放) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_视频面板播放");
-static_assert(offsetof(LevelBPFunctionLibrary_C_视频面板播放, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_视频面板播放::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_视频面板播放, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_视频面板播放::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_视频面板播放, CallFunc______Result) == 0x000018, "Member 'LevelBPFunctionLibrary_C_视频面板播放::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_视频面板播放;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.触发 Actor组移动根据时间
 // 0x0068 (0x0068 - 0x0000)
@@ -1594,22 +1097,7 @@ public:
 	float                                         CallFunc_TriggerGroupActorMoveByTime_DelayTime_ImplicitCast; // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_TriggerGroupActorMoveByTime_DeltaDegree_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_触发_Actor组移动根据时间");
-static_assert(sizeof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间) == 0x000068, "Wrong size on LevelBPFunctionLibrary_C_触发_Actor组移动根据时间");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 移动时间) == 0x000010, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::移动时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 回复时间) == 0x000018, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::回复时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 延迟回复时间) == 0x000020, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::延迟回复时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 角度偏移) == 0x000028, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::角度偏移' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, 是否初始位置旋转) == 0x000030, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::是否初始位置旋转' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, __WorldContext) == 0x000038, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, CallFunc______Result) == 0x000040, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, K2Node_DynamicCast_AsPy_Group_Move_Actor) == 0x000048, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::K2Node_DynamicCast_AsPy_Group_Move_Actor' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, CallFunc_TriggerGroupActorMoveByTime_MoveTime_ImplicitCast) == 0x000054, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::CallFunc_TriggerGroupActorMoveByTime_MoveTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, CallFunc_TriggerGroupActorMoveByTime_BackTime_ImplicitCast) == 0x000058, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::CallFunc_TriggerGroupActorMoveByTime_BackTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, CallFunc_TriggerGroupActorMoveByTime_DelayTime_ImplicitCast) == 0x00005C, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::CallFunc_TriggerGroupActorMoveByTime_DelayTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发_Actor组移动根据时间, CallFunc_TriggerGroupActorMoveByTime_DeltaDegree_ImplicitCast) == 0x000060, "Member 'LevelBPFunctionLibrary_C_触发_Actor组移动根据时间::CallFunc_TriggerGroupActorMoveByTime_DeltaDegree_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_触发_Actor组移动根据时间;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.触发Actor组移动
 // 0x0068 (0x0068 - 0x0000)
@@ -1633,22 +1121,7 @@ public:
 	float                                         CallFunc_TriggerGroupActorMove_DelayTime_ImplicitCast; // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_TriggerGroupActorMove_DeltaDegree_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_触发Actor组移动) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_触发Actor组移动");
-static_assert(sizeof(LevelBPFunctionLibrary_C_触发Actor组移动) == 0x000068, "Wrong size on LevelBPFunctionLibrary_C_触发Actor组移动");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 移动速度) == 0x000010, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::移动速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 回复速度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::回复速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 延迟回复时间) == 0x000020, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::延迟回复时间' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 旋转角度) == 0x000028, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::旋转角度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, 是否初始位置旋转) == 0x000030, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::是否初始位置旋转' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, __WorldContext) == 0x000038, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, CallFunc______Result) == 0x000040, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, K2Node_DynamicCast_AsPy_Group_Move_Actor) == 0x000048, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::K2Node_DynamicCast_AsPy_Group_Move_Actor' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, CallFunc_TriggerGroupActorMove_MoveSpeed_ImplicitCast) == 0x000054, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::CallFunc_TriggerGroupActorMove_MoveSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, CallFunc_TriggerGroupActorMove_BackSpeed_ImplicitCast) == 0x000058, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::CallFunc_TriggerGroupActorMove_BackSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, CallFunc_TriggerGroupActorMove_DelayTime_ImplicitCast) == 0x00005C, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::CallFunc_TriggerGroupActorMove_DelayTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发Actor组移动, CallFunc_TriggerGroupActorMove_DeltaDegree_ImplicitCast) == 0x000060, "Member 'LevelBPFunctionLibrary_C_触发Actor组移动::CallFunc_TriggerGroupActorMove_DeltaDegree_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_触发Actor组移动;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.触发多Actor组联动根据时间
 // 0x0020 (0x0020 - 0x0000)
@@ -1659,11 +1132,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AMarvelGameState*                       CallFunc_GetMarvelGameState_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_触发多Actor组联动根据时间) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_触发多Actor组联动根据时间");
-static_assert(sizeof(LevelBPFunctionLibrary_C_触发多Actor组联动根据时间) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_触发多Actor组联动根据时间");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发多Actor组联动根据时间, 实例组) == 0x000000, "Member 'LevelBPFunctionLibrary_C_触发多Actor组联动根据时间::实例组' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发多Actor组联动根据时间, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_触发多Actor组联动根据时间::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_触发多Actor组联动根据时间, CallFunc_GetMarvelGameState_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_触发多Actor组联动根据时间::CallFunc_GetMarvelGameState_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_触发多Actor组联动根据时间;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置加时状态
 // 0x0018 (0x0018 - 0x0000)
@@ -1675,11 +1144,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleControlComponent*         CallFunc_GetModularRuleControlComponent_ModularRuleComponent; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置加时状态) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置加时状态");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置加时状态) == 0x000018, "Wrong size on LevelBPFunctionLibrary_C_设置加时状态");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置加时状态, EOvertimeState) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置加时状态::EOvertimeState' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置加时状态, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_设置加时状态::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置加时状态, CallFunc_GetModularRuleControlComponent_ModularRuleComponent) == 0x000010, "Member 'LevelBPFunctionLibrary_C_设置加时状态::CallFunc_GetModularRuleControlComponent_ModularRuleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置加时状态;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置占点占领速度
 // 0x0038 (0x0038 - 0x0000)
@@ -1695,15 +1160,7 @@ public:
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BSetOccupySpeed_speed_ImplicitCast;       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置占点占领速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置占点占领速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置占点占领速度) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_设置占点占领速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, 速度) == 0x000010, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置占点占领速度, CallFunc_BSetOccupySpeed_speed_ImplicitCast) == 0x000034, "Member 'LevelBPFunctionLibrary_C_设置占点占领速度::CallFunc_BSetOccupySpeed_speed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置占点占领速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置攻防点速度
 // 0x0038 (0x0038 - 0x0000)
@@ -1719,15 +1176,7 @@ public:
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetProgressSpeed_speed_ImplicitCast;      // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置攻防点速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置攻防点速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置攻防点速度) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_设置攻防点速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, 速度) == 0x000010, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置攻防点速度, CallFunc_SetProgressSpeed_speed_ImplicitCast) == 0x000034, "Member 'LevelBPFunctionLibrary_C_设置攻防点速度::CallFunc_SetProgressSpeed_speed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置攻防点速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置载具速度
 // 0x0020 (0x0020 - 0x0000)
@@ -1739,12 +1188,7 @@ public:
 	class APyPayload*                             CallFunc______Payload;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetProgressSpeed_speed_ImplicitCast;      // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置载具速度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置载具速度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置载具速度) == 0x000020, "Wrong size on LevelBPFunctionLibrary_C_设置载具速度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置载具速度, 速度) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置载具速度::速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置载具速度, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_设置载具速度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置载具速度, CallFunc______Payload) == 0x000010, "Member 'LevelBPFunctionLibrary_C_设置载具速度::CallFunc______Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置载具速度, CallFunc_SetProgressSpeed_speed_ImplicitCast) == 0x000018, "Member 'LevelBPFunctionLibrary_C_设置载具速度::CallFunc_SetProgressSpeed_speed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置载具速度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置重生室复活点
 // 0x0028 (0x0028 - 0x0000)
@@ -1755,11 +1199,7 @@ public:
 	class FString                                 重生点名;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置重生室复活点) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置重生室复活点");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置重生室复活点) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_设置重生室复活点");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室复活点, 重生室名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置重生室复活点::重生室名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室复活点, 重生点名) == 0x000010, "Member 'LevelBPFunctionLibrary_C_设置重生室复活点::重生点名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室复活点, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_设置重生室复活点::__WorldContext' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置重生室复活点;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.设置重生室状态
 // 0x0060 (0x0060 - 0x0000)
@@ -1770,11 +1210,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPyModularRuleComponent*                CallFunc_GetModularRuleComponent_ModularRuleComponent; // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_设置重生室状态) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_设置重生室状态");
-static_assert(sizeof(LevelBPFunctionLibrary_C_设置重生室状态) == 0x000060, "Wrong size on LevelBPFunctionLibrary_C_设置重生室状态");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室状态, BirthbaseState) == 0x000000, "Member 'LevelBPFunctionLibrary_C_设置重生室状态::BirthbaseState' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室状态, __WorldContext) == 0x000050, "Member 'LevelBPFunctionLibrary_C_设置重生室状态::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_设置重生室状态, CallFunc_GetModularRuleComponent_ModularRuleComponent) == 0x000058, "Member 'LevelBPFunctionLibrary_C_设置重生室状态::CallFunc_GetModularRuleComponent_ModularRuleComponent' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_设置重生室状态;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.载具开始回退
 // 0x0010 (0x0010 - 0x0000)
@@ -1784,10 +1220,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APyPayload*                             CallFunc______Payload;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_载具开始回退) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_载具开始回退");
-static_assert(sizeof(LevelBPFunctionLibrary_C_载具开始回退) == 0x000010, "Wrong size on LevelBPFunctionLibrary_C_载具开始回退");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具开始回退, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_载具开始回退::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具开始回退, CallFunc______Payload) == 0x000008, "Member 'LevelBPFunctionLibrary_C_载具开始回退::CallFunc______Payload' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_载具开始回退;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.载具当前路线名
 // 0x0050 (0x0050 - 0x0000)
@@ -1803,15 +1236,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetCurTraceName_ReturnValue;              // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_载具当前路线名) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_载具当前路线名");
-static_assert(sizeof(LevelBPFunctionLibrary_C_载具当前路线名) == 0x000050, "Wrong size on LevelBPFunctionLibrary_C_载具当前路线名");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, __WorldContext) == 0x000010, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, 路线名) == 0x000018, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::路线名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, CallFunc______Result) == 0x000028, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, K2Node_DynamicCast_As____) == 0x000030, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前路线名, CallFunc_GetCurTraceName_ReturnValue) == 0x000040, "Member 'LevelBPFunctionLibrary_C_载具当前路线名::CallFunc_GetCurTraceName_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_载具当前路线名;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.载具当前进度
 // 0x0028 (0x0028 - 0x0000)
@@ -1825,13 +1250,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_FunctionResult____________ImplicitCast;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_载具当前进度) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_载具当前进度");
-static_assert(sizeof(LevelBPFunctionLibrary_C_载具当前进度) == 0x000028, "Wrong size on LevelBPFunctionLibrary_C_载具当前进度");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前进度, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_载具当前进度::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前进度, 进度_百分比为整数_) == 0x000008, "Member 'LevelBPFunctionLibrary_C_载具当前进度::进度_百分比为整数_' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前进度, CallFunc______Payload) == 0x000010, "Member 'LevelBPFunctionLibrary_C_载具当前进度::CallFunc______Payload' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前进度, CallFunc_GetEscortProgress_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_载具当前进度::CallFunc_GetEscortProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具当前进度, K2Node_FunctionResult____________ImplicitCast) == 0x000020, "Member 'LevelBPFunctionLibrary_C_载具当前进度::K2Node_FunctionResult____________ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_载具当前进度;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.载具根据攻方人数前进
 // 0x0010 (0x0010 - 0x0000)
@@ -1841,10 +1260,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APyPayload*                             CallFunc______Payload;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_载具根据攻方人数前进) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_载具根据攻方人数前进");
-static_assert(sizeof(LevelBPFunctionLibrary_C_载具根据攻方人数前进) == 0x000010, "Wrong size on LevelBPFunctionLibrary_C_载具根据攻方人数前进");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具根据攻方人数前进, __WorldContext) == 0x000000, "Member 'LevelBPFunctionLibrary_C_载具根据攻方人数前进::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具根据攻方人数前进, CallFunc______Payload) == 0x000008, "Member 'LevelBPFunctionLibrary_C_载具根据攻方人数前进::CallFunc______Payload' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_载具根据攻方人数前进;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.载具结束
 // 0x0038 (0x0038 - 0x0000)
@@ -1859,14 +1275,7 @@ public:
 	class APyPayload*                             K2Node_DynamicCast_As____;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_载具结束) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_载具结束");
-static_assert(sizeof(LevelBPFunctionLibrary_C_载具结束) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_载具结束");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_载具结束::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, 胜利方) == 0x000010, "Member 'LevelBPFunctionLibrary_C_载具结束::胜利方' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_载具结束::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, CallFunc______Result) == 0x000020, "Member 'LevelBPFunctionLibrary_C_载具结束::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, K2Node_DynamicCast_As____) == 0x000028, "Member 'LevelBPFunctionLibrary_C_载具结束::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_载具结束, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'LevelBPFunctionLibrary_C_载具结束::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_载具结束;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.通过 ID播放音频(可带字幕)
 // 0x0040 (0x0040 - 0x0000)
@@ -1882,15 +1291,7 @@ public:
 	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ConstParm, ReferenceParm)
 	class AActor*                                 CallFunc______Result;                              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_");
-static_assert(sizeof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_) == 0x000040, "Wrong size on LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, 语音ID1) == 0x000010, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::语音ID1' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, 语音ID2) == 0x000014, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::语音ID2' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, 语音ID3) == 0x000018, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::语音ID3' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, __WorldContext) == 0x000020, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, K2Node_MakeArray_Array) == 0x000028, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_, CallFunc______Result) == 0x000038, "Member 'LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_::CallFunc______Result' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_通过_ID播放音频_可带字幕_;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.重生室开门
 // 0x0048 (0x0048 - 0x0000)
@@ -1913,20 +1314,7 @@ public:
 	bool                                          CallFunc_GetActive_ReturnValue;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_重生室开门) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_重生室开门");
-static_assert(sizeof(LevelBPFunctionLibrary_C_重生室开门) == 0x000048, "Wrong size on LevelBPFunctionLibrary_C_重生室开门");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, 阵营) == 0x000000, "Member 'LevelBPFunctionLibrary_C_重生室开门::阵营' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, __WorldContext) == 0x000008, "Member 'LevelBPFunctionLibrary_C_重生室开门::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, Temp_int_Array_Index_Variable) == 0x000010, "Member 'LevelBPFunctionLibrary_C_重生室开门::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'LevelBPFunctionLibrary_C_重生室开门::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_GetMarvelGameState_MarvelGameStateBP) == 0x000020, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_GetMarvelGameState_MarvelGameStateBP' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_GetComponentByClass_ReturnValue) == 0x000028, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_Array_Get_Item) == 0x000038, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_GetActive_ReturnValue) == 0x000041, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_GetActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重生室开门, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000042, "Member 'LevelBPFunctionLibrary_C_重生室开门::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_重生室开门;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.重设占点参数
 // 0x0118 (0x0118 - 0x0000)
@@ -1953,25 +1341,7 @@ public:
 	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, float>                            CallFunc_SetPyControl_OccupyProgressSpeed_ImplicitCast; // 0x00C8(0x0050)(ConstParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_重设占点参数) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_重设占点参数");
-static_assert(sizeof(LevelBPFunctionLibrary_C_重设占点参数) == 0x000118, "Wrong size on LevelBPFunctionLibrary_C_重设占点参数");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_重设占点参数::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 衰退速度) == 0x000010, "Member 'LevelBPFunctionLibrary_C_重设占点参数::衰退速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 衰退延时) == 0x000018, "Member 'LevelBPFunctionLibrary_C_重设占点参数::衰退延时' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅1人) == 0x000020, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅1人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅2人) == 0x000028, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅2人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅3人) == 0x000030, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅3人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅4人) == 0x000038, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅4人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅5人) == 0x000040, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅5人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, 占领速度仅6人) == 0x000048, "Member 'LevelBPFunctionLibrary_C_重设占点参数::占领速度仅6人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, __WorldContext) == 0x000050, "Member 'LevelBPFunctionLibrary_C_重设占点参数::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, K2Node_MakeMap_Map) == 0x000058, "Member 'LevelBPFunctionLibrary_C_重设占点参数::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, CallFunc______Result) == 0x0000A8, "Member 'LevelBPFunctionLibrary_C_重设占点参数::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, K2Node_DynamicCast_As____) == 0x0000B0, "Member 'LevelBPFunctionLibrary_C_重设占点参数::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'LevelBPFunctionLibrary_C_重设占点参数::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, CallFunc_SetPyControl_LosingSpeed_ImplicitCast) == 0x0000BC, "Member 'LevelBPFunctionLibrary_C_重设占点参数::CallFunc_SetPyControl_LosingSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, CallFunc_SetPyControl_TimeToLoseOccupy_ImplicitCast) == 0x0000C0, "Member 'LevelBPFunctionLibrary_C_重设占点参数::CallFunc_SetPyControl_TimeToLoseOccupy_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设占点参数, CallFunc_SetPyControl_OccupyProgressSpeed_ImplicitCast) == 0x0000C8, "Member 'LevelBPFunctionLibrary_C_重设占点参数::CallFunc_SetPyControl_OccupyProgressSpeed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_重设占点参数;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.重设攻防点参数
 // 0x0118 (0x0118 - 0x0000)
@@ -1998,25 +1368,7 @@ public:
 	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, float>                            CallFunc_SetPyObjective_RaisingSpeed_ImplicitCast; // 0x00C8(0x0050)(ConstParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_重设攻防点参数) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_重设攻防点参数");
-static_assert(sizeof(LevelBPFunctionLibrary_C_重设攻防点参数) == 0x000118, "Wrong size on LevelBPFunctionLibrary_C_重设攻防点参数");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 衰退延迟) == 0x000010, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::衰退延迟' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 衰退速度) == 0x000018, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::衰退速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方1人) == 0x000020, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方1人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方2人) == 0x000028, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方2人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方3人) == 0x000030, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方3人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方4人) == 0x000038, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方4人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方5人) == 0x000040, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方5人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, 仅攻方6人) == 0x000048, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::仅攻方6人' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, __WorldContext) == 0x000050, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, K2Node_MakeMap_Map) == 0x000058, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, CallFunc______Result) == 0x0000A8, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, K2Node_DynamicCast_As____) == 0x0000B0, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, CallFunc_SetPyObjective_LosingSpeed_ImplicitCast) == 0x0000BC, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::CallFunc_SetPyObjective_LosingSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, CallFunc_SetPyObjective_TimeToLoseOccupy_ImplicitCast) == 0x0000C0, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::CallFunc_SetPyObjective_TimeToLoseOccupy_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设攻防点参数, CallFunc_SetPyObjective_RaisingSpeed_ImplicitCast) == 0x0000C8, "Member 'LevelBPFunctionLibrary_C_重设攻防点参数::CallFunc_SetPyObjective_RaisingSpeed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_重设攻防点参数;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.重设载具参数
 // 0x0138 (0x0138 - 0x0000)
@@ -2047,29 +1399,7 @@ public:
 	float                                         CallFunc_SetEscortArgs_DelayBackTime_ImplicitCast; // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, float>                            CallFunc_SetEscortArgs_MoveSpeed_ImplicitCast;     // 0x00E8(0x0050)(ConstParm)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_重设载具参数) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_重设载具参数");
-static_assert(sizeof(LevelBPFunctionLibrary_C_重设载具参数) == 0x000138, "Wrong size on LevelBPFunctionLibrary_C_重设载具参数");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 实例名) == 0x000000, "Member 'LevelBPFunctionLibrary_C_重设载具参数::实例名' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 回退速度) == 0x000010, "Member 'LevelBPFunctionLibrary_C_重设载具参数::回退速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 前进延迟) == 0x000018, "Member 'LevelBPFunctionLibrary_C_重设载具参数::前进延迟' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 后退延迟) == 0x000020, "Member 'LevelBPFunctionLibrary_C_重设载具参数::后退延迟' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 车边BuffID) == 0x000028, "Member 'LevelBPFunctionLibrary_C_重设载具参数::车边BuffID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方1人速度) == 0x000030, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方1人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方2人速度) == 0x000038, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方2人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方3人速度) == 0x000040, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方3人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方4人速度) == 0x000048, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方4人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方5人速度) == 0x000050, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方5人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, 仅攻方6人速度) == 0x000058, "Member 'LevelBPFunctionLibrary_C_重设载具参数::仅攻方6人速度' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, __WorldContext) == 0x000060, "Member 'LevelBPFunctionLibrary_C_重设载具参数::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, K2Node_MakeMap_Map) == 0x000068, "Member 'LevelBPFunctionLibrary_C_重设载具参数::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, CallFunc______Result) == 0x0000B8, "Member 'LevelBPFunctionLibrary_C_重设载具参数::CallFunc______Result' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, K2Node_MakeArray_Array) == 0x0000C0, "Member 'LevelBPFunctionLibrary_C_重设载具参数::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, K2Node_DynamicCast_As____) == 0x0000D0, "Member 'LevelBPFunctionLibrary_C_重设载具参数::K2Node_DynamicCast_As____' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'LevelBPFunctionLibrary_C_重设载具参数::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, CallFunc_SetEscortArgs_BackwordSpeed_ImplicitCast) == 0x0000DC, "Member 'LevelBPFunctionLibrary_C_重设载具参数::CallFunc_SetEscortArgs_BackwordSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, CallFunc_SetEscortArgs_DelayForwardTime_ImplicitCast) == 0x0000E0, "Member 'LevelBPFunctionLibrary_C_重设载具参数::CallFunc_SetEscortArgs_DelayForwardTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, CallFunc_SetEscortArgs_DelayBackTime_ImplicitCast) == 0x0000E4, "Member 'LevelBPFunctionLibrary_C_重设载具参数::CallFunc_SetEscortArgs_DelayBackTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_重设载具参数, CallFunc_SetEscortArgs_MoveSpeed_ImplicitCast) == 0x0000E8, "Member 'LevelBPFunctionLibrary_C_重设载具参数::CallFunc_SetEscortArgs_MoveSpeed_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_重设载具参数;
 
 // Function LevelBPFunctionLibrary.LevelBPFunctionLibrary_C.隐藏UI
 // 0x0038 (0x0038 - 0x0000)
@@ -2084,14 +1414,7 @@ public:
 	class UPyModuleUIComponent*                   CallFunc_GetModuleUIComponent_ModuleUIComponent;   // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LevelBPFunctionLibrary_C_隐藏UI) == 0x000008, "Wrong alignment on LevelBPFunctionLibrary_C_隐藏UI");
-static_assert(sizeof(LevelBPFunctionLibrary_C_隐藏UI) == 0x000038, "Wrong size on LevelBPFunctionLibrary_C_隐藏UI");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, UI_NAME) == 0x000000, "Member 'LevelBPFunctionLibrary_C_隐藏UI::UI_NAME' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, Player_UID) == 0x000010, "Member 'LevelBPFunctionLibrary_C_隐藏UI::Player_UID' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, __WorldContext) == 0x000018, "Member 'LevelBPFunctionLibrary_C_隐藏UI::__WorldContext' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000020, "Member 'LevelBPFunctionLibrary_C_隐藏UI::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, CallFunc_GetModuleUIComponent_ModuleUIComponent) == 0x000028, "Member 'LevelBPFunctionLibrary_C_隐藏UI::CallFunc_GetModuleUIComponent_ModuleUIComponent' has a wrong offset!");
-static_assert(offsetof(LevelBPFunctionLibrary_C_隐藏UI, CallFunc_Conv_Int64ToInt_ReturnValue) == 0x000030, "Member 'LevelBPFunctionLibrary_C_隐藏UI::CallFunc_Conv_Int64ToInt_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_LevelBPFunctionLibrary_C_隐藏UI;
 
 }
 

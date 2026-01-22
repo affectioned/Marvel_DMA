@@ -17,63 +17,6 @@
 namespace SDK
 {
 
-// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_10130_10391005::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.OnRep_CurrentMagnifyRate
-// (Native, Public, BlueprintCallable)
-
-void UPyBuffAbility_10130_10391005::OnRep_CurrentMagnifyRate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "OnRep_CurrentMagnifyRate");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.OnRep_ModifyScope
-// (Native, Public, BlueprintCallable)
-
-void UPyBuffAbility_10130_10391005::OnRep_ModifyScope()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "OnRep_ModifyScope");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391003.K2_ActivateAbility
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 
@@ -97,7 +40,7 @@ void UPyBuffAbility_10130_10391003::K2_ActivateAbility()
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UGameplayAbility*                 Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FMarvelAbilityHitParams&   HitParams                                              (ConstParm, Parm, OutParm, ReferenceParm)
 // const TArray<struct FHitResult>&        HitResults                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPyBuffAbility_10130_10391003::OnAbilityHit(class UGameplayAbility* Ability, const struct FMarvelAbilityHitParams& HitParams, const TArray<struct FHitResult>& HitResults)
@@ -112,54 +55,6 @@ void UPyBuffAbility_10130_10391003::OnAbilityHit(class UGameplayAbility* Ability
 	Parms.Ability = Ability;
 	Parms.HitParams = std::move(HitParams);
 	Parms.HitResults = std::move(HitResults);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002.K2_ActivateAbility
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyBuffAbility_10130_10391002::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10130_10391002", "K2_ActivateAbility");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002.OtherAbilityApplyCost
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   CostValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              CostType_0                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-
-void UPyBuffAbility_10130_10391002::OtherAbilityApplyCost(class UMarvelGameplayAbility* Ability, float CostValue, const struct FGameplayTag& CostType_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyBuffAbility_10130_10391002", "OtherAbilityApplyCost");
-
-	Params::PyBuffAbility_10130_10391002_OtherAbilityApplyCost Parms{};
-
-	Parms.Ability = Ability;
-	Parms.CostValue = CostValue;
-	Parms.CostType_0 = std::move(CostType_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -236,6 +131,111 @@ void UPyBuffAbility_10130_10391004::K2_ActivateAbility()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PyBuffAbility_10130_10391004", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_10130_10391002::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10130_10391002", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391002.OtherAbilityApplyCost
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMarvelGameplayAbility*           Ability                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   CostValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              CostType_0                                             (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void UPyBuffAbility_10130_10391002::OtherAbilityApplyCost(class UMarvelGameplayAbility* Ability, float CostValue, const struct FGameplayTag& CostType_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10130_10391002", "OtherAbilityApplyCost");
+
+	Params::PyBuffAbility_10130_10391002_OtherAbilityApplyCost Parms{};
+
+	Parms.Ability = Ability;
+	Parms.CostValue = CostValue;
+	Parms.CostType_0 = std::move(CostType_0);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.K2_ActivateAbility
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UPyBuffAbility_10130_10391005::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "K2_ActivateAbility");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.OnRep_CurrentMagnifyRate
+// (Native, Public, BlueprintCallable)
+
+void UPyBuffAbility_10130_10391005::OnRep_CurrentMagnifyRate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "OnRep_CurrentMagnifyRate");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyBuffAbility_10130_103941.PyBuffAbility_10130_10391005.OnRep_ModifyScope
+// (Native, Public, BlueprintCallable)
+
+void UPyBuffAbility_10130_10391005::OnRep_ModifyScope()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyBuffAbility_10130_10391005", "OnRep_ModifyScope");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

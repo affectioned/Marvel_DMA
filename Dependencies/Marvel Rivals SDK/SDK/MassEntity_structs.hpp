@@ -94,8 +94,7 @@ struct alignas(0x08) FMassFragmentRequirements
 public:
 	uint8                                         Pad_0[0x1E8];                                      // 0x0000(0x01E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassFragmentRequirements) == 0x000008, "Wrong alignment on FMassFragmentRequirements");
-static_assert(sizeof(FMassFragmentRequirements) == 0x0001E8, "Wrong size on FMassFragmentRequirements");
+DUMPER7_ASSERTS_FMassFragmentRequirements;
 
 // ScriptStruct MassEntity.MassEntityQuery
 // 0x00B8 (0x02A0 - 0x01E8)
@@ -104,8 +103,7 @@ struct alignas(0x10) FMassEntityQuery final : public FMassFragmentRequirements
 public:
 	uint8                                         Pad_1E8[0xB8];                                     // 0x01E8(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassEntityQuery) == 0x000010, "Wrong alignment on FMassEntityQuery");
-static_assert(sizeof(FMassEntityQuery) == 0x0002A0, "Wrong size on FMassEntityQuery");
+DUMPER7_ASSERTS_FMassEntityQuery;
 
 // ScriptStruct MassEntity.MassFragment
 // 0x0000 (0x0000 - 0x0000)
@@ -114,8 +112,7 @@ struct alignas(0x01) FMassFragment
 {
 };
 #pragma pack(pop)
-static_assert(alignof(FMassFragment) == 0x000001, "Wrong alignment on FMassFragment");
-static_assert(sizeof(FMassFragment) == 0x000001, "Wrong size on FMassFragment");
+DUMPER7_ASSERTS_FMassFragment;
 
 // ScriptStruct MassEntity.MassTag
 // 0x0001 (0x0001 - 0x0000)
@@ -124,8 +121,7 @@ struct FMassTag
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassTag) == 0x000001, "Wrong alignment on FMassTag");
-static_assert(sizeof(FMassTag) == 0x000001, "Wrong size on FMassTag");
+DUMPER7_ASSERTS_FMassTag;
 
 // ScriptStruct MassEntity.MassChunkFragment
 // 0x0001 (0x0001 - 0x0000)
@@ -134,8 +130,7 @@ struct FMassChunkFragment
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassChunkFragment) == 0x000001, "Wrong alignment on FMassChunkFragment");
-static_assert(sizeof(FMassChunkFragment) == 0x000001, "Wrong size on FMassChunkFragment");
+DUMPER7_ASSERTS_FMassChunkFragment;
 
 // ScriptStruct MassEntity.MassSharedFragment
 // 0x0000 (0x0000 - 0x0000)
@@ -144,8 +139,7 @@ struct alignas(0x01) FMassSharedFragment
 {
 };
 #pragma pack(pop)
-static_assert(alignof(FMassSharedFragment) == 0x000001, "Wrong alignment on FMassSharedFragment");
-static_assert(sizeof(FMassSharedFragment) == 0x000001, "Wrong size on FMassSharedFragment");
+DUMPER7_ASSERTS_FMassSharedFragment;
 
 // ScriptStruct MassEntity.MassEntityHandle
 // 0x0008 (0x0008 - 0x0000)
@@ -155,10 +149,7 @@ public:
 	int32                                         Index;                                             // 0x0000(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SerialNumber;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassEntityHandle) == 0x000008, "Wrong alignment on FMassEntityHandle");
-static_assert(sizeof(FMassEntityHandle) == 0x000008, "Wrong size on FMassEntityHandle");
-static_assert(offsetof(FMassEntityHandle, Index) == 0x000000, "Member 'FMassEntityHandle::Index' has a wrong offset!");
-static_assert(offsetof(FMassEntityHandle, SerialNumber) == 0x000004, "Member 'FMassEntityHandle::SerialNumber' has a wrong offset!");
+DUMPER7_ASSERTS_FMassEntityHandle;
 
 // ScriptStruct MassEntity.MassEntityView
 // 0x0020 (0x0020 - 0x0000)
@@ -167,8 +158,7 @@ struct alignas(0x08) FMassEntityView final
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassEntityView) == 0x000008, "Wrong alignment on FMassEntityView");
-static_assert(sizeof(FMassEntityView) == 0x000020, "Wrong size on FMassEntityView");
+DUMPER7_ASSERTS_FMassEntityView;
 
 // ScriptStruct MassEntity.MassRuntimePipeline
 // 0x0010 (0x0010 - 0x0000)
@@ -177,9 +167,7 @@ struct FMassRuntimePipeline final
 public:
 	TArray<class UMassProcessor*>                 Processors;                                        // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassRuntimePipeline) == 0x000008, "Wrong alignment on FMassRuntimePipeline");
-static_assert(sizeof(FMassRuntimePipeline) == 0x000010, "Wrong size on FMassRuntimePipeline");
-static_assert(offsetof(FMassRuntimePipeline, Processors) == 0x000000, "Member 'FMassRuntimePipeline::Processors' has a wrong offset!");
+DUMPER7_ASSERTS_FMassRuntimePipeline;
 
 // ScriptStruct MassEntity.MassObserversMap
 // 0x0050 (0x0050 - 0x0000)
@@ -188,9 +176,7 @@ struct FMassObserversMap final
 public:
 	TMap<class UScriptStruct*, struct FMassRuntimePipeline> Container;                               // 0x0000(0x0050)(NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassObserversMap) == 0x000008, "Wrong alignment on FMassObserversMap");
-static_assert(sizeof(FMassObserversMap) == 0x000050, "Wrong size on FMassObserversMap");
-static_assert(offsetof(FMassObserversMap, Container) == 0x000000, "Member 'FMassObserversMap::Container' has a wrong offset!");
+DUMPER7_ASSERTS_FMassObserversMap;
 
 // ScriptStruct MassEntity.MassObserverManager
 // 0x01C8 (0x01C8 - 0x0000)
@@ -202,10 +188,7 @@ public:
 	struct FMassObserversMap                      TagObservers[0x2];                                 // 0x0120(0x0050)(Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1C0[0x8];                                      // 0x01C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassObserverManager) == 0x000008, "Wrong alignment on FMassObserverManager");
-static_assert(sizeof(FMassObserverManager) == 0x0001C8, "Wrong size on FMassObserverManager");
-static_assert(offsetof(FMassObserverManager, FragmentObservers) == 0x000080, "Member 'FMassObserverManager::FragmentObservers' has a wrong offset!");
-static_assert(offsetof(FMassObserverManager, TagObservers) == 0x000120, "Member 'FMassObserverManager::TagObservers' has a wrong offset!");
+DUMPER7_ASSERTS_FMassObserverManager;
 
 // ScriptStruct MassEntity.MassProcessorClassCollection
 // 0x0010 (0x0010 - 0x0000)
@@ -214,9 +197,7 @@ struct FMassProcessorClassCollection final
 public:
 	TArray<TSubclassOf<class UMassProcessor>>     ClassCollection;                                   // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassProcessorClassCollection) == 0x000008, "Wrong alignment on FMassProcessorClassCollection");
-static_assert(sizeof(FMassProcessorClassCollection) == 0x000010, "Wrong size on FMassProcessorClassCollection");
-static_assert(offsetof(FMassProcessorClassCollection, ClassCollection) == 0x000000, "Member 'FMassProcessorClassCollection::ClassCollection' has a wrong offset!");
+DUMPER7_ASSERTS_FMassProcessorClassCollection;
 
 // ScriptStruct MassEntity.MassEntityObserverClassesMap
 // 0x0050 (0x0050 - 0x0000)
@@ -225,9 +206,7 @@ struct FMassEntityObserverClassesMap final
 public:
 	TMap<class UScriptStruct*, struct FMassProcessorClassCollection> Container;                      // 0x0000(0x0050)(NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMassEntityObserverClassesMap) == 0x000008, "Wrong alignment on FMassEntityObserverClassesMap");
-static_assert(sizeof(FMassEntityObserverClassesMap) == 0x000050, "Wrong size on FMassEntityObserverClassesMap");
-static_assert(offsetof(FMassEntityObserverClassesMap, Container) == 0x000000, "Member 'FMassEntityObserverClassesMap::Container' has a wrong offset!");
+DUMPER7_ASSERTS_FMassEntityObserverClassesMap;
 
 // ScriptStruct MassEntity.MassProcessingPhaseConfig
 // 0x0028 (0x0028 - 0x0000)
@@ -239,11 +218,7 @@ public:
 	TSubclassOf<class UMassCompositeProcessor>    PhaseGroupClass;                                   // 0x0010(0x0008)(Edit, ZeroConstructor, Config, NoClear, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UMassProcessor*>                 ProcessorCDOs;                                     // 0x0018(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassProcessingPhaseConfig) == 0x000008, "Wrong alignment on FMassProcessingPhaseConfig");
-static_assert(sizeof(FMassProcessingPhaseConfig) == 0x000028, "Wrong size on FMassProcessingPhaseConfig");
-static_assert(offsetof(FMassProcessingPhaseConfig, PhaseName) == 0x000000, "Member 'FMassProcessingPhaseConfig::PhaseName' has a wrong offset!");
-static_assert(offsetof(FMassProcessingPhaseConfig, PhaseGroupClass) == 0x000010, "Member 'FMassProcessingPhaseConfig::PhaseGroupClass' has a wrong offset!");
-static_assert(offsetof(FMassProcessingPhaseConfig, ProcessorCDOs) == 0x000018, "Member 'FMassProcessingPhaseConfig::ProcessorCDOs' has a wrong offset!");
+DUMPER7_ASSERTS_FMassProcessingPhaseConfig;
 
 // ScriptStruct MassEntity.ProcessorAuxDataBase
 // 0x0001 (0x0001 - 0x0000)
@@ -252,8 +227,7 @@ struct FProcessorAuxDataBase final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProcessorAuxDataBase) == 0x000001, "Wrong alignment on FProcessorAuxDataBase");
-static_assert(sizeof(FProcessorAuxDataBase) == 0x000001, "Wrong size on FProcessorAuxDataBase");
+DUMPER7_ASSERTS_FProcessorAuxDataBase;
 
 // ScriptStruct MassEntity.MassProcessingContext
 // 0x0058 (0x0058 - 0x0000)
@@ -267,11 +241,7 @@ public:
 	bool                                          bFlushCommandBuffer;                               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x17];                                      // 0x0041(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassProcessingContext) == 0x000008, "Wrong alignment on FMassProcessingContext");
-static_assert(sizeof(FMassProcessingContext) == 0x000058, "Wrong size on FMassProcessingContext");
-static_assert(offsetof(FMassProcessingContext, DeltaSeconds) == 0x000010, "Member 'FMassProcessingContext::DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(FMassProcessingContext, AuxData) == 0x000018, "Member 'FMassProcessingContext::AuxData' has a wrong offset!");
-static_assert(offsetof(FMassProcessingContext, bFlushCommandBuffer) == 0x000040, "Member 'FMassProcessingContext::bFlushCommandBuffer' has a wrong offset!");
+DUMPER7_ASSERTS_FMassProcessingContext;
 
 // ScriptStruct MassEntity.MassProcessorExecutionOrder
 // 0x0030 (0x0030 - 0x0000)
@@ -283,11 +253,7 @@ public:
 	TArray<class FName>                           ExecuteBefore;                                     // 0x0010(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TArray<class FName>                           ExecuteAfter;                                      // 0x0020(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMassProcessorExecutionOrder) == 0x000008, "Wrong alignment on FMassProcessorExecutionOrder");
-static_assert(sizeof(FMassProcessorExecutionOrder) == 0x000030, "Wrong size on FMassProcessorExecutionOrder");
-static_assert(offsetof(FMassProcessorExecutionOrder, ExecuteInGroup) == 0x000000, "Member 'FMassProcessorExecutionOrder::ExecuteInGroup' has a wrong offset!");
-static_assert(offsetof(FMassProcessorExecutionOrder, ExecuteBefore) == 0x000010, "Member 'FMassProcessorExecutionOrder::ExecuteBefore' has a wrong offset!");
-static_assert(offsetof(FMassProcessorExecutionOrder, ExecuteAfter) == 0x000020, "Member 'FMassProcessorExecutionOrder::ExecuteAfter' has a wrong offset!");
+DUMPER7_ASSERTS_FMassProcessorExecutionOrder;
 
 // ScriptStruct MassEntity.MassSubsystemRequirements
 // 0x0048 (0x0048 - 0x0000)
@@ -296,8 +262,7 @@ struct alignas(0x08) FMassSubsystemRequirements final
 public:
 	uint8                                         Pad_0[0x48];                                       // 0x0000(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMassSubsystemRequirements) == 0x000008, "Wrong alignment on FMassSubsystemRequirements");
-static_assert(sizeof(FMassSubsystemRequirements) == 0x000048, "Wrong size on FMassSubsystemRequirements");
+DUMPER7_ASSERTS_FMassSubsystemRequirements;
 
 }
 

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_Hellfire_Main.PyWidget_Mission_HellFire_Main
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Mission_HellFire_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                GroupClass;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                GroupClass;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -31,24 +31,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_HellFire_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_HellFire_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_HellFire_Main")
 	}
 	static class UPyWidget_Mission_HellFire_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_HellFire_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_HellFire_Main) == 0x000008, "Wrong alignment on UPyWidget_Mission_HellFire_Main");
-static_assert(sizeof(UPyWidget_Mission_HellFire_Main) == 0x0005C8, "Wrong size on UPyWidget_Mission_HellFire_Main");
-static_assert(offsetof(UPyWidget_Mission_HellFire_Main, GroupClass) == 0x0005C0, "Member 'UPyWidget_Mission_HellFire_Main::GroupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_HellFire_Main;
 
 // PythonClass PyWidget_Mission_Hellfire_Main.PyWidget_Mission_HellFire_Group
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Mission_HellFire_Group final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                ItemClass;                                         // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                ItemClass;                                         // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -57,16 +59,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_HellFire_Group">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_HellFire_Group")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_HellFire_Group")
 	}
 	static class UPyWidget_Mission_HellFire_Group* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_HellFire_Group>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_HellFire_Group) == 0x000008, "Wrong alignment on UPyWidget_Mission_HellFire_Group");
-static_assert(sizeof(UPyWidget_Mission_HellFire_Group) == 0x0005C8, "Wrong size on UPyWidget_Mission_HellFire_Group");
-static_assert(offsetof(UPyWidget_Mission_HellFire_Group, ItemClass) == 0x0005C0, "Member 'UPyWidget_Mission_HellFire_Group::ItemClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_HellFire_Group;
 
 }
 

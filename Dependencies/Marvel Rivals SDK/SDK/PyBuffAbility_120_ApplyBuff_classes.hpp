@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_ApplyBuff.PyBuffAbility_120_ApplyBuff_Base
-// 0x0008 (0x1378 - 0x1370)
+// 0x0008 (0x1390 - 0x1388)
 class UPyBuffAbility_120_ApplyBuff_Base final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         LisenAbilityID;                                    // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ApplyBuffID;                                       // 0x1374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LisenAbilityID;                                    // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ApplyBuffID;                                       // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -31,20 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_ApplyBuff_Base">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_ApplyBuff_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_ApplyBuff_Base")
 	}
 	static class UPyBuffAbility_120_ApplyBuff_Base* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_ApplyBuff_Base>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_ApplyBuff_Base) == 0x000008, "Wrong alignment on UPyBuffAbility_120_ApplyBuff_Base");
-static_assert(sizeof(UPyBuffAbility_120_ApplyBuff_Base) == 0x001378, "Wrong size on UPyBuffAbility_120_ApplyBuff_Base");
-static_assert(offsetof(UPyBuffAbility_120_ApplyBuff_Base, LisenAbilityID) == 0x001370, "Member 'UPyBuffAbility_120_ApplyBuff_Base::LisenAbilityID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_ApplyBuff_Base, ApplyBuffID) == 0x001374, "Member 'UPyBuffAbility_120_ApplyBuff_Base::ApplyBuffID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_ApplyBuff_Base;
 
 // PythonClass PyBuffAbility_120_ApplyBuff.PyBuffAbility_RefreshCooldown
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyBuffAbility_RefreshCooldown final : public UMarvelEffectGameplayAbility
 {
 public:
@@ -53,18 +54,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_RefreshCooldown">();
+		STATIC_CLASS_IMPL("PyBuffAbility_RefreshCooldown")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_RefreshCooldown")
 	}
 	static class UPyBuffAbility_RefreshCooldown* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_RefreshCooldown>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_RefreshCooldown) == 0x000008, "Wrong alignment on UPyBuffAbility_RefreshCooldown");
-static_assert(sizeof(UPyBuffAbility_RefreshCooldown) == 0x001370, "Wrong size on UPyBuffAbility_RefreshCooldown");
+DUMPER7_ASSERTS_UPyBuffAbility_RefreshCooldown;
 
 // PythonClass PyBuffAbility_120_ApplyBuff.PyBuffAbility_IncreasePrimaryAbilityAttackSpeed
-// 0x0000 (0x1410 - 0x1410)
+// 0x0000 (0x1428 - 0x1428)
 class UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed final : public UMarvelTimelineAccelerateAbility
 {
 public:
@@ -73,15 +77,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_IncreasePrimaryAbilityAttackSpeed">();
+		STATIC_CLASS_IMPL("PyBuffAbility_IncreasePrimaryAbilityAttackSpeed")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_IncreasePrimaryAbilityAttackSpeed")
 	}
 	static class UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed) == 0x000008, "Wrong alignment on UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed");
-static_assert(sizeof(UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed) == 0x001410, "Wrong size on UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed");
+DUMPER7_ASSERTS_UPyBuffAbility_IncreasePrimaryAbilityAttackSpeed;
 
 }
 

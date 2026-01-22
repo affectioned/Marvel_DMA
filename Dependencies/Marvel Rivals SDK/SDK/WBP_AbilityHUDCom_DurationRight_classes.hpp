@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_AbilityHUDCom_DurationRight.WBP_AbilityHUDCom_DurationRight_C
-// 0x0038 (0x1C58 - 0x1C20)
+// 0x0038 (0x1D00 - 0x1CC8)
 class UWBP_AbilityHUDCom_DurationRight_C final : public UWidget_AbilityDuration
 {
 public:
-	class UWidgetAnimation*                       Anim_Flash_Once;                                   // 0x1C20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Flash_Loop;                                   // 0x1C28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_Root;                                       // 0x1C30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelHorizontalBox*                   HBox_RemainSecond;                                 // 0x1C38(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame;                                         // 0x1C40(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_ProgBg;                                        // 0x1C48(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Mat_Prog;                                          // 0x1C50(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Flash_Once;                                   // 0x1CC8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Flash_Loop;                                   // 0x1CD0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Root;                                       // 0x1CD8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelHorizontalBox*                   HBox_RemainSecond;                                 // 0x1CE0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame;                                         // 0x1CE8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_ProgBg;                                        // 0x1CF0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Mat_Prog;                                          // 0x1CF8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_AbilityHUDCom_DurationRight_C">();
+		BP_STATIC_CLASS_IMPL("WBP_AbilityHUDCom_DurationRight_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_AbilityHUDCom_DurationRight_C")
 	}
 	static class UWBP_AbilityHUDCom_DurationRight_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_AbilityHUDCom_DurationRight_C>();
 	}
 };
-static_assert(alignof(UWBP_AbilityHUDCom_DurationRight_C) == 0x000008, "Wrong alignment on UWBP_AbilityHUDCom_DurationRight_C");
-static_assert(sizeof(UWBP_AbilityHUDCom_DurationRight_C) == 0x001C58, "Wrong size on UWBP_AbilityHUDCom_DurationRight_C");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Anim_Flash_Once) == 0x001C20, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Anim_Flash_Once' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Anim_Flash_Loop) == 0x001C28, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Anim_Flash_Loop' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Canvas_Root) == 0x001C30, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Canvas_Root' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, HBox_RemainSecond) == 0x001C38, "Member 'UWBP_AbilityHUDCom_DurationRight_C::HBox_RemainSecond' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Img_Frame) == 0x001C40, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Img_Frame' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Img_ProgBg) == 0x001C48, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Img_ProgBg' has a wrong offset!");
-static_assert(offsetof(UWBP_AbilityHUDCom_DurationRight_C, Mat_Prog) == 0x001C50, "Member 'UWBP_AbilityHUDCom_DurationRight_C::Mat_Prog' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_AbilityHUDCom_DurationRight_C;
 
 }
 

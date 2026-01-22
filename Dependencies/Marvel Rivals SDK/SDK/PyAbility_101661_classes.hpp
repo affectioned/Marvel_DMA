@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101661.PyAbility_101661
-// 0x0000 (0x2BB8 - 0x2BB8)
+// 0x0000 (0x2C10 - 0x2C10)
 class UPyAbility_101661 : public UAbility_101661
 {
 public:
@@ -33,18 +33,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101661">();
+		STATIC_CLASS_IMPL("PyAbility_101661")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101661")
 	}
 	static class UPyAbility_101661* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101661>();
 	}
 };
-static_assert(alignof(UPyAbility_101661) == 0x000008, "Wrong alignment on UPyAbility_101661");
-static_assert(sizeof(UPyAbility_101661) == 0x002BB8, "Wrong size on UPyAbility_101661");
+DUMPER7_ASSERTS_UPyAbility_101661;
 
 // PythonClass PyAbility_101661.PyUIController_101661
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_101661 final : public UUIC_Ability
 {
 public:
@@ -55,15 +58,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101661">();
+		STATIC_CLASS_IMPL("PyUIController_101661")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101661")
 	}
 	static class UPyUIController_101661* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101661>();
 	}
 };
-static_assert(alignof(UPyUIController_101661) == 0x000008, "Wrong alignment on UPyUIController_101661");
-static_assert(sizeof(UPyUIController_101661) == 0x000F10, "Wrong size on UPyUIController_101661");
+DUMPER7_ASSERTS_UPyUIController_101661;
 
 }
 

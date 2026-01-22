@@ -18,11 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_GameMemberPanel.PyWidget_GameMemberPanel
-// 0x0010 (0x0608 - 0x05F8)
+// 0x0020 (0x0620 - 0x0600)
 class UPyWidget_GameMemberPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	TArray<struct FGuideTipsStyle>                MenuTipsStyles;                                    // 0x05F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MenuTipsStyles;                                    // 0x0600(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class UMemberUnitItemData*>            EnemyItems;                                        // 0x0610(0x0010)(NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GameMemberPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GameMemberPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GameMemberPanel")
 	}
 	static class UPyWidget_GameMemberPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GameMemberPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GameMemberPanel) == 0x000008, "Wrong alignment on UPyWidget_GameMemberPanel");
-static_assert(sizeof(UPyWidget_GameMemberPanel) == 0x000608, "Wrong size on UPyWidget_GameMemberPanel");
-static_assert(offsetof(UPyWidget_GameMemberPanel, MenuTipsStyles) == 0x0005F8, "Member 'UPyWidget_GameMemberPanel::MenuTipsStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GameMemberPanel;
 
 }
 

@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "Marvel_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "python_enums_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyShowAnimInstanceBase.PyShowAnimInstanceBase
-// 0x0140 (0x0590 - 0x0450)
+// 0x0150 (0x05A0 - 0x0450)
 class UPyShowAnimInstanceBase : public UMarvelShowAnimInstance
 {
 public:
@@ -37,102 +37,61 @@ public:
 	class UAnimMontage*                           EmoteMT;                                           // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          Emote;                                             // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAnimSequence*                          EmoteIdle;                                         // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequence*                          NowEmoteIdle;                                      // 0x0508(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequence*                          MVP;                                               // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequence*                          Like;                                              // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPersonality;                                     // 0x0520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsToggleHalf;                                      // 0x0521(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsRetoggleHalf;                                    // 0x0522(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsResetHalfAnim;                                   // 0x0523(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsJumpStandIdle;                                   // 0x0524(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsJumpHalfIdle;                                    // 0x0525(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsTurn;                                            // 0x0526(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPositiveTrun;                                    // 0x0527(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsHeroCommercia;                                   // 0x0528(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEmote;                                           // 0x0529(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsMVP;                                             // 0x052A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLike;                                            // 0x052B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsHeroGallery;                                     // 0x052C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlayCardPose;                                    // 0x052D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlayHoverStand;                                  // 0x052E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          TurnCameraGaze;                                    // 0x052F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseIdleAO1D;                                       // 0x0530(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_531[0x7];                                      // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CameraLocation;                                    // 0x0538(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAimOffsetBlendSpace1D*                 Stand_Idle_AO_1D;                                  // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAimOffsetBlendSpace1D*                 Half_Idle_AO_1D;                                   // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OpenGazeBlendTime;                                 // 0x0560(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CloseGazeBlendTime;                                // 0x0564(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          SkipGazeInterp;                                    // 0x0568(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_569[0x7];                                      // 0x0569(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimSequence*                          VoiceAnim;                                         // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlayVoiceAnim;                                   // 0x0578(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_579[0x3];                                      // 0x0579(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HoverToggleStand__BlendTime;                       // 0x057C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StandPersonality_BlendTime;                        // 0x0580(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HalfPersonality_BlendTime;                         // 0x0584(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ToggleStand_BlendTime;                             // 0x0588(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ToggleHalf_BlendTime;                              // 0x058C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimMontage*                           SkinCustomizationMT;                               // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          SkinCustomization;                                 // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          NowEmoteIdle;                                      // 0x0518(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          MVP;                                               // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequence*                          Like;                                              // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPersonality;                                     // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsToggleHalf;                                      // 0x0531(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsRetoggleHalf;                                    // 0x0532(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsResetHalfAnim;                                   // 0x0533(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsJumpStandIdle;                                   // 0x0534(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsJumpHalfIdle;                                    // 0x0535(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsTurn;                                            // 0x0536(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPositiveTrun;                                    // 0x0537(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsHeroCommercia;                                   // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEmote;                                           // 0x0539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsSkinCustomization;                               // 0x053A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsMVP;                                             // 0x053B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLike;                                            // 0x053C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsHeroGallery;                                     // 0x053D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPlayCardPose;                                    // 0x053E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPlayHoverStand;                                  // 0x053F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          TurnCameraGaze;                                    // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseIdleAO1D;                                       // 0x0541(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_542[0x6];                                      // 0x0542(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CameraLocation;                                    // 0x0548(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAimOffsetBlendSpace1D*                 Stand_Idle_AO_1D;                                  // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAimOffsetBlendSpace1D*                 Half_Idle_AO_1D;                                   // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OpenGazeBlendTime;                                 // 0x0570(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CloseGazeBlendTime;                                // 0x0574(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          SkipGazeInterp;                                    // 0x0578(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_579[0x7];                                      // 0x0579(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimSequence*                          VoiceAnim;                                         // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsPlayVoiceAnim;                                   // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HoverToggleStand__BlendTime;                       // 0x058C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StandPersonality_BlendTime;                        // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HalfPersonality_BlendTime;                         // 0x0594(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ToggleStand_BlendTime;                             // 0x0598(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ToggleHalf_BlendTime;                              // 0x059C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyShowAnimInstanceBase">();
+		STATIC_CLASS_IMPL("PyShowAnimInstanceBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyShowAnimInstanceBase")
 	}
 	static class UPyShowAnimInstanceBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyShowAnimInstanceBase>();
 	}
 };
-static_assert(alignof(UPyShowAnimInstanceBase) == 0x000010, "Wrong alignment on UPyShowAnimInstanceBase");
-static_assert(sizeof(UPyShowAnimInstanceBase) == 0x000590, "Wrong size on UPyShowAnimInstanceBase");
-static_assert(offsetof(UPyShowAnimInstanceBase, Stand_Idle) == 0x000450, "Member 'UPyShowAnimInstanceBase::Stand_Idle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Stand_Personality) == 0x000458, "Member 'UPyShowAnimInstanceBase::Stand_Personality' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Toggle_Half) == 0x000460, "Member 'UPyShowAnimInstanceBase::Toggle_Half' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Toggle_Stand) == 0x000468, "Member 'UPyShowAnimInstanceBase::Toggle_Stand' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Half_Idle) == 0x000470, "Member 'UPyShowAnimInstanceBase::Half_Idle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Half_Personality) == 0x000478, "Member 'UPyShowAnimInstanceBase::Half_Personality' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Turn) == 0x000480, "Member 'UPyShowAnimInstanceBase::Turn' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, TurnList) == 0x000488, "Member 'UPyShowAnimInstanceBase::TurnList' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, HG_CardPose) == 0x0004D8, "Member 'UPyShowAnimInstanceBase::HG_CardPose' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, HG_HoverIdle) == 0x0004E0, "Member 'UPyShowAnimInstanceBase::HG_HoverIdle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, HG_HoverToggleStand) == 0x0004E8, "Member 'UPyShowAnimInstanceBase::HG_HoverToggleStand' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, EmoteMT) == 0x0004F0, "Member 'UPyShowAnimInstanceBase::EmoteMT' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Emote) == 0x0004F8, "Member 'UPyShowAnimInstanceBase::Emote' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, EmoteIdle) == 0x000500, "Member 'UPyShowAnimInstanceBase::EmoteIdle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, NowEmoteIdle) == 0x000508, "Member 'UPyShowAnimInstanceBase::NowEmoteIdle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, MVP) == 0x000510, "Member 'UPyShowAnimInstanceBase::MVP' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Like) == 0x000518, "Member 'UPyShowAnimInstanceBase::Like' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsPersonality) == 0x000520, "Member 'UPyShowAnimInstanceBase::IsPersonality' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsToggleHalf) == 0x000521, "Member 'UPyShowAnimInstanceBase::IsToggleHalf' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsRetoggleHalf) == 0x000522, "Member 'UPyShowAnimInstanceBase::IsRetoggleHalf' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsResetHalfAnim) == 0x000523, "Member 'UPyShowAnimInstanceBase::IsResetHalfAnim' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsJumpStandIdle) == 0x000524, "Member 'UPyShowAnimInstanceBase::IsJumpStandIdle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsJumpHalfIdle) == 0x000525, "Member 'UPyShowAnimInstanceBase::IsJumpHalfIdle' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsTurn) == 0x000526, "Member 'UPyShowAnimInstanceBase::IsTurn' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsPositiveTrun) == 0x000527, "Member 'UPyShowAnimInstanceBase::IsPositiveTrun' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsHeroCommercia) == 0x000528, "Member 'UPyShowAnimInstanceBase::IsHeroCommercia' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsEmote) == 0x000529, "Member 'UPyShowAnimInstanceBase::IsEmote' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsMVP) == 0x00052A, "Member 'UPyShowAnimInstanceBase::IsMVP' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsLike) == 0x00052B, "Member 'UPyShowAnimInstanceBase::IsLike' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsHeroGallery) == 0x00052C, "Member 'UPyShowAnimInstanceBase::IsHeroGallery' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsPlayCardPose) == 0x00052D, "Member 'UPyShowAnimInstanceBase::IsPlayCardPose' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsPlayHoverStand) == 0x00052E, "Member 'UPyShowAnimInstanceBase::IsPlayHoverStand' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, TurnCameraGaze) == 0x00052F, "Member 'UPyShowAnimInstanceBase::TurnCameraGaze' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, UseIdleAO1D) == 0x000530, "Member 'UPyShowAnimInstanceBase::UseIdleAO1D' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, CameraLocation) == 0x000538, "Member 'UPyShowAnimInstanceBase::CameraLocation' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Stand_Idle_AO_1D) == 0x000550, "Member 'UPyShowAnimInstanceBase::Stand_Idle_AO_1D' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, Half_Idle_AO_1D) == 0x000558, "Member 'UPyShowAnimInstanceBase::Half_Idle_AO_1D' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, OpenGazeBlendTime) == 0x000560, "Member 'UPyShowAnimInstanceBase::OpenGazeBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, CloseGazeBlendTime) == 0x000564, "Member 'UPyShowAnimInstanceBase::CloseGazeBlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, SkipGazeInterp) == 0x000568, "Member 'UPyShowAnimInstanceBase::SkipGazeInterp' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, VoiceAnim) == 0x000570, "Member 'UPyShowAnimInstanceBase::VoiceAnim' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, IsPlayVoiceAnim) == 0x000578, "Member 'UPyShowAnimInstanceBase::IsPlayVoiceAnim' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, HoverToggleStand__BlendTime) == 0x00057C, "Member 'UPyShowAnimInstanceBase::HoverToggleStand__BlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, StandPersonality_BlendTime) == 0x000580, "Member 'UPyShowAnimInstanceBase::StandPersonality_BlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, HalfPersonality_BlendTime) == 0x000584, "Member 'UPyShowAnimInstanceBase::HalfPersonality_BlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, ToggleStand_BlendTime) == 0x000588, "Member 'UPyShowAnimInstanceBase::ToggleStand_BlendTime' has a wrong offset!");
-static_assert(offsetof(UPyShowAnimInstanceBase, ToggleHalf_BlendTime) == 0x00058C, "Member 'UPyShowAnimInstanceBase::ToggleHalf_BlendTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyShowAnimInstanceBase;
 
 }
 

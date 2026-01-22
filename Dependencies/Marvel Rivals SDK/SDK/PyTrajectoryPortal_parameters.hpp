@@ -24,9 +24,7 @@ struct PyTrajectoryPortal_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrajectoryPortal_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyTrajectoryPortal_ReceiveEndPlay");
-static_assert(sizeof(PyTrajectoryPortal_ReceiveEndPlay) == 0x000001, "Wrong size on PyTrajectoryPortal_ReceiveEndPlay");
-static_assert(offsetof(PyTrajectoryPortal_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyTrajectoryPortal_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrajectoryPortal_ReceiveEndPlay;
 
 // PythonFunction PyTrajectoryPortal.PyTrajectoryPortal.OnPlayerEnter
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +33,7 @@ struct PyTrajectoryPortal_OnPlayerEnter final
 public:
 	class AActor*                                 EnterPlayer;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrajectoryPortal_OnPlayerEnter) == 0x000008, "Wrong alignment on PyTrajectoryPortal_OnPlayerEnter");
-static_assert(sizeof(PyTrajectoryPortal_OnPlayerEnter) == 0x000008, "Wrong size on PyTrajectoryPortal_OnPlayerEnter");
-static_assert(offsetof(PyTrajectoryPortal_OnPlayerEnter, EnterPlayer) == 0x000000, "Member 'PyTrajectoryPortal_OnPlayerEnter::EnterPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrajectoryPortal_OnPlayerEnter;
 
 // PythonFunction PyTrajectoryPortal.PyTrajectoryPortal.OnPlayerExit
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +42,7 @@ struct PyTrajectoryPortal_OnPlayerExit final
 public:
 	class AActor*                                 ExitPlayer;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTrajectoryPortal_OnPlayerExit) == 0x000008, "Wrong alignment on PyTrajectoryPortal_OnPlayerExit");
-static_assert(sizeof(PyTrajectoryPortal_OnPlayerExit) == 0x000008, "Wrong size on PyTrajectoryPortal_OnPlayerExit");
-static_assert(offsetof(PyTrajectoryPortal_OnPlayerExit, ExitPlayer) == 0x000000, "Member 'PyTrajectoryPortal_OnPlayerExit::ExitPlayer' has a wrong offset!");
+DUMPER7_ASSERTS_PyTrajectoryPortal_OnPlayerExit;
 
 // PythonFunction PyTrajectoryPortal.PyCue_Level_TrajectoryPortal.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +51,7 @@ struct PyCue_Level_TrajectoryPortal_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_TrajectoryPortal_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Level_TrajectoryPortal_ReceiveTick");
-static_assert(sizeof(PyCue_Level_TrajectoryPortal_ReceiveTick) == 0x000004, "Wrong size on PyCue_Level_TrajectoryPortal_ReceiveTick");
-static_assert(offsetof(PyCue_Level_TrajectoryPortal_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Level_TrajectoryPortal_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_TrajectoryPortal_ReceiveTick;
 
 // PythonFunction PyTrajectoryPortal.PyCue_Level_TrajectoryPortal.WhileActive
 // 0x01E0 (0x01E0 - 0x0000)
@@ -70,11 +62,7 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x01D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_TrajectoryPortal_WhileActive) == 0x000008, "Wrong alignment on PyCue_Level_TrajectoryPortal_WhileActive");
-static_assert(sizeof(PyCue_Level_TrajectoryPortal_WhileActive) == 0x0001E0, "Wrong size on PyCue_Level_TrajectoryPortal_WhileActive");
-static_assert(offsetof(PyCue_Level_TrajectoryPortal_WhileActive, MyTarget) == 0x000000, "Member 'PyCue_Level_TrajectoryPortal_WhileActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_TrajectoryPortal_WhileActive, Parameters) == 0x000008, "Member 'PyCue_Level_TrajectoryPortal_WhileActive::Parameters' has a wrong offset!");
-static_assert(offsetof(PyCue_Level_TrajectoryPortal_WhileActive, ReturnValue) == 0x0001D8, "Member 'PyCue_Level_TrajectoryPortal_WhileActive::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_TrajectoryPortal_WhileActive;
 
 // PythonFunction PyTrajectoryPortal.PyCue_Level_TrajectoryPortal.OnPortalStateUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -83,9 +71,7 @@ struct PyCue_Level_TrajectoryPortal_OnPortalStateUpdate final
 public:
 	int32                                         NewState;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Level_TrajectoryPortal_OnPortalStateUpdate) == 0x000004, "Wrong alignment on PyCue_Level_TrajectoryPortal_OnPortalStateUpdate");
-static_assert(sizeof(PyCue_Level_TrajectoryPortal_OnPortalStateUpdate) == 0x000004, "Wrong size on PyCue_Level_TrajectoryPortal_OnPortalStateUpdate");
-static_assert(offsetof(PyCue_Level_TrajectoryPortal_OnPortalStateUpdate, NewState) == 0x000000, "Member 'PyCue_Level_TrajectoryPortal_OnPortalStateUpdate::NewState' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Level_TrajectoryPortal_OnPortalStateUpdate;
 
 }
 

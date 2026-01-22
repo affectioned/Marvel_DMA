@@ -31,17 +31,7 @@ public:
 	int32                                         RecordingLengthSeconds;                            // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0xC];                                       // 0x0044(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FVideoRecordingXParameters) == 0x000008, "Wrong alignment on FVideoRecordingXParameters");
-static_assert(sizeof(FVideoRecordingXParameters) == 0x000050, "Wrong size on FVideoRecordingXParameters");
-static_assert(offsetof(FVideoRecordingXParameters, SaveFolder) == 0x000000, "Member 'FVideoRecordingXParameters::SaveFolder' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, FileName) == 0x000010, "Member 'FVideoRecordingXParameters::FileName' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, ResX) == 0x000020, "Member 'FVideoRecordingXParameters::ResX' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, ResY) == 0x000024, "Member 'FVideoRecordingXParameters::ResY' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, VideoFPS) == 0x000028, "Member 'FVideoRecordingXParameters::VideoFPS' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, VideoCodecBitRate) == 0x00002C, "Member 'FVideoRecordingXParameters::VideoCodecBitRate' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, AudioCodecBitRate) == 0x000030, "Member 'FVideoRecordingXParameters::AudioCodecBitRate' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, bEnableAsyncEncoding) == 0x000034, "Member 'FVideoRecordingXParameters::bEnableAsyncEncoding' has a wrong offset!");
-static_assert(offsetof(FVideoRecordingXParameters, RecordingLengthSeconds) == 0x000040, "Member 'FVideoRecordingXParameters::RecordingLengthSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_FVideoRecordingXParameters;
 
 }
 

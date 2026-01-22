@@ -28,17 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelController_SelectHero_Hydra">();
+		STATIC_CLASS_IMPL("PyLevelController_SelectHero_Hydra")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelController_SelectHero_Hydra")
 	}
 	static class APyLevelController_SelectHero_Hydra* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLevelController_SelectHero_Hydra>();
 	}
 };
-static_assert(alignof(APyLevelController_SelectHero_Hydra) == 0x000010, "Wrong alignment on APyLevelController_SelectHero_Hydra");
-static_assert(sizeof(APyLevelController_SelectHero_Hydra) == 0x000820, "Wrong size on APyLevelController_SelectHero_Hydra");
-static_assert(offsetof(APyLevelController_SelectHero_Hydra, bOverride_CustomNearClippingPlane) == 0x00080C, "Member 'APyLevelController_SelectHero_Hydra::bOverride_CustomNearClippingPlane' has a wrong offset!");
-static_assert(offsetof(APyLevelController_SelectHero_Hydra, CustomNearClippingPlane) == 0x000810, "Member 'APyLevelController_SelectHero_Hydra::CustomNearClippingPlane' has a wrong offset!");
+DUMPER7_ASSERTS_APyLevelController_SelectHero_Hydra;
 
 }
 

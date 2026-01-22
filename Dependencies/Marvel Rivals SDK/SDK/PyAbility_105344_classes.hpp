@@ -10,72 +10,59 @@
 
 #include "Basic.hpp"
 
+#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyAbility_105344.PyConfig_105344
-// 0x3A78 (0x3B10 - 0x0098)
+// 0x4438 (0x44D0 - 0x0098)
 class UPyConfig_105344 final : public UMarvelAbilityConfig
 {
 public:
 	bool                                          EnableGroundCheck;                                 // 0x0098(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ThrowCheck_SelfHeightAboveGround;                  // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             ThrowCheck_Param;                                  // 0x00A0(0x1660)(Edit, NativeAccessSpecifierPublic)
-	struct FMarvelAbilityTraceContext             ThrowCheckBox_Param;                               // 0x1700(0x1660)(Edit, NativeAccessSpecifierPublic)
-	TArray<EObjectTypeQuery>                      TraceObjectType;                                   // 0x2D60(0x0010)(Edit, NativeAccessSpecifierPublic)
-	struct FVector                                ThrowCheck_OffsetPosition;                         // 0x2D70(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ThrowOutBuffID;                                    // 0x2D88(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ThrowOutBuff2ID;                                   // 0x2D8C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ThrowOutBuff3ID;                                   // 0x2D90(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D94[0x4];                                     // 0x2D94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x2D98(0x0BC8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	float                                         Damage;                                            // 0x3960(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3964[0x4];                                     // 0x3964(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  EndAbilityTag;                                     // 0x3968(0x0068)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  BindAbilityTag;                                    // 0x39D0(0x0068)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  EndThrowBuff1Tag;                                  // 0x3A38(0x0068)(Edit, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  EndThrowBuff2Tag;                                  // 0x3AA0(0x0068)(Edit, NativeAccessSpecifierPublic)
-	class UCurveVector*                           CurveThrowAnchor;                                  // 0x3B08(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             ThrowCheck_Param;                                  // 0x00A0(0x19B0)(Edit, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             ThrowCheckBox_Param;                               // 0x1A50(0x19B0)(Edit, NativeAccessSpecifierPublic)
+	TArray<EObjectTypeQuery>                      TraceObjectType;                                   // 0x3400(0x0010)(Edit, NativeAccessSpecifierPublic)
+	struct FVector                                ThrowCheck_OffsetPosition;                         // 0x3410(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ThrowOutBuffID;                                    // 0x3428(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ThrowOutBuff2ID;                                   // 0x342C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ThrowOutBuff3ID;                                   // 0x3430(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3434[0x4];                                     // 0x3434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x3438(0x0EE8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	float                                         Damage;                                            // 0x4320(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4324[0x4];                                     // 0x4324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  EndAbilityTag;                                     // 0x4328(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  BindAbilityTag;                                    // 0x4390(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  EndThrowBuff1Tag;                                  // 0x43F8(0x0068)(Edit, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  EndThrowBuff2Tag;                                  // 0x4460(0x0068)(Edit, NativeAccessSpecifierPublic)
+	class UCurveVector*                           CurveThrowAnchor;                                  // 0x44C8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_105344">();
+		STATIC_CLASS_IMPL("PyConfig_105344")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_105344")
 	}
 	static class UPyConfig_105344* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_105344>();
 	}
 };
-static_assert(alignof(UPyConfig_105344) == 0x000010, "Wrong alignment on UPyConfig_105344");
-static_assert(sizeof(UPyConfig_105344) == 0x003B10, "Wrong size on UPyConfig_105344");
-static_assert(offsetof(UPyConfig_105344, EnableGroundCheck) == 0x000098, "Member 'UPyConfig_105344::EnableGroundCheck' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowCheck_SelfHeightAboveGround) == 0x00009C, "Member 'UPyConfig_105344::ThrowCheck_SelfHeightAboveGround' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowCheck_Param) == 0x0000A0, "Member 'UPyConfig_105344::ThrowCheck_Param' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowCheckBox_Param) == 0x001700, "Member 'UPyConfig_105344::ThrowCheckBox_Param' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, TraceObjectType) == 0x002D60, "Member 'UPyConfig_105344::TraceObjectType' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowCheck_OffsetPosition) == 0x002D70, "Member 'UPyConfig_105344::ThrowCheck_OffsetPosition' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowOutBuffID) == 0x002D88, "Member 'UPyConfig_105344::ThrowOutBuffID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowOutBuff2ID) == 0x002D8C, "Member 'UPyConfig_105344::ThrowOutBuff2ID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, ThrowOutBuff3ID) == 0x002D90, "Member 'UPyConfig_105344::ThrowOutBuff3ID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, DashInfo) == 0x002D98, "Member 'UPyConfig_105344::DashInfo' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, Damage) == 0x003960, "Member 'UPyConfig_105344::Damage' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, EndAbilityTag) == 0x003968, "Member 'UPyConfig_105344::EndAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, BindAbilityTag) == 0x0039D0, "Member 'UPyConfig_105344::BindAbilityTag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, EndThrowBuff1Tag) == 0x003A38, "Member 'UPyConfig_105344::EndThrowBuff1Tag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, EndThrowBuff2Tag) == 0x003AA0, "Member 'UPyConfig_105344::EndThrowBuff2Tag' has a wrong offset!");
-static_assert(offsetof(UPyConfig_105344, CurveThrowAnchor) == 0x003B08, "Member 'UPyConfig_105344::CurveThrowAnchor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_105344;
 
 // PythonClass PyAbility_105344.PyAbility_105344
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_105344 : public UMarvelGameplayAbility
 {
 public:
@@ -96,24 +83,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_105344">();
+		STATIC_CLASS_IMPL("PyAbility_105344")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_105344")
 	}
 	static class UPyAbility_105344* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_105344>();
 	}
 };
-static_assert(alignof(UPyAbility_105344) == 0x000008, "Wrong alignment on UPyAbility_105344");
-static_assert(sizeof(UPyAbility_105344) == 0x0029F0, "Wrong size on UPyAbility_105344");
+DUMPER7_ASSERTS_UPyAbility_105344;
 
 // PythonClass PyAbility_105344.PyBuffAbility_10534401
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_10534401 : public UMarvelEffectGameplayAbility
 {
 public:
-	float                                         TotalTime;                                         // 0x1370(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCurveFloat*                            AngleCurve;                                        // 0x1378(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TotalTime;                                         // 0x1388(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCurveFloat*                            AngleCurve;                                        // 0x1390(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -123,20 +113,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10534401">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10534401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10534401")
 	}
 	static class UPyBuffAbility_10534401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10534401>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10534401) == 0x000008, "Wrong alignment on UPyBuffAbility_10534401");
-static_assert(sizeof(UPyBuffAbility_10534401) == 0x001380, "Wrong size on UPyBuffAbility_10534401");
-static_assert(offsetof(UPyBuffAbility_10534401, TotalTime) == 0x001370, "Member 'UPyBuffAbility_10534401::TotalTime' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10534401, AngleCurve) == 0x001378, "Member 'UPyBuffAbility_10534401::AngleCurve' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10534401;
 
 // PythonClass PyAbility_105344.PyBuffAbility_10534402
-// 0x0000 (0x1370 - 0x1370)
+// 0x0000 (0x1388 - 0x1388)
 class UPyBuffAbility_10534402 final : public UMarvelEffectGameplayAbility
 {
 public:
@@ -147,19 +138,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10534402">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10534402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10534402")
 	}
 	static class UPyBuffAbility_10534402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10534402>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10534402) == 0x000008, "Wrong alignment on UPyBuffAbility_10534402");
-static_assert(sizeof(UPyBuffAbility_10534402) == 0x001370, "Wrong size on UPyBuffAbility_10534402");
+DUMPER7_ASSERTS_UPyBuffAbility_10534402;
 
 // PythonClass PyAbility_105344.PyCue_Buff_10534402
-// 0x0000 (0x1640 - 0x1640)
-class APyCue_Buff_10534402 : public AMarvelCueNotify_Buff
+// 0x0000 (0x16F0 - 0x16F0)
+class APyCue_Buff_10534402 final : public AMarvelCueNotify_Buff
 {
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -169,23 +163,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10534402">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10534402")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10534402")
 	}
 	static class APyCue_Buff_10534402* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10534402>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10534402) == 0x000010, "Wrong alignment on APyCue_Buff_10534402");
-static_assert(sizeof(APyCue_Buff_10534402) == 0x001640, "Wrong size on APyCue_Buff_10534402");
+DUMPER7_ASSERTS_APyCue_Buff_10534402;
 
 // PythonClass PyAbility_105344.PyCue_Buff_10534401
-// 0x0010 (0x1650 - 0x1640)
-class APyCue_Buff_10534401 : public AMarvelCueNotify_Buff
+// 0x0010 (0x1700 - 0x16F0)
+class APyCue_Buff_10534401 final : public AMarvelCueNotify_Buff
 {
 public:
-	uint8                                         Pad_1638[0x8];                                     // 0x1638(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CatchAudio;                                        // 0x1640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CatchAudio;                                        // 0x16F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -196,16 +193,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10534401">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10534401")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10534401")
 	}
 	static class APyCue_Buff_10534401* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10534401>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10534401) == 0x000010, "Wrong alignment on APyCue_Buff_10534401");
-static_assert(sizeof(APyCue_Buff_10534401) == 0x001650, "Wrong size on APyCue_Buff_10534401");
-static_assert(offsetof(APyCue_Buff_10534401, CatchAudio) == 0x001640, "Member 'APyCue_Buff_10534401::CatchAudio' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10534401;
 
 }
 

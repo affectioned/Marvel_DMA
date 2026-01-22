@@ -17,45 +17,37 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MIssion_Tab_V2.WBP_MIssion_Tab_V2_C
-// 0x0058 (0x0620 - 0x05C8)
+// 0x0058 (0x0628 - 0x05D0)
 class UWBP_MIssion_Tab_V2_C final : public UPyWidget_MissionTab
 {
 public:
-	class UWidgetAnimation*                       Anim_SetSelect;                                    // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Select;                                       // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Hover;                                        // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Normal;                                       // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelButton*                          Btn_Main;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Hover;                                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Icon;                                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Normal;                                        // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Select;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Select_Decorate;                               // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Separation;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_SetSelect;                                    // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Select;                                       // 0x05D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Hover;                                        // 0x05E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Normal;                                       // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelButton*                          Btn_Main;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Hover;                                         // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Icon;                                          // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Normal;                                        // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Select;                                        // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Select_Decorate;                               // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Separation;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_MIssion_Tab_V2_C">();
+		BP_STATIC_CLASS_IMPL("WBP_MIssion_Tab_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_MIssion_Tab_V2_C")
 	}
 	static class UWBP_MIssion_Tab_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_MIssion_Tab_V2_C>();
 	}
 };
-static_assert(alignof(UWBP_MIssion_Tab_V2_C) == 0x000008, "Wrong alignment on UWBP_MIssion_Tab_V2_C");
-static_assert(sizeof(UWBP_MIssion_Tab_V2_C) == 0x000620, "Wrong size on UWBP_MIssion_Tab_V2_C");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Anim_SetSelect) == 0x0005C8, "Member 'UWBP_MIssion_Tab_V2_C::Anim_SetSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Anim_Select) == 0x0005D0, "Member 'UWBP_MIssion_Tab_V2_C::Anim_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Anim_Hover) == 0x0005D8, "Member 'UWBP_MIssion_Tab_V2_C::Anim_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Anim_Normal) == 0x0005E0, "Member 'UWBP_MIssion_Tab_V2_C::Anim_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Btn_Main) == 0x0005E8, "Member 'UWBP_MIssion_Tab_V2_C::Btn_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Hover) == 0x0005F0, "Member 'UWBP_MIssion_Tab_V2_C::Img_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Icon) == 0x0005F8, "Member 'UWBP_MIssion_Tab_V2_C::Img_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Normal) == 0x000600, "Member 'UWBP_MIssion_Tab_V2_C::Img_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Select) == 0x000608, "Member 'UWBP_MIssion_Tab_V2_C::Img_Select' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Select_Decorate) == 0x000610, "Member 'UWBP_MIssion_Tab_V2_C::Img_Select_Decorate' has a wrong offset!");
-static_assert(offsetof(UWBP_MIssion_Tab_V2_C, Img_Separation) == 0x000618, "Member 'UWBP_MIssion_Tab_V2_C::Img_Separation' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_MIssion_Tab_V2_C;
 
 }
 

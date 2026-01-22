@@ -23,9 +23,7 @@ struct PyAIPerformanceTestSpawnActor_GetSpawnedAI final
 public:
 	class AMarvelAIController*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_GetSpawnedAI) == 0x000008, "Wrong alignment on PyAIPerformanceTestSpawnActor_GetSpawnedAI");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_GetSpawnedAI) == 0x000008, "Wrong size on PyAIPerformanceTestSpawnActor_GetSpawnedAI");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_GetSpawnedAI, ReturnValue) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_GetSpawnedAI::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_GetSpawnedAI;
 
 // PythonFunction PyAIPerformanceTestSpawnActor.PyAIPerformanceTestSpawnActor.GetSpawnedAIPlayerState
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState final
 public:
 	class AMarvelPlayerState*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState) == 0x000008, "Wrong alignment on PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState) == 0x000008, "Wrong size on PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState, ReturnValue) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_GetSpawnedAIPlayerState;
 
 // PythonFunction PyAIPerformanceTestSpawnActor.PyAIPerformanceTestSpawnActor.SetAIEnemyTarget
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +41,7 @@ struct PyAIPerformanceTestSpawnActor_SetAIEnemyTarget final
 public:
 	int32                                         EnemyHeroID_0;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_SetAIEnemyTarget) == 0x000004, "Wrong alignment on PyAIPerformanceTestSpawnActor_SetAIEnemyTarget");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_SetAIEnemyTarget) == 0x000004, "Wrong size on PyAIPerformanceTestSpawnActor_SetAIEnemyTarget");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_SetAIEnemyTarget, EnemyHeroID_0) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_SetAIEnemyTarget::EnemyHeroID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_SetAIEnemyTarget;
 
 // PythonFunction PyAIPerformanceTestSpawnActor.PyAIPerformanceTestSpawnActor.SetAIAllyTarget
 // 0x0004 (0x0004 - 0x0000)
@@ -56,9 +50,7 @@ struct PyAIPerformanceTestSpawnActor_SetAIAllyTarget final
 public:
 	int32                                         AllyHeroID_0;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_SetAIAllyTarget) == 0x000004, "Wrong alignment on PyAIPerformanceTestSpawnActor_SetAIAllyTarget");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_SetAIAllyTarget) == 0x000004, "Wrong size on PyAIPerformanceTestSpawnActor_SetAIAllyTarget");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_SetAIAllyTarget, AllyHeroID_0) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_SetAIAllyTarget::AllyHeroID_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_SetAIAllyTarget;
 
 // PythonFunction PyAIPerformanceTestSpawnActor.PyAIPerformanceTestSpawnActor.SetAIUsageTag
 // 0x0068 (0x0068 - 0x0000)
@@ -67,9 +59,7 @@ struct PyAIPerformanceTestSpawnActor_SetAIUsageTag final
 public:
 	struct FGameplayTagContainer                  Tags_0;                                            // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_SetAIUsageTag) == 0x000008, "Wrong alignment on PyAIPerformanceTestSpawnActor_SetAIUsageTag");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_SetAIUsageTag) == 0x000068, "Wrong size on PyAIPerformanceTestSpawnActor_SetAIUsageTag");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_SetAIUsageTag, Tags_0) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_SetAIUsageTag::Tags_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_SetAIUsageTag;
 
 // PythonFunction PyAIPerformanceTestSpawnActor.PyAIPerformanceTestSpawnActor.SetBehaviorTree
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +68,7 @@ struct PyAIPerformanceTestSpawnActor_SetBehaviorTree final
 public:
 	class UBehaviorTree*                          BTree_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAIPerformanceTestSpawnActor_SetBehaviorTree) == 0x000008, "Wrong alignment on PyAIPerformanceTestSpawnActor_SetBehaviorTree");
-static_assert(sizeof(PyAIPerformanceTestSpawnActor_SetBehaviorTree) == 0x000008, "Wrong size on PyAIPerformanceTestSpawnActor_SetBehaviorTree");
-static_assert(offsetof(PyAIPerformanceTestSpawnActor_SetBehaviorTree, BTree_0) == 0x000000, "Member 'PyAIPerformanceTestSpawnActor_SetBehaviorTree::BTree_0' has a wrong offset!");
+DUMPER7_ASSERTS_PyAIPerformanceTestSpawnActor_SetBehaviorTree;
 
 }
 

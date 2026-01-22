@@ -23,15 +23,18 @@ class UAISelectTarget_HulkJump_C final : public UPyAISelectTarget_HulkJump
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_HulkJump_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_HulkJump_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_HulkJump_C")
 	}
 	static class UAISelectTarget_HulkJump_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_HulkJump_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_HulkJump_C) == 0x000008, "Wrong alignment on UAISelectTarget_HulkJump_C");
-static_assert(sizeof(UAISelectTarget_HulkJump_C) == 0x000078, "Wrong size on UAISelectTarget_HulkJump_C");
+DUMPER7_ASSERTS_UAISelectTarget_HulkJump_C;
 
 }
 

@@ -23,15 +23,18 @@ class UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C final : pu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C")
 	}
 	static class UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C) == 0x000008, "Wrong alignment on UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C");
-static_assert(sizeof(UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C) == 0x000040, "Wrong size on UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C");
+DUMPER7_ASSERTS_UAIAbilityActivivation_ChangeButtonIfNoFriendshipBuff_Captain_C;
 
 }
 

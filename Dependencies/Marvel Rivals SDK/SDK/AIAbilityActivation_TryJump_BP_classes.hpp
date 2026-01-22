@@ -23,15 +23,18 @@ class UAIAbilityActivation_TryJump_BP_C final : public UPyAIAbilityActivation_Tr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivation_TryJump_BP_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivation_TryJump_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivation_TryJump_BP_C")
 	}
 	static class UAIAbilityActivation_TryJump_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivation_TryJump_BP_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivation_TryJump_BP_C) == 0x000008, "Wrong alignment on UAIAbilityActivation_TryJump_BP_C");
-static_assert(sizeof(UAIAbilityActivation_TryJump_BP_C) == 0x000040, "Wrong size on UAIAbilityActivation_TryJump_BP_C");
+DUMPER7_ASSERTS_UAIAbilityActivation_TryJump_BP_C;
 
 }
 

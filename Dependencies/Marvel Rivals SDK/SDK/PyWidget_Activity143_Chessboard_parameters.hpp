@@ -21,9 +21,7 @@ struct PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete final
 public:
 	class UTrackEntry*                            entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete) == 0x000008, "Wrong alignment on PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete");
-static_assert(sizeof(PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete) == 0x000008, "Wrong size on PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete");
-static_assert(offsetof(PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete, entry) == 0x000000, "Member 'PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete::entry' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity143_Chessboard_Npc_OnSpineAnimationComplete;
 
 // PythonFunction PyWidget_Activity143_Chessboard.PyWidget_Activity143_Chessboard.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Activity143_Chessboard_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity143_Chessboard_PreConstruct) == 0x000001, "Wrong alignment on PyWidget_Activity143_Chessboard_PreConstruct");
-static_assert(sizeof(PyWidget_Activity143_Chessboard_PreConstruct) == 0x000001, "Wrong size on PyWidget_Activity143_Chessboard_PreConstruct");
-static_assert(offsetof(PyWidget_Activity143_Chessboard_PreConstruct, IsDesignTime) == 0x000000, "Member 'PyWidget_Activity143_Chessboard_PreConstruct::IsDesignTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity143_Chessboard_PreConstruct;
 
 // PythonFunction PyWidget_Activity143_Chessboard.PyWidget_Activity143_Chessboard.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyWidget_Activity143_Chessboard_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity143_Chessboard_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Activity143_Chessboard_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Activity143_Chessboard_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Activity143_Chessboard_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Activity143_Chessboard_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Activity143_Chessboard_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity143_Chessboard_OnAnimationFinished;
 
 // PythonFunction PyWidget_Activity143_Chessboard.PyWidget_Activity143_Chessboard.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +48,7 @@ struct PyWidget_Activity143_Chessboard_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Activity143_Chessboard_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Activity143_Chessboard_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Activity143_Chessboard_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Activity143_Chessboard_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Activity143_Chessboard_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Activity143_Chessboard_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Activity143_Chessboard_MarvelSetVisible;
 
 }
 

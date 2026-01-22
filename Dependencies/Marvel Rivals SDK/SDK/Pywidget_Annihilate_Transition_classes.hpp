@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass Pywidget_Annihilate_Transition.PyWidget_Annihilate_Transition
-// 0x0000 (0x0750 - 0x0750)
+// 0x0000 (0x0758 - 0x0758)
 class UPyWidget_Annihilate_Transition final : public UPyWidget_Common_RankTransition
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Annihilate_Transition">();
+		STATIC_CLASS_IMPL("PyWidget_Annihilate_Transition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Annihilate_Transition")
 	}
 	static class UPyWidget_Annihilate_Transition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Annihilate_Transition>();
 	}
 };
-static_assert(alignof(UPyWidget_Annihilate_Transition) == 0x000008, "Wrong alignment on UPyWidget_Annihilate_Transition");
-static_assert(sizeof(UPyWidget_Annihilate_Transition) == 0x000750, "Wrong size on UPyWidget_Annihilate_Transition");
+DUMPER7_ASSERTS_UPyWidget_Annihilate_Transition;
 
 }
 

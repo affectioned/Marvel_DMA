@@ -21,9 +21,7 @@ struct PyWidget_Nameplate_OnCascadingVisibleChanged final
 public:
 	bool                                          visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Nameplate_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_Nameplate_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_Nameplate_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_Nameplate_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_Nameplate_OnCascadingVisibleChanged, visible) == 0x000000, "Member 'PyWidget_Nameplate_OnCascadingVisibleChanged::visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Nameplate_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_Nameplate.PyWidget_Nameplate.MarvelSetVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Nameplate_MarvelSetVisible final
 public:
 	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Nameplate_MarvelSetVisible) == 0x000001, "Wrong alignment on PyWidget_Nameplate_MarvelSetVisible");
-static_assert(sizeof(PyWidget_Nameplate_MarvelSetVisible) == 0x000001, "Wrong size on PyWidget_Nameplate_MarvelSetVisible");
-static_assert(offsetof(PyWidget_Nameplate_MarvelSetVisible, Visible) == 0x000000, "Member 'PyWidget_Nameplate_MarvelSetVisible::Visible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Nameplate_MarvelSetVisible;
 
 }
 

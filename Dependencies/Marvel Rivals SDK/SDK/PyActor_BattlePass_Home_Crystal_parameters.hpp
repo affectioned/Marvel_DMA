@@ -23,9 +23,7 @@ struct PyActor_BattlePass_Home_Crystal_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActor_BattlePass_Home_Crystal_ReceiveTick) == 0x000004, "Wrong alignment on PyActor_BattlePass_Home_Crystal_ReceiveTick");
-static_assert(sizeof(PyActor_BattlePass_Home_Crystal_ReceiveTick) == 0x000004, "Wrong size on PyActor_BattlePass_Home_Crystal_ReceiveTick");
-static_assert(offsetof(PyActor_BattlePass_Home_Crystal_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyActor_BattlePass_Home_Crystal_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyActor_BattlePass_Home_Crystal_ReceiveTick;
 
 // PythonFunction PyActor_BattlePass_Home_Crystal.PyActor_BattlePass_Home_Crystal.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +32,7 @@ struct PyActor_BattlePass_Home_Crystal_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyActor_BattlePass_Home_Crystal_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyActor_BattlePass_Home_Crystal_ReceiveEndPlay");
-static_assert(sizeof(PyActor_BattlePass_Home_Crystal_ReceiveEndPlay) == 0x000001, "Wrong size on PyActor_BattlePass_Home_Crystal_ReceiveEndPlay");
-static_assert(offsetof(PyActor_BattlePass_Home_Crystal_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyActor_BattlePass_Home_Crystal_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyActor_BattlePass_Home_Crystal_ReceiveEndPlay;
 
 }
 

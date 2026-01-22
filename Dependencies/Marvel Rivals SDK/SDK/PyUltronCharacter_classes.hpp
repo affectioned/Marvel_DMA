@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // PythonClass PyUltronCharacter.PyUltronChildActor
-// 0x0010 (0x0E40 - 0x0E30)
+// 0x0010 (0x0E50 - 0x0E40)
 class APyUltronChildActor final : public AUltronCharacterChildActor
 {
 public:
-	TArray<struct FUltronAnimInfo>                WeaponAnimList;                                    // 0x0E30(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FUltronAnimInfo>                WeaponAnimList;                                    // 0x0E40(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void ReceivePoolBeginPlay();
@@ -31,33 +31,38 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUltronChildActor">();
+		STATIC_CLASS_IMPL("PyUltronChildActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUltronChildActor")
 	}
 	static class APyUltronChildActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyUltronChildActor>();
 	}
 };
-static_assert(alignof(APyUltronChildActor) == 0x000010, "Wrong alignment on APyUltronChildActor");
-static_assert(sizeof(APyUltronChildActor) == 0x000E40, "Wrong size on APyUltronChildActor");
-static_assert(offsetof(APyUltronChildActor, WeaponAnimList) == 0x000E30, "Member 'APyUltronChildActor::WeaponAnimList' has a wrong offset!");
+DUMPER7_ASSERTS_APyUltronChildActor;
 
 // PythonClass PyUltronCharacter.PyUltronCharacter
-// 0x0000 (0x21C0 - 0x21C0)
+// 0x0000 (0x22D0 - 0x22D0)
 class APyUltronCharacter : public AUltronCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUltronCharacter">();
+		STATIC_CLASS_IMPL("PyUltronCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUltronCharacter")
 	}
 	static class APyUltronCharacter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyUltronCharacter>();
 	}
 };
-static_assert(alignof(APyUltronCharacter) == 0x000010, "Wrong alignment on APyUltronCharacter");
-static_assert(sizeof(APyUltronCharacter) == 0x0021C0, "Wrong size on APyUltronCharacter");
+DUMPER7_ASSERTS_APyUltronCharacter;
 
 }
 

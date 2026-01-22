@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441020.PyBuffAbility_10130_10440094
-// 0x0000 (0x1A30 - 0x1A30)
+// 0x0000 (0x1A48 - 0x1A48)
 class UPyBuffAbility_10130_10440094 : public UBuffAbility_CommonCardEffect
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10440094">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10440094")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10440094")
 	}
 	static class UPyBuffAbility_10130_10440094* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10440094>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10440094) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10440094");
-static_assert(sizeof(UPyBuffAbility_10130_10440094) == 0x001A30, "Wrong size on UPyBuffAbility_10130_10440094");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10440094;
 
 // PythonClass PyBuffAbility_10130_10441020.PyCue_Projectile_Loop_10449492
-// 0x0000 (0x1130 - 0x1130)
+// 0x0000 (0x1140 - 0x1140)
 class APyCue_Projectile_Loop_10449492 final : public AMarvelCueNotify_Projectile
 {
 public:
@@ -48,18 +51,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Projectile_Loop_10449492">();
+		STATIC_CLASS_IMPL("PyCue_Projectile_Loop_10449492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Projectile_Loop_10449492")
 	}
 	static class APyCue_Projectile_Loop_10449492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Projectile_Loop_10449492>();
 	}
 };
-static_assert(alignof(APyCue_Projectile_Loop_10449492) == 0x000010, "Wrong alignment on APyCue_Projectile_Loop_10449492");
-static_assert(sizeof(APyCue_Projectile_Loop_10449492) == 0x001130, "Wrong size on APyCue_Projectile_Loop_10449492");
+DUMPER7_ASSERTS_APyCue_Projectile_Loop_10449492;
 
 // PythonClass PyBuffAbility_10130_10441020.PyProjectile_10130_10449492
-// 0x0000 (0x3B90 - 0x3B90)
+// 0x0000 (0x3EA0 - 0x3EA0)
 class APyProjectile_10130_10449492 final : public AMarvelAbilityTargetActor_Projectile
 {
 public:
@@ -68,15 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyProjectile_10130_10449492">();
+		STATIC_CLASS_IMPL("PyProjectile_10130_10449492")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyProjectile_10130_10449492")
 	}
 	static class APyProjectile_10130_10449492* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyProjectile_10130_10449492>();
 	}
 };
-static_assert(alignof(APyProjectile_10130_10449492) == 0x000010, "Wrong alignment on APyProjectile_10130_10449492");
-static_assert(sizeof(APyProjectile_10130_10449492) == 0x003B90, "Wrong size on APyProjectile_10130_10449492");
+DUMPER7_ASSERTS_APyProjectile_10130_10449492;
 
 }
 

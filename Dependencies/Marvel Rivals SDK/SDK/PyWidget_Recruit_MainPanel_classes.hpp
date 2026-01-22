@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Recruit_MainPanel.PyWidget_Squad_Recruit_Item
-// 0x0010 (0x0580 - 0x0570)
+// 0x0010 (0x0588 - 0x0578)
 class UPyWidget_Squad_Recruit_Item final : public UWidget_ListEntry
 {
 public:
-	class UTexture2D*                             OwnIcon;                                           // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             FriendIcon;                                        // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             OwnIcon;                                           // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             FriendIcon;                                        // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,25 +33,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_Recruit_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_Recruit_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Recruit_Item")
 	}
 	static class UPyWidget_Squad_Recruit_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_Recruit_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_Recruit_Item) == 0x000008, "Wrong alignment on UPyWidget_Squad_Recruit_Item");
-static_assert(sizeof(UPyWidget_Squad_Recruit_Item) == 0x000580, "Wrong size on UPyWidget_Squad_Recruit_Item");
-static_assert(offsetof(UPyWidget_Squad_Recruit_Item, OwnIcon) == 0x000570, "Member 'UPyWidget_Squad_Recruit_Item::OwnIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Squad_Recruit_Item, FriendIcon) == 0x000578, "Member 'UPyWidget_Squad_Recruit_Item::FriendIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Squad_Recruit_Item;
 
 // PythonClass PyWidget_Recruit_MainPanel.PyWidget_Recruit_MainPanel
-// 0x0008 (0x0600 - 0x05F8)
+// 0x0008 (0x0608 - 0x0600)
 class UPyWidget_Recruit_MainPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
-	int32                                         Interval_Loop_Refresh;                             // 0x05F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Interval_Another_Batch;                            // 0x05FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Interval_Loop_Refresh;                             // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Interval_Another_Batch;                            // 0x0604(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,17 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Recruit_MainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Recruit_MainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Recruit_MainPanel")
 	}
 	static class UPyWidget_Recruit_MainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Recruit_MainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Recruit_MainPanel) == 0x000008, "Wrong alignment on UPyWidget_Recruit_MainPanel");
-static_assert(sizeof(UPyWidget_Recruit_MainPanel) == 0x000600, "Wrong size on UPyWidget_Recruit_MainPanel");
-static_assert(offsetof(UPyWidget_Recruit_MainPanel, Interval_Loop_Refresh) == 0x0005F8, "Member 'UPyWidget_Recruit_MainPanel::Interval_Loop_Refresh' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Recruit_MainPanel, Interval_Another_Batch) == 0x0005FC, "Member 'UPyWidget_Recruit_MainPanel::Interval_Another_Batch' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Recruit_MainPanel;
 
 // PythonClass PyWidget_Recruit_MainPanel.PyWidget_Squad_Recruit_Item_Data
 // 0x0000 (0x0030 - 0x0030)
@@ -81,15 +83,18 @@ class UPyWidget_Squad_Recruit_Item_Data final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Squad_Recruit_Item_Data">();
+		STATIC_CLASS_IMPL("PyWidget_Squad_Recruit_Item_Data")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Squad_Recruit_Item_Data")
 	}
 	static class UPyWidget_Squad_Recruit_Item_Data* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Squad_Recruit_Item_Data>();
 	}
 };
-static_assert(alignof(UPyWidget_Squad_Recruit_Item_Data) == 0x000008, "Wrong alignment on UPyWidget_Squad_Recruit_Item_Data");
-static_assert(sizeof(UPyWidget_Squad_Recruit_Item_Data) == 0x000030, "Wrong size on UPyWidget_Squad_Recruit_Item_Data");
+DUMPER7_ASSERTS_UPyWidget_Squad_Recruit_Item_Data;
 
 }
 

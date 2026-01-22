@@ -10,7 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "python_enums_structs.hpp"
+#include "Marvel_structs.hpp"
 #include "Marvel_classes.hpp"
+#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -18,27 +21,79 @@ namespace SDK
 {
 
 // PythonClass PyPlayerState2201Component.PyPlayerState2201Component
-// 0x0000 (0x0108 - 0x0108)
+// 0x0188 (0x0290 - 0x0108)
 class UPyPlayerState2201Component final : public UMarvelActorComponentBase
 {
 public:
+	int64                                         PymActiveTimestamp;                                // 0x0108(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PymRatio;                                          // 0x0110(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PymSandwichState;                                  // 0x0114(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PymBuffState;                                      // 0x0118(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReplicateTimer                        PymSandwichRefreshTimer;                           // 0x0120(0x0078)(Net, NativeAccessSpecifierPublic)
+	bool                                          bClassicDuelSettingInited;                         // 0x0198(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRandomDuelSettingInited;                          // 0x0199(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpecialDuelSettingInited;                         // 0x019A(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDuelProcessState                             M2201DuelProcessState;                             // 0x019B(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FReplicateTimer                        WaitingTimer;                                      // 0x01A0(0x0078)(BlueprintVisible, Net, NativeAccessSpecifierPublic)
+	bool                                          Initiator;                                         // 0x0218(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool Initiator)> OnInitiatorChanged;                               // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPymActiveTimestampChanged;                       // 0x0230(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPymRatioChanged;                                 // 0x0240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPymSandwichStateChanged;                         // 0x0250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPymBuffStateChanged;                             // 0x0260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnDuelQueueIndexChanged;                           // 0x0270(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EDuelProcessState State)> OnM2201DuelProcessStateChanged;          // 0x0280(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+
+public:
 	void ReceiveBeginPlay();
+	void C_CloseAOIInPhotoMode();
 	void C_CloseAOI();
 	void C_OpenAOI();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void S_on_pym_sandwich_refresh_timesup();
+	void OnRep_PymActiveTimestamp();
+	void OnRep_PymRatio();
+	void OnRep_PymSandwichState();
+	void OnRep_PymBuffState();
+	void OnRep_M2201DuelProcessState();
+	void OnRep_Initiator();
+	void Client_ShowPymTips(int32 TipsType);
+	void Server_RemoveScaleBuff();
+	void SyncDuelSetting(EDuelType duel_type, const class FString& duel_setting);
+	void StartDuel(EDuelType duel_type);
+	void StartDuelWithSetting(EDuelType duel_type, const class FString& duel_setting);
+	void NotifyDuelSettingIndex(EDuelType duel_type);
+	void S_waiting_end_callback();
+	void InitDuelSetting(const class FString& content);
+	void Server_InviteToDuel(int32 self_player_uid, int32 target_player_uid, const class FString& invitation_msg, bool is_public);
+	void Server_ProcessDuelInvition(int32 initiator_uid, int32 receiver_uid, bool is_public);
+	void Server_CancelDuel(int32 duel_queue_index);
+	void Client_UpdateInvitedUidTimestampDict(int32 invited_uid, float timestamp);
+	void Client_ClearInvitedUidTimestampDict();
+	void Client_OnInvitedToDuel(int32 initiator_uid, int32 receiver_uid, const class FString& invitation_msg, bool is_public);
+	void Client_NotifyDuelLoading(float ShowTime);
+	void Client_NotifyDuelCloseLoading();
+	void Client_NotifyDuelInvitationFail(const class FString& key_str);
+	void Client_NotifyDuelInvitationSucceed(const class FString& key_str, const class FString& player_name);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerState2201Component">();
+		STATIC_CLASS_IMPL("PyPlayerState2201Component")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerState2201Component")
 	}
 	static class UPyPlayerState2201Component* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerState2201Component>();
 	}
 };
-static_assert(alignof(UPyPlayerState2201Component) == 0x000008, "Wrong alignment on UPyPlayerState2201Component");
-static_assert(sizeof(UPyPlayerState2201Component) == 0x000108, "Wrong size on UPyPlayerState2201Component");
+DUMPER7_ASSERTS_UPyPlayerState2201Component;
 
 }
 

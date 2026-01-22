@@ -26,12 +26,7 @@ public:
 	EStrikePartType                               part_type;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape) == 0x000008, "Wrong alignment on PyWeaponFunctionLibrary_SetOrientationToTargetHitShape");
-static_assert(sizeof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape) == 0x000018, "Wrong size on PyWeaponFunctionLibrary_SetOrientationToTargetHitShape");
-static_assert(offsetof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape, owner) == 0x000000, "Member 'PyWeaponFunctionLibrary_SetOrientationToTargetHitShape::owner' has a wrong offset!");
-static_assert(offsetof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape, target) == 0x000008, "Member 'PyWeaponFunctionLibrary_SetOrientationToTargetHitShape::target' has a wrong offset!");
-static_assert(offsetof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape, part_type) == 0x000010, "Member 'PyWeaponFunctionLibrary_SetOrientationToTargetHitShape::part_type' has a wrong offset!");
-static_assert(offsetof(PyWeaponFunctionLibrary_SetOrientationToTargetHitShape, ReturnValue) == 0x000011, "Member 'PyWeaponFunctionLibrary_SetOrientationToTargetHitShape::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyWeaponFunctionLibrary_SetOrientationToTargetHitShape;
 
 }
 

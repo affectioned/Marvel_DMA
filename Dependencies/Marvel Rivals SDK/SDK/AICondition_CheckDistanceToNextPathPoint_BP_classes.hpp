@@ -23,15 +23,18 @@ class UAICondition_CheckDistanceToNextPathPoint_BP_C final : public UPyAIConditi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AICondition_CheckDistanceToNextPathPoint_BP_C">();
+		BP_STATIC_CLASS_IMPL("AICondition_CheckDistanceToNextPathPoint_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AICondition_CheckDistanceToNextPathPoint_BP_C")
 	}
 	static class UAICondition_CheckDistanceToNextPathPoint_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAICondition_CheckDistanceToNextPathPoint_BP_C>();
 	}
 };
-static_assert(alignof(UAICondition_CheckDistanceToNextPathPoint_BP_C) == 0x000008, "Wrong alignment on UAICondition_CheckDistanceToNextPathPoint_BP_C");
-static_assert(sizeof(UAICondition_CheckDistanceToNextPathPoint_BP_C) == 0x000040, "Wrong size on UAICondition_CheckDistanceToNextPathPoint_BP_C");
+DUMPER7_ASSERTS_UAICondition_CheckDistanceToNextPathPoint_BP_C;
 
 }
 

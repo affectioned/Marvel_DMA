@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySuperFactoryEffectController">();
+		STATIC_CLASS_IMPL("PySuperFactoryEffectController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySuperFactoryEffectController")
 	}
 	static class APySuperFactoryEffectController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySuperFactoryEffectController>();
 	}
 };
-static_assert(alignof(APySuperFactoryEffectController) == 0x000010, "Wrong alignment on APySuperFactoryEffectController");
-static_assert(sizeof(APySuperFactoryEffectController) == 0x000710, "Wrong size on APySuperFactoryEffectController");
-static_assert(offsetof(APySuperFactoryEffectController, FocusControl) == 0x0006E0, "Member 'APySuperFactoryEffectController::FocusControl' has a wrong offset!");
-static_assert(offsetof(APySuperFactoryEffectController, FocusSide) == 0x0006E8, "Member 'APySuperFactoryEffectController::FocusSide' has a wrong offset!");
-static_assert(offsetof(APySuperFactoryEffectController, SeqActorOnSideWin) == 0x0006F0, "Member 'APySuperFactoryEffectController::SeqActorOnSideWin' has a wrong offset!");
-static_assert(offsetof(APySuperFactoryEffectController, EffectOnSideWin) == 0x0006F8, "Member 'APySuperFactoryEffectController::EffectOnSideWin' has a wrong offset!");
+DUMPER7_ASSERTS_APySuperFactoryEffectController;
 
 }
 

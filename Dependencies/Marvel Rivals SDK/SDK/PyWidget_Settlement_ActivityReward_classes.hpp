@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Settlement_ActivityReward.PyWidget_Settlement_ActivityRewardPanel
-// 0x00A0 (0x0660 - 0x05C0)
+// 0x00A0 (0x0668 - 0x05C8)
 class UPyWidget_Settlement_ActivityRewardPanel final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                CurrencyCardTopItem;                               // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                LevelCardTopItem;                                  // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EActivitySettlementCardType, TSubclassOf<class UUserWidget>> CustomTopWidgets;              // 0x05D0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           PageInputAction;                                   // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                NextGuipTipsStyle;                                 // 0x0628(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                SkipAnimGuideTipsStyle;                            // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UPyDataAsset_ActivitySettlement*        ActivitySettlementDataAsset;                       // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                CurrencyCardTopItem;                               // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                LevelCardTopItem;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EActivitySettlementCardType, TSubclassOf<class UUserWidget>> CustomTopWidgets;              // 0x05D8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           PageInputAction;                                   // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                NextGuipTipsStyle;                                 // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                PageGuideTipsStyle;                                // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                SkipAnimGuideTipsStyle;                            // 0x0650(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UPyDataAsset_ActivitySettlement*        ActivitySettlementDataAsset;                       // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -41,23 +41,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Settlement_ActivityRewardPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Settlement_ActivityRewardPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Settlement_ActivityRewardPanel")
 	}
 	static class UPyWidget_Settlement_ActivityRewardPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Settlement_ActivityRewardPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Settlement_ActivityRewardPanel) == 0x000008, "Wrong alignment on UPyWidget_Settlement_ActivityRewardPanel");
-static_assert(sizeof(UPyWidget_Settlement_ActivityRewardPanel) == 0x000660, "Wrong size on UPyWidget_Settlement_ActivityRewardPanel");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, CurrencyCardTopItem) == 0x0005C0, "Member 'UPyWidget_Settlement_ActivityRewardPanel::CurrencyCardTopItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, LevelCardTopItem) == 0x0005C8, "Member 'UPyWidget_Settlement_ActivityRewardPanel::LevelCardTopItem' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, CustomTopWidgets) == 0x0005D0, "Member 'UPyWidget_Settlement_ActivityRewardPanel::CustomTopWidgets' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, PageInputAction) == 0x000620, "Member 'UPyWidget_Settlement_ActivityRewardPanel::PageInputAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, NextGuipTipsStyle) == 0x000628, "Member 'UPyWidget_Settlement_ActivityRewardPanel::NextGuipTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, PageGuideTipsStyle) == 0x000638, "Member 'UPyWidget_Settlement_ActivityRewardPanel::PageGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, SkipAnimGuideTipsStyle) == 0x000648, "Member 'UPyWidget_Settlement_ActivityRewardPanel::SkipAnimGuideTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Settlement_ActivityRewardPanel, ActivitySettlementDataAsset) == 0x000658, "Member 'UPyWidget_Settlement_ActivityRewardPanel::ActivitySettlementDataAsset' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Settlement_ActivityRewardPanel;
 
 }
 

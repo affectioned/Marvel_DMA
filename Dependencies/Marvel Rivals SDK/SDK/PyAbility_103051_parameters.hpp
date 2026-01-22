@@ -23,31 +23,25 @@ struct PyProjectile_10305101_ShouldEndTaskOverMaxDistance final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyProjectile_10305101_ShouldEndTaskOverMaxDistance) == 0x000001, "Wrong alignment on PyProjectile_10305101_ShouldEndTaskOverMaxDistance");
-static_assert(sizeof(PyProjectile_10305101_ShouldEndTaskOverMaxDistance) == 0x000001, "Wrong size on PyProjectile_10305101_ShouldEndTaskOverMaxDistance");
-static_assert(offsetof(PyProjectile_10305101_ShouldEndTaskOverMaxDistance, ReturnValue) == 0x000000, "Member 'PyProjectile_10305101_ShouldEndTaskOverMaxDistance::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10305101_ShouldEndTaskOverMaxDistance;
 
 // PythonFunction PyAbility_103051.PyProjectile_10305101.K2_OnProcessHit
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10305101_K2_OnProcessHit final
 {
 public:
-	struct FHitResult                             hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10305101_K2_OnProcessHit) == 0x000008, "Wrong alignment on PyProjectile_10305101_K2_OnProcessHit");
-static_assert(sizeof(PyProjectile_10305101_K2_OnProcessHit) == 0x0001F0, "Wrong size on PyProjectile_10305101_K2_OnProcessHit");
-static_assert(offsetof(PyProjectile_10305101_K2_OnProcessHit, hit) == 0x000000, "Member 'PyProjectile_10305101_K2_OnProcessHit::hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10305101_K2_OnProcessHit;
 
 // PythonFunction PyAbility_103051.PyProjectile_10305101.K2_OnFlyOverMaxDistance
-// 0x01F0 (0x01F0 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct PyProjectile_10305101_K2_OnFlyOverMaxDistance final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x01F0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyProjectile_10305101_K2_OnFlyOverMaxDistance) == 0x000008, "Wrong alignment on PyProjectile_10305101_K2_OnFlyOverMaxDistance");
-static_assert(sizeof(PyProjectile_10305101_K2_OnFlyOverMaxDistance) == 0x0001F0, "Wrong size on PyProjectile_10305101_K2_OnFlyOverMaxDistance");
-static_assert(offsetof(PyProjectile_10305101_K2_OnFlyOverMaxDistance, Hit) == 0x000000, "Member 'PyProjectile_10305101_K2_OnFlyOverMaxDistance::Hit' has a wrong offset!");
+DUMPER7_ASSERTS_PyProjectile_10305101_K2_OnFlyOverMaxDistance;
 
 }
 

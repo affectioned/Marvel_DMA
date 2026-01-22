@@ -24,10 +24,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyDamageSense_ReceiveActivationAI) == 0x000008, "Wrong alignment on BTS_PyDamageSense_ReceiveActivationAI");
-static_assert(sizeof(BTS_PyDamageSense_ReceiveActivationAI) == 0x000010, "Wrong size on BTS_PyDamageSense_ReceiveActivationAI");
-static_assert(offsetof(BTS_PyDamageSense_ReceiveActivationAI, OwnerController) == 0x000000, "Member 'BTS_PyDamageSense_ReceiveActivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyDamageSense_ReceiveActivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PyDamageSense_ReceiveActivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyDamageSense_ReceiveActivationAI;
 
 // PythonFunction BTS_PyDamageSense.BTS_PyDamageSense.ReceiveDeactivationAI
 // 0x0010 (0x0010 - 0x0000)
@@ -37,10 +34,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyDamageSense_ReceiveDeactivationAI) == 0x000008, "Wrong alignment on BTS_PyDamageSense_ReceiveDeactivationAI");
-static_assert(sizeof(BTS_PyDamageSense_ReceiveDeactivationAI) == 0x000010, "Wrong size on BTS_PyDamageSense_ReceiveDeactivationAI");
-static_assert(offsetof(BTS_PyDamageSense_ReceiveDeactivationAI, OwnerController) == 0x000000, "Member 'BTS_PyDamageSense_ReceiveDeactivationAI::OwnerController' has a wrong offset!");
-static_assert(offsetof(BTS_PyDamageSense_ReceiveDeactivationAI, ControlledPawn) == 0x000008, "Member 'BTS_PyDamageSense_ReceiveDeactivationAI::ControlledPawn' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyDamageSense_ReceiveDeactivationAI;
 
 // PythonFunction BTS_PyDamageSense.BTS_PyDamageSense.OnPawnTakingDamage
 // 0x0028 (0x0028 - 0x0000)
@@ -51,11 +45,7 @@ public:
 	class AActor*                                 TargetAvatar;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParamsHandle;                              // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(BTS_PyDamageSense_OnPawnTakingDamage) == 0x000008, "Wrong alignment on BTS_PyDamageSense_OnPawnTakingDamage");
-static_assert(sizeof(BTS_PyDamageSense_OnPawnTakingDamage) == 0x000028, "Wrong size on BTS_PyDamageSense_OnPawnTakingDamage");
-static_assert(offsetof(BTS_PyDamageSense_OnPawnTakingDamage, SourceAvatar) == 0x000000, "Member 'BTS_PyDamageSense_OnPawnTakingDamage::SourceAvatar' has a wrong offset!");
-static_assert(offsetof(BTS_PyDamageSense_OnPawnTakingDamage, TargetAvatar) == 0x000008, "Member 'BTS_PyDamageSense_OnPawnTakingDamage::TargetAvatar' has a wrong offset!");
-static_assert(offsetof(BTS_PyDamageSense_OnPawnTakingDamage, ModifierParamsHandle) == 0x000010, "Member 'BTS_PyDamageSense_OnPawnTakingDamage::ModifierParamsHandle' has a wrong offset!");
+DUMPER7_ASSERTS_BTS_PyDamageSense_OnPawnTakingDamage;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_PopupGuidePanel.PyWidget_PopupGuidePanel
-// 0x0000 (0x0850 - 0x0850)
+// 0x0000 (0x0858 - 0x0858)
 class UPyWidget_PopupGuidePanel final : public UPyWidget_GuidePanel
 {
 public:
@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_PopupGuidePanel">();
+		STATIC_CLASS_IMPL("PyWidget_PopupGuidePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_PopupGuidePanel")
 	}
 	static class UPyWidget_PopupGuidePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_PopupGuidePanel>();
 	}
 };
-static_assert(alignof(UPyWidget_PopupGuidePanel) == 0x000008, "Wrong alignment on UPyWidget_PopupGuidePanel");
-static_assert(sizeof(UPyWidget_PopupGuidePanel) == 0x000850, "Wrong size on UPyWidget_PopupGuidePanel");
+DUMPER7_ASSERTS_UPyWidget_PopupGuidePanel;
 
 }
 

@@ -23,9 +23,7 @@ struct MarvelFZBSubsystem_OnMatchStateChange final
 public:
 	EMatchState                                   InMatchState;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MarvelFZBSubsystem_OnMatchStateChange) == 0x000001, "Wrong alignment on MarvelFZBSubsystem_OnMatchStateChange");
-static_assert(sizeof(MarvelFZBSubsystem_OnMatchStateChange) == 0x000001, "Wrong size on MarvelFZBSubsystem_OnMatchStateChange");
-static_assert(offsetof(MarvelFZBSubsystem_OnMatchStateChange, InMatchState) == 0x000000, "Member 'MarvelFZBSubsystem_OnMatchStateChange::InMatchState' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelFZBSubsystem_OnMatchStateChange;
 
 }
 

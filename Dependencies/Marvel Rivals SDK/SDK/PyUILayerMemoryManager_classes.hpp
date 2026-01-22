@@ -23,15 +23,18 @@ class UPyUILayerMemoryManager final : public UUILayerMemoryManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUILayerMemoryManager">();
+		STATIC_CLASS_IMPL("PyUILayerMemoryManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUILayerMemoryManager")
 	}
 	static class UPyUILayerMemoryManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUILayerMemoryManager>();
 	}
 };
-static_assert(alignof(UPyUILayerMemoryManager) == 0x000008, "Wrong alignment on UPyUILayerMemoryManager");
-static_assert(sizeof(UPyUILayerMemoryManager) == 0x000038, "Wrong size on UPyUILayerMemoryManager");
+DUMPER7_ASSERTS_UPyUILayerMemoryManager;
 
 }
 

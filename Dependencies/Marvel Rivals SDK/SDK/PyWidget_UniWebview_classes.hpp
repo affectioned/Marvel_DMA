@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_UniWebview.PyWidget_UniWebview
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_UniWebview final : public UMarvelUserWidget
 {
 public:
-	class FString                                 InitialUrl;                                        // 0x0568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InitialUrl;                                        // 0x0570(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OpenUrl(const class FString& url);
@@ -34,16 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_UniWebview">();
+		STATIC_CLASS_IMPL("PyWidget_UniWebview")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_UniWebview")
 	}
 	static class UPyWidget_UniWebview* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_UniWebview>();
 	}
 };
-static_assert(alignof(UPyWidget_UniWebview) == 0x000008, "Wrong alignment on UPyWidget_UniWebview");
-static_assert(sizeof(UPyWidget_UniWebview) == 0x000578, "Wrong size on UPyWidget_UniWebview");
-static_assert(offsetof(UPyWidget_UniWebview, InitialUrl) == 0x000568, "Member 'UPyWidget_UniWebview::InitialUrl' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_UniWebview;
 
 }
 

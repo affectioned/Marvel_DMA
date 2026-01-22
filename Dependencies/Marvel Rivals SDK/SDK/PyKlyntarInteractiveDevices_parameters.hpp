@@ -23,9 +23,7 @@ struct PyKlyntarInteractiveDevices_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyKlyntarInteractiveDevices_ReceiveEndPlay");
-static_assert(sizeof(PyKlyntarInteractiveDevices_ReceiveEndPlay) == 0x000001, "Wrong size on PyKlyntarInteractiveDevices_ReceiveEndPlay");
-static_assert(offsetof(PyKlyntarInteractiveDevices_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyKlyntarInteractiveDevices_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_ReceiveEndPlay;
 
 // PythonFunction PyKlyntarInteractiveDevices.PyKlyntarInteractiveDevices.OnPlayerEntered
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +32,7 @@ struct PyKlyntarInteractiveDevices_OnPlayerEntered final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_OnPlayerEntered) == 0x000008, "Wrong alignment on PyKlyntarInteractiveDevices_OnPlayerEntered");
-static_assert(sizeof(PyKlyntarInteractiveDevices_OnPlayerEntered) == 0x000008, "Wrong size on PyKlyntarInteractiveDevices_OnPlayerEntered");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnPlayerEntered, actor) == 0x000000, "Member 'PyKlyntarInteractiveDevices_OnPlayerEntered::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_OnPlayerEntered;
 
 // PythonFunction PyKlyntarInteractiveDevices.PyKlyntarInteractiveDevices.OnPlayerExited
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +41,7 @@ struct PyKlyntarInteractiveDevices_OnPlayerExited final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_OnPlayerExited) == 0x000008, "Wrong alignment on PyKlyntarInteractiveDevices_OnPlayerExited");
-static_assert(sizeof(PyKlyntarInteractiveDevices_OnPlayerExited) == 0x000008, "Wrong size on PyKlyntarInteractiveDevices_OnPlayerExited");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnPlayerExited, actor) == 0x000000, "Member 'PyKlyntarInteractiveDevices_OnPlayerExited::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_OnPlayerExited;
 
 // PythonFunction PyKlyntarInteractiveDevices.PyKlyntarInteractiveDevices.OnInteractingWithNPC
 // 0x0020 (0x0020 - 0x0000)
@@ -58,11 +52,7 @@ public:
 	TArray<class FString>                         Tags_0;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	int32                                         ModeId;                                            // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_OnInteractingWithNPC) == 0x000008, "Wrong alignment on PyKlyntarInteractiveDevices_OnInteractingWithNPC");
-static_assert(sizeof(PyKlyntarInteractiveDevices_OnInteractingWithNPC) == 0x000020, "Wrong size on PyKlyntarInteractiveDevices_OnInteractingWithNPC");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnInteractingWithNPC, PlayerState) == 0x000000, "Member 'PyKlyntarInteractiveDevices_OnInteractingWithNPC::PlayerState' has a wrong offset!");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnInteractingWithNPC, Tags_0) == 0x000008, "Member 'PyKlyntarInteractiveDevices_OnInteractingWithNPC::Tags_0' has a wrong offset!");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnInteractingWithNPC, ModeId) == 0x000018, "Member 'PyKlyntarInteractiveDevices_OnInteractingWithNPC::ModeId' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_OnInteractingWithNPC;
 
 // PythonFunction PyKlyntarInteractiveDevices.PyKlyntarInteractiveDevices.OnPlayerEntered_3DWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -71,9 +61,7 @@ struct PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget) == 0x000008, "Wrong alignment on PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget");
-static_assert(sizeof(PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget) == 0x000008, "Wrong size on PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget, actor) == 0x000000, "Member 'PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_OnPlayerEntered_3DWidget;
 
 // PythonFunction PyKlyntarInteractiveDevices.PyKlyntarInteractiveDevices.OnPlayerExited_3DWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +70,7 @@ struct PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget final
 public:
 	class AActor*                                 actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget) == 0x000008, "Wrong alignment on PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget");
-static_assert(sizeof(PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget) == 0x000008, "Wrong size on PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget");
-static_assert(offsetof(PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget, actor) == 0x000000, "Member 'PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget::actor' has a wrong offset!");
+DUMPER7_ASSERTS_PyKlyntarInteractiveDevices_OnPlayerExited_3DWidget;
 
 }
 

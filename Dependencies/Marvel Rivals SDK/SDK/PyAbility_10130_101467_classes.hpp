@@ -18,31 +18,32 @@ namespace SDK
 {
 
 // PythonClass PyAbility_10130_101467.PyConfig_101467
-// 0x1678 (0x1710 - 0x0098)
+// 0x19C8 (0x1A60 - 0x0098)
 class UPyConfig_101467 final : public UMarvelAbilityConfig
 {
 public:
 	TArray<int32>                                 PriorSummonedID;                                   // 0x0098(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMarvelAbilityTraceContext             EnemyTraceContext;                                 // 0x00B0(0x1660)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FMarvelAbilityTraceContext             EnemyTraceContext;                                 // 0x00B0(0x19B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_101467">();
+		STATIC_CLASS_IMPL("PyConfig_101467")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_101467")
 	}
 	static class UPyConfig_101467* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_101467>();
 	}
 };
-static_assert(alignof(UPyConfig_101467) == 0x000010, "Wrong alignment on UPyConfig_101467");
-static_assert(sizeof(UPyConfig_101467) == 0x001710, "Wrong size on UPyConfig_101467");
-static_assert(offsetof(UPyConfig_101467, PriorSummonedID) == 0x000098, "Member 'UPyConfig_101467::PriorSummonedID' has a wrong offset!");
-static_assert(offsetof(UPyConfig_101467, EnemyTraceContext) == 0x0000B0, "Member 'UPyConfig_101467::EnemyTraceContext' has a wrong offset!");
+DUMPER7_ASSERTS_UPyConfig_101467;
 
 // PythonClass PyAbility_10130_101467.PyAbility_101467
-// 0x0000 (0x29F0 - 0x29F0)
+// 0x0000 (0x2A40 - 0x2A40)
 class UPyAbility_101467 : public UMarvelGameplayAbility
 {
 public:
@@ -54,15 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101467">();
+		STATIC_CLASS_IMPL("PyAbility_101467")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101467")
 	}
 	static class UPyAbility_101467* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101467>();
 	}
 };
-static_assert(alignof(UPyAbility_101467) == 0x000008, "Wrong alignment on UPyAbility_101467");
-static_assert(sizeof(UPyAbility_101467) == 0x0029F0, "Wrong size on UPyAbility_101467");
+DUMPER7_ASSERTS_UPyAbility_101467;
 
 }
 

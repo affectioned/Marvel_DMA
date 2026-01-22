@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_104821.PyCue_Weapon_Loop_104821
-// 0x0010 (0x1420 - 0x1410)
+// 0x0010 (0x1430 - 0x1420)
 class APyCue_Weapon_Loop_104821 final : public AMarvelCueNotify_Weapon_Loop_VoidMesh
 {
 public:
-	int32                                         FireAudioOneID;                                    // 0x1410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FireAudioTwoID;                                    // 0x1414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FireAudioOneID;                                    // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FireAudioTwoID;                                    // 0x1424(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnFireStateAudio(int32 ModeIndex, bool bNewState);
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_104821">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_104821")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_104821")
 	}
 	static class APyCue_Weapon_Loop_104821* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_104821>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_104821) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_104821");
-static_assert(sizeof(APyCue_Weapon_Loop_104821) == 0x001420, "Wrong size on APyCue_Weapon_Loop_104821");
-static_assert(offsetof(APyCue_Weapon_Loop_104821, FireAudioOneID) == 0x001410, "Member 'APyCue_Weapon_Loop_104821::FireAudioOneID' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_104821, FireAudioTwoID) == 0x001414, "Member 'APyCue_Weapon_Loop_104821::FireAudioTwoID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_104821;
 
 }
 

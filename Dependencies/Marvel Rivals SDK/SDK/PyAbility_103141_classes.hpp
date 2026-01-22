@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_103141.PyUIController_103142
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_103142 final : public UUIC_Ability
 {
 public:
@@ -28,18 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103142">();
+		STATIC_CLASS_IMPL("PyUIController_103142")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103142")
 	}
 	static class UPyUIController_103142* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103142>();
 	}
 };
-static_assert(alignof(UPyUIController_103142) == 0x000008, "Wrong alignment on UPyUIController_103142");
-static_assert(sizeof(UPyUIController_103142) == 0x000F10, "Wrong size on UPyUIController_103142");
+DUMPER7_ASSERTS_UPyUIController_103142;
 
 // PythonClass PyAbility_103141.PyAbility_103141
-// 0x0000 (0x29F8 - 0x29F8)
+// 0x0000 (0x2A48 - 0x2A48)
 class UPyAbility_103141 : public UAbility_108
 {
 public:
@@ -48,23 +51,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_103141">();
+		STATIC_CLASS_IMPL("PyAbility_103141")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_103141")
 	}
 	static class UPyAbility_103141* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_103141>();
 	}
 };
-static_assert(alignof(UPyAbility_103141) == 0x000008, "Wrong alignment on UPyAbility_103141");
-static_assert(sizeof(UPyAbility_103141) == 0x0029F8, "Wrong size on UPyAbility_103141");
+DUMPER7_ASSERTS_UPyAbility_103141;
 
 // PythonClass PyAbility_103141.PyUIController_103141
-// 0x0010 (0x0F20 - 0x0F10)
+// 0x0010 (0x1200 - 0x11F0)
 class UPyUIController_103141 : public UUIC_Ability
 {
 public:
-	class UTexture2D*                             EnhancedIcon;                                      // 0x0F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NormalIcon;                                        // 0x0F18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             EnhancedIcon;                                      // 0x11F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NormalIcon;                                        // 0x11F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInit();
@@ -74,20 +80,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_103141">();
+		STATIC_CLASS_IMPL("PyUIController_103141")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_103141")
 	}
 	static class UPyUIController_103141* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_103141>();
 	}
 };
-static_assert(alignof(UPyUIController_103141) == 0x000008, "Wrong alignment on UPyUIController_103141");
-static_assert(sizeof(UPyUIController_103141) == 0x000F20, "Wrong size on UPyUIController_103141");
-static_assert(offsetof(UPyUIController_103141, EnhancedIcon) == 0x000F10, "Member 'UPyUIController_103141::EnhancedIcon' has a wrong offset!");
-static_assert(offsetof(UPyUIController_103141, NormalIcon) == 0x000F18, "Member 'UPyUIController_103141::NormalIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UPyUIController_103141;
 
 // PythonClass PyAbility_103141.PyCue_Scope_HitImpact_10314201
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05E8 - 0x05E8)
 class UPyCue_Scope_HitImpact_10314201 : public UMarvelCueNotify_HitImpact
 {
 public:
@@ -96,15 +103,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Scope_HitImpact_10314201">();
+		STATIC_CLASS_IMPL("PyCue_Scope_HitImpact_10314201")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Scope_HitImpact_10314201")
 	}
 	static class UPyCue_Scope_HitImpact_10314201* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyCue_Scope_HitImpact_10314201>();
 	}
 };
-static_assert(alignof(UPyCue_Scope_HitImpact_10314201) == 0x000008, "Wrong alignment on UPyCue_Scope_HitImpact_10314201");
-static_assert(sizeof(UPyCue_Scope_HitImpact_10314201) == 0x0005C8, "Wrong size on UPyCue_Scope_HitImpact_10314201");
+DUMPER7_ASSERTS_UPyCue_Scope_HitImpact_10314201;
 
 }
 

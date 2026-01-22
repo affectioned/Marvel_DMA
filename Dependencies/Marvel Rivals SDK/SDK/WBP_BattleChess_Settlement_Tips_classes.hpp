@@ -17,35 +17,32 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BattleChess_Settlement_Tips.WBP_BattleChess_Settlement_Tips_C
-// 0x0030 (0x0608 - 0x05D8)
+// 0x0030 (0x0610 - 0x05E0)
 class UWBP_BattleChess_Settlement_Tips_C final : public UPyWidget_Common_Category_Tips
 {
 public:
-	class UCommonRichTextBlock*                   RichText_Bonus;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   RichText_Des;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_CategoryName;                                 // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Num;                                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_TotalNum;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BattleChess_CategoryIcon_C*        WBP_BattleChesss_CategoryIcon;                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonRichTextBlock*                   RichText_Bonus;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   RichText_Des;                                      // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_CategoryName;                                 // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Num;                                          // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_TotalNum;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BattleChess_CategoryIcon_C*        WBP_BattleChesss_CategoryIcon;                     // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_BattleChess_Settlement_Tips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_BattleChess_Settlement_Tips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_BattleChess_Settlement_Tips_C")
 	}
 	static class UWBP_BattleChess_Settlement_Tips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_BattleChess_Settlement_Tips_C>();
 	}
 };
-static_assert(alignof(UWBP_BattleChess_Settlement_Tips_C) == 0x000008, "Wrong alignment on UWBP_BattleChess_Settlement_Tips_C");
-static_assert(sizeof(UWBP_BattleChess_Settlement_Tips_C) == 0x000608, "Wrong size on UWBP_BattleChess_Settlement_Tips_C");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, RichText_Bonus) == 0x0005D8, "Member 'UWBP_BattleChess_Settlement_Tips_C::RichText_Bonus' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, RichText_Des) == 0x0005E0, "Member 'UWBP_BattleChess_Settlement_Tips_C::RichText_Des' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, Text_CategoryName) == 0x0005E8, "Member 'UWBP_BattleChess_Settlement_Tips_C::Text_CategoryName' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, Text_Num) == 0x0005F0, "Member 'UWBP_BattleChess_Settlement_Tips_C::Text_Num' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, Text_TotalNum) == 0x0005F8, "Member 'UWBP_BattleChess_Settlement_Tips_C::Text_TotalNum' has a wrong offset!");
-static_assert(offsetof(UWBP_BattleChess_Settlement_Tips_C, WBP_BattleChesss_CategoryIcon) == 0x000600, "Member 'UWBP_BattleChess_Settlement_Tips_C::WBP_BattleChesss_CategoryIcon' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_BattleChess_Settlement_Tips_C;
 
 }
 

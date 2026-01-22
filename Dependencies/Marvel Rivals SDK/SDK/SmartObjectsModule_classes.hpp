@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvQueryGenerator_SmartObjects">();
+		STATIC_CLASS_IMPL("EnvQueryGenerator_SmartObjects")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryGenerator_SmartObjects")
 	}
 	static class UEnvQueryGenerator_SmartObjects* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnvQueryGenerator_SmartObjects>();
 	}
 };
-static_assert(alignof(UEnvQueryGenerator_SmartObjects) == 0x000010, "Wrong alignment on UEnvQueryGenerator_SmartObjects");
-static_assert(sizeof(UEnvQueryGenerator_SmartObjects) == 0x0001C0, "Wrong size on UEnvQueryGenerator_SmartObjects");
-static_assert(offsetof(UEnvQueryGenerator_SmartObjects, QueryOriginContext) == 0x000058, "Member 'UEnvQueryGenerator_SmartObjects::QueryOriginContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_SmartObjects, SmartObjectRequestFilter) == 0x000060, "Member 'UEnvQueryGenerator_SmartObjects::SmartObjectRequestFilter' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_SmartObjects, QueryBoxExtent) == 0x0001A0, "Member 'UEnvQueryGenerator_SmartObjects::QueryBoxExtent' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_SmartObjects, bOnlyClaimable) == 0x0001B8, "Member 'UEnvQueryGenerator_SmartObjects::bOnlyClaimable' has a wrong offset!");
+DUMPER7_ASSERTS_UEnvQueryGenerator_SmartObjects;
 
 // Class SmartObjectsModule.EnvQueryItemType_SmartObject
 // 0x0000 (0x0038 - 0x0038)
@@ -59,15 +58,18 @@ class UEnvQueryItemType_SmartObject final : public UEnvQueryItemType_VectorBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvQueryItemType_SmartObject">();
+		STATIC_CLASS_IMPL("EnvQueryItemType_SmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvQueryItemType_SmartObject")
 	}
 	static class UEnvQueryItemType_SmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnvQueryItemType_SmartObject>();
 	}
 };
-static_assert(alignof(UEnvQueryItemType_SmartObject) == 0x000008, "Wrong alignment on UEnvQueryItemType_SmartObject");
-static_assert(sizeof(UEnvQueryItemType_SmartObject) == 0x000038, "Wrong size on UEnvQueryItemType_SmartObject");
+DUMPER7_ASSERTS_UEnvQueryItemType_SmartObject;
 
 // Class SmartObjectsModule.SmartObjectSettings
 // 0x0010 (0x0058 - 0x0048)
@@ -82,18 +84,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSettings">();
+		STATIC_CLASS_IMPL("SmartObjectSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSettings")
 	}
 	static class USmartObjectSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSettings>();
 	}
 };
-static_assert(alignof(USmartObjectSettings) == 0x000008, "Wrong alignment on USmartObjectSettings");
-static_assert(sizeof(USmartObjectSettings) == 0x000058, "Wrong size on USmartObjectSettings");
-static_assert(offsetof(USmartObjectSettings, DefaultUserTagsFilteringPolicy) == 0x000048, "Member 'USmartObjectSettings::DefaultUserTagsFilteringPolicy' has a wrong offset!");
-static_assert(offsetof(USmartObjectSettings, DefaultActivityTagsMergingPolicy) == 0x000049, "Member 'USmartObjectSettings::DefaultActivityTagsMergingPolicy' has a wrong offset!");
-static_assert(offsetof(USmartObjectSettings, DefaultWorldConditionSchemaClass) == 0x000050, "Member 'USmartObjectSettings::DefaultWorldConditionSchemaClass' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectSettings;
 
 // Class SmartObjectsModule.BlackboardKeyType_SOClaimHandle
 // 0x0020 (0x0058 - 0x0038)
@@ -105,16 +107,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlackboardKeyType_SOClaimHandle">();
+		STATIC_CLASS_IMPL("BlackboardKeyType_SOClaimHandle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlackboardKeyType_SOClaimHandle")
 	}
 	static class UBlackboardKeyType_SOClaimHandle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlackboardKeyType_SOClaimHandle>();
 	}
 };
-static_assert(alignof(UBlackboardKeyType_SOClaimHandle) == 0x000008, "Wrong alignment on UBlackboardKeyType_SOClaimHandle");
-static_assert(sizeof(UBlackboardKeyType_SOClaimHandle) == 0x000058, "Wrong size on UBlackboardKeyType_SOClaimHandle");
-static_assert(offsetof(UBlackboardKeyType_SOClaimHandle, Handle) == 0x000038, "Member 'UBlackboardKeyType_SOClaimHandle::Handle' has a wrong offset!");
+DUMPER7_ASSERTS_UBlackboardKeyType_SOClaimHandle;
 
 // Class SmartObjectsModule.GenericSmartObject
 // 0x0000 (0x06E0 - 0x06E0)
@@ -126,16 +130,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GenericSmartObject">();
+		STATIC_CLASS_IMPL("GenericSmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GenericSmartObject")
 	}
 	static class AGenericSmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGenericSmartObject>();
 	}
 };
-static_assert(alignof(AGenericSmartObject) == 0x000010, "Wrong alignment on AGenericSmartObject");
-static_assert(sizeof(AGenericSmartObject) == 0x0006E0, "Wrong size on AGenericSmartObject");
-static_assert(offsetof(AGenericSmartObject, SOComponent) == 0x0006D8, "Member 'AGenericSmartObject::SOComponent' has a wrong offset!");
+DUMPER7_ASSERTS_AGenericSmartObject;
 
 // Class SmartObjectsModule.SmartObjectBlueprintFunctionLibrary
 // 0x0000 (0x0030 - 0x0030)
@@ -162,15 +168,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("SmartObjectBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectBlueprintFunctionLibrary")
 	}
 	static class USmartObjectBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(USmartObjectBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on USmartObjectBlueprintFunctionLibrary");
-static_assert(sizeof(USmartObjectBlueprintFunctionLibrary) == 0x000030, "Wrong size on USmartObjectBlueprintFunctionLibrary");
+DUMPER7_ASSERTS_USmartObjectBlueprintFunctionLibrary;
 
 // Class SmartObjectsModule.SmartObjectCollection
 // 0x00B0 (0x0790 - 0x06E0)
@@ -186,19 +195,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectCollection">();
+		STATIC_CLASS_IMPL("SmartObjectCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectCollection")
 	}
 	static class ASmartObjectCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASmartObjectCollection>();
 	}
 };
-static_assert(alignof(ASmartObjectCollection) == 0x000010, "Wrong alignment on ASmartObjectCollection");
-static_assert(sizeof(ASmartObjectCollection) == 0x000790, "Wrong size on ASmartObjectCollection");
-static_assert(offsetof(ASmartObjectCollection, Bounds) == 0x0006D8, "Member 'ASmartObjectCollection::Bounds' has a wrong offset!");
-static_assert(offsetof(ASmartObjectCollection, CollectionEntries) == 0x000710, "Member 'ASmartObjectCollection::CollectionEntries' has a wrong offset!");
-static_assert(offsetof(ASmartObjectCollection, RegisteredIdToObjectMap) == 0x000720, "Member 'ASmartObjectCollection::RegisteredIdToObjectMap' has a wrong offset!");
-static_assert(offsetof(ASmartObjectCollection, Definitions) == 0x000770, "Member 'ASmartObjectCollection::Definitions' has a wrong offset!");
+DUMPER7_ASSERTS_ASmartObjectCollection;
+
+// Class SmartObjectsModule.SmartObjectDebugRenderingComponent
+// 0x0000 (0x0810 - 0x0810)
+class USmartObjectDebugRenderingComponent : public UDebugDrawComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SmartObjectDebugRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectDebugRenderingComponent")
+	}
+	static class USmartObjectDebugRenderingComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USmartObjectDebugRenderingComponent>();
+	}
+};
+DUMPER7_ASSERTS_USmartObjectDebugRenderingComponent;
+
+// Class SmartObjectsModule.SmartObjectTestRenderingComponent
+// 0x0000 (0x0810 - 0x0810)
+class USmartObjectTestRenderingComponent final : public USmartObjectDebugRenderingComponent
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SmartObjectTestRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectTestRenderingComponent")
+	}
+	static class USmartObjectTestRenderingComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USmartObjectTestRenderingComponent>();
+	}
+};
+DUMPER7_ASSERTS_USmartObjectTestRenderingComponent;
 
 // Class SmartObjectsModule.SmartObjectComponent
 // 0x0050 (0x0390 - 0x0340)
@@ -219,19 +267,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectComponent">();
+		STATIC_CLASS_IMPL("SmartObjectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectComponent")
 	}
 	static class USmartObjectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectComponent>();
 	}
 };
-static_assert(alignof(USmartObjectComponent) == 0x000010, "Wrong alignment on USmartObjectComponent");
-static_assert(sizeof(USmartObjectComponent) == 0x000390, "Wrong size on USmartObjectComponent");
-static_assert(offsetof(USmartObjectComponent, OnSmartObjectEvent) == 0x000338, "Member 'USmartObjectComponent::OnSmartObjectEvent' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, DefinitionAsset) == 0x000360, "Member 'USmartObjectComponent::DefinitionAsset' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, RegisteredHandle) == 0x000368, "Member 'USmartObjectComponent::RegisteredHandle' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, bCanBePartOfCollection) == 0x000380, "Member 'USmartObjectComponent::bCanBePartOfCollection' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectComponent;
 
 // Class SmartObjectsModule.SmartObjectContainerRenderingComponent
 // 0x0000 (0x07C0 - 0x07C0)
@@ -240,32 +287,38 @@ class USmartObjectContainerRenderingComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectContainerRenderingComponent">();
+		STATIC_CLASS_IMPL("SmartObjectContainerRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectContainerRenderingComponent")
 	}
 	static class USmartObjectContainerRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectContainerRenderingComponent>();
 	}
 };
-static_assert(alignof(USmartObjectContainerRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectContainerRenderingComponent");
-static_assert(sizeof(USmartObjectContainerRenderingComponent) == 0x0007C0, "Wrong size on USmartObjectContainerRenderingComponent");
+DUMPER7_ASSERTS_USmartObjectContainerRenderingComponent;
 
-// Class SmartObjectsModule.SmartObjectDebugRenderingComponent
-// 0x0000 (0x0810 - 0x0810)
-class USmartObjectDebugRenderingComponent : public UDebugDrawComponent
+// Class SmartObjectsModule.SmartObjectRenderingComponent
+// 0x0000 (0x07C0 - 0x07C0)
+class USmartObjectRenderingComponent final : public UPrimitiveComponent
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectDebugRenderingComponent">();
+		STATIC_CLASS_IMPL("SmartObjectRenderingComponent")
 	}
-	static class USmartObjectDebugRenderingComponent* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<USmartObjectDebugRenderingComponent>();
+		STATIC_NAME_IMPL(L"SmartObjectRenderingComponent")
+	}
+	static class USmartObjectRenderingComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USmartObjectRenderingComponent>();
 	}
 };
-static_assert(alignof(USmartObjectDebugRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectDebugRenderingComponent");
-static_assert(sizeof(USmartObjectDebugRenderingComponent) == 0x000810, "Wrong size on USmartObjectDebugRenderingComponent");
+DUMPER7_ASSERTS_USmartObjectRenderingComponent;
 
 // Class SmartObjectsModule.SmartObjectBehaviorDefinition
 // 0x0000 (0x0030 - 0x0030)
@@ -274,15 +327,18 @@ class USmartObjectBehaviorDefinition : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectBehaviorDefinition">();
+		STATIC_CLASS_IMPL("SmartObjectBehaviorDefinition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectBehaviorDefinition")
 	}
 	static class USmartObjectBehaviorDefinition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectBehaviorDefinition>();
 	}
 };
-static_assert(alignof(USmartObjectBehaviorDefinition) == 0x000008, "Wrong alignment on USmartObjectBehaviorDefinition");
-static_assert(sizeof(USmartObjectBehaviorDefinition) == 0x000030, "Wrong size on USmartObjectBehaviorDefinition");
+DUMPER7_ASSERTS_USmartObjectBehaviorDefinition;
 
 // Class SmartObjectsModule.SmartObjectDefinition
 // 0x00F8 (0x0130 - 0x0038)
@@ -302,23 +358,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectDefinition">();
+		STATIC_CLASS_IMPL("SmartObjectDefinition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectDefinition")
 	}
 	static class USmartObjectDefinition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectDefinition>();
 	}
 };
-static_assert(alignof(USmartObjectDefinition) == 0x000008, "Wrong alignment on USmartObjectDefinition");
-static_assert(sizeof(USmartObjectDefinition) == 0x000130, "Wrong size on USmartObjectDefinition");
-static_assert(offsetof(USmartObjectDefinition, Slots) == 0x000038, "Member 'USmartObjectDefinition::Slots' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, DefaultBehaviorDefinitions) == 0x000048, "Member 'USmartObjectDefinition::DefaultBehaviorDefinitions' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, UserTagFilter) == 0x000058, "Member 'USmartObjectDefinition::UserTagFilter' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, Preconditions) == 0x0000A0, "Member 'USmartObjectDefinition::Preconditions' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, ActivityTags) == 0x0000B8, "Member 'USmartObjectDefinition::ActivityTags' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, WorldConditionSchemaClass) == 0x000120, "Member 'USmartObjectDefinition::WorldConditionSchemaClass' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, ActivityTagsMergingPolicy) == 0x000128, "Member 'USmartObjectDefinition::ActivityTagsMergingPolicy' has a wrong offset!");
-static_assert(offsetof(USmartObjectDefinition, UserTagsFilteringPolicy) == 0x000129, "Member 'USmartObjectDefinition::UserTagsFilteringPolicy' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectDefinition;
 
 // Class SmartObjectsModule.SmartObjectSpacePartition
 // 0x0000 (0x0030 - 0x0030)
@@ -327,15 +378,41 @@ class USmartObjectSpacePartition : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSpacePartition">();
+		STATIC_CLASS_IMPL("SmartObjectSpacePartition")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSpacePartition")
 	}
 	static class USmartObjectSpacePartition* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSpacePartition>();
 	}
 };
-static_assert(alignof(USmartObjectSpacePartition) == 0x000008, "Wrong alignment on USmartObjectSpacePartition");
-static_assert(sizeof(USmartObjectSpacePartition) == 0x000030, "Wrong size on USmartObjectSpacePartition");
+DUMPER7_ASSERTS_USmartObjectSpacePartition;
+
+// Class SmartObjectsModule.SmartObjectTest
+// 0x0008 (0x0038 - 0x0030)
+class USmartObjectTest : public UObject
+{
+public:
+	class ASmartObjectTestingActor*               SmartObjectTestingActor;                           // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("SmartObjectTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectTest")
+	}
+	static class USmartObjectTest* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USmartObjectTest>();
+	}
+};
+DUMPER7_ASSERTS_USmartObjectTest;
 
 // Class SmartObjectsModule.SmartObjectHashGrid
 // 0x00A8 (0x00D8 - 0x0030)
@@ -347,15 +424,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectHashGrid">();
+		STATIC_CLASS_IMPL("SmartObjectHashGrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectHashGrid")
 	}
 	static class USmartObjectHashGrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectHashGrid>();
 	}
 };
-static_assert(alignof(USmartObjectHashGrid) == 0x000008, "Wrong alignment on USmartObjectHashGrid");
-static_assert(sizeof(USmartObjectHashGrid) == 0x0000D8, "Wrong size on USmartObjectHashGrid");
+DUMPER7_ASSERTS_USmartObjectHashGrid;
 
 // Class SmartObjectsModule.SmartObjectOctree
 // 0x00C0 (0x00F0 - 0x0030)
@@ -367,15 +447,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectOctree">();
+		STATIC_CLASS_IMPL("SmartObjectOctree")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectOctree")
 	}
 	static class USmartObjectOctree* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectOctree>();
 	}
 };
-static_assert(alignof(USmartObjectOctree) == 0x000008, "Wrong alignment on USmartObjectOctree");
-static_assert(sizeof(USmartObjectOctree) == 0x0000F0, "Wrong size on USmartObjectOctree");
+DUMPER7_ASSERTS_USmartObjectOctree;
 
 // Class SmartObjectsModule.SmartObjectPersistentCollection
 // 0x00B0 (0x0790 - 0x06E0)
@@ -388,49 +471,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectPersistentCollection">();
+		STATIC_CLASS_IMPL("SmartObjectPersistentCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectPersistentCollection")
 	}
 	static class ASmartObjectPersistentCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASmartObjectPersistentCollection>();
 	}
 };
-static_assert(alignof(ASmartObjectPersistentCollection) == 0x000010, "Wrong alignment on ASmartObjectPersistentCollection");
-static_assert(sizeof(ASmartObjectPersistentCollection) == 0x000790, "Wrong size on ASmartObjectPersistentCollection");
-static_assert(offsetof(ASmartObjectPersistentCollection, SmartObjectContainer) == 0x0006D8, "Member 'ASmartObjectPersistentCollection::SmartObjectContainer' has a wrong offset!");
-
-// Class SmartObjectsModule.SmartObjectRenderingComponent
-// 0x0000 (0x07C0 - 0x07C0)
-class USmartObjectRenderingComponent final : public UPrimitiveComponent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SmartObjectRenderingComponent">();
-	}
-	static class USmartObjectRenderingComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USmartObjectRenderingComponent>();
-	}
-};
-static_assert(alignof(USmartObjectRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectRenderingComponent");
-static_assert(sizeof(USmartObjectRenderingComponent) == 0x0007C0, "Wrong size on USmartObjectRenderingComponent");
+DUMPER7_ASSERTS_ASmartObjectPersistentCollection;
 
 // Class SmartObjectsModule.SmartObjectSubsystem
-// 0x0178 (0x01B0 - 0x0038)
+// 0x0178 (0x01B8 - 0x0040)
 class USmartObjectSubsystem final : public UWorldSubsystem
 {
 public:
-	struct FSoftClassPath                         SpacePartitionClassName;                           // 0x0038(0x0028)(ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USmartObjectSpacePartition> SpacePartitionClass;                               // 0x0060(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USmartObjectSpacePartition*             SpacePartition;                                    // 0x0068(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASmartObjectSubsystemRenderingActor*    RenderingActor;                                    // 0x0070(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FSmartObjectContainer                  SmartObjectContainer;                              // 0x0078(0x00B0)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_128[0x10];                                     // 0x0128(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FSmartObjectHandle, struct FSmartObjectRuntime> RuntimeSmartObjects;                 // 0x0138(0x0050)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<class USmartObjectComponent*>          RegisteredSOComponents;                            // 0x0188(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<class USmartObjectComponent*>          PendingSmartObjectRegistration;                    // 0x0198(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1A8[0x8];                                      // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSoftClassPath                         SpacePartitionClassName;                           // 0x0040(0x0028)(ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USmartObjectSpacePartition> SpacePartitionClass;                               // 0x0068(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USmartObjectSpacePartition*             SpacePartition;                                    // 0x0070(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASmartObjectSubsystemRenderingActor*    RenderingActor;                                    // 0x0078(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FSmartObjectContainer                  SmartObjectContainer;                              // 0x0080(0x00B0)(Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_130[0x10];                                     // 0x0130(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FSmartObjectHandle, struct FSmartObjectRuntime> RuntimeSmartObjects;                 // 0x0140(0x0050)(Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<class USmartObjectComponent*>          RegisteredSOComponents;                            // 0x0190(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class USmartObjectComponent*>          PendingSmartObjectRegistration;                    // 0x01A0(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1B0[0x8];                                      // 0x01B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddTagToInstance(const struct FSmartObjectHandle& Handle, const struct FGameplayTag& Tag);
@@ -459,23 +527,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSubsystem">();
+		STATIC_CLASS_IMPL("SmartObjectSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSubsystem")
 	}
 	static class USmartObjectSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSubsystem>();
 	}
 };
-static_assert(alignof(USmartObjectSubsystem) == 0x000008, "Wrong alignment on USmartObjectSubsystem");
-static_assert(sizeof(USmartObjectSubsystem) == 0x0001B0, "Wrong size on USmartObjectSubsystem");
-static_assert(offsetof(USmartObjectSubsystem, SpacePartitionClassName) == 0x000038, "Member 'USmartObjectSubsystem::SpacePartitionClassName' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, SpacePartitionClass) == 0x000060, "Member 'USmartObjectSubsystem::SpacePartitionClass' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, SpacePartition) == 0x000068, "Member 'USmartObjectSubsystem::SpacePartition' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, RenderingActor) == 0x000070, "Member 'USmartObjectSubsystem::RenderingActor' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, SmartObjectContainer) == 0x000078, "Member 'USmartObjectSubsystem::SmartObjectContainer' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, RuntimeSmartObjects) == 0x000138, "Member 'USmartObjectSubsystem::RuntimeSmartObjects' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, RegisteredSOComponents) == 0x000188, "Member 'USmartObjectSubsystem::RegisteredSOComponents' has a wrong offset!");
-static_assert(offsetof(USmartObjectSubsystem, PendingSmartObjectRegistration) == 0x000198, "Member 'USmartObjectSubsystem::PendingSmartObjectRegistration' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectSubsystem;
 
 // Class SmartObjectsModule.SmartObjectSubsystemRenderingComponent
 // 0x0000 (0x0810 - 0x0810)
@@ -484,15 +547,18 @@ class USmartObjectSubsystemRenderingComponent final : public USmartObjectDebugRe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSubsystemRenderingComponent">();
+		STATIC_CLASS_IMPL("SmartObjectSubsystemRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSubsystemRenderingComponent")
 	}
 	static class USmartObjectSubsystemRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSubsystemRenderingComponent>();
 	}
 };
-static_assert(alignof(USmartObjectSubsystemRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectSubsystemRenderingComponent");
-static_assert(sizeof(USmartObjectSubsystemRenderingComponent) == 0x000810, "Wrong size on USmartObjectSubsystemRenderingComponent");
+DUMPER7_ASSERTS_USmartObjectSubsystemRenderingComponent;
 
 // Class SmartObjectsModule.SmartObjectSubsystemRenderingActor
 // 0x0000 (0x06E0 - 0x06E0)
@@ -504,37 +570,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSubsystemRenderingActor">();
+		STATIC_CLASS_IMPL("SmartObjectSubsystemRenderingActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSubsystemRenderingActor")
 	}
 	static class ASmartObjectSubsystemRenderingActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASmartObjectSubsystemRenderingActor>();
 	}
 };
-static_assert(alignof(ASmartObjectSubsystemRenderingActor) == 0x000010, "Wrong alignment on ASmartObjectSubsystemRenderingActor");
-static_assert(sizeof(ASmartObjectSubsystemRenderingActor) == 0x0006E0, "Wrong size on ASmartObjectSubsystemRenderingActor");
-static_assert(offsetof(ASmartObjectSubsystemRenderingActor, RenderingComponent) == 0x0006D8, "Member 'ASmartObjectSubsystemRenderingActor::RenderingComponent' has a wrong offset!");
-
-// Class SmartObjectsModule.SmartObjectTest
-// 0x0008 (0x0038 - 0x0030)
-class USmartObjectTest : public UObject
-{
-public:
-	class ASmartObjectTestingActor*               SmartObjectTestingActor;                           // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SmartObjectTest">();
-	}
-	static class USmartObjectTest* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USmartObjectTest>();
-	}
-};
-static_assert(alignof(USmartObjectTest) == 0x000008, "Wrong alignment on USmartObjectTest");
-static_assert(sizeof(USmartObjectTest) == 0x000038, "Wrong size on USmartObjectTest");
-static_assert(offsetof(USmartObjectTest, SmartObjectTestingActor) == 0x000030, "Member 'USmartObjectTest::SmartObjectTestingActor' has a wrong offset!");
+DUMPER7_ASSERTS_ASmartObjectSubsystemRenderingActor;
 
 // Class SmartObjectsModule.SmartObjectSimpleQueryTest
 // 0x0198 (0x01D0 - 0x0038)
@@ -548,34 +595,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSimpleQueryTest">();
+		STATIC_CLASS_IMPL("SmartObjectSimpleQueryTest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSimpleQueryTest")
 	}
 	static class USmartObjectSimpleQueryTest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSimpleQueryTest>();
 	}
 };
-static_assert(alignof(USmartObjectSimpleQueryTest) == 0x000010, "Wrong alignment on USmartObjectSimpleQueryTest");
-static_assert(sizeof(USmartObjectSimpleQueryTest) == 0x0001D0, "Wrong size on USmartObjectSimpleQueryTest");
-static_assert(offsetof(USmartObjectSimpleQueryTest, Request) == 0x000040, "Member 'USmartObjectSimpleQueryTest::Request' has a wrong offset!");
-static_assert(offsetof(USmartObjectSimpleQueryTest, Results) == 0x0001C0, "Member 'USmartObjectSimpleQueryTest::Results' has a wrong offset!");
-
-// Class SmartObjectsModule.SmartObjectTestRenderingComponent
-// 0x0000 (0x0810 - 0x0810)
-class USmartObjectTestRenderingComponent final : public USmartObjectDebugRenderingComponent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SmartObjectTestRenderingComponent">();
-	}
-	static class USmartObjectTestRenderingComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USmartObjectTestRenderingComponent>();
-	}
-};
-static_assert(alignof(USmartObjectTestRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectTestRenderingComponent");
-static_assert(sizeof(USmartObjectTestRenderingComponent) == 0x000810, "Wrong size on USmartObjectTestRenderingComponent");
+DUMPER7_ASSERTS_USmartObjectSimpleQueryTest;
 
 // Class SmartObjectsModule.SmartObjectTestingActor
 // 0x0020 (0x0700 - 0x06E0)
@@ -595,19 +626,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectTestingActor">();
+		STATIC_CLASS_IMPL("SmartObjectTestingActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectTestingActor")
 	}
 	static class ASmartObjectTestingActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASmartObjectTestingActor>();
 	}
 };
-static_assert(alignof(ASmartObjectTestingActor) == 0x000010, "Wrong alignment on ASmartObjectTestingActor");
-static_assert(sizeof(ASmartObjectTestingActor) == 0x000700, "Wrong size on ASmartObjectTestingActor");
-static_assert(offsetof(ASmartObjectTestingActor, Tests) == 0x0006D8, "Member 'ASmartObjectTestingActor::Tests' has a wrong offset!");
-static_assert(offsetof(ASmartObjectTestingActor, RenderingComponent) == 0x0006E8, "Member 'ASmartObjectTestingActor::RenderingComponent' has a wrong offset!");
-static_assert(offsetof(ASmartObjectTestingActor, SmartObjectSubsystem) == 0x0006F0, "Member 'ASmartObjectTestingActor::SmartObjectSubsystem' has a wrong offset!");
-static_assert(offsetof(ASmartObjectTestingActor, bRunTestsEachFrame) == 0x0006F8, "Member 'ASmartObjectTestingActor::bRunTestsEachFrame' has a wrong offset!");
+DUMPER7_ASSERTS_ASmartObjectTestingActor;
 
 // Class SmartObjectsModule.SmartObjectSlotValidationFilter
 // 0x0108 (0x0138 - 0x0030)
@@ -622,18 +652,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectSlotValidationFilter">();
+		STATIC_CLASS_IMPL("SmartObjectSlotValidationFilter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectSlotValidationFilter")
 	}
 	static class USmartObjectSlotValidationFilter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectSlotValidationFilter>();
 	}
 };
-static_assert(alignof(USmartObjectSlotValidationFilter) == 0x000008, "Wrong alignment on USmartObjectSlotValidationFilter");
-static_assert(sizeof(USmartObjectSlotValidationFilter) == 0x000138, "Wrong size on USmartObjectSlotValidationFilter");
-static_assert(offsetof(USmartObjectSlotValidationFilter, EntryParameters) == 0x000030, "Member 'USmartObjectSlotValidationFilter::EntryParameters' has a wrong offset!");
-static_assert(offsetof(USmartObjectSlotValidationFilter, bUseEntryParametersForExit) == 0x0000B0, "Member 'USmartObjectSlotValidationFilter::bUseEntryParametersForExit' has a wrong offset!");
-static_assert(offsetof(USmartObjectSlotValidationFilter, ExitParameters) == 0x0000B8, "Member 'USmartObjectSlotValidationFilter::ExitParameters' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectSlotValidationFilter;
 
 // Class SmartObjectsModule.SmartObjectUserComponent
 // 0x0008 (0x0110 - 0x0108)
@@ -645,16 +675,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectUserComponent">();
+		STATIC_CLASS_IMPL("SmartObjectUserComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectUserComponent")
 	}
 	static class USmartObjectUserComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectUserComponent>();
 	}
 };
-static_assert(alignof(USmartObjectUserComponent) == 0x000008, "Wrong alignment on USmartObjectUserComponent");
-static_assert(sizeof(USmartObjectUserComponent) == 0x000110, "Wrong size on USmartObjectUserComponent");
-static_assert(offsetof(USmartObjectUserComponent, ValidationFilter) == 0x000108, "Member 'USmartObjectUserComponent::ValidationFilter' has a wrong offset!");
+DUMPER7_ASSERTS_USmartObjectUserComponent;
 
 // Class SmartObjectsModule.SmartObjectWorldConditionSchema
 // 0x0050 (0x0090 - 0x0040)
@@ -666,15 +698,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectWorldConditionSchema">();
+		STATIC_CLASS_IMPL("SmartObjectWorldConditionSchema")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectWorldConditionSchema")
 	}
 	static class USmartObjectWorldConditionSchema* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectWorldConditionSchema>();
 	}
 };
-static_assert(alignof(USmartObjectWorldConditionSchema) == 0x000008, "Wrong alignment on USmartObjectWorldConditionSchema");
-static_assert(sizeof(USmartObjectWorldConditionSchema) == 0x000090, "Wrong size on USmartObjectWorldConditionSchema");
+DUMPER7_ASSERTS_USmartObjectWorldConditionSchema;
 
 }
 

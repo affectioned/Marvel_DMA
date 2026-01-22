@@ -23,9 +23,7 @@ struct PyAbility_103903_CanActivate final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_103903_CanActivate) == 0x000001, "Wrong alignment on PyAbility_103903_CanActivate");
-static_assert(sizeof(PyAbility_103903_CanActivate) == 0x000001, "Wrong size on PyAbility_103903_CanActivate");
-static_assert(offsetof(PyAbility_103903_CanActivate, ReturnValue) == 0x000000, "Member 'PyAbility_103903_CanActivate::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103903_CanActivate;
 
 // PythonFunction PyAbility_103903.PyAbility_103903.OnNotifySpawnProjectileSuccess
 // 0x0170 (0x0170 - 0x0000)
@@ -35,10 +33,7 @@ public:
 	class AActor*                                 SpawnActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Data;                                              // 0x0008(0x0168)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyAbility_103903_OnNotifySpawnProjectileSuccess) == 0x000008, "Wrong alignment on PyAbility_103903_OnNotifySpawnProjectileSuccess");
-static_assert(sizeof(PyAbility_103903_OnNotifySpawnProjectileSuccess) == 0x000170, "Wrong size on PyAbility_103903_OnNotifySpawnProjectileSuccess");
-static_assert(offsetof(PyAbility_103903_OnNotifySpawnProjectileSuccess, SpawnActor) == 0x000000, "Member 'PyAbility_103903_OnNotifySpawnProjectileSuccess::SpawnActor' has a wrong offset!");
-static_assert(offsetof(PyAbility_103903_OnNotifySpawnProjectileSuccess, Data) == 0x000008, "Member 'PyAbility_103903_OnNotifySpawnProjectileSuccess::Data' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_103903_OnNotifySpawnProjectileSuccess;
 
 }
 

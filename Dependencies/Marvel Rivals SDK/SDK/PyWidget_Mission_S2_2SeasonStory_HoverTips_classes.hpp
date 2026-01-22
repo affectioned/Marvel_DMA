@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_S2_2SeasonStory_HoverTips.PyWidget_Mission_S2_2SeasonStory_HoverTips
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x05E0 - 0x05E0)
 class UPyWidget_Mission_S2_2SeasonStory_HoverTips final : public UPyWidget_CommonTipsBase
 {
 public:
@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_S2_2SeasonStory_HoverTips">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_S2_2SeasonStory_HoverTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_S2_2SeasonStory_HoverTips")
 	}
 	static class UPyWidget_Mission_S2_2SeasonStory_HoverTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_S2_2SeasonStory_HoverTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_S2_2SeasonStory_HoverTips) == 0x000008, "Wrong alignment on UPyWidget_Mission_S2_2SeasonStory_HoverTips");
-static_assert(sizeof(UPyWidget_Mission_S2_2SeasonStory_HoverTips) == 0x0005D8, "Wrong size on UPyWidget_Mission_S2_2SeasonStory_HoverTips");
+DUMPER7_ASSERTS_UPyWidget_Mission_S2_2SeasonStory_HoverTips;
 
 }
 

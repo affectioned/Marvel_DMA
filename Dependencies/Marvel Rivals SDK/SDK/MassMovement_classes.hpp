@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassApplyMovementProcessor">();
+		STATIC_CLASS_IMPL("MassApplyMovementProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassApplyMovementProcessor")
 	}
 	static class UMassApplyMovementProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassApplyMovementProcessor>();
 	}
 };
-static_assert(alignof(UMassApplyMovementProcessor) == 0x000008, "Wrong alignment on UMassApplyMovementProcessor");
-static_assert(sizeof(UMassApplyMovementProcessor) == 0x000370, "Wrong size on UMassApplyMovementProcessor");
+DUMPER7_ASSERTS_UMassApplyMovementProcessor;
 
 // Class MassMovement.MassMovementSettings
 // 0x0010 (0x0040 - 0x0030)
@@ -48,16 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMovementSettings">();
+		STATIC_CLASS_IMPL("MassMovementSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMovementSettings")
 	}
 	static class UMassMovementSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassMovementSettings>();
 	}
 };
-static_assert(alignof(UMassMovementSettings) == 0x000008, "Wrong alignment on UMassMovementSettings");
-static_assert(sizeof(UMassMovementSettings) == 0x000040, "Wrong size on UMassMovementSettings");
-static_assert(offsetof(UMassMovementSettings, MovementStyles) == 0x000030, "Member 'UMassMovementSettings::MovementStyles' has a wrong offset!");
+DUMPER7_ASSERTS_UMassMovementSettings;
 
 // Class MassMovement.MassMovementTrait
 // 0x0028 (0x0058 - 0x0030)
@@ -69,16 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassMovementTrait">();
+		STATIC_CLASS_IMPL("MassMovementTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassMovementTrait")
 	}
 	static class UMassMovementTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassMovementTrait>();
 	}
 };
-static_assert(alignof(UMassMovementTrait) == 0x000008, "Wrong alignment on UMassMovementTrait");
-static_assert(sizeof(UMassMovementTrait) == 0x000058, "Wrong size on UMassMovementTrait");
-static_assert(offsetof(UMassMovementTrait, Movement) == 0x000030, "Member 'UMassMovementTrait::Movement' has a wrong offset!");
+DUMPER7_ASSERTS_UMassMovementTrait;
 
 // Class MassMovement.MassSimpleMovementTrait
 // 0x0000 (0x0030 - 0x0030)
@@ -87,15 +94,18 @@ class UMassSimpleMovementTrait final : public UMassEntityTraitBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimpleMovementTrait">();
+		STATIC_CLASS_IMPL("MassSimpleMovementTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimpleMovementTrait")
 	}
 	static class UMassSimpleMovementTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimpleMovementTrait>();
 	}
 };
-static_assert(alignof(UMassSimpleMovementTrait) == 0x000008, "Wrong alignment on UMassSimpleMovementTrait");
-static_assert(sizeof(UMassSimpleMovementTrait) == 0x000030, "Wrong size on UMassSimpleMovementTrait");
+DUMPER7_ASSERTS_UMassSimpleMovementTrait;
 
 // Class MassMovement.MassSimpleMovementProcessor
 // 0x02A8 (0x0370 - 0x00C8)
@@ -107,15 +117,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassSimpleMovementProcessor">();
+		STATIC_CLASS_IMPL("MassSimpleMovementProcessor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassSimpleMovementProcessor")
 	}
 	static class UMassSimpleMovementProcessor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassSimpleMovementProcessor>();
 	}
 };
-static_assert(alignof(UMassSimpleMovementProcessor) == 0x000008, "Wrong alignment on UMassSimpleMovementProcessor");
-static_assert(sizeof(UMassSimpleMovementProcessor) == 0x000370, "Wrong size on UMassSimpleMovementProcessor");
+DUMPER7_ASSERTS_UMassSimpleMovementProcessor;
 
 // Class MassMovement.MassVelocityRandomizerTrait
 // 0x0010 (0x0040 - 0x0030)
@@ -130,18 +143,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassVelocityRandomizerTrait">();
+		STATIC_CLASS_IMPL("MassVelocityRandomizerTrait")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassVelocityRandomizerTrait")
 	}
 	static class UMassVelocityRandomizerTrait* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassVelocityRandomizerTrait>();
 	}
 };
-static_assert(alignof(UMassVelocityRandomizerTrait) == 0x000008, "Wrong alignment on UMassVelocityRandomizerTrait");
-static_assert(sizeof(UMassVelocityRandomizerTrait) == 0x000040, "Wrong size on UMassVelocityRandomizerTrait");
-static_assert(offsetof(UMassVelocityRandomizerTrait, MinSpeed) == 0x000030, "Member 'UMassVelocityRandomizerTrait::MinSpeed' has a wrong offset!");
-static_assert(offsetof(UMassVelocityRandomizerTrait, MaxSpeed) == 0x000034, "Member 'UMassVelocityRandomizerTrait::MaxSpeed' has a wrong offset!");
-static_assert(offsetof(UMassVelocityRandomizerTrait, bSetZComponent) == 0x000038, "Member 'UMassVelocityRandomizerTrait::bSetZComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UMassVelocityRandomizerTrait;
 
 // Class MassMovement.MassRandomVelocityInitializer
 // 0x02B0 (0x0390 - 0x00E0)
@@ -157,18 +170,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MassRandomVelocityInitializer">();
+		STATIC_CLASS_IMPL("MassRandomVelocityInitializer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MassRandomVelocityInitializer")
 	}
 	static class UMassRandomVelocityInitializer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMassRandomVelocityInitializer>();
 	}
 };
-static_assert(alignof(UMassRandomVelocityInitializer) == 0x000008, "Wrong alignment on UMassRandomVelocityInitializer");
-static_assert(sizeof(UMassRandomVelocityInitializer) == 0x000390, "Wrong size on UMassRandomVelocityInitializer");
-static_assert(offsetof(UMassRandomVelocityInitializer, MinSpeed) == 0x000380, "Member 'UMassRandomVelocityInitializer::MinSpeed' has a wrong offset!");
-static_assert(offsetof(UMassRandomVelocityInitializer, MaxSpeed) == 0x000384, "Member 'UMassRandomVelocityInitializer::MaxSpeed' has a wrong offset!");
-static_assert(offsetof(UMassRandomVelocityInitializer, bSetZComponent) == 0x000388, "Member 'UMassRandomVelocityInitializer::bSetZComponent' has a wrong offset!");
+DUMPER7_ASSERTS_UMassRandomVelocityInitializer;
 
 }
 

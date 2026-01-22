@@ -19,20 +19,20 @@ namespace SDK
 {
 
 // PythonClass PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin_ListItem
-// 0x0078 (0x07A0 - 0x0728)
+// 0x0078 (0x07F8 - 0x0780)
 class UPyWidget_BattlePass_ChangeGalactraSkin_ListItem final : public UPyWidget_Button
 {
 public:
-	class UMarvelTextBlock*                       Text_Item;                                         // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Img_Select;                                        // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Time;                                      // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Time;                                         // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_Expired;                                      // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_NormalColor;                                  // 0x0750(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_SelectColor;                                  // 0x0764(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            Text_ExpiredColor;                                 // 0x0778(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_78C[0x4];                                      // 0x078C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& ItemId)> OnItemClicked;                       // 0x0790(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Item;                                         // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Img_Select;                                        // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Time;                                      // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Time;                                         // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_Expired;                                      // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_NormalColor;                                  // 0x07A8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_SelectColor;                                  // 0x07BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            Text_ExpiredColor;                                 // 0x07D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7E4[0x4];                                      // 0x07E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& ItemId)> OnItemClicked;                       // 0x07E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -42,32 +42,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_ChangeGalactraSkin_ListItem">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_ChangeGalactraSkin_ListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_ChangeGalactraSkin_ListItem")
 	}
 	static class UPyWidget_BattlePass_ChangeGalactraSkin_ListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_ChangeGalactraSkin_ListItem>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_ChangeGalactraSkin_ListItem");
-static_assert(sizeof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem) == 0x0007A0, "Wrong size on UPyWidget_BattlePass_ChangeGalactraSkin_ListItem");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_Item) == 0x000728, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Img_Select) == 0x000730, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Img_Select' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Overlay_Time) == 0x000738, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Overlay_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_Time) == 0x000740, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_Time' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_Expired) == 0x000748, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_Expired' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_NormalColor) == 0x000750, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_SelectColor) == 0x000764, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_SelectColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, Text_ExpiredColor) == 0x000778, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::Text_ExpiredColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_ListItem, OnItemClicked) == 0x000790, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_ListItem::OnItemClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_ChangeGalactraSkin_ListItem;
 
 // PythonClass PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_BattlePass_ChangeGalactraSkin final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelCanvasPanel*                     CanvasPanel_Main;                                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -76,29 +70,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_ChangeGalactraSkin">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_ChangeGalactraSkin")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_ChangeGalactraSkin")
 	}
 	static class UPyWidget_BattlePass_ChangeGalactraSkin* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_ChangeGalactraSkin>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_ChangeGalactraSkin) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_ChangeGalactraSkin");
-static_assert(sizeof(UPyWidget_BattlePass_ChangeGalactraSkin) == 0x0005C8, "Wrong size on UPyWidget_BattlePass_ChangeGalactraSkin");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin, CanvasPanel_Main) == 0x0005C0, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin::CanvasPanel_Main' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_ChangeGalactraSkin;
 
 // PythonClass PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin_Btn
-// 0x0040 (0x0768 - 0x0728)
+// 0x0040 (0x07C0 - 0x0780)
 class UPyWidget_BattlePass_ChangeGalactraSkin_Btn final : public UPyWidget_Button
 {
 public:
-	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x0728(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelOverlay*                         Overlay_Select;                                    // 0x0738(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Icon_Item_Hover;                                   // 0x0740(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Icon_Item_Press;                                   // 0x0748(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelImage*                           Icon_Item_Normal;                                  // 0x0750(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsSelected)> OnSelectStateChanged;                            // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Normal;                                    // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Hover;                                     // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelOverlay*                         Overlay_Select;                                    // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Icon_Item_Hover;                                   // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Icon_Item_Press;                                   // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelImage*                           Icon_Item_Normal;                                  // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsSelected)> OnSelectStateChanged;                            // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -109,31 +105,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_ChangeGalactraSkin_Btn">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_ChangeGalactraSkin_Btn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_ChangeGalactraSkin_Btn")
 	}
 	static class UPyWidget_BattlePass_ChangeGalactraSkin_Btn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_ChangeGalactraSkin_Btn>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_ChangeGalactraSkin_Btn");
-static_assert(sizeof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn) == 0x000768, "Wrong size on UPyWidget_BattlePass_ChangeGalactraSkin_Btn");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Overlay_Normal) == 0x000728, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Overlay_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Overlay_Hover) == 0x000730, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Overlay_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Overlay_Select) == 0x000738, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Overlay_Select' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Icon_Item_Hover) == 0x000740, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Icon_Item_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Icon_Item_Press) == 0x000748, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Icon_Item_Press' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, Icon_Item_Normal) == 0x000750, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::Icon_Item_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_Btn, OnSelectStateChanged) == 0x000758, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_Btn::OnSelectStateChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_ChangeGalactraSkin_Btn;
 
 // PythonClass PyWidget_BattlePass_ChangeGalactraSkin.PyWidget_BattlePass_ChangeGalactraSkin_List
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_BattlePass_ChangeGalactraSkin_List final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                Class_Item;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelVerticalBox*                     VBox_SkinItem_List;                                // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                Class_Item;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelVerticalBox*                     VBox_SkinItem_List;                                // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -143,17 +135,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_BattlePass_ChangeGalactraSkin_List">();
+		STATIC_CLASS_IMPL("PyWidget_BattlePass_ChangeGalactraSkin_List")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_BattlePass_ChangeGalactraSkin_List")
 	}
 	static class UPyWidget_BattlePass_ChangeGalactraSkin_List* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_BattlePass_ChangeGalactraSkin_List>();
 	}
 };
-static_assert(alignof(UPyWidget_BattlePass_ChangeGalactraSkin_List) == 0x000008, "Wrong alignment on UPyWidget_BattlePass_ChangeGalactraSkin_List");
-static_assert(sizeof(UPyWidget_BattlePass_ChangeGalactraSkin_List) == 0x0005D0, "Wrong size on UPyWidget_BattlePass_ChangeGalactraSkin_List");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_List, Class_Item) == 0x0005C0, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_List::Class_Item' has a wrong offset!");
-static_assert(offsetof(UPyWidget_BattlePass_ChangeGalactraSkin_List, VBox_SkinItem_List) == 0x0005C8, "Member 'UPyWidget_BattlePass_ChangeGalactraSkin_List::VBox_SkinItem_List' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_BattlePass_ChangeGalactraSkin_List;
 
 }
 

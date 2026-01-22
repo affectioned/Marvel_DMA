@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PyBenchmarkController_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "PyBenchmarkController_structs.hpp"
 
 
 namespace SDK
@@ -43,20 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyEscortOnlineBenchmarkCtl">();
+		STATIC_CLASS_IMPL("PyEscortOnlineBenchmarkCtl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyEscortOnlineBenchmarkCtl")
 	}
 	static class APyEscortOnlineBenchmarkCtl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyEscortOnlineBenchmarkCtl>();
 	}
 };
-static_assert(alignof(APyEscortOnlineBenchmarkCtl) == 0x000010, "Wrong alignment on APyEscortOnlineBenchmarkCtl");
-static_assert(sizeof(APyEscortOnlineBenchmarkCtl) == 0x000710, "Wrong size on APyEscortOnlineBenchmarkCtl");
-static_assert(offsetof(APyEscortOnlineBenchmarkCtl, InitCamera) == 0x0006E0, "Member 'APyEscortOnlineBenchmarkCtl::InitCamera' has a wrong offset!");
-static_assert(offsetof(APyEscortOnlineBenchmarkCtl, LevelSequencePilot) == 0x0006E8, "Member 'APyEscortOnlineBenchmarkCtl::LevelSequencePilot' has a wrong offset!");
-static_assert(offsetof(APyEscortOnlineBenchmarkCtl, DelayTime) == 0x0006F0, "Member 'APyEscortOnlineBenchmarkCtl::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyEscortOnlineBenchmarkCtl, LoopCount) == 0x0006F4, "Member 'APyEscortOnlineBenchmarkCtl::LoopCount' has a wrong offset!");
-static_assert(offsetof(APyEscortOnlineBenchmarkCtl, BenchmarkTimeConfig) == 0x0006F8, "Member 'APyEscortOnlineBenchmarkCtl::BenchmarkTimeConfig' has a wrong offset!");
+DUMPER7_ASSERTS_APyEscortOnlineBenchmarkCtl;
 
 }
 

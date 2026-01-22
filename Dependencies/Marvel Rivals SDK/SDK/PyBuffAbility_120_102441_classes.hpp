@@ -18,15 +18,15 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_120_102441.PyBuffAbility_120_10244180
-// 0x0020 (0x1390 - 0x1370)
+// 0x0020 (0x13A8 - 0x1388)
 class UPyBuffAbility_120_10244180 final : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ProjectileID;                                      // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1374[0x4];                                     // 0x1374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FMarvelBuffSpecInfo>            BuffInfos;                                         // 0x1378(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         SpawnNum;                                          // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TriggerInterval;                                   // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ProjectileID;                                      // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_138C[0x4];                                     // 0x138C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FMarvelBuffSpecInfo>            BuffInfos;                                         // 0x1390(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         SpawnNum;                                          // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TriggerInterval;                                   // 0x13A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -38,19 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_120_10244180">();
+		STATIC_CLASS_IMPL("PyBuffAbility_120_10244180")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_120_10244180")
 	}
 	static class UPyBuffAbility_120_10244180* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_120_10244180>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_120_10244180) == 0x000008, "Wrong alignment on UPyBuffAbility_120_10244180");
-static_assert(sizeof(UPyBuffAbility_120_10244180) == 0x001390, "Wrong size on UPyBuffAbility_120_10244180");
-static_assert(offsetof(UPyBuffAbility_120_10244180, ProjectileID) == 0x001370, "Member 'UPyBuffAbility_120_10244180::ProjectileID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10244180, BuffInfos) == 0x001378, "Member 'UPyBuffAbility_120_10244180::BuffInfos' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10244180, SpawnNum) == 0x001388, "Member 'UPyBuffAbility_120_10244180::SpawnNum' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_120_10244180, TriggerInterval) == 0x00138C, "Member 'UPyBuffAbility_120_10244180::TriggerInterval' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_120_10244180;
 
 }
 

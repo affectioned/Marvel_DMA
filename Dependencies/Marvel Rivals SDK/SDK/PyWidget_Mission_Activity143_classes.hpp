@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mission_Activity143.PyWidget_Mission_Activity143_Top
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_Activity143_Top final : public UPyMarvelUserWidget
 {
 public:
@@ -31,18 +31,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_Activity143_Top">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_Activity143_Top")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_Activity143_Top")
 	}
 	static class UPyWidget_Mission_Activity143_Top* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_Activity143_Top>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_Activity143_Top) == 0x000008, "Wrong alignment on UPyWidget_Mission_Activity143_Top");
-static_assert(sizeof(UPyWidget_Mission_Activity143_Top) == 0x0005C0, "Wrong size on UPyWidget_Mission_Activity143_Top");
+DUMPER7_ASSERTS_UPyWidget_Mission_Activity143_Top;
 
 // PythonClass PyWidget_Mission_Activity143.PyWidget_Mission_Activity143_Event
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Mission_Activity143_Event final : public UPyMarvelUserWidget
 {
 public:
@@ -60,40 +63,46 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_Activity143_Event">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_Activity143_Event")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_Activity143_Event")
 	}
 	static class UPyWidget_Mission_Activity143_Event* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_Activity143_Event>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_Activity143_Event) == 0x000008, "Wrong alignment on UPyWidget_Mission_Activity143_Event");
-static_assert(sizeof(UPyWidget_Mission_Activity143_Event) == 0x0005C0, "Wrong size on UPyWidget_Mission_Activity143_Event");
+DUMPER7_ASSERTS_UPyWidget_Mission_Activity143_Event;
 
 // PythonClass PyWidget_Mission_Activity143.EventWidgetItemData
 // 0x0000 (0x0030 - 0x0030)
-class UEventWidgetItemData final : public UObject
+class PyWidget_Mission_Activity143::UEventWidgetItemData final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EventWidgetItemData">();
+		STATIC_CLASS_IMPL_FULLNAME("PythonClass PyWidget_Mission_Activity143.EventWidgetItemData")
 	}
-	static class UEventWidgetItemData* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<UEventWidgetItemData>();
+		STATIC_NAME_IMPL(L"EventWidgetItemData")
+	}
+	static class PyWidget_Mission_Activity143::UEventWidgetItemData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<PyWidget_Mission_Activity143::UEventWidgetItemData>();
 	}
 };
-static_assert(alignof(UEventWidgetItemData) == 0x000008, "Wrong alignment on UEventWidgetItemData");
-static_assert(sizeof(UEventWidgetItemData) == 0x000030, "Wrong size on UEventWidgetItemData");
+DUMPER7_ASSERTS_PyWidget_Mission_Activity143__UEventWidgetItemData;
 
 // PythonClass PyWidget_Mission_Activity143.PyWidget_Mission_Activity143_Main
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Mission_Activity143_Main final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                GroupClass;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                GroupClass;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -104,25 +113,27 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_Activity143_Main">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_Activity143_Main")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_Activity143_Main")
 	}
 	static class UPyWidget_Mission_Activity143_Main* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_Activity143_Main>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_Activity143_Main) == 0x000008, "Wrong alignment on UPyWidget_Mission_Activity143_Main");
-static_assert(sizeof(UPyWidget_Mission_Activity143_Main) == 0x0005C8, "Wrong size on UPyWidget_Mission_Activity143_Main");
-static_assert(offsetof(UPyWidget_Mission_Activity143_Main, GroupClass) == 0x0005C0, "Member 'UPyWidget_Mission_Activity143_Main::GroupClass' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_Activity143_Main;
 
 // PythonClass PyWidget_Mission_Activity143.PyWidget_Mission_Activity143_Item
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UPyWidget_Mission_Activity143_Item final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NormalProgressColor;                               // 0x05BC(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            PreviewProgressColor;                              // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            NormalProgressColor;                               // 0x05C4(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            PreviewProgressColor;                              // 0x05D8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -131,17 +142,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mission_Activity143_Item">();
+		STATIC_CLASS_IMPL("PyWidget_Mission_Activity143_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mission_Activity143_Item")
 	}
 	static class UPyWidget_Mission_Activity143_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mission_Activity143_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_Mission_Activity143_Item) == 0x000008, "Wrong alignment on UPyWidget_Mission_Activity143_Item");
-static_assert(sizeof(UPyWidget_Mission_Activity143_Item) == 0x0005E8, "Wrong size on UPyWidget_Mission_Activity143_Item");
-static_assert(offsetof(UPyWidget_Mission_Activity143_Item, NormalProgressColor) == 0x0005BC, "Member 'UPyWidget_Mission_Activity143_Item::NormalProgressColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mission_Activity143_Item, PreviewProgressColor) == 0x0005D0, "Member 'UPyWidget_Mission_Activity143_Item::PreviewProgressColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mission_Activity143_Item;
 
 }
 

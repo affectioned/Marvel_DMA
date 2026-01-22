@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_HeroShapeMenu.PyWidget_HeroShapeMenu
-// 0x0040 (0x0640 - 0x0600)
+// 0x0040 (0x0648 - 0x0608)
 class UPyWidget_HeroShapeMenu : public UPyWidget_TabMenuBase
 {
 public:
-	bool                                          IsShowGamepadKey;                                  // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsGamepadFaceBtnTop;                               // 0x0601(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_602[0x2];                                      // 0x0602(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ShapeItemColor;                                    // 0x0604(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsShapeUnitAutoChangeColor;                        // 0x0614(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_615[0x3];                                      // 0x0615(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UUserWidget>                HeroShapeMenuBtnClass;                             // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ShapeID, int32 PageID)> OnSwitchShapePage;                   // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	bool                                          IsShowGamepadKey;                                  // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsGamepadFaceBtnTop;                               // 0x0609(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_60A[0x2];                                      // 0x060A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           ShapeItemColor;                                    // 0x060C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsShapeUnitAutoChangeColor;                        // 0x061C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61D[0x3];                                      // 0x061D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UUserWidget>                HeroShapeMenuBtnClass;                             // 0x0620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShapeID)> OnSwitchShape;                                     // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ShapeID, int32 PageID)> OnSwitchShapePage;                   // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -42,22 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_HeroShapeMenu">();
+		STATIC_CLASS_IMPL("PyWidget_HeroShapeMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_HeroShapeMenu")
 	}
 	static class UPyWidget_HeroShapeMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_HeroShapeMenu>();
 	}
 };
-static_assert(alignof(UPyWidget_HeroShapeMenu) == 0x000008, "Wrong alignment on UPyWidget_HeroShapeMenu");
-static_assert(sizeof(UPyWidget_HeroShapeMenu) == 0x000640, "Wrong size on UPyWidget_HeroShapeMenu");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, IsShowGamepadKey) == 0x000600, "Member 'UPyWidget_HeroShapeMenu::IsShowGamepadKey' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, IsGamepadFaceBtnTop) == 0x000601, "Member 'UPyWidget_HeroShapeMenu::IsGamepadFaceBtnTop' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, ShapeItemColor) == 0x000604, "Member 'UPyWidget_HeroShapeMenu::ShapeItemColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, IsShapeUnitAutoChangeColor) == 0x000614, "Member 'UPyWidget_HeroShapeMenu::IsShapeUnitAutoChangeColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, HeroShapeMenuBtnClass) == 0x000618, "Member 'UPyWidget_HeroShapeMenu::HeroShapeMenuBtnClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, OnSwitchShape) == 0x000620, "Member 'UPyWidget_HeroShapeMenu::OnSwitchShape' has a wrong offset!");
-static_assert(offsetof(UPyWidget_HeroShapeMenu, OnSwitchShapePage) == 0x000630, "Member 'UPyWidget_HeroShapeMenu::OnSwitchShapePage' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_HeroShapeMenu;
 
 }
 

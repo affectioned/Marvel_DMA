@@ -21,13 +21,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Secondary_DataCenter.PyWidget_Secondary_DataCenter
-// 0x0018 (0x05D8 - 0x05C0)
+// 0x0018 (0x05E0 - 0x05C8)
 class UPyWidget_Secondary_DataCenter final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UListView*                              ListView_MessageList;                              // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                MenuGuideTips;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UListView*                              ListView_MessageList;                              // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                MenuGuideTips;                                     // 0x05D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Secondary_DataCenter">();
+		STATIC_CLASS_IMPL("PyWidget_Secondary_DataCenter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Secondary_DataCenter")
 	}
 	static class UPyWidget_Secondary_DataCenter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Secondary_DataCenter>();
 	}
 };
-static_assert(alignof(UPyWidget_Secondary_DataCenter) == 0x000008, "Wrong alignment on UPyWidget_Secondary_DataCenter");
-static_assert(sizeof(UPyWidget_Secondary_DataCenter) == 0x0005D8, "Wrong size on UPyWidget_Secondary_DataCenter");
-static_assert(offsetof(UPyWidget_Secondary_DataCenter, ListView_MessageList) == 0x0005C0, "Member 'UPyWidget_Secondary_DataCenter::ListView_MessageList' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Secondary_DataCenter, MenuGuideTips) == 0x0005C8, "Member 'UPyWidget_Secondary_DataCenter::MenuGuideTips' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Secondary_DataCenter;
 
 // PythonClass PyWidget_Secondary_DataCenter.DataCenterItem
 // 0x0000 (0x0030 - 0x0030)
@@ -55,29 +56,32 @@ class UDataCenterItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataCenterItem">();
+		STATIC_CLASS_IMPL("DataCenterItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataCenterItem")
 	}
 	static class UDataCenterItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataCenterItem>();
 	}
 };
-static_assert(alignof(UDataCenterItem) == 0x000008, "Wrong alignment on UDataCenterItem");
-static_assert(sizeof(UDataCenterItem) == 0x000030, "Wrong size on UDataCenterItem");
+DUMPER7_ASSERTS_UDataCenterItem;
 
 // PythonClass PyWidget_Secondary_DataCenter.PyWidget_DataCenter_Item
-// 0x0060 (0x05D0 - 0x0570)
+// 0x0060 (0x05D8 - 0x0578)
 class UPyWidget_DataCenter_Item final : public UWidget_ListEntry
 {
 public:
-	struct FSlateColor                            WeakSignalTextColor;                               // 0x0570(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            MediumSignalTextColor;                             // 0x0584(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            StrongSignalTextColor;                             // 0x0598(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMarvelTextBlock*                       Text_Node_Name;                                    // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Check;                                         // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMarvelTextBlock*                       Text_OnlineSignal_Number;                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UImage*                                 Img_Select;                                        // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            WeakSignalTextColor;                               // 0x0578(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            MediumSignalTextColor;                             // 0x058C(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            StrongSignalTextColor;                             // 0x05A0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5B4[0x4];                                      // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMarvelTextBlock*                       Text_Node_Name;                                    // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Check;                                         // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMarvelTextBlock*                       Text_OnlineSignal_Number;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UImage*                                 Img_Select;                                        // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -88,22 +92,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DataCenter_Item">();
+		STATIC_CLASS_IMPL("PyWidget_DataCenter_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DataCenter_Item")
 	}
 	static class UPyWidget_DataCenter_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DataCenter_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_DataCenter_Item) == 0x000008, "Wrong alignment on UPyWidget_DataCenter_Item");
-static_assert(sizeof(UPyWidget_DataCenter_Item) == 0x0005D0, "Wrong size on UPyWidget_DataCenter_Item");
-static_assert(offsetof(UPyWidget_DataCenter_Item, WeakSignalTextColor) == 0x000570, "Member 'UPyWidget_DataCenter_Item::WeakSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, MediumSignalTextColor) == 0x000584, "Member 'UPyWidget_DataCenter_Item::MediumSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, StrongSignalTextColor) == 0x000598, "Member 'UPyWidget_DataCenter_Item::StrongSignalTextColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, Text_Node_Name) == 0x0005B0, "Member 'UPyWidget_DataCenter_Item::Text_Node_Name' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, Img_Check) == 0x0005B8, "Member 'UPyWidget_DataCenter_Item::Img_Check' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, Text_OnlineSignal_Number) == 0x0005C0, "Member 'UPyWidget_DataCenter_Item::Text_OnlineSignal_Number' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DataCenter_Item, Img_Select) == 0x0005C8, "Member 'UPyWidget_DataCenter_Item::Img_Select' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DataCenter_Item;
 
 }
 

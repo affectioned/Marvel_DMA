@@ -23,15 +23,18 @@ class UWC_BuffMarkerBP_C final : public UMarvelWidgetComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_BuffMarkerBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_BuffMarkerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_BuffMarkerBP_C")
 	}
 	static class UWC_BuffMarkerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_BuffMarkerBP_C>();
 	}
 };
-static_assert(alignof(UWC_BuffMarkerBP_C) == 0x000010, "Wrong alignment on UWC_BuffMarkerBP_C");
-static_assert(sizeof(UWC_BuffMarkerBP_C) == 0x000AE0, "Wrong size on UWC_BuffMarkerBP_C");
+DUMPER7_ASSERTS_UWC_BuffMarkerBP_C;
 
 }
 

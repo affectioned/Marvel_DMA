@@ -18,27 +18,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mission_MissionBattleUnit_SeasonGoal.WBP_Mission_MissionBattleUnit_SeasonGoal_C
-// 0x0088 (0x0648 - 0x05C0)
+// 0x0088 (0x0650 - 0x05C8)
 class UWBP_Mission_MissionBattleUnit_SeasonGoal_C final : public UPyWidget_MissionUnit_SeasonGoal
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMarvelButton*                          Btn_Mission;                                       // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg;                                            // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Mask;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_Mission_Icon;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Main;                                      // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_Preview;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_Reward;                                // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_1;                                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_2;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_3;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_4;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_5;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_6;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_MissionName;                                  // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Txt_Mission_Progress;                              // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMarvelButton*                          Btn_Mission;                                       // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg;                                            // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Bg_Hover;                                      // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Mask;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_Mission_Icon;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Main;                                      // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_Preview;                               // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_Reward;                                // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_1;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_2;                                    // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_3;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_4;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_5;                                    // 0x0630(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mission_SeasonGoal_ProgressItem_C* ProgressItem_6;                                    // 0x0638(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_MissionName;                                  // 0x0640(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Txt_Mission_Progress;                              // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void OnListItemObjectSet(class UObject* ListItemObject);
@@ -50,32 +50,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mission_MissionBattleUnit_SeasonGoal_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mission_MissionBattleUnit_SeasonGoal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mission_MissionBattleUnit_SeasonGoal_C")
 	}
 	static class UWBP_Mission_MissionBattleUnit_SeasonGoal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mission_MissionBattleUnit_SeasonGoal_C>();
 	}
 };
-static_assert(alignof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C) == 0x000008, "Wrong alignment on UWBP_Mission_MissionBattleUnit_SeasonGoal_C");
-static_assert(sizeof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C) == 0x000648, "Wrong size on UWBP_Mission_MissionBattleUnit_SeasonGoal_C");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, UberGraphFrame) == 0x0005C0, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Btn_Mission) == 0x0005C8, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Btn_Mission' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Img_Bg) == 0x0005D0, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Img_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Img_Bg_Hover) == 0x0005D8, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Img_Bg_Hover' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Img_Mask) == 0x0005E0, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Img_Mask' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Img_Mission_Icon) == 0x0005E8, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Img_Mission_Icon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Overlay_Main) == 0x0005F0, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Overlay_Main' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressBar_Preview) == 0x0005F8, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressBar_Preview' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressBar_Reward) == 0x000600, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressBar_Reward' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_1) == 0x000608, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_2) == 0x000610, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_2' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_3) == 0x000618, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_3' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_4) == 0x000620, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_4' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_5) == 0x000628, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_5' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, ProgressItem_6) == 0x000630, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::ProgressItem_6' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Text_MissionName) == 0x000638, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Text_MissionName' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_MissionBattleUnit_SeasonGoal_C, Txt_Mission_Progress) == 0x000640, "Member 'UWBP_Mission_MissionBattleUnit_SeasonGoal_C::Txt_Mission_Progress' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mission_MissionBattleUnit_SeasonGoal_C;
 
 }
 

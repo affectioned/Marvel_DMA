@@ -25,24 +25,27 @@ class ULobby_Activity_Reminder_Type final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Lobby_Activity_Reminder_Type">();
+		STATIC_CLASS_IMPL("Lobby_Activity_Reminder_Type")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lobby_Activity_Reminder_Type")
 	}
 	static class ULobby_Activity_Reminder_Type* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobby_Activity_Reminder_Type>();
 	}
 };
-static_assert(alignof(ULobby_Activity_Reminder_Type) == 0x000008, "Wrong alignment on ULobby_Activity_Reminder_Type");
-static_assert(sizeof(ULobby_Activity_Reminder_Type) == 0x000030, "Wrong size on ULobby_Activity_Reminder_Type");
+DUMPER7_ASSERTS_ULobby_Activity_Reminder_Type;
 
 // PythonClass PyWidget_LobbyHomeV3.PyWidget_LobbyHomeV3
-// 0x00F8 (0x06F0 - 0x05F8)
+// 0x0118 (0x0718 - 0x0600)
 class UPyWidget_LobbyHomeV3 final : public UPyWidget_LobbyChildPanel
 {
 public:
-	class UAkAudioEvent*                          AKEvent_LobbyStart;                                // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           EscAction;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJumpAction                            JumpActionCfg;                                     // 0x0608(0x00E8)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AKEvent_LobbyStart;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           EscAction;                                         // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJumpAction                            JumpActionCfg;                                     // 0x0610(0x0108)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -52,18 +55,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_LobbyHomeV3">();
+		STATIC_CLASS_IMPL("PyWidget_LobbyHomeV3")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_LobbyHomeV3")
 	}
 	static class UPyWidget_LobbyHomeV3* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_LobbyHomeV3>();
 	}
 };
-static_assert(alignof(UPyWidget_LobbyHomeV3) == 0x000008, "Wrong alignment on UPyWidget_LobbyHomeV3");
-static_assert(sizeof(UPyWidget_LobbyHomeV3) == 0x0006F0, "Wrong size on UPyWidget_LobbyHomeV3");
-static_assert(offsetof(UPyWidget_LobbyHomeV3, AKEvent_LobbyStart) == 0x0005F8, "Member 'UPyWidget_LobbyHomeV3::AKEvent_LobbyStart' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyHomeV3, EscAction) == 0x000600, "Member 'UPyWidget_LobbyHomeV3::EscAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_LobbyHomeV3, JumpActionCfg) == 0x000608, "Member 'UPyWidget_LobbyHomeV3::JumpActionCfg' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_LobbyHomeV3;
 
 }
 

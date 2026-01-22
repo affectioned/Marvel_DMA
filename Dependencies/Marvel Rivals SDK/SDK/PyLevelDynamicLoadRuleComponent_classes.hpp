@@ -23,15 +23,18 @@ class UPyLevelDynamicLoadRuleComponent final : public UPyRuleComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelDynamicLoadRuleComponent">();
+		STATIC_CLASS_IMPL("PyLevelDynamicLoadRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelDynamicLoadRuleComponent")
 	}
 	static class UPyLevelDynamicLoadRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelDynamicLoadRuleComponent>();
 	}
 };
-static_assert(alignof(UPyLevelDynamicLoadRuleComponent) == 0x000008, "Wrong alignment on UPyLevelDynamicLoadRuleComponent");
-static_assert(sizeof(UPyLevelDynamicLoadRuleComponent) == 0x000108, "Wrong size on UPyLevelDynamicLoadRuleComponent");
+DUMPER7_ASSERTS_UPyLevelDynamicLoadRuleComponent;
 
 }
 

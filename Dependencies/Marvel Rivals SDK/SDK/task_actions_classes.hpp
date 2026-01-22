@@ -27,16 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_DayDayBattleGame">();
+		STATIC_CLASS_IMPL("PyTaskAction_DayDayBattleGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_DayDayBattleGame")
 	}
 	static class UPyTaskAction_DayDayBattleGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_DayDayBattleGame>();
 	}
 };
-static_assert(alignof(UPyTaskAction_DayDayBattleGame) == 0x000008, "Wrong alignment on UPyTaskAction_DayDayBattleGame");
-static_assert(sizeof(UPyTaskAction_DayDayBattleGame) == 0x000040, "Wrong size on UPyTaskAction_DayDayBattleGame");
-static_assert(offsetof(UPyTaskAction_DayDayBattleGame, day_battle_count) == 0x000038, "Member 'UPyTaskAction_DayDayBattleGame::day_battle_count' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_DayDayBattleGame;
 
 // PythonClass task_actions.PyTaskAction_ActivityEvent
 // 0x0008 (0x0040 - 0x0038)
@@ -49,17 +51,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ActivityEvent">();
+		STATIC_CLASS_IMPL("PyTaskAction_ActivityEvent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ActivityEvent")
 	}
 	static class UPyTaskAction_ActivityEvent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ActivityEvent>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ActivityEvent) == 0x000008, "Wrong alignment on UPyTaskAction_ActivityEvent");
-static_assert(sizeof(UPyTaskAction_ActivityEvent) == 0x000040, "Wrong size on UPyTaskAction_ActivityEvent");
-static_assert(offsetof(UPyTaskAction_ActivityEvent, spec_act_id) == 0x000038, "Member 'UPyTaskAction_ActivityEvent::spec_act_id' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ActivityEvent, spec_event_id) == 0x00003C, "Member 'UPyTaskAction_ActivityEvent::spec_event_id' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_ActivityEvent;
 
 // PythonClass task_actions.PyTaskAction_UseDataBase
 // 0x0080 (0x00B8 - 0x0038)
@@ -72,7 +75,8 @@ public:
 	TArray<int32>                                 args;                                              // 0x0040(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TMap<int32, int32>                            random_hero_weight;                                // 0x0050(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	int32                                         random_hero_count;                                 // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          is_ability_sorb;                                   // 0x00A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 instance_id;                                       // 0x00A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -81,21 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_UseDataBase">();
+		STATIC_CLASS_IMPL("PyTaskAction_UseDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_UseDataBase")
 	}
 	static class UPyTaskAction_UseDataBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_UseDataBase>();
 	}
 };
-static_assert(alignof(UPyTaskAction_UseDataBase) == 0x000008, "Wrong alignment on UPyTaskAction_UseDataBase");
-static_assert(sizeof(UPyTaskAction_UseDataBase) == 0x0000B8, "Wrong size on UPyTaskAction_UseDataBase");
-static_assert(offsetof(UPyTaskAction_UseDataBase, is_one_game_limit) == 0x000038, "Member 'UPyTaskAction_UseDataBase::is_one_game_limit' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseDataBase, limit_type) == 0x000039, "Member 'UPyTaskAction_UseDataBase::limit_type' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseDataBase, args) == 0x000040, "Member 'UPyTaskAction_UseDataBase::args' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseDataBase, random_hero_weight) == 0x000050, "Member 'UPyTaskAction_UseDataBase::random_hero_weight' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseDataBase, random_hero_count) == 0x0000A0, "Member 'UPyTaskAction_UseDataBase::random_hero_count' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseDataBase, instance_id) == 0x0000A8, "Member 'UPyTaskAction_UseDataBase::instance_id' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_UseDataBase;
 
 // PythonClass task_actions.PyTaskAction_UseMultiDataBase
 // 0x0080 (0x00B8 - 0x0038)
@@ -114,21 +115,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_UseMultiDataBase">();
+		STATIC_CLASS_IMPL("PyTaskAction_UseMultiDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_UseMultiDataBase")
 	}
 	static class UPyTaskAction_UseMultiDataBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_UseMultiDataBase>();
 	}
 };
-static_assert(alignof(UPyTaskAction_UseMultiDataBase) == 0x000008, "Wrong alignment on UPyTaskAction_UseMultiDataBase");
-static_assert(sizeof(UPyTaskAction_UseMultiDataBase) == 0x0000B8, "Wrong size on UPyTaskAction_UseMultiDataBase");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, is_one_game_limit) == 0x000038, "Member 'UPyTaskAction_UseMultiDataBase::is_one_game_limit' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, limit_type) == 0x000039, "Member 'UPyTaskAction_UseMultiDataBase::limit_type' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, args) == 0x000040, "Member 'UPyTaskAction_UseMultiDataBase::args' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, random_hero_weight) == 0x000050, "Member 'UPyTaskAction_UseMultiDataBase::random_hero_weight' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, random_hero_count) == 0x0000A0, "Member 'UPyTaskAction_UseMultiDataBase::random_hero_count' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_UseMultiDataBase, instance_ids) == 0x0000A8, "Member 'UPyTaskAction_UseMultiDataBase::instance_ids' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_UseMultiDataBase;
 
 // PythonClass task_actions.PyTaskAction_TaskUseDataBase
 // 0x00C0 (0x00F8 - 0x0038)
@@ -146,20 +144,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_TaskUseDataBase">();
+		STATIC_CLASS_IMPL("PyTaskAction_TaskUseDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_TaskUseDataBase")
 	}
 	static class UPyTaskAction_TaskUseDataBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_TaskUseDataBase>();
 	}
 };
-static_assert(alignof(UPyTaskAction_TaskUseDataBase) == 0x000008, "Wrong alignment on UPyTaskAction_TaskUseDataBase");
-static_assert(sizeof(UPyTaskAction_TaskUseDataBase) == 0x0000F8, "Wrong size on UPyTaskAction_TaskUseDataBase");
-static_assert(offsetof(UPyTaskAction_TaskUseDataBase, is_one_game_limit) == 0x000038, "Member 'UPyTaskAction_TaskUseDataBase::is_one_game_limit' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskUseDataBase, args) == 0x000040, "Member 'UPyTaskAction_TaskUseDataBase::args' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskUseDataBase, random_hero_weight) == 0x000090, "Member 'UPyTaskAction_TaskUseDataBase::random_hero_weight' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskUseDataBase, random_hero_count) == 0x0000E0, "Member 'UPyTaskAction_TaskUseDataBase::random_hero_count' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskUseDataBase, instance_id) == 0x0000E8, "Member 'UPyTaskAction_TaskUseDataBase::instance_id' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_TaskUseDataBase;
 
 // PythonClass task_actions.PyTaskAction_TaskOneUseDataBase
 // 0x00C0 (0x00F8 - 0x0038)
@@ -182,22 +178,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_TaskOneUseDataBase">();
+		STATIC_CLASS_IMPL("PyTaskAction_TaskOneUseDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_TaskOneUseDataBase")
 	}
 	static class UPyTaskAction_TaskOneUseDataBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_TaskOneUseDataBase>();
 	}
 };
-static_assert(alignof(UPyTaskAction_TaskOneUseDataBase) == 0x000008, "Wrong alignment on UPyTaskAction_TaskOneUseDataBase");
-static_assert(sizeof(UPyTaskAction_TaskOneUseDataBase) == 0x0000F8, "Wrong size on UPyTaskAction_TaskOneUseDataBase");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, one_game_require) == 0x000038, "Member 'UPyTaskAction_TaskOneUseDataBase::one_game_require' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, random_hero_weight) == 0x000040, "Member 'UPyTaskAction_TaskOneUseDataBase::random_hero_weight' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, random_hero_role) == 0x000090, "Member 'UPyTaskAction_TaskOneUseDataBase::random_hero_role' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, random_hero_count) == 0x0000E0, "Member 'UPyTaskAction_TaskOneUseDataBase::random_hero_count' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, is_hero_percent) == 0x0000E4, "Member 'UPyTaskAction_TaskOneUseDataBase::is_hero_percent' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, is_require_win) == 0x0000E5, "Member 'UPyTaskAction_TaskOneUseDataBase::is_require_win' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskOneUseDataBase, instance_id) == 0x0000E8, "Member 'UPyTaskAction_TaskOneUseDataBase::instance_id' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_TaskOneUseDataBase;
 
 // PythonClass task_actions.PyTaskAction_TaskCompleteGame
 // 0x00A8 (0x00E0 - 0x0038)
@@ -211,18 +203,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_TaskCompleteGame">();
+		STATIC_CLASS_IMPL("PyTaskAction_TaskCompleteGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_TaskCompleteGame")
 	}
 	static class UPyTaskAction_TaskCompleteGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_TaskCompleteGame>();
 	}
 };
-static_assert(alignof(UPyTaskAction_TaskCompleteGame) == 0x000008, "Wrong alignment on UPyTaskAction_TaskCompleteGame");
-static_assert(sizeof(UPyTaskAction_TaskCompleteGame) == 0x0000E0, "Wrong size on UPyTaskAction_TaskCompleteGame");
-static_assert(offsetof(UPyTaskAction_TaskCompleteGame, spec_game_modes) == 0x000038, "Member 'UPyTaskAction_TaskCompleteGame::spec_game_modes' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskCompleteGame, spec_heros) == 0x000088, "Member 'UPyTaskAction_TaskCompleteGame::spec_heros' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_TaskCompleteGame, is_require_win) == 0x0000D8, "Member 'UPyTaskAction_TaskCompleteGame::is_require_win' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_TaskCompleteGame;
 
 // PythonClass task_actions.PyTaskAction_UseAchievementAction
 // 0x0008 (0x0040 - 0x0038)
@@ -234,16 +226,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_UseAchievementAction">();
+		STATIC_CLASS_IMPL("PyTaskAction_UseAchievementAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_UseAchievementAction")
 	}
 	static class UPyTaskAction_UseAchievementAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_UseAchievementAction>();
 	}
 };
-static_assert(alignof(UPyTaskAction_UseAchievementAction) == 0x000008, "Wrong alignment on UPyTaskAction_UseAchievementAction");
-static_assert(sizeof(UPyTaskAction_UseAchievementAction) == 0x000040, "Wrong size on UPyTaskAction_UseAchievementAction");
-static_assert(offsetof(UPyTaskAction_UseAchievementAction, instance_id) == 0x000038, "Member 'UPyTaskAction_UseAchievementAction::instance_id' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_UseAchievementAction;
 
 // PythonClass task_actions.PyTaskAction_CompleteGame
 // 0x00E8 (0x0120 - 0x0038)
@@ -264,24 +258,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CompleteGame">();
+		STATIC_CLASS_IMPL("PyTaskAction_CompleteGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CompleteGame")
 	}
 	static class UPyTaskAction_CompleteGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CompleteGame>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CompleteGame) == 0x000008, "Wrong alignment on UPyTaskAction_CompleteGame");
-static_assert(sizeof(UPyTaskAction_CompleteGame) == 0x000120, "Wrong size on UPyTaskAction_CompleteGame");
-static_assert(offsetof(UPyTaskAction_CompleteGame, spec_game_modes) == 0x000038, "Member 'UPyTaskAction_CompleteGame::spec_game_modes' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, spec_game_play_modes) == 0x000048, "Member 'UPyTaskAction_CompleteGame::spec_game_play_modes' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, spec_heros) == 0x000058, "Member 'UPyTaskAction_CompleteGame::spec_heros' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, spec_map_thems) == 0x000068, "Member 'UPyTaskAction_CompleteGame::spec_map_thems' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, is_not_repeate_thems) == 0x000078, "Member 'UPyTaskAction_CompleteGame::is_not_repeate_thems' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, is_require_win) == 0x000079, "Member 'UPyTaskAction_CompleteGame::is_require_win' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, is_require_continue) == 0x00007A, "Member 'UPyTaskAction_CompleteGame::is_require_continue' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, random_map_themes) == 0x000080, "Member 'UPyTaskAction_CompleteGame::random_map_themes' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteGame, random_map_type_v2) == 0x0000D0, "Member 'UPyTaskAction_CompleteGame::random_map_type_v2' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CompleteGame;
 
 // PythonClass task_actions.PyTaskAction_CompleteAchievements
 // 0x0010 (0x0048 - 0x0038)
@@ -293,16 +281,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CompleteAchievements">();
+		STATIC_CLASS_IMPL("PyTaskAction_CompleteAchievements")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CompleteAchievements")
 	}
 	static class UPyTaskAction_CompleteAchievements* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CompleteAchievements>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CompleteAchievements) == 0x000008, "Wrong alignment on UPyTaskAction_CompleteAchievements");
-static_assert(sizeof(UPyTaskAction_CompleteAchievements) == 0x000048, "Wrong size on UPyTaskAction_CompleteAchievements");
-static_assert(offsetof(UPyTaskAction_CompleteAchievements, spec_ids) == 0x000038, "Member 'UPyTaskAction_CompleteAchievements::spec_ids' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CompleteAchievements;
 
 // PythonClass task_actions.PyTaskAction_GainFriends
 // 0x0000 (0x0038 - 0x0038)
@@ -311,15 +301,18 @@ class UPyTaskAction_GainFriends final : public UMarvelTaskActionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_GainFriends">();
+		STATIC_CLASS_IMPL("PyTaskAction_GainFriends")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_GainFriends")
 	}
 	static class UPyTaskAction_GainFriends* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_GainFriends>();
 	}
 };
-static_assert(alignof(UPyTaskAction_GainFriends) == 0x000008, "Wrong alignment on UPyTaskAction_GainFriends");
-static_assert(sizeof(UPyTaskAction_GainFriends) == 0x000038, "Wrong size on UPyTaskAction_GainFriends");
+DUMPER7_ASSERTS_UPyTaskAction_GainFriends;
 
 // PythonClass task_actions.PyTaskAction_GetVoteFromTeammate
 // 0x0010 (0x0048 - 0x0038)
@@ -331,16 +324,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_GetVoteFromTeammate">();
+		STATIC_CLASS_IMPL("PyTaskAction_GetVoteFromTeammate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_GetVoteFromTeammate")
 	}
 	static class UPyTaskAction_GetVoteFromTeammate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_GetVoteFromTeammate>();
 	}
 };
-static_assert(alignof(UPyTaskAction_GetVoteFromTeammate) == 0x000008, "Wrong alignment on UPyTaskAction_GetVoteFromTeammate");
-static_assert(sizeof(UPyTaskAction_GetVoteFromTeammate) == 0x000048, "Wrong size on UPyTaskAction_GetVoteFromTeammate");
-static_assert(offsetof(UPyTaskAction_GetVoteFromTeammate, vote_cnt_one_match) == 0x000038, "Member 'UPyTaskAction_GetVoteFromTeammate::vote_cnt_one_match' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_GetVoteFromTeammate;
 
 // PythonClass task_actions.PyTaskAction_ContinueLoginDays
 // 0x0000 (0x0038 - 0x0038)
@@ -349,15 +344,18 @@ class UPyTaskAction_ContinueLoginDays final : public UMarvelTaskActionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ContinueLoginDays">();
+		STATIC_CLASS_IMPL("PyTaskAction_ContinueLoginDays")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ContinueLoginDays")
 	}
 	static class UPyTaskAction_ContinueLoginDays* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ContinueLoginDays>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ContinueLoginDays) == 0x000008, "Wrong alignment on UPyTaskAction_ContinueLoginDays");
-static_assert(sizeof(UPyTaskAction_ContinueLoginDays) == 0x000038, "Wrong size on UPyTaskAction_ContinueLoginDays");
+DUMPER7_ASSERTS_UPyTaskAction_ContinueLoginDays;
 
 // PythonClass task_actions.PyTaskAction_GainMvp
 // 0x0008 (0x0040 - 0x0038)
@@ -369,16 +367,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_GainMvp">();
+		STATIC_CLASS_IMPL("PyTaskAction_GainMvp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_GainMvp")
 	}
 	static class UPyTaskAction_GainMvp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_GainMvp>();
 	}
 };
-static_assert(alignof(UPyTaskAction_GainMvp) == 0x000008, "Wrong alignment on UPyTaskAction_GainMvp");
-static_assert(sizeof(UPyTaskAction_GainMvp) == 0x000040, "Wrong size on UPyTaskAction_GainMvp");
-static_assert(offsetof(UPyTaskAction_GainMvp, is_incluide_svp) == 0x000038, "Member 'UPyTaskAction_GainMvp::is_incluide_svp' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_GainMvp;
 
 // PythonClass task_actions.PyTaskAction_AccumulatePlayWithFriend
 // 0x0000 (0x0038 - 0x0038)
@@ -387,15 +387,18 @@ class UPyTaskAction_AccumulatePlayWithFriend final : public UMarvelTaskActionBas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_AccumulatePlayWithFriend">();
+		STATIC_CLASS_IMPL("PyTaskAction_AccumulatePlayWithFriend")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_AccumulatePlayWithFriend")
 	}
 	static class UPyTaskAction_AccumulatePlayWithFriend* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_AccumulatePlayWithFriend>();
 	}
 };
-static_assert(alignof(UPyTaskAction_AccumulatePlayWithFriend) == 0x000008, "Wrong alignment on UPyTaskAction_AccumulatePlayWithFriend");
-static_assert(sizeof(UPyTaskAction_AccumulatePlayWithFriend) == 0x000038, "Wrong size on UPyTaskAction_AccumulatePlayWithFriend");
+DUMPER7_ASSERTS_UPyTaskAction_AccumulatePlayWithFriend;
 
 // PythonClass task_actions.PyTaskAction_AccumulateVoteOther
 // 0x0018 (0x0050 - 0x0038)
@@ -411,19 +414,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_AccumulateVoteOther">();
+		STATIC_CLASS_IMPL("PyTaskAction_AccumulateVoteOther")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_AccumulateVoteOther")
 	}
 	static class UPyTaskAction_AccumulateVoteOther* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_AccumulateVoteOther>();
 	}
 };
-static_assert(alignof(UPyTaskAction_AccumulateVoteOther) == 0x000008, "Wrong alignment on UPyTaskAction_AccumulateVoteOther");
-static_assert(sizeof(UPyTaskAction_AccumulateVoteOther) == 0x000050, "Wrong size on UPyTaskAction_AccumulateVoteOther");
-static_assert(offsetof(UPyTaskAction_AccumulateVoteOther, require_count_one_match) == 0x000038, "Member 'UPyTaskAction_AccumulateVoteOther::require_count_one_match' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_AccumulateVoteOther, accumulate_match_or_times) == 0x00003C, "Member 'UPyTaskAction_AccumulateVoteOther::accumulate_match_or_times' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_AccumulateVoteOther, is_include_self) == 0x00003D, "Member 'UPyTaskAction_AccumulateVoteOther::is_include_self' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_AccumulateVoteOther, spec_heroes) == 0x000040, "Member 'UPyTaskAction_AccumulateVoteOther::spec_heroes' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_AccumulateVoteOther;
 
 // PythonClass task_actions.PyTaskAction_GainSkins
 // 0x0010 (0x0048 - 0x0038)
@@ -435,16 +437,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_GainSkins">();
+		STATIC_CLASS_IMPL("PyTaskAction_GainSkins")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_GainSkins")
 	}
 	static class UPyTaskAction_GainSkins* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_GainSkins>();
 	}
 };
-static_assert(alignof(UPyTaskAction_GainSkins) == 0x000008, "Wrong alignment on UPyTaskAction_GainSkins");
-static_assert(sizeof(UPyTaskAction_GainSkins) == 0x000048, "Wrong size on UPyTaskAction_GainSkins");
-static_assert(offsetof(UPyTaskAction_GainSkins, spec_skins) == 0x000038, "Member 'UPyTaskAction_GainSkins::spec_skins' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_GainSkins;
 
 // PythonClass task_actions.PyTaskAction_AccumulateLoginDays
 // 0x0000 (0x0038 - 0x0038)
@@ -453,15 +457,18 @@ class UPyTaskAction_AccumulateLoginDays final : public UMarvelTaskActionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_AccumulateLoginDays">();
+		STATIC_CLASS_IMPL("PyTaskAction_AccumulateLoginDays")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_AccumulateLoginDays")
 	}
 	static class UPyTaskAction_AccumulateLoginDays* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_AccumulateLoginDays>();
 	}
 };
-static_assert(alignof(UPyTaskAction_AccumulateLoginDays) == 0x000008, "Wrong alignment on UPyTaskAction_AccumulateLoginDays");
-static_assert(sizeof(UPyTaskAction_AccumulateLoginDays) == 0x000038, "Wrong size on UPyTaskAction_AccumulateLoginDays");
+DUMPER7_ASSERTS_UPyTaskAction_AccumulateLoginDays;
 
 // PythonClass task_actions.PyTaskAction_CompleteCustomRoomGame
 // 0x0008 (0x0040 - 0x0038)
@@ -473,16 +480,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CompleteCustomRoomGame">();
+		STATIC_CLASS_IMPL("PyTaskAction_CompleteCustomRoomGame")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CompleteCustomRoomGame")
 	}
 	static class UPyTaskAction_CompleteCustomRoomGame* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CompleteCustomRoomGame>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CompleteCustomRoomGame) == 0x000008, "Wrong alignment on UPyTaskAction_CompleteCustomRoomGame");
-static_assert(sizeof(UPyTaskAction_CompleteCustomRoomGame) == 0x000040, "Wrong size on UPyTaskAction_CompleteCustomRoomGame");
-static_assert(offsetof(UPyTaskAction_CompleteCustomRoomGame, is_require_win) == 0x000038, "Member 'UPyTaskAction_CompleteCustomRoomGame::is_require_win' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CompleteCustomRoomGame;
 
 // PythonClass task_actions.PyTaskAction_LevelUp
 // 0x0000 (0x0038 - 0x0038)
@@ -491,15 +500,18 @@ class UPyTaskAction_LevelUp final : public UMarvelTaskActionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_LevelUp">();
+		STATIC_CLASS_IMPL("PyTaskAction_LevelUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_LevelUp")
 	}
 	static class UPyTaskAction_LevelUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_LevelUp>();
 	}
 };
-static_assert(alignof(UPyTaskAction_LevelUp) == 0x000008, "Wrong alignment on UPyTaskAction_LevelUp");
-static_assert(sizeof(UPyTaskAction_LevelUp) == 0x000038, "Wrong size on UPyTaskAction_LevelUp");
+DUMPER7_ASSERTS_UPyTaskAction_LevelUp;
 
 // PythonClass task_actions.PyTaskAction_WatchVideoFinish
 // 0x0018 (0x0050 - 0x0038)
@@ -513,17 +525,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_WatchVideoFinish">();
+		STATIC_CLASS_IMPL("PyTaskAction_WatchVideoFinish")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_WatchVideoFinish")
 	}
 	static class UPyTaskAction_WatchVideoFinish* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_WatchVideoFinish>();
 	}
 };
-static_assert(alignof(UPyTaskAction_WatchVideoFinish) == 0x000008, "Wrong alignment on UPyTaskAction_WatchVideoFinish");
-static_assert(sizeof(UPyTaskAction_WatchVideoFinish) == 0x000050, "Wrong size on UPyTaskAction_WatchVideoFinish");
-static_assert(offsetof(UPyTaskAction_WatchVideoFinish, is_require_win) == 0x000038, "Member 'UPyTaskAction_WatchVideoFinish::is_require_win' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_WatchVideoFinish, spec_video_names) == 0x000040, "Member 'UPyTaskAction_WatchVideoFinish::spec_video_names' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_WatchVideoFinish;
 
 // PythonClass task_actions.PyTaskAction_RankLevelUp
 // 0x0008 (0x0040 - 0x0038)
@@ -535,16 +548,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_RankLevelUp">();
+		STATIC_CLASS_IMPL("PyTaskAction_RankLevelUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_RankLevelUp")
 	}
 	static class UPyTaskAction_RankLevelUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_RankLevelUp>();
 	}
 };
-static_assert(alignof(UPyTaskAction_RankLevelUp) == 0x000008, "Wrong alignment on UPyTaskAction_RankLevelUp");
-static_assert(sizeof(UPyTaskAction_RankLevelUp) == 0x000040, "Wrong size on UPyTaskAction_RankLevelUp");
-static_assert(offsetof(UPyTaskAction_RankLevelUp, rank_level) == 0x000038, "Member 'UPyTaskAction_RankLevelUp::rank_level' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_RankLevelUp;
 
 // PythonClass task_actions.PyTaskAction_ReadStories
 // 0x0028 (0x0060 - 0x0038)
@@ -559,18 +574,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ReadStories">();
+		STATIC_CLASS_IMPL("PyTaskAction_ReadStories")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ReadStories")
 	}
 	static class UPyTaskAction_ReadStories* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ReadStories>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ReadStories) == 0x000008, "Wrong alignment on UPyTaskAction_ReadStories");
-static_assert(sizeof(UPyTaskAction_ReadStories) == 0x000060, "Wrong size on UPyTaskAction_ReadStories");
-static_assert(offsetof(UPyTaskAction_ReadStories, spec_heros) == 0x000038, "Member 'UPyTaskAction_ReadStories::spec_heros' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ReadStories, is_bond_story) == 0x000048, "Member 'UPyTaskAction_ReadStories::is_bond_story' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ReadStories, limit_stories) == 0x000050, "Member 'UPyTaskAction_ReadStories::limit_stories' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_ReadStories;
 
 // PythonClass task_actions.PyTaskAction_ActivityReadStories
 // 0x0028 (0x0060 - 0x0038)
@@ -585,18 +600,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ActivityReadStories">();
+		STATIC_CLASS_IMPL("PyTaskAction_ActivityReadStories")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ActivityReadStories")
 	}
 	static class UPyTaskAction_ActivityReadStories* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ActivityReadStories>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ActivityReadStories) == 0x000008, "Wrong alignment on UPyTaskAction_ActivityReadStories");
-static_assert(sizeof(UPyTaskAction_ActivityReadStories) == 0x000060, "Wrong size on UPyTaskAction_ActivityReadStories");
-static_assert(offsetof(UPyTaskAction_ActivityReadStories, spec_heros) == 0x000038, "Member 'UPyTaskAction_ActivityReadStories::spec_heros' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ActivityReadStories, is_bond_story) == 0x000048, "Member 'UPyTaskAction_ActivityReadStories::is_bond_story' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ActivityReadStories, limit_stories) == 0x000050, "Member 'UPyTaskAction_ActivityReadStories::limit_stories' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_ActivityReadStories;
 
 // PythonClass task_actions.PyTaskAction_CompleteTasks
 // 0x0020 (0x0058 - 0x0038)
@@ -609,17 +624,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CompleteTasks">();
+		STATIC_CLASS_IMPL("PyTaskAction_CompleteTasks")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CompleteTasks")
 	}
 	static class UPyTaskAction_CompleteTasks* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CompleteTasks>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CompleteTasks) == 0x000008, "Wrong alignment on UPyTaskAction_CompleteTasks");
-static_assert(sizeof(UPyTaskAction_CompleteTasks) == 0x000058, "Wrong size on UPyTaskAction_CompleteTasks");
-static_assert(offsetof(UPyTaskAction_CompleteTasks, spec_categories) == 0x000038, "Member 'UPyTaskAction_CompleteTasks::spec_categories' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CompleteTasks, spec_task_ids) == 0x000048, "Member 'UPyTaskAction_CompleteTasks::spec_task_ids' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CompleteTasks;
 
 // PythonClass task_actions.PyTaskAction_ChatWitchOther
 // 0x0008 (0x0040 - 0x0038)
@@ -631,16 +647,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ChatWitchOther">();
+		STATIC_CLASS_IMPL("PyTaskAction_ChatWitchOther")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ChatWitchOther")
 	}
 	static class UPyTaskAction_ChatWitchOther* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ChatWitchOther>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ChatWitchOther) == 0x000008, "Wrong alignment on UPyTaskAction_ChatWitchOther");
-static_assert(sizeof(UPyTaskAction_ChatWitchOther) == 0x000040, "Wrong size on UPyTaskAction_ChatWitchOther");
-static_assert(offsetof(UPyTaskAction_ChatWitchOther, is_emoji) == 0x000038, "Member 'UPyTaskAction_ChatWitchOther::is_emoji' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_ChatWitchOther;
 
 // PythonClass task_actions.PyTaskAction_EquipItems
 // 0x0028 (0x0060 - 0x0038)
@@ -654,18 +672,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_EquipItems">();
+		STATIC_CLASS_IMPL("PyTaskAction_EquipItems")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_EquipItems")
 	}
 	static class UPyTaskAction_EquipItems* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_EquipItems>();
 	}
 };
-static_assert(alignof(UPyTaskAction_EquipItems) == 0x000008, "Wrong alignment on UPyTaskAction_EquipItems");
-static_assert(sizeof(UPyTaskAction_EquipItems) == 0x000060, "Wrong size on UPyTaskAction_EquipItems");
-static_assert(offsetof(UPyTaskAction_EquipItems, item_types) == 0x000038, "Member 'UPyTaskAction_EquipItems::item_types' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_EquipItems, item_ids) == 0x000048, "Member 'UPyTaskAction_EquipItems::item_ids' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_EquipItems, is_can_repeated) == 0x000058, "Member 'UPyTaskAction_EquipItems::is_can_repeated' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_EquipItems;
 
 // PythonClass task_actions.PyTaskAction_CollectItems
 // 0x0030 (0x0068 - 0x0038)
@@ -679,18 +697,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CollectItems">();
+		STATIC_CLASS_IMPL("PyTaskAction_CollectItems")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CollectItems")
 	}
 	static class UPyTaskAction_CollectItems* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CollectItems>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CollectItems) == 0x000008, "Wrong alignment on UPyTaskAction_CollectItems");
-static_assert(sizeof(UPyTaskAction_CollectItems) == 0x000068, "Wrong size on UPyTaskAction_CollectItems");
-static_assert(offsetof(UPyTaskAction_CollectItems, item_sources) == 0x000038, "Member 'UPyTaskAction_CollectItems::item_sources' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CollectItems, item_ids) == 0x000048, "Member 'UPyTaskAction_CollectItems::item_ids' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CollectItems, item_types) == 0x000058, "Member 'UPyTaskAction_CollectItems::item_types' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CollectItems;
 
 // PythonClass task_actions.PyTaskAction_PlayHighlight
 // 0x0000 (0x0038 - 0x0038)
@@ -699,15 +717,18 @@ class UPyTaskAction_PlayHighlight final : public UMarvelTaskActionBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_PlayHighlight">();
+		STATIC_CLASS_IMPL("PyTaskAction_PlayHighlight")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_PlayHighlight")
 	}
 	static class UPyTaskAction_PlayHighlight* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_PlayHighlight>();
 	}
 };
-static_assert(alignof(UPyTaskAction_PlayHighlight) == 0x000008, "Wrong alignment on UPyTaskAction_PlayHighlight");
-static_assert(sizeof(UPyTaskAction_PlayHighlight) == 0x000038, "Wrong size on UPyTaskAction_PlayHighlight");
+DUMPER7_ASSERTS_UPyTaskAction_PlayHighlight;
 
 // PythonClass task_actions.PyTaskAction_SpecStats
 // 0x0008 (0x0040 - 0x0038)
@@ -719,16 +740,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_SpecStats">();
+		STATIC_CLASS_IMPL("PyTaskAction_SpecStats")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_SpecStats")
 	}
 	static class UPyTaskAction_SpecStats* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_SpecStats>();
 	}
 };
-static_assert(alignof(UPyTaskAction_SpecStats) == 0x000008, "Wrong alignment on UPyTaskAction_SpecStats");
-static_assert(sizeof(UPyTaskAction_SpecStats) == 0x000040, "Wrong size on UPyTaskAction_SpecStats");
-static_assert(offsetof(UPyTaskAction_SpecStats, achieve_stat) == 0x000038, "Member 'UPyTaskAction_SpecStats::achieve_stat' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_SpecStats;
 
 // PythonClass task_actions.PyTaskAction_CollectGallery
 // 0x0018 (0x0050 - 0x0038)
@@ -741,17 +764,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_CollectGallery">();
+		STATIC_CLASS_IMPL("PyTaskAction_CollectGallery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_CollectGallery")
 	}
 	static class UPyTaskAction_CollectGallery* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_CollectGallery>();
 	}
 };
-static_assert(alignof(UPyTaskAction_CollectGallery) == 0x000008, "Wrong alignment on UPyTaskAction_CollectGallery");
-static_assert(sizeof(UPyTaskAction_CollectGallery) == 0x000050, "Wrong size on UPyTaskAction_CollectGallery");
-static_assert(offsetof(UPyTaskAction_CollectGallery, season_id) == 0x000038, "Member 'UPyTaskAction_CollectGallery::season_id' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_CollectGallery, can_finish) == 0x000048, "Member 'UPyTaskAction_CollectGallery::can_finish' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_CollectGallery;
 
 // PythonClass task_actions.PyTaskAction_ProficiencyLvUp
 // 0x0018 (0x0050 - 0x0038)
@@ -765,17 +789,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_ProficiencyLvUp">();
+		STATIC_CLASS_IMPL("PyTaskAction_ProficiencyLvUp")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_ProficiencyLvUp")
 	}
 	static class UPyTaskAction_ProficiencyLvUp* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_ProficiencyLvUp>();
 	}
 };
-static_assert(alignof(UPyTaskAction_ProficiencyLvUp) == 0x000008, "Wrong alignment on UPyTaskAction_ProficiencyLvUp");
-static_assert(sizeof(UPyTaskAction_ProficiencyLvUp) == 0x000050, "Wrong size on UPyTaskAction_ProficiencyLvUp");
-static_assert(offsetof(UPyTaskAction_ProficiencyLvUp, spec_lv) == 0x000038, "Member 'UPyTaskAction_ProficiencyLvUp::spec_lv' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_ProficiencyLvUp, spec_heros) == 0x000040, "Member 'UPyTaskAction_ProficiencyLvUp::spec_heros' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_ProficiencyLvUp;
 
 // PythonClass task_actions.PyTaskAction_HalloweenModelPass
 // 0x0008 (0x0040 - 0x0038)
@@ -787,16 +812,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_HalloweenModelPass">();
+		STATIC_CLASS_IMPL("PyTaskAction_HalloweenModelPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_HalloweenModelPass")
 	}
 	static class UPyTaskAction_HalloweenModelPass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_HalloweenModelPass>();
 	}
 };
-static_assert(alignof(UPyTaskAction_HalloweenModelPass) == 0x000008, "Wrong alignment on UPyTaskAction_HalloweenModelPass");
-static_assert(sizeof(UPyTaskAction_HalloweenModelPass) == 0x000040, "Wrong size on UPyTaskAction_HalloweenModelPass");
-static_assert(offsetof(UPyTaskAction_HalloweenModelPass, spec_difficulty) == 0x000038, "Member 'UPyTaskAction_HalloweenModelPass::spec_difficulty' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_HalloweenModelPass;
 
 // PythonClass task_actions.PyTaskAction_HalloweenModelHeroPass
 // 0x0018 (0x0050 - 0x0038)
@@ -810,17 +837,58 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTaskAction_HalloweenModelHeroPass">();
+		STATIC_CLASS_IMPL("PyTaskAction_HalloweenModelHeroPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_HalloweenModelHeroPass")
 	}
 	static class UPyTaskAction_HalloweenModelHeroPass* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyTaskAction_HalloweenModelHeroPass>();
 	}
 };
-static_assert(alignof(UPyTaskAction_HalloweenModelHeroPass) == 0x000008, "Wrong alignment on UPyTaskAction_HalloweenModelHeroPass");
-static_assert(sizeof(UPyTaskAction_HalloweenModelHeroPass) == 0x000050, "Wrong size on UPyTaskAction_HalloweenModelHeroPass");
-static_assert(offsetof(UPyTaskAction_HalloweenModelHeroPass, spec_difficulty) == 0x000038, "Member 'UPyTaskAction_HalloweenModelHeroPass::spec_difficulty' has a wrong offset!");
-static_assert(offsetof(UPyTaskAction_HalloweenModelHeroPass, spec_heros) == 0x000040, "Member 'UPyTaskAction_HalloweenModelHeroPass::spec_heros' has a wrong offset!");
+DUMPER7_ASSERTS_UPyTaskAction_HalloweenModelHeroPass;
+
+// PythonClass task_actions.PyTaskAction_HeroCorona
+// 0x0000 (0x0038 - 0x0038)
+class UPyTaskAction_HeroCorona final : public UMarvelTaskActionBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyTaskAction_HeroCorona")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_HeroCorona")
+	}
+	static class UPyTaskAction_HeroCorona* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyTaskAction_HeroCorona>();
+	}
+};
+DUMPER7_ASSERTS_UPyTaskAction_HeroCorona;
+
+// PythonClass task_actions.PyTaskAction_SecretStashTrigger
+// 0x0000 (0x0038 - 0x0038)
+class UPyTaskAction_SecretStashTrigger final : public UMarvelTaskActionBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyTaskAction_SecretStashTrigger")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTaskAction_SecretStashTrigger")
+	}
+	static class UPyTaskAction_SecretStashTrigger* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyTaskAction_SecretStashTrigger>();
+	}
+};
+DUMPER7_ASSERTS_UPyTaskAction_SecretStashTrigger;
 
 }
 

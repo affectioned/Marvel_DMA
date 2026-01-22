@@ -277,6 +277,152 @@ void UAbilityModifierComponent::RemoveSummonedModifier(class USummonedModifier_B
 }
 
 
+// Function Hero_1023.SummonerAnimInstance_102351.OnEnterLoopState
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FAnimNode_StateMachine&    Machine                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   PrevStateIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   NextStateIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USummonerAnimInstance_102351::OnEnterLoopState(const struct FAnimNode_StateMachine& Machine, int32 PrevStateIndex, int32 NextStateIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnEnterLoopState");
+
+	Params::SummonerAnimInstance_102351_OnEnterLoopState Parms{};
+
+	Parms.Machine = std::move(Machine);
+	Parms.PrevStateIndex = PrevStateIndex;
+	Parms.NextStateIndex = NextStateIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerBeginFly
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USummonerAnimInstance_102351::OnOwnerBeginFly(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerBeginFly");
+
+	Params::SummonerAnimInstance_102351_OnOwnerBeginFly Parms{};
+
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerBeginLift
+// (Final, Native, Public)
+// Parameters:
+// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USummonerAnimInstance_102351::OnOwnerBeginLift(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerBeginLift");
+
+	Params::SummonerAnimInstance_102351_OnOwnerBeginLift Parms{};
+
+	Parms.Target = Target;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerRecycle
+// (Final, Native, Public)
+
+void USummonerAnimInstance_102351::OnOwnerRecycle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerRecycle");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1023.Cue_Summoner_Loop_10234101_2.OnCueStateChanged
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class USummonedComp_10234101*           SummonedComponent                                      (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESpawnState                             OldState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ESpawnState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ACue_Summoner_Loop_10234101_2::OnCueStateChanged(class USummonedComp_10234101* SummonedComponent, ESpawnState OldState, ESpawnState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Summoner_Loop_10234101_2", "OnCueStateChanged");
+
+	Params::Cue_Summoner_Loop_10234101_2_OnCueStateChanged Parms{};
+
+	Parms.SummonedComponent = SummonedComponent;
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Hero_1023.Cue_Summoner_Loop_10234101_2.UpdateMiddleFXHeight
+// (Final, Native, Protected, BlueprintCallable)
+
+void ACue_Summoner_Loop_10234101_2::UpdateMiddleFXHeight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Cue_Summoner_Loop_10234101_2", "UpdateMiddleFXHeight");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1023.Ability_102322.SetEnableProjectileLimit
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1166,152 +1312,6 @@ void ACue_Buff_10234107::OnSculptChanged(int32 SculptID)
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.Cue_Summoner_Loop_10234101_2.OnCueStateChanged
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class USummonedComp_10234101*           SummonedComponent                                      (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ESpawnState                             OldState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ESpawnState                             NewState                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Summoner_Loop_10234101_2::OnCueStateChanged(class USummonedComp_10234101* SummonedComponent, ESpawnState OldState, ESpawnState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Summoner_Loop_10234101_2", "OnCueStateChanged");
-
-	Params::Cue_Summoner_Loop_10234101_2_OnCueStateChanged Parms{};
-
-	Parms.SummonedComponent = SummonedComponent;
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.Cue_Summoner_Loop_10234101_2.UpdateMiddleFXHeight
-// (Final, Native, Protected, BlueprintCallable)
-
-void ACue_Summoner_Loop_10234101_2::UpdateMiddleFXHeight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Summoner_Loop_10234101_2", "UpdateMiddleFXHeight");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.SummonerAnimInstance_102351.OnEnterLoopState
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FAnimNode_StateMachine&    Machine                                                (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   PrevStateIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   NextStateIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USummonerAnimInstance_102351::OnEnterLoopState(const struct FAnimNode_StateMachine& Machine, int32 PrevStateIndex, int32 NextStateIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnEnterLoopState");
-
-	Params::SummonerAnimInstance_102351_OnEnterLoopState Parms{};
-
-	Parms.Machine = std::move(Machine);
-	Parms.PrevStateIndex = PrevStateIndex;
-	Parms.NextStateIndex = NextStateIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerBeginFly
-// (Final, Native, Public)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USummonerAnimInstance_102351::OnOwnerBeginFly(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerBeginFly");
-
-	Params::SummonerAnimInstance_102351_OnOwnerBeginFly Parms{};
-
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerBeginLift
-// (Final, Native, Public)
-// Parameters:
-// class AActor*                           Target                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USummonerAnimInstance_102351::OnOwnerBeginLift(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerBeginLift");
-
-	Params::SummonerAnimInstance_102351_OnOwnerBeginLift Parms{};
-
-	Parms.Target = Target;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1023.SummonerAnimInstance_102351.OnOwnerRecycle
-// (Final, Native, Public)
-
-void USummonerAnimInstance_102351::OnOwnerRecycle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonerAnimInstance_102351", "OnOwnerRecycle");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

@@ -36,17 +36,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAlarmLightControl">();
+		STATIC_CLASS_IMPL("PyAlarmLightControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAlarmLightControl")
 	}
 	static class APyAlarmLightControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyAlarmLightControl>();
 	}
 };
-static_assert(alignof(APyAlarmLightControl) == 0x000010, "Wrong alignment on APyAlarmLightControl");
-static_assert(sizeof(APyAlarmLightControl) == 0x000700, "Wrong size on APyAlarmLightControl");
-static_assert(offsetof(APyAlarmLightControl, DelayTime) == 0x0006E0, "Member 'APyAlarmLightControl::DelayTime' has a wrong offset!");
-static_assert(offsetof(APyAlarmLightControl, LightTag) == 0x0006E8, "Member 'APyAlarmLightControl::LightTag' has a wrong offset!");
+DUMPER7_ASSERTS_APyAlarmLightControl;
 
 }
 

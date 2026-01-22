@@ -31,15 +31,7 @@ public:
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0058(0x0080)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x00D8(0x0018)()
 };
-static_assert(alignof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on Four016000_AnimBP::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData) == 0x0000F0, "Wrong size on Four016000_AnimBP::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_33) == 0x000004, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_33' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_34) == 0x000010, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_34' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, __NameProperty_35) == 0x00001C, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::__NameProperty_35' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, __IntProperty_36) == 0x000028, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::__IntProperty_36' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, __StructProperty_37) == 0x000030, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::__StructProperty_37' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000058, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(Four016000_AnimBP::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0000D8, "Member 'Four016000_AnimBP::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+DUMPER7_ASSERTS_Four016000_AnimBP__FAnimBlueprintGeneratedConstantData;
 
 }
 

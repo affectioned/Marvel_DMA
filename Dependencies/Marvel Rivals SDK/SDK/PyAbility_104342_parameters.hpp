@@ -21,9 +21,7 @@ struct PyUIC_SelectTarget_104342_GetTargets final
 public:
 	TArray<class AActor*>                         ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PyUIC_SelectTarget_104342_GetTargets) == 0x000008, "Wrong alignment on PyUIC_SelectTarget_104342_GetTargets");
-static_assert(sizeof(PyUIC_SelectTarget_104342_GetTargets) == 0x000010, "Wrong size on PyUIC_SelectTarget_104342_GetTargets");
-static_assert(offsetof(PyUIC_SelectTarget_104342_GetTargets, ReturnValue) == 0x000000, "Member 'PyUIC_SelectTarget_104342_GetTargets::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyUIC_SelectTarget_104342_GetTargets;
 
 }
 

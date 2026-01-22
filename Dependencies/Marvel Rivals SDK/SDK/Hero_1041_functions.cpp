@@ -1317,6 +1317,31 @@ void UAbility_104161_Log::BattleLog()
 }
 
 
+// Function Hero_1041.Ability_104161_Log.OnInstigatorActivateAbility
+// (Final, Native, Public)
+// Parameters:
+// class UGameplayAbility*                 ActivatedAbility                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAbility_104161_Log::OnInstigatorActivateAbility(class UGameplayAbility* ActivatedAbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Ability_104161_Log", "OnInstigatorActivateAbility");
+
+	Params::Ability_104161_Log_OnInstigatorActivateAbility Parms{};
+
+	Parms.ActivatedAbility = ActivatedAbility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Hero_1041.Ability_104161_Delay_CheckKill.ApplySlayDamageToTarget
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:

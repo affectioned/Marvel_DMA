@@ -18,20 +18,23 @@ namespace SDK
 
 // BlueprintGeneratedClass CameraShake_105361_01_BP.CameraShake_105361_01_BP_C
 // 0x0000 (0x02B0 - 0x02B0)
-class CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C final : public ULegacyCameraShake
+class UCameraShake_105361_01_BP_C final : public ULegacyCameraShake
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass CameraShake_105361_01_BP.CameraShake_105361_01_BP_C", true, "CameraShake_105361_01_BP_C">();
+		BP_STATIC_CLASS_IMPL("CameraShake_105361_01_BP_C")
 	}
-	static class CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C>();
+		STATIC_NAME_IMPL(L"CameraShake_105361_01_BP_C")
+	}
+	static class UCameraShake_105361_01_BP_C* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCameraShake_105361_01_BP_C>();
 	}
 };
-static_assert(alignof(CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C) == 0x000010, "Wrong alignment on CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C");
-static_assert(sizeof(CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C) == 0x0002B0, "Wrong size on CameraShake_105361_01_BP::UCameraShake_105361_01_BP_C");
+DUMPER7_ASSERTS_UCameraShake_105361_01_BP_C;
 
 }
 

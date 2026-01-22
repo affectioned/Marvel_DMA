@@ -23,15 +23,18 @@ class UBTT_AbilityAction_Button_BP_C final : public UBTT_PyAbilityAction_Button
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BTT_AbilityAction_Button_BP_C">();
+		BP_STATIC_CLASS_IMPL("BTT_AbilityAction_Button_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_AbilityAction_Button_BP_C")
 	}
 	static class UBTT_AbilityAction_Button_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_AbilityAction_Button_BP_C>();
 	}
 };
-static_assert(alignof(UBTT_AbilityAction_Button_BP_C) == 0x000008, "Wrong alignment on UBTT_AbilityAction_Button_BP_C");
-static_assert(sizeof(UBTT_AbilityAction_Button_BP_C) == 0x0000F8, "Wrong size on UBTT_AbilityAction_Button_BP_C");
+DUMPER7_ASSERTS_UBTT_AbilityAction_Button_BP_C;
 
 }
 

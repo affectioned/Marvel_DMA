@@ -23,15 +23,18 @@ class UAISelectTarget_WhiteQueenSoul_BP_C final : public UPyAISelectTarget_Summo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AISelectTarget_WhiteQueenSoul_BP_C">();
+		BP_STATIC_CLASS_IMPL("AISelectTarget_WhiteQueenSoul_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AISelectTarget_WhiteQueenSoul_BP_C")
 	}
 	static class UAISelectTarget_WhiteQueenSoul_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAISelectTarget_WhiteQueenSoul_BP_C>();
 	}
 };
-static_assert(alignof(UAISelectTarget_WhiteQueenSoul_BP_C) == 0x000008, "Wrong alignment on UAISelectTarget_WhiteQueenSoul_BP_C");
-static_assert(sizeof(UAISelectTarget_WhiteQueenSoul_BP_C) == 0x000078, "Wrong size on UAISelectTarget_WhiteQueenSoul_BP_C");
+DUMPER7_ASSERTS_UAISelectTarget_WhiteQueenSoul_BP_C;
 
 }
 

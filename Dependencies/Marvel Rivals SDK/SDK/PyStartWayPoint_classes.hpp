@@ -27,15 +27,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyStartWayPoint">();
+		STATIC_CLASS_IMPL("PyStartWayPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyStartWayPoint")
 	}
 	static class APyStartWayPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyStartWayPoint>();
 	}
 };
-static_assert(alignof(APyStartWayPoint) == 0x000010, "Wrong alignment on APyStartWayPoint");
-static_assert(sizeof(APyStartWayPoint) == 0x0007C0, "Wrong size on APyStartWayPoint");
+DUMPER7_ASSERTS_APyStartWayPoint;
 
 }
 

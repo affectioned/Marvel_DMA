@@ -17,37 +17,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_ActionTip_PS.WBP_Battle_ActionTip_PS_C
-// 0x0038 (0x0620 - 0x05E8)
+// 0x0038 (0x0628 - 0x05F0)
 class UWBP_Battle_ActionTip_PS_C final : public UPyWidget_ActionTip
 {
 public:
-	class UWidgetAnimation*                       Anim_KeyState;                                     // 0x05E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame_Bottom;                                  // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Frame_Top;                                     // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelImage*                           Img_Line_PS;                                       // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelOverlay*                         Overlay_Tip;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelRichTextBlock*                   Text_KeyHint;                                      // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Beginner_Long_C*                   WBP_Beginner_Long;                                 // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_KeyState;                                     // 0x05F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame_Bottom;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Frame_Top;                                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_Line_PS;                                       // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelOverlay*                         Overlay_Tip;                                       // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelRichTextBlock*                   Text_KeyHint;                                      // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Beginner_Long_C*                   WBP_Beginner_Long;                                 // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Battle_ActionTip_PS_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Battle_ActionTip_PS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Battle_ActionTip_PS_C")
 	}
 	static class UWBP_Battle_ActionTip_PS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Battle_ActionTip_PS_C>();
 	}
 };
-static_assert(alignof(UWBP_Battle_ActionTip_PS_C) == 0x000008, "Wrong alignment on UWBP_Battle_ActionTip_PS_C");
-static_assert(sizeof(UWBP_Battle_ActionTip_PS_C) == 0x000620, "Wrong size on UWBP_Battle_ActionTip_PS_C");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Anim_KeyState) == 0x0005E8, "Member 'UWBP_Battle_ActionTip_PS_C::Anim_KeyState' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Img_Frame_Bottom) == 0x0005F0, "Member 'UWBP_Battle_ActionTip_PS_C::Img_Frame_Bottom' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Img_Frame_Top) == 0x0005F8, "Member 'UWBP_Battle_ActionTip_PS_C::Img_Frame_Top' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Img_Line_PS) == 0x000600, "Member 'UWBP_Battle_ActionTip_PS_C::Img_Line_PS' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Overlay_Tip) == 0x000608, "Member 'UWBP_Battle_ActionTip_PS_C::Overlay_Tip' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, Text_KeyHint) == 0x000610, "Member 'UWBP_Battle_ActionTip_PS_C::Text_KeyHint' has a wrong offset!");
-static_assert(offsetof(UWBP_Battle_ActionTip_PS_C, WBP_Beginner_Long) == 0x000618, "Member 'UWBP_Battle_ActionTip_PS_C::WBP_Beginner_Long' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Battle_ActionTip_PS_C;
 
 }
 

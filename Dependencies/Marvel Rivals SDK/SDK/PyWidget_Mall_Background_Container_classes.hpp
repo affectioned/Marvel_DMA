@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Background_Container.PyWidget_Mall_Background_Container
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Mall_Background_Container final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UUserWidget*>                    BackgroundWidgets;                                 // 0x05C0(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UUserWidget*>                    BackgroundWidgets;                                 // 0x05C8(0x0010)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Background_Container">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Background_Container")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Background_Container")
 	}
 	static class UPyWidget_Mall_Background_Container* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Background_Container>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Background_Container) == 0x000008, "Wrong alignment on UPyWidget_Mall_Background_Container");
-static_assert(sizeof(UPyWidget_Mall_Background_Container) == 0x0005D0, "Wrong size on UPyWidget_Mall_Background_Container");
-static_assert(offsetof(UPyWidget_Mall_Background_Container, BackgroundWidgets) == 0x0005C0, "Member 'UPyWidget_Mall_Background_Container::BackgroundWidgets' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Background_Container;
 
 }
 

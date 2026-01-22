@@ -26,12 +26,7 @@ public:
 	struct FAttributeModifierHandle               ParameterHandle;                                   // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	struct FGlobalEventExtraData                  ExtraData;                                         // 0x0028(0x0001)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PyTeamDeathMatchRuleComponent_OnActorDeath) == 0x000008, "Wrong alignment on PyTeamDeathMatchRuleComponent_OnActorDeath");
-static_assert(sizeof(PyTeamDeathMatchRuleComponent_OnActorDeath) == 0x000030, "Wrong size on PyTeamDeathMatchRuleComponent_OnActorDeath");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_OnActorDeath, Killer) == 0x000000, "Member 'PyTeamDeathMatchRuleComponent_OnActorDeath::Killer' has a wrong offset!");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_OnActorDeath, Target) == 0x000008, "Member 'PyTeamDeathMatchRuleComponent_OnActorDeath::Target' has a wrong offset!");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_OnActorDeath, ParameterHandle) == 0x000010, "Member 'PyTeamDeathMatchRuleComponent_OnActorDeath::ParameterHandle' has a wrong offset!");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_OnActorDeath, ExtraData) == 0x000028, "Member 'PyTeamDeathMatchRuleComponent_OnActorDeath::ExtraData' has a wrong offset!");
+DUMPER7_ASSERTS_PyTeamDeathMatchRuleComponent_OnActorDeath;
 
 // PythonFunction PyTeamDeathMatchRuleComponent.PyTeamDeathMatchRuleComponent.MulticastScoreChange
 // 0x0010 (0x0010 - 0x0000)
@@ -41,10 +36,7 @@ public:
 	class AMarvelPlayerState*                     PS;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalScore;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyTeamDeathMatchRuleComponent_MulticastScoreChange) == 0x000008, "Wrong alignment on PyTeamDeathMatchRuleComponent_MulticastScoreChange");
-static_assert(sizeof(PyTeamDeathMatchRuleComponent_MulticastScoreChange) == 0x000010, "Wrong size on PyTeamDeathMatchRuleComponent_MulticastScoreChange");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_MulticastScoreChange, PS) == 0x000000, "Member 'PyTeamDeathMatchRuleComponent_MulticastScoreChange::PS' has a wrong offset!");
-static_assert(offsetof(PyTeamDeathMatchRuleComponent_MulticastScoreChange, TotalScore) == 0x000008, "Member 'PyTeamDeathMatchRuleComponent_MulticastScoreChange::TotalScore' has a wrong offset!");
+DUMPER7_ASSERTS_PyTeamDeathMatchRuleComponent_MulticastScoreChange;
 
 }
 

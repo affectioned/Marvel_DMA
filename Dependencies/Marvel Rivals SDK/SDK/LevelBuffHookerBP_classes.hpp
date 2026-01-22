@@ -23,15 +23,18 @@ class ULevelBuffHookerBP_C final : public UPyLevelBuffHookerComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LevelBuffHookerBP_C">();
+		BP_STATIC_CLASS_IMPL("LevelBuffHookerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelBuffHookerBP_C")
 	}
 	static class ULevelBuffHookerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelBuffHookerBP_C>();
 	}
 };
-static_assert(alignof(ULevelBuffHookerBP_C) == 0x000008, "Wrong alignment on ULevelBuffHookerBP_C");
-static_assert(sizeof(ULevelBuffHookerBP_C) == 0x000180, "Wrong size on ULevelBuffHookerBP_C");
+DUMPER7_ASSERTS_ULevelBuffHookerBP_C;
 
 }
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10441018.PyBuffAbility_10130_10440093
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_10440093 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         CoolDown;                                          // 0x1A30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CoolDown;                                          // 0x1A48(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -32,19 +32,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10440093">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10440093")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10440093")
 	}
 	static class UPyBuffAbility_10130_10440093* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10440093>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10440093) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10440093");
-static_assert(sizeof(UPyBuffAbility_10130_10440093) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10440093");
-static_assert(offsetof(UPyBuffAbility_10130_10440093, CoolDown) == 0x001A30, "Member 'UPyBuffAbility_10130_10440093::CoolDown' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10440093;
 
 // PythonClass PyBuffAbility_10130_10441018.PyScope_10449490
-// 0x0000 (0x1AA0 - 0x1AA0)
+// 0x0000 (0x1B70 - 0x1B70)
 class APyScope_10449490 : public AMarvelAbilityTargetActor_Scope
 {
 public:
@@ -54,22 +56,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyScope_10449490">();
+		STATIC_CLASS_IMPL("PyScope_10449490")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyScope_10449490")
 	}
 	static class APyScope_10449490* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyScope_10449490>();
 	}
 };
-static_assert(alignof(APyScope_10449490) == 0x000010, "Wrong alignment on APyScope_10449490");
-static_assert(sizeof(APyScope_10449490) == 0x001AA0, "Wrong size on APyScope_10449490");
+DUMPER7_ASSERTS_APyScope_10449490;
 
 // PythonClass PyBuffAbility_10130_10441018.PyBuffAbility_10130_10449490
-// 0x0BC8 (0x1F38 - 0x1370)
+// 0x0EE8 (0x2270 - 0x1388)
 class UPyBuffAbility_10130_10449490 : public UMarvelEffectGameplayAbility
 {
 public:
-	struct FDashAbilityInfo                       DashInfo;                                          // 0x1370(0x0BC8)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FDashAbilityInfo                       DashInfo;                                          // 0x1388(0x0EE8)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -77,16 +82,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10449490">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10449490")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10449490")
 	}
 	static class UPyBuffAbility_10130_10449490* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10449490>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10449490) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10449490");
-static_assert(sizeof(UPyBuffAbility_10130_10449490) == 0x001F38, "Wrong size on UPyBuffAbility_10130_10449490");
-static_assert(offsetof(UPyBuffAbility_10130_10449490, DashInfo) == 0x001370, "Member 'UPyBuffAbility_10130_10449490::DashInfo' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10449490;
 
 }
 

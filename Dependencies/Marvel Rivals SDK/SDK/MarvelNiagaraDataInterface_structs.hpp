@@ -35,10 +35,7 @@ public:
 	float                                         DefaultValue;                                      // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FNDIGameplayAttributeConfig) == 0x000008, "Wrong alignment on FNDIGameplayAttributeConfig");
-static_assert(sizeof(FNDIGameplayAttributeConfig) == 0x000048, "Wrong size on FNDIGameplayAttributeConfig");
-static_assert(offsetof(FNDIGameplayAttributeConfig, Attribute) == 0x000000, "Member 'FNDIGameplayAttributeConfig::Attribute' has a wrong offset!");
-static_assert(offsetof(FNDIGameplayAttributeConfig, DefaultValue) == 0x000040, "Member 'FNDIGameplayAttributeConfig::DefaultValue' has a wrong offset!");
+DUMPER7_ASSERTS_FNDIGameplayAttributeConfig;
 
 }
 

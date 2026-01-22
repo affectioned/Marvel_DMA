@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyCue_Weapon_Loop_101482.PyCue_Weapon_Loop_101482
-// 0x0020 (0x1430 - 0x1410)
+// 0x0020 (0x1440 - 0x1420)
 class APyCue_Weapon_Loop_101482 final : public AMarvelCueNotify_Weapon_Loop_VoidMesh
 {
 public:
-	int32                                         LoopFireAudio;                                     // 0x1410(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1414[0x4];                                     // 0x1414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 EndFireAudio;                                      // 0x1418(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         EndFireAudio_2;                                    // 0x1428(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LoopFireAudio;                                     // 0x1420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1424[0x4];                                     // 0x1424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 EndFireAudio;                                      // 0x1428(0x0010)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         EndFireAudio_2;                                    // 0x1438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnBegin();
@@ -39,18 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Weapon_Loop_101482">();
+		STATIC_CLASS_IMPL("PyCue_Weapon_Loop_101482")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Weapon_Loop_101482")
 	}
 	static class APyCue_Weapon_Loop_101482* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Weapon_Loop_101482>();
 	}
 };
-static_assert(alignof(APyCue_Weapon_Loop_101482) == 0x000010, "Wrong alignment on APyCue_Weapon_Loop_101482");
-static_assert(sizeof(APyCue_Weapon_Loop_101482) == 0x001430, "Wrong size on APyCue_Weapon_Loop_101482");
-static_assert(offsetof(APyCue_Weapon_Loop_101482, LoopFireAudio) == 0x001410, "Member 'APyCue_Weapon_Loop_101482::LoopFireAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_101482, EndFireAudio) == 0x001418, "Member 'APyCue_Weapon_Loop_101482::EndFireAudio' has a wrong offset!");
-static_assert(offsetof(APyCue_Weapon_Loop_101482, EndFireAudio_2) == 0x001428, "Member 'APyCue_Weapon_Loop_101482::EndFireAudio_2' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Weapon_Loop_101482;
 
 }
 

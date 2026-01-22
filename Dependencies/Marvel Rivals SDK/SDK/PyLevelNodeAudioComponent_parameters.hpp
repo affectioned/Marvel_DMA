@@ -24,9 +24,7 @@ struct PyLevelNodeAudioComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeAudioComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelNodeAudioComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelNodeAudioComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelNodeAudioComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelNodeAudioComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelNodeAudioComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeAudioComponent_ReceiveEndPlay;
 
 // PythonFunction PyLevelNodeAudioComponent.PyLevelNodeAudioComponent.PlayAmbientSound
 // 0x0050 (0x0050 - 0x0000)
@@ -37,11 +35,7 @@ public:
 	class FString                                 NodeName;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UAkAudioEvent>           AudioEvent;                                        // 0x0020(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeAudioComponent_PlayAmbientSound) == 0x000008, "Wrong alignment on PyLevelNodeAudioComponent_PlayAmbientSound");
-static_assert(sizeof(PyLevelNodeAudioComponent_PlayAmbientSound) == 0x000050, "Wrong size on PyLevelNodeAudioComponent_PlayAmbientSound");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAmbientSound, InstanceName) == 0x000000, "Member 'PyLevelNodeAudioComponent_PlayAmbientSound::InstanceName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAmbientSound, NodeName) == 0x000010, "Member 'PyLevelNodeAudioComponent_PlayAmbientSound::NodeName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAmbientSound, AudioEvent) == 0x000020, "Member 'PyLevelNodeAudioComponent_PlayAmbientSound::AudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeAudioComponent_PlayAmbientSound;
 
 // PythonFunction PyLevelNodeAudioComponent.PyLevelNodeAudioComponent.PlayAudioByID
 // 0x0020 (0x0020 - 0x0000)
@@ -51,10 +45,7 @@ public:
 	class FString                                 InstanceName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	TArray<int32>                                 VoiceIDList;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyLevelNodeAudioComponent_PlayAudioByID) == 0x000008, "Wrong alignment on PyLevelNodeAudioComponent_PlayAudioByID");
-static_assert(sizeof(PyLevelNodeAudioComponent_PlayAudioByID) == 0x000020, "Wrong size on PyLevelNodeAudioComponent_PlayAudioByID");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByID, InstanceName) == 0x000000, "Member 'PyLevelNodeAudioComponent_PlayAudioByID::InstanceName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByID, VoiceIDList) == 0x000010, "Member 'PyLevelNodeAudioComponent_PlayAudioByID::VoiceIDList' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeAudioComponent_PlayAudioByID;
 
 // PythonFunction PyLevelNodeAudioComponent.PyLevelNodeAudioComponent.PlayAudioByIDAndBattleSide
 // 0x0028 (0x0028 - 0x0000)
@@ -65,11 +56,7 @@ public:
 	TArray<int32>                                 VoiceIDList;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 	EBattleSide                                   BattleSide;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide) == 0x000008, "Wrong alignment on PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide");
-static_assert(sizeof(PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide) == 0x000028, "Wrong size on PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide, InstanceName) == 0x000000, "Member 'PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide::InstanceName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide, VoiceIDList) == 0x000010, "Member 'PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide::VoiceIDList' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide, BattleSide) == 0x000020, "Member 'PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeAudioComponent_PlayAudioByIDAndBattleSide;
 
 // PythonFunction PyLevelNodeAudioComponent.PyLevelNodeAudioComponent.PlayAudioByEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -79,10 +66,7 @@ public:
 	class FString                                 InstanceName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          AudioEvent;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelNodeAudioComponent_PlayAudioByEvent) == 0x000008, "Wrong alignment on PyLevelNodeAudioComponent_PlayAudioByEvent");
-static_assert(sizeof(PyLevelNodeAudioComponent_PlayAudioByEvent) == 0x000018, "Wrong size on PyLevelNodeAudioComponent_PlayAudioByEvent");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByEvent, InstanceName) == 0x000000, "Member 'PyLevelNodeAudioComponent_PlayAudioByEvent::InstanceName' has a wrong offset!");
-static_assert(offsetof(PyLevelNodeAudioComponent_PlayAudioByEvent, AudioEvent) == 0x000010, "Member 'PyLevelNodeAudioComponent_PlayAudioByEvent::AudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelNodeAudioComponent_PlayAudioByEvent;
 
 }
 

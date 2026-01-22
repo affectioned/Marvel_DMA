@@ -24,11 +24,7 @@ public:
 	class AActor*                                 ToCharacter;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNpcAudioComponent_TryPostNpcVoice) == 0x000008, "Wrong alignment on PyNpcAudioComponent_TryPostNpcVoice");
-static_assert(sizeof(PyNpcAudioComponent_TryPostNpcVoice) == 0x000018, "Wrong size on PyNpcAudioComponent_TryPostNpcVoice");
-static_assert(offsetof(PyNpcAudioComponent_TryPostNpcVoice, VoiceID) == 0x000000, "Member 'PyNpcAudioComponent_TryPostNpcVoice::VoiceID' has a wrong offset!");
-static_assert(offsetof(PyNpcAudioComponent_TryPostNpcVoice, ToCharacter) == 0x000008, "Member 'PyNpcAudioComponent_TryPostNpcVoice::ToCharacter' has a wrong offset!");
-static_assert(offsetof(PyNpcAudioComponent_TryPostNpcVoice, ReturnValue) == 0x000010, "Member 'PyNpcAudioComponent_TryPostNpcVoice::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyNpcAudioComponent_TryPostNpcVoice;
 
 // PythonFunction PyNpcAudioComponent.PyNpcAudioComponent.StopNpcVoice
 // 0x0008 (0x0008 - 0x0000)
@@ -38,10 +34,7 @@ public:
 	int32                                         FadeOutMs;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyNpcAudioComponent_StopNpcVoice) == 0x000004, "Wrong alignment on PyNpcAudioComponent_StopNpcVoice");
-static_assert(sizeof(PyNpcAudioComponent_StopNpcVoice) == 0x000008, "Wrong size on PyNpcAudioComponent_StopNpcVoice");
-static_assert(offsetof(PyNpcAudioComponent_StopNpcVoice, FadeOutMs) == 0x000000, "Member 'PyNpcAudioComponent_StopNpcVoice::FadeOutMs' has a wrong offset!");
-static_assert(offsetof(PyNpcAudioComponent_StopNpcVoice, ReturnValue) == 0x000004, "Member 'PyNpcAudioComponent_StopNpcVoice::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyNpcAudioComponent_StopNpcVoice;
 
 }
 

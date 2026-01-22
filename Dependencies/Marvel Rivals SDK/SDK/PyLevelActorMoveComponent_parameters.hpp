@@ -23,9 +23,7 @@ struct PyLevelActorMoveComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyLevelActorMoveComponent_ReceiveEndPlay");
-static_assert(sizeof(PyLevelActorMoveComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PyLevelActorMoveComponent_ReceiveEndPlay");
-static_assert(offsetof(PyLevelActorMoveComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyLevelActorMoveComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_ReceiveEndPlay;
 
 // PythonFunction PyLevelActorMoveComponent.PyLevelActorMoveComponent.PyTimelineUpdate
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +32,7 @@ struct PyLevelActorMoveComponent_PyTimelineUpdate final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong alignment on PyLevelActorMoveComponent_PyTimelineUpdate");
-static_assert(sizeof(PyLevelActorMoveComponent_PyTimelineUpdate) == 0x000004, "Wrong size on PyLevelActorMoveComponent_PyTimelineUpdate");
-static_assert(offsetof(PyLevelActorMoveComponent_PyTimelineUpdate, DeltaTime) == 0x000000, "Member 'PyLevelActorMoveComponent_PyTimelineUpdate::DeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_PyTimelineUpdate;
 
 // PythonFunction PyLevelActorMoveComponent.PyLevelActorMoveComponent.FollowTraceMoveStart
 // 0x0018 (0x0018 - 0x0000)
@@ -46,10 +42,7 @@ public:
 	class FString                                 TraceName_0;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         StartPercent;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_FollowTraceMoveStart) == 0x000008, "Wrong alignment on PyLevelActorMoveComponent_FollowTraceMoveStart");
-static_assert(sizeof(PyLevelActorMoveComponent_FollowTraceMoveStart) == 0x000018, "Wrong size on PyLevelActorMoveComponent_FollowTraceMoveStart");
-static_assert(offsetof(PyLevelActorMoveComponent_FollowTraceMoveStart, TraceName_0) == 0x000000, "Member 'PyLevelActorMoveComponent_FollowTraceMoveStart::TraceName_0' has a wrong offset!");
-static_assert(offsetof(PyLevelActorMoveComponent_FollowTraceMoveStart, StartPercent) == 0x000010, "Member 'PyLevelActorMoveComponent_FollowTraceMoveStart::StartPercent' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_FollowTraceMoveStart;
 
 // PythonFunction PyLevelActorMoveComponent.PyLevelActorMoveComponent.SetCampMoveSpeed
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +51,7 @@ struct PyLevelActorMoveComponent_SetCampMoveSpeed final
 public:
 	float                                         move_speed;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_SetCampMoveSpeed) == 0x000004, "Wrong alignment on PyLevelActorMoveComponent_SetCampMoveSpeed");
-static_assert(sizeof(PyLevelActorMoveComponent_SetCampMoveSpeed) == 0x000004, "Wrong size on PyLevelActorMoveComponent_SetCampMoveSpeed");
-static_assert(offsetof(PyLevelActorMoveComponent_SetCampMoveSpeed, move_speed) == 0x000000, "Member 'PyLevelActorMoveComponent_SetCampMoveSpeed::move_speed' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_SetCampMoveSpeed;
 
 // PythonFunction PyLevelActorMoveComponent.PyLevelActorMoveComponent.GetCurLength
 // 0x0004 (0x0004 - 0x0000)
@@ -69,9 +60,7 @@ struct PyLevelActorMoveComponent_GetCurLength final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_GetCurLength) == 0x000004, "Wrong alignment on PyLevelActorMoveComponent_GetCurLength");
-static_assert(sizeof(PyLevelActorMoveComponent_GetCurLength) == 0x000004, "Wrong size on PyLevelActorMoveComponent_GetCurLength");
-static_assert(offsetof(PyLevelActorMoveComponent_GetCurLength, ReturnValue) == 0x000000, "Member 'PyLevelActorMoveComponent_GetCurLength::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_GetCurLength;
 
 // PythonFunction PyLevelActorMoveComponent.PyLevelActorMoveComponent.ReachCheckPoint
 // 0x0010 (0x0010 - 0x0000)
@@ -80,9 +69,7 @@ struct PyLevelActorMoveComponent_ReachCheckPoint final
 public:
 	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelActorMoveComponent_ReachCheckPoint) == 0x000008, "Wrong alignment on PyLevelActorMoveComponent_ReachCheckPoint");
-static_assert(sizeof(PyLevelActorMoveComponent_ReachCheckPoint) == 0x000010, "Wrong size on PyLevelActorMoveComponent_ReachCheckPoint");
-static_assert(offsetof(PyLevelActorMoveComponent_ReachCheckPoint, EventName) == 0x000000, "Member 'PyLevelActorMoveComponent_ReachCheckPoint::EventName' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelActorMoveComponent_ReachCheckPoint;
 
 }
 

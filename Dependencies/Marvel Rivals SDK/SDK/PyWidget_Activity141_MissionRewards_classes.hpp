@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity141_MissionRewards.PyWidget_Activity141_MissionRewards
-// 0x0010 (0x05D0 - 0x05C0)
+// 0x0010 (0x05D8 - 0x05C8)
 class UPyWidget_Activity141_MissionRewards final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Interval;                                          // 0x05BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                OriginPadding;                                     // 0x05C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Interval;                                          // 0x05C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                OriginPadding;                                     // 0x05C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -35,33 +35,34 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity141_MissionRewards">();
+		STATIC_CLASS_IMPL("PyWidget_Activity141_MissionRewards")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity141_MissionRewards")
 	}
 	static class UPyWidget_Activity141_MissionRewards* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity141_MissionRewards>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity141_MissionRewards) == 0x000008, "Wrong alignment on UPyWidget_Activity141_MissionRewards");
-static_assert(sizeof(UPyWidget_Activity141_MissionRewards) == 0x0005D0, "Wrong size on UPyWidget_Activity141_MissionRewards");
-static_assert(offsetof(UPyWidget_Activity141_MissionRewards, Interval) == 0x0005BC, "Member 'UPyWidget_Activity141_MissionRewards::Interval' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_MissionRewards, OriginPadding) == 0x0005C0, "Member 'UPyWidget_Activity141_MissionRewards::OriginPadding' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity141_MissionRewards;
 
 // PythonClass PyWidget_Activity141_MissionRewards.PyWidget_Activity141_RewardBase
-// 0x0090 (0x0650 - 0x05C0)
+// 0x0090 (0x0658 - 0x05C8)
 class UPyWidget_Activity141_RewardBase : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_CoinBg;                                        // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Img_CoinBg_Hover;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05F0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalName_Color;                                  // 0x0604(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Gain;                                   // 0x0618(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateColor                            CountColor_Normal;                                 // 0x062C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0640(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Image_OffsetUV_Skin;                               // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Image_OffsetUV_Normal;                             // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_CoinBg;                                        // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Img_CoinBg_Hover;                                  // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BreakIceCoinName_Color;                            // 0x05F8(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalName_Color;                                  // 0x060C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Gain;                                   // 0x0620(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateColor                            CountColor_Normal;                                 // 0x0634(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -71,75 +72,78 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity141_RewardBase">();
+		STATIC_CLASS_IMPL("PyWidget_Activity141_RewardBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity141_RewardBase")
 	}
 	static class UPyWidget_Activity141_RewardBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity141_RewardBase>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity141_RewardBase) == 0x000008, "Wrong alignment on UPyWidget_Activity141_RewardBase");
-static_assert(sizeof(UPyWidget_Activity141_RewardBase) == 0x000650, "Wrong size on UPyWidget_Activity141_RewardBase");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, Image_OffsetUV_Skin) == 0x0005C0, "Member 'UPyWidget_Activity141_RewardBase::Image_OffsetUV_Skin' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, Image_OffsetUV_Normal) == 0x0005D0, "Member 'UPyWidget_Activity141_RewardBase::Image_OffsetUV_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, Img_CoinBg) == 0x0005E0, "Member 'UPyWidget_Activity141_RewardBase::Img_CoinBg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, Img_CoinBg_Hover) == 0x0005E8, "Member 'UPyWidget_Activity141_RewardBase::Img_CoinBg_Hover' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, BreakIceCoinName_Color) == 0x0005F0, "Member 'UPyWidget_Activity141_RewardBase::BreakIceCoinName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, NormalName_Color) == 0x000604, "Member 'UPyWidget_Activity141_RewardBase::NormalName_Color' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, CountColor_Gain) == 0x000618, "Member 'UPyWidget_Activity141_RewardBase::CountColor_Gain' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, CountColor_Normal) == 0x00062C, "Member 'UPyWidget_Activity141_RewardBase::CountColor_Normal' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Activity141_RewardBase, OnClicked) == 0x000640, "Member 'UPyWidget_Activity141_RewardBase::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Activity141_RewardBase;
 
 // PythonClass PyWidget_Activity141_MissionRewards.PyWidget_Activity141_Reward
-// 0x0000 (0x0650 - 0x0650)
+// 0x0000 (0x0658 - 0x0658)
 class UPyWidget_Activity141_Reward final : public UPyWidget_Activity141_RewardBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity141_Reward">();
+		STATIC_CLASS_IMPL("PyWidget_Activity141_Reward")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity141_Reward")
 	}
 	static class UPyWidget_Activity141_Reward* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity141_Reward>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity141_Reward) == 0x000008, "Wrong alignment on UPyWidget_Activity141_Reward");
-static_assert(sizeof(UPyWidget_Activity141_Reward) == 0x000650, "Wrong size on UPyWidget_Activity141_Reward");
+DUMPER7_ASSERTS_UPyWidget_Activity141_Reward;
 
 // PythonClass PyWidget_Activity141_MissionRewards.PyWidget_Activity141_Mission_ProgressItem
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_Activity141_Mission_ProgressItem final : public UPyMarvelUserWidget
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity141_Mission_ProgressItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity141_Mission_ProgressItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity141_Mission_ProgressItem")
 	}
 	static class UPyWidget_Activity141_Mission_ProgressItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity141_Mission_ProgressItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity141_Mission_ProgressItem) == 0x000008, "Wrong alignment on UPyWidget_Activity141_Mission_ProgressItem");
-static_assert(sizeof(UPyWidget_Activity141_Mission_ProgressItem) == 0x0005C0, "Wrong size on UPyWidget_Activity141_Mission_ProgressItem");
+DUMPER7_ASSERTS_UPyWidget_Activity141_Mission_ProgressItem;
 
 // PythonClass PyWidget_Activity141_MissionRewards.PyWidget_Activity141_RewardBig
-// 0x0000 (0x0650 - 0x0650)
+// 0x0000 (0x0658 - 0x0658)
 class UPyWidget_Activity141_RewardBig final : public UPyWidget_Activity141_RewardBase
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity141_RewardBig">();
+		STATIC_CLASS_IMPL("PyWidget_Activity141_RewardBig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity141_RewardBig")
 	}
 	static class UPyWidget_Activity141_RewardBig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity141_RewardBig>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity141_RewardBig) == 0x000008, "Wrong alignment on UPyWidget_Activity141_RewardBig");
-static_assert(sizeof(UPyWidget_Activity141_RewardBig) == 0x000650, "Wrong size on UPyWidget_Activity141_RewardBig");
+DUMPER7_ASSERTS_UPyWidget_Activity141_RewardBig;
 
 }
 

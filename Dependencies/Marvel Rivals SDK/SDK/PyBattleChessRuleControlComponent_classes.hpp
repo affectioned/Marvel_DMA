@@ -23,15 +23,18 @@ class UPyBattleChessRuleControlComponent final : public UPyLevelRuleControlCompo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBattleChessRuleControlComponent">();
+		STATIC_CLASS_IMPL("PyBattleChessRuleControlComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBattleChessRuleControlComponent")
 	}
 	static class UPyBattleChessRuleControlComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBattleChessRuleControlComponent>();
 	}
 };
-static_assert(alignof(UPyBattleChessRuleControlComponent) == 0x000008, "Wrong alignment on UPyBattleChessRuleControlComponent");
-static_assert(sizeof(UPyBattleChessRuleControlComponent) == 0x000208, "Wrong size on UPyBattleChessRuleControlComponent");
+DUMPER7_ASSERTS_UPyBattleChessRuleControlComponent;
 
 }
 

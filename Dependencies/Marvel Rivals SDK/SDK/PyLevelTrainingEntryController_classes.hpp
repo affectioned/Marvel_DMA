@@ -52,21 +52,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyTrainingEntryController">();
+		STATIC_CLASS_IMPL("PyTrainingEntryController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyTrainingEntryController")
 	}
 	static class APyTrainingEntryController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyTrainingEntryController>();
 	}
 };
-static_assert(alignof(APyTrainingEntryController) == 0x000010, "Wrong alignment on APyTrainingEntryController");
-static_assert(sizeof(APyTrainingEntryController) == 0x0007A0, "Wrong size on APyTrainingEntryController");
-static_assert(offsetof(APyTrainingEntryController, IsPlaying) == 0x0006E0, "Member 'APyTrainingEntryController::IsPlaying' has a wrong offset!");
-static_assert(offsetof(APyTrainingEntryController, LikeCmaera) == 0x0006E8, "Member 'APyTrainingEntryController::LikeCmaera' has a wrong offset!");
-static_assert(offsetof(APyTrainingEntryController, LevelSequenceList) == 0x0006F0, "Member 'APyTrainingEntryController::LevelSequenceList' has a wrong offset!");
-static_assert(offsetof(APyTrainingEntryController, AISpawnerList) == 0x000740, "Member 'APyTrainingEntryController::AISpawnerList' has a wrong offset!");
-static_assert(offsetof(APyTrainingEntryController, StartAudioEvent) == 0x000790, "Member 'APyTrainingEntryController::StartAudioEvent' has a wrong offset!");
-static_assert(offsetof(APyTrainingEntryController, SkipAudioEvent) == 0x000798, "Member 'APyTrainingEntryController::SkipAudioEvent' has a wrong offset!");
+DUMPER7_ASSERTS_APyTrainingEntryController;
 
 }
 

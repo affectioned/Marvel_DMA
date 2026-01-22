@@ -31,20 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Amb_Practicerange_Mid_Wind_C">();
+		BP_STATIC_CLASS_IMPL("Amb_Practicerange_Mid_Wind_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Amb_Practicerange_Mid_Wind_C")
 	}
 	static class AAmb_Practicerange_Mid_Wind_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmb_Practicerange_Mid_Wind_C>();
 	}
 };
-static_assert(alignof(AAmb_Practicerange_Mid_Wind_C) == 0x000010, "Wrong alignment on AAmb_Practicerange_Mid_Wind_C");
-static_assert(sizeof(AAmb_Practicerange_Mid_Wind_C) == 0x000710, "Wrong size on AAmb_Practicerange_Mid_Wind_C");
-static_assert(offsetof(AAmb_Practicerange_Mid_Wind_C, Sphere2) == 0x0006E0, "Member 'AAmb_Practicerange_Mid_Wind_C::Sphere2' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Mid_Wind_C, Sphere1) == 0x0006E8, "Member 'AAmb_Practicerange_Mid_Wind_C::Sphere1' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Mid_Wind_C, Sphere) == 0x0006F0, "Member 'AAmb_Practicerange_Mid_Wind_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Mid_Wind_C, MultiPosition) == 0x0006F8, "Member 'AAmb_Practicerange_Mid_Wind_C::MultiPosition' has a wrong offset!");
-static_assert(offsetof(AAmb_Practicerange_Mid_Wind_C, DefaultSceneRoot) == 0x000700, "Member 'AAmb_Practicerange_Mid_Wind_C::DefaultSceneRoot' has a wrong offset!");
+DUMPER7_ASSERTS_AAmb_Practicerange_Mid_Wind_C;
 
 }
 

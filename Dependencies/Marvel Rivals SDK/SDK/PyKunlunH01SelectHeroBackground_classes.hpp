@@ -43,27 +43,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKunlunH01SelectHeroBackground">();
+		STATIC_CLASS_IMPL("PyKunlunH01SelectHeroBackground")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKunlunH01SelectHeroBackground")
 	}
 	static class APyKunlunH01SelectHeroBackground* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKunlunH01SelectHeroBackground>();
 	}
 };
-static_assert(alignof(APyKunlunH01SelectHeroBackground) == 0x000010, "Wrong alignment on APyKunlunH01SelectHeroBackground");
-static_assert(sizeof(APyKunlunH01SelectHeroBackground) == 0x000730, "Wrong size on APyKunlunH01SelectHeroBackground");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BackGroundActor) == 0x0006E0, "Member 'APyKunlunH01SelectHeroBackground::BackGroundActor' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BackGroundActor2) == 0x0006E8, "Member 'APyKunlunH01SelectHeroBackground::BackGroundActor2' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BGTargetLocation) == 0x0006F0, "Member 'APyKunlunH01SelectHeroBackground::BGTargetLocation' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BGSpeed) == 0x0006F4, "Member 'APyKunlunH01SelectHeroBackground::BGSpeed' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, DynamicMaterials) == 0x0006F8, "Member 'APyKunlunH01SelectHeroBackground::DynamicMaterials' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, EffectActor) == 0x000708, "Member 'APyKunlunH01SelectHeroBackground::EffectActor' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, EffectTargetLocation) == 0x000710, "Member 'APyKunlunH01SelectHeroBackground::EffectTargetLocation' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, EffectSpeed) == 0x000714, "Member 'APyKunlunH01SelectHeroBackground::EffectSpeed' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, EffectMinLocation) == 0x000718, "Member 'APyKunlunH01SelectHeroBackground::EffectMinLocation' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, EffectMaxLocation) == 0x00071C, "Member 'APyKunlunH01SelectHeroBackground::EffectMaxLocation' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BackGroundSequence) == 0x000720, "Member 'APyKunlunH01SelectHeroBackground::BackGroundSequence' has a wrong offset!");
-static_assert(offsetof(APyKunlunH01SelectHeroBackground, BuildingSequence) == 0x000728, "Member 'APyKunlunH01SelectHeroBackground::BuildingSequence' has a wrong offset!");
+DUMPER7_ASSERTS_APyKunlunH01SelectHeroBackground;
 
 }
 

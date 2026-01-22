@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Marvel_classes.hpp"
 #include "Hero_1040_classes.hpp"
+#include "Marvel_classes.hpp"
 
 
 namespace SDK
@@ -24,18 +24,21 @@ class UPyConfig_104001 final : public UConfig_104001
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyConfig_104001">();
+		STATIC_CLASS_IMPL("PyConfig_104001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyConfig_104001")
 	}
 	static class UPyConfig_104001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyConfig_104001>();
 	}
 };
-static_assert(alignof(UPyConfig_104001) == 0x000008, "Wrong alignment on UPyConfig_104001");
-static_assert(sizeof(UPyConfig_104001) == 0x000108, "Wrong size on UPyConfig_104001");
+DUMPER7_ASSERTS_UPyConfig_104001;
 
 // PythonClass PyAbility_104001.PyCue_Buff_Loop_10400103
-// 0x0000 (0x1640 - 0x1640)
+// 0x0000 (0x16F0 - 0x16F0)
 class APyCue_Buff_Loop_10400103 final : public AMarvelCueNotify_Buff
 {
 public:
@@ -46,18 +49,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_Loop_10400103">();
+		STATIC_CLASS_IMPL("PyCue_Buff_Loop_10400103")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_Loop_10400103")
 	}
 	static class APyCue_Buff_Loop_10400103* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_Loop_10400103>();
 	}
 };
-static_assert(alignof(APyCue_Buff_Loop_10400103) == 0x000010, "Wrong alignment on APyCue_Buff_Loop_10400103");
-static_assert(sizeof(APyCue_Buff_Loop_10400103) == 0x001640, "Wrong size on APyCue_Buff_Loop_10400103");
+DUMPER7_ASSERTS_APyCue_Buff_Loop_10400103;
 
 // PythonClass PyAbility_104001.PyAbility_104001
-// 0x0000 (0x2A00 - 0x2A00)
+// 0x0000 (0x2A50 - 0x2A50)
 class UPyAbility_104001 : public UAbility_104001
 {
 public:
@@ -79,36 +85,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_104001">();
+		STATIC_CLASS_IMPL("PyAbility_104001")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_104001")
 	}
 	static class UPyAbility_104001* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_104001>();
 	}
 };
-static_assert(alignof(UPyAbility_104001) == 0x000008, "Wrong alignment on UPyAbility_104001");
-static_assert(sizeof(UPyAbility_104001) == 0x002A00, "Wrong size on UPyAbility_104001");
-
-// PythonClass PyAbility_104001.PyUIController_104001
-// 0x0000 (0x0F10 - 0x0F10)
-class UPyUIController_104001 final : public UUIC_Ability
-{
-public:
-	void OnInit();
-	void OnDestruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyUIController_104001">();
-	}
-	static class UPyUIController_104001* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyUIController_104001>();
-	}
-};
-static_assert(alignof(UPyUIController_104001) == 0x000008, "Wrong alignment on UPyUIController_104001");
-static_assert(sizeof(UPyUIController_104001) == 0x000F10, "Wrong size on UPyUIController_104001");
+DUMPER7_ASSERTS_UPyAbility_104001;
 
 }
 

@@ -23,15 +23,18 @@ class AGC_PracticeRangeRailing013A_CltBP_C final : public AChaosClientDesActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_PracticeRangeRailing013A_CltBP_C">();
+		BP_STATIC_CLASS_IMPL("GC_PracticeRangeRailing013A_CltBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_PracticeRangeRailing013A_CltBP_C")
 	}
 	static class AGC_PracticeRangeRailing013A_CltBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_PracticeRangeRailing013A_CltBP_C>();
 	}
 };
-static_assert(alignof(AGC_PracticeRangeRailing013A_CltBP_C) == 0x000010, "Wrong alignment on AGC_PracticeRangeRailing013A_CltBP_C");
-static_assert(sizeof(AGC_PracticeRangeRailing013A_CltBP_C) == 0x001160, "Wrong size on AGC_PracticeRangeRailing013A_CltBP_C");
+DUMPER7_ASSERTS_AGC_PracticeRangeRailing013A_CltBP_C;
 
 }
 

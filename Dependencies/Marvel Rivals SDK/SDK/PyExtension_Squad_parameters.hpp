@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Squad_OperationSync_BP_Tick) == 0x000004, "Wrong alignment on PyExtension_Squad_OperationSync_BP_Tick");
-static_assert(sizeof(PyExtension_Squad_OperationSync_BP_Tick) == 0x00003C, "Wrong size on PyExtension_Squad_OperationSync_BP_Tick");
-static_assert(offsetof(PyExtension_Squad_OperationSync_BP_Tick, MyGeometry) == 0x000000, "Member 'PyExtension_Squad_OperationSync_BP_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyExtension_Squad_OperationSync_BP_Tick, InDeltaTime) == 0x000038, "Member 'PyExtension_Squad_OperationSync_BP_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Squad_OperationSync_BP_Tick;
 
 // PythonFunction PyExtension_Squad.PyExtension_Squad_OperationSync.BP_RequiresTick
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,7 @@ struct PyExtension_Squad_OperationSync_BP_RequiresTick final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyExtension_Squad_OperationSync_BP_RequiresTick) == 0x000001, "Wrong alignment on PyExtension_Squad_OperationSync_BP_RequiresTick");
-static_assert(sizeof(PyExtension_Squad_OperationSync_BP_RequiresTick) == 0x000001, "Wrong size on PyExtension_Squad_OperationSync_BP_RequiresTick");
-static_assert(offsetof(PyExtension_Squad_OperationSync_BP_RequiresTick, ReturnValue) == 0x000000, "Member 'PyExtension_Squad_OperationSync_BP_RequiresTick::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyExtension_Squad_OperationSync_BP_RequiresTick;
 
 }
 

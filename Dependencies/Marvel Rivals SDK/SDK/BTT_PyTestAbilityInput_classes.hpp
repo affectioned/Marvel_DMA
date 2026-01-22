@@ -33,18 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTT_PyTestAbilityInput">();
+		STATIC_CLASS_IMPL("BTT_PyTestAbilityInput")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTT_PyTestAbilityInput")
 	}
 	static class UBTT_PyTestAbilityInput* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTT_PyTestAbilityInput>();
 	}
 };
-static_assert(alignof(UBTT_PyTestAbilityInput) == 0x000008, "Wrong alignment on UBTT_PyTestAbilityInput");
-static_assert(sizeof(UBTT_PyTestAbilityInput) == 0x0000D0, "Wrong size on UBTT_PyTestAbilityInput");
-static_assert(offsetof(UBTT_PyTestAbilityInput, Action) == 0x0000C0, "Member 'UBTT_PyTestAbilityInput::Action' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTestAbilityInput, AbilityID) == 0x0000C4, "Member 'UBTT_PyTestAbilityInput::AbilityID' has a wrong offset!");
-static_assert(offsetof(UBTT_PyTestAbilityInput, IsPressed) == 0x0000C8, "Member 'UBTT_PyTestAbilityInput::IsPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UBTT_PyTestAbilityInput;
 
 }
 

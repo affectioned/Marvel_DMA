@@ -23,15 +23,18 @@ class UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C final : pu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C">();
+		BP_STATIC_CLASS_IMPL("AIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C")
 	}
 	static class UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C>();
 	}
 };
-static_assert(alignof(UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C) == 0x000008, "Wrong alignment on UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C");
-static_assert(sizeof(UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C) == 0x000040, "Wrong size on UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C");
+DUMPER7_ASSERTS_UAIAbilityActivivation_ChangeButtonIfNoFastBallCatchBuff_Hulk_C;
 
 }
 

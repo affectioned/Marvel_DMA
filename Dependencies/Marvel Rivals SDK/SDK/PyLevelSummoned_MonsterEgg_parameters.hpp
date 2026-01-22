@@ -26,10 +26,7 @@ public:
 	class UObject*                                TraceSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyTraceComponent_20020601_OnTrace) == 0x000008, "Wrong alignment on PyTraceComponent_20020601_OnTrace");
-static_assert(sizeof(PyTraceComponent_20020601_OnTrace) == 0x000018, "Wrong size on PyTraceComponent_20020601_OnTrace");
-static_assert(offsetof(PyTraceComponent_20020601_OnTrace, TraceSource) == 0x000000, "Member 'PyTraceComponent_20020601_OnTrace::TraceSource' has a wrong offset!");
-static_assert(offsetof(PyTraceComponent_20020601_OnTrace, HitResults) == 0x000008, "Member 'PyTraceComponent_20020601_OnTrace::HitResults' has a wrong offset!");
+DUMPER7_ASSERTS_PyTraceComponent_20020601_OnTrace;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyLevelSummoned_MonsterInsect.OnInstigatorDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -40,11 +37,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               Modifier;                                          // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_MonsterInsect_OnInstigatorDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_MonsterInsect_OnInstigatorDeath");
-static_assert(sizeof(PyLevelSummoned_MonsterInsect_OnInstigatorDeath) == 0x000028, "Wrong size on PyLevelSummoned_MonsterInsect_OnInstigatorDeath");
-static_assert(offsetof(PyLevelSummoned_MonsterInsect_OnInstigatorDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_MonsterInsect_OnInstigatorDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_MonsterInsect_OnInstigatorDeath, InTarget) == 0x000008, "Member 'PyLevelSummoned_MonsterInsect_OnInstigatorDeath::InTarget' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_MonsterInsect_OnInstigatorDeath, Modifier) == 0x000010, "Member 'PyLevelSummoned_MonsterInsect_OnInstigatorDeath::Modifier' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_MonsterInsect_OnInstigatorDeath;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyLevelSummoned_MonsterInsect.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -53,9 +46,7 @@ struct PyLevelSummoned_MonsterInsect_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_MonsterInsect_ReceiveTick) == 0x000004, "Wrong alignment on PyLevelSummoned_MonsterInsect_ReceiveTick");
-static_assert(sizeof(PyLevelSummoned_MonsterInsect_ReceiveTick) == 0x000004, "Wrong size on PyLevelSummoned_MonsterInsect_ReceiveTick");
-static_assert(offsetof(PyLevelSummoned_MonsterInsect_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyLevelSummoned_MonsterInsect_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_MonsterInsect_ReceiveTick;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyLevelSummoned_MonsterEgg.OnDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -66,11 +57,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameter;                                 // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyLevelSummoned_MonsterEgg_OnDeath) == 0x000008, "Wrong alignment on PyLevelSummoned_MonsterEgg_OnDeath");
-static_assert(sizeof(PyLevelSummoned_MonsterEgg_OnDeath) == 0x000028, "Wrong size on PyLevelSummoned_MonsterEgg_OnDeath");
-static_assert(offsetof(PyLevelSummoned_MonsterEgg_OnDeath, InSource) == 0x000000, "Member 'PyLevelSummoned_MonsterEgg_OnDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_MonsterEgg_OnDeath, InSourceAvatar) == 0x000008, "Member 'PyLevelSummoned_MonsterEgg_OnDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyLevelSummoned_MonsterEgg_OnDeath, ModifierParameter) == 0x000010, "Member 'PyLevelSummoned_MonsterEgg_OnDeath::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyLevelSummoned_MonsterEgg_OnDeath;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Buff_MonsterInsect.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -80,10 +67,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_MonsterInsect_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Buff_MonsterInsect_WhileActiveFX");
-static_assert(sizeof(PyCue_Buff_MonsterInsect_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Buff_MonsterInsect_WhileActiveFX");
-static_assert(offsetof(PyCue_Buff_MonsterInsect_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_MonsterInsect_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_MonsterInsect_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_MonsterInsect_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_MonsterInsect_WhileActiveFX;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Buff_MonsterInsect.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -93,10 +77,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Buff_MonsterInsect_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Buff_MonsterInsect_OnRemoveFX");
-static_assert(sizeof(PyCue_Buff_MonsterInsect_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Buff_MonsterInsect_OnRemoveFX");
-static_assert(offsetof(PyCue_Buff_MonsterInsect_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Buff_MonsterInsect_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Buff_MonsterInsect_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Buff_MonsterInsect_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_MonsterInsect_OnRemoveFX;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Buff_MonsterInsect.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -105,9 +86,7 @@ struct PyCue_Buff_MonsterInsect_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Buff_MonsterInsect_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Buff_MonsterInsect_ReceiveTick");
-static_assert(sizeof(PyCue_Buff_MonsterInsect_ReceiveTick) == 0x000004, "Wrong size on PyCue_Buff_MonsterInsect_ReceiveTick");
-static_assert(offsetof(PyCue_Buff_MonsterInsect_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Buff_MonsterInsect_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Buff_MonsterInsect_ReceiveTick;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Summoner_Loop_MonsterInsect.WhileActiveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -117,10 +96,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX");
-static_assert(sizeof(PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX");
-static_assert(offsetof(PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_MonsterInsect_WhileActiveFX;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Summoner_Loop_MonsterInsect.OnRemoveFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -130,10 +106,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX) == 0x000008, "Wrong alignment on PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX");
-static_assert(sizeof(PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX) == 0x0001D8, "Wrong size on PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX");
-static_assert(offsetof(PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX, MyTarget) == 0x000000, "Member 'PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX, Parameters) == 0x000008, "Member 'PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_MonsterInsect_OnRemoveFX;
 
 // PythonFunction PyLevelSummoned_MonsterEgg.PyCue_Summoner_Loop_MonsterInsect.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -142,9 +115,7 @@ struct PyCue_Summoner_Loop_MonsterInsect_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyCue_Summoner_Loop_MonsterInsect_ReceiveTick) == 0x000004, "Wrong alignment on PyCue_Summoner_Loop_MonsterInsect_ReceiveTick");
-static_assert(sizeof(PyCue_Summoner_Loop_MonsterInsect_ReceiveTick) == 0x000004, "Wrong size on PyCue_Summoner_Loop_MonsterInsect_ReceiveTick");
-static_assert(offsetof(PyCue_Summoner_Loop_MonsterInsect_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PyCue_Summoner_Loop_MonsterInsect_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Summoner_Loop_MonsterInsect_ReceiveTick;
 
 }
 

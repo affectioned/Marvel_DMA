@@ -21,9 +21,7 @@ struct PyWidget_Common_Prompt_SetImgPromptBg final
 public:
 	bool                                          IsWarning;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Prompt_SetImgPromptBg) == 0x000001, "Wrong alignment on PyWidget_Common_Prompt_SetImgPromptBg");
-static_assert(sizeof(PyWidget_Common_Prompt_SetImgPromptBg) == 0x000001, "Wrong size on PyWidget_Common_Prompt_SetImgPromptBg");
-static_assert(offsetof(PyWidget_Common_Prompt_SetImgPromptBg, IsWarning) == 0x000000, "Member 'PyWidget_Common_Prompt_SetImgPromptBg::IsWarning' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Prompt_SetImgPromptBg;
 
 // PythonFunction PyWidget_Common_Prompt.PyWidget_Common_Prompt.SetTipsText
 // 0x0018 (0x0018 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_Common_Prompt_SetTipsText final
 public:
 	class FText                                   Tips;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(PyWidget_Common_Prompt_SetTipsText) == 0x000008, "Wrong alignment on PyWidget_Common_Prompt_SetTipsText");
-static_assert(sizeof(PyWidget_Common_Prompt_SetTipsText) == 0x000018, "Wrong size on PyWidget_Common_Prompt_SetTipsText");
-static_assert(offsetof(PyWidget_Common_Prompt_SetTipsText, Tips) == 0x000000, "Member 'PyWidget_Common_Prompt_SetTipsText::Tips' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Prompt_SetTipsText;
 
 // PythonFunction PyWidget_Common_Prompt.PyWidget_Common_Prompt.SetTipsRelativePosition
 // 0x0002 (0x0002 - 0x0000)
@@ -44,10 +40,7 @@ public:
 	bool                                          IsCenterAlign;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTipDownside;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Prompt_SetTipsRelativePosition) == 0x000001, "Wrong alignment on PyWidget_Common_Prompt_SetTipsRelativePosition");
-static_assert(sizeof(PyWidget_Common_Prompt_SetTipsRelativePosition) == 0x000002, "Wrong size on PyWidget_Common_Prompt_SetTipsRelativePosition");
-static_assert(offsetof(PyWidget_Common_Prompt_SetTipsRelativePosition, IsCenterAlign) == 0x000000, "Member 'PyWidget_Common_Prompt_SetTipsRelativePosition::IsCenterAlign' has a wrong offset!");
-static_assert(offsetof(PyWidget_Common_Prompt_SetTipsRelativePosition, IsTipDownside) == 0x000001, "Member 'PyWidget_Common_Prompt_SetTipsRelativePosition::IsTipDownside' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Prompt_SetTipsRelativePosition;
 
 // PythonFunction PyWidget_Common_Prompt.PyWidget_Common_Prompt.ShowTipWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +49,7 @@ struct PyWidget_Common_Prompt_ShowTipWidget final
 public:
 	bool                                          IsWarning;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Prompt_ShowTipWidget) == 0x000001, "Wrong alignment on PyWidget_Common_Prompt_ShowTipWidget");
-static_assert(sizeof(PyWidget_Common_Prompt_ShowTipWidget) == 0x000001, "Wrong size on PyWidget_Common_Prompt_ShowTipWidget");
-static_assert(offsetof(PyWidget_Common_Prompt_ShowTipWidget, IsWarning) == 0x000000, "Member 'PyWidget_Common_Prompt_ShowTipWidget::IsWarning' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Prompt_ShowTipWidget;
 
 // PythonFunction PyWidget_Common_Prompt.PyWidget_Common_Prompt.SetTipBoxMaxDesiredWidth
 // 0x0004 (0x0004 - 0x0000)
@@ -67,9 +58,7 @@ struct PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth final
 public:
 	float                                         MaxDesiredWidth;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth) == 0x000004, "Wrong alignment on PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth");
-static_assert(sizeof(PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth) == 0x000004, "Wrong size on PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth");
-static_assert(offsetof(PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth, MaxDesiredWidth) == 0x000000, "Member 'PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth::MaxDesiredWidth' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Common_Prompt_SetTipBoxMaxDesiredWidth;
 
 }
 

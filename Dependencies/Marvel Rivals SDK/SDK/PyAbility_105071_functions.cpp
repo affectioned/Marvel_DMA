@@ -195,69 +195,6 @@ void UPyAbility_105071::OnScopeSpawned(class AActor* SpawnedActor, const struct 
 }
 
 
-// PythonFunction PyAbility_105071.PyUIController_105071.OnInit
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_105071::OnInit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_105071", "OnInit");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105071.PyUIController_105071.OnDestruct
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UPyUIController_105071::OnDestruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_105071", "OnDestruct");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_105071.PyUIController_105071.OnAbilityActivateFailed
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FGameplayTagContainer&     FailedTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-
-void UPyUIController_105071::OnAbilityActivateFailed(const struct FGameplayTagContainer& FailedTags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyUIController_105071", "OnAbilityActivateFailed");
-
-	Params::PyUIController_105071_OnAbilityActivateFailed Parms{};
-
-	Parms.FailedTags = std::move(FailedTags);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // PythonFunction PyAbility_105071.PyCue_TraceActor_105071.ReceiveBeginPlay
 // (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
 

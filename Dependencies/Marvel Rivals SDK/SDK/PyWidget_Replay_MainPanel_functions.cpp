@@ -144,5 +144,30 @@ void UPyWidget_Replay_MainPanel::HandleMouseButtonDown()
 	Func->FunctionFlags = Flgs;
 }
 
+
+// PythonFunction PyWidget_Replay_MainPanel.PyWidget_Replay_MainPanel.OnCascadingVisibleChanged
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewVisible                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPyWidget_Replay_MainPanel::OnCascadingVisibleChanged(bool bNewVisible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyWidget_Replay_MainPanel", "OnCascadingVisibleChanged");
+
+	Params::PyWidget_Replay_MainPanel_OnCascadingVisibleChanged Parms{};
+
+	Parms.bNewVisible = bNewVisible;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
 }
 

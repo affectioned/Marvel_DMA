@@ -11,64 +11,88 @@
 #include "Basic.hpp"
 
 #include "MarvelLevel_structs.hpp"
-#include "PyRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
+#include "Marvel_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyM2201RuleComponent.PyM2201RuleComponent
-// 0x0160 (0x0268 - 0x0108)
-class UPyM2201RuleComponent final : public UPyRuleComponent
+// 0x0180 (0x0288 - 0x0108)
+class UPyM2201RuleComponent final : public UM2201RuleComponent
 {
 public:
 	TMap<int32, struct FLevelCommonList>          HeroStartCardEffect;                               // 0x0108(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          EnableAnnivCountdown;                              // 0x0158(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AnnivCountdownStartUTCDate;                        // 0x0160(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AnnivCountdownUTCDate;                             // 0x0170(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AnnivFireworkCloseUTCDate;                         // 0x0180(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            CountdownCorrectConfig;                            // 0x0190(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FReplicateTimer                        CountdownTimer;                                    // 0x01E0(0x0078)(Net, NativeAccessSpecifierPublic)
-	bool                                          IsCountDownStart;                                  // 0x0258(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsCountDownEnd;                                    // 0x0259(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsFireworkEnabled;                                 // 0x025A(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25B[0x5];                                      // 0x025B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialParameterCollection*           TrafficLightMPC;                                   // 0x0260(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EnabledCountdownName;                              // 0x0158(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnInstance, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          EnableAnnivCountdown;                              // 0x0168(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AnnivCountdownStartUTCDate;                        // 0x0170(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AnnivCountdownUTCDate;                             // 0x0180(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AnnivFireworkLoopUTCDate;                          // 0x0190(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AnnivFireworkCloseUTCDate;                         // 0x01A0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            CountdownCorrectConfig;                            // 0x01B0(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FReplicateTimer                        CountdownTimer;                                    // 0x0200(0x0078)(Net, NativeAccessSpecifierPublic)
+	bool                                          IsCountDownStart;                                  // 0x0278(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsCountDownEnd;                                    // 0x0279(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFireworkEnabled;                                 // 0x027A(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsFireworkLooping;                                 // 0x027B(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialParameterCollection*           TrafficLightMPC;                                   // 0x0280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
+	void ReceiveInitializeComponent();
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void OnCharacterAbilityInitialized(class AActor* Character);
 	void S_on_countdown_end();
+	void OnRep_EnabledCountdownName();
 	void OnRep_EnableAnnivCountdown();
 	void OnRep_IsCountDownStart();
 	void OnRep_IsCountDownEnd();
 	void OnRep_IsFireworkEnabled();
+	void OnRep_IsFireworkLooping();
 	void ClientPlaySignalHeroVoice(class AActor* char_0, const TArray<int32>& voice_id);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyM2201RuleComponent">();
+		STATIC_CLASS_IMPL("PyM2201RuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyM2201RuleComponent")
 	}
 	static class UPyM2201RuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyM2201RuleComponent>();
 	}
 };
-static_assert(alignof(UPyM2201RuleComponent) == 0x000008, "Wrong alignment on UPyM2201RuleComponent");
-static_assert(sizeof(UPyM2201RuleComponent) == 0x000268, "Wrong size on UPyM2201RuleComponent");
-static_assert(offsetof(UPyM2201RuleComponent, HeroStartCardEffect) == 0x000108, "Member 'UPyM2201RuleComponent::HeroStartCardEffect' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, EnableAnnivCountdown) == 0x000158, "Member 'UPyM2201RuleComponent::EnableAnnivCountdown' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, AnnivCountdownStartUTCDate) == 0x000160, "Member 'UPyM2201RuleComponent::AnnivCountdownStartUTCDate' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, AnnivCountdownUTCDate) == 0x000170, "Member 'UPyM2201RuleComponent::AnnivCountdownUTCDate' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, AnnivFireworkCloseUTCDate) == 0x000180, "Member 'UPyM2201RuleComponent::AnnivFireworkCloseUTCDate' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, CountdownCorrectConfig) == 0x000190, "Member 'UPyM2201RuleComponent::CountdownCorrectConfig' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, CountdownTimer) == 0x0001E0, "Member 'UPyM2201RuleComponent::CountdownTimer' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, IsCountDownStart) == 0x000258, "Member 'UPyM2201RuleComponent::IsCountDownStart' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, IsCountDownEnd) == 0x000259, "Member 'UPyM2201RuleComponent::IsCountDownEnd' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, IsFireworkEnabled) == 0x00025A, "Member 'UPyM2201RuleComponent::IsFireworkEnabled' has a wrong offset!");
-static_assert(offsetof(UPyM2201RuleComponent, TrafficLightMPC) == 0x000260, "Member 'UPyM2201RuleComponent::TrafficLightMPC' has a wrong offset!");
+DUMPER7_ASSERTS_UPyM2201RuleComponent;
+
+// PythonClass PyM2201RuleComponent.PyM2201RuleHeroItem
+// 0x0020 (0x0240 - 0x0220)
+class UPyM2201RuleHeroItem final : public UMarvelModeRuleHeroItem
+{
+public:
+	struct FConsoleCommandList                    DuelActorCommands;                                 // 0x0220(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyM2201RuleHeroItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyM2201RuleHeroItem")
+	}
+	static class UPyM2201RuleHeroItem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyM2201RuleHeroItem>();
+	}
+};
+DUMPER7_ASSERTS_UPyM2201RuleHeroItem;
 
 }
 

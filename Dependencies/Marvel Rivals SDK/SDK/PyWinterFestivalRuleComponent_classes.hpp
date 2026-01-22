@@ -42,26 +42,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWinterFestivalRuleComponent">();
+		STATIC_CLASS_IMPL("PyWinterFestivalRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWinterFestivalRuleComponent")
 	}
 	static class UPyWinterFestivalRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWinterFestivalRuleComponent>();
 	}
 };
-static_assert(alignof(UPyWinterFestivalRuleComponent) == 0x000008, "Wrong alignment on UPyWinterFestivalRuleComponent");
-static_assert(sizeof(UPyWinterFestivalRuleComponent) == 0x0001B8, "Wrong size on UPyWinterFestivalRuleComponent");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, TotalPointCount) == 0x000108, "Member 'UPyWinterFestivalRuleComponent::TotalPointCount' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, BluePointCount) == 0x00010C, "Member 'UPyWinterFestivalRuleComponent::BluePointCount' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, RedPointCount) == 0x000110, "Member 'UPyWinterFestivalRuleComponent::RedPointCount' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, BluePercent) == 0x000114, "Member 'UPyWinterFestivalRuleComponent::BluePercent' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, RedPercent) == 0x000118, "Member 'UPyWinterFestivalRuleComponent::RedPercent' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, AllyPointBuffList) == 0x000120, "Member 'UPyWinterFestivalRuleComponent::AllyPointBuffList' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, EnemyPointBuffList) == 0x000130, "Member 'UPyWinterFestivalRuleComponent::EnemyPointBuffList' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, IgnoreTagContainer) == 0x000140, "Member 'UPyWinterFestivalRuleComponent::IgnoreTagContainer' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, ShowStartTipsTime) == 0x0001A8, "Member 'UPyWinterFestivalRuleComponent::ShowStartTipsTime' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, A) == 0x0001AC, "Member 'UPyWinterFestivalRuleComponent::A' has a wrong offset!");
-static_assert(offsetof(UPyWinterFestivalRuleComponent, B) == 0x0001B0, "Member 'UPyWinterFestivalRuleComponent::B' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWinterFestivalRuleComponent;
 
 }
 

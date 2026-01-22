@@ -17,25 +17,18 @@ namespace SDK
 {
 
 // UserDefinedStruct MallActivityEntranceInfoBP.MallActivityEntranceInfoBP
-// 0x01A8 (0x01A8 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct FMallActivityEntranceInfoBP final
 {
 public:
-	struct FJumpAction                            JumpActionCfg_2_D07390BE4E722AA092BDB8A5C1E1021B;  // 0x0000(0x00E8)(Edit, BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>              NormalImage_24_AE23059943EB596C328AB4B23A74E730;   // 0x00E8(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              HoverImage_25_2FCBC8544896D83D608DE3AF34959432;    // 0x0118(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class FText                                   Title_17_E52FECF04BF107189DD5758D4F893CE4;         // 0x0148(0x0018)(Edit, BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>              PopupIcon_26_4F2808714E3AFDDB0030BAA542825411;     // 0x0160(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class FText                                   PopupDescription_23_D21CD120414F5BE866AF8FB285F07F48; // 0x0190(0x0018)(Edit, BlueprintVisible)
+	struct FJumpAction                            JumpActionCfg_2_D07390BE4E722AA092BDB8A5C1E1021B;  // 0x0000(0x0108)(Edit, BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>              NormalImage_24_AE23059943EB596C328AB4B23A74E730;   // 0x0108(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              HoverImage_25_2FCBC8544896D83D608DE3AF34959432;    // 0x0138(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class FText                                   Title_17_E52FECF04BF107189DD5758D4F893CE4;         // 0x0168(0x0018)(Edit, BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>              PopupIcon_26_4F2808714E3AFDDB0030BAA542825411;     // 0x0180(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class FText                                   PopupDescription_23_D21CD120414F5BE866AF8FB285F07F48; // 0x01B0(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FMallActivityEntranceInfoBP) == 0x000008, "Wrong alignment on FMallActivityEntranceInfoBP");
-static_assert(sizeof(FMallActivityEntranceInfoBP) == 0x0001A8, "Wrong size on FMallActivityEntranceInfoBP");
-static_assert(offsetof(FMallActivityEntranceInfoBP, JumpActionCfg_2_D07390BE4E722AA092BDB8A5C1E1021B) == 0x000000, "Member 'FMallActivityEntranceInfoBP::JumpActionCfg_2_D07390BE4E722AA092BDB8A5C1E1021B' has a wrong offset!");
-static_assert(offsetof(FMallActivityEntranceInfoBP, NormalImage_24_AE23059943EB596C328AB4B23A74E730) == 0x0000E8, "Member 'FMallActivityEntranceInfoBP::NormalImage_24_AE23059943EB596C328AB4B23A74E730' has a wrong offset!");
-static_assert(offsetof(FMallActivityEntranceInfoBP, HoverImage_25_2FCBC8544896D83D608DE3AF34959432) == 0x000118, "Member 'FMallActivityEntranceInfoBP::HoverImage_25_2FCBC8544896D83D608DE3AF34959432' has a wrong offset!");
-static_assert(offsetof(FMallActivityEntranceInfoBP, Title_17_E52FECF04BF107189DD5758D4F893CE4) == 0x000148, "Member 'FMallActivityEntranceInfoBP::Title_17_E52FECF04BF107189DD5758D4F893CE4' has a wrong offset!");
-static_assert(offsetof(FMallActivityEntranceInfoBP, PopupIcon_26_4F2808714E3AFDDB0030BAA542825411) == 0x000160, "Member 'FMallActivityEntranceInfoBP::PopupIcon_26_4F2808714E3AFDDB0030BAA542825411' has a wrong offset!");
-static_assert(offsetof(FMallActivityEntranceInfoBP, PopupDescription_23_D21CD120414F5BE866AF8FB285F07F48) == 0x000190, "Member 'FMallActivityEntranceInfoBP::PopupDescription_23_D21CD120414F5BE866AF8FB285F07F48' has a wrong offset!");
+DUMPER7_ASSERTS_FMallActivityEntranceInfoBP;
 
 }
 

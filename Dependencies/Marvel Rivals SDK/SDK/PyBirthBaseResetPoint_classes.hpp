@@ -29,17 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBirthBaseResetPoint">();
+		STATIC_CLASS_IMPL("PyBirthBaseResetPoint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBirthBaseResetPoint")
 	}
 	static class APyBirthBaseResetPoint* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyBirthBaseResetPoint>();
 	}
 };
-static_assert(alignof(APyBirthBaseResetPoint) == 0x000010, "Wrong alignment on APyBirthBaseResetPoint");
-static_assert(sizeof(APyBirthBaseResetPoint) == 0x000700, "Wrong size on APyBirthBaseResetPoint");
-static_assert(offsetof(APyBirthBaseResetPoint, ResetVelocity) == 0x0006E0, "Member 'APyBirthBaseResetPoint::ResetVelocity' has a wrong offset!");
-static_assert(offsetof(APyBirthBaseResetPoint, IsForWarmUp) == 0x0006F8, "Member 'APyBirthBaseResetPoint::IsForWarmUp' has a wrong offset!");
+DUMPER7_ASSERTS_APyBirthBaseResetPoint;
 
 }
 

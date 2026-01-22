@@ -21,9 +21,7 @@ struct PyWidget_Training_TerminalIndicator_SetAttachment final
 public:
 	class AActor*                                 AttachedActor;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Training_TerminalIndicator_SetAttachment) == 0x000008, "Wrong alignment on PyWidget_Training_TerminalIndicator_SetAttachment");
-static_assert(sizeof(PyWidget_Training_TerminalIndicator_SetAttachment) == 0x000008, "Wrong size on PyWidget_Training_TerminalIndicator_SetAttachment");
-static_assert(offsetof(PyWidget_Training_TerminalIndicator_SetAttachment, AttachedActor) == 0x000000, "Member 'PyWidget_Training_TerminalIndicator_SetAttachment::AttachedActor' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Training_TerminalIndicator_SetAttachment;
 
 // PythonFunction PyWidget_Training_TerminalIndicator.Pywidget_Traning_LimitTimeTraning_Indicator.ShouldBeVisible
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +30,7 @@ struct Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible) == 0x000001, "Wrong alignment on Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible");
-static_assert(sizeof(Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible) == 0x000001, "Wrong size on Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible");
-static_assert(offsetof(Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible, ReturnValue) == 0x000000, "Member 'Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_Pywidget_Traning_LimitTimeTraning_Indicator_ShouldBeVisible;
 
 }
 

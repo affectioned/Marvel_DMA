@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyAbility_104961.PyCue_Buff_10496101
-// 0x0010 (0x1670 - 0x1660)
+// 0x0010 (0x1720 - 0x1710)
 class APyCue_Buff_10496101 final : public ABuffCue_10496101
 {
 public:
-	class UNiagaraSystem*                         OnHitSpecialFX;                                    // 0x1660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OnHitSpecialAudioID;                               // 0x1668(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         OnHitSpecialFX;                                    // 0x1710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OnHitSpecialAudioID;                               // 0x1718(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -32,17 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Buff_10496101">();
+		STATIC_CLASS_IMPL("PyCue_Buff_10496101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Buff_10496101")
 	}
 	static class APyCue_Buff_10496101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Buff_10496101>();
 	}
 };
-static_assert(alignof(APyCue_Buff_10496101) == 0x000010, "Wrong alignment on APyCue_Buff_10496101");
-static_assert(sizeof(APyCue_Buff_10496101) == 0x001670, "Wrong size on APyCue_Buff_10496101");
-static_assert(offsetof(APyCue_Buff_10496101, OnHitSpecialFX) == 0x001660, "Member 'APyCue_Buff_10496101::OnHitSpecialFX' has a wrong offset!");
-static_assert(offsetof(APyCue_Buff_10496101, OnHitSpecialAudioID) == 0x001668, "Member 'APyCue_Buff_10496101::OnHitSpecialAudioID' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Buff_10496101;
 
 }
 

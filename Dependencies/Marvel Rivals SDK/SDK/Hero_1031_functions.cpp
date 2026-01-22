@@ -136,278 +136,6 @@ void ACue_Ability_Loop_10315101::UpdateRayFx()
 }
 
 
-// Function Hero_1031.Cue_Buff_10315102.CacheAndHandleTargetMaterial
-// (Final, Native, Public)
-
-void ACue_Buff_10315102::CacheAndHandleTargetMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "CacheAndHandleTargetMaterial");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.HandleIceThornFx
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::HandleIceThornFx(bool bReset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "HandleIceThornFx");
-
-	Params::Cue_Buff_10315102_HandleIceThornFx Parms{};
-
-	Parms.bReset = bReset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.HandleMaterialDirParam
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::HandleMaterialDirParam(bool bReset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "HandleMaterialDirParam");
-
-	Params::Cue_Buff_10315102_HandleMaterialDirParam Parms{};
-
-	Parms.bReset = bReset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.HandleMaterialFloatParam
-// (Final, Native, Public)
-// Parameters:
-// float                                   InChargeTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::HandleMaterialFloatParam(float InChargeTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "HandleMaterialFloatParam");
-
-	Params::Cue_Buff_10315102_HandleMaterialFloatParam Parms{};
-
-	Parms.InChargeTime = InChargeTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.HandleUVParam
-// (Final, Native, Public)
-
-void ACue_Buff_10315102::HandleUVParam()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "HandleUVParam");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.ListenTargetSculptChanged
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bListen                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::ListenTargetSculptChanged(bool bListen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "ListenTargetSculptChanged");
-
-	Params::Cue_Buff_10315102_ListenTargetSculptChanged Parms{};
-
-	Parms.bListen = bListen;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.OnSculptChanged
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// int32                                   SculptID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::OnSculptChanged(int32 SculptID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "OnSculptChanged");
-
-	Params::Cue_Buff_10315102_OnSculptChanged Parms{};
-
-	Parms.SculptID = SculptID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.OnTargetMaterialChanged
-// (Final, Native, Public)
-
-void ACue_Buff_10315102::OnTargetMaterialChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "OnTargetMaterialChanged");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.ResetTargetMaterial
-// (Final, Native, Public)
-
-void ACue_Buff_10315102::ResetTargetMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "ResetTargetMaterial");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.SetVectorParameterValueOnMaterials
-// (Final, Native, Public, HasDefaults)
-// Parameters:
-// const class FName                       InParameterName                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   InParameterValue                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::SetVectorParameterValueOnMaterials(const class FName InParameterName, const struct FVector& InParameterValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "SetVectorParameterValueOnMaterials");
-
-	Params::Cue_Buff_10315102_SetVectorParameterValueOnMaterials Parms{};
-
-	Parms.InParameterName = InParameterName;
-	Parms.InParameterValue = std::move(InParameterValue);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.SwitchMaterial
-// (Final, Native, Public)
-// Parameters:
-// bool                                    bIsSwitch                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ACue_Buff_10315102::SwitchMaterial(bool bIsSwitch)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "SwitchMaterial");
-
-	Params::Cue_Buff_10315102_SwitchMaterial Parms{};
-
-	Parms.bIsSwitch = bIsSwitch;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Hero_1031.Cue_Buff_10315102.UpdateMaterial
-// (Final, Native, Public)
-
-void ACue_Buff_10315102::UpdateMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cue_Buff_10315102", "UpdateMaterial");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Hero_1031.Cue_Buff_10316101.HandleMaterial
 // (Final, Native, Public)
 // Parameters:
@@ -506,7 +234,7 @@ void ACue_Buff_10316101::UpdateMaterial()
 
 
 // Function Hero_1031.Cue_Scope_Loop_10314201.GetPortalSegmentFromScope
-// (Final, Native, Static, Public, BlueprintCallable)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class AMarvelAbilityTargetActor_Scope*  scope                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FPortalSegments                  ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
@@ -516,7 +244,7 @@ struct FPortalSegments ACue_Scope_Loop_10314201::GetPortalSegmentFromScope(class
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Cue_Scope_Loop_10314201", "GetPortalSegmentFromScope");
+		Func = Class->GetFunction("Cue_Scope_Loop_10314201", "GetPortalSegmentFromScope");
 
 	Params::Cue_Scope_Loop_10314201_GetPortalSegmentFromScope Parms{};
 
@@ -525,7 +253,7 @@ struct FPortalSegments ACue_Scope_Loop_10314201::GetPortalSegmentFromScope(class
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

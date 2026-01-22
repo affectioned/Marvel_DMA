@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ClashClan_ManagementPanel.PyWidget_ClashClan_ManagementPanel
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_ClashClan_ManagementPanel final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClashClan_ManagementPanel">();
+		STATIC_CLASS_IMPL("PyWidget_ClashClan_ManagementPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClashClan_ManagementPanel")
 	}
 	static class UPyWidget_ClashClan_ManagementPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClashClan_ManagementPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_ClashClan_ManagementPanel) == 0x000008, "Wrong alignment on UPyWidget_ClashClan_ManagementPanel");
-static_assert(sizeof(UPyWidget_ClashClan_ManagementPanel) == 0x0005F8, "Wrong size on UPyWidget_ClashClan_ManagementPanel");
+DUMPER7_ASSERTS_UPyWidget_ClashClan_ManagementPanel;
 
 }
 

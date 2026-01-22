@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_CompileInfo_SquadPanel.PyWidget_CompileInfo_SquadPanel
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 class UPyWidget_CompileInfo_SquadPanel final : public UPyMarvelUserWidget
 {
 public:
@@ -29,15 +29,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_CompileInfo_SquadPanel">();
+		STATIC_CLASS_IMPL("PyWidget_CompileInfo_SquadPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_CompileInfo_SquadPanel")
 	}
 	static class UPyWidget_CompileInfo_SquadPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_CompileInfo_SquadPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_CompileInfo_SquadPanel) == 0x000008, "Wrong alignment on UPyWidget_CompileInfo_SquadPanel");
-static_assert(sizeof(UPyWidget_CompileInfo_SquadPanel) == 0x0005C0, "Wrong size on UPyWidget_CompileInfo_SquadPanel");
+DUMPER7_ASSERTS_UPyWidget_CompileInfo_SquadPanel;
 
 }
 

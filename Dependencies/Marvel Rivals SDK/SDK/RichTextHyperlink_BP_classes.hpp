@@ -23,15 +23,18 @@ class URichTextHyperlink_BP_C final : public UPyHyperlinkDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RichTextHyperlink_BP_C">();
+		BP_STATIC_CLASS_IMPL("RichTextHyperlink_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichTextHyperlink_BP_C")
 	}
 	static class URichTextHyperlink_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URichTextHyperlink_BP_C>();
 	}
 };
-static_assert(alignof(URichTextHyperlink_BP_C) == 0x000010, "Wrong alignment on URichTextHyperlink_BP_C");
-static_assert(sizeof(URichTextHyperlink_BP_C) == 0x000F50, "Wrong size on URichTextHyperlink_BP_C");
+DUMPER7_ASSERTS_URichTextHyperlink_BP_C;
 
 }
 

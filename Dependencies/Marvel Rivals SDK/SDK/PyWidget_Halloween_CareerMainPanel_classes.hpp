@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Halloween_CareerMainPanel.PyWidget_Halloween_CareerMainPanel
-// 0x0018 (0x0610 - 0x05F8)
+// 0x0018 (0x0618 - 0x0600)
 class UPyWidget_Halloween_CareerMainPanel final : public UPyWidget_Halloween_SubPanelBase
 {
 public:
-	TSubclassOf<class UPyWidget_Halloween_CareerHeroHeadItem> HeroHeadItemWidget;                    // 0x05F8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UPyWidget_Halloween_CareerRecordDataItem> RecordItemWidget;                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          AkEvent_ChangeHeroBtnClick;                        // 0x0608(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Halloween_CareerHeroHeadItem> HeroHeadItemWidget;                    // 0x0600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPyWidget_Halloween_CareerRecordDataItem> RecordItemWidget;                    // 0x0608(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          AkEvent_ChangeHeroBtnClick;                        // 0x0610(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Halloween_CareerMainPanel">();
+		STATIC_CLASS_IMPL("PyWidget_Halloween_CareerMainPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Halloween_CareerMainPanel")
 	}
 	static class UPyWidget_Halloween_CareerMainPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Halloween_CareerMainPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_Halloween_CareerMainPanel) == 0x000008, "Wrong alignment on UPyWidget_Halloween_CareerMainPanel");
-static_assert(sizeof(UPyWidget_Halloween_CareerMainPanel) == 0x000610, "Wrong size on UPyWidget_Halloween_CareerMainPanel");
-static_assert(offsetof(UPyWidget_Halloween_CareerMainPanel, HeroHeadItemWidget) == 0x0005F8, "Member 'UPyWidget_Halloween_CareerMainPanel::HeroHeadItemWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CareerMainPanel, RecordItemWidget) == 0x000600, "Member 'UPyWidget_Halloween_CareerMainPanel::RecordItemWidget' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Halloween_CareerMainPanel, AkEvent_ChangeHeroBtnClick) == 0x000608, "Member 'UPyWidget_Halloween_CareerMainPanel::AkEvent_ChangeHeroBtnClick' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Halloween_CareerMainPanel;
 
 }
 

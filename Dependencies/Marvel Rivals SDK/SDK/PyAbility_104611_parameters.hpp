@@ -26,11 +26,7 @@ public:
 	class AActor*                                 InTarget;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameterHandle;                           // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAbility_104611_OnOwnerApplyDamage) == 0x000008, "Wrong alignment on PyAbility_104611_OnOwnerApplyDamage");
-static_assert(sizeof(PyAbility_104611_OnOwnerApplyDamage) == 0x000028, "Wrong size on PyAbility_104611_OnOwnerApplyDamage");
-static_assert(offsetof(PyAbility_104611_OnOwnerApplyDamage, InSource) == 0x000000, "Member 'PyAbility_104611_OnOwnerApplyDamage::InSource' has a wrong offset!");
-static_assert(offsetof(PyAbility_104611_OnOwnerApplyDamage, InTarget) == 0x000008, "Member 'PyAbility_104611_OnOwnerApplyDamage::InTarget' has a wrong offset!");
-static_assert(offsetof(PyAbility_104611_OnOwnerApplyDamage, ModifierParameterHandle) == 0x000010, "Member 'PyAbility_104611_OnOwnerApplyDamage::ModifierParameterHandle' has a wrong offset!");
+DUMPER7_ASSERTS_PyAbility_104611_OnOwnerApplyDamage;
 
 // PythonFunction PyAbility_104611.PyCue_Instant_HitImpact_10461101.OnExecuteFX
 // 0x01D8 (0x01D8 - 0x0000)
@@ -40,10 +36,7 @@ public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x01D0)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyCue_Instant_HitImpact_10461101_OnExecuteFX) == 0x000008, "Wrong alignment on PyCue_Instant_HitImpact_10461101_OnExecuteFX");
-static_assert(sizeof(PyCue_Instant_HitImpact_10461101_OnExecuteFX) == 0x0001D8, "Wrong size on PyCue_Instant_HitImpact_10461101_OnExecuteFX");
-static_assert(offsetof(PyCue_Instant_HitImpact_10461101_OnExecuteFX, MyTarget) == 0x000000, "Member 'PyCue_Instant_HitImpact_10461101_OnExecuteFX::MyTarget' has a wrong offset!");
-static_assert(offsetof(PyCue_Instant_HitImpact_10461101_OnExecuteFX, Parameters) == 0x000008, "Member 'PyCue_Instant_HitImpact_10461101_OnExecuteFX::Parameters' has a wrong offset!");
+DUMPER7_ASSERTS_PyCue_Instant_HitImpact_10461101_OnExecuteFX;
 
 }
 

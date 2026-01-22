@@ -25,9 +25,7 @@ struct PyHulkBannerCharacter_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_ReceiveEndPlay) == 0x000001, "Wrong alignment on PyHulkBannerCharacter_ReceiveEndPlay");
-static_assert(sizeof(PyHulkBannerCharacter_ReceiveEndPlay) == 0x000001, "Wrong size on PyHulkBannerCharacter_ReceiveEndPlay");
-static_assert(offsetof(PyHulkBannerCharacter_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PyHulkBannerCharacter_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_ReceiveEndPlay;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnHeroReviving
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +34,7 @@ struct PyHulkBannerCharacter_OnHeroReviving final
 public:
 	EPlayerLivingState                            state;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnHeroReviving) == 0x000001, "Wrong alignment on PyHulkBannerCharacter_OnHeroReviving");
-static_assert(sizeof(PyHulkBannerCharacter_OnHeroReviving) == 0x000001, "Wrong size on PyHulkBannerCharacter_OnHeroReviving");
-static_assert(offsetof(PyHulkBannerCharacter_OnHeroReviving, state) == 0x000000, "Member 'PyHulkBannerCharacter_OnHeroReviving::state' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnHeroReviving;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnResurrecting
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +44,7 @@ public:
 	class AActor*                                 Instigator_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnResurrecting) == 0x000008, "Wrong alignment on PyHulkBannerCharacter_OnResurrecting");
-static_assert(sizeof(PyHulkBannerCharacter_OnResurrecting) == 0x000010, "Wrong size on PyHulkBannerCharacter_OnResurrecting");
-static_assert(offsetof(PyHulkBannerCharacter_OnResurrecting, Instigator_0) == 0x000000, "Member 'PyHulkBannerCharacter_OnResurrecting::Instigator_0' has a wrong offset!");
-static_assert(offsetof(PyHulkBannerCharacter_OnResurrecting, Target) == 0x000008, "Member 'PyHulkBannerCharacter_OnResurrecting::Target' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnResurrecting;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnPreDeath
 // 0x0028 (0x0028 - 0x0000)
@@ -62,11 +55,7 @@ public:
 	class AActor*                                 InSourceAvatar;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAttributeModifierHandle               ModifierParameter;                                 // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnPreDeath) == 0x000008, "Wrong alignment on PyHulkBannerCharacter_OnPreDeath");
-static_assert(sizeof(PyHulkBannerCharacter_OnPreDeath) == 0x000028, "Wrong size on PyHulkBannerCharacter_OnPreDeath");
-static_assert(offsetof(PyHulkBannerCharacter_OnPreDeath, InSource) == 0x000000, "Member 'PyHulkBannerCharacter_OnPreDeath::InSource' has a wrong offset!");
-static_assert(offsetof(PyHulkBannerCharacter_OnPreDeath, InSourceAvatar) == 0x000008, "Member 'PyHulkBannerCharacter_OnPreDeath::InSourceAvatar' has a wrong offset!");
-static_assert(offsetof(PyHulkBannerCharacter_OnPreDeath, ModifierParameter) == 0x000010, "Member 'PyHulkBannerCharacter_OnPreDeath::ModifierParameter' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnPreDeath;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.K2_OnSculptChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -75,9 +64,7 @@ struct PyHulkBannerCharacter_K2_OnSculptChanged final
 public:
 	int32                                         SculptID;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_K2_OnSculptChanged) == 0x000004, "Wrong alignment on PyHulkBannerCharacter_K2_OnSculptChanged");
-static_assert(sizeof(PyHulkBannerCharacter_K2_OnSculptChanged) == 0x000004, "Wrong size on PyHulkBannerCharacter_K2_OnSculptChanged");
-static_assert(offsetof(PyHulkBannerCharacter_K2_OnSculptChanged, SculptID) == 0x000000, "Member 'PyHulkBannerCharacter_K2_OnSculptChanged::SculptID' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_K2_OnSculptChanged;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnLevelForceKill
 // 0x0008 (0x0008 - 0x0000)
@@ -86,9 +73,7 @@ struct PyHulkBannerCharacter_OnLevelForceKill final
 public:
 	class AActor*                                 kill_target;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnLevelForceKill) == 0x000008, "Wrong alignment on PyHulkBannerCharacter_OnLevelForceKill");
-static_assert(sizeof(PyHulkBannerCharacter_OnLevelForceKill) == 0x000008, "Wrong size on PyHulkBannerCharacter_OnLevelForceKill");
-static_assert(offsetof(PyHulkBannerCharacter_OnLevelForceKill, kill_target) == 0x000000, "Member 'PyHulkBannerCharacter_OnLevelForceKill::kill_target' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnLevelForceKill;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -98,24 +83,18 @@ public:
 	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Exist;                                             // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnTagUpdate) == 0x000004, "Wrong alignment on PyHulkBannerCharacter_OnTagUpdate");
-static_assert(sizeof(PyHulkBannerCharacter_OnTagUpdate) == 0x000010, "Wrong size on PyHulkBannerCharacter_OnTagUpdate");
-static_assert(offsetof(PyHulkBannerCharacter_OnTagUpdate, Tag) == 0x000000, "Member 'PyHulkBannerCharacter_OnTagUpdate::Tag' has a wrong offset!");
-static_assert(offsetof(PyHulkBannerCharacter_OnTagUpdate, Exist) == 0x00000C, "Member 'PyHulkBannerCharacter_OnTagUpdate::Exist' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnTagUpdate;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnCharacterReborn
-// 0x0820 (0x0820 - 0x0000)
+// 0x0840 (0x0840 - 0x0000)
 struct PyHulkBannerCharacter_OnCharacterReborn final
 {
 public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0810)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FCharacterRebornParam                  Param;                                             // 0x0010(0x0830)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnCharacterReborn) == 0x000010, "Wrong alignment on PyHulkBannerCharacter_OnCharacterReborn");
-static_assert(sizeof(PyHulkBannerCharacter_OnCharacterReborn) == 0x000820, "Wrong size on PyHulkBannerCharacter_OnCharacterReborn");
-static_assert(offsetof(PyHulkBannerCharacter_OnCharacterReborn, TargetActor) == 0x000000, "Member 'PyHulkBannerCharacter_OnCharacterReborn::TargetActor' has a wrong offset!");
-static_assert(offsetof(PyHulkBannerCharacter_OnCharacterReborn, Param) == 0x000010, "Member 'PyHulkBannerCharacter_OnCharacterReborn::Param' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnCharacterReborn;
 
 // PythonFunction PyHulkBannerCharacter.PyHulkBannerCharacter.OnActivateAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -124,9 +103,7 @@ struct PyHulkBannerCharacter_OnActivateAbility final
 public:
 	int32                                         AbilityID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyHulkBannerCharacter_OnActivateAbility) == 0x000004, "Wrong alignment on PyHulkBannerCharacter_OnActivateAbility");
-static_assert(sizeof(PyHulkBannerCharacter_OnActivateAbility) == 0x000004, "Wrong size on PyHulkBannerCharacter_OnActivateAbility");
-static_assert(offsetof(PyHulkBannerCharacter_OnActivateAbility, AbilityID) == 0x000000, "Member 'PyHulkBannerCharacter_OnActivateAbility::AbilityID' has a wrong offset!");
+DUMPER7_ASSERTS_PyHulkBannerCharacter_OnActivateAbility;
 
 // PythonFunction PyHulkBannerCharacter.PyBannerBaseChildActor.OnGenericGameplayTagUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -136,10 +113,7 @@ public:
 	struct FGameplayTag                           InTag;                                             // 0x0000(0x000C)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyBannerBaseChildActor_OnGenericGameplayTagUpdate) == 0x000004, "Wrong alignment on PyBannerBaseChildActor_OnGenericGameplayTagUpdate");
-static_assert(sizeof(PyBannerBaseChildActor_OnGenericGameplayTagUpdate) == 0x000010, "Wrong size on PyBannerBaseChildActor_OnGenericGameplayTagUpdate");
-static_assert(offsetof(PyBannerBaseChildActor_OnGenericGameplayTagUpdate, InTag) == 0x000000, "Member 'PyBannerBaseChildActor_OnGenericGameplayTagUpdate::InTag' has a wrong offset!");
-static_assert(offsetof(PyBannerBaseChildActor_OnGenericGameplayTagUpdate, Count) == 0x00000C, "Member 'PyBannerBaseChildActor_OnGenericGameplayTagUpdate::Count' has a wrong offset!");
+DUMPER7_ASSERTS_PyBannerBaseChildActor_OnGenericGameplayTagUpdate;
 
 }
 

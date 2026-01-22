@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // PythonClass PyRocketRaccoonCharacter.PyRocketRaccoonCharacter
-// 0x0030 (0x2230 - 0x2200)
+// 0x0030 (0x2340 - 0x2310)
 #pragma pack(push, 0x1)
 class alignas(0x10) APyRocketRaccoonCharacter : public ARocketRaccoonCharacter
 {
 public:
-	class ASummoned_10234101*                     RespawnBeaconSummoned;                             // 0x2200(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FHitResult& Hit)> OnCharacterLandedDispatcher;        // 0x2208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnResurrectSuccess;                                // 0x2218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class ASummoned_10234101*                     RespawnBeaconSummoned;                             // 0x2310(0x0008)(Net, ZeroConstructor, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FHitResult& Hit)> OnCharacterLandedDispatcher;        // 0x2318(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnResurrectSuccess;                                // 0x2328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnLanded(const struct FHitResult& Hit);
@@ -34,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyRocketRaccoonCharacter">();
+		STATIC_CLASS_IMPL("PyRocketRaccoonCharacter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyRocketRaccoonCharacter")
 	}
 	static class APyRocketRaccoonCharacter* GetDefaultObj()
 	{
@@ -42,11 +46,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyRocketRaccoonCharacter) == 0x000010, "Wrong alignment on APyRocketRaccoonCharacter");
-static_assert(sizeof(APyRocketRaccoonCharacter) == 0x002230, "Wrong size on APyRocketRaccoonCharacter");
-static_assert(offsetof(APyRocketRaccoonCharacter, RespawnBeaconSummoned) == 0x002200, "Member 'APyRocketRaccoonCharacter::RespawnBeaconSummoned' has a wrong offset!");
-static_assert(offsetof(APyRocketRaccoonCharacter, OnCharacterLandedDispatcher) == 0x002208, "Member 'APyRocketRaccoonCharacter::OnCharacterLandedDispatcher' has a wrong offset!");
-static_assert(offsetof(APyRocketRaccoonCharacter, OnResurrectSuccess) == 0x002218, "Member 'APyRocketRaccoonCharacter::OnResurrectSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_APyRocketRaccoonCharacter;
 
 }
 

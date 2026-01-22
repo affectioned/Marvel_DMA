@@ -23,15 +23,18 @@ class UDataBaseCalc final : public UDataBaseCalcBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataBaseCalc">();
+		STATIC_CLASS_IMPL("DataBaseCalc")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataBaseCalc")
 	}
 	static class UDataBaseCalc* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataBaseCalc>();
 	}
 };
-static_assert(alignof(UDataBaseCalc) == 0x000008, "Wrong alignment on UDataBaseCalc");
-static_assert(sizeof(UDataBaseCalc) == 0x000098, "Wrong size on UDataBaseCalc");
+DUMPER7_ASSERTS_UDataBaseCalc;
 
 // PythonClass DataBaseCalc.DataBasePy
 // 0x0000 (0x0048 - 0x0048)
@@ -40,15 +43,18 @@ class UDataBasePy final : public UDataBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DataBasePy">();
+		STATIC_CLASS_IMPL("DataBasePy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DataBasePy")
 	}
 	static class UDataBasePy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDataBasePy>();
 	}
 };
-static_assert(alignof(UDataBasePy) == 0x000008, "Wrong alignment on UDataBasePy");
-static_assert(sizeof(UDataBasePy) == 0x000048, "Wrong size on UDataBasePy");
+DUMPER7_ASSERTS_UDataBasePy;
 
 }
 

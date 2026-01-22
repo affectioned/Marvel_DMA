@@ -26,15 +26,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExampleDefaultValueGenerator">();
+		STATIC_CLASS_IMPL("ExampleDefaultValueGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExampleDefaultValueGenerator")
 	}
 	static class UExampleDefaultValueGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExampleDefaultValueGenerator>();
 	}
 };
-static_assert(alignof(UExampleDefaultValueGenerator) == 0x000008, "Wrong alignment on UExampleDefaultValueGenerator");
-static_assert(sizeof(UExampleDefaultValueGenerator) == 0x000030, "Wrong size on UExampleDefaultValueGenerator");
+DUMPER7_ASSERTS_UExampleDefaultValueGenerator;
 
 // PythonClass GameUserSettingsCustomDefaultLogic.GameUserSettingsCustomDefaultLogic
 // 0x0000 (0x0030 - 0x0030)
@@ -46,15 +49,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameUserSettingsCustomDefaultLogic">();
+		STATIC_CLASS_IMPL("GameUserSettingsCustomDefaultLogic")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameUserSettingsCustomDefaultLogic")
 	}
 	static class UGameUserSettingsCustomDefaultLogic* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameUserSettingsCustomDefaultLogic>();
 	}
 };
-static_assert(alignof(UGameUserSettingsCustomDefaultLogic) == 0x000008, "Wrong alignment on UGameUserSettingsCustomDefaultLogic");
-static_assert(sizeof(UGameUserSettingsCustomDefaultLogic) == 0x000030, "Wrong size on UGameUserSettingsCustomDefaultLogic");
+DUMPER7_ASSERTS_UGameUserSettingsCustomDefaultLogic;
 
 }
 

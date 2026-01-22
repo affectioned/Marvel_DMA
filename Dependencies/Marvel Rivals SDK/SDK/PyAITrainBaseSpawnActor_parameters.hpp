@@ -21,9 +21,7 @@ struct PyAITrainBaseSpawnActor_GetAIOwner final
 public:
 	class AMarvelAIController*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyAITrainBaseSpawnActor_GetAIOwner) == 0x000008, "Wrong alignment on PyAITrainBaseSpawnActor_GetAIOwner");
-static_assert(sizeof(PyAITrainBaseSpawnActor_GetAIOwner) == 0x000008, "Wrong size on PyAITrainBaseSpawnActor_GetAIOwner");
-static_assert(offsetof(PyAITrainBaseSpawnActor_GetAIOwner, ReturnValue) == 0x000000, "Member 'PyAITrainBaseSpawnActor_GetAIOwner::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyAITrainBaseSpawnActor_GetAIOwner;
 
 }
 

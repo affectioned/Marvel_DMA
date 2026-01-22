@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity122_AwardItem.PyWidget_Activity122_AwardItem
-// 0x0000 (0x0628 - 0x0628)
+// 0x0000 (0x0630 - 0x0630)
 class UPyWidget_Activity122_AwardItem final : public UPyWidget_Mall_Bundle_Emo
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity122_AwardItem">();
+		STATIC_CLASS_IMPL("PyWidget_Activity122_AwardItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity122_AwardItem")
 	}
 	static class UPyWidget_Activity122_AwardItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity122_AwardItem>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity122_AwardItem) == 0x000008, "Wrong alignment on UPyWidget_Activity122_AwardItem");
-static_assert(sizeof(UPyWidget_Activity122_AwardItem) == 0x000628, "Wrong size on UPyWidget_Activity122_AwardItem");
+DUMPER7_ASSERTS_UPyWidget_Activity122_AwardItem;
 
 }
 

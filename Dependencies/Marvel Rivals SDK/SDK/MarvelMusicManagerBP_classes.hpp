@@ -23,15 +23,18 @@ class UMarvelMusicManagerBP_C final : public UPyMarvelMusicMgr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MarvelMusicManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("MarvelMusicManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelMusicManagerBP_C")
 	}
 	static class UMarvelMusicManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelMusicManagerBP_C>();
 	}
 };
-static_assert(alignof(UMarvelMusicManagerBP_C) == 0x000008, "Wrong alignment on UMarvelMusicManagerBP_C");
-static_assert(sizeof(UMarvelMusicManagerBP_C) == 0x000188, "Wrong size on UMarvelMusicManagerBP_C");
+DUMPER7_ASSERTS_UMarvelMusicManagerBP_C;
 
 }
 

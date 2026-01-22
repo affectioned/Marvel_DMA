@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // PythonClass PyBuffAbility_10130_10000009.PyBuffAbility_10130_10000009
-// 0x0010 (0x1380 - 0x1370)
+// 0x0010 (0x1398 - 0x1388)
 class UPyBuffAbility_10130_10000009 : public UMarvelEffectGameplayAbility
 {
 public:
-	int32                                         ScopeID;                                           // 0x1370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ScopeCueTag;                                       // 0x1374(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ScopeID;                                           // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ScopeCueTag;                                       // 0x138C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10000009">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10000009")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10000009")
 	}
 	static class UPyBuffAbility_10130_10000009* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10000009>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10000009) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10000009");
-static_assert(sizeof(UPyBuffAbility_10130_10000009) == 0x001380, "Wrong size on UPyBuffAbility_10130_10000009");
-static_assert(offsetof(UPyBuffAbility_10130_10000009, ScopeID) == 0x001370, "Member 'UPyBuffAbility_10130_10000009::ScopeID' has a wrong offset!");
-static_assert(offsetof(UPyBuffAbility_10130_10000009, ScopeCueTag) == 0x001374, "Member 'UPyBuffAbility_10130_10000009::ScopeCueTag' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10000009;
 
 }
 

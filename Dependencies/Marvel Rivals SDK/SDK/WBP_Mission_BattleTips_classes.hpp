@@ -17,33 +17,31 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Mission_BattleTips.WBP_Mission_BattleTips_C
-// 0x0028 (0x05E8 - 0x05C0)
+// 0x0028 (0x05F0 - 0x05C8)
 class UWBP_Mission_BattleTips_C final : public UPyWidget_BattleMissionTips
 {
 public:
-	class UWidgetAnimation*                       Anim_Hide;                                         // 0x05C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anim_Show;                                         // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Img_Finish;                                        // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Img_MissionIcon;                                   // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMarvelTextBlock*                       Text_Num;                                          // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Hide;                                         // 0x05C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anim_Show;                                         // 0x05D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Img_Finish;                                        // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Img_MissionIcon;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelTextBlock*                       Text_Num;                                          // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Mission_BattleTips_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Mission_BattleTips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Mission_BattleTips_C")
 	}
 	static class UWBP_Mission_BattleTips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Mission_BattleTips_C>();
 	}
 };
-static_assert(alignof(UWBP_Mission_BattleTips_C) == 0x000008, "Wrong alignment on UWBP_Mission_BattleTips_C");
-static_assert(sizeof(UWBP_Mission_BattleTips_C) == 0x0005E8, "Wrong size on UWBP_Mission_BattleTips_C");
-static_assert(offsetof(UWBP_Mission_BattleTips_C, Anim_Hide) == 0x0005C0, "Member 'UWBP_Mission_BattleTips_C::Anim_Hide' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_BattleTips_C, Anim_Show) == 0x0005C8, "Member 'UWBP_Mission_BattleTips_C::Anim_Show' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_BattleTips_C, Img_Finish) == 0x0005D0, "Member 'UWBP_Mission_BattleTips_C::Img_Finish' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_BattleTips_C, Img_MissionIcon) == 0x0005D8, "Member 'UWBP_Mission_BattleTips_C::Img_MissionIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_Mission_BattleTips_C, Text_Num) == 0x0005E0, "Member 'UWBP_Mission_BattleTips_C::Text_Num' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Mission_BattleTips_C;
 
 }
 

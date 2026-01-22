@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Common_SceneMask.PyWidget_Common_SceneMask
-// 0x0010 (0x0578 - 0x0568)
+// 0x0010 (0x0580 - 0x0570)
 class UPyWidget_Common_SceneMask : public UMarvelUserWidget
 {
 public:
-	class UWidgetAnimation*                       Anim_MaskFadeOut;                                  // 0x0568(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidgetAnimation*                       Anim_CommonBG_MaskFadeOut;                         // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_MaskFadeOut;                                  // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidgetAnimation*                       Anim_CommonBG_MaskFadeOut;                         // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -33,17 +33,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Common_SceneMask">();
+		STATIC_CLASS_IMPL("PyWidget_Common_SceneMask")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Common_SceneMask")
 	}
 	static class UPyWidget_Common_SceneMask* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Common_SceneMask>();
 	}
 };
-static_assert(alignof(UPyWidget_Common_SceneMask) == 0x000008, "Wrong alignment on UPyWidget_Common_SceneMask");
-static_assert(sizeof(UPyWidget_Common_SceneMask) == 0x000578, "Wrong size on UPyWidget_Common_SceneMask");
-static_assert(offsetof(UPyWidget_Common_SceneMask, Anim_MaskFadeOut) == 0x000568, "Member 'UPyWidget_Common_SceneMask::Anim_MaskFadeOut' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Common_SceneMask, Anim_CommonBG_MaskFadeOut) == 0x000570, "Member 'UPyWidget_Common_SceneMask::Anim_CommonBG_MaskFadeOut' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Common_SceneMask;
 
 }
 

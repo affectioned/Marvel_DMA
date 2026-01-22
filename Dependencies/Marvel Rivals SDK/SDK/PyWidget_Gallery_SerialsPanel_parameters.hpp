@@ -24,10 +24,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_SerialsPanel_Tick) == 0x000004, "Wrong alignment on PyWidget_Gallery_SerialsPanel_Tick");
-static_assert(sizeof(PyWidget_Gallery_SerialsPanel_Tick) == 0x00003C, "Wrong size on PyWidget_Gallery_SerialsPanel_Tick");
-static_assert(offsetof(PyWidget_Gallery_SerialsPanel_Tick, MyGeometry) == 0x000000, "Member 'PyWidget_Gallery_SerialsPanel_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PyWidget_Gallery_SerialsPanel_Tick, InDeltaTime) == 0x000038, "Member 'PyWidget_Gallery_SerialsPanel_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_SerialsPanel_Tick;
 
 // PythonFunction PyWidget_Gallery_SerialsPanel.PyWidget_Gallery_SerialsPanel.OnAnimationStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +33,7 @@ struct PyWidget_Gallery_SerialsPanel_OnAnimationStarted final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_SerialsPanel_OnAnimationStarted) == 0x000008, "Wrong alignment on PyWidget_Gallery_SerialsPanel_OnAnimationStarted");
-static_assert(sizeof(PyWidget_Gallery_SerialsPanel_OnAnimationStarted) == 0x000008, "Wrong size on PyWidget_Gallery_SerialsPanel_OnAnimationStarted");
-static_assert(offsetof(PyWidget_Gallery_SerialsPanel_OnAnimationStarted, Animation) == 0x000000, "Member 'PyWidget_Gallery_SerialsPanel_OnAnimationStarted::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_SerialsPanel_OnAnimationStarted;
 
 // PythonFunction PyWidget_Gallery_SerialsPanel.PyWidget_Gallery_SerialsPanel.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +42,7 @@ struct PyWidget_Gallery_SerialsPanel_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_Gallery_SerialsPanel_OnAnimationFinished) == 0x000008, "Wrong alignment on PyWidget_Gallery_SerialsPanel_OnAnimationFinished");
-static_assert(sizeof(PyWidget_Gallery_SerialsPanel_OnAnimationFinished) == 0x000008, "Wrong size on PyWidget_Gallery_SerialsPanel_OnAnimationFinished");
-static_assert(offsetof(PyWidget_Gallery_SerialsPanel_OnAnimationFinished, Animation) == 0x000000, "Member 'PyWidget_Gallery_SerialsPanel_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_Gallery_SerialsPanel_OnAnimationFinished;
 
 }
 

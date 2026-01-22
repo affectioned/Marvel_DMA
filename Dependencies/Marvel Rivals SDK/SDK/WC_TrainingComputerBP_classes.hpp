@@ -23,15 +23,18 @@ class UWC_TrainingComputerBP_C final : public UPyWC_TrainComputer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WC_TrainingComputerBP_C">();
+		BP_STATIC_CLASS_IMPL("WC_TrainingComputerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WC_TrainingComputerBP_C")
 	}
 	static class UWC_TrainingComputerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWC_TrainingComputerBP_C>();
 	}
 };
-static_assert(alignof(UWC_TrainingComputerBP_C) == 0x000010, "Wrong alignment on UWC_TrainingComputerBP_C");
-static_assert(sizeof(UWC_TrainingComputerBP_C) == 0x000AE0, "Wrong size on UWC_TrainingComputerBP_C");
+DUMPER7_ASSERTS_UWC_TrainingComputerBP_C;
 
 }
 

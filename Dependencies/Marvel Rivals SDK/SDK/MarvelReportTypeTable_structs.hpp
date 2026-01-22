@@ -24,12 +24,7 @@ public:
 	TArray<class FString>                         ReportList_5_06D1997D4B711436DA222796E167469A;     // 0x0028(0x0010)(Edit, BlueprintVisible)
 	class FString                                 Remark_8_21D19BBA45919B2787DA4C951191B82C;         // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FMarvelReportTypeTable) == 0x000008, "Wrong alignment on FMarvelReportTypeTable");
-static_assert(sizeof(FMarvelReportTypeTable) == 0x000048, "Wrong size on FMarvelReportTypeTable");
-static_assert(offsetof(FMarvelReportTypeTable, ReportType_2_F6F1CD374A6D8430065A5BADCC111499) == 0x000000, "Member 'FMarvelReportTypeTable::ReportType_2_F6F1CD374A6D8430065A5BADCC111499' has a wrong offset!");
-static_assert(offsetof(FMarvelReportTypeTable, ReportTitle_11_6B20CFCE427633075CAC17B702FBB312) == 0x000010, "Member 'FMarvelReportTypeTable::ReportTitle_11_6B20CFCE427633075CAC17B702FBB312' has a wrong offset!");
-static_assert(offsetof(FMarvelReportTypeTable, ReportList_5_06D1997D4B711436DA222796E167469A) == 0x000028, "Member 'FMarvelReportTypeTable::ReportList_5_06D1997D4B711436DA222796E167469A' has a wrong offset!");
-static_assert(offsetof(FMarvelReportTypeTable, Remark_8_21D19BBA45919B2787DA4C951191B82C) == 0x000038, "Member 'FMarvelReportTypeTable::Remark_8_21D19BBA45919B2787DA4C951191B82C' has a wrong offset!");
+DUMPER7_ASSERTS_FMarvelReportTypeTable;
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Activity125_RankingBtn.PyWidget_Activity125_RankingBtn
-// 0x0000 (0x0728 - 0x0728)
+// 0x0000 (0x0780 - 0x0780)
 class UPyWidget_Activity125_RankingBtn final : public UPyWidget_Button
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Activity125_RankingBtn">();
+		STATIC_CLASS_IMPL("PyWidget_Activity125_RankingBtn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Activity125_RankingBtn")
 	}
 	static class UPyWidget_Activity125_RankingBtn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Activity125_RankingBtn>();
 	}
 };
-static_assert(alignof(UPyWidget_Activity125_RankingBtn) == 0x000008, "Wrong alignment on UPyWidget_Activity125_RankingBtn");
-static_assert(sizeof(UPyWidget_Activity125_RankingBtn) == 0x000728, "Wrong size on UPyWidget_Activity125_RankingBtn");
+DUMPER7_ASSERTS_UPyWidget_Activity125_RankingBtn;
 
 }
 

@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "PyControl_classes.hpp"
 #include "Marvel_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // PythonClass PyMineControl.PyCue_Level_MineControl
-// 0x0020 (0x12A0 - 0x1280)
+// 0x0020 (0x12B0 - 0x1290)
 class APyCue_Level_MineControl final : public APyCue_Level_ControlPointV2
 {
 public:
-	class UMaterialInstance*                      SplineMaterialColorWhite;                          // 0x1280(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      SplineMaterialColorBlue;                           // 0x1288(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInstance*                      SplineMaterialColorRed;                            // 0x1290(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      SplineMaterialColorWhite;                          // 0x1290(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      SplineMaterialColorBlue;                           // 0x1298(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstance*                      SplineMaterialColorRed;                            // 0x12A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool WhileActive(class AActor* ControlActor, const struct FGameplayCueParameters& Parameters);
@@ -34,18 +34,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Level_MineControl">();
+		STATIC_CLASS_IMPL("PyCue_Level_MineControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Level_MineControl")
 	}
 	static class APyCue_Level_MineControl* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Level_MineControl>();
 	}
 };
-static_assert(alignof(APyCue_Level_MineControl) == 0x000010, "Wrong alignment on APyCue_Level_MineControl");
-static_assert(sizeof(APyCue_Level_MineControl) == 0x0012A0, "Wrong size on APyCue_Level_MineControl");
-static_assert(offsetof(APyCue_Level_MineControl, SplineMaterialColorWhite) == 0x001280, "Member 'APyCue_Level_MineControl::SplineMaterialColorWhite' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_MineControl, SplineMaterialColorBlue) == 0x001288, "Member 'APyCue_Level_MineControl::SplineMaterialColorBlue' has a wrong offset!");
-static_assert(offsetof(APyCue_Level_MineControl, SplineMaterialColorRed) == 0x001290, "Member 'APyCue_Level_MineControl::SplineMaterialColorRed' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Level_MineControl;
 
 // PythonClass PyMineControl.PyMineControl
 // 0x0220 (0x0BD0 - 0x09B0)
@@ -132,7 +132,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMineControl">();
+		STATIC_CLASS_IMPL("PyMineControl")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMineControl")
 	}
 	static class APyMineControl* GetDefaultObj()
 	{
@@ -140,51 +144,7 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APyMineControl) == 0x000010, "Wrong alignment on APyMineControl");
-static_assert(sizeof(APyMineControl) == 0x000BD0, "Wrong size on APyMineControl");
-static_assert(offsetof(APyMineControl, CurCostSpeed) == 0x0009A8, "Member 'APyMineControl::CurCostSpeed' has a wrong offset!");
-static_assert(offsetof(APyMineControl, CurChargeSpeed) == 0x0009AC, "Member 'APyMineControl::CurChargeSpeed' has a wrong offset!");
-static_assert(offsetof(APyMineControl, StripeUseStaticMesh) == 0x0009B0, "Member 'APyMineControl::StripeUseStaticMesh' has a wrong offset!");
-static_assert(offsetof(APyMineControl, CurNum) == 0x0009B4, "Member 'APyMineControl::CurNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, MaxNum) == 0x0009B8, "Member 'APyMineControl::MaxNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PreShowNextMineTipsCurNum) == 0x0009BC, "Member 'APyMineControl::PreShowNextMineTipsCurNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PreSwitchNextMineAssociatedPlayerStartCurNum) == 0x0009C0, "Member 'APyMineControl::PreSwitchNextMineAssociatedPlayerStartCurNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PreActiveShiftMineBoostDoorsCurNum) == 0x0009C4, "Member 'APyMineControl::PreActiveShiftMineBoostDoorsCurNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, ShuffledMineIndex) == 0x0009C8, "Member 'APyMineControl::ShuffledMineIndex' has a wrong offset!");
-static_assert(offsetof(APyMineControl, MineRunningState) == 0x0009CC, "Member 'APyMineControl::MineRunningState' has a wrong offset!");
-static_assert(offsetof(APyMineControl, MineUnlockTime) == 0x0009D0, "Member 'APyMineControl::MineUnlockTime' has a wrong offset!");
-static_assert(offsetof(APyMineControl, HighlightAnimCounter) == 0x0009D4, "Member 'APyMineControl::HighlightAnimCounter' has a wrong offset!");
-static_assert(offsetof(APyMineControl, CostSpeedMap) == 0x0009D8, "Member 'APyMineControl::CostSpeedMap' has a wrong offset!");
-static_assert(offsetof(APyMineControl, ChargeSpeed) == 0x000A28, "Member 'APyMineControl::ChargeSpeed' has a wrong offset!");
-static_assert(offsetof(APyMineControl, SettleInterval) == 0x000A2C, "Member 'APyMineControl::SettleInterval' has a wrong offset!");
-static_assert(offsetof(APyMineControl, MaxLimit) == 0x000A30, "Member 'APyMineControl::MaxLimit' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DeactivateOnRunOut) == 0x000A34, "Member 'APyMineControl::DeactivateOnRunOut' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PausedWhenFighting) == 0x000A35, "Member 'APyMineControl::PausedWhenFighting' has a wrong offset!");
-static_assert(offsetof(APyMineControl, RedBirthDoor) == 0x000A38, "Member 'APyMineControl::RedBirthDoor' has a wrong offset!");
-static_assert(offsetof(APyMineControl, BlueBirthDoor) == 0x000A40, "Member 'APyMineControl::BlueBirthDoor' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageModeEnabled) == 0x000A48, "Member 'APyMineControl::PillageModeEnabled' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageSpeedMap) == 0x000A50, "Member 'APyMineControl::PillageSpeedMap' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageAcceleratedStartSeconds) == 0x000AA0, "Member 'APyMineControl::PillageAcceleratedStartSeconds' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageAcceleratedSpeed) == 0x000AA4, "Member 'APyMineControl::PillageAcceleratedSpeed' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageAcceleratedSpeedInterval) == 0x000AA8, "Member 'APyMineControl::PillageAcceleratedSpeedInterval' has a wrong offset!");
-static_assert(offsetof(APyMineControl, ResetPillageStageOnOwnerChanged) == 0x000AAC, "Member 'APyMineControl::ResetPillageStageOnOwnerChanged' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageMaxTime) == 0x000AB0, "Member 'APyMineControl::PillageMaxTime' has a wrong offset!");
-static_assert(offsetof(APyMineControl, bUseOccpuyTimeForPillage) == 0x000AB4, "Member 'APyMineControl::bUseOccpuyTimeForPillage' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageAcceleratedStartDelay) == 0x000AB8, "Member 'APyMineControl::PillageAcceleratedStartDelay' has a wrong offset!");
-static_assert(offsetof(APyMineControl, bCountingPillageTimeWhenFighting) == 0x000ABC, "Member 'APyMineControl::bCountingPillageTimeWhenFighting' has a wrong offset!");
-static_assert(offsetof(APyMineControl, CompensationStrategyForTheAdvantagedSide) == 0x000AC0, "Member 'APyMineControl::CompensationStrategyForTheAdvantagedSide' has a wrong offset!");
-static_assert(offsetof(APyMineControl, PillageStageCompensationDependsOnScoreDiffMap) == 0x000AC8, "Member 'APyMineControl::PillageStageCompensationDependsOnScoreDiffMap' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnStorageNumChanged) == 0x000B18, "Member 'APyMineControl::DispatchOnStorageNumChanged' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_CurNum) == 0x000B28, "Member 'APyMineControl::DispatchOnRep_CurNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_MaxNum) == 0x000B38, "Member 'APyMineControl::DispatchOnRep_MaxNum' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnStorageNumRunOut) == 0x000B48, "Member 'APyMineControl::DispatchOnStorageNumRunOut' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnMineDeactivated) == 0x000B58, "Member 'APyMineControl::DispatchOnMineDeactivated' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnPillageStageChanged) == 0x000B68, "Member 'APyMineControl::DispatchOnPillageStageChanged' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_PillageModeEnabled) == 0x000B78, "Member 'APyMineControl::DispatchOnRep_PillageModeEnabled' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_ShuffledMineIndex) == 0x000B88, "Member 'APyMineControl::DispatchOnRep_ShuffledMineIndex' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_MineRunningState) == 0x000B98, "Member 'APyMineControl::DispatchOnRep_MineRunningState' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_MineUnlockTime) == 0x000BA8, "Member 'APyMineControl::DispatchOnRep_MineUnlockTime' has a wrong offset!");
-static_assert(offsetof(APyMineControl, DispatchOnRep_HighlightAnimCounter) == 0x000BB8, "Member 'APyMineControl::DispatchOnRep_HighlightAnimCounter' has a wrong offset!");
+DUMPER7_ASSERTS_APyMineControl;
 
 }
 

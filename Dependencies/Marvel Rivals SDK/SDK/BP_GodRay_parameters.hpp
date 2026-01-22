@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_GodRay.BP_GodRay_C.UserConstructionScript
-// 0x02F0 (0x02F0 - 0x0000)
+// 0x0310 (0x0310 - 0x0000)
 struct BP_GodRay_C_UserConstructionScript final
 {
 public:
@@ -38,37 +38,15 @@ public:
 	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x00E8(0x01F0)(ContainsInstancedReference)
-	float                                         CallFunc_SetCullDistance_NewCullDistance_ImplicitCast; // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetBoundsScale_NewBoundsScale_ImplicitCast; // 0x02DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x00E8(0x0208)(ContainsInstancedReference)
+	float                                         CallFunc_SetCullDistance_NewCullDistance_ImplicitCast; // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetBoundsScale_NewBoundsScale_ImplicitCast; // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x0304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GodRay_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_GodRay_C_UserConstructionScript");
-static_assert(sizeof(BP_GodRay_C_UserConstructionScript) == 0x0002F0, "Wrong size on BP_GodRay_C_UserConstructionScript");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_GodRay_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000068, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_K2_GetComponentScale_ReturnValue) == 0x000078, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_K2_GetComponentScale_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_GetMaxElement_ReturnValue) == 0x000090, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_GetMaxElement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000098, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000A0, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000A8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x0000B0, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x0000B8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000C0, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_RandomFloatInRangeFromStream_ReturnValue) == 0x0000C8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_RandomFloatInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000D0, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x0000E8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetCullDistance_NewCullDistance_ImplicitCast) == 0x0002D8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetCullDistance_NewCullDistance_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetBoundsScale_NewBoundsScale_ImplicitCast) == 0x0002DC, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetBoundsScale_NewBoundsScale_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x0002E0, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x0002E4, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x0002E8, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x0002EC, "Member 'BP_GodRay_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GodRay_C_UserConstructionScript;
 
 // Function BP_GodRay.BP_GodRay_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -77,9 +55,7 @@ struct BP_GodRay_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GodRay_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_GodRay_C_ReceiveTick");
-static_assert(sizeof(BP_GodRay_C_ReceiveTick) == 0x000004, "Wrong size on BP_GodRay_C_ReceiveTick");
-static_assert(offsetof(BP_GodRay_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_GodRay_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GodRay_C_ReceiveTick;
 
 // Function BP_GodRay.BP_GodRay_C.ExecuteUbergraph_BP_GodRay
 // 0x0048 (0x0048 - 0x0000)
@@ -96,15 +72,7 @@ public:
 	class UPyLevelEventSubSystem*                 CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay) == 0x000008, "Wrong alignment on BP_GodRay_C_ExecuteUbergraph_BP_GodRay");
-static_assert(sizeof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay) == 0x000048, "Wrong size on BP_GodRay_C_ExecuteUbergraph_BP_GodRay");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, EntryPoint) == 0x000000, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, CallFunc_IsServer_ReturnValue) == 0x000004, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, K2Node_Event_DeltaSeconds) == 0x000030, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000038, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GodRay_C_ExecuteUbergraph_BP_GodRay, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000040, "Member 'BP_GodRay_C_ExecuteUbergraph_BP_GodRay::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+DUMPER7_ASSERTS_BP_GodRay_C_ExecuteUbergraph_BP_GodRay;
 
 }
 

@@ -43,25 +43,7 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0098(0x0018)()
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00B0(0x0018)()
 };
-static_assert(alignof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit) == 0x000008, "Wrong alignment on WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit");
-static_assert(sizeof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit) == 0x0000C8, "Wrong size on WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, EntryPoint) == 0x000000, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_CustomEvent_AkComp) == 0x000008, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_CustomEvent_AkComp' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_CustomEvent_AkEvent) == 0x000010, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_CustomEvent_AkEvent' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_CustomEvent_EventName) == 0x000018, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_Event_MyGeometry) == 0x00002C, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_Event_InDeltaTime) == 0x000064, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_IsValid_ReturnValue_1) == 0x000068, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_IsValid_ReturnValue_2) == 0x000069, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_IsEventPlaying_ReturnValue) == 0x00006A, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_IsEventPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_PlayAnimation_ReturnValue) == 0x000070, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, K2Node_Event_Animation) == 0x000078, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000080, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_IsValid_ReturnValue_3) == 0x000081, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_GetDisplayName_ReturnValue) == 0x000088, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_Conv_StringToText_ReturnValue) == 0x000098, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000B0, "Member 'WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UIEventUnit_C_ExecuteUbergraph_WBP_UIEventUnit;
 
 // Function WBP_UIEventUnit.WBP_UIEventUnit_C.Init
 // 0x0020 (0x0020 - 0x0000)
@@ -72,11 +54,7 @@ public:
 	class UAkAudioEvent*                          AkEvent_0;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 EventName_0;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UIEventUnit_C_Init) == 0x000008, "Wrong alignment on WBP_UIEventUnit_C_Init");
-static_assert(sizeof(WBP_UIEventUnit_C_Init) == 0x000020, "Wrong size on WBP_UIEventUnit_C_Init");
-static_assert(offsetof(WBP_UIEventUnit_C_Init, AkComp) == 0x000000, "Member 'WBP_UIEventUnit_C_Init::AkComp' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_Init, AkEvent_0) == 0x000008, "Member 'WBP_UIEventUnit_C_Init::AkEvent_0' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_Init, EventName_0) == 0x000010, "Member 'WBP_UIEventUnit_C_Init::EventName_0' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UIEventUnit_C_Init;
 
 // Function WBP_UIEventUnit.WBP_UIEventUnit_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -85,9 +63,7 @@ struct WBP_UIEventUnit_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UIEventUnit_C_OnAnimationFinished) == 0x000008, "Wrong alignment on WBP_UIEventUnit_C_OnAnimationFinished");
-static_assert(sizeof(WBP_UIEventUnit_C_OnAnimationFinished) == 0x000008, "Wrong size on WBP_UIEventUnit_C_OnAnimationFinished");
-static_assert(offsetof(WBP_UIEventUnit_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_UIEventUnit_C_OnAnimationFinished::Animation' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UIEventUnit_C_OnAnimationFinished;
 
 // Function WBP_UIEventUnit.WBP_UIEventUnit_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -97,10 +73,7 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_UIEventUnit_C_Tick) == 0x000004, "Wrong alignment on WBP_UIEventUnit_C_Tick");
-static_assert(sizeof(WBP_UIEventUnit_C_Tick) == 0x00003C, "Wrong size on WBP_UIEventUnit_C_Tick");
-static_assert(offsetof(WBP_UIEventUnit_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_UIEventUnit_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_UIEventUnit_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_UIEventUnit_C_Tick::InDeltaTime' has a wrong offset!");
+DUMPER7_ASSERTS_WBP_UIEventUnit_C_Tick;
 
 }
 

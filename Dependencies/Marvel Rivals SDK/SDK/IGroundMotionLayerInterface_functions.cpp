@@ -17,6 +17,27 @@
 namespace SDK
 {
 
+// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpStartNew
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       JumpStartNew_0                                         (Parm, OutParm, NoDestructor)
+
+void IIGroundMotionLayerInterface_C::JumpStartNew(struct FPoseLink* JumpStartNew_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("IGroundMotionLayerInterface_C", "JumpStartNew");
+
+	Params::IGroundMotionLayerInterface_C_JumpStartNew Parms{};
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	if (JumpStartNew_0 != nullptr)
+		*JumpStartNew_0 = std::move(Parms.JumpStartNew_0);
+}
+
+
 // Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.Turning_Post
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -41,24 +62,24 @@ void IIGroundMotionLayerInterface_C::Turning_Post(const struct FPoseLink& InPose
 }
 
 
-// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpStartNew
+// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpLandNew
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink*                       JumpStartNew_0                                         (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       JumpLandNew_0                                          (Parm, OutParm, NoDestructor)
 
-void IIGroundMotionLayerInterface_C::JumpStartNew(struct FPoseLink* JumpStartNew_0)
+void IIGroundMotionLayerInterface_C::JumpLandNew(struct FPoseLink* JumpLandNew_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("IGroundMotionLayerInterface_C", "JumpStartNew");
+		Func = AsUObject()->Class->GetFunction("IGroundMotionLayerInterface_C", "JumpLandNew");
 
-	Params::IGroundMotionLayerInterface_C_JumpStartNew Parms{};
+	Params::IGroundMotionLayerInterface_C_JumpLandNew Parms{};
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (JumpStartNew_0 != nullptr)
-		*JumpStartNew_0 = std::move(Parms.JumpStartNew_0);
+	if (JumpLandNew_0 != nullptr)
+		*JumpLandNew_0 = std::move(Parms.JumpLandNew_0);
 }
 
 
@@ -80,27 +101,6 @@ void IIGroundMotionLayerInterface_C::JumpLoopNew(struct FPoseLink* JumpLoopNew_0
 
 	if (JumpLoopNew_0 != nullptr)
 		*JumpLoopNew_0 = std::move(Parms.JumpLoopNew_0);
-}
-
-
-// Function IGroundMotionLayerInterface.IGroundMotionLayerInterface_C.JumpLandNew
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       JumpLandNew_0                                          (Parm, OutParm, NoDestructor)
-
-void IIGroundMotionLayerInterface_C::JumpLandNew(struct FPoseLink* JumpLandNew_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("IGroundMotionLayerInterface_C", "JumpLandNew");
-
-	Params::IGroundMotionLayerInterface_C_JumpLandNew Parms{};
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	if (JumpLandNew_0 != nullptr)
-		*JumpLandNew_0 = std::move(Parms.JumpLandNew_0);
 }
 
 

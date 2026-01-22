@@ -38,17 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelListView">();
+		STATIC_CLASS_IMPL("MarvelListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelListView")
 	}
 	static class UMarvelListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelListView>();
 	}
 };
-static_assert(alignof(UMarvelListView) == 0x000010, "Wrong alignment on UMarvelListView");
-static_assert(sizeof(UMarvelListView) == 0x000DE0, "Wrong size on UMarvelListView");
-static_assert(offsetof(UMarvelListView, bNeedCommonHoverTip) == 0x000D60, "Member 'UMarvelListView::bNeedCommonHoverTip' has a wrong offset!");
-static_assert(offsetof(UMarvelListView, TypeTags) == 0x000D68, "Member 'UMarvelListView::TypeTags' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelListView;
 
 // Class MarvelWidgets.MarvelScrollBox
 // 0x0010 (0x0D90 - 0x0D80)
@@ -61,16 +62,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelScrollBox">();
+		STATIC_CLASS_IMPL("MarvelScrollBox")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelScrollBox")
 	}
 	static class UMarvelScrollBox* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelScrollBox>();
 	}
 };
-static_assert(alignof(UMarvelScrollBox) == 0x000010, "Wrong alignment on UMarvelScrollBox");
-static_assert(sizeof(UMarvelScrollBox) == 0x000D90, "Wrong size on UMarvelScrollBox");
-static_assert(offsetof(UMarvelScrollBox, bNeedCommonHoverTip) == 0x000D80, "Member 'UMarvelScrollBox::bNeedCommonHoverTip' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelScrollBox;
 
 // Class MarvelWidgets.MarvelTileView
 // 0x0070 (0x0E00 - 0x0D90)
@@ -88,17 +91,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MarvelTileView">();
+		STATIC_CLASS_IMPL("MarvelTileView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MarvelTileView")
 	}
 	static class UMarvelTileView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMarvelTileView>();
 	}
 };
-static_assert(alignof(UMarvelTileView) == 0x000010, "Wrong alignment on UMarvelTileView");
-static_assert(sizeof(UMarvelTileView) == 0x000E00, "Wrong size on UMarvelTileView");
-static_assert(offsetof(UMarvelTileView, bNeedCommonHoverTip) == 0x000D88, "Member 'UMarvelTileView::bNeedCommonHoverTip' has a wrong offset!");
-static_assert(offsetof(UMarvelTileView, TypeTags) == 0x000D90, "Member 'UMarvelTileView::TypeTags' has a wrong offset!");
+DUMPER7_ASSERTS_UMarvelTileView;
 
 // Class MarvelWidgets.MaskImage
 // 0x0040 (0x04B0 - 0x0470)
@@ -130,24 +134,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MaskImage">();
+		STATIC_CLASS_IMPL("MaskImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaskImage")
 	}
 	static class UMaskImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMaskImage>();
 	}
 };
-static_assert(alignof(UMaskImage) == 0x000010, "Wrong alignment on UMaskImage");
-static_assert(sizeof(UMaskImage) == 0x0004B0, "Wrong size on UMaskImage");
-static_assert(offsetof(UMaskImage, Texture_Main) == 0x000468, "Member 'UMaskImage::Texture_Main' has a wrong offset!");
-static_assert(offsetof(UMaskImage, Texture_Mask) == 0x000470, "Member 'UMaskImage::Texture_Mask' has a wrong offset!");
-static_assert(offsetof(UMaskImage, MaterialMaskTextureParamName) == 0x000478, "Member 'UMaskImage::MaterialMaskTextureParamName' has a wrong offset!");
-static_assert(offsetof(UMaskImage, TextureScale) == 0x000484, "Member 'UMaskImage::TextureScale' has a wrong offset!");
-static_assert(offsetof(UMaskImage, TextureUVOffset) == 0x000488, "Member 'UMaskImage::TextureUVOffset' has a wrong offset!");
-static_assert(offsetof(UMaskImage, Downscale_Main) == 0x000498, "Member 'UMaskImage::Downscale_Main' has a wrong offset!");
-static_assert(offsetof(UMaskImage, Downscale_Mask) == 0x00049C, "Member 'UMaskImage::Downscale_Mask' has a wrong offset!");
-static_assert(offsetof(UMaskImage, DefaultMaterial) == 0x0004A0, "Member 'UMaskImage::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UMaskImage, UseMask) == 0x0004A8, "Member 'UMaskImage::UseMask' has a wrong offset!");
+DUMPER7_ASSERTS_UMaskImage;
 
 // Class MarvelWidgets.PaintContextUtils
 // 0x0000 (0x0030 - 0x0030)
@@ -162,15 +160,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PaintContextUtils">();
+		STATIC_CLASS_IMPL("PaintContextUtils")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PaintContextUtils")
 	}
 	static class UPaintContextUtils* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPaintContextUtils>();
 	}
 };
-static_assert(alignof(UPaintContextUtils) == 0x000008, "Wrong alignment on UPaintContextUtils");
-static_assert(sizeof(UPaintContextUtils) == 0x000030, "Wrong size on UPaintContextUtils");
+DUMPER7_ASSERTS_UPaintContextUtils;
 
 }
 

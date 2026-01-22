@@ -32,15 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLevelNodeNiagaraComponent">();
+		STATIC_CLASS_IMPL("PyLevelNodeNiagaraComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLevelNodeNiagaraComponent")
 	}
 	static class UPyLevelNodeNiagaraComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyLevelNodeNiagaraComponent>();
 	}
 };
-static_assert(alignof(UPyLevelNodeNiagaraComponent) == 0x000008, "Wrong alignment on UPyLevelNodeNiagaraComponent");
-static_assert(sizeof(UPyLevelNodeNiagaraComponent) == 0x000108, "Wrong size on UPyLevelNodeNiagaraComponent");
+DUMPER7_ASSERTS_UPyLevelNodeNiagaraComponent;
 
 }
 

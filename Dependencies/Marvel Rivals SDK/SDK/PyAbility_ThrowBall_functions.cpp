@@ -237,20 +237,20 @@ void UPySummonedComp_Ball::MulticastOnComponentHit(const struct FHitResult& Resu
 }
 
 
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.WhileActiveFX
+// PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.WhileActiveFX
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void APyCue_Summoned_Loop_Ball::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+void APyCue_Buff_20050101::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "WhileActiveFX");
+		Func = Class->GetFunction("PyCue_Buff_20050101", "WhileActiveFX");
 
-	Params::PyCue_Summoned_Loop_Ball_WhileActiveFX Parms{};
+	Params::PyCue_Buff_20050101_WhileActiveFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);
@@ -264,152 +264,23 @@ void APyCue_Summoned_Loop_Ball::WhileActiveFX(class AActor* MyTarget, const stru
 }
 
 
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnRemoveFX
+// PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.OnRemoveFX
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void APyCue_Summoned_Loop_Ball::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+void APyCue_Buff_20050101::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnRemoveFX");
+		Func = Class->GetFunction("PyCue_Buff_20050101", "OnRemoveFX");
 
-	Params::PyCue_Summoned_Loop_Ball_OnRemoveFX Parms{};
+	Params::PyCue_Buff_20050101_OnRemoveFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.ReceiveTick
-// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Summoned_Loop_Ball::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "ReceiveTick");
-
-	Params::PyCue_Summoned_Loop_Ball_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnThrowStateChanged
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    ThrowState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Summoned_Loop_Ball::OnThrowStateChanged(bool ThrowState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnThrowStateChanged");
-
-	Params::PyCue_Summoned_Loop_Ball_OnThrowStateChanged Parms{};
-
-	Parms.ThrowState = ThrowState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHoldingStateChanged
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    HoldingState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Summoned_Loop_Ball::OnHoldingStateChanged(bool HoldingState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnHoldingStateChanged");
-
-	Params::PyCue_Summoned_Loop_Ball_OnHoldingStateChanged Parms{};
-
-	Parms.HoldingState = HoldingState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHolderChanged
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// class AMarvelBaseCharacter*             NewHolder                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Summoned_Loop_Ball::OnHolderChanged(class AMarvelBaseCharacter* NewHolder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnHolderChanged");
-
-	Params::PyCue_Summoned_Loop_Ball_OnHolderChanged Parms{};
-
-	Parms.NewHolder = NewHolder;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnCollision
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const struct FHitResult&                InHitResult                                            (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    bIsThrowing                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Impulse                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APyCue_Summoned_Loop_Ball::OnCollision(const struct FHitResult& InHitResult, bool bIsThrowing, const struct FVector& Impulse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnCollision");
-
-	Params::PyCue_Summoned_Loop_Ball_OnCollision Parms{};
-
-	Parms.InHitResult = std::move(InHitResult);
-	Parms.bIsThrowing = bIsThrowing;
-	Parms.Impulse = std::move(Impulse);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -629,20 +500,20 @@ void UPyAbility_ThrowBall::ServerThrowEndPoint(const struct FVector& TargetPoint
 }
 
 
-// PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.WhileActiveFX
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.WhileActiveFX
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void APyCue_Buff_20050101::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+void APyCue_Summoned_Loop_Ball::WhileActiveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Buff_20050101", "WhileActiveFX");
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "WhileActiveFX");
 
-	Params::PyCue_Buff_20050101_WhileActiveFX Parms{};
+	Params::PyCue_Summoned_Loop_Ball_WhileActiveFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);
@@ -656,23 +527,152 @@ void APyCue_Buff_20050101::WhileActiveFX(class AActor* MyTarget, const struct FG
 }
 
 
-// PythonFunction PyAbility_ThrowBall.PyCue_Buff_20050101.OnRemoveFX
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnRemoveFX
 // (Native, Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
-void APyCue_Buff_20050101::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
+void APyCue_Summoned_Loop_Ball::OnRemoveFX(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PyCue_Buff_20050101", "OnRemoveFX");
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnRemoveFX");
 
-	Params::PyCue_Buff_20050101_OnRemoveFX Parms{};
+	Params::PyCue_Summoned_Loop_Ball_OnRemoveFX Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = std::move(Parameters);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.ReceiveTick
+// (Native, Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoned_Loop_Ball::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "ReceiveTick");
+
+	Params::PyCue_Summoned_Loop_Ball_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnThrowStateChanged
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ThrowState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoned_Loop_Ball::OnThrowStateChanged(bool ThrowState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnThrowStateChanged");
+
+	Params::PyCue_Summoned_Loop_Ball_OnThrowStateChanged Parms{};
+
+	Parms.ThrowState = ThrowState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHoldingStateChanged
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    HoldingState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoned_Loop_Ball::OnHoldingStateChanged(bool HoldingState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnHoldingStateChanged");
+
+	Params::PyCue_Summoned_Loop_Ball_OnHoldingStateChanged Parms{};
+
+	Parms.HoldingState = HoldingState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnHolderChanged
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// class AMarvelBaseCharacter*             NewHolder                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoned_Loop_Ball::OnHolderChanged(class AMarvelBaseCharacter* NewHolder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnHolderChanged");
+
+	Params::PyCue_Summoned_Loop_Ball_OnHolderChanged Parms{};
+
+	Parms.NewHolder = NewHolder;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// PythonFunction PyAbility_ThrowBall.PyCue_Summoned_Loop_Ball.OnCollision
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FHitResult&                InHitResult                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                                    bIsThrowing                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Impulse                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APyCue_Summoned_Loop_Ball::OnCollision(const struct FHitResult& InHitResult, bool bIsThrowing, const struct FVector& Impulse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PyCue_Summoned_Loop_Ball", "OnCollision");
+
+	Params::PyCue_Summoned_Loop_Ball_OnCollision Parms{};
+
+	Parms.InHitResult = std::move(InHitResult);
+	Parms.bIsThrowing = bIsThrowing;
+	Parms.Impulse = std::move(Impulse);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

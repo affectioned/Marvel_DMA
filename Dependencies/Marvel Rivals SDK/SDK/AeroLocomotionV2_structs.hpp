@@ -17,6 +17,48 @@
 namespace SDK
 {
 
+// ScriptStruct AeroLocomotionV2.AeroLocomotionV2_C.AnimBlueprintGeneratedMutableData
+// 0x0087 (0x0088 - 0x0001)
+struct AeroLocomotionV2::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+public:
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_0;                                 // 0x0008(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_1;                                 // 0x000C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_2;                                 // 0x0010(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_3;                                 // 0x0014(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_4;                                 // 0x0018(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_5;                                 // 0x001C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_6;                                 // 0x0020(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_7;                                 // 0x0024(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_8;                                 // 0x0028(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_9;                                 // 0x002C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_10;                                // 0x0030(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_11;                                // 0x0034(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_12;                                // 0x0038(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_13;                                // 0x003C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_14;                                // 0x0040(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_15;                                // 0x0044(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_16;                                // 0x0048(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_17;                                // 0x004C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_18;                                // 0x0050(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_19;                                // 0x0054(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_20;                                // 0x0058(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_21;                                // 0x005C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_22;                                // 0x0060(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_23;                                // 0x0064(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_24;                                // 0x0068(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_25;                                // 0x006C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_26;                                // 0x0070(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_27;                                // 0x0074(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_28;                                // 0x0078(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_29;                                // 0x007C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_30;                                // 0x0080(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_31;                                // 0x0084(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AeroLocomotionV2__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct AeroLocomotionV2.AeroLocomotionV2_C.AnimBlueprintGeneratedConstantData
 // 0x03A7 (0x03A8 - 0x0001)
 struct AeroLocomotionV2::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -108,162 +150,7 @@ public:
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0310(0x0080)()
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x0390(0x0018)()
 };
-static_assert(alignof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on AeroLocomotionV2::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData) == 0x0003A8, "Wrong size on AeroLocomotionV2::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1793) == 0x000004, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1793' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __ByteProperty_1794) == 0x000010, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__ByteProperty_1794' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1795) == 0x000014, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1795' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1796) == 0x000020, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1796' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1797) == 0x00002C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1797' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __ArrayProperty_1798) == 0x000038, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__ArrayProperty_1798' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1799) == 0x000048, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1799' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1800) == 0x000054, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1800' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1801) == 0x000058, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1801' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1802) == 0x000064, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1802' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1803) == 0x000068, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1803' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1804) == 0x000074, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1804' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1805) == 0x000078, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1805' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1806) == 0x000084, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1806' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1807) == 0x000090, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1807' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1808) == 0x00009C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1808' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1809) == 0x0000A8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1809' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1810) == 0x0000B4, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1810' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1811) == 0x0000C0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1811' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1812) == 0x0000CC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1812' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1813) == 0x0000D8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1813' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1814) == 0x0000E4, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1814' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1815) == 0x0000F0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1815' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1816) == 0x0000FC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1816' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1817) == 0x000108, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1817' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1818) == 0x000114, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1818' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1819) == 0x000118, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1819' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1820) == 0x000124, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1820' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1821) == 0x000128, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1821' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1822) == 0x000134, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1822' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __FloatProperty_1823) == 0x000140, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__FloatProperty_1823' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __BlendProfile_1824) == 0x000148, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__BlendProfile_1824' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __CurveFloat_1825) == 0x000150, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__CurveFloat_1825' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __ArrayProperty_1826) == 0x000158, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__ArrayProperty_1826' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1827) == 0x000168, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1827' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1828) == 0x000174, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1828' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1829) == 0x000180, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1829' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1830) == 0x000184, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1830' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1831) == 0x000190, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1831' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1832) == 0x00019C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1832' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1833) == 0x0001A8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1833' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1834) == 0x0001B4, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1834' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1835) == 0x0001C0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1835' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1836) == 0x0001CC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1836' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1837) == 0x0001D8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1837' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1838) == 0x0001E4, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1838' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1839) == 0x0001F0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1839' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1840) == 0x0001FC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1840' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __FloatProperty_1841) == 0x000208, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__FloatProperty_1841' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1842) == 0x00020C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1842' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1843) == 0x000218, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1843' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1844) == 0x000224, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1844' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1845) == 0x000230, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1845' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1846) == 0x00023C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1846' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1847) == 0x000240, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1847' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1848) == 0x00024C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1848' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __EnumProperty_1849) == 0x000250, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__EnumProperty_1849' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1850) == 0x000254, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1850' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1851) == 0x000260, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1851' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1852) == 0x000264, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1852' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1853) == 0x000270, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1853' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __BoolProperty_1854) == 0x000274, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__BoolProperty_1854' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __FloatProperty_1855) == 0x000278, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__FloatProperty_1855' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __StructProperty_1856) == 0x00027C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__StructProperty_1856' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __FloatProperty_1857) == 0x0002A8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__FloatProperty_1857' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __EnumProperty_1858) == 0x0002AC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__EnumProperty_1858' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __ByteProperty_1859) == 0x0002AD, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__ByteProperty_1859' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1860) == 0x0002B0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1860' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __BoolProperty_1861) == 0x0002BC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__BoolProperty_1861' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __EnumProperty_1862) == 0x0002BD, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__EnumProperty_1862' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __EnumProperty_1863) == 0x0002BE, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__EnumProperty_1863' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1864) == 0x0002C0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1864' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __IntProperty_1865) == 0x0002CC, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__IntProperty_1865' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __StructProperty_1866) == 0x0002D0, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__StructProperty_1866' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1867) == 0x0002F8, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1867' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, __NameProperty_1868) == 0x000304, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::__NameProperty_1868' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000310, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000390, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
-
-// ScriptStruct AeroLocomotionV2.AeroLocomotionV2_C.AnimBlueprintGeneratedMutableData
-// 0x0087 (0x0088 - 0x0001)
-struct AeroLocomotionV2::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-public:
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_0;                                 // 0x0008(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_1;                                 // 0x000C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_2;                                 // 0x0010(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_3;                                 // 0x0014(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_4;                                 // 0x0018(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_5;                                 // 0x001C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_6;                                 // 0x0020(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_7;                                 // 0x0024(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_8;                                 // 0x0028(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_9;                                 // 0x002C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_10;                                // 0x0030(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_11;                                // 0x0034(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_12;                                // 0x0038(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_13;                                // 0x003C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_14;                                // 0x0040(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_15;                                // 0x0044(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_16;                                // 0x0048(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_17;                                // 0x004C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_18;                                // 0x0050(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_19;                                // 0x0054(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_20;                                // 0x0058(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_21;                                // 0x005C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_22;                                // 0x0060(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_23;                                // 0x0064(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_24;                                // 0x0068(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_25;                                // 0x006C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_26;                                // 0x0070(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_27;                                // 0x0074(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_28;                                // 0x0078(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_29;                                // 0x007C(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_30;                                // 0x0080(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_31;                                // 0x0084(0x0004)(BlueprintVisible, EditFixedSize, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData) == 0x000004, "Wrong alignment on AeroLocomotionV2::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData) == 0x000088, "Wrong size on AeroLocomotionV2::FAnimBlueprintGeneratedMutableData");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty) == 0x000004, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_0) == 0x000008, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_0' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_1) == 0x00000C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_1' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_2) == 0x000010, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_2' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_3) == 0x000014, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_3' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_4) == 0x000018, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_4' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_5) == 0x00001C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_5' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_6) == 0x000020, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_6' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_7) == 0x000024, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_7' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_8) == 0x000028, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_8' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_9) == 0x00002C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_9' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_10) == 0x000030, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_10' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_11) == 0x000034, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_11' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_12) == 0x000038, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_12' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_13) == 0x00003C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_13' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_14) == 0x000040, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_14' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_15) == 0x000044, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_15' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_16) == 0x000048, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_16' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_17) == 0x00004C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_17' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_18) == 0x000050, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_18' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_19) == 0x000054, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_19' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_20) == 0x000058, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_20' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_21) == 0x00005C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_21' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_22) == 0x000060, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_22' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_23) == 0x000064, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_23' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_24) == 0x000068, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_24' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_25) == 0x00006C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_25' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_26) == 0x000070, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_26' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_27) == 0x000074, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_27' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_28) == 0x000078, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_28' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_29) == 0x00007C, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_29' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_30) == 0x000080, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_30' has a wrong offset!");
-static_assert(offsetof(AeroLocomotionV2::FAnimBlueprintGeneratedMutableData, __FloatProperty_31) == 0x000084, "Member 'AeroLocomotionV2::FAnimBlueprintGeneratedMutableData::__FloatProperty_31' has a wrong offset!");
+DUMPER7_ASSERTS_AeroLocomotionV2__FAnimBlueprintGeneratedConstantData;
 
 }
 

@@ -25,13 +25,7 @@ public:
 	TMap<int32, class FText>                      o;                                                 // 0x0068(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	float                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue) == 0x000008, "Wrong alignment on UISettingEntryCommonTriggerHandler_BP_GetCurrentValue");
-static_assert(sizeof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue) == 0x0000C0, "Wrong size on UISettingEntryCommonTriggerHandler_BP_GetCurrentValue");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue, obj) == 0x000000, "Member 'UISettingEntryCommonTriggerHandler_BP_GetCurrentValue::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue, setting_key) == 0x000008, "Member 'UISettingEntryCommonTriggerHandler_BP_GetCurrentValue::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue, p) == 0x000018, "Member 'UISettingEntryCommonTriggerHandler_BP_GetCurrentValue::p' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue, o) == 0x000068, "Member 'UISettingEntryCommonTriggerHandler_BP_GetCurrentValue::o' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_GetCurrentValue, ReturnValue) == 0x0000B8, "Member 'UISettingEntryCommonTriggerHandler_BP_GetCurrentValue::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryCommonTriggerHandler_BP_GetCurrentValue;
 
 // PythonFunction SettingCommonLogic.UISettingEntryCommonTriggerHandler.BP_OnChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -47,15 +41,7 @@ public:
 	TMap<class FString, int32>                    tags;                                              // 0x00C0(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 	TMap<class FString, int32>                    ReturnValue;                                       // 0x0110(0x0050)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(UISettingEntryCommonTriggerHandler_BP_OnChanged) == 0x000008, "Wrong alignment on UISettingEntryCommonTriggerHandler_BP_OnChanged");
-static_assert(sizeof(UISettingEntryCommonTriggerHandler_BP_OnChanged) == 0x000160, "Wrong size on UISettingEntryCommonTriggerHandler_BP_OnChanged");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, obj) == 0x000000, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::obj' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, setting_key) == 0x000008, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::setting_key' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, params) == 0x000018, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::params' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, options) == 0x000068, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::options' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, value) == 0x0000B8, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::value' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, tags) == 0x0000C0, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::tags' has a wrong offset!");
-static_assert(offsetof(UISettingEntryCommonTriggerHandler_BP_OnChanged, ReturnValue) == 0x000110, "Member 'UISettingEntryCommonTriggerHandler_BP_OnChanged::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_UISettingEntryCommonTriggerHandler_BP_OnChanged;
 
 // PythonFunction SettingCommonLogic.PySettingEntryUIController.SetEntry
 // 0x0008 (0x0008 - 0x0000)
@@ -64,9 +50,7 @@ struct PySettingEntryUIController_SetEntry final
 public:
 	class UPyWidget_SettingOptionEntry*           entry;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySettingEntryUIController_SetEntry) == 0x000008, "Wrong alignment on PySettingEntryUIController_SetEntry");
-static_assert(sizeof(PySettingEntryUIController_SetEntry) == 0x000008, "Wrong size on PySettingEntryUIController_SetEntry");
-static_assert(offsetof(PySettingEntryUIController_SetEntry, entry) == 0x000000, "Member 'PySettingEntryUIController_SetEntry::entry' has a wrong offset!");
+DUMPER7_ASSERTS_PySettingEntryUIController_SetEntry;
 
 }
 

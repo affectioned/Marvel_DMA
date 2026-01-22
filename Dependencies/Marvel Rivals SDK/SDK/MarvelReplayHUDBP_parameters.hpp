@@ -24,11 +24,7 @@ public:
 	class UMarvel3DWidgetManager*                 CallFunc_Get_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP) == 0x000008, "Wrong alignment on MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP");
-static_assert(sizeof(MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP) == 0x000018, "Wrong size on MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP");
-static_assert(offsetof(MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP, EntryPoint) == 0x000000, "Member 'MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP, CallFunc_Get_ReturnValue) == 0x000008, "Member 'MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP::CallFunc_Get_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_MarvelReplayHUDBP_C_ExecuteUbergraph_MarvelReplayHUDBP;
 
 }
 

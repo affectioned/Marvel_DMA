@@ -17,31 +17,30 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Setting_Control_HeroForm.WBP_Setting_Control_HeroForm_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x05E8 - 0x05C8)
 class UWBP_Setting_Control_HeroForm_C final : public UPyWidget_SettingSelectHeroShape
 {
 public:
-	class UMarvelImage*                           Img_HeroForm_Bg;                                   // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn1;                  // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn2;                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn3;                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMarvelImage*                           Img_HeroForm_Bg;                                   // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn1;                  // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn2;                  // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Setting_Control_HeroFormBtn_C*     WBP_Setting_Control_HeroFormBtn3;                  // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WBP_Setting_Control_HeroForm_C">();
+		BP_STATIC_CLASS_IMPL("WBP_Setting_Control_HeroForm_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WBP_Setting_Control_HeroForm_C")
 	}
 	static class UWBP_Setting_Control_HeroForm_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWBP_Setting_Control_HeroForm_C>();
 	}
 };
-static_assert(alignof(UWBP_Setting_Control_HeroForm_C) == 0x000008, "Wrong alignment on UWBP_Setting_Control_HeroForm_C");
-static_assert(sizeof(UWBP_Setting_Control_HeroForm_C) == 0x0005E0, "Wrong size on UWBP_Setting_Control_HeroForm_C");
-static_assert(offsetof(UWBP_Setting_Control_HeroForm_C, Img_HeroForm_Bg) == 0x0005C0, "Member 'UWBP_Setting_Control_HeroForm_C::Img_HeroForm_Bg' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_HeroForm_C, WBP_Setting_Control_HeroFormBtn1) == 0x0005C8, "Member 'UWBP_Setting_Control_HeroForm_C::WBP_Setting_Control_HeroFormBtn1' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_HeroForm_C, WBP_Setting_Control_HeroFormBtn2) == 0x0005D0, "Member 'UWBP_Setting_Control_HeroForm_C::WBP_Setting_Control_HeroFormBtn2' has a wrong offset!");
-static_assert(offsetof(UWBP_Setting_Control_HeroForm_C, WBP_Setting_Control_HeroFormBtn3) == 0x0005D8, "Member 'UWBP_Setting_Control_HeroForm_C::WBP_Setting_Control_HeroFormBtn3' has a wrong offset!");
+DUMPER7_ASSERTS_UWBP_Setting_Control_HeroForm_C;
 
 }
 

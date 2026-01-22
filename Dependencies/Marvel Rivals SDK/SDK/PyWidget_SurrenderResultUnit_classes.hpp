@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // PythonClass PyWidget_SurrenderResultUnit.PyWidget_SurrenderResultUnit
-// 0x0068 (0x0628 - 0x05C0)
+// 0x0068 (0x0630 - 0x05C8)
 class UPyWidget_SurrenderResultUnit final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             VoteTexture;                                       // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             NoVoteTexture;                                     // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             DefaultTexture;                                    // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BlueSideVoteColor;                                 // 0x05D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           RedSideVoteColor;                                  // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultIconColor;                                  // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultIconRedColor;                               // 0x0608(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultIconBlueColor;                              // 0x0618(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             VoteTexture;                                       // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             NoVoteTexture;                                     // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             DefaultTexture;                                    // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BlueSideVoteColor;                                 // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           RedSideVoteColor;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultIconColor;                                  // 0x0600(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultIconRedColor;                               // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultIconBlueColor;                              // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,23 +38,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_SurrenderResultUnit">();
+		STATIC_CLASS_IMPL("PyWidget_SurrenderResultUnit")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_SurrenderResultUnit")
 	}
 	static class UPyWidget_SurrenderResultUnit* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_SurrenderResultUnit>();
 	}
 };
-static_assert(alignof(UPyWidget_SurrenderResultUnit) == 0x000008, "Wrong alignment on UPyWidget_SurrenderResultUnit");
-static_assert(sizeof(UPyWidget_SurrenderResultUnit) == 0x000628, "Wrong size on UPyWidget_SurrenderResultUnit");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, VoteTexture) == 0x0005C0, "Member 'UPyWidget_SurrenderResultUnit::VoteTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, NoVoteTexture) == 0x0005C8, "Member 'UPyWidget_SurrenderResultUnit::NoVoteTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, DefaultTexture) == 0x0005D0, "Member 'UPyWidget_SurrenderResultUnit::DefaultTexture' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, BlueSideVoteColor) == 0x0005D8, "Member 'UPyWidget_SurrenderResultUnit::BlueSideVoteColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, RedSideVoteColor) == 0x0005E8, "Member 'UPyWidget_SurrenderResultUnit::RedSideVoteColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, DefaultIconColor) == 0x0005F8, "Member 'UPyWidget_SurrenderResultUnit::DefaultIconColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, DefaultIconRedColor) == 0x000608, "Member 'UPyWidget_SurrenderResultUnit::DefaultIconRedColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_SurrenderResultUnit, DefaultIconBlueColor) == 0x000618, "Member 'UPyWidget_SurrenderResultUnit::DefaultIconBlueColor' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_SurrenderResultUnit;
 
 }
 

@@ -33,24 +33,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyMarvelPVE_AmmoPerShotCalculation">();
+		STATIC_CLASS_IMPL("PyMarvelPVE_AmmoPerShotCalculation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyMarvelPVE_AmmoPerShotCalculation")
 	}
 	static class UPyMarvelPVE_AmmoPerShotCalculation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyMarvelPVE_AmmoPerShotCalculation>();
 	}
 };
-static_assert(alignof(UPyMarvelPVE_AmmoPerShotCalculation) == 0x000008, "Wrong alignment on UPyMarvelPVE_AmmoPerShotCalculation");
-static_assert(sizeof(UPyMarvelPVE_AmmoPerShotCalculation) == 0x000050, "Wrong size on UPyMarvelPVE_AmmoPerShotCalculation");
-static_assert(offsetof(UPyMarvelPVE_AmmoPerShotCalculation, EquipID) == 0x000030, "Member 'UPyMarvelPVE_AmmoPerShotCalculation::EquipID' has a wrong offset!");
-static_assert(offsetof(UPyMarvelPVE_AmmoPerShotCalculation, Modifier) == 0x000038, "Member 'UPyMarvelPVE_AmmoPerShotCalculation::Modifier' has a wrong offset!");
+DUMPER7_ASSERTS_UPyMarvelPVE_AmmoPerShotCalculation;
 
 // PythonClass PyBuffAbility_10130_10141014.PyBuffAbility_10130_10141014
-// 0x0008 (0x1A38 - 0x1A30)
+// 0x0008 (0x1A50 - 0x1A48)
 class UPyBuffAbility_10130_10141014 : public UBuffAbility_CommonCardEffect
 {
 public:
-	float                                         AmmoPerShotIncrementScale;                         // 0x1A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AmmoPerShotIncrementScale;                         // 0x1A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void K2_ActivateAbility();
@@ -59,16 +60,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBuffAbility_10130_10141014">();
+		STATIC_CLASS_IMPL("PyBuffAbility_10130_10141014")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBuffAbility_10130_10141014")
 	}
 	static class UPyBuffAbility_10130_10141014* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBuffAbility_10130_10141014>();
 	}
 };
-static_assert(alignof(UPyBuffAbility_10130_10141014) == 0x000008, "Wrong alignment on UPyBuffAbility_10130_10141014");
-static_assert(sizeof(UPyBuffAbility_10130_10141014) == 0x001A38, "Wrong size on UPyBuffAbility_10130_10141014");
-static_assert(offsetof(UPyBuffAbility_10130_10141014, AmmoPerShotIncrementScale) == 0x001A30, "Member 'UPyBuffAbility_10130_10141014::AmmoPerShotIncrementScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBuffAbility_10130_10141014;
 
 }
 

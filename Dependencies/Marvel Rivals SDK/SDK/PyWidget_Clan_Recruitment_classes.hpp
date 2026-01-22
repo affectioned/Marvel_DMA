@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Clan_Recruitment.PyWidget_ClanList_Recruitment_Btn
-// 0x0058 (0x0618 - 0x05C0)
+// 0x0058 (0x0620 - 0x05C8)
 class UPyWidget_ClanList_Recruitment_Btn final : public UPyMarvelUserWidget
 {
 public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   DescText;                                          // 0x05C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	class UTexture2D*                             BtnIcon;                                           // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor;                                       // 0x05E0(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ActiveColor;                                       // 0x05F4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0608(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   DescText;                                          // 0x05C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class UTexture2D*                             BtnIcon;                                           // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor;                                       // 0x05E8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ActiveColor;                                       // 0x05FC(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x0610(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -38,23 +38,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ClanList_Recruitment_Btn">();
+		STATIC_CLASS_IMPL("PyWidget_ClanList_Recruitment_Btn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ClanList_Recruitment_Btn")
 	}
 	static class UPyWidget_ClanList_Recruitment_Btn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ClanList_Recruitment_Btn>();
 	}
 };
-static_assert(alignof(UPyWidget_ClanList_Recruitment_Btn) == 0x000008, "Wrong alignment on UPyWidget_ClanList_Recruitment_Btn");
-static_assert(sizeof(UPyWidget_ClanList_Recruitment_Btn) == 0x000618, "Wrong size on UPyWidget_ClanList_Recruitment_Btn");
-static_assert(offsetof(UPyWidget_ClanList_Recruitment_Btn, DescText) == 0x0005C0, "Member 'UPyWidget_ClanList_Recruitment_Btn::DescText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanList_Recruitment_Btn, BtnIcon) == 0x0005D8, "Member 'UPyWidget_ClanList_Recruitment_Btn::BtnIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanList_Recruitment_Btn, NormalColor) == 0x0005E0, "Member 'UPyWidget_ClanList_Recruitment_Btn::NormalColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanList_Recruitment_Btn, ActiveColor) == 0x0005F4, "Member 'UPyWidget_ClanList_Recruitment_Btn::ActiveColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_ClanList_Recruitment_Btn, OnClicked) == 0x000608, "Member 'UPyWidget_ClanList_Recruitment_Btn::OnClicked' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_ClanList_Recruitment_Btn;
 
 // PythonClass PyWidget_Clan_Recruitment.PyWidget_Clan_Recruitment
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_Clan_Recruitment final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -65,15 +63,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Clan_Recruitment">();
+		STATIC_CLASS_IMPL("PyWidget_Clan_Recruitment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Clan_Recruitment")
 	}
 	static class UPyWidget_Clan_Recruitment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Clan_Recruitment>();
 	}
 };
-static_assert(alignof(UPyWidget_Clan_Recruitment) == 0x000008, "Wrong alignment on UPyWidget_Clan_Recruitment");
-static_assert(sizeof(UPyWidget_Clan_Recruitment) == 0x0005F8, "Wrong size on UPyWidget_Clan_Recruitment");
+DUMPER7_ASSERTS_UPyWidget_Clan_Recruitment;
 
 }
 

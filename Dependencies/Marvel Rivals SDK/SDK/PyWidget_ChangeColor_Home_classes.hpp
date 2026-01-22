@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_ChangeColor_Home.PyWidget_ChangeColor_Home
-// 0x0000 (0x05F8 - 0x05F8)
+// 0x0000 (0x0600 - 0x0600)
 class UPyWidget_ChangeColor_Home final : public UPyWidget_ModuleMainPanel
 {
 public:
@@ -28,15 +28,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_ChangeColor_Home">();
+		STATIC_CLASS_IMPL("PyWidget_ChangeColor_Home")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_ChangeColor_Home")
 	}
 	static class UPyWidget_ChangeColor_Home* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_ChangeColor_Home>();
 	}
 };
-static_assert(alignof(UPyWidget_ChangeColor_Home) == 0x000008, "Wrong alignment on UPyWidget_ChangeColor_Home");
-static_assert(sizeof(UPyWidget_ChangeColor_Home) == 0x0005F8, "Wrong size on UPyWidget_ChangeColor_Home");
+DUMPER7_ASSERTS_UPyWidget_ChangeColor_Home;
 
 }
 

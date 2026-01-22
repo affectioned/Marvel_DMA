@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Marvel_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
@@ -39,21 +39,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyKlyntarEC01PlunderTransfer">();
+		STATIC_CLASS_IMPL("PyKlyntarEC01PlunderTransfer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyKlyntarEC01PlunderTransfer")
 	}
 	static class APyKlyntarEC01PlunderTransfer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyKlyntarEC01PlunderTransfer>();
 	}
 };
-static_assert(alignof(APyKlyntarEC01PlunderTransfer) == 0x000010, "Wrong alignment on APyKlyntarEC01PlunderTransfer");
-static_assert(sizeof(APyKlyntarEC01PlunderTransfer) == 0x000800, "Wrong size on APyKlyntarEC01PlunderTransfer");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, OwnerControl) == 0x0006E0, "Member 'APyKlyntarEC01PlunderTransfer::OwnerControl' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, SpeedMap) == 0x0006E8, "Member 'APyKlyntarEC01PlunderTransfer::SpeedMap' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, AmountMap) == 0x000738, "Member 'APyKlyntarEC01PlunderTransfer::AmountMap' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, TargetValueMap) == 0x000788, "Member 'APyKlyntarEC01PlunderTransfer::TargetValueMap' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, OurSideColor) == 0x0007D8, "Member 'APyKlyntarEC01PlunderTransfer::OurSideColor' has a wrong offset!");
-static_assert(offsetof(APyKlyntarEC01PlunderTransfer, EnemySideColor) == 0x0007E8, "Member 'APyKlyntarEC01PlunderTransfer::EnemySideColor' has a wrong offset!");
+DUMPER7_ASSERTS_APyKlyntarEC01PlunderTransfer;
 
 }
 

@@ -37,36 +37,31 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_ItemData">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_ItemData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_ItemData")
 	}
 	static class UPyWidget_DropDownList_ItemData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_ItemData>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_ItemData) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_ItemData");
-static_assert(sizeof(UPyWidget_DropDownList_ItemData) == 0x000090, "Wrong size on UPyWidget_DropDownList_ItemData");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, MainPanel) == 0x000030, "Member 'UPyWidget_DropDownList_ItemData::MainPanel' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemID) == 0x000038, "Member 'UPyWidget_DropDownList_ItemData::ItemID' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemText) == 0x000040, "Member 'UPyWidget_DropDownList_ItemData::ItemText' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, IsShowColorImg) == 0x000058, "Member 'UPyWidget_DropDownList_ItemData::IsShowColorImg' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemIcon) == 0x000060, "Member 'UPyWidget_DropDownList_ItemData::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemColor) == 0x000068, "Member 'UPyWidget_DropDownList_ItemData::ItemColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemCustomeTag) == 0x000078, "Member 'UPyWidget_DropDownList_ItemData::ItemCustomeTag' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ItemData, ItemPlatformID) == 0x000088, "Member 'UPyWidget_DropDownList_ItemData::ItemPlatformID' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_ItemData;
 
 // PythonClass PyWidget_DropDownList_ListView_Item.PyWidget_DropDownList_ListView_Item
-// 0x0050 (0x0778 - 0x0728)
+// 0x0050 (0x07D0 - 0x0780)
 class UPyWidget_DropDownList_ListView_Item : public UPyWidget_Button
 {
 public:
-	class UObject*                                ItemObject;                                        // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UNamedSlot*                             Slot_NewReddot;                                    // 0x0730(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemClicked;                                     // 0x0748(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsHover, int32 ItemID)> OnItemHovered;                        // 0x0758(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(bool IsPressed, int32 ItemID)> OnItemPressed;                      // 0x0768(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	class UObject*                                ItemObject;                                        // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNamedSlot*                             Slot_NewReddot;                                    // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_National_Icon;                   // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                             Texture_Privilege_Oversea_Icon;                    // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 ItemID)>  OnItemClicked;                                     // 0x07A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHover, int32 ItemID)> OnItemHovered;                        // 0x07B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsPressed, int32 ItemID)> OnItemPressed;                      // 0x07C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -79,22 +74,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_DropDownList_ListView_Item">();
+		STATIC_CLASS_IMPL("PyWidget_DropDownList_ListView_Item")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_DropDownList_ListView_Item")
 	}
 	static class UPyWidget_DropDownList_ListView_Item* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_DropDownList_ListView_Item>();
 	}
 };
-static_assert(alignof(UPyWidget_DropDownList_ListView_Item) == 0x000008, "Wrong alignment on UPyWidget_DropDownList_ListView_Item");
-static_assert(sizeof(UPyWidget_DropDownList_ListView_Item) == 0x000778, "Wrong size on UPyWidget_DropDownList_ListView_Item");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, ItemObject) == 0x000728, "Member 'UPyWidget_DropDownList_ListView_Item::ItemObject' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, Slot_NewReddot) == 0x000730, "Member 'UPyWidget_DropDownList_ListView_Item::Slot_NewReddot' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, Texture_Privilege_National_Icon) == 0x000738, "Member 'UPyWidget_DropDownList_ListView_Item::Texture_Privilege_National_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, Texture_Privilege_Oversea_Icon) == 0x000740, "Member 'UPyWidget_DropDownList_ListView_Item::Texture_Privilege_Oversea_Icon' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, OnItemClicked) == 0x000748, "Member 'UPyWidget_DropDownList_ListView_Item::OnItemClicked' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, OnItemHovered) == 0x000758, "Member 'UPyWidget_DropDownList_ListView_Item::OnItemHovered' has a wrong offset!");
-static_assert(offsetof(UPyWidget_DropDownList_ListView_Item, OnItemPressed) == 0x000768, "Member 'UPyWidget_DropDownList_ListView_Item::OnItemPressed' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_DropDownList_ListView_Item;
 
 }
 

@@ -26,30 +26,33 @@ class UPyGMCmd_CmdData final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyGMCmd_CmdData">();
+		STATIC_CLASS_IMPL("PyGMCmd_CmdData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyGMCmd_CmdData")
 	}
 	static class UPyGMCmd_CmdData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyGMCmd_CmdData>();
 	}
 };
-static_assert(alignof(UPyGMCmd_CmdData) == 0x000008, "Wrong alignment on UPyGMCmd_CmdData");
-static_assert(sizeof(UPyGMCmd_CmdData) == 0x000030, "Wrong size on UPyGMCmd_CmdData");
+DUMPER7_ASSERTS_UPyGMCmd_CmdData;
 
 // PythonClass PyWidget_GMCmdPanel.PyWidget_GMCmdPanel
-// 0x00A8 (0x06A0 - 0x05F8)
+// 0x00A8 (0x06A8 - 0x0600)
 class UPyWidget_GMCmdPanel : public UPyWidget_ModuleMainPanel
 {
 public:
-	TSubclassOf<class UUserWidget>                TabBtnClass;                                       // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                TabBtn2Class;                                      // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FLinearColor>      TabBtnColor;                                       // 0x0608(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                OpenInputBoxTipsStyle;                             // 0x0658(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                CloseInputBoxTipsStyle;                            // 0x0668(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FGuideTipsStyle>                NavigateHistoryEntryTipsStyle;                     // 0x0678(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UInputAction*                           OpenInputBoxAction;                                // 0x0688(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           UpHistoryEntryAction;                              // 0x0690(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UInputAction*                           DownHistoryEntryAction;                            // 0x0698(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                TabBtnClass;                                       // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                TabBtn2Class;                                      // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FLinearColor>      TabBtnColor;                                       // 0x0610(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                OpenInputBoxTipsStyle;                             // 0x0660(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                CloseInputBoxTipsStyle;                            // 0x0670(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FGuideTipsStyle>                NavigateHistoryEntryTipsStyle;                     // 0x0680(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UInputAction*                           OpenInputBoxAction;                                // 0x0690(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           UpHistoryEntryAction;                              // 0x0698(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UInputAction*                           DownHistoryEntryAction;                            // 0x06A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void OnInitialized();
@@ -62,24 +65,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_GMCmdPanel">();
+		STATIC_CLASS_IMPL("PyWidget_GMCmdPanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_GMCmdPanel")
 	}
 	static class UPyWidget_GMCmdPanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_GMCmdPanel>();
 	}
 };
-static_assert(alignof(UPyWidget_GMCmdPanel) == 0x000008, "Wrong alignment on UPyWidget_GMCmdPanel");
-static_assert(sizeof(UPyWidget_GMCmdPanel) == 0x0006A0, "Wrong size on UPyWidget_GMCmdPanel");
-static_assert(offsetof(UPyWidget_GMCmdPanel, TabBtnClass) == 0x0005F8, "Member 'UPyWidget_GMCmdPanel::TabBtnClass' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, TabBtn2Class) == 0x000600, "Member 'UPyWidget_GMCmdPanel::TabBtn2Class' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, TabBtnColor) == 0x000608, "Member 'UPyWidget_GMCmdPanel::TabBtnColor' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, OpenInputBoxTipsStyle) == 0x000658, "Member 'UPyWidget_GMCmdPanel::OpenInputBoxTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, CloseInputBoxTipsStyle) == 0x000668, "Member 'UPyWidget_GMCmdPanel::CloseInputBoxTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, NavigateHistoryEntryTipsStyle) == 0x000678, "Member 'UPyWidget_GMCmdPanel::NavigateHistoryEntryTipsStyle' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, OpenInputBoxAction) == 0x000688, "Member 'UPyWidget_GMCmdPanel::OpenInputBoxAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, UpHistoryEntryAction) == 0x000690, "Member 'UPyWidget_GMCmdPanel::UpHistoryEntryAction' has a wrong offset!");
-static_assert(offsetof(UPyWidget_GMCmdPanel, DownHistoryEntryAction) == 0x000698, "Member 'UPyWidget_GMCmdPanel::DownHistoryEntryAction' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_GMCmdPanel;
 
 }
 

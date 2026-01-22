@@ -17,21 +17,24 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass 1025_CharacterBP.1025_CharacterBP_C
-// 0x0000 (0x21C0 - 0x21C0)
+// 0x0000 (0x22D0 - 0x22D0)
 class AOne025_CharacterBP_C final : public APyCloakAndDaggerCharacter
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"1025_CharacterBP_C">();
+		BP_STATIC_CLASS_IMPL("1025_CharacterBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"1025_CharacterBP_C")
 	}
 	static class AOne025_CharacterBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AOne025_CharacterBP_C>();
 	}
 };
-static_assert(alignof(AOne025_CharacterBP_C) == 0x000010, "Wrong alignment on AOne025_CharacterBP_C");
-static_assert(sizeof(AOne025_CharacterBP_C) == 0x0021C0, "Wrong size on AOne025_CharacterBP_C");
+DUMPER7_ASSERTS_AOne025_CharacterBP_C;
 
 }
 

@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_ProgressButton.PyWidget_Replay_ProgressButton
-// 0x0010 (0x0738 - 0x0728)
+// 0x0010 (0x0790 - 0x0780)
 class UPyWidget_Replay_ProgressButton final : public UPyWidget_Button
 {
 public:
-	TMulticastInlineDelegate<void(float Value)>   OnValueChanged;                                    // 0x0728(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float Value)>   OnValueChanged;                                    // 0x0780(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
@@ -32,16 +32,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_ProgressButton">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_ProgressButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_ProgressButton")
 	}
 	static class UPyWidget_Replay_ProgressButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_ProgressButton>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_ProgressButton) == 0x000008, "Wrong alignment on UPyWidget_Replay_ProgressButton");
-static_assert(sizeof(UPyWidget_Replay_ProgressButton) == 0x000738, "Wrong size on UPyWidget_Replay_ProgressButton");
-static_assert(offsetof(UPyWidget_Replay_ProgressButton, OnValueChanged) == 0x000728, "Member 'UPyWidget_Replay_ProgressButton::OnValueChanged' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_ProgressButton;
 
 }
 

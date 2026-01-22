@@ -21,9 +21,7 @@ struct PyWidget_MallCoupon_List_OnCascadingVisibleChanged final
 public:
 	bool                                          bNewVisible;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallCoupon_List_OnCascadingVisibleChanged) == 0x000001, "Wrong alignment on PyWidget_MallCoupon_List_OnCascadingVisibleChanged");
-static_assert(sizeof(PyWidget_MallCoupon_List_OnCascadingVisibleChanged) == 0x000001, "Wrong size on PyWidget_MallCoupon_List_OnCascadingVisibleChanged");
-static_assert(offsetof(PyWidget_MallCoupon_List_OnCascadingVisibleChanged, bNewVisible) == 0x000000, "Member 'PyWidget_MallCoupon_List_OnCascadingVisibleChanged::bNewVisible' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallCoupon_List_OnCascadingVisibleChanged;
 
 // PythonFunction PyWidget_MallCoupon_List.PyWidget_MallCoupon_Item.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyWidget_MallCoupon_Item_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyWidget_MallCoupon_Item_OnListItemObjectSet) == 0x000008, "Wrong alignment on PyWidget_MallCoupon_Item_OnListItemObjectSet");
-static_assert(sizeof(PyWidget_MallCoupon_Item_OnListItemObjectSet) == 0x000008, "Wrong size on PyWidget_MallCoupon_Item_OnListItemObjectSet");
-static_assert(offsetof(PyWidget_MallCoupon_Item_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'PyWidget_MallCoupon_Item_OnListItemObjectSet::ListItemObject' has a wrong offset!");
+DUMPER7_ASSERTS_PyWidget_MallCoupon_Item_OnListItemObjectSet;
 
 }
 

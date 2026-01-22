@@ -24,9 +24,7 @@ struct PySurrenderRuleComponent_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_ReceiveEndPlay) == 0x000001, "Wrong alignment on PySurrenderRuleComponent_ReceiveEndPlay");
-static_assert(sizeof(PySurrenderRuleComponent_ReceiveEndPlay) == 0x000001, "Wrong size on PySurrenderRuleComponent_ReceiveEndPlay");
-static_assert(offsetof(PySurrenderRuleComponent_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'PySurrenderRuleComponent_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_ReceiveEndPlay;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.OnOnlineStatusChangeDispatcher
 // 0x0010 (0x0010 - 0x0000)
@@ -36,10 +34,7 @@ public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EOnlineStatus                                 online_status;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher) == 0x000008, "Wrong alignment on PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher");
-static_assert(sizeof(PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher) == 0x000010, "Wrong size on PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher");
-static_assert(offsetof(PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher, ps) == 0x000000, "Member 'PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher::ps' has a wrong offset!");
-static_assert(offsetof(PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher, online_status) == 0x000008, "Member 'PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher::online_status' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_OnOnlineStatusChangeDispatcher;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.OnPlayerHasInactiveChange
 // 0x0010 (0x0010 - 0x0000)
@@ -49,10 +44,7 @@ public:
 	class AMarvelPlayerState*                     ps;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasInactive;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_OnPlayerHasInactiveChange) == 0x000008, "Wrong alignment on PySurrenderRuleComponent_OnPlayerHasInactiveChange");
-static_assert(sizeof(PySurrenderRuleComponent_OnPlayerHasInactiveChange) == 0x000010, "Wrong size on PySurrenderRuleComponent_OnPlayerHasInactiveChange");
-static_assert(offsetof(PySurrenderRuleComponent_OnPlayerHasInactiveChange, ps) == 0x000000, "Member 'PySurrenderRuleComponent_OnPlayerHasInactiveChange::ps' has a wrong offset!");
-static_assert(offsetof(PySurrenderRuleComponent_OnPlayerHasInactiveChange, HasInactive) == 0x000008, "Member 'PySurrenderRuleComponent_OnPlayerHasInactiveChange::HasInactive' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_OnPlayerHasInactiveChange;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.S_surrender_timer_cb
 // 0x0001 (0x0001 - 0x0000)
@@ -61,9 +53,7 @@ struct PySurrenderRuleComponent_S_surrender_timer_cb final
 public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_S_surrender_timer_cb) == 0x000001, "Wrong alignment on PySurrenderRuleComponent_S_surrender_timer_cb");
-static_assert(sizeof(PySurrenderRuleComponent_S_surrender_timer_cb) == 0x000001, "Wrong size on PySurrenderRuleComponent_S_surrender_timer_cb");
-static_assert(offsetof(PySurrenderRuleComponent_S_surrender_timer_cb, BattleSide) == 0x000000, "Member 'PySurrenderRuleComponent_S_surrender_timer_cb::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_S_surrender_timer_cb;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.S_surrender_announcement_timer_cb
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +62,7 @@ struct PySurrenderRuleComponent_S_surrender_announcement_timer_cb final
 public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_S_surrender_announcement_timer_cb) == 0x000001, "Wrong alignment on PySurrenderRuleComponent_S_surrender_announcement_timer_cb");
-static_assert(sizeof(PySurrenderRuleComponent_S_surrender_announcement_timer_cb) == 0x000001, "Wrong size on PySurrenderRuleComponent_S_surrender_announcement_timer_cb");
-static_assert(offsetof(PySurrenderRuleComponent_S_surrender_announcement_timer_cb, BattleSide) == 0x000000, "Member 'PySurrenderRuleComponent_S_surrender_announcement_timer_cb::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_S_surrender_announcement_timer_cb;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.NetMultiCastSurrenderStart
 // 0x0008 (0x0008 - 0x0000)
@@ -84,10 +72,7 @@ public:
 	int32                                         UID;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBattleSide                                   BattleSide;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_NetMultiCastSurrenderStart) == 0x000004, "Wrong alignment on PySurrenderRuleComponent_NetMultiCastSurrenderStart");
-static_assert(sizeof(PySurrenderRuleComponent_NetMultiCastSurrenderStart) == 0x000008, "Wrong size on PySurrenderRuleComponent_NetMultiCastSurrenderStart");
-static_assert(offsetof(PySurrenderRuleComponent_NetMultiCastSurrenderStart, UID) == 0x000000, "Member 'PySurrenderRuleComponent_NetMultiCastSurrenderStart::UID' has a wrong offset!");
-static_assert(offsetof(PySurrenderRuleComponent_NetMultiCastSurrenderStart, BattleSide) == 0x000004, "Member 'PySurrenderRuleComponent_NetMultiCastSurrenderStart::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_NetMultiCastSurrenderStart;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.NetMultiCastSurrenderAnnouncement
 // 0x0002 (0x0002 - 0x0000)
@@ -97,10 +82,7 @@ public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSurrenderSuccess;                                 // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement) == 0x000001, "Wrong alignment on PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement");
-static_assert(sizeof(PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement) == 0x000002, "Wrong size on PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement");
-static_assert(offsetof(PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement, BattleSide) == 0x000000, "Member 'PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement::BattleSide' has a wrong offset!");
-static_assert(offsetof(PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement, bSurrenderSuccess) == 0x000001, "Member 'PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement::bSurrenderSuccess' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_NetMultiCastSurrenderAnnouncement;
 
 // PythonFunction PySurrenderRuleComponent.PySurrenderRuleComponent.NetMultiCastSurrenderEarlyEnable
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +91,7 @@ struct PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable final
 public:
 	EBattleSide                                   BattleSide;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable) == 0x000001, "Wrong alignment on PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable");
-static_assert(sizeof(PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable) == 0x000001, "Wrong size on PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable");
-static_assert(offsetof(PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable, BattleSide) == 0x000000, "Member 'PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable::BattleSide' has a wrong offset!");
+DUMPER7_ASSERTS_PySurrenderRuleComponent_NetMultiCastSurrenderEarlyEnable;
 
 }
 

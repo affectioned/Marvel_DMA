@@ -21,9 +21,7 @@ struct PyEscortLevelStatistics_OnPayloadActivate final
 public:
 	class AActor*                                 Payload;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEscortLevelStatistics_OnPayloadActivate) == 0x000008, "Wrong alignment on PyEscortLevelStatistics_OnPayloadActivate");
-static_assert(sizeof(PyEscortLevelStatistics_OnPayloadActivate) == 0x000008, "Wrong size on PyEscortLevelStatistics_OnPayloadActivate");
-static_assert(offsetof(PyEscortLevelStatistics_OnPayloadActivate, Payload) == 0x000000, "Member 'PyEscortLevelStatistics_OnPayloadActivate::Payload' has a wrong offset!");
+DUMPER7_ASSERTS_PyEscortLevelStatistics_OnPayloadActivate;
 
 // PythonFunction PyEscortLevelStatistics.PyEscortLevelStatistics.OnPayloadRouteStart
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +30,7 @@ struct PyEscortLevelStatistics_OnPayloadRouteStart final
 public:
 	class AActor*                                 Payload;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEscortLevelStatistics_OnPayloadRouteStart) == 0x000008, "Wrong alignment on PyEscortLevelStatistics_OnPayloadRouteStart");
-static_assert(sizeof(PyEscortLevelStatistics_OnPayloadRouteStart) == 0x000008, "Wrong size on PyEscortLevelStatistics_OnPayloadRouteStart");
-static_assert(offsetof(PyEscortLevelStatistics_OnPayloadRouteStart, Payload) == 0x000000, "Member 'PyEscortLevelStatistics_OnPayloadRouteStart::Payload' has a wrong offset!");
+DUMPER7_ASSERTS_PyEscortLevelStatistics_OnPayloadRouteStart;
 
 // PythonFunction PyEscortLevelStatistics.PyEscortLevelStatistics.OnPayloadRouteEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +39,7 @@ struct PyEscortLevelStatistics_OnPayloadRouteEnd final
 public:
 	class AActor*                                 Payload;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEscortLevelStatistics_OnPayloadRouteEnd) == 0x000008, "Wrong alignment on PyEscortLevelStatistics_OnPayloadRouteEnd");
-static_assert(sizeof(PyEscortLevelStatistics_OnPayloadRouteEnd) == 0x000008, "Wrong size on PyEscortLevelStatistics_OnPayloadRouteEnd");
-static_assert(offsetof(PyEscortLevelStatistics_OnPayloadRouteEnd, Payload) == 0x000000, "Member 'PyEscortLevelStatistics_OnPayloadRouteEnd::Payload' has a wrong offset!");
+DUMPER7_ASSERTS_PyEscortLevelStatistics_OnPayloadRouteEnd;
 
 // PythonFunction PyEscortLevelStatistics.PyEscortLevelStatistics.OnRoundEnd
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +48,7 @@ struct PyEscortLevelStatistics_OnRoundEnd final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PyEscortLevelStatistics_OnRoundEnd) == 0x000004, "Wrong alignment on PyEscortLevelStatistics_OnRoundEnd");
-static_assert(sizeof(PyEscortLevelStatistics_OnRoundEnd) == 0x000004, "Wrong size on PyEscortLevelStatistics_OnRoundEnd");
-static_assert(offsetof(PyEscortLevelStatistics_OnRoundEnd, ReturnValue) == 0x000000, "Member 'PyEscortLevelStatistics_OnRoundEnd::ReturnValue' has a wrong offset!");
+DUMPER7_ASSERTS_PyEscortLevelStatistics_OnRoundEnd;
 
 }
 

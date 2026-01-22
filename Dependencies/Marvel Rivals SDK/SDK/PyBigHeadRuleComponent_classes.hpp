@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "MarvelLevel_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "PyTeamDeathMatchRuleComponent_classes.hpp"
 #include "Marvel_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MarvelLevel_structs.hpp"
+#include "PyTeamDeathMatchRuleComponent_classes.hpp"
 
 
 namespace SDK
@@ -40,19 +40,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyPlayerBigHeadStateComponent">();
+		STATIC_CLASS_IMPL("PyPlayerBigHeadStateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyPlayerBigHeadStateComponent")
 	}
 	static class UPyPlayerBigHeadStateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyPlayerBigHeadStateComponent>();
 	}
 };
-static_assert(alignof(UPyPlayerBigHeadStateComponent) == 0x000008, "Wrong alignment on UPyPlayerBigHeadStateComponent");
-static_assert(sizeof(UPyPlayerBigHeadStateComponent) == 0x000118, "Wrong size on UPyPlayerBigHeadStateComponent");
-static_assert(offsetof(UPyPlayerBigHeadStateComponent, MultiKillCount) == 0x000108, "Member 'UPyPlayerBigHeadStateComponent::MultiKillCount' has a wrong offset!");
-static_assert(offsetof(UPyPlayerBigHeadStateComponent, IsMaxTier) == 0x00010C, "Member 'UPyPlayerBigHeadStateComponent::IsMaxTier' has a wrong offset!");
-static_assert(offsetof(UPyPlayerBigHeadStateComponent, AssistCount) == 0x000110, "Member 'UPyPlayerBigHeadStateComponent::AssistCount' has a wrong offset!");
-static_assert(offsetof(UPyPlayerBigHeadStateComponent, HeadScale) == 0x000114, "Member 'UPyPlayerBigHeadStateComponent::HeadScale' has a wrong offset!");
+DUMPER7_ASSERTS_UPyPlayerBigHeadStateComponent;
 
 // PythonClass PyBigHeadRuleComponent.PyBigHeadRuleComponent
 // 0x01E8 (0x0318 - 0x0130)
@@ -82,27 +81,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyBigHeadRuleComponent">();
+		STATIC_CLASS_IMPL("PyBigHeadRuleComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyBigHeadRuleComponent")
 	}
 	static class UPyBigHeadRuleComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyBigHeadRuleComponent>();
 	}
 };
-static_assert(alignof(UPyBigHeadRuleComponent) == 0x000008, "Wrong alignment on UPyBigHeadRuleComponent");
-static_assert(sizeof(UPyBigHeadRuleComponent) == 0x000318, "Wrong size on UPyBigHeadRuleComponent");
-static_assert(offsetof(UPyBigHeadRuleComponent, RebirthBuffId) == 0x000130, "Member 'UPyBigHeadRuleComponent::RebirthBuffId' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, KillStreak) == 0x000140, "Member 'UPyBigHeadRuleComponent::KillStreak' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, SpecialScaleConfig) == 0x000190, "Member 'UPyBigHeadRuleComponent::SpecialScaleConfig' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, KillAssist) == 0x0001E0, "Member 'UPyBigHeadRuleComponent::KillAssist' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, Assist) == 0x0001E1, "Member 'UPyBigHeadRuleComponent::Assist' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, AssistRate) == 0x0001E4, "Member 'UPyBigHeadRuleComponent::AssistRate' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, ShowScaleInMVP) == 0x0001E8, "Member 'UPyBigHeadRuleComponent::ShowScaleInMVP' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, ShowScaleInMVPEnd) == 0x0001E9, "Member 'UPyBigHeadRuleComponent::ShowScaleInMVPEnd' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, SpecialHeroBoneToScaleMap) == 0x0001F0, "Member 'UPyBigHeadRuleComponent::SpecialHeroBoneToScaleMap' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, SpecialSkinBoneToScaleMap) == 0x000240, "Member 'UPyBigHeadRuleComponent::SpecialSkinBoneToScaleMap' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, CommonSpringArmModifyInfo) == 0x000290, "Member 'UPyBigHeadRuleComponent::CommonSpringArmModifyInfo' has a wrong offset!");
-static_assert(offsetof(UPyBigHeadRuleComponent, SpecialHeroSpringArmModifyInfoMap) == 0x0002C8, "Member 'UPyBigHeadRuleComponent::SpecialHeroSpringArmModifyInfoMap' has a wrong offset!");
+DUMPER7_ASSERTS_UPyBigHeadRuleComponent;
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyAbility_101651.PyUIController_101651
-// 0x0000 (0x0F10 - 0x0F10)
+// 0x0000 (0x11F0 - 0x11F0)
 class UPyUIController_101651 final : public UUIC_Ability
 {
 public:
@@ -28,22 +28,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyUIController_101651">();
+		STATIC_CLASS_IMPL("PyUIController_101651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyUIController_101651")
 	}
 	static class UPyUIController_101651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyUIController_101651>();
 	}
 };
-static_assert(alignof(UPyUIController_101651) == 0x000008, "Wrong alignment on UPyUIController_101651");
-static_assert(sizeof(UPyUIController_101651) == 0x000F10, "Wrong size on UPyUIController_101651");
+DUMPER7_ASSERTS_UPyUIController_101651;
 
 // PythonClass PyAbility_101651.PySummoned_10165101
-// 0x0010 (0x14F0 - 0x14E0)
+// 0x0010 (0x1560 - 0x1550)
 class APySummoned_10165101 : public ASummoned_10165101
 {
 public:
-	TMulticastInlineDelegate<void(bool IsHidden)> DelegateOnHidePhantomWhenTeleport;                 // 0x14E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool IsHidden)> DelegateOnHidePhantomWhenTeleport;                 // 0x1550(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void BindMouseLeftForPhantom(bool bEnable);
@@ -52,23 +55,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PySummoned_10165101">();
+		STATIC_CLASS_IMPL("PySummoned_10165101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PySummoned_10165101")
 	}
 	static class APySummoned_10165101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APySummoned_10165101>();
 	}
 };
-static_assert(alignof(APySummoned_10165101) == 0x000010, "Wrong alignment on APySummoned_10165101");
-static_assert(sizeof(APySummoned_10165101) == 0x0014F0, "Wrong size on APySummoned_10165101");
-static_assert(offsetof(APySummoned_10165101, DelegateOnHidePhantomWhenTeleport) == 0x0014E0, "Member 'APySummoned_10165101::DelegateOnHidePhantomWhenTeleport' has a wrong offset!");
+DUMPER7_ASSERTS_APySummoned_10165101;
 
 // PythonClass PyAbility_101651.PyAbility_101651
-// 0x0008 (0x2A80 - 0x2A78)
+// 0x0008 (0x2AD0 - 0x2AC8)
 class UPyAbility_101651 : public UAbility_101651
 {
 public:
-	class ASummonedCharacterBase*                 PhantomCharacter;                                  // 0x2A78(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ASummonedCharacterBase*                 PhantomCharacter;                                  // 0x2AC8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void BeginPlay();
@@ -85,23 +90,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyAbility_101651">();
+		STATIC_CLASS_IMPL("PyAbility_101651")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyAbility_101651")
 	}
 	static class UPyAbility_101651* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyAbility_101651>();
 	}
 };
-static_assert(alignof(UPyAbility_101651) == 0x000008, "Wrong alignment on UPyAbility_101651");
-static_assert(sizeof(UPyAbility_101651) == 0x002A80, "Wrong size on UPyAbility_101651");
-static_assert(offsetof(UPyAbility_101651, PhantomCharacter) == 0x002A78, "Member 'UPyAbility_101651::PhantomCharacter' has a wrong offset!");
+DUMPER7_ASSERTS_UPyAbility_101651;
 
 // PythonClass PyAbility_101651.PyCue_Summoner_Loop_10165101
-// 0x0010 (0x12F0 - 0x12E0)
+// 0x0010 (0x1350 - 0x1340)
 class APyCue_Summoner_Loop_10165101 final : public ACue_Summoner_Loop_10165101
 {
 public:
-	class UNiagaraSystem*                         CollabrateReleaseFX;                               // 0x12E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         CollabrateReleaseFX;                               // 0x1340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
@@ -122,19 +129,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_Summoner_Loop_10165101">();
+		STATIC_CLASS_IMPL("PyCue_Summoner_Loop_10165101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_Summoner_Loop_10165101")
 	}
 	static class APyCue_Summoner_Loop_10165101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_Summoner_Loop_10165101>();
 	}
 };
-static_assert(alignof(APyCue_Summoner_Loop_10165101) == 0x000010, "Wrong alignment on APyCue_Summoner_Loop_10165101");
-static_assert(sizeof(APyCue_Summoner_Loop_10165101) == 0x0012F0, "Wrong size on APyCue_Summoner_Loop_10165101");
-static_assert(offsetof(APyCue_Summoner_Loop_10165101, CollabrateReleaseFX) == 0x0012E0, "Member 'APyCue_Summoner_Loop_10165101::CollabrateReleaseFX' has a wrong offset!");
+DUMPER7_ASSERTS_APyCue_Summoner_Loop_10165101;
 
 // PythonClass PyAbility_101651.PyCue_TraceActor_10165101
-// 0x0000 (0x1050 - 0x1050)
+// 0x0000 (0x1060 - 0x1060)
 class APyCue_TraceActor_10165101 final : public ACue_TraceActor_10165101
 {
 public:
@@ -147,15 +156,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyCue_TraceActor_10165101">();
+		STATIC_CLASS_IMPL("PyCue_TraceActor_10165101")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyCue_TraceActor_10165101")
 	}
 	static class APyCue_TraceActor_10165101* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyCue_TraceActor_10165101>();
 	}
 };
-static_assert(alignof(APyCue_TraceActor_10165101) == 0x000010, "Wrong alignment on APyCue_TraceActor_10165101");
-static_assert(sizeof(APyCue_TraceActor_10165101) == 0x001050, "Wrong size on APyCue_TraceActor_10165101");
+DUMPER7_ASSERTS_APyCue_TraceActor_10165101;
 
 // PythonClass PyAbility_101651.PyLokiSpaceActor
 // 0x0000 (0x06F0 - 0x06F0)
@@ -167,15 +179,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyLokiSpaceActor">();
+		STATIC_CLASS_IMPL("PyLokiSpaceActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyLokiSpaceActor")
 	}
 	static class APyLokiSpaceActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APyLokiSpaceActor>();
 	}
 };
-static_assert(alignof(APyLokiSpaceActor) == 0x000010, "Wrong alignment on APyLokiSpaceActor");
-static_assert(sizeof(APyLokiSpaceActor) == 0x0006F0, "Wrong size on APyLokiSpaceActor");
+DUMPER7_ASSERTS_APyLokiSpaceActor;
 
 }
 

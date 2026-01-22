@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Tag_Base
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x05C8 - 0x05C8)
 #pragma pack(push, 0x1)
 class alignas(0x08) UPyWidget_Mall_Bundle_Tag_Base : public UPyMarvelUserWidget
 {
@@ -29,7 +29,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Tag_Base">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Tag_Base")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Tag_Base")
 	}
 	static class UPyWidget_Mall_Bundle_Tag_Base* GetDefaultObj()
 	{
@@ -37,75 +41,16 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPyWidget_Mall_Bundle_Tag_Base) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Tag_Base");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Tag_Base) == 0x0005C0, "Wrong size on UPyWidget_Mall_Bundle_Tag_Base");
-
-// PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text
-// 0x0080 (0x0640 - 0x05C0)
-class UPyWidget_Time_Roll_Text final : public UPyMarvelUserWidget
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         TextFont;                                          // 0x05C0(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TextColor;                                         // 0x0628(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-	void PreConstruct(bool IsDesignTime);
-	void Destruct();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Time_Roll_Text">();
-	}
-	static class UPyWidget_Time_Roll_Text* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Time_Roll_Text>();
-	}
-};
-static_assert(alignof(UPyWidget_Time_Roll_Text) == 0x000008, "Wrong alignment on UPyWidget_Time_Roll_Text");
-static_assert(sizeof(UPyWidget_Time_Roll_Text) == 0x000640, "Wrong size on UPyWidget_Time_Roll_Text");
-static_assert(offsetof(UPyWidget_Time_Roll_Text, TextFont) == 0x0005C0, "Member 'UPyWidget_Time_Roll_Text::TextFont' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Time_Roll_Text, TextColor) == 0x000628, "Member 'UPyWidget_Time_Roll_Text::TextColor' has a wrong offset!");
-
-// PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_BG_Tag
-// 0x0020 (0x05E0 - 0x05C0)
-class UPyWidget_Mall_Bundle_BG_Tag : public UPyWidget_Mall_Bundle_Tag_Base
-{
-public:
-	uint8                                         Pad_5BA[0x6];                                      // 0x05BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Texture_BG;                                        // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateColor                            NormalColor_BG;                                    // 0x05C8(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	void Construct();
-	void Destruct();
-	void PreConstruct(bool IsDesignTime);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_BG_Tag">();
-	}
-	static class UPyWidget_Mall_Bundle_BG_Tag* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_BG_Tag>();
-	}
-};
-static_assert(alignof(UPyWidget_Mall_Bundle_BG_Tag) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_BG_Tag");
-static_assert(sizeof(UPyWidget_Mall_Bundle_BG_Tag) == 0x0005E0, "Wrong size on UPyWidget_Mall_Bundle_BG_Tag");
-static_assert(offsetof(UPyWidget_Mall_Bundle_BG_Tag, Texture_BG) == 0x0005C0, "Member 'UPyWidget_Mall_Bundle_BG_Tag::Texture_BG' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle_BG_Tag, NormalColor_BG) == 0x0005C8, "Member 'UPyWidget_Mall_Bundle_BG_Tag::NormalColor_BG' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Tag_Base;
 
 // PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Time_Tag
-// 0x0008 (0x05C8 - 0x05C0)
+// 0x0008 (0x05D0 - 0x05C8)
 class UPyWidget_Mall_Bundle_Time_Tag : public UPyWidget_Mall_Bundle_Tag_Base
 {
 public:
-	uint8                                         Pad_5BA[0x2];                                      // 0x05BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PreviewTimestamp;                                  // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewFormatType;                                 // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C2[0x2];                                      // 0x05C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PreviewTimestamp;                                  // 0x05C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewFormatType;                                 // 0x05C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -114,20 +59,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Time_Tag">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Time_Tag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Time_Tag")
 	}
 	static class UPyWidget_Mall_Bundle_Time_Tag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_Time_Tag>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_Time_Tag) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Time_Tag");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Time_Tag) == 0x0005C8, "Wrong size on UPyWidget_Mall_Bundle_Time_Tag");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Time_Tag, PreviewTimestamp) == 0x0005BC, "Member 'UPyWidget_Mall_Bundle_Time_Tag::PreviewTimestamp' has a wrong offset!");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Time_Tag, PreviewFormatType) == 0x0005C0, "Member 'UPyWidget_Mall_Bundle_Time_Tag::PreviewFormatType' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Time_Tag;
 
 // PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Tag_V2
-// 0x0000 (0x05C8 - 0x05C8)
+// 0x0000 (0x05D0 - 0x05D0)
 class UPyWidget_Mall_Bundle_Tag_V2 final : public UPyWidget_Mall_Bundle_Time_Tag
 {
 public:
@@ -136,22 +82,55 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Tag_V2">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Tag_V2")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Tag_V2")
 	}
 	static class UPyWidget_Mall_Bundle_Tag_V2* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_Tag_V2>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_Tag_V2) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Tag_V2");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Tag_V2) == 0x0005C8, "Wrong size on UPyWidget_Mall_Bundle_Tag_V2");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Tag_V2;
+
+// PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_BG_Tag
+// 0x0020 (0x05E8 - 0x05C8)
+class UPyWidget_Mall_Bundle_BG_Tag : public UPyWidget_Mall_Bundle_Tag_Base
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Texture_BG;                                        // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            NormalColor_BG;                                    // 0x05D0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void Construct();
+	void Destruct();
+	void PreConstruct(bool IsDesignTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_BG_Tag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_BG_Tag")
+	}
+	static class UPyWidget_Mall_Bundle_BG_Tag* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_BG_Tag>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_BG_Tag;
 
 // PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Mall_Bundle_Normal_Tag
-// 0x0010 (0x05F0 - 0x05E0)
+// 0x0010 (0x05F8 - 0x05E8)
 class UPyWidget_Mall_Bundle_Normal_Tag final : public UPyWidget_Mall_Bundle_BG_Tag
 {
 public:
-	class FString                                 DefaultFormatText;                                 // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DefaultFormatText;                                 // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Destruct();
@@ -160,16 +139,48 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Mall_Bundle_Normal_Tag">();
+		STATIC_CLASS_IMPL("PyWidget_Mall_Bundle_Normal_Tag")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Mall_Bundle_Normal_Tag")
 	}
 	static class UPyWidget_Mall_Bundle_Normal_Tag* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Mall_Bundle_Normal_Tag>();
 	}
 };
-static_assert(alignof(UPyWidget_Mall_Bundle_Normal_Tag) == 0x000008, "Wrong alignment on UPyWidget_Mall_Bundle_Normal_Tag");
-static_assert(sizeof(UPyWidget_Mall_Bundle_Normal_Tag) == 0x0005F0, "Wrong size on UPyWidget_Mall_Bundle_Normal_Tag");
-static_assert(offsetof(UPyWidget_Mall_Bundle_Normal_Tag, DefaultFormatText) == 0x0005E0, "Member 'UPyWidget_Mall_Bundle_Normal_Tag::DefaultFormatText' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Mall_Bundle_Normal_Tag;
+
+// PythonClass PyWidget_Mall_Bundle_Tag_Base.PyWidget_Time_Roll_Text
+// 0x0080 (0x0648 - 0x05C8)
+class UPyWidget_Time_Roll_Text final : public UPyMarvelUserWidget
+{
+public:
+	uint8                                         Pad_5C2[0x6];                                      // 0x05C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         TextFont;                                          // 0x05C8(0x0068)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TextColor;                                         // 0x0630(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	void Construct();
+	void PreConstruct(bool IsDesignTime);
+	void Destruct();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PyWidget_Time_Roll_Text")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Time_Roll_Text")
+	}
+	static class UPyWidget_Time_Roll_Text* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPyWidget_Time_Roll_Text>();
+	}
+};
+DUMPER7_ASSERTS_UPyWidget_Time_Roll_Text;
 
 }
 

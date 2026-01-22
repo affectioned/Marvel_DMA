@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // PythonClass PyWidget_Replay_CameraTips.PyWidget_Replay_CameraTips
-// 0x0008 (0x0460 - 0x0458)
+// 0x0008 (0x0440 - 0x0438)
 class UPyWidget_Replay_CameraTips final : public UMarvelSimpleUserWidget
 {
 public:
-	float                                         DurationTime;                                      // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DurationTime;                                      // 0x0438(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	void Construct();
@@ -31,16 +31,18 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PyWidget_Replay_CameraTips">();
+		STATIC_CLASS_IMPL("PyWidget_Replay_CameraTips")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PyWidget_Replay_CameraTips")
 	}
 	static class UPyWidget_Replay_CameraTips* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPyWidget_Replay_CameraTips>();
 	}
 };
-static_assert(alignof(UPyWidget_Replay_CameraTips) == 0x000008, "Wrong alignment on UPyWidget_Replay_CameraTips");
-static_assert(sizeof(UPyWidget_Replay_CameraTips) == 0x000460, "Wrong size on UPyWidget_Replay_CameraTips");
-static_assert(offsetof(UPyWidget_Replay_CameraTips, DurationTime) == 0x000458, "Member 'UPyWidget_Replay_CameraTips::DurationTime' has a wrong offset!");
+DUMPER7_ASSERTS_UPyWidget_Replay_CameraTips;
 
 }
 
